@@ -30,7 +30,7 @@ Swift Playgrounds automatically opens when you share a playground book.
 
 The following image shows the content from the template running in Swift Playgrounds.
 
-![Screenshot showing a playground page with a variable declaration in the code editor, and text field in the live view with the text, Live View.](https://docs-assets.developer.apple.com/published/febc8fb08af0cd6c8f31b4f87813b5cc/creating-and-running-a-playground-book-1%402x.png)
+![Screenshot showing a playground page with a variable declaration in the code editor, and text field in the live view with the text, Live View.](/images/com.apple.Swift-Playgrounds/creating-and-running-a-playground-book-1@2x.png)
 
 ## See Also
 

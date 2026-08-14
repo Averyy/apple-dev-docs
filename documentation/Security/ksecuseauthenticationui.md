@@ -22,7 +22,7 @@ let kSecUseAuthenticationUI: CFString
 
 #### Discussion
 
-The corresponding value is of type [`CFString`](https://developer.apple.com/documentation/CoreFoundation/CFString) and contains one of the values listed in [`UI authentication values`](search-attribute-keys-and-values#UI-authentication-values.md). The value specifies whether or not the user is prompted for authentication, if needed. A default value of [`kSecUseAuthenticationUIAllow`](ksecuseauthenticationuiallow.md) is assumed when this key is not present.
+The corresponding value is of type [`CFString`](https://developer.apple.com/documentation/corefoundation/cfstring) and contains one of the values listed in [`UI authentication values`](search-attribute-keys-and-values#UI-authentication-values.md). The value specifies whether or not the user is prompted for authentication, if needed. A default value of [`kSecUseAuthenticationUIAllow`](ksecuseauthenticationuiallow.md) is assumed when this key is not present.
 
 
 ---

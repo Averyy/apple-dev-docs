@@ -22,7 +22,7 @@ let kCVImageBufferColorPrimariesKey: CFString
 
 #### Discussion
 
-The color primaries gamut value is of type [`CFString`](https://developer.apple.com/documentation/CoreFoundation/CFString). See [`Image Buffer Color Primaries Constants`](image-buffer-color-primaries-constants.md) for more information.
+The color primaries gamut value is of type [`CFString`](https://developer.apple.com/documentation/corefoundation/cfstring). See [`Image Buffer Color Primaries Constants`](image-buffer-color-primaries-constants.md) for more information.
 
 ## See Also
 

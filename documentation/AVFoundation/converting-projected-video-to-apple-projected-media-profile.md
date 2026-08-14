@@ -37,7 +37,7 @@ By default, the project’s scheme loads a side-by-side video from the Xcode pro
   Show a specific area of a video by using timed display mask rectangle metadata.
 - [Writing fragmented MPEG-4 files for HTTP Live Streaming](writing-fragmented-mpeg-4-files-for-http-live-streaming.md)
   Create an HTTP Live Streaming presentation by turning a movie file into a sequence of fragmented MPEG-4 files.
-- [Creating spatial photos and videos with spatial metadata](../ImageIO/Creating-spatial-photos-and-videos-with-spatial-metadata.md)
+- [Creating spatial photos and videos with spatial metadata](../imageio/creating-spatial-photos-and-videos-with-spatial-metadata.md)
   Add spatial metadata to stereo photos and videos to create spatial media for viewing on Apple Vision Pro.
 - [Tagging media with video color information](tagging-media-with-video-color-information.md)
   Inspect and set video color space information when writing and transcoding media.

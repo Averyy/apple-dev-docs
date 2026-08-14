@@ -27,7 +27,7 @@ Only call this method before you display the mail composition interface. Don’t
 
 ## Parameters
 
-- `bccRecipients`: An array of [`String`](https://developer.apple.com/documentation/Swift/String) objects, each containing the email address of a single recipient.
+- `bccRecipients`: An array of [`String`](https://developer.apple.com/documentation/swift/string) objects, each containing the email address of a single recipient.
 
 ## See Also
 

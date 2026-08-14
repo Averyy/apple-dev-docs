@@ -19,7 +19,7 @@ class let statusBarOrientationUserInfoKey: String
 
 #### Discussion
 
-The key’s value is an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) object that encapsulates a [`UIInterfaceOrientation`](uiinterfaceorientation.md) value indicating the current orientation.  This key is used with [`didChangeStatusBarOrientationNotification`](uiapplication/didchangestatusbarorientationnotification.md) and [`willChangeStatusBarOrientationNotification`](uiapplication/willchangestatusbarorientationnotification.md) notifications.
+The key’s value is an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) object that encapsulates a [`UIInterfaceOrientation`](uiinterfaceorientation.md) value indicating the current orientation.  This key is used with [`didChangeStatusBarOrientationNotification`](uiapplication/didchangestatusbarorientationnotification.md) and [`willChangeStatusBarOrientationNotification`](uiapplication/willchangestatusbarorientationnotification.md) notifications.
 
 ## See Also
 

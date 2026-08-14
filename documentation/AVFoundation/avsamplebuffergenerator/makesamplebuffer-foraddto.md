@@ -26,7 +26,7 @@ A sample buffer.
 
 #### Discussion
 
-Call the [`makeDataReady(completionHandler:)`](avsamplebuffergeneratorbatch/makedataready(completionhandler:).md) on [`AVSampleBufferGeneratorBatch`](avsamplebuffergeneratorbatch.md) once to commence I/O and load sample data for all [`CMSampleBuffer`](https://developer.apple.com/documentation/CoreMedia/CMSampleBuffer) objects in a batch. After loading commences, any subsequent calls to [`makeSampleBuffer(for:addTo:)`](avsamplebuffergenerator/makesamplebuffer(for:addto:).md) throw an exception.
+Call the [`makeDataReady(completionHandler:)`](avsamplebuffergeneratorbatch/makedataready(completionhandler:).md) on [`AVSampleBufferGeneratorBatch`](avsamplebuffergeneratorbatch.md) once to commence I/O and load sample data for all [`CMSampleBuffer`](https://developer.apple.com/documentation/coremedia/cmsamplebuffer) objects in a batch. After loading commences, any subsequent calls to [`makeSampleBuffer(for:addTo:)`](avsamplebuffergenerator/makesamplebuffer(for:addto:).md) throw an exception.
 
 The generator may defer I/O to fetch sample data depending on the source of the sample data and the generator’s timebase
 

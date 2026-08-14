@@ -22,7 +22,7 @@ class var shuffle: MLParameterKey { get }
 
 #### Discussion
 
-The value type for the [`shuffle`](mlparameterkey/shuffle.md) key is an [`Bool`](https://developer.apple.com/documentation/Swift/Bool).
+The value type for the [`shuffle`](mlparameterkey/shuffle.md) key is an [`Bool`](https://developer.apple.com/documentation/swift/bool).
 
 ## See Also
 

@@ -16,7 +16,7 @@ string notificationSubtype
 
 #### Discussion
 
-For the list of notification subtypes available in [`App Store Server Notifications`](https://developer.apple.com/documentation/AppStoreServerNotifications), see [`subtype`](https://developer.apple.com/documentation/AppStoreServerNotifications/subtype).
+For the list of notification subtypes available in [`App Store Server Notifications`](https://developer.apple.com/documentation/appstoreservernotifications), see [`subtype`](https://developer.apple.com/documentation/appstoreservernotifications/subtype).
 
 ## See Also
 

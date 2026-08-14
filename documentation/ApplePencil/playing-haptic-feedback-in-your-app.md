@@ -24,16 +24,16 @@ SwiftUI and UIKit have different APIs for providing haptic feedback. Learn more 
 
 **SwiftUI**:
 
-To learn more about different types of feedback in SwiftUI, read [`SensoryFeedback`](https://developer.apple.com/documentation/SwiftUI/SensoryFeedback).
+To learn more about different types of feedback in SwiftUI, read [`SensoryFeedback`](https://developer.apple.com/documentation/swiftui/sensoryfeedback).
 
 **UIKit**:
 
 To learn more about different types of feedback in UIKit, read:
 
-- [`UICanvasFeedbackGenerator`](https://developer.apple.com/documentation/UIKit/UICanvasFeedbackGenerator)
-- [`UIImpactFeedbackGenerator`](https://developer.apple.com/documentation/UIKit/UIImpactFeedbackGenerator)
-- [`UISelectionFeedbackGenerator`](https://developer.apple.com/documentation/UIKit/UISelectionFeedbackGenerator)
-- [`UINotificationFeedbackGenerator`](https://developer.apple.com/documentation/UIKit/UINotificationFeedbackGenerator)
+- [`UICanvasFeedbackGenerator`](https://developer.apple.com/documentation/uikit/uicanvasfeedbackgenerator)
+- [`UIImpactFeedbackGenerator`](https://developer.apple.com/documentation/uikit/uiimpactfeedbackgenerator)
+- [`UISelectionFeedbackGenerator`](https://developer.apple.com/documentation/uikit/uiselectionfeedbackgenerator)
+- [`UINotificationFeedbackGenerator`](https://developer.apple.com/documentation/uikit/uinotificationfeedbackgenerator)
 
 ##### Associate the Feedback with a View
 
@@ -43,7 +43,7 @@ To play haptic feedback in your app, you need to add the feedback to a view.
 
 The following SwiftUI code example shows how to associate selection feedback with a view.
 
-Add a [`sensoryFeedback(_:trigger:)`](https://developer.apple.com/documentation/SwiftUI/View/sensoryFeedback(_:trigger:)) view modifier to your view. For the `trigger` parameter, pass a value to monitor for changes.
+Add a [`sensoryFeedback(_:trigger:)`](https://developer.apple.com/documentation/swiftui/view/sensoryfeedback(_:trigger:)) view modifier to your view. For the `trigger` parameter, pass a value to monitor for changes.
 
 ```swift
 @State private var showAccessory = false
@@ -56,7 +56,7 @@ ContentView()
 
 The following UIKit code example shows how to associate impact feedback with a view.
 
-Create a [`UIImpactFeedbackGenerator`](https://developer.apple.com/documentation/UIKit/UIImpactFeedbackGenerator) object. For the `view` parameter, pass the view to associate your feedback with.
+Create a [`UIImpactFeedbackGenerator`](https://developer.apple.com/documentation/uikit/uiimpactfeedbackgenerator) object. For the `view` parameter, pass the view to associate your feedback with.
 
 ```swift
 feedback = UIImpactFeedbackGenerator(view: view)
@@ -186,7 +186,7 @@ var body: some View {
 
 The following UIKit code example shows how to use a pan gesture to drag a square, playing haptic feedback to indicate when the square aligns with a gridline on the canvas.
 
-Optionally, you can call the [`prepare()`](https://developer.apple.com/documentation/UIKit/UIFeedbackGenerator/prepare()) method to put the feedback generator in a prepared state, which can reduce latency when triggering feedback.
+Optionally, you can call the [`prepare()`](https://developer.apple.com/documentation/uikit/uifeedbackgenerator/prepare()) method to put the feedback generator in a prepared state, which can reduce latency when triggering feedback.
 
 ```swift
 var gridlines: [Gridline] = []

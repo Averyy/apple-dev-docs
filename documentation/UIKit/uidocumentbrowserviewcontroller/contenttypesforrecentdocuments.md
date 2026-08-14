@@ -19,7 +19,7 @@ var contentTypesForRecentDocuments: [UTType] { get }
 
 #### Discussion
 
-The default list is the same as the list of content types you provide to the initializer, or the types you define in [`CFBundleDocumentTypes`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/CFBundleDocumentTypes) in the app’s `Info.plist` file.
+The default list is the same as the list of content types you provide to the initializer, or the types you define in [`CFBundleDocumentTypes`](https://developer.apple.com/documentation/bundleresources/information-property-list/cfbundledocumenttypes) in the app’s `Info.plist` file.
 
 You can define a subset of these types using the `UIDocumentBrowserRecentDocumentContentTypes` key in the app’s `Info.plist` file.
 

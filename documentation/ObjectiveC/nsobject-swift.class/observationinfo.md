@@ -36,7 +36,7 @@ For improved performance, both this property and [`observationInfo`](nsobject-sw
   Returns a Boolean value that indicates whether the observed object supports automatic key-value observation for the given key.
 - [class func keyPathsForValuesAffectingValue(forKey: String) -> Set<String>](nsobject-swift.class/keypathsforvaluesaffectingvalue(forkey:).md)
   Returns a set of key paths for properties whose values affect the value of the specified key.
-- [protocol NSKeyValueObservingCustomization](../Foundation/NSKeyValueObservingCustomization.md)
+- [protocol NSKeyValueObservingCustomization](../foundation/nskeyvalueobservingcustomization.md)
   Conforming to NSKeyValueObservingCustomization is not required to use Key-Value Observing. Provide an implementation of these functions if you need to disable auto-notifying for a key, or add dependent keys
 
 

@@ -39,12 +39,12 @@ Although records behave like dictionaries, there are limitations to the types of
 
 `CKRecord` fields support the following data types:
 
-- **[`NSString`](https://developer.apple.com/documentation/Foundation/NSString)**: Stores relatively small amounts of text. Although strings themselves can be any length, use a [`CKAsset`](ckasset.md) to store large amounts of text.
-- **[`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber)**: Stores any numerical information, including integers and floating-point numbers.
-- **[`NSData`](https://developer.apple.com/documentation/Foundation/NSData)**: Stores arbitrary bytes of data. A typical use for data objects is to map the bytes that they contain to a `struct`. Don’t use data objects for storing large binary data files; use a [`CKAsset`](ckasset.md) instead. Data fields aren’t searchable.
-- **[`NSDate`](https://developer.apple.com/documentation/Foundation/NSDate)**: Stores day and time information in an accessible form.
-- **[`NSArray`](https://developer.apple.com/documentation/Foundation/NSArray)**: Stores one or more objects of any other type in this table. You can store arrays of strings, arrays of numbers, arrays of references, and so on.
-- **[`CLLocation`](https://developer.apple.com/documentation/CoreLocation/CLLocation)**: Stores geographic coordinate data. You use locations in conjunction with the Core Location framework and any other services that handle location information.
+- **[`NSString`](https://developer.apple.com/documentation/foundation/nsstring)**: Stores relatively small amounts of text. Although strings themselves can be any length, use a [`CKAsset`](ckasset.md) to store large amounts of text.
+- **[`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber)**: Stores any numerical information, including integers and floating-point numbers.
+- **[`NSData`](https://developer.apple.com/documentation/foundation/nsdata)**: Stores arbitrary bytes of data. A typical use for data objects is to map the bytes that they contain to a `struct`. Don’t use data objects for storing large binary data files; use a [`CKAsset`](ckasset.md) instead. Data fields aren’t searchable.
+- **[`NSDate`](https://developer.apple.com/documentation/foundation/nsdate)**: Stores day and time information in an accessible form.
+- **[`NSArray`](https://developer.apple.com/documentation/foundation/nsarray)**: Stores one or more objects of any other type in this table. You can store arrays of strings, arrays of numbers, arrays of references, and so on.
+- **[`CLLocation`](https://developer.apple.com/documentation/corelocation/cllocation)**: Stores geographic coordinate data. You use locations in conjunction with the Core Location framework and any other services that handle location information.
 - **[`CKAsset`](ckasset.md)**: Associates a disk-based file with the record. Although assets have a close association with records, you manage them separately. For more information about using assets, see [`CKAsset`](ckasset.md).
 - **[`CKRecord.Reference`](ckrecord/reference.md)**: Creates a link to a related record. A reference stores the ID of the target record. The advantage of using a reference instead of storing the ID as a string is that references can initiate cascade deletions of dependent records. The disadvantage is that references can only link between records in the same record zone. For more information, see [`CKRecord.Reference`](ckrecord/reference.md).
 
@@ -153,25 +153,25 @@ If you store records in a local database, use the [`encodeSystemFields(with:)`](
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Inherited By
 - [CKShare](ckshare.md)
 ### Conforms To
 - [CKRecordKeyValueSetting](ckrecordkeyvaluesetting.md)
-- [CVarArg](../Swift/CVarArg.md)
-- [Copyable](../Swift/Copyable.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Escapable](../Swift/Escapable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCoding](../Foundation/NSCoding.md)
-- [NSCopying](../Foundation/NSCopying.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [NSSecureCoding](../Foundation/NSSecureCoding.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
-- [Sequence](../Swift/Sequence.md)
+- [CVarArg](../swift/cvararg.md)
+- [Copyable](../swift/copyable.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Escapable](../swift/escapable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCoding](../foundation/nscoding.md)
+- [NSCopying](../foundation/nscopying.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sequence](../swift/sequence.md)
 
 ## See Also
 

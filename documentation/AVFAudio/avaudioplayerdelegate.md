@@ -46,7 +46,7 @@ All of the methods in this protocol are optional.
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

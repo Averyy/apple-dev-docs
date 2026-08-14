@@ -22,7 +22,7 @@ let kSecAttrModificationDate: CFString
 
 #### Discussion
 
-The corresponding value is of type [`CFDate`](https://developer.apple.com/documentation/CoreFoundation/CFDate) and represents the last time the item was updated. Read only.
+The corresponding value is of type [`CFDate`](https://developer.apple.com/documentation/corefoundation/cfdate) and represents the last time the item was updated. Read only.
 
 
 ---

@@ -26,11 +26,11 @@ You can explicitly define the boundary between two GPU captures by calling this 
 
 For example, an app with a single drawable may not need this method because the default behavior’s implicit frame boundaries are appropriate for that scenario.
 
-![A timeline diagram that shows a single drawable that presents a sequence of four frames at regular intervals, each of which implicitly creates a frame capture.](https://docs-assets.developer.apple.com/published/bf7923f90777bbaa9eca991e7c32cf48/insertDebugCaptureBoundary-1%402x.png)
+![A timeline diagram that shows a single drawable that presents a sequence of four frames at regular intervals, each of which implicitly creates a frame capture.](/images/com.apple.metal/insertDebugCaptureBoundary-1@2x.png)
 
 However, you may want to create explicit frame boundaries for apps with multiple drawables that produce frames at different rates.
 
-![A timeline diagram that shows three drawables, each of which presents their own sequence of frames at regular, but differing, intervals from each other. Drawable A presents four frames in the time span, Drawable B presents two frames, and Drawable C presents three frames, the first of which starts at the same time as  Drawable A’s second frame.](https://docs-assets.developer.apple.com/published/d172a062a3fe167f870c98379e2633ee/insertDebugCaptureBoundary-2%402x.png)
+![A timeline diagram that shows three drawables, each of which presents their own sequence of frames at regular, but differing, intervals from each other. Drawable A presents four frames in the time span, Drawable B presents two frames, and Drawable C presents three frames, the first of which starts at the same time as  Drawable A’s second frame.](/images/com.apple.metal/insertDebugCaptureBoundary-2@2x.png)
 
 In this example scenario, the app uses three drawables, each of which presents their frames at different rates or times. The developer can use this method to add arbitrary boundaries that create two captures. The first capture contains the first two frames from Drawable A, the first frame from Drawable B, and the first frame from Drawable C. The second capture contains the third and fourth frames from Drawable A, the second frame from Drawable B, and the second and third frames from Drawable C.
 

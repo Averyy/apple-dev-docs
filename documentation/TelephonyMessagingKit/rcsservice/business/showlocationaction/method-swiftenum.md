@@ -7,7 +7,6 @@ Enumeration indicating method to use when searching for location.
 
 **Availability**:
 - iOS 26.0+
-- iPadOS 26.0+
 
 ## Declaration
 
@@ -20,7 +19,7 @@ enum Method
 ### Determining location method
 - [RCSService.Business.ShowLocationAction.Method.coordinates(_:)](rcsservice/business/showlocationaction/method-swift.enum/coordinates(_:).md)
   Search for location using coordinates.
-- [struct CLLocationCoordinate2D](../CoreLocation/CLLocationCoordinate2D.md)
+- [struct CLLocationCoordinate2D](../corelocation/cllocationcoordinate2d.md)
   The latitude and longitude associated with a location, specified using the WGS 84 reference frame.
 - [RCSService.Business.ShowLocationAction.Method.query(_:)](rcsservice/business/showlocationaction/method-swift.enum/query(_:).md)
   Search for location(s) by query.
@@ -28,13 +27,13 @@ enum Method
 ## Relationships
 
 ### Conforms To
-- [Copyable](../Swift/Copyable.md)
-- [Decodable](../Swift/Decodable.md)
-- [Encodable](../Swift/Encodable.md)
-- [Equatable](../Swift/Equatable.md)
-- [Escapable](../Swift/Escapable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Copyable](../swift/copyable.md)
+- [Decodable](../swift/decodable.md)
+- [Encodable](../swift/encodable.md)
+- [Equatable](../swift/equatable.md)
+- [Escapable](../swift/escapable.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

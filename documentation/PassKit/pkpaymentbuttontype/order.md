@@ -23,7 +23,7 @@ case order
 
 This button looks like:
 
-![A button with the text “Order with” and the Apple Pay logo.](https://docs-assets.developer.apple.com/published/79c15551c4c872fe4f0b4c4996fd38ca/media-3667467%402x.png)
+![A button with the text “Order with” and the Apple Pay logo.](/images/com.apple.passkit/media-3667467@2x.png)
 
 For design guidance, see [`Human Interface Guidelines > Apple Pay > Buttons and Marks`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/apple-pay/overview/buttons-and-marks/).
 

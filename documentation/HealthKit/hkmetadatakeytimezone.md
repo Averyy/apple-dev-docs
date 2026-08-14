@@ -21,7 +21,7 @@ let HKMetadataKeyTimeZone: String
 
 #### Discussion
 
-This key takes a string value compatible with the [`NSTimeZone`](https://developer.apple.com/documentation/Foundation/NSTimeZone) class’s [`timeZoneWithName:`](https://developer.apple.com/documentation/Foundation/NSTimeZone/timeZoneWithName:) method. For best results when analyzing sleep samples, it’s recommended that you store time zone metadata with your sleep sample data.
+This key takes a string value compatible with the [`NSTimeZone`](https://developer.apple.com/documentation/foundation/nstimezone) class’s [`timeZoneWithName:`](https://developer.apple.com/documentation/foundation/nstimezone/timezonewithname:) method. For best results when analyzing sleep samples, it’s recommended that you store time zone metadata with your sleep sample data.
 
 ## See Also
 

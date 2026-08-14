@@ -44,7 +44,7 @@ Use this structure as the `keyParams` input parameter to the [`SecItemExport(_:_
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../Swift/BitwiseCopyable.md)
+- [BitwiseCopyable](../swift/bitwisecopyable.md)
 
 
 ---

@@ -32,7 +32,7 @@ HStack { Image(systemName: "swift").imageScale(.medium); Text("Medium") }
 HStack { Image(systemName: "swift").imageScale(.large); Text("Large") }
 ```
 
-![Vertically arranged text views that read Small, Medium, and](https://docs-assets.developer.apple.com/published/807d651a857b2a60654ec856ecf79588/SwiftUI-EnvironmentAdditions-Image-scale%402x.png)
+![Vertically arranged text views that read Small, Medium, and](/images/com.apple.SwiftUI/SwiftUI-EnvironmentAdditions-Image-scale@2x.png)
 
 ## Topics
 
@@ -47,10 +47,10 @@ HStack { Image(systemName: "swift").imageScale(.large); Text("Large") }
 ## Relationships
 
 ### Conforms To
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

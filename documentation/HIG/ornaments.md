@@ -13,7 +13,7 @@ framework: HIG
 
 In visionOS, an ornament presents controls and information related to a window, without crowding or obscuring the window’s contents.
 
-![A stylized representation of an ornament at the bottom of a window shown on top of a grid that suggests the canvas of a design tool. The image is tinted red to subtly reflect the red in the original six-color Apple logo.](https://docs-assets.developer.apple.com/published/bf508d6532878f101678051f222af596/components-ornaments-intro~dark%402x.png)
+![A stylized representation of an ornament at the bottom of a window shown on top of a grid that suggests the canvas of a design tool. The image is tinted red to subtly reflect the red in the original six-color Apple logo.](/images/com.apple.HIG/components-ornaments-intro~dark@2x.png)
 An ornament floats in a plane that’s parallel to its associated window and slightly in front of it along the z-axis. If the associated window moves, the ornament moves with it, maintaining its relative position; if the window’s contents scroll, the controls or information in the ornament remain unchanged.
 Ornaments can appear on any edge of a window and can contain UI components like buttons, segmented controls, and other views. The system uses ornaments to create and manage components like [Toolbars](toolbars.md), [Tab bars](tab-bars.md), and video playback controls; you can use an ornament to create a custom component.
 
@@ -23,7 +23,7 @@ Ornaments can appear on any edge of a window and can contain UI components like 
 **If you need to display multiple ornaments, prioritize the overall visual balance of the window.** Ornaments help elevate important actions, but they can sometimes distract from your content. When necessary, consider constraining the total number of ornaments to avoid increasing a window’s visual weight and making your app feel more complicated. If you decide to remove an ornament, you can relocate its elements into the main window.
 **Aim to keep an ornament’s width the same or narrower than the width of the associated window.** If an ornament is wider than its window, it can interfere with a tab bar or other vertical content on the window’s side.
 **Consider using borderless buttons in an ornament.** By default, an ornament’s background is [visionOS](materials.md#visionOS), so if you place a button directly on the background, it may not need a visible border. When people look at a borderless button in an ornament, the system automatically applies the hover effect to it (for guidance, see [Eyes](eyes.md)).
-**Use system-provided toolbars and tab bars unless you need to create custom components.** In visionOS, toolbars and tab bars automatically appear as ornaments, so you don’t need to use an ornament to create these components. For developer guidance, see [Toolbars](../SwiftUI/Toolbars.md) and [TabView](../SwiftUI/TabView.md).
+**Use system-provided toolbars and tab bars unless you need to create custom components.** In visionOS, toolbars and tab bars automatically appear as ornaments, so you don’t need to use an ornament to create these components. For developer guidance, see [Toolbars](../swiftui/toolbars.md) and [TabView](../swiftui/tabview.md).
 
 ## Platform considerations
 *Not supported in iOS, iPadOS, macOS, tvOS, or watchOS.*
@@ -35,7 +35,7 @@ Ornaments can appear on any edge of a window and can contain UI components like 
 [Toolbars](toolbars.md)
 
 #### Developer documentation
-[ornament(visibility:attachmentAnchor:contentAlignment:ornament:)](../SwiftUI/View/ornament(visibility:attachmentAnchor:contentAlignment:ornament:).md) — SwiftUI
+[ornament(visibility:attachmentAnchor:contentAlignment:ornament:)](../swiftui/view/ornament(visibility:attachmentanchor:contentalignment:ornament:).md) — SwiftUI
 
 #### Videos
 - [Design for spatial user interfaces](https://developer.apple.com/videos/play/wwdc2023/10076) - Learn how to design great interfaces for spatial computing apps. We’ll share how your existing screen-based knowledge easily translates into creating great experiences for visionOS. Explore guidelines for UI components, materials, and typography and find out how you can design experiences that are familiar, legible, and easy to use.

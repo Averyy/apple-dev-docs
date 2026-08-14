@@ -24,10 +24,10 @@ Learn about the objects that you use to interact with the system.
   The configuration options for opening URLs or launching apps.
 - [struct NSAppKitVersion](nsappkitversion.md)
   Constants for determining which version of AppKit is available.
-- [LSMinimumSystemVersion](../BundleResources/Information-Property-List/LSMinimumSystemVersion.md)
+- [LSMinimumSystemVersion](../bundleresources/information-property-list/lsminimumsystemversion.md)
   The minimum version of the operating system required for the app to run in macOS.
 ### Handoff
-- [class NSUserActivity](../Foundation/NSUserActivity.md)
+- [class NSUserActivity](../foundation/nsuseractivity.md)
   A representation of the state of your app at a moment in time.
 - [protocol NSUserActivityRestoring](nsuseractivityrestoring.md)
   A protocol that marks classes to restore the state of your app to continue a user activity.

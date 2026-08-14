@@ -278,19 +278,19 @@ struct Errno
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../Swift/BitwiseCopyable.md)
-- [Copyable](../Swift/Copyable.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Decodable](../Swift/Decodable.md)
-- [Encodable](../Swift/Encodable.md)
-- [Equatable](../Swift/Equatable.md)
-- [Error](../Swift/Error.md)
-- [Escapable](../Swift/Escapable.md)
-- [Hashable](../Swift/Hashable.md)
-- [RawRepresentable](../Swift/RawRepresentable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [BitwiseCopyable](../swift/bitwisecopyable.md)
+- [Copyable](../swift/copyable.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Decodable](../swift/decodable.md)
+- [Encodable](../swift/encodable.md)
+- [Equatable](../swift/equatable.md)
+- [Error](../swift/error.md)
+- [Escapable](../swift/escapable.md)
+- [Hashable](../swift/hashable.md)
+- [RawRepresentable](../swift/rawrepresentable.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 
 ---

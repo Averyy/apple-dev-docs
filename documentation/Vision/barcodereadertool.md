@@ -50,9 +50,9 @@ let customTool = BarcodeReaderTool(
 ## Relationships
 
 ### Conforms To
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
-- [Tool](../FoundationModels/Tool.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
+- [Tool](../foundationmodels/tool.md)
 
 ## See Also
 

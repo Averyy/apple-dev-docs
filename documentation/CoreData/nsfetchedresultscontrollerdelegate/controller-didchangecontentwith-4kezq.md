@@ -22,7 +22,7 @@ optional func controller(_ controller: NSFetchedResultsController<any NSFetchReq
 
 #### Discussion
 
-To apply the changes, call [`applySnapshot(_:animatingDifferences:)`](https://developer.apple.com/documentation/UIKit/UITableViewDiffableDataSourceReference/applySnapshot(_:animatingDifferences:)) on the collection or table view’s data source.
+To apply the changes, call [`applySnapshot(_:animatingDifferences:)`](https://developer.apple.com/documentation/uikit/uitableviewdiffabledatasourcereference/applysnapshot(_:animatingdifferences:)) on the collection or table view’s data source.
 
 If this method is implemented, no other delegate methods are invoked.
 

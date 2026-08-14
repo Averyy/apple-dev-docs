@@ -46,7 +46,7 @@ replicatorLayer.addSublayer(redSquare)
 
 The result of the code above is a row of five squares, with colors graduating from white to red.
 
-![Replicator layer example](https://docs-assets.developer.apple.com/published/5daf81d00b1e70e3aa842a38bd19a63a/media-2776906%402x.png)
+![Replicator layer example](/images/com.apple.quartzcore/media-2776906@2x.png)
 
 Replicator layers can be nested. The following code adds `replicatorLayer` to a second replicator layer that offsets the position of each instance vertically and subtracts from the red channel.
 
@@ -62,7 +62,7 @@ outerReplicatorLayer.instanceRedOffset = offsetStep
 
 The result of adding this code is to create a grid with the value of the red channel being reduced in the vertical direction.
 
-![Nested replicator layer example](https://docs-assets.developer.apple.com/published/7fc1110d14593942a632f25e1f3bdf2d/media-2776908%402x.png)
+![Nested replicator layer example](/images/com.apple.quartzcore/media-2776908@2x.png)
 
 > **Note**:  The [`CAReplicatorLayer`](careplicatorlayer.md) implementation of [`hitTest(_:)`](calayer/hittest(_:).md) currently tests only the first instance of z replicator layer’s sublayers. This may change in the future.
 
@@ -96,16 +96,16 @@ The result of adding this code is to create a grid with the value of the red cha
 - [CALayer](calayer.md)
 ### Conforms To
 - [CAMediaTiming](camediatiming.md)
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCoding](../Foundation/NSCoding.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [NSSecureCoding](../Foundation/NSSecureCoding.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCoding](../foundation/nscoding.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

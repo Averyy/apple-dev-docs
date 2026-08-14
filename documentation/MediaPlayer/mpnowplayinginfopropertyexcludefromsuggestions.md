@@ -22,7 +22,7 @@ let MPNowPlayingInfoPropertyExcludeFromSuggestions: String
 
 #### Discussion
 
-The value is an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) object configured as a `boolean`.
+The value is an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) object configured as a `boolean`.
 
 ## See Also
 

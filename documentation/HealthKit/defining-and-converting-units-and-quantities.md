@@ -16,7 +16,7 @@ The [`HKQuantity`](hkquantity.md) class stores a value for a given unit. You can
 
 For more information on quantities, see [`HKQuantity`](hkquantity.md).
 
-You can use [`MeasurementFormatter`](https://developer.apple.com/documentation/Foundation/MeasurementFormatter) to localize quantities such as length, mass, and energy. For other quantities, you need to perform the conversions and localize the data yourself.
+You can use [`MeasurementFormatter`](https://developer.apple.com/documentation/foundation/measurementformatter) to localize quantities such as length, mass, and energy. For other quantities, you need to perform the conversions and localize the data yourself.
 
 ## See Also
 

@@ -24,7 +24,7 @@ Use this property to look up the method of the HTTP request that was set in [`in
 ## See Also
 
 - [func preparedURLRequest() -> URLRequest!](slrequest/preparedurlrequest.md)
-  Returns an authorized URL request that can be sent using an [`NSURLConnection`](https://developer.apple.com/documentation/Foundation/NSURLConnection) object.
+  Returns an authorized URL request that can be sent using an [`NSURLConnection`](https://developer.apple.com/documentation/foundation/nsurlconnection) object.
 - [enum SLRequestMethod](slrequestmethod.md)
   Indicates the request method used in the request.
 - [var url: URL!](slrequest/url.md)

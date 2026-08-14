@@ -16,7 +16,7 @@ var selectsInsertedObjects: Bool { get set }
 
 #### Discussion
 
-The default value of this property is [`true`](https://developer.apple.com/documentation/Swift/true). This property is observable using key-value observing.
+The default value of this property is [`true`](https://developer.apple.com/documentation/swift/true). This property is observable using key-value observing.
 
 ## See Also
 

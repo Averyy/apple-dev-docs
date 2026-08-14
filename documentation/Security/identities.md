@@ -53,7 +53,7 @@ An identity consists of a private key packaged with the certificate that contain
 - [class SecIdentitySearch](secidentitysearch.md)
   Contains information about an identity search.
 ### Creating an Identity for Local Network TLS
-- [Creating an Identity for Local Network TLS](../Network/creating-an-identity-for-local-network-tls.md)
+- [Creating an Identity for Local Network TLS](../network/creating-an-identity-for-local-network-tls.md)
   Learn how to create and use a digital identity in your application for local network TLS.
 
 

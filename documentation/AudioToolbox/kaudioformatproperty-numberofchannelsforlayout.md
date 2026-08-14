@@ -21,7 +21,7 @@ var kAudioFormatProperty_NumberOfChannelsForLayout: AudioFormatPropertyID { get 
 
 #### Discussion
 
-The number of valid channels represented in an [`AudioChannelLayout`](https://developer.apple.com/documentation/CoreAudioTypes/AudioChannelLayout) structure. Set the `inSpecifier` parameter to the [`AudioChannelLayout`](https://developer.apple.com/documentation/CoreAudioTypes/AudioChannelLayout) structure you want to examine. If the layout tag is specified, the value contains the number of channels for that layout. If the bitmap is specified, the value contains the number of channels represented by that bitmap. If the layout tag is [`kAudioChannelLayoutTag_UseChannelDescriptions`](https://developer.apple.com/documentation/CoreAudioTypes/kAudioChannelLayoutTag_UseChannelDescriptions), the value contains the number of channel descriptions.
+The number of valid channels represented in an [`AudioChannelLayout`](https://developer.apple.com/documentation/coreaudiotypes/audiochannellayout) structure. Set the `inSpecifier` parameter to the [`AudioChannelLayout`](https://developer.apple.com/documentation/coreaudiotypes/audiochannellayout) structure you want to examine. If the layout tag is specified, the value contains the number of channels for that layout. If the bitmap is specified, the value contains the number of channels represented by that bitmap. If the layout tag is [`kAudioChannelLayoutTag_UseChannelDescriptions`](https://developer.apple.com/documentation/coreaudiotypes/kaudiochannellayouttag_usechanneldescriptions), the value contains the number of channel descriptions.
 
 ## See Also
 

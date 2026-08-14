@@ -36,7 +36,7 @@ For more information about how to implement remote notifications in your app, se
 ## Parameters
 
 - `application`: The app object that received the remote notification.
-- `userInfo`: A dictionary that contains information related to the remote notification, potentially including a badge number for the app icon, an alert sound, an alert message to display to the user, a notification identifier, and custom data. The provider originates it as a JSON-defined dictionary that iOS converts to an [`NSDictionary`](https://developer.apple.com/documentation/Foundation/NSDictionary) object; the dictionary might contain only property-list objects plus [`NSNull`](https://developer.apple.com/documentation/Foundation/NSNull).
+- `userInfo`: A dictionary that contains information related to the remote notification, potentially including a badge number for the app icon, an alert sound, an alert message to display to the user, a notification identifier, and custom data. The provider originates it as a JSON-defined dictionary that iOS converts to an [`NSDictionary`](https://developer.apple.com/documentation/foundation/nsdictionary) object; the dictionary might contain only property-list objects plus [`NSNull`](https://developer.apple.com/documentation/foundation/nsnull).
 
 ## See Also
 

@@ -17,7 +17,7 @@ void emitter::setGroup(int activeGroup, int sequentialGroups)
 
 #### Discussion
 
-> **Note**: ![Graph](https://docs-assets.developer.apple.com/published/12f77d465ae272de6598a7fbc1de9c8f/emitter__setGroup.svg)
+> **Note**: ![Graph](/images/com.apple.computegraph/emitter__setGroup.svg)
 
 > **Note**: Reads from emitter state `int activeGroupIndex`, if it exists
 

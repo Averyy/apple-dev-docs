@@ -12,16 +12,16 @@ Browse notable changes in [`XPC`](https://developer.apple.comhttps://developer.a
 
 ##### Security
 
-- Test whether the peer executable that communicates with your app over an XPC connection has an expected entitlement by calling [`xpc_connection_set_peer_entitlement_exists_requirement(_:_:)`](https://developer.apple.com/documentation/XPC/xpc_connection_set_peer_entitlement_exists_requirement(_:_:)), and whether it has a specific value for an entitlement by calling [`xpc_connection_set_peer_entitlement_matches_value_requirement(_:_:_:)`](https://developer.apple.com/documentation/XPC/xpc_connection_set_peer_entitlement_matches_value_requirement(_:_:_:)).
-- Test whether the peer executable that communicates with your app over an XPC connection is an Apple platform binary with a given signing identifier by calling [`xpc_connection_set_peer_platform_identity_requirement(_:_:)`](https://developer.apple.com/documentation/XPC/xpc_connection_set_peer_platform_identity_requirement(_:_:)).
-- Test whether your Apple Developer team signed the peer executable that communicates with your app over an XPC connection by calling [`xpc_connection_set_peer_team_identity_requirement(_:_:)`](https://developer.apple.com/documentation/XPC/xpc_connection_set_peer_team_identity_requirement(_:_:)).
-- Test whether the peer executable that communicates with your app over an XPC connection satisfies a lightweight code requirement by calling [`xpc_connection_set_peer_lightweight_code_requirement(_:_:)`](https://developer.apple.com/documentation/XPC/xpc_connection_set_peer_lightweight_code_requirement(_:_:)).
+- Test whether the peer executable that communicates with your app over an XPC connection has an expected entitlement by calling [`xpc_connection_set_peer_entitlement_exists_requirement(_:_:)`](https://developer.apple.com/documentation/xpc/xpc_connection_set_peer_entitlement_exists_requirement(_:_:)), and whether it has a specific value for an entitlement by calling [`xpc_connection_set_peer_entitlement_matches_value_requirement(_:_:_:)`](https://developer.apple.com/documentation/xpc/xpc_connection_set_peer_entitlement_matches_value_requirement(_:_:_:)).
+- Test whether the peer executable that communicates with your app over an XPC connection is an Apple platform binary with a given signing identifier by calling [`xpc_connection_set_peer_platform_identity_requirement(_:_:)`](https://developer.apple.com/documentation/xpc/xpc_connection_set_peer_platform_identity_requirement(_:_:)).
+- Test whether your Apple Developer team signed the peer executable that communicates with your app over an XPC connection by calling [`xpc_connection_set_peer_team_identity_requirement(_:_:)`](https://developer.apple.com/documentation/xpc/xpc_connection_set_peer_team_identity_requirement(_:_:)).
+- Test whether the peer executable that communicates with your app over an XPC connection satisfies a lightweight code requirement by calling [`xpc_connection_set_peer_lightweight_code_requirement(_:_:)`](https://developer.apple.com/documentation/xpc/xpc_connection_set_peer_lightweight_code_requirement(_:_:)).
 
 #### June 2023
 
-- Create XPC services using native Swift syntax. Use [`XPCListener`](https://developer.apple.com/documentation/XPC/XPCListener) to create an XPC server that listens for messages from other processes. Use [`XPCSession`](https://developer.apple.com/documentation/XPC/XPCSession) to create clients that connect to servers and exchange messages.
-- For C and Objective-C projects, use the corresponding [`xpc_listener_t`](https://developer.apple.com/documentation/XPC/xpc_listener_t) and [`xpc_session_t`](https://developer.apple.com/documentation/XPC/xpc_session_t-10if0) APIs.
-- In Xcode, use the updated XPC services target template to choose whether you want to use the high-level [`NSXPCConnection`](https://developer.apple.com/documentation/Foundation/NSXPCConnection) or the low-level `libXPC` APIs.
+- Create XPC services using native Swift syntax. Use [`XPCListener`](https://developer.apple.com/documentation/xpc/xpclistener) to create an XPC server that listens for messages from other processes. Use [`XPCSession`](https://developer.apple.com/documentation/xpc/xpcsession) to create clients that connect to servers and exchange messages.
+- For C and Objective-C projects, use the corresponding [`xpc_listener_t`](https://developer.apple.com/documentation/xpc/xpc_listener_t) and [`xpc_session_t`](https://developer.apple.com/documentation/xpc/xpc_session_t-10if0) APIs.
+- In Xcode, use the updated XPC services target template to choose whether you want to use the high-level [`NSXPCConnection`](https://developer.apple.com/documentation/foundation/nsxpcconnection) or the low-level `libXPC` APIs.
 
 ## See Also
 

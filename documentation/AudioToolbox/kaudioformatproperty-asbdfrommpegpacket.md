@@ -21,7 +21,7 @@ var kAudioFormatProperty_ASBDFromMPEGPacket: AudioFormatPropertyID { get }
 
 #### Discussion
 
-An [`AudioStreamBasicDescription`](https://developer.apple.com/documentation/CoreAudioTypes/AudioStreamBasicDescription) structure for a given MPEG Packet. The specifier is an MPEG Packet.
+An [`AudioStreamBasicDescription`](https://developer.apple.com/documentation/coreaudiotypes/audiostreambasicdescription) structure for a given MPEG Packet. The specifier is an MPEG Packet.
 
 ## See Also
 

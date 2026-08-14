@@ -41,7 +41,7 @@ struct OrderCompleteAlert: View {
 }
 ```
 
-![An alert whose title reads Order Complete, with the message, Thank you for shopping with us placed underneath. The alert also includes an OK button for dismissing the alert.](https://docs-assets.developer.apple.com/published/484648a41f7dabaa507054457b090206/SwiftUI-View-AlertIsPresentedContent%402x.png)
+![An alert whose title reads Order Complete, with the message, Thank you for shopping with us placed underneath. The alert also includes an OK button for dismissing the alert.](/images/com.apple.SwiftUI/SwiftUI-View-AlertIsPresentedContent@2x.png)
 
 ## Parameters
 

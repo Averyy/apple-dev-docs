@@ -24,8 +24,8 @@ You must sign every Snapshot URL request and include the signature as the final 
 
 ## Parameters
 
-- `teamId` (string): **Only use this parameter if you don’t provide a token parameter.** Your Apple Developer Team ID. For more information, see [`Creating a Maps identifier and a private key`](https://developer.apple.com/documentation/AppleMapsServerAPI/creating-a-maps-identifier-and-a-private-key).
-- `keyId` (string): **Only use this parameter if you don’t provide a token parameter.** Your MapKit JS Key ID. For more information, see [`Creating a Maps identifier and a private key`](https://developer.apple.com/documentation/AppleMapsServerAPI/creating-a-maps-identifier-and-a-private-key).
+- `teamId` (string): **Only use this parameter if you don’t provide a token parameter.** Your Apple Developer Team ID. For more information, see [`Creating a Maps identifier and a private key`](https://developer.apple.com/documentation/applemapsserverapi/creating-a-maps-identifier-and-a-private-key).
+- `keyId` (string): **Only use this parameter if you don’t provide a token parameter.** Your MapKit JS Key ID. For more information, see [`Creating a Maps identifier and a private key`](https://developer.apple.com/documentation/applemapsserverapi/creating-a-maps-identifier-and-a-private-key).
 - `signature` (string): **Only use this parameter if you don’t provide a token parameter.** A Base64, URL-encoded signature that signs the request path and query parameters. The signature must be the last parameter in the request URL; otherwise, the request returns status code `401 Unauthorized`. See [`Generating a URL and Signature to Create a Maps Web Snapshot`](generating-a-url-and-signature-to-create-a-maps-web-snapshot.md).
 - `center` (string) *(required)*: The center of the map. You can specify `center` as coordinates, as an address, or with the string `auto` when you add annotations and overlays. Provide coordinates as a string with the latitude and longitude separated by a comma, such as: ```javascript
 center=37.78%2C-122.42
@@ -48,7 +48,7 @@ center=auto
 - `imgs` ([Image]): An array of custom images to annotate the map, specified as an array of JSON [`Image`](image.md) objects.
 - `referer` (string): **Only use this parameter if you don’t provide a token parameter.** The `referer` string value to match against the request’s `Referer` header value. Requests that don’t match the `referer` parameter fail with HTTP status code `401 Unauthorized`. Set a referrer restriction through the `referer` parameter.
 - `expires` (int64): **Only use this parameter if you don’t provide a token parameter.** The time in seconds from epoch at which the request expires. Expired requests fail with HTTP status code `401 Unauthorized`. Set an expiration through the `expires` parameter.
-- `token` (string): A developer’s Maps token. For information on how to create a Maps token, see [`Creating a Maps token`](https://developer.apple.com/documentation/MapKitJS/creating-a-maps-token).
+- `token` (string): A developer’s Maps token. For information on how to create a Maps token, see [`Creating a Maps token`](https://developer.apple.com/documentation/mapkitjs/creating-a-maps-token).
 
 ## See Also
 

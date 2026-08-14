@@ -12,7 +12,7 @@ Downlink Time-Difference-of-Arrival (DL-TDOA) is an Ultra Wideband (UWB) ranging
 
 #### Ask for Location Approval
 
-DL-TDOA ranging requires your app to request the person’s location authorization. Before running a DL-TDOA session, use [`CLLocationManager`](https://developer.apple.com/documentation/CoreLocation/CLLocationManager) to request location authorization:
+DL-TDOA ranging requires your app to request the person’s location authorization. Before running a DL-TDOA session, use [`CLLocationManager`](https://developer.apple.com/documentation/corelocation/cllocationmanager) to request location authorization:
 
 ```swift
 func startDLTDOA() {
@@ -29,7 +29,7 @@ func startDLTDOA() {
 }
 ```
 
-Add the [`NSLocationWhenInUseUsageDescription`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSLocationWhenInUseUsageDescription) key to your app’s target properties in Xcode to support [`requestWhenInUseAuthorization()`](https://developer.apple.com/documentation/CoreLocation/CLLocationManager/requestWhenInUseAuthorization()). Add the [`NSLocationAlwaysAndWhenInUseUsageDescription`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSLocationAlwaysAndWhenInUseUsageDescription) key to your app’s target properties in Xcode to support [`requestAlwaysAuthorization()`](https://developer.apple.com/documentation/CoreLocation/CLLocationManager/requestAlwaysAuthorization()).
+Add the [`NSLocationWhenInUseUsageDescription`](https://developer.apple.com/documentation/bundleresources/information-property-list/nslocationwheninuseusagedescription) key to your app’s target properties in Xcode to support [`requestWhenInUseAuthorization()`](https://developer.apple.com/documentation/corelocation/cllocationmanager/requestwheninuseauthorization()). Add the [`NSLocationAlwaysAndWhenInUseUsageDescription`](https://developer.apple.com/documentation/bundleresources/information-property-list/nslocationalwaysandwheninuseusagedescription) key to your app’s target properties in Xcode to support [`requestAlwaysAuthorization()`](https://developer.apple.com/documentation/corelocation/cllocationmanager/requestalwaysauthorization()).
 
 The system presents an authorization prompt to the person the first time your app requests authorization. On subsequent launches, the system checks the person’s previous authorization decision. If the person denies authorization, the DL-TDOA session stops with an error.
 

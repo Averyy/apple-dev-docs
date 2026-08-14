@@ -8,7 +8,7 @@ Verify that connections to your server come from legitimate instances of your ap
 
 Adopt App Attest to check whether clients connecting to your server are valid instances of your app. Your app uses the [`shared`](dcappattestservice/shared.md) instance of the [`DCAppAttestService`](dcappattestservice.md) to create a cryptographic key on a device, and then attest to the key’s validity. This produces an attestation object that your app passes to your server, along with the corresponding key identifier. Your server verifies the attestation object, and then extracts the embedded public key and other information. Later, your server uses the key to verify assertion objects that your app sends at critical points in the app’s life cycle, like when users try to download premium content.
 
-![A diagram showing how your server sends challenges to your app, which responds with an attestation or an assertion, while relying on the App Attest logic. ](https://docs-assets.developer.apple.com/published/af2153e7215540c665379d51d65f532a/validating_apps_that_connect_to_your_server-1%402x.png)
+![A diagram showing how your server sends challenges to your app, which responds with an attestation or an assertion, while relying on the App Attest logic. ](/images/com.apple.DeviceCheck/validating_apps_that_connect_to_your_server-1@2x.png)
 
 This article describes how to integrate App Attest into your server logic. For more information about the activites you perform in your app to support App Attest, see [`Establishing your app’s integrity`](establishing-your-app-s-integrity.md).
 
@@ -22,18 +22,18 @@ When the app asks for a challenge, provide a randomized data value, and remember
 
 The App Attest service creates an attestation object that consists of authenticator data and an attestation statement according to the [`Web Authentication`](https://developer.apple.comhttps://www.w3.org/TR/webauthn/#sec-authenticator-data) specification. The following authenticator fields are of particular interest for App Attest:
 
-- `RP ID` (32 bytes) — A hash of your app’s App ID, which is the concatenation of your app’s App ID prefix, a period, and your app’s [`CFBundleIdentifier`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/CFBundleIdentifier) value. The App ID prefix is usually automatically set to be your 10-digit team identifier, and can be found by inspecting the Identifier entry for your app in the [`Certificates, Identifiers & Profiles`](https://developer.apple.comhttps://developer.apple.com/account/resources/identifiers/list) section of your Apple Developer Account.
+- `RP ID` (32 bytes) — A hash of your app’s App ID, which is the concatenation of your app’s App ID prefix, a period, and your app’s [`CFBundleIdentifier`](https://developer.apple.com/documentation/bundleresources/information-property-list/cfbundleidentifier) value. The App ID prefix is usually automatically set to be your 10-digit team identifier, and can be found by inspecting the Identifier entry for your app in the [`Certificates, Identifiers & Profiles`](https://developer.apple.comhttps://developer.apple.com/account/resources/identifiers/list) section of your Apple Developer Account.
 
 > **Note**: On macOS, the `RP ID` utilizes the [`signing identifier`](https://developer.apple.comhttps://developer.apple.com/documentation/technotes/tn3127-inside-code-signing-requirements) in place of the bundle identifier.
 
 - `counter` (4 bytes) — A value that reports the number of times your app has used the attested key to sign an assertion.
-- `aaguid` (16 bytes) — An App Attest–specific constant that indicates whether the attested key belongs to the development or production environment. Apps generate keys using the former during development, and the latter after distribution, as [`App Attest Environment`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.devicecheck.appattest-environment) describes.
+- `aaguid` (16 bytes) — An App Attest–specific constant that indicates whether the attested key belongs to the development or production environment. Apps generate keys using the former during development, and the latter after distribution, as [`App Attest Environment`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.devicecheck.appattest-environment) describes.
 - `credentialId length` (2 bytes) — The length of the hash of the public key part of the attested cryptographic key pair, following this field.
 - `credentialId` (32 bytes) — A hash of the public key part of the attested cryptographic key pair.
 - `Encoded key` (77 bytes) — The [`CBOR object signing and encryption (COSE)`](https://developer.apple.comhttps://datatracker.ietf.org/doc/html/rfc8152) formatted public key part of the attested cryptographic key pair.
 - `extensions` (variable bytes) — [`CBOR dictionary object`](https://developer.apple.comhttps://www.w3.org/TR/webauthn/#sctn-extensions) that includes optional client properties.
 
-> **Note**: An attestation `RP ID` that an App Clip generates uses the full app’s identifier, not the App Clip’s identifier. For information about the difference between the two, see [`Creating an App Clip with Xcode`](https://developer.apple.com/documentation/AppClip/creating-an-app-clip-with-xcode).
+> **Note**: An attestation `RP ID` that an App Clip generates uses the full app’s identifier, not the App Clip’s identifier. For information about the difference between the two, see [`Creating an App Clip with Xcode`](https://developer.apple.com/documentation/appclip/creating-an-app-clip-with-xcode).
 
 The attestation statement uses a custom Apple attestation statement format with the following syntax:
 
@@ -81,7 +81,7 @@ Use the decoded object, along with the key identifier that your app sends, to pe
 5. Verify that the authenticator data’s `credentialId` field is the same as the key identifier.
 6. Verify the `apple_validation_category_01` value within the `extensions` CBOR dictionary in the authenticator data.
 
-> **Note**: This `UInt32` value represents the launch [`ValidationCategory`](https://developer.apple.com/documentation/LightweightCodeRequirements/ValidationCategory) of your app.
+> **Note**: This `UInt32` value represents the launch [`ValidationCategory`](https://developer.apple.com/documentation/lightweightcoderequirements/validationcategory) of your app.
 
 | Validation Category | Description |
 | --- | --- |
@@ -153,7 +153,7 @@ When the assertion meets all of these conditions, you can trust it. Store `count
   Use this guide to validate your implementation of verifying the attestation object verification process.
 - [class DCAppAttestService](dcappattestservice.md)
   A service that you use to validate the instance of your app running on a device.
-- [App Attest Environment](../BundleResources/Entitlements/com.apple.developer.devicecheck.appattest-environment.md)
+- [App Attest Environment](../bundleresources/entitlements/com.apple.developer.devicecheck.appattest-environment.md)
   The environment for an app that uses the App Attest service to validate itself.
 
 

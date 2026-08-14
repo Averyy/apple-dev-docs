@@ -31,7 +31,7 @@ struct VerticalAlignment
 
 Use vertical alignment guides to position views relative to one another vertically, like when you place views side-by-side in an [`HStack`](hstack.md) or when you create a row of views in a [`Grid`](grid.md) using [`GridRow`](gridrow.md). The following example demonstrates common built-in vertical alignments:
 
-![Five rows of content. Each row contains text inside](https://docs-assets.developer.apple.com/published/a63aa800a94319cd283176a8b21bb7af/VerticalAlignment-1-iOS%402x.png)
+![Five rows of content. Each row contains text inside](/images/com.apple.SwiftUI/VerticalAlignment-1-iOS@2x.png)
 
 You can generate the example above by creating a series of rows implemented as horizontal stacks, where you configure each stack with a different alignment guide:
 
@@ -69,7 +69,7 @@ row(alignment: .firstTextBaseline, text: "fghijkl")
 
 If you use a text baseline alignment on a view that contains no text, SwiftUI applies the equivalent of [`bottom`](verticalalignment/bottom.md) alignment instead. For the row in the example above, SwiftUI matches the bottom of the horizontal lines with the baseline of the text:
 
-![A string containing the lowercase letters f, g, h, i, j, and](https://docs-assets.developer.apple.com/published/dd76eb2e219217e46502bd95d368e453/VerticalAlignment-2-iOS%402x.png)
+![A string containing the lowercase letters f, g, h, i, j, and](/images/com.apple.SwiftUI/VerticalAlignment-2-iOS@2x.png)
 
 Aligning a text view to its baseline rather than to the bottom of its frame produces the best layout effect in many cases, like when creating forms. For example, you can align the baseline of descriptive text in one [`GridRow`](gridrow.md) cell with the baseline of a text field, or the label of a checkbox, in another cell in the same row.
 
@@ -118,7 +118,7 @@ struct LayeredHorizontalStripes: View {
 
 The example above uses widths and heights that generate two mismatched sets of three vertical stripes. The [`ZStack`](zstack.md) centers the two sets horizontally and aligns them vertically one-third from the top of each set. This aligns the bottom edges of the top stripe from each set:
 
-![Two sets of three vertically stacked rectangles. The first](https://docs-assets.developer.apple.com/published/4f1ff29e1d4d39bc64031e05701a5a60/VerticalAlignment-3-iOS%402x.png)
+![Two sets of three vertically stacked rectangles. The first](/images/com.apple.SwiftUI/VerticalAlignment-3-iOS@2x.png)
 
 ## Topics
 
@@ -142,11 +142,11 @@ The example above uses widths and heights that generate two mismatched sets of t
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../Swift/BitwiseCopyable.md)
-- [Copyable](../Swift/Copyable.md)
-- [Equatable](../Swift/Equatable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [BitwiseCopyable](../swift/bitwisecopyable.md)
+- [Copyable](../swift/copyable.md)
+- [Equatable](../swift/equatable.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

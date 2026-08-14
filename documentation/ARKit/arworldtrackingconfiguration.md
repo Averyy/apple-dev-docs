@@ -25,7 +25,7 @@ The [`ARWorldTrackingConfiguration`](arworldtrackingconfiguration.md) class trac
 
 This kind of tracking can create immersive AR experiences: A virtual object can appear to stay in the same place relative to the real world, even as the user tilts the device to look above or below the object, or moves the device around to see the object’s sides and back.
 
-![Three illustrated variations of an iPhone running an app that displays an AR experience using the rear camera. The physical environment is depicted with a couch, in front of which, the app displays a virtual character. In the left picture, the iPhone views the couch straight on with the virtual character centered onscreen. In the middle picture, the device is rotated 30 degrees about the y-axis to the right, and the right-most portion of the couch and virtual character are visible onscreen only. In the right picture, the device is translated slightly to the left, and the left-most portions of the couch and virtual character are visible onscreen only.](https://docs-assets.developer.apple.com/published/8f5d9e55ef212af5eaf82adb0731cc5c/media-2923906%402x.png)
+![Three illustrated variations of an iPhone running an app that displays an AR experience using the rear camera. The physical environment is depicted with a couch, in front of which, the app displays a virtual character. In the left picture, the iPhone views the couch straight on with the virtual character centered onscreen. In the middle picture, the device is rotated 30 degrees about the y-axis to the right, and the right-most portion of the couch and virtual character are visible onscreen only. In the right picture, the device is translated slightly to the left, and the left-most portions of the couch and virtual character are visible onscreen only.](/images/com.apple.arkit/media-2923906@2x.png)
 
 World-tracking sessions also provide several ways for your app to recognize or interact with elements of the real-world scene visible to the camera:
 
@@ -83,7 +83,7 @@ World-tracking sessions also provide several ways for your app to recognize or i
 - [var isCollaborationEnabled: Bool](arworldtrackingconfiguration/iscollaborationenabled.md)
   A flag that opts you in to a peer-to-peer multiuser AR experience.
 ### Accessing App Clip Codes
-- [Interacting with App Clip Codes in AR](../AppClip/interacting-with-app-clip-codes-in-ar.md)
+- [Interacting with App Clip Codes in AR](../appclip/interacting-with-app-clip-codes-in-ar.md)
   Display content and provide services in an AR experience with App Clip Codes.
 - [class var supportsAppClipCodeTracking: Bool](arworldtrackingconfiguration/supportsappclipcodetracking.md)
   A flag that indicates if the device tracks App Clip Codes.
@@ -97,13 +97,13 @@ World-tracking sessions also provide several ways for your app to recognize or i
 ### Inherits From
 - [ARConfiguration](arconfiguration.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCopying](../Foundation/NSCopying.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCopying](../foundation/nscopying.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

@@ -25,7 +25,7 @@ class VNDetectHumanBodyPose3DRequest
 
 #### Overview
 
-This request generates a collection of [`VNHumanBodyPose3DObservation`](vnhumanbodypose3dobservation.md) objects that describe the position of each body the request detects. If the system allows it, the request uses [`AVDepthData`](https://developer.apple.com/documentation/AVFoundation/AVDepthData) information to improve the accuracy.
+This request generates a collection of [`VNHumanBodyPose3DObservation`](vnhumanbodypose3dobservation.md) objects that describe the position of each body the request detects. If the system allows it, the request uses [`AVDepthData`](https://developer.apple.com/documentation/avfoundation/avdepthdata) information to improve the accuracy.
 
 ## Topics
 
@@ -48,13 +48,13 @@ This request generates a collection of [`VNHumanBodyPose3DObservation`](vnhumanb
 ### Inherits From
 - [VNStatefulRequest](vnstatefulrequest.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCopying](../Foundation/NSCopying.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCopying](../foundation/nscopying.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

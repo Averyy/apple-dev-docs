@@ -22,9 +22,9 @@ var contactIdentifiers: [String] { get }
 
 #### Discussion
 
-Identities that CloudKit discovers using [`CKDiscoverAllUserIdentitiesOperation`](ckdiscoveralluseridentitiesoperation.md) correspond to entries in the local Contacts database, matching the identifier on [`CNContact`](https://developer.apple.com/documentation/Contacts/CNContact).  Use these identifiers with the Contacts database to get additional information about the contacts. Multiple identifiers can exist for a single discovered user because multiple contacts can contain the same email addresses or phone numbers.
+Identities that CloudKit discovers using [`CKDiscoverAllUserIdentitiesOperation`](ckdiscoveralluseridentitiesoperation.md) correspond to entries in the local Contacts database, matching the identifier on [`CNContact`](https://developer.apple.com/documentation/contacts/cncontact).  Use these identifiers with the Contacts database to get additional information about the contacts. Multiple identifiers can exist for a single discovered user because multiple contacts can contain the same email addresses or phone numbers.
 
-To transform these identifiers into an array of unified contact identifiers, create a predicate by calling the [`predicateForContacts(withIdentifiers:)`](https://developer.apple.com/documentation/Contacts/CNContact/predicateForContacts(withIdentifiers:)) method, and then pass that predicate to the [`unifiedContacts(matching:keysToFetch:)`](https://developer.apple.com/documentation/Contacts/CNContactStore/unifiedContacts(matching:keysToFetch:)) method.
+To transform these identifiers into an array of unified contact identifiers, create a predicate by calling the [`predicateForContacts(withIdentifiers:)`](https://developer.apple.com/documentation/contacts/cncontact/predicateforcontacts(withidentifiers:)) method, and then pass that predicate to the [`unifiedContacts(matching:keysToFetch:)`](https://developer.apple.com/documentation/contacts/cncontactstore/unifiedcontacts(matching:keystofetch:)) method.
 
 ## See Also
 

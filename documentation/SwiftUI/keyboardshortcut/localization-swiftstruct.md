@@ -37,8 +37,8 @@ In addition to that, some keyboard shortcuts carry information about directional
 ## Relationships
 
 ### Conforms To
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

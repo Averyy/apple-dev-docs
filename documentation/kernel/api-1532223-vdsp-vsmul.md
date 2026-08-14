@@ -51,11 +51,11 @@ print(c)
 
 ## Parameters
 
-- `__A`: The single-precision real input vector  . 
-- `__IA`: The stride for input vector  . 
+- `__A`: The single-precision real input vector `A`. 
+- `__IA`: The stride for input vector `A`. 
 - `__B`: A pointer to the single-precision real input scalar.
 - `__C`: The single-precision real output vector. 
-- `__IC`: The stride for output vector  . 
+- `__IC`: The stride for output vector `C`. 
 - `__N`: The number of elements to multiply.
 
 ## See Also

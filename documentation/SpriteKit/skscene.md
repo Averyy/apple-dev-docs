@@ -34,7 +34,7 @@ class SKScene
 
 #### Overview
 
-An [`SKScene`](skscene.md) object represents a scene of content in SpriteKit. A scene is the root node in a tree of SpriteKit nodes ([`SKNode`](sknode.md)). These nodes provide content that the scene animates and renders for display. To display a scene, you present it from an [`SKView`](skview.md), [`SKRenderer`](skrenderer.md), or [`WKInterfaceSKScene`](https://developer.apple.com/documentation/WatchKit/WKInterfaceSKScene).
+An [`SKScene`](skscene.md) object represents a scene of content in SpriteKit. A scene is the root node in a tree of SpriteKit nodes ([`SKNode`](sknode.md)). These nodes provide content that the scene animates and renders for display. To display a scene, you present it from an [`SKView`](skview.md), [`SKRenderer`](skrenderer.md), or [`WKInterfaceSKScene`](https://developer.apple.com/documentation/watchkit/wkinterfaceskscene).
 
 `SKScene` is a subclass of [`SKEffectNode`](skeffectnode.md) and enables certain effects to apply to the entire scene. Though applying effects to an entire scene can be an expensive operation, creativity, and ingenuity may help you find some interesting ways to use effects.
 
@@ -119,32 +119,32 @@ An [`SKScene`](skscene.md) object represents a scene of content in SpriteKit. A 
 ### Inherits From
 - [SKEffectNode](skeffectnode.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [Copyable](../Swift/Copyable.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Escapable](../Swift/Escapable.md)
-- [GKSceneRootNodeType](../GameplayKit/GKSceneRootNodeType.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCoding](../Foundation/NSCoding.md)
-- [NSCopying](../Foundation/NSCopying.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [NSSecureCoding](../Foundation/NSSecureCoding.md)
-- [NSStandardKeyBindingResponding](../AppKit/NSStandardKeyBindingResponding.md)
-- [NSTouchBarProvider](../AppKit/NSTouchBarProvider.md)
-- [NSUserActivityRestoring](../AppKit/NSUserActivityRestoring.md)
+- [CVarArg](../swift/cvararg.md)
+- [Copyable](../swift/copyable.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Escapable](../swift/escapable.md)
+- [GKSceneRootNodeType](../gameplaykit/gkscenerootnodetype.md)
+- [Hashable](../swift/hashable.md)
+- [NSCoding](../foundation/nscoding.md)
+- [NSCopying](../foundation/nscopying.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [NSStandardKeyBindingResponding](../appkit/nsstandardkeybindingresponding.md)
+- [NSTouchBarProvider](../appkit/nstouchbarprovider.md)
+- [NSUserActivityRestoring](../appkit/nsuseractivityrestoring.md)
 - [SKWarpable](skwarpable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
-- [UIActivityItemsConfigurationProviding](../UIKit/UIActivityItemsConfigurationProviding.md)
-- [UICoordinateSpace](../UIKit/UICoordinateSpace.md)
-- [UIFocusEnvironment](../UIKit/UIFocusEnvironment.md)
-- [UIFocusItem](../UIKit/UIFocusItem.md)
-- [UIFocusItemContainer](../UIKit/UIFocusItemContainer.md)
-- [UIPasteConfigurationSupporting](../UIKit/UIPasteConfigurationSupporting.md)
-- [UIResponderStandardEditActions](../UIKit/UIResponderStandardEditActions.md)
-- [UIUserActivityRestoring](../UIKit/UIUserActivityRestoring.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
+- [UIActivityItemsConfigurationProviding](../uikit/uiactivityitemsconfigurationproviding.md)
+- [UICoordinateSpace](../uikit/uicoordinatespace.md)
+- [UIFocusEnvironment](../uikit/uifocusenvironment.md)
+- [UIFocusItem](../uikit/uifocusitem.md)
+- [UIFocusItemContainer](../uikit/uifocusitemcontainer.md)
+- [UIPasteConfigurationSupporting](../uikit/uipasteconfigurationsupporting.md)
+- [UIResponderStandardEditActions](../uikit/uiresponderstandardeditactions.md)
+- [UIUserActivityRestoring](../uikit/uiuseractivityrestoring.md)
 
 ## See Also
 

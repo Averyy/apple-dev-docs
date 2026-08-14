@@ -16,7 +16,7 @@ virtual kern_return_t UserMapBundledParallelTaskCommandAndResponseBuffers(IOBuff
 
 #### Return Value
 
-[`kIOReturnSuccess`](https://developer.apple.com/documentation/DriverKit/kIOReturnSuccess) on success and [`kIOReturnError`](https://developer.apple.com/documentation/DriverKit/kIOReturnError) on failure.
+[`kIOReturnSuccess`](https://developer.apple.com/documentation/driverkit/kioreturnsuccess) on success and [`kIOReturnError`](https://developer.apple.com/documentation/driverkit/kioreturnerror) on failure.
 
 #### Discussion
 
@@ -24,7 +24,7 @@ To optimize the interaction with the DriverKit Extension (dext) class, SCSIContr
 
 The framework owns the shared buffer slots for both command and responses until it passes ownership to the dext in the [`UserProcessBundledParallelTasks`](iouserscsiparallelinterfacecontroller/userprocessbundledparalleltasks.md) call. From that point, the dext has ownership of these buffer slots until it returns ownership back to the framework in [`BundledParallelTaskCompletion`](iouserscsiparallelinterfacecontroller/bundledparalleltaskcompletion.md). Don’t access a command or response buffer slot until the framework passes ownership to your dext.
 
-If you don’t want to use the shared buffers, your dext can return [`kIOReturnError`](https://developer.apple.com/documentation/DriverKit/kIOReturnError) and continue to use [`UserProcessParallelTask`](iouserscsiparallelinterfacecontroller/userprocessparalleltask.md) and `UserCompleteParallelTask` to process the I/O. If you return [`kIOReturnSuccess`](https://developer.apple.com/documentation/DriverKit/kIOReturnSuccess) from this method, the framework expects your dext to use [`UserProcessBundledParallelTasks`](iouserscsiparallelinterfacecontroller/userprocessbundledparalleltasks.md) and `UserCompleteBundledParallelTask`.
+If you don’t want to use the shared buffers, your dext can return [`kIOReturnError`](https://developer.apple.com/documentation/driverkit/kioreturnerror) and continue to use [`UserProcessParallelTask`](iouserscsiparallelinterfacecontroller/userprocessparalleltask.md) and `UserCompleteParallelTask` to process the I/O. If you return [`kIOReturnSuccess`](https://developer.apple.com/documentation/driverkit/kioreturnsuccess) from this method, the framework expects your dext to use [`UserProcessBundledParallelTasks`](iouserscsiparallelinterfacecontroller/userprocessbundledparalleltasks.md) and `UserCompleteBundledParallelTask`.
 
 ## Parameters
 

@@ -25,7 +25,7 @@ In PBR rendering, the `metallic` property represents the reflectiveness of an en
 
 If you specify `texture`, RealityKit calculates the `metallic` for the entity by UV-mapping `texture` onto the entity and multiplying the value of each mapped pixel by `scale`. If you don’t specify `texture`, then RealityKit uses `scale` as the entire entity’s reflectiveness. If you provide a color image for `texture` rather than a grayscale image, RealityKit only uses the intensity of the image’s red channel.
 
-![An illustration showing two spheres rendered in RealityKit. The](https://docs-assets.developer.apple.com/published/ae4a36e0823c65c0745717fb7067de18/PhysicallyBasedMaterial-Metallic-swift-struct-init%28scale%3Atexture%3A%29-1%402x.png)
+![An illustration showing two spheres rendered in RealityKit. The](/images/com.apple.RealityKit/PhysicallyBasedMaterial-Metallic-swift-struct-init(scale:texture:)-1@2x.png)
 
 ## Parameters
 

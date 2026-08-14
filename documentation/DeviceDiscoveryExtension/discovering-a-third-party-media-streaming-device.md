@@ -21,7 +21,7 @@ Run either the macOS or iOS server target to emulate a third-party media-streami
 
 ## See Also
 
-- [Media Device Discovery Extension](../BundleResources/Entitlements/com.apple.developer.media-device-discovery-extension.md)
+- [Media Device Discovery Extension](../bundleresources/entitlements/com.apple.developer.media-device-discovery-extension.md)
   An entitlement for an app extension that adds a specific third-party media receiver to a system device-picker UI.
 
 

@@ -22,7 +22,7 @@ static let showWorldOrigin: SCNDebugOptions
 
 #### Discussion
 
-This visualization is available to all session configurations and session [`worldAlignment`](https://developer.apple.com/documentation/ARKit/ARConfiguration/worldAlignment-swift.property) options, but is most useful with a [`ARWorldTrackingConfiguration`](https://developer.apple.com/documentation/ARKit/ARWorldTrackingConfiguration) session. For example, if you start running a session when this option is enabled, then take a step backward, the real-world position tracked by the AR world coordinate system should become visible on your device screen.
+This visualization is available to all session configurations and session [`worldAlignment`](https://developer.apple.com/documentation/arkit/arconfiguration/worldalignment-swift.property) options, but is most useful with a [`ARWorldTrackingConfiguration`](https://developer.apple.com/documentation/arkit/arworldtrackingconfiguration) session. For example, if you start running a session when this option is enabled, then take a step backward, the real-world position tracked by the AR world coordinate system should become visible on your device screen.
 
 
 ---

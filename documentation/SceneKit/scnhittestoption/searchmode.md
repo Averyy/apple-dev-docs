@@ -22,7 +22,7 @@ static let searchMode: SCNHitTestOption
 
 #### Discussion
 
-The value for this key is an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) object containing the raw integer value of an [`SCNHitTestSearchMode`](scnhittestsearchmode.md) constant.
+The value for this key is an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) object containing the raw integer value of an [`SCNHitTestSearchMode`](scnhittestsearchmode.md) constant.
 
 ## See Also
 

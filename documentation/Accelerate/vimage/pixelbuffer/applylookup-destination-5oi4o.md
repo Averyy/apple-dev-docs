@@ -66,7 +66,7 @@ let lookup = descriptor.data!.withMemoryRebound(to: Float.self,
 
 The graph below visualizes the values in the lookup table:
 
-![A line chart showing an s-shaped sigmoid curve.](https://docs-assets.developer.apple.com/published/c0fb337c8dc8d88c6ad0f1e2067d93a6/media-4165167%402x.png)
+![A line chart showing an s-shaped sigmoid curve.](/images/com.apple.accelerate/media-4165167@2x.png)
 
 Use the following code to apply the lookup table to a [`vImage.Planar8`](vimage/planar8.md) source buffer and write the result to a [`vImage.Planar16U`](vimage/planar16u.md) destination buffer:
 
@@ -80,7 +80,7 @@ sourceBuffer.applyLookup(lookup, destination: destinationBuffer)
 
 The images below show an example grayscale source image on the left and the transformed result on the right. The operation flattens the response for very dark and very bright areas and increases the contrast in the destination image.
 
-![Two versions of a close-up image of a fruit tree. On the left is the original grayscale image, and on the right is the transformed high-contrast image.](https://docs-assets.developer.apple.com/published/ecd3ca07235a9c8c2b75acd702d2ae39/media-4165165%402x.png)
+![Two versions of a close-up image of a fruit tree. On the left is the original grayscale image, and on the right is the transformed high-contrast image.](/images/com.apple.accelerate/media-4165165@2x.png)
 
 ## Parameters
 

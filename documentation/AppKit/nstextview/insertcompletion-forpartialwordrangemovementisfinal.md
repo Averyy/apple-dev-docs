@@ -19,15 +19,15 @@ func insertCompletion(_ word: String, forPartialWordRange charRange: NSRange, mo
 This method has two effects, text substitution and changing of the selection:
 
 - It replaces the text between `charRange.start` and the current insertion point with `word`.
-- If `flag` is [`false`](https://developer.apple.com/documentation/Swift/false) it changes the selection to be the last *n* characters of `word` where *n* is equal to `[word length]` minus `charRange.length`, that is, the potential completion.
-- If `flag` is [`true`](https://developer.apple.com/documentation/Swift/true) it makes the selection empty and puts the insertion point just after `word`.
+- If `flag` is [`false`](https://developer.apple.com/documentation/swift/false) it changes the selection to be the last *n* characters of `word` where *n* is equal to `[word length]` minus `charRange.length`, that is, the potential completion.
+- If `flag` is [`true`](https://developer.apple.com/documentation/swift/true) it makes the selection empty and puts the insertion point just after `word`.
 
 ## Parameters
 
 - `word`: The text to insert, including the matched partial word and its potential completion.
 - `charRange`: The range of characters of the matched partial word to be completed.
 - `movement`: The direction of movement. For possible values see the [`NSText`](nstext.md) Constants section. This value allows subclasses to distinguish between canceling completion and selection by arrow keys, by return, by tab, or by other means such as clicking.
-- `flag`: [`false`](https://developer.apple.com/documentation/Swift/false) while the user navigates through the potential text completions, [`true`](https://developer.apple.com/documentation/Swift/true) when a completion is definitively selected or cancelled and the original value is reinserted.
+- `flag`: [`false`](https://developer.apple.com/documentation/swift/false) while the user navigates through the potential text completions, [`true`](https://developer.apple.com/documentation/swift/true) when a completion is definitively selected or cancelled and the original value is reinserted.
 
 ## See Also
 

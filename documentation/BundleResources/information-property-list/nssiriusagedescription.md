@@ -20,7 +20,7 @@ A message that tells people why the app is requesting to send user data to Siri.
 
 ## See Also
 
-- [Requesting Authorization to Use Siri](../SiriKit/requesting-authorization-to-use-siri.md)
+- [Requesting Authorization to Use Siri](../sirikit/requesting-authorization-to-use-siri.md)
   Request permission from the user for Siri and Maps to communicate with your app or Intents app extension.
 
 

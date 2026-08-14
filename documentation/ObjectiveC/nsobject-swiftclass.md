@@ -121,9 +121,9 @@ class NSObject
 - [var toOneRelationshipKeys: [String]](nsobject-swift.class/toonerelationshipkeys.md)
   The keys for the to-one relationship properties of the receiver, if any.
 ### Improving Accessibility
-- [UIAccessibility](../UIKit/uiaccessibility-protocol.md)
+- [UIAccessibility](../uikit/uiaccessibility-protocol.md)
   A set of methods that provides accessibility information about views and controls in an app’s user interface.
-- [UIAccessibilityContainer](../UIKit/uiaccessibilitycontainer.md)
+- [UIAccessibilityContainer](../uikit/uiaccessibilitycontainer.md)
   Provide a set of methods that view subclasses use to make subcomponents accessible as separate elements.
 - [UIAccessibilityAction](uiaccessibilityaction.md)
   A set of methods that accessibility elements can use to support specific actions.
@@ -483,13 +483,13 @@ data into a MTLTexture when the image object is rendered.
 ## Relationships
 
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [Copyable](../Swift/Copyable.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Escapable](../Swift/Escapable.md)
-- [Hashable](../Swift/Hashable.md)
+- [CVarArg](../swift/cvararg.md)
+- [Copyable](../swift/copyable.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Escapable](../swift/escapable.md)
+- [Hashable](../swift/hashable.md)
 - [NSObjectProtocol](nsobjectprotocol.md)
 
 ## See Also

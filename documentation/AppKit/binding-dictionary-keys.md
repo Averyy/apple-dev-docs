@@ -26,7 +26,7 @@ These constants define keys in the binding information dictionary.
 - [struct NSBindingInfoKey](nsbindinginfokey.md)
 - [func NSIsControllerMarker(Any?) -> Bool](nsiscontrollermarker(_:).md)
   Tests whether a given object is special marker object used for indicating the state of a selection in relation to a key.
-- [NSKeyValueBindingCreation](../ObjectiveC/nskeyvaluebindingcreation.md)
+- [NSKeyValueBindingCreation](../objectivec/nskeyvaluebindingcreation.md)
   A set of methods that you can use to create and remove bindings between view objects and controllers, or between controllers and model objects.
 
 

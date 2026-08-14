@@ -32,10 +32,10 @@ The page curl transition filter uses the following properties:
 - **`inputImage`**: The starting image with the type [`CIImage`](ciimage.md).
 - **`targetImage`**: The ending image with the type [`CIImage`](ciimage.md).
 - **`backsideImage`**: An image used as the backside of the curl with the type [`CIImage`](ciimage.md).
-- **`extent`**: A [`CGRect`](https://developer.apple.com/documentation/CoreFoundation/CGRect) representing the size of the effect.
-- **`time`**: A `float` representing the parametric time of the transition from start (at time 0) to end (at time 1) as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
-- **`angle`**: A `float` representing the angle of the motion of the curl as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
-- **`radius`**: A `float` representing the radius of the curl as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+- **`extent`**: A [`CGRect`](https://developer.apple.com/documentation/corefoundation/cgrect) representing the size of the effect.
+- **`time`**: A `float` representing the parametric time of the transition from start (at time 0) to end (at time 1) as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
+- **`angle`**: A `float` representing the angle of the motion of the curl as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
+- **`radius`**: A `float` representing the radius of the curl as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
 
 The following code creates a filter that produces a page curling back to reveal the target image.
 
@@ -53,7 +53,7 @@ func pageCurl(inputImage: CIImage, targetImage: CIImage, backsideImage: CIImage)
 }
 ```
 
-![Three photographs. In the photo on the left, there are multiple small purple flowers photographed close up with good lighting, and the background has a slight blur. In the photograph on the right is a tall building with two trees directly in front of the building. In the center photograph, a page curl transition filter is applied, resulting in a still photo of the moving transition. The left photograph is overlaid on the photo on the right with the bottom left corner of the top image appearing to be curled to reveal the city photograph, like the page of a book.](https://docs-assets.developer.apple.com/published/9a5feb03780a0c06783547cf574ceb08/media-3616422%402x.png)
+![Three photographs. In the photo on the left, there are multiple small purple flowers photographed close up with good lighting, and the background has a slight blur. In the photograph on the right is a tall building with two trees directly in front of the building. In the center photograph, a page curl transition filter is applied, resulting in a still photo of the moving transition. The left photograph is overlaid on the photo on the right with the bottom left corner of the top image appearing to be curled to reveal the city photograph, like the page of a book.](/images/com.apple.coreimage/media-3616422@2x.png)
 
 ## See Also
 

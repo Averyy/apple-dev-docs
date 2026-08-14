@@ -50,10 +50,10 @@ print(c)
 ## Parameters
 
 - `__A`: Single-precision real input vector.
-- `__IA`: Stride for 
+- `__IA`: Stride for `A.`
 - `__B`: Pointer to single-precision real input scalar.
 - `__C`: Single-precision real output vector.
-- `__IC`: Stride for 
+- `__IC`: Stride for `C.`
 - `__N`: The number of elements to process.
 
 

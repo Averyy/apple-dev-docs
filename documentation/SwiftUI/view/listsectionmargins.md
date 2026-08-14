@@ -24,7 +24,7 @@ A view in which the margins of list sections are set to the specified amount on 
 
 #### Discussion
 
-Use this modifier on a list section to set customize its margins. Indicate the edges to set the margin of by naming either a single value from  [`Edge.Set`](edge/set.md), or by specifying an [`OptionSet`](https://developer.apple.com/documentation/Swift/OptionSet) that contains edge values. Margins for the other edges remain unchanged.
+Use this modifier on a list section to set customize its margins. Indicate the edges to set the margin of by naming either a single value from  [`Edge.Set`](edge/set.md), or by specifying an [`OptionSet`](https://developer.apple.com/documentation/swift/optionset) that contains edge values. Margins for the other edges remain unchanged.
 
 The default section margins are based on the list style, list section spacing and content margins of the list. Using this modifier overrides these default values completely.
 

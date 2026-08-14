@@ -24,7 +24,7 @@ func addArc(center: CGPoint, radius: CGFloat, startAngle: CGFloat, endAngle: CGF
 
 This method calculates starting and ending points using the radius and angles you specify, uses a sequence of cubic Bézier curves to approximate a segment of a circle between those points, and then appends those curves to the current path.
 
-The `clockwise` parameter determines the direction in which the arc is created; the actual direction of the final path is dependent on the current transformation matrix of the graphics context. In a flipped coordinate system (the default for [`UIView`](https://developer.apple.com/documentation/UIKit/UIView) drawing methods in iOS), specifying a clockwise arc results in a counterclockwise arc after the transformation is applied.
+The `clockwise` parameter determines the direction in which the arc is created; the actual direction of the final path is dependent on the current transformation matrix of the graphics context. In a flipped coordinate system (the default for [`UIView`](https://developer.apple.com/documentation/uikit/uiview) drawing methods in iOS), specifying a clockwise arc results in a counterclockwise arc after the transformation is applied.
 
 If the current path already contains a subpath, this method adds a line connecting the current point to the starting point of the arc. If the current path is empty, his method creates a new subpath whose starting point is the starting point of the arc. The ending point of the arc becomes the new current point of the path.
 
@@ -34,7 +34,7 @@ If the current path already contains a subpath, this method adds a line connecti
 - `radius`: The radius of the arc, in user space coordinates.
 - `startAngle`: The angle to the starting point of the arc, measured in radians from the positive x-axis.
 - `endAngle`: The angle to the end point of the arc, measured in radians from the positive x-axis.
-- `clockwise`: [`true`](https://developer.apple.com/documentation/Swift/true) to make a clockwise arc; [`false`](https://developer.apple.com/documentation/Swift/false) to make a counterclockwise arc.
+- `clockwise`: [`true`](https://developer.apple.com/documentation/swift/true) to make a clockwise arc; [`false`](https://developer.apple.com/documentation/swift/false) to make a counterclockwise arc.
 
 ## See Also
 

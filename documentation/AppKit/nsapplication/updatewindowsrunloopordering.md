@@ -16,7 +16,7 @@ class var updateWindowsRunLoopOrdering: Int { get }
 
 #### Discussion
 
-This constant is used by the [`RunLoop`](https://developer.apple.com/documentation/Foundation/RunLoop) method [`perform(_:target:argument:order:modes:)`](https://developer.apple.com/documentation/Foundation/RunLoop/perform(_:target:argument:order:modes:)).
+This constant is used by the [`RunLoop`](https://developer.apple.com/documentation/foundation/runloop) method [`perform(_:target:argument:order:modes:)`](https://developer.apple.com/documentation/foundation/runloop/perform(_:target:argument:order:modes:)).
 
 ## See Also
 

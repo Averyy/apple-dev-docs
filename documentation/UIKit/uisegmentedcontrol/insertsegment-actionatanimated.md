@@ -28,7 +28,7 @@ If a segment exists with the action’s identifier, this method updates the exis
 
 - `action`: A [`UIAction`](uiaction.md) object to set on the segment at the index you specify.
 - `segment`: An unsigned integer index of a segment.
-- `animated`: [`true`](https://developer.apple.com/documentation/Swift/true) if the insertion of the new segment animates; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
+- `animated`: [`true`](https://developer.apple.com/documentation/swift/true) if the insertion of the new segment animates; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
 
 ## See Also
 

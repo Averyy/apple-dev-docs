@@ -69,7 +69,7 @@ Request and process Apple Pay payments in your app.
   An abstract superclass for an extension to collect payment information and sign transaction data in a QR code purchase.
 - [protocol PKPaymentInformationRequestHandling](pkpaymentinformationrequesthandling.md)
 ### Entitlements
-- [Merchant IDs Entitlement](../BundleResources/Entitlements/com.apple.developer.in-app-payments.md)
+- [Merchant IDs Entitlement](../bundleresources/entitlements/com.apple.developer.in-app-payments.md)
   A list of merchant IDs your app uses for Apple Pay support.
 ### Payment token format
 - [Payment token format reference](payment-token-format-reference.md)

@@ -10,7 +10,7 @@ Performance tuning is an important part of the development process, regardless o
 
 As you start development, set aggressive goals and evaluate progress throughout the development cycle. Automate the collection of performance metrics as much as possible and look at data over time to see if performance is improving or declining. When you detect a significant decrease in performance, take immediate steps to correct it. When you start fine-tuning early in development, you have more time to make needed changes to algorithms and approaches.
 
-For more information on performance tuning, see [`Improving your app’s performance`](https://developer.apple.com/documentation/Xcode/improving-your-app-s-performance).
+For more information on performance tuning, see [`Improving your app’s performance`](https://developer.apple.com/documentation/xcode/improving-your-app-s-performance).
 
 ##### Set Performance and Power Targets
 
@@ -19,7 +19,7 @@ Performance isn’t a single metric that you measure and improve. Typically, you
 - **App launch and load times**: Make sure your app launches quickly; this is your first chance to make a good impression.
 - **Responsiveness and latency**: Your interface needs to respond quickly to interactions, even while doing other work. Minimize the time it takes to start tasks. For example, make sure audio and video start without noticeable delays.
 - **Graphics rendering**: For an immersive experience with realtime rendering, it’s important to maintain consistently high frame rates. Help maintain these rates by avoiding unnecessary changes that result in more frequent updates to the shared render server. Measure things like update rates, stalls, and hangs in both the render server and your app. Only render the content you need, and optimize the textures and other resources you use during drawing.
-- **Power Usage**: When the device begins to reach thermal limits, the system reduces CPU or GPU usage and performance degrades over time. Avoid this thermal ceiling by prioritizing and spreading out work, limiting the number of simultaneous threads your app maintains, and turning off hardware-related features like [`Core Location`](https://developer.apple.com/documentation/CoreLocation) when you don’t need them.
+- **Power Usage**: When the device begins to reach thermal limits, the system reduces CPU or GPU usage and performance degrades over time. Avoid this thermal ceiling by prioritizing and spreading out work, limiting the number of simultaneous threads your app maintains, and turning off hardware-related features like [`Core Location`](https://developer.apple.com/documentation/corelocation) when you don’t need them.
 - **Task efficiency**: Make the app do as much as possible using the smallest amount of hardware resources. Minimize task-based overhead.
 - **Memory footprint and bandwidth**: Use as little free memory as possible. Don’t allocate or deallocate memory during critical operations, which might make your app appear slow.
 
@@ -53,8 +53,8 @@ There are many tools and APIs you can use to collect performance-related data fo
 
 - **Debug gauges**: Monitor the CPU, memory, disk and network gauges in the Debug navigator to track system resources utilization.
 - **Instruments**: Profile your app to gather performance data on most metrics. Instruments lets you profile your app’s code execution, find memory leaks, track memory allocations, analyze file-system or graphics performance, SwiftUI performance, and much more. Use the RealityKit Trace template to monitoring and investigate render server stalls and bottlenecks on visionOS.
-- **XCTest**: Use [`XCTest`](https://developer.apple.com/documentation/XCTest) APIs to collect performance data.
-- **MetricKit**: Use [`MetricKit`](https://developer.apple.com/documentation/MetricKit) to gather on-device app diagnostics and generate reports.
+- **XCTest**: Use [`XCTest`](https://developer.apple.com/documentation/xctest) APIs to collect performance data.
+- **MetricKit**: Use [`MetricKit`](https://developer.apple.com/documentation/metrickit) to gather on-device app diagnostics and generate reports.
 - **Organizer**: Review diagnostic logs for hangs, disk and energy usage, and crashes in the Xcode Organizer.
 - **Reality Composer Pro**: Review statistics on the contents of your RealityKit scenes. Use this information to optimize your 3D models and textures.
 - **Signposts**: Add signposts to your code to generate timing information you can view in Instruments. For more information, see [`Recording Performance Data`](https://developer.apple.com/documentation/os/recording-performance-data).
@@ -69,7 +69,7 @@ In general, profile and analyze performance on a physical device rather than in 
 
 Xcode comes with tools to help you automate the collection of performance data:
 
-- Use the [`XCTest`](https://developer.apple.com/documentation/XCTest) framework to build test cases to collect performance metrics. XCTest lets you gather several different metrics, including the time it takes to perform operations, the amount of CPU activity that occurs during the test, details about memory or storage use, and more.
+- Use the [`XCTest`](https://developer.apple.com/documentation/xctest) framework to build test cases to collect performance metrics. XCTest lets you gather several different metrics, including the time it takes to perform operations, the amount of CPU activity that occurs during the test, details about memory or storage use, and more.
 - Use Instruments to collect metrics for specific interactions with your app. Record those interactions and play them back later to collect a new set of metrics.
 - Write custom scripts to gather performance-related data using system command-line tools. Integrate these scripts into your project’s build process to automate their execution.
 
@@ -77,7 +77,7 @@ Configure Xcode to run test cases each time you build your app, or create a sepa
 
 > **Note**: Collect performance data using a production version of your app to obtain more accurate results. Debug builds contain additional code to support debugging operations and logging. You can collect data from debug builds too, but keep those metrics separate from production-build metrics.
 
-For information about how to write test cases for your app, see [`Testing`](https://developer.apple.com/documentation/Xcode/testing). For information about how to automate testing with Xcode Cloud, see [`Xcode Cloud`](https://developer.apple.com/documentation/Xcode/Xcode-Cloud).
+For information about how to write test cases for your app, see [`Testing`](https://developer.apple.com/documentation/xcode/testing). For information about how to automate testing with Xcode Cloud, see [`Xcode Cloud`](https://developer.apple.com/documentation/xcode/xcode-cloud).
 
 ## See Also
 

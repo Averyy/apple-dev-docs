@@ -16,7 +16,7 @@ The first step toward writing great documentation is to add single-sentence abst
 
 Use the Code Actions menu in Xcode to generate a template that you fill out. Control-click the symbol in the source editor and choose Add Documentation from the Code Actions menu.
 
-![A screenshot that shows the placeholder Xcode inserts when you select the Add Documentation menu item.](https://docs-assets.developer.apple.com/published/4e3d316d640b7469cd87cc332425ad36/quick-help-method-placeholder%402x.png)
+![A screenshot that shows the placeholder Xcode inserts when you select the Add Documentation menu item.](/images/com.apple.Xcode/quick-help-method-placeholder@2x.png)
 
 Replace the Description placeholder with a summary for the symbol.
 
@@ -24,13 +24,13 @@ Replace the Description placeholder with a summary for the symbol.
 
 After you add a summary, Option-click the symbol to review the changes in Xcode’s Quick Help. It displays the text you add directly below the Summary header.
 
-![A screenshot of Xcode’s Quick Help pop-over displaying a method’s summary above its declaration.](https://docs-assets.developer.apple.com/published/8c5b583faf8120af45f00ad3e6fe1a17/quick-help-method-summary%402x.png)
+![A screenshot of Xcode’s Quick Help pop-over displaying a method’s summary above its declaration.](/images/com.apple.Xcode/quick-help-method-summary@2x.png)
 
 Any paragraphs you add appear below the Discussion header in Xcode’s Quick Help, and in the symbol reference page that DocC generates.
 
 After adding a Discussion section, invoke Quick Help to view the updated documentation comment. Alternatively, choose Product > Build Documentation to compile your documentation and open it in the documentation viewer.
 
-![A screenshot of a symbol’s compiled reference page in Xcode’s documentation viewer. The page shows a summary and a Discussion section that includes the content from the symbol’s documentation comment.](https://docs-assets.developer.apple.com/published/c34bd7f4846e2dd57900d415967ad6c4/doc-viewer-discussion%402x.png)
+![A screenshot of a symbol’s compiled reference page in Xcode’s documentation viewer. The page shows a summary and a Discussion section that includes the content from the symbol’s documentation comment.](/images/com.apple.Xcode/doc-viewer-discussion@2x.png)
 
 ##### Describe the Parameters of a Method
 
@@ -51,7 +51,7 @@ mutating public func eat(_ food: Food, quantity: Int) throws -> Int {
 
 After you add documentation for a method’s parameters, it appears in Xcode’s Quick Help, and in the symbol reference page that DocC generates when you choose Product > Build Documentation.
 
-![A screenshot of a symbol’s compiled reference page in Xcode’s documentation viewer, which includes a Parameters section. The page displays the content from the symbol’s documentation comment.](https://docs-assets.developer.apple.com/published/fdd6b5d865669db0f976405dc24b10ac/doc-viewer-parameters%402x.png)
+![A screenshot of a symbol’s compiled reference page in Xcode’s documentation viewer, which includes a Parameters section. The page displays the content from the symbol’s documentation comment.](/images/com.apple.Xcode/doc-viewer-parameters@2x.png)
 
 ##### Describe the Return Value of a Method
 
@@ -64,7 +64,7 @@ mutating public func eat(_ food: Food, quantity: Int) throws -> Int {
 
 You can see your Returns section in the symbol reference page that DocC generates, as well as in Xcode’s Quick Help.
 
-![A screenshot of Xcode’s Quick Help pop-over, which includes a Returns section below all the other content from the documentation comment.](https://docs-assets.developer.apple.com/published/4acba898ebafaa8cfd692221d27a3ac3/returns-section%402x.png)
+![A screenshot of Xcode’s Quick Help pop-over, which includes a Returns section below all the other content from the documentation comment.](/images/com.apple.Xcode/returns-section@2x.png)
 
 ##### Describe the Thrown Errors of a Method
 
@@ -77,7 +77,7 @@ mutating public func eat(_ food: Food, quantity: Int) throws -> Int {
 
 The Throws section appears in the symbol’s reference page, in the Quick Help pop-over, and in the Quick Help inspector that you can view using Command-Option-3.
 
-![A screenshot of Xcode’s Quick Help inspector that shows how it displays the documentation comment’s information, highlighting the Throws section.](https://docs-assets.developer.apple.com/published/1c1dbd9696359fc6cce0638ec30686c0/quick-help-inspector%402x.png)
+![A screenshot of Xcode’s Quick Help inspector that shows how it displays the documentation comment’s information, highlighting the Throws section.](/images/com.apple.Xcode/quick-help-inspector@2x.png)
 
 ## See Also
 

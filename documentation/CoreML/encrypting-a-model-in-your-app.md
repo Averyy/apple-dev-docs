@@ -20,7 +20,7 @@ In the editor, add:
 
 Press the Return key or click outside the editor to close it.
 
-![Screenshot of an Xcode project’s Build Phases tab, showing a model’s compiler flags editor. The editor’s text reads: dash-dash-encrypt, space, and then the path to the model beginning with quotation mark dollar-sign S-R-C-root and then the path to the model file, ending in “dot M-L-model key”.](https://docs-assets.developer.apple.com/published/a61804fee42dfe738a6dde83652ecea8/media-3675192%402x.png)
+![Screenshot of an Xcode project’s Build Phases tab, showing a model’s compiler flags editor. The editor’s text reads: dash-dash-encrypt, space, and then the path to the model beginning with quotation mark dollar-sign S-R-C-root and then the path to the model file, ending in “dot M-L-model key”.](/images/com.apple.coreml/media-3675192@2x.png)
 
 ##### Load the Model
 

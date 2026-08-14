@@ -36,9 +36,9 @@ The following [`NSData`](nsdata.md) methods change when used on a mutable data o
 
 When called, the bytes are immediately copied and then the buffer is freed.
 
-`NSMutableData` is “toll-free bridged” with its Core Foundation counterpart, [`CFData`](https://developer.apple.com/documentation/CoreFoundation/CFData). See [`Toll-Free Bridging`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Conceptual/CocoaEncyclopedia/Toll-FreeBridgin/Toll-FreeBridgin.html#//apple_ref/doc/uid/TP40010810-CH2) for more information on toll-free bridging.
+`NSMutableData` is “toll-free bridged” with its Core Foundation counterpart, [`CFData`](https://developer.apple.com/documentation/corefoundation/cfdata). See [`Toll-Free Bridging`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Conceptual/CocoaEncyclopedia/Toll-FreeBridgin/Toll-FreeBridgin.html#//apple_ref/doc/uid/TP40010810-CH2) for more information on toll-free bridging.
 
-> ❗ **Important**:  The Swift overlay to the Foundation framework provides the [`Data`](data.md) structure, which bridges to the [`NSMutableData`](nsmutabledata.md) class and its immutable superclass [`NSData`](nsdata.md). For more information about value types, see [`Working with Foundation Types`](https://developer.apple.com/documentation/Swift/working-with-foundation-types).
+> ❗ **Important**:  The Swift overlay to the Foundation framework provides the [`Data`](data.md) structure, which bridges to the [`NSMutableData`](nsmutabledata.md) class and its immutable superclass [`NSData`](nsdata.md). For more information about value types, see [`Working with Foundation Types`](https://developer.apple.com/documentation/swift/working-with-foundation-types).
 
 ## Topics
 
@@ -92,23 +92,23 @@ When called, the bytes are immediately copied and then the buffer is freed.
 ### Inherited By
 - [NSPurgeableData](nspurgeabledata.md)
 ### Conforms To
-- [BidirectionalCollection](../Swift/BidirectionalCollection.md)
-- [CVarArg](../Swift/CVarArg.md)
-- [Collection](../Swift/Collection.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [BidirectionalCollection](../swift/bidirectionalcollection.md)
+- [CVarArg](../swift/cvararg.md)
+- [Collection](../swift/collection.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
 - [DataProtocol](dataprotocol.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
 - [NSCoding](nscoding.md)
 - [NSCopying](nscopying.md)
 - [NSMutableCopying](nsmutablecopying.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 - [NSSecureCoding](nssecurecoding.md)
-- [RandomAccessCollection](../Swift/RandomAccessCollection.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
-- [Sequence](../Swift/Sequence.md)
+- [RandomAccessCollection](../swift/randomaccesscollection.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sequence](../swift/sequence.md)
 
 
 ---

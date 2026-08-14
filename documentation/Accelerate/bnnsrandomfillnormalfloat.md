@@ -49,7 +49,7 @@ BNNSRandomFillNormalFloat(randomNumberGenerator,
 
 The graph below shows the distribution of values in `descriptor`.
 
-![A graph that shows a single line that follows a bell curve shape.](https://docs-assets.developer.apple.com/published/5736c5649732ac5b4751fb4299febcfc/media-3950634%402x.png)
+![A graph that shows a single line that follows a bell curve shape.](/images/com.apple.accelerate/media-3950634@2x.png)
 
 ## Parameters
 

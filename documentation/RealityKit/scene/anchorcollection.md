@@ -81,13 +81,13 @@ A collection of anchor entities.
 ## Relationships
 
 ### Conforms To
-- [Collection](../Swift/Collection.md)
-- [Copyable](../Swift/Copyable.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Escapable](../Swift/Escapable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
-- [Sequence](../Swift/Sequence.md)
+- [Collection](../swift/collection.md)
+- [Copyable](../swift/copyable.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Escapable](../swift/escapable.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sequence](../swift/sequence.md)
 
 ## See Also
 

@@ -19,9 +19,9 @@ static let mail: UIActivity.ActivityType
 
 #### Discussion
 
-When using this service, you can provide [`NSString`](https://developer.apple.com/documentation/Foundation/NSString) and [`UIImage`](uiimage.md) objects and [`NSURL`](https://developer.apple.com/documentation/Foundation/NSURL) objects pointing to local files as data for the activity items.
+When using this service, you can provide [`NSString`](https://developer.apple.com/documentation/foundation/nsstring) and [`UIImage`](uiimage.md) objects and [`NSURL`](https://developer.apple.com/documentation/foundation/nsurl) objects pointing to local files as data for the activity items.
 
-To specify an [`NSData`](https://developer.apple.com/documentation/Foundation/NSData) object, you must implement the [`UIActivityItemSource`](uiactivityitemsource.md) protocol, return the data object in [`activityViewController(_:itemForActivityType:)`](uiactivityitemsource/activityviewcontroller(_:itemforactivitytype:).md), and return the data object’s UTI in [`activityViewController(_:dataTypeIdentifierForActivityType:)`](uiactivityitemsource/activityviewcontroller(_:datatypeidentifierforactivitytype:).md). Also, you may need to register the appropriate mapping so that the MIME type can be determined.
+To specify an [`NSData`](https://developer.apple.com/documentation/foundation/nsdata) object, you must implement the [`UIActivityItemSource`](uiactivityitemsource.md) protocol, return the data object in [`activityViewController(_:itemForActivityType:)`](uiactivityitemsource/activityviewcontroller(_:itemforactivitytype:).md), and return the data object’s UTI in [`activityViewController(_:dataTypeIdentifierForActivityType:)`](uiactivityitemsource/activityviewcontroller(_:datatypeidentifierforactivitytype:).md). Also, you may need to register the appropriate mapping so that the MIME type can be determined.
 
 ## See Also
 

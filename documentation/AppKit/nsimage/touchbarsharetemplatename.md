@@ -19,7 +19,7 @@ class let touchBarShareTemplateName: String
 
 #### Discussion
 
-![Template image for share](https://docs-assets.developer.apple.com/published/ddaadb432962b8b7e29a1589e3d7f10a/media-2793519%402x.png)
+![Template image for share](/images/com.apple.appkit/media-2793519@2x.png)
 
 Touch Bar template images are exclusively for use in [`NSTouchBarItem`](nstouchbaritem.md) objects and not in onscreen windows.
 

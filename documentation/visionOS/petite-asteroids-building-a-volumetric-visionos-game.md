@@ -12,7 +12,7 @@ Use the latest RealityKit APIs to create a beautiful video game for visionOS.
 
 This sample code project uses RealityKit for visionOS to create a video game that tells the story of a lost chondrite as she collects her missing rock friends in a beautifully rendered environment.
 
-![A screenshot of a towering butte presented in a volume within a mixed reality space running inside the visionOS simulator.](https://docs-assets.developer.apple.com/published/5c5cbc2b0a27d9ff68fcc88012c36f5b/petite-asteroids-overview%403x.png)
+![A screenshot of a towering butte presented in a volume within a mixed reality space running inside the visionOS simulator.](/images/com.apple.visionOS/petite-asteroids-overview@3x.png)
 
 The sample shows you how to use native APIs to leverage the full power of Apple Vision Pro in a real-world scenario. Its code and assets provide examples and inspiration so that you can create your own spectacular apps and games for Apple Vision Pro. The game supports two input modes for jumping: single input look-based jumping, and dual input pinch-based jumping.
 
@@ -22,7 +22,7 @@ After our hero crash-lands on Earth, you begin controlling her movement using sp
 
 When the single input mode is active, the player looks and taps a target destination and the character leaps into the air toward it, allowing her to begin the treacherous journey up the rocky landmark.
 
-A [`SpatialTapGesture`](https://developer.apple.com/documentation/SwiftUI/SpatialTapGesture) handles look-based jumping.
+A [`SpatialTapGesture`](https://developer.apple.com/documentation/swiftui/spatialtapgesture) handles look-based jumping.
 
 ```swift
 struct SingleInputJumpGesture: Gesture {
@@ -54,7 +54,7 @@ struct SingleInputJumpGesture: Gesture {
 }
 ```
 
-A separate [`DragGesture`](https://developer.apple.com/documentation/SwiftUI/DragGesture) handles rolling the character on the ground.
+A separate [`DragGesture`](https://developer.apple.com/documentation/swiftui/draggesture) handles rolling the character on the ground.
 
 ```swift
 struct SingleInputDragGesture: Gesture {
@@ -135,11 +135,11 @@ func updateDragStartPosition(dragStartPosition: SIMD3<Float>,
 }
 ```
 
-> **Note**: When running the sample project in Simulator, you can hold the Shift key on your keyboard while dragging the mouse to improve the feel of the simulated drag gesture. To learn more, see [`Device Hub`](https://developer.apple.com/documentation/Xcode/device-hub#Interact-with-your-app).
+> **Note**: When running the sample project in Simulator, you can hold the Shift key on your keyboard while dragging the mouse to improve the feel of the simulated drag gesture. To learn more, see [`Device Hub`](https://developer.apple.com/documentation/xcode/device-hub).
 
 #### Climb the Butte with Dual Input Gestures
 
-In the dual input mode, a custom [`SpatialEventGesture`](https://developer.apple.com/documentation/SwiftUI/SpatialEventGesture) allows the player to move the character and jump at the same time by tracking the state of two spatial events simultaneously.
+In the dual input mode, a custom [`SpatialEventGesture`](https://developer.apple.com/documentation/swiftui/spatialeventgesture) allows the player to move the character and jump at the same time by tracking the state of two spatial events simultaneously.
 
 ```swift
 struct DualInputGesture: Gesture {
@@ -293,7 +293,7 @@ private func respondToActiveSpatialEvents() {
 
 #### Rotate the World in a Mixed Space
 
-In this game, the world itself rotates as the character circles the butte. All physics entities in this sample app are descendants of a [`PhysicsSimulationComponent`](https://developer.apple.com/documentation/RealityKit/PhysicsSimulationComponent) entity. When you translate, rotate, or scale this entity, the entire physics world transforms with it. The physics simulation component entity serves as the root entity for the physics world, and you can move it like a camera inside custom systems (although the transformations are inverted). For more information, see [`Handling different-sized objects in physics simulations`](https://developer.apple.com/documentation/RealityKit/handling-different-sized-objects-in-physics-simulations).
+In this game, the world itself rotates as the character circles the butte. All physics entities in this sample app are descendants of a [`PhysicsSimulationComponent`](https://developer.apple.com/documentation/realitykit/physicssimulationcomponent) entity. When you translate, rotate, or scale this entity, the entire physics world transforms with it. The physics simulation component entity serves as the root entity for the physics world, and you can move it like a camera inside custom systems (although the transformations are inverted). For more information, see [`Handling different-sized objects in physics simulations`](https://developer.apple.com/documentation/realitykit/handling-different-sized-objects-in-physics-simulations).
 
 Before animating the physics root, create an extension method to interpolate floating-point values using a damping function. This makes animations feel less abrupt.
 
@@ -370,7 +370,7 @@ rotationComponent.angle
 
 Using third-party digital content creation (DCC) tools to create the visual assets for this sample app, you can export those assets as USD files, and then import and arrange them inside Reality Composer Pro. Then you can apply custom components to the entities in a Reality Composer Pro scene, and custom systems can look for those components to process entities for gameplay. For more information, see doc://com.apple.documentation/documentation/realitycomposerpro/adding-assets-into-your-reality-composer-pro-scene.
 
-To generate the collision component that uses the shape of the butte, you first use a DCC to generate a model that matches the shape of the butte and platforms, but that contains fewer vertices. In Reality Composer Pro, you apply a custom component to the model entity. The custom system looks for that component by subscribing to the [`ComponentEvents.DidAdd`](https://developer.apple.com/documentation/RealityKit/ComponentEvents/DidAdd) event for a custom type in the initializer for a custom system.
+To generate the collision component that uses the shape of the butte, you first use a DCC to generate a model that matches the shape of the butte and platforms, but that contains fewer vertices. In Reality Composer Pro, you apply a custom component to the model entity. The custom system looks for that component by subscribing to the [`ComponentEvents.DidAdd`](https://developer.apple.com/documentation/realitykit/componentevents/didadd) event for a custom type in the initializer for a custom system.
 
 ```swift
 // Store subscriptions in a list.
@@ -387,7 +387,7 @@ required init (scene: Scene ) {
 
 On the first scene load, RealityKit adds the component to an entity. The custom system searches for model components that descend from that entity. The system then creates a collision component on the entity using all the shapes that the mesh data generates.
 
-To perform a recursive operation on each descendant entity, the sample uses an extension method for [`Entity`](https://developer.apple.com/documentation/RealityKit/Entity).
+To perform a recursive operation on each descendant entity, the sample uses an extension method for [`Entity`](https://developer.apple.com/documentation/realitykit/entity).
 
 ```swift
 /// A recursive search of all descendants with a specific component.
@@ -424,7 +424,7 @@ collisionRoot.forEachDescendant(withComponent: ModelComponent.self) {
 }
 ```
 
-Next, use [`generateStaticMesh(from:)`](https://developer.apple.com/documentation/RealityKit/ShapeResource/generateStaticMesh(from:)) to create a shape from each discovered mesh resource, and then offset that shape relative to the collision root entity (the original entity with the custom component).
+Next, use [`generateStaticMesh(from:)`](https://developer.apple.com/documentation/realitykit/shaperesource/generatestaticmesh(from:)) to create a shape from each discovered mesh resource, and then offset that shape relative to the collision root entity (the original entity with the custom component).
 
 ```swift
 for (entity, mesh) in meshes {
@@ -450,7 +450,7 @@ let collision = CollisionComponent(shapes: shapes, mode: collisionMode)
 collisionRoot.components.set(collision)
 ```
 
-The sample also loads and configures audio assets in code. In this sample, a custom system accumulates collision sounds into a Swift list, and then passes the sounds into the initializer, [`init(_:)`](https://developer.apple.com/documentation/RealityKit/AudioFileGroupResource/init(_:)), for an `AudioFileGroupResource`. On startup, the app loads audio files into the scene using the `AudioResourcesComponent`. This componentʼs load function then caches the `AudioResource` using an `AudioLibraryComponent` for retrieval by name later in the app code. The app also adds other sounds, such as music and environmental ambiences, into the `AudioResourcesComponent`, in addition to the collision sounds, for later use.
+The sample also loads and configures audio assets in code. In this sample, a custom system accumulates collision sounds into a Swift list, and then passes the sounds into the initializer, [`init(_:)`](https://developer.apple.com/documentation/realitykit/audiofilegroupresource/init(_:)), for an `AudioFileGroupResource`. On startup, the app loads audio files into the scene using the `AudioResourcesComponent`. This componentʼs load function then caches the `AudioResource` using an `AudioLibraryComponent` for retrieval by name later in the app code. The app also adds other sounds, such as music and environmental ambiences, into the `AudioResourcesComponent`, in addition to the collision sounds, for later use.
 
 #### Structure Your Project for Development
 
@@ -460,21 +460,21 @@ Within Reality Composer Pro, USD references allow you to isolate your work to in
 
 As an example, in this sample code project, the original materials are in a separate scene. Additionally, the main materials scene instances and reuses custom node graphs in other materials. One example is `DropShadow`, the node graph for rendering drop shadows.
 
-![A screenshot of a custom shader created with Shader Graph that renders drop shadows for the sample.](https://docs-assets.developer.apple.com/published/33c163485ffe0db4e1ed9803f25002a7/drop-shadow-shader-graph%403x.png)
+![A screenshot of a custom shader created with Shader Graph that renders drop shadows for the sample.](/images/com.apple.visionOS/drop-shadow-shader-graph@3x.png)
 
 For USD assets, the source models are in their own folder. These assets don’t have applied materials, and don’t contain any configuration data necessary for gameplay.
 
-![A screenshot of a folder inside the Reality Composer Pro project containing unmodified source assets.](https://docs-assets.developer.apple.com/published/ffdcb62fffbf2029abc5cb671ed6db86/source-models%403x.png)
+![A screenshot of a folder inside the Reality Composer Pro project containing unmodified source assets.](/images/com.apple.visionOS/source-models@3x.png)
 
 > ❗ **Important**: Be mindful of the size of your assets during development. Textures and other large assets affect the build times for your app.
 
 In the `GameAssets` folder, create game assets by configuring source assets with materials and any custom component data necessary. Those game assets are then ready for a designer to assemble into levels.
 
-![A screenshot of many different modular assets in the GameAssets folder inside the Reality Composer Pro project.](https://docs-assets.developer.apple.com/published/a09dfab36450f7ba6ff216cfee75dcf2/game-assets%403x.png)
+![A screenshot of many different modular assets in the GameAssets folder inside the Reality Composer Pro project.](/images/com.apple.visionOS/game-assets@3x.png)
 
 Finally, assemble the game assets in the completed game level scene.
 
-![A screenshot of the main level scene inside Reality Composer Pro.](https://docs-assets.developer.apple.com/published/9f59c47ebc3884ff46e4b0d22cd7bd5f/main-level-scene%403x.png)
+![A screenshot of the main level scene inside Reality Composer Pro.](/images/com.apple.visionOS/main-level-scene@3x.png)
 
 #### Create Effects with the Shader Graph
 
@@ -542,7 +542,7 @@ func update(context: SceneUpdateContext) {
 
 See the `DropShadowComputeShader.metal` file in the sample project for the full compute shader implementation.
 
-Inside `setShadowShaderParameters`, the sample sets the properties on the custom material by getting a reference to the `ShaderGraphMaterial` on the entity’s [`ModelComponent`](https://developer.apple.com/documentation/RealityKit/ModelComponent). The sample then applies the modified shader graph material back to the shadow receiver entity directly.
+Inside `setShadowShaderParameters`, the sample sets the properties on the custom material by getting a reference to the `ShaderGraphMaterial` on the entity’s [`ModelComponent`](https://developer.apple.com/documentation/realitykit/modelcomponent). The sample then applies the modified shader graph material back to the shadow receiver entity directly.
 
 ```swift
 func setShadowShaderParameters (entity: Entity, worldToLevelMatrix: simd_float4x4) {
@@ -566,9 +566,9 @@ func setShadowShaderParameters (entity: Entity, worldToLevelMatrix: simd_float4x
 
 #### Understand How Collision Audio Works
 
-In Petite Asteroids, the audio system has multiple types of collision sounds. These sounds play depending on the [`CollisionEvents`](https://developer.apple.com/documentation/RealityKit/CollisionEvents) of their respective component. These events govern when and how to play the audio accordingly. The information that the system receives from the physics and collision events determines the loudness of the audio playback.
+In Petite Asteroids, the audio system has multiple types of collision sounds. These sounds play depending on the [`CollisionEvents`](https://developer.apple.com/documentation/realitykit/collisionevents) of their respective component. These events govern when and how to play the audio accordingly. The information that the system receives from the physics and collision events determines the loudness of the audio playback.
 
-The physics event calculates the velocity of the character or whether the character stops jumping, which changes the nature of the audio playback. The collision event provides information on the [`impulse`](https://developer.apple.com/documentation/RealityKit/CollisionEvents/Began/impulse), which is directly proportional to the loudness of the audio playback. When the character jumps or falls off the butte, she lands on a virtual surface. The app plays a sound whenever the character collides with a virtual surface.
+The physics event calculates the velocity of the character or whether the character stops jumping, which changes the nature of the audio playback. The collision event provides information on the [`impulse`](https://developer.apple.com/documentation/realitykit/collisionevents/began/impulse), which is directly proportional to the loudness of the audio playback. When the character jumps or falls off the butte, she lands on a virtual surface. The app plays a sound whenever the character collides with a virtual surface.
 
 The sample shows how to handle collision events, play a sound upon collision, and track the collision entity throughout events:
 
@@ -639,11 +639,11 @@ class GameMovementSystem: System {
 }
 ```
 
-The collision sounds in Petite Asteroids are usually one-shot collision sounds, which the app plays using [`playAudio(_:)`](https://developer.apple.com/documentation/RealityKit/Entity/playAudio(_:)). For other collision sounds, the app groups a set of similar sounds together using an [`AudioFileGroupResource`](https://developer.apple.com/documentation/RealityKit/AudioFileGroupResource) to play nonrepeating random sounds for audio playback.
+The collision sounds in Petite Asteroids are usually one-shot collision sounds, which the app plays using [`playAudio(_:)`](https://developer.apple.com/documentation/realitykit/entity/playaudio(_:)). For other collision sounds, the app groups a set of similar sounds together using an [`AudioFileGroupResource`](https://developer.apple.com/documentation/realitykit/audiofilegroupresource) to play nonrepeating random sounds for audio playback.
 
 #### Design Dynamic Sounds
 
-In this game, the Audio [`Entity`](https://developer.apple.com/documentation/RealityKit/Entity) uses an [`AmbientAudioComponent`](https://developer.apple.com/documentation/RealityKit/AmbientAudioComponent) for ambient audio. The system plays two audio files using [`AudioPlaybackController`](https://developer.apple.com/documentation/RealityKit/AudioPlaybackController) for the environment audio of the game. The character starts at the bottom of the butte with a calmer environment. As she reaches higher parts of the butte, the calmer environment cross-fades with the windier environment. The system blends these two files according to how high the character ascends. If she falls, the windier environment fades gracefully by interpolating values over a number of seconds.
+In this game, the Audio [`Entity`](https://developer.apple.com/documentation/realitykit/entity) uses an [`AmbientAudioComponent`](https://developer.apple.com/documentation/realitykit/ambientaudiocomponent) for ambient audio. The system plays two audio files using [`AudioPlaybackController`](https://developer.apple.com/documentation/realitykit/audioplaybackcontroller) for the environment audio of the game. The character starts at the bottom of the butte with a calmer environment. As she reaches higher parts of the butte, the calmer environment cross-fades with the windier environment. The system blends these two files according to how high the character ascends. If she falls, the windier environment fades gracefully by interpolating values over a number of seconds.
 
 The soundstage design intentionally utilizes stereo music with spread and width (decorrelated content), so any spatial sound effects in the game play closer to the center of the view. This way, the music doesn’t distract from the overall game experience, and improves the sense of immersion. To accomplish this effect, the app uses psychoacoustic and filtering techniques:
 
@@ -660,7 +660,7 @@ The design of the music scoring separates linear and nonlinear categories. The l
 
 ## See Also
 
-- [Reality Composer Pro](../RealityComposerPro/RealityComposerPro.md)
+- [Reality Composer Pro](../realitycomposerpro/realitycomposerpro.md)
   Build, design, and orchestrate 3D content for your RealityKit apps.
 - [Chaparral Village: Building an immersive visionOS adventure game](chaparral-village-building-an-immersive-visionos-adventure-game.md)
   Create an adventure game using SwiftUI, RealityKit, and Reality Composer Pro 3.
@@ -676,7 +676,7 @@ The design of the music scoring separates linear and nonlinear categories. The l
   Add a deeper level of immersion to media playback in your app with RealityKit and Reality Composer Pro.
 - [Enabling video reflections in an immersive environment](enabling-video-reflections-in-an-immersive-environment.md)
   Create a more immersive experience by adding video reflections in a custom environment.
-- [Combining 2D and 3D views in an immersive app](../RealityKit/combining-2d-and-3d-views-in-an-immersive-app.md)
+- [Combining 2D and 3D views in an immersive app](../realitykit/combining-2d-and-3d-views-in-an-immersive-app.md)
   Use attachments to place 2D content relative to 3D content in your visionOS app.
 - [Understanding the modular architecture of RealityKit](understanding-the-realitykit-modular-architecture.md)
   Learn how everything fits together in RealityKit.

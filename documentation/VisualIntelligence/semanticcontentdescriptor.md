@@ -42,26 +42,26 @@ struct SemanticContentDescriptor
 ## Relationships
 
 ### Conforms To
-- [Copyable](../Swift/Copyable.md)
-- [CustomLocalizedStringResourceConvertible](../Foundation/CustomLocalizedStringResourceConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Decodable](../Swift/Decodable.md)
-- [DisplayRepresentable](../AppIntents/DisplayRepresentable.md)
-- [Encodable](../Swift/Encodable.md)
-- [Escapable](../Swift/Escapable.md)
-- [InstanceDisplayRepresentable](../AppIntents/InstanceDisplayRepresentable.md)
-- [IntentValueConvertible](../AppIntents/IntentValueConvertible.md)
-- [IntentValueExpressing](../AppIntents/IntentValueExpressing.md)
-- [PersistentlyIdentifiable](../AppIntents/PersistentlyIdentifiable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
-- [TypeDisplayRepresentable](../AppIntents/TypeDisplayRepresentable.md)
+- [Copyable](../swift/copyable.md)
+- [CustomLocalizedStringResourceConvertible](../foundation/customlocalizedstringresourceconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Decodable](../swift/decodable.md)
+- [DisplayRepresentable](../appintents/displayrepresentable.md)
+- [Encodable](../swift/encodable.md)
+- [Escapable](../swift/escapable.md)
+- [InstanceDisplayRepresentable](../appintents/instancedisplayrepresentable.md)
+- [IntentValueConvertible](../appintents/intentvalueconvertible.md)
+- [IntentValueExpressing](../appintents/intentvalueexpressing.md)
+- [PersistentlyIdentifiable](../appintents/persistentlyidentifiable.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
+- [TypeDisplayRepresentable](../appintents/typedisplayrepresentable.md)
 
 ## See Also
 
 - [Integrating your app with visual intelligence](integrating-your-app-with-visual-intelligence.md)
   Enable people to find app content that matches their surroundings or objects onscreen with visual intelligence.
-- [Adopting App Intents to support system experiences](../AppIntents/adopting-app-intents-to-support-system-experiences.md)
+- [Adopting App Intents to support system experiences](../appintents/adopting-app-intents-to-support-system-experiences.md)
   Create app intents and entities so people can use your app’s content and actions across system experiences.
 
 

@@ -15,7 +15,7 @@ With the CloudKit Database app, you can:
 - View and edit your test data during development or debugging.
 - View logs and metrics for your containers.
 - Deploy your schema to production. See [`Deploying an iCloud Container’s Schema`](deploying-an-icloud-container-s-schema.md).
-- Obtain API tokens for use with CloudKit web services and [`CloudKit JS`](https://developer.apple.com/documentation/CloudKitJS). See [`Obtaining an API Token for an iCloud Container`](obtaining-an-api-token-for-an-icloud-container.md).
+- Obtain API tokens for use with CloudKit web services and [`CloudKit JS`](https://developer.apple.com/documentation/cloudkitjs). See [`Obtaining an API Token for an iCloud Container`](obtaining-an-api-token-for-an-icloud-container.md).
 
 ##### Navigate to an Icloud Containers Schema Management Page
 
@@ -28,7 +28,7 @@ To navigate to the iCloud container’s schema management page:
 3. From the container selection drop-down at the top of the page, choose your app’s container.
 4. Click the Record Types menu item in the Schema section to open the container’s schema management page.
 
-![A screenshot showing a selected container in the CloudKit Database app. The screenshot highlights the Record Types menu item in the Schema section on the left.](https://docs-assets.developer.apple.com/published/5c5ea351fa523f12db5077e11d5eafd2/media-4452780%402x.png)
+![A screenshot showing a selected container in the CloudKit Database app. The screenshot highlights the Record Types menu item in the Schema section on the left.](/images/com.apple.cloudkit/media-4452780@2x.png)
 
 After you select the container you want to manage, you can access information about the schema quickly by using the menu items. See [`Inspecting and Editing an iCloud Container’s Schema`](inspecting-and-editing-an-icloud-container-s-schema.md) for more details.
 
@@ -45,7 +45,7 @@ To navigate to the iCloud container’s data management page:
 3. From the container selection drop-down at the top of the page, choose your app’s container.
 4. Click the Records menu item in the Data section to open the container’s data management page.
 
-![A screenshot showing a selected container in the CloudKit Database app. The screenshot highlights the Records menu item in the Data section on the left.](https://docs-assets.developer.apple.com/published/d598350781d941fdf06e38a1e0f58f88/media-3699100%402x.png)
+![A screenshot showing a selected container in the CloudKit Database app. The screenshot highlights the Records menu item in the Data section on the left.](/images/com.apple.cloudkit/media-3699100@2x.png)
 
 For more information about inspecting a container’s data, see [`Handling an iCloud Container’s Data`](handling-an-icloud-container-s-data.md).
 

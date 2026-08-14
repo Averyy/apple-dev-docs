@@ -18,7 +18,7 @@ The app uses SwiftUI to define its interface, including both 2D and 3D elements.
 
 ##### Create an Entry Point Into the App
 
-Hello World constructs the scene that it displays at launch — the first scene that appears in the `WorldApp` structure — using a [`Window`](https://developer.apple.com/documentation/SwiftUI/Window).
+Hello World constructs the scene that it displays at launch — the first scene that appears in the `WorldApp` structure — using a [`Window`](https://developer.apple.com/documentation/swiftui/window).
 
 ```swift
 Window(String(localized: "Hello World", comment: "The name of the app. This is the typical title for many example apps in programming tutorials."),
@@ -34,7 +34,7 @@ Like other platforms — for example, macOS and iOS — visionOS displays a wind
 
 ##### Present Different Modules Using a Navigation Stack
 
-After you watch a brief introductory animation that shows the text “Hello World” typing in, the `Modules` view that defines the primary scene’s content presents options to explore different aspects of the world. This view contains a table of contents at the root of a [`NavigationStack`](https://developer.apple.com/documentation/SwiftUI/NavigationStack).
+After you watch a brief introductory animation that shows the text “Hello World” typing in, the `Modules` view that defines the primary scene’s content presents options to explore different aspects of the world. This view contains a table of contents at the root of a [`NavigationStack`](https://developer.apple.com/documentation/swiftui/navigationstack).
 
 ```swift
 NavigationStack(path: $model.navigationPath) {
@@ -46,7 +46,7 @@ NavigationStack(path: $model.navigationPath) {
 }
 ```
 
-The trailing closure of the [`navigationDestination(for:destination:)`](https://developer.apple.com/documentation/SwiftUI/View/navigationDestination(for:destination:)) view modifier in the code above displays a view when someone activates a link based on a `module` input that comes from the corresponding link’s initializer.
+The trailing closure of the [`navigationDestination(for:destination:)`](https://developer.apple.com/documentation/swiftui/view/navigationdestination(for:destination:)) view modifier in the code above displays a view when someone activates a link based on a `module` input that comes from the corresponding link’s initializer.
 
 ```swift
 NavigationLink(value: module) { /* The link's label. */ }
@@ -63,7 +63,7 @@ enum Module: String, Identifiable, CaseIterable, Equatable {
 
 ##### Display an Interactive Globe in a New Scene
 
-To be able to open multiple scene types, Hello World includes the [`UIApplicationSceneManifest`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/UIApplicationSceneManifest) key in its [`Information Property List`](https://developer.apple.com/documentation/BundleResources/Information-Property-List) file. The value for this key is a dictionary that includes the [`UIApplicationSupportsMultipleScenes`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/UIApplicationSceneManifest/UIApplicationSupportsMultipleScenes) key with a value of `true`.
+To be able to open multiple scene types, Hello World includes the [`UIApplicationSceneManifest`](https://developer.apple.com/documentation/bundleresources/information-property-list/uiapplicationscenemanifest) key in its [`Information Property List`](https://developer.apple.com/documentation/bundleresources/information-property-list) file. The value for this key is a dictionary that includes the [`UIApplicationSupportsMultipleScenes`](https://developer.apple.com/documentation/bundleresources/information-property-list/uiapplicationscenemanifest/uiapplicationsupportsmultiplescenes) key with a value of `true`.
 
 ```swift
 <key>UIApplicationSceneManifest</key>
@@ -77,7 +77,7 @@ To be able to open multiple scene types, Hello World includes the [`UIApplicatio
 
 ##### Declare a Volume for the Globe
 
-With the key in place, the app makes use of a second [`WindowGroup`](https://developer.apple.com/documentation/SwiftUI/WindowGroup) in its [`App`](https://developer.apple.com/documentation/SwiftUI/App) declaration. This new window group uses the `Globe` view as its content.
+With the key in place, the app makes use of a second [`WindowGroup`](https://developer.apple.com/documentation/swiftui/windowgroup) in its [`App`](https://developer.apple.com/documentation/swiftui/app) declaration. This new window group uses the `Globe` view as its content.
 
 ```swift
 WindowGroup(id: Module.globe.name) {
@@ -114,11 +114,11 @@ struct GlobeToggle: View {
 }
 ```
 
-When someone taps the toggle, the `isShowingGlobe` state changes, and the [`onChange(of:initial:_:)`](https://developer.apple.com/documentation/SwiftUI/View/onChange(of:initial:_:)-4psgg) modifier calls the [`openWindow`](https://developer.apple.com/documentation/SwiftUI/EnvironmentValues/openWindow) or [`dismissWindow`](https://developer.apple.com/documentation/SwiftUI/EnvironmentValues/dismissWindow) action to open or dismiss the volume, respectively. The view gets these actions from the environment and uses an identifier that matches the volume’s identifier.
+When someone taps the toggle, the `isShowingGlobe` state changes, and the [`onChange(of:initial:_:)`](https://developer.apple.com/documentation/swiftui/view/onchange(of:initial:_:)-4psgg) modifier calls the [`openWindow`](https://developer.apple.com/documentation/swiftui/environmentvalues/openwindow) or [`dismissWindow`](https://developer.apple.com/documentation/swiftui/environmentvalues/dismisswindow) action to open or dismiss the volume, respectively. The view gets these actions from the environment and uses an identifier that matches the volume’s identifier.
 
 ##### Display Objects That Orbit the Earth
 
-Hello World loads these models from the asset bundle using a [`Model3D`](https://developer.apple.com/documentation/RealityKit/Model3D) structure inside a custom `ItemView`. The view scales and positions the model to fit the available space, and applies optional orientation adjustments.
+Hello World loads these models from the asset bundle using a [`Model3D`](https://developer.apple.com/documentation/realitykit/model3d) structure inside a custom `ItemView`. The view scales and positions the model to fit the available space, and applies optional orientation adjustments.
 
 ```swift
 private struct ItemView: View {
@@ -153,7 +153,7 @@ The app uses this `ItemView` once for each model, placing each in an overlay tha
 }
 ```
 
-The [`VStack`](https://developer.apple.com/documentation/SwiftUI/VStack) that contains the models also contains a [`Picker`](https://developer.apple.com/documentation/SwiftUI/Picker) that people use to select a model to view.
+The [`VStack`](https://developer.apple.com/documentation/swiftui/vstack) that contains the models also contains a [`Picker`](https://developer.apple.com/documentation/swiftui/picker) that people use to select a model to view.
 
 ```swift
 Picker("Satellite", selection: $selection) {
@@ -172,9 +172,9 @@ When you add 3D effects to a 2D window, keep this guidance in mind:
 
 ##### Show Earths Relationship to Its Satellites in an Immersive Space
 
-> **Note**: To learn about designing with gestures in visionOS, see [`Gestures`](https://developer.apple.com/design/Human-Interface-Guidelines/gestures) in [`Human Interface Guidelines`](https://developer.apple.com/design/human-interface-guidelines).
+> **Note**: To learn about designing with gestures in visionOS, see [`Gestures`](https://developer.apple.com/design/human-interface-guidelines/gestures) in [`Human Interface Guidelines`](https://developer.apple.com/design/human-interface-guidelines).
 
-To create this visualization, the app displays the `Orbit` view — which contains a single [`RealityView`](https://developer.apple.com/documentation/RealityKit/RealityView) that models the entire system — in an [`ImmersiveSpace`](https://developer.apple.com/documentation/SwiftUI/ImmersiveSpace) scene with the [`mixed`](https://developer.apple.com/documentation/SwiftUI/ImmersionStyle/mixed) immersion style. The immersive space also contains a second view: the `OpenWindow` view, which contains a single [`RealityView`](https://developer.apple.com/documentation/RealityKit/RealityView). This `RealityView` contains an entity that has a [`ViewAttachmentComponent`](https://developer.apple.com/documentation/RealityKit/ViewAttachmentComponent) for presenting the `OpenWindowButton` to reopen the navigation stack after closing it. The `OpenWindow` view allows the `OpenWindowButton` to be fixed in space; the system can reposition the `Orbit` with the `placementGestures` modifier.
+To create this visualization, the app displays the `Orbit` view — which contains a single [`RealityView`](https://developer.apple.com/documentation/realitykit/realityview) that models the entire system — in an [`ImmersiveSpace`](https://developer.apple.com/documentation/swiftui/immersivespace) scene with the [`mixed`](https://developer.apple.com/documentation/swiftui/immersionstyle/mixed) immersion style. The immersive space also contains a second view: the `OpenWindow` view, which contains a single [`RealityView`](https://developer.apple.com/documentation/realitykit/realityview). This `RealityView` contains an entity that has a [`ViewAttachmentComponent`](https://developer.apple.com/documentation/realitykit/viewattachmentcomponent) for presenting the `OpenWindowButton` to reopen the navigation stack after closing it. The `OpenWindow` view allows the `OpenWindowButton` to be fixed in space; the system can reposition the `Orbit` with the `placementGestures` modifier.
 
 ```swift
 ImmersiveSpace(id: Module.orbit.name) {
@@ -189,7 +189,7 @@ ImmersiveSpace(id: Module.orbit.name) {
 
 > **Note**: To learn more about this approach of reopening a window in an immersive space, see [`Embedding controls in an immersive space`](embedding-controls-in-an-immersive-space.md).
 
-As with any secondary scene in a visionOS app, this scene depends on having the [`UIApplicationSupportsMultipleScenes`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/UIApplicationSceneManifest/UIApplicationSupportsMultipleScenes) key in the [`Information Property List`](https://developer.apple.com/documentation/BundleResources/Information-Property-List) file. The app also opens and closes the space using a toggle view that resembles the one used for the globe.
+As with any secondary scene in a visionOS app, this scene depends on having the [`UIApplicationSupportsMultipleScenes`](https://developer.apple.com/documentation/bundleresources/information-property-list/uiapplicationscenemanifest/uiapplicationsupportsmultiplescenes) key in the [`Information Property List`](https://developer.apple.com/documentation/bundleresources/information-property-list) file. The app also opens and closes the space using a toggle view that resembles the one used for the globe.
 
 ```swift
 struct OrbitToggle: View {
@@ -217,15 +217,15 @@ struct OrbitToggle: View {
 
 There are a few key differences from the version that appears in the “[`Open and dismiss the globe volume`](world#Open-and-dismiss-the-globe-volume.md)” section above:
 
-- `OrbitToggle` uses [`openImmersiveSpace`](https://developer.apple.com/documentation/SwiftUI/EnvironmentValues/openImmersiveSpace) and [`dismissImmersiveSpace`](https://developer.apple.com/documentation/SwiftUI/EnvironmentValues/dismissImmersiveSpace) from the environment, rather than the window equivalents.
+- `OrbitToggle` uses [`openImmersiveSpace`](https://developer.apple.com/documentation/swiftui/environmentvalues/openimmersivespace) and [`dismissImmersiveSpace`](https://developer.apple.com/documentation/swiftui/environmentvalues/dismissimmersivespace) from the environment, rather than the window equivalents.
 - The dismiss action in this case doesn’t require an identifier because people can only open one space at a time, even across apps.
-- The open and dismiss actions for spaces operate asynchronously, and so they appear inside a [`Task`](https://developer.apple.com/documentation/Swift/Task).
+- The open and dismiss actions for spaces operate asynchronously, and so they appear inside a [`Task`](https://developer.apple.com/documentation/swift/task).
 
 ##### View the Solar System From Space Using Full Immersion
 
 > 💡 **Tip**: People can always close the currently open immersive space by pressing the device’s Digital Crown, but it’s typically useful when you provide a built-in mechanism to maintain control of the experience within your app.
 
-The app uses another immersive space scene for this module, but here with the [`full`](https://developer.apple.com/documentation/SwiftUI/ImmersionStyle/full) immersion style that turns off the passthrough video.
+The app uses another immersive space scene for this module, but here with the [`full`](https://developer.apple.com/documentation/swiftui/immersionstyle/full) immersion style that turns off the passthrough video.
 
 ```swift
 ImmersiveSpace(id: Module.solar.name) {
@@ -235,7 +235,7 @@ ImmersiveSpace(id: Module.solar.name) {
 .immersionStyle(selection: $solarImmersionStyle, in: .full)
 ```
 
-This scene depends on the same [`UIApplicationSupportsMultipleScenes`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/UIApplicationSceneManifest/UIApplicationSupportsMultipleScenes) key that other secondary scenes do, and activates with an `OpenSolarSystemButton` that opens the immersive space.
+This scene depends on the same [`UIApplicationSupportsMultipleScenes`](https://developer.apple.com/documentation/bundleresources/information-property-list/uiapplicationscenemanifest/uiapplicationsupportsmultiplescenes) key that other secondary scenes do, and activates with an `OpenSolarSystemButton` that opens the immersive space.
 
 ```swift
 struct OpenSolarSystemButton: View {
@@ -253,7 +253,7 @@ struct OpenSolarSystemButton: View {
 }
 ```
 
-This control appears in the main window to provide a way to begin the fully immersive experience. When the immersive space opens, [`pushWindow`](https://developer.apple.com/documentation/SwiftUI/EnvironmentValues/pushWindow) replaces the window that contains the module’s navigation stack with the `SolarSystemControls`.
+This control appears in the main window to provide a way to begin the fully immersive experience. When the immersive space opens, [`pushWindow`](https://developer.apple.com/documentation/swiftui/environmentvalues/pushwindow) replaces the window that contains the module’s navigation stack with the `SolarSystemControls`.
 
 > **Note**: To learn more about monitoring the state of the immersive space and coupling it with a window, see [`Associating a window with an immersive space`](associating-a-window-with-an-immersive-space.md).
 

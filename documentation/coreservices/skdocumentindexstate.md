@@ -35,6 +35,7 @@ struct SKDocumentIndexState
 ## Relationships
 
 ### Conforms To
+- [Equatable](../swift/equatable.md)
 - [Hashable](../swift/hashable.md)
 - [RawRepresentable](../swift/rawrepresentable.md)
 

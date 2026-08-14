@@ -25,7 +25,7 @@ func element(matching predicate: NSPredicate) -> XCUIElement
 
 The predicate evaluates against objects that conform to the [`XCUIElementAttributes`](xcuielementattributes.md) protocol.
 
-> **Note**:  Where possible, use [`NSExpression`](https://developer.apple.com/documentation/Foundation/NSExpression)-based or format-string-based predicates with this method in preference to block-based predicates. This enables the framework to optimize the query’s performance.
+> **Note**:  Where possible, use [`NSExpression`](https://developer.apple.com/documentation/foundation/nsexpression)-based or format-string-based predicates with this method in preference to block-based predicates. This enables the framework to optimize the query’s performance.
 
 ## Parameters
 

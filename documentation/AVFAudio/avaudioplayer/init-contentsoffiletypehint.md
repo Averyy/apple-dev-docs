@@ -22,11 +22,11 @@ init(contentsOf url: URL, fileTypeHint utiString: String?) throws
 
 #### Return Value
 
-A new audio player instance, or [`nil`](https://developer.apple.com/documentation/ObjectiveC/nil-227m0) if there is an error.
+A new audio player instance, or [`nil`](https://developer.apple.com/documentation/objectivec/nil-227m0) if there is an error.
 
 #### Discussion
 
-The audio data must be in a format that Core Audio supports. Passing a file type hint helps the system parse the data if it can’t determine the file type or if the data is corrupt. See [`AVFileType`](https://developer.apple.com/documentation/AVFoundation/AVFileType) for supported values.
+The audio data must be in a format that Core Audio supports. Passing a file type hint helps the system parse the data if it can’t determine the file type or if the data is corrupt. See [`AVFileType`](https://developer.apple.com/documentation/avfoundation/avfiletype) for supported values.
 
 ## Parameters
 

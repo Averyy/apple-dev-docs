@@ -12,7 +12,7 @@ For general information about how to create an action classifier, see [`Creating
 
 ##### Collect Videos for Each Action
 
-Action classifiers learn from example videos of a human performing an action. Create ML uses the [`Vision`](https://developer.apple.com/documentation/Vision) framework to locate key body parts, called *landmarks*, in each video frame. Action classifiers learn how to recognize a human body’s movements by tracking these landmarks frame by frame. Keep the landmarks clearly visible by applying the following guidelines as you record example videos, or when assessing videos from other sources.
+Action classifiers learn from example videos of a human performing an action. Create ML uses the [`Vision`](https://developer.apple.com/documentation/vision) framework to locate key body parts, called *landmarks*, in each video frame. Action classifiers learn how to recognize a human body’s movements by tracking these landmarks frame by frame. Keep the landmarks clearly visible by applying the following guidelines as you record example videos, or when assessing videos from other sources.
 
 - Keep the camera still.
 - Record one person at a time.

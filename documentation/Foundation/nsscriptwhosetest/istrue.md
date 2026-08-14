@@ -17,7 +17,7 @@ func isTrue() -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/Swift/true) if the test represented by the receiver evaluates to [`true`](https://developer.apple.com/documentation/Swift/true), otherwise [`false`](https://developer.apple.com/documentation/Swift/false).
+[`true`](https://developer.apple.com/documentation/swift/true) if the test represented by the receiver evaluates to [`true`](https://developer.apple.com/documentation/swift/true), otherwise [`false`](https://developer.apple.com/documentation/swift/false).
 
 ## See Also
 

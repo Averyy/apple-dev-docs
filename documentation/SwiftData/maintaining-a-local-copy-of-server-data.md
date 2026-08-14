@@ -15,7 +15,7 @@ Create and update a persistent store to cache read-only network data.
 
 This sample app displays a list that contains a day’s worth of earthquakes, showing their time, location, and size. To help people visualize the list, the app also pinpoints each earthquake on a map. You can select an earthquake in the list to highlight it on the map.
 
-![A screenshot of the sample app on an iPad. The sidebar shows a list of earthquakes. An earthquake with magnitude 2.2 in Orange Cove, California is selected. The detail view shows a map centered on California with small multicolored circles scattered around to mark earthquake locations. One circle in the center of the map's visible region is highlighted.](https://docs-assets.developer.apple.com/published/6025cf0d8cff930d1e73c209a7a362b3/Maintaining-a-local-copy-of-server-data-1%402x.png)
+![A screenshot of the sample app on an iPad. The sidebar shows a list of earthquakes. An earthquake with magnitude 2.2 in Orange Cove, California is selected. The detail view shows a map centered on California with small multicolored circles scattered around to mark earthquake locations. One circle in the center of the map's visible region is highlighted.](/images/com.apple.SwiftData/Maintaining-a-local-copy-of-server-data-1@2x.png)
 
 The app downloads earthquake data from the network under the following assumptions:
 
@@ -47,7 +47,7 @@ The model includes the following fields:
 
 - **A unique code** — By including the [`Attribute(_:originalName:hashModifier:)`](attribute(_:originalname:hashmodifier:).md) macro with the [`unique`](schema/attribute/option/unique.md) property option, the app ensures that SwiftData stores only one earthquake with a particular value for this field.
 - **A magnitude** — The size of the earthquake.
-- **A timestamp** — The moment in time when the earthquake happened, stored as a [`Date`](https://developer.apple.com/documentation/Foundation/Date) instance.
+- **A timestamp** — The moment in time when the earthquake happened, stored as a [`Date`](https://developer.apple.com/documentation/foundation/date) instance.
 - **A location** — A custom `Location` instance that contains a location name and map coordinates: ```swift
 struct Location: Codable {
     var name: String
@@ -56,7 +56,7 @@ struct Location: Codable {
 }
 ```
 
-The `Quake` model can embed a location instance because the `Location` structure conforms to the [`Codable`](https://developer.apple.com/documentation/Swift/Codable) protocol.
+The `Quake` model can embed a location instance because the `Location` structure conforms to the [`Codable`](https://developer.apple.com/documentation/swift/codable) protocol.
 
 ##### Model the Server Data
 
@@ -84,11 +84,11 @@ struct GeoFeatureCollection: Decodable {
 }
 ```
 
-The structure and its substructures include elements relevant to this app, namely magnitude, time, and location information. They omit many other fields that the server provides because the app doesn’t need them. The structure also conforms to the [`Decodable`](https://developer.apple.com/documentation/Swift/Decodable) protocol so the app can use the structure to decode the downloaded data.
+The structure and its substructures include elements relevant to this app, namely magnitude, time, and location information. They omit many other fields that the server provides because the app doesn’t need them. The structure also conforms to the [`Decodable`](https://developer.apple.com/documentation/swift/decodable) protocol so the app can use the structure to decode the downloaded data.
 
 ##### Download Data From the Server
 
-To retrieve data, the app defines a `fetchFeatures()` method that uses a [`URLSession`](https://developer.apple.com/documentation/Foundation/URLSession) to store the earthquake JSON in a `data` property:
+To retrieve data, the app defines a `fetchFeatures()` method that uses a [`URLSession`](https://developer.apple.com/documentation/foundation/urlsession) to store the earthquake JSON in a `data` property:
 
 ```swift
 let session = URLSession.shared
@@ -100,7 +100,7 @@ else {
 }
 ```
 
-The method then parses the data with a [`JSONDecoder`](https://developer.apple.com/documentation/Foundation/JSONDecoder) instance, according to the definition provided by the decodable `GeoFeatureCollection` structure:
+The method then parses the data with a [`JSONDecoder`](https://developer.apple.com/documentation/foundation/jsondecoder) instance, according to the definition provided by the decodable `GeoFeatureCollection` structure:
 
 ```swift
 do {
@@ -112,7 +112,7 @@ do {
 }
 ```
 
-For other examples of decoding JSON data, see [`Using JSON with custom types`](https://developer.apple.com/documentation/Foundation/using-json-with-custom-types).
+For other examples of decoding JSON data, see [`Using JSON with custom types`](https://developer.apple.com/documentation/foundation/using-json-with-custom-types).
 
 ##### Translate Server Data Into Model Data
 
@@ -161,7 +161,7 @@ The insert method works for both creating and updating earthquake model instance
   An interface that enables a custom data store to support batch requests.
 - [protocol HistoryProviding](historyproviding.md)
   An interface that enables a custom data store to provide the history of changes for its persisted models.
-- [Building a document-based app using SwiftData](../SwiftUI/Building-a-document-based-app-using-SwiftData.md)
+- [Building a document-based app using SwiftData](../swiftui/building-a-document-based-app-using-swiftdata.md)
   Code along with the WWDC presenter to transform an app with SwiftData.
 - [struct ModelDocument](modeldocument.md)
   A document type that uses SwiftData to manage its storage.

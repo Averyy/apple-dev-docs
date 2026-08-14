@@ -3,7 +3,7 @@
 **Framework**: RealityKit  
 **Kind**: init
 
-Loads and displays a modifiable model by name, by searching through the specified [`Bundle`](https://developer.apple.com/documentation/Foundation/Bundle), in phases.
+Loads and displays a modifiable model by name, by searching through the specified [`Bundle`](https://developer.apple.com/documentation/foundation/bundle), in phases.
 
 **Availability**:
 - visionOS 1.0+
@@ -45,7 +45,7 @@ To add transitions when you change the name, apply an identifier to the [`Model3
 - [init(named: String, bundle: Bundle?)](model3d/init(named:bundle:).md)
   Loads and displays a model by name, by searching through the specified `Foundation/Bundle`.
 - [init<Model, Placeholder>(named: String, bundle: Bundle?, content: (ResolvedModel3D) -> Model, placeholder: () -> Placeholder)](model3d/init(named:bundle:content:placeholder:).md)
-  Loads and displays a modifiable model by name, by searching through the specified [`Bundle`](https://developer.apple.com/documentation/Foundation/Bundle), using a custom placeholder until the model loads.
+  Loads and displays a modifiable model by name, by searching through the specified [`Bundle`](https://developer.apple.com/documentation/foundation/bundle), using a custom placeholder until the model loads.
 - [init(url: URL)](model3d/init(url:).md)
   Loads and displays a model from the specified URL.
 - [init<Model, Placeholder>(url: URL, content: (ResolvedModel3D) -> Model, placeholder: () -> Placeholder)](model3d/init(url:content:placeholder:).md)

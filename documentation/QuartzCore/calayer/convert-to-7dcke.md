@@ -44,7 +44,7 @@ yellowLayer.transform = CATransform3DMakeScale(0.5, 0.5, 1)
 
 The following figure shows the two layers and an overlaid point (rendered as a blue cross) with a position of `(50.0, 50.0)` in the red layer’s coordinate system.
 
-![Layers with different coordinate systems](https://docs-assets.developer.apple.com/published/39fed9ba00d48f3636301f0d02be529d/media-2850332%402x.png)
+![Layers with different coordinate systems](/images/com.apple.quartzcore/media-2850332@2x.png)
 
 The following code shows how you can find the coordinates of that point in the yellow layer’s coordinate system.
 

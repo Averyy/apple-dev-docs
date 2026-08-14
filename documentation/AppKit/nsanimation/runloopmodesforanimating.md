@@ -18,7 +18,7 @@ var runLoopModesForAnimating: [RunLoop.Mode]? { get }
 
 The default value of this property is `nil`, which indicates that the animation can be run in the default, modal, or event-tracking modes. The value of this property is ignored if the animation blocking mode is something other than [`NSAnimation.BlockingMode.nonblocking`](nsanimation/blockingmode/nonblocking.md).
 
-For information about run loop modes and for constants, see [`RunLoop`](https://developer.apple.com/documentation/Foundation/RunLoop).
+For information about run loop modes and for constants, see [`RunLoop`](https://developer.apple.com/documentation/foundation/runloop).
 
 ## See Also
 

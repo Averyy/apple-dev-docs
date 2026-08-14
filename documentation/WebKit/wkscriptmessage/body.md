@@ -20,7 +20,7 @@ var body: Any { get }
 
 #### Discussion
 
-Allowed types are [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber), [`NSString`](https://developer.apple.com/documentation/Foundation/NSString), [`NSDate`](https://developer.apple.com/documentation/Foundation/NSDate), [`NSArray`](https://developer.apple.com/documentation/Foundation/NSArray), [`NSDictionary`](https://developer.apple.com/documentation/Foundation/NSDictionary), and [`NSNull`](https://developer.apple.com/documentation/Foundation/NSNull).
+Allowed types are [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber), [`NSString`](https://developer.apple.com/documentation/foundation/nsstring), [`NSDate`](https://developer.apple.com/documentation/foundation/nsdate), [`NSArray`](https://developer.apple.com/documentation/foundation/nsarray), [`NSDictionary`](https://developer.apple.com/documentation/foundation/nsdictionary), and [`NSNull`](https://developer.apple.com/documentation/foundation/nsnull).
 
 
 ---

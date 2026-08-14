@@ -98,8 +98,8 @@ The dismiss action has no effect on a view that isn’t currently presented. If 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

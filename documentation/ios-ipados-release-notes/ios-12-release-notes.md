@@ -6,7 +6,7 @@ Update your apps to use new features, and test your apps against API changes.
 
 #### Overview
 
-The iOS 12 SDK provides support for developing iOS apps for iPhone, iPad, or iPod touch devices running iOS 12. The SDK comes bundled with Xcode 10 available from the Mac App Store. For information about Xcode 10, see [`Xcode 10 Release Notes`](https://developer.apple.com/documentation/Xcode-Release-Notes/xcode-10-release-notes).
+The iOS 12 SDK provides support for developing iOS apps for iPhone, iPad, or iPod touch devices running iOS 12. The SDK comes bundled with Xcode 10 available from the Mac App Store. For information about Xcode 10, see [`Xcode 10 Release Notes`](https://developer.apple.com/documentation/xcode-release-notes/xcode-10-release-notes).
 
 ##### App Store
 
@@ -50,17 +50,17 @@ See [`Foundation Release Notes`](foundation-release-notes.md).
 
 ###### Known Issues
 
-- When [`perform(queueTransaction:completionHandler:)`](https://developer.apple.com/documentation/MediaPlayer/MPMusicPlayerApplicationController/perform(queueTransaction:completionHandler:)) is called on [`applicationQueuePlayer`](https://developer.apple.com/documentation/MediaPlayer/MPMusicPlayerController/applicationQueuePlayer) to modify the position of a song, the queue returns unchanged. (39401344)
+- When [`perform(queueTransaction:completionHandler:)`](https://developer.apple.com/documentation/mediaplayer/mpmusicplayerapplicationcontroller/perform(queuetransaction:completionhandler:)) is called on [`applicationQueuePlayer`](https://developer.apple.com/documentation/mediaplayer/mpmusicplayercontroller/applicationqueueplayer) to modify the position of a song, the queue returns unchanged. (39401344)
 
 ##### Networking
 
 ###### New Features
 
-- The [`URLSession`](https://developer.apple.com/documentation/Foundation/URLSession) HTTP/2 implementation supports HTTP/2 connection reuse per RFC 7540 Section 9.1.1. This requires an HTTP/2 server to present a certificate which covers more than one server hostname. The certificate may use the Subject Alternative Name extension or wild-carded domain names. In addition, [`URLSession`](https://developer.apple.com/documentation/Foundation/URLSession) requires name resolution to resolve the different hostnames to the same IP address. [`URLSession`](https://developer.apple.com/documentation/Foundation/URLSession) may reuse HTTP/2 connections across different domain names when these conditions are satisfied. (37507838)
+- The [`URLSession`](https://developer.apple.com/documentation/foundation/urlsession) HTTP/2 implementation supports HTTP/2 connection reuse per RFC 7540 Section 9.1.1. This requires an HTTP/2 server to present a certificate which covers more than one server hostname. The certificate may use the Subject Alternative Name extension or wild-carded domain names. In addition, [`URLSession`](https://developer.apple.com/documentation/foundation/urlsession) requires name resolution to resolve the different hostnames to the same IP address. [`URLSession`](https://developer.apple.com/documentation/foundation/urlsession) may reuse HTTP/2 connections across different domain names when these conditions are satisfied. (37507838)
 
 ###### Deprecations
 
-- FTP and File URL schemes for Proxy Automatic Configuration (PAC) are deprecated. HTTP and HTTPS are the only supported URL schemes for PAC. This affects all PAC configurations including, but not limited to, configurations set via Settings, System Preferences, profiles, and [`URLSession`](https://developer.apple.com/documentation/Foundation/URLSession) APIs such as [`connectionProxyDictionary`](https://developer.apple.com/documentation/Foundation/URLSessionConfiguration/connectionProxyDictionary), and [`CFNetworkExecuteProxyAutoConfigurationURL(_:_:_:_:)`](https://developer.apple.com/documentation/CFNetwork/CFNetworkExecuteProxyAutoConfigurationURL(_:_:_:_:)). (37811761)
+- FTP and File URL schemes for Proxy Automatic Configuration (PAC) are deprecated. HTTP and HTTPS are the only supported URL schemes for PAC. This affects all PAC configurations including, but not limited to, configurations set via Settings, System Preferences, profiles, and [`URLSession`](https://developer.apple.com/documentation/foundation/urlsession) APIs such as [`connectionProxyDictionary`](https://developer.apple.com/documentation/foundation/urlsessionconfiguration/connectionproxydictionary), and [`CFNetworkExecuteProxyAutoConfigurationURL(_:_:_:_:)`](https://developer.apple.com/documentation/cfnetwork/cfnetworkexecuteproxyautoconfigurationurl(_:_:_:_:)). (37811761)
 
 ##### Phone and Facetime
 
@@ -91,7 +91,7 @@ See [`Foundation Release Notes`](foundation-release-notes.md).
 
 ###### Known Issues
 
-- You might encounter issues with [`systemLayoutSizeFitting(_:)`](https://developer.apple.com/documentation/UIKit/UIView/systemLayoutSizeFitting(_:)) when using a [`UICollectionViewCell`](https://developer.apple.com/documentation/UIKit/UICollectionViewCell) subclass that requires [`updateConstraints()`](https://developer.apple.com/documentation/UIKit/UIView/updateConstraints()). (42138227) **Workaround:** Don’t call the cell’s [`setNeedsUpdateConstraints()`](https://developer.apple.com/documentation/UIKit/UIView/setNeedsUpdateConstraints()) method unless you need to support live constraint changes. If you need to support live constraint changes, call [`updateConstraintsIfNeeded()`](https://developer.apple.com/documentation/UIKit/UIView/updateConstraintsIfNeeded()) before calling [`systemLayoutSizeFitting(_:)`](https://developer.apple.com/documentation/UIKit/UIView/systemLayoutSizeFitting(_:)).
+- You might encounter issues with [`systemLayoutSizeFitting(_:)`](https://developer.apple.com/documentation/uikit/uiview/systemlayoutsizefitting(_:)) when using a [`UICollectionViewCell`](https://developer.apple.com/documentation/uikit/uicollectionviewcell) subclass that requires [`updateConstraints()`](https://developer.apple.com/documentation/uikit/uiview/updateconstraints()). (42138227) **Workaround:** Don’t call the cell’s [`setNeedsUpdateConstraints()`](https://developer.apple.com/documentation/uikit/uiview/setneedsupdateconstraints()) method unless you need to support live constraint changes. If you need to support live constraint changes, call [`updateConstraintsIfNeeded()`](https://developer.apple.com/documentation/uikit/uiview/updateconstraintsifneeded()) before calling [`systemLayoutSizeFitting(_:)`](https://developer.apple.com/documentation/uikit/uiview/systemlayoutsizefitting(_:)).
 
 ##### Usb Accessories
 

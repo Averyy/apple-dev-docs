@@ -19,7 +19,7 @@ class let touchBarTextBoldTemplateName: String
 
 #### Discussion
 
-![Template image for bold text](https://docs-assets.developer.apple.com/published/ab142503f0c73bac3678b49ccaad6dce/media-2793532%402x.png)
+![Template image for bold text](/images/com.apple.appkit/media-2793532@2x.png)
 
 Touch Bar template images are exclusively for use in [`NSTouchBarItem`](nstouchbaritem.md) objects and not in onscreen windows.
 

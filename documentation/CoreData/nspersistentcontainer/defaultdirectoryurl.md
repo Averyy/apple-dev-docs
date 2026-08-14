@@ -22,11 +22,11 @@ class func defaultDirectoryURL() -> URL
 
 #### Return Value
 
-An [`NSURL`](https://developer.apple.com/documentation/Foundation/NSURL) that references the directory in which the persistent store(s) will be located or are currently located.
+An [`NSURL`](https://developer.apple.com/documentation/foundation/nsurl) that references the directory in which the persistent store(s) will be located or are currently located.
 
 #### Discussion
 
-This method returns a platform-dependent [`NSURL`](https://developer.apple.com/documentation/Foundation/NSURL) at which the persistent store(s) will be located or are currently located. This method can be overridden in a subclass of [`NSPersistentContainer`](nspersistentcontainer.md).
+This method returns a platform-dependent [`NSURL`](https://developer.apple.com/documentation/foundation/nsurl) at which the persistent store(s) will be located or are currently located. This method can be overridden in a subclass of [`NSPersistentContainer`](nspersistentcontainer.md).
 
 ## See Also
 

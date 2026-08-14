@@ -24,7 +24,7 @@ A USB accessory listener receives notifications when a USB accessories connect t
 
 The `AAUSBAccessoryManager` presents UI on behalf of your application, which means you can only use it from an application that implements a UI, that is, one that appears in the Dock.
 
-> **Note**: To use the AccessoryAccess framework, add the `com.apple.developer.accessory-access.usb` entitlement to your app’s Xcode configuration. For more information, see [`Accessory Access`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.accessory-access.usb).
+> **Note**: To use the AccessoryAccess framework, add the `com.apple.developer.accessory-access.usb` entitlement to your app’s Xcode configuration. For more information, see [`Accessory Access`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.accessory-access.usb).
 
 ## Topics
 
@@ -44,16 +44,16 @@ The `AAUSBAccessoryManager` presents UI on behalf of your application, which mea
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

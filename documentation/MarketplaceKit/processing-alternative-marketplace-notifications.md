@@ -27,15 +27,15 @@ When a new app version passes notarization for an app that installs from your ma
 
 A *notification webhook* is an endpoint that you create on your marketplace server, which receives HTTP POST requests from App Store Connect. The POST requests describe important events about your app or the apps that your marketplace distributes.
 
-To invoke your webhook, App Store Connect needs to know your server’s webhook endpoint URL. To set up your webhook endpoint the first time, provide the URL to the [`Add a Marketplace Webhook Configuration`](https://developer.apple.com/documentation/AppStoreConnectAPI/POST-v1-marketplaceWebhooks) endpoint:
+To invoke your webhook, App Store Connect needs to know your server’s webhook endpoint URL. To set up your webhook endpoint the first time, provide the URL to the [`Add a Marketplace Webhook Configuration`](https://developer.apple.com/documentation/appstoreconnectapi/post-v1-marketplacewebhooks) endpoint:
 
 ```None
 POST https://api.appstoreconnect.apple.com/v1/marketplaceWebhooks
 ```
 
-Any time you reconfigure your web server, use the [`Modify a Marketplace Webhook Configuration`](https://developer.apple.com/documentation/AppStoreConnectAPI/PATCH-v1-marketplaceWebhooks-_id_) endpoint to update App Store Connect.
+Any time you reconfigure your web server, use the [`Modify a Marketplace Webhook Configuration`](https://developer.apple.com/documentation/appstoreconnectapi/patch-v1-marketplacewebhooks-_id_) endpoint to update App Store Connect.
 
-For more information about managing webhook endpoint configuration for your marketplace, see [`Notifications`](https://developer.apple.com/documentation/AppStoreConnectAPI/notifications).
+For more information about managing webhook endpoint configuration for your marketplace, see [`Notifications`](https://developer.apple.com/documentation/appstoreconnectapi/notifications).
 
 #### Set Up Notification Authentication
 
@@ -44,7 +44,7 @@ Secure your webhook by verifying that a request to your endpoint comes from App 
 - Share a secret phrase with the request sender (App Store Connect).
 - Verify that each POST to your endpoint has the HMAC header and validate it with your secret.
 
-When you register your webhook URL with App Store Connect, define the secret phrase using the `secret` key in [`MarketplaceWebhookCreateRequest.Data.Attributes`](https://developer.apple.com/documentation/AppStoreConnectAPI/MarketplaceWebhookCreateRequest/Data-data.dictionary/Attributes-data.dictionary). Choose a `String` value for `secret` that’s difficult to guess.
+When you register your webhook URL with App Store Connect, define the secret phrase using the `secret` key in [`MarketplaceWebhookCreateRequest.Data.Attributes`](https://developer.apple.com/documentation/appstoreconnectapi/marketplacewebhookcreaterequest/data-data.dictionary/attributes-data.dictionary). Choose a `String` value for `secret` that’s difficult to guess.
 
 App Store Connect creates a hash signature using the secret and includes in each POST. The signature resides in the payload header as `x-apple-signature`.
 

@@ -24,14 +24,14 @@ optional func webView(_ webView: WKWebView, respondTo challenge: URLAuthenticati
 
 #### Discussion
 
-If you don’t implement this method, the web view responds to the authentication challenge with the [`URLSession.AuthChallengeDisposition.rejectProtectionSpace`](https://developer.apple.com/documentation/Foundation/URLSession/AuthChallengeDisposition/rejectProtectionSpace) disposition.
+If you don’t implement this method, the web view responds to the authentication challenge with the [`URLSession.AuthChallengeDisposition.rejectProtectionSpace`](https://developer.apple.com/documentation/foundation/urlsession/authchallengedisposition/rejectprotectionspace) disposition.
 
 ## Parameters
 
 - `webView`: The web view that receives the authentication challenge.
 - `challenge`: The authentication challenge.
-- `completionHandler`: A completion handler block to execute with the response. This handler has no return value and takes the following parameters: - **disposition**: The option to use to handle the challenge. For a list of options, see [`URLSession.AuthChallengeDisposition`](https://developer.apple.com/documentation/Foundation/URLSession/AuthChallengeDisposition).
-- **credential**: The credential to use for authentication when the `disposition` parameter contains the value [`URLSession.AuthChallengeDisposition.useCredential`](https://developer.apple.com/documentation/Foundation/URLSession/AuthChallengeDisposition/useCredential). Specify `nil` to continue without a credential.
+- `completionHandler`: A completion handler block to execute with the response. This handler has no return value and takes the following parameters: - **disposition**: The option to use to handle the challenge. For a list of options, see [`URLSession.AuthChallengeDisposition`](https://developer.apple.com/documentation/foundation/urlsession/authchallengedisposition).
+- **credential**: The credential to use for authentication when the `disposition` parameter contains the value [`URLSession.AuthChallengeDisposition.useCredential`](https://developer.apple.com/documentation/foundation/urlsession/authchallengedisposition/usecredential). Specify `nil` to continue without a credential.
 
 ## See Also
 

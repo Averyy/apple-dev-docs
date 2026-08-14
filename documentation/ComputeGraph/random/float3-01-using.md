@@ -23,7 +23,7 @@ A pseudo-random 3D single-precision vector with components in the range [0.0, 1.
 
 This function generates a random 3D vector where each component is independently generated in the range [0.0, 1.0] using single-precision floating-point format and sequential seed values (seed, seed+1, seed+2). The seed is not modified, allowing for reproducible random number generation.
 
-> **Note**: ![Graph](https://docs-assets.developer.apple.com/published/fe9c924ca5b6e6f5dd90149982762acc/random__float3_01_using.svg)
+> **Note**: ![Graph](/images/com.apple.computegraph/random__float3_01_using.svg)
 
 ## Parameters
 

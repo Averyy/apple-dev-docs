@@ -15,7 +15,7 @@ let kCGWindowIsOnscreen: CFString
 
 #### Discussion
 
-The key that identifies whether the window is currently onscreen. The value for this key is a [`CFBoolean`](https://developer.apple.com/documentation/CoreFoundation/CFBoolean) type.
+The key that identifies whether the window is currently onscreen. The value for this key is a [`CFBoolean`](https://developer.apple.com/documentation/corefoundation/cfboolean) type.
 
 ## See Also
 

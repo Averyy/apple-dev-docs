@@ -22,7 +22,7 @@ func CTRunGetStringIndicesPtr(_ run: CTRun) -> UnsafePointer<CFIndex>?
 
 #### Return Value
 
-A valid pointer to an array of [`CFIndex`](https://developer.apple.com/documentation/CoreFoundation/CFIndex) structures, or `NULL`.
+A valid pointer to an array of [`CFIndex`](https://developer.apple.com/documentation/corefoundation/cfindex) structures, or `NULL`.
 
 #### Discussion
 

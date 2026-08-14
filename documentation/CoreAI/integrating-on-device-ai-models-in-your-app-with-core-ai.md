@@ -39,7 +39,7 @@ Before writing the code to use the model in your app, you can view its details i
 
 The model viewer has several tabs for exploring different aspects of your model. The General tab shows the model’s size, in number of parameters and storage size on disk, along with metadata such as description, author, license, and creator-defined key-value pairs. You can edit metadata fields inline; Xcode saves your changes automatically.
 
-![A screenshot of the General tab of the Xcode model viewer, showing the model’s parameter count, storage size on disk, and metadata fields including description, author, license, and creator-defined key-value pairs.](https://docs-assets.developer.apple.com/published/1390b481a9ff634e4264297510fd3703/model-viewer-metadata%402x.png)
+![A screenshot of the General tab of the Xcode model viewer, showing the model’s parameter count, storage size on disk, and metadata fields including description, author, license, and creator-defined key-value pairs.](/images/com.apple.coreai/model-viewer-metadata@2x.png)
 
 The General tab also shows the model’s numeric precision, split into compute and storage categories:
 
@@ -51,7 +51,7 @@ The General tab also shows the model’s numeric precision, split into compute a
 
 The Functions tab shows the exact function signature of each function in the model, including the names, types, and optional descriptions for each input and output.
 
-![A screenshot of the Functions tab of the Xcode model viewer, listing the model’s inference functions with their input and output tensor names, type signatures, and descriptions.](https://docs-assets.developer.apple.com/published/70737fb5dde5db5db7d6d82b478b97e4/model-viewer-functions%402x.png)
+![A screenshot of the Functions tab of the Xcode model viewer, listing the model’s inference functions with their input and output tensor names, type signatures, and descriptions.](/images/com.apple.coreai/model-viewer-functions@2x.png)
 
 Most models have a single function. The named inputs and outputs describe what data your code provides and what it returns. A question mark in an `NDArray` dimension means the dimension is dynamic and is supplied or determined at runtime.
 
@@ -105,7 +105,7 @@ The [`inputDescriptor(of:)`](inferencefunctiondescriptor/inputdescriptor(of:).md
 
 #### Run Inference
 
-The [`NDArray`](ndarray.md) type represents the input and output tensors from the converted model function at runtime. Values marked as images at conversion time use [`CVMutablePixelBuffer`](https://developer.apple.com/documentation/CoreVideo/CVMutablePixelBuffer). Pass your data using the same input names defined at model conversion time.
+The [`NDArray`](ndarray.md) type represents the input and output tensors from the converted model function at runtime. Values marked as images at conversion time use [`CVMutablePixelBuffer`](https://developer.apple.com/documentation/corevideo/cvmutablepixelbuffer). Pass your data using the same input names defined at model conversion time.
 
 For [`NDArray`](ndarray.md) values, write input data with [`NDArray.MutableView`](ndarray/mutableview.md) and read results with [`NDArray.View`](ndarray/view.md). Swift enforces this at compile time. A mutable view allows writes, and a view allows only reads, so you always know how your data is accessed.
 
@@ -159,7 +159,7 @@ processOutput(prediction.view())
 
 #### Run Inference with Image Inputs and Outputs
 
-When a function expects an image instead of an [`NDArray`](ndarray.md), the input or output uses [`CVMutablePixelBuffer`](https://developer.apple.com/documentation/CoreVideo/CVMutablePixelBuffer). The descriptor tells you the expected dimensions and pixel format, so your code can provide a matching pixel buffer to the function.
+When a function expects an image instead of an [`NDArray`](ndarray.md), the input or output uses [`CVMutablePixelBuffer`](https://developer.apple.com/documentation/corevideo/cvmutablepixelbuffer). The descriptor tells you the expected dimensions and pixel format, so your code can provide a matching pixel buffer to the function.
 
 Read the input descriptor and confirm the value is an image. Then read width, height, and pixel format from the [`ImageDescriptor`](imagedescriptor.md):
 
@@ -174,9 +174,9 @@ let expectedHeight = imageDescriptor.height
 let expectedFormat = imageDescriptor.pixelFormatType
 ```
 
-A `width` or `height` of `-1` indicates a dynamic dimension. The [`pixelFormatType`](imagedescriptor/pixelformattype.md) is an [`OSType`](https://developer.apple.com/documentation/kernel/ostype) your code can compare against the format constants in [`Core Video`](https://developer.apple.com/documentation/CoreVideo).
+A `width` or `height` of `-1` indicates a dynamic dimension. The [`pixelFormatType`](imagedescriptor/pixelformattype.md) is an [`OSType`](https://developer.apple.com/documentation/kernel/ostype) your code can compare against the format constants in [`Core Video`](https://developer.apple.com/documentation/corevideo).
 
-Pass a [`CVMutablePixelBuffer`](https://developer.apple.com/documentation/CoreVideo/CVMutablePixelBuffer) that matches the expected format and dimensions as an input. Build an [`InferenceFunction.Inputs`](inferencefunction/inputs.md) collection, add the buffer with `InferenceFunction/Inputs/insert(_:for:)`, and run the function:
+Pass a [`CVMutablePixelBuffer`](https://developer.apple.com/documentation/corevideo/cvmutablepixelbuffer) that matches the expected format and dimensions as an input. Build an [`InferenceFunction.Inputs`](inferencefunction/inputs.md) collection, add the buffer with `InferenceFunction/Inputs/insert(_:for:)`, and run the function:
 
 ```swift
 var pixelBuffer = try makeImageBuffer(

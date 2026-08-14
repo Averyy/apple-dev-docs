@@ -22,7 +22,7 @@ let CBAdvertisementDataServiceDataKey: String
 
 #### Discussion
 
-The keys ([`CBUUID`](cbuuid.md) objects) represent CBService UUIDs, and the values ([`NSData`](https://developer.apple.com/documentation/Foundation/NSData) objects) represent service-specific data.
+The keys ([`CBUUID`](cbuuid.md) objects) represent CBService UUIDs, and the values ([`NSData`](https://developer.apple.com/documentation/foundation/nsdata) objects) represent service-specific data.
 
 ## See Also
 

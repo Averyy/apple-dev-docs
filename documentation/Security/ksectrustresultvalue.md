@@ -22,7 +22,7 @@ let kSecTrustResultValue: CFString
 
 #### Discussion
 
-The key is present after trust evaluation completes. Its value is a [`CFNumber`](https://developer.apple.com/documentation/CoreFoundation/CFNumber) that holds one of the values listed in [`SecTrustResultType`](sectrustresulttype.md), indicating the outcome of the trust evaluation.
+The key is present after trust evaluation completes. Its value is a [`CFNumber`](https://developer.apple.com/documentation/corefoundation/cfnumber) that holds one of the values listed in [`SecTrustResultType`](sectrustresulttype.md), indicating the outcome of the trust evaluation.
 
 
 ---

@@ -22,9 +22,9 @@ This property is observable using key-value observing.
 
 - [Cocoa Bindings](cocoa-bindings.md)
   Automatically synchronize your data model with your app’s interface using Cocoa Bindings.
-- [class NSPredicate](../Foundation/NSPredicate.md)
+- [class NSPredicate](../foundation/nspredicate.md)
   A definition of logical conditions for constraining a search for a fetch or for in-memory filtering.
-- [Core Data](../CoreData/CoreData.md)
+- [Core Data](../coredata/coredata.md)
   Persist or cache data on a single device, or sync data to multiple devices with CloudKit.
 
 

@@ -22,10 +22,10 @@ enum : unsigned int {
 - [kINQUIRY_PERIPHERAL_QUALIFIER_Mask](1643287-anonymous/kinquiry_peripheral_qualifier_mask.md)
 - [kINQUIRY_PERIPHERAL_QUALIFIER_NotSupported](1643287-anonymous/kinquiry_peripheral_qualifier_notsupported.md)
 - [kINQUIRY_PERIPHERAL_QUALIFIER_SupportedButNotConnected](1643287-anonymous/kinquiry_peripheral_qualifier_supportedbutnotconnected.md)
-- [kINQUIRY_PERIPHERAL_QUALIFIER_Connected](../driverkit/1643287-anonymous/kinquiry_peripheral_qualifier_connected.md)
-- [kINQUIRY_PERIPHERAL_QUALIFIER_Mask](../driverkit/1643287-anonymous/kinquiry_peripheral_qualifier_mask.md)
-- [kINQUIRY_PERIPHERAL_QUALIFIER_NotSupported](../driverkit/1643287-anonymous/kinquiry_peripheral_qualifier_notsupported.md)
-- [kINQUIRY_PERIPHERAL_QUALIFIER_SupportedButNotConnected](../driverkit/1643287-anonymous/kinquiry_peripheral_qualifier_supportedbutnotconnected.md)
+- [kINQUIRY_PERIPHERAL_QUALIFIER_Connected](../driverkit/kinquiry_peripheral_qualifier_connected.md)
+- [kINQUIRY_PERIPHERAL_QUALIFIER_Mask](../driverkit/kinquiry_peripheral_qualifier_mask.md)
+- [kINQUIRY_PERIPHERAL_QUALIFIER_NotSupported](../driverkit/kinquiry_peripheral_qualifier_notsupported.md)
+- [kINQUIRY_PERIPHERAL_QUALIFIER_SupportedButNotConnected](../driverkit/kinquiry_peripheral_qualifier_supportedbutnotconnected.md)
 
 
 ---

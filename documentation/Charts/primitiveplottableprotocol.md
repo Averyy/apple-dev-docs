@@ -22,7 +22,7 @@ protocol PrimitivePlottableProtocol : Plottable where Self == Self.PrimitivePlot
 
 #### Overview
 
-A primitive plottable type is a numeric type like a [`Float`](https://developer.apple.com/documentation/Swift/Float) or [`UInt32`](https://developer.apple.com/documentation/Swift/UInt32) for quantitative values, [`Date`](https://developer.apple.com/documentation/Foundation/Date) for temporal values, or [`String`](https://developer.apple.com/documentation/Swift/String) for categorical values.
+A primitive plottable type is a numeric type like a [`Float`](https://developer.apple.com/documentation/swift/float) or [`UInt32`](https://developer.apple.com/documentation/swift/uint32) for quantitative values, [`Date`](https://developer.apple.com/documentation/foundation/date) for temporal values, or [`String`](https://developer.apple.com/documentation/swift/string) for categorical values.
 
 Primitive plottable types conform to the [`Plottable`](plottable.md) protocol.
 

@@ -16,12 +16,12 @@ func runModal(for trust: SecTrust!, showGroup: Bool) -> Int
 
 #### Return Value
 
-This method returns the integer constant [`NSOKButton`](https://developer.apple.com/documentation/AppKit/NSOKButton) when dismissed.
+This method returns the integer constant [`NSOKButton`](https://developer.apple.com/documentation/appkit/nsokbutton) when dismissed.
 
 ## Parameters
 
-- `trust`: A [`SecTrust`](https://developer.apple.com/documentation/Security/SecTrust) object associated with the certificate chain to display.
-- `showGroup`: Specifies whether additional certificates (other than the leaf certificate) are displayed. To show only a single certificate, specify only one [`SecCertificate`](https://developer.apple.com/documentation/Security/SecCertificate) in the array and set `showGroup` to [`false`](https://developer.apple.com/documentation/Swift/false).
+- `trust`: A [`SecTrust`](https://developer.apple.com/documentation/security/sectrust) object associated with the certificate chain to display.
+- `showGroup`: Specifies whether additional certificates (other than the leaf certificate) are displayed. To show only a single certificate, specify only one [`SecCertificate`](https://developer.apple.com/documentation/security/seccertificate) in the array and set `showGroup` to [`false`](https://developer.apple.com/documentation/swift/false).
 
 ## See Also
 

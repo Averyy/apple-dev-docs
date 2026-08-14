@@ -26,7 +26,7 @@ This method affects only those animations that are submitted after it is called.
 
 ## Parameters
 
-- `enabled`: Specify [`true`](https://developer.apple.com/documentation/Swift/true) to enable animations or [`false`](https://developer.apple.com/documentation/Swift/false) to disable them.
+- `enabled`: Specify [`true`](https://developer.apple.com/documentation/swift/true) to enable animations or [`false`](https://developer.apple.com/documentation/swift/false) to disable them.
 
 ## See Also
 

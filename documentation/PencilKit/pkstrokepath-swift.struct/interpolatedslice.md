@@ -30,10 +30,10 @@ struct InterpolatedSlice
 ## Relationships
 
 ### Conforms To
-- [Copyable](../Swift/Copyable.md)
-- [Escapable](../Swift/Escapable.md)
-- [IteratorProtocol](../Swift/IteratorProtocol.md)
-- [Sequence](../Swift/Sequence.md)
+- [Copyable](../swift/copyable.md)
+- [Escapable](../swift/escapable.md)
+- [IteratorProtocol](../swift/iteratorprotocol.md)
+- [Sequence](../swift/sequence.md)
 
 
 ---

@@ -7,7 +7,7 @@ An atom that defines how data being sent to this track from its nonprimary sourc
 
 #### Overview
 
-See [`Track input map atom ('imap')`](track_input_map_atom.md).
+See [`Track input map atom`](track_input_map_atom.md).
 
 ## See Also
 

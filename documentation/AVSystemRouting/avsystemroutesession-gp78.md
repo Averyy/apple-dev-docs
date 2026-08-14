@@ -53,8 +53,8 @@ Report playback metadata to `MPNowPlayingInfoCenter` to ensure the system displa
 ## Relationships
 
 ### Conforms To
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

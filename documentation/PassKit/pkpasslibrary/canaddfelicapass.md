@@ -21,7 +21,7 @@ func canAddFelicaPass() -> Bool
 
 #### Discussion
 
-By default, this method returns [`false`](https://developer.apple.com/documentation/Swift/false).
+By default, this method returns [`false`](https://developer.apple.com/documentation/swift/false).
 
 ## See Also
 

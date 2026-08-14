@@ -30,7 +30,7 @@ If you create your own ARAnchor subclass, you must implement the [`init(anchor:)
 ## Relationships
 
 ### Inherits From
-- [NSCopying](../Foundation/NSCopying.md)
+- [NSCopying](../foundation/nscopying.md)
 ### Conforming Types
 - [ARAnchor](aranchor.md)
 - [ARAppClipCodeAnchor](arappclipcodeanchor.md)

@@ -30,10 +30,10 @@ This method applies the bump distortion linear filter to an image. This effect c
 The bump distortion linear filter uses the following properties:
 
 - **`inputImage`**: An image with the type [`CIImage`](ciimage.md).
-- **`radius`**: A `float` representing the amount of pixels the filter uses to create the distortion as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
-- **`center`**: A set of coordinates marking the center of the image as a [`CGPoint`](https://developer.apple.com/documentation/CoreFoundation/CGPoint).
-- **`scale`**: A `float` representing the curvature of the bump effect as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
-- **`angle`**: A `float` representing the angle of the distortion, in radians, as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+- **`radius`**: A `float` representing the amount of pixels the filter uses to create the distortion as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
+- **`center`**: A set of coordinates marking the center of the image as a [`CGPoint`](https://developer.apple.com/documentation/corefoundation/cgpoint).
+- **`scale`**: A `float` representing the curvature of the bump effect as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
+- **`angle`**: A `float` representing the angle of the distortion, in radians, as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
 
 The following code creates a filter that results in a vertical bump distorting the image:
 
@@ -49,7 +49,7 @@ func bumpDistortionLinear(inputImage: CIImage) -> CIImage {
 }
 ```
 
-![Two images arranged horizontally. The left image contains a photograph of a modern building with light colored concrete set against a clear sky. The image on the right shows the result of applying the bump distortion linear filter. The straight lines of the building appear to curve in and out of the image.](https://docs-assets.developer.apple.com/published/63bc50f11b1f29450541abca3d043bee/media-4407320%402x.png)
+![Two images arranged horizontally. The left image contains a photograph of a modern building with light colored concrete set against a clear sky. The image on the right shows the result of applying the bump distortion linear filter. The straight lines of the building appear to curve in and out of the image.](/images/com.apple.coreimage/media-4407320@2x.png)
 
 ## See Also
 

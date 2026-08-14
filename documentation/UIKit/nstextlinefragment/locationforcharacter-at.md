@@ -20,7 +20,7 @@ func locationForCharacter(at index: Int) -> CGPoint
 
 #### Return Value
 
-A [`CGPoint`](https://developer.apple.com/documentation/CoreFoundation/CGPoint) that’s on the upstream edge of the glyph. It’s in the coordinate system relative to the line fragment origin.
+A [`CGPoint`](https://developer.apple.com/documentation/corefoundation/cgpoint) that’s on the upstream edge of the glyph. It’s in the coordinate system relative to the line fragment origin.
 
 ## Parameters
 

@@ -54,7 +54,7 @@ It’s safe to call any property and method implementation of this protocol from
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 ### Inherited By
 - [GCDevicePhysicalInput](gcdevicephysicalinput.md)
 ### Conforming Types

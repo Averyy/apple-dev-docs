@@ -31,7 +31,7 @@ The transformation from source PCM to encoded AAC results in a sound track with 
 
 #### Track Structures
 
-Based on the Audio data section above, the following [`Edit list atom ('elst')`](edit_list_atom.md) and [`Sample group description atom ('sgpd')`](sample_group_description_atom.md) are used to represent the encoder delay.
+Based on the Audio data section above, the following [`Edit list atom`](edit_list_atom.md) and [`Sample group description atom`](sample_group_description_atom.md) are used to represent the encoder delay.
 
 The edit list atom contains this data:
 
@@ -49,7 +49,7 @@ The edit list atom contains this [`Edit list table`](edit_list_atom/edit_list_ta
 
 > **Note**: For this example, the conventional encoder delay value of 2112 audio samples has been used. Alternative encoder delay values can also be explicitly represented with this mechanism, depending upon codec implementation.
 
-The [`Sample group description atom ('sgpd')`](sample_group_description_atom.md) contains this data:
+The [`Sample group description atom`](sample_group_description_atom.md) contains this data:
 
 - [`Size`](sample_group_description_atom/size.md): `26`
 - [`Type`](sample_group_description_atom/type.md): `‘sgpd’`
@@ -65,7 +65,7 @@ The sample group description atom contains this [`Payload data`](sample_group_de
 
 > **Note**: Recall that the payload data value could be an alternative value, depending upon the particular codec in use. `-1` is typical for current AAC codecs.
 
-And the [`Sample-to-group atom ('sbgp')`](sample-to-group_atom.md) contains this data:
+And the [`Sample-to-group atom`](sample-to-group_atom.md) contains this data:
 
 - [`Size`](sample-to-group_atom/size.md): `22`
 - [`Type`](sample-to-group_atom/type.md): `‘sbgp’`

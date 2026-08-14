@@ -21,7 +21,7 @@ var bounds: CGRect { get set }
 
 #### Discussion
 
-The bounds rectangle origin is at the current glyph location on the text baseline. The default value is [`CGRectZero`](https://developer.apple.com/documentation/CoreGraphics/CGRectZero).
+The bounds rectangle origin is at the current glyph location on the text baseline. The default value is [`CGRectZero`](https://developer.apple.com/documentation/coregraphics/cgrectzero).
 
 ## See Also
 

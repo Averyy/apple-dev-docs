@@ -48,8 +48,8 @@ A `NavigationAction` value is intended to be used to make policy decisions about
 ## Relationships
 
 ### Conforms To
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

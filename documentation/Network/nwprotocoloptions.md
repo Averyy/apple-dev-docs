@@ -31,8 +31,8 @@ class NWProtocolOptions
 - [NWProtocolUDP.Options](nwprotocoludp/options.md)
 - [NWProtocolWebSocket.Options](nwprotocolwebsocket/options.md)
 ### Conforms To
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

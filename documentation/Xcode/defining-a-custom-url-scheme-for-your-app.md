@@ -27,7 +27,7 @@ myphotoapp:albumname?name="albumname"
 myphotoapp:albumname?index=1
 ```
 
-Clients craft URLs based on your scheme and ask your app to open them by calling the [`open(_:options:completionHandler:)`](https://developer.apple.com/documentation/UIKit/UIApplication/open(_:options:completionHandler:)) method of [`UIApplication`](https://developer.apple.com/documentation/UIKit/UIApplication). Clients can ask the system to inform them when your app opens the URL.
+Clients craft URLs based on your scheme and ask your app to open them by calling the [`open(_:options:completionHandler:)`](https://developer.apple.com/documentation/uikit/uiapplication/open(_:options:completionhandler:)) method of [`UIApplication`](https://developer.apple.com/documentation/uikit/uiapplication). Clients can ask the system to inform them when your app opens the URL.
 
 ```swift
 let url = URL(string: "myphotoapp:Vacation?index=1")
@@ -47,7 +47,7 @@ URL scheme registration specifies which URLs to redirect to your app. Register y
 - Choose a role for your app: either an editor role for URL schemes you define, or a viewer role for schemes your app adopts but doesn’t define.
 - Specify an identifier for your app.
 
-![Screenshot of Xcode showing the URL Types section with a URL that reads “com.example.myphotoapp.”](https://docs-assets.developer.apple.com/published/33d1c93a0355274a4c27075ab11717f7/defining-a-custom-url-scheme-for-your-app-1%402x.png)
+![Screenshot of Xcode showing the URL Types section with a URL that reads “com.example.myphotoapp.”](/images/com.apple.Xcode/defining-a-custom-url-scheme-for-your-app-1@2x.png)
 
 The identifier you supply with your scheme distinguishes your app from others that declare support for the same scheme. To ensure uniqueness, specify a reverse DNS string that incorporates your company’s domain and app name. Although using a reverse DNS string is a best practice, it doesn’t prevent other apps from registering the same scheme and handling the associated links. Use universal links instead of custom URL schemes to define links that are uniquely associated with your website.
 
@@ -57,7 +57,7 @@ Some URL schemes are reserved for system use. The system directs well-known type
 
 ##### Handle Incoming Urls
 
-When another app opens a URL containing your custom scheme, the system launches your app, if necessary, and brings it to the foreground. The system delivers the URL to your app by calling your app delegate’s [`application(_:open:options:)`](https://developer.apple.com/documentation/UIKit/UIApplicationDelegate/application(_:open:options:)) method. Add code to the method to parse the contents of the URL and take appropriate actions. To ensure the URL is parsed correctly, use [`NSURLComponents`](https://developer.apple.com/documentation/Foundation/NSURLComponents) APIs to extract the components. Obtain additional information about the URL, such as which app opened it, from the system-provided options dictionary.
+When another app opens a URL containing your custom scheme, the system launches your app, if necessary, and brings it to the foreground. The system delivers the URL to your app by calling your app delegate’s [`application(_:open:options:)`](https://developer.apple.com/documentation/uikit/uiapplicationdelegate/application(_:open:options:)) method. Add code to the method to parse the contents of the URL and take appropriate actions. To ensure the URL is parsed correctly, use [`NSURLComponents`](https://developer.apple.com/documentation/foundation/nsurlcomponents) APIs to extract the components. Obtain additional information about the URL, such as which app opened it, from the system-provided options dictionary.
 
 ```swift
 func application(_ application: UIApplication,
@@ -87,9 +87,9 @@ func application(_ application: UIApplication,
 }
 ```
 
-The system also uses your app delegate’s [`application(_:open:options:)`](https://developer.apple.com/documentation/UIKit/UIApplicationDelegate/application(_:open:options:)) method to open custom file types that your app supports.
+The system also uses your app delegate’s [`application(_:open:options:)`](https://developer.apple.com/documentation/uikit/uiapplicationdelegate/application(_:open:options:)) method to open custom file types that your app supports.
 
-If your app has opted into [`Scenes`](https://developer.apple.com/documentation/UIKit/scenes), and your app isn’t running, the system delivers the URL to the [`scene(_:willConnectTo:options:)`](https://developer.apple.com/documentation/UIKit/UISceneDelegate/scene(_:willConnectTo:options:)) delegate method after launch, and to [`scene(_:openURLContexts:)`](https://developer.apple.com/documentation/UIKit/UISceneDelegate/scene(_:openURLContexts:)) when your app opens a URL while running or suspended in memory.
+If your app has opted into [`Scenes`](https://developer.apple.com/documentation/uikit/scenes), and your app isn’t running, the system delivers the URL to the [`scene(_:willConnectTo:options:)`](https://developer.apple.com/documentation/uikit/uiscenedelegate/scene(_:willconnectto:options:)) delegate method after launch, and to [`scene(_:openURLContexts:)`](https://developer.apple.com/documentation/uikit/uiscenedelegate/scene(_:openurlcontexts:)) when your app opens a URL while running or suspended in memory.
 
 ```swift
 func scene(_ scene: UIScene, 

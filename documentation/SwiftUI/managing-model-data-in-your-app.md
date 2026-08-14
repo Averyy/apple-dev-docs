@@ -17,13 +17,13 @@ A SwiftUI app can display data that people can change using the app’s user int
 
 Keeping the model data (that is, an instance of a data model) in sync with what appears on the screen can be challenging, especially when the data appears in multiple views of the UI at the same time.
 
-SwiftUI helps keep your app’s UI up to date with changes made to the data thanks to Observation. With [`Observation`](https://developer.apple.com/documentation/Observation), a view in SwiftUI can form dependencies on observable data models and update the UI when data changes.
+SwiftUI helps keep your app’s UI up to date with changes made to the data thanks to Observation. With [`Observation`](https://developer.apple.com/documentation/observation), a view in SwiftUI can form dependencies on observable data models and update the UI when data changes.
 
-> **Note**: [`Observation`](https://developer.apple.com/documentation/Observation) support in SwiftUI is available starting with iOS 17, iPadOS 17, macOS 14, tvOS 17, and watchOS 10. For information about adopting Observation in existing apps, see [`Migrating from the Observable Object protocol to the Observable macro`](migrating-from-the-observable-object-protocol-to-the-observable-macro.md).
+> **Note**: [`Observation`](https://developer.apple.com/documentation/observation) support in SwiftUI is available starting with iOS 17, iPadOS 17, macOS 14, tvOS 17, and watchOS 10. For information about adopting Observation in existing apps, see [`Migrating from the Observable Object protocol to the Observable macro`](migrating-from-the-observable-object-protocol-to-the-observable-macro.md).
 
 ##### Make Model Data Observable
 
-To make data changes visible to SwiftUI, apply the [`Observable()`](https://developer.apple.com/documentation/Observation/Observable()) macro to your data model. This macro generates code that adds observation support to your data model at compile time, keeping your data model code focused on the properties that store data. For example, the following code defines a data model for books:
+To make data changes visible to SwiftUI, apply the [`Observable()`](https://developer.apple.com/documentation/observation/observable()) macro to your data model. This macro generates code that adds observation support to your data model at compile time, keeping your data model code focused on the properties that store data. For example, the following code defines a data model for books:
 
 ```swift
 @Observable class Book: Identifiable {
@@ -33,7 +33,7 @@ To make data changes visible to SwiftUI, apply the [`Observable()`](https://deve
 }
 ```
 
-> ❗ **Important**: The [`Observable()`](https://developer.apple.com/documentation/Observation/Observable()) macro, in addition to adding observation functionality, also conforms your data model type to the [`Observable`](https://developer.apple.com/documentation/Observation/Observable) protocol, which serves as a signal to other APIs that your type supports observation. Don’t apply the `Observable` protocol by itself to your data model type, since that alone doesn’t add any observation functionality. Instead, always use the `Observable` macro when adding observation support to your type.
+> ❗ **Important**: The [`Observable()`](https://developer.apple.com/documentation/observation/observable()) macro, in addition to adding observation functionality, also conforms your data model type to the [`Observable`](https://developer.apple.com/documentation/observation/observable) protocol, which serves as a signal to other APIs that your type supports observation. Don’t apply the `Observable` protocol by itself to your data model type, since that alone doesn’t add any observation functionality. Instead, always use the `Observable` macro when adding observation support to your type.
 
 ##### Observe Model Data in a View
 
@@ -366,7 +366,7 @@ struct BookEditView: View {
 }
 ```
 
-You can use the [`Bindable`](bindable.md) property wrapper on properties and variables to an [`Observable`](https://developer.apple.com/documentation/Observation/Observable) object. This includes global variables, properties that exist outside of SwiftUI types, or even local variables. For example, you can create a `@Bindable` variable within a view’s [`body`](view/body-8kl5o.md):
+You can use the [`Bindable`](bindable.md) property wrapper on properties and variables to an [`Observable`](https://developer.apple.com/documentation/observation/observable) object. This includes global variables, properties that exist outside of SwiftUI types, or even local variables. For example, you can create a `@Bindable` variable within a view’s [`body`](view/body-8kl5o.md):
 
 ```swift
 struct LibraryView: View {
@@ -387,7 +387,7 @@ The `@Bindable` variable `book` provides a binding that connects [`TextField`](t
 
 - [Migrating from the Observable Object protocol to the Observable macro](migrating-from-the-observable-object-protocol-to-the-observable-macro.md)
   Update your existing app to leverage the benefits of Observation in Swift.
-- [macro Observable()](../Observation/Observable().md)
+- [macro Observable()](../observation/observable().md)
   Defines and implements conformance of the Observable protocol.
 - [Monitoring data changes in your app](monitoring-model-data-changes-in-your-app.md)
   Show changes to data in your app’s user interface by using observable objects.
@@ -395,7 +395,7 @@ The `@Bindable` variable `book` provides a binding that connects [`TextField`](t
   A property wrapper type that instantiates an observable object.
 - [struct ObservedObject](observedobject.md)
   A property wrapper type that subscribes to an observable object and invalidates a view whenever the observable object changes.
-- [protocol ObservableObject](../Combine/ObservableObject.md)
+- [protocol ObservableObject](../combine/observableobject.md)
   A type of object with a publisher that emits before the object has changed.
 
 

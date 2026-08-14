@@ -26,8 +26,8 @@ After calling this function, you should call the function [`PMSessionValidatePag
 
 ## Parameters
 
-- `data`: The data representation of a page format object. The data representation must have been previously created with the function  .
-- `pageFormat`: A pointer to your   variable. On return, the variable refers to a new page format object that contains the information stored in the specified data object. You are responsible for releasing the page format object with the function  .
+- `data`: The data representation of a page format object. The data representation must have been previously created with the function [`PMPageFormatCreateDataRepresentation(_:_:_:)`](1464227-pmpageformatcreatedatarepresenta.md).
+- `pageFormat`: A pointer to your [`PMPageFormat`](pmpageformat.md) variable. On return, the variable refers to a new page format object that contains the information stored in the specified data object. You are responsible for releasing the page format object with the function [`PMRelease(_:)`](1461402-pmrelease.md).
 
 ## See Also
 

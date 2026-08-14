@@ -35,7 +35,7 @@ Set up your physical environment according to the following guidelines. Use thes
 
 The programming steps to scan and define a reference object that ARKit can use for detection are simple. (See “Create a Reference Object in an AR Session” below.) However, the fidelity of the reference object you create, and thus your success at detecting that reference object in your own apps, depends on your physical interactions with the object when scanning. Build and run this app on your iOS device to walk through a series of steps for getting high-quality scan data, resulting in reference object files that you can use for detection in your own apps.
 
-![Screenshots of the five steps in using the sample app to scan a real-world object: prepare, define bounding box, scan, adjust origin, then test and export.](https://docs-assets.developer.apple.com/published/9f9a84d5a383990a5fe16d343c6104c0/ScannerAppUIFlow.png)
+![Screenshots of the five steps in using the sample app to scan a real-world object: prepare, define bounding box, scan, adjust origin, then test and export.](/images/com.apple.arkit/ScannerAppUIFlow.png)
 
 1. **Choose an iOS Device.** For easy object scanning, use a recent, high-performance iOS device. Scanned objects can be detected on any ARKit-supported device, but the process of creating a high-quality scan is faster and smoother on a high-performance device.
 2. **Position the object.** When first run, the app displays a box that roughly estimates the size of whatever real-world objects appear centered in the camera view. Position the object you want to scan on a surface free of other objects (like an empty tabletop). Then move your device so that the object appears centered in the box, and tap the Next button.

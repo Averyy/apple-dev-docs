@@ -41,7 +41,7 @@ This method throws an error if the framework can’t retrieve the requested zone
 
 - [func preferredUnits(for: Set<HKQuantityType>, completion: ([HKQuantityType : HKUnit], (any Error)?) -> Void)](hkhealthstore/preferredunits(for:completion:).md)
   Returns the user’s preferred units for the given quantity types.
-- [static let HKUserPreferencesDidChange: NSNotification.Name](../Foundation/NSNotification/Name-swift.struct/HKUserPreferencesDidChange.md)
+- [static let HKUserPreferencesDidChange: NSNotification.Name](../foundation/nsnotification/name-swift.struct/hkuserpreferencesdidchange.md)
   Notifies observers whenever the user changes his or her preferred units.
 
 

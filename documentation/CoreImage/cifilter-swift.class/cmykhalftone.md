@@ -30,12 +30,12 @@ This method applies a CMYK halftone filter to an image. The effect generates an 
 The CMYK halftone filter uses the following properties:
 
 - **`inputImage`**: An image with the type [`CIImage`](ciimage.md).
-- **`angle`**: A `float` representing the angle of the pattern as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
-- **`width`**: A `float` representing the distance between dots in the pattern as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
-- **`sharpness`**: A `float` representing the sharpness of the pattern as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
-- **`center`**: A set of coordinates marking the center of the image as a [`CGPoint`](https://developer.apple.com/documentation/CoreFoundation/CGPoint).
-- **`grayComponentReplacement`**: A `float` representing the grey component to be replaced as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
-- **`underColorRemoval`**: A `float` representing the under-color removal value as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+- **`angle`**: A `float` representing the angle of the pattern as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
+- **`width`**: A `float` representing the distance between dots in the pattern as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
+- **`sharpness`**: A `float` representing the sharpness of the pattern as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
+- **`center`**: A set of coordinates marking the center of the image as a [`CGPoint`](https://developer.apple.com/documentation/corefoundation/cgpoint).
+- **`grayComponentReplacement`**: A `float` representing the grey component to be replaced as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
+- **`underColorRemoval`**: A `float` representing the under-color removal value as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
 
 The following code produces an image with visible dots and less color:
 
@@ -53,7 +53,7 @@ func cmyk(inputImage: CIImage) -> CIImage {
 }
 ```
 
-![Two photographs of a wooden barrel of green artichokes. The artichokes are crisp with good lighting. The photo on the left has no modifications to color or detail. In the photo on the right, an applied halftone filter results in the image becoming darker with an overlay of small dots of color, creating the detail of the image.](https://docs-assets.developer.apple.com/published/11ddc00bc9cd17b1fb63d5d03feb95dc/media-3595920%402x.png)
+![Two photographs of a wooden barrel of green artichokes. The artichokes are crisp with good lighting. The photo on the left has no modifications to color or detail. In the photo on the right, an applied halftone filter results in the image becoming darker with an overlay of small dots of color, creating the detail of the image.](/images/com.apple.coreimage/media-3595920@2x.png)
 
 ## See Also
 

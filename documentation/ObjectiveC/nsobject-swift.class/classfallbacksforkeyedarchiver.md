@@ -26,7 +26,7 @@ An array of string objects that specify the names of classes in preferred order 
 
 #### Discussion
 
-[`NSKeyedArchiver`](https://developer.apple.com/documentation/Foundation/NSKeyedArchiver) calls this method and stores the result inside the archive. If the actual class of an object doesn’t exist at the time of unarchiving, [`NSKeyedUnarchiver`](https://developer.apple.com/documentation/Foundation/NSKeyedUnarchiver) goes through the stored list of classes and uses the first one that does exists as a substitute class for decoding the object. The default implementation of this method returns an empty array.
+[`NSKeyedArchiver`](https://developer.apple.com/documentation/foundation/nskeyedarchiver) calls this method and stores the result inside the archive. If the actual class of an object doesn’t exist at the time of unarchiving, [`NSKeyedUnarchiver`](https://developer.apple.com/documentation/foundation/nskeyedunarchiver) goes through the stored list of classes and uses the first one that does exists as a substitute class for decoding the object. The default implementation of this method returns an empty array.
 
 You can use this method if you introduce a new class into your application to provide some backwards compatibility in case the archive will be read on a system that does not have that class. Sometimes there may be another class which may work nearly as well as a substitute for the new class, and the archive keys and archived state for the new class can be carefully chosen (or compatibility written out) so that the object can be unarchived as the substitute class if necessary.
 

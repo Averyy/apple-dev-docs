@@ -20,7 +20,7 @@ Get the current speed used for data transfers.
 
 ## Parameters
 
-- `kilobytesPerSecond`: kDVDSpeedMin specifies the minimum speed for all DVD media (1X). kDVDSpeedMax specifies the maximum speed supported in hardware.
+- `kilobytesPerSecond`: Returns the current speed used for data transfers, in kB/s. kDVDSpeedMin specifies the minimum speed for all DVD media (1X). kDVDSpeedMax specifies the maximum speed supported in hardware.
 
 ## See Also
 

@@ -14,7 +14,7 @@ To pair two tracks, one subtitle track can contain any combination of forced and
 
 > **Note**: The regular track in a pair provides a complete transcription of the audio as subtitle text. This allows a user to listen in one language but to read subtitled dialogue in another language.
 
-See [`Preparing sound and subtitle alternate groups for use with Apple devices`](preparing_sound_and_subtitle_alternate_groups_for_use_with_apple_devices.md) and [`Track reference atom ('tref')`](track_reference_atom.md) for more information.
+See [`Preparing sound and subtitle alternate groups for use with Apple devices`](preparing_sound_and_subtitle_alternate_groups_for_use_with_apple_devices.md) and [`Track reference atom`](track_reference_atom.md) for more information.
 
 ## See Also
 

@@ -41,7 +41,7 @@ func photoEffectInstant(inputImage: CIImage ) -> CIImage {
 }
 ```
 
-![Two pictures of a pink flower surrounded by foliage. The photo on the left shows a single flower photographed close-up, in focus, with good light and no effects. In the photo on the right, a photo effect instant filter is applied, resulting in the image becoming desaturated.](https://docs-assets.developer.apple.com/published/1da15dd125088755f8fa93a34c3fd2a7/media-3545013%402x.png)
+![Two pictures of a pink flower surrounded by foliage. The photo on the left shows a single flower photographed close-up, in focus, with good light and no effects. In the photo on the right, a photo effect instant filter is applied, resulting in the image becoming desaturated.](/images/com.apple.coreimage/media-3545013@2x.png)
 
 ## See Also
 

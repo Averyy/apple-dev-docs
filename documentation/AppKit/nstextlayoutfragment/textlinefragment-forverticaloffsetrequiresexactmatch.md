@@ -20,12 +20,12 @@ A text line fragment, or `nil` if there isn’t a match.
 
 #### Discussion
 
-Set `requiresExactMatch` to [`true`](https://developer.apple.com/documentation/Swift/true) to find the text line fragment that contains the vertical offset, or set `requiresExactMatch` to [`false`](https://developer.apple.com/documentation/Swift/false) to find the closest text line fragment matching or beyond the vertical offset. Returns `nil` if there isn’t a match.
+Set `requiresExactMatch` to [`true`](https://developer.apple.com/documentation/swift/true) to find the text line fragment that contains the vertical offset, or set `requiresExactMatch` to [`false`](https://developer.apple.com/documentation/swift/false) to find the closest text line fragment matching or beyond the vertical offset. Returns `nil` if there isn’t a match.
 
 ## Parameters
 
 - `verticalOffset`: A float value that indicates a vertical distance, expressed in points, from the layout fragment frame’s origin.
-- `requiresExactMatch`: A Boolean value that indicates whether the method returns an exact match, or returns the closest match if there isn’t an exact match. The default value is [`true`](https://developer.apple.com/documentation/Swift/true).
+- `requiresExactMatch`: A Boolean value that indicates whether the method returns an exact match, or returns the closest match if there isn’t an exact match. The default value is [`true`](https://developer.apple.com/documentation/swift/true).
 
 ## See Also
 

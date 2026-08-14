@@ -22,7 +22,7 @@ var kAudioSessionCategory_SoloAmbientSound: Int { get }
 
 When you use this category, audio from other apps is silenced. Your audio is silenced by screen locking and by the Silent switch (called the *Ring/Silent switch* on iPhone).
 
-This category is equivalent to the [`soloAmbient`](https://developer.apple.com/documentation/AVFAudio/AVAudioSession/Category-swift.struct/soloAmbient) category provided in the AVFoundation framework.
+This category is equivalent to the [`soloAmbient`](https://developer.apple.com/documentation/avfaudio/avaudiosession/category-swift.struct/soloambient) category provided in the AVFoundation framework.
 
 ## See Also
 

@@ -22,7 +22,7 @@ class SCNPyramid
 
 #### Overview
 
-![None](https://docs-assets.developer.apple.com/published/faa953ca36abc955499e04ebcf672469/media-2929810%402x.png)
+![None](/images/com.apple.scenekit/media-2929810@2x.png)
 
 A pyramid defines the surface of a solid whose base is a rectangle, and whose four triangular side faces converge at a point centered above its base. Define the shape of the pyramid’s base in the x- and z-axis dimensions of its local coordinate space with the [`width`](scnpyramid/width.md) and [`length`](scnpyramid/length.md) properties, and its extent in the y-axis dimension with the [`height`](scnpyramid/height.md) property. To position and orient a pyramid in a scene, attach it to the [`geometry`](scnnode/geometry.md) property of an [`SCNNode`](scnnode.md) object.
 
@@ -55,15 +55,15 @@ A pyramid contains five [`SCNGeometryElement`](scngeometryelement.md) objects, c
 ### Inherits From
 - [SCNGeometry](scngeometry.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCoding](../Foundation/NSCoding.md)
-- [NSCopying](../Foundation/NSCopying.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [NSSecureCoding](../Foundation/NSSecureCoding.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCoding](../foundation/nscoding.md)
+- [NSCopying](../foundation/nscopying.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSSecureCoding](../foundation/nssecurecoding.md)
 - [SCNAnimatable](scnanimatable.md)
 - [SCNBoundingVolume](scnboundingvolume.md)
 - [SCNShadable](scnshadable.md)

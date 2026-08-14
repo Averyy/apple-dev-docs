@@ -21,7 +21,7 @@ var kAudioFormatProperty_FirstPlayableFormatFromList: AudioFormatPropertyID { ge
 
 #### Discussion
 
-The index of the first [`AudioFormatListItem`](https://developer.apple.com/documentation/CoreAudioTypes/AudioFormatListItem) structure that represents an audio format that is playable on the system. To use this property, pass in, to the [`AudioFormatGetProperty(_:_:_:_:_:)`](audioformatgetproperty(_:_:_:_:_:).md) function, the list of [`AudioFormatListItem`](https://developer.apple.com/documentation/CoreAudioTypes/AudioFormatListItem) structures that you obtain using the [`kAudioFormatProperty_OutputFormatList`](kaudioformatproperty_outputformatlist.md) property.
+The index of the first [`AudioFormatListItem`](https://developer.apple.com/documentation/coreaudiotypes/audioformatlistitem) structure that represents an audio format that is playable on the system. To use this property, pass in, to the [`AudioFormatGetProperty(_:_:_:_:_:)`](audioformatgetproperty(_:_:_:_:_:).md) function, the list of [`AudioFormatListItem`](https://developer.apple.com/documentation/coreaudiotypes/audioformatlistitem) structures that you obtain using the [`kAudioFormatProperty_OutputFormatList`](kaudioformatproperty_outputformatlist.md) property.
 
 ## See Also
 

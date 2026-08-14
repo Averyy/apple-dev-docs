@@ -23,21 +23,21 @@ class MPSCNNCrossChannelNormalization
 
 The normalization kernel applies the kernel to a local region across nearby feature channels, but with no spatial extent (i.e., they have the shape `kernel size x 1 x 1`). The normalized output is given by the function:
 
-![Y(i,j,k) = X(i,j,k) / L(i,j,k)^beta](https://docs-assets.developer.apple.com/published/f66797aefdbb329df3e06f395e9e8132/media-2903526%402x.png)
+![Y(i,j,k) = X(i,j,k) / L(i,j,k)^beta](/images/com.apple.metalperformanceshaders/media-2903526@2x.png)
 
 Where the normalizing factor is:
 
-![L(i,j,k) = delta + alpha/N * (sum_{q in Q(k)} X(i,j,q)^2](https://docs-assets.developer.apple.com/published/bad73469577ab8a5b0bf214cb956e041/media-2903524%402x.png)
+![L(i,j,k) = delta + alpha/N * (sum_{q in Q(k)} X(i,j,q)^2](/images/com.apple.metalperformanceshaders/media-2903524@2x.png)
 
 Where `N` is the kernel size. The window `Q(k)` itself is defined as:
 
-![Q(k) = [max(0, k-floor(N/2)), min(D-1, k+floor((N-1)/2)]](https://docs-assets.developer.apple.com/published/75894c30e3ac24a2ee6081729351aba4/media-2903527%402x.png)
+![Q(k) = [max(0, k-floor(N/2)), min(D-1, k+floor((N-1)/2)]](/images/com.apple.metalperformanceshaders/media-2903527@2x.png)
 
 Where `k` is the feature channel index (running from 0 to `D-1`) and `D` is the number of feature channels, and the values of [`alpha`](mpscnncrosschannelnormalization/alpha.md), [`beta`](mpscnncrosschannelnormalization/beta.md), and [`delta`](mpscnncrosschannelnormalization/delta.md) are set via properties.
 
 It is your responsibility to ensure that the combination of the values of the [`delta`](mpscnncrosschannelnormalization/delta.md) and [`alpha`](mpscnncrosschannelnormalization/alpha.md) properties does not result in a situation where the denominator becomes zero - in such situations the resulting pixel-value is undefined.
 
-> **Note**:  The encoding methods in the [`MPSUnaryImageKernel`](mpsunaryimagekernel.md) class can be used to encode an [`MPSCNNCrossChannelNormalization`](mpscnncrosschannelnormalization.md) object to a [`MTLCommandBuffer`](https://developer.apple.com/documentation/Metal/MTLCommandBuffer) object.
+> **Note**:  The encoding methods in the [`MPSUnaryImageKernel`](mpsunaryimagekernel.md) class can be used to encode an [`MPSCNNCrossChannelNormalization`](mpscnncrosschannelnormalization.md) object to a [`MTLCommandBuffer`](https://developer.apple.com/documentation/metal/mtlcommandbuffer) object.
 
 ## Topics
 
@@ -61,15 +61,15 @@ It is your responsibility to ensure that the combination of the values of the [`
 ### Inherits From
 - [MPSCNNKernel](mpscnnkernel.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCoding](../Foundation/NSCoding.md)
-- [NSCopying](../Foundation/NSCopying.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [NSSecureCoding](../Foundation/NSSecureCoding.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCoding](../foundation/nscoding.md)
+- [NSCopying](../foundation/nscopying.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSSecureCoding](../foundation/nssecurecoding.md)
 
 ## See Also
 

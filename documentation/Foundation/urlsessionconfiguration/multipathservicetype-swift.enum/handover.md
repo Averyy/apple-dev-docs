@@ -19,7 +19,7 @@ case handover
 
 #### Discussion
 
-Specify this option for long-lived or persistent connections. You must also set the [`Multipath Entitlement`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.networking.multipath) in the Xcode Capabilities pane for your app.
+Specify this option for long-lived or persistent connections. You must also set the [`Multipath Entitlement`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.networking.multipath) in the Xcode Capabilities pane for your app.
 
 ## See Also
 

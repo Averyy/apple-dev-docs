@@ -16,11 +16,11 @@ virtual kern_return_t CreateIOBuffer(IOOptionBits options, uint64_t capacity, IO
 
 #### Return Value
 
-[`kIOReturnSuccess`](https://developer.apple.com/documentation/DriverKit/kIOReturnSuccess) on success, or another value if an error occurs. See [`Error Codes`](https://developer.apple.com/documentation/DriverKit/error-codes).
+[`kIOReturnSuccess`](https://developer.apple.com/documentation/driverkit/kioreturnsuccess) on success, or another value if an error occurs. See [`Error Codes`](https://developer.apple.com/documentation/driverkit/error-codes).
 
 #### Discussion
 
-This method allocates an [`IOBufferMemoryDescriptor`](https://developer.apple.com/documentation/DriverKit/IOBufferMemoryDescriptor) optimized for use by the underlying controller hardware. A buffer allocated by this method isn’t bounced to perform DMA operations.
+This method allocates an [`IOBufferMemoryDescriptor`](https://developer.apple.com/documentation/driverkit/iobuffermemorydescriptor) optimized for use by the underlying controller hardware. A buffer allocated by this method isn’t bounced to perform DMA operations.
 
 ## Parameters
 

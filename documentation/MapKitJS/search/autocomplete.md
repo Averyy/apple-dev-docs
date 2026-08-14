@@ -23,7 +23,7 @@ A promise that resolves with a [`SearchAutocompleteResponse`](searchautocomplete
 
 #### Discussion
 
-To provide the user with a menu of search suggestions, invoke the [`autocomplete(query, options)`](search/autocomplete.md) method as users type. This method minimizes typing and brings users the results they’re looking for.
+To provide the user with a menu of search suggestions, invoke the [`autocomplete()`](search/autocomplete.md) method as users type. This method minimizes typing and brings users the results they’re looking for.
 
 Pass an `AbortSignal` from an `AbortController` to the [`signal`](searchoptions/signal.md) option to allow the controller to cancel a pending request. When the controller aborts, the promise it returns rejects with a `DOMException` whose `name` is `"AbortError"`.
 

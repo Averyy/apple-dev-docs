@@ -25,13 +25,13 @@ Once you have prepared a graph of [`MPSNNImageNode`](mpsnnimagenode.md), [`MPSNN
 
 > **Note**:  The [`MPSNNImageNode`](mpsnnimagenode.md) that you choose as the result node may be interior to a graph. This feature is provided as a means to examine intermediate computations in the full graph for debugging purposes.
 
-During [`MPSNNGraph`](mpsnngraph.md) construction, the graph attached to the result node will be parsed and reduced to an optimized representation. This representation may be saved using the [`NSSecureCoding`](https://developer.apple.com/documentation/Foundation/NSSecureCoding) protocol for later recall.
+During [`MPSNNGraph`](mpsnngraph.md) construction, the graph attached to the result node will be parsed and reduced to an optimized representation. This representation may be saved using the [`NSSecureCoding`](https://developer.apple.com/documentation/foundation/nssecurecoding) protocol for later recall.
 
-When decoding a [`MPSNNGraph`](mpsnngraph.md) using a [`NSCoder`](https://developer.apple.com/documentation/Foundation/NSCoder), it will be created against the system default [`MTLDevice`](https://developer.apple.com/documentation/Metal/MTLDevice). If you would like to set the device, your [`NSCoder`](https://developer.apple.com/documentation/Foundation/NSCoder) should conform to the [`MPSDeviceProvider`](mpsdeviceprovider.md) protocol.
+When decoding a [`MPSNNGraph`](mpsnngraph.md) using a [`NSCoder`](https://developer.apple.com/documentation/foundation/nscoder), it will be created against the system default [`MTLDevice`](https://developer.apple.com/documentation/metal/mtldevice). If you would like to set the device, your [`NSCoder`](https://developer.apple.com/documentation/foundation/nscoder) should conform to the [`MPSDeviceProvider`](mpsdeviceprovider.md) protocol.
 
 ##### Debugging Tips
 
-In typical usage, some refinement, especially of padding policies, may be required to get the expected answer from Metal Performance Shaders. If the result image is the wrong size, padding is typically the problem. When the answers are incorrect, the [`offset`](mpscnnkernel/offset.md) or other property may be incorrectly configured at some stage. As the graph is generated starting from an output image node, you may create other graphs starting at any image node within the graph. This will give you a view into the result produced from each intermediate layer with a minimum of fuss. In addition, the usual [`debugDescription()`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class/debugDescription()) method is available to inspect objects to make sure they conform to expectation.
+In typical usage, some refinement, especially of padding policies, may be required to get the expected answer from Metal Performance Shaders. If the result image is the wrong size, padding is typically the problem. When the answers are incorrect, the [`offset`](mpscnnkernel/offset.md) or other property may be incorrectly configured at some stage. As the graph is generated starting from an output image node, you may create other graphs starting at any image node within the graph. This will give you a view into the result produced from each intermediate layer with a minimum of fuss. In addition, the usual [`debugDescription()`](https://developer.apple.com/documentation/objectivec/nsobject-swift.class/debugdescription()) method is available to inspect objects to make sure they conform to expectation.
 
 Note that certain operations such as neuron filters that follow convolution filters and image concatenation may be optimized away by the [`MPSNNGraph`](mpsnngraph.md) when it is constructed. The convolution can do neuron operations as part of its operation. Concatenation is best done by writing the result of earlier filter passes in the right place using [`destinationFeatureChannelOffset`](mpscnnkernel/destinationfeaturechanneloffset.md) rather than by adding an extra copy. Other optimizations may be added as framework capabilities improve.
 
@@ -76,15 +76,15 @@ Note that certain operations such as neuron filters that follow convolution filt
 ### Inherits From
 - [MPSKernel](mpskernel.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCoding](../Foundation/NSCoding.md)
-- [NSCopying](../Foundation/NSCopying.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [NSSecureCoding](../Foundation/NSSecureCoding.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCoding](../foundation/nscoding.md)
+- [NSCopying](../foundation/nscopying.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSSecureCoding](../foundation/nssecurecoding.md)
 
 ## See Also
 

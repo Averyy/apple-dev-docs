@@ -22,7 +22,7 @@ let kCVPixelBufferPoolMaximumBufferAgeKey: CFString
 
 #### Discussion
 
-This value for this key is of type [`CFAbsoluteTime`](https://developer.apple.com/documentation/CoreFoundation/CFAbsoluteTime).
+This value for this key is of type [`CFAbsoluteTime`](https://developer.apple.com/documentation/corefoundation/cfabsolutetime).
 
 ## See Also
 

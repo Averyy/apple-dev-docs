@@ -19,9 +19,11 @@ class OSSet : OSCollection
 
 OSSet is a container for Libkern C++ objects (those derived from OSMetaClassBase, in particular OSObject). Storage and access follow basic set logic: you can add or remove an object, and test whether the set contains a particular object. A given object is only stored in the set once, and there is no ordering of objects in the set. A subclass OSOrderedSet, provides for ordered set logic.
 
-As with all Libkern collection classes, OSSet retains objects added to it, and releases objects removed from it. An OSSet also grows as necessary to accommodate new objects,  Core Foundation collections (it does not, however, shrink).
+As with all Libkern collection classes, OSSet retains objects added to it, and releases objects removed from it. An OSSet also grows as necessary to accommodate new objects, *unlike* Core Foundation collections (it does not, however, shrink).
 
-With very few exceptions in the I/O Kit, all Libkern-based C++ classes, functions, and macros are  to use in a primary interrupt context. Consult the I/O Kit documentation related to primary interrupts for more information.
+**Use Restrictions**
+
+With very few exceptions in the I/O Kit, all Libkern-based C++ classes, functions, and macros are **unsafe** to use in a primary interrupt context. Consult the I/O Kit documentation related to primary interrupts for more information.
 
 OSSet provides no concurrency protection; it's up to the usage context to provide any protection necessary. Some portions of the I/O Kit, such as IORegistryEntry, handle synchronization via defined member functions for setting properties.
 
@@ -92,7 +94,7 @@ OSSet provides no concurrency protection; it's up to the usage context to provid
 - [- getCount](osset/1535182-getcount.md)
 - [- getMetaClass](osset/1535185-getmetaclass.md)
 - [- getNextObjectForIterator](osset/1535167-getnextobjectforiterator.md)
-- [- init](../driverkit/osset/3758352-init.md)
+- [- init](../driverkit/osset/init.md)
 - [- initIterator](osset/1535164-inititerator.md)
 - [- initWithArray](osset/1535174-initwitharray.md)
 - [- initWithCapacity](osset/1535162-initwithcapacity.md)

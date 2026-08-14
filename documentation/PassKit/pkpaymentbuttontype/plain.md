@@ -23,7 +23,7 @@ case plain
 
 This plain button style can have a smaller minimum width than Apple Pay buttons with text. This button looks like:
 
-![A button with the Apple Pay logo.](https://docs-assets.developer.apple.com/published/39cff1de97dce9c4d9ed453857613b69/media-2903828%402x.png)
+![A button with the Apple Pay logo.](/images/com.apple.passkit/media-2903828@2x.png)
 
 For design guidance, see [`Human Interface Guidelines > Apple Pay > Buttons and Marks`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/apple-pay/overview/buttons-and-marks/).
 

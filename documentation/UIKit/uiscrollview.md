@@ -214,19 +214,19 @@ If you assign a value to this view’s [`restorationIdentifier`](uiviewcontrolle
 - [UITableView](uitableview.md)
 - [UITextView](uitextview.md)
 ### Conforms To
-- [CALayerDelegate](../QuartzCore/CALayerDelegate.md)
-- [CLBodyIdentifiable](../CoreLocation/CLBodyIdentifiable.md)
-- [CMBodyIdentifiable](../CoreMotion/CMBodyIdentifiable.md)
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCoding](../Foundation/NSCoding.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [NSTouchBarProvider](../AppKit/NSTouchBarProvider.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [CALayerDelegate](../quartzcore/calayerdelegate.md)
+- [CLBodyIdentifiable](../corelocation/clbodyidentifiable.md)
+- [CMBodyIdentifiable](../coremotion/cmbodyidentifiable.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCoding](../foundation/nscoding.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSTouchBarProvider](../appkit/nstouchbarprovider.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 - [UIAccessibilityIdentification](uiaccessibilityidentification.md)
 - [UIActivityItemsConfigurationProviding](uiactivityitemsconfigurationproviding.md)
 - [UIAppearance](uiappearance.md)
@@ -247,7 +247,7 @@ If you assign a value to this view’s [`restorationIdentifier`](uiviewcontrolle
 
 ## See Also
 
-- [Autosizing views for localization in iOS](../Xcode/autosizing-views-for-localization-in-ios.md)
+- [Autosizing views for localization in iOS](../xcode/autosizing-views-for-localization-in-ios.md)
   Add auto layout constraints to your app to achieve localizable views.
 - [Collection views](collection-views.md)
   Display nested views using a configurable and highly customizable layout.

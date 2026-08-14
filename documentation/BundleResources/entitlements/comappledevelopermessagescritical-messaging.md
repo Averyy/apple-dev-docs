@@ -24,7 +24,7 @@ Add the Critical Messaging entitlement to your app by following these steps:
 2. Add a new capability by clicking the + Capability button and then type “Critical Messaging” in the search field.
 3. Double-click the Critical Messaging entry to add the entitlement to your app.
 
-Xcode displays the Critical Messaging entitlement, along with any other entitlements, in the capabilities list under your app’s signing information. For more information on sending critical SMS messages from your app, see [`Sending SMS messages from an app`](https://developer.apple.com/documentation/Messages/critical-messaging-api).
+Xcode displays the Critical Messaging entitlement, along with any other entitlements, in the capabilities list under your app’s signing information. For more information on sending critical SMS messages from your app, see [`Sending SMS messages from an app`](https://developer.apple.com/documentation/messages/critical-messaging-api).
 
 ## See Also
 

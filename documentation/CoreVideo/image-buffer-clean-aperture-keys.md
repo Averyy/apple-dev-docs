@@ -6,7 +6,7 @@ Keys that describe the clean aperture of an image buffer.
 
 #### Overview
 
-Define these key-value pairs in a [`CFDictionary`](https://developer.apple.com/documentation/CoreFoundation/CFDictionary) instance and use the [`kCVImageBufferCleanApertureKey`](kcvimagebuffercleanaperturekey.md) or [`kCVImageBufferPreferredCleanApertureKey`](kcvimagebufferpreferredcleanaperturekey.md) key to attach it to the image buffer. An image’s clean aperture is a region of video that’s free from transition artifacts caused by the encoding of the signal. This is the region of video to display.
+Define these key-value pairs in a [`CFDictionary`](https://developer.apple.com/documentation/corefoundation/cfdictionary) instance and use the [`kCVImageBufferCleanApertureKey`](kcvimagebuffercleanaperturekey.md) or [`kCVImageBufferPreferredCleanApertureKey`](kcvimagebufferpreferredcleanaperturekey.md) key to attach it to the image buffer. An image’s clean aperture is a region of video that’s free from transition artifacts caused by the encoding of the signal. This is the region of video to display.
 
 ## Topics
 

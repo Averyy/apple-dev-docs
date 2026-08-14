@@ -37,7 +37,7 @@ protocol MTRXPCServerProtocol_MTRDevice : NSObjectProtocol
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 ### Inherited By
 - [MTRXPCServerProtocol](mtrxpcserverprotocol.md)
 

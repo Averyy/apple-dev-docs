@@ -24,7 +24,7 @@ This method sends the [`textView(_:clickedOnLink:at:)`](nstextviewdelegate/textv
 
 ## Parameters
 
-- `link`: The link that was clicked; the value of [`link`](https://developer.apple.com/documentation/Foundation/NSAttributedString/Key/link).
+- `link`: The link that was clicked; the value of [`link`](https://developer.apple.com/documentation/foundation/nsattributedstring/key/link).
 - `charIndex`: The character index where the click occurred, indexed within the text storage.
 
 ## See Also

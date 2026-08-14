@@ -53,9 +53,9 @@ This object can be used to hold a copy of all buffer attachments. The attachment
 ## Relationships
 
 ### Conforms To
-- [Equatable](../Swift/Equatable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Equatable](../swift/equatable.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

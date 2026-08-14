@@ -52,7 +52,7 @@ Don’t implement this protocol yourself; instead, create an [`MTLIndirectComman
 ### Inherits From
 - [MTLAllocation](mtlallocation.md)
 - [MTLResource](mtlresource.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

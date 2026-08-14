@@ -45,7 +45,7 @@ func minimumComponent(inputImage: CIImage) -> CIImage {
 }
 ```
 
-![Two pictures of a pink flower surrounded by foliage. The photo on the left shows a single flower photographed close-up, in focus, with good light and no effects. In the photo on the right, a minimum component filter is applied, transforming the colors in the image to be grayscale with darker contrast.](https://docs-assets.developer.apple.com/published/9713e2cc186aee76d7c002c4e7babf4b/media-3545011%402x.png)
+![Two pictures of a pink flower surrounded by foliage. The photo on the left shows a single flower photographed close-up, in focus, with good light and no effects. In the photo on the right, a minimum component filter is applied, transforming the colors in the image to be grayscale with darker contrast.](/images/com.apple.coreimage/media-3545011@2x.png)
 
 ## See Also
 

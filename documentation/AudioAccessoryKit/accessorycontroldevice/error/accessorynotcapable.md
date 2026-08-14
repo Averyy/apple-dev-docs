@@ -7,7 +7,6 @@ An error indicating the accessory doesn’t support the requested capability.
 
 **Availability**:
 - iOS 26.4+
-- iPadOS 26.4+
 
 ## Declaration
 

@@ -41,8 +41,8 @@ When implementing this protocol in a custom object, you must provide implementat
 ## Relationships
 
 ### Inherits From
-- [NSCoding](../Foundation/NSCoding.md)
-- [NSCopying](../Foundation/NSCopying.md)
+- [NSCoding](../foundation/nscoding.md)
+- [NSCopying](../foundation/nscopying.md)
 ### Conforming Types
 - [UICubicTimingParameters](uicubictimingparameters.md)
 - [UISpringTimingParameters](uispringtimingparameters.md)

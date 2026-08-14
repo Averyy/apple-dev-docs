@@ -23,9 +23,9 @@ A type that applies custom appearance to all tips within a view hierarchy.
 
 #### Overview
 
-To configure the current style for tips in a view hierarchy, use the [`tipViewStyle(_:)`](https://developer.apple.com/documentation/SwiftUI/View/tipViewStyle(_:)) modifier and specify a type that conforms to `TipViewStyle`.
+To configure the current style for tips in a view hierarchy, use the [`tipViewStyle(_:)`](https://developer.apple.com/documentation/swiftui/view/tipviewstyle(_:)) modifier and specify a type that conforms to `TipViewStyle`.
 
-![An image of a tip view with a custom style.](https://docs-assets.developer.apple.com/published/1d23e6a05e6d5bd02044a8ae7f981218/tipviewstyle_headline-style%402x.png)
+![An image of a tip view with a custom style.](/images/com.apple.TipKit/tipviewstyle_headline-style@2x.png)
 
 Customize the layout and style of your tips by creating a custom `TipViewStyle`:
 
@@ -65,7 +65,7 @@ struct HeadlineTipViewStyle: TipViewStyle {
 }
 ```
 
-Use the [`tipViewStyle(_:)`](https://developer.apple.com/documentation/SwiftUI/View/tipViewStyle(_:)) modifier to apply your style to all tips within a view hierarchy:
+Use the [`tipViewStyle(_:)`](https://developer.apple.com/documentation/swiftui/view/tipviewstyle(_:)) modifier to apply your style to all tips within a view hierarchy:
 
 ```swift
 struct AddWorkoutView: View {
@@ -112,7 +112,7 @@ addSubview(addWorkoutTipView)
 ## See Also
 
 - [func tipViewStyle(some TipViewStyle) -> some View
-](../SwiftUI/View/tipViewStyle(_:).md)
+](../swiftui/view/tipviewstyle(_:).md)
   Sets the given style for TipView within the view hierarchy.
 - [struct TipViewStyleConfiguration](tipviewstyleconfiguration.md)
   The container type that holds a tip’s configuration.

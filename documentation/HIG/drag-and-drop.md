@@ -13,7 +13,7 @@ framework: HIG
 
 Using drag and drop, people can move or duplicate selected photos, text, and other content by dragging the selection from one location to another.
 
-![A sketch of two overlapping squares containing an arrow pointing to the upper-left, suggesting a transition to a new destination. The image is overlaid with rectangular and circular grid lines and is tinted orange to subtly reflect the orange in the original six-color Apple logo.](https://docs-assets.developer.apple.com/published/94229416dd895d887b808994f3dd019e/patterns-drag-and-drop-intro~dark%402x.png)
+![A sketch of two overlapping squares containing an arrow pointing to the upper-left, suggesting a transition to a new destination. The image is overlaid with rectangular and circular grid lines and is tinted orange to subtly reflect the orange in the original six-color Apple logo.](/images/com.apple.HIG/patterns-drag-and-drop-intro~dark@2x.png)
 To perform drag and drop, people select content in one location, called the *source*, and drop it in another, called the *destination*. These locations can be in the same container — like a text view — or in different containers, like text views on opposite sides of a split view, or even in different apps.
 Depending on various factors, the drag and drop action might *move* the selected content to the destination or *copy* it. After a successful drop, moved content exists only in the destination; copied content exists in both locations. As a general rule, dropping selected content within the same container moves it, whereas dropping content in a different container copies it. Dragging and dropping content between apps always results in a copy.
 People use different interactions to perform drag and drop depending on platform. For example:
@@ -24,7 +24,7 @@ People use different interactions to perform drag and drop depending on platform
 
 ## Best practices
 **As much as possible, support drag and drop throughout your app.** Most people are familiar with drag and drop and they often try it everywhere. When you use system-provided components — such as text fields and text views — you get built-in support for drag and drop.
-**Offer alternative ways to accomplish drag-and-drop actions.** Sometimes, drag-and-drop operations are inconvenient or impossible for people to perform, so it’s important to provide other ways to do the same things. For example, you can include menu commands that people can use to copy an item and move it to another location. In iOS and iPadOS, you can use accessibility APIs to identify sources and destinations so that people can use assistive technologies to drag and drop in your app (for developer guidance, see [accessibilityDragSourceDescriptors](../ObjectiveC/NSObject-swift.class/accessibilityDragSourceDescriptors.md) and [accessibilityDropPointDescriptors](../ObjectiveC/NSObject-swift.class/accessibilityDropPointDescriptors.md)).
+**Offer alternative ways to accomplish drag-and-drop actions.** Sometimes, drag-and-drop operations are inconvenient or impossible for people to perform, so it’s important to provide other ways to do the same things. For example, you can include menu commands that people can use to copy an item and move it to another location. In iOS and iPadOS, you can use accessibility APIs to identify sources and destinations so that people can use assistive technologies to drag and drop in your app (for developer guidance, see [accessibilityDragSourceDescriptors](../objectivec/nsobject-swift.class/accessibilitydragsourcedescriptors.md) and [accessibilityDropPointDescriptors](../objectivec/nsobject-swift.class/accessibilitydroppointdescriptors.md)).
 **Determine when dragging and dropping content within your app results in a move or a copy.** In general, a move makes sense when the source and destination containers are the same — such as dragging text from one location to another within a document — and a copy makes sense when they’re different, like dragging an image from one document to another. Before you change these defaults, consider the behavior that most people expect and prefer the one that is least likely to result in frustration or data loss.
 **Support multi-item drag and drop when it makes sense.** People appreciate the convenience of dragging a group of items to a destination, instead of dragging each item separately. In iOS, iPadOS, macOS, and visionOS, people can select multiple items and drag them as a group; macOS also lets people select multiple items from several apps and drag them as a group. In iPadOS, people can select an item, start dragging it, and add other items to the group without stopping the drag operation.
 **Prefer letting people undo a drag-and-drop operation.** Sometimes, people inadvertently drop content in the wrong destination, so they appreciate being able to undo the action and return to their previous state. You might also be able to help people avoid mistakes by asking for confirmation before completing a drag-and-drop operation that can’t be undone. In macOS, for example, the Finder asks for confirmation when people drag a file into a write-only folder because they won’t be able to open the folder and remove the dropped item. In some situations, it might make sense to provide a way to reverse the results of drag and drop when people can’t undo it. For example, Photos lets people cancel photo sharing after dropping a photo into a shared photo stream.
@@ -63,9 +63,9 @@ Drag and drop is a dynamic process that can result in multiple outcomes. To help
 **As much as possible, let people select and drag content with a single motion.** Unless people are selecting multiple items, they appreciate it when they don’t have to pause between making a selection and starting the drag operation.
 
 ### visionOS
-**When possible, launch your app to handle content that people drop into empty space.** When you associate a user activity with draggable app content, your app can open a window or scene that handles the content when people drop it. For example, when people drop a URL into empty space, it launches Safari; when people drop Quick Look–supported content, Quick Look launches to display it. For developer guidance, see [NSUserActivity](../Foundation/NSUserActivity.md).
+**When possible, launch your app to handle content that people drop into empty space.** When you associate a user activity with draggable app content, your app can open a window or scene that handles the content when people drop it. For example, when people drop a URL into empty space, it launches Safari; when people drop Quick Look–supported content, Quick Look launches to display it. For developer guidance, see [NSUserActivity](../foundation/nsuseractivity.md).
 
-[Video: drag-and-drop-volume-file.mp4](https://docs-assets.developer.apple.com/published/9d71bf63ac1a598553c00099113d9dca/drag-and-drop-volume-file.mp4)
+[Video: drag-and-drop-volume-file.mp4](/videos/com.apple.HIG/drag-and-drop-volume-file.mp4)
 
 ## Resources
 
@@ -73,9 +73,9 @@ Drag and drop is a dynamic process that can result in multiple outcomes. To help
 [Universal Control](https://support.apple.com/en-us/HT212757)
 
 #### Developer documentation
-[Drag and drop](../UIKit/drag-and-drop.md) — UIKit
-[Drag and Drop](../AppKit/drag-and-drop.md) — AppKit
-[File Provider](../FileProvider.md)
+[Drag and drop](../uikit/drag-and-drop.md) — UIKit
+[Drag and Drop](../appkit/drag-and-drop.md) — AppKit
+[File Provider](../fileprovider.md)
 
 #### Videos
 - [What's new in UIKit](https://developer.apple.com/videos/play/wwdc2021/10059) - Discover the latest updates and improvements to UIKit and learn how to build better iPadOS, iOS, and Mac Catalyst apps. We’ll take you through UI refinements, productivity updates, and API enhancements, and help you explore performance improvements and security & privacy features.

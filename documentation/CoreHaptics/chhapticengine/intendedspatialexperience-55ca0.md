@@ -3,7 +3,7 @@
 **Framework**: Core Haptics  
 **Kind**: property
 
-The CHHapticEngine’s intended [`SpatialAudioExperience`](https://developer.apple.com/documentation/AudioToolbox/SpatialAudioExperience).
+The CHHapticEngine’s intended [`SpatialAudioExperience`](https://developer.apple.com/documentation/audiotoolbox/spatialaudioexperience).
 
 **Availability**:
 - visionOS 26.0+
@@ -18,7 +18,7 @@ var intendedSpatialExperience: any SpatialAudioExperience { get set }
 
 Only useful for engines that have audio output.
 
-If unspecified, the property value defaults to [`AutomaticSpatialAudio`](https://developer.apple.com/documentation/AudioToolbox/AutomaticSpatialAudio).
+If unspecified, the property value defaults to [`AutomaticSpatialAudio`](https://developer.apple.com/documentation/audiotoolbox/automaticspatialaudio).
 
 
 ---

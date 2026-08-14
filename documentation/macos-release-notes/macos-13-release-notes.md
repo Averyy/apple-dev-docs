@@ -6,7 +6,7 @@ Update your apps to use new features, and test your apps against API changes.
 
 #### Overview
 
-The macOS 13 SDK provides support to develop apps for Mac computers running macOS Ventura 13. The SDK comes bundled with Xcode 14.1 RC, available from [`Beta Software Downloads`](https://developer.apple.comhttps://developer.apple.com/download/). For information on the compatibility requirements for Xcode 14.1, see [`Xcode 14.1 Release Notes`](https://developer.apple.com/documentation/Xcode-Release-Notes/xcode-14_1-release-notes).
+The macOS 13 SDK provides support to develop apps for Mac computers running macOS Ventura 13. The SDK comes bundled with Xcode 14.1 RC, available from [`Beta Software Downloads`](https://developer.apple.comhttps://developer.apple.com/download/). For information on the compatibility requirements for Xcode 14.1, see [`Xcode 14.1 Release Notes`](https://developer.apple.com/documentation/xcode-release-notes/xcode-14_1-release-notes).
 
 ##### General
 
@@ -72,7 +72,7 @@ The macOS 13 SDK provides support to develop apps for Mac computers running macO
 
 ###### Known Issues
 
-- The `MTLResource.gpuHandle` is deprecated. (92862429) **Workaround:** Use [`gpuResourceID`](https://developer.apple.com/documentation/Metal/MTLAccelerationStructure/gpuResourceID) instead, which functions as a replacement.
+- The `MTLResource.gpuHandle` is deprecated. (92862429) **Workaround:** Use [`gpuResourceID`](https://developer.apple.com/documentation/metal/mtlaccelerationstructure/gpuresourceid) instead, which functions as a replacement.
 
 ##### Metal Offline Compiler
 
@@ -96,21 +96,21 @@ The macOS 13 SDK provides support to develop apps for Mac computers running macO
 
 ###### New Features
 
-- All [`StoreKit`](https://developer.apple.com/documentation/StoreKit) APIs are now annotated for sendability and main actor isolation. (84157048)
+- All [`StoreKit`](https://developer.apple.com/documentation/storekit) APIs are now annotated for sendability and main actor isolation. (84157048)
 
 - `Product` has new properties for localizing prices and subscription periods. For iOS 15, iPadOS 15, macOS 12, tvOS 15, and watchOS 8 or later use `priceFormatStyle` to format numbers derived from `price`. Use `subscriptionPeriodFormatStyle` to format durations of time relating to a subscription period. On iOS 16, iPadOS 16, macOS 13, tvOS 16, and watchOS 9 or later use `subscriptionPeriodUnitFormatStyle` to format single units of a subscription period. (93780442)
 
-- A property environment is included in [`Product.SubscriptionInfo.RenewalInfo`](https://developer.apple.com/documentation/StoreKit/Product/SubscriptionInfo/RenewalInfo) and [`Transaction`](https://developer.apple.com/documentation/StoreKit/Transaction). It represents the server environment in which the `RenewalInfo` and `Transaction` occurred, respectively. (85988753)
+- A property environment is included in [`Product.SubscriptionInfo.RenewalInfo`](https://developer.apple.com/documentation/storekit/product/subscriptioninfo/renewalinfo) and [`Transaction`](https://developer.apple.com/documentation/storekit/transaction). It represents the server environment in which the `RenewalInfo` and `Transaction` occurred, respectively. (85988753)
 
-- [`AppTransaction`](https://developer.apple.com/documentation/StoreKit/AppTransaction) allows developers to cryptographically verify that the app was purchased on the App Store. (86739279)
+- [`AppTransaction`](https://developer.apple.com/documentation/storekit/apptransaction) allows developers to cryptographically verify that the app was purchased on the App Store. (86739279)
 
-- The `recentSubscriptionStartDate` property is included in [`Product.SubscriptionInfo.RenewalInfo`](https://developer.apple.com/documentation/StoreKit/Product/SubscriptionInfo/RenewalInfo). It represents the date that marks the start of the most recent period of continuous subscription. A period is considered a continuous subscription if there’s no more than a 60-day gap between any two subscribed periods. (86599570)
+- The `recentSubscriptionStartDate` property is included in [`Product.SubscriptionInfo.RenewalInfo`](https://developer.apple.com/documentation/storekit/product/subscriptioninfo/renewalinfo). It represents the date that marks the start of the most recent period of continuous subscription. A period is considered a continuous subscription if there’s no more than a 60-day gap between any two subscribed periods. (86599570)
 
-- Present the offer code redemption sheet with the [`offerCodeRedemption(isPresented:onCompletion:)`](https://developer.apple.com/documentation/SwiftUI/View/offerCodeRedemption(isPresented:onCompletion:)) view modifier in your SwiftUI apps. (85321941)
+- Present the offer code redemption sheet with the [`offerCodeRedemption(isPresented:onCompletion:)`](https://developer.apple.com/documentation/swiftui/view/offercoderedemption(ispresented:oncompletion:)) view modifier in your SwiftUI apps. (85321941)
 
 - The StoreKit Messages API allows you to control when App Store messages are displayed in your app. (85321880)
 
-- Read the [`requestReview`](https://developer.apple.com/documentation/SwiftUI/EnvironmentValues/requestReview) environment value to get an instance of a [`RequestReviewAction`](https://developer.apple.com/documentation/StoreKit/RequestReviewAction). Then, call this instance to request to display a review prompt from your SwiftUI apps. (86739003)
+- Read the [`requestReview`](https://developer.apple.com/documentation/swiftui/environmentvalues/requestreview) environment value to get an instance of a [`RequestReviewAction`](https://developer.apple.com/documentation/storekit/requestreviewaction). Then, call this instance to request to display a review prompt from your SwiftUI apps. (86739003)
 
 ###### Deprecations
 
@@ -128,11 +128,11 @@ The macOS 13 SDK provides support to develop apps for Mac computers running macO
 
 - Custom types conforming to `ToolbarContent` now support dynamic properties like `@Environment`. (94117842)
 
-- You can now place a [`TextField`](https://developer.apple.com/documentation/SwiftUI/TextField) in an [`Alert`](https://developer.apple.com/documentation/SwiftUI/Alert) by using `alert` modifiers that accept a [`ViewBuilder`](https://developer.apple.com/documentation/SwiftUI/ViewBuilder). (64819930)
+- You can now place a [`TextField`](https://developer.apple.com/documentation/swiftui/textfield) in an [`Alert`](https://developer.apple.com/documentation/swiftui/alert) by using `alert` modifiers that accept a [`ViewBuilder`](https://developer.apple.com/documentation/swiftui/viewbuilder). (64819930)
 
-- For `control`, [`Section`](https://developer.apple.com/documentation/SwiftUI/Section), or other views that have a [`Label`](https://developer.apple.com/documentation/SwiftUI/Label), the [`ViewBuilder`](https://developer.apple.com/documentation/SwiftUI/ViewBuilder) content now automatically arranges and styles multiple views as hierarchical elements, such as `title` and `subtitle`. If the `label` views are intended to be arranged horizontally rather than hierarchically, wrap the views within an [`HStack`](https://developer.apple.com/documentation/SwiftUI/HStack). (85184563)
+- For `control`, [`Section`](https://developer.apple.com/documentation/swiftui/section), or other views that have a [`Label`](https://developer.apple.com/documentation/swiftui/label), the [`ViewBuilder`](https://developer.apple.com/documentation/swiftui/viewbuilder) content now automatically arranges and styles multiple views as hierarchical elements, such as `title` and `subtitle`. If the `label` views are intended to be arranged horizontally rather than hierarchically, wrap the views within an [`HStack`](https://developer.apple.com/documentation/swiftui/hstack). (85184563)
 
-- A `TextField` supports multiline text. Use a [`Axis.vertical`](https://developer.apple.com/documentation/SwiftUI/Axis/vertical) axis on a text field to allow rendering of multiple lines in contexts like forms, where text is expected to be short to medium length. For long-form text editing, continue to use a [`TextEditor`](https://developer.apple.com/documentation/SwiftUI/TextEditor). (51463718)
+- A `TextField` supports multiline text. Use a [`Axis.vertical`](https://developer.apple.com/documentation/swiftui/axis/vertical) axis on a text field to allow rendering of multiple lines in contexts like forms, where text is expected to be short to medium length. For long-form text editing, continue to use a [`TextEditor`](https://developer.apple.com/documentation/swiftui/texteditor). (51463718)
 
 - A `list` supports Section footers. (78462739)
 - When presenting a `sheet` or `window`, SwiftUI now uses focus state bindings to determine where focus should be placed by default. Clients can specify a custom binding assignment using the new  `View.defaultFocus(_:_:)` modifier. (81837128)

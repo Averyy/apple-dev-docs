@@ -18,7 +18,7 @@ Initializes a browser engine audio session.
 
 #### Discussion
 
-[`BEAudioSession`](beaudiosession-7bb2q.md) wraps the specified [`AVFoundation`](https://developer.apple.com/documentation/AVFoundation) audio session.
+[`BEAudioSession`](beaudiosession-7bb2q.md) wraps the specified [`AVFoundation`](https://developer.apple.com/documentation/avfoundation) audio session.
 
 
 ---

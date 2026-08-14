@@ -37,7 +37,7 @@ The delegate for a media item picker can respond to a user making media item sel
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

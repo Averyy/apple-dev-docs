@@ -12,23 +12,23 @@ Render stereoscopic video in visionOS with RealityKit.
 
 visionOS offers a range of options for programmatic video playback, including:
 
-- [`AVKit`](https://developer.apple.com/documentation/AVKit) provides a superior video playback experience in visionOS. With AVKit, you can present an interface that’s consistent with other apps on the system, with minimal adoption effort. For more information on using AVKit in visionOS, see [`Adopting the system player interface in visionOS`](https://developer.apple.com/documentation/AVKit/adopting-the-system-player-interface-in-visionos).
+- [`AVKit`](https://developer.apple.com/documentation/avkit) provides a superior video playback experience in visionOS. With AVKit, you can present an interface that’s consistent with other apps on the system, with minimal adoption effort. For more information on using AVKit in visionOS, see [`Adopting the system player interface in visionOS`](https://developer.apple.com/documentation/avkit/adopting-the-system-player-interface-in-visionos).
 - [`RealityKit`](RealityKit.md) offer a greater degree of customization, using either [`VideoMaterial`](videomaterial.md) or [`VideoPlayerComponent`](videoplayercomponent.md).
 
 `VideoMaterial` and `VideoPlayerComponent` offer two distinct options for controlling playback.
 
-- [`AVPlayer`](https://developer.apple.com/documentation/AVFoundation/AVPlayer) is a versatile system component, appropriate for controlling both playback and timing of a media asset.
-- [`AVSampleBufferVideoRenderer`](https://developer.apple.com/documentation/AVFoundation/AVSampleBufferVideoRenderer) enables greater customization — it requires that you programmatically enqueue individual video-sample buffers for rendering. You can also use an `AVSampleBufferAudioRenderer` instance with a [`AVSampleBufferRenderSynchronizer`](https://developer.apple.com/documentation/AVFoundation/AVSampleBufferRenderSynchronizer), which affords I/O control, supports preprocessing of media data, and accommodates DRM models not supported by `AVPlayer`. An `AVSampleBufferRenderSynchronizer` can optionally synchronize audio with an [`AVSampleBufferAudioRenderer`](https://developer.apple.com/documentation/AVFoundation/AVSampleBufferAudioRenderer).
+- [`AVPlayer`](https://developer.apple.com/documentation/avfoundation/avplayer) is a versatile system component, appropriate for controlling both playback and timing of a media asset.
+- [`AVSampleBufferVideoRenderer`](https://developer.apple.com/documentation/avfoundation/avsamplebuffervideorenderer) enables greater customization — it requires that you programmatically enqueue individual video-sample buffers for rendering. You can also use an `AVSampleBufferAudioRenderer` instance with a [`AVSampleBufferRenderSynchronizer`](https://developer.apple.com/documentation/avfoundation/avsamplebufferrendersynchronizer), which affords I/O control, supports preprocessing of media data, and accommodates DRM models not supported by `AVPlayer`. An `AVSampleBufferRenderSynchronizer` can optionally synchronize audio with an [`AVSampleBufferAudioRenderer`](https://developer.apple.com/documentation/avfoundation/avsamplebufferaudiorenderer).
 
 This sample app uses an `AVSampleBufferVideoRenderer` and a `VideoPlayerComponent` to render stereoscopic video in the *Shared Space*. Its content is a *side-by-side* video, which places the left- and right-eye images next to each other as part of a single video frame. Because the duration of the video is brief, a looping mechanism supports continuous playback.
 
-![A screenshot of a visionOS window displaying a video of a hummingbird flying in front of flowers.](https://docs-assets.developer.apple.com/published/ba6819ffde514eccc6e9ddb3470a547b/render-stereoscopic-video-with-realitykit-1%402x.png)
+![A screenshot of a visionOS window displaying a video of a hummingbird flying in front of flowers.](/images/com.apple.RealityKit/render-stereoscopic-video-with-realitykit-1@2x.png)
 
-> **Note**: By default, 3D video in visionOS uses the Multiview High Efficiency Video Encoding (MV-HEVC) format, supported by MPEG4 and QuickTime. For information about converting a file like the one in this sample to MV-HEVC, see [`Converting side-by-side 3D video to multiview HEVC and spatial video`](https://developer.apple.com/documentation/AVFoundation/converting-side-by-side-3d-video-to-multiview-hevc-and-spatial-video).
+> **Note**: By default, 3D video in visionOS uses the Multiview High Efficiency Video Encoding (MV-HEVC) format, supported by MPEG4 and QuickTime. For information about converting a file like the one in this sample to MV-HEVC, see [`Converting side-by-side 3D video to multiview HEVC and spatial video`](https://developer.apple.com/documentation/avfoundation/converting-side-by-side-3d-video-to-multiview-hevc-and-spatial-video).
 
 #### Structure the App
 
-The structure of the app is simple. `PlayerModel` is an [`Observable`](https://developer.apple.com/documentation/Observation/Observable) custom type that’s injected into the SwiftUI [`Environment`](https://developer.apple.com/documentation/SwiftUI/Environment) for visibility to the root `ContentView`. This model includes a property of type `PlayerState`, which is a Swift enumeration that reflects the current player state. It also includes an instance of type `LoopingVideoPlayer`, which exposes the underlying `AVSampleBufferVideoRenderer`.
+The structure of the app is simple. `PlayerModel` is an [`Observable`](https://developer.apple.com/documentation/observation/observable) custom type that’s injected into the SwiftUI [`Environment`](https://developer.apple.com/documentation/swiftui/environment) for visibility to the root `ContentView`. This model includes a property of type `PlayerState`, which is a Swift enumeration that reflects the current player state. It also includes an instance of type `LoopingVideoPlayer`, which exposes the underlying `AVSampleBufferVideoRenderer`.
 
 ```swift
 /// The main app structure.
@@ -53,9 +53,9 @@ struct RealityKitPlaybackApp: App {
 
 For simplicity, the following modifiers are applied to create a window with fixed size, 16x9 aspect ratio, and absent background glass:
 
-- [`frame(width:height:alignment:)`](https://developer.apple.com/documentation/SwiftUI/View/frame(width:height:alignment:))
-- [`windowResizability(_:)`](https://developer.apple.com/documentation/SwiftUI/Scene/windowResizability(_:))
-- [`windowStyle(_:)`](https://developer.apple.com/documentation/SwiftUI/Scene/windowStyle(_:))
+- [`frame(width:height:alignment:)`](https://developer.apple.com/documentation/swiftui/view/frame(width:height:alignment:))
+- [`windowResizability(_:)`](https://developer.apple.com/documentation/swiftui/scene/windowresizability(_:))
+- [`windowStyle(_:)`](https://developer.apple.com/documentation/swiftui/scene/windowstyle(_:))
 
 #### Create an Entity to Render Video Content
 
@@ -91,8 +91,8 @@ RealityView { content in
 
 Finally, the sample applies these modifiers to initialize the player, and to begin and end playback:
 
-- [`onChange(of:initial:_:)`](https://developer.apple.com/documentation/SwiftUI/View/onChange(of:initial:_:))
-- [`task(name:priority:file:line:_:)`](https://developer.apple.com/documentation/SwiftUI/View/task(name:priority:file:line:_:))
+- [`onChange(of:initial:_:)`](https://developer.apple.com/documentation/swiftui/view/onchange(of:initial:_:))
+- [`task(name:priority:file:line:_:)`](https://developer.apple.com/documentation/swiftui/view/task(name:priority:file:line:_:))
 
 ```swift
 // Begin playback when ready.
@@ -127,7 +127,7 @@ private let synchronizer = AVSampleBufferRenderSynchronizer()
 let videoRenderer = AVSampleBufferVideoRenderer()
 ```
 
-When the system creates the player, it adds the renderer to the synchronizer, and initializes an [`AVURLAsset`](https://developer.apple.com/documentation/AVFoundation/AVURLAsset) with a URL to the underlying video:
+When the system creates the player, it adds the renderer to the synchronizer, and initializes an [`AVURLAsset`](https://developer.apple.com/documentation/avfoundation/avurlasset) with a URL to the underlying video:
 
 ```swift
 /// Initializes a player with the specified asset URL.
@@ -138,7 +138,7 @@ init(assetURL: URL) {
 }
 ```
 
-To prepare for playback, the processor loads the asset duration asynchronously with [`AVAsynchronousKeyValueLoading`](https://developer.apple.com/documentation/AVFoundation/AVAsynchronousKeyValueLoading). The sample uses duration to trigger looping at the end of each playback cycle with [`addBoundaryTimeObserver(forTimes:queue:using:)`](https://developer.apple.com/documentation/AVFoundation/AVSampleBufferRenderSynchronizer/addBoundaryTimeObserver(forTimes:queue:using:)). The sample initializes the first serial processor with the video renderer and asset:
+To prepare for playback, the processor loads the asset duration asynchronously with [`AVAsynchronousKeyValueLoading`](https://developer.apple.com/documentation/avfoundation/avasynchronouskeyvalueloading). The sample uses duration to trigger looping at the end of each playback cycle with [`addBoundaryTimeObserver(forTimes:queue:using:)`](https://developer.apple.com/documentation/avfoundation/avsamplebufferrendersynchronizer/addboundarytimeobserver(fortimes:queue:using:)). The sample initializes the first serial processor with the video renderer and asset:
 
 ```swift
 /// Begin loading the player.
@@ -172,7 +172,7 @@ func play() {
 }
 ```
 
-The app starts the loop by dequeueing a serial processor instance. It specifies the time and rate of the render synchronizer with [`setRate(_:time:)`](https://developer.apple.com/documentation/AVFoundation/AVSampleBufferRenderSynchronizer/setRate(_:time:)). It then enqueues the next serial processor instance and increments the loop count:
+The app starts the loop by dequeueing a serial processor instance. It specifies the time and rate of the render synchronizer with [`setRate(_:time:)`](https://developer.apple.com/documentation/avfoundation/avsamplebufferrendersynchronizer/setrate(_:time:)). It then enqueues the next serial processor instance and increments the loop count:
 
 ```swift
 /// Executes a logical playback loop.
@@ -219,7 +219,7 @@ Each `SerialProcessor` traverses the video track from start to finish, extractin
 
 With side-by-side input, the sample places left- and right-eye images next to each other as part of a single frame. The sample splits the frame into separate images, copies them to distinct left- and right-eye layers, and writes them as a multi-layer frame.
 
-The processor begins when the sample calls [`loadTracks(withMediaCharacteristic:completionHandler:)`](https://developer.apple.com/documentation/AVFoundation/AVAsset/loadTracks(withMediaCharacteristic:completionHandler:)) to load video tracks, and then selects the first available track as the side-by-side input.
+The processor begins when the sample calls [`loadTracks(withMediaCharacteristic:completionHandler:)`](https://developer.apple.com/documentation/avfoundation/avasset/loadtracks(withmediacharacteristic:completionhandler:)) to load video tracks, and then selects the first available track as the side-by-side input.
 
 ```swift
 // Load the asset.
@@ -235,7 +235,7 @@ The processor also loads the natural size of the side-by-side video for later us
 let videoFrameSize = try await videoTrack.load(.naturalSize)
 ```
 
-The processor specifies [`IOSurface`](https://developer.apple.com/documentation/IOSurface) settings in its `readerSettings` dictionary. Because the sample manages its own pixel buffer allocations, it uses an empty array as the value corresponding to the [`kCVPixelBufferIOSurfacePropertiesKey`](https://developer.apple.com/documentation/CoreVideo/kCVPixelBufferIOSurfacePropertiesKey) key. These settings create an [`AVAssetReaderTrackOutput`](https://developer.apple.com/documentation/AVFoundation/AVAssetReaderTrackOutput). To finish loading the video, the sample obtains an output provider from the [`AVAssetReader`](https://developer.apple.com/documentation/AVFoundation/AVAssetReader), and starts reading.
+The processor specifies [`IOSurface`](https://developer.apple.com/documentation/iosurface) settings in its `readerSettings` dictionary. Because the sample manages its own pixel buffer allocations, it uses an empty array as the value corresponding to the [`kCVPixelBufferIOSurfacePropertiesKey`](https://developer.apple.com/documentation/corevideo/kcvpixelbufferiosurfacepropertieskey) key. These settings create an [`AVAssetReaderTrackOutput`](https://developer.apple.com/documentation/avfoundation/avassetreadertrackoutput). To finish loading the video, the sample obtains an output provider from the [`AVAssetReader`](https://developer.apple.com/documentation/avfoundation/avassetreader), and starts reading.
 
 ```swift
 // Setup the asset reader.
@@ -250,7 +250,7 @@ try assetReader.start()
 
 #### Create the Video Frame Transfer Session and Output Pixel Buffer Pool
 
-To prepare for processing the video input, the sample creates a [`VTPixelTransferSession`](https://developer.apple.com/documentation/VideoToolbox/VTPixelTransferSession) to read raw [`CVPixelBuffer`](https://developer.apple.com/documentation/CoreVideo/cvpixelbuffer-q2e) input and write processed `CVPixelBuffers` as output.
+To prepare for processing the video input, the sample creates a [`VTPixelTransferSession`](https://developer.apple.com/documentation/videotoolbox/vtpixeltransfersession) to read raw [`CVPixelBuffer`](https://developer.apple.com/documentation/corevideo/cvpixelbuffer-q2e) input and write processed `CVPixelBuffers` as output.
 
 ```swift
 // Setup the pixel transfer session.
@@ -265,7 +265,7 @@ guard sessionResult == kCVReturnSuccess, let transferSession else {
 VTSessionSetProperty(transferSession, key: kVTPixelTransferPropertyKey_ScalingMode, value: kVTScalingMode_CropSourceToCleanAperture)
 ```
 
-For efficiency, the sample creates a [`CVMutablePixelBuffer.Pool`](https://developer.apple.com/documentation/CoreVideo/CVMutablePixelBuffer/Pool) to allocate pixel buffers for the processed multi-layer output. It creates a pool with attributes that include the pixel format type and size of the eye frame. The sample derives the eye frame size from the natural video size, previously loaded. It then merges these specified attributes with [`recommendedPixelBufferAttributes`](https://developer.apple.com/documentation/AVFoundation/AVSampleBufferVideoRenderer/recommendedPixelBufferAttributes-6zrqb).
+For efficiency, the sample creates a [`CVMutablePixelBuffer.Pool`](https://developer.apple.com/documentation/corevideo/cvmutablepixelbuffer/pool) to allocate pixel buffers for the processed multi-layer output. It creates a pool with attributes that include the pixel format type and size of the eye frame. The sample derives the eye frame size from the natural video size, previously loaded. It then merges these specified attributes with [`recommendedPixelBufferAttributes`](https://developer.apple.com/documentation/avfoundation/avsamplebuffervideorenderer/recommendedpixelbufferattributes-6zrqb).
 
 ```swift
 // Setup the pixel buffer pool.
@@ -288,7 +288,7 @@ else {
 
 #### Process Input As It Becomes Available
 
-To begin processing, the processor waits for the video renderer to indicate that it is ready to begin rendering. The private `untilReadyForMoreMediaData()` function achieves this with a call to [`requestMediaDataWhenReady(on:using:)`](https://developer.apple.com/documentation/AVFoundation/AVQueuedSampleBufferRendering/requestMediaDataWhenReady(on:using:)). As the sample reads the asset, the `videoTrackOutputProvider` supplies a stream of sample buffers for processing. As the sample receives these sample buffers, the processor calls `transform(from:with:in:)` to convert the side-by-side frame input into stereo-encoded output. The sample then enqueues the stereo-encoded frames to the video renderer. Processing concludes once the stream of sample buffers is exhausted.
+To begin processing, the processor waits for the video renderer to indicate that it is ready to begin rendering. The private `untilReadyForMoreMediaData()` function achieves this with a call to [`requestMediaDataWhenReady(on:using:)`](https://developer.apple.com/documentation/avfoundation/avqueuedsamplebufferrendering/requestmediadatawhenready(on:using:)). As the sample reads the asset, the `videoTrackOutputProvider` supplies a stream of sample buffers for processing. As the sample receives these sample buffers, the processor calls `transform(from:with:in:)` to convert the side-by-side frame input into stereo-encoded output. The sample then enqueues the stereo-encoded frames to the video renderer. Processing concludes once the stream of sample buffers is exhausted.
 
 ```swift
 // Explicitly tear down resources when processing concludes.
@@ -350,7 +350,7 @@ pixelBuffer.withUnsafeBuffer { cvPixelBuffer in
 }
 ```
 
-The sample creates the individual left and right pixel buffers, adorns them with [`CMTag`](https://developer.apple.com/documentation/CoreMedia/CMTag-swift.class) metadata, and stores them as [`CMTaggedDynamicBuffer`](https://developer.apple.com/documentation/CoreMedia/CMTaggedDynamicBuffer) pairs.
+The sample creates the individual left and right pixel buffers, adorns them with [`CMTag`](https://developer.apple.com/documentation/coremedia/cmtag-swift.class) metadata, and stores them as [`CMTaggedDynamicBuffer`](https://developer.apple.com/documentation/coremedia/cmtaggeddynamicbuffer) pairs.
 
 ```swift
 // Create and append a tagged buffer for this eye.
@@ -371,7 +371,7 @@ let buffer = CMReadySampleBuffer(
 
 ## See Also
 
-- [Destination Video](../visionOS/destination-video.md)
+- [Destination Video](../visionos/destination-video.md)
   Leverage SwiftUI to build an immersive media experience in a multiplatform app.
 - [Docking a video player in an immersive scene](docking-a-video-player-in-an-immersive-scene.md)
   Secure a video player in an immersive scene with a docking region you can specify.

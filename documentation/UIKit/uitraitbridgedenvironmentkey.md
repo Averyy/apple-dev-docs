@@ -25,7 +25,7 @@ protocol UITraitBridgedEnvironmentKey : EnvironmentKey
 ## Relationships
 
 ### Inherits From
-- [EnvironmentKey](../SwiftUI/EnvironmentKey.md)
+- [EnvironmentKey](../swiftui/environmentkey.md)
 
 
 ---

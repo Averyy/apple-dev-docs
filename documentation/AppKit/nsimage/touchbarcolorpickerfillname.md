@@ -19,7 +19,7 @@ class let touchBarColorPickerFillName: String
 
 #### Discussion
 
-![Template image for color picker for fill](https://docs-assets.developer.apple.com/published/bf718bc7bc9b5ce8de541c3bca68163a/media-2793541%402x.png)
+![Template image for color picker for fill](/images/com.apple.appkit/media-2793541@2x.png)
 
 Touch Bar template images are exclusively for use in [`NSTouchBarItem`](nstouchbaritem.md) objects and not in onscreen windows.
 

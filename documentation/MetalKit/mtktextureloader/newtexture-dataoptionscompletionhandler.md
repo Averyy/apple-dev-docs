@@ -23,11 +23,11 @@ func newTexture(data: Data, options: [MTKTextureLoader.Option : Any]? = nil) asy
 
 > ❗ **Important**:  You can call this method from synchronous code using a completion handler, as shown on this page, or you can call it as an asynchronous method that has the following declaration: ```swift
 func newTexture(data: Data, options: [MTKTextureLoader.Option : Any]? = nil) async throws -> MTLTexture
-``` For information about concurrency and asynchronous code in Swift, see [`Calling Objective-C APIs Asynchronously`](https://developer.apple.com/documentation/Swift/calling-objective-c-apis-asynchronously).
+``` For information about concurrency and asynchronous code in Swift, see [`Calling Objective-C APIs Asynchronously`](https://developer.apple.com/documentation/swift/calling-objective-c-apis-asynchronously).
 
 ## Parameters
 
-- `data`: The [`NSData`](https://developer.apple.com/documentation/Foundation/NSData) object containing image data.
+- `data`: The [`NSData`](https://developer.apple.com/documentation/foundation/nsdata) object containing image data.
 - `options`: A dictionary describing any additional texture loading steps. See `Texture Loading Options`.
 - `completionHandler`: A block called when the texture has been loaded and fully initialized.
 

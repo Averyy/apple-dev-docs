@@ -22,7 +22,7 @@ case `in`
 
 #### Discussion
 
-For strings, returns [`true`](https://developer.apple.com/documentation/Swift/true) if the left hand side is a substring of the right hand side . For collections, returns [`true`](https://developer.apple.com/documentation/Swift/true) if the left hand side is in the right hand side .
+For strings, returns [`true`](https://developer.apple.com/documentation/swift/true) if the left hand side is a substring of the right hand side . For collections, returns [`true`](https://developer.apple.com/documentation/swift/true) if the left hand side is in the right hand side .
 
 ## See Also
 

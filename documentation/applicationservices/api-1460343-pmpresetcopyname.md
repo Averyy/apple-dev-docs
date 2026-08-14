@@ -20,8 +20,8 @@ A result code. See [`Result Codes`](core_printing#1670007.md).
 
 ## Parameters
 
-- `preset`: The preset object whose localized name you want to obtain. You can use the function   to obtain the presets for a given printer.
-- `paperID`: A pointer to your   variable. On return, the variable refers to a Core Foundation string containing the localized name of the specified preset. You are responsible for releasing the string.
+- `preset`: The preset object whose localized name you want to obtain. You can use the function [`PMPrinterCopyPresets(_:_:)`](1459117-pmprintercopypresets.md) to obtain the presets for a given printer.
+- `paperID`: A pointer to your [`CFString`](https://developer.apple.com/documentation/corefoundation/cfstring) variable. On return, the variable refers to a Core Foundation string containing the localized name of the specified preset. You are responsible for releasing the string.
 
 ## See Also
 

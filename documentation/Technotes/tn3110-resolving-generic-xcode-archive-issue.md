@@ -6,15 +6,15 @@ Identify common configurations that cause a generic Xcode archive.
 
 #### Overview
 
-The Archives organizer reports your archive as an *app archive* if it contains a single top-level app and a *generic Xcode archive*, otherwise. ![A generic archive.](https://docs-assets.developer.apple.com/published/f2d93098ac3d94ad520da9f1b21631de/tn3110-generic_archive%402x.png) You can validate and distribute an app archive. A generic archive, which may contain unexpected items such as header files, static libraries, or frameworks, can’t be validated nor distributed.
+The Archives organizer reports your archive as an *app archive* if it contains a single top-level app and a *generic Xcode archive*, otherwise. ![A generic archive.](/images/com.apple.technotes/tn3110-generic_archive@2x.png) You can validate and distribute an app archive. A generic archive, which may contain unexpected items such as header files, static libraries, or frameworks, can’t be validated nor distributed.
 
 #### Ensure the Skip Install Build Setting Is Properly Configured
 
 The [`Skip Install (SKIP_INSTALL)`](https://developer.apple.comhttps://help.apple.com/xcode/mac/current/#/itcaec37c2a6) build setting determines whether to install built products within the archive.
 
-When enabled for an app, Xcode doesn’t install the app within the archive. The produced archive doesn’t contain the single top-level app as expected. To generate an app archive, confirm that Skip Install is disabled for your app. ![Disable Skip Install for apps.](https://docs-assets.developer.apple.com/published/39807425f0be998c6e375b5ec168bbb5/tn3110-skip_install_apps%402x.png)
+When enabled for an app, Xcode doesn’t install the app within the archive. The produced archive doesn’t contain the single top-level app as expected. To generate an app archive, confirm that Skip Install is disabled for your app. ![Disable Skip Install for apps.](/images/com.apple.technotes/tn3110-skip_install_apps@2x.png)
 
-When disabled for an app’s dependencies such as frameworks, Xcode adds these dependencies to the app’s archive. The produced archive contains multiple folders rather than the expected single top-level app. To generate an app archive, confirm that Skip Install is enabled for all your app’s dependencies. ![Enable Skip Install for dependencies.](https://docs-assets.developer.apple.com/published/4375c94351bbdf54e470b42c78152fc3/tn3110-skip_install_dependencies%402x.png)
+When disabled for an app’s dependencies such as frameworks, Xcode adds these dependencies to the app’s archive. The produced archive contains multiple folders rather than the expected single top-level app. To generate an app archive, confirm that Skip Install is enabled for all your app’s dependencies. ![Enable Skip Install for dependencies.](/images/com.apple.technotes/tn3110-skip_install_dependencies@2x.png)
 
 #### Use a Copy Files Build Phase
 

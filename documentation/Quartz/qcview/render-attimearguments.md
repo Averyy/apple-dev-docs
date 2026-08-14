@@ -16,7 +16,7 @@ func render(atTime time: TimeInterval, arguments: [AnyHashable : Any]!) -> Bool
 
 #### Return Value
 
-[`false`](https://developer.apple.com/documentation/Swift/false) if your custom rendering fails, otherwise, [`true`](https://developer.apple.com/documentation/Swift/true).
+[`false`](https://developer.apple.com/documentation/swift/false) if your custom rendering fails, otherwise, [`true`](https://developer.apple.com/documentation/swift/true).
 
 #### Discussion
 

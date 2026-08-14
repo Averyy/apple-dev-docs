@@ -16,13 +16,13 @@ func runModal(forIdentities identities: [Any]!, message: String!) -> Int
 
 #### Discussion
 
-This method returns [`NSOKButton`](https://developer.apple.com/documentation/AppKit/NSOKButton) if the default button is clicked, or [`NSCancelButton`](https://developer.apple.com/documentation/AppKit/NSCancelButton) if the alternate button is clicked.
+This method returns [`NSOKButton`](https://developer.apple.com/documentation/appkit/nsokbutton) if the default button is clicked, or [`NSCancelButton`](https://developer.apple.com/documentation/appkit/nscancelbutton) if the alternate button is clicked.
 
 Use the [`identity()`](sfchooseidentitypanel/identity().md) method to obtain the identity chosen by the user.
 
 ## Parameters
 
-- `identities`: An array of identity objects (objects of type [`SecIdentity`](https://developer.apple.com/documentation/Security/SecIdentity). Use the [`SecIdentitySearchCopyNext`](https://developer.apple.com/documentation/Security/SecIdentitySearchCopyNext) function (in Security/SecIdentitySearch.h) to find identity objects.
+- `identities`: An array of identity objects (objects of type [`SecIdentity`](https://developer.apple.com/documentation/security/secidentity). Use the [`SecIdentitySearchCopyNext`](https://developer.apple.com/documentation/security/secidentitysearchcopynext) function (in Security/SecIdentitySearch.h) to find identity objects.
 - `message`: A message string to display in the panel.
 
 ## See Also

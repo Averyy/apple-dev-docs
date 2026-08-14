@@ -25,7 +25,7 @@ A voice specification structure is a unique voice ID usedby the Speech Synthesis
 ## Parameters
 
 - `creator`: The ID of the synthesizer that your application requires.
-- `id`: The ID of the voice on the synthesizer specified by the   parameter.
+- `id`: The ID of the voice on the synthesizer specified by the `creator` parameter.
 - `voice`: A pointer to the voice specification structure whose fields are to be filled in. 
 
 ## See Also

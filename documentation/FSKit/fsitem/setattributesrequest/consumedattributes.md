@@ -16,7 +16,7 @@ var consumedAttributes: FSItem.Attribute { get set }
 
 #### Discussion
 
-This property is a bit field in Objective-C and an [`OptionSet`](https://developer.apple.com/documentation/Swift/OptionSet) in Swift.
+This property is a bit field in Objective-C and an [`OptionSet`](https://developer.apple.com/documentation/swift/optionset) in Swift.
 
 ## See Also
 

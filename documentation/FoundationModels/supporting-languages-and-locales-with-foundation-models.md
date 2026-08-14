@@ -47,7 +47,7 @@ Because the framework treats `Generable` types as model inputs, the names of pro
 
 People can use the Settings app on their device to configure the language they prefer to use on a per-app basis, which might differ from their default language. If your app supports a language that Apple Intelligence doesn’t, you need to verify that the current language setting of your app is supported before you call the model. Keep in mind that language support improves over time in newer model and OS versions. Thus, someone using your app with an older OS may not have the latest language support.
 
-Before you call the model, run [`supportsLocale(_:)`](systemlanguagemodel/supportslocale(_:).md) to verify the support for a locale. By default, the method uses [`current`](https://developer.apple.com/documentation/Foundation/Locale/current), which takes into account a person’s current language and app-specific settings. This method returns true if the model supports this locale, or if this locale is considered similar enough to a supported locale, such as `en-AU` and `en-NZ`:
+Before you call the model, run [`supportsLocale(_:)`](systemlanguagemodel/supportslocale(_:).md) to verify the support for a locale. By default, the method uses [`current`](https://developer.apple.com/documentation/foundation/locale/current), which takes into account a person’s current language and app-specific settings. This method returns true if the model supports this locale, or if this locale is considered similar enough to a supported locale, such as `en-AU` and `en-NZ`:
 
 ```swift
 if SystemLanguageModel.default.supportsLocale() {

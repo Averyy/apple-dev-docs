@@ -7,7 +7,6 @@ A secondary icon that provides additional contextual information about the notif
 
 **Availability**:
 - iOS 26.5+
-- iPadOS 26.5+
 
 ## Declaration
 

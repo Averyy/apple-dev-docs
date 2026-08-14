@@ -2,17 +2,17 @@
 
 **Framework**: Device Management
 
-Register and manage users for your organization’s managed location.
+Register and manage users for your organization’s managed organizational unit.
 
 #### Overview
 
-Deployment of an organization’s owned assets to user-owned devices requires registering those users for the location you’re managing. The provided API allows for asynchronous management of these users in the organization.
+Deployment of an organization’s owned assets to user-owned devices requires registering those users for the organizational unit you’re managing. The provided API allows for asynchronous management of these users in the organization.
 
 #### Retrieve Users
 
 Before managing the users in the organization, the device management service needs to determine what users are currently active. Making a request to [`Get Users`](get-users-4mwln.md) allows you to retrieve all users in the organization, and you can include an optional query parameter to return only active users. You can identify an active user by their unique `clientUserId`.
 
-> **Note**:  The Get Users endpoint can return multiple entries with the same `clientUserId` if a user has been retired and re-created. For a given `clientUserId` at a location, there can be zero or more entries in the Retired state, but only zero or one entry in the Created or Associated state. To retrieve only active users, pass `activeOnly=true` as a query parameter.
+> **Note**:  The Get Users endpoint can return multiple entries with the same `clientUserId` if a user has been retired and re-created. For a given `clientUserId` at an organizational unit, there can be zero or more entries in the Retired state, but only zero or one entry in the Created or Associated state. To retrieve only active users, pass `activeOnly=true` as a query parameter.
 
 The following code shows an example of requesting an organization’s users:
 
@@ -73,7 +73,7 @@ For pagination response fields and versioned queries using `sinceVersionId`, see
 
 #### Invite Users
 
-You invite users by sending them an email with an invitation link. Accepting the invitation associates the user’s `appleId` with the managed location.
+You invite users by sending them an email with an invitation link. Accepting the invitation associates the user’s `appleId` with the managed organizational unit.
 
 Use [`ServiceConfigResponse.Urls`](serviceconfigresponse/urls-data.dictionary.md) to retrieve the `invitationEmail` template URL, and then replace `%25inviteCode%25` with the user’s `inviteCode` from [`ResponseUser`](responseuser.md).
 

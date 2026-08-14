@@ -22,14 +22,14 @@ func loadPreviewImage(options: [AnyHashable : Any]! = [:]) async throws -> any N
 
 #### Discussion
 
-To handle image preview yourself, provide a completion handler block that returns an [`NSData`](nsdata.md) or [`NSURL`](nsurl.md) object, or an instance of a platform-specific image class ([`UIImage`](https://developer.apple.com/documentation/UIKit/UIImage) or [`NSImage`](https://developer.apple.com/documentation/AppKit/NSImage)).
+To handle image preview yourself, provide a completion handler block that returns an [`NSData`](nsdata.md) or [`NSURL`](nsurl.md) object, or an instance of a platform-specific image class ([`UIImage`](https://developer.apple.com/documentation/uikit/uiimage) or [`NSImage`](https://developer.apple.com/documentation/appkit/nsimage)).
 
 This method supports implicit type coercion for the item parameter of the completion block.
 
 ## Parameters
 
 - `options`: A dictionary of keys and values that provide information about the item, such as the size of an image. For a list of possible keys, see [`Options Dictionary Key`](options-dictionary-key.md).
-- `completionHandler`: A completion handler block to execute with the results. The first parameter of this block must be a parameter of type [`NSData`](nsdata.md), [`NSURL`](nsurl.md), [`UIImage`](https://developer.apple.com/documentation/UIKit/UIImage) (in iOS), or [`NSImage`](https://developer.apple.com/documentation/AppKit/NSImage) (in macOS) for receiving the image data. For more information about implementing the block, see [`NSItemProvider.CompletionHandler`](nsitemprovider/completionhandler.md).
+- `completionHandler`: A completion handler block to execute with the results. The first parameter of this block must be a parameter of type [`NSData`](nsdata.md), [`NSURL`](nsurl.md), [`UIImage`](https://developer.apple.com/documentation/uikit/uiimage) (in iOS), or [`NSImage`](https://developer.apple.com/documentation/appkit/nsimage) (in macOS) for receiving the image data. For more information about implementing the block, see [`NSItemProvider.CompletionHandler`](nsitemprovider/completionhandler.md).
 
 ## See Also
 

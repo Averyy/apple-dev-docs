@@ -22,7 +22,7 @@ let kCVPixelBufferCGBitmapContextCompatibilityKey: CFString
 
 #### Discussion
 
-The value for this key is of type [`CFBoolean`](https://developer.apple.com/documentation/CoreFoundation/CFBoolean).
+The value for this key is of type [`CFBoolean`](https://developer.apple.com/documentation/corefoundation/cfboolean).
 
 ## See Also
 

@@ -8,9 +8,9 @@ Store data for use across sessions of your app.
 
 The operating system provides ways to store data when your app closes, so that when people open your app again later, they can continue working without interruption. The mechanism that you use depends on factors like what and how much you need to store, whether you need serialized or random access to the data, and so on.
 
-![None](https://docs-assets.developer.apple.com/published/45f566a52f46e696909b2586bde96bd8/persistent-storage-hero%402x.png)
+![None](/images/com.apple.SwiftUI/persistent-storage-hero@2x.png)
 
-You use the same kinds of storage in a SwiftUI app that you use in any other app. For example, you can access files on disk using the [`FileManager`](https://developer.apple.com/documentation/Foundation/FileManager) interface. However, SwiftUI also provides conveniences that make it easier to use certain kinds of persistent storage in a declarative environment. For example, you can use [`FetchRequest`](fetchrequest.md) and [`FetchedResults`](fetchedresults.md) to interact with a Core Data model.
+You use the same kinds of storage in a SwiftUI app that you use in any other app. For example, you can access files on disk using the [`FileManager`](https://developer.apple.com/documentation/foundation/filemanager) interface. However, SwiftUI also provides conveniences that make it easier to use certain kinds of persistent storage in a declarative environment. For example, you can use [`FetchRequest`](fetchrequest.md) and [`FetchedResults`](fetchedresults.md) to interact with a Core Data model.
 
 ## Topics
 

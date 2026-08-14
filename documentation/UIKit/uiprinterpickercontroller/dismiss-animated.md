@@ -25,7 +25,7 @@ User interactions with the picker can also dismiss the picker automatically. For
 
 ## Parameters
 
-- `animated`: [`true`](https://developer.apple.com/documentation/Swift/true) to animate the dismissal of the picker or [`false`](https://developer.apple.com/documentation/Swift/false) to remove it without animations.
+- `animated`: [`true`](https://developer.apple.com/documentation/swift/true) to animate the dismissal of the picker or [`false`](https://developer.apple.com/documentation/swift/false) to remove it without animations.
 
 ## See Also
 

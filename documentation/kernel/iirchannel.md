@@ -18,6 +18,10 @@ typedef int IIRChannel;
 
 Pass an [`IIRChannel`](iirchannel.md) constant to [`vDSP_biquad2_CreateSetup`](1532224-vdsp_biquad2_createsetup.md) to specify which channels the function applies filtering to.
 
+- **`vDSP_IIRStereo`**: The filter operates over both channels.
+- **`vDSP_IIRMonoLeft`**: The filter operates on left-channel mono data and applies pass-through coefficients to the right channel.
+- **`vDSP_IIRMonoRight`**: The filter operates on right-channel mono data and applies pass-through coefficients to the left channel.
+
 ## See Also
 
 - [vDSP_biquad2](1532195-vdsp_biquad2.md)

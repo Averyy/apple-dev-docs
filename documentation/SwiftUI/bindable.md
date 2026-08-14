@@ -23,7 +23,7 @@ A property wrapper type that supports creating bindings to the mutable propertie
 
 #### Overview
 
-Use this property wrapper to create bindings to mutable properties of a data model object that conforms to the [`Observable`](https://developer.apple.com/documentation/Observation/Observable) protocol. For example, the following code wraps the `book` input with `@Bindable`. Then it uses a [`TextField`](textfield.md) to change the `title` property of a book, and a [`Toggle`](toggle.md) to change the `isAvailable` property, using the `$` syntax to pass a binding for each property to those controls.
+Use this property wrapper to create bindings to mutable properties of a data model object that conforms to the [`Observable`](https://developer.apple.com/documentation/observation/observable) protocol. For example, the following code wraps the `book` input with `@Bindable`. Then it uses a [`TextField`](textfield.md) to change the `title` property of a book, and a [`Toggle`](toggle.md) to change the `isAvailable` property, using the `$` syntax to pass a binding for each property to those controls.
 
 ```swift
 @Observable
@@ -50,7 +50,7 @@ struct BookEditView: View {
 }
 ```
 
-You can use the `Bindable` property wrapper on properties and variables to an [`Observable`](https://developer.apple.com/documentation/Observation/Observable) object. This includes global variables, properties that exists outside of SwiftUI types, or even local variables. For example, you can create a `@Bindable` variable within a view’s [`body`](view/body-8kl5o.md):
+You can use the `Bindable` property wrapper on properties and variables to an [`Observable`](https://developer.apple.com/documentation/observation/observable) object. This includes global variables, properties that exists outside of SwiftUI types, or even local variables. For example, you can create a `@Bindable` variable within a view’s [`body`](view/body-8kl5o.md):
 
 ```swift
 struct LibraryView: View {
@@ -100,11 +100,11 @@ struct TitleEditView: View {
 ## Relationships
 
 ### Conforms To
-- [Copyable](../Swift/Copyable.md)
-- [Escapable](../Swift/Escapable.md)
-- [Identifiable](../Swift/Identifiable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Copyable](../swift/copyable.md)
+- [Escapable](../swift/escapable.md)
+- [Identifiable](../swift/identifiable.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

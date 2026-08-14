@@ -18,7 +18,7 @@ func impactOccurred(intensity: CGFloat)
 
 ## Parameters
 
-- `intensity`: A [`CGFloat`](https://developer.apple.com/documentation/CoreFoundation/CGFloat-swift.struct) value between `0.0` and `1.0`.
+- `intensity`: A [`CGFloat`](https://developer.apple.com/documentation/corefoundation/cgfloat-swift.struct) value between `0.0` and `1.0`.
 
 ## See Also
 

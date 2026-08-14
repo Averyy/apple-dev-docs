@@ -28,7 +28,7 @@ The system calls this method after launching your app to handle a background tas
 
 ## See Also
 
-- [func recoverActiveWorkoutSession(completion: (HKWorkoutSession?, (any Error)?) -> Void)](../HealthKit/HKHealthStore/recoverActiveWorkoutSession(completion:).md)
+- [func recoverActiveWorkoutSession(completion: (HKWorkoutSession?, (any Error)?) -> Void)](../healthkit/hkhealthstore/recoveractiveworkoutsession(completion:).md)
   Recovers an active workout session.
 
 

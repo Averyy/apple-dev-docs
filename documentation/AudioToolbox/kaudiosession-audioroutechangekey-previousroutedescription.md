@@ -17,7 +17,7 @@ let kAudioSession_AudioRouteChangeKey_PreviousRouteDescription: CFString!
 
 #### Discussion
 
-A [`CFDictionary`](https://developer.apple.com/documentation/CoreFoundation/CFDictionary) object that describes the previous audio route. For specifics on the contents of this dictionary, see [`kAudioSession_AudioRouteKey_Inputs`](kaudiosession_audioroutekey_inputs.md) and [`kAudioSession_AudioRouteKey_Outputs`](kaudiosession_audioroutekey_outputs.md).
+A [`CFDictionary`](https://developer.apple.com/documentation/corefoundation/cfdictionary) object that describes the previous audio route. For specifics on the contents of this dictionary, see [`kAudioSession_AudioRouteKey_Inputs`](kaudiosession_audioroutekey_inputs.md) and [`kAudioSession_AudioRouteKey_Outputs`](kaudiosession_audioroutekey_outputs.md).
 
 ## See Also
 

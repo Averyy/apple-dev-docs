@@ -16,7 +16,7 @@ static let applicationName: NSApplication.AboutPanelOptionKey
 
 #### Discussion
 
-The value of this key is an [`NSString`](https://developer.apple.com/documentation/Foundation/NSString) object containing the app’s name. If you do not specify this key, AppKit uses the value of the `CFBundleName` key from the app’s `Info.plist` file. If neither is found, AppKit uses the name of the app’s process.
+The value of this key is an [`NSString`](https://developer.apple.com/documentation/foundation/nsstring) object containing the app’s name. If you do not specify this key, AppKit uses the value of the `CFBundleName` key from the app’s `Info.plist` file. If neither is found, AppKit uses the name of the app’s process.
 
 ## See Also
 

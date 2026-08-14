@@ -15,7 +15,7 @@ An entitlement that grants access to CoreTelephony services.
 
 #### Discussion
 
-Add this entitlement to your app, and include specific values in the array, to use [`Core Telephony`](https://developer.apple.com/documentation/CoreTelephony) APIs.
+Add this entitlement to your app, and include specific values in the array, to use [`Core Telephony`](https://developer.apple.com/documentation/coretelephony) APIs.
 
 To request this entitlement for your app, fill out the request form for the specific value you need to use.
 

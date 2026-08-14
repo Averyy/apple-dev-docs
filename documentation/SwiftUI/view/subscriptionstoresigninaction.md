@@ -25,7 +25,7 @@ func subscriptionStoreSignInAction(_ action: (() -> ())?) -> some View
 
 You can only have one sign in action for a view. If an ancestor view specifies a sign in action, using this modifier will replace the ancestor’s sign in action.
 
-If the value is `nil`, subscription stores will never show a sign in button. You can also hide the sign in button without removing the action by using the [`storeButton(_:for:)`](view/storebutton(_:for:).md) modifier, providing [`signIn`](https://developer.apple.com/documentation/StoreKit/StoreButtonKind/signIn) as the button kind.
+If the value is `nil`, subscription stores will never show a sign in button. You can also hide the sign in button without removing the action by using the [`storeButton(_:for:)`](view/storebutton(_:for:).md) modifier, providing [`signIn`](https://developer.apple.com/documentation/storekit/storebuttonkind/signin) as the button kind.
 
 ## Parameters
 

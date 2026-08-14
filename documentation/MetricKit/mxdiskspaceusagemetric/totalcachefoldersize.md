@@ -20,9 +20,9 @@ var totalCacheFolderSize: Measurement<UnitInformationStorage> { get }
 
 #### Discussion
 
-The value of this metric represents total size of [`cachesDirectory`](https://developer.apple.com/documentation/Foundation/URL/cachesDirectory).
+The value of this metric represents total size of [`cachesDirectory`](https://developer.apple.com/documentation/foundation/url/cachesdirectory).
 
-Placing files in the appropriate directories, such as the [`cachesDirectory`](https://developer.apple.com/documentation/Foundation/URL/cachesDirectory) and [`temporaryDirectory`](https://developer.apple.com/documentation/Foundation/URL/temporaryDirectory), allows the system to manage and purge content when necessary, ensuring optimal disk space utilization and a better experience (see [`File System Basics`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/FileManagement/Conceptual/FileSystemProgrammingGuide/FileSystemOverview/FileSystemOverview.html)).
+Placing files in the appropriate directories, such as the [`cachesDirectory`](https://developer.apple.com/documentation/foundation/url/cachesdirectory) and [`temporaryDirectory`](https://developer.apple.com/documentation/foundation/url/temporarydirectory), allows the system to manage and purge content when necessary, ensuring optimal disk space utilization and a better experience (see [`File System Basics`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/FileManagement/Conceptual/FileSystemProgrammingGuide/FileSystemOverview/FileSystemOverview.html)).
 
 ## See Also
 

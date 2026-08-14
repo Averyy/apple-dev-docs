@@ -48,7 +48,7 @@ Two predefined values to use for `notAKeyMarker` are [`NSNotAnIntMapKey`](nsnota
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../Swift/BitwiseCopyable.md)
+- [BitwiseCopyable](../swift/bitwisecopyable.md)
 
 ## See Also
 

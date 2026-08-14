@@ -59,7 +59,7 @@ guard let modelURL = referenceObject.usdzFile else {
 
 The RealityKit [`OcclusionMaterial`](https://developer.apple.comhttps://developer.apple.com/documentation/realitykit/occlusionmaterial/) provides a way to render an entity that blocks and occludes other entities to reveal camera passthrough. This is useful in creating the correct depth perception between the real-world object the system tracks and the virtual content you add to your app. You can use the imported USDZ file from your reference object file to create a [`ModelEntity`](https://developer.apple.comhttps://developer.apple.com/documentation/realitykit/modelentity) that generates a virtual representation of your physical object, so you can add occlusion behavior to it.
 
-![An image of a globe with multiple spacecrafts circling it. The globe is partially occluding two of the spacecrafts as they pass behind it.](https://docs-assets.developer.apple.com/published/216a6e342c7b5ab9da77adba7b8bcf1d/ambient-occlusion%402x.png)
+![An image of a globe with multiple spacecrafts circling it. The globe is partially occluding two of the spacecrafts as they pass behind it.](/images/com.apple.visionOS/ambient-occlusion@2x.png)
 
 ```swift
 // Load the `modelEntity` with the `modelURL` containing the USDZ file.
@@ -74,7 +74,7 @@ objectAnchor.addChild(modelEntity)
 
 Before adding interaction, incorporate guidance in your app so that anyone can navigate through using it. Use [`attachments`](https://developer.apple.comhttps://developer.apple.com/documentation/realitykit/realityview/init(make:update:attachments:)) to combine SwiftUI content with RealityKit content to create these guiding features. Attach SwiftUI labels and interfaces to the object-tracking entities.
 
-![An image of a globe highlighting a continent with an attachment of a label and a window with selections.](https://docs-assets.developer.apple.com/published/37064d18ac85dd8e08a111c021eb5fba/attachments-globe%402x.png)
+![An image of a globe highlighting a continent with an attachment of a label and a window with selections.](/images/com.apple.visionOS/attachments-globe@2x.png)
 
 ```swift
 RealityView { content, attachments in

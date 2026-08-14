@@ -20,7 +20,7 @@ func challengeComposeController(withPlayers playerIDs: [String]?, message: Strin
 
 #### Return Value
 
-A [`UIViewController`](https://developer.apple.com/documentation/UIKit/UIViewController) view containing the player identifiers and a player-editable message.
+A [`UIViewController`](https://developer.apple.com/documentation/uikit/uiviewcontroller) view containing the player identifiers and a player-editable message.
 
 #### Discussion
 
@@ -30,7 +30,7 @@ When this method is called, it creates a new background task to handle the reque
 
 ## Parameters
 
-- `playerIDs`: An array of [`NSString`](https://developer.apple.com/documentation/Foundation/NSString) objects that contains the player identifiers that the challenge is to be sent to.
+- `playerIDs`: An array of [`NSString`](https://developer.apple.com/documentation/foundation/nsstring) objects that contains the player identifiers that the challenge is to be sent to.
 - `message`: The preformatted, player-editable message that is being sent to other players.
 - `completionHandler`: A block to be called after the view controller has been displayed. Contains the reason the handler was called and all player identifiers that the challenge was sent to.
 

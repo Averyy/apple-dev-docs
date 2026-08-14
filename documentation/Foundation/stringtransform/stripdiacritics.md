@@ -22,7 +22,7 @@ static let stripDiacritics: StringTransform
 
 #### Discussion
 
-This is equivalent to [`kCFStringTransformStripDiacritics`](https://developer.apple.com/documentation/CoreFoundation/kCFStringTransformStripDiacritics).
+This is equivalent to [`kCFStringTransformStripDiacritics`](https://developer.apple.com/documentation/corefoundation/kcfstringtransformstripdiacritics).
 
 ## See Also
 

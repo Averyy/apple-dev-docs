@@ -88,10 +88,10 @@ You can initialize groups with several types other than [`View`](view.md), such 
 ### Conforms To
 - [AccessibilityRotorContent](accessibilityrotorcontent.md)
 - [Commands](commands.md)
-- [Copyable](../Swift/Copyable.md)
+- [Copyable](../swift/copyable.md)
 - [CustomizableToolbarContent](customizabletoolbarcontent.md)
-- [Escapable](../Swift/Escapable.md)
-- [MapContent](../MapKit/MapContent.md)
+- [Escapable](../swift/escapable.md)
+- [MapContent](../mapkit/mapcontent.md)
 - [Scene](scene.md)
 - [SceneAccessoryContent](sceneaccessorycontent.md)
 - [TabContent](tabcontent.md)

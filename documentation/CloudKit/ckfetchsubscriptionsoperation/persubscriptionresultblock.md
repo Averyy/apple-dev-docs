@@ -25,7 +25,7 @@ var perSubscriptionResultBlock: ((CKSubscription.ID, Result<CKSubscription, any 
 This property is a closure that returns no value and has the following parameters:
 
 - The ID of the subscription.
-- A [`Result`](https://developer.apple.com/documentation/Swift/Result) that contains either a retrieved subscription, or an error that describes why CloudKit can’t retrieve the subscription.
+- A [`Result`](https://developer.apple.com/documentation/swift/result) that contains either a retrieved subscription, or an error that describes why CloudKit can’t retrieve the subscription.
 
 The fetch operation executes this closure once for each subscription ID in the [`subscriptionIDs`](ckfetchsubscriptionsoperation/subscriptionids-17f4q.md) property. Each time the closure executes, it executes serially with respect to the other closures of the operation.
 

@@ -21,7 +21,7 @@ var frames: [SIMD4<Float>] { get set }
 
 #### Discussion
 
-This array contains sequential values for the animated property when [`bindTarget`](animationdefinition/bindtarget.md) is an array of [`simd`](https://developer.apple.com/documentation/Accelerate/simd-library) floating-point quadruplets.
+This array contains sequential values for the animated property when [`bindTarget`](animationdefinition/bindtarget.md) is an array of [`simd`](https://developer.apple.com/documentation/accelerate/simd-library) floating-point quadruplets.
 
 ## See Also
 

@@ -190,7 +190,7 @@ To download these scripts, see [`USD Support Scripts`](https://developer.apple.c
   Ensure that the renderer that displays your USD assets supports its features.
 - [Placing a prim in the real world](placing-a-prim-in-the-real-world.md)
   Anchor a prim to a real-world object that the runtime recognizes in the physical environment.
-- [Previewing a Model with AR Quick Look](../ARKit/previewing-a-model-with-ar-quick-look.md)
+- [Previewing a Model with AR Quick Look](../arkit/previewing-a-model-with-ar-quick-look.md)
   Display a model or scene that the user can move, scale, and share with others.
 
 

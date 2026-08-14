@@ -18,7 +18,7 @@ class CLKComplicationTemplateGraphicCircularStackImage
 
 This template belongs to the [`CLKComplicationFamily.graphicCircular`](clkcomplicationfamily/graphiccircular.md) family.
 
-![Diagram showing the layout of a circular template containing an image and text.](https://docs-assets.developer.apple.com/published/cf5c80f0ab30f6f4cf3dda1898fd58e1/media-3262157%402x.png)
+![Diagram showing the layout of a circular template containing an image and text.](/images/com.apple.clockkit/media-3262157@2x.png)
 
 The following table lists the dimensions of the image you use in this template. All dimensions are in pixels. All images must be specified as @2x images for display on Apple Watch, so the point-based dimensions are half the listed size.
 
@@ -49,13 +49,13 @@ Instead of providing multiple images with different resolutions, you can provide
 ### Inherits From
 - [CLKComplicationTemplateGraphicCircular](clkcomplicationtemplategraphiccircular.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCopying](../Foundation/NSCopying.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCopying](../foundation/nscopying.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

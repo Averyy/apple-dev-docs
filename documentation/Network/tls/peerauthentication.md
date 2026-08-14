@@ -37,8 +37,8 @@ For clients, the default is `none`. For servers, the default is `required`.
 ## Relationships
 
 ### Conforms To
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
 
 
 ---

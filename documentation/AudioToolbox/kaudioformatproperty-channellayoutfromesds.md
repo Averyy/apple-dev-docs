@@ -21,7 +21,7 @@ var kAudioFormatProperty_ChannelLayoutFromESDS: AudioFormatPropertyID { get }
 
 #### Discussion
 
-An [`AudioChannelLayout`](https://developer.apple.com/documentation/CoreAudioTypes/AudioChannelLayout) structure for a given elementary stream descriptor (ESDS). Set the `inSpecifier` parameter to an ESDS.
+An [`AudioChannelLayout`](https://developer.apple.com/documentation/coreaudiotypes/audiochannellayout) structure for a given elementary stream descriptor (ESDS). Set the `inSpecifier` parameter to an ESDS.
 
 ## See Also
 

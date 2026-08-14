@@ -20,11 +20,11 @@ var isDistortionTextureEnabled: Bool { get set }
 
 #### Discussion
 
-Set this property to [`true`](https://developer.apple.com/documentation/Swift/true) to create a frame interpolator that can apply barrel distortion correction using a distortion field texture.
+Set this property to [`true`](https://developer.apple.com/documentation/swift/true) to create a frame interpolator that can apply barrel distortion correction using a distortion field texture.
 
 When you enable this property, you can assign a distortion texture to the interpolator’s [`distortionTexture`](mtlfxframeinterpolatorbase/distortiontexture.md) property to correct lens distortion artifacts during frame interpolation.
 
-This property’s default value is [`false`](https://developer.apple.com/documentation/Swift/false).
+This property’s default value is [`false`](https://developer.apple.com/documentation/swift/false).
 
 
 ---

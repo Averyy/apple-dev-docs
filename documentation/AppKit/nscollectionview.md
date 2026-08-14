@@ -36,7 +36,7 @@ An `NSCollectionView` object itself is a facilitator, taking information from di
 
 [`Figure 1`](nscollectionview#1965644.md) illustrates how the collection view works with its other objects to create its final appearance. The collection view obtains the views for items and supplementary views from its data source, which creates the views and fills them with data. The layout object provides the layout attributes needed to position those items and supplementary views onscreen. The collection view merges the two sets of information to create the final appearance that the user sees onscreen.
 
-![None](https://docs-assets.developer.apple.com/published/812d124f9141eefafb5973d46a8c1e92/media-1965644%402x.png)
+![None](/images/com.apple.appkit/media-1965644@2x.png)
 
 There are other helper classes and protocols that you can use to customize the layout behavior and other aspects of the collection view interface. For example, when using a flow layout object ([`NSCollectionViewFlowLayout`](nscollectionviewflowlayout.md)), you can modify the flow layout’s behavior using the methods of the [`NSCollectionViewDelegateFlowLayout`](nscollectionviewdelegateflowlayout.md) protocol. When implementing a custom layout, you might also work with [`NSCollectionViewUpdateItem`](nscollectionviewupdateitem.md) and [`NSCollectionViewLayoutInvalidationContext`](nscollectionviewlayoutinvalidationcontext.md) objects, which help the layout object manage updates.
 
@@ -292,25 +292,25 @@ For more information about how to configure a collection view using the legacy a
 ### Inherits From
 - [NSView](nsview.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
 - [NSAccessibilityElementProtocol](nsaccessibilityelementprotocol.md)
 - [NSAccessibilityProtocol](nsaccessibilityprotocol.md)
 - [NSAnimatablePropertyContainer](nsanimatablepropertycontainer.md)
 - [NSAppearanceCustomization](nsappearancecustomization.md)
-- [NSCoding](../Foundation/NSCoding.md)
+- [NSCoding](../foundation/nscoding.md)
 - [NSDraggingDestination](nsdraggingdestination.md)
 - [NSDraggingSource](nsdraggingsource.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 - [NSStandardKeyBindingResponding](nsstandardkeybindingresponding.md)
 - [NSTouchBarProvider](nstouchbarprovider.md)
 - [NSUserActivityRestoring](nsuseractivityrestoring.md)
 - [NSUserInterfaceItemIdentification](nsuserinterfaceitemidentification.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

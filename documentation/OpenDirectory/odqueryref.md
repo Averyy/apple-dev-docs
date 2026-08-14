@@ -22,8 +22,8 @@ Query objects are usually created with [`ODQueryCreateWithNode(_:_:_:_:_:_:_:_:_
 ## Relationships
 
 ### Conforms To
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
 
 ## See Also
 

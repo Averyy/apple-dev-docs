@@ -8,7 +8,7 @@ Focus on a part of an image by applying Gaussian blur and gradient masks.
 
 You can selectively blur areas of an image using [`maskedVariableBlur()`](cifilter-swift.class/maskedvariableblur().md) filter.
 
-![Flowchart showing the combination of image and mask in focusing on the scoop in a photo of walnuts](https://docs-assets.developer.apple.com/published/f5b5d0be1052e72273f79f4ff27f3f94/media-2960174%402x.png)
+![Flowchart showing the combination of image and mask in focusing on the scoop in a photo of walnuts](/images/com.apple.coreimage/media-2960174@2x.png)
 
 You specify the region to blur by applying a mask image; the shape and values of the mask image determine the location and strength of the blurring. Creating this effect involves the following steps:
 
@@ -23,12 +23,12 @@ You can build your mask in any shape, but the general strategy remains the same:
 
 To build a mask that leaves out a stripe, create linear gradients from a single color, such as green or gray. Our goal is to build the mask shown in Figure 2.
 
-![Linear gradient mask for blurring all regions of an image except a strip](https://docs-assets.developer.apple.com/published/2b1a1d757f70ba247c869887fd250383/media-2959648%402x.png)
+![Linear gradient mask for blurring all regions of an image except a strip](/images/com.apple.coreimage/media-2959648@2x.png)
 
 The linear gradients cause the blur to taper smoothly as it approaches the focused stripe of the image. The Core Image [`CIFilter`](cifilter-swift.class.md) named [`linearGradient()`](cifilter-swift.class/lineargradient().md) generates filters of the desired color. The linear gradient has four parameters:
 
-- **`point0`**: A [`CGPoint`](https://developer.apple.com/documentation/CoreFoundation/CGPoint) representing the starting position of the gradient.
-- **`point1`**: A [`CGPoint`](https://developer.apple.com/documentation/CoreFoundation/CGPoint) representing the ending position of the gradient.
+- **`point0`**: A [`CGPoint`](https://developer.apple.com/documentation/corefoundation/cgpoint) representing the starting position of the gradient.
+- **`point1`**: A [`CGPoint`](https://developer.apple.com/documentation/corefoundation/cgpoint) representing the ending position of the gradient.
 - **`color0`**: A [`CIColor`](cicolor.md) representing the first color to use in the gradient.
 - **`color1`**: A [`CIColor`](cicolor.md) representing the sexond color to use in the gradient.
 
@@ -57,7 +57,7 @@ bottomGradient.color1 = [CIColor colorWithRed:0 green:1 blue:0 alpha:0];
 
 To create a mask that dilineates where and how strong a blur to apply, combine the two linear gradients.
 
-![ Graphic depicting the additive compositing of two linear gradients to form a single mask](https://docs-assets.developer.apple.com/published/fb88c718a62cfd09d342d7700fe6bc9a/media-2959647%402x.png)
+![ Graphic depicting the additive compositing of two linear gradients to form a single mask](/images/com.apple.coreimage/media-2959647@2x.png)
 
 Since the gradients themselves are [`CIFilter`](cifilter-swift.class.md) objects, compositing them is as simple as concatenating their filter outputs to a compositing filter.  Use the built-in [`CIFilter`](cifilter-swift.class.md) named [`additionCompositing()`](cifilter-swift.class/additioncompositing().md) to composite two images additively.
 
@@ -81,7 +81,7 @@ The filter takes four parameters:
 - **radius0**: A `float` representing the radius of the starting circle to use in the gradient.
 - **radius1**: A `float` representing the radius of the ending circle to use in the gradient.
 
-1. Set the `center` to a [`CGPoint`](https://developer.apple.com/documentation/CoreFoundation/CGPoint) pointing to the center of the region you want to leave unblurred.
+1. Set the `center` to a [`CGPoint`](https://developer.apple.com/documentation/corefoundation/cgpoint) pointing to the center of the region you want to leave unblurred.
 2. Set the `radius0` to a fraction of the image’s dimension, like `0.2*h` in this example. You can tweak this parameter to determine the size of the sharp region.
 3. Set the `radius1` to a larger fraction of the image’s dimension, like `0.3*h` in this example. Tweaking this parameter changes the extent of the blur’s tapering effect; a larger value makes the blur more gradual, whereas a smaller value makes the image transition more abruptly from sharp (at `inputRadius0`) to blur (at `inputRadius1`).
 4. As with the linear gradients, set `color0` to transparency, and `color1` to a solid opaque color, to indicate the blur’s gradation from nonexistent to full.
@@ -97,7 +97,7 @@ radialMask.color1 = [CIColor colorWithRed:0 green:1 blue:0 alpha:1];
 
 This yields a circular mask to use with the [`maskedVariableBlur()`](cifilter-swift.class/maskedvariableblur().md) filter.
 
-![Circular gradient mask for blurring out all pixels except those in a circular region](https://docs-assets.developer.apple.com/published/15b8844dd3a9307563c3e4ccb5c2e3fe/media-2959646%402x.png)
+![Circular gradient mask for blurring out all pixels except those in a circular region](/images/com.apple.coreimage/media-2959646@2x.png)
 
 ##### Masking the Blurred Image to Apply Selective Focus
 
@@ -117,9 +117,9 @@ CIImage *selectivelyFocusedCIImage = maskedVariableBlur.outputImage;
 
 The resulting image shows the original image with portions blurred out according to the mask applied. The linear gradient mask results in an output image focused on a strip, and the radial gradient mask results in an output image focused on a circular region.
 
-![CIMaskedVariableBlur with a linear gradient mask applied to a photo of walnuts](https://docs-assets.developer.apple.com/published/c8129c1198c636bd772217d201c8f181/media-2960173%402x.png)
+![CIMaskedVariableBlur with a linear gradient mask applied to a photo of walnuts](/images/com.apple.coreimage/media-2960173@2x.png)
 
-![CIMaskedVariableBlur with a radial gradient mask applied to a photo of walnuts](https://docs-assets.developer.apple.com/published/11ca5e16d687bf1f93ab8322c5a58ede/media-2959645%402x.png)
+![CIMaskedVariableBlur with a radial gradient mask applied to a photo of walnuts](/images/com.apple.coreimage/media-2959645@2x.png)
 
 ## See Also
 

@@ -24,7 +24,7 @@ init(title: String, pointsOfInterest: [CPPointOfInterest], selectedIndex: Int)
 
 - `title`: The scrollable picker’s title.
 - `pointsOfInterest`: An array that contains the points of interest the template displays.
-- `selectedIndex`: The initial selection’s index. This is the array’s index for the specific point of interest you want to select. Use [`NSNotFound`](https://developer.apple.com/documentation/Foundation/NSNotFound-4qp9h) to indicate no initial selection.
+- `selectedIndex`: The initial selection’s index. This is the array’s index for the specific point of interest you want to select. Use [`NSNotFound`](https://developer.apple.com/documentation/foundation/nsnotfound-4qp9h) to indicate no initial selection.
 
 ## See Also
 

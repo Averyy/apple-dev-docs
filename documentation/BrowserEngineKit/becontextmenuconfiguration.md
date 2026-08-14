@@ -18,9 +18,9 @@ class BEContextMenuConfiguration
 
 #### Overview
 
-Return an instance of this class when you don’t yet know whether a contextual menu is presentable, or don’t have the menu items available when the system calls your interaction delegate’s [`contextMenuInteraction(_:configurationForMenuAtLocation:)`](https://developer.apple.com/documentation/UIKit/UIContextMenuInteractionDelegate/contextMenuInteraction(_:configurationForMenuAtLocation:)) method. Once you have the real configuration, call [`fulfill(using:)`](becontextmenuconfiguration/fulfill(using:).md) with it, or pass `nil` to indicate that no menu presentation is possible.
+Return an instance of this class when you don’t yet know whether a contextual menu is presentable, or don’t have the menu items available when the system calls your interaction delegate’s [`contextMenuInteraction(_:configurationForMenuAtLocation:)`](https://developer.apple.com/documentation/uikit/uicontextmenuinteractiondelegate/contextmenuinteraction(_:configurationformenuatlocation:)) method. Once you have the real configuration, call [`fulfill(using:)`](becontextmenuconfiguration/fulfill(using:).md) with it, or pass `nil` to indicate that no menu presentation is possible.
 
-> **Note**:  In most situations, use [`UIDeferredMenuElement`](https://developer.apple.com/documentation/UIKit/UIDeferredMenuElement) when you don’t have the content of a contextual menu element at the time the system asks your delegate and you need to calculate it asynchronously. Use this class instead when the calculation involves a short deferral, for example, an XPC call to a browser extension.
+> **Note**:  In most situations, use [`UIDeferredMenuElement`](https://developer.apple.com/documentation/uikit/uideferredmenuelement) when you don’t have the content of a contextual menu element at the time the system asks your delegate and you need to calculate it asynchronously. Use this class instead when the calculation involves a short deferral, for example, an XPC call to a browser extension.
 
 ## Topics
 
@@ -34,14 +34,14 @@ Return an instance of this class when you don’t yet know whether a contextual 
 ## Relationships
 
 ### Inherits From
-- [UIContextMenuConfiguration](../UIKit/UIContextMenuConfiguration.md)
+- [UIContextMenuConfiguration](../uikit/uicontextmenuconfiguration.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 
 ---

@@ -21,7 +21,7 @@ var presentsWithTransaction: Bool { get set }
 
 #### Discussion
 
-This property mirrors the value on the underlying [`CAMetalLayer`](https://developer.apple.com/documentation/QuartzCore/CAMetalLayer) object, and determines whether the view synchronizes updates to its own contents with other content changes in Core Animation. For more information about how this property affects your rendering code, see [`presentsWithTransaction`](https://developer.apple.com/documentation/QuartzCore/CAMetalLayer/presentsWithTransaction).
+This property mirrors the value on the underlying [`CAMetalLayer`](https://developer.apple.com/documentation/quartzcore/cametallayer) object, and determines whether the view synchronizes updates to its own contents with other content changes in Core Animation. For more information about how this property affects your rendering code, see [`presentsWithTransaction`](https://developer.apple.com/documentation/quartzcore/cametallayer/presentswithtransaction).
 
 ## See Also
 
@@ -30,7 +30,7 @@ This property mirrors the value on the underlying [`CAMetalLayer`](https://devel
 - [var isPaused: Bool](mtkview/ispaused.md)
   A Boolean value that indicates whether the draw loop is paused.
 - [var enableSetNeedsDisplay: Bool](mtkview/enablesetneedsdisplay.md)
-  A Boolean value that indicates whether the view responds to [`setNeedsDisplay()`](https://developer.apple.com/documentation/UIKit/UIView/setNeedsDisplay()).
+  A Boolean value that indicates whether the view responds to [`setNeedsDisplay()`](https://developer.apple.com/documentation/uikit/uiview/setneedsdisplay()).
 - [func draw()](mtkview/draw.md)
   Redraws the view’s contents immediately.
 

@@ -23,7 +23,7 @@ let kIOSurfacePlaneElementWidth: CFString
 
 Optional, default is 1.
 
-This value is stored as a [`CFNumber`](https://developer.apple.com/documentation/CoreFoundation/CFNumber).
+This value is stored as a [`CFNumber`](https://developer.apple.com/documentation/corefoundation/cfnumber).
 
 ## See Also
 

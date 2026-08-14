@@ -19,7 +19,7 @@ case `default`
 
 #### Discussion
 
-By default, if the tool picker is visible, respect the pencil interaction setting of the [`prefersPencilOnlyDrawing`](https://developer.apple.com/documentation/UIKit/UIPencilInteraction/prefersPencilOnlyDrawing) property; otherwise only accept input from Apple Pencil.
+By default, if the tool picker is visible, respect the pencil interaction setting of the [`prefersPencilOnlyDrawing`](https://developer.apple.com/documentation/uikit/uipencilinteraction/preferspencilonlydrawing) property; otherwise only accept input from Apple Pencil.
 
 ## See Also
 

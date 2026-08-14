@@ -51,7 +51,7 @@ You can also optionally augment the behavior of presenting and dismissing action
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 ### Conforming Types
 - [UIDocumentInteractionController](uidocumentinteractioncontroller.md)
 

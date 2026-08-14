@@ -59,17 +59,17 @@ enum ManagedAppDistributionError
 ## Relationships
 
 ### Conforms To
-- [CustomLocalizedStringResourceConvertible](../Foundation/CustomLocalizedStringResourceConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Decodable](../Swift/Decodable.md)
-- [Encodable](../Swift/Encodable.md)
-- [Equatable](../Swift/Equatable.md)
-- [Error](../Swift/Error.md)
-- [Hashable](../Swift/Hashable.md)
-- [LocalizedError](../Foundation/LocalizedError.md)
-- [RecoverableError](../Foundation/RecoverableError.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [CustomLocalizedStringResourceConvertible](../foundation/customlocalizedstringresourceconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Decodable](../swift/decodable.md)
+- [Encodable](../swift/encodable.md)
+- [Equatable](../swift/equatable.md)
+- [Error](../swift/error.md)
+- [Hashable](../swift/hashable.md)
+- [LocalizedError](../foundation/localizederror.md)
+- [RecoverableError](../foundation/recoverableerror.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 
 ---

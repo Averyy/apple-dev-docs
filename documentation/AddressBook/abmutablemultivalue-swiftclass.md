@@ -44,15 +44,15 @@ The `ABMutableMultiValue` class is “toll-free bridged” with its procedural C
 ### Inherits From
 - [ABMultiValue](abmultivalue-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCopying](../Foundation/NSCopying.md)
-- [NSFastEnumeration](../Foundation/NSFastEnumeration.md)
-- [NSMutableCopying](../Foundation/NSMutableCopying.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCopying](../foundation/nscopying.md)
+- [NSFastEnumeration](../foundation/nsfastenumeration.md)
+- [NSMutableCopying](../foundation/nsmutablecopying.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

@@ -16,7 +16,7 @@ var exclusionPaths: [NSBezierPath] { get set }
 
 #### Discussion
 
-The default value of this property is an empty array. Depending on the platform, you can assign an array of [`NSBezierPath`](nsbezierpath.md) or [`UIBezierPath`](https://developer.apple.com/documentation/UIKit/UIBezierPath) objects to exclude text from one or more regions in the text container’s bounds. When the layout manager proposes a line fragment rectangle intersecting one of the regions defined by the exclusion paths, the text container returns an adjusted line fragment rectangle excluding that region.
+The default value of this property is an empty array. Depending on the platform, you can assign an array of [`NSBezierPath`](nsbezierpath.md) or [`UIBezierPath`](https://developer.apple.com/documentation/uikit/uibezierpath) objects to exclude text from one or more regions in the text container’s bounds. When the layout manager proposes a line fragment rectangle intersecting one of the regions defined by the exclusion paths, the text container returns an adjusted line fragment rectangle excluding that region.
 
 ## See Also
 

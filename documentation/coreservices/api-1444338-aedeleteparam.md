@@ -24,8 +24,8 @@ Thread safe starting in OS X v10.2.
 
 ## Parameters
 
-- `theAppleEvent`: A pointer to the Apple event or Apple event record to delete the parameter from. See  .
-- `theAEKeyword`: The keyword that specifies the parameter to delete. Some keyword constants are described in  . See  .
+- `theAppleEvent`: A pointer to the Apple event or Apple event record to delete the parameter from. See [`AppleEvent`](appleevent.md).
+- `theAEKeyword`: The keyword that specifies the parameter to delete. Some keyword constants are described in [`Keyword Parameter Constants`](apple_events/1527206-keyword_parameter_constants.md). See [`AEKeyword`](aekeyword.md).
 
 ## See Also
 

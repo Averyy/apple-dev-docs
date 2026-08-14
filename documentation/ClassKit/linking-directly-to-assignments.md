@@ -14,7 +14,7 @@ You can implement this kind of linking through URL requests or user activity. Yo
 
 ##### Reuse Existing Url Support
 
-If your app supports custom URLs to provide deep links to specific content—for example, because you already support linking from push notifications—you can easily reuse that infrastructure with your contexts. Briefly, supporting custom URLs means that you’ve defined a URL type in your app’s `Info.plist` file with a custom URL scheme, and have implemented the [`application(_:open:options:)`](https://developer.apple.com/documentation/UIKit/UIApplicationDelegate/application(_:open:options:)) method in your app delegate to handle incoming requests with this scheme.
+If your app supports custom URLs to provide deep links to specific content—for example, because you already support linking from push notifications—you can easily reuse that infrastructure with your contexts. Briefly, supporting custom URLs means that you’ve defined a URL type in your app’s `Info.plist` file with a custom URL scheme, and have implemented the [`application(_:open:options:)`](https://developer.apple.com/documentation/uikit/uiapplicationdelegate/application(_:open:options:)) method in your app delegate to handle incoming requests with this scheme.
 
 To reuse this scheme with ClassKit, when you create contexts, assign the corresponding URL of each context’s [`universalLinkURL`](clscontext/universallinkurl.md) property. The Schoolwork app uses one of these URLs to issue a request to your app when the student taps an assignment in Schoolwork. The request activates your app and gives you the chance to load the appropriate view.
 
@@ -31,9 +31,9 @@ If you support universal links, as described in [`Support Universal Links`](http
 
 ##### Handle Incoming User Activity
 
-If you don’t already handle custom URL requests or universal links in your app, you can alternatively support deep links by handling incoming user activities, represented by instances of the [`NSUserActivity`](https://developer.apple.com/documentation/Foundation/NSUserActivity) class. You do this by implementing the [`application(_:continue:restorationHandler:)`](https://developer.apple.com/documentation/UIKit/UIApplicationDelegate/application(_:continue:restorationHandler:)) method in your app delegate, much like you would to support handoff. See [`Index Activities and Navigation Points`](https://developer.apple.comhttps://developer.apple.com/library/content/documentation/General/Conceptual/AppSearch/Activities.html) for a general discussion.
+If you don’t already handle custom URL requests or universal links in your app, you can alternatively support deep links by handling incoming user activities, represented by instances of the [`NSUserActivity`](https://developer.apple.com/documentation/foundation/nsuseractivity) class. You do this by implementing the [`application(_:continue:restorationHandler:)`](https://developer.apple.com/documentation/uikit/uiapplicationdelegate/application(_:continue:restorationhandler:)) method in your app delegate, much like you would to support handoff. See [`Index Activities and Navigation Points`](https://developer.apple.comhttps://developer.apple.com/library/content/documentation/General/Conceptual/AppSearch/Activities.html) for a general discussion.
 
-ClassKit extends the [`NSUserActivity`](https://developer.apple.com/documentation/Foundation/NSUserActivity) class with two properties that help you manage the activity in your handler. First, it adds the [`isClassKitDeepLink`](https://developer.apple.com/documentation/Foundation/NSUserActivity/isClassKitDeepLink) Boolean to indicate if the user activity is related to ClassKit. Second, it provides the [`contextIdentifierPath`](https://developer.apple.com/documentation/Foundation/NSUserActivity/contextIdentifierPath) array to indicate the context that the user selected, which you use to decide what view to show.
+ClassKit extends the [`NSUserActivity`](https://developer.apple.com/documentation/foundation/nsuseractivity) class with two properties that help you manage the activity in your handler. First, it adds the [`isClassKitDeepLink`](https://developer.apple.com/documentation/foundation/nsuseractivity/isclasskitdeeplink) Boolean to indicate if the user activity is related to ClassKit. Second, it provides the [`contextIdentifierPath`](https://developer.apple.com/documentation/foundation/nsuseractivity/contextidentifierpath) array to indicate the context that the user selected, which you use to decide what view to show.
 
 ```swift
 func application(_ application: UIApplication, continue userActivity: NSUserActivity, restorationHandler: @escaping ([Any]?) -> Void) -> Bool {
@@ -54,15 +54,15 @@ func application(_ application: UIApplication, continue userActivity: NSUserActi
 }
 ```
 
-Supporting deep links this way is actually simpler than using custom URL requests, because you don’t have to define a custom URL scheme, and you don’t have to set any properties on the context itself. As long as a context’s [`universalLinkURL`](clscontext/universallinkurl.md) is `nil` — which it is by default — then instead of generating a URL request, the Schoolwork app automatically sends your app an [`NSUserActivity`](https://developer.apple.com/documentation/Foundation/NSUserActivity) instance when the student taps an assigned activity.
+Supporting deep links this way is actually simpler than using custom URL requests, because you don’t have to define a custom URL scheme, and you don’t have to set any properties on the context itself. As long as a context’s [`universalLinkURL`](clscontext/universallinkurl.md) is `nil` — which it is by default — then instead of generating a URL request, the Schoolwork app automatically sends your app an [`NSUserActivity`](https://developer.apple.com/documentation/foundation/nsuseractivity) instance when the student taps an assigned activity.
 
 ## See Also
 
 - [var universalLinkURL: URL?](clscontext/universallinkurl.md)
   A URL that leads to the content in your app associated with the current context.
-- [var isClassKitDeepLink: Bool](../Foundation/NSUserActivity/isClassKitDeepLink.md)
+- [var isClassKitDeepLink: Bool](../foundation/nsuseractivity/isclasskitdeeplink.md)
   A Boolean value that indicates whether a user activity represents a ClassKit context.
-- [var contextIdentifierPath: [String]?](../Foundation/NSUserActivity/contextIdentifierPath.md)
+- [var contextIdentifierPath: [String]?](../foundation/nsuseractivity/contextidentifierpath.md)
   The identifier path associated with a user activity generated by an app that adopts ClassKit.
 
 

@@ -63,7 +63,7 @@ intermediateBuffer.shear(direction: .horizontal,
 
 On return of the horizontal shear function, `destinationBuffer` contains the source image, scaled about its center. The following shows an image of several small dots, magnified 30 times using the Lanczos resampling filter:
 
-![A scaled version of an image of a field of small dots, with ringing artifacts between the dots.](https://docs-assets.developer.apple.com/published/36a18f1e4e1bb3d25f14398d3b31c7ad/lanczos_2x.png)
+![A scaled version of an image of a field of small dots, with ringing artifacts between the dots.](/images/com.apple.accelerate/lanczos_2x.png)
 
 The ringing artifacts appear as faint lines between the magnified dots.
 
@@ -122,7 +122,7 @@ The values that the resampling function generates form a 1D convolution kernel t
 
 ##### Allocate the Resampling Filter Function Memory
 
-The resampling function, the scale factor, and the kernel width combine to determine the memory that the resampling function requires. The sample code uses the [`vImageGetResamplingFilterSize(_:_:_:_:)`](vimagegetresamplingfiltersize(_:_:_:_:).md) function to calculate the size in bytes, and the [`allocate(byteCount:alignment:)`](https://developer.apple.com/documentation/Swift/UnsafeMutableRawPointer/allocate(byteCount:alignment:)) function to allocate the necessary memory.
+The resampling function, the scale factor, and the kernel width combine to determine the memory that the resampling function requires. The sample code uses the [`vImageGetResamplingFilterSize(_:_:_:_:)`](vimagegetresamplingfiltersize(_:_:_:_:).md) function to calculate the size in bytes, and the [`allocate(byteCount:alignment:)`](https://developer.apple.com/documentation/swift/unsafemutablerawpointer/allocate(bytecount:alignment:)) function to allocate the necessary memory.
 
 ```swift
 let kernelWidth: Float = 1.5
@@ -175,7 +175,7 @@ intermediateBuffer.shear(direction: .horizontal,
 
 The following shows the same image that the Lanczos example uses, also maginifed 30 times.
 
-![A scaled version of an image consisting of a field of small dots without ringing artifacts.](https://docs-assets.developer.apple.com/published/35424fd7a65b68ecc48ac63623b5e0f1/linear_2x.png)
+![A scaled version of an image consisting of a field of small dots without ringing artifacts.](/images/com.apple.accelerate/linear_2x.png)
 
 Linear resampling eliminates the ringing artifacts.
 

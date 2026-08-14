@@ -27,13 +27,13 @@ struct PhysicsJoints
 ## Relationships
 
 ### Conforms To
-- [BidirectionalCollection](../Swift/BidirectionalCollection.md)
-- [Collection](../Swift/Collection.md)
-- [Equatable](../Swift/Equatable.md)
-- [ExpressibleByArrayLiteral](../Swift/ExpressibleByArrayLiteral.md)
-- [MutableCollection](../Swift/MutableCollection.md)
-- [RangeReplaceableCollection](../Swift/RangeReplaceableCollection.md)
-- [Sequence](../Swift/Sequence.md)
+- [BidirectionalCollection](../swift/bidirectionalcollection.md)
+- [Collection](../swift/collection.md)
+- [Equatable](../swift/equatable.md)
+- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
+- [MutableCollection](../swift/mutablecollection.md)
+- [RangeReplaceableCollection](../swift/rangereplaceablecollection.md)
+- [Sequence](../swift/sequence.md)
 
 ## See Also
 

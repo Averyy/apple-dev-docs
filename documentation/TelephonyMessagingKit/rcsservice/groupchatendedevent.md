@@ -7,7 +7,6 @@ Event triggered when a group chat is ended.
 
 **Availability**:
 - iOS 26.0+
-- iPadOS 26.0+
 
 ## Declaration
 
@@ -37,8 +36,8 @@ struct GroupChatEndedEvent
 ## Relationships
 
 ### Conforms To
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

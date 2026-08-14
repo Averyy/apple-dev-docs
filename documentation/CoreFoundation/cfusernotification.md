@@ -79,8 +79,8 @@ A user notification displays its dialog as soon as it is created. If any reply i
 ## Relationships
 
 ### Conforms To
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
 
 ## See Also
 

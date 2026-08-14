@@ -35,7 +35,7 @@ var properties: [String : Any]? { get set }
 
 Matchmaking rules may use one or more of these properties to improve matchmaking results and reduce wait times. You set rules in App Store Connect to find players that best match these properties in a reasonable amount of time by loosening the criteria over time.
 
-This property contains key-value pairs where keys are strings with game-specific meanings, such as the skill level, game mode, play style, and other preferences. The keys can be any string, except `gc`, which GameKit reserves. The values need to be types that the [`JSONSerialization`](https://developer.apple.com/documentation/Foundation/JSONSerialization) class can convert to JSON data.
+This property contains key-value pairs where keys are strings with game-specific meanings, such as the skill level, game mode, play style, and other preferences. The keys can be any string, except `gc`, which GameKit reserves. The values need to be types that the [`JSONSerialization`](https://developer.apple.com/documentation/foundation/jsonserialization) class can convert to JSON data.
 
 Set this property before you submit the match request to Game Center. For peer-to-peer matches, use the [`findMatch(for:withCompletionHandler:)`](gkmatchmaker/findmatch(for:withcompletionhandler:).md) method or present the [`GKMatchmakerViewController`](gkmatchmakerviewcontroller.md) interface to submit a match request. For hosted matches, use the [`findMatchedPlayers(_:withCompletionHandler:)`](gkmatchmaker/findmatchedplayers(_:withcompletionhandler:).md) method to include other player properties in the result.
 

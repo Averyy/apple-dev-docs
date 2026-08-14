@@ -30,7 +30,7 @@ importGeoJSON(
 
 #### Return Value
 
-If the data argument is a GeoJSON object instead of a URL and you don’t provide a `callback` function, [`importGeoJSON(data, callback)`](mapkit/importgeojson.md) returns an [`ItemCollection`](itemcollection.md). If the data import fails, this method returns an error.
+If the data argument is a GeoJSON object instead of a URL and you don’t provide a `callback` function, [`importGeoJSON()`](mapkit/importgeojson.md) returns an [`ItemCollection`](itemcollection.md). If the data import fails, this method returns an error.
 
 #### Discussion
 
@@ -40,7 +40,7 @@ This function converts imported GeoJSON data into MapKit JS items, which are [`A
 
 You can customize the import by implementing a [`GeoJSONDelegate`](geojsondelegate.md) delegate:
 
-- If you provide a GeoJSON object for the `data` parameter, [`importGeoJSON(data, callback)`](mapkit/importgeojson.md) returns the result directly. However, the system uses the optional callback, if you provide it.
+- If you provide a GeoJSON object for the `data` parameter, [`importGeoJSON()`](mapkit/importgeojson.md) returns the result directly. However, the system uses the optional callback, if you provide it.
 - If you provide a URL to a GeoJSON file in the `data` parameter, you need to provide a callback function or delegate object.
 
 > **Note**:  GeoJSON is a format that encodes geographic data. See the GeoJSON standard specification [`RFC 7946`](https://developer.apple.comhttps://tools.ietf.org/html/rfc7946) for more information.

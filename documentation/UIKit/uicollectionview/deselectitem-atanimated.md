@@ -20,14 +20,14 @@ func deselectItem(at indexPath: IndexPath, animated: Bool)
 
 #### Discussion
 
-If the [`allowsSelection`](uicollectionview/allowsselection.md) property is [`false`](https://developer.apple.com/documentation/Swift/false), calling this method has no effect.
+If the [`allowsSelection`](uicollectionview/allowsselection.md) property is [`false`](https://developer.apple.com/documentation/swift/false), calling this method has no effect.
 
 This method doesn’t cause any selection-related delegate methods to be called.
 
 ## Parameters
 
 - `indexPath`: The index path of the item to select. Specifying `nil` results in no change to the current selection.
-- `animated`: Specify [`true`](https://developer.apple.com/documentation/Swift/true) to animate the change in the selection or [`false`](https://developer.apple.com/documentation/Swift/false) to make the change without animating it.
+- `animated`: Specify [`true`](https://developer.apple.com/documentation/swift/true) to animate the change in the selection or [`false`](https://developer.apple.com/documentation/swift/false) to make the change without animating it.
 
 ## See Also
 

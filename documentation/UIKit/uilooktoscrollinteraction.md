@@ -22,20 +22,20 @@ class UILookToScrollInteraction
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [Sendable](../Swift/Sendable.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [Sendable](../swift/sendable.md)
 - [UIInteraction](uiinteraction.md)
 
 ## See Also
 
-- [Autosizing views for localization in iOS](../Xcode/autosizing-views-for-localization-in-ios.md)
+- [Autosizing views for localization in iOS](../xcode/autosizing-views-for-localization-in-ios.md)
   Add auto layout constraints to your app to achieve localizable views.
 - [Collection views](collection-views.md)
   Display nested views using a configurable and highly customizable layout.

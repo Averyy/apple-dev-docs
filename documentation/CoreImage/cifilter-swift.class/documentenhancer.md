@@ -30,7 +30,7 @@ This method applies the document enhancer filter to an image. The effect removes
 The document enhancer filter uses the following properties:
 
 - **`inputImage`**: An image with the type [`CIImage`](ciimage.md).
-- **`amount`**: A `float` representing the desired strength of the effect as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+- **`amount`**: A `float` representing the desired strength of the effect as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
 
 The following code creates a filter that adds brightness to the input image:
 
@@ -43,7 +43,7 @@ func documentEnhancer(inputImage: CIImage) -> CIImage {
 }
 ```
 
-![Two pictures of a pink flower surrounded by foliage. The photo on the left shows a single flower photographed close-up, in focus, with good light and no effects. In the photo on the right, a document enhancer filter is applied, resulting in a brighter image with less saturation.](https://docs-assets.developer.apple.com/published/071263d13b6f347f94b06e557292a553/media-3545030%402x.png)
+![Two pictures of a pink flower surrounded by foliage. The photo on the left shows a single flower photographed close-up, in focus, with good light and no effects. In the photo on the right, a document enhancer filter is applied, resulting in a brighter image with less saturation.](/images/com.apple.coreimage/media-3545030@2x.png)
 
 ## See Also
 

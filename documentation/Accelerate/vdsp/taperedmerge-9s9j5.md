@@ -44,7 +44,7 @@ let tapered = vDSP.taperedMerge(vectorA, vectorB)
 
 The following image shows the result of the tapered merge in `tapered`.
 
-![Graphic showing the tapered merge from a high-frequency sine wave to a low-frequency sine wave.](https://docs-assets.developer.apple.com/published/8f7231a827070d459218346b0ddbcfc7/media-3681539%402x.png)
+![Graphic showing the tapered merge from a high-frequency sine wave to a low-frequency sine wave.](/images/com.apple.accelerate/media-3681539@2x.png)
 
 ## Parameters
 

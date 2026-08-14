@@ -33,7 +33,7 @@ protocol UITextDroppable : UITextInput, UITextPasteConfigurationSupporting
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 - [UIKeyInput](uikeyinput.md)
 - [UIPasteConfigurationSupporting](uipasteconfigurationsupporting.md)
 - [UITextInput](uitextinput.md)

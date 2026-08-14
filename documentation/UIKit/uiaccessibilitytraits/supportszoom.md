@@ -22,7 +22,7 @@ static let supportsZoom: UIAccessibilityTraits
 
 #### Discussion
 
-Use this trait to characterize an accessibility element that supports zoom functionality, like letting a person perform expand and pinch gestures to zoom in and out. If you assign this trait to an element, you also need to implement [`accessibilityZoomIn(at:)`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class/accessibilityZoomIn(at:)) and [`accessibilityZoomOut(at:)`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class/accessibilityZoomOut(at:)).
+Use this trait to characterize an accessibility element that supports zoom functionality, like letting a person perform expand and pinch gestures to zoom in and out. If you assign this trait to an element, you also need to implement [`accessibilityZoomIn(at:)`](https://developer.apple.com/documentation/objectivec/nsobject-swift.class/accessibilityzoomin(at:)) and [`accessibilityZoomOut(at:)`](https://developer.apple.com/documentation/objectivec/nsobject-swift.class/accessibilityzoomout(at:)).
 
 For example, the following code shows how to assign this trait to a custom view that allows zooming in to an image:
 

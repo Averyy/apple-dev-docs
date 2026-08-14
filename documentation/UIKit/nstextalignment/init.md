@@ -33,7 +33,7 @@ Use this function when you need to map between the Core Text and UIKit constants
 
 ## See Also
 
-- [init(NSTextAlignment)](../CoreText/CTTextAlignment/init(_:).md)
+- [init(NSTextAlignment)](../coretext/cttextalignment/init(_:).md)
   Converts a UIKit text alignment constant value to the matching constant value that Core Text uses.
 
 

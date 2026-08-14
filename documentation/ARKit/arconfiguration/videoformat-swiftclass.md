@@ -33,7 +33,7 @@ This class is immutable; to set the frame rate and video resolution for an AR se
 ### Inspecting the video source
 - [var captureDevicePosition: AVCaptureDevice.Position](arconfiguration/videoformat-swift.class/capturedeviceposition.md)
   The position of the capture device.
-- [AVCaptureDevice.Position](../AVFoundation/AVCaptureDevice/Position-swift.enum.md)
+- [AVCaptureDevice.Position](../avfoundation/avcapturedevice/position-swift.enum.md)
   Constants that indicate the physical position of a capture device.
 - [var captureDeviceType: AVCaptureDevice.DeviceType](arconfiguration/videoformat-swift.class/capturedevicetype.md)
   The camera that supplies the video format.
@@ -46,15 +46,15 @@ This class is immutable; to set the frame rate and video resolution for an AR se
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCopying](../Foundation/NSCopying.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCopying](../foundation/nscopying.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

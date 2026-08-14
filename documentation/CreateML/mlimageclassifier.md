@@ -31,7 +31,7 @@ When you create the model, you give it a training dataset made up of labeled ima
 
 After training completes, you evaluate the trained model by showing it a testing dataset containing labeled images that the model hasn’t seen before. The metrics that come from this evaluation tell you whether the model performs well enough. For example, you can see how often the elephant and giraffe classifier mistakes a giraffe for an elephant. When the model makes too many mistakes, you can add more or better training data, or change the parameters, and try again.
 
-When your model does perform well enough, you save it as a Core ML model file with the `mlmodel` extension. You can then import this model file into an app—like the [`Classifying Images with Vision and Core ML`](https://developer.apple.com/documentation/CoreML/classifying-images-with-vision-and-core-ml) sample code project—that uses a Core ML model file to classify images.
+When your model does perform well enough, you save it as a Core ML model file with the `mlmodel` extension. You can then import this model file into an app—like the [`Classifying Images with Vision and Core ML`](https://developer.apple.com/documentation/coreml/classifying-images-with-vision-and-core-ml) sample code project—that uses a Core ML model file to classify images.
 
 ## Topics
 
@@ -98,13 +98,13 @@ When your model does perform well enough, you save it as a Core ML model file wi
 ## Relationships
 
 ### Conforms To
-- [Copyable](../Swift/Copyable.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomPlaygroundDisplayConvertible](../Swift/CustomPlaygroundDisplayConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Escapable](../Swift/Escapable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Copyable](../swift/copyable.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomPlaygroundDisplayConvertible](../swift/customplaygrounddisplayconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Escapable](../swift/escapable.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

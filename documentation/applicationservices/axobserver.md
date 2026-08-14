@@ -14,7 +14,7 @@ class AXObserver
 
 #### Overview
 
-An AXObserverRef is a CFType. Like all CFTypes, they are reference counted ([`CFRetain`](https://developer.apple.com/documentation/corefoundation/1521269-cfretain), [`CFRelease`](https://developer.apple.com/documentation/corefoundation/1521153-cfrelease)).
+An AXObserverRef is a CFType. Like all CFTypes, they are reference counted ([`CFRetain`](https://developer.apple.com/documentation/corefoundation/cfretain), [`CFRelease`](https://developer.apple.com/documentation/corefoundation/cfrelease)).
 
 
 ---

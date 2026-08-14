@@ -8,7 +8,7 @@ Observe audio session notifications to ensure that your app responds appropriate
 
 Interruptions are a common part of the iOS and watchOS user experiences. For example, consider the scenario of receiving a phone call while you’re watching a movie in the TV app on your iPhone. In this case, the movie’s audio fades out, playback pauses, and the sound of the call’s ringtone fades in. If you decline the call, control returns to the TV app, and playback begins again as the movie’s audio fades in.
 
-At the center of this behavior is your app’s audio session. As interruptions begin and end, the audio session notifies any registered observers so they can take appropriate action. For example, [`AVPlayer`](https://developer.apple.com/documentation/AVFoundation/AVPlayer) monitors your app’s audio session and automatically pauses playback in response to interruption events. You can monitor these changes by key-value observing the player’s [`timeControlStatus`](https://developer.apple.com/documentation/AVFoundation/AVPlayer/timeControlStatus-swift.property) property, and update your user interface as necessary when the player pauses and resumes playback.
+At the center of this behavior is your app’s audio session. As interruptions begin and end, the audio session notifies any registered observers so they can take appropriate action. For example, [`AVPlayer`](https://developer.apple.com/documentation/avfoundation/avplayer) monitors your app’s audio session and automatically pauses playback in response to interruption events. You can monitor these changes by key-value observing the player’s [`timeControlStatus`](https://developer.apple.com/documentation/avfoundation/avplayer/timecontrolstatus-swift.property) property, and update your user interface as necessary when the player pauses and resumes playback.
 
 ##### Customize the Interruption Behavior
 
@@ -39,7 +39,7 @@ func handleInterruption(notification: Notification) {
 
 ##### Handle Audio Session Interruptions
 
-The posted [`Notification`](https://developer.apple.com/documentation/Foundation/Notification) object contains a populated user-information dictionary that provides the details of the interruption. You determine the type of interruption by retrieving the [`AVAudioSession.InterruptionType`](avaudiosession/interruptiontype.md) value from the [`userInfo`](https://developer.apple.com/documentation/Foundation/Notification/userInfo) dictionary. The interruption type indicates whether the interruption is beginning or ending.
+The posted [`Notification`](https://developer.apple.com/documentation/foundation/notification) object contains a populated user-information dictionary that provides the details of the interruption. You determine the type of interruption by retrieving the [`AVAudioSession.InterruptionType`](avaudiosession/interruptiontype.md) value from the [`userInfo`](https://developer.apple.com/documentation/foundation/notification/userinfo) dictionary. The interruption type indicates whether the interruption is beginning or ending.
 
 ```swift
 func handleInterruption(notification: Notification) {
@@ -71,7 +71,7 @@ func handleInterruption(notification: Notification) {
 }
 ```
 
-If the interruption type is [`AVAudioSession.InterruptionType.ended`](avaudiosession/interruptiontype/ended.md), the [`userInfo`](https://developer.apple.com/documentation/Foundation/Notification/userInfo) dictionary contains an [`AVAudioSession.InterruptionOptions`](avaudiosession/interruptionoptions.md) value, which you use to determine whether playback automatically resumes.
+If the interruption type is [`AVAudioSession.InterruptionType.ended`](avaudiosession/interruptiontype/ended.md), the [`userInfo`](https://developer.apple.com/documentation/foundation/notification/userinfo) dictionary contains an [`AVAudioSession.InterruptionOptions`](avaudiosession/interruptionoptions.md) value, which you use to determine whether playback automatically resumes.
 
 ## See Also
 

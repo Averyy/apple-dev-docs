@@ -22,8 +22,8 @@ func insertChildNode(_ child: SCNNode, at index: Int)
 
 ## Parameters
 
-- `child`: The node to be inserted. > ❗ **Important**:  Raises an exception ([`invalidArgumentException`](https://developer.apple.com/documentation/Foundation/NSExceptionName/invalidArgumentException)) if `child` is `nil`.
-- `index`: The position at which to insert the new child node. > ❗ **Important**:  Raises an exception ([`rangeException`](https://developer.apple.com/documentation/Foundation/NSExceptionName/rangeException)) if `index` is greater than the number of elements in the node’s [`childNodes`](scnnode/childnodes.md) array.
+- `child`: The node to be inserted. > ❗ **Important**:  Raises an exception ([`invalidArgumentException`](https://developer.apple.com/documentation/foundation/nsexceptionname/invalidargumentexception)) if `child` is `nil`.
+- `index`: The position at which to insert the new child node. > ❗ **Important**:  Raises an exception ([`rangeException`](https://developer.apple.com/documentation/foundation/nsexceptionname/rangeexception)) if `index` is greater than the number of elements in the node’s [`childNodes`](scnnode/childnodes.md) array.
 
 ## See Also
 

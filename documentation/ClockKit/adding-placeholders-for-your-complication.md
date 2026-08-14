@@ -8,7 +8,7 @@ Provide the placeholders that users see when adding your complication to a watch
 
 Create placeholders for all of the complication families that your app supports. Ideally, these placeholders should indicate the type of data that your complication usually shows. The system uses these placeholders to represent your complication when the user configures a watch face on Apple Watch.
 
-![A screenshot showing the placeholder for the Moon complication.](https://docs-assets.developer.apple.com/published/39f8980806ddcd864ddd6232bb39f4ed/media-3136367%402x.png)
+![A screenshot showing the placeholder for the Moon complication.](/images/com.apple.clockkit/media-3136367@2x.png)
 
 You can provide placeholders in two ways: you can use static images for your placeholder, or dynamically create localized versions of the placeholders using complication templates. Ideally, your app provides both.
 
@@ -20,7 +20,7 @@ If you don’t provide any placeholders, the system generates a placeholder base
 
 By default, when you create a new watchOS project, or add a watchOS target to an existing project, Xcode adds a Complication group to your WatchKit extension’s asset catalog.
 
-![A screenshot showing the WatchKit Extension’s complication group in the Assets catalog. This group includes placeholders for all the Apple Watch sizes supported by each complication family.](https://docs-assets.developer.apple.com/published/27b75dfef06e17e152bd5945c48ae608/media-3161750%402x.png)
+![A screenshot showing the WatchKit Extension’s complication group in the Assets catalog. This group includes placeholders for all the Apple Watch sizes supported by each complication family.](/images/com.apple.clockkit/media-3161750@2x.png)
 
 Create PNG files to represent a complication for each family your app supports. Avoid using interlaced PNGs. Many complications use only the alpha channel of the image; however, graphic complications use full color images. For more information, see the [`Complications`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/watchos/overview/complications/) section of the Human Interface Guidelines.
 

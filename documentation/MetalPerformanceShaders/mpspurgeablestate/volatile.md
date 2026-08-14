@@ -21,7 +21,7 @@ case volatile
 
 #### Overview
 
-Use this value to indicate that a resource is volatile and, therefore, the system may purge the data if it needs to make more memory available. This value is equivalent to [`MTLPurgeableState.volatile`](https://developer.apple.com/documentation/Metal/MTLPurgeableState/volatile).
+Use this value to indicate that a resource is volatile and, therefore, the system may purge the data if it needs to make more memory available. This value is equivalent to [`MTLPurgeableState.volatile`](https://developer.apple.com/documentation/metal/mtlpurgeablestate/volatile).
 
 ## See Also
 

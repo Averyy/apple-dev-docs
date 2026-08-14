@@ -18,7 +18,7 @@ class CLKComplicationTemplateGraphicRectangularTextGauge
 
 This template belongs to the [`CLKComplicationFamily.graphicRectangular`](clkcomplicationfamily/graphicrectangular.md) family. [`Figure 1`](clkcomplicationtemplategraphicrectangulartextgauge#3030706.md) shows the layout of the image and where the template might appear on the clock face.
 
-![Diagram showing the layout of a header image, header text, body text, and a gauge.](https://docs-assets.developer.apple.com/published/4095e05f1e6e9e5453a8180a33325f81/media-3030706%402x.png)
+![Diagram showing the layout of a header image, header text, body text, and a gauge.](/images/com.apple.clockkit/media-3030706@2x.png)
 
 The following table lists the dimensions of the image you use in this template. All dimensions are in pixels. All images must be specified as @2x images for display on Apple Watch, so the point-based dimensions are half the listed size.
 
@@ -55,13 +55,13 @@ Instead of providing multiple images with different resolutions, you can provide
 ### Inherits From
 - [CLKComplicationTemplate](clkcomplicationtemplate.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCopying](../Foundation/NSCopying.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCopying](../foundation/nscopying.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

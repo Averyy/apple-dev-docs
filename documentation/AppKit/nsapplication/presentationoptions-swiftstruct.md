@@ -25,7 +25,7 @@ There are restrictions on the combination of presentation options that can be se
 - If you specify any of [`disableProcessSwitching`](nsapplication/presentationoptions-swift.struct/disableprocessswitching.md), [`disableForceQuit`](nsapplication/presentationoptions-swift.struct/disableforcequit.md), [`disableSessionTermination`](nsapplication/presentationoptions-swift.struct/disablesessiontermination.md), or [`disableMenuBarTransparency`](nsapplication/presentationoptions-swift.struct/disablemenubartransparency.md), it must be accompanied by either [`hideDock`](nsapplication/presentationoptions-swift.struct/hidedock.md) or [`autoHideDock`](nsapplication/presentationoptions-swift.struct/autohidedock.md).
 - [`autoHideToolbar`](nsapplication/presentationoptions-swift.struct/autohidetoolbar.md) may be used only when both [`fullScreen`](nsapplication/presentationoptions-swift.struct/fullscreen.md) and [`autoHideMenuBar`](nsapplication/presentationoptions-swift.struct/autohidemenubar.md) are also set.
 
-When [`NSApplication`](nsapplication.md) receives a parameter value that does not conform to these requirements, it raises an [`invalidArgumentException`](https://developer.apple.com/documentation/Foundation/NSExceptionName/invalidArgumentException).
+When [`NSApplication`](nsapplication.md) receives a parameter value that does not conform to these requirements, it raises an [`invalidArgumentException`](https://developer.apple.com/documentation/foundation/nsexceptionname/invalidargumentexception).
 
 ## Topics
 
@@ -66,14 +66,14 @@ When [`NSApplication`](nsapplication.md) receives a parameter value that does no
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../Swift/BitwiseCopyable.md)
-- [Equatable](../Swift/Equatable.md)
-- [ExpressibleByArrayLiteral](../Swift/ExpressibleByArrayLiteral.md)
-- [OptionSet](../Swift/OptionSet.md)
-- [RawRepresentable](../Swift/RawRepresentable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
-- [SetAlgebra](../Swift/SetAlgebra.md)
+- [BitwiseCopyable](../swift/bitwisecopyable.md)
+- [Equatable](../swift/equatable.md)
+- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
+- [OptionSet](../swift/optionset.md)
+- [RawRepresentable](../swift/rawrepresentable.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
+- [SetAlgebra](../swift/setalgebra.md)
 
 ## See Also
 

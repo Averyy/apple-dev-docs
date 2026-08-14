@@ -32,7 +32,7 @@ The tab bar interface displays tabs at the bottom of the window for selecting be
 
 Each tab of a tab bar controller interface is associated with a custom view controller. When the user selects a specific tab, the tab bar controller displays the root view of the corresponding view controller, replacing any previous views. (User taps always display the root view of the tab, regardless of which tab was previously selected. This is true even if the tab was already selected.) Because selecting a tab replaces the contents of the interface, the type of interface managed in each tab need not be similar in any way. In fact, tab bar interfaces are commonly used either to present different types of information or to present the same information using a completely different style of interface. The following image shows the tab bar interface presented by the Clock app, each tab of which presents a type of time based information.
 
-![Four screenshots of the Clock app, showing the World Clock, Alarm, Stopwatch, and Timer tabs](https://docs-assets.developer.apple.com/published/9b792d41bfe1e8281689c4cba29bf0a0/media-2934713%402x.png)
+![Four screenshots of the Clock app, showing the World Clock, Alarm, Stopwatch, and Timer tabs](/images/com.apple.uikit/media-2934713@2x.png)
 
 You should never access the tab bar view of a tab bar controller directly. To configure the tabs of a tab bar controller, you assign the view controllers that provide the root view for each tab to the [`viewControllers`](uitabbarcontroller/viewcontrollers.md) property. The order in which you specify the view controllers determines the order in which they appear in the tab bar. When setting this property, you should also assign a value to the [`selectedViewController`](uitabbarcontroller/selectedviewcontroller.md) property to indicate which view controller is selected initially. (You can also select view controllers by array index using the [`selectedIndex`](uitabbarcontroller/selectedindex.md) property.) When you embed the tab bar controller’s view (obtained using the inherited [`view`](uiviewcontroller/view.md) property) in your app window, the tab bar controller automatically selects that view controller and displays its contents, resizing them as needed to fit the tab bar interface.
 
@@ -44,7 +44,7 @@ As the user interacts with a tab bar interface, the tab bar controller object se
 
 Because the [`UITabBarController`](uitabbarcontroller.md) class inherits from the [`UIViewController`](uiviewcontroller.md) class, tab bar controllers have their own view that’s accessible through the [`view`](uiviewcontroller/view.md) property. The view for a tab bar controller is just a container for a tab bar view and the view containing your custom content. The tab bar view provides the selection controls for the user and consists of one or more tab bar items. The following image shows how these views are assembled to present the overall tab bar interface. Although the items in the tab bar and toolbar views can change, the views that manage them don’t. Only the custom content view changes to reflect the view controller for the currently selected tab.
 
-![A diagram of the views that are stacked together in a tab bar interface](https://docs-assets.developer.apple.com/published/5b64300bc1148d4c5228708f98e4fec5/media-2934714%402x.png)
+![A diagram of the views that are stacked together in a tab bar interface](/images/com.apple.uikit/media-2934714@2x.png)
 
 You can use navigation controllers or custom view controllers as the root view controller for a tab. If the root view controller is a navigation controller, the tab bar controller makes further adjustments to the size of the displayed navigation content so that it doesn’t overlap the tab bar. Any views you display in a tab bar interface should therefore have their [`autoresizingMask`](uiview/autoresizingmask-swift.property.md) property set to resize the view appropriately under any conditions.
 
@@ -152,17 +152,17 @@ Tab bar controllers serve the same purpose in tvOS as in iOS, but provide slight
 ### Inherits From
 - [UIViewController](uiviewcontroller.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCoding](../Foundation/NSCoding.md)
-- [NSExtensionRequestHandling](../Foundation/NSExtensionRequestHandling.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [NSTouchBarProvider](../AppKit/NSTouchBarProvider.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCoding](../foundation/nscoding.md)
+- [NSExtensionRequestHandling](../foundation/nsextensionrequesthandling.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSTouchBarProvider](../appkit/nstouchbarprovider.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 - [UIActivityItemsConfigurationProviding](uiactivityitemsconfigurationproviding.md)
 - [UIAppearanceContainer](uiappearancecontainer.md)
 - [UIContentContainer](uicontentcontainer.md)

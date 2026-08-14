@@ -44,10 +44,10 @@ In the `identity` phase, scroll transitions should generally not make any visual
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../Swift/BitwiseCopyable.md)
-- [Copyable](../Swift/Copyable.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
+- [BitwiseCopyable](../swift/bitwisecopyable.md)
+- [Copyable](../swift/copyable.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
 
 ## See Also
 

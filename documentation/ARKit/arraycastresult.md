@@ -17,7 +17,7 @@ class ARRaycastResult
 
 #### Overview
 
-If you use [`ARView`](https://developer.apple.com/documentation/RealityKit/ARView) or [`ARSCNView`](arscnview.md) as your renderer, you can search for real-world surfaces at a screen point using the [`raycast(from:allowing:alignment:)`](https://developer.apple.com/documentation/RealityKit/ARView/raycast(from:allowing:alignment:)), and [`raycastQuery(from:allowing:alignment:)`](arscnview/raycastquery(from:allowing:alignment:).md) functions, respectively.
+If you use [`ARView`](https://developer.apple.com/documentation/realitykit/arview) or [`ARSCNView`](arscnview.md) as your renderer, you can search for real-world surfaces at a screen point using the [`raycast(from:allowing:alignment:)`](https://developer.apple.com/documentation/realitykit/arview/raycast(from:allowing:alignment:)), and [`raycastQuery(from:allowing:alignment:)`](arscnview/raycastquery(from:allowing:alignment:).md) functions, respectively.
 
 If you use a custom renderer, you can find real-world positions using screen points with:
 
@@ -45,14 +45,14 @@ For tracked raycasting, you call [`trackedRaycast(_:updateHandler:)`](arsession/
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

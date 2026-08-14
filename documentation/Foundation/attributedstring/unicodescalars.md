@@ -24,7 +24,7 @@ var unicodeScalars: AttributedString.UnicodeScalarView { get set }
 
 Use this property when you want to split the attributed string by Unicode scalar instead of grapheme cluster. This is useful when you need to carefully control insertion points or render the content.
 
-You can also use this property to mutate the attributed string, using [`RangeReplaceableCollection`](https://developer.apple.com/documentation/Swift/RangeReplaceableCollection) methods, such as `insert(_:at:)` and [`append(_:)`](https://developer.apple.com/documentation/Swift/RangeReplaceableCollection/append(_:)). Inserted characters inherit any attributes present at the insertion point.
+You can also use this property to mutate the attributed string, using [`RangeReplaceableCollection`](https://developer.apple.com/documentation/swift/rangereplaceablecollection) methods, such as `insert(_:at:)` and [`append(_:)`](https://developer.apple.com/documentation/swift/rangereplaceablecollection/append(_:)). Inserted characters inherit any attributes present at the insertion point.
 
 ## See Also
 

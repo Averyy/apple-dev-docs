@@ -7,7 +7,6 @@ Alternative handles for remote end.
 
 **Availability**:
 - iOS 26.0+
-- iPadOS 26.0+
 
 ## Declaration
 

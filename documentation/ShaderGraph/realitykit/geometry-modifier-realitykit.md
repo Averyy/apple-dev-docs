@@ -35,7 +35,7 @@ A function that manipulates the location of a model’s vertices, run once per v
 
 The Geometry Modifier node can be used to cause a material to affect the geometry of any object to which it’s applied, in addition to the objects texture. Connect the output of the Geometry modifier node to the `Custom Geometry Modifier` output of your material. Below is an example of a simple node graph that uses the Geometry Modifier node to alter the *Y* model positions of vertices.
 
-![None](https://docs-assets.developer.apple.com/published/00136a30e1f473e17c13809511e24380/GeometryModifierGraph.png)
+![None](/images/ShaderGraph-Docs/GeometryModifierGraph.png)
 
 Use the Noise 2D node to procedurally generate an amount to offset the *Y* position of each vertex. You can also use the noise to add shadows to the texture in order to show the change in model position more clearly. Below, the resulting material applies to a plane.
 

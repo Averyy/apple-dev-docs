@@ -13,8 +13,8 @@ framework: HIG
 
 An iMessage app can help people share content, collaborate, and even play games with others in a conversation; stickers are images that people can use to decorate a conversation.
 
-![A sketch of the iMessage App Store icon. The image is overlaid with rectangular and circular grid lines and is tinted blue to subtly reflect the blue in the original six-color Apple logo.](https://docs-assets.developer.apple.com/published/b8963a90b4d1a310fea45a636efa7eb7/technologies-iMessage-Apps-intro~dark%402x.png)
-An iMessage app or sticker pack is available within the context of a Messages conversation and also in effects in both Messages and FaceTime. You can create an iMessage app or sticker pack as a standalone app or as an app extension within your iOS or iPadOS app. For developer guidance, see [Messages](../Messages.md) and [Adding Sticker packs and iMessage apps to the system Stickers app, Messages camera, and FaceTime](../Messages/adding-sticker-packs-and-imessage-apps-to-the-system-stickers-app-messages-camera-and-facetime.md).
+![A sketch of the iMessage App Store icon. The image is overlaid with rectangular and circular grid lines and is tinted blue to subtly reflect the blue in the original six-color Apple logo.](/images/com.apple.HIG/technologies-iMessage-Apps-intro~dark@2x.png)
+An iMessage app or sticker pack is available within the context of a Messages conversation and also in effects in both Messages and FaceTime. You can create an iMessage app or sticker pack as a standalone app or as an app extension within your iOS or iPadOS app. For developer guidance, see [Messages](../messages.md) and [Adding Sticker packs and iMessage apps to the system Stickers app, Messages camera, and FaceTime](../messages/adding-sticker-packs-and-imessage-apps-to-the-system-stickers-app-messages-camera-and-facetime.md).
 
 ## Best practices
 **Prefer providing one primary experience in your iMessage app.** People are in a conversational flow when they choose your app, so your functionality or content needs to be easy to understand and immediately available. If you want to provide multiple types of functionality or different collections of content, consider creating a separate iMessage app for each one.
@@ -43,10 +43,10 @@ To ensure that your icon looks great in any context and on various devices, crea
 
 ### Sticker sizes
 Messages supports small, regular, and large stickers. Pick the size that works best for your content and prepare all of your stickers at that size; don’t mix sizes within a single sticker pack. Messages displays stickers in a grid, organized differently for different sizes.
-![An illustration showing a grid of small stickers in the bottom half of an iPhone screen. Eight stickers are visible in the area, followed by a partial row of four, arranged in three rows.](https://docs-assets.developer.apple.com/published/d4bd81a3cb3d0ae27d5fdd2e76f97457/sticker-sizes-small~dark%402x.png)
-![An illustration showing a grid of regular stickers in the bottom half of an iPhone screen. Six stickers are visible in the area, in two rows of three.](https://docs-assets.developer.apple.com/published/6ece4cc5bef109e850fcb0151997de78/sticker-sizes-regular~dark%402x.png)
-![An illustration showing a grid of large stickers in the bottom half of an iPhone screen. Two stickers are fully visible in the area, followed by a partial row of two additional stickers.](https://docs-assets.developer.apple.com/published/e6741929590d96dbd0a22e2e2e59b296/sticker-sizes-large~dark%402x.png)
-Create your sticker images using the following @3x dimensions for the sticker size you chose. If necessary, the system generates @2x and @1x versions by downscaling the images at runtime. For developer guidance, see [MSStickerSize](../Messages/MSStickerSize.md).
+![An illustration showing a grid of small stickers in the bottom half of an iPhone screen. Eight stickers are visible in the area, followed by a partial row of four, arranged in three rows.](/images/com.apple.HIG/sticker-sizes-small~dark@2x.png)
+![An illustration showing a grid of regular stickers in the bottom half of an iPhone screen. Six stickers are visible in the area, in two rows of three.](/images/com.apple.HIG/sticker-sizes-regular~dark@2x.png)
+![An illustration showing a grid of large stickers in the bottom half of an iPhone screen. Two stickers are fully visible in the area, followed by a partial row of two additional stickers.](/images/com.apple.HIG/sticker-sizes-large~dark@2x.png)
+Create your sticker images using the following @3x dimensions for the sticker size you chose. If necessary, the system generates @2x and @1x versions by downscaling the images at runtime. For developer guidance, see [MSStickerSize](../messages/msstickersize.md).
 | Sticker size | @3x dimensions (pixels) |
 | --- | --- |
 | Small | 300x300 |
@@ -71,8 +71,8 @@ A sticker file must be 500 KB or smaller in size. For each supported format, the
 [iMessage Apps and Stickers](https://developer.apple.com/imessage/)
 
 #### Developer documentation
-[Messages](../Messages.md)
-[Adding Sticker packs and iMessage apps to the system Stickers app, Messages camera, and FaceTime](../Messages/adding-sticker-packs-and-imessage-apps-to-the-system-stickers-app-messages-camera-and-facetime.md) — Messages
+[Messages](../messages.md)
+[Adding Sticker packs and iMessage apps to the system Stickers app, Messages camera, and FaceTime](../messages/adding-sticker-packs-and-imessage-apps-to-the-system-stickers-app-messages-camera-and-facetime.md) — Messages
 
 #### Videos
 - [Express Yourself!](https://developer.apple.com/videos/play/wwdc2017/820) - iMessage Apps help people easily create and share content, play games, and collaborate with friends without needing to leave the conversation. Explore how you can design iMessage apps and sticker packs that are perfectly suited for a deeply social context.

@@ -30,9 +30,9 @@ This method applies the kaleidoscope tile filter to an image. The effect produce
 The kaleidoscope tile filter uses the following properties:
 
 - **`inputImage`**: An image with the type [`CIImage`](ciimage.md).
-- **`center`**: A set of coordinates marking the center of the image as a [`CGPoint`](https://developer.apple.com/documentation/CoreFoundation/CGPoint).
-- **`angle`**: A `float` representing the direction of distortion, in radians as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
-- **`count`**: A `float` representing the number of reflections in the pattern as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+- **`center`**: A set of coordinates marking the center of the image as a [`CGPoint`](https://developer.apple.com/documentation/corefoundation/cgpoint).
+- **`angle`**: A `float` representing the direction of distortion, in radians as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
+- **`count`**: A `float` representing the number of reflections in the pattern as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
 
 The following code creates a filter that results in the creation of a kaleidoscope effect from the input image:
 
@@ -47,7 +47,7 @@ func kaleidoscope(inputImage: CIImage) -> CIImage {
 }
 ```
 
-![Two photographs. The photo on the left is of a bouquet of colorful flowers up close with good lighting and focus. In the photo on the right, a kaleidoscope filter is applied, resulting in an small segment of the image being repeated around 360 degrees.](https://docs-assets.developer.apple.com/published/dd280f88d3dc1783e908c2a52cdb35e4/media-3599884%402x.png)
+![Two photographs. The photo on the left is of a bouquet of colorful flowers up close with good lighting and focus. In the photo on the right, a kaleidoscope filter is applied, resulting in an small segment of the image being repeated around 360 degrees.](/images/com.apple.coreimage/media-3599884@2x.png)
 
 ## See Also
 

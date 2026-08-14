@@ -22,7 +22,7 @@ class WKApplicationRefreshBackgroundTask
 
 Don’t subclass or create instances of this class. Instead, schedule a background app refresh task by calling [`scheduleBackgroundRefresh(withPreferredDate:userInfo:scheduledCompletion:)`](wkextension/schedulebackgroundrefresh(withpreferreddate:userinfo:scheduledcompletion:).md). When the system triggers the background task, it launches your app in the background, instantiates a [`WKApplicationRefreshBackgroundTask`](wkapplicationrefreshbackgroundtask.md) object, and passes the task object to your app delegate’s [`handle(_:)`](wkextensiondelegate/handle(_:)-92ulv.md) method.
 
-> **Note**:  In watchOS 9 and later, SwiftUI Background tasks are the preferred way to handle background tasks and interactions. For more information, [`backgroundTask(_:action:)`](https://developer.apple.com/documentation/SwiftUI/Scene/backgroundTask(_:action:)).
+> **Note**:  In watchOS 9 and later, SwiftUI Background tasks are the preferred way to handle background tasks and interactions. For more information, [`backgroundTask(_:action:)`](https://developer.apple.com/documentation/swiftui/scene/backgroundtask(_:action:)).
 
 The system budgets the number of background refresh tasks available to an app. In general, the system performs approximately four tasks per hour for each app with a complication on the active watch face. All the complications on the current watch face share this budget. After you exhaust the budget, the system delays your requests until more time becomes available.
 
@@ -31,14 +31,14 @@ The system budgets the number of background refresh tasks available to an app. I
 ### Inherits From
 - [WKRefreshBackgroundTask](wkrefreshbackgroundtask.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

@@ -17,13 +17,13 @@ struct MediaEnvironment
 
 #### Overview
 
-To stream media in your browser app, create an instance of `MediaEnvironment` and call [`activate()`](mediaenvironment/activate().md) before beginning media playback or capture, for example, by calling the [`AVCaptureSession`](https://developer.apple.com/documentation/AVFoundation/AVCaptureSession) class’s [`makeCaptureSession()`](mediaenvironment/makecapturesession().md) method.
+To stream media in your browser app, create an instance of `MediaEnvironment` and call [`activate()`](mediaenvironment/activate().md) before beginning media playback or capture, for example, by calling the [`AVCaptureSession`](https://developer.apple.com/documentation/avfoundation/avcapturesession) class’s [`makeCaptureSession()`](mediaenvironment/makecapturesession().md) method.
 
 To finish media playback or capture, call [`suspend()`](mediaenvironment/suspend().md).
 
 If your app captures media input or prepares streaming content in a rendering extension, call [`activate()`](mediaenvironment/activate().md) before [`grantCapability(_:)`](renderingprocess/grantcapability(_:).md) to grant the media playback and capture capability, which you create with [`ProcessCapability.mediaPlaybackAndCapture(environment:)`](processcapability/mediaplaybackandcapture(environment:).md).
 
-Call [`createXPCRepresentation()`](mediaenvironment/createxpcrepresentation().md) and use [`XPC`](https://developer.apple.com/documentation/XPC) to send the media environment to a rendering extension. Additionally, grant the same capability to the web content extension for a page that plays or captures media by calling [`grantCapability(_:)`](webcontentprocess/grantcapability(_:).md).
+Call [`createXPCRepresentation()`](mediaenvironment/createxpcrepresentation().md) and use [`XPC`](https://developer.apple.com/documentation/xpc) to send the media environment to a rendering extension. Additionally, grant the same capability to the web content extension for a page that plays or captures media by calling [`grantCapability(_:)`](webcontentprocess/grantcapability(_:).md).
 
 ## Topics
 

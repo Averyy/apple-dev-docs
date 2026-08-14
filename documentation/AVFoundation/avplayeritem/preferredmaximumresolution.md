@@ -22,7 +22,7 @@ var preferredMaximumResolution: CGSize { get set }
 
 #### Discussion
 
-Defaults to [`CGSizeZero`](https://developer.apple.com/documentation/CoreGraphics/CGSizeZero), which indicates there is no limit on the video resolution. Any other value indicates a preferred maximum video resolution. This property only applies to HTTP Live Streaming assets.
+Defaults to [`CGSizeZero`](https://developer.apple.com/documentation/coregraphics/cgsizezero), which indicates there is no limit on the video resolution. Any other value indicates a preferred maximum video resolution. This property only applies to HTTP Live Streaming assets.
 
 ## See Also
 

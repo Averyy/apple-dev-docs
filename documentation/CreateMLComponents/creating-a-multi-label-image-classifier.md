@@ -8,7 +8,7 @@ Train a machine learning model to assign multiple labels to an image.
 
 A single-label image classifier takes an input image and assigns one label, which helps identify the most relevant subject in the image. However, there’s often additional information and context in an image that identifying the most relevant subject doesn’t consider. A multi-label image classifier takes an input image and assigns multiple labels. A multi-label classifier is better at describing an image where there are multiple subjects, or when the environment is relevant.
 
-Training a multi-label image classifier is similar to training a single-label image classifier. You collect and label images, build an estimator pipeline, train and evaluate the model, and export the model to use with [`Vision`](https://developer.apple.com/documentation/Vision). For more information about single-label image classifiers, see [`Creating an Image Classifier Model`](https://developer.apple.com/documentation/CreateML/creating-an-image-classifier-model).
+Training a multi-label image classifier is similar to training a single-label image classifier. You collect and label images, build an estimator pipeline, train and evaluate the model, and export the model to use with [`Vision`](https://developer.apple.com/documentation/vision). For more information about single-label image classifiers, see [`Creating an Image Classifier Model`](https://developer.apple.com/documentation/createml/creating-an-image-classifier-model).
 
 ##### Prepare Your Training Data
 
@@ -27,7 +27,7 @@ First, collect images and assign labels. Put all images in a folder and create a
 ]
 ```
 
-Create a [`Decodable`](https://developer.apple.com/documentation/Swift/Decodable) structure and populate it with the file names and labels from your JSON file. Then, convert them to an [`AnnotatedFeature`](annotatedfeature.md) structure.
+Create a [`Decodable`](https://developer.apple.com/documentation/swift/decodable) structure and populate it with the file names and labels from your JSON file. Then, convert them to an [`AnnotatedFeature`](annotatedfeature.md) structure.
 
 ```swift
 // Define an annotation.
@@ -94,7 +94,7 @@ print(metrics.meanAveragePrecision)
 
 ##### Export the Model to Use with Vision
 
-After you train the model, you can export it as a [`Core ML`](https://developer.apple.com/documentation/CoreML) model.
+After you train the model, you can export it as a [`Core ML`](https://developer.apple.com/documentation/coreml) model.
 
 ```swift
 // Export to Core ML
@@ -102,7 +102,7 @@ let modelURL = URL(filePath: "/path/to/model")
 try model.export(to: modelURL)
 ```
 
-Then, use [`Vision`](https://developer.apple.com/documentation/Vision) to classify images in your app.
+Then, use [`Vision`](https://developer.apple.com/documentation/vision) to classify images in your app.
 
 ```swift
 import Vision
@@ -121,7 +121,7 @@ if let observations = request.results as? [VNClassificationObservation] {
 }
 ```
 
-The observations include all labels and their probabilities. This includes labels for which the model predicted a low probability. Including all observations results in high recall but low precision, in other words, your model prioritizes predicting additional labels. To balance the precision and recall, include only the labels that have a high probability. To do this you can choose a probability threshold for each label, or use one of the methods from [`Vision`](https://developer.apple.com/documentation/Vision). The [`hasMinimumPrecision(_:forRecall:)`](https://developer.apple.com/documentation/Vision/VNClassificationObservation/hasMinimumPrecision(_:forRecall:)) and [`hasMinimumRecall(_:forPrecision:)`](https://developer.apple.com/documentation/Vision/VNClassificationObservation/hasMinimumRecall(_:forPrecision:)) methods allow you to choose only observations that strike a specific balance between precision and recall.
+The observations include all labels and their probabilities. This includes labels for which the model predicted a low probability. Including all observations results in high recall but low precision, in other words, your model prioritizes predicting additional labels. To balance the precision and recall, include only the labels that have a high probability. To do this you can choose a probability threshold for each label, or use one of the methods from [`Vision`](https://developer.apple.com/documentation/vision). The [`hasMinimumPrecision(_:forRecall:)`](https://developer.apple.com/documentation/vision/vnclassificationobservation/hasminimumprecision(_:forrecall:)) and [`hasMinimumRecall(_:forPrecision:)`](https://developer.apple.com/documentation/vision/vnclassificationobservation/hasminimumrecall(_:forprecision:)) methods allow you to choose only observations that strike a specific balance between precision and recall.
 
 ## See Also
 

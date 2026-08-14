@@ -21,7 +21,7 @@ var videoRect: CGRect { get }
 
 #### Discussion
 
-The size and position of a rectangle depends on the aspect ratio of the media (16:9 or 4:3), the layer’s [`bounds`](https://developer.apple.com/documentation/QuartzCore/CALayer/bounds), and the value of its [`videoGravity`](avplayerlayer/videogravity.md) property.
+The size and position of a rectangle depends on the aspect ratio of the media (16:9 or 4:3), the layer’s [`bounds`](https://developer.apple.com/documentation/quartzcore/calayer/bounds), and the value of its [`videoGravity`](avplayerlayer/videogravity.md) property.
 
 This property is key-value observable.
 

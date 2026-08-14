@@ -24,7 +24,7 @@ Use this property to look up the query parameters of the HTTP request that was s
 ## See Also
 
 - [func preparedURLRequest() -> URLRequest!](slrequest/preparedurlrequest.md)
-  Returns an authorized URL request that can be sent using an [`NSURLConnection`](https://developer.apple.com/documentation/Foundation/NSURLConnection) object.
+  Returns an authorized URL request that can be sent using an [`NSURLConnection`](https://developer.apple.com/documentation/foundation/nsurlconnection) object.
 - [var requestMethod: SLRequestMethod](slrequest/requestmethod.md)
   The method to use for this request.
 - [enum SLRequestMethod](slrequestmethod.md)

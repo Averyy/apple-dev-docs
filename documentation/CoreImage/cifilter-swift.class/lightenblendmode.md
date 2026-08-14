@@ -43,7 +43,7 @@ func lightenBlendMode(inputImage: CIImage, backgroundImage: CIImage) -> CIImage 
 }
 ```
 
-![The image on the top left shows a beach with multiple palm trees and a rainbow arching across the blue sky.  The image below is a gradient image displaying a gradual color shift from purple to a dark orange. The image on the right shows the output from applying a lighten blend mode filter. The result displays colors from both images with the brightness of the beach image.](https://docs-assets.developer.apple.com/published/d5b0a6807e69a0e688169bf4d166626b/media-3546398%402x.png)
+![The image on the top left shows a beach with multiple palm trees and a rainbow arching across the blue sky.  The image below is a gradient image displaying a gradual color shift from purple to a dark orange. The image on the right shows the output from applying a lighten blend mode filter. The result displays colors from both images with the brightness of the beach image.](/images/com.apple.coreimage/media-3546398@2x.png)
 
 ## See Also
 

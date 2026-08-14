@@ -19,7 +19,7 @@ var currentLaneGuidance: CPLaneGuidance? { get set }
 
 #### Discussion
 
-First, add the required [`CPLaneGuidance`](cplaneguidance.md) objects to the session using [`add(_:)`](CPNavigationSession/add(_:)-93qpu.md), then set this property with the current lane guidance.
+First, add the required [`CPLaneGuidance`](cplaneguidance.md) objects to the session using [`add(_:)`](cpnavigationsession/add(_:)-93qpu.md), then set this property with the current lane guidance.
 
 Set this property to `nil` if there’s no current lane guidance.
 

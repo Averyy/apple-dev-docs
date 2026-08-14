@@ -22,7 +22,7 @@ Gets the value for the specified key, in a variety of forms.
 
 ## Parameters
 
-- `value`: reference to variable to store the entry's value
+- `value`: on return, set to the data type reference to variable to store the entry's value
 - `text`: if non-zero, on return points to the string description of the field, or NULL if no text found.
 
 ## See Also

@@ -20,7 +20,7 @@ var interactionActivityTrackingBaseName: String? { get set }
 
 #### Discussion
 
-To help you investigate perfomance issues in your app, UIKit annotates significant user interactions with signpost messages. It creates activities that span the duration of the interaction and sets one of the [`ProcessInfo.ActivityOptions`](https://developer.apple.com/documentation/Foundation/ProcessInfo/ActivityOptions) for tracking: [`animationTrackingEnabled`](https://developer.apple.com/documentation/Foundation/ProcessInfo/ActivityOptions/animationTrackingEnabled) or [`trackingEnabled`](https://developer.apple.com/documentation/Foundation/ProcessInfo/ActivityOptions/trackingEnabled).
+To help you investigate perfomance issues in your app, UIKit annotates significant user interactions with signpost messages. It creates activities that span the duration of the interaction and sets one of the [`ProcessInfo.ActivityOptions`](https://developer.apple.com/documentation/foundation/processinfo/activityoptions) for tracking: [`animationTrackingEnabled`](https://developer.apple.com/documentation/foundation/processinfo/activityoptions/animationtrackingenabled) or [`trackingEnabled`](https://developer.apple.com/documentation/foundation/processinfo/activityoptions/trackingenabled).
 
 Use this property to customize the tracking name the activity uses in the signpost messages. Scroll views that can derive their enclosing view controller also use the tracking name to annotate interactive dragging and programmatic scrolling events.
 
@@ -67,7 +67,7 @@ For example, UIKit uses the tracking name `UINC-MyListTableViewController-Appear
 
 - [Recording Performance Data](../os/recording-performance-data.md)
   Add signposts to record interesting time-based events.
-- [Improving app responsiveness](../Xcode/improving-app-responsiveness.md)
+- [Improving app responsiveness](../xcode/improving-app-responsiveness.md)
   Create a user experience that feels responsive by removing hangs and hitches from your app.
 
 

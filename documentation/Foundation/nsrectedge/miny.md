@@ -17,7 +17,7 @@ case minY
 
 #### Discussion
 
-This is equivalent to [`CGRectEdge.minYEdge`](https://developer.apple.com/documentation/CoreFoundation/CGRectEdge/minYEdge).
+This is equivalent to [`CGRectEdge.minYEdge`](https://developer.apple.com/documentation/corefoundation/cgrectedge/minyedge).
 
 ## See Also
 

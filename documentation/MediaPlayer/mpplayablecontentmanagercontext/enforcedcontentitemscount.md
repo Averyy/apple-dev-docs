@@ -19,7 +19,7 @@ var enforcedContentItemsCount: Int { get }
 
 #### Discussion
 
-This property returns [`NSIntegerMax`](https://developer.apple.com/documentation/ObjectiveC/NSIntegerMax) when the content server doesn’t limit the maximum number of items.
+This property returns [`NSIntegerMax`](https://developer.apple.com/documentation/objectivec/nsintegermax) when the content server doesn’t limit the maximum number of items.
 
 ## See Also
 

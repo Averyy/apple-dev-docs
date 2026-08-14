@@ -34,7 +34,7 @@ The receiver, initialized to a predicate of type `type` formed by combining the 
 
 ## See Also
 
-- [Displaying searchable content by using a search controller](../UIKit/displaying-searchable-content-by-using-a-search-controller.md)
+- [Displaying searchable content by using a search controller](../uikit/displaying-searchable-content-by-using-a-search-controller.md)
   Create a user interface with searchable content in a table view.
 - [init(leftExpression: NSExpression, rightExpression: NSExpression, customSelector: Selector)](nscomparisonpredicate/init(leftexpression:rightexpression:customselector:).md)
   Creates a predicate that you form by combining specified left and right expressions using a specified selector.

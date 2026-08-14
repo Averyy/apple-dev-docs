@@ -19,7 +19,7 @@ var largeTitleTextAttributes: [NSAttributedString.Key : Any]? { get set }
 
 #### Discussion
 
-You can specify the font, text color, text shadow color, and text shadow offset for the title in the text attributes dictionary, using the text attribute keys described in [`NSAttributedString.Key`](https://developer.apple.com/documentation/Foundation/NSAttributedString/Key).
+You can specify the font, text color, text shadow color, and text shadow offset for the title in the text attributes dictionary, using the text attribute keys described in [`NSAttributedString.Key`](https://developer.apple.com/documentation/foundation/nsattributedstring/key).
 
 ## See Also
 

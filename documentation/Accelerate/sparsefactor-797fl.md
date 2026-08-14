@@ -30,7 +30,7 @@ Use this function to solve a system of linear equations using a symbolic factori
 
 The following figure shows two systems of equations where the coefficient matrix is sparse:
 
-![A mathematical equation that has two stacked sets of three simultaneous equations on the left. Each equation has three unknowns. The same sets of simultaneous equations appear on the right as two matrix equations, A x equals B. Each matrix equation consists of a three-by-three matrix multiplied by a three-element column matrix that equals a three-element column matrix](https://docs-assets.developer.apple.com/published/7183115249663e3ee5beedf41262d86d/media-3703903%402x.png)
+![A mathematical equation that has two stacked sets of three simultaneous equations on the left. Each equation has three unknowns. The same sets of simultaneous equations appear on the right as two matrix equations, A x equals B. Each matrix equation consists of a three-by-three matrix multiplied by a three-element column matrix that equals a three-element column matrix](/images/com.apple.accelerate/media-3703903@2x.png)
 
 The following code solves these two systems by calling [`SparseFactor(_:_:)`](sparsefactor(_:_:)-58oq8.md) and [`SparseFactor(_:_:)`](sparsefactor(_:_:)-1p6im.md):
 

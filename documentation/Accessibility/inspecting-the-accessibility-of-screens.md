@@ -12,7 +12,7 @@ To open Accessibility Inspector, open Xcode and choose Xcode > Open Developer To
 
 ##### Target Your App
 
-In Accessibility Inspector, the target menu displays a list of connected devices and apps you can inspect. By default, it displays apps running on your Mac. If you’re developing a macOS app, pick your app from the list of running apps. If you’re developing for iOS, iPadOS, watchOS, or tvOS, select the name of the device on which the app is running, then pick the app from the processes menu. For information about targeting the correct device, see [`Running your app on simulated or physical devices`](https://developer.apple.com/documentation/Xcode/running-your-app-on-simulated-or-physical-devices).
+In Accessibility Inspector, the target menu displays a list of connected devices and apps you can inspect. By default, it displays apps running on your Mac. If you’re developing a macOS app, pick your app from the list of running apps. If you’re developing for iOS, iPadOS, watchOS, or tvOS, select the name of the device on which the app is running, then pick the app from the processes menu. For information about targeting the correct device, see [`Running your app on simulated or physical devices`](https://developer.apple.com/documentation/xcode/running-your-app-on-simulated-or-physical-devices).
 
 > **Note**: Accessibility Inspector targets the current foreground app by default.
 
@@ -20,11 +20,11 @@ Once you select your app, Accessibility Inspector displays detailed information 
 
 **Accessibility Inspector window**:
 
-![The accessibility inspector inspecting an app with the Quote button selected.](https://docs-assets.developer.apple.com/published/6b8f456f85928baa8a78e6f33426c197/accessibility-inspector-window-for-quote%402x.png)
+![The accessibility inspector inspecting an app with the Quote button selected.](/images/com.apple.Accessibility/accessibility-inspector-window-for-quote@2x.png)
 
 **Corresponding iOS app**:
 
-![An iOS app being inspected by Accessibility Inspector. The Quote button is highlighted by a green rectangle that indicates it's the current target of inspection.](https://docs-assets.developer.apple.com/published/1192ccce7d0d1de86d82bf893894e186/quote-button-highlighted-in-green%402x.png)
+![An iOS app being inspected by Accessibility Inspector. The Quote button is highlighted by a green rectangle that indicates it's the current target of inspection.](/images/com.apple.Accessibility/quote-button-highlighted-in-green@2x.png)
 
 ##### Inspect Individual Elements
 

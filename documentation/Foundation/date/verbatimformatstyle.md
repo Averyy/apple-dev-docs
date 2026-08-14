@@ -40,19 +40,19 @@ struct VerbatimFormatStyle
 ## Relationships
 
 ### Conforms To
-- [Copyable](../Swift/Copyable.md)
-- [CustomConsumingRegexComponent](../Swift/CustomConsumingRegexComponent.md)
-- [Decodable](../Swift/Decodable.md)
+- [Copyable](../swift/copyable.md)
+- [CustomConsumingRegexComponent](../swift/customconsumingregexcomponent.md)
+- [Decodable](../swift/decodable.md)
 - [DiscreteFormatStyle](discreteformatstyle.md)
-- [Encodable](../Swift/Encodable.md)
-- [Equatable](../Swift/Equatable.md)
-- [Escapable](../Swift/Escapable.md)
+- [Encodable](../swift/encodable.md)
+- [Equatable](../swift/equatable.md)
+- [Escapable](../swift/escapable.md)
 - [FormatStyle](formatstyle.md)
-- [Hashable](../Swift/Hashable.md)
+- [Hashable](../swift/hashable.md)
 - [ParseableFormatStyle](parseableformatstyle.md)
-- [RegexComponent](../Swift/RegexComponent.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [RegexComponent](../swift/regexcomponent.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

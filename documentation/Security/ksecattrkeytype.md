@@ -26,7 +26,7 @@ let kSecAttrKeyType: CFString
 
 #### Discussion
 
-The corresponding value is of type [`CFNumber`](https://developer.apple.com/documentation/CoreFoundation/CFNumber) and indicates the algorithm associated with this cryptographic key. See [`Key Type Values`](item-attribute-keys-and-values#Key-Type-Values.md) for a list of valid values.
+The corresponding value is of type [`CFNumber`](https://developer.apple.com/documentation/corefoundation/cfnumber) and indicates the algorithm associated with this cryptographic key. See [`Key Type Values`](item-attribute-keys-and-values#Key-Type-Values.md) for a list of valid values.
 
 
 ---

@@ -27,7 +27,7 @@ class Format
 
 A format object provides information about a media capture format to use with a capture device, such as video frame rates and zoom factors.
 
-You can find more information about a capture format using its associated Core Media format description (see [`CMFormatDescription`](https://developer.apple.com/documentation/CoreMedia/CMFormatDescription)), available using the [`formatDescription`](avcapturedevice/format/formatdescription.md) property.
+You can find more information about a capture format using its associated Core Media format description (see [`CMFormatDescription`](https://developer.apple.com/documentation/coremedia/cmformatdescription)), available using the [`formatDescription`](avcapturedevice/format/formatdescription.md) property.
 
 ## Topics
 
@@ -178,14 +178,14 @@ You can find more information about a capture format using its associated Core M
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

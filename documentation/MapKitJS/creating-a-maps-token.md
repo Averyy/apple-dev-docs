@@ -29,7 +29,7 @@ If you need to revoke your token, click Revoke. This invalidates the token and y
 
 #### Signing a Token Dynamically
 
-To sign a token dynamically with the private key for Maps Server API, create and sign the token following the steps in [`Creating and using tokens with Maps Server API`](https://developer.apple.com/documentation/AppleMapsServerAPI/creating-and-using-tokens-with-maps-server-api#Available-token-scopes) and set the `scope` to `mapkit_js`. You must also set an `origin` value.
+To sign a token dynamically with the private key for Maps Server API, create and sign the token following the steps in [`Creating and using tokens with Maps Server API`](https://developer.apple.com/documentation/applemapsserverapi/creating-and-using-tokens-with-maps-server-api) and set the `scope` to `mapkit_js`. You must also set an `origin` value.
 
 ## See Also
 

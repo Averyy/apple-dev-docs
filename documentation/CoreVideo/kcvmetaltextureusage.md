@@ -21,7 +21,7 @@ let kCVMetalTextureUsage: CFString
 
 #### Discussion
 
-The default value is [`unknown`](https://developer.apple.com/documentation/Metal/MTLTextureUsage/unknown). Use only values which are valid for [`MTLTextureUsage`](https://developer.apple.com/documentation/Metal/MTLTextureUsage).
+The default value is [`unknown`](https://developer.apple.com/documentation/metal/mtltextureusage/unknown). Use only values which are valid for [`MTLTextureUsage`](https://developer.apple.com/documentation/metal/mtltextureusage).
 
 ## See Also
 

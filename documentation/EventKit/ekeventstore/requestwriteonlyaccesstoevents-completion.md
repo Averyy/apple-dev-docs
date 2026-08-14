@@ -33,7 +33,7 @@ Your app isn’t blocked while the person decides to grant or deny permission. B
 
 If the person grants permission, your app receives write-only access to the event store. Your app can create events, but it can’t access any of the existing calendars and events on the device, including events your app created. API calls to read event data from the event store don’t return any events.
 
-> **Note**:  Your iOS or Mac Catalyst app can present an [`EKEventEditViewController`](https://developer.apple.com/documentation/EventKitUI/EKEventEditViewController) to let your user create events without requesting access to the event store. If your app creates events without using [`EKEventEditViewController`](https://developer.apple.com/documentation/EventKitUI/EKEventEditViewController), you must request at least write-only access to event data.
+> **Note**:  Your iOS or Mac Catalyst app can present an [`EKEventEditViewController`](https://developer.apple.com/documentation/eventkitui/ekeventeditviewcontroller) to let your user create events without requesting access to the event store. If your app creates events without using [`EKEventEditViewController`](https://developer.apple.com/documentation/eventkitui/ekeventeditviewcontroller), you must request at least write-only access to event data.
 
 ## Parameters
 
@@ -51,11 +51,11 @@ If the person grants permission, your app receives write-only access to the even
   The current authorization status for a specific entity type.
 - [typealias EKEventStoreRequestAccessCompletionHandler](ekeventstorerequestaccesscompletionhandler.md)
   The signature for a closure that EventKit calls when requesting access to event and reminder data.
-- [NSCalendarsFullAccessUsageDescription](../BundleResources/Information-Property-List/NSCalendarsFullAccessUsageDescription.md)
+- [NSCalendarsFullAccessUsageDescription](../bundleresources/information-property-list/nscalendarsfullaccessusagedescription.md)
   A message that tells people why the app is requesting access to read and write their calendar data.
-- [NSCalendarsWriteOnlyAccessUsageDescription](../BundleResources/Information-Property-List/NSCalendarsWriteOnlyAccessUsageDescription.md)
+- [NSCalendarsWriteOnlyAccessUsageDescription](../bundleresources/information-property-list/nscalendarswriteonlyaccessusagedescription.md)
   A message that tells people why the app is requesting access to create calendar events.
-- [NSRemindersFullAccessUsageDescription](../BundleResources/Information-Property-List/NSRemindersFullAccessUsageDescription.md)
+- [NSRemindersFullAccessUsageDescription](../bundleresources/information-property-list/nsremindersfullaccessusagedescription.md)
   A message that tells people why the app is requesting access to read and write their reminders data.
 
 

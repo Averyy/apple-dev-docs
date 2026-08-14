@@ -21,7 +21,7 @@ A result code. See [`Result Codes`](core_printing#1670007.md).
 ## Parameters
 
 - `settingSrc`: The print settings object to duplicate.
-- `settingDest`: The print settings object to receive the copied settings. On return, this object contains the same settings as the   object.
+- `settingDest`: The print settings object to receive the copied settings. On return, this object contains the same settings as the `settingSrc` object.
 
 ## See Also
 

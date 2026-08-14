@@ -25,7 +25,7 @@ After calling this method, Core Image draws content to the specified Quartz grap
 
 When you create a [`CIContext`](cicontext.md) object using a Quartz graphics context, any transformations that are already set on the Quartz graphics context affect drawing to that context.
 
-> **Note**:  To obtain a Core Image context for the current AppKit drawing context in macOS, use the [`NSGraphicsContext`](https://developer.apple.com/documentation/AppKit/NSGraphicsContext) [`ciContext`](https://developer.apple.com/documentation/AppKit/NSGraphicsContext/ciContext) property.
+> **Note**:  To obtain a Core Image context for the current AppKit drawing context in macOS, use the [`NSGraphicsContext`](https://developer.apple.com/documentation/appkit/nsgraphicscontext) [`ciContext`](https://developer.apple.com/documentation/appkit/nsgraphicscontext/cicontext) property.
 
 ## Parameters
 

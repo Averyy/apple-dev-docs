@@ -16,7 +16,7 @@ func VTRegisterProfessionalVideoWorkflowVideoDecoders()
 
 #### Discussion
 
-This function loads the video decoders within the client’s `/Library/Video/Professional Video Workflow Plug-Ins/` directory, if any are present. Additionally, calling this function indicates to Video Toolbox that your app supports [`MediaExtension`](https://developer.apple.com/documentation/MediaExtension) video decoders. Any associated video RAW Processors will also be supported as well.
+This function loads the video decoders within the client’s `/Library/Video/Professional Video Workflow Plug-Ins/` directory, if any are present. Additionally, calling this function indicates to Video Toolbox that your app supports [`MediaExtension`](https://developer.apple.com/documentation/mediaextension) video decoders. Any associated video RAW Processors will also be supported as well.
 
 > **Note**: This functionality is only intended for apps that support professional video workflows. It isn’t recommended for network-facing applications such as web browsers, messaging clients, mail clients, and so on.
 

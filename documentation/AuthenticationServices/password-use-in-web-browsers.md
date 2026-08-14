@@ -6,7 +6,7 @@ Register and authenticate website users by using passwords.
 
 #### Overview
 
-If your browser app uses [`WKWebView`](https://developer.apple.com/documentation/WebKit/WKWebView) to display web content, [`WebKit`](https://developer.apple.com/documentation/WebKit) automatically handles `WebAuthentication` challenges in webpages and requests credentials from the person using the browser. If your browser app uses an alternative web browser engine — for example, an alternate browser engine for iPhone that you write using [`BrowserEngineKit`](https://developer.apple.com/documentation/BrowserEngineKit) — when the website makes a `WebAuthentication` challenge, use [`ASAuthorizationController`](asauthorizationcontroller.md) to discover and use credentials to respond to the challenge.  [`ASAuthorizationController`](asauthorizationcontroller.md) works with passwords the system stores on the keychain or that third-party credential managers control.
+If your browser app uses [`WKWebView`](https://developer.apple.com/documentation/webkit/wkwebview) to display web content, [`WebKit`](https://developer.apple.com/documentation/webkit) automatically handles `WebAuthentication` challenges in webpages and requests credentials from the person using the browser. If your browser app uses an alternative web browser engine — for example, an alternate browser engine for iPhone that you write using [`BrowserEngineKit`](https://developer.apple.com/documentation/browserenginekit) — when the website makes a `WebAuthentication` challenge, use [`ASAuthorizationController`](asauthorizationcontroller.md) to discover and use credentials to respond to the challenge.  [`ASAuthorizationController`](asauthorizationcontroller.md) works with passwords the system stores on the keychain or that third-party credential managers control.
 
 ## Topics
 
@@ -24,7 +24,7 @@ If your browser app uses [`WKWebView`](https://developer.apple.com/documentation
 
 ## See Also
 
-- [Password AutoFill](../Security/password-autofill.md)
+- [Password AutoFill](../security/password-autofill.md)
   Streamline your app’s login and onboarding procedures.
 - [class ASAuthorizationPasswordProvider](asauthorizationpasswordprovider.md)
   A mechanism for generating requests to perform keychain credential sharing.

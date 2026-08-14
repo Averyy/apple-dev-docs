@@ -39,7 +39,7 @@ Image(systemName: "folder")
     .overlay(Text("❤️"), alignment: .bottom)
 ```
 
-![View showing placement of a heart overlaid onto a folder icon.](https://docs-assets.developer.apple.com/published/4f0a125e7d66518fa559f8899e888853/View-overlay-1%402x.png)
+![View showing placement of a heart overlaid onto a folder icon.](/images/com.apple.SwiftUI/View-overlay-1@2x.png)
 
 ## Parameters
 

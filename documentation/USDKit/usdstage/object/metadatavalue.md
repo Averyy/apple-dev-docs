@@ -28,8 +28,8 @@ Types that conform to this protocol can be authored as metadata using [`USDStage
 ## Relationships
 
 ### Inherits From
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 ### Conforming Types
 - [USDToken](usdtoken.md)
 - [USDValue.Matrix2d](usdvalue/matrix2d.md)

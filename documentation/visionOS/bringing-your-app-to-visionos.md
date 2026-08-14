@@ -20,11 +20,11 @@ To update your app to build specifically for the visionOS SDK:
 2. Navigate to the General tab.
 3. In Supported Destinations, click the Add (+) button to add a new destination and select the Apple Vision option.
 
-![The supported destinations section of an Xcode project that includes visionOS as a destination.](https://docs-assets.developer.apple.com/published/aa91e8f952e75c82a0b13aa985443fd5/bringingExistingAppsToVision%402x.png)
+![The supported destinations section of an Xcode project that includes visionOS as a destination.](/images/com.apple.visionOS/bringingExistingAppsToVision@2x.png)
 
 When you add Apple Vision as a destination, Xcode makes some one-time changes to your project’s build settings. After you add the destination, you can modify your project’s build settings and build phases to customize the build behavior specifically for visionOS. For example, you might remove dependencies for the visionOS version of your app, or change the set of source files you want to compile.
 
-For more information about how to update a target’s configuration, see [`Customizing the build phases of a target`](https://developer.apple.com/documentation/Xcode/customizing-the-build-phases-of-a-target).
+For more information about how to update a target’s configuration, see [`Customizing the build phases of a target`](https://developer.apple.com/documentation/xcode/customizing-the-build-phases-of-a-target).
 
 ##### Update Your Code for Features That Are Unavailable in Visionos
 
@@ -61,18 +61,18 @@ When you can’t isolate the code to separate source files, use conditional stat
 #endif
 ```
 
-For additional information about how to isolate code to the iOS version of your app, see [`Running code on a specific platform or OS version`](https://developer.apple.com/documentation/Xcode/running-code-on-a-specific-version).
+For additional information about how to isolate code to the iOS version of your app, see [`Running code on a specific platform or OS version`](https://developer.apple.com/documentation/xcode/running-code-on-a-specific-version).
 
 ##### Update Your Interface to Take Advantage of Visionos Features
 
 After your existing code runs correctly in visionOS, look for ways to improve the experience you offer on the platform. In visionOS, you can display content using more than just windows. Think about ways to incorporate the following elements into your interface:
 
 - **Depth.** Many SwiftUI views use visual effects to add depth. Look for similar ways to incorporate depth into your own custom views. For guidance on how best to incorporate depth and 3D elements in your interface, see [`Human Interface Guidelines`](https://developer.apple.com/design/human-interface-guidelines).
-- **3D content.** Think about where you might incorporate 3D models and shapes into your content. Use RealityKit to implement your content, and a [`RealityView`](https://developer.apple.com/documentation/RealityKit/RealityView) to present that content from your app. See [`Adding 3D content to your app`](adding-3d-content-to-your-app.md).
+- **3D content.** Think about where you might incorporate 3D models and shapes into your content. Use RealityKit to implement your content, and a [`RealityView`](https://developer.apple.com/documentation/realitykit/realityview) to present that content from your app. See [`Adding 3D content to your app`](adding-3d-content-to-your-app.md).
 - **Immersive experiences.** Present a space to immerse someone in your app’s content. Spaces let you place content anywhere in a person’s surroundings. You can also create fully immersive experiences that display only your app’s content. See [`Creating fully immersive experiences in your app`](creating-fully-immersive-experiences.md).
-- **Interactions with someone’s surroundings.** Use ARKit to facilitate interactions between your content and the surroundings. For example, detect planar surfaces to use as anchor points for your content. See [`ARKit`](https://developer.apple.com/documentation/ARKit) for more details.
+- **Interactions with someone’s surroundings.** Use ARKit to facilitate interactions between your content and the surroundings. For example, detect planar surfaces to use as anchor points for your content. See [`ARKit`](https://developer.apple.com/documentation/arkit) for more details.
 - **Color.** Standard visionOS windows typically use the system-defined glass material, which lets light and objects from people’s physical surroundings show through. Use color sparingly to draw attention to specific elements. Refer to the visionOS platform specific guidelines in the Human Interface Guidelines [`Color`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/color#visionOS) documentation for best practices.
-- **System-provided UI components.** Take advantage of the components built for visionOS in SwiftUI. Components like [`TabView`](https://developer.apple.com/documentation/SwiftUI/TabView) appear on the bottom of iOS or iPadOS apps and on the left side of visionOS apps. Other UI elements, like ornaments, are introduced specifically for visionOS. Using these elements keeps your interface adaptable between platforms and provides hover effects for free.
+- **System-provided UI components.** Take advantage of the components built for visionOS in SwiftUI. Components like [`TabView`](https://developer.apple.com/documentation/swiftui/tabview) appear on the bottom of iOS or iPadOS apps and on the left side of visionOS apps. Other UI elements, like ornaments, are introduced specifically for visionOS. Using these elements keeps your interface adaptable between platforms and provides hover effects for free.
 
 Additional information on how to design your layout for visionOS is available on the Human Interface Guidelines [`Layout`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/layout#visionOS) page.
 
@@ -82,24 +82,24 @@ Additional information on how to design your layout for visionOS is available on
 
 If your existing app is built with UIKit, consider your implementation plan for visionOS. Although you can still use UIKit and load iOS storyboards into your app, you can’t include visionOS-specific or 3D content without using SwiftUI.
 
-Consider migrating your app to SwiftUI. The declarative syntax gives you less code to maintain and makes it easier to validate that your interface does what you want. SwiftUI is also unified across all Apple platforms and adapts to device-specific behavior without extra work. To learn more about migrating to the SwiftUI lifecycle, see [`Migrating to the SwiftUI life cycle`](https://developer.apple.com/documentation/SwiftUI/Migrating-to-the-SwiftUI-life-cycle). You can also continue using UIKit views in a SwiftUI app with [`UIViewRepresentable`](https://developer.apple.com/documentation/SwiftUI/UIViewRepresentable).
+Consider migrating your app to SwiftUI. The declarative syntax gives you less code to maintain and makes it easier to validate that your interface does what you want. SwiftUI is also unified across all Apple platforms and adapts to device-specific behavior without extra work. To learn more about migrating to the SwiftUI lifecycle, see [`Migrating to the SwiftUI life cycle`](https://developer.apple.com/documentation/swiftui/migrating-to-the-swiftui-life-cycle). You can also continue using UIKit views in a SwiftUI app with [`UIViewRepresentable`](https://developer.apple.com/documentation/swiftui/uiviewrepresentable).
 
-If you plan to continue using UIKit, read [`Create adaptive layouts in UIKit`](bringing-your-app-to-visionos#Create-adaptive-layouts-in-UIKit.md) to ensure your layout looks good on visionOS. The WWDC23 video [`Meet UIKit for Spatial Computing`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2023/111215/) walks through bringing your UIKit app to visionOS and shows how to take advantage of native features for visionOS by including SwiftUI views using [`UIHostingController`](https://developer.apple.com/documentation/SwiftUI/UIHostingController).
+If you plan to continue using UIKit, read [`Create adaptive layouts in UIKit`](bringing-your-app-to-visionos#Create-adaptive-layouts-in-UIKit.md) to ensure your layout looks good on visionOS. The WWDC23 video [`Meet UIKit for Spatial Computing`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2023/111215/) walks through bringing your UIKit app to visionOS and shows how to take advantage of native features for visionOS by including SwiftUI views using [`UIHostingController`](https://developer.apple.com/documentation/swiftui/uihostingcontroller).
 
-For a tutorial on mixing SwiftUI and UIKit content, see [`Interfacing with UIKit`](https://developer.apple.com/tutorials/SwiftUI/interfacing-with-uikit).
+For a tutorial on mixing SwiftUI and UIKit content, see [`Interfacing with UIKit`](https://developer.apple.com/tutorials/swiftui/interfacing-with-uikit).
 
 ##### Create Adaptive Layouts in Uikit
 
-Although visionOS is built for SwiftUI adoption, you can continue to use and build out your UIKit codebase as well. If your UIKit app uses hardcoded values or relies on [`UIScreen`](https://developer.apple.com/documentation/UIKit/UIScreen) for layout, the first step to migrating your app to visionOS is to start using an adaptable layout. When you make decisions using device details, your app might produce inconsistent or erroneous results on an unknown device type, or it might fail altogether. Find solutions that rely on environmental information, rather than the device type. For example, SwiftUI and UIKit start layout using the app’s window size, which isn’t necessarily the same size as the device’s display.
+Although visionOS is built for SwiftUI adoption, you can continue to use and build out your UIKit codebase as well. If your UIKit app uses hardcoded values or relies on [`UIScreen`](https://developer.apple.com/documentation/uikit/uiscreen) for layout, the first step to migrating your app to visionOS is to start using an adaptable layout. When you make decisions using device details, your app might produce inconsistent or erroneous results on an unknown device type, or it might fail altogether. Find solutions that rely on environmental information, rather than the device type. For example, SwiftUI and UIKit start layout using the app’s window size, which isn’t necessarily the same size as the device’s display.
 
 > **Note**: Device-specific information is available when you absolutely need it, but validate the information you receive and provide reasonable default behavior for unexpected values.
 
 Think about ways to create adaptive layouts using the following techniques:
 
-- **Use stack views.** [`UIStackView`](https://developer.apple.com/documentation/UIKit/UIStackView) objects adjust the position of their contained views automatically when interface dimensions change. Alternatively, [`Auto Layout`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/UserExperience/Conceptual/AutolayoutPG/index.html) constraints let you specify the rules that determine the size and position of the views in your interface.
-- **Stay within layout margins.** Read [`Positioning content within layout margins`](https://developer.apple.com/documentation/UIKit/positioning-content-within-layout-margins) to set up constraints that respect layout margins and don’t crowd other content.
-- **Respect the safe area.** Place views so they’re not obstructed by other content. Each view has a [`UILayoutGuide`](https://developer.apple.com/documentation/UIKit/UILayoutGuide) that helps you create constraints to position your views within the safe area. Read [`Positioning content relative to the safe area`](https://developer.apple.com/documentation/UIKit/positioning-content-relative-to-the-safe-area) for guidance.
-- **Adapt based on changes in UITraitCollection.** Write code to adjust your app’s layout according to changes in the iOS interface elements, such as size class, display scale, and layout direction. Read [`UITraitCollection`](https://developer.apple.com/documentation/UIKit/UITraitCollection) for more information.
+- **Use stack views.** [`UIStackView`](https://developer.apple.com/documentation/uikit/uistackview) objects adjust the position of their contained views automatically when interface dimensions change. Alternatively, [`Auto Layout`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/UserExperience/Conceptual/AutolayoutPG/index.html) constraints let you specify the rules that determine the size and position of the views in your interface.
+- **Stay within layout margins.** Read [`Positioning content within layout margins`](https://developer.apple.com/documentation/uikit/positioning-content-within-layout-margins) to set up constraints that respect layout margins and don’t crowd other content.
+- **Respect the safe area.** Place views so they’re not obstructed by other content. Each view has a [`UILayoutGuide`](https://developer.apple.com/documentation/uikit/uilayoutguide) that helps you create constraints to position your views within the safe area. Read [`Positioning content relative to the safe area`](https://developer.apple.com/documentation/uikit/positioning-content-relative-to-the-safe-area) for guidance.
+- **Adapt based on changes in UITraitCollection.** Write code to adjust your app’s layout according to changes in the iOS interface elements, such as size class, display scale, and layout direction. Read [`UITraitCollection`](https://developer.apple.com/documentation/uikit/uitraitcollection) for more information.
 
 ##### Update Your Apps Assets
 

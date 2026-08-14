@@ -31,9 +31,9 @@ struct OpenOptions
 ## Relationships
 
 ### Conforms To
-- [ExpressibleByArrayLiteral](../Swift/ExpressibleByArrayLiteral.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

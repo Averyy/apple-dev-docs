@@ -23,16 +23,16 @@ struct SuggestedActionsView
 
 The suggested actions view displays inline actions for a messaging app, next to a message, using context you provide. This view animates suggested actions as they become available. If no suggested actions are available, the view’s size is zero and remains zero until they become available. At size zero, a `SuggestedActionsView` doesn’t affect your surrounding layout. As a result, place the view for every message in a conversation. It doesn’t introduce gaps between messages if a message doesn’t have suggested actions.
 
-> **Note**: To display suggested actions, add the [`Suggested Actions`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.suggested-actions) entitlement to your app target.
+> **Note**: To display suggested actions, add the [`Suggested Actions`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.suggested-actions) entitlement to your app target.
 
 #### Customize the Appearance
 
 To customize a `SuggestedActionsView`, apply standard SwiftUI view modifiers to change its appearance. Additionally, the view reads the following modifiers from its parent views:
 
-- [`tint(_:)`](https://developer.apple.com/documentation/SwiftUI/View/tint(_:)),
-- [`foregroundStyle(_:)`](https://developer.apple.com/documentation/SwiftUI/View/foregroundStyle(_:)),
-- [`font(_:)`](https://developer.apple.com/documentation/SwiftUI/View/font(_:))
-- [`buttonBorderShape(_:)`](https://developer.apple.com/documentation/SwiftUI/View/buttonBorderShape(_:))
+- [`tint(_:)`](https://developer.apple.com/documentation/swiftui/view/tint(_:)),
+- [`foregroundStyle(_:)`](https://developer.apple.com/documentation/swiftui/view/foregroundstyle(_:)),
+- [`font(_:)`](https://developer.apple.com/documentation/swiftui/view/font(_:))
+- [`buttonBorderShape(_:)`](https://developer.apple.com/documentation/swiftui/view/buttonbordershape(_:))
 
 #### Generate Suggested Actions for Future Use
 
@@ -65,9 +65,9 @@ SuggestedActionsView(
 ## Relationships
 
 ### Conforms To
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
-- [View](../SwiftUI/View.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
+- [View](../swiftui/view.md)
 
 
 ---

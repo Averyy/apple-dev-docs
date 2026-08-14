@@ -15,7 +15,7 @@ Draw with Metal and OpenGL in the same view using an interoperable texture.
 
 If you’re developing a new app and migrating legacy OpenGL code to Metal, interoperable textures make it easy for you to see the results live as you go.
 
-You can render Metal or OpenGL content into either view by initializing a [`CVPixelBuffer`](https://developer.apple.com/documentation/CoreVideo/cvpixelbuffer-q2e) that operates as an interoperable texture. When you enable the pixel buffer’s Metal and OpenGL compatibility flags, the textures are capable of being drawn to—and presented by—either rendering technology.
+You can render Metal or OpenGL content into either view by initializing a [`CVPixelBuffer`](https://developer.apple.com/documentation/corevideo/cvpixelbuffer-q2e) that operates as an interoperable texture. When you enable the pixel buffer’s Metal and OpenGL compatibility flags, the textures are capable of being drawn to—and presented by—either rendering technology.
 
 If you’re working with an app you’ve already deployed, the interoperable textures give you the option of incrementally releasing updates throughout the porting process.
 
@@ -157,7 +157,7 @@ When porting your app, statement by statement, begin by using Metal to render in
 3. OpenGL clears the background by applying a red color.
 4. OpenGL renders a quad with black text and the interoperable texture.
 
-![Screenshot of the app showing, in the background, a red color cleared by OpenGL, a green quad cleared by Metal with a black text overlay rendered by OpenGL, and a color swatch with white text rendered by Metal.](https://docs-assets.developer.apple.com/published/f1dd9258fc759141f2f1ba10fa8de19b/opengl-interoperability-1-gl-view.png)
+![Screenshot of the app showing, in the background, a red color cleared by OpenGL, a green quad cleared by Metal with a black text overlay rendered by OpenGL, and a color swatch with white text rendered by Metal.](/images/com.apple.metal/opengl-interoperability-1-gl-view.png)
 
 ##### Draw Opengl Content in a Metal View
 
@@ -168,7 +168,7 @@ Draw OpenGL content into a Metal view when you’re ready to use Metal but have 
 3. Metal clears the background by applying a green color.
 4. Metal renders a quad with black text and the interoperable texture.
 
-![Screenshot of the app showing, in the background, a green color cleared by Metal, a red quad cleared by OpenGL with a black text overlay rendered by Metal, and a color swatch with white text rendered by OpenGL.](https://docs-assets.developer.apple.com/published/1f7d3a50ed7b0e2020ab046a4f8e3142/opengl-interoperability-2-metal-view.png)
+![Screenshot of the app showing, in the background, a green color cleared by Metal, a red quad cleared by OpenGL with a black text overlay rendered by Metal, and a color swatch with white text rendered by OpenGL.](/images/com.apple.metal/opengl-interoperability-2-metal-view.png)
 
 ## See Also
 

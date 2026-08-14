@@ -29,7 +29,7 @@ Use a `mapkit.LookAroundPreview` to create preview imagery for a specific geogra
 
 The following example contains the two elements needed to display a Look Around view on a webpage:
 
-![A screenshot showing a map view with a marker showing New York Public Library in New York, NY, and a smaller Look Around preview framing the library on the top left.](https://docs-assets.developer.apple.com/published/e7f9457ee4a834f156cf05cfd1e69252/LookAroundPreview-cl-01%402x.png)
+![A screenshot showing a map view with a marker showing New York Public Library in New York, NY, and a smaller Look Around preview framing the library on the top left.](/images/com.apple.mapkitjs/LookAroundPreview-cl-01@2x.png)
 
 The HTML code below implements a webpage that renders a `container` which has both a map and a Look Around preview.
 

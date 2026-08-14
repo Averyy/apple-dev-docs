@@ -23,7 +23,7 @@ class MPSCNNNeuronLinear
 
 For each pixel in an image, the filter applies the following function:
 
-![f(x) = a * x + b](https://docs-assets.developer.apple.com/published/b44cee07d047df5bb5c706c0a9e0a6a4/media-2903542%402x.png)
+![f(x) = a * x + b](/images/com.apple.metalperformanceshaders/media-2903542@2x.png)
 
 ## Topics
 
@@ -36,15 +36,15 @@ For each pixel in an image, the filter applies the following function:
 ### Inherits From
 - [MPSCNNNeuron](mpscnnneuron.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCoding](../Foundation/NSCoding.md)
-- [NSCopying](../Foundation/NSCopying.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [NSSecureCoding](../Foundation/NSSecureCoding.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCoding](../foundation/nscoding.md)
+- [NSCopying](../foundation/nscopying.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSSecureCoding](../foundation/nssecurecoding.md)
 
 ## See Also
 

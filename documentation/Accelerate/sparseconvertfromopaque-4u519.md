@@ -69,7 +69,7 @@ let yValues = [Float](unsafeUninitializedCapacity: xValues.count) {
 
 On return, `yValues` contains the values `[140.0, 0.0, 0.0, 200.0]`.
 
-![A mathematical formula that describes a four-by-four sparse matrix multiplied by a four-element dense vector. The result is a four-element dense vector.](https://docs-assets.developer.apple.com/published/2649171e31e8401d1e63c35aee865971/media-3702381%402x.png)
+![A mathematical formula that describes a four-by-four sparse matrix multiplied by a four-element dense vector. The result is a four-element dense vector.](/images/com.apple.accelerate/media-3702381@2x.png)
 
 ## Parameters
 

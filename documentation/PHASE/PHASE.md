@@ -17,9 +17,9 @@ Create dynamic audio experiences in your game or app that react to events and cu
 
 Use PHASE (Physical Audio Spatialization Engine) to provide complex, dynamic audio experiences in your games and apps. With PHASE, you can control sound layers and adjust audio parameters in real time. As you develop your app, dynamic integration with your app’s visual scene enables audio to react to logic and visual changes automatically. The framework supports various audio hardware, which enables your app to provide a consistent spatial audio experience across platforms and output devices like headphones and speakers.
 
-![Illustration of in-game scenes that demonstrate PHASE features. At left, a polygon contains a dragon with a callout that reads Volumetric sound source. A sound wave emits from the dragon to a hero. A tree structure extends outward from the dragon with a callout that reads Sound event hierarchy. The tree structure highlights a specific path from its root node to one of its leaf nodes. The leaf node contains a sound wave, which indicates a particular sound wave that emits from the dragon. At right, a dragon fireball collides with a rock. Sound waves emit outward from the fireball, except in the area behind the rock. A callout extends from the area that reads Geometric sound occlusion.](https://docs-assets.developer.apple.com/published/41e1fab50a65e7a67ff5ebdbbf5af38e/media-3855995%402x.png)
+![Illustration of in-game scenes that demonstrate PHASE features. At left, a polygon contains a dragon with a callout that reads Volumetric sound source. A sound wave emits from the dragon to a hero. A tree structure extends outward from the dragon with a callout that reads Sound event hierarchy. The tree structure highlights a specific path from its root node to one of its leaf nodes. The leaf node contains a sound wave, which indicates a particular sound wave that emits from the dragon. At right, a dragon fireball collides with a rock. Sound waves emit outward from the fireball, except in the area behind the rock. A callout extends from the area that reads Geometric sound occlusion.](/images/com.apple.phase/media-3855995@2x.png)
 
-> **Note**:  If the audio in your game or app doesn’t incorporate environmental events or cues, you can use [`AVFoundation`](https://developer.apple.com/documentation/AVFoundation) or [`Core Audio`](https://developer.apple.com/documentation/CoreAudio).
+> **Note**:  If the audio in your game or app doesn’t incorporate environmental events or cues, you can use [`AVFoundation`](https://developer.apple.com/documentation/avfoundation) or [`Core Audio`](https://developer.apple.com/documentation/coreaudio).
 
 ##### Integrate Audio with Visual Simulation
 
@@ -37,7 +37,7 @@ Apps and games that model a detailed environment involve substantial revision du
   Position sound from a specific direction and automatically raise or lower volume based on the environment.
 - [Personalizing spatial audio in your app](personalizing-spatial-audio-in-your-app.md)
   Enhance the realism of spatial audio output by tracking a person’s head movement and accounting for their personal spatial audio profile.
-- [PHASE updates](../Updates/PHASE.md)
+- [PHASE updates](../updates/phase.md)
   Learn about important changes to PHASE.
 ### Setup
 - [class PHASEEngine](phaseengine.md)

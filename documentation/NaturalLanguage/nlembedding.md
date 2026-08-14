@@ -28,7 +28,7 @@ class NLEmbedding
 
 Use an [`NLEmbedding`](nlembedding.md) to find similar strings based on the proximity of their vectors. The *vocabulary* is the entire set of strings in an embedding. Each string in the vocabulary has a vector, which is an array of doubles, and each double corresponds to a dimension in the embedding. An [`NLEmbedding`](nlembedding.md) uses these vectors to determine the distance between two strings, or to find the nearest neighbors of a string in the vocabulary. The higher the similarity of any two strings, the smaller the distance is between them.
 
-[`Natural Language`](NaturalLanguage.md) provides built-in word embeddings that you can retrieve by using the [`wordEmbedding(for:)`](nlembedding/wordembedding(for:).md) method. You can also compile your own custom embedding into an efficient, searchable, on-disk representation. Typically, you compile an embedding by using Create ML’s [`MLWordEmbedding`](https://developer.apple.com/documentation/CreateML/MLWordEmbedding) and save it as a file for your Xcode project at development time. Alternatively, you can compile an embedding at runtime by using Natural Language’s [`writeEmbeddingForDictionary:language:revision:toURL:error:`](nlembedding/writeembeddingfordictionary:language:revision:tourl:error:.md) method.
+[`Natural Language`](NaturalLanguage.md) provides built-in word embeddings that you can retrieve by using the [`wordEmbedding(for:)`](nlembedding/wordembedding(for:).md) method. You can also compile your own custom embedding into an efficient, searchable, on-disk representation. Typically, you compile an embedding by using Create ML’s [`MLWordEmbedding`](https://developer.apple.com/documentation/createml/mlwordembedding) and save it as a file for your Xcode project at development time. Alternatively, you can compile an embedding at runtime by using Natural Language’s [`writeEmbeddingForDictionary:language:revision:toURL:error:`](nlembedding/writeembeddingfordictionary:language:revision:tourl:error:.md) method.
 
 Your custom embedding can use any kind of string that’s useful to your app, such as phrases, brand names, serial numbers, and so on. For example, you could make an embedding of movie titles. Each movie title could have a vector that places similar movies close together in the embedding.
 
@@ -90,14 +90,14 @@ Your custom embedding can use any kind of string that’s useful to your app, su
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

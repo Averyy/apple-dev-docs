@@ -8,9 +8,9 @@ Connect to Bluetooth Low Energy MIDI peripherals.
 
 In macOS 13 or later and iOS 16 or later, the system automatically reconnects Bluetooth Low Energy (BLE) MIDI peripherals when powered on, if the device supports pairing. Previously, it was necessary to use Audio MIDI Setup to establish BLE MIDI connections.
 
-For devices that don’t support pairing, [`Core MIDI`](CoreMIDI.md) can enable [`Core Bluetooth`](https://developer.apple.com/documentation/CoreBluetooth) connections for input/output (I/O).
+For devices that don’t support pairing, [`Core MIDI`](CoreMIDI.md) can enable [`Core Bluetooth`](https://developer.apple.com/documentation/corebluetooth) connections for input/output (I/O).
 
-This API enables connection of BLE MIDI peripherals that don’t support pairing using [`Core Bluetooth`](https://developer.apple.com/documentation/CoreBluetooth) with the following steps:
+This API enables connection of BLE MIDI peripherals that don’t support pairing using [`Core Bluetooth`](https://developer.apple.com/documentation/corebluetooth) with the following steps:
 
 1. Scan for and connect to a BLE MIDI peripheral.
 2. Confirm the peripheral has a BLE MIDI service.
@@ -18,7 +18,7 @@ This API enables connection of BLE MIDI peripherals that don’t support pairing
 
 Once a BLE MIDI peripheral connects — and you confirm that it possess both the BLE MIDI service and BLE MIDI I/O characteristic — call [`MIDIBluetoothDriverActivateAllConnections()`](midibluetoothdriveractivateallconnections().md) to have [`Core MIDI`](CoreMIDI.md) enable I/O on those connections.
 
-To disconnect a peripheral, obtain the [`CBUUID`](https://developer.apple.com/documentation/CoreBluetooth/CBUUID) of the peripheral and call [`MIDIBluetoothDriverDisconnect(_:)`](midibluetoothdriverdisconnect(_:).md).
+To disconnect a peripheral, obtain the [`CBUUID`](https://developer.apple.com/documentation/corebluetooth/cbuuid) of the peripheral and call [`MIDIBluetoothDriverDisconnect(_:)`](midibluetoothdriverdisconnect(_:).md).
 
 ## Topics
 

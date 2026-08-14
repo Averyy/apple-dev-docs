@@ -16,7 +16,7 @@ let QCRendererMouseLocationKey: String
 
 #### Discussion
 
-The associated value is an [`NSPoint`](https://developer.apple.com/documentation/Foundation/NSPoint) object stored in an [`NSValue`](https://developer.apple.com/documentation/Foundation/NSValue) object. The mouse location is in normalized coordinates relative to the OpenGL context viewport (`[0,1]x[0,1]` with the origin `(0,0)` at the lower-left corner).
+The associated value is an [`NSPoint`](https://developer.apple.com/documentation/foundation/nspoint) object stored in an [`NSValue`](https://developer.apple.com/documentation/foundation/nsvalue) object. The mouse location is in normalized coordinates relative to the OpenGL context viewport (`[0,1]x[0,1]` with the origin `(0,0)` at the lower-left corner).
 
 ## See Also
 

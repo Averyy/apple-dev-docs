@@ -22,7 +22,7 @@ uint64_t getDMAMapLength(uint64_t *offset);
   Accessor to get the length of the memory descriptor (over all its ranges).
 - [- getLength](iomemorydescriptor/1442036-getlength.md)
   Accessor to get the length of the memory descriptor (over all its ranges).
-- [- GetLength](../driverkit/iomemorydescriptor/getlength.md)
+- [- GetLength](iomemorydescriptor/3180642-getlength.md)
   Returns the length of the memory block represented by this object.
 - [- getFlags](iomemorydescriptor/2870265-getflags.md)
   Returns the options used to create the memory descriptor.

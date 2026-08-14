@@ -27,11 +27,11 @@ An object that is the result of the message.
 
 #### Discussion
 
-This method is the same as [`perform(_:)`](nsobjectprotocol/perform(_:).md) except that you can supply two arguments for `aSelector`. `aSelector` should identify a method that can take two arguments of type id. For methods with other argument types and return values, use [`NSInvocation`](https://developer.apple.com/documentation/Foundation/NSInvocation).
+This method is the same as [`perform(_:)`](nsobjectprotocol/perform(_:).md) except that you can supply two arguments for `aSelector`. `aSelector` should identify a method that can take two arguments of type id. For methods with other argument types and return values, use [`NSInvocation`](https://developer.apple.com/documentation/foundation/nsinvocation).
 
 ## Parameters
 
-- `aSelector`: A selector identifying the message to send. If `aSelector` is `NULL`, an [`invalidArgumentException`](https://developer.apple.com/documentation/Foundation/NSExceptionName/invalidArgumentException) is raised.
+- `aSelector`: A selector identifying the message to send. If `aSelector` is `NULL`, an [`invalidArgumentException`](https://developer.apple.com/documentation/foundation/nsexceptionname/invalidargumentexception) is raised.
 - `object1`: An object that is the first argument of the message.
 - `object2`: An object that is the second argument of the message
 

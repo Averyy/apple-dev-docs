@@ -18,15 +18,15 @@ The Xcode Organizer and MetricKit each provide two metrics about memory use in a
 
 iOS measures memory use as the number of memory pages in use multiplied by page size, which is typically 16 KB. Writing a single byte to allocated memory can increase memory use by 16 KB if iOS must allocate a new page to store that byte.
 
-![Illustration showing memory in use by an app. ](https://docs-assets.developer.apple.com/published/621214505d63f4ac2ff1ab13f524e5b0/reducing-your-app-s-memory-use-1%402x.png)
+![Illustration showing memory in use by an app. ](/images/com.apple.Xcode/reducing-your-app-s-memory-use-1@2x.png)
 
 Data structures defined in the app’s executable or linked libraries and frameworks contribute to the memory-use metric. Memory that the app allocates at runtime doesn’t initially contribute to this metric. Such memory is “clean,” and iOS doesn’t need to dedicate physical RAM to store it. When the app writes to the allocated memory, it becomes “dirty,” and iOS dedicates RAM to storing its content, as shown in the illustration below. Dirty memory contributes to the memory-use metric.
 
 ##### View Data on Memory Use
 
-View your app’s memory use in the Memory pane of the Xcode Organizer window or by using [`MetricKit`](https://developer.apple.com/documentation/MetricKit).
+View your app’s memory use in the Memory pane of the Xcode Organizer window or by using [`MetricKit`](https://developer.apple.com/documentation/metrickit).
 
-![Screenshot of the Memory metric pane in the Xcode Organizer. From left to right is the list of metrics and reports, the metric UI with two bar graphs: Peak Memory at the top and Memory at Suspension on the bottom, the selected version highlighted in the peak memory graph, and the comparison data for both graphs on the right side.](https://docs-assets.developer.apple.com/published/0cf4e06875c09352c0e59b26b9c78772/reducing-your-app-s-memory-use-3%402x.png)
+![Screenshot of the Memory metric pane in the Xcode Organizer. From left to right is the list of metrics and reports, the metric UI with two bar graphs: Peak Memory at the top and Memory at Suspension on the bottom, the selected version highlighted in the peak memory graph, and the comparison data for both graphs on the right side.](/images/com.apple.Xcode/reducing-your-app-s-memory-use-3@2x.png)
 
 The Memory pane shows information for peak memory in the top graph and memory at suspension on the bottom. Filter the information by device type and by typical memory used (50th percentile) or top memory used (90th percentile), using the two menus in the top right corner, to find possible problem areas. Compare the memory use of the current release with a previous one by clicking on bar in the graph for the desired release.
 

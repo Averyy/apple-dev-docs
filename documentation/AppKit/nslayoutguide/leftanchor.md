@@ -16,7 +16,7 @@ var leftAnchor: NSLayoutXAxisAnchor { get }
 
 #### Discussion
 
-Use this anchor to create constraints with the layout guide’s left edge. You can combine this anchor only with a subset of the [`NSLayoutXAxisAnchor`](https://developer.apple.com/documentation/UIKit/NSLayoutXAxisAnchor) anchors. You can combine a [`leftAnchor`](nslayoutguide/leftanchor.md) with another `leftAnchor`, a `rightAnchor`, or a `centerXAnchor`. For more information, see [`NSLayoutAnchor`](https://developer.apple.com/documentation/UIKit/NSLayoutAnchor).
+Use this anchor to create constraints with the layout guide’s left edge. You can combine this anchor only with a subset of the [`NSLayoutXAxisAnchor`](https://developer.apple.com/documentation/uikit/nslayoutxaxisanchor) anchors. You can combine a [`leftAnchor`](nslayoutguide/leftanchor.md) with another `leftAnchor`, a `rightAnchor`, or a `centerXAnchor`. For more information, see [`NSLayoutAnchor`](https://developer.apple.com/documentation/uikit/nslayoutanchor).
 
 ## See Also
 

@@ -21,7 +21,7 @@ A view that triggers `action` when a system Copy command occurs.
 
 ## Parameters
 
-- `payloadAction`: An action closure returning the [`NSItemProvider`](https://developer.apple.com/documentation/Foundation/NSItemProvider) items that should be copied to the Clipboard when the Copy command is triggered. If `action` is `nil`, the Copy command is considered disabled.
+- `payloadAction`: An action closure returning the [`NSItemProvider`](https://developer.apple.com/documentation/foundation/nsitemprovider) items that should be copied to the Clipboard when the Copy command is triggered. If `action` is `nil`, the Copy command is considered disabled.
 
 ## See Also
 

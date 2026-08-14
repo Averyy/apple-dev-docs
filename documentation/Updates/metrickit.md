@@ -6,19 +6,19 @@ Learn about important changes to MetricKit.
 
 #### Overview
 
-Browse notable changes in [`MetricKit`](https://developer.apple.com/documentation/MetricKit).
+Browse notable changes in [`MetricKit`](https://developer.apple.com/documentation/metrickit).
 
 #### June 2026
 
 ##### Metric Manager
 
-- Adopt [`MetricManager`](https://developer.apple.com/documentation/MetricKit/MetricManager) to receive metric and diagnostic reports through asynchronous sequences. `MetricManager` replaces [`MXMetricManager`](https://developer.apple.com/documentation/MetricKit/MXMetricManager) and its subscriber protocol. For an overview of the MetricKit reporting model, see [`Monitoring app performance with MetricKit`](https://developer.apple.com/documentation/MetricKit/monitoring-app-performance-with-metrickit).
-- Receive daily aggregated performance data through [`MetricReport`](https://developer.apple.com/documentation/MetricKit/MetricReport), which conforms to `Codable` and `Sendable` for straightforward serialization and safe cross-actor use.
-- Receive event-based diagnostic data through [`DiagnosticReport`](https://developer.apple.com/documentation/MetricKit/DiagnosticReport). Handle each metric type using [`MetricResult`](https://developer.apple.com/documentation/MetricKit/MetricResult). For information on working with metric values and diagnostic data in MetricKit reports, see [`Analyzing app performance with MetricKit`](https://developer.apple.com/documentation/MetricKit/analyzing-app-performance-with-metrickit).
+- Adopt [`MetricManager`](https://developer.apple.com/documentation/metrickit/metricmanager) to receive metric and diagnostic reports through asynchronous sequences. `MetricManager` replaces [`MXMetricManager`](https://developer.apple.com/documentation/metrickit/mxmetricmanager) and its subscriber protocol. For an overview of the MetricKit reporting model, see [`Monitoring app performance with MetricKit`](https://developer.apple.com/documentation/metrickit/monitoring-app-performance-with-metrickit).
+- Receive daily aggregated performance data through [`MetricReport`](https://developer.apple.com/documentation/metrickit/metricreport), which conforms to `Codable` and `Sendable` for straightforward serialization and safe cross-actor use.
+- Receive event-based diagnostic data through [`DiagnosticReport`](https://developer.apple.com/documentation/metrickit/diagnosticreport). Handle each metric type using [`MetricResult`](https://developer.apple.com/documentation/metrickit/metricresult). For information on working with metric values and diagnostic data in MetricKit reports, see [`Analyzing app performance with MetricKit`](https://developer.apple.com/documentation/metrickit/analyzing-app-performance-with-metrickit).
 
 ##### State Contextualized Metrics
 
-- Use the [`StateReporting`](https://developer.apple.com/documentation/StateReporting) framework with MetricKit to segment performance data by app-defined states in addition to intervals. For information on integrating the StateReporting framework with MetricKit, see [`Getting started with StateReporting`](https://developer.apple.com/documentation/StateReporting/getting-started-with-statereporting).
+- Use the [`StateReporting`](https://developer.apple.com/documentation/statereporting) framework with MetricKit to segment performance data by app-defined states in addition to intervals. For information on integrating the StateReporting framework with MetricKit, see [`Getting started with StateReporting`](https://developer.apple.com/documentation/statereporting/getting-started-with-statereporting).
 
 ## See Also
 

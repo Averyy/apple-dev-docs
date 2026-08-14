@@ -25,11 +25,11 @@ final nonisolated(nonsending) func analyze<each T>(_ asset: MediaIntelligenceVid
 
 #### Return Value
 
-A tuple of [`Result`](https://developer.apple.com/documentation/Swift/Result) values, one per request.
+A tuple of [`Result`](https://developer.apple.com/documentation/swift/result) values, one per request.
 
 #### Discussion
 
-Pass one or more values of type [`VideoAnalyzer.Request`](videoanalyzer/request.md). The method returns a tuple containing one [`Result`](https://developer.apple.com/documentation/Swift/Result) per request, in the same order you provided them. Check each element individually because a failure in one request doesn’t affect the others.
+Pass one or more values of type [`VideoAnalyzer.Request`](videoanalyzer/request.md). The method returns a tuple containing one [`Result`](https://developer.apple.com/documentation/swift/result) per request, in the same order you provided them. Check each element individually because a failure in one request doesn’t affect the others.
 
 ## Parameters
 

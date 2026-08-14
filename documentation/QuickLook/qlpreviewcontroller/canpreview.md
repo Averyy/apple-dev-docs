@@ -19,7 +19,7 @@ class func canPreviewItem(_ item: any QLPreviewItem) -> Bool
 
 #### Return Value
 
-Returns [`true`](https://developer.apple.com/documentation/Swift/true) if the Quick Look preview controller can display the specified preview item.
+Returns [`true`](https://developer.apple.com/documentation/swift/true) if the Quick Look preview controller can display the specified preview item.
 
 #### Discussion
 

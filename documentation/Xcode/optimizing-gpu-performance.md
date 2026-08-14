@@ -14,7 +14,7 @@ If you notice any performance issues while running your app, you can use the Met
 
 When you enable the Profile after Replay option, the Metal debugger automatically begins gathering performance data after replaying the workload. Alternatively, you can click the Profile button on the Summary viewer to gather performance data.
 
-![A screenshot of the Metal debugger showing the Summary viewer. The Profile button and the button to induce GPU performance state are highlighted.](https://docs-assets.developer.apple.com/published/7f8e55dc5d42f11bdbe1ec06c2bcccc4/gputools-metal-debugger-essentials-performance-gather-performance-data%402x.png)
+![A screenshot of the Metal debugger showing the Summary viewer. The Profile button and the button to induce GPU performance state are highlighted.](/images/com.apple.Xcode/gputools-metal-debugger-essentials-performance-gather-performance-data@2x.png)
 
 The performance state of the GPU is important when profiling because it affects how fast the system executes the workload. Factors that affect the performance state include thermals and system settings.
 
@@ -22,7 +22,7 @@ By default, the Metal debugger profiles the workload with the same GPU performan
 
 For more information on GPU performance state, see [`Discover Metal debugging, profiling, and asset creation tools`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2021/10157/?time=476).
 
-![A screenshot of the Metal debugger’s Performance timeline that highlights the GPU Profiler popover, which has two menus for Performance State and GPU Execution Mode. The menus show Medium and Concurrent, respectively.](https://docs-assets.developer.apple.com/published/249c1791541c003bcfa85c9826060d89/gputools-metal-debugger-essentials-performance-profiler-button%402x.png)
+![A screenshot of the Metal debugger’s Performance timeline that highlights the GPU Profiler popover, which has two menus for Performance State and GPU Execution Mode. The menus show Medium and Concurrent, respectively.](/images/com.apple.Xcode/gputools-metal-debugger-essentials-performance-profiler-button@2x.png)
 
 You can switch between different GPU Execution Modes, including Concurrent and Serial, by clicking the GPU Profiler button in the debug bar. By default, the Metal debugger profiles the workload in Concurrent mode. This allows the GPU to overlap the vertex, fragment, and compute tasks so they can finish as quickly as possible. In Serial mode, the Metal debugger forces each pass to run only after the previous pass finishes, which adds precision to the data report for each pass without overlap, but it doesn’t represent runtime performance.
 
@@ -30,7 +30,7 @@ You can switch between different GPU Execution Modes, including Concurrent and S
 
 The Performance timeline in the Metal debugger can help you find expensive tasks and performance bottlenecks in the captured workload. Open the Performance timeline by clicking the Performance button in the Debug navigator.
 
-![A screenshot of the Metal debugger’s Performance timeline showing the Vertex, Fragment, Compute, and Counters tracks.](https://docs-assets.developer.apple.com/published/4749aeae32b4700f7c85608bf13790ad/gputools-metal-debugger-essentials-performance-gpu-timeline%402x.png)
+![A screenshot of the Metal debugger’s Performance timeline showing the Vertex, Fragment, Compute, and Counters tracks.](/images/com.apple.Xcode/gputools-metal-debugger-essentials-performance-gpu-timeline@2x.png)
 
 The Timeline navigator on the left side of the window lists all profiled passes, pipeline states, and GPU Commands with their shader profiler cost.
 
@@ -42,7 +42,7 @@ The bottom section has a separate Counters timeline, which includes GPU counters
 
 You can view performance counter statistics from your app’s passes or commands in the GPU trace. Open the Performance counters by clicking the Counters tab above the Performance timeline.
 
-![A screenshot of the Metal debugger’s Performance counters listing all the encoders and their counters.](https://docs-assets.developer.apple.com/published/bdb06bf0fe824b56c609b2d7b532e46c/gputools-metal-debugger-essentials-performance-counters-table%402x.png)
+![A screenshot of the Metal debugger’s Performance counters listing all the encoders and their counters.](/images/com.apple.Xcode/gputools-metal-debugger-essentials-performance-counters-table@2x.png)
 
 The Metal debugger derives the shader profiler time by tracing the shader instructions when running the workload with overlap. In a shader-bound workload, sorting the table by shader profiler time can point you to the overall most expensive pass or draw. In addition, the Metal debugger measures the detailed counters from each pass or command in isolation. You can also choose different sets of counters in the top bar for a more focused view. For more information, see [`Analyzing Apple GPU performance using counter statistics`](analyzing-apple-gpu-performance-using-counter-statistics.md).
 
@@ -50,7 +50,7 @@ The Metal debugger derives the shader profiler time by tracing the shader instru
 
 For a different perspective in viewing the Metal commands, click the Outline popup menu in the Debug navigator and select Group by Pipeline State to view a list of pipeline states.
 
-![An Xcode screenshot of the Debug navigator showing all the pipeline states in the captured workload sorted from the most to the least expensive.](https://docs-assets.developer.apple.com/published/2a8b3c201556151b6cd66de6fbd90c05/gputools-metal-debugger-essentials-performance-debug-navigator-pso%402x.png)
+![An Xcode screenshot of the Debug navigator showing all the pipeline states in the captured workload sorted from the most to the least expensive.](/images/com.apple.Xcode/gputools-metal-debugger-essentials-performance-debug-navigator-pso@2x.png)
 
 With profiling data, the Debug navigator displays the percentage of samples from shaders of each pipeline state when running the workload with overlap. In a shader-bound workload, this sorted list of pipeline states is helpful in identifying the most expensive pipeline state. Expanding a pipeline state allows you to find a list of commands that use that state.
 
@@ -62,7 +62,7 @@ For more information on the Debug navigator, see [`Analyzing your Metal workload
 
 After opening a shader, you can find the time breakdown for the shader in the pipeline state.
 
-![An Xcode screenshot of the Shader editor showing a call tree in the Debug navigator, and per-line shader profiling data next to the source code.](https://docs-assets.developer.apple.com/published/e08be55f5ba1584bcd41d73e1431f5c8/gputools-metal-debugger-essentials-performance-shader-profiler%402x.png)
+![An Xcode screenshot of the Shader editor showing a call tree in the Debug navigator, and per-line shader profiling data next to the source code.](/images/com.apple.Xcode/gputools-metal-debugger-essentials-performance-shader-profiler@2x.png)
 
 The left sidebar allows you to inspect the shader source files and profiling call tree. With the call tree, you can find performance hot spots by the weights of each frame.
 
@@ -82,7 +82,7 @@ For more information on interpreting the per-line shader profiling statistics, s
 
 You can quickly find and triage expensive pipeline states and shaders by using the shader cost graph. Select a pipeline state in the Timeline navigator, and then click the Shaders tab.
 
-![A screenshot of the Metal debugger’s shader cost graph.](https://docs-assets.developer.apple.com/published/44d89222dbe4d7c63b48c979985b4d67/gputools-metal-debugger-shader-cost-graph-overview%402x.png)
+![A screenshot of the Metal debugger’s shader cost graph.](/images/com.apple.Xcode/gputools-metal-debugger-shader-cost-graph-overview@2x.png)
 
 You can inspect the percentage cost of the shader function calls with the flame graph in the top section, and select function calls to jump directly to the source code.
 
@@ -94,7 +94,7 @@ For more information, see [`Analyzing Apple GPU performance using the shader cos
 
 You can quickly find and inspect the execution of your shader source code with the performance heat maps. Select an encoder, a pipeline state, or a GPU command in the Timeline navigator, and then click the Heat Maps tab.
 
-![A screenshot of the Metal debugger’s performance heat maps.](https://docs-assets.developer.apple.com/published/83ba0059fb79ce77761701f6f266e3d2/gputools-metal-debugger-heatmap-overview%402x.png)
+![A screenshot of the Metal debugger’s performance heat maps.](/images/com.apple.Xcode/gputools-metal-debugger-heatmap-overview@2x.png)
 
 The top section shows various heat maps graphing statistical information about GPU threads, such as the cost, the divergence, and the number of instructions.
 
@@ -106,7 +106,7 @@ For more information, see [`Analyzing Apple GPU performance with performance hea
 
 You can save your app’s Metal workload performance data as a GPU trace for later analysis by choosing File > Export, and selecting the Embed performance data checkbox in the dialog. This allows you to view just the performance data instead of replaying the GPU trace on a device.
 
-![A screenshot of a Metal debugger save dialog in Xcode for a performance data-trace file. The dialog has the name Deferred Lighting in the Export as field and a single checkbox with the label, Embed performance data, which a person selected.](https://docs-assets.developer.apple.com/published/6aa2aeea7c3374e61a958e54a4ced338/gputools-metal-debugger-essentials-embed-performance-data%402x.png)
+![A screenshot of a Metal debugger save dialog in Xcode for a performance data-trace file. The dialog has the name Deferred Lighting in the Export as field and a single checkbox with the label, Embed performance data, which a person selected.](/images/com.apple.Xcode/gputools-metal-debugger-essentials-embed-performance-data@2x.png)
 
 You can open the GPU trace on any Mac — not just your development system — because it doesn’t require a compatible device to replay the trace. Optionally, you can replay the GPU trace by selecting a compatible device.
 

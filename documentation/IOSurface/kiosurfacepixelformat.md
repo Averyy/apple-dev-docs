@@ -21,7 +21,7 @@ let kIOSurfacePixelFormat: CFString
 
 #### Discussion
 
-This value is stored as a [`CFNumber`](https://developer.apple.com/documentation/CoreFoundation/CFNumber).
+This value is stored as a [`CFNumber`](https://developer.apple.com/documentation/corefoundation/cfnumber).
 
 #### Discussion
 

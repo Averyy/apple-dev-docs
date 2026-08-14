@@ -22,7 +22,7 @@ let kSecTrustExtendedValidation: CFString
 
 #### Discussion
 
-When the key is present and the value set to [`kCFBooleanTrue`](https://developer.apple.com/documentation/CoreFoundation/kCFBooleanTrue), it indicates the chain is validated for Extended Validation (EV).
+When the key is present and the value set to [`kCFBooleanTrue`](https://developer.apple.com/documentation/corefoundation/kcfbooleantrue), it indicates the chain is validated for Extended Validation (EV).
 
 
 ---

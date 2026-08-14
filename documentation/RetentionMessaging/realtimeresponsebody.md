@@ -29,7 +29,7 @@ In this response, you select a retention message in real time for the system to 
 
 All messages and images need to be in an `APPROVED` state for the system to display them to customers. For more information, see [`Setting up retention messages`](setting-up-retention-messages.md), and  [`Responding to real-time retention messaging requests`](responding-to-realtime-retention-messaging-requests.md).
 
-For more information on the Advanced Commerce API, see [`Advanced Commerce API`](https://developer.apple.com/documentation/AdvancedCommerceAPI).
+For more information on the Advanced Commerce API, see [`Advanced Commerce API`](https://developer.apple.com/documentation/advancedcommerceapi).
 
 ## Properties
 

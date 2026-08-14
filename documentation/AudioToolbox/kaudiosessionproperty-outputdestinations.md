@@ -20,11 +20,11 @@ var kAudioSessionProperty_OutputDestinations: Int { get }
 
 #### Discussion
 
-A [`CFArray`](https://developer.apple.com/documentation/CoreFoundation/CFArray) object containing details on the available audio output destinations in a USB audio accessory attached through the iPad camera connection kit.
+A [`CFArray`](https://developer.apple.com/documentation/corefoundation/cfarray) object containing details on the available audio output destinations in a USB audio accessory attached through the iPad camera connection kit.
 
 #### Discussion
 
-Each element of the array contains a [`CFDictionary`](https://developer.apple.com/documentation/CoreFoundation/CFDictionary) object with the keys and corresponding values described in [`USB Accessory Audio Destination Dictionary Keys`](usb-accessory-audio-destination-dictionary-keys.md).
+Each element of the array contains a [`CFDictionary`](https://developer.apple.com/documentation/corefoundation/cfdictionary) object with the keys and corresponding values described in [`USB Accessory Audio Destination Dictionary Keys`](usb-accessory-audio-destination-dictionary-keys.md).
 
 If there is no audio output destination available from the attached accessory, this property’s value is an empty array.
 

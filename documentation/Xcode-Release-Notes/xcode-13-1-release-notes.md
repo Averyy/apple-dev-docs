@@ -22,7 +22,7 @@ Xcode 13.1 includes SDKs for iOS 15, iPadOS 15, tvOS 15, watchOS 8, and macOS Mo
 
 ###### Resolved Issues
 
-- Fixed rendering issues that affected [`UITableView`](https://developer.apple.com/documentation/UIKit/UITableView) for some iOS storyboards. (82731572, 83465487)
+- Fixed rendering issues that affected [`UITableView`](https://developer.apple.com/documentation/uikit/uitableview) for some iOS storyboards. (82731572, 83465487)
 - Fixed an issue where iPhone 13 mini wouldn’t rotate to landscape orientation. (83465491)
 
 ##### Source Control
@@ -40,7 +40,7 @@ Xcode 13.1 includes SDKs for iOS 15, iPadOS 15, tvOS 15, watchOS 8, and macOS Mo
 
 ###### Known Issues
 
-- In Previews and in simulated iOS 15 devices, [`Button`](https://developer.apple.com/documentation/SwiftUI/Button) elements support the iPad cursor hover states by default, but in iOS 15.1 [`BorderedButtonStyle`](https://developer.apple.com/documentation/SwiftUI/BorderedButtonStyle) no longer has a default hover effect. Use the [`HoverEffect`](https://developer.apple.com/documentation/SwiftUI/HoverEffect) modifier on the `Button` to add a default hover effect when running in iOS 15.1. (83516916)
+- In Previews and in simulated iOS 15 devices, [`Button`](https://developer.apple.com/documentation/swiftui/button) elements support the iPad cursor hover states by default, but in iOS 15.1 [`BorderedButtonStyle`](https://developer.apple.com/documentation/swiftui/borderedbuttonstyle) no longer has a default hover effect. Use the [`HoverEffect`](https://developer.apple.com/documentation/swiftui/hovereffect) modifier on the `Button` to add a default hover effect when running in iOS 15.1. (83516916)
 
 ## See Also
 

@@ -27,7 +27,7 @@ The system monitors the app to update this property as the app’s state changes
 
 The system makes the following guarantees:
 
-- When [`launch()`](xcuiapplication/launch().md) and [`activate()`](xcuiapplication/activate().md) return successfully, the state of the application is [`XCUIApplication.State.runningForeground`](xcuiapplication/state-swift.enum/runningforeground.md). An exception to this is launching or activating a macOS agent application with [`LSUIElement`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/LSUIElement) set in its `Info.plist `file. This kind of application never gains foreground status and its state is [`XCUIApplication.State.runningBackground`](xcuiapplication/state-swift.enum/runningbackground.md) instead.
+- When [`launch()`](xcuiapplication/launch().md) and [`activate()`](xcuiapplication/activate().md) return successfully, the state of the application is [`XCUIApplication.State.runningForeground`](xcuiapplication/state-swift.enum/runningforeground.md). An exception to this is launching or activating a macOS agent application with [`LSUIElement`](https://developer.apple.com/documentation/bundleresources/information-property-list/lsuielement) set in its `Info.plist `file. This kind of application never gains foreground status and its state is [`XCUIApplication.State.runningBackground`](xcuiapplication/state-swift.enum/runningbackground.md) instead.
 - When [`terminate()`](xcuiapplication/terminate().md) returns successfully, the state of the application is [`XCUIApplication.State.notRunning`](xcuiapplication/state-swift.enum/notrunning.md).
 
 ## See Also

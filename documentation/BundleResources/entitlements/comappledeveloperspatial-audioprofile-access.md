@@ -20,9 +20,9 @@ An entitlement that enables your app to use the personalized spatial audio profi
 
 This entitlement applies the personalized spatial audio profile someone makes in Settings to your app’s audio output for the following APIs:
 
-- [`AVAudioEngine`](https://developer.apple.com/documentation/AVFAudio/AVAudioEngine)
-- AUSpatialMixer in [`Audio Toolbox`](https://developer.apple.com/documentation/AudioToolbox) (see [`AUSpatialMixer Parameters`](https://developer.apple.com/documentation/AudioToolbox/1390073-auspatialmixer-parameters))
-- [`PHASE`](https://developer.apple.com/documentation/PHASE)
+- [`AVAudioEngine`](https://developer.apple.com/documentation/avfaudio/avaudioengine)
+- AUSpatialMixer in [`Audio Toolbox`](https://developer.apple.com/documentation/audiotoolbox) (see [`AUSpatialMixer Parameters`](https://developer.apple.com/documentation/audiotoolbox/1390073-auspatialmixer-parameters))
+- [`PHASE`](https://developer.apple.com/documentation/phase)
 
 Add this entitlement to your app by enabling the Spatial Audio Profile capability in Xcode.
 

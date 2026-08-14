@@ -8,11 +8,11 @@ Display formatted text and get text input from the user.
 
 To display read-only text, or read-only text paired with an image, use the built-in [`Text`](text.md) or [`Label`](label.md) views, respectively. When you need to collect text input from the user, use an appropriate text input view, like [`TextField`](textfield.md) or [`TextEditor`](texteditor.md).
 
-![None](https://docs-assets.developer.apple.com/published/a8d0f352ff6dabd1c3d1e3fdfb577250/text-input-and-output-hero%402x.png)
+![None](/images/com.apple.SwiftUI/text-input-and-output-hero@2x.png)
 
 You add view modifiers to control the text’s font, selectability, alignment, layout direction, and so on. These modifiers also affect other views that display text, like the labels on controls, even if you don’t define an explicit [`Text`](text.md) view.
 
-For design guidance, see [`Typography`](https://developer.apple.com/design/Human-Interface-Guidelines/typography) in the Human Interface Guidelines.
+For design guidance, see [`Typography`](https://developer.apple.com/design/human-interface-guidelines/typography) in the Human Interface Guidelines.
 
 ## Topics
 

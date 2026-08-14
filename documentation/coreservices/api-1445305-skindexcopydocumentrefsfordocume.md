@@ -23,9 +23,9 @@ If you want to get lightweight URLs in the form of CFURL objects instead, use [`
 ## Parameters
 
 - `inIndex`: The index containing the document information.
-- `inCount`: The number of document IDs in  .
-- `inDocumentIDsArray`: Points to an array of document IDs corresponding to the document URL objects (of type  ) you want.
-- `outDocumentRefsArray`: When finished with the document URL objects array, dispose of it by calling   on each array element.
+- `inCount`: The number of document IDs in `inDocumentIDsArray`.
+- `inDocumentIDsArray`: Points to an array of document IDs corresponding to the document URL objects (of type [`SKDocument`](skdocument.md)) you want.
+- `outDocumentRefsArray`: On input, a pointer to an array for document URL objects. On output, points to the previously allocated array, which now contains document URL objects corresponding to the document IDs in `inDocumentIDsArray`. When finished with the document URL objects array, dispose of it by calling [`CFRelease`](https://developer.apple.com/documentation/corefoundation/cfrelease) on each array element.
 
 ## See Also
 

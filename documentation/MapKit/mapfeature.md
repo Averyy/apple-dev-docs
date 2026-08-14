@@ -45,8 +45,8 @@ Tappable map features can include single points of interest, such as hotels and 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
 
 ## See Also
 

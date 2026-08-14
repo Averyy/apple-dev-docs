@@ -16,7 +16,7 @@ func setDrawsBackground(_ flag: Bool)
 
 ## Parameters
 
-- `flag`: The background drawing state. Pass [`true`](https://developer.apple.com/documentation/Swift/true) if the composition picker view draws its background.
+- `flag`: The background drawing state. Pass [`true`](https://developer.apple.com/documentation/swift/true) if the composition picker view draws its background.
 
 ## See Also
 

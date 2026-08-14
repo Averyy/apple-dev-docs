@@ -44,7 +44,7 @@ The `NSImage` class may cache a reference to the returned image object for perfo
   Returns an array of strings identifying the image types supported by the registered image representation objects.
 - [func icon(forFile: String) -> NSImage](nsworkspace/icon(forfile:).md)
   Returns an image containing the icon for the specified file.
-- [Configuring and displaying symbol images in your UI](../UIKit/configuring-and-displaying-symbol-images-in-your-ui.md)
+- [Configuring and displaying symbol images in your UI](../uikit/configuring-and-displaying-symbol-images-in-your-ui.md)
   Create scalable images that integrate with your app’s text, and adjust the appearance of those images dynamically.
 - [convenience init?(systemSymbolName: String, accessibilityDescription: String?)](nsimage/init(systemsymbolname:accessibilitydescription:).md)
   Creates a symbol image with the system symbol name and accessibility description you specify.

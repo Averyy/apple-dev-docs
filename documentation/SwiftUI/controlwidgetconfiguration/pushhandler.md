@@ -25,7 +25,7 @@ Use this to opt your control into using push notifications.
 
 If you have multiple control types, you can choose to use the same push handler type for those control types.
 
-When the push configuration of your controls changes, each handler type will be instantiated and [`pushTokensDidChange(controls:)`](https://developer.apple.com/documentation/WidgetKit/ControlPushHandler/pushTokensDidChange(controls:)) will be called.
+When the push configuration of your controls changes, each handler type will be instantiated and [`pushTokensDidChange(controls:)`](https://developer.apple.com/documentation/widgetkit/controlpushhandler/pushtokensdidchange(controls:)) will be called.
 
 ## Parameters
 

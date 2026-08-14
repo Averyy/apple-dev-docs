@@ -7,7 +7,7 @@ This atom contains the standard media information.
 
 #### Overview
 
-See [`Media header atom ('mdhd')`](media_header_atom.md).
+See [`Media header atom`](media_header_atom.md).
 
 ## See Also
 

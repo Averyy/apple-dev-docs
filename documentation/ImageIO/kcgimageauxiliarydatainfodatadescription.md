@@ -22,7 +22,7 @@ let kCGImageAuxiliaryDataInfoDataDescription: CFString
 
 #### Discussion
 
-The value of this property is a [`CFDictionary`](https://developer.apple.com/documentation/CoreFoundation/CFDictionary). The keys in this dictionary may include [`kCGImagePropertyWidth`](kcgimagepropertywidth.md), [`kCGImagePropertyHeight`](kcgimagepropertyheight.md), and [`kCGImagePropertyBytesPerRow`](kcgimagepropertybytesperrow.md).
+The value of this property is a [`CFDictionary`](https://developer.apple.com/documentation/corefoundation/cfdictionary). The keys in this dictionary may include [`kCGImagePropertyWidth`](kcgimagepropertywidth.md), [`kCGImagePropertyHeight`](kcgimagepropertyheight.md), and [`kCGImagePropertyBytesPerRow`](kcgimagepropertybytesperrow.md).
 
 ## See Also
 

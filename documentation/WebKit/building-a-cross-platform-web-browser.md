@@ -20,8 +20,8 @@ This sample project demonstrates how you can create a cross-platform web browser
 - Display web content and enable browser behaviors using [`WebView`](webview-swift.struct.md).
 - Observe and navigate browser history using [`WebPage.BackForwardList`](webpage/backforwardlist-swift.struct.md).
 - Serve local HTML resources with a custom [`URLSchemeHandler`](urlschemehandler.md).
-- Load website favicons asynchronously with [`LinkMetadata`](https://developer.apple.com/documentation/LinkPresentation/LinkMetadata).
-- Export and share webpage content using [`WebPage`](webpage.md)’s [`Transferable`](https://developer.apple.com/documentation/CoreTransferable/Transferable) conformance.
+- Load website favicons asynchronously with [`LinkMetadata`](https://developer.apple.com/documentation/linkpresentation/linkmetadata).
+- Export and share webpage content using [`WebPage`](webpage.md)’s [`Transferable`](https://developer.apple.com/documentation/coretransferable/transferable) conformance.
 
 The sample demonstrates how using these SwiftUI features to interact with web content simplifies your app compared to implementing them with [`WKWebView`](wkwebview.md) and related APIs.
 
@@ -29,7 +29,7 @@ The sample demonstrates how using these SwiftUI features to interact with web co
 
 #### Create an Observable Browser Model
 
-The sample stores webpage and browser properties in an [`Observable()`](https://developer.apple.com/documentation/Observation/Observable()) class called `BrowserManager`, as shown below, enabling SwiftUI to automatically redraw views when properties change:
+The sample stores webpage and browser properties in an [`Observable()`](https://developer.apple.com/documentation/observation/observable()) class called `BrowserManager`, as shown below, enabling SwiftUI to automatically redraw views when properties change:
 
 ```swift
 @Observable
@@ -72,7 +72,7 @@ init(privateBrowsingEnabled: Bool = false) {
 }
 ```
 
-The sample’s `ContentView` creates a `BrowserManager` instance with the [`State`](https://developer.apple.com/documentation/SwiftUI/State) property wrapper and injects it into the view hierarchy using [`environment(_:)`](https://developer.apple.com/documentation/SwiftUI/View/environment(_:)). Subviews retrieve it with `@Environment(BrowserManager.self)`.
+The sample’s `ContentView` creates a `BrowserManager` instance with the [`State`](https://developer.apple.com/documentation/swiftui/state) property wrapper and injects it into the view hierarchy using [`environment(_:)`](https://developer.apple.com/documentation/swiftui/view/environment(_:)). Subviews retrieve it with `@Environment(BrowserManager.self)`.
 
 #### Load and Display Web Content
 
@@ -204,7 +204,7 @@ struct CustomSchemeHandler: URLSchemeHandler {
 
 #### Display Website Favicons
 
-The favorite row views that the sample declares in `FavoriteRowView` load each website’s favicon asynchronously using [`LinkMetadata`](https://developer.apple.com/documentation/LinkPresentation/LinkMetadata) from the [`Link Presentation`](https://developer.apple.com/documentation/LinkPresentation) framework, as shown in the code below. The fetch runs in a [`task(id:name:executorPreference:priority:file:line:_:)`](https://developer.apple.com/documentation/SwiftUI/View/task(id:name:executorPreference:priority:file:line:_:)) modifier keyed to the favorite’s URL, so it restarts automatically whenever the URL changes.
+The favorite row views that the sample declares in `FavoriteRowView` load each website’s favicon asynchronously using [`LinkMetadata`](https://developer.apple.com/documentation/linkpresentation/linkmetadata) from the [`Link Presentation`](https://developer.apple.com/documentation/linkpresentation) framework, as shown in the code below. The fetch runs in a [`task(id:name:executorPreference:priority:file:line:_:)`](https://developer.apple.com/documentation/swiftui/view/task(id:name:executorpreference:priority:file:line:_:)) modifier keyed to the favorite’s URL, so it restarts automatically whenever the URL changes.
 
 ```swift
 .task(id: webpage.url) {
@@ -213,7 +213,7 @@ The favorite row views that the sample declares in `FavoriteRowView` load each w
 }
 ```
 
-The `fetchFavicon(for:)` method initializes a [`LinkMetadata`](https://developer.apple.com/documentation/LinkPresentation/LinkMetadata) value by fetching the URL, then extracts the icon as [`Image`](https://developer.apple.com/documentation/SwiftUI/Image) using the `.icon` attachment, as the code below demonstrates. Using [`Image`](https://developer.apple.com/documentation/SwiftUI/Image) supports all common favicon formats — including ICO, PNG, and JPEG — directly.
+The `fetchFavicon(for:)` method initializes a [`LinkMetadata`](https://developer.apple.com/documentation/linkpresentation/linkmetadata) value by fetching the URL, then extracts the icon as [`Image`](https://developer.apple.com/documentation/swiftui/image) using the `.icon` attachment, as the code below demonstrates. Using [`Image`](https://developer.apple.com/documentation/swiftui/image) supports all common favicon formats — including ICO, PNG, and JPEG — directly.
 
 ```swift
 private func fetchFavicon(for url: URL) async -> Image? {
@@ -230,7 +230,7 @@ While the favicon loads, the row displays a placeholder globe icon.
 
 #### Export and Share Webpage Content
 
-The [`WebPage`](webpage.md) type conforms to [`Transferable`](https://developer.apple.com/documentation/CoreTransferable/Transferable), so it works directly with [`ShareLink`](https://developer.apple.com/documentation/SwiftUI/ShareLink) and the file exporter. The sample places both options in a toolbar menu, like this:
+The [`WebPage`](webpage.md) type conforms to [`Transferable`](https://developer.apple.com/documentation/coretransferable/transferable), so it works directly with [`ShareLink`](https://developer.apple.com/documentation/swiftui/sharelink) and the file exporter. The sample places both options in a toolbar menu, like this:
 
 ```swift
 Menu {
@@ -260,7 +260,7 @@ Menu {
 }
 ```
 
-The [`exportedContentTypes(visibility:)`](https://developer.apple.com/documentation/CoreTransferable/Transferable/exportedContentTypes(visibility:)) method returns the file formats the current page supports, so the export menu always reflects what the page can produce.
+The [`exportedContentTypes(visibility:)`](https://developer.apple.com/documentation/coretransferable/transferable/exportedcontenttypes(visibility:)) method returns the file formats the current page supports, so the export menu always reflects what the page can produce.
 
 ## See Also
 

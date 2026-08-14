@@ -41,7 +41,7 @@ vDSP_vadd(a, strideA,
 
 In this example, the result is `[11.0, 22.0, 33.0, 44.0, 55.0, 66.0, 77.0, 88.0]`.
 
-![A diagram showing how stride affects the operation of the vDSP_vadd function. There are three rows. The top row represents the first input, vector A, which has a stride of one. The second row represents the second input, vector B, which has a stride of one. The bottom row represents the output, vector C, which has a stride of one. The diagram has connecting lines from the input vectors to the output vector indicating the relationships between the inputs and output.](https://docs-assets.developer.apple.com/published/48ece1ccbd98b7a607c9f23782f5f239/media-3080000%402x.png)
+![A diagram showing how stride affects the operation of the vDSP_vadd function. There are three rows. The top row represents the first input, vector A, which has a stride of one. The second row represents the second input, vector B, which has a stride of one. The bottom row represents the output, vector C, which has a stride of one. The diagram has connecting lines from the input vectors to the output vector indicating the relationships between the inputs and output.](/images/com.apple.accelerate/media-3080000@2x.png)
 
 ##### Use a Nonunit Stride on Inputs
 
@@ -55,13 +55,13 @@ let strideC = vDSP_Stride(1)
 let n = vDSP_Length(3)
 ```
 
-![A diagram showing how stride affects the operation of the vDSP_vadd function. There are three rows. The top row represents the first input, vector A, which has a stride of one. The second row represents the second input, vector B, which has a stride of three. The bottom row represents the output, vector C, which has a stride of one. The diagram has connecting lines from the input vectors to the output vector indicating the relationships between the inputs and output.](https://docs-assets.developer.apple.com/published/75f63a8822475996ba2fe9d03dcbdea6/media-3178478%402x.png)
+![A diagram showing how stride affects the operation of the vDSP_vadd function. There are three rows. The top row represents the first input, vector A, which has a stride of one. The second row represents the second input, vector B, which has a stride of three. The bottom row represents the output, vector C, which has a stride of one. The diagram has connecting lines from the input vectors to the output vector indicating the relationships between the inputs and output.](/images/com.apple.accelerate/media-3178478@2x.png)
 
 Note that vDSP operations always read `n` elements. Therefore, your collections require at least `((n - 1) * stride) + 1` elements.
 
 ##### Use a Nonunit Stride on Output
 
-If you change array `c`’s stride to `3`, the calculation writes the result to its first, fourth, and seventh items. Using the example of interleaved RGB data discussed in [`Controlling vDSP operations with stride`](controlling-vdsp-operations-with-stride#Use-a-nonunit-stride-on-inputs.md), this approach would write the result of an operation to the red channel. The example below defines the stride for the input array, `a`, as `2`, so the operation uses the first, third, and fifth elements:
+If you change array `c`’s stride to `3`, the calculation writes the result to its first, fourth, and seventh items. Using the example of interleaved RGB data discussed in [`Controlling vDSP operations with stride`](controlling-vdsp-operations-with-stride.md), this approach would write the result of an operation to the red channel. The example below defines the stride for the input array, `a`, as `2`, so the operation uses the first, third, and fifth elements:
 
 ```swift
 let strideA = vDSP_Stride(2)
@@ -71,7 +71,7 @@ let strideC = vDSP_Stride(3)
 let n = vDSP_Length(3)
 ```
 
-![A diagram showing how stride affects the operation of the vDSP_vadd function. There are three rows. The top row represents the first input, vector A, which has a stride of two. The second row represents the second input, vector B, which has a stride of one. The bottom row represents the output, vector C, which has a stride of three. The diagram has connecting lines from the input vectors to the output vector indicating the relationships between the inputs and output.](https://docs-assets.developer.apple.com/published/03754d04b77301da13776199ff598fcd/media-3079999%402x.png)
+![A diagram showing how stride affects the operation of the vDSP_vadd function. There are three rows. The top row represents the first input, vector A, which has a stride of two. The second row represents the second input, vector B, which has a stride of one. The bottom row represents the output, vector C, which has a stride of three. The diagram has connecting lines from the input vectors to the output vector indicating the relationships between the inputs and output.](/images/com.apple.accelerate/media-3079999@2x.png)
 
 ##### Use a Negative Stride
 
@@ -94,7 +94,7 @@ a.withUnsafeBufferPointer { buffer in
 
 The result of adding `a` and `b` with a stride of `-1` for `a` is `[81.0, 72.0, 63.0, 54.0, 45.0, 36.0, 27.0, 18.0]`:
 
-![A diagram showing how stride affects the operation of the vDSP_vadd function. There are three rows. The top row represents the first input, vector A, which has a stride of minus one. The second row represents the second input, vector B, which has a stride of one. The bottom row represents the output, vector C, which has a stride of one. The diagram has connecting lines from the input vectors to the output vector indicating the relationships between the inputs and output.](https://docs-assets.developer.apple.com/published/7666f9ecf82dcd9ddc930176aa76dfa4/media-3080245%402x.png)
+![A diagram showing how stride affects the operation of the vDSP_vadd function. There are three rows. The top row represents the first input, vector A, which has a stride of minus one. The second row represents the second input, vector B, which has a stride of one. The bottom row represents the output, vector C, which has a stride of one. The diagram has connecting lines from the input vectors to the output vector indicating the relationships between the inputs and output.](/images/com.apple.accelerate/media-3080245@2x.png)
 
 ##### Controlling Vdsp Operations with Strides
 

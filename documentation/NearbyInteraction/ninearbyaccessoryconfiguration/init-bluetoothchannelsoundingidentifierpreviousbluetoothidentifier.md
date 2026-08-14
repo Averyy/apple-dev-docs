@@ -20,7 +20,7 @@ init(bluetoothChannelSoundingIdentifier bluetoothIdentifier: UUID, previousBluet
 
 Bluetooth Channel Sounding is a Bluetooth 6.0 specification ranging strategy that measure distance between iPhone and a paired accessory over a standard Bluetooth connection without requiring dedicated Ultra Wideband hardware.
 
-Use this initializer to create an accessory configuration that implements Bluetooth Channel Sounding. Call [`supportsBluetoothChannelSounding`](nidevicecapability/supportsbluetoothchannelsounding.md) before running a session to ensure device support, and pair your accessory with [`AccessorySetupKit`](https://developer.apple.com/documentation/AccessorySetupKit); the Nearby Interaction framework only supports Bluetooth Channel Sounding with accessories paired through [`AccessorySetupKit`](https://developer.apple.com/documentation/AccessorySetupKit).
+Use this initializer to create an accessory configuration that implements Bluetooth Channel Sounding. Call [`supportsBluetoothChannelSounding`](nidevicecapability/supportsbluetoothchannelsounding.md) before running a session to ensure device support, and pair your accessory with [`AccessorySetupKit`](https://developer.apple.com/documentation/accessorysetupkit); the Nearby Interaction framework only supports Bluetooth Channel Sounding with accessories paired through [`AccessorySetupKit`](https://developer.apple.com/documentation/accessorysetupkit).
 
 ##### Handle Reconnections
 

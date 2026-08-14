@@ -20,7 +20,7 @@ struct SiriTipViewStyle
 
 #### Overview
 
-Specify a [`SiriTipViewStyle`](siritipviewstyle.md) value when you add a [`SiriTipUIView`](siritipuiview.md) or [`SiriTipView`](siritipview.md) type to your interface. For the [`SiriTipView`](siritipview.md) type, specify the style using the [`siriTipViewStyle(_:)`](https://developer.apple.com/documentation/SwiftUI/View/siriTipViewStyle(_:)) modifier.
+Specify a [`SiriTipViewStyle`](siritipviewstyle.md) value when you add a [`SiriTipUIView`](siritipuiview.md) or [`SiriTipView`](siritipview.md) type to your interface. For the [`SiriTipView`](siritipview.md) type, specify the style using the [`siriTipViewStyle(_:)`](https://developer.apple.com/documentation/swiftui/view/siritipviewstyle(_:)) modifier.
 
 ## Topics
 

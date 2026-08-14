@@ -22,7 +22,7 @@ let kCTFontMatrixAttribute: CFString
 
 #### Discussion
 
-If unspecified it defaults to the unit matrix. The value for this key is a [`CFData`](https://developer.apple.com/documentation/CoreFoundation/CFData) object containing a [`CGAffineTransform`](https://developer.apple.com/documentation/CoreFoundation/CGAffineTransform) object.
+If unspecified it defaults to the unit matrix. The value for this key is a [`CFData`](https://developer.apple.com/documentation/corefoundation/cfdata) object containing a [`CGAffineTransform`](https://developer.apple.com/documentation/corefoundation/cgaffinetransform) object.
 
 ## See Also
 

@@ -10,9 +10,9 @@ Browse notable changes in [`Core Location`](https://developer.apple.comhttps://d
 
 #### June 2024
 
-- Use [`CLLocationUpdate`](https://developer.apple.com/documentation/CoreLocation/CLLocationUpdate) and [`CLMonitor`](https://developer.apple.com/documentation/CoreLocation/CLMonitor-2r51v) without needing to explicitly request or verify authorization.
-- Control and defer automated user authorization flows with [`CLServiceSession`](https://developer.apple.com/documentation/CoreLocation/CLServiceSession-pt7n).
-- Asynchronously stream diagnostic properties from [`CLLocationUpdate`](https://developer.apple.com/documentation/CoreLocation/CLLocationUpdate) and [`CLMonitor.Event`](https://developer.apple.com/documentation/CoreLocation/CLMonitor-2r51v/Event) to understand why location updates and monitor events aren’t arriving.
+- Use [`CLLocationUpdate`](https://developer.apple.com/documentation/corelocation/cllocationupdate) and [`CLMonitor`](https://developer.apple.com/documentation/corelocation/clmonitor-2r51v) without needing to explicitly request or verify authorization.
+- Control and defer automated user authorization flows with [`CLServiceSession`](https://developer.apple.com/documentation/corelocation/clservicesession-pt7n).
+- Asynchronously stream diagnostic properties from [`CLLocationUpdate`](https://developer.apple.com/documentation/corelocation/cllocationupdate) and [`CLMonitor.Event`](https://developer.apple.com/documentation/corelocation/clmonitor-2r51v/event) to understand why location updates and monitor events aren’t arriving.
 
 ## See Also
 

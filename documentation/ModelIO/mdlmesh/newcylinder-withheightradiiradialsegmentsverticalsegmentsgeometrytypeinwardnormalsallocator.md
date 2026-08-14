@@ -27,9 +27,9 @@ A new mesh object.
 
 This method generates vertex data for a cylinder centered at the origin of its local coordinate system.
 
-The `inwardNormals` parameter determines the direction of generated vertex normal vectors for the mesh. Specify [`true`](https://developer.apple.com/documentation/Swift/true) if the mesh will be viewed from inside (for example, for use in a sky effect), or [`false`](https://developer.apple.com/documentation/Swift/false) if the mesh will be viewed from outside.
+The `inwardNormals` parameter determines the direction of generated vertex normal vectors for the mesh. Specify [`true`](https://developer.apple.com/documentation/swift/true) if the mesh will be viewed from inside (for example, for use in a sky effect), or [`false`](https://developer.apple.com/documentation/swift/false) if the mesh will be viewed from outside.
 
-The `allocator` parameter controls vertex data allocation for the mesh. For example, to use the MetalKit framework for loading vertex data into GPU buffers for rendering using Metal, pass a [`MTKMeshBufferAllocator`](https://developer.apple.com/documentation/MetalKit/MTKMeshBufferAllocator) object. By specifying an allocator, you can ensure that mesh data is copied a minimal number of times between being read from a file and being loaded into GPU memory for rendering.
+The `allocator` parameter controls vertex data allocation for the mesh. For example, to use the MetalKit framework for loading vertex data into GPU buffers for rendering using Metal, pass a [`MTKMeshBufferAllocator`](https://developer.apple.com/documentation/metalkit/mtkmeshbufferallocator) object. By specifying an allocator, you can ensure that mesh data is copied a minimal number of times between being read from a file and being loaded into GPU memory for rendering.
 
 ## Parameters
 
@@ -38,7 +38,7 @@ The `allocator` parameter controls vertex data allocation for the mesh. For exam
 - `radialSegments`: The number of points to generate around the horizontal circumference of the cylinder (that is, its cross-section in the xz-plane). A larger number of points increases rendering fidelity but decreases rendering performance.
 - `verticalSegments`: The number of points to generate along the height of the cylinder. A larger number of points increases rendering fidelity but decreases rendering performance.
 - `geometryType`: The type of geometric primitive from which to construct the mesh; must be triangles.
-- `inwardNormals`: [`true`](https://developer.apple.com/documentation/Swift/true) to generate normal vectors pointing toward the central axis of the cylinder; [`false`](https://developer.apple.com/documentation/Swift/false) to generate normal vectors pointing outward.
+- `inwardNormals`: [`true`](https://developer.apple.com/documentation/swift/true) to generate normal vectors pointing toward the central axis of the cylinder; [`false`](https://developer.apple.com/documentation/swift/false) to generate normal vectors pointing outward.
 - `allocator`: An object responsible for allocating mesh vertex data. If `nil`, Model I/O  uses an internal allocator object.
 
 ## See Also

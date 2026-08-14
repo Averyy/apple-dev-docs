@@ -18,7 +18,7 @@ class SFCertificateView
 
 The following figure shows a certificate view that includes editable trust settings and certificate details.
 
-![Certificate view](https://docs-assets.developer.apple.com/published/bd8edd7bcf22321f8b84c87b057c8d5c/media-1965608.jpg)
+![Certificate view](/images/com.apple.securityinterface/media-1965608.jpg)
 
 ## Topics
 
@@ -63,26 +63,26 @@ The following figure shows a certificate view that includes editable trust setti
 ## Relationships
 
 ### Inherits From
-- [NSVisualEffectView](../AppKit/NSVisualEffectView.md)
+- [NSVisualEffectView](../appkit/nsvisualeffectview.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSAccessibilityElementProtocol](../AppKit/NSAccessibilityElementProtocol.md)
-- [NSAccessibilityProtocol](../AppKit/NSAccessibilityProtocol.md)
-- [NSAnimatablePropertyContainer](../AppKit/NSAnimatablePropertyContainer.md)
-- [NSAppearanceCustomization](../AppKit/NSAppearanceCustomization.md)
-- [NSCoding](../Foundation/NSCoding.md)
-- [NSDraggingDestination](../AppKit/NSDraggingDestination.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [NSStandardKeyBindingResponding](../AppKit/NSStandardKeyBindingResponding.md)
-- [NSTouchBarProvider](../AppKit/NSTouchBarProvider.md)
-- [NSUserActivityRestoring](../AppKit/NSUserActivityRestoring.md)
-- [NSUserInterfaceItemIdentification](../AppKit/NSUserInterfaceItemIdentification.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSAccessibilityElementProtocol](../appkit/nsaccessibilityelementprotocol.md)
+- [NSAccessibilityProtocol](../appkit/nsaccessibilityprotocol.md)
+- [NSAnimatablePropertyContainer](../appkit/nsanimatablepropertycontainer.md)
+- [NSAppearanceCustomization](../appkit/nsappearancecustomization.md)
+- [NSCoding](../foundation/nscoding.md)
+- [NSDraggingDestination](../appkit/nsdraggingdestination.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSStandardKeyBindingResponding](../appkit/nsstandardkeybindingresponding.md)
+- [NSTouchBarProvider](../appkit/nstouchbarprovider.md)
+- [NSUserActivityRestoring](../appkit/nsuseractivityrestoring.md)
+- [NSUserInterfaceItemIdentification](../appkit/nsuserinterfaceitemidentification.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

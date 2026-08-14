@@ -16,7 +16,7 @@ func unlock() async -> Bool
 
 #### Discussion
 
-By default, this method invokes the [`unlock(completionHandler:)`](nsdocument/unlock(completionhandler:)-6m7rh.md) method to unlock the document. This method disables autosaving safety checking, meaning that [`checkAutosavingSafety()`](nsdocument/checkautosavingsafety().md) will no longer be invoked on this document. When unlocking succeeds, the [`isLocked`](nsdocument/islocked.md) method will begin returning [`false`](https://developer.apple.com/documentation/Swift/false).
+By default, this method invokes the [`unlock(completionHandler:)`](nsdocument/unlock(completionhandler:)-6m7rh.md) method to unlock the document. This method disables autosaving safety checking, meaning that [`checkAutosavingSafety()`](nsdocument/checkautosavingsafety().md) will no longer be invoked on this document. When unlocking succeeds, the [`isLocked`](nsdocument/islocked.md) method will begin returning [`false`](https://developer.apple.com/documentation/swift/false).
 
 ## Parameters
 

@@ -18,7 +18,7 @@ static let CTRadioAccessTechnologyDidChange: NSNotification.Name
 
 #### Discussion
 
-The notification’s [`object`](nsnotification/object.md) is an [`NSString`](nsstring.md) that represents the service identifier of the service whose radio access technology has changed. Use this string as the key in [`serviceCurrentRadioAccessTechnology`](https://developer.apple.com/documentation/CoreTelephony/CTTelephonyNetworkInfo/serviceCurrentRadioAccessTechnology) to get the value of the new radio access technology for the service.
+The notification’s [`object`](nsnotification/object.md) is an [`NSString`](nsstring.md) that represents the service identifier of the service whose radio access technology has changed. Use this string as the key in [`serviceCurrentRadioAccessTechnology`](https://developer.apple.com/documentation/coretelephony/cttelephonynetworkinfo/servicecurrentradioaccesstechnology) to get the value of the new radio access technology for the service.
 
 ## See Also
 

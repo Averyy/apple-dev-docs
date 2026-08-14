@@ -12,7 +12,7 @@ The code below decompresses the file generated using the steps explained in [`Co
 
 ##### Create the File Stream to Read the Source Archive
 
-The [`ArchiveByteStream`](https://developer.apple.com/documentation/AppleArchive/ArchiveByteStream) class provides static factory methods that create streams for different functions. In this case, use [`fileStream(path:mode:options:permissions:)`](https://developer.apple.com/documentation/AppleArchive/ArchiveByteStream/fileStream(path:mode:options:permissions:)) to create a byte stream that reads the source file:
+The [`ArchiveByteStream`](https://developer.apple.com/documentation/applearchive/archivebytestream) class provides static factory methods that create streams for different functions. In this case, use [`fileStream(path:mode:options:permissions:)`](https://developer.apple.com/documentation/applearchive/archivebytestream/filestream(path:mode:options:permissions:)) to create a byte stream that reads the source file:
 
 ```swift
 let archiveFilePath = FilePath(NSTemporaryDirectory() + "myFile.pdf.lzfse")
@@ -31,7 +31,7 @@ defer {
 
 ##### Create the File Stream to Write the Decompressed File
 
-You also use [`fileStream(path:mode:options:permissions:)`](https://developer.apple.com/documentation/AppleArchive/ArchiveByteStream/fileStream(path:mode:options:permissions:)) to create the file stream that writes the decompressed file to the file system. In this case, use the [`writeOnly`](https://developer.apple.com/documentation/System/FileDescriptor/AccessMode/writeOnly) mode:
+You also use [`fileStream(path:mode:options:permissions:)`](https://developer.apple.com/documentation/applearchive/archivebytestream/filestream(path:mode:options:permissions:)) to create the file stream that writes the decompressed file to the file system. In this case, use the [`writeOnly`](https://developer.apple.com/documentation/system/filedescriptor/accessmode/writeonly) mode:
 
 ```swift
 let destinationFilePath = FilePath(NSTemporaryDirectory() + "myFile_decompressed.pdf")
@@ -64,7 +64,7 @@ defer {
 
 ##### Decompress the Source Archive
 
-Finally, call [`process(readingFrom:writingTo:)`](https://developer.apple.com/documentation/AppleArchive/ArchiveByteStream/process(readingFrom:writingTo:)) to write the output of the decompression stream to the file-writing stream:
+Finally, call [`process(readingFrom:writingTo:)`](https://developer.apple.com/documentation/applearchive/archivebytestream/process(readingfrom:writingto:)) to write the output of the decompression stream to the file-writing stream:
 
 ```swift
 do {
@@ -75,7 +75,7 @@ do {
 }
 ```
 
-On return, `myFile_decompressed.pdf` exists in [`NSTemporaryDirectory()`](https://developer.apple.com/documentation/Foundation/NSTemporaryDirectory()) and contains the decompressed contents of `myFile.pdf.lzfse`.
+On return, `myFile_decompressed.pdf` exists in [`NSTemporaryDirectory()`](https://developer.apple.com/documentation/foundation/nstemporarydirectory()) and contains the decompressed contents of `myFile.pdf.lzfse`.
 
 ## See Also
 

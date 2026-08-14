@@ -18,7 +18,7 @@ subscript(index: Int32) -> CUnsignedChar { get }
 
 #### Discussion
 
-This subscript operates on one-component geometry sources with a [`format`](argeometrysource/format.md) of [`MTLVertexFormat.uchar`](https://developer.apple.com/documentation/Metal/MTLVertexFormat/uchar), such as [`classification`](armeshgeometry/classification.md).
+This subscript operates on one-component geometry sources with a [`format`](argeometrysource/format.md) of [`MTLVertexFormat.uchar`](https://developer.apple.com/documentation/metal/mtlvertexformat/uchar), such as [`classification`](armeshgeometry/classification.md).
 
 ## See Also
 

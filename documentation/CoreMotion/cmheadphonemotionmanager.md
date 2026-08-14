@@ -26,13 +26,13 @@ class CMHeadphoneMotionManager
 
 This class delivers headphone motion updates to your app. Use an instance of the manager to determine if the device supports motion, and to start and stop updates. Adopt the [`CMHeadphoneMotionManagerDelegate`](cmheadphonemotionmanagerdelegate.md) protocol to receive and respond to motion updates. Before using this class, check [`isDeviceMotionAvailable`](cmheadphonemotionmanager/isdevicemotionavailable.md) to make sure the feature is available.
 
-> ❗ **Important**:  In iOS and macOS, include the [`NSMotionUsageDescription`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSMotionUsageDescription) key in your app’s `Info.plist` file. If this key is absent, the system crashes your app when you start device-motion updates.
+> ❗ **Important**:  In iOS and macOS, include the [`NSMotionUsageDescription`](https://developer.apple.com/documentation/bundleresources/information-property-list/nsmotionusagedescription) key in your app’s `Info.plist` file. If this key is absent, the system crashes your app when you start device-motion updates.
 
 ##### Identify the Coordinate Axes
 
 To interpret attitude data, you need to know the orientation of the device’s coordinate axes. The following illustration shows the positive x-axis, positive y-axis, and positive z-axis for motion-capable Apple headphones.
 
-![An illustration showing AirPods Max and AirPods Pro with labels representing the positive x-axis, positive y-axis, and positive z-axis on each device.](https://docs-assets.developer.apple.com/published/4f7825123ffe36ae9788ba56f7f92bd7/media-4302074%402x.png)
+![An illustration showing AirPods Max and AirPods Pro with labels representing the positive x-axis, positive y-axis, and positive z-axis on each device.](/images/com.apple.coremotion/media-4302074@2x.png)
 
 ## Topics
 
@@ -65,14 +65,14 @@ To interpret attitude data, you need to know the orientation of the device’s c
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

@@ -7,7 +7,7 @@ An atom that holds a list of the metadata keys that may be present in the metada
 
 #### Overview
 
-For more information, see [`Metadata item keys atom ('keys')`](metadata_item_keys_atom.md).
+For more information, see [`Metadata item keys atom`](metadata_item_keys_atom.md).
 
 ## See Also
 

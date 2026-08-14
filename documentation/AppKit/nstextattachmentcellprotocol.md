@@ -16,7 +16,7 @@ protocol NSTextAttachmentCellProtocol : NSObjectProtocol
 
 #### Overview
 
-With the exceptions of [`cellBaselineOffset()`](nstextattachmentcellprotocol/cellbaselineoffset().md), [`attachment`](nstextattachmentcellprotocol/attachment.md), and [`attachment`](nstextattachmentcellprotocol/attachment.md), all of these methods are implemented by the [`NSCell`](nscell.md) class.For general information on text attachments, see [`NSAttributedString`](https://developer.apple.com/documentation/Foundation/NSAttributedString) and [`NSTextView`](nstextview.md).
+With the exceptions of [`cellBaselineOffset()`](nstextattachmentcellprotocol/cellbaselineoffset().md), [`attachment`](nstextattachmentcellprotocol/attachment.md), and [`attachment`](nstextattachmentcellprotocol/attachment.md), all of these methods are implemented by the [`NSCell`](nscell.md) class.For general information on text attachments, see [`NSAttributedString`](https://developer.apple.com/documentation/foundation/nsattributedstring) and [`NSTextView`](nstextview.md).
 
 ## Topics
 
@@ -54,7 +54,7 @@ With the exceptions of [`cellBaselineOffset()`](nstextattachmentcellprotocol/cel
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 ### Conforming Types
 - [NSTextAttachmentCell](nstextattachmentcell-swift.class.md)
 

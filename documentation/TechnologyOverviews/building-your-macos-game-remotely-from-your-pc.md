@@ -44,7 +44,7 @@ With Visual Studio installed and set up, choose Tools > Options > CMake and sele
 
 Your Mac now appears as a new run destination in Visual Studio:
 
-![A screenshot of Visual Studio that shows the selection of a connected Mac as the build machine.](https://docs-assets.developer.apple.com/published/87a504fdfccc75ee75ffcbc387d80aee/remote-2.png)
+![A screenshot of Visual Studio that shows the selection of a connected Mac as the build machine.](/images/com.apple.TechnologyOverviews/remote-2.png)
 
 If the entry is missing from this list, try restarting Visual Studio. For more details, see [`Connect to your remote Linux system by using Visual Studio`](https://developer.apple.comhttps://learn.microsoft.com/en-us/cpp/linux/connect-to-your-remote-linux-computer?view=msvc-170).
 
@@ -123,7 +123,7 @@ To debug on your Mac, upgrade to Visual Studio 2022 17.14.3 or later and configu
 
 After you configure a remote Mac and set up the build configuration files you need, you can initiate builds from your PC. In the Visual Studio run bar, select the remote build destination, the macOS build configuration, and the target that matches the executable name in the `CMakeLists.txt` file you created. The following screenshot shows the IP address of a connected Mac, the macOS build configuration settings, and the `gptksample` target.
 
-![A screenshot of Visual Studio that shows the configured options to build on a remote Mac.](https://docs-assets.developer.apple.com/published/17b3e1b4d2b7670b8ad01e0059db4add/remote-5.png)
+![A screenshot of Visual Studio that shows the configured options to build on a remote Mac.](/images/com.apple.TechnologyOverviews/remote-5.png)
 
 To start a remote build, click the green run button. Visual Studio builds your game and logs any errors in the error panel, as well as in the output panel. Examine the errors and use them to update your `CMakeLists.txt` file and tune the build process on your Mac.
 

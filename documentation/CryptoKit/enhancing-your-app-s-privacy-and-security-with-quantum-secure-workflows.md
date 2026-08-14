@@ -25,7 +25,7 @@ This sample uses round-trip processes — encrypting then decrypting data, or ge
 
 The function `KeyTest/check(_:ciphersuite:)` in the file `KeyTest+PQHPKE.swift` performs a full round-trip using HPKE, encrypting a cleartext message using the encapsulated key and verifying that the recipient recovers the same cleartext when they use the encapsulated key to decrypt the ciphertext they receive. It does this by following these steps:
 
-1. It creates an [`HPKE.Sender`](HPKE/Sender.md) using the recipient’s public key, the specified ciphersuite, and additional key-derivation information:
+1. It creates an [`HPKE.Sender`](hpke/sender.md) using the recipient’s public key, the specified ciphersuite, and additional key-derivation information:
 
 ```swift
 let info = "INFO"
@@ -38,7 +38,7 @@ var sender = try HPKE.Sender(recipientKey: key.publicKey, ciphersuite: ciphersui
 let encapsulation = sender.encapsulatedKey
 ```
 
-1. It creates an [`HPKE.Recipient`](HPKE/Recipient.md) using the recipient’s private key, the ciphersuite, additional key-derivation information, and the encapsulated key:
+1. It creates an [`HPKE.Recipient`](hpke/recipient.md) using the recipient’s private key, the ciphersuite, additional key-derivation information, and the encapsulated key:
 
 ```swift
 var recipient = try HPKE.Recipient(privateKey: key, ciphersuite: ciphersuite, info: Data(info.utf8), encapsulatedKey: encapsulation)
@@ -58,7 +58,7 @@ let ciphertext = try sender.seal(Data(message.utf8), authenticating: Data(authen
 let decryption = try recipient.open(ciphertext, authenticating: Data(authenticatedMetadata.utf8))
 ```
 
-The function `testPQHPKE(type:)` in the same file calls the `check(_:ciphersuite:)` function using the quantum-secure [`XWingMLKEM768X25519_SHA256_AES_GCM_256`](HPKE/Ciphersuite/XWingMLKEM768X25519_SHA256_AES_GCM_256.md) ciphersuite:
+The function `testPQHPKE(type:)` in the same file calls the `check(_:ciphersuite:)` function using the quantum-secure [`XWingMLKEM768X25519_SHA256_AES_GCM_256`](hpke/ciphersuite/xwingmlkem768x25519_sha256_aes_gcm_256.md) ciphersuite:
 
 ```swift
 internal func testPQHPKE(type: PQHPKEType) throws -> (TestStatus, String) {
@@ -77,7 +77,7 @@ The function `KeyTest/check(_:)` in the file `KeyTest+MLKEM.swift` generates, en
 let encapsulation = try key.publicKey.encapsulate()
 ```
 
-The result of this operation is a [`KEM.EncapsulationResult`](KEM/EncapsulationResult.md) that contains both the shared secret and the encapsulated version. The function passes the encapsulated version to the private key’s [`decapsulate(_:)`](KEMPrivateKey/decapsulate(_:).md) method to recover the shared secret:
+The result of this operation is a [`KEM.EncapsulationResult`](kem/encapsulationresult.md) that contains both the shared secret and the encapsulated version. The function passes the encapsulated version to the private key’s [`decapsulate(_:)`](kemprivatekey/decapsulate(_:).md) method to recover the shared secret:
 
 ```swift
 let sharedSecret = try key.decapsulate(encapsulation.encapsulated)
@@ -128,7 +128,7 @@ One-time-use private keys are only suitable for ephemeral use because you can’
 
 #### Create Digital Signatures
 
-The two `check(_:)` functions in the file `KeyTest+MLDSA.swift` generate and validate digital signatures using the quantum-secure Module-Lattice Digital Signature Algorithm (ML-DSA), by calling methods on the [`MLDSA65`](MLDSA65.md) and [`MLDSA87`](MLDSA87.md) types. Each function accepts a private key, which it uses to sign a test message:
+The two `check(_:)` functions in the file `KeyTest+MLDSA.swift` generate and validate digital signatures using the quantum-secure Module-Lattice Digital Signature Algorithm (ML-DSA), by calling methods on the [`MLDSA65`](mldsa65.md) and [`MLDSA87`](mldsa87.md) types. Each function accepts a private key, which it uses to sign a test message:
 
 ```swift
 let message = "TEST MESSAGE"
@@ -202,7 +202,7 @@ These workflows store the CryptoKit keys in the keychain by converting between s
 
 ## See Also
 
-- [Complying with Encryption Export Regulations](../Security/complying-with-encryption-export-regulations.md)
+- [Complying with Encryption Export Regulations](../security/complying-with-encryption-export-regulations.md)
   Declare the use of encryption in your app to streamline the app submission process.
 - [Performing Common Cryptographic Operations](performing-common-cryptographic-operations.md)
   Use CryptoKit to carry out operations like hashing, key generation, and encryption.

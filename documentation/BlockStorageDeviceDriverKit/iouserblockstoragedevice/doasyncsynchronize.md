@@ -16,7 +16,7 @@ virtual kern_return_t DoAsyncSynchronize(uint32_t requestID, uint64_t lba, uint6
 
 #### Return Value
 
-A value that indicates the synchronize result. [`kIOReturnSuccess`](https://developer.apple.com/documentation/DriverKit/kIOReturnSuccess) indicates success. For error definitions, see [`IOKit Constants`](https://developer.apple.com/documentation/iokit/iokit_constants).
+A value that indicates the synchronize result. [`kIOReturnSuccess`](https://developer.apple.com/documentation/driverkit/kioreturnsuccess) indicates success. For error definitions, see [`IOKit Constants`](https://developer.apple.com/documentation/iokit/iokit_constants).
 
 #### Discussion
 

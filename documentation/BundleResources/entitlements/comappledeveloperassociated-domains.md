@@ -46,15 +46,15 @@ Where `alternate mode` is one of the following:
 - **`managed`**: Specifies that only devices using a mobile device management (MDM) profile can access the domain. This mode requires consent from the MDM administrator.
 - **`developer+managed`**: Specifies that only devices that are in both `developer` and `managed` modes can access the domain.
 
-To enable associated domains, add the Associated Domains capability to your target in Xcode. For more information, see [`Adding capabilities to your app`](https://developer.apple.com/documentation/Xcode/adding-capabilities-to-your-app).
+To enable associated domains, add the Associated Domains capability to your target in Xcode. For more information, see [`Adding capabilities to your app`](https://developer.apple.com/documentation/xcode/adding-capabilities-to-your-app).
 
 > ❗ **Important**:  For watchOS apps, you must add the Associated Domains capability to the WatchKit Extension target.
 
 ## See Also
 
-- [Supporting associated domains](../Xcode/supporting-associated-domains.md)
+- [Supporting associated domains](../xcode/supporting-associated-domains.md)
   Connect your app and a website to provide both a native app and a browser experience.
-- [Creating an App Clip with Xcode](../AppClip/creating-an-app-clip-with-xcode.md)
+- [Creating an App Clip with Xcode](../appclip/creating-an-app-clip-with-xcode.md)
   Add an App Clip target to your Xcode project and share code between the App Clip and its corresponding full app.
 - [Network Extensions Entitlement](entitlements/com.apple.developer.networking.networkextension.md)
   The APIs an app can use to customize networking features.

@@ -16,11 +16,11 @@ func authorizationViewShouldDeauthorize(_ view: SFAuthorizationView!) -> Bool
 
 #### Discussion
 
-The delegate can react to this before deauthorization happens and avoid it by returning [`NO`](no.md). This delegate method is not called when you call the [`deauthorize(_:)`](https://developer.apple.com/documentation/SecurityInterface/SFAuthorizationView/deauthorize(_:)) method.
+The delegate can react to this before deauthorization happens and avoid it by returning [`NO`](no.md). This delegate method is not called when you call the [`deauthorize(_:)`](https://developer.apple.com/documentation/securityinterface/sfauthorizationview/deauthorize(_:)) method.
 
 ## See Also
 
-- [func deauthorize(Any!) -> Bool](../SecurityInterface/SFAuthorizationView/deauthorize(_:).md)
+- [func deauthorize(Any!) -> Bool](../securityinterface/sfauthorizationview/deauthorize(_:).md)
   Sets the authorization state to unauthorized and locks the lock icon in the view.
 
 

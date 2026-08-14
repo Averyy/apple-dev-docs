@@ -16,11 +16,11 @@ var displayedKeys: [String] { get set }
 
 #### Discussion
 
-If no keys are provided, the picker selects contacts instead of values. For a list of possible keys, see [`Contact Keys`](https://developer.apple.com/documentation/Contacts/contact-keys).
+If no keys are provided, the picker selects contacts instead of values. For a list of possible keys, see [`Contact Keys`](https://developer.apple.com/documentation/contacts/contact-keys).
 
 ## See Also
 
-- [class CNContact](../Contacts/CNContact.md)
+- [class CNContact](../contacts/cncontact.md)
   An immutable object that stores information about a single contact, such as the contact’s first name, phone numbers, and addresses.
 
 

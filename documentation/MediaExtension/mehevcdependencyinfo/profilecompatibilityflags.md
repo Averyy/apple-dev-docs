@@ -16,7 +16,7 @@ var profileCompatibilityFlags: Data? { get set }
 
 #### Discussion
 
-This value maps to the [`kCMHEVCTemporalLevelInfoKey_ProfileCompatibilityFlags`](https://developer.apple.com/documentation/CoreMedia/kCMHEVCTemporalLevelInfoKey_ProfileCompatibilityFlags) sample buffer attachment, and is `nil` if this information isn’t available.
+This value maps to the [`kCMHEVCTemporalLevelInfoKey_ProfileCompatibilityFlags`](https://developer.apple.com/documentation/coremedia/kcmhevctemporallevelinfokey_profilecompatibilityflags) sample buffer attachment, and is `nil` if this information isn’t available.
 
 ## See Also
 

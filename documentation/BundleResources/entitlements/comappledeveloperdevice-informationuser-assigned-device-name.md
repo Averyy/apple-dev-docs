@@ -19,9 +19,9 @@ The entitlement for accessing the user-assigned device name instead of a generic
 
 #### Discussion
 
-In iOS, the *user-assigned device name* is available in the Settings app under General > About > Name. In iOS 15 and earlier, the [`name`](https://developer.apple.com/documentation/UIKit/UIDevice/name) property returns this name. In iOS 16 and later, the [`name`](https://developer.apple.com/documentation/UIKit/UIDevice/name) property returns a generic device name by default instead.
+In iOS, the *user-assigned device name* is available in the Settings app under General > About > Name. In iOS 15 and earlier, the [`name`](https://developer.apple.com/documentation/uikit/uidevice/name) property returns this name. In iOS 16 and later, the [`name`](https://developer.apple.com/documentation/uikit/uidevice/name) property returns a generic device name by default instead.
 
-To access the user-assigned device name through the [`name`](https://developer.apple.com/documentation/UIKit/UIDevice/name) property in iOS 16 and later, you must be assigned this entitlement. To request the entitlement, the user-assigned device name must be necessary to power a core feature of the app and must meet all of the following criteria:
+To access the user-assigned device name through the [`name`](https://developer.apple.com/documentation/uikit/uidevice/name) property in iOS 16 and later, you must be assigned this entitlement. To request the entitlement, the user-assigned device name must be necessary to power a core feature of the app and must meet all of the following criteria:
 
 - The user-assigned device name is visible to the user in your app’s UI. You must provide screenshots of this UI to request the entitlement.
 - The user-assigned device name is powering a multi-device feature. Your app uses the user-assigned device name solely for functionality that’s visible to the user so that they can identify their own device, and the functionality involves interaction between multiple devices that the same user operates. For example, an app that has multi-device syncing functionality might show the user-assigned device name for each device so that the user can select between them. You must provide screenshots of this UI to request the entitlement.

@@ -278,7 +278,7 @@ class DocumentLoaderTests: XCTestCase {
 
 ##### Subclass and Override Untestable Methods
 
-When a class combines custom logic with interactions or behavior that make the class hard to test, introduce a subclass that overrides some of the class’s methods to make the others easier to test. It’s common to design classes that contain both app-specific logic, and interactions with the environment or frameworks that render behavior difficult to control in tests. A common example is a [`UIViewController`](https://developer.apple.com/documentation/UIKit/UIViewController) subclass, which has app-specific code in its action methods and also loads views or presents other view controllers.
+When a class combines custom logic with interactions or behavior that make the class hard to test, introduce a subclass that overrides some of the class’s methods to make the others easier to test. It’s common to design classes that contain both app-specific logic, and interactions with the environment or frameworks that render behavior difficult to control in tests. A common example is a [`UIViewController`](https://developer.apple.com/documentation/uikit/uiviewcontroller) subclass, which has app-specific code in its action methods and also loads views or presents other view controllers.
 
 Introducing tests for the custom app logic is desirable, to ensure that this logic works as expected and to protect against regressions. The complexity of controlling or working around the interactions between the class and the environment make testing the logic difficult.
 
@@ -412,7 +412,7 @@ Subclassing and overriding untestable methods is the first step in redesigning e
 
 If your code uses a singleton object to gain access to globally-available state or behavior, turn the singleton into a parameter that you can replace to support isolation for testing. Singleton use can be spread throughout a codebase, which makes it hard to know the singleton’s state when it’s used by the component you’re trying to test. Running tests in different orders may produce different outcomes.
 
-> **Note**: Commonly-used singletons, including [`NSApplication`](https://developer.apple.com/documentation/AppKit/NSApplication) and the default [`FileManager`](https://developer.apple.com/documentation/Foundation/FileManager), have behavior that’s dependent on external state. Components that use these singletons directly introduce more complications for reliable testing.
+> **Note**: Commonly-used singletons, including [`NSApplication`](https://developer.apple.com/documentation/appkit/nsapplication) and the default [`FileManager`](https://developer.apple.com/documentation/foundation/filemanager), have behavior that’s dependent on external state. Components that use these singletons directly introduce more complications for reliable testing.
 
 In this example, a `LoginHandler` object participates in authenticating someone to a network service. Part of its capability is retrieving a username that the app previously used for the service, which it gets from the standard user defaults object:
 
@@ -428,7 +428,7 @@ class LoginHandler {
 }
 ```
 
-[`UserDefaults`](https://developer.apple.com/documentation/Foundation/UserDefaults) relies on shared state that’s stored in the file system and might be modified by other code in the app or by someone editing files on their Mac. Replace direct access to the singleton object with a parameter or property that can be controlled from outside the component under test. In the app, continue to use the singleton as the collaborator for the component. In tests, supply an alternative object that’s easier to control.
+[`UserDefaults`](https://developer.apple.com/documentation/foundation/userdefaults) relies on shared state that’s stored in the file system and might be modified by other code in the app or by someone editing files on their Mac. Replace direct access to the singleton object with a parameter or property that can be controlled from outside the component under test. In the app, continue to use the singleton as the collaborator for the component. In tests, supply an alternative object that’s easier to control.
 
 The following listing shows the result of applying this change to the `LoginHandler` class listed above. The login handler gets the stored username from its `storage` object, which defaults to the user defaults singleton. An extension conforms `UserDefaults` to the `LoginStorage` protocol, so that tests can supply alternative implementations of the protocol.
 
@@ -509,7 +509,7 @@ class XCLoginHandlerTests : XCTestCase {
 }
 ```
 
-You may need to combine this change with those described in the article sections ([`Replace a concrete type with a protocol`](updating-your-existing-codebase-to-accommodate-unit-tests#Replace-a-concrete-type-with-a-protocol.md) and [`Subclass and override untestable methods`](updating-your-existing-codebase-to-accommodate-unit-tests#Subclass-and-override-untestable-methods.md)) to create the alternative object you use in the test in place of the singleton. You’ll need to do this where the singleton supplies behavior that’s difficult to control in a test, like [`FileManager`](https://developer.apple.com/documentation/Foundation/FileManager) or [`NSApplication`](https://developer.apple.com/documentation/AppKit/NSApplication).
+You may need to combine this change with those described in the article sections ([`Replace a concrete type with a protocol`](updating-your-existing-codebase-to-accommodate-unit-tests#Replace-a-concrete-type-with-a-protocol.md) and [`Subclass and override untestable methods`](updating-your-existing-codebase-to-accommodate-unit-tests#Subclass-and-override-untestable-methods.md)) to create the alternative object you use in the test in place of the singleton. You’ll need to do this where the singleton supplies behavior that’s difficult to control in a test, like [`FileManager`](https://developer.apple.com/documentation/foundation/filemanager) or [`NSApplication`](https://developer.apple.com/documentation/appkit/nsapplication).
 
 ## See Also
 

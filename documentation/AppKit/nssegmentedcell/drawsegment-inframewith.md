@@ -20,7 +20,7 @@ You can override this method to provide a custom appearance for segmented contro
 
 ## Parameters
 
-- `segment`: The index of the segment to draw. This method raises an exception ([`rangeException`](https://developer.apple.com/documentation/Foundation/NSExceptionName/rangeException)) if the index is out of bounds.
+- `segment`: The index of the segment to draw. This method raises an exception ([`rangeException`](https://developer.apple.com/documentation/foundation/nsexceptionname/rangeexception)) if the index is out of bounds.
 - `frame`: The rectangle in which to draw the segment’s image and label. This rectangle is specified in user space coordinates of the specified view.
 - `controlView`: The view that contains the segment.
 

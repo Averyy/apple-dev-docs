@@ -16,10 +16,10 @@ A launch screen supports modern system features like multitasking and dynamic re
 
 When you upload an app built with the iOS 27 SDK or later, App Store Connect validates that your app’s `Info.plist` contains at least one of the following keys:
 
-- [`UILaunchStoryboardName`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/UILaunchStoryboardName)
-- [`UILaunchStoryboards`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/UILaunchStoryboards)
-- [`UILaunchScreen`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/UILaunchScreen)
-- [`UILaunchScreens`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/UILaunchScreens)
+- [`UILaunchStoryboardName`](https://developer.apple.com/documentation/bundleresources/information-property-list/uilaunchstoryboardname)
+- [`UILaunchStoryboards`](https://developer.apple.com/documentation/bundleresources/information-property-list/uilaunchstoryboards)
+- [`UILaunchScreen`](https://developer.apple.com/documentation/bundleresources/information-property-list/uilaunchscreen)
+- [`UILaunchScreens`](https://developer.apple.com/documentation/bundleresources/information-property-list/uilaunchscreens)
 
 If none of these keys are present, App Store Connect rejects the upload with the following error:
 
@@ -32,11 +32,11 @@ For details, visit: https://developer.apple.com/documentation/technotes/tn3208-p
 
 #### Add a Launch Screen to Your App
 
-Add the [`UILaunchScreen`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/UILaunchScreen) key to your app’s `Info.plist` to configure a launch screen. Xcode includes this key by default in new SwiftUI projects when the `Generate Info.plist File` and `Launch Screen (Generation)` build settings are enabled.
+Add the [`UILaunchScreen`](https://developer.apple.com/documentation/bundleresources/information-property-list/uilaunchscreen) key to your app’s `Info.plist` to configure a launch screen. Xcode includes this key by default in new SwiftUI projects when the `Generate Info.plist File` and `Launch Screen (Generation)` build settings are enabled.
 
 If you need a custom layout, use a launch screen storyboard instead.
 
-To learn about configuring your app’s launch screen, see [`Specifying your app’s launch screen`](https://developer.apple.com/documentation/Xcode/specifying-your-apps-launch-screen).
+To learn about configuring your app’s launch screen, see [`Specifying your app’s launch screen`](https://developer.apple.com/documentation/xcode/specifying-your-apps-launch-screen).
 
 #### Verify Your Launch Screen
 

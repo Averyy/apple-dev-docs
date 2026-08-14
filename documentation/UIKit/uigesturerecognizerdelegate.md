@@ -87,7 +87,7 @@ myScreenEdgePanGestureRecognizer.delegate = self;
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 ### Conforming Types
 - [UITableViewCell](uitableviewcell.md)
 

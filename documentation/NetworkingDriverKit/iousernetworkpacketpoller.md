@@ -31,7 +31,7 @@ class IOUserNetworkPacketPoller;
 ## Relationships
 
 ### Inherits From
-- [OSObject](../DriverKit/OSObject.md)
+- [OSObject](../driverkit/osobject.md)
 
 
 ---

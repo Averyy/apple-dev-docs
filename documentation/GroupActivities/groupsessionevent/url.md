@@ -23,7 +23,7 @@ let url: URL?
 
 When the user taps your custom event in the system UI, the system opens the provided URL. Specify a universal link to open your app to the place where the action occurred. If the value of this link is `nil`, the system brings your app to the foreground.
 
-For information about how to support universal links in your app, see [`Supporting universal links in your app`](https://developer.apple.com/documentation/Xcode/supporting-universal-links-in-your-app)
+For information about how to support universal links in your app, see [`Supporting universal links in your app`](https://developer.apple.com/documentation/xcode/supporting-universal-links-in-your-app)
 
 ## See Also
 

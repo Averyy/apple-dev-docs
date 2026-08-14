@@ -33,7 +33,7 @@ The default value is [`NSLineBreakStrategyNone`](nslinebreakstrategy/nslinebreak
   The paragraph’s threshold for hyphenation.
 - [var usesDefaultHyphenation: Bool](nsmutableparagraphstyle/usesdefaulthyphenation.md)
   A Boolean value that indicates whether the paragraph style uses the system hyphenation settings.
-- [var tighteningFactorForTruncation: Float](../AppKit/NSMutableParagraphStyle/tighteningFactorForTruncation.md)
+- [var tighteningFactorForTruncation: Float](../appkit/nsmutableparagraphstyle/tighteningfactorfortruncation.md)
   The threshold for using tightening as an alternative to truncation.
 - [var allowsDefaultTighteningForTruncation: Bool](nsmutableparagraphstyle/allowsdefaulttighteningfortruncation.md)
   A Boolean value that indicates whether the system tightens intercharacter spacing before truncating text.

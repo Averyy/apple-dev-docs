@@ -23,7 +23,7 @@ Creates a tip view with an optional arrow.
 
 #### Discussion
 
-Use a `TipView` when you want to indicate the UI element to which the tip applies, but don’t want to directly anchor the tip view to that element. Use the [`popoverTip(_:arrowEdge:action:)`](https://developer.apple.com/documentation/SwiftUI/View/popoverTip(_:arrowEdge:action:)) to anchor your tip to an element.
+Use a `TipView` when you want to indicate the UI element to which the tip applies, but don’t want to directly anchor the tip view to that element. Use the [`popoverTip(_:arrowEdge:action:)`](https://developer.apple.com/documentation/swiftui/view/popovertip(_:arrowedge:action:)) to anchor your tip to an element.
 
 ## Parameters
 

@@ -31,12 +31,12 @@ The collection’s elements are the pieces that make up the given view, and the 
 ## Relationships
 
 ### Conforms To
-- [BidirectionalCollection](../Swift/BidirectionalCollection.md)
-- [Collection](../Swift/Collection.md)
-- [Copyable](../Swift/Copyable.md)
-- [Escapable](../Swift/Escapable.md)
-- [RandomAccessCollection](../Swift/RandomAccessCollection.md)
-- [Sequence](../Swift/Sequence.md)
+- [BidirectionalCollection](../swift/bidirectionalcollection.md)
+- [Collection](../swift/collection.md)
+- [Copyable](../swift/copyable.md)
+- [Escapable](../swift/escapable.md)
+- [RandomAccessCollection](../swift/randomaccesscollection.md)
+- [Sequence](../swift/sequence.md)
 - [View](view.md)
 
 ## See Also

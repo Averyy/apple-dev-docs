@@ -28,7 +28,7 @@ A publisher that attempts to recreate its subscription to a failed upstream publ
 
 Use [`retry(_:)`](publisher/retry(_:).md) to try a connecting to an upstream publisher after a failed connection attempt.
 
-In the example below, a [`URLSession.DataTaskPublisher`](https://developer.apple.com/documentation/Foundation/URLSession/DataTaskPublisher) attempts to connect to a remote URL. If the connection attempt succeeds, it publishes the remote service’s HTML to the downstream publisher and completes normally. Otherwise, the retry operator attempts to reestablish the connection. If after three attempts the publisher still can’t connect to the remote URL, the [`catch(_:)`](publisher/catch(_:).md) operator replaces the error with a new publisher that publishes a “connection timed out” HTML page. After the downstream subscriber receives the timed out message, the stream completes normally.
+In the example below, a [`URLSession.DataTaskPublisher`](https://developer.apple.com/documentation/foundation/urlsession/datataskpublisher) attempts to connect to a remote URL. If the connection attempt succeeds, it publishes the remote service’s HTML to the downstream publisher and completes normally. Otherwise, the retry operator attempts to reestablish the connection. If after three attempts the publisher still can’t connect to the remote URL, the [`catch(_:)`](publisher/catch(_:).md) operator replaces the error with a new publisher that publishes a “connection timed out” HTML page. After the downstream subscriber receives the timed out message, the stream completes normally.
 
 ```swift
 struct WebSiteData: Codable {

@@ -44,9 +44,9 @@ Chart {
 
 The chart draws marks that correspond to the instances that you specify:
 
-![A bar chart with three vertical bars, all in the same color. The first is labeled Cube and has a value of 5. The second is labeled Sphere and has a value of 6. The third is labeled Pyramid and has a value of 4.](https://docs-assets.developer.apple.com/published/10e238580e604d90ac847a51c40dd670/ChartContent-1-macOS%402x.png)
+![A bar chart with three vertical bars, all in the same color. The first is labeled Cube and has a value of 5. The second is labeled Sphere and has a value of 6. The third is labeled Pyramid and has a value of 4.](/images/com.apple.Charts/ChartContent-1-macOS@2x.png)
 
-You can combine any number of marks or types of marks in a single chart by listing them individually as shown in the above example, wrapping them in a [`ForEach`](https://developer.apple.com/documentation/SwiftUI/ForEach), or any combination of these. For some mark types, like [`LineMark`](linemark.md), you can group the marks into series using the mark’s `series` initialization parameter.
+You can combine any number of marks or types of marks in a single chart by listing them individually as shown in the above example, wrapping them in a [`ForEach`](https://developer.apple.com/documentation/swiftui/foreach), or any combination of these. For some mark types, like [`LineMark`](linemark.md), you can group the marks into series using the mark’s `series` initialization parameter.
 
 ##### Configure Chart Content
 
@@ -60,7 +60,7 @@ BarMark(
 .foregroundStyle(.red)
 ```
 
-![A bar chart with three vertical bars. The first and third bars are blue while the middle bar is red. The first is labeled Cube and has a value of 5. The second is labeled Sphere and has a value of 6. The third is labeled Pyramid and has a value of 4.](https://docs-assets.developer.apple.com/published/cb9c5bf4aed7bdd60ab03e1ca0489ac2/ChartContent-2-macOS%402x.png)
+![A bar chart with three vertical bars. The first and third bars are blue while the middle bar is red. The first is labeled Cube and has a value of 5. The second is labeled Sphere and has a value of 6. The third is labeled Pyramid and has a value of 4.](/images/com.apple.Charts/ChartContent-2-macOS@2x.png)
 
 ## Topics
 

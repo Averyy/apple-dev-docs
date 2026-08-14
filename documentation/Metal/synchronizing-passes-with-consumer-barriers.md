@@ -217,11 +217,11 @@ The example has at least one access conflict because passes 1 and 2 both access 
 - The copy command from the first pass stores to `bufferB`.
 - The dispatch command from the second pass loads from `bufferB`.
 
-![A diagram showing three compute passes where pass 1 stores to buffer B during its blit stage and pass 2 loads from buffer B during its dispatch stage, creating an access conflict.](https://docs-assets.developer.apple.com/published/a36dda87b8401978c2b0be48e734807e/synchronizing-passes-with-consumer-barriers-1%402x.png)
+![A diagram showing three compute passes where pass 1 stores to buffer B during its blit stage and pass 2 loads from buffer B during its dispatch stage, creating an access conflict.](/images/com.apple.metal/synchronizing-passes-with-consumer-barriers-1@2x.png)
 
 Without synchronization, the GPU can run all three passes and their stages in parallel, which can yield inconsistent results in resources with access conflicts.
 
-![A diagram showing all three passes and their stages running in parallel without synchronization, potentially causing inconsistent results when accessing buffer B.](https://docs-assets.developer.apple.com/published/8cdfc94b96ac5fddce92708f21b537f6/synchronizing-passes-with-consumer-barriers-2%402x.png)
+![A diagram showing all three passes and their stages running in parallel without synchronization, potentially causing inconsistent results when accessing buffer B.](/images/com.apple.metal/synchronizing-passes-with-consumer-barriers-2@2x.png)
 
 ##### Resolve Access Conflicts with a Consumer Barrier
 
@@ -311,7 +311,7 @@ The following example modifies the code that encodes the second pass by adding a
 
 In this example, the barrier prevents the GPU from running the dispatch stage in both the second and third passes until the blit stage in the first pass finishes storing its modifications.
 
-![A diagram showing the consumer barrier synchronization where the GPU waits for the blit stage of pass 1 to complete before running the dispatch stages of passes 2 and 3.](https://docs-assets.developer.apple.com/published/62e47c0f7819872e5b41819b52cea7b5/synchronizing-passes-with-consumer-barriers-3%402x.png)
+![A diagram showing the consumer barrier synchronization where the GPU waits for the blit stage of pass 1 to complete before running the dispatch stages of passes 2 and 3.](/images/com.apple.metal/synchronizing-passes-with-consumer-barriers-3@2x.png)
 
 The barrier unblocks both dispatch stages when the blit stage from the first pass finishes running because it’s the only pass that applies to the `afterQueueStages` parameter.
 

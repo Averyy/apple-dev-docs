@@ -25,7 +25,7 @@ var volume: Float { get set }
 
 A value of `0.0` indicates silence; a value of `1.0` (the default) indicates full audio volume for the player instance.
 
-This property is used to control the player audio volume relative to the system volume. There is no programmatic way to control the system volume in iOS, but you can use the MediaPlayer framework’s [`MPVolumeView`](https://developer.apple.com/documentation/MediaPlayer/MPVolumeView) class to present a standard user interface for controlling system volume.
+This property is used to control the player audio volume relative to the system volume. There is no programmatic way to control the system volume in iOS, but you can use the MediaPlayer framework’s [`MPVolumeView`](https://developer.apple.com/documentation/mediaplayer/mpvolumeview) class to present a standard user interface for controlling system volume.
 
 ## See Also
 

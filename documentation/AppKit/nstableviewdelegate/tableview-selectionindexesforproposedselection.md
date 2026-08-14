@@ -17,7 +17,7 @@ optional func tableView(_ tableView: NSTableView, selectionIndexesForProposedSel
 
 #### Return Value
 
-An [`NSIndexSet`](https://developer.apple.com/documentation/Foundation/NSIndexSet) instance containing the indexes of the new selection. Return `proposedSelectionIndexes` if the proposed selection is acceptable, or the value of the table view’s existing selection to avoid changing the selection.
+An [`NSIndexSet`](https://developer.apple.com/documentation/foundation/nsindexset) instance containing the indexes of the new selection. Return `proposedSelectionIndexes` if the proposed selection is acceptable, or the value of the table view’s existing selection to avoid changing the selection.
 
 #### Discussion
 

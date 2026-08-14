@@ -20,7 +20,7 @@ var maximumSize: CGSize { get set }
 
 #### Discussion
 
-The default value is [`CGSizeZero`](https://developer.apple.com/documentation/CoreGraphics/CGSizeZero). A width or height of zero means that the system doesn’t constrain the size for that dimension.
+The default value is [`CGSizeZero`](https://developer.apple.com/documentation/coregraphics/cgsizezero). A width or height of zero means that the system doesn’t constrain the size for that dimension.
 
 If the image exceeds this size on either dimension, the system reduces the size proportionately, maintaining the aspect ratio.
 

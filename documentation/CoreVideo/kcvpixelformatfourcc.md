@@ -35,7 +35,7 @@ let kCVPixelFormatFourCC: CFString
 - [let kCVPixelFormatCodecType: CFString](kcvpixelformatcodectype.md)
   The codec type (type `CFString`). For example, `'2vuy'` or `k422YpCbCr8CodecType`.
 - [let kCVPixelFormatContainsAlpha: CFString](kcvpixelformatcontainsalpha.md)
-  A Boolean value where [`kCFBooleanTrue`](https://developer.apple.com/documentation/CoreFoundation/kCFBooleanTrue) indicates that the format contains alpha and some images may be considered transparent; [`kCFBooleanFalse`](https://developer.apple.com/documentation/CoreFoundation/kCFBooleanFalse) indicates that there is no alpha and images are always opaque.
+  A Boolean value where [`kCFBooleanTrue`](https://developer.apple.com/documentation/corefoundation/kcfbooleantrue) indicates that the format contains alpha and some images may be considered transparent; [`kCFBooleanFalse`](https://developer.apple.com/documentation/corefoundation/kcfbooleanfalse) indicates that there is no alpha and images are always opaque.
 - [let kCVPixelFormatPlanes: CFString](kcvpixelformatplanes.md)
 - [let kCVPixelFormatBlockWidth: CFString](kcvpixelformatblockwidth.md)
 - [let kCVPixelFormatBlockHeight: CFString](kcvpixelformatblockheight.md)

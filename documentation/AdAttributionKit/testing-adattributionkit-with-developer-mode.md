@@ -8,11 +8,11 @@ Reduce the time-window for ad attributions and inspect postbacks using a proxy d
 
 > ❗ **Important**: For devices running OS versions earlier than iOS 18, use the AdAttributionKit testing profile on your test device. For more information, see [`Testing ad attributions with a downloaded profile`](testing-ad-attributions-with-a-downloaded-profile.md).
 
-In iOS 18 and later, you can reduce the time-window for receiving AdAttributionKit postbacks by enabling Developer Mode on your test device. Developer Mode is compatible with both AdAttributionKit and SKAdNetwork. For more information, see [`Enabling Developer Mode on a device`](https://developer.apple.com/documentation/Xcode/enabling-developer-mode-on-a-device).
+In iOS 18 and later, you can reduce the time-window for receiving AdAttributionKit postbacks by enabling Developer Mode on your test device. Developer Mode is compatible with both AdAttributionKit and SKAdNetwork. For more information, see [`Enabling Developer Mode on a device`](https://developer.apple.com/documentation/xcode/enabling-developer-mode-on-a-device).
 
 After enabling Developer Mode, access the developer settings in Settings on your test device. Then scroll down to the Ad Attribution Testing section and enable the AdAttributionKit Developer Mode switch, as the screenshot below shows:
 
-![An image of the iOS Developer Mode settings that shows several test settings, including the switch that enables development testing for AdAttributionKit.](https://docs-assets.developer.apple.com/published/eb124a690f0cb16a89a1e285acb57f65/ad-attribution-testing%402x.png)
+![An image of the iOS Developer Mode settings that shows several test settings, including the switch that enables development testing for AdAttributionKit.](/images/com.apple.AdAttributionKit/ad-attribution-testing@2x.png)
 
 > ❗ **Important**: Enabling Developer Mode reduces the privacy protections the system provides. Use this mode only during development or testing. This setting automatically turns off after two weeks.
 

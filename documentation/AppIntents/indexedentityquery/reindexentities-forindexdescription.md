@@ -26,7 +26,7 @@ The system calls this method when it needs you to reindex only some of the app e
 ## Parameters
 
 - `identifiers`: The identifiers of app entities to reindex. Use these identifiers to fetch the entities from your app’s data store.
-- `indexDescription`: An object that describes the characteristics of the searchable index. Use the information in this type to determine which of your app’s [`CSSearchableIndex`](https://developer.apple.com/documentation/CoreSpotlight/CSSearchableIndex) instances to update.
+- `indexDescription`: An object that describes the characteristics of the searchable index. Use the information in this type to determine which of your app’s [`CSSearchableIndex`](https://developer.apple.com/documentation/corespotlight/cssearchableindex) instances to update.
 
 
 ---

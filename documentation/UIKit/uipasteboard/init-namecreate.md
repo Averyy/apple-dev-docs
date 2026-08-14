@@ -28,7 +28,7 @@ Call this method to create custom app pasteboards. (You can also use it to obtai
 ## Parameters
 
 - `pasteboardName`: A string or string constant that identifies (or should identify) the pasteboard. To create a pasteboard with a `nil` name, specify a `nil` value for this parameter.
-- `create`: A Boolean value that specifies whether to create the pasteboard if it doesn’t already exist. Specify [`false`](https://developer.apple.com/documentation/Swift/false) for system pasteboards or if you want to use an existing app pasteboard.
+- `create`: A Boolean value that specifies whether to create the pasteboard if it doesn’t already exist. Specify [`false`](https://developer.apple.com/documentation/swift/false) for system pasteboards or if you want to use an existing app pasteboard.
 
 ## See Also
 

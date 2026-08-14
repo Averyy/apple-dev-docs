@@ -10,7 +10,7 @@ The Sparse Solvers library in the Accelerate framework handles the solution of s
 
 Many problems in science and technology require the solution of large systems of simultaneous equations. When these equations are linear, you usually represent them as the matrix equation *Ax = b*. Even when the equations are nonlinear, you often solve the problem as a sequence of linear approximations.
 
-![A linear graph that depicts a plotted sparse matrix.](https://docs-assets.developer.apple.com/published/8eaf4f02865e6c2db2a545155b497158/media-2904627%402x.png)
+![A linear graph that depicts a plotted sparse matrix.](/images/com.apple.accelerate/media-2904627@2x.png)
 
 ##### Sparse Matrices
 
@@ -26,7 +26,7 @@ These zeros arise naturally in these types of situations:
 
 By exploiting these zero entries, you can often reduce the storage and computational requirements to *O(𝜏*n)* and *O(𝜏*n_²*),_ respectively, where *𝜏* is the average number of entries in each column. This reduction makes the solution of large problems (*n* in the millions or larger) tractable on most computers.
 
-For example, the sparse benchmark matrix *ldoor*, which arises from structural modeling, has 952,200 x 952,200 entries with an average of 25 nonzero [`Double`](https://developer.apple.com/documentation/Swift/Double) entries per column. The following table shows the number of floating-point operations (1 Tflop is 10¹² floating-point operations) and the memory necessary to perform Cholesky factorization on that matrix:
+For example, the sparse benchmark matrix *ldoor*, which arises from structural modeling, has 952,200 x 952,200 entries with an average of 25 nonzero [`Double`](https://developer.apple.com/documentation/swift/double) entries per column. The following table shows the number of floating-point operations (1 Tflop is 10¹² floating-point operations) and the memory necessary to perform Cholesky factorization on that matrix:
 
 |  | Floating-point operations | Memory |
 | --- | --- | --- |
@@ -46,7 +46,7 @@ The following table summarizes the differences between direct methods and iterat
 | --- | --- | --- |
 | Ease of use | Simple | Complex |
 | Accuracy | Machine precision | Square root of machine precision |
-| Speed | Fast for small problems ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) Quite fast for larger problems | Fastest for large problems, but only with a suitable problem-specific preconditioner |
+| Speed | Fast for small problems ![None](/images/com.apple.accelerate/spacer.png) Quite fast for larger problems | Fastest for large problems, but only with a suitable problem-specific preconditioner |
 | Memory requirements | High | Low |
 
 In contrast to direct methods, iterative methods provide a way for expert users to find approximate solutions faster using less memory. You can also use iterative methods when forming the explicit matrix is prohibitively expensive, but performing matrix-vector multiplications is performant. However, to achieve these gains, you need to select an appropriate preconditioner (an operator that approximates the inverse of *A*) that’s specific to your problem. It’s best to try a direct method before trying to use iterative methods.

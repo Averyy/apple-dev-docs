@@ -24,7 +24,7 @@ This function allocates memory for a new print settings object in your applicati
 
 ## Parameters
 
-- `printSettings`: A pointer to your   variable. On return, the variable refers to a new print settings object. You are responsible for releasing the print settings object with the function  .
+- `printSettings`: A pointer to your [`PMPrintSettings`](pmprintsettings.md) variable. On return, the variable refers to a new print settings object. You are responsible for releasing the print settings object with the function [`PMRelease(_:)`](1461402-pmrelease.md).
 
 ## See Also
 

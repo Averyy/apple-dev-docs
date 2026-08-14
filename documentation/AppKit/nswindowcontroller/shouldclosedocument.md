@@ -16,7 +16,7 @@ var shouldCloseDocument: Bool { get set }
 
 #### Discussion
 
-The value of this property is [`true`](https://developer.apple.com/documentation/Swift/true) if the receiver necessarily closes the associated document when the window it manages is closed, [`false`](https://developer.apple.com/documentation/Swift/false) otherwise. The default value is [`false`](https://developer.apple.com/documentation/Swift/false).
+The value of this property is [`true`](https://developer.apple.com/documentation/swift/true) if the receiver necessarily closes the associated document when the window it manages is closed, [`false`](https://developer.apple.com/documentation/swift/false) otherwise. The default value is [`false`](https://developer.apple.com/documentation/swift/false).
 
 ## See Also
 

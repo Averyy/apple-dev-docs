@@ -40,10 +40,10 @@ You use the delta values in this structure to indicate the desired zoom level of
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../Swift/BitwiseCopyable.md)
-- [Copyable](../Swift/Copyable.md)
-- [Escapable](../Swift/Escapable.md)
-- [Sendable](../Swift/Sendable.md)
+- [BitwiseCopyable](../swift/bitwisecopyable.md)
+- [Copyable](../swift/copyable.md)
+- [Escapable](../swift/escapable.md)
+- [Sendable](../swift/sendable.md)
 
 ## See Also
 

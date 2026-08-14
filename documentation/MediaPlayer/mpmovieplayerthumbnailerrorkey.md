@@ -17,7 +17,7 @@ let MPMoviePlayerThumbnailErrorKey: String
 
 #### Discussion
 
-The value of this key is an [`NSError`](https://developer.apple.com/documentation/Foundation/NSError) object identifying the error that occurred, if any.
+The value of this key is an [`NSError`](https://developer.apple.com/documentation/foundation/nserror) object identifying the error that occurred, if any.
 
 ## See Also
 

@@ -21,7 +21,7 @@ optional func playbackCoordinator(_ coordinator: AVPlayerPlaybackCoordinator, in
 
 #### Return Value
 
-An array of [`NSValue`](https://developer.apple.com/documentation/Foundation/NSValue) objects that contain the interstitial time ranges.
+An array of [`NSValue`](https://developer.apple.com/documentation/foundation/nsvalue) objects that contain the interstitial time ranges.
 
 #### Discussion
 

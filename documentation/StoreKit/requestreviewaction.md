@@ -21,7 +21,7 @@ struct RequestReviewAction
 
 #### Overview
 
-Read the [`requestReview`](https://developer.apple.com/documentation/SwiftUI/EnvironmentValues/requestReview) environment value to get an instance of this structure for a given [`Environment`](https://developer.apple.com/documentation/SwiftUI/Environment). Call the instance to tell StoreKit to ask the user to rate or review your app, if appropriate. You call the instance directly because it defines a [`callAsFunction()`](requestreviewaction/callasfunction().md) method that Swift calls when you call the instance.
+Read the [`requestReview`](https://developer.apple.com/documentation/swiftui/environmentvalues/requestreview) environment value to get an instance of this structure for a given [`Environment`](https://developer.apple.com/documentation/swiftui/environment). Call the instance to tell StoreKit to ask the user to rate or review your app, if appropriate. You call the instance directly because it defines a [`callAsFunction()`](requestreviewaction/callasfunction().md) method that Swift calls when you call the instance.
 
 When you call this API in your shipping app and the system displays a rating and review request view, the system handles the entire process for you. Although you normally call this method when it makes sense in the user experience flow of your app, App Store policy governs the actual display of a rating and review request view. When your app calls this API, StoreKit uses the following criteria:
 
@@ -46,13 +46,13 @@ People can review your app at any time on the App Store. To make it easier for p
 - [func callAsFunction()](requestreviewaction/callasfunction.md)
   Tells StoreKit to ask the user to rate or review your app, if appropriate.
 ### Environment value
-- [var requestReview: RequestReviewAction](../SwiftUI/EnvironmentValues/requestReview.md)
+- [var requestReview: RequestReviewAction](../swiftui/environmentvalues/requestreview.md)
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

@@ -45,7 +45,7 @@ Properties that represent limits and have a numeric type use `-1` to represent n
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 ### Inherited By
 - [FSVolume.Handler](fsvolume/handler.md)
 - [FSVolume.Operations](fsvolume/operations.md)

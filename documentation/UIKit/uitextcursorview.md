@@ -21,7 +21,7 @@ protocol UITextCursorView : UICoordinateSpace
 
 #### Overview
 
-Adopt the [`UITextCursorView`](uitextcursorview.md) protocol in a custom view you use to draw the insertion caret in one of your text views. Use your custom view in conjunction with a [`UITextSelectionDisplayInteraction`](uitextselectiondisplayinteraction.md) object to apply your custom selection UI to one of your text views. This protocol provides details about when to display the blink animations. Use [`CALayer`](https://developer.apple.com/documentation/QuartzCore/CALayer) objects or your view’s [`draw(_:)`](uiview/draw(_:).md) method to draw and animate the caret.
+Adopt the [`UITextCursorView`](uitextcursorview.md) protocol in a custom view you use to draw the insertion caret in one of your text views. Use your custom view in conjunction with a [`UITextSelectionDisplayInteraction`](uitextselectiondisplayinteraction.md) object to apply your custom selection UI to one of your text views. This protocol provides details about when to display the blink animations. Use [`CALayer`](https://developer.apple.com/documentation/quartzcore/calayer) objects or your view’s [`draw(_:)`](uiview/draw(_:).md) method to draw and animate the caret.
 
 After adopting this protocol in your custom view, assign your view to the [`cursorView`](uitextselectiondisplayinteraction/cursorview.md) property of the interaction object you attached to your text view.
 
@@ -36,7 +36,7 @@ After adopting this protocol in your custom view, assign your view to the [`curs
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 - [UICoordinateSpace](uicoordinatespace.md)
 ### Conforming Types
 - [UIStandardTextCursorView](uistandardtextcursorview.md)

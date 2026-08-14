@@ -21,7 +21,7 @@ func voxelExists(atIndex index: MDLVoxelIndex, allowAnyX: Bool, allowAnyY: Bool,
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/Swift/true) if the voxel array contains at least one voxel index matching the specified parameters; otherwise [`false`](https://developer.apple.com/documentation/Swift/false).
+[`true`](https://developer.apple.com/documentation/swift/true) if the voxel array contains at least one voxel index matching the specified parameters; otherwise [`false`](https://developer.apple.com/documentation/swift/false).
 
 #### Discussion
 
@@ -60,10 +60,10 @@ exists = [voxelArray voxelExistsAtIndex:index allowAnyX:YES allowAnyY:YES allowA
 ## Parameters
 
 - `index`: An index describing both the location of the voxel within the three-dimensional grid of the voxel array and its relationship to the volume of the object modeled by the voxel array.
-- `allowAnyX`: If [`true`](https://developer.apple.com/documentation/Swift/true), this method treats the x component of the index parameter as a wildcard. If [`false`](https://developer.apple.com/documentation/Swift/false), this method requires an exact match for the x component.
-- `allowAnyY`: If [`true`](https://developer.apple.com/documentation/Swift/true), this method treats the y component of the index parameter as a wildcard. If [`false`](https://developer.apple.com/documentation/Swift/false), this method requires an exact match for the y component.
-- `allowAnyZ`: If [`true`](https://developer.apple.com/documentation/Swift/true), this method treats the z component of the index parameter as a wildcard. If [`false`](https://developer.apple.com/documentation/Swift/false), this method requires an exact match for the z component.
-- `allowAnyShell`: If [`true`](https://developer.apple.com/documentation/Swift/true), this method treats the w (shell level) component of the index parameter as a wildcard. If [`false`](https://developer.apple.com/documentation/Swift/false), this method requires an exact match for the shell level component.
+- `allowAnyX`: If [`true`](https://developer.apple.com/documentation/swift/true), this method treats the x component of the index parameter as a wildcard. If [`false`](https://developer.apple.com/documentation/swift/false), this method requires an exact match for the x component.
+- `allowAnyY`: If [`true`](https://developer.apple.com/documentation/swift/true), this method treats the y component of the index parameter as a wildcard. If [`false`](https://developer.apple.com/documentation/swift/false), this method requires an exact match for the y component.
+- `allowAnyZ`: If [`true`](https://developer.apple.com/documentation/swift/true), this method treats the z component of the index parameter as a wildcard. If [`false`](https://developer.apple.com/documentation/swift/false), this method requires an exact match for the z component.
+- `allowAnyShell`: If [`true`](https://developer.apple.com/documentation/swift/true), this method treats the w (shell level) component of the index parameter as a wildcard. If [`false`](https://developer.apple.com/documentation/swift/false), this method requires an exact match for the shell level component.
 
 ## See Also
 

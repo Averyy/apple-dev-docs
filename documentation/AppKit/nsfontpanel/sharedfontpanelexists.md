@@ -16,7 +16,7 @@ class var sharedFontPanelExists: Bool { get }
 
 #### Discussion
 
-The value is [`true`](https://developer.apple.com/documentation/Swift/true) if the shared Font panel has been created, and [`false`](https://developer.apple.com/documentation/Swift/false) if it hasn’t.
+The value is [`true`](https://developer.apple.com/documentation/swift/true) if the shared Font panel has been created, and [`false`](https://developer.apple.com/documentation/swift/false) if it hasn’t.
 
 ## See Also
 

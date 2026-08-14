@@ -21,12 +21,12 @@ struct Specification<Output, each R> where Output : _IntentValue, repeat each R 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
 - [ResolverSpecification](resolverspecification.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
-- [Sequence](../Swift/Sequence.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sequence](../swift/sequence.md)
 
 
 ---

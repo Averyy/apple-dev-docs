@@ -37,9 +37,9 @@ Use [`updates`](transaction/updates.md) to receive new transactions while the ap
 
 Note that after a successful in-app purchase on the same device, StoreKit returns the transaction through [`Product.PurchaseResult.success(_:)`](product/purchaseresult/success(_:).md).
 
-> ❗ **Important**:  Create a [`Task`](https://developer.apple.com/documentation/Swift/Task) to iterate through the transactions from the listener as soon as your app launches. If your app has unfinished transactions, the [`updates`](transaction/updates.md) listener receives them once, immediately after the app launches. Without the [`Task`](https://developer.apple.com/documentation/Swift/Task) to listen for these transactions, your app may miss them.
+> ❗ **Important**:  Create a [`Task`](https://developer.apple.com/documentation/swift/task) to iterate through the transactions from the listener as soon as your app launches. If your app has unfinished transactions, the [`updates`](transaction/updates.md) listener receives them once, immediately after the app launches. Without the [`Task`](https://developer.apple.com/documentation/swift/task) to listen for these transactions, your app may miss them.
 
-The following example shows a class that creates a [`Task`](https://developer.apple.com/documentation/Swift/Task) when it initializes. The task retrieves and processes any unfinished transactions.
+The following example shows a class that creates a [`Task`](https://developer.apple.com/documentation/swift/task) when it initializes. The task retrieves and processes any unfinished transactions.
 
 ```swift
 final class TransactionObserver {

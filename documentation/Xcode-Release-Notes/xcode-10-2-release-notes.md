@@ -86,7 +86,7 @@ Xcode 10.2 includes SDKs for iOS 12.2, watchOS 5.2, macOS 10.14.4, and tvOS 12.2
 
 ###### New Features
 
-- [`UIStackView`](https://developer.apple.com/documentation/UIKit/UIStackView) properties are now presented in the view debugger object inspector. (36351873)
+- [`UIStackView`](https://developer.apple.com/documentation/uikit/uistackview) properties are now presented in the view debugger object inspector. (36351873)
 - Xcode can now automatically capture a memory graph if a memory resource exception is encountered while debugging. You can enable memory graph captures in the Diagnostics tab of the scheme’s run settings. (45285932)
 - On iOS and watchOS, Xcode shows the memory limit for running apps in the Memory Report as you approach the limit. Use Instruments and Xcode Memory Debugging to optimize your app to have the smallest possible memory footprint. (40556954)
 - The view debugger presents a more compact 3D layout. (43523921)
@@ -112,7 +112,7 @@ Xcode 10.2 includes SDKs for iOS 12.2, watchOS 5.2, macOS 10.14.4, and tvOS 12.2
 ###### New Features
 
 - Double-clicking in a storyboard no longer zooms. Instead, zoom using a pinch gesture on the trackpad or hold Option and scroll. (29139870)
-- Interface Builder for Apple TV supports user interface elements exposed by the [`TVUIKit`](https://developer.apple.com/documentation/TVUIKit) framework. (35868606)
+- Interface Builder for Apple TV supports user interface elements exposed by the [`TVUIKit`](https://developer.apple.com/documentation/tvuikit) framework. (35868606)
 
 ###### Resolved Issues
 
@@ -121,8 +121,8 @@ Xcode 10.2 includes SDKs for iOS 12.2, watchOS 5.2, macOS 10.14.4, and tvOS 12.2
 - Actions in Swift files are now correctly parsed by Interface Builder when annotated with `@objc @IBAction`. (25465675)
 - Images with an alignment rectangle specified in the asset catalog correctly render in the Interface Builder canvas. (46595020)
 - Improved the intrinsic size of images in 2x and 3x slots in the Interface Builder canvas if the file name inside the asset catalog doesn’t end in `@2x` or `@3x`. (44759471)
-- Changes to [`NSImageView`](https://developer.apple.com/documentation/AppKit/NSImageView) made using the inspector are now reliably reflected in the canvas without a delay. (30196881)
-- `ibtool --export-string-file` includes localizer hints that are specified on controls with instances of [`NSCell`](https://developer.apple.com/documentation/AppKit/NSCell). (24421623)
+- Changes to [`NSImageView`](https://developer.apple.com/documentation/appkit/nsimageview) made using the inspector are now reliably reflected in the canvas without a delay. (30196881)
+- `ibtool --export-string-file` includes localizer hints that are specified on controls with instances of [`NSCell`](https://developer.apple.com/documentation/appkit/nscell). (24421623)
 - Resolved an issue that caused images to display as question marks in storyboards. (42475635)
 - Images rendered in the Interface Builder canvas render with the scale factor matching the chosen device. (18703159)
 - Images marked with the template rendering mode in the asset catalog correctly render in the Interface Builder canvas. (29049562)
@@ -210,11 +210,11 @@ Xcode 10.2 includes SDKs for iOS 12.2, watchOS 5.2, macOS 10.14.4, and tvOS 12.2
 
 - The “Fold Methods & Functions” editor menu item folds computed properties in Swift. (43428274)
 - Code completion offers `get`, `set`, `didSet`, and `willSet` as possible completions inside computed property declarations. (20957182)
-- In the context of an optional enumeration type, code completion suggests the enumeration’s cases in addition to [`Optional.none`](https://developer.apple.com/documentation/Swift/Optional/none) and [`Optional.some(_:)`](https://developer.apple.com/documentation/Swift/Optional/some(_:)). (23549753)
+- In the context of an optional enumeration type, code completion suggests the enumeration’s cases in addition to [`Optional.none`](https://developer.apple.com/documentation/swift/optional/none) and [`Optional.some(_:)`](https://developer.apple.com/documentation/swift/optional/some(_:)). (23549753)
 
 ###### Resolved Issues
 
-- Code completion doesn’t suggest duplicated delegate method names when overriding [`UITableViewController`](https://developer.apple.com/documentation/UIKit/UITableViewController) methods. (21161476)
+- Code completion doesn’t suggest duplicated delegate method names when overriding [`UITableViewController`](https://developer.apple.com/documentation/uikit/uitableviewcontroller) methods. (21161476)
 - Fix-its that reference different files won’t apply to the current file. (31371021)
 - Text being dragged is shown as a transparent image. (31890166)
 - The source editor now uses the system accent color for placeholders. (32307338)
@@ -258,7 +258,7 @@ See [`Swift 5 Release Notes for Xcode 10.2`](swift-5-release-notes-for-xcode-10_
 ###### Resolved Issues
 
 - Resolved an issue that caused methods in a Swift source file to be named “Definition at **:**” in the coverage report. (46432533)
-- [`XCUIScreen`](https://developer.apple.com/documentation/XCTest/XCUIScreen) now properly implements `isEqual:` and `hash`. (32179407)
+- [`XCUIScreen`](https://developer.apple.com/documentation/xcuiautomation/xcuiscreen) now properly implements `isEqual:` and `hash`. (32179407)
 - When clicking the source editor gem for a test method or class that’s present in more than one test target, or for a test method that’s inherited by subclasses, Xcode now shows a menu that allows choosing an individual target or class (or all) to run the selected tests in. (45975871)
 - Resolved an issue that could prevent expanding a file in the coverage report view. (44458167)
 - If a test bundle can’t be loaded during testing for some reason—such as a runtime linking failure—Xcode now reports a descriptive error message that describes the cause of the failure. This failure is present in the test activity log and appears in `stdout` if you’re using `xcodebuild`. The error is also present in the structured logs contained in the result bundle. (45242409)
@@ -269,7 +269,7 @@ See [`Swift 5 Release Notes for Xcode 10.2`](swift-5-release-notes-for-xcode-10_
 - Resolved an issue that could cause incorrect code coverage for a file included in multiple targets. (40409346)
 - Crash reports collected during testing no longer omit important fields such as the termination reason and description. (44405884)
 - Headers that aren’t explicitly included in a target’s Headers Build Phase no longer appear in the target’s entry in the coverage report. This resolves an issue where unwanted headers could appear in the coverage report for a target—such as from a linked framework or library. If you notice that a coverage report is missing headers, make sure they’re included in the corresponding target’s Headers Build Phase. (36187447)
-- Projects with multiple test targets that each contain a test class that inherits from a shared [`XCTestCase`](https://developer.apple.com/documentation/XCTest/XCTestCase) subclass no longer show nonexistent runtime (“rT”) tests for test methods from other targets. (46042417)
+- Projects with multiple test targets that each contain a test class that inherits from a shared [`XCTestCase`](https://developer.apple.com/documentation/xctest/xctestcase) subclass no longer show nonexistent runtime (“rT”) tests for test methods from other targets. (46042417)
 
 ## Topics
 

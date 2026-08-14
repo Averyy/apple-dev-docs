@@ -14,18 +14,18 @@ Attribute app-install campaigns that originate on the web.
 
 #### Overview
 
-The [`SKAdNetwork for Web Ads`](SKAdNetworkforWebAds.md) API enables advertisers to measure the success of ad campaigns that initiate on the web, while maintaining user privacy. In iOS 16.1 and later, ad networks can use this API to get [`SKAdNetwork`](https://developer.apple.com/documentation/StoreKit/SKAdNetwork) attributions for web ad clicks in Safari that lead to app installations from the App Store.
+The [`SKAdNetwork for Web Ads`](SKAdNetworkforWebAds.md) API enables advertisers to measure the success of ad campaigns that initiate on the web, while maintaining user privacy. In iOS 16.1 and later, ad networks can use this API to get [`SKAdNetwork`](https://developer.apple.com/documentation/storekit/skadnetwork) attributions for web ad clicks in Safari that lead to app installations from the App Store.
 
 To use the API, follow these steps:
 
-1. Register your ad network; see [`Registering an ad network`](https://developer.apple.com/documentation/StoreKit/registering-an-ad-network).
+1. Register your ad network; see [`Registering an ad network`](https://developer.apple.com/documentation/storekit/registering-an-ad-network).
 2. Configure and display your web ad link; see [`Creating an attributable ad link`](creating-an-attributable-ad-link.md).
 3. Implement an endpoint to provide a signed web ad payload that the advertised app uses to attribute app installations to your ad campaign; see [`Generating a signature for attributable web ads`](generating-a-signature-for-attributable-web-ads.md).
-4. Validate any attributions you receive; see [`Verifying an install-validation postback`](https://developer.apple.com/documentation/StoreKit/verifying-an-install-validation-postback).
+4. Validate any attributions you receive; see [`Verifying an install-validation postback`](https://developer.apple.com/documentation/storekit/verifying-an-install-validation-postback).
 
-For more information about the ad network API, see [`SKAdNetwork`](https://developer.apple.com/documentation/StoreKit/SKAdNetwork).
+For more information about the ad network API, see [`SKAdNetwork`](https://developer.apple.com/documentation/storekit/skadnetwork).
 
-> **Note**:  Ad networks can only use this API to get attributions for web ad clicks in Safari; the API doesn’t get attributions for web ad clicks in [`SFSafariViewController`](https://developer.apple.com/documentation/SafariServices/SFSafariViewController) or [`WKWebView`](https://developer.apple.com/documentation/WebKit/WKWebView).
+> **Note**:  Ad networks can only use this API to get attributions for web ad clicks in Safari; the API doesn’t get attributions for web ad clicks in [`SFSafariViewController`](https://developer.apple.com/documentation/safariservices/sfsafariviewcontroller) or [`WKWebView`](https://developer.apple.com/documentation/webkit/wkwebview).
 
 ## Topics
 

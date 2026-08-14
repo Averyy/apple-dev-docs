@@ -21,7 +21,7 @@ class var softLight: CIBlendKernel { get }
 
 #### Discussion
 
-![The result of using the soft light blend kernel (background image is top left, foreground image is bottom left)](https://docs-assets.developer.apple.com/published/81b4b5eb53694fd3f54533a324db2107/media-2926882%402x.png)
+![The result of using the soft light blend kernel (background image is top left, foreground image is bottom left)](/images/com.apple.coreimage/media-2926882@2x.png)
 
 ## See Also
 

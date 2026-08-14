@@ -12,7 +12,7 @@ An enumerator can provide the content of either a folder or your file providerâ€
 
 Create enumerators to specify the content of a folder (for example, your file providerâ€™s root-level folder, or any of its subfolders).
 
-![The flow of information between the document browser and your file provider.](https://docs-assets.developer.apple.com/published/3f792982f80bc99310603bbaa7f36ce0/media-2910270%402x.png)
+![The flow of information between the document browser and your file provider.](/images/com.apple.fileprovider/media-2910270@2x.png)
 
 When the user begins to browse a folder:
 

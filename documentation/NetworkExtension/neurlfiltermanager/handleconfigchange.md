@@ -19,7 +19,7 @@ func handleConfigChange() -> any AsyncSequence<Bool, Never>
 
 #### Discussion
 
-The [`AsyncSequence`](https://developer.apple.com/documentation/Swift/AsyncSequence) created by this method produces a Boolean `true` value every time the filter posts the [`NEURLFilterConfigurationDidChange`](https://developer.apple.com/documentation/Foundation/NSNotification/Name-swift.struct/NEURLFilterConfigurationDidChange) notification.
+The [`AsyncSequence`](https://developer.apple.com/documentation/swift/asyncsequence) created by this method produces a Boolean `true` value every time the filter posts the [`NEURLFilterConfigurationDidChange`](https://developer.apple.com/documentation/foundation/nsnotification/name-swift.struct/neurlfilterconfigurationdidchange) notification.
 
 Use this method to watch for the configuration change notification and react to it.
 

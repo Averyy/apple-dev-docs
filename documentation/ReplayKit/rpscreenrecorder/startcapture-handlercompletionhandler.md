@@ -23,11 +23,11 @@ func startCapture(handler captureHandler: ((CMSampleBuffer, RPSampleBufferType, 
 
 > ❗ **Important**:  You can call this method from synchronous code using a completion handler, as shown on this page, or you can call it as an asynchronous method that has the following declaration: ```swift
 func startCapture(handler captureHandler: ((CMSampleBuffer, RPSampleBufferType, Error?) -> Void)?) async throws
-``` For information about concurrency and asynchronous code in Swift, see [`Calling Objective-C APIs Asynchronously`](https://developer.apple.com/documentation/Swift/calling-objective-c-apis-asynchronously).
+``` For information about concurrency and asynchronous code in Swift, see [`Calling Objective-C APIs Asynchronously`](https://developer.apple.com/documentation/swift/calling-objective-c-apis-asynchronously).
 
 ## Parameters
 
-- `captureHandler`: A block that is called continuously during screen capture. - **sampleBuffer**: A [`CMSampleBuffer`](https://developer.apple.com/documentation/CoreMedia/cmsamplebuffer-api) object containing either audio or video data.
+- `captureHandler`: A block that is called continuously during screen capture. - **sampleBuffer**: A [`CMSampleBuffer`](https://developer.apple.com/documentation/coremedia/cmsamplebuffer-api) object containing either audio or video data.
 - **bufferType**: An [`RPSampleBufferType`](rpsamplebuffertype.md) identifying the media type of the recorded sample.
 - **error**: Contains an error code if screen capture failed to start. Otherwise, the value of this parameter is `nil`.
 - `completionHandler`: A block that is called when screen capture has started. - **error**: If an error occurred, this parameter holds an object that explains the error. Otherwise, the value of this parameter is `nil`. See [`RPRecordingErrorCode`](rprecordingerrorcode.md) for a list of error codes to ReplayKit.

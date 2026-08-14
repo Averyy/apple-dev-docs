@@ -59,7 +59,7 @@ struct Shadow: View {
 }
 ```
 
-![A three by three grid of blue boxes with shadows.](https://docs-assets.developer.apple.com/published/02882f3c1795c5fa74e2d12965cfa612/View-shadow-1-iOS%402x.png)
+![A three by three grid of blue boxes with shadows.](/images/com.apple.SwiftUI/View-shadow-1-iOS@2x.png)
 
 The example above uses [`primary`](color/primary.md) as the color to make the shadow easy to see for the purpose of illustration. In practice, you might prefer something more subtle, like [`gray`](color/gray.md). If you don’t specify a color, the method uses a semi-transparent black.
 

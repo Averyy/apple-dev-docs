@@ -42,7 +42,7 @@ HStack {
 }
 ```
 
-![Two overlapping rectangles showing the effect of the blend mode view](https://docs-assets.developer.apple.com/published/c895f1b7ba32ddd9875ab5476003803e/SwiftUI-blendMode%402x.png)
+![Two overlapping rectangles showing the effect of the blend mode view](/images/com.apple.SwiftUI/SwiftUI-blendMode@2x.png)
 
 ## Parameters
 

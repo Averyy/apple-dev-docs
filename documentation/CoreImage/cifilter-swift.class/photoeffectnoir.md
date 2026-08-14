@@ -41,7 +41,7 @@ func photoEffectNoir(inputImage: CIImage ) -> CIImage {
 }
 ```
 
-![Two pictures of a pink flower surrounded by foliage. The photo on the left shows a single flower photographed close-up, in focus, with good light and no effects. In the photo on the right, a photo effect noir filter is applied, transforming the colors in the image to grayscale with darker contrast.](https://docs-assets.developer.apple.com/published/0ac03af6e23b8c950a25eb573a5e4a2e/media-3545032%402x.png)
+![Two pictures of a pink flower surrounded by foliage. The photo on the left shows a single flower photographed close-up, in focus, with good light and no effects. In the photo on the right, a photo effect noir filter is applied, transforming the colors in the image to grayscale with darker contrast.](/images/com.apple.coreimage/media-3545032@2x.png)
 
 ## See Also
 

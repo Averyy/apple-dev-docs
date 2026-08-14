@@ -16,7 +16,7 @@ At a minimum, the File Provider extension needs to perform the following:
 
 > **Note**:  The system uses two different enumerators. The first lets the system enumerate items from your remote storage. The second lets your app enumerate the items stored locally by the system. You must implement the first enumerator, returning it when the system calls your [`enumerator(for:request:)`](nsfileproviderenumerating/enumerator(for:request:).md) method. The system provides the second enumerator when you call methods like the [`NSFileProviderManager`](nsfileprovidermanager.md) class’s [`enumeratorForMaterializedItems()`](nsfileprovidermanager/enumeratorformaterializeditems().md) method.
 
-Your File Provider extension can add custom actions to the file browser’s context menu using the [`File Provider UI`](https://developer.apple.com/documentation/FileProviderUI) framework. You can also define custom services to communicate with the host app using [`NSFileProviderService`](https://developer.apple.com/documentation/Foundation/NSFileProviderService). Use these interfaces to add features that aren’t provided by the base API.
+Your File Provider extension can add custom actions to the file browser’s context menu using the [`File Provider UI`](https://developer.apple.com/documentation/fileproviderui) framework. You can also define custom services to communicate with the host app using [`NSFileProviderService`](https://developer.apple.com/documentation/foundation/nsfileproviderservice). Use these interfaces to add features that aren’t provided by the base API.
 
 ## Topics
 
@@ -87,14 +87,14 @@ Your File Provider extension can add custom actions to the file browser’s cont
   The location where the operation takes place.
 - [enum NSFileProviderTestingOperationType](nsfileprovidertestingoperationtype.md)
   The action that an operation performs.
-- [com.apple.developer.fileprovider.testing-mode](../BundleResources/Entitlements/com.apple.developer.fileprovider.testing-mode.md)
+- [com.apple.developer.fileprovider.testing-mode](../bundleresources/entitlements/com.apple.developer.fileprovider.testing-mode.md)
   A Boolean value that indicates whether you can place domains in testing mode.
 ### Information property list keys
-- [NSDownloadsUbiquitousContents](../BundleResources/Information-Property-List/NSDownloadsUbiquitousContents.md)
+- [NSDownloadsUbiquitousContents](../bundleresources/information-property-list/nsdownloadsubiquitouscontents.md)
   A Boolean value that indicates whether the system should download documents before handing them over to the app.
-- [com.apple.developer.fileprovider.testing-mode](../BundleResources/Entitlements/com.apple.developer.fileprovider.testing-mode.md)
+- [com.apple.developer.fileprovider.testing-mode](../bundleresources/entitlements/com.apple.developer.fileprovider.testing-mode.md)
   A Boolean value that indicates whether you can place domains in testing mode.
-- [CFBundleSymbolName](../BundleResources/Information-Property-List/CFBundleIcons/CFBundlePrimaryIcon/CFBundleSymbolName.md)
+- [CFBundleSymbolName](../bundleresources/information-property-list/cfbundleicons/cfbundleprimaryicon/cfbundlesymbolname.md)
   The name of the symbol to show in the action sheet, and in Finder’s sidebar on macOS.
 
 ## See Also

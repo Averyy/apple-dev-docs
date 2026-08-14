@@ -21,7 +21,7 @@ protocol RealityCoordinateSpace
 
 #### Overview
 
-Any `RealityCoordinateSpaceConverting` can convert spatial data between a [`SwiftUI`](https://developer.apple.com/documentation/SwiftUI) `CoordinateSpace` and a `RealityCoordinateSpace`.
+Any `RealityCoordinateSpaceConverting` can convert spatial data between a [`SwiftUI`](https://developer.apple.com/documentation/swiftui) `CoordinateSpace` and a `RealityCoordinateSpace`.
 
 ## Topics
 

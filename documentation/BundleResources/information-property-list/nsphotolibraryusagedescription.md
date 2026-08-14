@@ -27,7 +27,7 @@ If your app only adds assets to the photo library and does not read assets, use 
 
 ## See Also
 
-- [Delivering an Enhanced Privacy Experience in Your Photos App](../PhotoKit/delivering-an-enhanced-privacy-experience-in-your-photos-app.md)
+- [Delivering an Enhanced Privacy Experience in Your Photos App](../photokit/delivering-an-enhanced-privacy-experience-in-your-photos-app.md)
   Adopt the latest privacy enhancements to deliver advanced user-privacy controls.
 - [NSPhotoLibraryAddUsageDescription](information-property-list/nsphotolibraryaddusagedescription.md)
   A message that tells people why the app is requesting add-only access to their photo library.

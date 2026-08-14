@@ -23,9 +23,9 @@ class GKConstantNoiseSource
 
 Constant noise can be useful as an input to [`GKNoise`](gknoise.md) methods that create noise by combining other noise objects through various operations. For example, when using the [`displaceWithNoises(x:y:z:)`](gknoise/displacewithnoises(x:y:z:).md) method you can pass constant noise for some parameters and non-constant noise for other parameters, resulting in a variable displacement along one axis but constant or no displacement along the others.
 
-![None](https://docs-assets.developer.apple.com/published/66bfc9b63990c5fbe8d343cb94d5b561/media-2556329%402x.png)
+![None](/images/com.apple.gameplaykit/media-2556329@2x.png)
 
-Like all [`GKNoiseSource`](gknoisesource.md) subclasses, a constant noise source represents a noise generation algorithm and its parameters. To make use of a noise source, first create [`GKNoise`](gknoise.md) object from it (and optionally apply operations to that noise object or combine it with other noise objects). Then create a [`GKNoiseMap`](gknoisemap.md) object from your noise object, generating a concrete field of values that you can sample from directly or visualize using the [`SKTexture`](https://developer.apple.com/documentation/SpriteKit/SKTexture) or `SKTileMap` class.
+Like all [`GKNoiseSource`](gknoisesource.md) subclasses, a constant noise source represents a noise generation algorithm and its parameters. To make use of a noise source, first create [`GKNoise`](gknoise.md) object from it (and optionally apply operations to that noise object or combine it with other noise objects). Then create a [`GKNoiseMap`](gknoisemap.md) object from your noise object, generating a concrete field of values that you can sample from directly or visualize using the [`SKTexture`](https://developer.apple.com/documentation/spritekit/sktexture) or `SKTileMap` class.
 
 ## Topics
 
@@ -43,12 +43,12 @@ Like all [`GKNoiseSource`](gknoisesource.md) subclasses, a constant noise source
 ### Inherits From
 - [GKNoiseSource](gknoisesource.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

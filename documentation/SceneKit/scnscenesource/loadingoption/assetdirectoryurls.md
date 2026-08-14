@@ -22,11 +22,11 @@ static let assetDirectoryURLs: SCNSceneSource.LoadingOption
 
 #### Discussion
 
-The value for this key is an [`NSArray`](https://developer.apple.com/documentation/Foundation/NSArray) object containing one or more [`NSURL`](https://developer.apple.com/documentation/Foundation/NSURL) objects, each of which references a directory.
+The value for this key is an [`NSArray`](https://developer.apple.com/documentation/foundation/nsarray) object containing one or more [`NSURL`](https://developer.apple.com/documentation/foundation/nsurl) objects, each of which references a directory.
 
 A scene file may reference external resources, such as image files used as textures in material properties, using relative URL paths. When loading from a scene source, SceneKit first attempts to resolve these references relative to the directory containing the scene file. To search additional directories when loading, provide an array of URLs for this key and SceneKit searches them in order.
 
-When working with a scene source constructed from an [`NSData`](https://developer.apple.com/documentation/Foundation/NSData) object, you can use this option to provide locations in the filesystem for loading external resources.
+When working with a scene source constructed from an [`NSData`](https://developer.apple.com/documentation/foundation/nsdata) object, you can use this option to provide locations in the filesystem for loading external resources.
 
 ## See Also
 

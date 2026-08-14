@@ -35,7 +35,7 @@ When you call this method, the photo output validates the properties of your `se
 
 ## Parameters
 
-- `settings`: The settings for the photo capture, such as the output pixel format and flash mode. This method copies the provided [`AVCapturePhotoSettings`](avcapturephotosettings.md) object, so future changes to that object do not affect the capture in progress. > ❗ **Important**:  It is illegal to reuse a [`AVCapturePhotoSettings`](avcapturephotosettings.md) instance for multiple captures. Calling this method throws an exception ([`invalidArgumentException`](https://developer.apple.com/documentation/Foundation/NSExceptionName/invalidArgumentException)) if the `settings` object’s [`uniqueID`](avcapturephotosettings/uniqueid.md) value matches that of any previously used settings object.
+- `settings`: The settings for the photo capture, such as the output pixel format and flash mode. This method copies the provided [`AVCapturePhotoSettings`](avcapturephotosettings.md) object, so future changes to that object do not affect the capture in progress. > ❗ **Important**:  It is illegal to reuse a [`AVCapturePhotoSettings`](avcapturephotosettings.md) instance for multiple captures. Calling this method throws an exception ([`invalidArgumentException`](https://developer.apple.com/documentation/foundation/nsexceptionname/invalidargumentexception)) if the `settings` object’s [`uniqueID`](avcapturephotosettings/uniqueid.md) value matches that of any previously used settings object.
 - `delegate`: A delegate object to receive messages about capture progress and results. The photo output calls your delegate methods as the photo advances from capture to processing to delivery of finished images.
 
 

@@ -21,7 +21,7 @@ class var componentAdd: CIBlendKernel { get }
 
 #### Discussion
 
-![The result of using the component add blend kernel (background image is top left, foreground image is bottom left)](https://docs-assets.developer.apple.com/published/6b2c1469b6b8526d2c542d843ddd0a74/media-2926853%402x.png)
+![The result of using the component add blend kernel (background image is top left, foreground image is bottom left)](/images/com.apple.coreimage/media-2926853@2x.png)
 
 ## See Also
 

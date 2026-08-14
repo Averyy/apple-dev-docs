@@ -23,7 +23,7 @@ class MDLMaterial
 
 Each material property (a [`MDLMaterialProperty`](mdlmaterialproperty.md) object) provides one specific aspect of appearance, such as opacity, shininess, or surface detail. Use the [`material`](mdlsubmesh/material.md) property of a [`MDLSubmesh`](mdlsubmesh.md) object to associate a material with a 3D object for rendering or to find the material assigned to an object loaded from an asset file.
 
-Sets of certain material properties called *scattering functions* determine the material’s response to lighting. You can manage these properties together using a material’s [`scatteringFunction`](mdlmaterial/scatteringfunction.md) property. Creating a material with the inherited [`init()`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class/init()) initializer is equivalent to using the [`init(name:scatteringFunction:)`](mdlmaterial/init(name:scatteringfunction:).md) with a [`MDLScatteringFunction`](mdlscatteringfunction.md) object whose properties all have default values.
+Sets of certain material properties called *scattering functions* determine the material’s response to lighting. You can manage these properties together using a material’s [`scatteringFunction`](mdlmaterial/scatteringfunction.md) property. Creating a material with the inherited [`init()`](https://developer.apple.com/documentation/objectivec/nsobject-swift.class/init()) initializer is equivalent to using the [`init(name:scatteringFunction:)`](mdlmaterial/init(name:scatteringfunction:).md) with a [`MDLScatteringFunction`](mdlscatteringfunction.md) object whose properties all have default values.
 
 ## Topics
 
@@ -70,16 +70,16 @@ Sets of certain material properties called *scattering functions* determine the 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
 - [MDLNamed](mdlnamed.md)
-- [NSFastEnumeration](../Foundation/NSFastEnumeration.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSFastEnumeration](../foundation/nsfastenumeration.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

@@ -21,7 +21,7 @@ subscript(index: JointTransforms.Index) -> Transform { get set }
 
 #### Overview
 
-For more on accessing elements by index, see [`subscript(_:)`](https://developer.apple.com/documentation/Swift/Array/subscript(_:)-25iat).
+For more on accessing elements by index, see [`subscript(_:)`](https://developer.apple.com/documentation/swift/array/subscript(_:)-25iat).
 
 ## See Also
 

@@ -16,7 +16,7 @@ func draw(at point: CGPoint, in context: CGContext)
 
 ## Parameters
 
-- `point`: The origin as a [`CGPoint`](https://developer.apple.com/documentation/CoreFoundation/CGPoint).
+- `point`: The origin as a [`CGPoint`](https://developer.apple.com/documentation/corefoundation/cgpoint).
 - `context`: The rendering context.
 
 ## See Also

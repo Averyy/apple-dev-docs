@@ -22,15 +22,15 @@ struct IntegerFormatStyle<Value> where Value : BinaryInteger
 
 #### Overview
 
-Instances of [`IntegerFormatStyle`](integerformatstyle.md) create localized, human-readable text from [`BinaryInteger`](https://developer.apple.com/documentation/Swift/BinaryInteger) numbers and parse string representations of numbers into instances of [`BinaryInteger`](https://developer.apple.com/documentation/Swift/BinaryInteger) types. All of the Swift standard library’s integer types, such as [`Int`](https://developer.apple.com/documentation/Swift/Int) and [`UInt32`](https://developer.apple.com/documentation/Swift/UInt32), conform to [`BinaryInteger`](https://developer.apple.com/documentation/Swift/BinaryInteger), and therefore work with this format style.
+Instances of [`IntegerFormatStyle`](integerformatstyle.md) create localized, human-readable text from [`BinaryInteger`](https://developer.apple.com/documentation/swift/binaryinteger) numbers and parse string representations of numbers into instances of [`BinaryInteger`](https://developer.apple.com/documentation/swift/binaryinteger) types. All of the Swift standard library’s integer types, such as [`Int`](https://developer.apple.com/documentation/swift/int) and [`UInt32`](https://developer.apple.com/documentation/swift/uint32), conform to [`BinaryInteger`](https://developer.apple.com/documentation/swift/binaryinteger), and therefore work with this format style.
 
 [`IntegerFormatStyle`](integerformatstyle.md) includes two nested types, [`IntegerFormatStyle.Percent`](integerformatstyle/percent.md) and [`IntegerFormatStyle.Currency`](integerformatstyle/currency.md), for working with percentages and currencies. Each format style includes a configuration that determines how it represents numeric values, for things like grouping, displaying signs, and variant presentations like scientific notation. [`IntegerFormatStyle`](integerformatstyle.md) and [`IntegerFormatStyle.Percent`](integerformatstyle/percent.md) include a [`NumberFormatStyleConfiguration`](numberformatstyleconfiguration.md), and [`IntegerFormatStyle.Currency`](integerformatstyle/currency.md) includes a [`CurrencyFormatStyleConfiguration`](currencyformatstyleconfiguration.md). You can customize numeric formatting for a style by adjusting its backing configuration. The system automatically caches unique configurations of a format style to enhance performance.
 
-> **Note**:  Foundation provides another format style type, [`FloatingPointFormatStyle`](floatingpointformatstyle.md), for working with numbers that conform to [`BinaryFloatingPoint`](https://developer.apple.com/documentation/Swift/BinaryFloatingPoint). For Foundation’s [`Decimal`](decimal.md) type, use [`Decimal.FormatStyle`](decimal/formatstyle.md).
+> **Note**:  Foundation provides another format style type, [`FloatingPointFormatStyle`](floatingpointformatstyle.md), for working with numbers that conform to [`BinaryFloatingPoint`](https://developer.apple.com/documentation/swift/binaryfloatingpoint). For Foundation’s [`Decimal`](decimal.md) type, use [`Decimal.FormatStyle`](decimal/formatstyle.md).
 
 ##### Formatting Integers
 
-Use the [`formatted()`](https://developer.apple.com/documentation/Swift/BinaryInteger/formatted()) method to create a string representation of an integer using the default [`IntegerFormatStyle`](integerformatstyle.md) configuration.
+Use the [`formatted()`](https://developer.apple.com/documentation/swift/binaryinteger/formatted()) method to create a string representation of an integer using the default [`IntegerFormatStyle`](integerformatstyle.md) configuration.
 
 ```swift
 let formattedDefault = 123456.formatted()
@@ -38,7 +38,7 @@ let formattedDefault = 123456.formatted()
 // Other locales may use different separator and grouping behavior.
 ```
 
-You can specify a format style by providing an argument to the [`formatted(_:)`](https://developer.apple.com/documentation/Swift/BinaryInteger/formatted(_:)-73k3e) method. The following example shows the number `12345` represented in each of the available styles, in the `en_US` locale:
+You can specify a format style by providing an argument to the [`formatted(_:)`](https://developer.apple.com/documentation/swift/binaryinteger/formatted(_:)-73k3e) method. The following example shows the number `12345` represented in each of the available styles, in the `en_US` locale:
 
 ```swift
 let number = 123456
@@ -72,7 +72,7 @@ let customFormatting = exampleNumber.formatted(
 
 ##### Creating an Integer Format Style Instance
 
-The previous examples use static factory methods like [`number`](formatstyle/number-7fxvo.md) to create format styles within the call to the [`formatted(_:)`](https://developer.apple.com/documentation/Swift/BinaryInteger/formatted(_:)-73k3e) method. You can also create an [`IntegerFormatStyle`](integerformatstyle.md) instance and use it to repeatedly format different values with the [`format(_:)`](integerformatstyle/format(_:).md) method:
+The previous examples use static factory methods like [`number`](formatstyle/number-7fxvo.md) to create format styles within the call to the [`formatted(_:)`](https://developer.apple.com/documentation/swift/binaryinteger/formatted(_:)-73k3e) method. You can also create an [`IntegerFormatStyle`](integerformatstyle.md) instance and use it to repeatedly format different values with the [`format(_:)`](integerformatstyle/format(_:).md) method:
 
 ```swift
 let percentFormatStyle = IntegerFormatStyle<Int>.Percent()
@@ -175,18 +175,18 @@ let localizedInteger = match?.1 // 123456
 ## Relationships
 
 ### Conforms To
-- [Copyable](../Swift/Copyable.md)
-- [CustomConsumingRegexComponent](../Swift/CustomConsumingRegexComponent.md)
-- [Decodable](../Swift/Decodable.md)
-- [Encodable](../Swift/Encodable.md)
-- [Equatable](../Swift/Equatable.md)
-- [Escapable](../Swift/Escapable.md)
+- [Copyable](../swift/copyable.md)
+- [CustomConsumingRegexComponent](../swift/customconsumingregexcomponent.md)
+- [Decodable](../swift/decodable.md)
+- [Encodable](../swift/encodable.md)
+- [Equatable](../swift/equatable.md)
+- [Escapable](../swift/escapable.md)
 - [FormatStyle](formatstyle.md)
-- [Hashable](../Swift/Hashable.md)
+- [Hashable](../swift/hashable.md)
 - [ParseableFormatStyle](parseableformatstyle.md)
-- [RegexComponent](../Swift/RegexComponent.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [RegexComponent](../swift/regexcomponent.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

@@ -22,12 +22,12 @@ Create one to six test postbacks to use for unit testing. Call [`setPostbacks(_:
 
 ## Parameters
 
-- `version`: [`SKAdTestPostbackVersion`](skadtestpostbackversion.md), the SKAdNetwork version. For more information about versions, see [`SKAdNetwork release notes`](https://developer.apple.com/documentation/StoreKit/skadnetwork-release-notes).
+- `version`: [`SKAdTestPostbackVersion`](skadtestpostbackversion.md), the SKAdNetwork version. For more information about versions, see [`SKAdNetwork release notes`](https://developer.apple.com/documentation/storekit/skadnetwork-release-notes).
 - `adNetworkIdentifier`: Your ad network identifier. For the test environment, you may use any lowercased value. You must use the same value to verify the signature after you receive the postback on your server. Also, use the same ad network identifier in the `Info.plist` of the source app in the testing environment.
 - `adCampaignIdentifier`: The campaign identifier associated with the ad.
 - `appStoreItemIdentifier`: The App Store item identifier of the advertised app.
 - `sourceAppStoreItemIdentifier`: The App Store item identifier of the app that displays the ad. This value is `0` in the testing environment.
-- `conversionValue`: SKAdNetwork version 2.0 and later. An unsigned 6-bit value that the installed app provides by calling [`updateConversionValue(_:)`](https://developer.apple.com/documentation/StoreKit/SKAdNetwork/updateConversionValue(_:)). Note: In the production environment, the conversion-value only appears in the postback if the installed app provides it, and if providing the parameter meets Apple’s privacy threshold.
+- `conversionValue`: SKAdNetwork version 2.0 and later. An unsigned 6-bit value that the installed app provides by calling [`updateConversionValue(_:)`](https://developer.apple.com/documentation/storekit/skadnetwork/updateconversionvalue(_:)). Note: In the production environment, the conversion-value only appears in the postback if the installed app provides it, and if providing the parameter meets Apple’s privacy threshold.
 - `fidelityType`: SKAdNetwork version 2.2 and later. A value of `0` indicates a view-through ad presentation; a value of `1` indicates a StoreKit-rendered ad.
 - `isRedownload`: SKAdNetwork version 2.0 and later. A Boolean flag that in the production environment indicates that the customer redownloaded and reinstalled the app when the value is `true`.
 - `didWin`: SKAdNetwork version 3.0 and later. A Boolean value that’s `true` if the ad network won the attribution, and `false` if the postback represents a qualifying ad impression that didn’t win the attribution.

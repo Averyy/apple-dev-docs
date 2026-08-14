@@ -17,7 +17,7 @@ final var contentsRect: CGRect { get }
 
 #### Discussion
 
-If your app displays the image with [`NSImageView`](https://developer.apple.com/documentation/AppKit/NSImageView) and you assign it to the [`trackingImageView`](imageanalysisoverlayview/trackingimageview.md) property, the framework doesn’t require you to implement this property.
+If your app displays the image with [`NSImageView`](https://developer.apple.com/documentation/appkit/nsimageview) and you assign it to the [`trackingImageView`](imageanalysisoverlayview/trackingimageview.md) property, the framework doesn’t require you to implement this property.
 
 The default value is the entire contents of the superview, which is the unit rectangle `[0.0, 0.0, 1.0, 1.0]`.
 

@@ -24,7 +24,7 @@ Scripting Bridge is a technology that lets you control scriptable Apple and thir
   The `SBObject` class declares methods that can be invoked on any object in a scriptable application. It defines methods for getting elements and properties of an object, as well as setting a given object to a new value.
 ### Protocols
 - [protocol SBApplicationDelegate](sbapplicationdelegate.md)
-  This informal protocol defines a delegation method for handling Apple event errors that are sent from a target application to an [`SBApplication`](SBApplication.md) object.
+  This informal protocol defines a delegation method for handling Apple event errors that are sent from a target application to an [`SBApplication`](sbapplication.md) object.
 
 
 ---

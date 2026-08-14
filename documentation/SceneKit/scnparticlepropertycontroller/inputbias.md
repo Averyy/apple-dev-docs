@@ -22,7 +22,7 @@ var inputBias: CGFloat { get set }
 
 #### Discussion
 
-Use this property and the [`inputScale`](scnparticlepropertycontroller/inputscale.md) property to pre-process input values to the controller’s animation. For example, if you use the [`SCNParticleInputMode.overDistance`](scnparticleinputmode/overdistance.md) option to animate a particle’s opacity as a function of its distance from a specified point, a bias specifies the minimum distance at which the animation’s [`fromValue`](https://developer.apple.com/documentation/QuartzCore/CABasicAnimation/fromValue) property or first keyframe value takes effect.
+Use this property and the [`inputScale`](scnparticlepropertycontroller/inputscale.md) property to pre-process input values to the controller’s animation. For example, if you use the [`SCNParticleInputMode.overDistance`](scnparticleinputmode/overdistance.md) option to animate a particle’s opacity as a function of its distance from a specified point, a bias specifies the minimum distance at which the animation’s [`fromValue`](https://developer.apple.com/documentation/quartzcore/cabasicanimation/fromvalue) property or first keyframe value takes effect.
 
 The default value is `0.0`, leaving the input value to the animation unchanged. The range of possible values depends on the controller’s animation.
 

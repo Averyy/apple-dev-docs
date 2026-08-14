@@ -29,8 +29,8 @@ This method applies the morphology rectangle minimum filter to an image. The eff
 
 The morphology rectangle minimum filter uses the following properties:
 
-- **width**: A `float` representing the width in pixels of the working area as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
-- **height**: A `float` representing the height in pixels of the working area as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+- **width**: A `float` representing the width in pixels of the working area as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
+- **height**: A `float` representing the height in pixels of the working area as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
 - **inputImage**: A [`CIImage`](ciimage.md) representing the input image to apply the filter to.
 
 The following code creates a filter that adds an intense blur to the palm trees input image:
@@ -46,7 +46,7 @@ The following code creates a filter that adds an intense blur to the palm trees 
     }
 ```
 
-![Two photographs of a beach at sunset with multiple palm trees. The photo on the left is clear and crisp. In the photo on the right, a morphology rectangle minimum blur has been applied, resulting in the image becoming hazy and the palm trees darker and less distinct.](https://docs-assets.developer.apple.com/published/766ac889f685325ebd5b9c57d324d8ad/media-3544957%402x.png)
+![Two photographs of a beach at sunset with multiple palm trees. The photo on the left is clear and crisp. In the photo on the right, a morphology rectangle minimum blur has been applied, resulting in the image becoming hazy and the palm trees darker and less distinct.](/images/com.apple.coreimage/media-3544957@2x.png)
 
 ## See Also
 

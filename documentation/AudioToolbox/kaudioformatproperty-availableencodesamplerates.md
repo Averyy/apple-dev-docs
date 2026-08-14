@@ -21,7 +21,7 @@ var kAudioFormatProperty_AvailableEncodeSampleRates: AudioFormatPropertyID { get
 
 #### Discussion
 
-An array of [`AudioValueRange`](https://developer.apple.com/documentation/CoreAudioTypes/AudioValueRange) structures describing all available sample rates. The specifier is a `UInt32` format identifier.
+An array of [`AudioValueRange`](https://developer.apple.com/documentation/coreaudiotypes/audiovaluerange) structures describing all available sample rates. The specifier is a `UInt32` format identifier.
 
 ## See Also
 

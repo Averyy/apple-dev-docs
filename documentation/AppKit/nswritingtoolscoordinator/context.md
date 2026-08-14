@@ -28,7 +28,7 @@ Writing Tools uses your context objects as the starting point for its evaluation
 
 When Writing Tools asks for the currently selected text in your view, include some of the surrounding text in your context object as well. Supply a string that includes the selection and any text up to the nearest paragraph boundary. When creating your context object, specify a range value that represents the portion of that string that corresponds to the text selection. Providing some additional text in your context object can help Writing Tools improve its evaluation of your content. Writing Tools uses the [`resolvedRange`](nswritingtoolscoordinator/context/resolvedrange.md) property of your context object to indicate what text it considered.
 
-If your context object includes text that you don’t want Writing Tools to evaluate, add the `excludeFromWritingTools` attribute to the corresponding characters of your [`NSAttributedString`](https://developer.apple.com/documentation/Foundation/NSAttributedString) object. You might add this attribute if the text string includes a code listing or readonly content that you don’t want Writing Tools to change.
+If your context object includes text that you don’t want Writing Tools to evaluate, add the `excludeFromWritingTools` attribute to the corresponding characters of your [`NSAttributedString`](https://developer.apple.com/documentation/foundation/nsattributedstring) object. You might add this attribute if the text string includes a code listing or readonly content that you don’t want Writing Tools to change.
 
 ## Topics
 
@@ -50,16 +50,16 @@ If your context object includes text that you don’t want Writing Tools to eval
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

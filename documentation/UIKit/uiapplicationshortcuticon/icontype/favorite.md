@@ -19,7 +19,7 @@ case favorite
 
 #### Discussion
 
-![None](https://docs-assets.developer.apple.com/published/56c7ef8e7f0a04d87b9c202463022156/media-2934520%402x.png)
+![None](/images/com.apple.uikit/media-2934520@2x.png)
 
 ## See Also
 

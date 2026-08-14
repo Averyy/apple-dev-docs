@@ -25,7 +25,7 @@ let SKStoreProductParameterAdNetworkCampaignIdentifier: String
 
 #### Discussion
 
-The value for this key is an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber). Ad networks determine their own campaign identifiers, which must be an integer `>=1` and `<=100`.
+The value for this key is an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber). Ad networks determine their own campaign identifiers, which must be an integer `>=1` and `<=100`.
 
 Use [`SKStoreProductParameterAdNetworkSourceIdentifier`](skstoreproductparameteradnetworksourceidentifier.md) instead of this value to generate version 4 and later signatures.
 

@@ -32,7 +32,7 @@ Starting in iOS 11, apps accessing the photo library can use images containing e
 
 Starting in iOS 12, the portrait effects matte helps achieve this fine-grain level of detail.
 
-![Zoomed in photo showing the fine detail in a portrait effects matte image](https://docs-assets.developer.apple.com/published/c69e91511a8754659f6683c83569e86d/media-3030223%402x.png)
+![Zoomed in photo showing the fine detail in a portrait effects matte image](/images/com.apple.avfoundation/media-3030223@2x.png)
 
 | **Camera type** | **RGB image resolution** | **Depth map resolution** | **Portrait effects matte resolution** |
 | --- | --- | --- | --- |
@@ -69,14 +69,14 @@ For information about capturing the portrait effects matte, see [`Configuring ca
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

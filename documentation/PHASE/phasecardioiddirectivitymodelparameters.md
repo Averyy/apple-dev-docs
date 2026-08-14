@@ -73,7 +73,7 @@ cardioidSegment2.sharpness = 1.5f;
 spatialMixer.sourceDirectivityModelParameters = simpleCardioid;
 ```
 
-![Illustration of two different types of cardioids that position in relation to a sphere representing the user. On the left, a cardioid resembles a heart with a sphere resting in the heart’s cusp. On the right, a cardioid resembles the shape of a hypercardioid. A large oval extends outward from one side of the sphere, and a smaller oval extends in the opposite direction, from the backside of the sphere.](https://docs-assets.developer.apple.com/published/e32a57ccb081e69f684ce2915ce3ce21/media-3919256%402x.png)
+![Illustration of two different types of cardioids that position in relation to a sphere representing the user. On the left, a cardioid resembles a heart with a sphere resting in the heart’s cusp. On the right, a cardioid resembles the shape of a hypercardioid. A large oval extends outward from one side of the sphere, and a smaller oval extends in the opposite direction, from the backside of the sphere.](/images/com.apple.phase/media-3919256@2x.png)
 
 ## Topics
 
@@ -89,12 +89,12 @@ spatialMixer.sourceDirectivityModelParameters = simpleCardioid;
 ### Inherits From
 - [PHASEDirectivityModelParameters](phasedirectivitymodelparameters.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

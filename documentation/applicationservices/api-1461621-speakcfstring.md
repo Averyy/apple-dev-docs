@@ -29,8 +29,8 @@ If `SpeakCFString` is called while the speech channel is currently speaking the 
 ## Parameters
 
 - `chan`: The speech channel through which speech is to be spoken.
-- `aString`: The string to be spoken, represented as a   object.
-- `options`: An optional dictionary of key-value pairs used to customize speech behavior. See   for the available keys.
+- `aString`: The string to be spoken, represented as a `CFString` object.
+- `options`: An optional dictionary of key-value pairs used to customize speech behavior. See [`Synthesizer Option Keys`](speech_synthesis_manager/synthesizer_option_keys.md) for the available keys.
 
 ## See Also
 

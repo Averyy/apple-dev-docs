@@ -16,7 +16,7 @@ class ScreenSaverDefaults
 
 #### Overview
 
-[`ScreenSaverDefaults`](screensaverdefaults.md) gives you access to preference values you need to configure your screen saver. Because multiple apps can load a screen saver, you can’t use the standard [`UserDefaults`](https://developer.apple.com/documentation/Foundation/UserDefaults) object to store preferences. Instead, instantiate this class using the [`init(forModuleWithName:)`](screensaverdefaults/init(formodulewithname:).md) method, which takes your screen saver’s bundle identifier as a parameter. The resulting object gives you a way to store your preference values and associate them only with your screen saver. Use the inherited [`UserDefaults`](https://developer.apple.com/documentation/Foundation/UserDefaults) methods to load, store, or modify values.
+[`ScreenSaverDefaults`](screensaverdefaults.md) gives you access to preference values you need to configure your screen saver. Because multiple apps can load a screen saver, you can’t use the standard [`UserDefaults`](https://developer.apple.com/documentation/foundation/userdefaults) object to store preferences. Instead, instantiate this class using the [`init(forModuleWithName:)`](screensaverdefaults/init(formodulewithname:).md) method, which takes your screen saver’s bundle identifier as a parameter. The resulting object gives you a way to store your preference values and associate them only with your screen saver. Use the inherited [`UserDefaults`](https://developer.apple.com/documentation/foundation/userdefaults) methods to load, store, or modify values.
 
 ## Topics
 
@@ -27,16 +27,16 @@ class ScreenSaverDefaults
 ## Relationships
 
 ### Inherits From
-- [UserDefaults](../Foundation/UserDefaults.md)
+- [UserDefaults](../foundation/userdefaults.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

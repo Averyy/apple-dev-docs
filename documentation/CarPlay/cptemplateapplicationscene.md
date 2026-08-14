@@ -22,7 +22,7 @@ A scene manages your app’s user interface, including the window that CarPlay d
 
 The scene manages the display of the window on the vehicle’s CarPlay screen, and the life cycle of that scene as CarPlay and the user interact with it. The scene notifies its delegate—an object that conforms to [`CPTemplateApplicationSceneDelegate`](cptemplateapplicationscenedelegate.md)—about various state changes and user actions.
 
-You don’t create scenes directly. Instead, you specify the name of the appropriate scene class as part of the CarPlay scene configuration you add to your `Info.plist` file—see the example below—or that you return from your app delegate’s [`application(_:configurationForConnecting:options:)`](https://developer.apple.com/documentation/UIKit/UIApplicationDelegate/application(_:configurationForConnecting:options:))  method.
+You don’t create scenes directly. Instead, you specify the name of the appropriate scene class as part of the CarPlay scene configuration you add to your `Info.plist` file—see the example below—or that you return from your app delegate’s [`application(_:configurationForConnecting:options:)`](https://developer.apple.com/documentation/uikit/uiapplicationdelegate/application(_:configurationforconnecting:options:))  method.
 
 ```plist
 <key>CPTemplateApplicationSceneSessionRoleApplication</key>
@@ -63,21 +63,21 @@ You don’t create scenes directly. Instead, you specify the name of the appropr
 ## Relationships
 
 ### Inherits From
-- [UIScene](../UIKit/UIScene.md)
+- [UIScene](../uikit/uiscene.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [NSTouchBarProvider](../AppKit/NSTouchBarProvider.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
-- [UIActivityItemsConfigurationProviding](../UIKit/UIActivityItemsConfigurationProviding.md)
-- [UIPasteConfigurationSupporting](../UIKit/UIPasteConfigurationSupporting.md)
-- [UIResponderStandardEditActions](../UIKit/UIResponderStandardEditActions.md)
-- [UIUserActivityRestoring](../UIKit/UIUserActivityRestoring.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSTouchBarProvider](../appkit/nstouchbarprovider.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
+- [UIActivityItemsConfigurationProviding](../uikit/uiactivityitemsconfigurationproviding.md)
+- [UIPasteConfigurationSupporting](../uikit/uipasteconfigurationsupporting.md)
+- [UIResponderStandardEditActions](../uikit/uiresponderstandardeditactions.md)
+- [UIUserActivityRestoring](../uikit/uiuseractivityrestoring.md)
 
 ## See Also
 

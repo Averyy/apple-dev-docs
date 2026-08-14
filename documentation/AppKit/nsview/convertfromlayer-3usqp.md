@@ -20,7 +20,7 @@ A size in the view’s interior coordinate system.
 
 #### Discussion
 
-The layer’s space is virtual, and doesn’t take into account the layer’s [`contentsScale`](https://developer.apple.com/documentation/QuartzCore/CALayer/contentsScale) setting.
+The layer’s space is virtual, and doesn’t take into account the layer’s [`contentsScale`](https://developer.apple.com/documentation/quartzcore/calayer/contentsscale) setting.
 
 The returned `NSSize` values are always forced to have positive a width and height.
 

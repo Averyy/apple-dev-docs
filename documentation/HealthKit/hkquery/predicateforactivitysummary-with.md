@@ -47,7 +47,7 @@ NSPredicate *explicitforDay =
 
 ## Parameters
 
-- `dateComponents`: Date components that uniquely identify the day as perceived by the user. This day may be longer or shorter than 24 hours (for example, if the user traveled across time zones). The date components must have a valid [`calendar`](https://developer.apple.com/documentation/Foundation/NSDateComponents/calendar) property.
+- `dateComponents`: Date components that uniquely identify the day as perceived by the user. This day may be longer or shorter than 24 hours (for example, if the user traveled across time zones). The date components must have a valid [`calendar`](https://developer.apple.com/documentation/foundation/nsdatecomponents/calendar) property.
 
 ## See Also
 

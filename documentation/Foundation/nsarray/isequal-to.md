@@ -22,11 +22,11 @@ func isEqual(to otherArray: [Any]) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/Swift/true) if the contents of `otherArray` are equal to the contents of the receiving array, otherwise [`false`](https://developer.apple.com/documentation/Swift/false).
+[`true`](https://developer.apple.com/documentation/swift/true) if the contents of `otherArray` are equal to the contents of the receiving array, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
 
 #### Discussion
 
-Two arrays have equal contents if they each hold the same number of objects and objects at a given index in each array satisfy the [`isEqual(_:)`](https://developer.apple.com/documentation/ObjectiveC/NSObjectProtocol/isEqual(_:)) test.
+Two arrays have equal contents if they each hold the same number of objects and objects at a given index in each array satisfy the [`isEqual(_:)`](https://developer.apple.com/documentation/objectivec/nsobjectprotocol/isequal(_:)) test.
 
 ## Parameters
 

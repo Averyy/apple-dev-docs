@@ -32,9 +32,9 @@ The [`NSSet`](nsset.md), [`NSMutableSet`](nsmutableset.md), and [`NSCountedSet`]
 
 Use sets as an alternative to arrays when the order of elements isn’t important and you need to consider performance in testing whether the set contains an object. With an array, testing for membership is slower than with sets.
 
-[`NSSet`](nsset.md) is “toll-free bridged” with its Core Foundation counterpart, [`CFSet`](https://developer.apple.com/documentation/CoreFoundation/CFSet). See [`Toll-Free Bridging`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Conceptual/CocoaEncyclopedia/Toll-FreeBridgin/Toll-FreeBridgin.html#//apple_ref/doc/uid/TP40010810-CH2) for more information on toll-free bridging.
+[`NSSet`](nsset.md) is “toll-free bridged” with its Core Foundation counterpart, [`CFSet`](https://developer.apple.com/documentation/corefoundation/cfset). See [`Toll-Free Bridging`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Conceptual/CocoaEncyclopedia/Toll-FreeBridgin/Toll-FreeBridgin.html#//apple_ref/doc/uid/TP40010810-CH2) for more information on toll-free bridging.
 
-In Swift, use this class instead of a [`Set`](https://developer.apple.com/documentation/Swift/Set) constant in cases where you require reference semantics.
+In Swift, use this class instead of a [`Set`](https://developer.apple.com/documentation/swift/set) constant in cases where you require reference semantics.
 
 ##### Subclassing Notes
 
@@ -50,7 +50,7 @@ In a subclass, you must override all of its primitive methods:
 
 ###### Alternatives to Subclassing
 
-Before making a custom class of [`NSSet`](nsset.md), investigate [`NSHashTable`](nshashtable.md) and the corresponding Core Foundation type, [`CFSet`](https://developer.apple.com/documentation/CoreFoundation/CFSet). Because [`NSSet`](nsset.md) and [`CFSet`](https://developer.apple.com/documentation/CoreFoundation/CFSet) are “toll-free bridged,” you can substitute a [`CFSet`](https://developer.apple.com/documentation/CoreFoundation/CFSet) object for a [`NSSet`](nsset.md) object in your code (with appropriate casting). Although they’re corresponding types, [`CFSet`](https://developer.apple.com/documentation/CoreFoundation/CFSet) and [`NSSet`](nsset.md) don’t have identical interfaces or implementations, and you can sometimes do things with [`CFSet`](https://developer.apple.com/documentation/CoreFoundation/CFSet) that you can’t easily do with [`NSSet`](nsset.md).
+Before making a custom class of [`NSSet`](nsset.md), investigate [`NSHashTable`](nshashtable.md) and the corresponding Core Foundation type, [`CFSet`](https://developer.apple.com/documentation/corefoundation/cfset). Because [`NSSet`](nsset.md) and [`CFSet`](https://developer.apple.com/documentation/corefoundation/cfset) are “toll-free bridged,” you can substitute a [`CFSet`](https://developer.apple.com/documentation/corefoundation/cfset) object for a [`NSSet`](nsset.md) object in your code (with appropriate casting). Although they’re corresponding types, [`CFSet`](https://developer.apple.com/documentation/corefoundation/cfset) and [`NSSet`](nsset.md) don’t have identical interfaces or implementations, and you can sometimes do things with [`CFSet`](https://developer.apple.com/documentation/corefoundation/cfset) that you can’t easily do with [`NSSet`](nsset.md).
 
 If the behavior you want to add supplements that of the existing class, you could write a category on [`NSSet`](nsset.md). Keep in mind, however, that this category affects all instances of [`NSSet`](nsset.md) that you use, and this might have unintended consequences. Alternatively, you could use composition to achieve the desired behavior.
 
@@ -143,26 +143,26 @@ If the behavior you want to add supplements that of the existing class, you coul
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Inherited By
 - [NSMutableSet](nsmutableset.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [Copyable](../Swift/Copyable.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomReflectable](../Swift/CustomReflectable.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Escapable](../Swift/Escapable.md)
-- [ExpressibleByArrayLiteral](../Swift/ExpressibleByArrayLiteral.md)
-- [Hashable](../Swift/Hashable.md)
+- [CVarArg](../swift/cvararg.md)
+- [Copyable](../swift/copyable.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomReflectable](../swift/customreflectable.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Escapable](../swift/escapable.md)
+- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
+- [Hashable](../swift/hashable.md)
 - [NSCoding](nscoding.md)
 - [NSCopying](nscopying.md)
 - [NSFastEnumeration](nsfastenumeration.md)
 - [NSMutableCopying](nsmutablecopying.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 - [NSSecureCoding](nssecurecoding.md)
-- [Sequence](../Swift/Sequence.md)
+- [Sequence](../swift/sequence.md)
 
 
 ---

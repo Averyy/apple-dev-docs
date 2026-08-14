@@ -22,7 +22,7 @@ var boneInverseBindTransforms: [NSValue]? { get }
 
 #### Discussion
 
-An array of [`NSValue`](https://developer.apple.com/documentation/Foundation/NSValue) objects containing [`SCNMatrix4`](scnmatrix4-swift.struct.md) transforms, each of which corresponds to a node in the [`bones`](scnskinner/bones.md) array. Each value is the inverse of the bone node’s transform from bind space (that is, of the concatenation of all transforms from the skeleton root down to that bone) in the skeleton’s default pose.
+An array of [`NSValue`](https://developer.apple.com/documentation/foundation/nsvalue) objects containing [`SCNMatrix4`](scnmatrix4-swift.struct.md) transforms, each of which corresponds to a node in the [`bones`](scnskinner/bones.md) array. Each value is the inverse of the bone node’s transform from bind space (that is, of the concatenation of all transforms from the skeleton root down to that bone) in the skeleton’s default pose.
 
 ## See Also
 

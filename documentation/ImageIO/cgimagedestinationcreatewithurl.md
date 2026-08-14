@@ -22,12 +22,12 @@ func CGImageDestinationCreateWithURL(_ url: CFURL, _ type: CFString, _ count: In
 
 #### Return Value
 
-An image destination, or `NULL` if an error occurs. You are responsible for releasing this object using [`CFRelease`](https://developer.apple.com/documentation/CoreFoundation/CFRelease).
+An image destination, or `NULL` if an error occurs. You are responsible for releasing this object using [`CFRelease`](https://developer.apple.com/documentation/corefoundation/cfrelease).
 
 ## Parameters
 
 - `url`: The URL at which to write the image data. This object overwrites any data at the specified URL.
-- `type`: The uniform type identifier of the resulting image file. For a list of system-declared and third-party identifiers, see [`Uniform Type Identifiers`](https://developer.apple.com/documentation/UniformTypeIdentifiers).
+- `type`: The uniform type identifier of the resulting image file. For a list of system-declared and third-party identifiers, see [`Uniform Type Identifiers`](https://developer.apple.com/documentation/uniformtypeidentifiers).
 - `count`: The number of images (not including thumbnail images) you want to include in the image file.
 - `options`: Future options. Specify `NULL` for this parameter.
 

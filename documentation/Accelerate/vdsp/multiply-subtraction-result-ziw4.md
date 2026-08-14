@@ -29,7 +29,7 @@ This function calculates the differences of the first `N` elements of `A` and `B
     D[n] = (A[n] - B[n]) * C[n];
 ```
 
-![A diagram showing the operation of this function. There are four rows. The top row represents the input vectors, A and B, with three boxes of each. The second row represents the operation that subtracts B from A, as well as the input vector C, with three boxes of each. The third row represents the multiplication operation as three boxes.  The bottom row represents the output vector D as three boxes. The diagram has connecting lines from the input vectors to the operations, and from the operations to the output vectors.  ](https://docs-assets.developer.apple.com/published/7a0b0b6f6a09540df83d4c2453dbff21/media-4337013%402x.png)
+![A diagram showing the operation of this function. There are four rows. The top row represents the input vectors, A and B, with three boxes of each. The second row represents the operation that subtracts B from A, as well as the input vector C, with three boxes of each. The third row represents the multiplication operation as three boxes.  The bottom row represents the output vector D as three boxes. The diagram has connecting lines from the input vectors to the operations, and from the operations to the output vectors.  ](/images/com.apple.accelerate/media-4337013@2x.png)
 
 The following code shows an example of using this function:
 

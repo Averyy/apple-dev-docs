@@ -6,7 +6,7 @@ Learn about important changes to PhotoKit and PhotosUI.
 
 #### Overview
 
-Browse notable changes in [`PhotoKit`](https://developer.apple.com/documentation/PhotoKit).
+Browse notable changes in [`PhotoKit`](https://developer.apple.com/documentation/photokit).
 
 #### June 2024
 
@@ -14,9 +14,9 @@ Browse notable changes in [`PhotoKit`](https://developer.apple.com/documentation
 
 Integrate spatial media from someone’s Photos library into your app using PhotoKit and PhotosUI:
 
-- Access a spatial media smart album by specifying the new [`PHAssetCollectionSubtype.smartAlbumSpatial`](https://developer.apple.com/documentation/Photos/PHAssetCollectionSubtype/smartAlbumSpatial) value when fetching asset collections.
-- Fetch and recognize spatial media assets by adding the new [`PHAssetMediaSubtype`](https://developer.apple.com/documentation/Photos/PHAssetMediaSubtype) option `spatialMedia` to the fetch options predicate.
-- Offer spatial media items in a [`PhotosPicker`](https://developer.apple.com/documentation/PhotosUI/PhotosPicker) by setting the new [`spatialMedia`](https://developer.apple.com/documentation/PhotosUI/PHPickerFilter-swift.struct/spatialMedia) option on the picker configuration’s filter.
+- Access a spatial media smart album by specifying the new [`PHAssetCollectionSubtype.smartAlbumSpatial`](https://developer.apple.com/documentation/photos/phassetcollectionsubtype/smartalbumspatial) value when fetching asset collections.
+- Fetch and recognize spatial media assets by adding the new [`PHAssetMediaSubtype`](https://developer.apple.com/documentation/photos/phassetmediasubtype) option `spatialMedia` to the fetch options predicate.
+- Offer spatial media items in a [`PhotosPicker`](https://developer.apple.com/documentation/photosui/photospicker) by setting the new [`spatialMedia`](https://developer.apple.com/documentation/photosui/phpickerfilter-swift.struct/spatialmedia) option on the picker configuration’s filter.
 
 ## See Also
 

@@ -27,8 +27,8 @@ protocol QuestionTopic : Decodable, Encodable
 ## Relationships
 
 ### Inherits From
-- [Decodable](../Swift/Decodable.md)
-- [Encodable](../Swift/Encodable.md)
+- [Decodable](../swift/decodable.md)
+- [Encodable](../swift/encodable.md)
 ### Conforming Types
 - [CommunicationTopic](communicationtopic.md)
 - [SignificantAppUpdateTopic](significantappupdatetopic.md)

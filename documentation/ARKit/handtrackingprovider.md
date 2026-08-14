@@ -39,18 +39,18 @@ final class HandTrackingProvider
 ## Relationships
 
 ### Conforms To
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
 - [DataProvider](dataprovider.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 
-- [Happy Beam](../visionOS/happybeam.md)
+- [Happy Beam](../visionos/happybeam.md)
   Leverage a Full Space to create a fun game using ARKit.
-- [Creating a 3D painting space](../visionOS/creating-a-painting-space-in-visionos.md)
+- [Creating a 3D painting space](../visionos/creating-a-painting-space-in-visionos.md)
   Implement a painting canvas entity, and update its mesh to represent a stroke.
-- [Tracking and visualizing hand movement](../visionOS/tracking-and-visualizing-hand-movement.md)
+- [Tracking and visualizing hand movement](../visionos/tracking-and-visualizing-hand-movement.md)
   Use hand-tracking anchors to display a visual representation of hand transforms in visionOS.
 - [struct HandAnchor](handanchor.md)
   A hand’s position in a person’s surroundings.

@@ -63,9 +63,9 @@ protocol Primitive3D : Decodable, Encodable, Equatable
 ## Relationships
 
 ### Inherits From
-- [Decodable](../Swift/Decodable.md)
-- [Encodable](../Swift/Encodable.md)
-- [Equatable](../Swift/Equatable.md)
+- [Decodable](../swift/decodable.md)
+- [Encodable](../swift/encodable.md)
+- [Equatable](../swift/equatable.md)
 ### Conforming Types
 - [Point3D](point3d.md)
 - [Ray3D](ray3d.md)

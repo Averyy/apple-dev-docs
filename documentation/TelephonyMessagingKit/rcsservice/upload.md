@@ -7,7 +7,6 @@ Uploads a file to the RCS content server.
 
 **Availability**:
 - iOS 26.0+
-- iPadOS 26.0+
 
 ## Declaration
 

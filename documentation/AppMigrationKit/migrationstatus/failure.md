@@ -17,7 +17,7 @@ case failure(any Error)
 
 #### Discussion
 
-Inspect the associated value to retrieve the [`Error`](https://developer.apple.com/documentation/Swift/Error) that caused migration to fail.
+Inspect the associated value to retrieve the [`Error`](https://developer.apple.com/documentation/swift/error) that caused migration to fail.
 
 ## See Also
 

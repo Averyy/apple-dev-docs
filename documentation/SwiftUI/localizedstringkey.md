@@ -28,9 +28,9 @@ struct LocalizedStringKey
 
 #### Overview
 
-Initializers for several SwiftUI types – such as [`Text`](text.md), [`Toggle`](toggle.md), [`Picker`](picker.md) and others –  implicitly look up a localized string when you provide a string literal. When you use the initializer `Text("Hello")`, SwiftUI creates a `LocalizedStringKey` for you and uses that to look up a localization of the `Hello` string. This works because `LocalizedStringKey` conforms to [`ExpressibleByStringLiteral`](https://developer.apple.com/documentation/Swift/ExpressibleByStringLiteral).
+Initializers for several SwiftUI types – such as [`Text`](text.md), [`Toggle`](toggle.md), [`Picker`](picker.md) and others –  implicitly look up a localized string when you provide a string literal. When you use the initializer `Text("Hello")`, SwiftUI creates a `LocalizedStringKey` for you and uses that to look up a localization of the `Hello` string. This works because `LocalizedStringKey` conforms to [`ExpressibleByStringLiteral`](https://developer.apple.com/documentation/swift/expressiblebystringliteral).
 
-Types whose initializers take a `LocalizedStringKey` usually have a corresponding initializer that accepts a parameter that conforms to [`StringProtocol`](https://developer.apple.com/documentation/Swift/StringProtocol). Passing a `String` variable to these initializers avoids localization, which is usually appropriate when the variable contains a user-provided value.
+Types whose initializers take a `LocalizedStringKey` usually have a corresponding initializer that accepts a parameter that conforms to [`StringProtocol`](https://developer.apple.com/documentation/swift/stringprotocol). Passing a `String` variable to these initializers avoids localization, which is usually appropriate when the variable contains a user-provided value.
 
 As a general rule, use a string literal argument when you want localization, and a string variable argument when you don’t. In the case where you want to localize the value of a string variable, use the string to create a new `LocalizedStringKey` instance.
 
@@ -54,7 +54,7 @@ If the app is localized into Japanese with the following translation of its `Loc
 
 When run in Japanese, the example produces a list like the following, localizing “Today” for the section header, but not the list items.
 
-![A list with a single section header displayed in Japanese.](https://docs-assets.developer.apple.com/published/d90163e00915e5a2cb0b2b6a7628c942/SwiftUI-LocalizedStringKey-Today-List-Japanese%402x.png)
+![A list with a single section header displayed in Japanese.](/images/com.apple.SwiftUI/SwiftUI-LocalizedStringKey-Today-List-Japanese@2x.png)
 
 ## Topics
 
@@ -72,11 +72,11 @@ When run in Japanese, the example produces a list like the following, localizing
 ## Relationships
 
 ### Conforms To
-- [Equatable](../Swift/Equatable.md)
-- [ExpressibleByExtendedGraphemeClusterLiteral](../Swift/ExpressibleByExtendedGraphemeClusterLiteral.md)
-- [ExpressibleByStringInterpolation](../Swift/ExpressibleByStringInterpolation.md)
-- [ExpressibleByStringLiteral](../Swift/ExpressibleByStringLiteral.md)
-- [ExpressibleByUnicodeScalarLiteral](../Swift/ExpressibleByUnicodeScalarLiteral.md)
+- [Equatable](../swift/equatable.md)
+- [ExpressibleByExtendedGraphemeClusterLiteral](../swift/expressiblebyextendedgraphemeclusterliteral.md)
+- [ExpressibleByStringInterpolation](../swift/expressiblebystringinterpolation.md)
+- [ExpressibleByStringLiteral](../swift/expressiblebystringliteral.md)
+- [ExpressibleByUnicodeScalarLiteral](../swift/expressiblebyunicodescalarliteral.md)
 
 ## See Also
 

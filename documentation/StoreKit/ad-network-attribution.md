@@ -7,7 +7,7 @@ Validate advertisement-driven app installations.
 ## Topics
 
 ### Ad impressions and installation validations
-- [Understanding AdAttributionKit and SKAdNetwork interoperability](../AdAttributionKit/adattributionkit-skadnetwork-interoperability.md)
+- [Understanding AdAttributionKit and SKAdNetwork interoperability](../adattributionkit/adattributionkit-skadnetwork-interoperability.md)
   Learn how attribution APIs interact to deliver ad impressions.
 - [class SKAdNetwork](skadnetwork.md)
   A class that validates advertisement-driven app installations.

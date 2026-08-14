@@ -24,7 +24,7 @@ When showing files in your app, including the ability to quickly preview a file 
 - Audio and video files
 - Augmented reality objects that use the USDZ file format (iOS and iPadOS only)
 
-On iOS devices, the Quick Look framework provides functionality for performing simple edits on previews of common file types; for example, users can add markup to an image. To perform more advanced edits on files, provide advanced playback features, display a file’s content next to text, or add views on top of the preview, use lower-level APIs. For example, use [`AVPlayer`](https://developer.apple.com/documentation/AVFoundation/AVPlayer) to provide advanced video playback features.
+On iOS devices, the Quick Look framework provides functionality for performing simple edits on previews of common file types; for example, users can add markup to an image. To perform more advanced edits on files, provide advanced playback features, display a file’s content next to text, or add views on top of the preview, use lower-level APIs. For example, use [`AVPlayer`](https://developer.apple.com/documentation/avfoundation/avplayer) to provide advanced video playback features.
 
 You can provide previews for your own data types by either rendering a view with your own view controller or by returning a supported preview format, such as PDF or HTML.
 
@@ -34,32 +34,32 @@ You can provide previews for your own data types by either rendering a view with
 
 To provide Quick Look previews for your own file types, create a Quick Look preview extension with either a view controller or data-based preview. In either case, add your supported content types to the `QLSupportedContentTypes` array in the `Info.plist` file of the extension.
 
-To provide a view controller-based preview extension, set up a [`UIViewController`](https://developer.apple.com/documentation/UIKit/UIViewController) that conforms to [`QLPreviewingController`](https://developer.apple.com/documentation/QuickLookUI/QLPreviewingController). Prepare and display the view within the [`preparePreviewOfFile(at:completionHandler:)`](https://developer.apple.com/documentation/QuickLookUI/QLPreviewingController/preparePreviewOfFile(at:completionHandler:)) method.
+To provide a view controller-based preview extension, set up a [`UIViewController`](https://developer.apple.com/documentation/uikit/uiviewcontroller) that conforms to [`QLPreviewingController`](https://developer.apple.com/documentation/quicklookui/qlpreviewingcontroller). Prepare and display the view within the [`preparePreviewOfFile(at:completionHandler:)`](https://developer.apple.com/documentation/quicklookui/qlpreviewingcontroller/preparepreviewoffile(at:completionhandler:)) method.
 
-To provide a data-based preview extension, implement a subclass of [`QLPreviewProvider`](https://developer.apple.com/documentation/QuickLookUI/QLPreviewProvider) to provide a [`QLPreviewReply`](https://developer.apple.com/documentation/QuickLookUI/QLPreviewReply) based on the [`QLFilePreviewRequest`](https://developer.apple.com/documentation/QuickLookUI/QLFilePreviewRequest) that the system provides.
+To provide a data-based preview extension, implement a subclass of [`QLPreviewProvider`](https://developer.apple.com/documentation/quicklookui/qlpreviewprovider) to provide a [`QLPreviewReply`](https://developer.apple.com/documentation/quicklookui/qlpreviewreply) based on the [`QLFilePreviewRequest`](https://developer.apple.com/documentation/quicklookui/qlfilepreviewrequest) that the system provides.
 
 ## Topics
 
 ### Previews
 - [class QLPreviewController](qlpreviewcontroller.md)
   A specialized view controller for previewing an item.
-- [protocol QLPreviewItem](../QuickLookUI/QLPreviewItem.md)
+- [protocol QLPreviewItem](../quicklookui/qlpreviewitem.md)
   A protocol that defines a set of properties you implement to make a preview of your application’s content.
 - [class QLPreviewSceneActivationConfiguration](qlpreviewsceneactivationconfiguration.md)
   A scene configuration to preview items at the specified URLs.
 - [Previews or thumbnail images for macOS 10.14 or earlier](previews-or-thumbnail-images-for-macos-10-14-or-earlier.md)
   Create thumbnail images or previews of common files and custom file types in earlier versions of macOS.
 ### Preview extensions
-- [protocol QLPreviewingController](../QuickLookUI/QLPreviewingController.md)
+- [protocol QLPreviewingController](../quicklookui/qlpreviewingcontroller.md)
   A protocol for implementing a custom controller to create previews of files.
 ### Data-based preview extensions
-- [class QLPreviewProvider](../QuickLookUI/QLPreviewProvider.md)
+- [class QLPreviewProvider](../quicklookui/qlpreviewprovider.md)
   A class that you subclass to provide a data-based Quick Look preview extension.
-- [class QLFilePreviewRequest](../QuickLookUI/QLFilePreviewRequest.md)
+- [class QLFilePreviewRequest](../quicklookui/qlfilepreviewrequest.md)
   A Quick Look preview request that indicates the content to preview.
-- [class QLPreviewReply](../QuickLookUI/QLPreviewReply.md)
+- [class QLPreviewReply](../quicklookui/qlpreviewreply.md)
   The class you create when providing a data-based Quick Look preview extension.
-- [class QLPreviewReplyAttachment](../QuickLookUI/QLPreviewReplyAttachment.md)
+- [class QLPreviewReplyAttachment](../quicklookui/qlpreviewreplyattachment.md)
   An attachment for a Quick Look preview reply that provides additional content for the system to display a preview.
 ### Classes
 - [class ARQuickLookPreviewItem](arquicklookpreviewitem.md)

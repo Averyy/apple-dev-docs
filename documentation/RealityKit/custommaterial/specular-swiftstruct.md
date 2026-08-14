@@ -42,7 +42,7 @@ For more information on using specular values in a custom material, see [`specul
 ## Relationships
 
 ### Conforms To
-- [ExpressibleByFloatLiteral](../Swift/ExpressibleByFloatLiteral.md)
+- [ExpressibleByFloatLiteral](../swift/expressiblebyfloatliteral.md)
 
 ## See Also
 

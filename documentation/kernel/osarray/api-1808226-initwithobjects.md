@@ -22,13 +22,13 @@ virtual bool initWithObjects(
 
 Not for general use. Use the static instance creation method withObjects instead.
 
-`objects` must be non-`NULL`, and `count` must be nonzero. If `capacity` is nonzero, it must be greater than or equal to `count`. The new array will grow as needed to accommodate more objects (`CFMutableArray`, for which the initial capacity is a hard limit).
+`objects` must be non-`NULL`, and `count` must be nonzero. If `capacity` is nonzero, it must be greater than or equal to `count`. The new array will grow as needed to accommodate more objects (*unlike*[`CFMutableArray`](https://developer.apple.com/documentation/corefoundation/cfmutablearray), for which the initial capacity is a hard limit).
 
 ## Parameters
 
 - `objects`: A C array of OSObject-derived objects.
 - `count`: The number of objects to be placed into the array.
-- `capacity`: The initial storage capacity of the array object. If 0,   is used; otherwise this value must be greater than or equal to  .
+- `capacity`: The initial storage capacity of the array object. If 0, `count` is used; otherwise this value must be greater than or equal to `count`.
 
 ## See Also
 

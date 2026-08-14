@@ -20,7 +20,7 @@ var textAlignment: NSTextAlignment { get set }
 
 #### Discussion
 
-This property applies to the both the main text string and the placeholder string. The default value of this property is [`NSLeftTextAlignment`](https://developer.apple.com/documentation/AppKit/NSLeftTextAlignment).
+This property applies to the both the main text string and the placeholder string. The default value of this property is [`NSLeftTextAlignment`](https://developer.apple.com/documentation/appkit/nslefttextalignment).
 
 If you are using styled text, assigning a new value to this property causes the text alignment to be applied to the entire string in the [`attributedText`](uitextfield/attributedtext.md) property. If you want to apply the alignment to only a portion of the text, create a new attributed string with the desired style information and associate it with the text field.
 

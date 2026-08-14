@@ -20,7 +20,7 @@ func ensureLayout(for bounds: CGRect)
 
 ## Parameters
 
-- `bounds`: A [`CGRect`](https://developer.apple.com/documentation/CoreFoundation/CGRect) that describes the layout bounds.
+- `bounds`: A [`CGRect`](https://developer.apple.com/documentation/corefoundation/cgrect) that describes the layout bounds.
 
 ## See Also
 

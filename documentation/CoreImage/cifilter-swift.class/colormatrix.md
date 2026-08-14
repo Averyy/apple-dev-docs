@@ -55,7 +55,7 @@ func colorMatrix(inputImage: CIImage) -> CIImage {
 }
 ```
 
-![Two versions of a photograph side by side. The photo on the left shows a small bunch of flowers photographed close up, in focus, with good light and no effects. In the photo on the right, a color matrix filter is applied, transforming the colors in the image to have a green hue.](https://docs-assets.developer.apple.com/published/ac7fc9aa7c63ddf5ba37706d1006f2bf/media-3544998%402x.png)
+![Two versions of a photograph side by side. The photo on the left shows a small bunch of flowers photographed close up, in focus, with good light and no effects. In the photo on the right, a color matrix filter is applied, transforming the colors in the image to have a green hue.](/images/com.apple.coreimage/media-3544998@2x.png)
 
 ## See Also
 

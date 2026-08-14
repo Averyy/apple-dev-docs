@@ -18,7 +18,7 @@ var contentInset: UIEdgeInsets { get set }
 
 #### Discussion
 
-Use this property to add to the scrollable area around the content. The insets are measured in points. The default value is [`zero`](https://developer.apple.com/documentation/UIKit/UIEdgeInsets/zero).
+Use this property to add to the scrollable area around the content. The insets are measured in points. The default value is [`zero`](https://developer.apple.com/documentation/uikit/uiedgeinsets/zero).
 
 ## See Also
 

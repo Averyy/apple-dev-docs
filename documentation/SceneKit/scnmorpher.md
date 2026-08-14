@@ -22,7 +22,7 @@ class SCNMorpher
 
 #### Overview
 
-![None](https://docs-assets.developer.apple.com/published/68916ebf85cf5b3fb1d8c3a2d75abf89/media-2929789%402x.png)
+![None](/images/com.apple.scenekit/media-2929789@2x.png)
 
 You control these transitions by associating an [`SCNMorpher`](scnmorpher.md) object with a node using its [`morpher`](scnnode/morpher.md) property. The morpher maintains an array of target geometries and a set of weights associated with each. When all weights are zero, the surface takes the form of the base geometry (from the node’s [`geometry`](scnnode/geometry.md) property). When you use the [`setWeight(_:forTargetAt:)`](scnmorpher/setweight(_:fortargetat:).md) method to increase a weight to `1.0`, the surface takes the form of the geometry at the corresponding index in the morpher’s [`targets`](scnmorpher/targets.md) array. If you use a variety of weight values for several targets, the surface takes a form that proportionally interpolates between the target geometries.
 
@@ -68,16 +68,16 @@ A morpher and its target geometries may be loaded from a scene file or created p
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCoding](../Foundation/NSCoding.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [NSSecureCoding](../Foundation/NSSecureCoding.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCoding](../foundation/nscoding.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSSecureCoding](../foundation/nssecurecoding.md)
 - [SCNAnimatable](scnanimatable.md)
 
 ## See Also

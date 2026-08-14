@@ -195,7 +195,7 @@ In iOS 12 and earlier, you use your app delegate to manage major life cycle even
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

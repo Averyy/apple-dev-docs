@@ -68,7 +68,7 @@ Specify contact-related properties during fetch operations.
 ### Notes
 - [let CNContactNoteKey: String](cncontactnotekey.md)
   A note associated with a contact.
-- [com.apple.developer.contacts.notes](../BundleResources/Entitlements/com.apple.developer.contacts.notes.md)
+- [com.apple.developer.contacts.notes](../bundleresources/entitlements/com.apple.developer.contacts.notes.md)
   A Boolean value that indicates whether the app may access the notes in contact entries.
 ### Images
 - [let CNContactImageDataKey: String](cncontactimagedatakey.md)

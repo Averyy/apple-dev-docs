@@ -28,7 +28,7 @@ A contextual clue that the system uses to determine the relevance of a widget in
 
 Several widgets might be relevant to a person at a specific time. To help the system show a widget when it’s most relevant, provide a `DateKind` as an additional contextual hint to help it determine the widget’s relevance. For example, a widget that’s related to a person’s schedule or requires an action, pass [`scheduled`](relevantcontext/datekind/scheduled.md).
 
-> **Note**: Smart Stacks are available in iOS, iPadOS, and watchOS. However, functionality provided by RelevanceKit API is only available in watchOS. Calling its API on other platforms doesn’t have any effect. For more information, refer to [`Increasing the visibility of widgets in Smart Stacks`](https://developer.apple.com/documentation/WidgetKit/Widget-Suggestions-In-Smart-Stacks).
+> **Note**: Smart Stacks are available in iOS, iPadOS, and watchOS. However, functionality provided by RelevanceKit API is only available in watchOS. Calling its API on other platforms doesn’t have any effect. For more information, refer to [`Increasing the visibility of widgets in Smart Stacks`](https://developer.apple.com/documentation/widgetkit/widget-suggestions-in-smart-stacks).
 
 ## Parameters
 

@@ -17,7 +17,7 @@ var colorType: TVColorType { get }
 ## See Also
 
 - [var color: UIColor?](tvcolor/color.md)
-  A [`UIColor`](https://developer.apple.com/documentation/UIKit/UIColor) object used to color an element.
+  A [`UIColor`](https://developer.apple.com/documentation/uikit/uicolor) object used to color an element.
 - [enum TVColorType](tvcolortype.md)
   Designates how color for an element is to be displayed.
 - [var gradientColors: [UIColor]?](tvcolor/gradientcolors.md)

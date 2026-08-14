@@ -39,7 +39,7 @@ let progress = attachmentStore.getData(for: myAttachment) { data, error in
 ## Parameters
 
 - `attachment`: An attachment associated with an object in the HealthKit store.
-- `completion`: A completion handler that the system calls to return the data. This handler takes the following parameters: - **attachmentData**: A [`Data`](https://developer.apple.com/documentation/Foundation/Data) object that contains the attachment’s contents. If an error occurs, the system sets this parameter to `nil`.
+- `completion`: A completion handler that the system calls to return the data. This handler takes the following parameters: - **attachmentData**: A [`Data`](https://developer.apple.com/documentation/foundation/data) object that contains the attachment’s contents. If an error occurs, the system sets this parameter to `nil`.
 - **error**: If an error occurred, this parameter contains information about the error. Otherwise, it’s `nil`.
 
 ## See Also

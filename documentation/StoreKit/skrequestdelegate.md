@@ -32,7 +32,7 @@ protocol SKRequestDelegate : NSObjectProtocol
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 ### Inherited By
 - [SKProductsRequestDelegate](skproductsrequestdelegate.md)
 

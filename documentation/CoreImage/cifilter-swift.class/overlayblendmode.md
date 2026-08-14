@@ -43,7 +43,7 @@ func overlayBlendMode(inputImage: CIImage, backgroundImage: CIImage) -> CIImage 
 }
 ```
 
-![The image on the top left shows a beach with multiple palm trees and a rainbow arching across the blue sky.  The image below is a gradient image displaying a gradual color shift from purple to a dark orange. The image on the right shows the output from applying an overlay-blend-mode filter. The result displays a darker beach rainbow image with the gradient image overlaid on top.](https://docs-assets.developer.apple.com/published/6a33f91bf21f21594a4a1d2ba71b1c59/media-3546406%402x.png)
+![The image on the top left shows a beach with multiple palm trees and a rainbow arching across the blue sky.  The image below is a gradient image displaying a gradual color shift from purple to a dark orange. The image on the right shows the output from applying an overlay-blend-mode filter. The result displays a darker beach rainbow image with the gradient image overlaid on top.](/images/com.apple.coreimage/media-3546406@2x.png)
 
 ## See Also
 

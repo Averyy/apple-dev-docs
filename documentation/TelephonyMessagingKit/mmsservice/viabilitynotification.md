@@ -7,7 +7,6 @@ A notification that indicates if MMS is viable for a given cellular service.
 
 **Availability**:
 - iOS 26.0+
-- iPadOS 26.0+
 
 ## Declaration
 
@@ -26,9 +25,9 @@ struct ViabilityNotification
 ## Relationships
 
 ### Conforms To
-- [Equatable](../Swift/Equatable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Equatable](../swift/equatable.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

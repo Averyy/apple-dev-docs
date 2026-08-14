@@ -25,7 +25,7 @@ The maximum time interval between the sample’s [`startDate`](hksample/startdat
 
 #### Discussion
 
-This method throws an exception if [`isMaximumDurationRestricted`](hksampletype/ismaximumdurationrestricted.md) is [`false`](https://developer.apple.com/documentation/Swift/false).
+This method throws an exception if [`isMaximumDurationRestricted`](hksampletype/ismaximumdurationrestricted.md) is [`false`](https://developer.apple.com/documentation/swift/false).
 
 ## See Also
 

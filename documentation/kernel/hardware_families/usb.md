@@ -10,7 +10,7 @@ Use kernel extensions to implement support for devices with real-time requiremen
 
 > ❗ **Important**: For most types of USB drivers, Apple has deprecated the use of kernel extensions. Instead, create a DriverKit extension using [`USBDriverKit`](https://developer.apple.com/documentation/usbdriverkit).
 
-This framework refers to the USB Implementers Forum (USB-IF) , Revision 1.0, September 22, 2017. You can view this specification and other referenced USB specifications at [`http://www.usb.org/`](https://developer.apple.comhttp://www.usb.org/).
+This framework refers to the USB Implementers Forum (USB-IF) *Universal Serial Bus 3.2 Specification*, Revision 1.0, September 22, 2017. You can view this specification and other referenced USB specifications at [`http://www.usb.org/`](https://developer.apple.comhttp://www.usb.org/).
 
 ## Topics
 

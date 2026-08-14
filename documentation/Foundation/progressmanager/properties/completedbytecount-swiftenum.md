@@ -22,11 +22,11 @@ enum CompletedByteCount
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../Swift/BitwiseCopyable.md)
-- [Copyable](../Swift/Copyable.md)
+- [BitwiseCopyable](../swift/bitwisecopyable.md)
+- [Copyable](../swift/copyable.md)
 - [ProgressManager.Property](progressmanager/property.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 
 ---

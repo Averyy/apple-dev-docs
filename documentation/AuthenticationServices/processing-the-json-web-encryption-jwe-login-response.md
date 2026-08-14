@@ -39,11 +39,11 @@ The following table specifies the values that the system uses to validate the ID
 | `nbf` | If present, must be in the past. | Optional. |
 | `groups` or [`groupResponseClaimName`](asauthorizationproviderextensionloginconfiguration/groupresponseclaimname.md) | The requested group membership for the user. | Optional. |
 
-If validation succeeds, the system saves the response tokens to the keychain using the keychain data-protection attribute [`kSecAttrAccessibleAfterFirstUnlockThisDeviceOnly`](https://developer.apple.com/documentation/Security/kSecAttrAccessibleAfterFirstUnlockThisDeviceOnly) and checks the Kerberos mapping.
+If validation succeeds, the system saves the response tokens to the keychain using the keychain data-protection attribute [`kSecAttrAccessibleAfterFirstUnlockThisDeviceOnly`](https://developer.apple.com/documentation/security/ksecattraccessibleafterfirstunlockthisdeviceonly) and checks the Kerberos mapping.
 
 For a group membership request, the system adds the user to the groups that the IdP supplies in the `id_token`, and it removes the user from the groups not returned. The system ignores groups that you didn’t specify in the Device Management profile.
 
-For more information, see [`Configuring Platform Single Sign-on`](https://developer.apple.com/documentation/DeviceManagement/configuring-platform-single-sign-on).
+For more information, see [`Configuring Platform Single Sign-on`](https://developer.apple.com/documentation/devicemanagement/configuring-platform-single-sign-on).
 
 ## See Also
 

@@ -32,7 +32,7 @@ The observer must be added to a run loop before it can receive notifications. No
 
 ## Parameters
 
-- `observer`: The observer object (created from a call to  ) for which to get the run loop source.
+- `observer`: The observer object (created from a call to [`AXObserverCreate(_:_:_:)`](1460133-axobservercreate.md)) for which to get the run loop source.
 
 ## See Also
 

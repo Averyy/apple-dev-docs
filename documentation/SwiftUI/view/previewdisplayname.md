@@ -38,7 +38,7 @@ struct CircleImage_Previews: PreviewProvider {
 }
 ```
 
-![A screenshot of the Xcode preview canvas cropped to just the top of a](https://docs-assets.developer.apple.com/published/af4f6594769133bd756945b236c1583e/View-previewDisplayName-1%402x.png)
+![A screenshot of the Xcode preview canvas cropped to just the top of a](/images/com.apple.SwiftUI/View-previewDisplayName-1@2x.png)
 
 Add a name when you have multiple previews together in the canvas that you need to tell apart. The default value is `nil`, in which case Xcode displays a default string.
 

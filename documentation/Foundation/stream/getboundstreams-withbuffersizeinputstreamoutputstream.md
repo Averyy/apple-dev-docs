@@ -28,7 +28,7 @@ class func getBoundStreams(withBufferSize bufferSize: Int, inputStream: Autorele
 
 The created streams are bound to one another, such that any data written to `outputStream` is received by `inputStream`.
 
-This is a convenience method for calling [`CFStreamCreateBoundPair(_:_:_:_:)`](https://developer.apple.com/documentation/CoreFoundation/CFStreamCreateBoundPair(_:_:_:_:)) and bridging from the returned Core Foundation types.
+This is a convenience method for calling [`CFStreamCreateBoundPair(_:_:_:_:)`](https://developer.apple.com/documentation/corefoundation/cfstreamcreateboundpair(_:_:_:_:)) and bridging from the returned Core Foundation types.
 
 ## Parameters
 
@@ -38,7 +38,7 @@ This is a convenience method for calling [`CFStreamCreateBoundPair(_:_:_:_:)`](h
 
 ## See Also
 
-- [func CFStreamCreateBoundPair(CFAllocator!, UnsafeMutablePointer<Unmanaged<CFReadStream>?>!, UnsafeMutablePointer<Unmanaged<CFWriteStream>?>!, CFIndex)](../CoreFoundation/CFStreamCreateBoundPair(_:_:_:_:).md)
+- [func CFStreamCreateBoundPair(CFAllocator!, UnsafeMutablePointer<Unmanaged<CFReadStream>?>!, UnsafeMutablePointer<Unmanaged<CFWriteStream>?>!, CFIndex)](../corefoundation/cfstreamcreateboundpair(_:_:_:_:).md)
   Creates a bound pair of read and write streams.
 
 

@@ -17,7 +17,7 @@ Build systems that run distributed code across multiple processes and devices.
 
 Distributed actors share many characteristics with Swift actors, and include additional isolation checks to ensure location transparency and safety in a distributed environment. Similar to how actors make it easier to write concurrent code that’s safe and correct to run on a single computer, distributed actors make it easier to write code that runs across multiple computers.
 
-![A diagram showing two columns of actors. The left column includes a remote actor reference. The right column includes a local distributed actor. An arrow points from the remote actor reference to the local distributed actor that it refers to.](https://docs-assets.developer.apple.com/published/2bf6622bede5876c3f4d6d1a4e1f1089/distributed-module%402x.png)
+![A diagram showing two columns of actors. The left column includes a remote actor reference. The right column includes a local distributed actor. An arrow points from the remote actor reference to the local distributed actor that it refers to.](/images/com.apple.Swift/distributed-module@2x.png)
 
 You use three main parts when writing code with distributed actors:
 
@@ -27,9 +27,6 @@ You use three main parts when writing code with distributed actors:
 
 ## Topics
 
-### Essentials
-- [TicTacFish: Implementing a game using distributed actors](../swift/tictacfish_implementing_a_game_using_distributed_actors.md)
-  Use distributed actors to take your Swift concurrency and actor-based apps beyond a single process.
 ### Distributed Actors
 - [protocol DistributedActor](distributedactor.md)
   Common protocol to which all distributed actors conform implicitly.

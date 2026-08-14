@@ -16,7 +16,7 @@ func scrollToVisible(_ rect: NSRect) -> Bool
 
 #### Discussion
 
-[`true`](https://developer.apple.com/documentation/Swift/true) if any scrolling is performed; otherwise returns [`false`](https://developer.apple.com/documentation/Swift/false).
+[`true`](https://developer.apple.com/documentation/swift/true) if any scrolling is performed; otherwise returns [`false`](https://developer.apple.com/documentation/swift/false).
 
 ## Parameters
 

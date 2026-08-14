@@ -27,7 +27,7 @@ To create an orthographic camera, add this component to an entity.
 
 | **Perspective camera** | **Orthographic camera** |
 | --- | --- |
-| ![An illustration of three cubes, one behind the other, rendered with a perspective camera. The cube farthest away appears smaller than the closest one.](https://docs-assets.developer.apple.com/published/ccf81006872074acd2f1735dc3a9ed96/orthocamera-perspective-cubes.png) | ![A screenshot of three cubes, one behind the other, rendered with a orthographic camera. The cubes appear the same size, regardless of their distance.](https://docs-assets.developer.apple.com/published/6a06251fd3a6fe3a7dca37a87da85cc4/orthocamera-orthographic-cubes.png) |
+| ![An illustration of three cubes, one behind the other, rendered with a perspective camera. The cube farthest away appears smaller than the closest one.](/images/com.apple.RealityKit/orthocamera-perspective-cubes.png) | ![A screenshot of three cubes, one behind the other, rendered with a orthographic camera. The cubes appear the same size, regardless of their distance.](/images/com.apple.RealityKit/orthocamera-orthographic-cubes.png) |
 
 You can add an `OrthographicCameraComponent` to an entity’s component set, and orient that entity so that it looks at a specific target using `Entity/look(at:from:upVector:relativeTo:)`.
 
@@ -71,7 +71,7 @@ In AR scenarios, the system provides the camera automatically; however, in non-A
 
 ### Conforms To
 - [Component](component.md)
-- [Equatable](../Swift/Equatable.md)
+- [Equatable](../swift/equatable.md)
 
 ## See Also
 

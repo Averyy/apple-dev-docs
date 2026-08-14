@@ -22,7 +22,7 @@ var kAudioFormatMIDIStream: AudioFormatID { get }
 
 #### Discussion
 
-This codec contains a stream of [`MIDIPacketList`](https://developer.apple.com/documentation/CoreMIDI/MIDIPacketList) structures where the time stamps are sample offsets in the stream. The [`mSampleRate`](audiostreambasicdescription/msamplerate.md) field describes how time passes in this stream. An audio unit that receives or generates this stream can use this sample rate, the number of frames it’s rendering, and the sample offsets within the [`MIDIPacketList`](https://developer.apple.com/documentation/CoreMIDI/MIDIPacketList) to define the time for any MIDI event within this list.
+This codec contains a stream of [`MIDIPacketList`](https://developer.apple.com/documentation/coremidi/midipacketlist) structures where the time stamps are sample offsets in the stream. The [`mSampleRate`](audiostreambasicdescription/msamplerate.md) field describes how time passes in this stream. An audio unit that receives or generates this stream can use this sample rate, the number of frames it’s rendering, and the sample offsets within the [`MIDIPacketList`](https://developer.apple.com/documentation/coremidi/midipacketlist) to define the time for any MIDI event within this list.
 
 ## See Also
 

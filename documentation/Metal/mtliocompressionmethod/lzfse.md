@@ -23,8 +23,8 @@ case lzfse
 
 For more information on the LZFSE codec, see:
 
-- [`Algorithm.lzfse`](https://developer.apple.com/documentation/Compression/Algorithm/lzfse)
-- [`COMPRESSION_LZFSE`](https://developer.apple.com/documentation/Compression/COMPRESSION_LZFSE)
+- [`Algorithm.lzfse`](https://developer.apple.com/documentation/compression/algorithm/lzfse)
+- [`COMPRESSION_LZFSE`](https://developer.apple.com/documentation/compression/compression_lzfse)
 
 ## See Also
 

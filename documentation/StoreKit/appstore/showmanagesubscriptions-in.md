@@ -32,20 +32,20 @@ Use this function to display the manage subscriptions sheet within your app. Con
 
 The [`showManageSubscriptions(in:)`](appstore/showmanagesubscriptions(in:).md) function presents a manage subscription sheet that’s the same as what customers can view in their account settings in the App Store app or by choosing Settings > Apple Account > Subscriptions on an iOS or iPadOS device. The sheet displays the customer’s currently active subscription for your app and the options to view, upgrade, downgrade, or cancel their subscription.
 
-If you’re using SwiftUI, call the [`manageSubscriptionsSheet(isPresented:)`](https://developer.apple.com/documentation/SwiftUI/View/manageSubscriptionsSheet(isPresented:))view modifier.
+If you’re using SwiftUI, call the [`manageSubscriptionsSheet(isPresented:)`](https://developer.apple.com/documentation/swiftui/view/managesubscriptionssheet(ispresented:))view modifier.
 
 Avoid showing the user interface for this feature in Mac apps built with Mac Catalyst and on iOS apps running on Mac computers with Apple silicon because this sheet isn’t supported in macOS.
 
-- In Mac apps built with Mac Catalyst, enclose the code in a compilation conditional block that uses the `targetEnvironment():` platform condition. For more information on Mac Catalyst, see [`Creating a Mac version of your iPad app`](https://developer.apple.com/documentation/UIKit/creating-a-mac-version-of-your-ipad-app).
-- For iOS apps running on Apple silicon, if [`isiOSAppOnMac`](https://developer.apple.com/documentation/Foundation/ProcessInfo/isiOSAppOnMac) is `true,` avoid showing the user interface for this feature.
+- In Mac apps built with Mac Catalyst, enclose the code in a compilation conditional block that uses the `targetEnvironment():` platform condition. For more information on Mac Catalyst, see [`Creating a Mac version of your iPad app`](https://developer.apple.com/documentation/uikit/creating-a-mac-version-of-your-ipad-app).
+- For iOS apps running on Apple silicon, if [`isiOSAppOnMac`](https://developer.apple.com/documentation/foundation/processinfo/isiosapponmac) is `true,` avoid showing the user interface for this feature.
 
 ##### Test Managing Subscriptions
 
-Test the managing subscriptions functionality in the sandbox environment and StoreKit testing in Xcode. For more information about testing, see [`Testing at all stages of development with Xcode and the sandbox`](testing-at-all-stages-of-development-with-xcode-and-the-sandbox.md) and [`Setting up StoreKit Testing in Xcode`](https://developer.apple.com/documentation/Xcode/setting-up-storekit-testing-in-xcode).
+Test the managing subscriptions functionality in the sandbox environment and StoreKit testing in Xcode. For more information about testing, see [`Testing at all stages of development with Xcode and the sandbox`](testing-at-all-stages-of-development-with-xcode-and-the-sandbox.md) and [`Setting up StoreKit Testing in Xcode`](https://developer.apple.com/documentation/xcode/setting-up-storekit-testing-in-xcode).
 
 ## Parameters
 
-- `scene`: The [`UIWindowScene`](https://developer.apple.com/documentation/UIKit/UIWindowScene) that the system displays the sheet on.
+- `scene`: The [`UIWindowScene`](https://developer.apple.com/documentation/uikit/uiwindowscene) that the system displays the sheet on.
 
 ## See Also
 

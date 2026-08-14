@@ -45,7 +45,7 @@ A structure that contains three 32-bit floating-point values with no additional 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../Swift/Sendable.md)
+- [Sendable](../swift/sendable.md)
 
 ## See Also
 

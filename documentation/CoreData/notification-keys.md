@@ -21,11 +21,11 @@ The keys you use to retrieve values from a notification’s user info dictionary
 
 ## See Also
 
-- [static let NSPersistentStoreCoordinatorStoresWillChange: NSNotification.Name](../Foundation/NSNotification/Name-swift.struct/NSPersistentStoreCoordinatorStoresWillChange.md)
+- [static let NSPersistentStoreCoordinatorStoresWillChange: NSNotification.Name](../foundation/nsnotification/name-swift.struct/nspersistentstorecoordinatorstoreswillchange.md)
   A notification that posts before a coordinator changes its registered stores.
-- [static let NSPersistentStoreCoordinatorStoresDidChange: NSNotification.Name](../Foundation/NSNotification/Name-swift.struct/NSPersistentStoreCoordinatorStoresDidChange.md)
+- [static let NSPersistentStoreCoordinatorStoresDidChange: NSNotification.Name](../foundation/nsnotification/name-swift.struct/nspersistentstorecoordinatorstoresdidchange.md)
   A notification that the coordinator posts after its registered stores change.
-- [static let NSPersistentStoreCoordinatorWillRemoveStore: NSNotification.Name](../Foundation/NSNotification/Name-swift.struct/NSPersistentStoreCoordinatorWillRemoveStore.md)
+- [static let NSPersistentStoreCoordinatorWillRemoveStore: NSNotification.Name](../foundation/nsnotification/name-swift.struct/nspersistentstorecoordinatorwillremovestore.md)
   A notification that posts before a coordinator removes a store.
 
 

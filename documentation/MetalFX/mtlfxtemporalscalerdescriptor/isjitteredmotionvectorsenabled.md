@@ -20,9 +20,9 @@ var isJitteredMotionVectorsEnabled: Bool { get set }
 
 #### Discussion
 
-When you set this property to [`true`](https://developer.apple.com/documentation/Swift/true), the scaler internally subtracts the jitter from the motion vectors using the jitter offset values provided each frame via [`jitterOffsetX`](mtlfxtemporalscalerbase/jitteroffsetx.md) and [`jitterOffsetY`](mtlfxtemporalscalerbase/jitteroffsety.md).
+When you set this property to [`true`](https://developer.apple.com/documentation/swift/true), the scaler internally subtracts the jitter from the motion vectors using the jitter offset values provided each frame via [`jitterOffsetX`](mtlfxtemporalscalerbase/jitteroffsetx.md) and [`jitterOffsetY`](mtlfxtemporalscalerbase/jitteroffsety.md).
 
-When [`false`](https://developer.apple.com/documentation/Swift/false) (the default), the scaler uses the motion vectors directly without any adjustment.
+When [`false`](https://developer.apple.com/documentation/swift/false) (the default), the scaler uses the motion vectors directly without any adjustment.
 
 
 ---

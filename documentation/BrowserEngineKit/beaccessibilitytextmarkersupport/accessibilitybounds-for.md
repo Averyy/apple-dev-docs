@@ -22,7 +22,7 @@ func accessibilityBounds(for range: BEAccessibilityTextMarker.Range) -> CGRect
 
 #### Return Value
 
-The bounds in accessiblity space of the text range, or [`CGRectZero`](https://developer.apple.com/documentation/CoreGraphics/CGRectZero) if the method can’t calculate the bounds.
+The bounds in accessiblity space of the text range, or [`CGRectZero`](https://developer.apple.com/documentation/coregraphics/cgrectzero) if the method can’t calculate the bounds.
 
 ## Parameters
 

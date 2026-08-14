@@ -23,7 +23,7 @@ set padding(padding: PaddingData);
 
 The padding affects the map’s controls layout. The map computes the region it draws to fit within the inset frame that the padding specifies.
 
-MapKit JS computes the [`visibleMapRect`](map/visiblemaprect.md) to fit within the inset frame with the constraint that the entire, noninset frame needs to be able to contain map data as well. Using the [`showItems(items, options)`](map/showitems.md) method ensures that all annotations and overlays are visible within the inset frame. The map modifies the region when displaying an annotation’s callout to ensure it’s entirely visible within the inset frame.
+MapKit JS computes the [`visibleMapRect`](map/visiblemaprect.md) to fit within the inset frame with the constraint that the entire, noninset frame needs to be able to contain map data as well. Using the [`showItems()`](map/showitems.md) method ensures that all annotations and overlays are visible within the inset frame. The map modifies the region when displaying an annotation’s callout to ensure it’s entirely visible within the inset frame.
 
 ## See Also
 

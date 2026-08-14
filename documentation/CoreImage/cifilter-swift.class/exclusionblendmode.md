@@ -43,7 +43,7 @@ func exclusionBlendMode(inputImage: CIImage, backgroundImage: CIImage) -> CIImag
 }
 ```
 
-![The image on the top left shows a beach with multiple palm trees and a rainbow arching across the blue sky.  The image below is a gradient image displaying a gradual color shift from purple to a dark orange. The image on the right shows the output from applying an exclusion-blend mode filter. The result displays a blend of colors from both images with a darker contrast.](https://docs-assets.developer.apple.com/published/bcf39409de803bac298bd54e302a84a5/media-3546411%402x.png)
+![The image on the top left shows a beach with multiple palm trees and a rainbow arching across the blue sky.  The image below is a gradient image displaying a gradual color shift from purple to a dark orange. The image on the right shows the output from applying an exclusion-blend mode filter. The result displays a blend of colors from both images with a darker contrast.](/images/com.apple.coreimage/media-3546411@2x.png)
 
 ## See Also
 

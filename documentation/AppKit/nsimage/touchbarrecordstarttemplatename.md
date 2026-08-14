@@ -19,7 +19,7 @@ class let touchBarRecordStartTemplateName: String
 
 #### Discussion
 
-![Template image for start recording](https://docs-assets.developer.apple.com/published/f066a1cc349aa4710bfec9ceb15d8bda/media-2825126%402x.png)
+![Template image for start recording](/images/com.apple.appkit/media-2825126@2x.png)
 
 Touch Bar template images are exclusively for use in [`NSTouchBarItem`](nstouchbaritem.md) objects and not in onscreen windows.
 

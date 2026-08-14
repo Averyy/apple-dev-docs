@@ -7,7 +7,7 @@ An atom that stores duration information for a media’s samples, providing a ma
 
 #### Overview
 
-See [`Time-to-sample atom ('stts')`](time-to-sample_atom.md).
+See [`Time-to-sample atom`](time-to-sample_atom.md).
 
 ## See Also
 

@@ -31,7 +31,7 @@ This function opens a stream created by [`randomAccessDecompressionStream(readin
 ## Parameters
 
 - `compressedStream`: An input stream that provides compressed data.
-- `allocationLimit`: The requested memory allocation size, in bytes. Set to `0` for lowest memory footprint or [`max`](https://developer.apple.com/documentation/Swift/Int/max) for best performance.
+- `allocationLimit`: The requested memory allocation size, in bytes. Set to `0` for lowest memory footprint or [`max`](https://developer.apple.com/documentation/swift/int/max) for best performance.
 - `flags`: Flags that control the behavior of the operation.
 - `threadCount`: The number of worker threads that the operation uses, set to `0` for default.
 - `body`: A closure with the archive byte stream passed as a parameter.

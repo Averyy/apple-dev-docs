@@ -26,7 +26,7 @@ Don’t call this function directly. The system calls it automatically when inte
 
 ## Parameters
 
-- `argumentObject`: The object with the description you want to add to the message. This function calls the [`description`](https://developer.apple.com/documentation/ObjectiveC/NSObjectProtocol/description) method of the object and incorporates that value into the message string.
+- `argumentObject`: The object with the description you want to add to the message. This function calls the [`description`](https://developer.apple.com/documentation/objectivec/nsobjectprotocol/description) method of the object and incorporates that value into the message string.
 - `privacy`: The privacy level of the information. If you don’t specify this parameter, the default rules redact the object description.
 
 ## See Also

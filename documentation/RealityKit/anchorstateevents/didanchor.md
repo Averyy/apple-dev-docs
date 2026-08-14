@@ -31,8 +31,8 @@ struct DidAnchor
 
 ### Conforms To
 - [Event](event.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 
 ---

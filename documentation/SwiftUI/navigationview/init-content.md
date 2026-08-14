@@ -54,15 +54,15 @@ NavigationView {
 
 When the horizontal size class is [`UserInterfaceSizeClass.regular`](userinterfacesizeclass/regular.md), like on an iPad in landscape mode, or on a Mac, the navigation view presents itself as a multicolumn view, using its second and later content views — a single [`Text`](text.md) view in the example above — as a placeholder for the corresponding column:
 
-![A screenshot of a Mac window showing a multicolumn navigation view. The left column lists the colors Purple, Pink, and Orange, with none selected. The right column presents a placeholder view that says Select a Color.](https://docs-assets.developer.apple.com/published/c16451028fe8b81aec0b25789b9239ac/NavigationView-init-content-1%402x.png)
+![A screenshot of a Mac window showing a multicolumn navigation view. The left column lists the colors Purple, Pink, and Orange, with none selected. The right column presents a placeholder view that says Select a Color.](/images/com.apple.SwiftUI/NavigationView-init-content-1@2x.png)
 
 When the user selects one of the navigation links from the list, the linked destination view replaces the placeholder text in the detail column:
 
-![A screenshot of a Mac window showing a multicolumn navigation view. The left column lists the colors Purple, Pink, and Orange, with Purple selected. The right column presents a detail view that shows a purple square.](https://docs-assets.developer.apple.com/published/4a4155650f7a3da4dbb3e53b04a2f465/NavigationView-init-content-2%402x.png)
+![A screenshot of a Mac window showing a multicolumn navigation view. The left column lists the colors Purple, Pink, and Orange, with Purple selected. The right column presents a detail view that shows a purple square.](/images/com.apple.SwiftUI/NavigationView-init-content-2@2x.png)
 
 When the size class is [`UserInterfaceSizeClass.compact`](userinterfacesizeclass/compact.md), like on an iPhone in portrait orientation, the navigation view presents itself as a single column that the user navigates as a stack. Tapping one of the links replaces the list with the detail view, which provides a back button to return to the list:
 
-![Two screenshots of an iPhone in portrait orientation connected by an arrow. The first screenshot shows a single column consisting of a list of colors with the names Purple, Pink, and Orange. The second screenshot has the title Purple, and contains a purple square. The arrow connects the Purple item in the list on the left to the screenshot on the right.](https://docs-assets.developer.apple.com/published/11841daab05040e05be415802f49b216/NavigationView-init-content-3%402x.png)
+![Two screenshots of an iPhone in portrait orientation connected by an arrow. The first screenshot shows a single column consisting of a list of colors with the names Purple, Pink, and Orange. The second screenshot has the title Purple, and contains a purple square. The arrow connects the Purple item in the list on the left to the screenshot on the right.](/images/com.apple.SwiftUI/NavigationView-init-content-3@2x.png)
 
 ## Parameters
 

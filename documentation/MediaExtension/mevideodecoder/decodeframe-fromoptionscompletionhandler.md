@@ -17,7 +17,7 @@ func decodeFrame(from sampleBuffer: CMSampleBuffer, options: MEDecodeFrameOption
 
 #### Discussion
 
-This method calls the completion handler for every sample buffer frame when decoding completes, but not necessarily in display order. The completion handler receives a decoded pixel buffer, a decode status that indicates a frame dropped, or an error. Use [`MEVideoDecoderPixelBufferManager`](mevideodecoderpixelbuffermanager.md) to allocate an image buffer. If an error occurs that’s external to [`MediaExtensionErrorDomain`](mediaextensionerrordomain.md), the [`VTDecompressionSession`](https://developer.apple.com/documentation/VideoToolbox/VTDecompressionSession) receives it as [`kVTVideoDecoderUnknownErr`](https://developer.apple.com/documentation/VideoToolbox/kVTVideoDecoderUnknownErr).
+This method calls the completion handler for every sample buffer frame when decoding completes, but not necessarily in display order. The completion handler receives a decoded pixel buffer, a decode status that indicates a frame dropped, or an error. Use [`MEVideoDecoderPixelBufferManager`](mevideodecoderpixelbuffermanager.md) to allocate an image buffer. If an error occurs that’s external to [`MediaExtensionErrorDomain`](mediaextensionerrordomain.md), the [`VTDecompressionSession`](https://developer.apple.com/documentation/videotoolbox/vtdecompressionsession) receives it as [`kVTVideoDecoderUnknownErr`](https://developer.apple.com/documentation/videotoolbox/kvtvideodecoderunknownerr).
 
 ## Parameters
 

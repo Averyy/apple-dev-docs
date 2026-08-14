@@ -30,7 +30,7 @@ A new value object that contains the vector information.
 
 ## See Also
 
-- [struct SCNVector3](../SceneKit/SCNVector3.md)
+- [struct SCNVector3](../scenekit/scnvector3.md)
   A representation of a three-component vector.
 - [init(SCNVector4: SCNVector4)](nsvalue/init(scnvector4:).md)
   Creates a value object that contains the specified four-element SceneKit vector.

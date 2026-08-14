@@ -34,8 +34,8 @@ This method applies the pixelate filter to an image. The effect produces a resul
 The pixelate filter uses the following properties:
 
 - **`inputImage`**: An image with the type [`CIImage`](ciimage.md).
-- **`center`**: A set of coordinates marking the center of the image as a [`CGPoint`](https://developer.apple.com/documentation/CoreFoundation/CGPoint).
-- **`scale`**: A `float` representing the size of the squares as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+- **`center`**: A set of coordinates marking the center of the image as a [`CGPoint`](https://developer.apple.com/documentation/corefoundation/cgpoint).
+- **`scale`**: A `float` representing the size of the squares as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
 
 The following code creates a filter that results in a distorted image made of squares:
 
@@ -49,7 +49,7 @@ func pixelate(inputImage: CIImage) -> CIImage {
 }
 ```
 
-![Two pictures of a pink flower surrounded by foliage. The photo on the left shows a single flower photographed close up, in focus, with good light and no effects. In the photo on the right, the pixelate filter is applied, resulting in a distorted image made of small squares with less detail.](https://docs-assets.developer.apple.com/published/62dd2397db3b9e2d0513de821cb6e54b/media-3599999%402x.png)
+![Two pictures of a pink flower surrounded by foliage. The photo on the left shows a single flower photographed close up, in focus, with good light and no effects. In the photo on the right, the pixelate filter is applied, resulting in a distorted image made of small squares with less detail.](/images/com.apple.coreimage/media-3599999@2x.png)
 
 ## See Also
 

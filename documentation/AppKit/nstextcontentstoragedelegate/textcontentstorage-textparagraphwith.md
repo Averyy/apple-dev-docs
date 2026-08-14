@@ -31,7 +31,7 @@ When non-`nil`, `textContentStorage` uses the text paragraph instead of creating
 ## Parameters
 
 - `textContentStorage`: The object’s content manager.
-- `range`: The [`NSRange`](https://developer.apple.com/documentation/Foundation/NSRange-c.struct) that describes the extent of the string.
+- `range`: The [`NSRange`](https://developer.apple.com/documentation/foundation/nsrange-c.struct) that describes the extent of the string.
 
 
 ---

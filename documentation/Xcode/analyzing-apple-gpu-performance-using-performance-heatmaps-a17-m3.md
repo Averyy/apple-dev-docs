@@ -14,7 +14,7 @@ Metal organizes the threads of your shader into single-instruction, multiple-dat
 
 To open the performance heat maps, click the Performance button in the Metal debugger’s Debug navigator, and then click the Heat Map tab above the Performance timeline.
 
-![A screenshot of the Metal debugger’s performance heat maps.](https://docs-assets.developer.apple.com/published/2e1d1326eafb74c9f6d1ca557da8d202/gputools-metal-debugger-essentials-heatmap%402x.png)
+![A screenshot of the Metal debugger’s performance heat maps.](/images/com.apple.Xcode/gputools-metal-debugger-essentials-heatmap@2x.png)
 
 When you select an encoder, pipeline state, or GPU command in the Timeline navigator, the heat maps for the corresponding work appear on the right.
 
@@ -43,7 +43,7 @@ By default, the Shader Execution Cost heat map and the Attachments display for r
 
 Click the Add button (+) in the heat map control bar to open a popover of all available performance heat maps. You can customize which heat maps to display by selecting the checkboxes.
 
-![A screenshot of the popover menu that displays heat map options after clicking the Add button on the heat map control bar. The Shader Execution Cost and Overdraw options are selected.](https://docs-assets.developer.apple.com/published/bf08be664a7c9b886069c501f5f28870/gputools-metal-debugger-essentials-heatmap-add-heatmap%402x.png)
+![A screenshot of the popover menu that displays heat map options after clicking the Add button on the heat map control bar. The Shader Execution Cost and Overdraw options are selected.](/images/com.apple.Xcode/gputools-metal-debugger-essentials-heatmap-add-heatmap@2x.png)
 
 Available performance heat map options include the following:
 
@@ -66,7 +66,7 @@ The color intensity in the heat maps represents the significance of the values. 
 
 You can filter and tone-map a performance heat map by clicking the Histogram button in the title bar.
 
-![A screenshot showing the Histogram popover that appears after clicking the Histogram button on the heat map’s title bar.](https://docs-assets.developer.apple.com/published/fbd69ba9509b8adecbc8c5db10cd35fc/gputools-metal-debugger-essentials-heatmap-histogram%402x.png)
+![A screenshot showing the Histogram popover that appears after clicking the Histogram button on the heat map’s title bar.](/images/com.apple.Xcode/gputools-metal-debugger-essentials-heatmap-histogram@2x.png)
 
 The histogram popover shows the value range of the heat map. You can drag the handles to adjust the range to filter smaller and larger values. This can be useful in situations when you want a certain value range, such as showing pixels in a render pass that executes more than 100 instructions.
 
@@ -76,7 +76,7 @@ Selecting a pixel in the heat map allows you to inspect the underlying SIMD grou
 
 If more than one SIMD group touches the pixel in a render pass, a list of SIMD groups in order of cost percentile appears so you can select the one to inspect. When you select a SIMD group in the list, its execution history appears below the heat maps.
 
-![A screenshot showing the SIMD group execution history below the performance heat maps.](https://docs-assets.developer.apple.com/published/d0db3fb4a02748b6612403ab73b40a08/gputools-metal-debugger-heatmap-execution-history%402x.png)
+![A screenshot showing the SIMD group execution history below the performance heat maps.](/images/com.apple.Xcode/gputools-metal-debugger-heatmap-execution-history@2x.png)
 
 The Execution History timeline shows the progress of the selected SIMD group from left to right, and lists the full shader call stack at each point of execution from top to bottom.
 

@@ -38,7 +38,7 @@ A delegate is not required for an [`NWTCPConnection`](nwtcpconnection.md) object
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

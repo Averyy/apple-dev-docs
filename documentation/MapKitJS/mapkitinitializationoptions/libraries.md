@@ -29,7 +29,7 @@ MapKit JS divides its interfaces into libraries that you can specify when loadin
 - **`user-location`**: User location display and controls on [`Map`](map.md).
 - **`look-around`**: [`LookAround`](lookaround.md) and [`LookAroundPreview`](lookaroundpreview.md).
 
-You can set the libraries to load statically by defining them within script tag in the `data-libraries` attribute or in the [`load(libraryNames)`](mapkit/load.md) method, or by passing a `libraries` property in the [`init(options)`](mapkit/init.md) options.
+You can set the libraries to load statically by defining them within script tag in the `data-libraries` attribute or in the [`load()`](mapkit/load.md) method, or by passing a `libraries` property in the [`init()`](mapkit/init.md) options.
 
 
 ---

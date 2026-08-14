@@ -30,9 +30,9 @@ This method applies the glide reflected tile filter to an image. The effect prod
 The glide reflected tile filter uses the following properties:
 
 - **`inputImage`**: An image with the type [`CIImage`](ciimage.md).
-- **`center`**: A set of coordinates marking the center of the image as a [`CGPoint`](https://developer.apple.com/documentation/CoreFoundation/CGPoint).
-- **`angle`**: A `float` representing the direction of distortion, in radians as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
-- **`width`**: A `float` representing the set width of each tile as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+- **`center`**: A set of coordinates marking the center of the image as a [`CGPoint`](https://developer.apple.com/documentation/corefoundation/cgpoint).
+- **`angle`**: A `float` representing the direction of distortion, in radians as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
+- **`width`**: A `float` representing the set width of each tile as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
 
 The following code creates a filter that results in flipping the image and then tiling the result:
 
@@ -47,7 +47,7 @@ func glideReflected(inputImage: CIImage) -> CIImage {
 }
 ```
 
-![Two photographs of a bouquet of multiple colorful flowers photographed up close with good lighting and focus. In the photo on the right, a glide reflected tile filter is applied, resulting in a portion of the image containing purple, white and pink petals becoming tiled with every other tile reflected.](https://docs-assets.developer.apple.com/published/e7736aef7eade0673b94b753fa406c5b/media-3599883%402x.png)
+![Two photographs of a bouquet of multiple colorful flowers photographed up close with good lighting and focus. In the photo on the right, a glide reflected tile filter is applied, resulting in a portion of the image containing purple, white and pink petals becoming tiled with every other tile reflected.](/images/com.apple.coreimage/media-3599883@2x.png)
 
 ## See Also
 

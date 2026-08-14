@@ -33,7 +33,7 @@ New features of Safari 12.1 include:
 
 ###### New Features
 
-- Added warnings displayed to the user when loading insecure pages in both Safari and in [`SFSafariViewController`](https://developer.apple.com/documentation/SafariServices/SFSafariViewController).
+- Added warnings displayed to the user when loading insecure pages in both Safari and in [`SFSafariViewController`](https://developer.apple.com/documentation/safariservices/sfsafariviewcontroller).
 - Added Motion & Orientation settings on iOS to enable the [`DeviceMotionEvent`](https://developer.apple.com/documentation/webkitjs/devicemotionevent) and [`DeviceOrientationEvent`](https://developer.apple.com/documentation/webkitjs/deviceorientationevent) events.
 - Removed support for the expired Do Not Track standard to prevent potential use as a fingerprinting variable.
 - Updated the link behavior for `"target=_blank"` to include `rel="noopener" implicitly`.
@@ -62,7 +62,7 @@ New features of Safari 12.1 include:
 - Added support for granular errors.
 - Added support in Wallet & Apple Pay preferences for using the default contact information for the shipping address, email, and phone. On iOS, set preferences in the Transaction Defaults category in Settings > Wallet & Apple Pay. On Mac, set preferences in System Preferences > Wallet & Apple Pay > Contacts and Shipping.
 - Added support for the default addresses and contacts configured in the Contacts and Shipping in the Wallet system preferences on iOS and macOS.
-- Added support for special fields for Japan including `phoneticName`, [`subLocality`](https://developer.apple.com/documentation/ApplePayontheWeb/ApplePayPaymentContact/subLocality), and [`subAdministrativeArea`](https://developer.apple.com/documentation/ApplePayontheWeb/ApplePayPaymentContact/subAdministrativeArea).
+- Added support for special fields for Japan including `phoneticName`, [`subLocality`](https://developer.apple.com/documentation/applepayontheweb/applepaypaymentcontact/sublocality), and [`subAdministrativeArea`](https://developer.apple.com/documentation/applepayontheweb/applepaypaymentcontact/subadministrativearea).
 
 ##### Css and Text
 
@@ -83,13 +83,13 @@ New features of Safari 12.1 include:
 
 ###### New Features
 
-- Added [`getAllWindows(completionHandler:)`](https://developer.apple.com/documentation/SafariServices/SFSafariApplication/getAllWindows(completionHandler:)) and [`getAllTabs(completionHandler:)`](https://developer.apple.com/documentation/SafariServices/SFSafariWindow/getAllTabs(completionHandler:)) for iterating over all open windows and tabs.
-- Added [`getContainingTab(completionHandler:)`](https://developer.apple.com/documentation/SafariServices/SFSafariPage/getContainingTab(completionHandler:)) and [`getContainingWindow(completionHandler:)`](https://developer.apple.com/documentation/SafariServices/SFSafariTab/getContainingWindow(completionHandler:)) access to the containing tab and window objects.
-- Added a `close` method to [`SFSafariWindow`](https://developer.apple.com/documentation/SafariServices/SFSafariWindow) and [`SFSafariTab`](https://developer.apple.com/documentation/SafariServices/SFSafariTab) for closing windows and tabs.
-- Added [`navigate(to:)`](https://developer.apple.com/documentation/SafariServices/SFSafariTab/navigate(to:)) for changing the URL of a tab.
-- Added [`getScreenshotOfVisibleArea(completionHandler:)`](https://developer.apple.com/documentation/SafariServices/SFSafariPage/getScreenshotOfVisibleArea(completionHandler:)) for taking a screenshot of the visible contents of a page.
-- Added [`showPopover()`](https://developer.apple.com/documentation/SafariServices/SFSafariToolbarItem/showPopover()) and [`dismissPopover()`](https://developer.apple.com/documentation/SafariServices/SFSafariExtensionViewController/dismissPopover()) for showing and dismissing extension popovers.
-- Added [`getBaseURI(completionHandler:)`](https://developer.apple.com/documentation/SafariServices/SFSafariExtension/getBaseURI(completionHandler:)) for retrieving the base URI in the app extension process.
+- Added [`getAllWindows(completionHandler:)`](https://developer.apple.com/documentation/safariservices/sfsafariapplication/getallwindows(completionhandler:)) and [`getAllTabs(completionHandler:)`](https://developer.apple.com/documentation/safariservices/sfsafariwindow/getalltabs(completionhandler:)) for iterating over all open windows and tabs.
+- Added [`getContainingTab(completionHandler:)`](https://developer.apple.com/documentation/safariservices/sfsafaripage/getcontainingtab(completionhandler:)) and [`getContainingWindow(completionHandler:)`](https://developer.apple.com/documentation/safariservices/sfsafaritab/getcontainingwindow(completionhandler:)) access to the containing tab and window objects.
+- Added a `close` method to [`SFSafariWindow`](https://developer.apple.com/documentation/safariservices/sfsafariwindow) and [`SFSafariTab`](https://developer.apple.com/documentation/safariservices/sfsafaritab) for closing windows and tabs.
+- Added [`navigate(to:)`](https://developer.apple.com/documentation/safariservices/sfsafaritab/navigate(to:)) for changing the URL of a tab.
+- Added [`getScreenshotOfVisibleArea(completionHandler:)`](https://developer.apple.com/documentation/safariservices/sfsafaripage/getscreenshotofvisiblearea(completionhandler:)) for taking a screenshot of the visible contents of a page.
+- Added [`showPopover()`](https://developer.apple.com/documentation/safariservices/sfsafaritoolbaritem/showpopover()) and [`dismissPopover()`](https://developer.apple.com/documentation/safariservices/sfsafariextensionviewcontroller/dismisspopover()) for showing and dismissing extension popovers.
+- Added [`getBaseURI(completionHandler:)`](https://developer.apple.com/documentation/safariservices/sfsafariextension/getbaseuri(completionhandler:)) for retrieving the base URI in the app extension process.
 - Improved support for navigating backwards and forwards.
 
 ##### Web Inspector and Tools

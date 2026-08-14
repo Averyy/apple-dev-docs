@@ -19,7 +19,7 @@ class let touchBarRewindTemplateName: String
 
 #### Discussion
 
-![Template image for rewind](https://docs-assets.developer.apple.com/published/ee1ca7c1f6002423953502318a43e82c/media-2793523%402x.png)
+![Template image for rewind](/images/com.apple.appkit/media-2793523@2x.png)
 
 Touch Bar template images are exclusively for use in [`NSTouchBarItem`](nstouchbaritem.md) objects and not in onscreen windows.
 

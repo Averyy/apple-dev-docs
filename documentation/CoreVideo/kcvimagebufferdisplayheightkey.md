@@ -22,7 +22,7 @@ let kCVImageBufferDisplayHeightKey: CFString
 
 #### Discussion
 
-The display height value is of type [`CFNumber`](https://developer.apple.com/documentation/CoreFoundation/CFNumber).
+The display height value is of type [`CFNumber`](https://developer.apple.com/documentation/corefoundation/cfnumber).
 
 ## See Also
 

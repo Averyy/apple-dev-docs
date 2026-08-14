@@ -27,7 +27,7 @@ Implement this method if you want to create the texture yourself or use framebuf
 - `cgl_ctx`: The CGL context to render to.
 - `format`: A string that represents the pixel format of the texture.
 - `bounds`: The bounds of the subregion of the image.
-- `flipped`: Set to [`true`](https://developer.apple.com/documentation/Swift/true) on output if the contents of the returned texture are vertically flipped.
+- `flipped`: Set to [`true`](https://developer.apple.com/documentation/swift/true) on output if the contents of the returned texture are vertically flipped.
 
 ## See Also
 

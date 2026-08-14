@@ -16,7 +16,7 @@ string JWSTransaction
 
 ##### Description
 
-This `JWSTransaction` object is identical to the one used in the App Store Server API and by App Store Server Notifications. For details, see [`JWSTransaction`](https://developer.apple.com/documentation/AppStoreServerAPI/JWSTransaction).
+This `JWSTransaction` object is identical to the one used in the App Store Server API and by App Store Server Notifications. For details, see [`JWSTransaction`](https://developer.apple.com/documentation/appstoreserverapi/jwstransaction).
 
 ## See Also
 

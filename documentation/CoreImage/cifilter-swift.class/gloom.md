@@ -34,8 +34,8 @@ This method applies the gloom filter to an image. The effect reduces the highlig
 The gloom filter uses the following properties:
 
 - **`inputImage`**: An image with the type [`CIImage`](ciimage.md).
-- **radius**: A `float` representing the area of effect as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
-- **intensity**: A `float` representing the desired strength of the effect as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+- **radius**: A `float` representing the area of effect as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
+- **intensity**: A `float` representing the desired strength of the effect as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
 
 The following code creates a filter that results in a darker image with a slight blur:
 
@@ -49,7 +49,7 @@ func gloom(inputImage: CIImage) -> CIImage {
 }
 ```
 
-![Two pictures of a pink flower surrounded by foliage. The photo on the left shows a single flower photographed close up, in focus, with good light and no effects. In the photo on the right, the gloom filter is applied, resulting in the foliage in the background becoming darker and the image having a slight blur.](https://docs-assets.developer.apple.com/published/fb89b34e882c8f37021b83d391b4358a/media-3599998%402x.png)
+![Two pictures of a pink flower surrounded by foliage. The photo on the left shows a single flower photographed close up, in focus, with good light and no effects. In the photo on the right, the gloom filter is applied, resulting in the foliage in the background becoming darker and the image having a slight blur.](/images/com.apple.coreimage/media-3599998@2x.png)
 
 ## See Also
 

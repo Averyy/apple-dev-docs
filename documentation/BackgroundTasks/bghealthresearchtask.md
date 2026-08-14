@@ -26,16 +26,16 @@ class BGHealthResearchTask
 ### Inherits From
 - [BGProcessingTask](bgprocessingtask.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 
-- [Using background tasks to update your app](../UIKit/using-background-tasks-to-update-your-app.md)
+- [Using background tasks to update your app](../uikit/using-background-tasks-to-update-your-app.md)
   Configure your app to perform tasks in the background to make efficient use of processing time and power.
 - [Refreshing and Maintaining Your App Using Background Tasks](refreshing-and-maintaining-your-app-using-background-tasks.md)
   Use scheduled background tasks for refreshing your app content and for performing maintenance.

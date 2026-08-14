@@ -20,13 +20,13 @@ The next document URL object in the index.
 
 #### Discussion
 
-This function returns `NULL` when there are no more document URL objects (of type [`SKDocument`](skdocument.md)) in the index. When finished iterating, your application must call [`CFRelease`](https://developer.apple.com/documentation/corefoundation/1521153-cfrelease) on all retrieved document URL objects that are non-`NULL`.
+This function returns `NULL` when there are no more document URL objects (of type [`SKDocument`](skdocument.md)) in the index. When finished iterating, your application must call [`CFRelease`](https://developer.apple.com/documentation/corefoundation/cfrelease) on all retrieved document URL objects that are non-`NULL`.
 
 Search Kit is thread-safe. You can use separate indexing and searching threads. Your application is responsible for ensuring that no more than one process is open at a time for writing to an index.
 
 ## Parameters
 
-- `inIterator`: The index-based document iterator. See   for information on creating an document iterator, and   for more about iterators.
+- `inIterator`: The index-based document iterator. See [`SKIndexDocumentIteratorCreate(_:_:)`](1446189-skindexdocumentiteratorcreate.md) for information on creating an document iterator, and [`SKIndexDocumentIterator`](skindexdocumentiterator.md) for more about iterators.
 
 ## See Also
 

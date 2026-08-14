@@ -8,7 +8,7 @@ Display content in the smaller spaces of the Modular watch face.
 
 Modular small templates display two stacked rows of content, an icon and content, a circular graph, or a single larger item on the Modular watch face.
 
-![Examples of the modular small templates. From left to right they are columns text, stacked text, ring image, stack image, simple text, simple image, and ring text.](https://docs-assets.developer.apple.com/published/ed28a6fa96a62a7e0669047b7217da70/media-2878968%402x.png)
+![Examples of the modular small templates. From left to right they are columns text, stacked text, ring image, stack image, simple text, simple image, and ring text.](/images/com.apple.clockkit/media-2878968@2x.png)
 
 ## Topics
 
@@ -51,7 +51,7 @@ Modular small templates display two stacked rows of content, an icon and content
   An abstract class that defines the base behavior for all templates.
 - [enum CLKComplicationFamily](clkcomplicationfamily.md)
   Constants indicating the template groups.
-- [CLKComplicationSupportedFamilies](../BundleResources/Information-Property-List/CLKComplicationSupportedFamilies.md)
+- [CLKComplicationSupportedFamilies](../bundleresources/information-property-list/clkcomplicationsupportedfamilies.md)
   The complication families for which the app can provide data.
 
 

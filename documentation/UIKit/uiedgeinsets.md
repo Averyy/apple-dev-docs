@@ -42,11 +42,11 @@ See also [`init(top:left:bottom:right:)`](uiedgeinsets/init(top:left:bottom:righ
 - [var top: CGFloat](uiedgeinsets/top.md)
   The top edge inset value.
 ### Managing edge insets
-- [func inset(by: UIEdgeInsets) -> CGRect](../CoreFoundation/CGRect/inset(by:).md)
+- [func inset(by: UIEdgeInsets) -> CGRect](../corefoundation/cgrect/inset(by:).md)
 ### Converting to and from strings
-- [class func string(for: UIEdgeInsets) -> String](../Foundation/NSCoder/string(for:)-26b4z.md)
+- [class func string(for: UIEdgeInsets) -> String](../foundation/nscoder/string(for:)-26b4z.md)
   Returns a string formatted to contain the data from an edge insets structure.
-- [class func uiEdgeInsets(for: String) -> UIEdgeInsets](../Foundation/NSCoder/uiEdgeInsets(for:).md)
+- [class func uiEdgeInsets(for: String) -> UIEdgeInsets](../foundation/nscoder/uiedgeinsets(for:).md)
   Returns a UIKit edge insets structure based on the data in the specified string.
 ### Getting the empty edge insets
 - [static let zero: UIEdgeInsets](uiedgeinsets/zero.md)
@@ -58,14 +58,14 @@ See also [`init(top:left:bottom:right:)`](uiedgeinsets/init(top:left:bottom:righ
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../Swift/BitwiseCopyable.md)
-- [Copyable](../Swift/Copyable.md)
-- [Decodable](../Swift/Decodable.md)
-- [Encodable](../Swift/Encodable.md)
-- [Equatable](../Swift/Equatable.md)
-- [Escapable](../Swift/Escapable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [BitwiseCopyable](../swift/bitwisecopyable.md)
+- [Copyable](../swift/copyable.md)
+- [Decodable](../swift/decodable.md)
+- [Encodable](../swift/encodable.md)
+- [Equatable](../swift/equatable.md)
+- [Escapable](../swift/escapable.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

@@ -343,7 +343,7 @@ Additionally, the consistency report includes a randomly chosen instance of an e
 - **`name_path_depth`**: An integer that’s the item’s path depth.
 - **`name_path_length`**: An integer that’s the length of the item’s path.
 - **`name_unicode_norm`**: A string that indicates how the Unicode name of the item is normalized: if the name has the decomposed canonical form, it’s `D`; it the name has the precomposed canonical form, it’s `C`; if the name has a decomposed compatible form; it’s `KD`; if the name has a precomposed compatible form, it’s `KC`; otherwise, it’s undefined.
-- **`name_uttype`**: A string that’s the item’s [`UTTypeReference`](https://developer.apple.com/documentation/UniformTypeIdentifiers/UTTypeReference).
+- **`name_uttype`**: A string that’s the item’s [`UTTypeReference`](https://developer.apple.com/documentation/uniformtypeidentifiers/uttypereference).
 - **`purge_atime`**: An integer that’s the purgeability access time of the item.
 - **`purge_flags`**: An integer that’s the flags the system uses to mark the item purgeable.
 - **`purge_gencount`**: An integer that’s the item’s generation count for being marked purgeable.
@@ -388,10 +388,10 @@ Additionally, the consistency report includes a randomly chosen instance of an e
 
 The bits in the `name_characters_sets` bitfield are set to `1` when the following conditions are true, with bit `0` being the least significant bit:
 
-- **`0`**: The item’s name contains one or more characters from [`controlCharacters`](https://developer.apple.com/documentation/Foundation/NSCharacterSet/controlCharacters).
-- **`1`**: The item’s name contains one or more characters from [`illegalCharacters`](https://developer.apple.com/documentation/Foundation/NSCharacterSet/illegalCharacters).
-- **`2`**: The item’s name contains one or more characters from [`nonBaseCharacters`](https://developer.apple.com/documentation/Foundation/NSCharacterSet/nonBaseCharacters).
-- **`3`**: The item’s name contains one or more characters from [`symbols`](https://developer.apple.com/documentation/Foundation/NSCharacterSet/symbols).
+- **`0`**: The item’s name contains one or more characters from [`controlCharacters`](https://developer.apple.com/documentation/foundation/nscharacterset/controlcharacters).
+- **`1`**: The item’s name contains one or more characters from [`illegalCharacters`](https://developer.apple.com/documentation/foundation/nscharacterset/illegalcharacters).
+- **`2`**: The item’s name contains one or more characters from [`nonBaseCharacters`](https://developer.apple.com/documentation/foundation/nscharacterset/nonbasecharacters).
+- **`3`**: The item’s name contains one or more characters from [`symbols`](https://developer.apple.com/documentation/foundation/nscharacterset/symbols).
 - **`4`**: The item’s name contains one or more emoji.
 - **`5`**: The item’s name contains one or more characters that are outside the set `NSCharacterSet(range:NSMakeRange(0x0000, 0x024F))`; that is, characters that aren’t in the Base Latin, Latin-1, Extended Latin A or Extended Latin B sets.
 

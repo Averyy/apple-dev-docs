@@ -18,7 +18,7 @@ To play background audio:
 
 First, you must enable the Audio Background Mode capability for your WatchKit extension, as shown in [`Figure 1`](storyboard_support/playing_background_audio#3008217.md).
 
-![A screenshot showing the Audio Background mode in your WatchKit extension’s Capabilities pane.](https://docs-assets.developer.apple.com/published/7d74be7b7c19230d6b5ac07888532928/media-3008217%402x.png)
+![A screenshot showing the Audio Background mode in your WatchKit extension’s Capabilities pane.](/images/com.apple.watchkit/media-3008217@2x.png)
 
 This step sets the [`UIBackgroundModes`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/iPhoneOSKeys.html#//apple_ref/doc/plist/info/UIBackgroundModes) key in your extension’s `Info.plist` file.
 
@@ -26,7 +26,7 @@ This step sets the [`UIBackgroundModes`](https://developer.apple.comhttps://deve
 
 Before you can play audio, you need to set up and activate the audio session.
 
-Start by setting the session’s category to [`playback`](https://developer.apple.com/documentation/AVFAudio/AVAudioSession/Category-swift.struct/playback), and the route policy to [`AVAudioSession.RouteSharingPolicy.longFormAudio`](https://developer.apple.com/documentation/AVFAudio/AVAudioSession/RouteSharingPolicy-swift.enum/longFormAudio).
+Start by setting the session’s category to [`playback`](https://developer.apple.com/documentation/avfaudio/avaudiosession/category-swift.struct/playback), and the route policy to [`AVAudioSession.RouteSharingPolicy.longFormAudio`](https://developer.apple.com/documentation/avfaudio/avaudiosession/routesharingpolicy-swift.enum/longformaudio).
 
 ```swift
 try session.setCategory(.playback,
@@ -35,7 +35,7 @@ try session.setCategory(.playback,
                         options: [])
 ```
 
-Next, activate the session, by calling the [`activate(options:completionHandler:)`](https://developer.apple.com/documentation/AVFAudio/AVAudioSession/activate(options:completionHandler:)) method.
+Next, activate the session, by calling the [`activate(options:completionHandler:)`](https://developer.apple.com/documentation/avfaudio/avaudiosession/activate(options:completionhandler:)) method.
 
 ```swift
 try await session.activate()
@@ -43,13 +43,13 @@ try await session.activate()
 
 This method sets up the audio route asynchronously before activating your session. watchOS requires a Bluetooth audio route for long-form audio. If necessary, the system presents an audio route picker to the user, letting them choose the Bluetooth route (see [`Figure 2`](storyboard_support/playing_background_audio#3016837.md)).
 
-![A screenshot of the audio route picker, showing two different Bluetooth headphones.](https://docs-assets.developer.apple.com/published/4624fc8a1f4add47a3a8bb5a395d48a8/media-3016837%402x.png)
+![A screenshot of the audio route picker, showing two different Bluetooth headphones.](/images/com.apple.watchkit/media-3016837@2x.png)
 
 In general, if the user has previously selected a Bluetooth route or if AirPods or other W1-equipped Bluetooth headphones are nearby, the system picks the audio route automatically without displaying a picker view to the user. If no applicable Bluetooth route is selected (either automatically or by the user), the system passes an error to the completion handler.
 
 ##### Start Playing
 
-The [`activate(options:completionHandler:)`](https://developer.apple.com/documentation/AVFAudio/AVAudioSession/activate(options:completionHandler:)) method calls its completion handler as soon as a Bluetooth route is selected or when an error occurs. Check for errors in the completion handler. If no errors occurred, you can begin playing your audio content.
+The [`activate(options:completionHandler:)`](https://developer.apple.com/documentation/avfaudio/avaudiosession/activate(options:completionhandler:)) method calls its completion handler as soon as a Bluetooth route is selected or when an error occurs. Check for errors in the completion handler. If no errors occurred, you can begin playing your audio content.
 
 The code listing below shows all the steps needed to set up the session, activate it, and begin playing.
 
@@ -92,9 +92,9 @@ player.play()
 
 - [Enabling Background Sessions](enabling-background-sessions.md)
   Enable the background mode for audio, location updates, remote notifications, or workouts.
-- [WKBackgroundModes](../BundleResources/Information-Property-List/WKBackgroundModes.md)
+- [WKBackgroundModes](../bundleresources/information-property-list/wkbackgroundmodes.md)
   The services a watchOS app provides that require it to continue running in the background.
-- [UIBackgroundModes](../BundleResources/Information-Property-List/UIBackgroundModes.md)
+- [UIBackgroundModes](../bundleresources/information-property-list/uibackgroundmodes.md)
   Services provided by an app that require it to run in the background.
 
 

@@ -18,7 +18,7 @@ class CLKComplicationTemplateExtraLargeColumnsText
 
 This template belongs to the [`CLKComplicationFamily.extraLarge`](clkcomplicationfamily/extralarge.md) family.
 
-![A diagram showing the layout of the extra large columns text complication. The diagram shows two rows, each containing two columns of text. ](https://docs-assets.developer.apple.com/published/fe44aa1be2cd0afaf9d4787dbfd3020d/media-2919001%402x.png)
+![A diagram showing the layout of the extra large columns text complication. The diagram shows two rows, each containing two columns of text. ](/images/com.apple.clockkit/media-2919001@2x.png)
 
 ## Topics
 
@@ -44,13 +44,13 @@ This template belongs to the [`CLKComplicationFamily.extraLarge`](clkcomplicatio
 ### Inherits From
 - [CLKComplicationTemplate](clkcomplicationtemplate.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCopying](../Foundation/NSCopying.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCopying](../foundation/nscopying.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

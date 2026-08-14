@@ -20,7 +20,7 @@ optional func tabBar(_ tabBar: UITabBar, didEndCustomizing items: [UITabBarItem]
 
 - `tabBar`: The tab bar that is being customized.
 - `items`: The items on the customizing modal view.
-- `changed`: [`true`](https://developer.apple.com/documentation/Swift/true) if the visible set of items on the tab bar changed; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
+- `changed`: [`true`](https://developer.apple.com/documentation/swift/true) if the visible set of items on the tab bar changed; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
 
 ## See Also
 

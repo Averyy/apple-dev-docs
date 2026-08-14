@@ -12,7 +12,7 @@ The source for your pass includes all the information the system needs to show i
 - A `pass.json` file that contains the strings the system displays on the pass and the metadata that defines the pass.
 - Optional localization information.
 
-Create the source in a directory that you use to create the final distributable pass [`Bundle`](https://developer.apple.com/documentation/Foundation/Bundle). For information on building a pass from the source, see [`Building a Pass`](building-a-pass.md).
+Create the source in a directory that you use to create the final distributable pass [`Bundle`](https://developer.apple.com/documentation/foundation/bundle). For information on building a pass from the source, see [`Building a Pass`](building-a-pass.md).
 
 ##### Create the Directory and Add Files for the Pass
 
@@ -22,7 +22,7 @@ Add the `pass.json` file that contains the information and metadata for the pass
 
 The following figure shows the directory structure for a simple pass that’s localized for English and Simplified Chinese:
 
-![A file structure diagram that shows the files and directories for an example pass. At the top is a directory called simple.pass. Inside that directory are the icon and background images files at different resolutions and the pass.json file. There are two localization directories, one called en.lproj for the English localization and one called zh-Hans.lproj for Simplified Chinese. Inside each of the localization folders are the image files for the logo and the pass.strings file.](https://docs-assets.developer.apple.com/published/f17917bd0601d887d0b8d95e47ceafc0/media-3744498%402x.png)
+![A file structure diagram that shows the files and directories for an example pass. At the top is a directory called simple.pass. Inside that directory are the icon and background images files at different resolutions and the pass.json file. There are two localization directories, one called en.lproj for the English localization and one called zh-Hans.lproj for Simplified Chinese. Inside each of the localization folders are the image files for the logo and the pass.strings file.](/images/com.apple.walletpasses/media-3744498@2x.png)
 
 ##### Add the Images for the Pass
 
@@ -37,7 +37,7 @@ Some types of passes include other types of images, such as a background. For mo
 
 Expand your audience by localizing the strings and images of your pass to different languages and regions.
 
-![An annotated graphic that shows the English and Simplified Chinese versions of a pass; each pass shows three differences between the passes: a localized logo, localized primary field strings, and a date displayed in regional format.](https://docs-assets.developer.apple.com/published/f60886fb46e4d824d9bc26ae68af3b4b/media-3737832%402x.png)
+![An annotated graphic that shows the English and Simplified Chinese versions of a pass; each pass shows three differences between the passes: a localized logo, localized primary field strings, and a date displayed in regional format.](/images/com.apple.walletpasses/media-3737832@2x.png)
 
 Add a directory at the top-level source directory of each pass for each localization. The name of the directory identifies the language and an optional region:
 
@@ -65,7 +65,7 @@ When a user opens a pass, the system localizes displayed strings in two differen
 
 The system always displays localized versions of these values, even when your pass doesn’t contain localization folders for the language. For example, the figure below shows a pass that contains localizations for English and Simplified Chinese displayed on a device set to the Arabic language. The system only localizes the date:
 
-![An annotated graphic of the pass that shows the date in Arabic script and all the other strings in English.](https://docs-assets.developer.apple.com/published/59faeede36e42808d8834d8d4e001247/media-3737827%402x.png)
+![An annotated graphic of the pass that shows the date in Arabic script and all the other strings in English.](/images/com.apple.walletpasses/media-3737827@2x.png)
 
 The system localizes other strings on your pass using a *strings file* which contains a list of keys and associated localized strings. Add localized strings to your pass in three steps:
 

@@ -24,8 +24,8 @@ var dataByGridCleanliness: ElectricityInsightRecord<Measure>.GridCleanliness?
 
 This property returns electricity usage data organized by how environmentally friendly the production of the energy is. The electricity usage data refers to either energy consumption or generation measurements, or amounts of time that an electrical device is operational and consuming energy. The type of the returned value depends on the insight record’s generic type parameter:
 
-- [`ElectricityInsightRecord`](electricityinsightrecord.md)<[`Measurement`](https://developer.apple.com/documentation/Foundation/Measurement)<[`UnitEnergy`](https://developer.apple.com/documentation/Foundation/UnitEnergy)>> instances return [`Measurement`](https://developer.apple.com/documentation/Foundation/Measurement)<[`UnitEnergy`](https://developer.apple.com/documentation/Foundation/UnitEnergy)> for this property.
-- [`ElectricityInsightRecord`](electricityinsightrecord.md)<[`Duration`](https://developer.apple.com/documentation/Swift/Duration)> instances return [`Duration`](https://developer.apple.com/documentation/Swift/Duration) for this property.
+- [`ElectricityInsightRecord`](electricityinsightrecord.md)<[`Measurement`](https://developer.apple.com/documentation/foundation/measurement)<[`UnitEnergy`](https://developer.apple.com/documentation/foundation/unitenergy)>> instances return [`Measurement`](https://developer.apple.com/documentation/foundation/measurement)<[`UnitEnergy`](https://developer.apple.com/documentation/foundation/unitenergy)> for this property.
+- [`ElectricityInsightRecord`](electricityinsightrecord.md)<[`Duration`](https://developer.apple.com/documentation/swift/duration)> instances return [`Duration`](https://developer.apple.com/documentation/swift/duration) for this property.
 
 ## See Also
 

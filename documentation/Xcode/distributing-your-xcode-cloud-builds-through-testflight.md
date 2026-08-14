@@ -22,7 +22,7 @@ If an app record exists in your account that matches your bundle identifier, Xco
 
 If the Create App sheet appears, verify that the team, app name, and bundle identifier are correct. If an error message appears because another app already uses your app name, enter a new app name in the Name text field. Change any other information in the sheet if necessary and click Create.
 
-![A screenshot of the Create App sheet showing the app record details including the app name and bundle ID with the Create button below.](https://docs-assets.developer.apple.com/published/cece056eeb1aa65b5d68538e7a3865ac/xcode-cloud-create-app-record%402x.png)
+![A screenshot of the Create App sheet showing the app record details including the app name and bundle ID with the Create button below.](/images/com.apple.Xcode/xcode-cloud-create-app-record@2x.png)
 
 If the Confirm Existing App sheet appears instead, verify that the app name and bundle identifier are correct and click Next.
 
@@ -37,7 +37,7 @@ Then, start a build of your app or framework with Xcode Cloud.
 1. In the next sheet, confirm which branch Xcode Cloud uses to build your product.
 2. Click Start Build.
 
-![A screenshot of the Set Up for Distribution sheet showing the pop-up menu that you choose a branch in your repository from and a Start Build button below.](https://docs-assets.developer.apple.com/published/0dd7f43e2da5a95a8732899ed829532e/xcode-cloud-start-build%402x.png)
+![A screenshot of the Set Up for Distribution sheet showing the pop-up menu that you choose a branch in your repository from and a Start Build button below.](/images/com.apple.Xcode/xcode-cloud-start-build@2x.png)
 
 Xcode Cloud archives the build and uploads it to App Store Connect for you.
 

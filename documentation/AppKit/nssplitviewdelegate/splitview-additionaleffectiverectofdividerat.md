@@ -17,7 +17,7 @@ optional func splitView(_ splitView: NSSplitView, additionalEffectiveRectOfDivid
 
 #### Return Value
 
-An additional rectangle, in the coordinate system that `splitView` defines, where mouse clicks can initiate divider dragging. Returning [`NSZeroRect`](https://developer.apple.com/documentation/Foundation/NSZeroRect) indicates no additional dragging rectangle is necessary.
+An additional rectangle, in the coordinate system that `splitView` defines, where mouse clicks can initiate divider dragging. Returning [`NSZeroRect`](https://developer.apple.com/documentation/foundation/nszerorect) indicates no additional dragging rectangle is necessary.
 
 #### Discussion
 

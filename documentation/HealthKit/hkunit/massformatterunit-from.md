@@ -21,11 +21,11 @@ class func massFormatterUnit(from unit: HKUnit) -> MassFormatter.Unit
 
 #### Return Value
 
-A mass formatter unit value. For a list of possible mass formatter unit values, see [`MassFormatter.Unit`](https://developer.apple.com/documentation/Foundation/MassFormatter/Unit).
+A mass formatter unit value. For a list of possible mass formatter unit values, see [`MassFormatter.Unit`](https://developer.apple.com/documentation/foundation/massformatter/unit).
 
 ## Parameters
 
-- `unit`: A valid HealthKit unit object. If the unit is not a mass-type unit, this method throws an exception ([`invalidArgumentException`](https://developer.apple.com/documentation/Foundation/NSExceptionName/invalidArgumentException)).
+- `unit`: A valid HealthKit unit object. If the unit is not a mass-type unit, this method throws an exception ([`invalidArgumentException`](https://developer.apple.com/documentation/foundation/nsexceptionname/invalidargumentexception)).
 
 ## See Also
 

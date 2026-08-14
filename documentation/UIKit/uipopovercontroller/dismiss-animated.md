@@ -23,7 +23,7 @@ You can use this method to dismiss the popover programmatically in response to t
 
 ## Parameters
 
-- `animated`: Specify [`true`](https://developer.apple.com/documentation/Swift/true) to animate the dismissal of the popover or [`false`](https://developer.apple.com/documentation/Swift/false) to dismiss it immediately.
+- `animated`: Specify [`true`](https://developer.apple.com/documentation/swift/true) to animate the dismissal of the popover or [`false`](https://developer.apple.com/documentation/swift/false) to dismiss it immediately.
 
 ## See Also
 

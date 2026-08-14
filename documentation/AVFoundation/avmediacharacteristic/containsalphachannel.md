@@ -21,7 +21,7 @@ static let containsAlphaChannel: AVMediaCharacteristic
 
 #### Discussion
 
-To determine whether the alpha is straight or pre-multiplied, look for a format description extension with key [`kCMFormatDescriptionExtension_AlphaChannelMode`](https://developer.apple.com/documentation/CoreMedia/kCMFormatDescriptionExtension_AlphaChannelMode).
+To determine whether the alpha is straight or pre-multiplied, look for a format description extension with key [`kCMFormatDescriptionExtension_AlphaChannelMode`](https://developer.apple.com/documentation/coremedia/kcmformatdescriptionextension_alphachannelmode).
 
 ## See Also
 

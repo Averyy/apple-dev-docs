@@ -27,16 +27,16 @@ class func requestAccess(for mediaType: AVMediaType) async -> Bool
 
 Capturing media requires explicit permission from the user. An app’s default authorization status is [`AVAuthorizationStatus.notDetermined`](avauthorizationstatus/notdetermined.md), which means the user hasn’t yet granted it permission to capture media. The first time you create an [`AVCaptureDeviceInput`](avcapturedeviceinput.md) object for a media type that requires permission, the system automatically displays an alert to request recording permission. Alternatively, call this method to prompt the user at a time of your choosing. The system saves the user’s selection so that it doesn’t have to prompt the user again. A user can change their authorization status in the Settings app.
 
-> ❗ **Important**:  Your app must provide an explanation for its use of capture devices using the [`NSCameraUsageDescription`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSCameraUsageDescription) and [`NSMicrophoneUsageDescription`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSMicrophoneUsageDescription) Info.plist keys. The system presents the strings you set for these keys when prompting the user for permission, and thereafter in the Settings app. Calling this method or attempting to start a capture session without a usage description raises an exception.
+> ❗ **Important**:  Your app must provide an explanation for its use of capture devices using the [`NSCameraUsageDescription`](https://developer.apple.com/documentation/bundleresources/information-property-list/nscamerausagedescription) and [`NSMicrophoneUsageDescription`](https://developer.apple.com/documentation/bundleresources/information-property-list/nsmicrophoneusagedescription) Info.plist keys. The system presents the strings you set for these keys when prompting the user for permission, and thereafter in the Settings app. Calling this method or attempting to start a capture session without a usage description raises an exception.
 
 Calling this method doesn’t block the thread while the system is prompting the user for access. However, until the grants permission, the system only vends black video frames and silent audio samples.
 
-> **Note**:  Calling this method with a media type of [`audio`](avmediatype/audio.md) is equivalent to calling the [`requestRecordPermission(_:)`](https://developer.apple.com/documentation/AVFAudio/AVAudioSession/requestRecordPermission(_:)) method on [`AVAudioSession`](https://developer.apple.com/documentation/AVFAudio/AVAudioSession).
+> **Note**:  Calling this method with a media type of [`audio`](avmediatype/audio.md) is equivalent to calling the [`requestRecordPermission(_:)`](https://developer.apple.com/documentation/avfaudio/avaudiosession/requestrecordpermission(_:)) method on [`AVAudioSession`](https://developer.apple.com/documentation/avfaudio/avaudiosession).
 
 ## Parameters
 
 - `mediaType`: A media type for which to check the authorization status. The supported media types are [`video`](avmediatype/video.md) and [`audio`](avmediatype/audio.md).
-- `handler`: A callback the system invokes with a Boolean value that indicates whether the user granted or denied access to your app. Return control to the main queue or [`MainActor`](https://developer.apple.com/documentation/Swift/MainActor) before performing user interface updates.
+- `handler`: A callback the system invokes with a Boolean value that indicates whether the user granted or denied access to your app. Return control to the main queue or [`MainActor`](https://developer.apple.com/documentation/swift/mainactor) before performing user interface updates.
 
 ## See Also
 

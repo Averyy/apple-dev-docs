@@ -17,7 +17,7 @@ Informs the view that the user has moved the mouse with the left button pressed.
 
 #### Discussion
 
-The view handles the event instead of passing it to the next responder. See [`NSResponder`](https://developer.apple.com/documentation/AppKit/NSResponder) for more information about the responder chain.
+The view handles the event instead of passing it to the next responder. See [`NSResponder`](https://developer.apple.com/documentation/appkit/nsresponder) for more information about the responder chain.
 
 ## Parameters
 

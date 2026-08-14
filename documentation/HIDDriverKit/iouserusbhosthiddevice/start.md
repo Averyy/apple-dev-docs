@@ -17,7 +17,7 @@ virtual kern_return_t Start(IOService *provider);
 
 #### Return Value
 
-[`kIOReturnSuccess`](https://developer.apple.com/documentation/DriverKit/kIOReturnSuccess) on success, or another value if an error occurs. See [`Error Codes`](https://developer.apple.com/documentation/DriverKit/error-codes).
+[`kIOReturnSuccess`](https://developer.apple.com/documentation/driverkit/kioreturnsuccess) on success, or another value if an error occurs. See [`Error Codes`](https://developer.apple.com/documentation/driverkit/error-codes).
 
 #### Discussion
 
@@ -27,7 +27,7 @@ Don’t override this method directly. Instead, implement your custom initializa
 
 ## Parameters
 
-- `provider`: The provider object that matches the current service. This method requires that the provider be an [`IOUSBHostInterface`](https://developer.apple.com/documentation/USBDriverKit/IOUSBHostInterface) object, and returns an error if it isn’t. The system retains this object for the duration of the `Start` method. The system continues to retain the object if your service starts successfully, releasing it only after calling your service’s [`Stop`](iouserhideventservice/stop.md) method.
+- `provider`: The provider object that matches the current service. This method requires that the provider be an [`IOUSBHostInterface`](https://developer.apple.com/documentation/usbdriverkit/iousbhostinterface) object, and returns an error if it isn’t. The system retains this object for the duration of the `Start` method. The system continues to retain the object if your service starts successfully, releasing it only after calling your service’s [`Stop`](iouserhideventservice/stop.md) method.
 
 ## See Also
 

@@ -16,12 +16,12 @@ init?(frame: NSRect, isPreview: Bool)
 
 #### Discussion
 
-The screen saver application installs the new view object into the view hierarchy of an [`NSWindow`](https://developer.apple.com/documentation/AppKit/NSWindow) before the animation begins. This method is the designated initializer for the [`ScreenSaverView`](screensaverview.md) class. Returns `self`.
+The screen saver application installs the new view object into the view hierarchy of an [`NSWindow`](https://developer.apple.com/documentation/appkit/nswindow) before the animation begins. This method is the designated initializer for the [`ScreenSaverView`](screensaverview.md) class. Returns `self`.
 
 ## Parameters
 
 - `frame`: The frame rectangle for the view.
-- `isPreview`: [`true`](https://developer.apple.com/documentation/Swift/true) if this view provides a preview for system settings, or [`false`](https://developer.apple.com/documentation/Swift/false) if the system fills the screen with your view’s contents.
+- `isPreview`: [`true`](https://developer.apple.com/documentation/swift/true) if this view provides a preview for system settings, or [`false`](https://developer.apple.com/documentation/swift/false) if the system fills the screen with your view’s contents.
 
 
 ---

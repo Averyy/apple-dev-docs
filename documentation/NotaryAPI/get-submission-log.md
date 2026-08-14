@@ -16,7 +16,7 @@ Fetch details about a single completed notarization.
 
 Use this endpoint to get a URL that you can download a log file from that enumerates any issues found by the notary service. The URL that you receive is temporary, so be sure to use it to immediately fetch the log. If you need the log again in the future, ask for the URL again.
 
-The log file that you download contains JSON-formatted data, and might include both errors and warnings. For information about how to deal with common notarization problems, see [`Resolving common notarization issues`](https://developer.apple.com/documentation/Security/resolving-common-notarization-issues).
+The log file that you download contains JSON-formatted data, and might include both errors and warnings. For information about how to deal with common notarization problems, see [`Resolving common notarization issues`](https://developer.apple.com/documentation/security/resolving-common-notarization-issues).
 
 ##### Example
 

@@ -38,7 +38,7 @@ Compositor Services provides a view for each distinct render viewpoint. For exam
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../Swift/BitwiseCopyable.md)
+- [BitwiseCopyable](../swift/bitwisecopyable.md)
 
 ## See Also
 

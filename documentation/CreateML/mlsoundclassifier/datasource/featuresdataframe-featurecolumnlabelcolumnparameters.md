@@ -20,7 +20,7 @@ case featuresDataFrame(DataFrame, featureColumn: String = __Defaults.featureColu
 
 #### Discussion
 
-Use [`extractFeatures(trainingData:parameters:sessionParameters:)`](mlsoundclassifier/extractfeatures(trainingdata:parameters:sessionparameters:).md) to create a [`DataFrame`](https://developer.apple.com/documentation/TabularData/DataFrame) of audio features.
+Use [`extractFeatures(trainingData:parameters:sessionParameters:)`](mlsoundclassifier/extractfeatures(trainingdata:parameters:sessionparameters:).md) to create a [`DataFrame`](https://developer.apple.com/documentation/tabulardata/dataframe) of audio features.
 
 ## Parameters
 

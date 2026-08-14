@@ -20,7 +20,7 @@ A Boolean value that indicates whether your app can include a link that directs 
 
 #### Discussion
 
-The [`com.apple.developer.storekit.external-purchase-link`](entitlements/com.apple.developer.storekit.external-purchase-link.md) entitlement enables qualifying apps to include a link that directs people using the app to a website to make an external purchase. For more information, see [`External Purchase`](https://developer.apple.com/documentation/StoreKit/external-purchase).
+The [`com.apple.developer.storekit.external-purchase-link`](entitlements/com.apple.developer.storekit.external-purchase-link.md) entitlement enables qualifying apps to include a link that directs people using the app to a website to make an external purchase. For more information, see [`External Purchase`](https://developer.apple.com/documentation/storekit/external-purchase).
 
 If your account receives this entitlement, which is also known as the StoreKit External Purchase Link entitlement, you can add it to your app by opening the project’s `.entitlements` file in Xcode. Then add the following key and set the corresponding value to `true`:
 

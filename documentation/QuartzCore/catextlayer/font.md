@@ -21,7 +21,7 @@ var font: CFTypeRef? { get set }
 
 #### Discussion
 
-May be either a [`CTFont`](https://developer.apple.com/documentation/CoreText/CTFont), a [`CGFont`](https://developer.apple.com/documentation/CoreGraphics/CGFont), an instance of `NSFont` (macOS only), or a string naming the font. In iOS, you cannot assign a [`UIFont`](https://developer.apple.com/documentation/UIKit/UIFont) object to this property. Defaults to Helvetica.
+May be either a [`CTFont`](https://developer.apple.com/documentation/coretext/ctfont), a [`CGFont`](https://developer.apple.com/documentation/coregraphics/cgfont), an instance of `NSFont` (macOS only), or a string naming the font. In iOS, you cannot assign a [`UIFont`](https://developer.apple.com/documentation/uikit/uifont) object to this property. Defaults to Helvetica.
 
 The `font` property is only used when the [`string`](catextlayer/string.md) property is not an `NSAttributedString`.
 

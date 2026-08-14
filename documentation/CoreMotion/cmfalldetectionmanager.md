@@ -18,11 +18,11 @@ class CMFallDetectionManager
 
 In Series 4 and later, Apple Watch can detect when a wearer falls, and contact emergency services if necessary. Using the `CMFallDetectionManager`, your app can request the user’s authorization, and set up a delegate to receive notifications about these *fall detection events*. For more information, see [`Use fall detection with Apple Watch`](https://developer.apple.comhttps://support.apple.com/en-us/HT208944).
 
-> ❗ **Important**:  To use this API, you must include the [`NSFallDetectionUsageDescription`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSFallDetectionUsageDescription) key in your app’s `Info.plist` file and provide a usage description string for the key. The description appears in the prompt that the user receives when the system asks to access fall detection data for your app. If you don’t include a usage description string, your app crashes when you call this API.
+> ❗ **Important**:  To use this API, you must include the [`NSFallDetectionUsageDescription`](https://developer.apple.com/documentation/bundleresources/information-property-list/nsfalldetectionusagedescription) key in your app’s `Info.plist` file and provide a usage description string for the key. The description appears in the prompt that the user receives when the system asks to access fall detection data for your app. If you don’t include a usage description string, your app crashes when you call this API.
 
 `CMFallDetectionManager` requires an entitlement from Apple. To apply for the entitlement, see [`Fall Detection Entitlement Request`](https://developer.apple.comhttps://developer.apple.com/contact/request/fall-detection-api). This entitlement allows the app to run in the background without requiring any additional capabilities. However, you can add capabilities for other background modes, as needed by your app.
 
-There are two approaches to detecting falls in your app. You can either query for [`numberOfTimesFallen`](https://developer.apple.com/documentation/HealthKit/HKQuantityTypeIdentifier/numberOfTimesFallen) samples in HealthKit, or you can use Core Motion’s `CMFallDetectionManager`.
+There are two approaches to detecting falls in your app. You can either query for [`numberOfTimesFallen`](https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier/numberoftimesfallen) samples in HealthKit, or you can use Core Motion’s `CMFallDetectionManager`.
 
 ##### Detect and Respond to Falls
 
@@ -61,7 +61,7 @@ if CMFallDetectionManager.isAvailable  {
 }
 ```
 
-Set the delegate as early as possible, ideally in your extension delegate’s [`applicationDidFinishLaunching()`](https://developer.apple.com/documentation/WatchKit/WKExtensionDelegate/applicationDidFinishLaunching()) method. The system may not instantiate your app’s user interface when launching your app in the background, so you can’t set the delegate from your user interface code, such as when an interface controller activates, or in response to a change in SwiftUI’s [`ScenePhase`](https://developer.apple.com/documentation/SwiftUI/ScenePhase) state.
+Set the delegate as early as possible, ideally in your extension delegate’s [`applicationDidFinishLaunching()`](https://developer.apple.com/documentation/watchkit/wkextensiondelegate/applicationdidfinishlaunching()) method. The system may not instantiate your app’s user interface when launching your app in the background, so you can’t set the delegate from your user interface code, such as when an interface controller activates, or in response to a change in SwiftUI’s [`ScenePhase`](https://developer.apple.com/documentation/swiftui/scenephase) state.
 
 > ❗ **Important**:  Create only a single instance of the detection manager. Store the manager in a variable so you can access it later. Be sure to use a variable that remains in memory throughout your app’s lifetime—for example, add the variable to your extension delegate.
 
@@ -109,14 +109,14 @@ The system also wakes your app in the background to respond to any new fall dete
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 
@@ -124,7 +124,7 @@ The system also wakes your app in the background to respond to any new fall dete
   A delegate that receives information about fall detection events and authorization status changes.
 - [class CMFallDetectionEvent](cmfalldetectionevent.md)
   An object that contains data about a fall detection event.
-- [NSFallDetectionUsageDescription](../BundleResources/Information-Property-List/NSFallDetectionUsageDescription.md)
+- [NSFallDetectionUsageDescription](../bundleresources/information-property-list/nsfalldetectionusagedescription.md)
   A message to the user that explains the app’s request for permission to access fall detection event data.
 
 

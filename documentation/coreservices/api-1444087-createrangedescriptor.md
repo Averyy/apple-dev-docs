@@ -25,10 +25,10 @@ Although the `rangeStart` and `rangeStop` parameters can be any object specifier
 
 ## Parameters
 
-- `rangeStart`: A pointer to an object specifier that identifies the first Apple event object in the range. See  .
-- `rangeStop`: A pointer to an object specifier that identifies the last Apple event object in the range. See  .
-- `disposeInputs`: A Boolean value. Pass ( ) if the function should dispose of the descriptors for the   and   parameters and set them to the null descriptor or ( ) if your application will. A value of   may be more efficient for some applications because it allows them to reuse descriptors. 
-- `theDescriptor`: A pointer to a descriptor. On successful return, the range descriptor created by  . Your application must dispose of this descriptor after it has finished using it. See  .
+- `rangeStart`: A pointer to an object specifier that identifies the first Apple event object in the range. See [`AEDesc`](aedesc.md).
+- `rangeStop`: A pointer to an object specifier that identifies the last Apple event object in the range. See [`AEDesc`](aedesc.md).
+- `disposeInputs`: A Boolean value. Pass (`TRUE`) if the function should dispose of the descriptors for the `rangeStart` and `rangeStop` parameters and set them to the null descriptor or (`FALSE`) if your application will. A value of `FALSE` may be more efficient for some applications because it allows them to reuse descriptors. 
+- `theDescriptor`: A pointer to a descriptor. On successful return, the range descriptor created by `CreateRangeDescriptor`. Your application must dispose of this descriptor after it has finished using it. See [`AEDesc`](aedesc.md).
 
 ## See Also
 

@@ -6,7 +6,7 @@ Adjust your app’s behavior and filter incoming notifications when the current 
 
 #### Overview
 
-![None](https://docs-assets.developer.apple.com/published/5df0da09dac6ff6a8d59c38d2909275b/focus-filters-hero%402x.png)
+![None](/images/com.apple.AppIntents/focus-filters-hero@2x.png)
 
 People use Focus on macOS, iOS, and iPadOS to minimize distractions. For example, someone might use a Work Focus to hide notifications from personal email or message accounts. When someone engages a Focus, the system executes your app’s custom [`SetFocusFilterIntent`](setfocusfilterintent.md). Define a version of this intent to update your app’s configuration and filter incoming notifications.
 

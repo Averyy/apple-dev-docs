@@ -26,16 +26,16 @@ If the transition style is [`UIPageViewController.TransitionStyle.pageCurl`](uip
 
 | Spine location | Double sided | What to pass |
 | --- | --- | --- |
-| [`UIPageViewController.SpineLocation.mid`](uipageviewcontroller/spinelocation-swift.enum/mid.md) | [`true`](https://developer.apple.com/documentation/Swift/true) | Pass the page to be displayed on the left and the page to be displayed on the right. |
-| [`UIPageViewController.SpineLocation.min`](uipageviewcontroller/spinelocation-swift.enum/min.md) or [`UIPageViewController.SpineLocation.max`](uipageviewcontroller/spinelocation-swift.enum/max.md) | [`true`](https://developer.apple.com/documentation/Swift/true) | Pass the front of the page to be displayed and the back of the previously-displayed page. The back is used for the page turning animation. |
-| [`UIPageViewController.SpineLocation.min`](uipageviewcontroller/spinelocation-swift.enum/min.md) or [`UIPageViewController.SpineLocation.max`](uipageviewcontroller/spinelocation-swift.enum/max.md) | [`false`](https://developer.apple.com/documentation/Swift/false) | Pass the front of the page to be displayed. |
+| [`UIPageViewController.SpineLocation.mid`](uipageviewcontroller/spinelocation-swift.enum/mid.md) | [`true`](https://developer.apple.com/documentation/swift/true) | Pass the page to be displayed on the left and the page to be displayed on the right. |
+| [`UIPageViewController.SpineLocation.min`](uipageviewcontroller/spinelocation-swift.enum/min.md) or [`UIPageViewController.SpineLocation.max`](uipageviewcontroller/spinelocation-swift.enum/max.md) | [`true`](https://developer.apple.com/documentation/swift/true) | Pass the front of the page to be displayed and the back of the previously-displayed page. The back is used for the page turning animation. |
+| [`UIPageViewController.SpineLocation.min`](uipageviewcontroller/spinelocation-swift.enum/min.md) or [`UIPageViewController.SpineLocation.max`](uipageviewcontroller/spinelocation-swift.enum/max.md) | [`false`](https://developer.apple.com/documentation/swift/false) | Pass the front of the page to be displayed. |
 
 ## Parameters
 
 - `viewControllers`: The view controller or view controllers to be displayed.
 - `direction`: The navigation direction.
 - `animated`: A Boolean value that indicates whether the transition is to be animated.
-- `completion`: A block to be called when the page-turn animation completes. The block takes the following parameters: - ***finished***: [`true`](https://developer.apple.com/documentation/Swift/true) if the animation finished; [`false`](https://developer.apple.com/documentation/Swift/false) if it was skipped.
+- `completion`: A block to be called when the page-turn animation completes. The block takes the following parameters: - ***finished***: [`true`](https://developer.apple.com/documentation/swift/true) if the animation finished; [`false`](https://developer.apple.com/documentation/swift/false) if it was skipped.
 
 ## See Also
 

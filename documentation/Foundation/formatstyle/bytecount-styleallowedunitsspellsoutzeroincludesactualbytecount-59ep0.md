@@ -26,7 +26,7 @@ A format style for formatting a measurement of data storage, customized with the
 
 #### Discussion
 
-Use this type method when the call point allows the use of [`ByteCountFormatStyle`](bytecountformatstyle.md). You typically do this when calling the [`formatted(_:)`](https://developer.apple.com/documentation/Swift/BinaryInteger/formatted(_:)-4qd73) method of [`BinaryInteger`](https://developer.apple.com/documentation/Swift/BinaryInteger) values that represent byte counts, as seen here:
+Use this type method when the call point allows the use of [`ByteCountFormatStyle`](bytecountformatstyle.md). You typically do this when calling the [`formatted(_:)`](https://developer.apple.com/documentation/swift/binaryinteger/formatted(_:)-4qd73) method of [`BinaryInteger`](https://developer.apple.com/documentation/swift/binaryinteger) values that represent byte counts, as seen here:
 
 ```swift
 let count: Int64 = 1024

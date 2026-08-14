@@ -18,6 +18,13 @@ func AXUIElementCopyAttributeNames(_ element: AXUIElement, _ names: UnsafeMutabl
 
 If unsuccessful, `AXUIElementCopyAttributeNames` may return one of the following error codes, among others:
 
+- **`kAXErrorAttributeUnsupported`**: The specified AXUIElementRef does not support the specified attribute.
+- **`kAXErrorIllegalArgument`**: One or both of the arguments is an illegal value.
+- **`kAXErrorInvalidUIElement`**: The AXUIElementRef is invalid.
+- **`kAXErrorFailure`**: There was a system memory failure.
+- **`kAXErrorCannotComplete`**: The function cannot complete because messaging has failed in some way.
+- **`kAXErrorNotImplemented`**: The process does not fully support the accessibility API.
+
 ## Parameters
 
 - `element`: The AXUIElementRef representing the accessibility object.

@@ -8,13 +8,13 @@ Learn how Safari app extensions extend the web-browsing experience in Safari by 
 
 A Safari app extension can add new functionality to Safari by reading and modifying webpage content. These capabilities enhance the tools you use, the tasks you can accomplish, and the data you can access in your browser. A Safari app extension is uniquely useful because it can communicate with a native app. Sharing data between an app and Safari lets you integrate app content into Safari or send web data back to the app, enabling a unified experience for a web version and a native version of an app.
 
-![A diagram showing Safari app extensions communicating between the containing app and the Safari browser. A box labeled Safari app extension is nested inside a box labeled Containing app. Arrows indicate that the app extension and the containing app pass information to each other through shared resources. Another arrow indicates that the app extension and Safari pass information to each other. ](https://docs-assets.developer.apple.com/published/71d7fb6d3b2fa6b3b63576d00151a2dd/media-2970145%402x.png)
+![A diagram showing Safari app extensions communicating between the containing app and the Safari browser. A box labeled Safari app extension is nested inside a box labeled Containing app. Arrows indicate that the app extension and the containing app pass information to each other through shared resources. Another arrow indicates that the app extension and Safari pass information to each other. ](/images/com.apple.safariservices/media-2970145@2x.png)
 
 > **Note**:  Previously, Safari extensions provided the communication between apps and Safari. To migrate a legacy Safari extension, see [`Converting a legacy Safari extension to a Safari app extension`](converting-a-legacy-safari-extension-to-a-safari-app-extension.md).
 
 Safari app extensions use a combination of JavaScript, CSS, and native code written in Objective-C or Swift. Because you build Safari app extensions on the standard app extension model, you get many native app benefits:
 
-- You bundle Safari app extensions inside your app and distribute them through the App Store. You can distribute a Safari app extension with a Mac app or a [`Mac Catalyst`](https://developer.apple.com/documentation/UIKit/mac-catalyst) app.
+- You bundle Safari app extensions inside your app and distribute them through the App Store. You can distribute a Safari app extension with a Mac app or a [`Mac Catalyst`](https://developer.apple.com/documentation/uikit/mac-catalyst) app.
 - Because you distribute your app and your Safari app extension together, you minimize the chances of installing mismatched versions.
 - Your Safari app extension can securely communicate with your app using shared resources.
 

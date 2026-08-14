@@ -16,23 +16,23 @@ class NSTextStorage
 
 #### Overview
 
-[`NSTextStorage`](nstextstorage.md) is a semi-concrete subclass of [`NSMutableAttributedString`](https://developer.apple.com/documentation/Foundation/NSMutableAttributedString) that adds behavior for managing a set of client [`NSLayoutManager`](nslayoutmanager.md) objects. A text storage object notifies its layout managers of changes to its characters or attributes, which lets the layout managers redisplay the text as needed.
+[`NSTextStorage`](nstextstorage.md) is a semi-concrete subclass of [`NSMutableAttributedString`](https://developer.apple.com/documentation/foundation/nsmutableattributedstring) that adds behavior for managing a set of client [`NSLayoutManager`](nslayoutmanager.md) objects. A text storage object notifies its layout managers of changes to its characters or attributes, which lets the layout managers redisplay the text as needed.
 
 You can access a text storage object from any thread of your app, but your app must guarantee access from only one thread at a time.
 
-In macOS, this class also defines properties for getting and setting scriptable attributes of [`NSTextStorage`](nstextstorage.md) objects. Unless you’re dealing with scriptability, you shouldn’t access these properties directly. In particular, using the [`characters`](nstextstorage/characters.md), [`words`](nstextstorage/words.md), or [`paragraphs`](nstextstorage/paragraphs.md) properties is an inefficient way to manipulate the text storage, since accessing these properties involves the creation of many objects. Instead, use the text access methods defined by [`NSMutableAttributedString`](https://developer.apple.com/documentation/Foundation/NSMutableAttributedString), [`NSAttributedString`](https://developer.apple.com/documentation/Foundation/NSAttributedString), [`NSMutableString`](https://developer.apple.com/documentation/Foundation/NSMutableString), and [`NSString`](https://developer.apple.com/documentation/Foundation/NSString) to perform character-level manipulation.
+In macOS, this class also defines properties for getting and setting scriptable attributes of [`NSTextStorage`](nstextstorage.md) objects. Unless you’re dealing with scriptability, you shouldn’t access these properties directly. In particular, using the [`characters`](nstextstorage/characters.md), [`words`](nstextstorage/words.md), or [`paragraphs`](nstextstorage/paragraphs.md) properties is an inefficient way to manipulate the text storage, since accessing these properties involves the creation of many objects. Instead, use the text access methods defined by [`NSMutableAttributedString`](https://developer.apple.com/documentation/foundation/nsmutableattributedstring), [`NSAttributedString`](https://developer.apple.com/documentation/foundation/nsattributedstring), [`NSMutableString`](https://developer.apple.com/documentation/foundation/nsmutablestring), and [`NSString`](https://developer.apple.com/documentation/foundation/nsstring) to perform character-level manipulation.
 
 ##### Subclassing Notes
 
-The [`NSTextStorage`](nstextstorage.md) class implements change management through the [`beginEditing()`](https://developer.apple.com/documentation/Foundation/NSMutableAttributedString/beginEditing()) and [`endEditing()`](https://developer.apple.com/documentation/Foundation/NSMutableAttributedString/endEditing()) methods, as well as verification of attributes, delegate handling, and layout management notification. The one aspect it doesn’t implement is managing the actual attributed string storage, which subclasses manage by overriding the two [`NSAttributedString`](https://developer.apple.com/documentation/Foundation/NSAttributedString) primitives:
+The [`NSTextStorage`](nstextstorage.md) class implements change management through the [`beginEditing()`](https://developer.apple.com/documentation/foundation/nsmutableattributedstring/beginediting()) and [`endEditing()`](https://developer.apple.com/documentation/foundation/nsmutableattributedstring/endediting()) methods, as well as verification of attributes, delegate handling, and layout management notification. The one aspect it doesn’t implement is managing the actual attributed string storage, which subclasses manage by overriding the two [`NSAttributedString`](https://developer.apple.com/documentation/foundation/nsattributedstring) primitives:
 
-- [`string`](https://developer.apple.com/documentation/Foundation/NSAttributedString/string)
-- [`attributes(at:effectiveRange:)`](https://developer.apple.com/documentation/Foundation/NSAttributedString/attributes(at:effectiveRange:))
+- [`string`](https://developer.apple.com/documentation/foundation/nsattributedstring/string)
+- [`attributes(at:effectiveRange:)`](https://developer.apple.com/documentation/foundation/nsattributedstring/attributes(at:effectiverange:))
 
-Subclasses must also override two [`NSMutableAttributedString`](https://developer.apple.com/documentation/Foundation/NSMutableAttributedString) primitives:
+Subclasses must also override two [`NSMutableAttributedString`](https://developer.apple.com/documentation/foundation/nsmutableattributedstring) primitives:
 
-- [`replaceCharacters(in:with:)`](https://developer.apple.com/documentation/Foundation/NSMutableAttributedString/replaceCharacters(in:with:)-6oq9r)
-- [`setAttributes(_:range:)`](https://developer.apple.com/documentation/Foundation/NSMutableAttributedString/setAttributes(_:range:))
+- [`replaceCharacters(in:with:)`](https://developer.apple.com/documentation/foundation/nsmutableattributedstring/replacecharacters(in:with:)-6oq9r)
+- [`setAttributes(_:range:)`](https://developer.apple.com/documentation/foundation/nsmutableattributedstring/setattributes(_:range:))
 
 These primitives should perform the change, then call [`edited(_:range:changeInLength:)`](nstextstorage/edited(_:range:changeinlength:).md) to let the parent class know there are changes.
 
@@ -99,22 +99,22 @@ These primitives should perform the change, then call [`edited(_:range:changeInL
 ## Relationships
 
 ### Inherits From
-- [NSMutableAttributedString](../Foundation/NSMutableAttributedString.md)
+- [NSMutableAttributedString](../foundation/nsmutableattributedstring.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCoding](../Foundation/NSCoding.md)
-- [NSCopying](../Foundation/NSCopying.md)
-- [NSMutableCopying](../Foundation/NSMutableCopying.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCoding](../foundation/nscoding.md)
+- [NSCopying](../foundation/nscopying.md)
+- [NSMutableCopying](../foundation/nsmutablecopying.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 - [NSPasteboardReading](nspasteboardreading.md)
 - [NSPasteboardWriting](nspasteboardwriting.md)
-- [NSSecureCoding](../Foundation/NSSecureCoding.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

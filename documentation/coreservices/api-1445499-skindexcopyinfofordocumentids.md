@@ -21,10 +21,10 @@ The [`SKIndexCopyInfoForDocumentIDs(_:_:_:_:_:)`](1445499-skindexcopyinfofordocu
 ## Parameters
 
 - `inIndex`: The index containing the document information.
-- `inCount`: The number of document IDs in  .
+- `inCount`: The number of document IDs in `inDocumentIDsArray`.
 - `inDocumentIDsArray`: Points to an array of document IDs representing the documents whose names and parent IDs you want.
-- `outNamesArray`: When finished with the names array, dispose of it by calling   on each array element.
-- `outParentIDsArray`: On input, a pointer to an array for parent document IDs. On output, points to the previously allocated array, which now contains document IDs representing the parents of the documents whose IDs are in  . May be   on input if you don’t want to get the parent document IDs.
+- `outNamesArray`: On input, a pointer to an array for document names. On output, points to the previously allocated array, which now contains the document names corresponding to the document IDs in `inDocumentIDsArray`. May be `NULL` on input if you don’t want to get the document names. When finished with the names array, dispose of it by calling [`CFRelease`](https://developer.apple.com/documentation/corefoundation/cfrelease) on each array element.
+- `outParentIDsArray`: On input, a pointer to an array for parent document IDs. On output, points to the previously allocated array, which now contains document IDs representing the parents of the documents whose IDs are in `inDocumentIDsArray`. May be `NULL` on input if you don’t want to get the parent document IDs.
 
 ## See Also
 

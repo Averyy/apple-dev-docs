@@ -58,7 +58,7 @@ Search Kit further normalizes query strings and indexes by stripping diacritical
 
 Search Kit is thread-safe. You can use separate indexing and searching threads. Your application is responsible for ensuring that no more than one process is open at a time for writing to an index.
 
-When your application no longer needs the search object, dispose of it by calling [`CFRelease`](https://developer.apple.com/documentation/corefoundation/1521153-cfrelease).
+When your application no longer needs the search object, dispose of it by calling [`CFRelease`](https://developer.apple.com/documentation/corefoundation/cfrelease).
 
 ##### 1968657
 
@@ -66,7 +66,7 @@ Search Kit supports logical exclusion. The `NOT` and `!` operators behave as tho
 
 Unary Boolean operators, however, are not currently implemented in Search Kit. A search, for example, for ‘`NOT` blue’, returns zero documents no matter what their content. 
 
-You cannot use [`CFMakeCollectable`](https://developer.apple.com/documentation/corefoundation/1521163-cfmakecollectable) with SKSearch objects. In a garbage-collected environment, you must use [`CFRelease`](https://developer.apple.com/documentation/corefoundation/1521153-cfrelease) to dispose of an SKSearch object.
+You cannot use [`CFMakeCollectable`](https://developer.apple.com/documentation/corefoundation/cfmakecollectable) with SKSearch objects. In a garbage-collected environment, you must use [`CFRelease`](https://developer.apple.com/documentation/corefoundation/cfrelease) to dispose of an SKSearch object.
 
 ##### 1968658
 
@@ -78,7 +78,7 @@ In versions of macOS prior to version 10.4, Search Kit did not perform Unicode n
 
 - `inIndex`: The index to query.
 - `inQuery`: The query string to search for.
-- `inSearchOptions`: The search options. May be  . See the   enumeration for a description of the available options.
+- `inSearchOptions`: The search options. May be `NULL`. See the [`SKSearchOptions`](sksearchoptions.md) enumeration for a description of the available options.
 
 ## See Also
 

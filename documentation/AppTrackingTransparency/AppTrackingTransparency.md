@@ -19,7 +19,7 @@ You must use the AppTrackingTransparency framework if your app collects data abo
 
 To use the AppTrackingTransparency framework:
 
-1. Set up a [`NSUserTrackingUsageDescription`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSUserTrackingUsageDescription) to display a system-permission alert request for your app installed on end-user devices.
+1. Set up a [`NSUserTrackingUsageDescription`](https://developer.apple.com/documentation/bundleresources/information-property-list/nsusertrackingusagedescription) to display a system-permission alert request for your app installed on end-user devices.
 2. Call [`requestTrackingAuthorization(completionHandler:)`](attrackingmanager/requesttrackingauthorization(completionhandler:).md) to present the app-tracking authorization request to the end user.
 3. Use [`trackingAuthorizationStatus`](attrackingmanager/trackingauthorizationstatus.md) to determine the app-tracking permission status. See [`ATTrackingManager.AuthorizationStatus`](attrackingmanager/authorizationstatus.md) for status enums.
 
@@ -28,7 +28,7 @@ For more information about app tracking and privacy, see [`User Privacy and Data
 ## Topics
 
 ### Essentials
-- [NSUserTrackingUsageDescription](../BundleResources/Information-Property-List/NSUserTrackingUsageDescription.md)
+- [NSUserTrackingUsageDescription](../bundleresources/information-property-list/nsusertrackingusagedescription.md)
   A message that informs the user why an app is requesting permission to use data for tracking the user or the device.
 ### Class and Components
 - [class ATTrackingManager](attrackingmanager.md)

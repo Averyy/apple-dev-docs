@@ -29,7 +29,7 @@ This method executes synchronously. By default, the enumeration starts with the 
 - `opts`: The options for the enumeration. For possible values, see [`NSEnumerationOptions`](nsenumerationoptions.md).
 - `block`: A closure or block to execute for each object in the array, taking three arguments: - The object.
 - The index of the object in the array.
-- A reference to a Boolean value, which the closure can set to [`true`](https://developer.apple.com/documentation/Swift/true) in order to stop further enumeration of the array. If a closure stops further enumeration, that closure continues to run until it’s finished. When the [`concurrent`](nsenumerationoptions/concurrent.md) enumeration option is specified, enumeration stops after all of the currently running closures finish.
+- A reference to a Boolean value, which the closure can set to [`true`](https://developer.apple.com/documentation/swift/true) in order to stop further enumeration of the array. If a closure stops further enumeration, that closure continues to run until it’s finished. When the [`concurrent`](nsenumerationoptions/concurrent.md) enumeration option is specified, enumeration stops after all of the currently running closures finish.
 
 ## See Also
 

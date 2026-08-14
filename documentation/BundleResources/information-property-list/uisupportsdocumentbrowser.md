@@ -20,7 +20,7 @@ To allow other apps to open and edit the files stored in your app’s `Documents
 
 ## See Also
 
-- [Setting up a document browser app](../UIKit/setting-up-a-document-browser-app.md)
+- [Setting up a document browser app](../uikit/setting-up-a-document-browser-app.md)
   Add a document browser view controller to your app.
 - [CFBundleDocumentTypes](information-property-list/cfbundledocumenttypes.md)
   The document types supported by the bundle.

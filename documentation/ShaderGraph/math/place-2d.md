@@ -27,7 +27,7 @@ Transforms UV texture coordinates for 2D texture placement.
 
 Use the `Place 2D` node to transform texture coordinates and apply these basic transformations to textures. Below is an example of a simple node graph that uses the `Place 2D` node to transform texture coordinates before passing them to an image node:
 
-![None](https://docs-assets.developer.apple.com/published/9eedcf2c05258008ef6543a7b5d1d075/Place2dGraph.png)
+![None](/images/ShaderGraph-Docs/Place2dGraph.png)
 
 The incoming texture coordinates transform in three ways; they are:
 

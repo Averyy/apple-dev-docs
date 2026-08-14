@@ -44,7 +44,7 @@ final class MLJob<Result>
 ## Relationships
 
 ### Conforms To
-- [Cancellable](../Combine/Cancellable.md)
+- [Cancellable](../combine/cancellable.md)
 
 ## See Also
 

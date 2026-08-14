@@ -24,7 +24,7 @@ Power management informs interested parties that a device is about to change to 
 
 ## Parameters
 
-- `capabilities`: Flags that describe the capability of the device in the new power state (they come from the   field of the new state in the power state array).
+- `capabilities`: Flags that describe the capability of the device in the new power state (they come from the `capabilityFlags` field of the new state in the power state array).
 - `stateNumber`: The number of the state in the state array that the device is switching to.
 - `whatDevice`: A pointer to the driver that is changing. It can be used by a driver that is receiving power state change notifications for multiple devices to distinguish between them.
 

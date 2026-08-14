@@ -22,7 +22,7 @@ An `NSURL` object containing an absolute URL derived from the specified attribut
 
 This method constructs a URL given the string value of an element attribute. Examples include the `href` attribute of a `DOMHTMLAnchorElement` object, or the `src` attribute of a `DOMHTMLImageElement` object. This method only applies to attributes that refer to URLs.
 
-This method is similar to [`init(string:)`](https://developer.apple.com/documentation/Foundation/NSURL/init(string:)) in the `NSURL` class, except that `URLWithAttributeString:` handles relative URLs automatically based on the current document’s location.
+This method is similar to [`init(string:)`](https://developer.apple.com/documentation/foundation/nsurl/init(string:)) in the `NSURL` class, except that `URLWithAttributeString:` handles relative URLs automatically based on the current document’s location.
 
 ## Parameters
 

@@ -25,7 +25,7 @@ Returns the prior purgeable state of the image’s underlying texture.
 
 #### Discussion
 
-This method behaves the same as the [`setPurgeableState(_:)`](https://developer.apple.com/documentation/Metal/MTLResource/setPurgeableState(_:)) method of the [`MTLResource`](https://developer.apple.com/documentation/Metal/MTLResource) class, except that the state might be [`MPSPurgeableState.allocationDeferred`](mpspurgeablestate/allocationdeferred.md), which means there is no underlying texture to mark as volatile or non-volatile. Attempts to set a purgeable state on [`MTLTexture`](https://developer.apple.com/documentation/Metal/MTLTexture) objects that have not yet been allocated will be ignored.
+This method behaves the same as the [`setPurgeableState(_:)`](https://developer.apple.com/documentation/metal/mtlresource/setpurgeablestate(_:)) method of the [`MTLResource`](https://developer.apple.com/documentation/metal/mtlresource) class, except that the state might be [`MPSPurgeableState.allocationDeferred`](mpspurgeablestate/allocationdeferred.md), which means there is no underlying texture to mark as volatile or non-volatile. Attempts to set a purgeable state on [`MTLTexture`](https://developer.apple.com/documentation/metal/mtltexture) objects that have not yet been allocated will be ignored.
 
 ## Parameters
 

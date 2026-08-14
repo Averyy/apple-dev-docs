@@ -37,7 +37,7 @@ This structure is passed as input to the [`AudioCodecGetProperty(_:_:_:_:)`](aud
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../Swift/BitwiseCopyable.md)
+- [BitwiseCopyable](../swift/bitwisecopyable.md)
 
 ## See Also
 

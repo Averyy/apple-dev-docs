@@ -3,7 +3,7 @@
 **Framework**: Address Book  
 **Kind**: var
 
-The associated value is a [`CFNumber`](https://developer.apple.com/documentation/CoreFoundation/CFNumber) of type [`CFNumberType.nsIntegerType`](https://developer.apple.com/documentation/CoreFoundation/CFNumberType/nsIntegerType) whose value is the era for the birthday.
+The associated value is a [`CFNumber`](https://developer.apple.com/documentation/corefoundation/cfnumber) of type [`CFNumberType.nsIntegerType`](https://developer.apple.com/documentation/corefoundation/cfnumbertype/nsintegertype) whose value is the era for the birthday.
 
 **Availability**:
 - iOS 2.0+
@@ -18,7 +18,7 @@ let kABPersonAlternateBirthdayEraKey: CFString!
 
 #### Discussion
 
-Corresponds to [`era`](https://developer.apple.com/documentation/Foundation/NSDateComponents/era).
+Corresponds to [`era`](https://developer.apple.com/documentation/foundation/nsdatecomponents/era).
 
 ## See Also
 
@@ -37,17 +37,17 @@ Corresponds to [`era`](https://developer.apple.com/documentation/Foundation/NSDa
 - [let kABPersonAddressZIPKey: CFString!](kabpersonaddresszipkey.md)
   Zip code.
 - [let kABPersonAlternateBirthdayCalendarIdentifierKey: CFString!](kabpersonalternatebirthdaycalendaridentifierkey.md)
-  The associated value is a string representing the calendar identifier for a [`CFCalendar`](https://developer.apple.com/documentation/CoreFoundation/CFCalendar).
+  The associated value is a string representing the calendar identifier for a [`CFCalendar`](https://developer.apple.com/documentation/corefoundation/cfcalendar).
 - [let kABPersonAlternateBirthdayDayKey: CFString!](kabpersonalternatebirthdaydaykey.md)
-  The associated value is a [`CFNumber`](https://developer.apple.com/documentation/CoreFoundation/CFNumber) of type [`CFNumberType.nsIntegerType`](https://developer.apple.com/documentation/CoreFoundation/CFNumberType/nsIntegerType) whose value is the day for the birthday.
+  The associated value is a [`CFNumber`](https://developer.apple.com/documentation/corefoundation/cfnumber) of type [`CFNumberType.nsIntegerType`](https://developer.apple.com/documentation/corefoundation/cfnumbertype/nsintegertype) whose value is the day for the birthday.
 - [let kABPersonAlternateBirthdayIsLeapMonthKey: CFString!](kabpersonalternatebirthdayisleapmonthkey.md)
-  The associated value is a [`CFNumber`](https://developer.apple.com/documentation/CoreFoundation/CFNumber) of type [`CFNumberType.charType`](https://developer.apple.com/documentation/CoreFoundation/CFNumberType/charType).
+  The associated value is a [`CFNumber`](https://developer.apple.com/documentation/corefoundation/cfnumber) of type [`CFNumberType.charType`](https://developer.apple.com/documentation/corefoundation/cfnumbertype/chartype).
 - [let kABPersonAlternateBirthdayMonthKey: CFString!](kabpersonalternatebirthdaymonthkey.md)
-  The associated value is a [`CFNumber`](https://developer.apple.com/documentation/CoreFoundation/CFNumber) of type [`CFNumberType.nsIntegerType`](https://developer.apple.com/documentation/CoreFoundation/CFNumberType/nsIntegerType) whose value is the month for the birthday.
+  The associated value is a [`CFNumber`](https://developer.apple.com/documentation/corefoundation/cfnumber) of type [`CFNumberType.nsIntegerType`](https://developer.apple.com/documentation/corefoundation/cfnumbertype/nsintegertype) whose value is the month for the birthday.
 - [let kABPersonAlternateBirthdayProperty: ABPropertyID](kabpersonalternatebirthdayproperty.md)
   The associated value is a [`kABDictionaryPropertyType`](kabdictionarypropertytype.md) with keys specified by the other constants listed here.
 - [let kABPersonAlternateBirthdayYearKey: CFString!](kabpersonalternatebirthdayyearkey.md)
-  The associated value is a [`CFNumber`](https://developer.apple.com/documentation/CoreFoundation/CFNumber) of type [`CFNumberType.nsIntegerType`](https://developer.apple.com/documentation/CoreFoundation/CFNumberType/nsIntegerType) whose value is the year for the birthday.
+  The associated value is a [`CFNumber`](https://developer.apple.com/documentation/corefoundation/cfnumber) of type [`CFNumberType.nsIntegerType`](https://developer.apple.com/documentation/corefoundation/cfnumbertype/nsintegertype) whose value is the year for the birthday.
 - [let kABPersonAnniversaryLabel: CFString!](kabpersonanniversarylabel.md)
   Birthdate.
 - [let kABPersonAssistantLabel: CFString!](kabpersonassistantlabel.md)

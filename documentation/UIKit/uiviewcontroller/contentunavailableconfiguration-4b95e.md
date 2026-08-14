@@ -21,7 +21,7 @@ The current content-unavailable configuration of the view controller.
 
 #### Discussion
 
-Use this property to configure a content-unavailable view that the view controller manages. The value of this property is commonly an instance of [`UIContentUnavailableConfiguration`](uicontentunavailableconfiguration-swift.struct.md), but you can use other types of content configuration, including a [`UIHostingConfiguration`](https://developer.apple.com/documentation/SwiftUI/UIHostingConfiguration), to display a SwiftUI view.
+Use this property to configure a content-unavailable view that the view controller manages. The value of this property is commonly an instance of [`UIContentUnavailableConfiguration`](uicontentunavailableconfiguration-swift.struct.md), but you can use other types of content configuration, including a [`UIHostingConfiguration`](https://developer.apple.com/documentation/swiftui/uihostingconfiguration), to display a SwiftUI view.
 
 ## See Also
 

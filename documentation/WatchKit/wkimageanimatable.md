@@ -31,7 +31,7 @@ Existing classes adopt this protocol and you use the methods to control the anim
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 ### Conforming Types
 - [WKInterfaceGroup](wkinterfacegroup.md)
 - [WKInterfaceImage](wkinterfaceimage.md)

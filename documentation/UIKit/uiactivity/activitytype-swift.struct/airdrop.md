@@ -19,7 +19,7 @@ static let airDrop: UIActivity.ActivityType
 
 #### Discussion
 
-When using this service, you can provide [`NSString`](https://developer.apple.com/documentation/Foundation/NSString), [`NSAttributedString`](https://developer.apple.com/documentation/Foundation/NSAttributedString), [`UIImage`](uiimage.md), and [`NSURL`](https://developer.apple.com/documentation/Foundation/NSURL) objects as data for the activity items. You may also provide [`NSArray`](https://developer.apple.com/documentation/Foundation/NSArray) or [`NSDictionary`](https://developer.apple.com/documentation/Foundation/NSDictionary) objects that contain the listed data types.
+When using this service, you can provide [`NSString`](https://developer.apple.com/documentation/foundation/nsstring), [`NSAttributedString`](https://developer.apple.com/documentation/foundation/nsattributedstring), [`UIImage`](uiimage.md), and [`NSURL`](https://developer.apple.com/documentation/foundation/nsurl) objects as data for the activity items. You may also provide [`NSArray`](https://developer.apple.com/documentation/foundation/nsarray) or [`NSDictionary`](https://developer.apple.com/documentation/foundation/nsdictionary) objects that contain the listed data types.
 
 ## See Also
 

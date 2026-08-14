@@ -22,7 +22,7 @@ func CGImageMetadataCreateXMPData(_ metadata: CGImageMetadata, _ options: CFDict
 
 #### Return Value
 
-A [`CFData`](https://developer.apple.com/documentation/CoreFoundation/CFData) object with an XMP representation of the metadata, or `NULL` if an error occurs.
+A [`CFData`](https://developer.apple.com/documentation/corefoundation/cfdata) object with an XMP representation of the metadata, or `NULL` if an error occurs.
 
 #### Discussion
 

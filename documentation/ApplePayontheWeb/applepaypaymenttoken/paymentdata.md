@@ -19,7 +19,7 @@ JSON paymentData;
 
 This data is used by your e-commerce back-end system, which decrypts it and submits it to your payment processor.
 
-For the format of the payment data, see [`Payment token format reference`](https://developer.apple.com/documentation/PassKit/payment-token-format-reference).
+For the format of the payment data, see [`Payment token format reference`](https://developer.apple.com/documentation/passkit/payment-token-format-reference).
 
 ## See Also
 

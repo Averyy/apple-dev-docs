@@ -26,7 +26,7 @@ func saveGameData(_ data: Data, withName name: String) async throws -> GKSavedGa
 
 If the `name` parameter is an existing filename, GameKit overwrites the file with the new game data.
 
-> ❗ **Important**:  You must provide an iCloud container ID in your project to save game data to the player’s iCloud account. Add the [`iCloud Container Identifiers Entitlement`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.icloud-container-identifiers) key to your project containing a unique identifier for your game.
+> ❗ **Important**:  You must provide an iCloud container ID in your project to save game data to the player’s iCloud account. Add the [`iCloud Container Identifiers Entitlement`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.icloud-container-identifiers) key to your project containing a unique identifier for your game.
 
 ## Parameters
 

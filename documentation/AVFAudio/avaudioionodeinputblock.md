@@ -22,7 +22,7 @@ typealias AVAudioIONodeInputBlock = (AVAudioFrameCount) -> UnsafePointer<AudioBu
 
 #### Return Value
 
-An [`AudioBufferList`](https://developer.apple.com/documentation/CoreAudioTypes/AudioBufferList) that contains the data to render, or `nil` if no data is available.
+An [`AudioBufferList`](https://developer.apple.com/documentation/coreaudiotypes/audiobufferlist) that contains the data to render, or `nil` if no data is available.
 
 #### Discussion
 

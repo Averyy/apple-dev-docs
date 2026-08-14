@@ -12,7 +12,7 @@ Xcode simplifies source control management with its built-in support for Git. Yo
 
 For example, you create a branch for feature work, and after it’s approved, merge those changes into the main branch.
 
-![Conceptual illustration that shows a series of commits along a main branch and a feature branch in a project backed by source control.](https://docs-assets.developer.apple.com/published/16afac16c3e3b3947c1f41607c08e378/source-control-management-1%402x.png)
+![Conceptual illustration that shows a series of commits along a main branch and a feature branch in a project backed by source control.](/images/com.apple.Xcode/source-control-management-1@2x.png)
 
 ## Topics
 

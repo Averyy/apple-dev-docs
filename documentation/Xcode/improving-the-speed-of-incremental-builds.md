@@ -16,7 +16,7 @@ Always ensure that your project’s inter-target dependencies and configuration 
 
 Before you perform any build optimizations, always gather timing information to see where optimizations might be most effective. Open your project in Xcode and choose Product > Perform Action > Build With Timing Summary to build your target with detailed timing information. To view the timing information for a specific build, select that build in the Report navigator.
 
-![A screenshot of Xcode build results that include detailed timing information.](https://docs-assets.developer.apple.com/published/dfbcc8f34dce5c30e636d91c50997cef/improving-the-speed-of-incremental-builds-1%402x.png)
+![A screenshot of Xcode build results that include detailed timing information.](/images/com.apple.Xcode/improving-the-speed-of-incremental-builds-1@2x.png)
 
 > **Note**: To generate timing information using the `xcodebuild` command-line tool, pass the `-showBuildTimingSummary` option to the tool.
 
@@ -39,7 +39,7 @@ If you don’t need Xcode to run your scripts every time you build a target, pro
 
 Specify input and output files, along with the script itself, in the Run Script build-phase editor. You may specify input and output files individually or in an Xcode file list — a file with an `.xcfilelist` filename extension that lists the name of each file on a separate line.
 
-![A screenshot of the Run Script build-phase editor in Xcode.](https://docs-assets.developer.apple.com/published/3c4d87fe04d1d987ccd9f8e1fe61543b/improving-the-speed-of-incremental-builds-2%402x.png)
+![A screenshot of the Run Script build-phase editor in Xcode.](/images/com.apple.Xcode/improving-the-speed-of-incremental-builds-2@2x.png)
 
 You must still specify an input and output file to prevent Xcode from running the script every time, even if your script doesn’t actually require those files. For a script that requires no input, provide a file that never changes as the input file. For a script with no outputs, create a static output file from your script so Xcode has something to check.
 
@@ -49,7 +49,7 @@ Module maps improve source compilation times by shortening the time it takes to 
 
 The system frameworks already include module maps, but you must provide module maps for any custom frameworks in your project. To add a module map, enable the `DEFINES_MODULE` build setting for your framework or library. Xcode enables this build setting automatically for new frameworks, but you might need to set it for older projects. When enabled, the compiler produces a module map with the contents of your target’s public header files.
 
-![A screenshot of the DEFINES_MODULE build setting in Xcode.](https://docs-assets.developer.apple.com/published/d3afac2c05ccaed02b9eae7b5d36503b/improving-the-speed-of-incremental-builds-3%402x.png)
+![A screenshot of the DEFINES_MODULE build setting in Xcode.](/images/com.apple.Xcode/improving-the-speed-of-incremental-builds-3@2x.png)
 
 > ❗ **Important**: To obtain the benefit from module maps, always include the framework name in any import statements. If you don’t include the framework name, the compiler can’t determine whether a module map is present. For more information on how to import header files from a module, see [`Include framework names in import statements`](improving-build-efficiency-with-good-coding-practices#Include-framework-names-in-import-statements.md).
 
@@ -66,7 +66,7 @@ Verifying that your targets have accurate dependencies ensures they build correc
 
 When you know a dependency exists between two targets in your Xcode project, create an explicit dependency between them. Xcode creates some dependencies automatically based on how you configure your project. For example, when you embed a new framework inside an existing app, Xcode automatically adds the framework to the app’s list of dependencies. At other times, you specify the dependencies yourself using the Dependencies build phase editor, as shown below. Use the + and - buttons to add or remove dependencies for your target.
 
-![A screenshot of the Dependencies build phase in Xcode.](https://docs-assets.developer.apple.com/published/1702d5e45d4e6a62ea8e324909ef87df/improving-the-speed-of-incremental-builds-4%402x.png)
+![A screenshot of the Dependencies build phase in Xcode.](/images/com.apple.Xcode/improving-the-speed-of-incremental-builds-4@2x.png)
 
 If a target depends on code in a different Xcode project, create a reference to that project by dragging it into the navigator pane of your current project. The presence of the other project in the navigator pane gives Xcode the information it needs to track dependencies on items in the other project. Without this reference, Xcode doesn’t know to build your target when the remote project changes.
 
@@ -76,11 +76,11 @@ Inter-target dependencies require Xcode to build those targets in a specific ord
 
 Consider the following illustration, which shows an XML engine that depends on a monolithic utilities framework. Although the XML engine relies on only a small portion of the framework, Xcode must rebuild the engine when any part of the framework changes. Breaking up the framework into smaller modules and creating more fine-grained dependencies might eliminate some unnecessary rebuilds. In the refactored version, changes to the utilities framework no longer trigger an automatic rebuild of the XML engine.
 
-![An illustration that compares monolithic and refactored modules by showing that XML parsing is now outside the utilities framework in the refactored module.](https://docs-assets.developer.apple.com/published/80621ea35b76167cecccabf9e92ffadd/improving-the-speed-of-incremental-builds-5%402x.png)
+![An illustration that compares monolithic and refactored modules by showing that XML parsing is now outside the utilities framework in the refactored module.](/images/com.apple.Xcode/improving-the-speed-of-incremental-builds-5@2x.png)
 
 When one target depends on many child targets, Xcode cannot start to build the target until it finishes all of the children. Consider a single Tests target that executes automated tests on an app, app extension, and private framework. Splitting up the tests by target allows Xcode to run each suite independently as soon as the corresponding target is ready, which increases parallelization.
 
-![An illustration that changes a single test target dependent on three other targets, into three test targets with each dependent on only one other target. ](https://docs-assets.developer.apple.com/published/1b4d5805094686fd2ec3a8057fd641ed/improving-the-speed-of-incremental-builds-6%402x.png)
+![An illustration that changes a single test target dependent on three other targets, into three test targets with each dependent on only one other target. ](/images/com.apple.Xcode/improving-the-speed-of-incremental-builds-6@2x.png)
 
 You need to decide whether modifications to your project’s targets offer any benefit. Increasing the number of targets can improve parallelization, but it also adds complexity to your project. Always validate any target or dependency changes to ensure your code still builds correctly. In addition, always measure the speed of the resulting builds to verify that the changes lead to tangible improvements.
 

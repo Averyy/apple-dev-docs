@@ -7,7 +7,6 @@ The type of message being composed.
 
 **Availability**:
 - iOS 26.0+
-- iPadOS 26.0+
 
 ## Declaration
 
@@ -23,7 +22,7 @@ var contentType: UTType?
   An enumeration that represents the state of the indicator.
 - [var lastActive: Date?](rcsmessage/composingindicator/lastactive.md)
   The time of last activity.
-- [struct UTType](../UniformTypeIdentifiers/UTType-swift.struct.md)
+- [struct UTType](../uniformtypeidentifiers/uttype-swift.struct.md)
   A structure that represents a type of data to load, send, or receive.
 - [var refreshInterval: Duration?](rcsmessage/composingindicator/refreshinterval.md)
   The time interval after which the receiver can expect an update from the composer.

@@ -8,11 +8,11 @@ Provide immediate access to frequently used commands and controls.
 
 The system might present toolbars above or below your app’s content, depending on the platform and the context.
 
-![None](https://docs-assets.developer.apple.com/published/16bd7e535a587b44ad58a35c066192d9/toolbars-hero%402x.png)
+![None](/images/com.apple.SwiftUI/toolbars-hero@2x.png)
 
 Add items to a toolbar by applying the [`toolbar(content:)`](view/toolbar(content:).md) view modifier to a view in your app. You can also configure the toolbar using view modifiers. For example, you can set the visibility of a toolbar with the [`toolbar(_:for:)`](view/toolbar(_:for:).md) modifier.
 
-For design guidance, see [`Toolbars`](https://developer.apple.com/design/Human-Interface-Guidelines/toolbars) in the Human Interface Guidelines.
+For design guidance, see [`Toolbars`](https://developer.apple.com/design/human-interface-guidelines/toolbars) in the Human Interface Guidelines.
 
 ## Topics
 

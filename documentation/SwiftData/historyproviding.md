@@ -47,7 +47,7 @@ protocol HistoryProviding
   An interface that enables SwiftData to read and write model data without knowledge of the underlying storage mechanism.
 - [protocol DataStoreBatching](datastorebatching.md)
   An interface that enables a custom data store to support batch requests.
-- [Building a document-based app using SwiftData](../SwiftUI/Building-a-document-based-app-using-SwiftData.md)
+- [Building a document-based app using SwiftData](../swiftui/building-a-document-based-app-using-swiftdata.md)
   Code along with the WWDC presenter to transform an app with SwiftData.
 - [struct ModelDocument](modeldocument.md)
   A document type that uses SwiftData to manage its storage.

@@ -10,9 +10,9 @@ Create and adjust spatial audio in visionOS with RealityKit.
 
 #### Overview
 
-This sample demonstrates how to load and play a spatial audio file in a visionOS app with the [`SpatialAudioComponent`](https://developer.apple.com/documentation/RealityKit/SpatialAudioComponent). As the following image shows, you can use this component to configure how an entity emits sounds into a person’s environment:
+This sample demonstrates how to load and play a spatial audio file in a visionOS app with the [`SpatialAudioComponent`](https://developer.apple.com/documentation/realitykit/spatialaudiocomponent). As the following image shows, you can use this component to configure how an entity emits sounds into a person’s environment:
 
-![This is a screenshot of a visionOS app in the Simulator. The right side features an axis visualizer, while the left side presents a description of texts and three draggers that correspond to gain, direct level, and reverb levels.](https://docs-assets.developer.apple.com/published/a82c3d0e1e04b389f7d985bc885b09a8/sample-spatialaudio-1-main-view.png)
+![This is a screenshot of a visionOS app in the Simulator. The right side features an axis visualizer, while the left side presents a description of texts and three draggers that correspond to gain, direct level, and reverb levels.](/images/com.apple.visionOS/sample-spatialaudio-1-main-view.png)
 
 ##### Create the Axis Visualizer
 
@@ -38,7 +38,7 @@ struct AxisVisualizer {
 
 The structure uses a `make()` method to create the entity that contains the axis mesh.
 
-To create the representation of the x-axis, the app creates a box mesh with [`generateBox(size:cornerRadius:)`](https://developer.apple.com/documentation/RealityKit/MeshResource/generateBox(size:cornerRadius:)-2ovma) and a red [`UnlitMaterial`](https://developer.apple.com/documentation/RealityKit/UnlitMaterial), then combines the two with [`ModelEntity`](https://developer.apple.com/documentation/RealityKit/ModelEntity):
+To create the representation of the x-axis, the app creates a box mesh with [`generateBox(size:cornerRadius:)`](https://developer.apple.com/documentation/realitykit/meshresource/generatebox(size:cornerradius:)-2ovma) and a red [`UnlitMaterial`](https://developer.apple.com/documentation/realitykit/unlitmaterial), then combines the two with [`ModelEntity`](https://developer.apple.com/documentation/realitykit/modelentity):
 
 ```swift
 static func make() -> Entity {
@@ -65,7 +65,7 @@ static func make() -> Entity {
 
 The app follows similar steps to create the representation of the y and z axes, by adjusting the color of the material, the position of the entity, and the corresponding vector of three scalar values representing the width, height, and depth of the box.
 
-To create an origin point and complete the visualizer, the app creates a white sphere at the default position, using [`generateSphere(radius:)`](https://developer.apple.com/documentation/RealityKit/MeshResource/generateSphere(radius:)):
+To create an origin point and complete the visualizer, the app creates a white sphere at the default position, using [`generateSphere(radius:)`](https://developer.apple.com/documentation/realitykit/meshresource/generatesphere(radius:)):
 
 ```swift
 static func make() -> Entity {
@@ -117,7 +117,7 @@ struct DecibelSlider: View {
 }
 ```
 
-Using a [`Slider`](https://developer.apple.com/documentation/SwiftUI/Slider) within the view, a person can control the `value` property from the bounded linear range of values between -60 and 0.
+Using a [`Slider`](https://developer.apple.com/documentation/swiftui/slider) within the view, a person can control the `value` property from the bounded linear range of values between -60 and 0.
 
 ##### Set Up the Main Window
 

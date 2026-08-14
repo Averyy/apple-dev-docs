@@ -30,11 +30,11 @@ Represents the reason a TCC permission was updated.
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../Swift/BitwiseCopyable.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [RawRepresentable](../Swift/RawRepresentable.md)
-- [Sendable](../Swift/Sendable.md)
+- [BitwiseCopyable](../swift/bitwisecopyable.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [RawRepresentable](../swift/rawrepresentable.md)
+- [Sendable](../swift/sendable.md)
 
 
 ---

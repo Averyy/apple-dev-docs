@@ -24,13 +24,13 @@ var requiresSecureCoding: Bool { get set }
 
 If you set the receiver to require secure coding, it will throw an exception if you attempt to unarchive a class which does not conform to [`NSSecureCoding`](nssecurecoding.md).
 
-The secure coding requirement for [`NSKeyedUnarchiver`](nskeyedunarchiver.md) is designed to be set once at the top level and remain on. Once enabled, attempting to call `setRequiresSecureCoding:` with a value of [`false`](https://developer.apple.com/documentation/Swift/false) will throw an exception. This is to prevent classes from selectively turning secure coding off.
+The secure coding requirement for [`NSKeyedUnarchiver`](nskeyedunarchiver.md) is designed to be set once at the top level and remain on. Once enabled, attempting to call `setRequiresSecureCoding:` with a value of [`false`](https://developer.apple.com/documentation/swift/false) will throw an exception. This is to prevent classes from selectively turning secure coding off.
 
 Note that the getter is on the superclass, [`NSCoder`](nscoder.md). See [`NSCoder`](nscoder.md) for more information about secure coding.
 
 ## Parameters
 
-- `flag`: [`true`](https://developer.apple.com/documentation/Swift/true) if the receiver requires [`NSSecureCoding`](nssecurecoding.md); [`false`](https://developer.apple.com/documentation/Swift/false) if not.
+- `flag`: [`true`](https://developer.apple.com/documentation/swift/true) if the receiver requires [`NSSecureCoding`](nssecurecoding.md); [`false`](https://developer.apple.com/documentation/swift/false) if not.
 
 ## See Also
 

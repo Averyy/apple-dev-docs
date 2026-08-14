@@ -25,11 +25,11 @@ Filter width and height can be either 3, 5, 7 or 9. If there are multiple channe
 
 A *separable* convolution filter may perform better when done in two passes. . A convolution filter is separable if the ratio of filter values between all rows is constant over the whole row. For example, this edge detection filter:
 
-![None](https://docs-assets.developer.apple.com/published/37c3fd51dec62d6ecc454acaa2cfd116/media-2556905%402x.png)
+![None](/images/com.apple.metalperformanceshaders/media-2556905@2x.png)
 
 Can instead be separated into the product of two vectors, like so:
 
-![None](https://docs-assets.developer.apple.com/published/985a3d9e96dee212006c6fab7be40b80/media-2556912%402x.png)
+![None](/images/com.apple.metalperformanceshaders/media-2556912@2x.png)
 
 And consequently can be done as two, one-dimensional convolution passes back to back on the same image. In this way, the number of multiplies (ignoring the fact that we could skip zeros here) is reduced from `3*3=9` to `3+3=6`. There are similar savings for addition. For large filters, the savings can be profound.
 
@@ -53,15 +53,15 @@ And consequently can be done as two, one-dimensional convolution passes back to 
 ### Inherits From
 - [MPSUnaryImageKernel](mpsunaryimagekernel.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCoding](../Foundation/NSCoding.md)
-- [NSCopying](../Foundation/NSCopying.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [NSSecureCoding](../Foundation/NSSecureCoding.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCoding](../foundation/nscoding.md)
+- [NSCopying](../foundation/nscopying.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSSecureCoding](../foundation/nssecurecoding.md)
 
 ## See Also
 

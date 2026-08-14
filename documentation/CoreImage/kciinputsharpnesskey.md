@@ -21,7 +21,7 @@ let kCIInputSharpnessKey: String
 
 #### Discussion
 
-A key for a scalar value ([`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber)) that specifies the amount of sharpening to apply.
+A key for a scalar value ([`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber)) that specifies the amount of sharpening to apply.
 
 ## See Also
 

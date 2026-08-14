@@ -15,7 +15,7 @@ Get information about a single transaction for your app.
 
 #### Discussion
 
-Use this endpoint to get transaction information for any transaction identifier, including original transaction identifiers.  This endpoint supports all in-app purchase types, including consumable, non-consumable, non-renewing subscriptions, and auto-renewable subscriptions. It also supports transactions that your app marked as finished using [`finish()`](https://developer.apple.com/documentation/StoreKit/Transaction/finish()) or [`finishTransaction(_:)`](https://developer.apple.com/documentation/StoreKit/SKPaymentQueue/finishTransaction(_:)) in StoreKit.
+Use this endpoint to get transaction information for any transaction identifier, including original transaction identifiers.  This endpoint supports all in-app purchase types, including consumable, non-consumable, non-renewing subscriptions, and auto-renewable subscriptions. It also supports transactions that your app marked as finished using [`finish()`](https://developer.apple.com/documentation/storekit/transaction/finish()) or [`finishTransaction(_:)`](https://developer.apple.com/documentation/storekit/skpaymentqueue/finishtransaction(_:)) in StoreKit.
 
 ## Endpoint
 

@@ -21,7 +21,7 @@ var clearStencil: UInt32 { get set }
 
 #### Discussion
 
-If you specified that you want a stencil texture, the view configures any render passes to use the stencil texture, with a load action of [`MTLLoadAction.clear`](https://developer.apple.com/documentation/Metal/MTLLoadAction/clear) and the value of this property as the value to clear it to. The default value is `0`.
+If you specified that you want a stencil texture, the view configures any render passes to use the stencil texture, with a load action of [`MTLLoadAction.clear`](https://developer.apple.com/documentation/metal/mtlloadaction/clear) and the value of this property as the value to clear it to. The default value is `0`.
 
 ## See Also
 

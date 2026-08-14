@@ -21,7 +21,7 @@ func makeRemoteTextureView(_ device: any MTLDevice) -> (any MTLTexture)?
 
 #### Discussion
 
-The device instance that created this texture and the device instance passed into this method need to have the same nonzero peer group identifier ([`peerGroupID`](mtldevice/peergroupid.md)). This texture needs to either use the private storage mode ([`MTLStorageMode.private`](mtlstoragemode/private.md)) or be backed by an [`IOSurface`](https://developer.apple.com/documentation/IOSurface/IOSurface).
+The device instance that created this texture and the device instance passed into this method need to have the same nonzero peer group identifier ([`peerGroupID`](mtldevice/peergroupid.md)). This texture needs to either use the private storage mode ([`MTLStorageMode.private`](mtlstoragemode/private.md)) or be backed by an [`IOSurface`](https://developer.apple.com/documentation/iosurface/iosurface).
 
 A remote view doesn’t allocate any storage for the new texture; it references the memory allocated for the original texture. You can use remote views only as a source for copy commands encoded by an [`MTLBlitCommandEncoder`](mtlblitcommandencoder.md). For more information, see [`Transferring data between connected GPUs`](transferring-data-between-connected-gpus.md).
 

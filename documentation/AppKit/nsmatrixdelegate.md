@@ -22,7 +22,7 @@ This protocol simply adopts the `NSControlTextEditingDelegate` protocol, adding 
 
 ### Inherits From
 - [NSControlTextEditingDelegate](nscontroltexteditingdelegate.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

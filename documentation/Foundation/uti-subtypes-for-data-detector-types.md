@@ -11,10 +11,10 @@ These constants represent sub-[`Uniform Type Identifier`](https://developer.appl
 ## Topics
 
 ### Constants
-- [let NSTypeIdentifierDateText: String](../AppKit/NSTypeIdentifierDateText.md)
-- [let NSTypeIdentifierAddressText: String](../AppKit/NSTypeIdentifierAddressText.md)
-- [let NSTypeIdentifierPhoneNumberText: String](../AppKit/NSTypeIdentifierPhoneNumberText.md)
-- [let NSTypeIdentifierTransitInformationText: String](../AppKit/NSTypeIdentifierTransitInformationText.md)
+- [let NSTypeIdentifierDateText: String](../appkit/nstypeidentifierdatetext.md)
+- [let NSTypeIdentifierAddressText: String](../appkit/nstypeidentifieraddresstext.md)
+- [let NSTypeIdentifierPhoneNumberText: String](../appkit/nstypeidentifierphonenumbertext.md)
+- [let NSTypeIdentifierTransitInformationText: String](../appkit/nstypeidentifiertransitinformationtext.md)
 
 ## See Also
 

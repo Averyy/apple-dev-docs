@@ -8,7 +8,7 @@ Call endpoints using CRUD methods.
 
 The Apple Ads API uses a REST data model, and you use CRUD (create, read, update, delete) functions to call endpoint resources.
 
-![Apple Ads API call structure. This image is an example of an API call, including the domain, path, and resource. In some cases, the call may also incliude a query parameter.](https://docs-assets.developer.apple.com/published/f55fa33baafe422c2908533f11dd43fa/media-3697454%402x.png)
+![Apple Ads API call structure. This image is an example of an API call, including the domain, path, and resource. In some cases, the call may also incliude a query parameter.](/images/com.apple.appleads/media-3697454@2x.png)
 
 CRUD methods in the Apple Ads API include the following:
 

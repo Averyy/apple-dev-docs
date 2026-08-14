@@ -98,7 +98,7 @@ Safari 15 ships with iOS and iPadOS 15 and macOS 12.
 
 ###### New Features
 
-- Added support for WebGL 2. The implementation of WebGL runs on top of [`Metal`](https://developer.apple.com/documentation/Metal) for better performance.
+- Added support for WebGL 2. The implementation of WebGL runs on top of [`Metal`](https://developer.apple.com/documentation/metal) for better performance.
 - Added support for Web Share level 2 enhancements to Web Share that enable sharing files from a web page to an app. See [`Web Share API`](https://developer.apple.comhttps://w3c.github.io/web-share/) for more information.
 - User gestures now propagate through `requestAnimationFrame` with a one second time limit.
 

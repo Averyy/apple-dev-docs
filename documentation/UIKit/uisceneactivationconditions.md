@@ -23,7 +23,7 @@ class UISceneActivationConditions
 
 When an event occurs that requires the activation of a scene, UIKit routes the event to the scene best suited to handle it. UIKit determines which scene is the best by evaluating the target content identifier of the event against the predicates in each scene’s [`UISceneActivationConditions`](uisceneactivationconditions.md) object. You create [`UISceneActivationConditions`](uisceneactivationconditions.md) objects for your scenes and use them to prioritize which events each scene handles. Use the [`prefersToActivateForTargetContentIdentifierPredicate`](uisceneactivationconditions/preferstoactivatefortargetcontentidentifierpredicate.md) predicate to designate the scene as the primary handler of an event.
 
-Many different objects contain a [`targetContentIdentifier`](https://developer.apple.com/documentation/Foundation/NSUserActivity/targetContentIdentifier) property, including [`NSUserActivity`](https://developer.apple.com/documentation/Foundation/NSUserActivity), [`UNNotificationContent`](https://developer.apple.com/documentation/UserNotifications/UNNotificationContent), and [`UIApplicationShortcutItem`](uiapplicationshortcutitem.md). When creating those objects, fill that property with a value that uniquely describes the event and matches your scenes’ predicates. Every event must match at least one scene.
+Many different objects contain a [`targetContentIdentifier`](https://developer.apple.com/documentation/foundation/nsuseractivity/targetcontentidentifier) property, including [`NSUserActivity`](https://developer.apple.com/documentation/foundation/nsuseractivity), [`UNNotificationContent`](https://developer.apple.com/documentation/usernotifications/unnotificationcontent), and [`UIApplicationShortcutItem`](uiapplicationshortcutitem.md). When creating those objects, fill that property with a value that uniquely describes the event and matches your scenes’ predicates. Every event must match at least one scene.
 
 ## Topics
 
@@ -41,17 +41,17 @@ Many different objects contain a [`targetContentIdentifier`](https://developer.a
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCoding](../Foundation/NSCoding.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [NSSecureCoding](../Foundation/NSSecureCoding.md)
-- [Sendable](../Swift/Sendable.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCoding](../foundation/nscoding.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [Sendable](../swift/sendable.md)
 
 ## See Also
 

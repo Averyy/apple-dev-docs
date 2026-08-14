@@ -26,7 +26,7 @@ Don’t subclass or create instances of this class yourself. Instead, instantiat
 - [`UINotificationFeedbackGenerator`](uinotificationfeedbackgenerator.md). Use notification feedback to indicate successes, failures, and warnings.
 - [`UICanvasFeedbackGenerator`](uicanvasfeedbackgenerator.md). Use canvas feedback to indicate when a drawing event occurs, such as an object snapping to a guide or ruler.
 
-For more information, read [`Playing haptic feedback in your app`](https://developer.apple.com/documentation/ApplePencil/playing-haptic-feedback-in-your-app).
+For more information, read [`Playing haptic feedback in your app`](https://developer.apple.com/documentation/applepencil/playing-haptic-feedback-in-your-app).
 
 ## Topics
 
@@ -43,27 +43,27 @@ For more information, read [`Playing haptic feedback in your app`](https://devel
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Inherited By
 - [UICanvasFeedbackGenerator](uicanvasfeedbackgenerator.md)
 - [UIImpactFeedbackGenerator](uiimpactfeedbackgenerator.md)
 - [UINotificationFeedbackGenerator](uinotificationfeedbackgenerator.md)
 - [UISelectionFeedbackGenerator](uiselectionfeedbackgenerator.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [Copyable](../Swift/Copyable.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Escapable](../Swift/Escapable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [Sendable](../Swift/Sendable.md)
+- [CVarArg](../swift/cvararg.md)
+- [Copyable](../swift/copyable.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Escapable](../swift/escapable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [Sendable](../swift/sendable.md)
 - [UIInteraction](uiinteraction.md)
 
 ## See Also
 
-- [Playing haptic feedback in your app](../ApplePencil/playing-haptic-feedback-in-your-app.md)
+- [Playing haptic feedback in your app](../applepencil/playing-haptic-feedback-in-your-app.md)
   Provide tactile feedback when people perform certain actions in your app.
 - [class UIImpactFeedbackGenerator](uiimpactfeedbackgenerator.md)
   A concrete feedback generator subclass that creates haptics to simulate physical impacts.

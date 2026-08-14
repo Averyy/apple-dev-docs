@@ -32,7 +32,7 @@ struct MorxSubtable
 ## Relationships
 
 ### Conforms To
-- [Sendable](../Swift/Sendable.md)
+- [Sendable](../swift/sendable.md)
 
 ## See Also
 

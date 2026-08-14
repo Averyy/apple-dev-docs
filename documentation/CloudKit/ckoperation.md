@@ -31,11 +31,11 @@ All CloudKit operations descend from `CKOperation`, which provides the infrastru
 
 Use the properties of this class to configure the behavior of the operation before submitting it to a queue or executing it directly. CloudKit operations involve communicating with the iCloud servers to send and receive data. You can use the properties of this class to configure the behavior of those network requests to ensure the best performance for your app.
 
-> ❗ **Important**: `CKOperation` objects have a default quality of service level of [`QualityOfService.default`](https://developer.apple.com/documentation/Foundation/QualityOfService/default) (see [`qualityOfService`](https://developer.apple.com/documentation/Foundation/Operation/qualityOfService)). Operations with this service level are discretionary, and the system schedules them for an optimal time according to battery level and other factors. On iPhone, discretionary activities pause when the device is in Low Power Mode. For information about quality of service levels, see [`Prioritize Work with Quality of Service Classes`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Performance/Conceptual/EnergyGuide-iOS/PrioritizeWorkWithQoS.html#//apple_ref/doc/uid/TP40015243-CH39) in [`Energy Efficiency Guide for iOS Apps`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Performance/Conceptual/EnergyGuide-iOS/index.html#//apple_ref/doc/uid/TP40015243) and [`Prioritize Work at the Task Level`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Performance/Conceptual/power_efficiency_guidelines_osx/PrioritizeWorkAtTheTaskLevel.html#//apple_ref/doc/uid/TP40013929-CH35) in [`Energy Efficiency Guide for Mac Apps`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Performance/Conceptual/power_efficiency_guidelines_osx/index.html#//apple_ref/doc/uid/TP40013929).
+> ❗ **Important**: `CKOperation` objects have a default quality of service level of [`QualityOfService.default`](https://developer.apple.com/documentation/foundation/qualityofservice/default) (see [`qualityOfService`](https://developer.apple.com/documentation/foundation/operation/qualityofservice)). Operations with this service level are discretionary, and the system schedules them for an optimal time according to battery level and other factors. On iPhone, discretionary activities pause when the device is in Low Power Mode. For information about quality of service levels, see [`Prioritize Work with Quality of Service Classes`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Performance/Conceptual/EnergyGuide-iOS/PrioritizeWorkWithQoS.html#//apple_ref/doc/uid/TP40015243-CH39) in [`Energy Efficiency Guide for iOS Apps`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Performance/Conceptual/EnergyGuide-iOS/index.html#//apple_ref/doc/uid/TP40015243) and [`Prioritize Work at the Task Level`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Performance/Conceptual/power_efficiency_guidelines_osx/PrioritizeWorkAtTheTaskLevel.html#//apple_ref/doc/uid/TP40013929-CH35) in [`Energy Efficiency Guide for Mac Apps`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Performance/Conceptual/power_efficiency_guidelines_osx/index.html#//apple_ref/doc/uid/TP40013929).
 
 ##### Long Lived Operations
 
-A *long-lived operation* is an operation that continues to run after the user closes the app. To specify a long-lived operation, set [`isLongLived`](ckoperation/islonglived.md) to [`true`](https://developer.apple.com/documentation/Swift/true), provide a completion handler, and execute the operation. To get the identifiers of all running long-lived operations, use the [`allLongLivedOperationIDs()`](ckcontainer/alllonglivedoperationids().md) method that [`CKContainer`](ckcontainer.md) provides. To get a specific long-lived operation, use the [`longLivedOperation(for:)`](ckcontainer/longlivedoperation(for:).md) method. Make sure you set the completion handler of a long-lived operation before you execute it so that the system can notify you when it completes and you can process the results. Do not execute an operation, change it to long-lived, and execute it again as a long-lived operation.
+A *long-lived operation* is an operation that continues to run after the user closes the app. To specify a long-lived operation, set [`isLongLived`](ckoperation/islonglived.md) to [`true`](https://developer.apple.com/documentation/swift/true), provide a completion handler, and execute the operation. To get the identifiers of all running long-lived operations, use the [`allLongLivedOperationIDs()`](ckcontainer/alllonglivedoperationids().md) method that [`CKContainer`](ckcontainer.md) provides. To get a specific long-lived operation, use the [`longLivedOperation(for:)`](ckcontainer/longlivedoperation(for:).md) method. Make sure you set the completion handler of a long-lived operation before you execute it so that the system can notify you when it completes and you can process the results. Do not execute an operation, change it to long-lived, and execute it again as a long-lived operation.
 
 **Swift**:
 
@@ -117,7 +117,7 @@ The following is the typical life cycle of a long-lived operation:
 ## Relationships
 
 ### Inherits From
-- [Operation](../Foundation/Operation.md)
+- [Operation](../foundation/operation.md)
 ### Inherited By
 - [CKAcceptSharesOperation](ckacceptsharesoperation.md)
 - [CKDatabaseOperation](ckdatabaseoperation.md)
@@ -127,14 +127,14 @@ The following is the typical life cycle of a long-lived operation:
 - [CKFetchShareParticipantsOperation](ckfetchshareparticipantsoperation.md)
 - [CKShareRequestAccessOperation](cksharerequestaccessoperation.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 
 ---

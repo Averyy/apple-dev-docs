@@ -10,7 +10,7 @@ Browse notable changes in [`Network`](https://developer.apple.comhttps://develop
 
 #### June 2024
 
-- Add the [`NSLocalNetworkUsageDescription`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSLocalNetworkUsageDescription) key to your app’s information property list to get permission to connect to services on the local network, including Bonjour services. For the key’s value, provide a string that explains why your app uses local network services.
+- Add the [`NSLocalNetworkUsageDescription`](https://developer.apple.com/documentation/bundleresources/information-property-list/nslocalnetworkusagedescription) key to your app’s information property list to get permission to connect to services on the local network, including Bonjour services. For the key’s value, provide a string that explains why your app uses local network services.
 
 ## See Also
 

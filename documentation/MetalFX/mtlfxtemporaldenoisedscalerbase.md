@@ -132,7 +132,7 @@ protocol MTLFXTemporalDenoisedScalerBase : MTLFXFrameInterpolatableScaler
 
 ### Inherits From
 - [MTLFXFrameInterpolatableScaler](mtlfxframeinterpolatablescaler.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 ### Inherited By
 - [MTL4FXTemporalDenoisedScaler](mtl4fxtemporaldenoisedscaler.md)
 - [MTLFXTemporalDenoisedScaler](mtlfxtemporaldenoisedscaler.md)

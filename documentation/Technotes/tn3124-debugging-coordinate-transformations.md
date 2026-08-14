@@ -58,7 +58,7 @@ The best first step towards understanding a coordinate space is to visualize its
 
 > ⚠️ **Warning**: Do not rely on textual descriptions of a coordinate space, they are easy to misinterpret.
 
-Projects targeting visionOS can use [`Diagnosing issues in the appearance of a running app`](https://developer.apple.com/documentation/Xcode/diagnosing-issues-in-the-appearance-of-your-running-app#Understand-the-relationships-between-objects-in-a-immersive-space). In other contexts, the exact code to visualize the origin will differ depending on the framework involved.
+Projects targeting visionOS can use [`Diagnosing issues in the appearance of a running app`](https://developer.apple.com/documentation/xcode/diagnosing-issues-in-the-appearance-of-your-running-app). In other contexts, the exact code to visualize the origin will differ depending on the framework involved.
 
 Some frameworks offer built-in ways to visualize certain origins. For example, `ARView` and `ARSCNView` both have API to visualize the world origin for debugging:
 
@@ -121,7 +121,7 @@ Visualizing an origin could be all that is necessary to realize where the error 
 
 Sometimes an API requires inputs that are already in a particular coordinate space. Otherwise its output is invalid.
 
-Consider the `UIView` method, [`hitTest(_:with:)`](https://developer.apple.com/documentation/UIKit/UIView/hitTest(_:with:)). This method accepts a `CGPoint` as input, and uses it to perform a hit-test on the view. The problem here is that its results aren’t valid for *any* `CGPoint`, you must provide a `CGPoint` in the view’s local coordinate space to get a valid result.
+Consider the `UIView` method, [`hitTest(_:with:)`](https://developer.apple.com/documentation/uikit/uiview/hittest(_:with:)). This method accepts a `CGPoint` as input, and uses it to perform a hit-test on the view. The problem here is that its results aren’t valid for *any* `CGPoint`, you must provide a `CGPoint` in the view’s local coordinate space to get a valid result.
 
 When you have results that don’t make sense, it is a good idea to evaluate the APIs you are using to produce the results, and verify that you have provided inputs to them in the coordinate spaces they are expecting.
 

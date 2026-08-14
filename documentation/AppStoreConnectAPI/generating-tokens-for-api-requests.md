@@ -22,7 +22,7 @@ To create a JWT to communicate with the App Store Connect API, use the following
 
 | Header Field | Value |
 | --- | --- |
-| `alg` - Encryption Algorithm | `ES256` ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) All JWTs for App Store Connect API must be signed with ES256 encryption. |
+| `alg` - Encryption Algorithm | `ES256` ![None](/images/com.apple.appstoreconnectapi/spacer.png) All JWTs for App Store Connect API must be signed with ES256 encryption. |
 | `kid` - Key Identifier | Your private key ID from App Store Connect, for example, `2X9R4HXF34` |
 | `typ` - Token Type | `JWT` |
 
@@ -94,7 +94,7 @@ The JWT payload for Individual keys contains information specific to the App Sto
 
 | **Payload Field** | **Value** |
 | --- | --- |
-| `sub` - Subject | `user`  ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) ``This value is always the same for individual keys. |
+| `sub` - Subject | `user`  ![None](/images/com.apple.appstoreconnectapi/spacer.png) ``This value is always the same for individual keys. |
 | `iat` - Issued At Time | The token’s creation time, in UNIX epoch time, for example, `1528407600` |
 | `exp` - Expiration Time | The token’s expiration time in Unix epoch time. Tokens that expire more than 20 minutes in the future are not valid except for resources listed in [`Determine the Appropriate Token Lifetime`](generating-tokens-for-api-requests#Determine-the-Appropriate-Token-Lifetime.md). |
 | `aud` - Audience | `appstoreconnect-v1` |

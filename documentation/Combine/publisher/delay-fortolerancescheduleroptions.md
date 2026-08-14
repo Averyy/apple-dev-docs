@@ -28,7 +28,7 @@ A publisher that delays delivery of elements and completion to the downstream re
 
 Use [`delay(for:tolerance:scheduler:options:)`](publisher/delay(for:tolerance:scheduler:options:).md) when you need to delay the delivery of elements to a downstream by a specified amount of time.
 
-In this example, a [`Timer`](https://developer.apple.com/documentation/Foundation/Timer) publishes an event every second. The [`delay(for:tolerance:scheduler:options:)`](publisher/delay(for:tolerance:scheduler:options:).md) operator holds the delivery of the initial element for 3 seconds (±0.5 seconds), after which each element is delivered to the downstream on the main run loop after the specified delay:
+In this example, a [`Timer`](https://developer.apple.com/documentation/foundation/timer) publishes an event every second. The [`delay(for:tolerance:scheduler:options:)`](publisher/delay(for:tolerance:scheduler:options:).md) operator holds the delivery of the initial element for 3 seconds (±0.5 seconds), after which each element is delivered to the downstream on the main run loop after the specified delay:
 
 ```swift
 let df = DateFormatter()

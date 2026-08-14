@@ -16,7 +16,7 @@ let kCIApplyOptionDefinition: String
 
 #### Discussion
 
-The associated value is either a Core Image filter shape or a four-element array ([`NSArray`](https://developer.apple.com/documentation/Foundation/NSArray)) that specifies a rectangle.
+The associated value is either a Core Image filter shape or a four-element array ([`NSArray`](https://developer.apple.com/documentation/foundation/nsarray)) that specifies a rectangle.
 
 ## See Also
 

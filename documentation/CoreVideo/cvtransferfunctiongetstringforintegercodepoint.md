@@ -22,7 +22,7 @@ func CVTransferFunctionGetStringForIntegerCodePoint(_ transferFunctionCodePoint:
 
 #### Return Value
 
-The transfer function string corresponding to the code point (See [`Image Buffer Transfer Function Constants`](image-buffer-transfer-function-constants.md) for possible values.), or [`nil`](https://developer.apple.com/documentation/ObjectiveC/nil-227m0) if the code point is `2` (unknown) or the system doesn’t recognize it.
+The transfer function string corresponding to the code point (See [`Image Buffer Transfer Function Constants`](image-buffer-transfer-function-constants.md) for possible values.), or [`nil`](https://developer.apple.com/documentation/objectivec/nil-227m0) if the code point is `2` (unknown) or the system doesn’t recognize it.
 
 ## Parameters
 

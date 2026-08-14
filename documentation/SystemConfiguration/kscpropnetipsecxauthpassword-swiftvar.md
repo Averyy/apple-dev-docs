@@ -16,7 +16,7 @@ let kSCPropNetIPSecXAuthPassword: CFString
 
 #### Discussion
 
-The value of this key is of type [`CFString`](https://developer.apple.com/documentation/CoreFoundation/CFString).
+The value of this key is of type [`CFString`](https://developer.apple.com/documentation/corefoundation/cfstring).
 
 ## See Also
 

@@ -24,9 +24,9 @@ Thread safe starting in OS X v10.2.
 
 ## Parameters
 
-- `theAEDescList`: A pointer to the descriptor list to add a descriptor to. See  .
-- `index`: You can pass a value of zero or count + 1 to add the descriptor at the end of the list.   returns an error ( ) if you pass a negative number or a value that is out of range.
-- `theAEDesc`: A pointer to the descriptor to add to the list. See  .
+- `theAEDescList`: A pointer to the descriptor list to add a descriptor to. See [`AEDescList`](aedesclist.md).
+- `index`: A one-based positive integer indicating the position to insert the descriptor at. If there is already a descriptor in the specified position, it is replaced. You can pass a value of zero or count + 1 to add the descriptor at the end of the list. `AEPutDesc` returns an error (`AEIllegalIndex`) if you pass a negative number or a value that is out of range.
+- `theAEDesc`: A pointer to the descriptor to add to the list. See [`AEDesc`](aedesc.md).
 
 ## See Also
 

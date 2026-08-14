@@ -25,9 +25,9 @@ A new rule object.
 
 #### Discussion
 
-Rules created using this method encode their predicate and action when archived with the [`NSKeyedArchiver`](https://developer.apple.com/documentation/Foundation/NSKeyedArchiver) class. You can use this feature to support saving and loading rules, editing rules in-game, or building tools that separate your gameplay design and game programming tasks.
+Rules created using this method encode their predicate and action when archived with the [`NSKeyedArchiver`](https://developer.apple.com/documentation/foundation/nskeyedarchiver) class. You can use this feature to support saving and loading rules, editing rules in-game, or building tools that separate your gameplay design and game programming tasks.
 
-Rules based on [`NSPredicate`](https://developer.apple.com/documentation/Foundation/NSPredicate) objects typically test information in the [`state`](gkrulesystem/state.md) dictionary of the rule system evaluating the rule. For example, the following code creates a rule you might use to determine whether an enemy character in a game behaves aggressively. (This example presumes the rule system’s state dictionary contains an object for the key `player`, which in turn exposes a numeric value for the key `health`.)
+Rules based on [`NSPredicate`](https://developer.apple.com/documentation/foundation/nspredicate) objects typically test information in the [`state`](gkrulesystem/state.md) dictionary of the rule system evaluating the rule. For example, the following code creates a rule you might use to determine whether an enemy character in a game behaves aggressively. (This example presumes the rule system’s state dictionary contains an object for the key `player`, which in turn exposes a numeric value for the key `health`.)
 
 **Swift**:
 

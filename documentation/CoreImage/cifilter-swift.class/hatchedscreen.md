@@ -30,10 +30,10 @@ This method applies a hatched screen filter to an image. The effect generates a 
 The hatched screen filter uses the following properties:
 
 - **`inputImage`**: An image with the type [`CIImage`](ciimage.md).
-- **`center`**: A set of coordinates marking the center of the image as a [`CGPoint`](https://developer.apple.com/documentation/CoreFoundation/CGPoint).
-- **`angle`**: A `float` representing the angle of the pattern as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
-- **`width`**: A `float` representing the distance between lines in the pattern as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
-- **`sharpness`**: A `float` representing the sharpness of the pattern as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+- **`center`**: A set of coordinates marking the center of the image as a [`CGPoint`](https://developer.apple.com/documentation/corefoundation/cgpoint).
+- **`angle`**: A `float` representing the angle of the pattern as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
+- **`width`**: A `float` representing the distance between lines in the pattern as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
+- **`sharpness`**: A `float` representing the sharpness of the pattern as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
 
 The following code creates a filter that produces a monochrome image containing lines of detail on a black background:
 
@@ -49,7 +49,7 @@ func hatched(inputImage: CIImage) -> CIImage {
 }
 ```
 
-![Two photographs of wooden barrel of green artichokes. The artichokes are crisp with good lighting. The photo on the left has no modifications to color or detail. In the photo on the right, a hatched screen filter is applied, resulting in a lighter, grayscale image with an overlay of small lines in a hatched pattern, creating the detail of the image.](https://docs-assets.developer.apple.com/published/d95bfbb2d1541d005276bd8e53ad7990/media-3595917%402x.png)
+![Two photographs of wooden barrel of green artichokes. The artichokes are crisp with good lighting. The photo on the left has no modifications to color or detail. In the photo on the right, a hatched screen filter is applied, resulting in a lighter, grayscale image with an overlay of small lines in a hatched pattern, creating the detail of the image.](/images/com.apple.coreimage/media-3595917@2x.png)
 
 ## See Also
 

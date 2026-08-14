@@ -21,7 +21,7 @@ var identityReference: Data? { get set }
 
 #### Discussion
 
-The keychain item must have the [`kSecClassIdentity`](https://developer.apple.com/documentation/Security/kSecClassIdentity) class.
+The keychain item must have the [`kSecClassIdentity`](https://developer.apple.com/documentation/security/ksecclassidentity) class.
 
 
 ---

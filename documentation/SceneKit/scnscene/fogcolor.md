@@ -22,7 +22,7 @@ var fogColor: Any { get set }
 
 #### Discussion
 
-This property’s value can be an [`NSColor`](https://developer.apple.com/documentation/AppKit/NSColor) object (in macOS), a [`UIColor`](https://developer.apple.com/documentation/UIKit/UIColor) object (in iOS), or a [`CGColor`](https://developer.apple.com/documentation/CoreGraphics/CGColor) object. The default fog color is white.
+This property’s value can be an [`NSColor`](https://developer.apple.com/documentation/appkit/nscolor) object (in macOS), a [`UIColor`](https://developer.apple.com/documentation/uikit/uicolor) object (in iOS), or a [`CGColor`](https://developer.apple.com/documentation/coregraphics/cgcolor) object. The default fog color is white.
 
 You can animate changes to this property’s value. See [`Animating SceneKit Content`](animating-scenekit-content.md).
 

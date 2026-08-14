@@ -28,8 +28,8 @@ You can only activate a provisioned pass, and it must be in the [`PKPaymentPassA
 
 - `paymentPass`: The payment pass to activate.
 - `activationCode`: The activation code.
-- `completion`: The completion block that PassKit calls after activation. This block takes the following parameters: - **`success`**: [`true`](https://developer.apple.com/documentation/Swift/true) if authorization succeeds; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
-- **`error`**: If `success` is [`false`](https://developer.apple.com/documentation/Swift/false), a description of the error.
+- `completion`: The completion block that PassKit calls after activation. This block takes the following parameters: - **`success`**: [`true`](https://developer.apple.com/documentation/swift/true) if authorization succeeds; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+- **`error`**: If `success` is [`false`](https://developer.apple.com/documentation/swift/false), a description of the error.
 
 ## See Also
 

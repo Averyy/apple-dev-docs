@@ -21,7 +21,7 @@ func queryNDEFStatus() async throws -> (NFCNDEFStatus, Int)
 
 - `completionHandler`: The handler invoked by the reader session that provides the NDEF support status. The handler has the following parameters: - **status**: The [`NFCNDEFStatus`](nfcndefstatus.md) of the tag.
 - **capacity**: Indicates the maximum NDEF message size, in bytes, that you can store on the tag.
-- **error**: An [`NSError`](https://developer.apple.com/documentation/Foundation/NSError) object if the query fails; otherwise, `nil`. The session calls `completionHandler` on the dispatch queue provided when creating the [`NFCNDEFReaderSession`](nfcndefreadersession.md).
+- **error**: An [`NSError`](https://developer.apple.com/documentation/foundation/nserror) object if the query fails; otherwise, `nil`. The session calls `completionHandler` on the dispatch queue provided when creating the [`NFCNDEFReaderSession`](nfcndefreadersession.md).
 
 ## See Also
 

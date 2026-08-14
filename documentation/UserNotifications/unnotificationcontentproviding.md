@@ -27,7 +27,7 @@ The system allows only objects in the Apple SDK that conform to `UNNotificationC
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 ### Conforming Types
 - [UNNotificationAttributedMessageContext](unnotificationattributedmessagecontext.md)
 

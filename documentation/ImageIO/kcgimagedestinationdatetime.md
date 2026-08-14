@@ -22,7 +22,7 @@ let kCGImageDestinationDateTime: CFString
 
 #### Discussion
 
-This property puts the specified date and time information into the DateTime parameters of the image’s metadata. Specify the value of this key using a [`CFString`](https://developer.apple.com/documentation/CoreFoundation/CFString) or [`CFData`](https://developer.apple.com/documentation/CoreFoundation/CFData). For strings, the value must be in EXIF DateTime or ISO 8601 DateTime format.
+This property puts the specified date and time information into the DateTime parameters of the image’s metadata. Specify the value of this key using a [`CFString`](https://developer.apple.com/documentation/corefoundation/cfstring) or [`CFData`](https://developer.apple.com/documentation/corefoundation/cfdata). For strings, the value must be in EXIF DateTime or ISO 8601 DateTime format.
 
 This option is mutually exclusive with [`kCGImageDestinationMetadata`](kcgimagedestinationmetadata.md).
 

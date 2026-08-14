@@ -37,7 +37,7 @@ This collection of documents describes the programming interfaces of the System 
 - [SystemConfiguration Functions](systemconfiguration-functions.md)
 - [SystemConfiguration Data Types](systemconfiguration-data-types.md)
 ### Entitlements
-- [Access Wi-Fi Information Entitlement](../BundleResources/Entitlements/com.apple.developer.networking.wifi-info.md)
+- [Access Wi-Fi Information Entitlement](../bundleresources/entitlements/com.apple.developer.networking.wifi-info.md)
   A Boolean value indicating whether your app can access information about the connected Wi-Fi network.
 ### Type Aliases
 - [typealias AuthorizationRef](authorizationref.md)

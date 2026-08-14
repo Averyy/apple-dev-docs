@@ -29,7 +29,7 @@ The returned object remains valid until any of the following occur:
 
 If the system can’t create a presentment intent assertion object, this method throws an error of type [`NFCPresentmentIntentAssertion.Error`](nfcpresentmentintentassertion/error.md).
 
-> ⚠️ **Warning**:  Check to see if the device is capable of using NFC with the [`NFCReaderSession`](nfcreadersession-swift.class.md) class property [`readingAvailable`](nfcreadersession-swift.class/readingavailable.md). Attempting to acquire a presentment intent assertion on a device that can’t use NFC raises [`fatalError(_:file:line:)`](https://developer.apple.com/documentation/Swift/fatalError(_:file:line:)).
+> ⚠️ **Warning**:  Check to see if the device is capable of using NFC with the [`NFCReaderSession`](nfcreadersession-swift.class.md) class property [`readingAvailable`](nfcreadersession-swift.class/readingavailable.md). Attempting to acquire a presentment intent assertion on a device that can’t use NFC raises [`fatalError(_:file:line:)`](https://developer.apple.com/documentation/swift/fatalerror(_:file:line:)).
 
 
 ---

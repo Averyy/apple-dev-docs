@@ -24,8 +24,8 @@ A driver defines its array of supported power states with power management in it
 
 ## Parameters
 
-- `controllingDriver`: A pointer to the calling driver, usually  .
-- `powerStates`: A driver-defined array of power states that the driver and device support. Power states are defined in  .
+- `controllingDriver`: A pointer to the calling driver, usually `this`.
+- `powerStates`: A driver-defined array of power states that the driver and device support. Power states are defined in `pwr_mgt/IOPMpowerState.h`.
 - `numberOfStates`: The number of power states in the array.
 
 ## See Also

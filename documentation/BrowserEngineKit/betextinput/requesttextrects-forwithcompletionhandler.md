@@ -20,7 +20,7 @@ func requestTextRects(for input: String) async -> [UITextSelectionRect]
 
 #### Discussion
 
-The system invokes your implementation of this method. The completion handler receives [`UITextSelectionRect`](https://developer.apple.com/documentation/UIKit/UITextSelectionRect) instances for the substring nearest to the caret that matches the given `input`.
+The system invokes your implementation of this method. The completion handler receives [`UITextSelectionRect`](https://developer.apple.com/documentation/uikit/uitextselectionrect) instances for the substring nearest to the caret that matches the given `input`.
 
 ## See Also
 

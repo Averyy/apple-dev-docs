@@ -23,7 +23,7 @@ class GCDualShockGamepad
 
 The DualShock 4 controller profile is similar to an extended gamepad ([`GCExtendedGamepad`](gcextendedgamepad.md)), but has a touchpad with a button and two-finger tracking.
 
-![An illustration of a DualShock 4 controller showing the touchpad.](https://docs-assets.developer.apple.com/published/5c84f963dd6a6fcfc5c95a53c75f49d3/media-3830806%402x.png)
+![An illustration of a DualShock 4 controller showing the touchpad.](/images/com.apple.gamecontroller/media-3830806@2x.png)
 
 This profile also supports motion — that is, the controller’s [`motion`](gccontroller/motion.md) property is non-nil. If you hold the controller in front of you, the direction of the axes are:
 
@@ -31,7 +31,7 @@ This profile also supports motion — that is, the controller’s [`motion`](gcc
 - The positive y-axis points up.
 - The positive z-axis starts at the touchpad and points to you.
 
-![An illustration of a DualShock 4 controller showing the directions of the x, y, and z axes.](https://docs-assets.developer.apple.com/published/3e9dc14944907fc3a25e41e2cee2a320/media-3856422%402x.png)
+![An illustration of a DualShock 4 controller showing the directions of the x, y, and z axes.](/images/com.apple.gamecontroller/media-3856422@2x.png)
 
 ## Topics
 
@@ -52,12 +52,12 @@ This profile also supports motion — that is, the controller’s [`motion`](gcc
 ### Inherits From
 - [GCExtendedGamepad](gcextendedgamepad.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

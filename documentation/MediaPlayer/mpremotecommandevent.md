@@ -31,7 +31,7 @@ class MPRemoteCommandEvent
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Inherited By
 - [MPChangeLanguageOptionCommandEvent](mpchangelanguageoptioncommandevent.md)
 - [MPChangePlaybackPositionCommandEvent](mpchangeplaybackpositioncommandevent.md)
@@ -43,12 +43,12 @@ class MPRemoteCommandEvent
 - [MPSeekCommandEvent](mpseekcommandevent.md)
 - [MPSkipIntervalCommandEvent](mpskipintervalcommandevent.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

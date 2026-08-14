@@ -34,7 +34,7 @@ effectNode.warpGeometry = warpGeometryGrid.replacingByDestinationPositions(posit
 
 The following image shows the warped label.
 
-![Warped label](https://docs-assets.developer.apple.com/published/e530aef71f40eb2e9541827191e8ddeb/media-3130018%402x.png)
+![Warped label](/images/com.apple.spritekit/media-3130018@2x.png)
 
 
 ---

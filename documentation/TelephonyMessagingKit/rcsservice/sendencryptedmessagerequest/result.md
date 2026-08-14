@@ -7,7 +7,6 @@ A structure that represents the result of sending an encrypted message.
 
 **Availability**:
 - iOS 26.5+
-- iPadOS 26.5+
 
 ## Declaration
 
@@ -26,8 +25,8 @@ struct Result
 ## Relationships
 
 ### Conforms To
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

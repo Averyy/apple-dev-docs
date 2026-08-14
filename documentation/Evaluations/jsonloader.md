@@ -38,8 +38,8 @@ Malformed entries are logged via `OSLog` and skipped. A failure to open the file
 
 ### Conforms To
 - [Loader](loader.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

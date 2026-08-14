@@ -27,7 +27,7 @@ There are predefined predicates in this class that let you control the user sele
 
 ### Displaying Contacts Properties
 - [var displayedPropertyKeys: [String]?](cncontactpickerviewcontroller/displayedpropertykeys.md)
-  The [`CNContact`](https://developer.apple.com/documentation/Contacts/CNContact) property keys to display in the contact detail card.
+  The [`CNContact`](https://developer.apple.com/documentation/contacts/cncontact) property keys to display in the contact detail card.
 ### Responding to User Interactions
 - [var delegate: (any CNContactPickerDelegate)?](cncontactpickerviewcontroller/delegate.md)
   The delegate to be notified when the user selects a contact or a property.
@@ -44,27 +44,27 @@ There are predefined predicates in this class that let you control the user sele
 ## Relationships
 
 ### Inherits From
-- [UIViewController](../UIKit/UIViewController.md)
+- [UIViewController](../uikit/uiviewcontroller.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCoding](../Foundation/NSCoding.md)
-- [NSExtensionRequestHandling](../Foundation/NSExtensionRequestHandling.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [NSTouchBarProvider](../AppKit/NSTouchBarProvider.md)
-- [UIActivityItemsConfigurationProviding](../UIKit/UIActivityItemsConfigurationProviding.md)
-- [UIAppearanceContainer](../UIKit/UIAppearanceContainer.md)
-- [UIContentContainer](../UIKit/UIContentContainer.md)
-- [UIFocusEnvironment](../UIKit/UIFocusEnvironment.md)
-- [UIPasteConfigurationSupporting](../UIKit/UIPasteConfigurationSupporting.md)
-- [UIResponderStandardEditActions](../UIKit/UIResponderStandardEditActions.md)
-- [UIStateRestoring](../UIKit/UIStateRestoring.md)
-- [UITraitChangeObservable](../UIKit/UITraitChangeObservable-67e94.md)
-- [UITraitEnvironment](../UIKit/UITraitEnvironment.md)
-- [UIUserActivityRestoring](../UIKit/UIUserActivityRestoring.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCoding](../foundation/nscoding.md)
+- [NSExtensionRequestHandling](../foundation/nsextensionrequesthandling.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSTouchBarProvider](../appkit/nstouchbarprovider.md)
+- [UIActivityItemsConfigurationProviding](../uikit/uiactivityitemsconfigurationproviding.md)
+- [UIAppearanceContainer](../uikit/uiappearancecontainer.md)
+- [UIContentContainer](../uikit/uicontentcontainer.md)
+- [UIFocusEnvironment](../uikit/uifocusenvironment.md)
+- [UIPasteConfigurationSupporting](../uikit/uipasteconfigurationsupporting.md)
+- [UIResponderStandardEditActions](../uikit/uiresponderstandardeditactions.md)
+- [UIStateRestoring](../uikit/uistaterestoring.md)
+- [UITraitChangeObservable](../uikit/uitraitchangeobservable-67e94.md)
+- [UITraitEnvironment](../uikit/uitraitenvironment.md)
+- [UIUserActivityRestoring](../uikit/uiuseractivityrestoring.md)
 
 ## See Also
 

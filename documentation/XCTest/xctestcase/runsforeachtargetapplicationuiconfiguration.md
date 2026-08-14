@@ -19,7 +19,7 @@ The default is `false`. Override this method to return `true` in your UI test ca
 - Orientation (for example, portrait or landscape)
 - Localization (for example, `en_US` or `zh_CN`)
 
-The test system calculates a set of configurations that encompasses all the possible combinations of those supported settings, and provides each configuration to an iteration of your tests when you call [`launch()`](https://developer.apple.com/documentation/XCUIAutomation/XCUIApplication/launch()) on [`XCUIApplication`](https://developer.apple.com/documentation/XCUIAutomation/XCUIApplication).
+The test system calculates a set of configurations that encompasses all the possible combinations of those supported settings, and provides each configuration to an iteration of your tests when you call [`launch()`](https://developer.apple.com/documentation/xcuiautomation/xcuiapplication/launch()) on [`XCUIApplication`](https://developer.apple.com/documentation/xcuiautomation/xcuiapplication).
 
 ## See Also
 

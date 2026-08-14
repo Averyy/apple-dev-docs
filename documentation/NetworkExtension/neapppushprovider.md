@@ -27,7 +27,7 @@ Subclass [`NEAppPushProvider`](neapppushprovider.md) to provide the connection t
 
 ##### Creating a Local Push Provider Extension
 
-Local Push Providers run as App Extensions for the `app-push-provider` extension point, which is a possible value the [`Network Extensions Entitlement`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.networking.networkextension).
+Local Push Providers run as App Extensions for the `app-push-provider` extension point, which is a possible value the [`Network Extensions Entitlement`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.networking.networkextension).
 
 To create a Local Push Provider extension, first create a new App Extension target in your project.
 
@@ -78,12 +78,12 @@ Finally, add your Local Push Provider extension target to your app’s Embed App
 ### Inherits From
 - [NEProvider](neprovider.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

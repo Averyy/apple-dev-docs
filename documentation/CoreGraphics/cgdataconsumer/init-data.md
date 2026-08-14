@@ -26,7 +26,7 @@ A new data consumer object. In Objective-C, you’re responsible for releasing t
 
 #### Discussion
 
-You can use this function when you need to represent Core Graphics data as a [`CFData`](https://developer.apple.com/documentation/CoreFoundation/CFData) type. For example, you might create a [`CFData`](https://developer.apple.com/documentation/CoreFoundation/CFData) object that you then copy to the pasteboard.
+You can use this function when you need to represent Core Graphics data as a [`CFData`](https://developer.apple.com/documentation/corefoundation/cfdata) type. For example, you might create a [`CFData`](https://developer.apple.com/documentation/corefoundation/cfdata) object that you then copy to the pasteboard.
 
 ## Parameters
 

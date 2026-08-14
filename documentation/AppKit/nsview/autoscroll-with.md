@@ -16,7 +16,7 @@ func autoscroll(with event: NSEvent) -> Bool
 
 #### Return Value
 
-Returns [`true`](https://developer.apple.com/documentation/Swift/true) if any scrolling is performed; otherwise returns [`false`](https://developer.apple.com/documentation/Swift/false).
+Returns [`true`](https://developer.apple.com/documentation/swift/true) if any scrolling is performed; otherwise returns [`false`](https://developer.apple.com/documentation/swift/false).
 
 #### Discussion
 

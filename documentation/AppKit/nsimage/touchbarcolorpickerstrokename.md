@@ -19,7 +19,7 @@ class let touchBarColorPickerStrokeName: String
 
 #### Discussion
 
-![Template image for color picker for stroke](https://docs-assets.developer.apple.com/published/5923c8c3f7b8b7a279f1b769dd237044/media-2793529%402x.png)
+![Template image for color picker for stroke](/images/com.apple.appkit/media-2793529@2x.png)
 
 Touch Bar template images are exclusively for use in [`NSTouchBarItem`](nstouchbaritem.md) objects and not in onscreen windows.
 

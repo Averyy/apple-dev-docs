@@ -24,7 +24,7 @@ var mediaSubTypes: [NSNumber] { get }
 
 The value is an array of `NSNumber` objects carrying four character codes (of type FourCharCode) as defined in `CoreAudioTypes.h` for audio media and in `CMFormatDescription.h` for video media.
 
-Also see [`CMFormatDescriptionGetMediaSubType(_:)`](https://developer.apple.com/documentation/CoreMedia/CMFormatDescriptionGetMediaSubType(_:)) for more information about media subtypes.
+Also see [`CMFormatDescriptionGetMediaSubType(_:)`](https://developer.apple.com/documentation/coremedia/cmformatdescriptiongetmediasubtype(_:)) for more information about media subtypes.
 
 ## See Also
 

@@ -19,7 +19,7 @@ case audio
 
 #### Discussion
 
-![None](https://docs-assets.developer.apple.com/published/c565b94e13100aaa574b8865339a8d7f/media-2934536%402x.png)
+![None](/images/com.apple.uikit/media-2934536@2x.png)
 
 ## See Also
 

@@ -44,21 +44,21 @@ struct UUID
 ## Relationships
 
 ### Conforms To
-- [CVAttachmentValueRepresentable](../CoreVideo/CVAttachmentValueRepresentable.md)
-- [Comparable](../Swift/Comparable.md)
-- [Copyable](../Swift/Copyable.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomReflectable](../Swift/CustomReflectable.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Decodable](../Swift/Decodable.md)
-- [Encodable](../Swift/Encodable.md)
-- [EntityIdentifierConvertible](../AppIntents/EntityIdentifierConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Escapable](../Swift/Escapable.md)
-- [Hashable](../Swift/Hashable.md)
+- [CVAttachmentValueRepresentable](../corevideo/cvattachmentvaluerepresentable.md)
+- [Comparable](../swift/comparable.md)
+- [Copyable](../swift/copyable.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomReflectable](../swift/customreflectable.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Decodable](../swift/decodable.md)
+- [Encodable](../swift/encodable.md)
+- [EntityIdentifierConvertible](../appintents/entityidentifierconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Escapable](../swift/escapable.md)
+- [Hashable](../swift/hashable.md)
 - [ReferenceConvertible](referenceconvertible.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 
 ---

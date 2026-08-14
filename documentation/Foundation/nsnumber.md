@@ -28,7 +28,7 @@ class NSNumber
 
 `NSNumber` is a subclass of `NSValue` that offers a value as any C scalar (numeric) type. It defines a set of methods specifically for setting and accessing the value as a signed or unsigned `char`, `short int`, `int`, `long int`, `long long int`, `float`, or `double` or as a `BOOL`. (Note that number objects do not necessarily preserve the type they are created with.) It also defines a [`compare(_:)`](nsnumber/compare(_:).md) method to determine the ordering of two `NSNumber` objects.
 
-`NSNumber` is “toll-free bridged” with its Core Foundation counterparts: [`CFNumber`](https://developer.apple.com/documentation/CoreFoundation/CFNumber) for integer and floating point values, and [`CFBoolean`](https://developer.apple.com/documentation/CoreFoundation/CFBoolean) for Boolean values. See [`Toll-Free Bridging`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Conceptual/CocoaEncyclopedia/Toll-FreeBridgin/Toll-FreeBridgin.html#//apple_ref/doc/uid/TP40010810-CH2) for more information on toll-free bridging.
+`NSNumber` is “toll-free bridged” with its Core Foundation counterparts: [`CFNumber`](https://developer.apple.com/documentation/corefoundation/cfnumber) for integer and floating point values, and [`CFBoolean`](https://developer.apple.com/documentation/corefoundation/cfboolean) for Boolean values. See [`Toll-Free Bridging`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Conceptual/CocoaEncyclopedia/Toll-FreeBridgin/Toll-FreeBridgin.html#//apple_ref/doc/uid/TP40010810-CH2) for more information on toll-free bridging.
 
 ##### Value Conversions
 
@@ -38,25 +38,25 @@ An `NSNumber` object initialized with a value of a particular type accessing the
 
 | `Value` | [`boolValue`](nsnumber/boolvalue.md) | [`intValue`](nsnumber/intvalue-95zzp.md) | [`uintValue`](nsnumber/uintvalue.md) | [`floatValue`](nsnumber/floatvalue.md) |
 | --- | --- | --- | --- | --- |
-| [`false`](https://developer.apple.com/documentation/Swift/false) | [`false`](https://developer.apple.com/documentation/Swift/false) | `0` | `0` | `0.0` |
-| [`true`](https://developer.apple.com/documentation/Swift/true) | [`true`](https://developer.apple.com/documentation/Swift/true) | `1` | `1` | `1.0` |
+| [`false`](https://developer.apple.com/documentation/swift/false) | [`false`](https://developer.apple.com/documentation/swift/false) | `0` | `0` | `0.0` |
+| [`true`](https://developer.apple.com/documentation/swift/true) | [`true`](https://developer.apple.com/documentation/swift/true) | `1` | `1` | `1.0` |
 
 | `Value` | [`boolValue`](nsnumber/boolvalue.md) | [`intValue`](nsnumber/intvalue-95zzp.md) | [`uintValue`](nsnumber/uintvalue.md) | [`floatValue`](nsnumber/floatvalue.md) |
 | --- | --- | --- | --- | --- |
-| `0` | [`false`](https://developer.apple.com/documentation/Swift/false) | `0` | `0` | `0.0` |
-| `1` | [`true`](https://developer.apple.com/documentation/Swift/true) | `1` | `1` | `1.0` |
-| `-1` | [`true`](https://developer.apple.com/documentation/Swift/true) | `-1` | *invalid, erroneous result* | `-1.0` |
+| `0` | [`false`](https://developer.apple.com/documentation/swift/false) | `0` | `0` | `0.0` |
+| `1` | [`true`](https://developer.apple.com/documentation/swift/true) | `1` | `1` | `1.0` |
+| `-1` | [`true`](https://developer.apple.com/documentation/swift/true) | `-1` | *invalid, erroneous result* | `-1.0` |
 
 | `Value` | [`boolValue`](nsnumber/boolvalue.md) | [`intValue`](nsnumber/intvalue-95zzp.md) | [`uintValue`](nsnumber/uintvalue.md) | [`floatValue`](nsnumber/floatvalue.md) |
 | --- | --- | --- | --- | --- |
-| `0` | [`false`](https://developer.apple.com/documentation/Swift/false) | `0` | `0` | `0.0` |
-| `1` | [`true`](https://developer.apple.com/documentation/Swift/true) | `1` | `1` | `1.0` |
+| `0` | [`false`](https://developer.apple.com/documentation/swift/false) | `0` | `0` | `0.0` |
+| `1` | [`true`](https://developer.apple.com/documentation/swift/true) | `1` | `1` | `1.0` |
 
 | `Value` | [`boolValue`](nsnumber/boolvalue.md) | [`intValue`](nsnumber/intvalue-95zzp.md) | [`uintValue`](nsnumber/uintvalue.md) | [`floatValue`](nsnumber/floatvalue.md) |
 | --- | --- | --- | --- | --- |
-| `0.0` | [`false`](https://developer.apple.com/documentation/Swift/false) | `0` | `0` | `0.0` |
-| `1.0` | [`true`](https://developer.apple.com/documentation/Swift/true) | `1` | `1` | `1.0` |
-| `-1.0` | [`true`](https://developer.apple.com/documentation/Swift/true) | `-1` | *invalid, erroneous result* | `-1.0` |
+| `0.0` | [`false`](https://developer.apple.com/documentation/swift/false) | `0` | `0` | `0.0` |
+| `1.0` | [`true`](https://developer.apple.com/documentation/swift/true) | `1` | `1` | `1.0` |
+| `-1.0` | [`true`](https://developer.apple.com/documentation/swift/true) | `-1` | *invalid, erroneous result* | `-1.0` |
 
 ##### Subclassing Notes
 
@@ -163,25 +163,25 @@ As with any class cluster, subclasses of `NSNumber` must override the primitive 
 ### Inherited By
 - [NSDecimalNumber](nsdecimalnumber.md)
 ### Conforms To
-- [CKRecordValue](../CloudKit/CKRecordValue-c.protocol.md)
-- [CKRecordValueProtocol](../CloudKit/CKRecordValueProtocol.md)
-- [CVarArg](../Swift/CVarArg.md)
-- [Copyable](../Swift/Copyable.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Escapable](../Swift/Escapable.md)
-- [ExpressibleByBooleanLiteral](../Swift/ExpressibleByBooleanLiteral.md)
-- [ExpressibleByFloatLiteral](../Swift/ExpressibleByFloatLiteral.md)
-- [ExpressibleByIntegerLiteral](../Swift/ExpressibleByIntegerLiteral.md)
-- [Hashable](../Swift/Hashable.md)
+- [CKRecordValue](../cloudkit/ckrecordvalue-c.protocol.md)
+- [CKRecordValueProtocol](../cloudkit/ckrecordvalueprotocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [Copyable](../swift/copyable.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Escapable](../swift/escapable.md)
+- [ExpressibleByBooleanLiteral](../swift/expressiblebybooleanliteral.md)
+- [ExpressibleByFloatLiteral](../swift/expressiblebyfloatliteral.md)
+- [ExpressibleByIntegerLiteral](../swift/expressiblebyintegerliteral.md)
+- [Hashable](../swift/hashable.md)
 - [NSCoding](nscoding.md)
 - [NSCopying](nscopying.md)
-- [NSFetchRequestResult](../CoreData/NSFetchRequestResult.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSFetchRequestResult](../coredata/nsfetchrequestresult.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 - [NSSecureCoding](nssecurecoding.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 
 ---

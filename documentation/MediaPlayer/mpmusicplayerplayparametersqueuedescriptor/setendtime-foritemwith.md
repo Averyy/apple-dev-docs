@@ -20,7 +20,7 @@ func setEndTime(_ endTime: TimeInterval, forItemWith playParameters: MPMusicPlay
 
 ## Parameters
 
-- `endTime`: The [`TimeInterval`](https://developer.apple.com/documentation/Foundation/TimeInterval) describing when the item with designated play parameters stops playing.
+- `endTime`: The [`TimeInterval`](https://developer.apple.com/documentation/foundation/timeinterval) describing when the item with designated play parameters stops playing.
 - `playParameters`: The play parameters associated with the item in the queue that has a changed end time.
 
 ## See Also

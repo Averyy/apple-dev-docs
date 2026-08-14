@@ -30,7 +30,7 @@ Thread-safe since OS X v10.4.
 ## Parameters
 
 - `inContentType`: The content type for which the default role handler is being set. The content type is a uniform type identifier.
-- `inRole`: The roles for which the default role handler is being set. Pass   to specify all roles. For additional possible values, see  .
+- `inRole`: The roles for which the default role handler is being set. Pass `kLSRolesAll` to specify all roles. For additional possible values, see [`LSRolesMask`](lsrolesmask.md).
 - `inHandlerBundleID`: The bundle identifier that is to be set as the default handler for the specified content type and roles.
 
 ## See Also

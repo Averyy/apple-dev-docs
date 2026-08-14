@@ -23,9 +23,9 @@ Copies complex vector `A` to complex vector `C`.
 ## Parameters
 
 - `__A`: Single-precision complex input vector.
-- `__IA`: Address stride for  .
+- `__IA`: Address stride for `A`.
 - `__C`: Single-precision complex output vector.
-- `__IC`: Address stride for  .
+- `__IC`: Address stride for `C`.
 - `__N`: The number of elements to process.
 
 

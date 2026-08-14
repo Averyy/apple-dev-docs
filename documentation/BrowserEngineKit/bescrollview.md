@@ -20,7 +20,7 @@ class BEScrollView
 
 #### Overview
 
-Use `BEScrollView` instead of [`UIScrollView`](https://developer.apple.com/documentation/UIKit/UIScrollView) if you need to:
+Use `BEScrollView` instead of [`UIScrollView`](https://developer.apple.com/documentation/uikit/uiscrollview) if you need to:
 
 - Handle scroll updates programmatically
 - Override default scroll view behavior
@@ -37,37 +37,37 @@ In any of these scenarios, set the scroll view’s [`delegate`](bescrollview/del
 ## Relationships
 
 ### Inherits From
-- [UIScrollView](../UIKit/UIScrollView.md)
+- [UIScrollView](../uikit/uiscrollview.md)
 ### Conforms To
-- [CALayerDelegate](../QuartzCore/CALayerDelegate.md)
-- [CLBodyIdentifiable](../CoreLocation/CLBodyIdentifiable.md)
-- [CMBodyIdentifiable](../CoreMotion/CMBodyIdentifiable.md)
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCoding](../Foundation/NSCoding.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
-- [UIAccessibilityIdentification](../UIKit/UIAccessibilityIdentification.md)
-- [UIActivityItemsConfigurationProviding](../UIKit/UIActivityItemsConfigurationProviding.md)
-- [UIAppearance](../UIKit/UIAppearance.md)
-- [UIAppearanceContainer](../UIKit/UIAppearanceContainer.md)
-- [UICoordinateSpace](../UIKit/UICoordinateSpace.md)
-- [UIDynamicItem](../UIKit/UIDynamicItem.md)
-- [UIFocusEnvironment](../UIKit/UIFocusEnvironment.md)
-- [UIFocusItem](../UIKit/UIFocusItem.md)
-- [UIFocusItemContainer](../UIKit/UIFocusItemContainer.md)
-- [UIFocusItemScrollableContainer](../UIKit/UIFocusItemScrollableContainer.md)
-- [UILargeContentViewerItem](../UIKit/UILargeContentViewerItem.md)
-- [UIPasteConfigurationSupporting](../UIKit/UIPasteConfigurationSupporting.md)
-- [UIPopoverPresentationControllerSourceItem](../UIKit/UIPopoverPresentationControllerSourceItem.md)
-- [UIResponderStandardEditActions](../UIKit/UIResponderStandardEditActions.md)
-- [UITraitChangeObservable](../UIKit/UITraitChangeObservable-67e94.md)
-- [UITraitEnvironment](../UIKit/UITraitEnvironment.md)
-- [UIUserActivityRestoring](../UIKit/UIUserActivityRestoring.md)
+- [CALayerDelegate](../quartzcore/calayerdelegate.md)
+- [CLBodyIdentifiable](../corelocation/clbodyidentifiable.md)
+- [CMBodyIdentifiable](../coremotion/cmbodyidentifiable.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCoding](../foundation/nscoding.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
+- [UIAccessibilityIdentification](../uikit/uiaccessibilityidentification.md)
+- [UIActivityItemsConfigurationProviding](../uikit/uiactivityitemsconfigurationproviding.md)
+- [UIAppearance](../uikit/uiappearance.md)
+- [UIAppearanceContainer](../uikit/uiappearancecontainer.md)
+- [UICoordinateSpace](../uikit/uicoordinatespace.md)
+- [UIDynamicItem](../uikit/uidynamicitem.md)
+- [UIFocusEnvironment](../uikit/uifocusenvironment.md)
+- [UIFocusItem](../uikit/uifocusitem.md)
+- [UIFocusItemContainer](../uikit/uifocusitemcontainer.md)
+- [UIFocusItemScrollableContainer](../uikit/uifocusitemscrollablecontainer.md)
+- [UILargeContentViewerItem](../uikit/uilargecontentvieweritem.md)
+- [UIPasteConfigurationSupporting](../uikit/uipasteconfigurationsupporting.md)
+- [UIPopoverPresentationControllerSourceItem](../uikit/uipopoverpresentationcontrollersourceitem.md)
+- [UIResponderStandardEditActions](../uikit/uiresponderstandardeditactions.md)
+- [UITraitChangeObservable](../uikit/uitraitchangeobservable-67e94.md)
+- [UITraitEnvironment](../uikit/uitraitenvironment.md)
+- [UIUserActivityRestoring](../uikit/uiuseractivityrestoring.md)
 
 ## See Also
 

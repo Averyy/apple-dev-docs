@@ -83,7 +83,7 @@ bodyLabel.firstBaselineAnchor.constraint(equalToSystemSpacingBelow: headlineLabe
 
 With the system spacing constraints in place, the system automatically adjusts the spacing surrounding the two labels based on the text size.
 
-![On the left, a screenshot of the sample app showing the smallest text size. In the center, a screenshot showing the default text size. On the right, a screenshot showing the largest text size.](https://docs-assets.developer.apple.com/published/3041a7145e07686996d9f89aae8311f7/compare-sizes.png)
+![On the left, a screenshot of the sample app showing the smallest text size. In the center, a screenshot showing the default text size. On the right, a screenshot showing the largest text size.](/images/com.apple.uikit/compare-sizes.png)
 
 ##### Test with Accessibility Inspector
 

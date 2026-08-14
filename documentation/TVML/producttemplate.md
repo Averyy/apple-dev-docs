@@ -10,7 +10,7 @@ Use the `productTemplate` element to display, for example, a page that describes
 
 The following figure shows the basic layout for a `productTemplate` page. The default theme for a product template is `dark` when a background image is specified; otherwise, the product template defaults to the system preference.
 
-![Layout diagram showing an info list area on the left side of the screen, a stack area in the middle, and a banner area on the right. A shelf area is at the bottom of the screen. A second shelf area is shown as being off the bottom of the screen.](https://docs-assets.developer.apple.com/published/46f99b3cc92265c2e5599363d7aa07d2/producttemplate-1%402x.png)
+![Layout diagram showing an info list area on the left side of the screen, a stack area in the middle, and a banner area on the right. A shelf area is at the bottom of the screen. A second shelf area is shown as being off the bottom of the screen.](/images/com.apple.TVML/producttemplate-1@2x.png)
 
 ##### Main Elements
 
@@ -252,9 +252,9 @@ The following listing shows the TVML for a `productTemplate` example:
 
 The following figures show the ouput for the above example. The first figure shows the output for the example when it first appears on screen. The second figure shows the output below the fold as the user scrolls down the screen.
 
-![Screenshot showing a sample product. Director and actor information is on the left, a description in the middle, and an image of the product on the right. A row of similar movies is at the bottom.](https://docs-assets.developer.apple.com/published/1eca8755bdd44573b05e2b9195c1fa8d/producttemplate-2%402x.png)
+![Screenshot showing a sample product. Director and actor information is on the left, a description in the middle, and an image of the product on the right. A row of similar movies is at the bottom.](/images/com.apple.TVML/producttemplate-2@2x.png)
 
-![Screenshot showing the second page of the product. The top row contains review and ratings, the middle row contains actor information, and the bottom row contains general information about the product.](https://docs-assets.developer.apple.com/published/8589c672ed9f410b02f2c2172057aec2/producttemplate-3%402x.png)
+![Screenshot showing the second page of the product. The top row contains review and ratings, the middle row contains actor information, and the bottom row contains general information about the product.](/images/com.apple.TVML/producttemplate-3@2x.png)
 
 ## Topics
 

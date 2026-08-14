@@ -8,11 +8,11 @@ Provide space-efficient, context-dependent access to commands and controls.
 
 Use a menu to provide people with easy access to common commands. You can add items to a macOS or iPadOS app’s menu bar using the [`commands(content:)`](scene/commands(content:).md) scene modifier, or create context menus that people reveal near their current task using the [`contextMenu(menuItems:)`](view/contextmenu(menuitems:).md) view modifier.
 
-![None](https://docs-assets.developer.apple.com/published/dfe1ae858d3f19de19a190f122aaf44a/menus-and-commands-hero%402x.png)
+![None](/images/com.apple.SwiftUI/menus-and-commands-hero@2x.png)
 
 Create submenus by nesting [`Menu`](menu.md) instances inside others. Use a [`Divider`](divider.md) view to create a separator between menu elements.
 
-For design guidance, see [`Menus`](https://developer.apple.com/design/Human-Interface-Guidelines/menus) in the Human Interface Guidelines.
+For design guidance, see [`Menus`](https://developer.apple.com/design/human-interface-guidelines/menus) in the Human Interface Guidelines.
 
 ## Topics
 

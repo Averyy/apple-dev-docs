@@ -18,7 +18,7 @@ Safari 16.1 is available for macOS Big Sur, macOS Monterey, macOS Ventura, iPadO
 
 ###### New Feature
 
-- Added support for passkeys on macOS Big Sur, macOS Monterey, macOS Ventura, and iPadOS 16.1. See [`Supporting passkeys`](https://developer.apple.com/documentation/AuthenticationServices/supporting-passkeys).
+- Added support for passkeys on macOS Big Sur, macOS Monterey, macOS Ventura, and iPadOS 16.1. See [`Supporting passkeys`](https://developer.apple.com/documentation/authenticationservices/supporting-passkeys).
 
 ##### Css
 
@@ -62,7 +62,7 @@ Safari 16.1 is available for macOS Big Sur, macOS Monterey, macOS Ventura, iPadO
 
 New Features
 
-- Added support for web-to-App Store advertising with [`SKAdNetwork`](https://developer.apple.com/documentation/StoreKit/SKAdNetwork).
+- Added support for web-to-App Store advertising with [`SKAdNetwork`](https://developer.apple.com/documentation/storekit/skadnetwork).
 
 ##### Rendering
 

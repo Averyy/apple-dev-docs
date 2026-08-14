@@ -21,7 +21,7 @@ var fieldsIncludedAreCleared: Bool { get set }
 
 ## Parameters
 
-- `include`: Pass [`true`](https://developer.apple.com/documentation/Swift/true) to clear the fields associated with the action when the reset action is performed. Pass [`false`](https://developer.apple.com/documentation/Swift/false) to exclude from the reset action only the fields associated with the action.
+- `include`: Pass [`true`](https://developer.apple.com/documentation/swift/true) to clear the fields associated with the action when the reset action is performed. Pass [`false`](https://developer.apple.com/documentation/swift/false) to exclude from the reset action only the fields associated with the action.
 
 ## See Also
 

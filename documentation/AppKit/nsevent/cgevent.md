@@ -16,7 +16,7 @@ var cgEvent: CGEvent? { get }
 
 #### Discussion
 
-The [`CGEvent`](https://developer.apple.com/documentation/CoreGraphics/CGEvent) opaque type returned is autoreleased. If no `CGEventRef` object corresponding to the `NSEvent` object can be created, this method returns `NULL`.
+The [`CGEvent`](https://developer.apple.com/documentation/coregraphics/cgevent) opaque type returned is autoreleased. If no `CGEventRef` object corresponding to the `NSEvent` object can be created, this method returns `NULL`.
 
 ## See Also
 

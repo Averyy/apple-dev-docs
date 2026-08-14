@@ -20,7 +20,7 @@ An IOReturn code (`kIOReturnNoInterrupt` is returned if the source is not valid)
 ## Parameters
 
 - `source`: The index of the interrupt source in the device.
-- `interruptType`:  will be returned for level-trigggered sources.
+- `interruptType`: The interrupt type for the interrupt source will be stored here by `getInterruptType`. ` kIOInterruptTypeEdge` will be returned for edge-trigggered sources. `kIOInterruptTypeLevel` will be returned for level-trigggered sources.
 
 ## See Also
 

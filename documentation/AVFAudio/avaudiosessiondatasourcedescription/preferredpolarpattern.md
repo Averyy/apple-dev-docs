@@ -20,7 +20,7 @@ var preferredPolarPattern: AVAudioSession.PolarPattern? { get }
 
 #### Discussion
 
-If this value is [`nil`](https://developer.apple.com/documentation/ObjectiveC/nil-227m0), the data source doesn’t support directivity configuration, or you haven’t selected a preferred polar pattern.
+If this value is [`nil`](https://developer.apple.com/documentation/objectivec/nil-227m0), the data source doesn’t support directivity configuration, or you haven’t selected a preferred polar pattern.
 
 ## See Also
 

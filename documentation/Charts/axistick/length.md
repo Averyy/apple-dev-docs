@@ -38,7 +38,7 @@ struct Length
 ## Relationships
 
 ### Conforms To
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
 
 
 ---

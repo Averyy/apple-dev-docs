@@ -22,7 +22,7 @@ func userIdentities(forPhoneNumbers phoneNumbers: [String]) async throws -> [Str
 
 #### Return Value
 
-A [`Result`](https://developer.apple.com/documentation/Swift/Result) that contains either a dictionary of user identities, or an error that describes why CloudKit can’t discover the phone numbers.
+A [`Result`](https://developer.apple.com/documentation/swift/result) that contains either a dictionary of user identities, or an error that describes why CloudKit can’t discover the phone numbers.
 
 In the successful case, the dictionary uses the phone numbers you specify in `phoneNumbers` as its keys. Only successfully discovered user identities are present in this dictionary.
 

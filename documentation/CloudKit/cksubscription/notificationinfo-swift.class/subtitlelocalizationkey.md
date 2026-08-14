@@ -23,7 +23,7 @@ var subtitleLocalizationKey: String? { get set }
 
 CloudKit uses this value to set the `subtitle-loc-key` push notification property. Setting this property overrides any value in [`subtitle`](cksubscription/notificationinfo-swift.class/subtitle.md).
 
-See [`Generating a remote notification`](https://developer.apple.com/documentation/UserNotifications/generating-a-remote-notification) for more details about push notification properties.
+See [`Generating a remote notification`](https://developer.apple.com/documentation/usernotifications/generating-a-remote-notification) for more details about push notification properties.
 
 ## See Also
 

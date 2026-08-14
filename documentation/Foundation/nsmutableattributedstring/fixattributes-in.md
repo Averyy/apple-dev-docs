@@ -22,13 +22,13 @@ func fixAttributes(in range: NSRange)
 
 #### Discussion
 
-Removes attachment attributes assigned to characters other than [`character`](https://developer.apple.com/documentation/AppKit/NSTextAttachment/character), assigns default fonts to characters with illegal fonts for their scripts and otherwise corrects font attribute assignments, and assigns the first paragraph style attribute value in each paragraph to all characters of the paragraph.
+Removes attachment attributes assigned to characters other than [`character`](https://developer.apple.com/documentation/appkit/nstextattachment/character), assigns default fonts to characters with illegal fonts for their scripts and otherwise corrects font attribute assignments, and assigns the first paragraph style attribute value in each paragraph to all characters of the paragraph.
 
 This method extends the range as needed to cover the last paragraph partially contained.
 
 Raises an [`rangeException`](nsexceptionname/rangeexception.md) if any part of aRange lies beyond the end of the receiver’s characters.
 
-`NSTextStorage` subclasses that return [`true`](https://developer.apple.com/documentation/Swift/true) from the [`fixesAttributesLazily`](https://developer.apple.com/documentation/AppKit/NSTextStorage/fixesAttributesLazily) method should avoid directly calling [`fixAttributes(in:)`](nsmutableattributedstring/fixattributes(in:).md) or else bracket such calls with [`beginEditing()`](nsmutableattributedstring/beginediting().md) and [`endEditing()`](nsmutableattributedstring/endediting().md) messages.
+`NSTextStorage` subclasses that return [`true`](https://developer.apple.com/documentation/swift/true) from the [`fixesAttributesLazily`](https://developer.apple.com/documentation/appkit/nstextstorage/fixesattributeslazily) method should avoid directly calling [`fixAttributes(in:)`](nsmutableattributedstring/fixattributes(in:).md) or else bracket such calls with [`beginEditing()`](nsmutableattributedstring/beginediting().md) and [`endEditing()`](nsmutableattributedstring/endediting().md) messages.
 
 ## Parameters
 

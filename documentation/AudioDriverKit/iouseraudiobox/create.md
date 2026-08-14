@@ -26,7 +26,7 @@ If you subclass [`IOUserAudioBox`](iouseraudiobox.md) to override this class’ 
 
 - `in_driver`: The [`IOUserAudioDriver`](iouseraudiodriver.md) that owns this object.
 - `in_is_acquirable`: A Boolean value that specifies if the box supports being acquired.
-- `in_box_uid`: The name of the box, as an [`OSString`](https://developer.apple.com/documentation/DriverKit/OSString).
+- `in_box_uid`: The name of the box, as an [`OSString`](https://developer.apple.com/documentation/driverkit/osstring).
 
 ## See Also
 

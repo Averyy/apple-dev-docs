@@ -16,7 +16,7 @@ func loadNibNamed(_ nibName: NSNib.Name, owner: Any?, topLevelObjects: Autorelea
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/Swift/true) if the nib file was loaded successfully; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
+[`true`](https://developer.apple.com/documentation/swift/true) if the nib file was loaded successfully; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
 
 #### Discussion
 
@@ -24,7 +24,7 @@ Unlike legacy methods, the objects adhere to the standard cocoa memory managemen
 
 Outlets to top-level objects should be strong references to demonstrate ownership and prevent deallocation.
 
-For more information on Nibs, see [`NSNib`](https://developer.apple.com/documentation/AppKit/NSNib).
+For more information on Nibs, see [`NSNib`](https://developer.apple.com/documentation/appkit/nsnib).
 
 ## Parameters
 

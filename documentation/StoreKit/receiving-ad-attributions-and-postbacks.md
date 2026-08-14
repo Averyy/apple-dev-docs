@@ -47,7 +47,7 @@ The ad presentation option defines the `fidelity-type` value:
 - StoreKit-rendered ads have the highest `fidelity-type` value of `1`.
 - View-through ads have a `fidelity-type` value of `0`.
 
-Indicate the `fidelity-type` when you generate the ad signature. Recorded ad impressions with a `fidelity-type` of `1` always take precedence over those with a `fidelity-type` of `0`. For example, if users see a StoreKit-rendered ad followed by a view-through ad for the same app, the StoreKit-rendered ad takes precedence over the view-through ad, despite the view-through ad being more recent. The source app can display StoreKit-rendered ads using  an [`SKOverlay`](skoverlay.md) or [`SKStoreProductViewController`](skstoreproductviewcontroller.md); the `fidelity-type` value is `1` in either case. For information about the fidelity of ads that an ad network presents on a Safari web page using the [`SKAdNetwork for Web Ads`](https://developer.apple.com/documentation/SKAdNetworkforWebAds) API, see [`signature`](https://developer.apple.com/documentation/SKAdNetworkforWebAds/signature).
+Indicate the `fidelity-type` when you generate the ad signature. Recorded ad impressions with a `fidelity-type` of `1` always take precedence over those with a `fidelity-type` of `0`. For example, if users see a StoreKit-rendered ad followed by a view-through ad for the same app, the StoreKit-rendered ad takes precedence over the view-through ad, despite the view-through ad being more recent. The source app can display StoreKit-rendered ads using  an [`SKOverlay`](skoverlay.md) or [`SKStoreProductViewController`](skstoreproductviewcontroller.md); the `fidelity-type` value is `1` in either case. For information about the fidelity of ads that an ad network presents on a Safari web page using the [`SKAdNetwork for Web Ads`](https://developer.apple.com/documentation/skadnetworkforwebads) API, see [`signature`](https://developer.apple.com/documentation/skadnetworkforwebads/signature).
 
 In version 3 and later, the system indicates winning postbacks with a `did-win` parameter of value `true`.
 
@@ -71,7 +71,7 @@ StoreKit records a maximum of 15 view-through ad impressions per source app befo
 
 ##### Test Ad Impressions and Postbacks
 
-Use the [`StoreKit Test`](https://developer.apple.com/documentation/StoreKitTest) framework to validate your ad impressions and test your postbacks by creating unit tests. For more information, see [`SKAdTestSession`](https://developer.apple.com/documentation/StoreKitTest/SKAdTestSession) and [`Testing and validating ad impression signatures and postbacks for SKAdNetwork`](https://developer.apple.com/documentation/StoreKitTest/testing-and-validating-ad-impression-signatures-and-postbacks-for-skadnetwork).
+Use the [`StoreKit Test`](https://developer.apple.com/documentation/storekittest) framework to validate your ad impressions and test your postbacks by creating unit tests. For more information, see [`SKAdTestSession`](https://developer.apple.com/documentation/storekittest/skadtestsession) and [`Testing and validating ad impression signatures and postbacks for SKAdNetwork`](https://developer.apple.com/documentation/storekittest/testing-and-validating-ad-impression-signatures-and-postbacks-for-skadnetwork).
 
 ## See Also
 

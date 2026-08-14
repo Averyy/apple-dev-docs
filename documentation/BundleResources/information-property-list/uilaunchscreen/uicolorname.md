@@ -15,9 +15,9 @@ The name of a color to use as the background color on the launch screen.
 
 #### Discussion
 
-Provide a value for this key that’s the name of a color in your asset catalog. You use the same string for the value that you might use when calling the [`init(named:)`](https://developer.apple.com/documentation/UIKit/UIColor/init(named:)) initializer of [`UIColor`](https://developer.apple.com/documentation/UIKit/UIColor).
+Provide a value for this key that’s the name of a color in your asset catalog. You use the same string for the value that you might use when calling the [`init(named:)`](https://developer.apple.com/documentation/uikit/uicolor/init(named:)) initializer of [`UIColor`](https://developer.apple.com/documentation/uikit/uicolor).
 
-If you don’t set a color, the system uses a default of [`systemBackground`](https://developer.apple.com/documentation/UIKit/UIColor/systemBackground), which varies according to whether the user has selected the light appearance or Dark Mode for the device.
+If you don’t set a color, the system uses a default of [`systemBackground`](https://developer.apple.com/documentation/uikit/uicolor/systembackground), which varies according to whether the user has selected the light appearance or Dark Mode for the device.
 
 ## See Also
 

@@ -22,7 +22,7 @@ func setMinimumVolumeSliderImage(_ image: UIImage?, for state: UIControl.State)
 
 The orientation of the track image must match the orientation of the slider control. To facilitate the stretching of the image to fill the space between the thumb and end point, track images are usually defined in three regions. A stretchable region sits between two end cap regions. The end caps define the portions of the image that remain as is and aren’t stretched. The stretchable region is a 1-point wide area between the end caps that the system can replicate to make the image appear longer.
 
-To define the end cap sizes for a slider, assign an appropriate value to the image’s [`capInsets`](https://developer.apple.com/documentation/UIKit/UIImage/capInsets) property. For more information about how this value defines the regions of the slider, see the [`UIImage`](https://developer.apple.com/documentation/UIKit/UIImage).
+To define the end cap sizes for a slider, assign an appropriate value to the image’s [`capInsets`](https://developer.apple.com/documentation/uikit/uiimage/capinsets) property. For more information about how this value defines the regions of the slider, see the [`UIImage`](https://developer.apple.com/documentation/uikit/uiimage).
 
 For a description of slider and thumb images, see [`Customizing the volume slider’s appearance`](mpvolumeview#Customizing-the-volume-sliders-appearance.md).
 

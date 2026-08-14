@@ -46,7 +46,7 @@ For custom modal transition styles, you can provide a [`UIPresentationController
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 ### Conforming Types
 - [UISearchController](uisearchcontroller.md)
 

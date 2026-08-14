@@ -25,7 +25,7 @@ An `OSStatus` result code.
 ## Parameters
 
 - `connection`: The connection to update.
-- `inConnectionParams`: The connection’s new parameters in a [`CFData`](https://developer.apple.com/documentation/CoreFoundation/CFData).
+- `inConnectionParams`: The connection’s new parameters in a [`CFData`](https://developer.apple.com/documentation/corefoundation/cfdata).
 
 ## See Also
 

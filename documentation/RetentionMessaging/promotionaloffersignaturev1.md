@@ -20,7 +20,7 @@ To provide a promotional-offer retention message, you need to cryptographically 
 
 > 💡 **Tip**: For a simpler implementation, use [`promotionalOfferSignatureV2`](promotionaloffersignaturev2.md) instead.
 
-For instructions on generating the `encodedSignature` for the `promotionalOfferSignatureV1`, see [`Generating a signature for promotional offers`](https://developer.apple.com/documentation/StoreKit/generating-a-signature-for-promotional-offers).
+For instructions on generating the `encodedSignature` for the `promotionalOfferSignatureV1`, see [`Generating a signature for promotional offers`](https://developer.apple.com/documentation/storekit/generating-a-signature-for-promotional-offers).
 
 ## Properties
 

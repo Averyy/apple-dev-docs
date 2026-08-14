@@ -19,15 +19,15 @@ class NSResponder
 
 The core classes—[`NSApplication`](nsapplication.md), [`NSWindow`](nswindow.md), and [`NSView`](nsview.md)—inherit from [`NSResponder`](nsresponder.md), as must any class that handles events. The responder model uses three components: event messages, action messages, and the responder chain.
 
-[`NSResponder`](nsresponder.md) also plays an important role in the presentation of error information. The default implementations of the [`presentError(_:)`](nsresponder/presenterror(_:).md) and [`presentError(_:modalFor:delegate:didPresent:contextInfo:)`](nsresponder/presenterror(_:modalfor:delegate:didpresent:contextinfo:).md) methods send [`willPresentError(_:)`](nsresponder/willpresenterror(_:).md) to `self`, thereby giving subclasses the opportunity to customize the localized information presented in error alerts. `NSResponder` then forwards the message to the next responder, passing it the customized [`NSError`](https://developer.apple.com/documentation/Foundation/NSError) object. The exact path up the modified responder chain depends on the type of application window:
+[`NSResponder`](nsresponder.md) also plays an important role in the presentation of error information. The default implementations of the [`presentError(_:)`](nsresponder/presenterror(_:).md) and [`presentError(_:modalFor:delegate:didPresent:contextInfo:)`](nsresponder/presenterror(_:modalfor:delegate:didpresent:contextinfo:).md) methods send [`willPresentError(_:)`](nsresponder/willpresenterror(_:).md) to `self`, thereby giving subclasses the opportunity to customize the localized information presented in error alerts. `NSResponder` then forwards the message to the next responder, passing it the customized [`NSError`](https://developer.apple.com/documentation/foundation/nserror) object. The exact path up the modified responder chain depends on the type of application window:
 
 - Window that the document owns: view > superviews > window > window controller > document object > document controller > the application object
 - Window with window controller but no documents: view > superviews > window > window controller > the application object
 - Window with no window controllers: view > superviews > window > the application object
 
-[`NSApplication`](nsapplication.md) displays a document-modal error alert and, if the error object has a recovery attempter, gives it a chance to recover from the error. A recovery attempter is an object that conforms to the [`NSErrorRecoveryAttempting`](https://developer.apple.com/documentation/Foundation/nserrorrecoveryattempting) informal protocol.
+[`NSApplication`](nsapplication.md) displays a document-modal error alert and, if the error object has a recovery attempter, gives it a chance to recover from the error. A recovery attempter is an object that conforms to the [`NSErrorRecoveryAttempting`](https://developer.apple.com/documentation/foundation/nserrorrecoveryattempting) informal protocol.
 
-> **Note**:  In macOS 10.15 and later, [`NSResponder`](nsresponder.md) and its descendants call the [`dealloc`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class/dealloc) method on the main thread. This method helps to avoid situations where an asynchronous block unexpectedly deallocates an object on a background queue.
+> **Note**:  In macOS 10.15 and later, [`NSResponder`](nsresponder.md) and its descendants call the [`dealloc`](https://developer.apple.com/documentation/objectivec/nsobject-swift.class/dealloc) method on the main thread. This method helps to avoid situations where an asynchronous block unexpectedly deallocates an object on a background queue.
 
 ## Topics
 
@@ -200,7 +200,7 @@ The core classes—[`NSApplication`](nsapplication.md), [`NSWindow`](nswindow.md
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Inherited By
 - [NSApplication](nsapplication.md)
 - [NSDrawer](nsdrawer.md)
@@ -210,19 +210,19 @@ The core classes—[`NSApplication`](nsapplication.md), [`NSWindow`](nswindow.md
 - [NSWindow](nswindow.md)
 - [NSWindowController](nswindowcontroller.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [Copyable](../Swift/Copyable.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Escapable](../Swift/Escapable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCoding](../Foundation/NSCoding.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [Copyable](../swift/copyable.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Escapable](../swift/escapable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCoding](../foundation/nscoding.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 - [NSStandardKeyBindingResponding](nsstandardkeybindingresponding.md)
 - [NSTouchBarProvider](nstouchbarprovider.md)
 - [NSUserActivityRestoring](nsuseractivityrestoring.md)
-- [Sendable](../Swift/Sendable.md)
+- [Sendable](../swift/sendable.md)
 
 
 ---

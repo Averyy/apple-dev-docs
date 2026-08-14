@@ -25,7 +25,7 @@ A [`CIFilter`](cifilter-swift.class.md) object.
 
 #### Discussion
 
-You can pass any of the keys defined in [`RAW Image Options`](raw-image-options.md) along with the appropriate value in `options`. You should provide a source type identifier hint key ([`kCGImageSourceTypeIdentifierHint`](https://developer.apple.com/documentation/ImageIO/kCGImageSourceTypeIdentifierHint)) and the appropriate source type value to help the decoder determine the file type. Otherwise it’s possible to obtain incorrect results.
+You can pass any of the keys defined in [`RAW Image Options`](raw-image-options.md) along with the appropriate value in `options`. You should provide a source type identifier hint key ([`kCGImageSourceTypeIdentifierHint`](https://developer.apple.com/documentation/imageio/kcgimagesourcetypeidentifierhint)) and the appropriate source type value to help the decoder determine the file type. Otherwise it’s possible to obtain incorrect results.
 
 The first step when working with RAW images in Core Image is to process the image using either [`init(imageData:options:)`](cifilter-swift.class/init(imagedata:options:).md) or [`init(imageURL:options:)`](cifilter-swift.class/init(imageurl:options:).md). These initializers create a [`CIFilter`](cifilter-swift.class.md) object with an [`outputImage`](cifilter-swift.class/outputimage.md) which is a [`CIImage`](ciimage.md) representation of the supplied RAW image. You can process After calling this method, the [`CIFilter`](cifilter-swift.class.md) object returns a [`CIImage`](ciimage.md) object that’s properly processed similar to images retrieved using the `outputImage` key.
 

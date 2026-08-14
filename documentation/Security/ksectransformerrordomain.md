@@ -17,7 +17,7 @@ let kSecTransformErrorDomain: CFString
 
 #### Discussion
 
-Use this [`CFError`](https://developer.apple.com/documentation/CoreFoundation/CFError) object to determine what went wrong.
+Use this [`CFError`](https://developer.apple.com/documentation/corefoundation/cferror) object to determine what went wrong.
 
 
 ---

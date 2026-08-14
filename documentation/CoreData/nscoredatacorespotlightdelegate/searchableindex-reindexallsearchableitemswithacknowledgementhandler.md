@@ -20,7 +20,7 @@ func searchableIndex(_ searchableIndex: CSSearchableIndex, reindexAllSearchableI
 
 #### Discussion
 
-For more information, see [`searchableIndex(_:reindexAllSearchableItemsWithAcknowledgementHandler:)`](https://developer.apple.com/documentation/CoreSpotlight/CSSearchableIndexDelegate/searchableIndex(_:reindexAllSearchableItemsWithAcknowledgementHandler:)).
+For more information, see [`searchableIndex(_:reindexAllSearchableItemsWithAcknowledgementHandler:)`](https://developer.apple.com/documentation/corespotlight/cssearchableindexdelegate/searchableindex(_:reindexallsearchableitemswithacknowledgementhandler:)).
 
 ## Parameters
 

@@ -23,7 +23,7 @@ class WKContentRuleList
 
 A [`WKContentRuleList`](wkcontentrulelist.md) object represents a compiled set of rules for modifying how a webpage loads content. You don’t create a [`WKContentRuleList`](wkcontentrulelist.md) directly. Instead, you specify your rules in JSON format and compile them using the [`compileContentRuleList(forIdentifier:encodedContentRuleList:completionHandler:)`](wkcontentruleliststore/compilecontentrulelist(foridentifier:encodedcontentrulelist:completionhandler:).md) method of [`WKContentRuleListStore`](wkcontentruleliststore.md). That method compiles your rules into an efficient byte format and returns them in an instance of this class.
 
-Content rule lists use the same syntax as content blocker extensions in Safari. For more information on how to specify the JSON for your rule lists, see [`Creating a content blocker`](https://developer.apple.com/documentation/SafariServices/creating-a-content-blocker).
+Content rule lists use the same syntax as content blocker extensions in Safari. For more information on how to specify the JSON for your rule lists, see [`Creating a content blocker`](https://developer.apple.com/documentation/safariservices/creating-a-content-blocker).
 
 ## Topics
 
@@ -34,15 +34,15 @@ Content rule lists use the same syntax as content blocker extensions in Safari. 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [Sendable](../Swift/Sendable.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [Sendable](../swift/sendable.md)
 
 ## See Also
 

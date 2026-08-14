@@ -28,8 +28,8 @@ In macOS 10.5 and later, the printing system supports globalized PPD files as de
 
 ## Parameters
 
-- `ppd`: A Core Foundation URL object for a PPD file. You can obtain a PPD URL using the function  .
-- `localizedPPD`: A pointer to your   variable. On return, the variable refers to a Core Foundation URL object. The URL specifies the location of a PPD file or a compressed PPD file that has been localized for the current user's language preference. You are responsible for releasing the URL. If the   parameter is not valid, the variable is set to  .
+- `ppd`: A Core Foundation URL object for a PPD file. You can obtain a PPD URL using the function [`PMCopyAvailablePPDs(_:_:)`](1464170-pmcopyavailableppds.md).
+- `localizedPPD`: A pointer to your [`CFURL`](https://developer.apple.com/documentation/corefoundation/cfurl) variable. On return, the variable refers to a Core Foundation URL object. The URL specifies the location of a PPD file or a compressed PPD file that has been localized for the current user's language preference. You are responsible for releasing the URL. If the `ppd` parameter is not valid, the variable is set to `NULL`.
 
 ## See Also
 

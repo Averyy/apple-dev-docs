@@ -23,8 +23,8 @@ This method creates a new network interface object and attaches it as a client o
 
 ## Parameters
 
-- `interface`: Upon success (return value is  ), the pointer to the interface object will be written to the argument provided.
-- `doRegister`: If true, start interface matching before returning. Drivers can pass   to postpone interface matching, then register the interface when ready.
+- `interface`: Upon success (return value is `true`), the pointer to the interface object will be written to the argument provided.
+- `doRegister`: If true, start interface matching before returning. Drivers can pass `false` to postpone interface matching, then register the interface when ready.
 
 ## See Also
 

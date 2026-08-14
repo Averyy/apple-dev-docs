@@ -21,11 +21,11 @@ var expectsMediaDataInRealTime: Bool { get set }
 
 #### Discussion
 
-Set this value to [`true`](https://developer.apple.com/documentation/Swift/true) if your app appends media data to the input from a real-time source, such as an [`AVCaptureOutput`](avcaptureoutput.md). Setting a [`true`](https://developer.apple.com/documentation/Swift/true) value optimizes the input for real-time usage so it accurately calculates the state of its [`isReadyForMoreMediaData`](avassetwriterinput/isreadyformoremediadata.md) property value.
+Set this value to [`true`](https://developer.apple.com/documentation/swift/true) if your app appends media data to the input from a real-time source, such as an [`AVCaptureOutput`](avcaptureoutput.md). Setting a [`true`](https://developer.apple.com/documentation/swift/true) value optimizes the input for real-time usage so it accurately calculates the state of its [`isReadyForMoreMediaData`](avassetwriterinput/isreadyformoremediadata.md) property value.
 
 You can’t set this value after writing starts.
 
-> ❗ **Important**:  To ensure optimal behavior, don’t set the value of this property and [`performsMultiPassEncodingIfSupported`](avassetwriterinput/performsmultipassencodingifsupported.md) to [`true`](https://developer.apple.com/documentation/Swift/true) at the same time.
+> ❗ **Important**:  To ensure optimal behavior, don’t set the value of this property and [`performsMultiPassEncodingIfSupported`](avassetwriterinput/performsmultipassencodingifsupported.md) to [`true`](https://developer.apple.com/documentation/swift/true) at the same time.
 
 ## See Also
 

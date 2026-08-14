@@ -24,8 +24,8 @@ An [`NSIndexPath`](nsindexpath.md) object.
 
 ## Parameters
 
-- `row`: An index number identifying a row in a [`UITableView`](https://developer.apple.com/documentation/UIKit/UITableView) object in a section identified by `section`.
-- `section`: An index number identifying a section in a [`UITableView`](https://developer.apple.com/documentation/UIKit/UITableView) object.
+- `row`: An index number identifying a row in a [`UITableView`](https://developer.apple.com/documentation/uikit/uitableview) object in a section identified by `section`.
+- `section`: An index number identifying a section in a [`UITableView`](https://developer.apple.com/documentation/uikit/uitableview) object.
 
 ## See Also
 

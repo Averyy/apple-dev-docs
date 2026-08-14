@@ -22,7 +22,7 @@ var descriptionVisibility: Visibility { get }
 
 #### Discussion
 
-Use this property if you choose to support configuring the description visibility in your custom style. It reflects the value that the ancestor view sets with the [`productDescription(_:)`](https://developer.apple.com/documentation/SwiftUI/View/productDescription(_:)) view modifier.
+Use this property if you choose to support configuring the description visibility in your custom style. It reflects the value that the ancestor view sets with the [`productDescription(_:)`](https://developer.apple.com/documentation/swiftui/view/productdescription(_:)) view modifier.
 
 
 ---

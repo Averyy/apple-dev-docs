@@ -42,8 +42,8 @@ Xcode lets you configure your volume control in your storyboard file. The follow
 
 | Attribute | Description |
 | --- | --- |
-| Controls Local Volume | The volume control’s audio source. If checked, the control affects the volume of long-form audio playing on the watch.  If unchecked, it affects the volume of audio playing on the paired iPhone. ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) You must set this value at design time. You cannot change its value programmatically. |
-| Tint Color | The tint color for the volume control.  By default, the system uses the application’s tint color. ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) The system only applies the tint color to the control’s default state (when the crown is not being used to adjust the volume). ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) You can change this value programmatically using the [`setTintColor(_:)`](wkinterfacevolumecontrol/settintcolor(_:).md) method. |
+| Controls Local Volume | The volume control’s audio source. If checked, the control affects the volume of long-form audio playing on the watch.  If unchecked, it affects the volume of audio playing on the paired iPhone. ![None](/images/com.apple.watchkit/spacer.png) You must set this value at design time. You cannot change its value programmatically. |
+| Tint Color | The tint color for the volume control.  By default, the system uses the application’s tint color. ![None](/images/com.apple.watchkit/spacer.png) The system only applies the tint color to the control’s default state (when the crown is not being used to adjust the volume). ![None](/images/com.apple.watchkit/spacer.png) You can change this value programmatically using the [`setTintColor(_:)`](wkinterfacevolumecontrol/settintcolor(_:).md) method. |
 
 ## Topics
 
@@ -66,12 +66,12 @@ Xcode lets you configure your volume control in your storyboard file. The follow
 ### Inherits From
 - [WKInterfaceObject](wkinterfaceobject.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 
@@ -79,7 +79,7 @@ Xcode lets you configure your volume control in your storyboard file. The follow
   Enable background audio in your app to provide a seamless playback experience.
 - [Adding a Now Playing View](adding-a-now-playing-view.md)
   Provide a view that controls the currently playing audio from your app.
-- [PUICAutoLaunchAudioOptOut](../BundleResources/Information-Property-List/PUICAutoLaunchAudioOptOut.md)
+- [PUICAutoLaunchAudioOptOut](../bundleresources/information-property-list/puicautolaunchaudiooptout.md)
   A Boolean value that indicates whether a watchOS app should opt out of automatically launching when its companion iOS app starts playing audio content.
 - [class WKAudioFilePlayer](wkaudiofileplayer.md)
   An object that controls playback of a single audio item.

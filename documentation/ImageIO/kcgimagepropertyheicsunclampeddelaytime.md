@@ -22,7 +22,7 @@ let kCGImagePropertyHEICSUnclampedDelayTime: CFString
 
 #### Discussion
 
-The value of this key is a [`CFNumber`](https://developer.apple.com/documentation/CoreFoundation/CFNumber) with a floating-point value.
+The value of this key is a [`CFNumber`](https://developer.apple.com/documentation/corefoundation/cfnumber) with a floating-point value.
 
 ## See Also
 

@@ -42,7 +42,7 @@ This protocol contains methods used to create views and view controllers from a 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 ### Conforming Types
 - [TVInterfaceFactory](tvinterfacefactory.md)
 

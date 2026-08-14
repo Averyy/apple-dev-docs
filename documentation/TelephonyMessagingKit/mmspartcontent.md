@@ -7,7 +7,6 @@ A structure that defines custom headers within MMS content.
 
 **Availability**:
 - iOS 26.0+
-- iPadOS 26.0+
 
 ## Declaration
 
@@ -33,7 +32,7 @@ struct MMSPartContent
   A unique identifier for the part.
 - [var contentType: UTType?](mmspartcontent/contenttype.md)
   The content type of the part, as a Uniform Type Identifier.
-- [struct UTType](../UniformTypeIdentifiers/UTType-swift.struct.md)
+- [struct UTType](../uniformtypeidentifiers/uttype-swift.struct.md)
   A structure that represents a type of data to load, send, or receive.
 ### Working with custom headers
 - [var customHeaders: [MMSPartContent.MMSCustomHeader]](mmspartcontent/customheaders.md)
@@ -46,10 +45,10 @@ struct MMSPartContent
 ## Relationships
 
 ### Conforms To
-- [Decodable](../Swift/Decodable.md)
-- [Encodable](../Swift/Encodable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Decodable](../swift/decodable.md)
+- [Encodable](../swift/encodable.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

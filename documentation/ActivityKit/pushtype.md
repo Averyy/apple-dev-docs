@@ -32,7 +32,7 @@ To learn more about using ActivityKit push notifications to update your Live Act
 ## Relationships
 
 ### Conforms To
-- [Equatable](../Swift/Equatable.md)
+- [Equatable](../swift/equatable.md)
 
 ## See Also
 

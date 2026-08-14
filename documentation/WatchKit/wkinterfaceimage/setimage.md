@@ -16,7 +16,7 @@ func setImage(_ image: UIImage?)
 
 #### Discussion
 
-This method changes the image being displayed. Use this method to assign either a static image or an animated image that you created using the [`animatedImage(with:duration:)`](https://developer.apple.com/documentation/UIKit/UIImage/animatedImage(with:duration:)) method.
+This method changes the image being displayed. Use this method to assign either a static image or an animated image that you created using the [`animatedImage(with:duration:)`](https://developer.apple.com/documentation/uikit/uiimage/animatedimage(with:duration:)) method.
 
 When setting images, always try to use images that are sized to fit the available space. Images are rendered according to the mode and size attributes you set for the image interface object.
 

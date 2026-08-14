@@ -20,9 +20,9 @@ var outputName: String?
 
 #### Discussion
 
-When training an image classifier with a custom feature extractor, use [`outputName`](mlimageclassifier/customfeatureextractor/outputname.md) to select a layer within the model that has an output of [`MLMultiArray`](https://developer.apple.com/documentation/CoreML/MLMultiArray).
+When training an image classifier with a custom feature extractor, use [`outputName`](mlimageclassifier/customfeatureextractor/outputname.md) to select a layer within the model that has an output of [`MLMultiArray`](https://developer.apple.com/documentation/coreml/mlmultiarray).
 
-Set [`outputName`](mlimageclassifier/customfeatureextractor/outputname.md) to `nil` if the model (specified by [`modelPath`](mlimageclassifier/customfeatureextractor/modelpath.md)) has only one output of type [`MLMultiArray`](https://developer.apple.com/documentation/CoreML/MLMultiArray).
+Set [`outputName`](mlimageclassifier/customfeatureextractor/outputname.md) to `nil` if the model (specified by [`modelPath`](mlimageclassifier/customfeatureextractor/modelpath.md)) has only one output of type [`MLMultiArray`](https://developer.apple.com/documentation/coreml/mlmultiarray).
 
 ## See Also
 

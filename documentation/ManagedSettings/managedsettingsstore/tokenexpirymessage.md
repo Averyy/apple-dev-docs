@@ -23,9 +23,9 @@ Use these messages to refresh tokens in your database that are expired
 ## Relationships
 
 ### Conforms To
-- [NotificationCenter.AsyncMessage](../Foundation/NotificationCenter/AsyncMessage.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [NotificationCenter.AsyncMessage](../foundation/notificationcenter/asyncmessage.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 
 ---

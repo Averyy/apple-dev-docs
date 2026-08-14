@@ -16,7 +16,7 @@ static let compoundType: NSRuleEditor.PredicatePartKey
 
 #### Discussion
 
-If specified, the other keys are ignored and the predicate for the row will be an [`NSCompoundPredicate`](https://developer.apple.com/documentation/Foundation/NSCompoundPredicate) predicate whose subpredicates are the predicates of the subrows of the given row.
+If specified, the other keys are ignored and the predicate for the row will be an [`NSCompoundPredicate`](https://developer.apple.com/documentation/foundation/nscompoundpredicate) predicate whose subpredicates are the predicates of the subrows of the given row.
 
 ## See Also
 

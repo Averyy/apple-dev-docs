@@ -21,7 +21,7 @@ The appropriate undo manager for the specified window.
 
 #### Discussion
 
-If this method is not implemented by the delegate, the window creates an[`UndoManager`](https://developer.apple.com/documentation/Foundation/UndoManager) for `window`. Further, after a window creates its own undo manager, this method is never again called on the delegate.
+If this method is not implemented by the delegate, the window creates an[`UndoManager`](https://developer.apple.com/documentation/foundation/undomanager) for `window`. Further, after a window creates its own undo manager, this method is never again called on the delegate.
 
 ## Parameters
 

@@ -22,7 +22,7 @@ func perform(_ requests: [VNRequest], on sampleBuffer: CMSampleBuffer) throws
 ## Parameters
 
 - `requests`: The array of requests to perform.
-- `sampleBuffer`: A sample buffer containing a valid [`imageBuffer`](https://developer.apple.com/documentation/CoreMedia/CMSampleBuffer/imageBuffer).
+- `sampleBuffer`: A sample buffer containing a valid [`imageBuffer`](https://developer.apple.com/documentation/coremedia/cmsamplebuffer/imagebuffer).
 
 ## See Also
 

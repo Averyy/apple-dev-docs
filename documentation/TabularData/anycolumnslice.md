@@ -72,18 +72,18 @@ struct AnyColumnSlice
 
 ### Conforms To
 - [AnyColumnProtocol](anycolumnprotocol.md)
-- [BidirectionalCollection](../Swift/BidirectionalCollection.md)
-- [Collection](../Swift/Collection.md)
-- [Copyable](../Swift/Copyable.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomReflectable](../Swift/CustomReflectable.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Escapable](../Swift/Escapable.md)
-- [Hashable](../Swift/Hashable.md)
-- [MutableCollection](../Swift/MutableCollection.md)
-- [RandomAccessCollection](../Swift/RandomAccessCollection.md)
-- [Sequence](../Swift/Sequence.md)
+- [BidirectionalCollection](../swift/bidirectionalcollection.md)
+- [Collection](../swift/collection.md)
+- [Copyable](../swift/copyable.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomReflectable](../swift/customreflectable.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Escapable](../swift/escapable.md)
+- [Hashable](../swift/hashable.md)
+- [MutableCollection](../swift/mutablecollection.md)
+- [RandomAccessCollection](../swift/randomaccesscollection.md)
+- [Sequence](../swift/sequence.md)
 
 ## See Also
 

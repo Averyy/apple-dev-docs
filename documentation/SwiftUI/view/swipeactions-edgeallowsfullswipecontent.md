@@ -54,7 +54,7 @@ List {
 
 Actions appear in the order you list them, starting from the swipe’s originating edge. In the example above, the Delete action appears closest to the screen’s trailing edge:
 
-![A screenshot of a list of messages, where one of the messages has been](https://docs-assets.developer.apple.com/published/262e1f35cb7c1655839ee71ebb1156b7/View-swipeActions-1%402x.png)
+![A screenshot of a list of messages, where one of the messages has been](/images/com.apple.SwiftUI/View-swipeActions-1@2x.png)
 
 For labels or images that appear in swipe actions, SwiftUI automatically applies the [`fill`](symbolvariants/fill-swift.type.property.md) symbol variant, as shown above.
 
@@ -99,7 +99,7 @@ MessageCell(message: message)
 
 The modifications in the code above make the toggle unread action [`blue`](shapestyle/blue.md) and the flag action [`orange`](shapestyle/orange.md):
 
-![A screenshot of a row that the user swiped from the leading edge](https://docs-assets.developer.apple.com/published/3a4c22dfc596282a99c327ad6645eb06/View-swipeActions-2%402x.png)
+![A screenshot of a row that the user swiped from the leading edge](/images/com.apple.SwiftUI/View-swipeActions-2@2x.png)
 
 When you add swipe actions, SwiftUI no longer synthesizes the Delete actions that otherwise appear when using the `ForEach/onDelete(perform:)` method on a [`ForEach`](foreach.md) instance. You become responsible for creating a Delete action, if appropriate, among your swipe actions.
 

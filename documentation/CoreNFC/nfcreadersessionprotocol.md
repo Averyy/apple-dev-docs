@@ -44,7 +44,7 @@ protocol NFCReaderSessionProtocol : NSObjectProtocol
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 ### Conforming Types
 - [NFCNDEFReaderSession](nfcndefreadersession.md)
 - [NFCPaymentTagReaderSession](nfcpaymenttagreadersession.md)
@@ -64,7 +64,7 @@ protocol NFCReaderSessionProtocol : NSObjectProtocol
   A reader session for processing Value Added Service (VAS) tags.
 - [class NFCReaderSession](nfcreadersession-swift.class.md)
   The abstract base class that represents a reader session for detecting NFC tags.
-- [Near Field Communication Tag Reader Session Formats Entitlement](../BundleResources/Entitlements/com.apple.developer.nfc.readersession.formats.md)
+- [Near Field Communication Tag Reader Session Formats Entitlement](../bundleresources/entitlements/com.apple.developer.nfc.readersession.formats.md)
   The Near Field Communication data formats an app can read.
 
 

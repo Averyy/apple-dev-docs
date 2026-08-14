@@ -16,7 +16,7 @@ class WKInterfaceSCNScene
 
 #### Overview
 
-To provide content for a [`WKInterfaceSCNScene`](wkinterfacescnscene.md) interface object, assign a [`SCNScene`](https://developer.apple.com/documentation/SceneKit/SCNScene) object to the interface’s [`scene`](wkinterfacescnscene/scene.md) property. For additional methods and properties for working with SceneKit, see the [`SCNSceneRenderer`](https://developer.apple.com/documentation/SceneKit/SCNSceneRenderer) protocol, which defines functionality common across all platforms.
+To provide content for a [`WKInterfaceSCNScene`](wkinterfacescnscene.md) interface object, assign a [`SCNScene`](https://developer.apple.com/documentation/scenekit/scnscene) object to the interface’s [`scene`](wkinterfacescnscene/scene.md) property. For additional methods and properties for working with SceneKit, see the [`SCNSceneRenderer`](https://developer.apple.com/documentation/scenekit/scnscenerenderer) protocol, which defines functionality common across all platforms.
 
 Do not subclass or create instances of this class yourself. Instead, drag a SceneKit Scene object from your Object Library and add it to your storyboard. Then define an outlet in your interface controller class and connect it to the SceneKit Scene object. For example, to refer to a scene in your interface, define a property with the following syntax in your interface controller class:
 
@@ -44,10 +44,10 @@ Xcode lets you configure information about your SceneKit Scene in your storyboar
 | --- | --- |
 | Antialiasing | The antialiasing mode used for rendering the scene. You can also set this value programmatically using the [`antialiasingMode`](wkinterfacescnscene/antialiasingmode.md) property. |
 | Frame Rate | The desired frame rate for the scene’s animation. You can also set this value programmatically using the [`WKInterfaceSCNScene`](wkinterfacescnscene.md) property. |
-| Default Lighting | A checkbox that determines whether SceneKit automatically adds lights to a scene. If unchecked, SceneKit uses only the light sources contained in the scene graph. If checked, SceneKit automatically adds and places an omnidirectional light source when rendering scenes that contain no lights or only contain ambient lights. You can also set this value programmatically using the [`autoenablesDefaultLighting`](https://developer.apple.com/documentation/SceneKit/SCNSceneRenderer/autoenablesDefaultLighting) property. |
-| Jitter | A checkbox that determines whether SceneKit applies jittering to reduce aliasing artifacts. Jittering is a process that SceneKit uses to improve the visual quality of a rendered scene. While the scene’s content is still, SceneKit moves the [`pointOfView`](https://developer.apple.com/documentation/SceneKit/SCNSceneRenderer/pointOfView) location very slightly (by less than a pixel in projected screen space). It then composites images rendered after several such moves to create the final rendered scene, creating an antialiasing effect that smooths the edges of rendered geometry. You can also set this value programmatically using the [`isJitteringEnabled`](https://developer.apple.com/documentation/SceneKit/SCNSceneRenderer/isJitteringEnabled) property. |
-| Play | A checkbox that determines whether the scene is animated. If unchecked, SceneKit does not increment the scene time, so animations associated with the scene do not play. You can also set this value programmatically using the [`isPlaying`](https://developer.apple.com/documentation/SceneKit/SCNSceneRenderer/isPlaying) property. |
-| Loop | A checkbox that determines whether SceneKit restarts the scene time after all animations in the scene have played. If checked, SceneKit returns the scene time to zero after all animations associated with the scene have played, causing those animations to repeat; otherwise, SceneKit stops playing the scene when all animations have completed. You can also set this value programmatically using the [`loops`](https://developer.apple.com/documentation/SceneKit/SCNSceneRenderer/loops) property. |
+| Default Lighting | A checkbox that determines whether SceneKit automatically adds lights to a scene. If unchecked, SceneKit uses only the light sources contained in the scene graph. If checked, SceneKit automatically adds and places an omnidirectional light source when rendering scenes that contain no lights or only contain ambient lights. You can also set this value programmatically using the [`autoenablesDefaultLighting`](https://developer.apple.com/documentation/scenekit/scnscenerenderer/autoenablesdefaultlighting) property. |
+| Jitter | A checkbox that determines whether SceneKit applies jittering to reduce aliasing artifacts. Jittering is a process that SceneKit uses to improve the visual quality of a rendered scene. While the scene’s content is still, SceneKit moves the [`pointOfView`](https://developer.apple.com/documentation/scenekit/scnscenerenderer/pointofview) location very slightly (by less than a pixel in projected screen space). It then composites images rendered after several such moves to create the final rendered scene, creating an antialiasing effect that smooths the edges of rendered geometry. You can also set this value programmatically using the [`isJitteringEnabled`](https://developer.apple.com/documentation/scenekit/scnscenerenderer/isjitteringenabled) property. |
+| Play | A checkbox that determines whether the scene is animated. If unchecked, SceneKit does not increment the scene time, so animations associated with the scene do not play. You can also set this value programmatically using the [`isPlaying`](https://developer.apple.com/documentation/scenekit/scnscenerenderer/isplaying) property. |
+| Loop | A checkbox that determines whether SceneKit restarts the scene time after all animations in the scene have played. If checked, SceneKit returns the scene time to zero after all animations associated with the scene have played, causing those animations to repeat; otherwise, SceneKit stops playing the scene when all animations have completed. You can also set this value programmatically using the [`loops`](https://developer.apple.com/documentation/scenekit/scnscenerenderer/loops) property. |
 
 ##### Enabling Full Screen Mode
 
@@ -57,7 +57,7 @@ In watchOS 4 and later, SpriteKit and SceneKit scenes can fill the full screen. 
 
 To enable full screen mode, place a SpriteKit or SceneKit scene as the interface controller’s only content. Then, in the interface controller’s Attribute inspector, enable the Full Screen attribute.
 
-![A screenshot showing the Full Screen attribute. ](https://docs-assets.developer.apple.com/published/27bd4b57c9ca3d48a96447c8972c2b98/media-2929968%402x.png)
+![A screenshot showing the Full Screen attribute. ](/images/com.apple.watchkit/media-2929968@2x.png)
 
 ## Topics
 
@@ -79,13 +79,13 @@ To enable full screen mode, place a SpriteKit or SceneKit scene as the interface
 ### Inherits From
 - [WKInterfaceObject](wkinterfaceobject.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [SCNSceneRenderer](../SceneKit/SCNSceneRenderer.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [SCNSceneRenderer](../scenekit/scnscenerenderer.md)
 
 ## See Also
 

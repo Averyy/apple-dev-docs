@@ -39,16 +39,16 @@ By default, each section lays out its content along the main axis of its layout,
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../Swift/BitwiseCopyable.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [RawRepresentable](../Swift/RawRepresentable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [BitwiseCopyable](../swift/bitwisecopyable.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [RawRepresentable](../swift/rawrepresentable.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 
-- [Implementing modern collection views](../UIKit/implementing-modern-collection-views.md)
+- [Implementing modern collection views](../uikit/implementing-modern-collection-views.md)
   Bring compositional layouts to your app and simplify updating your user interface with diffable data sources.
 - [class NSCollectionViewFlowLayout](nscollectionviewflowlayout.md)
   A layout that organizes items into a flexible and configurable arrangement.

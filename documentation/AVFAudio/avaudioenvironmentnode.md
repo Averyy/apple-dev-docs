@@ -29,14 +29,14 @@ To help characterize the environment, this class defines properties for distance
 
 [`AVAudio3DMixingSourceMode`](avaudio3dmixingsourcemode.md) affects how inputs with different channel configurations render. Spatialization applies only to inputs with a mono channel connection format. This class doesn’t spatialize stereo inputs or support inputs with connection formats of more than two channels.
 
-To set the node’s output to a multichannel format, use an [`AVAudioFormat`](avaudioformat.md) that has one of the following [`Audio Channel Layout Tags`](https://developer.apple.com/documentation/CoreAudioTypes/audio-channel-layout-tags):
+To set the node’s output to a multichannel format, use an [`AVAudioFormat`](avaudioformat.md) that has one of the following [`Audio Channel Layout Tags`](https://developer.apple.com/documentation/coreaudiotypes/audio-channel-layout-tags):
 
-- [`kAudioChannelLayoutTag_AudioUnit_4`](https://developer.apple.com/documentation/CoreAudioTypes/kAudioChannelLayoutTag_AudioUnit_4)
-- [`kAudioChannelLayoutTag_AudioUnit_5_0`](https://developer.apple.com/documentation/CoreAudioTypes/kAudioChannelLayoutTag_AudioUnit_5_0)
-- [`kAudioChannelLayoutTag_AudioUnit_6_0`](https://developer.apple.com/documentation/CoreAudioTypes/kAudioChannelLayoutTag_AudioUnit_6_0)
-- [`kAudioChannelLayoutTag_AudioUnit_7_0`](https://developer.apple.com/documentation/CoreAudioTypes/kAudioChannelLayoutTag_AudioUnit_7_0)
-- [`kAudioChannelLayoutTag_AudioUnit_7_0_Front`](https://developer.apple.com/documentation/CoreAudioTypes/kAudioChannelLayoutTag_AudioUnit_7_0_Front)
-- [`kAudioChannelLayoutTag_AudioUnit_8`](https://developer.apple.com/documentation/CoreAudioTypes/kAudioChannelLayoutTag_AudioUnit_8)
+- [`kAudioChannelLayoutTag_AudioUnit_4`](https://developer.apple.com/documentation/coreaudiotypes/kaudiochannellayouttag_audiounit_4)
+- [`kAudioChannelLayoutTag_AudioUnit_5_0`](https://developer.apple.com/documentation/coreaudiotypes/kaudiochannellayouttag_audiounit_5_0)
+- [`kAudioChannelLayoutTag_AudioUnit_6_0`](https://developer.apple.com/documentation/coreaudiotypes/kaudiochannellayouttag_audiounit_6_0)
+- [`kAudioChannelLayoutTag_AudioUnit_7_0`](https://developer.apple.com/documentation/coreaudiotypes/kaudiochannellayouttag_audiounit_7_0)
+- [`kAudioChannelLayoutTag_AudioUnit_7_0_Front`](https://developer.apple.com/documentation/coreaudiotypes/kaudiochannellayouttag_audiounit_7_0_front)
+- [`kAudioChannelLayoutTag_AudioUnit_8`](https://developer.apple.com/documentation/coreaudiotypes/kaudiochannellayouttag_audiounit_8)
 
 ## Topics
 
@@ -78,14 +78,14 @@ To set the node’s output to a multichannel format, use an [`AVAudioFormat`](av
 - [AVAudio3DMixing](avaudio3dmixing.md)
 - [AVAudioMixing](avaudiomixing.md)
 - [AVAudioStereoMixing](avaudiostereomixing.md)
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

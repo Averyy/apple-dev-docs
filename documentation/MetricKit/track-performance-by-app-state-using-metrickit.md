@@ -16,7 +16,7 @@ MetricKit provides the data you need to understand how your app performs in the 
 
 The app is an expense report manager that lets you create reports, scan receipts, and view expenses in different layouts. As you use the app on your device, MetricKit collects performance data in the background. The sample saves incoming metric and diagnostic reports as JSON files in the Files app.
 
-![An iOS app displaying a daily expense breakdown across two spending categories. The presentation can be adjusted to show daily, weekly, monthly, or yearly breakdowns.](https://docs-assets.developer.apple.com/published/edd3e2e5285ee7633cf033a35a8c4be7/track-performance-by-app-state-using-metrickit-1%402x.png)
+![An iOS app displaying a daily expense breakdown across two spending categories. The presentation can be adjusted to show daily, weekly, monthly, or yearly breakdowns.](/images/com.apple.metrickit/track-performance-by-app-state-using-metrickit-1@2x.png)
 
 > **Note**: MetricKit delivers reports on a system-determined schedule. To generate reports during development, choose Debug > Simulate MetricKit Payloads in Xcode.
 
@@ -214,7 +214,7 @@ func endDocumentCapture() {
 }
 ```
 
-The log handle that [`logHandle(category:)`](metricmanager/loghandle(category:).md) returns is persistent. So, MetricKit collects and aggregates all the signposts that this log handle emits. The signpost name and category identify this interval in the resulting [`SignpostIntervalMetric`](signpostintervalmetric.md) objects. You can also use [`OSSignposter`](https://developer.apple.com/documentation/os/OSSignposter) with this handle, but only [`mxSignpost(_:dso:log:name:signpostID:_:_:)`](mxsignpost(_:dso:log:name:signpostid:_:_:).md) populates the [`SignpostIntervalMetric`](signpostintervalmetric.md) measurement properties such as CPU time, memory usage, and logical writes.
+The log handle that [`logHandle(category:)`](metricmanager/loghandle(category:).md) returns is persistent. So, MetricKit collects and aggregates all the signposts that this log handle emits. The signpost name and category identify this interval in the resulting [`SignpostIntervalMetric`](signpostintervalmetric.md) objects. You can also use [`OSSignposter`](https://developer.apple.com/documentation/os/ossignposter) with this handle, but only [`mxSignpost(_:dso:log:name:signpostID:_:_:)`](mxsignpost(_:dso:log:name:signpostid:_:_:).md) populates the [`SignpostIntervalMetric`](signpostintervalmetric.md) measurement properties such as CPU time, memory usage, and logical writes.
 
 The expense report detail view begins the interval when the person taps the button to scan a receipt, and ends it when the scanner sheet dismisses:
 

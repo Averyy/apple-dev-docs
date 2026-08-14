@@ -18,15 +18,15 @@ Consider that there’s only one configuration at the organizational level. Acco
 
 Use your credentials to log in to the [`Apple Developer website`](https://developer.apple.comhttp://developer.apple.com/), then choose Certificates, IDs & Profiles > Services, and click the Configure button in the Account & Organizational Data Sharing section.
 
-![A screenshot of the Certificates, Identifiers and Profiles page with an outline around the Account and Organizational Data Sharing section.](https://docs-assets.developer.apple.com/published/d5dbdf6a52e482d0a43ef91ca688c9b6/media-4113871%402x.png)
+![A screenshot of the Certificates, Identifiers and Profiles page with an outline around the Account and Organizational Data Sharing section.](/images/com.apple.rosterapi/media-4113871@2x.png)
 
 Click the Add button (+) to the right of Configurations, or click the Configure button in the Get Started with Account & Organizational Data Sharing section.
 
-![A screenshot of the Certificates, Identifiers and Profiles  page with an outline around Configurations in the Get Started with Account and Organizational Data Sharing section.](https://docs-assets.developer.apple.com/published/399f868720643f9967d43a42d2818f41/media-4113870%402x.png)
+![A screenshot of the Certificates, Identifiers and Profiles  page with an outline around Configurations in the Get Started with Account and Organizational Data Sharing section.](/images/com.apple.rosterapi/media-4113870@2x.png)
 
 Choose the primary App ID from the drop-down menu, then click Continue.
 
-![A screenshot showing the Primary App ID drop-down menu in the Account and Organizational Data Sharing: Configuration section of the Certificates, Identifiers and Profiles page.](https://docs-assets.developer.apple.com/published/afeeacda4d208f3e3afc3a728441b5f4/media-4113867%402x.png)
+![A screenshot showing the Primary App ID drop-down menu in the Account and Organizational Data Sharing: Configuration section of the Certificates, Identifiers and Profiles page.](/images/com.apple.rosterapi/media-4113867@2x.png)
 
 ##### Set the Return Urls
 
@@ -34,31 +34,31 @@ Return URLs receive the grant code after successfully authorizing with Apple. Fr
 
 Add your return URLs in the Return URLs section, then enter a URL for the Server to Server Notification Endpoint so you can receive updates about people and accounts.
 
-![A screenshot showing the Organizational Data Sharing Scopes and Return URLs areas of the Provide additional configuration details section for the Account and Organizational Data Sharing: Configuration section on the Certificates, Identifiers and Profiles page. In the Organizational Data Sharing Scopes area, the Roster API: User access, Roster API: Class access, and Roster API: Test Data access options are selected. In the Return URLs area, there is an example URL selected for placement in the text field.](https://docs-assets.developer.apple.com/published/df63cb83754f8edbf49d02d0d96ee0ec/media-4113869%402x.png)
+![A screenshot showing the Organizational Data Sharing Scopes and Return URLs areas of the Provide additional configuration details section for the Account and Organizational Data Sharing: Configuration section on the Certificates, Identifiers and Profiles page. In the Organizational Data Sharing Scopes area, the Roster API: User access, Roster API: Class access, and Roster API: Test Data access options are selected. In the Return URLs area, there is an example URL selected for placement in the text field.](/images/com.apple.rosterapi/media-4113869@2x.png)
 
 Review your configuration and click Confirm.
 
-![A screenshot of a confirmation screen with a summary of the primary bundle ID, Server to Server Notification Endpoint URL, and Return URLs. There is an outline around the Confirm button.](https://docs-assets.developer.apple.com/published/5185a3919d59fc55971b334968fb5c2d/media-4113872%402x.png)
+![A screenshot of a confirmation screen with a summary of the primary bundle ID, Server to Server Notification Endpoint URL, and Return URLs. There is an outline around the Confirm button.](/images/com.apple.rosterapi/media-4113872@2x.png)
 
 ##### Generate the Client Secret
 
-Before you can generate the access token, you’ll first need to generate the client secret, which you’ll need to create the token. See [`Creating a client secret`](https://developer.apple.com/documentation/AccountOrganizationalDataSharing/creating-a-client-secret).
+Before you can generate the access token, you’ll first need to generate the client secret, which you’ll need to create the token. See [`Creating a client secret`](https://developer.apple.com/documentation/accountorganizationaldatasharing/creating-a-client-secret).
 
 Next, choose an existing key, or create a new key by clicking the Add button (+).
 
-![A screenshot showing the Certificates, Identifiers and Profiles page with the Keys item highlighted and two keys named TestKey1 and TestKey2.](https://docs-assets.developer.apple.com/published/68bf28ffae2c9bb64d5fdb72ab2912a6/media-4113874%402x.png)
+![A screenshot showing the Certificates, Identifiers and Profiles page with the Keys item highlighted and two keys named TestKey1 and TestKey2.](/images/com.apple.rosterapi/media-4113874@2x.png)
 
 Enter a key name if you’re creating a new key, select Account & Organizational Data Sharing, and click Continue.
 
-![A screenshot showing the Register a New Key section of the Certificates, Identifiers and Profiles page. There are outlines around the Key Name field, which has an entry of Organizational Data Sharing Key, and the Account and Organizational Data Sharing option, which is selected.](https://docs-assets.developer.apple.com/published/f6daee9ef9ea7409f129f9b4920f1ba2/media-4113866%402x.png)
+![A screenshot showing the Register a New Key section of the Certificates, Identifiers and Profiles page. There are outlines around the Key Name field, which has an entry of Organizational Data Sharing Key, and the Account and Organizational Data Sharing option, which is selected.](/images/com.apple.rosterapi/media-4113866@2x.png)
 
 Review the information and then click Register to register the key.
 
-![A screenshot showing the Register a New Key section of the Certificates, Identifiers and Profiles  page. The selected key is enabled and there’s an outline around the Register button.](https://docs-assets.developer.apple.com/published/aacd1d9026520fef8ebe409034a3709a/media-4113868%402x.png)
+![A screenshot showing the Register a New Key section of the Certificates, Identifiers and Profiles  page. The selected key is enabled and there’s an outline around the Register button.](/images/com.apple.rosterapi/media-4113868@2x.png)
 
-Click Download, then set up a client secret. See [`Creating a client secret`](https://developer.apple.com/documentation/AccountOrganizationalDataSharing/creating-a-client-secret).
+Click Download, then set up a client secret. See [`Creating a client secret`](https://developer.apple.com/documentation/accountorganizationaldatasharing/creating-a-client-secret).
 
-![A screenshot showing the Download Your Key section of the Certificates, Identifiers and Profiles page. The key is available to download and there’s an outline around the Download button. A warning says “After downloading your key, it cannot be re-downloaded as the server copy is removed. If you are not prepared to download your key at this time, click Done and download it at a later time. Be sure to save a backup of your key in a secure place”.](https://docs-assets.developer.apple.com/published/6b4aba8ecbe7707bc654cc69fe1b00e0/media-4113873%402x.png)
+![A screenshot showing the Download Your Key section of the Certificates, Identifiers and Profiles page. The key is available to download and there’s an outline around the Download button. A warning says “After downloading your key, it cannot be re-downloaded as the server copy is removed. If you are not prepared to download your key at this time, click Done and download it at a later time. Be sure to save a backup of your key in a secure place”.](/images/com.apple.rosterapi/media-4113873@2x.png)
 
 ##### Validate Using the Test Scope
 

@@ -28,7 +28,7 @@ The value you return from the `operation` closure.
 
 > **Note**: Rethrows any error thrown by the operation.
 
-Use this method to handle cancellation in an app intent’s [`perform()`](appintent/perform().md) method when you also want to know the reason for cancellation. If cancellation occurs due to a timeout or someone canceling the operation, the system runs your `handler` and gives you a little extra time to perform any cleanup. If you don’t need to know the cancellation reason, you can use the standard Swift [`withTaskCancellationHandler(handler:operation:)`](https://developer.apple.com/documentation/Swift/withTaskCancellationHandler(handler:operation:)) method for tasks instead.
+Use this method to handle cancellation in an app intent’s [`perform()`](appintent/perform().md) method when you also want to know the reason for cancellation. If cancellation occurs due to a timeout or someone canceling the operation, the system runs your `handler` and gives you a little extra time to perform any cleanup. If you don’t need to know the cancellation reason, you can use the standard Swift [`withTaskCancellationHandler(handler:operation:)`](https://developer.apple.com/documentation/swift/withtaskcancellationhandler(handler:operation:)) method for tasks instead.
 
 ## Parameters
 

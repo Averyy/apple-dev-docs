@@ -20,7 +20,7 @@ An identity is a digital certificate together with its associated private key. T
 
 The following figure shows an example of a choose identity panel.
 
-![Choose identity panel](https://docs-assets.developer.apple.com/published/c01aaf0713be6040b28c73f6d4b63da5/media-1965600.jpg)
+![Choose identity panel](/images/com.apple.securityinterface/media-1965600.jpg)
 
 ## Topics
 
@@ -63,33 +63,33 @@ The following figure shows an example of a choose identity panel.
 - [func setDomain(String!)](sfchooseidentitypanel/setdomain(_:).md)
   Sets an optional domain in which the identity is to be used.
 ### Delegate methods for providing help
-- [func chooseIdentityPanelShowHelp(SFChooseIdentityPanel!) -> Bool](../ObjectiveC/NSObject-swift.class/chooseIdentityPanelShowHelp(_:).md)
+- [func chooseIdentityPanelShowHelp(SFChooseIdentityPanel!) -> Bool](../objectivec/nsobject-swift.class/chooseidentitypanelshowhelp(_:).md)
   Implements custom help behavior for the modal panel.
 
 ## Relationships
 
 ### Inherits From
-- [NSPanel](../AppKit/NSPanel.md)
+- [NSPanel](../appkit/nspanel.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSAccessibilityElementProtocol](../AppKit/NSAccessibilityElementProtocol.md)
-- [NSAccessibilityProtocol](../AppKit/NSAccessibilityProtocol.md)
-- [NSAnimatablePropertyContainer](../AppKit/NSAnimatablePropertyContainer.md)
-- [NSAppearanceCustomization](../AppKit/NSAppearanceCustomization.md)
-- [NSCoding](../Foundation/NSCoding.md)
-- [NSMenuItemValidation](../AppKit/NSMenuItemValidation.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [NSStandardKeyBindingResponding](../AppKit/NSStandardKeyBindingResponding.md)
-- [NSTouchBarProvider](../AppKit/NSTouchBarProvider.md)
-- [NSUserActivityRestoring](../AppKit/NSUserActivityRestoring.md)
-- [NSUserInterfaceItemIdentification](../AppKit/NSUserInterfaceItemIdentification.md)
-- [NSUserInterfaceValidations](../AppKit/NSUserInterfaceValidations.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSAccessibilityElementProtocol](../appkit/nsaccessibilityelementprotocol.md)
+- [NSAccessibilityProtocol](../appkit/nsaccessibilityprotocol.md)
+- [NSAnimatablePropertyContainer](../appkit/nsanimatablepropertycontainer.md)
+- [NSAppearanceCustomization](../appkit/nsappearancecustomization.md)
+- [NSCoding](../foundation/nscoding.md)
+- [NSMenuItemValidation](../appkit/nsmenuitemvalidation.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSStandardKeyBindingResponding](../appkit/nsstandardkeybindingresponding.md)
+- [NSTouchBarProvider](../appkit/nstouchbarprovider.md)
+- [NSUserActivityRestoring](../appkit/nsuseractivityrestoring.md)
+- [NSUserInterfaceItemIdentification](../appkit/nsuserinterfaceitemidentification.md)
+- [NSUserInterfaceValidations](../appkit/nsuserinterfacevalidations.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

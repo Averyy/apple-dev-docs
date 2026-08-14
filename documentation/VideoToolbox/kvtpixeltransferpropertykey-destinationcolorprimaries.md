@@ -23,7 +23,7 @@ let kVTPixelTransferPropertyKey_DestinationColorPrimaries: CFString
 
 Specifying this value may lead to performance degradation, as a color matching operation may need to be performed between the source and the destination.
 
-See [`kCMFormatDescriptionExtension_ColorPrimaries`](https://developer.apple.com/documentation/CoreMedia/kCMFormatDescriptionExtension_ColorPrimaries-swift.var) in `CMFormatDescription.h` for supported values.
+See [`kCMFormatDescriptionExtension_ColorPrimaries`](https://developer.apple.com/documentation/coremedia/kcmformatdescriptionextension_colorprimaries-swift.var) in `CMFormatDescription.h` for supported values.
 
 ## See Also
 

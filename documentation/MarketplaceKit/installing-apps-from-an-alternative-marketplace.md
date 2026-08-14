@@ -8,7 +8,7 @@ Manage the installation of apps that developers distribute from your marketplace
 
 To install apps that others distribute on your marketplace, call the [`AppLibrary`](applibrary.md) installation functions. The system enforces that calls displaying the install sheet need to source from the callback of an [`ActionButton`](actionbutton.md). This ensures that app installation occurs as the result of a person’s interaction with your marketplace app.
 
-In processing the request, the system retrieves a license from your web server. Provide the license by implementing the [`App License Delivery SDK`](https://developer.apple.com/documentation/AppLicenseDeliverySDK) on a Swift server with an endpoint that the device’s operating system discovers by looking up a standard URL scheme.
+In processing the request, the system retrieves a license from your web server. Provide the license by implementing the [`App License Delivery SDK`](https://developer.apple.com/documentation/applicensedeliverysdk) on a Swift server with an endpoint that the device’s operating system discovers by looking up a standard URL scheme.
 
 If your marketplace requires authentication to download apps — for example, a purchase or log in — implement an authentication service that the device can query to decorate the headers of its communication with your endpoints. To set the header, and handle any network failures, provide a [`MarketplaceAppExtension`](marketplaceappextension.md) in your app and implement its callbacks.
 
@@ -82,7 +82,7 @@ If an app requires a purchase before installation, modify the `confirmInstall` c
 
 #### Retrieve a License for the App From Your Web Server
 
-If your website doesn’t require authentication or the system is already successfully authorized to act on behalf of the page visitor, the system requests an app license from your web server. To process license requests, your web server implements an endpoint that serves generated licenses by using [`App License Delivery SDK`](https://developer.apple.com/documentation/AppLicenseDeliverySDK).
+If your website doesn’t require authentication or the system is already successfully authorized to act on behalf of the page visitor, the system requests an app license from your web server. To process license requests, your web server implements an endpoint that serves generated licenses by using [`App License Delivery SDK`](https://developer.apple.com/documentation/applicensedeliverysdk).
 
 #### Serve a Restore Request
 
@@ -121,7 +121,7 @@ The POST contains the following fields:
 
 Compare the `platform` and `osVersion` fields to those contained within the app’s manifest to confirm that your alternative distribution package supports the device attempting to install it.
 
-> ❗ **Important**: Host the file using `https://` with a valid certificate. Don’t use redirects. For more information, see [`Supporting associated domains`](https://developer.apple.com/documentation/Xcode/supporting-associated-domains).
+> ❗ **Important**: Host the file using `https://` with a valid certificate. Don’t use redirects. For more information, see [`Supporting associated domains`](https://developer.apple.com/documentation/xcode/supporting-associated-domains).
 
 If downloading your app requires authorization and the system communicates with your endpoint without a valid access token, respond to the call with a status that requests reauthentication. An invalid access token can result from token expiration, or the restoration of a device from a backup. For more information, see [`Reauthenticating a person to manage apps`](reauthenticating-a-person-to-manage-apps.md).
 

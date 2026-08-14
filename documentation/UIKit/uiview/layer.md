@@ -22,7 +22,7 @@ var layer: CALayer { get }
 
 This property is never `nil`. The value of the [`layerClass`](uiview/layerclass.md) property determines the actual class of the layer object. The view is the layer’s delegate.
 
-> ⚠️ **Warning**:  Because the view is the layer’s delegate, never make the view the delegate of another [`CALayer`](https://developer.apple.com/documentation/QuartzCore/CALayer) object. Additionally, never change the delegate of this layer object.
+> ⚠️ **Warning**:  Because the view is the layer’s delegate, never make the view the delegate of another [`CALayer`](https://developer.apple.com/documentation/quartzcore/calayer) object. Additionally, never change the delegate of this layer object.
 
 ## See Also
 

@@ -50,8 +50,8 @@ protocol Markup : Sendable
 ## Relationships
 
 ### Inherits From
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 ### Conforming Types
 - [ImageMarkup](imagemarkup.md)
 - [LinkMarkup](linkmarkup.md)

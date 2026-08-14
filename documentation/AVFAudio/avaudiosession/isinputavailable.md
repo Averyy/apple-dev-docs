@@ -21,7 +21,7 @@ var isInputAvailable: Bool { get }
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/Swift/true) if an input route is available, otherwise [`false`](https://developer.apple.com/documentation/Swift/false).
+[`true`](https://developer.apple.com/documentation/swift/true) if an input route is available, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
 
 #### Discussion
 

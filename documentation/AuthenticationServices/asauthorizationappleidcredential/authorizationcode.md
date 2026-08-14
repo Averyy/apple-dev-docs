@@ -24,7 +24,7 @@ var authorizationCode: Data? { get }
 
 Your app uses this short-lived token as proof that it has authorization to interact with the server.
 
-The system encodes the object as a string using [`NSUTF8StringEncoding`](https://developer.apple.com/documentation/Foundation/NSUTF8StringEncoding).
+The system encodes the object as a string using [`NSUTF8StringEncoding`](https://developer.apple.com/documentation/foundation/nsutf8stringencoding).
 
 ## See Also
 

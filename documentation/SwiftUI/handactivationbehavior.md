@@ -29,7 +29,7 @@ Hand activation behavior determines what hand input modes activate a gesture.
 ## Relationships
 
 ### Conforms To
-- [Equatable](../Swift/Equatable.md)
+- [Equatable](../swift/equatable.md)
 
 ## See Also
 

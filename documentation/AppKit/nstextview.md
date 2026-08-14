@@ -47,7 +47,7 @@ To make a text view the first responder, call the containing window’s [`makeFi
 
 ##### Resigning As First Responder
 
-When the system invokes [`resignFirstResponder()`](nsresponder/resignfirstresponder().md) on a text view, if the object that will become the new first responder is a text view attached to the same layout manager as the receiver, the receiving text view returns [`true`](https://developer.apple.com/documentation/Swift/true) with no further action. Otherwise, it sends a [`textShouldEndEditing(_:)`](nstextdelegate/textshouldendediting(_:).md) message to its delegate (if any). If the delegate returns [`false`](https://developer.apple.com/documentation/Swift/false), the text view returns [`false`](https://developer.apple.com/documentation/Swift/false). If the delegate returns [`true`](https://developer.apple.com/documentation/Swift/true), the text view hides the selection highlighting and posts an [`didEndEditingNotification`](nstext/didendeditingnotification.md) to the default notification center and then returns [`true`](https://developer.apple.com/documentation/Swift/true).
+When the system invokes [`resignFirstResponder()`](nsresponder/resignfirstresponder().md) on a text view, if the object that will become the new first responder is a text view attached to the same layout manager as the receiver, the receiving text view returns [`true`](https://developer.apple.com/documentation/swift/true) with no further action. Otherwise, it sends a [`textShouldEndEditing(_:)`](nstextdelegate/textshouldendediting(_:).md) message to its delegate (if any). If the delegate returns [`false`](https://developer.apple.com/documentation/swift/false), the text view returns [`false`](https://developer.apple.com/documentation/swift/false). If the delegate returns [`true`](https://developer.apple.com/documentation/swift/true), the text view hides the selection highlighting and posts an [`didEndEditingNotification`](nstext/didendeditingnotification.md) to the default notification center and then returns [`true`](https://developer.apple.com/documentation/swift/true).
 
 ## Topics
 
@@ -470,13 +470,13 @@ When the system invokes [`resignFirstResponder()`](nsresponder/resignfirstrespon
 ### Inherits From
 - [NSText](nstext.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [Copyable](../Swift/Copyable.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Escapable](../Swift/Escapable.md)
-- [Hashable](../Swift/Hashable.md)
+- [CVarArg](../swift/cvararg.md)
+- [Copyable](../swift/copyable.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Escapable](../swift/escapable.md)
+- [Hashable](../swift/hashable.md)
 - [NSAccessibilityElementProtocol](nsaccessibilityelementprotocol.md)
 - [NSAccessibilityNavigableStaticText](nsaccessibilitynavigablestatictext.md)
 - [NSAccessibilityProtocol](nsaccessibilityprotocol.md)
@@ -485,13 +485,13 @@ When the system invokes [`resignFirstResponder()`](nsresponder/resignfirstrespon
 - [NSAppearanceCustomization](nsappearancecustomization.md)
 - [NSCandidateListTouchBarItemDelegate](nscandidatelisttouchbaritemdelegate.md)
 - [NSChangeSpelling](nschangespelling.md)
-- [NSCoding](../Foundation/NSCoding.md)
+- [NSCoding](../foundation/nscoding.md)
 - [NSColorChanging](nscolorchanging.md)
 - [NSDraggingDestination](nsdraggingdestination.md)
 - [NSDraggingSource](nsdraggingsource.md)
 - [NSIgnoreMisspelledWords](nsignoremisspelledwords.md)
 - [NSMenuItemValidation](nsmenuitemvalidation.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 - [NSStandardKeyBindingResponding](nsstandardkeybindingresponding.md)
 - [NSTextContent](nstextcontent.md)
 - [NSTextInput](nstextinput.md)
@@ -503,8 +503,8 @@ When the system invokes [`resignFirstResponder()`](nsresponder/resignfirstrespon
 - [NSUserActivityRestoring](nsuseractivityrestoring.md)
 - [NSUserInterfaceItemIdentification](nsuserinterfaceitemidentification.md)
 - [NSUserInterfaceValidations](nsuserinterfacevalidations.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

@@ -21,7 +21,7 @@ var path: CGPath? { get set }
 
 #### Discussion
 
-Unlike most animatable properties, [`path`](cashapelayer/path.md) (as with all [`CGPath`](https://developer.apple.com/documentation/CoreGraphics/CGPath) animatable properties) does not support implicit animation.
+Unlike most animatable properties, [`path`](cashapelayer/path.md) (as with all [`CGPath`](https://developer.apple.com/documentation/coregraphics/cgpath) animatable properties) does not support implicit animation.
 
 The path object may be animated using any of the concrete subclasses of [`CAPropertyAnimation`](capropertyanimation.md). Paths will interpolate as a linear blend of  the “on-line” points; “off-line” points may be interpolated non-linearly (e.g. to preserve continuity of the curve’s derivative). If the two paths have a different number of control points or segments the results are undefined. If the path extends outside the layer bounds it will not automatically be clipped to the layer, only if the normal layer masking rules cause that.
 

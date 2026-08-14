@@ -42,8 +42,8 @@ To perform tests on conversion values and postbacks, follow these steps:
 
 1. Create up to six test postbacks using [`SKAdTestPostback`](skadtestpostback.md).
 2. Add the test postbacks to the test session by calling [`setPostbacks(_:)`](skadtestsession/setpostbacks(_:).md).
-3. In the code representing the advertised app, register the test postbacks by calling [`updatePostbackConversionValue(_:completionHandler:)`](https://developer.apple.com/documentation/StoreKit/SKAdNetwork/updatePostbackConversionValue(_:completionHandler:))or [`registerAppForAdNetworkAttribution()`](https://developer.apple.com/documentation/StoreKit/SKAdNetwork/registerAppForAdNetworkAttribution()).
-4. To test conversion values, call [`updatePostbackConversionValue(_:completionHandler:)`](https://developer.apple.com/documentation/StoreKit/SKAdNetwork/updatePostbackConversionValue(_:completionHandler:)) to update the conversion value of the winning test postback.
+3. In the code representing the advertised app, register the test postbacks by calling [`updatePostbackConversionValue(_:completionHandler:)`](https://developer.apple.com/documentation/storekit/skadnetwork/updatepostbackconversionvalue(_:completionhandler:))or [`registerAppForAdNetworkAttribution()`](https://developer.apple.com/documentation/storekit/skadnetwork/registerappforadnetworkattribution()).
+4. To test conversion values, call [`updatePostbackConversionValue(_:completionHandler:)`](https://developer.apple.com/documentation/storekit/skadnetwork/updatepostbackconversionvalue(_:completionhandler:)) to update the conversion value of the winning test postback.
 5. Call [`flushPostbacks(responses:)`](skadtestsession/flushpostbacks(responses:).md) when you’re done updating the conversion value and are ready to test receiving postbacks on your server. This method sends the test postbacks to your server, and removes them from the test session.
 
 ## Topics
@@ -74,14 +74,14 @@ To perform tests on conversion values and postbacks, follow these steps:
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

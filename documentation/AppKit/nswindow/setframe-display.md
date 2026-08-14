@@ -21,7 +21,7 @@ Note that the window server limits window position coordinates to ±16,000 and s
 ## Parameters
 
 - `frameRect`: The frame rectangle for the window, including the title bar.
-- `flag`: Specifies whether the window redraws the views that need to be displayed. When [`true`](https://developer.apple.com/documentation/Swift/true) the window sends a [`displayIfNeeded()`](nswindow/displayifneeded().md) message down its view hierarchy, thus redrawing all views.
+- `flag`: Specifies whether the window redraws the views that need to be displayed. When [`true`](https://developer.apple.com/documentation/swift/true) the window sends a [`displayIfNeeded()`](nswindow/displayifneeded().md) message down its view hierarchy, thus redrawing all views.
 
 ## See Also
 

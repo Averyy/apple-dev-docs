@@ -18,13 +18,13 @@ Xcode’s simulator provides sample accounts you can use when building and testi
 
 Due to their sensitive nature, clinical records have additional setup requirements. First, when you enable your app’s HealthKit capabilities, you must also select the Clinical Health Records checkbox.
 
-![A screenshot of Xcode’s Signing & Capabilities tab with the Clinical Health Records checkbox selected.](https://docs-assets.developer.apple.com/published/ba05f0b259353efaaec7d4bf251d3bfa/media-3873250%402x.png)
+![A screenshot of Xcode’s Signing & Capabilities tab with the Clinical Health Records checkbox selected.](/images/com.apple.healthkit/media-3873250@2x.png)
 
 Next, you must provide a Health Records Usage string for your app. Use this string to describe what your app does with the user’s records, and why it’s important for the user to share this data.
 
-For projects created using Xcode 13 or later, set the usage key in the Target Properties list on the app’s Info tab. For projects created with Xcode 12 or earlier, set it in the apps `Info.plist` file. For more information, see [`Information Property List`](https://developer.apple.com/documentation/BundleResources/Information-Property-List).
+For projects created using Xcode 13 or later, set the usage key in the Target Properties list on the app’s Info tab. For projects created with Xcode 12 or earlier, set it in the apps `Info.plist` file. For more information, see [`Information Property List`](https://developer.apple.com/documentation/bundleresources/information-property-list).
 
-![A screenshot showing the Health Records Usage Description in the Target Properties on the app’s Info tab.](https://docs-assets.developer.apple.com/published/3b727d0bfa729ed5b885c95908c2641f/media-3873251%402x.png)
+![A screenshot showing the Health Records Usage Description in the Target Properties on the app’s Info tab.](/images/com.apple.healthkit/media-3873251@2x.png)
 
 You request authorization to read clinical records using the [`HKClinicalTypeIdentifier`](hkclinicaltypeidentifier.md) enumeration. This enumeration specifies the types of FHIR data supported by HealthKit. You must request permission to read all the types that your app intends to use. Additionally, clinical records are read-only, so you can’t request authorization to share clinical record types. You can’t create or save new [`HKClinicalRecord`](hkclinicalrecord.md) objects.
 

@@ -42,14 +42,14 @@ struct MobileNationalIDCardDataRequest
 ## Relationships
 
 ### Conforms To
-- [Copyable](../Swift/Copyable.md)
-- [Equatable](../Swift/Equatable.md)
-- [Escapable](../Swift/Escapable.md)
-- [Hashable](../Swift/Hashable.md)
+- [Copyable](../swift/copyable.md)
+- [Equatable](../swift/equatable.md)
+- [Escapable](../swift/escapable.md)
+- [Hashable](../swift/hashable.md)
 - [MobileDocumentDataRequest](mobiledocumentdatarequest.md)
 - [MobileDocumentRequest](mobiledocumentrequest.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

@@ -7,7 +7,7 @@ An atom that carries the pixel dimensions of the track’s production aperture.
 
 #### Overview
 
-See [`Track production aperture dimensions atom ('prof')`](track_production_aperture_dimensions_atom.md).
+See [`Track production aperture dimensions atom`](track_production_aperture_dimensions_atom.md).
 
 ## See Also
 

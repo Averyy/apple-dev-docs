@@ -41,7 +41,7 @@ You can create a ”Never” publisher — one which never sends values and neve
 ## Relationships
 
 ### Conforms To
-- [Equatable](../Swift/Equatable.md)
+- [Equatable](../swift/equatable.md)
 - [Publisher](publisher.md)
 
 ## See Also

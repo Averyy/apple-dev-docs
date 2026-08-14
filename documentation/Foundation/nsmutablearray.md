@@ -22,11 +22,11 @@ class NSMutableArray
 
 #### Overview
 
-You can use this type in Swift instead of an [`Array`](https://developer.apple.com/documentation/Swift/Array) variable in cases that require reference semantics.
+You can use this type in Swift instead of an [`Array`](https://developer.apple.com/documentation/swift/array) variable in cases that require reference semantics.
 
 The `NSMutableArray` class declares the programmatic interface to objects that manage a modifiable array of objects. This class adds insertion and deletion operations to the basic array-handling behavior inherited from [`NSArray`](nsarray.md).
 
-NSMutableArray is “toll-free bridged” with its Core Foundation counterpart, [`CFMutableArray`](https://developer.apple.com/documentation/CoreFoundation/CFMutableArray). See [`Toll-Free Bridging`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Conceptual/CocoaEncyclopedia/Toll-FreeBridgin/Toll-FreeBridgin.html#//apple_ref/doc/uid/TP40010810-CH2) for more information.
+NSMutableArray is “toll-free bridged” with its Core Foundation counterpart, [`CFMutableArray`](https://developer.apple.com/documentation/corefoundation/cfmutablearray). See [`Toll-Free Bridging`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Conceptual/CocoaEncyclopedia/Toll-FreeBridgin/Toll-FreeBridgin.html#//apple_ref/doc/uid/TP40010810-CH2) for more information.
 
 ##### Accessing Values Using Subscripting
 
@@ -142,22 +142,22 @@ In a subclass, you must override all these methods. You must also override the p
 ### Inherits From
 - [NSArray](nsarray.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomReflectable](../Swift/CustomReflectable.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [ExpressibleByArrayLiteral](../Swift/ExpressibleByArrayLiteral.md)
-- [Hashable](../Swift/Hashable.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomReflectable](../swift/customreflectable.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
+- [Hashable](../swift/hashable.md)
 - [NSCoding](nscoding.md)
 - [NSCopying](nscopying.md)
 - [NSFastEnumeration](nsfastenumeration.md)
 - [NSMutableCopying](nsmutablecopying.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 - [NSSecureCoding](nssecurecoding.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
-- [Sequence](../Swift/Sequence.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sequence](../swift/sequence.md)
 
 
 ---

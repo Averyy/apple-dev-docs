@@ -6,7 +6,7 @@ Build a distributable pass.
 
 #### Overview
 
-The pass you distribute to a user is a signed [`Bundle`](https://developer.apple.com/documentation/Foundation/Bundle) that contains the JSON description of the pass, images, and optional localizations.
+The pass you distribute to a user is a signed [`Bundle`](https://developer.apple.com/documentation/foundation/bundle) that contains the JSON description of the pass, images, and optional localizations.
 
 To build a pass, you:
 
@@ -82,7 +82,7 @@ The manifest is a JSON object that contains a dictionary of the SHA1 hashes for 
 
 Test your pass by dropping it onto an iPhone that’s running on Simulator. Wallet shows the add pass dialog if it’s valid.
 
-![A graphic that show the add pass sheet on an iPhone 12 running in Simulator. ](https://docs-assets.developer.apple.com/published/b81267345d99cafb42bae4aac6f02c4d/media-3737826%402x.png)
+![A graphic that show the add pass sheet on an iPhone 12 running in Simulator. ](/images/com.apple.walletpasses/media-3737826@2x.png)
 
 ##### Common Problems
 

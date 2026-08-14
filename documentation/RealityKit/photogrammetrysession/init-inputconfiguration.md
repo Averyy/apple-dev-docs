@@ -19,13 +19,13 @@ convenience init(input: URL, configuration: PhotogrammetrySession.Configuration 
 
 #### Discussion
 
-Creates a new session instance using all images in the specified [`URL`](https://developer.apple.com/documentation/Foundation/URL) input directory [`URL`](https://developer.apple.com/documentation/Foundation/URL) as samples for reconstruction.
+Creates a new session instance using all images in the specified [`URL`](https://developer.apple.com/documentation/foundation/url) input directory [`URL`](https://developer.apple.com/documentation/foundation/url) as samples for reconstruction.
 
-> **Note**: If `input` is not a file [`URL`](https://developer.apple.com/documentation/Foundation/URL).
+> **Note**: If `input` is not a file [`URL`](https://developer.apple.com/documentation/foundation/url).
 
 ## Parameters
 
-- `input`: The directory [`URL`](https://developer.apple.com/documentation/Foundation/URL) containing a folder of images to use as reconstruction inputs.
+- `input`: The directory [`URL`](https://developer.apple.com/documentation/foundation/url) containing a folder of images to use as reconstruction inputs.
 - `configuration`: The configuration to use for this session.
 
 

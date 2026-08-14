@@ -42,7 +42,7 @@ GameKit invokes this method when these turn-based events occur:
 
 - `player`: The player who receives this turn-based event.
 - `match`: The match related to this turn-based event.
-- `didBecomeActive`: [`true`](https://developer.apple.com/documentation/Swift/true) if the system launches the game to deliver the turn-based event; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
+- `didBecomeActive`: [`true`](https://developer.apple.com/documentation/swift/true) if the system launches the game to deliver the turn-based event; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
 
 ## See Also
 

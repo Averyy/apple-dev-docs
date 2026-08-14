@@ -19,7 +19,7 @@ static let probableWebURL: UIPasteboard.DetectionPattern
 
 #### Discussion
 
-When you include this pattern in calls to [`detectValues(for:inItemSet:completionHandler:)`](uipasteboard/detectvalues(for:initemset:completionhandler:)-pm9l.md) or [`detectValues(for:completionHandler:)`](uipasteboard/detectvalues(for:completionhandler:)-6adre.md) — [`detectValuesForPatterns:inItemSet:completionHandler:`](uipasteboard/detectvaluesforpatterns:initemset:completionhandler:.md) or [`detectValuesForPatterns:completionHandler:`](uipasteboard/detectvaluesforpatterns:completionhandler:.md) in Objective-C — and the pasteboard detects a string that consists of a URL, it reports the value as an [`NSString`](https://developer.apple.com/documentation/Foundation/NSString).
+When you include this pattern in calls to [`detectValues(for:inItemSet:completionHandler:)`](uipasteboard/detectvalues(for:initemset:completionhandler:)-pm9l.md) or [`detectValues(for:completionHandler:)`](uipasteboard/detectvalues(for:completionhandler:)-6adre.md) — [`detectValuesForPatterns:inItemSet:completionHandler:`](uipasteboard/detectvaluesforpatterns:initemset:completionhandler:.md) or [`detectValuesForPatterns:completionHandler:`](uipasteboard/detectvaluesforpatterns:completionhandler:.md) in Objective-C — and the pasteboard detects a string that consists of a URL, it reports the value as an [`NSString`](https://developer.apple.com/documentation/foundation/nsstring).
 
 ## See Also
 

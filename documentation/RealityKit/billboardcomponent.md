@@ -37,7 +37,7 @@ The entity immediately reorients itself so that it faces the scene’s active ca
 
 | Without `BillboardComponent` | With `BillboardComponent` |
 | --- | --- |
-| ![An image of a vintage-style toy robot in a living room scene. The robot is facing about 45 degrees to the left and down from the viewer’s perspective.](https://docs-assets.developer.apple.com/published/eeff1917f6f47d0a52a049afc17fc1b4/billboardcomponent-robot-side-above-without.jpg) | ![An image of a vintage-style toy robot in a living room scene. The robot is facing directly towards the viewer.](https://docs-assets.developer.apple.com/published/83e2c31b61c7e99ba2df03efd08d302b/billboardcomponent-robot-side-above-with.jpg) |
+| ![An image of a vintage-style toy robot in a living room scene. The robot is facing about 45 degrees to the left and down from the viewer’s perspective.](/images/com.apple.RealityKit/billboardcomponent-robot-side-above-without.jpg) | ![An image of a vintage-style toy robot in a living room scene. The robot is facing directly towards the viewer.](/images/com.apple.RealityKit/billboardcomponent-robot-side-above-with.jpg) |
 
 > ❗ **Important**: An entity with `BillboardComponent` doesn’t provide access to its end orientation. Requesting the entity’s orientation through its transform returns only the unaltered orientation.
 
@@ -56,8 +56,8 @@ For an example of how to animate [`blendFactor`](billboardcomponent/blendfactor.
 
 ### Conforms To
 - [Component](component.md)
-- [Copyable](../Swift/Copyable.md)
-- [Escapable](../Swift/Escapable.md)
+- [Copyable](../swift/copyable.md)
+- [Escapable](../swift/escapable.md)
 
 ## See Also
 

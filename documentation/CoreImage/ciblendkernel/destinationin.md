@@ -21,7 +21,7 @@ class var destinationIn: CIBlendKernel { get }
 
 #### Discussion
 
-![The result of using the destination in blend kernel (background image is top left, foreground image is bottom left)](https://docs-assets.developer.apple.com/published/e81a2601621e838f0471ccd8c4e6f1f5/media-2926861%402x.png)
+![The result of using the destination in blend kernel (background image is top left, foreground image is bottom left)](/images/com.apple.coreimage/media-2926861@2x.png)
 
 ## See Also
 

@@ -26,11 +26,11 @@ When this method has been called, ImageIO will only decode images whose format m
 
 If per-asset format restrictions are set via [`kCGImageSourceAllowableTypes`](kcgimagesourceallowabletypes.md), only formats allowed by both mechanisms are permitted. If `allowableTypes` is empty, all image parsing is disabled. Unknown format identifiers are ignored. Can only be called once per process; subsequent calls are ignored.
 
-See also [`System-declared uniform type identifiers`](https://developer.apple.com/documentation/UniformTypeIdentifiers/system-declared-uniform-type-identifiers).
+See also [`System-declared uniform type identifiers`](https://developer.apple.com/documentation/uniformtypeidentifiers/system-declared-uniform-type-identifiers).
 
 ## Parameters
 
-- `allowableTypes`: A [`CFArray`](https://developer.apple.com/documentation/CoreFoundation/CFArray) containing [`CFString`](https://developer.apple.com/documentation/CoreFoundation/CFString) Uniform Type Identifiers (UTIs) of allowed image formats.
+- `allowableTypes`: A [`CFArray`](https://developer.apple.com/documentation/corefoundation/cfarray) containing [`CFString`](https://developer.apple.com/documentation/corefoundation/cfstring) Uniform Type Identifiers (UTIs) of allowed image formats.
 
 ## See Also
 

@@ -47,7 +47,7 @@ enum Destination: String, AppEnum, URLRepresentableEnum {
 }
 ```
 
-Make sure you define your app enum type using a URL-friendly value. The system automatically converts values of type [`String`](https://developer.apple.com/documentation/Swift/String), [`Int`](https://developer.apple.com/documentation/Swift/Int), and [`URL`](https://developer.apple.com/documentation/Foundation/URL) to values suitable for inclusion in a URL.
+Make sure you define your app enum type using a URL-friendly value. The system automatically converts values of type [`String`](https://developer.apple.com/documentation/swift/string), [`Int`](https://developer.apple.com/documentation/swift/int), and [`URL`](https://developer.apple.com/documentation/foundation/url) to values suitable for inclusion in a URL.
 
 ## Topics
 
@@ -62,10 +62,10 @@ Make sure you define your app enum type using a URL-friendly value. The system a
 ## Relationships
 
 ### Conforms To
-- [ExpressibleByExtendedGraphemeClusterLiteral](../Swift/ExpressibleByExtendedGraphemeClusterLiteral.md)
-- [ExpressibleByStringInterpolation](../Swift/ExpressibleByStringInterpolation.md)
-- [ExpressibleByStringLiteral](../Swift/ExpressibleByStringLiteral.md)
-- [ExpressibleByUnicodeScalarLiteral](../Swift/ExpressibleByUnicodeScalarLiteral.md)
+- [ExpressibleByExtendedGraphemeClusterLiteral](../swift/expressiblebyextendedgraphemeclusterliteral.md)
+- [ExpressibleByStringInterpolation](../swift/expressiblebystringinterpolation.md)
+- [ExpressibleByStringLiteral](../swift/expressiblebystringliteral.md)
+- [ExpressibleByUnicodeScalarLiteral](../swift/expressiblebyunicodescalarliteral.md)
 
 ## See Also
 

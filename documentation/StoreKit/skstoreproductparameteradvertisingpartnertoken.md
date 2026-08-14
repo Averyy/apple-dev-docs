@@ -20,7 +20,7 @@ let SKStoreProductParameterAdvertisingPartnerToken: String
 
 #### Discussion
 
-The value for this key is an instance of [`NSString`](https://developer.apple.com/documentation/Foundation/NSString).
+The value for this key is an instance of [`NSString`](https://developer.apple.com/documentation/foundation/nsstring).
 
 ## See Also
 

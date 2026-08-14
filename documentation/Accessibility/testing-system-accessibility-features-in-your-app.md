@@ -8,7 +8,7 @@ Confirm that your app provides a good experience for everyone by testing system 
 
 In Accessibility Inspector, the *Settings pane* provides quick access to common accessibility settings for easier testing. Use this pane to toggle these system-wide settings so you can test how your app behaves for a person who uses one or more of these accessibility features. Turning these settings on or off updates the corresponding setting in the Accessibility section of the target device’s system settings.
 
-![Settings pane with a list of system accessibility options and corresponding checkboxes.](https://docs-assets.developer.apple.com/published/a9836405ca25e883b2f8edea000ed64c/accessibility-inspector-settings-pane%402x.png)
+![Settings pane with a list of system accessibility options and corresponding checkboxes.](/images/com.apple.Accessibility/accessibility-inspector-settings-pane@2x.png)
 
 ##### Provide Sufficient Color Contrast
 
@@ -68,15 +68,15 @@ People can adjust the font weight and size on their devices to improve text legi
 
 **Default fonts**:
 
-![System settings with default fonts.](https://docs-assets.developer.apple.com/published/4aa4d6ecd711a7d1476ab68e3b89810e/bold-fonts-before%402x.png)
+![System settings with default fonts.](/images/com.apple.Accessibility/bold-fonts-before@2x.png)
 
 **Bold fonts**:
 
-![System settings with bold fonts.](https://docs-assets.developer.apple.com/published/98c476a523e7433a0ca10d391e75c58b/bold-fonts-after%402x.png)
+![System settings with bold fonts.](/images/com.apple.Accessibility/bold-fonts-after@2x.png)
 
 **Dynamic type**. This option adjusts the system font size using Dynamic Type.
 
-For more information about designing an accessible app, read [`Accessibility`](https://developer.apple.com/design/Human-Interface-Guidelines/accessibility) in Human Interface Guidelines.
+For more information about designing an accessible app, read [`Accessibility`](https://developer.apple.com/design/human-interface-guidelines/accessibility) in Human Interface Guidelines.
 
 
 ---

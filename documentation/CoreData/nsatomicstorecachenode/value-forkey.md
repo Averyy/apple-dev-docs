@@ -26,7 +26,7 @@ The value for the property named `key`. For an attribute, the return value is an
 
 #### Discussion
 
-The default implementation forwards the request to the [`propertyCache`](nsatomicstorecachenode/propertycache.md) dictionary if `key` matches a property name of the entity for the cache node. If `key` does not represent a property, the standard [`value(forKey:)`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class/value(forKey:)) implementation is used.
+The default implementation forwards the request to the [`propertyCache`](nsatomicstorecachenode/propertycache.md) dictionary if `key` matches a property name of the entity for the cache node. If `key` does not represent a property, the standard [`value(forKey:)`](https://developer.apple.com/documentation/objectivec/nsobject-swift.class/value(forkey:)) implementation is used.
 
 ## Parameters
 

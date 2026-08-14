@@ -16,7 +16,7 @@ func authorizationViewCreatedAuthorization(_ view: SFAuthorizationView!)
 
 #### Discussion
 
-If you have saved a copy of the authorization object for your own purposes, you should discard it and call [`authorization()`](https://developer.apple.com/documentation/SecurityInterface/SFAuthorizationView/authorization()) for a new authorization object.
+If you have saved a copy of the authorization object for your own purposes, you should discard it and call [`authorization()`](https://developer.apple.com/documentation/securityinterface/sfauthorizationview/authorization()) for a new authorization object.
 
 
 ---

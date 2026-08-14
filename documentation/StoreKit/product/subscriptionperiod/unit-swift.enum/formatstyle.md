@@ -26,11 +26,11 @@ struct FormatStyle
 ## Relationships
 
 ### Conforms To
-- [Decodable](../Swift/Decodable.md)
-- [Encodable](../Swift/Encodable.md)
-- [Equatable](../Swift/Equatable.md)
-- [FormatStyle](../Foundation/FormatStyle.md)
-- [Hashable](../Swift/Hashable.md)
+- [Decodable](../swift/decodable.md)
+- [Encodable](../swift/encodable.md)
+- [Equatable](../swift/equatable.md)
+- [FormatStyle](../foundation/formatstyle.md)
+- [Hashable](../swift/hashable.md)
 
 ## See Also
 

@@ -23,7 +23,7 @@ To add a Run Script build phase to a target:
 5. Click the disclosure triangle for the newly added Run Script phase.
 6. In the Shell text field, enter your script code.
 
-![The editor pane that you use to specify the content of custom shell scripts.](https://docs-assets.developer.apple.com/published/7702f841567fd1ffa65e3506dcd46fbd/build-run-script-phase%402x.png)
+![The editor pane that you use to specify the content of custom shell scripts.](/images/com.apple.Xcode/build-run-script-phase@2x.png)
 
 If you have an existing shell script file, drag it onto the Shell text field to copy the script there. You may use any of the available shell environments to execute your script, and you can change the execution shell by changing the shell command above your script code.
 

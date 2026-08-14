@@ -21,7 +21,7 @@ var collisionFilter: CollisionFilter
 
 #### Discussion
 
-For more information on using collision filters, see [`Controlling Entity Collisions in RealityKit`](controlling_entity_collisions_in_realitykit.md).
+For more information on using collision filters, see doc://com.apple.documentation/documentation/realitykit/controlling_entity_collisions_in_realitykit.
 
 
 ---

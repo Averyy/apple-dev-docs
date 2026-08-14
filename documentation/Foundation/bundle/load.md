@@ -22,7 +22,7 @@ func load() -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/Swift/true) if the method successfully loads the bundle’s code or if the code has already been loaded, otherwise [`false`](https://developer.apple.com/documentation/Swift/false).
+[`true`](https://developer.apple.com/documentation/swift/true) if the method successfully loads the bundle’s code or if the code has already been loaded, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
 
 #### Discussion
 
@@ -30,7 +30,7 @@ You can use this method to load the code associated with a dynamically loaded bu
 
 You don’t need to load a bundle’s executable code to search the bundle’s resources.
 
-This method initializes the principal class in the bundle. To add code you want executed after loading, override the [`initialize()`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class/initialize()) class method of the principal class.
+This method initializes the principal class in the bundle. To add code you want executed after loading, override the [`initialize()`](https://developer.apple.com/documentation/objectivec/nsobject-swift.class/initialize()) class method of the principal class.
 
 ##### Special Considerations
 

@@ -29,9 +29,9 @@ The methods contained in this protocol help you manage and control cell transiti
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [UICollectionViewDelegate](../UIKit/UICollectionViewDelegate.md)
-- [UIScrollViewDelegate](../UIKit/UIScrollViewDelegate.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [UICollectionViewDelegate](../uikit/uicollectionviewdelegate.md)
+- [UIScrollViewDelegate](../uikit/uiscrollviewdelegate.md)
 
 ## See Also
 

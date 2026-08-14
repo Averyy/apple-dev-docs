@@ -15,7 +15,7 @@ The name of the scene class you want UIKit to instantiate.
 
 #### Discussion
 
-CarPlay doesn’t support custom classes. Omit this key or specify [`CPTemplateApplicationInstrumentClusterScene`](https://developer.apple.com/documentation/CarPlay/CPTemplateApplicationInstrumentClusterScene) for scenes meant for a CarPlay Instrument Cluster.
+CarPlay doesn’t support custom classes. Omit this key or specify [`CPTemplateApplicationInstrumentClusterScene`](https://developer.apple.com/documentation/carplay/cptemplateapplicationinstrumentclusterscene) for scenes meant for a CarPlay Instrument Cluster.
 
 ## See Also
 

@@ -6,7 +6,6 @@
 **Availability**:
 - iOS 26.5+
 - iPadOS 26.5+
-- Mac Catalyst 26.5+
 
 ## Declaration
 
@@ -28,8 +27,8 @@ protocol AccessoryFeatureSession : Sendable
 ## Relationships
 
 ### Inherits From
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 
 ---

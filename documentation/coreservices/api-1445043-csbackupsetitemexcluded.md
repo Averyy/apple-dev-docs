@@ -27,8 +27,8 @@ Your application can allow users to change the backup exclusion status of any fi
 ## Parameters
 
 - `item`: The URL of the file or folder to be included or excluded from the backup.
-- `exclude`: Pass   to exclude this item from backup (Backup will not back up this item). Pass   to stop excluding this item (Backup will back up this item if the user so chooses).
-- `excludeByPath`: Pass   to indicate that this item is excluded because of its location (its absolute path). Pass   to indicate that this item is excluded regardless of its location (and regardless of whether the user moves the item).
+- `exclude`: Pass `true` to exclude this item from backup (Backup will not back up this item). Pass `false` to stop excluding this item (Backup will back up this item if the user so chooses).
+- `excludeByPath`: Pass `true` to indicate that this item is excluded because of its location (its absolute path). Pass `false` to indicate that this item is excluded regardless of its location (and regardless of whether the user moves the item).
 
 ## See Also
 

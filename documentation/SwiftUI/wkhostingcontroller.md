@@ -17,7 +17,7 @@ A WatchKit interface controller that hosts a SwiftUI view hierarchy.
 
 #### Overview
 
-A [`WKHostingController`](wkhostingcontroller.md) presents and manages your app’s main interface using SwiftUI views. You must subclass [`WKHostingController`](wkhostingcontroller.md) and override the [`body`](wkhostingcontroller/body.md) property to provide the set of SwiftUI views you want to display. Display the content of your hosting controller as you would any other [`WKInterfaceController`](https://developer.apple.com/documentation/WatchKit/WKInterfaceController) object. For example, you can include it as one of your app’s root interface controllers, or present it modally.
+A [`WKHostingController`](wkhostingcontroller.md) presents and manages your app’s main interface using SwiftUI views. You must subclass [`WKHostingController`](wkhostingcontroller.md) and override the [`body`](wkhostingcontroller/body.md) property to provide the set of SwiftUI views you want to display. Display the content of your hosting controller as you would any other [`WKInterfaceController`](https://developer.apple.com/documentation/watchkit/wkinterfacecontroller) object. For example, you can include it as one of your app’s root interface controllers, or present it modally.
 
 ## Topics
 
@@ -36,14 +36,14 @@ A [`WKHostingController`](wkhostingcontroller.md) presents and manages your app�
 ## Relationships
 
 ### Inherits From
-- [WKInterfaceController](../WatchKit/WKInterfaceController.md)
+- [WKInterfaceController](../watchkit/wkinterfacecontroller.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

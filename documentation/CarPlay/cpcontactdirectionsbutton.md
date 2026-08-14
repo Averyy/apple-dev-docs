@@ -20,7 +20,7 @@ class CPContactDirectionsButton
 
 Use this button to get directions to the location of the template’s contact.
 
-If your app doesn’t provide turn-by-turn navigation, use the `maps` URL scheme to launch the most recent navigation app. Call your template application scene’s [`open(_:options:completionHandler:)`](https://developer.apple.com/documentation/UIKit/UIScene/open(_:options:completionHandler:)) method and pass a URL that embeds the contact’s location. CarPlay provides this scene to your [`CPTemplateApplicationSceneDelegate`](cptemplateapplicationscenedelegate.md) when the scene connects.
+If your app doesn’t provide turn-by-turn navigation, use the `maps` URL scheme to launch the most recent navigation app. Call your template application scene’s [`open(_:options:completionHandler:)`](https://developer.apple.com/documentation/uikit/uiscene/open(_:options:completionhandler:)) method and pass a URL that embeds the contact’s location. CarPlay provides this scene to your [`CPTemplateApplicationSceneDelegate`](cptemplateapplicationscenedelegate.md) when the scene connects.
 
 ## Topics
 
@@ -33,12 +33,12 @@ If your app doesn’t provide turn-by-turn navigation, use the `maps` URL scheme
 ### Inherits From
 - [CPButton](cpbutton.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

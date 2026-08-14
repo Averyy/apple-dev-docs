@@ -22,9 +22,9 @@ let kCGImageSourcePrioritizeQuality: CFString
 
 #### Discussion
 
-When you set this key to [`kCFBooleanTrue`](https://developer.apple.com/documentation/CoreFoundation/kCFBooleanTrue), the image source decodes the full-size image using the highest-quality decode method available for the file. The value of this key is a [`CFBoolean`](https://developer.apple.com/documentation/CoreFoundation/CFBoolean). The default value is [`kCFBooleanFalse`](https://developer.apple.com/documentation/CoreFoundation/kCFBooleanFalse).
+When you set this key to [`kCFBooleanTrue`](https://developer.apple.com/documentation/corefoundation/kcfbooleantrue), the image source decodes the full-size image using the highest-quality decode method available for the file. The value of this key is a [`CFBoolean`](https://developer.apple.com/documentation/corefoundation/cfboolean). The default value is [`kCFBooleanFalse`](https://developer.apple.com/documentation/corefoundation/kcfbooleanfalse).
 
-Currently, image sources support this option only for camera RAW images. This key is a no-op when it is absent or [`kCFBooleanFalse`](https://developer.apple.com/documentation/CoreFoundation/kCFBooleanFalse), when the image isn’t a camera RAW format, or when no higher-quality decode method is available, so it is always safe to set.
+Currently, image sources support this option only for camera RAW images. This key is a no-op when it is absent or [`kCFBooleanFalse`](https://developer.apple.com/documentation/corefoundation/kcfbooleanfalse), when the image isn’t a camera RAW format, or when no higher-quality decode method is available, so it is always safe to set.
 
 Include this key in the options dictionary you pass to the functions [`CGImageSourceCopyPropertiesAtIndex(_:_:_:)`](cgimagesourcecopypropertiesatindex(_:_:_:).md) and [`CGImageSourceCreateImageAtIndex(_:_:_:)`](cgimagesourcecreateimageatindex(_:_:_:).md).
 

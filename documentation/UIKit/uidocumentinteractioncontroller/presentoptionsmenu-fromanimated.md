@@ -19,7 +19,7 @@ func presentOptionsMenu(from item: UIBarButtonItem, animated: Bool) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/Swift/true) if the options menu was displayed or [`false`](https://developer.apple.com/documentation/Swift/false) if it was not. The options menu may not be displayed in cases where there are no appropriate items to include in the menu.
+[`true`](https://developer.apple.com/documentation/swift/true) if the options menu was displayed or [`false`](https://developer.apple.com/documentation/swift/false) if it was not. The options menu may not be displayed in cases where there are no appropriate items to include in the menu.
 
 #### Discussion
 
@@ -38,7 +38,7 @@ To instead present a menu that contains only a list of apps capable of opening t
 ## Parameters
 
 - `item`: The bar button item to which to anchor the menu.
-- `animated`: Specify [`true`](https://developer.apple.com/documentation/Swift/true) to animate the appearance of the menu or [`false`](https://developer.apple.com/documentation/Swift/false) to display it immediately.
+- `animated`: Specify [`true`](https://developer.apple.com/documentation/swift/true) to animate the appearance of the menu or [`false`](https://developer.apple.com/documentation/swift/false) to display it immediately.
 
 ## See Also
 

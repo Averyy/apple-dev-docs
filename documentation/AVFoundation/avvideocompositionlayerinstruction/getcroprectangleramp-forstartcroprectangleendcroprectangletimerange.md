@@ -21,7 +21,7 @@ func getCropRectangleRamp(for time: CMTime, startCropRectangle: UnsafeMutablePoi
 
 #### Return Value
 
-[`false`](https://developer.apple.com/documentation/Swift/false) will be returned if the specified time is beyond the duration of the last crop rectangle ramp that has been set.
+[`false`](https://developer.apple.com/documentation/swift/false) will be returned if the specified time is beyond the duration of the last crop rectangle ramp that has been set.
 
 ## Parameters
 

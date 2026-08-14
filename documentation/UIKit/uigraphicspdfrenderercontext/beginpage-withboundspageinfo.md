@@ -20,12 +20,12 @@ func beginPage(withBounds bounds: CGRect, pageInfo: [String : Any])
 
 #### Discussion
 
-This function ends any previous page before beginning a new one. It sets the media box of the new page to the value in the [`kCGPDFContextMediaBox`](https://developer.apple.com/documentation/CoreGraphics/kCGPDFContextMediaBox) key of the `pageInfo` dictionary, or to the value in the bounds parameter if the dictionary does not contain the key.
+This function ends any previous page before beginning a new one. It sets the media box of the new page to the value in the [`kCGPDFContextMediaBox`](https://developer.apple.com/documentation/coregraphics/kcgpdfcontextmediabox) key of the `pageInfo` dictionary, or to the value in the bounds parameter if the dictionary does not contain the key.
 
 ## Parameters
 
 - `bounds`: A rectangle that specifies the size and location of the new PDF page. This rectangle corresponds to the media box in PDF terminology.
-- `pageInfo`: A dictionary that specifies additional page-related information, such as the boxes that define different parts of the page. For a list of keys you can include in this dictionary, see `Box Keys` in [`Auxiliary Dictionary Keys`](https://developer.apple.com/documentation/CoreGraphics/auxiliary-dictionary-keys).
+- `pageInfo`: A dictionary that specifies additional page-related information, such as the boxes that define different parts of the page. For a list of keys you can include in this dictionary, see `Box Keys` in [`Auxiliary Dictionary Keys`](https://developer.apple.com/documentation/coregraphics/auxiliary-dictionary-keys).
 
 ## See Also
 

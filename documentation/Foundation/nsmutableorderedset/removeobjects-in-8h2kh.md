@@ -24,7 +24,7 @@ func removeObjects(in array: [Any])
 
 This method is similar to [`remove(_:)`](nsmutableorderedset/remove(_:).md), but allows you to efficiently remove large sets of objects with a single operation. If the receiving mutable ordered set does not contain objects in array, the method has no effect (although it does incur the overhead of searching the contents).
 
-This method assumes that all elements in array respond to [`hash`](https://developer.apple.com/documentation/ObjectiveC/NSObjectProtocol/hash) and [`isEqual(_:)`](https://developer.apple.com/documentation/ObjectiveC/NSObjectProtocol/isEqual(_:)).
+This method assumes that all elements in array respond to [`hash`](https://developer.apple.com/documentation/objectivec/nsobjectprotocol/hash) and [`isEqual(_:)`](https://developer.apple.com/documentation/objectivec/nsobjectprotocol/isequal(_:)).
 
 ## Parameters
 

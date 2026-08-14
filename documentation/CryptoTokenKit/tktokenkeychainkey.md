@@ -27,7 +27,7 @@ class TKTokenKeychainKey
   Initializes a token keychain key with data from the specified certificate reference and a given object ID.
 ### Accessing Key Attributes
 - [var keyType: String](tktokenkeychainkey/keytype.md)
-  The type of the key. Currently, only [`kSecAttrKeyTypeRSA`](https://developer.apple.com/documentation/Security/kSecAttrKeyTypeRSA) and `kSecAttrKeyTypeECSECPrimeRandom` are supported values.
+  The type of the key. Currently, only [`kSecAttrKeyTypeRSA`](https://developer.apple.com/documentation/security/ksecattrkeytypersa) and `kSecAttrKeyTypeECSECPrimeRandom` are supported values.
 - [var keySizeInBits: Int](tktokenkeychainkey/keysizeinbits.md)
 - [var applicationTag: Data?](tktokenkeychainkey/applicationtag.md)
   The private tag data.
@@ -49,12 +49,12 @@ class TKTokenKeychainKey
 ### Inherits From
 - [TKTokenKeychainItem](tktokenkeychainitem.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

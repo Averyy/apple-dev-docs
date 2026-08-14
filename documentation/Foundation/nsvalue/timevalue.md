@@ -22,7 +22,7 @@ var timeValue: CMTime { get }
 
 ## See Also
 
-- [struct CMTime](../CoreMedia/CMTime.md)
+- [struct CMTime](../coremedia/cmtime.md)
   A structure that represents time.
 - [init(CMTime: CMTime)](nsvalue/init(cmtime:).md)
   Creates a new value object containing the specified CoreMedia time structure.

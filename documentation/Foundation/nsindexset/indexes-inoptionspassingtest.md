@@ -29,7 +29,7 @@ An `NSIndexSet` containing the indexes of the receiving index set that passed th
 - `range`: The range of indexes to test.
 - `opts`: A bitmask that specifies the options for the enumeration (whether it should be performed concurrently and whether it should be performed in reverse order). See [`NSEnumerationOptions`](nsenumerationoptions.md) for the supported values.
 - `predicate`: The Block to apply to elements in the set. The Block takes two arguments: - **idx**: The index of the object.
-- **stop**: A reference to a Boolean value. The block can set the value to [`true`](https://developer.apple.com/documentation/Swift/true) to stop further processing of the set. The `stop` argument is an out-only argument. You should only ever set this Boolean to YES within the Block. The Block returns a Boolean value that indicates whether `obj` passed the test.
+- **stop**: A reference to a Boolean value. The block can set the value to [`true`](https://developer.apple.com/documentation/swift/true) to stop further processing of the set. The `stop` argument is an out-only argument. You should only ever set this Boolean to YES within the Block. The Block returns a Boolean value that indicates whether `obj` passed the test.
 
 ## See Also
 

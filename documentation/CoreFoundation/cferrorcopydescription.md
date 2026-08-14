@@ -35,7 +35,7 @@ The description is something like: “Operation could not be completed. “ + `k
 
 The description is something like: “Operation could not be completed. Error domain/code occurred. “ or “Operation could not be completed. “ + `kCFErrorDescriptionKey` + “ (Error domain/code)”
 
-Toll-free bridged instances of [`NSError`](https://developer.apple.com/documentation/Foundation/NSError) might provide additional behaviors for manufacturing a description string.
+Toll-free bridged instances of [`NSError`](https://developer.apple.com/documentation/foundation/nserror) might provide additional behaviors for manufacturing a description string.
 
 You should not depend on the exact contents or format of the returned string, as it might change in different releases of the operating system.
 

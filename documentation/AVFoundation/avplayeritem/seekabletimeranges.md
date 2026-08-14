@@ -23,7 +23,7 @@ var seekableTimeRanges: [NSValue] { get }
 
 #### Discussion
 
-The array contains [`NSValue`](https://developer.apple.com/documentation/Foundation/NSValue) objects containing a [`CMTimeRange`](https://developer.apple.com/documentation/CoreMedia/CMTimeRange) value indicating the times ranges to which the player item can seek. The time ranges returned may be discontinuous.
+The array contains [`NSValue`](https://developer.apple.com/documentation/foundation/nsvalue) objects containing a [`CMTimeRange`](https://developer.apple.com/documentation/coremedia/cmtimerange) value indicating the times ranges to which the player item can seek. The time ranges returned may be discontinuous.
 
 ## See Also
 

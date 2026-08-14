@@ -64,7 +64,7 @@ Updated recommended domain from `api.storekit.itunes.apple.com` to `api.storekit
 
 **New features**
 
-- Added support for [`Advanced Commerce API`](https://developer.apple.com/documentation/AdvancedCommerceAPI).
+- Added support for [`Advanced Commerce API`](https://developer.apple.com/documentation/advancedcommerceapi).
 
 ##### 113 20240708
 
@@ -98,7 +98,7 @@ New features
 
 ##### 1101 20240312
 
-- The type of the [`price`](https://developer.apple.com/documentation/AppStoreServerNotifications/price) field changed from `int32` to `int64`.
+- The type of the [`price`](https://developer.apple.com/documentation/appstoreservernotifications/price) field changed from `int32` to `int64`.
 
 ##### Server Update 20240229
 
@@ -144,7 +144,7 @@ New features
 
 New features
 
-- The new endpoint [`Extend Subscription Renewal Dates for All Active Subscribers`](extend-subscription-renewal-dates-for-all-active-subscribers.md) takes a subscription product identifier and extends the renewal date for all eligible subscribers. It responds with [`MassExtendRenewalDateResponse`](massextendrenewaldateresponse.md). For more information, see [`Extending the renewal date for auto-renewable subscriptions`](extending-the-renewal-date-for-auto-renewable-subscriptions.md). For information about new App Store server notifications related to this endpoint, see the [`App Store Server Notifications changelog`](https://developer.apple.com/documentation/AppStoreServerNotifications/app-store-server-notifications-changelog).
+- The new endpoint [`Extend Subscription Renewal Dates for All Active Subscribers`](extend-subscription-renewal-dates-for-all-active-subscribers.md) takes a subscription product identifier and extends the renewal date for all eligible subscribers. It responds with [`MassExtendRenewalDateResponse`](massextendrenewaldateresponse.md). For more information, see [`Extending the renewal date for auto-renewable subscriptions`](extending-the-renewal-date-for-auto-renewable-subscriptions.md). For information about new App Store server notifications related to this endpoint, see the [`App Store Server Notifications changelog`](https://developer.apple.com/documentation/appstoreservernotifications/app-store-server-notifications-changelog).
 - The new endpoint [`Get Status of Subscription Renewal Date Extensions`](get-status-of-subscription-renewal-date-extensions.md) checks the status of a subscription-renewal-date extension, and responds with the [`MassExtendRenewalDateStatusResponse`](massextendrenewaldatestatusresponse.md).
 
 ##### 16 20220808

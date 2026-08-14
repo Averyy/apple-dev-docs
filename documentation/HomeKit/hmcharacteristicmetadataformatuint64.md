@@ -21,7 +21,7 @@ let HMCharacteristicMetadataFormatUInt64: String
 
 #### Discussion
 
-The value is an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) object containing an unsigned 64-bit integer with a range `[0, 18446744073709551615]`.
+The value is an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) object containing an unsigned 64-bit integer with a range `[0, 18446744073709551615]`.
 
 ## See Also
 

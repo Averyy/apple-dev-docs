@@ -18,7 +18,7 @@ var identity: any NSCopying & NSObjectProtocol { get }
 
 While touch identities may be re-used, they are unique during the life of the touch, even when multiple devices are present.
 
-Identity objects implement the [`NSCopying`](https://developer.apple.com/documentation/Foundation/NSCopying) protocol so that they may be used as keys in an [`NSDictionary`](https://developer.apple.com/documentation/Foundation/NSDictionary). Use isEqual: to compare two touch identities.
+Identity objects implement the [`NSCopying`](https://developer.apple.com/documentation/foundation/nscopying) protocol so that they may be used as keys in an [`NSDictionary`](https://developer.apple.com/documentation/foundation/nsdictionary). Use isEqual: to compare two touch identities.
 
 ## See Also
 

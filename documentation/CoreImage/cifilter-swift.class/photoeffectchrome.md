@@ -41,7 +41,7 @@ func photoEffectChrome(inputImage: CIImage ) -> CIImage {
 }
 ```
 
-![Two pictures of a pink flower surrounded by foliage. The photo on the left shows a single flower photographed close-up, in focus, with good light and no effects. In the photo on the right, a photo effect chrome filter is applied, resulting in the image having lighter colors.](https://docs-assets.developer.apple.com/published/eda007c7f35680514fb13d125215042f/media-3545019%402x.png)
+![Two pictures of a pink flower surrounded by foliage. The photo on the left shows a single flower photographed close-up, in focus, with good light and no effects. In the photo on the right, a photo effect chrome filter is applied, resulting in the image having lighter colors.](/images/com.apple.coreimage/media-3545019@2x.png)
 
 ## See Also
 

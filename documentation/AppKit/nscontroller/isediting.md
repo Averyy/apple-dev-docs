@@ -16,7 +16,7 @@ var isEditing: Bool { get }
 
 #### Discussion
 
-The value of this property is [`true`](https://developer.apple.com/documentation/Swift/true) when an editor is registered with the controller object or [`false`](https://developer.apple.com/documentation/Swift/false) when no editor is registered.
+The value of this property is [`true`](https://developer.apple.com/documentation/swift/true) when an editor is registered with the controller object or [`false`](https://developer.apple.com/documentation/swift/false) when no editor is registered.
 
 ## See Also
 

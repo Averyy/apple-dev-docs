@@ -18,7 +18,7 @@ Organize your app’s data and preferences, and share that data on the pasteboar
 ### User Preferences
 - [class NSUserDefaultsController](nsuserdefaultscontroller.md)
   A controller that accesses user preference information for your app from the user’s defaults database.
-- [class NSUbiquitousKeyValueStore](../Foundation/NSUbiquitousKeyValueStore.md)
+- [class NSUbiquitousKeyValueStore](../foundation/nsubiquitouskeyvaluestore.md)
   An iCloud-based container of key-value pairs you share among instances of your app running on a person’s devices.
 ### Pasteboard
 - [class NSPasteboard](nspasteboard.md)

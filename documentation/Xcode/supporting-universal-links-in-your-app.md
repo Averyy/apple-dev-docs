@@ -6,18 +6,18 @@ Prepare your app to respond to an incoming universal link.
 
 #### Overview
 
-When a user activates a universal link, the system launches your app and sends it an [`NSUserActivity`](https://developer.apple.com/documentation/Foundation/NSUserActivity) object. Query this object to find out how your app launched and to decide what action to take.
+When a user activates a universal link, the system launches your app and sends it an [`NSUserActivity`](https://developer.apple.com/documentation/foundation/nsuseractivity) object. Query this object to find out how your app launched and to decide what action to take.
 
 To support universal links in your app:
 
 1. Create a two-way association between your app and your website and specify the URLs that your app handles. See [`Supporting associated domains`](supporting-associated-domains.md).
-2. Update your app delegate to respond when it receives an [`NSUserActivity`](https://developer.apple.com/documentation/Foundation/NSUserActivity) object with the [`activityType`](https://developer.apple.com/documentation/Foundation/NSUserActivity/activityType) set to [`NSUserActivityTypeBrowsingWeb`](https://developer.apple.com/documentation/Foundation/NSUserActivityTypeBrowsingWeb).
+2. Update your app delegate to respond when it receives an [`NSUserActivity`](https://developer.apple.com/documentation/foundation/nsuseractivity) object with the [`activityType`](https://developer.apple.com/documentation/foundation/nsuseractivity/activitytype) set to [`NSUserActivityTypeBrowsingWeb`](https://developer.apple.com/documentation/foundation/nsuseractivitytypebrowsingweb).
 
 > ⚠️ **Warning**: Universal links offer a potential attack vector into your app, so make sure to validate all URL parameters and discard any malformed URLs. In addition, limit the available actions to those that don’t risk the user’s data. For example, don’t allow universal links to directly delete content or access sensitive information about the user. When testing your URL-handling code, make sure your test cases include improperly formatted URLs.
 
 ##### Update Your App Delegate to Respond to a Universal Link
 
-When the system opens your app as the result of a universal link, your app receives an [`NSUserActivity`](https://developer.apple.com/documentation/Foundation/NSUserActivity) object with an [`activityType`](https://developer.apple.com/documentation/Foundation/NSUserActivity/activityType) value of [`NSUserActivityTypeBrowsingWeb`](https://developer.apple.com/documentation/Foundation/NSUserActivityTypeBrowsingWeb). The activity object’s [`webpageURL`](https://developer.apple.com/documentation/Foundation/NSUserActivity/webpageURL) property contains the HTTP or HTTPS URL that the user accesses. Use [`NSURLComponents`](https://developer.apple.com/documentation/Foundation/NSURLComponents) APIs to extract the components of the URL. See the examples that follow.
+When the system opens your app as the result of a universal link, your app receives an [`NSUserActivity`](https://developer.apple.com/documentation/foundation/nsuseractivity) object with an [`activityType`](https://developer.apple.com/documentation/foundation/nsuseractivity/activitytype) value of [`NSUserActivityTypeBrowsingWeb`](https://developer.apple.com/documentation/foundation/nsuseractivitytypebrowsingweb). The activity object’s [`webpageURL`](https://developer.apple.com/documentation/foundation/nsuseractivity/webpageurl) property contains the HTTP or HTTPS URL that the user accesses. Use [`NSURLComponents`](https://developer.apple.com/documentation/foundation/nsurlcomponents) APIs to extract the components of the URL. See the examples that follow.
 
 This example code shows how to handle a universal link in macOS:
 
@@ -88,7 +88,7 @@ func application(_ application: UIApplication,
 }
 ```
 
-If your app has opted into [`Scenes`](https://developer.apple.com/documentation/UIKit/scenes), and your app is not running, the system delivers the universal link to the [`scene(_:willConnectTo:options:)`](https://developer.apple.com/documentation/UIKit/UISceneDelegate/scene(_:willConnectTo:options:)) delegate method after launch, and to [`scene(_:continue:)`](https://developer.apple.com/documentation/UIKit/UISceneDelegate/scene(_:continue:)) when the universal link is tapped while your app is running or suspended in memory.
+If your app has opted into [`Scenes`](https://developer.apple.com/documentation/uikit/scenes), and your app is not running, the system delivers the universal link to the [`scene(_:willConnectTo:options:)`](https://developer.apple.com/documentation/uikit/uiscenedelegate/scene(_:willconnectto:options:)) delegate method after launch, and to [`scene(_:continue:)`](https://developer.apple.com/documentation/uikit/uiscenedelegate/scene(_:continue:)) when the universal link is tapped while your app is running or suspended in memory.
 
 ```swift
 func scene(_ scene: UIScene, willConnectTo

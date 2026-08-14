@@ -16,7 +16,7 @@ static let minimumValue: NSFontDescriptor.VariationKey
 
 #### Discussion
 
-The value of this key is an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) object.
+The value of this key is an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) object.
 
 ## See Also
 

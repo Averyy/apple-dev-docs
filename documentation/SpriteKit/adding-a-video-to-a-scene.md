@@ -41,7 +41,7 @@ sample.position = CGPointMake(CGRectGetMidX(self.frame),
 
 You control playback using the node’s [`play()`](skvideonode/play().md) and [`pause()`](skvideonode/pause().md) methods.
 
-If you need more precise control over the video playback behavior, you can use AVFoundation to create an [`AVPlayer`](https://developer.apple.com/documentation/AVFoundation/AVPlayer) object for your video content and then use this object to initialize the [`SKVideoNode`](skvideonode.md) node. Then, instead of using the node’s playback methods, you use the [`AVPlayer`](https://developer.apple.com/documentation/AVFoundation/AVPlayer) object to control playback. The video content is automatically displayed in the video node. For more information, see [`AVFoundation Programming Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/AudioVideo/Conceptual/AVFoundationPG/Articles/00_Introduction.html#//apple_ref/doc/uid/TP40010188).
+If you need more precise control over the video playback behavior, you can use AVFoundation to create an [`AVPlayer`](https://developer.apple.com/documentation/avfoundation/avplayer) object for your video content and then use this object to initialize the [`SKVideoNode`](skvideonode.md) node. Then, instead of using the node’s playback methods, you use the [`AVPlayer`](https://developer.apple.com/documentation/avfoundation/avplayer) object to control playback. The video content is automatically displayed in the video node. For more information, see [`AVFoundation Programming Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/AudioVideo/Conceptual/AVFoundationPG/Articles/00_Introduction.html#//apple_ref/doc/uid/TP40010188).
 
 
 ---

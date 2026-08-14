@@ -20,7 +20,7 @@ let kCGPDFContextSubject: CFString
 
 #### Discussion
 
-The subject of a document. Optional; if present, the value of this key must be a [`CFString`](https://developer.apple.com/documentation/CoreFoundation/CFString) object.
+The subject of a document. Optional; if present, the value of this key must be a [`CFString`](https://developer.apple.com/documentation/corefoundation/cfstring) object.
 
 ## See Also
 

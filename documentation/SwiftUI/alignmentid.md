@@ -66,7 +66,7 @@ struct HorizontalStripes: View {
 
 Because each set of stripes has three equal, vertically stacked rectangles, they align at the bottom edge of the top rectangle. This corresponds in each case to a third of the overall height, as measured from the origin at the top of each set of stripes:
 
-![Three vertical stacks of rectangles, arranged in a row.](https://docs-assets.developer.apple.com/published/6bc383d9aba310ad35109710ed2082c4/AlignmentId-1-iOS%402x.png)
+![Three vertical stacks of rectangles, arranged in a row.](/images/com.apple.SwiftUI/AlignmentId-1-iOS@2x.png)
 
 You can also use the [`alignmentGuide(_:computeValue:)`](view/alignmentguide(_:computevalue:).md) view modifier to alter the behavior of your custom guide for a view, as you might alter a built-in guide. For example, you can change one of the stacks of stripes from the previous example to align its `firstThird` guide at two thirds of the height instead:
 
@@ -87,7 +87,7 @@ struct StripesGroupModified: View {
 
 The modified guide calculation causes the affected view to place the bottom edge of its middle rectangle on the `firstThird` guide, which aligns with the bottom edge of the top rectangle in the other two groups:
 
-![Three vertical stacks of rectangles, arranged in a row.](https://docs-assets.developer.apple.com/published/ae2d62ec302d18cd491b4f09e728f6d6/AlignmentId-2-iOS%402x.png)
+![Three vertical stacks of rectangles, arranged in a row.](/images/com.apple.SwiftUI/AlignmentId-2-iOS@2x.png)
 
 ## Topics
 

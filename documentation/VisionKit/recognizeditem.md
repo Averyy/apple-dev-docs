@@ -48,7 +48,7 @@ A `RecognizedItem` enumeration contains the data for an item that the scanner id
 ## Relationships
 
 ### Conforms To
-- [Identifiable](../Swift/Identifiable.md)
+- [Identifiable](../swift/identifiable.md)
 
 ## See Also
 

@@ -25,8 +25,8 @@ This method is called by `handleOpen()` to allow a subclass to handle a client c
 ## Parameters
 
 - `client`: The client object requesting the open.
-- `options`: Options passed to  .
-- `argument`: Argument passed to  .
+- `options`: Options passed to `handleOpen()`.
+- `argument`: Argument passed to `handleOpen()`.
 
 ## See Also
 

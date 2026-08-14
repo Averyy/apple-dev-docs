@@ -62,12 +62,12 @@ The shape of each window in the sequence is `[length, featureSize]`. The sequenc
 ## Relationships
 
 ### Conforms To
-- [BidirectionalCollection](../Swift/BidirectionalCollection.md)
-- [Collection](../Swift/Collection.md)
-- [RandomAccessCollection](../Swift/RandomAccessCollection.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
-- [Sequence](../Swift/Sequence.md)
+- [BidirectionalCollection](../swift/bidirectionalcollection.md)
+- [Collection](../swift/collection.md)
+- [RandomAccessCollection](../swift/randomaccesscollection.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sequence](../swift/sequence.md)
 
 ## See Also
 

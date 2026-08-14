@@ -68,7 +68,7 @@ Separate the work you do for each frame into two phases: the update phase and th
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../Swift/BitwiseCopyable.md)
+- [BitwiseCopyable](../swift/bitwisecopyable.md)
 
 ## See Also
 

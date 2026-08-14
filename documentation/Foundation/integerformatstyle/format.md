@@ -37,7 +37,7 @@ let formattedNums = nums.map { compactNameStyle.format($0) } // ["100", "1K", "1
 
 ```
 
-To format a single integer, use the [`BinaryInteger`](https://developer.apple.com/documentation/Swift/BinaryInteger) instance method [`formatted(_:)`](https://developer.apple.com/documentation/Swift/BinaryInteger/formatted(_:)-4qd73), passing in an instance of [`IntegerFormatStyle`](integerformatstyle.md), or [`formatted()`](https://developer.apple.com/documentation/Swift/BinaryInteger/formatted()) to use a default style.
+To format a single integer, use the [`BinaryInteger`](https://developer.apple.com/documentation/swift/binaryinteger) instance method [`formatted(_:)`](https://developer.apple.com/documentation/swift/binaryinteger/formatted(_:)-4qd73), passing in an instance of [`IntegerFormatStyle`](integerformatstyle.md), or [`formatted()`](https://developer.apple.com/documentation/swift/binaryinteger/formatted()) to use a default style.
 
 ## Parameters
 

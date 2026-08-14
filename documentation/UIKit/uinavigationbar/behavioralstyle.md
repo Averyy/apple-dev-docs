@@ -25,7 +25,7 @@ var behavioralStyle: UIBehavioralStyle { get }
 
 Use this property to determine the actual behavior style when the [`preferredBehavioralStyle`](uinavigationbar/preferredbehavioralstyle.md) is [`UIBehavioralStyle.automatic`](uibehavioralstyle/automatic.md).
 
-When the value of this property is [`UIBehavioralStyle.mac`](uibehavioralstyle/mac.md), [`NSToolbar`](https://developer.apple.com/documentation/AppKit/NSToolbar) hosts the navigation bar’s content when you build your app with Mac Catalyst.
+When the value of this property is [`UIBehavioralStyle.mac`](uibehavioralstyle/mac.md), [`NSToolbar`](https://developer.apple.com/documentation/appkit/nstoolbar) hosts the navigation bar’s content when you build your app with Mac Catalyst.
 
 ## See Also
 

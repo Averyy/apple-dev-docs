@@ -26,9 +26,9 @@ Participants are a fundamental part of sharing in CloudKit. A participant provid
 
 You don’t create participants. Instead, create an instance of [`CKUserIdentity.LookupInfo`](ckuseridentity/lookupinfo-swift.class.md) for each user. Provide the user’s email address or phone number, and then use this operation to convert them into participants that you can add to a share. CloudKit limits the number of participants in a share to 100, and each participant must have an active iCloud account.
 
-> **Note**: [`UICloudSharingController`](https://developer.apple.com/documentation/UIKit/UICloudSharingController) provides a consistent and familiar experience for managing a share’s participants and their permissions. Only use this operation when you want to provide an app-specific approach.
+> **Note**: [`UICloudSharingController`](https://developer.apple.com/documentation/uikit/uicloudsharingcontroller) provides a consistent and familiar experience for managing a share’s participants and their permissions. Only use this operation when you want to provide an app-specific approach.
 
-CloudKit queries iCloud for corresponding accounts as part of the operation. If it doesn’t find an account, the server updates the participant’s [`userIdentity`](ckshare/participant/useridentity.md) to reflect that by setting the [`hasiCloudAccount`](ckuseridentity/hasicloudaccount.md) property to [`false`](https://developer.apple.com/documentation/Swift/false). CloudKit associates a participant with their iCloud account when they accept the share.
+CloudKit queries iCloud for corresponding accounts as part of the operation. If it doesn’t find an account, the server updates the participant’s [`userIdentity`](ckshare/participant/useridentity.md) to reflect that by setting the [`hasiCloudAccount`](ckuseridentity/hasicloudaccount.md) property to [`false`](https://developer.apple.com/documentation/swift/false). CloudKit associates a participant with their iCloud account when they accept the share.
 
 Anyone with the URL of a public share can become a participant in that share. For a private share, the owner manages its participants. A participant can’t accept a private share unless the owner adds them first.
 
@@ -69,7 +69,7 @@ func fetchParticipants(for lookupInfos: [CKUserIdentity.LookupInfo],
 }
 ```
 
-The operation calls [`shareParticipantFetchedBlock`](ckfetchshareparticipantsoperation/shareparticipantfetchedblock.md) once for each item you provide, and CloudKit returns the participant, or an error if it can’t generate a participant. CloudKit also batches per-participant errors. If the operation completes with errors, it returns a [`partialFailure`](ckerror/partialfailure.md) error. The error stores the individual errors in its [`userInfo`](https://developer.apple.com/documentation/Foundation/NSError/userInfo) dictionary. Use the [`CKPartialErrorsByItemIDKey`](ckpartialerrorsbyitemidkey.md) key to extract them.
+The operation calls [`shareParticipantFetchedBlock`](ckfetchshareparticipantsoperation/shareparticipantfetchedblock.md) once for each item you provide, and CloudKit returns the participant, or an error if it can’t generate a participant. CloudKit also batches per-participant errors. If the operation completes with errors, it returns a [`partialFailure`](ckerror/partialfailure.md) error. The error stores the individual errors in its [`userInfo`](https://developer.apple.com/documentation/foundation/nserror/userinfo) dictionary. Use the [`CKPartialErrorsByItemIDKey`](ckpartialerrorsbyitemidkey.md) key to extract them.
 
 ## Topics
 
@@ -97,14 +97,14 @@ The operation calls [`shareParticipantFetchedBlock`](ckfetchshareparticipantsope
 ### Inherits From
 - [CKOperation](ckoperation.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

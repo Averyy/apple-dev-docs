@@ -50,7 +50,7 @@ Use Xcode to initially configure your project or workspace to use Xcode Cloud. A
 
 For each app or framework that you want to build with Xcode Cloud, make sure its corresponding scheme uses the archive action. Choose Product > Scheme > Edit Scheme. In the sidebar, click Build and in the detail area, select the Archive checkbox for the target.
 
-![A screenshot that shows a scheme of the Fruta app with an enabled archive action.](https://docs-assets.developer.apple.com/published/e945f8514d710390e42820ba221438d6/Configuring-Your-First-Xcode-Cloud-Workflow-1%402x.png)
+![A screenshot that shows a scheme of the Fruta app with an enabled archive action.](/images/com.apple.Xcode/Configuring-Your-First-Xcode-Cloud-Workflow-1@2x.png)
 
 To find out which of your project’s schemes use the archive action, run the following command in Terminal:
 
@@ -68,7 +68,7 @@ To configure your project or workspace to use Xcode Cloud, open your project or 
 
 Xcode analyzes your project or workspace, and then creates a list in the Select a Product sheet for the products it finds. Select the product that matches your app or framework and click Next.
 
-![A screenshot of the Select a Product sheet in Xcode that lists all products for the Fruta app.](https://docs-assets.developer.apple.com/published/07ee5eb73ec5e84c53b4716d0a544368/Configuring-Your-First-Xcode-Cloud-Workflow-3%402x.png)
+![A screenshot of the Select a Product sheet in Xcode that lists all products for the Fruta app.](/images/com.apple.Xcode/Configuring-Your-First-Xcode-Cloud-Workflow-3@2x.png)
 
 If your project contains targets that use the same bundle identifier, Xcode Cloud treats them as one product. Note that a product can only have one bundle ID, and a bundle ID always matches exactly one Xcode Cloud product. If your workspace or project contains several app targets:
 
@@ -94,7 +94,7 @@ To review the suggested workflow:
 2. Make changes only if necessary in the sheet that displays the workflow information and save them.
 3. In the Review Workflow sheet, click Next and follow the steps to grant Xcode Cloud access to your source code repository.
 
-![A screenshot of the suggested workflow in Xcode for the Fruta app.](https://docs-assets.developer.apple.com/published/f00fe5c3b5dd12f29978feca81c98da4/Configuring-Your-First-Xcode-Cloud-Workflow-4%402x.png)
+![A screenshot of the suggested workflow in Xcode for the Fruta app.](/images/com.apple.Xcode/Configuring-Your-First-Xcode-Cloud-Workflow-4@2x.png)
 
 > 💡 **Tip**: Keep your first workflow simple and use the suggested settings, if possible. That way, you become familiar with Xcode Cloud without worrying about misconfiguring your first workflow. When Xcode Cloud successfully finishes your first build, edit the workflow to meet your requirements or create additional workflows to refine your CI/CD practice in either Xcode or App Store Connect.
 
@@ -104,7 +104,7 @@ Xcode Cloud requires access to the Git repository containing your code. It uses 
 
 > ❗ **Important**: Make sure you have the required permission or role to grant Xcode Cloud access to your Git repository. Additionally, if you use a self-hosted SCM provider — such as Bitbucket Server or GitHub Enterprise — make sure Xcode Cloud can access your Git repository. For information on required permissions, roles, and IP address ranges that Xcode Cloud uses, see [`Use a remote source control repository`](setting-up-your-project-to-use-xcode-cloud#Use-a-remote-source-control-repository.md).
 
-![A screenshot of the Grant Access to Your Source Code sheet in Xcode.](https://docs-assets.developer.apple.com/published/370da2c2fcf558030fd8b44500dac3b6/Configuring-Your-First-Xcode-Cloud-Workflow-5%402x.png)
+![A screenshot of the Grant Access to Your Source Code sheet in Xcode.](/images/com.apple.Xcode/Configuring-Your-First-Xcode-Cloud-Workflow-5@2x.png)
 
 After allowing Xcode Cloud to access your Git repository, Xcode indicates that it can access your source code. Click Next, and in the next sheet, click Complete.
 
@@ -126,7 +126,7 @@ To create an app record, you need to have the App Manager, Admin, or Account Hol
 
 After granting Xcode Cloud access to your Git repository and, if applicable, creating an app record, you’re ready to start your first build. Choose a branch from the pop-up menu and click Start Build. Xcode Cloud checks out the branch and starts building your code.
 
-![A screenshot of the Start Build sheet in Xcode for the Fruta app.](https://docs-assets.developer.apple.com/published/7450d7c337f31cf4f7a578035b6be55c/Configuring-Your-First-Xcode-Cloud-Workflow-6%402x.png)
+![A screenshot of the Start Build sheet in Xcode for the Fruta app.](/images/com.apple.Xcode/Configuring-Your-First-Xcode-Cloud-Workflow-6@2x.png)
 
 To view information about the in-progress build in the Editor pane, select the build in the Report navigator. To see detailed build logs, expand an action in the report outline and click Logs. If the report outline isn’t visible, enable it using the Adjust Editor Options button in the top-right corner of the Editor pane.
 
@@ -138,7 +138,7 @@ When Xcode Cloud finishes building your project, it sends an email that contains
 
 There’s a chance that your first build might fail. This is especially likely for complex code bases and projects with many dependencies. To understand why a build failed, select a build in the Report navigator, expand a failed action in the report outline, and click Logs to see the build logs.
 
-![A screenshot of Xcode that shows detailed build information in the Editor pane for a failed archive action.](https://docs-assets.developer.apple.com/published/ba9dafa2ed0f6e806ddcbfc73e585049/Configuring-Your-First-Xcode-Cloud-Workflow-7%402x.png)
+![A screenshot of Xcode that shows detailed build information in the Editor pane for a failed archive action.](/images/com.apple.Xcode/Configuring-Your-First-Xcode-Cloud-Workflow-7@2x.png)
 
 You can also click Artifacts and download the build report. For additional guidance, see [`Resolving common configuration and build issues`](resolving-common-configuration-and-build-issues.md).
 
@@ -196,7 +196,7 @@ Beyond the need to archive past builds, it’s especially important to download 
 
 To download build information and artifacts, you can use Xcode or App Store Connect. Alternatively, use the App Store Connect API to automate the task of downloading the build artifacts.
 
-For information on automating Xcode Cloud with the App Store Connect API, see [`Xcode Cloud Workflows and Builds`](https://developer.apple.com/documentation/AppStoreConnectAPI/xcode-cloud-workflows-and-builds). For information on symbol information and crash reports, see [`Diagnosing issues using crash reports and device logs`](diagnosing-issues-using-crash-reports-and-device-logs.md).
+For information on automating Xcode Cloud with the App Store Connect API, see [`Xcode Cloud Workflows and Builds`](https://developer.apple.com/documentation/appstoreconnectapi/xcode-cloud-workflows-and-builds). For information on symbol information and crash reports, see [`Diagnosing issues using crash reports and device logs`](diagnosing-issues-using-crash-reports-and-device-logs.md).
 
 ## See Also
 

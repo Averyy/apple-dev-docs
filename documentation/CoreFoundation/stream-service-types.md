@@ -7,13 +7,13 @@ String constants that specify the service type of a stream.
 ## Topics
 
 ### Constants
-- [let kCFStreamNetworkServiceTypeVoIP: CFString](../CFNetwork/kCFStreamNetworkServiceTypeVoIP.md)
+- [let kCFStreamNetworkServiceTypeVoIP: CFString](../cfnetwork/kcfstreamnetworkservicetypevoip.md)
   Specifies that the stream is providing VoIP service.
-- [let kCFStreamNetworkServiceTypeVideo: CFString](../CFNetwork/kCFStreamNetworkServiceTypeVideo.md)
+- [let kCFStreamNetworkServiceTypeVideo: CFString](../cfnetwork/kcfstreamnetworkservicetypevideo.md)
   Specifies that the stream is providing interactive video data.
-- [let kCFStreamNetworkServiceTypeBackground: CFString](../CFNetwork/kCFStreamNetworkServiceTypeBackground.md)
+- [let kCFStreamNetworkServiceTypeBackground: CFString](../cfnetwork/kcfstreamnetworkservicetypebackground.md)
   Specifies that the stream is a background download.
-- [let kCFStreamNetworkServiceTypeVoice: CFString](../CFNetwork/kCFStreamNetworkServiceTypeVoice.md)
+- [let kCFStreamNetworkServiceTypeVoice: CFString](../cfnetwork/kcfstreamnetworkservicetypevoice.md)
   Specifies that the stream is providing interactive voice data.
 
 ## See Also
@@ -26,7 +26,7 @@ String constants that specify the service type of a stream.
   Defines constants for values returned in the domain field of the `CFStreamError` structure.
 - [Error Subdomains](error-subdomains.md)
   Subdomains used to determine how to interpret an error in the `kCFStreamErrorDomainSOCKS` domain.
-- [Secure Sockets (SOCKS) Errors](../CFNetwork/1518266-secure-sockets-socks-errors.md)
+- [Secure Sockets (SOCKS) Errors](../cfnetwork/1518266-secure-sockets-socks-errors.md)
   Error codes returned by the `kCFStreamErrorDomainSOCKS` error domain.
 - [struct CFStreamEventType](cfstreameventtype.md)
   Defines constants for stream-related events.

@@ -22,7 +22,7 @@ let kSecAttrComment: CFString
 
 #### Discussion
 
-The corresponding value is of type [`CFString`](https://developer.apple.com/documentation/CoreFoundation/CFString) and contains the user-editable comment for this item.
+The corresponding value is of type [`CFString`](https://developer.apple.com/documentation/corefoundation/cfstring) and contains the user-editable comment for this item.
 
 
 ---

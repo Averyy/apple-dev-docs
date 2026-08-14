@@ -36,7 +36,7 @@ Adopt the [`GKLocalPlayerListener`](gklocalplayerlistener.md) protocol to listen
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 ### Inherited By
 - [GKLocalPlayerListener](gklocalplayerlistener.md)
 ### Conforming Types

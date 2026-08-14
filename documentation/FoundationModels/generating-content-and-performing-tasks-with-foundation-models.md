@@ -156,7 +156,7 @@ When you test apps that use the framework, use Xcode Instruments to understand m
 
 ## See Also
 
-- [Foundation Models updates](../Updates/FoundationModels.md)
+- [Foundation Models updates](../updates/foundationmodels.md)
   Learn about important changes to Foundation Models.
 - [Adding intelligent app features with generative models](adding-intelligent-app-features-with-generative-models.md)
   Build robust apps with guided generation and tool calling by adopting the Foundation Models framework.

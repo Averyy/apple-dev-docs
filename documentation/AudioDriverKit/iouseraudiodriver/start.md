@@ -16,13 +16,13 @@ virtual kern_return_t Start(IOService *provider);
 
 #### Return Value
 
-[`kIOReturnSuccess`](https://developer.apple.com/documentation/DriverKit/kIOReturnSuccess) on success, or another value if an error occurs. For a list of error codes, see [`Error Codes`](https://developer.apple.com/documentation/DriverKit/error-codes).
+[`kIOReturnSuccess`](https://developer.apple.com/documentation/driverkit/kioreturnsuccess) on success, or another value if an error occurs. For a list of error codes, see [`Error Codes`](https://developer.apple.com/documentation/driverkit/error-codes).
 
 #### Discussion
 
-Override this method inherited from [`IOService`](https://developer.apple.com/documentation/DriverKit/IOService).
+Override this method inherited from [`IOService`](https://developer.apple.com/documentation/driverkit/ioservice).
 
-After successfully matching the specified provider to your driver’s service, the system instantiates your service object and calls this method. Use this method to configure your driver’s data structures and setup the associated hardware. You might also store a reference to the `provider` object for later use. After you configure your driver, call the [`RegisterService`](https://developer.apple.com/documentation/DriverKit/IOService/RegisterService) method to let the system know your service is running.
+After successfully matching the specified provider to your driver’s service, the system instantiates your service object and calls this method. Use this method to configure your driver’s data structures and setup the associated hardware. You might also store a reference to the `provider` object for later use. After you configure your driver, call the [`RegisterService`](https://developer.apple.com/documentation/driverkit/ioservice/registerservice) method to let the system know your service is running.
 
 Always call `super` early in your implementation of this method.
 

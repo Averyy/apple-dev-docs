@@ -55,7 +55,7 @@ func processRequest(_ request: URLRequest, signposter: OSSignposter) {
 
 To record and view your signposts, open your project in Xcode and choose Product > Profile to launch Instruments. Select the Blank profiling template and then click the Add button (+) to open the Instrument library. Double-click the os_signposts instrument to add it to your session. Then click the Record button and perform the tasks in your app that you want to measure. The os_signpost instrument displays separate rows for each subsystem and category combination, and the table below the timeline provides detailed information for each signpost that Instruments captures.
 
-![A screenshot of the Instruments app that shows a number of captured signposts. The upper pane displays the signposts in a timeline, and the lower pane is a table that lists individual signposts and their corresponding metadata.](https://docs-assets.developer.apple.com/published/2ae4fce259d625a63eadf1927479a993/media-3854076%402x.png)
+![A screenshot of the Instruments app that shows a number of captured signposts. The upper pane displays the signposts in a timeline, and the lower pane is a table that lists individual signposts and their corresponding metadata.](/images/com.apple.os/media-3854076@2x.png)
 
 If your app generates a significant amount of signpost data, it may be difficult to analyze that data using the standard instrument. Consider building a custom instrument to do the analysis on your behalf. Identify the specific behaviors of your app and create a set of rules to detect and display the corresponding data. For more information, see [`Creating Custom Instruments`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2018/410/).
 

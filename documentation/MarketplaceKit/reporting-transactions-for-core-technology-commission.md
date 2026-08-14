@@ -6,7 +6,7 @@ Track any eligible purchases that you offer a person that relate to your app and
 
 #### Overview
 
-When a person installs your app from your website or from an alternative app marketplace, track any eligible purchases that you offer to a person that relate to your app and report them to Apple. To report the potential purchases, request a token from MarketplaceKit and send it to Apple using the External Purchase Server API. For more information, see [`Send External Purchase Report`](https://developer.apple.com/documentation/ExternalPurchaseServerAPI/Send-External-Purchase-Report). Retrieve a token for each purchase that you offer and send the token to Apple even if a person doesn’t complete a transaction for the offered purchase.
+When a person installs your app from your website or from an alternative app marketplace, track any eligible purchases that you offer to a person that relate to your app and report them to Apple. To report the potential purchases, request a token from MarketplaceKit and send it to Apple using the External Purchase Server API. For more information, see [`Send External Purchase Report`](https://developer.apple.com/documentation/externalpurchaseserverapi/send-external-purchase-report). Retrieve a token for each purchase that you offer and send the token to Apple even if a person doesn’t complete a transaction for the offered purchase.
 
 > ❗ **Important**: To determine which purchase offerings require reporting, see [`Reporting tokens and transactions to Apple`](https://developer.apple.comhttp://developer.apple.com/help/app-store-connect/making-payments-to-apple/reporting-tokens-and-transactions) in App Store Connect Help.
 
@@ -14,7 +14,7 @@ To receive reminders to report your tokens and transactions, sign up for App Sto
 
 #### Add the Required Target Property
 
-As a one-time setup task, add the [`MKSellsDigitalGoods`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/MKSellsDigitalGoods) property to your app’s target configuration in Xcode. Assign the property a value of `YES` to indicate that your app offers the purchase of digital goods or services. If your app doesn’t sell digital goods or services, you still need to add the [`MKSellsDigitalGoods`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/MKSellsDigitalGoods) property to your app’s target configuration with a value of `NO`.
+As a one-time setup task, add the [`MKSellsDigitalGoods`](https://developer.apple.com/documentation/bundleresources/information-property-list/mksellsdigitalgoods) property to your app’s target configuration in Xcode. Assign the property a value of `YES` to indicate that your app offers the purchase of digital goods or services. If your app doesn’t sell digital goods or services, you still need to add the [`MKSellsDigitalGoods`](https://developer.apple.com/documentation/bundleresources/information-property-list/mksellsdigitalgoods) property to your app’s target configuration with a value of `NO`.
 
 #### Request a Core Technology Token
 
@@ -49,19 +49,19 @@ Decode the token using Base64URL decoding to reveal the token’s JSON data. A d
 }
 ```
 
-For more information on decoding tokens, see [`Receiving and decoding external purchase tokens`](https://developer.apple.com/documentation/StoreKit/receiving-and-decoding-external-purchase-tokens).
+For more information on decoding tokens, see [`Receiving and decoding external purchase tokens`](https://developer.apple.com/documentation/storekit/receiving-and-decoding-external-purchase-tokens).
 
 #### Report Tokens and Their Transactions
 
-In the decoded JSON, use the [`externalPurchaseId`](https://developer.apple.com/documentation/ExternalPurchaseServerAPI/externalPurchaseId) value to report the token to Apple. Report the token by using the [`Send External Purchase Report`](https://developer.apple.com/documentation/ExternalPurchaseServerAPI/Send-External-Purchase-Report) endpoint of the [`External Purchase Server API`](https://developer.apple.com/documentation/ExternalPurchaseServerAPI).
+In the decoded JSON, use the [`externalPurchaseId`](https://developer.apple.com/documentation/externalpurchaseserverapi/externalpurchaseid) value to report the token to Apple. Report the token by using the [`Send External Purchase Report`](https://developer.apple.com/documentation/externalpurchaseserverapi/send-external-purchase-report) endpoint of the [`External Purchase Server API`](https://developer.apple.com/documentation/externalpurchaseserverapi).
 
-Report each token you retrieve regardless of whether the token corresponds to a completed transaction. The endpoint allows you to specify which tokens result in a transaction. You can also send the same token with updated information. For example, when a transaction completes after you initially report a token you can update the token with the transaction information. For more information, see [`Reporting tokens with transactions`](https://developer.apple.com/documentation/ExternalPurchaseServerAPI/reportwithtransactions).
+Report each token you retrieve regardless of whether the token corresponds to a completed transaction. The endpoint allows you to specify which tokens result in a transaction. You can also send the same token with updated information. For example, when a transaction completes after you initially report a token you can update the token with the transaction information. For more information, see [`Reporting tokens with transactions`](https://developer.apple.com/documentation/externalpurchaseserverapi/reportwithtransactions).
 
 #### Receive Notifications
 
-To receive reminders to report your tokens and transactions, sign up for [`App Store Server Notifications`](https://developer.apple.com/documentation/AppStoreServerNotifications). Implement an endpoint on your webserver ([`App Store Server Notifications V2`](https://developer.apple.com/documentation/AppStoreServerNotifications/App-Store-Server-Notifications-V2)), to receive notifications of type `EXTERNAL_PURCHASE_TOKEN` for each token that you generate. For more information, see [`notificationType`](https://developer.apple.com/documentation/AppStoreServerNotifications/notificationType).
+To receive reminders to report your tokens and transactions, sign up for [`App Store Server Notifications`](https://developer.apple.com/documentation/appstoreservernotifications). Implement an endpoint on your webserver ([`App Store Server Notifications V2`](https://developer.apple.com/documentation/appstoreservernotifications/app-store-server-notifications-v2)), to receive notifications of type `EXTERNAL_PURCHASE_TOKEN` for each token that you generate. For more information, see [`notificationType`](https://developer.apple.com/documentation/appstoreservernotifications/notificationtype).
 
-In production, you can send a token again; for example, if Apple fails to receive a particular token you identify in your records as sent. Notifications in the sandbox environment are also helpful during development. For more information, see “Receive notifications for unreported tokens” in [`External Purchase Server API`](https://developer.apple.com/documentation/ExternalPurchaseServerAPI).
+In production, you can send a token again; for example, if Apple fails to receive a particular token you identify in your records as sent. Notifications in the sandbox environment are also helpful during development. For more information, see “Receive notifications for unreported tokens” in [`External Purchase Server API`](https://developer.apple.com/documentation/externalpurchaseserverapi).
 
 ## See Also
 

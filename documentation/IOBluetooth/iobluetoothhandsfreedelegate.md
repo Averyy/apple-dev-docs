@@ -23,7 +23,7 @@ protocol IOBluetoothHandsFreeDelegate : NSObjectProtocol
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 ### Inherited By
 - [IOBluetoothHandsFreeDeviceDelegate](iobluetoothhandsfreedevicedelegate.md)
 

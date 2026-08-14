@@ -20,12 +20,12 @@ func setEditing(_ editing: Bool, animated: Bool)
 
 #### Discussion
 
-When you call this method with the value of `editing` set to [`true`](https://developer.apple.com/documentation/Swift/true), and the `UITableViewCell` object is configured to have controls, the cell shows an insertion (green plus) or deletion control (red minus) on the left side of each cell and a reordering control on the right side. This method is called on each visible cell when the [`setEditing(_:animated:)`](uitableview/setediting(_:animated:).md) method of `UITableView` is invoked. Calling this method with `editing` set to [`false`](https://developer.apple.com/documentation/Swift/false) removes the controls from the cell.
+When you call this method with the value of `editing` set to [`true`](https://developer.apple.com/documentation/swift/true), and the `UITableViewCell` object is configured to have controls, the cell shows an insertion (green plus) or deletion control (red minus) on the left side of each cell and a reordering control on the right side. This method is called on each visible cell when the [`setEditing(_:animated:)`](uitableview/setediting(_:animated:).md) method of `UITableView` is invoked. Calling this method with `editing` set to [`false`](https://developer.apple.com/documentation/swift/false) removes the controls from the cell.
 
 ## Parameters
 
-- `editing`: [`true`](https://developer.apple.com/documentation/Swift/true) to enter editing mode, [`false`](https://developer.apple.com/documentation/Swift/false) to leave it. The default value is [`false`](https://developer.apple.com/documentation/Swift/false).
-- `animated`: [`true`](https://developer.apple.com/documentation/Swift/true) to animate the appearance or disappearance of the insertion/deletion control and the reordering control, [`false`](https://developer.apple.com/documentation/Swift/false) to make the transition immediate.
+- `editing`: [`true`](https://developer.apple.com/documentation/swift/true) to enter editing mode, [`false`](https://developer.apple.com/documentation/swift/false) to leave it. The default value is [`false`](https://developer.apple.com/documentation/swift/false).
+- `animated`: [`true`](https://developer.apple.com/documentation/swift/true) to animate the appearance or disappearance of the insertion/deletion control and the reordering control, [`false`](https://developer.apple.com/documentation/swift/false) to make the transition immediate.
 
 ## See Also
 

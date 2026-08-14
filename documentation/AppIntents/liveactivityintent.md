@@ -26,15 +26,15 @@ To gain permission for starting Live Activities, conform to this protocol. In ge
 ### Inherits From
 - [AppIntent](appintent.md)
 - [PersistentlyIdentifiable](persistentlyidentifiable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 - [SystemIntent](systemintent.md)
 
 ## See Also
 
-- [Live Activities](../WidgetKit/LiveActivities-Collection.md)
+- [Live Activities](../widgetkit/liveactivities-collection.md)
   Let people track updates from your app with Live Activities.
-- [ActivityKit](../ActivityKit/ActivityKit.md)
+- [ActivityKit](../activitykit/activitykit.md)
   Share live updates from your app as Live Activities on iPhone, iPad, Apple Watch, and the Mac.
 
 

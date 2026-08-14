@@ -18,7 +18,7 @@ var mobileNetworkCode: String? { get }
 
 #### Discussion
 
-A read-only [`NSString`](https://developer.apple.com/documentation/Foundation/NSString) object that represents the numeric mobile network code (MNC) for the user’s cellular service provider. Typing this property as an [`NSString`](https://developer.apple.com/documentation/Foundation/NSString) object, rather than a number type, preserves leading zeroes in MNCs.
+A read-only [`NSString`](https://developer.apple.com/documentation/foundation/nsstring) object that represents the numeric mobile network code (MNC) for the user’s cellular service provider. Typing this property as an [`NSString`](https://developer.apple.com/documentation/foundation/nsstring) object, rather than a number type, preserves leading zeroes in MNCs.
 
 The value for this property is `nil` if any of the following apply:
 

@@ -20,7 +20,7 @@ void vDSP_destroy_fftsetup(FFTSetup __setup);
 
 ## Parameters
 
-- `__setup`: The setup structure to deallocate, previously created by  .
+- `__setup`: The setup structure to deallocate, previously created by [`vDSP_create_fftsetup`](1580009-vdsp_create_fftsetup.md).
 
 
 ---

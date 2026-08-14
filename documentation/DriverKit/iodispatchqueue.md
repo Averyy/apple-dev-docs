@@ -21,7 +21,7 @@ class IODispatchQueue;
 
 An [`IODispatchQueue`](iodispatchqueue.md) object is a FIFO queue that you use to execute tasks serially in your driver. You submit tasks as code blocks, and the system dequeues one block at a time, executing them sequentially.
 
-> ❗ **Important**:  Always use an [`IODispatchQueue`](iodispatchqueue.md) instead of a [`dispatch_queue_t`](https://developer.apple.com/documentation/Dispatch/dispatch_queue_t) structure to schedule tasks for your driver.
+> ❗ **Important**:  Always use an [`IODispatchQueue`](iodispatchqueue.md) instead of a [`dispatch_queue_t`](https://developer.apple.com/documentation/dispatch/dispatch_queue_t) structure to schedule tasks for your driver.
 
 ## Topics
 

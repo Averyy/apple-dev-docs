@@ -20,7 +20,7 @@ static let phoneUsageReport: SRSensor
 
 The [`sample`](srfetchresult/sample.md) type for this sensor is [`SRPhoneUsageReport`](srphoneusagereport.md).
 
-You need to provide a reason to record phone usage by adding the [`SRSensorUsagePhoneUsage`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSSensorKitUsageDetail/SRSensorUsagePhoneUsage) dictionary to the [`NSSensorKitUsageDetail`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSSensorKitUsageDetail) key in the information property list.
+You need to provide a reason to record phone usage by adding the [`SRSensorUsagePhoneUsage`](https://developer.apple.com/documentation/bundleresources/information-property-list/nssensorkitusagedetail/srsensorusagephoneusage) dictionary to the [`NSSensorKitUsageDetail`](https://developer.apple.com/documentation/bundleresources/information-property-list/nssensorkitusagedetail) key in the information property list.
 
 ## See Also
 

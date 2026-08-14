@@ -7,7 +7,7 @@ An atom that specifies the media handler component that is to be used to interpr
 
 #### Overview
 
-See [`Handler reference atom ('hdlr')`](handler_reference_atom.md).
+See [`Handler reference atom`](handler_reference_atom.md).
 
 ## See Also
 

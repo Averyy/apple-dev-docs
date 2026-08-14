@@ -51,11 +51,11 @@ HStack {
 
 When `isBig` is true — defined elsewhere as a private [`State`](state.md) variable — the rectangles look the same, because their heights match that of the modified gradient:
 
-![Two identical, tall rectangles, with a gradient that starts red at](https://docs-assets.developer.apple.com/published/74740fb565d7df709a80e56babca61d6/ShapeStyle-in-1%402x.png)
+![Two identical, tall rectangles, with a gradient that starts red at](/images/com.apple.SwiftUI/ShapeStyle-in-1@2x.png)
 
 When the user toggles `isBig` by tapping the [`HStack`](hstack.md), the rectangles shrink, but the gradients each react in a different way:
 
-![Two short rectangles with different coloration. The first has a](https://docs-assets.developer.apple.com/published/561144fa4933281f9e7e6af67baea758/ShapeStyle-in-2%402x.png)
+![Two short rectangles with different coloration. The first has a](/images/com.apple.SwiftUI/ShapeStyle-in-2@2x.png)
 
 SwiftUI remaps the gradient of the first rectangle to the new frame height, so that you continue to see the full range of colors in a smaller area. For the second rectangle, the modified gradient retains a mapping to the full height, so you instead see only a small part of the overall gradient. Animation helps to visualize the difference.
 

@@ -25,7 +25,7 @@ When specifying a stroke style or fill style, you can pass in a pattern object i
 ## Parameters
 
 - `image`: An image object.
-- `repeat`: An optional string. If the string value is  , the pattern repeats horizontally only. If the string value is  , the pattern repeats vertically only. If the string value is  , the pattern does not repeat. If this parameter is omitted, the pattern repeats both horizontally and vertically.
+- `repeat`: An optional string. If the string value is `"repeat-x"`, the pattern repeats horizontally only. If the string value is `"repeat-y"`, the pattern repeats vertically only. If the string value is `"repeat-none"`, the pattern does not repeat. If this parameter is omitted, the pattern repeats both horizontally and vertically.
 
 ## See Also
 

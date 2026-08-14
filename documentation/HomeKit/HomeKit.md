@@ -17,7 +17,7 @@ Configure, control, and communicate with home automation accessories.
 
 HomeKit enables your app to coordinate and control home automation accessories from multiple vendors to present a coherent, user-focused interface.
 
-![The diagram depicts a stylized phone emitting waves to indicate communication with a house pictured as a central icon. Four icons are arranged in a semi-circle to the right of the house icon, depicting connected accessories including a garage door, a thermometer, a sliding light switch, and a lamp.](https://docs-assets.developer.apple.com/published/d33b070d6684f4f8ae1ed27b980f946b/media-3111422%402x.png)
+![The diagram depicts a stylized phone emitting waves to indicate communication with a house pictured as a central icon. Four icons are arranged in a semi-circle to the right of the house icon, depicting connected accessories including a garage door, a thermometer, a sliding light switch, and a lamp.](/images/com.apple.homekit/media-3111422@2x.png)
 
 Using HomeKit, your app can:
 
@@ -30,9 +30,9 @@ Using HomeKit, your app can:
 ### Essentials
 - [Enabling HomeKit in your app](enabling-homekit-in-your-app.md)
   Declare your app’s intention to use HomeKit, and get permission from the user to access home automation accessories.
-- [HomeKit Entitlement](../BundleResources/Entitlements/com.apple.developer.homekit.md)
+- [HomeKit Entitlement](../bundleresources/entitlements/com.apple.developer.homekit.md)
   A Boolean value that indicates whether users of the app may manage HomeKit-compatible accessories.
-- [NSHomeKitUsageDescription](../BundleResources/Information-Property-List/NSHomeKitUsageDescription.md)
+- [NSHomeKitUsageDescription](../bundleresources/information-property-list/nshomekitusagedescription.md)
   A message that tells people why the app is requesting access to their HomeKit configuration data.
 ### Home Manager
 - [Configuring a home automation device](configuring-a-home-automation-device.md)

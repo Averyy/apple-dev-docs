@@ -21,7 +21,7 @@ struct SingleSampleBuffers
 ## Relationships
 
 ### Conforms To
-- [Sequence](../Swift/Sequence.md)
+- [Sequence](../swift/sequence.md)
 
 ## See Also
 

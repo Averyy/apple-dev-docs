@@ -19,7 +19,7 @@ Resolves a detent to its value.
 
 #### Return Value
 
-A [`CGFloat`](https://developer.apple.com/documentation/CoreFoundation/CGFloat-swift.struct) that represents the value of the detent, or `nil` if the detent is inactive in the provided context.
+A [`CGFloat`](https://developer.apple.com/documentation/corefoundation/cgfloat-swift.struct) that represents the value of the detent, or `nil` if the detent is inactive in the provided context.
 
 #### Discussion
 

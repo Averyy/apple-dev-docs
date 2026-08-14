@@ -10,7 +10,7 @@ Apps rely on many types of assets to create a rich, dynamic, and visually engagi
 
 Xcode simplifies managing most types of assets with asset catalogs. Use *asset catalogs* to organize and manage resources such as images, colors, app icons, textures, stickers, and data.
 
-![Three icons that represent common types of resources in asset catalogs. From left-to-right, an image stack icon with the label images, a color picker icon with the label colors, and a CSV icon with the label data.](https://docs-assets.developer.apple.com/published/510957b38e01629af8d00419934db5ea/asset-management-1%402x.png)
+![Three icons that represent common types of resources in asset catalogs. From left-to-right, an image stack icon with the label images, a color picker icon with the label colors, and a CSV icon with the label data.](/images/com.apple.Xcode/asset-management-1@2x.png)
 
 Xcode also provides interactive editors for certain types of assets, like particle effects, that let you experiment, make changes, and see the results immediately.
 
@@ -31,22 +31,22 @@ Xcode also provides interactive editors for certain types of assets, like partic
 ### Images
 - [Adding images to your Xcode project](adding-images-to-your-xcode-project.md)
   Import images into your project, manage their appearances and variations, and load them at runtime.
-- [Creating custom symbol images for your app](../UIKit/creating-custom-symbol-images-for-your-app.md)
+- [Creating custom symbol images for your app](../uikit/creating-custom-symbol-images-for-your-app.md)
   Create, organize, and annotate symbol images using SF Symbols.
 ### Colors
 - [Specifying your app’s color scheme](specifying-your-apps-color-scheme.md)
   Set a global accent color for your app by using asset catalogs.
-- [Supporting Dark Mode in your interface](../UIKit/supporting-dark-mode-in-your-interface.md)
+- [Supporting Dark Mode in your interface](../uikit/supporting-dark-mode-in-your-interface.md)
   Update colors, images, and behaviors so that your app adapts automatically when Dark Mode is active.
 ### Augmented reality assets
-- [Detecting Images in an AR Experience](../ARKit/detecting-images-in-an-ar-experience.md)
+- [Detecting Images in an AR Experience](../arkit/detecting-images-in-an-ar-experience.md)
   React to known 2D images in the user’s environment, and use their positions to place AR content.
-- [Scanning and Detecting 3D Objects](../ARKit/scanning-and-detecting-3d-objects.md)
+- [Scanning and Detecting 3D Objects](../arkit/scanning-and-detecting-3d-objects.md)
   Record spatial features of real-world objects, then use the results to find those objects in the user’s environment and trigger AR content.
-- [Composing interactive 3D content with RealityKit and Reality Composer Pro](../RealityKit/composing-interactive-3d-content-with-realitykit-and-reality-composer-pro.md)
+- [Composing interactive 3D content with RealityKit and Reality Composer Pro](../realitykit/composing-interactive-3d-content-with-realitykit-and-reality-composer-pro.md)
   Build an interactive scene using an animation timeline.
 ### Machine learning models
-- [Create ML](../CreateML/CreateML.md)
+- [Create ML](../createml/createml.md)
   Create machine learning models for use in your app.
 ### Particle effects
 - [Creating a SpriteKit particle emitter in Xcode](creating-a-spritekit-particle-emitter-in-xcode.md)
@@ -56,7 +56,7 @@ Xcode also provides interactive editors for certain types of assets, like partic
 
 - [Localization](localization.md)
   Expand the market for your app by supporting multiple languages and regions.
-- [Accessibility Inspector](../Accessibility/accessibility-inspector.md)
+- [Accessibility Inspector](../accessibility/accessibility-inspector.md)
   Reveal how your app represents itself to people using accessibility features.
 
 

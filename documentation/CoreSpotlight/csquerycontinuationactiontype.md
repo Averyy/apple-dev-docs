@@ -20,7 +20,7 @@ let CSQueryContinuationActionType: String
 
 #### Discussion
 
-To support search continuation, be sure to include the `CoreSpotlightContinuation` key in your Info.plist file with the value `true`. When users continue a query they started in Spotlight, the system calls your app delegate’s `application(_:willContinueUserActivityWithType:)` method with `CSQueryContinuationActionType`. Then, your app delegate receives an [`NSUserActivity`](https://developer.apple.com/documentation/Foundation/NSUserActivity) object that contains a `userInfo` dictionary that includes the [`CSSearchQueryString`](cssearchquerystring.md) key in its `application(_:continue:restorationHandler:)` method. You use the query string associated with this key to continue the search.
+To support search continuation, be sure to include the `CoreSpotlightContinuation` key in your Info.plist file with the value `true`. When users continue a query they started in Spotlight, the system calls your app delegate’s `application(_:willContinueUserActivityWithType:)` method with `CSQueryContinuationActionType`. Then, your app delegate receives an [`NSUserActivity`](https://developer.apple.com/documentation/foundation/nsuseractivity) object that contains a `userInfo` dictionary that includes the [`CSSearchQueryString`](cssearchquerystring.md) key in its `application(_:continue:restorationHandler:)` method. You use the query string associated with this key to continue the search.
 
 ## See Also
 

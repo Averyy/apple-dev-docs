@@ -22,7 +22,7 @@ var texture: any MTLTexture { get }
 
 #### Discussion
 
-Use this object to configure a [`MTLRenderPipelineColorAttachmentDescriptor`](https://developer.apple.com/documentation/Metal/MTLRenderPipelineColorAttachmentDescriptor) object to render to the drawable object.
+Use this object to configure a [`MTLRenderPipelineColorAttachmentDescriptor`](https://developer.apple.com/documentation/metal/mtlrenderpipelinecolorattachmentdescriptor) object to render to the drawable object.
 
 
 ---

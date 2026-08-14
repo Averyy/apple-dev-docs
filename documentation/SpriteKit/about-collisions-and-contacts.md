@@ -50,7 +50,7 @@ ground.physicsBody?.categoryBitMask = 0b0001
 
 The following image shows the paths taken by both balls when the code above is executed.
 
-![Paths taken by nodes with different collision bit masks](https://docs-assets.developer.apple.com/published/2a9c55c9c254126f23b7d3b1e85bdce3/media-3109124%402x.png)
+![Paths taken by nodes with different collision bit masks](/images/com.apple.spritekit/media-3109124@2x.png)
 
 ## See Also
 

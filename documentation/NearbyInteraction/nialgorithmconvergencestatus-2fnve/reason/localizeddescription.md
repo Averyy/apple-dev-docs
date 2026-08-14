@@ -19,7 +19,7 @@ var localizedDescription: String? { get }
 
 #### Discussion
 
-For more information, see [`localizedDescription`](https://developer.apple.com/documentation/Foundation/NSError/localizedDescription).
+For more information, see [`localizedDescription`](https://developer.apple.com/documentation/foundation/nserror/localizeddescription).
 
 
 ---

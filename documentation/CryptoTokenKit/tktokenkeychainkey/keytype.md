@@ -3,7 +3,7 @@
 **Framework**: CryptoTokenKit  
 **Kind**: property
 
-The type of the key. Currently, only [`kSecAttrKeyTypeRSA`](https://developer.apple.com/documentation/Security/kSecAttrKeyTypeRSA) and `kSecAttrKeyTypeECSECPrimeRandom` are supported values.
+The type of the key. Currently, only [`kSecAttrKeyTypeRSA`](https://developer.apple.com/documentation/security/ksecattrkeytypersa) and `kSecAttrKeyTypeECSECPrimeRandom` are supported values.
 
 **Availability**:
 - iOS 10.0+

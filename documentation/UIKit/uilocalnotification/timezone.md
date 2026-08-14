@@ -19,7 +19,7 @@ var timeZone: TimeZone? { get set }
 
 #### Discussion
 
-The date specified in [`fireDate`](uilocalnotification/firedate.md) is interpreted according to the value of this property. If you specify `nil` (the default), the fire date is interpreted as an absolute GMT time, which is suitable for cases such as countdown timers. If you assign a valid [`NSTimeZone`](https://developer.apple.com/documentation/Foundation/NSTimeZone) object to this property, the fire date is interpreted as a wall-clock time that is automatically adjusted when there are changes in time zones; an example suitable for this case is an an alarm clock.
+The date specified in [`fireDate`](uilocalnotification/firedate.md) is interpreted according to the value of this property. If you specify `nil` (the default), the fire date is interpreted as an absolute GMT time, which is suitable for cases such as countdown timers. If you assign a valid [`NSTimeZone`](https://developer.apple.com/documentation/foundation/nstimezone) object to this property, the fire date is interpreted as a wall-clock time that is automatically adjusted when there are changes in time zones; an example suitable for this case is an an alarm clock.
 
 ## See Also
 

@@ -30,7 +30,7 @@ There are no guarantees about the thread or queue on which any Xcode Source Edit
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

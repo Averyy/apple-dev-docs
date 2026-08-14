@@ -37,7 +37,7 @@ When you do this to create an environment that’s suitable for video playback, 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../Swift/Equatable.md)
+- [Equatable](../swift/equatable.md)
 
 ## See Also
 

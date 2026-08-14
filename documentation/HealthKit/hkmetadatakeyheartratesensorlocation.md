@@ -21,7 +21,7 @@ let HKMetadataKeyHeartRateSensorLocation: String
 
 #### Discussion
 
-This key takes an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) containing an [`HKHeartRateSensorLocation`](hkheartratesensorlocation.md) as its value.
+This key takes an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) containing an [`HKHeartRateSensorLocation`](hkheartratesensorlocation.md) as its value.
 
 ## Topics
 

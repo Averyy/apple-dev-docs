@@ -27,7 +27,7 @@ A result code. See [`Security Framework Result Codes`](security-framework-result
 ## Parameters
 
 - `certificate`: The certificate object from which to retrieve the common name.
-- `commonName`: On return, points to the common name. In Objective-C, call the [`CFRelease`](https://developer.apple.com/documentation/CoreFoundation/CFRelease) function to release this object when you are finished with it.
+- `commonName`: On return, points to the common name. In Objective-C, call the [`CFRelease`](https://developer.apple.com/documentation/corefoundation/cfrelease) function to release this object when you are finished with it.
 
 
 ---

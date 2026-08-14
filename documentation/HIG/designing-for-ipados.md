@@ -9,7 +9,7 @@ framework: HIG
 
 People value the power, mobility, and flexibility of iPad as they enjoy media, play games, perform detailed productivity tasks, and bring their creations to life.
 
-![A stylized representation of an iPad frame shown on top of a grid. The image is overlaid with rectangular and circular grid lines and is tinted green to subtly reflect the green in the original six-color Apple logo.](https://docs-assets.developer.apple.com/published/5f4901aef386c80fa93df3e1a5ab70bf/platforms-iPadOS-intro~dark%402x.png)
+![A stylized representation of an iPad frame shown on top of a grid. The image is overlaid with rectangular and circular grid lines and is tinted green to subtly reflect the green in the original six-color Apple logo.](/images/com.apple.HIG/platforms-iPadOS-intro~dark@2x.png)
 As you begin designing your app or game for iPad, start by understanding the following fundamental device characteristics and patterns that distinguish the iPadOS experience. Using these characteristics and patterns to inform your design decisions can help you provide an app or game that iPad users appreciate.
 **Display.** iPad has a large, high-resolution display.
 **Ergonomics.** People often hold their iPad while using it, but they might also set it on a surface or place it on a stand. Positioning the device in different ways can change the viewing distance, although people are typically within about 3 feet of the device as they interact with it.

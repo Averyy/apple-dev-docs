@@ -13,13 +13,13 @@ func XCTAssertNotEqual<T>(_ expression1: @autoclosure () throws -> T, _ expressi
 
 #### Discussion
 
-`expression1`, `expression2`, and `accuracy` must all be of the same type `T`, and type `T` must conform to [`FloatingPoint`](https://developer.apple.com/documentation/Swift/FloatingPoint).
+`expression1`, `expression2`, and `accuracy` must all be of the same type `T`, and type `T` must conform to [`FloatingPoint`](https://developer.apple.com/documentation/swift/floatingpoint).
 
 ## Parameters
 
-- `expression1`: An expression of type `T`, where `T` conforms to [`FloatingPoint`](https://developer.apple.com/documentation/Swift/FloatingPoint).
-- `expression2`: A second expression of type `T`, where `T` conforms to [`FloatingPoint`](https://developer.apple.com/documentation/Swift/FloatingPoint).
-- `accuracy`: An expression of type `T`, where `T` conforms to [`FloatingPoint`](https://developer.apple.com/documentation/Swift/FloatingPoint). This parameter describes the maximum difference between `expression1` and `expression2` for these values to be considered not equal.
+- `expression1`: An expression of type `T`, where `T` conforms to [`FloatingPoint`](https://developer.apple.com/documentation/swift/floatingpoint).
+- `expression2`: A second expression of type `T`, where `T` conforms to [`FloatingPoint`](https://developer.apple.com/documentation/swift/floatingpoint).
+- `accuracy`: An expression of type `T`, where `T` conforms to [`FloatingPoint`](https://developer.apple.com/documentation/swift/floatingpoint). This parameter describes the maximum difference between `expression1` and `expression2` for these values to be considered not equal.
 - `message`: An optional description of a failure.
 - `file`: The file where the failure occurs. The default is the filename of the test case where you call this function.
 - `line`: The line number where the failure occurs. The default is the line number where you call this function.

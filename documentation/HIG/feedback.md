@@ -11,7 +11,7 @@ framework: HIG
 
 Feedback helps people know what’s happening, discover what they can do next, understand the results of actions, and avoid mistakes.
 
-![A sketch of a pointer surrounded by a circular set of short lines, suggesting a response to a mouse click. The image is overlaid with rectangular and circular grid lines and is tinted orange to subtly reflect the orange in the original six-color Apple logo.](https://docs-assets.developer.apple.com/published/9296e95968c14b2649ef443fc934f26c/patterns-feedback-intro~dark%402x.png)
+![A sketch of a pointer surrounded by a circular set of short lines, suggesting a response to a mouse click. The image is overlaid with rectangular and circular grid lines and is tinted orange to subtly reflect the orange in the original six-color Apple logo.](/images/com.apple.HIG/patterns-feedback-intro~dark@2x.png)
 Providing clear, consistent feedback as people interact with your app or game can make it feel intuitive and encourage deeper exploration. Feedback can communicate several different things, such as:
 - The current status of something
 - The success or failure of an important task or action
@@ -41,7 +41,7 @@ The most effective feedback tends to match the significance of the information t
 [Motion](motion.md)
 
 #### Developer documentation
-[Animation and haptics](../UIKit/animation-and-haptics.md) — UIKit
+[Animation and haptics](../uikit/animation-and-haptics.md) — UIKit
 
 #### Videos
 - [Designing Fluid Interfaces](https://developer.apple.com/videos/play/wwdc2018/803) - Discover the techniques used to create the fluid gestural interface of iPhone X. Learn how to design with gestures and motion that feel intuitive and natural, making your app a delight to use.

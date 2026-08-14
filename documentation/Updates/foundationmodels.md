@@ -6,29 +6,29 @@ Learn about important changes to Foundation Models.
 
 #### Overview
 
-Browse notable changes in [`Foundation Models`](https://developer.apple.com/documentation/FoundationModels).
+Browse notable changes in [`Foundation Models`](https://developer.apple.com/documentation/foundationmodels).
 
 #### June 2026
 
 ##### General
 
-- Build multimodal agentic app experiences by using the [`LanguageModelSession.DynamicProfile`](https://developer.apple.com/documentation/FoundationModels/LanguageModelSession/DynamicProfile) API.
-- Use the improved error types, like [`LanguageModelError`](https://developer.apple.com/documentation/FoundationModels/LanguageModelError) for model-specific errors, [`SystemLanguageModel.Error`](https://developer.apple.com/documentation/FoundationModels/SystemLanguageModel/Error) for on-device Apple Foundation model errors, and [`LanguageModelSession.Error`](https://developer.apple.com/documentation/FoundationModels/LanguageModelSession/Error) for errors related to the session but not the model.
+- Build multimodal agentic app experiences by using the [`LanguageModelSession.DynamicProfile`](https://developer.apple.com/documentation/foundationmodels/languagemodelsession/dynamicprofile) API.
+- Use the improved error types, like [`LanguageModelError`](https://developer.apple.com/documentation/foundationmodels/languagemodelerror) for model-specific errors, [`SystemLanguageModel.Error`](https://developer.apple.com/documentation/foundationmodels/systemlanguagemodel/error) for on-device Apple Foundation model errors, and [`LanguageModelSession.Error`](https://developer.apple.com/documentation/foundationmodels/languagemodelsession/error) for errors related to the session but not the model.
 
 ##### Models
 
-- Use the latest on-device [`SystemLanguageModel`](https://developer.apple.com/documentation/FoundationModels/SystemLanguageModel) that follows instructions more accurately and produces better results, including in complex scenarios. Because the model changes when a person updates to iOS 27, iPadOS 27, macOS 27, and visionOS 27, test your prompts with the new model to verify your app’s behavior.
-- Adopt the [`LanguageModel`](https://developer.apple.com/documentation/FoundationModels/LanguageModel) protocol to use any large language model — server or on-device — with the Foundation Models framework.
-- Use [`PrivateCloudComputeLanguageModel`](https://developer.apple.com/documentation/FoundationModels/PrivateCloudComputeLanguageModel) to access more reasoning capabilities and a larger context size.
-- Perform image analysis tasks by including an image in your prompt and using tools the [`Vision`](https://developer.apple.com/documentation/Vision) framework provides, like [`OCRTool`](https://developer.apple.com/documentation/Vision/OCRTool) and [`BarcodeReaderTool`](https://developer.apple.com/documentation/Vision/BarcodeReaderTool).
+- Use the latest on-device [`SystemLanguageModel`](https://developer.apple.com/documentation/foundationmodels/systemlanguagemodel) that follows instructions more accurately and produces better results, including in complex scenarios. Because the model changes when a person updates to iOS 27, iPadOS 27, macOS 27, and visionOS 27, test your prompts with the new model to verify your app’s behavior.
+- Adopt the [`LanguageModel`](https://developer.apple.com/documentation/foundationmodels/languagemodel) protocol to use any large language model — server or on-device — with the Foundation Models framework.
+- Use [`PrivateCloudComputeLanguageModel`](https://developer.apple.com/documentation/foundationmodels/privatecloudcomputelanguagemodel) to access more reasoning capabilities and a larger context size.
+- Perform image analysis tasks by including an image in your prompt and using tools the [`Vision`](https://developer.apple.com/documentation/vision) framework provides, like [`OCRTool`](https://developer.apple.com/documentation/vision/ocrtool) and [`BarcodeReaderTool`](https://developer.apple.com/documentation/vision/barcodereadertool).
 
 ##### Tool Calling
 
-- Control how the model interacts with tools for your request by using [`GenerationOptions.ToolCallingMode`](https://developer.apple.com/documentation/FoundationModels/GenerationOptions/ToolCallingMode-swift.struct).
+- Control how the model interacts with tools for your request by using [`GenerationOptions.ToolCallingMode`](https://developer.apple.com/documentation/foundationmodels/generationoptions/toolcallingmode-swift.struct).
 
 ##### Instruments
 
-- Use the updated [`Analyzing the runtime performance of your Foundation Models app`](https://developer.apple.com/documentation/FoundationModels/analyzing-the-runtime-performance-of-your-foundation-models-app) to get detailed insight into the complex workflows you build. The instrument provides insight into latency, prompts sent to the model, model output, tools and token usage, and so on.
+- Use the updated [`Analyzing the runtime performance of your Foundation Models app`](https://developer.apple.com/documentation/foundationmodels/analyzing-the-runtime-performance-of-your-foundation-models-app) to get detailed insight into the complex workflows you build. The instrument provides insight into latency, prompts sent to the model, model output, tools and token usage, and so on.
 
 ##### Open Source
 
@@ -42,9 +42,9 @@ Browse notable changes in [`Foundation Models`](https://developer.apple.com/docu
 #### February 2026
 
 - Use the latest on-device large language model that improves instruction-following and tool-calling abilities. Because the model changes when a person updates to iOS 26.4, iPadOS 26.4, macOS 26.4, and visionOS 26.4, test your prompts with the new model to verify your app’s behavior. If necessary, update and maintain prompts for each model version.
-- Reduce the possibility of blocking benign content with improved guardrails for [`SystemLanguageModel`](https://developer.apple.com/documentation/FoundationModels/SystemLanguageModel).
-- Measure how many tokens your prompt, instructions, or entire session transcript uses with [`tokenCount(for:)`](https://developer.apple.com/documentation/FoundationModels/SystemLanguageModel/tokenCount(for:)).
-- Use the [`contextSize`](https://developer.apple.com/documentation/FoundationModels/SystemLanguageModel/contextSize) property to get the maximum context size — in tokens — that the [`SystemLanguageModel`](https://developer.apple.com/documentation/FoundationModels/SystemLanguageModel) supports.
+- Reduce the possibility of blocking benign content with improved guardrails for [`SystemLanguageModel`](https://developer.apple.com/documentation/foundationmodels/systemlanguagemodel).
+- Measure how many tokens your prompt, instructions, or entire session transcript uses with [`tokenCount(for:)`](https://developer.apple.com/documentation/foundationmodels/systemlanguagemodel/tokencount(for:)).
+- Use the [`contextSize`](https://developer.apple.com/documentation/foundationmodels/systemlanguagemodel/contextsize) property to get the maximum context size — in tokens — that the [`SystemLanguageModel`](https://developer.apple.com/documentation/foundationmodels/systemlanguagemodel) supports.
 - Use the `#Playground` macro in Xcode to view an estimate of the usage of 4,096 tokens in the available context window. When you run the canvas, the output displays Input Token Count and Response Token Count separately.
 
 ## See Also

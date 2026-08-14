@@ -6,9 +6,9 @@ Restore central manager state in scene-based apps.
 
 #### Overview
 
-In scene-based apps that adopt [`UISceneDelegate`](https://developer.apple.com/documentation/UIKit/UISceneDelegate), the `launchOptions` dictionary is always `nil` on launch, and apps can no longer rely on the system to hand back central manager identifiers at launch.
+In scene-based apps that adopt [`UISceneDelegate`](https://developer.apple.com/documentation/uikit/uiscenedelegate), the `launchOptions` dictionary is always `nil` on launch, and apps can no longer rely on the system to hand back central manager identifiers at launch.
 
-Instead, generate a stable UID for each [`CBCentralManager`](cbcentralmanager.md), persist it (for example, in [`UserDefaults`](https://developer.apple.com/documentation/Foundation/UserDefaults)) and pass it via [`CBCentralManagerOptionRestoreIdentifierKey`](cbcentralmanageroptionrestoreidentifierkey.md) when creating the manager on every launch. When restoration is available, Core Bluetooth calls [`centralManager(_:willRestoreState:)`](cbcentralmanagerdelegate/centralmanager(_:willrestorestate:).md) and passes the preserved state in the `dict` parameter.
+Instead, generate a stable UID for each [`CBCentralManager`](cbcentralmanager.md), persist it (for example, in [`UserDefaults`](https://developer.apple.com/documentation/foundation/userdefaults)) and pass it via [`CBCentralManagerOptionRestoreIdentifierKey`](cbcentralmanageroptionrestoreidentifierkey.md) when creating the manager on every launch. When restoration is available, Core Bluetooth calls [`centralManager(_:willRestoreState:)`](cbcentralmanagerdelegate/centralmanager(_:willrestorestate:).md) and passes the preserved state in the `dict` parameter.
 
 ```swift
 func makeCentralManager(

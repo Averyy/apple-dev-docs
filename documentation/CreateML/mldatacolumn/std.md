@@ -20,7 +20,7 @@ func std() -> Double?
 
 #### Return Value
 
-A [`Double`](https://developer.apple.com/documentation/Swift/Double); otherwise `nil` if the column is invalid.
+A [`Double`](https://developer.apple.com/documentation/swift/double); otherwise `nil` if the column is invalid.
 
 ## See Also
 

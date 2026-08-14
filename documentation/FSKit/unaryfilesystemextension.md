@@ -32,7 +32,7 @@ Your app needs to do the following to implement a FSKit-compatible minimal file 
 ## Relationships
 
 ### Inherits From
-- [AppExtension](../ExtensionFoundation/AppExtension.md)
+- [AppExtension](../extensionfoundation/appextension.md)
 
 
 ---

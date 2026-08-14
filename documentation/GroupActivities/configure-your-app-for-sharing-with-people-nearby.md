@@ -21,7 +21,7 @@ Both nearby participants and spatial Personas can move spatially, make eye conta
 SharePlay doesn’t require apps to distinguish between nearby and FaceTime participants. The `GroupActivities` APIs you use to manage group sessions, exchange messages, and position content treat all participants the same. Your app doesn’t need separate code to support nearby participants, so it typically already works when sharing with people nearby, but confirm the following during testing:
 
 - **Spatial assumptions**: Confirm that your app doesn’t rely on the system to position nearby participants in specific locations. SharePlay can dynamically reposition spatial Personas (FaceTime participants), but not physical people (nearby participants). If your app requires participants to be in specific locations, guide nearby participants to move to those locations using visual cues, like position markers.
-- **Share Window menu**: Confirm that your activity is listed in the new Share Window menu located next to the window bar. This is critical for the discovery of your app’s SharePlay activity. The easiest way to add your activity to the Share Window menu is to include a hidden [`ShareLink`](https://developer.apple.com/documentation/SwiftUI/ShareLink) in your app. ```swift
+- **Share Window menu**: Confirm that your activity is listed in the new Share Window menu located next to the window bar. This is critical for the discovery of your app’s SharePlay activity. The easiest way to add your activity to the Share Window menu is to include a hidden [`ShareLink`](https://developer.apple.com/documentation/swiftui/sharelink) in your app. ```swift
 ShareLink(item: BoardGameActivity(), preview: SharePreview("Play Together"))
     .hidden()
 ``` For more information, see [`Presenting SharePlay activities from your app’s UI`](promoting-shareplay-activities-from-your-apps-ui.md).
@@ -67,7 +67,7 @@ For more information, see [`Synchronizing data during a SharePlay activity`](syn
 
 When you’re sharing with people who are nearby, you may want to anchor shared virtual content to objects in the real world. Unlike remote SharePlay with spatial Personas, when you’re sharing with someone nearby, the real world is part of your shared context. To enable this, ARKit has support for sharing world anchors that appear in the exact same place for all nearby participants.
 
-To make a [`WorldAnchor`](https://developer.apple.com/documentation/ARKit/WorldAnchor) shareable with nearby participants, initialize the anchor with the `sharedWithNearbyParticipants` property set to `true` with the [`init(originFromAnchorTransform:sharedWithNearbyParticipants:)`](https://developer.apple.com/documentation/ARKit/WorldAnchor/init(originFromAnchorTransform:sharedWithNearbyParticipants:)) initializer. ARKit then shares that anchor with all nearby SharePlay participants via the [`anchorUpdates`](https://developer.apple.com/documentation/ARKit/WorldTrackingProvider/anchorUpdates) async sequence.
+To make a [`WorldAnchor`](https://developer.apple.com/documentation/arkit/worldanchor) shareable with nearby participants, initialize the anchor with the `sharedWithNearbyParticipants` property set to `true` with the [`init(originFromAnchorTransform:sharedWithNearbyParticipants:)`](https://developer.apple.com/documentation/arkit/worldanchor/init(originfromanchortransform:sharedwithnearbyparticipants:)) initializer. ARKit then shares that anchor with all nearby SharePlay participants via the [`anchorUpdates`](https://developer.apple.com/documentation/arkit/worldtrackingprovider/anchorupdates) async sequence.
 
 Your app can then attach an entity to that anchor to place it in the exact same world location for all nearby participants.
 
@@ -107,14 +107,14 @@ func observeWorldTracking(provider: WorldTrackingProvider) async {
 
 - [Adding spatial Persona support to an activity](adding-spatial-persona-support-to-an-activity.md)
   Update your SharePlay activities to support spatial Personas and the shared context when running in visionOS.
-- [Implementing SharePlay for immersive spaces in visionOS](../visionOS/implementing-shareplay-for-immersive-spaces-in-visionos.md)
+- [Implementing SharePlay for immersive spaces in visionOS](../visionos/implementing-shareplay-for-immersive-spaces-in-visionos.md)
   Enable collaborative spatial experiences by using SharePlay to synchronize 3D content among participants.
 - [class SystemCoordinator](systemcoordinator.md)
   A type you use to coordinate your interface’s behavior when an active SharePlay session supports spatial placement of content.
 - [SystemCoordinator.ParticipantState](systemcoordinator/participantstate.md)
   A structure that tells you whether a participant supports a shared simulation space for the current activity.
 - [func groupActivityAssociation(GroupActivityAssociationKind?) -> some View
-](../SwiftUI/View/groupActivityAssociation(_:).md)
+](../swiftui/view/groupactivityassociation(_:).md)
   Specifies how a view should be associated with the current SharePlay group activity.
 - [class GroupActivityAssociationInteraction](groupactivityassociationinteraction.md)
   An interaction configures a view’s association with the current SharePlay group activity.

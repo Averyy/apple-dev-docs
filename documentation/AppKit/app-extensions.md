@@ -7,29 +7,29 @@ Extend your app’s basic functionality to other parts of the system.
 ## Topics
 
 ### Extension Support
-- [class NSExtensionContext](../Foundation/NSExtensionContext.md)
+- [class NSExtensionContext](../foundation/nsextensioncontext.md)
   The host app context from which an app extension is invoked.
-- [protocol NSExtensionRequestHandling](../Foundation/NSExtensionRequestHandling.md)
+- [protocol NSExtensionRequestHandling](../foundation/nsextensionrequesthandling.md)
   The interface an app extension uses to respond to a request from a host app.
 ### Quick Actions
 - [Add Functionality to Finder with Action Extensions](add-functionality-to-finder-with-action-extensions.md)
   Implement Action Extensions to provide quick access to commonly used features of your app.
-- [NSExtensionServiceAllowsFinderPreviewItem](../BundleResources/Information-Property-List/NSExtension/NSExtensionAttributes/NSExtensionServiceAllowsFinderPreviewItem.md)
+- [NSExtensionServiceAllowsFinderPreviewItem](../bundleresources/information-property-list/nsextension/nsextensionattributes/nsextensionserviceallowsfinderpreviewitem.md)
   A Boolean value indicating whether the extension appears in the Finder Preview pane and Quick Actions menu.
-- [NSExtensionServiceFinderPreviewLabel](../BundleResources/Information-Property-List/NSExtension/NSExtensionAttributes/NSExtensionServiceFinderPreviewLabel.md)
+- [NSExtensionServiceFinderPreviewLabel](../bundleresources/information-property-list/nsextension/nsextensionattributes/nsextensionservicefinderpreviewlabel.md)
   A name for display when the extension appears in the Finder Preview pane and Quick Actions menu.
-- [NSExtensionServiceFinderPreviewIconName](../BundleResources/Information-Property-List/NSExtension/NSExtensionAttributes/NSExtensionServiceFinderPreviewIconName.md)
+- [NSExtensionServiceFinderPreviewIconName](../bundleresources/information-property-list/nsextension/nsextensionattributes/nsextensionservicefinderpreviewiconname.md)
   The name of an icon for display when the extension appears in the Finder Preview pane and Quick Actions menu.
-- [NSExtensionServiceAllowsTouchBarItem](../BundleResources/Information-Property-List/NSExtension/NSExtensionAttributes/NSExtensionServiceAllowsTouchBarItem.md)
+- [NSExtensionServiceAllowsTouchBarItem](../bundleresources/information-property-list/nsextension/nsextensionattributes/nsextensionserviceallowstouchbaritem.md)
   A Boolean value indicating whether the extension appears as a Quick Action in the Touch Bar.
-- [NSExtensionServiceTouchBarLabel](../BundleResources/Information-Property-List/NSExtension/NSExtensionAttributes/NSExtensionServiceTouchBarLabel.md)
+- [NSExtensionServiceTouchBarLabel](../bundleresources/information-property-list/nsextension/nsextensionattributes/nsextensionservicetouchbarlabel.md)
   A name for display when the extension appears as a Quick Action in the Touch Bar.
-- [NSExtensionServiceTouchBarIconName](../BundleResources/Information-Property-List/NSExtension/NSExtensionAttributes/NSExtensionServiceTouchBarIconName.md)
+- [NSExtensionServiceTouchBarIconName](../bundleresources/information-property-list/nsextension/nsextensionattributes/nsextensionservicetouchbariconname.md)
   The name of an icon for display when the extension appears as a Quick Action in the Touch Bar
-- [NSExtensionServiceTouchBarBezelColorName](../BundleResources/Information-Property-List/NSExtension/NSExtensionAttributes/NSExtensionServiceTouchBarBezelColorName.md)
+- [NSExtensionServiceTouchBarBezelColorName](../bundleresources/information-property-list/nsextension/nsextensionattributes/nsextensionservicetouchbarbezelcolorname.md)
   The color to use for the bezel around the extension when it appears as a Quick Action in the Touch Bar.
 ### Mail Extensions
-- [Build Mail App Extensions](../MailKit/build-mail-app-extensions.md)
+- [Build Mail App Extensions](../mailkit/build-mail-app-extensions.md)
   Create app extensions that block content, perform message and composing actions, and help message security.
 ### UTI Subtypes for Data Detector Types
 - [let NSTypeIdentifierAddressText: String](nstypeidentifieraddresstext.md)

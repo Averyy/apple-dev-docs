@@ -31,7 +31,7 @@ func addFontDescriptors(_ descriptors: [Any], toCollection collectionName: Strin
   Removes the specified font collection.
 - [func removeFontDescriptor(NSFontDescriptor, fromCollection: String)](nsfontmanager/removefontdescriptor(_:fromcollection:).md)
   Removes the specified font descriptor from the specified collection.
-- [func fontManager(Any, willIncludeFont: String) -> Bool](../ObjectiveC/NSObject-swift.class/fontManager(_:willIncludeFont:).md)
+- [func fontManager(Any, willIncludeFont: String) -> Bool](../objectivec/nsobject-swift.class/fontmanager(_:willincludefont:).md)
   Requests permission from the Font panel delegate to display the given font name in the Font panel.
 
 

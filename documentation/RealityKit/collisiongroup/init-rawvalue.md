@@ -21,7 +21,7 @@ init(rawValue: UInt32)
 
 #### Discussion
 
-This initializer succeeds even if the value passed as `rawValue` exceeds the static properties declared as part of the option set. Usually, you will want to create each collision groups setting a different bit flag for each value, so that multiple individual groups can be combined using [`OptionSet`](https://developer.apple.com/documentation/Swift/OptionSet) methods.
+This initializer succeeds even if the value passed as `rawValue` exceeds the static properties declared as part of the option set. Usually, you will want to create each collision groups setting a different bit flag for each value, so that multiple individual groups can be combined using [`OptionSet`](https://developer.apple.com/documentation/swift/optionset) methods.
 
 Here is an example of creating four collision groups using different bitflag values for each one.
 

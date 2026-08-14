@@ -28,8 +28,8 @@ Thread-safe since Mac OS version 10.2.
 
 ## Parameters
 
-- `inURL`: A Core Foundation URL reference designating the item whose kind string is requested; see the   in the Core Foundation Reference Documentation for a description of the   data type.
-- `outKindString`: A pointer to a Core Foundation string object that, on return, will contain the item’s kind string; see the   in the Core Foundation Reference Documentation for a description of the   data type. You are responsible for releasing this object.
+- `inURL`: A Core Foundation URL reference designating the item whose kind string is requested; see the *CFURL Reference* in the Core Foundation Reference Documentation for a description of the `CFURLRef` data type.
+- `outKindString`: A pointer to a Core Foundation string object that, on return, will contain the item’s kind string; see the *CFString Reference* in the Core Foundation Reference Documentation for a description of the `CFStringRef` data type. You are responsible for releasing this object.
 
 ## See Also
 

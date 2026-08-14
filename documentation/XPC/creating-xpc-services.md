@@ -26,11 +26,11 @@ The XPC Service template provides a starting point for you to build the listener
 
 > ❗ **Important**:  Take note of the bundle identifier value shown in the sheet when you enter the name and API level. Clients use this value to connect to the service.
 
-![A screenshot showing Xcode’s new target sheet with the macOS XPC Service extension selected.](https://docs-assets.developer.apple.com/published/cd0a10a9d0b35ca12d27b2c913c1ecd3/media-4154694%402x.png)
+![A screenshot showing Xcode’s new target sheet with the macOS XPC Service extension selected.](/images/com.apple.xpc/media-4154694@2x.png)
 
 ##### Accept Incoming Connection Requests
 
-When `launchd` launches an XPC service, it starts a process that runs the binary of the service. To perform tasks, the service creates an [`XPCListener`](xpclistener.md) with a service name and a closure to handle incoming session requests. For services in an app bundle or framework, the service name is the XPC service’s bundle identifier. After creating an `XPCListener`, the service must call [`dispatchMain()`](https://developer.apple.com/documentation/Dispatch/dispatchMain()) to begin processing requests.
+When `launchd` launches an XPC service, it starts a process that runs the binary of the service. To perform tasks, the service creates an [`XPCListener`](xpclistener.md) with a service name and a closure to handle incoming session requests. For services in an app bundle or framework, the service name is the XPC service’s bundle identifier. After creating an `XPCListener`, the service must call [`dispatchMain()`](https://developer.apple.com/documentation/dispatch/dispatchmain()) to begin processing requests.
 
 Each time a client initiates a session with the service, the system invokes the listener’s closure, passing an [`XPCListener.IncomingSessionRequest`](xpclistener/incomingsessionrequest.md). The listener either accepts or rejects the request. If it accepts the incoming request, it provides a request-handling closure to receive the message the client sent. In this example, the service passes that message to a custom method, `performCalculation(with:)`, to perform the task.
 
@@ -56,7 +56,7 @@ request.reject(reason: "Service unavailable.")
 
 ##### Perform a Task and Respond to Messages
 
-After creating the listener and accepting an incoming request, the service is ready to perform its defined task. In the example below, clients submit requests by passing an instance of a custom [`Codable`](https://developer.apple.com/documentation/Swift/Codable) type named `CalculationRequest`. The request contains two numbers that the service adds together. The service’s response to the request is an instance of `CalculationResponse` that contains the result of the addition.
+After creating the listener and accepting an incoming request, the service is ready to perform its defined task. In the example below, clients submit requests by passing an instance of a custom [`Codable`](https://developer.apple.com/documentation/swift/codable) type named `CalculationRequest`. The request contains two numbers that the service adds together. The service’s response to the request is an instance of `CalculationResponse` that contains the result of the addition.
 
 ```swift
 // A codable type that contains two numbers to add together.

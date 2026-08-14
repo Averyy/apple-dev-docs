@@ -46,7 +46,7 @@ You can define a boundary, for items participating in a collision behavior, rela
 
 A collection view animator automatically calls the [`invalidateLayout()`](uicollectionviewlayout/invalidatelayout().md) method as needed, and automatically pauses and resumes animation, as appropriate, when you change a collection view’s layout.
 
-- To employ a dynamic animator with other objects that conform to the [`UIDynamicItem`](uidynamicitem.md) protocol, create an animator with the inherited [`init()`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class/init()) method. The resulting animator employs an abstract coordinate system, not tied to the screen or to any view.
+- To employ a dynamic animator with other objects that conform to the [`UIDynamicItem`](uidynamicitem.md) protocol, create an animator with the inherited [`init()`](https://developer.apple.com/documentation/objectivec/nsobject-swift.class/init()) method. The resulting animator employs an abstract coordinate system, not tied to the screen or to any view.
 
 There is no reference boundary to refer to when defining a collision boundary for use with this sort of animator. However, you can still, in a collision behavior, specify custom boundaries as described in [`UICollisionBehavior`](uicollisionbehavior.md).
 
@@ -100,14 +100,14 @@ You can implement a delegate to respond to changes in animator pause/resumption 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 
 ---

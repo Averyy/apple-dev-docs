@@ -32,11 +32,11 @@ You can use URL objects to construct URLs and access their parts. For URLs that 
 
 URL objects are the preferred way to refer to local files. Most objects that read data from or write data to a file have methods that accept an [`NSURL`](nsurl.md) object instead of a pathname as the file reference. For example, you can get the contents of a local file URL as an `NSString` object using the `NSString/init(contentsOfURL:encoding:)-715fw` initializer, or as an `NSData` object using the `NSData/init(contentsOfURL:options:)-5abi3` initializer.
 
-You can also use URLs for interapplication communication. In macOS, the [`NSWorkspace`](https://developer.apple.com/documentation/AppKit/NSWorkspace) class provides the [`open(_:)`](https://developer.apple.com/documentation/AppKit/NSWorkspace/open(_:)) method to open a location specified by a URL. Similarly, in iOS, the [`UIApplication`](https://developer.apple.com/documentation/UIKit/UIApplication) class provides the [`open(_:options:completionHandler:)`](https://developer.apple.com/documentation/UIKit/UIApplication/open(_:options:completionHandler:)) method.
+You can also use URLs for interapplication communication. In macOS, the [`NSWorkspace`](https://developer.apple.com/documentation/appkit/nsworkspace) class provides the [`open(_:)`](https://developer.apple.com/documentation/appkit/nsworkspace/open(_:)) method to open a location specified by a URL. Similarly, in iOS, the [`UIApplication`](https://developer.apple.com/documentation/uikit/uiapplication) class provides the [`open(_:options:completionHandler:)`](https://developer.apple.com/documentation/uikit/uiapplication/open(_:options:completionhandler:)) method.
 
 Additionally, you can use URLs when working with pasteboards, as described in NSURL Additions Reference (part of the AppKit framework).
 
-The [`NSURL`](nsurl.md) class is “toll-free bridged” with its Core Foundation counterpart, [`CFURL`](https://developer.apple.com/documentation/CoreFoundation/CFURL). See [`Toll-Free Bridging`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Conceptual/CocoaEncyclopedia/Toll-FreeBridgin/Toll-FreeBridgin.html#//apple_ref/doc/uid/TP40010810-CH2) for more information on toll-free bridging.
+The [`NSURL`](nsurl.md) class is “toll-free bridged” with its Core Foundation counterpart, [`CFURL`](https://developer.apple.com/documentation/corefoundation/cfurl). See [`Toll-Free Bridging`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Conceptual/CocoaEncyclopedia/Toll-FreeBridgin/Toll-FreeBridgin.html#//apple_ref/doc/uid/TP40010810-CH2) for more information on toll-free bridging.
 
 > ❗ **Important**:  The Swift overlay to the Foundation framework provides the [`URL`](url.md) structure, which bridges to the [`NSURL`](nsurl.md) class. For more information about value types, see [`Classes and Structures`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Swift/Conceptual/Swift_Programming_Language/ClassesAndStructures.html#//apple_ref/doc/uid/TP40014097-CH13) in [`The Swift Programming Language (Swift 4.1)`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Swift/Conceptual/Swift_Programming_Language/index.html#//apple_ref/doc/uid/TP40014097) and [`Working with Cocoa Frameworks`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Swift/Conceptual/BuildingCocoaApps/WorkingWithCocoaDataTypes.html#//apple_ref/doc/uid/TP40014216-CH6) in [`Using Swift with Cocoa and Objective-C (Swift 4.1)`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Swift/Conceptual/BuildingCocoaApps/index.html#//apple_ref/doc/uid/TP40014216).
 
@@ -88,11 +88,11 @@ When you resolve a security-scoped bookmark, you get a security-scoped URL.
 
 ##### Security Scoped Urls
 
-Security-scoped URLs provide access to resources outside an app’s sandbox. In macOS, you get access to security-scoped URLs when you resolve a security-scoped bookmark. In iOS, apps that *open* or *move* documents using a [`UIDocumentPickerViewController`](https://developer.apple.com/documentation/UIKit/UIDocumentPickerViewController) also receive security-scoped URLs.
+Security-scoped URLs provide access to resources outside an app’s sandbox. In macOS, you get access to security-scoped URLs when you resolve a security-scoped bookmark. In iOS, apps that *open* or *move* documents using a [`UIDocumentPickerViewController`](https://developer.apple.com/documentation/uikit/uidocumentpickerviewcontroller) also receive security-scoped URLs.
 
-To gain access to a security-scoped URL, you must call the [`startAccessingSecurityScopedResource()`](nsurl/startaccessingsecurityscopedresource().md) method (or its Core Foundation equivalent, the [`CFURLStartAccessingSecurityScopedResource(_:)`](https://developer.apple.com/documentation/CoreFoundation/CFURLStartAccessingSecurityScopedResource(_:)) function). For iOS apps, if you use a [`UIDocument`](https://developer.apple.com/documentation/UIKit/UIDocument) to access the URL, it automatically manages the security-scoped URL for you.
+To gain access to a security-scoped URL, you must call the [`startAccessingSecurityScopedResource()`](nsurl/startaccessingsecurityscopedresource().md) method (or its Core Foundation equivalent, the [`CFURLStartAccessingSecurityScopedResource(_:)`](https://developer.apple.com/documentation/corefoundation/cfurlstartaccessingsecurityscopedresource(_:)) function). For iOS apps, if you use a [`UIDocument`](https://developer.apple.com/documentation/uikit/uidocument) to access the URL, it automatically manages the security-scoped URL for you.
 
-If `startAccessingSecurityScopedResource` (or `CFUrLStartAccessingSecurityScopedResource`) returns [`true`](https://developer.apple.com/documentation/Swift/true), you must relinquish your access by calling the [`stopAccessingSecurityScopedResource()`](nsurl/stopaccessingsecurityscopedresource().md) method (or its Core Foundation equivalent, the [`CFURLStopAccessingSecurityScopedResource(_:)`](https://developer.apple.com/documentation/CoreFoundation/CFURLStopAccessingSecurityScopedResource(_:)) function). You should relinquish your access as soon as you have finished using the file. After you call these methods, you immediately lose access to the resource in question.
+If `startAccessingSecurityScopedResource` (or `CFUrLStartAccessingSecurityScopedResource`) returns [`true`](https://developer.apple.com/documentation/swift/true), you must relinquish your access by calling the [`stopAccessingSecurityScopedResource()`](nsurl/stopaccessingsecurityscopedresource().md) method (or its Core Foundation equivalent, the [`CFURLStopAccessingSecurityScopedResource(_:)`](https://developer.apple.com/documentation/corefoundation/cfurlstopaccessingsecurityscopedresource(_:)) function). You should relinquish your access as soon as you have finished using the file. After you call these methods, you immediately lose access to the resource in question.
 
 > ⚠️ **Warning**:  If you fail to relinquish your access when you no longer need a file-system resource, your app leaks kernel resources. If sufficient kernel resources are leaked, your app loses its ability to add file-system locations to its sandbox, using Powerbox, security-scoped bookmarks, or similar APIs, until relaunched.
 
@@ -104,7 +104,7 @@ If you need a security-scoped URL’s path as a string value (as provided by the
 
 ##### Icloud Document Thumbnails
 
-With OS X v10.10 and iOS 8.0, the NSURL class includes the ability to get and set document thumbnails as a resource property for iCloud documents. You can get a dictionary of [`NSImage`](https://developer.apple.com/documentation/AppKit/NSImage) objects in macOS or [`UIImage`](https://developer.apple.com/documentation/UIKit/UIImage) objects in iOS using the [`getResourceValue(_:forKey:)`](nsurl/getresourcevalue(_:forkey:).md) or [`getPromisedItemResourceValue(_:forKey:)`](nsurl/getpromiseditemresourcevalue(_:forkey:).md) methods.
+With OS X v10.10 and iOS 8.0, the NSURL class includes the ability to get and set document thumbnails as a resource property for iCloud documents. You can get a dictionary of [`NSImage`](https://developer.apple.com/documentation/appkit/nsimage) objects in macOS or [`UIImage`](https://developer.apple.com/documentation/uikit/uiimage) objects in iOS using the [`getResourceValue(_:forKey:)`](nsurl/getresourcevalue(_:forkey:).md) or [`getPromisedItemResourceValue(_:forKey:)`](nsurl/getpromiseditemresourcevalue(_:forkey:).md) methods.
 
 **Swift**:
 
@@ -170,7 +170,7 @@ if (!success) {
 }
 ```
 
-> **Note**:  Do not set the [`thumbnailDictionaryKey`](urlresourcekey/thumbnaildictionarykey.md) key directly. Modifying this key interferes with document tracking and can create duplicates of your document, as well as other possible problems. In iOS, use a [`UIDocument`](https://developer.apple.com/documentation/UIKit/UIDocument) subclass to manage your file. Set the thumbnail by overriding the document’s [`fileAttributesToWrite(to:for:)`](https://developer.apple.com/documentation/UIKit/UIDocument/fileAttributesToWrite(to:for:)) method and returning a dictionary that contains the proper thumbnail keys (along with any other file attributes). In macOS, follow the instructions for creating thumbnails given in [`Quick Look Programming Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/UserExperience/Conceptual/Quicklook_Programming_Guide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40005020).
+> **Note**:  Do not set the [`thumbnailDictionaryKey`](urlresourcekey/thumbnaildictionarykey.md) key directly. Modifying this key interferes with document tracking and can create duplicates of your document, as well as other possible problems. In iOS, use a [`UIDocument`](https://developer.apple.com/documentation/uikit/uidocument) subclass to manage your file. Set the thumbnail by overriding the document’s [`fileAttributesToWrite(to:for:)`](https://developer.apple.com/documentation/uikit/uidocument/fileattributestowrite(to:for:)) method and returning a dictionary that contains the proper thumbnail keys (along with any other file attributes). In macOS, follow the instructions for creating thumbnails given in [`Quick Look Programming Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/UserExperience/Conceptual/Quicklook_Programming_Guide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40005020).
 
 > **Note**:  Although the thumbnail API is designed to support multiple image resolutions, currently it only supports 1024 x 1024 pixel thumbnails.
 
@@ -368,26 +368,26 @@ if (!success) {
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [Copyable](../Swift/Copyable.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Escapable](../Swift/Escapable.md)
-- [Hashable](../Swift/Hashable.md)
+- [CVarArg](../swift/cvararg.md)
+- [Copyable](../swift/copyable.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Escapable](../swift/escapable.md)
+- [Hashable](../swift/hashable.md)
 - [NSCoding](nscoding.md)
 - [NSCopying](nscopying.md)
 - [NSItemProviderReading](nsitemproviderreading.md)
 - [NSItemProviderWriting](nsitemproviderwriting.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [NSPasteboardReading](../AppKit/NSPasteboardReading.md)
-- [NSPasteboardWriting](../AppKit/NSPasteboardWriting.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSPasteboardReading](../appkit/nspasteboardreading.md)
+- [NSPasteboardWriting](../appkit/nspasteboardwriting.md)
 - [NSSecureCoding](nssecurecoding.md)
-- [QLPreviewItem](../QuickLookUI/QLPreviewItem.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [QLPreviewItem](../quicklook/qlpreviewitem.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 
 ---

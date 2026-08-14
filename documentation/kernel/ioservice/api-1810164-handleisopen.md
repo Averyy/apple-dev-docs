@@ -22,7 +22,7 @@ IOService calls this method in its subclasses in response to the open method, so
 
 ## Parameters
 
-- `forClient`: If non-zero,   returns the open state for that client. If zero is passed,   returns the open state for all clients.
+- `forClient`: If non-zero, `isOpen` returns the open state for that client. If zero is passed, `isOpen` returns the open state for all clients.
 
 ## See Also
 

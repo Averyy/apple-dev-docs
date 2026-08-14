@@ -21,7 +21,7 @@ var kAudioFormatProperty_ChannelLayoutForBitmap: AudioFormatPropertyID { get }
 
 #### Discussion
 
-The channel descriptions for a standard channel layout, in the form of an [`AudioChannelLayout`](https://developer.apple.com/documentation/CoreAudioTypes/AudioChannelLayout) structure. In some uses, an [`AudioChannelLayout`](https://developer.apple.com/documentation/CoreAudioTypes/AudioChannelLayout) can be valid with the `mChannelLayoutTag` field set to an [`kAudioChannelLayoutTag_UseChannelBitmap`](https://developer.apple.com/documentation/CoreAudioTypes/kAudioChannelLayoutTag_UseChannelBitmap) value and the bitmap set appropriately. The specifier is a `UInt32` value representing he `mChannelBitmap` field of the [`AudioChannelLayout`](https://developer.apple.com/documentation/CoreAudioTypes/AudioChannelLayout) structure that contains the layout.
+The channel descriptions for a standard channel layout, in the form of an [`AudioChannelLayout`](https://developer.apple.com/documentation/coreaudiotypes/audiochannellayout) structure. In some uses, an [`AudioChannelLayout`](https://developer.apple.com/documentation/coreaudiotypes/audiochannellayout) can be valid with the `mChannelLayoutTag` field set to an [`kAudioChannelLayoutTag_UseChannelBitmap`](https://developer.apple.com/documentation/coreaudiotypes/kaudiochannellayouttag_usechannelbitmap) value and the bitmap set appropriately. The specifier is a `UInt32` value representing he `mChannelBitmap` field of the [`AudioChannelLayout`](https://developer.apple.com/documentation/coreaudiotypes/audiochannellayout) structure that contains the layout.
 
 ## See Also
 

@@ -95,12 +95,12 @@ For more information, see [`Setting up HealthKit`](setting-up-healthkit.md).
   Returns the user’s preferred units for the given quantity types.
 - [func preferredWorkoutZoneConfiguration(for: HKQuantityType) async throws -> HKWorkoutZoneConfiguration?](hkhealthstore/preferredworkoutzoneconfiguration(for:).md)
   Returns a person’s preferred zone configuration for a quantity type.
-- [static let HKUserPreferencesDidChange: NSNotification.Name](../Foundation/NSNotification/Name-swift.struct/HKUserPreferencesDidChange.md)
+- [static let HKUserPreferencesDidChange: NSNotification.Name](../foundation/nsnotification/name-swift.struct/hkuserpreferencesdidchange.md)
   Notifies observers whenever the user changes his or her preferred units.
 ### Managing background delivery
 - [func enableBackgroundDelivery(for: HKObjectType, frequency: HKUpdateFrequency, withCompletion: (Bool, (any Error)?) -> Void)](hkhealthstore/enablebackgrounddelivery(for:frequency:withcompletion:).md)
   Enables the delivery of updates to an app running in the background.
-- [com.apple.developer.healthkit.background-delivery](../BundleResources/Entitlements/com.apple.developer.healthkit.background-delivery.md)
+- [com.apple.developer.healthkit.background-delivery](../bundleresources/entitlements/com.apple.developer.healthkit.background-delivery.md)
   A Boolean value that indicates whether observer queries receive updates while running in the background.
 - [enum HKUpdateFrequency](hkupdatefrequency.md)
   Constants that determine how often the system launches your app in response to changes to HealthKit data.
@@ -128,7 +128,7 @@ For more information, see [`Setting up HealthKit`](setting-up-healthkit.md).
 ### Accessing the move mode
 - [func activityMoveMode() throws -> HKActivityMoveModeObject](hkhealthstore/activitymovemode.md)
   Returns the activity move mode for the current user.
-- [static let HKUserPreferencesDidChange: NSNotification.Name](../Foundation/NSNotification/Name-swift.struct/HKUserPreferencesDidChange.md)
+- [static let HKUserPreferencesDidChange: NSNotification.Name](../foundation/nsnotification/name-swift.struct/hkuserpreferencesdidchange.md)
   Notifies observers whenever the user changes his or her preferred units.
 ### Deprecated symbols
 - [func add([HKSample], to: HKWorkout, completion: (Bool, (any Error)?) -> Void)](hkhealthstore/add(_:to:completion:).md)
@@ -146,16 +146,16 @@ For more information, see [`Setting up HealthKit`](setting-up-healthkit.md).
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

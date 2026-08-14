@@ -27,15 +27,15 @@ class UIDocumentBrowserViewController
 
 With the document browser view controller, users can easily access and view their documents in the cloud. By default, the document browser can access both the system’s local file provider and its iCloud file provider.
 
-![A screenshot of the document browser. The On My iPad location is in a selected state on the left, and several photos and folders appear in the pane on the right.](https://docs-assets.developer.apple.com/published/294c1b3d0e1de953ec9fc339c2907ef8/media-2922157%402x.png)
+![A screenshot of the document browser. The On My iPad location is in a selected state on the left, and several photos and folders appear in the pane on the right.](/images/com.apple.uikit/media-2922157@2x.png)
 
-The local file provider grants access to all the documents in the app’s `Documents` directory. Users can also access documents from another app’s `Documents` directory, if that app declares either the [`UISupportsDocumentBrowser`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/UISupportsDocumentBrowser) key, or both the [`UIFileSharingEnabled`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/UIFileSharingEnabled) and [`LSSupportsOpeningDocumentsInPlace`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/LSSupportsOpeningDocumentsInPlace) keys in its `Info.plist` file. When the user opens a document from another app’s `Documents` directory, they edit the document in place, and save the changes to the other app’s `Documents` directory.
+The local file provider grants access to all the documents in the app’s `Documents` directory. Users can also access documents from another app’s `Documents` directory, if that app declares either the [`UISupportsDocumentBrowser`](https://developer.apple.com/documentation/bundleresources/information-property-list/uisupportsdocumentbrowser) key, or both the [`UIFileSharingEnabled`](https://developer.apple.com/documentation/bundleresources/information-property-list/uifilesharingenabled) and [`LSSupportsOpeningDocumentsInPlace`](https://developer.apple.com/documentation/bundleresources/information-property-list/lssupportsopeningdocumentsinplace) keys in its `Info.plist` file. When the user opens a document from another app’s `Documents` directory, they edit the document in place, and save the changes to the other app’s `Documents` directory.
 
 The iCloud file provider creates a folder for your app in the user’s iCloud Drive. Users can access documents from this folder, or from anywhere in their iCloud Drive. The system automatically handles access to iCloud for you, so you don’t need to enable your app’s iCloud capabilities.
 
-Third-party storage services can also provide access to the documents they manage by implementing a File Provider extension (iOS 11 or later). For more information, see [`File Provider`](https://developer.apple.com/documentation/FileProvider).
+Third-party storage services can also provide access to the documents they manage by implementing a File Provider extension (iOS 11 or later). For more information, see [`File Provider`](https://developer.apple.com/documentation/fileprovider).
 
-> ❗ **Important**:  Don’t assume that the files you access are local. Users can store files in iCloud Drive, or in any cloud storage that provides a current File Provider extension. Remember that the system (or other apps) might modify the files that the document browser provides at any time. Therefore, you must coordinate your access to these files using either a [`UIDocument`](uidocument.md) subclass, or [`NSFilePresenter`](https://developer.apple.com/documentation/Foundation/NSFilePresenter) and [`NSFileCoordinator`](https://developer.apple.com/documentation/Foundation/NSFileCoordinator) objects.
+> ❗ **Important**:  Don’t assume that the files you access are local. Users can store files in iCloud Drive, or in any cloud storage that provides a current File Provider extension. Remember that the system (or other apps) might modify the files that the document browser provides at any time. Therefore, you must coordinate your access to these files using either a [`UIDocument`](uidocument.md) subclass, or [`NSFilePresenter`](https://developer.apple.com/documentation/foundation/nsfilepresenter) and [`NSFileCoordinator`](https://developer.apple.com/documentation/foundation/nsfilecoordinator) objects.
 
 ## Topics
 
@@ -115,17 +115,17 @@ Third-party storage services can also provide access to the documents they manag
 ### Inherits From
 - [UIViewController](uiviewcontroller.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCoding](../Foundation/NSCoding.md)
-- [NSExtensionRequestHandling](../Foundation/NSExtensionRequestHandling.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [NSTouchBarProvider](../AppKit/NSTouchBarProvider.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCoding](../foundation/nscoding.md)
+- [NSExtensionRequestHandling](../foundation/nsextensionrequesthandling.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSTouchBarProvider](../appkit/nstouchbarprovider.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 - [UIActivityItemsConfigurationProviding](uiactivityitemsconfigurationproviding.md)
 - [UIAppearanceContainer](uiappearancecontainer.md)
 - [UIContentContainer](uicontentcontainer.md)

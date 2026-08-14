@@ -110,16 +110,16 @@ The `maxPrecision` parameter determines the smallest displayed unit:
 ## Relationships
 
 ### Conforms To
-- [Copyable](../Swift/Copyable.md)
-- [Decodable](../Swift/Decodable.md)
-- [DiscreteFormatStyle](../Foundation/DiscreteFormatStyle.md)
-- [Encodable](../Swift/Encodable.md)
-- [Equatable](../Swift/Equatable.md)
-- [Escapable](../Swift/Escapable.md)
-- [FormatStyle](../Foundation/FormatStyle.md)
-- [Hashable](../Swift/Hashable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Copyable](../swift/copyable.md)
+- [Decodable](../swift/decodable.md)
+- [DiscreteFormatStyle](../foundation/discreteformatstyle.md)
+- [Encodable](../swift/encodable.md)
+- [Equatable](../swift/equatable.md)
+- [Escapable](../swift/escapable.md)
+- [FormatStyle](../foundation/formatstyle.md)
+- [Hashable](../swift/hashable.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 
 ---

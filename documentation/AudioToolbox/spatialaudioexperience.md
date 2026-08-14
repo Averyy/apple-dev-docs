@@ -20,7 +20,7 @@ protocol SpatialAudioExperience : Decodable, Encodable, Hashable, Sendable
 
 #### Overview
 
-All audio playback APIs support 3D spatial rendering using SpatialAudioExperience. For example, with [`AVAudioPlayer`](https://developer.apple.com/documentation/AVFAudio/AVAudioPlayer):
+All audio playback APIs support 3D spatial rendering using SpatialAudioExperience. For example, with [`AVAudioPlayer`](https://developer.apple.com/documentation/avfaudio/avaudioplayer):
 
 ```swift
 // Create a player.
@@ -57,12 +57,12 @@ player.play()
 ## Relationships
 
 ### Inherits From
-- [Decodable](../Swift/Decodable.md)
-- [Encodable](../Swift/Encodable.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Decodable](../swift/decodable.md)
+- [Encodable](../swift/encodable.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 ### Conforming Types
 - [AutomaticSpatialAudio](automaticspatialaudio.md)
 - [BypassedSpatialAudio](bypassedspatialaudio.md)

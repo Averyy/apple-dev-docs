@@ -6,7 +6,7 @@ Create tone-mapping metadata that adapts HDR content to a display’s headroom.
 
 #### Overview
 
-A display’s *headroom* is the luminance it can show above reference white. When that headroom is less than an HDR image or video needs, the system tone maps the content to fit. A Headroom Adaptive Gain Curve (HAGC) lets you control that tone mapping instead of relying on the system default, and stores it in a form that travels with both stills and video. You attach a curve to a [`ColorSyncProfile`](colorsyncprofile.md), either by building it from [`Swift`](https://developer.apple.com/documentation/Swift) value types or by supplying a [`CFDictionary`](https://developer.apple.com/documentation/CoreFoundation/CFDictionary). To move a curve between a still image and a video, serialize it to a compact binary encoding defined by SMPTE ST 2094-50, the industry standard for this tone-mapping metadata.
+A display’s *headroom* is the luminance it can show above reference white. When that headroom is less than an HDR image or video needs, the system tone maps the content to fit. A Headroom Adaptive Gain Curve (HAGC) lets you control that tone mapping instead of relying on the system default, and stores it in a form that travels with both stills and video. You attach a curve to a [`ColorSyncProfile`](colorsyncprofile.md), either by building it from [`Swift`](https://developer.apple.com/documentation/swift) value types or by supplying a [`CFDictionary`](https://developer.apple.com/documentation/corefoundation/cfdictionary). To move a curve between a still image and a video, serialize it to a compact binary encoding defined by SMPTE ST 2094-50, the industry standard for this tone-mapping metadata.
 
 For images, attach a curve only to an ICC profile that has a PQ, HLG, or linear transfer function. For a standard-dynamic-range profile, the profile-creation functions return `nil`.
 
@@ -110,7 +110,7 @@ Place `curveInfo` under `kColorSyncHeadroomAdaptiveGainCurveInfo` inside the ton
 
 #### Derive a Curve From a Gain Map Image
 
-An HDR image that uses a gain map, as specified in ISO 21496-1, already carries what the system needs to generate a gain curve between full HDR and SDR. When [`Image I/O`](https://developer.apple.com/documentation/ImageIO) decodes such an image to HDR with [`kCGImageSourceDecodeToHDR`](https://developer.apple.com/documentation/ImageIO/kCGImageSourceDecodeToHDR), it derives HAGC metadata and attaches it to the resulting image. Read that metadata back through the image’s color space:
+An HDR image that uses a gain map, as specified in ISO 21496-1, already carries what the system needs to generate a gain curve between full HDR and SDR. When [`Image I/O`](https://developer.apple.com/documentation/imageio) decodes such an image to HDR with [`kCGImageSourceDecodeToHDR`](https://developer.apple.com/documentation/imageio/kcgimagesourcedecodetohdr), it derives HAGC metadata and attaches it to the resulting image. Read that metadata back through the image’s color space:
 
 ```objc
 CGImageSourceRef source = CGImageSourceCreateWithURL(url, NULL);
@@ -130,7 +130,7 @@ CFRelease(source);
 // Release the profile and dictionary after reading the curve.
 ```
 
-This connects gain-map images to HAGC: take an existing ISO 21496-1 file, let [`Image I/O`](https://developer.apple.com/documentation/ImageIO) produce the metadata, then save the rendition to a non gain-map image format (for example, ISO 22028-5) with an ICC HDR profile, or to an HDR video.
+This connects gain-map images to HAGC: take an existing ISO 21496-1 file, let [`Image I/O`](https://developer.apple.com/documentation/imageio) produce the metadata, then save the rendition to a non gain-map image format (for example, ISO 22028-5) with an ICC HDR profile, or to an HDR video.
 
 #### Round Trip a Curve Between a Still and a Video
 

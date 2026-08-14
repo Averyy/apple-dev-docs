@@ -20,7 +20,7 @@ class var beforeCADisplayLinkDispatch: UIUpdateActionPhase { get }
 
 #### Discussion
 
-This phase runs before [`CADisplayLink`](https://developer.apple.com/documentation/QuartzCore/CADisplayLink) callbacks run.
+This phase runs before [`CADisplayLink`](https://developer.apple.com/documentation/quartzcore/cadisplaylink) callbacks run.
 
 ## See Also
 

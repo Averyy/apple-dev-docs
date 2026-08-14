@@ -16,7 +16,7 @@ optional var contentHasInterframeDependencies: Bool { get }
 
 #### Discussion
 
-The system queries this property on the extension when [`Video Toolbox`](https://developer.apple.com/documentation/VideoToolbox) queries the [`kVTDecompressionPropertyKey_ContentHasInterframeDependencies`](https://developer.apple.com/documentation/VideoToolbox/kVTDecompressionPropertyKey_ContentHasInterframeDependencies) on the hosting [`VTDecompressionSession`](https://developer.apple.com/documentation/VideoToolbox/VTDecompressionSession).
+The system queries this property on the extension when [`Video Toolbox`](https://developer.apple.com/documentation/videotoolbox) queries the [`kVTDecompressionPropertyKey_ContentHasInterframeDependencies`](https://developer.apple.com/documentation/videotoolbox/kvtdecompressionpropertykey_contenthasinterframedependencies) on the hosting [`VTDecompressionSession`](https://developer.apple.com/documentation/videotoolbox/vtdecompressionsession).
 
 ## See Also
 

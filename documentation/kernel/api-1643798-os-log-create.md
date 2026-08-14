@@ -24,7 +24,7 @@ Generally, use the `OS_LOG_DEFAULT` constant to perform logging using the system
 
 ## Parameters
 
-- `subsystem`: An identifier string, in reverse DNS notation, representing the subsystem that’s performing logging. For example,  . The subsystem is used for categorization and filtering of related log messages, as well as for grouping related logging settings.
+- `subsystem`: An identifier string, in reverse DNS notation, representing the subsystem that’s performing logging. For example, `com.your_company.your_subsystem_name`. The subsystem is used for categorization and filtering of related log messages, as well as for grouping related logging settings.
 - `category`: A category within the specified subsystem. The category is used for categorization and filtering of related log messages, as well as for grouping related logging settings within the subsystem’s settings. A category’s logging settings override those of the parent subsystem.
 
 ## See Also
@@ -39,7 +39,7 @@ Generally, use the `OS_LOG_DEFAULT` constant to perform logging using the system
 - [os_log_info_enabled](1643817-os_log_info_enabled.md)
   Returns a Boolean value indicating whether info-level logging is enabled for a specified log object.
 - [OS_LOG_TYPE_DEFAULT](os_log_type_t/os_log_type_default.md)
-  Default-level messages are initially stored in memory buffers. Without a configuration change, they are compressed and moved to the data store as memory buffers fill. They remain there until a storage quota is exceeded, at which point, the oldest messages are purged. Use this level to capture information about things that  result a failure. Logging a message of this type is equivalent to calling the  function.
+  Default-level messages are initially stored in memory buffers. Without a configuration change, they are compressed and moved to the data store as memory buffers fill. They remain there until a storage quota is exceeded, at which point, the oldest messages are purged. Use this level to capture information about things that *might* result a failure. Logging a message of this type is equivalent to calling the  function.
 - [pseudoSymbol-1841412](pseudoSymbol-1841412)
 - [pseudoSymbol-1841415](pseudoSymbol-1841415)
 - [pseudoSymbol-1841417](pseudoSymbol-1841417)

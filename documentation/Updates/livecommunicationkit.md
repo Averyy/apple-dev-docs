@@ -6,12 +6,12 @@ Learn about important changes to LiveCommunicationKit.
 
 #### Overview
 
-Browse notable changes in [`LiveCommunicationKit`](https://developer.apple.com/documentation/LiveCommunicationKit).
+Browse notable changes in [`LiveCommunicationKit`](https://developer.apple.com/documentation/livecommunicationkit).
 
 #### June 2025
 
-- Configure a conversation to include an option to use the system’s translation capabilities with a [`SetTranslatingAction`](https://developer.apple.com/documentation/LiveCommunicationKit/SetTranslatingAction).
-- Prepare your app to be a default dialer app and initiate conversations with [`StartCellularConversationAction`](https://developer.apple.com/documentation/LiveCommunicationKit/StartCellularConversationAction) and [`TelephonyConversationManager`](https://developer.apple.com/documentation/LiveCommunicationKit/TelephonyConversationManager).
+- Configure a conversation to include an option to use the system’s translation capabilities with a [`SetTranslatingAction`](https://developer.apple.com/documentation/livecommunicationkit/settranslatingaction).
+- Prepare your app to be a default dialer app and initiate conversations with [`StartCellularConversationAction`](https://developer.apple.com/documentation/livecommunicationkit/startcellularconversationaction) and [`TelephonyConversationManager`](https://developer.apple.com/documentation/livecommunicationkit/telephonyconversationmanager).
 
 ## See Also
 

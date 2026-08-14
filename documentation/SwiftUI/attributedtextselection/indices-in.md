@@ -52,7 +52,7 @@ struct ContentView: View {
 }
 ```
 
-For more details on attributed string index validity, see [`isValid(within:)`](https://developer.apple.com/documentation/Foundation/AttributedString/Index/isValid(within:)-8fw50).
+For more details on attributed string index validity, see [`isValid(within:)`](https://developer.apple.com/documentation/foundation/attributedstring/index/isvalid(within:)-8fw50).
 
 
 ---

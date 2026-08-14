@@ -21,7 +21,7 @@ class MSSetupSession
 
 An `MSSetupSession` object guides the user through connecting HomePod speakers in their home to your media service. When your iOS app calls [`start()`](mssetupsession/start().md), the session displays a setup view in the window you provide in [`presentationAnchor()`](msauthenticationpresentationcontext/presentationanchor().md). The session embeds your app icon and the [`serviceName`](msserviceaccount/servicename.md) you provide into this setup view.
 
-![A wireframe showing the setup view Media Setup displays to the user, with callouts indicating where your app’s icon and your media service’s name appear.](https://docs-assets.developer.apple.com/published/beb144d21ee2768a88c9a09692b59f89/media-3729379%402x.png)
+![A wireframe showing the setup view Media Setup displays to the user, with callouts indicating where your app’s icon and your media service’s name appear.](/images/com.apple.mediasetup/media-3729379@2x.png)
 
 After the user confirms the setup by tapping the “Use in Home” button, the system requests an OAuth token from your authentication service and shares the token with HomePod speakers in the user’s home.
 
@@ -43,14 +43,14 @@ After the user confirms the setup by tapping the “Use in Home” button, the s
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

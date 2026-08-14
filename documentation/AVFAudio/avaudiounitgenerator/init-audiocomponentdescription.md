@@ -25,7 +25,7 @@ A new `AVAudioUnitGenerator` instance.
 
 #### Discussion
 
-The [`AudioComponentDescription`](https://developer.apple.com/documentation/AudioToolbox/AudioComponentDescription) structure `componentType` field must be `kAudioUnitType_Generator` or [`kAudioUnitType_RemoteGenerator`](https://developer.apple.com/documentation/AudioToolbox/kAudioUnitType_RemoteGenerator).
+The [`AudioComponentDescription`](https://developer.apple.com/documentation/audiotoolbox/audiocomponentdescription) structure `componentType` field must be `kAudioUnitType_Generator` or [`kAudioUnitType_RemoteGenerator`](https://developer.apple.com/documentation/audiotoolbox/kaudiounittype_remotegenerator).
 
 ## Parameters
 

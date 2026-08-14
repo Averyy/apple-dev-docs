@@ -15,11 +15,11 @@ Use layer selection to reduce the number of render passes needed to generate an 
 
 This sample demonstrates dynamic reflections on a chrome sphere, using layer selection to render the frame in two passes. The first pass renders the environment onto the cube map. The second pass renders the environment reflections onto the sphere; it renders additional actors in the scene; and it renders the environment itself.
 
-![Reflections with Layer Selection](https://docs-assets.developer.apple.com/published/e4a361c089b944adfd6aca1902e22f80/reflections-with-layer-selection-1-ReflectionsWithLayerSelections.png)
+![Reflections with Layer Selection](/images/com.apple.metal/reflections-with-layer-selection-1-ReflectionsWithLayerSelections.png)
 
 You can implement an object that reflects its environment by sampling its reflections from a cube map of the environment. A cube map is a single texture composed of six 2D texture layers arranged in the shape of a cube. The reflections vary based on the positions of other objects in the environment, so each of the cube map’s six faces needs to be rendered dynamically in every frame. This would normally require six separate render passes, one for each face, but Metal allows you to render an entire cube map in a single pass.
 
-![Render Passes](https://docs-assets.developer.apple.com/published/257f04c7dc2202916dc67845aa682fdc/reflections-with-layer-selection-2-RenderPasses.png)
+![Render Passes](/images/com.apple.metal/reflections-with-layer-selection-2-RenderPasses.png)
 
 ##### Getting Started
 
@@ -80,7 +80,7 @@ if (_actorData[actorIdx].passFlags & EPassFlags::Reflection)
 
 The following diagram shows the results of the culling tests performed on the temple actors, based on their positions relative to the reflective sphere. Because `_actorData[0]` and `actorData[1]` bisect two viewing frustums, their `instanceCount` property is set to 2, and there are two elements in their `instanceParams` array. (This array contains the cube map face indices of the viewing frustums that the actors intersect.)
 
-![Face Culling and Face Index Assignment](https://docs-assets.developer.apple.com/published/57d3d13eba123862fe54513ed0622919/reflections-with-layer-selection-3-CullingAndFaceIdxSelection.png)
+![Face Culling and Face Index Assignment](/images/com.apple.metal/reflections-with-layer-selection-3-CullingAndFaceIdxSelection.png)
 
 ##### Configure Render Targets for the Reflection Pass
 
@@ -145,7 +145,7 @@ out.face = instanceParams[instanceId].viewportIndex;
 
 In summary, to render each actor to the reflective cube map, the sample issues an instanced draw call for the actor. The vertex function uses the built-in `instanceId` variable to index into the `instanceParams` array that contains the index of the cube map face that the instance should be rendered to. Therefore, the vertex function sets this face index in the `face` return value member, which uses the `[[render_target_array_index]]` attribute qualifier. This ensures that each actor is rendered to each cube map face it should appear in.
 
-![Instanced Draw with render_target_array_index](https://docs-assets.developer.apple.com/published/866006843b2d022fc18816b0e78168b9/reflections-with-layer-selection-4-InstancedRenderingWithTargetIndex.png)
+![Instanced Draw with render_target_array_index](/images/com.apple.metal/reflections-with-layer-selection-4-InstancedRenderingWithTargetIndex.png)
 
 ##### Perform Culling Tests for the Final Pass
 

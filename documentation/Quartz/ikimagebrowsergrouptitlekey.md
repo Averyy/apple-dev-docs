@@ -16,7 +16,7 @@ let IKImageBrowserGroupTitleKey: String
 
 #### Discussion
 
-The associated value is an [`NSString`](https://developer.apple.com/documentation/Foundation/NSString) object. This string is used for the disclosure style only.
+The associated value is an [`NSString`](https://developer.apple.com/documentation/foundation/nsstring) object. This string is used for the disclosure style only.
 
 ## See Also
 

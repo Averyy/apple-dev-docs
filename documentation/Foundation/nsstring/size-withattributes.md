@@ -44,7 +44,7 @@ This method returns fractional sizes; to use a returned size to size views, you 
   Calculates and returns the bounding rect for the receiver drawn using the given options and display characteristics, within the specified rectangle in the current graphics context.
 - [func variantFittingPresentationWidth(Int) -> String](nsstring/variantfittingpresentationwidth(_:).md)
   Returns a string variation suitable for the specified presentation width.
-- [struct NSStringDrawingOptions](../UIKit/NSStringDrawingOptions.md)
+- [struct NSStringDrawingOptions](../uikit/nsstringdrawingoptions.md)
   Constants that specify the rendering options for drawing a string.
 
 

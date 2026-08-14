@@ -40,12 +40,12 @@ After you are finished with an object accessor callback function, and have remov
 
 ## Parameters
 
-- `desiredClass`: The object class of the desired Apple event object or objects. Constants for object class IDs are described in  . See  .
-- `container`: A pointer to a descriptor that specifies the container of the desired Apple event object or objects. See  .
-- `containerClass`: The object class of the container. Constants for object class IDs are described in  . See  .
-- `form`: The key form specified by the object specifier being resolved. Constants for key form are described in  . See  .
-- `selectionData`: A pointer to a descriptor containing the key data specified by the object specifier being resolved. See  .
-- `value`: A pointer to a descriptor where your object accessor routine stores a descriptor that identifies the found object. See  .
+- `desiredClass`: The object class of the desired Apple event object or objects. Constants for object class IDs are described in [`Object Class ID Constants`](apple_events/1556368-object_class_id_constants.md). See [`DescType`](desctype.md).
+- `container`: A pointer to a descriptor that specifies the container of the desired Apple event object or objects. See [`AEDesc`](aedesc.md).
+- `containerClass`: The object class of the container. Constants for object class IDs are described in [`Object Class ID Constants`](apple_events/1556368-object_class_id_constants.md). See [`DescType`](desctype.md).
+- `form`: The key form specified by the object specifier being resolved. Constants for key form are described in [`Key Form and Descriptor Type Object Specifier Constants`](apple_events/1572731-key_form_and_descriptor_type_obj.md). See [`DescType`](desctype.md).
+- `selectionData`: A pointer to a descriptor containing the key data specified by the object specifier being resolved. See [`AEDesc`](aedesc.md).
+- `value`: A pointer to a descriptor where your object accessor routine stores a descriptor that identifies the found object. See [`AEDesc`](aedesc.md).
 - `accessorRefcon`: A reference constant. The Apple Event Manager passes this value to your object accessor function each time it calls it. The reference constant may have a value of 0.
 
 ## See Also

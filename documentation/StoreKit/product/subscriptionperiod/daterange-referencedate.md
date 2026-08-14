@@ -31,13 +31,13 @@ The date range calculates a single subscription period starting from the date yo
 
 For example, if the subscription period of the [`Product.SubscriptionPeriod`](product/subscriptionperiod.md) instance is one month, and the `referenceDate` is February 1, the date range contains February 1 and March 1. If the `referenceDate` is Feb 15, the date range contains February 15 and March 15.
 
-Use the [`dateRange(referenceDate:)`](product/subscriptionperiod/daterange(referencedate:).md) with a [`Date.ComponentsFormatStyle`](https://developer.apple.com/documentation/Foundation/Date/ComponentsFormatStyle) to get a human-readable string representation of the subscription period.
+Use the [`dateRange(referenceDate:)`](product/subscriptionperiod/daterange(referencedate:).md) with a [`Date.ComponentsFormatStyle`](https://developer.apple.com/documentation/foundation/date/componentsformatstyle) to get a human-readable string representation of the subscription period.
 
-Get the format style ([`Date.ComponentsFormatStyle`](https://developer.apple.com/documentation/Foundation/Date/ComponentsFormatStyle)) corresponding to product’s storefront using the [`subscriptionPeriodFormatStyle`](product/subscriptionperiodformatstyle.md).
+Get the format style ([`Date.ComponentsFormatStyle`](https://developer.apple.com/documentation/foundation/date/componentsformatstyle)) corresponding to product’s storefront using the [`subscriptionPeriodFormatStyle`](product/subscriptionperiodformatstyle.md).
 
 ## Parameters
 
-- `referenceDate`: A date you provide that indicates the lower bound of the returned date range. The default value is [`now`](https://developer.apple.com/documentation/Foundation/Date/now).
+- `referenceDate`: A date you provide that indicates the lower bound of the returned date range. The default value is [`now`](https://developer.apple.com/documentation/foundation/date/now).
 
 
 ---

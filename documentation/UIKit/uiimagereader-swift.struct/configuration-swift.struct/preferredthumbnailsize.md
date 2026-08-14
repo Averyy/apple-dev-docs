@@ -21,7 +21,7 @@ var preferredThumbnailSize: CGSize { get set }
 
 #### Discussion
 
-The default value is [`CGSizeZero`](https://developer.apple.com/documentation/CoreGraphics/CGSizeZero).
+The default value is [`CGSizeZero`](https://developer.apple.com/documentation/coregraphics/cgsizezero).
 
 ## See Also
 

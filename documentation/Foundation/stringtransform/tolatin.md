@@ -22,7 +22,7 @@ static let toLatin: StringTransform
 
 #### Discussion
 
-This is equivalent to [`kCFStringTransformToLatin`](https://developer.apple.com/documentation/CoreFoundation/kCFStringTransformToLatin).
+This is equivalent to [`kCFStringTransformToLatin`](https://developer.apple.com/documentation/corefoundation/kcfstringtransformtolatin).
 
 ## See Also
 

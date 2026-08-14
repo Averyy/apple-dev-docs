@@ -34,7 +34,7 @@ Chart(data) {
 }
 ```
 
-![Horizontal bar chart with one bar on the x-axis showing profit ranging from 0 to 15000 with stacked categories Gizmos, Gadgets and Widgets. Legend showing the color mapped to a product category.](https://docs-assets.developer.apple.com/published/866989cb862990508465e796c804535b/BarMarkSwift.BarMarkHorizontalStacked1DBarChartWithForegroundColor%402x.png)
+![Horizontal bar chart with one bar on the x-axis showing profit ranging from 0 to 15000 with stacked categories Gizmos, Gadgets and Widgets. Legend showing the color mapped to a product category.](/images/com.apple.Charts/BarMarkSwift.BarMarkHorizontalStacked1DBarChartWithForegroundColor@2x.png)
 
 ## Parameters
 

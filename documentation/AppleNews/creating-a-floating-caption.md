@@ -8,7 +8,7 @@ Position a caption in the wide right margin of your article.
 
 Apple News Format makes it easy to create side-by-side content, such as a caption that floats next to the article body. On sufficiently wide displays, News automatically lays out such a caption in the article margin; on narrower displays, News automatically stacks the caption with other article content.
 
-![Screenshot of an Apple News article with a floating caption on iPad.](https://docs-assets.developer.apple.com/published/de1298d6802c3d0b960eb8d673c64d5e/media-3624920%402x.png)
+![Screenshot of an Apple News article with a floating caption on iPad.](/images/com.apple.applenews/media-3624920@2x.png)
 
 **On this page, you’ll learn how to create a caption that appears in the right margin of the article on wide displays.**
 

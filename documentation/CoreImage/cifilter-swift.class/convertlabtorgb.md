@@ -41,7 +41,7 @@ func convertLabToRGB(inputImage: CIImage) -> CIImage {
 }
 ```
 
-![Two images arranged horizontally. The left image contains a photo of the Golden Gate Bridge with a clear sky as the background. It has been transformed into the Lab color space. The bridge is a light cyan color and the sky is a gradient from yellow-green through to red-pink.  The right image shows the result of applying the convert-RGB-to-Lab to this image. The bridge is a red color and sky is gradient going from light blue at the horizon to dark blue at the top of the image.](https://docs-assets.developer.apple.com/published/2e465e4996717c294af81a741c6e94ef/media-4407298%402x.png)
+![Two images arranged horizontally. The left image contains a photo of the Golden Gate Bridge with a clear sky as the background. It has been transformed into the Lab color space. The bridge is a light cyan color and the sky is a gradient from yellow-green through to red-pink.  The right image shows the result of applying the convert-RGB-to-Lab to this image. The bridge is a red color and sky is gradient going from light blue at the horizon to dark blue at the top of the image.](/images/com.apple.coreimage/media-4407298@2x.png)
 
 ## See Also
 

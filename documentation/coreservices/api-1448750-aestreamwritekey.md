@@ -26,8 +26,8 @@ If you are creating nested descriptors, this routine begins a new keyword/descri
 
 ## Parameters
 
-- `ref`: An   containing the stream data.
-- `key`: The   associated with the new descriptor being added to the stream. See  .
+- `ref`: An [`AEStreamRef`](aestreamref.md) containing the stream data.
+- `key`: The `AEKeyword` associated with the new descriptor being added to the stream. See [`AEKeyword`](aekeyword.md).
 
 ## See Also
 

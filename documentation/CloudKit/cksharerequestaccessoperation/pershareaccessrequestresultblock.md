@@ -25,7 +25,7 @@ var perShareAccessRequestResultBlock: ((URL, Result<Void, any Error>) -> Void)? 
 This property is a closure that returns no value and has the following parameters:
 
 - The URL of the processed share.
-- A [`Result`](https://developer.apple.com/documentation/Swift/Result) that contains either - A successful `Result`
+- A [`Result`](https://developer.apple.com/documentation/swift/result) that contains either - A successful `Result`
 - An error that provides information about a failure processing the share access request.
 
 The closure executes once for each URL in the [`shareURLs`](cksharerequestaccessoperation/shareurls.md) property. Each time the closure executes, it executes serially with respect to the other closure of the operation.

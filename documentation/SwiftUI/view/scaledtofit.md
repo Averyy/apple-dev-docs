@@ -37,7 +37,7 @@ Circle()
     .border(Color(white: 0.75))
 ```
 
-![A screenshot of pink circle scaled to fit its](https://docs-assets.developer.apple.com/published/beb6f09bb88fe40b033eed2bd645f008/SwiftUI-View-scaledToFit-1%402x.png)
+![A screenshot of pink circle scaled to fit its](/images/com.apple.SwiftUI/SwiftUI-View-scaledToFit-1@2x.png)
 
 This method is equivalent to calling [`aspectRatio(_:contentMode:)`](view/aspectratio(_:contentmode:).md) with a `nil` aspectRatio and a content mode of [`ContentMode.fit`](contentmode/fit.md).
 

@@ -8,7 +8,7 @@ Compose complex layouts from primitive container views.
 
 Individually, [`HStack`](hstack.md), [`VStack`](vstack.md), and [`ZStack`](zstack.md) are simple views. [`HStack`](hstack.md) positions views in a horizontal line, [`VStack`](vstack.md) positions them in a vertical line, and [`ZStack`](zstack.md) overlays views on top of one another.
 
-![A diagram showing the three different stack views; Horizontal, vertical, and depth. Each stack contains a square and a circle shape stacked together either side-by-side horizontally or vertically, or layered one on top of the other.](https://docs-assets.developer.apple.com/published/ce0ca452c3bcccf11149a8728f1c489f/Building-Layouts-with-Stack-Views-1%402x.png)
+![A diagram showing the three different stack views; Horizontal, vertical, and depth. Each stack contains a square and a circle shape stacked together either side-by-side horizontally or vertically, or layered one on top of the other.](/images/com.apple.SwiftUI/Building-Layouts-with-Stack-Views-1@2x.png)
 
 When you initialize them with default parameters, stack views center align their content and insert a small amount of spacing between each contained view. But, when you combine and customize stacks with view modifiers, [`Spacer`](spacer.md), and [`Divider`](divider.md) views, you can create highly flexible and complex layouts.
 
@@ -18,7 +18,7 @@ Think about a layout in terms of how you might create it using the various types
 
 For example, you might build this profile view using three stack views:
 
-![A diagram showing how a generic user profile layout might utilize stack views. The diagram shows the rendered layout next to an exploded, 3D illustration of the view hierarchy showing four layers of views stacked on top of each other. The lowest level of the hierarchy is a ZStack; above that is an Image view, then an HStack, and finally a VStack and Spacer view at the highest level.](https://docs-assets.developer.apple.com/published/a5b7b41f3a40302214f2f18543eaaadf/Building-Layouts-with-Stack-Views-2%402x.png)
+![A diagram showing how a generic user profile layout might utilize stack views. The diagram shows the rendered layout next to an exploded, 3D illustration of the view hierarchy showing four layers of views stacked on top of each other. The lowest level of the hierarchy is a ZStack; above that is an Image view, then an HStack, and finally a VStack and Spacer view at the highest level.](/images/com.apple.SwiftUI/Building-Layouts-with-Stack-Views-2@2x.png)
 
 A [`ZStack`](zstack.md) contains an [`Image`](image.md) view that displays a profile picture with a semi-transparent [`HStack`](hstack.md) overlaid on top. The [`HStack`](hstack.md) contains a [`VStack`](vstack.md) with a pair of [`Text`](text.md) views inside it, and a [`Spacer`](spacer.md) view pushes the [`VStack`](vstack.md) to the leading side.
 
@@ -56,7 +56,7 @@ Align any contained views inside a stack view by using a combination of the `ali
 
 In the previous example layout, the [`VStack`](vstack.md) that contains the two [`Text`](text.md) views uses the [`leading`](horizontalalignment/leading.md) alignment:
 
-![A diagram showing two views being aligned in three different ways in a vertical stack view. Leading, where both views are aligned to the leading edge of the stack. Centered, where both views are centered in the stack. Finally trailing, where both views are aligned with the trailing edge](https://docs-assets.developer.apple.com/published/d3ad16aec1948970076cc098e438be1f/Building-Layouts-with-Stack-Views-3%402x.png)
+![A diagram showing two views being aligned in three different ways in a vertical stack view. Leading, where both views are aligned to the leading edge of the stack. Centered, where both views are centered in the stack. Finally trailing, where both views are aligned with the trailing edge](/images/com.apple.SwiftUI/Building-Layouts-with-Stack-Views-3@2x.png)
 
 The `alignment` property doesn’t position the [`VStack`](vstack.md) inside its container; instead, it positions the views inside the [`VStack`](vstack.md).
 
@@ -64,7 +64,7 @@ The `alignment` property of a [`VStack`](vstack.md) only applies to the horizont
 
 Use [`Spacer`](spacer.md) views to align views along the primary axis of an [`HStack`](hstack.md) or [`VStack`](vstack.md). Spacers expand to fill any available space and push content apart from other views or the edges of the stack.
 
-![A diagram showing the use of spacer views in three vertical stack views. The first stack shows a spacer view pushing another view to the top of its container. The second stack shows a spacer view pushing two views apart, ending with the views aligned to the top and bottom of their container. a spacer view pushing another view to the bottom of its container.](https://docs-assets.developer.apple.com/published/189fa436f07ed0011bd0c1abeb167723/Building-Layouts-with-Stack-Views-4%402x.png)
+![A diagram showing the use of spacer views in three vertical stack views. The first stack shows a spacer view pushing another view to the top of its container. The second stack shows a spacer view pushing two views apart, ending with the views aligned to the top and bottom of their container. a spacer view pushing another view to the bottom of its container.](/images/com.apple.SwiftUI/Building-Layouts-with-Stack-Views-4@2x.png)
 
 [`Divider`](divider.md) views also add space in between a stack’s subviews, but only insert enough space to draw a line across the stack’s minor axis. They don’t expand to fill available space.
 

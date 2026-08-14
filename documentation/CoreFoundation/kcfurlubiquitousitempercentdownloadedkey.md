@@ -21,7 +21,7 @@ let kCFURLUbiquitousItemPercentDownloadedKey: CFString!
 
 A `CFNumber` value that provides the status of the download in progress.
 
-Deprecated. Use [`NSMetadataQuery`](https://developer.apple.com/documentation/Foundation/NSMetadataQuery) and [`NSMetadataUbiquitousItemPercentDownloadedKey`](https://developer.apple.com/documentation/Foundation/NSMetadataUbiquitousItemPercentDownloadedKey) on [`NSMetadataItem`](https://developer.apple.com/documentation/Foundation/NSMetadataItem) instead.
+Deprecated. Use [`NSMetadataQuery`](https://developer.apple.com/documentation/foundation/nsmetadataquery) and [`NSMetadataUbiquitousItemPercentDownloadedKey`](https://developer.apple.com/documentation/foundation/nsmetadataubiquitousitempercentdownloadedkey) on [`NSMetadataItem`](https://developer.apple.com/documentation/foundation/nsmetadataitem) instead.
 
 ## See Also
 

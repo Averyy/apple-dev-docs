@@ -43,7 +43,7 @@ There must be either a focused view or an active graphics context when you call 
   Returns the bounding box size the receiver occupies when drawn with the given attributes.
 - [func variantFittingPresentationWidth(Int) -> String](nsstring/variantfittingpresentationwidth(_:).md)
   Returns a string variation suitable for the specified presentation width.
-- [struct NSStringDrawingOptions](../UIKit/NSStringDrawingOptions.md)
+- [struct NSStringDrawingOptions](../uikit/nsstringdrawingoptions.md)
   Constants that specify the rendering options for drawing a string.
 
 

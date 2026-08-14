@@ -26,7 +26,7 @@ Always display the terms of this subscription offer along with your control beca
 
 > ❗ **Important**:  Don’t display offers from properties of [`subscription`](subscriptionstorecontrolstyleconfiguration/option/subscription.md), such as [`introductoryOffer`](product/subscriptioninfo/introductoryoffer.md).
 
-The [`preferredSubscriptionOffer(_:)`](https://developer.apple.com/documentation/SwiftUI/View/preferredSubscriptionOffer(_:)) and [`subscriptionPromotionalOffer(offer:signature:)`](https://developer.apple.com/documentation/SwiftUI/View/subscriptionPromotionalOffer(offer:signature:)) view modifiers influence the [`offer`](purchaseintent/offer.md) property.
+The [`preferredSubscriptionOffer(_:)`](https://developer.apple.com/documentation/swiftui/view/preferredsubscriptionoffer(_:)) and [`subscriptionPromotionalOffer(offer:signature:)`](https://developer.apple.com/documentation/swiftui/view/subscriptionpromotionaloffer(offer:signature:)) view modifiers influence the [`offer`](purchaseintent/offer.md) property.
 
 ## See Also
 

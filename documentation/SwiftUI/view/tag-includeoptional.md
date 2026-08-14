@@ -27,7 +27,7 @@ A view with the specified tag set.
 
 #### Discussion
 
-Use this modifier to differentiate among certain selectable views, like the possible values of a [`Picker`](picker.md) or the tabs of a [`TabView`](tabview.md). Tag values can be of any type that conforms to the [`Hashable`](https://developer.apple.com/documentation/Swift/Hashable) protocol.
+Use this modifier to differentiate among certain selectable views, like the possible values of a [`Picker`](picker.md) or the tabs of a [`TabView`](tabview.md). Tag values can be of any type that conforms to the [`Hashable`](https://developer.apple.com/documentation/swift/hashable) protocol.
 
 This modifier will write the tag value for the type `V`, as well as `Optional<V>` if `includeOptional` is enabled. Containers checking for tags of either type will see the value as set.
 
@@ -61,7 +61,7 @@ To see examples that don’t require an explicit tag, see [`Picker`](picker.md).
 
 ## Parameters
 
-- `tag`: A [`Hashable`](https://developer.apple.com/documentation/Swift/Hashable) value to use as the view’s tag.
+- `tag`: A [`Hashable`](https://developer.apple.com/documentation/swift/hashable) value to use as the view’s tag.
 - `includeOptional`: If the tag value for `Optional<V>` should also be set.
 
 ## See Also

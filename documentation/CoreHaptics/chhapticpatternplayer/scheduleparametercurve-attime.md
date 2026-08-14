@@ -24,7 +24,7 @@ func scheduleParameterCurve(_ parameterCurve: CHHapticParameterCurve, atTime tim
 
 Scheduling a parameter curve tells the haptic pattern player to vary a parameter gradually along the curve. For example, if the intensity of a haptic pattern is `0` at the time of application, then a curve created to set the haptic intensity to `1` will smoothly hit every single continuous value between `0` and `1` during the transition.
 
-![A graph showing how dynamic parameters change instantly, whereas parameter curves vary gradually.](https://docs-assets.developer.apple.com/published/2ff5660c581db9bc320616fbdcfb8964/media-3189138%402x.png)
+![A graph showing how dynamic parameters change instantly, whereas parameter curves vary gradually.](/images/com.apple.corehaptics/media-3189138@2x.png)
 
 Scheduling a parameter curve is analogous to sending a dynamic parameter with [`sendParameters(_:atTime:)`](chhapticpatternplayer/sendparameters(_:attime:).md); the only difference is that the curve transitions the parameter gradually, whereas the dynamic parameter changes the parameter immediately at a certain time.
 

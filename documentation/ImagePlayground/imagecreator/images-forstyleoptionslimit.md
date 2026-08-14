@@ -24,7 +24,7 @@ An asynchronous stream you use to receive the images.
 
 #### Discussion
 
-Call this method to start the image generation process with the specified parameters. The method runs asynchronously and returns the results using the provided [`AsyncSequence`](https://developer.apple.com/documentation/Swift/AsyncSequence) object. The following example configures an image creator, starts the creation of the images, and processes the generated images as they arrive:
+Call this method to start the image generation process with the specified parameters. The method runs asynchronously and returns the results using the provided [`AsyncSequence`](https://developer.apple.com/documentation/swift/asyncsequence) object. The following example configures an image creator, starts the creation of the images, and processes the generated images as they arrive:
 
 ```swift
 do {

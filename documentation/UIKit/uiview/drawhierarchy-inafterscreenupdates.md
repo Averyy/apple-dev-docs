@@ -20,7 +20,7 @@ func drawHierarchy(in rect: CGRect, afterScreenUpdates afterUpdates: Bool) -> Bo
 
 #### Return Value
 
-Returns [`true`](https://developer.apple.com/documentation/Swift/true) if the snapshot is complete, or [`false`](https://developer.apple.com/documentation/Swift/false) if the snapshot is missing image data for any view in the hierarchy.
+Returns [`true`](https://developer.apple.com/documentation/swift/true) if the snapshot is complete, or [`false`](https://developer.apple.com/documentation/swift/false) if the snapshot is missing image data for any view in the hierarchy.
 
 #### Discussion
 
@@ -29,7 +29,7 @@ Use this method when you want to apply a graphical effect, such as a blur, to a 
 ## Parameters
 
 - `rect`: A rectangle specified in the local coordinate system (bounds) of the view.
-- `afterUpdates`: A Boolean value that indicates whether the snapshot should be rendered after recent changes have been incorporated. Specify the value [`false`](https://developer.apple.com/documentation/Swift/false) if you want to render a snapshot in the view hierarchy’s current state, which might not include recent changes.
+- `afterUpdates`: A Boolean value that indicates whether the snapshot should be rendered after recent changes have been incorporated. Specify the value [`false`](https://developer.apple.com/documentation/swift/false) if you want to render a snapshot in the view hierarchy’s current state, which might not include recent changes.
 
 ## See Also
 

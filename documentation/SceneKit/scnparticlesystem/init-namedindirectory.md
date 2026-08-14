@@ -26,7 +26,7 @@ A new particle system instantiated from the contents of the file.
 
 #### Discussion
 
-A SceneKit particle file created by Xcode contains an archived [`SCNParticleSystem`](scnparticlesystem.md) instance, so you can also use the [`NSKeyedArchiver`](https://developer.apple.com/documentation/Foundation/NSKeyedArchiver) and [`NSKeyedUnarchiver`](https://developer.apple.com/documentation/Foundation/NSKeyedUnarchiver) classes to write and read particle files.
+A SceneKit particle file created by Xcode contains an archived [`SCNParticleSystem`](scnparticlesystem.md) instance, so you can also use the [`NSKeyedArchiver`](https://developer.apple.com/documentation/foundation/nskeyedarchiver) and [`NSKeyedUnarchiver`](https://developer.apple.com/documentation/foundation/nskeyedunarchiver) classes to write and read particle files.
 
 ## Parameters
 

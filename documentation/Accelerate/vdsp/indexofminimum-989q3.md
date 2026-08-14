@@ -28,7 +28,7 @@ A tuple that contains the minimum value and corresponding index.
 
 This function calculates the minimum value and its corresponding index of the first `N` elements of the input vector and writes the results to the output scalar parameters, `C` and `I`, respectively.
 
-![A diagram showing the operation of this function. There are three rows. The top row represents the input vector, A, with three boxes. The middle row represents the operation as two boxes that contains minimum and argmin functions. The bottom row represents the output scalar values C and I as two  boxes. The diagram has connecting lines from the input vector to the operations, and from the operations to the output scalar values.](https://docs-assets.developer.apple.com/published/e97a09470ade43371629f699f873cdf5/media-4465979%402x.png)
+![A diagram showing the operation of this function. There are three rows. The top row represents the input vector, A, with three boxes. The middle row represents the operation as two boxes that contains minimum and argmin functions. The bottom row represents the output scalar values C and I as two  boxes. The diagram has connecting lines from the input vector to the operations, and from the operations to the output scalar values.](/images/com.apple.accelerate/media-4465979@2x.png)
 
 The following code shows an example of using this function:
 

@@ -63,7 +63,7 @@ myAnchor = results.newAnchor
 
 ##### Running and Stopping Long Running Queries
 
-Descriptors that adopt the [`HKAsyncSequenceQuery`](hkasyncsequencequery.md) protocol can create long-running queries that monitor the HealthKit store and return periodic updates. Here, the [`results(for:)`](hkasyncsequencequery/results(for:).md) method returns an instance that adopts the [`AsyncSequence`](https://developer.apple.com/documentation/Swift/AsyncSequence) protocol. Note that the call to [`results(for:)`](hkasyncsequencequery/results(for:).md) is synchronous, but accessing data from the sequence is asynchronous.
+Descriptors that adopt the [`HKAsyncSequenceQuery`](hkasyncsequencequery.md) protocol can create long-running queries that monitor the HealthKit store and return periodic updates. Here, the [`results(for:)`](hkasyncsequencequery/results(for:).md) method returns an instance that adopts the [`AsyncSequence`](https://developer.apple.com/documentation/swift/asyncsequence) protocol. Note that the call to [`results(for:)`](hkasyncsequencequery/results(for:).md) is synchronous, but accessing data from the sequence is asynchronous.
 
 The following code uses a `for` loop to read updates from the sequence as they arrive. The first instance contains all matching samples currently in the HealthKit store. This is the same as the results that the [`result(for:)`](hkasyncquery/result(for:).md) method returns. However, the system continues to monitor the HealthKit store, and returns new results as they appear.
 
@@ -86,7 +86,7 @@ myUpdateTask = Task {
 }
 ```
 
-By wrapping the `for` loop in a [`Task`](https://developer.apple.com/documentation/Swift/Task), you can cancel the task to stop the long-running query.
+By wrapping the `for` loop in a [`Task`](https://developer.apple.com/documentation/swift/task), you can cancel the task to stop the long-running query.
 
 ```swift
 func stopUpdates() {

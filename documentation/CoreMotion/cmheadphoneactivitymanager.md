@@ -24,7 +24,7 @@ This class delivers headphone activity updates to your app. Use an instance of t
 
 This class provides similar information to [`CMMotionActivityManager`](cmmotionactivitymanager.md), except the activity information comes from headphone motion, rather than from device motion.
 
-> ❗ **Important**:  In iOS and macOS, include the [`NSMotionUsageDescription`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSMotionUsageDescription) key in your app’s `Info.plist` file. If this key is absent, trying to start headphone activity updates terminates your app.
+> ❗ **Important**:  In iOS and macOS, include the [`NSMotionUsageDescription`](https://developer.apple.com/documentation/bundleresources/information-property-list/nsmotionusagedescription) key in your app’s `Info.plist` file. If this key is absent, trying to start headphone activity updates terminates your app.
 
 ## Topics
 
@@ -59,14 +59,14 @@ This class provides similar information to [`CMMotionActivityManager`](cmmotiona
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

@@ -28,7 +28,7 @@ func contains(_ text: String) -> Bool
   Predicts neighbors.
 - [func distance(between: String, and: String, distanceType: NLDistanceType) -> Double](mlwordembedding/distance(between:and:distancetype:).md)
   Calculates the distance between two strings in the vocabulary space.
-- [enum NLDistanceType](../NaturalLanguage/NLDistanceType.md)
+- [enum NLDistanceType](../naturallanguage/nldistancetype.md)
   The means of calculating a distance between two locations in a text embedding.
 - [func vector(for: String) -> [Double]?](mlwordembedding/vector(for:).md)
   Accesses the vector associated with the given string in the vocabulary.

@@ -163,13 +163,13 @@ Use slices only for transient computation. A slice may hold a reference to the e
 ## Relationships
 
 ### Conforms To
-- [AccelerateBuffer](../Accelerate/AccelerateBuffer.md)
-- [AccelerateMutableBuffer](../Accelerate/AccelerateMutableBuffer.md)
+- [AccelerateBuffer](../accelerate/acceleratebuffer.md)
+- [AccelerateMutableBuffer](../accelerate/acceleratemutablebuffer.md)
 - [BidirectionalCollection](bidirectionalcollection.md)
 - [Collection](collection.md)
-- [ContiguousBytes](../Foundation/ContiguousBytes.md)
+- [ContiguousBytes](../foundation/contiguousbytes.md)
 - [Copyable](copyable.md)
-- [DataProtocol](../Foundation/DataProtocol.md)
+- [DataProtocol](../foundation/dataprotocol.md)
 - [Escapable](escapable.md)
 - [LazySequenceProtocol](lazysequenceprotocol.md)
 - [MutableCollection](mutablecollection.md)

@@ -28,13 +28,13 @@ In addition to handling calls, you can use a Call Directory app extension to pro
 
 ##### Manage User Privacy
 
-With a person’s permission, an installed health research app that uses [`SensorKit`](https://developer.apple.com/documentation/SensorKit) entitlements may collect Speech Metrics data while your CallKit app is in use. To prevent this, you can set the [`SRResearchDataGeneration`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/SRResearchDataGeneration) information property list key to `NO`.
+With a person’s permission, an installed health research app that uses [`SensorKit`](https://developer.apple.com/documentation/sensorkit) entitlements may collect Speech Metrics data while your CallKit app is in use. To prevent this, you can set the [`SRResearchDataGeneration`](https://developer.apple.com/documentation/bundleresources/information-property-list/srresearchdatageneration) information property list key to `NO`.
 
-> ❗ **Important**:  When a person makes a call in your app that uses CallKit, your app provides the contact information of the recipient to the system. The system may use that information to indicate communication with that person as a suggestion in the Journal app, or in other apps that use the [`Journaling Suggestions`](https://developer.apple.com/documentation/JournalingSuggestions) framework.
+> ❗ **Important**:  When a person makes a call in your app that uses CallKit, your app provides the contact information of the recipient to the system. The system may use that information to indicate communication with that person as a suggestion in the Journal app, or in other apps that use the [`Journaling Suggestions`](https://developer.apple.com/documentation/journalingsuggestions) framework.
 
 ##### Become the Default Calling App
 
-In iOS and iPadOS 18.2 and later, a person may select an app — other than the Phone app or FaceTime — to place calls by default. To make your CallKit or [`LiveCommunicationKit`](https://developer.apple.com/documentation/LiveCommunicationKit) app support the default calling app setting, see [`Preparing your app to be the default calling app`](preparing-your-app-to-be-the-default-calling-app.md).
+In iOS and iPadOS 18.2 and later, a person may select an app — other than the Phone app or FaceTime — to place calls by default. To make your CallKit or [`LiveCommunicationKit`](https://developer.apple.com/documentation/livecommunicationkit) app support the default calling app setting, see [`Preparing your app to be the default calling app`](preparing-your-app-to-be-the-default-calling-app.md).
 
 ## Topics
 
@@ -51,10 +51,10 @@ In iOS and iPadOS 18.2 and later, a person may select an app — other than the 
   Use the CallKit framework to integrate native VoIP calling.
 - [Preparing your app to be the default calling app](preparing-your-app-to-be-the-default-calling-app.md)
   Configure your CallKit or LiveCommunicationKit app so people can set it as the default calling app on their device.
-- [CallKit updates](../Updates/CallKit.md)
+- [CallKit updates](../updates/callkit.md)
   Learn about important changes to CallKit.
 ### Incoming calls
-- [Responding to VoIP Notifications from PushKit](../PushKit/responding-to-voip-notifications-from-pushkit.md)
+- [Responding to VoIP Notifications from PushKit](../pushkit/responding-to-voip-notifications-from-pushkit.md)
   Receive incoming Voice-over-IP (VoIP) push notifications and use them to display the system call interface to the user.
 - [class CXCallUpdate](cxcallupdate.md)
   An encapsulation of new and changed information about a call.

@@ -19,7 +19,7 @@ static let cropRect: UIImagePickerController.InfoKey
 
 #### Discussion
 
-The value for this key is an [`NSValue`](https://developer.apple.com/documentation/Foundation/NSValue) object containing a [`CGRect`](https://developer.apple.com/documentation/CoreFoundation/CGRect) opaque type.
+The value for this key is an [`NSValue`](https://developer.apple.com/documentation/foundation/nsvalue) object containing a [`CGRect`](https://developer.apple.com/documentation/corefoundation/cgrect) opaque type.
 
 ## See Also
 

@@ -35,9 +35,9 @@ You can break an enumeration of all contact items into multiple pages to reduce 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../Swift/Decodable.md)
-- [Encodable](../Swift/Encodable.md)
-- [Equatable](../Swift/Equatable.md)
+- [Decodable](../swift/decodable.md)
+- [Encodable](../swift/encodable.md)
+- [Equatable](../swift/equatable.md)
 
 ## See Also
 

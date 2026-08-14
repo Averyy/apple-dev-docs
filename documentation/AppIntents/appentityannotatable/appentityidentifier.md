@@ -28,7 +28,7 @@ var appEntityIdentifier: EntityIdentifier? { get set }
 
 #### Discussion
 
-This property stores the unique identifier of one of your app’s entities. Use it to create an association between a system type and one of your custom [`AppEntity`](appentity.md) types. For example, the [`NSUserActivity`](https://developer.apple.com/documentation/Foundation/NSUserActivity) makes this property available so you can specify the entity associated with your app’s activity. To remove the association with one of your app’s entities, set this property to `nil`.
+This property stores the unique identifier of one of your app’s entities. Use it to create an association between a system type and one of your custom [`AppEntity`](appentity.md) types. For example, the [`NSUserActivity`](https://developer.apple.com/documentation/foundation/nsuseractivity) makes this property available so you can specify the entity associated with your app’s activity. To remove the association with one of your app’s entities, set this property to `nil`.
 
 
 ---

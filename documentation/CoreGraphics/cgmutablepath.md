@@ -73,8 +73,8 @@ To append a new subpath onto a mutable path, your application typically calls [`
 ### Inherits From
 - [CGPath](cgpath.md)
 ### Conforms To
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
 
 ## See Also
 

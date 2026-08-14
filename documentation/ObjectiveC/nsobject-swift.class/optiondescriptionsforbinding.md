@@ -16,15 +16,15 @@ func optionDescriptionsForBinding(_ binding: NSBindingName) -> [NSAttributeDescr
 
 #### Return Value
 
-Returns an array of [`NSAttributeDescription`](https://developer.apple.com/documentation/CoreData/NSAttributeDescription) that describe the options for `binding`.
+Returns an array of [`NSAttributeDescription`](https://developer.apple.com/documentation/coredata/nsattributedescription) that describe the options for `binding`.
 
 #### Discussion
 
-The [`NSAttributeDescription`](https://developer.apple.com/documentation/CoreData/NSAttributeDescription) instances in the array are used by Interface Builder to build the options editor user interface of the bindings inspector.
+The [`NSAttributeDescription`](https://developer.apple.com/documentation/coredata/nsattributedescription) instances in the array are used by Interface Builder to build the options editor user interface of the bindings inspector.
 
-- The option name displayed for the option in the bindings inspector is based on the value of the [`NSAttributeDescription`](https://developer.apple.com/documentation/CoreData/NSAttributeDescription) method [`name`](https://developer.apple.com/documentation/CoreData/NSPropertyDescription/name).
-- The type of editor displayed for the option in the bindings inspector is based on the value of the  [`NSAttributeDescription`](https://developer.apple.com/documentation/CoreData/NSAttributeDescription) method [`attributeType`](https://developer.apple.com/documentation/CoreData/NSAttributeDescription/attributeType-swift.property).
-- The default value displayed in the bindings inspector for the option is based on the value of the [`NSAttributeDescription`](https://developer.apple.com/documentation/CoreData/NSAttributeDescription) method [`defaultValue`](https://developer.apple.com/documentation/CoreData/NSAttributeDescription/defaultValue).
+- The option name displayed for the option in the bindings inspector is based on the value of the [`NSAttributeDescription`](https://developer.apple.com/documentation/coredata/nsattributedescription) method [`name`](https://developer.apple.com/documentation/coredata/nspropertydescription/name).
+- The type of editor displayed for the option in the bindings inspector is based on the value of the  [`NSAttributeDescription`](https://developer.apple.com/documentation/coredata/nsattributedescription) method [`attributeType`](https://developer.apple.com/documentation/coredata/nsattributedescription/attributetype-swift.property).
+- The default value displayed in the bindings inspector for the option is based on the value of the [`NSAttributeDescription`](https://developer.apple.com/documentation/coredata/nsattributedescription) method [`defaultValue`](https://developer.apple.com/documentation/coredata/nsattributedescription/defaultvalue).
 
 ## Parameters
 
@@ -38,10 +38,10 @@ The [`NSAttributeDescription`](https://developer.apple.com/documentation/CoreDat
   Establishes a binding between a given property of the receiver and the property of a given object specified by a given key path.
 - [func infoForBinding(NSBindingName) -> [NSBindingInfoKey : Any]?](nsobject-swift.class/infoforbinding(_:).md)
   Returns a dictionary describing the receiver’s `binding`.
-- [struct NSBindingInfoKey](../AppKit/NSBindingInfoKey.md)
+- [struct NSBindingInfoKey](../appkit/nsbindinginfokey.md)
 - [func unbind(NSBindingName)](nsobject-swift.class/unbind(_:).md)
   Removes a given binding between the receiver and a controller.
-- [func NSIsControllerMarker(Any?) -> Bool](../AppKit/NSIsControllerMarker(_:).md)
+- [func NSIsControllerMarker(Any?) -> Bool](../appkit/nsiscontrollermarker(_:).md)
   Tests whether a given object is special marker object used for indicating the state of a selection in relation to a key.
 
 

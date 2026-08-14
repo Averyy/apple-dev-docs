@@ -21,16 +21,16 @@ Subclass the FIFinderSync class when you want to customize the appearance of the
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
 - [FIFinderSyncProtocol](fifindersyncprotocol.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSExtensionRequestHandling](../Foundation/NSExtensionRequestHandling.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [Hashable](../swift/hashable.md)
+- [NSExtensionRequestHandling](../foundation/nsextensionrequesthandling.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

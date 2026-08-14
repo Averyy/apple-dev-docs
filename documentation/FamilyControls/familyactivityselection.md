@@ -19,7 +19,7 @@ struct FamilyActivitySelection
 
 To protect the user’s privacy, `FamilyActivitySelection` holds opaque values that represent categories, applications, and web domains selected by the user.
 
-You can then pass these opaque values to instances and methods from the [`Managed Settings`](https://developer.apple.com/documentation/ManagedSettings) and [`Device Activity`](https://developer.apple.com/documentation/DeviceActivity) frameworks to set up and manage parental controls.
+You can then pass these opaque values to instances and methods from the [`Managed Settings`](https://developer.apple.com/documentation/managedsettings) and [`Device Activity`](https://developer.apple.com/documentation/deviceactivity) frameworks to set up and manage parental controls.
 
 > ❗ **Important**: If a user, parent, or guardian revokes authorization of your app, any tokens that [`FamilyActivitySelection`](familyactivityselection.md) provided while your app was authorized are voided.
 
@@ -54,9 +54,9 @@ For more information on prompting the user to select items, see [`FamilyActivity
 ## Relationships
 
 ### Conforms To
-- [Decodable](../Swift/Decodable.md)
-- [Encodable](../Swift/Encodable.md)
-- [Equatable](../Swift/Equatable.md)
+- [Decodable](../swift/decodable.md)
+- [Encodable](../swift/encodable.md)
+- [Equatable](../swift/equatable.md)
 
 ## See Also
 

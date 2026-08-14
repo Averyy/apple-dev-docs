@@ -27,7 +27,7 @@ Don’t create types that adopt `SNResult`. Only Sound Analysis framework types 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 ### Conforming Types
 - [SNClassificationResult](snclassificationresult.md)
 

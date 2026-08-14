@@ -29,7 +29,7 @@ This method applies the morphology maximum filter to an image. The effect target
 
 The morphology maximum filter uses the following properties:
 
-- **`radius`**: A `float` representing the area of effect as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+- **`radius`**: A `float` representing the area of effect as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
 - **`inputImage`**: A [`CIImage`](ciimage.md) representing the input image to apply the filter to.
 
 The following code creates a filter that adds an intense blur to the input image:
@@ -44,7 +44,7 @@ The following code creates a filter that adds an intense blur to the input image
     }
 ```
 
-![Two photographs of a beach at sunset with multiple palm trees. The photo on the left is clear and crisp. In the photo on the right, a morphology maximum blur has been applied, making the image hazy and the edges of the palm trees bright and less distinct.](https://docs-assets.developer.apple.com/published/541eb7bd69acfac93269719ce60bbb61/media-3544961%402x.png)
+![Two photographs of a beach at sunset with multiple palm trees. The photo on the left is clear and crisp. In the photo on the right, a morphology maximum blur has been applied, making the image hazy and the edges of the palm trees bright and less distinct.](/images/com.apple.coreimage/media-3544961@2x.png)
 
 ## See Also
 

@@ -25,11 +25,11 @@ var NSLAYOUTCONSTRAINT_H: Int32 { get }
   The part of the object’s visual representation that should be used to get the value for the constraint.
 - [NSLayoutConstraint.FormatOptions](nslayoutconstraint/formatoptions.md)
   A bit mask that specifies both a part of an interface element to align and a direction for the alignment between two interface elements.
-- [NSLayoutConstraint.Orientation](../AppKit/NSLayoutConstraint/Orientation.md)
+- [NSLayoutConstraint.Orientation](../appkit/nslayoutconstraint/orientation.md)
   The layout constraint orientation, either horizontal or vertical, that the constraint uses to enforce layout between objects.
 - [NSLayoutConstraint.Axis](nslayoutconstraint/axis.md)
   Keys that specify a horizontal or vertical layout constraint between objects.
-- [struct NSEdgeInsets](../Foundation/NSEdgeInsets.md)
+- [struct NSEdgeInsets](../foundation/nsedgeinsets.md)
   A description of the distance between the edges of two rectangles.
 
 

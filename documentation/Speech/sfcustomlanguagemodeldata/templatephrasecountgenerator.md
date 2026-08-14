@@ -45,12 +45,12 @@ class TemplatePhraseCountGenerator
 ### Inherits From
 - [SFCustomLanguageModelData.PhraseCountGenerator](sfcustomlanguagemodeldata/phrasecountgenerator.md)
 ### Conforms To
-- [AsyncSequence](../Swift/AsyncSequence.md)
+- [AsyncSequence](../swift/asyncsequence.md)
 - [DataInsertable](datainsertable.md)
-- [Decodable](../Swift/Decodable.md)
-- [Encodable](../Swift/Encodable.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
+- [Decodable](../swift/decodable.md)
+- [Encodable](../swift/encodable.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
 
 ## See Also
 

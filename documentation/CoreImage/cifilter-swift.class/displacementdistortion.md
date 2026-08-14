@@ -31,7 +31,7 @@ The displacement distortion filter uses the following properties:
 
 - **`inputImage`**: An image with the type [`CIImage`](ciimage.md).
 - **`displacementImage`**: An image with the type [`CIImage`](ciimage.md).
-- **`scale`**: A `float` representing the scaling the filter uses to apply the texture to the input image as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+- **`scale`**: A `float` representing the scaling the filter uses to apply the texture to the input image as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
 
 The following code creates a filter that applies the grayscale values of the displacement image to the input image:
 
@@ -54,7 +54,7 @@ func displacementDistortion(inputImage: CIImage) -> CIImage {
 }
 ```
 
-![A group of three images: two images on the left arranged vertically and a third image on the right vertically centered. The top left image is of a modern concrete building with black tinted windows. The bottom left image is a blurred checkerboard pattern. The image on the right shows the result of applying the displacement distortion effect. It appears as if there is a ripple in the image.](https://docs-assets.developer.apple.com/published/2ca5fc058edc7840ca1f56e318dd486b/media-4407313%402x.png)
+![A group of three images: two images on the left arranged vertically and a third image on the right vertically centered. The top left image is of a modern concrete building with black tinted windows. The bottom left image is a blurred checkerboard pattern. The image on the right shows the result of applying the displacement distortion effect. It appears as if there is a ripple in the image.](/images/com.apple.coreimage/media-4407313@2x.png)
 
 ## See Also
 

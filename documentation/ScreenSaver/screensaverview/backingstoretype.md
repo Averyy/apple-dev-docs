@@ -16,7 +16,7 @@ class func backingStoreType() -> NSWindow.BackingStoreType
 
 #### Discussion
 
-This method returns [`NSWindow.BackingStoreType.buffered`](https://developer.apple.com/documentation/AppKit/NSWindow/BackingStoreType/buffered) by default. If you want to change the backing store type, override this method and return a new value. If you override the method, you don’t need to call the inherited version.
+This method returns [`NSWindow.BackingStoreType.buffered`](https://developer.apple.com/documentation/appkit/nswindow/backingstoretype/buffered) by default. If you want to change the backing store type, override this method and return a new value. If you override the method, you don’t need to call the inherited version.
 
 ## See Also
 

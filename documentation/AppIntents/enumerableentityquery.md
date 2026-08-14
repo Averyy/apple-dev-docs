@@ -39,8 +39,8 @@ By implementing an `EnumerableEntityQuery`, you enable the Shortcuts app to gene
 - [DynamicOptionsProvider](dynamicoptionsprovider.md)
 - [EntityQuery](entityquery.md)
 - [PersistentlyIdentifiable](persistentlyidentifiable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 ### Inherited By
 - [UniqueAppEntityQuery](uniqueappentityquery.md)
 ### Conforming Types

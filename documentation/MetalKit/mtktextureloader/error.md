@@ -27,16 +27,16 @@ struct Error
 - [static let domain: MTKTextureLoader.Error](mtktextureloader/error/domain.md)
   The error domain used by `MetalKit` when returning texture loading errors.
 - [static let key: MTKTextureLoader.Error](mtktextureloader/error/key.md)
-  The key used to retrieve an error string from an error object’s [`userInfo`](https://developer.apple.com/documentation/Foundation/NSError/userInfo) dictionary.
+  The key used to retrieve an error string from an error object’s [`userInfo`](https://developer.apple.com/documentation/foundation/nserror/userinfo) dictionary.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [RawRepresentable](../Swift/RawRepresentable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [RawRepresentable](../swift/rawrepresentable.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 
 ---

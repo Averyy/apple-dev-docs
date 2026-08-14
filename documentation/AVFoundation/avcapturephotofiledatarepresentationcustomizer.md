@@ -23,7 +23,7 @@ protocol AVCapturePhotoFileDataRepresentationCustomizer : NSObjectProtocol
 
 #### Overview
 
-AVCapturePhoto is a wrapper representing a photo in a file container. To flatten the photo to an [`NSData`](https://developer.apple.com/documentation/Foundation/NSData) object to write to file, call [`fileDataRepresentation()`](avcapturephoto/filedatarepresentation().md). For more complex flattening operations such as replacing or stripping metadata, call [`fileDataRepresentation(with:)`](avcapturephoto/filedatarepresentation(with:).md) and provide a delegate for customized replacement or stripping behavior. This delegate’s methods are called synchronously before the flattening process begins.
+AVCapturePhoto is a wrapper representing a photo in a file container. To flatten the photo to an [`NSData`](https://developer.apple.com/documentation/foundation/nsdata) object to write to file, call [`fileDataRepresentation()`](avcapturephoto/filedatarepresentation().md). For more complex flattening operations such as replacing or stripping metadata, call [`fileDataRepresentation(with:)`](avcapturephoto/filedatarepresentation(with:).md) and provide a delegate for customized replacement or stripping behavior. This delegate’s methods are called synchronously before the flattening process begins.
 
 ## Topics
 
@@ -44,7 +44,7 @@ AVCapturePhoto is a wrapper representing a photo in a file container. To flatten
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

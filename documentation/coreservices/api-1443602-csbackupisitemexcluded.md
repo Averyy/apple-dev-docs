@@ -21,7 +21,7 @@ func CSBackupIsItemExcluded(_ item: CFURL!, _ excludeByPath: UnsafeMutablePointe
 ## Parameters
 
 - `item`: The URL of the item.
-- `excludeByPath`: If  , the item’s backup exclusion status applies to its location; if  , the item's backup exclusion status applies to itself, regardless of its location. See   for more information. Can be  .
+- `excludeByPath`: If `true`, the item’s backup exclusion status applies to its location; if `false`, the item's backup exclusion status applies to itself, regardless of its location. See [`CSBackupSetItemExcluded(_:_:_:)`](1445043-csbackupsetitemexcluded.md) for more information. Can be `NULL`.
 
 ## See Also
 

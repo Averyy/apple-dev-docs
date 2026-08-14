@@ -22,7 +22,7 @@ func CTFontGetGlyphWithName(_ font: CTFont, _ glyphName: CFString) -> CGGlyph
 
 #### Return Value
 
-The glyph value for the named glyph as a [`CGGlyph`](https://developer.apple.com/documentation/CoreGraphics/CGGlyph) object, or if the glyph name is not recognized, the `.notdef` glyph index value.
+The glyph value for the named glyph as a [`CGGlyph`](https://developer.apple.com/documentation/coregraphics/cgglyph) object, or if the glyph name is not recognized, the `.notdef` glyph index value.
 
 #### Discussion
 

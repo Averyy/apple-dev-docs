@@ -26,7 +26,7 @@ This transformation is reversible.
 
 For example, the string “ひらがな” transliterates to “カタカナ”.
 
-This is equivalent to [`kCFStringTransformHiraganaKatakana`](https://developer.apple.com/documentation/CoreFoundation/kCFStringTransformHiraganaKatakana).
+This is equivalent to [`kCFStringTransformHiraganaKatakana`](https://developer.apple.com/documentation/corefoundation/kcfstringtransformhiraganakatakana).
 
 ## See Also
 

@@ -24,7 +24,7 @@ Writes the document-level attributes in `docAttributes`, as explained in [`RTF F
 
 Raises an [`rangeException`](nsexceptionname/rangeexception.md) if any part of `aRange` lies beyond the end of the receiver’s characters.
 
-When writing data to the pasteboard, you can use the `NSData` object as the first argument to the [`NSPasteboard`](https://developer.apple.com/documentation/AppKit/NSPasteboard) method [`setData(_:forType:)`](https://developer.apple.com/documentation/AppKit/NSPasteboard/setData(_:forType:)), with a second argument of `NSRTFPboardType`. Although this method strips attachments, it leaves the attachment characters in the text itself. The `NSText` method  [`rtf(from:)`](https://developer.apple.com/documentation/AppKit/NSText/rtf(from:)), on the other hand, does strip attachment characters when extracting RTF.
+When writing data to the pasteboard, you can use the `NSData` object as the first argument to the [`NSPasteboard`](https://developer.apple.com/documentation/appkit/nspasteboard) method [`setData(_:forType:)`](https://developer.apple.com/documentation/appkit/nspasteboard/setdata(_:fortype:)), with a second argument of `NSRTFPboardType`. Although this method strips attachments, it leaves the attachment characters in the text itself. The `NSText` method  [`rtf(from:)`](https://developer.apple.com/documentation/appkit/nstext/rtf(from:)), on the other hand, does strip attachment characters when extracting RTF.
 
 ## Parameters
 

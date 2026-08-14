@@ -29,9 +29,9 @@ protocol ModelExecutor : Executor
 ## Relationships
 
 ### Inherits From
-- [Executor](../Swift/Executor.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Executor](../swift/executor.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 ### Inherited By
 - [SerialModelExecutor](serialmodelexecutor.md)
 ### Conforming Types

@@ -22,7 +22,7 @@ let kCGImageMetadataEnumerateRecursively: CFString
 
 #### Discussion
 
-The value of this key is a [`CFBoolean`](https://developer.apple.com/documentation/CoreFoundation/CFBoolean). Set the value to [`kOSBooleanTrue`](https://developer.apple.com/documentation/DriverKit/kOSBooleanTrue) to enumerate all tags recursively. Set the value to [`kCFBooleanFalse`](https://developer.apple.com/documentation/CoreFoundation/kCFBooleanFalse) to enumerate only the direct children of the root path you specify.
+The value of this key is a [`CFBoolean`](https://developer.apple.com/documentation/corefoundation/cfboolean). Set the value to [`kOSBooleanTrue`](https://developer.apple.com/documentation/driverkit/kosbooleantrue) to enumerate all tags recursively. Set the value to [`kCFBooleanFalse`](https://developer.apple.com/documentation/corefoundation/kcfbooleanfalse) to enumerate only the direct children of the root path you specify.
 
 When you call [`CGImageMetadataEnumerateTagsUsingBlock(_:_:_:_:)`](cgimagemetadataenumeratetagsusingblock(_:_:_:_:).md), include this option if you want the enumeration behavior to search recursively through the available tags. If you don’t specify this key, the function behaves as if the value is false.
 

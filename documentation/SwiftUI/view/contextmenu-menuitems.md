@@ -50,7 +50,7 @@ Text("Turtle Rock")
 
 When someone activates the context menu with an action like touch and hold in iOS or iPadOS, the system displays the menu next to the content:
 
-![A screenshot of a context menu showing two menu items: Add to](https://docs-assets.developer.apple.com/published/175048e4c43b6463112139fd1c3f69c8/View-contextMenu-1-iOS%402x.png)
+![A screenshot of a context menu showing two menu items: Add to](/images/com.apple.SwiftUI/View-contextMenu-1-iOS@2x.png)
 
 The system dismisses the menu if someone makes a selection, or taps or clicks outside the menu.
 

@@ -39,8 +39,8 @@ Configure how shapes interact with one another by customizing the default spacin
 ## Relationships
 
 ### Conforms To
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 - [View](view.md)
 
 ## See Also

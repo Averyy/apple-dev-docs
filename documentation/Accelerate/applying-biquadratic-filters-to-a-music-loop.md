@@ -16,7 +16,7 @@ The vDSP library defines a biquadratic filter from a set of five coefficients fo
 
 The sample code app displays the magnitude response of the selected section, the magnitude response of the entire filter, the frequency-domain representation of the input signal, and the frequency-domain representation of the filtered, output signal.
 
-![A screenshot of the sample app that includes four graphs. A dashed line graph indicates the magnitude response of the selected section. A solid line graph indicates the frequency-domain representation of the original signal. A background filled line graph indicates the magnitude response of the biquadratic filter. A foreground filled line graph indicates the frequency-domain representation of the filtered output.](https://docs-assets.developer.apple.com/published/fd595f0c3a982d73941d7cd90e668f73/biquad-demo-overview.png)
+![A screenshot of the sample app that includes four graphs. A dashed line graph indicates the magnitude response of the selected section. A solid line graph indicates the frequency-domain representation of the original signal. A background filled line graph indicates the magnitude response of the biquadratic filter. A foreground filled line graph indicates the frequency-domain representation of the filtered output.](/images/com.apple.accelerate/biquad-demo-overview.png)
 
 Before exploring the code, try building and running the app to familiarize yourself with the effect of the different parameters on the music loop.
 
@@ -45,7 +45,7 @@ biquadSetup = vDSP_biquad_CreateSetup(vDSP.floatToDouble(coefficients),
 
 Five coefficients define each section of a biquadratic filter. The following formula describes the underlying math of the biquadratic filter, with *z* referring to the complex frequency-domain representation of the signal:
 
-![A mathematical formula that describes the transfer function that the vDSP library uses for biquadratic filtering. Cap H open parentheses z close parentheses equals b sub zero, plus b sub 1 times z to the power of minus one, plus b sub 2 times z to the power of minus two, over one plus a sub 1 times z to the power of minus one, plus a sub 2 times z to the power of minus 2.](https://docs-assets.developer.apple.com/published/32e8bf0cf46675e9b64513a51ac73ecf/biquad_formula.png)
+![A mathematical formula that describes the transfer function that the vDSP library uses for biquadratic filtering. Cap H open parentheses z close parentheses equals b sub zero, plus b sub 1 times z to the power of minus one, plus b sub 2 times z to the power of minus two, over one plus a sub 1 times z to the power of minus one, plus a sub 2 times z to the power of minus 2.](/images/com.apple.accelerate/biquad_formula.png)
 
 The sample code app includes the `BiquadCoefficientCalculator` structure that provides the `static BiquadCoefficientCalculator.coefficients(for:sampleRate:)` function. This function returns the five coefficients for a filter type, center frequency, Q, and sample rate.
 

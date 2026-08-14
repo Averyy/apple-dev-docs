@@ -26,7 +26,7 @@ Call the completion handler as soon as you’ve finished handling the action.
 
 - `application`: The app object that was activated for the user-selected action.
 - `identifier`: The identifier for the custom action.
-- `userInfo`: A dictionary that contains information related to the remote notification, potentially including a badge number for the app icon, an alert sound, an alert message to display to the user, a notification identifier, and custom data. The provider originates it as a JSON-defined dictionary that iOS converts to an [`NSDictionary`](https://developer.apple.com/documentation/Foundation/NSDictionary) object; the dictionary might contain only property-list objects plus [`NSNull`](https://developer.apple.com/documentation/Foundation/NSNull).
+- `userInfo`: A dictionary that contains information related to the remote notification, potentially including a badge number for the app icon, an alert sound, an alert message to display to the user, a notification identifier, and custom data. The provider originates it as a JSON-defined dictionary that iOS converts to an [`NSDictionary`](https://developer.apple.com/documentation/foundation/nsdictionary) object; the dictionary might contain only property-list objects plus [`NSNull`](https://developer.apple.com/documentation/foundation/nsnull).
 - `responseInfo`: The data dictionary sent by the action.
 - `completionHandler`: A block that you must call when you are finished performing the action.
 

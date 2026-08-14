@@ -69,13 +69,13 @@ handler([conditionDescriptor,
 
 The [`CLKComplicationDescriptor`](clkcomplicationdescriptor.md) class provides two additional initializers: [`init(identifier:displayName:supportedFamilies:userActivity:)`](clkcomplicationdescriptor/init(identifier:displayname:supportedfamilies:useractivity:).md) and [`init(identifier:displayName:supportedFamilies:userInfo:)`](clkcomplicationdescriptor/init(identifier:displayname:supportedfamilies:userinfo:).md).
 
-Use [`init(identifier:displayName:supportedFamilies:userActivity:)`](clkcomplicationdescriptor/init(identifier:displayname:supportedfamilies:useractivity:).md) to specify an [`NSUserActivity`](https://developer.apple.com/documentation/Foundation/NSUserActivity) object for the complication type. When the user taps the complication, ClockKit wakes your app and passes the activity object to your [`handle(_:)`](https://developer.apple.com/documentation/WatchKit/WKExtensionDelegate/handle(_:)-5pyj1) method. You can use the [`handle(_:)`](https://developer.apple.com/documentation/WatchKit/WKExtensionDelegate/handle(_:)-5pyj1) method to navigate to a particular part of your app that the activity object specifies.
+Use [`init(identifier:displayName:supportedFamilies:userActivity:)`](clkcomplicationdescriptor/init(identifier:displayname:supportedfamilies:useractivity:).md) to specify an [`NSUserActivity`](https://developer.apple.com/documentation/foundation/nsuseractivity) object for the complication type. When the user taps the complication, ClockKit wakes your app and passes the activity object to your [`handle(_:)`](https://developer.apple.com/documentation/watchkit/wkextensiondelegate/handle(_:)-5pyj1) method. You can use the [`handle(_:)`](https://developer.apple.com/documentation/watchkit/wkextensiondelegate/handle(_:)-5pyj1) method to navigate to a particular part of your app that the activity object specifies.
 
 Use [`init(identifier:displayName:supportedFamilies:userInfo:)`](clkcomplicationdescriptor/init(identifier:displayname:supportedfamilies:userinfo:).md) to specify a user info dictionary with information that your data source can use when creating timeline entries.
 
 > ⚠️ **Warning**:  Because the system can pass complications as part of a shared watch face, only place data in the user info dictionary that other instances of your app can use. For example, when referring to data, avoid using identifiers that can change between users—like an index into the user’s favorites list. Instead use items that remain constant across all copies of the app, like unique string identifiers.
 
-When the user taps your complication, ClockKit includes the content of the `userInfo` parameter in the dictionary that passes to the extension delegate’s [`handleUserActivity(_:)`](https://developer.apple.com/documentation/WatchKit/WKExtensionDelegate/handleUserActivity(_:)) method. You can also use this data to navigate to a particular part of your app.
+When the user taps your complication, ClockKit includes the content of the `userInfo` parameter in the dictionary that passes to the extension delegate’s [`handleUserActivity(_:)`](https://developer.apple.com/documentation/watchkit/wkextensiondelegate/handleuseractivity(_:)) method. You can also use this data to navigate to a particular part of your app.
 
 ##### Dynamically Define Descriptors
 
@@ -143,7 +143,7 @@ ClockKit then calls your [`getComplicationDescriptors(handler:)`](clkcomplicatio
 
 In watchOS 6 and earlier, you statically define the supported complication families in the WatchKit extension’s General tab under the Complication and Configuration settings.
 
-![A screenshot of the Complication Configuration settings with all the families selected.](https://docs-assets.developer.apple.com/published/2adf6b90dffa2cd20e75bf0e0428ef00/media-3570727%402x.png)
+![A screenshot of the Complication Configuration settings with all the families selected.](/images/com.apple.clockkit/media-3570727@2x.png)
 
 Xcode then saves these settings in the extension’s `Info.plist` file.
 

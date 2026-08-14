@@ -42,7 +42,7 @@ Conform to this protocol in your hotspot helper app extension.
 ## Relationships
 
 ### Inherits From
-- [AppExtension](../ExtensionFoundation/AppExtension.md)
+- [AppExtension](../extensionfoundation/appextension.md)
 
 ## See Also
 

@@ -73,8 +73,8 @@ An [`LSMMap`](lsmmap.md) is a mutable, opaque Core Foundation type that represen
 ## Relationships
 
 ### Conforms To
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
 
 ## See Also
 

@@ -22,11 +22,11 @@ static func date(format: Date.FormatString, locale: Locale, timeZone: TimeZone, 
 
 #### Return Value
 
-A `RegexComponent` that matches date substrings as Foundation [`Date`](https://developer.apple.com/documentation/Foundation/Date) instances.
+A `RegexComponent` that matches date substrings as Foundation [`Date`](https://developer.apple.com/documentation/foundation/date) instances.
 
 #### Discussion
 
-This method matches date substrings in accordance with a format from a [`Date.FormatString`](https://developer.apple.com/documentation/Foundation/Date/FormatString).
+This method matches date substrings in accordance with a format from a [`Date.FormatString`](https://developer.apple.com/documentation/foundation/date/formatstring).
 
 If a time value follows the date substring, the matcher ignores it, treating it as any other character sequence. To match date and time substrings, use [`dateTime(date:time:locale:timeZone:calendar:)`](regexcomponent/datetime(date:time:locale:timezone:calendar:).md).
 
@@ -57,9 +57,9 @@ let date = match?.1 // date == Mar 1, 1976 at 12:00 AM (may vary based on curren
 
 ## Parameters
 
-- `format`: A [`Date.FormatString`](https://developer.apple.com/documentation/Foundation/Date/FormatString) to use when matching date substrings.
+- `format`: A [`Date.FormatString`](https://developer.apple.com/documentation/foundation/date/formatstring) to use when matching date substrings.
 - `locale`: The locale to use when matching date substrings. Matching uses this locale to evaluate the order of date components. It also uses the locale’s language for date format styles that use words.
-- `timeZone`: The time zone to use when returning a captured [`Date`](https://developer.apple.com/documentation/Foundation/Date). The returned date’s time value is `00:00:00` in this time zone.
+- `timeZone`: The time zone to use when returning a captured [`Date`](https://developer.apple.com/documentation/foundation/date). The returned date’s time value is `00:00:00` in this time zone.
 - `calendar`: The calendar to use when matching date substrings. If `nil`, matching uses the default calendar of the specified `locale`.
 - `twoDigitStartDate`: The earliest date a matched two-year date can represent. For example, with the default value of `Date(timeIntervalSince1970: 0)`, the matcher treats `22` as 2022, and `84` as 1984. The matcher ignores this parameter for date substrings that contain year components with more than two digits.
 

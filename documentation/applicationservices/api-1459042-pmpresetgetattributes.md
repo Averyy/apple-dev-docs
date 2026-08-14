@@ -24,8 +24,8 @@ A preset has associated with it a dictionary containing the preset identifier, t
 
 ## Parameters
 
-- `preset`: The preset whose attributes you want to obtain. You can use the function   to obtain the presets for a given printer.
-- `attributes`: A pointer to your   variable. On return, the variable refers to a Core Foundation dictionary containing the attributes of the specified preset, or   if the attributes could not be obtained. For more information about these attributes, see the Discussion. You should not release this dictionary without first retaining it.
+- `preset`: The preset whose attributes you want to obtain. You can use the function [`PMPrinterCopyPresets(_:_:)`](1459117-pmprintercopypresets.md) to obtain the presets for a given printer.
+- `attributes`: A pointer to your [`CFDictionary`](https://developer.apple.com/documentation/corefoundation/cfdictionary) variable. On return, the variable refers to a Core Foundation dictionary containing the attributes of the specified preset, or `NULL` if the attributes could not be obtained. For more information about these attributes, see the Discussion. You should not release this dictionary without first retaining it.
 
 ## See Also
 

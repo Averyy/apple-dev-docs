@@ -12,7 +12,7 @@ Construct an audio player to play your custom audio data, and optionally take ad
 
 #### Overview
 
-This sample code project builds a robust audio player from the ground up, using the [`AVSampleBufferAudioRenderer`](https://developer.apple.com/documentation/AVFoundation/AVSampleBufferAudioRenderer) and [`AVSampleBufferRenderSynchronizer`](https://developer.apple.com/documentation/AVFoundation/AVSampleBufferRenderSynchronizer) classes to manage enqueuing and playback of audio that you provide. The player uses a playlist of playable items, and allows the user to edit the contents of the playlist while playback is in progress.
+This sample code project builds a robust audio player from the ground up, using the [`AVSampleBufferAudioRenderer`](https://developer.apple.com/documentation/avfoundation/avsamplebufferaudiorenderer) and [`AVSampleBufferRenderSynchronizer`](https://developer.apple.com/documentation/avfoundation/avsamplebufferrendersynchronizer) classes to manage enqueuing and playback of audio that you provide. The player uses a playlist of playable items, and allows the user to edit the contents of the playlist while playback is in progress.
 
 The example app also uses [`AVAudioSession`](avaudiosession.md) to indicate that it plays long-form audio content — music, audiobooks, podcasts, or other content that a person listens to over a substantial period of time. This allows the player to benefit from AirPlay 2. When the app plays to a compatible device such as HomePod, AirPlay 2 dramatically improves playback reliability and performance, and enables advanced features such as multiroom playback.
 

@@ -38,7 +38,7 @@ do {
 }
 ```
 
-The sample includes the [`NSAlarmKitUsageDescription`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSAlarmKitUsageDescription) key in the app’s `Info.plist` with a descriptive string explaining why it schedules alarms. This string appears in the system prompt when requesting authorization, in this sample the string is:
+The sample includes the [`NSAlarmKitUsageDescription`](https://developer.apple.com/documentation/bundleresources/information-property-list/nsalarmkitusagedescription) key in the app’s `Info.plist` with a descriptive string explaining why it schedules alarms. This string appears in the system prompt when requesting authorization, in this sample the string is:
 
 ```None
 We'll schedule alerts for alarms you create within our app.
@@ -111,7 +111,7 @@ let secondaryButton: AlarmButton? = switch secondaryButtonBehavior {
 
 > **Note**: The system forwards the alert presentation to a paired watch (if any) to notify people when an alarm is alerting.
 
-The content for these presentations is wrapped into [`ActivityAttributes`](https://developer.apple.com/documentation/ActivityKit/ActivityAttributes), along with [`tintColor`](alarmattributes/tintcolor.md), and [`metadata`](alarmattributes/metadata.md). The tint color associates the alarms with the sample app and also differentiates them from other app’s alarms on the person’s device.
+The content for these presentations is wrapped into [`ActivityAttributes`](https://developer.apple.com/documentation/activitykit/activityattributes), along with [`tintColor`](alarmattributes/tintcolor.md), and [`metadata`](alarmattributes/metadata.md). The tint color associates the alarms with the sample app and also differentiates them from other app’s alarms on the person’s device.
 
 ```swift
 let attributes = AlarmAttributes(presentation: alarmPresentation(with: userInput),
@@ -125,7 +125,7 @@ The sample uses a unique identifier to track alarms registered with AlarmKit. Th
 
 When a person taps the button in the alerting UI, the [`AlarmManager`](alarmmanager.md) automatically handles stop or countdown functionalities, depending on the button type.
 
-> 💡 **Tip**: You can add additional actions for each button type using [`App Intents`](https://developer.apple.com/documentation/AppIntents), which you can configure using [`AlarmManager.AlarmConfiguration`](alarmmanager/alarmconfiguration.md).
+> 💡 **Tip**: You can add additional actions for each button type using [`App Intents`](https://developer.apple.com/documentation/appintents), which you can configure using [`AlarmManager.AlarmConfiguration`](alarmmanager/alarmconfiguration.md).
 
 ```swift
 let id = UUID()
@@ -160,7 +160,7 @@ Task {
 
 The sample app adds a widget extension target to customize non-alerting presentations in the Dynamic Island, Lock Screen, and StandBy. The widget extension receives the same [`AlarmAttributes`](alarmattributes.md) structure that you provide to [`shared`](alarmmanager/shared.md) when scheduling alarms. It includes the metadata provided in the [`Configure the alarm’s UI attributes`](https://developer.apple.com#Configure-the-alarms-UI-attributes) section above.
 
-> ❗ **Important**: AlarmKit expects a widget extension if an app supports a countdown presentation. Otherwise, the system may unexpectedly dismiss alarms and fail to alert. For more information, see [`ActivityKit`](https://developer.apple.com/documentation/ActivityKit).
+> ❗ **Important**: AlarmKit expects a widget extension if an app supports a countdown presentation. Otherwise, the system may unexpectedly dismiss alarms and fail to alert. For more information, see [`ActivityKit`](https://developer.apple.com/documentation/activitykit).
 
 ## See Also
 

@@ -6,21 +6,21 @@ Learn about important changes to PHASE.
 
 #### Overview
 
-Browse notable changes in [`PHASE`](https://developer.apple.com/documentation/PHASE).
+Browse notable changes in [`PHASE`](https://developer.apple.com/documentation/phase).
 
 #### June 2024
 
 ##### Airpods Head Tracking
 
-- Adjust the [`PHASEListener`](https://developer.apple.com/documentation/PHASE/PHASEListener) orientation to match someone’s head pose provided via compatible AirPods by setting the new [`automaticHeadTrackingFlags`](https://developer.apple.com/documentation/PHASE/PHASEListener/automaticHeadTrackingFlags) property to [`orientation`](https://developer.apple.com/documentation/PHASE/PHASEAutomaticHeadTrackingFlags/orientation). To observe this property, the system requires your app to have the [`com.apple.developer.coremotion.head-pose`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.coremotion.head-pose) entitlement.
+- Adjust the [`PHASEListener`](https://developer.apple.com/documentation/phase/phaselistener) orientation to match someone’s head pose provided via compatible AirPods by setting the new [`automaticHeadTrackingFlags`](https://developer.apple.com/documentation/phase/phaselistener/automaticheadtrackingflags) property to [`orientation`](https://developer.apple.com/documentation/phase/phaseautomaticheadtrackingflags/orientation). To observe this property, the system requires your app to have the [`com.apple.developer.coremotion.head-pose`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.coremotion.head-pose) entitlement.
 
 ##### Personalized Spatial Audio Profile
 
-- Tailor [`PHASESource`](https://developer.apple.com/documentation/PHASE/PHASESource) output according to a person’s personalized spatial audio profile that they configure in Settings by adding the [`com.apple.developer.spatial-audio.profile-access`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.spatial-audio.profile-access) entitlement to your app.
+- Tailor [`PHASESource`](https://developer.apple.com/documentation/phase/phasesource) output according to a person’s personalized spatial audio profile that they configure in Settings by adding the [`com.apple.developer.spatial-audio.profile-access`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.spatial-audio.profile-access) entitlement to your app.
 
 ##### Spatial Audio Toggle in Control Center
 
-- Instruct [`PHASE`](https://developer.apple.com/documentation/PHASE) to ignore the new system spatial audio toggle in Control Center by adding the [`AVGameBypassSystemSpatialAudio`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/AVGameBypassSystemSpatialAudio) key to your app’s `Info.plist`.
+- Instruct [`PHASE`](https://developer.apple.com/documentation/phase) to ignore the new system spatial audio toggle in Control Center by adding the [`AVGameBypassSystemSpatialAudio`](https://developer.apple.com/documentation/bundleresources/information-property-list/avgamebypasssystemspatialaudio) key to your app’s `Info.plist`.
 
 ## See Also
 

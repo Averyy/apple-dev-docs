@@ -508,8 +508,8 @@ struct SIMD4<Scalar> where Scalar : SIMDScalar
 ## Relationships
 
 ### Conforms To
-- [AnimatableData](../RealityKit/AnimatableData.md)
-- [BindableData](../RealityKit/BindableData.md)
+- [AnimatableData](../realitykit/animatabledata.md)
+- [BindableData](../realitykit/bindabledata.md)
 - [BitwiseCopyable](bitwisecopyable.md)
 - [ConvertibleFromBytes](convertiblefrombytes.md)
 - [ConvertibleToBytes](convertibletobytes.md)

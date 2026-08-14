@@ -25,7 +25,7 @@ To simulate dragging without a modifier key, deselecting anything that was selec
 - `startPos`: The position of the cell that marks where the user would have pressed the mouse button.
 - `endPos`: The position of the cell that marks where the user would have released the mouse button.
 - `anchorPos`: The position of the cell to treat as the last cell the user would have selected. To simulate Shift-dragging (continuous selection) `anchorPos` should be the `endPos` used in the last method call. To simulate Command-dragging (discontinuous selection), `anchorPos` should be the same as this method call’s `startPos`.
-- `lit`: [`true`](https://developer.apple.com/documentation/Swift/true) if cells selected by this method should be highlighted.
+- `lit`: [`true`](https://developer.apple.com/documentation/swift/true) if cells selected by this method should be highlighted.
 
 ## See Also
 

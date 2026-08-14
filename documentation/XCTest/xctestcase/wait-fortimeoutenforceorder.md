@@ -15,13 +15,13 @@ func wait(for expectations: [XCTestExpectation], timeout seconds: TimeInterval, 
 
 > **Note**:  Use [`fulfillment(of:timeout:enforceOrder:)`](xctwaiter/fulfillment(of:timeout:enforceorder:)-swift.method.md) in Swift code requiring concurrency.
 
-In Objective-C code, you might use an expectation to wait on a call to an interface that uses a completion handler to return a result. From Swift code, consider calling `withCheckedContinuation(function:_:)` to use [`Concurrency`](https://developer.apple.com/documentation/Swift/concurrency) instead of an expectation to wait on the result of a completion handler.
+In Objective-C code, you might use an expectation to wait on a call to an interface that uses a completion handler to return a result. From Swift code, consider calling `withCheckedContinuation(function:_:)` to use [`Concurrency`](https://developer.apple.com/documentation/swift/concurrency) instead of an expectation to wait on the result of a completion handler.
 
 ## Parameters
 
 - `expectations`: An array of expectations the test must satisfy.
 - `seconds`: The time, in seconds, the test allows for the fulfillment of the expectations. The default timeout allows the test to run until it reaches its execution time allowance.
-- `enforceOrderOfFulfillment`: If [`true`](https://developer.apple.com/documentation/Swift/true), the test must satisfy the expectations in the order they appear in the array.
+- `enforceOrderOfFulfillment`: If [`true`](https://developer.apple.com/documentation/swift/true), the test must satisfy the expectations in the order they appear in the array.
 
 ## See Also
 

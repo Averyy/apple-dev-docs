@@ -22,7 +22,7 @@ static let volumeIdentifierKey: URLResourceKey
 
 #### Discussion
 
-This identifier can be used with the [`isEqual(_:)`](https://developer.apple.com/documentation/ObjectiveC/NSObjectProtocol/isEqual(_:)) method to determine whether two file system resources are on the same volume.
+This identifier can be used with the [`isEqual(_:)`](https://developer.apple.com/documentation/objectivec/nsobjectprotocol/isequal(_:)) method to determine whether two file system resources are on the same volume.
 
 The value of this identifier is not persistent across system restarts.
 

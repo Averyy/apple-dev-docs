@@ -24,9 +24,9 @@ A test case is a group of related test methods, with optional setup and teardown
 
 `XCTestCase` conforms to [`XCTActivity`](xctactivity.md), so you can simplify complex tests by organizing them into activities, and attach output to tests for later analysis. For more information, see [`Activities and Attachments`](activities-and-attachments.md).
 
-Create tests for asynchronous operations using expectations. For more information, see `Testing Asynchronous Operations with Expectations`. If your app uses Swift [`Concurrency`](https://developer.apple.com/documentation/Swift/concurrency), annotate test methods with `async` or `async throws` instead to test asynchronous operations, and use standard Swift concurrency patterns in your tests.
+Create tests for asynchronous operations using expectations. For more information, see `Testing Asynchronous Operations with Expectations`. If your app uses Swift [`Concurrency`](https://developer.apple.com/documentation/swift/concurrency), annotate test methods with `async` or `async throws` instead to test asynchronous operations, and use standard Swift concurrency patterns in your tests.
 
-Create tests to measure performance for specific blocks of code using the methods in the Measuring Performance section below. Build performance tests as part of a continuous improvement cycle for performance in your app. For more information, see [`Improving your app’s performance`](https://developer.apple.com/documentation/Xcode/improving-your-app-s-performance).
+Create tests to measure performance for specific blocks of code using the methods in the Measuring Performance section below. Build performance tests as part of a continuous improvement cycle for performance in your app. For more information, see [`Improving your app’s performance`](https://developer.apple.com/documentation/xcode/improving-your-app-s-performance).
 
 ## Topics
 
@@ -143,14 +143,14 @@ Create tests to measure performance for specific blocks of code using the method
 ### Inherits From
 - [XCTest](xctest.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [Copyable](../Swift/Copyable.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Escapable](../Swift/Escapable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [Copyable](../swift/copyable.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Escapable](../swift/escapable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 - [XCTActivity](xctactivity.md)
 - [XCTWaiterDelegate](xctwaiterdelegate.md)
 

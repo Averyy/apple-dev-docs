@@ -25,7 +25,7 @@ The macOS printing system uses a PostScript Printer Description (PPD) file to de
 ## Parameters
 
 - `paper`: The paper whose PPD paper name you want to obtain.
-- `paperName`: A pointer to your   variable. On return, the variable refers to a Core Foundation string that contains the PPD paper name for the specified paper. If an error occurs, the variable is set to  . You should not release the string without first retaining it.
+- `paperName`: A pointer to your [`CFString`](https://developer.apple.com/documentation/corefoundation/cfstring) variable. On return, the variable refers to a Core Foundation string that contains the PPD paper name for the specified paper. If an error occurs, the variable is set to `NULL`. You should not release the string without first retaining it.
 
 ## See Also
 

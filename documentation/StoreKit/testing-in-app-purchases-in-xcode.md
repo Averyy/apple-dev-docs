@@ -10,7 +10,7 @@ Testing your StoreKit implementation in Xcode ensures that your app behaves corr
 
 ##### Perform Basic Setup
 
-Before you begin StoreKit testing in Xcode, complete the steps in [`Setting up StoreKit Testing in Xcode`](https://developer.apple.com/documentation/Xcode/setting-up-storekit-testing-in-xcode), including creating a StoreKit configuration file, enabling StoreKit testing in Xcode, and preparing to validate receipts in the test environment. The test scenarios in this article require this basic setup.
+Before you begin StoreKit testing in Xcode, complete the steps in [`Setting up StoreKit Testing in Xcode`](https://developer.apple.com/documentation/xcode/setting-up-storekit-testing-in-xcode), including creating a StoreKit configuration file, enabling StoreKit testing in Xcode, and preparing to validate receipts in the test environment. The test scenarios in this article require this basic setup.
 
 Select the relevant test scenarios to build a test plan for your app. Each test scenario provides additional setup steps, if necessary, along with instructions about how to minimally reset the environment to repeat the test.
 
@@ -18,7 +18,7 @@ Select the relevant test scenarios to build a test plan for your app. Each test 
 
 Validating receipts is an integral part of handling and testing in-app purchases. As you test in-app purchases, StoreKit in Xcode generates receipts that are valid only in the test environment. Your app can validate the receipts locally using a certificate that Xcode provides.
 
-> ❗ **Important**:  You can’t validate receipts from the test environment with [`verifyReceipt`](https://developer.apple.com/documentation/AppStoreReceipts/Verify-Receipt) because the App Store doesn’t sign these receipts, and the verification fails.
+> ❗ **Important**:  You can’t validate receipts from the test environment with [`verifyReceipt`](https://developer.apple.com/documentation/appstorereceipts/verify-receipt) because the App Store doesn’t sign these receipts, and the verification fails.
 
 The test environment’s certificate is a root certificate. There’s no certificate chain to validate when you verify the receipt signature. The following code example retrieves the local receipt:
 
@@ -36,7 +36,7 @@ if let appStoreReceiptURL = Bundle.main.appStoreReceiptURL,
 }
 ```
 
-For more information, see [`Validating receipts on the device`](https://developer.apple.com/documentation/AppStoreReceipts/validating-receipts-on-the-device).
+For more information, see [`Validating receipts on the device`](https://developer.apple.com/documentation/appstorereceipts/validating-receipts-on-the-device).
 
 ##### Test a Promotional Offer
 
@@ -123,9 +123,9 @@ Additional setup steps for this test scenario are:
 
 - Include two auto-renewable subscriptions that belong to the same subscription group in the StoreKit configuration file.
 - Subscribe the sandbox user to the subscription with the lowest level of service in that subscription group.
-- In the app, implement a Manage Subscriptions button that invokes the [`showManageSubscriptions(in:)`](appstore/showmanagesubscriptions(in:).md) or [`manageSubscriptionsSheet(isPresented:)`](https://developer.apple.com/documentation/SwiftUI/View/manageSubscriptionsSheet(isPresented:)) method.
+- In the app, implement a Manage Subscriptions button that invokes the [`showManageSubscriptions(in:)`](appstore/showmanagesubscriptions(in:).md) or [`manageSubscriptionsSheet(isPresented:)`](https://developer.apple.com/documentation/swiftui/view/managesubscriptionssheet(ispresented:)) method.
 
-See [`showManageSubscriptions(in:)`](appstore/showmanagesubscriptions(in:).md) and [`manageSubscriptionsSheet(isPresented:)`](https://developer.apple.com/documentation/SwiftUI/View/manageSubscriptionsSheet(isPresented:)) for more information.
+See [`showManageSubscriptions(in:)`](appstore/showmanagesubscriptions(in:).md) and [`manageSubscriptionsSheet(isPresented:)`](https://developer.apple.com/documentation/swiftui/view/managesubscriptionssheet(ispresented:)) for more information.
 
 1. In the app, tap the Manage Subscriptions button.
 2. Observe that the system displays the App Store sheet for managing subscriptions.
@@ -172,7 +172,7 @@ Additional setup steps for this scenario are:
 - Select your StoreKit configuration file in the Project navigator.
 - Create an auto-renewable subscription in-app purchase in your StoreKit configuration file.
 - Purchase the auto-renewable subscription in your app.
-- Adjust the time rate of subscription renewals in the testing environment by choosing Editor > Subscription Renewal Rate, and select an option. For more information about the time rates available in the testing environment, see [`timeRate`](https://developer.apple.com/documentation/StoreKitTest/SKTestSession/timeRate-swift.property).
+- Adjust the time rate of subscription renewals in the testing environment by choosing Editor > Subscription Renewal Rate, and select an option. For more information about the time rates available in the testing environment, see [`timeRate`](https://developer.apple.com/documentation/storekittest/sktestsession/timerate-swift.property).
 
 Test your app’s handling of a billing grace period:
 
@@ -227,13 +227,13 @@ Test for the price increase consent sheet presentation:
 3. Verify that the price increase consent sheet displays in your app.
 4. On the price increase consent sheet in the app, select the Agree to New Price button to test a user consenting to the price increase, or select Close to test the user not giving consent for the price increase.
 
-For information about testing price increase consent in an automated test suite, see [`requestPriceIncreaseConsentForTransaction(identifier:)`](https://developer.apple.com/documentation/StoreKitTest/SKTestSession/requestPriceIncreaseConsentForTransaction(identifier:)), [`consentToPriceIncreaseForTransaction(identifier:)`](https://developer.apple.com/documentation/StoreKitTest/SKTestSession/consentToPriceIncreaseForTransaction(identifier:)), and [`declinePriceIncreaseForTransaction(identifier:)`](https://developer.apple.com/documentation/StoreKitTest/SKTestSession/declinePriceIncreaseForTransaction(identifier:)).
+For information about testing price increase consent in an automated test suite, see [`requestPriceIncreaseConsentForTransaction(identifier:)`](https://developer.apple.com/documentation/storekittest/sktestsession/requestpriceincreaseconsentfortransaction(identifier:)), [`consentToPriceIncreaseForTransaction(identifier:)`](https://developer.apple.com/documentation/storekittest/sktestsession/consenttopriceincreasefortransaction(identifier:)), and [`declinePriceIncreaseForTransaction(identifier:)`](https://developer.apple.com/documentation/storekittest/sktestsession/declinepriceincreasefortransaction(identifier:)).
 
 ## See Also
 
 - [Testing at all stages of development with Xcode and the sandbox](testing-at-all-stages-of-development-with-xcode-and-the-sandbox.md)
   Verify your implementation of In-App Purchases by testing your code throughout its development.
-- [Setting up StoreKit Testing in Xcode](../Xcode/setting-up-storekit-testing-in-xcode.md)
+- [Setting up StoreKit Testing in Xcode](../xcode/setting-up-storekit-testing-in-xcode.md)
   Prepare your test environment to test in-app purchases with data you configure locally.
 - [Testing In-App Purchases with sandbox](testing-in-app-purchases-with-sandbox.md)
   Test your implementation of In-App Purchases using real product information and server-to-server transactions in the sandbox environment.

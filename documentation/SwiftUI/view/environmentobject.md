@@ -23,11 +23,11 @@ func environmentObject<T>(_ object: T) -> some View where T : ObservableObject
 
 #### Discussion
 
-Use this modifier to add an observable object to a view’s environment. The object must conform to the [`ObservableObject`](https://developer.apple.com/documentation/Combine/ObservableObject) protocol.
+Use this modifier to add an observable object to a view’s environment. The object must conform to the [`ObservableObject`](https://developer.apple.com/documentation/combine/observableobject) protocol.
 
 Adding an object to a view’s environment makes the object available to subviews in the view’s hierarchy. To retrieve the object in a subview, use the [`EnvironmentObject`](environmentobject.md) property wrapper.
 
-> **Note**: If the observable object conforms to the [`Observable`](https://developer.apple.com/documentation/Observation/Observable) protocol, use either [`environment(_:)`](view/environment(_:).md) or the [`environment(_:_:)`](view/environment(_:_:).md) modifier to add the object to the view’s environment.
+> **Note**: If the observable object conforms to the [`Observable`](https://developer.apple.com/documentation/observation/observable) protocol, use either [`environment(_:)`](view/environment(_:).md) or the [`environment(_:_:)`](view/environment(_:_:).md) modifier to add the object to the view’s environment.
 
 ## Parameters
 

@@ -45,8 +45,8 @@ Core Graphics uses function objects to implement shadings. [`CGShading`](cgshadi
 ## Relationships
 
 ### Conforms To
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
 
 ## See Also
 

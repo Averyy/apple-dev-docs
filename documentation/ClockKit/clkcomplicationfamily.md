@@ -55,15 +55,15 @@ enum CLKComplicationFamily
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../Swift/BitwiseCopyable.md)
-- [CaseIterable](../Swift/CaseIterable.md)
-- [Copyable](../Swift/Copyable.md)
-- [Equatable](../Swift/Equatable.md)
-- [Escapable](../Swift/Escapable.md)
-- [Hashable](../Swift/Hashable.md)
-- [RawRepresentable](../Swift/RawRepresentable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [BitwiseCopyable](../swift/bitwisecopyable.md)
+- [CaseIterable](../swift/caseiterable.md)
+- [Copyable](../swift/copyable.md)
+- [Equatable](../swift/equatable.md)
+- [Escapable](../swift/escapable.md)
+- [Hashable](../swift/hashable.md)
+- [RawRepresentable](../swift/rawrepresentable.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 
@@ -87,7 +87,7 @@ enum CLKComplicationFamily
   Display visually rich content on watch faces.
 - [class CLKComplicationTemplate](clkcomplicationtemplate.md)
   An abstract class that defines the base behavior for all templates.
-- [CLKComplicationSupportedFamilies](../BundleResources/Information-Property-List/CLKComplicationSupportedFamilies.md)
+- [CLKComplicationSupportedFamilies](../bundleresources/information-property-list/clkcomplicationsupportedfamilies.md)
   The complication families for which the app can provide data.
 
 

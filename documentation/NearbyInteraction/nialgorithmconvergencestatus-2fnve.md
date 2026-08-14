@@ -44,7 +44,7 @@ The framework may require user action before Camera Assistance is fully operatio
 ## Relationships
 
 ### Conforms To
-- [Equatable](../Swift/Equatable.md)
+- [Equatable](../swift/equatable.md)
 
 ## See Also
 

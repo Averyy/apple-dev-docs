@@ -16,7 +16,7 @@ let IKImageBrowserNSDataRepresentationType: String
 
 #### Discussion
 
-An  [`NSData`](https://developer.apple.com/documentation/Foundation/NSData)  object.
+An  [`NSData`](https://developer.apple.com/documentation/foundation/nsdata)  object.
 
 ## See Also
 

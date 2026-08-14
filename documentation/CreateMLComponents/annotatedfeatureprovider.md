@@ -72,10 +72,10 @@ let task = concatenation.appending(regression)
 ## Relationships
 
 ### Conforms To
-- [Copyable](../Swift/Copyable.md)
-- [Escapable](../Swift/Escapable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Copyable](../swift/copyable.md)
+- [Escapable](../swift/escapable.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 - [SupervisedTabularEstimator](supervisedtabularestimator.md)
 - [UpdatableSupervisedTabularEstimator](updatablesupervisedtabularestimator.md)
 

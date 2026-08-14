@@ -22,7 +22,7 @@ func subscriptionStoreButtonLabel(_ label: SubscriptionStoreButtonLabel) -> some
 
 #### Discussion
 
-The button label is not always respected in every context. For example, if you have a subscription store that shows multiple subscribe buttons, setting [`action`](https://developer.apple.com/documentation/StoreKit/SubscriptionStoreButtonLabel/action-swift.type.property) as the button label will fall back to each subscription’s display name.
+The button label is not always respected in every context. For example, if you have a subscription store that shows multiple subscribe buttons, setting [`action`](https://developer.apple.com/documentation/storekit/subscriptionstorebuttonlabel/action-swift.type.property) as the button label will fall back to each subscription’s display name.
 
 ## See Also
 

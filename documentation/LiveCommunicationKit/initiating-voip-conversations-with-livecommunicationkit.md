@@ -62,7 +62,7 @@ If starting a VoIP conversation fails, you may wish to have the conversation fal
 
 If your app supports being the default dialer app, use [`StartCellularConversationAction`](startcellularconversationaction.md) and [`TelephonyConversationManager`](telephonyconversationmanager.md). For more information, see [`Start a cellular network conversation`](preparing-your-app-to-be-the-default-dialer-app#Start-a-cellular-network-conversation.md).
 
-If your app doesn’t support being the default dialer app, use a `telephony://` URL scheme for your fallback. For more information, see [`Preparing your app to be the default calling app`](https://developer.apple.com/documentation/CallKit/Preparing-your-app-to-be-the-default-calling-app#Apply-the-fallback-URL-scheme-in-your-app).
+If your app doesn’t support being the default dialer app, use a `telephony://` URL scheme for your fallback. For more information, see [`Preparing your app to be the default calling app`](https://developer.apple.com/documentation/callkit/preparing-your-app-to-be-the-default-calling-app).
 
 ##### Review Default Calling App Functionality
 
@@ -74,7 +74,7 @@ When your app receives a conversation as the system’s default calling app, it 
 
 - [Preparing your app to be the default dialer app](preparing-your-app-to-be-the-default-dialer-app.md)
   Let people configure their device to set your app as the default dialer app.
-- [LiveCommunicationKit updates](../Updates/LiveCommunicationKit.md)
+- [LiveCommunicationKit updates](../updates/livecommunicationkit.md)
   Learn about important changes to LiveCommunicationKit.
 
 

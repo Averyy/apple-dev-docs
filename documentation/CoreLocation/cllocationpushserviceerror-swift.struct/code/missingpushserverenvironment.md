@@ -18,7 +18,7 @@ case missingPushServerEnvironment
 
 #### Discussion
 
-A Location Push Service Extension requires that your app has the APNs environment entitlement. For more information, see [`APS Environment Entitlement`](https://developer.apple.com/documentation/BundleResources/Entitlements/aps-environment).
+A Location Push Service Extension requires that your app has the APNs environment entitlement. For more information, see [`APS Environment Entitlement`](https://developer.apple.com/documentation/bundleresources/entitlements/aps-environment).
 
 ## See Also
 

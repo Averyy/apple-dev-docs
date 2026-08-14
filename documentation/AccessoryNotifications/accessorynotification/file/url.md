@@ -7,7 +7,6 @@ A URL that locates the file’s data.
 
 **Availability**:
 - iOS 26.5+
-- iPadOS 26.5+
 
 ## Declaration
 

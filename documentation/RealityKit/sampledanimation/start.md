@@ -23,7 +23,7 @@ var start: TimeInterval { get set }
 
 When calculating the visual beginning of a sampled animation, the framework first evaluates this property, and then applies the optional [`trimStart`](sampledanimation/trimstart.md), in seconds.
 
-The framework requires this property to contain an integer multiple of [`frameInterval`](sampledanimation/frameinterval.md). Note that the value of this property can be irrational because frame interval is of type [`TimeInterval`](https://developer.apple.com/documentation/Foundation/TimeInterval).
+The framework requires this property to contain an integer multiple of [`frameInterval`](sampledanimation/frameinterval.md). Note that the value of this property can be irrational because frame interval is of type [`TimeInterval`](https://developer.apple.com/documentation/foundation/timeinterval).
 
 ## See Also
 

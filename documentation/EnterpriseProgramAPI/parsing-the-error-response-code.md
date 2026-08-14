@@ -26,11 +26,11 @@ In many cases, the most general level of information provides all you need to kn
 
 You can analyze the parts of your request in order to trace the correlating error information. Requests consist of a method, path, and parameters or a request entity, as shown in the `GET` request annotated below.
 
-![An annotated GET request.](https://docs-assets.developer.apple.com/published/2202ca8fd35433677f793fc5d2e946f2/media-3040420%402x.png)
+![An annotated GET request.](/images/com.apple.devpubs.enterprise-api/media-3040420@2x.png)
 
 Likewise, the parts of a `POST` request are annotated below.
 
-![An annotated POST request.](https://docs-assets.developer.apple.com/published/1be9cf8b321a4afd2daddc907a772786/media-3074413%402x.png)
+![An annotated POST request.](/images/com.apple.devpubs.enterprise-api/media-3074413@2x.png)
 
 If there’s an error in a request, the response returns an HTTP status code in the 400 range. The `code` parameter of the [`ErrorResponse`](errorresponse.md) helps you identify which part of your request may contain an error: the method, path, parameter, or entity.
 

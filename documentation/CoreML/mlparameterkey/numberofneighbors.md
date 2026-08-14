@@ -22,7 +22,7 @@ class var numberOfNeighbors: MLParameterKey { get }
 
 #### Discussion
 
-The value type for the [`numberOfNeighbors`](mlparameterkey/numberofneighbors.md) key is an [`Int64`](https://developer.apple.com/documentation/Swift/Int64).
+The value type for the [`numberOfNeighbors`](mlparameterkey/numberofneighbors.md) key is an [`Int64`](https://developer.apple.com/documentation/swift/int64).
 
 ## See Also
 

@@ -22,19 +22,19 @@ Here you see how Happy Beam presents a fun interface to people by using several 
 
 **Welcome window**:
 
-![A screenshot showing the welcome screen window. It instructs people to cheer up grumpy clouds by shining a happy beam with your heart. There are two buttons: Play Solo and Play with Friends.](https://docs-assets.developer.apple.com/published/a4a95e6a952a19f93222788b422649e2/HB-welcome%402x.png)
+![A screenshot showing the welcome screen window. It instructs people to cheer up grumpy clouds by shining a happy beam with your heart. There are two buttons: Play Solo and Play with Friends.](/images/com.apple.visionOS/HB-welcome@2x.png)
 
 **Instructions**:
 
-![A screenshot showing the two input options in the game: Make a heart with two hands, or use a pinch gesture or a compatible device.](https://docs-assets.developer.apple.com/published/61d185d073ca3656c70068c897317b92/HB-instructions%402x.png)
+![A screenshot showing the two input options in the game: Make a heart with two hands, or use a pinch gesture or a compatible device.](/images/com.apple.visionOS/HB-instructions@2x.png)
 
 **Scoreboard**:
 
-![A screenshot showing the in-game scoreboard window with a backdrop of a living room populated by the game's grumpy clouds. The scoreboard shows the score, a back button, a mute button, a time left indicator, and a pause button.](https://docs-assets.developer.apple.com/published/79c888c096819fd9309e3427e1a5d05a/HB-scoreboard%402x.png)
+![A screenshot showing the in-game scoreboard window with a backdrop of a living room populated by the game's grumpy clouds. The scoreboard shows the score, a back button, a mute button, a time left indicator, and a pause button.](/images/com.apple.visionOS/HB-scoreboard@2x.png)
 
 **Ending window**:
 
-![A screenshot showing the final score window. It shows some happy clouds, how many clouds you cheered up, and has options for playing again and going back to the main menu.](https://docs-assets.developer.apple.com/published/658efc9a3068fd8f3e815d448db59ebc/HB-ending%402x.png)
+![A screenshot showing the final score window. It shows some happy clouds, how many clouds you cheered up, and has options for playing again and going back to the main menu.](/images/com.apple.visionOS/HB-ending@2x.png)
 
 The following shows you the primary view in the app that displays each phase of gameplay:
 

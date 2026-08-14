@@ -16,7 +16,7 @@ protocol NSViewToolTipOwner : NSObjectProtocol
 
 #### Overview
 
-Tool tips are hints displayed to the user when the mouse hovers over a view. Adopt this protocol in views for which you want to provide tool tips. If the view does not implement this protocol, the system uses the [`description`](https://developer.apple.com/documentation/ObjectiveC/NSObjectProtocol/description) method instead.
+Tool tips are hints displayed to the user when the mouse hovers over a view. Adopt this protocol in views for which you want to provide tool tips. If the view does not implement this protocol, the system uses the [`description`](https://developer.apple.com/documentation/objectivec/nsobjectprotocol/description) method instead.
 
 ## Topics
 
@@ -27,7 +27,7 @@ Tool tips are hints displayed to the user when the mouse hovers over a view. Ado
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 ### Conforming Types
 - [NSForm](nsform.md)
 - [NSMatrix](nsmatrix.md)

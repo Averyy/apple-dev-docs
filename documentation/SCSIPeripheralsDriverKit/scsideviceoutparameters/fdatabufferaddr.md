@@ -16,7 +16,7 @@ uint64_t fDataBufferAddr;
 
 #### Discussion
 
-The framework uses this address to create an [`IOMemoryDescriptor`](https://developer.apple.com/documentation/DriverKit/IOMemoryDescriptor) in the kernel that [`fRequestedByteCountOfTransfer`](scsideviceoutparameters/frequestedbytecountoftransfer.md) specifies and maps to the dext process.
+The framework uses this address to create an [`IOMemoryDescriptor`](https://developer.apple.com/documentation/driverkit/iomemorydescriptor) in the kernel that [`fRequestedByteCountOfTransfer`](scsideviceoutparameters/frequestedbytecountoftransfer.md) specifies and maps to the dext process.
 
 ## See Also
 

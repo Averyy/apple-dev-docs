@@ -34,7 +34,7 @@ protocol MTLTexture : MTLResource
 Don’t implement this protocol yourself; instead, use one of the following methods to create an [`MTLTexture`](mtltexture.md) instance:
 
 - Create an [`MTLTextureDescriptor`](mtltexturedescriptor.md) instance to describe the texture’s properties and then call the [`makeTexture(descriptor:)`](mtldevice/maketexture(descriptor:).md) method of the [`MTLDevice`](mtldevice.md) protocol to create the texture.
-- To create a texture that uses an existing [`IOSurface`](https://developer.apple.com/documentation/IOSurface/IOSurface) to hold the texture data, create an [`MTLTextureDescriptor`](mtltexturedescriptor.md) instance to describe the image data in the surface. Call the [`makeTexture(descriptor:iosurface:plane:)`](mtldevice/maketexture(descriptor:iosurface:plane:).md) method to create the texture.
+- To create a texture that uses an existing [`IOSurface`](https://developer.apple.com/documentation/iosurface/iosurface) to hold the texture data, create an [`MTLTextureDescriptor`](mtltexturedescriptor.md) instance to describe the image data in the surface. Call the [`makeTexture(descriptor:iosurface:plane:)`](mtldevice/maketexture(descriptor:iosurface:plane:).md) method to create the texture.
 - To create a texture that reinterprets another texture’s data as if it has a different format, call one of the following texture methods: - [`makeTextureView(pixelFormat:)`](mtltexture/maketextureview(pixelformat:).md)
 - [`makeTextureView(pixelFormat:textureType:levels:slices:)`](mtltexture/maketextureview(pixelformat:texturetype:levels:slices:).md) (Swift)
 - [`newTextureViewWithPixelFormat:textureType:levels:slices:`](mtltexture/newtextureviewwithpixelformat:texturetype:levels:slices:.md) (Objective-C) You need to choose a pixel format for the new texture compatible with the source texture’s pixel format. The new texture shares the same storage allocation as the source texture. If you make changes to the new texture, the source texture reflects those changes, and vice versa.
@@ -143,7 +143,7 @@ To copy pixel data back to system memory, call [`getBytes(_:bytesPerRow:bytesPer
 ### Inherits From
 - [MTLAllocation](mtlallocation.md)
 - [MTLResource](mtlresource.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 
@@ -154,7 +154,7 @@ To copy pixel data back to system memory, call [`getBytes(_:bytesPerRow:bytesPer
 - [enum MTLTextureCompressionType](mtltexturecompressiontype.md)
 - [class MTLTextureDescriptor](mtltexturedescriptor.md)
   An instance that you use to configure new Metal texture instances.
-- [class MTKTextureLoader](../MetalKit/MTKTextureLoader.md)
+- [class MTKTextureLoader](../metalkit/mtktextureloader.md)
   An object that creates textures from existing data in common image formats.
 - [class MTLSharedTextureHandle](mtlsharedtexturehandle.md)
   A texture handle that can be shared across process address space boundaries.

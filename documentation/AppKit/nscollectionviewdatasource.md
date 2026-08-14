@@ -30,7 +30,7 @@ Data in a collection view is organized into one or more *sections*, and each sec
 
 The data structures you use for your sections and items are separate from the views and view controllers that you use to present them. Sections have no default visual representation, but layouts may support section-specific supplementary views. For example, the flow layout supports header and footer views for each section. Items are presented using instances of the [`NSCollectionViewItem`](nscollectionviewitem.md) class, which your data source is responsible for configuring in its [`collectionView(_:itemForRepresentedObjectAt:)`](nscollectionviewdatasource/collectionview(_:itemforrepresentedobjectat:).md) method.
 
-When organizing your data, create data structures that map efficiently to the section and item model. One simple way to organize your data is to use an [`NSMutableArray`](https://developer.apple.com/documentation/Foundation/NSMutableArray) object to store the items for each section. Whatever data structures you choose, make sure that they can return the needed information quickly. For example, you need to return the total number of sections and the number of items in each section. You also need to be able to fetch items based on section and item indexes quickly.
+When organizing your data, create data structures that map efficiently to the section and item model. One simple way to organize your data is to use an [`NSMutableArray`](https://developer.apple.com/documentation/foundation/nsmutablearray) object to store the items for each section. Whatever data structures you choose, make sure that they can return the needed information quickly. For example, you need to return the total number of sections and the number of items in each section. You also need to be able to fetch items based on section and item indexes quickly.
 
 ##### Configuring Items and Supplementary Views
 
@@ -99,7 +99,7 @@ After returning an item object from your [`collectionView(_:itemForRepresentedOb
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 ### Conforming Types
 - [NSCollectionViewDiffableDataSource](nscollectionviewdiffabledatasource-axww.md)
 - [NSCollectionViewDiffableDataSourceReference](nscollectionviewdiffabledatasourcereference.md)

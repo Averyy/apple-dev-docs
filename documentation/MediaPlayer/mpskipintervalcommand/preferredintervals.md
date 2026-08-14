@@ -22,7 +22,7 @@ var preferredIntervals: [NSNumber] { get set }
 
 #### Discussion
 
-The `preferredIntervals` property holds an array of [`TimeInterval`](https://developer.apple.com/documentation/Foundation/TimeInterval) objects that designate different skip intervals for a media item. The skip intervals are defined in seconds.
+The `preferredIntervals` property holds an array of [`TimeInterval`](https://developer.apple.com/documentation/foundation/timeinterval) objects that designate different skip intervals for a media item. The skip intervals are defined in seconds.
 
 
 ---

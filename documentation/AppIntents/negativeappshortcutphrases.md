@@ -35,9 +35,9 @@ struct NegativeAppShortcutPhrases
   Dynamic values you can include in the spoken phrases that run your shortcut.
 - [struct NegativeAppShortcutPhrase](negativeappshortcutphrase.md)
   An object that represents a negative phrase.
-- [NSAppIconActionTintColorName](../BundleResources/Information-Property-List/CFBundleIcons/CFBundlePrimaryIcon/NSAppIconActionTintColorName.md)
+- [NSAppIconActionTintColorName](../bundleresources/information-property-list/cfbundleicons/cfbundleprimaryicon/nsappiconactiontintcolorname.md)
   The tint color to apply to text and symbols in the App Shortcuts platter.
-- [NSAppIconComplementingColorNames](../BundleResources/Information-Property-List/CFBundleIcons/CFBundlePrimaryIcon/NSAppIconComplementingColorNames.md)
+- [NSAppIconComplementingColorNames](../bundleresources/information-property-list/cfbundleicons/cfbundleprimaryicon/nsappiconcomplementingcolornames.md)
   The names of the colors to use for the background of the App Shortcuts platter.
 - [enum AppShortcutsBuilder](appshortcutsbuilder.md)
   A result builder that allows you to declaratively describe the App Shortcuts that your app provides.

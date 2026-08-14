@@ -15,7 +15,7 @@ The name of the principal view controller class of your extension.
 
 #### Discussion
 
-This key provides the name of the primary view controller class of your extension that adopts the [`NSViewController`](https://developer.apple.com/documentation/AppKit/NSViewController) protocol. When you create an extension, the Xcode template automatically includes this key in the workflow extension information property list. You only modify the value of this key when you rename the primary view controller class in your extension.
+This key provides the name of the primary view controller class of your extension that adopts the [`NSViewController`](https://developer.apple.com/documentation/appkit/nsviewcontroller) protocol. When you create an extension, the Xcode template automatically includes this key in the workflow extension information property list. You only modify the value of this key when you rename the primary view controller class in your extension.
 
 ## See Also
 

@@ -21,7 +21,7 @@ A result code. See [`Result Codes`](core_printing#1670007.md).
 ## Parameters
 
 - `printSettings`: The print settings for the current print job.
-- `name`: A pointer to your   variable. On return, the variable refers to a Core Foundation string containing the name of the print job. This is the same job name you set using the function  . You should not release the string without first retaining it.
+- `name`: A pointer to your [`CFString`](https://developer.apple.com/documentation/corefoundation/cfstring) variable. On return, the variable refers to a Core Foundation string containing the name of the print job. This is the same job name you set using the function [`PMPrintSettingsSetJobName(_:_:)`](1460149-pmprintsettingssetjobname.md). You should not release the string without first retaining it.
 
 ## See Also
 

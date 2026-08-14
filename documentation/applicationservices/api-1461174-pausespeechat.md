@@ -33,7 +33,7 @@ If you plan to continue speech synthesis from a paused speechchannel, the text b
 ## Parameters
 
 - `chan`: The speech channel on which speech is to be paused.
-- `whereToPause`: A constant indicating when speech processing should be paused. Pass the constant   to pause immediately, even in the middle of a word. Pass   or   to pause speech at the end of the current word or sentence, respectively. 
+- `whereToPause`: A constant indicating when speech processing should be paused. Pass the constant `kImmediate` to pause immediately, even in the middle of a word. Pass `kEndOfWord` or `kEndOfSentence` to pause speech at the end of the current word or sentence, respectively. 
 
 ## See Also
 

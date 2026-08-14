@@ -30,9 +30,9 @@ This method applies the stretch crop filter to an image. This effect distorts an
 The stretch crop filter uses the following properties:
 
 - **`inputImage`**: An image with the type [`CIImage`](ciimage.md).
-- **`centerStretchAmount`**: A `float` representing the amount of stretching of the center of the image as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
-- **`size`**: A [`CGPoint`](https://developer.apple.com/documentation/CoreFoundation/CGPoint) representing the desired size of the output image.
-- **`cropAmount`**: A `float` representing the amount of cropping you apply to achieve the target size as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+- **`centerStretchAmount`**: A `float` representing the amount of stretching of the center of the image as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
+- **`size`**: A [`CGPoint`](https://developer.apple.com/documentation/corefoundation/cgpoint) representing the desired size of the output image.
+- **`cropAmount`**: A `float` representing the amount of cropping you apply to achieve the target size as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
 
 The following code creates a filter that results in a smaller image that’s distorted and cropped to be the defined size:
 
@@ -50,7 +50,7 @@ func stretchCrop(inputImage: CIImage) -> CIImage {
 }
 ```
 
-![Two images arranged horizontally. The left image contains a photograph of the Golden Gate Bridge with a clear sky in the background. The right image shows the result of applying the stretch crop filter. The image has been stretched in the horizontal direction and cropped in the vertical direction.](https://docs-assets.developer.apple.com/published/d1cdd05627cf1cd561d3619ee73dd213/media-4407279%402x.png)
+![Two images arranged horizontally. The left image contains a photograph of the Golden Gate Bridge with a clear sky in the background. The right image shows the result of applying the stretch crop filter. The image has been stretched in the horizontal direction and cropped in the vertical direction.](/images/com.apple.coreimage/media-4407279@2x.png)
 
 ## See Also
 

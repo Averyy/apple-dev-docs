@@ -68,7 +68,7 @@ Whenever the user taps the `PlayButton`, the `PlayerView` updates its `isPlaying
 
 A binding conforms to `Sendable` only if its wrapped value type also conforms to `Sendable`. It is always safe to pass a sendable binding between different concurrency domains. However, reading from or writing to a binding’s wrapped value from a different concurrency domain may or may not be safe, depending on how the binding was created. SwiftUI will issue a warning at runtime if it detects a binding being used in a way that may compromise data safety.
 
-> **Note**: To create bindings to properties of a type that conforms to the [`Observable`](https://developer.apple.com/documentation/Observation/Observable) protocol, use the [`Bindable`](bindable.md) property wrapper. For more information, see [`Migrating from the Observable Object protocol to the Observable macro`](migrating-from-the-observable-object-protocol-to-the-observable-macro.md).
+> **Note**: To create bindings to properties of a type that conforms to the [`Observable`](https://developer.apple.com/documentation/observation/observable) protocol, use the [`Bindable`](bindable.md) property wrapper. For more information, see [`Migrating from the Observable Object protocol to the Observable macro`](migrating-from-the-observable-object-protocol-to-the-observable-macro.md).
 
 ## Topics
 
@@ -105,16 +105,16 @@ A binding conforms to `Sendable` only if its wrapped value type also conforms to
 ## Relationships
 
 ### Conforms To
-- [BidirectionalCollection](../Swift/BidirectionalCollection.md)
-- [Collection](../Swift/Collection.md)
-- [Copyable](../Swift/Copyable.md)
+- [BidirectionalCollection](../swift/bidirectionalcollection.md)
+- [Collection](../swift/collection.md)
+- [Copyable](../swift/copyable.md)
 - [DynamicProperty](dynamicproperty.md)
-- [Escapable](../Swift/Escapable.md)
-- [Identifiable](../Swift/Identifiable.md)
-- [RandomAccessCollection](../Swift/RandomAccessCollection.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
-- [Sequence](../Swift/Sequence.md)
+- [Escapable](../swift/escapable.md)
+- [Identifiable](../swift/identifiable.md)
+- [RandomAccessCollection](../swift/randomaccesscollection.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sequence](../swift/sequence.md)
 
 ## See Also
 

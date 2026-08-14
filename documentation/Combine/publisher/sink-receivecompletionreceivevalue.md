@@ -32,7 +32,7 @@ A cancellable instance, which you use when you end assignment of the received va
 
 Use [`sink(receiveCompletion:receiveValue:)`](publisher/sink(receivecompletion:receivevalue:).md) to observe values received by the publisher and process them using a closure you specify.
 
-In this example, a [`Range`](https://developer.apple.com/documentation/Swift/Range) publisher publishes integers to a [`sink(receiveCompletion:receiveValue:)`](publisher/sink(receivecompletion:receivevalue:).md) operator’s `receiveValue` closure that prints them to the console. Upon completion the [`sink(receiveCompletion:receiveValue:)`](publisher/sink(receivecompletion:receivevalue:).md) operator’s `receiveCompletion` closure indicates the successful termination of the stream.
+In this example, a [`Range`](https://developer.apple.com/documentation/swift/range) publisher publishes integers to a [`sink(receiveCompletion:receiveValue:)`](publisher/sink(receivecompletion:receivevalue:).md) operator’s `receiveValue` closure that prints them to the console. Upon completion the [`sink(receiveCompletion:receiveValue:)`](publisher/sink(receivecompletion:receivevalue:).md) operator’s `receiveCompletion` closure indicates the successful termination of the stream.
 
 ```swift
 let myRange = (0...3)

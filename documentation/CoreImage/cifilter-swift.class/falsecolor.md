@@ -45,7 +45,7 @@ func falseColor(inputImage: CIImage) -> CIImage {
 }
 ```
 
-![Two pictures of a pink flower surrounded by foliage. The photo on the left shows a single flower photographed close-up, in focus, with good light and no effects. In the photo on the right, a false color filter is applied, transforming the colors in the image to be blue and yellow.](https://docs-assets.developer.apple.com/published/3d502ac3cc276b31092ecf8e6efcc6fe/media-3545024%402x.png)
+![Two pictures of a pink flower surrounded by foliage. The photo on the left shows a single flower photographed close-up, in focus, with good light and no effects. In the photo on the right, a false color filter is applied, transforming the colors in the image to be blue and yellow.](/images/com.apple.coreimage/media-3545024@2x.png)
 
 ## See Also
 

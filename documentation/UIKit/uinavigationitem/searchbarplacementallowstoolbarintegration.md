@@ -18,7 +18,7 @@ var searchBarPlacementAllowsToolbarIntegration: Bool { get set }
 
 #### Overview
 
-Defaults to [`true`](https://developer.apple.com/documentation/Swift/true). Set to [`false`](https://developer.apple.com/documentation/Swift/false) to prevent the system from placing the search bar among other [`UIToolbar`](uitoolbar.md) items on iPhone.
+Defaults to [`true`](https://developer.apple.com/documentation/swift/true). Set to [`false`](https://developer.apple.com/documentation/swift/false) to prevent the system from placing the search bar among other [`UIToolbar`](uitoolbar.md) items on iPhone.
 
 ## See Also
 

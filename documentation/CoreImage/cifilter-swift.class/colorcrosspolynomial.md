@@ -52,7 +52,7 @@ The following code creates a filter that adds a green hue to the input image:
     }
 ```
 
-![Two pictures of a pink flower surrounded by foliage. The photo on the left shows a single flower photographed closeup, in focus, with good light and no effects. In the photo on the right, a color cross polynomial filter is applied, and the colors in the image have a green hue.](https://docs-assets.developer.apple.com/published/97c4618f009748914c3d6813cd800bf7/media-3545029%402x.png)
+![Two pictures of a pink flower surrounded by foliage. The photo on the left shows a single flower photographed closeup, in focus, with good light and no effects. In the photo on the right, a color cross polynomial filter is applied, and the colors in the image have a green hue.](/images/com.apple.coreimage/media-3545029@2x.png)
 
 ## See Also
 

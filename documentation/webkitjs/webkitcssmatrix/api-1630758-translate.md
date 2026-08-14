@@ -31,7 +31,7 @@ This matrix is not modified by this method.
 
 - `x`: The x component in the vector.
 - `y`: The y component in the vector.
-- `z`: The z component in the vector. If undefined,   is used.
+- `z`: The z component in the vector. If undefined, `0` is used.
 
 ## See Also
 

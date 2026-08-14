@@ -14,9 +14,9 @@ Apps on an alternative marketplace aren’t required to use MarketplaceKit, but 
 
 #### Add the Required Target Property
 
-If your app offers the purchase of digital goods or services, add the [`MKSellsDigitalGoods`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/MKSellsDigitalGoods) property to your app’s target configuration in Xcode with a value of `YES`. Also, report each offered purchase to Apple using the [`TransactionReporting`](transactionreporting.md) API. For more information, see [`Reporting transactions for the Core Technology Commission`](reporting-transactions-for-core-technology-commission.md).
+If your app offers the purchase of digital goods or services, add the [`MKSellsDigitalGoods`](https://developer.apple.com/documentation/bundleresources/information-property-list/mksellsdigitalgoods) property to your app’s target configuration in Xcode with a value of `YES`. Also, report each offered purchase to Apple using the [`TransactionReporting`](transactionreporting.md) API. For more information, see [`Reporting transactions for the Core Technology Commission`](reporting-transactions-for-core-technology-commission.md).
 
-If your app doesn’t sell digital goods or services, you still need to add the [`MKSellsDigitalGoods`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/MKSellsDigitalGoods) property to your app’s target configuration with a value of `NO`.
+If your app doesn’t sell digital goods or services, you still need to add the [`MKSellsDigitalGoods`](https://developer.apple.com/documentation/bundleresources/information-property-list/mksellsdigitalgoods) property to your app’s target configuration with a value of `NO`.
 
 #### Customize Your App Depending on the Installation Source
 
@@ -32,10 +32,10 @@ If your app installs from more than one source, you can implement conditional co
 
 In apps that people install from alternative marketplaces, use APIs that vary from apps on the App Store. Specifically, use:
 
-- [`AdAttributionKit`](https://developer.apple.com/documentation/AdAttributionKit) for ads
-- A custom e-commerce solution; API that rely on Apple’s App Store, such as [`In-App Purchase`](https://developer.apple.com/documentation/StoreKit/in-app-purchase) and [`On Demand Resources`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/FileManagement/Conceptual/On_Demand_Resources_Guide/), don’t support alternative app marketplaces.
-- [`Background Assets`](https://developer.apple.com/documentation/BackgroundAssets) to download large files in the background
-- A social gaming network other than [`Game Center`](https://developer.apple.com/documentation/AppStoreConnectAPI/game-center) unless your app is also on the App Store
+- [`AdAttributionKit`](https://developer.apple.com/documentation/adattributionkit) for ads
+- A custom e-commerce solution; API that rely on Apple’s App Store, such as [`In-App Purchase`](https://developer.apple.com/documentation/storekit/in-app-purchase) and [`On Demand Resources`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/FileManagement/Conceptual/On_Demand_Resources_Guide/), don’t support alternative app marketplaces.
+- [`Background Assets`](https://developer.apple.com/documentation/backgroundassets) to download large files in the background
+- A social gaming network other than [`Game Center`](https://developer.apple.com/documentation/appstoreconnectapi/game-center) unless your app is also on the App Store
 
 API availability varies depending on the source, so your app needs to check the current source at each launch — not just at the first launch — and adjust the APIs it uses accordingly.
 
@@ -103,19 +103,19 @@ Your app can install from an alternative marketplace app only after passing [`No
 
 Set your target’s Alternative Distribution - Marketplaces build setting to a list of marketplace bundle IDs for the alternative marketplaces from which your app can install.
 
-![A screenshot of Xcode with the project, AltDistTesting, selected in the project navigation sidebar, and the build settings tab open. Under targets, AltDistTesting is selected, under Deployment the setting Alternative Distribution - Marketplaces is set to com.megabytemart.megabytemart.](https://docs-assets.developer.apple.com/published/715e17e0c190e7540475997a1000d417/distributing-your-app-on-an-alternative-marketplace-2%402x.png)
+![A screenshot of Xcode with the project, AltDistTesting, selected in the project navigation sidebar, and the build settings tab open. Under targets, AltDistTesting is selected, under Deployment the setting Alternative Distribution - Marketplaces is set to com.megabytemart.megabytemart.](/images/com.apple.MarketplaceKit/distributing-your-app-on-an-alternative-marketplace-2@2x.png)
 
 > **Note**: The build setting by name is `MARKETPLACES`. Open your Xcode project in Xcode 15.3 or later and add the build setting manually if one by that title isn’t present.
 
 This build setting overrides the [`current`](appdistributor/current.md) property for development builds, which enables you to test any custom code branching your app might do, such as displaying a different image or offering different menu items.
 
-![A screenshot of Xcode Scheme settings window with Run selected in the sidebar and the options tab open. The Distribution pop-up menu shows the com.megabytemart.megabytemart option selected.](https://docs-assets.developer.apple.com/published/70e79d5d902f0366fe7fd4361d78a65f/distributing-your-app-on-an-alternative-marketplace-3%402x.png)
+![A screenshot of Xcode Scheme settings window with Run selected in the sidebar and the options tab open. The Distribution pop-up menu shows the com.megabytemart.megabytemart option selected.](/images/com.apple.MarketplaceKit/distributing-your-app-on-an-alternative-marketplace-3@2x.png)
 
 In your scheme’s Run task Options tab, Distribution selection menu, choose that marketplace’s bundle ID to simulate installation from that marketplace for runs on device through Xcode.
 
 Similarly, to override the [`current`](appdistributor/current.md) distributor in a test plan, choose a marketplace bundle ID in the Distribution selection menu of your test plan’s configuration.
 
-![A screenshot of Xcode with TestPlan selected in the project navigation sidebar and the Configurations tab open. The Distribution pop-up menu has com.megabytemart.megabytemart selected.](https://docs-assets.developer.apple.com/published/209510fc162d3ec1d862ab011027f876/distributing-your-app-on-an-alternative-marketplace-4%402x.png)
+![A screenshot of Xcode with TestPlan selected in the project navigation sidebar and the Configurations tab open. The Distribution pop-up menu has com.megabytemart.megabytemart selected.](/images/com.apple.MarketplaceKit/distributing-your-app-on-an-alternative-marketplace-4@2x.png)
 
 ## See Also
 

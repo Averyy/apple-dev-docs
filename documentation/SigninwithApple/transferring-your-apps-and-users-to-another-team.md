@@ -43,7 +43,7 @@ The HTTP POST method includes these parameters:
 - **`grant_type`**: The type of grant requested. Set to `client_credentials`. Access the migration endpoint using your client application’s credentials.
 - **`scope`**: The scope of the migration. Set to `user.migration`.
 - **`client_id`**: The identifier (App ID or Services ID) for the transferring app. The identifier must not include your Team ID, to help mitigate the possibility of exposing sensitive data to the end user.
-- **`client_secret`**: The client secret of the transferring team, represented as a JSON Web Token (JWT). The JWT payload should contain a `sub` claim that matches the transferring app’s bundle ID or associated Services ID. For more information on generating a client secret, see [`Creating a client secret`](https://developer.apple.com/documentation/AccountOrganizationalDataSharing/creating-a-client-secret).
+- **`client_secret`**: The client secret of the transferring team, represented as a JSON Web Token (JWT). The JWT payload should contain a `sub` claim that matches the transferring app’s bundle ID or associated Services ID. For more information on generating a client secret, see [`Creating a client secret`](https://developer.apple.com/documentation/accountorganizationaldatasharing/creating-a-client-secret).
 
 Expect an HTTP POST response similar to the following example.
 
@@ -80,7 +80,7 @@ The HTTP POST method includes these parameters:
 - **`sub`**: The team-scoped user identifier that Apple provides.
 - **`target`**: The Team ID of the recipient team to which you transfer the application.
 - **`client_id`**: The identifier (App ID or Services ID) for the transferring app. The identifier must not include your Team ID, to help mitigate the possibility of exposing sensitive data to the end user.
-- **`client_secret`**: The client secret of the transferring team, represented as a JSON Web Token (JWT). The JWT payload should contain a `sub` claim that matches the transferring app’s bundle ID or associated Services ID. For more information on generating a client secret, see [`Creating a client secret`](https://developer.apple.com/documentation/AccountOrganizationalDataSharing/creating-a-client-secret).
+- **`client_secret`**: The client secret of the transferring team, represented as a JSON Web Token (JWT). The JWT payload should contain a `sub` claim that matches the transferring app’s bundle ID or associated Services ID. For more information on generating a client secret, see [`Creating a client secret`](https://developer.apple.com/documentation/accountorganizationaldatasharing/creating-a-client-secret).
 
 Expect an HTTP POST response similar to the following example.
 

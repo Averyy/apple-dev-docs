@@ -18,7 +18,7 @@ To debug accessory widgets that appear on the iPhone Lock Screen or as complicat
 
 To configure a specific widget configuration, use the Arguments pane of the widget extension’s scheme, shown here, to set environment variables as described below.
 
-![Screenshot showing Xcode’s Arguments pane with environment variables.](https://docs-assets.developer.apple.com/published/009696971209e242dab9585ee95436dd/Debugging-Environment-Variables%402x.png)
+![Screenshot showing Xcode’s Arguments pane with environment variables.](/images/com.apple.WidgetKit/Debugging-Environment-Variables@2x.png)
 
 Additionally, use Xcode previews for iOS widgets as described in [`Previewing widgets and Live Activities in Xcode`](previewing-widgets-and-live-activities-in-xcode.md).
 
@@ -26,11 +26,11 @@ Additionally, use Xcode previews for iOS widgets as described in [`Previewing wi
 
 To debug a specific family of your widget that’s not an accessory widget, edit the scheme for your widget extension target and set the `_XCWidgetFamily` environment variable to `small`, `medium`, `large`, or `extralarge`.
 
-If your widget extension supports multiple widgets using [`WidgetBundle`](https://developer.apple.com/documentation/SwiftUI/WidgetBundle), select the specific widget to debug by setting `_XCWidgetKind` to a string that matches the `kind` property of the widget’s configuration.
+If your widget extension supports multiple widgets using [`WidgetBundle`](https://developer.apple.com/documentation/swiftui/widgetbundle), select the specific widget to debug by setting `_XCWidgetKind` to a string that matches the `kind` property of the widget’s configuration.
 
 #### Debug Watch Complications
 
-Debugging a watch complication you create with WidgetKit works the same as debugging a complication you create with ClockKit. To learn more about testing complications, see [`Creating complications for your watchOS app`](https://developer.apple.com/documentation/ClockKit/creating-complications-for-your-watchos-app).
+Debugging a watch complication you create with WidgetKit works the same as debugging a complication you create with ClockKit. To learn more about testing complications, see [`Creating complications for your watchOS app`](https://developer.apple.com/documentation/clockkit/creating-complications-for-your-watchos-app).
 
 #### Debug Mac Widgets
 

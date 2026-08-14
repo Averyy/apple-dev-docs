@@ -29,7 +29,7 @@ To look up the names of system symbol images, download the SF Symbols app from [
 
 ## See Also
 
-- [Configuring and displaying symbol images in your UI](../UIKit/configuring-and-displaying-symbol-images-in-your-ui.md)
+- [Configuring and displaying symbol images in your UI](../uikit/configuring-and-displaying-symbol-images-in-your-ui.md)
   Create scalable images that integrate with your app’s text, and adjust the appearance of those images dynamically.
 - [init?(named: NSImage.Name)](nsimage/init(named:).md)
   Returns the image object associated with the specified name.

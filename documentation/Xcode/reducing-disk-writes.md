@@ -18,9 +18,9 @@ Optimize your app’s performance by reducing the number of write operations to 
 
 ##### Eliminate Excessive Write Operations
 
-The system throws an exception and generates a report when the disk writes from your app exceed a certain threshold in a 24-hour period. View the aggregated exception logs for a version of your app in the Disk Writes pane in Xcode Organizer or capture them with [`MetricKit`](https://developer.apple.com/documentation/MetricKit).
+The system throws an exception and generates a report when the disk writes from your app exceed a certain threshold in a 24-hour period. View the aggregated exception logs for a version of your app in the Disk Writes pane in Xcode Organizer or capture them with [`MetricKit`](https://developer.apple.com/documentation/metrickit).
 
-![A screenshot of the Disk Write reports pane in the Xcode Organizer. From left to](https://docs-assets.developer.apple.com/published/9e091d4ab0bd51a2107f98b9c2dd6394/reducing-disk-writes-4%402x.png)
+![A screenshot of the Disk Write reports pane in the Xcode Organizer. From left to](/images/com.apple.Xcode/reducing-disk-writes-4@2x.png)
 
 Each report in the Report List shows the function call that generated the exception and the percentage of total disk writes it accounted for. Clicking on a report shows a sample stack trace, as well as additional details in the Inspector, including:
 
@@ -38,13 +38,13 @@ After selecting a disk write report, click Generate Recommendations in the Inspe
 
 ##### Gather Metrics About Your Apps Disk Usage
 
-View the daily amount of data your app writes to the disk in the Disk Writes metrics pane of the Xcode Organizer window or by using [`MetricKit`](https://developer.apple.com/documentation/MetricKit).
+View the daily amount of data your app writes to the disk in the Disk Writes metrics pane of the Xcode Organizer window or by using [`MetricKit`](https://developer.apple.com/documentation/metrickit).
 
 The pane displays the logical disk writes in megabytes per day for the shipping versions of your app. Compare versions to find unexpected increases. Filter to find differences between devices and to view the typical amount of data written (50th percentile) or the largest amount (90th percentile). MetricKit reports the same data.
 
 The screenshot below shows that the largest amount of data written by the latest version of the Fruta app is 26.7 MB less per day than an earlier version.
 
-![A screenshot of the Disk Writes metric pane in the Xcode Organizer. From left to right is](https://docs-assets.developer.apple.com/published/3d3231c5df6b559e36dd29963ee06ca7/reducing-disk-writes-2%402x.png)
+![A screenshot of the Disk Writes metric pane in the Xcode Organizer. From left to right is](/images/com.apple.Xcode/reducing-disk-writes-2@2x.png)
 
 Assess whether the amount of data recorded seems reasonable for your app. If the numbers are greater than what you expect, you may be writing data too frequently. For example, if your app’s files total 100 KB and your app writes 500 MB of data to disk every day, you might want to investigate how many times you’re writing the same data to disk each day.
 
@@ -54,7 +54,7 @@ Use the graph of disk-write frequency by versions to identify trends in disk usa
 
 Profile your app in Instruments, using the File Activity template. Instruments tracks the logical and physical use of storage by your app.
 
-![Illustration showing the logical and physical disk usage timelines in](https://docs-assets.developer.apple.com/published/b819a954ec07ed55ea5d4440b31f1ed2/reducing-disk-writes-3.png)
+![Illustration showing the logical and physical disk usage timelines in](/images/com.apple.Xcode/reducing-disk-writes-3.png)
 
 The Filesystem Activity instrument records logical filesystem use in the form of system calls to read or write data, or to map filesystem data into memory. Instruments associates each event with its size, duration, and a backtrace you can use to identify the code that’s using the filesystem. The Disk Usage and Disk I/O Latency instruments report the physical use of the storage medium resulting from the filesystem events by showing the size and latency of reads and writes.
 
@@ -70,7 +70,7 @@ Repeatedly opening, saving, and then closing the same file can increase the freq
 
 Many apps use property list, JSON, XML, or other serialized formats for writing user documents. These formats are good for read-only content, such as bundle metadata, or to transfer data over the network. The formats aren’t optimal to store user documents that frequently change. Changing a serialized document requires rewriting the entire file, which increases the latency of the operation and the wear on the device.
 
-When possible, use [`SwiftData`](https://developer.apple.com/documentation/SwiftData), [`Core Data`](https://developer.apple.com/documentation/CoreData), or SQLite for storing frequently edited documents. If that isn’t possible, use different serialized files for data that changes frequently and data that’s mostly static. This can reduce the amount of disk writes and improve latency.
+When possible, use [`SwiftData`](https://developer.apple.com/documentation/swiftdata), [`Core Data`](https://developer.apple.com/documentation/coredata), or SQLite for storing frequently edited documents. If that isn’t possible, use different serialized files for data that changes frequently and data that’s mostly static. This can reduce the amount of disk writes and improve latency.
 
 The Disk Writes Report pane offers suggestions for optimizing the use of serialized files.
 
@@ -78,7 +78,7 @@ The Disk Writes Report pane offers suggestions for optimizing the use of seriali
 
 When you create or delete a file on iOS, the system updates the directory reference by writing 8 KB of metadata. Rapidly creating or deleting lots of files results in many small writes to the filesystem, degrading performance and increasing wear on the device. Renaming or moving a file on iOS adds up to 16 KB in filesystem metadata writes.
 
-Creating a file atomically adds additional writes because the system must create a temporary file, write the content, unlink an existing destination file, then rename the temporary file to the final destination. Common use cases include the atomic write calls for Foundation objects, such as [`NSString`](https://developer.apple.com/documentation/Foundation/NSString), [`NSArray`](https://developer.apple.com/documentation/Foundation/NSArray), [`NSDictionary`](https://developer.apple.com/documentation/Foundation/NSDictionary), and [`NSData`](https://developer.apple.com/documentation/Foundation/NSData).
+Creating a file atomically adds additional writes because the system must create a temporary file, write the content, unlink an existing destination file, then rename the temporary file to the final destination. Common use cases include the atomic write calls for Foundation objects, such as [`NSString`](https://developer.apple.com/documentation/foundation/nsstring), [`NSArray`](https://developer.apple.com/documentation/foundation/nsarray), [`NSDictionary`](https://developer.apple.com/documentation/foundation/nsdictionary), and [`NSData`](https://developer.apple.com/documentation/foundation/nsdata).
 
 Use atomic writes only when needed.
 
@@ -92,7 +92,7 @@ Only use `F_FULLFSYNC` when your app requires a strong expectation of data persi
 
 ##### Prevent Regressions in Disk Write Frequency
 
-Measure the disk usage of your app by writing an XCTest performance test. Create a test that passes an instance of [`XCTStorageMetric`](https://developer.apple.com/documentation/XCTest/XCTStorageMetric) to the [`measure(metrics:block:)`](https://developer.apple.com/documentation/XCTest/XCTestCase/measure(metrics:block:)) function. Call your code inside the block argument of `measure(metrics:block:)`, the method that writes data to disk.
+Measure the disk usage of your app by writing an XCTest performance test. Create a test that passes an instance of [`XCTStorageMetric`](https://developer.apple.com/documentation/xctest/xctstoragemetric) to the [`measure(metrics:block:)`](https://developer.apple.com/documentation/xctest/xctestcase/measure(metrics:block:)) function. Call your code inside the block argument of `measure(metrics:block:)`, the method that writes data to disk.
 
 The test measures the number of blocks written to the filesystem to save your data. Set a baseline expectation for the amount of disk use. The test fails if the amount of data written significantly exceeds the baseline.
 
@@ -108,7 +108,7 @@ func testDiskUse() {
 
 SQLite is highly optimized for efficient access to storage. It uses in-memory caches and batched disk-writes to ensure high performance and minimal wear on storage. The data structures are designed to allow efficient updates when inserting new content or updating existing content.
 
-[`SwiftData`](https://developer.apple.com/documentation/SwiftData) and [`Core Data`](https://developer.apple.com/documentation/CoreData) both take advantage of SQLite’s efficient disk usage for storing your data. They also use the SQLite best practices described below.
+[`SwiftData`](https://developer.apple.com/documentation/swiftdata) and [`Core Data`](https://developer.apple.com/documentation/coredata) both take advantage of SQLite’s efficient disk usage for storing your data. They also use the SQLite best practices described below.
 
 ###### Avoid Unnecessarily Closing Sqlite Connections
 

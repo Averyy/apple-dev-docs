@@ -53,7 +53,7 @@ For more information about steps above, please see [`Transferring your apps and 
 There are two ways of obtaining access tokens for user migration:
 
 - fetching the access token for the entire developer team; or
-- using the access token received for each user when [`Token validation`](https://developer.apple.com/documentation/SigninwithAppleRESTAPI/Generate-and-validate-tokens) after the user authorization.
+- using the access token received for each user when [`Token validation`](https://developer.apple.com/documentation/signinwithapplerestapi/generate-and-validate-tokens) after the user authorization.
 
 The request below fetches the access token for Team A. The request also contains the following:
 
@@ -69,7 +69,7 @@ curl -v POST "https://appleid.apple.com/auth/token" \
 -d 'client_secret=CLIENT_SECRET_ISSUED_BY_TEAM_A'
 ```
 
-You can use this approach to migrate users in batches instead of individually when validating their user session. There is also no rate limiting for this endpoint. To learn more about generating a client secret for your team, please see [`Creating a client secret`](https://developer.apple.com/documentation/AccountOrganizationalDataSharing/creating-a-client-secret).
+You can use this approach to migrate users in batches instead of individually when validating their user session. There is also no rate limiting for this endpoint. To learn more about generating a client secret for your team, please see [`Creating a client secret`](https://developer.apple.com/documentation/accountorganizationaldatasharing/creating-a-client-secret).
 
 ##### 2 Team a Generates Transfer Identifiers
 
@@ -109,7 +109,7 @@ For more information about steps above, please see [`https://developer.apple.com
 There are two ways of obtaining access tokens for user migration:
 
 - fetching the access token for the entire developer team; or
-- using the access token received for each user when [`Token validation`](https://developer.apple.com/documentation/SigninwithAppleRESTAPI/Generate-and-validate-tokens) after the user authorization.
+- using the access token received for each user when [`Token validation`](https://developer.apple.com/documentation/signinwithapplerestapi/generate-and-validate-tokens) after the user authorization.
 
 The request below fetches the access token for Team B. The request also contains the following:
 
@@ -125,7 +125,7 @@ curl -v POST "https://appleid.apple.com/auth/token" \
 -d 'client_secret=CLIENT_SECRET_ISSUED_BY_TEAM_B'
 ```
 
-You can use this approach to migrate users in batches instead of individually when validating their user session. There is also no rate limiting for this endpoint. To learn more about generating a client secret for your team, please see [`Creating a client secret`](https://developer.apple.com/documentation/AccountOrganizationalDataSharing/creating-a-client-secret).
+You can use this approach to migrate users in batches instead of individually when validating their user session. There is also no rate limiting for this endpoint. To learn more about generating a client secret for your team, please see [`Creating a client secret`](https://developer.apple.com/documentation/accountorganizationaldatasharing/creating-a-client-secret).
 
 ##### 5 Team B Exchanges Transfer Identifiers
 
@@ -146,7 +146,7 @@ curl -v POST "https://appleid.apple.com/auth/usermigrationinfo" \
 
 ##### 6 Team B Confirms Successful User Migration
 
-Within your app or web service, you can confirm the user migration was successful by checking the credential state of the user. Its value should be [`ASAuthorizationAppleIDProvider.CredentialState.transferred`](https://developer.apple.com/documentation/AuthenticationServices/ASAuthorizationAppleIDProvider/CredentialState/transferred). To learn more about this step, see [`https://developer.apple.com/documentation/signinwithapple/bringing-new-apps-and-users-into-your-team`](https://developer.apple.comhttps://developer.apple.com/documentation/signinwithapple/bringing-new-apps-and-users-into-your-team).
+Within your app or web service, you can confirm the user migration was successful by checking the credential state of the user. Its value should be [`ASAuthorizationAppleIDProvider.CredentialState.transferred`](https://developer.apple.com/documentation/authenticationservices/asauthorizationappleidprovider/credentialstate/transferred). To learn more about this step, see [`https://developer.apple.com/documentation/signinwithapple/bringing-new-apps-and-users-into-your-team`](https://developer.apple.comhttps://developer.apple.com/documentation/signinwithapple/bringing-new-apps-and-users-into-your-team).
 
 #### Revision History
 

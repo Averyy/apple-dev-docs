@@ -25,9 +25,9 @@ This function creates a CUPS options string for the destination printer that cap
 ## Parameters
 
 - `settings`: The print settings to convert.
-- `printer`: The printer to use for converting the print settings. This parameter must not be  .
-- `pageFormat`: The page format to convert, or   to specify default page format data.
-- `options`: A pointer to a C string. On return, a CUPS option string with the specified print settings and page format data, or   if the data could not be converted. The function allocates storage for the string. You are responsible for freeing the storage.
+- `printer`: The printer to use for converting the print settings. This parameter must not be `NULL`.
+- `pageFormat`: The page format to convert, or `NULL` to specify default page format data.
+- `options`: A pointer to a C string. On return, a CUPS option string with the specified print settings and page format data, or `NULL` if the data could not be converted. The function allocates storage for the string. You are responsible for freeing the storage.
 
 ## See Also
 

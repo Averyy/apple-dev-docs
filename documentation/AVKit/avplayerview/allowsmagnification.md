@@ -16,7 +16,7 @@ var allowsMagnification: Bool { get set }
 
 #### Discussion
 
-The default value is `false`. This property only affects whether the magnify gesture triggers magnification. Your app can still programmatically change magnification even when the value of this is `false`, which matches the behavior of [`NSScrollView`](https://developer.apple.com/documentation/AppKit/NSScrollView).
+The default value is `false`. This property only affects whether the magnify gesture triggers magnification. Your app can still programmatically change magnification even when the value of this is `false`, which matches the behavior of [`NSScrollView`](https://developer.apple.com/documentation/appkit/nsscrollview).
 
 ## See Also
 

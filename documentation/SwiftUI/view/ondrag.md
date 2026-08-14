@@ -37,7 +37,7 @@ To use `Transferable` types directly and access a richer feature set — includi
 
 ## Parameters
 
-- `data`: A closure that returns a single [`NSItemProvider`](https://developer.apple.com/documentation/Foundation/NSItemProvider) that represents the draggable data from this view.
+- `data`: A closure that returns a single [`NSItemProvider`](https://developer.apple.com/documentation/foundation/nsitemprovider) that represents the draggable data from this view.
 
 ## See Also
 

@@ -22,7 +22,7 @@ func isEqual(to other: NSHashTable<ObjectType>) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/Swift/true) if the contents of `other` are equal to the contents of the receiving hash table, otherwise [`false`](https://developer.apple.com/documentation/Swift/false).
+[`true`](https://developer.apple.com/documentation/swift/true) if the contents of `other` are equal to the contents of the receiving hash table, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
 
 #### Discussion
 

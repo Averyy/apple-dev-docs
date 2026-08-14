@@ -22,7 +22,7 @@ func setObject(_ obj: Any?, forKeyedSubscript key: any NSCopying)
 
 #### Discussion
 
-The `value` parameter should be an object appropriate to the type of the shader symbol being set. For example, use an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) object to set the value of a `float` uniform variable, or use an [`NSValue`](https://developer.apple.com/documentation/Foundation/NSValue) object containing an [`SCNVector3`](scnvector3.md) structure to set the value of a GLSL `vec3` uniform variable or a Metal `float3` variable.
+The `value` parameter should be an object appropriate to the type of the shader symbol being set. For example, use an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) object to set the value of a `float` uniform variable, or use an [`NSValue`](https://developer.apple.com/documentation/foundation/nsvalue) object containing an [`SCNVector3`](scnvector3.md) structure to set the value of a GLSL `vec3` uniform variable or a Metal `float3` variable.
 
 Use this method when you need to set a value infrequently or only once. To update a shader value every time SceneKit renders a frame, use the [`handleBinding(ofSymbol:using:)`](scntechnique/handlebinding(ofsymbol:using:).md) method instead.
 

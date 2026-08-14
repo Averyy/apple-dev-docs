@@ -42,8 +42,8 @@ This structure represents a camera or observer’s position and viewing directio
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../Swift/BitwiseCopyable.md)
-- [Sendable](../Swift/Sendable.md)
+- [BitwiseCopyable](../swift/bitwisecopyable.md)
+- [Sendable](../swift/sendable.md)
 
 ## See Also
 

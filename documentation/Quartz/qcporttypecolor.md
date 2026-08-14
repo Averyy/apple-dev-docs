@@ -16,7 +16,7 @@ let QCPortTypeColor: String
 
 #### Discussion
 
-The associated value must be an [`NSColor`](https://developer.apple.com/documentation/AppKit/NSColor) object.
+The associated value must be an [`NSColor`](https://developer.apple.com/documentation/appkit/nscolor) object.
 
 ## See Also
 

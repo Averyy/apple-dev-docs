@@ -42,7 +42,7 @@ func colorInvert(inputImage: CIImage) -> CIImage {
 }
 ```
 
-![Two pictures of a pink flower surrounded by foliage. The photo on the left shows a single flower photographed close-up, in focus, with good light and no effects. In the photo on the right, a color invert filter is applied, resulting in the background becoming shades of purple and the flower becoming light blue.](https://docs-assets.developer.apple.com/published/9a50e3f10fd6c44a6fe8041c5c93809d/media-3545010%402x.png)
+![Two pictures of a pink flower surrounded by foliage. The photo on the left shows a single flower photographed close-up, in focus, with good light and no effects. In the photo on the right, a color invert filter is applied, resulting in the background becoming shades of purple and the flower becoming light blue.](/images/com.apple.coreimage/media-3545010@2x.png)
 
 ## See Also
 

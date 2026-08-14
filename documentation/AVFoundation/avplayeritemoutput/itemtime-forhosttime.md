@@ -26,11 +26,11 @@ The equivalent time in the item’s timebase.
 
 #### Discussion
 
-The timestamp associated with a [`CADisplayLink`](https://developer.apple.com/documentation/QuartzCore/CADisplayLink) object represents the time of the most recent screen refresh, which is usually a time in the past. If you want to find the time associated with the next screen refresh, you need to increment the timestamp by the value in the display link’s `duration` property.
+The timestamp associated with a [`CADisplayLink`](https://developer.apple.com/documentation/quartzcore/cadisplaylink) object represents the time of the most recent screen refresh, which is usually a time in the past. If you want to find the time associated with the next screen refresh, you need to increment the timestamp by the value in the display link’s `duration` property.
 
 ## Parameters
 
-- `hostTimeInSeconds`: A host time value, specified in seconds. For example, you might specify the time value returned by the [`CACurrentMediaTime()`](https://developer.apple.com/documentation/QuartzCore/CACurrentMediaTime()) function or the timestamp from a [`CADisplayLink`](https://developer.apple.com/documentation/QuartzCore/CADisplayLink) object for this parameter.
+- `hostTimeInSeconds`: A host time value, specified in seconds. For example, you might specify the time value returned by the [`CACurrentMediaTime()`](https://developer.apple.com/documentation/quartzcore/cacurrentmediatime()) function or the timestamp from a [`CADisplayLink`](https://developer.apple.com/documentation/quartzcore/cadisplaylink) object for this parameter.
 
 ## See Also
 

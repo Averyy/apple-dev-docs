@@ -8,7 +8,7 @@ Understand the structure of a crash report and the information each field contai
 
 Each section of a crash report contains information to help you diagnose the source of a crash.
 
-![An outline of a crash report showing where each section is located.](https://docs-assets.developer.apple.com/published/cb64dd660c25af51a6a38152f138872e/examining-the-fields-in-a-crash-report-1%402x.png)
+![An outline of a crash report showing where each section is located.](/images/com.apple.Xcode/examining-the-fields-in-a-crash-report-1@2x.png)
 
 ##### Header
 
@@ -38,10 +38,10 @@ The fields in the header can contain the following information. No single crash 
 - `CrashReporter Key`: An anonymized per-device identifier. Two reports from the same device contain identical values. This identifier is reset upon erasing the device.
 - `Beta Identifier`: A unique identifier for the combination of the device and vendor of the crashed application. Two reports for apps from the same vendor and from the same device contain identical values. This field is only present for TestFlight builds of an app, and replaces the `CrashReporter Key` field.
 - `Hardware Model`: The specific device model the app was running on.
-- `Process`: The executable name for the process that crashed. This matches the [`CFBundleExecutable`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/CFBundleExecutable) value in the app’s information property list. The number in brackets is the process ID.
+- `Process`: The executable name for the process that crashed. This matches the [`CFBundleExecutable`](https://developer.apple.com/documentation/bundleresources/information-property-list/cfbundleexecutable) value in the app’s information property list. The number in brackets is the process ID.
 - `Path`: The location of the executable on disk. macOS replaces user-identifable path components with placeholder values to protect privacy.
-- `Identifier`: The [`CFBundleIdentifier`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/CFBundleIdentifier) of the process that crashed. If the binary doesn’t have a [`CFBundleIdentifier`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/CFBundleIdentifier), this field contains either the process name or a placeholder value.
-- `Version`: The version of the process that crashed. The value is a concatenation of the app’s [`CFBundleVersion`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/CFBundleVersion) and [`CFBundleShortVersionString`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/CFBundleShortVersionString).
+- `Identifier`: The [`CFBundleIdentifier`](https://developer.apple.com/documentation/bundleresources/information-property-list/cfbundleidentifier) of the process that crashed. If the binary doesn’t have a [`CFBundleIdentifier`](https://developer.apple.com/documentation/bundleresources/information-property-list/cfbundleidentifier), this field contains either the process name or a placeholder value.
+- `Version`: The version of the process that crashed. The value is a concatenation of the app’s [`CFBundleVersion`](https://developer.apple.com/documentation/bundleresources/information-property-list/cfbundleversion) and [`CFBundleShortVersionString`](https://developer.apple.com/documentation/bundleresources/information-property-list/cfbundleshortversionstring).
 - `AppStoreTools`: The version of Xcode used to compile your app’s bitcode and to thin your app to device specific variants.
 - `AppVariant`: The specific variant of your app produced by app thinning. This field contains multiple values, described later in this section.
 - `Code Type`: The CPU architecture of the process that crashed. The value is one of `ARM-64`, `ARM`, `X86-64`, or `X86`.
@@ -83,7 +83,7 @@ The following fields provide information about the exception. No single crash re
 
 The operating system sometimes includes additional diagnostic information. This information uses a variety of formats, depending on reason for the crash, and isn’t present in every crash report.
 
-Framework error messages occurring just before the process exits appear in the `Application Specific Information` field. In this example, the [`Dispatch`](https://developer.apple.com/documentation/Dispatch) framework logged an error about incorrect use of a dispatch queue:
+Framework error messages occurring just before the process exits appear in the `Application Specific Information` field. In this example, the [`Dispatch`](https://developer.apple.com/documentation/dispatch) framework logged an error about incorrect use of a dispatch queue:
 
 ```other
 Application Specific Information:
@@ -207,7 +207,7 @@ Binary Images:
 
 This list contains the components from the preceding example:
 
-- `0x102aec000 - 0x102b03fff`. The binary image’s address range within the process. The first address is the binary’s load address. See [`Symbolicate the crash report with the command line`](adding-identifiable-symbol-names-to-a-crash-report#Symbolicate-the-crash-report-with-the-command-line.md) for how to use this value.
+- `0x102aec000 - 0x102b03fff`. The binary image’s address range within the process. The first address is the binary’s load address. See [`Symbolicate the crash report using a command-line tool`](adding-identifiable-symbol-names-to-a-crash-report#Symbolicate-the-crash-report-using-a-command-line-tool.md) for how to use this value.
 - `TouchCanvas`. The binary name.
 - `arm64`. The CPU architecture from the binary image that the operating system loaded into the process.
 - `fe7745ae12db30fa886c8baa1980437a`. A build UUID that uniquely identifies the binary image. Use this value to locate the corresponding `dSYM` file when symbolicating the crash report. See [`Building your app to include debugging information`](building-your-app-to-include-debugging-information.md) for more information on build UUIDs.
@@ -222,9 +222,9 @@ Binary Images:
 
 This list contains the components from the preceding example:
 
-- `0x105f97000 - 0x105f98ffb`. The binary image’s address range within the process. The first address is the binary’s load address. See [`Symbolicate the crash report with the command line`](adding-identifiable-symbol-names-to-a-crash-report#Symbolicate-the-crash-report-with-the-command-line.md) for how to use this value.
-- `+com.example.apple-samplecode.TouchCanvas`. The [`CFBundleIdentifier`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/CFBundleIdentifier) of the binary. The `+` prefix indicates the binary is not part of macOS.
-- `1.0 - 1`. The binary’s [`CFBundleShortVersionString`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/CFBundleShortVersionString) and [`CFBundleVersion`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/CFBundleVersion).
+- `0x105f97000 - 0x105f98ffb`. The binary image’s address range within the process. The first address is the binary’s load address. See [`Symbolicate the crash report using a command-line tool`](adding-identifiable-symbol-names-to-a-crash-report#Symbolicate-the-crash-report-using-a-command-line-tool.md) for how to use this value.
+- `+com.example.apple-samplecode.TouchCanvas`. The [`CFBundleIdentifier`](https://developer.apple.com/documentation/bundleresources/information-property-list/cfbundleidentifier) of the binary. The `+` prefix indicates the binary is not part of macOS.
+- `1.0 - 1`. The binary’s [`CFBundleShortVersionString`](https://developer.apple.com/documentation/bundleresources/information-property-list/cfbundleshortversionstring) and [`CFBundleVersion`](https://developer.apple.com/documentation/bundleresources/information-property-list/cfbundleversion).
 - `5ED9BD63-2A55-3DDD-B3FF-EFCF61382F6F`. A build UUID that uniquely identifies the binary image. Use this value to locate the corresponding `dSYM` file when symbolicating the crash report. See [`Building your app to include debugging information`](building-your-app-to-include-debugging-information.md) for more information on build UUIDs.
 - `/Users/USER/*/TouchCanvas.app/Contents/MacOS/TouchCanvas`. The path to the binary on disk. macOS replaces user-identifable path components with placeholder values to protect privacy.
 

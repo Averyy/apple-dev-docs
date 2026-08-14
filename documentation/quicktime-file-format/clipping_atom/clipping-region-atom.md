@@ -7,7 +7,7 @@ An atom that specifies the clipping region.
 
 #### Overview
 
-See [`Clipping region atom ('crgn')`](clipping_region_atom.md).
+See [`Clipping region atom`](clipping_region_atom.md).
 
 ## See Also
 

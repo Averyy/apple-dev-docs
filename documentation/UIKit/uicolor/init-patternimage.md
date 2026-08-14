@@ -27,7 +27,7 @@ The pattern color.
 
 You can use pattern colors to set the fill or stroke color just as you’d a solid color. During drawing, the image in the pattern color is tiled as necessary to cover the given area.
 
-By default, the phase of the returned color is 0, which causes the top-left corner of the image to be aligned with the drawing origin. To change the phase, make the color the current color and then use the [`setPatternPhase(_:)`](https://developer.apple.com/documentation/CoreGraphics/CGContext/setPatternPhase(_:)) function to change the phase.
+By default, the phase of the returned color is 0, which causes the top-left corner of the image to be aligned with the drawing origin. To change the phase, make the color the current color and then use the [`setPatternPhase(_:)`](https://developer.apple.com/documentation/coregraphics/cgcontext/setpatternphase(_:)) function to change the phase.
 
 ## Parameters
 

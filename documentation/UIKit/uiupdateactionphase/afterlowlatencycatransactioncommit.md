@@ -20,7 +20,7 @@ class var afterLowLatencyCATransactionCommit: UIUpdateActionPhase { get }
 
 #### Discussion
 
-This phase runs after [`flush()`](https://developer.apple.com/documentation/QuartzCore/CATransaction/flush()) for a low-latency event. Any changes you make to the Core Animation layer tree during this phase or later appear onscreen with the next UI update instead of the current one.
+This phase runs after [`flush()`](https://developer.apple.com/documentation/quartzcore/catransaction/flush()) for a low-latency event. Any changes you make to the Core Animation layer tree during this phase or later appear onscreen with the next UI update instead of the current one.
 
 This phase is off by default. You can request it to run by setting [`wantsLowLatencyEventDispatch`](uiupdatelink/wantslowlatencyeventdispatch.md) to `true`.
 

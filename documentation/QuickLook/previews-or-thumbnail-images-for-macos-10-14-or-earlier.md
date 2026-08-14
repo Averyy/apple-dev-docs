@@ -8,7 +8,7 @@ Create thumbnail images or previews of common files and custom file types in ear
 
 The Quick Look framework provides functionality to create a miniature representation, or *thumbnail*, of a file and its contents for display in apps that target macOS 10.14 and earlier.
 
-If your app targets macOS 10.15 and later, use the [`Quick Look Thumbnailing`](https://developer.apple.com/documentation/QuickLookThumbnailing) framework to create thumbnails. Similarly, use a Quick Look preview extension to display previews of files instead of Quick Look generators. To learn more, watch [`What’s New in File Management and Quick Look`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2019/719).
+If your app targets macOS 10.15 and later, use the [`Quick Look Thumbnailing`](https://developer.apple.com/documentation/quicklookthumbnailing) framework to create thumbnails. Similarly, use a Quick Look preview extension to display previews of files instead of Quick Look generators. To learn more, watch [`What’s New in File Management and Quick Look`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2019/719).
 
 ## Topics
 
@@ -162,7 +162,7 @@ If your app targets macOS 10.15 and later, use the [`Quick Look Thumbnailing`](h
 
 - [class QLPreviewController](qlpreviewcontroller.md)
   A specialized view controller for previewing an item.
-- [protocol QLPreviewItem](../QuickLookUI/QLPreviewItem.md)
+- [protocol QLPreviewItem](../quicklookui/qlpreviewitem.md)
   A protocol that defines a set of properties you implement to make a preview of your application’s content.
 - [class QLPreviewSceneActivationConfiguration](qlpreviewsceneactivationconfiguration.md)
   A scene configuration to preview items at the specified URLs.

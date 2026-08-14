@@ -45,7 +45,7 @@ The following listing shows line items that include a subtotal, free shipping, a
 
 The resulting payment sheet looks like:
 
-![An Apple Pay payment sheet that shows card and billing information, shipping information, a shipping method, contact information, and the three line items shown in the related code listing which include a Bag Subtotal of $35, Free Shipping, and Estimated Tax of $3.06. The total is $38.06.](https://docs-assets.developer.apple.com/published/1fa91fd144f00a52f69d21dadb96de2a/media-2936386%402x.png)
+![An Apple Pay payment sheet that shows card and billing information, shipping information, a shipping method, contact information, and the three line items shown in the related code listing which include a Bag Subtotal of $35, Free Shipping, and Estimated Tax of $3.06. The total is $38.06.](/images/com.apple.applepayontheweb/media-2936386@2x.png)
 
 ## See Also
 

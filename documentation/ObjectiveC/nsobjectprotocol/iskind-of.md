@@ -27,7 +27,7 @@ func isKind(of aClass: AnyClass) -> Bool
 
 #### Discussion
 
-For example, in this code, [`isKind(of:)`](nsobjectprotocol/iskind(of:).md) would return [`YES`](yes.md) because, in Foundation, the [`NSArchiver`](https://developer.apple.com/documentation/Foundation/NSArchiver) class inherits from [`NSCoder`](https://developer.apple.com/documentation/Foundation/NSCoder):
+For example, in this code, [`isKind(of:)`](nsobjectprotocol/iskind(of:).md) would return [`YES`](yes.md) because, in Foundation, the [`NSArchiver`](https://developer.apple.com/documentation/foundation/nsarchiver) class inherits from [`NSCoder`](https://developer.apple.com/documentation/foundation/nscoder):
 
 ```objc
 NSMutableData *myData = [NSMutableData dataWithCapacity:30];
@@ -36,7 +36,7 @@ if ( [anArchiver isKindOfClass:[NSCoder class]] )
     ...
 ```
 
-Be careful when using this method on objects represented by a class cluster. Because of the nature of class clusters, the object you get back may not always be the type you expected. If you call a method that returns a class cluster, the exact type returned by the method is the best indicator of what you can do with that object. For example, if a method returns a pointer to an [`NSArray`](https://developer.apple.com/documentation/Foundation/NSArray) object, you should not use this method to see if the array is mutable, as shown in the following code:
+Be careful when using this method on objects represented by a class cluster. Because of the nature of class clusters, the object you get back may not always be the type you expected. If you call a method that returns a class cluster, the exact type returned by the method is the best indicator of what you can do with that object. For example, if a method returns a pointer to an [`NSArray`](https://developer.apple.com/documentation/foundation/nsarray) object, you should not use this method to see if the array is mutable, as shown in the following code:
 
 ```objc
 // DO NOT DO THIS!

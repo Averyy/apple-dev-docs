@@ -19,7 +19,7 @@ case bookmark
 
 #### Discussion
 
-![None](https://docs-assets.developer.apple.com/published/b43be745b3230ab74b46652b6f012671/media-2934534%402x.png)
+![None](/images/com.apple.uikit/media-2934534@2x.png)
 
 ## See Also
 

@@ -30,9 +30,9 @@ In macOS, you should generally install all handlers in the application dispatch 
 
 ## Parameters
 
-- `functionClass`: The keyword for the special handler to get. You can specify any of the constants described in  . See  .
-- `handler`: A universal procedure pointer. On return, a pointer to the specified special handler, if one exists that matches the value supplied in the   parameter. See  .
-- `isSysHandler`: Specifies the special handler dispatch table to get the handler from. Pass   to get the handler from the system special handler dispatch table or   to get the handler from your application’s special handler dispatch table. Use of the system special handler dispatch table is not recommended.
+- `functionClass`: The keyword for the special handler to get. You can specify any of the constants described in [`Special Handler Callback Constants`](apple_events/1572726-special_handler_callback_constan.md). See [`AEKeyword`](aekeyword.md).
+- `handler`: A universal procedure pointer. On return, a pointer to the specified special handler, if one exists that matches the value supplied in the `functionClass` parameter. See [`AEEventHandlerUPP`](aeeventhandlerupp.md).
+- `isSysHandler`: Specifies the special handler dispatch table to get the handler from. Pass `TRUE` to get the handler from the system special handler dispatch table or `FALSE` to get the handler from your application’s special handler dispatch table. Use of the system special handler dispatch table is not recommended.
 
 ## See Also
 

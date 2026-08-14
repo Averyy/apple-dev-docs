@@ -16,7 +16,7 @@ class let touchBarPlayheadTemplateName: String
 
 #### Discussion
 
-![Template image for a playhead.](https://docs-assets.developer.apple.com/published/3663827c7786fc30f7611d3f20fc8b68/media-2931423%402x.png)
+![Template image for a playhead.](/images/com.apple.appkit/media-2931423@2x.png)
 
 Touch Bar template images are exclusively for use in [`NSTouchBarItem`](nstouchbaritem.md) objects and not in onscreen windows.
 

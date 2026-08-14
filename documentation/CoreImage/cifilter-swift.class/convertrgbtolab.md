@@ -41,7 +41,7 @@ func convertRGBToLab(inputImage: CIImage) -> CIImage {
 }
 ```
 
-![Two images arranged horizontally. The left image contains a photo of the Golden Gate Bridge with a clear sky as the background. The right image shows the result of applying the convert-RGB-to-Lab filter with the normalize flag set to true. The bridge is a light cyan color and the sky is a gradient from yellow-green through to red-pink.](https://docs-assets.developer.apple.com/published/3619bb77953de20155b93c117df4550b/media-4407334%402x.png)
+![Two images arranged horizontally. The left image contains a photo of the Golden Gate Bridge with a clear sky as the background. The right image shows the result of applying the convert-RGB-to-Lab filter with the normalize flag set to true. The bridge is a light cyan color and the sky is a gradient from yellow-green through to red-pink.](/images/com.apple.coreimage/media-4407334@2x.png)
 
 ## See Also
 

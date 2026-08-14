@@ -17,7 +17,7 @@ Optimize graphics and compute performance with kernels that are fine-tuned for t
 
 The Metal Performance Shaders framework contains a collection of highly optimized compute and graphics shaders that are designed to integrate easily and efficiently into your Metal app. These data-parallel primitives are specially tuned to take advantage of the unique hardware characteristics of each GPU family to ensure optimal performance.
 
-Apps adopting the Metal Performance Shaders framework achieve great performance without needing to create and maintain hand-written shaders for each GPU family. Metal Performance Shaders can be used along with your app’s existing Metal resources (such as the [`MTLCommandBuffer`](https://developer.apple.com/documentation/Metal/MTLCommandBuffer), [`MTLTexture`](https://developer.apple.com/documentation/Metal/MTLTexture), and [`MTLBuffer`](https://developer.apple.com/documentation/Metal/MTLBuffer) objects) and shaders.
+Apps adopting the Metal Performance Shaders framework achieve great performance without needing to create and maintain hand-written shaders for each GPU family. Metal Performance Shaders can be used along with your app’s existing Metal resources (such as the [`MTLCommandBuffer`](https://developer.apple.com/documentation/metal/mtlcommandbuffer), [`MTLTexture`](https://developer.apple.com/documentation/metal/mtltexture), and [`MTLBuffer`](https://developer.apple.com/documentation/metal/mtlbuffer) objects) and shaders.
 
 The Metal Performance Shaders framework supports the following functionality:
 
@@ -57,14 +57,14 @@ The Metal Performance Shaders framework supports the following functionality:
 - [class MPSKernel](mpskernel.md)
   A standard interface for Metal Performance Shaders kernels.
 ### Keyed Archivers
-- [class NSKeyedArchiver](../Foundation/NSKeyedArchiver.md)
+- [class NSKeyedArchiver](../foundation/nskeyedarchiver.md)
   An encoder that stores an object’s data to an archive referenced by keys.
 - [class MPSKeyedUnarchiver](mpskeyedunarchiver.md)
   A keyed archiver that supports Metal Performance Shaders kernel decoding.
 - [protocol MPSDeviceProvider](mpsdeviceprovider.md)
   An interface that enables the setting of a Metal device for unarchived objects.
 ### Ray Tracing
-- [Accelerating ray tracing and motion blur using Metal](../Metal/accelerating-ray-tracing-and-motion-blur-using-metal.md)
+- [Accelerating ray tracing and motion blur using Metal](../metal/accelerating-ray-tracing-and-motion-blur-using-metal.md)
   Generate ray-traced images with motion blur using GPU-based parallel processing.
 - [class MPSRayIntersector](mpsrayintersector.md)
   A kernel that performs intersection tests between rays and geometry.
@@ -253,7 +253,7 @@ The Metal Performance Shaders framework supports the following functionality:
 
 ## See Also
 
-- [Metal](../Metal/Metal.md)
+- [Metal](../metal/metal.md)
   Render advanced 3D graphics and compute data in parallel with graphics processors.
 - [Metal Programming Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Miscellaneous/Conceptual/MetalProgrammingGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40014221)
 

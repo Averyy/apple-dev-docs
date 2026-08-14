@@ -26,7 +26,7 @@ Any non-`nil` optional results of the calling the supplied closure.
 
 #### Discussion
 
-Combine’s [`compactMap(_:)`](publisher/compactmap(_:).md) operator performs a function similar to that of [`compactMap(_:)`](https://developer.apple.com/documentation/Swift/Sequence/compactMap(_:)) in the Swift standard library: the [`compactMap(_:)`](publisher/compactmap(_:).md) operator in Combine removes `nil` elements in a publisher’s stream and republishes non-`nil` elements to the downstream subscriber.
+Combine’s [`compactMap(_:)`](publisher/compactmap(_:).md) operator performs a function similar to that of [`compactMap(_:)`](https://developer.apple.com/documentation/swift/sequence/compactmap(_:)) in the Swift standard library: the [`compactMap(_:)`](publisher/compactmap(_:).md) operator in Combine removes `nil` elements in a publisher’s stream and republishes non-`nil` elements to the downstream subscriber.
 
 The example below uses a range of numbers as the source for a collection based publisher. The [`compactMap(_:)`](publisher/compactmap(_:).md) operator consumes each element from the `numbers` publisher attempting to access the dictionary using the element as the key. If the example’s dictionary returns a `nil`, due to a non-existent key, [`compactMap(_:)`](publisher/compactmap(_:).md) filters out the `nil` (missing) elements.
 

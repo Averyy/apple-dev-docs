@@ -39,7 +39,7 @@ struct CSSM_APPLE_TP_CERT_REQUEST
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../Swift/BitwiseCopyable.md)
+- [BitwiseCopyable](../swift/bitwisecopyable.md)
 
 
 ---

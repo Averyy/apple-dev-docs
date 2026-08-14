@@ -36,8 +36,8 @@ Create a `GeometryModifier` by calling [`makeGeometryModifier(descriptor:)`](low
 
 ### Conforms To
 - [LowLevelMaterialResource.Function](lowlevelmaterialresource/function.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

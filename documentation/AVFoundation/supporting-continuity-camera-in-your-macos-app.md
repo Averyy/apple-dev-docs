@@ -170,7 +170,7 @@ AVCaptureDevice.self.addObserver(self, forKeyPath: studioLightKeyPath, options: 
 
 ## See Also
 
-- [Supporting Continuity Camera in your tvOS app](../AVKit/supporting-continuity-camera-in-your-tvos-app.md)
+- [Supporting Continuity Camera in your tvOS app](../avkit/supporting-continuity-camera-in-your-tvos-app.md)
   Capture high-quality photos, video, and audio in your Apple TV app by connecting an iPhone or iPad as a continuity device.
 - [class AVCaptureDeskViewApplication](avcapturedeskviewapplication.md)
   An object that programmatically presents Desk View.

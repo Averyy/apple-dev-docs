@@ -10,12 +10,12 @@ You can use Xcode to capture your app’s Metal workload. First, ensure that the
 
 ##### Configure the Gpu Frame Capture Options
 
-Xcode automatically enables the GPU Frame Capture option if your target links to the [`Metal`](https://developer.apple.com/documentation/Metal) framework, or any other framework that uses the Metal API. If you’re collaborating on a project, it’s possible that someone else may have disabled GPU Frame Capture. To ensure it’s enabled, follow these steps:
+Xcode automatically enables the GPU Frame Capture option if your target links to the [`Metal`](https://developer.apple.com/documentation/metal) framework, or any other framework that uses the Metal API. If you’re collaborating on a project, it’s possible that someone else may have disabled GPU Frame Capture. To ensure it’s enabled, follow these steps:
 
-1. In the Xcode toolbar, choose Edit Scheme from the Scheme menu. ![An Xcode screenshot showing the Scheme menu with the Edit Scheme menu item highlighted.](https://docs-assets.developer.apple.com/published/b182d432917c885b06799aa8f70ba238/gputools-metal-debugger-essentials-capture-edit-scheme%402x.png)
+1. In the Xcode toolbar, choose Edit Scheme from the Scheme menu. ![An Xcode screenshot showing the Scheme menu with the Edit Scheme menu item highlighted.](/images/com.apple.Xcode/gputools-metal-debugger-essentials-capture-edit-scheme@2x.png)
 2. Select the Run scheme action.
 3. Select the Options tab.
-4. Choose a GPU Frame Capture option and click Close. ![A screenshot of the Xcode scheme editor highlighting the GPU Frame Capture option.](https://docs-assets.developer.apple.com/published/a04d28f8122a91a62b4c8b170ad8c4ce/gputools-metal-debugger-essentials-capture-options%402x.png)
+4. Choose a GPU Frame Capture option and click Close. ![A screenshot of the Xcode scheme editor highlighting the GPU Frame Capture option.](/images/com.apple.Xcode/gputools-metal-debugger-essentials-capture-options@2x.png)
 
 The GPU Frame Capture options include the following:
 
@@ -27,7 +27,7 @@ The GPU Frame Capture options include the following:
 
 While debugging your app, you can capture a GPU trace by following these steps:
 
-1. Click the Metal Capture button in the debug bar. ![A screenshot of the Metal Capture popover, accessible from the Metal Capture button in the debug bar.](https://docs-assets.developer.apple.com/published/8b0dd785b8d53eef279e66da90847a49/gputools-metal-debugger-essentials-capture-popup%402x.png)
+1. Click the Metal Capture button in the debug bar. ![A screenshot of the Metal Capture popover, accessible from the Metal Capture button in the debug bar.](/images/com.apple.Xcode/gputools-metal-debugger-essentials-capture-popup@2x.png)
 2. Select the scope that you want to capture. This can be a frame, Metal layer, command queue, device, or any custom scopes that you set up previously. For more information, see [`Creating and using custom capture scopes`](creating-and-using-custom-capture-scopes.md).
 3. Select the count. Depending on the scope, this might include the number of frames or command buffers.
 4. Click Capture.
@@ -40,9 +40,9 @@ Capture a GPU trace after deploying your app by following these steps:
 
 1. In Xcode, choose Debug > Debug Executable.
 2. Select your app in Finder and click Choose. Xcode automatically brings up the scheme editor.
-3. Click the Options tab, choose a GPU Frame Capture option, and click Close. ![A screenshot of the Xcode scheme editor highlighting the GPU Frame Capture option.](https://docs-assets.developer.apple.com/published/c76f2031cabc4029aca800e1eec8ca39/gputools-metal-debugger-essentials-capture-choose-options%402x.png)
+3. Click the Options tab, choose a GPU Frame Capture option, and click Close. ![A screenshot of the Xcode scheme editor highlighting the GPU Frame Capture option.](/images/com.apple.Xcode/gputools-metal-debugger-essentials-capture-choose-options@2x.png)
 4. Run your app by choosing Product > Run.
-5. Click the Metal Capture button in the debug bar. ![An Xcode screenshot of the Metal Capture popover, accessible from the Metal Capture button in the debug bar.](https://docs-assets.developer.apple.com/published/7ae15267152d5476f83c11aae06722d7/gputools-metal-debugger-essentials-capture-choose-capture%402x.png)
+5. Click the Metal Capture button in the debug bar. ![An Xcode screenshot of the Metal Capture popover, accessible from the Metal Capture button in the debug bar.](/images/com.apple.Xcode/gputools-metal-debugger-essentials-capture-choose-capture@2x.png)
 6. Select the scope and count that you want to capture.
 7. Click Capture.
 
@@ -52,7 +52,7 @@ Xcode automatically starts capturing a GPU trace when the scope starts, then fin
 
 The Metal Capture popover includes an Advanced section with additional options for controlling capture behavior. To reveal these options, click Show next to Advanced in the popover.
 
-![A screenshot of the Metal Capture popover with the Advanced section expanded, showing additional capture options.](https://docs-assets.developer.apple.com/published/bcc5205b29dbc60e87ae994cdcbf3328/gputools-metal-debugger-essentials-capture-popup-expanded%402x.png)
+![A screenshot of the Metal Capture popover with the Advanced section expanded, showing additional capture options.](/images/com.apple.Xcode/gputools-metal-debugger-essentials-capture-popup-expanded@2x.png)
 
 The advanced capture options include the following:
 

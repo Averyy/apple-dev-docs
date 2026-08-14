@@ -22,7 +22,7 @@ func CTGlyphInfoGetGlyph(_ glyphInfo: CTGlyphInfo) -> CGGlyph
 
 #### Return Value
 
-A [`CGGlyph`](https://developer.apple.com/documentation/CoreGraphics/CGGlyph) value, if the glyph info object was created with a font; otherwise, `0`.
+A [`CGGlyph`](https://developer.apple.com/documentation/coregraphics/cgglyph) value, if the glyph info object was created with a font; otherwise, `0`.
 
 ## Parameters
 

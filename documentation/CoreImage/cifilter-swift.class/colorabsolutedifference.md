@@ -43,7 +43,7 @@ func colorAbsolute(inputImage: CIImage, inputImage2: CIImage) -> CIImage {
 }
 ```
 
-![Three images arranged with two images on the left and an image on the right. The top left image is a solid green color, and the bottom left image is a single palm tree with a clear sky. The right image shows the result of applying the color absolute difference filter to the two images on the left. The palm tree is now highlighted against the background.](https://docs-assets.developer.apple.com/published/106b0b4066ee31e3597b3a6f0c2eb7f9/media-4332166%402x.png)
+![Three images arranged with two images on the left and an image on the right. The top left image is a solid green color, and the bottom left image is a single palm tree with a clear sky. The right image shows the result of applying the color absolute difference filter to the two images on the left. The palm tree is now highlighted against the background.](/images/com.apple.coreimage/media-4332166@2x.png)
 
 ## See Also
 

@@ -33,7 +33,7 @@ struct es_event_proc_suspend_resume_t
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../Swift/BitwiseCopyable.md)
+- [BitwiseCopyable](../swift/bitwisecopyable.md)
 
 ## See Also
 

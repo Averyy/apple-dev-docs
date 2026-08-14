@@ -39,7 +39,7 @@ struct PlayButton: View {
 }
 ```
 
-For more information on sharing state properties with subviews, and storing [`Observable`](https://developer.apple.com/documentation/Observation/Observable) objects in state, see [`State()`](state().md).
+For more information on sharing state properties with subviews, and storing [`Observable`](https://developer.apple.com/documentation/observation/observable) objects in state, see [`State()`](state().md).
 
 ## See Also
 

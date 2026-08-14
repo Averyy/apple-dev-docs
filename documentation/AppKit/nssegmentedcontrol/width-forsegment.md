@@ -20,7 +20,7 @@ The width of the segment, measured in points, or 0 if the segment is sized to fi
 
 ## Parameters
 
-- `segment`: The index of the segment whose width you want to get. This method raises an exception ([`rangeException`](https://developer.apple.com/documentation/Foundation/NSExceptionName/rangeException)) if the index is out of bounds.
+- `segment`: The index of the segment whose width you want to get. This method raises an exception ([`rangeException`](https://developer.apple.com/documentation/foundation/nsexceptionname/rangeexception)) if the index is out of bounds.
 
 ## See Also
 

@@ -47,7 +47,7 @@ When overriding the methods of this protocol, call `super` to let UIKit perform 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 ### Conforming Types
 - [UIActivityViewController](uiactivityviewcontroller.md)
 - [UIAlertController](uialertcontroller.md)

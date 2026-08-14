@@ -24,7 +24,7 @@ if (!err)
 
 The following figure shows a QT atom container after you insert an atom.
 
-![A diagram that shows a box with the caption “QT atom container”, with an arrow pointing down to a box below it. The box below contains two sections stacked vertically. The first section contains the caption “‘abcd’”, and the second section contains the caption “1000”. Below the bottom box are the captions “Index = 1” and “Offset = 10”.](https://docs-assets.developer.apple.com/published/d6e4df36838c40b7c3561800bb6a4a1a/qt-after-inserting-atom%402x.png)
+![A diagram that shows a box with the caption “QT atom container”, with an arrow pointing down to a box below it. The box below contains two sections stacked vertically. The first section contains the caption “‘abcd’”, and the second section contains the caption “1000”. Below the bottom box are the captions “Index = 1” and “Offset = 10”.](/images/com.apple.qtff/qt-after-inserting-atom@2x.png)
 
 The following code sample calls `QTInsertChild` to create a second child atom. Because a value of `1` is specified for the index parameter, the second atom is inserted in front of the first atom in the child list; the index of the first atom is changed to `2`. The resulting QT atom container is shown in the following figure.
 
@@ -37,7 +37,7 @@ FailOSErr (QTInsertChild (container, kParentAtomIsContainer, 'abcd',
 
 The following figure shows a QT atom container after you insert a second atom.
 
-![A diagram that shows a box with the caption “QT atom container”, with an arrow that splits in the middle pointing down to two horizontally-aligned boxes below it. The box below and on the left contains two sections stacked vertically. The first section contains the caption “‘abcd’”, and the second section contains the caption “2000”. Below the bottom box are the captions “Index = 1” and “Offset = 10”. The box below and on the right contains two sections stacked vertically. The first section contains the caption “‘abcd’”, and the second section contains the caption “1000”. Below the bottom box are the captions “Index = 2” and “Offset = 20”.](https://docs-assets.developer.apple.com/published/0b4d759558d70784127e59a5a45a0261/qt-after-inserting-second-atom%402x.png)
+![A diagram that shows a box with the caption “QT atom container”, with an arrow that splits in the middle pointing down to two horizontally-aligned boxes below it. The box below and on the left contains two sections stacked vertically. The first section contains the caption “‘abcd’”, and the second section contains the caption “2000”. Below the bottom box are the captions “Index = 1” and “Offset = 10”. The box below and on the right contains two sections stacked vertically. The first section contains the caption “‘abcd’”, and the second section contains the caption “1000”. Below the bottom box are the captions “Index = 2” and “Offset = 20”.](/images/com.apple.qtff/qt-after-inserting-second-atom@2x.png)
 
 You can call the `QTFindChildByID` function to retrieve the changed offset of the first atom that was inserted, as shown in the following example. In this example, the `QTFindChildByID` function returns an offset of `20`.
 

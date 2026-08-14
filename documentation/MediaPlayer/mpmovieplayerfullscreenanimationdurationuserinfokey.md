@@ -17,7 +17,7 @@ let MPMoviePlayerFullscreenAnimationDurationUserInfoKey: String
 
 #### Discussion
 
-The value of this key is an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) containing a double value. This value represents the duration (measured in seconds) of the animation used to transition in or out of full-screen mode.
+The value of this key is an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) containing a double value. This value represents the duration (measured in seconds) of the animation used to transition in or out of full-screen mode.
 
 ## See Also
 

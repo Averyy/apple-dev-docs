@@ -27,7 +27,7 @@ protocol NSTextContentStorageDelegate : NSTextContentManagerDelegate
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 - [NSTextContentManagerDelegate](nstextcontentmanagerdelegate.md)
 
 ## See Also

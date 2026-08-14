@@ -12,17 +12,17 @@ When your crash report includes a hexadecimal address from a binary you created 
 
 The following backtrace highlights a hexadecimal address at line frame 3 from a binary named `TouchCanvas`:
 
-![A screenshot that highlights a hexadecimal address at line frame 3 in a crash report.](https://docs-assets.developer.apple.com/published/86219895de8103bdb132c4c2a8b76166/locating-a-missing-debug-symbol-01%402x.png)
+![A screenshot that highlights a hexadecimal address at line frame 3 in a crash report.](/images/com.apple.Xcode/locating-a-missing-debug-symbol-01@2x.png)
 
 To find the build UUID of the binary, look for a binary with that name in the list of binary images at the bottom of the crash report. This list contains the build UUID of each binary represented in the crash report. Record the binary’s build UUID from the fourth column. For more information, see [`Binary images`](examining-the-fields-in-a-crash-report#Binary-images.md).
 
 After you record the build UUID from the binary images section, convert it to a 36-character uppercase hexadecimal string in the format `XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX`. The following binary images section shows a build UUID of `e3ea8743c9e63c68bf048d51363b689d` for `TouchCanvas`, which becomes `E3EA8743-C9E6-3C68-BF04-8D51363B689D` after conversion:
 
-![A screenshot that highlights the name and UUID of a binary in a crash report.](https://docs-assets.developer.apple.com/published/8ae9affb342647b23c7ff638370147aa/locating-a-missing-debug-symbol-02%402x.png)
+![A screenshot that highlights the name and UUID of a binary in a crash report.](/images/com.apple.Xcode/locating-a-missing-debug-symbol-02@2x.png)
 
 Alternatively, you can use Xcode to find the build UUID of the binary. When you open a crash report in Xcode, the Debug navigator appears. Control-click the process or any thread in the navigator, then choose Show Library Info from the contextual menu. Xcode lists the name, UUID, load address, and path of every binary represented in the crash report. The following Debug navigator shows a build UUID of `E3EA8743-C9E6-3C68-BF04-8D51363B689D` for `TouchCanvas`:
 
-![A screenshot that shows the Debug navigator on the left containing a crash report and a contextual menu opened on the right displaying a list of binary images.](https://docs-assets.developer.apple.com/published/6632a3a046aa4ca96f470820146ec24d/locating-a-missing-debug-symbol-03%402x.png)
+![A screenshot that shows the Debug navigator on the left containing a crash report and a contextual menu opened on the right displaying a list of binary images.](/images/com.apple.Xcode/locating-a-missing-debug-symbol-03@2x.png)
 
 ##### Locate the Corresponding Dsym File
 

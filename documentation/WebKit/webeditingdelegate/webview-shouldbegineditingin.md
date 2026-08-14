@@ -16,7 +16,7 @@ optional func webView(_ webView: WebView!, shouldBeginEditingIn range: DOMRange!
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/Swift/true) if the user is allowed to edit `webView`; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
+[`true`](https://developer.apple.com/documentation/swift/true) if the user is allowed to edit `webView`; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
 
 #### Discussion
 
@@ -25,7 +25,7 @@ This method is invoked when a web view attempts to become the first responder or
 ## Parameters
 
 - `webView`: The web view that the user is editing.
-- `range`: The section of the begin-editing request; used to determine if editing is allowed. Typically, `range` is not the current selection but may becomes the current selection if this method returns [`true`](https://developer.apple.com/documentation/Swift/true).
+- `range`: The section of the begin-editing request; used to determine if editing is allowed. Typically, `range` is not the current selection but may becomes the current selection if this method returns [`true`](https://developer.apple.com/documentation/swift/true).
 
 ## See Also
 

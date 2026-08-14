@@ -16,7 +16,7 @@ static let comparisonModifier: NSRuleEditor.PredicatePartKey
 
 #### Discussion
 
-This value is optional. If not specified, [`NSComparisonPredicate.Modifier.direct`](https://developer.apple.com/documentation/Foundation/NSComparisonPredicate/Modifier/direct) is assumed.
+This value is optional. If not specified, [`NSComparisonPredicate.Modifier.direct`](https://developer.apple.com/documentation/foundation/nscomparisonpredicate/modifier/direct) is assumed.
 
 ## See Also
 

@@ -22,14 +22,14 @@ func identifiersOfEntries(withClass entryClass: AnyClass) -> [String]
 
 #### Return Value
 
-An array of [`NSString`](https://developer.apple.com/documentation/Foundation/NSString) objects, each the unique identifier of an object in the scene source.
+An array of [`NSString`](https://developer.apple.com/documentation/foundation/nsstring) objects, each the unique identifier of an object in the scene source.
 
 #### Discussion
 
 SceneKit recognizes objects of the following classes in scene files:
 
-- [`CAAnimation`](https://developer.apple.com/documentation/QuartzCore/CAAnimation)
-- [`NSImage`](https://developer.apple.com/documentation/AppKit/NSImage)
+- [`CAAnimation`](https://developer.apple.com/documentation/quartzcore/caanimation)
+- [`NSImage`](https://developer.apple.com/documentation/appkit/nsimage)
 - [`SCNCamera`](scncamera.md)
 - [`SCNGeometry`](scngeometry.md)
 - [`SCNLight`](scnlight.md)

@@ -21,7 +21,7 @@ var timeRange: CMTimeRange { get set }
 
 #### Discussion
 
-The default value is a time range with a start time of [`zero`](https://developer.apple.com/documentation/CoreMedia/CMTime/zero) and a duration of [`positiveInfinity`](https://developer.apple.com/documentation/CoreMedia/CMTime/positiveInfinity).
+The default value is a time range with a start time of [`zero`](https://developer.apple.com/documentation/coremedia/cmtime/zero) and a duration of [`positiveInfinity`](https://developer.apple.com/documentation/coremedia/cmtime/positiveinfinity).
 
 You can’t modify this value after reading starts.
 

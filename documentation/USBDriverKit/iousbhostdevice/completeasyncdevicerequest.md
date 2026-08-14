@@ -16,7 +16,7 @@ virtual void CompleteAsyncDeviceRequest(OSAction *action, IOReturn status, uint3
 
 #### Discussion
 
-Implement a custom version of this method and use the [`TYPE`](https://developer.apple.com/documentation/DriverKit/TYPE) macro to let the system know that your method conforms to this prototype.
+Implement a custom version of this method and use the [`TYPE`](https://developer.apple.com/documentation/driverkit/type) macro to let the system know that your method conforms to this prototype.
 
 ## Parameters
 

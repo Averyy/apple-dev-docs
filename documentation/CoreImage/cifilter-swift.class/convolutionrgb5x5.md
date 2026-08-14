@@ -53,7 +53,7 @@ func convolutionRGB5X5(inputImage: CIImage) -> CIImage {
 }
 ```
 
-![Two images arranged horizontally. The left image contains a photo of the Golden Gate Bridge with a clear sky as the background. The right image shows the result of applying a 5 x 5 box blur convolution kernel. Fine detail in the image is now blurred.](https://docs-assets.developer.apple.com/published/fc467d006355fb073a7b6b0af38f7642/media-4407325%402x.png)
+![Two images arranged horizontally. The left image contains a photo of the Golden Gate Bridge with a clear sky as the background. The right image shows the result of applying a 5 x 5 box blur convolution kernel. Fine detail in the image is now blurred.](/images/com.apple.coreimage/media-4407325@2x.png)
 
 ## See Also
 

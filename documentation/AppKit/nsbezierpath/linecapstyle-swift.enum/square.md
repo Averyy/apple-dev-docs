@@ -18,7 +18,7 @@ case square
 
 Here is an example of the appearance of this style:
 
-![Diagram that shows the square line cap style.](https://docs-assets.developer.apple.com/published/a3cd231f2dc0cf94a29bb49fc6fece5d/media-3670933%402x.png)
+![Diagram that shows the square line cap style.](/images/com.apple.appkit/media-3670933@2x.png)
 
 ## See Also
 

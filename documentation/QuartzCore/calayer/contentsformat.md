@@ -23,7 +23,7 @@ var contentsFormat: CALayerContentsFormat { get set }
 
 The default value of this property is [`RGBA8Uint`](calayercontentsformat/rgba8uint.md).
 
-[`UIView`](https://developer.apple.com/documentation/UIKit/UIView) and layer-backed [`NSView`](https://developer.apple.com/documentation/AppKit/NSView) objects may change the value to a format appropriate for the current device.
+[`UIView`](https://developer.apple.com/documentation/uikit/uiview) and layer-backed [`NSView`](https://developer.apple.com/documentation/appkit/nsview) objects may change the value to a format appropriate for the current device.
 
 ## See Also
 

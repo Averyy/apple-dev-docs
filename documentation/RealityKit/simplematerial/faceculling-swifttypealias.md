@@ -21,7 +21,7 @@ typealias FaceCulling = MaterialParameterTypes.FaceCulling
 
 ## See Also
 
-- [Creating 3D entities with RealityKit](../visionOS/creating-3d-entities-with-realitykit.md)
+- [Creating 3D entities with RealityKit](../visionos/creating-3d-entities-with-realitykit.md)
   Display a horizontal row of three-dimensional shapes in your visionOS app, using predefined mesh and white material.
 - [struct SimpleMaterial](simplematerial.md)
   A basic material that responds to lights in the scene.

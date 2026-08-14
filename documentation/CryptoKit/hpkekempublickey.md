@@ -32,8 +32,8 @@ protocol HPKEKEMPublicKey : HPKEPublicKeySerialization, KEMPublicKey
 ### Inherits From
 - [HPKEPublicKeySerialization](hpkepublickeyserialization.md)
 - [KEMPublicKey](kempublickey.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 ### Conforming Types
 - [XWingMLKEM768X25519.PublicKey](xwingmlkem768x25519/publickey.md)
 

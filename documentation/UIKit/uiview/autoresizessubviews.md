@@ -20,7 +20,7 @@ var autoresizesSubviews: Bool { get set }
 
 #### Discussion
 
-When set to [`true`](https://developer.apple.com/documentation/Swift/true), the receiver adjusts the size of its subviews when its bounds change. The default value is [`true`](https://developer.apple.com/documentation/Swift/true).
+When set to [`true`](https://developer.apple.com/documentation/swift/true), the receiver adjusts the size of its subviews when its bounds change. The default value is [`true`](https://developer.apple.com/documentation/swift/true).
 
 ## See Also
 

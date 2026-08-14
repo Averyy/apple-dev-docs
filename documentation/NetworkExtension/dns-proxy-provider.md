@@ -12,12 +12,12 @@ A DNS proxy provider is an app extension that implements DNS proxying. You shoul
 - Talk to a DNS proxying service using DNS over HTTPS (DoH) or DNS over TLS (DoT)
 - Implement a completely custom DNS proxying protocol
 
-For detailed information about DNS proxy provider deployment options, see [`TN3134: Network Extension provider deployment`](https://developer.apple.com/documentation/Technotes/tn3134-network-extension-provider-deployment).
+For detailed information about DNS proxy provider deployment options, see [`TN3134: Network Extension provider deployment`](https://developer.apple.com/documentation/technotes/tn3134-network-extension-provider-deployment).
 
 ## Topics
 
 ### Essentials
-- [Network Extensions Entitlement](../BundleResources/Entitlements/com.apple.developer.networking.networkextension.md)
+- [Network Extensions Entitlement](../bundleresources/entitlements/com.apple.developer.networking.networkextension.md)
   The APIs an app can use to customize networking features.
 ### Provider
 - [class NEDNSProxyProvider](nednsproxyprovider.md)

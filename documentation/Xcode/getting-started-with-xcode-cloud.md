@@ -41,7 +41,7 @@ To use Xcode Cloud with your project:
 2. In the Report navigator, click the Cloud tab.
 3. Click the Get Started button that appears below.
 
-![A screenshot of the project window showing the Cloud tab selected in the Report navigator on the left and information about Xcode Cloud and a Get Started button below.](https://docs-assets.developer.apple.com/published/f4deb87a8597b2d337d90c0462f1ab78/xcode-cloud-get-started%402x.png)
+![A screenshot of the project window showing the Cloud tab selected in the Report navigator on the left and information about Xcode Cloud and a Get Started button below.](/images/com.apple.Xcode/xcode-cloud-get-started@2x.png)
 
 > **Note**: If you don’t have a remote repository, Xcode offers to create one for you.
 
@@ -53,7 +53,7 @@ In the Select Product sheet that appears, find your app or framework:
 2. If necessary, select the team for the app or framework.
 3. Click Next.
 
-![A screenshot of the Select Product sheet showing an app to select and the Next button in the lower-right corner.](https://docs-assets.developer.apple.com/published/9e1b04c654ee8e2cb2519654886aa622/xcode-cloud-add-your-app%402x.png)
+![A screenshot of the Select Product sheet showing an app to select and the Next button in the lower-right corner.](/images/com.apple.Xcode/xcode-cloud-add-your-app@2x.png)
 
 #### Connect Your Source Code Repository
 
@@ -74,7 +74,7 @@ In the Setup Complete sheet, Xcode shows you a default workflow that:
 - Uses the latest macOS and Xcode versions.
 - Archives your app or framework.
 
-![A screenshot of the Setup Complete sheet showing the Details button in the Workflow row and the Start First Build button in the lower-right corner.](https://docs-assets.developer.apple.com/published/14fa0c1cfb78ba50e66bf4608e8b8322/xcode-cloud-setup-complete%402x.png)
+![A screenshot of the Setup Complete sheet showing the Details button in the Workflow row and the Start First Build button in the lower-right corner.](/images/com.apple.Xcode/xcode-cloud-setup-complete@2x.png)
 
 Use this basic workflow at first and customize it later. To edit the workflow, click Details in the Workflow row under Start First Build and make your changes in the sheet that appears. For more information on choosing start conditions, see [`Configuring start conditions`](configuring-start-conditions.md).
 
@@ -86,7 +86,7 @@ To begin using Xcode Cloud, click Start First Build.
 
 In the Report navigator, you can watch the build run. In the Cloud pane, expand the product and click the workflow. Xcode shows the workflow details on the right.
 
-![A screenshot of the Report navigator showing the Cloud pane on the left and the build details for the workflow on the right.](https://docs-assets.developer.apple.com/published/0c74ec2bb3474edfd6d7fdf8acdf96be/xcode-cloud-build-report%402x.png)
+![A screenshot of the Report navigator showing the Cloud pane on the left and the build details for the workflow on the right.](/images/com.apple.Xcode/xcode-cloud-build-report@2x.png)
 
 If you encounter build issues, see [`Resolving common configuration and build issues`](resolving-common-configuration-and-build-issues.md).
 

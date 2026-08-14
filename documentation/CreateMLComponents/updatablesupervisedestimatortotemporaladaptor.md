@@ -54,8 +54,8 @@ struct UpdatableSupervisedEstimatorToTemporalAdaptor<Base> where Base : Updatabl
 ## Relationships
 
 ### Conforms To
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 - [SupervisedTemporalEstimator](supervisedtemporalestimator.md)
 - [UpdatableSupervisedTemporalEstimator](updatablesupervisedtemporalestimator.md)
 

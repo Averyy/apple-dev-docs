@@ -17,7 +17,7 @@ A message that tells people why the app is requesting access to the device’s m
 
 #### Discussion
 
-> ❗ **Important**:  This key is required if your app uses APIs that access the device’s motion data, including [`CMSensorRecorder`](https://developer.apple.com/documentation/CoreMotion/CMSensorRecorder), [`CMPedometer`](https://developer.apple.com/documentation/CoreMotion/CMPedometer), [`CMMotionActivityManager`](https://developer.apple.com/documentation/CoreMotion/CMMotionActivityManager), and [`CMMovementDisorderManager`](https://developer.apple.com/documentation/CoreMotion/CMMovementDisorderManager). If you don’t include this key, your app will crash when it attempts to access motion data.
+> ❗ **Important**:  This key is required if your app uses APIs that access the device’s motion data, including [`CMSensorRecorder`](https://developer.apple.com/documentation/coremotion/cmsensorrecorder), [`CMPedometer`](https://developer.apple.com/documentation/coremotion/cmpedometer), [`CMMotionActivityManager`](https://developer.apple.com/documentation/coremotion/cmmotionactivitymanager), and [`CMMovementDisorderManager`](https://developer.apple.com/documentation/coremotion/cmmovementdisordermanager). If you don’t include this key, your app will crash when it attempts to access motion data.
 
 ## See Also
 

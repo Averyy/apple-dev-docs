@@ -14,11 +14,11 @@ Users can share a watch face that includes one of your app’s complications—e
 
 To share a face from Apple Watch, press firmly on the watch face. When the face configuration interface appears, select the share button and the contact or phone number with which to share the watch face. The watch then shares the watch face using Messages.
 
-![A screenshot of the configuration scene for the Meridian watch face. The share button is highlighted.](https://docs-assets.developer.apple.com/published/b4bfa9d32d80b9051ede5698f33c8977/media-3687796%402x.png)
+![A screenshot of the configuration scene for the Meridian watch face. The share button is highlighted.](/images/com.apple.clockkit/media-3687796@2x.png)
 
 On iOS, open the Apple Watch app, and select a watch face from the gallery. Then click the share button in the upper-right corner.
 
-![An image of an iPhone screen showing the Watch app’s detail scene for a configured Meridian watch face. The detail scene includes options for background color, dial color, and complications. In the top right corner, the share button is highlighted.”](https://docs-assets.developer.apple.com/published/18b15b41c2a2b4724d2523495868596b/media-3950623%402x.png)
+![An image of an iPhone screen showing the Watch app’s detail scene for a configured Meridian watch face. The detail scene includes options for background color, dial color, and complications. In the top right corner, the share button is highlighted.”](/images/com.apple.clockkit/media-3950623@2x.png)
 
 You can then share the watch face file using Messages, Mail, or other apps that support `.watchface` files. You can also save the watch face to Files. However, if you plan to share the watch face on your web page or in your app, always use email to share the face. Unlike the other share methods, email includes both the `.watchface` file and a preview of the face.
 
@@ -30,7 +30,7 @@ The resulting `.watchface` file contains information about the watch face, inclu
 
 When presenting a watch face from your app or on the web, always display a preview of the watch face, and a button that uses an official Add Watch Face asset.
 
-![A screenshot of one of the official Add Apple Watch Face assets, a button with rounded edges containing text and an icon of a stylized watch with an arrow pointing down.”](https://docs-assets.developer.apple.com/published/de29907c06a7a8b74930810dbb50470b/media-3687953%402x.png)
+![A screenshot of one of the official Add Apple Watch Face assets, a button with rounded edges containing text and an icon of a stylized watch with an arrow pointing down.”](/images/com.apple.clockkit/media-3687953@2x.png)
 
 The preview image from the shared email shows an illustrated bezel framing the face. You can display this image directly on websites and in watchOS and iOS apps. Alternatively, you can replace the illustrated bezel with a high-fidelity hardware bezels that you can download from [`Marketing Resources and Identity Guidelines`](https://developer.apple.comhttps://developer.apple.com/app-store/marketing/guidelines/) and composite onto the preview.
 
@@ -54,7 +54,7 @@ Finally, ClockKit calls your data source’s methods to populate the complicatio
 
 To offer a watch face directly in your app, customize and share one of the watch faces, emailing the .`watchface` file and preview to yourself. To embed the watch file in an app, drag both the `.watchface` file and the preview into Xcode to add them to the app’s bundle.
 
-![A screenshot of Xcode’s Project navigator, showing an example of dragging the My.watchface file into the iOS app’s bundle.](https://docs-assets.developer.apple.com/published/4b73efa02a89fa44f8c0874f81f5a0c2/media-3599969%402x.png)
+![A screenshot of Xcode’s Project navigator, showing an example of dragging the My.watchface file into the iOS app’s bundle.](/images/com.apple.clockkit/media-3599969@2x.png)
 
 You can share watch faces from either the watchOS app or the iOS companion app. For the iOS companion, drag the watch file into the iOS app group. For the watchOS app, drag the file into the WatchKit App group.
 
@@ -74,7 +74,7 @@ library.addWatchFace(at: url) { (error) in
 }
 ```
 
-Only add watch faces in response to the user tapping an Add Apple Watch Face button. In iOS, call the [`WCSession`](https://developer.apple.com/documentation/WatchConnectivity/WCSession) class’s [`isPaired`](https://developer.apple.com/documentation/WatchConnectivity/WCSession/isPaired) method to verify that the user has a paired Apple Watch before offering to add any watch faces.
+Only add watch faces in response to the user tapping an Add Apple Watch Face button. In iOS, call the [`WCSession`](https://developer.apple.com/documentation/watchconnectivity/wcsession) class’s [`isPaired`](https://developer.apple.com/documentation/watchconnectivity/wcsession/ispaired) method to verify that the user has a paired Apple Watch before offering to add any watch faces.
 
 > **Note**:  Some newer watch faces are available only on Apple Watch SE and Apple Watch Series 4 and later. Nike watch faces are only available on Apple Watch Nike, and Hermès watch faces on Apple Watch Hermès. If you share a watch face that isn’t available on all watches, check for errors when calling [`addWatchFace(at:completionHandler:)`](clkwatchfacelibrary/addwatchface(at:completionhandler:).md), and provide a face that anyone can install. For a list of watch faces, see [`Apple Watch faces and their features`](https://developer.apple.comhttps://support.apple.com/guide/watch/faces-and-features-apde9218b440/watchos).
 

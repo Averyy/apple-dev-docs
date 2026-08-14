@@ -21,7 +21,7 @@ A result code. See [`Result Codes`](core_printing#1670007.md).
 ## Parameters
 
 - `formatSrc`: The page format object to duplicate.
-- `formatDest`: The page format object to receive the copied settings. On return, this object contains the same settings as the   object.
+- `formatDest`: The page format object to receive the copied settings. On return, this object contains the same settings as the `formatSrc` object.
 
 ## See Also
 

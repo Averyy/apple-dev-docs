@@ -10,7 +10,7 @@ Linking your Reality Composer Pro project to an [`Xcode`](https://developer.appl
 
 You can also iterate on your scene (models, composition, shaders, physics, animation, and game logic) and build and run your app without leaving the editor. For more information about previewing content and running simulations, see [`Previewing content and running simulations`](realitycomposerpro-essentials-previewcontentrunsimulations.md).
 
-![An annotated demo screenshot showing the Reality Composer Pro and Xcode integration workflow.](https://docs-assets.developer.apple.com/published/27934496e598a666040f0a169decc78b/launchbar%402x.png)
+![An annotated demo screenshot showing the Reality Composer Pro and Xcode integration workflow.](/images/RealityComposerPro/launchbar@2x.png)
 
 > **Note**: Install Xcode 27 before linking Reality Composer Pro and Xcode projects.
 
@@ -21,7 +21,7 @@ To link to a new Xcode project, do the following:
 1. In the Launch Control toolbar, switch from **Simulate** to **Run with Xcode**.
 2. In the toolbar, next to **Run with Xcode**, select **Link an Xcode project**.
 
-![A screenshot of the Reality Composer Pro dialog for choosing options for a new Xcode project — bundle identifier, initial entity, immersive space, and so on.](https://docs-assets.developer.apple.com/published/d36750d794d74e470305177e3a20814d/RunWithXcode-XcodeLaunchBar%402x.png)
+![A screenshot of the Reality Composer Pro dialog for choosing options for a new Xcode project — bundle identifier, initial entity, immersive space, and so on.](/images/RealityComposerPro/RunWithXcode-XcodeLaunchBar@2x.png)
 
 1. If you are prompted to install a helper, select **Update**.
 2. Choose the options for your Xcode project:
@@ -36,7 +36,7 @@ To link to a new Xcode project, do the following:
 - Progressive — Lets you control how much of your surroundings remains visible.
 - Full — Shows only your app’s content (fully immersive).
 
-![A screenshot of the Reality Composer Pro Link an Xcode Project dialog.](https://docs-assets.developer.apple.com/published/0e0e899f1225f35acf2b5df864dfeb5f/NewXcodeProject%402x.png)
+![A screenshot of the Reality Composer Pro Link an Xcode Project dialog.](/images/RealityComposerPro/NewXcodeProject@2x.png)
 
 1. Click **Next**, and then choose a location for your Xcode project.
 

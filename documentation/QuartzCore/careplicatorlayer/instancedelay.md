@@ -54,7 +54,7 @@ replicatorLayer.instanceTransform = CATransform3DMakeRotation(angle, 0, 0, 1)
 
 The following illustration shows the result of the above code:
 
-![Activity monitor created with a replicator layer.](https://docs-assets.developer.apple.com/published/0b5763d877995b7dfa79b186f719ccf4/media-2776911%402x.png)
+![Activity monitor created with a replicator layer.](/images/com.apple.quartzcore/media-2776911@2x.png)
 
 ## See Also
 

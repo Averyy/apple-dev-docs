@@ -7,7 +7,7 @@ An atom that specifies how to interpret track input data.
 
 #### Overview
 
-For more information, see [`Input type atom ('  ty')`](input_type_atom.md).
+For more information, see [`Input type atom`](input_type_atom.md).
 
 ## See Also
 

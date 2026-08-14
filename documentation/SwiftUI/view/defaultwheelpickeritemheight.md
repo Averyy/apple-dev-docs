@@ -36,7 +36,7 @@ struct DefaultWheelPickerItemHeight: View {
 }
 ```
 
-![A screenshot showing the effect changing the height of picker wheel](https://docs-assets.developer.apple.com/published/0bee1da82c48cdfec06989ba7daeade4/SwiftUI-View-defaultWheelPickerItemHeight%402x.png)
+![A screenshot showing the effect changing the height of picker wheel](/images/com.apple.SwiftUI/SwiftUI-View-defaultWheelPickerItemHeight@2x.png)
 
 ## Parameters
 

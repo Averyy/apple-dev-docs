@@ -21,7 +21,7 @@ case layered
 
 #### Discussion
 
-The layout uses a single texture to store the content for all rendered views. The type of the texture is [`MTLTextureType.type2DArray`](https://developer.apple.com/documentation/Metal/MTLTextureType/type2DArray). The texture map’s slice index indicates which array slot contains each view’s content.
+The layout uses a single texture to store the content for all rendered views. The type of the texture is [`MTLTextureType.type2DArray`](https://developer.apple.com/documentation/metal/mtltexturetype/type2darray). The texture map’s slice index indicates which array slot contains each view’s content.
 
 ## See Also
 

@@ -23,7 +23,7 @@ class UIAccessibilityCustomAction
 
 Apps that support custom actions can create instances of this class, specifying the user-readable name of the action and the object and selector to use when performing the action. Assistive apps display custom actions in response to specific user cues. For example, VoiceOver lets users access actions quickly using the Actions rotor.
 
-After creating an instance of this class, add it to the [`accessibilityCustomActions`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class/accessibilityCustomActions) property of an appropriate accessible object.
+After creating an instance of this class, add it to the [`accessibilityCustomActions`](https://developer.apple.com/documentation/objectivec/nsobject-swift.class/accessibilitycustomactions) property of an appropriate accessible object.
 
 ## Topics
 
@@ -70,23 +70,23 @@ After creating an instance of this class, add it to the [`accessibilityCustomAct
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [Sendable](../Swift/Sendable.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [Sendable](../swift/sendable.md)
 
 ## See Also
 
-- [UIAccessibilityAction](../ObjectiveC/uiaccessibilityaction.md)
+- [UIAccessibilityAction](../objectivec/uiaccessibilityaction.md)
   A set of methods that accessibility elements can use to support specific actions.
 - [UIAccessibilityCustomAction.Handler](uiaccessibilitycustomaction/handler.md)
   A closure type that defines a handler to perform for an action.
-- [Delivering an exceptional accessibility experience](../Accessibility/delivering_an_exceptional_accessibility_experience.md)
+- [Delivering an exceptional accessibility experience](../accessibility/delivering_an_exceptional_accessibility_experience.md)
   Make improvements to your app’s interaction model to support assistive technologies such as VoiceOver.
 
 

@@ -20,7 +20,7 @@ static let url: UIApplication.LaunchOptionsKey
 
 #### Discussion
 
-The value of this key is an [`NSURL`](https://developer.apple.com/documentation/Foundation/NSURL) object containing the URL to open. This key is also used to access the same value in the `userInfo` dictionary of the notification named [`didFinishLaunchingNotification`](uiapplication/didfinishlaunchingnotification.md).
+The value of this key is an [`NSURL`](https://developer.apple.com/documentation/foundation/nsurl) object containing the URL to open. This key is also used to access the same value in the `userInfo` dictionary of the notification named [`didFinishLaunchingNotification`](uiapplication/didfinishlaunchingnotification.md).
 
 ## See Also
 

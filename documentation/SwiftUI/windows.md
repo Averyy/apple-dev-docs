@@ -8,13 +8,13 @@ Display user interface content in a window or a collection of windows.
 
 The most common way to present a view hierarchy in your app’s interface is with a [`WindowGroup`](windowgroup.md), which produces a platform-specific behavior and appearance.
 
-![None](https://docs-assets.developer.apple.com/published/9522b0ac981c7a46c7a0319092d0212b/windows-hero%402x.png)
+![None](/images/com.apple.SwiftUI/windows-hero@2x.png)
 
 On platforms that support it, people can open multiple windows from the group simultaneously. Each window relies on the same root view definition, but retains its own view state. On some platforms, you can also supplement your app’s user interface with a single-instance window using the [`Window`](window.md) scene type.
 
 Configure windows using scene modifiers that you add to the window declaration, like [`windowStyle(_:)`](scene/windowstyle(_:).md) or [`defaultPosition(_:)`](scene/defaultposition(_:).md). You can also indicate how to configure new windows that you present from a view hierarchy by adding the [`presentedWindowStyle(_:)`](view/presentedwindowstyle(_:).md) view modifier to a view in the hierarchy.
 
-For design guidance, see [`Windows`](https://developer.apple.com/design/Human-Interface-Guidelines/windows) in the Human Interface Guidelines.
+For design guidance, see [`Windows`](https://developer.apple.com/design/human-interface-guidelines/windows) in the Human Interface Guidelines.
 
 ## Topics
 
@@ -44,7 +44,7 @@ For design guidance, see [`Windows`](https://developer.apple.com/design/Human-In
 - [protocol WindowToolbarStyle](windowtoolbarstyle.md)
   A specification for the appearance and behavior of a window’s toolbar.
 ### Opening windows
-- [Presenting windows and spaces](../visionOS/presenting-windows-and-spaces.md)
+- [Presenting windows and spaces](../visionos/presenting-windows-and-spaces.md)
   Open and close the scenes that make up your app’s interface.
 - [var supportsMultipleWindows: Bool](environmentvalues/supportsmultiplewindows.md)
   A Boolean value that indicates whether the current platform supports opening multiple windows.
@@ -66,7 +66,7 @@ For design guidance, see [`Windows`](https://developer.apple.com/design/Human-In
 - [struct DismissBehavior](dismissbehavior.md)
   Programmatic window dismissal behaviors.
 ### Sizing a window
-- [Positioning and sizing windows](../visionOS/positioning-and-sizing-windows.md)
+- [Positioning and sizing windows](../visionos/positioning-and-sizing-windows.md)
   Influence the initial geometry of windows that your app presents.
 - [func defaultSize(_:)](scene/defaultsize(_:).md)
   Sets a default size for a window.

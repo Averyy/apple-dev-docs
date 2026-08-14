@@ -22,7 +22,7 @@ let kSecAttrDescription: CFString
 
 #### Discussion
 
-The corresponding value is of type [`CFString`](https://developer.apple.com/documentation/CoreFoundation/CFString) and specifies a user-visible string describing this kind of item (for example, “Disk image password”).
+The corresponding value is of type [`CFString`](https://developer.apple.com/documentation/corefoundation/cfstring) and specifies a user-visible string describing this kind of item (for example, “Disk image password”).
 
 
 ---

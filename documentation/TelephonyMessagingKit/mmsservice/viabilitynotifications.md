@@ -7,7 +7,6 @@ An asynchronous sequence of service viability notifications produced by the serv
 
 **Availability**:
 - iOS 26.0+
-- iPadOS 26.0+
 
 ## Declaration
 

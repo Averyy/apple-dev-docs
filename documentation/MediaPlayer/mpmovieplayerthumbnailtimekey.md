@@ -17,7 +17,7 @@ let MPMoviePlayerThumbnailTimeKey: String
 
 #### Discussion
 
-The value of this key is a [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) object containing a double value. This value represents the actual time (measured in seconds) from the beginning of the movie at which the image was captured.
+The value of this key is a [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) object containing a double value. This value represents the actual time (measured in seconds) from the beginning of the movie at which the image was captured.
 
 ## See Also
 

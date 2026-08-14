@@ -27,7 +27,7 @@ Before you begin developing drivers for your hardware, request the entitlements 
 2. Apply for the DriverKit entitlement and specify the entitlements you need.
 3. Provide a description of the apps you’ll use to support your hardware.
 
-Apple ties any requested entitlements to your development team’s profile. When making the request, specify the complete set of entitlements you use to support one product. For example, when developing HID devices, you might ask Apple to create a single group that contains the [`com.apple.developer.driverkit`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.driverkit), [`com.apple.developer.driverkit.transport.hid`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.driverkit.transport.hid), and [`com.apple.developer.driverkit.family.hid.eventservice`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.driverkit.family.hid.eventservice) entitlements. All of the requested entitlements must belong to the same group.
+Apple ties any requested entitlements to your development team’s profile. When making the request, specify the complete set of entitlements you use to support one product. For example, when developing HID devices, you might ask Apple to create a single group that contains the [`com.apple.developer.driverkit`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.driverkit), [`com.apple.developer.driverkit.transport.hid`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.driverkit.transport.hid), and [`com.apple.developer.driverkit.family.hid.eventservice`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.driverkit.family.hid.eventservice) entitlements. All of the requested entitlements must belong to the same group.
 
 > **Note**:  While waiting for Apple to grant your entitlement requests, you can continue to develop and test your drivers on your local systems. For information about how to disable the necessary security checks, see [`Debugging and testing system extensions`](debugging-and-testing-system-extensions.md).
 
@@ -37,8 +37,8 @@ Xcode provides a default entitlements file for every new DriverKit driver you cr
 
 Edit your driver’s entitlements file and add the entitlements that match the services your driver offers. The default driver entitlements file contains only the DriverKit and App Sandbox entitlements. Most drivers require a transport-specific entitlement to tell the system what type of hardware they support. For example, a driver that implements an event service to communicate with a HID device must include the following entitlements in its entitlements file:
 
-- [`com.apple.developer.driverkit.transport.hid`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.driverkit.transport.hid)
-- [`com.apple.developer.driverkit.family.hid.eventservice`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.driverkit.family.hid.eventservice)
+- [`com.apple.developer.driverkit.transport.hid`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.driverkit.transport.hid)
+- [`com.apple.developer.driverkit.family.hid.eventservice`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.driverkit.family.hid.eventservice)
 
 When activating your driver, the system validates the entitlements in your driver’s entitlements file with the information you used to codesign your driver. If the entitlements don’t match, the system aborts the activation process.
 
@@ -68,15 +68,15 @@ For more information about how to install drivers, see `Installing System Extens
 
 ## See Also
 
-- [com.apple.developer.driverkit](../BundleResources/Entitlements/com.apple.developer.driverkit.md)
+- [com.apple.developer.driverkit](../bundleresources/entitlements/com.apple.developer.driverkit.md)
   A Boolean value that indicates whether your extension has permission to run as a user-space driver.
-- [com.apple.developer.driverkit.userclient-access](../BundleResources/Entitlements/com.apple.developer.driverkit.userclient-access.md)
+- [com.apple.developer.driverkit.userclient-access](../bundleresources/entitlements/com.apple.developer.driverkit.userclient-access.md)
   An array of strings that represent macOS driver extensions that may communicate with other DriverKit services.
-- [com.apple.developer.driverkit.allow-any-userclient-access](../BundleResources/Entitlements/com.apple.developer.driverkit.allow-any-userclient-access.md)
+- [com.apple.developer.driverkit.allow-any-userclient-access](../bundleresources/entitlements/com.apple.developer.driverkit.allow-any-userclient-access.md)
   A Boolean value that determines whether a macOS driver accepts user client connections from any application.
-- [Communicates with Drivers](../BundleResources/Entitlements/com.apple.developer.driverkit.communicates-with-drivers.md)
+- [Communicates with Drivers](../bundleresources/entitlements/com.apple.developer.driverkit.communicates-with-drivers.md)
   A Boolean value that indicates whether an iPadOS app can communicate with drivers.
-- [DriverKit Allow Third Party User Clients](../BundleResources/Entitlements/com.apple.developer.driverkit.allow-third-party-userclients.md)
+- [DriverKit Allow Third Party User Clients](../bundleresources/entitlements/com.apple.developer.driverkit.allow-third-party-userclients.md)
   A Boolean value that indicates whether an iPadOS driver accepts calls from third-party user clients.
 
 

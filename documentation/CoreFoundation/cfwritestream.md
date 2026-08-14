@@ -24,7 +24,7 @@ class CFWriteStream
 
 Use [`CFReadStream`](cfreadstream.md) for reading byte streams, and for the functions, such as [`CFStreamCreatePairWithSocketToHost(_:_:_:_:_:)`](cfstreamcreatepairwithsockettohost(_:_:_:_:_:).md), that create socket streams).
 
-`CFWriteStream` is “toll-free bridged” with its Cocoa Foundation counterpart, [`OutputStream`](https://developer.apple.com/documentation/Foundation/OutputStream). This means that the Core Foundation type is interchangeable in function or method calls with the bridged Foundation object. Therefore, in a method where you see an `NSOutputStream *` parameter, you can pass in a `CFWriteStreamRef`, and in a function where you see a `CFWriteStreamRef` parameter, you can pass in an `NSOutputStream` instance. Note, however, that you may have either a delegate or callbacks but not both. See [`Toll-Free Bridged Types`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFDesignConcepts/Articles/tollFreeBridgedTypes.html#//apple_ref/doc/uid/TP40010677) for more information on toll-free bridging.
+`CFWriteStream` is “toll-free bridged” with its Cocoa Foundation counterpart, [`OutputStream`](https://developer.apple.com/documentation/foundation/outputstream). This means that the Core Foundation type is interchangeable in function or method calls with the bridged Foundation object. Therefore, in a method where you see an `NSOutputStream *` parameter, you can pass in a `CFWriteStreamRef`, and in a function where you see a `CFWriteStreamRef` parameter, you can pass in an `NSOutputStream` instance. Note, however, that you may have either a delegate or callbacks but not both. See [`Toll-Free Bridged Types`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFDesignConcepts/Articles/tollFreeBridgedTypes.html#//apple_ref/doc/uid/TP40010677) for more information on toll-free bridging.
 
 ## Topics
 
@@ -74,8 +74,8 @@ Use [`CFReadStream`](cfreadstream.md) for reading byte streams, and for the func
 ## Relationships
 
 ### Conforms To
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
 
 ## See Also
 

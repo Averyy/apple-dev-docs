@@ -41,7 +41,7 @@ func depthToDisparity(inputImage: CIImage) -> CIImage {
 }
 ```
 
-![Two photographs of a small dog sitting on grass. The photo on the left shows the dog in the foreground with good light and a soft blur of the background. In the photo on the right, a depth-to-disparity filter is applied, resulting in a depth map created from the photo on the left. The dog in the photo and the ground are replaced with gray, and the background is replaced with white.](https://docs-assets.developer.apple.com/published/243359bef711c87c345432eaf232433d/media-3598060%402x.png)
+![Two photographs of a small dog sitting on grass. The photo on the left shows the dog in the foreground with good light and a soft blur of the background. In the photo on the right, a depth-to-disparity filter is applied, resulting in a depth map created from the photo on the left. The dog in the photo and the ground are replaced with gray, and the background is replaced with white.](/images/com.apple.coreimage/media-3598060@2x.png)
 
 ## See Also
 

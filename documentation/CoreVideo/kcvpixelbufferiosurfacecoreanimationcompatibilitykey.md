@@ -21,7 +21,7 @@ let kCVPixelBufferIOSurfaceCoreAnimationCompatibilityKey: CFString
 
 #### Discussion
 
-The value for this key is of type [`CFBoolean`](https://developer.apple.com/documentation/CoreFoundation/CFBoolean). You can use this key instead of explicit pixel format keys. When you use this key with other media frameworks, [`Video Toolbox`](https://developer.apple.com/documentation/VideoToolbox) chooses the best pixel format for Core Animation to use.
+The value for this key is of type [`CFBoolean`](https://developer.apple.com/documentation/corefoundation/cfboolean). You can use this key instead of explicit pixel format keys. When you use this key with other media frameworks, [`Video Toolbox`](https://developer.apple.com/documentation/videotoolbox) chooses the best pixel format for Core Animation to use.
 
 ## See Also
 

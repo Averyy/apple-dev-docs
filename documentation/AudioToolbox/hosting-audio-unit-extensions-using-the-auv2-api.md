@@ -10,7 +10,7 @@ The latest Audio Unit standard, AUv3, provides a robust plug-in model built on a
 
 With only minor modifications to your existing AUv2 host app, you’re able to load and interact with Audio Unit extensions. The framework provides a bridging layer that automatically translates AUv2 calls into their AUv3 equivalents, and vice versa. This bridging is largely transparent to your app, and you’re only required to make minor changes to how you instantiate components and access their user interfaces.
 
-![A component diagram that shows the bridging support provided by the framework.](https://docs-assets.developer.apple.com/published/905c919679c026e3a9b37e5404a6f49c/media-3526605%402x.png)
+![A component diagram that shows the bridging support provided by the framework.](/images/com.apple.audiotoolbox/media-3526605@2x.png)
 
 > **Note**:  AUv2 is in maintenance mode, and it’s recommended that you adopt the AUv3 API for new development.
 

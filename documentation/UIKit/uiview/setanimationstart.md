@@ -19,7 +19,7 @@ class func setAnimationStart(_ startDate: Date)
 
 #### Discussion
 
-Call this method between the [`beginAnimations(_:context:)`](uiview/beginanimations(_:context:).md) and [`commitAnimations()`](uiview/commitanimations().md) methods to specify the start time for that set of animations. And call this method prior to changing the animatable properties of your views. (Do not call this method in conjunction with a block-based animation.) If you do not call this method, the start time is set to the value returned by the [`CFAbsoluteTimeGetCurrent()`](https://developer.apple.com/documentation/CoreFoundation/CFAbsoluteTimeGetCurrent()) function, which begins the animations as soon as possible.
+Call this method between the [`beginAnimations(_:context:)`](uiview/beginanimations(_:context:).md) and [`commitAnimations()`](uiview/commitanimations().md) methods to specify the start time for that set of animations. And call this method prior to changing the animatable properties of your views. (Do not call this method in conjunction with a block-based animation.) If you do not call this method, the start time is set to the value returned by the [`CFAbsoluteTimeGetCurrent()`](https://developer.apple.com/documentation/corefoundation/cfabsolutetimegetcurrent()) function, which begins the animations as soon as possible.
 
 Use of this method is discouraged in iOS 4.0 and later. You should use the block-based animation methods to specify your animations instead.
 

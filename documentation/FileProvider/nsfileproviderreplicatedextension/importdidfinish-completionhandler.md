@@ -22,7 +22,7 @@ optional func importDidFinish() async
 
 > ❗ **Important**:  You can call this method from synchronous code using a completion handler, as shown on this page, or you can call it as an asynchronous method that has the following declaration: ```swift
 optional func importDidFinish() async
-``` For information about concurrency and asynchronous code in Swift, see [`Calling Objective-C APIs Asynchronously`](https://developer.apple.com/documentation/Swift/calling-objective-c-apis-asynchronously).
+``` For information about concurrency and asynchronous code in Swift, see [`Calling Objective-C APIs Asynchronously`](https://developer.apple.com/documentation/swift/calling-objective-c-apis-asynchronously).
 
 The system calls this method after importing on-disk items. You can trigger an import by calling either [`reimportItems(below:completionHandler:)`](nsfileprovidermanager/reimportitems(below:completionhandler:).md) or [`import(_:fromDirectoryAt:completionHandler:)`](nsfileprovidermanager/import(_:fromdirectoryat:completionhandler:).md). The system can also initiate its own imports as needed.
 

@@ -20,7 +20,7 @@ You can turn any menu into a palette menu by setting the menu’s presentation s
 
 The following example creates a presentation style menu that displays a list of sport images. When a menu item selects, the system automatically tints the image.
 
-![A palette style menu that expands to the right from a selected sports menu item listing a series of sport images horizonally. The second item in the list is tinted indicating selection.](https://docs-assets.developer.apple.com/published/8563e34565a1851e905ce287868a8bb1/media-4304532%402x.png)
+![A palette style menu that expands to the right from a selected sports menu item listing a series of sport images horizonally. The second item in the list is tinted indicating selection.](/images/com.apple.appkit/media-4304532@2x.png)
 
 **Swift**:
 

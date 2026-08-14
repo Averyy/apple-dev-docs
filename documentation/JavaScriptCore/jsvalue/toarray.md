@@ -25,7 +25,7 @@ The array representation of the value.
 
 #### Discussion
 
-If the value is a JavaScript object, this method reads the object’s `length` property as an unsigned integer, creates an [`NSArray`](https://developer.apple.com/documentation/Foundation/NSArray) object of the corresponding size, and recursively copies and converts any properties corresponding to indices within the array bounds. JavaScript converts each element to a native object using the rules listed in [`Convert Between JavaScript and Native Types`](jsvalue#Convert-Between-JavaScript-and-Native-Types.md).
+If the value is a JavaScript object, this method reads the object’s `length` property as an unsigned integer, creates an [`NSArray`](https://developer.apple.com/documentation/foundation/nsarray) object of the corresponding size, and recursively copies and converts any properties corresponding to indices within the array bounds. JavaScript converts each element to a native object using the rules listed in [`Convert Between JavaScript and Native Types`](jsvalue#Convert-Between-JavaScript-and-Native-Types.md).
 
 This method returns `nil` if the JavaScript value is `null` or `undefined`, and throws a JavaScript `TypeError` if the value is not a JavaScript object.
 
@@ -44,7 +44,7 @@ This method returns `nil` if the JavaScript value is `null` or `undefined`, and 
 - [func toUInt32() -> UInt32](jsvalue/touint32.md)
   Converts the JavaScript value to a native unsigned integer value.
 - [func toNumber() -> NSNumber!](jsvalue/tonumber.md)
-  Converts the JavaScript value to a [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) object.
+  Converts the JavaScript value to a [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) object.
 - [func toString() -> String!](jsvalue/tostring.md)
   Converts the JavaScript value to a native string.
 - [func toDate() -> Date!](jsvalue/todate.md)

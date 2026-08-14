@@ -12,7 +12,7 @@ Notarize your macOS software to give users more confidence that the Developer I
 
 When the user first installs or runs your macOS software, the presence of a ticket (either online or attached to the executable) tells Gatekeeper that Apple notarized the software. Gatekeeper then places descriptive information in the initial launch dialog to help the user make an informed choice about whether to launch the app.
 
-![Screenshot of the dialog that Gatekeeper presents to let the user know that Apple notarized the app being launched.](https://docs-assets.developer.apple.com/published/b2081589ce2ff78adb65abc46f84dd64/media-3088610%402x.png)
+![Screenshot of the dialog that Gatekeeper presents to let the user know that Apple notarized the app being launched.](/images/com.apple.security/media-3088610@2x.png)
 
 You can notarize several different types of software deliverables, including:
 
@@ -30,7 +30,7 @@ Notarization also protects your users if your Developer ID signing key is expose
 Apple’s notary service requires you to adopt the following protections:
 
 - Enable code-signing for all of the executables you distribute, and ensure that executables have valid code signatures, as described in [`Ensure a valid code signature`](resolving-common-notarization-issues#Ensure-a-valid-code-signature.md).
-- Use a “Developer ID” application, kernel extension, system extension, or installer certificate for your code-signing signature. (Don’t use a Mac Distribution, ad hoc, Apple Developer, or local development certificate.) Verify the certificate type before submitting, as described in [`Use a valid Developer ID certificate`](resolving-common-notarization-issues#Use-a-valid-Developer-ID-certificate.md). For more information, see [`Synchronizing code signing identities with your developer account`](https://developer.apple.com/documentation/Xcode/sharing-your-teams-signing-certificates).
+- Use a “Developer ID” application, kernel extension, system extension, or installer certificate for your code-signing signature. (Don’t use a Mac Distribution, ad hoc, Apple Developer, or local development certificate.) Verify the certificate type before submitting, as described in [`Use a valid Developer ID certificate`](resolving-common-notarization-issues#Use-a-valid-Developer-ID-certificate.md). For more information, see [`Synchronizing code signing identities with your developer account`](https://developer.apple.com/documentation/xcode/sharing-your-teams-signing-certificates).
 - Enable the Hardened Runtime capability for your app and command line targets, as described in [`Enable hardened runtime`](https://developer.apple.comhttps://help.apple.com/xcode/mac/current/#/devf87a2ac8f).
 - Include a secure timestamp with your code-signing signature. (The Xcode distribution workflow includes a secure timestamp by default. For custom workflows, see [`Include a secure timestamp`](resolving-common-notarization-issues#Include-a-secure-timestamp.md).)
 - Don’t include the `com.apple.security.get-task-allow` entitlement with the value set to any variation of `true`. If your software hosts third-party plug-ins and needs this entitlement to debug the plug-in in the context of a host executable, see [`Avoid the get-task-allow entitlement`](resolving-common-notarization-issues#Avoid-the-get-task-allow-entitlement.md).
@@ -49,15 +49,15 @@ In macOS 10.15 and later, apps can load quarantined plug-ins — those downloade
 
 When you enable the extra security enforced by the hardened runtime, as notarization requires, this impacts both your app and any plug-ins that your app hosts. Plug-ins don’t declare their own entitlements. Instead, they inherit the entitlements of the host process. Therefore, a host app must include all the entitlements that prospective plug-ins require, even when the plug-ins are notarized separately.
 
-For example, if a plug-in employs deep integration with the host executable via C function pointer overrides, or uses a JavaScript engine for custom workflows, the host executable must declare the [`Allow Unsigned Executable Memory Entitlement`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.security.cs.allow-unsigned-executable-memory) or [`Allow execution of JIT-compiled code entitlement`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.security.cs.allow-jit), respectively. In some cases, a plug-in fails to even load if the host executable lacks the proper entitlement.
+For example, if a plug-in employs deep integration with the host executable via C function pointer overrides, or uses a JavaScript engine for custom workflows, the host executable must declare the [`Allow Unsigned Executable Memory Entitlement`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.security.cs.allow-unsigned-executable-memory) or [`Allow execution of JIT-compiled code entitlement`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.security.cs.allow-jit), respectively. In some cases, a plug-in fails to even load if the host executable lacks the proper entitlement.
 
-Be aware that even if your app doesn’t provide a dedicated plug-in architecture, it might still load plug-ins, like drivers for professional mirrorless cameras and legacy DSLR cameras that don’t conform to the driverless USB video device class (UVC) standard. If your app works with this kind of hardware, be sure to declare the [`Disable Library Validation Entitlement`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.security.cs.disable-library-validation) to load the corresponding plug-ins.
+Be aware that even if your app doesn’t provide a dedicated plug-in architecture, it might still load plug-ins, like drivers for professional mirrorless cameras and legacy DSLR cameras that don’t conform to the driverless USB video device class (UVC) standard. If your app works with this kind of hardware, be sure to declare the [`Disable Library Validation Entitlement`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.security.cs.disable-library-validation) to load the corresponding plug-ins.
 
-Also include resource access entitlements, like the Address Book or Location access entitlements, and the related purpose strings, that support your app’s plug-ins. For example, if a Print Dialog Extension (PDE) that provides fax services wants to access a user’s contact list, the host executable must declare the [`Address book entitlement`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.security.personal-information.addressbook) and include the [`NSContactsUsageDescription`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSContactsUsageDescription) purpose string in its [`Information Property List`](https://developer.apple.com/documentation/BundleResources/Information-Property-List) for the plug-in to operate.
+Also include resource access entitlements, like the Address Book or Location access entitlements, and the related purpose strings, that support your app’s plug-ins. For example, if a Print Dialog Extension (PDE) that provides fax services wants to access a user’s contact list, the host executable must declare the [`Address book entitlement`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.security.personal-information.addressbook) and include the [`NSContactsUsageDescription`](https://developer.apple.com/documentation/bundleresources/information-property-list/nscontactsusagedescription) purpose string in its [`Information Property List`](https://developer.apple.com/documentation/bundleresources/information-property-list) for the plug-in to operate.
 
-For a complete list of hardened runtime entitlements, see [`Hardened Runtime`](hardened-runtime.md). For information about usage strings, see [`Requesting access to protected resources`](https://developer.apple.com/documentation/UIKit/requesting-access-to-protected-resources).
+For a complete list of hardened runtime entitlements, see [`Hardened Runtime`](hardened-runtime.md). For information about usage strings, see [`Requesting access to protected resources`](https://developer.apple.com/documentation/uikit/requesting-access-to-protected-resources).
 
-> ❗ **Important**:  In macOS 10.14.x, for executables using the hardened runtime, PDEs load only if the host executable has the [`Disable Library Validation Entitlement`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.security.cs.disable-library-validation). Beginning in macOS 10.15, the entitlement is no longer needed.
+> ❗ **Important**:  In macOS 10.14.x, for executables using the hardened runtime, PDEs load only if the host executable has the [`Disable Library Validation Entitlement`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.security.cs.disable-library-validation). Beginning in macOS 10.15, the entitlement is no longer needed.
 
 ##### Notarize Your App Automatically As Part of the Distribution Process
 
@@ -73,7 +73,7 @@ Before distributing your app directly to customers, your Account Holder must sig
 8. Choose Upload to send your archive to the Apple notary service.
 9. Click Next.
 
-![Screenshot of Xcode’s Organizer window showing the Upload and Export destination options for a given archive.](https://docs-assets.developer.apple.com/published/0817197929a5248c68239ffc6d086a12/media-3563049%402x.png)
+![Screenshot of Xcode’s Organizer window showing the Upload and Export destination options for a given archive.](/images/com.apple.security/media-3563049@2x.png)
 
 When you click Next, Xcode uploads your archive to the notary service. When the upload is complete, the notary service begins the scanning process, which usually takes less than an hour. While the notary service scans your software, you can continue to prepare your archive for distribution. For example, you can export the archive and perform any final testing that you require prior to making your software available to customers.
 
@@ -97,7 +97,7 @@ For tips on how to resolve issues that can occur during notarization, see [`Reso
 
 ##### Add a Notarization Step to Your Build Scripts
 
-If you use an automated build system, you can integrate the notarization process into your existing build scripts. The `notarytool` and `stapler` command-line tools (included with Xcode) allow you to upload your software to the Apple notary service, and to staple the resulting ticket to your executable. Alternatively, you can interact directly with the notary service using the [`Notary API`](https://developer.apple.com/documentation/NotaryAPI).
+If you use an automated build system, you can integrate the notarization process into your existing build scripts. The `notarytool` and `stapler` command-line tools (included with Xcode) allow you to upload your software to the Apple notary service, and to staple the resulting ticket to your executable. Alternatively, you can interact directly with the notary service using the [`Notary API`](https://developer.apple.com/documentation/notaryapi).
 
 For information about how to incorporate notarization into your custom build scripts, see [`Customizing the notarization workflow`](customizing-the-notarization-workflow.md).
 
@@ -111,7 +111,7 @@ For information about how to incorporate notarization into your custom build scr
 
 ## See Also
 
-- [Notary API](../NotaryAPI/NotaryAPI.md)
+- [Notary API](../notaryapi/notaryapi.md)
   Submit your macOS software for notarization through a web interface.
 
 

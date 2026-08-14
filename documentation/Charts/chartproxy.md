@@ -22,7 +22,7 @@ struct ChartProxy
 
 #### Overview
 
-You get a chart proxy from the [`chartOverlay(alignment:content:)`](https://developer.apple.com/documentation/SwiftUI/View/chartOverlay(alignment:content:)) and [`chartBackground(alignment:content:)`](https://developer.apple.com/documentation/SwiftUI/View/chartBackground(alignment:content:)) modifiers. You can use the chart proxy to convert data values to screen coordinates or vice-versa.
+You get a chart proxy from the [`chartOverlay(alignment:content:)`](https://developer.apple.com/documentation/swiftui/view/chartoverlay(alignment:content:)) and [`chartBackground(alignment:content:)`](https://developer.apple.com/documentation/swiftui/view/chartbackground(alignment:content:)) modifiers. You can use the chart proxy to convert data values to screen coordinates or vice-versa.
 
 Below is an example where we convert the screen coordinates from a drag gesture to data values.
 

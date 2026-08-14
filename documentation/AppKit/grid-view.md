@@ -20,7 +20,7 @@ Arrange views in a flexible grid, and handle the layout associated with those vi
 
 ## See Also
 
-- [Localization-friendly layouts in macOS](../Xcode/localization-friendly-layouts-in-macos.md)
+- [Localization-friendly layouts in macOS](../xcode/localization-friendly-layouts-in-macos.md)
   This project demonstrates localization-friendly auto layout constraints.
 - [class NSSplitView](nssplitview.md)
   A view that arranges two or more views in a linear stack running horizontally or vertically.

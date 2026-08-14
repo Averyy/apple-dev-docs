@@ -42,7 +42,7 @@ struct SourceTextureArguments {
 
 This argument buffer is backed by the `_sourceTextures` buffer and is accessed via the `source_textures` variable in the `updateInstances` function.  `source_textures` is a pointer to an unbounded array of structures, each of which contains a reference to a texture.
 
-![Layout diagram that shows an array of textures encoded into an argument buffer as an array of references to those textures.](https://docs-assets.developer.apple.com/published/d20980e05ff4b20567b8be3f7355565d/argument-buffers-gpu-encoding-1-ArgumentBuffer.png)
+![Layout diagram that shows an array of textures encoded into an argument buffer as an array of references to those textures.](/images/com.apple.metal/argument-buffers-gpu-encoding-1-ArgumentBuffer.png)
 
 After initialization, for each frame, the sample encodes data with the GPU into a separate argument buffer defined by the `InstanceArguments` structure.
 
@@ -56,7 +56,7 @@ struct InstanceArguments {
 
 This argument buffer is backed by the `_instanceParameters` buffer and is accessed via the `instance_params` variable in the `updateInstances`, `vertexShader`, and `fragmentShader` functions. `instance_params` is an array of structures whose data is populated in a compute pass and then accessed in a render pass via an instanced draw call.
 
-![Layout diagram that shows an array of structures as an argument buffer.](https://docs-assets.developer.apple.com/published/3174a0fbcd32dc95b8346b305fc30c35/argument-buffers-gpu-encoding-2-ArgumentBuffer.png)
+![Layout diagram that shows an array of structures as an argument buffer.](/images/com.apple.metal/argument-buffers-gpu-encoding-2-ArgumentBuffer.png)
 
 ##### Create an Array of Argument Buffer Structures
 

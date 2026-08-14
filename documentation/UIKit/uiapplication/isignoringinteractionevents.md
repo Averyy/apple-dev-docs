@@ -21,7 +21,7 @@ var isIgnoringInteractionEvents: Bool { get }
 
 The value of this property is
 
-[`true`](https://developer.apple.com/documentation/Swift/true) if the receiver is ignoring interaction events and if the nested [`beginIgnoringInteractionEvents()`](uiapplication/beginignoringinteractionevents().md) and [`endIgnoringInteractionEvents()`](uiapplication/endignoringinteractionevents().md) calls are at least one level deep; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
+[`true`](https://developer.apple.com/documentation/swift/true) if the receiver is ignoring interaction events and if the nested [`beginIgnoringInteractionEvents()`](uiapplication/beginignoringinteractionevents().md) and [`endIgnoringInteractionEvents()`](uiapplication/endignoringinteractionevents().md) calls are at least one level deep; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
 
 ## See Also
 

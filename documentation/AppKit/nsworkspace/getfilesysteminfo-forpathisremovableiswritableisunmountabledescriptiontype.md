@@ -16,7 +16,7 @@ func getFileSystemInfo(forPath fullPath: String, isRemovable removableFlag: Unsa
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/Swift/true) if the information was returned; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
+[`true`](https://developer.apple.com/documentation/swift/true) if the information was returned; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
 
 #### Discussion
 
@@ -25,9 +25,9 @@ You can safely call this method from any thread of your app.
 ## Parameters
 
 - `fullPath`: The path to the file system mount point.
-- `removableFlag`: On input, a Boolean variable; on return, this variable contains [`true`](https://developer.apple.com/documentation/Swift/true) if the file system is on removable media.
-- `writableFlag`: On input, a Boolean variable; on return, this variable contains [`true`](https://developer.apple.com/documentation/Swift/true) if the file system writable.
-- `unmountableFlag`: On input, a Boolean variable; on return, this variable contains [`true`](https://developer.apple.com/documentation/Swift/true) if the file system is unmountable.
+- `removableFlag`: On input, a Boolean variable; on return, this variable contains [`true`](https://developer.apple.com/documentation/swift/true) if the file system is on removable media.
+- `writableFlag`: On input, a Boolean variable; on return, this variable contains [`true`](https://developer.apple.com/documentation/swift/true) if the file system writable.
+- `unmountableFlag`: On input, a Boolean variable; on return, this variable contains [`true`](https://developer.apple.com/documentation/swift/true) if the file system is unmountable.
 - `description`: On input, a pointer to a string object variable; on return, if the method was successful, this variable contains a string object that describes the file system. You should not rely on this description for program logic but can use it in message strings. Values can include  “hard,” “nfs,” and “foreign.”
 - `fileSystemType`: On input, a pointer to a string object variable; on return, if the method was successful, this variable contains the file system type. Values can include “HFS,” “UFS,” or other values.
 

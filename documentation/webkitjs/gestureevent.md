@@ -21,6 +21,10 @@ interface GestureEvent
 
 The different types of `GestureEvent` objects that can occur are:
 
+- **`gesturestart`**: Sent when two or more fingers touch the surface.
+- **`gesturechange`**: Sent when fingers are moved during a gesture.
+- **`gestureend`**: Sent when the gesture ends (when there are 1 or 0 fingers touching the surface).
+
 For example, for a two finger multi-touch gesture, the events occur in the following sequence:
 
 1. `touchstart` for finger 1. Sent when the first finger touches the surface.

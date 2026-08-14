@@ -22,7 +22,7 @@ let MPMediaItemPropertyAlbumArtist: String
 
 #### Discussion
 
-This value is an [`NSString`](https://developer.apple.com/documentation/Foundation/NSString) object.
+This value is an [`NSString`](https://developer.apple.com/documentation/foundation/nsstring) object.
 
 Can be used to build a media property predicate as described in [`MPMediaPropertyPredicate`](mpmediapropertypredicate.md).
 

@@ -12,7 +12,7 @@ Share data between iPad apps during a drag and drop operation using an item prov
 
 #### Overview
 
-With drag and drop, users can copy data from one iPad app to another. The data is shared between the apps using an [`NSItemProvider`](https://developer.apple.com/documentation/Foundation/NSItemProvider) object. This sample code project shows how to use an item provider to:
+With drag and drop, users can copy data from one iPad app to another. The data is shared between the apps using an [`NSItemProvider`](https://developer.apple.com/documentation/foundation/nsitemprovider) object. This sample code project shows how to use an item provider to:
 
 - Share a contact that the user drags from the sample iPad app and drops into another app.
 - Retrieve contact information that the user drags from another app and drops into the sample app.
@@ -52,15 +52,15 @@ func tableView(_ tableView: UITableView,
 
 > **Note**: For information on how to select multiple items for a drag and drop operation using the Simulator, see [`Simulate drag and drop on iOS`](https://developer.apple.comhttps://help.apple.com/simulator/mac/current/index.html?localePath=en.lproj#/devef03b3518).
 
-In both cases, the [`UITableViewDragDelegate`](uitableviewdragdelegate.md) methods create item providers using instances of the `ContactCard` class. This class implements the [`NSItemProviderWriting`](https://developer.apple.com/documentation/Foundation/NSItemProviderWriting) protocol, making it possible to initialize a new item provider with a contact card object.
+In both cases, the [`UITableViewDragDelegate`](uitableviewdragdelegate.md) methods create item providers using instances of the `ContactCard` class. This class implements the [`NSItemProviderWriting`](https://developer.apple.com/documentation/foundation/nsitemproviderwriting) protocol, making it possible to initialize a new item provider with a contact card object.
 
-By conforming to this protocol, a contact card object can tell the item provider the data types it supports; the sample app supports vCard and plain text. A contact card can also load data of a specified type, which an item provider retrieves by calling the contact card’s [`loadData(withTypeIdentifier:forItemProviderCompletionHandler:)`](https://developer.apple.com/documentation/Foundation/NSItemProviderWriting/loadData(withTypeIdentifier:forItemProviderCompletionHandler:)) method.
+By conforming to this protocol, a contact card object can tell the item provider the data types it supports; the sample app supports vCard and plain text. A contact card can also load data of a specified type, which an item provider retrieves by calling the contact card’s [`loadData(withTypeIdentifier:forItemProviderCompletionHandler:)`](https://developer.apple.com/documentation/foundation/nsitemproviderwriting/loaddata(withtypeidentifier:foritemprovidercompletionhandler:)) method.
 
 ##### Add Drop Support
 
-When the user drops contact information from another app into the sample app, the system calls the [`tableView(_:performDropWith:)`](uitableviewdropdelegate/tableview(_:performdropwith:).md) method. `ContactsTableViewController` implements this method to handle the drop operation. The implementation of the method uses the drop item’s item provider to call [`loadObject(ofClass:completionHandler:)`](https://developer.apple.com/documentation/Foundation/NSItemProvider/loadObject(ofClass:completionHandler:)-8ak5d), which retrieves a `ContactCard` object representing the dropped contact information.
+When the user drops contact information from another app into the sample app, the system calls the [`tableView(_:performDropWith:)`](uitableviewdropdelegate/tableview(_:performdropwith:).md) method. `ContactsTableViewController` implements this method to handle the drop operation. The implementation of the method uses the drop item’s item provider to call [`loadObject(ofClass:completionHandler:)`](https://developer.apple.com/documentation/foundation/nsitemprovider/loadobject(ofclass:completionhandler:)-8ak5d), which retrieves a `ContactCard` object representing the dropped contact information.
 
-The `loadObject` method asks the `ContactCard` class for the contact card object. The class, which conforms to the [`NSItemProviderReading`](https://developer.apple.com/documentation/Foundation/NSItemProviderReading) protocol, implements the [`object(withItemProviderData:typeIdentifier:)`](https://developer.apple.com/documentation/Foundation/NSItemProviderReading/object(withItemProviderData:typeIdentifier:)) class method, which creates and initializes a contact card object with the item provider data.
+The `loadObject` method asks the `ContactCard` class for the contact card object. The class, which conforms to the [`NSItemProviderReading`](https://developer.apple.com/documentation/foundation/nsitemproviderreading) protocol, implements the [`object(withItemProviderData:typeIdentifier:)`](https://developer.apple.com/documentation/foundation/nsitemproviderreading/object(withitemproviderdata:typeidentifier:)) class method, which creates and initializes a contact card object with the item provider data.
 
 When the user drops a contact at a specific location within the table view, the completion handler (from the `loadObject` call) creates a placeholder that displays a gap at the drop location. Next, the handler inserts the dropped contact into the list of contacts at the index path of the drop location. And finally, the completion handler replaces the placeholder with a view displaying the contact.
 
@@ -117,11 +117,11 @@ _ = dropItem.dragItem.itemProvider.loadObject(
 
 ## See Also
 
-- [class NSItemProvider](../Foundation/NSItemProvider.md)
+- [class NSItemProvider](../foundation/nsitemprovider.md)
   An item provider for conveying data or a file between processes during drag-and-drop or copy-and-paste activities, or from a host app to an app extension.
-- [protocol NSItemProviderReading](../Foundation/NSItemProviderReading.md)
+- [protocol NSItemProviderReading](../foundation/nsitemproviderreading.md)
   The protocol for implementing a class to allow an item provider to create an instance of the class.
-- [protocol NSItemProviderWriting](../Foundation/NSItemProviderWriting.md)
+- [protocol NSItemProviderWriting](../foundation/nsitemproviderwriting.md)
   The protocol for implementing a class to allow an item provider to retrieve data from an instance of the class.
 - [protocol UIItemProviderPresentationSizeProviding](uiitemproviderpresentationsizeproviding.md)
 - [protocol UIItemProviderReadingAugmentationDesignating](uiitemproviderreadingaugmentationdesignating.md)

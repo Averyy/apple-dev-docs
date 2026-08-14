@@ -23,7 +23,7 @@ func transformEffect(_ transform: CGAffineTransform) -> some View
 
 #### Discussion
 
-Use `transformEffect(_:)` to rotate, scale, translate, or skew the output of the view according to the provided [`CGAffineTransform`](https://developer.apple.com/documentation/CoreFoundation/CGAffineTransform).
+Use `transformEffect(_:)` to rotate, scale, translate, or skew the output of the view according to the provided [`CGAffineTransform`](https://developer.apple.com/documentation/corefoundation/cgaffinetransform).
 
 In the example below, the text is rotated at -30˚ on the `y` axis.
 
@@ -35,11 +35,11 @@ Text("Projection effect using transforms")
     .border(Color.gray)
 ```
 
-![A screenshot of a view showing text that is rotated at -30 degrees on](https://docs-assets.developer.apple.com/published/863f0f5bbed89319fc97d81796facb05/SwiftUI-View-transformEffect%402x.png)
+![A screenshot of a view showing text that is rotated at -30 degrees on](/images/com.apple.SwiftUI/SwiftUI-View-transformEffect@2x.png)
 
 ## Parameters
 
-- `transform`: A [`CGAffineTransform`](https://developer.apple.com/documentation/CoreFoundation/CGAffineTransform) to apply to the view.
+- `transform`: A [`CGAffineTransform`](https://developer.apple.com/documentation/corefoundation/cgaffinetransform) to apply to the view.
 
 ## See Also
 

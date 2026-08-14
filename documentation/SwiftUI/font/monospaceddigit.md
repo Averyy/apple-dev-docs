@@ -45,7 +45,7 @@ var body: some View {
 }
 ```
 
-![A macOS window showing two text fields arranged vertically. Each](https://docs-assets.developer.apple.com/published/43f6da3f34065ab05d51b981cd5e9240/Environment-Font-monospacedDigit-1%402x.png)
+![A macOS window showing two text fields arranged vertically. Each](/images/com.apple.SwiftUI/Environment-Font-monospacedDigit-1@2x.png)
 
 ## See Also
 

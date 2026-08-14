@@ -16,11 +16,11 @@ func performKeyEquivalent(with event: NSEvent) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/Swift/true) if `theEvent` is a key equivalent that the view handled, [`false`](https://developer.apple.com/documentation/Swift/false) if it is not a key equivalent that it should handle.
+[`true`](https://developer.apple.com/documentation/swift/true) if `theEvent` is a key equivalent that the view handled, [`false`](https://developer.apple.com/documentation/swift/false) if it is not a key equivalent that it should handle.
 
 #### Discussion
 
-If the view’s key equivalent is the same as the characters of the key-down event `theEvent`, as returned by [`charactersIgnoringModifiers`](nsevent/charactersignoringmodifiers.md), the view should take the appropriate action and return [`true`](https://developer.apple.com/documentation/Swift/true). Otherwise, it should return the result of invoking `super`‘s implementation. The default implementation of this method simply passes the message down the view hierarchy (from superviews to subviews) and returns [`false`](https://developer.apple.com/documentation/Swift/false) if none of the view’s subviews responds [`true`](https://developer.apple.com/documentation/Swift/true).
+If the view’s key equivalent is the same as the characters of the key-down event `theEvent`, as returned by [`charactersIgnoringModifiers`](nsevent/charactersignoringmodifiers.md), the view should take the appropriate action and return [`true`](https://developer.apple.com/documentation/swift/true). Otherwise, it should return the result of invoking `super`‘s implementation. The default implementation of this method simply passes the message down the view hierarchy (from superviews to subviews) and returns [`false`](https://developer.apple.com/documentation/swift/false) if none of the view’s subviews responds [`true`](https://developer.apple.com/documentation/swift/true).
 
 ## Parameters
 

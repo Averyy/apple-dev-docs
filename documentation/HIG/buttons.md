@@ -13,7 +13,7 @@ framework: HIG
 
 A button initiates an instantaneous action.
 
-![A stylized representation of two horizontally aligned buttons. The image is tinted red to subtly reflect the red in the original six-color Apple logo.](https://docs-assets.developer.apple.com/published/98b3ce8765137bf3c979ac6acb856794/components-buttons-intro~dark%402x.png)
+![A stylized representation of two horizontally aligned buttons. The image is tinted red to subtly reflect the red in the original six-color Apple logo.](/images/com.apple.HIG/components-buttons-intro~dark@2x.png)
 Versatile and highly customizable, buttons give people simple, familiar ways to do tasks in your app. In general, a button combines three attributes to clearly communicate its function:
 - **Style.** A visual style based on size, color, and shape.
 - **Content.** A symbol (or icon), text label, or both that a button displays to convey its purpose.
@@ -45,7 +45,7 @@ A system button can have one of the following roles:
 - **Cancel.** The button cancels the current action.
 - **Destructive.** The button performs an action that can result in data destruction.
 A button’s role can have additional effects on its appearance. For example, a primary button uses an app’s accent color, whereas a destructive button uses the system red color.
-![An example alert with three system buttons, labeled Primary Button, Destructive Button, and Secondary Button. The primary button uses a blue accent color, the destructive button uses text in the system red color, and the secondary button appears as a standard button.](https://docs-assets.developer.apple.com/published/e2cbc3fde3f4423be5705f5de9e00dbd/buttons-roles-alert~dark%402x.png)
+![An example alert with three system buttons, labeled Primary Button, Destructive Button, and Secondary Button. The primary button uses a blue accent color, the destructive button uses text in the system red color, and the secondary button appears as a standard button.](/images/com.apple.HIG/buttons-roles-alert~dark@2x.png)
 **Assign the primary role to the button people are most likely to choose.** When a primary button responds to the Return key, it makes it easy for people to quickly confirm their choice. In addition, when the button is in a temporary view — like a [Sheets](sheets.md), an editable view, or an [Alerts](alerts.md) — assigning it the primary role means that the view can automatically close when people press Return.
 **Don’t assign the primary role to a button that performs a destructive action, even if that action is the most likely choice.** Because of its visual prominence, people sometimes choose a primary button without reading it first. Help people avoid losing content by assigning the primary role to nondestructive buttons.
 
@@ -54,15 +54,15 @@ A button’s role can have additional effects on its appearance. For example, a 
 
 ### iOS, iPadOS
 **Configure a button to display an activity indicator when you need to provide feedback about an action that doesn’t instantly complete.** Displaying an activity indicator within a button can save space in your user interface while clearly communicating the reason for the delay. To help clarify what’s happening, you can also configure the button to display a different label alongside the activity indicator. For example, the label “Checkout” could change to “Checking out…” while the activity indicator is visible. When a delay occurs after people click or tap your configured button, the system displays the activity indicator next to the original or alternative label, hiding the button image, if there is one.
-![An illustration of a button labeled Checkout.](https://docs-assets.developer.apple.com/published/bbc3200b7293c502cdc47d73802d1f1e/button-activity-indicator-hidden~dark%402x.png)
-![An illustration of a button labeled Checking out, with an activity indicator on the leading side of the label.](https://docs-assets.developer.apple.com/published/ee433127a9f8b92996cbc4d211dba0fe/button-activity-indicator-visible~dark%402x.png)
+![An illustration of a button labeled Checkout.](/images/com.apple.HIG/button-activity-indicator-hidden~dark@2x.png)
+![An illustration of a button labeled Checking out, with an activity indicator on the leading side of the label.](/images/com.apple.HIG/button-activity-indicator-visible~dark@2x.png)
 
 ### macOS
 Several specific button types are unique to macOS.
 
 #### Push buttons
 The standard button type in macOS is known as a *push button*. You can configure a push button to display text, a symbol, an icon, or an image, or a combination of text and image content. Push buttons can act as the default button in a view and you can tint them.
-**Use a flexible-height push button only when you need to display tall or variable height content.** Flexible-height buttons support the same configurations as regular push buttons — and they use the same corner radius and content padding — so they look consistent with other buttons in your interface. If you need to present a button that contains two lines of text or a tall icon, use a flexible-height button; otherwise, use a standard push button. For developer guidance, see [NSButton.BezelStyle.flexiblePush](../AppKit/NSButton/BezelStyle-swift.enum/flexiblePush.md).
+**Use a flexible-height push button only when you need to display tall or variable height content.** Flexible-height buttons support the same configurations as regular push buttons — and they use the same corner radius and content padding — so they look consistent with other buttons in your interface. If you need to present a button that contains two lines of text or a tall icon, use a flexible-height button; otherwise, use a standard push button. For developer guidance, see [NSButton.BezelStyle.flexiblePush](../appkit/nsbutton/bezelstyle-swift.enum/flexiblepush.md).
 **Append a trailing ellipsis to the title when a push button opens another window, view, or app.** Throughout the system, an ellipsis in a control title signals that people can provide additional input. For example, the Edit buttons in the AutoFill pane of Safari Settings include ellipses because they open other views that let people modify autofill values.
 **Consider supporting spring loading.** On systems with a Magic Trackpad, *spring loading* lets people activate a button by dragging selected items over it and force clicking — that is, pressing harder — without dropping the selected items. After force clicking, people can continue dragging the items, possibly to perform additional actions.
 
@@ -72,7 +72,7 @@ Square buttons contain symbols or icons — not text — and you can configure t
 **Use square buttons in a view, not in the window frame.** Square buttons aren’t intended for use in toolbars or status bars. If you need a button in a [toolbar](https://developer.apple.com/design/human-interface-guidelines/toolbars), use a toolbar item.
 **Prefer using a symbol in a square button.** [SF Symbols](sf-symbols.md) provides a wide range of symbols that automatically receive appropriate coloring in their default state and in response to user interaction.
 **Avoid using labels to introduce square buttons.** Because square buttons are closely connected with a specific view, their purpose is generally clear without the need for descriptive text.
-For developer guidance, see [NSButton.BezelStyle.smallSquare](../AppKit/NSButton/BezelStyle-swift.enum/smallSquare.md).
+For developer guidance, see [NSButton.BezelStyle.smallSquare](../appkit/nsbutton/bezelstyle-swift.enum/smallsquare.md).
 
 #### Help buttons
 A *help button* appears within a view and opens app-specific help documentation.
@@ -93,34 +93,34 @@ Help buttons are circular, consistently sized buttons that contain a question ma
 #### Image buttons
 An *image button* appears in a view and displays an image, symbol, or icon. You can configure an image button to behave like a push button, toggle, or pop-up button.
 **Use an image button in a view, not in the window frame.** For example, avoid placing an image button in a toolbar or status bar. If you need to use an image as a button in a toolbar, use a toolbar item. See [Toolbars](toolbars.md).
-**Include about 10 pixels of padding between the edges of the image and the button edges.** An image button’s edges define its clickable area even when they aren’t visible. Including padding ensures that a click registers correctly even if it’s not precisely within the image. In general, avoid including a system-provided border in an image button; for developer guidance, see [isBordered](../AppKit/NSButton/isBordered.md).
+**Include about 10 pixels of padding between the edges of the image and the button edges.** An image button’s edges define its clickable area even when they aren’t visible. Including padding ensures that a click registers correctly even if it’s not precisely within the image. In general, avoid including a system-provided border in an image button; for developer guidance, see [isBordered](../appkit/nsbutton/isbordered.md).
 **If you need to include a label, position it below the image button.** For related guidance, see [Labels](labels.md).
 
 ### visionOS
 A visionOS button typically includes a visible background that can help people see it, and the button plays sound to provide feedback when people interact with it.
 
-[Video: visionos-button-styles-animation.mp4](https://docs-assets.developer.apple.com/published/903604027461d87db17614a241d220a5/visionos-button-styles-animation.mp4)
-There are three standard button shapes in visionOS. Typically, an icon-only button uses a [circle](../SwiftUI/ButtonBorderShape/circle.md) shape, a text-only button uses a [roundedRectangle](../SwiftUI/ButtonBorderShape/roundedRectangle.md) or [capsule](../SwiftUI/ButtonBorderShape/capsule.md) shape, and a button that includes both an icon and text uses the capsule shape.
+[Video: visionos-button-styles-animation.mp4](/videos/com.apple.HIG/visionos-button-styles-animation.mp4)
+There are three standard button shapes in visionOS. Typically, an icon-only button uses a [circle](../swiftui/buttonbordershape/circle.md) shape, a text-only button uses a [roundedRectangle](../swiftui/buttonbordershape/roundedrectangle.md) or [capsule](../swiftui/buttonbordershape/capsule.md) shape, and a button that includes both an icon and text uses the capsule shape.
 visionOS buttons use different visual styles to communicate four different interaction states.
-![An image of a circular button that contains an icon of an outlined square with rounded corners. The button background is dark and the dashed outline is white.](https://docs-assets.developer.apple.com/published/aed0b1c313448f088dd1ee24663db11e/visionos-button-state-idle%402x.png)
-![An image of a circular button that contains an icon of an outlined square with rounded corners. The button background is medium dark and the outline is white.](https://docs-assets.developer.apple.com/published/29d708fd7985184cbee9d90d7684da92/visionos-button-state-hover%402x.png)
-![An image of a circular button that contains an icon of an outlined square with rounded corners. The button background is white and the outline is black.](https://docs-assets.developer.apple.com/published/0b94e710605235dfca19ef853499cf26/visionos-button-state-selected%402x.png)
-![An image of a circular button that contains an icon of an outlined square with rounded corners. The button background is very dark and the outline is light.](https://docs-assets.developer.apple.com/published/737120252765e5427161af32bb17e7fb/visionos-button-state-unavailable%402x.png)
+![An image of a circular button that contains an icon of an outlined square with rounded corners. The button background is dark and the dashed outline is white.](/images/com.apple.HIG/visionos-button-state-idle@2x.png)
+![An image of a circular button that contains an icon of an outlined square with rounded corners. The button background is medium dark and the outline is white.](/images/com.apple.HIG/visionos-button-state-hover@2x.png)
+![An image of a circular button that contains an icon of an outlined square with rounded corners. The button background is white and the outline is black.](/images/com.apple.HIG/visionos-button-state-selected@2x.png)
+![An image of a circular button that contains an icon of an outlined square with rounded corners. The button background is very dark and the outline is light.](/images/com.apple.HIG/visionos-button-state-unavailable@2x.png)
 
 > **Note:** In visionOS, buttons don’t support custom hover effects.
 In addition to the four states shown above, a button can also reveal a tooltip when people look at it for a brief time. In general, buttons that contain text don’t need to display a tooltip because the button’s descriptive label communicates what it does.
 
-[Video: visionos-button-dwell-tooltip.mp4](https://docs-assets.developer.apple.com/published/a2ca615bed663efa69fa7747a74c2e7f/visionos-button-dwell-tooltip.mp4)
+[Video: visionos-button-dwell-tooltip.mp4](/videos/com.apple.HIG/visionos-button-dwell-tooltip.mp4)
 In visionOS, buttons can have the following sizes.
 | Shape | Mini (28 pt) | Small (32 pt) | Regular (44 pt) | Large (52 pt) | Extra large (64 pt) |
 | --- | --- | --- | --- | --- | --- |
-| Circular | ![A checkmark denoting availability.](https://docs-assets.developer.apple.com/published/dac11a72409d3d000eb76d99ce09ebb1/table-availability-checkmark~dark%402x.png) | ![A checkmark denoting availability.](https://docs-assets.developer.apple.com/published/dac11a72409d3d000eb76d99ce09ebb1/table-availability-checkmark~dark%402x.png) | ![A checkmark denoting availability.](https://docs-assets.developer.apple.com/published/dac11a72409d3d000eb76d99ce09ebb1/table-availability-checkmark~dark%402x.png) | ![A checkmark denoting availability.](https://docs-assets.developer.apple.com/published/dac11a72409d3d000eb76d99ce09ebb1/table-availability-checkmark~dark%402x.png) | ![A checkmark denoting availability.](https://docs-assets.developer.apple.com/published/dac11a72409d3d000eb76d99ce09ebb1/table-availability-checkmark~dark%402x.png) |
-| Capsule (text only) |  | ![A checkmark denoting availability.](https://docs-assets.developer.apple.com/published/dac11a72409d3d000eb76d99ce09ebb1/table-availability-checkmark~dark%402x.png) | ![A checkmark denoting availability.](https://docs-assets.developer.apple.com/published/dac11a72409d3d000eb76d99ce09ebb1/table-availability-checkmark~dark%402x.png) | ![A checkmark denoting availability.](https://docs-assets.developer.apple.com/published/dac11a72409d3d000eb76d99ce09ebb1/table-availability-checkmark~dark%402x.png) |  |
-| Capsule (text and icon) |  |  | ![A checkmark denoting availability.](https://docs-assets.developer.apple.com/published/dac11a72409d3d000eb76d99ce09ebb1/table-availability-checkmark~dark%402x.png) | ![A checkmark denoting availability.](https://docs-assets.developer.apple.com/published/dac11a72409d3d000eb76d99ce09ebb1/table-availability-checkmark~dark%402x.png) |  |
-| Rounded rectangle |  | ![A checkmark denoting availability.](https://docs-assets.developer.apple.com/published/dac11a72409d3d000eb76d99ce09ebb1/table-availability-checkmark~dark%402x.png) | ![A checkmark denoting availability.](https://docs-assets.developer.apple.com/published/dac11a72409d3d000eb76d99ce09ebb1/table-availability-checkmark~dark%402x.png) | ![A checkmark denoting availability.](https://docs-assets.developer.apple.com/published/dac11a72409d3d000eb76d99ce09ebb1/table-availability-checkmark~dark%402x.png) |  |
+| Circular | ![A checkmark denoting availability.](/images/com.apple.HIG/table-availability-checkmark~dark@2x.png) | ![A checkmark denoting availability.](/images/com.apple.HIG/table-availability-checkmark~dark@2x.png) | ![A checkmark denoting availability.](/images/com.apple.HIG/table-availability-checkmark~dark@2x.png) | ![A checkmark denoting availability.](/images/com.apple.HIG/table-availability-checkmark~dark@2x.png) | ![A checkmark denoting availability.](/images/com.apple.HIG/table-availability-checkmark~dark@2x.png) |
+| Capsule (text only) |  | ![A checkmark denoting availability.](/images/com.apple.HIG/table-availability-checkmark~dark@2x.png) | ![A checkmark denoting availability.](/images/com.apple.HIG/table-availability-checkmark~dark@2x.png) | ![A checkmark denoting availability.](/images/com.apple.HIG/table-availability-checkmark~dark@2x.png) |  |
+| Capsule (text and icon) |  |  | ![A checkmark denoting availability.](/images/com.apple.HIG/table-availability-checkmark~dark@2x.png) | ![A checkmark denoting availability.](/images/com.apple.HIG/table-availability-checkmark~dark@2x.png) |  |
+| Rounded rectangle |  | ![A checkmark denoting availability.](/images/com.apple.HIG/table-availability-checkmark~dark@2x.png) | ![A checkmark denoting availability.](/images/com.apple.HIG/table-availability-checkmark~dark@2x.png) | ![A checkmark denoting availability.](/images/com.apple.HIG/table-availability-checkmark~dark@2x.png) |  |
 
 **Prefer buttons that have a discernible background shape and fill.** It tends to be easier for people to see a button when it’s enclosed in a shape that uses a contrasting background fill. The exception is a button in a toolbar, context menu, alert, or [Ornaments](ornaments.md) where the shape and material of the larger component make the button comfortably visible. The following guidelines can help you ensure that a button looks good in different contexts:
-- When a button appears on top of a glass [visionOS](windows.md#visionOS), use the [thin](../SwiftUI/Material/thin.md) material as the button’s background.
+- When a button appears on top of a glass [visionOS](windows.md#visionOS), use the [thin](../swiftui/material/thin.md) material as the button’s background.
 - When a button appears floating in space, use the [visionOS](materials.md#visionOS) for its background.
 **Avoid creating a custom button that uses a white background fill and black text or icons.** The system reserves this visual style to convey the toggled state.
 **In general, prefer circular or capsule-shape buttons.** People’s eyes tend to be drawn toward the corners in a shape, making it difficult to keep looking at the shape’s center. The more rounded a button’s shape, the easier it is for people to look steadily at it. When you need to display a button by itself, prefer a capsule-shape button.
@@ -129,10 +129,10 @@ In visionOS, buttons can have the following sizes.
 **Use standard controls to take advantage of the audible feedback sounds people already know.** Audible feedback is especially important in visionOS, because the system doesn’t play haptics.
 
 ### watchOS
-watchOS displays all inline buttons using the [capsule](../SwiftUI/ButtonBorderShape/capsule.md) button shape. When you place a button inline with content, it gains a material effect that contrasts with the background to ensure legibility.
-![An illustration that represents a screen on Apple Watch, which includes capsule-shaped Primary and Secondary buttons.](https://docs-assets.developer.apple.com/published/8af88bae79829cee4456dd3044a00a8c/buttons-watch-full-width%402x.png)
+watchOS displays all inline buttons using the [capsule](../swiftui/buttonbordershape/capsule.md) button shape. When you place a button inline with content, it gains a material effect that contrasts with the background to ensure legibility.
+![An illustration that represents a screen on Apple Watch, which includes capsule-shaped Primary and Secondary buttons.](/images/com.apple.HIG/buttons-watch-full-width@2x.png)
 **Use a toolbar to place buttons in the corners.** The system automatically moves the time and title to accommodate toolbar buttons. The system also applies the [Liquid Glass](materials.md#Liquid-Glass) appearance to toolbar buttons, providing a clear visual distinction from the content beneath them.
-![An illustration showing toolbar buttons in the top leading and trailing corners, as well as three toolbar buttons across the bottom of the screen.](https://docs-assets.developer.apple.com/published/aa71da29ca2f0bfb3df010a0030a3844/buttons-watch-toolbar-corners%402x.png)
+![An illustration showing toolbar buttons in the top leading and trailing corners, as well as three toolbar buttons across the bottom of the screen.](/images/com.apple.HIG/buttons-watch-toolbar-corners@2x.png)
 **Prefer buttons that span the width of the screen for primary actions in your app.** Full-width buttons look better and are easier for people to tap. If two buttons must share the same horizontal space, use the same height for both, and use images or short text titles for each button’s content.
 **Use toolbar buttons to provide either navigation to related areas or contextual actions for the view’s content.** These buttons provide access to additional information or secondary actions for the view’s content.
 **Use the same height for vertical stacks of one- and two-line text buttons.** As much as possible, use identical button heights for visual consistency.
@@ -147,9 +147,9 @@ watchOS displays all inline buttons using the [capsule](../SwiftUI/ButtonBorderS
 [Location button](privacy.md#Location-button)
 
 #### Developer documentation
-[Button](../SwiftUI/Button.md) — SwiftUI
-[UIButton](../UIKit/UIButton.md) — UIKit
-[NSButton](../AppKit/NSButton.md) — AppKit
+[Button](../swiftui/button.md) — SwiftUI
+[UIButton](../uikit/uibutton.md) — UIKit
+[NSButton](../appkit/nsbutton.md) — AppKit
 
 ## Change log
 | Date | Changes |

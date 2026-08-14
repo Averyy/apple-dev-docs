@@ -21,7 +21,7 @@ func addStreamOutput(_ output: any SCStreamOutput, type: SCStreamOutputType, sam
 
 #### Discussion
 
-Use this method to attach an object that conforms to [`SCStreamOutput`](scstreamoutput.md) to receive stream content. Optionally, provide a [`DispatchQueue`](https://developer.apple.com/documentation/Dispatch/DispatchQueue) to send output to a queue that’s responsible for processing the output.
+Use this method to attach an object that conforms to [`SCStreamOutput`](scstreamoutput.md) to receive stream content. Optionally, provide a [`DispatchQueue`](https://developer.apple.com/documentation/dispatch/dispatchqueue) to send output to a queue that’s responsible for processing the output.
 
 ## Parameters
 

@@ -16,7 +16,7 @@ var scrubberContentSize: NSSize { get }
 
 #### Discussion
 
-The base implementation returns [`NSZeroSize`](https://developer.apple.com/documentation/Foundation/NSZeroSize).
+The base implementation returns [`NSZeroSize`](https://developer.apple.com/documentation/foundation/nszerosize).
 
 ## See Also
 

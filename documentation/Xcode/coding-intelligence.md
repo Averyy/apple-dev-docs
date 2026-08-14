@@ -10,7 +10,7 @@ You interact with an agent or large language model of your choice by entering a 
 
 You can access Xcode intelligence from anywhere in your project, including the source editor, and it blends seamlessly into your workspace. The conversation sidebar behaves like the Project navigator. You can lay out and create tabs for the transcript and artifacts panes, similar to editor panes. You can arrange your workspace to run multiple agents in parallel while editing files in another pane.
 
-![A screenshot of the project window with the conversation sidebar on the left, a transcript in the middle with a message text field below, and the artifacts pane on the right.](https://docs-assets.developer.apple.com/published/a29e305b85b67458132b62f223be61c3/coding-assistant-anatomy%402x.png)
+![A screenshot of the project window with the conversation sidebar on the left, a transcript in the middle with a message text field below, and the artifacts pane on the right.](/images/com.apple.Xcode/coding-assistant-anatomy@2x.png)
 
 Before you begin, set up an agent or model in Intelligence settings and choose it in the coding assistant sidebar. For more information, see [`Setting up coding intelligence`](setting-up-coding-intelligence.md).
 

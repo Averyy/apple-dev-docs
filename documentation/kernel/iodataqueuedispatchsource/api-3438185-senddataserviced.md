@@ -24,9 +24,7 @@ Use this method to send a single notification after dequeueing multiple entries 
 - [- SetDataAvailableHandler](../driverkit/iodataqueuedispatchsource/setdataavailablehandler.md)
   Sets the handler block to run when another object adds data to the queue.
 - [- DataAvailable](../driverkit/iodataqueuedispatchsource/dataavailable.md)
-  Responds to the addition of new data to the queue.
-- [IODataQueueClientDequeueEntryBlock](../driverkit/iodataqueueclientdequeueentryblock.md)
-  The handler block you use to remove data from a queue.
+  Responds to the addition of new data to the queue. 
 - [- IsDataAvailable](iodataqueuedispatchsource/3438182-isdataavailable.md)
   Checks whether the data queue contains data to process.
 - [- Peek](iodataqueuedispatchsource/3438183-peek.md)
@@ -35,6 +33,8 @@ Use this method to send a single notification after dequeueing multiple entries 
   Removes the next entry from the queue.
 - [- DequeueWithCoalesce](iodataqueuedispatchsource/3438179-dequeuewithcoalesce.md)
   Removes the next queue entry, but doesn't automatically send notifications.
+- [IODataQueueClientDequeueEntryBlock](../driverkit/iodataqueueclientdequeueentryblock.md)
+  The handler block you use to remove data from a queue. 
 
 
 ---

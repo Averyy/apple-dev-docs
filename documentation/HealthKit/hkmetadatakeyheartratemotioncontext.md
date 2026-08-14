@@ -21,7 +21,7 @@ let HKMetadataKeyHeartRateMotionContext: String
 
 #### Discussion
 
-This key takes an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) containing an [`HKHeartRateMotionContext`](hkheartratemotioncontext.md) as its value.
+This key takes an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) containing an [`HKHeartRateMotionContext`](hkheartratemotioncontext.md) as its value.
 
 ## Topics
 

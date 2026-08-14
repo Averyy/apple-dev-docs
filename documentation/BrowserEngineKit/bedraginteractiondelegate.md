@@ -31,8 +31,8 @@ The [`BEDragInteraction`](bedraginteraction.md) class’s [`delegate`](bedragint
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [UIDragInteractionDelegate](../UIKit/UIDragInteractionDelegate.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [UIDragInteractionDelegate](../uikit/uidraginteractiondelegate.md)
 
 ## See Also
 

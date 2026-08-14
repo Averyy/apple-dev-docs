@@ -22,7 +22,7 @@ func CGImageSourceCreateImageAtIndex(_ isrc: CGImageSource, _ index: Int, _ opti
 
 #### Return Value
 
-The image at the specified index, or `NULL` if an error occurs. You’re responsible for releasing the returned object using [`CGImageRelease`](https://developer.apple.com/documentation/CoreGraphics/CGImageRelease).
+The image at the specified index, or `NULL` if an error occurs. You’re responsible for releasing the returned object using [`CGImageRelease`](https://developer.apple.com/documentation/coregraphics/cgimagerelease).
 
 ## Parameters
 

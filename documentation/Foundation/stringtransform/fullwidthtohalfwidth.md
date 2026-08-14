@@ -26,7 +26,7 @@ This transformation is reversible.
 
 For example, the string “マット” transforms to “ﾏｯﾄ”.
 
-This is equivalent to [`kCFStringTransformFullwidthHalfwidth`](https://developer.apple.com/documentation/CoreFoundation/kCFStringTransformFullwidthHalfwidth).
+This is equivalent to [`kCFStringTransformFullwidthHalfwidth`](https://developer.apple.com/documentation/corefoundation/kcfstringtransformfullwidthhalfwidth).
 
 ## See Also
 

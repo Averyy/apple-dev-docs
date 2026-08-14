@@ -18,8 +18,8 @@ func setFullscreen(_ fullscreen: Bool, animated: Bool)
 
 ## Parameters
 
-- `fullscreen`: Specify [`true`](https://developer.apple.com/documentation/Swift/true) to enter full-screen mode or [`false`](https://developer.apple.com/documentation/Swift/false) to exit full-screen mode.
-- `animated`: Specify [`true`](https://developer.apple.com/documentation/Swift/true) to animate the transition between modes or [`false`](https://developer.apple.com/documentation/Swift/false) to switch immediately to the new mode.
+- `fullscreen`: Specify [`true`](https://developer.apple.com/documentation/swift/true) to enter full-screen mode or [`false`](https://developer.apple.com/documentation/swift/false) to exit full-screen mode.
+- `animated`: Specify [`true`](https://developer.apple.com/documentation/swift/true) to animate the transition between modes or [`false`](https://developer.apple.com/documentation/swift/false) to switch immediately to the new mode.
 
 ## See Also
 

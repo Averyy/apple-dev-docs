@@ -22,7 +22,7 @@ string appTransactionId
 
 To get app transaction information, call [`Get App Transaction Info`](get-app-transaction-info.md) and provide the `appTransactionId`.
 
-For more information, see [`appTransactionID`](https://developer.apple.com/documentation/StoreKit/AppTransaction/appTransactionID).
+For more information, see [`appTransactionID`](https://developer.apple.com/documentation/storekit/apptransaction/apptransactionid).
 
 
 ---

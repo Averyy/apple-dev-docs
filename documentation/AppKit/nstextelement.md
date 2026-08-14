@@ -36,20 +36,20 @@ class NSTextElement
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Inherited By
 - [NSTextParagraph](nstextparagraph.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 
-- [Enriching your text in text views](../UIKit/enriching-your-text-in-text-views.md)
+- [Enriching your text in text views](../uikit/enriching-your-text-in-text-views.md)
   Support line numbering, section collapsing, inline attachment caching, exclusion paths, text attachments, and text lists in a text view.
 - [class NSTextParagraph](nstextparagraph.md)
   A class that represents a single paragraph backed by an attributed string as the contents.

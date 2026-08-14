@@ -7,7 +7,6 @@ A Boolean value that indicates whether the accessory can alert the person for th
 
 **Availability**:
 - iOS 26.5+
-- iPadOS 26.5+
 
 ## Declaration
 

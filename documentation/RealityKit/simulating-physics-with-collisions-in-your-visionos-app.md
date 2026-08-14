@@ -16,7 +16,7 @@ The sample also adds a custom component and system that applies an attraction fo
 
 ##### Add a Volumetric Window to Your App
 
-The app starts by creating a scene that includes a window group with a [`volumetric`](https://developer.apple.com/documentation/SwiftUI/WindowStyle/volumetric) style so that the spheres behave like physical objects in the environment.
+The app starts by creating a scene that includes a window group with a [`volumetric`](https://developer.apple.com/documentation/swiftui/windowstyle/volumetric) style so that the spheres behave like physical objects in the environment.
 
 ```swift
 import SwiftUI
@@ -31,7 +31,7 @@ struct PhysicsBodiesApp: App {
 }
 ```
 
-Volumetric windows are viewable from all sides and have a constant size in the environment. If you want to prioritize visibility from a distance rather than from all sides, use the [`plain`](https://developer.apple.com/documentation/SwiftUI/WindowStyle/plain) window style instead. Plain windows are resizable, which can help people see the contents of a window from a distance, but there’s one optimal viewing angle.
+Volumetric windows are viewable from all sides and have a constant size in the environment. If you want to prioritize visibility from a distance rather than from all sides, use the [`plain`](https://developer.apple.com/documentation/swiftui/windowstyle/plain) window style instead. Plain windows are resizable, which can help people see the contents of a window from a distance, but there’s one optimal viewing angle.
 
 The app’s main view creates the spheres and an invisible containment box that keeps the spheres from drifting out of the volume.
 
@@ -52,14 +52,14 @@ var body: some View {
 }
 ```
 
-SwiftUI calls the view’s `update` closure when one of its inputs change, such as `geometry` in this example, which is a [`GeometryReader3D`](https://developer.apple.com/documentation/SwiftUI/GeometryReader3D) instance. The closure updates the collision box by passing the view’s current position and size in scene coordinates. To do this, the closure:
+SwiftUI calls the view’s `update` closure when one of its inputs change, such as `geometry` in this example, which is a [`GeometryReader3D`](https://developer.apple.com/documentation/swiftui/geometryreader3d) instance. The closure updates the collision box by passing the view’s current position and size in scene coordinates. To do this, the closure:
 
-- Retrieves the view’s current position and size in SwiftUI coordinates, in points, as a [`Rect3D`](https://developer.apple.com/documentation/Spatial/Rect3D) instance by calling the [`frame(in:)`](https://developer.apple.com/documentation/SwiftUI/GeometryProxy3D/frame(in:)) method of the `geometryReader` that contains the [`RealityView`](realityview.md)
+- Retrieves the view’s current position and size in SwiftUI coordinates, in points, as a [`Rect3D`](https://developer.apple.com/documentation/spatial/rect3d) instance by calling the [`frame(in:)`](https://developer.apple.com/documentation/swiftui/geometryproxy3d/frame(in:)) method of the `geometryReader` that contains the [`RealityView`](realityview.md)
 - Converts the 3D rectangle from points to RealityKit scene coordinates, in meters, by calling the [`RealityViewContent`](realityviewcontent.md) instance’s [`convert(_:from:to:)`](realitycoordinatespaceconverting/convert(_:from:to:)-3fumk.md) method
 
 Coordinate values in SwiftUI are typically in the hundreds of points, while coordinates in RealityKit often have much smaller values, typically fractions of a meter.
 
-The view also adds a [`DragGesture`](https://developer.apple.com/documentation/SwiftUI/DragGesture) instance so that a person can move a sphere around and make it collide with the other spheres in the volume.
+The view also adds a [`DragGesture`](https://developer.apple.com/documentation/swiftui/draggesture) instance so that a person can move a sphere around and make it collide with the other spheres in the volume.
 
 ##### Create a Model Entity with a Physics Body
 
@@ -108,7 +108,7 @@ The app configures each material so that is has a shiny, metallic look. It sets:
 
 Customizing the attributes of materials, including color, roughness, and reflectiveness, adds a realistic appearance to the items in your scene.
 
-> **Note**: Change the visual appearance of the spheres by altering the material, or by applying the plastic, wood, rubber, or glass materials with a [`ShaderGraphMaterial`](shadergraphmaterial.md) and a [`Environment Radiance (RealityKit)`](https://developer.apple.com/documentation/ShaderGraph/realitykit/Environment-Radiance-(RealityKit)) node.
+> **Note**: Change the visual appearance of the spheres by altering the material, or by applying the plastic, wood, rubber, or glass materials with a [`ShaderGraphMaterial`](shadergraphmaterial.md) and a [`Environment Radiance (RealityKit)`](https://developer.apple.com/documentation/shadergraph/realitykit/environment-radiance-(realitykit)) node.
 
 To make the spheres interact with the physics system, the app adds a [`CollisionComponent`](collisioncomponent.md) and  a [`PhysicsBodyComponent`](physicsbodycomponent.md) to each sphere’s entity.
 
@@ -302,11 +302,11 @@ extension Entity {
 
 The method configures each face to physically interact with the spheres in the scene by adding an instance of [`CollisionComponent`](collisioncomponent.md) and [`PhysicsBodyComponent`](physicsbodycomponent.md) to the face’s entity.
 
-![A screenshot of a visionOS app in the Simulator that has 16 spheres. There is a debug visualization that shows circles around each spheres and squares on each of the 6 faces of the window's volume.](https://docs-assets.developer.apple.com/published/ddf4aa95f5086e5a3bc481b46924ef6a/PhysicsBodies-sample-article-2.png)
+![A screenshot of a visionOS app in the Simulator that has 16 spheres. There is a debug visualization that shows circles around each spheres and squares on each of the 6 faces of the window's volume.](/images/com.apple.RealityKit/PhysicsBodies-sample-article-2.png)
 
 > 💡 **Tip**: For easier debugging, you can view every entity’s collision shape. Select the Collision Shapes & Axes checkbox from the Debug Visualizations menu that appears in the debug bar at the bottom of the main pane in Xcode after you build the app.
 
-![A screenshot of Xcode's debugging bar showing a toggle to enable Collision Shapes and Axes.](https://docs-assets.developer.apple.com/published/e5c197397c446f5316625af5f13be3e1/PhysicsBodies-sample-article-3.png)
+![A screenshot of Xcode's debugging bar showing a toggle to enable Collision Shapes and Axes.](/images/com.apple.RealityKit/PhysicsBodies-sample-article-3.png)
 
 ##### Add Human Interaction By Including a Gesture
 
@@ -375,7 +375,7 @@ This gesture effectively applies the equivalent of an infinite force, which can 
 
 - [Configuring Collision in RealityKit](configuring-collision-in-realitykit.md)
   Use collision groups and collision filters to control which objects collide.
-- [Creating an interactive 3D model in visionOS](../visionOS/creating-an-interactable-3d-model-in-visionos.md)
+- [Creating an interactive 3D model in visionOS](../visionos/creating-an-interactable-3d-model-in-visionos.md)
   Display an interactive car model using gestures in a reality view.
 - [struct CollisionComponent](collisioncomponent.md)
   A component that gives an entity the ability to collide with other entities that also have collision components.

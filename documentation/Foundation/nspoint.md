@@ -47,7 +47,7 @@ When building for 64 bit systems, or building 32 bit like 64 bit, `NSPoint` is t
 
 ## See Also
 
-- [struct CGFloat](../CoreFoundation/CGFloat-swift.struct.md)
+- [struct CGFloat](../corefoundation/cgfloat-swift.struct.md)
   The basic type for floating-point scalar values in Core Graphics and related frameworks.
 - [typealias NSSize](nssize.md)
   A two-dimensional size.

@@ -22,7 +22,7 @@ enum SystemFormatStyle
 
 #### Overview
 
-Use the format styles in this namespace to present time-based data in [`Text`](text.md) views that automatically updates as the system clock advances. Each style formats a [`Date`](https://developer.apple.com/documentation/Foundation/Date) value into an [`AttributedString`](https://developer.apple.com/documentation/Foundation/AttributedString) and conforms to both `FormatStyle` and `DiscreteFormatStyle`, allowing SwiftUI to efficiently schedule text updates at exactly the right moments.
+Use the format styles in this namespace to present time-based data in [`Text`](text.md) views that automatically updates as the system clock advances. Each style formats a [`Date`](https://developer.apple.com/documentation/foundation/date) value into an [`AttributedString`](https://developer.apple.com/documentation/foundation/attributedstring) and conforms to both `FormatStyle` and `DiscreteFormatStyle`, allowing SwiftUI to efficiently schedule text updates at exactly the right moments.
 
 You typically use these styles with the [`init(_:format:)`](text/init(_:format:)-8sfgg.md) initializer:
 
@@ -67,8 +67,8 @@ Text(.currentDate, format: .reference(to: endDate))
 ## Relationships
 
 ### Conforms To
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

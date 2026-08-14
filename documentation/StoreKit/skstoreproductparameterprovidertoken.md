@@ -19,7 +19,7 @@ let SKStoreProductParameterProviderToken: String
 
 #### Discussion
 
-The value for this key is an instance of [`NSString`](https://developer.apple.com/documentation/Foundation/NSString).
+The value for this key is an instance of [`NSString`](https://developer.apple.com/documentation/foundation/nsstring).
 
 Use your own provider token when cross promoting your own apps. This token lets you track the effectiveness of the cross promotion effort separate from any affiliate campaign that shares the same campaign token.
 

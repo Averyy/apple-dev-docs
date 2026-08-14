@@ -16,7 +16,7 @@ func SecKeyCreateFromData(_ parameters: CFDictionary, _ keyData: CFData, _ error
 
 #### Return Value
 
-A symmetric key. In Objective-C, call the [`CFRelease`](https://developer.apple.com/documentation/CoreFoundation/CFRelease) function to free the key’s memory when you are done with it.
+A symmetric key. In Objective-C, call the [`CFRelease`](https://developer.apple.com/documentation/corefoundation/cfrelease) function to free the key’s memory when you are done with it.
 
 #### Discussion
 
@@ -35,7 +35,7 @@ These values default to `true` if no value is specified.
 
 - `parameters`: A parameter dictionary that describes the key. See the discussion for details.
 - `keyData`: A `CFDataRef` object that contains the raw key data.
-- `error`: A pointer to a [`CFError`](https://developer.apple.com/documentation/CoreFoundation/CFError) variable where an error object is stored upon failure. If not `NULL`, the caller is responsible for checking this variable and releasing the resulting object if it exists.
+- `error`: A pointer to a [`CFError`](https://developer.apple.com/documentation/corefoundation/cferror) variable where an error object is stored upon failure. If not `NULL`, the caller is responsible for checking this variable and releasing the resulting object if it exists.
 
 
 ---

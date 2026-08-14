@@ -19,7 +19,7 @@ var isVisible: Bool { get }
 
 #### Discussion
 
-The value of this property is [`true`](https://developer.apple.com/documentation/Swift/true) when the item is visible in the toolbar, and [`false`](https://developer.apple.com/documentation/Swift/false) when it isn’t in the toolbar or is present in the toolbar’s overflow menu. This property is key-value observing (KVO) compliant.
+The value of this property is [`true`](https://developer.apple.com/documentation/swift/true) when the item is visible in the toolbar, and [`false`](https://developer.apple.com/documentation/swift/false) when it isn’t in the toolbar or is present in the toolbar’s overflow menu. This property is key-value observing (KVO) compliant.
 
 ## See Also
 

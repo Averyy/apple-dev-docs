@@ -10,11 +10,11 @@ When you build, run, test, profile, or archive part of your project, Xcode uses 
 
 To view your project’s current schemes, click the scheme name in the toolbar of your project window. Xcode displays a pop-up menu with a list of current schemes at the top, and commands to edit, create, and manage schemes at the bottom.
 
-![A pop-up menu displays a list of schemes present in an Xcode project.](https://docs-assets.developer.apple.com/published/f7afef3afd8dd907dae0a062d8309f1b/build-select-scheme%402x.png)
+![A pop-up menu displays a list of schemes present in an Xcode project.](/images/com.apple.Xcode/build-select-scheme@2x.png)
 
 To view and modify your project’s current schemes, select Manage Schemes. For example, disable automatic creation of schemes for new targets, and change scheme attributes such as which project contains the scheme. By default, Xcode shares schemes with other team members.
 
-![The scheme manager panel shows the list of available schemes and offers controls to create new schemes.](https://docs-assets.developer.apple.com/published/8a6af9ca0a4d865322845f6ef0328d34/build-scheme-manage%402x.png)
+![The scheme manager panel shows the list of available schemes and offers controls to create new schemes.](/images/com.apple.Xcode/build-scheme-manage@2x.png)
 
 ##### Specify the Build Options for a Schemes Targets
 
@@ -22,7 +22,7 @@ When you tell Xcode to build a scheme, Xcode analyzes your project and generates
 
 To see a scheme’s current list of targets, edit the scheme and select the Build page. Use this page to add or remove targets and to configure additional build options.
 
-![The edit scheme panel shows the targets and build configuration settings for an Xcode project.](https://docs-assets.developer.apple.com/published/3d00600bbd55e5ccb3ec5d0ef243e337/build-scheme-build-configuration%402x.png)
+![The edit scheme panel shows the targets and build configuration settings for an Xcode project.](/images/com.apple.Xcode/build-scheme-build-configuration@2x.png)
 
 The following table lists the build options you can configure for your schemes.
 
@@ -109,7 +109,7 @@ To add a pre-action or post-action:
 3. Click the Add button (+) and select the type of action to add.
 4. Configure the details of the action.
 
-![The edit scheme panel shows the pre- and post-actions for the Test command.](https://docs-assets.developer.apple.com/published/1d7d15e51847c8f5a4a54b88d76a3593/build-scheme-prepost-actions%402x.png)
+![The edit scheme panel shows the pre- and post-actions for the Test command.](/images/com.apple.Xcode/build-scheme-prepost-actions@2x.png)
 
 For script actions, Xcode exposes the build settings for one of the scheme’s selected targets. Use environment variables to access the values of those variables. For a list of available build settings, see [`Build settings reference`](build-settings-reference.md).
 

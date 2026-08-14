@@ -70,7 +70,7 @@ let result = colorCube(inputImage: ciImage, cubeData: cubeData)
 imageView.image = UIImage(ciImage: result)
 ```
 
-![Two pictures of a pink flower surrounded by foliage. The photo on the left shows a single flower photographed close-up, in focus, with good light and no effects. In the photo on the right, a color cube filter is applied, and the image has a blue hue.](https://docs-assets.developer.apple.com/published/3dc4c495b255d0d18002af18f99b7cec/media-3545026%402x.png)
+![Two pictures of a pink flower surrounded by foliage. The photo on the left shows a single flower photographed close-up, in focus, with good light and no effects. In the photo on the right, a color cube filter is applied, and the image has a blue hue.](/images/com.apple.coreimage/media-3545026@2x.png)
 
 ## See Also
 

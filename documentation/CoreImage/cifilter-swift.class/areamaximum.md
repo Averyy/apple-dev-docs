@@ -30,7 +30,7 @@ This filter returns the maximum color components in the region defined by `exten
 The area maximum filter uses the following properties:.
 
 - **`inputImage`**: An image with the type [`CIImage`](ciimage.md).
-- **`extent`**: A [`CGRect`](https://developer.apple.com/documentation/CoreFoundation/CGRect) that specifies the subregion of the image that you want to process.
+- **`extent`**: A [`CGRect`](https://developer.apple.com/documentation/corefoundation/cgrect) that specifies the subregion of the image that you want to process.
 
 The following code creates a filter that calculates the maximum color components of a 500 x 500 set of pixels from the center of the image:
 
@@ -47,7 +47,7 @@ func areaMaximum(inputImage: CIImage) -> CIImage {
 }
 ```
 
-![Two images arranged horizontally. The left image contains a photograph of three hydrangea flowers with leaves in the background. A 500 x 500 pixel square in the center of the image is highlighted using an outlined box. The image on the right shows the result of applying the area maximum filter to the 500 x 500 pixel square. The result is a 1 x 1 pixel image containing a color made up of the maximum color components from the highlighted square.](https://docs-assets.developer.apple.com/published/7f79d65b99ec177329e6dc785fb9c98b/media-4331784%402x.png)
+![Two images arranged horizontally. The left image contains a photograph of three hydrangea flowers with leaves in the background. A 500 x 500 pixel square in the center of the image is highlighted using an outlined box. The image on the right shows the result of applying the area maximum filter to the 500 x 500 pixel square. The result is a 1 x 1 pixel image containing a color made up of the maximum color components from the highlighted square.](/images/com.apple.coreimage/media-4331784@2x.png)
 
 ## See Also
 

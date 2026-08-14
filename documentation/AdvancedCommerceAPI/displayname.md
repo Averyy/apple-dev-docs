@@ -22,7 +22,7 @@ string displayName
 
 You provide a display name for every SKU you offer in your app. For subscriptions, provide clear, distinguishable subscription options. Use short, self-explanatory names that differentiate subscription options from one another.
 
-You can provide localized display names, based on the customer’s storefront. For more information on storefronts, see [`Storefront`](https://developer.apple.com/documentation/StoreKit/Storefront).
+You can provide localized display names, based on the customer’s storefront. For more information on storefronts, see [`Storefront`](https://developer.apple.com/documentation/storekit/storefront).
 
 For more information and best practices on providing names and other data the system displays to customers, see [`Creating SKUs for your In-App Purchases`](creating-your-purchases.md).
 

@@ -21,7 +21,7 @@ static let applyOrientationProperty: CIImageOption
 
 #### Discussion
 
-Images can contain metadata that reveals the orientation at capture time.  You can load this metadata into [`CIImage`](ciimage.md) with [`imageWithContentsOfURL:`](ciimage/imagewithcontentsofurl:.md) or [`init(data:)`](ciimage/init(data:).md) when the captured image contains orientation metadata.  Use any of the `initWith:options:` methods if the [`properties`](ciimageoption/properties.md) ([`NSDictionary`](https://developer.apple.com/documentation/Foundation/NSDictionary) of metadata properties) option is also provided.
+Images can contain metadata that reveals the orientation at capture time.  You can load this metadata into [`CIImage`](ciimage.md) with [`imageWithContentsOfURL:`](ciimage/imagewithcontentsofurl:.md) or [`init(data:)`](ciimage/init(data:).md) when the captured image contains orientation metadata.  Use any of the `initWith:options:` methods if the [`properties`](ciimageoption/properties.md) ([`NSDictionary`](https://developer.apple.com/documentation/foundation/nsdictionary) of metadata properties) option is also provided.
 
 If the value of this key is true, then calls to [`imageWithContentsOfURL:options:`](ciimage/imagewithcontentsofurl:options:.md) and [`imageWithData:options:`](ciimage/imagewithdata:options:.md) will return the image transformed according to its orientation metadata.
 

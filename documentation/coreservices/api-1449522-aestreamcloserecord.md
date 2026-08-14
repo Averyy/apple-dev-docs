@@ -24,7 +24,7 @@ Call this function to balance a preceding call to [`AEStreamOpenRecord(_:_:)`](1
 
 ## Parameters
 
-- `ref`: An  containing the stream data.
+- `ref`: An [`AEStreamRef`](aestreamref.md)containing the stream data.
 
 ## See Also
 

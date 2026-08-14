@@ -21,7 +21,7 @@ var currentPlaybackTime: TimeInterval { get set }
 
 #### Discussion
 
-For video-on-demand or progressively downloaded content, this value measures seconds from the beginning of the current item. Changing the value of this property moves the playhead to the new location. For content streamed live from a server, this value represents the time from the beginning of the playlist when it was first loaded. The system returns `NaN` if the [`CMTime`](https://developer.apple.com/documentation/CoreMedia/CMTime) is invalid or indefinite.
+For video-on-demand or progressively downloaded content, this value measures seconds from the beginning of the current item. Changing the value of this property moves the playhead to the new location. For content streamed live from a server, this value represents the time from the beginning of the playlist when it was first loaded. The system returns `NaN` if the [`CMTime`](https://developer.apple.com/documentation/coremedia/cmtime) is invalid or indefinite.
 
 ## See Also
 

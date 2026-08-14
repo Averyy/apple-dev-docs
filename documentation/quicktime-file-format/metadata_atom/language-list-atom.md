@@ -7,7 +7,7 @@ An atom that lists items that are suitable for more than one language.
 
 #### Overview
 
-For more information, see [`Language list atom ('lang')`](language_list_atom.md).
+For more information, see [`Language list atom`](language_list_atom.md).
 
 ## See Also
 

@@ -22,7 +22,7 @@ init(_ font: CTFont)
 
 #### Discussion
 
-Initializing [`Font`](font.md) with platform font instance (doc://com.apple.documentation/documentation/CoreText/CTFont-q6r) can bridge SwiftUI [`Font`](font.md) with [`NSFont`](https://developer.apple.com/documentation/AppKit/NSFont) or [`UIFont`](https://developer.apple.com/documentation/UIKit/UIFont), both of which are toll-free bridged to doc://com.apple.documentation/documentation/CoreText/CTFont-q6r. For example:
+Initializing [`Font`](font.md) with platform font instance (doc://com.apple.documentation/documentation/CoreText/CTFont-q6r) can bridge SwiftUI [`Font`](font.md) with [`NSFont`](https://developer.apple.com/documentation/appkit/nsfont) or [`UIFont`](https://developer.apple.com/documentation/uikit/uifont), both of which are toll-free bridged to doc://com.apple.documentation/documentation/CoreText/CTFont-q6r. For example:
 
 ```swift
 // Use native Core Text API to create desired ctFont.

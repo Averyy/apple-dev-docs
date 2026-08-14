@@ -10,7 +10,7 @@ A [`CGPDFContentStreamRef`](cgpdfcontentstreamref.md) object represents one or m
 
 [`CGPDFContentStreamRef`](cgpdfcontentstreamref.md) functions can retrieve both the content streams and the resource dictionaries associated with a PDF page.
 
-This type is not derived from [`CFTypeRef`](https://developer.apple.com/documentation/CoreFoundation/CFTypeRef) and therefore there are no functions for retaining and releasing it. [`CGPDFContentStreamRef`](cgpdfcontentstreamref.md) objects exist only as constituent parts of a [`CGPDFDocument`](cgpdfdocument.md) object, and they are managed by their container.
+This type is not derived from [`CFTypeRef`](https://developer.apple.com/documentation/corefoundation/cftyperef) and therefore there are no functions for retaining and releasing it. [`CGPDFContentStreamRef`](cgpdfcontentstreamref.md) objects exist only as constituent parts of a [`CGPDFDocument`](cgpdfdocument.md) object, and they are managed by their container.
 
 ## Topics
 

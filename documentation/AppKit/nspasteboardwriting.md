@@ -16,7 +16,7 @@ protocol NSPasteboardWriting : NSObjectProtocol
 
 #### Overview
 
-The Cocoa framework classes [`NSString`](https://developer.apple.com/documentation/Foundation/NSString), [`NSAttributedString`](https://developer.apple.com/documentation/Foundation/NSAttributedString), [`NSURL`](https://developer.apple.com/documentation/Foundation/NSURL), [`NSColor`](nscolor.md), [`NSSound`](nssound.md), [`NSImage`](nsimage.md), and [`NSPasteboardItem`](nspasteboarditem.md) implement this protocol. You can make your custom class conform to this protocol so that you can write instances of the class to a pasteboard using the [`writeObjects(_:)`](nspasteboard/writeobjects(_:).md) method of [`NSPasteboard`](nspasteboard.md).
+The Cocoa framework classes [`NSString`](https://developer.apple.com/documentation/foundation/nsstring), [`NSAttributedString`](https://developer.apple.com/documentation/foundation/nsattributedstring), [`NSURL`](https://developer.apple.com/documentation/foundation/nsurl), [`NSColor`](nscolor.md), [`NSSound`](nssound.md), [`NSImage`](nsimage.md), and [`NSPasteboardItem`](nspasteboarditem.md) implement this protocol. You can make your custom class conform to this protocol so that you can write instances of the class to a pasteboard using the [`writeObjects(_:)`](nspasteboard/writeobjects(_:).md) method of [`NSPasteboard`](nspasteboard.md).
 
 ## Topics
 
@@ -39,7 +39,7 @@ The Cocoa framework classes [`NSString`](https://developer.apple.com/documentati
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 ### Conforming Types
 - [NSColor](nscolor.md)
 - [NSFilePromiseProvider](nsfilepromiseprovider.md)

@@ -33,7 +33,7 @@ You can also improve the quality of your app’s searchable content by donating 
   A type that stores an app intent and indicates its relevance to someone.
 - [class RelevantIntentManager](relevantintentmanager.md)
   A type you use to suggest app intents and their current relevance to a person.
-- [struct RelevantContext](../RelevanceKit/RelevantContext.md)
+- [struct RelevantContext](../relevancekit/relevantcontext.md)
   Contextual clues the system uses to show relevant widgets in the Smart Stack on watchOS.
 ### Entity relevance
 - [struct RelevantEntities](relevantentities.md)

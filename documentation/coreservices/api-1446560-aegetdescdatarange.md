@@ -26,8 +26,8 @@ When used in conjunction with [`AECreateDescFromExternalPtr(_:_:_:_:_:_:)`](1446
 
 ## Parameters
 
-- `dataDesc`: A pointer to the descriptor to get the data from. See  .
-- `buffer`: A pointer to a buffer, local variable, or other storage location created and disposed of by your application. The size in bytes should be at least as large as the value you pass in the   parameter. On return, contains the specified data from the descriptor.
+- `dataDesc`: A pointer to the descriptor to get the data from. See [`AEDesc`](aedesc.md).
+- `buffer`: A pointer to a buffer, local variable, or other storage location created and disposed of by your application. The size in bytes should be at least as large as the value you pass in the `length` parameter. On return, contains the specified data from the descriptor.
 - `offset`: The zero-based offset to the data to be retrieved from the descriptor.
 - `length`: The number of bytes of contiguous data to retrieve.
 

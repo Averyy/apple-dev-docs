@@ -20,7 +20,7 @@ static let visits: SRSensor
 
 The [`sample`](srfetchresult/sample.md) type for this sensor is [`SRVisit`](srvisit.md).
 
-You need to provide a reason to record visited locations by adding the [`SRSensorUsageVisits`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSSensorKitUsageDetail/SRSensorUsageVisits) dictionary to the [`NSSensorKitUsageDetail`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSSensorKitUsageDetail) key in the information property list.
+You need to provide a reason to record visited locations by adding the [`SRSensorUsageVisits`](https://developer.apple.com/documentation/bundleresources/information-property-list/nssensorkitusagedetail/srsensorusagevisits) dictionary to the [`NSSensorKitUsageDetail`](https://developer.apple.com/documentation/bundleresources/information-property-list/nssensorkitusagedetail) key in the information property list.
 
 ## See Also
 

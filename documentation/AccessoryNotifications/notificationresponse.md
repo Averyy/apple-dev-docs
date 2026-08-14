@@ -7,7 +7,6 @@ A structure that represents a person’s response to a notification.
 
 **Availability**:
 - iOS 26.5+
-- iPadOS 26.5+
 
 ## Declaration
 
@@ -39,9 +38,9 @@ Create an instance of this structure when a person responds to a notification on
 ## Relationships
 
 ### Conforms To
-- [Decodable](../Swift/Decodable.md)
-- [Encodable](../Swift/Encodable.md)
-- [Equatable](../Swift/Equatable.md)
+- [Decodable](../swift/decodable.md)
+- [Encodable](../swift/encodable.md)
+- [Equatable](../swift/equatable.md)
 
 
 ---

@@ -20,7 +20,7 @@ func requestPreAuthorizedDiagnosisKeys() async throws
 
 > ❗ **Important**:  You can call this method from synchronous code using a completion handler, as shown on this page, or you can call it as an asynchronous method that has the following declaration: ```swift
 func requestPreAuthorizedDiagnosisKeys() async throws
-``` For information about concurrency and asynchronous code in Swift, see [`Calling Objective-C APIs Asynchronously`](https://developer.apple.com/documentation/Swift/calling-objective-c-apis-asynchronously).
+``` For information about concurrency and asynchronous code in Swift, see [`Calling Objective-C APIs Asynchronously`](https://developer.apple.com/documentation/swift/calling-objective-c-apis-asynchronously).
 
 If the user authorizes sharing of diagnosis keys and receives a positive test result within five days, call this method to retrieve the preauthorized keys, but only after informing the user of the positive result. [`ENDiagnosisKeysAvailableHandler`](endiagnosiskeysavailablehandler.md) receives the keys when the user unlocks their device. Subsequent calls to this method have no effect. If more than five days pass after the user authorizes sharing of their keys, or if the user declines to share their keys, the completion handler returns an error.
 

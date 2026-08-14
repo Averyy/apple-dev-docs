@@ -16,7 +16,7 @@ var videoGravity: AVLayerVideoGravity { get set }
 
 #### Discussion
 
-See [`AVLayerVideoGravity`](https://developer.apple.com/documentation/AVFoundation/AVLayerVideoGravity) for supported values. The default value is [`resizeAspect`](https://developer.apple.com/documentation/AVFoundation/AVLayerVideoGravity/resizeAspect).
+See [`AVLayerVideoGravity`](https://developer.apple.com/documentation/avfoundation/avlayervideogravity) for supported values. The default value is [`resizeAspect`](https://developer.apple.com/documentation/avfoundation/avlayervideogravity/resizeaspect).
 
 ## See Also
 

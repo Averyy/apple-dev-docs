@@ -21,7 +21,7 @@ class func uiEdgeInsets(for string: String) -> UIEdgeInsets
 
 #### Return Value
 
-An edge insets data structure. If the string is not well-formed, the function returns [`zero`](https://developer.apple.com/documentation/UIKit/UIEdgeInsets/zero).
+An edge insets data structure. If the string is not well-formed, the function returns [`zero`](https://developer.apple.com/documentation/uikit/uiedgeinsets/zero).
 
 #### Discussion
 
@@ -29,7 +29,7 @@ In general, you should use this function only to convert strings that were previ
 
 ## Parameters
 
-- `string`: A string whose contents are of the form “{*top*, *left*, *bottom*, *right*}”, where *top*, *left*, *bottom*, *right* are the floating-point component values of the [`UIEdgeInsets`](https://developer.apple.com/documentation/UIKit/UIEdgeInsets) structure. An example of a valid string is @”{3.0,8.0,3.0,5.0}”. The string is not localized, so items are always separated with a comma.
+- `string`: A string whose contents are of the form “{*top*, *left*, *bottom*, *right*}”, where *top*, *left*, *bottom*, *right* are the floating-point component values of the [`UIEdgeInsets`](https://developer.apple.com/documentation/uikit/uiedgeinsets) structure. An example of a valid string is @”{3.0,8.0,3.0,5.0}”. The string is not localized, so items are always separated with a comma.
 
 ## See Also
 

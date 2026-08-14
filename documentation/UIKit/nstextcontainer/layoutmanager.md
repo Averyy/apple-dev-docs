@@ -30,7 +30,7 @@ Avoid assigning a layout manager directly through this property. Instead, use th
   The [`NSTextLayoutManager`](nstextlayoutmanager.md) owning the text container.
 - [func replaceLayoutManager(NSLayoutManager)](nstextcontainer/replacelayoutmanager(_:).md)
   Replaces the layout manager for the group of text system objects that contains the text container.
-- [var textView: NSTextView?](../AppKit/NSTextContainer/textView.md)
+- [var textView: NSTextView?](../appkit/nstextcontainer/textview.md)
   The text container’s text view.
 
 

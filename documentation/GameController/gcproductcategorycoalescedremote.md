@@ -21,7 +21,7 @@ let GCProductCategoryCoalescedRemote: String
 
 #### Discussion
 
-Game Controller merges the physical Apple TV Remote with the virtual Apple TV Remote app into one [`GCDevice`](gcdevice.md) object by default. To disable this behavior, or if you fully support the second-generation Siri Remote, set the [`GCSupportsMultipleMicroGamepads`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/GCSupportsMultipleMicroGamepads) key to `YES` in the information property list.
+Game Controller merges the physical Apple TV Remote with the virtual Apple TV Remote app into one [`GCDevice`](gcdevice.md) object by default. To disable this behavior, or if you fully support the second-generation Siri Remote, set the [`GCSupportsMultipleMicroGamepads`](https://developer.apple.com/documentation/bundleresources/information-property-list/gcsupportsmultiplemicrogamepads) key to `YES` in the information property list.
 
 ## See Also
 

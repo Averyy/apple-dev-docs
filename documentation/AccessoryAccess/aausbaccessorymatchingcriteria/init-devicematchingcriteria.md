@@ -16,7 +16,7 @@ convenience init(deviceMatchingCriteria: AAUSBAccessoryMatchingCriteria.DeviceMa
 
 #### Discussion
 
-Use [`createMatchingDictionaryWithVendorID:productID:bcdDevice:deviceClass:deviceSubclass:deviceProtocol:speed:productIDArray:`](https://developer.apple.com/documentation/IOUSBHost/IOUSBHostDevice/createMatchingDictionaryWithVendorID:productID:bcdDevice:deviceClass:deviceSubclass:deviceProtocol:speed:productIDArray:) to create the matching dictionary.
+Use [`createMatchingDictionaryWithVendorID:productID:bcdDevice:deviceClass:deviceSubclass:deviceProtocol:speed:productIDArray:`](https://developer.apple.com/documentation/iousbhost/iousbhostdevice/creatematchingdictionarywithvendorid:productid:bcddevice:deviceclass:devicesubclass:deviceprotocol:speed:productidarray:) to create the matching dictionary.
 
 See USBSpec.h in [`USBSpec.h User-Space`](https://developer.apple.com/documentation/iokit/usbspec_h_user-space) in [`IOKit`](https://developer.apple.com/documentation/iokit) for more details about dictionary keys for the USB device properties.
 

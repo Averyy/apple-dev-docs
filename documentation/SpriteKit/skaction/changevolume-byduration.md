@@ -26,7 +26,7 @@ A new action object.
 
 #### Discussion
 
-When the action executes, the audio node’s volume animates from its current value to its new value. For more information, see [`AVAudio3DMixing`](https://developer.apple.com/documentation/AVFAudio/AVAudio3DMixing).
+When the action executes, the audio node’s volume animates from its current value to its new value. For more information, see [`AVAudio3DMixing`](https://developer.apple.com/documentation/avfaudio/avaudio3dmixing).
 
 This action is reversible; the reverse is created as if the following code is executed:
 

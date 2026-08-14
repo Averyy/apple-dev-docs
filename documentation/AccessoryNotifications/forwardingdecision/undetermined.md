@@ -7,7 +7,6 @@ An option that indicates the person dismissed the prompt without responding.
 
 **Availability**:
 - iOS 26.5+
-- iPadOS 26.5+
 
 ## Declaration
 

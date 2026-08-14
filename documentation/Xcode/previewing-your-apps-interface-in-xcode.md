@@ -12,9 +12,9 @@ With Swift previews, you can make changes to your app’s views in code, and see
 
 When you add views to your code, you can display them in the preview canvas. The preview canvas shows how your view appears on different devices in a variety of configurations.
 
-![A screenshot of Xcode with the Project navigator on the left, the code editor in the middle, and the preview canvas on the right.](https://docs-assets.developer.apple.com/published/b934bfa480ea549e7b6a9ff5c3b24b5b/dynamically-previewing-1-preview-macro%402x.png)
+![A screenshot of Xcode with the Project navigator on the left, the code editor in the middle, and the preview canvas on the right.](/images/com.apple.Xcode/dynamically-previewing-1-preview-macro@2x.png)
 
-The Swift preview macro is a snippet of code that makes and configures your view. You use one of the preview macros — such as [`Preview(_:body:)`](https://developer.apple.com/documentation/SwiftUI/Preview(_:body:)) — to tell Xcode what to display. To manually show or hide the preview canvas, select Editor > Canvas from the Xcode menu.
+The Swift preview macro is a snippet of code that makes and configures your view. You use one of the preview macros — such as [`Preview(_:body:)`](https://developer.apple.com/documentation/swiftui/preview(_:body:)) — to tell Xcode what to display. To manually show or hide the preview canvas, select Editor > Canvas from the Xcode menu.
 
 **SwiftUI**:
 
@@ -132,7 +132,7 @@ When you select the live or interactive preview option, your view appears and in
 
 In selectable mode, the preview displays a snapshot of your view so you can interact with your view’s UI elements in the canvas. To highlight the code for an element in the source editor, click the Selectable button at the bottom of the preview canvas, and double-click the element in the preview canvas. Xcode highlights both the element in the preview canvas and the corresponding code in the source editor. Then you can make code changes to the element in the source editor and see the results immediately in the preview canvas.
 
-![A screenshot of Xcode with the code editor in the middle, and a preview on the right. The selectable mode button at the bottom of the preview canvas is active. The preview canvas displays a preview of the view in the selectable mode.](https://docs-assets.developer.apple.com/published/f7c5483b6ad539ed7792773001cd774f/dynamically-previewing-3-select-mode%402x.png)
+![A screenshot of Xcode with the code editor in the middle, and a preview on the right. The selectable mode button at the bottom of the preview canvas is active. The preview canvas displays a preview of the view in the selectable mode.](/images/com.apple.Xcode/dynamically-previewing-3-select-mode@2x.png)
 
 ##### Control How Your Previews Display with Device Settings
 
@@ -143,13 +143,13 @@ Use Device settings to control how a preview displays for a specific device. For
 3. Toggle Orientation on, and select Landscape Right under Orientation.
 4. Toggle Dynamic Type on, and move the Dynamic Type slider to the X Large text setting.
 
-![A screenshot of the Canvas Device Settings dialog showing the Color Scheme, Orientation, and Dynamic Type switches and controls.](https://docs-assets.developer.apple.com/published/346e65058495301b80b971aba1a9dcbc/dynamically-previewing-6-device-settings%402x.png)
+![A screenshot of the Canvas Device Settings dialog showing the Color Scheme, Orientation, and Dynamic Type switches and controls.](/images/com.apple.Xcode/dynamically-previewing-6-device-settings@2x.png)
 
 ##### Test Different View Configurations
 
 Use variant mode to see how your view appears in different variations for a given configuration. For example, to test how well your view supports accessibility, select Variant mode from the bottom of the preview canvas, and select the Dynamic Type Variants option. Xcode displays your view with different sizes of text.
 
-![A screenshot of the preview canvas. The variant mode button at the bottom of the preview canvas is active. The preview canvas displays a preview of the view for each variant of Dynamic Type size. Six previews are visible, each displaying the view with a different size of text.](https://docs-assets.developer.apple.com/published/9c5b54d89829edb79102568ae7a3f1e6/dynamically-previewing-4-variant-mode%402x.png)
+![A screenshot of the preview canvas. The variant mode button at the bottom of the preview canvas is active. The preview canvas displays a preview of the view for each variant of Dynamic Type size. Six previews are visible, each displaying the view with a different size of text.](/images/com.apple.Xcode/dynamically-previewing-4-variant-mode@2x.png)
 
 Preview canvas supports the following variations:
 
@@ -163,7 +163,7 @@ Preview canvas supports the following variations:
 
 To see how your view displays on a specific device, choose the device from the Preview Device pop-up menu at the bottom of the preview canvas. When you do, Xcode displays a preview of your view on that device.
 
-![A screenshot of the preview canvas. The preview destination mode button at the bottom of the preview canvas is active, set to iPad. The preview canvas displays a preview of the view on an iPad.](https://docs-assets.developer.apple.com/published/11251cfda86e026c7b59f29b05105045/dynamically-previewing-5-preview-destination%402x.png)
+![A screenshot of the preview canvas. The preview destination mode button at the bottom of the preview canvas is active, set to iPad. The preview canvas displays a preview of the view on an iPad.](/images/com.apple.Xcode/dynamically-previewing-5-preview-destination@2x.png)
 
 ##### Capture Specific Previews in Code
 
@@ -180,7 +180,7 @@ For example, you can add a name to more easily track what each preview displays.
 
 > **Note**: If you add multiple preview and playground macros to a file, you can switch between them using the tabs that appear at the top of the canvas. Xcode uses the name that you pass to the macro as the label for that preview. To add playgrounds to your Swift code, see [`Running code snippets using the playground macro`](running-code-snippets-using-the-playground-macro.md).
 
-You can also control how your preview displays by passing one or more configuration traits as a variadic argument list into the preview macro. For example, to display your view in the landscape left orientation, pass the [`landscapeLeft`](https://developer.apple.com/documentation/DeveloperToolsSupport/PreviewTrait/landscapeLeft) type property into the  [`init(_:traits:body:)`](https://developer.apple.com/documentation/DeveloperToolsSupport/Preview/init(_:traits:body:)-8pemr) preview initializer to tell Xcode which orientation to display.
+You can also control how your preview displays by passing one or more configuration traits as a variadic argument list into the preview macro. For example, to display your view in the landscape left orientation, pass the [`landscapeLeft`](https://developer.apple.com/documentation/developertoolssupport/previewtrait/landscapeleft) type property into the  [`init(_:traits:body:)`](https://developer.apple.com/documentation/developertoolssupport/preview/init(_:traits:body:)-8pemr) preview initializer to tell Xcode which orientation to display.
 
 **SwiftUI**:
 
@@ -217,7 +217,7 @@ You can also control how your preview displays by passing one or more configurat
 
 ##### Use Inline Dynamic Properties with Previewable
 
-When a view depends on a [`Binding`](https://developer.apple.com/documentation/SwiftUI/Binding) property wrapper, you can create a functional binding for that property and pass it into your preview using the [`Previewable()`](https://developer.apple.com/documentation/SwiftUI/Previewable()) macro. This macro works on any variable conforming to the [`DynamicProperty`](https://developer.apple.com/documentation/SwiftUI/DynamicProperty) protocol.
+When a view depends on a [`Binding`](https://developer.apple.com/documentation/swiftui/binding) property wrapper, you can create a functional binding for that property and pass it into your preview using the [`Previewable()`](https://developer.apple.com/documentation/swiftui/previewable()) macro. This macro works on any variable conforming to the [`DynamicProperty`](https://developer.apple.com/documentation/swiftui/dynamicproperty) protocol.
 
 ```swift
 struct PlayButton: View {
@@ -246,15 +246,15 @@ struct PlayButton: View {
 
 Tagging a dynamic property with the `Previewable` macro gets rid of the need to create wrapper views in previews.
 
-> **Note**: [`Previewable()`](https://developer.apple.com/documentation/SwiftUI/Previewable()) is a SwiftUI only macro and doesn’t apply to UIKit or AppKit previews.
+> **Note**: [`Previewable()`](https://developer.apple.com/documentation/swiftui/previewable()) is a SwiftUI only macro and doesn’t apply to UIKit or AppKit previews.
 
 ##### Make Complex Objects Reusable with a Preview Modifier
 
-To avoid recreating expensive objects for every preview that needs them, in SwiftUI you can create these objects once with the [`PreviewModifier`](https://developer.apple.com/documentation/SwiftUI/PreviewModifier) and then pass the preview modifier into your preview using the [`Preview(_:traits:_:body:)`](https://developer.apple.com/documentation/SwiftUI/Preview(_:traits:_:body:)) macro.
+To avoid recreating expensive objects for every preview that needs them, in SwiftUI you can create these objects once with the [`PreviewModifier`](https://developer.apple.com/documentation/swiftui/previewmodifier) and then pass the preview modifier into your preview using the [`Preview(_:traits:_:body:)`](https://developer.apple.com/documentation/swiftui/preview(_:traits:_:body:)) macro.
 
 Expensive objects — such as objects that make network calls, perform disk access, or just take considerable time and effort to setup — can make your previews take longer to load. By creating these expensive objects once, and sharing them across all your previews, you make your previews more efficient.
 
-For example, if you have an app with an expensive [`Observable()`](https://developer.apple.com/documentation/Observation/Observable()) object:
+For example, if you have an app with an expensive [`Observable()`](https://developer.apple.com/documentation/observation/observable()) object:
 
 ```swift
 @Observable
@@ -298,12 +298,12 @@ For every view you want to preview, you recreate and pass in that expensive obje
 }
 ```
 
-Instead, define the expensive object once and share it across multiple previews using the [`PreviewModifier`](https://developer.apple.com/documentation/SwiftUI/PreviewModifier) protocol.
+Instead, define the expensive object once and share it across multiple previews using the [`PreviewModifier`](https://developer.apple.com/documentation/swiftui/previewmodifier) protocol.
 
 1. Define a structure conforming to the `PreviewModifier` protocol.
-2. Implement the static [`makeSharedContext()`](https://developer.apple.com/documentation/SwiftUI/PreviewModifier/makeSharedContext()-4zi8r) function returning the object with the expensive state.
-3. Inject that shared context into the view you want to preview using the [`body(content:context:)`](https://developer.apple.com/documentation/SwiftUI/PreviewModifier/body(content:context:)) function.
-4. Add the modifier to the preview using the [`Preview(_:traits:_:body:)`](https://developer.apple.com/documentation/SwiftUI/Preview(_:traits:_:body:)) macro.
+2. Implement the static [`makeSharedContext()`](https://developer.apple.com/documentation/swiftui/previewmodifier/makesharedcontext()-4zi8r) function returning the object with the expensive state.
+3. Inject that shared context into the view you want to preview using the [`body(content:context:)`](https://developer.apple.com/documentation/swiftui/previewmodifier/body(content:context:)) function.
+4. Add the modifier to the preview using the [`Preview(_:traits:_:body:)`](https://developer.apple.com/documentation/swiftui/preview(_:traits:_:body:)) macro.
 
 ```swift
 // Create a struct conforming to the PreviewModifier protocol.
@@ -456,7 +456,7 @@ class CollaboratorCell: NSView {
 }
 ```
 
-![A screenshot of the preview canvas displaying six previews of a data row view in various test scenario configurations. The preview canvas displays view variations for online and offline status, with and without an avatar image, and long and short display names.](https://docs-assets.developer.apple.com/published/81ff991a6b05b57b33bcff2bfbd8d1fe/dynamically-previewing-7-minimal-data%402x.png)
+![A screenshot of the preview canvas displaying six previews of a data row view in various test scenario configurations. The preview canvas displays view variations for online and offline status, with and without an avatar image, and long and short display names.](/images/com.apple.Xcode/dynamically-previewing-7-minimal-data@2x.png)
 
 ##### Reduce Your App Size with Development Assets
 
@@ -478,7 +478,7 @@ Add items to the Development Assets of a project target as follows:
   Develop apps in SwiftUI with an interactive preview that keeps the code and layout in sync.
 - [Building and running an app](building-and-running-an-app.md)
   Compile your source files and assemble an app bundle to run on a device or simulator.
-- [Xcode updates](../Updates/Xcode.md)
+- [Xcode updates](../updates/xcode.md)
   Learn about important changes to Xcode.
 
 

@@ -7,7 +7,7 @@ An atom that identifies the font to use to display the text.
 
 #### Overview
 
-See [`Font table atom ('ftab')`](font_table_atom.md).
+See [`Font table atom`](font_table_atom.md).
 
 ## See Also
 

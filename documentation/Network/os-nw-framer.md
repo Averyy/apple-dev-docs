@@ -21,7 +21,7 @@ protocol OS_nw_framer : NSObjectProtocol
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 
 ---

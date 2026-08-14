@@ -10,7 +10,7 @@ Producing media for HTTP Live Streaming (HLS) requires special considerations if
 
 AAC audio processing requires a small amount of leading “throw-away” audio to prime the encoder and initialize internal tables. This small amount of audio results from *encoder delay* which happens during encoding to produce properly formed, encoded audio packets, and its duration is commonly referred to as the *priming duration*. This audio needs to occur before the first frame of video; otherwise, there will be no audio for the first few frames of video.
 
-![Illustration of audio priming samples in the audio track located ahead of the video samples in the video track.](https://docs-assets.developer.apple.com/published/c2ceacf9189804d8b5d286710141f294/preparing-audio-for-http-live-streaming-1%402x.png)
+![Illustration of audio priming samples in the audio track located ahead of the video samples in the video track.](/images/com.apple.HTTP-Live-Streaming/preparing-audio-for-http-live-streaming-1@2x.png)
 
 The audio sample rates are normally 44.1 kHz or 48 kHz. For more information, see the [`HTTP Live Streaming Specification`](https://developer.apple.comhttps://tools.ietf.org/html/draft-pantos-hls-rfc8216bis) and the [`HTTP Live Streaming (HLS) authoring specification for Apple devices`](hls-authoring-specification-for-apple-devices.md).
 

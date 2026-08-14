@@ -18,7 +18,7 @@ Overrides `IOService::systemWillShutdown` in order to notify network clients tha
 
 ## Parameters
 
-- `specifier`:  or  .
+- `specifier`: `kIOMessageSystemWillPowerOff` or `kIOMessageSystemWillRestart`.
 
 ## See Also
 

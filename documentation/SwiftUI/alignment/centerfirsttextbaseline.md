@@ -25,7 +25,7 @@ static var centerFirstTextBaseline: Alignment { get }
 
 This alignment combines the [`center`](horizontalalignment/center.md) horizontal guide and the [`firstTextBaseline`](verticalalignment/firsttextbaseline.md) vertical guide:
 
-![A square that’s divided into four equal quadrants. The upper-](https://docs-assets.developer.apple.com/published/678f6786ba0bc12846f4c13d3a41702e/Alignment-centerFirstTextBaseline-1-iOS%402x.png)
+![A square that’s divided into four equal quadrants. The upper-](/images/com.apple.SwiftUI/Alignment-centerFirstTextBaseline-1-iOS@2x.png)
 
 ## See Also
 

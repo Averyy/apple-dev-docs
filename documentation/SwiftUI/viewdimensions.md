@@ -66,7 +66,7 @@ struct ViewDimensionsOffset: View {
 
 The example above indents the second text view because the subtraction moves the second text view’s leading guide in the negative x direction, which is to the left in the view’s coordinate space. As a result, SwiftUI moves the second text view to the right, relative to the first text view, to keep their leading guides aligned:
 
-![A screenshot of two strings. The first says Default and the second,](https://docs-assets.developer.apple.com/published/3d9590a457827399824ef411b0a102c0/ViewDimensions-1-iOS%402x.png)
+![A screenshot of two strings. The first says Default and the second,](/images/com.apple.SwiftUI/ViewDimensions-1-iOS@2x.png)
 
 ##### Layout Direction
 
@@ -81,7 +81,7 @@ ViewDimensionsOffset()
 
 With no change in your guide, this produces the desired effect — it indents the second text view’s right side, relative to the first text view’s right side. The leading edge is now on the right, and the direction of the offset is reversed:
 
-![A screenshot of two strings. The first says Default and the second,](https://docs-assets.developer.apple.com/published/914c5c58311529ab9683f501c8dfe50e/ViewDimensions-2-iOS%402x.png)
+![A screenshot of two strings. The first says Default and the second,](/images/com.apple.SwiftUI/ViewDimensions-2-iOS@2x.png)
 
 ## Topics
 
@@ -99,7 +99,7 @@ With no change in your guide, this produces the desired effect — it indents th
 ## Relationships
 
 ### Conforms To
-- [Equatable](../Swift/Equatable.md)
+- [Equatable](../swift/equatable.md)
 
 ## See Also
 

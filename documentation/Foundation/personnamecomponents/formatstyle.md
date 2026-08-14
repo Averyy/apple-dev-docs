@@ -52,7 +52,7 @@ For more information and examples, see [`style`](personnamecomponents/formatstyl
 
 Use either [`formatted()`](personnamecomponents/formatted().md) or [`formatted(_:)`](personnamecomponents/formatted(_:).md), both instance methods of [`PersonNameComponents`](personnamecomponents.md), to create a string representation of a name.
 
-The [`formatted()`](https://developer.apple.com/documentation/Swift/Sequence/formatted()) method to applies the default format style to a name. For example:
+The [`formatted()`](https://developer.apple.com/documentation/swift/sequence/formatted()) method to applies the default format style to a name. For example:
 
 ```swift
 var tlc = PersonNameComponents()
@@ -127,16 +127,16 @@ mlr.formatted(customPersonFormatStyle)
 ## Relationships
 
 ### Conforms To
-- [Copyable](../Swift/Copyable.md)
-- [Decodable](../Swift/Decodable.md)
-- [Encodable](../Swift/Encodable.md)
-- [Equatable](../Swift/Equatable.md)
-- [Escapable](../Swift/Escapable.md)
+- [Copyable](../swift/copyable.md)
+- [Decodable](../swift/decodable.md)
+- [Encodable](../swift/encodable.md)
+- [Equatable](../swift/equatable.md)
+- [Escapable](../swift/escapable.md)
 - [FormatStyle](formatstyle.md)
-- [Hashable](../Swift/Hashable.md)
+- [Hashable](../swift/hashable.md)
 - [ParseableFormatStyle](parseableformatstyle.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

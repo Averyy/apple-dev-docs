@@ -19,13 +19,13 @@ static let MPMoviePlayerThumbnailImageRequestDidFinish: NSNotification.Name
 
 #### Discussion
 
-- [`MPMoviePlayerThumbnailImageKey`](https://developer.apple.com/documentation/MediaPlayer/MPMoviePlayerThumbnailImageKey)
-- [`MPMoviePlayerThumbnailTimeKey`](https://developer.apple.com/documentation/MediaPlayer/MPMoviePlayerThumbnailTimeKey)
+- [`MPMoviePlayerThumbnailImageKey`](https://developer.apple.com/documentation/mediaplayer/mpmovieplayerthumbnailimagekey)
+- [`MPMoviePlayerThumbnailTimeKey`](https://developer.apple.com/documentation/mediaplayer/mpmovieplayerthumbnailtimekey)
 
 If the capture request finished with an error, the `userInfo` dictionary contains values for the following two keys:
 
-- [`MPMoviePlayerThumbnailErrorKey`](https://developer.apple.com/documentation/MediaPlayer/MPMoviePlayerThumbnailErrorKey)
-- [`MPMoviePlayerThumbnailTimeKey`](https://developer.apple.com/documentation/MediaPlayer/MPMoviePlayerThumbnailTimeKey)
+- [`MPMoviePlayerThumbnailErrorKey`](https://developer.apple.com/documentation/mediaplayer/mpmovieplayerthumbnailerrorkey)
+- [`MPMoviePlayerThumbnailTimeKey`](https://developer.apple.com/documentation/mediaplayer/mpmovieplayerthumbnailtimekey)
 
 The movie player whose state has changed is available as the object associated with the notification. The methods to use for capturing movie thumbnails are described in Generating thumbnail images.
 

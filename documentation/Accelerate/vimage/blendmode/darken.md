@@ -24,7 +24,7 @@ case darken
 
 The following image shows the result of compositing using the darken blend mode:
 
-![Graphic showing the darken blend mode composite operation.](https://docs-assets.developer.apple.com/published/676ec6eca727e59096f9b76c7971ecea/media-3958272%402x.png)
+![Graphic showing the darken blend mode composite operation.](/images/com.apple.accelerate/media-3958272@2x.png)
 
 The bottom-right quadrant in the result is black because no pixels in the bottom layer are darker than the corresponding pixels in the top layer.
 

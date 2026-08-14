@@ -26,9 +26,9 @@ class CMWaterSubmersionManager
 
 Use this class to receive live depth, water pressure, and water temperature data on Apple Watch Ultra.
 
-Start by assigning a usage description using the [`NSMotionUsageDescription`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSMotionUsageDescription) key in your app target’s information property list. You also need to include an entitlement to access the live submersion data.
+Start by assigning a usage description using the [`NSMotionUsageDescription`](https://developer.apple.com/documentation/bundleresources/information-property-list/nsmotionusagedescription) key in your app target’s information property list. You also need to include an entitlement to access the live submersion data.
 
-To access data for dives with a maximum depth of 6 m, add the Shallow Depth and Pressure capability to your app. For more information, see [`Adding capabilities to your app`](https://developer.apple.com/documentation/Xcode/adding-capabilities-to-your-app).
+To access data for dives with a maximum depth of 6 m, add the Shallow Depth and Pressure capability to your app. For more information, see [`Adding capabilities to your app`](https://developer.apple.com/documentation/xcode/adding-capabilities-to-your-app).
 
 To enable a maximum depth of 40 m, you must apply for the full Submerged Depth and Pressure entitlement. For more information, see [`Express interest in the Submerged Depth and Pressure API`](https://developer.apple.comhttps://developer.apple.com/contact/request/submerged-depth-pressure-api/).
 
@@ -42,7 +42,7 @@ guard CMWaterSubmersionManager.waterSubmersionAvailable else {
 }
 ```
 
-If the [`waterSubmersionAvailable`](cmwatersubmersionmanager/watersubmersionavailable.md) property is [`true`](https://developer.apple.com/documentation/Swift/true), instantiate a [`CMWaterSubmersionManager`](cmwatersubmersionmanager.md) object and assign a delegate.
+If the [`waterSubmersionAvailable`](cmwatersubmersionmanager/watersubmersionavailable.md) property is [`true`](https://developer.apple.com/documentation/swift/true), instantiate a [`CMWaterSubmersionManager`](cmwatersubmersionmanager.md) object and assign a delegate.
 
 ```swift
 // Instantiate the submersion manager.
@@ -72,14 +72,14 @@ Your delegate then begins receiving updates from the system. For more informatio
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

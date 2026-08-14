@@ -19,9 +19,9 @@ var undoManager: UndoManager! { get set }
 
 #### Discussion
 
-This property holds the document’s undo manager (an [`UndoManager`](https://developer.apple.com/documentation/Foundation/UndoManager) object). Accessing this property lazily creates a default undo manager if a custom undo manager hasn’t been set.
+This property holds the document’s undo manager (an [`UndoManager`](https://developer.apple.com/documentation/foundation/undomanager) object). Accessing this property lazily creates a default undo manager if a custom undo manager hasn’t been set.
 
-The undo manager for the document is registered as an observer of various [`UndoManager`](https://developer.apple.com/documentation/Foundation/UndoManager) notifications so that it can call [`updateChangeCount(_:)`](uidocument/updatechangecount(_:).md) as the user makes undoable changes to the document. When a subclass sets this property and implements registers changes with it, it doesn’t need to call [`updateChangeCount(_:)`](uidocument/updatechangecount(_:).md) directly or (more rarely) override [`hasUnsavedChanges`](uidocument/hasunsavedchanges.md).
+The undo manager for the document is registered as an observer of various [`UndoManager`](https://developer.apple.com/documentation/foundation/undomanager) notifications so that it can call [`updateChangeCount(_:)`](uidocument/updatechangecount(_:).md) as the user makes undoable changes to the document. When a subclass sets this property and implements registers changes with it, it doesn’t need to call [`updateChangeCount(_:)`](uidocument/updatechangecount(_:).md) directly or (more rarely) override [`hasUnsavedChanges`](uidocument/hasunsavedchanges.md).
 
 ## See Also
 

@@ -22,7 +22,7 @@ var isEnabled: Bool { get set }
 
 #### Discussion
 
-If the value is [`true`](https://developer.apple.com/documentation/Swift/true), the light is enabled and affects sprite nodes in the scene. The default is [`true`](https://developer.apple.com/documentation/Swift/true).
+If the value is [`true`](https://developer.apple.com/documentation/swift/true), the light is enabled and affects sprite nodes in the scene. The default is [`true`](https://developer.apple.com/documentation/swift/true).
 
 ## See Also
 

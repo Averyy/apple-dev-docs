@@ -119,7 +119,7 @@ protocol MTLFXFrameInterpolatorBase : NSObjectProtocol
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 ### Inherited By
 - [MTL4FXFrameInterpolator](mtl4fxframeinterpolator.md)
 - [MTLFXFrameInterpolator](mtlfxframeinterpolator.md)

@@ -20,7 +20,7 @@ var providesPresentationContextTransitionStyle: Bool { get set }
 
 #### Discussion
 
-When a view controller’s [`definesPresentationContext`](uiviewcontroller/definespresentationcontext.md) property is [`true`](https://developer.apple.com/documentation/Swift/true), it can replace the transition style of the presented view controller with its own. When the value of this property to [`true`](https://developer.apple.com/documentation/Swift/true), the current view controller’s transition style is used instead of the style associated with the presented view controller. When the value of this property is [`false`](https://developer.apple.com/documentation/Swift/false), UIKit uses the transition style of the presented view controller. The default value of this property is [`false`](https://developer.apple.com/documentation/Swift/false).
+When a view controller’s [`definesPresentationContext`](uiviewcontroller/definespresentationcontext.md) property is [`true`](https://developer.apple.com/documentation/swift/true), it can replace the transition style of the presented view controller with its own. When the value of this property to [`true`](https://developer.apple.com/documentation/swift/true), the current view controller’s transition style is used instead of the style associated with the presented view controller. When the value of this property is [`false`](https://developer.apple.com/documentation/swift/false), UIKit uses the transition style of the presented view controller. The default value of this property is [`false`](https://developer.apple.com/documentation/swift/false).
 
 ## See Also
 

@@ -35,7 +35,7 @@ protocol UIPickerViewAccessibilityDelegate : UIPickerViewDelegate
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 - [UIPickerViewDelegate](uipickerviewdelegate.md)
 
 ## See Also

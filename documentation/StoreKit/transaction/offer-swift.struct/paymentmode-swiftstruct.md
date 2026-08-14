@@ -26,11 +26,11 @@ If your app supports offers and the customer redeems an offer, the transaction c
 
 The following images describe payment modes for auto-renewable subscriptions.
 
-![A timeline titled “Free Trial” that is divided into three sections. The first section, which has a different timespan than the remaining sections, starts with the initial purchase and is the free trial period. The second section is labeled “first renewal”, and is at the regular price. The third section is labeled  “second renewal”, and is also at the regular price. Three dots at the end of the timeline indicate the pattern continues with renewals at the regular price.](https://docs-assets.developer.apple.com/published/31535a5905cc81be4d4fa37a8089ea5f/media-4311732%402x.png)
+![A timeline titled “Free Trial” that is divided into three sections. The first section, which has a different timespan than the remaining sections, starts with the initial purchase and is the free trial period. The second section is labeled “first renewal”, and is at the regular price. The third section is labeled  “second renewal”, and is also at the regular price. Three dots at the end of the timeline indicate the pattern continues with renewals at the regular price.](/images/com.apple.storekit/media-4311732@2x.png)
 
-![A timeline titled “Pay As You Go” that is divided into four sections. The first three sections, labeled “Introductory price” each have equal timespan, and the fourth section, labeled “Regular price” has a different timespan. The first three sections represent the initial purchase, first renewal, and second renewal, respectively.  The fourth section is the third renewal, at the regular price. Three dots at the end of the timeline indicate the pattern continues with renewals at the regular price.](https://docs-assets.developer.apple.com/published/a6962b6c59fca2500367c1d792f2ec46/media-4311730%402x.png)
+![A timeline titled “Pay As You Go” that is divided into four sections. The first three sections, labeled “Introductory price” each have equal timespan, and the fourth section, labeled “Regular price” has a different timespan. The first three sections represent the initial purchase, first renewal, and second renewal, respectively.  The fourth section is the third renewal, at the regular price. Three dots at the end of the timeline indicate the pattern continues with renewals at the regular price.](/images/com.apple.storekit/media-4311730@2x.png)
 
-![A timeline titled “Pay Up Front” that is divided into three sections. The first section, labeled “Introductory price” has a different timespan than the following sections, labelled “Regular price”. The timeline starts with the initial purchase at the introductory price, followed by the first renewal and second renewals, both at the regular price. Three dots at the end of the timeline indicate the pattern continues with renewals at the regular price.](https://docs-assets.developer.apple.com/published/2067b05f759a211be51d6b062b2aa00c/media-4311731%402x.png)
+![A timeline titled “Pay Up Front” that is divided into three sections. The first section, labeled “Introductory price” has a different timespan than the following sections, labelled “Regular price”. The timeline starts with the initial purchase at the introductory price, followed by the first renewal and second renewals, both at the regular price. Three dots at the end of the timeline indicate the pattern continues with renewals at the regular price.](/images/com.apple.storekit/media-4311731@2x.png)
 
 For more information about payment modes, see [`In-app purchase and subscriptions pricing and availability`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/reference/in-app-purchase-and-subscriptions-pricing-and-availability).
 
@@ -49,11 +49,11 @@ For more information about payment modes, see [`In-app purchase and subscription
 ## Relationships
 
 ### Conforms To
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [RawRepresentable](../Swift/RawRepresentable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [RawRepresentable](../swift/rawrepresentable.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

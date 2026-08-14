@@ -92,7 +92,7 @@ let syntheticGenerationPrompt = Prompt("""
     """)
 ```
 
-The method returns an [`AsyncThrowingStream`](https://developer.apple.com/documentation/Swift/AsyncThrowingStream) that yields each new sample as the model generates it:
+The method returns an [`AsyncThrowingStream`](https://developer.apple.com/documentation/swift/asyncthrowingstream) that yields each new sample as the model generates it:
 
 ```swift
 var expanded: [ModelSample<TaskItem>] = []

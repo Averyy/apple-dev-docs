@@ -418,7 +418,7 @@ Clients of your value then access the value in the usual way, reading it with th
 ## Relationships
 
 ### Conforms To
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
 
 ## See Also
 

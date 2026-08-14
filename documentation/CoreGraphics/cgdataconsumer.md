@@ -22,7 +22,7 @@ class CGDataConsumer
 
 #### Overview
 
-Most apps should use [`CGImageDestination`](https://developer.apple.com/documentation/ImageIO/CGImageDestination) objects instead.
+Most apps should use [`CGImageDestination`](https://developer.apple.com/documentation/imageio/cgimagedestination) objects instead.
 
 ## Topics
 
@@ -46,8 +46,8 @@ Most apps should use [`CGImageDestination`](https://developer.apple.com/document
 ## Relationships
 
 ### Conforms To
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
 
 ## See Also
 

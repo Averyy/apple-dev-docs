@@ -17,7 +17,7 @@ An array of dictionaries (associative arrays) describing the running application
 
 ## Parameters
 
-- `bundleID`: A string with the bundle ID of the desired application, such as  .
+- `bundleID`: A string with the bundle ID of the desired application, such as `com.apple.TextEdit`.
 
 ## See Also
 

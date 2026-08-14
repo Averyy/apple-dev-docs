@@ -21,7 +21,7 @@ let CNErrorUserInfoAffectedRecordIdentifiersKey: String
 
 #### Discussion
 
-An array of one or more [`NSString`](https://developer.apple.com/documentation/Foundation/NSString) objects for which the error code applies.
+An array of one or more [`NSString`](https://developer.apple.com/documentation/foundation/nsstring) objects for which the error code applies.
 
 ## See Also
 

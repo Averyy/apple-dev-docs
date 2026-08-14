@@ -26,7 +26,7 @@ The selector named by `aSelectorName`. If `aSelectorName` is `nil`, or cannot be
 
 #### Discussion
 
-To make a selector, [`NSSelectorFromString(_:)`](nsselectorfromstring(_:).md) passes a UTF-8 encoded character representation of `aSelectorName` to [`sel_registerName(_:)`](https://developer.apple.com/documentation/ObjectiveC/sel_registerName(_:)) and returns the value returned by that function. Note, therefore, that if the selector does not exist it is registered and the newly-registered selector is returned.
+To make a selector, [`NSSelectorFromString(_:)`](nsselectorfromstring(_:).md) passes a UTF-8 encoded character representation of `aSelectorName` to [`sel_registerName(_:)`](https://developer.apple.com/documentation/objectivec/sel_registername(_:)) and returns the value returned by that function. Note, therefore, that if the selector does not exist it is registered and the newly-registered selector is returned.
 
 Recall that a colon (”:”) is part of a method name; `setHeight` is not the same as `setHeight:`.
 

@@ -13,7 +13,7 @@ While your capture extension is active, the system places the following restrict
 - The capture extension can’t access the network.
 - The capture extension can’t read from or write to the App Group’s shared container.
 - When the system suspends the capture extension, it erases the capture extension’s container directory. An extension typically suspends when someone dismisses the extension by swiping up from the bottom of the screen or by pressing the side button.
-- The app extension terminates shortly after launch if it doesn’t have an active camera view that uses [`AVCaptureEventInteraction`](https://developer.apple.com/documentation/AVKit/AVCaptureEventInteraction) to handle events from the hardware buttons, or if access to the camera hasn’t been requested.
+- The app extension terminates shortly after launch if it doesn’t have an active camera view that uses [`AVCaptureEventInteraction`](https://developer.apple.com/documentation/avkit/avcaptureeventinteraction) to handle events from the hardware buttons, or if access to the camera hasn’t been requested.
 
 ##### Add a Locked Camera Capture Extension to Your Project
 
@@ -24,15 +24,15 @@ The Locked Camera Capture Extension template provides everything you need to sta
 3. Enter the name of your extension.
 4. Click Finish.
 
-The template creates an extension target that contains an implementation of [`LockedCameraCaptureUIScene`](lockedcameracaptureuiscene.md) that uses a [`UIImagePickerController`](https://developer.apple.com/documentation/UIKit/UIImagePickerController) to capture content using the rear camera.
+The template creates an extension target that contains an implementation of [`LockedCameraCaptureUIScene`](lockedcameracaptureuiscene.md) that uses a [`UIImagePickerController`](https://developer.apple.com/documentation/uikit/uiimagepickercontroller) to capture content using the rear camera.
 
-> **Note**: The capture extension inherits camera permissions from your app. If the person hasn’t granted access, the system prompts them to authenticate and unlock their device. It then opens the app and the app requests access. For more information about requesting camera access, refer to [`Requesting authorization to capture and save media`](https://developer.apple.com/documentation/AVFoundation/requesting-authorization-to-capture-and-save-media).
+> **Note**: The capture extension inherits camera permissions from your app. If the person hasn’t granted access, the system prompts them to authenticate and unlock their device. It then opens the app and the app requests access. For more information about requesting camera access, refer to [`Requesting authorization to capture and save media`](https://developer.apple.com/documentation/avfoundation/requesting-authorization-to-capture-and-save-media).
 
 ##### Launch Your App Extension
 
 Create a control widget that launches the capture extension when the device is locked. People will need to add your app’s control to Control Center, the Lock screen, or configure the Action button with it.
 
-Pass data between your app and your app extension on launch with [`CameraCaptureIntent`](https://developer.apple.com/documentation/AppIntents/CameraCaptureIntent). The `appContext` of the `CameraCaptureIntent` data contains up to four KB of user-specific data. Use this data to configure your capture extension’s UI. For example, you can enable previously purchased camera filters, or remember if someone was using the front or rear camera last. Your app or capture extension reads from and writes to the `appContext`. It represents the state of your extension or app when it launches. Use the `CameraCaptureIntent` perform function to deep link to the capture experience in your app. Include the `CameraCaptureIntent` in your app target, control widget extension target, and camera capture extension target. To learn more, refer to [`CameraCaptureIntent`](https://developer.apple.com/documentation/AppIntents/CameraCaptureIntent).
+Pass data between your app and your app extension on launch with [`CameraCaptureIntent`](https://developer.apple.com/documentation/appintents/cameracaptureintent). The `appContext` of the `CameraCaptureIntent` data contains up to four KB of user-specific data. Use this data to configure your capture extension’s UI. For example, you can enable previously purchased camera filters, or remember if someone was using the front or rear camera last. Your app or capture extension reads from and writes to the `appContext`. It represents the state of your extension or app when it launches. Use the `CameraCaptureIntent` perform function to deep link to the capture experience in your app. Include the `CameraCaptureIntent` in your app target, control widget extension target, and camera capture extension target. To learn more, refer to [`CameraCaptureIntent`](https://developer.apple.com/documentation/appintents/cameracaptureintent).
 
 The following code uses a `CameraCaptureIntent` to read the camera’s direction, the front or the rear, from the intent’s `appContext`:
 
@@ -100,7 +100,7 @@ struct MyCameraCaptureExtension: LockedCameraCaptureExtension {
 } 
 ```
 
-In your capture view, create a view that starts an active camera session that uses `AVCaptureEventInteraction`. `UIImagePickerController` uses `AVCaptureEventInteraction`, but you can create custom capture views. To learn more about creating custom capture views, refer to [`Setting up a capture session`](https://developer.apple.com/documentation/AVFoundation/setting-up-a-capture-session).
+In your capture view, create a view that starts an active camera session that uses `AVCaptureEventInteraction`. `UIImagePickerController` uses `AVCaptureEventInteraction`, but you can create custom capture views. To learn more about creating custom capture views, refer to [`Setting up a capture session`](https://developer.apple.com/documentation/avfoundation/setting-up-a-capture-session).
 
 The following code shows how to use UIImagePickerController to capture content in your extension. UIImagePickerController uses AVCaptureEventInteraction and ensures the system won’t terminate your extension after launch:
 
@@ -130,7 +130,7 @@ struct Viewfinder: UIViewControllerRepresentable {
 
 ##### Save Captured Content
 
-Use [`PhotoKit`](https://developer.apple.com/documentation/PhotoKit) or [`sessionContentURL`](lockedcameracapturesession/sessioncontenturl.md) from `LockedCameraCaptureSession` to store all captured content. The URL is a temporary directory that’s created when the app extension launches, within the capture extension’s containing app’s data container. The system erases and resets any content saved to the capture extension’s data container when the capture extension suspends or terminates.
+Use [`PhotoKit`](https://developer.apple.com/documentation/photokit) or [`sessionContentURL`](lockedcameracapturesession/sessioncontenturl.md) from `LockedCameraCaptureSession` to store all captured content. The URL is a temporary directory that’s created when the app extension launches, within the capture extension’s containing app’s data container. The system erases and resets any content saved to the capture extension’s data container when the capture extension suspends or terminates.
 
 ##### Launch Your App From the Capture Extension
 

@@ -40,7 +40,7 @@ var extrusionOptions = ShapeExtrusionOptions()
 extrusionOptions.extrusionMethod = .tracePositions(positions)
 ```
 
-![None](https://docs-assets.developer.apple.com/published/93b88510bd5a9d355fd94f15be445ac8/generateExtrudedShape-extrusionMethod-tracePositions-red.jpg)
+![None](/images/com.apple.RealityKit/generateExtrudedShape-extrusionMethod-tracePositions-red.jpg)
 
 
 ---

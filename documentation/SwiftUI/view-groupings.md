@@ -8,11 +8,11 @@ Present views in different kinds of purpose-driven containers, like forms or con
 
 You can create groups of views that serve different purposes.
 
-![None](https://docs-assets.developer.apple.com/published/53961e3c03e161d637bf0a08c342c9a4/view-groupings-hero%402x.png)
+![None](/images/com.apple.SwiftUI/view-groupings-hero@2x.png)
 
 For example, a [`Group`](group.md) construct treats the specified views as a unit without imposing any additional layout or appearance characteristics. A [`Form`](form.md) presents a group of elements with a platform-specific appearance that’s suitable for gathering input from people.
 
-For design guidance, see [`Layout`](https://developer.apple.com/design/Human-Interface-Guidelines/layout) in the Human Interface Guidelines.
+For design guidance, see [`Layout`](https://developer.apple.com/design/human-interface-guidelines/layout) in the Human Interface Guidelines.
 
 ## Topics
 

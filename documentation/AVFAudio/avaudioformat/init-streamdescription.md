@@ -26,7 +26,7 @@ A new `AVAudioFormat` instance, or `nil` if the initialization fails.
 
 #### Discussion
 
-If the [`AudioStreamBasicDescription`](https://developer.apple.com/documentation/CoreAudioTypes/AudioStreamBasicDescription) specifies more than two channels, this method fails and returns `nil`. Instead, use the [`init(streamDescription:channelLayout:)`](avaudioformat/init(streamdescription:channellayout:).md) method.
+If the [`AudioStreamBasicDescription`](https://developer.apple.com/documentation/coreaudiotypes/audiostreambasicdescription) specifies more than two channels, this method fails and returns `nil`. Instead, use the [`init(streamDescription:channelLayout:)`](avaudioformat/init(streamdescription:channellayout:).md) method.
 
 ## Parameters
 

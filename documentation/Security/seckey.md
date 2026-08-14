@@ -31,8 +31,8 @@ A [`SecKey`](seckey.md) instance that represents a key that is stored in a keych
 ## Relationships
 
 ### Conforms To
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
 
 
 ---

@@ -7,7 +7,6 @@ An identifier that the source app sets for the notification.
 
 **Availability**:
 - iOS 26.5+
-- iPadOS 26.5+
 
 ## Declaration
 

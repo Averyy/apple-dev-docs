@@ -26,7 +26,7 @@ Understand the underlying structures that support HID drivers.
   An object that contains parsed information from a HID input report.
 - [IOHIDDigitizerCollection](iohiddigitizercollection.md)
   A collection of elements that contain digitizer-related data.
-- [com.apple.developer.hid.virtual.device](../BundleResources/Entitlements/com.apple.developer.hid.virtual.device.md)
+- [com.apple.developer.hid.virtual.device](../bundleresources/entitlements/com.apple.developer.hid.virtual.device.md)
   A Boolean value that indicates whether the driver creates a virtual HID device.
 
 

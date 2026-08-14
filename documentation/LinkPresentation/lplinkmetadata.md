@@ -24,9 +24,9 @@ class LPLinkMetadata
 
 Use [`LPLinkMetadata`](lplinkmetadata.md) to store the metadata about a URL, including its title, icon, images and video.
 
-Fetch metadata using [`LPMetadataProvider`](lpmetadataprovider.md). For remote URLs, cache the metadata locally to avoid the data and performance cost of fetching it from the internet every time you present it. [`LPLinkMetadata`](lplinkmetadata.md) is serializable with [`NSSecureCoding`](https://developer.apple.com/documentation/Foundation/NSSecureCoding).
+Fetch metadata using [`LPMetadataProvider`](lpmetadataprovider.md). For remote URLs, cache the metadata locally to avoid the data and performance cost of fetching it from the internet every time you present it. [`LPLinkMetadata`](lplinkmetadata.md) is serializable with [`NSSecureCoding`](https://developer.apple.com/documentation/foundation/nssecurecoding).
 
-For local file URLs, the [`Quick Look Thumbnailing`](https://developer.apple.com/documentation/QuickLookThumbnailing) API retrieves a representative thumbnail for the file, if possible.
+For local file URLs, the [`Quick Look Thumbnailing`](https://developer.apple.com/documentation/quicklookthumbnailing) API retrieves a representative thumbnail for the file, if possible.
 
 #### Provide Custom Metadata
 
@@ -50,7 +50,7 @@ func activityViewControllerLinkMetadata(_: UIActivityViewController) -> LPLinkMe
 
 For existing apps that share URLs, the share sheet automatically presents a preview of the link. The preview first shows a placeholder link icon alongside the base URL while fetching the link’s metadata over the network. The preview updates once the link’s icon and title become available.
 
-If you already have an [`LPLinkMetadata`](lplinkmetadata.md) object for a URL, pass it to the share sheet to present the preview instantly, without fetching data over the network. In your implementation of [`activityViewControllerLinkMetadata(_:)`](https://developer.apple.com/documentation/UIKit/UIActivityItemSource/activityViewControllerLinkMetadata(_:)), return the metadata object.
+If you already have an [`LPLinkMetadata`](lplinkmetadata.md) object for a URL, pass it to the share sheet to present the preview instantly, without fetching data over the network. In your implementation of [`activityViewControllerLinkMetadata(_:)`](https://developer.apple.com/documentation/uikit/uiactivityitemsource/activityviewcontrollerlinkmetadata(_:)), return the metadata object.
 
 ```swift
 func activityViewControllerLinkMetadata(_:
@@ -87,17 +87,17 @@ If the user chooses to share to Messages, the same metadata passes directly thro
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCoding](../Foundation/NSCoding.md)
-- [NSCopying](../Foundation/NSCopying.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [NSSecureCoding](../Foundation/NSSecureCoding.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCoding](../foundation/nscoding.md)
+- [NSCopying](../foundation/nscopying.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSSecureCoding](../foundation/nssecurecoding.md)
 
 ## See Also
 

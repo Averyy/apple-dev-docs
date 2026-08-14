@@ -24,10 +24,10 @@ Thread-safe since Mac OS version 10.2.
 
 ## Parameters
 
-- `inItemRef`: A pointer to a file-system reference designating the item whose preferred application is requested; see the   in the Carbon File Management Documentation for a description of the   data type.
-- `inRolesMask`: A bit mask specifying the application’s desired role or roles with respect to the designated item; see   for a description of this mask. If the role is unimportant, pass  .
-- `outAppRef`: A pointer to a file-system reference that, on return, will identify the item’s preferred application; see the   in the Carbon File Management Documentation for a description of the   data type. Pass   if you are not interested in identifying the preferred application in this form; however, this parameter and   cannot both be  .
-- `outAppURL`: Despite the absence of the word   in its name, this function retains the URL reference object on your behalf; you are responsible for releasing this object.
+- `inItemRef`: A pointer to a file-system reference designating the item whose preferred application is requested; see the *File Manager Reference* in the Carbon File Management Documentation for a description of the `FSRef` data type.
+- `inRolesMask`: A bit mask specifying the application’s desired role or roles with respect to the designated item; see [`LSRolesMask`](lsrolesmask.md) for a description of this mask. If the role is unimportant, pass `kLSRolesAll`.
+- `outAppRef`: A pointer to a file-system reference that, on return, will identify the item’s preferred application; see the *File Manager Reference* in the Carbon File Management Documentation for a description of the `FSRef` data type. Pass `NULL` if you are not interested in identifying the preferred application in this form; however, this parameter and `outAppURL` cannot both be `NULL`.
+- `outAppURL`: A pointer to a Core Foundation URL reference that, on return, will identify the item’s preferred application; see the *CFURL Reference* in the Core Foundation Reference Documentation for a description of the `CFURLRef` data type. Pass `NULL` if you are not interested in identifying the preferred application in this form; however, this parameter and `outAppRef` cannot both be `NULL`. Despite the absence of the word `Copy` in its name, this function retains the URL reference object on your behalf; you are responsible for releasing this object.
 
 ## See Also
 

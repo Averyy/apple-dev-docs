@@ -22,7 +22,7 @@ func write(to url: URL, atomically: Bool) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/Swift/true) if the location is written successfully, otherwise [`false`](https://developer.apple.com/documentation/Swift/false).
+[`true`](https://developer.apple.com/documentation/swift/true) if the location is written successfully, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
 
 #### Discussion
 
@@ -31,7 +31,7 @@ If the array’s contents are all property list objects (`NSString`, `NSData`, `
 ## Parameters
 
 - `url`: The location at which to write the array.
-- `atomically`: If [`true`](https://developer.apple.com/documentation/Swift/true), the array is written to an auxiliary location, and then the auxiliary location is renamed to `aURL`. If [`false`](https://developer.apple.com/documentation/Swift/false), the array is written directly to `aURL`. The [`true`](https://developer.apple.com/documentation/Swift/true) option guarantees that `aURL`, if it exists at all, won’t be corrupted even if the system should crash during writing.
+- `atomically`: If [`true`](https://developer.apple.com/documentation/swift/true), the array is written to an auxiliary location, and then the auxiliary location is renamed to `aURL`. If [`false`](https://developer.apple.com/documentation/swift/false), the array is written directly to `aURL`. The [`true`](https://developer.apple.com/documentation/swift/true) option guarantees that `aURL`, if it exists at all, won’t be corrupted even if the system should crash during writing.
 
 ## See Also
 

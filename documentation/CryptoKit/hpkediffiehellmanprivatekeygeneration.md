@@ -32,8 +32,8 @@ protocol HPKEDiffieHellmanPrivateKeyGeneration : HPKEDiffieHellmanPrivateKey
 ### Inherits From
 - [DiffieHellmanKeyAgreement](diffiehellmankeyagreement.md)
 - [HPKEDiffieHellmanPrivateKey](hpkediffiehellmanprivatekey.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 ### Conforming Types
 - [Curve25519.KeyAgreement.PrivateKey](curve25519/keyagreement/privatekey.md)
 - [P256.KeyAgreement.PrivateKey](p256/keyagreement/privatekey.md)

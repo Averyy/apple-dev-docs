@@ -24,11 +24,11 @@ As with [`ResourcesExportingWithOptions`](resourcesexportingwithoptions.md), thi
 ## Relationships
 
 ### Inherits From
-- [AppExtension](../ExtensionFoundation/AppExtension.md)
+- [AppExtension](../extensionfoundation/appextension.md)
 - [AppMigrationExtension](appmigrationextension.md)
 - [ResourcesExportingWithOptions](resourcesexportingwithoptions.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

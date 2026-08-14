@@ -24,7 +24,7 @@ var searchResults: some AsyncSequence<SpotlightSearchTool.SearchReply, Never> { 
 
 #### Discussion
 
-Use this property to monitor the search results as the tool generates them. Each time the model calls the Spotlight search tool’s [`call(arguments:)`](https://developer.apple.com/documentation/FoundationModels/Tool/call(arguments:)) method, the tool generates one or more [`SpotlightSearchTool.SearchReply`](spotlightsearchtool/searchreply.md) structures with information about the results. Use this information to track the tool’s behavior while responding to the model’s requests.
+Use this property to monitor the search results as the tool generates them. Each time the model calls the Spotlight search tool’s [`call(arguments:)`](https://developer.apple.com/documentation/foundationmodels/tool/call(arguments:)) method, the tool generates one or more [`SpotlightSearchTool.SearchReply`](spotlightsearchtool/searchreply.md) structures with information about the results. Use this information to track the tool’s behavior while responding to the model’s requests.
 
 Monitor the asynchronous stream using a `for await` loop in a separate task, as shown in the following example:
 

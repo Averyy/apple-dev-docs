@@ -20,7 +20,7 @@ string appTransactionId
 
 #### Discussion
 
-For more information, see [`appTransactionID`](https://developer.apple.com/documentation/StoreKit/AppTransaction/appTransactionID).
+For more information, see [`appTransactionID`](https://developer.apple.com/documentation/storekit/apptransaction/apptransactionid).
 
 
 ---

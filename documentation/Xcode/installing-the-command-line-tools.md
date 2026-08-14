@@ -18,7 +18,7 @@ Before you install the Command Line Tools for Xcode package, review the [`Xcode 
 
 ##### Download and Install the Command Line Tools for Xcode Package
 
-The [`More Downloads page`](https://developer.apple.comhttps://developer.apple.com/download/all/?q=command%20line%20tools) of the [`Apple Developer website`](https://developer.apple.comhttps://developer.apple.com/) lists all downloadable versions of the Command Line Tools for Xcode package. To install the command-line tools, sign in with your Apple ID, and search for the package you want to use for development. Then download and install it on your Mac. For example, the following image shows the “Command Line Tools for Xcode 26.1 beta” package: ![A screenshot of the Apple Developer website, showing the More Downloads page, filtered by Command Line Tools for Xcode 26.1.](https://docs-assets.developer.apple.com/published/e0155e2cecfc7ac98312087325742365/installing-the-command-line-tools-01%402x.png)
+The [`More Downloads page`](https://developer.apple.comhttps://developer.apple.com/download/all/?q=command%20line%20tools) of the [`Apple Developer website`](https://developer.apple.comhttps://developer.apple.com/) lists all downloadable versions of the Command Line Tools for Xcode package. To install the command-line tools, sign in with your Apple ID, and search for the package you want to use for development. Then download and install it on your Mac. For example, the following image shows the “Command Line Tools for Xcode 26.1 beta” package: ![A screenshot of the Apple Developer website, showing the More Downloads page, filtered by Command Line Tools for Xcode 26.1.](/images/com.apple.Xcode/installing-the-command-line-tools-01@2x.png)
 
 ##### Install the Command Line Tools Package in Terminal
 

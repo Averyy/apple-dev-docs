@@ -28,7 +28,7 @@ You can’t subclass [`UIEventAttribution`](uieventattribution.md).
 
 ##### Define an Endpoint
 
-In order to use Web AdAttributionKit, your app defines an `Info.plist` key called [`NSAdvertisingAttributionReportEndpoint`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSAdvertisingAttributionReportEndpoint) that contains the URL to which the browser sends event attribution data. When an externally linked website reports that a conversion has occurred, the browser forwards your app’s event attribution data to the endpoint specified in the `Info.plist`. If your app’s `Info.plist` doesn’t contain this key, the browser won’t be able to forward the Web AdAttributionKit data when a conversion occurs.
+In order to use Web AdAttributionKit, your app defines an `Info.plist` key called [`NSAdvertisingAttributionReportEndpoint`](https://developer.apple.com/documentation/bundleresources/information-property-list/nsadvertisingattributionreportendpoint) that contains the URL to which the browser sends event attribution data. When an externally linked website reports that a conversion has occurred, the browser forwards your app’s event attribution data to the endpoint specified in the `Info.plist`. If your app’s `Info.plist` doesn’t contain this key, the browser won’t be able to forward the Web AdAttributionKit data when a conversion occurs.
 
 Send event attribution data to the browser only when your app opens an external link as a result of a user tapping a control that sits below a [`UIEventAttributionView`](uieventattributionview.md) in the app’s view hierarchy. The event attribution view verifies that the user tapped a control. If that control doesn’t sit below an event attribution view, the system won’t send the Web AdAttributionKit data to the browser when opening the external link.
 
@@ -122,11 +122,11 @@ NSDictionary<NSString *, NSObject *> *appOpenURLOptions = [NSDictionary dictiona
 
 ##### Send Event Attribution Data to Sfsafariviewcontroller
 
-If your app displays a web page in [`SFSafariViewController`](https://developer.apple.com/documentation/SafariServices/SFSafariViewController) after a person taps an ad, add a [`UIEventAttributionView`](uieventattributionview.md) subview to the ad view or control in order to measure taps. When a person taps the ad, follow these steps:
+If your app displays a web page in [`SFSafariViewController`](https://developer.apple.com/documentation/safariservices/sfsafariviewcontroller) after a person taps an ad, add a [`UIEventAttributionView`](uieventattributionview.md) subview to the ad view or control in order to measure taps. When a person taps the ad, follow these steps:
 
-1. Create an [`SFSafariViewController.Configuration`](https://developer.apple.com/documentation/SafariServices/SFSafariViewController/Configuration-swift.class) object.
-2. Assign the [`UIEventAttribution`](uieventattribution.md) object you created to the [`eventAttribution`](https://developer.apple.com/documentation/SafariServices/SFSafariViewController/Configuration-swift.class/eventAttribution) property of the [`SFSafariViewController.Configuration`](https://developer.apple.com/documentation/SafariServices/SFSafariViewController/Configuration-swift.class) object.
-3. Initialize an [`SFSafariViewController`](https://developer.apple.com/documentation/SafariServices/SFSafariViewController) instance with the configuration object, and present it. [`SFSafariViewController`](https://developer.apple.com/documentation/SafariServices/SFSafariViewController) validates that a tap on a [`UIEventAttributionView`](uieventattributionview.md) initiated the navigation to the webpage. If not, it discards the attribution data.
+1. Create an [`SFSafariViewController.Configuration`](https://developer.apple.com/documentation/safariservices/sfsafariviewcontroller/configuration-swift.class) object.
+2. Assign the [`UIEventAttribution`](uieventattribution.md) object you created to the [`eventAttribution`](https://developer.apple.com/documentation/safariservices/sfsafariviewcontroller/configuration-swift.class/eventattribution) property of the [`SFSafariViewController.Configuration`](https://developer.apple.com/documentation/safariservices/sfsafariviewcontroller/configuration-swift.class) object.
+3. Initialize an [`SFSafariViewController`](https://developer.apple.com/documentation/safariservices/sfsafariviewcontroller) instance with the configuration object, and present it. [`SFSafariViewController`](https://developer.apple.com/documentation/safariservices/sfsafariviewcontroller) validates that a tap on a [`UIEventAttributionView`](uieventattributionview.md) initiated the navigation to the webpage. If not, it discards the attribution data.
 
 ## Topics
 
@@ -148,22 +148,22 @@ If your app displays a web page in [`SFSafariViewController`](https://developer.
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCopying](../Foundation/NSCopying.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [Sendable](../Swift/Sendable.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCopying](../foundation/nscopying.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [Sendable](../swift/sendable.md)
 
 ## See Also
 
 - [class UIEventAttributionView](uieventattributionview.md)
   An overlay view that verifies user interaction for Web AdAttributionKit.
-- [NSAdvertisingAttributionReportEndpoint](../BundleResources/Information-Property-List/NSAdvertisingAttributionReportEndpoint.md)
+- [NSAdvertisingAttributionReportEndpoint](../bundleresources/information-property-list/nsadvertisingattributionreportendpoint.md)
   The URL where Private Click Measurement and SKAdNetwork send attribution information.
 
 

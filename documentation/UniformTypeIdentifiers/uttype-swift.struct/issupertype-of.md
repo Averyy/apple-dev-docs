@@ -22,7 +22,7 @@ func isSupertype(of type: UTType) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/Swift/true) if `type` directly or indirectly conforms to the type, but returns [`false`](https://developer.apple.com/documentation/Swift/false) if it’s equal to the type.
+[`true`](https://developer.apple.com/documentation/swift/true) if `type` directly or indirectly conforms to the type, but returns [`false`](https://developer.apple.com/documentation/swift/false) if it’s equal to the type.
 
 ## Parameters
 
@@ -36,7 +36,7 @@ func isSupertype(of type: UTType) -> Bool
   Returns a Boolean value that indicates whether a type conforms to the type.
 - [func isSubtype(of: UTType) -> Bool](uttype-swift.struct/issubtype(of:).md)
   Returns a Boolean value that indicates whether a type is higher in a hierarchy than the type.
-- [Navigating Hierarchical Data Using Outline and Split Views](../AppKit/navigating-hierarchical-data-using-outline-and-split-views.md)
+- [Navigating Hierarchical Data Using Outline and Split Views](../appkit/navigating-hierarchical-data-using-outline-and-split-views.md)
   Build a structured user interface that simplifies navigation in your app.
 
 

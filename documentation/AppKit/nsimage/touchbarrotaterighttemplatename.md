@@ -19,7 +19,7 @@ class let touchBarRotateRightTemplateName: String
 
 #### Discussion
 
-![Template image for rotate right](https://docs-assets.developer.apple.com/published/44f73804f8960bd618e4431f7bc0f772/media-2825127%402x.png)
+![Template image for rotate right](/images/com.apple.appkit/media-2825127@2x.png)
 
 Touch Bar template images are exclusively for use in [`NSTouchBarItem`](nstouchbaritem.md) objects and not in onscreen windows.
 

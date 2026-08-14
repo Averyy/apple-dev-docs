@@ -23,8 +23,8 @@ case lzBitmap
 
 For more information on the LZBitmap codec, see:
 
-- [`Algorithm.lzbitmap`](https://developer.apple.com/documentation/Compression/Algorithm/lzbitmap)
-- [`COMPRESSION_LZBITMAP`](https://developer.apple.com/documentation/Compression/COMPRESSION_LZBITMAP)
+- [`Algorithm.lzbitmap`](https://developer.apple.com/documentation/compression/algorithm/lzbitmap)
+- [`COMPRESSION_LZBITMAP`](https://developer.apple.com/documentation/compression/compression_lzbitmap)
 
 ## See Also
 

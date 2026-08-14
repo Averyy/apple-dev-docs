@@ -36,11 +36,11 @@ The `UV Tiling` parameter repeats the given file input to produce an image. The 
 
 Below is an example of a simple node graph that uses the Tiled Image node:
 
-![nil](https://docs-assets.developer.apple.com/published/b1e7815b71b078c16fab9f0895dff0c2/TiledImage1.png)
+![nil](/images/ShaderGraph-Docs/TiledImage1.png)
 
 If the `UV Tiling` parameter is `(2,2)`, the pattern repeats twice horizontally and twice vertically:
 
-![nil](https://docs-assets.developer.apple.com/published/4852a827f845f57e396ff75ac1dad7b8/TiledImage2.png)
+![nil](/images/ShaderGraph-Docs/TiledImage2.png)
 
 ## See Also
 

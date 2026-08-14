@@ -32,7 +32,7 @@ struct PixelBuffer<Format> where Format : PixelFormat
 
 #### Overview
 
-Use a [`vImage.PixelBuffer`](vimage/pixelbuffer.md) to represent an image from a [`CGImage`](https://developer.apple.com/documentation/CoreGraphics/CGImage) instance, a [`CVPixelBuffer`](https://developer.apple.com/documentation/CoreVideo/CVPixelBuffer) structure, or a collection of raw pixel values. Pixel buffers are typed by their bits per channel and number of channels. For example, [`vImage.Interleaved8x4`](vimage/interleaved8x4.md) indicates a 4-channel, 8-bit-per-channel pixel buffer that contains image data such as RGBA or CMYK.
+Use a [`vImage.PixelBuffer`](vimage/pixelbuffer.md) to represent an image from a [`CGImage`](https://developer.apple.com/documentation/coregraphics/cgimage) instance, a [`CVPixelBuffer`](https://developer.apple.com/documentation/corevideo/cvpixelbuffer) structure, or a collection of raw pixel values. Pixel buffers are typed by their bits per channel and number of channels. For example, [`vImage.Interleaved8x4`](vimage/interleaved8x4.md) indicates a 4-channel, 8-bit-per-channel pixel buffer that contains image data such as RGBA or CMYK.
 
 Pixel buffers expose methods that are available for the buffer’s pixel format. For example, the fast box convolution functions are only available for one- and four-channel 8-bit per channel buffers:
 
@@ -56,7 +56,7 @@ Typed pixel buffers provide a simple API to convert between pixel formats. For e
  src.convert(to: dest)
 ```
 
-vImage pixel buffers manage their memory, therefore, you don’t need to call [`deallocate()`](https://developer.apple.com/documentation/Swift/UnsafeMutableRawPointer/deallocate()) when you’re finished with the buffer.
+vImage pixel buffers manage their memory, therefore, you don’t need to call [`deallocate()`](https://developer.apple.com/documentation/swift/unsafemutablerawpointer/deallocate()) when you’re finished with the buffer.
 
 ## Topics
 
@@ -143,8 +143,8 @@ vImage pixel buffers manage their memory, therefore, you don’t need to call [`
 - [AccelerateMatrixBuffer](acceleratematrixbuffer.md)
 - [AccelerateMutableBuffer](acceleratemutablebuffer.md)
 - [AccelerateMutableMatrixBuffer](acceleratemutablematrixbuffer.md)
-- [Copyable](../Swift/Copyable.md)
-- [Escapable](../Swift/Escapable.md)
+- [Copyable](../swift/copyable.md)
+- [Escapable](../swift/escapable.md)
 
 ## See Also
 

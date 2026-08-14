@@ -16,11 +16,11 @@ func selectItem(withObjectValue object: Any?)
 
 #### Discussion
 
-This method logs a warning if [`usesDataSource`](nscombobox/usesdatasource.md) returns [`true`](https://developer.apple.com/documentation/Swift/true). Posts an [`selectionDidChangeNotification`](nscombobox/selectiondidchangenotification.md) to the default notification center if the selection does in fact change. Note that this method doesn’t alter the contents of the combo box’s text field.
+This method logs a warning if [`usesDataSource`](nscombobox/usesdatasource.md) returns [`true`](https://developer.apple.com/documentation/swift/true). Posts an [`selectionDidChangeNotification`](nscombobox/selectiondidchangenotification.md) to the default notification center if the selection does in fact change. Note that this method doesn’t alter the contents of the combo box’s text field.
 
 ## Parameters
 
-- `object`: The object to select in the pop-up list.  Objects are considered equal if they have the same id or if `isEqual:` returns [`true`](https://developer.apple.com/documentation/Swift/true).
+- `object`: The object to select in the pop-up list.  Objects are considered equal if they have the same id or if `isEqual:` returns [`true`](https://developer.apple.com/documentation/swift/true).
 
 ## See Also
 

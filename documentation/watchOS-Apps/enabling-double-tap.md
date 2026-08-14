@@ -6,7 +6,7 @@ Customize your app’s response to the double-tap gesture on Apple Watch.
 
 #### Overview
 
-On Apple Watch Series 9 and Apple Watch Ultra 2, people can trigger a scene’s primary action by tapping their index finger and thumb together twice. In watchOS 11 and later, you can assign a buttonlike control, such as a [`Button`](https://developer.apple.com/documentation/SwiftUI/Button) or [`Toggle`](https://developer.apple.com/documentation/SwiftUI/Toggle) as the scene’s primary action, customizing how your app responds to double tap.
+On Apple Watch Series 9 and Apple Watch Ultra 2, people can trigger a scene’s primary action by tapping their index finger and thumb together twice. In watchOS 11 and later, you can assign a buttonlike control, such as a [`Button`](https://developer.apple.com/documentation/swiftui/button) or [`Toggle`](https://developer.apple.com/documentation/swiftui/toggle) as the scene’s primary action, customizing how your app responds to double tap.
 
 ##### Take Advantage of System Behaviors
 
@@ -14,7 +14,7 @@ Your app receives the default double-tap behaviors automatically. With double ta
 
 ##### Declare a Primary Action
 
-If your scene has an obvious main action, you can designate it as the primary action using the [`handGestureShortcut(_:isEnabled:)`](https://developer.apple.com/documentation/SwiftUI/View/handGestureShortcut(_:isEnabled:)) modifier and passing the [`primaryAction`](https://developer.apple.com/documentation/SwiftUI/HandGestureShortcut/primaryAction) as the parameter.
+If your scene has an obvious main action, you can designate it as the primary action using the [`handGestureShortcut(_:isEnabled:)`](https://developer.apple.com/documentation/swiftui/view/handgestureshortcut(_:isenabled:)) modifier and passing the [`primaryAction`](https://developer.apple.com/documentation/swiftui/handgestureshortcut/primaryaction) as the parameter.
 
 ```swift
 Button ("Start Activity") {
@@ -24,7 +24,7 @@ Button ("Start Activity") {
 .handGestureShortcut(.primaryAction)
 ```
 
-When double tap triggers your primary action, the system automatically highlights the affected control. It calculates the shape of the highlighted area based on the control’s content. If you need to customize the highlight, use a [`clipShape(_:style:)`](https://developer.apple.com/documentation/SwiftUI/View/clipShape(_:style:)) to modify the control’s shape.
+When double tap triggers your primary action, the system automatically highlights the affected control. It calculates the shape of the highlighted area based on the control’s content. If you need to customize the highlight, use a [`clipShape(_:style:)`](https://developer.apple.com/documentation/swiftui/view/clipshape(_:style:)) to modify the control’s shape.
 
 You can add the primary action modifier to any buttonlike control, such as buttons, toggles, navigation links, or text fields. You can even add it to widgets and live activities that appear in the Smart Stack, including remote live activities from iOS. However, you can only assign one primary action per scene. If the scene has multiple items that can interact with double tap, such as a primary action inside a scroll view, the system determines the effect based on the following priorities:
 
@@ -38,17 +38,17 @@ The [`Human Interface Guidelines`](https://developer.apple.comhttps://developer.
 
 ## See Also
 
-- [Gestures](https://developer.apple.com/design/Human-Interface-Guidelines/gestures#watchOS)
+- [Gestures](https://developer.apple.com/design/human-interface-guidelines/gestures)
   A gesture is a physical motion that a person uses to directly affect an object in an app or game on their device.
 - [func handGestureShortcut(HandGestureShortcut, isEnabled: Bool) -> some View
-](../SwiftUI/View/handGestureShortcut(_:isEnabled:).md)
+](../swiftui/view/handgestureshortcut(_:isenabled:).md)
   Assigns a hand gesture shortcut to the modified control.
-- [static let primaryAction: HandGestureShortcut](../SwiftUI/HandGestureShortcut/primaryAction.md)
+- [static let primaryAction: HandGestureShortcut](../swiftui/handgestureshortcut/primaryaction.md)
   The hand gesture shortcut for the primary action.
 - [func clipShape<S>(S, style: FillStyle) -> some View
-](../SwiftUI/View/clipShape(_:style:).md)
+](../swiftui/view/clipshape(_:style:).md)
   Sets a clipping shape for this view.
-- [static var verticalPage: VerticalPageTabViewStyle](../SwiftUI/TabViewStyle/verticalPage.md)
+- [static var verticalPage: VerticalPageTabViewStyle](../swiftui/tabviewstyle/verticalpage.md)
   A `TabViewStyle` that displays a vertical page `TabView` interaction and appearance.
 - [Setting up a watchOS project](setting-up-a-watchos-project.md)
   Create a new watchOS project or add a watch target to an existing iOS project.
@@ -60,7 +60,7 @@ The [`Human Interface Guidelines`](https://developer.apple.comhttps://developer.
   Seamlessly schedule updates to your user interface, even while it’s inactive.
 - [Authenticating users on Apple Watch](authenticating-users-on-apple-watch.md)
   Create an account sign-up and sign-in strategy for your app.
-- [Responding to the Action button on Apple Watch Ultra](../AppIntents/ActionButtonArticle.md)
+- [Responding to the Action button on Apple Watch Ultra](../appintents/actionbuttonarticle.md)
   Use App Intents to register actions for your app.
 
 

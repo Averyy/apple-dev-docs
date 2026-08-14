@@ -8,9 +8,9 @@ Arrange views inside built-in layout containers like stacks and grids.
 
 Use layout containers to arrange the elements of your user interface. Stacks and grids update and adjust the positions of the subviews they contain in response to changes in content or interface dimensions. You can nest layout containers inside other layout containers to any depth to achieve complex layout effects.
 
-![None](https://docs-assets.developer.apple.com/published/9fd862b8214f1de236f13a51187c257f/layout-fundamentals-hero%402x.png)
+![None](/images/com.apple.SwiftUI/layout-fundamentals-hero@2x.png)
 
-To fine-tune the position, alignment, and other elements of a layout that you build with layout container views, see [`Layout adjustments`](layout-adjustments.md). To define custom layout containers, see [`Custom layout`](custom-layout.md). For design guidance, see [`Layout`](https://developer.apple.com/design/Human-Interface-Guidelines/layout) in the Human Interface Guidelines.
+To fine-tune the position, alignment, and other elements of a layout that you build with layout container views, see [`Layout adjustments`](layout-adjustments.md). To define custom layout containers, see [`Custom layout`](custom-layout.md). For design guidance, see [`Layout`](https://developer.apple.com/design/human-interface-guidelines/layout) in the Human Interface Guidelines.
 
 ## Topics
 

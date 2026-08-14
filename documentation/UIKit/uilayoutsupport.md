@@ -39,7 +39,7 @@ This protocol is implemented by the [`UIViewController`](uiviewcontroller.md) pr
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

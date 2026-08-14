@@ -20,7 +20,7 @@ func shouldBeRequiredToFail(by otherGestureRecognizer: UIGestureRecognizer) -> B
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/Swift/true) to set up the failure requirement; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
+[`true`](https://developer.apple.com/documentation/swift/true) to set up the failure requirement; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
 
 #### Discussion
 

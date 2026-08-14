@@ -24,10 +24,10 @@ Thread-safe since OS X v10.4.
 
 ## Parameters
 
-- `inItem`: The   of the item to query.
-- `inRoles`: The roles. When obtaining attributes related to document binding (such as  ), at least one of the roles must be provided by the application selected. Pass   if any role is acceptable.
-- `inAttributeNames`: A   for an array containing the attribute names to copy. For possible values, see  .
-- `outValues`: On return, a pointer a   for a dictionary whose keys are the attribute names specified by the   parameter and whose values are the attribute’s values. The   of each value in the dictionary varies by attribute. See   for the data type of each value. If the item does not have a specified attribute, the key for the attribute is not in the dictionary.
+- `inItem`: The `FSRef` of the item to query.
+- `inRoles`: The roles. When obtaining attributes related to document binding (such as `kLSItemRoleHandlerDisplayName`), at least one of the roles must be provided by the application selected. Pass `kLSRolesAll` if any role is acceptable.
+- `inAttributeNames`: A `CFArrayRef` for an array containing the attribute names to copy. For possible values, see `Item Attribute Constants`.
+- `outValues`: On return, a pointer a `CFDictionaryRef` for a dictionary whose keys are the attribute names specified by the `inAttributeNames` parameter and whose values are the attribute’s values. The `CFTypeID` of each value in the dictionary varies by attribute. See `Item Attribute Constants` for the data type of each value. If the item does not have a specified attribute, the key for the attribute is not in the dictionary.
 
 ## See Also
 

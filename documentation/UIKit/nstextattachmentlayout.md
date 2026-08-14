@@ -36,7 +36,7 @@ The `NSTextAttachmentLayout` protocol is the interface for working with attachme
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 ### Conforming Types
 - [NSTextAttachment](nstextattachment.md)
 

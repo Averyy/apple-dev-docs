@@ -37,13 +37,13 @@ Errors the framework can return if there are errors processing an evaluation req
 ## Relationships
 
 ### Conforms To
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [Decodable](../Swift/Decodable.md)
-- [Encodable](../Swift/Encodable.md)
-- [Error](../Swift/Error.md)
-- [LocalizedError](../Foundation/LocalizedError.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [Decodable](../swift/decodable.md)
+- [Encodable](../swift/encodable.md)
+- [Error](../swift/error.md)
+- [LocalizedError](../foundation/localizederror.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

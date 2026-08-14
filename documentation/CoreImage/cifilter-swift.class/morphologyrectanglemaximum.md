@@ -29,8 +29,8 @@ This method applies the morphology rectangle maximum filter to an image. The eff
 
 The morphology rectangle maximum filter uses the following properties:
 
-- **`width`**: A `float` representing the width in pixels of the working area as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
-- **`height`**: A `float` representing the height in pixels of the working area as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+- **`width`**: A `float` representing the width in pixels of the working area as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
+- **`height`**: A `float` representing the height in pixels of the working area as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
 - **`inputImage`**: A [`CIImage`](ciimage.md) representing the input image to apply the filter to.
 
 The following code creates a filter that adds a blur to the input image while brighting the palm trees:
@@ -46,7 +46,7 @@ The following code creates a filter that adds a blur to the input image while br
     }
 ```
 
-![Two photographs of a beach at sunset with multiple palm trees. The photo on the left is clear and crisp. In the photo on the right, a morphology rectangle maximum blur has been applied, resulting in the palm trees becoming lighter and less distinct.](https://docs-assets.developer.apple.com/published/06e9c9e3c330c9ebd347d10cec2ed4b8/media-3544958%402x.png)
+![Two photographs of a beach at sunset with multiple palm trees. The photo on the left is clear and crisp. In the photo on the right, a morphology rectangle maximum blur has been applied, resulting in the palm trees becoming lighter and less distinct.](/images/com.apple.coreimage/media-3544958@2x.png)
 
 ## See Also
 

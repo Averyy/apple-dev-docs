@@ -22,7 +22,7 @@ var drawableID: Int { get }
 
 #### Discussion
 
-Drawable objects are usually owned by some other object, such as a [`CAMetalLayer`](https://developer.apple.com/documentation/QuartzCore/CAMetalLayer). The owning object gives the first drawable it creates an ID of `0`, and it increments the ID by `1` for each additional drawable it creates.
+Drawable objects are usually owned by some other object, such as a [`CAMetalLayer`](https://developer.apple.com/documentation/quartzcore/cametallayer). The owning object gives the first drawable it creates an ID of `0`, and it increments the ID by `1` for each additional drawable it creates.
 
 
 ---

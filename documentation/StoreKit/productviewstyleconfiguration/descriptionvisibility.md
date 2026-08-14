@@ -22,11 +22,11 @@ let descriptionVisibility: Visibility
 
 #### Discussion
 
-Subscription products have a localized [`description`](product/description.md) property that you can conditionally display in your custom style. Use the [`descriptionVisibility`](subscriptionstorecontrolstyleconfiguration/descriptionvisibility.md) property to check the value that the  [`productDescription(_:)`](https://developer.apple.com/documentation/SwiftUI/View/productDescription(_:)) view modifier configures on an ancestor of the [`SubscriptionStoreView`](subscriptionstoreview.md).
+Subscription products have a localized [`description`](product/description.md) property that you can conditionally display in your custom style. Use the [`descriptionVisibility`](subscriptionstorecontrolstyleconfiguration/descriptionvisibility.md) property to check the value that the  [`productDescription(_:)`](https://developer.apple.com/documentation/swiftui/view/productdescription(_:)) view modifier configures on an ancestor of the [`SubscriptionStoreView`](subscriptionstoreview.md).
 
 Ignore this property if your style doesn’t need the capability to conditionally display the product description. For example, a compact control style may never show product descriptions.
 
-If the view heirarachy doesn’t use the [`productDescription(_:)`](https://developer.apple.com/documentation/SwiftUI/View/productDescription(_:)) view modifier, the [`descriptionVisibility`](subscriptionstorecontrolstyleconfiguration/descriptionvisibility.md) property is [`automatic`](subscriptionstorecontrolstyle/automatic.md).
+If the view heirarachy doesn’t use the [`productDescription(_:)`](https://developer.apple.com/documentation/swiftui/view/productdescription(_:)) view modifier, the [`descriptionVisibility`](subscriptionstorecontrolstyleconfiguration/descriptionvisibility.md) property is [`automatic`](subscriptionstorecontrolstyle/automatic.md).
 
 
 ---

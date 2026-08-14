@@ -21,11 +21,11 @@ class func obstacles(fromNodeBounds nodes: [SKNode]) -> [GKPolygonObstacle]
 
 #### Return Value
 
-An array of [`GKPolygonObstacle`](https://developer.apple.com/documentation/GameplayKit/GKPolygonObstacle) objects.
+An array of [`GKPolygonObstacle`](https://developer.apple.com/documentation/gameplaykit/gkpolygonobstacle) objects.
 
 #### Discussion
 
-Use the array of obstacles to create an obstacle graph ([`GKObstacleGraph`](https://developer.apple.com/documentation/GameplayKit/GKObstacleGraph)) in GameplayKit. See [`GameplayKit`](https://developer.apple.com/documentation/GameplayKit) and [`GameplayKit Programming Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Conceptual/GameplayKit_Guide/index.html#//apple_ref/doc/uid/TP40015172).
+Use the array of obstacles to create an obstacle graph ([`GKObstacleGraph`](https://developer.apple.com/documentation/gameplaykit/gkobstaclegraph)) in GameplayKit. See [`GameplayKit`](https://developer.apple.com/documentation/gameplaykit) and [`GameplayKit Programming Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Conceptual/GameplayKit_Guide/index.html#//apple_ref/doc/uid/TP40015172).
 
 ## Parameters
 

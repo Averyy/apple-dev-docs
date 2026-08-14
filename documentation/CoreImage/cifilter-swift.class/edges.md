@@ -30,7 +30,7 @@ This method applies the edges filter to an image. The effect uses the `intensity
 The edges filter uses the following property:
 
 - **`inputImage`**: An image with the type [`CIImage`](ciimage.md).
-- **`intensity`**: A `float` representing the desired strength of the effect as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+- **`intensity`**: A `float` representing the desired strength of the effect as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
 
 The following code creates a filter that results in a darker image with the edges of objects highlighted with the colors of the input image:
 
@@ -43,7 +43,7 @@ func edges(inputImage: CIImage) -> CIImage {
 }
 ```
 
-![Two pictures of a pink flower surrounded by foliage. The photo on the left shows a single flower photographed close up, in focus, with good light and no effects. In the photo on the right, the edges filter is applied, resulting in an overall darker image while brightening the edges of the flowers and leaves.](https://docs-assets.developer.apple.com/published/a42129908f0a2cc1d61fa70fa8356a1c/media-3600007%402x.png)
+![Two pictures of a pink flower surrounded by foliage. The photo on the left shows a single flower photographed close up, in focus, with good light and no effects. In the photo on the right, the edges filter is applied, resulting in an overall darker image while brightening the edges of the flowers and leaves.](/images/com.apple.coreimage/media-3600007@2x.png)
 
 ## See Also
 

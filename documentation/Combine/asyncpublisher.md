@@ -22,7 +22,7 @@ struct AsyncPublisher<P> where P : Publisher, P.Failure == Never
 
 #### Overview
 
-`AsyncPublisher` conforms to [`AsyncSequence`](https://developer.apple.com/documentation/Swift/AsyncSequence), which allows callers to receive values with the `for`-`await`-`in` syntax, rather than attaching a [`Subscriber`](subscriber.md).
+`AsyncPublisher` conforms to [`AsyncSequence`](https://developer.apple.com/documentation/swift/asyncsequence), which allows callers to receive values with the `for`-`await`-`in` syntax, rather than attaching a [`Subscriber`](subscriber.md).
 
 Use the [`values`](publisher/values-1dm9r.md) property of the [`Publisher`](publisher.md) protocol to wrap an existing publisher with an instance of this type.
 
@@ -43,7 +43,7 @@ Use the [`values`](publisher/values-1dm9r.md) property of the [`Publisher`](publ
 ## Relationships
 
 ### Conforms To
-- [AsyncSequence](../Swift/AsyncSequence.md)
+- [AsyncSequence](../swift/asyncsequence.md)
 
 ## See Also
 

@@ -27,7 +27,7 @@ var anisotropyLevel: PhysicallyBasedMaterial.AnisotropyLevel { get set }
 
 By default, PBR materials are isotropic; in other words, an entity that uses [`PhysicallyBasedMaterial`](physicallybasedmaterial.md) reflects light uniformly in all directions, mimicking the behavior of most real-world objects. Some objects, including those with many small parallel striations such as vinyl records, CDs, or straight hair, reflect light more in some directions than others, resulting in stretched or oblong specular highlights, as shown in the following figure.
 
-![An illustration showing 11 metallic spheres in a horizontal row. The](https://docs-assets.developer.apple.com/published/2eecb2feb22234ad8501e669131a2d52/PhysicallyBasedMaterial-anisotropyLevel-swift-property-1%402x.png)
+![An illustration showing 11 metallic spheres in a horizontal row. The](/images/com.apple.RealityKit/PhysicallyBasedMaterial-anisotropyLevel-swift-property-1@2x.png)
 
 This property controls the amount of anisotropy. It works together with [`anisotropyAngle`](physicallybasedmaterial/anisotropyangle-swift.property.md), which defines the angle of elongation for the specular highlights.
 

@@ -19,7 +19,7 @@ class let touchBarGoBackTemplateName: String
 
 #### Discussion
 
-![Template image for go back](https://docs-assets.developer.apple.com/published/3a4cfcc975a27dd67dbbff2441b8e00b/media-2793507%402x.png)
+![Template image for go back](/images/com.apple.appkit/media-2793507@2x.png)
 
 Touch Bar template images are exclusively for use in [`NSTouchBarItem`](nstouchbaritem.md) objects and not in onscreen windows.
 

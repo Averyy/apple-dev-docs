@@ -65,8 +65,8 @@ struct LandmarkEntity: IntentValueConvertibleWrapper {
 ### Inherits From
 - [IntentValueConvertible](intentvalueconvertible.md)
 - [IntentValueExpressing](intentvalueexpressing.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

@@ -34,13 +34,13 @@ In macOS 10.7 and later `NSDraggingSource` is now a formal protocol and has an u
 - [func ignoreModifierKeys(for: NSDraggingSession) -> Bool](nsdraggingsource/ignoremodifierkeys(for:).md)
   Returns whether the modifier keys will be ignored for this dragging session.
 ### Dragging Options
-- [func namesOfPromisedFilesDropped(atDestination: URL) -> [String]?](../ObjectiveC/NSObject-swift.class/namesOfPromisedFilesDropped(atDestination:).md)
+- [func namesOfPromisedFilesDropped(atDestination: URL) -> [String]?](../objectivec/nsobject-swift.class/namesofpromisedfilesdropped(atdestination:).md)
   Returns the names of the files that the receiver promises to create at a specified location.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 ### Conforming Types
 - [NSCollectionView](nscollectionview.md)
 - [NSOutlineView](nsoutlineview.md)

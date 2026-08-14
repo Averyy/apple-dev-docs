@@ -22,7 +22,7 @@ let kCTFontFamilyNameAttribute: CFString
 
 #### Discussion
 
-The value associated with this key is a [`CFString`](https://developer.apple.com/documentation/CoreFoundation/CFString) object.
+The value associated with this key is a [`CFString`](https://developer.apple.com/documentation/corefoundation/cfstring) object.
 
 ## See Also
 

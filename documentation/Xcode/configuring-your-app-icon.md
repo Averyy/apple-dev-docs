@@ -10,7 +10,7 @@ Add app icon variations to an asset catalog that represents your app in places s
 
 Every app has a distinct app icon that communicates the app’s purpose and makes it easy to recognize throughout the system. Apps require multiple variations of the app icon to look great in different contexts. Xcode can help generate these variations for you using a single high-resolution image, or you can configure your app icon variations by using an app icon’s image set in your project’s asset catalog. visionOS and tvOS app icons are made up of multiple stacked image layers you configure in your project’s asset catalog. iOS and iPadOS app icons support additional dark and tinted styles.
 
-For design guidance on app icons, see [`App icons`](https://developer.apple.com/design/Human-Interface-Guidelines/app-icons).
+For design guidance on app icons, see [`App icons`](https://developer.apple.com/design/human-interface-guidelines/app-icons).
 
 ##### Create an App Icon
 
@@ -30,7 +30,7 @@ Variations of your app icon appear throughout the system in places like the Home
 
 For each platform your app supports, choose between using a single size and providing all sizes in the Asset Catalog:
 
-![Screenshot of an asset catalog in Xcode. In the outline view, an app icon set with the name AppIcon is selected. The inspector area shows multiple image wells with labels that describe the required image dimensions, resolutions, and usages.](https://docs-assets.developer.apple.com/published/60bda3e29a3e0ef837fa9090387bb980/configuring-your-app-icon-1%402x.png)
+![Screenshot of an asset catalog in Xcode. In the outline view, an app icon set with the name AppIcon is selected. The inspector area shows multiple image wells with labels that describe the required image dimensions, resolutions, and usages.](/images/com.apple.Xcode/configuring-your-app-icon-1@2x.png)
 
 1. In the Project navigator, select an asset catalog.
 2. In the Asset Catalog, select the icon.
@@ -39,7 +39,7 @@ For each platform your app supports, choose between using a single size and prov
 
 For each platform your app supports, add a single image that Xcode can use to generate your icon variations, or add an image for each icon variation of an icon set in the Asset Catalog:
 
-![Screenshot of an asset catalog in Xcode. In the outline view, an app icon set with the name AppIcon is selected. The detail area shows multiple image wells with labels that describe the required image dimensions, resolutions, and usages.](https://docs-assets.developer.apple.com/published/499364dc68d2a0b800e392c8c0b123b6/configuring-your-app-icon-2%402x.png)
+![Screenshot of an asset catalog in Xcode. In the outline view, an app icon set with the name AppIcon is selected. The detail area shows multiple image wells with labels that describe the required image dimensions, resolutions, and usages.](/images/com.apple.Xcode/configuring-your-app-icon-2@2x.png)
 
 1. In the Project navigator, select an asset catalog.
 2. In the Asset Catalog, select the icon.
@@ -49,7 +49,7 @@ For each platform your app supports, add a single image that Xcode can use to ge
 
 iOS and iPadOS support three stylistic variations for app icons: Light, Dark, and Tinted. You can create your own variations to ensure that each one looks exactly the way you way you want.
 
-![Screenshot of an asset catalog in Xcode. In the outline view, an app icon set with the name AppIcon is selected. The inspector area shows multiple image wells with labels that describe the Any, Dark, and Tinted icon appearances.](https://docs-assets.developer.apple.com/published/95e7712fe79245cdc1cd52f581ad484f/configuring-your-app-icon-5%402x.png)
+![Screenshot of an asset catalog in Xcode. In the outline view, an app icon set with the name AppIcon is selected. The inspector area shows multiple image wells with labels that describe the Any, Dark, and Tinted icon appearances.](/images/com.apple.Xcode/configuring-your-app-icon-5@2x.png)
 
 To add these icon variations to your app:
 
@@ -69,9 +69,9 @@ For design guidance specific to iOS and iPadOS, see [`Human Interface Guidelines
 
 By default, visionOS and tvOS app icons are constructed with three layers. This is the maximum number of layers visionOS icons support but you can use up to five layers when constructing tvOS icons. To add a layer, Click the Add button, choose *OS variant* > *OS variant* App Icon Layer. To remove a layer, select the layer and click the Remove button (-).
 
-![Screenshot of an asset catalog in Xcode. In the outline view, an app icon stack with the name AppIcon is selected. The detail area shows image wells for each layer of the stack with labels.](https://docs-assets.developer.apple.com/published/f83d49f055d93a97e77b6e445dc0a9a6/configuring-your-app-icon-3%402x.png)
+![Screenshot of an asset catalog in Xcode. In the outline view, an app icon stack with the name AppIcon is selected. The detail area shows image wells for each layer of the stack with labels.](/images/com.apple.Xcode/configuring-your-app-icon-3@2x.png)
 
-Add images to each layer by dragging them from the Finder into the image wells in the detail area of the Asset Catalog in Xcode. For information on the use of layers, see App icons [`App icons`](https://developer.apple.com/design/Human-Interface-Guidelines/app-icons#visionOS) and [`App icons`](https://developer.apple.com/design/Human-Interface-Guidelines/app-icons#tvOS).
+Add images to each layer by dragging them from the Finder into the image wells in the detail area of the Asset Catalog in Xcode. For information on the use of layers, see App icons [`App icons`](https://developer.apple.com/design/human-interface-guidelines/app-icons) and [`App icons`](https://developer.apple.com/design/human-interface-guidelines/app-icons).
 
 > **Note**: You can use Parallax Previewer app or Parallax Exporter plug-in to create and preview Layer Source Representation (.lsr and .xlsr) files that you can import into your Asset Catalog in Xcode. Save your file in the LSR file format to import a tvOS icon into Xcode, and save in the XLSR file format to import a visionOS icon. Download these from the [`Apple Design Resources`](https://developer.apple.comhttps://developer.apple.com/design/resources) site.
 
@@ -96,11 +96,11 @@ If you don’t create your project from a template, or you want to change your d
 1. In the Project navigator, select the project and in the project editor, select the target.
 2. In the App Icons and Launch Screen section of the General pane, choose the app icon set from the App Icons Source pop-up menu.
 
-![Screenshot of target settings with the General tab selected. The App Icons and Launch Screen section shows a field with the name App Icons Source that lists the name of the app icon set to use from the asset catalog.](https://docs-assets.developer.apple.com/published/7f8ca1d3b817399313a5f211452716ca/configuring-your-app-icon-4%402x.png)
+![Screenshot of target settings with the General tab selected. The App Icons and Launch Screen section shows a field with the name App Icons Source that lists the name of the app icon set to use from the asset catalog.](/images/com.apple.Xcode/configuring-your-app-icon-4@2x.png)
 
 If you don’t select the Include all app icon assets option, Xcode only includes the app icon set you specify in the App Icons Source pop-up menu when it builds your app. You might leave this option unselected if you want to use a different icon for the Debug and Release builds of your app without including the Debug icon in your Release app bundle. You can specialize the app icon for the Debug and Release configurations by modifying the Primary App Icon Set Name build setting in the Build Settings tab.
 
-Xcode also includes any additional app icon sets you specify under the Alternate App Icon Sets build setting. Include any icon sets your app can select using [`setAlternateIconName(_:completionHandler:)`](https://developer.apple.com/documentation/UIKit/UIApplication/setAlternateIconName(_:completionHandler:)) or use in App Store product pages.
+Xcode also includes any additional app icon sets you specify under the Alternate App Icon Sets build setting. Include any icon sets your app can select using [`setAlternateIconName(_:completionHandler:)`](https://developer.apple.com/documentation/uikit/uiapplication/setalternateiconname(_:completionhandler:)) or use in App Store product pages.
 
 For information on configuring tests that use icons in App Store Connect, see [`Product Page Optimization`](https://developer.apple.comhttps://developer.apple.com/app-store/product-page-optimization).
 

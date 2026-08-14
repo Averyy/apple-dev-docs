@@ -49,15 +49,15 @@ The [`NetServiceDelegate`](netservicedelegate.md) protocol defines the optional 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 
 - [class NetService](netservice.md)
   A network service that broadcasts its availability using multicast DNS.
-- [NSBonjourServices](../BundleResources/Information-Property-List/NSBonjourServices.md)
+- [NSBonjourServices](../bundleresources/information-property-list/nsbonjourservices.md)
   Bonjour service types browsed by the app.
-- [NSLocalNetworkUsageDescription](../BundleResources/Information-Property-List/NSLocalNetworkUsageDescription.md)
+- [NSLocalNetworkUsageDescription](../bundleresources/information-property-list/nslocalnetworkusagedescription.md)
   A message that tells people why the app is requesting access to the local network.
 
 

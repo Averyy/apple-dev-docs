@@ -26,7 +26,7 @@ This transformation is reversible.
 
 For example, the string “hiragana” transliterates to “ひらがな”.
 
-This is equivalent to [`kCFStringTransformLatinHiragana`](https://developer.apple.com/documentation/CoreFoundation/kCFStringTransformLatinHiragana).
+This is equivalent to [`kCFStringTransformLatinHiragana`](https://developer.apple.com/documentation/corefoundation/kcfstringtransformlatinhiragana).
 
 ## See Also
 

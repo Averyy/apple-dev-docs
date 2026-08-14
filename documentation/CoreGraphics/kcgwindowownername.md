@@ -15,7 +15,7 @@ let kCGWindowOwnerName: CFString
 
 #### Discussion
 
-The key that identifies the name of the application that owns the window. The value for this key is a [`CFString`](https://developer.apple.com/documentation/CoreFoundation/CFString) type.
+The key that identifies the name of the application that owns the window. The value for this key is a [`CFString`](https://developer.apple.com/documentation/corefoundation/cfstring) type.
 
 ## See Also
 

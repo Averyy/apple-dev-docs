@@ -10,7 +10,7 @@ Core Data can typically perform an automatic data migration, referred to as ligh
 
 ##### Generating an Inferred Mapping Model
 
-To perform automatic lightweight migration, Core Data needs to be able to find the source and destination managed object models at runtime. It looks for models in the bundles returned by the [`allBundles`](https://developer.apple.com/documentation/Foundation/Bundle/allBundles) and [`allFrameworks`](https://developer.apple.com/documentation/Foundation/Bundle/allFrameworks) methods of the [`Bundle`](https://developer.apple.com/documentation/Foundation/Bundle) class. Core Data then analyzes the schema changes to persistent entities and properties, and generates an inferred mapping model.
+To perform automatic lightweight migration, Core Data needs to be able to find the source and destination managed object models at runtime. It looks for models in the bundles returned by the [`allBundles`](https://developer.apple.com/documentation/foundation/bundle/allbundles) and [`allFrameworks`](https://developer.apple.com/documentation/foundation/bundle/allframeworks) methods of the [`Bundle`](https://developer.apple.com/documentation/foundation/bundle) class. Core Data then analyzes the schema changes to persistent entities and properties, and generates an inferred mapping model.
 
 Generating an inferred mapping model requires changes to fit an obvious migration pattern, for example:
 
@@ -47,7 +47,7 @@ If your data change exceeds the capabilities of automatic migration, you can per
 
 ##### Requesting Lightweight Migration
 
-You request automatic lightweight migration using the options dictionary that you pass into [`addPersistentStore(ofType:configurationName:at:options:)`](nspersistentstorecoordinator/addpersistentstore(oftype:configurationname:at:options:).md). Set values corresponding to both the [`NSMigratePersistentStoresAutomaticallyOption`](nsmigratepersistentstoresautomaticallyoption.md) and the [`NSInferMappingModelAutomaticallyOption`](nsinfermappingmodelautomaticallyoption.md) keys to [`true`](https://developer.apple.com/documentation/Swift/true):
+You request automatic lightweight migration using the options dictionary that you pass into [`addPersistentStore(ofType:configurationName:at:options:)`](nspersistentstorecoordinator/addpersistentstore(oftype:configurationname:at:options:).md). Set values corresponding to both the [`NSMigratePersistentStoresAutomaticallyOption`](nsmigratepersistentstoresautomaticallyoption.md) and the [`NSInferMappingModelAutomaticallyOption`](nsinfermappingmodelautomaticallyoption.md) keys to [`true`](https://developer.apple.com/documentation/swift/true):
 
 ```swift
 // Create a persistent store coordinator with a managed object model.

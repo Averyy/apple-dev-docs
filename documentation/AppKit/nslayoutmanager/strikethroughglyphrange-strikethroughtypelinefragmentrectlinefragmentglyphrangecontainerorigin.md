@@ -21,7 +21,7 @@ This method determines which glyphs actually need to have a strikethrough drawn 
 ## Parameters
 
 - `glyphRange`: The range of glyphs for which to draw a strikethrough. The range must belong to a single line fragment rectangle (as returned by [`lineFragmentRect(forGlyphAt:effectiveRange:)`](nslayoutmanager/linefragmentrect(forglyphat:effectiverange:).md)).
-- `strikethroughVal`: The style of underlining to draw. This value is a mask derived from the value for [`underlineStyle`](https://developer.apple.com/documentation/Foundation/NSAttributedString/Key/underlineStyle)—for example, `(NSUnderlinePatternDash | NSUnderlineStyleThick | NSUnderlineByWordMask)`. Subclasses can define custom underlining styles.
+- `strikethroughVal`: The style of underlining to draw. This value is a mask derived from the value for [`underlineStyle`](https://developer.apple.com/documentation/foundation/nsattributedstring/key/underlinestyle)—for example, `(NSUnderlinePatternDash | NSUnderlineStyleThick | NSUnderlineByWordMask)`. Subclasses can define custom underlining styles.
 - `lineRect`: The line fragment rectangle containing the glyphs to draw strikethrough for.
 - `lineGlyphRange`: The range of all glyphs within `lineRect`.
 - `containerOrigin`: The origin of the line fragment rectangle’s `NSTextContainer` in its `NSTextView`.

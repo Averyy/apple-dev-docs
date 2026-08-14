@@ -19,7 +19,7 @@ case add
 
 #### Discussion
 
-![None](https://docs-assets.developer.apple.com/published/21485e633ff9bd98868ad097220ef8eb/media-2934512%402x.png)
+![None](/images/com.apple.uikit/media-2934512@2x.png)
 
 ## See Also
 

@@ -7,7 +7,6 @@ Content type of media.
 
 **Availability**:
 - iOS 26.0+
-- iPadOS 26.0+
 
 ## Declaration
 

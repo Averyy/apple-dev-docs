@@ -27,9 +27,9 @@ Use this method to export family activity data, for use in another app or platfo
 
 You can develop and test an app that uses this method on devices in any region. Customer installations of your app can only use the method on devices located in the EU that are signed in with an Apple Account with an EU country or region. Otherwise, it throws an error.
 
-Your app’s authorization status needs to be [`AuthorizationStatus.approvedWithDataAccess`](https://developer.apple.com/documentation/FamilyControls/AuthorizationStatus/approvedWithDataAccess) to use this method.
+Your app’s authorization status needs to be [`AuthorizationStatus.approvedWithDataAccess`](https://developer.apple.com/documentation/familycontrols/authorizationstatus/approvedwithdataaccess) to use this method.
 
-Your app needs the  [`Family Controls App and Website Usage`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.family-controls.app-and-website-usage) entitlement to use this method. Enable the capability on your Xcode target to add the entitlement to your app. For more information, see [`Adding capabilities to your app`](https://developer.apple.com/documentation/Xcode/adding-capabilities-to-your-app).
+Your app needs the  [`Family Controls App and Website Usage`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.family-controls.app-and-website-usage) entitlement to use this method. Enable the capability on your Xcode target to add the entitlement to your app. For more information, see [`Adding capabilities to your app`](https://developer.apple.com/documentation/xcode/adding-capabilities-to-your-app).
 
 ## Parameters
 

@@ -22,7 +22,7 @@ var contactIdentifier: String? { get set }
 
 The identifier is displayed in the native call UI, and is typically the name of the call recipient.
 
-If a caller corresponds to a [`CNContact`](https://developer.apple.com/documentation/Contacts/CNContact) object, set this to the value of the [`identifier`](https://developer.apple.com/documentation/Contacts/CNContact/identifier) property of the contact.
+If a caller corresponds to a [`CNContact`](https://developer.apple.com/documentation/contacts/cncontact) object, set this to the value of the [`identifier`](https://developer.apple.com/documentation/contacts/cncontact/identifier) property of the contact.
 
 ## See Also
 

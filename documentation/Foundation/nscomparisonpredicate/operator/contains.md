@@ -22,7 +22,7 @@ case contains
 
 #### Discussion
 
-Returns [`true`](https://developer.apple.com/documentation/Swift/true) if `[lhs contains rhs]`; the left hand side must be an `NSExpression` object that evaluates to a collection
+Returns [`true`](https://developer.apple.com/documentation/swift/true) if `[lhs contains rhs]`; the left hand side must be an `NSExpression` object that evaluates to a collection
 
 ## See Also
 

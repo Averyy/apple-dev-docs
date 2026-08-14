@@ -28,7 +28,7 @@ The current status of the requested key.
 ## Parameters
 
 - `key`: The property whose status you want.
-- `outError`: If the status of the value for the `key` is [`AVKeyValueStatus.failed`](avkeyvaluestatus/failed.md), the system sets this pointer to an [`NSError`](https://developer.apple.com/documentation/Foundation/NSError) object that describes the failure.
+- `outError`: If the status of the value for the `key` is [`AVKeyValueStatus.failed`](avkeyvaluestatus/failed.md), the system sets this pointer to an [`NSError`](https://developer.apple.com/documentation/foundation/nserror) object that describes the failure.
 
 ## See Also
 

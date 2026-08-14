@@ -8,13 +8,13 @@ Customize layout and preserve attachment views in your text view subclass.
 
 If you build a text editor with rich attachments — like images, videos, or interactive controls — you may notice that attachment views flicker or lose their state when someone scrolls the attachment out of the viewport, or types in the same paragraph. This is because text views discard and recreate attachment views as part of their normal layout process.
 
-[`UITextView`](uitextview.md) and [`NSTextView`](https://developer.apple.com/documentation/AppKit/NSTextView) conform to [`NSTextViewportLayoutControllerDelegate`](nstextviewportlayoutcontrollerdelegate.md), giving your subclass direct access to the layout process. You can override the delegate methods to respond to layout events and customize how text fragments appear.
+[`UITextView`](uitextview.md) and [`NSTextView`](https://developer.apple.com/documentation/appkit/nstextview) conform to [`NSTextViewportLayoutControllerDelegate`](nstextviewportlayoutcontrollerdelegate.md), giving your subclass direct access to the layout process. You can override the delegate methods to respond to layout events and customize how text fragments appear.
 
 You can also register reuse policies to tell the text view which attachment views to preserve across scrolling and editing, eliminating flicker and preserving states like focus and playback position.
 
 ##### Override Viewport Layout Methods
 
-[`layoutViewport()`](nstextviewportlayoutcontroller/layoutviewport().md) encompasses the viewport layout process. Each time the visual state within the viewport changes, TextKit calls it. During each viewport layout process, [`NSTextViewportLayoutController`](nstextviewportlayoutcontroller.md) calls the text view’s delegate methods at three points — before it starts, before each text layout fragment is about to be rendered, and after it completes. Override any of these methods in your [`UITextView`](uitextview.md) (or [`NSTextView`](https://developer.apple.com/documentation/AppKit/NSTextView) in macOS) subclass to customize what happens at each stage:
+[`layoutViewport()`](nstextviewportlayoutcontroller/layoutviewport().md) encompasses the viewport layout process. Each time the visual state within the viewport changes, TextKit calls it. During each viewport layout process, [`NSTextViewportLayoutController`](nstextviewportlayoutcontroller.md) calls the text view’s delegate methods at three points — before it starts, before each text layout fragment is about to be rendered, and after it completes. Override any of these methods in your [`UITextView`](uitextview.md) (or [`NSTextView`](https://developer.apple.com/documentation/appkit/nstextview) in macOS) subclass to customize what happens at each stage:
 
 ```swift
 class CustomTextView: UITextView {

@@ -15,7 +15,7 @@ let kCGWindowAlpha: CFString
 
 #### Discussion
 
-The value for this key is a [`CFNumber`](https://developer.apple.com/documentation/CoreFoundation/CFNumber) type (encoded as [`CFNumberType.floatType`](https://developer.apple.com/documentation/CoreFoundation/CFNumberType/floatType)) that contains the window’s alpha fade level. This number is in the range 0.0 to 1.0, where 0.0 is fully transparent and 1.0 is fully opaque.
+The value for this key is a [`CFNumber`](https://developer.apple.com/documentation/corefoundation/cfnumber) type (encoded as [`CFNumberType.floatType`](https://developer.apple.com/documentation/corefoundation/cfnumbertype/floattype)) that contains the window’s alpha fade level. This number is in the range 0.0 to 1.0, where 0.0 is fully transparent and 1.0 is fully opaque.
 
 ## See Also
 

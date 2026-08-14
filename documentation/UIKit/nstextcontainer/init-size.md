@@ -24,7 +24,7 @@ The size of the text container’s bounding rectangle.
 
 #### Discussion
 
-The new text container must be added to an [`NSLayoutManager`](nslayoutmanager.md) object before it can be used. The text container must also have an associated [`NSTextView`](https://developer.apple.com/documentation/AppKit/NSTextView) object for text to be displayed. This method is the designated initializer for the `NSTextContainer` class.
+The new text container must be added to an [`NSLayoutManager`](nslayoutmanager.md) object before it can be used. The text container must also have an associated [`NSTextView`](https://developer.apple.com/documentation/appkit/nstextview) object for text to be displayed. This method is the designated initializer for the `NSTextContainer` class.
 
 ## Parameters
 

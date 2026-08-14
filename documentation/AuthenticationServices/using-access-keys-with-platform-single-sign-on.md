@@ -50,7 +50,7 @@ The Credential Manager uses the Apple Access Platform to provide the access key 
 
 #### Configure the Nfc Reader
 
-Use the [`ExtensibleSSO`](https://developer.apple.com/documentation/DeviceManagement/ExtensibleSSO) configuration or the [`ExtensibleSingleSignOn`](https://developer.apple.com/documentation/DeviceManagement/ExtensibleSingleSignOn) profile to configure what the reader attached to the Mac uses for the NFC transaction.
+Use the [`ExtensibleSSO`](https://developer.apple.com/documentation/devicemanagement/extensiblesso) configuration or the [`ExtensibleSingleSignOn`](https://developer.apple.com/documentation/devicemanagement/extensiblesinglesignon) profile to configure what the reader attached to the Mac uses for the NFC transaction.
 
 The configuration specifies:
 
@@ -59,7 +59,7 @@ The configuration specifies:
 - The root CA that issued the identity — the reader identity needs to chain up to this CA
 - Whether the reader turns on Express Mode
 
-For more information, see [`Configuring Platform Single Sign-on`](https://developer.apple.com/documentation/DeviceManagement/configuring-platform-single-sign-on#Support-Tap-to-Login).
+For more information, see [`Configuring Platform Single Sign-on`](https://developer.apple.com/documentation/devicemanagement/configuring-platform-single-sign-on).
 
 #### Use Access Keys
 

@@ -12,11 +12,11 @@ For iOS apps, users can use a long-press gesture (touch and hold) a QR code to f
 
 Before interacting with items in an image, the user can tap the Live Text button in the lower-right corner to highlight the recognized items. Then a data-specific action menu appears when the user double-taps on text in an image, and uses a long-press gesture on an email address or QR code.
 
-![A mockup of three iPhone screens showing the Live Text button and highlighted text with its action menu, a long press of an email address with its action menu, and a long press of a QR code with its action menu.](https://docs-assets.developer.apple.com/published/18bb3f1f13bfb8d615897f3714d561f9/enabling_live_text_interactions_with_images-1%402x.png)
+![A mockup of three iPhone screens showing the Live Text button and highlighted text with its action menu, a long press of an email address with its action menu, and a long press of a QR code with its action menu.](/images/com.apple.VisionKit/enabling_live_text_interactions_with_images-1@2x.png)
 
 In your app, you decide whether Live Text recognizes text and data within text, and for iOS apps, QR codes in the image. You choose the types of items to look for and run the analysis on the image, and then VisionKit provides the entire Live Text interface with the breadth of actions for specific types.
 
-> ❗ **Important**: The code listings in this article use asynchronous methods that you invoke from an `async` method or within a [`Task`](https://developer.apple.com/documentation/Swift/Task) structure. For details on asynchronous flows, see [`Concurrency`](https://developer.apple.com/documentation/Swift/concurrency).
+> ❗ **Important**: The code listings in this article use asynchronous methods that you invoke from an `async` method or within a [`Task`](https://developer.apple.com/documentation/swift/task) structure. For details on asynchronous flows, see [`Concurrency`](https://developer.apple.com/documentation/swift/concurrency).
 
 ##### Check Whether the Device Supports Live Text
 
@@ -24,7 +24,7 @@ Before showing a Live Text interface in your app, check whether the device suppo
 
 ##### Add a Live Text Interaction Object to Your View in Ios
 
-For iOS apps, you add the Live Text interface by adding an interaction object to the view containing the image. If you use a [`UIImageView`](https://developer.apple.com/documentation/UIKit/UIImageView) to display the image, it handles the image content area calculations for you.
+For iOS apps, you add the Live Text interface by adding an interaction object to the view containing the image. If you use a [`UIImageView`](https://developer.apple.com/documentation/uikit/uiimageview) to display the image, it handles the image content area calculations for you.
 
 Add an [`ImageAnalysisInteraction`](imageanalysisinteraction.md) object directly on the view containing the image.
 
@@ -39,11 +39,11 @@ Optionally, customize the interface by setting the interaction’s delegate to a
 interaction.delegate = self
 ```
 
-If you don’t use a [`UIImageView`](https://developer.apple.com/documentation/UIKit/UIImageView) object, inform the interaction object when the content area of the image changes while the interaction bounds don’t change. Implement the `ImageAnalysisInteractionDelegate` [`contentsRect(for:)`](imageanalysisinteractiondelegate/contentsrect(for:).md) protocol method to return the content area of the image. This keeps the Live Text highlights within the bounds of the image. Then use the [`setContentsRectNeedsUpdate()`](imageanalysisinteraction/setcontentsrectneedsupdate().md) method to notify the interaction if the content area changes.
+If you don’t use a [`UIImageView`](https://developer.apple.com/documentation/uikit/uiimageview) object, inform the interaction object when the content area of the image changes while the interaction bounds don’t change. Implement the `ImageAnalysisInteractionDelegate` [`contentsRect(for:)`](imageanalysisinteractiondelegate/contentsrect(for:).md) protocol method to return the content area of the image. This keeps the Live Text highlights within the bounds of the image. Then use the [`setContentsRectNeedsUpdate()`](imageanalysisinteraction/setcontentsrectneedsupdate().md) method to notify the interaction if the content area changes.
 
 ##### Add a Live Text View to Your Image View in Macos
 
-For macOS apps, add the Live Text interface by adding a view above the view containing the image. If you use an [`NSImageView`](https://developer.apple.com/documentation/AppKit/NSImageView) to display the image, it handles the image content area calculations for you.
+For macOS apps, add the Live Text interface by adding a view above the view containing the image. If you use an [`NSImageView`](https://developer.apple.com/documentation/appkit/nsimageview) to display the image, it handles the image content area calculations for you.
 
 First create an instance of the [`ImageAnalysisOverlayView`](imageanalysisoverlayview.md) class.
 
@@ -82,9 +82,9 @@ func overlayView(_ overlayView: ImageAnalysisOverlayView,
 }
 ```
 
-If you aren’t using an [`NSImageView`](https://developer.apple.com/documentation/AppKit/NSImageView) object, implement the `ImageAnalysisOverlayViewDelegate` [`contentsRect(for:)`](imageanalysisoverlayviewdelegate/contentsrect(for:)-34yzu.md) protocol method to return the content area of the image. Then use the [`setContentsRectNeedsUpdate()`](imageanalysisoverlayview/setcontentsrectneedsupdate().md) method to notify the overlay view if the content area of the image changes while the view bounds don’t change.
+If you aren’t using an [`NSImageView`](https://developer.apple.com/documentation/appkit/nsimageview) object, implement the `ImageAnalysisOverlayViewDelegate` [`contentsRect(for:)`](imageanalysisoverlayviewdelegate/contentsrect(for:)-34yzu.md) protocol method to return the content area of the image. Then use the [`setContentsRectNeedsUpdate()`](imageanalysisoverlayview/setcontentsrectneedsupdate().md) method to notify the overlay view if the content area of the image changes while the view bounds don’t change.
 
-![A diagram showing an image that is offset in an arbitrary view with the overlay view on top of it.](https://docs-assets.developer.apple.com/published/81c2d3481475ede1fb5f15419f88f2ec/enabling_live_text_interactions_with_images-2%402x.png)
+![A diagram showing an image that is offset in an arbitrary view with the overlay view on top of it.](/images/com.apple.VisionKit/enabling_live_text_interactions_with_images-2@2x.png)
 
 ##### Find Items and Start the Interaction with an Image
 
@@ -127,7 +127,7 @@ If you set the [`preferredInteractionTypes`](imageanalysisinteraction/preferredi
 
 For iOS apps, users can tap the Live Text button in the lower-right corner to switch to highlight mode. Then users can touch and hold data that the analyzer detects in text to perform a data-specific action, such as opening a URL, calling a phone number, or sending an email.
 
-![A mockup of the lower half of an iPhone screen showing the Live Text button enabled and recognized items highlighted, such as a mailing address and QR code.](https://docs-assets.developer.apple.com/published/db02b7be0de6b19bc1dd36bc19293691/enabling_live_text_interactions_with_images-3%402x.png)
+![A mockup of the lower half of an iPhone screen showing the Live Text button enabled and recognized items highlighted, such as a mailing address and QR code.](/images/com.apple.VisionKit/enabling_live_text_interactions_with_images-3@2x.png)
 
 To let users interact with data that the analyzer detects in text in macOS, set the [`preferredInteractionTypes`](imageanalysisoverlayview/preferredinteractiontypes.md) property to [`dataDetectors`](imageanalysisoverlayview/interactiontypes/datadetectors.md). Then users can hover over data in text to perform a data-specific action.
 
@@ -149,7 +149,7 @@ By default the image analyzer attempts to recognize the user’s preferred langu
 
 To determine whether the image analyzer supports a language, check whether the array that the `ImageAnalyzer` [`supportedTextRecognitionLanguages`](imageanalyzer/supportedtextrecognitionlanguages.md) class property returns includes the language ID.
 
-For more information on language IDs, see [`Choosing localization regions and scripts`](https://developer.apple.com/documentation/Xcode/choosing-localization-regions-and-scripts).
+For more information on language IDs, see [`Choosing localization regions and scripts`](https://developer.apple.com/documentation/xcode/choosing-localization-regions-and-scripts).
 
 ## See Also
 

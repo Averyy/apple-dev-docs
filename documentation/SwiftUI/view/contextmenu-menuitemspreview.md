@@ -51,7 +51,7 @@ Text("Turtle Rock")
 
 When someone activates the context menu with an action like touch and hold in iOS or iPadOS, the system displays the image and the menu:
 
-![A screenshot of a context menu with two buttons that are labeled](https://docs-assets.developer.apple.com/published/8c9bb2ae4842a6ff1d55dad417ce8e48/View-contextMenu-2-iOS%402x.png)
+![A screenshot of a context menu with two buttons that are labeled](/images/com.apple.SwiftUI/View-contextMenu-2-iOS@2x.png)
 
 To customize the lift preview, shown while the system transitions to show your custom `preview`, apply a [`contentShape(_:_:eoFill:)`](view/contentshape(_:_:eofill:).md) with a [`contextMenuPreview`](contentshapekinds/contextmenupreview.md) kind. For example, you can change the lift preview’s corner radius or use a nested view as the lift preview.
 

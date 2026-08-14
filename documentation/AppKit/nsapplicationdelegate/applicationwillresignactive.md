@@ -17,7 +17,7 @@ optional func applicationWillResignActive(_ notification: Notification)
 
 ## Parameters
 
-- `notification`: A notification named [`willResignActiveNotification`](nsapplication/willresignactivenotification.md). Calling the [`object`](https://developer.apple.com/documentation/Foundation/NSNotification/object) method of this notification returns the `NSApplication` object itself.
+- `notification`: A notification named [`willResignActiveNotification`](nsapplication/willresignactivenotification.md). Calling the [`object`](https://developer.apple.com/documentation/foundation/nsnotification/object) method of this notification returns the `NSApplication` object itself.
 
 ## See Also
 

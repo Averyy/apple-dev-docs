@@ -27,7 +27,7 @@ class NWMulticastGroup
 ## Topics
 
 ### Essentials
-- [com.apple.developer.networking.multicast](../BundleResources/Entitlements/com.apple.developer.networking.multicast.md)
+- [com.apple.developer.networking.multicast](../bundleresources/entitlements/com.apple.developer.networking.multicast.md)
   A Boolean value that indicates whether an app can send or receive IP multicast traffic.
 ### Defining Multicast Groups
 - [init(for: [NWEndpoint], from: NWEndpoint?, disableUnicast: Bool) throws](nwmulticastgroup/init(for:from:disableunicast:).md)
@@ -44,8 +44,8 @@ class NWMulticastGroup
 
 ### Conforms To
 - [NWGroupDescriptor](nwgroupdescriptor.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

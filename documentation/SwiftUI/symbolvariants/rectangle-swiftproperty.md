@@ -29,7 +29,7 @@ Label("Fill Rectangle", systemImage: "plus")
     .symbolVariant(.fill.rectangle)
 ```
 
-![A screenshot of a label that shows a plus sign in a filled rectangle](https://docs-assets.developer.apple.com/published/e149c895cf10d709dc7bd7c57ccddd00/SymbolVariants-rectangle-2%402x.png)
+![A screenshot of a label that shows a plus sign in a filled rectangle](/images/com.apple.SwiftUI/SymbolVariants-rectangle-2@2x.png)
 
 ## See Also
 

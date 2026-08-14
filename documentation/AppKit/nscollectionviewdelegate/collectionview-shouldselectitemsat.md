@@ -17,7 +17,7 @@ optional func collectionView(_ collectionView: NSCollectionView, shouldSelectIte
 
 #### Return Value
 
-The set of [`NSIndexPath`](https://developer.apple.com/documentation/Foundation/NSIndexPath) objects corresponding to the items that you want to be selected. If you do not want any items selected, return an empty set.
+The set of [`NSIndexPath`](https://developer.apple.com/documentation/foundation/nsindexpath) objects corresponding to the items that you want to be selected. If you do not want any items selected, return an empty set.
 
 #### Discussion
 
@@ -28,7 +28,7 @@ This method is not called when you set the selection programmatically using the 
 ## Parameters
 
 - `collectionView`: The collection view making the request.
-- `indexPaths`: The set of [`NSIndexPath`](https://developer.apple.com/documentation/Foundation/NSIndexPath) objects corresponding to the items selected by the user.
+- `indexPaths`: The set of [`NSIndexPath`](https://developer.apple.com/documentation/foundation/nsindexpath) objects corresponding to the items selected by the user.
 
 ## See Also
 

@@ -22,7 +22,7 @@ final class ImageRenderer<Content> where Content : View
 
 #### Overview
 
-Use `ImageRenderer` to export bitmap image data from a SwiftUI view. You initialize the renderer with a view, then render images on demand, either by calling the [`render(rasterizationScale:renderer:)`](imagerenderer/render(rasterizationscale:renderer:).md) method, or by using the renderer’s properties to create a [`CGImage`](https://developer.apple.com/documentation/CoreGraphics/CGImage), [`NSImage`](https://developer.apple.com/documentation/AppKit/NSImage), or [`UIImage`](https://developer.apple.com/documentation/UIKit/UIImage).
+Use `ImageRenderer` to export bitmap image data from a SwiftUI view. You initialize the renderer with a view, then render images on demand, either by calling the [`render(rasterizationScale:renderer:)`](imagerenderer/render(rasterizationscale:renderer:).md) method, or by using the renderer’s properties to create a [`CGImage`](https://developer.apple.com/documentation/coregraphics/cgimage), [`NSImage`](https://developer.apple.com/documentation/appkit/nsimage), or [`UIImage`](https://developer.apple.com/documentation/uikit/uiimage).
 
 By drawing to a [`Canvas`](canvas.md) and exporting with an `ImageRenderer`, you can generate images from any progammatically-rendered content, like paths, shapes, gradients, and more. You can also render standard SwiftUI views like [`Text`](text.md) views, or containers of multiple view types.
 
@@ -59,15 +59,15 @@ private func createAwardView(forUser: String, date: Date) -> some View {
 }
 ```
 
-![A large trophy symbol, drawn with a mint-colored shadow. Below this, a](https://docs-assets.developer.apple.com/published/a3dc31cb9f305a02b0b44e7d8e4693e8/ImageRenderer-1%402x.png)
+![A large trophy symbol, drawn with a mint-colored shadow. Below this, a](/images/com.apple.SwiftUI/ImageRenderer-1@2x.png)
 
-Because `ImageRenderer` conforms to [`ObservableObject`](https://developer.apple.com/documentation/Combine/ObservableObject), you can use it to produce a stream of images as its properties change. Subscribe to the renderer’s [`objectWillChange`](imagerenderer/objectwillchange.md) publisher, then use the renderer to rasterize a new image each time the subscriber receives an update.
+Because `ImageRenderer` conforms to [`ObservableObject`](https://developer.apple.com/documentation/combine/observableobject), you can use it to produce a stream of images as its properties change. Subscribe to the renderer’s [`objectWillChange`](imagerenderer/objectwillchange.md) publisher, then use the renderer to rasterize a new image each time the subscriber receives an update.
 
 > ❗ **Important**: `ImageRenderer` output only includes views that SwiftUI rasterizes directly using its own drawing primitives, such as text, images, shapes, and composite views of these types. It does not include views whose contents are composited by Core Animation layers, such as more complex controls and containers, web views, media players, and most types of UIKit and AppKit views. In those cases, `ImageRenderer` displays a placeholder image, similar to the behavior of [`drawingGroup(opaque:colorMode:)`](view/drawinggroup(opaque:colormode:).md). Whether a particular view is rendered using SwiftUI’s own drawing primitives or composited by Core Animation may change in future releases. However, any view that is currently supported is guaranteed to remain supported.
 
 ##### Rendering to a Pdf Context
 
-The [`render(rasterizationScale:renderer:)`](imagerenderer/render(rasterizationscale:renderer:).md) method renders the specified view to any [`CGContext`](https://developer.apple.com/documentation/CoreGraphics/CGContext). That means you aren’t limited to creating a rasterized `CGImage`. For example, you can generate PDF data by rendering to a PDF context. The resulting PDF maintains resolution-independence for supported members of the view hierarchy, such as text, symbol images, lines, shapes, and fills.
+The [`render(rasterizationScale:renderer:)`](imagerenderer/render(rasterizationscale:renderer:).md) method renders the specified view to any [`CGContext`](https://developer.apple.com/documentation/coregraphics/cgcontext). That means you aren’t limited to creating a rasterized `CGImage`. For example, you can generate PDF data by rendering to a PDF context. The resulting PDF maintains resolution-independence for supported members of the view hierarchy, such as text, symbol images, lines, shapes, and fills.
 
 The following example uses the `createAwardView(forUser:date:)` method from the previous example, and exports its contents as an 800-by-600 point PDF to the file URL `renderURL`. It uses the `size` parameter sent to the rendering closure to center the `trophyAndDate` view vertically and horizontally on the page.
 
@@ -141,10 +141,10 @@ var body: some View {
 ## Relationships
 
 ### Conforms To
-- [Copyable](../Swift/Copyable.md)
-- [Escapable](../Swift/Escapable.md)
-- [Observable](../Observation/Observable.md)
-- [ObservableObject](../Combine/ObservableObject.md)
+- [Copyable](../swift/copyable.md)
+- [Escapable](../swift/escapable.md)
+- [Observable](../observation/observable.md)
+- [ObservableObject](../combine/observableobject.md)
 
 
 ---

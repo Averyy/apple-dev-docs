@@ -42,7 +42,7 @@ See [`NSPopover`](nspopover.md) for more information on popovers in general.
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

@@ -29,10 +29,10 @@ struct SphereFace
 ## Relationships
 
 ### Conforms To
-- [Equatable](../Swift/Equatable.md)
-- [RawRepresentable](../Swift/RawRepresentable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Equatable](../swift/equatable.md)
+- [RawRepresentable](../swift/rawrepresentable.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 - [TossableRepresentation.TossableFace](tossablerepresentation/tossableface.md)
 
 ## See Also

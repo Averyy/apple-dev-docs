@@ -26,7 +26,7 @@ You can also call this method from a block passed to the [`performBatchUpdates(_
 
 ## Parameters
 
-- `indexPaths`: An array of [`NSIndexPath`](https://developer.apple.com/documentation/Foundation/NSIndexPath) objects, each of which contains a section index and item index for the item you want to delete from the collection view. This parameter must not be `nil`.
+- `indexPaths`: An array of [`NSIndexPath`](https://developer.apple.com/documentation/foundation/nsindexpath) objects, each of which contains a section index and item index for the item you want to delete from the collection view. This parameter must not be `nil`.
 
 ## See Also
 

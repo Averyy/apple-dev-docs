@@ -43,7 +43,7 @@ func pinLightBlendMode(inputImage: CIImage, backgroundImage: CIImage) -> CIImage
 }
 ```
 
-![The image on the top left shows a beach with multiple palm trees and a rainbow arching across the blue sky.  The image below is a gradient image displaying a gradual color shift from purple to a dark orange. The image on the right shows the output from applying a pin-light-blend mode filter applied. The result displays the colors of both images blended together  producing a slightly darker photo.](https://docs-assets.developer.apple.com/published/84129d656aef8aa793587971b553870b/media-3546414%402x.png)
+![The image on the top left shows a beach with multiple palm trees and a rainbow arching across the blue sky.  The image below is a gradient image displaying a gradual color shift from purple to a dark orange. The image on the right shows the output from applying a pin-light-blend mode filter applied. The result displays the colors of both images blended together  producing a slightly darker photo.](/images/com.apple.coreimage/media-3546414@2x.png)
 
 ## See Also
 

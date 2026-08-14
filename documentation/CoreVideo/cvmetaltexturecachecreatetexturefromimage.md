@@ -25,11 +25,11 @@ Upon successful creation of the texture, this function returns [`kCVReturnSucces
 
 #### Discussion
 
-This function creates a cached Core Video Metal texture object mapped to an image buffer, and a live binding to the underlying [`MTLTexture`](https://developer.apple.com/documentation/Metal/MTLTexture) object.
+This function creates a cached Core Video Metal texture object mapped to an image buffer, and a live binding to the underlying [`MTLTexture`](https://developer.apple.com/documentation/metal/mtltexture) object.
 
-> ❗ **Important**:  You need to maintain a strong reference to `textureOut` until the GPU finishes execution of commands accessing the texture, because the system doesn’t automatically retain it. Developers typically release these references in a block passed to [`addCompletedHandler(_:)`](https://developer.apple.com/documentation/Metal/MTLCommandBuffer/addCompletedHandler(_:)).
+> ❗ **Important**:  You need to maintain a strong reference to `textureOut` until the GPU finishes execution of commands accessing the texture, because the system doesn’t automatically retain it. Developers typically release these references in a block passed to [`addCompletedHandler(_:)`](https://developer.apple.com/documentation/metal/mtlcommandbuffer/addcompletedhandler(_:)).
 
-Note that Core Video doesn’t explicitly declare any pixel format types as Metal compatible. Specify [`true`](https://developer.apple.com/documentation/Swift/true) for the [`kCVPixelBufferMetalCompatibilityKey`](kcvpixelbuffermetalcompatibilitykey.md) option to create Metal-compatible buffers when creating or requesting Core Video pixel buffers. You’re responsible for ensuring the pixel format is appropriate to the buffer.
+Note that Core Video doesn’t explicitly declare any pixel format types as Metal compatible. Specify [`true`](https://developer.apple.com/documentation/swift/true) for the [`kCVPixelBufferMetalCompatibilityKey`](kcvpixelbuffermetalcompatibilitykey.md) option to create Metal-compatible buffers when creating or requesting Core Video pixel buffers. You’re responsible for ensuring the pixel format is appropriate to the buffer.
 
 The following code snippet demonstrates some example mappings:
 

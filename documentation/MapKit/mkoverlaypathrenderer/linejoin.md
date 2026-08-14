@@ -21,7 +21,7 @@ var lineJoin: CGLineJoin { get set }
 
 #### Discussion
 
-The default line join style is [`CGLineJoin.round`](https://developer.apple.com/documentation/CoreGraphics/CGLineJoin/round).
+The default line join style is [`CGLineJoin.round`](https://developer.apple.com/documentation/coregraphics/cglinejoin/round).
 
 ## See Also
 

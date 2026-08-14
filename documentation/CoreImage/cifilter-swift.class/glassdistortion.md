@@ -32,7 +32,7 @@ The glass distortion filter uses the following properties:
 - **`inputImage`**: An image with the type [`CIImage`](ciimage.md).
 - **`texture`**: An image with the type [`CIImage`](ciimage.md).
 - **`scale`**: The amount of texturing to apply. Larger values increase the effect. Defaults to 200.
-- **`center`**: A set of coordinates marking the center of the image as a [`CGPoint`](https://developer.apple.com/documentation/CoreFoundation/CGPoint).
+- **`center`**: A set of coordinates marking the center of the image as a [`CGPoint`](https://developer.apple.com/documentation/corefoundation/cgpoint).
 
 The following code creates a filter that results in a glass-like distortion applied to the image:
 
@@ -47,7 +47,7 @@ func glassDistortion(inputImage: CIImage, textureImage: CIImage) -> CIImage {
 }
 ```
 
-![Two images arranged horizontally. The left image contains a photo of the Golden Gate Bridge with a clear sky as the backdrop. The right image shows the result of applying the glass distortion filter. It appears as though the image is behind a piece of privacy glass.](https://docs-assets.developer.apple.com/published/6d86106a3790e52c54b299173a68ad8c/media-4407314%402x.png)
+![Two images arranged horizontally. The left image contains a photo of the Golden Gate Bridge with a clear sky as the backdrop. The right image shows the result of applying the glass distortion filter. It appears as though the image is behind a piece of privacy glass.](/images/com.apple.coreimage/media-4407314@2x.png)
 
 ## See Also
 

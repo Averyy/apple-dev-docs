@@ -45,7 +45,7 @@ For the methods you can call to retrieve view transition context information fro
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 ### Conforming Types
 - [UIPercentDrivenInteractiveTransition](uipercentdriveninteractivetransition.md)
 

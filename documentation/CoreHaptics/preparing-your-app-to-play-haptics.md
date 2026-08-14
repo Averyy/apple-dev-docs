@@ -45,7 +45,7 @@ The [`CHHapticEngine`](chhapticengine.md) is your app’s interface to the hapti
 - Play haptic patterns directly from a file URL.
 - Modulate haptic patterns during playback.
 
-Create this engine early in your app’s life cycle—for example, in your main view controller’s [`viewDidLoad()`](https://developer.apple.com/documentation/UIKit/UIViewController/viewDidLoad())—and store it in an instance variable or property so it doesn’t go out of scope during playback.
+Create this engine early in your app’s life cycle—for example, in your main view controller’s [`viewDidLoad()`](https://developer.apple.com/documentation/uikit/uiviewcontroller/viewdidload())—and store it in an instance variable or property so it doesn’t go out of scope during playback.
 
 **Swift**:
 

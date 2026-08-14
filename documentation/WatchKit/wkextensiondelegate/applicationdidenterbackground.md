@@ -27,7 +27,7 @@ The system typically suspends your app shortly after this method returns; theref
 
 Additionally, the system may purge suspended apps at any time to make room for other apps. You aren’t notified when an app is purged from memory. The [`applicationDidEnterBackground()`](wkextensiondelegate/applicationdidenterbackground().md) method is your last chance to perform any cleanup before the app terminates.
 
-> **Note**:  When creating an app that uses the SwiftUI [`App`](https://developer.apple.com/documentation/SwiftUI/App) protocol to manage your life cycle, use the [`onChange(of:perform:)`](https://developer.apple.com/documentation/SwiftUI/View/onChange(of:perform:)) modifier and the [`scenePhase`](https://developer.apple.com/documentation/SwiftUI/EnvironmentValues/scenePhase) environment value to monitor life cycle changes when possible. For more information, see [`Building a watchOS app`](https://developer.apple.com/documentation/watchOS-Apps/building_a_watchos_app).
+> **Note**:  When creating an app that uses the SwiftUI [`App`](https://developer.apple.com/documentation/swiftui/app) protocol to manage your life cycle, use the [`onChange(of:perform:)`](https://developer.apple.com/documentation/swiftui/view/onchange(of:perform:)) modifier and the [`scenePhase`](https://developer.apple.com/documentation/swiftui/environmentvalues/scenephase) environment value to monitor life cycle changes when possible. For more information, see [`Building a watchOS app`](https://developer.apple.com/documentation/watchos-apps/building_a_watchos_app).
 
 ## See Also
 

@@ -17,7 +17,7 @@ The Sensitive Content Analysis framework enables an app to check content for nud
 
 Consider situations in which your app acquires externally sourced images or video, and use this framework to check if the media is sensitive. For example, a messaging app can check each image it receives from a contact. A classroom app can evaluate uploads from personal devices to a shared location for classwork submission or other classroom activities. And a video-conferencing app can analyze the video streams of all participants, live on a call.
 
-![A flowchart that progresses from left to right. The chart has three areas. The left area contains the label Third party app, with text that indicates the app receives an image over a network. An arrow flows to the right from this area to a box that contains the label Sensitivity Analyzer, which resides in the center. The overall central area of the flowchart is the labeled Sensitive Content Analysis. An arrow flows from the Sensitivity Analyzer box to two other boxes within the center that contain the labels Yes, and No, respectively. Text on the arrow itself reads Is Sensitive, which represents the condition on which the chart’s flow branches. An arrow flows to the right of the Yes box to the right section of the chart, which contains two boxes. The top box contains text that reads: The app avoids displaying sensitive content. A second arrow flows to the right of the No box to another box that reads: The app displays content that’s not sensitive. ](https://docs-assets.developer.apple.com/published/4cbaecea0bbe206c2ac1f4afb2406bdb/sensitivecontentanalysis-1%402x.png)
+![A flowchart that progresses from left to right. The chart has three areas. The left area contains the label Third party app, with text that indicates the app receives an image over a network. An arrow flows to the right from this area to a box that contains the label Sensitivity Analyzer, which resides in the center. The overall central area of the flowchart is the labeled Sensitive Content Analysis. An arrow flows from the Sensitivity Analyzer box to two other boxes within the center that contain the labels Yes, and No, respectively. Text on the arrow itself reads Is Sensitive, which represents the condition on which the chart’s flow branches. An arrow flows to the right of the Yes box to the right section of the chart, which contains two boxes. The top box contains text that reads: The app avoids displaying sensitive content. A second arrow flows to the right of the No box to another box that reads: The app displays content that’s not sensitive. ](/images/com.apple.SensitiveContentAnalysis/sensitivecontentanalysis-1@2x.png)
 
 ##### Intervene When Content Is Sensitive
 
@@ -26,7 +26,7 @@ If the framework determines that some media contains sensitive content, call the
 - Displays the flagged content, if the person chooses.
 - Offers a menu of additional actions, such as blocking the contact.
 
-![An image of two iPhones side by side that display the Messages app. The phone on the left renders a view of an image that the user received in a conversation. A callout points to the image and contains the text Blurred view. Text referring to the blurred image reads: This may be sensitive. The view contains a button with the text Show and a callout that reads: UI to show content. The phone on the right displays the same conversation in Messages with a detailed image in the view. A callout extends from the detailed image that reads: Shown content. The view contains a button with a warning triangle, from which a callout extends with text that reads: Alternative / additional options.](https://docs-assets.developer.apple.com/published/8f61ec0f4dde803c8f7a0e9c6e87bcbd/sensitivecontentanalysis-2%402x.png)
+![An image of two iPhones side by side that display the Messages app. The phone on the left renders a view of an image that the user received in a conversation. A callout points to the image and contains the text Blurred view. Text referring to the blurred image reads: This may be sensitive. The view contains a button with the text Show and a callout that reads: UI to show content. The phone on the right displays the same conversation in Messages with a detailed image in the view. A callout extends from the detailed image that reads: Shown content. The view contains a button with a warning triangle, from which a callout extends with text that reads: Alternative / additional options.](/images/com.apple.SensitiveContentAnalysis/sensitivecontentanalysis-2@2x.png)
 
 ## Topics
 
@@ -34,7 +34,7 @@ If the framework determines that some media contains sensitive content, call the
 - [Detecting sensitive content in media and providing intervention options](detecting-nudity-in-media-and-providing-intervention-options.md)
   Alert people before displaying images or video that might be sensitive.
 ### Authorization
-- [com.apple.developer.sensitivecontentanalysis.client](../BundleResources/Entitlements/com.apple.developer.sensitivecontentanalysis.client.md)
+- [com.apple.developer.sensitivecontentanalysis.client](../bundleresources/entitlements/com.apple.developer.sensitivecontentanalysis.client.md)
   A code-signing entitlement that enables an app to detect nudity in images and video.
 ### Image and video file analysis
 - [class SCSensitivityAnalyzer](scsensitivityanalyzer.md)

@@ -62,7 +62,7 @@ The app intents you create conform to the [`AppIntent`](appintent.md) protocol f
 - [struct RunSystemShortcutIntent](runsystemshortcutintent.md)
   An app intent you use in widgets to open another app or perform an App Shortcut, custom shortcut, or system action.
 ### SiriKit intent migration
-- [Soup Chef with App Intents: Migrating custom intents](../SiriKit/soup-chef-with-app-intents-migrating-custom-intents.md)
+- [Soup Chef with App Intents: Migrating custom intents](../sirikit/soup-chef-with-app-intents-migrating-custom-intents.md)
   Integrating App Intents to provide your appʼs actions to Siri and Shortcuts.
 - [protocol CustomIntentMigratedAppIntent](customintentmigratedappintent.md)
   An interface for replacing a custom SiriKit intent that allows existing shortcuts and donations to continue working.
@@ -76,7 +76,7 @@ The app intents you create conform to the [`AppIntent`](appintent.md) protocol f
   Create your first app intent that makes your app available in system experiences like Spotlight or the Shortcuts app.
 - [Accelerating app interactions with App Intents](acceleratingappinteractionswithappintents.md)
   Enable people to use your app’s features quickly through Siri, Spotlight, and Shortcuts.
-- [Soup Chef with App Intents: Migrating custom intents](../SiriKit/soup-chef-with-app-intents-migrating-custom-intents.md)
+- [Soup Chef with App Intents: Migrating custom intents](../sirikit/soup-chef-with-app-intents-migrating-custom-intents.md)
   Integrating App Intents to provide your appʼs actions to Siri and Shortcuts.
 - [protocol AppIntent](appintent.md)
   An interface you use to express app-specific actions and make them available to the rest of the system.

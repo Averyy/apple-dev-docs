@@ -22,7 +22,7 @@ func CGSizeMake(_ width: CGFloat, _ height: CGFloat) -> CGSize
 
 #### Return Value
 
-Returns a [`CGSize`](https://developer.apple.com/documentation/CoreFoundation/CGSize) structure with the specified width and height.
+Returns a [`CGSize`](https://developer.apple.com/documentation/corefoundation/cgsize) structure with the specified width and height.
 
 ## Parameters
 

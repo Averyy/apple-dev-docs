@@ -21,7 +21,7 @@ var urlAddresses: [CNLabeledValue<NSString>] { get }
 
 #### Discussion
 
-This property is an array of [`CNLabeledValue`](cnlabeledvalue.md) objects, each of which has a label and an [`NSString`](https://developer.apple.com/documentation/Foundation/NSString) value that contains the URL.
+This property is an array of [`CNLabeledValue`](cnlabeledvalue.md) objects, each of which has a label and an [`NSString`](https://developer.apple.com/documentation/foundation/nsstring) value that contains the URL.
 
 ## See Also
 

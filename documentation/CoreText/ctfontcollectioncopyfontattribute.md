@@ -28,7 +28,7 @@ An array that contains one value for each descriptor.
 
 - `collection`: The font collection reference.
 - `attributeName`: The attribute to retrieve for each descriptor in the collection.
-- `options`: Options to alter the return value. With [`kCTFontCollectionCopyDefaultOptions`](ctfontcollectioncopyoptions/kctfontcollectioncopydefaultoptions.md), the values appear in the same order as the results from [`CTFontCollectionCreateMatchingFontDescriptors(_:)`](ctfontcollectioncreatematchingfontdescriptors(_:).md), and `NULL` values transform to [`kCFNull`](https://developer.apple.com/documentation/CoreFoundation/kCFNull). Setting [`unique`](ctfontcollectioncopyoptions/unique.md) removes duplicate values. Setting [`standardSort`](ctfontcollectioncopyoptions/standardsort.md) sorts the values in standard UI order.
+- `options`: Options to alter the return value. With [`kCTFontCollectionCopyDefaultOptions`](ctfontcollectioncopyoptions/kctfontcollectioncopydefaultoptions.md), the values appear in the same order as the results from [`CTFontCollectionCreateMatchingFontDescriptors(_:)`](ctfontcollectioncreatematchingfontdescriptors(_:).md), and `NULL` values transform to [`kCFNull`](https://developer.apple.com/documentation/corefoundation/kcfnull). Setting [`unique`](ctfontcollectioncopyoptions/unique.md) removes duplicate values. Setting [`standardSort`](ctfontcollectioncopyoptions/standardsort.md) sorts the values in standard UI order.
 
 ## See Also
 

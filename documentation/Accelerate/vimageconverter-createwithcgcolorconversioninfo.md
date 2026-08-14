@@ -22,13 +22,13 @@ func vImageConverter_CreateWithCGColorConversionInfo(_ colorConversionInfoRef: C
 
 #### Discussion
 
-Use [`vImageConverter_CreateWithCGColorConversionInfo(_:_:_:_:_:_:)`](vimageconverter_createwithcgcolorconversioninfo(_:_:_:_:_:_:).md) to create a converter suitable for use with [`vImageConvert_AnyToAny(_:_:_:_:_:)`](vimageconvert_anytoany(_:_:_:_:_:).md), which uses [`CGColorConversionInfo`](https://developer.apple.com/documentation/CoreGraphics/CGColorConversionInfo) for color conversion. [`CGColorConversionInfo`](https://developer.apple.com/documentation/CoreGraphics/CGColorConversionInfo) provides greater control on the color-space conversion than, for example, using a converter returned by [`vImageConverter_CreateWithCGImageFormat(_:_:_:_:_:)`](vimageconverter_createwithcgimageformat(_:_:_:_:_:).md).
+Use [`vImageConverter_CreateWithCGColorConversionInfo(_:_:_:_:_:_:)`](vimageconverter_createwithcgcolorconversioninfo(_:_:_:_:_:_:).md) to create a converter suitable for use with [`vImageConvert_AnyToAny(_:_:_:_:_:)`](vimageconvert_anytoany(_:_:_:_:_:).md), which uses [`CGColorConversionInfo`](https://developer.apple.com/documentation/coregraphics/cgcolorconversioninfo) for color conversion. [`CGColorConversionInfo`](https://developer.apple.com/documentation/coregraphics/cgcolorconversioninfo) provides greater control on the color-space conversion than, for example, using a converter returned by [`vImageConverter_CreateWithCGImageFormat(_:_:_:_:_:)`](vimageconverter_createwithcgimageformat(_:_:_:_:_:).md).
 
 ##### Convert Linear Color Space to Srgb
 
 You can use [`vImageConverter_CreateWithCGColorConversionInfo(_:_:_:_:_:_:)`](vimageconverter_createwithcgcolorconversioninfo(_:_:_:_:_:_:).md) to convert an image with a linear response curve to sRGB. Many vImage operations provide optimal results when working on images with a linear response curve, this approach is ideal for converting between linear and sRGB.
 
-Begin by creating the source and destination color spaces, and the [`CGColorConversionInfo`](https://developer.apple.com/documentation/CoreGraphics/CGColorConversionInfo) instance:
+Begin by creating the source and destination color spaces, and the [`CGColorConversionInfo`](https://developer.apple.com/documentation/coregraphics/cgcolorconversioninfo) instance:
 
 ```swift
 guard
@@ -83,7 +83,7 @@ vImageConvert_AnyToAny(converter.takeRetainedValue(),
 
 The following image shows the source image, on the left, and the contents of `destinationBuffer`, on the right, after conversion:
 
-![Two photographs of a flower. The image on the left has a linear response curve and is very dark. The image on the right is sRGB and correctly rendered.](https://docs-assets.developer.apple.com/published/4646644c6ee3528f6eec9b5fb4678e09/media-3583042%402x.png)
+![Two photographs of a flower. The image on the left has a linear response curve and is very dark. The image on the right is sRGB and correctly rendered.](/images/com.apple.accelerate/media-3583042@2x.png)
 
 ## Parameters
 

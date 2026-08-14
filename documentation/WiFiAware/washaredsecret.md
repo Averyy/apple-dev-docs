@@ -22,7 +22,7 @@ Use a `WASharedSecret` to pair and set up security for higher layer network prot
 
 Both sides of a connection derive the same shared secret value if the same connection and input parameters are used:
 
-- Your app and a remote app can derive the same shared secret value by calling the [`deriveSharedSecret(for:method:context:)`](WAConnection/deriveSharedSecret(for:method:context:).md) function on the same connection, with the same parameters.
+- Your app and a remote app can derive the same shared secret value by calling the [`deriveSharedSecret(for:method:context:)`](waconnection/derivesharedsecret(for:method:context:).md) function on the same connection, with the same parameters.
 - Devices and accessories can derive the same value as your app by using the derivation specified in the Wi-Fi Aware 5.0 standard, and providing the same parameters your app uses.
 
 The following example shows how to generate a shared secret:
@@ -51,10 +51,10 @@ let secret = await connection.wifiAware?.deriveSharedSecret(for: .tlsPSK, method
 ## Relationships
 
 ### Conforms To
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 
 ---

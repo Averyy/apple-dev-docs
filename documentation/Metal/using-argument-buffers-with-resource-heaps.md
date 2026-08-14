@@ -55,7 +55,7 @@ Each element of this structure uses the `array<T, N>` template, which defines th
 - `exampleBuffers`, an array of 32 `float` buffers with a base index value of `100`.
 - `exampleConstants`, an array of 32 `uint32_t` constants with a base index value of `200`.
 
-![Layout diagram that shows an array of textures, an array of buffers, and an array of constants all encoded into a single argument buffer.](https://docs-assets.developer.apple.com/published/c6d3fcaf3ae4a7586e95129c46cb72a5/argument-buffers-with-heaps-1-ArgumentBufferWithArrays.png)
+![Layout diagram that shows an array of textures, an array of buffers, and an array of constants all encoded into a single argument buffer.](/images/com.apple.metal/argument-buffers-with-heaps-1-ArgumentBufferWithArrays.png)
 
 ##### Encode Array Elements Into an Argument Buffer
 

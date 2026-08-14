@@ -20,15 +20,15 @@ func diagnosisKeys() async throws -> [ENTemporaryExposureKey]
 
 > ❗ **Important**:  You can call this method from synchronous code using a completion handler, as shown on this page, or you can call it as an asynchronous method that has the following declaration: ```swift
 func diagnosisKeys() async throws -> [ENTemporaryExposureKey]
-``` For information about concurrency and asynchronous code in Swift, see [`Calling Objective-C APIs Asynchronously`](https://developer.apple.com/documentation/Swift/calling-objective-c-apis-asynchronously).
+``` For information about concurrency and asynchronous code in Swift, see [`Calling Objective-C APIs Asynchronously`](https://developer.apple.com/documentation/swift/calling-objective-c-apis-asynchronously).
 
 > ❗ **Important**:  This method is available in iOS 12.5, and in iOS 13.5 and later.
 
 The app must be in the foreground when it calls this method. Each time the app calls this method, the system presents an interface that requests authorization.
 
-When [`ENAPIVersion`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/ENAPIVersion) is set to `1` in the app’s Info.plist file, you must wait approximately 24 hours after the first call of [`getDiagnosisKeys(completionHandler:)`](enmanager/getdiagnosiskeys(completionhandler:).md) before this call returns a valid key. To test your app without waiting 24 hours, use [`getTestDiagnosisKeys(completionHandler:)`](enmanager/gettestdiagnosiskeys(completionhandler:).md).
+When [`ENAPIVersion`](https://developer.apple.com/documentation/bundleresources/information-property-list/enapiversion) is set to `1` in the app’s Info.plist file, you must wait approximately 24 hours after the first call of [`getDiagnosisKeys(completionHandler:)`](enmanager/getdiagnosiskeys(completionhandler:).md) before this call returns a valid key. To test your app without waiting 24 hours, use [`getTestDiagnosisKeys(completionHandler:)`](enmanager/gettestdiagnosiskeys(completionhandler:).md).
 
-When [`ENAPIVersion`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/ENAPIVersion) is set to `2`, this call returns a diagnosis key with a shortened rolling period.
+When [`ENAPIVersion`](https://developer.apple.com/documentation/bundleresources/information-property-list/enapiversion) is set to `2`, this call returns a diagnosis key with a shortened rolling period.
 
 ## Parameters
 

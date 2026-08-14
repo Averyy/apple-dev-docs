@@ -21,7 +21,7 @@ class UITextRange
 
 #### Overview
 
-Classes that adopt the [`UITextInput`](uitextinput.md) protocol must create custom [`UITextRange`](uitextrange.md) objects for representing ranges within the text managed by the class. The starting and ending indexes of the range are represented by [`UITextPosition`](uitextposition.md) objects. The text system uses both [`UITextRange`](uitextrange.md) and [`UITextPosition`](uitextposition.md) objects for communicating text-layout information. There are two reasons for using objects for text ranges rather than primitive types such as [`NSRange`](https://developer.apple.com/documentation/Foundation/NSRange-c.struct):
+Classes that adopt the [`UITextInput`](uitextinput.md) protocol must create custom [`UITextRange`](uitextrange.md) objects for representing ranges within the text managed by the class. The starting and ending indexes of the range are represented by [`UITextPosition`](uitextposition.md) objects. The text system uses both [`UITextRange`](uitextrange.md) and [`UITextPosition`](uitextposition.md) objects for communicating text-layout information. There are two reasons for using objects for text ranges rather than primitive types such as [`NSRange`](https://developer.apple.com/documentation/foundation/nsrange-c.struct):
 
 - Some documents contain nested elements (for example, HTML tags and embedded objects) and you need to track both absolute position and position in the visible text.
 - The WebKit framework requires that text indexes and offsets be represented by objects.
@@ -41,15 +41,15 @@ If you adopt the [`UITextInput`](uitextinput.md) protocol, you must create a cus
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [Sendable](../Swift/Sendable.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [Sendable](../swift/sendable.md)
 
 ## See Also
 

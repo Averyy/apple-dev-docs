@@ -21,9 +21,9 @@ static let PDFDocumentDidEndFind: NSNotification.Name
 
 #### Discussion
 
-The document posts this notification when [`findString(_:withOptions:)`](https://developer.apple.com/documentation/PDFKit/PDFDocument/findString(_:withOptions:)) returns.
+The document posts this notification when [`findString(_:withOptions:)`](https://developer.apple.com/documentation/pdfkit/pdfdocument/findstring(_:withoptions:)) returns.
 
-The [`beginFindString(_:withOptions:)`](https://developer.apple.com/documentation/PDFKit/PDFDocument/beginFindString(_:withOptions:)) method returns immediately, so this notification is posted when the “find” operation is finished.
+The [`beginFindString(_:withOptions:)`](https://developer.apple.com/documentation/pdfkit/pdfdocument/beginfindstring(_:withoptions:)) method returns immediately, so this notification is posted when the “find” operation is finished.
 
 You can use this notification to know when to close or hide a progress bar.
 

@@ -28,7 +28,7 @@ The context object. Currently, always a `CanvasRenderingContext2D` object.
 
 ## Parameters
 
-- `contextId`: The identifier for the context. Currently, only the identifier   is supported.
+- `contextId`: The identifier for the context. Currently, only the identifier `"2d"` is supported.
 
 
 ---

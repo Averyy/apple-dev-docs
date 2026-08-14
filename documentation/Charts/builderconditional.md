@@ -32,8 +32,8 @@ Don’t use this type directly. The result builders defined by the framework, li
 - [AxisMark](axismark.md)
 - [Chart3DContent](chart3dcontent.md)
 - [ChartContent](chartcontent.md)
-- [Copyable](../Swift/Copyable.md)
-- [Escapable](../Swift/Escapable.md)
+- [Copyable](../swift/copyable.md)
+- [Escapable](../swift/escapable.md)
 
 
 ---

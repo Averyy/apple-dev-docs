@@ -25,7 +25,7 @@ func authorizationState() -> SFAuthorizationViewState
 - [func authorizationRights() -> UnsafeMutablePointer<AuthorizationRights>!](sfauthorizationview/authorizationrights.md)
   Returns the authorization rights for this view.
 - [func isEnabled() -> Bool](sfauthorizationview/isenabled.md)
-  Indicates whether the authorization view is enabled ([`true`](https://developer.apple.com/documentation/Swift/true)) or disabled ([`false`](https://developer.apple.com/documentation/Swift/false)).
+  Indicates whether the authorization view is enabled ([`true`](https://developer.apple.com/documentation/swift/true)) or disabled ([`false`](https://developer.apple.com/documentation/swift/false)).
 
 
 ---

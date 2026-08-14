@@ -82,12 +82,12 @@ protocol MLShapedArrayProtocol<Scalar> : ExpressibleByArrayLiteral, MutableColle
 ## Relationships
 
 ### Inherits From
-- [BidirectionalCollection](../Swift/BidirectionalCollection.md)
-- [Collection](../Swift/Collection.md)
-- [ExpressibleByArrayLiteral](../Swift/ExpressibleByArrayLiteral.md)
-- [MutableCollection](../Swift/MutableCollection.md)
-- [RandomAccessCollection](../Swift/RandomAccessCollection.md)
-- [Sequence](../Swift/Sequence.md)
+- [BidirectionalCollection](../swift/bidirectionalcollection.md)
+- [Collection](../swift/collection.md)
+- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
+- [MutableCollection](../swift/mutablecollection.md)
+- [RandomAccessCollection](../swift/randomaccesscollection.md)
+- [Sequence](../swift/sequence.md)
 ### Conforming Types
 - [MLShapedArray](mlshapedarray.md)
 - [MLShapedArraySlice](mlshapedarrayslice.md)

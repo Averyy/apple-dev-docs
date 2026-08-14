@@ -22,7 +22,7 @@ let CBAdvertisementDataManufacturerDataKey: String
 
 #### Discussion
 
-The value associated with this key is an [`NSData`](https://developer.apple.com/documentation/Foundation/NSData) object.
+The value associated with this key is an [`NSData`](https://developer.apple.com/documentation/foundation/nsdata) object.
 
 ## See Also
 

@@ -8,7 +8,7 @@ Add the required capabilities and define a compatible schema to enable SwiftData
 
 People who use your app to create content expect that content to be available on all of their devices. SwiftData makes it possible to synchronize content by abstracting away the associated complexities. To adopt the framework’s automatic sync functionality, add two Xcode capabilities to your app. The system operates with a set of predictable behaviors, such as using your app’s `Entitlements.plist` file to infer the CloudKit configuration.
 
-SwiftData uses the [`NSPersistentCloudKitContainer`](https://developer.apple.com/documentation/CoreData/NSPersistentCloudKitContainer) class from Core Data to handle CloudKit synchronization. For more information about how your models become instances of [`CKRecord`](https://developer.apple.com/documentation/CloudKit/CKRecord), see [`Reading CloudKit Records for Core Data`](https://developer.apple.com/documentation/CoreData/reading-cloudkit-records-for-core-data).
+SwiftData uses the [`NSPersistentCloudKitContainer`](https://developer.apple.com/documentation/coredata/nspersistentcloudkitcontainer) class from Core Data to handle CloudKit synchronization. For more information about how your models become instances of [`CKRecord`](https://developer.apple.com/documentation/cloudkit/ckrecord), see [`Reading CloudKit Records for Core Data`](https://developer.apple.com/documentation/coredata/reading-cloudkit-records-for-core-data).
 
 ##### Add the Icloud and Background Modes Capabilities
 
@@ -18,8 +18,8 @@ SwiftData requires two separate capabilities to perform automatic iCloud sync: t
 
 To add the iCloud and Background Modes capabilities:
 
-1. Follow the steps in [`Configuring iCloud services`](https://developer.apple.com/documentation/Xcode/configuring-icloud-services) to add the iCloud capability to your Xcode project, enable CloudKit, and create or choose an existing *container* — an object that CloudKit uses to isolate your app’s databases on the iCloud servers and manage their access and operations.
-2. Follow the steps in [`Configuring background execution modes`](https://developer.apple.com/documentation/Xcode/configuring-background-execution-modes) to add the Background Modes capability, enabling the Remote notifications option. The system delivers remote notifications silently to your app, allowing SwiftData to process the changes they describe and keep your local model data in sync with the iCloud servers.
+1. Follow the steps in [`Configuring iCloud services`](https://developer.apple.com/documentation/xcode/configuring-icloud-services) to add the iCloud capability to your Xcode project, enable CloudKit, and create or choose an existing *container* — an object that CloudKit uses to isolate your app’s databases on the iCloud servers and manage their access and operations.
+2. Follow the steps in [`Configuring background execution modes`](https://developer.apple.com/documentation/xcode/configuring-background-execution-modes) to add the Background Modes capability, enabling the Remote notifications option. The system delivers remote notifications silently to your app, allowing SwiftData to process the changes they describe and keep your local model data in sync with the iCloud servers.
 
 ##### Define a Cloudkit Compatible Schema
 
@@ -34,16 +34,16 @@ You manually initialize your app’s CloudKit schema during development — as t
 
 ##### Initialize the Cloudkit Development Schema
 
-After you define a model layer that’s compatible with CloudKit, use the existing integration from Core Data with CloudKit to initialize a copy of that model layer on the iCloud servers. For example, you might do this during app launch by adding the necessary code to the `init()` function of the type in your app that adopts the [`App`](https://developer.apple.com/documentation/SwiftUI/App) protocol from SwiftUI.
+After you define a model layer that’s compatible with CloudKit, use the existing integration from Core Data with CloudKit to initialize a copy of that model layer on the iCloud servers. For example, you might do this during app launch by adding the necessary code to the `init()` function of the type in your app that adopts the [`App`](https://developer.apple.com/documentation/swiftui/app) protocol from SwiftUI.
 
 Follow these steps to ensure proper CloudKit schema initialization:
 
 1. Create an instance of [`ModelConfiguration`](modelconfiguration.md), which provides some basic information about the app’s SwiftData stack.
-2. Use the configuration’s [`url`](modelconfiguration/url.md) property to create an instance of [`NSPersistentStoreDescription`](https://developer.apple.com/documentation/CoreData/NSPersistentStoreDescription), enabling SwiftData and Core Data to reference the same store on disk.
+2. Use the configuration’s [`url`](modelconfiguration/url.md) property to create an instance of [`NSPersistentStoreDescription`](https://developer.apple.com/documentation/coredata/nspersistentstoredescription), enabling SwiftData and Core Data to reference the same store on disk.
 3. Configure the store description with your app’s CloudKit container identifier.
 4. Request Core Data load the store synchronously, to guarantee that the load finishes before you attempt to initialize the CloudKit schema.
 5. Create a managed object model that contains the same model types as the `ModelConfiguration` instance.
-6. Use [`NSPersistentCloudKitContainer`](https://developer.apple.com/documentation/CoreData/NSPersistentCloudKitContainer) to load the store from the description and to initialize the CloudKit schema.
+6. Use [`NSPersistentCloudKitContainer`](https://developer.apple.com/documentation/coredata/nspersistentcloudkitcontainer) to load the store from the description and to initialize the CloudKit schema.
 7. Unload the persistent store before creating an instance of [`ModelContainer`](modelcontainer.md) to avoid both frameworks attempting to sync data to CloudKit.
 
 ```swift
@@ -86,7 +86,7 @@ do {
 
 To ensure that schema initialization runs only in nonproduction builds, wrap your code with the `#if` compiler directive and specify the `DEBUG` compiler flag.
 
-Go to the [`CloudKit Console`](https://developer.apple.comhttps://icloud.developer.apple.com) to verify the initialized schema. If you’re unable to see your schema’s record types or data, you may need to enable querying support. For more information, see [`Inspecting and Editing an iCloud Container’s Schema`](https://developer.apple.com/documentation/CloudKit/inspecting-and-editing-an-icloud-container-s-schema).
+Go to the [`CloudKit Console`](https://developer.apple.comhttps://icloud.developer.apple.com) to verify the initialized schema. If you’re unable to see your schema’s record types or data, you may need to enable querying support. For more information, see [`Inspecting and Editing an iCloud Container’s Schema`](https://developer.apple.com/documentation/cloudkit/inspecting-and-editing-an-icloud-container-s-schema).
 
 ##### Configure Swiftdata to Use an Existing Cloudkit Container
 

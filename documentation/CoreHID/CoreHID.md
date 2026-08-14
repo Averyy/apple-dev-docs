@@ -12,7 +12,7 @@ Interact with keyboards, mice, and other human interface devices.
 
 The CoreHID framework facilitates interaction with human interface devices (HID), like a keyboard, mouse, or other device. Interactions include receiving data that a device generates, such as a key press or mouse click. CoreHID also allows sending requests to a device, such as a request to turn on an LED. You can also emulate a device connected to the system, such as a virtual game controller, and send input to other apps without physical hardware.
 
-![An image showing the Swift logo on the left. Three arrows emerge from it and point to the right. The first arrow points to a game controller. The second arrow points to a mouse. The third arrow points to a keyboard.](https://docs-assets.developer.apple.com/published/45cd6758ca7b3a8491fd51c7d1f525b3/core-hid-overview%402x.png)
+![An image showing the Swift logo on the left. Three arrows emerge from it and point to the right. The first arrow points to a game controller. The second arrow points to a mouse. The third arrow points to a keyboard.](/images/com.apple.CoreHID/core-hid-overview@2x.png)
 
 To learn more about HID devices, see the [`USB standards website`](https://developer.apple.comhttps://www.usb.org/hid).
 

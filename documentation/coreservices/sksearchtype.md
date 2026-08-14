@@ -41,6 +41,7 @@ In older versions of macOS, these constants specify the various search types you
 ## Relationships
 
 ### Conforms To
+- [Equatable](../swift/equatable.md)
 - [Hashable](../swift/hashable.md)
 - [RawRepresentable](../swift/rawrepresentable.md)
 

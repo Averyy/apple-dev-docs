@@ -6,9 +6,9 @@ Display unbounded content in a person’s surroundings.
 
 #### Overview
 
-Use an immersive space in visionOS to present SwiftUI views outside of any containers. You can include any views in a space, although you typically use a [`RealityView`](https://developer.apple.com/documentation/RealityKit/RealityView) to present RealityKit content.
+Use an immersive space in visionOS to present SwiftUI views outside of any containers. You can include any views in a space, although you typically use a [`RealityView`](https://developer.apple.com/documentation/realitykit/realityview) to present RealityKit content.
 
-![None](https://docs-assets.developer.apple.com/published/27bacbad97e1ec78ea0a1c475758f30b/immersive-spaces-hero%402x.png)
+![None](/images/com.apple.SwiftUI/immersive-spaces-hero@2x.png)
 
 You can request one of three styles of spaces with the [`immersionStyle(selection:in:)`](scene/immersionstyle(selection:in:).md) scene modifier:
 

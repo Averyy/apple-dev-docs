@@ -71,8 +71,8 @@ This app intent needs to run from your app, and not from your app extension. If 
 ### Inherits From
 - [AppIntent](appintent.md)
 - [PersistentlyIdentifiable](persistentlyidentifiable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 - [SystemIntent](systemintent.md)
 
 ## See Also

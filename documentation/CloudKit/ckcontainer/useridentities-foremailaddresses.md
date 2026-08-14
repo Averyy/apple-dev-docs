@@ -22,7 +22,7 @@ func userIdentities(forEmailAddresses emails: [String]) async throws -> [String 
 
 #### Return Value
 
-A [`Result`](https://developer.apple.com/documentation/Swift/Result) that contains either a dictionary of user identities, or an error that describes why CloudKit can’t discover the email addresses.
+A [`Result`](https://developer.apple.com/documentation/swift/result) that contains either a dictionary of user identities, or an error that describes why CloudKit can’t discover the email addresses.
 
 In the successful case, the dictionary uses the email addresses you specify in `emails` as its keys. Only successfully discovered user identities are present in this dictionary.
 

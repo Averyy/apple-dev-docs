@@ -31,9 +31,9 @@ The nine-part tiled filter uses the following properties:
 
 - **`inputImage`**: An image with the type [`CIImage`](ciimage.md).
 - **`flipYTiles`**: A `Boolean` value representing if the y-axis should be flipped.
-- **`growAmount`**: A [`CGPoint`](https://developer.apple.com/documentation/CoreFoundation/CGPoint) representing the amount of stretching applied.
-- **`breakpoint1`**: A [`CGPoint`](https://developer.apple.com/documentation/CoreFoundation/CGPoint) representing the upper-right corner of the image to retain after tiling ends.
-- **`breakpoint0`**: A [`CGPoint`](https://developer.apple.com/documentation/CoreFoundation/CGPoint) representing the lower-left corner of image to retain before stretching begins.
+- **`growAmount`**: A [`CGPoint`](https://developer.apple.com/documentation/corefoundation/cgpoint) representing the amount of stretching applied.
+- **`breakpoint1`**: A [`CGPoint`](https://developer.apple.com/documentation/corefoundation/cgpoint) representing the upper-right corner of the image to retain after tiling ends.
+- **`breakpoint0`**: A [`CGPoint`](https://developer.apple.com/documentation/corefoundation/cgpoint) representing the lower-left corner of image to retain before stretching begins.
 
 The following code creates a filter that results in distorted tiles of the image becoming flipped:
 
@@ -49,7 +49,7 @@ func ninePartTiled(inputImage: CIImage) -> CIImage {
 }
 ```
 
-![Two images arranged horizontally. The left image contains a photograph of three hydrangea flowers with leaves in the background. An area inset by 200 pixels from all sides is highlighted using a rectangle. The image on the right shows the result of applying the nine part tiled filter. The area within the red rectangle has been placed in the top left and the area outside of the rectangle has been tiled to right and bottom of the image.](https://docs-assets.developer.apple.com/published/fb0413a034cd69db6f6acf95da46abe5/media-4407331%402x.png)
+![Two images arranged horizontally. The left image contains a photograph of three hydrangea flowers with leaves in the background. An area inset by 200 pixels from all sides is highlighted using a rectangle. The image on the right shows the result of applying the nine part tiled filter. The area within the red rectangle has been placed in the top left and the area outside of the rectangle has been tiled to right and bottom of the image.](/images/com.apple.coreimage/media-4407331@2x.png)
 
 ## See Also
 

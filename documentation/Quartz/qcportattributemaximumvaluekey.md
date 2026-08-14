@@ -16,7 +16,7 @@ let QCPortAttributeMaximumValueKey: String
 
 #### Discussion
 
-The associated value is an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) object that specifies the  maximum numerical value accepted by the port.
+The associated value is an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) object that specifies the  maximum numerical value accepted by the port.
 
 ## See Also
 

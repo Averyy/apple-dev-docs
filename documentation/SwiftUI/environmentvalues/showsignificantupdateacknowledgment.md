@@ -18,7 +18,7 @@ var showSignificantUpdateAcknowledgment: SignificantUpdateAction { get }
 
 #### Discussion
 
-Call this action from a [`Button`](Button.md) or [`onAppear(perform:)`](View/onAppear(perform:).md) to inform people about significant app changes that require their acknowledgment.
+Call this action from a [`Button`](button.md) or [`onAppear(perform:)`](view/onappear(perform:).md) to inform people about significant app changes that require their acknowledgment.
 
 
 ---

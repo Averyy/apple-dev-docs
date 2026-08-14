@@ -10,7 +10,7 @@ The `rules` resource represents a matchmaking rule that Game Center applies to m
 
 With matchmaking rules, you have finer control over automatch of players to fill empty slots in a match request. For example, use matchmaking rules to find compatible players and assign them to teams using game-specific information, such as skill level and other criteria. During development, you use the matchmaking rules APIs to upload your rules to the Game Center server. In your game code, you configure match requests to use your set of matchmaking rules. When you submit the match requests, Game Center applies your rules to the collective match requests from multiple game instances in the queue to fill the empty slots.
 
-For more information, see [`Matchmaking rules`](https://developer.apple.com/documentation/GameKit/matchmaking-rules) in the GameKit framework.
+For more information, see [`Matchmaking rules`](https://developer.apple.com/documentation/gamekit/matchmaking-rules) in the GameKit framework.
 
 ## Topics
 

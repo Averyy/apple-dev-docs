@@ -48,13 +48,13 @@ struct Port
 ## Relationships
 
 ### Conforms To
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [ExpressibleByIntegerLiteral](../Swift/ExpressibleByIntegerLiteral.md)
-- [Hashable](../Swift/Hashable.md)
-- [RawRepresentable](../Swift/RawRepresentable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [ExpressibleByIntegerLiteral](../swift/expressiblebyintegerliteral.md)
+- [Hashable](../swift/hashable.md)
+- [RawRepresentable](../swift/rawrepresentable.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

@@ -28,7 +28,7 @@ By default, the multiply property’s [`contents`](scnmaterialproperty/contents.
 
 The figure below shows a material (with textures for its [`diffuse`](scnmaterial/diffuse.md) and [`emission`](scnmaterial/emission.md) properties) before and after setting the multiply property’s contents to a solid color. Notice that the multiply color modulates even the bright areas added by the emissive map.
 
-![None](https://docs-assets.developer.apple.com/published/47babc79d9d4af6d7b3e1df58cddb862/media-2934159%402x.png)
+![None](/images/com.apple.scenekit/media-2934159@2x.png)
 
 ## See Also
 

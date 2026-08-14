@@ -33,7 +33,7 @@ All bins except the last for a particular chart represent an open range, meaning
 ## Relationships
 
 ### Conforms To
-- [RangeExpression](../Swift/RangeExpression.md)
+- [RangeExpression](../swift/rangeexpression.md)
 
 ## See Also
 

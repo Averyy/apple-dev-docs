@@ -58,7 +58,7 @@ Here, the [`VStack`](vstack.md) in the `ContentView` named “stack” is compos
 
 The `circle` view has an attached [`DragGesture`](draggesture.md) that targets the enclosing VStack’s coordinate space. As the gesture recognizer’s closure registers events inside `circle` it stores them in the shared `location` state variable and the [`VStack`](vstack.md) displays the coordinates in a [`Text`](text.md) view.
 
-![A screenshot showing an example of finding a named view and tracking](https://docs-assets.developer.apple.com/published/a7b7c1917dbc86bfc1787941553b5584/SwiftUI-View-coordinateSpace%402x.png)
+![A screenshot showing an example of finding a named view and tracking](/images/com.apple.SwiftUI/SwiftUI-View-coordinateSpace@2x.png)
 
 ## Parameters
 

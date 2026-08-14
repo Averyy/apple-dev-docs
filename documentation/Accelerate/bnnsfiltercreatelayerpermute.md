@@ -68,7 +68,7 @@ On return, `destinationData` contains `[1, 10, 3, 30, 2, 20, 4, 40]`.
 
 The following figure shows the source data on the left, and the permute result on the right:
 
-![Figure that shows a three dimensional tensor before and after permutation. The original tensor is shown on the left, with axis zero running left to right, axis one running top to bottom, and axis two running front to back. The permuted tensor is shown on the right, with axis zero running front to back, axis one running top to bottom, and axis two running left to right.](https://docs-assets.developer.apple.com/published/a4336952fa0d08822a12e7566770962d/media-3633102%402x.png)
+![Figure that shows a three dimensional tensor before and after permutation. The original tensor is shown on the left, with axis zero running left to right, axis one running top to bottom, and axis two running front to back. The permuted tensor is shown on the right, with axis zero running front to back, axis one running top to bottom, and axis two running left to right.](/images/com.apple.accelerate/media-3633102@2x.png)
 
 ## Parameters
 

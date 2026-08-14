@@ -18,19 +18,19 @@ These frame glitches happen on either the CPU or GPU timeline. For example, a ga
 
 If you want a frame to render at a specific frames per second (fps) rate, then profile the game to ensure that it doesn’t exceed a certain time interval per frame, measured in milliseconds (ms). For example, 30 fps is about 33 ms, 40 fps is 25 ms, and 60 fps is about 16 ms. If you design a game to work at 60 fps, then it’s best if the game’s CPU time not exceed 16 ms and the GPU time not exceed 16 ms. Apple ProMotion displays support different frame rates so the game can use a rate like 30, 40, and 60 fps. Note that the CPU and GPU timelines can overlap so each timeline can take up to 16 ms. The following diagram shows a well-paced CPU and GPU timeline:
 
-![A diagram that depicts the CPU, GPU, and display timelines for the encoding, rendering, and display of a sequence of five frames. The timing is uniform showing that there are no frame pacing problems.](https://docs-assets.developer.apple.com/published/6127a4b2ba981eb86502a0e11e61a466/improving-your-games-graphics-performance-and-settings-1%402x.png)
+![A diagram that depicts the CPU, GPU, and display timelines for the encoding, rendering, and display of a sequence of five frames. The timing is uniform showing that there are no frame pacing problems.](/images/com.apple.metal/improving-your-games-graphics-performance-and-settings-1@2x.png)
 
 Typically, the frame time isn’t consistent. The number of objects visible on the screen varies, the game might be streaming in the next level, shadow maps might need an update, and so on. If the encoding and rendering times remain within their time budgets, your game’s motion remains smooth. However, if there’s considerable change from one frame to another when they’re almost the same, it’s important to understand the cause. The following diagram shows when this variance isn’t an issue:
 
-![A diagram depicting the CPU, GPU, and display timelines for the encoding, rendering, and display for a sequence of five frames. The blocks aren’t uniformly sized, but remain within the time limits and don’t create frame pacing problems.](https://docs-assets.developer.apple.com/published/a4e16b45cf3ea2b4ea8d85a2803301bc/improving-your-games-graphics-performance-and-settings-2%402x.png)
+![A diagram depicting the CPU, GPU, and display timelines for the encoding, rendering, and display for a sequence of five frames. The blocks aren’t uniformly sized, but remain within the time limits and don’t create frame pacing problems.](/images/com.apple.metal/improving-your-games-graphics-performance-and-settings-2@2x.png)
 
 An unexpected long task can create a frame glitch in the timeline. For example, the game might introduce a data dependency while it loads textures, models, or shaders for a rendering pass. Some game tasks can increase the CPU utilization and affect the game’s rendering thread. The following diagram shows a long game task on the CPU timeline delaying the encoding of a frame, resulting in a glitch. Profile all parts of the game with Instruments to rule those out.
 
-![A diagram depicting the CPU, GPU, and display timelines for the encoding, rendering, and display for a sequence of five frames. There’s a long task inserted into the CPU timeline that delays the encoding of one of the frames so that it causes the previous frame to be shown for twice as long, resulting in a hitch on the display.](https://docs-assets.developer.apple.com/published/86aa662fb11204a098600750d12b827a/improving-your-games-graphics-performance-and-settings-3%402x.png)
+![A diagram depicting the CPU, GPU, and display timelines for the encoding, rendering, and display for a sequence of five frames. There’s a long task inserted into the CPU timeline that delays the encoding of one of the frames so that it causes the previous frame to be shown for twice as long, resulting in a hitch on the display.](/images/com.apple.metal/improving-your-games-graphics-performance-and-settings-3@2x.png)
 
 To solve this type of problem, reorganize a long task for the renderer to split it over several frames. Plan to schedule those tasks on a different thread, or manage any dependencies ahead of time so they don’t create stalls. The following diagram shows that splitting the long task resolves this glitch and restores the encoding thread’s optimal timeline:
 
-![A diagram depicting the CPU, GPU, and display timelines for the encoding, rendering, and display for a sequence of five frames. The long task from the previous diagram is split so that it doesn’t delay the encoding of the frames and result in a hitch on the display.](https://docs-assets.developer.apple.com/published/d5b6650062d1aca8a130436bfc00a104/improving-your-games-graphics-performance-and-settings-4%402x.png)
+![A diagram depicting the CPU, GPU, and display timelines for the encoding, rendering, and display for a sequence of five frames. The long task from the previous diagram is split so that it doesn’t delay the encoding of the frames and result in a hitch on the display.](/images/com.apple.metal/improving-your-games-graphics-performance-and-settings-4@2x.png)
 
 Apply the same approach to the GPU timeline too. Consider a cache to store temporary resources, like shadow maps, or use GPU culling to reduce geometric complexity. Note that tasks that aren’t part of every frame create opportunities to add delays. Carefully understand all parts of the game’s rendering pipeline to locate and eliminate glitches. There are some techniques to measure, understand, and fix these performance problems.
 
@@ -69,7 +69,7 @@ Match the data with the kind of improvement you’re trying to make. For instanc
 
 ##### Choose the Initial Defaults for Your Game
 
-Performance data is useful for selecting good default settings. Choose a few sets of options that work all of the time, rather than presenting all of the options to players. Avoid setting combinations that lead to instability or poor performance. Optimize the game for the range of devices that players may use, and to adjust the default settings based on the device the game is running on. For instance, the game can select a set of defaults based on the amount of memory and the type of processor. For example, the [`userInterfaceIdiom`](https://developer.apple.com/documentation/UIKit/UIDevice/userInterfaceIdiom) API on iOS returns the kind of device that the game is running on. Refer to the article [`Running code on a specific platform or OS version`](https://developer.apple.com/documentation/Xcode/running-code-on-a-specific-version) for details on customizing the game’s behavior on different Apple platforms.
+Performance data is useful for selecting good default settings. Choose a few sets of options that work all of the time, rather than presenting all of the options to players. Avoid setting combinations that lead to instability or poor performance. Optimize the game for the range of devices that players may use, and to adjust the default settings based on the device the game is running on. For instance, the game can select a set of defaults based on the amount of memory and the type of processor. For example, the [`userInterfaceIdiom`](https://developer.apple.com/documentation/uikit/uidevice/userinterfaceidiom) API on iOS returns the kind of device that the game is running on. Refer to the article [`Running code on a specific platform or OS version`](https://developer.apple.com/documentation/xcode/running-code-on-a-specific-version) for details on customizing the game’s behavior on different Apple platforms.
 
 Each device the game runs on — like iPhone, iPad, or Mac — has different ranges of performance characteristics. Players expect fewer, but tuned, settings for a game running on iPhone compared with Mac. Design a few settings that work well with smaller, portable devices, such as a performance mode that prioritizes battery life and frame rate, and a quality mode that prioritizes image quality. For all devices, tune settings to optimize input latency, frame pacing, and interoperability with the other features on the device. For example, test whether the player can record their screens or switch apps without requiring a restart.
 
@@ -86,15 +86,15 @@ If the game doesn’t meet the required performance targets, this data helps to 
 
 ##### Limit the Systems Burst Performance
 
-Use sustained execution mode to limit the burst performance of the system while the game runs. Include the [`com.apple.developer.sustained-execution`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.sustained-execution) entitlement and set the App Category in the `Info.plist` to one of the Games categories. Use this entitlement to obtain accurate performance measurements while the game runs. Benchmark and test various areas in the game to tune the sustained performance on different devices.
+Use sustained execution mode to limit the burst performance of the system while the game runs. Include the [`com.apple.developer.sustained-execution`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.sustained-execution) entitlement and set the App Category in the `Info.plist` to one of the Games categories. Use this entitlement to obtain accurate performance measurements while the game runs. Benchmark and test various areas in the game to tune the sustained performance on different devices.
 
 ##### Detect the Devices Capabilities to Choose the Settings
 
 The game can adjust its runtime performance characteristics by applying these recommendations:
 
 - Check whether an [`MTLDevice`](mtldevice.md) instance supports the capabilities of an [`MTLGPUFamily`](mtlgpufamily.md) instance by passing one of the enumeration’s cases — such as [`MTLGPUFamily.apple8`](mtlgpufamily/apple8.md), [`MTLGPUFamily.apple9`](mtlgpufamily/apple9.md), and so on — to the device’s [`supportsFamily(_:)`](mtldevice/supportsfamily(_:).md) method.
-- Use the [`com.apple.developer.kernel.increased-memory-limit`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.kernel.increased-memory-limit) entitlement for extra memory on certain iOS devices. Check [`os_proc_available_memory`](https://developer.apple.com/documentation/os/os_proc_available_memory) for the amount of available runtime device memory.
-- Use Quality of Service (QoS) and Grand Central Dispatch (GCD) as shown in [`Tuning your code’s performance for Apple silicon`](https://developer.apple.com/documentation/Apple-Silicon/tuning-your-code-s-performance-for-apple-silicon).
+- Use the [`com.apple.developer.kernel.increased-memory-limit`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.kernel.increased-memory-limit) entitlement for extra memory on certain iOS devices. Check [`os_proc_available_memory`](https://developer.apple.com/documentation/os/os_proc_available_memory) for the amount of available runtime device memory.
+- Use Quality of Service (QoS) and Grand Central Dispatch (GCD) as shown in [`Tuning your code’s performance for Apple silicon`](https://developer.apple.com/documentation/apple-silicon/tuning-your-code-s-performance-for-apple-silicon).
 
 To more finely tune your apps and games, you can call the [`Kernel`](https://developer.apple.com/documentation/kernel) function, [`sysctlbyname`](https://developer.apple.com/documentation/kernel/1387446-sysctlbyname). See [`Determining system capabilities`](https://developer.apple.com/documentation/kernel/1387446-sysctlbyname/determining_system_capabilities) and [`Apple Silicon CPU Optimization Guide`](https://developer.apple.comhttps://developer.apple.com/download/apple-silicon-cpu-optimization-guide/) for information about checking the specifics of a device, such as:
 
@@ -110,7 +110,7 @@ When the game starts, query for the GPU family support with the [`supportsFamily
 
 ##### Adapt the Game for Battery Life or Low Power Mode
 
-When designing games that run on a portable device, consider detecting when the app goes into low-power mode. See the [`isLowPowerModeEnabled`](https://developer.apple.com/documentation/Foundation/ProcessInfo/isLowPowerModeEnabled) API for more information on getting a notification when the system goes into low-power mode. This technique allows a game to adapt its graphics settings so that it uses less energy. For example, the game can:
+When designing games that run on a portable device, consider detecting when the app goes into low-power mode. See the [`isLowPowerModeEnabled`](https://developer.apple.com/documentation/foundation/processinfo/islowpowermodeenabled) API for more information on getting a notification when the system goes into low-power mode. This technique allows a game to adapt its graphics settings so that it uses less energy. For example, the game can:
 
 - Lower the rendering resolution
 - Limit the frame rate
@@ -126,9 +126,9 @@ When designing games that run on a portable device, consider detecting when the 
   Print debugging messages that a shader generates using shader logging.
 - [Developing Metal apps that run in Simulator](developing-metal-apps-that-run-in-simulator.md)
   Prototype and test your Metal apps in Simulator.
-- [Metal debugger](../Xcode/Metal-debugger.md)
+- [Metal debugger](../xcode/metal-debugger.md)
   Debug and profile your Metal workload with a GPU trace.
-- [Metal developer workflows](../Xcode/Metal-developer-workflows.md)
+- [Metal developer workflows](../xcode/metal-developer-workflows.md)
   Locate and fix issues related to your app’s use of the Metal API and GPU functions.
 - [GPU counters and counter sample buffers](gpu-counters-and-counter-sample-buffers.md)
   Retrieve runtime data from a GPU device by sampling one or more of its counters.

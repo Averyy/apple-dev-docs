@@ -22,7 +22,7 @@ typealias Element = Base.WrappedElement
 
 #### Discussion
 
-See [`BidirectionalCollection`](https://developer.apple.com/documentation/Swift/BidirectionalCollection) for more information.
+See [`BidirectionalCollection`](https://developer.apple.com/documentation/swift/bidirectionalcollection) for more information.
 
 ## See Also
 

@@ -22,7 +22,7 @@ class UIColorPickerViewController
 
 [`UIColorPickerViewController`](uicolorpickerviewcontroller.md) provides a standard interface to select colors. Use this class instead of [`UIColorWell`](uicolorwell.md) if you need more fine-grained control over the presentation.
 
-![Screenshot of a color picker in a popover presentation style, showing a spectrum of color options. The title of the color picker is Colors.](https://docs-assets.developer.apple.com/published/7a8215c6fe7d69222d5d869b01ef7f46/media-4195196%402x.png)
+![Screenshot of a color picker in a popover presentation style, showing a spectrum of color options. The title of the color picker is Colors.](/images/com.apple.uikit/media-4195196@2x.png)
 
 You typically present a [`UIColorPickerViewController`](uicolorpickerviewcontroller.md) as a popover:
 
@@ -66,17 +66,17 @@ You can also react to the color-selection change or the dismissal of the color p
 ### Inherits From
 - [UIViewController](uiviewcontroller.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCoding](../Foundation/NSCoding.md)
-- [NSExtensionRequestHandling](../Foundation/NSExtensionRequestHandling.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [NSTouchBarProvider](../AppKit/NSTouchBarProvider.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCoding](../foundation/nscoding.md)
+- [NSExtensionRequestHandling](../foundation/nsextensionrequesthandling.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSTouchBarProvider](../appkit/nstouchbarprovider.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 - [UIActivityItemsConfigurationProviding](uiactivityitemsconfigurationproviding.md)
 - [UIAppearanceContainer](uiappearancecontainer.md)
 - [UIContentContainer](uicontentcontainer.md)

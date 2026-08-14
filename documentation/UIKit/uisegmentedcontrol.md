@@ -26,7 +26,7 @@ class UISegmentedControl
 
 #### Overview
 
-A segmented control can display a title (an [`NSString`](https://developer.apple.com/documentation/Foundation/NSString) object) or an image ([`UIImage`](uiimage.md) object). The [`UISegmentedControl`](uisegmentedcontrol.md) object automatically resizes segments to fit proportionally within their superview unless they have a specific width set. When you add and remove segments, you can request that the action be animated with sliding and fading effects.
+A segmented control can display a title (an [`NSString`](https://developer.apple.com/documentation/foundation/nsstring) object) or an image ([`UIImage`](uiimage.md) object). The [`UISegmentedControl`](uisegmentedcontrol.md) object automatically resizes segments to fit proportionally within their superview unless they have a specific width set. When you add and remove segments, you can request that the action be animated with sliding and fading effects.
 
 You register the target-action methods for a segmented control using the [`valueChanged`](uicontrol/event/valuechanged.md) constant as shown below.
 
@@ -177,21 +177,21 @@ mySegmentedControl.setDividerImage(myImage, forLeftSegmentState: UIControlState.
 ### Inherits From
 - [UIControl](uicontrol.md)
 ### Conforms To
-- [CALayerDelegate](../QuartzCore/CALayerDelegate.md)
-- [CLBodyIdentifiable](../CoreLocation/CLBodyIdentifiable.md)
-- [CMBodyIdentifiable](../CoreMotion/CMBodyIdentifiable.md)
-- [CVarArg](../Swift/CVarArg.md)
-- [Copyable](../Swift/Copyable.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Escapable](../Swift/Escapable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCoding](../Foundation/NSCoding.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [NSTouchBarProvider](../AppKit/NSTouchBarProvider.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [CALayerDelegate](../quartzcore/calayerdelegate.md)
+- [CLBodyIdentifiable](../corelocation/clbodyidentifiable.md)
+- [CMBodyIdentifiable](../coremotion/cmbodyidentifiable.md)
+- [CVarArg](../swift/cvararg.md)
+- [Copyable](../swift/copyable.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Escapable](../swift/escapable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCoding](../foundation/nscoding.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSTouchBarProvider](../appkit/nstouchbarprovider.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 - [UIAccessibilityIdentification](uiaccessibilityidentification.md)
 - [UIActivityItemsConfigurationProviding](uiactivityitemsconfigurationproviding.md)
 - [UIAppearance](uiappearance.md)

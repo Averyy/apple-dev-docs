@@ -150,7 +150,7 @@ Expected `apple_bundle_version_01` `String`-value for distributed App with bundl
   Test your implementation in a development environment and onboard users gradually.
 - [class DCAppAttestService](dcappattestservice.md)
   A service that you use to validate the instance of your app running on a device.
-- [App Attest Environment](../BundleResources/Entitlements/com.apple.developer.devicecheck.appattest-environment.md)
+- [App Attest Environment](../bundleresources/entitlements/com.apple.developer.devicecheck.appattest-environment.md)
   The environment for an app that uses the App Attest service to validate itself.
 
 

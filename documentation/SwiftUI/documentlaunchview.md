@@ -18,7 +18,7 @@ struct DocumentLaunchView<Actions, DocumentView> where Actions : View, DocumentV
 
 #### Overview
 
-> ❗ **Important**: To create new documents, set [`UISupportsDocumentBrowser`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/UISupportsDocumentBrowser) to `YES` in your app’s information property list. Without this key, document creation doesn’t work.
+> ❗ **Important**: To create new documents, set [`UISupportsDocumentBrowser`](https://developer.apple.com/documentation/bundleresources/information-property-list/uisupportsdocumentbrowser) to `YES` in your app’s information property list. Without this key, document creation doesn’t work.
 
 Configure `DocumentLaunchView` to open and display files and trigger custom actions.
 

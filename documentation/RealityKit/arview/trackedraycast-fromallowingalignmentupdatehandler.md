@@ -19,7 +19,7 @@ Performs a tracked ray cast, where a ray is cast into the scene from the center 
 
 #### Return Value
 
-A tracked ray-cast instance used to update or stop ray casting. The result is `nil` if the ray cast fails or if the AR [`session`](arview/session.md) configuration isn’t [`ARWorldTrackingConfiguration`](https://developer.apple.com/documentation/ARKit/ARWorldTrackingConfiguration) or one of its subclasses.
+A tracked ray-cast instance used to update or stop ray casting. The result is `nil` if the ray cast fails or if the AR [`session`](arview/session.md) configuration isn’t [`ARWorldTrackingConfiguration`](https://developer.apple.com/documentation/arkit/arworldtrackingconfiguration) or one of its subclasses.
 
 ## Parameters
 

@@ -49,7 +49,7 @@ You shouldn’t subclass `AVMetadataObject` directly. Instead, you use one of th
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Inherited By
 - [AVMetadataBodyObject](avmetadatabodyobject.md)
 - [AVMetadataCatHeadObject](avmetadatacatheadobject.md)
@@ -58,12 +58,12 @@ You shouldn’t subclass `AVMetadataObject` directly. Instead, you use one of th
 - [AVMetadataMachineReadableCodeObject](avmetadatamachinereadablecodeobject.md)
 - [AVMetadataSalientObject](avmetadatasalientobject.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

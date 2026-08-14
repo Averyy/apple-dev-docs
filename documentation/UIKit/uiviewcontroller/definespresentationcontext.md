@@ -20,9 +20,9 @@ var definesPresentationContext: Bool { get set }
 
 #### Discussion
 
-When using the [`UIModalPresentationStyle.currentContext`](uimodalpresentationstyle/currentcontext.md) or [`UIModalPresentationStyle.overCurrentContext`](uimodalpresentationstyle/overcurrentcontext.md) style to present a view controller, this property controls which existing view controller in your view controller hierarchy is actually covered by the new content. When a context-based presentation occurs, UIKit starts at the presenting view controller and walks up the view controller hierarchy. If it finds a view controller whose value for this property is [`true`](https://developer.apple.com/documentation/Swift/true), it asks that view controller to present the new view controller. If no view controller defines the presentation context, UIKit asks the window’s root view controller to handle the presentation.
+When using the [`UIModalPresentationStyle.currentContext`](uimodalpresentationstyle/currentcontext.md) or [`UIModalPresentationStyle.overCurrentContext`](uimodalpresentationstyle/overcurrentcontext.md) style to present a view controller, this property controls which existing view controller in your view controller hierarchy is actually covered by the new content. When a context-based presentation occurs, UIKit starts at the presenting view controller and walks up the view controller hierarchy. If it finds a view controller whose value for this property is [`true`](https://developer.apple.com/documentation/swift/true), it asks that view controller to present the new view controller. If no view controller defines the presentation context, UIKit asks the window’s root view controller to handle the presentation.
 
-The default value for this property is [`false`](https://developer.apple.com/documentation/Swift/false). Some system-provided view controllers, such as [`UINavigationController`](uinavigationcontroller.md), change the default value to [`true`](https://developer.apple.com/documentation/Swift/true).
+The default value for this property is [`false`](https://developer.apple.com/documentation/swift/false). Some system-provided view controllers, such as [`UINavigationController`](uinavigationcontroller.md), change the default value to [`true`](https://developer.apple.com/documentation/swift/true).
 
 ## See Also
 

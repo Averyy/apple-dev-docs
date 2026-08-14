@@ -22,7 +22,7 @@ func CMSetAttachments(_ target: CMAttachmentBearer, attachments theAttachments: 
 
 #### Discussion
 
-`CMSetAttachments` is a convenience call that in turn calls `CMSetAttachment` for each key and value in the given dictionary. All key value pairs must be in the root level of the dictionary.  Given a [`CVBuffer`](https://developer.apple.com/documentation/CoreVideo/CVBuffer), `CMSetAttachments` is equivalent to `CVBufferSetAttachments`.
+`CMSetAttachments` is a convenience call that in turn calls `CMSetAttachment` for each key and value in the given dictionary. All key value pairs must be in the root level of the dictionary.  Given a [`CVBuffer`](https://developer.apple.com/documentation/corevideo/cvbuffer), `CMSetAttachments` is equivalent to `CVBufferSetAttachments`.
 
 ## Parameters
 

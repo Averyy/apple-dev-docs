@@ -49,11 +49,11 @@ protocol ChartSymbolShape : Shape
 ## Relationships
 
 ### Inherits From
-- [Animatable](../SwiftUI/Animatable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
-- [Shape](../SwiftUI/Shape.md)
-- [View](../SwiftUI/View.md)
+- [Animatable](../swiftui/animatable.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
+- [Shape](../swiftui/shape.md)
+- [View](../swiftui/view.md)
 ### Conforming Types
 - [AnyChartSymbolShape](anychartsymbolshape.md)
 - [BasicChartSymbolShape](basicchartsymbolshape.md)

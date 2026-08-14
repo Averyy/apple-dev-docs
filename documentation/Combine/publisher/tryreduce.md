@@ -28,7 +28,7 @@ A publisher that applies the closure to all received elements and produces an ac
 
 Use [`tryReduce(_:_:)`](publisher/tryreduce(_:_:).md) to collect a stream of elements and produce an accumulated value based on an error-throwing closure you provide. If the closure throws an error, the publisher fails and passes the error to its subscriber.
 
-In the example below, the publisher’s `0` element causes the `myDivide(_:_:)` function to throw an error and publish the [`nan`](https://developer.apple.com/documentation/Swift/Double/nan) result:
+In the example below, the publisher’s `0` element causes the `myDivide(_:_:)` function to throw an error and publish the [`nan`](https://developer.apple.com/documentation/swift/double/nan) result:
 
 ```swift
 struct DivisionByZeroError: Error {}

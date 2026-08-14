@@ -16,7 +16,7 @@ static let endFrame: NSViewAnimation.Key
 
 #### Discussion
 
-The size and location are specified by an [`NSRect`](https://developer.apple.com/documentation/Foundation/NSRect) structure encoded in an [`NSValue`](https://developer.apple.com/documentation/Foundation/NSValue) object. This property is optional. If it is not specified, `NSViewAnimation` uses the frame of the window or view at the start of the animation. If the target is a view and the end frame is empty, the view is hidden at the end.
+The size and location are specified by an [`NSRect`](https://developer.apple.com/documentation/foundation/nsrect) structure encoded in an [`NSValue`](https://developer.apple.com/documentation/foundation/nsvalue) object. This property is optional. If it is not specified, `NSViewAnimation` uses the frame of the window or view at the start of the animation. If the target is a view and the end frame is empty, the view is hidden at the end.
 
 ## See Also
 

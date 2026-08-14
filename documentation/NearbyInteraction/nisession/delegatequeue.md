@@ -19,7 +19,7 @@ var delegateQueue: dispatch_queue_t? { get set }
 
 #### Discussion
 
-By default, NI invokes delegate callbacks on [`main`](https://developer.apple.com/documentation/Dispatch/DispatchQueue/main).
+By default, NI invokes delegate callbacks on [`main`](https://developer.apple.com/documentation/dispatch/dispatchqueue/main).
 
 ## See Also
 

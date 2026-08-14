@@ -11,7 +11,7 @@ framework: HIG
 
 A gauge displays a specific numerical value within a range of values.
 
-![A stylized representation of a circular numeric gauge above a linear percentage gauge. The image is tinted red to subtly reflect the red in the original six-color Apple logo.](https://docs-assets.developer.apple.com/published/e11c37d9383e457f6f6ac510db66a257/components-gauges-intro~dark%402x.png)
+![A stylized representation of a circular numeric gauge above a linear percentage gauge. The image is tinted red to subtly reflect the red in the original six-color Apple logo.](/images/com.apple.HIG/components-gauges-intro~dark@2x.png)
 In addition to indicating the current value in a range, a gauge can provide more context about the range itself. For example, a temperature gauge can use text to identify the highest and lowest temperatures in the range and display a spectrum of colors that visually reinforce the changing values.
 
 ## Anatomy
@@ -30,13 +30,13 @@ Circular and linear gauges in both standard and capacity styles are also availab
 ### macOS
 In addition to supporting gauges, macOS also defines a level indicator that displays a specific numerical value within a range. You can configure a level indicator to convey capacity, rating, or — rarely — relevance.
 The capacity style can depict discrete or continuous values.
-![An image of a continuous capacity indicator that uses the default green fill to indicate an amount of about two-thirds of the total capacity.](https://docs-assets.developer.apple.com/published/5b1ce5ce24fb7f819874616ea54c65eb/indicators-continuous~dark%402x.png)
+![An image of a continuous capacity indicator that uses the default green fill to indicate an amount of about two-thirds of the total capacity.](/images/com.apple.HIG/indicators-continuous~dark@2x.png)
 **Continuous.** A horizontal translucent track that fills with a solid bar to indicate the current value.
-![An image of a discrete capacity indicator that uses the default green fill to indicate an amount of three-quarters of the total capacity.](https://docs-assets.developer.apple.com/published/34f67e956ecd1cce97f01db966674bed/indicators-discrete~dark%402x.png)
+![An image of a discrete capacity indicator that uses the default green fill to indicate an amount of three-quarters of the total capacity.](/images/com.apple.HIG/indicators-discrete~dark@2x.png)
 **Discrete.** A horizontal row of separate, equally sized, rectangular segments. The number of segments matches the total capacity, and the segments fill completely — never partially — with color to indicate the current value.
 **Consider using the continuous style for large ranges.** A large value range can make the segments of a discrete capacity indicator too small to be useful.
 **Consider changing the fill color to inform people about significant parts of the range.** By default, the fill color for both capacity indicator styles is green. If it makes sense in your app, you can change the fill color when the current value reaches certain levels, such as very low, very high, or just past the middle. You can change the fill color of the entire indicator or you can use the tiered state to show a sequence of several colors in one indicator, as shown below.
-![An image of a continuous capacity indicator in which the leftmost one-eigth is red, the next three-eighths are yellow, the next one-fourth is green, and the last one-fourth is unfilled.](https://docs-assets.developer.apple.com/published/9eba02983632023ecedb41ed55429d49/indicators-continuous-tiered~dark%402x.png)
+![An image of a continuous capacity indicator in which the leftmost one-eigth is red, the next three-eighths are yellow, the next one-fourth is green, and the last one-fourth is unfilled.](/images/com.apple.HIG/indicators-continuous-tiered~dark@2x.png)
 For guidance using the rating style to help people rank something, see [Rating indicators](rating-indicators.md).
 Although rarely used, the relevance style can communicate relevancy using a shaded horizontal bar. For example, a relevance indicator might appear in a list of search results, helping people visualize the relevancy of the results when sorting or comparing multiple items.
 
@@ -46,8 +46,8 @@ Although rarely used, the relevance style can communicate relevancy using a shad
 [Ratings and reviews](ratings-and-reviews.md)
 
 #### Developer documentation
-[Gauge](../SwiftUI/Gauge.md) — SwiftUI
-[NSLevelIndicator](../AppKit/NSLevelIndicator.md) — AppKit
+[Gauge](../swiftui/gauge.md) — SwiftUI
+[NSLevelIndicator](../appkit/nslevelindicator.md) — AppKit
 
 ## Change log
 | Date | Changes |

@@ -24,16 +24,16 @@ enum Chirality
 ## Relationships
 
 ### Conforms To
-- [Copyable](../Swift/Copyable.md)
-- [Decodable](../Swift/Decodable.md)
-- [Encodable](../Swift/Encodable.md)
-- [Equatable](../Swift/Equatable.md)
-- [Escapable](../Swift/Escapable.md)
-- [Hashable](../Swift/Hashable.md)
+- [Copyable](../swift/copyable.md)
+- [Decodable](../swift/decodable.md)
+- [Encodable](../swift/encodable.md)
+- [Equatable](../swift/equatable.md)
+- [Escapable](../swift/escapable.md)
+- [Hashable](../swift/hashable.md)
 
 ## See Also
 
-- [Happy Beam](../visionOS/happybeam.md)
+- [Happy Beam](../visionos/happybeam.md)
   Leverage a Full Space to create a fun game using ARKit.
 - [AnchoringComponent.Target.HandLocation](anchoringcomponent/target-swift.enum/handlocation.md)
   Defines the locations of tracked hands to look for.

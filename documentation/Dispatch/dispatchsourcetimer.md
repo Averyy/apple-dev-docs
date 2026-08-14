@@ -53,9 +53,9 @@ You do not adopt this protocol in your objects. Instead, use the [`makeTimerSour
 
 ### Inherits From
 - [DispatchSourceProtocol](dispatchsourceprotocol.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 ### Conforming Types
 - [DispatchSource](dispatchsource.md)
 

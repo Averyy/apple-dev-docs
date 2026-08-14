@@ -21,7 +21,7 @@ static let avDepthData: CIImageRepresentationOption
 
 #### Discussion
 
-`options` dictionary key for image export methods to represent data as [`AVDepthData`](https://developer.apple.com/documentation/AVFoundation/AVDepthData).
+`options` dictionary key for image export methods to represent data as [`AVDepthData`](https://developer.apple.com/documentation/avfoundation/avdepthdata).
 
 ## See Also
 

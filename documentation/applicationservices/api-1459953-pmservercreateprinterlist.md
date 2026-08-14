@@ -20,8 +20,8 @@ A result code. See [`Result Codes`](core_printing#1670007.md).
 
 ## Parameters
 
-- `server`: The print server whose printers you want to obtain. To specify the local print server, pass the constant  . Currently, you may specify only the local print server.
-- `printerList`: A pointer to your   variable. On return, the variable refers to a Core Foundation array containing the printers available to the specified print server. Each element in the array is a   object. You are responsible for releasing the array.
+- `server`: The print server whose printers you want to obtain. To specify the local print server, pass the constant `kPMServerLocal`. Currently, you may specify only the local print server.
+- `printerList`: A pointer to your [`CFArray`](https://developer.apple.com/documentation/corefoundation/cfarray) variable. On return, the variable refers to a Core Foundation array containing the printers available to the specified print server. Each element in the array is a `PMPrinter` object. You are responsible for releasing the array.
 
 ## See Also
 

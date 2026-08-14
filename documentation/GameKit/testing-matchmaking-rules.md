@@ -12,7 +12,7 @@ To download a script that helps test your matchmaking rules, see [`Testing match
 
 ##### Create Sample Match Requests
 
-Create an array of [`GameCenterMatchmakingTestRequestInlineCreate`](https://developer.apple.com/documentation/AppStoreConnectAPI/GameCenterMatchmakingTestRequestInlineCreate) objects that represent sample match requests. Set the `type` field to `gameCenterMatchmakingTestRequests` and the `id` field to a unique identifier for the match request.
+Create an array of [`GameCenterMatchmakingTestRequestInlineCreate`](https://developer.apple.com/documentation/appstoreconnectapi/gamecentermatchmakingtestrequestinlinecreate) objects that represent sample match requests. Set the `type` field to `gameCenterMatchmakingTestRequests` and the `id` field to a unique identifier for the match request.
 
 The `attributes` field has the same fields as the `Request` object that you use in expressions. Set the required `requestName` field to a unique string and the `bundleId` field to your game’s bundle identifier. Set the `platform` and `appVersion` fields to appropriate values, such as `1.0` and `IOS`. Set the `secondsInQueue` field to `0` unless you want to test rules with different match request ages.
 
@@ -63,9 +63,9 @@ The `attributes` field has the same fields as the `Request` object that you use 
 ...
 ```
 
-In the `relationships` field, include resource objects for any game-specific properties that you use in the expressions. For example, if you’re testing party code rules, described in [`Letting players join matches using party codes`](letting-players-join-matches-using-party-codes.md), add a [`GameCenterMatchmakingTestRequestInlineCreate.Relationships.MatchmakingPlayerProperties`](https://developer.apple.com/documentation/AppStoreConnectAPI/GameCenterMatchmakingTestRequestInlineCreate/Relationships-data.dictionary/MatchmakingPlayerProperties-data.dictionary) object to each match request.
+In the `relationships` field, include resource objects for any game-specific properties that you use in the expressions. For example, if you’re testing party code rules, described in [`Letting players join matches using party codes`](letting-players-join-matches-using-party-codes.md), add a [`GameCenterMatchmakingTestRequestInlineCreate.Relationships.MatchmakingPlayerProperties`](https://developer.apple.com/documentation/appstoreconnectapi/gamecentermatchmakingtestrequestinlinecreate/relationships-data.dictionary/matchmakingplayerproperties-data.dictionary) object to each match request.
 
-Then append a corresponding [`GameCenterMatchmakingTestPlayerPropertyInlineCreate`](https://developer.apple.com/documentation/AppStoreConnectAPI/GameCenterMatchmakingTestPlayerPropertyInlineCreate) object for each of the match request. In the `attributes` field, provide a key-value pair for each property, such as the `partyCode` property.
+Then append a corresponding [`GameCenterMatchmakingTestPlayerPropertyInlineCreate`](https://developer.apple.com/documentation/appstoreconnectapi/gamecentermatchmakingtestplayerpropertyinlinecreate) object for each of the match request. In the `attributes` field, provide a key-value pair for each property, such as the `partyCode` property.
 
 ```json
 ...
@@ -101,7 +101,7 @@ Then append a corresponding [`GameCenterMatchmakingTestPlayerPropertyInlineCreat
 
 ##### Test the Matchmaking Rules
 
-Apply the matchmaking rules by passing the associated rule set and the sample match requests to the [`Test a Rule Set`](https://developer.apple.com/documentation/AppStoreConnectAPI/POST-v1-gameCenterMatchmakingRuleSetTests) endpoint. Pass the rule set `id` using the `matchmakingRuleSet` field and pass resource objects representing the match requests in the `matchmakingRequests` field. Then pass the array of [`GameCenterMatchmakingTestRequestInlineCreate`](https://developer.apple.com/documentation/AppStoreConnectAPI/GameCenterMatchmakingTestRequestInlineCreate) and [`GameCenterMatchmakingTestPlayerPropertyInlineCreate`](https://developer.apple.com/documentation/AppStoreConnectAPI/GameCenterMatchmakingTestPlayerPropertyInlineCreate) objects, that you create above, in the `included` field.
+Apply the matchmaking rules by passing the associated rule set and the sample match requests to the [`Test a Rule Set`](https://developer.apple.com/documentation/appstoreconnectapi/post-v1-gamecentermatchmakingrulesettests) endpoint. Pass the rule set `id` using the `matchmakingRuleSet` field and pass resource objects representing the match requests in the `matchmakingRequests` field. Then pass the array of [`GameCenterMatchmakingTestRequestInlineCreate`](https://developer.apple.com/documentation/appstoreconnectapi/gamecentermatchmakingtestrequestinlinecreate) and [`GameCenterMatchmakingTestPlayerPropertyInlineCreate`](https://developer.apple.com/documentation/appstoreconnectapi/gamecentermatchmakingtestplayerpropertyinlinecreate) objects, that you create above, in the `included` field.
 
 ```json
 POST /v1/gameCenterMatchmakingRuleSetTests
@@ -134,7 +134,7 @@ POST /v1/gameCenterMatchmakingRuleSetTests
 }
 ```
 
-The endpoint response contains the matchmaking results. Parse the `matchmakingResults` array in the [`GameCenterMatchmakingRuleSetTest.Attributes`](https://developer.apple.com/documentation/AppStoreConnectAPI/GameCenterMatchmakingRuleSetTest/Attributes-data.dictionary) object. If the rule set contains team rules, the team assignments appear in the `teamAssignments` field of the [`GameCenterMatchmakingRuleSetTest.Attributes.MatchmakingResults`](https://developer.apple.com/documentation/AppStoreConnectAPI/GameCenterMatchmakingRuleSetTest/Attributes-data.dictionary/MatchmakingResults-data.dictionary) object.
+The endpoint response contains the matchmaking results. Parse the `matchmakingResults` array in the [`GameCenterMatchmakingRuleSetTest.Attributes`](https://developer.apple.com/documentation/appstoreconnectapi/gamecentermatchmakingrulesettest/attributes-data.dictionary) object. If the rule set contains team rules, the team assignments appear in the `teamAssignments` field of the [`GameCenterMatchmakingRuleSetTest.Attributes.MatchmakingResults`](https://developer.apple.com/documentation/appstoreconnectapi/gamecentermatchmakingrulesettest/attributes-data.dictionary/matchmakingresults-data.dictionary) object.
 
 ```json
 {

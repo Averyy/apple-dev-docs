@@ -20,7 +20,7 @@ struct PostProcessEffectContext<CommandBuffer>
 
 #### Overview
 
-You can register a method that applies postprocessing effects to a scene RealityKit renders with a [`RealityView`](realityview.md). Once every frame, RealityKit calls that function before displaying the scene. You can use this to apply postprocess effects using any APIs that can modify an image texture. However, because RealityKit calls this method every frame, prioritize using APIs that execute on the GPU, such as Metal compute functions, [`Metal Performance Shaders`](https://developer.apple.com/documentation/MetalPerformanceShaders), or [`Core Image`](https://developer.apple.com/documentation/CoreImage). You can also render additional content on top of the frame buffer, such as a SpriteKit scene.
+You can register a method that applies postprocessing effects to a scene RealityKit renders with a [`RealityView`](realityview.md). Once every frame, RealityKit calls that function before displaying the scene. You can use this to apply postprocess effects using any APIs that can modify an image texture. However, because RealityKit calls this method every frame, prioritize using APIs that execute on the GPU, such as Metal compute functions, [`Metal Performance Shaders`](https://developer.apple.com/documentation/metalperformanceshaders), or [`Core Image`](https://developer.apple.com/documentation/coreimage). You can also render additional content on top of the frame buffer, such as a SpriteKit scene.
 
 > **Note**: For more information on implementing postprocess effects, see [`Implementing special rendering effects with RealityKit postprocessing`](implementing-special-rendering-effects-with-realitykit-postprocessing.md), which demonstrates multiple postprocess techniques.
 
@@ -54,7 +54,7 @@ To stop postprocessing, you can set the [`customPostProcessing`](realityviewrend
 content.renderingEffects.customPostProcessing = .none
 ```
 
-If your app turns postprocessing on and off frequently, another option for disabling postprocess effects is to keep your callbacks registered, but use an [`MTLBlitCommandEncoder`](https://developer.apple.com/documentation/Metal/MTLBlitCommandEncoder) to encode the unmodified frame buffer directly to the output texture whenever postprocess effects aren’t active.
+If your app turns postprocessing on and off frequently, another option for disabling postprocess effects is to keep your callbacks registered, but use an [`MTLBlitCommandEncoder`](https://developer.apple.com/documentation/metal/mtlblitcommandencoder) to encode the unmodified frame buffer directly to the output texture whenever postprocess effects aren’t active.
 
 ```swift
 var isEnabled: Binding<Bool>

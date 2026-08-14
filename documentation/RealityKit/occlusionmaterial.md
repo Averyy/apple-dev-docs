@@ -35,7 +35,7 @@ For example, on the left is a case of two cubes, the larger red cube is slightly
 
 | No material | Occlusion material |
 | --- | --- |
-| ![A screenshot of two cubes in a living room scene. One cube is red and is slightly further from the camera, the other cube has a magenta striped material, is slightly closer to the camera, and is smaller than the red cube.](https://docs-assets.developer.apple.com/published/4c31cbb7ff4c44e34d587750a711c63d/occlusionmaterial-not-applied.jpg) | ![A screenshot of a partial red shape in a living room scene. The shape is of a cube with a cut-out in the shape of another cube slightly towards the upper right corner of the cube.](https://docs-assets.developer.apple.com/published/4829d1d102fa2b00dbce41407e1ea834/occlusionmaterial-applied.jpg) |
+| ![A screenshot of two cubes in a living room scene. One cube is red and is slightly further from the camera, the other cube has a magenta striped material, is slightly closer to the camera, and is smaller than the red cube.](/images/com.apple.RealityKit/occlusionmaterial-not-applied.jpg) | ![A screenshot of a partial red shape in a living room scene. The shape is of a cube with a cut-out in the shape of another cube slightly towards the upper right corner of the cube.](/images/com.apple.RealityKit/occlusionmaterial-applied.jpg) |
 
 ## Topics
 
@@ -60,12 +60,12 @@ For example, on the left is a case of two cubes, the larger red cube is slightly
 
 ### Conforms To
 - [Material](material.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 
-- [Obscuring virtual items in a scene behind real-world items](../visionOS/obscuring-virtual-items-in-a-scene-behind-real-world-items.md)
+- [Obscuring virtual items in a scene behind real-world items](../visionos/obscuring-virtual-items-in-a-scene-behind-real-world-items.md)
   Increase the realism of an immersive experience by adding entities with invisible materials  real-world objects.
 - [OcclusionMaterial.FaceCulling](occlusionmaterial/faceculling-swift.typealias.md)
   An alias for the cull mode object that’s appropriate for this material class.

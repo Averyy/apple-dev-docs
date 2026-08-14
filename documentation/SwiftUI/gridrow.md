@@ -47,7 +47,7 @@ Grid {
 
 The grid in the example above has an explicit first row and three generated rows. Similarly, each row has an explicit first cell and three generated cells:
 
-![A screenshot of a grid that contains four rows and four columns. Scanning](https://docs-assets.developer.apple.com/published/9d2913db5bc253f0fe4f9e2a8ef499e1/GridRow-1-iOS%402x.png)
+![A screenshot of a grid that contains four rows and four columns. Scanning](/images/com.apple.SwiftUI/GridRow-1-iOS@2x.png)
 
 To create an empty cell, use something invisible, like the [`clear`](shapestyle/clear.md) color that appears in the first column of the first row in the example above. However, if you use a flexible view like a [`Color`](color.md) or a [`Spacer`](spacer.md), you might also need to add the [`gridCellUnsizedAxes(_:)`](view/gridcellunsizedaxes(_:).md) modifier to prevent the view from taking up more space than the other cells in the row or column need.
 
@@ -66,8 +66,8 @@ If you apply a view modifier to a row, the row applies the modifier to all of th
 ## Relationships
 
 ### Conforms To
-- [Copyable](../Swift/Copyable.md)
-- [Escapable](../Swift/Escapable.md)
+- [Copyable](../swift/copyable.md)
+- [Escapable](../swift/escapable.md)
 - [View](view.md)
 
 ## See Also

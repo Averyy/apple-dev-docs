@@ -23,7 +23,7 @@ func updateDescendants(of context: CLSContext) async throws
 
 > ❗ **Important**:  You can call this method from synchronous code using a completion handler, as shown on this page, or you can call it as an asynchronous method that has the following declaration: ```swift
 func updateDescendants(of context: CLSContext) async throws
-``` For information about concurrency and asynchronous code in Swift, see [`Calling Objective-C APIs Asynchronously`](https://developer.apple.com/documentation/Swift/calling-objective-c-apis-asynchronously).
+``` For information about concurrency and asynchronous code in Swift, see [`Calling Objective-C APIs Asynchronously`](https://developer.apple.com/documentation/swift/calling-objective-c-apis-asynchronously).
 
 When a teacher browses your app’s hierarchy of assignable content in Schoolwork, the Schoolwork app uses the [`updateDescendants(of:completion:)`](clscontextprovider/updatedescendants(of:completion:).md) method for each context that it shows. For example, when the teacher taps on a book reader app to reveal a list of available books, Schoolwork initiates an update call for each book. In response, the method updates or creates the chapters associated with the given book.
 

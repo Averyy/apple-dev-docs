@@ -56,13 +56,13 @@ let data: Audio.Scattering = [500: 0.3, 1000: 0.4, 4000: 0.5]
 ## Relationships
 
 ### Conforms To
-- [Copyable](../Swift/Copyable.md)
-- [Equatable](../Swift/Equatable.md)
-- [Escapable](../Swift/Escapable.md)
-- [ExpressibleByDictionaryLiteral](../Swift/ExpressibleByDictionaryLiteral.md)
-- [Hashable](../Swift/Hashable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Copyable](../swift/copyable.md)
+- [Equatable](../swift/equatable.md)
+- [Escapable](../swift/escapable.md)
+- [ExpressibleByDictionaryLiteral](../swift/expressiblebydictionaryliteral.md)
+- [Hashable](../swift/hashable.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

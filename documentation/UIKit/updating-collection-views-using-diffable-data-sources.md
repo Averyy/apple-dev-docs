@@ -20,7 +20,7 @@ To avoid the complexity of that process, the sample app uses a [`UICollectionVie
 
 > **Note**: This sample uses collection views to display data, but the concepts covered in this sample apply to table views as well. For more information about using a diffable data source with a table view, see [`UITableViewDiffableDataSource`](uitableviewdiffabledatasource-2euir.md).
 
-To use a value as an identifier, its data type must conform to the [`Hashable`](https://developer.apple.com/documentation/Swift/Hashable) protocol. Hashing allows data collections such as [`Set`](https://developer.apple.com/documentation/Swift/Set), [`Dictionary`](https://developer.apple.com/documentation/Swift/Dictionary), and snapshots — instances of [`NSDiffableDataSourceSnapshot`](nsdiffabledatasourcesnapshot-swift.struct.md) and [`NSDiffableDataSourceSectionSnapshot`](nsdiffabledatasourcesectionsnapshot-swift.struct.md) — to use values as keys, providing quick and efficient lookups. Hashable types also conform to the [`Equatable`](https://developer.apple.com/documentation/Swift/Equatable) protocol, so your identifiers must properly implement equality. For more information, see [`Equatable`](https://developer.apple.com/documentation/Swift/Equatable)`.`
+To use a value as an identifier, its data type must conform to the [`Hashable`](https://developer.apple.com/documentation/swift/hashable) protocol. Hashing allows data collections such as [`Set`](https://developer.apple.com/documentation/swift/set), [`Dictionary`](https://developer.apple.com/documentation/swift/dictionary), and snapshots — instances of [`NSDiffableDataSourceSnapshot`](nsdiffabledatasourcesnapshot-swift.struct.md) and [`NSDiffableDataSourceSectionSnapshot`](nsdiffabledatasourcesectionsnapshot-swift.struct.md) — to use values as keys, providing quick and efficient lookups. Hashable types also conform to the [`Equatable`](https://developer.apple.com/documentation/swift/equatable) protocol, so your identifiers must properly implement equality. For more information, see [`Equatable`](https://developer.apple.com/documentation/swift/equatable)`.`
 
 Because identifiers are hashable and equatable, a diffable data source can determine the differences between its current snapshot and another snapshot. Then it can insert, delete, and move sections and items within a collection view for you based on those differences, eliminating the need for custom code that performs batch updates.
 
@@ -36,7 +36,7 @@ private var recipeListDataSource: UICollectionViewDiffableDataSource<RecipeListS
 
 `RecipeListViewController` declares `recipeListDataSource` with `RecipeListSection` as the section identifier type, and `Recipe.ID` as the item identifier type. These identifier types tell the data source the type of values it contains.
 
-For the section identifier type, `recipeListDataSource` uses `RecipeListSection`, an enumeration with a raw value of type [`Int`](https://developer.apple.com/documentation/Swift/Int) (in Swift, `Int` is hashable). Each enumeration case identifies a section of the collection view. In the sample, there’s only one section, `main`, which displays a list of recipes.
+For the section identifier type, `recipeListDataSource` uses `RecipeListSection`, an enumeration with a raw value of type [`Int`](https://developer.apple.com/documentation/swift/int) (in Swift, `Int` is hashable). Each enumeration case identifies a section of the collection view. In the sample, there’s only one section, `main`, which displays a list of recipes.
 
 ```swift
 private enum RecipeListSection: Int {
@@ -62,7 +62,7 @@ struct Recipe: Identifiable, Codable {
 }
 ```
 
-This structure conforms to the [`Identifiable`](https://developer.apple.com/documentation/Swift/Identifiable) protocol, which requires the structure to include an [`id`](https://developer.apple.com/documentation/Swift/Identifiable/id-8t2ws) property. By conforming to `Identifiable`, the `Recipe` structure automatically exposes the associated type [`ID`](https://developer.apple.com/documentation/Swift/Identifiable/ID-swift.associatedtype), which is a type determined based on the declaration of the `id` property in the structure. And because this type must be hashable, the sample app can use `Recipe.ID` as the item identifier type.
+This structure conforms to the [`Identifiable`](https://developer.apple.com/documentation/swift/identifiable) protocol, which requires the structure to include an [`id`](https://developer.apple.com/documentation/swift/identifiable/id-8t2ws) property. By conforming to `Identifiable`, the `Recipe` structure automatically exposes the associated type [`ID`](https://developer.apple.com/documentation/swift/identifiable/id-swift.associatedtype), which is a type determined based on the declaration of the `id` property in the structure. And because this type must be hashable, the sample app can use `Recipe.ID` as the item identifier type.
 
 > **Note**: The `Recipe` structure doesn’t conform to the `Hashable` protocol. The structure doesn’t have to be hashable because the items stored in the diffable data source and the snapshots are recipe *identifiers* (`Recipe.ID` values the backing data store provides for each recipe), not complete recipe structures.
 
@@ -148,7 +148,7 @@ To handle changes to a data collection, the app creates a new snapshot that repr
 
 While a diffable data source can determine the changes between its current snapshot and a new one, it doesn’t monitor the data collection for changes. Instead, it’s the responsibility of the app to detect data changes and tell the diffable data source about those changes, by applying a new snapshot.
 
-> **Note**: An app can use different mechanisms, such as [`NotificationCenter`](https://developer.apple.com/documentation/Foundation/NotificationCenter) and [`Combine`](https://developer.apple.com/documentation/Combine), to report data changes to other parts of the app. This sample uses `NotificationCenter`.
+> **Note**: An app can use different mechanisms, such as [`NotificationCenter`](https://developer.apple.com/documentation/foundation/notificationcenter) and [`Combine`](https://developer.apple.com/documentation/combine), to report data changes to other parts of the app. This sample uses `NotificationCenter`.
 
 To inform other parts of the app that the list of recipes changed — for instance, after someone adds or removes a recipe — the sample uses a notification center to send a `selectedRecipesDidChange` notification. To receive the notification, `RecipeListViewController` adds a notification observer with `selectedRecipesDidChange(_:)` as its selector.
 
@@ -235,7 +235,7 @@ The diffable data source compares the updated snapshot to its current snapshot a
 
 ##### Populate Snapshots with Lightweight Data Structures
 
-An alternative approach to storing identifiers involves populating diffable data sources and snapshots with lightweight data structures. While the data structure approach is convenient and can be a good fit in some circumstances — like for quick prototyping, or displaying a collection of static items with properties that don’t change — it carries significant limitations and tradeoffs. For instance, the [`Hashable`](https://developer.apple.com/documentation/Swift/Hashable) and [`Equatable`](https://developer.apple.com/documentation/Swift/Equatable) implementations must incorporate all properties of the structure that can change. Any changes to the data in the structure cause it to no longer be equal to the previous version, which the diffable data source uses to determine what changed when applying a new snapshot.
+An alternative approach to storing identifiers involves populating diffable data sources and snapshots with lightweight data structures. While the data structure approach is convenient and can be a good fit in some circumstances — like for quick prototyping, or displaying a collection of static items with properties that don’t change — it carries significant limitations and tradeoffs. For instance, the [`Hashable`](https://developer.apple.com/documentation/swift/hashable) and [`Equatable`](https://developer.apple.com/documentation/swift/equatable) implementations must incorporate all properties of the structure that can change. Any changes to the data in the structure cause it to no longer be equal to the previous version, which the diffable data source uses to determine what changed when applying a new snapshot.
 
 The sample uses this approach to show items in a sidebar. In `SidebarViewController`, the custom structure `SidebarItem` defines the properties of a sidebar item, which are `title` and `type`.
 

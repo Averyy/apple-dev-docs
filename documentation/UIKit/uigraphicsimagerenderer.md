@@ -30,7 +30,7 @@ To render an image:
 
 1. Optionally, create a [`UIGraphicsImageRendererFormat`](uigraphicsimagerendererformat.md) object to specify nondefault parameters the renderer should use to create its context.
 2. Instantiate a [`UIGraphicsImageRenderer`](uigraphicsimagerenderer.md) object, providing the dimensions of the output image and a format object. The renderer uses default values for the current device if you don’t provide format object, as demonstrated in [`Creating a graphics image renderer`](uigraphicsimagerenderer#Creating-a-graphics-image-renderer.md).
-3. Choose one of the rendering methods depending on the output you desire: [`image(actions:)`](uigraphicsimagerenderer/image(actions:).md) returns a [`UIImage`](uiimage.md) object; [`jpegData(withCompressionQuality:actions:)`](uigraphicsimagerenderer/jpegdata(withcompressionquality:actions:).md) returns a JPEG-encoded [`Data`](https://developer.apple.com/documentation/Foundation/Data) object; and [`pngData(actions:)`](uigraphicsimagerenderer/pngdata(actions:).md) returns a PNG-encoded [`Data`](https://developer.apple.com/documentation/Foundation/Data) object.
+3. Choose one of the rendering methods depending on the output you desire: [`image(actions:)`](uigraphicsimagerenderer/image(actions:).md) returns a [`UIImage`](uiimage.md) object; [`jpegData(withCompressionQuality:actions:)`](uigraphicsimagerenderer/jpegdata(withcompressionquality:actions:).md) returns a JPEG-encoded [`Data`](https://developer.apple.com/documentation/foundation/data) object; and [`pngData(actions:)`](uigraphicsimagerenderer/pngdata(actions:).md) returns a PNG-encoded [`Data`](https://developer.apple.com/documentation/foundation/data) object.
 4. Execute your chosen method, providing Core Graphics drawing instructions as the closure argument, as shown in [`Creating an image with an image renderer`](uigraphicsimagerenderer#Creating-an-image-with-an-image-renderer.md). [`Using blend mode`](uigraphicsimagerenderer#Using-blend-mode.md) demonstrates some of the more advanced rendering features you can use in your drawing instructions.
 5. Optionally, you can use Core Graphics drawing code within the drawing instructions you provide to the rendering method, as shown in [`Using Core Graphics rendering functions`](uigraphicsimagerenderer#Using-Core-Graphics-rendering-functions.md).
 
@@ -86,13 +86,13 @@ The drawing actions closure takes a single argument of type [`UIGraphicsImageRen
 
 The above code creates the following image:
 
-![Image showing a blue square in the top left of a larger white squares](https://docs-assets.developer.apple.com/published/120452bcd4ba5d1e1217df3088cb4c20/media-2874999%402x.png)
+![Image showing a blue square in the top left of a larger white squares](/images/com.apple.uikit/media-2874999@2x.png)
 
-In addition to the [`image(actions:)`](uigraphicsimagerenderer/image(actions:).md) method that creates an [`UIImage`](uiimage.md) object, [`UIGraphicsImageRenderer`](uigraphicsimagerenderer.md) also has [`jpegData(withCompressionQuality:actions:)`](uigraphicsimagerenderer/jpegdata(withcompressionquality:actions:).md) and [`pngData(actions:)`](uigraphicsimagerenderer/pngdata(actions:).md) methods that create [`Data`](https://developer.apple.com/documentation/Foundation/Data) objects containing the image encoded as a JPEG or a PNG respectively. All three methods take the same approach as detailed here, accepting a block that represents the drawing actions.
+In addition to the [`image(actions:)`](uigraphicsimagerenderer/image(actions:).md) method that creates an [`UIImage`](uiimage.md) object, [`UIGraphicsImageRenderer`](uigraphicsimagerenderer.md) also has [`jpegData(withCompressionQuality:actions:)`](uigraphicsimagerenderer/jpegdata(withcompressionquality:actions:).md) and [`pngData(actions:)`](uigraphicsimagerenderer/pngdata(actions:).md) methods that create [`Data`](https://developer.apple.com/documentation/foundation/data) objects containing the image encoded as a JPEG or a PNG respectively. All three methods take the same approach as detailed here, accepting a block that represents the drawing actions.
 
 ##### Using Blend Mode
 
-The utility methods on [`UIGraphicsImageRendererContext`](uigraphicsimagerenderercontext.md) also offer a variant that accepts a [`CGBlendMode`](https://developer.apple.com/documentation/CoreGraphics/CGBlendMode) value. This value determines how to combine the pixel values when painting.
+The utility methods on [`UIGraphicsImageRendererContext`](uigraphicsimagerenderercontext.md) also offer a variant that accepts a [`CGBlendMode`](https://developer.apple.com/documentation/coregraphics/cgblendmode) value. This value determines how to combine the pixel values when painting.
 
 **Swift**:
 
@@ -122,7 +122,7 @@ let image = renderer.image { (context) in
 
 This code draws a second square, using a blend mode of multiply. The following image shows the result.
 
-![Image showing two overlapping squares, one blue, the other turquoise, in the top-left and bottom-right of a white background square respectively.](https://docs-assets.developer.apple.com/published/80b9801ced2dfb67ba11c15a666db490/media-2875000%402x.png)
+![Image showing two overlapping squares, one blue, the other turquoise, in the top-left and bottom-right of a white background square respectively.](/images/com.apple.uikit/media-2875000@2x.png)
 
 ##### Using Core Graphics Rendering Functions
 
@@ -160,9 +160,9 @@ let image = renderer.image { (context) in
   }];
 ```
 
-This code uses the [`fillEllipse(in:)`](https://developer.apple.com/documentation/CoreGraphics/CGContext/fillEllipse(in:)) method on [`CGContext`](https://developer.apple.com/documentation/CoreGraphics/CGContext) to draw a green circle on the blue and turquoise squares image; the following image shows the result.
+This code uses the [`fillEllipse(in:)`](https://developer.apple.com/documentation/coregraphics/cgcontext/fillellipse(in:)) method on [`CGContext`](https://developer.apple.com/documentation/coregraphics/cgcontext) to draw a green circle on the blue and turquoise squares image; the following image shows the result.
 
-![An image showing two overlapping squares and an overlaid green circle.](https://docs-assets.developer.apple.com/published/4493395a1867556cb03a84fee2c59ed7/media-2875001%402x.png)
+![An image showing two overlapping squares and an overlaid green circle.](/images/com.apple.uikit/media-2875001@2x.png)
 
 ## Topics
 
@@ -188,14 +188,14 @@ This code uses the [`fillEllipse(in:)`](https://developer.apple.com/documentatio
 ### Inherits From
 - [UIGraphicsRenderer](uigraphicsrenderer.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

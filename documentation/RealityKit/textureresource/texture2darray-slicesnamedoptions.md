@@ -22,7 +22,7 @@ Asynchronously creates a 2D texture array by generating it from images.
 
 #### Discussion
 
-RealityKit creates a [`MTLTextureType.type2DArray`](https://developer.apple.com/documentation/Metal/MTLTextureType/type2DArray) texture with `arrayLength == slices.count` from an array of images.
+RealityKit creates a [`MTLTextureType.type2DArray`](https://developer.apple.com/documentation/metal/mtltexturetype/type2darray) texture with `arrayLength == slices.count` from an array of images.
 
 You can assign the resulting texture to a material you create in Reality Composer Pro that requires a 2D texture array.
 

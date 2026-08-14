@@ -16,7 +16,7 @@ Keychain services offers ways to manage the accessibility of individual keychain
 
 You control an app’s access to a keychain item relative to the state of a device by setting the item’s [`kSecAttrAccessible`](ksecattraccessible.md) attribute when you create the item. See [`Adding a password to the keychain`](adding-a-password-to-the-keychain.md) for a general discussion of how to create an item.
 
-![Block diagram showing the components of a keychain item, including both data and attributes, highlighting the accessibility attribute.](https://docs-assets.developer.apple.com/published/ffddf79981900966f5ee1b3a1d14ac7a/media-2982468%402x.png)
+![Block diagram showing the components of a keychain item, including both data and attributes, highlighting the accessibility attribute.](/images/com.apple.security/media-2982468@2x.png)
 
 Choose a value for the accessibility attribute from the list under the [`Accessibility Values`](item-attribute-keys-and-values#Accessibility-Values.md) topic. For example, a query dictionary used to create an item that replicates the default accessibility would be:
 
@@ -45,7 +45,7 @@ Allowing access only when the device is unlocked (the default) may not be secure
 
 Impose this restriction by supplying a [`SecAccessControl`](secaccesscontrol.md) instance as the value for the [`kSecAttrAccessControl`](ksecattraccesscontrol.md) attribute when creating a keychain item.
 
-![Block diagram showing the components of a keychain item, including both data and attributes, highlighting the access control attribute.](https://docs-assets.developer.apple.com/published/7e98822fda7bde25199a024325709226/media-2982464%402x.png)
+![Block diagram showing the components of a keychain item, including both data and attributes, highlighting the access control attribute.](/images/com.apple.security/media-2982464@2x.png)
 
 Create the access control instance with a call to the [`SecAccessControlCreateWithFlags(_:_:_:_:)`](secaccesscontrolcreatewithflags(_:_:_:_:).md) method:
 

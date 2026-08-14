@@ -22,7 +22,7 @@ let kCTLanguageAttributeName: CFString
 
 #### Discussion
 
-The value of this attribute must be a [`CFString`](https://developer.apple.com/documentation/CoreFoundation/CFString) containing a language identifier conforming to [`UTS #35`](https://developer.apple.comhttp://unicode.org/reports/tr35/). The default is unset. When this attribute is set to a valid identifier, it will be used to select localized glyphs (if supported by the font), and locale-specific line-breaking rules.
+The value of this attribute must be a [`CFString`](https://developer.apple.com/documentation/corefoundation/cfstring) containing a language identifier conforming to [`UTS #35`](https://developer.apple.comhttp://unicode.org/reports/tr35/). The default is unset. When this attribute is set to a valid identifier, it will be used to select localized glyphs (if supported by the font), and locale-specific line-breaking rules.
 
 ## See Also
 

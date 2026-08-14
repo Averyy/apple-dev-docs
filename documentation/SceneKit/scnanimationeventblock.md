@@ -26,7 +26,7 @@ The block takes the following parameters:
 
 - **animation**: The animation triggering the animation event.
 - **animatedObject**: The Scene Kit object affected by the animation.
-- **playingBackward**: [`true`](https://developer.apple.com/documentation/Swift/true) if the animation is playing in reverse; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
+- **playingBackward**: [`true`](https://developer.apple.com/documentation/swift/true) if the animation is playing in reverse; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
 
 
 ---

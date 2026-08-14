@@ -26,7 +26,7 @@ This transformation is reversible.
 
 For example, the string “ạlʿarabīẗ‎” transliterates to “العَرَبِية”.
 
-This is equivalent to [`kCFStringTransformLatinArabic`](https://developer.apple.com/documentation/CoreFoundation/kCFStringTransformLatinArabic).
+This is equivalent to [`kCFStringTransformLatinArabic`](https://developer.apple.com/documentation/corefoundation/kcfstringtransformlatinarabic).
 
 ## See Also
 

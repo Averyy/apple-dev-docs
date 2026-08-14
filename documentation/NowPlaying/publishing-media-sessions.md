@@ -8,11 +8,11 @@ Show your app’s media on the Lock Screen and Control Center.
 
 A local session publishes media that’s playing on the current device. When you create one, the system shows your content’s metadata and playback controls across the Lock Screen, Control Center, and connected accessories, including CarPlay and AirPlay-capable devices.
 
-To publish a local session, create a type that conforms to [`MediaSessionRepresentable`](mediasessionrepresentable.md), then register it with the system using [`MediaSession`](mediasession.md). The framework observes your model with [`Observable`](https://developer.apple.com/documentation/Observation/Observable) and syncs updates to the system automatically.
+To publish a local session, create a type that conforms to [`MediaSessionRepresentable`](mediasessionrepresentable.md), then register it with the system using [`MediaSession`](mediasession.md). The framework observes your model with [`Observable`](https://developer.apple.com/documentation/observation/observable) and syncs updates to the system automatically.
 
 #### Create a Session Representable
 
-To publish your media to the system, conform to [`MediaSessionRepresentable`](mediasessionrepresentable.md) and mark your type with the [`Observable`](https://developer.apple.com/documentation/Observation/Observable) macro. The framework reads four properties from your type: [`id`](mediasessionrepresentable/id.md) to uniquely identify the session, [`content`](mediasessionrepresentable/content.md) to describe what’s playing, [`playbackSnapshot`](mediasessionrepresentable/playbacksnapshot.md) to capture playback state, and [`commands`](mediasessionrepresentable/commands.md) to declare the controls your app supports.
+To publish your media to the system, conform to [`MediaSessionRepresentable`](mediasessionrepresentable.md) and mark your type with the [`Observable`](https://developer.apple.com/documentation/observation/observable) macro. The framework reads four properties from your type: [`id`](mediasessionrepresentable/id.md) to uniquely identify the session, [`content`](mediasessionrepresentable/content.md) to describe what’s playing, [`playbackSnapshot`](mediasessionrepresentable/playbacksnapshot.md) to capture playback state, and [`commands`](mediasessionrepresentable/commands.md) to declare the controls your app supports.
 
 ```swift
 import NowPlaying

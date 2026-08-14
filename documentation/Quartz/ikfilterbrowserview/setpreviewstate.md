@@ -20,7 +20,7 @@ Use this method to show and hide the preview programmatically.
 
 ## Parameters
 
-- `inState`: A state ([`true`](https://developer.apple.com/documentation/Swift/true) or [`false`](https://developer.apple.com/documentation/Swift/false)) that represents whether a preview is visible.
+- `inState`: A state ([`true`](https://developer.apple.com/documentation/swift/true) or [`false`](https://developer.apple.com/documentation/swift/false)) that represents whether a preview is visible.
 
 
 ---

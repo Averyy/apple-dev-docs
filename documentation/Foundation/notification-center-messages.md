@@ -6,7 +6,7 @@ Use Foundation’s notification center with Swift concurrency.
 
 #### Overview
 
-In Swift, the [`Notification`](notification.md) type is `nonisolated`, even in cases where it’s posted on a known isolation. To provide specific isolation information and better support Swift concurrency, `NotificationCenter` defines two message types. A [`NotificationCenter.MainActorMessage`](notificationcenter/mainactormessage.md) binds to the main actor, whereas a [`NotificationCenter.AsyncMessage`](notificationcenter/asyncmessage.md) uses an arbitrary isolation. Frameworks extend these types to define distinct messages, typically corresponding to an existing [`Notification.Name`](notification/name-swift.typealias.md), that declare instance properties for their values instead of using a `userInfo` dictionary. As a result, messages can conform to [`Sendable`](https://developer.apple.com/documentation/Swift/Sendable) when they either don’t use properties or contain only sendable properties.
+In Swift, the [`Notification`](notification.md) type is `nonisolated`, even in cases where it’s posted on a known isolation. To provide specific isolation information and better support Swift concurrency, `NotificationCenter` defines two message types. A [`NotificationCenter.MainActorMessage`](notificationcenter/mainactormessage.md) binds to the main actor, whereas a [`NotificationCenter.AsyncMessage`](notificationcenter/asyncmessage.md) uses an arbitrary isolation. Frameworks extend these types to define distinct messages, typically corresponding to an existing [`Notification.Name`](notification/name-swift.typealias.md), that declare instance properties for their values instead of using a `userInfo` dictionary. As a result, messages can conform to [`Sendable`](https://developer.apple.com/documentation/swift/sendable) when they either don’t use properties or contain only sendable properties.
 
 If your project only needs to support Swift, you can just use the `Message` types. For projects with both Objective-C and Swift code, define a [`Notification`](notification.md) as well as a corresponding `Message` type.
 
@@ -14,7 +14,7 @@ If your project only needs to support Swift, you can just use the `Message` type
 
 You can post a message with the `post(_:subject:)` method, passing a message instance and optionally providing a subject. To receive messages, add an observer with the `addObserver(of:for:using:)` method. The overloads of this method allow you to observe either messages from a single object or from any object of a given type. Observation ends when you discard the token returned from `addObserver(of:for:using:)` or after an explicit call to [`removeObserver(_:)`](notificationcenter/removeobserver(_:)-2gmm0.md).
 
-You can also receive messages as an [`AsyncSequence`](https://developer.apple.com/documentation/Swift/AsyncSequence) with the `messages(of:for:bufferSize:)` methods.
+You can also receive messages as an [`AsyncSequence`](https://developer.apple.com/documentation/swift/asyncsequence) with the `messages(of:for:bufferSize:)` methods.
 
 Several flavors of `addObserver(of:for:using:)` and `messages(of:for:bufferSize:)` take a [`NotificationCenter.MessageIdentifier`](notificationcenter/messageidentifier.md), which frameworks may implement to provide a typed, ergonomic experience at the call point for convenience, as described in [`SE-0299`](https://developer.apple.comhttps://github.com/swiftlang/swift-evolution/blob/main/proposals/0299-extend-generic-static-member-lookup.md).
 

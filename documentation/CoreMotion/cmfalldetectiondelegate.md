@@ -26,7 +26,7 @@ protocol CMFallDetectionDelegate : NSObjectProtocol
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 
@@ -34,7 +34,7 @@ protocol CMFallDetectionDelegate : NSObjectProtocol
   An object for managing fall detection events.
 - [class CMFallDetectionEvent](cmfalldetectionevent.md)
   An object that contains data about a fall detection event.
-- [NSFallDetectionUsageDescription](../BundleResources/Information-Property-List/NSFallDetectionUsageDescription.md)
+- [NSFallDetectionUsageDescription](../bundleresources/information-property-list/nsfalldetectionusagedescription.md)
   A message to the user that explains the app’s request for permission to access fall detection event data.
 
 

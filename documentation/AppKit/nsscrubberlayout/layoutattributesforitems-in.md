@@ -16,7 +16,7 @@ func layoutAttributesForItems(in rect: NSRect) -> Set<NSScrubberLayoutAttributes
 
 #### Discussion
 
-The base implementation returns an empty [`NSSet`](https://developer.apple.com/documentation/Foundation/NSSet).
+The base implementation returns an empty [`NSSet`](https://developer.apple.com/documentation/foundation/nsset).
 
 ## See Also
 

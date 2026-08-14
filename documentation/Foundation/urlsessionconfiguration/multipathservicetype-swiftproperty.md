@@ -35,7 +35,7 @@ Multipath TCP requires server support. Resources for Linux-based systems are ava
   Use the available radios in iOS devices to improve your app’s network reliability and performance.
 - [URLSessionConfiguration.MultipathServiceType](urlsessionconfiguration/multipathservicetype-swift.enum.md)
   Constants that specify the type of service that Multipath TCP uses.
-- [Multipath Entitlement](../BundleResources/Entitlements/com.apple.developer.networking.multipath.md)
+- [Multipath Entitlement](../bundleresources/entitlements/com.apple.developer.networking.multipath.md)
   A Boolean value indicating whether your app may use Multipath protocols to seamlessly transition between Wi-Fi and cellular networks.
 
 

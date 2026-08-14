@@ -60,11 +60,11 @@ The possible values for `Mag Filter` and `Min Filter` are:
 
 The `Mip Filter` parameter has the same possible values, with the addition of the option to allow for the value of `None`, which specifies that it doesn’t use mipmapping. Below is an example of a node graph that uses the `Cube Image Node` to take a `.ktx` file and create a cube image texture:
 
-![None](https://docs-assets.developer.apple.com/published/73251fda502d95e648e767e15c053d18/CubeImageGraph.png)
+![None](/images/ShaderGraph-Docs/CubeImageGraph.png)
 
 Below, the resulting texture applies to a cube:
 
-![None](https://docs-assets.developer.apple.com/published/809047cef616912077b426791ba2fc1e/CubeImageMaterial.png)
+![None](/images/ShaderGraph-Docs/CubeImageMaterial.png)
 
 This example functions for all of the Cube Image nodes. The only difference is the various inputs used to modify how the cube image renders.
 

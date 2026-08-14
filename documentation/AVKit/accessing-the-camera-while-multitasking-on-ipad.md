@@ -17,7 +17,7 @@ Multitasking modes enable people to work with multiple apps at the same time. Th
 - Picture in Picture mode displays a draggable window over an app.
 - Stage Manager lets users resize windows and see multiple overlapping windows in a single view, group apps for specific tasks or projects, and drag windows between iPad and an externally connected display.
 
-When you enable multitasking camera access, your app can run alongside other foreground apps and it no longer receives [`AVCaptureSession.InterruptionReason.videoDeviceNotAvailableWithMultipleForegroundApps`](https://developer.apple.com/documentation/AVFoundation/AVCaptureSession/InterruptionReason/videoDeviceNotAvailableWithMultipleForegroundApps) as an interruption reason.
+When you enable multitasking camera access, your app can run alongside other foreground apps and it no longer receives [`AVCaptureSession.InterruptionReason.videoDeviceNotAvailableWithMultipleForegroundApps`](https://developer.apple.com/documentation/avfoundation/avcapturesession/interruptionreason/videodevicenotavailablewithmultipleforegroundapps) as an interruption reason.
 
 When operating the camera capture system, using the multitasking feature introduces the possibility of performance degradation because of other apps consuming resources like memory, CPU, and GPU. Increased device temperature and power usage can lead to frame drops or poor capture quality.
 
@@ -27,7 +27,7 @@ For information about Split View and Slide Over modes, see [`Use multitasking on
 
 ##### Enable Camera Access While Multitasking
 
-Set up a capture session to enable your app to capture photos or videos. See [`Setting up a capture session`](https://developer.apple.com/documentation/AVFoundation/setting-up-a-capture-session) for more information. You can configure a capture session to allow use of the camera while multitasking if the current environment supports it. To determine if a capture session supports this feature, query its [`isMultitaskingCameraAccessSupported`](https://developer.apple.com/documentation/AVFoundation/AVCaptureSession/isMultitaskingCameraAccessSupported). If this value is `true`, you can enable multitasking camera access by setting [`isMultitaskingCameraAccessEnabled`](https://developer.apple.com/documentation/AVFoundation/AVCaptureSession/isMultitaskingCameraAccessEnabled) to `true`, as the example below shows:
+Set up a capture session to enable your app to capture photos or videos. See [`Setting up a capture session`](https://developer.apple.com/documentation/avfoundation/setting-up-a-capture-session) for more information. You can configure a capture session to allow use of the camera while multitasking if the current environment supports it. To determine if a capture session supports this feature, query its [`isMultitaskingCameraAccessSupported`](https://developer.apple.com/documentation/avfoundation/avcapturesession/ismultitaskingcameraaccesssupported). If this value is `true`, you can enable multitasking camera access by setting [`isMultitaskingCameraAccessEnabled`](https://developer.apple.com/documentation/avfoundation/avcapturesession/ismultitaskingcameraaccessenabled) to `true`, as the example below shows:
 
 ```swift
 let captureSession = AVCaptureSession()
@@ -47,9 +47,9 @@ captureSession.startRunning()
 
 Enabling your app to use the camera while multitasking extends to Picture in Picture mode for video calls using AVKit. See [`Adopting Picture in Picture for video calls`](adopting-picture-in-picture-for-video-calls.md) to learn more.
 
-While multitasking, after an app finishes recording a video with [`AVCaptureMovieFileOutput`](https://developer.apple.com/documentation/AVFoundation/AVCaptureMovieFileOutput) or [`AVAssetWriter`](https://developer.apple.com/documentation/AVFoundation/AVAssetWriter), the system displays an alert one time only to inform the user about the potential for lower-quality videos.
+While multitasking, after an app finishes recording a video with [`AVCaptureMovieFileOutput`](https://developer.apple.com/documentation/avfoundation/avcapturemoviefileoutput) or [`AVAssetWriter`](https://developer.apple.com/documentation/avfoundation/avassetwriter), the system displays an alert one time only to inform the user about the potential for lower-quality videos.
 
-> ❗ **Important**:  Apps that have a deployment target earlier than iOS 16 require the [`com.apple.developer.avfoundation.multitasking-camera-access`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.avfoundation.multitasking-camera-access) entitlement to enable accessing the camera while multitasking.
+> ❗ **Important**:  Apps that have a deployment target earlier than iOS 16 require the [`com.apple.developer.avfoundation.multitasking-camera-access`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.avfoundation.multitasking-camera-access) entitlement to enable accessing the camera while multitasking.
 
 ##### Configure Your App for Split View or Slide Over Mode
 
@@ -61,9 +61,9 @@ When you enable multitasking camera access, your app doesn’t need to run in fu
 
 ##### Respond to System Pressure
 
-Make your app resilient to increasing system pressure by monitoring the [`systemPressureState`](https://developer.apple.com/documentation/AVFoundation/AVCaptureDevice/systemPressureState-swift.property) property on [`AVCaptureDevice`](https://developer.apple.com/documentation/AVFoundation/AVCaptureDevice), and take action to reduce the impact. When the pressure reaches excessive levels, the capture system shuts down and emits an [`wasInterruptedNotification`](https://developer.apple.com/documentation/AVFoundation/AVCaptureSession/wasInterruptedNotification) notification.
+Make your app resilient to increasing system pressure by monitoring the [`systemPressureState`](https://developer.apple.com/documentation/avfoundation/avcapturedevice/systempressurestate-swift.property) property on [`AVCaptureDevice`](https://developer.apple.com/documentation/avfoundation/avcapturedevice), and take action to reduce the impact. When the pressure reaches excessive levels, the capture system shuts down and emits an [`wasInterruptedNotification`](https://developer.apple.com/documentation/avfoundation/avcapturesession/wasinterruptednotification) notification.
 
-Apps can reduce their footprint on the system by lowering the frame rate or requesting lower-resolution, binned, or non-HDR formats. The following code, from the sample app [`AVMultiCamPiP: Capturing from Multiple Cameras`](https://developer.apple.com/documentation/AVFoundation/avmulticampip-capturing-from-multiple-cameras), shows how to reduce the capture frame rate:
+Apps can reduce their footprint on the system by lowering the frame rate or requesting lower-resolution, binned, or non-HDR formats. The following code, from the sample app [`AVMultiCamPiP: Capturing from Multiple Cameras`](https://developer.apple.com/documentation/avfoundation/avmulticampip-capturing-from-multiple-cameras), shows how to reduce the capture frame rate:
 
 ```swift
 let systemPressureStateObservation = observe(\.self.device.systemPressureState, 
@@ -97,7 +97,7 @@ let systemPressureStateObservation = observe(\.self.device.systemPressureState,
 
 The system only allows one app to use the device’s camera at a time. Prepare your app to respond when another app starts using the camera. For example, if your app is running in Stage Manager and another app utilizes the camera, the system suspends your app’s use of the camera until the other app finishes. When the system interrupts your app’s use of the camera, it notifies your app so you can update your user interface.
 
-To enable the system to notify you when your app’s camera access changes, observe the notifications [`wasInterruptedNotification`](https://developer.apple.com/documentation/AVFoundation/AVCaptureSession/wasInterruptedNotification) and [`interruptionEndedNotification`](https://developer.apple.com/documentation/AVFoundation/AVCaptureSession/interruptionEndedNotification), as the example below shows:
+To enable the system to notify you when your app’s camera access changes, observe the notifications [`wasInterruptedNotification`](https://developer.apple.com/documentation/avfoundation/avcapturesession/wasinterruptednotification) and [`interruptionEndedNotification`](https://developer.apple.com/documentation/avfoundation/avcapturesession/interruptionendednotification), as the example below shows:
 
 ```swift
 func addObservers() {
@@ -117,7 +117,7 @@ func addObservers() {
 }
 ```
 
-The notification object’s user information dictionary contains the reason for an interruption. Determining the reason lets you configure your user interface as your camera access changes. Use [`AVCaptureSessionInterruptionReasonKey`](https://developer.apple.com/documentation/AVFoundation/AVCaptureSessionInterruptionReasonKey) to look up the value, as the example below shows:
+The notification object’s user information dictionary contains the reason for an interruption. Determining the reason lets you configure your user interface as your camera access changes. Use [`AVCaptureSessionInterruptionReasonKey`](https://developer.apple.com/documentation/avfoundation/avcapturesessioninterruptionreasonkey) to look up the value, as the example below shows:
 
 ```swift
 @objc func handleInterruptionStarted(notification: Notification) {

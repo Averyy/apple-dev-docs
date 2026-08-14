@@ -21,9 +21,9 @@ static func promotionalOffer(id identifier: String) -> Product.PurchaseOption
 
 #### Discussion
 
-Use this purchase option when you test your app in Xcode using [`StoreKit Test`](https://developer.apple.com/documentation/StoreKitTest) and call [`buyProduct(identifier:options:)`](https://developer.apple.com/documentation/StoreKitTest/SKTestSession/buyProduct(identifier:options:)). This method makes it possible to test promotional offers without supplying a signature.
+Use this purchase option when you test your app in Xcode using [`StoreKit Test`](https://developer.apple.com/documentation/storekittest) and call [`buyProduct(identifier:options:)`](https://developer.apple.com/documentation/storekittest/sktestsession/buyproduct(identifier:options:)). This method makes it possible to test promotional offers without supplying a signature.
 
-Set up the promotional offer identifiers that you use in this call in your StoreKit configuration file. For more information, see [`Setting up StoreKit Testing in Xcode`](https://developer.apple.com/documentation/Xcode/setting-up-storekit-testing-in-xcode).
+Set up the promotional offer identifiers that you use in this call in your StoreKit configuration file. For more information, see [`Setting up StoreKit Testing in Xcode`](https://developer.apple.com/documentation/xcode/setting-up-storekit-testing-in-xcode).
 
 When you apply this option, the purchase transaction simulates a customer redeeming a promotional offer, and includes the promotional offer you specify.
 

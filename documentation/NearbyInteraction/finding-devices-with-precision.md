@@ -19,7 +19,7 @@ This sample code project demonstrates how to use ARKit to find devices equipped 
 To use the Nearby Interaction framework in your app, it needs to implement the following three processes to use precision device finding:
 
 1. Check for availability of UWB and specific versions according to iOS releases if your app needs capabilities such as EDM.
-2. Start [`ARKit`](https://developer.apple.com/documentation/ARKit), begin ranging for peer devices, and respond to changes in their status — this is how your app discovers compatible nearby devices and responds to changes in their availability.
+2. Start [`ARKit`](https://developer.apple.com/documentation/arkit), begin ranging for peer devices, and respond to changes in their status — this is how your app discovers compatible nearby devices and responds to changes in their availability.
 3. Implement a distance quality estimator function, if your app needs to take advantage of the EDM capabilities of the second-generation UWB chip. This is a function that uses data the Nearby Interaction framework returns to make decisions about signal quality to estimate the distance and direction between devices. This sample code project includes one possible implementation of a distance quality estimator function and its use to guide the people using the appropriate UI.
 
 ##### Configure the Sample Code Project
@@ -64,7 +64,7 @@ if #available(iOS 17.0, watchOS 10.0, *) {
 
 ##### Start Arkit and Ranging for Peer Devices
 
-Before the app can start ranging for potential peer devices, it needs to setup ARKit and the [`Multipeer Connectivity`](https://developer.apple.com/documentation/MultipeerConnectivity) frameworks, as shown in this example:
+Before the app can start ranging for potential peer devices, it needs to setup ARKit and the [`Multipeer Connectivity`](https://developer.apple.com/documentation/multipeerconnectivity) frameworks, as shown in this example:
 
 ```swift
 func startup() {

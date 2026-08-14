@@ -19,7 +19,7 @@ case time
 
 #### Discussion
 
-![None](https://docs-assets.developer.apple.com/published/133748bc2357092889f7d8df9118c4d6/media-2934528%402x.png)
+![None](/images/com.apple.uikit/media-2934528@2x.png)
 
 ## See Also
 

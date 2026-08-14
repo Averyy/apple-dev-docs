@@ -21,7 +21,7 @@ A `Class` object representing the scripting class.
 
 #### Discussion
 
-You invoke this method on an instance of a scriptable application. Once you have the class object, you may allocate an instance of the class and appropriately the raw instance. Or you may use it in a call to [`isKind(of:)`](https://developer.apple.com/documentation/ObjectiveC/NSObjectProtocol/isKind(of:)) to determine the class type of an object.
+You invoke this method on an instance of a scriptable application. Once you have the class object, you may allocate an instance of the class and appropriately the raw instance. Or you may use it in a call to [`isKind(of:)`](https://developer.apple.com/documentation/objectivec/nsobjectprotocol/iskind(of:)) to determine the class type of an object.
 
 ## Parameters
 

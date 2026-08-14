@@ -22,7 +22,7 @@ func shareParticipants(forUserRecordIDs userRecordIDs: [CKRecord.ID]) async thro
 
 #### Return Value
 
-A dictionary of fetched share participants. The dictionary uses the user record IDs you specify in `userRecordIDs` as its keys. The value of each key is a [`Result`](https://developer.apple.com/documentation/Swift/Result) that contains either the corresponding fetched share participant, or an error that describes why CloudKit can’t fetch that share participant.
+A dictionary of fetched share participants. The dictionary uses the user record IDs you specify in `userRecordIDs` as its keys. The value of each key is a [`Result`](https://developer.apple.com/documentation/swift/result) that contains either the corresponding fetched share participant, or an error that describes why CloudKit can’t fetch that share participant.
 
 #### Discussion
 

@@ -20,7 +20,7 @@ var anchorPoint: CGPoint { get set }
 
 #### Discussion
 
-The anchor point is relative to the coordinate system for the behavior’s associated dynamic animator. For attachment types without an anchor point, the value in this property is [`CGPointZero`](https://developer.apple.com/documentation/CoreGraphics/CGPointZero). For more information about the coordinate system of the reference view, see [`UIDynamicAnimator`](uidynamicanimator.md).
+The anchor point is relative to the coordinate system for the behavior’s associated dynamic animator. For attachment types without an anchor point, the value in this property is [`CGPointZero`](https://developer.apple.com/documentation/coregraphics/cgpointzero). For more information about the coordinate system of the reference view, see [`UIDynamicAnimator`](uidynamicanimator.md).
 
 ## See Also
 

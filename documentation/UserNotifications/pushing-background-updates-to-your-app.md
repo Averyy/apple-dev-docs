@@ -14,7 +14,7 @@ If your app’s server-based content changes infrequently or at irregular interv
 
 To receive background notifications, you must add the remote notifications background mode to your app. In the Signing and Capability tab, add the Background Modes capability, then select the Remote notification checkbox. The figure below shows what you must select to recieve background notifications.
 
-![Enabling the remote notification background mode in your project’s Capabilities tab.](https://docs-assets.developer.apple.com/published/83c0c600b245b56082bb29c206188303/media-4285757%402x.png)
+![Enabling the remote notification background mode in your project’s Capabilities tab.](/images/com.apple.usernotifications/media-4285757@2x.png)
 
 For watchOS, add this capability to your WatchKit Extension.
 
@@ -43,7 +43,7 @@ When a device receives a background notification, the system may hold and delay 
 - If something force quits or kills the app, the system discards the held notification.
 - If the user launches the app, the system immediately delivers the held notification.
 
-To deliver a background notification, the system wakes your app in the background. On iOS it then calls your app delegate’s [`application(_:didReceiveRemoteNotification:fetchCompletionHandler:)`](https://developer.apple.com/documentation/UIKit/UIApplicationDelegate/application(_:didReceiveRemoteNotification:fetchCompletionHandler:)) method. On watchOS, it calls your extension delegate’s [`didReceiveRemoteNotification(_:fetchCompletionHandler:)`](https://developer.apple.com/documentation/WatchKit/WKExtensionDelegate/didReceiveRemoteNotification(_:fetchCompletionHandler:)) method. Your app has 30 seconds to perform any tasks and call the provided completion handler. For more information, see [`Handling notifications and notification-related actions`](handling-notifications-and-notification-related-actions.md).
+To deliver a background notification, the system wakes your app in the background. On iOS it then calls your app delegate’s [`application(_:didReceiveRemoteNotification:fetchCompletionHandler:)`](https://developer.apple.com/documentation/uikit/uiapplicationdelegate/application(_:didreceiveremotenotification:fetchcompletionhandler:)) method. On watchOS, it calls your extension delegate’s [`didReceiveRemoteNotification(_:fetchCompletionHandler:)`](https://developer.apple.com/documentation/watchkit/wkextensiondelegate/didreceiveremotenotification(_:fetchcompletionhandler:)) method. Your app has 30 seconds to perform any tasks and call the provided completion handler. For more information, see [`Handling notifications and notification-related actions`](handling-notifications-and-notification-related-actions.md).
 
 ## See Also
 

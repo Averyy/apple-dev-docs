@@ -17,7 +17,7 @@ The entitlement the system requires for an app to use the Wi-Fi Infrastructure f
 
 This entitlement works with the Wi-Fi Infrastructure framework, which enables your app and accessory to share Wi-Fi networks from the host device.
 
-To use Wi-Fi Infrastructure, add this entitlement to your app by enabling the Wi-Fi Infrastructure capability on your target in Xcode. For more information, see [`Adding capabilities to your app`](https://developer.apple.com/documentation/Xcode/adding-capabilities-to-your-app).
+To use Wi-Fi Infrastructure, add this entitlement to your app by enabling the Wi-Fi Infrastructure capability on your target in Xcode. For more information, see [`Adding capabilities to your app`](https://developer.apple.com/documentation/xcode/adding-capabilities-to-your-app).
 
 ##### Transport Security
 

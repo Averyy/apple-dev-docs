@@ -63,7 +63,7 @@ For more information about making content available to Spotlight, see [`Making a
 
 #### Make App Entities Shareable
 
-Describing app data as app entities and indexing them in Spotlight is the first step toward making your app discoverable by Apple Intelligence and bringing your app to Siri. To make sure the system can pass the sample app’s content to other apps, the app adopts the [`Transferable`](https://developer.apple.com/documentation/CoreTransferable/Transferable) protocol for its app entities:
+Describing app data as app entities and indexing them in Spotlight is the first step toward making your app discoverable by Apple Intelligence and bringing your app to Siri. To make sure the system can pass the sample app’s content to other apps, the app adopts the [`Transferable`](https://developer.apple.com/documentation/coretransferable/transferable) protocol for its app entities:
 
 ```swift
 extension AssetEntity: Transferable {
@@ -79,7 +79,7 @@ extension AssetEntity: Transferable {
 
 #### Provide Onscreen Context
 
-When a person makes a request that references onscreen content, for example, “Rotate this photo”, Apple Intelligence needs to know which photo is visible onscreen. When you provide this information as context, Siri can respond to a request and perform the action. In addition to conforming to the [`Transferable`](https://developer.apple.com/documentation/CoreTransferable/Transferable) protocol, the `AssetEntity` also conforms to the [`asset`](appschema/photosentity/asset.md) schema. Schema conformance is a prerequisite for providing cues to the system about what’s visible onscreen. To bridge visible content to an app entity that conforms to a schema, you annotate a view or user activity object with an app entity. The `MediaView` shows one photo at a time, so the app annotates a [`NSUserActivity`](https://developer.apple.com/documentation/Foundation/NSUserActivity) with the `AssetEntity` that represents the currently visible photo:
+When a person makes a request that references onscreen content, for example, “Rotate this photo”, Apple Intelligence needs to know which photo is visible onscreen. When you provide this information as context, Siri can respond to a request and perform the action. In addition to conforming to the [`Transferable`](https://developer.apple.com/documentation/coretransferable/transferable) protocol, the `AssetEntity` also conforms to the [`asset`](appschema/photosentity/asset.md) schema. Schema conformance is a prerequisite for providing cues to the system about what’s visible onscreen. To bridge visible content to an app entity that conforms to a schema, you annotate a view or user activity object with an app entity. The `MediaView` shows one photo at a time, so the app annotates a [`NSUserActivity`](https://developer.apple.com/documentation/foundation/nsuseractivity) with the `AssetEntity` that represents the currently visible photo:
 
 ```swift
 var body: some View {

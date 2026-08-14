@@ -18,7 +18,7 @@ var isRegistered: Bool { get }
 
 #### Discussion
 
-To register a postback, call [`updatePostbackConversionValue(_:completionHandler:)`](https://developer.apple.com/documentation/StoreKit/SKAdNetwork/updatePostbackConversionValue(_:completionHandler:)), or [`registerAppForAdNetworkAttribution()`](https://developer.apple.com/documentation/StoreKit/SKAdNetwork/registerAppForAdNetworkAttribution()).
+To register a postback, call [`updatePostbackConversionValue(_:completionHandler:)`](https://developer.apple.com/documentation/storekit/skadnetwork/updatepostbackconversionvalue(_:completionhandler:)), or [`registerAppForAdNetworkAttribution()`](https://developer.apple.com/documentation/storekit/skadnetwork/registerappforadnetworkattribution()).
 
 ## See Also
 

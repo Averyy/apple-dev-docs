@@ -16,7 +16,7 @@ var spellCheckerDocumentTag: Int { get }
 
 #### Discussion
 
-The document tag is obtained by sending a [`uniqueSpellDocumentTag()`](nsspellchecker/uniquespelldocumenttag().md) message to the spell server the first time this method is invoked for a particular group of text views. See the [`NSSpellChecker`](nsspellchecker.md)and [`NSSpellServer`](https://developer.apple.com/documentation/Foundation/NSSpellServer)class specifications for more information on how this tag is used.
+The document tag is obtained by sending a [`uniqueSpellDocumentTag()`](nsspellchecker/uniquespelldocumenttag().md) message to the spell server the first time this method is invoked for a particular group of text views. See the [`NSSpellChecker`](nsspellchecker.md)and [`NSSpellServer`](https://developer.apple.com/documentation/foundation/nsspellserver)class specifications for more information on how this tag is used.
 
 ## See Also
 

@@ -17,7 +17,7 @@ void emitter::burst(uint burstSize)
 
 #### Discussion
 
-> **Note**: ![Graph](https://docs-assets.developer.apple.com/published/f6b34a31d5d97573bc280dc935225cdc/emitter__burst.svg)
+> **Note**: ![Graph](/images/com.apple.computegraph/emitter__burst.svg)
 
 ## Parameters
 

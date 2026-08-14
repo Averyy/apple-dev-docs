@@ -32,7 +32,7 @@ init?(_ path: FilePath, isDirectory: Bool)
 
 - [init?(FilePath)](url/init(_:).md)
   Creates a file URL that references the local file or directory at the file path you specify.
-- [struct FilePath](../System/FilePath.md)
+- [struct FilePath](../system/filepath.md)
   Represents a location in the file system.
 
 

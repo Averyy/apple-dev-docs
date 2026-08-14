@@ -21,7 +21,7 @@ func UIGraphicsGetPDFContextBounds() -> CGRect
 
 #### Return Value
 
-The current page bounds associated with the PDF context or [`CGRectZero`](https://developer.apple.com/documentation/CoreGraphics/CGRectZero) if the current context is not a PDF context.
+The current page bounds associated with the PDF context or [`CGRectZero`](https://developer.apple.com/documentation/coregraphics/cgrectzero) if the current context is not a PDF context.
 
 #### Discussion
 

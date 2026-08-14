@@ -29,7 +29,7 @@ protocol MeshBufferSemantic : Identifiable
 ## Relationships
 
 ### Inherits From
-- [Identifiable](../Swift/Identifiable.md)
+- [Identifiable](../swift/identifiable.md)
 ### Conforming Types
 - [MeshBuffers.Semantic](meshbuffers/semantic.md)
 

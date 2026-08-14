@@ -25,7 +25,7 @@ func start()
 
 #### Discussion
 
-You must provide a reason, by adding the [`NSMicrophoneUsageDescription`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSMicrophoneUsageDescription) key to the Information Property List, to start voice chat with other players.
+You must provide a reason, by adding the [`NSMicrophoneUsageDescription`](https://developer.apple.com/documentation/bundleresources/information-property-list/nsmicrophoneusagedescription) key to the Information Property List, to start voice chat with other players.
 
 If the player grants permission to use the microphone and this method successfully connects to the channel, GameKit plays voice data from the other players automatically. Use the [`isActive`](gkvoicechat/isactive.md) property to begin sending the local player’s microphone data to the channel.
 

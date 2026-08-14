@@ -16,11 +16,11 @@ var spellCheckerDocumentTag: Int { get }
 
 #### Discussion
 
-A tag identifying the receiver’s text as a document for the spell-checker server. See the [`NSSpellChecker`](https://developer.apple.com/documentation/AppKit/NSSpellChecker) and NSSpellServer class specifications for more information on how this tag is used.
+A tag identifying the receiver’s text as a document for the spell-checker server. See the [`NSSpellChecker`](https://developer.apple.com/documentation/appkit/nsspellchecker) and NSSpellServer class specifications for more information on how this tag is used.
 
 ## See Also
 
-- [var spellCheckerDocumentTag: Int](../AppKit/NSTextView/spellCheckerDocumentTag.md)
+- [var spellCheckerDocumentTag: Int](../appkit/nstextview/spellcheckerdocumenttag.md)
   A tag identifying the text view’s text as a document for the spell checker server.
 - [var isEditable: Bool](webview-swift.class/iseditable.md)
   A Boolean that indicates whether the user is allowed to edit the document.

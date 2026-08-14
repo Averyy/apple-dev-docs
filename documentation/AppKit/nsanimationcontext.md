@@ -16,7 +16,7 @@ class NSAnimationContext
 
 #### Overview
 
-[`NSAnimationContext`](nsanimationcontext.md) is analogous to [`CATransaction`](https://developer.apple.com/documentation/QuartzCore/CATransaction) and is similar in overall concept to [`NSGraphicsContext`](nsgraphicscontext.md). Each thread maintains its own stack of nestable [`NSAnimationContext`](nsanimationcontext.md) instances, with each new instance initialized as a copy of the instance below (so, inheriting its current properties).
+[`NSAnimationContext`](nsanimationcontext.md) is analogous to [`CATransaction`](https://developer.apple.com/documentation/quartzcore/catransaction) and is similar in overall concept to [`NSGraphicsContext`](nsgraphicscontext.md). Each thread maintains its own stack of nestable [`NSAnimationContext`](nsanimationcontext.md) instances, with each new instance initialized as a copy of the instance below (so, inheriting its current properties).
 
 Multiple [`NSAnimationContext`](nsanimationcontext.md) instances can be nested, allowing a given block of code to initiate animations using its own specified duration without affecting animations initiated by surrounding code.
 
@@ -69,14 +69,14 @@ Multiple [`NSAnimationContext`](nsanimationcontext.md) instances can be nested, 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

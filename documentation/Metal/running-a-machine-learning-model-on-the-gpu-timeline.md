@@ -16,7 +16,7 @@ You encode a machine learning pass into a command buffer with the [`MTL4MachineL
 
 The app multiplies two matrices on both the CPU and the Metal device, then reports whether the results are the same. It does the matrix multiplication on the Metal device by running a machine learning pass with a model that does matrix multiplication.
 
-Metal apps can apply model files from [`Core ML`](https://developer.apple.com/documentation/CoreML) by converting each into a Metal package:
+Metal apps can apply model files from [`Core ML`](https://developer.apple.com/documentation/coreml) by converting each into a Metal package:
 
 ```shell
     

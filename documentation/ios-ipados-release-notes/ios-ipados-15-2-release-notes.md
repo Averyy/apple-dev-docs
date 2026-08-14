@@ -6,7 +6,7 @@ Update your apps to use new features, and test your apps against API changes.
 
 #### Overview
 
-The iOS & iPadOS 15.2 SDK provides support to develop apps for iPhone, iPad, and iPod touch devices running iOS & iPadOS 15.2. The SDK comes bundled with Xcode 13.2, available from the Mac App Store. For information on the compatibility requirements for Xcode 13.2, see [`Xcode 13.2 Release Notes`](https://developer.apple.com/documentation/Xcode-Release-Notes/xcode-13_2-release-notes).
+The iOS & iPadOS 15.2 SDK provides support to develop apps for iPhone, iPad, and iPod touch devices running iOS & iPadOS 15.2. The SDK comes bundled with Xcode 13.2, available from the Mac App Store. For information on the compatibility requirements for Xcode 13.2, see [`Xcode 13.2 Release Notes`](https://developer.apple.com/documentation/xcode-release-notes/xcode-13_2-release-notes).
 
 ##### App Privacy Report
 
@@ -18,13 +18,13 @@ The iOS & iPadOS 15.2 SDK provides support to develop apps for iPhone, iPad, and
 
 ###### New Features
 
-- StoreKit APIs that present a refund request sheet can be tested with StoreKit Testing in Xcode. Use [`beginRefundRequest(in:)`](https://developer.apple.com/documentation/StoreKit/Transaction/beginRefundRequest(in:)-9k0pj) or [`beginRefundRequest(for:in:)`](https://developer.apple.com/documentation/StoreKit/Transaction/beginRefundRequest(for:in:)-65tph) when working with UIKit or the `refundRequestSheet(for:isPresented:onDismiss:)` view modifier when working with SwiftUI. (70794860)
-- StoreKit APIs that present a sheet in your app to manage subscriptions can be tested with StoreKit Testing in Xcode. Use [`showManageSubscriptions(in:)`](https://developer.apple.com/documentation/StoreKit/AppStore/showManageSubscriptions(in:)) when working with UIKit or the `manageSubscriptionsSheet(isPresented:)` view modifier when working with SwiftUI. (79975963)
-- New [`SKTestSession.TimeRate`](https://developer.apple.com/documentation/StoreKitTest/SKTestSession/TimeRate-swift.enum) values are available to use in automated tests with the StoreKit Test framework. (82680742)
+- StoreKit APIs that present a refund request sheet can be tested with StoreKit Testing in Xcode. Use [`beginRefundRequest(in:)`](https://developer.apple.com/documentation/storekit/transaction/beginrefundrequest(in:)-9k0pj) or [`beginRefundRequest(for:in:)`](https://developer.apple.com/documentation/storekit/transaction/beginrefundrequest(for:in:)-65tph) when working with UIKit or the `refundRequestSheet(for:isPresented:onDismiss:)` view modifier when working with SwiftUI. (70794860)
+- StoreKit APIs that present a sheet in your app to manage subscriptions can be tested with StoreKit Testing in Xcode. Use [`showManageSubscriptions(in:)`](https://developer.apple.com/documentation/storekit/appstore/showmanagesubscriptions(in:)) when working with UIKit or the `manageSubscriptionsSheet(isPresented:)` view modifier when working with SwiftUI. (79975963)
+- New [`SKTestSession.TimeRate`](https://developer.apple.com/documentation/storekittest/sktestsession/timerate-swift.enum) values are available to use in automated tests with the StoreKit Test framework. (82680742)
 
 ###### Resolved Issues
 
-- Subscriptions no longer continue to auto-renew after calling [`expireSubscription(productIdentifier:)`](https://developer.apple.com/documentation/StoreKitTest/SKTestSession/expireSubscription(productIdentifier:)) in automated tests using StoreKit Test. (82800700)
+- Subscriptions no longer continue to auto-renew after calling [`expireSubscription(productIdentifier:)`](https://developer.apple.com/documentation/storekittest/sktestsession/expiresubscription(productidentifier:)) in automated tests using StoreKit Test. (82800700)
 - Pay-as-you-go offers are no longer displayed incorrectly in payment sheets when testing subscriptions with StoreKit Testing in Xcode. (74165210)
 
 ##### Apple Id
@@ -61,16 +61,16 @@ The iOS & iPadOS 15.2 SDK provides support to develop apps for iPhone, iPad, and
 
 ###### Resolved Issues
 
-- Using [`alert(_:isPresented:actions:message:)`](https://developer.apple.com/documentation/SwiftUI/View/alert(_:isPresented:actions:message:)-6awwp) and [`confirmationDialog(_:isPresented:titleVisibility:actions:)`](https://developer.apple.com/documentation/SwiftUI/View/confirmationDialog(_:isPresented:titleVisibility:actions:)) now present. (83731075)
+- Using [`alert(_:isPresented:actions:message:)`](https://developer.apple.com/documentation/swiftui/view/alert(_:ispresented:actions:message:)-6awwp) and [`confirmationDialog(_:isPresented:titleVisibility:actions:)`](https://developer.apple.com/documentation/swiftui/view/confirmationdialog(_:ispresented:titlevisibility:actions:)) now present. (83731075)
 
-- Pushing a [`ScrollView`](https://developer.apple.com/documentation/SwiftUI/ScrollView) that has a background applied while inside of a [`stack`](https://developer.apple.com/documentation/SwiftUI/NavigationViewStyle/stack) style [`NavigationView`](https://developer.apple.com/documentation/SwiftUI/NavigationView) when inside a [`TabView`](https://developer.apple.com/documentation/SwiftUI/TabView) is now correctly tracked by the [`navigationBar`](https://developer.apple.com/documentation/UIKit/UINavigationController/navigationBar) and [`tabBar`](https://developer.apple.com/documentation/UIKit/UITabBarController/tabBar). (83686857)
+- Pushing a [`ScrollView`](https://developer.apple.com/documentation/swiftui/scrollview) that has a background applied while inside of a [`stack`](https://developer.apple.com/documentation/swiftui/navigationviewstyle/stack) style [`NavigationView`](https://developer.apple.com/documentation/swiftui/navigationview) when inside a [`TabView`](https://developer.apple.com/documentation/swiftui/tabview) is now correctly tracked by the [`navigationBar`](https://developer.apple.com/documentation/uikit/uinavigationcontroller/navigationbar) and [`tabBar`](https://developer.apple.com/documentation/uikit/uitabbarcontroller/tabbar). (83686857)
 
-- [`List`](https://developer.apple.com/documentation/SwiftUI/List) correctly respects safe area insets. (83312573)
+- [`List`](https://developer.apple.com/documentation/swiftui/list) correctly respects safe area insets. (83312573)
 - Views are no longer hidden when using the iPad pointer to present a context menu. (83953549)
 
 ###### Known Issues
 
-- A [`TextField`](https://developer.apple.com/documentation/SwiftUI/TextField) won’t attempt to localize the raw string `TextField("Placeholder", text: $text)` when building against iOS 15 and running on older releases. **Workaround:** Wrap the string in a [`LocalizedStringKey`](https://developer.apple.com/documentation/SwiftUI/LocalizedStringKey). (82076857)
+- A [`TextField`](https://developer.apple.com/documentation/swiftui/textfield) won’t attempt to localize the raw string `TextField("Placeholder", text: $text)` when building against iOS 15 and running on older releases. **Workaround:** Wrap the string in a [`LocalizedStringKey`](https://developer.apple.com/documentation/swiftui/localizedstringkey). (82076857)
 
 ## See Also
 

@@ -10,13 +10,13 @@ vImage provides a suite of functions for compositing two source images into one 
 
 The figure below shows the alpha composite of an image of a building with a transparent background over an image of a texture. The transparent part of the building image has an alpha of zero, indicating the background layer is fully visible.
 
-![Three photographs. Two smaller photographs are stacked on the left and an arrow points to a larger photograph on the right. The photograph on the top left is of a skyscraper against a transparent background. The photograph on the bottom left is of a rusty metal texture. The larger photograph on the right shows the skyscraper composited over the texture.](https://docs-assets.developer.apple.com/published/9e3c715d826010f0a25e9bc74f186e18/media-3696647%402x.png)
+![Three photographs. Two smaller photographs are stacked on the left and an arrow points to a larger photograph on the right. The photograph on the top left is of a skyscraper against a transparent background. The photograph on the bottom left is of a rusty metal texture. The larger photograph on the right shows the skyscraper composited over the texture.](/images/com.apple.accelerate/media-3696647@2x.png)
 
 ##### Perform an Alpha Composite
 
 Use the [`vImagePremultipliedAlphaBlend_ARGB8888(_:_:_:_:)`](vimagepremultipliedalphablend_argb8888(_:_:_:_:).md) function to blend two images when the top image contains alpha information (for example, when compositing text over a photograph). The images that you pass to [`vImagePremultipliedAlphaBlend_ARGB8888(_:_:_:_:)`](vimagepremultipliedalphablend_argb8888(_:_:_:_:).md) need to have the premultiplied alpha information in the first channel.
 
-The following function performs an alpha composite of two [`CGImage`](https://developer.apple.com/documentation/CoreGraphics/CGImage) instances and returns the result as a [`CGImage`](https://developer.apple.com/documentation/CoreGraphics/CGImage) instance:
+The following function performs an alpha composite of two [`CGImage`](https://developer.apple.com/documentation/coregraphics/cgimage) instances and returns the result as a [`CGImage`](https://developer.apple.com/documentation/coregraphics/cgimage) instance:
 
 ```swift
 func alphaComposite(topImage: CGImage, bottomImage: CGImage) -> CGImage? {
@@ -85,7 +85,7 @@ func convertToARGB(_ buffer: UnsafePointer<vImage_Buffer>,
 }
 ```
 
-The `premultiply(_:alphaInfo:)` function uses a [`CGImage`](https://developer.apple.com/documentation/CoreGraphics/CGImage) instance’s alpha information to determine whether an image contains premultiplied alpha. This function ensures that the top layer that the function passes to the composite operation contains premultiplied pixels.
+The `premultiply(_:alphaInfo:)` function uses a [`CGImage`](https://developer.apple.com/documentation/coregraphics/cgimage) instance’s alpha information to determine whether an image contains premultiplied alpha. This function ensures that the top layer that the function passes to the composite operation contains premultiplied pixels.
 
 ```swift
 func premultiply(_ buffer: UnsafePointer<vImage_Buffer>,
@@ -111,7 +111,7 @@ destColor = (srcTopColor * constAlpha * 255  + (255*255 - srcTopAlpha * constAlp
 destAlpha =  (srcTopAlpha * constAlpha * 255 + (255*255 - srcTopAlpha * constAlpha) * srcBottomAlpha + 127*255 ) / (255*255);
 ```
 
-To perform an alpha composite with a constant alpha, replace the call to [`vImagePremultipliedAlphaBlend_ARGB8888(_:_:_:_:)`](vimagepremultipliedalphablend_argb8888(_:_:_:_:).md) in the code listing in [`Compositing images with alpha blending`](compositing-images-with-alpha-blending#Perform-an-alpha-composite.md) with the following code:
+To perform an alpha composite with a constant alpha, replace the call to [`vImagePremultipliedAlphaBlend_ARGB8888(_:_:_:_:)`](vimagepremultipliedalphablend_argb8888(_:_:_:_:).md) in the code listing in [`Compositing images with alpha blending`](compositing-images-with-alpha-blending.md) with the following code:
 
 ```swift
 // Perform the composite operation.
@@ -124,17 +124,17 @@ vImagePremultipliedConstAlphaBlend_ARGB8888(topPtr,
 
 The following image shows the result of compositing with [`vImagePremultipliedConstAlphaBlend_ARGB8888(_:_:_:_:_:)`](vimagepremultipliedconstalphablend_argb8888(_:_:_:_:_:).md) using a constant alpha with a value of `191`. The background of the building remains transparent, but the parts of the image that were originally opaque now show some of the lower layer.
 
-![A photograph of a skyscraper composited against a rusty metal texture. The metal texture is partially visible through the skyscraper image.](https://docs-assets.developer.apple.com/published/1a0f6a9315bdc2a9620cf80778c602fa/media-3686488%402x.png)
+![A photograph of a skyscraper composited against a rusty metal texture. The metal texture is partially visible through the skyscraper image.](/images/com.apple.accelerate/media-3686488@2x.png)
 
 ##### Perform an Alpha Composite with an Overwritten Alpha Channel
 
 Use the [`vImageOverwriteChannels_ARGB8888(_:_:_:_:_:)`](vimageoverwritechannels_argb8888(_:_:_:_:_:).md) function to overwrite an image’s alpha channel. The following shows an example of setting a radial gradient as the alpha channel of an image to produce a vignette style blend:
 
-![Four photographs. One  photograph at the top left is of a skyscraper against a transparent background, two  photographs are stacked in the middle, and an arrow points to a photograph on the right. The top-middle photograph is a radial gradient with white at its center and black at the edges, and the bottom-middle photograph is a rusty metal texture. The photograph on the right is a composite with the skyscraper visible at the center, and the rusty metal texture visible at the edge.](https://docs-assets.developer.apple.com/published/9dfd7d16b4f73619038b4fb815bf415c/media-3702587%402x.png)
+![Four photographs. One  photograph at the top left is of a skyscraper against a transparent background, two  photographs are stacked in the middle, and an arrow points to a photograph on the right. The top-middle photograph is a radial gradient with white at its center and black at the edges, and the bottom-middle photograph is a rusty metal texture. The photograph on the right is a composite with the skyscraper visible at the center, and the rusty metal texture visible at the edge.](/images/com.apple.accelerate/media-3702587@2x.png)
 
 The [`vImageOverwriteChannels_ARGB8888(_:_:_:_:_:)`](vimageoverwritechannels_argb8888(_:_:_:_:_:).md) function requires buffers with nonpremultiplied alpha.
 
-The `radialComposite(topImage:bottomImage:)` function performs an alpha composite of two [`CGImage`](https://developer.apple.com/documentation/CoreGraphics/CGImage) instances with a procedural radial gradient.
+The `radialComposite(topImage:bottomImage:)` function performs an alpha composite of two [`CGImage`](https://developer.apple.com/documentation/coregraphics/cgimage) instances with a procedural radial gradient.
 
 ```swift
 func radialComposite(topImage: CGImage,

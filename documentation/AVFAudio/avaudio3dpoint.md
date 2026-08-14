@@ -44,8 +44,8 @@ Classes that deal with 3D audio, such as those adopting [`AVAudioMixing`](avaudi
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../Swift/BitwiseCopyable.md)
-- [Sendable](../Swift/Sendable.md)
+- [BitwiseCopyable](../swift/bitwisecopyable.md)
+- [Sendable](../swift/sendable.md)
 
 ## See Also
 

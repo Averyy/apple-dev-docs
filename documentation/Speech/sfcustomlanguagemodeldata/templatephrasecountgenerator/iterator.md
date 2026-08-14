@@ -31,7 +31,7 @@ class Iterator
 ### Inherits From
 - [SFCustomLanguageModelData.PhraseCountGenerator.Iterator](sfcustomlanguagemodeldata/phrasecountgenerator/iterator.md)
 ### Conforms To
-- [AsyncIteratorProtocol](../Swift/AsyncIteratorProtocol.md)
+- [AsyncIteratorProtocol](../swift/asynciteratorprotocol.md)
 
 
 ---

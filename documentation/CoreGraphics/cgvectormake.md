@@ -22,7 +22,7 @@ func CGVectorMake(_ dx: CGFloat, _ dy: CGFloat) -> CGVector
 
 #### Return Value
 
-Returns a [`CGVector`](https://developer.apple.com/documentation/CoreFoundation/CGVector) structure with the specified coordinates.
+Returns a [`CGVector`](https://developer.apple.com/documentation/corefoundation/cgvector) structure with the specified coordinates.
 
 ## Parameters
 

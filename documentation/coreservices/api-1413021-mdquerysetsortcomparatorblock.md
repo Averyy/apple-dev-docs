@@ -23,7 +23,7 @@ The default sort provided by [`MDQueryCreate(_:_:_:_:)`](1413029-mdquerycreate.m
 ## Parameters
 
 - `query`: The query.
-- `comparator`: The block may be   to cancel any custom comparator. 
+- `comparator`: The callback block the MDQuery will use to sort its results. The comparator may be called on multiple threads in parallel, and must be reentrant. To take advantage of parallel sorting, it is best to avoid any locking in the comparator. The block may be `NULL` to cancel any custom comparator. 
 
 ## See Also
 

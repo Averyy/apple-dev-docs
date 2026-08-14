@@ -21,7 +21,7 @@ class PKPass
 
 #### Overview
 
-The properties of this class correspond to fields of the pass. For details about what individual fields mean, see [`Pass`](https://developer.apple.com/documentation/WalletPasses/Pass).
+The properties of this class correspond to fields of the pass. For details about what individual fields mean, see [`Pass`](https://developer.apple.com/documentation/walletpasses/pass).
 
 ## Topics
 
@@ -80,12 +80,12 @@ The properties of this class correspond to fields of the pass. For details about
 ### Inherited By
 - [PKSecureElementPass](pksecureelementpass.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

@@ -50,7 +50,7 @@ Use this type for movie playback, including films and documentaries.
 ## Relationships
 
 ### Conforms To
-- [Identifiable](../Swift/Identifiable.md)
+- [Identifiable](../swift/identifiable.md)
 - [MediaContentRepresentable](mediacontentrepresentable.md)
 
 ## See Also

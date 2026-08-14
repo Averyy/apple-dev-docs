@@ -25,7 +25,7 @@ struct IntervalEntry
 
 `IntervalEntry` contains all metric values for a given time interval. Access it through [`intervalEntries`](metricreport/intervalentries.md).
 
-Use the [`fullDayEntry`](https://developer.apple.com/documentation/Swift/Array/fullDayEntry) convenience property on the collection to retrieve the entry with the full 24-hour aggregate:
+Use the [`fullDayEntry`](https://developer.apple.com/documentation/swift/array/fulldayentry) convenience property on the collection to retrieve the entry with the full 24-hour aggregate:
 
 ```swift
 let entry = report.intervalEntries.fullDayEntry
@@ -55,10 +55,10 @@ Each `IntervalEntry` provides a `duration` but no start timestamp, so you can’
 ## Relationships
 
 ### Conforms To
-- [Decodable](../Swift/Decodable.md)
-- [Encodable](../Swift/Encodable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Decodable](../swift/decodable.md)
+- [Encodable](../swift/encodable.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 
 ---

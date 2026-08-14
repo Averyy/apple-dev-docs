@@ -23,9 +23,9 @@ class MPSImage
 
 Some image types, such as those found in convolutional neural networks (CNN), differ from a standard texture in that they may have more than 4 channels per pixel. While the channels could hold RGBA data, they will more commonly hold a number of structural permutations upon an RGBA image as the neural network progresses. It is not uncommon for each pixel to have 32 or 64 channels in it.
 
-Since a standard [`MTLTexture`](https://developer.apple.com/documentation/Metal/MTLTexture) object cannot have more than 4 channels, the additional channels are stored in slices of a 2D texture array (i.e. a texture of type [`MTLTextureType.type2DArray`](https://developer.apple.com/documentation/Metal/MTLTextureType/type2DArray)) such that 4 consecutive channels are stored in each slice of this array. If the number of feature channels is `N`, the number of array slices needed is `(N+3)/4`. For example, a 9-channel CNN image with a width of 3 and a height of 2 will be stored as follows:
+Since a standard [`MTLTexture`](https://developer.apple.com/documentation/metal/mtltexture) object cannot have more than 4 channels, the additional channels are stored in slices of a 2D texture array (i.e. a texture of type [`MTLTextureType.type2DArray`](https://developer.apple.com/documentation/metal/mtltexturetype/type2darray)) such that 4 consecutive channels are stored in each slice of this array. If the number of feature channels is `N`, the number of array slices needed is `(N+3)/4`. For example, a 9-channel CNN image with a width of 3 and a height of 2 will be stored as follows:
 
-![None](https://docs-assets.developer.apple.com/published/534b0df23931364d166bf346b71c9cc2/media-2556907%402x.png)
+![None](/images/com.apple.metalperformanceshaders/media-2556907@2x.png)
 
 Thus, the width and height of the underlying 2D texture array is the same as the width and height of the [`MPSImage`](mpsimage.md) object and the array length is equal to  `(` [`featureChannels`](mpsimagedescriptor/featurechannels.md) `+3)/4`. (Channels marked with a `?` are just for padding and should not contain `NaN` or `INF` values.)
 
@@ -39,32 +39,32 @@ For example, suppose an [`MPSCNNConvolution`](mpscnnconvolution.md) object takes
 
 All [`MPSCNNKernel`](mpscnnkernel.md) objects process images in the batch independently. That is, calling a [`MPSCNNKernel`](mpscnnkernel.md) object on a batch is formally the same as calling it on each image in the batch sequentially. Computational and GPU work submission overhead will be amortized over more work if batch processing is used. This is especially important for better performance on small images.
 
-If `featureChannels<=4` and `numberOfImages=1` (i.e. only one slice is needed to represent the image), the underlying metal texture type is chosen to be [`MTLTextureType.type2D`](https://developer.apple.com/documentation/Metal/MTLTextureType/type2D) rather than [`MTLTextureType.type2DArray`](https://developer.apple.com/documentation/Metal/MTLTextureType/type2DArray) as explained above.
+If `featureChannels<=4` and `numberOfImages=1` (i.e. only one slice is needed to represent the image), the underlying metal texture type is chosen to be [`MTLTextureType.type2D`](https://developer.apple.com/documentation/metal/mtltexturetype/type2d) rather than [`MTLTextureType.type2DArray`](https://developer.apple.com/documentation/metal/mtltexturetype/type2darray) as explained above.
 
-The framework also provides [`MPSTemporaryImage`](mpstemporaryimage.md) objects, intended for very short-lived image data that is produced and consumed immediately in the same [`MTLCommandBuffer`](https://developer.apple.com/documentation/Metal/MTLCommandBuffer) object. They are a useful way to minimize CPU-side texture allocation costs and greatly reduce the amount of memory used by your image pipeline.
+The framework also provides [`MPSTemporaryImage`](mpstemporaryimage.md) objects, intended for very short-lived image data that is produced and consumed immediately in the same [`MTLCommandBuffer`](https://developer.apple.com/documentation/metal/mtlcommandbuffer) object. They are a useful way to minimize CPU-side texture allocation costs and greatly reduce the amount of memory used by your image pipeline.
 
 Creation of the underlying texture may occur lazily in some cases. In general, you should avoid calling the [`texture`](mpsimage/texture.md) property to avoid materializing memory for longer than necessary. When possible, use the other [`MPSImage`](mpsimage.md) properties to get information about the object instead.
 
 ##### The Mpsimage Class
 
-[`MTLBuffer`](https://developer.apple.com/documentation/Metal/MTLBuffer) and [`MTLTexture`](https://developer.apple.com/documentation/Metal/MTLTexture) objects are commonly used in Metal apps and are used directly by the Metal Performance Shaders framework when possible. In apps that use CNN, kernels may need more than the four data channels that a [`MTLTexture`](https://developer.apple.com/documentation/Metal/MTLTexture) object can provide. In these cases, an [`MPSImage`](mpsimage.md) object is used instead as an abstraction layer on top of a [`MTLTexture`](https://developer.apple.com/documentation/Metal/MTLTexture) object. When more than 4 channels are needed, additional textures in the 2D texture array are added to hold additional channels in sets of four. An [`MPSImage`](mpsimage.md) object tracks this information as the number of *feature channels* in an image.
+[`MTLBuffer`](https://developer.apple.com/documentation/metal/mtlbuffer) and [`MTLTexture`](https://developer.apple.com/documentation/metal/mtltexture) objects are commonly used in Metal apps and are used directly by the Metal Performance Shaders framework when possible. In apps that use CNN, kernels may need more than the four data channels that a [`MTLTexture`](https://developer.apple.com/documentation/metal/mtltexture) object can provide. In these cases, an [`MPSImage`](mpsimage.md) object is used instead as an abstraction layer on top of a [`MTLTexture`](https://developer.apple.com/documentation/metal/mtltexture) object. When more than 4 channels are needed, additional textures in the 2D texture array are added to hold additional channels in sets of four. An [`MPSImage`](mpsimage.md) object tracks this information as the number of *feature channels* in an image.
 
 ##### Cnn Images
 
-[`MPSCNNKernel`](mpscnnkernel.md) objects operate on [`MPSImage`](mpsimage.md) objects. [`MPSImage`](mpsimage.md) objects are at their core [`MTLTexture`](https://developer.apple.com/documentation/Metal/MTLTexture) objects; however, whereas [`MTLTexture`](https://developer.apple.com/documentation/Metal/MTLTexture) objects commonly represent image or texel data, an [`MPSImage`](mpsimage.md) object is a more abstract representation of image features. The channels within an [`MPSImage`](mpsimage.md) do not necessarily correspond to colors in a color space (although they can, if necessary). As a result, there can be many more than four of them. Having 32 or 64 channels per pixel is not uncommon in CNN. This is achieved on the [`MTLTexture`](https://developer.apple.com/documentation/Metal/MTLTexture) object abstraction by inserting extra RGBA pixels to handle the additional feature channels (if any) beyond 4. These extra pixels are stored as multiple slices of a 2D image array. Thus, each CNN pixel in a 32-channel image is represented as 8 array slices, with 4-channels stored per-pixel in each slice. The width and height of the [`MTLTexture`](https://developer.apple.com/documentation/Metal/MTLTexture) object is the same as the width and height of the [`MPSImage`](mpsimage.md) object. The number of slices in the [`MTLTexture`](https://developer.apple.com/documentation/Metal/MTLTexture) object is given by the number of feature channels rounded up to a multiple of 4.
+[`MPSCNNKernel`](mpscnnkernel.md) objects operate on [`MPSImage`](mpsimage.md) objects. [`MPSImage`](mpsimage.md) objects are at their core [`MTLTexture`](https://developer.apple.com/documentation/metal/mtltexture) objects; however, whereas [`MTLTexture`](https://developer.apple.com/documentation/metal/mtltexture) objects commonly represent image or texel data, an [`MPSImage`](mpsimage.md) object is a more abstract representation of image features. The channels within an [`MPSImage`](mpsimage.md) do not necessarily correspond to colors in a color space (although they can, if necessary). As a result, there can be many more than four of them. Having 32 or 64 channels per pixel is not uncommon in CNN. This is achieved on the [`MTLTexture`](https://developer.apple.com/documentation/metal/mtltexture) object abstraction by inserting extra RGBA pixels to handle the additional feature channels (if any) beyond 4. These extra pixels are stored as multiple slices of a 2D image array. Thus, each CNN pixel in a 32-channel image is represented as 8 array slices, with 4-channels stored per-pixel in each slice. The width and height of the [`MTLTexture`](https://developer.apple.com/documentation/metal/mtltexture) object is the same as the width and height of the [`MPSImage`](mpsimage.md) object. The number of slices in the [`MTLTexture`](https://developer.apple.com/documentation/metal/mtltexture) object is given by the number of feature channels rounded up to a multiple of 4.
 
-[`MPSImage`](mpsimage.md) objects can be created from existing [`MTLTexture`](https://developer.apple.com/documentation/Metal/MTLTexture) objects. They may also be created anew from an [`MPSImageDescriptor`](mpsimagedescriptor.md) and backed with either standard texture memory, or as [`MPSTemporaryImage`](mpstemporaryimage.md) objects using memory drawn from the framework’s internal cached texture backing store. [`MPSTemporaryImage`](mpstemporaryimage.md) objects can provide great memory usage and CPU time savings, but come with significant restrictions that should be understood before using them. For example, their contents are only valid during the GPU-side execution of a single [`MTLCommandBuffer`](https://developer.apple.com/documentation/Metal/MTLCommandBuffer) object and can not be read from or written to by the CPU. They are provided as an efficient way to hold CNN computations that are used immediately within the scope of the same [`MTLCommandBuffer`](https://developer.apple.com/documentation/Metal/MTLCommandBuffer) object and then discarded. Concatenation is also supported by allowing you to define from which destination feature channel to start writing the output of the current layer. In this way, your app can make a large [`MPSImage`](mpsimage.md) or [`MPSTemporaryImage`](mpstemporaryimage.md) object and fill in parts of it with multiple layers (as long as the destination feature channel offset is a multiple of 4).
+[`MPSImage`](mpsimage.md) objects can be created from existing [`MTLTexture`](https://developer.apple.com/documentation/metal/mtltexture) objects. They may also be created anew from an [`MPSImageDescriptor`](mpsimagedescriptor.md) and backed with either standard texture memory, or as [`MPSTemporaryImage`](mpstemporaryimage.md) objects using memory drawn from the framework’s internal cached texture backing store. [`MPSTemporaryImage`](mpstemporaryimage.md) objects can provide great memory usage and CPU time savings, but come with significant restrictions that should be understood before using them. For example, their contents are only valid during the GPU-side execution of a single [`MTLCommandBuffer`](https://developer.apple.com/documentation/metal/mtlcommandbuffer) object and can not be read from or written to by the CPU. They are provided as an efficient way to hold CNN computations that are used immediately within the scope of the same [`MTLCommandBuffer`](https://developer.apple.com/documentation/metal/mtlcommandbuffer) object and then discarded. Concatenation is also supported by allowing you to define from which destination feature channel to start writing the output of the current layer. In this way, your app can make a large [`MPSImage`](mpsimage.md) or [`MPSTemporaryImage`](mpstemporaryimage.md) object and fill in parts of it with multiple layers (as long as the destination feature channel offset is a multiple of 4).
 
 ##### Supported Pixel Formats
 
 The following table shows pixel formats supported by [`MPSImage`](mpsimage.md).
 
-| [`MTLPixelFormat.r8Unorm`](https://developer.apple.com/documentation/Metal/MTLPixelFormat/r8Unorm) | [`MTLPixelFormat.rg8Unorm`](https://developer.apple.com/documentation/Metal/MTLPixelFormat/rg8Unorm) | [`MTLPixelFormat.rgba8Unorm`](https://developer.apple.com/documentation/Metal/MTLPixelFormat/rgba8Unorm) | [`MTLPixelFormat.bgra8Unorm`](https://developer.apple.com/documentation/Metal/MTLPixelFormat/bgra8Unorm) |
+| [`MTLPixelFormat.r8Unorm`](https://developer.apple.com/documentation/metal/mtlpixelformat/r8unorm) | [`MTLPixelFormat.rg8Unorm`](https://developer.apple.com/documentation/metal/mtlpixelformat/rg8unorm) | [`MTLPixelFormat.rgba8Unorm`](https://developer.apple.com/documentation/metal/mtlpixelformat/rgba8unorm) | [`MTLPixelFormat.bgra8Unorm`](https://developer.apple.com/documentation/metal/mtlpixelformat/bgra8unorm) |
 | --- | --- | --- | --- |
-| [`MTLPixelFormat.r8Unorm_srgb`](https://developer.apple.com/documentation/Metal/MTLPixelFormat/r8Unorm_srgb) | [`MTLPixelFormat.rg8Unorm_srgb`](https://developer.apple.com/documentation/Metal/MTLPixelFormat/rg8Unorm_srgb) | [`MTLPixelFormat.rgba8Unorm_srgb`](https://developer.apple.com/documentation/Metal/MTLPixelFormat/rgba8Unorm_srgb) | [`MTLPixelFormat.bgra8Unorm_srgb`](https://developer.apple.com/documentation/Metal/MTLPixelFormat/bgra8Unorm_srgb) |
-| [`MTLPixelFormat.r16Unorm`](https://developer.apple.com/documentation/Metal/MTLPixelFormat/r16Unorm) | [`MTLPixelFormat.rg16Unorm`](https://developer.apple.com/documentation/Metal/MTLPixelFormat/rg16Unorm) | [`MTLPixelFormat.rgba16Unorm`](https://developer.apple.com/documentation/Metal/MTLPixelFormat/rgba16Unorm) |  |
-| [`MTLPixelFormat.r16Float`](https://developer.apple.com/documentation/Metal/MTLPixelFormat/r16Float) | [`MTLPixelFormat.rg16Float`](https://developer.apple.com/documentation/Metal/MTLPixelFormat/rg16Float) | [`MTLPixelFormat.rgba16Float`](https://developer.apple.com/documentation/Metal/MTLPixelFormat/rgba16Float) |  |
-| [`MTLPixelFormat.r32Float`](https://developer.apple.com/documentation/Metal/MTLPixelFormat/r32Float) | [`MTLPixelFormat.rg32Float`](https://developer.apple.com/documentation/Metal/MTLPixelFormat/rg32Float) | [`MTLPixelFormat.rgba32Float`](https://developer.apple.com/documentation/Metal/MTLPixelFormat/rgba32Float) |  |
+| [`MTLPixelFormat.r8Unorm_srgb`](https://developer.apple.com/documentation/metal/mtlpixelformat/r8unorm_srgb) | [`MTLPixelFormat.rg8Unorm_srgb`](https://developer.apple.com/documentation/metal/mtlpixelformat/rg8unorm_srgb) | [`MTLPixelFormat.rgba8Unorm_srgb`](https://developer.apple.com/documentation/metal/mtlpixelformat/rgba8unorm_srgb) | [`MTLPixelFormat.bgra8Unorm_srgb`](https://developer.apple.com/documentation/metal/mtlpixelformat/bgra8unorm_srgb) |
+| [`MTLPixelFormat.r16Unorm`](https://developer.apple.com/documentation/metal/mtlpixelformat/r16unorm) | [`MTLPixelFormat.rg16Unorm`](https://developer.apple.com/documentation/metal/mtlpixelformat/rg16unorm) | [`MTLPixelFormat.rgba16Unorm`](https://developer.apple.com/documentation/metal/mtlpixelformat/rgba16unorm) |  |
+| [`MTLPixelFormat.r16Float`](https://developer.apple.com/documentation/metal/mtlpixelformat/r16float) | [`MTLPixelFormat.rg16Float`](https://developer.apple.com/documentation/metal/mtlpixelformat/rg16float) | [`MTLPixelFormat.rgba16Float`](https://developer.apple.com/documentation/metal/mtlpixelformat/rgba16float) |  |
+| [`MTLPixelFormat.r32Float`](https://developer.apple.com/documentation/metal/mtlpixelformat/r32float) | [`MTLPixelFormat.rg32Float`](https://developer.apple.com/documentation/metal/mtlpixelformat/rg32float) | [`MTLPixelFormat.rgba32Float`](https://developer.apple.com/documentation/metal/mtlpixelformat/rgba32float) |  |
 
 ## Topics
 
@@ -106,23 +106,23 @@ The following table shows pixel formats supported by [`MPSImage`](mpsimage.md).
   The number of images for batch processing.
 - [var textureType: MTLTextureType](mpsimage/texturetype.md)
   The type of the underlying texture.
-- [enum MTLTextureType](../Metal/MTLTextureType.md)
+- [enum MTLTextureType](../metal/mtltexturetype.md)
   The dimension of each image, including whether multiple images are arranged into an array or a cube.
 - [var pixelFormat: MTLPixelFormat](mpsimage/pixelformat.md)
   The pixel format of the underlying texture.
-- [enum MTLPixelFormat](../Metal/MTLPixelFormat.md)
+- [enum MTLPixelFormat](../metal/mtlpixelformat.md)
   The data formats that describe the organization and characteristics of individual pixels in a texture.
 - [var precision: Int](mpsimage/precision.md)
   The number of bits of numeric precision available for each feature channel.
 - [var usage: MTLTextureUsage](mpsimage/usage.md)
   The intended usage of the underlying texture.
-- [struct MTLTextureUsage](../Metal/MTLTextureUsage.md)
+- [struct MTLTextureUsage](../metal/mtltextureusage.md)
   An enumeration for the various options that determine how you can use a texture.
 - [var pixelSize: Int](mpsimage/pixelsize.md)
   The number of bytes from the first byte of one pixel to the first byte of the next pixel, in storage order. (Includes padding.)
 - [var texture: any MTLTexture](mpsimage/texture.md)
   The underlying texture.
-- [protocol MTLTexture](../Metal/MTLTexture.md)
+- [protocol MTLTexture](../metal/mtltexture.md)
   A resource that holds formatted image data.
 - [var label: String?](mpsimage/label.md)
   A string to help identify this object.
@@ -142,16 +142,16 @@ The following table shows pixel formats supported by [`MPSImage`](mpsimage.md).
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Inherited By
 - [MPSTemporaryImage](mpstemporaryimage.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

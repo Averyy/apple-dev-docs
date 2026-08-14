@@ -18,7 +18,7 @@ The `ParameterVocabularies` key contains the custom terminology that is global t
 
 Xcode helps you add terms to your vocabulary file. When you create a property list file with the name `AppIntentVocabulary.plist`, Xcode knows that the file should contain custom vocabulary, and it makes only the relevant keys available in the property list editor. The figure below shows an example of a global vocabulary file in Xcode that contains custom terms for a workout app.
 
-![Editing the global vocabulary file](https://docs-assets.developer.apple.com/published/9cea7ae6cc69228cd25dc898c1b88a34/media-2910038%402x.png)
+![Editing the global vocabulary file](/images/com.apple.sirikit/media-2910038@2x.png)
 
 ## See Also
 

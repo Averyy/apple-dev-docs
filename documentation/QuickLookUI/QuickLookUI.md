@@ -25,7 +25,7 @@ You can provide previews for your own data types by either rendering a view with
 
 To provide Quick Look previews for your own file types, create a Quick Look Preview Extension with either a view controller or data based preview. In either case, add your supported content types to the `QLSupportedContentTypes` array in the `Info.plist` file of the extension.
 
-To provide a view controller based preview extension, set up an [`NSViewController`](https://developer.apple.com/documentation/AppKit/NSViewController) that conforms to [`QLPreviewingController`](qlpreviewingcontroller.md). Prepare and display the view within the method [`preparePreviewOfFile(at:completionHandler:)`](qlpreviewingcontroller/preparepreviewoffile(at:completionhandler:).md).
+To provide a view controller based preview extension, set up an [`NSViewController`](https://developer.apple.com/documentation/appkit/nsviewcontroller) that conforms to [`QLPreviewingController`](qlpreviewingcontroller.md). Prepare and display the view within the method [`preparePreviewOfFile(at:completionHandler:)`](qlpreviewingcontroller/preparepreviewoffile(at:completionhandler:).md).
 
 To provide a data-based preview extension, implement a subclass of [`QLPreviewProvider`](qlpreviewprovider.md) to provide a [`QLPreviewReply`](qlpreviewreply.md) based on the [`QLFilePreviewRequest`](qlfilepreviewrequest.md) that the system provides.
 

@@ -30,11 +30,11 @@ This method applies the keystone correction combined filter to an image. The eff
 The keystone correction filter uses the following properties:
 
 - **`inputImage`**: An image with the type [`CIImage`](ciimage.md).
-- **`topLeft`**: A [`CGPoint`](https://developer.apple.com/documentation/CoreFoundation/CGPoint) in the input image mapped to the top-left corner of the output image.
-- **`topRight`**: A [`CGPoint`](https://developer.apple.com/documentation/CoreFoundation/CGPoint) in the input image mapped to the top-right corner of the output image.
-- **`bottomLeft`**: A [`CGPoint`](https://developer.apple.com/documentation/CoreFoundation/CGPoint) in the input image mapped to the bottom-left corner of the output image.
-- **`bottomRight`**: A [`CGPoint`](https://developer.apple.com/documentation/CoreFoundation/CGPoint) in the input image mapped to the bottom-right corner of the output image.
-- **`focalLength`**: A `float` representing the simulated focal length as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+- **`topLeft`**: A [`CGPoint`](https://developer.apple.com/documentation/corefoundation/cgpoint) in the input image mapped to the top-left corner of the output image.
+- **`topRight`**: A [`CGPoint`](https://developer.apple.com/documentation/corefoundation/cgpoint) in the input image mapped to the top-right corner of the output image.
+- **`bottomLeft`**: A [`CGPoint`](https://developer.apple.com/documentation/corefoundation/cgpoint) in the input image mapped to the bottom-left corner of the output image.
+- **`bottomRight`**: A [`CGPoint`](https://developer.apple.com/documentation/corefoundation/cgpoint) in the input image mapped to the bottom-right corner of the output image.
+- **`focalLength`**: A `float` representing the simulated focal length as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
 
 The following code creates a filter that distorts the image:
 
@@ -51,7 +51,7 @@ func keystoneCorrectionCombined(inputImage: CIImage) -> CIImage {
 }
 ```
 
-![Two photographs of a large building on the corner of an intersection. The building has small windows and is made of a brick structure. The photo on the left has no modifications to size or color. In the photo on the right, a keystone correction combined filter is applied, distorting the rectangular image to become a trapezoid.](https://docs-assets.developer.apple.com/published/8285ddfcdb8a519a02b4a1f2c444533e/media-3582223%402x.png)
+![Two photographs of a large building on the corner of an intersection. The building has small windows and is made of a brick structure. The photo on the left has no modifications to size or color. In the photo on the right, a keystone correction combined filter is applied, distorting the rectangular image to become a trapezoid.](/images/com.apple.coreimage/media-3582223@2x.png)
 
 ## See Also
 

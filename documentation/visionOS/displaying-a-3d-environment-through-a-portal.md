@@ -10,7 +10,7 @@ Implement a portal window that displays a 3D environment and simulates entering 
 
 #### Overview
 
-This sample code project demonstrates how to view a 3D environment through a flat plane with the portal component, and transition into the portal by creating an immersive space. To create a portal, you first need to define an entity and set the [`WorldComponent`](https://developer.apple.com/documentation/RealityKit/WorldComponent) to store the content of the portal. Next, you create a separate entity to represent the portal’s structure, such as the flat plane in the sample. Finally, you combine the two entities, assigning the portal content entity to [`PortalComponent`](https://developer.apple.com/documentation/RealityKit/PortalComponent) and setting it to the portal structure entity to create the portal.
+This sample code project demonstrates how to view a 3D environment through a flat plane with the portal component, and transition into the portal by creating an immersive space. To create a portal, you first need to define an entity and set the [`WorldComponent`](https://developer.apple.com/documentation/realitykit/worldcomponent) to store the content of the portal. Next, you create a separate entity to represent the portal’s structure, such as the flat plane in the sample. Finally, you combine the two entities, assigning the portal content entity to [`PortalComponent`](https://developer.apple.com/documentation/realitykit/portalcomponent) and setting it to the portal structure entity to create the portal.
 
 At launch, the sample app creates the following:
 
@@ -44,9 +44,9 @@ The app uses the `createEnvironment(on:)` method to create the box environment a
 }
 ```
 
-The method starts by loading the box environment from the `.usda` file. Then, it loads an image-based lighting file as an [`EnvironmentResource`](https://developer.apple.com/documentation/RealityKit/EnvironmentResource) that contains the background and lighting information as a scene.
+The method starts by loading the box environment from the `.usda` file. Then, it loads an image-based lighting file as an [`EnvironmentResource`](https://developer.apple.com/documentation/realitykit/environmentresource) that contains the background and lighting information as a scene.
 
-To apply image-based lighting to the box environment, the app creates an [`ImageBasedLightComponent`](https://developer.apple.com/documentation/RealityKit/ImageBasedLightComponent) and sets it to a placeholder [`Entity`](https://developer.apple.com/documentation/RealityKit/Entity). This allows the app to later assign the [`ImageBasedLightReceiverComponent`](https://developer.apple.com/documentation/RealityKit/ImageBasedLightReceiverComponent) to the box environment to enable the environment with image-based lighting.
+To apply image-based lighting to the box environment, the app creates an [`ImageBasedLightComponent`](https://developer.apple.com/documentation/realitykit/imagebasedlightcomponent) and sets it to a placeholder [`Entity`](https://developer.apple.com/documentation/realitykit/entity). This allows the app to later assign the [`ImageBasedLightReceiverComponent`](https://developer.apple.com/documentation/realitykit/imagebasedlightreceivercomponent) to the box environment to enable the environment with image-based lighting.
 
 ```swift
 @MainActor func createEnvironment(on root: Entity) async throws {
@@ -92,7 +92,7 @@ private let portalPlane = ModelEntity(
 )
 ```
 
-The `createPortal()` method sets up the portal and adds it to the `root`. First, it creates a `world` entity to store the content within the portal and sets it with [`WorldComponent`](https://developer.apple.com/documentation/RealityKit/WorldComponent) to separate the `world` entity from the default world, enabling it to be visible only through a portal. Then, it creates the 3D box environment using `createEnvironment(on:)`, and passes in the `world` entity.
+The `createPortal()` method sets up the portal and adds it to the `root`. First, it creates a `world` entity to store the content within the portal and sets it with [`WorldComponent`](https://developer.apple.com/documentation/realitykit/worldcomponent) to separate the `world` entity from the default world, enabling it to be visible only through a portal. Then, it creates the 3D box environment using `createEnvironment(on:)`, and passes in the `world` entity.
 
 ```swift
 @MainActor func createPortal() async {
@@ -122,7 +122,7 @@ The `createPortal()` method sets up the portal and adds it to the `root`. First,
 }
 ```
 
-Finally, it sets the `portalPlane` entity with the [`PortalComponent`](https://developer.apple.com/documentation/RealityKit/PortalComponent) to transform it into a portal that renders the 3D environment within the `world` entity.
+Finally, it sets the `portalPlane` entity with the [`PortalComponent`](https://developer.apple.com/documentation/realitykit/portalcomponent) to transform it into a portal that renders the 3D environment within the `world` entity.
 
 ##### Enter the 3d Environment
 
@@ -146,7 +146,7 @@ struct ImmersiveView: View {
 }
 ```
 
-To handle the enter and exit actions of the portal, the sample creates a button to enter or exit the immersive space based on the current state. The button uses [`openImmersiveSpace`](https://developer.apple.com/documentation/SwiftUI/EnvironmentValues/openImmersiveSpace) and [`dismissImmersiveSpace`](https://developer.apple.com/documentation/SwiftUI/EnvironmentValues/dismissImmersiveSpace) to open and close the immersive space. Because there are multiple paths to close the immersive space and there may be multiple paths to open the immersive space, your app can use the view life-cycle updates to keep track of the current state of the immersive space. Use the [`onAppear(perform:)`](https://developer.apple.com/documentation/SwiftUI/View/onAppear(perform:)) and [`onDisappear(perform:)`](https://developer.apple.com/documentation/SwiftUI/View/onDisappear(perform:)) on the root view of the immersive space to respond to these changes.
+To handle the enter and exit actions of the portal, the sample creates a button to enter or exit the immersive space based on the current state. The button uses [`openImmersiveSpace`](https://developer.apple.com/documentation/swiftui/environmentvalues/openimmersivespace) and [`dismissImmersiveSpace`](https://developer.apple.com/documentation/swiftui/environmentvalues/dismissimmersivespace) to open and close the immersive space. Because there are multiple paths to close the immersive space and there may be multiple paths to open the immersive space, your app can use the view life-cycle updates to keep track of the current state of the immersive space. Use the [`onAppear(perform:)`](https://developer.apple.com/documentation/swiftui/view/onappear(perform:)) and [`onDisappear(perform:)`](https://developer.apple.com/documentation/swiftui/view/ondisappear(perform:)) on the root view of the immersive space to respond to these changes.
 
 ```swift
 ImmersiveSpace(id: appModel.immersiveSpaceID) {

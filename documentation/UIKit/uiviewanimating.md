@@ -29,7 +29,7 @@ Normally, you use the methods of this protocol to manage animations associated w
 
 Animator objects move through a set of states during the processing of a set of animations. These states define the animator’s behavior, including how it handles changes. When implementing your own animators, you must respect these state transitions and keep the [`state`](uiviewanimating/state.md) property updated accurately. The following image shows the states and the state transitions that occur.
 
-![A diagram of state transitions for an animator object.](https://docs-assets.developer.apple.com/published/d05c16c168537552aca846c612890f4c/media-1965743%402x.png)
+![A diagram of state transitions for an animator object.](/images/com.apple.uikit/media-1965743@2x.png)
 
 The inactive state is the animator’s initial state. Every newly created animator starts off in the inactive state. Similarly, an animator that has finished its animations returns to the inactive state. While in the inactive state, you configure the animations that you want to execute for the full duration that you specify.
 
@@ -68,7 +68,7 @@ Calling the [`stopAnimation(_:)`](uiviewanimating/stopanimation(_:).md) method s
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 ### Inherited By
 - [UIViewImplicitlyAnimating](uiviewimplicitlyanimating.md)
 ### Conforming Types

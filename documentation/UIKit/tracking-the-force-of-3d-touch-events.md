@@ -8,7 +8,7 @@ Manipulate your content based on the force of touches.
 
 A touch on the screen primarily conveys the location of that touch. However, devices that support 3D Touch also report the amount of force imparted by the user’s finger onto the screen. (Similarly, Apple Pencil reports the amount of force at its tip to the connected device.) You can use both the touch location and the force value as input to your app. For example, a drawing app might use force to set the thickness of the current line.
 
-![An illustration of how 3D Touch devices can detect touch force. A finger is shown pressing on the display, with rings emanating outward to indicate a force touch.](https://docs-assets.developer.apple.com/published/6cce02da09a2858d0500b92c37705dfd/media-3004389%402x.png)
+![An illustration of how 3D Touch devices can detect touch force. A finger is shown pressing on the display, with rings emanating outward to indicate a force touch.](/images/com.apple.uikit/media-3004389@2x.png)
 
 The raw force value associated with a touch is available in the [`force`](uitouch/force.md) property of the [`UITouch`](uitouch.md) object. You can compare that value against the value in the [`maximumPossibleForce`](uitouch/maximumpossibleforce.md) property to determine the relative amount of force.
 

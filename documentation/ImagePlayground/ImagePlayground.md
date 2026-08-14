@@ -20,13 +20,13 @@ Use the `ImagePlayground` framework to generate custom images using system-suppo
 
 ### SwiftUI presentation
 - [func imagePlaygroundSheet(isPresented: Binding<Bool>, concept: String, sourceImage: Image?, onCompletion: (URL) -> Void, onCancellation: (() -> Void)?) -> some View
-](../SwiftUI/View/imagePlaygroundSheet(isPresented:concept:sourceImage:onCompletion:onCancellation:).md)
+](../swiftui/view/imageplaygroundsheet(ispresented:concept:sourceimage:oncompletion:oncancellation:).md)
   Presents the system sheet to create an image using the specified string and optional starting image.
 - [func imagePlaygroundSheet(isPresented: Binding<Bool>, concepts: [ImagePlaygroundConcept], sourceImage: Image?, onCompletion: (URL) -> Void, onCancellation: (() -> Void)?) -> some View
-](../SwiftUI/View/imagePlaygroundSheet(isPresented:concepts:sourceImage:onCompletion:onCancellation:).md)
+](../swiftui/view/imageplaygroundsheet(ispresented:concepts:sourceimage:oncompletion:oncancellation:).md)
   Presents the system sheet to create an image using one or more concepts and an optional starting image.
 - [func imagePlaygroundSheet(isPresented: Binding<Bool>, concepts: [ImagePlaygroundConcept], sourceImageURL: URL, onCompletion: (URL) -> Void, onCancellation: (() -> Void)?) -> some View
-](../SwiftUI/View/imagePlaygroundSheet(isPresented:concepts:sourceImageURL:onCompletion:onCancellation:).md)
+](../swiftui/view/imageplaygroundsheet(ispresented:concepts:sourceimageurl:oncompletion:oncancellation:).md)
   Presents the system sheet to create an image using one or more concepts and an image URL.
 ### UIKit and AppKit presentation
 - [class ImagePlaygroundViewController](imageplaygroundviewcontroller.md)

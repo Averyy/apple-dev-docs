@@ -24,7 +24,7 @@ Apps distributed for testing with TestFlight contain additional data that an App
 
 The following figure shows a common workflow for measuring your app’s size and performing optimizations.
 
-![Flow chart that provides an overview of the process of measuring an app’s size and when to perform optimizations.](https://docs-assets.developer.apple.com/published/38f7a1fa14b3caf60822d8a97a802dc0/reducing-your-app-s-size-1%402x.png)
+![Flow chart that provides an overview of the process of measuring an app’s size and when to perform optimizations.](/images/com.apple.Xcode/reducing-your-app-s-size-1@2x.png)
 
 To learn more about viewing the file sizes of a build in App Store Connect, see [`View builds and metadata`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/manage-builds/view-builds-and-metadata).
 

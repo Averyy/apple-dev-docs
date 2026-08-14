@@ -22,7 +22,7 @@ let MPMediaItemPropertyBeatsPerMinute: String
 
 #### Discussion
 
-This value is an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) object that represents an [`NSUInteger`](https://developer.apple.com/documentation/ObjectiveC/NSUInteger) data type.
+This value is an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) object that represents an [`NSUInteger`](https://developer.apple.com/documentation/objectivec/nsuinteger) data type.
 
 ## See Also
 

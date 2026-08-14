@@ -18,7 +18,7 @@ var speeds: [AVPlaybackSpeed] { get set }
 
 By default, this property value equals [`systemDefaultSpeeds`](avplaybackspeed/systemdefaultspeeds.md). Setting this property to an empty array hides the playback speed selection user interface.
 
-To set the playback speed programmatically, call the [`selectSpeed(_:)`](avplayerview/selectspeed(_:).md) method, or set the value of the [`defaultRate`](https://developer.apple.com/documentation/AVFoundation/AVPlayer/defaultRate) property on the view controller’s associated [`AVPlayer`](https://developer.apple.com/documentation/AVFoundation/AVPlayer) object.
+To set the playback speed programmatically, call the [`selectSpeed(_:)`](avplayerview/selectspeed(_:).md) method, or set the value of the [`defaultRate`](https://developer.apple.com/documentation/avfoundation/avplayer/defaultrate) property on the view controller’s associated [`AVPlayer`](https://developer.apple.com/documentation/avfoundation/avplayer) object.
 
 ## See Also
 

@@ -19,7 +19,7 @@ let kCVPixelBufferOpenGLESCompatibilityKey: CFString
 
 #### Discussion
 
-The value for this key is of type [`CFBoolean`](https://developer.apple.com/documentation/CoreFoundation/CFBoolean). To use pixel buffers in OpenGL ES rendering, see [`CVOpenGLESTextureCache`](cvopenglestexturecache-q2r.md).
+The value for this key is of type [`CFBoolean`](https://developer.apple.com/documentation/corefoundation/cfboolean). To use pixel buffers in OpenGL ES rendering, see [`CVOpenGLESTextureCache`](cvopenglestexturecache-q2r.md).
 
 ## See Also
 

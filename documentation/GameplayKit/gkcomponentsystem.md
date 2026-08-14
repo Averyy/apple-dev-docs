@@ -25,7 +25,7 @@ A [`GKComponentSystem`](gkcomponentsystem.md) object manages periodic update mes
 
 Each [`GKComponentSystem`](gkcomponentsystem.md) object manages components of a specific [`GKComponent`](gkcomponent.md) subclass. You create a component system with the [`init(componentClass:)`](gkcomponentsystem/init(componentclass:).md) initializer, specifying the component class it will work with. Then, you register the components used by the entities in your game with the [`addComponent(_:)`](gkcomponentsystem/addcomponent(_:).md) or [`addComponent(foundIn:)`](gkcomponentsystem/addcomponent(foundin:).md) methods. The component system will then forward any component-specific messages it receives to all registered instances of its component class.
 
-The most important of the component-specific messages is the [`update(deltaTime:)`](gkcomponentsystem/update(deltatime:).md) method. Call this method from your game’s update/render loop—that is, from a method such as [`update(_:)`](https://developer.apple.com/documentation/SpriteKit/SKScene/update(_:)) (SpriteKit) or [`renderer(_:updateAtTime:)`](https://developer.apple.com/documentation/SceneKit/SCNSceneRendererDelegate/renderer(_:updateAtTime:)) (SceneKit), or from a [`CADisplayLink`](https://developer.apple.com/documentation/QuartzCore/CADisplayLink) (iOS) or [`CVDisplayLink`](https://developer.apple.com/documentation/CoreVideo/CVDisplayLink) (macOS) timer in a custom rendering engine. The component system then forwards to the [`update(deltaTime:)`](gkcomponent/update(deltatime:).md) method of all the [`GKComponent`](gkcomponent.md) subclass instances it manages, allowing those objects to perform per-frame update logic.
+The most important of the component-specific messages is the [`update(deltaTime:)`](gkcomponentsystem/update(deltatime:).md) method. Call this method from your game’s update/render loop—that is, from a method such as [`update(_:)`](https://developer.apple.com/documentation/spritekit/skscene/update(_:)) (SpriteKit) or [`renderer(_:updateAtTime:)`](https://developer.apple.com/documentation/scenekit/scnscenerendererdelegate/renderer(_:updateattime:)) (SceneKit), or from a [`CADisplayLink`](https://developer.apple.com/documentation/quartzcore/cadisplaylink) (iOS) or [`CVDisplayLink`](https://developer.apple.com/documentation/corevideo/cvdisplaylink) (macOS) timer in a custom rendering engine. The component system then forwards to the [`update(deltaTime:)`](gkcomponent/update(deltatime:).md) method of all the [`GKComponent`](gkcomponent.md) subclass instances it manages, allowing those objects to perform per-frame update logic.
 
 For more information on Entity-Component architecture, read [`Entities and Components`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Conceptual/GameplayKit_Guide/EntityComponent.html#//apple_ref/doc/uid/TP40015172-CH6) in [`GameplayKit Programming Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Conceptual/GameplayKit_Guide/index.html#//apple_ref/doc/uid/TP40015172).
 
@@ -59,15 +59,15 @@ For more information on Entity-Component architecture, read [`Entities and Compo
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSFastEnumeration](../Foundation/NSFastEnumeration.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSFastEnumeration](../foundation/nsfastenumeration.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

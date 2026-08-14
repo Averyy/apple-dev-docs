@@ -28,11 +28,11 @@ Speech synthesis is just one of the macOS speech technologies. The speech recogn
 
 The speech feedback window ([`Figure 1`](nsspeechsynthesizer#1965715.md)) displays the text recognized from the user’s speech and the text from which an `NSSpeechSynthesizer` object synthesizes speech. Using the feedback window makes spoken exchange more natural and helps the user understand the synthesized speech.
 
-![None](https://docs-assets.developer.apple.com/published/41fd24182e5b44a0e32aad125d250bef/media-1965715.jpg)
+![None](/images/com.apple.appkit/media-1965715.jpg)
 
 For example, your application may use an [`NSSpeechRecognizer`](nsspeechrecognizer.md) object to listen for the command “Play some music.” When it recognizes this command, your application might then respond by speaking “Which artist?” using a speech synthesizer.
 
-When `UsesFeedbackWindow` is [`true`](https://developer.apple.com/documentation/Swift/true), the speech synthesizer uses the feedback window if its visible, which the user specifies in System Preferences > Speech.
+When `UsesFeedbackWindow` is [`true`](https://developer.apple.com/documentation/swift/true), the speech synthesizer uses the feedback window if its visible, which the user specifies in System Preferences > Speech.
 
 ## Topics
 
@@ -117,14 +117,14 @@ When `UsesFeedbackWindow` is [`true`](https://developer.apple.com/documentation/
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

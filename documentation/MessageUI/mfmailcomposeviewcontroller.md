@@ -24,15 +24,15 @@ Use this view controller to display a standard email interface inside your app. 
 
 The composition interface doesn’t guarantee the delivery of your email message; it only lets you construct the initial message and present it for user approval. The person may opt to cancel the composition interface which discards the message and its contents. If the person opts to send the message, the message queues in the user’s Mail app outbox. The Mail app is ultimately responsible for sending the message.
 
-![Screenshot of the email composition view in Mail, indicating the fields for recipients, subject, and body. ](https://docs-assets.developer.apple.com/published/a4e2bdda7e18fb7a247132800fdb87e8/media-4288076%402x.png)
+![Screenshot of the email composition view in Mail, indicating the fields for recipients, subject, and body. ](/images/com.apple.messageui/media-4288076@2x.png)
 
-> ❗ **Important**:  You must not modify the view hierarchy presented by this view controller. However, you can customize the appearance of the interface using the [`UIAppearance`](https://developer.apple.com/documentation/UIKit/UIAppearance) protocol.
+> ❗ **Important**:  You must not modify the view hierarchy presented by this view controller. However, you can customize the appearance of the interface using the [`UIAppearance`](https://developer.apple.com/documentation/uikit/uiappearance) protocol.
 
 An alternate way to compose emails is to create and open a URL that uses the `mailto` scheme. URLs of that type go directly to the built-in Mail app, which uses your URL to configure a message. For information about the structure of `mailto` URLs, see [`Apple URL Scheme Reference`](https://developer.apple.comhttps://developer.apple.com/library/archive/featuredarticles/iPhoneURLScheme_Reference/Introduction/Introduction.html#//apple_ref/doc/uid/TP40007899).
 
 ##### Checking the Availability of the Composition Interface
 
-Before presenting the mail compose view controller, always call the [`canSendMail()`](mfmailcomposeviewcontroller/cansendmail().md) method to see if the person configured the current device to send email. If the person’s device isn’t set up for the delivery of email, you can notify the person or disable the email dispatch features in your application. You shouldn’t attempt to use this interface if the [`canSendMail()`](mfmailcomposeviewcontroller/cansendmail().md) method returns [`false`](https://developer.apple.com/documentation/Swift/false).
+Before presenting the mail compose view controller, always call the [`canSendMail()`](mfmailcomposeviewcontroller/cansendmail().md) method to see if the person configured the current device to send email. If the person’s device isn’t set up for the delivery of email, you can notify the person or disable the email dispatch features in your application. You shouldn’t attempt to use this interface if the [`canSendMail()`](mfmailcomposeviewcontroller/cansendmail().md) method returns [`false`](https://developer.apple.com/documentation/swift/false).
 
 **Swift**:
 
@@ -151,36 +151,36 @@ For more information on how to present and dismiss view controllers, see [`View 
 - [let MFMailComposeErrorDomain: String](mfmailcomposeerrordomain.md)
   The domain used for error objects that are associated with the mail composition interface.
 - [MFMailComposeError.Code](mfmailcomposeerror/code.md)
-  Error codes for [`NSError`](https://developer.apple.com/documentation/Foundation/NSError) objects that are associated with the mail composition interface.
+  Error codes for [`NSError`](https://developer.apple.com/documentation/foundation/nserror) objects that are associated with the mail composition interface.
 ### Instance Methods
 - [func insertCollaborationItemProvider(NSItemProvider, completionHandler: (Bool) -> Void)](mfmailcomposeviewcontroller/insertcollaborationitemprovider(_:completionhandler:).md)
 
 ## Relationships
 
 ### Inherits From
-- [UINavigationController](../UIKit/UINavigationController.md)
+- [UINavigationController](../uikit/uinavigationcontroller.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCoding](../Foundation/NSCoding.md)
-- [NSExtensionRequestHandling](../Foundation/NSExtensionRequestHandling.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [NSTouchBarProvider](../AppKit/NSTouchBarProvider.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
-- [UIActivityItemsConfigurationProviding](../UIKit/UIActivityItemsConfigurationProviding.md)
-- [UIAppearanceContainer](../UIKit/UIAppearanceContainer.md)
-- [UIContentContainer](../UIKit/UIContentContainer.md)
-- [UIFocusEnvironment](../UIKit/UIFocusEnvironment.md)
-- [UIPasteConfigurationSupporting](../UIKit/UIPasteConfigurationSupporting.md)
-- [UIResponderStandardEditActions](../UIKit/UIResponderStandardEditActions.md)
-- [UIStateRestoring](../UIKit/UIStateRestoring.md)
-- [UITraitChangeObservable](../UIKit/UITraitChangeObservable-67e94.md)
-- [UITraitEnvironment](../UIKit/UITraitEnvironment.md)
-- [UIUserActivityRestoring](../UIKit/UIUserActivityRestoring.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCoding](../foundation/nscoding.md)
+- [NSExtensionRequestHandling](../foundation/nsextensionrequesthandling.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSTouchBarProvider](../appkit/nstouchbarprovider.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
+- [UIActivityItemsConfigurationProviding](../uikit/uiactivityitemsconfigurationproviding.md)
+- [UIAppearanceContainer](../uikit/uiappearancecontainer.md)
+- [UIContentContainer](../uikit/uicontentcontainer.md)
+- [UIFocusEnvironment](../uikit/uifocusenvironment.md)
+- [UIPasteConfigurationSupporting](../uikit/uipasteconfigurationsupporting.md)
+- [UIResponderStandardEditActions](../uikit/uiresponderstandardeditactions.md)
+- [UIStateRestoring](../uikit/uistaterestoring.md)
+- [UITraitChangeObservable](../uikit/uitraitchangeobservable-67e94.md)
+- [UITraitEnvironment](../uikit/uitraitenvironment.md)
+- [UIUserActivityRestoring](../uikit/uiuseractivityrestoring.md)
 
 
 ---

@@ -26,8 +26,8 @@ A valid [`MPSMatrixMultiplication`](mpsmatrixmultiplication.md) object or `nil`,
 ## Parameters
 
 - `device`: The device on which the matrix multiplication kernel will run.
-- `transposeLeft`: A boolean value that indicates if the left input matrix should be used in its transposed form. If the value is [`true`](https://developer.apple.com/documentation/Swift/true), then `op(A) = A**T`; otherwise, `op(A) = A`.
-- `transposeRight`: A boolean value that indicates if the right input matrix should be used in its transposed form. If the value is [`true`](https://developer.apple.com/documentation/Swift/true), then `op(B) = B**T`; otherwise, `op(B) = B`.
+- `transposeLeft`: A boolean value that indicates if the left input matrix should be used in its transposed form. If the value is [`true`](https://developer.apple.com/documentation/swift/true), then `op(A) = A**T`; otherwise, `op(A) = A`.
+- `transposeRight`: A boolean value that indicates if the right input matrix should be used in its transposed form. If the value is [`true`](https://developer.apple.com/documentation/swift/true), then `op(B) = B**T`; otherwise, `op(B) = B`.
 - `resultRows`: The number of rows in the result matrix (`M` in the *BLAS GEMM* description).
 - `resultColumns`: The number of columns in the result matrix (`N` in the *BLAS GEMM* description).
 - `interiorColumns`: The number of columns of the left input matrix after the appropriate transpose operation has been applied (`K` in the *BLAS GEMM* description).

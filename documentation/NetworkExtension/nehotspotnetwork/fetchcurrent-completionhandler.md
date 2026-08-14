@@ -22,12 +22,12 @@ class func fetchCurrent() async -> NEHotspotNetwork?
 
 This method produces a non-`nil` [`NEHotspotNetwork`](nehotspotnetwork.md) object only when the requesting app meets at least one of the following criteria:
 
-- The app is using the [`Core Location`](https://developer.apple.com/documentation/CoreLocation) API and has user’s authorization to access precise location.
+- The app is using the [`Core Location`](https://developer.apple.com/documentation/corelocation) API and has user’s authorization to access precise location.
 - The app used the [`NEHotspotConfiguration`](nehotspotconfiguration.md) API to configure the current Wi-Fi network.
 - The app has active VPN configurations installed.
 - The app has an active [`NEDNSSettingsManager`](nednssettingsmanager.md) configuration installed.
 
-This method also requires the app to have the [`Access Wi-Fi Information Entitlement`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.networking.wifi-info), and produces `nil` if the app lacks this entitlement.
+This method also requires the app to have the [`Access Wi-Fi Information Entitlement`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.networking.wifi-info), and produces `nil` if the app lacks this entitlement.
 
 ## Parameters
 

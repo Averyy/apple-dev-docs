@@ -10,11 +10,11 @@ Add a layer of mesh to objects in the real world, using scene reconstruction in 
 
 #### Overview
 
-With [`ARKit`](https://developer.apple.com/documentation/ARKit) in visionOS, you can create immersive experiences that integrate with real-world environments. This sample demonstrates how to use ARKit’s scene-reconstruction capability to construct and display a layer of mesh on real-world objects, like the scene in the following video:
+With [`ARKit`](https://developer.apple.com/documentation/arkit) in visionOS, you can create immersive experiences that integrate with real-world environments. This sample demonstrates how to use ARKit’s scene-reconstruction capability to construct and display a layer of mesh on real-world objects, like the scene in the following video:
 
 ##### Capture the Anchors From the Scene
 
-The sample uses the `MeshAnchorGenerator` class to retrieve anchor information from [`SceneReconstructionProvider`](https://developer.apple.com/documentation/ARKit/SceneReconstructionProvider). In the following code snippet, the generator takes in the root entity from the reality view to perform actions on the entities and create a dictionary to store the collection of anchors:
+The sample uses the `MeshAnchorGenerator` class to retrieve anchor information from [`SceneReconstructionProvider`](https://developer.apple.com/documentation/arkit/scenereconstructionprovider). In the following code snippet, the generator takes in the root entity from the reality view to perform actions on the entities and create a dictionary to store the collection of anchors:
 
 ```swift
 import SwiftUI
@@ -36,7 +36,7 @@ class MeshAnchorGenerator {
 }
 ```
 
-The `run(_:)` method processes all anchor updates asynchronously from the [`SceneReconstructionProvider`](https://developer.apple.com/documentation/ARKit/SceneReconstructionProvider). When an anchor detects either an `.added` or an `.updated` event, it creates a new entity if one isn’t already present, and it updates its mesh, material, and transform properties:
+The `run(_:)` method processes all anchor updates asynchronously from the [`SceneReconstructionProvider`](https://developer.apple.com/documentation/arkit/scenereconstructionprovider). When an anchor detects either an `.added` or an `.updated` event, it creates a new entity if one isn’t already present, and it updates its mesh, material, and transform properties:
 
 ```swift
 @MainActor
@@ -100,7 +100,7 @@ func run(_ sceneRec: SceneReconstructionProvider) async {
 
 ##### Add Scene Reconstruction to the View
 
-To track the anchors, the app must start an `ARKitSession`. The app creates the `root` to store all the entities, the [`ARKitSession`](https://developer.apple.com/documentation/ARKit/ARKitSession) instance, and the [`SceneReconstructionProvider`](https://developer.apple.com/documentation/ARKit/SceneReconstructionProvider) instance to perform scene reconstruction:
+To track the anchors, the app must start an `ARKitSession`. The app creates the `root` to store all the entities, the [`ARKitSession`](https://developer.apple.com/documentation/arkit/arkitsession) instance, and the [`SceneReconstructionProvider`](https://developer.apple.com/documentation/arkit/scenereconstructionprovider) instance to perform scene reconstruction:
 
 ```swift
 import SwiftUI
@@ -189,7 +189,7 @@ struct EntryPoint: App {
 }
 ```
 
-The `MainView` launches the immersive space with [`openImmersiveSpace`](https://developer.apple.com/documentation/SwiftUI/EnvironmentValues/openImmersiveSpace) after it appears:
+The `MainView` launches the immersive space with [`openImmersiveSpace`](https://developer.apple.com/documentation/swiftui/environmentvalues/openimmersivespace) after it appears:
 
 ```swift
 import SwiftUI

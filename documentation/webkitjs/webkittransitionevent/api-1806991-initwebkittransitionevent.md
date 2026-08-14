@@ -17,9 +17,9 @@ You use this method to initialize the value of a `WebKitTransitionEvent` object 
 
 ## Parameters
 
-- `typeArg`: Possible values for this argument are described in  . This type of event can bubble and be canceled. Its   property is always set.
-- `canBubbleArg`: Determines whether the event can bubble. Pass   if it can bubble; otherwise,  .
-- `cancelableArg`: Determines whether the event’s default action can be prevented. Pass   if it can be prevented; otherwise,  .
+- `typeArg`: The type of event.  Possible values for this argument are described in `Types of Transition Events`. This type of event can bubble and be canceled. Its `propertyName` property is always set.
+- `canBubbleArg`: Determines whether the event can bubble. Pass `true` if it can bubble; otherwise, `false`.
+- `cancelableArg`: Determines whether the event’s default action can be prevented. Pass `true` if it can be prevented; otherwise, `false`.
 - `propertyNameArg`: The name of the CSS property associated with this event.
 - `elapsedTimeArg`: The duration of the transition, in seconds, since the event was sent.
 

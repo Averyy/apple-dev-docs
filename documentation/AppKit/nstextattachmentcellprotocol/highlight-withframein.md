@@ -18,7 +18,7 @@ func highlight(_ flag: Bool, withFrame cellFrame: NSRect, in controlView: NSView
 
 ## Parameters
 
-- `flag`: A Boolean value that indicates whether to highlight the image. Add a highlight if the value is [`true`](https://developer.apple.com/documentation/Swift/true).
+- `flag`: A Boolean value that indicates whether to highlight the image. Add a highlight if the value is [`true`](https://developer.apple.com/documentation/swift/true).
 - `cellFrame`: The frame rectangle in which to draw.
 - `controlView`: The view in which to draw.
 

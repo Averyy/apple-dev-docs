@@ -38,8 +38,8 @@ You can include one or more in the [`InsightEvaluator.InsightContext`](insightev
 
 ### Conforms To
 - [InsightEvaluator.InsightRequestProtocol](insightevaluator/insightrequestprotocol.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

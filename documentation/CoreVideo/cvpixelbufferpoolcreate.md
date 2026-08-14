@@ -30,7 +30,7 @@ Use [`CVPixelBufferPoolRelease`](cvpixelbufferpoolrelease.md) to release ownersh
 
 ## Parameters
 
-- `allocator`: The allocator to use for creating the buffer pool. Pass [`kCFAllocatorDefault`](https://developer.apple.com/documentation/CoreFoundation/kCFAllocatorDefault) to use the default allocator. See [`Predefined Allocators`](https://developer.apple.com/documentation/CoreFoundation/predefined-allocators) for additional values you can use.
+- `allocator`: The allocator to use for creating the buffer pool. Pass [`kCFAllocatorDefault`](https://developer.apple.com/documentation/corefoundation/kcfallocatordefault) to use the default allocator. See [`Predefined Allocators`](https://developer.apple.com/documentation/corefoundation/predefined-allocators) for additional values you can use.
 - `poolAttributes`: A Core Foundation dictionary that contains the attributes for the pixel buffer pool. See the Constants topic group below for possible values.
 - `pixelBufferAttributes`: An optional dictionary that contains the attributes to use to create new pixel buffers within the pool. See [`Pixel Buffer Attribute Keys`](pixel-buffer-attribute-keys.md) for possible values.
 - `poolOut`: On output, the newly created pixel buffer pool.

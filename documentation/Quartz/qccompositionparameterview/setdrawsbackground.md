@@ -16,7 +16,7 @@ func setDrawsBackground(_ flag: Bool)
 
 ## Parameters
 
-- `flag`: [`true`](https://developer.apple.com/documentation/Swift/true) for the view to draw its background; otherwise [`false`](https://developer.apple.com/documentation/Swift/false).
+- `flag`: [`true`](https://developer.apple.com/documentation/swift/true) for the view to draw its background; otherwise [`false`](https://developer.apple.com/documentation/swift/false).
 
 ## See Also
 

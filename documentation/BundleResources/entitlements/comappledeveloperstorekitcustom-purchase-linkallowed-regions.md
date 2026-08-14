@@ -37,7 +37,7 @@ If your account receives this entitlement, you can add it to your app by opening
 
 > ❗ **Important**: Provide the regions where you intend to offer this functionality. This must only include regions where Apple supports custom purchase link options.
 
-For more information, see [`External Purchase`](https://developer.apple.com/documentation/StoreKit/external-purchase).
+For more information, see [`External Purchase`](https://developer.apple.com/documentation/storekit/external-purchase).
 
 ## See Also
 

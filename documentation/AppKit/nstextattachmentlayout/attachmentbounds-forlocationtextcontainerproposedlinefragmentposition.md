@@ -17,19 +17,19 @@ func attachmentBounds(for attributes: [NSAttributedString.Key : Any], location: 
 
 #### Return Value
 
-Returns a [`CGRect`](https://developer.apple.com/documentation/CoreFoundation/CGRect) that describes the boundaries of the attachment, or `CGRectZero.`
+Returns a [`CGRect`](https://developer.apple.com/documentation/corefoundation/cgrect) that describes the boundaries of the attachment, or `CGRectZero.`
 
 #### Discussion
 
-The framework interprets the bounds origin to match `position` inside `proposedLineFragment`. The default [`NSTextAttachment`](nstextattachment.md) implementation returns bounds if the value isn’t equivalent to [`CGRectZero`](https://developer.apple.com/documentation/CoreGraphics/CGRectZero); otherwise, it derives the bounds value from `image.size`. Conforming objects can implement more sophisticated logic for negotiating the frame size based on the available container space and proposed line fragment rectangle.
+The framework interprets the bounds origin to match `position` inside `proposedLineFragment`. The default [`NSTextAttachment`](nstextattachment.md) implementation returns bounds if the value isn’t equivalent to [`CGRectZero`](https://developer.apple.com/documentation/coregraphics/cgrectzero); otherwise, it derives the bounds value from `image.size`. Conforming objects can implement more sophisticated logic for negotiating the frame size based on the available container space and proposed line fragment rectangle.
 
 ## Parameters
 
-- `attributes`: A dictionary of [`NSAttributedString.Key`](https://developer.apple.com/documentation/Foundation/NSAttributedString/Key) attributes.
+- `attributes`: A dictionary of [`NSAttributedString.Key`](https://developer.apple.com/documentation/foundation/nsattributedstring/key) attributes.
 - `location`: An [`NSTextLocation`](nstextlocation.md) that indicates that start of the string.
 - `textContainer`: The [`NSTextContainer`](nstextcontainer.md) that contains the source text.
-- `proposedLineFragment`: A [`CGRect`](https://developer.apple.com/documentation/CoreFoundation/CGRect) that describes the boundaries of the line fragment.
-- `position`: A [`CGPoint`](https://developer.apple.com/documentation/CoreFoundation/CGPoint) inside `proposedLineFragment`.
+- `proposedLineFragment`: A [`CGRect`](https://developer.apple.com/documentation/corefoundation/cgrect) that describes the boundaries of the line fragment.
+- `position`: A [`CGPoint`](https://developer.apple.com/documentation/corefoundation/cgpoint) inside `proposedLineFragment`.
 
 ## See Also
 

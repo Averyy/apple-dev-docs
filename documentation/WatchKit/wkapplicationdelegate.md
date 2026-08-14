@@ -23,7 +23,7 @@ protocol WKApplicationDelegate : NSObjectProtocol
 
 Implement the delegate’s methods to respond to your app’s life-cycle events, such as the activation and deactivation of your app. You can also implement delegate methods to respond to background tasks, Siri intents, workout sessions, or Handoff activity from another devices.
 
-To add an app delegate, define a delegate class that subclasses [`NSObject`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class) and adopts the [`WKApplicationDelegate`](wkapplicationdelegate.md) protocol.
+To add an app delegate, define a delegate class that subclasses [`NSObject`](https://developer.apple.com/documentation/objectivec/nsobject-swift.class) and adopts the [`WKApplicationDelegate`](wkapplicationdelegate.md) protocol.
 
 ```swift
 import WatchKit
@@ -33,7 +33,7 @@ class MyWatchAppDelegate: NSObject, WKApplicationDelegate {
 }
 ```
 
-Then define an app delegate adaptor in your SwiftUI [`App`](https://developer.apple.com/documentation/SwiftUI/App) structure.
+Then define an app delegate adaptor in your SwiftUI [`App`](https://developer.apple.com/documentation/swiftui/app) structure.
 
 ```swift
 import SwiftUI
@@ -111,11 +111,11 @@ Finally, implement the delegate methods you want to handle.
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 
-- [Setting up a watchOS project](../watchOS-Apps/setting-up-a-watchos-project.md)
+- [Setting up a watchOS project](../watchos-apps/setting-up-a-watchos-project.md)
   Create a new watchOS project or add a watch target to an existing iOS project.
 - [class WKApplication](wkapplication.md)
   The centralized point of control and coordination for apps with a single watchOS app target.
@@ -127,7 +127,7 @@ Finally, implement the delegate methods you want to handle.
   Creates the application object and the application delegate, and sets up the app’s event cycle.
 - [class WKInterfaceDevice](wkinterfacedevice.md)
   An object that provides information about the user’s Apple Watch.
-- [WKPrefersNetworkUponForeground](../BundleResources/Information-Property-List/WKPrefersNetworkUponForeground.md)
+- [WKPrefersNetworkUponForeground](../bundleresources/information-property-list/wkprefersnetworkuponforeground.md)
   A Boolean value that indicates whether an app requires network access on launch.
 
 

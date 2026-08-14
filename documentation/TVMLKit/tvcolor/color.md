@@ -3,7 +3,7 @@
 **Framework**: TVMLKit  
 **Kind**: property
 
-A [`UIColor`](https://developer.apple.com/documentation/UIKit/UIColor) object used to color an element.
+A [`UIColor`](https://developer.apple.com/documentation/uikit/uicolor) object used to color an element.
 
 **Availability**:
 - tvOS 9.0+

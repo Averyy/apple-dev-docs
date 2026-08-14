@@ -6,7 +6,7 @@ Design the appearance of a graphic complication using SwiftUI.
 
 #### Overview
 
-ClockKit provides SwiftUI templates for all of the graphic complication families. These templates use a [`View`](https://developer.apple.com/documentation/SwiftUI/View) instance to define some or all of the complication’s content. To access these templates, import both ClockKit and SwiftUI.
+ClockKit provides SwiftUI templates for all of the graphic complication families. These templates use a [`View`](https://developer.apple.com/documentation/swiftui/view) instance to define some or all of the complication’s content. To access these templates, import both ClockKit and SwiftUI.
 
 ```swift
 import ClockKit
@@ -25,9 +25,9 @@ These templates provide a blank canvas that you can use to draw the entire compl
 
 ClockKit varies the SwiftUI view’s size based on the template. The SwiftUI template replaces a full color image provider with a SwiftUI view. The view has the same dimensions as the corresponding image.
 
-Also, the template may mask the SwiftUI view to a circle or apply a corner radius to the view, just as it does for the full color images. In particular, the [`CLKComplicationTemplateGraphicRectangularFullView`](clkcomplicationtemplategraphicrectangularfullview.md) template provides the full graphic rectangular complication as a single SwiftUI view. This view is 162 pt x 69 pt on the 40 mm Apple Watch, and 184 pt x 78 pt on the 44 mm watch, but the template provides a safe area inset to help you avoid clipping your content. Use the [`edgesIgnoringSafeArea(_:)`](https://developer.apple.com/documentation/SwiftUI/View/edgesIgnoringSafeArea(_:)) modifier, if you need to fill the complication to the edges.
+Also, the template may mask the SwiftUI view to a circle or apply a corner radius to the view, just as it does for the full color images. In particular, the [`CLKComplicationTemplateGraphicRectangularFullView`](clkcomplicationtemplategraphicrectangularfullview.md) template provides the full graphic rectangular complication as a single SwiftUI view. This view is 162 pt x 69 pt on the 40 mm Apple Watch, and 184 pt x 78 pt on the 44 mm watch, but the template provides a safe area inset to help you avoid clipping your content. Use the [`edgesIgnoringSafeArea(_:)`](https://developer.apple.com/documentation/swiftui/view/edgesignoringsafearea(_:)) modifier, if you need to fill the complication to the edges.
 
-![An illustration showing a graph drawn using the rectangular full-view template.](https://docs-assets.developer.apple.com/published/acd6832a230be836af2d31f4adf36337/media-3683203%402x.png)
+![An illustration showing a graph drawn using the rectangular full-view template.](/images/com.apple.clockkit/media-3683203@2x.png)
 
 For additional details, see each template’s class reference document.
 
@@ -47,9 +47,9 @@ To control how the system tints your view, divide your view hierarchy into two l
 
 For most watch faces, ClockKit applies the user-selected tint color to one layer, and a system-defined color to the other. For example, the Infograph watch face applies white to the background and the user-selected tint to the foreground. However, the foreground and background colors can change from face to face. in the X-Large watch face, ClockKit applies white to the foreground, and the tint color to the background. On other faces, like Solar Dial, it applies system-defined colors to both layers.
 
-![Two watch faces. The first face displays a tinted circular graphic template in the upper left corner as a red icon on a white background. The second face displays the extra-large version of that template in the center of the screen with a white icon on a red background.](https://docs-assets.developer.apple.com/published/7dd0c57b64844500c2ab6376343e33ef/media-3666656%402x.png)
+![Two watch faces. The first face displays a tinted circular graphic template in the upper left corner as a red icon on a white background. The second face displays the extra-large version of that template in the center of the screen with a white icon on a red background.](/images/com.apple.clockkit/media-3666656@2x.png)
 
-To divide your view into layers, add the [`complicationForeground()`](https://developer.apple.com/documentation/SwiftUI/View/complicationForeground()) modifier to part of your view hierarchy. That view and all of its subviews become the foreground layer. Everything else is in the background layer.
+To divide your view into layers, add the [`complicationForeground()`](https://developer.apple.com/documentation/swiftui/view/complicationforeground()) modifier to part of your view hierarchy. That view and all of its subviews become the foreground layer. Everything else is in the background layer.
 
 ```swift
 ZStack {
@@ -64,9 +64,9 @@ ZStack {
 }
 ```
 
-![An image of two watch faces with an extra-large circular complication. The first face displays the full-color version, while the second displays the tinted version.](https://docs-assets.developer.apple.com/published/72c68d04d89f5bcdbf64fef840e0f04b/media-3666654%402x.png)
+![An image of two watch faces with an extra-large circular complication. The first face displays the full-color version, while the second displays the tinted version.](/images/com.apple.clockkit/media-3666654@2x.png)
 
-For even greater control, you can check the complication’s rendering mode, and then change the design based on whether the system displays the face in a full color or a tinted mode. You can access the current [`ComplicationRenderingMode`](complicationrenderingmode.md) value from the [`Environment`](https://developer.apple.com/documentation/SwiftUI/Environment).
+For even greater control, you can check the complication’s rendering mode, and then change the design based on whether the system displays the face in a full color or a tinted mode. You can access the current [`ComplicationRenderingMode`](complicationrenderingmode.md) value from the [`Environment`](https://developer.apple.com/documentation/swiftui/environment).
 
 ```swift
 @Environment(\.complicationRenderingMode) var renderingMode
@@ -99,14 +99,14 @@ var body: some View {
 
 In this example, if the system renders the watch face in [`ComplicationRenderingMode.fullColor`](complicationrenderingmode/fullcolor.md) mode, it uses a solid blue circle as the background. However, if the system renders the face in [`ComplicationRenderingMode.tinted`](complicationrenderingmode/tinted.md) mode, it uses a gradient fill. For a tinted complication, the selected color has no effect; the system only looks at the opacity, and then applies its own color.
 
-![An image of two watch faces with an extra-large circular complication. The first face displays the full-color version, while the second displays the tinted version with a gradient fill.](https://docs-assets.developer.apple.com/published/8f42c390bf5d10537538cd2340933901/media-3666655%402x.png)
+![An image of two watch faces with an extra-large circular complication. The first face displays the full-color version, while the second displays the tinted version with a gradient fill.](/images/com.apple.clockkit/media-3666655@2x.png)
 
 ##### Preview the Complication
 
 Like other SwiftUI views, you can preview your complications as you design them. To enable previews:
 
-1. Add a [`PreviewProvider`](https://developer.apple.com/documentation/SwiftUI/PreviewProvider) to the bottom of your complication controller’s file.
-2. In the [`previews`](https://developer.apple.com/documentation/SwiftUI/PreviewProvider/previews-swift.type.property) property, instantiate your template, and call its `previewContext(faceColor:)` method.
+1. Add a [`PreviewProvider`](https://developer.apple.com/documentation/swiftui/previewprovider) to the bottom of your complication controller’s file.
+2. In the [`previews`](https://developer.apple.com/documentation/swiftui/previewprovider/previews-swift.type.property) property, instantiate your template, and call its `previewContext(faceColor:)` method.
 
 Calling `previewContext()` with no argument defaults to a full-color watch face. To preview a tinted watch face, pass the desired tint color to the `faceColor` parameter. Use a `Group` to preview multiple complications at once.
 
@@ -123,7 +123,7 @@ struct ComplicationController_Previews: PreviewProvider {
 }
 ```
 
-![An image of two watch previews of an extra-large circular complication. The first preview displays the full-color version, while the second displays a red-tinted version.](https://docs-assets.developer.apple.com/published/8111333d80569f7f219ac5de2a4f1539/media-3666657%402x.png)
+![An image of two watch previews of an extra-large circular complication. The first preview displays the full-color version, while the second displays a red-tinted version.](/images/com.apple.clockkit/media-3666657@2x.png)
 
 ## See Also
 

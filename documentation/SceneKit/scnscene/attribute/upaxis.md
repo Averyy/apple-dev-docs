@@ -22,7 +22,7 @@ static let upAxis: SCNScene.Attribute
 
 #### Discussion
 
-The [`SCNVector3`](scnvector3.md)structure (in an [`NSValue`](https://developer.apple.com/documentation/Foundation/NSValue) object) may be present in scenes loaded from scene files produced using external tools, but has no effect on SceneKit’s processing of the scene. Use this vector when combining elements from different scenes so that they appear in their expected orientation.
+The [`SCNVector3`](scnvector3.md)structure (in an [`NSValue`](https://developer.apple.com/documentation/foundation/nsvalue) object) may be present in scenes loaded from scene files produced using external tools, but has no effect on SceneKit’s processing of the scene. Use this vector when combining elements from different scenes so that they appear in their expected orientation.
 
 ## See Also
 

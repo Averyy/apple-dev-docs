@@ -41,7 +41,7 @@ Follow these steps to enable Shader Validation using the runtime diagnostics opt
 
 Xcode enables Shader Validation each time you run your scheme.
 
-![A screenshot of Metal validation options with the Shader Validation option enabled and the quick jump button highlighted.](https://docs-assets.developer.apple.com/published/601a622b3d63955df82ad34360db27b5/gputools-runtime-shader-jump%402x.png)
+![A screenshot of Metal validation options with the Shader Validation option enabled and the quick jump button highlighted.](/images/com.apple.Xcode/gputools-runtime-shader-jump@2x.png)
 
 ##### Customize Shader Validation Options
 
@@ -144,17 +144,17 @@ To print the UIDs to Console or a `log stream` instance, set `MTL_SHADER_VALIDAT
 
 > **Note**: To see the logs, go to Action > Include Debug Messages in Console.
 
-![A screenshot of the Console displaying dumped Shader Validation UIDs.](https://docs-assets.developer.apple.com/published/1b67f69cc82a8010b711b747ed1a96d0/gputools-runtime-shader-validation-uid-in-console%402x.png)
+![A screenshot of the Console displaying dumped Shader Validation UIDs.](/images/com.apple.Xcode/gputools-runtime-shader-validation-uid-in-console@2x.png)
 
 ##### View Shader Validation Errors in Xcode
 
 After enabling Shader Validation, if Metal encounters errors while executing the commands in a command buffer, Xcode displays the error details in the source editor as shown below:
 
-![A screenshot of the Xcode source editor with a triggered Shader Validation error.](https://docs-assets.developer.apple.com/published/078c74d9ef447399b4936e42d7ba93a1/gputools-runtime-shader-trap%402x.png)
+![A screenshot of the Xcode source editor with a triggered Shader Validation error.](/images/com.apple.Xcode/gputools-runtime-shader-trap@2x.png)
 
 You can find the breakpoint in the Breakpoint navigator if you want to modify or remove it in the future. For more information, see [`Setting breakpoints to pause your running app`](setting-breakpoints-to-pause-your-running-app.md).
 
-![A screenshot of the Xcode Breakpoint navigator with a Shader Validation breakpoint enabled.](https://docs-assets.developer.apple.com/published/e340aa8ab8ccc8e2b6450e709c2afdf9/gputools-runtime-shader-breakpoint%402x.png)
+![A screenshot of the Xcode Breakpoint navigator with a Shader Validation breakpoint enabled.](/images/com.apple.Xcode/gputools-runtime-shader-breakpoint@2x.png)
 
 If you discover an error in your shader, consider taking a capture and investigating with the shader debugger (see [`Investigating visual artifacts`](investigating-visual-artifacts.md)).
 
@@ -180,7 +180,7 @@ You can also enable Shader Validation and customize its behavior by setting the 
 - **MTL_SHADER_VALIDATION_FAIL_MODE**: Sets the behavior for handling invalid accesses. Possible values are `zerofill` (default) and `allow`. `zerofill` causes invalid reads to return `0`, and drops any invalid writes. `allow` allows an invalid read or write, but can result in command buffer failure, depending on the platform. It also reduces compile and runtime performance impact.
 - **MTL_SHADER_VALIDATION_GLOBAL_MEMORY=1**: Checks all global memory accesses. Accessing invalid memory follows the behavior that `MTL_SHADER_VALIDATION_FAIL_MODE` specifies.
 - **MTL_SHADER_VALIDATION_THREADGROUP_MEMORY=1**: Checks all threadgroup memory accesses. Accessing invalid memory follows the behavior that `MTL_SHADER_VALIDATION_FAIL_MODE` specifies.
-- **`MTL_SHADER_VALIDATION_TEXTURE_USAGE=1`**: Checks all texture member functions, such as `read`, `write`, `get_width`, and so on. Metal honors your setting for `MTL_SHADER_VALIDATION_FAIL_MODE` when an app triggers an invalid texture operation, including accessing a `nil` texture instance, a valid but nonresident texture instance, a resident texture instance that’s a type that doesn’t match the shader’s signature, or a resident texture instance that doesn’t have an appropriate [`MTLResourceUsage`](https://developer.apple.com/documentation/Metal/MTLResourceUsage) configuration from one of the resource usage methods of an [`MTLComputeCommandEncoder`](https://developer.apple.com/documentation/Metal/MTLComputeCommandEncoder) or [`MTLRenderCommandEncoder`](https://developer.apple.com/documentation/Metal/MTLRenderCommandEncoder) instance (see [`Argument buffer resource preparation commands`](https://developer.apple.com/documentation/Metal/argument-buffer-resource-preparation-commands)).
+- **`MTL_SHADER_VALIDATION_TEXTURE_USAGE=1`**: Checks all texture member functions, such as `read`, `write`, `get_width`, and so on. Metal honors your setting for `MTL_SHADER_VALIDATION_FAIL_MODE` when an app triggers an invalid texture operation, including accessing a `nil` texture instance, a valid but nonresident texture instance, a resident texture instance that’s a type that doesn’t match the shader’s signature, or a resident texture instance that doesn’t have an appropriate [`MTLResourceUsage`](https://developer.apple.com/documentation/metal/mtlresourceusage) configuration from one of the resource usage methods of an [`MTLComputeCommandEncoder`](https://developer.apple.com/documentation/metal/mtlcomputecommandencoder) or [`MTLRenderCommandEncoder`](https://developer.apple.com/documentation/metal/mtlrendercommandencoder) instance (see [`Argument buffer resource preparation commands`](https://developer.apple.com/documentation/metal/argument-buffer-resource-preparation-commands)).
 - **`MTL_SHADER_VALIDATION_STACK_OVERFLOW=1`**: Checks all indirect calls (calls by function pointer, visible functions, intersection functions, and dynamic libraries), as well as recursive calls. If the call stack depth for such functions exceeds the value in `maxCallStackDepth` for that stage, an error occurs and the system skips the function call.
 - **`MTL_SHADER_VALIDATION_TENSOR_VALIDATION=1`**: Checks tensor operations for invalid arguments. If this value is set to any non-zero value, shader validation instruments all tensors. `MTL_SHADER_VALIDATION_FAIL_MODE` determines the result of accessing invalid memory. Defaults to `1`. Set to `0` to disable.
 - **`MTL_SHADER_VALIDATION_GENERIC_ADDRESS_SPACE=1`**: Checks correctness of static casts of pointer types from generic address spaces to specific address spaces. Defaults to `1`.

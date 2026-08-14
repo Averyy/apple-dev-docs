@@ -22,7 +22,7 @@ class var learningRate: MLParameterKey { get }
 
 #### Discussion
 
-The value type for the [`learningRate`](mlparameterkey/learningrate.md) key is a [`Double`](https://developer.apple.com/documentation/Swift/Double).
+The value type for the [`learningRate`](mlparameterkey/learningrate.md) key is a [`Double`](https://developer.apple.com/documentation/swift/double).
 
 To modify a model’s learning rate midway through an [`MLUpdateTask`](mlupdatetask.md), use its [`resume(withParameters:)`](mlupdatetask/resume(withparameters:).md) method to set a new value for the model’s learning rate. You do this in the progress handler that you specified in the [`MLUpdateProgressHandlers`](mlupdateprogresshandlers.md) instance when you created the update task using [`init(forModelAt:trainingData:configuration:progressHandlers:)`](mlupdatetask/init(formodelat:trainingdata:configuration:progresshandlers:).md).
 

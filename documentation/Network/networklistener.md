@@ -59,9 +59,9 @@ A listener receives incoming connections by binding to a local endpoint. It acce
 ## Relationships
 
 ### Conforms To
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 
 ---

@@ -18,7 +18,7 @@ An instance of OSData with a reference count of 1; `NULL` on failure.
 
 #### Overview
 
-`capacity` may be zero. The OSData object will allocate a buffer internally when necessary, and will grow as needed to accommodate more bytes (`CFMutableData`, for which a nonzero initial capacity is a hard limit).
+`capacity` may be zero. The OSData object will allocate a buffer internally when necessary, and will grow as needed to accommodate more bytes (*unlike*[`CFMutableData`](https://developer.apple.com/documentation/corefoundation/cfmutabledata), for which a nonzero initial capacity is a hard limit).
 
 ## Parameters
 

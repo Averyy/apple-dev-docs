@@ -23,7 +23,7 @@ func multiply(_ noise: GKNoise)
 
 Noise values are generally in the range [-1.0, 1.0], so multiplying typically results in moving values toward zero (in grayscale textures, a darkening effect).
 
-![None](https://docs-assets.developer.apple.com/published/f17ac6d8c33ac254d5254f199c0c750c/media-2556395%402x.png)
+![None](/images/com.apple.gameplaykit/media-2556395@2x.png)
 
 ## Parameters
 

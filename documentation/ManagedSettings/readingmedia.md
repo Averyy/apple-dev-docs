@@ -6,7 +6,7 @@ Read the media rating on a device and determine what media to display on your ap
 
 #### Overview
 
-The parental control app sets the media rating that establishes the parameters of the content the user can view. Your app reads the rating to determine what media to display, so you don’t need to incorporate monitoring with [`Device Activity`](https://developer.apple.com/documentation/DeviceActivity) or authorize your app through [`Family Controls`](https://developer.apple.com/documentation/FamilyControls).
+The parental control app sets the media rating that establishes the parameters of the content the user can view. Your app reads the rating to determine what media to display, so you don’t need to incorporate monitoring with [`Device Activity`](https://developer.apple.com/documentation/deviceactivity) or authorize your app through [`Family Controls`](https://developer.apple.com/documentation/familycontrols).
 
 ##### Read the Media Setting
 
@@ -66,7 +66,7 @@ self.movieRatingCancellable = store.$effectiveMaximumMovieRating.sink { effectiv
 }
 ```
 
-> ❗ **Important**: Use the [`Family Controls`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.family-controls) entitlement in your app to subscribe for TV and Movie rating changes. For more information on how to set up entitlements, see [`Adding capabilities to your app`](https://developer.apple.com/documentation/Xcode/adding-capabilities-to-your-app).
+> ❗ **Important**: Use the [`Family Controls`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.family-controls) entitlement in your app to subscribe for TV and Movie rating changes. For more information on how to set up entitlements, see [`Adding capabilities to your app`](https://developer.apple.com/documentation/xcode/adding-capabilities-to-your-app).
 
 ## See Also
 

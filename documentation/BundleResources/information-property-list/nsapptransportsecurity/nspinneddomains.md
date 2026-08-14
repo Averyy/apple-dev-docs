@@ -33,7 +33,7 @@ For any domain that you specify, you must include one or more expected Certifica
 
 To specify a domain name string, follow the rules for domain names given in [`NSExceptionDomains`](information-property-list/nsapptransportsecurity/nsexceptiondomains.md). You can also extend the pinning to cover subdomains by setting the value for the [`NSIncludesSubdomains`](information-property-list/nsincludessubdomains.md) key to `YES`.
 
-Pinning a certificate for a given domain has no impact on other security requirements or configuration. For example, pinning a CA certificate doesn’t change the way the system evaluates that certificate’s suitability as an anchor certificate. For information about securing network connections, see [`Preventing Insecure Network Connections`](https://developer.apple.com/documentation/Security/preventing-insecure-network-connections).
+Pinning a certificate for a given domain has no impact on other security requirements or configuration. For example, pinning a CA certificate doesn’t change the way the system evaluates that certificate’s suitability as an anchor certificate. For information about securing network connections, see [`Preventing Insecure Network Connections`](https://developer.apple.com/documentation/security/preventing-insecure-network-connections).
 
 ## Topics
 

@@ -20,7 +20,7 @@ override dynamic var modalPresentationStyle: UIModalPresentationStyle { get set 
 
 #### Discussion
 
-This property always sets the presentation style for the view controller to [`UIModalPresentationStyle.pageSheet`](https://developer.apple.com/documentation/UIKit/UIModalPresentationStyle/pageSheet).
+This property always sets the presentation style for the view controller to [`UIModalPresentationStyle.pageSheet`](https://developer.apple.com/documentation/uikit/uimodalpresentationstyle/pagesheet).
 
 
 ---

@@ -29,7 +29,7 @@ Use a Look Around view to create street-level imagery for a specific geographic 
 
 The following example contains the two elements needed to display a Look Around View on a web page:
 
-![A screenshot showing the Look Around view framing Cherry Hill Fountain, with a point-of-interest Marker.](https://docs-assets.developer.apple.com/published/e3ef0f4db9e0eb675c326ad786aad5e3/LookAround-cl-01%402x.png)
+![A screenshot showing the Look Around view framing Cherry Hill Fountain, with a point-of-interest Marker.](/images/com.apple.mapkitjs/LookAround-cl-01@2x.png)
 
 The HTML code below implements a web page that renders a `container` which has a label that provides a description of the place the Look Around view displays.
 

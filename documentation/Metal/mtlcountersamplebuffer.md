@@ -49,7 +49,7 @@ You can store a GPU device’s counter set data only with an [`MTLCounterSampleB
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

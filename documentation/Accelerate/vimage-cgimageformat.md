@@ -31,7 +31,7 @@ struct vImage_CGImageFormat
 
 #### Overview
 
-This structure describes the ordering and number of the color channels, the size and type of the data in the color channels, and alpha information. This format mirrors the image format descriptors that Core Graphics uses to create objects, such as [`CGImage`](https://developer.apple.com/documentation/CoreGraphics/CGImage) and [`CGContext`](https://developer.apple.com/documentation/CoreGraphics/CGContext).
+This structure describes the ordering and number of the color channels, the size and type of the data in the color channels, and alpha information. This format mirrors the image format descriptors that Core Graphics uses to create objects, such as [`CGImage`](https://developer.apple.com/documentation/coregraphics/cgimage) and [`CGContext`](https://developer.apple.com/documentation/coregraphics/cgcontext).
 
 ## Topics
 
@@ -65,7 +65,7 @@ This structure describes the ordering and number of the color channels, the size
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../Swift/BitwiseCopyable.md)
+- [BitwiseCopyable](../swift/bitwisecopyable.md)
 
 
 ---

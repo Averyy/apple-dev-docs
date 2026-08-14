@@ -26,11 +26,11 @@ class NSArray
 
 #### Overview
 
-You can use this type in Swift instead of an [`Array`](https://developer.apple.com/documentation/Swift/Array) constant in cases that require reference semantics.
+You can use this type in Swift instead of an [`Array`](https://developer.apple.com/documentation/swift/array) constant in cases that require reference semantics.
 
 `NSArray` and its subclass [`NSMutableArray`](nsmutablearray.md) manage ordered collections of objects called **arrays**. `NSArray` creates static arrays, and `NSMutableArray` creates dynamic arrays. You can use arrays when you need an ordered collection of objects.
 
-`NSArray` is “toll-free bridged” with its Core Foundation counterpart, [`CFArray`](https://developer.apple.com/documentation/CoreFoundation/CFArray). See [`Toll-Free Bridging`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Conceptual/CocoaEncyclopedia/Toll-FreeBridgin/Toll-FreeBridgin.html#//apple_ref/doc/uid/TP40010810-CH2) for more information on toll-free bridging.
+`NSArray` is “toll-free bridged” with its Core Foundation counterpart, [`CFArray`](https://developer.apple.com/documentation/corefoundation/cfarray). See [`Toll-Free Bridging`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Conceptual/CocoaEncyclopedia/Toll-FreeBridgin/Toll-FreeBridgin.html#//apple_ref/doc/uid/TP40010810-CH2) for more information on toll-free bridging.
 
 ##### Creating Nsarray Objects Using Array Literals
 
@@ -94,7 +94,7 @@ Remember that `NSArray` is the public interface for a class cluster and what thi
 
 ###### Alternatives to Subclassing
 
-Before making a custom subclass of `NSArray`, investigate [`NSPointerArray`](nspointerarray.md) and the corresponding Core Foundation type, [`CFArray`](https://developer.apple.com/documentation/CoreFoundation/CFArray). Because `NSArray` and `CFArray` are “toll-free bridged,” you can substitute a `CFArray` object for a `NSArray` object in your code (with appropriate casting). Although they are corresponding types, `CFArray` and `NSArray` do not have identical interfaces or implementations, and you can sometimes do things with `CFArray` that you cannot easily do with `NSArray`. For example, `CFArray` provides a set of callbacks, some of which are for implementing custom retain-release behavior. If you specify `NULL` implementations for these callbacks, you can easily get a non-retaining array.
+Before making a custom subclass of `NSArray`, investigate [`NSPointerArray`](nspointerarray.md) and the corresponding Core Foundation type, [`CFArray`](https://developer.apple.com/documentation/corefoundation/cfarray). Because `NSArray` and `CFArray` are “toll-free bridged,” you can substitute a `CFArray` object for a `NSArray` object in your code (with appropriate casting). Although they are corresponding types, `CFArray` and `NSArray` do not have identical interfaces or implementations, and you can sometimes do things with `CFArray` that you cannot easily do with `NSArray`. For example, `CFArray` provides a set of callbacks, some of which are for implementing custom retain-release behavior. If you specify `NULL` implementations for these callbacks, you can easily get a non-retaining array.
 
 If the behavior you want to add supplements that of the existing class, you could write a category on `NSArray`. Keep in mind, however, that this category will be in effect for all instances of `NSArray` that you use, and this might have unintended consequences. Alternatively, you could use composition to achieve the desired behavior.
 
@@ -264,28 +264,28 @@ If the behavior you want to add supplements that of the existing class, you coul
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Inherited By
 - [NSMutableArray](nsmutablearray.md)
 ### Conforms To
-- [CKRecordValue](../CloudKit/CKRecordValue-c.protocol.md)
-- [CKRecordValueProtocol](../CloudKit/CKRecordValueProtocol.md)
-- [CVarArg](../Swift/CVarArg.md)
-- [Copyable](../Swift/Copyable.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomReflectable](../Swift/CustomReflectable.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Escapable](../Swift/Escapable.md)
-- [ExpressibleByArrayLiteral](../Swift/ExpressibleByArrayLiteral.md)
-- [Hashable](../Swift/Hashable.md)
+- [CKRecordValue](../cloudkit/ckrecordvalue-c.protocol.md)
+- [CKRecordValueProtocol](../cloudkit/ckrecordvalueprotocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [Copyable](../swift/copyable.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomReflectable](../swift/customreflectable.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Escapable](../swift/escapable.md)
+- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
+- [Hashable](../swift/hashable.md)
 - [NSCoding](nscoding.md)
 - [NSCopying](nscopying.md)
 - [NSFastEnumeration](nsfastenumeration.md)
 - [NSMutableCopying](nsmutablecopying.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 - [NSSecureCoding](nssecurecoding.md)
-- [Sequence](../Swift/Sequence.md)
+- [Sequence](../swift/sequence.md)
 
 
 ---

@@ -25,7 +25,7 @@ var subscriptionOwnerUserRecordID: CKRecord.ID? { get }
 
 On a system that supports multiple users, such as tvOS, use this identifier to check whether the pending content is for the current user. If your app always fetches data from CloudKit on launch, you may improve efficiency by disregarding notifications for other users.
 
-For more information about supporting a multiuser environment, see [`Personalizing Your App for Each User on Apple TV`](https://developer.apple.com/documentation/TVServices/personalizing-your-app-for-each-user-on-apple-tv).
+For more information about supporting a multiuser environment, see [`Personalizing Your App for Each User on Apple TV`](https://developer.apple.com/documentation/tvservices/personalizing-your-app-for-each-user-on-apple-tv).
 
 ## See Also
 

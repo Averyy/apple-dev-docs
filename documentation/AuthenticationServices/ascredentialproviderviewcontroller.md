@@ -22,7 +22,7 @@ class ASCredentialProviderViewController
 
 To integrate a password, passkey, or one-time passcode manager app with AutoFill:
 
-1. Add a Credential Provider Extension target to your project that subclasses [`ASCredentialProviderViewController`](ascredentialproviderviewcontroller.md). Add the [`AutoFill Credential Provider Entitlement`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.authentication-services.autofill-credential-provider) to both the extension and its containing app.
+1. Add a Credential Provider Extension target to your project that subclasses [`ASCredentialProviderViewController`](ascredentialproviderviewcontroller.md). Add the [`AutoFill Credential Provider Entitlement`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.authentication-services.autofill-credential-provider) to both the extension and its containing app.
 2. Override the view controller’s [`prepareCredentialList(for:)`](ascredentialproviderviewcontroller/preparecredentiallist(for:).md) method to prepare a view with a list of credentials that the person can choose from after opening your extension from the AutoFill suggestions list.
 3. Optionally add [`ASPasswordCredentialIdentity`](aspasswordcredentialidentity.md) and [`ASPasskeyCredentialIdentity`](aspasskeycredentialidentity.md) instances to the shared [`ASCredentialIdentityStore`](ascredentialidentitystore.md) to make identities available directly in the AutoFill suggestions list. Then override the [`provideCredentialWithoutUserInteraction(for:)`](ascredentialproviderviewcontroller/providecredentialwithoutuserinteraction(for:)-3mo23.md) method to provide the associated credentials when the person taps a suggestion.
 4. Optionally, override the [`prepareInterfaceForExtensionConfiguration()`](ascredentialproviderviewcontroller/prepareinterfaceforextensionconfiguration().md) method to specify a configuration interface that you can show when people first enable your credentials manager in Settings.
@@ -115,41 +115,41 @@ Your credential manager manager receives these updates in the “report” metho
 ## Relationships
 
 ### Inherits From
-- [NSViewController](../AppKit/NSViewController.md)
-- [UIViewController](../UIKit/UIViewController.md)
+- [NSViewController](../appkit/nsviewcontroller.md)
+- [UIViewController](../uikit/uiviewcontroller.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCoding](../Foundation/NSCoding.md)
-- [NSEditor](../AppKit/NSEditor.md)
-- [NSExtensionRequestHandling](../Foundation/NSExtensionRequestHandling.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [NSSeguePerforming](../AppKit/NSSeguePerforming.md)
-- [NSStandardKeyBindingResponding](../AppKit/NSStandardKeyBindingResponding.md)
-- [NSTouchBarProvider](../AppKit/NSTouchBarProvider.md)
-- [NSUserActivityRestoring](../AppKit/NSUserActivityRestoring.md)
-- [NSUserInterfaceItemIdentification](../AppKit/NSUserInterfaceItemIdentification.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
-- [UIActivityItemsConfigurationProviding](../UIKit/UIActivityItemsConfigurationProviding.md)
-- [UIAppearanceContainer](../UIKit/UIAppearanceContainer.md)
-- [UIContentContainer](../UIKit/UIContentContainer.md)
-- [UIFocusEnvironment](../UIKit/UIFocusEnvironment.md)
-- [UIPasteConfigurationSupporting](../UIKit/UIPasteConfigurationSupporting.md)
-- [UIResponderStandardEditActions](../UIKit/UIResponderStandardEditActions.md)
-- [UIStateRestoring](../UIKit/UIStateRestoring.md)
-- [UITraitChangeObservable](../UIKit/UITraitChangeObservable-67e94.md)
-- [UITraitEnvironment](../UIKit/UITraitEnvironment.md)
-- [UIUserActivityRestoring](../UIKit/UIUserActivityRestoring.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCoding](../foundation/nscoding.md)
+- [NSEditor](../appkit/nseditor.md)
+- [NSExtensionRequestHandling](../foundation/nsextensionrequesthandling.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSSeguePerforming](../appkit/nssegueperforming.md)
+- [NSStandardKeyBindingResponding](../appkit/nsstandardkeybindingresponding.md)
+- [NSTouchBarProvider](../appkit/nstouchbarprovider.md)
+- [NSUserActivityRestoring](../appkit/nsuseractivityrestoring.md)
+- [NSUserInterfaceItemIdentification](../appkit/nsuserinterfaceitemidentification.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
+- [UIActivityItemsConfigurationProviding](../uikit/uiactivityitemsconfigurationproviding.md)
+- [UIAppearanceContainer](../uikit/uiappearancecontainer.md)
+- [UIContentContainer](../uikit/uicontentcontainer.md)
+- [UIFocusEnvironment](../uikit/uifocusenvironment.md)
+- [UIPasteConfigurationSupporting](../uikit/uipasteconfigurationsupporting.md)
+- [UIResponderStandardEditActions](../uikit/uiresponderstandardeditactions.md)
+- [UIStateRestoring](../uikit/uistaterestoring.md)
+- [UITraitChangeObservable](../uikit/uitraitchangeobservable-67e94.md)
+- [UITraitEnvironment](../uikit/uitraitenvironment.md)
+- [UIUserActivityRestoring](../uikit/uiuseractivityrestoring.md)
 
 ## See Also
 
 - [Providing one-time passcodes to AutoFill](providing-one-time-passcodes-to-autofill.md)
   Help people efficiently perform multifactor authentication.
-- [AutoFill Credential Provider Entitlement](../BundleResources/Entitlements/com.apple.developer.authentication-services.autofill-credential-provider.md)
+- [AutoFill Credential Provider Entitlement](../bundleresources/entitlements/com.apple.developer.authentication-services.autofill-credential-provider.md)
   A Boolean value that indicates whether the app may, with user permission, provide user names and passwords for AutoFill in Safari and other apps.
 
 

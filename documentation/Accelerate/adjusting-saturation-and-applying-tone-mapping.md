@@ -18,7 +18,7 @@ This sample app converts an ARGB image to YpCbCr and applies adjustments based o
 
 The following images show two photographs with a range of saturation adjustments that illustrate the variety of color changes you can make using the sample code app:
 
-![Two photographs arranged in two rows. Each row contains six variations of the photographs that transition from very desaturated to very saturated. ](https://docs-assets.developer.apple.com/published/56b73f1fcb0e746e770c8076b25d7b0f/overview.png)
+![Two photographs arranged in two rows. Each row contains six variations of the photographs that transition from very desaturated to very saturated. ](/images/com.apple.accelerate/overview.png)
 
 Before exploring the code, try building and running the app to familiarize yourself with the effect of the different transformations on the image.
 
@@ -44,7 +44,7 @@ The conversion routine that this sample uses creates a YpCbCr result with a chro
 
 The image below shows that a 4 x 2 image is represented by a 4 x 2 luminance channel, but each chrominance channel is 2 x 1 pixels:
 
-![A diagram showing source RGB pixels converted to discrete luminance and chrominance pixels arranged as two-times-two tiles.](https://docs-assets.developer.apple.com/published/7004bc5cddead7f7f75870e0ff1c61cc/subsampling_2x.png)
+![A diagram showing source RGB pixels converted to discrete luminance and chrominance pixels arranged as two-times-two tiles.](/images/com.apple.accelerate/subsampling_2x.png)
 
 To support the 4:2:0 YpCbCr representation of the source image, the sample project defines a `Yp8CbCr8PixelBuffers` structure that contains two pixel buffers. The luminance buffer is the same size as the source buffer. The chrominance buffer’s height is half the source height, and its width is the same as the source width. This size enables the chrominance buffer to store both the Cb and Cr data as interleaved pixels.
 
@@ -137,7 +137,7 @@ func convert(from source: vImage.PixelBuffer<vImage.Interleaved8x4>) {
 
 The following image shows the luminance result on the left and the interleaved chrominance result on the right. Because the interleaved chrominance result contains both the Cb and Cr information, it’s half the height of the luminance channel, but has the same width.
 
-![Two black-and-white photographs of a rainbow over the ocean at a sandy beach with palm trees in the foreground. The photo on the right has a square overlay of vertical stripes on top of it.](https://docs-assets.developer.apple.com/published/7867381ba91df8e8fcdf7908036675e1/ycbcrBuffers.png)
+![Two black-and-white photographs of a rainbow over the ocean at a sandy beach with palm trees in the foreground. The photo on the right has a square overlay of vertical stripes on top of it.](/images/com.apple.accelerate/ycbcrBuffers.png)
 
 ##### Apply Saturation Adjustment to the Image
 
@@ -162,7 +162,7 @@ applyGammaToLuma(lumaGamma: lumaGamma)
 
 The following formula describes how to adjust the color saturation of a YpCbCr image, without affecting its luminance:
 
-![A mathematical formula that describes saturation adjustment. Cb prime equals cb minus 128 multiplied by saturation plus 128. Cr prime equals cr minus 128 multiplied by saturation plus 128](https://docs-assets.developer.apple.com/published/76523f3754570bc631adc76fe7db1b3f/saturationFormula.png)
+![A mathematical formula that describes saturation adjustment. Cb prime equals cb minus 128 multiplied by saturation plus 128. Cr prime equals cr minus 128 multiplied by saturation plus 128](/images/com.apple.accelerate/saturationFormula.png)
 
 The [`multiply(by:divisor:preBias:postBias:destination:)`](vimage/pixelbuffer/multiply(by:divisor:prebias:postbias:destination:)-4q614.md) function performs this math on the source chrominance buffer. The function passes the saturation to the matrix multiply function as a single-element matrix, and passes the chrominance buffer as the source and destination.
 
@@ -186,7 +186,7 @@ private func applyLinearToCbCr(saturation: Float) {
 
 The following image shows two photographs, from left to right, with saturations of `0.25`, `0.75`, and `1.0` (that is, the rightmost image has an unchanged saturation).
 
-![Two photographs arranged in two rows. Each row contains three variations of the photographs that transition from very desaturated to unchanged.](https://docs-assets.developer.apple.com/published/79a985fc01a5dfa4cce921ccb7efc1ca/decreaseSaturation.png)
+![Two photographs arranged in two rows. Each row contains three variations of the photographs that transition from very desaturated to unchanged.](/images/com.apple.accelerate/decreaseSaturation.png)
 
 ##### Apply Gamma to Cbcr to Increase Saturation
 
@@ -220,7 +220,7 @@ private func applyGammaToCbCr(gamma: Float) {
 
 The following image shows two photographs, from left to right, with a saturation of 1.0 (that is, the leftmost image has an unchanged saturation), 1.5, and 2.0:
 
-![Two photographs arranged in two rows. Each row contains three variations of the photographs that transition from unchanged to very saturated.](https://docs-assets.developer.apple.com/published/2c2c6c83b87edc71a6638137c4c5b6de/increaseSaturation.png)
+![Two photographs arranged in two rows. Each row contains three variations of the photographs that transition from unchanged to very saturated.](/images/com.apple.accelerate/increaseSaturation.png)
 
 When decreasing the saturation, the gamma function is not appropriate because pixels with very saturated color will desaturate very little, or not at all.
 
@@ -246,7 +246,7 @@ private func applyGammaToLuma(lumaGamma: Float) {
 
 The following image shows two photographs, from left to right, with a gamma applied to the luminance channel of 2.5, 0.0 (that is, the center image is unchanged), and 0.5:
 
-![Two photographs arranged in two rows. Each row contains three variations of the photographs that transition from high contrast to low contrast.](https://docs-assets.developer.apple.com/published/be3a74012f2b63f50678223448930c2f/lumaGamma.png)
+![Two photographs arranged in two rows. Each row contains three variations of the photographs that transition from high contrast to low contrast.](/images/com.apple.accelerate/lumaGamma.png)
 
 ##### Define the Ypcbcr to Rgb Conversion
 
@@ -295,7 +295,7 @@ func convert(to destination: vImage.PixelBuffer<vImage.Interleaved8x4>) {
 
 ##### Correct Gamma Before Applying Operations
 
-Many vImage operations provide optimal results when working on images with a linear response curve. The sample app includes a [`Toggle`](https://developer.apple.com/documentation/SwiftUI/Toggle) control that applies a reciprocal gamma to the sRGB image, performs the saturation adjustments and tone mapping, and applies the original gamma.
+Many vImage operations provide optimal results when working on images with a linear response curve. The sample app includes a [`Toggle`](https://developer.apple.com/documentation/swiftui/toggle) control that applies a reciprocal gamma to the sRGB image, performs the saturation adjustments and tone mapping, and applies the original gamma.
 
 vImage provides predefined gamma functions for converting from linear to sRGB, and from sRGB to linear. The sample implements the following function as an extension to [`vImage.PixelBuffer`](vimage/pixelbuffer.md) and remaps the buffer’s contents in-place in the specified direction:
 

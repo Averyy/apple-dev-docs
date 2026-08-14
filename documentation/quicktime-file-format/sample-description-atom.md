@@ -27,7 +27,7 @@ The layout of the sample description atom is as follows.
 | [`Number of entries`](sample_description_atom/number_of_entries.md) | 4 |
 | [`Sample description table`](sample_description_atom/sample_description_table.md) | Variable |
 
-The sample description atom has an atom type of `'stsd'`. The sample description atom contains a table of sample descriptions. A media may have one or more sample descriptions, depending upon the number of different encoding schemes used in the media and on the number of files used to store the data. The sample-to-chunk atom identifies the sample description for each sample in the media by specifying the index into this table for the appropriate description (see [`Sample-to-chunk atom ('stsc')`](sample-to-chunk_atom.md)).
+The sample description atom has an atom type of `'stsd'`. The sample description atom contains a table of sample descriptions. A media may have one or more sample descriptions, depending upon the number of different encoding schemes used in the media and on the number of files used to store the data. The sample-to-chunk atom identifies the sample description for each sample in the media by specifying the index into this table for the appropriate description (see [`Sample-to-chunk atom`](sample-to-chunk_atom.md)).
 
 #### General Structure of a Sample Description
 

@@ -22,7 +22,7 @@ let kCTFontWeightTrait: CFString
 
 #### Discussion
 
-The value returned is a [`CFNumber`](https://developer.apple.com/documentation/CoreFoundation/CFNumber) representing a float value between `-1.0` and `1.0` for normalized weight. The value of `0.0` corresponds to the regular or medium font weight.
+The value returned is a [`CFNumber`](https://developer.apple.com/documentation/corefoundation/cfnumber) representing a float value between `-1.0` and `1.0` for normalized weight. The value of `0.0` corresponds to the regular or medium font weight.
 
 ## See Also
 

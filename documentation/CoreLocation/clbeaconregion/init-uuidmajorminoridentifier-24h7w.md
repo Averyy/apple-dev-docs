@@ -19,7 +19,7 @@ init(uuid: UUID, major: CLBeaconMajorValue, minor: CLBeaconMinorValue, identifie
 
 ## Parameters
 
-- `uuid`: A [`NSUUID`](https://developer.apple.com/documentation/Foundation/NSUUID) that identifies the beacons to target.
+- `uuid`: A [`NSUUID`](https://developer.apple.com/documentation/foundation/nsuuid) that identifies the beacons to target.
 - `major`: The [`CLBeaconMajorValue`](clbeaconmajorvalue.md) that characterizes beacons for this region to target.
 - `minor`: The [`CLBeaconMinorValue`](clbeaconminorvalue.md) that characterizes beacons for this region to target.
 - `identifier`: A unique identifier to associate with the returned region object. You use this identifier to differentiate regions within your app. This value can’t be `nil.`

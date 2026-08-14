@@ -31,7 +31,7 @@ When you organize your app’s codebase using local packages, your Swift package
   Make binaries available to other developers by creating Swift packages that include one or more XCFrameworks.
 - [Developing a Swift package in tandem with an app](developing-a-swift-package-in-tandem-with-an-app.md)
   Add your published Swift package as a local package to your app’s project and develop the package and the app in tandem.
-- [PackageDescription](../PackageDescription/PackageDescription.md)
+- [PackageDescription](../packagedescription/packagedescription.md)
   Create reusable code, organize it in a lightweight way, and share it across your projects and with other developers.
 
 

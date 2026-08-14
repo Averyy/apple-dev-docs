@@ -16,7 +16,7 @@ func changeAttributes(_ sender: Any?)
 
 #### Discussion
 
-This method behaves similar to the [`changeAttributes(_:)`](https://developer.apple.com/documentation/AppKit/NSTextView/changeAttributes(_:)) method in [`NSTextView`](https://developer.apple.com/documentation/AppKit/NSTextView).
+This method behaves similar to the [`changeAttributes(_:)`](https://developer.apple.com/documentation/appkit/nstextview/changeattributes(_:)) method in [`NSTextView`](https://developer.apple.com/documentation/appkit/nstextview).
 
 ## Parameters
 

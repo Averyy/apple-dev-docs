@@ -24,7 +24,7 @@ struct Just<Output>
 
 You can use a [`Just`](just.md) publisher to start a chain of publishers. A [`Just`](just.md) publisher is also useful when replacing a value with [`Publishers.Catch`](publishers/catch.md).
 
-In contrast with [`Result.Publisher`](https://developer.apple.com/documentation/Swift/Result/Publisher-swift.struct), a [`Just`](just.md) publisher can’t fail with an error. And unlike [`Optional.Publisher`](https://developer.apple.com/documentation/Swift/Optional/Publisher-swift.struct), a [`Just`](just.md) publisher always produces a value.
+In contrast with [`Result.Publisher`](https://developer.apple.com/documentation/swift/result/publisher-swift.struct), a [`Just`](just.md) publisher can’t fail with an error. And unlike [`Optional.Publisher`](https://developer.apple.com/documentation/swift/optional/publisher-swift.struct), a [`Just`](just.md) publisher always produces a value.
 
 ## Topics
 
@@ -46,7 +46,7 @@ In contrast with [`Result.Publisher`](https://developer.apple.com/documentation/
 ## Relationships
 
 ### Conforms To
-- [Equatable](../Swift/Equatable.md)
+- [Equatable](../swift/equatable.md)
 - [Publisher](publisher.md)
 
 ## See Also

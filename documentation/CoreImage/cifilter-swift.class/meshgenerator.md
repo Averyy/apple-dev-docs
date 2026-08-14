@@ -31,7 +31,7 @@ The mesh generator filter uses the following properties:
 
 - **`inputMesh`**: An `array` of line segments stored as an array of [`CIVector`](civector.md), each containing a start point and end point.
 - **`color`**: A [`CIColor`](cicolor.md) representing the color used to make the mesh.
-- **`width`**: A `float` representing the width of the line segments as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber)
+- **`width`**: A `float` representing the width of the line segments as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber)
 
 The following code creates a filter that generates a green star made from mesh segments:
 
@@ -45,7 +45,7 @@ func mesh(mesh: NSdata) -> CIImage {
 }
 ```
 
-![A set of green mesh line segments connected together to draw a five-point star pattern.](https://docs-assets.developer.apple.com/published/5465d1956143e017dbc430fc7bb49f3c/media-3590974%402x.png)
+![A set of green mesh line segments connected together to draw a five-point star pattern.](/images/com.apple.coreimage/media-3590974@2x.png)
 
 ## See Also
 

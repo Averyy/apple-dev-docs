@@ -28,7 +28,7 @@ When the device receives a location push notification that your server generated
 
 Location Push Service Extensions aren’t supported in visionOS. If a compatible iPad or iPhone app contains an app extension of this type, the system doesn’t load it.
 
-For more information about adding the extension to your app, see [`Creating a location push service extension`](creating-a-location-push-service-extension.md). For information about how to generate push notifications from your server, see [`Setting up a remote notification server`](https://developer.apple.com/documentation/UserNotifications/setting-up-a-remote-notification-server).
+For more information about adding the extension to your app, see [`Creating a location push service extension`](creating-a-location-push-service-extension.md). For information about how to generate push notifications from your server, see [`Setting up a remote notification server`](https://developer.apple.com/documentation/usernotifications/setting-up-a-remote-notification-server).
 
 ## Topics
 
@@ -42,11 +42,11 @@ For more information about adding the extension to your app, see [`Creating a lo
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 
-- [Location Push Service Extension](../BundleResources/Entitlements/com.apple.developer.location.push.md)
+- [Location Push Service Extension](../bundleresources/entitlements/com.apple.developer.location.push.md)
   An entitlement to enable a location-sharing app to query someone’s location in response to a push notification.
 - [struct CLLocationPushServiceError](cllocationpushserviceerror-swift.struct.md)
   Error codes the location manager returns if starting to monitor for location push notifications fails.

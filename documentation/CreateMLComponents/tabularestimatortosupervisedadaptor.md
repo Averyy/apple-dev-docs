@@ -44,8 +44,8 @@ struct TabularEstimatorToSupervisedAdaptor<Estimator, Annotation> where Estimato
 ## Relationships
 
 ### Conforms To
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 - [SupervisedTabularEstimator](supervisedtabularestimator.md)
 
 ## See Also

@@ -40,7 +40,7 @@ HStack {
 }
 ```
 
-![A screenshot showing the effect of setting a minimumScaleFactor on](https://docs-assets.developer.apple.com/published/68f36609e7807a7ff513a4c83fa884ef/SwiftUI-View-minimumScaleFactor%402x.png)
+![A screenshot showing the effect of setting a minimumScaleFactor on](/images/com.apple.SwiftUI/SwiftUI-View-minimumScaleFactor@2x.png)
 
 ## Parameters
 

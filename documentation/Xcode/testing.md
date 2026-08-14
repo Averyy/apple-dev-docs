@@ -8,11 +8,11 @@ Develop and run tests to detect logic failures, UI problems, and performance reg
 
 An important part of software development is testing your code. To catch issues early and deliver the highest quality products, use the frameworks and features Xcode provides to develop tests, understand code coverage, and evaluate your test results.
 
-Xcode 16 and later includes [`Swift Testing`](https://developer.apple.com/documentation/Testing), a new testing framework you can use to write unit tests that takes advantage of the powerful and expressive language capabilities of Swift with output that is expressive and actionable. Xcode continues to include [`XCTest`](https://developer.apple.com/documentation/XCTest) to facilitate writing UI tests that control your app’s UI using [`XCUIAutomation`](https://developer.apple.com/documentation/XCUIAutomation). A good testing strategy combines multiple types of tests, to maximize the benefits of each.
+Xcode 16 and later includes [`Swift Testing`](https://developer.apple.com/documentation/testing), a new testing framework you can use to write unit tests that takes advantage of the powerful and expressive language capabilities of Swift with output that is expressive and actionable. Xcode continues to include [`XCTest`](https://developer.apple.com/documentation/xctest) to facilitate writing UI tests that control your app’s UI using [`XCUIAutomation`](https://developer.apple.com/documentation/xcuiautomation). A good testing strategy combines multiple types of tests, to maximize the benefits of each.
 
 Aim for a “pyramid” distribution of tests, as shown in the figure below. Include a large number of fast, well-isolated unit tests to cover your app’s logic, a smaller number of integration tests to demonstrate that smaller parts connect together properly, and UI tests to assert the correct behavior of common use cases.
 
-![Illustration showing the relative amount of unit, integration and UI testing to aim for on a project.](https://docs-assets.developer.apple.com/published/3741da49e0f493f0925fefe17ca44fa1/tests-testing-pyramid%402x.png)
+![Illustration showing the relative amount of unit, integration and UI testing to aim for on a project.](/images/com.apple.Xcode/tests-testing-pyramid@2x.png)
 
 UI tests are the ultimate indicator your app works the way you expect, but they take longer to run than other kinds of tests. There are various app variables that can introduce a failure in the same UI test. The test pyramid balances high-fidelity tests that demonstrate that people can complete their tasks, with tightly-focused tests that give you fast feedback about the correctness of your app’s logic and the impact of changes you make.
 

@@ -39,9 +39,9 @@ This sequence allows iterating through the camera frames. Only one iterator can 
 ## Relationships
 
 ### Conforms To
-- [AsyncSequence](../Swift/AsyncSequence.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [AsyncSequence](../swift/asyncsequence.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 - [TemporalSequence](temporalsequence.md)
 
 ## See Also

@@ -8,7 +8,7 @@ Share data throughout a view hierarchy using the environment.
 
 Views in SwiftUI can react to configuration information that they read from the environment using an [`Environment`](environment.md) property wrapper.
 
-![None](https://docs-assets.developer.apple.com/published/c55679ce6979b83be86939cf3c9b5b65/environment-values-hero%402x.png)
+![None](/images/com.apple.SwiftUI/environment-values-hero@2x.png)
 
 A view inherits its environment from its container view, subject to explicit changes from an [`environment(_:_:)`](view/environment(_:_:).md) view modifier, or by implicit changes from one of the many modifiers that operate on environment values. As a result, you can configure a entire hierarchy of views by modifying the environment of the group’s container.
 

@@ -28,7 +28,7 @@ A publisher that uses the `transform` closure to emit new elements, produced by 
 
 Use [`zip(_:_:_:)`](publisher/zip(_:_:_:)-9yqi1.md) to return a new publisher that combines the elements from two other publishers using a transformation you specify to publish a new value to the downstream subscriber. The returned publisher waits until all three publishers have emitted an event, then delivers the oldest unconsumed event from each publisher together that the operator uses in the transformation.
 
-In this example, `numbersPub`, `lettersPub` and `emojiPub` are each a [`PassthroughSubject`](passthroughsubject.md) that emit values; [`zip(_:_:_:)`](publisher/zip(_:_:_:)-9yqi1.md) receives the oldest value from each publisher and uses the `Int` from `numbersPub` and publishes a string that repeats the [`String`](https://developer.apple.com/documentation/Swift/String) from `lettersPub` and `emojiPub` that many times.
+In this example, `numbersPub`, `lettersPub` and `emojiPub` are each a [`PassthroughSubject`](passthroughsubject.md) that emit values; [`zip(_:_:_:)`](publisher/zip(_:_:_:)-9yqi1.md) receives the oldest value from each publisher and uses the `Int` from `numbersPub` and publishes a string that repeats the [`String`](https://developer.apple.com/documentation/swift/string) from `lettersPub` and `emojiPub` that many times.
 
 ```swift
 let numbersPub = PassthroughSubject<Int, Never>()

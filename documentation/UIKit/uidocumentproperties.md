@@ -22,7 +22,7 @@ class UIDocumentProperties
 
 Assign a [`UIDocumentProperties`](uidocumentproperties.md) object to your navigation item’s [`documentProperties`](uinavigationitem/documentproperties.md) property. UIKit uses this object to display a document header at the top of the title menu, which appears when a person taps the navigation item’s title. The document header displays information about the current document, such as its title, file type, and size.
 
-![Title menu with a document header that contains a document preview, a Share button, and the text New Document, Text Document, 1 byte.](https://docs-assets.developer.apple.com/published/0811f4d9adcb9fcb3625d31fb223b7d1/media-3975665%402x.png)
+![Title menu with a document header that contains a document preview, a Share button, and the text New Document, Text Document, 1 byte.](/images/com.apple.uikit/media-3975665@2x.png)
 
 Additionally, you can configure a set of sharing capabilities that allow people to share or drag and drop the document content from the document header:
 
@@ -55,15 +55,15 @@ Additionally, you can configure a set of sharing capabilities that allow people 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [Sendable](../Swift/Sendable.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [Sendable](../swift/sendable.md)
 
 ## See Also
 

@@ -21,7 +21,7 @@ class ManagedAppConfigurationProvider
 
 This class provides objects of a type you define, which decodes and validates the configuration that the framework receives from the MDM server.
 
-The framework ingests the configuration in the form of a property list that the MDM server provides and passes to your type as a [`Decoder`](https://developer.apple.com/documentation/Swift/Decoder). Your type conforms to [`Decodable`](https://developer.apple.com/documentation/Swift/Decodable) and parses the configuration according to your specification that the server admin conforms to when creating the property list.
+The framework ingests the configuration in the form of a property list that the MDM server provides and passes to your type as a [`Decoder`](https://developer.apple.com/documentation/swift/decoder). Your type conforms to [`Decodable`](https://developer.apple.com/documentation/swift/decodable) and parses the configuration according to your specification that the server admin conforms to when creating the property list.
 
 If the decoder encounters a problem, it throws an error that the MDM admin can find in the device’s event log.
 

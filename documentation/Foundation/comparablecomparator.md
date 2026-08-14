@@ -22,7 +22,7 @@ struct ComparableComparator<Compared> where Compared : Comparable
 
 #### Overview
 
-The comparator uses the relevant type’s [`Comparable`](https://developer.apple.com/documentation/Swift/Comparable) implementation to compare instances.
+The comparator uses the relevant type’s [`Comparable`](https://developer.apple.com/documentation/swift/comparable) implementation to compare instances.
 
 ## Topics
 
@@ -38,10 +38,10 @@ The comparator uses the relevant type’s [`Comparable`](https://developer.apple
 ## Relationships
 
 ### Conforms To
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 - [SortComparator](sortcomparator.md)
 
 ## See Also

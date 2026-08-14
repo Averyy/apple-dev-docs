@@ -21,7 +21,7 @@ static let family: UIFontDescriptor.AttributeName
 
 #### Discussion
 
-The value is an optional [`NSString`](https://developer.apple.com/documentation/Foundation/NSString) object that specifies the font family.
+The value is an optional [`NSString`](https://developer.apple.com/documentation/foundation/nsstring) object that specifies the font family.
 
 ## See Also
 

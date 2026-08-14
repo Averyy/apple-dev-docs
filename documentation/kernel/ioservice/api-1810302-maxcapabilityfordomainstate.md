@@ -22,7 +22,7 @@ This happens when the power domain is changing state and power management needs 
 
 ## Parameters
 
-- `domainState`: Flags that describe the character of "domain power"; they represent the   field of a state in the power domain's power state array.
+- `domainState`: Flags that describe the character of "domain power"; they represent the `outputPowerCharacter` field of a state in the power domain's power state array.
 
 ## See Also
 

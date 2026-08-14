@@ -18,7 +18,7 @@ case invalidConversionValue
 
 #### Discussion
 
-This error isn’t used. If your conversion value isn’t valid, the unit test shows the [`SKANError.Code.invalidConversionValue`](https://developer.apple.com/documentation/StoreKit/SKANError-swift.struct/Code/invalidConversionValue) error instead, but only if your app calls [`updatePostbackConversionValue(_:completionHandler:)`](https://developer.apple.com/documentation/StoreKit/SKAdNetwork/updatePostbackConversionValue(_:completionHandler:)).
+This error isn’t used. If your conversion value isn’t valid, the unit test shows the [`SKANError.Code.invalidConversionValue`](https://developer.apple.com/documentation/storekit/skanerror-swift.struct/code/invalidconversionvalue) error instead, but only if your app calls [`updatePostbackConversionValue(_:completionHandler:)`](https://developer.apple.com/documentation/storekit/skadnetwork/updatepostbackconversionvalue(_:completionhandler:)).
 
 ## See Also
 

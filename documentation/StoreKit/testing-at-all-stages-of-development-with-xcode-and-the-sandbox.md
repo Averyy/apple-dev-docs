@@ -14,7 +14,7 @@ Use the Apple sandbox and Xcode test environments to test your implementation of
 
 The tools you need to test in-app purchases, non-renewing subscriptions, and auto-renewable subscriptions from early development through beta testing are:
 
-- **StoreKit Testing in Xcode**: For early development, continuous integration, and debugging. For more information, see [`StoreKit Test`](https://developer.apple.com/documentation/StoreKitTest).
+- **StoreKit Testing in Xcode**: For early development, continuous integration, and debugging. For more information, see [`StoreKit Test`](https://developer.apple.com/documentation/storekittest).
 - **Sandbox**: For testing scenarios using in-app purchase data you set up in App Store Connect. For more information, see [`Testing In-App Purchases with sandbox`](testing-in-app-purchases-with-sandbox.md).
 - **TestFlight**: For managing beta testing with internal and external testers. TestFlight uses a beta build of your app or App Clip that you upload to App Store Connect. For more information, see [`Beta Testing Made Simple with TestFlight`](https://developer.apple.comhttps://developer.apple.com/testflight/).
 
@@ -22,7 +22,7 @@ Choose the tools that support the test scenarios you need. Make sure you’re ab
 
 During the early stages of development, you may not be ready to configure in-app purchases in App Store Connect. StoreKit Testing in Xcode lets you configure the information locally. You can test StoreKit transactions before you create Sandbox Apple Accounts, without a network connection. You can test your app in Simulator or on real devices.
 
-After you set up in-app purchases in App Store Connect, start using the sandbox environment to test the product information your app will use in production. Testing in the sandbox lets you test transactions from end-to-end and from your app to your server. You can also test any server-to-server functionalities your app depends on, such as transaction validation and [`App Store Server Notifications`](https://developer.apple.com/documentation/AppStoreServerNotifications).
+After you set up in-app purchases in App Store Connect, start using the sandbox environment to test the product information your app will use in production. Testing in the sandbox lets you test transactions from end-to-end and from your app to your server. You can also test any server-to-server functionalities your app depends on, such as transaction validation and [`App Store Server Notifications`](https://developer.apple.com/documentation/appstoreservernotifications).
 
 TestFlight lets you get feedback from members of your team or from external testers. TestFlight uses the sandbox environment for in-app purchases. Transactions and purchases that occur in the sandbox don’t incur charges. The following table compares the test environments and features:
 
@@ -66,7 +66,7 @@ All apps that offer in-app purchases need to support restoring purchases, displa
 | Test an interrupted purchase, where the user must complete actions outside the app | Yes | Yes |
 | Test a failed purchase attempt when payment authorization fails | Yes | Yes |
 | Retrieve configured in-app purchases from App Store Connect | Yes | Yes (optionally); can also retrieve data from a StoreKit configuration file |
-| Manage subscriptions within your app with [`showManageSubscriptions(in:)`](appstore/showmanagesubscriptions(in:).md) and [`manageSubscriptionsSheet(isPresented:)`](https://developer.apple.com/documentation/SwiftUI/View/manageSubscriptionsSheet(isPresented:)) | Yes | Yes |
+| Manage subscriptions within your app with [`showManageSubscriptions(in:)`](appstore/showmanagesubscriptions(in:).md) and [`manageSubscriptionsSheet(isPresented:)`](https://developer.apple.com/documentation/swiftui/view/managesubscriptionssheet(ispresented:)) | Yes | Yes |
 | Initiate a refund request. For more information, see [`Testing refund requests`](testing-refund-requests.md). | Yes | Yes |
 
 ##### Test Subscriptions and Ask to Buy

@@ -24,7 +24,7 @@ Make sure your device is available in Xcode, either wirelessly or using a cable,
 6. Interact with the features in your app that you want to analyze.
 7. In Instruments, click the Stop button to stop gathering data.
 
-![A screenshot of Instruments. The Power Profiler track shows lanes for overall system power usage, display brightness, thermal state, and charging state. The app’s track shows lanes for power impact from different device subsystems.](https://docs-assets.developer.apple.com/published/d58b6fb752e912317fab4203c73d98ed/power-profiler-1%402x.png)
+![A screenshot of Instruments. The Power Profiler track shows lanes for overall system power usage, display brightness, thermal state, and charging state. The app’s track shows lanes for power impact from different device subsystems.](/images/com.apple.Xcode/power-profiler-1@2x.png)
 
 The Power Profiler track in Instruments shows the overall system power usage, represented as a fraction of total battery energy consumed per hour. Additionally, it shows the following information:
 
@@ -61,7 +61,7 @@ To set up a device to gather a performance trace that contains power metrics:
 8. Tap Add a Control.
 9. Choose the Performance Trace control.
 
-![A screenshot of the control library in Control Center on iPhone, showing the Performance Trace control.](https://docs-assets.developer.apple.com/published/1693b48acd69c4b1e59f06963b766958/power-profiler-2%402x.png)
+![A screenshot of the control library in Control Center on iPhone, showing the Performance Trace control.](/images/com.apple.Xcode/power-profiler-2@2x.png)
 
 To gather a power trace:
 
@@ -87,9 +87,9 @@ If your app uses a lot of CPU power, combine Power Profiler with the CPU Profile
 
 If your app uses a lot of GPU power, use the Metal debugger to identify opportunities to make your app’s GPU usage more efficient. For more information, see [`Optimizing GPU performance`](optimizing-gpu-performance.md).
 
-If your app uses a lot of display power, consider adapting your app’s UI to reduce its average pixel luminance. For example, make sure your app supports the dark appearance. For more information, see [`Supporting Dark Mode in your interface`](https://developer.apple.com/documentation/UIKit/supporting-dark-mode-in-your-interface).
+If your app uses a lot of display power, consider adapting your app’s UI to reduce its average pixel luminance. For example, make sure your app supports the dark appearance. For more information, see [`Supporting Dark Mode in your interface`](https://developer.apple.com/documentation/uikit/supporting-dark-mode-in-your-interface).
 
-If your app uses a lot of networking power, combine Power Profiler with the Network Connections and HTTP Traffic instruments to correlate the high power usage with the network requests your app makes, and identify strategies to reduce the frequency of network connections or the amount of data the app transfers. For more information, see [`Analyzing HTTP traffic with Instruments`](https://developer.apple.com/documentation/Foundation/analyzing-http-traffic-with-instruments).
+If your app uses a lot of networking power, combine Power Profiler with the Network Connections and HTTP Traffic instruments to correlate the high power usage with the network requests your app makes, and identify strategies to reduce the frequency of network connections or the amount of data the app transfers. For more information, see [`Analyzing HTTP traffic with Instruments`](https://developer.apple.com/documentation/foundation/analyzing-http-traffic-with-instruments).
 
 After you make a change, use Power Profiler again to validate that your change improves your app’s power usage. Consider capturing multiple recordings before and after the change, as the device’s state and other external factors can affect the specific values recorded for each metric.
 

@@ -44,7 +44,7 @@ func personSegmentation(inputImage: CIImage) -> CIImage {
 
 ```
 
-![An illustration of two images, side-by-side. The original image, on the left, contains a single individual against a background of a field, trees, and buildings. The other image, on the right, shows the individual after segmentation. The background is all set to black and the pixels that make up the individual are all set to red.](https://docs-assets.developer.apple.com/published/be17517518c1b3f7b2731b69a6e54f1f/media-4407311%402x.png)
+![An illustration of two images, side-by-side. The original image, on the left, contains a single individual against a background of a field, trees, and buildings. The other image, on the right, shows the individual after segmentation. The background is all set to black and the pixels that make up the individual are all set to red.](/images/com.apple.coreimage/media-4407311@2x.png)
 
 ## See Also
 

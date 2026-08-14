@@ -32,7 +32,7 @@ You can further enhance the adopting element by implementing any of the informat
 
 ### Inherits From
 - [NSAccessibilityElementProtocol](nsaccessibilityelementprotocol.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 ### Conforming Types
 - [NSImageView](nsimageview.md)
 

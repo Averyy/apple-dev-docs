@@ -36,7 +36,7 @@ This class renders a video at a given size and location in your scene with no ex
   Play video in your scene by adding a video node.
 ### Creating a Video Node
 - [init(avPlayer: AVPlayer)](skvideonode/init(avplayer:)-9ydbu.md)
-  Initializes a video node using an existing [`AVPlayer`](https://developer.apple.com/documentation/AVFoundation/AVPlayer) object.
+  Initializes a video node using an existing [`AVPlayer`](https://developer.apple.com/documentation/avfoundation/avplayer) object.
 - [init(fileNamed: String)](skvideonode/init(filenamed:).md)
   Initializes a video node using a video file stored in the app bundle.
 - [init(url: URL)](skvideonode/init(url:)-2im38.md)
@@ -68,28 +68,28 @@ This class renders a video at a given size and location in your scene with no ex
 ### Inherits From
 - [SKNode](sknode.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCoding](../Foundation/NSCoding.md)
-- [NSCopying](../Foundation/NSCopying.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [NSSecureCoding](../Foundation/NSSecureCoding.md)
-- [NSStandardKeyBindingResponding](../AppKit/NSStandardKeyBindingResponding.md)
-- [NSTouchBarProvider](../AppKit/NSTouchBarProvider.md)
-- [NSUserActivityRestoring](../AppKit/NSUserActivityRestoring.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
-- [UIActivityItemsConfigurationProviding](../UIKit/UIActivityItemsConfigurationProviding.md)
-- [UICoordinateSpace](../UIKit/UICoordinateSpace.md)
-- [UIFocusEnvironment](../UIKit/UIFocusEnvironment.md)
-- [UIFocusItem](../UIKit/UIFocusItem.md)
-- [UIFocusItemContainer](../UIKit/UIFocusItemContainer.md)
-- [UIPasteConfigurationSupporting](../UIKit/UIPasteConfigurationSupporting.md)
-- [UIResponderStandardEditActions](../UIKit/UIResponderStandardEditActions.md)
-- [UIUserActivityRestoring](../UIKit/UIUserActivityRestoring.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCoding](../foundation/nscoding.md)
+- [NSCopying](../foundation/nscopying.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [NSStandardKeyBindingResponding](../appkit/nsstandardkeybindingresponding.md)
+- [NSTouchBarProvider](../appkit/nstouchbarprovider.md)
+- [NSUserActivityRestoring](../appkit/nsuseractivityrestoring.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
+- [UIActivityItemsConfigurationProviding](../uikit/uiactivityitemsconfigurationproviding.md)
+- [UICoordinateSpace](../uikit/uicoordinatespace.md)
+- [UIFocusEnvironment](../uikit/uifocusenvironment.md)
+- [UIFocusItem](../uikit/uifocusitem.md)
+- [UIFocusItemContainer](../uikit/uifocusitemcontainer.md)
+- [UIPasteConfigurationSupporting](../uikit/uipasteconfigurationsupporting.md)
+- [UIResponderStandardEditActions](../uikit/uiresponderstandardeditactions.md)
+- [UIUserActivityRestoring](../uikit/uiuseractivityrestoring.md)
 
 ## See Also
 

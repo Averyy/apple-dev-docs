@@ -49,13 +49,13 @@ A common use for this structure is to describe the relationship between a viewâ€
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../Swift/BitwiseCopyable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [BitwiseCopyable](../swift/bitwisecopyable.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct CGFloat](../CoreFoundation/CGFloat-swift.struct.md)
+- [struct CGFloat](../corefoundation/cgfloat-swift.struct.md)
   The basic type for floating-point scalar values in Core Graphics and related frameworks.
 - [typealias NSPoint](nspoint.md)
   A point in a Cartesian coordinate system.

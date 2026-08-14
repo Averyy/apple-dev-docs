@@ -30,7 +30,7 @@ The system returns 16-byte-aligned buffers if you pass the [`audioBufferListAssu
 
 - `blockBufferMemoryAllocator`: An allocator to use for the memory block held by a [`CMBlockBuffer`](cmblockbuffer-api.md).
 - `flags`: Optional flags that control the operation.
-- `body`: A closure the system calls that contains a pointer to an [`AudioBufferList`](https://developer.apple.com/documentation/CoreAudioTypes/AudioBufferList) and the block buffer that backs its audio buffers.
+- `body`: A closure the system calls that contains a pointer to an [`AudioBufferList`](https://developer.apple.com/documentation/coreaudiotypes/audiobufferlist) and the block buffer that backs its audio buffers.
 
 ## See Also
 

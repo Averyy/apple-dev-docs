@@ -262,6 +262,7 @@ The following keys are general to all requests:
 
 ### Response
 - [object ServiceConfigResponse](serviceconfigresponse.md)
+  The service configuration for the Asset Management API.
 - [object ErrorResponse](errorresponse.md)
   The response that contains the error that occurs.
 ### Content Metadata

@@ -51,7 +51,7 @@ The [`connection(_:didFailWithError:)`](nsurlconnectiondelegate/connection(_:did
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 ### Inherited By
 - [NSURLConnectionDataDelegate](nsurlconnectiondatadelegate.md)
 - [NSURLConnectionDownloadDelegate](nsurlconnectiondownloaddelegate.md)

@@ -21,7 +21,7 @@ typealias AUAudioFrameCount = UInt32
 
 #### Discussion
 
-This alias is type `uint32_t` for impedance-matching with the pervasive use of `UInt32` in the Audio Toolbox framework and the C Audio Unit framework APIs, as well as the [`AVAudioFrameCount`](https://developer.apple.com/documentation/AVFAudio/AVAudioFrameCount) data type.
+This alias is type `uint32_t` for impedance-matching with the pervasive use of `UInt32` in the Audio Toolbox framework and the C Audio Unit framework APIs, as well as the [`AVAudioFrameCount`](https://developer.apple.com/documentation/avfaudio/avaudioframecount) data type.
 
 ## See Also
 

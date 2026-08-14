@@ -16,7 +16,7 @@ optional func spellServer(_ sender: NSSpellServer, recordResponse response: Int,
 
 #### Discussion
 
-When the user accepts, rejects, or edits an autocorrection, the view notifies the [`NSSpellChecker`](https://developer.apple.com/documentation/AppKit/NSSpellChecker) class of what happened in the client application, and `NSSpellChecker` then invokes this method, so that it can record that and modify future autocorrection behavior based on what it has learned from the user’s actions.
+When the user accepts, rejects, or edits an autocorrection, the view notifies the [`NSSpellChecker`](https://developer.apple.com/documentation/appkit/nsspellchecker) class of what happened in the client application, and `NSSpellChecker` then invokes this method, so that it can record that and modify future autocorrection behavior based on what it has learned from the user’s actions.
 
 ## Parameters
 

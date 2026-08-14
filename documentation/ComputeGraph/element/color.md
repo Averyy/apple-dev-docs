@@ -23,7 +23,7 @@ The color as a 4-component vector (red, green, blue, alpha)
 
 Use this function to read the element’s RGBA color values, including both the color channels and opacity.
 
-> **Note**: ![Graph](https://docs-assets.developer.apple.com/published/fb63d918fd0ea0c32ca0f7c602f9e99d/element__color.svg)
+> **Note**: ![Graph](/images/com.apple.computegraph/element__color.svg)
 
 
 ---

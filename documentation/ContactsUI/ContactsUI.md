@@ -14,7 +14,7 @@ Provide an interface that allows people to display information about their conta
 
 #### Overview
 
-The Contacts UI framework contains user interface objects that provide access to a person’s contacts in your app. Depending on your app’s authorization level for using contacts (as indicated by [`authorizationStatus(for:)`](https://developer.apple.com/documentation/Contacts/CNContactStore/authorizationStatus(for:))), your app may be able to display, edit, select, and create contacts. When the authorization level is [`CNAuthorizationStatus.limited`](https://developer.apple.com/documentation/Contacts/CNAuthorizationStatus/limited), you can display a [`ContactAccessButton`](contactaccessbutton.md) to request access to contacts beyond the limited set a person has currently granted your app access to.
+The Contacts UI framework contains user interface objects that provide access to a person’s contacts in your app. Depending on your app’s authorization level for using contacts (as indicated by [`authorizationStatus(for:)`](https://developer.apple.com/documentation/contacts/cncontactstore/authorizationstatus(for:))), your app may be able to display, edit, select, and create contacts. When the authorization level is [`CNAuthorizationStatus.limited`](https://developer.apple.com/documentation/contacts/cnauthorizationstatus/limited), you can display a [`ContactAccessButton`](contactaccessbutton.md) to request access to contacts beyond the limited set a person has currently granted your app access to.
 
 ## Topics
 

@@ -20,7 +20,7 @@ func indexPathsToDeleteForDecorationView(ofKind elementKind: String) -> [IndexPa
 
 #### Return Value
 
-An array of [`NSIndexPath`](https://developer.apple.com/documentation/Foundation/NSIndexPath) objects indicating the decoration views you want to remove or an empty array if you do not want to remove any views of the given kind.
+An array of [`NSIndexPath`](https://developer.apple.com/documentation/foundation/nsindexpath) objects indicating the decoration views you want to remove or an empty array if you do not want to remove any views of the given kind.
 
 #### Discussion
 

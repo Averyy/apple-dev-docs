@@ -22,7 +22,7 @@ This sample demonstrates:
 
 This implementation minimizes memory usage in an orderly fashion for a filter graph with a downsample and a Gaussian blur filter.
 
-![Screenshot of the sample app running to show a filtered image.](https://docs-assets.developer.apple.com/published/a0e0be8f7c006a6b14466de6eb449c11/image-filtering-with-heaps-and-fences-1-ImageFilteringWithHeapsAndFences.png)
+![Screenshot of the sample app running to show a filtered image.](/images/com.apple.metal/image-filtering-with-heaps-and-fences-1-ImageFilteringWithHeapsAndFences.png)
 
 ##### Getting Started
 
@@ -99,7 +99,7 @@ for(NSUInteger level = 0; level < _imageTextures[i].mipmapLevelCount;  level++)
 _imageTextures[i] = heapTexture;
 ```
 
-![Layout diagram that shows multiple static textures stored in a single heap.](https://docs-assets.developer.apple.com/published/c4bf41741c7141d9d43c106339955078/image-filtering-with-heaps-and-fences-2-StaticTexturesHeap.png)
+![Layout diagram that shows multiple static textures stored in a single heap.](/images/com.apple.metal/image-filtering-with-heaps-and-fences-2-StaticTexturesHeap.png)
 
 ##### Create a Heap for Dynamic Textures
 
@@ -135,7 +135,7 @@ if(!_scratchHeap || requiredSize > [_scratchHeap maxAvailableSizeWithAlignment:r
 
 Any textures allocated from `_scratchHeap` can also be deallocated, which allows the sample to reuse that same memory backing to allocate another texture.
 
-![Layout diagram that shows multiple dynamic textures allocated from a single heap and deallocated back into the same heap.](https://docs-assets.developer.apple.com/published/e5ac077cceb8145797acc6d13b437a39/image-filtering-with-heaps-and-fences-3-DynamicTexturesHeap.png)
+![Layout diagram that shows multiple dynamic textures allocated from a single heap and deallocated back into the same heap.](/images/com.apple.metal/image-filtering-with-heaps-and-fences-3-DynamicTexturesHeap.png)
 
 ##### Manage Dependencies Between Filters
 
@@ -184,7 +184,7 @@ The second filter, implemented by the sample in `AAPLGaussianBlurFilter`, calls 
 [computeEncoder waitForFence:fence];
 ```
 
-![Timeline diagram that shows how a fence manages dependencies between filters.](https://docs-assets.developer.apple.com/published/0b23d93b786cf65b2bf0c9ad0ba7100a/image-filtering-with-heaps-and-fences-4-FenceBetweenFilters.png)
+![Timeline diagram that shows how a fence manages dependencies between filters.](/images/com.apple.metal/image-filtering-with-heaps-and-fences-4-FenceBetweenFilters.png)
 
 ##### Reuse Memory and Manage Dependencies Within a Filter
 
@@ -251,7 +251,7 @@ This memory reuse creates dynamic texture dependencies between mipmap levels. Th
 
 Because the sample already calls the `waitForFence:` method to wait for the downsample filter to complete its work, the sample leverages this same call to wait for any previous mipmap levels to complete their work before beginning a new mipmap level iteration.
 
-![Timeline diagram that shows how a fence manages dependencies within a filter.](https://docs-assets.developer.apple.com/published/3eaffb77d4c0f7034d33414743758c71/image-filtering-with-heaps-and-fences-5-FenceWithinFilter.png)
+![Timeline diagram that shows how a fence manages dependencies within a filter.](/images/com.apple.metal/image-filtering-with-heaps-and-fences-5-FenceWithinFilter.png)
 
 ## See Also
 

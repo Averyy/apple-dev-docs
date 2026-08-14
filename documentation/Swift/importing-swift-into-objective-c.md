@@ -10,7 +10,7 @@ You can work with types declared in Swift from within the Objective-C code in yo
 
 The header’s name is generated from your product module name, followed by `"-Swift.h"`. By default, this name is the same as your product name, with any nonalphanumeric characters replaced with an underscore (`_`). If the name begins with a number, the first digit is replaced with an underscore.
 
-![Diagram showing the steps to import Swift declarations into Objective-C code. Use forward declarations to declare Swift classes used in an Objective-C header file, and #import statements to import the Xcode-generated header into Objective-C .m files.](https://docs-assets.developer.apple.com/published/686f6a812f41d58d69bfe64e17b04291/importing-swift-into-objective-c-1%402x.png)
+![Diagram showing the steps to import Swift declarations into Objective-C code. Use forward declarations to declare Swift classes used in an Objective-C header file, and #import statements to import the Xcode-generated header into Objective-C .m files.](/images/com.apple.Swift/importing-swift-into-objective-c-1@2x.png)
 
 The process for importing Swift declarations into Objective-C code differs slightly depending on whether you’re writing an app or a framework. Both processes are described below.
 

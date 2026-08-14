@@ -22,7 +22,7 @@ static let paperMarginDocumentAttribute: NSAttributedString.DocumentAttributeKey
 
 #### Discussion
 
-The value of this attribute is an [`NSValue`](nsvalue.md) object containing [`UIEdgeInsets`](https://developer.apple.com/documentation/UIKit/UIEdgeInsets).
+The value of this attribute is an [`NSValue`](nsvalue.md) object containing [`UIEdgeInsets`](https://developer.apple.com/documentation/uikit/uiedgeinsets).
 
 The string constant in macOS 10.3 and earlier is `@"PaperMargin"`.
 

@@ -16,17 +16,17 @@ To create a workout route:
 4. **End the workout.** Stop tracking the user’s location. Save the workout to the HealthKit store.
 5. **Finish the route.** Tell the  route builder to save the route and associates it with the workout.
 
-![An illustration showing the steps required to create a workout route: Request the required permissions, start the workout, process location updates as they arrive, end the workout, and finish the route.](https://docs-assets.developer.apple.com/published/60563007f57901f4a103edd7fab5484e/media-2955571%402x.png)
+![An illustration showing the steps required to create a workout route: Request the required permissions, start the workout, process location updates as they arrive, end the workout, and finish the route.](/images/com.apple.healthkit/media-2955571@2x.png)
 
 ##### Request Permissions
 
 As noted in [`Setting up HealthKit`](setting-up-healthkit.md), you must request permission from the user before using any data in HealthKit. Specifically for route data, you must request permission to read and share both [`HKWorkout`](hkworkout.md) and [`HKWorkoutRoute`](hkworkoutroute.md) samples.
 
-You must also request permission to use location services before your app receives location updates from [`Core Location`](https://developer.apple.com/documentation/CoreLocation). For more information on requesting permission to use location services, see [`CLLocationManager`](https://developer.apple.com/documentation/CoreLocation/CLLocationManager).
+You must also request permission to use location services before your app receives location updates from [`Core Location`](https://developer.apple.com/documentation/corelocation). For more information on requesting permission to use location services, see [`CLLocationManager`](https://developer.apple.com/documentation/corelocation/cllocationmanager).
 
 ##### Start the Workout
 
-When the user starts a new workout, begin tracking the user’s location using a [`CLLocationManager`](https://developer.apple.com/documentation/CoreLocation/CLLocationManager) object from the Core Location framework. After you call the location manager’s [`startUpdatingLocation()`](https://developer.apple.com/documentation/CoreLocation/CLLocationManager/startUpdatingLocation()) method, the location manager’s delegate begins receiving updates containing the user’s current location.
+When the user starts a new workout, begin tracking the user’s location using a [`CLLocationManager`](https://developer.apple.com/documentation/corelocation/cllocationmanager) object from the Core Location framework. After you call the location manager’s [`startUpdatingLocation()`](https://developer.apple.com/documentation/corelocation/cllocationmanager/startupdatinglocation()) method, the location manager’s delegate begins receiving updates containing the user’s current location.
 
 ```swift
 // Start tracking the user.

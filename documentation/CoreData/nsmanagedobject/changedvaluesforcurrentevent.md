@@ -22,7 +22,7 @@ func changedValuesForCurrentEvent() -> [String : Any]
 
 #### Return Value
 
-A dictionary with keys that are the names of persistent properties with changes since the last posting of [`NSManagedObjectContextObjectsDidChange`](https://developer.apple.com/documentation/Foundation/NSNotification/Name-swift.struct/NSManagedObjectContextObjectsDidChange), and with the new values for those properties.
+A dictionary with keys that are the names of persistent properties with changes since the last posting of [`NSManagedObjectContextObjectsDidChange`](https://developer.apple.com/documentation/foundation/nsnotification/name-swift.struct/nsmanagedobjectcontextobjectsdidchange), and with the new values for those properties.
 
 #### Discussion
 

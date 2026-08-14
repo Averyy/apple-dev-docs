@@ -21,7 +21,7 @@ func loadTile(at path: MKTileOverlayPath) async throws -> Data
 
 #### Discussion
 
-The default implementation of this method uses the [`url(forTilePath:)`](mktileoverlay/url(fortilepath:).md) method to retrieve the URL for the specified tile and then loads that tile into memory asynchronously using a [`URLSession`](https://developer.apple.com/documentation/Foundation/URLSession) object. The specified tile may be located either on the local file system or on a remote server. Subclasses may override this method and implement their own custom tile-loading behavior.
+The default implementation of this method uses the [`url(forTilePath:)`](mktileoverlay/url(fortilepath:).md) method to retrieve the URL for the specified tile and then loads that tile into memory asynchronously using a [`URLSession`](https://developer.apple.com/documentation/foundation/urlsession) object. The specified tile may be located either on the local file system or on a remote server. Subclasses may override this method and implement their own custom tile-loading behavior.
 
 When a tile overlay renderer (that is, an instance of [`MKTileOverlayRenderer`](mktileoverlayrenderer.md)) needs to display tiles, it uses this method to request the data for each tile.
 

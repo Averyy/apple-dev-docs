@@ -30,9 +30,9 @@ protocol HKCategoryValuePredicateProviding : Hashable, RawRepresentable
 ## Relationships
 
 ### Inherits From
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [RawRepresentable](../Swift/RawRepresentable.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [RawRepresentable](../swift/rawrepresentable.md)
 ### Conforming Types
 - [HKCategoryValue](hkcategoryvalue.md)
 - [HKCategoryValueAppetiteChanges](hkcategoryvalueappetitechanges.md)

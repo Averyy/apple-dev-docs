@@ -28,9 +28,9 @@ Thread-safe since Mac OS version 10.2.
 
 ## Parameters
 
-- `inFileURL`: A Core Foundation URL reference designating the item about which information is requested; see the   in the Core Foundation Reference Documentation for a description of the   data type. The URL must have scheme   and contain a valid path to either a file or a directory.
-- `inWhichInfo`: Flags specifying what information to obtain; see   for a description of these flags.
-- `outItemInfo`: If you request the item’s filename extension (field   of the item-information record, requested by flag  ), you are responsible for releasing the Core Foundation string object in which the extension is returned.
+- `inFileURL`: A Core Foundation URL reference designating the item about which information is requested; see the *CFURL Reference* in the Core Foundation Reference Documentation for a description of the `CFURLRef` data type. The URL must have scheme `file` and contain a valid path to either a file or a directory.
+- `inWhichInfo`: Flags specifying what information to obtain; see [`LSRequestedInfo`](lsrequestedinfo.md) for a description of these flags.
+- `outItemInfo`: A pointer to an item-information record that, on return, will contain the requested information; see [`LSItemInfoRecord`](lsiteminforecord.md) for a description of this structure. If you request the item’s filename extension (field `extension` of the item-information record, requested by flag `kLSRequestExtension`), you are responsible for releasing the Core Foundation string object in which the extension is returned.
 
 ## See Also
 

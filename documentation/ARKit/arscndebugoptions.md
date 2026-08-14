@@ -17,7 +17,7 @@ typealias ARSCNDebugOptions = SCNDebugOptions
 
 #### Discussion
 
-To use these debugging overlays, add them to the option set in the view’s [`debugOptions`](https://developer.apple.com/documentation/SceneKit/SCNSceneRenderer/debugOptions) property (inherited from the [`SCNView`](https://developer.apple.com/documentation/SceneKit/SCNView) class).
+To use these debugging overlays, add them to the option set in the view’s [`debugOptions`](https://developer.apple.com/documentation/scenekit/scnscenerenderer/debugoptions) property (inherited from the [`SCNView`](https://developer.apple.com/documentation/scenekit/scnview) class).
 
 
 ---

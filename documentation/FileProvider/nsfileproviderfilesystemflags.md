@@ -42,14 +42,14 @@ The flags define the on-disk properties of the item. The system modifies the ite
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../Swift/BitwiseCopyable.md)
-- [Equatable](../Swift/Equatable.md)
-- [ExpressibleByArrayLiteral](../Swift/ExpressibleByArrayLiteral.md)
-- [OptionSet](../Swift/OptionSet.md)
-- [RawRepresentable](../Swift/RawRepresentable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
-- [SetAlgebra](../Swift/SetAlgebra.md)
+- [BitwiseCopyable](../swift/bitwisecopyable.md)
+- [Equatable](../swift/equatable.md)
+- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
+- [OptionSet](../swift/optionset.md)
+- [RawRepresentable](../swift/rawrepresentable.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
+- [SetAlgebra](../swift/setalgebra.md)
 
 ## See Also
 

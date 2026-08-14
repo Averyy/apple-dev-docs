@@ -21,7 +21,7 @@ static let newValueUserInfoKey: String
 
 #### Discussion
 
-This key’s value is an [`NSString`](https://developer.apple.com/documentation/Foundation/NSString) object that reflects the new value of the [`preferredContentSizeCategory`](uiapplication/preferredcontentsizecategory.md) property.
+This key’s value is an [`NSString`](https://developer.apple.com/documentation/foundation/nsstring) object that reflects the new value of the [`preferredContentSizeCategory`](uiapplication/preferredcontentsizecategory.md) property.
 
 ## See Also
 

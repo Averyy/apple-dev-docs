@@ -20,7 +20,7 @@ var NSCloudSharingOtherError: Int { get }
 
 #### Discussion
 
-For CloudKit sharing, use the [`NSUnderlyingErrorKey`](nsunderlyingerrorkey.md), whose value is a [`CKErrorDomain`](https://developer.apple.com/documentation/CloudKit/CKErrorDomain) error, to discover the specific error. Refer to the [`CloudKit`](https://developer.apple.com/documentation/CloudKit) documentation for the proper response to these errors.
+For CloudKit sharing, use the [`NSUnderlyingErrorKey`](nsunderlyingerrorkey.md), whose value is a [`CKErrorDomain`](https://developer.apple.com/documentation/cloudkit/ckerrordomain) error, to discover the specific error. Refer to the [`CloudKit`](https://developer.apple.com/documentation/cloudkit) documentation for the proper response to these errors.
 
 ## See Also
 

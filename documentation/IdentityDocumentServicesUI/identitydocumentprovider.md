@@ -36,7 +36,7 @@ Your extension indicates which request types it supports through the provided `I
 ## Relationships
 
 ### Inherits From
-- [AppExtension](../ExtensionFoundation/AppExtension.md)
+- [AppExtension](../extensionfoundation/appextension.md)
 
 ## See Also
 

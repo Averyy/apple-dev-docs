@@ -10,8 +10,8 @@ The vast majority of developers don’t need to know how code signing works.  Th
 
 However, that’s not always the case.  Every now and again an issue crops up where you actually need to understand how code signing works.  For example:
 
-- [`Using the latest code signature format`](https://developer.apple.com/documentation/Xcode/using-the-latest-code-signature-format) has a diagnostic process that involves code signing hash slots.  While that process is actionable in and of itself, it makes more sense if you know what those hash slots hold.
-- The issue covered by [`Updating Mac Software`](https://developer.apple.com/documentation/Security/updating-mac-software) makes more sense once you understand code signing’s lazy per-page signature checking.
+- [`Using the latest code signature format`](https://developer.apple.com/documentation/xcode/using-the-latest-code-signature-format) has a diagnostic process that involves code signing hash slots.  While that process is actionable in and of itself, it makes more sense if you know what those hash slots hold.
+- The issue covered by [`Updating Mac Software`](https://developer.apple.com/documentation/security/updating-mac-software) makes more sense once you understand code signing’s lazy per-page signature checking.
 
 This technote explains how code signing uses hashes to protect the code’s executable pages, resources, and metadata from tampering.  This technology is absolutely central to code signing’s core function: protecting code from malicious modification.
 
@@ -23,7 +23,7 @@ The examples in this technote are taken from macOS, but these concepts apply to 
 
 Code signing is a foundational technology on all Apple platforms.  Many documents that discuss code signing focus on solving a specific problem.  The *Inside Code Signing* technotes peek behind the code signing curtain, to give you a better understanding of how it works.  For a list of all the technotes in this series, see the introduction in [`TN3125: Inside Code Signing: Provisioning Profiles`](tn3125-inside-code-signing-provisioning-profiles.md).
 
-> ❗ **Important**: The *Inside Code Signing* technotes discuss code signing details that aren’t considered API.  The structure of a code signature has changed numerous times in the past and may well change again in the future.  Don’t encode this information in your product.  When signing code, use Xcode (all platforms) or the `codesign` tool (macOS only).  To get information or validate a code signature, use the `codesign` tool or the [`Code Signing Services`](https://developer.apple.com/documentation/Security/code-signing-services) API.  Apple updates these facilities to accommodate any changes to the code signature structure as they roll out.
+> ❗ **Important**: The *Inside Code Signing* technotes discuss code signing details that aren’t considered API.  The structure of a code signature has changed numerous times in the past and may well change again in the future.  Don’t encode this information in your product.  When signing code, use Xcode (all platforms) or the `codesign` tool (macOS only).  To get information or validate a code signature, use the `codesign` tool or the [`Code Signing Services`](https://developer.apple.com/documentation/security/code-signing-services) API.  Apple updates these facilities to accommodate any changes to the code signature structure as they roll out.
 
 #### Code Signature Storage
 
@@ -36,7 +36,7 @@ Load command 35
   cmdsize 16
   dataoff 55120
  datasize 19536
-``` To build the AppWithTool app used in this example, follow the instructions in [`Embedding a command-line tool in a sandboxed app`](https://developer.apple.com/documentation/Xcode/embedding-a-helper-tool-in-a-sandboxed-app). In a universal binary, each architecture is signed independently.  For details on the signature of a specific architecture, pass the `-arch` option to `otool`.
+``` To build the AppWithTool app used in this example, follow the instructions in [`Embedding a command-line tool in a sandboxed app`](https://developer.apple.com/documentation/xcode/embedding-a-helper-tool-in-a-sandboxed-app). In a universal binary, each architecture is signed independently.  For details on the signature of a specific architecture, pass the `-arch` option to `otool`.
 - If the item is a bundle without a Mach-O image, the code signature is stored in the bundle’s `_CodeSignature` directory: ```shell
 % codesign --display -vvv Codeless.bundle  
 …
@@ -76,7 +76,7 @@ Authority=Apple Development: …
     com.apple.cs.CodeSignature      4860 
 ```
 
-> ❗ **Important**: Storing a code signature in EAs is brittle because many file transfer mechanisms drop these.  To avoid this potential pitfall, follow the rules in [`Placing content in a bundle`](https://developer.apple.com/documentation/BundleResources/placing-content-in-a-bundle).
+> ❗ **Important**: Storing a code signature in EAs is brittle because many file transfer mechanisms drop these.  To avoid this potential pitfall, follow the rules in [`Placing content in a bundle`](https://developer.apple.com/documentation/bundleresources/placing-content-in-a-bundle).
 
 For more information about the tools used in these examples, read their man pages.  If you’re unfamiliar with that process, see [`Reading UNIX Manual Pages`](https://developer.apple.com/documentation/os/reading-unix-manual-pages).  Specifically, the `codesign` man page is the key reference if you’re working at this level.
 
@@ -186,9 +186,9 @@ The non-negative slots are for per-page hashes: 0 is the hash for the first page
 
 This per-page architecture allows the kernel to check each page as it’s loaded into memory.  If a process takes a page fault on a memory mapped file that’s code signed then, as part of satisfying that fault, the kernel may choose to verify the hash of the page’s contents.  This allows the system to run a code-signed executable and check its code signature lazily (in the computer science sense of that word).
 
-macOS doesn’t *always* check code as it’s paged in.  One key feature of the [`Hardened Runtime`](https://developer.apple.com/documentation/Security/hardened-runtime) is that it opts the process into this checking by default.  The [`Disable Executable Memory Protection Entitlement`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.security.cs.disable-executable-page-protection) opts you out of this and other security features.  Don’t do that!
+macOS doesn’t *always* check code as it’s paged in.  One key feature of the [`Hardened Runtime`](https://developer.apple.com/documentation/security/hardened-runtime) is that it opts the process into this checking by default.  The [`Disable Executable Memory Protection Entitlement`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.security.cs.disable-executable-page-protection) opts you out of this and other security features.  Don’t do that!
 
-> **Note**: The [`Disable Executable Memory Protection Entitlement`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.security.cs.disable-executable-page-protection) only has this effect on Intel code. For Apple silicon code, this entitlement leaves page protection enabled, making it equivalent to the [`Allow Unsigned Executable Memory Entitlement`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.security.cs.allow-unsigned-executable-memory).
+> **Note**: The [`Disable Executable Memory Protection Entitlement`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.security.cs.disable-executable-page-protection) only has this effect on Intel code. For Apple silicon code, this entitlement leaves page protection enabled, making it equivalent to the [`Allow Unsigned Executable Memory Entitlement`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.security.cs.allow-unsigned-executable-memory).
 
 #### Special Slots
 
@@ -213,7 +213,7 @@ e3fc08cfb2a658bc588ac603f8bfc04a54a62f5893d586f710f3005a5a763ad2 …
 
 The `Info.plist` hash matches the value in its hash slot.  Neat-o!
 
-Now consider this advice from [`Using the latest code signature format`](https://developer.apple.com/documentation/Xcode/using-the-latest-code-signature-format):
+Now consider this advice from [`Using the latest code signature format`](https://developer.apple.com/documentation/xcode/using-the-latest-code-signature-format):
 
 *If -5 contains a value and -7 contains a zero value, or is not present, you need to re-sign your app to include the new DER entitlements.*
 
@@ -346,7 +346,7 @@ designated => anchor apple generic and identifier "com.example.apple-samplecode.
 
 In theory this lets you update the nested code with a new version, as long as it has the same DR.  In practice, this facility is not used in standard deployment workflows and is now deprecated.
 
-> ❗ **Important**: iOS, watchOS, and tvOS have a different model for nested code.  They put strict limits on where you can place nested code.  For details on those limits, see [`Placing content in a bundle`](https://developer.apple.com/documentation/BundleResources/placing-content-in-a-bundle).  Also, when you nest code in an app, the app references that nested code as a collection of resource files rather than using a single nested code reference.  Nested code references are only used on macOS.
+> ❗ **Important**: iOS, watchOS, and tvOS have a different model for nested code.  They put strict limits on where you can place nested code.  For details on those limits, see [`Placing content in a bundle`](https://developer.apple.com/documentation/bundleresources/placing-content-in-a-bundle).  Also, when you nest code in an app, the app references that nested code as a collection of resource files rather than using a single nested code reference.  Nested code references are only used on macOS.
 
 For more information about code signing requirements, see [`TN3127: Inside Code Signing: Requirements`](tn3127-inside-code-signing-requirements.md).
 

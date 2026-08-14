@@ -19,7 +19,7 @@ var arrivalDate: Date { get }
 
 #### Discussion
 
-When the visit object does not include arrival information, this property is set to the date returned by the [`distantPast`](https://developer.apple.com/documentation/Foundation/NSDate/distantPast) method of [`NSDate`](https://developer.apple.com/documentation/Foundation/NSDate).
+When the visit object does not include arrival information, this property is set to the date returned by the [`distantPast`](https://developer.apple.com/documentation/foundation/nsdate/distantpast) method of [`NSDate`](https://developer.apple.com/documentation/foundation/nsdate).
 
 ## See Also
 

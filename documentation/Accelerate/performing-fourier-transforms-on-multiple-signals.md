@@ -79,7 +79,7 @@ let signal: [Float] = {
 
 The following image is a visualization of the values in `signal`:
 
-![A diagram showing four composite sine waves each represented by 256 elements. The four sine waves are concatenated together to form a single multiple-signal collection that contains 1024 elements.](https://docs-assets.developer.apple.com/published/99af10aec279cebb603875b7d7ac7bfb/media-3706066%402x.png)
+![A diagram showing four composite sine waves each represented by 256 elements. The four sine waves are concatenated together to form a single multiple-signal collection that contains 1024 elements.](/images/com.apple.accelerate/media-3706066@2x.png)
 
 The vDSP FFT and DFT functions work with data in split-complex format. Split-complex format stores the real and imaginary parts of complex numbers in the corresponding elements of two separate arrays.
 
@@ -220,7 +220,7 @@ var imaginarySignal: [Float] = {
 
 The following image is a visualization of the values in `realSignal` as a solid line and the values in `imaginarySignal` as a dashed line:
 
-![A diagram showing four composite, complex sine waves each represented by 256 elements. The four sine waves are concatenated together to form a single multiple-signal collection that contains 1024 complex elements.](https://docs-assets.developer.apple.com/published/79577e8d51dd681b1e86accb1e24e478/media-3706065%402x.png)
+![A diagram showing four composite, complex sine waves each represented by 256 elements. The four sine waves are concatenated together to form a single multiple-signal collection that contains 1024 complex elements.](/images/com.apple.accelerate/media-3706065@2x.png)
 
 The [`vDSP_fftm_zip`](vdsp_fftm_zip.md) function performs the FFT in-place on the real and imaginary arrays.
 

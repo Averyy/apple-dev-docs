@@ -16,7 +16,7 @@ virtual kern_return_t DeviceRequest(uint8_t bmRequestType, uint8_t bRequest, uin
 
 #### Return Value
 
-[`kIOReturnSuccess`](https://developer.apple.com/documentation/DriverKit/kIOReturnSuccess) if the request completed successfully, or another value if an error occurs. See [`Error Codes`](https://developer.apple.com/documentation/DriverKit/error-codes).
+[`kIOReturnSuccess`](https://developer.apple.com/documentation/driverkit/kioreturnsuccess) if the request completed successfully, or another value if an error occurs. See [`Error Codes`](https://developer.apple.com/documentation/driverkit/error-codes).
 
 #### Discussion
 

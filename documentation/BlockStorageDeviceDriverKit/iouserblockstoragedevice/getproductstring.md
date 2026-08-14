@@ -16,7 +16,7 @@ virtual kern_return_t GetProductString(struct DeviceString *product);
 
 #### Return Value
 
-A value that indicates the get-product-string result. Return [`kIOReturnSuccess`](https://developer.apple.com/documentation/DriverKit/kIOReturnSuccess) to inidicate success. To indicate a failure, see [`IOKit Constants`](https://developer.apple.com/documentation/iokit/iokit_constants) for error definitions.
+A value that indicates the get-product-string result. Return [`kIOReturnSuccess`](https://developer.apple.com/documentation/driverkit/kioreturnsuccess) to inidicate success. To indicate a failure, see [`IOKit Constants`](https://developer.apple.com/documentation/iokit/iokit_constants) for error definitions.
 
 ## Parameters
 

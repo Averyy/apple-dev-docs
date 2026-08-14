@@ -67,7 +67,7 @@ fatalError("*** An error occurred while requesting permission to read vision pre
 
 When your app calls this method, HealthKit displays an authorization sheet that asks for permission to read the samples that match the predicate and object type. The person using your app can then select individual samples to share with your app. The system always asks for permission, regardless of whether they previously granted it.
 
-![A screenshot of the authorization sheet, showing two vision prescriptions. People can individually enable each of the prescriptions.](https://docs-assets.developer.apple.com/published/f97653d2cdef38e39eeaef1e7f39b5ce/media-4092700%402x.png)
+![A screenshot of the authorization sheet, showing two vision prescriptions. People can individually enable each of the prescriptions.](/images/com.apple.healthkit/media-4092700@2x.png)
 
 After the person responds, the system calls the callback handler on an arbitrary background queue.
 
@@ -75,7 +75,7 @@ After the person responds, the system calls the callback handler on an arbitrary
 
 - `objectType`: The data type you want to read.
 - `predicate`: A predicate that further restricts the data type.
-- `completion`: A completion handler that the system calls after the user responds to the request. The completion handler has the following parameters: - **success**: A Boolean value that indicates whether the request succeeded. This value doesn’t indicate whether the user actually granted permission. The parameter is [`false`](https://developer.apple.com/documentation/Swift/false) if an error occurred while processing the request; otherwise, it’s [`true`](https://developer.apple.com/documentation/Swift/true).
+- `completion`: A completion handler that the system calls after the user responds to the request. The completion handler has the following parameters: - **success**: A Boolean value that indicates whether the request succeeded. This value doesn’t indicate whether the user actually granted permission. The parameter is [`false`](https://developer.apple.com/documentation/swift/false) if an error occurred while processing the request; otherwise, it’s [`true`](https://developer.apple.com/documentation/swift/true).
 - **error**: An error object. If an error occurred, this object contains information about the error; otherwise, the system passes `nil`.
 
 ## See Also

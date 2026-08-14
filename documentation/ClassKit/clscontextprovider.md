@@ -28,7 +28,7 @@ You still build contexts in your main app to support your app’s normal operati
 
 Create a ClassKit context provider by adding a new target to your project in Xcode using File > New > Target. Choose the ClassKit context provider template and give it a name.
 
-![Screenshot of ClassKit context provider template selection in Xcode.](https://docs-assets.developer.apple.com/published/82bea54c4066cfdbe2fef00e0c6769fc/media-3125786%402x.png)
+![Screenshot of ClassKit context provider template selection in Xcode.](/images/com.apple.classkit/media-3125786@2x.png)
 
 Xcode adds several supporting files to your project, including a new source file that defines the extension’s primary class that adopts the [`CLSContextProvider`](clscontextprovider.md) protocol. Fill in the empty [`updateDescendants(of:completion:)`](clscontextprovider/updatedescendants(of:completion:).md) method with your implementation.
 

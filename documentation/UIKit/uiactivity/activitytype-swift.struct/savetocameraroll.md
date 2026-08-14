@@ -19,7 +19,7 @@ static let saveToCameraRoll: UIActivity.ActivityType
 
 #### Discussion
 
-When using this service, you can provide a [`UIImage`](uiimage.md) object as data for image-based activity items. For image and video items, you can provide an [`NSURL`](https://developer.apple.com/documentation/Foundation/NSURL) object with a path to the video.
+When using this service, you can provide a [`UIImage`](uiimage.md) object as data for image-based activity items. For image and video items, you can provide an [`NSURL`](https://developer.apple.com/documentation/foundation/nsurl) object with a path to the video.
 
 ## See Also
 

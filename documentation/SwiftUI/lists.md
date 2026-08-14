@@ -8,13 +8,13 @@ Display a structured, scrollable column of information.
 
 Use a list to display a one-dimensional vertical collection of views.
 
-![None](https://docs-assets.developer.apple.com/published/15c88d97bce9de9704854a5490b6aee5/lists-hero%402x.png)
+![None](/images/com.apple.SwiftUI/lists-hero@2x.png)
 
 The list is a complex container type that automatically provides scrolling when it grows too large for the current display. You build a list by providing it with individual views for the rows in the list, or by using a [`ForEach`](foreach.md) to enumerate a group of rows. You can also mix these strategies, blending any number of individual views and `ForEach` constructs.
 
 Use view modifiers to configure the appearance and behavior of a list and its rows, headers, sections, and separators. For example, you can apply a style to the list, add swipe gestures to individual rows, or make the list refreshable with a pull-down gesture. You can also use the configuration associated with [`Scroll views`](scroll-views.md) to control the list’s implicit scrolling behavior.
 
-For design guidance, see [`Lists and tables`](https://developer.apple.com/design/Human-Interface-Guidelines/lists-and-tables) in the Human Interface Guidelines.
+For design guidance, see [`Lists and tables`](https://developer.apple.com/design/human-interface-guidelines/lists-and-tables) in the Human Interface Guidelines.
 
 ## Topics
 

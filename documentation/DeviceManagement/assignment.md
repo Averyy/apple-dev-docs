@@ -50,12 +50,15 @@ object Assignment
 - [object ManageSubscriptionsRequest](managesubscriptionsrequest.md)
   The request for subscription management.
 - [object ManageSubscriptionAdminsRequest](managesubscriptionadminsrequest.md)
+  The request body for adding or removing subscription administrators.
 - [object ManageSubscriptionAdminsResponse](managesubscriptionadminsresponse.md)
+  The confirmation response that the server returns after adding or removing subscription administrators.
 - [object ResponseSubscriptionAdmin](responsesubscriptionadmin.md)
+  An administrator for a subscription.
+- [object SubscriptionManagementResponse](subscriptionmanagementresponse.md)
+  A confirmation response that reports your device management service’s subscription management support.
 - [object MdmInfo](mdminfo.md)
   Information about the MDM client.
-- [object EventResponse](eventresponse.md)
-  The response that contains the event identifier.
 
 
 ---

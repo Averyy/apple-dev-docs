@@ -43,7 +43,7 @@ By default, Core AI selects the compute units that deliver the best performance 
 
 #### Load a Compiled Model on Device
 
-Ahead-of-time compilation produces one `.aimodelc` per supported device architecture, but each device only needs the variant that matches its own architecture. It’s recommended to host the compiled assets remotely and download the matching variant to the device at runtime, because each device only uses one of them. The [`Background Assets`](https://developer.apple.com/documentation/BackgroundAssets) framework can manage downloads, installs, and updates for your hosted model files.
+Ahead-of-time compilation produces one `.aimodelc` per supported device architecture, but each device only needs the variant that matches its own architecture. It’s recommended to host the compiled assets remotely and download the matching variant to the device at runtime, because each device only uses one of them. The [`Background Assets`](https://developer.apple.com/documentation/backgroundassets) framework can manage downloads, installs, and updates for your hosted model files.
 
 At runtime, query the device architecture to identify which `.aimodelc` to fetch. Use [`deviceArchitectureName`](aimodel/devicearchitecturename.md) to read the architecture string for the current device, then build the file name that matches the asset on your server:
 

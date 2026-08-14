@@ -8,9 +8,9 @@ Enable people to move or duplicate items by issuing Copy and Paste commands.
 
 When people issue standard Copy and Cut commands, they expect to move items to the system’s Clipboard, from which they can paste the items into another place in the same app or into another app. Your app can participate in this activity if you add view modifiers that indicate how to respond to the standard commands.
 
-![None](https://docs-assets.developer.apple.com/published/0c2b0415a2783976458448b003e0705f/clipboard-hero%402x.png)
+![None](/images/com.apple.SwiftUI/clipboard-hero@2x.png)
 
-In your copy and paste modifiers, provide or accept types that conform to the [`Transferable`](https://developer.apple.com/documentation/CoreTransferable/Transferable) protocol, or that inherit from the [`NSItemProvider`](https://developer.apple.com/documentation/Foundation/NSItemProvider) class. When possible, prefer using transferable items.
+In your copy and paste modifiers, provide or accept types that conform to the [`Transferable`](https://developer.apple.com/documentation/coretransferable/transferable) protocol, or that inherit from the [`NSItemProvider`](https://developer.apple.com/documentation/foundation/nsitemprovider) class. When possible, prefer using transferable items.
 
 ## Topics
 

@@ -18,7 +18,7 @@ The collection of functions you use to create a tile map node programmatically.
 - [init(tileSet: SKTileSet, columns: Int, rows: Int, tileSize: CGSize, tileGroupLayout: [SKTileGroup])](sktilemapnode/init(tileset:columns:rows:tilesize:tilegrouplayout:).md)
   Creates and initializes a tile map node using the provided tile set with a specified number of columns and rows. For a grid set type, the overall size, in points, of the node will be `numberOfColumns * tileSize.width` wide and `numberOfRows * tileSize.height` high.
 - [class func tileMapNodes(tileSet: SKTileSet, columns: Int, rows: Int, tileSize: CGSize, from: GKNoiseMap, tileTypeNoiseMapThresholds: [NSNumber]) -> [SKTileMapNode]](sktilemapnode/tilemapnodes(tileset:columns:rows:tilesize:from:tiletypenoisemapthresholds:).md)
-  Creates a tile map node by allowing a [`GKNoiseMap`](https://developer.apple.com/documentation/GameplayKit/GKNoiseMap) to choose its tiles.
+  Creates a tile map node by allowing a [`GKNoiseMap`](https://developer.apple.com/documentation/gameplaykit/gknoisemap) to choose its tiles.
 ### Defining a Tile Map’s Contents
 - [var enableAutomapping: Bool](sktilemapnode/enableautomapping.md)
   When creating a tile map node programmatically, specifies whether the tile map uses automapping behavior like the scene editor.

@@ -20,9 +20,9 @@ class GLKViewController
 
 A [`GLKViewController`](glkviewcontroller.md) object works in conjunction with a [`GLKView`](glkview.md) object to display frames of animation in the view, and also provides standard view controller functionality.
 
-To use this class, allocate and initialize a new [`GLKViewController`](glkviewcontroller.md) subclass and set its [`view`](https://developer.apple.com/documentation/UIKit/UIViewController/view) property to point to a [`GLKView`](glkview.md) object. Then, configure the view controller’s [`preferredFramesPerSecond`](glkviewcontroller/preferredframespersecond.md) property to the desired frame rate your application requires. You can set a delegate or configure other properties on the view controller, such as whether the animation loop is automatically paused or resumed when the application moves into the background.
+To use this class, allocate and initialize a new [`GLKViewController`](glkviewcontroller.md) subclass and set its [`view`](https://developer.apple.com/documentation/uikit/uiviewcontroller/view) property to point to a [`GLKView`](glkview.md) object. Then, configure the view controller’s [`preferredFramesPerSecond`](glkviewcontroller/preferredframespersecond.md) property to the desired frame rate your application requires. You can set a delegate or configure other properties on the view controller, such as whether the animation loop is automatically paused or resumed when the application moves into the background.
 
-> **Note**:  When you set the [`view`](https://developer.apple.com/documentation/UIKit/UIViewController/view) property to point to a [`GLKView`](glkview.md) object, if the view does not already have a delegate, then the view controller is automatically set as the view’s delegate.
+> **Note**:  When you set the [`view`](https://developer.apple.com/documentation/uikit/uiviewcontroller/view) property to point to a [`GLKView`](glkview.md) object, if the view does not already have a delegate, then the view controller is automatically set as the view’s delegate.
 
 When active, rendering loop automatically updates the view’s contents each time a new frame must be displayed. Each frame is rendered by the view controller using these steps:
 
@@ -31,7 +31,7 @@ When active, rendering loop automatically updates the view’s contents each tim
 
 ##### Subclassing Notes
 
-Your application should subclass [`GLKViewController`](glkviewcontroller.md) and override the [`viewDidLoad()`](https://developer.apple.com/documentation/UIKit/UIViewController/viewDidLoad()) and [`viewDidUnload`](https://developer.apple.com/documentation/UIKit/UIViewController/viewDidUnload) methods. Your `viewDidLoad` method should set up your context and any drawable properties and can perform other resource allocation and initialization. Similarly, your class’s `viewDidUnload` method should delete the drawable object and free any unneeded resources.
+Your application should subclass [`GLKViewController`](glkviewcontroller.md) and override the [`viewDidLoad()`](https://developer.apple.com/documentation/uikit/uiviewcontroller/viewdidload()) and [`viewDidUnload`](https://developer.apple.com/documentation/uikit/uiviewcontroller/viewdidunload) methods. Your `viewDidLoad` method should set up your context and any drawable properties and can perform other resource allocation and initialization. Similarly, your class’s `viewDidUnload` method should delete the drawable object and free any unneeded resources.
 
 As an alternative to implementing a [`glkViewControllerUpdate(_:)`](glkviewcontrollerdelegate/glkviewcontrollerupdate(_:).md) method in a delegate, your subclass can provide an update method instead. The method must have the following signature:
 
@@ -71,29 +71,29 @@ As an alternative to implementing a [`glkViewControllerUpdate(_:)`](glkviewcontr
 ## Relationships
 
 ### Inherits From
-- [UIViewController](../UIKit/UIViewController.md)
+- [UIViewController](../uikit/uiviewcontroller.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
 - [GLKViewDelegate](glkviewdelegate.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCoding](../Foundation/NSCoding.md)
-- [NSExtensionRequestHandling](../Foundation/NSExtensionRequestHandling.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
-- [UIActivityItemsConfigurationProviding](../UIKit/UIActivityItemsConfigurationProviding.md)
-- [UIAppearanceContainer](../UIKit/UIAppearanceContainer.md)
-- [UIContentContainer](../UIKit/UIContentContainer.md)
-- [UIFocusEnvironment](../UIKit/UIFocusEnvironment.md)
-- [UIPasteConfigurationSupporting](../UIKit/UIPasteConfigurationSupporting.md)
-- [UIResponderStandardEditActions](../UIKit/UIResponderStandardEditActions.md)
-- [UIStateRestoring](../UIKit/UIStateRestoring.md)
-- [UITraitChangeObservable](../UIKit/UITraitChangeObservable-67e94.md)
-- [UITraitEnvironment](../UIKit/UITraitEnvironment.md)
-- [UIUserActivityRestoring](../UIKit/UIUserActivityRestoring.md)
+- [Hashable](../swift/hashable.md)
+- [NSCoding](../foundation/nscoding.md)
+- [NSExtensionRequestHandling](../foundation/nsextensionrequesthandling.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
+- [UIActivityItemsConfigurationProviding](../uikit/uiactivityitemsconfigurationproviding.md)
+- [UIAppearanceContainer](../uikit/uiappearancecontainer.md)
+- [UIContentContainer](../uikit/uicontentcontainer.md)
+- [UIFocusEnvironment](../uikit/uifocusenvironment.md)
+- [UIPasteConfigurationSupporting](../uikit/uipasteconfigurationsupporting.md)
+- [UIResponderStandardEditActions](../uikit/uiresponderstandardeditactions.md)
+- [UIStateRestoring](../uikit/uistaterestoring.md)
+- [UITraitChangeObservable](../uikit/uitraitchangeobservable-67e94.md)
+- [UITraitEnvironment](../uikit/uitraitenvironment.md)
+- [UIUserActivityRestoring](../uikit/uiuseractivityrestoring.md)
 
 ## See Also
 

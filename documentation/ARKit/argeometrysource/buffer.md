@@ -19,7 +19,7 @@ var buffer: any MTLBuffer { get }
 
 Each vector in the buffer is of the type defined by [`format`](argeometrysource/format.md). Every vector may itself contain multiple scalars, defined by [`componentsPerVector`](argeometrysource/componentspervector.md).
 
-The buffer’s [`storageMode`](https://developer.apple.com/documentation/Metal/MTLResource/storageMode) is [`MTLStorageMode.shared`](https://developer.apple.com/documentation/Metal/MTLStorageMode/shared) which allows it to be accessed on both, the CPU, and GPU.
+The buffer’s [`storageMode`](https://developer.apple.com/documentation/metal/mtlresource/storagemode) is [`MTLStorageMode.shared`](https://developer.apple.com/documentation/metal/mtlstoragemode/shared) which allows it to be accessed on both, the CPU, and GPU.
 
 ## See Also
 

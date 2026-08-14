@@ -19,7 +19,7 @@ class let touchBarVolumeDownTemplateName: String
 
 #### Discussion
 
-![Template image for volume down](https://docs-assets.developer.apple.com/published/8ce9380d5ea753ef54d77e0893c8be42/media-2793510%402x.png)
+![Template image for volume down](/images/com.apple.appkit/media-2793510@2x.png)
 
 Touch Bar template images are exclusively for use in [`NSTouchBarItem`](nstouchbaritem.md) objects and not in onscreen windows.
 

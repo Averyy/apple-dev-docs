@@ -24,8 +24,8 @@ Use this routine to mark the beginning of a descriptor definition in an `AEDesc`
 
 ## Parameters
 
-- `ref`: An   containing the stream data.
-- `newType`: A type code for the new   being added to the stream. See  .
+- `ref`: An [`AEStreamRef`](aestreamref.md) containing the stream data.
+- `newType`: A type code for the new `AEDesc` being added to the stream. See [`DescType`](desctype.md).
 
 ## See Also
 

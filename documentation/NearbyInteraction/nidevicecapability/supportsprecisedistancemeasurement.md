@@ -20,7 +20,7 @@ var supportsPreciseDistanceMeasurement: Bool { get }
 
 #### Discussion
 
-If [`false`](https://developer.apple.com/documentation/Swift/false), then the device doesn’t support Nearby Interaction.
+If [`false`](https://developer.apple.com/documentation/swift/false), then the device doesn’t support Nearby Interaction.
 
 This property is functionally equivalent to the deprecated [`isSupported`](nisession/issupported.md).
 

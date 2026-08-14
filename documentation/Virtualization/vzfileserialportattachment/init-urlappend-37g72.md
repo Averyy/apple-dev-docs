@@ -21,7 +21,7 @@ A file-based serial port attachment on success, or `nil` if initialization faile
 ## Parameters
 
 - `url`: The URL of a file on the local file system. The specified file must be writable by the virtual machine.
-- `shouldAppend`: A Boolean that indicates whether the virtual machine opens the file in append mode. Specify [`true`](https://developer.apple.com/documentation/Swift/true) to append data to the file, and specify [`false`](https://developer.apple.com/documentation/Swift/false) to replace the contents of the file with any new data.
+- `shouldAppend`: A Boolean that indicates whether the virtual machine opens the file in append mode. Specify [`true`](https://developer.apple.com/documentation/swift/true) to append data to the file, and specify [`false`](https://developer.apple.com/documentation/swift/false) to replace the contents of the file with any new data.
 
 
 ---

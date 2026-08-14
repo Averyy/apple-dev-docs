@@ -21,7 +21,7 @@ func createPath()
 
 #### Discussion
 
-The default implementation of this method does nothing. Subclasses can override it and use it to create the [`CGPath`](https://developer.apple.com/documentation/CoreGraphics/CGPath) data type the subclass uses for drawing. After creating the path, your implementation needs to assign it to the [`path`](mkoverlaypathrenderer/path.md) property.
+The default implementation of this method does nothing. Subclasses can override it and use it to create the [`CGPath`](https://developer.apple.com/documentation/coregraphics/cgpath) data type the subclass uses for drawing. After creating the path, your implementation needs to assign it to the [`path`](mkoverlaypathrenderer/path.md) property.
 
 ## See Also
 

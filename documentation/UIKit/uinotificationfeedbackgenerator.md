@@ -21,7 +21,7 @@ class UINotificationFeedbackGenerator
 
 Use notification feedback to communicate that a task or action succeeded, failed, or produced a warning of some kind.
 
-For more information, read [`Playing haptic feedback in your app`](https://developer.apple.com/documentation/ApplePencil/playing-haptic-feedback-in-your-app).
+For more information, read [`Playing haptic feedback in your app`](https://developer.apple.com/documentation/applepencil/playing-haptic-feedback-in-your-app).
 
 ## Topics
 
@@ -38,19 +38,19 @@ For more information, read [`Playing haptic feedback in your app`](https://devel
 ### Inherits From
 - [UIFeedbackGenerator](uifeedbackgenerator.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 - [UIInteraction](uiinteraction.md)
 
 ## See Also
 
-- [Playing haptic feedback in your app](../ApplePencil/playing-haptic-feedback-in-your-app.md)
+- [Playing haptic feedback in your app](../applepencil/playing-haptic-feedback-in-your-app.md)
   Provide tactile feedback when people perform certain actions in your app.
 - [class UIFeedbackGenerator](uifeedbackgenerator.md)
   The abstract superclass for all feedback generators.

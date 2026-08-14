@@ -27,7 +27,7 @@ A new semantic segmentation matte instance, or `nil` if the auxiliary data info 
 ## Parameters
 
 - `imageSourceAuxiliaryDataType`: The `kCGImageAuxiliaryDataType` constants corresponding to the semantic segmentation matte being created (see `CGImageProperties`).
-- `imageSourceAuxiliaryDataInfoDictionary`: A dictionary of primitive semantic segmentation matte information obtained from [`CGImageSourceCopyAuxiliaryDataInfoAtIndex(_:_:_:)`](https://developer.apple.com/documentation/ImageIO/CGImageSourceCopyAuxiliaryDataInfoAtIndex(_:_:_:)).
+- `imageSourceAuxiliaryDataInfoDictionary`: A dictionary of primitive semantic segmentation matte information obtained from [`CGImageSourceCopyAuxiliaryDataInfoAtIndex(_:_:_:)`](https://developer.apple.com/documentation/imageio/cgimagesourcecopyauxiliarydatainfoatindex(_:_:_:)).
 
 ## See Also
 

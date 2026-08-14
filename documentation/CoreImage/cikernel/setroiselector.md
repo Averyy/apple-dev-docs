@@ -47,7 +47,7 @@ A sample `regionOf:destRect:userInfo:` method might look as follows:
 }
 ```
 
-If your kernel does not need the image at `index` to produce output in the rectangle `rect`, your method should return [`CGRectNull`](https://developer.apple.com/documentation/CoreGraphics/CGRectNull).
+If your kernel does not need the image at `index` to produce output in the rectangle `rect`, your method should return [`CGRectNull`](https://developer.apple.com/documentation/coregraphics/cgrectnull).
 
 In the filter code, you set the selector using the following:
 

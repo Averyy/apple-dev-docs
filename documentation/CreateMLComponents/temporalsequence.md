@@ -32,7 +32,7 @@ protocol TemporalSequence<Feature> : AsyncSequence
 ## Relationships
 
 ### Inherits From
-- [AsyncSequence](../Swift/AsyncSequence.md)
+- [AsyncSequence](../swift/asyncsequence.md)
 ### Conforming Types
 - [AnyTemporalSequence](anytemporalsequence.md)
 - [AudioFeaturePrint.FeatureSequence](audiofeatureprint/featuresequence.md)

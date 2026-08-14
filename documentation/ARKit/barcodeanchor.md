@@ -16,7 +16,7 @@ struct BarcodeAnchor
 
 #### Overview
 
-A `BarcodeAnchor` describes a barcode that ARKit detects in a person’s surroundings. A barcode anchor has exactly one [`BarcodeSymbology`](https://developer.apple.com/documentation/Vision/BarcodeSymbology) that indicates which type of barcode the framework detects. It also includes properties, such as the barcode’s payload data,  which is a decoded string value of that data.
+A `BarcodeAnchor` describes a barcode that ARKit detects in a person’s surroundings. A barcode anchor has exactly one [`BarcodeSymbology`](https://developer.apple.com/documentation/vision/barcodesymbology) that indicates which type of barcode the framework detects. It also includes properties, such as the barcode’s payload data,  which is a decoded string value of that data.
 
 ## Topics
 
@@ -46,12 +46,12 @@ A `BarcodeAnchor` describes a barcode that ARKit detects in a person’s surroun
 ### Conforms To
 - [ARKitCoordinateSpaceProviding](arkitcoordinatespaceproviding.md)
 - [Anchor](anchor.md)
-- [Copyable](../Swift/Copyable.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Escapable](../Swift/Escapable.md)
-- [Identifiable](../Swift/Identifiable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Copyable](../swift/copyable.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Escapable](../swift/escapable.md)
+- [Identifiable](../swift/identifiable.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

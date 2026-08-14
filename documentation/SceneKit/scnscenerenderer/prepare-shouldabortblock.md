@@ -23,7 +23,7 @@ func prepare(_ object: Any, shouldAbortBlock block: (() -> Bool)? = nil) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/Swift/true) if the object was successfully prepared for rendering, or [`false`](https://developer.apple.com/documentation/Swift/false) if preparation was canceled.
+[`true`](https://developer.apple.com/documentation/swift/true) if the object was successfully prepared for rendering, or [`false`](https://developer.apple.com/documentation/swift/false) if preparation was canceled.
 
 #### Discussion
 
@@ -31,14 +31,14 @@ By default, SceneKit lazily loads resources onto the GPU for rendering. This app
 
 SceneKit prepares all content associated with the `object` parameter you provide. If you provide an [`SCNMaterial`](scnmaterial.md) object, SceneKit loads any texture images assigned to its material properties. If you provide an [`SCNGeometry`](scngeometry.md) object, SceneKit loads all materials attached to the geometry, as well as its vertex data. If you provide an [`SCNNode`](scnnode.md) or [`SCNScene`](scnscene.md) object, SceneKit loads all geometries and materials associated with the node and all its child nodes, or with the entire node hierarchy of the scene.
 
-You can use the `block` parameter to cancel preparation if content is no longer needed. For example, in a game you might use this method to preload areas of the game world the player is soon to enter, but if the player character dies before entering those areas, you can return [`true`](https://developer.apple.com/documentation/Swift/true) from the block to cancel preloading.
+You can use the `block` parameter to cancel preparation if content is no longer needed. For example, in a game you might use this method to preload areas of the game world the player is soon to enter, but if the player character dies before entering those areas, you can return [`true`](https://developer.apple.com/documentation/swift/true) from the block to cancel preloading.
 
-You can observe the progress of this operation with the [`Progress`](https://developer.apple.com/documentation/Foundation/Progress) class. For details, see [`Progress`](https://developer.apple.com/documentation/Foundation/Progress).
+You can observe the progress of this operation with the [`Progress`](https://developer.apple.com/documentation/foundation/progress) class. For details, see [`Progress`](https://developer.apple.com/documentation/foundation/progress).
 
 ## Parameters
 
 - `object`: An [`SCNScene`](scnscene.md), [`SCNNode`](scnnode.md), [`SCNGeometry`](scngeometry.md), or [`SCNMaterial`](scnmaterial.md) instance.
-- `block`: A block that SceneKit calls periodically while preparing the object. The block takes no parameters. Your block should return [`false`](https://developer.apple.com/documentation/Swift/false) to tell SceneKit to continue preparing the object, or [`true`](https://developer.apple.com/documentation/Swift/true) to cancel preparation. Pass `nil` for this parameter if you do not need an opportunity to cancel preparing the object.
+- `block`: A block that SceneKit calls periodically while preparing the object. The block takes no parameters. Your block should return [`false`](https://developer.apple.com/documentation/swift/false) to tell SceneKit to continue preparing the object, or [`true`](https://developer.apple.com/documentation/swift/true) to cancel preparation. Pass `nil` for this parameter if you do not need an opportunity to cancel preparing the object.
 
 ## See Also
 

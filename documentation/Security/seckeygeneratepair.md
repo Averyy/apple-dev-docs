@@ -52,8 +52,8 @@ The possible attributes are as follows; for details on each attribute, see [`Key
 ## Parameters
 
 - `parameters`: A dictionary of key-value pairs that specify the type of keys to be generated.
-- `publicKey`: On return, points to the keychain item object of the new public key. In Objective-C, call the [`CFRelease`](https://developer.apple.com/documentation/CoreFoundation/CFRelease) function to release this object when you are finished with it.
-- `privateKey`: On return, points to the keychain item object of the new private key. In Objective-C, call the [`CFRelease`](https://developer.apple.com/documentation/CoreFoundation/CFRelease) function to release this object when you are finished with it.
+- `publicKey`: On return, points to the keychain item object of the new public key. In Objective-C, call the [`CFRelease`](https://developer.apple.com/documentation/corefoundation/cfrelease) function to release this object when you are finished with it.
+- `privateKey`: On return, points to the keychain item object of the new private key. In Objective-C, call the [`CFRelease`](https://developer.apple.com/documentation/corefoundation/cfrelease) function to release this object when you are finished with it.
 
 
 ---

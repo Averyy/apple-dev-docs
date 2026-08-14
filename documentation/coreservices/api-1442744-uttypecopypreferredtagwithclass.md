@@ -31,7 +31,7 @@ If the type declaration included more than one tag with the specified class, the
 ## Parameters
 
 - `inUTI`: The uniform type identifier to convert.
-- `inTagClass`: The class of the tags you want to return. For more information, see  .
+- `inTagClass`: The class of the tags you want to return. For more information, see `Type Tag Classes`.
 
 
 ---

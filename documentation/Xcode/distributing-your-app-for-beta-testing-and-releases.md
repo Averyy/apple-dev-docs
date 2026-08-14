@@ -32,7 +32,7 @@ To use any of the distribution methods, first create an archive of your app. An 
 
 In the main window of your Xcode project, choose a scheme and a run destination to build for from the Scheme toolbar menu. Then, choose Product > Archive to build the targets included in that scheme, for the class of device you select, and create an archive that appears in the Archives organizer.
 
-![Screenshot of the Archives organizer showing an archive selected and Distribute App button.](https://docs-assets.developer.apple.com/published/394197047da27d4eb6d4dc6ffe161cf4/distributing-your-app-for-beta-testing-and-releases-1%402x.png)
+![Screenshot of the Archives organizer showing an archive selected and Distribute App button.](/images/com.apple.Xcode/distributing-your-app-for-beta-testing-and-releases-1@2x.png)
 
 You can open the Archives organizer directly by choosing Window > Organizer. If you want to confirm your app is ready to submit to TestFlight or the App Store without submitting it yet, select your archive and then click Validate App. Xcode will perform a limited, automated initial validation of the app and provide feedback.
 
@@ -46,7 +46,7 @@ You can export the archive or upload it to App Store Connect. If you export the 
 
 From the Organizer window in Xcode, select Archives in the sidebar and click Distribute App.
 
-![Screenshot of the Archives organizer showing the Select a method for distribution dialog with the preconfigured TestFlight & App Store option selected.](https://docs-assets.developer.apple.com/published/ba54e01600bd0fc98291583e7215d2bd/distributing-your-app-for-beta-testing-and-releases-2%402x.png)
+![Screenshot of the Archives organizer showing the Select a method for distribution dialog with the preconfigured TestFlight & App Store option selected.](/images/com.apple.Xcode/distributing-your-app-for-beta-testing-and-releases-2@2x.png)
 
 Select one of the following options to distribute using recommended settings:
 
@@ -65,7 +65,7 @@ After selecting a distribution option, click the Distribute button. Xcode begins
 
 To begin a custom distribution, which allows you to configure your own settings, click the Custom option.
 
-![Screenshot of the distribution method selection step showing the Ad Hoc distribution selected.](https://docs-assets.developer.apple.com/published/1ebd7fcf079ce9cf3d0331cfa2c7c518/distributing-your-app-for-beta-testing-and-releases-3%402x.png)
+![Screenshot of the distribution method selection step showing the Ad Hoc distribution selected.](/images/com.apple.Xcode/distributing-your-app-for-beta-testing-and-releases-3@2x.png)
 
 Select from the following distribution methods:
 
@@ -78,11 +78,11 @@ Select from the following distribution methods:
 
 If you choose App Store Connect or Developer ID as your distribution method, you select a destination option as well. You can choose to upload your build to the App Store, or Export your build locally to upload later.
 
-![Screenshot of the distribution flow showing destination options with options to Upload or Export. Upload is selected.](https://docs-assets.developer.apple.com/published/42129fbe9643b7d6d49e6b714d240933/distributing-your-app-for-beta-testing-and-releases-4%402x.png)
+![Screenshot of the distribution flow showing destination options with options to Upload or Export. Upload is selected.](/images/com.apple.Xcode/distributing-your-app-for-beta-testing-and-releases-4@2x.png)
 
 When distributing your app on TestFlight or the App Store, choose how to manage symbols and build numbers:
 
-![Screenshot of the distribution flow showing App Store Connect distribution options with checkboxes to Upload you app’s symbols, Manage version and build numbers, and TestFlight internal testing only. The Upload you app’s symbols and Manage version and build numbers checkboxes are selected.](https://docs-assets.developer.apple.com/published/c9577bec89092a11e40b6ff4c8528605/distributing-your-app-for-beta-testing-and-releases-5%402x.png)
+![Screenshot of the distribution flow showing App Store Connect distribution options with checkboxes to Upload you app’s symbols, Manage version and build numbers, and TestFlight internal testing only. The Upload you app’s symbols and Manage version and build numbers checkboxes are selected.](/images/com.apple.Xcode/distributing-your-app-for-beta-testing-and-releases-5@2x.png)
 
 - **Strip Swift symbols**: Reduces the size of your app by stripping symbols from Swift standard libraries. This setting is only available if your project has embedded swift libraries.
 - **Upload your app’s symbols**: Allows Apple to provide you with symbolicated crash logs and other diagnostic information. A symbolicated log replaces memory addresses in logs with human-readable function names and line numbers. The symbols can also be useful in compatibility testing of your app with Apple products and services.
@@ -91,13 +91,13 @@ When distributing your app on TestFlight or the App Store, choose how to manage 
 
 When selecting a distribution method that involves code signing, select a method for code signing.
 
-![Screenshot of the distribution flow showing checkboxes for Automatic manage signing and Manually manage signing distribution. The Automatic manage signing checkbox is selected.](https://docs-assets.developer.apple.com/published/f018d363495f18c2d8872aeb7d2a48c6/distributing-your-app-for-beta-testing-and-releases-6%402x.png)
+![Screenshot of the distribution flow showing checkboxes for Automatic manage signing and Manually manage signing distribution. The Automatic manage signing checkbox is selected.](/images/com.apple.Xcode/distributing-your-app-for-beta-testing-and-releases-6@2x.png)
 
 Choosing “Automatically manage signing” allows Xcode to manage signing for you. To manually sign your app, you use signing certificates. For information on sharing signing certificates, see [`Synchronizing code signing identities with your developer account`](sharing-your-teams-signing-certificates.md).
 
 When packaging for self distribution using the Ad Hoc or Development option, choose whether to enable or disable App Thinning and configure on-demand resources settings. For more information about App Thinning and on-demand resources, see [`Reducing your app’s size`](reducing-your-app-s-size.md) and [`Doing advanced optimization to further reduce your app’s size`](doing-advanced-optimization-to-further-reduce-your-app-s-size.md).
 
-![Screenshot of the distribution flow showing the Ad Hoc distribution settings. The dialog includes the App Thinning pop-up menu with the option None chosen and Additional Options that includes a checkbox with the label Include manifest for over-the-air installation.](https://docs-assets.developer.apple.com/published/8701513eaeb5a39fbda9c970a6f685c5/distributing-your-app-for-beta-testing-and-releases-7%402x.png)
+![Screenshot of the distribution flow showing the Ad Hoc distribution settings. The dialog includes the App Thinning pop-up menu with the option None chosen and Additional Options that includes a checkbox with the label Include manifest for over-the-air installation.](/images/com.apple.Xcode/distributing-your-app-for-beta-testing-and-releases-7@2x.png)
 
 ##### Distribute a Beta Version
 
@@ -105,9 +105,9 @@ To distribute a beta version of your app to offer a preview of an upcoming relea
 
 - Distribute a beta version of your app to internal and external testers using TestFlight. The TestFlight app allows invited users to install, beta test, provide feedback, and get updates of your app. Apple distributes the beta version for you, you manage the builds and users in App Store Connect. To learn more, see [`TestFlight overview`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/test-a-beta-version/overview-of-testflight).
 - Distribute a beta version to registered devices in your developer account. Choose this option only if you can reserve a portion of your limited development devices for beta testing. To learn more, see [`Distributing your app to registered devices`](distributing-your-app-to-registered-devices.md).
-- For macOS apps, distribute an Apple-notarized build to testers before you distribute the app through the App Store. To learn more, see [`Notarizing macOS software before distribution`](https://developer.apple.com/documentation/Security/notarizing-macos-software-before-distribution).
+- For macOS apps, distribute an Apple-notarized build to testers before you distribute the app through the App Store. To learn more, see [`Notarizing macOS software before distribution`](https://developer.apple.com/documentation/security/notarizing-macos-software-before-distribution).
 
-![Screenshot of App Store Connect showing builds that were uploaded from Xcode.](https://docs-assets.developer.apple.com/published/c67e305f2a0af926d2c0551f08aebb1d/distributing-your-app-for-beta-testing-and-releases-8%402x.png)
+![Screenshot of App Store Connect showing builds that were uploaded from Xcode.](/images/com.apple.Xcode/distributing-your-app-for-beta-testing-and-releases-8@2x.png)
 
 ##### Publish on the App Store
 
@@ -119,7 +119,7 @@ You may need to enter additional information in App Store Connect before you can
 
 If you used TestFlight to distribute a beta version, and entered the additional information required by App Store for a release, just submit the last build that appears in App Store Connect to App Review.
 
-![Screenshot of App Store Connect showing the version information and Submit for Review button.](https://docs-assets.developer.apple.com/published/f389379a6a5d46bc29c152f5d19920d5/distributing-your-app-for-beta-testing-and-releases-9%402x.png)
+![Screenshot of App Store Connect showing the version information and Submit for Review button.](/images/com.apple.Xcode/distributing-your-app-for-beta-testing-and-releases-9@2x.png)
 
 If you didn’t distribute the final build using TestFlight, prepare your app for distribution and create an archive of your app. Validate the archive and fix any validation errors before continuing. Then, upload it to App Store Connect and wait for it to pass the App Store Connect validation tests.
 
@@ -127,7 +127,7 @@ To submit the build to App Review, go to [`Submit for review`](https://developer
 
 ##### Distribute Outside of the App Store
 
-For macOS apps, you can export a notarized app for distribution outside of the App Store, but you may first need to disable capabilities that require the Apple Developer Program membership first, then distribute the app yourself to users. Notarize all software that you distribute outside of the App Store. This includes system extensions and drivers. To learn more, see [`Notarizing macOS software before distribution`](https://developer.apple.com/documentation/Security/notarizing-macos-software-before-distribution).
+For macOS apps, you can export a notarized app for distribution outside of the App Store, but you may first need to disable capabilities that require the Apple Developer Program membership first, then distribute the app yourself to users. Notarize all software that you distribute outside of the App Store. This includes system extensions and drivers. To learn more, see [`Notarizing macOS software before distribution`](https://developer.apple.com/documentation/security/notarizing-macos-software-before-distribution).
 
 ##### Distribute Enterprise Apps
 

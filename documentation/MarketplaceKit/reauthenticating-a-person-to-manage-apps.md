@@ -106,13 +106,13 @@ Verification Required
 To install "App 1", you need to verify your account in Megabyte Mart.
 ```
 
-When your marketplace app launches, check for a missing or invalid access token. In either case, you can reauthenticate the person by presenting a webpage with [`ASWebAuthenticationSession`](https://developer.apple.com/documentation/AuthenticationServices/ASWebAuthenticationSession) that enables the person to enter their credentials.
+When your marketplace app launches, check for a missing or invalid access token. In either case, you can reauthenticate the person by presenting a webpage with [`ASWebAuthenticationSession`](https://developer.apple.com/documentation/authenticationservices/aswebauthenticationsession) that enables the person to enter their credentials.
 
 After the person signs in, store the renewed access token locally. Call [`didAuthenticate(account:)`](applibrary/didauthenticate(account:).md), which instructs the system to retry the app installation. This time, your marketplace extension decorates the header of the restores endpoint POST with a renewed access token for the system to complete the reinstallation.
 
 #### Reauthenticate a Person in Your Marketplace App or Extension
 
-If your marketplace app is running while your marketplace server encounters an invalid access token, the system calls your extension’s [`requestFailed(response:)`](marketplaceappextension/requestfailed(response:).md) implementation. In this callback, your marketplace app can correct the issue by reauthenticating the person. For example, you can set a flag to present a webpage in your app with [`ASWebAuthenticationSession`](https://developer.apple.com/documentation/AuthenticationServices/ASWebAuthenticationSession) that enables the person to enter their credentials before retrying the update.
+If your marketplace app is running while your marketplace server encounters an invalid access token, the system calls your extension’s [`requestFailed(response:)`](marketplaceappextension/requestfailed(response:).md) implementation. In this callback, your marketplace app can correct the issue by reauthenticating the person. For example, you can set a flag to present a webpage in your app with [`ASWebAuthenticationSession`](https://developer.apple.com/documentation/authenticationservices/aswebauthenticationsession) that enables the person to enter their credentials before retrying the update.
 
 [`MarketplaceAppExtension`](marketplaceappextension.md) can’t present UI, so if your marketplace isn’t running, you can explore reauthenticating another way, such as by exchanging a refresh token for a renewed access token with your token endpoint.
 
@@ -122,11 +122,11 @@ For example, if the system encounters an invalid access token while performing a
 
 - [Providing age-rating appropriate content](providing-age-rating-appropriate-content.md)
   Check for age-rating based content restrictions and enable people to request approval for apps with a rating beyond the maximum allowed for the device.
-- [com.apple.developer.marketplace.app-installation](../BundleResources/Entitlements/com.apple.developer.marketplace.app-installation.md)
+- [com.apple.developer.marketplace.app-installation](../bundleresources/entitlements/com.apple.developer.marketplace.app-installation.md)
   An entitlement that enables an app to vend other apps as an alternative app marketplace.
-- [com.apple.developer.browser.app-installation](../BundleResources/Entitlements/com.apple.developer.browser.app-installation.md)
+- [com.apple.developer.browser.app-installation](../bundleresources/entitlements/com.apple.developer.browser.app-installation.md)
   An entitlement that enables a browser to install alternative distribution apps from a website.
-- [App License Delivery SDK](../AppLicenseDeliverySDK/AppLicenseDeliverySDK.md)
+- [App License Delivery SDK](../applicensedeliverysdk/applicensedeliverysdk.md)
   Secure the installation of alternative distribution apps on iOS or iPadOS devices by vending licenses from your web server.
 
 

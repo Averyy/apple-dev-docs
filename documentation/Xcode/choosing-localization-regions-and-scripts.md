@@ -10,7 +10,7 @@ When you localize your app, you add localizations by choosing a language, and th
 
 In Xcode menus, you choose a human-readable name for a localization, but in the project and exported files, a language identifier understood by localizers specifies the language, region, and script. The Xcode Localization Catalog (a folder with a `.xcloc` file extension) uses the language identifier as the suffix, as in `en.xcloc` and `de.xcloc` for the English and German catalog names, respectively.
 
-For information about how the `Bundle` object finds the best match between the localizations your app supports and the user’s language and region settings, see [`Bundle`](https://developer.apple.com/documentation/Foundation/Bundle).
+For information about how the `Bundle` object finds the best match between the localizations your app supports and the user’s language and region settings, see [`Bundle`](https://developer.apple.com/documentation/foundation/bundle).
 
 ##### Understand the Language Identifier
 

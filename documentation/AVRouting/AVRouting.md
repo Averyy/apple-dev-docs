@@ -14,11 +14,11 @@ Display custom destinations to stream media in the system route picker.
 
 #### Overview
 
-Use the AVRouting framework to add third-party devices and protocols to [`AVRoutePickerView`](https://developer.apple.com/documentation/AVKit/AVRoutePickerView). This enables a user to stream AV content through a third-party protocol using the same system menu as AirPlay.
+Use the AVRouting framework to add third-party devices and protocols to [`AVRoutePickerView`](https://developer.apple.com/documentation/avkit/avroutepickerview). This enables a user to stream AV content through a third-party protocol using the same system menu as AirPlay.
 
-When the user taps the view, the system presents a popover that lists the available media receivers. If your app’s bundle includes an extension with the [`Media Device Discovery Extension`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.media-device-discovery-extension) entitlement, the system runs the extension and adds its associated third-party protocol to the picker, if the device resides nearby.
+When the user taps the view, the system presents a popover that lists the available media receivers. If your app’s bundle includes an extension with the [`Media Device Discovery Extension`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.media-device-discovery-extension) entitlement, the system runs the extension and adds its associated third-party protocol to the picker, if the device resides nearby.
 
-![A screenshot of a popover with a list of items. The top item is an iPad icon with a check mark to the right. Below that is the title Speakers and TVs with a list of six subitems. The first subitem says Third-party device, followed by AirPlay and Third-party protocol. The remaining subitems are Sunset Beach with an Apple TV icon on the left, Link with TV code with a globe icon on the left, and Show more. ](https://docs-assets.developer.apple.com/published/1d9b9665560d183b359bbdc62fe3f340/media-4084674%402x.png)
+![A screenshot of a popover with a list of items. The top item is an iPad icon with a check mark to the right. Below that is the title Speakers and TVs with a list of six subitems. The first subitem says Third-party device, followed by AirPlay and Third-party protocol. The remaining subitems are Sunset Beach with an Apple TV icon on the left, Link with TV code with a globe icon on the left, and Show more. ](/images/com.apple.avrouting/media-4084674@2x.png)
 
 ##### Add a Custom Route to the System Device Picker View
 
@@ -44,7 +44,7 @@ func routePickerViewWillBeginPresentingRoutes(_ routePickerView: AVRoutePickerVi
 }
 ```
 
-If the extension finds the device at runtime, it passes the device to the system for display in the picker. See [`Discovering a third-party media-streaming device`](https://developer.apple.com/documentation/DeviceDiscoveryExtension/discovering-a-third-party-media-streaming-device) for a complete sample code project that routes media through a custom protocol.
+If the extension finds the device at runtime, it passes the device to the system for display in the picker. See [`Discovering a third-party media-streaming device`](https://developer.apple.com/documentation/devicediscoveryextension/discovering-a-third-party-media-streaming-device) for a complete sample code project that routes media through a custom protocol.
 
 ## Topics
 

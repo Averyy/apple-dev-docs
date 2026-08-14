@@ -20,11 +20,11 @@ func attributedString(for textElement: NSTextElement) -> NSAttributedString?
 
 #### Return Value
 
-An [`NSAttributedString`](https://developer.apple.com/documentation/Foundation/NSAttributedString), or `nil`.
+An [`NSAttributedString`](https://developer.apple.com/documentation/foundation/nsattributedstring), or `nil`.
 
 #### Discussion
 
-Returns `nil` if the method can’t map `textElement` to an [`NSAttributedString`](https://developer.apple.com/documentation/Foundation/NSAttributedString).
+Returns `nil` if the method can’t map `textElement` to an [`NSAttributedString`](https://developer.apple.com/documentation/foundation/nsattributedstring).
 
 ## Parameters
 

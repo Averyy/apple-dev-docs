@@ -58,7 +58,7 @@ A visible item represents an item in a collection view that’s currently visibl
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 - [UIDynamicItem](uidynamicitem.md)
 
 ## See Also

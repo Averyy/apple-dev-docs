@@ -30,11 +30,11 @@ The value of this property doesn’t change during a process’s lifetime, so it
 
 ## See Also
 
-- [var accessibilityAssistiveAccessEnabled: Bool](../SwiftUI/EnvironmentValues/accessibilityAssistiveAccessEnabled.md)
+- [var accessibilityAssistiveAccessEnabled: Bool](../swiftui/environmentvalues/accessibilityassistiveaccessenabled.md)
   A Boolean value that indicates whether Assistive Access is in use.
 - [Assistive Access](assistive-access.md)
   A mode that tailors the iOS and iPadOS experience for people with cognitive disabilities.
-- [UISupportsFullScreenInAssistiveAccess](../BundleResources/Information-Property-List/UISupportsFullScreenInAssistiveAccess.md)
+- [UISupportsFullScreenInAssistiveAccess](../bundleresources/information-property-list/uisupportsfullscreeninassistiveaccess.md)
   A Boolean value that indicates if an iOS or iPadOS app appears as full screen in Assistive Access.
 
 

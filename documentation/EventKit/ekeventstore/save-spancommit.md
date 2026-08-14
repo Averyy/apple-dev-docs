@@ -34,7 +34,7 @@ When saving an event, it’s updated in the Calendar database. Any fields you di
 
 - `event`: The event to save.
 - `span`: The span that indicates whether to remove a single event or all future instances of the event in the case of a recurring event.
-- `commit`: To save the event immediately, pass [`true`](https://developer.apple.com/documentation/Swift/true); otherwise, the change is batched until the [`commit()`](ekeventstore/commit().md) method is invoked.
+- `commit`: To save the event immediately, pass [`true`](https://developer.apple.com/documentation/swift/true); otherwise, the change is batched until the [`commit()`](ekeventstore/commit().md) method is invoked.
 
 ## See Also
 

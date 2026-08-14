@@ -27,11 +27,11 @@ OSOrderedSet is a container for Libkern C++ objects (those derived from OSMetaCl
 
 Note that automated ordering is performed only upon addition of objects and depends on the existing objects being properly sorted. There is no function to re-sort the contents of an OSOrderedSet or to change the ordering function. In general, you should either use the one ordered-insertion function, or the indexed-insertion functions, and not mix the two.
 
-As with all Libkern collection classes, OSOrderedSet retains objects added to it, and releases objects removed from it. An OSOrderedSet also grows as necessary to accommodate new objects,  Core Foundation collections (it does not, however, shrink).
+As with all Libkern collection classes, OSOrderedSet retains objects added to it, and releases objects removed from it. An OSOrderedSet also grows as necessary to accommodate new objects, *unlike* Core Foundation collections (it does not, however, shrink).
 
 ##### 1656370
 
-With very few exceptions in the I/O Kit, all Libkern-based C++ classes, functions, and macros are  to use in a primary interrupt context. Consult the I/O Kit documentation related to primary interrupts for more information.
+With very few exceptions in the I/O Kit, all Libkern-based C++ classes, functions, and macros are **unsafe** to use in a primary interrupt context. Consult the I/O Kit documentation related to primary interrupts for more information.
 
 OSOrderedSet provides no concurrency protection; it's up to the usage context to provide any protection necessary. Some portions of the I/O Kit, such as IORegistryEntry, handle synchronization via defined member functions for setting properties.
 
@@ -104,7 +104,7 @@ OSOrderedSet provides no concurrency protection; it's up to the usage context to
 - [- getNextObjectForIterator](osorderedset/1397845-getnextobjectforiterator.md)
 - [- getObject](osorderedset/1397841-getobject.md)
 - [- getOrderingRef](osorderedset/1397835-getorderingref.md)
-- [- init](../driverkit/osorderedset/3758350-init.md)
+- [- init](../driverkit/osorderedset/init.md)
 - [- initIterator](osorderedset/1397831-inititerator.md)
 - [- initWithCapacity](osorderedset/1397858-initwithcapacity.md)
 - [- isEqualTo](osorderedset/1397817-isequalto.md)

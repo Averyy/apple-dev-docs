@@ -6,7 +6,7 @@ Update your apps to use new features, and test your apps against API changes.
 
 #### Overview
 
-The macOS 10.14 SDK provides support for developing apps for Macs running macOS Mojave. The SDK comes bundled with Xcode 10 available from the Mac App Store. For information about Xcode 10, see [`Xcode 10 Release Notes`](https://developer.apple.com/documentation/Xcode-Release-Notes/xcode-10-release-notes).
+The macOS 10.14 SDK provides support for developing apps for Macs running macOS Mojave. The SDK comes bundled with Xcode 10 available from the Mac App Store. For information about Xcode 10, see [`Xcode 10 Release Notes`](https://developer.apple.com/documentation/xcode-release-notes/xcode-10-release-notes).
 
 ##### General
 
@@ -17,7 +17,7 @@ The macOS 10.14 SDK provides support for developing apps for Macs running macOS 
 ###### Deprecations
 
 - Ink APIs in `Ink.framework` and associated ink events in Carbon are deprecated. (29008562)
-- Using Carbon File Manager APIs and other APIs based on the [`FSRef`](https://developer.apple.com/documentation/coreservices/fsref) structure might slow system performance when using APFS-formatted volumes. File Manager is deprecated in macOS 10.8 and later. For improved performance, switch to URL-based replacements such as [`FileManager`](https://developer.apple.com/documentation/Foundation/FileManager) and [`NSURL`](https://developer.apple.com/documentation/Foundation/NSURL).
+- Using Carbon File Manager APIs and other APIs based on the [`FSRef`](https://developer.apple.com/documentation/coreservices/fsref) structure might slow system performance when using APFS-formatted volumes. File Manager is deprecated in macOS 10.8 and later. For improved performance, switch to URL-based replacements such as [`FileManager`](https://developer.apple.com/documentation/foundation/filemanager) and [`NSURL`](https://developer.apple.com/documentation/foundation/nsurl).
 
 ##### 32 Bit Deprecation
 
@@ -115,17 +115,17 @@ sudo rm -rf /var/db/securityagent/Library/Preferences/com.apple.HIToolbox.plist
 
 ###### New Features
 
-- [`MKMapView`](https://developer.apple.com/documentation/MapKit/MKMapView) and [`MKMapSnapshotter`](https://developer.apple.com/documentation/MapKit/MKMapSnapshotter) are updated to support the new Dark Map style. MapKit  automatically switches to the Dark Map appearance when Dark Mode is enabled, the user hasn’t disabled the Dark Map in the Maps app, and your app has been compiled for macOS 10.14 Mojave. As a result, most apps using MapKit don’t require code changes to adopt the correct behavior. Both [`MKMapView`](https://developer.apple.com/documentation/MapKit/MKMapView) and [`MKMapSnapshotter`](https://developer.apple.com/documentation/MapKit/MKMapSnapshotter) support overriding this behavior through their respective appearance property. If your app overlays custom controls on top of the map view or the snapshot, you might want to react to changes of the map appearance using [`NSAppearance`](https://developer.apple.com/documentation/AppKit/NSAppearance). (39003102)
+- [`MKMapView`](https://developer.apple.com/documentation/mapkit/mkmapview) and [`MKMapSnapshotter`](https://developer.apple.com/documentation/mapkit/mkmapsnapshotter) are updated to support the new Dark Map style. MapKit  automatically switches to the Dark Map appearance when Dark Mode is enabled, the user hasn’t disabled the Dark Map in the Maps app, and your app has been compiled for macOS 10.14 Mojave. As a result, most apps using MapKit don’t require code changes to adopt the correct behavior. Both [`MKMapView`](https://developer.apple.com/documentation/mapkit/mkmapview) and [`MKMapSnapshotter`](https://developer.apple.com/documentation/mapkit/mkmapsnapshotter) support overriding this behavior through their respective appearance property. If your app overlays custom controls on top of the map view or the snapshot, you might want to react to changes of the map appearance using [`NSAppearance`](https://developer.apple.com/documentation/appkit/nsappearance). (39003102)
 
 ##### Networking
 
 ###### New Features
 
-- The [`URLSession`](https://developer.apple.com/documentation/Foundation/URLSession) HTTP/2 implementation is updated to support HTTP/2 connection reuse per RFC 7540 Section 9.1.1. This requires an HTTP/2 server to present a certificate which covers more than one server hostname. The certificate may use the Subject Alternative Name extension or wildcarded domain names. In addition, [`URLSession`](https://developer.apple.com/documentation/Foundation/URLSession) requires name resolution to resolve the different hostnames to the same IP address. [`URLSession`](https://developer.apple.com/documentation/Foundation/URLSession) may reuse HTTP/2 connections across different domain names when these conditions are satisfied. (37507838)
+- The [`URLSession`](https://developer.apple.com/documentation/foundation/urlsession) HTTP/2 implementation is updated to support HTTP/2 connection reuse per RFC 7540 Section 9.1.1. This requires an HTTP/2 server to present a certificate which covers more than one server hostname. The certificate may use the Subject Alternative Name extension or wildcarded domain names. In addition, [`URLSession`](https://developer.apple.com/documentation/foundation/urlsession) requires name resolution to resolve the different hostnames to the same IP address. [`URLSession`](https://developer.apple.com/documentation/foundation/urlsession) may reuse HTTP/2 connections across different domain names when these conditions are satisfied. (37507838)
 
 ###### Deprecations
 
-- The `ftp://` and `file://` URL schemes for Proxy Automatic Configuration (PAC) are deprecated. HTTP and HTTPS are the only supported URL schemes for PAC. This affects all PAC configurations including, but not limited to, configurations set via Settings, System Preferences, profiles, and [`URLSession`](https://developer.apple.com/documentation/Foundation/URLSession) APIs such as [`connectionProxyDictionary`](https://developer.apple.com/documentation/Foundation/URLSessionConfiguration/connectionProxyDictionary), and [`CFNetworkExecuteProxyAutoConfigurationURL(_:_:_:_:)`](https://developer.apple.com/documentation/CFNetwork/CFNetworkExecuteProxyAutoConfigurationURL(_:_:_:_:)). (37811761)
+- The `ftp://` and `file://` URL schemes for Proxy Automatic Configuration (PAC) are deprecated. HTTP and HTTPS are the only supported URL schemes for PAC. This affects all PAC configurations including, but not limited to, configurations set via Settings, System Preferences, profiles, and [`URLSession`](https://developer.apple.com/documentation/foundation/urlsession) APIs such as [`connectionProxyDictionary`](https://developer.apple.com/documentation/foundation/urlsessionconfiguration/connectionproxydictionary), and [`CFNetworkExecuteProxyAutoConfigurationURL(_:_:_:_:)`](https://developer.apple.com/documentation/cfnetwork/cfnetworkexecuteproxyautoconfigurationurl(_:_:_:_:)). (37811761)
 
 ##### Open Gl and Open Cl
 
@@ -137,7 +137,7 @@ sudo rm -rf /var/db/securityagent/Library/Preferences/com.apple.HIToolbox.plist
 
 ###### New Features
 
-- Apps that call the [`scanForNetworks(withName:)`](https://developer.apple.com/documentation/CoreWLAN/CWInterface/scanForNetworks(withName:)) method can no longer obtain the MAC address (BSSID) of nearby Wi-Fi access points when Location Services is disabled. If broadcasted, the network name (SSID) remains included in the scan results. (37427543)
+- Apps that call the [`scanForNetworks(withName:)`](https://developer.apple.com/documentation/corewlan/cwinterface/scanfornetworks(withname:)) method can no longer obtain the MAC address (BSSID) of nearby Wi-Fi access points when Location Services is disabled. If broadcasted, the network name (SSID) remains included in the scan results. (37427543)
 - Apps can’t access protected storage unless they’re added to the Application Data category located in the Privacy tab of System Preferences > Security & Privacy. (39798760)
 
 ##### Safari and Webkit
@@ -146,7 +146,7 @@ sudo rm -rf /var/db/securityagent/Library/Preferences/com.apple.HIToolbox.plist
 
 - The Safari Extension `canLoad` API is deprecated. Safari deactivates these extensions and notifies users upon first launch. You can reenable affected extensions using the Extensions pane in Safari preferences. Extensions using `canLoad` should switch to the Content Blocker model. (33726891)
 - Legacy NPAPI browser plug-ins are no longer supported in Safari, with the exception of Adobe Flash. These plug-ins won’t load and can’t be reenabled. (34213078)
-- Safari no longer supports developer-signed `.safariextz` packaged legacy Safari Extensions. When you first launch Safari on macOS Mojave, if you have any legacy developer-signed extensions installed, you’ll see a notification that such extensions are no longer supported. These extensions can’t be reenabled. Safari Extension Gallery extensions remain supported; however, this support will be removed in an upcoming macOS release. Adopt the [`Safari app extensions`](https://developer.apple.com/documentation/SafariServices/safari-app-extensions) programming model instead. (39007695)
+- Safari no longer supports developer-signed `.safariextz` packaged legacy Safari Extensions. When you first launch Safari on macOS Mojave, if you have any legacy developer-signed extensions installed, you’ll see a notification that such extensions are no longer supported. These extensions can’t be reenabled. Safari Extension Gallery extensions remain supported; however, this support will be removed in an upcoming macOS release. Adopt the [`Safari app extensions`](https://developer.apple.com/documentation/safariservices/safari-app-extensions) programming model instead. (39007695)
 
 ##### Social Network Integrations
 

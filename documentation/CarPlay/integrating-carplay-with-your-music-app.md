@@ -12,14 +12,14 @@ Configure your music app to work with CarPlay by displaying a custom UI.
 
 #### Overview
 
-CarPlay Music is a sample music app that demonstrates how to display a custom UI from a CarPlay–enabled vehicle. CarPlay Music integrates with the CarPlay framework by implementing the  [`CPNowPlayingTemplate`](CPNowPlayingTemplate.md) and [`CPListTemplate`](CPListTemplate.md). This sample’s iOS app component provides a logging interface to help you understand the life cycle of a CarPlay app, as well as a music controller.
+CarPlay Music is a sample music app that demonstrates how to display a custom UI from a CarPlay–enabled vehicle. CarPlay Music integrates with the CarPlay framework by implementing the  [`CPNowPlayingTemplate`](cpnowplayingtemplate.md) and [`CPListTemplate`](cplisttemplate.md). This sample’s iOS app component provides a logging interface to help you understand the life cycle of a CarPlay app, as well as a music controller.
 
 ##### Configure the Sample Code Project
 
 To configure the sample code project, perform the following:
 
 1. Complete the steps in [`Requesting CarPlay Entitlements`](requesting-carplay-entitlements.md) to request the CarPlay audio entitlement and configure the Xcode project.
-2. Create a key and developer token for the [`MusicKit`](https://developer.apple.comhttps://developer.apple.com/musickit) service. For more information, see [`Generating Developer Tokens`](https://developer.apple.com/documentation/AppleMusicAPI/generating-developer-tokens).
+2. Create a key and developer token for the [`MusicKit`](https://developer.apple.comhttps://developer.apple.com/musickit) service. For more information, see [`Generating Developer Tokens`](https://developer.apple.com/documentation/applemusicapi/generating-developer-tokens).
 3. Update the `developerToken` variable in the `AppleMusicAPIController.swift` file to use the developer token you create.
 
 ##### Handle Communication with Carplay
@@ -77,7 +77,7 @@ self.carplayInterfaceController!.setRootTemplate(CPTabBarTemplate(templates: tab
 
 ##### Prepare for App Selection
 
-Like other Music apps, CarPlay Music is eligible to participate in App Selection to improve its interactions with Siri. This allows the system to automatically select the app for playing music on the device. See [`Improving Siri Media Interactions and App Selection`](https://developer.apple.com/documentation/SiriKit/improving-siri-media-interactions-and-app-selection).
+Like other Music apps, CarPlay Music is eligible to participate in App Selection to improve its interactions with Siri. This allows the system to automatically select the app for playing music on the device. See [`Improving Siri Media Interactions and App Selection`](https://developer.apple.com/documentation/sirikit/improving-siri-media-interactions-and-app-selection).
 
 The following code demonstrates how to declare an app as eligible for App Selection:
 

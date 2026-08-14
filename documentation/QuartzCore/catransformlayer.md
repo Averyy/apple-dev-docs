@@ -57,11 +57,11 @@ perspective.m34 = -1 / 100
 layer.transform = CATransform3DRotate(perspective, 0.1, 0, 1, 0)
 ```
 
-![Hidden layers made visible in 3D with CATransformLayer](https://docs-assets.developer.apple.com/published/8129009096a4ae5306bed60e0990e15d/media-2826921%402x.png)
+![Hidden layers made visible in 3D with CATransformLayer](/images/com.apple.quartzcore/media-2826921@2x.png)
 
 However, if `layer` is created as a [`CALayer`](calayer.md), the green and red layers, being hidden by the blue layer, are not rendered as illustrated in the following figure.
 
-![Hidden layers remain hidden in 3D with CALayer](https://docs-assets.developer.apple.com/published/72c00676c58725671134abaf6e31e688/media-2826922%402x.png)
+![Hidden layers remain hidden in 3D with CALayer](/images/com.apple.quartzcore/media-2826922@2x.png)
 
 ## Relationships
 
@@ -69,16 +69,16 @@ However, if `layer` is created as a [`CALayer`](calayer.md), the green and red l
 - [CALayer](calayer.md)
 ### Conforms To
 - [CAMediaTiming](camediatiming.md)
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCoding](../Foundation/NSCoding.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [NSSecureCoding](../Foundation/NSSecureCoding.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCoding](../foundation/nscoding.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

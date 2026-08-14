@@ -12,7 +12,7 @@ Xcode 11.6 is available in the Mac App Store and includes SDKs for iOS 13.6, iPa
 
 ###### New Features
 
-- Includes updated [`Exposure Notification`](https://developer.apple.com/documentation/ExposureNotification) support. (64783451)
+- Includes updated [`Exposure Notification`](https://developer.apple.com/documentation/exposurenotification) support. (64783451)
 
 ##### Metal
 

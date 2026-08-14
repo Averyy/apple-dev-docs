@@ -18,7 +18,7 @@ func indexPath(for item: any CPListTemplateItem) -> IndexPath?
 
 #### Return Value
 
-The item’s index path in the list, or [`nil`](https://developer.apple.com/documentation/ObjectiveC/nil-227m0) if the list doesn’t contain the item.
+The item’s index path in the list, or [`nil`](https://developer.apple.com/documentation/objectivec/nil-227m0) if the list doesn’t contain the item.
 
 ## Parameters
 

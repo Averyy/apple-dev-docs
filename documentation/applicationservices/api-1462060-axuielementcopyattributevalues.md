@@ -18,6 +18,12 @@ func AXUIElementCopyAttributeValues(_ element: AXUIElement, _ attribute: CFStrin
 
 If unsuccessful, `AXUIElementCopyAttributeValues` may return one of the following error codes, among others:
 
+- **`kAXErrorIllegalArgument`**: The attribute's value is not array, the `index` or `maxValues` arguments are outside the array's range, or one of the other arguments is an illegal value.
+- **`kAXErrorNoValue`**: The specified attribute does not have a value.
+- **`kAXErrorInvalidUIElement`**: The AXUIElementRef is invalid.
+- **`kAXErrorCannotComplete`**: The function cannot complete because messaging has failed in some way.
+- **`kAXErrorNotImplemented`**: The process does not fully support the accessibility API.
+
 #### Discussion
 
 This function is useful for dealing with large arrays, for example, a table view with a large number of children.
@@ -28,7 +34,7 @@ This function is useful for dealing with large arrays, for example, a table view
 - `attribute`: The attribute name.
 - `index`: The index into the array.
 - `maxValues`: The maximum number of values you want (this may be more or less than the number of values associated with the attribute).
-- `values`: On return, the attribute values you requested. If   is greater than the number of values associated with the attribute, the   array will contain values found between   and the end of the attribute's array, inclusive.
+- `values`: On return, the attribute values you requested. If `maxValues` is greater than the number of values associated with the attribute, the `values` array will contain values found between `index` and the end of the attribute's array, inclusive.
 
 ## See Also
 

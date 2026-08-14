@@ -101,7 +101,7 @@ The font size for a web view is different than its logical font size. The minimu
 - [enum WebCacheModel](webcachemodel.md)
   Specifies the caching model for a web view.
 ### Notifications
-- [static let WebPreferencesChanged: NSNotification.Name](../Foundation/NSNotification/Name-swift.struct/WebPreferencesChanged.md)
+- [static let WebPreferencesChanged: NSNotification.Name](../foundation/nsnotification/name-swift.struct/webpreferenceschanged.md)
   Posted when the web preference settings are changed.
 ### Initializers
 - [init?(coder: NSCoder)](webpreferences/init(coder:).md)
@@ -112,15 +112,15 @@ The font size for a web view is different than its logical font size. The minimu
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCoding](../Foundation/NSCoding.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCoding](../foundation/nscoding.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

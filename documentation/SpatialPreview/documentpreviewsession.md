@@ -24,9 +24,9 @@ final class DocumentPreviewSession
 To start a `DocumentPreviewSession` preview, obtain an [`SpatialPreviewEndpoint`](spatialpreviewendpoint.md) through one of two paths:
 
 - Use [`ConnectedSpatialEndpointObserver`](connectedspatialendpointobserver.md) when the visionOS device is already connected using Mac Virtual Display. Observe its [`isEndpointAvailable`](connectedspatialendpointobserver/isendpointavailable.md) property to know when a device is ready, then access its [`endpoint`](connectedspatialendpointobserver/endpoint.md) property to retrieve the endpoint.
-- Use [`SpatialPreviewDevicePicker`](spatialpreviewdevicepicker.md), a [`View`](https://developer.apple.com/documentation/SwiftUI/View) that presents nearby companion devices and calls its closure with the chosen `SpatialPreviewEndpoint`, when you want to let someone select a device interactively.
+- Use [`SpatialPreviewDevicePicker`](spatialpreviewdevicepicker.md), a [`View`](https://developer.apple.com/documentation/swiftui/view) that presents nearby companion devices and calls its closure with the chosen `SpatialPreviewEndpoint`, when you want to let someone select a device interactively.
 
-When you have the endpoint, create a `DocumentPreviewSession`, the concrete session class that conforms to [`SpatialPreviewSession`](spatialpreviewsession.md) and [`Sendable`](https://developer.apple.com/documentation/Swift/Sendable). Initialize the session with a display name and the [`UTType`](https://developer.apple.com/documentation/UniformTypeIdentifiers/UTType-swift.struct) of the content, then call [`start(endpoint:)`](documentpreviewsession/start(endpoint:).md) with the endpoint to open the connection:
+When you have the endpoint, create a `DocumentPreviewSession`, the concrete session class that conforms to [`SpatialPreviewSession`](spatialpreviewsession.md) and [`Sendable`](https://developer.apple.com/documentation/swift/sendable). Initialize the session with a display name and the [`UTType`](https://developer.apple.com/documentation/uniformtypeidentifiers/uttype-swift.struct) of the content, then call [`start(endpoint:)`](documentpreviewsession/start(endpoint:).md) with the endpoint to open the connection:
 
 ```swift
 let observer = ConnectedSpatialEndpointObserver()
@@ -44,7 +44,7 @@ let spatialContentURL = URL(filePath: "/path/to/spatialContent.jpeg")
 try await session.updateContents(url: spatialContentURL)
 ```
 
-After starting a session, use [`updateContents(data:)`](documentpreviewsession/updatecontents(data:).md) to push a [`Data`](https://developer.apple.com/documentation/Foundation/Data) value directly to the device; this is useful when your document content is already in memory. Use [`updateContents(url:)`](documentpreviewsession/updatecontents(url:).md) to stream content from a file URL, which avoids loading the entire file into memory at once. Call either method each time the document changes.
+After starting a session, use [`updateContents(data:)`](documentpreviewsession/updatecontents(data:).md) to push a [`Data`](https://developer.apple.com/documentation/foundation/data) value directly to the device; this is useful when your document content is already in memory. Use [`updateContents(url:)`](documentpreviewsession/updatecontents(url:).md) to stream content from a file URL, which avoids loading the entire file into memory at once. Call either method each time the document changes.
 
 Track connection changes using [`SpatialPreviewSessionState`](spatialpreviewsessionstate.md). When you finish, call [`close()`](spatialpreviewsession/close().md) to end the session cleanly.
 
@@ -69,11 +69,11 @@ Track connection changes using [`SpatialPreviewSessionState`](spatialpreviewsess
 ## Relationships
 
 ### Conforms To
-- [Copyable](../Swift/Copyable.md)
-- [Escapable](../Swift/Escapable.md)
-- [Observable](../Observation/Observable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Copyable](../swift/copyable.md)
+- [Escapable](../swift/escapable.md)
+- [Observable](../observation/observable.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 - [SpatialPreviewSession](spatialpreviewsession.md)
 
 ## See Also

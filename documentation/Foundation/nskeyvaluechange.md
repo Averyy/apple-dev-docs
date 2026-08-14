@@ -22,7 +22,7 @@ enum NSKeyValueChange
 
 #### Overview
 
-These constants are returned as the value for a [`kindKey`](nskeyvaluechangekey/kindkey.md) key in the change dictionary passed to [`observeValue(forKeyPath:of:change:context:)`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class/observeValue(forKeyPath:of:change:context:)) indicating the type of change made.
+These constants are returned as the value for a [`kindKey`](nskeyvaluechangekey/kindkey.md) key in the change dictionary passed to [`observeValue(forKeyPath:of:change:context:)`](https://developer.apple.com/documentation/objectivec/nsobject-swift.class/observevalue(forkeypath:of:change:context:)) indicating the type of change made.
 
 ## Topics
 
@@ -41,12 +41,12 @@ These constants are returned as the value for a [`kindKey`](nskeyvaluechangekey/
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../Swift/BitwiseCopyable.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [RawRepresentable](../Swift/RawRepresentable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [BitwiseCopyable](../swift/bitwisecopyable.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [RawRepresentable](../swift/rawrepresentable.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

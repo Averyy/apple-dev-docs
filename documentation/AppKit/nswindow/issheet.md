@@ -16,7 +16,7 @@ var isSheet: Bool { get }
 
 #### Discussion
 
-The value of this property is [`true`](https://developer.apple.com/documentation/Swift/true) if the window has ever run as a modal sheet; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
+The value of this property is [`true`](https://developer.apple.com/documentation/swift/true) if the window has ever run as a modal sheet; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
 
 ## See Also
 

@@ -16,7 +16,7 @@ static let textFinderMatchingTypeKey: NSPasteboard.PasteboardType.TextFinderOpti
 
 #### Discussion
 
-The value of this key must be an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) containing an [`NSTextFinder.MatchingType`](nstextfinder/matchingtype.md) value that indicates the type of search matching to perform.
+The value of this key must be an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) containing an [`NSTextFinder.MatchingType`](nstextfinder/matchingtype.md) value that indicates the type of search matching to perform.
 
 ## See Also
 

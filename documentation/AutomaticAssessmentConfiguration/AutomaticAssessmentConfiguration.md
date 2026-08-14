@@ -15,7 +15,7 @@ Enter single-app mode and prevent students from accessing specific system featur
 
 Use the AutomaticAssessmentConfiguration framework to create an assessment session that limits access to system features. The session prevents a user from using the device to retrieve information beyond that which your app provides, or distributing sensitive information from within your app. This limited access helps you protect the integrity of an assessment, like an exam, conducted by your app.
 
-Apps that use the AutomaticAssessmentConfiguration framework must have the [`com.apple.developer.automatic-assessment-configuration`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.automatic-assessment-configuration) entitlement. With the entitlement set, use an instance of the [`AEAssessmentSession`](aeassessmentsession.md) class to start and stop assessment sessions.
+Apps that use the AutomaticAssessmentConfiguration framework must have the [`com.apple.developer.automatic-assessment-configuration`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.automatic-assessment-configuration) entitlement. With the entitlement set, use an instance of the [`AEAssessmentSession`](aeassessmentsession.md) class to start and stop assessment sessions.
 
 A session provides protections by preventing access to desktop elements like:
 
@@ -35,14 +35,14 @@ Additionally, a session:
 - Disables Handoff
 - Clears the pasteboard buffer when starting and stopping the session
 
-> **Note**:  If you publish an educational app that delivers exams to students, you can request permission to use the [`com.apple.developer.automatic-assessment-configuration`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.automatic-assessment-configuration) entitlement by filling in the [`Automatic Assessment Configuration Entitlement Request`](https://developer.apple.comhttps://developer.apple.com/contact/request/automatic-assessment-configuration/) form.
+> **Note**:  If you publish an educational app that delivers exams to students, you can request permission to use the [`com.apple.developer.automatic-assessment-configuration`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.automatic-assessment-configuration) entitlement by filling in the [`Automatic Assessment Configuration Entitlement Request`](https://developer.apple.comhttps://developer.apple.com/contact/request/automatic-assessment-configuration/) form.
 
 The framework reports an error if you try to start an assessment from an app running in visionOS.
 
 ## Topics
 
 ### Essentials
-- [com.apple.developer.automatic-assessment-configuration](../BundleResources/Entitlements/com.apple.developer.automatic-assessment-configuration.md)
+- [com.apple.developer.automatic-assessment-configuration](../bundleresources/entitlements/com.apple.developer.automatic-assessment-configuration.md)
   A Boolean value that indicates whether an app may create an assessment session.
 ### Sessions
 - [Preparing an educational assessment app for distribution](preparing-an-educational-assessment-app-for-distribution.md)

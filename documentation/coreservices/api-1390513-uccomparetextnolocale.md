@@ -26,13 +26,13 @@ The `UCCompareTextNoLocale` function does not require a collator object or colla
 
 ## Parameters
 
-- `options`: A   value specifying the fixed ordering scheme to use for the string comparison. This value must be nonzero. Bits 24-31 of   specify which fixed ordering scheme to use. Currently there is only scheme— . See   for additional details. 
-- `text1Ptr`: A pointer to the first Unicode string (a   array) to compare. 
+- `options`: A `UCCollateOptions` value specifying the fixed ordering scheme to use for the string comparison. This value must be nonzero. Bits 24-31 of `UCCollateOptionsValue` specify which fixed ordering scheme to use. Currently there is only scheme—`kUCCollateTypeHFSExtended`. See [`Fixed Ordering Scheme`](carbon_core/unicode_utilities/1390361-fixed_ordering_scheme.md) for additional details. 
+- `text1Ptr`: A pointer to the first Unicode string (a `UniChar` array) to compare. 
 - `text1Length`: The total count of Unicode characters in the first string being compared. 
 - `text2Ptr`: A pointer to the second Unicode string to compare.
 - `text2Length`: The total count of Unicode characters in the second string being compared.
-- `equivalent`: A pointer to a   value or pass  . On return,   produces a value of   if the strings are equivalent for the ordering scheme you have specified. If you wish simply to sort a list of strings in order, using the specified ordering scheme, you can pass   for the   parameter and only use the   parameter’s result. In this case, all available comparison criteria are used to put the strings in a deterministic order, even if they are considered “equivalent” for the specified ordering scheme. Note that you can set either the   or the   parameters to  , but not both. 
-- `order`: A pointer to a signed, 32-bit integer value, or pass  . If you wish simply to test the strings for equivalence, using the specified ordering scheme (which can be much faster than determining ordering), you can pass   for the   parameter and only use the   parameter’s result. (Note that either the   or the   parameters may be  , but not both. 
+- `equivalent`: A pointer to a `Boolean` value or pass `NULL`. On return, `UCCompareTextNoLocale` produces a value of `true` if the strings are equivalent for the ordering scheme you have specified. If you wish simply to sort a list of strings in order, using the specified ordering scheme, you can pass `NULL` for the `equivalent` parameter and only use the `order` parameter’s result. In this case, all available comparison criteria are used to put the strings in a deterministic order, even if they are considered “equivalent” for the specified ordering scheme. Note that you can set either the `equivalent` or the `order` parameters to `NULL`, but not both. 
+- `order`: A pointer to a signed, 32-bit integer value, or pass `NULL`. If you wish simply to test the strings for equivalence, using the specified ordering scheme (which can be much faster than determining ordering), you can pass `NULL` for the `order` parameter and only use the `equivalent` parameter’s result. (Note that either the `equivalent` or the `order` parameters may be `NULL`, but not both. 
 
 ## See Also
 

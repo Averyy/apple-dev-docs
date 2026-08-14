@@ -58,9 +58,9 @@ struct vImage_PerpsectiveTransform
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../Swift/BitwiseCopyable.md)
-- [Equatable](../Swift/Equatable.md)
-- [Sendable](../Swift/Sendable.md)
+- [BitwiseCopyable](../swift/bitwisecopyable.md)
+- [Equatable](../swift/equatable.md)
+- [Sendable](../swift/sendable.md)
 
 ## See Also
 

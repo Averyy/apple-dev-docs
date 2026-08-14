@@ -37,7 +37,7 @@ Create a class that conforms to this protocol in your app extension, then provid
 ## Relationships
 
 ### Inherits From
-- [AppExtension](../ExtensionFoundation/AppExtension.md)
+- [AppExtension](../extensionfoundation/appextension.md)
 
 ## See Also
 

@@ -13,11 +13,11 @@ The AVFoundation Capture subsystem provides a common high-level architecture for
 - Produce different results than the system camera UI, such as RAW format photos, depth maps, or videos with custom timed metadata.
 - Get live access to pixel or audio data streaming directly from a capture device.
 
-> **Note**:  To instead let the user capture media with the system camera UI within your app, see [`UIImagePickerController`](https://developer.apple.com/documentation/UIKit/UIImagePickerController).
+> **Note**:  To instead let the user capture media with the system camera UI within your app, see [`UIImagePickerController`](https://developer.apple.com/documentation/uikit/uiimagepickercontroller).
 
 The main parts of the capture architecture are sessions, inputs, and outputs: Capture sessions connect one or more inputs to one or more outputs. Inputs are sources of media, including capture devices like the cameras and microphones built into an iOS device or Mac. Outputs acquire media from inputs to produce useful data, such as movie files written to disk or raw pixel buffers available for live processing.
 
-![Block diagram of the basic capture session architecture: an AVCaptureSession acquires data from an AVCaptureDevice through AVCaptureDeviceInput, and provides data to one or more AVCaptureOutput objects.](https://docs-assets.developer.apple.com/published/9b0221d1660fd2379e731fce79dc3522/media-2970476%402x.png)
+![Block diagram of the basic capture session architecture: an AVCaptureSession acquires data from an AVCaptureDevice through AVCaptureDeviceInput, and provides data to one or more AVCaptureOutput objects.](/images/com.apple.avfoundation/media-2970476@2x.png)
 
 ## Topics
 
@@ -27,7 +27,7 @@ The main parts of the capture architecture are sessions, inputs, and outputs: Ca
 ### Capture sessions
 - [Setting up a capture session](setting-up-a-capture-session.md)
   Configure input devices, output media, preview views, and basic settings before capturing photos or video.
-- [Accessing the camera while multitasking on iPad](../AVKit/accessing-the-camera-while-multitasking-on-ipad.md)
+- [Accessing the camera while multitasking on iPad](../avkit/accessing-the-camera-while-multitasking-on-ipad.md)
   Operate the camera in Split View, Slide Over, Picture in Picture, and Stage Manager modes.
 - [AVCam: Building a camera app](avcam-building-a-camera-app.md)
   Capture photos and record video using the front and rear iPhone and iPad cameras.
@@ -72,7 +72,7 @@ The main parts of the capture architecture are sessions, inputs, and outputs: Ca
 - [class AVCaptureAudioPreviewOutput](avcaptureaudiopreviewoutput.md)
   A capture output that provides a preview of the captured audio.
 ### Continuity Camera
-- [Supporting Continuity Camera in your tvOS app](../AVKit/supporting-continuity-camera-in-your-tvos-app.md)
+- [Supporting Continuity Camera in your tvOS app](../avkit/supporting-continuity-camera-in-your-tvos-app.md)
   Capture high-quality photos, video, and audio in your Apple TV app by connecting an iPhone or iPad as a continuity device.
 - [Supporting Continuity Camera in your macOS app](supporting-continuity-camera-in-your-macos-app.md)
   Enable high-quality photo and video capture by using an iPhone camera as an external capture device.

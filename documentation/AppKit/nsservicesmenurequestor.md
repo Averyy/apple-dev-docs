@@ -33,7 +33,7 @@ This informal protocol consists of two methods, [`writeSelection(to:types:)`](ns
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

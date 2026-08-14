@@ -23,7 +23,7 @@ func loadSamplePresentationTime(forTrackTime trackTime: CMTime) async throws -> 
 ## Parameters
 
 - `trackTime`: The track time of the presentation time to load.
-- `completionHandler`: A callback that the system invokes after it finishes the loading request. It passes the completion handler the following parameters: - **time**: A [`CMTime`](https://developer.apple.com/documentation/CoreMedia/CMTime) value, which is [`invalid`](https://developer.apple.com/documentation/CoreMedia/CMTime/invalid) if the track time is out of range or if an error occurs.
+- `completionHandler`: A callback that the system invokes after it finishes the loading request. It passes the completion handler the following parameters: - **time**: A [`CMTime`](https://developer.apple.com/documentation/coremedia/cmtime) value, which is [`invalid`](https://developer.apple.com/documentation/coremedia/cmtime/invalid) if the track time is out of range or if an error occurs.
 - **error**: An error object if the request fails; otherwise, `nil`.
 
 ## See Also

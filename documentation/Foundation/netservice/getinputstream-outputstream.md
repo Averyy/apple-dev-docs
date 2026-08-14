@@ -21,7 +21,7 @@ func getInputStream(_ inputStream: UnsafeMutablePointer<InputStream?>?, outputSt
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/Swift/true) if the streams are created successfully, otherwise [`false`](https://developer.apple.com/documentation/Swift/false).
+[`true`](https://developer.apple.com/documentation/swift/true) if the streams are created successfully, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
 
 #### Discussion
 

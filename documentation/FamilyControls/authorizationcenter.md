@@ -23,7 +23,7 @@ To authorize your app so that it can provide parental controls, access the share
 let center = AuthorizationCenter.shared
 ```
 
-> ❗ **Important**: You must add the Family Controls capability to your app before you call the [`requestAuthorization(for:)`](authorizationcenter/requestauthorization(for:).md) or [`revokeAuthorization(completionHandler:)`](authorizationcenter/revokeauthorization(completionhandler:).md) methods. This capability adds the [`Family Controls`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.family-controls) entitlement to your app. In a compatible iPad or iPhone app running in visionOS, authorization attempts always fail. For more information, see [`Adding capabilities to your app`](https://developer.apple.com/documentation/Xcode/adding-capabilities-to-your-app).
+> ❗ **Important**: You must add the Family Controls capability to your app before you call the [`requestAuthorization(for:)`](authorizationcenter/requestauthorization(for:).md) or [`revokeAuthorization(completionHandler:)`](authorizationcenter/revokeauthorization(completionhandler:).md) methods. This capability adds the [`Family Controls`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.family-controls) entitlement to your app. In a compatible iPad or iPhone app running in visionOS, authorization attempts always fail. For more information, see [`Adding capabilities to your app`](https://developer.apple.com/documentation/xcode/adding-capabilities-to-your-app).
 
 Next, to request authorization to provide parental controls, call [`requestAuthorization(completionHandler:)`](authorizationcenter/requestauthorization(completionhandler:).md)
 
@@ -80,13 +80,13 @@ The status may change due to external events, such as a child graduating to an a
 ## Relationships
 
 ### Conforms To
-- [ObservableObject](../Combine/ObservableObject.md)
+- [ObservableObject](../combine/observableobject.md)
 
 ## See Also
 
 - [enum AuthorizationStatus](authorizationstatus.md)
   The status of your app’s authorization to provide parental controls.
-- [Family Controls](../BundleResources/Entitlements/com.apple.developer.family-controls.md)
+- [Family Controls](../bundleresources/entitlements/com.apple.developer.family-controls.md)
   A Boolean value that indicates whether the app can request or revoke authorization to provide parental controls.
 - [Requesting the Family Controls entitlement](requesting-the-family-controls-entitlement.md)
   Register your app and its Screen Time API app extensions to use Family Controls.

@@ -15,7 +15,7 @@ let kCGWindowMemoryUsage: CFString
 
 #### Discussion
 
-The value for this key is a [`CFNumber`](https://developer.apple.com/documentation/CoreFoundation/CFNumber) type (encoded as [`CFNumberType.longLongType`](https://developer.apple.com/documentation/CoreFoundation/CFNumberType/longLongType)) that contains an estimate of the amount of memory (measured in bytes) used by the window and its supporting data structures.
+The value for this key is a [`CFNumber`](https://developer.apple.com/documentation/corefoundation/cfnumber) type (encoded as [`CFNumberType.longLongType`](https://developer.apple.com/documentation/corefoundation/cfnumbertype/longlongtype)) that contains an estimate of the amount of memory (measured in bytes) used by the window and its supporting data structures.
 
 ## See Also
 

@@ -29,7 +29,7 @@ IOService objects deliver notifications of their state changes to their clients 
 ## Parameters
 
 - `notifyPort`: A IONotificationPortRef object that controls how messages will be sent when the notification is fired. See IONotificationPortCreate.
-- `interestType`: kIOBusyInterest Delivered when the IOService changes its busy state to or from zero. The message argument contains the new busy state causing the notification.
+- `interestType`: A notification type from IOKitKeys.h kIOGeneralInterest General state changes delivered via the IOService::message API. kIOBusyInterest Delivered when the IOService changes its busy state to or from zero. The message argument contains the new busy state causing the notification.
 - `callback`: A callback function called when the notification fires, with messageType and messageArgument for the state change.
 - `refCon`: A reference constant for the callbacks use.
 - `notification`: An object handle is returned on success, and should be released by the caller when the notification is to be destroyed.

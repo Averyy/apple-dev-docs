@@ -18,9 +18,9 @@ struct SKAdTestPostbackVersion
 
 #### Overview
 
-This postback version number corresponds to a version of SKAdNetwork. All versions of [`SKAdNetwork`](https://developer.apple.com/documentation/StoreKit/SKAdNetwork) have specific instructions for signing ads and validating postbacks. The testing environment supports testing the versions indicated by the constants listed in the Getting SKAdNetwork Versions section below.
+This postback version number corresponds to a version of SKAdNetwork. All versions of [`SKAdNetwork`](https://developer.apple.com/documentation/storekit/skadnetwork) have specific instructions for signing ads and validating postbacks. The testing environment supports testing the versions indicated by the constants listed in the Getting SKAdNetwork Versions section below.
 
-For more information about versions, see [`SKAdNetwork release notes`](https://developer.apple.com/documentation/StoreKit/skadnetwork-release-notes).
+For more information about versions, see [`SKAdNetwork release notes`](https://developer.apple.com/documentation/storekit/skadnetwork-release-notes).
 
 ## Topics
 
@@ -40,11 +40,11 @@ For more information about versions, see [`SKAdNetwork release notes`](https://d
 ## Relationships
 
 ### Conforms To
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [RawRepresentable](../Swift/RawRepresentable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [RawRepresentable](../swift/rawrepresentable.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

@@ -24,7 +24,7 @@ static var participantMayNeedVerification: CKError.Code { get }
 
 A fetch share metadata operation fails when the user isn’t a participant of the share. However, there are invited participants on the share with email addresses or phone numbers that don’t have associations with an iCloud account. The user may be able to join a share by associating one of those email addresses or phone numbers with the user’s iCloud account.
 
-Call [`openURL(_:)`](https://developer.apple.com/documentation/UIKit/UIApplication/openURL(_:)) on the share URL to have the user attempt to verify their information.
+Call [`openURL(_:)`](https://developer.apple.com/documentation/uikit/uiapplication/openurl(_:)) on the share URL to have the user attempt to verify their information.
 
 ## See Also
 

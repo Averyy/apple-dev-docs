@@ -35,7 +35,7 @@ Creating a new instance of `MPMusicPlayerController` and not specifying the play
 
 ##### Accessing Limited Playback Information While Using Home Sharing
 
-The built-in Music and Videos apps can play media from shared libraries using Home Sharing. However, third-party apps using the Media Player framework only have access to the device music library. This means that your app can’t display the title of a home-shared song in your user interface. Specifically, if the Music app is playing a home-shared song, and you’re using a system music player, the value of the [`nowPlayingItem`](mpmusicplayercontroller/nowplayingitem.md) property of your music player is [`nil`](https://developer.apple.com/documentation/ObjectiveC/nil-227m0). However, other playback information is available when playing shared media. For example, the framework updates the value of the [`playbackState`](mpmusicplayercontroller/playbackstate.md) property when the system music player plays a home-shared item.
+The built-in Music and Videos apps can play media from shared libraries using Home Sharing. However, third-party apps using the Media Player framework only have access to the device music library. This means that your app can’t display the title of a home-shared song in your user interface. Specifically, if the Music app is playing a home-shared song, and you’re using a system music player, the value of the [`nowPlayingItem`](mpmusicplayercontroller/nowplayingitem.md) property of your music player is [`nil`](https://developer.apple.com/documentation/objectivec/nil-227m0). However, other playback information is available when playing shared media. For example, the framework updates the value of the [`playbackState`](mpmusicplayercontroller/playbackstate.md) property when the system music player plays a home-shared item.
 
 ##### Choosing How the System Handles Remote Control Events
 
@@ -107,17 +107,17 @@ Users can initiate audio playback commands through an external headset or access
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Inherited By
 - [MPMusicPlayerApplicationController](mpmusicplayerapplicationcontroller.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
 - [MPMediaPlayback](mpmediaplayback.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

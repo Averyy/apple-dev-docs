@@ -63,7 +63,7 @@ List {
 }
 ```
 
-![A screenshot of three buttons labeled Show Lyrics, Shuffle, and](https://docs-assets.developer.apple.com/published/e314e49a988f16dd7b011c53c4039fda/ToggleStyle-automatic-2-tvOS%402x.png)
+![A screenshot of three buttons labeled Show Lyrics, Shuffle, and](/images/com.apple.SwiftUI/ToggleStyle-automatic-2-tvOS@2x.png)
 
 ##### Contextual Defaults
 
@@ -78,8 +78,8 @@ Menu("Playback") {
 }
 ``` SwiftUI shows the toggle’s label with a checkmark that appears only in the `on` state: | Platform | Appearance |
 | --- | --- |
-| iOS, iPadOS | ![A screenshot of a Playback menu in iOS showing three menu items with the labels Repeat, Shuffle, and Show Lyrics. The shuffle item has a checkmark to its left, while the other two items have a blank space to their left.](https://docs-assets.developer.apple.com/published/916d68e61cd8dde41e286e2841f09ebb/ToggleStyle-automatic-1-iOS%402x.png) |
-| macOS | ![A screenshot of a Playback menu in macOS showing three menu items with the labels Repeat, Shuffle, and Show Lyrics. The shuffle item has a checkmark to its left, while the other two items have a blank space to their left.](https://docs-assets.developer.apple.com/published/f1cf432f9cd7ae322f30447f73349748/ToggleStyle-automatic-1-macOS%402x.png) |
+| iOS, iPadOS | ![A screenshot of a Playback menu in iOS showing three menu items with the labels Repeat, Shuffle, and Show Lyrics. The shuffle item has a checkmark to its left, while the other two items have a blank space to their left.](/images/com.apple.SwiftUI/ToggleStyle-automatic-1-iOS@2x.png) |
+| macOS | ![A screenshot of a Playback menu in macOS showing three menu items with the labels Repeat, Shuffle, and Show Lyrics. The shuffle item has a checkmark to its left, while the other two items have a blank space to their left.](/images/com.apple.SwiftUI/ToggleStyle-automatic-1-macOS@2x.png) |
 
 ## See Also
 

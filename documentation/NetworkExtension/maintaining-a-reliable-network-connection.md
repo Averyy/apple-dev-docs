@@ -6,7 +6,7 @@ Implement your Local Push Connectivity app to ensure delivery of notifications.
 
 #### Overview
 
-By implementing Local Push Connectivity, your app can perform many of the tasks provided by Apple Push Notification Service (APNs), even on restricted or isolated networks where APNs is unavailable. Create push notifications by delivering messages from a server to your client, which then uses a local notification or [`CallKit`](https://developer.apple.com/documentation/CallKit) to alert the user.
+By implementing Local Push Connectivity, your app can perform many of the tasks provided by Apple Push Notification Service (APNs), even on restricted or isolated networks where APNs is unavailable. Create push notifications by delivering messages from a server to your client, which then uses a local notification or [`CallKit`](https://developer.apple.com/documentation/callkit) to alert the user.
 
 When you adopt Local Push Connectivity, you’re responsible for establishing and maintaining a reliable connection between your server and your client. To keep the connection viable, use the following best practices to maintain your client’s life cycle and connect over the local network.
 
@@ -43,7 +43,7 @@ Ensure that the extension can launch when the system needs it and can continue r
 
 ##### Establish and Monitor the Network Connection
 
-As shown in the previous section, your client extension creates its connection to your server in your implementation of the push provider’s [`start(completionHandler:)`](neapppushprovider/start(completionhandler:).md) method. Use the [`Network`](https://developer.apple.com/documentation/Network) framework to create and maintain this connection. The Network framework is an ideal choice to implement Local Push Connectivity, because it provides features like path monitors, TLS negotiation, and support for custom protocol framers.
+As shown in the previous section, your client extension creates its connection to your server in your implementation of the push provider’s [`start(completionHandler:)`](neapppushprovider/start(completionhandler:).md) method. Use the [`Network`](https://developer.apple.com/documentation/network) framework to create and maintain this connection. The Network framework is an ideal choice to implement Local Push Connectivity, because it provides features like path monitors, TLS negotiation, and support for custom protocol framers.
 
 Ensure each side of the connection monitors the health of the other side:
 

@@ -32,21 +32,21 @@ The calculation method described in this document is available starting with iOS
 
 The following diagram shows how to calculate an ERV:
 
-![A diagram showing how to calculate the exposure ERV.](https://docs-assets.developer.apple.com/published/106a1342224588f2e601071f22c3d703/media-3670910%402x.png)
+![A diagram showing how to calculate the exposure ERV.](/images/com.apple.exposurenotification/media-3670910@2x.png)
 
 The class defines three sets of weights that give priority to the components of the ERV: minutes-at-attenuation, infectiousness, and report type.
 
 The weighted minutes-at-attenuation assigns priority to the amount of time that the user is near beacons at different Bluetooth attenuations. Assign values between 0–250 percent to weights that represent Immediate, Near, Medium, and Other distances.
 
-![A diagram showing the weighted minutes-at-attenuation calculation.](https://docs-assets.developer.apple.com/published/9b05a56753ac2d2b2b0f73449edc7282/media-3670915%402x.png)
+![A diagram showing the weighted minutes-at-attenuation calculation.](/images/com.apple.exposurenotification/media-3670915@2x.png)
 
 The infectiousness weight modifies the ERV based on the affected userʼs infectiousness level for the day of exposure relative to the day of symptom onset. To set the infectiousness level for when there is no symptom onset date provided, use [`ENDaysSinceOnsetOfSymptomsUnknown`](endayssinceonsetofsymptomsunknown.md). A user’s infectiousness level can be [`ENInfectiousness.high`](eninfectiousness/high.md), [`ENInfectiousness.standard`](eninfectiousness/standard.md), or [`ENInfectiousness.none`](eninfectiousness/none.md). Assign both [`infectiousnessHighWeight`](enexposureconfiguration/infectiousnesshighweight.md) and [`infectiousnessStandardWeight`](enexposureconfiguration/infectiousnessstandardweight.md) a value between 0 percent and 250 percent.
 
-![A diagram showing a user’s infectiousness over the course of days.](https://docs-assets.developer.apple.com/published/512371c75b087a0bec2dbdf6705b3da7/media-3671401%402x.png)
+![A diagram showing a user’s infectiousness over the course of days.](/images/com.apple.exposurenotification/media-3671401@2x.png)
 
 The weighted report type assigns priority to the method of diagnosis. Assign values ranging from 0–250 percent to weights that represent a confirmed test diagnosis, clinical diagnosis, self- reported diagnoisis, and recursive diagnosis.
 
-![A table showing the weighted report types and their ranges.](https://docs-assets.developer.apple.com/published/1a4be158bc5df5633050eef9ef814ec9/media-3670917%402x.png)
+![A table showing the weighted report types and their ranges.](/images/com.apple.exposurenotification/media-3670917@2x.png)
 
 In addition to setting the weights, you can perform additional filtering by setting [`daysSinceLastExposureThreshold`](enexposureconfiguration/dayssincelastexposurethreshold.md) to limit the number of days to consider when calculating the risk level.
 
@@ -56,19 +56,19 @@ The following diagrams illustrate calculating an ERV using a real-world scenario
 
 The weighted minutes-at-attenuation shows 5 minutes of immediate exposure with a 150 percent weight, 10 minutes of near exposure with a 100 percent weight, 10 minutes of medium exposure with a 50 percent weight, and 5 minutes of other exposure with a 0 percent weight.
 
-![A diagram showing the weighted minutes-at-attention example.](https://docs-assets.developer.apple.com/published/cecff092c23f19855051cdb8aff9522c/media-3670907%402x.png)
+![A diagram showing the weighted minutes-at-attention example.](/images/com.apple.exposurenotification/media-3670907@2x.png)
 
 The weighted infectiousness indicates days –14 to –6 from the current day with no infectiousness, days –5 to –3 with 100 percent of standard infectiousness, days –2 to +5 with 200 percent high infectiousness, days +6 to +10 with 100 percent standard infectiousness, and days +11 to +14 with no infectiousness.
 
-![A diagram showing an example of infectiousness weights over the course of 29 days.](https://docs-assets.developer.apple.com/published/06317e295c02b87ca0fe0a41400aea41/media-3671402%402x.png)
+![A diagram showing an example of infectiousness weights over the course of 29 days.](/images/com.apple.exposurenotification/media-3671402@2x.png)
 
 Here are the weighted report types for all three tests:
 
-![A table showing the weighted report types in the example.](https://docs-assets.developer.apple.com/published/ddea82a79718bad16aebfbf2828ff5d9/media-3670914%402x.png)
+![A table showing the weighted report types in the example.](/images/com.apple.exposurenotification/media-3670914@2x.png)
 
 The result of the calculation shows an ERV of 45 minutes:
 
-![A diagram showing an example of calculating the ERV.](https://docs-assets.developer.apple.com/published/2aa6cf44c52a213313a371f390c80b59/media-3670911%402x.png)
+![A diagram showing an example of calculating the ERV.](/images/com.apple.exposurenotification/media-3670911@2x.png)
 
 > ❗ **Important**:  To prevent an ERV of 0, set any unused weight to 100 percent.
 
@@ -114,14 +114,14 @@ The result of the calculation shows an ERV of 45 minutes:
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

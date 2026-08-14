@@ -6,7 +6,7 @@ Constants that specify additional options when setting the writing direction of 
 
 #### Overview
 
-You can use the logical `OR` operator to combine these constants with [`NSWritingDirection.leftToRight`](nswritingdirection/lefttoright.md) or [`NSWritingDirection.rightToLeft`](nswritingdirection/righttoleft.md) when used with [`writingDirection`](https://developer.apple.com/documentation/Foundation/NSAttributedString/Key/writingDirection) to specify formatting controls defined by the Unicode Bidirectional Algorithm in Unicode Standard Annex #9.
+You can use the logical `OR` operator to combine these constants with [`NSWritingDirection.leftToRight`](nswritingdirection/lefttoright.md) or [`NSWritingDirection.rightToLeft`](nswritingdirection/righttoleft.md) when used with [`writingDirection`](https://developer.apple.com/documentation/foundation/nsattributedstring/key/writingdirection) to specify formatting controls defined by the Unicode Bidirectional Algorithm in Unicode Standard Annex #9.
 
 ## Topics
 

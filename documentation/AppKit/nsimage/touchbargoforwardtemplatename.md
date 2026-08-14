@@ -19,7 +19,7 @@ class let touchBarGoForwardTemplateName: String
 
 #### Discussion
 
-![Template image for go forward](https://docs-assets.developer.apple.com/published/5edfd723d11d0b761aa0b7f30011b1ef/media-2793506%402x.png)
+![Template image for go forward](/images/com.apple.appkit/media-2793506@2x.png)
 
 Touch Bar template images are exclusively for use in [`NSTouchBarItem`](nstouchbaritem.md) objects and not in onscreen windows.
 

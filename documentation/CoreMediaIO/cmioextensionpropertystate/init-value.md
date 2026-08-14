@@ -17,7 +17,7 @@ convenience init(value: ObjectType?)
 
 #### Discussion
 
-The system supports the following value types: [`NSDictionary`](https://developer.apple.com/documentation/Foundation/NSDictionary), [`NSArray`](https://developer.apple.com/documentation/Foundation/NSArray), [`NSString`](https://developer.apple.com/documentation/Foundation/NSString), [`NSData`](https://developer.apple.com/documentation/Foundation/NSData), and [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+The system supports the following value types: [`NSDictionary`](https://developer.apple.com/documentation/foundation/nsdictionary), [`NSArray`](https://developer.apple.com/documentation/foundation/nsarray), [`NSString`](https://developer.apple.com/documentation/foundation/nsstring), [`NSData`](https://developer.apple.com/documentation/foundation/nsdata), and [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
 
 ## Parameters
 

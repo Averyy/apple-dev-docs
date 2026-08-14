@@ -117,7 +117,7 @@ struct MeshBuffer<Element>
 ## Relationships
 
 ### Conforms To
-- [Sequence](../Swift/Sequence.md)
+- [Sequence](../swift/sequence.md)
 
 ## See Also
 

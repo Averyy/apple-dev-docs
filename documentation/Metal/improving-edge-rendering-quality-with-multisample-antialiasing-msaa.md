@@ -20,7 +20,7 @@ A custom resolve is essential when the built-in resolve isn’t sufficient. For 
 
 This sample shows you how to use a custom resolve with immediate-mode devices and tile-based deferred rendering devices. The immediate-mode custom resolve uses a compute kernel to process the MSAA texture, while a tile-based shader works before the rendering is completed, saving time and memory bandwidth. The following image shows the results of applying MSAA to a colored set of thin shards with one, two, four, and eight samples per pixel.
 
-![The four multisample-antialiasing images compared. From left to right: disabled, 2x, 4x, and 8x.](https://docs-assets.developer.apple.com/published/379a8b33971dc9876d0b08d6429e84a2/msaa-hd-comparison.png)
+![The four multisample-antialiasing images compared. From left to right: disabled, 2x, 4x, and 8x.](/images/com.apple.metal/msaa-hd-comparison.png)
 
 The sample displays a user interface for you to control the code paths to use MSAA. The app customizes the options presented based on the current device. Some devices support eight samples or the tile-based resolve. You can choose between the built-in resolve or a custom resolve that replicates the built-in choice or applies a tone-mapping operator to the samples. You can choose between two, four, or eight samples per pixel and the immediate-mode path or the tile-based resolve.
 

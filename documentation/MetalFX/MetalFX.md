@@ -14,9 +14,9 @@ Boost your Metal app’s performance by upscaling lower-resolution content to sa
 
 #### Overview
 
-The `MetalFX` framework integrates with [`Metal`](https://developer.apple.com/documentation/Metal) to upscale a relatively low-resolution image to a higher output resolution in less time than it takes to render directly to the output resolution.
+The `MetalFX` framework integrates with [`Metal`](https://developer.apple.com/documentation/metal) to upscale a relatively low-resolution image to a higher output resolution in less time than it takes to render directly to the output resolution.
 
-![A timeline diagram that compares a traditional rendering timespan and compares it to a MetalFX upscaling timespan. The MetalFX upscaling method, which renders at a lower resolution and then upscales to the final resolution with MetalFX, takes about half the time traditional rendering, which renders directly to the higher, final resolution.](https://docs-assets.developer.apple.com/published/d0d41d9865689f453bc27b90af756121/media-4085441%402x.png)
+![A timeline diagram that compares a traditional rendering timespan and compares it to a MetalFX upscaling timespan. The MetalFX upscaling method, which renders at a lower resolution and then upscales to the final resolution with MetalFX, takes about half the time traditional rendering, which renders directly to the higher, final resolution.](/images/com.apple.metalfx/media-4085441@2x.png)
 
 Use the GPU time savings to further enhance your app or game’s experience. For example, add more effects or scene details.
 

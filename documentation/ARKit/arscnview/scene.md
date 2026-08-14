@@ -17,7 +17,7 @@ var scene: SCNScene { get set }
 
 #### Discussion
 
-> **Note**:  Unlike the parent [`SCNView`](https://developer.apple.com/documentation/SceneKit/SCNView) class, an [`ARSCNView`](arscnview.md) object requires a non-`nil` scene to display.
+> **Note**:  Unlike the parent [`SCNView`](https://developer.apple.com/documentation/scenekit/scnview) class, an [`ARSCNView`](arscnview.md) object requires a non-`nil` scene to display.
 
 ## See Also
 

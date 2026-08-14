@@ -40,18 +40,18 @@ An audio file group.
 ### Inherits From
 - [AudioResource](audioresource.md)
 ### Conforms To
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
 - [Resource](resource.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 
 - [class AudioFileResource](audiofileresource.md)
   An audio resource that you load from a file or from a URL.
 - [class AudioBufferResource](audiobufferresource.md)
-  An audio resource that you load from an [`AVAudioBuffer`](https://developer.apple.com/documentation/AVFAudio/AVAudioBuffer).
+  An audio resource that you load from an [`AVAudioBuffer`](https://developer.apple.com/documentation/avfaudio/avaudiobuffer).
 - [struct AudioLibraryComponent](audiolibrarycomponent.md)
   A container for audio resources that you can look up by user-defined names.
 - [class AudioResource](audioresource.md)

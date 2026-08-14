@@ -19,13 +19,13 @@ Manage the code and resources you use to build apps, libraries, and other softwa
 - [Finding and replacing content in a project](finding-and-replacing-content-in-a-project.md)
   Search some or all of your project for text strings or symbol names, and perform advanced searches using regular expressions.
 ### Project configuration
-- [Managing your app’s information property list values](../BundleResources/managing-your-app-s-information-property-list.md)
+- [Managing your app’s information property list values](../bundleresources/managing-your-app-s-information-property-list.md)
   Customize the information property list values for your app using Xcode.
 - [Adding package dependencies to your app](adding-package-dependencies-to-your-app.md)
   Integrate package dependencies to share code between projects, or leverage code from other developers.
-- [Creating a Mac version of your iPad app](../UIKit/creating-a-mac-version-of-your-ipad-app.md)
+- [Creating a Mac version of your iPad app](../uikit/creating-a-mac-version-of-your-ipad-app.md)
   Bring your iPad app to macOS with Mac Catalyst.
-- [Setting up a watchOS project](../watchOS-Apps/setting-up-a-watchos-project.md)
+- [Setting up a watchOS project](../watchos-apps/setting-up-a-watchos-project.md)
   Create a new watchOS project or add a watch target to an existing iOS project.
 - [Embedding a command-line tool in a sandboxed app](embedding-a-helper-tool-in-a-sandboxed-app.md)
   Add a command-line tool to a sandboxed app’s Xcode project so the resulting app can run it as a helper tool.

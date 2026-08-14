@@ -43,7 +43,7 @@ Use [`PortalComponent.CrossingMode.volume(_:)`](portalcomponent/crossingmode-swi
 ## Relationships
 
 ### Conforms To
-- [Equatable](../Swift/Equatable.md)
+- [Equatable](../swift/equatable.md)
 
 
 ---

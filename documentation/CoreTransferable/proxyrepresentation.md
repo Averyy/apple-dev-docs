@@ -26,7 +26,7 @@ struct ProxyRepresentation<Item, ProxyRepresentation> where Item : Transferable,
 
 #### Overview
 
-Use this representation to rely on an existing transfer representation that’s suitable for the type. For example,  a `Note` type might use the [`String`](https://developer.apple.com/documentation/Swift/String) structure’s built-in [`Transferable`](transferable.md) conformance — a plain text representation — so it can be pasted into any text editor:
+Use this representation to rely on an existing transfer representation that’s suitable for the type. For example,  a `Note` type might use the [`String`](https://developer.apple.com/documentation/swift/string) structure’s built-in [`Transferable`](transferable.md) conformance — a plain text representation — so it can be pasted into any text editor:
 
 ```swift
 struct Note: Transferable {
@@ -60,7 +60,7 @@ Write the order of the representations in the `transferRepresentation` property 
 
 `ProxyRepresentation` is a convenience, and its evaluation isn’t supposed to be calculation-heavy. Don’t perform long-running work in `exporting` and `importing` closures. They shouldn’t contain network requests, file operations, or other potentially time-consuming tasks as they can cause delays during operations with `Transferable` items.
 
-Use [`FileRepresentation`](FileRepresentation.md) or [`DataRepresentation`](DataRepresentation.md) to read and write files or for other lengthy tasks.
+Use [`FileRepresentation`](filerepresentation.md) or [`DataRepresentation`](datarepresentation.md) to read and write files or for other lengthy tasks.
 
 ## Topics
 
@@ -83,8 +83,8 @@ Use [`FileRepresentation`](FileRepresentation.md) or [`DataRepresentation`](Data
 ## Relationships
 
 ### Conforms To
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 - [TransferRepresentation](transferrepresentation.md)
 
 ## See Also

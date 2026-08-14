@@ -21,7 +21,7 @@ The position as a 3D vector (x, y, z)
 
 #### Discussion
 
-> **Note**: ![Graph](https://docs-assets.developer.apple.com/published/7b3d7a2870ca1c878b784379b93f24e6/element__position.svg)
+> **Note**: ![Graph](/images/com.apple.computegraph/element__position.svg)
 
 
 ---

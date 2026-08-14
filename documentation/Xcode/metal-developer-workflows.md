@@ -20,7 +20,7 @@ The Metal Performance HUD offers a visual overlay to catch performance issues wh
 
 The Metal system trace tool in Instruments provides a visual timeline of the parallel work on the CPU and the GPU, and the memory usage of your Metal app.
 
-![An Instruments screenshot displaying a capture in the Game Performance template.](https://docs-assets.developer.apple.com/published/cfb1310c32393bf3962f13e1e66f34b5/gputools-instruments-game-performance-hero%402x.png)
+![An Instruments screenshot displaying a capture in the Game Performance template.](/images/com.apple.Xcode/gputools-instruments-game-performance-hero@2x.png)
 
 You can begin profiling with the Game Performance template (see [`Analyzing the performance of your Metal app`](analyzing-the-performance-of-your-metal-app.md)) or the Game Memory template (see [`Analyzing the memory usage of your Metal app`](analyzing-the-memory-usage-of-your-metal-app.md)).
 
@@ -28,7 +28,7 @@ You can begin profiling with the Game Performance template (see [`Analyzing the 
 
 The Metal debugger in Xcode provides advanced tools for debugging and profiling your Metal app.
 
-![A screenshot of the Metal debugger showing the Bound Resources viewer and attachments for a draw command.](https://docs-assets.developer.apple.com/published/a7cba2f6c40a790c84564b5ed827fa13/gputools-metal-debugger-hero%402x.png)
+![A screenshot of the Metal debugger showing the Bound Resources viewer and attachments for a draw command.](/images/com.apple.Xcode/gputools-metal-debugger-hero@2x.png)
 
 You can get summaries of your Metal workload with the Dependencies viewer and the Memory viewer, inspect individual resources, and selectively debug your shaders. For more information on debugging, see [`Investigating visual artifacts`](investigating-visual-artifacts.md).
 

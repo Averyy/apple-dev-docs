@@ -7,7 +7,6 @@ A Boolean value that indicates whether the device’s Focus state suppresses not
 
 **Availability**:
 - iOS 26.5+
-- iPadOS 26.5+
 
 ## Declaration
 

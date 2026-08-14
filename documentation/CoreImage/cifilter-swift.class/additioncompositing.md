@@ -47,7 +47,7 @@ func additionCompositing(inputImage: CIImage, backgroundImage: CIImage) -> CIIma
 }
 ```
 
-![The image on the top left shows a beach with multiple palm trees and a rainbow arching across the blue sky.  The image below is a gradient image displaying a gradual color shift from purple to a dark orange. The image on the right shows the output from applying the addition compositing filter. This displays a mix of colors from both images and is brighter.](https://docs-assets.developer.apple.com/published/850255fdcb98366a0fe7ffc82ce931b1/media-3546408%402x.png)
+![The image on the top left shows a beach with multiple palm trees and a rainbow arching across the blue sky.  The image below is a gradient image displaying a gradual color shift from purple to a dark orange. The image on the right shows the output from applying the addition compositing filter. This displays a mix of colors from both images and is brighter.](/images/com.apple.coreimage/media-3546408@2x.png)
 
 ## See Also
 

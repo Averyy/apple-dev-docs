@@ -25,7 +25,7 @@ let AVVideoCodecKey: String
 
 #### Discussion
 
-The value for this key is an instance of [`NSString`](https://developer.apple.com/documentation/Foundation/NSString), equivalent to [`CMVideoCodecType`](https://developer.apple.com/documentation/CoreMedia/CMVideoCodecType). Use this key to set the video compression format to H.264, HEVC, or JPEG, depending on the video codec types available in [`AVCaptureMovieFileOutput`](avcapturemoviefileoutput.md). Check available video codec types by consulting [`availableVideoCodecTypes`](avcapturemoviefileoutput/availablevideocodectypes.md).
+The value for this key is an instance of [`NSString`](https://developer.apple.com/documentation/foundation/nsstring), equivalent to [`CMVideoCodecType`](https://developer.apple.com/documentation/coremedia/cmvideocodectype). Use this key to set the video compression format to H.264, HEVC, or JPEG, depending on the video codec types available in [`AVCaptureMovieFileOutput`](avcapturemoviefileoutput.md). Check available video codec types by consulting [`availableVideoCodecTypes`](avcapturemoviefileoutput/availablevideocodectypes.md).
 
 ## See Also
 

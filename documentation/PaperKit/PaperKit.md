@@ -14,7 +14,7 @@ Add drawings, shapes, and a consistent markup experience to your app.
 
 #### Overview
 
-PaperKit builds on top of [`PencilKit`](https://developer.apple.com/documentation/PencilKit) to deliver a comprehensive markup experience. It adds a layer of elements — including shapes, images, and text boxes — to help create a unified canvas that supports both drawing and annotation. PaperKit powers the markup experience across all Apple platforms, and provides an easy way to add rich markup capabilities to any app.
+PaperKit builds on top of [`PencilKit`](https://developer.apple.com/documentation/pencilkit) to deliver a comprehensive markup experience. It adds a layer of elements — including shapes, images, and text boxes — to help create a unified canvas that supports both drawing and annotation. PaperKit powers the markup experience across all Apple platforms, and provides an easy way to add rich markup capabilities to any app.
 
 PaperKit consists of three main components that work together to deliver a complete markup experience. [`PaperMarkupViewController`](papermarkupviewcontroller.md) serves as the primary markup controller that interactively creates and displays PaperKit elements alongside PencilKit content. [`PaperMarkup`](papermarkup.md) acts as the data model container that handles saving, loading, and rendering both markup elements and PencilKit drawing data. [`MarkupEditViewController`](markupeditviewcontroller.md) (in iOS, iPadOS, and visionOS) and [`MarkupToolbarViewController`](markuptoolbarviewcontroller.md) (in macOS) provide platform-specific insertion menus for adding markup elements.
 

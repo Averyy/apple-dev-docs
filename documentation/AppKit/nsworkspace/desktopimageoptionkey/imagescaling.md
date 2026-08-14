@@ -16,7 +16,7 @@ static let imageScaling: NSWorkspace.DesktopImageOptionKey
 
 #### Discussion
 
-The value is an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) object that contains an [`NSImageScaling`](nsimagescaling.md) constant as declared in [`NSCell`](nscell.md). If you don’t include this key, the workspace object uses [`NSImageScaling.scaleProportionallyUpOrDown`](nsimagescaling/scaleproportionallyupordown.md). [`NSImageScaling.scaleProportionallyDown`](nsimagescaling/scaleproportionallydown.md) isn’t supported.
+The value is an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) object that contains an [`NSImageScaling`](nsimagescaling.md) constant as declared in [`NSCell`](nscell.md). If you don’t include this key, the workspace object uses [`NSImageScaling.scaleProportionallyUpOrDown`](nsimagescaling/scaleproportionallyupordown.md). [`NSImageScaling.scaleProportionallyDown`](nsimagescaling/scaleproportionallydown.md) isn’t supported.
 
 ## See Also
 

@@ -20,7 +20,7 @@ Open the files using the QuickTime Player app (version 10.5 or later) or another
 
 The figure below shows the example test pattern file `QuickTime_Test_Pattern_HD.mov`, which contains color and grayscale patterns. Use it to evaluate the characteristics shown here:
 
-![A QuickTime test pattern HD movie file with color and grayscale patterns. The top of the movie contains dark levels, the middle has multi-colored bars and the bottom has white light levels.](https://docs-assets.developer.apple.com/published/4a1c3e93f3eb149a84b1cab61fb6de7e/media-3712972%402x.png)
+![A QuickTime test pattern HD movie file with color and grayscale patterns. The top of the movie contains dark levels, the middle has multi-colored bars and the bottom has white light levels.](/images/com.apple.avfoundation/media-3712972@2x.png)
 
 - 16 black levels on black or black crush test/range expansion (row A in the figure)
 - Continuous gradient or quantization/super-black, super-white handling (row B)
@@ -37,13 +37,13 @@ The simplest way to check color management in your app is with the 75% gray bars
 
 MacOS 10.6 and later process 75% gray bars with a 1.96 to 2.2 gamma conversion, resulting in a 198 value as shown here.
 
-![A QuickTime test pattern HD movie file with color and grayscale patterns. The top of the movie contains dark levels, the middle has multi-colored bars and the bottom has white light levels. There’s a callout that points to the 75% gray bars showing the gamma converted 198 values as reported by the digital color meter app.](https://docs-assets.developer.apple.com/published/b03017c85dc7c30093001b8158dd15bb/media-3712971%402x.png)
+![A QuickTime test pattern HD movie file with color and grayscale patterns. The top of the movie contains dark levels, the middle has multi-colored bars and the bottom has white light levels. There’s a callout that points to the 75% gray bars showing the gamma converted 198 values as reported by the digital color meter app.](/images/com.apple.avfoundation/media-3712971@2x.png)
 
 AVFoundation uses a value of approximately 1.96 as the gamma of video (the gamma value without the boost required for classic dim surround viewing environments). To derive that number, you first measure the response of a CRT. Most CRTs report a gamma of between 2.4 and 2.5 (depending upon the brightness and contrast settings on the monitor). You choose a value halfway between the two (2.45) and remove the contrast enhancement (the 1.25 gamma boost provided for viewing in dimly lit environments). The result is a value very close to 1.96 (2.45/1.25 = 1.96).
 
 MacOS 10.6 and later converts the video gamma to the 2.2 display buffer gamma when the app performs the color match to the display. You derive the 1.96 to 2.2 gamma conversion calculation for 75% gray bars as follows:
 
-![A mathematical equation of the gamma conversion calculation for 75% gray bars, resulting in a value of approximately 198.](https://docs-assets.developer.apple.com/published/062495cda4ee1976fb9500f6049100c6/media-3713334%402x.png)
+![A mathematical equation of the gamma conversion calculation for 75% gray bars, resulting in a value of approximately 198.](/images/com.apple.avfoundation/media-3713334@2x.png)
 
 With rounding error, you’ll see results in this range. This is the default behavior for an AVFoundation app during playback. If you get values of 191 or other values, it probably means the system didn’t apply color management. See [`Ensure accurate color application of your app’s video`](evaluating-an-app-s-video-color#Ensure-accurate-color-application-of-your-apps-video.md).
 

@@ -18,7 +18,7 @@ var focusedFrameGuide: UILayoutGuide { get }
 
 The layout guide in this property represents the display frame of the image view when it’s focused. You can use this property to align other elements of your interface to the image view or to adjust the constraints of your interface.
 
-When the [`adjustsImageWhenAncestorFocused`](uiimageview/adjustsimagewhenancestorfocused.md) property is set to [`true`](https://developer.apple.com/documentation/Swift/true), the image view automatically applies this layout guide when the image view becomes focused.
+When the [`adjustsImageWhenAncestorFocused`](uiimageview/adjustsimagewhenancestorfocused.md) property is set to [`true`](https://developer.apple.com/documentation/swift/true), the image view automatically applies this layout guide when the image view becomes focused.
 
 ## See Also
 

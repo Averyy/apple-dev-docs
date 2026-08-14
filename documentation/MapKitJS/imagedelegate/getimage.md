@@ -23,7 +23,7 @@ getImage?(ratio: number): Promise<string | ImageSource | undefined>;
 
 Implement this method to return a `Promise` that resolves to a URL string, an [`ImageSource`](imagesource.md), or `undefined` if no image is available. MapKit JS calls this method with a pixel ratio value that your function uses to provide an appropriately scaled image.
 
-When both [`getImage(ratio)`](imagedelegate/getimage.md) and [`getImageUrl(ratio, callback)`](imagedelegate/getimageurl.md) are present, the framework uses [`getImage(ratio)`](imagedelegate/getimage.md).
+When both [`getImage()`](imagedelegate/getimage.md) and [`getImageUrl()`](imagedelegate/getimageurl.md) are present, the framework uses [`getImage()`](imagedelegate/getimage.md).
 
 ```javascript
 const imageDelegate = {

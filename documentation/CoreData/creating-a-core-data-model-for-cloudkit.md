@@ -8,7 +8,7 @@ Design a CloudKit-compatible data model and initialize your CloudKit schema.
 
 To pass records between a Core Data store and a CloudKit database, they both require a shared understanding of the data structure. You define this in the Core Data model and then use that to generate a CloudKit schema.
 
-![Flow diagram showing that your app’s Core Data model generates a CloudKit schema.](https://docs-assets.developer.apple.com/published/81e8f1f9f7ae3eee6d4ead6744ae33d7/media-3230504%402x.png)
+![Flow diagram showing that your app’s Core Data model generates a CloudKit schema.](/images/com.apple.coredata/media-3230504@2x.png)
 
 ##### Create a Data Model
 
@@ -20,7 +20,7 @@ CloudKit doesn’t support all the features of a Core Data model. As you design 
 | --- | --- |
 | **Entities** | Unique constraints aren’t supported. |
 | **Attributes** | `Undefined` and [`objectID`](nsmanagedobject/objectid.md) attribute types aren’t supported. |
-| **Relationships** | All relationships must be optional. Due to operation size limitations, CloudKit may not save relationship changes atomically. ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) All relationships must have an inverse, in case the records synchronize out of order. ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) CloudKit doesn’t support the Deny deletion rule. |
+| **Relationships** | All relationships must be optional. Due to operation size limitations, CloudKit may not save relationship changes atomically. ![None](/images/com.apple.coredata/spacer.png) All relationships must have an inverse, in case the records synchronize out of order. ![None](/images/com.apple.coredata/spacer.png) CloudKit doesn’t support the Deny deletion rule. |
 | **Configurations** | Entities in a configuration must not have relationships to entities in another configuration. |
 
 For more information about how Core Data translates managed objects to CloudKit records, see [`Reading CloudKit Records for Core Data`](reading-cloudkit-records-for-core-data.md).

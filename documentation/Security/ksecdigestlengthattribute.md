@@ -16,7 +16,7 @@ let kSecDigestLengthAttribute: CFString
 
 #### Discussion
 
-The value is a [`CFNumber`](https://developer.apple.com/documentation/CoreFoundation/CFNumber) that contains the digest length.
+The value is a [`CFNumber`](https://developer.apple.com/documentation/corefoundation/cfnumber) that contains the digest length.
 
 
 ---

@@ -10,13 +10,13 @@ Display and manage multiple SwiftUI windows in your visionOS app.
 
 #### Overview
 
-This sample code project demonstrates how to open a new SwiftUI view and a separate window group to manage multiple windows, assigning a unique `id` to each newly created window. In the sample, the app displays a SwiftUI window with a [`Button`](https://developer.apple.com/documentation/SwiftUI/Button) that a person can tap to open a new window view, as the following image illustrates:
+This sample code project demonstrates how to open a new SwiftUI view and a separate window group to manage multiple windows, assigning a unique `id` to each newly created window. In the sample, the app displays a SwiftUI window with a [`Button`](https://developer.apple.com/documentation/swiftui/button) that a person can tap to open a new window view, as the following image illustrates:
 
-![](https://docs-assets.developer.apple.com/published/c598c2c0c671cf1a943975fee28877ba/sample-new-window-1-main-view.png)
+![](/images/com.apple.visionOS/sample-new-window-1-main-view.png)
 
 ##### Create a Variable to Track Window Ids
 
-To manage multiple windows for an app, the app uses the [`Identifiable`](https://developer.apple.com/documentation/Swift/Identifiable) protocol to establish an ID value for each new window view.
+To manage multiple windows for an app, the app uses the [`Identifiable`](https://developer.apple.com/documentation/swift/identifiable) protocol to establish an ID value for each new window view.
 
 ```swift
 import SwiftUI
@@ -56,11 +56,11 @@ struct OpenWindowView: View {
 }
 ```
 
-The [`openWindow`](https://developer.apple.com/documentation/SwiftUI/EnvironmentValues/openWindow) instance property invokes a new window view in an app’s environment.
+The [`openWindow`](https://developer.apple.com/documentation/swiftui/environmentvalues/openwindow) instance property invokes a new window view in an app’s environment.
 
 ##### Create a View for the New Window
 
-The `NewWindow` view displays the window’s `id` value in a [`Text`](https://developer.apple.com/documentation/SwiftUI/Text) instance.
+The `NewWindow` view displays the window’s `id` value in a [`Text`](https://developer.apple.com/documentation/swiftui/text) instance.
 
 ```swift
 import SwiftUI
@@ -79,7 +79,7 @@ struct NewWindow: View {
 
 ##### Add New Windows to a Window Group
 
-The `EntryPoint` provides a specific [`WindowGroup`](https://developer.apple.com/documentation/SwiftUI/WindowGroup) to create a window view and add the new window to the app’s main view.
+The `EntryPoint` provides a specific [`WindowGroup`](https://developer.apple.com/documentation/swiftui/windowgroup) to create a window view and add the new window to the app’s main view.
 
 ```swift
 import SwiftUI

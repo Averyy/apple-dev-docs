@@ -68,9 +68,9 @@ if(returnVal < 0)
     MyShowError(returnVal);
 ```
 
-Encoding the kernel merely encodes the operation into a command buffer. It does not modify any pixels, yet. All kernel state has been copied to the command buffer. Kernels may be reused. If the texture was previously operated on by another command encoder (e.g. a render command encoder), you should call the [`endEncoding()`](https://developer.apple.com/documentation/Metal/MTLCommandEncoder/endEncoding()) method on the other encoder before encoding the filter.
+Encoding the kernel merely encodes the operation into a command buffer. It does not modify any pixels, yet. All kernel state has been copied to the command buffer. Kernels may be reused. If the texture was previously operated on by another command encoder (e.g. a render command encoder), you should call the [`endEncoding()`](https://developer.apple.com/documentation/metal/mtlcommandencoder/endencoding()) method on the other encoder before encoding the filter.
 
-Some kernels work in place, even in situations where Metal might not normally allow in-place operation on textures. If in-place operation is desired, you may attempt to call the [`encode(commandBuffer:inPlaceTexture:fallbackCopyAllocator:)`](mpsunaryimagekernel/encode(commandbuffer:inplacetexture:fallbackcopyallocator:).md) method. If the operation cannot be completed in place, then [`false`](https://developer.apple.com/documentation/Swift/false) will be returned and you will have to create a new result texture and try again. To make an in-place image filter reliable, pass a fallback [`MPSCopyAllocator`](mpscopyallocator.md) block to the method to create a new texture to write to in the event that a filter cannot operate in place.
+Some kernels work in place, even in situations where Metal might not normally allow in-place operation on textures. If in-place operation is desired, you may attempt to call the [`encode(commandBuffer:inPlaceTexture:fallbackCopyAllocator:)`](mpsunaryimagekernel/encode(commandbuffer:inplacetexture:fallbackcopyallocator:).md) method. If the operation cannot be completed in place, then [`false`](https://developer.apple.com/documentation/swift/false) will be returned and you will have to create a new result texture and try again. To make an in-place image filter reliable, pass a fallback [`MPSCopyAllocator`](mpscopyallocator.md) block to the method to create a new texture to write to in the event that a filter cannot operate in place.
 
 You may repeat step 2 to encode more kernels, as desired. 3. After encoding any additional work to the command buffer using other encoders, submit the command buffer to your command queue, using:
 
@@ -111,7 +111,7 @@ commandBuffer.commit()
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Inherited By
 - [MPSAccelerationStructure](mpsaccelerationstructure.md)
 - [MPSBinaryImageKernel](mpsbinaryimagekernel.md)
@@ -141,15 +141,15 @@ commandBuffer.commit()
 - [MPSTemporalAA](mpstemporalaa.md)
 - [MPSUnaryImageKernel](mpsunaryimagekernel.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCoding](../Foundation/NSCoding.md)
-- [NSCopying](../Foundation/NSCopying.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [NSSecureCoding](../Foundation/NSSecureCoding.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCoding](../foundation/nscoding.md)
+- [NSCopying](../foundation/nscopying.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSSecureCoding](../foundation/nssecurecoding.md)
 
 
 ---

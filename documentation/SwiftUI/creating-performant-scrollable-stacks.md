@@ -27,7 +27,7 @@ ScrollView(.horizontal) {
 
 If the `ProfileView` in the example code above has an intrinsic content size of 200 x 200 points, the maximum width of 500 points that the [`frame(minWidth:idealWidth:maxWidth:minHeight:idealHeight:maxHeight:alignment:)`](view/frame(minwidth:idealwidth:maxwidth:minheight:idealheight:maxheight:alignment:).md) view modifier applies to the [`ScrollView`](scrollview.md) causes the stack to scroll inside it.
 
-![Five profile views displaying in a row inside a stack view. The scroll view’s maximum width clips its content,  causing the last two-and-a-half profile views in the stack to be outside of the viewport.](https://docs-assets.developer.apple.com/published/092be74c3f1836b4abc7798368222642/Creating-Performant-Scrollable-Stacks-1%402x.png)
+![Five profile views displaying in a row inside a stack view. The scroll view’s maximum width clips its content,  causing the last two-and-a-half profile views in the stack to be outside of the viewport.](/images/com.apple.SwiftUI/Creating-Performant-Scrollable-Stacks-1@2x.png)
 
 For an introduction to using stacks to group views together, see [`Building layouts with stack views`](building-layouts-with-stack-views.md).
 
@@ -46,7 +46,7 @@ ScrollView(.horizontal) {
 .frame(maxWidth: 500)
 ```
 
-> **Note**: When you use [`ForEach`](foreach.md), each element you iterate over must be uniquely identifiable. Either conform elements to the [`Identifiable`](https://developer.apple.com/documentation/Swift/Identifiable) protocol, or pass a key path to a unique identifier as the `id` parameter of [`init(_:id:content:)`](foreach/init(_:id:content:).md).
+> **Note**: When you use [`ForEach`](foreach.md), each element you iterate over must be uniquely identifiable. Either conform elements to the [`Identifiable`](https://developer.apple.com/documentation/swift/identifiable) protocol, or pass a key path to a unique identifier as the `id` parameter of [`init(_:id:content:)`](foreach/init(_:id:content:).md).
 
 ##### Consider Lazy Stacks for Large Numbers of Views
 
@@ -56,7 +56,7 @@ In the above example, `ProfileView` is a compound view that consists of nested s
 
 As the number of views inside a stack grows, consider using a [`LazyHStack`](lazyhstack.md) and [`LazyVStack`](lazyvstack.md) instead of [`HStack`](hstack.md) and [`VStack`](vstack.md). Lazy stacks load and render their subviews on-demand, providing significant performance gains when loading large numbers of subviews.
 
-![Diagram showing a lazy stack view inside a scroll view container. Loaded views are visible in the viewport in the center, and views that have yet to load are pending on the right.](https://docs-assets.developer.apple.com/published/11e35ee58bbcc2fe0e58e4add7ff42d1/Creating-Performant-Scrollable-Stacks-2%402x.png)
+![Diagram showing a lazy stack view inside a scroll view container. Loaded views are visible in the viewport in the center, and views that have yet to load are pending on the right.](/images/com.apple.SwiftUI/Creating-Performant-Scrollable-Stacks-2@2x.png)
 
 Stack views and lazy stacks have similar functionality, and they may feel interchangeable, but they each have strengths in different situations. Stack views load their child views all at once, making layout fast and reliable, because the system knows the size and shape of every subview as it loads them. Lazy stacks trade some degree of layout correctness for performance, because the system only calculates the geometry for subviews as they become visible.
 
@@ -70,7 +70,7 @@ To profile SwiftUI view loading, open the Instruments tool by selecting Profile 
 
 > **Note**: Never profile your code using the iOS simulator. Always use real devices for performance testing.
 
-![Screenshot from the Instruments tool showing a large amount of views loading all at the same time.](https://docs-assets.developer.apple.com/published/73211ab0b4deea3a7b973023327247a1/Creating-Performant-Scrollable-Stacks-3%402x.png)
+![Screenshot from the Instruments tool showing a large amount of views loading all at the same time.](/images/com.apple.SwiftUI/Creating-Performant-Scrollable-Stacks-3@2x.png)
 
 When profiling the above code, the View Body instrument shows that 1,000 `ProfileView` instances load into memory at the same time as the [`HStack`](hstack.md). You can also see the same number of [`Image`](image.md) views load as the system loads each profile.
 
@@ -89,9 +89,9 @@ ScrollView(.horizontal) {
 
 Running another trace shows a drastic reduction in the number of initially loaded views as only four `ProfileView` instances start as visible. You can also see a corresponding decrease in the Total Duration column.
 
-![Screenshot from the Instruments tool showing a small amount of views loading.](https://docs-assets.developer.apple.com/published/7a0742bb765ecedeb06c7c2997253a04/Creating-Performant-Scrollable-Stacks-4%402x.png)
+![Screenshot from the Instruments tool showing a small amount of views loading.](/images/com.apple.SwiftUI/Creating-Performant-Scrollable-Stacks-4@2x.png)
 
-For more information about using the Instruments tool, see [`Improving your app’s performance`](https://developer.apple.com/documentation/Xcode/improving-your-app-s-performance).
+For more information about using the Instruments tool, see [`Improving your app’s performance`](https://developer.apple.com/documentation/xcode/improving-your-app-s-performance).
 
 ## See Also
 

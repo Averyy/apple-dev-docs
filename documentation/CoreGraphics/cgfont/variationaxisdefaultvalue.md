@@ -22,7 +22,7 @@ class let variationAxisDefaultValue: CFString
 
 #### Discussion
 
-The value obtained with this key is a [`CFNumber`](https://developer.apple.com/documentation/CoreFoundation/CFNumber) that specifies the default value of the variation axis.
+The value obtained with this key is a [`CFNumber`](https://developer.apple.com/documentation/corefoundation/cfnumber) that specifies the default value of the variation axis.
 
 ## See Also
 

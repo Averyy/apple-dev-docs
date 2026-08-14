@@ -17,14 +17,14 @@ This separation exists to guarantee user privacy. The filter data provider runs 
 
 For example, your filter control provider might download a set of filtering rules and save them to a shared app group. Your filter data provider has *read-only* access to that app group, allowing it use those rules to filter content but still preventing it from exporting user network content.
 
-For detailed information about content filter provider deployment options, see [`TN3134: Network Extension provider deployment`](https://developer.apple.com/documentation/Technotes/tn3134-network-extension-provider-deployment).
+For detailed information about content filter provider deployment options, see [`TN3134: Network Extension provider deployment`](https://developer.apple.com/documentation/technotes/tn3134-network-extension-provider-deployment).
 
 > **Note**:  When a VPN configuration is active, connections use the VPN instead of iCloud Private Relay. Network Extension providers also don’t use iCloud Private Relay.
 
 ## Topics
 
 ### Essentials
-- [Network Extensions Entitlement](../BundleResources/Entitlements/com.apple.developer.networking.networkextension.md)
+- [Network Extensions Entitlement](../bundleresources/entitlements/com.apple.developer.networking.networkextension.md)
   The APIs an app can use to customize networking features.
 ### Data and control providers
 - [class NEFilterDataProvider](nefilterdataprovider.md)

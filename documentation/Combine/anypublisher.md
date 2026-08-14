@@ -42,10 +42,10 @@ You can use Combine’s [`eraseToAnyPublisher()`](publisher/erasetoanypublisher(
 ## Relationships
 
 ### Conforms To
-- [Copyable](../Swift/Copyable.md)
-- [CustomPlaygroundDisplayConvertible](../Swift/CustomPlaygroundDisplayConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Escapable](../Swift/Escapable.md)
+- [Copyable](../swift/copyable.md)
+- [CustomPlaygroundDisplayConvertible](../swift/customplaygrounddisplayconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Escapable](../swift/escapable.md)
 - [Publisher](publisher.md)
 
 ## See Also

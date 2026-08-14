@@ -24,7 +24,7 @@ var containerFrame: CGRect { get set }
 
 SceneKit can lay out a body of text to fit within a rectangular area. To do this, you must first use this property to define the area for text layout as a rectangle in the x- and y-axis dimensions of the text object’s local coordinate system. Then you use the [`isWrapped`](scntext/iswrapped.md), [`alignmentMode`](scntext/alignmentmode.md), and [`truncationMode`](scntext/truncationmode.md) properties to control how SceneKit fits the text into the container frame. Text layout begins in the upper left corner of the rectangle.
 
-The default value of this property is [`CGRectZero`](https://developer.apple.com/documentation/CoreGraphics/CGRectZero), specifying that SceneKit should lay out the text on one line without wrapping or truncation.
+The default value of this property is [`CGRectZero`](https://developer.apple.com/documentation/coregraphics/cgrectzero), specifying that SceneKit should lay out the text on one line without wrapping or truncation.
 
 Depending on the content and style of the text and the values of the [`isWrapped`](scntext/iswrapped.md), [`alignmentMode`](scntext/alignmentmode.md), and [`truncationMode`](scntext/truncationmode.md) properties, the text may not fit within the container frame after layout, or it may occupy a smaller area.
 

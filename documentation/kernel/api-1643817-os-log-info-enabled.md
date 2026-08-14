@@ -20,7 +20,7 @@ bool os_log_info_enabled(os_log_t log);
 
 ## Parameters
 
-- `log`: The   constant or a custom log object previously created by the   function.
+- `log`: The `OS_LOG_DEFAULT` constant or a custom log object previously created by the [`os_log_create`](1643798-os_log_create.md) function.
 
 ## See Also
 

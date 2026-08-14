@@ -52,7 +52,7 @@ VStack {
 .font(.system(size: 16, weight: .light, design: .default))
 ```
 
-![A screenshot showing the application fonts to an individual text field](https://docs-assets.developer.apple.com/published/96bbeed6b182bf19c533efcca8a5fcaa/SwiftUI-view-font%402x.png)
+![A screenshot showing the application fonts to an individual text field](/images/com.apple.SwiftUI/SwiftUI-view-font@2x.png)
 
 ## Parameters
 

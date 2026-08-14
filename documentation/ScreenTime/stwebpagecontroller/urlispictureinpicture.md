@@ -19,9 +19,9 @@ var urlIsPictureInPicture: Bool { get set }
 
 #### Discussion
 
-The default value is [`NO`](https://developer.apple.com/documentation/ObjectiveC/NO). Set this value when the webpage starts or stops displaying a Picture in Picture window.
+The default value is [`NO`](https://developer.apple.com/documentation/objectivec/no). Set this value when the webpage starts or stops displaying a Picture in Picture window.
 
-> ❗ **Important**: Set this value to [`NO`](https://developer.apple.com/documentation/ObjectiveC/NO) prior to changing [`url`](stwebpagecontroller/url.md) if the new webpage at that URL ends all currently displayed Picture in Picture windows, and won’t immediately display a new one.
+> ❗ **Important**: Set this value to [`NO`](https://developer.apple.com/documentation/objectivec/no) prior to changing [`url`](stwebpagecontroller/url.md) if the new webpage at that URL ends all currently displayed Picture in Picture windows, and won’t immediately display a new one.
 
 ## See Also
 

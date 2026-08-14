@@ -35,7 +35,7 @@ struct OpenAppleDotCom: URLRepresentableIntent {
 }
 ```
 
-Make sure the parameters you include in your URL representation contain a URL-friendly type. The system automatically converts parameters of type [`String`](https://developer.apple.com/documentation/Swift/String), [`Int`](https://developer.apple.com/documentation/Swift/Int), and [`URL`](https://developer.apple.com/documentation/Foundation/URL) to values suitable for inclusion in a URL. To incorporate other types, implement the [`CustomURLRepresentationParameterConvertible`](customurlrepresentationparameterconvertible.md) protocol in the type.
+Make sure the parameters you include in your URL representation contain a URL-friendly type. The system automatically converts parameters of type [`String`](https://developer.apple.com/documentation/swift/string), [`Int`](https://developer.apple.com/documentation/swift/int), and [`URL`](https://developer.apple.com/documentation/foundation/url) to values suitable for inclusion in a URL. To incorporate other types, implement the [`CustomURLRepresentationParameterConvertible`](customurlrepresentationparameterconvertible.md) protocol in the type.
 
 ## Topics
 
@@ -46,10 +46,10 @@ Make sure the parameters you include in your URL representation contain a URL-fr
 ## Relationships
 
 ### Conforms To
-- [ExpressibleByExtendedGraphemeClusterLiteral](../Swift/ExpressibleByExtendedGraphemeClusterLiteral.md)
-- [ExpressibleByStringInterpolation](../Swift/ExpressibleByStringInterpolation.md)
-- [ExpressibleByStringLiteral](../Swift/ExpressibleByStringLiteral.md)
-- [ExpressibleByUnicodeScalarLiteral](../Swift/ExpressibleByUnicodeScalarLiteral.md)
+- [ExpressibleByExtendedGraphemeClusterLiteral](../swift/expressiblebyextendedgraphemeclusterliteral.md)
+- [ExpressibleByStringInterpolation](../swift/expressiblebystringinterpolation.md)
+- [ExpressibleByStringLiteral](../swift/expressiblebystringliteral.md)
+- [ExpressibleByUnicodeScalarLiteral](../swift/expressiblebyunicodescalarliteral.md)
 
 ## See Also
 

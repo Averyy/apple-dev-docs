@@ -17,7 +17,7 @@ var appClipCodeTrackingEnabled: Bool { get set }
 
 #### Discussion
 
-When this property’s value is [`true`](https://developer.apple.com/documentation/Swift/true), the session delegate recieves an [`ARAppClipCodeAnchor`](arappclipcodeanchor.md) via [`session(_:didAdd:)`](arsessiondelegate/session(_:didadd:).md) for every App Clip Code that ARKit detects in the physical environment. The default value is `false`.
+When this property’s value is [`true`](https://developer.apple.com/documentation/swift/true), the session delegate recieves an [`ARAppClipCodeAnchor`](arappclipcodeanchor.md) via [`session(_:didAdd:)`](arsessiondelegate/session(_:didadd:).md) for every App Clip Code that ARKit detects in the physical environment. The default value is `false`.
 
 Before calling this function, check that the configuration supports App Clip Code tracking by  calling [`supportsAppClipCodeTracking`](arbodytrackingconfiguration/supportsappclipcodetracking.md).
 
@@ -25,7 +25,7 @@ To avoid scanning a physical code that’s not connected to an App Clip, the sys
 
 ## See Also
 
-- [Interacting with App Clip Codes in AR](../AppClip/interacting-with-app-clip-codes-in-ar.md)
+- [Interacting with App Clip Codes in AR](../appclip/interacting-with-app-clip-codes-in-ar.md)
   Display content and provide services in an AR experience with App Clip Codes.
 - [class var supportsAppClipCodeTracking: Bool](arbodytrackingconfiguration/supportsappclipcodetracking.md)
   A flag that indicates if the device tracks App Clip Codes.

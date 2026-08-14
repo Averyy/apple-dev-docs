@@ -27,7 +27,7 @@ If you call this function after initiating a print job, the change is ignored fo
 ## Parameters
 
 - `printSettings`: The print settings object whose job collate option you want to set.
-- `collate`: If  , the job collate option is selected; if   the option is not selected.
+- `collate`: If `true`, the job collate option is selected; if `false` the option is not selected.
 
 ## See Also
 

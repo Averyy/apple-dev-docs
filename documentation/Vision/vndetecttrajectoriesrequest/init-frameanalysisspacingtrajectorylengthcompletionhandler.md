@@ -21,7 +21,7 @@ init(frameAnalysisSpacing: CMTime, trajectoryLength: Int, completionHandler: VNR
 
 ## Parameters
 
-- `frameAnalysisSpacing`: A [`CMTime`](https://developer.apple.com/documentation/CoreMedia/CMTime) value that indicates the duration between analysis operations. Increase this value to reduce the number of frames analyzed on slower devices. Set this argument to [`zero`](https://developer.apple.com/documentation/CoreMedia/CMTime/zero) to analyze all frames.
+- `frameAnalysisSpacing`: A [`CMTime`](https://developer.apple.com/documentation/coremedia/cmtime) value that indicates the duration between analysis operations. Increase this value to reduce the number of frames analyzed on slower devices. Set this argument to [`zero`](https://developer.apple.com/documentation/coremedia/cmtime/zero) to analyze all frames.
 - `trajectoryLength`: The number of points required to analyze to determine that a shape follows a parabolic path. This argument value must be at least 5.
 - `completionHandler`: A closure that’s invoked after the request completes its processing. The system invokes the completion handler on the same dispatch queue that the request uses to perform its processing.
 

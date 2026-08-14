@@ -43,11 +43,11 @@ struct CLLocationCoordinate2D
 ## Relationships
 
 ### Conforms To
-- [Animatable](../SwiftUI/Animatable.md)
-- [BitwiseCopyable](../Swift/BitwiseCopyable.md)
-- [Copyable](../Swift/Copyable.md)
-- [Escapable](../Swift/Escapable.md)
-- [Sendable](../Swift/Sendable.md)
+- [Animatable](../swiftui/animatable.md)
+- [BitwiseCopyable](../swift/bitwisecopyable.md)
+- [Copyable](../swift/copyable.md)
+- [Escapable](../swift/escapable.md)
+- [Sendable](../swift/sendable.md)
 
 ## See Also
 

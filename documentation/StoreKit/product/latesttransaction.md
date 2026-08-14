@@ -36,9 +36,9 @@ guard case .verified(let transaction) = resultingTransaction else {
 // Update your app based on the details from the most recent transaction.
 ```
 
-By default, when the [`SKIncludeConsumableInAppPurchaseHistory`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/SKIncludeConsumableInAppPurchaseHistory) property list key is `false`, this value excludes finished consumable in-app purchases unless they are refunded or revoked.
+By default, when the [`SKIncludeConsumableInAppPurchaseHistory`](https://developer.apple.com/documentation/bundleresources/information-property-list/skincludeconsumableinapppurchasehistory) property list key is `false`, this value excludes finished consumable in-app purchases unless they are refunded or revoked.
 
-If you set the [`SKIncludeConsumableInAppPurchaseHistory`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/SKIncludeConsumableInAppPurchaseHistory) property list key to `true`, this value returns all transactions, including consumable in-app purchases that your app marked as finished ([`finish()`](transaction/finish().md)).
+If you set the [`SKIncludeConsumableInAppPurchaseHistory`](https://developer.apple.com/documentation/bundleresources/information-property-list/skincludeconsumableinapppurchasehistory) property list key to `true`, this value returns all transactions, including consumable in-app purchases that your app marked as finished ([`finish()`](transaction/finish().md)).
 
 
 ---

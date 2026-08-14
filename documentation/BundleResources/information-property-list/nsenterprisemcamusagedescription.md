@@ -16,7 +16,7 @@ A message that tells people why the app is requesting access to the device’s m
 
 The system uses this string in visionOS 2-2.3 to tell someone why your app requests permission to use the main camera. In newer versions of visionOS, the system uses the value of [`NSMainCameraUsageDescription`](information-property-list/nsmaincamerausagedescription.md) instead.
 
-For information about using the main camera in your visionOS app, see [`Accessing the main camera`](https://developer.apple.com/documentation/visionOS/accessing-the-main-camera).
+For information about using the main camera in your visionOS app, see [`Accessing the main camera`](https://developer.apple.com/documentation/visionos/accessing-the-main-camera).
 
 ## See Also
 

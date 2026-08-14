@@ -23,7 +23,7 @@ Use this method to dismiss the document preview programmatically. The document i
 
 ## Parameters
 
-- `animated`: Specify [`true`](https://developer.apple.com/documentation/Swift/true) to animate the dismissal of the document preview or [`false`](https://developer.apple.com/documentation/Swift/false) to dismiss it immediately.
+- `animated`: Specify [`true`](https://developer.apple.com/documentation/swift/true) to animate the dismissal of the document preview or [`false`](https://developer.apple.com/documentation/swift/false) to dismiss it immediately.
 
 ## See Also
 

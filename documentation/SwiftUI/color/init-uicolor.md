@@ -21,7 +21,7 @@ init(uiColor: UIColor)
 
 #### Discussion
 
-Use this method to create a SwiftUI color from a [`UIColor`](https://developer.apple.com/documentation/UIKit/UIColor) instance. The new color preserves the adaptability of the original. For example, you can create a rectangle using [`link`](https://developer.apple.com/documentation/UIKit/UIColor/link) to see how the shade adjusts to match the user’s system settings:
+Use this method to create a SwiftUI color from a [`UIColor`](https://developer.apple.com/documentation/uikit/uicolor) instance. The new color preserves the adaptability of the original. For example, you can create a rectangle using [`link`](https://developer.apple.com/documentation/uikit/uicolor/link) to see how the shade adjusts to match the user’s system settings:
 
 ```swift
 struct Box: View {
@@ -34,9 +34,9 @@ struct Box: View {
 
 The `Box` view defined above automatically changes its appearance when the user turns on Dark Mode. With the light and dark appearances placed side by side, you can see the subtle difference in shades:
 
-![A side by side comparison of light and dark appearance screenshots of](https://docs-assets.developer.apple.com/published/599bf4a06d3976ad099cbd7337fdc258/Color-init-3%402x.png)
+![A side by side comparison of light and dark appearance screenshots of](/images/com.apple.SwiftUI/Color-init-3@2x.png)
 
-> **Note**: Use this initializer only if you need to convert an existing [`UIColor`](https://developer.apple.com/documentation/UIKit/UIColor) to a SwiftUI color. Otherwise, create a SwiftUI [`Color`](color.md) using an initializer like [`init(_:red:green:blue:opacity:)`](color/init(_:red:green:blue:opacity:).md), or use a system color like [`blue`](shapestyle/blue.md).
+> **Note**: Use this initializer only if you need to convert an existing [`UIColor`](https://developer.apple.com/documentation/uikit/uicolor) to a SwiftUI color. Otherwise, create a SwiftUI [`Color`](color.md) using an initializer like [`init(_:red:green:blue:opacity:)`](color/init(_:red:green:blue:opacity:).md), or use a system color like [`blue`](shapestyle/blue.md).
 
 ## See Also
 

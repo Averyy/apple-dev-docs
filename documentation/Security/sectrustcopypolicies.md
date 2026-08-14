@@ -31,7 +31,7 @@ It is safe to call this function concurrently on two or more threads as long as 
 ## Parameters
 
 - `trust`: The trust management object whose policies you wish to retrieve.
-- `policies`: On return, an array of [`SecPolicy`](secpolicy.md) objects for the policies used by this trust management object. In Objective-C, call the [`CFRelease`](https://developer.apple.com/documentation/CoreFoundation/CFRelease) function to release this object when you are finished with it.
+- `policies`: On return, an array of [`SecPolicy`](secpolicy.md) objects for the policies used by this trust management object. In Objective-C, call the [`CFRelease`](https://developer.apple.com/documentation/corefoundation/cfrelease) function to release this object when you are finished with it.
 
 ## See Also
 

@@ -50,8 +50,8 @@ CFMutableBag provides several functions for adding and removing values from a ba
 ### Inherits From
 - [CFBag](cfbag.md)
 ### Conforms To
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
 
 ## See Also
 

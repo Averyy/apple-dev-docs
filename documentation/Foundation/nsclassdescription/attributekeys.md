@@ -23,7 +23,7 @@ An array of `NSString` objects containing the names of attributes of instances o
 
 For example, a class description that describes Movie objects could return the attribute keys `title`, `dateReleased`, and `rating`.
 
-If you have an instance of the class the receiver describes, you can use the `NSObject` instance method [`attributeKeys`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class/attributeKeys) instead.
+If you have an instance of the class the receiver describes, you can use the `NSObject` instance method [`attributeKeys`](https://developer.apple.com/documentation/objectivec/nsobject-swift.class/attributekeys) instead.
 
 ## See Also
 

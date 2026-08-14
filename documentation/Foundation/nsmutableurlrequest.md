@@ -30,7 +30,7 @@ In Swift, this object bridges to [`NSURLRequest`](nsurlrequest.md) and you use w
 
 Classes that create a network operation based on a request make a deep copy of that request. Thus, changing the request after creating a network operation has no effect on the ongoing operation. For example, if you use [`dataTask(with:completionHandler:)`](urlsession/datatask(with:completionhandler:)-e6xv.md) to create a data task from a request, and then later change the request, the data task continues using the original request.
 
-> ❗ **Important**:  The Swift overlay to the Foundation framework provides the [`URLRequest`](urlrequest.md) structure, which bridges to the [`NSMutableURLRequest`](nsmutableurlrequest.md) class and its immutable superclass, [`NSURLRequest`](nsurlrequest.md). For more information about value types, see [`Working with Foundation Types`](https://developer.apple.com/documentation/Swift/working-with-foundation-types).
+> ❗ **Important**:  The Swift overlay to the Foundation framework provides the [`URLRequest`](urlrequest.md) structure, which bridges to the [`NSMutableURLRequest`](nsmutableurlrequest.md) class and its immutable superclass, [`NSURLRequest`](nsurlrequest.md). For more information about value types, see [`Working with Foundation Types`](https://developer.apple.com/documentation/swift/working-with-foundation-types).
 
 ## Topics
 
@@ -100,18 +100,18 @@ Classes that create a network operation based on a request make a deep copy of t
 ### Inherits From
 - [NSURLRequest](nsurlrequest.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
 - [NSCoding](nscoding.md)
 - [NSCopying](nscopying.md)
 - [NSMutableCopying](nsmutablecopying.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 - [NSSecureCoding](nssecurecoding.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

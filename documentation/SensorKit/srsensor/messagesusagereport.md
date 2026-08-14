@@ -20,7 +20,7 @@ static let messagesUsageReport: SRSensor
 
 The [`sample`](srfetchresult/sample.md) type for this sensor is [`SRMessagesUsageReport`](srmessagesusagereport.md).
 
-You need to provide a reason to record Messages app usage by adding the [`SRSensorUsageMessageUsage`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSSensorKitUsageDetail/SRSensorUsageMessageUsage) dictionary to the [`NSSensorKitUsageDetail`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSSensorKitUsageDetail) key in the information property list.
+You need to provide a reason to record Messages app usage by adding the [`SRSensorUsageMessageUsage`](https://developer.apple.com/documentation/bundleresources/information-property-list/nssensorkitusagedetail/srsensorusagemessageusage) dictionary to the [`NSSensorKitUsageDetail`](https://developer.apple.com/documentation/bundleresources/information-property-list/nssensorkitusagedetail) key in the information property list.
 
 ## See Also
 

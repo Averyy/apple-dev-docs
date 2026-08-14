@@ -22,11 +22,11 @@ func CTRunGetTextMatrix(_ run: CTRun) -> CGAffineTransform
 
 #### Return Value
 
-A [`CGAffineTransform`](https://developer.apple.com/documentation/CoreFoundation/CGAffineTransform) structure.
+A [`CGAffineTransform`](https://developer.apple.com/documentation/corefoundation/cgaffinetransform) structure.
 
 #### Discussion
 
-To properly draw the glyphs in a run, the fields `tx` and `ty` of the [`CGAffineTransform`](https://developer.apple.com/documentation/CoreFoundation/CGAffineTransform) returned by this function should be set to the current text position.
+To properly draw the glyphs in a run, the fields `tx` and `ty` of the [`CGAffineTransform`](https://developer.apple.com/documentation/corefoundation/cgaffinetransform) returned by this function should be set to the current text position.
 
 ## Parameters
 

@@ -21,7 +21,7 @@ init(strings: MLUntypedColumn)
 
 #### Return Value
 
-A new untyped column of doubles; otherwise an invalid column if any element of the given column cannot be converted to [`String`](https://developer.apple.com/documentation/Swift/String).
+A new untyped column of doubles; otherwise an invalid column if any element of the given column cannot be converted to [`String`](https://developer.apple.com/documentation/swift/string).
 
 #### Discussion
 

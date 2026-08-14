@@ -20,7 +20,7 @@ class GKVoiceChatService
 
 #### Overview
 
-Before you can use voice chat, your application must configure an audio session that allows for both play and recording ([`kAudioSessionCategory_PlayAndRecord`](https://developer.apple.com/documentation/AudioToolbox/kAudioSessionCategory_PlayAndRecord)). For more information on audio sessions, see [`Audio Session Programming Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Audio/Conceptual/AudioSessionProgrammingGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40007875).
+Before you can use voice chat, your application must configure an audio session that allows for both play and recording ([`kAudioSessionCategory_PlayAndRecord`](https://developer.apple.com/documentation/audiotoolbox/kaudiosessioncategory_playandrecord)). For more information on audio sessions, see [`Audio Session Programming Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Audio/Conceptual/AudioSessionProgrammingGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40007875).
 
 The voice chat service uses a [`client`](gkvoicechatservice/client.md) implemented by your application to find and connect to other participants. Each participant in the chat is identified by a unique *participant identifier* string. The client provides a participant identifier for the local user and translates other participant identifiers into connections to other users.  The format and mechanism used to translate participant identifiers into network connections is defined by the client.
 
@@ -78,14 +78,14 @@ To use the voice chat service, your application retrieves the default service an
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

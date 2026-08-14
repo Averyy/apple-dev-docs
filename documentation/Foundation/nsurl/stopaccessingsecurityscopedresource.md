@@ -22,7 +22,7 @@ func stopAccessingSecurityScopedResource()
 
 #### Discussion
 
-When you no longer need access to a file or directory pointed to by a security-scoped URL, such as one returned by resolving a security-scoped bookmark, call this method on the URL to relinquish access. You can also use its Core Foundation equivalent, the [`CFURLStopAccessingSecurityScopedResource(_:)`](https://developer.apple.com/documentation/CoreFoundation/CFURLStopAccessingSecurityScopedResource(_:)) function.
+When you no longer need access to a file or directory pointed to by a security-scoped URL, such as one returned by resolving a security-scoped bookmark, call this method on the URL to relinquish access. You can also use its Core Foundation equivalent, the [`CFURLStopAccessingSecurityScopedResource(_:)`](https://developer.apple.com/documentation/corefoundation/cfurlstopaccessingsecurityscopedresource(_:)) function.
 
 You must balance each call to [`startAccessingSecurityScopedResource()`](nsurl/startaccessingsecurityscopedresource().md) for a given security-scoped URL with a call to [`stopAccessingSecurityScopedResource()`](nsurl/stopaccessingsecurityscopedresource().md). When you make the last balanced call to [`stopAccessingSecurityScopedResource()`](nsurl/stopaccessingsecurityscopedresource().md), you immediately lose access to the resource in question.
 

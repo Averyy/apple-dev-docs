@@ -21,7 +21,7 @@ static let selector: UIFontDescriptor.FeatureKey
 
 #### Discussion
 
-The value of this key is an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) object specifying the font feature selector such as common ligature, traditional character shape, or other font feature.
+The value of this key is an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) object specifying the font feature selector such as common ligature, traditional character shape, or other font feature.
 
 ## See Also
 

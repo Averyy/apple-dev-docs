@@ -7,7 +7,7 @@ An atom that defines how to interpret text media data.
 
 #### Overview
 
-The text sample description contains information that defines how to interpret text media data. This sample description is based on the standard sample description header, as described in [`Sample description atom ('stsd')`](sample_description_atom.md).
+The text sample description contains information that defines how to interpret text media data. This sample description is based on the standard sample description header, as described in [`Sample description atom`](sample_description_atom.md).
 
 The data format field in the sample description is always set to `'text'`.
 

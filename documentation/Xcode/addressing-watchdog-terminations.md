@@ -19,12 +19,12 @@ The watchdog terminates apps that block the main thread for a significant time. 
 
 - Synchronous networking
 - Processing large amouts of data, such as large JSON files or 3D models
-- Triggering lightweight migration for a large [`Core Data`](https://developer.apple.com/documentation/CoreData) store synchronously
-- Analysis requests with [`Vision`](https://developer.apple.com/documentation/Vision)
+- Triggering lightweight migration for a large [`Core Data`](https://developer.apple.com/documentation/coredata) store synchronously
+- Analysis requests with [`Vision`](https://developer.apple.com/documentation/vision)
 
 To understand why blocking the main thread is an issue, consider the most common example, loading data into the UI from a synchronous network call. If the main thread is busy with a network request, the system can’t handle UI events, such as multiple scroll events, until after completing the network call. If the network call takes a long time, there’s a significant time from when the user scrolls to when the app responds to the scroll events. This makes the app feel unresponsive.
 
-![A timing diagram for the main thread showing UI scrolling events queued behind a long-running networking operation.](https://docs-assets.developer.apple.com/published/9358acb2a74668e16ec2237d70a571f5/addressing-watchdog-terminations-1%402x.png)
+![A timing diagram for the main thread showing UI scrolling events queued behind a long-running networking operation.](/images/com.apple.Xcode/addressing-watchdog-terminations-1@2x.png)
 
 ##### Interpret the App Responsiveness Watchdog Information
 
@@ -48,7 +48,7 @@ Termination Description: SPRINGBOARD,
 
 When `scene-create` appears in the `Termination Description`, the app didn’t render the first frame of its UI to the screen within the allowed wall clock time. If `scene-update` appears in the `Termination Description` instead of `scene-create`, the app didn’t update its UI quick enough because the main thread is too busy.
 
-> **Note**: The `scene-create` and `scene-update` terminology used in the crash report refers to any content drawn to the device’s screen. This terminology has no relation to [`UIScene`](https://developer.apple.com/documentation/UIKit/UIScene) in a scene-based [`UIKit`](https://developer.apple.com/documentation/UIKit) app.
+> **Note**: The `scene-create` and `scene-update` terminology used in the crash report refers to any content drawn to the device’s screen. This terminology has no relation to [`UIScene`](https://developer.apple.com/documentation/uikit/uiscene) in a scene-based [`UIKit`](https://developer.apple.com/documentation/uikit) app.
 
 The `Elapsed total CPU time` shows how much time the CPU ran for all processes on the system within the wall clock time. This CPU time, as well as the application CPU time, is for the total CPU utilization across CPU cores, which can exceed 100%. For example, if one CPU core is at 100% utilization and a second CPU core is at 20% utilization, the total CPU utalization is 120%.
 
@@ -56,7 +56,7 @@ The `Elapsed application CPU time` shows how much time the app spent running on 
 
 ##### Interpret Background Task Watchdog Information Watchos
 
-In addition to the app responsiveness watchdog, watchOS has a watchdog for background tasks. In this example, an app didn’t complete handling a [`Watch Connectivity`](https://developer.apple.com/documentation/WatchConnectivity) background task within the time allowance:
+In addition to the app responsiveness watchdog, watchOS has a watchdog for background tasks. In this example, an app didn’t complete handling a [`Watch Connectivity`](https://developer.apple.com/documentation/watchconnectivity) background task within the time allowance:
 
 ```other
 Termination Reason: CAROUSEL, WatchConnectivity watchdog transgression. 
@@ -99,11 +99,11 @@ In addition, profile your app’s performance during development to eliminate pr
 
 ##### Identify Hidden Synchronous Networking Code
 
-Synchronous networking that blocks the main thread and leads to a watchdog termination are sometimes hidden behind abstraction layers that mask the danger. The example backtrace in [`Identify the reason the watchdog triggered`](addressing-watchdog-terminations#Identify-the-reason-the-watchdog-triggered.md) shows the app triggered the synchronous download by calling `init(contentsOf:)` with a `https` URL, in frame 7. This API implicitly makes a synchronous network request before returning from the initializer. Even if this initalizer completed quickly and wasn’t in the crash report, it still can contribute to a watchdog termination. Other classes with an initalizer that takes a URL parameter, such as [`XMLParser`](https://developer.apple.com/documentation/Foundation/XMLParser) and [`NSData`](https://developer.apple.com/documentation/Foundation/NSData), behave in the same way.
+Synchronous networking that blocks the main thread and leads to a watchdog termination are sometimes hidden behind abstraction layers that mask the danger. The example backtrace in [`Identify the reason the watchdog triggered`](addressing-watchdog-terminations#Identify-the-reason-the-watchdog-triggered.md) shows the app triggered the synchronous download by calling `init(contentsOf:)` with a `https` URL, in frame 7. This API implicitly makes a synchronous network request before returning from the initializer. Even if this initalizer completed quickly and wasn’t in the crash report, it still can contribute to a watchdog termination. Other classes with an initalizer that takes a URL parameter, such as [`XMLParser`](https://developer.apple.com/documentation/foundation/xmlparser) and [`NSData`](https://developer.apple.com/documentation/foundation/nsdata), behave in the same way.
 
 Other common examples of hidden synchronous networking include the following:
 
-- [`SCNetworkReachability`](https://developer.apple.com/documentation/SystemConfiguration/scnetworkreachability-g7d), the reachability API, operates synchronously by default. Seemingly innocuous functions like [`SCNetworkReachabilityGetFlags(_:_:)`](https://developer.apple.com/documentation/SystemConfiguration/SCNetworkReachabilityGetFlags(_:_:)) can trigger a termination by the watchdog.
+- [`SCNetworkReachability`](https://developer.apple.com/documentation/systemconfiguration/scnetworkreachability-g7d), the reachability API, operates synchronously by default. Seemingly innocuous functions like [`SCNetworkReachabilityGetFlags(_:_:)`](https://developer.apple.com/documentation/systemconfiguration/scnetworkreachabilitygetflags(_:_:)) can trigger a termination by the watchdog.
 - DNS functions provided by BSD, like `gethostbyname(_:)` and `gethostbyaddr(_:_:_:)`, are never safe to call on the main thread. Functions like `getnameinfo(_:_:_:_:_:_:_:)` and `getaddrinfo(_:_:_:_:)` are only safe if you’re working exclusively with IP addresses and not DNS names (that is, you specify `AI_NUMERICHOST` and `NI_NUMERICHOST`, respectively).
 
 Synchronous networking issues depend a great deal on the network environment. If you always test your app in your office, where network connectivity is good, you’ll never see this type of issue. However, once you start deploying your app to users—who run apps in all sorts of network environments—synchronous networking problems become common. In Xcode, you can simulate adverse network conditions to aid testing your app under the conditions your users encounter. See [`Test under adverse device conditions (iOS)`](https://developer.apple.comhttps://help.apple.com/xcode/mac/current/#/dev308429d42).
@@ -112,16 +112,16 @@ Synchronous networking issues depend a great deal on the network environment. If
 
 Move all long-running code not essential to your app’s UI to a background queue. By moving this work to a background queue, the app’s main thread can complete the app’s launch faster and process events quicker. Using a networking example, rather than performing a synchronous network call on the main thread, move it to an asynchronous background queue. By moving this work to a background queue, the main thread can process scroll events as they happen, allowing the app to be more responsive.
 
-![A timing diagram with two threads, the main thread and a dispatch queue thread. The main thread uses the dispatch queue as an asynchronous thread for networking, allowing the main thread to handle scroll events while the network request is in progress. After the networking is complete, the resulting UI update is done on the main thread.](https://docs-assets.developer.apple.com/published/7a42f532e1752e43dece9417341fddc8/addressing-watchdog-terminations-2%402x.png)
+![A timing diagram with two threads, the main thread and a dispatch queue thread. The main thread uses the dispatch queue as an asynchronous thread for networking, allowing the main thread to handle scroll events while the network request is in progress. After the networking is complete, the resulting UI update is done on the main thread.](/images/com.apple.Xcode/addressing-watchdog-terminations-2@2x.png)
 
-If the long-running code is from one of the system frameworks, determine whether the framework provides an alternate approach that moves the work off the main thread. For example, consider loading a complex 3D model in [`RealityKit`](https://developer.apple.com/documentation/RealityKit) using [`loadAsync(contentsOf:withName:)`](https://developer.apple.com/documentation/RealityKit/Entity/loadAsync(contentsOf:withName:)) instead of [`load(contentsOf:withName:)`](https://developer.apple.com/documentation/RealityKit/Entity/load(contentsOf:withName:)), which is synchronous. As a different example, [`Vision`](https://developer.apple.com/documentation/Vision) provides  [`preferBackgroundProcessing`](https://developer.apple.com/documentation/Vision/VNRequest/preferBackgroundProcessing), which is a hint that the system should move processing of analysis requests off the main thread.
+If the long-running code is from one of the system frameworks, determine whether the framework provides an alternate approach that moves the work off the main thread. For example, consider loading a complex 3D model in [`RealityKit`](https://developer.apple.com/documentation/realitykit) using [`loadAsync(contentsOf:withName:)`](https://developer.apple.com/documentation/realitykit/entity/loadasync(contentsof:withname:)) instead of [`load(contentsOf:withName:)`](https://developer.apple.com/documentation/realitykit/entity/load(contentsof:withname:)), which is synchronous. As a different example, [`Vision`](https://developer.apple.com/documentation/vision) provides  [`preferBackgroundProcessing`](https://developer.apple.com/documentation/vision/vnrequest/preferbackgroundprocessing), which is a hint that the system should move processing of analysis requests off the main thread.
 
 If networking code is contributing to your watchdog termination, consider these common solutions:
 
-- Run your networking code asynchronously using [`URLSession`](https://developer.apple.com/documentation/Foundation/URLSession). This is the best solution. Asynchronous networking code has many advantages, including accessing the network safely without having to worry about threads.
-- Instead of using [`SCNetworkReachability`](https://developer.apple.com/documentation/SystemConfiguration/scnetworkreachability-g7d), use [`NWPathMonitor`](https://developer.apple.com/documentation/Network/NWPathMonitor) to receive updates when the network path changes. The system delivers updates on a queue that you pass in when calling [`start(queue:)`](https://developer.apple.com/documentation/Network/NWPathMonitor/start(queue:)), so path updates function safely off the main thread.
+- Run your networking code asynchronously using [`URLSession`](https://developer.apple.com/documentation/foundation/urlsession). This is the best solution. Asynchronous networking code has many advantages, including accessing the network safely without having to worry about threads.
+- Instead of using [`SCNetworkReachability`](https://developer.apple.com/documentation/systemconfiguration/scnetworkreachability-g7d), use [`NWPathMonitor`](https://developer.apple.com/documentation/network/nwpathmonitor) to receive updates when the network path changes. The system delivers updates on a queue that you pass in when calling [`start(queue:)`](https://developer.apple.com/documentation/network/nwpathmonitor/start(queue:)), so path updates function safely off the main thread.
 - Perform synchronous networking on a secondary thread. If it’s prohibitively difficult to run your networking code asynchronously, such as when using a large portable code base that assumes synchronous networking, avoid the watchdog by running the synchronous networking code on a secondary thread.
-- Resolving DNS manually isn’t recommended for most situations. Use [`URLSession`](https://developer.apple.com/documentation/Foundation/URLSession) to have the system handle DNS resolution on your behalf. If it’s prohibitively difficult to switch and you continue to need to DNS addresses manually, use an asynchronous API like `CFHost` or the APIs in `<dns_sd.h>`.
+- Resolving DNS manually isn’t recommended for most situations. Use [`URLSession`](https://developer.apple.com/documentation/foundation/urlsession) to have the system handle DNS resolution on your behalf. If it’s prohibitively difficult to switch and you continue to need to DNS addresses manually, use an asynchronous API like `CFHost` or the APIs in `<dns_sd.h>`.
 
 ## See Also
 

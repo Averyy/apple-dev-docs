@@ -21,7 +21,7 @@ class MPSImageFindKeypoints
 
 #### Overview
 
-This kernel is used to find a list of keypoints whose values are greater than the [`minimumThresholdValue`](mpsimagekeypointrangeinfo/minimumthresholdvalue.md) in [`MPSImageKeypointRangeInfo`](mpsimagekeypointrangeinfo.md). The keypoints are generated for a specified region in the image. The pixel format of the source image must be [`MTLPixelFormat.r8Unorm`](https://developer.apple.com/documentation/Metal/MTLPixelFormat/r8Unorm).
+This kernel is used to find a list of keypoints whose values are greater than the [`minimumThresholdValue`](mpsimagekeypointrangeinfo/minimumthresholdvalue.md) in [`MPSImageKeypointRangeInfo`](mpsimagekeypointrangeinfo.md). The keypoints are generated for a specified region in the image. The pixel format of the source image must be [`MTLPixelFormat.r8Unorm`](https://developer.apple.com/documentation/metal/mtlpixelformat/r8unorm).
 
 ## Topics
 
@@ -38,15 +38,15 @@ This kernel is used to find a list of keypoints whose values are greater than th
 ### Inherits From
 - [MPSKernel](mpskernel.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCoding](../Foundation/NSCoding.md)
-- [NSCopying](../Foundation/NSCopying.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [NSSecureCoding](../Foundation/NSSecureCoding.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCoding](../foundation/nscoding.md)
+- [NSCopying](../foundation/nscopying.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSSecureCoding](../foundation/nssecurecoding.md)
 
 ## See Also
 

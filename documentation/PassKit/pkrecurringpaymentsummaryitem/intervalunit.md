@@ -21,17 +21,17 @@ var intervalUnit: NSCalendar.Unit { get set }
 
 #### Discussion
 
-The default value for the interval unit is [`month`](https://developer.apple.com/documentation/Foundation/NSCalendar/Unit/month).
+The default value for the interval unit is [`month`](https://developer.apple.com/documentation/foundation/nscalendar/unit/month).
 
-The supported [`NSCalendar.Unit`](https://developer.apple.com/documentation/Foundation/NSCalendar/Unit) interval units are:
+The supported [`NSCalendar.Unit`](https://developer.apple.com/documentation/foundation/nscalendar/unit) interval units are:
 
-- [`minute`](https://developer.apple.com/documentation/CoreFoundation/CFCalendarUnit/minute)
-- [`hour`](https://developer.apple.com/documentation/CoreFoundation/CFCalendarUnit/hour)
-- [`day`](https://developer.apple.com/documentation/CoreFoundation/CFCalendarUnit/day)
-- [`month`](https://developer.apple.com/documentation/CoreFoundation/CFCalendarUnit/month)
-- [`year`](https://developer.apple.com/documentation/CoreFoundation/CFCalendarUnit/year)
+- [`minute`](https://developer.apple.com/documentation/corefoundation/cfcalendarunit/minute)
+- [`hour`](https://developer.apple.com/documentation/corefoundation/cfcalendarunit/hour)
+- [`day`](https://developer.apple.com/documentation/corefoundation/cfcalendarunit/day)
+- [`month`](https://developer.apple.com/documentation/corefoundation/cfcalendarunit/month)
+- [`year`](https://developer.apple.com/documentation/corefoundation/cfcalendarunit/year)
 
-To set an interval unit based on a week, set [`intervalUnit`](pkrecurringpaymentsummaryitem/intervalunit.md) to [`day`](https://developer.apple.com/documentation/CoreFoundation/CFCalendarUnit/day), and set [`intervalCount`](pkrecurringpaymentsummaryitem/intervalcount.md) to a multiple of the number of days per week. To find the number of days for a week in the current calendar, call `NSCalendar.current.maximumRange(of: .weekday)!.count)`.
+To set an interval unit based on a week, set [`intervalUnit`](pkrecurringpaymentsummaryitem/intervalunit.md) to [`day`](https://developer.apple.com/documentation/corefoundation/cfcalendarunit/day), and set [`intervalCount`](pkrecurringpaymentsummaryitem/intervalcount.md) to a multiple of the number of days per week. To find the number of days for a week in the current calendar, call `NSCalendar.current.maximumRange(of: .weekday)!.count)`.
 
 For example, the code below sets a payment that occurs every two weeks.
 

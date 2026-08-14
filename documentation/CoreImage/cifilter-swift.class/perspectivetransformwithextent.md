@@ -30,11 +30,11 @@ This method applies the perspective transform with extent filter to an image. Th
 The perspective transform with extent filter uses the following properties:
 
 - **`inputImage`**: An image with the type [`CIImage`](ciimage.md).
-- **`topLeft`**: A [`CGPoint`](https://developer.apple.com/documentation/CoreFoundation/CGPoint) in the input image mapped to the top-left corner of the output image.
-- **`topRight`**: A [`CGPoint`](https://developer.apple.com/documentation/CoreFoundation/CGPoint) in the input image mapped to the top-right corner of the output image.
-- **`bottomLeft`**: A [`CGPoint`](https://developer.apple.com/documentation/CoreFoundation/CGPoint) in the input image mapped to the bottom-left corner of the output image.
-- **`bottomRight`**: A [`CGPoint`](https://developer.apple.com/documentation/CoreFoundation/CGPoint) in the input image mapped to the bottom-right corner of the output image.
-- **`extent`**: A [`CGRect`](https://developer.apple.com/documentation/CoreFoundation/CGRect) representing the dimensions of the output image.
+- **`topLeft`**: A [`CGPoint`](https://developer.apple.com/documentation/corefoundation/cgpoint) in the input image mapped to the top-left corner of the output image.
+- **`topRight`**: A [`CGPoint`](https://developer.apple.com/documentation/corefoundation/cgpoint) in the input image mapped to the top-right corner of the output image.
+- **`bottomLeft`**: A [`CGPoint`](https://developer.apple.com/documentation/corefoundation/cgpoint) in the input image mapped to the bottom-left corner of the output image.
+- **`bottomRight`**: A [`CGPoint`](https://developer.apple.com/documentation/corefoundation/cgpoint) in the input image mapped to the bottom-right corner of the output image.
+- **`extent`**: A [`CGRect`](https://developer.apple.com/documentation/corefoundation/cgrect) representing the dimensions of the output image.
 
 The following code creates a filter that changes the perspective of the input image:
 
@@ -51,7 +51,7 @@ func perspectiveTransformWithExtent(inputImage: CIImage) -> CIImage {
 }
 ```
 
-![Two photographs of a large building on the corner of an intersection. The building has small windows and is made of a brick structure. The photo on the left has no modifications to size or color. In the photo on the right, a perspective transform is applied, resulting in it appearing as though the photograph was taken from a different angle.](https://docs-assets.developer.apple.com/published/73877d8ac27ad7e830e15dd2ce5deaa9/media-3582226%402x.png)
+![Two photographs of a large building on the corner of an intersection. The building has small windows and is made of a brick structure. The photo on the left has no modifications to size or color. In the photo on the right, a perspective transform is applied, resulting in it appearing as though the photograph was taken from a different angle.](/images/com.apple.coreimage/media-3582226@2x.png)
 
 ## See Also
 

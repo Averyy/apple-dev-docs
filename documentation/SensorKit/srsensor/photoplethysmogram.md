@@ -20,7 +20,7 @@ static let photoplethysmogram: SRSensor
 
 The sample for this sensor is an array of [`SRPhotoplethysmogramSample`](srphotoplethysmogramsample.md) objects.
 
-You need to provide a reason to record photoplethysmogram (PPG) data by adding the `SRSensorUsagePPG` dictionary to the [`NSSensorKitUsageDetail`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSSensorKitUsageDetail) key in the information property list.
+You need to provide a reason to record photoplethysmogram (PPG) data by adding the `SRSensorUsagePPG` dictionary to the [`NSSensorKitUsageDetail`](https://developer.apple.com/documentation/bundleresources/information-property-list/nssensorkitusagedetail) key in the information property list.
 
 You also need the `ppg` key added to the `com.apple.developer.sensorkit.reader.allow` entitlement, as in:
 

@@ -31,7 +31,7 @@ The equirectangular image, also known as a *latitude-longitude image*, contains 
 
 To preserve all details equirectangular images require a `2:1` aspect ratio.
 
-![Equirectangular image illustrating axis orientation mapping to a](https://docs-assets.developer.apple.com/published/21187861e4f111a4d88d24cbe7557285/textureresource-cube-equirectangular-orientation.jpg)
+![Equirectangular image illustrating axis orientation mapping to a](/images/com.apple.RealityKit/textureresource-cube-equirectangular-orientation.jpg)
 
 Use the resulting texture to create an [`EnvironmentResource`](environmentresource.md), or assign it to a material in Reality Composer Pro that requires a cube texture type.
 

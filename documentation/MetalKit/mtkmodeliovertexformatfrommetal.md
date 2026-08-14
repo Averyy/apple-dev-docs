@@ -25,7 +25,7 @@ A Model I/O vertex format value.
 
 #### Discussion
 
-This function returns [`MDLVertexFormat.invalid`](https://developer.apple.com/documentation/ModelIO/MDLVertexFormat/invalid) if no matching [`MDLVertexFormat`](https://developer.apple.com/documentation/ModelIO/MDLVertexFormat) exists.
+This function returns [`MDLVertexFormat.invalid`](https://developer.apple.com/documentation/modelio/mdlvertexformat/invalid) if no matching [`MDLVertexFormat`](https://developer.apple.com/documentation/modelio/mdlvertexformat) exists.
 
 ## Parameters
 

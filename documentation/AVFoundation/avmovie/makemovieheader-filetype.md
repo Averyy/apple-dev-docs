@@ -21,7 +21,7 @@ func makeMovieHeader(fileType: AVFileType) throws -> Data
 
 #### Return Value
 
-An [`NSData`](https://developer.apple.com/documentation/Foundation/NSData) object containing the movie header.
+An [`NSData`](https://developer.apple.com/documentation/foundation/nsdata) object containing the movie header.
 
 #### Discussion
 

@@ -35,7 +35,7 @@ func match(_ match: GKMatch,
 }
 ```
 
-To reinvite players whose match state becomes disconnected in a two-player match, implement the [`match(_:shouldReinviteDisconnectedPlayer:)`](gkmatchdelegate/match(_:shouldreinvitedisconnectedplayer:).md) delegate method to return [`true`](https://developer.apple.com/documentation/Swift/true).
+To reinvite players whose match state becomes disconnected in a two-player match, implement the [`match(_:shouldReinviteDisconnectedPlayer:)`](gkmatchdelegate/match(_:shouldreinvitedisconnectedplayer:).md) delegate method to return [`true`](https://developer.apple.com/documentation/swift/true).
 
 ##### Send Data to Players
 

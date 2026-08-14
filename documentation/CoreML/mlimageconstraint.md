@@ -22,7 +22,7 @@ class MLImageConstraint
 
 #### Overview
 
-In CoreML, an *image* is a collection of pixels represented by [`CVPixelBuffer`](https://developer.apple.com/documentation/CoreVideo/cvpixelbuffer-q2e) (Swift) or [`CVPixelBuffer`](https://developer.apple.com/documentation/CoreVideo/CVPixelBuffer) (Objective-C). An *image feature* is a model input or output that accepts or produces, respectively, an image bundled in an [`MLFeatureValue`](mlfeaturevalue.md). `MLImageConstraint` defines the image feature’s limitations for the images within an `MLFeatureValue`.
+In CoreML, an *image* is a collection of pixels represented by [`CVPixelBuffer`](https://developer.apple.com/documentation/corevideo/cvpixelbuffer-q2e) (Swift) or [`CVPixelBuffer`](https://developer.apple.com/documentation/corevideo/cvpixelbuffer) (Objective-C). An *image feature* is a model input or output that accepts or produces, respectively, an image bundled in an [`MLFeatureValue`](mlfeaturevalue.md). `MLImageConstraint` defines the image feature’s limitations for the images within an `MLFeatureValue`.
 
 If a model has an image feature for an input or output, the model author uses an *image feature description* by creating an [`MLFeatureDescription`](mlfeaturedescription.md). The feature description for an image input or output has:
 
@@ -51,16 +51,16 @@ Image features that support additional image sizes provide a range of sizes, or 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCoding](../Foundation/NSCoding.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [NSSecureCoding](../Foundation/NSSecureCoding.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCoding](../foundation/nscoding.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSSecureCoding](../foundation/nssecurecoding.md)
 
 ## See Also
 

@@ -22,7 +22,7 @@ monsterSprite.color = [SKColor redColor];
 monsterSprite.colorBlendFactor = 0.5;
 ```
 
-![Colorizing adjusts the color of the texture](https://docs-assets.developer.apple.com/published/a0926f37fe64c298d5bc6a5dd0c6ab48/media-2983062%402x.png)
+![Colorizing adjusts the color of the texture](/images/com.apple.spritekit/media-2983062@2x.png)
 
 You can also animate the color and color blend factors using actions. The following code shows how to briefly tint the sprite and then return it to normal.
 

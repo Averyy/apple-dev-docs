@@ -18,7 +18,7 @@ class func token() async throws -> String
 
 #### Discussion
 
-Your app has 30 seconds to call this method after the system generates the token before the system invalidates it. The framework maps the token to the ICCID associated with the original [`MFMessageComposeViewController`](https://developer.apple.com/documentation/MessageUI/MFMessageComposeViewController) instance used for UPI device validation.
+Your app has 30 seconds to call this method after the system generates the token before the system invalidates it. The framework maps the token to the ICCID associated with the original [`MFMessageComposeViewController`](https://developer.apple.com/documentation/messageui/mfmessagecomposeviewcontroller) instance used for UPI device validation.
 
 ## Parameters
 

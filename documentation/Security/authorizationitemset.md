@@ -35,7 +35,7 @@ Because it is actually a set, the list of items should not contain any duplicate
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../Swift/BitwiseCopyable.md)
+- [BitwiseCopyable](../swift/bitwisecopyable.md)
 
 
 ---

@@ -22,7 +22,7 @@ func CVYCbCrMatrixGetStringForIntegerCodePoint(_ yCbCrMatrixCodePoint: Int32) ->
 
 #### Return Value
 
-The YCbCr matrix string corresponding to the code point (See [`Image Buffer YCbCr Matrix Constants`](image-buffer-ycbcr-matrix-constants.md) for possible values.), or [`nil`](https://developer.apple.com/documentation/ObjectiveC/nil-227m0) if the code point is `2` (unknown) or the system doesn’t recognize it.
+The YCbCr matrix string corresponding to the code point (See [`Image Buffer YCbCr Matrix Constants`](image-buffer-ycbcr-matrix-constants.md) for possible values.), or [`nil`](https://developer.apple.com/documentation/objectivec/nil-227m0) if the code point is `2` (unknown) or the system doesn’t recognize it.
 
 ## Parameters
 

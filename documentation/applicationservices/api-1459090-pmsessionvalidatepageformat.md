@@ -32,7 +32,7 @@ After you call any function that makes changes to a page format object (such as 
 
 - `printSession`: The printing session for the specified page format object.
 - `pageFormat`: The page format object to validate.
-- `result`: A pointer to your Boolean variable. On return,   if the function set the page format object to default values; otherwise,  .
+- `result`: A pointer to your Boolean variable. On return, `true` if the function set the page format object to default values; otherwise, `false`.
 
 ## See Also
 

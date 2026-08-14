@@ -42,7 +42,7 @@ VStack(spacing: 20) {
 }
 ```
 
-![A screenshot showing two rows of four symbols each. Both rows contain](https://docs-assets.developer.apple.com/published/2494a548c163c3f2b07cf16fdbad8fd1/SymbolVariants-rectangle-1%402x.png)
+![A screenshot showing two rows of four symbols each. Both rows contain](/images/com.apple.SwiftUI/SymbolVariants-rectangle-1@2x.png)
 
 ## See Also
 

@@ -8,7 +8,7 @@ Improve the performance and appearance of video in your website in Safari.
 
 When adding video content to your website you have several playback and optimization options which can help to improve the playback controls and performance of video for the user:
 
-- For video streaming, use HTTP Live Streaming. See [`HTTP Live Streaming`](https://developer.apple.com/documentation/HTTP-Live-Streaming).
+- For video streaming, use HTTP Live Streaming. See [`HTTP Live Streaming`](https://developer.apple.com/documentation/http-live-streaming).
 - For static video files, use H.264-encoded MP4 files.
 - For more customization and control over the loading process, use Media Source Extensions (MSE). See [`Advanced Media for the Web`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2014/504/).
 
@@ -52,11 +52,11 @@ First, test on your machine’s built-in or primary monitor, and ensure that you
 
 Then, open the Quartz Debug app. Quartz Debug is part of the Graphics Tools package for Xcode, available from the Mac Developer Portal. In Quartz Debug, choose Tools > Show Detached Regions.
 
-![Enable Show Detached Regions in the Quartz Debug Tools menu.](https://docs-assets.developer.apple.com/published/c67a5f5a5242d14fde82a4b15043e21c/media-3030255%402x.png)
+![Enable Show Detached Regions in the Quartz Debug Tools menu.](/images/com.apple.webkit/media-3030255@2x.png)
 
 This tool places a color overlay on the desktop. Red represents normal power usage (where everything is composited), and no overlay represents low-power usage for video. If the full-screen video display is using low-power mode, the red color overlay disappears.
 
-![A red overlay appears over video content that is not using low-power mode.](https://docs-assets.developer.apple.com/published/fafe099846375284211076ba22a3ed0e/media-3030260%402x.png)
+![A red overlay appears over video content that is not using low-power mode.](/images/com.apple.webkit/media-3030260@2x.png)
 
 > **Note**:  Use Web Inspector to adjust CSS properties in the browser to see which changes enable low-power mode. Check to see if there are sub-layers attached to the displayed element that contains your video. If there are, adjust your stylesheets with these changes so that there are no sub-layers, then low-power mode can take effect.
 

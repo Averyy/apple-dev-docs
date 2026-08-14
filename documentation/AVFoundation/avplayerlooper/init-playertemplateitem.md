@@ -25,7 +25,7 @@ An new instance of `AVPlayerLooper`.
 
 #### Discussion
 
-Creating an instance of this class using this method is equivalent to calling [`init(player:templateItem:timeRange:)`](avplayerlooper/init(player:templateitem:timerange:).md) and passing a value of [`invalid`](https://developer.apple.com/documentation/CoreMedia/CMTimeRange/invalid) for the `timeRange` parameter.
+Creating an instance of this class using this method is equivalent to calling [`init(player:templateItem:timeRange:)`](avplayerlooper/init(player:templateitem:timerange:).md) and passing a value of [`invalid`](https://developer.apple.com/documentation/coremedia/cmtimerange/invalid) for the `timeRange` parameter.
 
 ## Parameters
 

@@ -19,7 +19,7 @@ static let MPMoviePlayerScalingModeDidChange: NSNotification.Name
 
 #### Discussion
 
-Scaling mode can change programmatically or by user interaction. To set or retrieve the scaling mode of a movie player, access its [`scalingMode`](https://developer.apple.com/documentation/MediaPlayer/MPMoviePlayerController/scalingMode) property. The movie player whose state has changed is available as the object associated with the notification.
+Scaling mode can change programmatically or by user interaction. To set or retrieve the scaling mode of a movie player, access its [`scalingMode`](https://developer.apple.com/documentation/mediaplayer/mpmovieplayercontroller/scalingmode) property. The movie player whose state has changed is available as the object associated with the notification.
 
 ## See Also
 

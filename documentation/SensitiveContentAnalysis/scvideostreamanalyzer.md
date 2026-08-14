@@ -26,7 +26,7 @@ Use this class to detect sensitive content in a video stream, such as on a confe
 
 Create an instance of this class for each video stream in the call.
 
-To begin analyzing the stream, pass it to either [`beginAnalysis(of:)`](scvideostreamanalyzer/beginanalysis(of:)-78qm.md) ([`AVCaptureDeviceInput`](https://developer.apple.com/documentation/AVFoundation/AVCaptureDeviceInput)) or [`beginAnalysis(of:)`](scvideostreamanalyzer/beginanalysis(of:)-9ehkx.md) ([`VTDecompressionSession`](https://developer.apple.com/documentation/VideoToolbox/VTDecompressionSession)), depending on your video playback implementation.
+To begin analyzing the stream, pass it to either [`beginAnalysis(of:)`](scvideostreamanalyzer/beginanalysis(of:)-78qm.md) ([`AVCaptureDeviceInput`](https://developer.apple.com/documentation/avfoundation/avcapturedeviceinput)) or [`beginAnalysis(of:)`](scvideostreamanalyzer/beginanalysis(of:)-9ehkx.md) ([`VTDecompressionSession`](https://developer.apple.com/documentation/videotoolbox/vtdecompressionsession)), depending on your video playback implementation.
 
 > ❗ **Important**:  This class works only when the Communication Safety parental control in Screen Time is enabled, or when the Sensitive Content Warnings setting is turned on. The initializers of this class throw an error if both settings are off.
 
@@ -46,7 +46,7 @@ In the event of an error during analysis, the handler receives an error object t
 
 ##### Add the App Entitlement
 
-To use this class, the system requires the [`com.apple.developer.sensitivecontentanalysis.client`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.sensitivecontentanalysis.client) entitlement in your app’s code signature. Calls to the framework fail to return positive results without it. You can add this entitlement to your app by enabling the Sensitive Content Analysis capability in Xcode; see [`Adding capabilities to your app`](https://developer.apple.com/documentation/Xcode/adding-capabilities-to-your-app).
+To use this class, the system requires the [`com.apple.developer.sensitivecontentanalysis.client`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.sensitivecontentanalysis.client) entitlement in your app’s code signature. Calls to the framework fail to return positive results without it. You can add this entitlement to your app by enabling the Sensitive Content Analysis capability in Xcode; see [`Adding capabilities to your app`](https://developer.apple.com/documentation/xcode/adding-capabilities-to-your-app).
 
 For more information, see [`Detecting sensitive content in media and providing intervention options`](detecting-nudity-in-media-and-providing-intervention-options.md).
 
@@ -77,14 +77,14 @@ For more information, see [`Detecting sensitive content in media and providing i
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 
 ---

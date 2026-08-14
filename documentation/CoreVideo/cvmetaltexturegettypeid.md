@@ -26,7 +26,7 @@ The Core Foundation type identifier for the `CVMetalTextureRef` type.
 ## See Also
 
 - [Metal Programming Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Miscellaneous/Conceptual/MetalProgrammingGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40014221)
-- [Metal](../Metal/Metal.md)
+- [Metal](../metal/metal.md)
   Render advanced 3D graphics and compute data in parallel with graphics processors.
 - [func CVMetalTextureGetTexture(CVMetalTexture) -> (any MTLTexture)?](cvmetaltexturegettexture(_:).md)
   Returns the Metal texture object for the image buffer.

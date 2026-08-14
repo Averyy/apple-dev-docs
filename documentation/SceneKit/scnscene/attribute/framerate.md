@@ -22,7 +22,7 @@ static let frameRate: SCNScene.Attribute
 
 #### Discussion
 
-This value (in an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) object) may be present in scenes loaded from scene files produced using external tools, but has no effect on SceneKit’s rendering of the scene.
+This value (in an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) object) may be present in scenes loaded from scene files produced using external tools, but has no effect on SceneKit’s rendering of the scene.
 
 ## See Also
 

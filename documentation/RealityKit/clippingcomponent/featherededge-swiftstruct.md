@@ -43,7 +43,7 @@ Feathering is defined separately for positive and negative edges of each axis, p
 ## Relationships
 
 ### Conforms To
-- [Equatable](../Swift/Equatable.md)
+- [Equatable](../swift/equatable.md)
 
 ## See Also
 

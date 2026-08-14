@@ -20,7 +20,7 @@ var isUserInteractionEnabled: Bool { get set }
 
 #### Discussion
 
-This property is inherited from the [`UIView`](uiview.md) parent class. This class changes the default value of this property to [`false`](https://developer.apple.com/documentation/Swift/false).
+This property is inherited from the [`UIView`](uiview.md) parent class. This class changes the default value of this property to [`false`](https://developer.apple.com/documentation/swift/false).
 
 ## See Also
 

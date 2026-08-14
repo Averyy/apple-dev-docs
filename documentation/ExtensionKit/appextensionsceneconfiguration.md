@@ -23,7 +23,7 @@ An object you use to configure an app extension that provides a custom UI.
 
 #### Overview
 
-Use this type to provide the configuration details for an [`AppExtension`](https://developer.apple.com/documentation/ExtensionFoundation/AppExtension) type when the corresponding app extension provides a custom UI.
+Use this type to provide the configuration details for an [`AppExtension`](https://developer.apple.com/documentation/extensionfoundation/appextension) type when the corresponding app extension provides a custom UI.
 
 ## Topics
 
@@ -39,9 +39,9 @@ Use this type to provide the configuration details for an [`AppExtension`](https
 ## Relationships
 
 ### Conforms To
-- [AppExtensionConfiguration](../ExtensionFoundation/AppExtensionConfiguration.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [AppExtensionConfiguration](../extensionfoundation/appextensionconfiguration.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 
 ---

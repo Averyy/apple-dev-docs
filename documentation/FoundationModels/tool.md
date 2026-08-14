@@ -56,7 +56,7 @@ struct FindContacts: Tool {
 }
 ```
 
-Tools must conform to [`Sendable`](https://developer.apple.com/documentation/Swift/Sendable) so the framework can run them concurrently. If the model needs to pass the output of one tool as the input to another, it executes back-to-back tool calls.
+Tools must conform to [`Sendable`](https://developer.apple.com/documentation/swift/sendable) so the framework can run them concurrently. If the model needs to pass the output of one tool as the input to another, it executes back-to-back tool calls.
 
 You control the life cycle of your tool, so you can track the state of it between calls to the model. For example, you might store a list of database records that you don’t want to reuse between tool calls.
 
@@ -85,8 +85,8 @@ Prompting the model with tools contributes to the available context window size.
 ## Relationships
 
 ### Inherits From
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

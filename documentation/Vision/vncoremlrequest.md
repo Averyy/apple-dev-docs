@@ -21,10 +21,10 @@ class VNCoreMLRequest
 
 #### Overview
 
-The results array of a Core ML-based image analysis request contains a different observation type, depending on the kind of [`MLModel`](https://developer.apple.com/documentation/CoreML/MLModel) object you use:
+The results array of a Core ML-based image analysis request contains a different observation type, depending on the kind of [`MLModel`](https://developer.apple.com/documentation/coreml/mlmodel) object you use:
 
-- If the model predicts a single feature, the model’s [`modelDescription`](https://developer.apple.com/documentation/CoreML/MLModel/modelDescription) object has a non-`nil` value for [`predictedFeatureName`](https://developer.apple.com/documentation/CoreML/MLModelDescription/predictedFeatureName) and Vision treats the model as a classifier. The results are [`VNClassificationObservation`](vnclassificationobservation.md) objects.
-- If the model’s outputs include at least one output with a feature type of [`MLFeatureType.image`](https://developer.apple.com/documentation/CoreML/MLFeatureType/image), Vision treats that model as an image-to-image model. The results are [`VNPixelBufferObservation`](vnpixelbufferobservation.md) objects.
+- If the model predicts a single feature, the model’s [`modelDescription`](https://developer.apple.com/documentation/coreml/mlmodel/modeldescription) object has a non-`nil` value for [`predictedFeatureName`](https://developer.apple.com/documentation/coreml/mlmodeldescription/predictedfeaturename) and Vision treats the model as a classifier. The results are [`VNClassificationObservation`](vnclassificationobservation.md) objects.
+- If the model’s outputs include at least one output with a feature type of [`MLFeatureType.image`](https://developer.apple.com/documentation/coreml/mlfeaturetype/image), Vision treats that model as an image-to-image model. The results are [`VNPixelBufferObservation`](vnpixelbufferobservation.md) objects.
 - Otherwise, Vision treats the model as a general predictor model. The results are [`VNCoreMLFeatureValueObservation`](vncoremlfeaturevalueobservation.md) objects.
 
 > **Note**:  Vision forwards all [`confidence`](vnobservation/confidence.md) values from Core ML models as-is and doesn’t normalize them to `[0, 1]`.
@@ -54,17 +54,17 @@ The results array of a Core ML-based image analysis request contains a different
 ### Inherits From
 - [VNImageBasedRequest](vnimagebasedrequest.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCopying](../Foundation/NSCopying.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCopying](../foundation/nscopying.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 
-- [Classifying Images with Vision and Core ML](../CoreML/classifying-images-with-vision-and-core-ml.md)
+- [Classifying Images with Vision and Core ML](../coreml/classifying-images-with-vision-and-core-ml.md)
   Crop and scale photos using the Vision framework and classify them with a Core ML model.
 - [Training a Create ML Model to Classify Flowers](training-a-create-ml-model-to-classify-flowers.md)
   Train a flower classifier using Create ML in Swift Playgrounds, and apply the resulting model to real-time image classification using Vision.

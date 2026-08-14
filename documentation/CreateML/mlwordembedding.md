@@ -16,7 +16,7 @@ struct MLWordEmbedding
 
 #### Overview
 
-Use an [`MLWordEmbedding`](mlwordembedding.md) to configure and save a word embedding to a file, which you then add to your project in Xcode. Your project uses that word embedding file at runtime to create an [`NLEmbedding`](https://developer.apple.com/documentation/NaturalLanguage/NLEmbedding) instance, which finds similar strings based on the proximity of their vectors.
+Use an [`MLWordEmbedding`](mlwordembedding.md) to configure and save a word embedding to a file, which you then add to your project in Xcode. Your project uses that word embedding file at runtime to create an [`NLEmbedding`](https://developer.apple.com/documentation/naturallanguage/nlembedding) instance, which finds similar strings based on the proximity of their vectors.
 
 You configure a word embedding with a dictionary, keyed by strings which make up the *vocabulary* of the word embedding. The value for each string is an array of doubles, which represents a vector. The length of the arrays is arbitrary but all arrays in a word embedding must be the same length. The length of the arrays determine the number of dimensions in the vector space. For example, the following listing creates a word embedding with four dimensions and a vocabulary of two strings.
 
@@ -49,7 +49,7 @@ A word embedding file can efficiently store many strings and their vectors.
   Predicts neighbors.
 - [func distance(between: String, and: String, distanceType: NLDistanceType) -> Double](mlwordembedding/distance(between:and:distancetype:).md)
   Calculates the distance between two strings in the vocabulary space.
-- [enum NLDistanceType](../NaturalLanguage/NLDistanceType.md)
+- [enum NLDistanceType](../naturallanguage/nldistancetype.md)
   The means of calculating a distance between two locations in a text embedding.
 - [func contains(String) -> Bool](mlwordembedding/contains(_:).md)
   Returns a Boolean value indicating whether the vocabulary contains the given string.
@@ -81,11 +81,11 @@ A word embedding file can efficiently store many strings and their vectors.
 ## Relationships
 
 ### Conforms To
-- [Copyable](../Swift/Copyable.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomPlaygroundDisplayConvertible](../Swift/CustomPlaygroundDisplayConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Escapable](../Swift/Escapable.md)
+- [Copyable](../swift/copyable.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomPlaygroundDisplayConvertible](../swift/customplaygrounddisplayconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Escapable](../swift/escapable.md)
 
 ## See Also
 

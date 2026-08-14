@@ -23,7 +23,7 @@ static let gameChat: AVAudioSession.Mode
 
 This mode is valid only with the [`playAndRecord`](avaudiosession/category-swift.struct/playandrecord.md) audio session category.
 
-Don’t set this mode directly. If you need similar behavior and aren’t using a [`GKVoiceChat`](https://developer.apple.com/documentation/GameKit/GKVoiceChat) object, use [`voiceChat`](avaudiosession/mode-swift.struct/voicechat.md) or [`videoChat`](avaudiosession/mode-swift.struct/videochat.md) instead.
+Don’t set this mode directly. If you need similar behavior and aren’t using a [`GKVoiceChat`](https://developer.apple.com/documentation/gamekit/gkvoicechat) object, use [`voiceChat`](avaudiosession/mode-swift.struct/voicechat.md) or [`videoChat`](avaudiosession/mode-swift.struct/videochat.md) instead.
 
 ## See Also
 

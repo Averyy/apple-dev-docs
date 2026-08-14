@@ -35,7 +35,7 @@ For more information about customizing the layout dynamically using a delegate, 
 
 The flow layout supports custom header and footer views for each section, displaying them as supplementary views in the layout. [`Figure 1`](nscollectionviewflowlayout#1965629.md) shows how header and footer views are presented in your layout. The header view appears above the items in a section and the footer view appears below those items.
 
-![None](https://docs-assets.developer.apple.com/published/a62776fd8038549a225bc69c1df45a04/media-1965629%402x.png)
+![None](/images/com.apple.appkit/media-1965629@2x.png)
 
 The size of the header and footer views is configurable using the [`headerReferenceSize`](nscollectionviewflowlayout/headerreferencesize.md) and [`footerReferenceSize`](nscollectionviewflowlayout/footerreferencesize.md) properties of this class or using the delegate object. For a vertically scrolling flow layout, the header and footer views span the width of the collection view and the height is based on the values you specify. For a horizontal layout, the footers span the height of the collection view and the width is configurable.
 
@@ -52,13 +52,13 @@ You configure the contents of your header and footer views in the same way you c
 
 The flow layout builds its grid dynamically, using the item size and spacing information to place items sequentially into rows (for a vertically scrolling layout) or columns (for a horizontally scrolling layout). The number of items displayed in each row or column is determined by the collection view’s size and the size of the items in that row. When items have a uniform size, the number of items in each row is the same, but when items are different sizes, some rows may contain more or fewer items. [`Figure 2`](nscollectionviewflowlayout#1965630.md) illustrates how the flow layout places items in a row until there is no more space and then begins a new row and continues the layout process.
 
-![None](https://docs-assets.developer.apple.com/published/58a0ee07f5b8a63d901639753d08e975/media-1965630%402x.png)
+![None](/images/com.apple.appkit/media-1965630@2x.png)
 
 The flow layout follows a specific set of steps to determine the size of each item. Whenever possible, the flow layout uses previously calculated information. When that information is not available, it falls back on other techniques to retrieve the size of the item. Specifically, the flow layout takes the following steps, stopping when it acquires a valid item size:
 
 1. Get the size of the item from the already computed layout attributes.
 2. Call the [`collectionView(_:layout:sizeForItemAt:)`](nscollectionviewdelegateflowlayout/collectionview(_:layout:sizeforitemat:).md) method of the delegate to get the item size.
-3. Use the [`estimatedItemSize`](nscollectionviewflowlayout/estimateditemsize.md) property, if it is not set to [`NSZeroSize`](https://developer.apple.com/documentation/Foundation/NSZeroSize).
+3. Use the [`estimatedItemSize`](nscollectionviewflowlayout/estimateditemsize.md) property, if it is not set to [`NSZeroSize`](https://developer.apple.com/documentation/foundation/nszerosize).
 4. Use the [`itemSize`](nscollectionviewflowlayout/itemsize.md) property to get the size.
 
 Individual spacing between items and between different lines of items is controlled by the properties of this class and the delegate. For line spacing, the largest item in the line defines the line’s height and thereby controls the spacing between that line and other lines. The minimum inter-item spacing controls only how many items are placed on the line, and does not set the spacing between items.
@@ -147,19 +147,19 @@ For more information about defining custom layout attributes, see [`NSCollection
 ### Inherits From
 - [NSCollectionViewLayout](nscollectionviewlayout.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCoding](../Foundation/NSCoding.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCoding](../foundation/nscoding.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 
-- [Implementing modern collection views](../UIKit/implementing-modern-collection-views.md)
+- [Implementing modern collection views](../uikit/implementing-modern-collection-views.md)
   Bring compositional layouts to your app and simplify updating your user interface with diffable data sources.
 - [protocol NSCollectionViewDelegateFlowLayout](nscollectionviewdelegateflowlayout.md)
   A set of methods that a delegate implements to provide layout information to a flow layout object in a collection view.

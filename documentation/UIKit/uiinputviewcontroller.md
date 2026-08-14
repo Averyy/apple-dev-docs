@@ -30,7 +30,7 @@ To create a custom keyboard, first subclass the [`UIInputViewController`](uiinpu
 
 A custom keyboard can respond to user input events in the following ways:
 
-- Add text in the form of an unattributed [`NSString`](https://developer.apple.com/documentation/Foundation/NSString) object at the insertion point in the current text input object, by calling the [`insertText(_:)`](uikeyinput/inserttext(_:).md) method on the [`textDocumentProxy`](uiinputviewcontroller/textdocumentproxy.md) property. This property provides that method through its conformance to the [`UIKeyInput`](uikeyinput.md) protocol
+- Add text in the form of an unattributed [`NSString`](https://developer.apple.com/documentation/foundation/nsstring) object at the insertion point in the current text input object, by calling the [`insertText(_:)`](uikeyinput/inserttext(_:).md) method on the [`textDocumentProxy`](uiinputviewcontroller/textdocumentproxy.md) property. This property provides that method through its conformance to the [`UIKeyInput`](uikeyinput.md) protocol
 - Delete text in a backward direction, starting at the insertion point, by calling the [`deleteBackward()`](uikeyinput/deletebackward().md) method on the [`textDocumentProxy`](uiinputviewcontroller/textdocumentproxy.md) property.
 - Switch to another keyboard in the set of user-enabled keyboards, by calling the [`advanceToNextInputMode()`](uiinputviewcontroller/advancetonextinputmode().md) method.
 - Dismiss the keyboard, by calling the [`dismissKeyboard()`](uiinputviewcontroller/dismisskeyboard().md) method.
@@ -79,17 +79,17 @@ For more about creating a custom keyboard, read [`Custom Keyboard`](https://deve
 ### Inherits From
 - [UIViewController](uiviewcontroller.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCoding](../Foundation/NSCoding.md)
-- [NSExtensionRequestHandling](../Foundation/NSExtensionRequestHandling.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [NSTouchBarProvider](../AppKit/NSTouchBarProvider.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCoding](../foundation/nscoding.md)
+- [NSExtensionRequestHandling](../foundation/nsextensionrequesthandling.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSTouchBarProvider](../appkit/nstouchbarprovider.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 - [UIActivityItemsConfigurationProviding](uiactivityitemsconfigurationproviding.md)
 - [UIAppearanceContainer](uiappearancecontainer.md)
 - [UIContentContainer](uicontentcontainer.md)

@@ -26,7 +26,7 @@ Creates a new, empty map with the bounds, interaction modes, the selected map fe
 - `bounds`: The [`MapCameraBounds`](mapcamerabounds.md) that define the camera’s view of the map.
 - `interactionModes`: The [`MapInteractionModes`](mapinteractionmodes.md) that describe ways the user can interact with the map.
 - `selection`: A binding to a [`MapFeature`](mapfeature.md) that represents a person’s selection.
-- `scope`: The map’s [`Namespace.ID`](https://developer.apple.com/documentation/SwiftUI/Namespace/ID).
+- `scope`: The map’s [`Namespace.ID`](https://developer.apple.com/documentation/swiftui/namespace/id).
 
 ## See Also
 

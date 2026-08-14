@@ -18,7 +18,7 @@ class CLKComplicationTemplateGraphicCircularOpenGaugeImage
 
 This template belongs to the [`CLKComplicationFamily.graphicCircular`](clkcomplicationfamily/graphiccircular.md) family. [`Figure 1`](clkcomplicationtemplategraphiccircularopengaugeimage#3030686.md) shows the layout of the image and where the template might appear on the clock face.
 
-![Diagram showing the layout of text with an open gauge and an image.](https://docs-assets.developer.apple.com/published/f3311597476f991aee2e6aa226e19dd4/media-3030686%402x.png)
+![Diagram showing the layout of text with an open gauge and an image.](/images/com.apple.clockkit/media-3030686@2x.png)
 
 The following table lists the dimensions of the image you use in this template. All dimensions are in pixels. All images must be specified as @2x images for display on Apple Watch, so the point-based dimensions are half the listed size.
 
@@ -51,13 +51,13 @@ Instead of providing multiple images with different resolutions, you can provide
 ### Inherits From
 - [CLKComplicationTemplateGraphicCircular](clkcomplicationtemplategraphiccircular.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCopying](../Foundation/NSCopying.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCopying](../foundation/nscopying.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

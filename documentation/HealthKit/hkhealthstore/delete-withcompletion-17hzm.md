@@ -32,7 +32,7 @@ HealthKit stores temporary [`HKDeletedObject`](hkdeletedobject.md) entries, lett
 ## Parameters
 
 - `objects`: An array of objects that this app has previously saved to HealthKit. Deleting an empty array fails with an [`HKError.Code.errorInvalidArgument`](hkerror/code/errorinvalidargument.md) error.
-- `completion`: A block that this method calls as soon as the delete operation is complete. This block is passed the following parameters: - **success**: A Boolean value. This parameter contains [`true`](https://developer.apple.com/documentation/Swift/true) if the objects were successfully deleted; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
+- `completion`: A block that this method calls as soon as the delete operation is complete. This block is passed the following parameters: - **success**: A Boolean value. This parameter contains [`true`](https://developer.apple.com/documentation/swift/true) if the objects were successfully deleted; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
 - **error**: An error object. If an error occurred, this object contains information about the error; otherwise, it is set to `nil`.
 
 ## See Also

@@ -27,8 +27,10 @@ Before calling this function, you should call the function [`PMSessionValidatePa
 ## Parameters
 
 - `pageFormat`: The page format object to convert.
-- `data`: A pointer to your   variable. On return, the variable refers to a new Core Foundation data object that contains a representation of the specified page format object in the specified data format. You are responsible for releasing the data object.
-- `format`: See   for a full description of these formats.
+- `data`: A pointer to your [`CFData`](https://developer.apple.com/documentation/corefoundation/cfdata) variable. On return, the variable refers to a new Core Foundation data object that contains a representation of the specified page format object in the specified data format. You are responsible for releasing the data object.
+- `format`: A constant that specifies the format of the data representation.  Supported values are: - `kPMDataFormatXMLDefault` (compatible with all macOS versions)
+- `kPMDataFormatXMLMinimal` (approximately 3-5 times smaller; compatible with macOS 10.5 and later)
+- `kPMDataFormatXMLCompressed` (approximately 20 times smaller; compatible with macOS 10.5 and later) See [`PMDataFormat`](pmdataformat.md) for a full description of these formats.
 
 ## See Also
 

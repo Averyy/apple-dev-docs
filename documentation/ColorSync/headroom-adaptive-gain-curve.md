@@ -15,11 +15,11 @@ ColorSync provides HAGC through two APIs that describe the same data:
 
 > **Note**: An ICC profile can carry an HAGC tag only when its transfer function is PQ, HLG, or linear.
 
-When [`Image I/O`](https://developer.apple.com/documentation/ImageIO) decodes an ISO 21496-1 gain-map image to HDR with [`kCGImageSourceDecodeToHDR`](https://developer.apple.com/documentation/ImageIO/kCGImageSourceDecodeToHDR), it derives HAGC metadata automatically by analyzing the ISO gain map.
+When [`Image I/O`](https://developer.apple.com/documentation/imageio) decodes an ISO 21496-1 gain-map image to HDR with [`kCGImageSourceDecodeToHDR`](https://developer.apple.com/documentation/imageio/kcgimagesourcedecodetohdr), it derives HAGC metadata automatically by analyzing the ISO gain map.
 
 When the SDR target isn’t known or can’t be computed, the HAGC metadata can indicate a default headroom-adaptive tone mapping, the Reference White Tone Mapping Operator (RWTMO), which is the recommended tone mapping for ISO 22028-5 images.
 
-The system applies HAGC metadata embedded in HDR images and video automatically. Stills render through [`Core Graphics`](https://developer.apple.com/documentation/CoreGraphics), [`Core Image`](https://developer.apple.com/documentation/CoreImage), and [`Core Animation`](https://developer.apple.com/documentation/QuartzCore), including the [`UIImageView`](https://developer.apple.com/documentation/UIKit/UIImageView) and [`NSImageView`](https://developer.apple.com/documentation/AppKit/NSImageView) classes. Video plays through [`AVFoundation`](https://developer.apple.com/documentation/AVFoundation), which carries the HAGC metadata as a SMPTE ST 2094-50 binary payload in a timed-metadata `it35` (ITU-T T.35) `mebx` track, identified by `it35/B500900001:SMPTE-ST2094-50`.
+The system applies HAGC metadata embedded in HDR images and video automatically. Stills render through [`Core Graphics`](https://developer.apple.com/documentation/coregraphics), [`Core Image`](https://developer.apple.com/documentation/coreimage), and [`Core Animation`](https://developer.apple.com/documentation/quartzcore), including the [`UIImageView`](https://developer.apple.com/documentation/uikit/uiimageview) and [`NSImageView`](https://developer.apple.com/documentation/appkit/nsimageview) classes. Video plays through [`AVFoundation`](https://developer.apple.com/documentation/avfoundation), which carries the HAGC metadata as a SMPTE ST 2094-50 binary payload in a timed-metadata `it35` (ITU-T T.35) `mebx` track, identified by `it35/B500900001:SMPTE-ST2094-50`.
 
 ## Topics
 

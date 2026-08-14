@@ -22,7 +22,7 @@ An initialized `NSOpenGLPixelFormat` object whose attributes match the desired a
 
 On return, the Boolean attributes of the receiver match the values specified in `attribs`, and the integer attributes are as close to the specified values as can be provided by the system.
 
-The existence of a Boolean attribute constant in `attribs` implies a [`true`](https://developer.apple.com/documentation/Swift/true) value. The Boolean attribute constants are:
+The existence of a Boolean attribute constant in `attribs` implies a [`true`](https://developer.apple.com/documentation/swift/true) value. The Boolean attribute constants are:
 
 - `NSOpenGLPFAAllRenderers`
 - `NSOpenGLPFADoubleBuffer`
@@ -73,7 +73,7 @@ if(pixFmt == nil) {
 
 ## Parameters
 
-- `attribs`: A 0-terminated array containing Boolean and integer attribute constants. The presence of a Boolean attribute implies a value of [`true`](https://developer.apple.com/documentation/Swift/true) while its absence implies a value of [`false`](https://developer.apple.com/documentation/Swift/false). Integer constants must be followed by the desired value. For a listing of attribute constants, see the constants in [`OpenGL Pixel Format Attributes`](opengl-pixel-format-attributes.md).
+- `attribs`: A 0-terminated array containing Boolean and integer attribute constants. The presence of a Boolean attribute implies a value of [`true`](https://developer.apple.com/documentation/swift/true) while its absence implies a value of [`false`](https://developer.apple.com/documentation/swift/false). Integer constants must be followed by the desired value. For a listing of attribute constants, see the constants in [`OpenGL Pixel Format Attributes`](opengl-pixel-format-attributes.md).
 
 ## See Also
 

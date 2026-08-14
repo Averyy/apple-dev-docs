@@ -18,7 +18,7 @@ object JWSAppTransactionDecodedPayload
 
 The [`Get App Transaction Info`](get-app-transaction-info.md) endpoint returns a [`JWSAppTransaction`](jwsapptransaction.md), which you decode to get `JWSAppTransactionDecodedPayload`.
 
-You can also get app transaction information in your app from StoreKit, using [`AppTransaction`](https://developer.apple.com/documentation/StoreKit/AppTransaction).
+You can also get app transaction information in your app from StoreKit, using [`AppTransaction`](https://developer.apple.com/documentation/storekit/apptransaction).
 
 ## Properties
 

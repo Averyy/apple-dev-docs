@@ -16,7 +16,7 @@ class MEVideoDecoderPixelBufferManager
 
 #### Discussion
 
-Contains the interfaces that the [`MEVideoDecoder`](mevideodecoder.md) uses for two tasks. First, to declare its set of requirements for output `CVPixelBuffer` objects in the form of a [`pixelBufferAttributes`](mevideodecoderpixelbuffermanager/pixelbufferattributes.md) dictionary. Second, to create pixel buffers that match decoder output requirements but also satisfy [`Video Toolbox`](https://developer.apple.com/documentation/VideoToolbox) and client requirements.
+Contains the interfaces that the [`MEVideoDecoder`](mevideodecoder.md) uses for two tasks. First, to declare its set of requirements for output `CVPixelBuffer` objects in the form of a [`pixelBufferAttributes`](mevideodecoderpixelbuffermanager/pixelbufferattributes.md) dictionary. Second, to create pixel buffers that match decoder output requirements but also satisfy [`Video Toolbox`](https://developer.apple.com/documentation/videotoolbox) and client requirements.
 
 ## Topics
 
@@ -31,14 +31,14 @@ Contains the interfaces that the [`MEVideoDecoder`](mevideodecoder.md) uses for 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

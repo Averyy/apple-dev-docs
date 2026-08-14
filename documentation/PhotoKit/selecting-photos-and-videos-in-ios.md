@@ -18,7 +18,7 @@ This sample shows how to use the [`PhotoKit`](PhotoKit.md) Photos picker, and il
 
 ##### Understand the Photos Picker Benefits
 
-Both [`PHPickerViewController`](https://developer.apple.com/documentation/photosui/phpickerviewcontroller) and [`UIImagePickerController`](https://developer.apple.com/documentation/UIKit/UIImagePickerController) use the out-of-process Photos picker user interface. The `PHPickerViewController` contains a powerful set of APIs that make it a great alternative to `UIImagePickerController`. `PHPickerViewController` improves stability and reliability, and includes several benefits to developers and users, such as the following:
+Both [`PHPickerViewController`](https://developer.apple.com/documentation/photosui/phpickerviewcontroller) and [`UIImagePickerController`](https://developer.apple.com/documentation/uikit/uiimagepickercontroller) use the out-of-process Photos picker user interface. The `PHPickerViewController` contains a powerful set of APIs that make it a great alternative to `UIImagePickerController`. `PHPickerViewController` improves stability and reliability, and includes several benefits to developers and users, such as the following:
 
 - Deferred image loading and recovery UI
 - Reliable handling of large and complex assets, like RAW and panoramic images
@@ -106,7 +106,7 @@ if selection.isEmpty {
 
 An item provider gives an app the ability to load assets asynchronously and on demand. Before loading an object, the sample verifies that the object is available.
 
-An item provider also allows for progress reporting. An asset may not be available on-device if iCloud Photos and Optimize Storage aren’t active. In this case, it can take some time to download a large asset. An item provider returns a [`Progress`](https://developer.apple.com/documentation/Foundation/Progress) object that conveys ongoing progress to an app.
+An item provider also allows for progress reporting. An asset may not be available on-device if iCloud Photos and Optimize Storage aren’t active. In this case, it can take some time to download a large asset. An item provider returns a [`Progress`](https://developer.apple.com/documentation/foundation/progress) object that conveys ongoing progress to an app.
 
 ```swift
 guard let assetIdentifier = selectedAssetIdentifierIterator?.next() else { return }

@@ -30,7 +30,7 @@ Use `LowLevelMesh` when you want to bring your own vertex format to RealityKit o
 
 > **Note**: Use [`MeshDescriptor`](meshdescriptor.md) for a simpler alternative to `LowLevelMesh`. For information on loading a model from a USD or Reality file, see [`Loading entities from a file`](loading-entities-from-a-file.md).
 
-Express your vertex by creating a [`LowLevelMesh.Descriptor`](lowlevelmesh/descriptor-swift.struct.md) that describes your layout, along with the required index and vertex capacities. This descriptor is similar to [`MTLVertexDescriptor`](https://developer.apple.com/documentation/Metal/MTLVertexDescriptor), with additional semantics that make the data available in your shaders.
+Express your vertex by creating a [`LowLevelMesh.Descriptor`](lowlevelmesh/descriptor-swift.struct.md) that describes your layout, along with the required index and vertex capacities. This descriptor is similar to [`MTLVertexDescriptor`](https://developer.apple.com/documentation/metal/mtlvertexdescriptor), with additional semantics that make the data available in your shaders.
 
 To use `LowLevelMesh`, first define your own vertex structure, either in a Metal header or using a Swift structure:
 
@@ -120,7 +120,7 @@ func triangleEntity() throws -> Entity {
 
 The low-level mesh creates a triangular shape in your RealityKit scene:
 
-![A screenshot of an isosceles triangle, floating in a kitchen scene. The triangle appears light gray in color.](https://docs-assets.developer.apple.com/published/53f5fd30d54e5aaa8c9b02f628ac1f48/lowlevelmesh-triangle-unlit.jpg)
+![A screenshot of an isosceles triangle, floating in a kitchen scene. The triangle appears light gray in color.](/images/com.apple.RealityKit/lowlevelmesh-triangle-unlit.jpg)
 
 The [`MeshResource`](meshresource.md) retains a reference to the `LowLevelMesh`, reflecting any changes when the renderer updates.
 
@@ -178,8 +178,8 @@ The [`MeshResource`](meshresource.md) retains a reference to the `LowLevelMesh`,
 ## Relationships
 
 ### Conforms To
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

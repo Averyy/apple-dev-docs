@@ -20,7 +20,7 @@ var relatedUniqueIdentifier: String? { get set }
 
 #### Discussion
 
-If you’re using both [`NSUserActivity`](https://developer.apple.com/documentation/Foundation/NSUserActivity) and Core Spotlight APIs to index the same item, set this property in the activity to specify the unique identifier of the Core Spotlight item to which the activity is related, and to avoid displaying duplicate results in Spotlight.
+If you’re using both [`NSUserActivity`](https://developer.apple.com/documentation/foundation/nsuseractivity) and Core Spotlight APIs to index the same item, set this property in the activity to specify the unique identifier of the Core Spotlight item to which the activity is related, and to avoid displaying duplicate results in Spotlight.
 
 If the unique identifier to which the activity is related hasn’t already been indexed with Core Spotlight, the activity won’t be indexed. Note that when the item is deleted, the related activity is also deleted, unlike the behavior of [`weakRelatedUniqueIdentifier`](cssearchableitemattributeset/weakrelateduniqueidentifier.md).
 

@@ -16,13 +16,13 @@ Start your investigation at a breakpoint when your app is in a known good state 
 
 When you run your app, the debugger pauses at the first breakpoint it encounters, and, by default, updates the display to show the Debug navigator, the source editor, the debug bar, the variable viewer, and the console.
 
-![Xcode paused on a breakpoint in an app, showing the debug navigator, source code editor with breakpoint highlighted, variable viewer, and debugger console.](https://docs-assets.developer.apple.com/published/0599792a0f39a1675e2fc12a06197687/stepping-through-code-and-inspecting-variables-to-isolate-bugs-1%402x.png)
+![Xcode paused on a breakpoint in an app, showing the debug navigator, source code editor with breakpoint highlighted, variable viewer, and debugger console.](/images/com.apple.Xcode/stepping-through-code-and-inspecting-variables-to-isolate-bugs-1@2x.png)
 
 Customize what Xcode displays when running your app in the debugger by choosing Xcode > Settings > Behaviors and selecting options under Running.
 
 Use the buttons in the debug bar to control the execution of your app.
 
-![Xcode debugger toolbar, showing the show or hide debug area button, activate or deactivate all breakpoints button, continue button, step into button, step out button, debug view hierarchy button, debug memory graph button, environment overrides button, simulate location button, and choose stack frame area.](https://docs-assets.developer.apple.com/published/870c41e7250ac061a333c1ec9977c41a/stepping-through-code-and-inspecting-variables-to-isolate-bugs-2%402x.png)
+![Xcode debugger toolbar, showing the show or hide debug area button, activate or deactivate all breakpoints button, continue button, step into button, step out button, debug view hierarchy button, debug memory graph button, environment overrides button, simulate location button, and choose stack frame area.](/images/com.apple.Xcode/stepping-through-code-and-inspecting-variables-to-isolate-bugs-2@2x.png)
 
 - Continue normal execution from the paused position until the app stops at the next breakpoint with the Continue button.
 - Pause the app without setting a breakpoint using the Pause button. The Continue button changes to the Pause button when the app is running.
@@ -36,11 +36,11 @@ As you step through your app, inspect variables relevant to your bug and watch f
 
 When your app pauses at a breakpoint, hover over a variable in your source code to view its current value. If the variable is an image or other type that isn’t expressible as text, click the Quick Look button at the upper-right to see a preview of the variable. Click the Print Description button to print a description of the object in the console.
 
-![Xcode displaying the debugger paused on a line of code, showing hover window with variable details for the fruit variable.](https://docs-assets.developer.apple.com/published/e08881a65188e0d8bd08796d30c057d1/stepping-through-code-and-inspecting-variables-to-isolate-bugs-3%402x.png)
+![Xcode displaying the debugger paused on a line of code, showing hover window with variable details for the fruit variable.](/images/com.apple.Xcode/stepping-through-code-and-inspecting-variables-to-isolate-bugs-3@2x.png)
 
 The variable viewer lists the variables available in the current execution context. Select the scope of variables to view from the selector at the bottom left of the viewer: automatic, local, or all variables, registers, globals, and statics. Use the filter field to find variables matching a pattern.
 
-![Xcode paused at a breakpoint, showing the debugger variable viewer. ](https://docs-assets.developer.apple.com/published/e3455d146066fc12046dd758765a9830/stepping-through-code-and-inspecting-variables-to-isolate-bugs-4%402x.png)
+![Xcode paused at a breakpoint, showing the debugger variable viewer. ](/images/com.apple.Xcode/stepping-through-code-and-inspecting-variables-to-isolate-bugs-4@2x.png)
 
 Each variable shows a brief summary of the variable’s type, value, and pointer location, if applicable. The variable viewer generates the summary it shows with the lldb command `frame variable`. If the summary for a variable isn’t available or only shows a memory pointer, see the [`Evaluate expressions in the console`](stepping-through-code-and-inspecting-variables-to-isolate-bugs#Evaluate-expressions-in-the-console.md) section below for more ways to inspect the variable.
 
@@ -50,7 +50,7 @@ Click the disclosure triangles to explore instance variables for classes and str
 
 When the debugger pauses at a breakpoint, it shows the current active threads and the current call stack in the Debug navigator, and highlights the breakpoint. The call stack represents the relationships of function or method calls that result in the current breakpoint.
 
-![Xcode displaying a call stack in the debug navigator while paused at a breakpoint.](https://docs-assets.developer.apple.com/published/ee212d72c2c37c23c220aa15178f729e/stepping-through-code-and-inspecting-variables-to-isolate-bugs-5%402x.png)
+![Xcode displaying a call stack in the debug navigator while paused at a breakpoint.](/images/com.apple.Xcode/stepping-through-code-and-inspecting-variables-to-isolate-bugs-5@2x.png)
 
 Select a line in the call stack if you suspect that your bug is in a calling function. The calling function might change an instance variable incorrectly, or may be passing an incorrect value in a parameter. The debugger shows the source code for that point and the related variables in the variable viewer, if the source code is available in the project. Otherwise, the debugger shows the assembly code for the selected line. Inspect the variables at this point for unexpected values.
 

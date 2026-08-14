@@ -40,7 +40,7 @@ This protocol provides common properties for game controllers, and mouse and key
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 ### Conforming Types
 - [GCController](gccontroller.md)
 - [GCKeyboard](gckeyboard.md)

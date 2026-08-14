@@ -27,7 +27,7 @@ var targetTimestamp: CFTimeInterval { get }
 
 You can use the target timestamp to cancel or pause long running processes that may overrun the available time between frames in order to maintain a consistent frame rate.
 
-The following code shows how you can create a display link and register it with a run loop. The `step(``displayLink:)` function attempts to sum the square roots of all numbers up to [`max`](https://developer.apple.com/documentation/Swift/Int/max), but with each iteration checks the current time ([`CACurrentMediaTime()`](cacurrentmediatime().md)) against the [`targetTimestamp`](cadisplaylink/targettimestamp.md). If the time taken to complete the calculation is later than the target timestamp, the function breaks the loop:
+The following code shows how you can create a display link and register it with a run loop. The `step(``displayLink:)` function attempts to sum the square roots of all numbers up to [`max`](https://developer.apple.com/documentation/swift/int/max), but with each iteration checks the current time ([`CACurrentMediaTime()`](cacurrentmediatime().md)) against the [`targetTimestamp`](cadisplaylink/targettimestamp.md). If the time taken to complete the calculation is later than the target timestamp, the function breaks the loop:
 
 ```swift
 func createDisplayLink() {

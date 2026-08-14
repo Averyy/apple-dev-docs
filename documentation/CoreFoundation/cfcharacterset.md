@@ -24,7 +24,7 @@ A CFCharacterSet object represents a set of Unicode compliant characters. CFStri
 
 CFCharacterSet’s principal function, [`CFCharacterSetIsCharacterMember(_:_:)`](cfcharactersetischaractermember(_:_:).md), provides the basis for all other functions in its interface. You create a character set using one of the `CFCharacterSetCreate...` functions. You may also use any one of the predefined character sets using the [`CFCharacterSetGetPredefined(_:)`](cfcharactersetgetpredefined(_:).md) function.
 
-CFCharacterSet is “toll-free bridged” with its Cocoa Foundation counterpart, [`NSCharacterSet`](https://developer.apple.com/documentation/Foundation/NSCharacterSet). This means that the Core Foundation type is interchangeable in function or method calls with the bridged Foundation object. Therefore, in a method where you see an `NSCharacterSet *` parameter, you can pass in a `CFCharacterSetRef`, and in a function where you see a `CFCharacterSetRef` parameter, you can pass in an NSCharacterSet instance. This capability also applies to concrete subclasses of NSCharacterSet. See [`Toll-Free Bridged Types`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFDesignConcepts/Articles/tollFreeBridgedTypes.html#//apple_ref/doc/uid/TP40010677) for more information on toll-free bridging.
+CFCharacterSet is “toll-free bridged” with its Cocoa Foundation counterpart, [`NSCharacterSet`](https://developer.apple.com/documentation/foundation/nscharacterset). This means that the Core Foundation type is interchangeable in function or method calls with the bridged Foundation object. Therefore, in a method where you see an `NSCharacterSet *` parameter, you can pass in a `CFCharacterSetRef`, and in a function where you see a `CFCharacterSetRef` parameter, you can pass in an NSCharacterSet instance. This capability also applies to concrete subclasses of NSCharacterSet. See [`Toll-Free Bridged Types`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFDesignConcepts/Articles/tollFreeBridgedTypes.html#//apple_ref/doc/uid/TP40010677) for more information on toll-free bridging.
 
 ## Topics
 
@@ -68,8 +68,8 @@ CFCharacterSet is “toll-free bridged” with its Cocoa Foundation counterpart,
 ### Inherited By
 - [CFMutableCharacterSet](cfmutablecharacterset.md)
 ### Conforms To
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
 
 ## See Also
 

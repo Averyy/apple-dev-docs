@@ -25,7 +25,7 @@ static var leadingLastTextBaseline: Alignment { get }
 
 This alignment combines the [`leading`](horizontalalignment/leading.md) horizontal guide and the [`lastTextBaseline`](verticalalignment/lasttextbaseline.md) vertical guide:
 
-![A square that’s divided into four equal quadrants. The upper-](https://docs-assets.developer.apple.com/published/afbba11c637a27079f34239305bbf6d6/Alignment-leadingLastTextBaseline-1-iOS%402x.png)
+![A square that’s divided into four equal quadrants. The upper-](/images/com.apple.SwiftUI/Alignment-leadingLastTextBaseline-1-iOS@2x.png)
 
 ## See Also
 

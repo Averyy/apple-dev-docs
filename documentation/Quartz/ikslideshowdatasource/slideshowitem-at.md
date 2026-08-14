@@ -17,7 +17,7 @@ func slideshowItem(at index: Int) -> Any!
 
 #### Return Value
 
-The object that corresponds to the item at the specified index. The item can be any of the following objects: [`NSImage`](https://developer.apple.com/documentation/AppKit/NSImage), [`NSString`](https://developer.apple.com/documentation/Foundation/NSString) (to specify a path name), [`NSURL`](https://developer.apple.com/documentation/Foundation/NSURL), [`FileWrapper`](https://developer.apple.com/documentation/Foundation/FileWrapper), [`CGImage`](https://developer.apple.com/documentation/CoreGraphics/CGImage), or [`PDFPage`](https://developer.apple.com/documentation/PDFKit/PDFPage).
+The object that corresponds to the item at the specified index. The item can be any of the following objects: [`NSImage`](https://developer.apple.com/documentation/appkit/nsimage), [`NSString`](https://developer.apple.com/documentation/foundation/nsstring) (to specify a path name), [`NSURL`](https://developer.apple.com/documentation/foundation/nsurl), [`FileWrapper`](https://developer.apple.com/documentation/foundation/filewrapper), [`CGImage`](https://developer.apple.com/documentation/coregraphics/cgimage), or [`PDFPage`](https://developer.apple.com/documentation/pdfkit/pdfpage).
 
 #### Discussion
 

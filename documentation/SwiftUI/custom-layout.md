@@ -8,11 +8,11 @@ Place views in custom arrangements and create animated transitions between layou
 
 You can create complex view layouts using the built-in layout containers and layout view modifiers that SwiftUI provides. However, if you need behavior that you can’t achieve with the built-in layout tools, create a custom layout container type using the [`Layout`](layout.md) protocol. A container that you define asks for the sizes of all its subviews, and then indicates where to place the subviews within its own bounds.
 
-![None](https://docs-assets.developer.apple.com/published/098af88e7ef1601f537924b942ecfb67/custom-layout-hero%402x.png)
+![None](/images/com.apple.SwiftUI/custom-layout-hero@2x.png)
 
 You can also create animated transitions among layout types that conform to the [`Layout`](layout.md) procotol, including both built-in and custom layouts.
 
-For design guidance, see [`Layout`](https://developer.apple.com/design/Human-Interface-Guidelines/layout) in the Human Interface Guidelines.
+For design guidance, see [`Layout`](https://developer.apple.com/design/human-interface-guidelines/layout) in the Human Interface Guidelines.
 
 ## Topics
 

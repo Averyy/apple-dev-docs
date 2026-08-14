@@ -29,7 +29,7 @@ For all other layers, AppKit checks whether the layer has a delegate that implem
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

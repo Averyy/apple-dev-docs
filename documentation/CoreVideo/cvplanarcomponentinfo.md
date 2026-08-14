@@ -38,8 +38,8 @@ Depending on how they were created, planar pixel buffers may or may not have thi
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../Swift/BitwiseCopyable.md)
-- [Sendable](../Swift/Sendable.md)
+- [BitwiseCopyable](../swift/bitwisecopyable.md)
+- [Sendable](../swift/sendable.md)
 
 ## See Also
 

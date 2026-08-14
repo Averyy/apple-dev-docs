@@ -22,7 +22,7 @@ let kCVImageBufferChromaLocationBottomFieldKey: CFString
 
 #### Discussion
 
-The chroma location value is of type [`CFString`](https://developer.apple.com/documentation/CoreFoundation/CFString). This key only applies to interlaced image data. See [`Image Buffer Chroma Location Constants`](image-buffer-chroma-location-constants.md) for more information.
+The chroma location value is of type [`CFString`](https://developer.apple.com/documentation/corefoundation/cfstring). This key only applies to interlaced image data. See [`Image Buffer Chroma Location Constants`](image-buffer-chroma-location-constants.md) for more information.
 
 ## See Also
 

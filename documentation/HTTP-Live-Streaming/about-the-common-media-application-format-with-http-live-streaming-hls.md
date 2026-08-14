@@ -30,7 +30,7 @@ The CMAF Hypothetical Reference Model defines how tracks can be delivered, combi
 
 **CMAF Track File:** A complete track in one ISO_BMFF file.
 
-![Flow diagram showing the relationship between specified CMAF objects and non-specified CMAF objects. Manifests have resources that point to addressable CMAF media objects.](https://docs-assets.developer.apple.com/published/c16d062ae472249b042d2ae0e6a6a93e/about-the-common-media-application-format-with-http-live-streaming-hls-1%402x.png)
+![Flow diagram showing the relationship between specified CMAF objects and non-specified CMAF objects. Manifests have resources that point to addressable CMAF media objects.](/images/com.apple.HTTP-Live-Streaming/about-the-common-media-application-format-with-http-live-streaming-hls-1@2x.png)
 
 ##### Support for Cmaf
 

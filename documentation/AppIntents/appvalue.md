@@ -28,8 +28,8 @@ This protocol serves as the base type for conceptual interfaces like [`AppEntity
 
 ### Inherits From
 - [PersistentlyIdentifiable](persistentlyidentifiable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 - [TypeDisplayRepresentable](typedisplayrepresentable.md)
 ### Inherited By
 - [AppEntity](appentity.md)

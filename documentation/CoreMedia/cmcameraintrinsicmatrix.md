@@ -42,10 +42,10 @@ fx and fy are the focal length in pixels. For square pixels, they will have the 
 ## Relationships
 
 ### Conforms To
-- [CVAttachmentValueRepresentable](../CoreVideo/CVAttachmentValueRepresentable.md)
-- [Equatable](../Swift/Equatable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [CVAttachmentValueRepresentable](../corevideo/cvattachmentvaluerepresentable.md)
+- [Equatable](../swift/equatable.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 
 ---

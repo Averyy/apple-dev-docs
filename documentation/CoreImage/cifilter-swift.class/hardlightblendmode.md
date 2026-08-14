@@ -43,7 +43,7 @@ func hardLightBlendMode(inputImage: CIImage, backgroundImage: CIImage) -> CIImag
 }
 ```
 
-![The image on the top left shows a beach with multiple palm trees and a rainbow arching across the blue sky.  The image below is a gradient image displaying a gradual color shift from purple to a dark orange. The image on the right shows the output from applying a hard-light blend mode filter. The result displays a significantly darker image with the gradient image overlaid over the beach rainbow image.](https://docs-assets.developer.apple.com/published/1d03a04d72c25b3351f013a7a656eacb/media-3546419%402x.png)
+![The image on the top left shows a beach with multiple palm trees and a rainbow arching across the blue sky.  The image below is a gradient image displaying a gradual color shift from purple to a dark orange. The image on the right shows the output from applying a hard-light blend mode filter. The result displays a significantly darker image with the gradient image overlaid over the beach rainbow image.](/images/com.apple.coreimage/media-3546419@2x.png)
 
 ## See Also
 

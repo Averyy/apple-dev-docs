@@ -23,7 +23,7 @@ var zPosition: CGFloat { get set }
 
 The default value of this property is `0`. Changing the value of this property changes the front-to-back ordering of layers onscreen. Higher values place this layer visually closer to the viewer than layers with lower values. This can affect the visibility of layers whose frame rectangles overlap.
 
-The value of this property is measured in points. The range of this property is single-precision, floating-point `-`[`greatestFiniteMagnitude`](https://developer.apple.com/documentation/Swift/Float/greatestFiniteMagnitude) to [`greatestFiniteMagnitude`](https://developer.apple.com/documentation/Swift/Float/greatestFiniteMagnitude).
+The value of this property is measured in points. The range of this property is single-precision, floating-point `-`[`greatestFiniteMagnitude`](https://developer.apple.com/documentation/swift/float/greatestfinitemagnitude) to [`greatestFiniteMagnitude`](https://developer.apple.com/documentation/swift/float/greatestfinitemagnitude).
 
 ## See Also
 

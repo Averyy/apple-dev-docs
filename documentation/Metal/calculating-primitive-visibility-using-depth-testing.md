@@ -17,7 +17,7 @@ When graphics primitives overlap each other, by default, Metal renders them in t
 
 Depth is a measure of the distance from a viewing position to a specific pixel. When using depth testing, you add a *depth texture* (sometimes called a *depth buffer*) to your render pass. A depth texture stores a depth value for each pixel in the same way that a color texture holds a color value. You determine how depth values are calculated for each fragment, usually by calculating the depth for each vertex and letting the hardware interpolate these depth values. The GPU tests new fragments to see if they are closer to the viewing position than the current value stored in the depth texture. If a fragment is farther away, the GPU discards the fragment. Otherwise, it updates the pixel data, including the new depth value. Because the GPU tests the depth of all fragments, it renders triangles correctly even when the triangles are partially obscured.
 
-![A flowchart showing the depth test sequence. The depth of each new fragment is tested against data in the depth texture. When the test succeeds, the new fragment is stored to the depth and color textures.](https://docs-assets.developer.apple.com/published/2f36332e208881b306d2b8ecedbb62b8/1-depth-testing-flow.png)
+![A flowchart showing the depth test sequence. The depth of each new fragment is tested against data in the depth texture. When the test succeeds, the new fragment is stored to the depth and color textures.](/images/com.apple.metal/1-depth-testing-flow.png)
 
 This sample demonstrates depth testing by showing a triangle and letting you change the depth value of each of its vertices. The depth of each fragment is interpolated between the depth values you set for the triangle’s vertices, and the app configures the GPU to perform the depth test as described above. Each time a render pass is executed, it clears the depth texture’s data, then renders a gray square at the halfway point. Finally, the render pass renders the triangle. Only the fragments closer to the viewer than the gray square are visible.
 
@@ -43,7 +43,7 @@ pipelineStateDescriptor.depthAttachmentPixelFormat = mtkView.depthStencilPixelFo
 
 As with color formats, the render pipeline needs information about the format of the depth texture so that it can read or write values in the texture. Specify the same depth format that you used to configure your view. When you add a depth texture, Metal enables additional stages on the render pipeline:
 
-![Flowchart showing a rendering pipeline with depth testing](https://docs-assets.developer.apple.com/published/8ca4835838490529322cf97f7d5d91d6/2-depth-testing-pipeline.png)
+![Flowchart showing a rendering pipeline with depth testing](/images/com.apple.metal/2-depth-testing-pipeline.png)
 
 ##### Configure the Depth Test
 
@@ -72,7 +72,7 @@ out.clipSpacePosition.z = vertices[vertexID].position.z;
 
 When the rasterizer calculates the data to send to the fragment shader, it interpolates between these z values:
 
-![Illustration showing the depth values generated from a triangle with the given vertices.](https://docs-assets.developer.apple.com/published/dd9e22ec0604186a9e16059b4b2d795a/3-depth-testing-depth-values.png)
+![Illustration showing the depth values generated from a triangle with the given vertices.](/images/com.apple.metal/3-depth-testing-depth-values.png)
 
 Your fragment function can read the z value, ignore it, or modify it, as needed. If you don’t modify the value calculated by the rasterizer, a GPU can sometimes perform additional optimizations. For example, it may be able to execute the z test before running the fragment shader, so that it doesn’t run the fragment shader for hidden fragments. If you change the depth value in the fragment shader, you may incur a performance penalty because the GPU needs to execute the fragment shader first.
 

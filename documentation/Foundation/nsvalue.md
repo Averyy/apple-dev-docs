@@ -32,9 +32,9 @@ The abstract [`NSValue`](nsvalue.md) class is the public interface of a class cl
 
 Any subclass of [`NSValue`](nsvalue.md) *must* override the primitive instance methods [`getValue(_:)`](nsvalue/getvalue(_:).md) and [`objCType`](nsvalue/objctype.md). These methods must operate on the storage that you provide for the value.
 
-You might want to implement an initializer for your subclass that is suited to the storage you provide. The [`NSValue`](nsvalue.md) class does not have a designated initializer, so your initializer need only invoke the [`init()`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class/init()) method of `super`. The [`NSValue`](nsvalue.md) class adopts the [`NSCopying`](nscopying.md) and [`NSSecureCoding`](nssecurecoding.md) protocols; if you want instances of your own custom subclass created from copying or coding, override the methods in these protocols.
+You might want to implement an initializer for your subclass that is suited to the storage you provide. The [`NSValue`](nsvalue.md) class does not have a designated initializer, so your initializer need only invoke the [`init()`](https://developer.apple.com/documentation/objectivec/nsobject-swift.class/init()) method of `super`. The [`NSValue`](nsvalue.md) class adopts the [`NSCopying`](nscopying.md) and [`NSSecureCoding`](nssecurecoding.md) protocols; if you want instances of your own custom subclass created from copying or coding, override the methods in these protocols.
 
-You may also wish to implement the [`hash`](https://developer.apple.com/documentation/ObjectiveC/NSObjectProtocol/hash) method to make your subclass work well in collections.
+You may also wish to implement the [`hash`](https://developer.apple.com/documentation/objectivec/nsobjectprotocol/hash) method to make your subclass work well in collections.
 
 ###### Alternatives to Subclassing
 
@@ -197,18 +197,18 @@ typedef struct {
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Inherited By
 - [NSNumber](nsnumber.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
 - [NSCoding](nscoding.md)
 - [NSCopying](nscopying.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 - [NSSecureCoding](nssecurecoding.md)
 
 ## See Also

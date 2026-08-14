@@ -16,7 +16,7 @@ func imageBrowser(_ aBrowser: IKImageBrowserView!, groupAt index: Int) -> [AnyHa
 
 #### Return Value
 
-A dictionary that defines the group. The keys in this dictionary can be any of the following constants: [`IKImageBrowserGroupStyleKey`](https://developer.apple.com/documentation/Quartz/IKImageBrowserGroupStyleKey), [`IKImageBrowserGroupBackgroundColorKey`](https://developer.apple.com/documentation/Quartz/IKImageBrowserGroupBackgroundColorKey), [`IKImageBrowserGroupTitleKey`](https://developer.apple.com/documentation/Quartz/IKImageBrowserGroupTitleKey), and [`IKImageBrowserGroupRangeKey`](https://developer.apple.com/documentation/Quartz/IKImageBrowserGroupRangeKey). For more information on these constants, see [`IKImageBrowserView`](https://developer.apple.com/documentation/Quartz/IKImageBrowserView).
+A dictionary that defines the group. The keys in this dictionary can be any of the following constants: [`IKImageBrowserGroupStyleKey`](https://developer.apple.com/documentation/quartz/ikimagebrowsergroupstylekey), [`IKImageBrowserGroupBackgroundColorKey`](https://developer.apple.com/documentation/quartz/ikimagebrowsergroupbackgroundcolorkey), [`IKImageBrowserGroupTitleKey`](https://developer.apple.com/documentation/quartz/ikimagebrowsergrouptitlekey), and [`IKImageBrowserGroupRangeKey`](https://developer.apple.com/documentation/quartz/ikimagebrowsergrouprangekey). For more information on these constants, see [`IKImageBrowserView`](https://developer.apple.com/documentation/quartz/ikimagebrowserview).
 
 #### Discussion
 

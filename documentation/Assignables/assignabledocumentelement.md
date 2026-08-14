@@ -21,8 +21,8 @@ protocol AssignableDocumentElement : DocumentElement
 
 ### Inherits From
 - [DocumentElement](documentelement.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
 ### Conforming Types
 - [AssignableDocument.Page](assignabledocument/page.md)
 - [AssignableDocument.Question](assignabledocument/question.md)

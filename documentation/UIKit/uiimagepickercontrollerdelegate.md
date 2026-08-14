@@ -24,7 +24,7 @@ The methods of this protocol notify your delegate when the user either picks an 
 
 To save a still image to the user’s Camera Roll album, call the [`UIImageWriteToSavedPhotosAlbum(_:_:_:_:)`](uiimagewritetosavedphotosalbum(_:_:_:_:).md) function from within the body of the [`imagePickerController(_:didFinishPickingMediaWithInfo:)`](uiimagepickercontrollerdelegate/imagepickercontroller(_:didfinishpickingmediawithinfo:).md) method. To save a movie to the user’s Camera Roll album, instead call the [`UISaveVideoAtPathToSavedPhotosAlbum(_:_:_:_:)`](uisavevideoatpathtosavedphotosalbum(_:_:_:_:).md) function. These functions, described in `UIKit Functions`, save the image or movie only; they don’t save metadata.
 
-To write additional metadata when saving an image to the Camera Roll, use the [`PHAssetChangeRequest`](https://developer.apple.com/documentation/Photos/PHAssetChangeRequest) class from the Photos framework. See the description for the [`mediaMetadata`](uiimagepickercontroller/infokey/mediametadata.md) key.
+To write additional metadata when saving an image to the Camera Roll, use the [`PHAssetChangeRequest`](https://developer.apple.com/documentation/photos/phassetchangerequest) class from the Photos framework. See the description for the [`mediaMetadata`](uiimagepickercontroller/infokey/mediametadata.md) key.
 
 ## Topics
 
@@ -40,7 +40,7 @@ To write additional metadata when saving an image to the Camera Roll, use the [`
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

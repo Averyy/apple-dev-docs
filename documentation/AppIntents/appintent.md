@@ -160,8 +160,8 @@ For additional app intent protocols you can adopt in your app, see [`App intent 
 
 ### Inherits From
 - [PersistentlyIdentifiable](persistentlyidentifiable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 ### Inherited By
 - [AssistantIntent](assistantintent.md)
 - [AssistantSchemaIntent](assistantschemaintent.md)
@@ -208,7 +208,7 @@ For additional app intent protocols you can adopt in your app, see [`App intent 
   Create your first app intent that makes your app available in system experiences like Spotlight or the Shortcuts app.
 - [Accelerating app interactions with App Intents](acceleratingappinteractionswithappintents.md)
   Enable people to use your app’s features quickly through Siri, Spotlight, and Shortcuts.
-- [Soup Chef with App Intents: Migrating custom intents](../SiriKit/soup-chef-with-app-intents-migrating-custom-intents.md)
+- [Soup Chef with App Intents: Migrating custom intents](../sirikit/soup-chef-with-app-intents-migrating-custom-intents.md)
   Integrating App Intents to provide your appʼs actions to Siri and Shortcuts.
 - [App intent types](app-intent-types.md)
   Build your intents from types that define common behaviors such as opening or deleting items, playing or recording media, and more.

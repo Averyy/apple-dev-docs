@@ -86,14 +86,14 @@ Core Media represents time as a rational value, with a time value as the numerat
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../Swift/BitwiseCopyable.md)
-- [CVAttachmentValueRepresentable](../CoreVideo/CVAttachmentValueRepresentable.md)
-- [Comparable](../Swift/Comparable.md)
-- [Copyable](../Swift/Copyable.md)
-- [Equatable](../Swift/Equatable.md)
-- [Escapable](../Swift/Escapable.md)
-- [Hashable](../Swift/Hashable.md)
-- [Sendable](../Swift/Sendable.md)
+- [BitwiseCopyable](../swift/bitwisecopyable.md)
+- [CVAttachmentValueRepresentable](../corevideo/cvattachmentvaluerepresentable.md)
+- [Comparable](../swift/comparable.md)
+- [Copyable](../swift/copyable.md)
+- [Equatable](../swift/equatable.md)
+- [Escapable](../swift/escapable.md)
+- [Hashable](../swift/hashable.md)
+- [Sendable](../swift/sendable.md)
 
 ## See Also
 

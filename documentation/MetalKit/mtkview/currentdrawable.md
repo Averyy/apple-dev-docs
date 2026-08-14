@@ -21,9 +21,9 @@ var currentDrawable: (any CAMetalDrawable)? { get }
 
 #### Discussion
 
-If all drawable objects are in use, the value of this property is `nil`. Your app should check that [`currentDrawable`](mtkview/currentdrawable.md) isn’t `nil` before attempting to draw. The view changes the value of this property only after returning from a drawing function, either [`draw(_:)`](https://developer.apple.com/documentation/UIKit/UIView/draw(_:)) from a subclassed instance of the view, or [`draw(in:)`](mtkviewdelegate/draw(in:).md) from the view’s delegate.
+If all drawable objects are in use, the value of this property is `nil`. Your app should check that [`currentDrawable`](mtkview/currentdrawable.md) isn’t `nil` before attempting to draw. The view changes the value of this property only after returning from a drawing function, either [`draw(_:)`](https://developer.apple.com/documentation/uikit/uiview/draw(_:)) from a subclassed instance of the view, or [`draw(in:)`](mtkviewdelegate/draw(in:).md) from the view’s delegate.
 
-Use a [`MTLRenderCommandEncoder`](https://developer.apple.com/documentation/Metal/MTLRenderCommandEncoder) object to render into the drawable’s texture and present it for display (typically registered using the [`present(_:)`](https://developer.apple.com/documentation/Metal/MTLCommandBuffer/present(_:)) method of a command buffer). Try to minimize the time between when you fetch the drawable and when you submit the command buffer that uses it. For more information, see [`CAMetalLayer`](https://developer.apple.com/documentation/QuartzCore/CAMetalLayer#3385893).
+Use a [`MTLRenderCommandEncoder`](https://developer.apple.com/documentation/metal/mtlrendercommandencoder) object to render into the drawable’s texture and present it for display (typically registered using the [`present(_:)`](https://developer.apple.com/documentation/metal/mtlcommandbuffer/present(_:)) method of a command buffer). Try to minimize the time between when you fetch the drawable and when you submit the command buffer that uses it. For more information, see [`CAMetalLayer`](https://developer.apple.com/documentation/quartzcore/cametallayer).
 
 ## See Also
 

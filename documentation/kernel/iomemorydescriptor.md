@@ -49,7 +49,7 @@ An [`IOMemoryDescriptor`](iomemorydescriptor.md) object represents a buffer or r
   Creates an IOMemoryDescriptor to describe one physical range.
 - [+ withPhysicalAddress](iomemorydescriptor/1441877-withphysicaladdress.md)
   Creates an IOMemoryDescriptor to describe one physical range.
-- [- free](../driverkit/iomemorydescriptor/free.md)
+- [- free](iomemorydescriptor/3180646-free.md)
   Performs any final cleanup for the memory descriptor object.
 ### Configuring the Descriptor
 - [- setOwnership](iomemorydescriptor/3142952-setownership.md)
@@ -113,7 +113,7 @@ An [`IOMemoryDescriptor`](iomemorydescriptor.md) object represents a buffer or r
   Accessor to get the length of the memory descriptor (over all its ranges).
 - [- getLength](iomemorydescriptor/1442036-getlength.md)
   Accessor to get the length of the memory descriptor (over all its ranges).
-- [- GetLength](../driverkit/iomemorydescriptor/getlength.md)
+- [- GetLength](iomemorydescriptor/3180642-getlength.md)
   Returns the length of the memory block represented by this object.
 - [- getDMAMapLength](iomemorydescriptor/3553361-getdmamaplength.md)
 - [- getFlags](iomemorydescriptor/2870265-getflags.md)
@@ -144,8 +144,8 @@ An [`IOMemoryDescriptor`](iomemorydescriptor.md) object represents a buffer or r
 - [- populateDevicePager](iomemorydescriptor/1442017-populatedevicepager.md)
 - [- CreateMapping](iomemorydescriptor/3174974-createmapping.md)
 - [- CreateMapping_Impl](iomemorydescriptor/3174975-createmapping_impl.md)
-- [- Map](../driverkit/iomemorydescriptor/map.md)
-  Maps memory internally.
+- [- Map](iomemorydescriptor/3180643-map.md)
+  Maps memory internally. 
 - [- addMapping](iomemorydescriptor/1442013-addmapping.md)
 - [- removeMapping](iomemorydescriptor/1441778-removemapping.md)
 - [- makeMapping](iomemorydescriptor/1441923-makemapping.md)
@@ -157,7 +157,7 @@ An [`IOMemoryDescriptor`](iomemorydescriptor.md) object represents a buffer or r
 - [- getMapperOptions](iomemorydescriptor/3917633-getmapperoptions.md)
 - [- setMapperOptions](iomemorydescriptor/3917634-setmapperoptions.md)
 ### Type Methods
-- [+ CreateSubMemoryDescriptor](../driverkit/iomemorydescriptor/createsubmemorydescriptor.md)
+- [+ CreateSubMemoryDescriptor](iomemorydescriptor/3674611-createsubmemorydescriptor.md)
 - [+ CreateSubMemoryDescriptor_Impl](iomemorydescriptor/3674612-createsubmemorydescriptor_impl.md)
 - [+ CreateSubMemoryDescriptor_Invoke](iomemorydescriptor/3674613-createsubmemorydescriptor_invoke.md)
 - [+ CreateWithMemoryDescriptors](iomemorydescriptor/3674614-createwithmemorydescriptors.md)

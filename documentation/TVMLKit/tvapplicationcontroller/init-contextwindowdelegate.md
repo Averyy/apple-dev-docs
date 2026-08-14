@@ -20,12 +20,12 @@ The initialized [`TVApplicationController`](tvapplicationcontroller.md) object.
 
 #### Discussion
 
-An app controller coordinates activity between the JavaScript environments and tvOS. There are three options when presenting the application controller. If you provide a valid [`UIWindow`](https://developer.apple.com/documentation/UIKit/UIWindow) object, the application controller’s navigation controller is presented immediately and managed by [`TVApplicationController`](tvapplicationcontroller.md). If no window is provided, the navigation controller can be presented and dismissed manually within the binary app. Finally, if you wish to present native view controllers alongside a [`TVApplicationController`](tvapplicationcontroller.md) object, you can push additional view controllers onto [`navigationController`](tvapplicationcontroller/navigationcontroller.md).
+An app controller coordinates activity between the JavaScript environments and tvOS. There are three options when presenting the application controller. If you provide a valid [`UIWindow`](https://developer.apple.com/documentation/uikit/uiwindow) object, the application controller’s navigation controller is presented immediately and managed by [`TVApplicationController`](tvapplicationcontroller.md). If no window is provided, the navigation controller can be presented and dismissed manually within the binary app. Finally, if you wish to present native view controllers alongside a [`TVApplicationController`](tvapplicationcontroller.md) object, you can push additional view controllers onto [`navigationController`](tvapplicationcontroller/navigationcontroller.md).
 
 ## Parameters
 
 - `context`: A [`TVApplicationControllerContext`](tvapplicationcontrollercontext.md) object containing information about the JavaScript app.
-- `window`: A [`UIWindow`](https://developer.apple.com/documentation/UIKit/UIWindow) object that presents the application controller’s navigation controller.
+- `window`: A [`UIWindow`](https://developer.apple.com/documentation/uikit/uiwindow) object that presents the application controller’s navigation controller.
 - `delegate`: The app controller delegate.
 
 

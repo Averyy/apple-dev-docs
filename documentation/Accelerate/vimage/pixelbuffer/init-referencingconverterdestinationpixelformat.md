@@ -22,7 +22,7 @@ init(referencing lockedCVPixelBuffer: CVPixelBuffer, converter: vImageConverter,
 
 #### Discussion
 
-The following code shows how to incorporate a vImage pixel buffer into a [`CIImageProcessorKernel`](https://developer.apple.com/documentation/CoreImage/CIImageProcessorKernel) instance. The code calls [`init(referencing:converter:destinationPixelFormat:)`](vimage/pixelbuffer/init(referencing:converter:destinationpixelformat:).md) to initialize a source and destination vImage pixel buffers that share data with the processor kernel’s input and output.
+The following code shows how to incorporate a vImage pixel buffer into a [`CIImageProcessorKernel`](https://developer.apple.com/documentation/coreimage/ciimageprocessorkernel) instance. The code calls [`init(referencing:converter:destinationPixelFormat:)`](vimage/pixelbuffer/init(referencing:converter:destinationpixelformat:).md) to initialize a source and destination vImage pixel buffers that share data with the processor kernel’s input and output.
 
 ```swift
 class ContrastStretchImageProcessorKernel: CIImageProcessorKernel {
@@ -90,7 +90,7 @@ class ContrastStretchImageProcessorKernel: CIImageProcessorKernel {
 
 ## Parameters
 
-- `lockedCVPixelBuffer`: The locked Core Video pixel buffer. Use [`CVPixelBufferLockBaseAddress(_:_:)`](https://developer.apple.com/documentation/CoreVideo/CVPixelBufferLockBaseAddress(_:_:)) and [`CVPixelBufferUnlockBaseAddress(_:_:)`](https://developer.apple.com/documentation/CoreVideo/CVPixelBufferUnlockBaseAddress(_:_:)) to lock and unlock the pixel buffer.
+- `lockedCVPixelBuffer`: The locked Core Video pixel buffer. Use [`CVPixelBufferLockBaseAddress(_:_:)`](https://developer.apple.com/documentation/corevideo/cvpixelbufferlockbaseaddress(_:_:)) and [`CVPixelBufferUnlockBaseAddress(_:_:)`](https://developer.apple.com/documentation/corevideo/cvpixelbufferunlockbaseaddress(_:_:)) to lock and unlock the pixel buffer.
 - `converter`: The vImage Core Video to Core Graphics any-to-any converter.
 - `destinationPixelFormat`: The pixel format of the initialized buffer.
 

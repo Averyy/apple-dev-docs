@@ -8,7 +8,7 @@ Present an interface that people can use to search for content in your app.
 
 Add a search interface to your app by applying one of the searchable view modifiers — like [`searchable(text:placement:prompt:)`](view/searchable(text:placement:prompt:).md) — to a [`NavigationSplitView`](navigationsplitview.md) or [`NavigationStack`](navigationstack.md), or to a view inside one of these. A search field then appears in the toolbar. The precise placement and appearance of the search field depends on the platform, where you put the modifier in code, and its configuration.
 
-![A wide rectangle with rounded corners that contains a magnifying glass on the left, followed by the text Search in a gray color.](https://docs-assets.developer.apple.com/published/f52e89b1ae79d7dcf829d6201267252b/Search-add-0-macOS%402x.png)
+![A wide rectangle with rounded corners that contains a magnifying glass on the left, followed by the text Search in a gray color.](/images/com.apple.SwiftUI/Search-add-0-macOS@2x.png)
 
 The searchable modifier that creates the field takes a [`Binding`](binding.md) to a string that represents the search field’s text. You provide the storage for the string — and optionally for an array of discrete search tokens — that you use to conduct the search. To learn about managing the search field’s data, see [`Performing a search operation`](performing-a-search-operation.md).
 
@@ -39,11 +39,11 @@ With this configuration, the search field appears on the trailing edge of the to
 
 **macOS**:
 
-![A macOS window with three navigation panes. The pane on the left lists the items, Produce, Frozen, and Bakery. The middle pane has the placeholder text, Select a Department. The pane on the right has the placeholder text, Select a Product. The toolbar has a search field in the upper-right of the window that has the placeholder text, Search.](https://docs-assets.developer.apple.com/published/e5af4eeca8efecdc9565bb434acd3431/Search-add-1-macOS%402x.png)
+![A macOS window with three navigation panes. The pane on the left lists the items, Produce, Frozen, and Bakery. The middle pane has the placeholder text, Select a Department. The pane on the right has the placeholder text, Select a Product. The toolbar has a search field in the upper-right of the window that has the placeholder text, Search.](/images/com.apple.SwiftUI/Search-add-1-macOS@2x.png)
 
 **iOS**:
 
-![An iPad screen with three navigation panes. The pane on the left lists the items, Produce, Frozen, and Bakery under the title, Department. The middle pane has the placeholder text, Select a Department under the title, Product. The pane on the right has the placeholder text, Select a Product. The toolbar of the middle pane has a search field just below the title that displays the placeholder text, Search.](https://docs-assets.developer.apple.com/published/819f027b88923ac6e221ff593c1c1735/Search-add-1-iPadOS%402x.png)
+![An iPad screen with three navigation panes. The pane on the left lists the items, Produce, Frozen, and Bakery under the title, Department. The middle pane has the placeholder text, Select a Department under the title, Product. The pane on the right has the placeholder text, Select a Product. The toolbar of the middle pane has a search field just below the title that displays the placeholder text, Search.](/images/com.apple.SwiftUI/Search-add-1-iPadOS@2x.png)
 
 ##### Control the Placement Structurally
 
@@ -60,7 +60,7 @@ NavigationSplitView {
 }
 ```
 
-![An iPad screen with three navigation panes. The pane on the left lists the items, Produce, Frozen, and Bakery under the title, Department. The middle pane has the placeholder text, Select a Department under the title, Product. The pane on the right has the placeholder text, Select a Product. The toolbar of the left-most pane has a search field just below the title that displays the placeholder text, Search.](https://docs-assets.developer.apple.com/published/8db18db9c632f695504a7fa566f117aa/Search-add-2-iPadOS%402x.png)
+![An iPad screen with three navigation panes. The pane on the left lists the items, Produce, Frozen, and Bakery under the title, Department. The middle pane has the placeholder text, Select a Department under the title, Product. The pane on the right has the placeholder text, Select a Product. The toolbar of the left-most pane has a search field just below the title that displays the placeholder text, Search.](/images/com.apple.SwiftUI/Search-add-2-iPadOS@2x.png)
 
 ##### Control the Placement Programmatically
 
@@ -77,7 +77,7 @@ NavigationSplitView {
 .searchable(text: $searchText, placement: .sidebar)
 ```
 
-![A macOS window with three navigation panes. The pane on the left lists the items, Produce, Frozen, and Bakery. The middle pane has the placeholder text, Select a Department. The pane on the right has the placeholder text, Select a Product. The left-most pane has a search field above the list of items that has the placeholder text, Search.](https://docs-assets.developer.apple.com/published/10ce7a28b40a9710b1bd821108e702c8/Search-add-3-macOS%402x.png)
+![A macOS window with three navigation panes. The pane on the left lists the items, Produce, Frozen, and Bakery. The middle pane has the placeholder text, Select a Department. The pane on the right has the placeholder text, Select a Product. The left-most pane has a search field above the list of items that has the placeholder text, Search.](/images/com.apple.SwiftUI/Search-add-3-macOS@2x.png)
 
 If SwiftUI can’t satisfy the placement request, like when you ask for sidebar placement in a searchable modifier that isn’t applied to a navigation split view, SwiftUI relies instead on its automatic placement rules.
 
@@ -90,7 +90,7 @@ DepartmentList(departmentId: $departmentId)
     .searchable(text: $searchText, prompt: "Departments and products")
 ```
 
-![A screenshot that shows the text, Department in title font at the top, a search field below the title, and three items listed below the search field called, Produce, Frozen, and Bakery. The search field has the placeholder text, Departments and products.](https://docs-assets.developer.apple.com/published/2d3c92d15a0de2b73ffcfbcc2b45005f/Search-add-4-iPadOS%402x.png)
+![A screenshot that shows the text, Department in title font at the top, a search field below the title, and three items listed below the search field called, Produce, Frozen, and Bakery. The search field has the placeholder text, Departments and products.](/images/com.apple.SwiftUI/Search-add-4-iPadOS@2x.png)
 
 ## See Also
 

@@ -25,7 +25,7 @@ func accessibilityZoomOut(at point: CGPoint) -> Bool
 
 #### Discussion
 
-If your element has the [`supportsZoom`](https://developer.apple.com/documentation/UIKit/UIAccessibilityTraits/supportsZoom) trait, you need to implement this method and [`accessibilityZoomIn(at:)`](nsobject-swift.class/accessibilityzoomin(at:).md). Use this method to zoom out from the specified point. For example, if the element allows a pinch gesture to zoom out from the view’s content, implement this method so that the VoiceOver zoom action receives the same behavior.
+If your element has the [`supportsZoom`](https://developer.apple.com/documentation/uikit/uiaccessibilitytraits/supportszoom) trait, you need to implement this method and [`accessibilityZoomIn(at:)`](nsobject-swift.class/accessibilityzoomin(at:).md). Use this method to zoom out from the specified point. For example, if the element allows a pinch gesture to zoom out from the view’s content, implement this method so that the VoiceOver zoom action receives the same behavior.
 
 ## Parameters
 

@@ -42,9 +42,9 @@ If you are building a hardware device or accessory that uses Wi-Fi Aware, refer 
   Make outgoing and accept incoming secure connections with paired devices.
 - [Adopting Wi-Fi Aware](adopting-wi-fi-aware.md)
   Add entitlements and declare your app’s services.
-- [com.apple.developer.wifi-aware](../BundleResources/Entitlements/com.apple.developer.wifi-aware.md)
+- [com.apple.developer.wifi-aware](../bundleresources/entitlements/com.apple.developer.wifi-aware.md)
   The entitlement the system requires for an app to use the Wi-Fi Aware framework.
-- [WiFiAwareServices](../BundleResources/Information-Property-List/WiFiAwareServices.md)
+- [WiFiAwareServices](../bundleresources/information-property-list/wifiawareservices.md)
   Dictionaries of Wi-Fi Aware services that the app can publish or subscribe to.
 ### Host capabilities
 - [struct WACapabilities](wacapabilities.md)
@@ -84,9 +84,9 @@ If you are building a hardware device or accessory that uses Wi-Fi Aware, refer 
 - [WAPublisherListener.DatapathParameters](wapublisherlistener/datapathparameters.md)
   The parameter that sets the initial Wi-Fi Aware data path configuration for any devices that are connected.
 ### Parameters
-- [class NWParameters](../Network/NWParameters.md)
+- [class NWParameters](../network/nwparameters.md)
   An object that stores the protocols to use for connections, options for sending data, and network path constraints.
-- [struct NWParametersBuilder](../Network/NWParametersBuilder.md)
+- [struct NWParametersBuilder](../network/nwparametersbuilder.md)
   An opaque class that is responsible for creating and configuring NWParameters based on the parameterized protocol stack.
 - [struct WAParameters](waparameters.md)
   Parameters configuring a Wi-Fi Aware data path connection.
@@ -99,7 +99,7 @@ If you are building a hardware device or accessory that uses Wi-Fi Aware, refer 
 - [struct WASharedSecret](washaredsecret.md)
   A high-entropy shared secret unique to this network connection.
 ### Connection performance
-- [struct NWPath](../Network/NWPath.md)
+- [struct NWPath](../network/nwpath.md)
   An object that contains information about the properties of the network that a connection uses, or that are available to your app.
 - [struct WAPath](wapath.md)
   A representation of the current Wi-Fi Aware path.
@@ -110,7 +110,7 @@ If you are building a hardware device or accessory that uses Wi-Fi Aware, refer 
 - [struct WAPerformanceReport](waperformancereport.md)
   The current performance state of the data path.
 ### Errors
-- [enum NWError](../Network/NWError.md)
+- [enum NWError](../network/nwerror.md)
   The errors returned by objects in the Network framework.
 - [enum WAError](waerror.md)
   An error in Wi-Fi Aware.

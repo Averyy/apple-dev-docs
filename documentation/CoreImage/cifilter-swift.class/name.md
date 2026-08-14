@@ -21,7 +21,7 @@ var name: String { get set }
 
 #### Discussion
 
-You use a filter’s name to construct key paths to its attributes when the filter is attached to a Core Animation layer. For example, if a [`CALayer`](https://developer.apple.com/documentation/QuartzCore/CALayer) object has an attached [`CIFilter`](cifilter-swift.class.md) instance whose name is `myExposureFilter`, you can refer to attributes of the filter using a key path such as `filters.myExposureFilter.inputEV`. Layer animations may also access filter attributes via these key paths.
+You use a filter’s name to construct key paths to its attributes when the filter is attached to a Core Animation layer. For example, if a [`CALayer`](https://developer.apple.com/documentation/quartzcore/calayer) object has an attached [`CIFilter`](cifilter-swift.class.md) instance whose name is `myExposureFilter`, you can refer to attributes of the filter using a key path such as `filters.myExposureFilter.inputEV`. Layer animations may also access filter attributes via these key paths.
 
 Core Animation can animate this property on a layer.
 

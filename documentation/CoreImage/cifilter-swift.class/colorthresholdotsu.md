@@ -41,7 +41,7 @@ func colorThresholdOTSU(inputImage: CIImage) -> CIImage {
 }
 ```
 
-![Two images arranged horizontally. The left image contains a photograph of a modern building with light colored concrete set against a clear sky. The image on the right shows the result of applying the color threshold Otsu filter. The light colored concrete is now set to bright white and the sky is set to fully saturated blue. ](https://docs-assets.developer.apple.com/published/751eccb4fed425e0a02b3360948639a3/media-4407336%402x.png)
+![Two images arranged horizontally. The left image contains a photograph of a modern building with light colored concrete set against a clear sky. The image on the right shows the result of applying the color threshold Otsu filter. The light colored concrete is now set to bright white and the sky is set to fully saturated blue. ](/images/com.apple.coreimage/media-4407336@2x.png)
 
 ## See Also
 

@@ -22,7 +22,7 @@ let kCTStrokeColorAttributeName: CFString
 
 #### Discussion
 
-Value must be a [`CGColor`](https://developer.apple.com/documentation/CoreGraphics/CGColor) object. Default is the foreground color.
+Value must be a [`CGColor`](https://developer.apple.com/documentation/coregraphics/cgcolor) object. Default is the foreground color.
 
 ## See Also
 

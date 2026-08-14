@@ -60,7 +60,7 @@ These adjustments reduce the ALU’s workload by making the work simpler or by s
 
 ##### Reduce the Workload for Texture Operations
 
-The GPU reads texture data for each color attachment of a render pass when you set its [`loadAction`](https://developer.apple.com/documentation/Metal/MTLRenderPassAttachmentDescriptor/loadAction) property to [`MTLLoadAction.load`](https://developer.apple.com/documentation/Metal/MTLLoadAction/load), and each time a GPU function reads, gathers, or samples a texture. Textures that have larger dimensions, or use larger pixel formats, consume more memory and typically increase the amount of data the GPU reads to sample the texture.
+The GPU reads texture data for each color attachment of a render pass when you set its [`loadAction`](https://developer.apple.com/documentation/metal/mtlrenderpassattachmentdescriptor/loadaction) property to [`MTLLoadAction.load`](https://developer.apple.com/documentation/metal/mtlloadaction/load), and each time a GPU function reads, gathers, or samples a texture. Textures that have larger dimensions, or use larger pixel formats, consume more memory and typically increase the amount of data the GPU reads to sample the texture.
 
 If the counters indicate the texture *sample* operations may be a bottleneck, you can try the following adjustments and evaluate any changes in your app’s performance:
 
@@ -70,7 +70,7 @@ If the counters indicate the texture *sample* operations may be a bottleneck, yo
 - Work with textures that have smaller dimensions or use smaller pixel formats.
 - Replace reading or sampling single-channel textures with gather operations, which use the GPU more efficiently.
 
-Similarly, the GPU saves texture data for each color attachment of a render pass when you set its [`storeAction`](https://developer.apple.com/documentation/Metal/MTLRenderPassAttachmentDescriptor/storeAction) property to [`MTLStoreAction.store`](https://developer.apple.com/documentation/Metal/MTLStoreAction/store), and each time a GPU function explicitly writes to a texture.
+Similarly, the GPU saves texture data for each color attachment of a render pass when you set its [`storeAction`](https://developer.apple.com/documentation/metal/mtlrenderpassattachmentdescriptor/storeaction) property to [`MTLStoreAction.store`](https://developer.apple.com/documentation/metal/mtlstoreaction/store), and each time a GPU function explicitly writes to a texture.
 
 If the counters indicate the texture *write* operations may be a bottleneck, you can try the following adjustments and evaluate any changes in your app’s performance:
 

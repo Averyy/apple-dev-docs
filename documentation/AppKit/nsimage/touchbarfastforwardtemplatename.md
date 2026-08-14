@@ -19,7 +19,7 @@ class let touchBarFastForwardTemplateName: String
 
 #### Discussion
 
-![Template image for fast forward](https://docs-assets.developer.apple.com/published/9186d40c5b05a477e7f1446a04363199/media-2825113%402x.png)
+![Template image for fast forward](/images/com.apple.appkit/media-2825113@2x.png)
 
 Touch Bar template images are exclusively for use in [`NSTouchBarItem`](nstouchbaritem.md) objects and not in onscreen windows.
 

@@ -10,7 +10,7 @@ Using layer selection, you can render to multiple layers (*slices*) of a texture
 
 Layer selection is useful when you need to render content to multiple related textures from the same source data, such as when rendering environment cube maps or stereo imagery for virtual reality.
 
-![A block diagram that shows a render pipeline whose final destination is a set of texture slices.](https://docs-assets.developer.apple.com/published/1d7179e4aab7df6b2d5402c340dd0a8f/rendering-to-multiple-texture-slices-in-a-draw-command-1%402x.png)
+![A block diagram that shows a render pipeline whose final destination is a set of texture slices.](/images/com.apple.metal/rendering-to-multiple-texture-slices-in-a-draw-command-1@2x.png)
 
 For a specific example that demonstrates layer selection, see [`Rendering reflections with fewer render passes`](rendering-reflections-with-fewer-render-passes.md).
 

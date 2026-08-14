@@ -33,9 +33,9 @@ See also [`vDSP_ctoz`](1579975-vdsp_ctoz.md) and [`vDSP_ctozD`](https://develope
 ## Parameters
 
 - `__Z`: Single-precision split-complex input vector.
-- `__IZ`: Stride for  .
+- `__IZ`: Stride for `Z`.
 - `__C`: Single-precision interleaved complex output vector.
-- `__IC`: Stride for  . Must be an even number.
+- `__IC`: Stride for `C`. Must be an even number.
 - `__N`: The number of elements to process.
 
 

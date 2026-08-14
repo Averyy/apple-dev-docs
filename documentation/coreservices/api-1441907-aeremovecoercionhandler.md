@@ -26,10 +26,10 @@ Use of system coercion tables is not recommended. For more information, see Writ
 
 ## Parameters
 
-- `fromType`: The descriptor type of the data coerced by the handler. For a list of AppleScript’s predefined descriptor types, see  . See  .
-- `toType`: The descriptor type of the resulting data. For a list of AppleScript’s predefined descriptor types, see  . See  .
-- `handler`: A universal procedure pointer to the coercion handler to remove. Although the parameters   and   are sufficient to identify the handler, you can identify the handler explicitly as a safeguard. If you pass   for this parameter, the Apple Event Manager relies solely on the event class and event ID to identify the handler. See  .
-- `isSysHandler`: Specifies the coercion table to remove the handler from. Pass   to remove the handler from the system coercion table or   to remove the handler from your application’s coercion table. Use of the system coercion table is not recommended.
+- `fromType`: The descriptor type of the data coerced by the handler. For a list of AppleScript’s predefined descriptor types, see [`Descriptor Type Constants`](apple_events/1542788-descriptor_type_constants.md). See [`DescType`](desctype.md).
+- `toType`: The descriptor type of the resulting data. For a list of AppleScript’s predefined descriptor types, see [`Descriptor Type Constants`](apple_events/1542788-descriptor_type_constants.md). See [`DescType`](desctype.md).
+- `handler`: A universal procedure pointer to the coercion handler to remove. Although the parameters `fromType` and `toType` are sufficient to identify the handler, you can identify the handler explicitly as a safeguard. If you pass `NULL` for this parameter, the Apple Event Manager relies solely on the event class and event ID to identify the handler. See [`AECoercionHandlerUPP`](aecoercionhandlerupp.md).
+- `isSysHandler`: Specifies the coercion table to remove the handler from. Pass `TRUE` to remove the handler from the system coercion table or `FALSE` to remove the handler from your application’s coercion table. Use of the system coercion table is not recommended.
 
 ## See Also
 

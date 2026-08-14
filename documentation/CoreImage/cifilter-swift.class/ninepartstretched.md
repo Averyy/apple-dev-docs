@@ -30,9 +30,9 @@ This method applies the nine-part stretched filter to an image. This effect dist
 The nine-part stretched filter uses the following properties:
 
 - **`inputImage`**: An image with the type [`CIImage`](ciimage.md).
-- **`growAmount`**: A [`CGPoint`](https://developer.apple.com/documentation/CoreFoundation/CGPoint) representing the amount of stretching applied.
-- **`breakpoint0`**: A [`CGPoint`](https://developer.apple.com/documentation/CoreFoundation/CGPoint) representing the lower-left corner of the image to retain before stretching begins.
-- **`breakpoint1`**: A [`CGPoint`](https://developer.apple.com/documentation/CoreFoundation/CGPoint) representing the upper-right corner of the image to retain after stretching ends.
+- **`growAmount`**: A [`CGPoint`](https://developer.apple.com/documentation/corefoundation/cgpoint) representing the amount of stretching applied.
+- **`breakpoint0`**: A [`CGPoint`](https://developer.apple.com/documentation/corefoundation/cgpoint) representing the lower-left corner of the image to retain before stretching begins.
+- **`breakpoint1`**: A [`CGPoint`](https://developer.apple.com/documentation/corefoundation/cgpoint) representing the upper-right corner of the image to retain after stretching ends.
 
 The following code creates a filter that results in a significantly warped image:
 
@@ -48,7 +48,7 @@ func ninePartStretch(inputImage: CIImage) -> CIImage {
 }
 ```
 
-![Two images arranged horizontally. The left image contains a photograph of three hydrangea flowers with dark leaves in the background. An area inset by 200 pixels from all sides is highlighted using a rectangle. The image on the right shows the result of applying the nine part stretched filter. The area within the red rectangle has been stretched making the image larger. The areas outside of the rectangle have been warped to match the stretched area.](https://docs-assets.developer.apple.com/published/1c46d64e7f107e3d4cadd6f729e972b0/media-4407340%402x.png)
+![Two images arranged horizontally. The left image contains a photograph of three hydrangea flowers with dark leaves in the background. An area inset by 200 pixels from all sides is highlighted using a rectangle. The image on the right shows the result of applying the nine part stretched filter. The area within the red rectangle has been stretched making the image larger. The areas outside of the rectangle have been warped to match the stretched area.](/images/com.apple.coreimage/media-4407340@2x.png)
 
 ## See Also
 

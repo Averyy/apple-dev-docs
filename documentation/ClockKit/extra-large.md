@@ -8,7 +8,7 @@ Display content on the X-Large watch face.
 
 Extra large templates display text and images on the X-Large watch faces.
 
-![Examples of the extra large template. From left to right they are stack text, ring image, stack image, simple text, simple image, and ring text.](https://docs-assets.developer.apple.com/published/25044f3b094ba1e2d5f0edf4bf63344a/media-2878966%402x.png)
+![Examples of the extra large template. From left to right they are stack text, ring image, stack image, simple text, simple image, and ring text.](/images/com.apple.clockkit/media-2878966@2x.png)
 
 ## Topics
 
@@ -51,7 +51,7 @@ Extra large templates display text and images on the X-Large watch faces.
   An abstract class that defines the base behavior for all templates.
 - [enum CLKComplicationFamily](clkcomplicationfamily.md)
   Constants indicating the template groups.
-- [CLKComplicationSupportedFamilies](../BundleResources/Information-Property-List/CLKComplicationSupportedFamilies.md)
+- [CLKComplicationSupportedFamilies](../bundleresources/information-property-list/clkcomplicationsupportedfamilies.md)
   The complication families for which the app can provide data.
 
 

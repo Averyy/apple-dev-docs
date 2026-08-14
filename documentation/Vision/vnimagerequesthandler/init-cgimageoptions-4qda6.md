@@ -21,7 +21,7 @@ init(cgImage image: CGImage, options: [VNImageOption : Any] = [:])
 
 ## Parameters
 
-- `image`: A [`CGImage`](https://developer.apple.com/documentation/CoreGraphics/CGImage) containing the image to be used for performing the requests. Image content is immutable.
+- `image`: A [`CGImage`](https://developer.apple.com/documentation/coregraphics/cgimage) containing the image to be used for performing the requests. Image content is immutable.
 - `options`: An optional dictionary containing [`VNImageOption`](vnimageoption.md) keys to auxiliary image data.
 
 ## See Also

@@ -30,7 +30,7 @@ This function should be used after displaying the Print dialog to the user so th
 
 - `printer`: The printer whose output resolution you want to obtain.
 - `printSettings`: The print settings you want to use.
-- `resolutionP`: A pointer to your   structure. On return, the structure contains the output resolution of the specified printer in pixels per inch.
+- `resolutionP`: A pointer to your [`PMResolution`](core_printing/pmresolution.md) structure. On return, the structure contains the output resolution of the specified printer in pixels per inch.
 
 ## See Also
 

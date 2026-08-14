@@ -25,7 +25,7 @@ These samples use count units (described in [`HKUnit`](hkunit.md)) and measure c
 
 ##### Detect and Respond to Falls
 
-There are two approaches to detecting falls in your app. You can either query for [`numberOfTimesFallen`](hkquantitytypeidentifier/numberoftimesfallen.md) samples in HealthKit, or you can use Core Motion’s [`CMFallDetectionManager`](https://developer.apple.com/documentation/CoreMotion/CMFallDetectionManager).
+There are two approaches to detecting falls in your app. You can either query for [`numberOfTimesFallen`](hkquantitytypeidentifier/numberoftimesfallen.md) samples in HealthKit, or you can use Core Motion’s [`CMFallDetectionManager`](https://developer.apple.com/documentation/coremotion/cmfalldetectionmanager).
 
 The Core Motion fall detection manager is particularly useful for apps that need to respond to falls in a timely manner so that the app can provide help to the person who fell.
 

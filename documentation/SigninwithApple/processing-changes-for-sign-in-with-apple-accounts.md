@@ -110,9 +110,9 @@ When a user requests for Apple to permanently delete their Apple Account, Apple 
 }
 ```
 
-> ❗ **Important**:  When a user permanently deletes their Apple Account, Sign in with Apple invalidates all user tokens and disables email forwarding for all associated apps. For native apps, the system doesn’t send a [`credentialRevokedNotification`](https://developer.apple.com/documentation/AuthenticationServices/ASAuthorizationAppleIDProvider/credentialRevokedNotification). Use [`getCredentialState(forUserID:completion:)`](https://developer.apple.com/documentation/AuthenticationServices/ASAuthorizationAppleIDProvider/getCredentialState(forUserID:completion:)) to respond to account deletion events.
+> ❗ **Important**:  When a user permanently deletes their Apple Account, Sign in with Apple invalidates all user tokens and disables email forwarding for all associated apps. For native apps, the system doesn’t send a [`credentialRevokedNotification`](https://developer.apple.com/documentation/authenticationservices/asauthorizationappleidprovider/credentialrevokednotification). Use [`getCredentialState(forUserID:completion:)`](https://developer.apple.com/documentation/authenticationservices/asauthorizationappleidprovider/getcredentialstate(foruserid:completion:)) to respond to account deletion events.
 
-To indicate when the user disables or permanently deletes their Apple Account, be sure to update your server’s records according to your process. For more information about handling Managed Apple Accounts, see [`Obtaining information about people and classes`](https://developer.apple.com/documentation/RosterAPI/obtaining-information-about-people-and-classes).
+To indicate when the user disables or permanently deletes their Apple Account, be sure to update your server’s records according to your process. For more information about handling Managed Apple Accounts, see [`Obtaining information about people and classes`](https://developer.apple.com/documentation/rosterapi/obtaining-information-about-people-and-classes).
 
 ## See Also
 

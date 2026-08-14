@@ -49,7 +49,7 @@ VStack {
 }
 ```
 
-![A view showing the effect of the compositingGroup modifier in applying](https://docs-assets.developer.apple.com/published/102ab31bc2decb6b1f250dfb49c77c62/SwiftUI-View-compositingGroup%402x.png)
+![A view showing the effect of the compositingGroup modifier in applying](/images/com.apple.SwiftUI/SwiftUI-View-compositingGroup@2x.png)
 
 ## See Also
 

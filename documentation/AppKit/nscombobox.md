@@ -18,11 +18,11 @@ class NSComboBox
 
 A combo box combines the behavior of an [`NSTextField`](nstextfield.md) object with an [`NSPopUpButton`](nspopupbutton.md) object. A combo box displays a list of values from a pop-up list, but also provides a means for users to type in custom values. For example, here’s a combo box in its initial state.
 
-![A screenshot of a collapsed combo box.](https://docs-assets.developer.apple.com/published/65f42bd3cb9d4a4446fbf8d1787c78ef/media-4305420%402x.png)
+![A screenshot of a collapsed combo box.](/images/com.apple.appkit/media-4305420@2x.png)
 
 Clicking in the text portion of the control allows the user to edit the current value. When the user clicks the down arrow at the right side of the text field, the pop-up list appears.
 
-![A screenshot of an expanded combo box. The first item in the list, Item A, is selected. The remaining three items are expanded and listed below.](https://docs-assets.developer.apple.com/published/f83a89430289e9e2f8f6682454ce30b5/media-4305419%402x.png)
+![A screenshot of an expanded combo box. The first item in the list, Item A, is selected. The remaining three items are expanded and listed below.](/images/com.apple.appkit/media-4305419@2x.png)
 
 The [`NSComboBox`](nscombobox.md) class uses [`NSComboBoxCell`](nscomboboxcell.md) to implement its user interface.
 
@@ -113,28 +113,28 @@ Also see the [`NSComboBoxDataSource`](nscomboboxdatasource.md) protocol, which d
 ### Inherits From
 - [NSTextField](nstextfield.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
 - [NSAccessibilityElementProtocol](nsaccessibilityelementprotocol.md)
 - [NSAccessibilityNavigableStaticText](nsaccessibilitynavigablestatictext.md)
 - [NSAccessibilityProtocol](nsaccessibilityprotocol.md)
 - [NSAccessibilityStaticText](nsaccessibilitystatictext.md)
 - [NSAnimatablePropertyContainer](nsanimatablepropertycontainer.md)
 - [NSAppearanceCustomization](nsappearancecustomization.md)
-- [NSCoding](../Foundation/NSCoding.md)
+- [NSCoding](../foundation/nscoding.md)
 - [NSDraggingDestination](nsdraggingdestination.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 - [NSStandardKeyBindingResponding](nsstandardkeybindingresponding.md)
 - [NSTextContent](nstextcontent.md)
 - [NSTouchBarProvider](nstouchbarprovider.md)
 - [NSUserActivityRestoring](nsuseractivityrestoring.md)
 - [NSUserInterfaceItemIdentification](nsuserinterfaceitemidentification.md)
 - [NSUserInterfaceValidations](nsuserinterfacevalidations.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 
 ---

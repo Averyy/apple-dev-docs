@@ -16,7 +16,7 @@ let IKImageBrowserPathRepresentationType: String
 
 #### Discussion
 
-A path representation ([`NSString`](https://developer.apple.com/documentation/Foundation/NSString)).
+A path representation ([`NSString`](https://developer.apple.com/documentation/foundation/nsstring)).
 
 ## See Also
 

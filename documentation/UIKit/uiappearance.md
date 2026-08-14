@@ -70,7 +70,7 @@ To support appearance customization, a class must conform to the [`UIAppearanceC
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 ### Conforming Types
 - [UIActionSheet](uiactionsheet.md)
 - [UIActivityIndicatorView](uiactivityindicatorview.md)

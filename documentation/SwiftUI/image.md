@@ -34,8 +34,8 @@ struct Image
 Use an `Image` instance when you want to add images to your SwiftUI app. You can create images from many sources:
 
 - Image files in your app’s asset library or bundle. Supported types include PNG, JPEG, HEIC, and more.
-- Instances of platform-specific image types, like [`UIImage`](https://developer.apple.com/documentation/UIKit/UIImage) and [`NSImage`](https://developer.apple.com/documentation/AppKit/NSImage).
-- A bitmap stored in a Core Graphics [`CGImage`](https://developer.apple.com/documentation/CoreGraphics/CGImage) instance.
+- Instances of platform-specific image types, like [`UIImage`](https://developer.apple.com/documentation/uikit/uiimage) and [`NSImage`](https://developer.apple.com/documentation/appkit/nsimage).
+- A bitmap stored in a Core Graphics [`CGImage`](https://developer.apple.com/documentation/coregraphics/cgimage) instance.
 - System graphics from the SF Symbols set.
 
 The following example shows how to load an image from the app’s asset library or bundle and scale it to fit within its container:
@@ -47,7 +47,7 @@ Image("Landscape_4")
 Text("Water wheel")
 ```
 
-![An image of a water wheel and its adjoining building, resized to fit the](https://docs-assets.developer.apple.com/published/5d218460da75fc53e2a4398f3ab30a3b/Image-1%402x.png)
+![An image of a water wheel and its adjoining building, resized to fit the](/images/com.apple.SwiftUI/Image-1@2x.png)
 
 You can use methods on the `Image` type as well as standard view modifiers to adjust the size of the image to fit your app’s interface. Here, the `Image` type’s [`resizable(capInsets:resizingMode:)`](image/resizable(capinsets:resizingmode:).md) method scales the image to fit the current view. Then, the [`aspectRatio(_:contentMode:)`](view/aspectratio(_:contentmode:).md) view modifier adjusts this resizing behavior to maintain the image’s original aspect ratio, rather than scaling the x- and y-axes independently to fill all four sides of the view. The article [`Fitting images into available space`](fitting-images-into-available-space.md) shows how to apply scaling, clipping, and tiling to `Image` instances of different sizes.
 
@@ -133,13 +133,13 @@ To use an image as a control, use one of the initializers that takes a `label` p
 ## Relationships
 
 ### Conforms To
-- [Copyable](../Swift/Copyable.md)
-- [Equatable](../Swift/Equatable.md)
-- [Escapable](../Swift/Escapable.md)
-- [JournalingSuggestionAsset](../JournalingSuggestions/JournalingSuggestionAsset.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
-- [Transferable](../CoreTransferable/Transferable.md)
+- [Copyable](../swift/copyable.md)
+- [Equatable](../swift/equatable.md)
+- [Escapable](../swift/escapable.md)
+- [JournalingSuggestionAsset](../journalingsuggestions/journalingsuggestionasset.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
+- [Transferable](../coretransferable/transferable.md)
 - [View](view.md)
 
 

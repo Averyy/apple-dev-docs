@@ -22,7 +22,7 @@ static let categoryBitMask: SCNHitTestOption
 
 #### Discussion
 
-The value for this key is an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) object containing an integer value. If present, the search will return only nodes that both satisfy the hit test and have a [`categoryBitMask`](scnnode/categorybitmask.md) value overlapping this bitmask.
+The value for this key is an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) object containing an integer value. If present, the search will return only nodes that both satisfy the hit test and have a [`categoryBitMask`](scnnode/categorybitmask.md) value overlapping this bitmask.
 
 ## See Also
 

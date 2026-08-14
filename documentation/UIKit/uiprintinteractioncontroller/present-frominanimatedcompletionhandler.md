@@ -19,7 +19,7 @@ func present(from rect: CGRect, in view: UIView, animated: Bool, completionHandl
 
 #### Discussion
 
-It is valid to call this method for applications on iPad devices. Calling this method on an iPhone or iPod touch with `animated` set to [`true`](https://developer.apple.com/documentation/Swift/true) causes the printing options view to animate upward from the bottom of the screen.
+It is valid to call this method for applications on iPad devices. Calling this method on an iPhone or iPod touch with `animated` set to [`true`](https://developer.apple.com/documentation/swift/true) causes the printing options view to animate upward from the bottom of the screen.
 
 If you call this method when the printing options are already displayed, `UIPrintInteractionController` hides the printing-options popover view. You must call the method again to display the options.
 
@@ -27,7 +27,7 @@ If you call this method when the printing options are already displayed, `UIPrin
 
 - `rect`: A rectangle that defines the area from which the printing popover view is animated.
 - `view`: The view providing the coordinate system for `rect`.
-- `animated`: [`true`](https://developer.apple.com/documentation/Swift/true) to animate the printing popover view from `item`, [`false`](https://developer.apple.com/documentation/Swift/false) to display it immediately.
+- `animated`: [`true`](https://developer.apple.com/documentation/swift/true) to animate the printing popover view from `item`, [`false`](https://developer.apple.com/documentation/swift/false) to display it immediately.
 - `completion`: A block of type [`UIPrintInteractionController.CompletionHandler`](uiprintinteractioncontroller/completionhandler.md) that you implement to handle the conclusion of the print job (for instance, to reset state) and to handle any errors encountered in printing.
 
 ## See Also

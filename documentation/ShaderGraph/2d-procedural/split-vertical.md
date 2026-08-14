@@ -26,11 +26,11 @@ A top-to-bottom split matte, split at a specified V value.
 
 This node creates two distinct regions along the vertical axis. The value of the `Center` input determines the regions. A value of `0` establishes the center at the top-most, position causing the output to always be equal to the `Top` input. A value of `1` establishes the center at the bottom-most position. Below is a an example of a simple node graph that uses `Split Vertical` to create a split color:
 
-![None](https://docs-assets.developer.apple.com/published/4c238efca001e7e1d912c0d1b322cfd9/SplitVerticalGraph.png)
+![None](/images/ShaderGraph-Docs/SplitVerticalGraph.png)
 
 By editing the center value, you change the texture to show a larger top or bottom region. The image below shows the resulting textures:
 
-![None](https://docs-assets.developer.apple.com/published/e93fc156dba3409fa1a0c50ceaeda4f9/SplitVerticalMaterial1.png)
+![None](/images/ShaderGraph-Docs/SplitVerticalMaterial1.png)
 
 ## See Also
 

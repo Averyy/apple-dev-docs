@@ -29,7 +29,7 @@ Send [`isWord(inUserDictionaries:caseSensitive:)`](nsspellserver/isword(inuserdi
 - `stringToCheck`: The string to search for the misspelled word.
 - `language`: The language to use for the search.
 - `wordCount`: On output, returns by reference the number of words from the beginning of the string object until the misspelled word (or the end of string).
-- `countOnly`: If [`true`](https://developer.apple.com/documentation/Swift/true), the method only counts the words in the string object and does not spell checking.
+- `countOnly`: If [`true`](https://developer.apple.com/documentation/swift/true), the method only counts the words in the string object and does not spell checking.
 
 ## See Also
 

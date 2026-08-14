@@ -36,10 +36,10 @@ protocol CaseDisplayRepresentable : CustomLocalizedStringResourceConvertible, Ca
 ## Relationships
 
 ### Inherits From
-- [CaseIterable](../Swift/CaseIterable.md)
-- [CustomLocalizedStringResourceConvertible](../Foundation/CustomLocalizedStringResourceConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
+- [CaseIterable](../swift/caseiterable.md)
+- [CustomLocalizedStringResourceConvertible](../foundation/customlocalizedstringresourceconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
 ### Inherited By
 - [AppEnum](appenum.md)
 - [AppUnionValueCasesProviding](appunionvaluecasesproviding.md)

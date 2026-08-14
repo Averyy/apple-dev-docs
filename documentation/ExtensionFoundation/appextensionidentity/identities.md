@@ -29,7 +29,7 @@ struct Identities
 ## Relationships
 
 ### Conforms To
-- [AsyncSequence](../Swift/AsyncSequence.md)
+- [AsyncSequence](../swift/asyncsequence.md)
 
 ## See Also
 

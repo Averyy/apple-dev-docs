@@ -21,14 +21,14 @@ An instance of OSDictionary containing the key/object pairs provided, with a ret
 
 #### Overview
 
-`objects` and `keys` must be non-`NULL`, and `count` must be nonzero. If `capacity` is nonzero, it must be greater than or equal to `count`. The new dictionary will grow as needed to accommodate more key/object pairs (`CFMutableDictionary`, for which the initial capacity is a hard limit).
+`objects` and `keys` must be non-`NULL`, and `count` must be nonzero. If `capacity` is nonzero, it must be greater than or equal to `count`. The new dictionary will grow as needed to accommodate more key/object pairs (*unlike*[`CFMutableDictionary`](https://developer.apple.com/documentation/corefoundation/cfmutabledictionary), for which the initial capacity is a hard limit).
 
 ## Parameters
 
 - `objects`: A C array of OSMetaClassBase-derived objects.
-- `keys`: A C array of OSString keys for the corresponding objects in  .
+- `keys`: A C array of OSString keys for the corresponding objects in `objects`.
 - `count`: The number of keys and objects to be placed into the dictionary.
-- `capacity`: The initial storage capacity of the new dictionary object. If 0,   is used; otherwise this value must be greater than or equal to  .
+- `capacity`: The initial storage capacity of the new dictionary object. If 0, `count` is used; otherwise this value must be greater than or equal to `count`.
 
 ## See Also
 

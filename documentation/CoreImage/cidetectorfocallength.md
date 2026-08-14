@@ -21,7 +21,7 @@ let CIDetectorFocalLength: String
 
 #### Discussion
 
-The value of this key is an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) object whose value is a floating-point number. Use this option with the [`CIDetectorTypeRectangle`](cidetectortyperectangle.md) detector type to control the effect of the [`CIDetectorAspectRatio`](cidetectoraspectratio.md) option on feature detection.
+The value of this key is an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) object whose value is a floating-point number. Use this option with the [`CIDetectorTypeRectangle`](cidetectortyperectangle.md) detector type to control the effect of the [`CIDetectorAspectRatio`](cidetectoraspectratio.md) option on feature detection.
 
 This option’s value can be `0.0`, `-1.0`, or any positive value:
 

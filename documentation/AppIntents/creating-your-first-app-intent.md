@@ -38,7 +38,7 @@ For a list of specialized protocols you can use to define app intents, see [`App
 
 An app intent performs an action, and its parameters specify what data to use when performing the action. Parameters are properties with app-specfic data or settings your app intent code needs to run, and you use them to make your app intent more flexible. For example, instead of creating one app intent type to play songs and another to play albums, you can create one app intent type to play any music your app supports. The parameters of the app intent tell it whether to play a song, an album, or some other type of audio content.
 
-If your app intent supports one of the system-defined schemas, the schema defines which properties are parameters. For app intents you create yourself, you designate properties as parameters by adding the `@Parameter` property wrapper to your declaration. This property wrapper is a typealias for the [`IntentParameter`](intentparameter.md) type, so you can use it to specify additional parameter-related information such as a custom title, description, or Spotlight indexing key. The following example shows a parameter declaration with an optional [`Measurement`](https://developer.apple.com/documentation/Foundation/Measurement) type. The property wrapper parameters tell the system that the property contains a distance in kilometers and that it only supports positive numbers.
+If your app intent supports one of the system-defined schemas, the schema defines which properties are parameters. For app intents you create yourself, you designate properties as parameters by adding the `@Parameter` property wrapper to your declaration. This property wrapper is a typealias for the [`IntentParameter`](intentparameter.md) type, so you can use it to specify additional parameter-related information such as a custom title, description, or Spotlight indexing key. The following example shows a parameter declaration with an optional [`Measurement`](https://developer.apple.com/documentation/foundation/measurement) type. The property wrapper parameters tell the system that the property contains a distance in kilometers and that it only supports positive numbers.
 
 ```swift
 @Parameter(defaultUnit: .kilometers, supportsNegativeNumbers: false)
@@ -68,7 +68,7 @@ The system can call your [`perform()`](appintent/perform().md) method under a va
 - **Configure the foreground and background options for your app intent.** Tell the system when to run your app intent in the foreground or background using the [`supportedModes`](appintent/supportedmodes.md) property. Design app intents to run in the background whenever possible, but add foreground modes to faciltate interactions or update your app’s interface.
 - **Add support for long-running actions.** If your code needs extra time to run, add support for the [`LongRunningIntent`](longrunningintent.md) protocol to your app intent. This protocol gives you extra time to perform long-running computations or to ensure a critical task such as writing a file to disk is able to finish.
 - **Respond gracefully to cancellation requests.** Support system- or person-initiated requests to cancel an in-progress action using the [`CancellableIntent`](cancellableintent.md) protocol. Typically, you combine this protocol with [`LongRunningIntent`](longrunningintent.md) to give people a way to cancel long-running operations safely.
-- **Support undoable actions.** If an action affects your app’s interface or content in a way people might want to reverse, add support for the [`UndoableIntent`](undoableintent.md) protocol. This protocol provides an [`UndoManager`](https://developer.apple.com/documentation/Foundation/UndoManager) type you can use to add your action to your app’s undo stack.
+- **Support undoable actions.** If an action affects your app’s interface or content in a way people might want to reverse, add support for the [`UndoableIntent`](undoableintent.md) protocol. This protocol provides an [`UndoManager`](https://developer.apple.com/documentation/foundation/undomanager) type you can use to add your action to your app’s undo stack.
 
 ##### Return a Result Back to the Caller
 
@@ -186,13 +186,13 @@ During development, validate that your intents behave as you expect by testing t
 
 Set a breakpoint at the top of your `perform()` method to confirm your implementation is working. The debugger pauses execution immediately after you run the shortcut, enabling you to step through the code and inspect the intent’s parameters to verify they have the values they require.
 
-Another way to test your code is using the App Intents Testing framework. For more information about how to use it, see [`App Intents Testing`](https://developer.apple.com/documentation/AppIntentsTesting).
+Another way to test your code is using the App Intents Testing framework. For more information about how to use it, see [`App Intents Testing`](https://developer.apple.com/documentation/appintentstesting).
 
 ## See Also
 
 - [Accelerating app interactions with App Intents](acceleratingappinteractionswithappintents.md)
   Enable people to use your app’s features quickly through Siri, Spotlight, and Shortcuts.
-- [Soup Chef with App Intents: Migrating custom intents](../SiriKit/soup-chef-with-app-intents-migrating-custom-intents.md)
+- [Soup Chef with App Intents: Migrating custom intents](../sirikit/soup-chef-with-app-intents-migrating-custom-intents.md)
   Integrating App Intents to provide your appʼs actions to Siri and Shortcuts.
 - [protocol AppIntent](appintent.md)
   An interface you use to express app-specific actions and make them available to the rest of the system.

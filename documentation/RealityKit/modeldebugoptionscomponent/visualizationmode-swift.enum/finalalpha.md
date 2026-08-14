@@ -36,7 +36,7 @@ if let television = try? await ModelEntity(named: "tv_retro") {
 
 | [`ModelDebugOptionsComponent.VisualizationMode.none`](modeldebugoptionscomponent/visualizationmode-swift.enum/none.md) | `finalAlpha` |
 | --- | --- |
-| ![A screenshot of a virtual TV in a visionOS app. The TV is an old-fashioned television displaying a multicolored test pattern. It is drawn with shadows and highlights to appear as realistic as possible.](https://docs-assets.developer.apple.com/published/a57e508a6549f1c8cce08e79ea6b7ec5/ModelDebugOptionsComponent-VisualizationMode-enum-none.jpg) | ![A screenshot of a virtual TV in a visionOS app. The TV is using a final alpha visualization, appearing completely white, except for the screen, which is gray, representing the TV’s calculated transparency.](https://docs-assets.developer.apple.com/published/fa558e439651d4fb339fd59e59a8344a/ModelDebugOptionsComponent-VisualizationMode-enum-finalAlpha.jpg) |
+| ![A screenshot of a virtual TV in a visionOS app. The TV is an old-fashioned television displaying a multicolored test pattern. It is drawn with shadows and highlights to appear as realistic as possible.](/images/com.apple.RealityKit/ModelDebugOptionsComponent-VisualizationMode-enum-none.jpg) | ![A screenshot of a virtual TV in a visionOS app. The TV is using a final alpha visualization, appearing completely white, except for the screen, which is gray, representing the TV’s calculated transparency.](/images/com.apple.RealityKit/ModelDebugOptionsComponent-VisualizationMode-enum-finalAlpha.jpg) |
 
 ## See Also
 

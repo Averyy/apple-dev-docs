@@ -24,8 +24,8 @@ class NSFetchRequest<ResultType> where ResultType : NSFetchRequestResult
 
 An instance of [`NSFetchRequest`](nsfetchrequest.md) collects the criteria needed to select and optionally to sort a group of [`NSManagedObject`](https://developer.apple.comhttps://developer.apple.com/library/archive/releasenotes/Cocoa/CoreDataReleaseNotes/index.html#//apple_ref/doc/uid/TP40006503-SW6) managed objects held in an [`NSPersistentStore`](nspersistentstore.md) persistent store. A fetch request contains an [`NSEntityDescription`](nsentitydescription.md) or an entity name that specifies which entity to search. It frequently also contains:
 
-- An [`NSPredicate`](https://developer.apple.com/documentation/Foundation/NSPredicate) predicate that specifies which properties to filter by and the constraints on selection, such as, `“last name begins with a ‘J’”`. If you don’t specify a predicate, then the system fetches all instances of the entity that you specified, subject to other constraints. For more information, see [`fetch(_:)`](nsmanagedobjectcontext/fetch(_:)-38ys1.md).
-- An array of [`NSSortDescriptor`](https://developer.apple.com/documentation/Foundation/NSSortDescriptor) sort descriptors that specify how to order the returned objects, such as ascending by last name and then by first name.
+- An [`NSPredicate`](https://developer.apple.com/documentation/foundation/nspredicate) predicate that specifies which properties to filter by and the constraints on selection, such as, `“last name begins with a ‘J’”`. If you don’t specify a predicate, then the system fetches all instances of the entity that you specified, subject to other constraints. For more information, see [`fetch(_:)`](nsmanagedobjectcontext/fetch(_:)-38ys1.md).
+- An array of [`NSSortDescriptor`](https://developer.apple.com/documentation/foundation/nssortdescriptor) sort descriptors that specify how to order the returned objects, such as ascending by last name and then by first name.
 
 You can also specify other aspects of a fetch request:
 
@@ -43,7 +43,7 @@ Use [`execute()`](nsfetchrequest/execute().md) to perform the fetch directly on 
 
 > **Note**:  When you execute an instance of [`NSFetchRequest`](nsfetchrequest.md), it always accesses the underlying persistent stores to retrieve the latest results.
 
-In [`SwiftUI`](https://developer.apple.com/documentation/SwiftUI), you can use a [`FetchRequest`](https://developer.apple.com/documentation/SwiftUI/FetchRequest) property wrapper to execute the fetch and assign the results to a property. First, create the request:
+In [`SwiftUI`](https://developer.apple.com/documentation/swiftui), you can use a [`FetchRequest`](https://developer.apple.com/documentation/swiftui/fetchrequest) property wrapper to execute the fetch and assign the results to a property. First, create the request:
 
 ```swift
 let request: NSFetchRequest = {
@@ -63,7 +63,7 @@ let request: NSFetchRequest = {
 }()
 ```
 
-Then use a [`FetchRequest`](https://developer.apple.com/documentation/SwiftUI/FetchRequest) property wrapper with the request to declare a property that receives the objects that the fetch returns:
+Then use a [`FetchRequest`](https://developer.apple.com/documentation/swiftui/fetchrequest) property wrapper with the request to declare a property that receives the objects that the fetch returns:
 
 ```swift
 // Use a `FetchRequest` property wrapper to fetch the managed objects
@@ -71,7 +71,7 @@ Then use a [`FetchRequest`](https://developer.apple.com/documentation/SwiftUI/Fe
 @FetchRequest(fetchRequest: request) private var items: FetchedResults<ShoppingItem>
 ```
 
-> 💡 **Tip**:  If you don’t need to specify multiple properties of the fetch, you can avoid creating the fetch request separately and declare it in the property wrapper instead. See [`FetchRequest`](https://developer.apple.com/documentation/SwiftUI/FetchRequest) for more information.
+> 💡 **Tip**:  If you don’t need to specify multiple properties of the fetch, you can avoid creating the fetch request separately and declare it in the property wrapper instead. See [`FetchRequest`](https://developer.apple.com/documentation/swiftui/fetchrequest) for more information.
 
 You often predefine fetch requests in an [`NSManagedObjectModel`](nsmanagedobjectmodel.md) managed object model to provide an API to retrieve a stored fetch request by name. Stored fetch requests can include placeholders for variable substitution, and serve as templates for later completion. Fetch request templates allow you to predefine queries with variables to substitute at runtime.
 
@@ -149,14 +149,14 @@ You often predefine fetch requests in an [`NSManagedObjectModel`](nsmanagedobjec
 ### Inherits From
 - [NSPersistentStoreRequest](nspersistentstorerequest.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCoding](../Foundation/NSCoding.md)
-- [NSCopying](../Foundation/NSCopying.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCoding](../foundation/nscoding.md)
+- [NSCopying](../foundation/nscopying.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

@@ -23,7 +23,7 @@ var overlayContainerView: UIView { get }
 
 #### Discussion
 
-Optionally, add custom highlights to this view that doesn’t interfere with hit-testing or the guidance objects. If you want to add interface objects above the highlights, add those objects as subviews of the [`view`](https://developer.apple.com/documentation/UIKit/UIViewController/view) property.
+Optionally, add custom highlights to this view that doesn’t interfere with hit-testing or the guidance objects. If you want to add interface objects above the highlights, add those objects as subviews of the [`view`](https://developer.apple.com/documentation/uikit/uiviewcontroller/view) property.
 
 ## See Also
 

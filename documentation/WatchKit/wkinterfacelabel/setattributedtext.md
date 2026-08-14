@@ -22,7 +22,7 @@ func setAttributedText(_ attributedText: NSAttributedString?)
 
 This method changes the label text to the new value, replacing the old text if any. Any font and style attributes applied to the string take precedence over default values. If you do not explicitly specify font or styling information, the default values are used instead. For example, if you do not specify a text color explicitly, the default text color is used.
 
-Attributed strings may not contain any [`NSTextAttachment`](https://developer.apple.com/documentation/UIKit/NSTextAttachment) objects as part of their content.
+Attributed strings may not contain any [`NSTextAttachment`](https://developer.apple.com/documentation/uikit/nstextattachment) objects as part of their content.
 
 ## Parameters
 

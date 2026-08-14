@@ -10,9 +10,9 @@ The system uses associated domains to initiate a secure association between your
 
 Before you can define associated domains and the services they provide, follow the steps in the [`Add a capability`](adding-capabilities-to-your-app#Add-a-capability.md) section of [`Adding capabilities to your app`](adding-capabilities-to-your-app.md) to add the capability to your app’s target, making sure you select the Associated Domains capability from Xcode’s Capabilities library. For watchOS apps with separate WatchKit extensions, add the capability to the WatchKit Extension target.
 
-![A screenshot of Xcode’s Capabilities library with a list of available capabilities on the left and an information pane on the right. The list shows a range of capabilities from Associated Domains to FileProvider Testing Mode, and the Associated Domains capability is in a selected state. The text on the information pane explains that associated domains allow your app to associate with a specific domain for a specific service, such as accessing Safari saved password and activity continuation.](https://docs-assets.developer.apple.com/published/117997d21b6866c2bab5a72e614b2c35/associated-domains%402x.png)
+![A screenshot of Xcode’s Capabilities library with a list of available capabilities on the left and an information pane on the right. The list shows a range of capabilities from Associated Domains to FileProvider Testing Mode, and the Associated Domains capability is in a selected state. The text on the information pane explains that associated domains allow your app to associate with a specific domain for a specific service, such as accessing Safari saved password and activity continuation.](/images/com.apple.Xcode/associated-domains@2x.png)
 
-If not already present, Xcode updates your target’s entitlements file to include the [`Associated Domains Entitlement`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.associated-domains), which is an array that contains each associated domain you define. If you enable the “Automatically manage signing” option for your target, Xcode also updates your app’s App ID in your developer account and generates and downloads an updated provisioning profile.
+If not already present, Xcode updates your target’s entitlements file to include the [`Associated Domains Entitlement`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.associated-domains), which is an array that contains each associated domain you define. If you enable the “Automatically manage signing” option for your target, Xcode also updates your app’s App ID in your developer account and generates and downloads an updated provisioning profile.
 
 > **Note**: If you later remove the Associated Domains capability in Xcode, you must manually update your App ID’s configuration in your developer account to fully disable the feature.
 
@@ -33,7 +33,7 @@ Update the placeholder to contain the service your app supports and its associat
 <service>:<fully qualified domain>
 ```
 
-![A screenshot of the Associated Domains capability after you add it to your app’s target. The Domains list contains two associated domains; one for the applinks service and one for the appclips service.](https://docs-assets.developer.apple.com/published/a80ea5021f852cea27649f643086b76f/associated-domains-list%402x.png)
+![A screenshot of the Associated Domains capability after you add it to your app’s target. The Domains list contains two associated domains; one for the applinks service and one for the appclips service.](/images/com.apple.Xcode/associated-domains-list@2x.png)
 
 Only include the top-level domain and, where necessary, the subdomain; don’t include path and query components, or a trailing slash.
 
@@ -43,11 +43,11 @@ The following table describes the services that associated domains support:
 
 | Service | Description |
 | --- | --- |
-| `webcredentials` | If your domain supports shared web credentials, see [`Managing Shared Credentials`](https://developer.apple.com/documentation/Security/managing-shared-credentials) for more information. |
-| `authsrv` | If your domain needs to authenticate people, see [`Authenticating a User Through a Web Service`](https://developer.apple.com/documentation/AuthenticationServices/authenticating-a-user-through-a-web-service) for more information. |
+| `webcredentials` | If your domain supports shared web credentials, see [`Managing Shared Credentials`](https://developer.apple.com/documentation/security/managing-shared-credentials) for more information. |
+| `authsrv` | If your domain needs to authenticate people, see [`Authenticating a User Through a Web Service`](https://developer.apple.com/documentation/authenticationservices/authenticating-a-user-through-a-web-service) for more information. |
 | `applinks` | If your domain supports universal links, see [`Supporting universal links in your app`](supporting-universal-links-in-your-app.md) for more information. |
 | `activitycontinuation` | If your domain supports Handoff, see [`Web Browser-to-Native App Handoff`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/UserExperience/Conceptual/Handoff/AdoptingHandoff/AdoptingHandoff.html#//apple_ref/doc/uid/TP40014338-CH2-SW10) for more information. |
-| `appclips` | If your domain supports App Clips, see [`Associating your App Clip with your website`](https://developer.apple.com/documentation/AppClip/associating-your-app-clip-with-your-website) for more information. |
+| `appclips` | If your domain supports App Clips, see [`Associating your App Clip with your website`](https://developer.apple.com/documentation/appclip/associating-your-app-clip-with-your-website) for more information. |
 
 ##### Provide an Apple App Site Association File
 
@@ -69,7 +69,7 @@ Follow these steps to enable alternate mode on a specific associated domain:
 6. Append the string `?mode=<alternate mode>` to the associated domain. Replace `<alternate mode>` with one of the modes shown in the list below.
 7. Press Return to save the updated associated domain.
 
-![A screenshot of the Associated Domains capability after you add it to your app’s target. The Domains list contains a single associated domain that includes the developer alternate mode.](https://docs-assets.developer.apple.com/published/625b8058510f80792e47ae36ef3e6ded/alternate-mode%402x.png)
+![A screenshot of the Associated Domains capability after you add it to your app’s target. The Domains list contains a single associated domain that includes the developer alternate mode.](/images/com.apple.Xcode/alternate-mode@2x.png)
 
 The following table describes the alternate modes that associated domains support:
 

@@ -33,9 +33,9 @@ If you create multiple contexts to represent the same content for different loca
 ## Properties
 
 - `keywords` ([string]): A list of tags that describes your content.
-- `locale` (string) *(required)*: The locale for which you designed the context. You can upload multiple versions of a context that have the same identifier path but different locales. Use one of the identifiers that the [`Locale`](https://developer.apple.com/documentation/Foundation/Locale) structure supports, like `en-us`.
+- `locale` (string) *(required)*: The locale for which you designed the context. You can upload multiple versions of a context that have the same identifier path but different locales. Use one of the identifiers that the [`Locale`](https://developer.apple.com/documentation/foundation/locale) structure supports, like `en-us`.
 - `minimumBundleVersion` (string): The earliest version of your app that supports this context, which is a string of numbers that use periods as delimiters, like *6.3* or *10.5.12*. Delete contexts for versions of your app that you no longer support.
-- `presentableLocales` ([string]): A list of locales — any of the identifiers that the [`Locale`](https://developer.apple.com/documentation/Foundation/Locale) structure supports — for which this context data is suitable. If you don’t set this value, the system sets it to a single-element array containing the value of the `locale` field. Set the value to `mul` to indicate that the content is suitable for any locale.
+- `presentableLocales` ([string]): A list of locales — any of the identifiers that the [`Locale`](https://developer.apple.com/documentation/foundation/locale) structure supports — for which this context data is suitable. If you don’t set this value, the system sets it to a single-element array containing the value of the `locale` field. Set the value to `mul` to indicate that the content is suitable for any locale.
 - `standardsAlignments` ([string]): A list of standards to which the context adheres.
 - `presentablePaths` ([Context.Metadata.PresentablePaths]): A list of identifier paths that act as the context’s parent context. If you don’t set a value for this field, the system adds a path representing the default parent of this context. A context can have a maximum of 2000 child contexts.
 

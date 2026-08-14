@@ -22,11 +22,11 @@ class NSMutableDictionary
 
 #### Overview
 
-In Swift, you can use this type instead of a [`Dictionary`](https://developer.apple.com/documentation/Swift/Dictionary) variable in cases that require reference semantics.
+In Swift, you can use this type instead of a [`Dictionary`](https://developer.apple.com/documentation/swift/dictionary) variable in cases that require reference semantics.
 
 The `NSMutableDictionary` class declares the programmatic interface to objects that manage mutable associations of keys and values. It adds modification operations to the basic operations it inherits from [`NSDictionary`](nsdictionary.md).
 
-`NSMutableDictionary` is “toll-free bridged” with its Core Foundation counterpart, [`CFMutableDictionary`](https://developer.apple.com/documentation/CoreFoundation/CFMutableDictionary). See [`Toll-Free Bridging`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Conceptual/CocoaEncyclopedia/Toll-FreeBridgin/Toll-FreeBridgin.html#//apple_ref/doc/uid/TP40010810-CH2) for more information on toll-free bridging.
+`NSMutableDictionary` is “toll-free bridged” with its Core Foundation counterpart, [`CFMutableDictionary`](https://developer.apple.com/documentation/corefoundation/cfmutabledictionary). See [`Toll-Free Bridging`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Conceptual/CocoaEncyclopedia/Toll-FreeBridgin/Toll-FreeBridgin.html#//apple_ref/doc/uid/TP40010810-CH2) for more information on toll-free bridging.
 
 ##### Setting Values Using Subscripting
 
@@ -119,22 +119,22 @@ You must also override the primitive methods of the [`NSDictionary`](nsdictionar
 ### Inherits From
 - [NSDictionary](nsdictionary.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomReflectable](../Swift/CustomReflectable.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [ExpressibleByDictionaryLiteral](../Swift/ExpressibleByDictionaryLiteral.md)
-- [Hashable](../Swift/Hashable.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomReflectable](../swift/customreflectable.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [ExpressibleByDictionaryLiteral](../swift/expressiblebydictionaryliteral.md)
+- [Hashable](../swift/hashable.md)
 - [NSCoding](nscoding.md)
 - [NSCopying](nscopying.md)
 - [NSFastEnumeration](nsfastenumeration.md)
 - [NSMutableCopying](nsmutablecopying.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 - [NSSecureCoding](nssecurecoding.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
-- [Sequence](../Swift/Sequence.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sequence](../swift/sequence.md)
 
 
 ---

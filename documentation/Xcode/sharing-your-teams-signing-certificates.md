@@ -21,7 +21,7 @@ If you need to generate a code signing identity for a particular purpose — for
 7. In the lower-left corner of the signing certificates sheet, click the Add button (+) and choose the certificate type from the pop-up menu.
 8. Click Done.
 
-![A screenshot of the certificate management panel in Xcode.](https://docs-assets.developer.apple.com/published/4bdd037af150a4780537dbe3ab1a8b77/certificate-management%402x.png)
+![A screenshot of the certificate management panel in Xcode.](/images/com.apple.Xcode/certificate-management@2x.png)
 
 #### Export Your Signing Identity to Share with a Team Member
 
@@ -39,8 +39,8 @@ To export a signing identity as a password-protected PKCS#12 file:
 4. Select your Apple Account from the list of accounts.
 5. Select the team from the list of your Apple Account teams.
 6. Click Manage Certificates.
-7. In the signing certificates sheet, Control-click the certificate corresponding to the signing identity that you want to export and choose Export Certificate from the pop-up menu. ![A screenshot of the certificate management panel in Xcode. A certificate is selected, and “Export Certificate” is chosen in the contextual menu.](https://docs-assets.developer.apple.com/published/ec116498118c693759b4dbb5d05af8f0/sharing-certificates-1%402x.png)
-8. In the sheet that appears, choose the location to save the PKCS#12 file. ![A screenshot of the save panel in Xcode for exporting a code signing identity.](https://docs-assets.developer.apple.com/published/28a238936e1ab3789ded4ce207f4e378/sharing-certificates-2%402x.png)
+7. In the signing certificates sheet, Control-click the certificate corresponding to the signing identity that you want to export and choose Export Certificate from the pop-up menu. ![A screenshot of the certificate management panel in Xcode. A certificate is selected, and “Export Certificate” is chosen in the contextual menu.](/images/com.apple.Xcode/sharing-certificates-1@2x.png)
+8. In the sheet that appears, choose the location to save the PKCS#12 file. ![A screenshot of the save panel in Xcode for exporting a code signing identity.](/images/com.apple.Xcode/sharing-certificates-2@2x.png)
 9. Enter a file name, and a password to protect the identity’s private key.
 10. Click Save.
 
@@ -69,11 +69,11 @@ You can only delete certificates that you or a team member revoke in your develo
   Sign Mac code for distribution using either Xcode or command-line tools.
 - [Using the latest code signature format](using-the-latest-code-signature-format.md)
   Update legacy app code signatures so your app runs on current OS releases.
-- [Notarizing macOS software before distribution](../Security/notarizing-macos-software-before-distribution.md)
+- [Notarizing macOS software before distribution](../security/notarizing-macos-software-before-distribution.md)
   Give users even more confidence in your macOS software by submitting it to Apple for notarization.
 - [Signing a daemon with a restricted entitlement](signing-a-daemon-with-a-restricted-entitlement.md)
   Wrap a daemon in an app-like structure to use an entitlement thatʼs authorized by a provisioning profile.
-- [TN3125: Inside Code Signing: Provisioning Profiles](../Technotes/tn3125-inside-code-signing-provisioning-profiles.md)
+- [TN3125: Inside Code Signing: Provisioning Profiles](../technotes/tn3125-inside-code-signing-provisioning-profiles.md)
   Learn how provisioning profiles enable third-party code to run on Apple platforms.
 
 

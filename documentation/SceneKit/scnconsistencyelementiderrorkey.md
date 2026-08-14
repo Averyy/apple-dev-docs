@@ -22,7 +22,7 @@ let SCNConsistencyElementIDErrorKey: String
 
 #### Discussion
 
-The value for this key is a [`NSString`](https://developer.apple.com/documentation/Foundation/NSString) object containing an identifier.
+The value for this key is a [`NSString`](https://developer.apple.com/documentation/foundation/nsstring) object containing an identifier.
 
 If the element in which the error occurred does not have an identifier, the value for this key is the identifier of the closest parent element with an identifier.
 

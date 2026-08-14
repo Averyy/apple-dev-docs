@@ -8,7 +8,7 @@ Enable people to move between different parts of your app’s view hierarchy wit
 
 Use navigation containers to provide structure to your app’s user interface, enabling people to easily move among the parts of your app.
 
-![None](https://docs-assets.developer.apple.com/published/f89769a3e08273224563454dc8f3ce0d/navigation-hero%402x.png)
+![None](/images/com.apple.SwiftUI/navigation-hero@2x.png)
 
 For example, people can move forward and backward through a stack of views using a [`NavigationStack`](navigationstack.md), or choose which view to display from a tab bar using a [`TabView`](tabview.md).
 

@@ -16,13 +16,13 @@ func exceptionHandler(_ sender: NSExceptionHandler!, shouldHandle exception: NSE
 
 #### Return Value
 
-[`YES`](yes.md) to have the [`NSExceptionHandler`](https://developer.apple.com/documentation/ExceptionHandling/NSExceptionHandler) object handle the exception, [`NO`](no.md) otherwise.
+[`YES`](yes.md) to have the [`NSExceptionHandler`](https://developer.apple.com/documentation/exceptionhandling/nsexceptionhandler) object handle the exception, [`NO`](no.md) otherwise.
 
 ## Parameters
 
-- `sender`: The [`NSExceptionHandler`](https://developer.apple.com/documentation/ExceptionHandling/NSExceptionHandler) object sending the message.
-- `exception`: An [`NSException`](https://developer.apple.com/documentation/Foundation/NSException) object describing the exception to be evaluated.
-- `aMask`: The bit mask indicating the types of exceptions handled by the [`NSExceptionHandler`](https://developer.apple.com/documentation/ExceptionHandling/NSExceptionHandler) object. See Logging and Handling Constants and System Hang Constants for descriptions of the possible `enum` constants.
+- `sender`: The [`NSExceptionHandler`](https://developer.apple.com/documentation/exceptionhandling/nsexceptionhandler) object sending the message.
+- `exception`: An [`NSException`](https://developer.apple.com/documentation/foundation/nsexception) object describing the exception to be evaluated.
+- `aMask`: The bit mask indicating the types of exceptions handled by the [`NSExceptionHandler`](https://developer.apple.com/documentation/exceptionhandling/nsexceptionhandler) object. See Logging and Handling Constants and System Hang Constants for descriptions of the possible `enum` constants.
 
 
 ---

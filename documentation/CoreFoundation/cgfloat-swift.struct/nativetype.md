@@ -22,7 +22,7 @@ typealias NativeType = Double
 
 #### Discussion
 
-The native type used to store the [`CGFloat`](cgfloat-swift.struct.md), which is [`Float`](https://developer.apple.com/documentation/Swift/Float) on 32-bit architectures and [`Double`](https://developer.apple.com/documentation/Swift/Double) on 64-bit architectures.
+The native type used to store the [`CGFloat`](cgfloat-swift.struct.md), which is [`Float`](https://developer.apple.com/documentation/swift/float) on 32-bit architectures and [`Double`](https://developer.apple.com/documentation/swift/double) on 64-bit architectures.
 
 
 ---

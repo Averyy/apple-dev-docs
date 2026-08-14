@@ -21,9 +21,9 @@ enum : unsigned int {
 - [kREAD_CAPACITY_RTO_Disabled](1638043-anonymous/kread_capacity_rto_disabled.md)
 - [kREAD_CAPACITY_RTO_Enabled](1638043-anonymous/kread_capacity_rto_enabled.md)
 - [kREAD_CAPACITY_RTO_Mask](1638043-anonymous/kread_capacity_rto_mask.md)
-- [kREAD_CAPACITY_RTO_Disabled](../driverkit/1638043-anonymous/kread_capacity_rto_disabled.md)
-- [kREAD_CAPACITY_RTO_Enabled](../driverkit/1638043-anonymous/kread_capacity_rto_enabled.md)
-- [kREAD_CAPACITY_RTO_Mask](../driverkit/1638043-anonymous/kread_capacity_rto_mask.md)
+- [kREAD_CAPACITY_RTO_Disabled](../driverkit/kread_capacity_rto_disabled.md)
+- [kREAD_CAPACITY_RTO_Enabled](../driverkit/kread_capacity_rto_enabled.md)
+- [kREAD_CAPACITY_RTO_Mask](../driverkit/kread_capacity_rto_mask.md)
 
 
 ---

@@ -22,7 +22,7 @@ class var momentum: MLParameterKey { get }
 
 #### Discussion
 
-The value type for the [`momentum`](mlparameterkey/momentum.md) key is a [`Double`](https://developer.apple.com/documentation/Swift/Double).
+The value type for the [`momentum`](mlparameterkey/momentum.md) key is a [`Double`](https://developer.apple.com/documentation/swift/double).
 
 ## See Also
 

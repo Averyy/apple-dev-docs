@@ -17,7 +17,7 @@ let kAudioSession_InputSourceKey_ID: CFString!
 
 #### Discussion
 
-A [`CFNumber`](https://developer.apple.com/documentation/CoreFoundation/CFNumber) object, defined by a USB audio accessory attached to the device through the iPad camera connection kit, that identifies an audio input source. When setting a source on the accessory, use this identifier.
+A [`CFNumber`](https://developer.apple.com/documentation/corefoundation/cfnumber) object, defined by a USB audio accessory attached to the device through the iPad camera connection kit, that identifies an audio input source. When setting a source on the accessory, use this identifier.
 
 ## See Also
 

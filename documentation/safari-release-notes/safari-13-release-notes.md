@@ -22,7 +22,7 @@ Safari 13 ships with iOS 13 and macOS 10.15. It’s also available for macOS 10.
 
 - Updated Safari to prompt the user to change weak passwords when signing into a website. Requesting a password change uses the well-known URL for changing passwords, enabling websites to specify the page to open for updating a password.
 - Added support for FIDO2-compliant USB security keys with the Web Authentication standard in Safari on macOS.
-- Added support for Sign in With Apple to Safari and to [`WKWebView`](https://developer.apple.com/documentation/WebKit/WKWebView).
+- Added support for Sign in With Apple to Safari and to [`WKWebView`](https://developer.apple.com/documentation/webkit/wkwebview).
 
 ##### Security and Privacy
 
@@ -68,7 +68,7 @@ Safari 13 ships with iOS 13 and macOS 10.15. It’s also available for macOS 10.
 
 ###### New Features
 
-- Added support for Apple Pay on the Web to [`WKWebView`](https://developer.apple.com/documentation/WebKit/WKWebView). Note that using script injection APIs, such as [`WKUserScript`](https://developer.apple.com/documentation/WebKit/WKUserScript) or [`evaluateJavaScript(_:completionHandler:)`](https://developer.apple.com/documentation/WebKit/WKWebView/evaluateJavaScript(_:completionHandler:)) disables Apple Pay for that view.
+- Added support for Apple Pay on the Web to [`WKWebView`](https://developer.apple.com/documentation/webkit/wkwebview). Note that using script injection APIs, such as [`WKUserScript`](https://developer.apple.com/documentation/webkit/wkuserscript) or [`evaluateJavaScript(_:completionHandler:)`](https://developer.apple.com/documentation/webkit/wkwebview/evaluatejavascript(_:completionhandler:)) disables Apple Pay for that view.
 
 ##### Media
 
@@ -77,7 +77,7 @@ Safari 13 ships with iOS 13 and macOS 10.15. It’s also available for macOS 10.
 - Added support for the `decodingInfo()` method of the Media Capabilities API for checking supported codecs, efficiently supported codecs, and optional codec features including alpha.
 - Added the ability to Safari for macOS to share your screen with others using only web technologies. Plug-ins are no longer required.
 - Updated Safari for iPad to support Media Source Extensions.
-- Added support for the `navigator.mediaDevices` property of the Media Capture and Streams API to [`SFSafariViewController`](https://developer.apple.com/documentation/SafariServices/SFSafariViewController).
+- Added support for the `navigator.mediaDevices` property of the Media Capture and Streams API to [`SFSafariViewController`](https://developer.apple.com/documentation/safariservices/sfsafariviewcontroller).
 
 ###### Resolved Issues
 
@@ -114,9 +114,9 @@ Safari 13 ships with iOS 13 and macOS 10.15. It’s also available for macOS 10.
 
 ###### New Features
 
-- Added [`ASAuthorizationController`](https://developer.apple.com/documentation/AuthenticationServices/ASAuthorizationController) to implement Sign In with Apple and to use a system-provided sign-in account picker for accounts stored in iCloud Keychain.
-- Added [`ASWebAuthenticationSession`](https://developer.apple.com/documentation/AuthenticationServices/ASWebAuthenticationSession) to the SDK for macOS.
-- Added support for using web browsers other than Safari to [`ASWebAuthenticationSession`](https://developer.apple.com/documentation/AuthenticationServices/ASWebAuthenticationSession) on macOS. For more information, see [`ASWebAuthenticationSessionWebBrowserSessionManager`](https://developer.apple.com/documentation/AuthenticationServices/ASWebAuthenticationSessionWebBrowserSessionManager).
+- Added [`ASAuthorizationController`](https://developer.apple.com/documentation/authenticationservices/asauthorizationcontroller) to implement Sign In with Apple and to use a system-provided sign-in account picker for accounts stored in iCloud Keychain.
+- Added [`ASWebAuthenticationSession`](https://developer.apple.com/documentation/authenticationservices/aswebauthenticationsession) to the SDK for macOS.
+- Added support for using web browsers other than Safari to [`ASWebAuthenticationSession`](https://developer.apple.com/documentation/authenticationservices/aswebauthenticationsession) on macOS. For more information, see [`ASWebAuthenticationSessionWebBrowserSessionManager`](https://developer.apple.com/documentation/authenticationservices/aswebauthenticationsessionwebbrowsersessionmanager).
 
 ##### Webkit Framework
 
@@ -140,7 +140,7 @@ Safari 13 ships with iOS 13 and macOS 10.15. It’s also available for macOS 10.
 
 ###### Differences From Ios
 
-- [`SFSafariViewController`](https://developer.apple.com/documentation/SafariServices/SFSafariViewController) opens the URL in the user’s web browser and immediately calls [`safariViewControllerDidFinish(_:)`](https://developer.apple.com/documentation/SafariServices/SFSafariViewControllerDelegate/safariViewControllerDidFinish(_:)).
+- [`SFSafariViewController`](https://developer.apple.com/documentation/safariservices/sfsafariviewcontroller) opens the URL in the user’s web browser and immediately calls [`safariViewControllerDidFinish(_:)`](https://developer.apple.com/documentation/safariservices/sfsafariviewcontrollerdelegate/safariviewcontrollerdidfinish(_:)).
 
 ## See Also
 

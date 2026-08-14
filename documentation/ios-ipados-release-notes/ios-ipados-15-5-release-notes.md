@@ -6,13 +6,13 @@ Update your apps to use new features, and test your apps against API changes.
 
 #### Overview
 
-The iOS & iPadOS 15.5 SDK provides support to develop apps for iPhone, iPad, and iPod touch devices running iOS & iPadOS 15.5. The SDK comes bundled with Xcode 13.4, available from the Mac App Store. For information on the compatibility requirements for Xcode 13.4, see [`Xcode 13.4 Release Notes`](https://developer.apple.com/documentation/Xcode-Release-Notes/xcode-13_4-release-notes).
+The iOS & iPadOS 15.5 SDK provides support to develop apps for iPhone, iPad, and iPod touch devices running iOS & iPadOS 15.5. The SDK comes bundled with Xcode 13.4, available from the Mac App Store. For information on the compatibility requirements for Xcode 13.4, see [`Xcode 13.4 Release Notes`](https://developer.apple.com/documentation/xcode-release-notes/xcode-13_4-release-notes).
 
 ##### Apple Pay
 
 ###### New Features
 
-- Developers can express payment network preference in [`PKPaymentRequest`](https://developer.apple.com/documentation/PassKit/PKPaymentRequest). Network preference is determined by the order of [`supportedNetworks`](https://developer.apple.com/documentation/PassKit/PKPaymentRequest/supportedNetworks). This won’t override the user’s default card selection, but if the card is multi-SSD, then the network preference order determines which SSD is selected. (80827905)
+- Developers can express payment network preference in [`PKPaymentRequest`](https://developer.apple.com/documentation/passkit/pkpaymentrequest). Network preference is determined by the order of [`supportedNetworks`](https://developer.apple.com/documentation/passkit/pkpaymentrequest/supportednetworks). This won’t override the user’s default card selection, but if the card is multi-SSD, then the network preference order determines which SSD is selected. (80827905)
 
 ##### Authentication
 
@@ -30,7 +30,7 @@ The iOS & iPadOS 15.5 SDK provides support to develop apps for iPhone, iPad, and
 
 ###### New Features
 
-- Support is now available for new DualSense adaptive trigger firmware features available via [`GCDualSenseAdaptiveTrigger`](https://developer.apple.com/documentation/GameController/GCDualSenseAdaptiveTrigger). (87433163)
+- Support is now available for new DualSense adaptive trigger firmware features available via [`GCDualSenseAdaptiveTrigger`](https://developer.apple.com/documentation/gamecontroller/gcdualsenseadaptivetrigger). (87433163)
 
 ##### Health App
 
@@ -104,7 +104,7 @@ The iOS & iPadOS 15.5 SDK provides support to develop apps for iPhone, iPad, and
 
 ###### New Features
 
-- A new [`Group Activities`](https://developer.apple.com/documentation/GroupActivities) API allows you to present UI that enables starting a SharePlay session from within your app. (88099397)
+- A new [`Group Activities`](https://developer.apple.com/documentation/groupactivities) API allows you to present UI that enables starting a SharePlay session from within your app. (88099397)
 
 ##### Storekit
 
@@ -114,32 +114,32 @@ The iOS & iPadOS 15.5 SDK provides support to develop apps for iPhone, iPad, and
 
 ###### New Features
 
-- [`SKTestSession`](https://developer.apple.com/documentation/StoreKitTest/SKTestSession) has three new methods to simulate a subscription requiring price increase consent, simulate consenting to a pending price increase, and simulate declining a price increase in automated tests. (84556183)
+- [`SKTestSession`](https://developer.apple.com/documentation/storekittest/sktestsession) has three new methods to simulate a subscription requiring price increase consent, simulate consenting to a pending price increase, and simulate declining a price increase in automated tests. (84556183)
 - StoreKit records an ad impression if the framework displays an ad for a minimum of 2 seconds, down from the previous minimum of 3 seconds. (85874835)
 
 - `SKTestSession` has two new Boolean properties to simulate billing retry and grace period in automated tests. You can identify and simulate the resolution of billing retry issues using the same APIs as interrupted purchases. (83956205)
 
-- Users can now test the billing retry and grace period states using StoreKit Testing in Xcode. Use Xcode 13.3 or later to enable billing retry testing and toggle whether the app offers a grace period. Use [`isInBillingRetry`](https://developer.apple.com/documentation/StoreKit/Product/SubscriptionInfo/RenewalInfo/isInBillingRetry) and [`gracePeriodExpirationDate`](https://developer.apple.com/documentation/StoreKit/Product/SubscriptionInfo/RenewalInfo/gracePeriodExpirationDate) to handle these states in the app. (83938270)
+- Users can now test the billing retry and grace period states using StoreKit Testing in Xcode. Use Xcode 13.3 or later to enable billing retry testing and toggle whether the app offers a grace period. Use [`isInBillingRetry`](https://developer.apple.com/documentation/storekit/product/subscriptioninfo/renewalinfo/isinbillingretry) and [`gracePeriodExpirationDate`](https://developer.apple.com/documentation/storekit/product/subscriptioninfo/renewalinfo/graceperiodexpirationdate) to handle these states in the app. (83938270)
 
-- You can now test offer codes with StoreKit Testing in Xcode. Configure offers for codes in Xcode 13.3 or later, and test redeeming them using [`presentCodeRedemptionSheet()`](https://developer.apple.com/documentation/StoreKit/SKPaymentQueue/presentCodeRedemptionSheet()). (63692551)
+- You can now test offer codes with StoreKit Testing in Xcode. Configure offers for codes in Xcode 13.3 or later, and test redeeming them using [`presentCodeRedemptionSheet()`](https://developer.apple.com/documentation/storekit/skpaymentqueue/presentcoderedemptionsheet()). (63692551)
 
-- Users can test subscription price increase behavior using StoreKit Testing in Xcode. Use Xcode 13.3 or later to set a price increase, then use [`paymentQueueShouldShowPriceConsent(_:)`](https://developer.apple.com/documentation/StoreKit/SKPaymentQueueDelegate/paymentQueueShouldShowPriceConsent(_:)), [`showPriceConsentIfNeeded()`](https://developer.apple.com/documentation/StoreKit/SKPaymentQueue/showPriceConsentIfNeeded()), and [`priceIncreaseStatus`](https://developer.apple.com/documentation/StoreKit/Product/SubscriptionInfo/RenewalInfo/priceIncreaseStatus-swift.property) in the app. (58770817)
+- Users can test subscription price increase behavior using StoreKit Testing in Xcode. Use Xcode 13.3 or later to set a price increase, then use [`paymentQueueShouldShowPriceConsent(_:)`](https://developer.apple.com/documentation/storekit/skpaymentqueuedelegate/paymentqueueshouldshowpriceconsent(_:)), [`showPriceConsentIfNeeded()`](https://developer.apple.com/documentation/storekit/skpaymentqueue/showpriceconsentifneeded()), and [`priceIncreaseStatus`](https://developer.apple.com/documentation/storekit/product/subscriptioninfo/renewalinfo/priceincreasestatus-swift.property) in the app. (58770817)
 
-- `StoreKit` error types now conform to [`LocalizedError`](https://developer.apple.com/documentation/Foundation/LocalizedError). (78735204)
+- `StoreKit` error types now conform to [`LocalizedError`](https://developer.apple.com/documentation/foundation/localizederror). (78735204)
 
-- Some types in `StoreKit` now have a `localizedDescription` read-only `String` instance property. This property can be used to get a human-readable description of the value, localized for the device’s current locale. These types include: [`Product.ProductType`](https://developer.apple.com/documentation/StoreKit/Product/ProductType), [`Product.SubscriptionInfo.RenewalState`](https://developer.apple.com/documentation/StoreKit/Product/SubscriptionInfo/RenewalState), [`expirationReason`](https://developer.apple.com/documentation/StoreKit/Product/SubscriptionInfo/RenewalInfo/expirationReason-swift.property), [`priceIncreaseStatus`](https://developer.apple.com/documentation/StoreKit/Product/SubscriptionInfo/RenewalInfo/priceIncreaseStatus-swift.property), [`Transaction.OfferType`](https://developer.apple.com/documentation/StoreKit/Transaction/OfferType-swift.struct), [`Product.SubscriptionOffer.OfferType`](https://developer.apple.com/documentation/StoreKit/Product/SubscriptionOffer/OfferType), [`Product.SubscriptionOffer.PaymentMode`](https://developer.apple.com/documentation/StoreKit/Product/SubscriptionOffer/PaymentMode-swift.struct), [`Product.SubscriptionPeriod.Unit`](https://developer.apple.com/documentation/StoreKit/Product/SubscriptionPeriod/Unit-swift.enum), [`Transaction.RevocationReason`](https://developer.apple.com/documentation/StoreKit/Transaction/RevocationReason-swift.struct), and [`Transaction.OwnershipType`](https://developer.apple.com/documentation/StoreKit/Transaction/OwnershipType-swift.struct). (78735060)
+- Some types in `StoreKit` now have a `localizedDescription` read-only `String` instance property. This property can be used to get a human-readable description of the value, localized for the device’s current locale. These types include: [`Product.ProductType`](https://developer.apple.com/documentation/storekit/product/producttype), [`Product.SubscriptionInfo.RenewalState`](https://developer.apple.com/documentation/storekit/product/subscriptioninfo/renewalstate), [`expirationReason`](https://developer.apple.com/documentation/storekit/product/subscriptioninfo/renewalinfo/expirationreason-swift.property), [`priceIncreaseStatus`](https://developer.apple.com/documentation/storekit/product/subscriptioninfo/renewalinfo/priceincreasestatus-swift.property), [`Transaction.OfferType`](https://developer.apple.com/documentation/storekit/transaction/offertype-swift.struct), [`Product.SubscriptionOffer.OfferType`](https://developer.apple.com/documentation/storekit/product/subscriptionoffer/offertype), [`Product.SubscriptionOffer.PaymentMode`](https://developer.apple.com/documentation/storekit/product/subscriptionoffer/paymentmode-swift.struct), [`Product.SubscriptionPeriod.Unit`](https://developer.apple.com/documentation/storekit/product/subscriptionperiod/unit-swift.enum), [`Transaction.RevocationReason`](https://developer.apple.com/documentation/storekit/transaction/revocationreason-swift.struct), and [`Transaction.OwnershipType`](https://developer.apple.com/documentation/storekit/transaction/ownershiptype-swift.struct). (78735060)
 
-- [`SKAdNetwork`](https://developer.apple.com/documentation/StoreKit/SKAdNetwork) implementation can now be unit tested using the [`StoreKit Test`](https://developer.apple.com/documentation/StoreKitTest) framework. You can use the `SKAdTestSession` class to test the validity of ad impressions, update conversion values on test postbacks, and receive test postbacks at the server. This class also displays the URL to which the optional developer postback is sent. (59571961)
+- [`SKAdNetwork`](https://developer.apple.com/documentation/storekit/skadnetwork) implementation can now be unit tested using the [`StoreKit Test`](https://developer.apple.com/documentation/storekittest) framework. You can use the `SKAdTestSession` class to test the validity of ad impressions, update conversion values on test postbacks, and receive test postbacks at the server. This class also displays the URL to which the optional developer postback is sent. (59571961)
 
 ###### Known Issues
 
-- When testing with StoreKit Testing in Xcode, the following APIs don’t work in the simulator: [`presentCodeRedemptionSheet()`](https://developer.apple.com/documentation/StoreKit/SKPaymentQueue/presentCodeRedemptionSheet()), [`paymentQueueShouldShowPriceConsent(_:)`](https://developer.apple.com/documentation/StoreKit/SKPaymentQueueDelegate/paymentQueueShouldShowPriceConsent(_:)), and [`showPriceConsentIfNeeded()`](https://developer.apple.com/documentation/StoreKit/SKPaymentQueue/showPriceConsentIfNeeded()). (85982859) **Workaround:** Test these APIs using an iOS device.
+- When testing with StoreKit Testing in Xcode, the following APIs don’t work in the simulator: [`presentCodeRedemptionSheet()`](https://developer.apple.com/documentation/storekit/skpaymentqueue/presentcoderedemptionsheet()), [`paymentQueueShouldShowPriceConsent(_:)`](https://developer.apple.com/documentation/storekit/skpaymentqueuedelegate/paymentqueueshouldshowpriceconsent(_:)), and [`showPriceConsentIfNeeded()`](https://developer.apple.com/documentation/storekit/skpaymentqueue/showpriceconsentifneeded()). (85982859) **Workaround:** Test these APIs using an iOS device.
 
 ##### Uikit
 
 ###### New Features
 
-- All animations created with [`UIView`](https://developer.apple.com/documentation/UIKit/UIView) block APIs or [`UIViewPropertyAnimator`](https://developer.apple.com/documentation/UIKit/UIViewPropertyAnimator) run at up to 120 Hz on iPhones with ProMotion displays. (86175551)
+- All animations created with [`UIView`](https://developer.apple.com/documentation/uikit/uiview) block APIs or [`UIViewPropertyAnimator`](https://developer.apple.com/documentation/uikit/uiviewpropertyanimator) run at up to 120 Hz on iPhones with ProMotion displays. (86175551)
 
 ## See Also
 

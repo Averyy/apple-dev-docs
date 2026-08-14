@@ -30,10 +30,10 @@ This method applies the perspective tile filter to an image. The effect adjusts 
 The perspective tile filter uses the following properties:
 
 - **`inputImage`**: An image with the type [`CIImage`](ciimage.md).
-- **`topLeft`**: A [`CGPoint`](https://developer.apple.com/documentation/CoreFoundation/CGPoint) of the input image mapped to the top-left corner of the tile.
-- **`topRight`**: A [`CGPoint`](https://developer.apple.com/documentation/CoreFoundation/CGPoint) of the input image mapped to the top-right corner of the tile.
-- **`bottomLeft`**: A [`CGPoint`](https://developer.apple.com/documentation/CoreFoundation/CGPoint) of the input image mapped to the bottom-left corner of the tile.
-- **`bottomRight`**: A [`CGPoint`](https://developer.apple.com/documentation/CoreFoundation/CGPoint) of the input image mapped to the bottom-right corner of the tile.
+- **`topLeft`**: A [`CGPoint`](https://developer.apple.com/documentation/corefoundation/cgpoint) of the input image mapped to the top-left corner of the tile.
+- **`topRight`**: A [`CGPoint`](https://developer.apple.com/documentation/corefoundation/cgpoint) of the input image mapped to the top-right corner of the tile.
+- **`bottomLeft`**: A [`CGPoint`](https://developer.apple.com/documentation/corefoundation/cgpoint) of the input image mapped to the bottom-left corner of the tile.
+- **`bottomRight`**: A [`CGPoint`](https://developer.apple.com/documentation/corefoundation/cgpoint) of the input image mapped to the bottom-right corner of the tile.
 
 The following code creates a filter that tiles the image and adjusts the perspective to add depth:
 
@@ -49,7 +49,7 @@ func perspective(inputImage: CIImage) -> CIImage {
 }
 ```
 
-![Two photographs. The photo on the left is of a bouquet of colorful flowers up close with good lighting and focus. In the photo on the right, a perspective tile filter is applied, resulting in the entire image becoming tiled and distorted.](https://docs-assets.developer.apple.com/published/3d79058eb77403da92385a6bdb239838/media-3599879%402x.png)
+![Two photographs. The photo on the left is of a bouquet of colorful flowers up close with good lighting and focus. In the photo on the right, a perspective tile filter is applied, resulting in the entire image becoming tiled and distorted.](/images/com.apple.coreimage/media-3599879@2x.png)
 
 ## See Also
 

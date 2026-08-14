@@ -28,7 +28,7 @@ If successful, a nonzero result code. See [`Metadata Identifier Error Codes`](me
 
 The returned `CFType` is based on the keyspace encoded in the identifier.
 
-For `OSType` keyspaces, the key will be returned as a `CFNumber`, where a big endian interpretation of its [`CFNumberType.sInt32Type`](https://developer.apple.com/documentation/CoreFoundation/CFNumberType/sInt32Type) value represents the four bytes of the key’s numeric value.
+For `OSType` keyspaces, the key will be returned as a `CFNumber`, where a big endian interpretation of its [`CFNumberType.sInt32Type`](https://developer.apple.com/documentation/corefoundation/cfnumbertype/sint32type) value represents the four bytes of the key’s numeric value.
 
 For the keyspaces [`kCMMetadataKeySpace_QuickTimeMetadata`](kcmmetadatakeyspace_quicktimemetadata.md) and [`kCMMetadataKeySpace_Icy`](kcmmetadatakeyspace_icy.md), the key will be returned as a `CFString`.
 

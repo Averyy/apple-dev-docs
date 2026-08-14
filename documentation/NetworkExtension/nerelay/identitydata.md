@@ -21,7 +21,7 @@ var identityData: Data? { get set }
 
 #### Discussion
 
-The value is a [`NSData`](https://developer.apple.com/documentation/Foundation/NSData) object in PKCS12 format.
+The value is a [`NSData`](https://developer.apple.com/documentation/foundation/nsdata) object in PKCS12 format.
 
 ## See Also
 

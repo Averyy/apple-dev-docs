@@ -32,7 +32,7 @@ Use the following flow to call this method:
 
 The credential session can be in any state when calling this method. If the call succeeds, the state transitions to [`CredentialSession.State.wired(credential:)`](credentialsession/state-swift.enum/wired(credential:).md). The state transitions to [`CredentialSession.State.management`](credentialsession/state-swift.enum/management.md) if the call encounters a [`CredentialSession.ErrorCode.resourceUnavailable`](credentialsession/errorcode/resourceunavailable.md) error; otherwise the state remains unchanged.
 
-An app extension calling this method needs to have the [`Digital Credentials API - Mobile Document Provider`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.identity-document-services.document-provider.mobile-document-types) entitlement.
+An app extension calling this method needs to have the [`Digital Credentials API - Mobile Document Provider`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.identity-document-services.document-provider.mobile-document-types) entitlement.
 
 > ❗ **Important**: Calling this method may generate a billable event to the credential provider.
 
@@ -44,7 +44,7 @@ An app extension calling this method needs to have the [`Digital Credentials API
 ## Parameters
 
 - `credential`: The credential to activate and transition into card emulation state with.
-- `scene`: The [`UIScene`](https://developer.apple.com/documentation/UIKit/UIScene) the authentication sheet appears over.
+- `scene`: The [`UIScene`](https://developer.apple.com/documentation/uikit/uiscene) the authentication sheet appears over.
 - `instanceAID`: The applet instance identifier of the installed credential to authorize.
 
 ## See Also

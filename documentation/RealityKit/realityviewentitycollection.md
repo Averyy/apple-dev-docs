@@ -26,9 +26,9 @@ This collection is used by `RealityViewContent/entities`.
 ## Relationships
 
 ### Conforms To
-- [Collection](../Swift/Collection.md)
+- [Collection](../swift/collection.md)
 - [EntityCollection](entitycollection.md)
-- [Sequence](../Swift/Sequence.md)
+- [Sequence](../swift/sequence.md)
 
 ## See Also
 

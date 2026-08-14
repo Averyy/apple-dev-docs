@@ -19,7 +19,7 @@ class let didChangeNotification: NSNotification.Name
 
 #### Discussion
 
-Register your app to get notifications when a model collection update is available by calling [`addObserver(forName:object:queue:using:)`](https://developer.apple.com/documentation/Foundation/NotificationCenter/addObserver(forName:object:queue:using:)).
+Register your app to get notifications when a model collection update is available by calling [`addObserver(forName:object:queue:using:)`](https://developer.apple.com/documentation/foundation/notificationcenter/addobserver(forname:object:queue:using:)).
 
 ```swift
 let center = NotificationCenter.default

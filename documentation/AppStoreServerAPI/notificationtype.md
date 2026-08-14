@@ -16,7 +16,7 @@ string notificationType
 
 #### Discussion
 
-For the list of notification types available in [`App Store Server Notifications`](https://developer.apple.com/documentation/AppStoreServerNotifications) version 2, see [`notificationType`](https://developer.apple.com/documentation/AppStoreServerNotifications/notificationType).
+For the list of notification types available in [`App Store Server Notifications`](https://developer.apple.com/documentation/appstoreservernotifications) version 2, see [`notificationType`](https://developer.apple.com/documentation/appstoreservernotifications/notificationtype).
 
 ## See Also
 

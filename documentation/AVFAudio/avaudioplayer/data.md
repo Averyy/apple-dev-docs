@@ -22,7 +22,7 @@ var data: Data? { get }
 
 #### Discussion
 
-This property is [`nil`](https://developer.apple.com/documentation/ObjectiveC/nil-227m0) if you don’t create the player with a data buffer.
+This property is [`nil`](https://developer.apple.com/documentation/objectivec/nil-227m0) if you don’t create the player with a data buffer.
 
 ## See Also
 

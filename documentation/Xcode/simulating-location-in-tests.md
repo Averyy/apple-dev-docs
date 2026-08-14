@@ -12,7 +12,7 @@ Test your code with different simulated locations to improve the test coverage o
 
 ##### Simulate a Static Device Location
 
-If your app uses [`Core Location`](https://developer.apple.com/documentation/CoreLocation) or [`MapKit`](https://developer.apple.com/documentation/MapKit), the app’s behavior under test can depend on the device’s location. Configure your test plan to simulate a predetermined location so tests run with repeatable inputs. To set a simulated location in a test plan, follow these steps:
+If your app uses [`Core Location`](https://developer.apple.com/documentation/corelocation) or [`MapKit`](https://developer.apple.com/documentation/mapkit), the app’s behavior under test can depend on the device’s location. Configure your test plan to simulate a predetermined location so tests run with repeatable inputs. To set a simulated location in a test plan, follow these steps:
 
 1. Open Xcode.
 2. Choose Product > Test Plan > Edit Test Plan.
@@ -37,11 +37,11 @@ Xcode uses the added GPX file to simulate locations in tests. You can add multip
 
 ##### Construct Locations for Unit Tests
 
-When testing your app’s location-handling logic, you don’t need to use [`CLLocationManager`](https://developer.apple.com/documentation/CoreLocation/CLLocationManager) or get the device’s location. You can construct instances of [`CLLocationCoordinate2D`](https://developer.apple.com/documentation/CoreLocation/CLLocationCoordinate2D) with known values for the coordinate’s latitude and longitude in the test. Pass these instances to the code under test, and validate that your code behaves as expected for the given values.
+When testing your app’s location-handling logic, you don’t need to use [`CLLocationManager`](https://developer.apple.com/documentation/corelocation/cllocationmanager) or get the device’s location. You can construct instances of [`CLLocationCoordinate2D`](https://developer.apple.com/documentation/corelocation/cllocationcoordinate2d) with known values for the coordinate’s latitude and longitude in the test. Pass these instances to the code under test, and validate that your code behaves as expected for the given values.
 
 ##### Set a Simulated Location for Ui Automation
 
-In your UI automation tests, update the simulated device location by setting the shared [`XCUIDevice`](https://developer.apple.com/documentation/XCTest/XCUIDevice) location to an instance of [`XCUILocation`](https://developer.apple.com/documentation/XCTest/XCUILocation).
+In your UI automation tests, update the simulated device location by setting the shared [`XCUIDevice`](https://developer.apple.com/documentation/xcuiautomation/xcuidevice) location to an instance of [`XCUILocation`](https://developer.apple.com/documentation/xcuiautomation/xcuilocation).
 
 ```swift
 import XCTest

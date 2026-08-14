@@ -30,7 +30,7 @@ _ = try DiskImage(creating: .asif(url: imageURL, blockCount: blockCount, blockSi
 
 ## Parameters
 
-- `url`: The [`URL`](https://developer.apple.com/documentation/Foundation/URL) for the disk image file.
+- `url`: The [`URL`](https://developer.apple.com/documentation/foundation/url) for the disk image file.
 - `blockCount`: Size of the disk image in blocks.
 - `blockSize`: The [`DiskImage.BlockSize`](diskimage/blocksize-swift.enum.md) to use.
 

@@ -24,7 +24,7 @@ static let center: Alignment
 
 This alignment combines the [`center`](horizontalalignment/center.md) horizontal guide and the [`center`](verticalalignment/center.md) vertical guide:
 
-![A square that’s divided into four equal quadrants. The upper-](https://docs-assets.developer.apple.com/published/516381af07eabb56e6f25440b67a6afd/Alignment-center-1-iOS%402x.png)
+![A square that’s divided into four equal quadrants. The upper-](/images/com.apple.SwiftUI/Alignment-center-1-iOS@2x.png)
 
 ## See Also
 

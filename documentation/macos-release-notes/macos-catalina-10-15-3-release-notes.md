@@ -6,13 +6,13 @@ Update your apps to use new features, and test your apps against API changes.
 
 #### Overview
 
-The macOS 10.15.3 SDK provides support for developing apps for Macs running macOS Catalina 10.15.3. The SDK comes bundled with Xcode 11.3 available from the Mac App Store. For information on the compatibility requirements for Xcode 11.3, see [`Xcode 11.3 Release Notes`](https://developer.apple.com/documentation/Xcode-Release-Notes/xcode-11_3-release-notes).
+The macOS 10.15.3 SDK provides support for developing apps for Macs running macOS Catalina 10.15.3. The SDK comes bundled with Xcode 11.3 available from the Mac App Store. For information on the compatibility requirements for Xcode 11.3, see [`Xcode 11.3 Release Notes`](https://developer.apple.com/documentation/xcode-release-notes/xcode-11_3-release-notes).
 
 ##### General
 
 ###### Known Issues
 
-- UI tests using the XCTest framework are currently unable to interact with embedded web views ([`UIWebView`](https://developer.apple.com/documentation/UIKit/UIWebView), [`WKWebView`](https://developer.apple.com/documentation/WebKit/WKWebView), [`SFSafariViewController`](https://developer.apple.com/documentation/SafariServices/SFSafariViewController) and [`ASWebAuthenticationSession`](https://developer.apple.com/documentation/AuthenticationServices/ASWebAuthenticationSession)) inside of apps. (58576627)
+- UI tests using the XCTest framework are currently unable to interact with embedded web views ([`UIWebView`](https://developer.apple.com/documentation/uikit/uiwebview), [`WKWebView`](https://developer.apple.com/documentation/webkit/wkwebview), [`SFSafariViewController`](https://developer.apple.com/documentation/safariservices/sfsafariviewcontroller) and [`ASWebAuthenticationSession`](https://developer.apple.com/documentation/authenticationservices/aswebauthenticationsession)) inside of apps. (58576627)
 
 ## See Also
 

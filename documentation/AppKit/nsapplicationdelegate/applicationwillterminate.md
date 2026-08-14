@@ -19,11 +19,11 @@ optional func applicationWillTerminate(_ notification: Notification)
 
 Your delegate can use this method to perform any final cleanup before the app terminates.  The app will terminate after this method returns.
 
-> **Note**: This method isn’t called during sudden termination of an app. For more information about sudden termination, see the section  [`ProcessInfo`](https://developer.apple.com/documentation/Foundation/ProcessInfo#Support-Sudden-Termination) of [`ProcessInfo`](https://developer.apple.com/documentation/Foundation/ProcessInfo).
+> **Note**: This method isn’t called during sudden termination of an app. For more information about sudden termination, see the section  [`ProcessInfo`](https://developer.apple.com/documentation/foundation/processinfo) of [`ProcessInfo`](https://developer.apple.com/documentation/foundation/processinfo).
 
 ## Parameters
 
-- `notification`: A notification named [`willTerminateNotification`](nsapplication/willterminatenotification.md). Calling the [`object`](https://developer.apple.com/documentation/Foundation/NSNotification/object) method of this notification returns the `NSApplication` object itself.
+- `notification`: A notification named [`willTerminateNotification`](nsapplication/willterminatenotification.md). Calling the [`object`](https://developer.apple.com/documentation/foundation/nsnotification/object) method of this notification returns the `NSApplication` object itself.
 
 ## See Also
 

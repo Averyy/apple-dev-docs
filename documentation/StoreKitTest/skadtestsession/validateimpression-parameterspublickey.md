@@ -20,11 +20,11 @@ func validateImpression(parameters: [String : Any], publicKey: String) throws
 
 The cryptographic key pair you use for testing may be a different key pair than you use in production. For testing, use keys from the same key pair when you sign the ad impression and when you call [`validateImpression(parameters:publicKey:)`](skadtestsession/validateimpression(parameters:publickey:).md).
 
-For more information about signing ad impressions, see [`Signing and providing ads`](https://developer.apple.com/documentation/StoreKit/signing-and-providing-ads).
+For more information about signing ad impressions, see [`Signing and providing ads`](https://developer.apple.com/documentation/storekit/signing-and-providing-ads).
 
 ## Parameters
 
-- `parameters`: A dictionary containing version-specific key values that associate an app installation with an ad campaign for StoreKit-rendered ads. See [`Ad network install-validation keys`](https://developer.apple.com/documentation/StoreKit/ad-network-install-validation-keys) for the list of required keys.
+- `parameters`: A dictionary containing version-specific key values that associate an app installation with an ad campaign for StoreKit-rendered ads. See [`Ad network install-validation keys`](https://developer.apple.com/documentation/storekit/ad-network-install-validation-keys) for the list of required keys.
 - `publicKey`: The public key of the elliptic curve cryptographic key pair you used to generate the signature for the ad impression.
 
 ## See Also

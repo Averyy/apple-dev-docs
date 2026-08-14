@@ -26,7 +26,7 @@ An array of sample sizes.
 
 #### Discussion
 
-If the result contains a single element, all samples in the buffer are of this size. If there are no sample sizes in this buffer, the array is empty. This can occur if the samples in the buffer are noncontiguous, like noninterleaved audio, or if the sample buffer contains a [`CVImageBuffer`](https://developer.apple.com/documentation/CoreVideo/cvimagebuffer-q40).
+If the result contains a single element, all samples in the buffer are of this size. If there are no sample sizes in this buffer, the array is empty. This can occur if the samples in the buffer are noncontiguous, like noninterleaved audio, or if the sample buffer contains a [`CVImageBuffer`](https://developer.apple.com/documentation/corevideo/cvimagebuffer-q40).
 
 ## See Also
 

@@ -16,19 +16,19 @@ protocol MERAWProcessor : NSObjectProtocol
 
 #### Overview
 
-This protocol provides an interface for [`Video Toolbox`](https://developer.apple.com/documentation/VideoToolbox) to create and interact with MediaExtension RAW processors. [`MERAWProcessor`](merawprocessor.md) objects are instantiated by Video Toolbox and are closely linked to a corresponding [`MEVideoDecoder`](mevideodecoder.md) object that produces RAW video output.
+This protocol provides an interface for [`Video Toolbox`](https://developer.apple.com/documentation/videotoolbox) to create and interact with MediaExtension RAW processors. [`MERAWProcessor`](merawprocessor.md) objects are instantiated by Video Toolbox and are closely linked to a corresponding [`MEVideoDecoder`](mevideodecoder.md) object that produces RAW video output.
 
 > **Note**:  Developers who wish to build MediaExtension RAW processors using this API need to include a [`RAW processor entitlement`](raw-processor-entitlement.md), provisioning profile, and specialized dictionary in their Info.plist file when building their extensions. For more information, see [`Entitlements`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/entitlements), [`Create a development provisioning profile`](https://developer.apple.comhttps://developer.apple.com/help/account/manage-provisioning-profiles/create-a-development-provisioning-profile), and [`RAW processor property list dictionary`](raw-processor-property-list-dictionary.md).
 
-Once a user installs and runs the host app, embedded RAW processor extensions become available to any app on the user’s system that opts in to using them by calling [`VTRegisterProfessionalVideoWorkflowVideoDecoders()`](https://developer.apple.com/documentation/VideoToolbox/VTRegisterProfessionalVideoWorkflowVideoDecoders()).
+Once a user installs and runs the host app, embedded RAW processor extensions become available to any app on the user’s system that opts in to using them by calling [`VTRegisterProfessionalVideoWorkflowVideoDecoders()`](https://developer.apple.com/documentation/videotoolbox/vtregisterprofessionalvideoworkflowvideodecoders()).
 
 > ❗ **Important**:  `MERAWProcessor` objects run in a sandboxed process without access to the filesystem, network, and other kernel resources.
 
-MediaExtension RAW processor’s operation and life cycle closely tie to [`VTRAWProcessingSession`](https://developer.apple.com/documentation/VideoToolbox/VTRAWProcessingSession).
+MediaExtension RAW processor’s operation and life cycle closely tie to [`VTRAWProcessingSession`](https://developer.apple.com/documentation/videotoolbox/vtrawprocessingsession).
 
 ##### Creating a Raw Processor
 
-An instance of the [`MERAWProcessorExtension`](merawprocessorextension.md) factory object is created the first time the given processor is opened by Video Toolbox in a process. The [`makeProcessor(formatDescription:pixelBufferManager:)`](merawprocessorextension/makeprocessor(formatdescription:pixelbuffermanager:).md) method on the [`MERAWProcessorExtension`](merawprocessorextension.md) object will be called once for each processor instance needed. The processor can evaluate the provided [`CMVideoFormatDescription`](https://developer.apple.com/documentation/CoreMedia/CMVideoFormatDescription) at this point and confirm whether it is able to process the specified format. If the processor cannot process the format, the factory routine should return [`MEError.Code.unsupportedFeature`](meerror-swift.struct/code/unsupportedfeature.md). This sequence of calls will happen inside of [`VTRAWProcessingSession`](https://developer.apple.com/documentation/VideoToolbox/VTRAWProcessingSession).
+An instance of the [`MERAWProcessorExtension`](merawprocessorextension.md) factory object is created the first time the given processor is opened by Video Toolbox in a process. The [`makeProcessor(formatDescription:pixelBufferManager:)`](merawprocessorextension/makeprocessor(formatdescription:pixelbuffermanager:).md) method on the [`MERAWProcessorExtension`](merawprocessorextension.md) object will be called once for each processor instance needed. The processor can evaluate the provided [`CMVideoFormatDescription`](https://developer.apple.com/documentation/coremedia/cmvideoformatdescription) at this point and confirm whether it is able to process the specified format. If the processor cannot process the format, the factory routine should return [`MEError.Code.unsupportedFeature`](meerror-swift.struct/code/unsupportedfeature.md). This sequence of calls will happen inside of [`VTRAWProcessingSession`](https://developer.apple.com/documentation/videotoolbox/vtrawprocessingsession).
 
 ##### Configuring Pixel Buffer Requirements
 
@@ -36,11 +36,11 @@ At any point after instantiation, the processor can call back into the provided 
 
 ##### Processing Frames
 
-Calls to [`processFrame(fromImageBuffer:completionHandler:)`](merawprocessor/processframe(fromimagebuffer:completionhandler:).md) are serialized. A new frame is not sent to the processor until the last [`processFrame(fromImageBuffer:completionHandler:)`](merawprocessor/processframe(fromimagebuffer:completionhandler:).md) has returned, but may be submitted before the [`processFrame(fromImageBuffer:completionHandler:)`](merawprocessor/processframe(fromimagebuffer:completionhandler:).md) completion handler is called if the processing is happening asynchronously. These calls correspond to [`VTRAWProcessingSessionProcessFrame`](https://developer.apple.com/documentation/VideoToolbox/VTRAWProcessingSessionProcessFrame) calls on the parent `VTRAWProcessingSession`.
+Calls to [`processFrame(fromImageBuffer:completionHandler:)`](merawprocessor/processframe(fromimagebuffer:completionhandler:).md) are serialized. A new frame is not sent to the processor until the last [`processFrame(fromImageBuffer:completionHandler:)`](merawprocessor/processframe(fromimagebuffer:completionhandler:).md) has returned, but may be submitted before the [`processFrame(fromImageBuffer:completionHandler:)`](merawprocessor/processframe(fromimagebuffer:completionhandler:).md) completion handler is called if the processing is happening asynchronously. These calls correspond to [`VTRAWProcessingSessionProcessFrame`](https://developer.apple.com/documentation/videotoolbox/vtrawprocessingsessionprocessframe) calls on the parent `VTRAWProcessingSession`.
 
-RAW processors must write their output frames into `CVPixelBuffers` allocated through the [`makePixelBuffer()`](merawprocessorpixelbuffermanager/makepixelbuffer().md) interface. Returning [`CVPixelBuffer`](https://developer.apple.com/documentation/CoreVideo/cvpixelbuffer-q2e) from any other source may result in degraded performance or other issues.
+RAW processors must write their output frames into `CVPixelBuffers` allocated through the [`makePixelBuffer()`](merawprocessorpixelbuffermanager/makepixelbuffer().md) interface. Returning [`CVPixelBuffer`](https://developer.apple.com/documentation/corevideo/cvpixelbuffer-q2e) from any other source may result in degraded performance or other issues.
 
-If the processor’s internal processing queue is full, and it cannot process more frames, it should return [`NO`](https://developer.apple.com/documentation/ObjectiveC/NO) when the [`isReadyForMoreMediaData`](merawprocessor/isreadyformoremediadata.md) property is queried. This property should return [`YES`](https://developer.apple.com/documentation/ObjectiveC/YES) again when the processor is able to accept new frames – generally after an earlier asynchronous frame processing operation is completed.
+If the processor’s internal processing queue is full, and it cannot process more frames, it should return [`NO`](https://developer.apple.com/documentation/objectivec/no) when the [`isReadyForMoreMediaData`](merawprocessor/isreadyformoremediadata.md) property is queried. This property should return [`YES`](https://developer.apple.com/documentation/objectivec/yes) again when the processor is able to accept new frames – generally after an earlier asynchronous frame processing operation is completed.
 
 ## Topics
 
@@ -67,7 +67,7 @@ If the processor’s internal processing queue is full, and it cannot process mo
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

@@ -27,7 +27,7 @@ Use this initializer if you need a fetch request with updates that affect the us
 
 ## Parameters
 
-- `fetchRequest`: An [`NSFetchRequest`](https://developer.apple.com/documentation/CoreData/NSFetchRequest) instance that describes the search criteria for retrieving data from the persistent store.
+- `fetchRequest`: An [`NSFetchRequest`](https://developer.apple.com/documentation/coredata/nsfetchrequest) instance that describes the search criteria for retrieving data from the persistent store.
 - `transaction`: A transaction to use for user interface changes that result from changes to the fetched results.
 
 ## See Also

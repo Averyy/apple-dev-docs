@@ -21,9 +21,9 @@ var headerImage: UIImage? { get set }
 
 The maximum size of the section header image is [`CPMaximumListSectionImageSize`](cpmaximumlistsectionimagesize.md).
 
-Provide a [`UIImage`](https://developer.apple.com/documentation/UIKit/UIImage) that is display-ready. To provide an image that includes light and dark styles, use an asset from your asset catalog that includes both styles, or use a [`UIImageAsset`](https://developer.apple.com/documentation/UIKit/UIImageAsset) to combine two [`UIImage`](https://developer.apple.com/documentation/UIKit/UIImage) instances into a single image with both styles.
+Provide a [`UIImage`](https://developer.apple.com/documentation/uikit/uiimage) that is display-ready. To provide an image that includes light and dark styles, use an asset from your asset catalog that includes both styles, or use a [`UIImageAsset`](https://developer.apple.com/documentation/uikit/uiimageasset) to combine two [`UIImage`](https://developer.apple.com/documentation/uikit/uiimage) instances into a single image with both styles.
 
-To size your header image properly, consider the display scale of the car screen. Use [`UIImageAsset`](https://developer.apple.com/documentation/UIKit/UIImageAsset) to combine multiple images with different trait collections into a single image. For more information about trait collections for CarPlay, see [`carTraitCollection`](cpinterfacecontroller/cartraitcollection.md).
+To size your header image properly, consider the display scale of the car screen. Use [`UIImageAsset`](https://developer.apple.com/documentation/uikit/uiimageasset) to combine multiple images with different trait collections into a single image. For more information about trait collections for CarPlay, see [`carTraitCollection`](cpinterfacecontroller/cartraitcollection.md).
 
 ## See Also
 

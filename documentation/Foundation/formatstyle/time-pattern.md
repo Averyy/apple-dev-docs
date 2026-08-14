@@ -26,9 +26,9 @@ A duration time format style customized with the specified pattern.
 
 #### Discussion
 
-Use the dot-notation form of this type method when the call point allows the use of [`Duration.TimeFormatStyle`](https://developer.apple.com/documentation/Swift/Duration/TimeFormatStyle). You typically do this when calling the [`formatted(_:)`](https://developer.apple.com/documentation/Swift/Duration/formatted(_:)) method of [`Duration`](https://developer.apple.com/documentation/Swift/Duration).
+Use the dot-notation form of this type method when the call point allows the use of [`Duration.TimeFormatStyle`](https://developer.apple.com/documentation/swift/duration/timeformatstyle). You typically do this when calling the [`formatted(_:)`](https://developer.apple.com/documentation/swift/duration/formatted(_:)) method of [`Duration`](https://developer.apple.com/documentation/swift/duration).
 
-The following example creates a duration to represent 1 hour, 10 minutes, 32 seconds, and 400 milliseconds. It then uses [`time(pattern:)`](formatstyle/time(pattern:).md) to customize a [`Duration.TimeFormatStyle`](https://developer.apple.com/documentation/Swift/Duration/TimeFormatStyle) to show hours, minutes, and seconds, padding the hours part to two digits and limiting the fractional seconds to two digits. When used with the [`formatted(_:)`](https://developer.apple.com/documentation/Swift/Duration/formatted(_:)) method, the resulting string is `01:10:32.40`.
+The following example creates a duration to represent 1 hour, 10 minutes, 32 seconds, and 400 milliseconds. It then uses [`time(pattern:)`](formatstyle/time(pattern:).md) to customize a [`Duration.TimeFormatStyle`](https://developer.apple.com/documentation/swift/duration/timeformatstyle) to show hours, minutes, and seconds, padding the hours part to two digits and limiting the fractional seconds to two digits. When used with the [`formatted(_:)`](https://developer.apple.com/documentation/swift/duration/formatted(_:)) method, the resulting string is `01:10:32.40`.
 
 ```swift
 let duration = Duration.seconds(70 * 60 + 32) + Duration.milliseconds(400)
@@ -40,7 +40,7 @@ let format = duration.formatted(
 
 ## Parameters
 
-- `pattern`: A [`Duration.TimeFormatStyle.Pattern`](https://developer.apple.com/documentation/Swift/Duration/TimeFormatStyle/Pattern-swift.struct) that specifies the units to include in the displayed string and the behavior of the units.
+- `pattern`: A [`Duration.TimeFormatStyle.Pattern`](https://developer.apple.com/documentation/swift/duration/timeformatstyle/pattern-swift.struct) that specifies the units to include in the displayed string and the behavior of the units.
 
 ## See Also
 

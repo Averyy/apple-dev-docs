@@ -22,7 +22,7 @@ func userIdentities(forUserRecordIDs userRecordIDs: [CKRecord.ID]) async throws 
 
 #### Return Value
 
-A [`Result`](https://developer.apple.com/documentation/Swift/Result) that contains either a dictionary of user identities, or an error that describes why CloudKit can’t discover the user record IDs.
+A [`Result`](https://developer.apple.com/documentation/swift/result) that contains either a dictionary of user identities, or an error that describes why CloudKit can’t discover the user record IDs.
 
 In the successful case, the dictionary uses the user record IDs you specify in `userRecordIDs` as its keys. Only successfully discovered user identities are present in this dictionary.
 

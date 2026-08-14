@@ -29,7 +29,7 @@ If the code contains an explicit designated requirement, a copy of that is retur
 
 - `code`: The code or static code object for which you want the designated requirement. If you provide a code object, the function processes it in the same manner as the  [`SecCodeCopyStaticCode(_:_:_:)`](seccodecopystaticcode(_:_:_:).md) function.
 - `flags`: Optional flags; see [`SecCSFlags`](seccsflags.md) for possible values. Pass [`kSecCSDefaultFlags`](seccsflags/kseccsdefaultflags.md) for standard behavior.
-- `requirement`: On return, the code’s designated requirement. In Objective-C, call the [`CFRelease`](https://developer.apple.com/documentation/CoreFoundation/CFRelease) function to release this object when you are finished with it.
+- `requirement`: On return, the code’s designated requirement. In Objective-C, call the [`CFRelease`](https://developer.apple.com/documentation/corefoundation/cfrelease) function to release this object when you are finished with it.
 
 ## See Also
 

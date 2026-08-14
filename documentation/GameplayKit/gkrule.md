@@ -32,7 +32,7 @@ There are multiple ways to create rules for use in a rule system, each with its 
 
 - Typical rule predicates involve conditional logic tests on the properties of the containing rule system, and typical rule actions assert or retract facts. If your rules fit this pattern, you can use the [`init(predicate:assertingFact:grade:)`](gkrule/init(predicate:assertingfact:grade:).md) and [`init(predicate:retractingFact:grade:)`](gkrule/init(predicate:retractingfact:grade:).md) methods to create rules that are entirely data-driven—that is, they can be easily archived for later reuse, edited without compiling source code, and created at runtime.
 - To create rules with entirely custom logic for both predicate and action, use the [`init(blockPredicate:action:)`](gkrule/init(blockpredicate:action:).md) method. This method creates rules that are very flexible, but that cannot be archived for reuse.
-- To create rules with more complex custom logic, implement your own rule classes: subclass [`GKRule`](gkrule.md) to build custom logic for both the rule’s predicate and its action, or subclass [`GKNSPredicateRule`](gknspredicaterule.md) to use an [`NSPredicate`](https://developer.apple.com/documentation/Foundation/NSPredicate) object for the rule’s predicate and build custom logic only for the rule’s action. The reusability of custom rule classes depends on your implementation of such classes.
+- To create rules with more complex custom logic, implement your own rule classes: subclass [`GKRule`](gkrule.md) to build custom logic for both the rule’s predicate and its action, or subclass [`GKNSPredicateRule`](gknspredicaterule.md) to use an [`NSPredicate`](https://developer.apple.com/documentation/foundation/nspredicate) object for the rule’s predicate and build custom logic only for the rule’s action. The reusability of custom rule classes depends on your implementation of such classes.
 
 For more information about rules and rule systems, read [`Rule Systems`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Conceptual/GameplayKit_Guide/RuleSystems.html#//apple_ref/doc/uid/TP40015172-CH10) in [`GameplayKit Programming Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Conceptual/GameplayKit_Guide/index.html#//apple_ref/doc/uid/TP40015172).
 
@@ -45,12 +45,12 @@ GameplayKit evaluates rules in the context of a [`GKRuleSystem`](gkrulesystem.md
 Subclasses of [`GKRule`](gkrule.md) must implement both of the following methods:
 
 - Override the [`evaluatePredicate(in:)`](gkrule/evaluatepredicate(in:).md) method to evaluate your rule in the context of the provided rule system.
-- Override the [`performAction(in:)`](gkrule/performaction(in:).md) method to perform whatever actions should result when your rule is satisfied (that is, when your [`evaluatePredicate(in:)`](gkrule/evaluatepredicate(in:).md) implementation returns [`true`](https://developer.apple.com/documentation/Swift/true)) in the context of the provided rule system.
+- Override the [`performAction(in:)`](gkrule/performaction(in:).md) method to perform whatever actions should result when your rule is satisfied (that is, when your [`evaluatePredicate(in:)`](gkrule/evaluatepredicate(in:).md) implementation returns [`true`](https://developer.apple.com/documentation/swift/true)) in the context of the provided rule system.
 
 ###### Alternatives to Subclassing
 
-- Use the [`init(predicate:assertingFact:grade:)`](gkrule/init(predicate:assertingfact:grade:).md) or [`init(predicate:retractingFact:grade:)`](gkrule/init(predicate:retractingfact:grade:).md) to create a rule that uses an [`NSPredicate`](https://developer.apple.com/documentation/Foundation/NSPredicate) object for evaluation and whose action asserts or retracts a fact in the containing rule system.
-- Subclass [`GKNSPredicateRule`](gknspredicaterule.md) instead to use an [`NSPredicate`](https://developer.apple.com/documentation/Foundation/NSPredicate) object for evaluating the rule and write custom logic only for the rule’s action.
+- Use the [`init(predicate:assertingFact:grade:)`](gkrule/init(predicate:assertingfact:grade:).md) or [`init(predicate:retractingFact:grade:)`](gkrule/init(predicate:retractingfact:grade:).md) to create a rule that uses an [`NSPredicate`](https://developer.apple.com/documentation/foundation/nspredicate) object for evaluation and whose action asserts or retracts a fact in the containing rule system.
+- Subclass [`GKNSPredicateRule`](gknspredicaterule.md) instead to use an [`NSPredicate`](https://developer.apple.com/documentation/foundation/nspredicate) object for evaluating the rule and write custom logic only for the rule’s action.
 - Use the [`init(blockPredicate:action:)`](gkrule/init(blockpredicate:action:).md) method to quickly create a rule whose custom logic is contained in block objects.
 
 ## Topics
@@ -75,21 +75,21 @@ Subclasses of [`GKRule`](gkrule.md) must implement both of the following methods
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Inherited By
 - [GKNSPredicateRule](gknspredicaterule.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 
 - [class GKNSPredicateRule](gknspredicaterule.md)
-  A rule for use in a rule system that uses a Foundation [`NSPredicate`](https://developer.apple.com/documentation/Foundation/NSPredicate) object to evaluate itself.
+  A rule for use in a rule system that uses a Foundation [`NSPredicate`](https://developer.apple.com/documentation/foundation/nspredicate) object to evaluate itself.
 - [class GKRuleSystem](gkrulesystem.md)
   A list of rules, together with a context for evaluating them and interpreting results, for use in constructing data-driven logic or fuzzy logic systems.
 

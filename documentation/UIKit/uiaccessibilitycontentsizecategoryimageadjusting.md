@@ -20,7 +20,7 @@ protocol UIAccessibilityContentSizeCategoryImageAdjusting : NSObjectProtocol
 
 #### Overview
 
-Objects adopt this protocol when they support scaling image assets to the size required by the accessibility content size categories. Typically, an object sets the [`adjustsImageSizeForAccessibilityContentSizeCategory`](uiaccessibilitycontentsizecategoryimageadjusting/adjustsimagesizeforaccessibilitycontentsizecategory.md) property to [`true`](https://developer.apple.com/documentation/Swift/true) only when its image contains vector data that can scale well to the larger sizes required for accessibility.
+Objects adopt this protocol when they support scaling image assets to the size required by the accessibility content size categories. Typically, an object sets the [`adjustsImageSizeForAccessibilityContentSizeCategory`](uiaccessibilitycontentsizecategoryimageadjusting/adjustsimagesizeforaccessibilitycontentsizecategory.md) property to [`true`](https://developer.apple.com/documentation/swift/true) only when its image contains vector data that can scale well to the larger sizes required for accessibility.
 
 ## Topics
 
@@ -31,7 +31,7 @@ Objects adopt this protocol when they support scaling image assets to the size r
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 ### Conforming Types
 - [NSTextAttachment](nstextattachment.md)
 - [UIButton](uibutton.md)
@@ -39,7 +39,7 @@ Objects adopt this protocol when they support scaling image assets to the size r
 
 ## See Also
 
-- [UIAccessibilityFocus](../ObjectiveC/uiaccessibilityfocus.md)
+- [UIAccessibilityFocus](../objectivec/uiaccessibilityfocus.md)
   An informal protocol that provides a way to determine whether an assistive app, such as VoiceOver, has focus on an accessible element.
 - [protocol UIAccessibilityIdentification](uiaccessibilityidentification.md)
   Methods that associate a unique identifier with elements in your user interface.

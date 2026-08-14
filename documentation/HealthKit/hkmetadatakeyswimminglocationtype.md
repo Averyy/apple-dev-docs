@@ -21,7 +21,7 @@ let HKMetadataKeySwimmingLocationType: String
 
 #### Discussion
 
-Set this key on a workout object that represents swimming. Set its value to an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) object that contains a valid value from the [`HKWorkoutSwimmingLocationType`](hkworkoutswimminglocationtype.md) enumeration.
+Set this key on a workout object that represents swimming. Set its value to an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) object that contains a valid value from the [`HKWorkoutSwimmingLocationType`](hkworkoutswimminglocationtype.md) enumeration.
 
 ## Topics
 

@@ -43,7 +43,7 @@ If necessary, use the properties in this protocol to get the actual input elemen
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 
 ---

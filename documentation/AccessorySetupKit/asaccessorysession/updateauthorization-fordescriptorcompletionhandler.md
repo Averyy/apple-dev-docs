@@ -23,7 +23,7 @@ Call this method to upgrade previously-added SSID-based accessories to use WiFi 
 
 - `accessory`: The accessory to update.
 - `descriptor`: An updated descriptor that the picker uses to add new technology authorization for the provided accessory.
-- `completionHandler`: A block or closure that executes after the picker is shown. The completion handler receives an [`NSError`](https://developer.apple.com/documentation/Foundation/NSError) instance if the upgrade operation encounters an error. In Swift, you can omit the completion handler by calling the method asynchronously and catching any error thrown by the method.
+- `completionHandler`: A block or closure that executes after the picker is shown. The completion handler receives an [`NSError`](https://developer.apple.com/documentation/foundation/nserror) instance if the upgrade operation encounters an error. In Swift, you can omit the completion handler by calling the method asynchronously and catching any error thrown by the method.
 
 ## See Also
 

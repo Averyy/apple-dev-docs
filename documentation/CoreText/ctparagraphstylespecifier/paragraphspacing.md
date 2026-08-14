@@ -22,7 +22,7 @@ case paragraphSpacing
 
 #### Discussion
 
-This value is always nonnegative and is determined by adding the previous paragraph’s [`CTParagraphStyleSpecifier.paragraphSpacing`](ctparagraphstylespecifier/paragraphspacing.md) setting and the current paragraph’s [`CTParagraphStyleSpecifier.paragraphSpacingBefore`](ctparagraphstylespecifier/paragraphspacingbefore.md) setting. Type: [`CGFloat`](https://developer.apple.com/documentation/CoreFoundation/CGFloat-swift.struct). Default value: `0.0`. Affects: [`CTFramesetter`](ctframesetter.md).
+This value is always nonnegative and is determined by adding the previous paragraph’s [`CTParagraphStyleSpecifier.paragraphSpacing`](ctparagraphstylespecifier/paragraphspacing.md) setting and the current paragraph’s [`CTParagraphStyleSpecifier.paragraphSpacingBefore`](ctparagraphstylespecifier/paragraphspacingbefore.md) setting. Type: [`CGFloat`](https://developer.apple.com/documentation/corefoundation/cgfloat-swift.struct). Default value: `0.0`. Affects: [`CTFramesetter`](ctframesetter.md).
 
 ## See Also
 

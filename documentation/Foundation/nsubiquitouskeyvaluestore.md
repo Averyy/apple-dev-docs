@@ -28,9 +28,9 @@ Use the shared `NSUbiquitousKeyValueStore` object to store settings, configurati
 
 Each app has a single iCloud key-value store object, which you retrieve from the [`default`](nsubiquitouskeyvaluestore/default.md) class property. Use this same object throughout your app to read and write values. Don’t subclass `NSUbiquitousKeyValueStore`.
 
-> **Note**: To use this object, you must distribute your app through the App Store or Mac App Store, and you must request the [`iCloud Key-Value Store Entitlement`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.ubiquity-kvstore-identifier) in your Xcode project.
+> **Note**: To use this object, you must distribute your app through the App Store or Mac App Store, and you must request the [`iCloud Key-Value Store Entitlement`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.ubiquity-kvstore-identifier) in your Xcode project.
 
-The keys in the iCloud key-value store identify the item and its purpose in your app, and the value is a data object you use to implement the corresponding behavior in your app. Values must be property list types such as [`Int64`](https://developer.apple.com/documentation/Swift/Int64), [`Float`](https://developer.apple.com/documentation/Swift/Float), [`Double`](https://developer.apple.com/documentation/Swift/Double), [`Bool`](https://developer.apple.com/documentation/Swift/Bool), [`String`](https://developer.apple.com/documentation/Swift/String), [`NSNumber`](NSNumber.md), [`Date`](date.md), [`Array`](https://developer.apple.com/documentation/Swift/Array), or [`Dictionary`](https://developer.apple.com/documentation/Swift/Dictionary). To include other types of objects in the key-value store, archive them to a [`Data`](data.md) object first and store that object instead. Prefer simple types over custom objects whenever possible.
+The keys in the iCloud key-value store identify the item and its purpose in your app, and the value is a data object you use to implement the corresponding behavior in your app. Values must be property list types such as [`Int64`](https://developer.apple.com/documentation/swift/int64), [`Float`](https://developer.apple.com/documentation/swift/float), [`Double`](https://developer.apple.com/documentation/swift/double), [`Bool`](https://developer.apple.com/documentation/swift/bool), [`String`](https://developer.apple.com/documentation/swift/string), [`NSNumber`](nsnumber.md), [`Date`](date.md), [`Array`](https://developer.apple.com/documentation/swift/array), or [`Dictionary`](https://developer.apple.com/documentation/swift/dictionary). To include other types of objects in the key-value store, archive them to a [`Data`](data.md) object first and store that object instead. Prefer simple types over custom objects whenever possible.
 
 When you write a new value, the iCloud key-value store saves it in memory initially and writes it to disk asynchronously later. If the device doesn’t have an active Apple account, the changes remain only on the current device. When the person signs into their account, the system forwards any changes to the iCloud server and reconciles the values there with the local ones. As you make more changes, the system keeps the local and server-based copies of the data synchronized, updating each one at appropriate times.
 
@@ -111,14 +111,14 @@ If you exceed any of the prescribed limits during a write operation, the operati
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

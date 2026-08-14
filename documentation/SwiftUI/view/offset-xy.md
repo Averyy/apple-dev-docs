@@ -42,7 +42,7 @@ Text("Offset by passing horizontal & vertical distance")
     .border(Color.gray)
 ```
 
-![A screenshot showing a view that offset from its original position](https://docs-assets.developer.apple.com/published/2d9a124308ea31d3006f2d246939c0d1/swiftui-offset-xy%402x.png)
+![A screenshot showing a view that offset from its original position](/images/com.apple.SwiftUI/swiftui-offset-xy@2x.png)
 
 ## Parameters
 

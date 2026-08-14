@@ -28,7 +28,7 @@ A dictionary with the combined set of keys and values from all domains.
 
 Use this method to retrieve a union of the keys and values available to your app. The dictionary contains the data from all of the available domains. If multiple domains contain a value for the same key, the dictionary includes the value from the earliest occurrence of that key and discards the values in subsequent domains.
 
-The values in the dictionary are one of the property list object types, such as [`NSNumber`](NSNumber.md), [`NSString`](NSString.md), [`Data`](data.md), [`Date`](date.md), [`NSArray`](NSArray.md), or [`NSDictionary`](NSDictionary.md).
+The values in the dictionary are one of the property list object types, such as [`NSNumber`](nsnumber.md), [`NSString`](nsstring.md), [`Data`](data.md), [`Date`](date.md), [`NSArray`](nsarray.md), or [`NSDictionary`](nsdictionary.md).
 
 ## See Also
 

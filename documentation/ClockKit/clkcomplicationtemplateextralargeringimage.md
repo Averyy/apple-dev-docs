@@ -18,7 +18,7 @@ class CLKComplicationTemplateExtraLargeRingImage
 
 This template belongs to the [`CLKComplicationFamily.extraLarge`](clkcomplicationfamily/extralarge.md) family.
 
-![A diagram showing the layout of the extra large ring image complication. The diagram shows an image inside a progress ring.](https://docs-assets.developer.apple.com/published/58c879353ae4dd5af93e87d23e6d0b24/media-2880718%402x.png)
+![A diagram showing the layout of the extra large ring image complication. The diagram shows an image inside a progress ring.](/images/com.apple.clockkit/media-2880718@2x.png)
 
 The following table lists the dimensions of the image you use in this template. All dimensions are in pixels. All images must be specified as `@2x` images for display on Apple Watch, so the point-based dimensions are half the listed size.
 
@@ -51,13 +51,13 @@ Instead of providing multiple images with different resolutions, you can provide
 ### Inherits From
 - [CLKComplicationTemplate](clkcomplicationtemplate.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCopying](../Foundation/NSCopying.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCopying](../foundation/nscopying.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

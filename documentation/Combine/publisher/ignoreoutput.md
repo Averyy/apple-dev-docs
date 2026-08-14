@@ -45,7 +45,7 @@ cancellable = numbers.publisher
 // Prints: "completion: failure(NoZeroValuesAllowedError())"
 ```
 
-The output type of this publisher is [`Never`](https://developer.apple.com/documentation/Swift/Never).
+The output type of this publisher is [`Never`](https://developer.apple.com/documentation/swift/never).
 
 ## See Also
 

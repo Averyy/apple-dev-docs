@@ -49,9 +49,9 @@ You can optionally provide a binding to a [`SubscriptionStoreControlStyleConfigu
 ## Relationships
 
 ### Conforms To
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
-- [View](../SwiftUI/View.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
+- [View](../swiftui/view.md)
 
 ## See Also
 

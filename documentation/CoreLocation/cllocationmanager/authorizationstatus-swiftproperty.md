@@ -34,7 +34,7 @@ Check this value when the [`locationManagerDidChangeAuthorization(_:)`](cllocati
 
 The system is guaranteed to call the delegate method with the app’s initial authorization state and all authorization status changes.
 
-The system manages the authorization status of a given app according to several factors. Users must authorize the app to use location services explicitly, and location services must be enabled in Settings > Privacy. See [`Choosing the  Location Services Authorization to Request`](https://developer.apple.com/documentation/BundleResources/choosing-the-location-services-authorization-to-request) for more information.
+The system manages the authorization status of a given app according to several factors. Users must authorize the app to use location services explicitly, and location services must be enabled in Settings > Privacy. See [`Choosing the  Location Services Authorization to Request`](https://developer.apple.com/documentation/bundleresources/choosing-the-location-services-authorization-to-request) for more information.
 
 ## See Also
 
@@ -48,9 +48,9 @@ The system manages the authorization status of a given app according to several 
   Requests permission to temporarily use location services with full accuracy.
 - [enum CLAuthorizationStatus](clauthorizationstatus.md)
   Constants that indicate the app’s authorization to use location services.
-- [NSLocationDefaultAccuracyReduced](../BundleResources/Information-Property-List/NSLocationDefaultAccuracyReduced.md)
+- [NSLocationDefaultAccuracyReduced](../bundleresources/information-property-list/nslocationdefaultaccuracyreduced.md)
   A Boolean value that indicates whether the app requests reduced location accuracy by default.
-- [NSLocationAlwaysAndWhenInUseUsageDescription](../BundleResources/Information-Property-List/NSLocationAlwaysAndWhenInUseUsageDescription.md)
+- [NSLocationAlwaysAndWhenInUseUsageDescription](../bundleresources/information-property-list/nslocationalwaysandwheninuseusagedescription.md)
   A message that tells people why the app is requesting access to their location information at all times.
 
 

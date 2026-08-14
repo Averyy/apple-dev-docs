@@ -22,11 +22,11 @@ init(pixelBuffer: CVPixelBuffer, shape: [NSNumber])
 
 #### Discussion
 
-Use this initializer to create an [`IOSurface`](https://developer.apple.com/documentation/IOSurface)-backed `MLMultiArray` that reduces the inference latency by avoiding the buffer copy to and from some compute units.
+Use this initializer to create an [`IOSurface`](https://developer.apple.com/documentation/iosurface)-backed `MLMultiArray` that reduces the inference latency by avoiding the buffer copy to and from some compute units.
 
 The instance will own the pixel buffer and release it on the deallocation.
 
-The pixel buffer’s pixel format type must be [`kCVPixelFormatType_OneComponent16Half`](https://developer.apple.com/documentation/CoreVideo/kCVPixelFormatType_OneComponent16Half). The `MLMultiArray` data type is [`MLMultiArrayDataType.float16`](mlmultiarraydatatype/float16.md).
+The pixel buffer’s pixel format type must be [`kCVPixelFormatType_OneComponent16Half`](https://developer.apple.com/documentation/corevideo/kcvpixelformattype_onecomponent16half). The `MLMultiArray` data type is [`MLMultiArrayDataType.float16`](mlmultiarraydatatype/float16.md).
 
 ## Parameters
 

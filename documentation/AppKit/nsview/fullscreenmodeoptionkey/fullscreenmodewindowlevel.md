@@ -16,7 +16,7 @@ static let fullScreenModeWindowLevel: NSView.FullScreenModeOptionKey
 
 #### Discussion
 
-The corresponding value is an instance of [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) containing an integer value.
+The corresponding value is an instance of [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) containing an integer value.
 
 ## See Also
 

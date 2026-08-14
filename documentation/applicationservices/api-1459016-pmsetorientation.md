@@ -25,8 +25,11 @@ In OS X v10.4 and earlier, if you want to set the page orientation you need to c
 ## Parameters
 
 - `pageFormat`: The page format object whose page orientation you want to set.
-- `orientation`: See   for a full description of the values you can use to specify page orientation.
-- `lock`: The lock state of the setting. You should pass  . Locking is not supported at this time.
+- `orientation`: A constant specifying the desired page orientation. Supported values are: - `kPMPortrait`
+- `kPMLandscape`
+- `kPMReversePortrait` (macOS 10.5 and later)
+- `kPMReverseLandscape` See [`PMOrientation`](pmorientation.md) for a full description of the values you can use to specify page orientation.
+- `lock`: The lock state of the setting. You should pass `kPMUnlocked`. Locking is not supported at this time.
 
 ## See Also
 

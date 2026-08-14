@@ -6,13 +6,13 @@ Represent encoder delay explicitly with an edit list atom and sample group struc
 
 #### Overview
 
-In QuickTime movie files (.mov) and related MPEG-4 files, AAC encoded audio is carried in a sound track as a series of media samples—each media sample corresponding to an AAC encoded audio packet. A track uses an edit list (see [`Edit list atom ('elst')`](edit_list_atom.md)) to indicate the range of time from the media samples to present. The edit list atom along with additional atoms known as Sample Group Structures, introduced in the Sample group structures section below, can now be used to explicitly represent encoder delay.
+In QuickTime movie files (.mov) and related MPEG-4 files, AAC encoded audio is carried in a sound track as a series of media samples—each media sample corresponding to an AAC encoded audio packet. A track uses an edit list (see [`Edit list atom`](edit_list_atom.md)) to indicate the range of time from the media samples to present. The edit list atom along with additional atoms known as Sample Group Structures, introduced in the Sample group structures section below, can now be used to explicitly represent encoder delay.
 
 > ❗ **Important**: A complete implementation using the sample group structures is required to explicitly represent the placement of the source signal in the encoded track. An incomplete implementation will result in unspecified interpretation by Apple software and tools. In the absence of the sample group structures, the classic solution of expecting an implicit encoding delay of 2112 samples and the edit list to start at the beginning of encoder delay will be assumed as described in the previous section.
 
 #### Edit List Atom
 
-See [`Edit atom ('edts')`](edit_atom.md) and [`Edit list atom ('elst')`](edit_list_atom.md) for details of edit lists in track atom structures.
+See [`Edit atom`](edit_atom.md) and [`Edit list atom`](edit_list_atom.md) for details of edit lists in track atom structures.
 
 A sound track of AAC encoded audio uses an edit list to indicate the placement of the source signal in the time represented by the encoded AAC packets. The media time field of the edit list must indicate the first sample to be presented and will correspond in time to the first audio sample following the encoder delay in that track. The edit list track duration field should be set to the duration of the source waveform in media samples. The edit list must not extend into the encoder delay or into any remainder samples of the encoded sound track. Note that for a single waveform encoded into a sound track, the sound track requires only a single edit list atom with one entry.
 
@@ -27,9 +27,9 @@ Sample group structures of roll-group type with a constant roll distance are use
 - To indicate the amount of decoder delay in AAC packets
 - To signal to readers parsing QuickTime movies that the sound track includes explicit information for encoder delay and remainder samples for the AAC packets encoded in the file
 
-> **Note**: The effect of using sample group structures in the track in this manner is that the edit list’s media time and track duration fields do not include encoder delay, as specified above in [`Edit list atom ('elst')`](edit_list_atom.md).
+> **Note**: The effect of using sample group structures in the track in this manner is that the edit list’s media time and track duration fields do not include encoder delay, as specified above in [`Edit list atom`](edit_list_atom.md).
 
-Two sample group structure atoms are used to represent the amount of encoder delay and remainder samples which must be trimmed: [`Sample group description atom ('sgpd')`](sample_group_description_atom.md) and [`Sample-to-group atom ('sbgp')`](sample-to-group_atom.md).
+Two sample group structure atoms are used to represent the amount of encoder delay and remainder samples which must be trimmed: [`Sample group description atom`](sample_group_description_atom.md) and [`Sample-to-group atom`](sample-to-group_atom.md).
 
 ## Topics
 

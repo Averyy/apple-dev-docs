@@ -60,11 +60,11 @@ The `Mip Filter` parameter has the same possible values, with the addition of th
 
 Below is an example of a simple node graph that uses the Image 2Dnode to create a material from an image:
 
-![None](https://docs-assets.developer.apple.com/published/4b154925c4f38a518e9e33b9c2bebdb7/Image2dGraph.png)
+![None](/images/ShaderGraph-Docs/Image2dGraph.png)
 
 Below, the resulting texture applies to a cube:
 
-![None](https://docs-assets.developer.apple.com/published/faa74d1975d208dcd704a5c3692a3285/Image2dMaterial.png)
+![None](/images/ShaderGraph-Docs/Image2dMaterial.png)
 
 ## See Also
 

@@ -21,7 +21,7 @@ let HKMetadataKeyInsulinDeliveryReason: String
 
 #### Discussion
 
-This key is required for [`insulinDelivery`](hkquantitytypeidentifier/insulindelivery.md) samples. It takes an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) object containing a [`HKInsulinDeliveryReason`](hkinsulindeliveryreason.md) value.
+This key is required for [`insulinDelivery`](hkquantitytypeidentifier/insulindelivery.md) samples. It takes an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) object containing a [`HKInsulinDeliveryReason`](hkinsulindeliveryreason.md) value.
 
 ## Topics
 

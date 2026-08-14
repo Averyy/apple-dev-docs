@@ -6,7 +6,7 @@ Learn about important changes in User Notifications.
 
 #### Overview
 
-Browse notable changes in [`User Notifications`](https://developer.apple.com/documentation/UserNotifications).
+Browse notable changes in [`User Notifications`](https://developer.apple.com/documentation/usernotifications).
 
 #### June 2024
 

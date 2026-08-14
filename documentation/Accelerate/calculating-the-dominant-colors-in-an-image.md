@@ -14,7 +14,7 @@ The Accelerate framework provides libraries that allow you to extract a specifie
 
 The image below shows the sample code app. The source image is on the left and a 3D point cloud of the color distribution is on the right. At the bottom of the image is a set of swatches that show the `k` dominant colors in the image.
 
-![A screenshot of the sample code app. The top row of the screenshot contains a photograph of a butterfly on the left and a three-dimensional point cloud showing the image pixels plotted in a cube with axes for red, green, and blue on the right. The bottom row of the screenshot contains five color swatches that represent the five dominant colors in the butterfly photograph.](https://docs-assets.developer.apple.com/published/e8cc4c1ce6e33825d8398512aedaa2f2/calculating-dominant-colors-in-image_2x.png)
+![A screenshot of the sample code app. The top row of the screenshot contains a photograph of a butterfly on the left and a three-dimensional point cloud showing the image pixels plotted in a cube with axes for red, green, and blue on the right. The bottom row of the screenshot contains five color swatches that represent the five dominant colors in the butterfly photograph.](/images/com.apple.accelerate/calculating-dominant-colors-in-image_2x.png)
 
 Calculating the dominant colors in an image is useful for applications such as creating color palettes for GIF image creation.
 
@@ -107,11 +107,11 @@ for centroid in centroids.enumerated() {
 
 The image below is an example 8 x 1 pixel image. The image’s colors are such that the green and blue values in each color are the same.
 
-![A graphic with a horizontal series of eight colored squares that are numbered from zero through seven, from left to right.](https://docs-assets.developer.apple.com/published/76185bc809750c4f42b62e215ca568c2/original_8x1_image_2x.png)
+![A graphic with a horizontal series of eight colored squares that are numbered from zero through seven, from left to right.](/images/com.apple.accelerate/original_8x1_image_2x.png)
 
 The following graphic shows a 2D representation of the distribution of the eight pixel colors in the small image above. The simplified version uses red as the horizontal axis and green-blue as the vertical axis. The illustration represents the eight pixel colors as circles and represents two centroids as squares.
 
-![An eight-by-eight grid that contains the series of eight colors in the previous graphic mapped in two dimensions. The grid also contains two squares marked A and B that represent the two centroids for the two color clusters.](https://docs-assets.developer.apple.com/published/936a69b7d6caff4a788d5c8643a77183/k-means-simplified_2x.png)
+![An eight-by-eight grid that contains the series of eight colors in the previous graphic mapped in two dimensions. The grid also contains two squares marked A and B that represent the two centroids for the two color clusters.](/images/com.apple.accelerate/k-means-simplified_2x.png)
 
 Given the following two rows represent the eight 2D colors:
 
@@ -211,7 +211,7 @@ centroids[centroid.offset].blue = vDSP.mean(gatheredBlue)
 
 The following image shows the example 2D centroids after the update:
 
-![An eight-by-eight grid that contains the series of eight colors in the previous graphic. The two squares that represent the centroids are in slightly different positions compared to the previous graphic to show that they better represent the center of the color clusters.](https://docs-assets.developer.apple.com/published/ec456a4aaef76543a3c2642bd96e1c6b/k-means-simplified-iterated_2x.png)
+![An eight-by-eight grid that contains the series of eight colors in the previous graphic. The two squares that represent the centroids are in slightly different positions compared to the previous graphic to show that they better represent the center of the color clusters.](/images/com.apple.accelerate/k-means-simplified-iterated_2x.png)
 
 ```None
 4.0    // Mean red value for centroid _A_.
@@ -264,7 +264,7 @@ func scatter(value: Float,
 
 The image below shows an original image of some oranges and the quantized version rendered with the five dominant colors:
 
-![Two photographs of some oranges. On the left is the original, full-color image. On the right is the quantized image that shows color banding.](https://docs-assets.developer.apple.com/published/aec12436493280699fa95fd70af5054e/quantized_2x.png)
+![Two photographs of some oranges. On the left is the original, full-color image. On the right is the quantized image that shows color banding.](/images/com.apple.accelerate/quantized_2x.png)
 
 ## See Also
 

@@ -28,7 +28,7 @@ Although textures can consume large amounts of memory, they also offer strategie
 - [enum MTLTextureCompressionType](mtltexturecompressiontype.md)
 - [class MTLTextureDescriptor](mtltexturedescriptor.md)
   An instance that you use to configure new Metal texture instances.
-- [class MTKTextureLoader](../MetalKit/MTKTextureLoader.md)
+- [class MTKTextureLoader](../metalkit/mtktextureloader.md)
   An object that creates textures from existing data in common image formats.
 - [class MTLSharedTextureHandle](mtlsharedtexturehandle.md)
   A texture handle that can be shared across process address space boundaries.
@@ -86,15 +86,15 @@ Although textures can consume large amounts of memory, they also offer strategie
 - [struct MTLMapIndirectArguments](mtlmapindirectarguments.md)
   The data layout for mapping sparse texture regions when using indirect commands.
 ### Texture loading
-- [class MTKTextureLoader](../MetalKit/MTKTextureLoader.md)
+- [class MTKTextureLoader](../metalkit/mtktextureloader.md)
   An object that creates textures from existing data in common image formats.
-- [MTKTextureLoader.Error](../MetalKit/MTKTextureLoader/Error.md)
+- [MTKTextureLoader.Error](../metalkit/mtktextureloader/error.md)
   Errors returned by the texture loader.
-- [MTKTextureLoader.Option](../MetalKit/MTKTextureLoader/Option.md)
+- [MTKTextureLoader.Option](../metalkit/mtktextureloader/option.md)
   Keys and values used to specify loading options.
-- [MTKTextureLoader.Callback](../MetalKit/MTKTextureLoader/Callback.md)
+- [MTKTextureLoader.Callback](../metalkit/mtktextureloader/callback.md)
   The signature for the block executed after an asynchronous loading operation for a single texture has completed.
-- [MTKTextureLoader.ArrayCallback](../MetalKit/MTKTextureLoader/ArrayCallback.md)
+- [MTKTextureLoader.ArrayCallback](../metalkit/mtktextureloader/arraycallback.md)
   The signature for the block executed after an asynchronous loading operation for multiple textures has completed.
 
 ## See Also

@@ -42,7 +42,7 @@ The following code creates a filter that refines the detail in the input image:
     }
 ```
 
-![Two photographs of a beach at sunset with multiple palm trees. The photo on the left is clear. In the photo on the right, a median effect has been applied, and the image is sharper and has more detail in the leafs of the trees in the foreground.](https://docs-assets.developer.apple.com/published/c5f5eb893c740770d52e18ca370d34ba/media-3544967%402x.png)
+![Two photographs of a beach at sunset with multiple palm trees. The photo on the left is clear. In the photo on the right, a median effect has been applied, and the image is sharper and has more detail in the leafs of the trees in the foreground.](/images/com.apple.coreimage/media-3544967@2x.png)
 
 ## See Also
 

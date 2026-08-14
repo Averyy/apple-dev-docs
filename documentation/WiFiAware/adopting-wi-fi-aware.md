@@ -101,9 +101,9 @@ After you declare the services your app uses in `Info.plist`, your app can acces
   Communicate with nearby devices over a secure, high-throughput, low-latency connection by using Wi-Fi Aware.
 - [Connecting devices for peer-to-peer Wi-Fi](connecting-paired-devices.md)
   Make outgoing and accept incoming secure connections with paired devices.
-- [com.apple.developer.wifi-aware](../BundleResources/Entitlements/com.apple.developer.wifi-aware.md)
+- [com.apple.developer.wifi-aware](../bundleresources/entitlements/com.apple.developer.wifi-aware.md)
   The entitlement the system requires for an app to use the Wi-Fi Aware framework.
-- [WiFiAwareServices](../BundleResources/Information-Property-List/WiFiAwareServices.md)
+- [WiFiAwareServices](../bundleresources/information-property-list/wifiawareservices.md)
   Dictionaries of Wi-Fi Aware services that the app can publish or subscribe to.
 
 

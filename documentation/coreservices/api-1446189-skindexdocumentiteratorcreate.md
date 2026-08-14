@@ -26,12 +26,12 @@ Document iterators iterate over a single level of an index. Your code is respons
 
 Search Kit is thread-safe. You can use separate indexing and searching threads. Your application is responsible for ensuring that no more than one process is open at a time for writing to an index.
 
-When your application no longer needs the iterator, dispose of it by calling [`CFRelease`](https://developer.apple.com/documentation/corefoundation/1521153-cfrelease).
+When your application no longer needs the iterator, dispose of it by calling [`CFRelease`](https://developer.apple.com/documentation/corefoundation/cfrelease).
 
 ## Parameters
 
 - `inIndex`: The index you want to iterate across.
-- `inParentDocument`: The document URL object that is the parent of the document URL objects you want to examine. Pass   to get the top item in an index. See   for a discussion of how to get the full URL for a document URL object.
+- `inParentDocument`: The document URL object that is the parent of the document URL objects you want to examine. Pass `NULL` to get the top item in an index. See [`SKDocument`](skdocument.md) for a discussion of how to get the full URL for a document URL object.
 
 ## See Also
 

@@ -18,9 +18,9 @@ func filePromiseProvider(_ filePromiseProvider: NSFilePromiseProvider, writeProm
 
 #### Discussion
 
-This method is called after the drag is complete. The request executes on the [`OperationQueue`](https://developer.apple.com/documentation/Foundation/OperationQueue) supplied by [`operationQueue(for:)`](nsfilepromiseproviderdelegate/operationqueue(for:).md).
+This method is called after the drag is complete. The request executes on the [`OperationQueue`](https://developer.apple.com/documentation/foundation/operationqueue) supplied by [`operationQueue(for:)`](nsfilepromiseproviderdelegate/operationqueue(for:).md).
 
-Call the completion handler with the file contents wrapped in [`NSFileCoordinator`](https://developer.apple.com/documentation/Foundation/NSFileCoordinator).  Be sure to write your file to the input `url` parameter.
+Call the completion handler with the file contents wrapped in [`NSFileCoordinator`](https://developer.apple.com/documentation/foundation/nsfilecoordinator).  Be sure to write your file to the input `url` parameter.
 
 ## Parameters
 

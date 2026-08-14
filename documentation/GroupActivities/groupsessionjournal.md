@@ -27,7 +27,7 @@ final class GroupSessionJournal
 
 A [`GroupSessionJournal`](groupsessionjournal.md) object lets you transfer files and other data objects between participants of a shared activity. A journal object isn’t a replacement for a [`GroupSessionMessenger`](groupsessionmessenger.md) object, which you use to transfer time-sensitive messages and commands between participants. Instead, use it to associate files and other data objects with the activity. For example, you might share images that people drag into your app as part of the activity. The journal makes these data objects available to all participants, regardless of when they joined the session.
 
-After your app joins an activity and receives a session object, create a [`GroupSessionJournal`](groupsessionjournal.md) object and store a strong reference to it. To add a file or data object to the group’s journal, call the [`add(_:)`](groupsessionjournal/add(_:).md) or [`add(_:metadata:)`](groupsessionjournal/add(_:metadata:).md) method with the data you want to share. The types you specify must adopt the [`Transferable`](https://developer.apple.com/documentation/CoreTransferable/Transferable) protocol from the Core Transferable framework. The journal object uses that protocol to package a version of your data suitable for sending to other devices.
+After your app joins an activity and receives a session object, create a [`GroupSessionJournal`](groupsessionjournal.md) object and store a strong reference to it. To add a file or data object to the group’s journal, call the [`add(_:)`](groupsessionjournal/add(_:).md) or [`add(_:metadata:)`](groupsessionjournal/add(_:metadata:).md) method with the data you want to share. The types you specify must adopt the [`Transferable`](https://developer.apple.com/documentation/coretransferable/transferable) protocol from the Core Transferable framework. The journal object uses that protocol to package a version of your data suitable for sending to other devices.
 
 To receive data that a participant added to the journal, configure a task to listen for asynchronous updates to the [`attachments`](groupsessionjournal/attachments-swift.property.md) property of your [`GroupSessionJournal`](groupsessionjournal.md) object. When someone adds or removes an attachment, the journal updates the array and executes your task. Load the contents of an attachment using the [`load(_:)`](groupsessionjournal/attachment/load(_:).md) method of that type. You can also retrieve any attachment-specific metadata, such as a shared ID or display name, that you included with the attached file. The following example creates a task that waits on a custom image type. The `journal` variable contains a previously configured [`GroupSessionJournal`](groupsessionjournal.md) object.
 
@@ -66,8 +66,8 @@ let attachmentListener = Task {
 ## Relationships
 
 ### Conforms To
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

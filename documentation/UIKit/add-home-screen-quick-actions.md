@@ -52,7 +52,7 @@ If the quick actions appropriate for an app never change, define them as static 
 
 The value for `UIApplicationShortcutItemType` must be a unique string that the system passes to your app when a user invokes the quick action. When processing the selected quick action, the unique item type distinguishes between the defined quick actions.
 
-For information about other `Info.plist` keys available for configuring Home Screen quick actions, see [`UIApplicationShortcutItems`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/UIApplicationShortcutItems).
+For information about other `Info.plist` keys available for configuring Home Screen quick actions, see [`UIApplicationShortcutItems`](https://developer.apple.com/documentation/bundleresources/information-property-list/uiapplicationshortcutitems).
 
 ##### Define Dynamic Quick Actions
 
@@ -130,7 +130,7 @@ var quickActionUserInfo: [String: NSSecureCoding] {
 
 Static Home Screen quick actions can also pass [`userInfo`](uiapplicationshortcutitem/userinfo.md) data by including it in the `UIApplicationShortcutItemUserInfo` key in the app’s `Info.plist` file.
 
-All the values the sample passes as [`userInfo`](uiapplicationshortcutitem/userinfo.md) conform to [`NSSecureCoding`](https://developer.apple.com/documentation/Foundation/NSSecureCoding).
+All the values the sample passes as [`userInfo`](uiapplicationshortcutitem/userinfo.md) conform to [`NSSecureCoding`](https://developer.apple.com/documentation/foundation/nssecurecoding).
 
 ##### Respond to Quick Actions
 

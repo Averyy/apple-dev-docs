@@ -36,17 +36,17 @@ The system creates `SystemShortcut` instances to represent a person’s choice w
 ## Relationships
 
 ### Conforms To
-- [Copyable](../Swift/Copyable.md)
-- [CustomLocalizedStringResourceConvertible](../Foundation/CustomLocalizedStringResourceConvertible.md)
+- [Copyable](../swift/copyable.md)
+- [CustomLocalizedStringResourceConvertible](../foundation/customlocalizedstringresourceconvertible.md)
 - [DisplayRepresentable](displayrepresentable.md)
-- [Equatable](../Swift/Equatable.md)
-- [Escapable](../Swift/Escapable.md)
+- [Equatable](../swift/equatable.md)
+- [Escapable](../swift/escapable.md)
 - [InstanceDisplayRepresentable](instancedisplayrepresentable.md)
 - [IntentValueConvertible](intentvalueconvertible.md)
 - [IntentValueExpressing](intentvalueexpressing.md)
 - [PersistentlyIdentifiable](persistentlyidentifiable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 - [TypeDisplayRepresentable](typedisplayrepresentable.md)
 
 ## See Also

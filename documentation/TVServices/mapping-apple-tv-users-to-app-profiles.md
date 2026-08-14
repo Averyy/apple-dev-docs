@@ -24,7 +24,7 @@ Before you run the sample code project in Xcode:
 
 ##### Run As the Current User
 
-Apple TV supports multiple users. To opt-in to keeping separate data for each user, add the [`User Management Entitlement`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.user-management) to your app or app extension, with the value `runs-as-current-user-with-user-independent-keychain`.
+Apple TV supports multiple users. To opt-in to keeping separate data for each user, add the [`User Management Entitlement`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.user-management) to your app or app extension, with the value `runs-as-current-user-with-user-independent-keychain`.
 
 ```plist
 <key>com.apple.developer.user-management</key>
@@ -37,9 +37,9 @@ Apple TV supports multiple users. To opt-in to keeping separate data for each us
 
 ##### Save Each Users Profile
 
-When your app or extension is running on tvOS 16 with multiple Apple TV users, you can store each person’s preferred profile directly with an API such as [`UserDefaults`](https://developer.apple.com/documentation/Foundation/UserDefaults) or CloudKit; the system separates the data for each Apple TV user. Your code doesn’t have to handle any data partitioning.
+When your app or extension is running on tvOS 16 with multiple Apple TV users, you can store each person’s preferred profile directly with an API such as [`UserDefaults`](https://developer.apple.com/documentation/foundation/userdefaults) or CloudKit; the system separates the data for each Apple TV user. Your code doesn’t have to handle any data partitioning.
 
-Here’s an example using [`UserDefaults`](https://developer.apple.com/documentation/Foundation/UserDefaults) to save the profile.
+Here’s an example using [`UserDefaults`](https://developer.apple.com/documentation/foundation/userdefaults) to save the profile.
 
 ```swift
 private var selectedProfileIdentifier: String? {
@@ -53,7 +53,7 @@ private var selectedProfileIdentifier: String? {
         }
 ```
 
-The sample only attempts to save the selected profile when running on tvOS 16 or later; it doesn’t run as the current user on tvOS 15 or earlier. It also checks [`shouldStorePreferencesForCurrentUser`](TVUserManager/shouldStorePreferencesForCurrentUser.md) before saving to avoid remembering the selected profile in case there aren’t multiple users on the Apple TV.
+The sample only attempts to save the selected profile when running on tvOS 16 or later; it doesn’t run as the current user on tvOS 15 or earlier. It also checks [`shouldStorePreferencesForCurrentUser`](tvusermanager/shouldstorepreferencesforcurrentuser.md) before saving to avoid remembering the selected profile in case there aren’t multiple users on the Apple TV.
 
 ##### Skip the Profile Picker Dialog
 
@@ -79,9 +79,9 @@ The sample still presents the profile picker if the Apple TV doesn’t have mult
 
 ##### Store Shared Login Credentials in the User Independent Keychain
 
-Another interstitial dialog that can get in the way of the content is the sign-in screen. Keychain data is automatically separated for each Apple TV user. To avoid having each user sign in individually, tvOS 16 adds a new Keychain API: [`kSecUseUserIndependentKeychain`](https://developer.apple.com/documentation/Security/kSecUseUserIndependentKeychain).
+Another interstitial dialog that can get in the way of the content is the sign-in screen. Keychain data is automatically separated for each Apple TV user. To avoid having each user sign in individually, tvOS 16 adds a new Keychain API: [`kSecUseUserIndependentKeychain`](https://developer.apple.com/documentation/security/ksecuseuserindependentkeychain).
 
-With [`kSecUseUserIndependentKeychain`](https://developer.apple.com/documentation/Security/kSecUseUserIndependentKeychain), signing in only needs to happen once, even when running as the current user, because items stored using this property are accessible by all Apple TV users.
+With [`kSecUseUserIndependentKeychain`](https://developer.apple.com/documentation/security/ksecuseuserindependentkeychain), signing in only needs to happen once, even when running as the current user, because items stored using this property are accessible by all Apple TV users.
 
 ```swift
 var baseQuery: [CFString: Any] = [

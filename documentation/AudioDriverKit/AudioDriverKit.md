@@ -10,9 +10,9 @@ Develop drivers for audio devices.
 
 #### Overview
 
-The AudioDriverKit framework supports the development of [`DriverKit`](https://developer.apple.com/documentation/DriverKit)-based audio extensions that communicate with the CoreAudio HAL. AudioDriverKit handles all of the necessary user client communication between the CoreAudio HAL and the driver extension, which eliminates the need to implement an audio server plug-in. You can also integrate with transport-based driver extension frameworks like [`PCIDriverKit`](https://developer.apple.com/documentation/PCIDriverKit).
+The AudioDriverKit framework supports the development of [`DriverKit`](https://developer.apple.com/documentation/driverkit)-based audio extensions that communicate with the CoreAudio HAL. AudioDriverKit handles all of the necessary user client communication between the CoreAudio HAL and the driver extension, which eliminates the need to implement an audio server plug-in. You can also integrate with transport-based driver extension frameworks like [`PCIDriverKit`](https://developer.apple.com/documentation/pcidriverkit).
 
-Develop your driver by subclassing [`IOUserAudioDriver`](iouseraudiodriver.md). On macOS, use the [`System Extensions`](https://developer.apple.com/documentation/SystemExtensions) framework to install and upgrade your driver. On iPadOS, the system automatically discovers and upgrades drivers along with their host apps.
+Develop your driver by subclassing [`IOUserAudioDriver`](iouseraudiodriver.md). On macOS, use the [`System Extensions`](https://developer.apple.com/documentation/systemextensions) framework to install and upgrade your driver. On iPadOS, the system automatically discovers and upgrades drivers along with their host apps.
 
 > **Note**:  AudioDriverKit is available on macOS for Intel and Apple Silicon devices, and on iPadOS for devices with an M-series processor.
 
@@ -23,7 +23,7 @@ Develop your driver by subclassing [`IOUserAudioDriver`](iouseraudiodriver.md). 
   The base class for most classes in the framework.
 - [IOUserAudioDriver](iouseraudiodriver.md)
   A DriverKit provider object that manages communications with an audio device.
-- [DriverKit Audio Family](../BundleResources/Entitlements/com.apple.developer.driverkit.family.audio.md)
+- [DriverKit Audio Family](../bundleresources/entitlements/com.apple.developer.driverkit.family.audio.md)
   A Boolean value that indicates whether the device supports audio functionality.
 - [Creating an audio device driver](creating-an-audio-device-driver.md)
   Implement a configurable audio input source as a driver extension that runs in user space in macOS and iPadOS.

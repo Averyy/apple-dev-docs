@@ -26,7 +26,7 @@ var delegateClass: AnyClass? { get set }
 
 If you specified [`UIWindowScene`](uiwindowscene.md) in the [`sceneClass`](uisceneconfiguration/sceneclass.md) property, your delegate class must conform to the [`UIWindowSceneDelegate`](uiwindowscenedelegate.md) protocol. Otherwise, you must specify a class that conforms to the [`UISceneDelegate`](uiscenedelegate.md) protocol.
 
-UIKit sets this property’s initial value using the [`UISceneDelegateClassName`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/UIApplicationSceneManifest/UISceneConfigurations/UIWindowSceneSessionRoleApplication/UISceneDelegateClassName) key from the appropriate scene in your app’s `Info.plist` file.
+UIKit sets this property’s initial value using the [`UISceneDelegateClassName`](https://developer.apple.com/documentation/bundleresources/information-property-list/uiapplicationscenemanifest/uisceneconfigurations/uiwindowscenesessionroleapplication/uiscenedelegateclassname) key from the appropriate scene in your app’s `Info.plist` file.
 
 ## See Also
 

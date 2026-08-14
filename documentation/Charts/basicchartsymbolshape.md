@@ -29,12 +29,12 @@ struct BasicChartSymbolShape
 ## Relationships
 
 ### Conforms To
-- [Animatable](../SwiftUI/Animatable.md)
+- [Animatable](../swiftui/animatable.md)
 - [ChartSymbolShape](chartsymbolshape.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
-- [Shape](../SwiftUI/Shape.md)
-- [View](../SwiftUI/View.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
+- [Shape](../swiftui/shape.md)
+- [View](../swiftui/view.md)
 
 ## See Also
 

@@ -27,7 +27,7 @@ protocol EntityGestureRecognizer : UIGestureRecognizer
 ## Relationships
 
 ### Inherits From
-- [UIGestureRecognizer](../UIKit/UIGestureRecognizer.md)
+- [UIGestureRecognizer](../uikit/uigesturerecognizer.md)
 ### Conforming Types
 - [EntityRotationGestureRecognizer](entityrotationgesturerecognizer.md)
 - [EntityScaleGestureRecognizer](entityscalegesturerecognizer.md)

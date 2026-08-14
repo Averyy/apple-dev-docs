@@ -28,7 +28,7 @@ For more information, see [`NSColor`](nscolor.md).
 
 - [class var alternateSelectedControlTextColor: NSColor](nscolor/alternateselectedcontroltextcolor.md)
   The color to use for text in a selected control.
-- [Color](https://developer.apple.com/design/Human-Interface-Guidelines/color)
+- [Color](https://developer.apple.com/design/human-interface-guidelines/color)
   Judicious use of color can enhance communication, evoke your brand, provide visual continuity, communicate status and feedback, and help people understand information.
 - [class var selectedControlColor: NSColor](nscolor/selectedcontrolcolor.md)
   The color to use for the face of a selected control—that is, a control that has been clicked or is being dragged.

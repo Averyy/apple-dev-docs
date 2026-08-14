@@ -22,7 +22,7 @@ func CTRunGetPositionsPtr(_ run: CTRun) -> UnsafePointer<CGPoint>?
 
 #### Return Value
 
-A valid pointer to an array of [`CGPoint`](https://developer.apple.com/documentation/CoreFoundation/CGPoint) structures, or `NULL`.
+A valid pointer to an array of [`CGPoint`](https://developer.apple.com/documentation/corefoundation/cgpoint) structures, or `NULL`.
 
 #### Discussion
 

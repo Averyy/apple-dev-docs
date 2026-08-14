@@ -22,9 +22,9 @@ let kCGImageDestinationMergeMetadata: CFString
 
 #### Discussion
 
-The value of this key must be a [`CFBoolean`](https://developer.apple.com/documentation/CoreFoundation/CFBoolean) value. The default value is [`kCFBooleanFalse`](https://developer.apple.com/documentation/CoreFoundation/kCFBooleanFalse).
+The value of this key must be a [`CFBoolean`](https://developer.apple.com/documentation/corefoundation/cfboolean) value. The default value is [`kCFBooleanFalse`](https://developer.apple.com/documentation/corefoundation/kcfbooleanfalse).
 
-If you set this key to [`kCFBooleanTrue`](https://developer.apple.com/documentation/CoreFoundation/kCFBooleanTrue), the image destination merges the information in the [`kCGImageDestinationMetadata`](kcgimagedestinationmetadata.md) key with the image’s existing metadata. Specifically, if a tag doesn’t exist in the source, the destination adds it. If the tag exists in the source, the destination updates its value. To remove a tag, set the value of the appropriate key to [`kCFNull`](https://developer.apple.com/documentation/CoreFoundation/kCFNull).
+If you set this key to [`kCFBooleanTrue`](https://developer.apple.com/documentation/corefoundation/kcfbooleantrue), the image destination merges the information in the [`kCGImageDestinationMetadata`](kcgimagedestinationmetadata.md) key with the image’s existing metadata. Specifically, if a tag doesn’t exist in the source, the destination adds it. If the tag exists in the source, the destination updates its value. To remove a tag, set the value of the appropriate key to [`kCFNull`](https://developer.apple.com/documentation/corefoundation/kcfnull).
 
 ## See Also
 

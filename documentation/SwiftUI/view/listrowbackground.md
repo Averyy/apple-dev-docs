@@ -53,7 +53,7 @@ struct ContentView: View {
 }
 ```
 
-![A screenshot showing the placement of an image as the background to](https://docs-assets.developer.apple.com/published/149e5b46ecc387e7e071f9b4796f462b/SwiftUI-View-listRowBackground%402x.png)
+![A screenshot showing the placement of an image as the background to](/images/com.apple.SwiftUI/SwiftUI-View-listRowBackground@2x.png)
 
 ## Parameters
 

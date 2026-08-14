@@ -30,7 +30,7 @@ class LoadRequest<Output>
 ## Relationships
 
 ### Conforms To
-- [Publisher](../Combine/Publisher.md)
+- [Publisher](../combine/publisher.md)
 
 ## See Also
 

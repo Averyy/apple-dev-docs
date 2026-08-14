@@ -46,7 +46,7 @@ Check the value of the Animated Images setting at any time by using [`animatedIm
 
 - [VoiceOver](voiceover.md)
   A gesture-based screen reader that provides an auditory description of the content onscreen.
-- [Flashing lights](../MediaAccessibility/flashing-lights.md)
+- [Flashing lights](../mediaaccessibility/flashing-lights.md)
   Detect, mitigate, and inform people about flashing lights in media content.
 - [Audio graphs](audio-graphs.md)
   Define an accessible representation of your chart for VoiceOver to generate an audio graph.

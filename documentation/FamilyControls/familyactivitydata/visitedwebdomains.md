@@ -19,7 +19,7 @@ var visitedWebDomains: [WebDomain] { get async throws }
 
 Each web domain contains both a `domain` and a `token`.
 
-> ❗ **Important**:  Authorize your app with [`AuthorizationCenter`](AuthorizationCenter.md) and ensure data access is available before accessing this variable. Otherwise, it will always throw an error.
+> ❗ **Important**:  Authorize your app with [`AuthorizationCenter`](authorizationcenter.md) and ensure data access is available before accessing this variable. Otherwise, it will always throw an error.
 
 ## See Also
 

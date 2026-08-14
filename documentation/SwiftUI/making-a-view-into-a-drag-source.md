@@ -6,9 +6,9 @@ Adopt draggable API to provide items for drag-and-drop operations.
 
 #### Overview
 
-When someone drags an onscreen visual representation of an item in your app, such as a photo, a Maps location, a Calendar event, or a text selection, the drag operation has some data associated with it, as well as a preview of the data that the system displays. Add the [`draggable(_:)`](view/draggable(_:).md) modifier to enable the view to function as a drag source, and provide a value that conforms to the [`Transferable`](https://developer.apple.com/documentation/CoreTransferable/Transferable) protocol.
+When someone drags an onscreen visual representation of an item in your app, such as a photo, a Maps location, a Calendar event, or a text selection, the drag operation has some data associated with it, as well as a preview of the data that the system displays. Add the [`draggable(_:)`](view/draggable(_:).md) modifier to enable the view to function as a drag source, and provide a value that conforms to the [`Transferable`](https://developer.apple.com/documentation/coretransferable/transferable) protocol.
 
-The `Transferable` protocol describes how you can serialize and deserialize your model object for sharing and data transfer. It provides a transfer representation by composing one or more of the Core Transferable framework’s built-in [`TransferRepresentation`](https://developer.apple.com/documentation/CoreTransferable/TransferRepresentation) types.
+The `Transferable` protocol describes how you can serialize and deserialize your model object for sharing and data transfer. It provides a transfer representation by composing one or more of the Core Transferable framework’s built-in [`TransferRepresentation`](https://developer.apple.com/documentation/coretransferable/transferrepresentation) types.
 
 ##### Enable a View As a Drag Source
 
@@ -60,9 +60,9 @@ To customize the lift preview that the system shows as it transitions to display
 
 ##### Create a Transferable Item for Drag and Drop Operations
 
-To support drag operations of model objects, conform a model to the `Transferable` protocol to create a transferable item, and implement the [`TransferRepresentation`](https://developer.apple.com/documentation/CoreTransferable/TransferRepresentation) static property. Types like [`String`](https://developer.apple.com/documentation/Swift/String), [`Data`](https://developer.apple.com/documentation/Foundation/Data), [`URL`](https://developer.apple.com/documentation/Foundation/URL), and [`Image`](Image.md) already conform to `Transferable`, making them easy to use in drag-and-drop operations.
+To support drag operations of model objects, conform a model to the `Transferable` protocol to create a transferable item, and implement the [`TransferRepresentation`](https://developer.apple.com/documentation/coretransferable/transferrepresentation) static property. Types like [`String`](https://developer.apple.com/documentation/swift/string), [`Data`](https://developer.apple.com/documentation/foundation/data), [`URL`](https://developer.apple.com/documentation/foundation/url), and [`Image`](image.md) already conform to `Transferable`, making them easy to use in drag-and-drop operations.
 
-Define a data model, representing a user profile, that is a type conforming to [`Codable`](https://developer.apple.com/documentation/Swift/Codable) with the properties `name` and `phoneNumber`.
+Define a data model, representing a user profile, that is a type conforming to [`Codable`](https://developer.apple.com/documentation/swift/codable) with the properties `name` and `phoneNumber`.
 
 ```swift
 struct Profile: Codable, Identifiable {
@@ -72,7 +72,7 @@ struct Profile: Codable, Identifiable {
 }
 ```
 
-Extend `Profile` to conform to the `Transferable` protocol to compose a transfer representation, and add [`CodableRepresentation`](https://developer.apple.com/documentation/CoreTransferable/CodableRepresentation) with the custom uniform type identifier `com.example.profile` to represent the `Profile` data structure.
+Extend `Profile` to conform to the `Transferable` protocol to compose a transfer representation, and add [`CodableRepresentation`](https://developer.apple.com/documentation/coretransferable/codablerepresentation) with the custom uniform type identifier `com.example.profile` to represent the `Profile` data structure.
 
 ```swift
 extension Profile: Transferable {
@@ -83,9 +83,9 @@ extension Profile: Transferable {
 }
 ```
 
-Make sure to include the custom uniform type identifier in the app’s `Info.plist` file. For more information, see [`Defining file and data types for your app`](https://developer.apple.com/documentation/UniformTypeIdentifiers/defining-file-and-data-types-for-your-app).
+Make sure to include the custom uniform type identifier in the app’s `Info.plist` file. For more information, see [`Defining file and data types for your app`](https://developer.apple.com/documentation/uniformtypeidentifiers/defining-file-and-data-types-for-your-app).
 
-Declare new uniform type identifiers as convenience variables on [`UTType`](https://developer.apple.com/documentation/UniformTypeIdentifiers/UTType-swift.struct). For an exported declaration, use the following code:
+Declare new uniform type identifiers as convenience variables on [`UTType`](https://developer.apple.com/documentation/uniformtypeidentifiers/uttype-swift.struct). For an exported declaration, use the following code:
 
 ```swift
 extension UTType {
@@ -93,9 +93,9 @@ extension UTType {
 }
 ```
 
-The other type of transfer representation in the previous code example is a [`ProxyRepresentation`](https://developer.apple.com/documentation/CoreTransferable/ProxyRepresentation), which uses the `String` structure’s built-in `Transferable` conformance. `ProxyRepresentation` serves as an alternative that lets people drag and drop the profile item in any text editor that doesn’t support the `com.example.profile` content type, but works with text formats.
+The other type of transfer representation in the previous code example is a [`ProxyRepresentation`](https://developer.apple.com/documentation/coretransferable/proxyrepresentation), which uses the `String` structure’s built-in `Transferable` conformance. `ProxyRepresentation` serves as an alternative that lets people drag and drop the profile item in any text editor that doesn’t support the `com.example.profile` content type, but works with text formats.
 
-To add more transfer representations to a draggable item, specify one or more additional representations in order of preference. This ensures that the system uses the most suitable representation, depending on the content type that the receiver can accept for drag-and-drop operations. For more information, see [`Choosing a transfer representation for a model type`](https://developer.apple.com/documentation/CoreTransferable/choosing-a-transfer-representation-for-a-model-type).
+To add more transfer representations to a draggable item, specify one or more additional representations in order of preference. This ensures that the system uses the most suitable representation, depending on the content type that the receiver can accept for drag-and-drop operations. For more information, see [`Choosing a transfer representation for a model type`](https://developer.apple.com/documentation/coretransferable/choosing-a-transfer-representation-for-a-model-type).
 
 To use the `com.example.profile` content type for drag operations, pass in the profiles to the `draggable(_:)` modifier.
 

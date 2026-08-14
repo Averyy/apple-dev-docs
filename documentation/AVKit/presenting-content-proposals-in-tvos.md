@@ -60,7 +60,7 @@ override var preferredPlayerViewFrame: CGRect {
 
 When the system presents the proposal, the player’s view automatically animates to the specified frame.
 
-> **Note**:  To lay out your content relative to the newly sized and positioned video frame, you use the [`UILayoutGuide`](https://developer.apple.com/documentation/UIKit/UILayoutGuide) provided by the view controller’s [`playerLayoutGuide`](avcontentproposalviewcontroller/playerlayoutguide.md) property.
+> **Note**:  To lay out your content relative to the newly sized and positioned video frame, you use the [`UILayoutGuide`](https://developer.apple.com/documentation/uikit/uilayoutguide) provided by the view controller’s [`playerLayoutGuide`](avcontentproposalviewcontroller/playerlayoutguide.md) property.
 
 ##### Add Controls to the Content Proposal
 
@@ -80,7 +80,7 @@ Your presented user interface should also provide controls so the user can accep
 
 ##### Make the Content Proposal Eligible to Be Presented
 
-To make your content proposal eligible for the system to present, set it as the [`nextContentProposal`](https://developer.apple.com/documentation/AVFoundation/AVPlayerItem/nextContentProposal) property value of the current [`AVPlayerItem`](https://developer.apple.com/documentation/AVFoundation/AVPlayerItem). The following example shows how to configure this property value in a playback app that manages a queue of `Video` objects, which is a custom value type that models the data of an individual video in the queue. The example code creates the required playback objects, creates a new [`AVContentProposal`](avcontentproposal.md) for the next video in the queue, and sets the video as the player item’s [`nextContentProposal`](https://developer.apple.com/documentation/AVFoundation/AVPlayerItem/nextContentProposal).
+To make your content proposal eligible for the system to present, set it as the [`nextContentProposal`](https://developer.apple.com/documentation/avfoundation/avplayeritem/nextcontentproposal) property value of the current [`AVPlayerItem`](https://developer.apple.com/documentation/avfoundation/avplayeritem). The following example shows how to configure this property value in a playback app that manages a queue of `Video` objects, which is a custom value type that models the data of an individual video in the queue. The example code creates the required playback objects, creates a new [`AVContentProposal`](avcontentproposal.md) for the next video in the queue, and sets the video as the player item’s [`nextContentProposal`](https://developer.apple.com/documentation/avfoundation/avplayeritem/nextcontentproposal).
 
 ```swift
 func prepareToPlay() {
@@ -119,7 +119,7 @@ func makeContentProposal(for video: Video?) -> AVContentProposal? {
 
 ##### Present the Content Proposal
 
-With the content proposal set as the player item’s [`nextContentProposal`](https://developer.apple.com/documentation/AVFoundation/AVPlayerItem/nextContentProposal), the next step is to implement the methods of the [`AVPlayerViewControllerDelegate`](avplayerviewcontrollerdelegate.md) protocol. You use these methods to define how the system presents the content proposal, as well as to handle the acceptance or rejection of the proposed content.
+With the content proposal set as the player item’s [`nextContentProposal`](https://developer.apple.com/documentation/avfoundation/avplayeritem/nextcontentproposal), the next step is to implement the methods of the [`AVPlayerViewControllerDelegate`](avplayerviewcontrollerdelegate.md) protocol. You use these methods to define how the system presents the content proposal, as well as to handle the acceptance or rejection of the proposed content.
 
 To present your custom view controller in response to a request to present the next content proposal, implement the [`playerViewController(_:shouldPresent:)`](avplayerviewcontrollerdelegate/playerviewcontroller(_:shouldpresent:).md) method. In this method, you set an instance of your custom [`AVContentProposalViewController`](avcontentproposalviewcontroller.md) as the player view controller’s [`contentProposalViewController`](avplayerviewcontroller/contentproposalviewcontroller.md) property.
 

@@ -17,7 +17,7 @@ let kSecCodeInfoFlags: CFString
 
 #### Discussion
 
-The value is a [`CFNumber`](https://developer.apple.com/documentation/CoreFoundation/CFNumber). See [`SecCodeSignatureFlags`](seccodesignatureflags.md) for a list of possible values.
+The value is a [`CFNumber`](https://developer.apple.com/documentation/corefoundation/cfnumber). See [`SecCodeSignatureFlags`](seccodesignatureflags.md) for a list of possible values.
 
 
 ---

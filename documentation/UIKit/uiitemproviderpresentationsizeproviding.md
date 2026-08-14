@@ -24,7 +24,7 @@ protocol UIItemProviderPresentationSizeProviding : NSObjectProtocol
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 ### Conforming Types
 - [UIImage](uiimage.md)
 
@@ -32,11 +32,11 @@ protocol UIItemProviderPresentationSizeProviding : NSObjectProtocol
 
 - [Data delivery with drag and drop](data-delivery-with-drag-and-drop.md)
   Share data between iPad apps during a drag and drop operation using an item provider.
-- [class NSItemProvider](../Foundation/NSItemProvider.md)
+- [class NSItemProvider](../foundation/nsitemprovider.md)
   An item provider for conveying data or a file between processes during drag-and-drop or copy-and-paste activities, or from a host app to an app extension.
-- [protocol NSItemProviderReading](../Foundation/NSItemProviderReading.md)
+- [protocol NSItemProviderReading](../foundation/nsitemproviderreading.md)
   The protocol for implementing a class to allow an item provider to create an instance of the class.
-- [protocol NSItemProviderWriting](../Foundation/NSItemProviderWriting.md)
+- [protocol NSItemProviderWriting](../foundation/nsitemproviderwriting.md)
   The protocol for implementing a class to allow an item provider to retrieve data from an instance of the class.
 - [protocol UIItemProviderReadingAugmentationDesignating](uiitemproviderreadingaugmentationdesignating.md)
 - [protocol UIItemProviderReadingAugmentationProviding](uiitemproviderreadingaugmentationproviding.md)

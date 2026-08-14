@@ -28,7 +28,7 @@ The coordinator issues this command to perform a seek in the item timeline, pote
 
 - `coordinator`: The playback coordinator that issues the command.
 - `seekCommand`: The command to execute. Before performing it, verify that its [`expectedCurrentItemIdentifier`](avdelegatingplaybackcoordinatorplaybackcontrolcommand/expectedcurrentitemidentifier.md) property value matches the item that you’re currently playing. If the command isn’t valid for the current item, ignore it and call the completion handler.
-- `completionHandler`: A completion handler that your app must call when it finishes handling the command, either successfully or after beginning a suspension if it can’t handle the command currently. If the value of the command’s [`shouldBufferInAnticipationOfPlayback`](avdelegatingplaybackcoordinatorpausecommand/shouldbufferinanticipationofplayback.md) property is [`true`](https://developer.apple.com/documentation/Swift/true), call the completion handler only after the player is ready for playback.
+- `completionHandler`: A completion handler that your app must call when it finishes handling the command, either successfully or after beginning a suspension if it can’t handle the command currently. If the value of the command’s [`shouldBufferInAnticipationOfPlayback`](avdelegatingplaybackcoordinatorpausecommand/shouldbufferinanticipationofplayback.md) property is [`true`](https://developer.apple.com/documentation/swift/true), call the completion handler only after the player is ready for playback.
 
 ## See Also
 

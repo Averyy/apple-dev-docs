@@ -34,7 +34,7 @@ The protocol provides default implementations for all of the inherited `BADownlo
 ## Relationships
 
 ### Inherits From
-- [AppExtension](../ExtensionFoundation/AppExtension.md)
+- [AppExtension](../extensionfoundation/appextension.md)
 - [BADownloaderExtension](badownloaderextension-qwaw.md)
 
 ## See Also
@@ -45,9 +45,9 @@ The protocol provides default implementations for all of the inherited `BADownlo
   An actor that manages asset packs.
 - [struct AssetPackManifest](assetpackmanifest.md)
   A manifest of asset packs that are available to download.
-- [BAAppGroupID](../BundleResources/Information-Property-List/BAAppGroupID.md)
+- [BAAppGroupID](../bundleresources/information-property-list/baappgroupid.md)
   The app group identifier that you share between your app and the extension that uses asset packs.
-- [BAHasManagedAssetPacks](../BundleResources/Information-Property-List/BAHasManagedAssetPacks.md)
+- [BAHasManagedAssetPacks](../bundleresources/information-property-list/bahasmanagedassetpacks.md)
   A Boolean value that indicates whether you let the system automatically manage your asset packs.
 
 

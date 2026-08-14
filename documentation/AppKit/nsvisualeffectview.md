@@ -32,11 +32,11 @@ For visual effect views you create yourself, use the [`blendingMode`](nsvisualef
 - **Behind-window blending** uses the content behind the window as the background for your visual effect view. Behind-window blending makes your entire window stand out above other windows and apps on the desktop. Sheets and popovers use behind-window blending.
 - **In-window blending** uses the window’s content as the background for your visual effect view. Typically, you use in-window blending with scrolling content, so that the scrolled content remains partially visible under other parts of your window chrome. Toolbars always use in-window blending.
 
-![An illustration of a window whose title bar and side bar use visual effect views with different blending options. The title bar uses in-window blending which blends content from the window with the bar. The side bar uses behind-window blending, which allows part of the desktop to show through. ](https://docs-assets.developer.apple.com/published/153ccb58867a13d8d8a600691c57adf7/media-3198506%402x.png)
+![An illustration of a window whose title bar and side bar use visual effect views with different blending options. The title bar uses in-window blending which blends content from the window with the bar. The side bar uses behind-window blending, which allows part of the desktop to show through. ](/images/com.apple.appkit/media-3198506@2x.png)
 
 ##### Enabling Vibrancy for Foreground Content
 
-The presence of a visual effect view in your view hierarchy does not automatically add vibrancy to your content. For custom views, you must explicitly enable vibrancy by overriding the [`allowsVibrancy`](nsview/allowsvibrancy.md) property and returning [`true`](https://developer.apple.com/documentation/Swift/true).
+The presence of a visual effect view in your view hierarchy does not automatically add vibrancy to your content. For custom views, you must explicitly enable vibrancy by overriding the [`allowsVibrancy`](nsview/allowsvibrancy.md) property and returning [`true`](https://developer.apple.com/documentation/swift/true).
 
 > **Note**:  AppKit views and controls automatically add vibrancy where appropriate. For example, [`NSTextField`](nstextfield.md) enables vibrancy to increase the contrast between the text and background. Don’t change the vibrancy settings of standard AppKit views and controls.
 
@@ -88,24 +88,24 @@ If you subclass `NSVisualEffectView`:
 ### Inherits From
 - [NSView](nsview.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
 - [NSAccessibilityElementProtocol](nsaccessibilityelementprotocol.md)
 - [NSAccessibilityProtocol](nsaccessibilityprotocol.md)
 - [NSAnimatablePropertyContainer](nsanimatablepropertycontainer.md)
 - [NSAppearanceCustomization](nsappearancecustomization.md)
-- [NSCoding](../Foundation/NSCoding.md)
+- [NSCoding](../foundation/nscoding.md)
 - [NSDraggingDestination](nsdraggingdestination.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 - [NSStandardKeyBindingResponding](nsstandardkeybindingresponding.md)
 - [NSTouchBarProvider](nstouchbarprovider.md)
 - [NSUserActivityRestoring](nsuseractivityrestoring.md)
 - [NSUserInterfaceItemIdentification](nsuserinterfaceitemidentification.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

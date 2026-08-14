@@ -19,7 +19,7 @@ class let touchBarRefreshTemplateName: String
 
 #### Discussion
 
-![Template image for refresh](https://docs-assets.developer.apple.com/published/95f2e9b4245b4b9f3b86be95a2188b77/media-2793474%402x.png)
+![Template image for refresh](/images/com.apple.appkit/media-2793474@2x.png)
 
 Touch Bar template images are exclusively for use in [`NSTouchBarItem`](nstouchbaritem.md) objects and not in onscreen windows.
 

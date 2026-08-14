@@ -10,20 +10,20 @@ A just-in-time (JIT) compiler poses unique security challenges. To prepare the c
 
 The system uses hardware memory management to enforce that a page of memory allocated by your process is either writable, or executable, but not simultaneously both (W^X).
 
-To toggle the writable or executable status of a memory page, your web content extension calls [`be_memory_inline_jit_restrict_rwx_to_rx_with_witness`](https://developer.apple.com/documentation/BrowserEngineCore/be_memory_inline_jit_restrict_rwx_to_rx_with_witness), and [`be_memory_inline_jit_restrict_rwx_to_rw_with_witness`](https://developer.apple.com/documentation/BrowserEngineCore/be_memory_inline_jit_restrict_rwx_to_rw_with_witness). You must call these functions only in certain restricted ways that are outlined below, to protect your process from possible malicious misuse.
+To toggle the writable or executable status of a memory page, your web content extension calls [`be_memory_inline_jit_restrict_rwx_to_rx_with_witness`](https://developer.apple.com/documentation/browserenginecore/be_memory_inline_jit_restrict_rwx_to_rx_with_witness), and [`be_memory_inline_jit_restrict_rwx_to_rw_with_witness`](https://developer.apple.com/documentation/browserenginecore/be_memory_inline_jit_restrict_rwx_to_rw_with_witness). You must call these functions only in certain restricted ways that are outlined below, to protect your process from possible malicious misuse.
 
 #### Add Jit Entitlements
 
 Add the following entitlements to your web content extension’s target, setting their values to `true`:
 
-- [`Extended Virtual Addressing Entitlement`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.kernel.extended-virtual-addressing)
-- [`Allow execution of JIT-compiled code entitlement`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.security.cs.allow-jit)
+- [`Extended Virtual Addressing Entitlement`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.kernel.extended-virtual-addressing)
+- [`Allow execution of JIT-compiled code entitlement`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.security.cs.allow-jit)
 
-> **Note**:  If you use `pthread_jit_write_with_callback_np()` to toggle JIT write protections for a memory region instead of `be_memory_inline_jit_restrict_rwx_to_rx_with_witness()`, add both the [`Allow execution of JIT-compiled code entitlement`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.security.cs.allow-jit) and `com.apple.security.cs.jit-write-allowlist` entitlements, each with the value `true`. For more information, see [`Porting just-in-time compilers to Apple silicon`](https://developer.apple.com/documentation/Apple-Silicon/porting-just-in-time-compilers-to-apple-silicon).
+> **Note**:  If you use `pthread_jit_write_with_callback_np()` to toggle JIT write protections for a memory region instead of `be_memory_inline_jit_restrict_rwx_to_rx_with_witness()`, add both the [`Allow execution of JIT-compiled code entitlement`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.security.cs.allow-jit) and `com.apple.security.cs.jit-write-allowlist` entitlements, each with the value `true`. For more information, see [`Porting just-in-time compilers to Apple silicon`](https://developer.apple.com/documentation/apple-silicon/porting-just-in-time-compilers-to-apple-silicon).
 
 #### Adopt Pointer Authentication
 
-When your app targets the `arm64e` instruction set, the [`be_memory_inline_jit_restrict_rwx_to_rw_with_witness`](https://developer.apple.com/documentation/BrowserEngineCore/be_memory_inline_jit_restrict_rwx_to_rw_with_witness) function inserts a cryptographically signed pointer authentication code (PAC) into the pointer to your JIT memory. The system authenticates the PAC when your extension process jumps to the JIT-compiled code after you call `be_memory_inline_jit_restrict_rwx_to_rx_with_witness()`, and only runs the code if the PAC is still valid. Otherwise, it stops your extension process.
+When your app targets the `arm64e` instruction set, the [`be_memory_inline_jit_restrict_rwx_to_rw_with_witness`](https://developer.apple.com/documentation/browserenginecore/be_memory_inline_jit_restrict_rwx_to_rw_with_witness) function inserts a cryptographically signed pointer authentication code (PAC) into the pointer to your JIT memory. The system authenticates the PAC when your extension process jumps to the JIT-compiled code after you call `be_memory_inline_jit_restrict_rwx_to_rx_with_witness()`, and only runs the code if the PAC is still valid. Otherwise, it stops your extension process.
 
 Pointer authentication is only available with the `arm64e` instruction set. You can compile your browser app as a universal binary that includes both `arm64` and `arm64e`, but on devices that only support `arm64`, the W^X toggle functions don’t use PAC. For more information on building for `arm64e`, see “Build for pointer authentication” in [`Managing the browser extension life cycle`](managing-the-browser-extension-lifecycle.md).
 
@@ -31,7 +31,7 @@ Pointer authentication is only available with the `arm64e` instruction set. You 
 
 Additionally, your JIT compiler needs to emit `arm64e` code that uses PAC-protected pointers. Your browser engine needs to adopt PAC for any pointer that influences control flow in your interpreter code.
 
-For more information on pointer authentication, see [`Improving control flow integrity with pointer authentication`](https://developer.apple.com/documentation/Apple-Silicon/improving-control-flow-integrity-with-pointer-authentication).
+For more information on pointer authentication, see [`Improving control flow integrity with pointer authentication`](https://developer.apple.com/documentation/apple-silicon/improving-control-flow-integrity-with-pointer-authentication).
 
 #### Inline Your Memory Protection Toggles
 
@@ -53,9 +53,9 @@ If necessary, disassemble your extension’s binary to inspect the JIT critical 
 
 ## See Also
 
-- [Improving control flow integrity with pointer authentication](../Apple-Silicon/improving-control-flow-integrity-with-pointer-authentication.md)
+- [Improving control flow integrity with pointer authentication](../apple-silicon/improving-control-flow-integrity-with-pointer-authentication.md)
   Increase confidence that your code uses pointers correctly.
-- [var BE_JIT_WRITE_PROTECT_TAG: Int](../BrowserEngineCore/BE_JIT_WRITE_PROTECT_TAG.md)
+- [var BE_JIT_WRITE_PROTECT_TAG: Int](../browserenginecore/be_jit_write_protect_tag.md)
   A discriminator value the system uses to generate pointer authentication codes for just-in-time compilation.
 
 

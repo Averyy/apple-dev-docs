@@ -33,7 +33,7 @@ The color cubes mixed with mask filter uses the following properties:
 - **`maskImage`**: A mask image with the type [`CIImage`](ciimage.md).
 - **`cube0Data`**: Data containing a 3-dimensional color table of floating-point premultiplied RGBA values. The cells are organized in a standard ordering. The columns and rows of the data are indexed by red and green, respectively. Each data plane is followed by the next higher plane in the data, with planes indexed by blue.
 - **`cube1Data`**: Data containing a 3-dimensional color table of floating-point premultiplied RGBA values. The cells are organized in a standard ordering. The columns and rows of the data are indexed by red and green, respectively. Each data plane is followed by the next higher plane in the data, with planes indexed by blue.
-- **`colorSpace`**: A [`CGColorSpace`](https://developer.apple.com/documentation/CoreGraphics/CGColorSpace) representing the color space for the color cubes.
+- **`colorSpace`**: A [`CGColorSpace`](https://developer.apple.com/documentation/coregraphics/cgcolorspace) representing the color space for the color cubes.
 - **`cubeDimension`**: The dimension of the color cubes
 
 The following code creates a filter that adds colors from the mask image and brightness to the input image:
@@ -76,7 +76,7 @@ maskImage.point1 = CGPoint(x: ciImage.extent.width, y: 0)
 let result = colorCube(inputImage: ciImage, maskImage: maskImage.outputImage!, cube0Data: cube0Data, cube1Data: cube1Data)
 ```
 
-![One photograph on the left above a gradient image, and a second photograph on the right. The photograph on the left shows a single flower photographed close-up, in focus, with good light and no effects. The image below it is a gradient image displaying a gradual color change from purple to a warm orange color. The photo on the right shows the same flower image with a colorCubesMixedWithMask filter applied, resulting in a brighter photograph with colors from the gradient photo. ](https://docs-assets.developer.apple.com/published/25ec059d543ecc6a1b98a5259e1d98d1/media-3546428%402x.png)
+![One photograph on the left above a gradient image, and a second photograph on the right. The photograph on the left shows a single flower photographed close-up, in focus, with good light and no effects. The image below it is a gradient image displaying a gradual color change from purple to a warm orange color. The photo on the right shows the same flower image with a colorCubesMixedWithMask filter applied, resulting in a brighter photograph with colors from the gradient photo. ](/images/com.apple.coreimage/media-3546428@2x.png)
 
 ## See Also
 

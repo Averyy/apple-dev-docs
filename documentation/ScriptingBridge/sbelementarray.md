@@ -17,7 +17,7 @@ class SBElementArray
 
 #### Overview
 
-`SBElementArray` defines methods beyond those of [`NSArray`](https://developer.apple.com/documentation/Foundation/NSArray) for obtaining individual objects. In addition to [`object(at:)`](https://developer.apple.com/documentation/Foundation/NSArray/object(at:)), `SBElementArray` also defines [`object(withName:)`](sbelementarray/object(withname:).md), [`object(withID:)`](sbelementarray/object(withid:).md), and [`object(atLocation:)`](sbelementarray/object(atlocation:).md).
+`SBElementArray` defines methods beyond those of [`NSArray`](https://developer.apple.com/documentation/foundation/nsarray) for obtaining individual objects. In addition to [`object(at:)`](https://developer.apple.com/documentation/foundation/nsarray/object(at:)), `SBElementArray` also defines [`object(withName:)`](sbelementarray/object(withname:).md), [`object(withID:)`](sbelementarray/object(withid:).md), and [`object(atLocation:)`](sbelementarray/object(atlocation:).md).
 
 #### Subclassing Notes
 
@@ -44,24 +44,24 @@ The `SBElementArray` class is not designed for subclassing.
 ## Relationships
 
 ### Inherits From
-- [NSMutableArray](../Foundation/NSMutableArray.md)
+- [NSMutableArray](../foundation/nsmutablearray.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomReflectable](../Swift/CustomReflectable.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [ExpressibleByArrayLiteral](../Swift/ExpressibleByArrayLiteral.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCoding](../Foundation/NSCoding.md)
-- [NSCopying](../Foundation/NSCopying.md)
-- [NSFastEnumeration](../Foundation/NSFastEnumeration.md)
-- [NSMutableCopying](../Foundation/NSMutableCopying.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [NSSecureCoding](../Foundation/NSSecureCoding.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
-- [Sequence](../Swift/Sequence.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomReflectable](../swift/customreflectable.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
+- [Hashable](../swift/hashable.md)
+- [NSCoding](../foundation/nscoding.md)
+- [NSCopying](../foundation/nscopying.md)
+- [NSFastEnumeration](../foundation/nsfastenumeration.md)
+- [NSMutableCopying](../foundation/nsmutablecopying.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sequence](../swift/sequence.md)
 
 
 ---

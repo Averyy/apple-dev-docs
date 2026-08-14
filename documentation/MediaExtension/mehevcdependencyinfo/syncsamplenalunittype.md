@@ -16,7 +16,7 @@ var syncSampleNALUnitType: Int16 { get set }
 
 #### Discussion
 
-This value maps to the [`kCMSampleAttachmentKey_HEVCSyncSampleNALUnitType`](https://developer.apple.com/documentation/CoreMedia/kCMSampleAttachmentKey_HEVCSyncSampleNALUnitType) sample buffer attachment.
+This value maps to the [`kCMSampleAttachmentKey_HEVCSyncSampleNALUnitType`](https://developer.apple.com/documentation/coremedia/kcmsampleattachmentkey_hevcsyncsamplenalunittype) sample buffer attachment.
 
 ## See Also
 

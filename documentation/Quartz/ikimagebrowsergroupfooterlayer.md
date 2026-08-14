@@ -16,7 +16,7 @@ let IKImageBrowserGroupFooterLayer: String
 
 #### Discussion
 
-The associated value is a [`CALayer`](https://developer.apple.com/documentation/QuartzCore/CALayer).
+The associated value is a [`CALayer`](https://developer.apple.com/documentation/quartzcore/calayer).
 
 ## See Also
 

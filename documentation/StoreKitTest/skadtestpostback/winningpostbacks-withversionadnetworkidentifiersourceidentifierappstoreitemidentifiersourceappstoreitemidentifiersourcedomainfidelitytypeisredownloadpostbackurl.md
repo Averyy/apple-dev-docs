@@ -24,11 +24,11 @@ An array containing a winning postback for each conversion window.
 
 This method provides parameters to create test postbacks for either an in-app ad or a web ad. To create test postbacks for an in-app ad, provide an empty string for `sourceDomain`.
 
-For more information about the conversion windows corresponding to each postback, see [`Receiving postbacks in multiple conversion windows`](https://developer.apple.com/documentation/StoreKit/receiving-postbacks-in-multiple-conversion-windows).
+For more information about the conversion windows corresponding to each postback, see [`Receiving postbacks in multiple conversion windows`](https://developer.apple.com/documentation/storekit/receiving-postbacks-in-multiple-conversion-windows).
 
 ## Parameters
 
-- `version`: [`SKAdTestPostbackVersion`](skadtestpostbackversion.md), the SKAdNetwork version. For more information about versions, see [`SKAdNetwork release notes`](https://developer.apple.com/documentation/StoreKit/skadnetwork-release-notes).
+- `version`: [`SKAdTestPostbackVersion`](skadtestpostbackversion.md), the SKAdNetwork version. For more information about versions, see [`SKAdNetwork release notes`](https://developer.apple.com/documentation/storekit/skadnetwork-release-notes).
 - `adNetworkIdentifier`: Your ad network identifier. For the test environment, you may use any lowercased value. You must use the same value to verify the signature after you receive the postback on your server. Also, use the same ad network identifier in the `Info.plist` of the source app in the testing environment.
 - `sourceIdentifier`: Four digits that represent the ad campaign.
 - `appStoreItemIdentifier`: The App Store item identifier of the advertised app.

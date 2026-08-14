@@ -22,11 +22,11 @@ protocol AttributedTextFormattingDefinition<Scope>
 
 #### Overview
 
-A formatting definition consists of an attribute scope and a number of value constraints. It is applied to a view hierarchy using the [`attributedTextFormattingDefinition(_:)`](view/attributedtextformattingdefinition(_:)-81jn6.md) view modifier and affects nested [`Text`](text.md) and [`TextEditor`](texteditor.md) views when initialized with [`AttributedString`](https://developer.apple.com/documentation/Foundation/AttributedString).
+A formatting definition consists of an attribute scope and a number of value constraints. It is applied to a view hierarchy using the [`attributedTextFormattingDefinition(_:)`](view/attributedtextformattingdefinition(_:)-81jn6.md) view modifier and affects nested [`Text`](text.md) and [`TextEditor`](texteditor.md) views when initialized with [`AttributedString`](https://developer.apple.com/documentation/foundation/attributedstring).
 
 Create a formatting definition by first choosing an attribute scope that contains all attributes relevant for your view. All other attributes will be ignored by value constraints and by the affected views.
 
-Use the `Foundation/AttributeScopes/SwiftUIAttributes` for the default set of attributes supported by SwiftUI. You can create your own scope only listing out a subset of the attributes in SwiftUI’s attribute scope. You can also include custom attributes in your scope. This allows you to take advantage of advanced attributed string features, such as [`runBoundaries`](https://developer.apple.com/documentation/Foundation/AttributedStringKey/runBoundaries).
+Use the `Foundation/AttributeScopes/SwiftUIAttributes` for the default set of attributes supported by SwiftUI. You can create your own scope only listing out a subset of the attributes in SwiftUI’s attribute scope. You can also include custom attributes in your scope. This allows you to take advantage of advanced attributed string features, such as [`runBoundaries`](https://developer.apple.com/documentation/foundation/attributedstringkey/runboundaries).
 
 Custom attributes also allow you to separate semantic information stored on the text, e.g. the information that a sequence of characters refers a specific person in contacts, from how this part of the text is to be formatted, e.g. with the foreground color “purple”. The rules defining what values attributes can have, are called [`AttributedTextValueConstraint`](attributedtextvalueconstraint.md)s.
 

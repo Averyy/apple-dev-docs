@@ -22,7 +22,7 @@ let MPMediaItemPropertyBookmarkTime: String
 
 #### Discussion
 
-Value is an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) object representing a duration in seconds as an [`TimeInterval`](https://developer.apple.com/documentation/Foundation/TimeInterval).
+Value is an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) object representing a duration in seconds as an [`TimeInterval`](https://developer.apple.com/documentation/foundation/timeinterval).
 
 ## See Also
 

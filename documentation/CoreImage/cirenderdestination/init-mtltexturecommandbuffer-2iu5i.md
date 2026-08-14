@@ -25,14 +25,14 @@ A [`CIRenderDestination`](cirenderdestination.md) object for rendering to a Meta
 
 #### Discussion
 
-Rendering to a [`MTLTexture`](https://developer.apple.com/documentation/Metal/MTLTexture)-backed [`CIRenderDestination`](cirenderdestination.md) is supported by only [`MTLTexture`](https://developer.apple.com/documentation/Metal/MTLTexture)-backed [`CIContext`](cicontext.md) objects.  The texture must have [`MTLTextureType`](https://developer.apple.com/documentation/Metal/MTLTextureType) of [`MTLTextureType.type2D`](https://developer.apple.com/documentation/Metal/MTLTextureType/type2D).
+Rendering to a [`MTLTexture`](https://developer.apple.com/documentation/metal/mtltexture)-backed [`CIRenderDestination`](cirenderdestination.md) is supported by only [`MTLTexture`](https://developer.apple.com/documentation/metal/mtltexture)-backed [`CIContext`](cicontext.md) objects.  The texture must have [`MTLTextureType`](https://developer.apple.com/documentation/metal/mtltexturetype) of [`MTLTextureType.type2D`](https://developer.apple.com/documentation/metal/mtltexturetype/type2d).
 
-The destination’s [`colorSpace`](cirenderdestination/colorspace.md) property will default to a [`CGColorSpace`](https://developer.apple.com/documentation/CoreGraphics/CGColorSpace) created with [`sRGB`](https://developer.apple.com/documentation/CoreGraphics/CGColorSpace/sRGB), [`extendedSRGB`](https://developer.apple.com/documentation/CoreGraphics/CGColorSpace/extendedSRGB), or [`genericGrayGamma2_2`](https://developer.apple.com/documentation/CoreGraphics/CGColorSpace/genericGrayGamma2_2).
+The destination’s [`colorSpace`](cirenderdestination/colorspace.md) property will default to a [`CGColorSpace`](https://developer.apple.com/documentation/coregraphics/cgcolorspace) created with [`sRGB`](https://developer.apple.com/documentation/coregraphics/cgcolorspace/srgb), [`extendedSRGB`](https://developer.apple.com/documentation/coregraphics/cgcolorspace/extendedsrgb), or [`genericGrayGamma2_2`](https://developer.apple.com/documentation/coregraphics/cgcolorspace/genericgraygamma2_2).
 
 ## Parameters
 
-- `texture`: The [`MTLTexture`](https://developer.apple.com/documentation/Metal/MTLTexture) object for rendering with [`MTLTextureType`](https://developer.apple.com/documentation/Metal/MTLTextureType) of [`MTLTextureType.type2D`](https://developer.apple.com/documentation/Metal/MTLTextureType/type2D).
-- `commandBuffer`: An optional [`MTLCommandBuffer`](https://developer.apple.com/documentation/Metal/MTLCommandBuffer) to use for rendering to the [`MTLTexture`](https://developer.apple.com/documentation/Metal/MTLTexture) destination.
+- `texture`: The [`MTLTexture`](https://developer.apple.com/documentation/metal/mtltexture) object for rendering with [`MTLTextureType`](https://developer.apple.com/documentation/metal/mtltexturetype) of [`MTLTextureType.type2D`](https://developer.apple.com/documentation/metal/mtltexturetype/type2d).
+- `commandBuffer`: An optional [`MTLCommandBuffer`](https://developer.apple.com/documentation/metal/mtlcommandbuffer) to use for rendering to the [`MTLTexture`](https://developer.apple.com/documentation/metal/mtltexture) destination.
 
 ## See Also
 

@@ -30,10 +30,10 @@ This method applies the perspective rotate filter to an image. The effect rotate
 The perspective rotate filter uses the following properties:
 
 - **`inputImage`**: An image with the type [`CIImage`](ciimage.md).
-- **`pitch`**: A `float` representing the adjustment along the pitch axis in 3D space as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
-- **`yaw`**: A `float` representing the adjustment along the vertical axis as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
-- **`roll`**: A `float` representing the amount of horizontal axis in 3D space as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
-- **`focalLength`**: A `float` representing the simulated focal length as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+- **`pitch`**: A `float` representing the adjustment along the pitch axis in 3D space as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
+- **`yaw`**: A `float` representing the adjustment along the vertical axis as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
+- **`roll`**: A `float` representing the amount of horizontal axis in 3D space as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
+- **`focalLength`**: A `float` representing the simulated focal length as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
 
 The following code creates a filter that rotates the image:
 
@@ -49,7 +49,7 @@ func perspectiveRotate(inputImage: CIImage) -> CIImage {
 }
 ```
 
-![Two photographs of a large building on the corner of an intersection. The building has small windows and is made of a brick structure. The photo on the left has no modifications to size or color. In the photo on the right, a perspective rotate filter is applied, resulting in the image becoming smaller and rotated.](https://docs-assets.developer.apple.com/published/2bbc660fdb93f2cdb69a4d827dcb2c8f/media-3582225%402x.png)
+![Two photographs of a large building on the corner of an intersection. The building has small windows and is made of a brick structure. The photo on the left has no modifications to size or color. In the photo on the right, a perspective rotate filter is applied, resulting in the image becoming smaller and rotated.](/images/com.apple.coreimage/media-3582225@2x.png)
 
 ## See Also
 

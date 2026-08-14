@@ -51,7 +51,7 @@ Simulate local physics by adding a [`PhysicsSimulationComponent`](physicssimulat
 
 ### Conforms To
 - [Component](component.md)
-- [Equatable](../Swift/Equatable.md)
+- [Equatable](../swift/equatable.md)
 
 ## See Also
 

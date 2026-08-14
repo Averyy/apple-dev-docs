@@ -25,7 +25,7 @@ This protocol declares no methods of its own, but conforms to the [`UIBarPositio
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 - [UIBarPositioningDelegate](uibarpositioningdelegate.md)
 
 ## See Also

@@ -24,13 +24,13 @@ A reference to a Core Video OpenGLES texture cache.
 ## Relationships
 
 ### Conforms To
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
 
 ## See Also
 
 - [typealias CVEAGLContext](cveaglcontext.md)
-  A type that resolves to an [`EAGLContext`](https://developer.apple.com/documentation/OpenGLES/EAGLContext) pointer when appropriate.
+  A type that resolves to an [`EAGLContext`](https://developer.apple.com/documentation/opengles/eaglcontext) pointer when appropriate.
 
 
 ---

@@ -25,10 +25,10 @@ Converts inputs from vector `A` to their decibel equivalents, calculated  in ter
 ## Parameters
 
 - `__A`: Single-precision real input vector
-- `__IA`: Stride for 
+- `__IA`: Stride for `A`
 - `__B`: Pointer to single-precision real input scalar: zero reference
 - `__C`: Single-precision real output vector
-- `__IC`: Stride for 
+- `__IC`: Stride for `C`
 - `__N`: The number of elements to process
 - `__F`: Power (0) or amplitude (1) flag
 

@@ -25,11 +25,11 @@ A [`JSStringRef`](jsstringref.md) that contains `string`. Ownership follows [`Th
 
 #### Discussion
 
-The system optimizes this function to take advantage of cases when [`CFStringGetCharactersPtr(_:)`](https://developer.apple.com/documentation/CoreFoundation/CFStringGetCharactersPtr(_:)) returns a valid pointer.
+The system optimizes this function to take advantage of cases when [`CFStringGetCharactersPtr(_:)`](https://developer.apple.com/documentation/corefoundation/cfstringgetcharactersptr(_:)) returns a valid pointer.
 
 ## Parameters
 
-- `string`: The [`CFString`](https://developer.apple.com/documentation/CoreFoundation/CFString) to copy into the new [`JSStringRef`](jsstringref.md).
+- `string`: The [`CFString`](https://developer.apple.com/documentation/corefoundation/cfstring) to copy into the new [`JSStringRef`](jsstringref.md).
 
 ## See Also
 

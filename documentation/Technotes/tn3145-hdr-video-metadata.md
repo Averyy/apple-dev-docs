@@ -50,7 +50,7 @@ iOS 14 and macOS 11 introduced support for Dolby Vision Profile 8.4. Refer to Do
 - Color Matrix Index shall be set to 9 (indicating ITU-R BT.2020).
 - The ambient viewing environment atom (`'amve'`) shall be present.
 
-![Movie atom with ambient viewing environment atom.](https://docs-assets.developer.apple.com/published/dd2c28425e8303fb8c0d41cbe4740377/tn3145_HDR_video_metadata%402x.png)
+![Movie atom with ambient viewing environment atom.](/images/com.apple.technotes/tn3145_HDR_video_metadata@2x.png)
 
 #### Capture
 

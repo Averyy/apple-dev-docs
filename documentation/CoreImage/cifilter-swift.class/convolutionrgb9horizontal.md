@@ -49,7 +49,7 @@ func convolutionRGB9Horizontal(inputImage: CIImage) -> CIImage {
 }
 ```
 
-![Two images arranged horizontally. The left image contains a photo of the Golden Gate Bridge with a clear sky as the background. The right image shows the result of applying a horizontal convolution kernel that blurs the image. Fine detail in the horizontal direction is blurred.](https://docs-assets.developer.apple.com/published/3ec68c7a5b27c365d4a22f7cee1473ad/media-4407285%402x.png)
+![Two images arranged horizontally. The left image contains a photo of the Golden Gate Bridge with a clear sky as the background. The right image shows the result of applying a horizontal convolution kernel that blurs the image. Fine detail in the horizontal direction is blurred.](/images/com.apple.coreimage/media-4407285@2x.png)
 
 ## See Also
 

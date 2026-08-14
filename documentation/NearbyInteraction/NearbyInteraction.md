@@ -22,13 +22,13 @@ Apple devices use the high-frequency capabilities of the UWB chip to share their
 - A taxi or rideshare app that employs a peer user’s direction in real time to identify the relative locations of a driver and a customer
 - A game app that enables a user to control a paddle with their device and respond to a moving ball on the peer user’s screen, as in the following figure
 
-![An illustration of two hands, each holding an iPhone. Arrows extend from the phones to indicate the users’ physical movement. Onscreen, the app displays a ball and paddle game where the first user’s movement slides the bottom paddle left or right, and the opponent’s movement slides the top paddle left or right. In the center of the screen, a ball with motion lines indicates the movement of the ball as it bounces off the first user’s paddle and heads to the upper-right corner of the screen, which isn’t guarded by the opponent’s paddle. ](https://docs-assets.developer.apple.com/published/ebda45d0d49a7c9ff21289ec31ef90e2/media-3880159%402x.png)
+![An illustration of two hands, each holding an iPhone. Arrows extend from the phones to indicate the users’ physical movement. Onscreen, the app displays a ball and paddle game where the first user’s movement slides the bottom paddle left or right, and the opponent’s movement slides the top paddle left or right. In the center of the screen, a ball with motion lines indicates the movement of the ball as it bounces off the first user’s paddle and heads to the upper-right corner of the screen, which isn’t guarded by the opponent’s paddle. ](/images/com.apple.nearbyinteraction/media-3880159@2x.png)
 
 For guidance on designing nearby interactions, see the [`Human Interface Guidelines > Nearby interactions`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/nearby-interactions).
 
 ##### Interact with Apple Watch
 
-The UWB chip-capable Apple Watch running watchOS 8 supports Nearby Interaction sessions. Apps share discovery tokens to begin an interaction session in watchOS using a custom server, [`Core Bluetooth`](https://developer.apple.com/documentation/CoreBluetooth), LAN (TCP/UDP), or [`Watch Connectivity`](https://developer.apple.com/documentation/WatchConnectivity).
+The UWB chip-capable Apple Watch running watchOS 8 supports Nearby Interaction sessions. Apps share discovery tokens to begin an interaction session in watchOS using a custom server, [`Core Bluetooth`](https://developer.apple.com/documentation/corebluetooth), LAN (TCP/UDP), or [`Watch Connectivity`](https://developer.apple.com/documentation/watchconnectivity).
 
 Nearby Interaction in iOS provides a peer device’s distance and direction, whereas Nearby Interaction in watchOS provides only a peer device’s distance.
 
@@ -36,13 +36,13 @@ Nearby Interaction in iOS provides a peer device’s distance and direction, whe
 
 In iOS 15 and later and watchOS 8 and later, UWB-enabled devices can interact with third-party accessories you partner with or develop using the [`Nearby Interaction Accessory Protocol Specification`](https://developer.apple.comhttps://developer.apple.com/nearby-interaction/specification). To begin an interaction session with a third-party accessory, establish a data link with the accessory, receive its configuration data, and create an [`NINearbyAccessoryConfiguration`](ninearbyaccessoryconfiguration.md). The framework provides configuration data for your device through [`session(_:didGenerateShareableConfigurationData:for:)`](nisessiondelegate/session(_:didgenerateshareableconfigurationdata:for:).md) that your app sends to the accessory to begin detecting the accessory’s range. For more information on accessory interaction, see [`NINearbyAccessoryConfiguration`](ninearbyaccessoryconfiguration.md).
 
-> **Note**:  The [`supportsPreciseDistanceMeasurement`](nidevicecapability/supportsprecisedistancemeasurement.md) function returns [`false`](https://developer.apple.com/documentation/Swift/false) in Mac apps built with Mac Catalyst. For a compatible iPad or iPhone app running in visionOS, framework features are unavailable, and any calls you make to the framework APIs have no effect.
+> **Note**:  The [`supportsPreciseDistanceMeasurement`](nidevicecapability/supportsprecisedistancemeasurement.md) function returns [`false`](https://developer.apple.com/documentation/swift/false) in Mac apps built with Mac Catalyst. For a compatible iPad or iPhone app running in visionOS, framework features are unavailable, and any calls you make to the framework APIs have no effect.
 
 ##### Using Nearby Interaction in the Background
 
 While your app is in the foreground, it can freely use Nearby Interaction to perform ranging between UWB devices. When the app moves to the background, it can perform UWB ranging only with devices that are Bluetooth Low Energy (LE)-paired and connected.
 
-In iOS 18.4 and later, your app can continue ranging in the background with any supported device if the app starts a Live Activity as it goes to the background. For more information about creating Live Activities, see [`ActivityKit`](https://developer.apple.com/documentation/ActivityKit).
+In iOS 18.4 and later, your app can continue ranging in the background with any supported device if the app starts a Live Activity as it goes to the background. For more information about creating Live Activities, see [`ActivityKit`](https://developer.apple.com/documentation/activitykit).
 
 > **Note**: Both these forms of background activity require that you enable the appropriate capability in Xcode. In your target’s Signing & Capabilities tab, add the “Background Modes” capability, then select “Uses Nearby Interaction”.
 
@@ -54,7 +54,7 @@ In iOS 18.4 and later, your app can continue ranging in the background with any 
 - [class NISession](nisession.md)
   An object that identifies a unique connection between two peer devices.
 ### Authorization
-- [NSNearbyInteractionUsageDescription](../BundleResources/Information-Property-List/NSNearbyInteractionUsageDescription.md)
+- [NSNearbyInteractionUsageDescription](../bundleresources/information-property-list/nsnearbyinteractionusagedescription.md)
   A request for user permission to begin an interaction session with nearby devices.
 ### Phone interaction
 - [Implementing interactions between users in close proximity](implementing-interactions-between-users-in-close-proximity.md)
@@ -100,7 +100,7 @@ In iOS 18.4 and later, your app can continue ranging in the background with any 
 - [let NIErrorDomain: String](nierrordomain.md)
   A unique error domain for Nearby Interaction.
 ### Deprecated
-- [NSNearbyInteractionAllowOnceUsageDescription](../BundleResources/Information-Property-List/NSNearbyInteractionAllowOnceUsageDescription.md)
+- [NSNearbyInteractionAllowOnceUsageDescription](../bundleresources/information-property-list/nsnearbyinteractionallowonceusagedescription.md)
   A one-time request for user permission to begin an interaction session with nearby devices.
 
 

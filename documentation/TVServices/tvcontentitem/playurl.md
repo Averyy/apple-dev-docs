@@ -16,7 +16,7 @@ var playURL: URL? { get set }
 
 #### Discussion
 
-When the user presses play on the remote, opened, your application is launched if it wasn’t already running and then your [`UIApplication`](https://developer.apple.com/documentation/UIKit/UIApplication) delegate is called. If at all possible, your application should immediately begin playing the content without any prompting for other information or displaying any other UI. Your app should start playback at the user’s current position within the content.
+When the user presses play on the remote, opened, your application is launched if it wasn’t already running and then your [`UIApplication`](https://developer.apple.com/documentation/uikit/uiapplication) delegate is called. If at all possible, your application should immediately begin playing the content without any prompting for other information or displaying any other UI. Your app should start playback at the user’s current position within the content.
 
 ## See Also
 

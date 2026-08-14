@@ -32,7 +32,7 @@ This structure is part of the definition of the [`CFXMLDocumentTypeInfo`](cfxmld
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../Swift/BitwiseCopyable.md)
+- [BitwiseCopyable](../swift/bitwisecopyable.md)
 
 ## See Also
 

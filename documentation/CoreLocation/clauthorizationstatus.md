@@ -45,12 +45,12 @@ Handle changes to authorization status in your location manager’s delegate met
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../Swift/BitwiseCopyable.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [RawRepresentable](../Swift/RawRepresentable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [BitwiseCopyable](../swift/bitwisecopyable.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [RawRepresentable](../swift/rawrepresentable.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 
@@ -60,15 +60,15 @@ Handle changes to authorization status in your location manager’s delegate met
   Defer the system’s authorization request dialog until your app is ready.
 - [enum CLAccuracyAuthorization](claccuracyauthorization.md)
   Constants that indicate the level of location accuracy the app has authorization to use.
-- [NSLocationAlwaysAndWhenInUseUsageDescription](../BundleResources/Information-Property-List/NSLocationAlwaysAndWhenInUseUsageDescription.md)
+- [NSLocationAlwaysAndWhenInUseUsageDescription](../bundleresources/information-property-list/nslocationalwaysandwheninuseusagedescription.md)
   A message that tells people why the app is requesting access to their location information at all times.
-- [NSLocationWhenInUseUsageDescription](../BundleResources/Information-Property-List/NSLocationWhenInUseUsageDescription.md)
+- [NSLocationWhenInUseUsageDescription](../bundleresources/information-property-list/nslocationwheninuseusagedescription.md)
   A message that tells people why the app is requesting access to their location information while the app is running in the foreground.
-- [NSLocationUsageDescription](../BundleResources/Information-Property-List/NSLocationUsageDescription.md)
+- [NSLocationUsageDescription](../bundleresources/information-property-list/nslocationusagedescription.md)
   A message that tells people why the app is requesting access to their location information.
-- [NSLocationDefaultAccuracyReduced](../BundleResources/Information-Property-List/NSLocationDefaultAccuracyReduced.md)
+- [NSLocationDefaultAccuracyReduced](../bundleresources/information-property-list/nslocationdefaultaccuracyreduced.md)
   A Boolean value that indicates whether the app requests reduced location accuracy by default.
-- [NSLocationAlwaysUsageDescription](../BundleResources/Information-Property-List/NSLocationAlwaysUsageDescription.md)
+- [NSLocationAlwaysUsageDescription](../bundleresources/information-property-list/nslocationalwaysusagedescription.md)
   A message that tells people why the app is requesting access to their location at all times.
 
 

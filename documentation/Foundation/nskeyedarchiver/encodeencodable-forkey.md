@@ -26,7 +26,7 @@ func encodeEncodable<T>(_ value: T, forKey key: String) throws where T : Encodab
 If there’s a problem encoding the value you supply, this method throws an error based on the type of problem:
 
 - The value fails to encode, or contains a nested value that fails to encode—this method throws the corresponding error.
-- The value can’t be encoded as a property list—this method throws the [`EncodingError.invalidValue(_:_:)`](https://developer.apple.com/documentation/Swift/EncodingError/invalidValue(_:_:)) error.
+- The value can’t be encoded as a property list—this method throws the [`EncodingError.invalidValue(_:_:)`](https://developer.apple.com/documentation/swift/encodingerror/invalidvalue(_:_:)) error.
 
 ## Parameters
 

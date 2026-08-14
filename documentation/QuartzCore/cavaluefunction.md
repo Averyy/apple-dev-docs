@@ -23,7 +23,7 @@ class CAValueFunction
 
 You can use a value function to specify the individual components of an animated transform.
 
-For example, to create a basic animation that rotates a layer from 0° to 180° around its z-axis, you would create a [`CABasicAnimation`](cabasicanimation.md) object with a [`fromValue`](cabasicanimation/fromvalue.md) of `0`, a [`toValue`](cabasicanimation/tovalue.md) of [`pi`](https://developer.apple.com/documentation/Swift/Float/pi), and a [`valueFunction`](capropertyanimation/valuefunction.md) of a [`CAValueFunction`](cavaluefunction.md) with a function name of [`rotateZ`](cavaluefunctionname/rotatez.md).
+For example, to create a basic animation that rotates a layer from 0° to 180° around its z-axis, you would create a [`CABasicAnimation`](cabasicanimation.md) object with a [`fromValue`](cabasicanimation/fromvalue.md) of `0`, a [`toValue`](cabasicanimation/tovalue.md) of [`pi`](https://developer.apple.com/documentation/swift/float/pi), and a [`valueFunction`](capropertyanimation/valuefunction.md) of a [`CAValueFunction`](cavaluefunction.md) with a function name of [`rotateZ`](cavaluefunctionname/rotatez.md).
 
 The following code shows how you would create such a rotation and apply it to a [`CALayer`](calayer.md) named `rotatingLayer`.
 
@@ -72,16 +72,16 @@ scalingLayer.add(scaleAnimation,
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCoding](../Foundation/NSCoding.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [NSSecureCoding](../Foundation/NSSecureCoding.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCoding](../foundation/nscoding.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSSecureCoding](../foundation/nssecurecoding.md)
 
 ## See Also
 

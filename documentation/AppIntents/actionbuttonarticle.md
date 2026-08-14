@@ -109,7 +109,7 @@ The start workout intent becomes available as soon as someone downloads your app
 
 Similarly, if you update your app and change the data types that the workout session uses, someone can launch the updated workout from the Action button without launching your app.
 
-To ensure that your app requests authorization for the current set of HealthKit data types it intends to use during its workout sessions, you need to schedule an authorization request from within your intent’s [`perform()`](appintent/perform().md) method. Because someone using your app doesn’t have access to its user interface until after the `perform()` method returns, you need to schedule the request authorization using a [`Task`](https://developer.apple.com/documentation/Swift/Task).
+To ensure that your app requests authorization for the current set of HealthKit data types it intends to use during its workout sessions, you need to schedule an authorization request from within your intent’s [`perform()`](appintent/perform().md) method. Because someone using your app doesn’t have access to its user interface until after the `perform()` method returns, you need to schedule the request authorization using a [`Task`](https://developer.apple.com/documentation/swift/task).
 
 > **Note**: If your app has never requested authorization for any HealthKit data types, the system just launches your app when someone presses the Action button. It doesn’t call your intent’s [`perform()`](appintent/perform().md) method.
 
@@ -206,7 +206,7 @@ In the code example above, the last line donates the `MyMarkLapIntent()` as the 
 
 After implementing your [`StartWorkoutIntent`](startworkoutintent.md), build and run your app to load it onto the test device or Simulator. Then, on the test device, choose Settings > Action Button. Tap Action and choose Workout, then tap App and choose your app.
 
-![A screenshot from Apple Watch Ultra showing the Action button settings, with](https://docs-assets.developer.apple.com/published/a95aeca8e27eb34e1a3f946125986df9/Setting-A-Workout-Action%402x.png)
+![A screenshot from Apple Watch Ultra showing the Action button settings, with](/images/com.apple.AppIntents/Setting-A-Workout-Action@2x.png)
 
 The device starts a new workout session when you press the Action button.
 
@@ -324,7 +324,7 @@ let typesToRead: Set = [
 
 Build and run your app again. When you open the Action button settings, you can specify a particular workout for the First Press > Workout setting.
 
-![A screenshot from Apple Watch Ultra showing the Action button’s First Press](https://docs-assets.developer.apple.com/published/7894190ae7b19168716e416cad6aa30e/Specifying-The-Workout-Type%402x.png)
+![A screenshot from Apple Watch Ultra showing the Action button’s First Press](/images/com.apple.AppIntents/Specifying-The-Workout-Type@2x.png)
 
 And pressing the Action button launches the selected type of workout.
 
@@ -417,7 +417,7 @@ struct MyStartDiveSessionIntent: StartDiveIntent {
 
 This intent needs a [`title`](appintent/title.md) property that provides a localized description of the action, and a [`perform()`](appintent/perform().md) method, which the system calls when it performs the intent.
 
-To read live depth, water pressure, and water temperature data, see [`Accessing submersion data`](https://developer.apple.com/documentation/CoreMotion/accessing-submersion-data).
+To read live depth, water pressure, and water temperature data, see [`Accessing submersion data`](https://developer.apple.com/documentation/coremotion/accessing-submersion-data).
 
 > ❗ **Important**: Before you can access live dive data, your app needs to include an entitlement to access submersion data. For more information, see [`Express interest in the Submerged Depth and Pressure API`](https://developer.apple.comhttps://developer.apple.com/contact/request/submerged-depth-pressure-api/).
 
@@ -443,7 +443,7 @@ Then, as early as possible when your app launches, use the [`AppDependencyManage
 AppDependencyManager.shared.add { MyWorkoutManager() }
 ```
 
-You can set the dependency in your app’s [`applicationDidFinishLaunching()`](https://developer.apple.com/documentation/WatchKit/WKApplicationDelegate/applicationDidFinishLaunching()) method. Or, if your app uses SwiftUI life cycles, add an `init()` method to your [`App`](https://developer.apple.com/documentation/SwiftUI/App) structure, and set it there.
+You can set the dependency in your app’s [`applicationDidFinishLaunching()`](https://developer.apple.com/documentation/watchkit/wkapplicationdelegate/applicationdidfinishlaunching()) method. Or, if your app uses SwiftUI life cycles, add an `init()` method to your [`App`](https://developer.apple.com/documentation/swiftui/app) structure, and set it there.
 
 One of the main advantages of dependency injection is that you can easily replace your main data object with a mock object during testing.
 

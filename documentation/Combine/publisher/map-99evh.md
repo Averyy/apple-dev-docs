@@ -30,9 +30,9 @@ A publisher that uses the provided closure to map elements from the upstream pub
 
 #### Discussion
 
-Combine’s [`map(_:)`](publisher/map(_:)-99evh.md) operator performs a function similar to that of [`map(_:)`](https://developer.apple.com/documentation/Swift/Sequence/map(_:)) in the Swift standard library: it uses a closure to transform each element it receives from the upstream publisher. You use [`map(_:)`](publisher/map(_:)-99evh.md) to transform from one kind of element to another.
+Combine’s [`map(_:)`](publisher/map(_:)-99evh.md) operator performs a function similar to that of [`map(_:)`](https://developer.apple.com/documentation/swift/sequence/map(_:)) in the Swift standard library: it uses a closure to transform each element it receives from the upstream publisher. You use [`map(_:)`](publisher/map(_:)-99evh.md) to transform from one kind of element to another.
 
-The following example uses an array of numbers as the source for a collection based publisher. A [`map(_:)`](publisher/map(_:)-99evh.md) operator consumes each integer from the publisher and uses a dictionary to transform it from its Arabic numeral to a Roman equivalent, as a [`String`](https://developer.apple.com/documentation/Swift/String). If the [`map(_:)`](publisher/map(_:)-99evh.md)’s closure fails to look up a Roman numeral, it returns the string `(unknown)`.
+The following example uses an array of numbers as the source for a collection based publisher. A [`map(_:)`](publisher/map(_:)-99evh.md) operator consumes each integer from the publisher and uses a dictionary to transform it from its Arabic numeral to a Roman equivalent, as a [`String`](https://developer.apple.com/documentation/swift/string). If the [`map(_:)`](publisher/map(_:)-99evh.md)’s closure fails to look up a Roman numeral, it returns the string `(unknown)`.
 
 ```swift
 let numbers = [5, 4, 3, 2, 1, 0]

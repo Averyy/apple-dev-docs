@@ -26,8 +26,8 @@ You will rarely, if ever, need to create an `EmptyTableRowContent` directly. Ins
 ## Relationships
 
 ### Conforms To
-- [Copyable](../Swift/Copyable.md)
-- [Escapable](../Swift/Escapable.md)
+- [Copyable](../swift/copyable.md)
+- [Escapable](../swift/escapable.md)
 - [TableRowContent](tablerowcontent.md)
 
 ## See Also

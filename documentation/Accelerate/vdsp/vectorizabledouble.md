@@ -29,8 +29,8 @@ struct VectorizableDouble
 ## Relationships
 
 ### Conforms To
-- [Copyable](../Swift/Copyable.md)
-- [Escapable](../Swift/Escapable.md)
+- [Copyable](../swift/copyable.md)
+- [Escapable](../swift/escapable.md)
 - [vDSP_BiquadFunctions](vdsp_biquadfunctions.md)
 - [vDSP_DFTFunctions](vdsp_dftfunctions.md)
 

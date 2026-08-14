@@ -13,7 +13,7 @@ framework: HIG
 
 The Action button gives people quick access to their favorite features on supported iPhone and Apple Watch models.
 
-![A sketch of an arrow pointing toward the Action button on Apple Watch, suggesting initiating an action. The image is overlaid with rectangular and circular grid lines and is tinted purple to subtly reflect the purple in the original six-color Apple logo.](https://docs-assets.developer.apple.com/published/804bb45292df928b48d0e7c7115d708e/inputs-action-button-intro~dark%402x.png)
+![A sketch of an arrow pointing toward the Action button on Apple Watch, suggesting initiating an action. The image is overlaid with rectangular and circular grid lines and is tinted purple to subtly reflect the purple in the original six-color Apple logo.](/images/com.apple.HIG/inputs-action-button-intro~dark@2x.png)
 On a supported device, people can use the Action button to run [App Shortcuts](app-shortcuts.md) or access system-provided functionality, like turning the flashlight on or off. On Apple Watch Ultra, the Action button supports activity-related actions, including workouts and dives.
 A person chooses a function for the Action button when they set up their device; later, they can adjust this choice in Settings. When someone associates an App Shortcut with the Action button, pressing the button runs the App Shortcut similarly to using their voice with Siri or tapping it in Spotlight.
 When designing your app or game, think of the Action button as another way for someone to quickly access a function that they use on a regular basis.

@@ -29,8 +29,8 @@ This function creates a custom paper object appropriate for the specified printe
 - `name`: The name to display to the user for this custom paper.
 - `width`: The width of the paper, in points.
 - `height`: The height of the paper, in points.
-- `margins`: A pointer to a   structure that specifies the unprintable margins of the paper, in points. The four values in the structure specify the top, left, bottom, and right imageable area margins of the paper.
-- `paperP`: A pointer to your   variable. On return, the variable refers to a new custom paper object. You are responsible for releasing the paper object with the function  .
+- `margins`: A pointer to a [`PMPaperMargins`](pmpapermargins.md) structure that specifies the unprintable margins of the paper, in points. The four values in the structure specify the top, left, bottom, and right imageable area margins of the paper.
+- `paperP`: A pointer to your [`PMPaper`](pmpaper.md) variable. On return, the variable refers to a new custom paper object. You are responsible for releasing the paper object with the function [`PMRelease(_:)`](1461402-pmrelease.md).
 
 ## See Also
 

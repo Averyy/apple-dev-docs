@@ -29,7 +29,7 @@ The table-view controller creates the array of objects for a section (`array`) a
 ## Parameters
 
 - `array`: An array containing the model objects for a section.
-- `selector`: The selector of a method implemented by the objects in `array` that returns the string to use for sorting the objects. The method represented by the selector must take no arguments and return an [`NSString`](https://developer.apple.com/documentation/Foundation/NSString) object. For example, you might specify the selector for a name property of the object.
+- `selector`: The selector of a method implemented by the objects in `array` that returns the string to use for sorting the objects. The method represented by the selector must take no arguments and return an [`NSString`](https://developer.apple.com/documentation/foundation/nsstring) object. For example, you might specify the selector for a name property of the object.
 
 ## See Also
 

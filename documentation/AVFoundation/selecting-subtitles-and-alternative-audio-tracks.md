@@ -60,9 +60,9 @@ if let group = asset.mediaSelectionGroup(forMediaCharacteristic: AVMediaCharacte
 }
 ```
 
-Selecting a media option makes it immediately available for presentation. Selecting a subtitle or closed-caption option displays the associated text within the video display provided by [`AVPlayerViewController`](https://developer.apple.com/documentation/AVKit/AVPlayerViewController), [`AVPlayerView`](https://developer.apple.com/documentation/AVKit/AVPlayerView), and [`AVPlayerLayer`](avplayerlayer.md). Selecting an alternative audio or video option replaces the currently presented media with the new selection’s media.
+Selecting a media option makes it immediately available for presentation. Selecting a subtitle or closed-caption option displays the associated text within the video display provided by [`AVPlayerViewController`](https://developer.apple.com/documentation/avkit/avplayerviewcontroller), [`AVPlayerView`](https://developer.apple.com/documentation/avkit/avplayerview), and [`AVPlayerLayer`](avplayerlayer.md). Selecting an alternative audio or video option replaces the currently presented media with the new selection’s media.
 
-[`AVPlayer`](avplayer.md) automatically selects media based on the user’s system preferences as its default behavior. To take control over when it makes media selections, disable the default behavior by setting the player’s [`appliesMediaSelectionCriteriaAutomatically`](avplayer/appliesmediaselectioncriteriaautomatically.md) value to [`false`](https://developer.apple.com/documentation/Swift/false).
+[`AVPlayer`](avplayer.md) automatically selects media based on the user’s system preferences as its default behavior. To take control over when it makes media selections, disable the default behavior by setting the player’s [`appliesMediaSelectionCriteriaAutomatically`](avplayer/appliesmediaselectioncriteriaautomatically.md) value to [`false`](https://developer.apple.com/documentation/swift/false).
 
 ## See Also
 

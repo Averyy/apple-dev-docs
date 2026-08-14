@@ -26,9 +26,9 @@ The specific app extension scene that this extension provides.
 ## Relationships
 
 ### Conforms To
-- [AppExtensionScene](../ExtensionKit/AppExtensionScene.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [AppExtensionScene](../extensionkit/appextensionscene.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 - [TranslationUIProviderExtensionScene](translationuiproviderextensionscene.md)
 
 ## See Also

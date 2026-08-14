@@ -22,7 +22,7 @@ To create an alternative app marketplace, request approval to use the marketplac
 
 Only alternative app marketplaces install from a website. When you receive approval to develop an alternative app marketplace, it also grants your ability to distribute it over the web.
 
-In iOS 26.2 and later for Japan, and iOS 26.5 and later for Brazil, development builds of browser apps with the default browser entitlement ([`com.apple.developer.web-browser`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.web-browser)) can test the installation of app marketplaces.
+In iOS 26.2 and later for Japan, and iOS 26.5 and later for Brazil, development builds of browser apps with the default browser entitlement ([`com.apple.developer.web-browser`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.web-browser)) can test the installation of app marketplaces.
 
 #### Develop for Alternative Distribution in the European Union
 
@@ -34,7 +34,7 @@ To create an alternative app marketplace, request approval to use the marketplac
 
 In the EU, you can also distribute approved apps that aren’t marketplaces from your website. To distribute an app that’s not a marketplace from your website, see [`Getting started with Web Distribution in the EU`](https://developer.apple.comhttps://developer.apple.com/support/web-distribution-eu/).
 
-In iOS 18.2 or iPadOS 18.2 and later, development builds of browser apps with the default browser entitlement ([`com.apple.developer.web-browser`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.web-browser)) can test the installation of app marketplaces and other apps that distribute over the web.
+In iOS 18.2 or iPadOS 18.2 and later, development builds of browser apps with the default browser entitlement ([`com.apple.developer.web-browser`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.web-browser)) can test the installation of app marketplaces and other apps that distribute over the web.
 
 
 ---

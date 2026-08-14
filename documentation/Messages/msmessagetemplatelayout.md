@@ -20,7 +20,7 @@ class MSMessageTemplateLayout
 
 The [`MSMessageTemplateLayout`](msmessagetemplatelayout.md) describes how an [`MSMessage`](msmessage.md) object is presented in the transcript. The message template includes the Message extension’s icon, an image, video, or audio file, and a number of text elements (title, subtitle, caption, subcaption, trailing caption, and trailing subcaption). These elements are laid out as shown in [`Figure 1`](msmessagetemplatelayout#1965603.md).
 
-![None](https://docs-assets.developer.apple.com/published/1901e82e59b3edc1aa1efc9684c8c7ee/media-1965603%402x.png)
+![None](/images/com.apple.messages/media-1965603@2x.png)
 
 To use the template:
 
@@ -55,13 +55,13 @@ Do not subclass the `MSMessageTemplateLayout` class.
 ### Inherits From
 - [MSMessageLayout](msmessagelayout.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCopying](../Foundation/NSCopying.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCopying](../foundation/nscopying.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

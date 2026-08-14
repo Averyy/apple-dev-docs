@@ -19,7 +19,7 @@ var isBordered: Bool { get set }
 
 #### Discussion
 
-If your toolbar item displays a custom view, modifying this property applies the image to the view’s [`isBordered`](nstoolbaritem/isbordered.md) property, if one exists. The default value of this property is [`false`](https://developer.apple.com/documentation/Swift/false).
+If your toolbar item displays a custom view, modifying this property applies the image to the view’s [`isBordered`](nstoolbaritem/isbordered.md) property, if one exists. The default value of this property is [`false`](https://developer.apple.com/documentation/swift/false).
 
 > **Note**:  In macOS 12 and earlier, [`NSToolbarItem`](nstoolbaritem.md) doesn’t support custom views in Mac apps built with Mac Catalyst.
 

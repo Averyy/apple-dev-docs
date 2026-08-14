@@ -12,7 +12,7 @@ The Sparse Solvers library provides routines to convert matrices from other form
 
 The Sparse Solvers library supports unsymmetric and symmetric sparse matrices, each of which can also be block matrices.
 
-- An *unsymmetric matrix* contains either [`Double`](https://developer.apple.com/documentation/Swift/Double) or [`Float`](https://developer.apple.com/documentation/Swift/Float) values with no symmetry between its lower-left and upper-right triangles.
+- An *unsymmetric matrix* contains either [`Double`](https://developer.apple.com/documentation/swift/double) or [`Float`](https://developer.apple.com/documentation/swift/float) values with no symmetry between its lower-left and upper-right triangles.
 - A *symmetric matrix* is symmetrical along the diagonal from its upper-left to lower-right corners. In other words, a symmetric matrix is equal to its transpose (*A=Aᵀ*).
 - A *block matrix* can be either unsymmetric or symmetric, and consists of sections called blocks. The blocks along the diagonal of a symmetric block matrix must, themselves, be symmetrical.
 
@@ -20,7 +20,7 @@ The Sparse Solvers library supports unsymmetric and symmetric sparse matrices, e
 
 In this example of an unsymmetric sparse matrix, empty cells represent zeros:
 
-![A four-by-three unsymmetric sparse matrix that has three empty cells.](https://docs-assets.developer.apple.com/published/6c926d4c19dd7fa9f223bc45a7f92bf9/media-2904623%402x.png)
+![A four-by-three unsymmetric sparse matrix that has three empty cells.](/images/com.apple.accelerate/media-2904623@2x.png)
 
 The first step to create a matrix is to define two arrays that store the row indices and corresponding values.
 
@@ -118,11 +118,11 @@ SparseMatrix_Double A = {
 
 In this example of a symmetric sparse matrix, empty cells represent zeros:
 
-![A four-by-four symmetric sparse matrix that has four empty cells.](https://docs-assets.developer.apple.com/published/1f91a6441c387c4dea8abe1dcb9b98c6/media-2904624%402x.png)
+![A four-by-four symmetric sparse matrix that has four empty cells.](/images/com.apple.accelerate/media-2904624@2x.png)
 
 Because it’s symmetric, the values in the upper triangle of the matrix are redundant, so exclude them from the data that you pass to the [`SparseMatrix_Double`](sparsematrix_double.md) initializer.  The example below shows the excluded values in gray:
 
-![A four-by-four symmetric sparse matrix that has four empty cells and four values that appear in a lighter color](https://docs-assets.developer.apple.com/published/45b572fb419aff0d83548d95df749ffb/media-2904626%402x.png)
+![A four-by-four symmetric sparse matrix that has four empty cells and four values that appear in a lighter color](/images/com.apple.accelerate/media-2904626@2x.png)
 
 As with the unsymmetric example, the `rowIndices` array specifies the row in the matrix that contains the corresponding item in `values`, and the `columnStarts` array specifies where each column starts in the `rowIndices` array.
 
@@ -210,7 +210,7 @@ You can create block sparse matrices *—* that is, a matrix that consists of bl
 
 Block matrices can be symmetric or unsymmetric. This example shows an unsymmetric sparse matrix with a block size of 3:
 
-![A nine-by-nine unsymmetric sparse matrix that has three rows of three blocks each.](https://docs-assets.developer.apple.com/published/86cb9416846dc85258d052af8904517a/media-2904625%402x.png)
+![A nine-by-nine unsymmetric sparse matrix that has three rows of three blocks each.](/images/com.apple.accelerate/media-2904625@2x.png)
 
 The following example shows the code to create a sparse matrix with the structure and values above. The [`SparseMatrixStructure`](sparsematrixstructure.md) specifies a block size of 3. The values for each block concatenate in column-major order.
 

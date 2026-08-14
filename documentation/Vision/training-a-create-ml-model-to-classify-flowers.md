@@ -14,7 +14,7 @@ Train a flower classifier using Create ML in Swift Playgrounds, and apply the re
 
 To classify images in real time, you need a classification model with the categories you’d like identified, and a way to capture images to feed to the classifier.
 
-![Block diagram showing how images used to train a Create ML model help classify images in a Vision app.](https://docs-assets.developer.apple.com/published/238bc494aa24f13354a68e7dda2a1b4a/VisionCreateML_2x.png)
+![Block diagram showing how images used to train a Create ML model help classify images in a Vision app.](/images/Vision/VisionCreateML_2x.png)
 
 This sample code project contains two components: a Create ML model you train in Swift Playgrounds, and the iOS app, FlowerShop, which you use to classify different flower types. This project uses the same code as the robot shop demo in the WWDC 2018 session [`Vision with Core ML`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2018/717/).
 
@@ -199,7 +199,7 @@ self.currentlyAnalyzedPixelBuffer = nil
 
 ## See Also
 
-- [Classifying Images with Vision and Core ML](../CoreML/classifying-images-with-vision-and-core-ml.md)
+- [Classifying Images with Vision and Core ML](../coreml/classifying-images-with-vision-and-core-ml.md)
   Crop and scale photos using the Vision framework and classify them with a Core ML model.
 - [class VNCoreMLRequest](vncoremlrequest.md)
   An image-analysis request that uses a Core ML model to process images.

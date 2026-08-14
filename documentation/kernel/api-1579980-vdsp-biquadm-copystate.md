@@ -20,8 +20,8 @@ Both `src` and `dest` objects must be valid single-precision multichannel biquad
 
 ## Parameters
 
-- `__dest`: The   object whose state you wish to overwrite.
-- `__src`: The   object whose state you wish to copy.
+- `__dest`: The `vDSP_biquadm_Setup` object whose state you wish to overwrite.
+- `__src`: The `vDSP_biquadm_SetupStruct` object whose state you wish to copy.
 
 
 ---

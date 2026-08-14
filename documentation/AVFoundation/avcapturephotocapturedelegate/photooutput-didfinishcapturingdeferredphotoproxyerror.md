@@ -18,14 +18,14 @@ optional func photoOutput(_ output: AVCapturePhotoOutput, didFinishCapturingDefe
 
 #### Discussion
 
-You can use the output’s [`fileDataRepresentation()`](avcapturephoto/filedatarepresentation().md) with [`PHAssetCreationRequest`](https://developer.apple.com/documentation/Photos/PHAssetCreationRequest) to eventually produce the final, processed photo into the user’s Photo Library. Add the in-memory proxy file data representation to the photo library as quickly as possible after this call to ensure that the photo library can begin background processing. It’s also important so that the intermediates aren’t removed by a periodic clean-up job looking for abandoned intermediates produced by using the deferred photo processing APIs.
+You can use the output’s [`fileDataRepresentation()`](avcapturephoto/filedatarepresentation().md) with [`PHAssetCreationRequest`](https://developer.apple.com/documentation/photos/phassetcreationrequest) to eventually produce the final, processed photo into the user’s Photo Library. Add the in-memory proxy file data representation to the photo library as quickly as possible after this call to ensure that the photo library can begin background processing. It’s also important so that the intermediates aren’t removed by a periodic clean-up job looking for abandoned intermediates produced by using the deferred photo processing APIs.
 
 Your delegate implementation must adopt this method to opt into deferred photo processing, otherwise calling [`capturePhoto(with:delegate:)`](avcapturephotooutput/capturephoto(with:delegate:).md) throws an exception.
 
 ## Parameters
 
 - `output`: The output instance.
-- `deferredPhotoProxy`: A [`AVCaptureDeferredPhotoProxy`](avcapturedeferredphotoproxy.md) instance that contains a proxy [`CVPixelBuffer`](https://developer.apple.com/documentation/CoreVideo/cvpixelbuffer-q2e) as a placeholder for the final image.
+- `deferredPhotoProxy`: A [`AVCaptureDeferredPhotoProxy`](avcapturedeferredphotoproxy.md) instance that contains a proxy [`CVPixelBuffer`](https://developer.apple.com/documentation/corevideo/cvpixelbuffer-q2e) as a placeholder for the final image.
 - `error`: If the system couldn’t create the photo proxy, or any of the underlying intermediate files, an error object that describes the failure.
 
 ## See Also

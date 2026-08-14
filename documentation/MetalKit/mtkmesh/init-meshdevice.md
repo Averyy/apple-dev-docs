@@ -33,7 +33,7 @@ A Model I/O submesh may have its index type and/or geometric primitive type conv
 
 | MDLIndexBitDepth | MTLIndexType |
 | --- | --- |
-| `MDLIndexBitDepthInvalid` ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) `MDLIndexBitDepthUInt8` ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) `MDLIndexBitDepthUInt16` | `MTLIndexTypeUInt16` |
+| `MDLIndexBitDepthInvalid` ![None](/images/com.apple.metalkit/spacer.png) `MDLIndexBitDepthUInt8` ![None](/images/com.apple.metalkit/spacer.png) `MDLIndexBitDepthUInt16` | `MTLIndexTypeUInt16` |
 | `MDLIndexBitDepthUInt32` | `MTLIndexTypeUInt32` |
 
 | MDLGeometryType | MTLPrimitiveType |
@@ -41,7 +41,7 @@ A Model I/O submesh may have its index type and/or geometric primitive type conv
 | `MDLGeometryTypePoints` | `MTLPrimitiveTypePoint` |
 | `MDLGeometryTypeLines` | `MTLPrimitiveTypeLine` |
 | `MDLGeometryTypeTriangleStrips` | `MTLPrimitiveTypeTriangleStrip` |
-| `MDLGeometryTypeTriangles` ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) `MDLGeometryTypeQuads` ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) `MDLGeometryTypeVariableTopology` | `MTLPrimitiveTypeTriangle` |
+| `MDLGeometryTypeTriangles` ![None](/images/com.apple.metalkit/spacer.png) `MDLGeometryTypeQuads` ![None](/images/com.apple.metalkit/spacer.png) `MDLGeometryTypeVariableTopology` | `MTLPrimitiveTypeTriangle` |
 
 > **Note**:  In macOS, vertex buffers allocated from a [`MTKMeshBufferAllocator`](mtkmeshbufferallocator.md) object are aligned to 256 bytes. Index buffers are not aligned.
 

@@ -22,7 +22,7 @@ struct AccessoryMessage
 
 #### Overview
 
-Create accessory messages in your app’s [`AccessoryDataProvider`](accessorydataprovider.md) extension and send them using [`send(message:)`](https://developer.apple.com/documentation/AccessoryNotifications/NotificationsForwarding/AccessoryNotificationsSession/send(message:)). The system encrypts the message before delivering it to the transport extension.
+Create accessory messages in your app’s [`AccessoryDataProvider`](accessorydataprovider.md) extension and send them using [`send(message:)`](https://developer.apple.com/documentation/accessorynotifications/notificationsforwarding/accessorynotificationssession/send(message:)). The system encrypts the message before delivering it to the transport extension.
 
 ## Topics
 
@@ -45,9 +45,9 @@ Create accessory messages in your app’s [`AccessoryDataProvider`](accessorydat
 ## Relationships
 
 ### Conforms To
-- [Identifiable](../Swift/Identifiable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Identifiable](../swift/identifiable.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

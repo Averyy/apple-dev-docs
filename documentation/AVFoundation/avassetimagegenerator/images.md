@@ -37,8 +37,8 @@ struct Images
 ## Relationships
 
 ### Conforms To
-- [AsyncIteratorProtocol](../Swift/AsyncIteratorProtocol.md)
-- [AsyncSequence](../Swift/AsyncSequence.md)
+- [AsyncIteratorProtocol](../swift/asynciteratorprotocol.md)
+- [AsyncSequence](../swift/asyncsequence.md)
 
 ## See Also
 

@@ -27,7 +27,7 @@ Adding a redaction is an additive process: any redaction provided will be added 
 
 ## See Also
 
-- [Designing your app for the Always On state](../watchOS-Apps/designing-your-app-for-the-always-on-state.md)
+- [Designing your app for the Always On state](../watchos-apps/designing-your-app-for-the-always-on-state.md)
   Customize your watchOS app’s user interface for continuous display.
 - [Protecting sensitive content when screen sharing and remote control are active](protecting-sensitive-content-when-screen-sharing.md)
   Detect active screen capture sessions and respond appropriately to protect sensitive content in your app.

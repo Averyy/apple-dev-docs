@@ -27,7 +27,7 @@ class JSONEncoder
 
 #### Overview
 
-The example below shows how to encode an instance of a simple `GroceryProduct` type from a JSON object. The type adopts [`Codable`](https://developer.apple.com/documentation/Swift/Codable) so that it’s encodable as JSON using a [`JSONEncoder`](jsonencoder.md) instance.
+The example below shows how to encode an instance of a simple `GroceryProduct` type from a JSON object. The type adopts [`Codable`](https://developer.apple.com/documentation/swift/codable) so that it’s encodable as JSON using a [`JSONEncoder`](jsonencoder.md) instance.
 
 ```swift
 struct GroceryProduct: Codable {
@@ -93,12 +93,12 @@ print(String(data: data, encoding: .utf8)!)
 ## Relationships
 
 ### Conforms To
-- [Copyable](../Swift/Copyable.md)
-- [Escapable](../Swift/Escapable.md)
-- [NetworkEncoder](../Network/NetworkEncoder.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
-- [TopLevelEncoder](../Combine/TopLevelEncoder.md)
+- [Copyable](../swift/copyable.md)
+- [Escapable](../swift/escapable.md)
+- [NetworkEncoder](../network/networkencoder.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
+- [TopLevelEncoder](../combine/toplevelencoder.md)
 
 ## See Also
 

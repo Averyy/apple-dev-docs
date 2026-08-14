@@ -27,7 +27,7 @@ Returns  a [`UserAnnotation`](userannotation.md) that displays a persons current
 
 ## Parameters
 
-- `anchor`: A UnitPoint value that describes how to anchor the user location indicator to the person’s location. The default is [`center`](https://developer.apple.com/documentation/SwiftUI/UnitPoint/center).
+- `anchor`: A UnitPoint value that describes how to anchor the user location indicator to the person’s location. The default is [`center`](https://developer.apple.com/documentation/swiftui/unitpoint/center).
 - `content`: The custom view to show at the person’s location.
 
 ## See Also

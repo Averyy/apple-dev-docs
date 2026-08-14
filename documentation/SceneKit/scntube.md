@@ -22,7 +22,7 @@ class SCNTube
 
 #### Overview
 
-![None](https://docs-assets.developer.apple.com/published/7b2f97f33326725d2645fdf61f1b5106/media-2929815%402x.png)
+![None](/images/com.apple.scenekit/media-2929815@2x.png)
 
 The outer surface of a tube is a cylinder. Define the size of the cylinder’s cross section in the x- and z-axis dimensions of its local coordinate space with the [`outerRadius`](scntube/outerradius.md) property, and its extent in the y-axis dimension with the [`height`](scntube/height.md) property. A cylinder becomes a tube through the subtraction of a cylindrical volume along its central axis. Define the size of this circular hole using the tube’s [`innerRadius`](scntube/innerradius.md) property. To position and orient a tube in a scene, attach it to the [`geometry`](scnnode/geometry.md) property of an [`SCNNode`](scnnode.md) object.
 
@@ -53,15 +53,15 @@ A tube contains four [`SCNGeometryElement`](scngeometryelement.md) objects: one 
 ### Inherits From
 - [SCNGeometry](scngeometry.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCoding](../Foundation/NSCoding.md)
-- [NSCopying](../Foundation/NSCopying.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [NSSecureCoding](../Foundation/NSSecureCoding.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCoding](../foundation/nscoding.md)
+- [NSCopying](../foundation/nscopying.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSSecureCoding](../foundation/nssecurecoding.md)
 - [SCNAnimatable](scnanimatable.md)
 - [SCNBoundingVolume](scnboundingvolume.md)
 - [SCNShadable](scnshadable.md)

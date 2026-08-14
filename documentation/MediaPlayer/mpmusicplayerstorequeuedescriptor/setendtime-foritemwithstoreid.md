@@ -20,7 +20,7 @@ func setEndTime(_ endTime: TimeInterval, forItemWithStoreID storeID: String)
 
 ## Parameters
 
-- `endTime`: The [`TimeInterval`](https://developer.apple.com/documentation/Foundation/TimeInterval) describing when the store item stops playing.
+- `endTime`: The [`TimeInterval`](https://developer.apple.com/documentation/foundation/timeinterval) describing when the store item stops playing.
 - `storeID`: The store identifier associated with the item in the queue that has a changed end time.
 
 ## See Also

@@ -45,7 +45,7 @@ You typically don’t use this type directly, except when you implement a custom
 ## Relationships
 
 ### Conforms To
-- [RawRepresentable](../Swift/RawRepresentable.md)
+- [RawRepresentable](../swift/rawrepresentable.md)
 - [SubscriptionStoreControlPlacement](subscriptionstorecontrolplacement.md)
 
 ## See Also

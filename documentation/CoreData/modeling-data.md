@@ -10,7 +10,7 @@ A data model holds information about your application’s objects and the graph 
 
 This screenshot shows the data model for an app that displays a feed of earthquake data.
 
-![A screenshot showing an .xcdatamodeld file containing a Quake entity with code, magnitude, place, and time attributes.](https://docs-assets.developer.apple.com/published/bc1708f16eb80039f62429b9fb1c8fe8/media-3839155%402x.png)
+![A screenshot showing an .xcdatamodeld file containing a Quake entity with code, magnitude, place, and time attributes.](/images/com.apple.coredata/media-3839155@2x.png)
 
 Model your data by describing your objects as entities, adding their properties as attributes and relationships, and finally generating respective [`NSManagedObject`](nsmanagedobject.md) subclasses to inherit change tracking and life cycle management.
 

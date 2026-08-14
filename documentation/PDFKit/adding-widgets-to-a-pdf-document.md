@@ -10,7 +10,7 @@ Widgets are interactive form elements that you can add to a PDF to make it easie
 
 Each widget type has several variations. A button can be a radio button, a check box, or a push button. A choice widget can be a list box, which is a table of options, or a combo box, which is like a dropdown.
 
-![Add widgets to create a form in a PDF.](https://docs-assets.developer.apple.com/published/5e2cf8f257a11f3a8193f4c25133a9ee/media-3039567%402x.png)
+![Add widgets to create a form in a PDF.](/images/com.apple.pdfkit/media-3039567@2x.png)
 
 ##### Create a Widget Annotation
 

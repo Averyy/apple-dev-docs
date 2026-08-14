@@ -15,7 +15,7 @@ An entitlement that indicates whether the app can act as the user’s default we
 
 #### Discussion
 
-For more information about using this entitlement, see [`Preparing your app to be the default web browser`](https://developer.apple.com/documentation/Xcode/preparing-your-app-to-be-the-default-browser).
+For more information about using this entitlement, see [`Preparing your app to be the default web browser`](https://developer.apple.com/documentation/xcode/preparing-your-app-to-be-the-default-browser).
 
 ## See Also
 

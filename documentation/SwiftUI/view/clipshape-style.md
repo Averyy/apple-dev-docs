@@ -41,7 +41,7 @@ Text("Clipped text in a circle")
 
 The resulting view shows only the portion of the text that lies within the bounds of the circle.
 
-![A screenshot of text clipped to the shape of a](https://docs-assets.developer.apple.com/published/61a59f5ed5f866e275e15049b259168c/SwiftUI-View-clipShape%402x.png)
+![A screenshot of text clipped to the shape of a](/images/com.apple.SwiftUI/SwiftUI-View-clipShape@2x.png)
 
 ## Parameters
 

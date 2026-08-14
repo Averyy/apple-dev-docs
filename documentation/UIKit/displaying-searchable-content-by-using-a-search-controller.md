@@ -65,7 +65,7 @@ override func viewDidLoad() {
 
 ##### Update the Search Results
 
-This sample uses the [`UISearchResultsUpdating`](uisearchresultsupdating.md) protocol, along with [`NSComparisonPredicate`](https://developer.apple.com/documentation/Foundation/NSComparisonPredicate), to filter search results from the group of available products. `NSComparisonPredicate` is a foundation class that specifies how data should be fetched or filtered using search criteria. The search criteria are based on what the user types in the search bar, which can be a combination of product title, year introduced, and price.
+This sample uses the [`UISearchResultsUpdating`](uisearchresultsupdating.md) protocol, along with [`NSComparisonPredicate`](https://developer.apple.com/documentation/foundation/nscomparisonpredicate), to filter search results from the group of available products. `NSComparisonPredicate` is a foundation class that specifies how data should be fetched or filtered using search criteria. The search criteria are based on what the user types in the search bar, which can be a combination of product title, year introduced, and price.
 
 To prepare for a search, the search bar content is trimmed of all leading and trailing space characters. Then the search string is passed to the `findMatches` function, which returns the `NSComparisonPredicate` used in the search. The product list results are applied to the search results table as a filtered list.
 

@@ -26,7 +26,7 @@ You can use the promotional offer ID value to:
 - Confirm which promotional offer the user redeemed.
 - Keep track of the promotional offers that a user has redeemed to limit discounts you offer, according to your business model.
 
-For more information on promotional offers, see [`Implementing promotional offers in your app`](https://developer.apple.com/documentation/StoreKit/implementing-promotional-offers-in-your-app).
+For more information on promotional offers, see [`Implementing promotional offers in your app`](https://developer.apple.com/documentation/storekit/implementing-promotional-offers-in-your-app).
 
 ## See Also
 

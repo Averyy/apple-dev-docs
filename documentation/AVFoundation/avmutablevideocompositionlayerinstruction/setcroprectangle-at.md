@@ -25,7 +25,7 @@ The origin of the crop rectangle is the top-left corner of the buffer clean aper
 
 Sets a fixed crop rectangle to apply from `time` until the next time at which a crop rectangle is set; this is the same as setting a flat ramp for that time range.
 
-Before the first specified time for which a crop rectangle is set, the crop rectangle is held constant to [`CGRectInfinite`](https://developer.apple.com/documentation/CoreGraphics/CGRectInfinite) and after the last time for which a crop rectangle is set, the crop rectangle is held constant at that last value.
+Before the first specified time for which a crop rectangle is set, the crop rectangle is held constant to [`CGRectInfinite`](https://developer.apple.com/documentation/coregraphics/cgrectinfinite) and after the last time for which a crop rectangle is set, the crop rectangle is held constant at that last value.
 
 ## Parameters
 

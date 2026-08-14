@@ -34,7 +34,7 @@ The following code shows how to create a basic animation object using linear int
 
 A layer animated with the animation created by the code above and with linearly interpolated horizontal movement would describe a path similar to the following figure.
 
-![Path taken using linear timing function](https://docs-assets.developer.apple.com/published/df8dce2b4ae224c6fa30b1be18ae35ff/media-2776812%402x.png)
+![Path taken using linear timing function](/images/com.apple.quartzcore/media-2776812@2x.png)
 
 ## See Also
 

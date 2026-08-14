@@ -20,7 +20,7 @@ var frame: NSRect { get set }
 
 #### Discussion
 
-Changing the value of this property repositions and resizes the view within the coordinate system of its superview. Changing the frame does not mark the view as needing to be displayed. Set the [`needsDisplay`](nsview/needsdisplay.md) property to [`true`](https://developer.apple.com/documentation/Swift/true) when you want the view to be redisplayed.
+Changing the value of this property repositions and resizes the view within the coordinate system of its superview. Changing the frame does not mark the view as needing to be displayed. Set the [`needsDisplay`](nsview/needsdisplay.md) property to [`true`](https://developer.apple.com/documentation/swift/true) when you want the view to be redisplayed.
 
 If your view does not use a custom bounds rectangle, this method also sets the view’s bounds to match the size of the new frame. You can specify a custom bounds rectangle by changing the [`bounds`](nsview/bounds.md) property or by calling the [`setBoundsOrigin(_:)`](nsview/setboundsorigin(_:).md) or [`setBoundsSize(_:)`](nsview/setboundssize(_:).md) method explicitly. Once set, the view creates an internal transform to convert from frame coordinates to bounds coordinates. As long as the width-to-height ratio of the two coordinate systems remains the same, your content appears normal. If the ratios differ, your content may appear skewed.
 

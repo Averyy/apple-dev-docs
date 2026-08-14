@@ -22,7 +22,7 @@ static var errorDomain: String { get }
 
 ## See Also
 
-- [var localizedDescription: String](../Swift/Error/localizedDescription.md)
+- [var localizedDescription: String](../swift/error/localizeddescription.md)
   Retrieve the localized description for this error.
 
 

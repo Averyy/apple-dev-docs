@@ -49,7 +49,7 @@ When using synchronization, try to minimize the number of synchronized entities.
 entity.synchronization = nil
 ```
 
-Within an entity, the system automatically synchronizes properties of all built-in components, as well the properties of custom components that adopt the [`Codable`](https://developer.apple.com/documentation/Swift/Codable) protocol. If you want to avoid synchronizing data for a particular custom component, skip the codable conformance.
+Within an entity, the system automatically synchronizes properties of all built-in components, as well the properties of custom components that adopt the [`Codable`](https://developer.apple.com/documentation/swift/codable) protocol. If you want to avoid synchronizing data for a particular custom component, skip the codable conformance.
 
 > **Note**: RealityKit only synchronizes component properties. It doesn’t synchronize any custom entity properties.
 

@@ -10,19 +10,19 @@ Content managers use Apple School Manager and Apple Business to purchase apps, b
 
 #### Authenticate
 
-All server endpoints except [`Service Config`](service-config.md) require a content token (`sToken`) to authenticate an organization. A valid `sToken` allows a device management service to manage assets for the specified location of an organization. Only one device management service should manage a single location at any time. Multiple device management services managing the same location result in unpredictable asset allocation.
+All server endpoints except [`Service Config`](service-config.md) require a content token (`sToken`) to authenticate an organization. A valid `sToken` allows a device management service to manage assets for the specified organizational unit of an organization. Only one device management service should manage a single organizational unit at any time. Multiple device management services managing the same organizational unit result in unpredictable asset allocation.
 
-Content managers can download a location-based `sToken` from the Apps and Books section under the Settings tab in Apple School Manager or Apple Business, and upload it into their device management service.
+Content managers can download an `sToken` for an organizational unit from the Apps and Books section under the Settings tab in Apple School Manager or Apple Business, and upload it into their device management service.
 
-![The Apps and Books settings section in Apple School Manager and Apple Business for downloading content tokens.](https://docs-assets.developer.apple.com/published/041893ffc57ed18a43ef0cac764049d1/getting-started-with-the-management-api.png)
+![The Apps and Books settings section in Apple School Manager and Apple Business for downloading content tokens.](/images/com.apple.devicemanagement/getting-started-with-the-management-api.png)
 
-The device management service stores the location-based content token along with its other private, protected properties, and passes this token in the `Authorization` header of API requests.
+The device management service stores the organizational unit’s content token along with its other private, protected properties, and passes this token in the `Authorization` header of API requests.
 
 The `sToken` is a JSON string in Base64 encoding. When the server decodes it, the resulting JSON string contains three fields: `token`, `expDate`, and `orgName`.
 
 | Field | Description |
 | --- | --- |
-| `token` | A unique identifier for the organization’s location under management. |
+| `token` | A unique identifier for the organizational unit under management. |
 | `expDate` | The expiration date of the token in ISO-8601 format. |
 | `orgName` | The name of the organization for the issued token. |
 
@@ -59,7 +59,7 @@ Organization administrators can tailor different sets of privileges for an indiv
 
 #### Identify the Current Device Management Service
 
-To protect against another device management service managing the same location, be sure to set [`MdmInfo`](mdminfo.md) in [`Client Config`](client-config-4szk1.md). Then inspect `MdmInfo` each time a response returns to ensure that no other device management service overwrites it.
+To protect against another device management service managing the same organizational unit, be sure to set [`MdmInfo`](mdminfo.md) in [`Client Config`](client-config-4szk1.md). Then inspect `MdmInfo` each time a response returns to ensure that no other device management service overwrites it.
 
 `MdmInfo` resembles the following:
 
@@ -76,7 +76,7 @@ To protect against another device management service managing the same location,
 
 #### Import Users
 
-After authenticating, perform an initial import of the location’s active users. Send a request to [`Get Users`](get-users-4mwln.md) with `includeRetired=0`, then record the user data for each element of `users` in the [`GetUsersResponse`](getusersresponse.md). If the response includes a `nextPageIndex`, send another request with that value as the `pageIndex` query parameter and record the new page of users. Continue paging until `currentPageIndex` equals `totalPages`.
+After authenticating, perform an initial import of the organizational unit’s active users. Send a request to [`Get Users`](get-users-4mwln.md) with `includeRetired=0`, then record the user data for each element of `users` in the [`GetUsersResponse`](getusersresponse.md). If the response includes a `nextPageIndex`, send another request with that value as the `pageIndex` query parameter and record the new page of users. Continue paging until `currentPageIndex` equals `totalPages`.
 
 For more information about managing users after importing them, see [`User management`](app-book-and-subscription-management#User-management.md).
 
@@ -86,7 +86,7 @@ Keep the imported user list up to date by passing the `versionId` from each resp
 
 #### Import Assigned Assets
 
-Import asset counts first, then import the current assignments for each asset. Send a request to [`Get Assets`](get-assets-4ski1.md) to retrieve counts by `adamId` for the managed location. For each `adamId` in the [`GetAssetsResponse`](getassetsresponse.md), send a request to [`Get Assignments`](get-assignments-9wv1e.md) and record the `adamId`, `pricingParam`, and `clientUserId` or `serialNumber` for each assignment in the [`GetAssignmentsResponse`](getassignmentsresponse.md), along with the `currentPageIndex` and `totalPages`. Page through the results by passing the `nextPageIndex` value as the `pageIndex` query parameter in subsequent requests until `currentPageIndex` equals `totalPages`.
+Import asset counts first, then import the current assignments for each asset. Send a request to [`Get Assets`](get-assets-4ski1.md) to retrieve counts by `adamId` for the managed organizational unit. For each `adamId` in the [`GetAssetsResponse`](getassetsresponse.md), send a request to [`Get Assignments`](get-assignments-9wv1e.md) and record the `adamId`, `pricingParam`, and `clientUserId` or `serialNumber` for each assignment in the [`GetAssignmentsResponse`](getassignmentsresponse.md), along with the `currentPageIndex` and `totalPages`. Page through the results by passing the `nextPageIndex` value as the `pageIndex` query parameter in subsequent requests until `currentPageIndex` equals `totalPages`.
 
 For more information about managing assets after importing them, see [`Asset management`](app-book-and-subscription-management#Asset-management.md).
 
@@ -96,7 +96,7 @@ Keep assignment data current by passing the `versionId` from each Get Assignment
 
 #### Import Subscriptions
 
-To import a location’s subscriptions, send a request to [`Get Subscriptions`](get-subscriptions.md). Filter by `parentAdamId` or `adamId`, or omit both to retrieve all subscriptions. The response includes seat counts broken down by renewal state — each subscription reports how many seats are `renewing` (auto-renewing at the end of the billing period) and how many are `expiring` (not renewing).
+To import an organizational unit’s subscriptions, send a request to [`Get Subscriptions`](get-subscriptions.md). Filter by `parentAdamId` or `adamId`, or omit both to retrieve all subscriptions. The response includes seat counts broken down by renewal state — each subscription reports how many seats are `renewing` (auto-renewing at the end of the billing period) and how many are `expiring` (not renewing).
 
 This endpoint uses cursor-based pagination instead of page-index pagination. Pass the `nextCursor` value from each response as the `cursor` query parameter in the next request, and continue until `nextCursor` is absent.
 

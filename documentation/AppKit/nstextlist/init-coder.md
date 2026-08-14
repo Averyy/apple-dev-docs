@@ -16,7 +16,7 @@ init?(coder: NSCoder)
 
 ## Parameters
 
-- `coder`: An instance of [`NSCoder`](https://developer.apple.com/documentation/Foundation/NSCoder).
+- `coder`: An instance of [`NSCoder`](https://developer.apple.com/documentation/foundation/nscoder).
 
 ## See Also
 

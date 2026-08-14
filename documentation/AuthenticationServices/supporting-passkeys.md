@@ -10,7 +10,7 @@ Passkeys use iCloud Keychain public key credentials, eliminating the need for pa
 
 As the *authenticator*, your Apple device generates a unique public-private key pair for every account it creates on a service. The authenticator retains the private key and shares its public key with the server, known as the *relying party.*
 
-> ❗ **Important**:  You need to have an associated domain with the `webcredentials` service type when making a registration or assertion request; otherwise, the request returns an error. See [`Supporting associated domains`](https://developer.apple.com/documentation/Xcode/supporting-associated-domains) for more information.__
+> ❗ **Important**:  You need to have an associated domain with the `webcredentials` service type when making a registration or assertion request; otherwise, the request returns an error. See [`Supporting associated domains`](https://developer.apple.com/documentation/xcode/supporting-associated-domains) for more information.__
 
 ##### Register a New Account on a Service
 
@@ -84,7 +84,7 @@ If an error occurs during the authorization, the framework calls [`authorization
 
 Password AutoFill is a familiar authentication workflow for logging into apps and services. Using AutoFill, you can use passkeys alongside passwords while maintaining the same familiar user experience.
 
-To prepare your iOS app to use AutoFill, first set your text field’s [`textContentType`](https://developer.apple.com/documentation/UIKit/UITextInputTraits/textContentType) to [`username`](https://developer.apple.com/documentation/UIKit/UITextContentType/username). This property lets the system know where to show the passkey suggestion. Next, call [`performAutoFillAssistedRequests()`](asauthorizationcontroller/performautofillassistedrequests().md). When the user taps the user name field, the system can suggest passkeys that the user saved for the app.
+To prepare your iOS app to use AutoFill, first set your text field’s [`textContentType`](https://developer.apple.com/documentation/uikit/uitextinputtraits/textcontenttype) to [`username`](https://developer.apple.com/documentation/uikit/uitextcontenttype/username). This property lets the system know where to show the passkey suggestion. Next, call [`performAutoFillAssistedRequests()`](asauthorizationcontroller/performautofillassistedrequests().md). When the user taps the user name field, the system can suggest passkeys that the user saved for the app.
 
 ##### Change or Reset a Passkey
 
@@ -96,11 +96,11 @@ Registering a passkey with the same user ID as an existing one overwrites the 
 
 ##### Use Passkeys in a Web View
 
-To authenticate using passkeys in a [`WKWebView`](https://developer.apple.com/documentation/WebKit/WKWebView) web view, configure your service’s relying party identifier as an associated domain in your app. For more information, see [`Supporting associated domains`](https://developer.apple.com/documentation/Xcode/supporting-associated-domains).
+To authenticate using passkeys in a [`WKWebView`](https://developer.apple.com/documentation/webkit/wkwebview) web view, configure your service’s relying party identifier as an associated domain in your app. For more information, see [`Supporting associated domains`](https://developer.apple.com/documentation/xcode/supporting-associated-domains).
 
 > **Note**:  Your app can’t use passkeys to authenticate for services that you haven’t configured as the app’s associated domains.
 
-In iOS 16.4 and later, and macOS 13.3 and later, use Javascript APIs in [`WKWebView`](https://developer.apple.com/documentation/WebKit/WKWebView) to test whether passkey authentication is available. If the person has a passkey available for the relying party, `isUserVerifyingPlatformAuthenticatorAvailable()` returns `true`. If passkey AutoFill is available, `isConditionalMediationAvailable()` returns `true`.
+In iOS 16.4 and later, and macOS 13.3 and later, use Javascript APIs in [`WKWebView`](https://developer.apple.com/documentation/webkit/wkwebview) to test whether passkey authentication is available. If the person has a passkey available for the relying party, `isUserVerifyingPlatformAuthenticatorAvailable()` returns `true`. If passkey AutoFill is available, `isConditionalMediationAvailable()` returns `true`.
 
 ## See Also
 

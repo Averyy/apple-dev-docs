@@ -22,7 +22,7 @@ func CGImageDestinationCopyTypeIdentifiers() -> CFArray
 
 #### Return Value
 
-Returns an array of the uniform type identifiers that image destinations support. For a list of system-declared and third-party identifiers, see [`Uniform Type Identifiers`](https://developer.apple.com/documentation/UniformTypeIdentifiers).
+Returns an array of the uniform type identifiers that image destinations support. For a list of system-declared and third-party identifiers, see [`Uniform Type Identifiers`](https://developer.apple.com/documentation/uniformtypeidentifiers).
 
 ## See Also
 

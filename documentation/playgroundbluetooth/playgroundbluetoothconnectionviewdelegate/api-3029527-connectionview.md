@@ -23,7 +23,7 @@ A localized string corresponding to the current state of the view.
 ## Parameters
 
 - `connectionView`: The connection view that’s entering this state.
-- `state`: The state of the view. The state is one of the cases of the   enumeration.
+- `state`: The state of the view. The state is one of the cases of the [`PlaygroundBluetoothConnectionView.State`](playgroundbluetoothconnectionview/state.md) enumeration.
 
 ## See Also
 

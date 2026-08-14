@@ -31,17 +31,17 @@ enum TVColorType
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../Swift/BitwiseCopyable.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [RawRepresentable](../Swift/RawRepresentable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [BitwiseCopyable](../swift/bitwisecopyable.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [RawRepresentable](../swift/rawrepresentable.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 
 - [var color: UIColor?](tvcolor/color.md)
-  A [`UIColor`](https://developer.apple.com/documentation/UIKit/UIColor) object used to color an element.
+  A [`UIColor`](https://developer.apple.com/documentation/uikit/uicolor) object used to color an element.
 - [var colorType: TVColorType](tvcolor/colortype.md)
   The color type for an element.
 - [var gradientColors: [UIColor]?](tvcolor/gradientcolors.md)

@@ -26,7 +26,7 @@ For more information on schemes, see [`http://www.iana.org/assignments/uri-schem
 
 ## Parameters
 
-- `inDocument`: The document URL object (of type  ) whose scheme you want to get.
+- `inDocument`: The document URL object (of type [`SKDocument`](skdocument.md)) whose scheme you want to get.
 
 ## See Also
 

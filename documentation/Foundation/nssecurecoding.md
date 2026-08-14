@@ -61,7 +61,7 @@ In order to conform to [`NSSecureCoding`](nssecurecoding.md):
               forKey:@"myKey"];
 ```
 
-In addition, the class must override the getter for its [`supportsSecureCoding`](nssecurecoding/supportssecurecoding.md) property to return [`true`](https://developer.apple.com/documentation/Swift/true).
+In addition, the class must override the getter for its [`supportsSecureCoding`](nssecurecoding/supportssecurecoding.md) property to return [`true`](https://developer.apple.com/documentation/swift/true).
 
 For more information about how this relates to the NSXPC API, see [`Creating XPC Services`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/MacOSX/Conceptual/BPSystemStartup/Chapters/CreatingXPCServices.html#//apple_ref/doc/uid/10000172i-SW6) in [`Daemons and Services Programming Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/MacOSX/Conceptual/BPSystemStartup/Chapters/Introduction.html#//apple_ref/doc/uid/10000172i).
 
@@ -174,7 +174,7 @@ For more information about how this relates to the NSXPC API, see [`Creating XPC
 
 - [Encoding and Decoding Custom Types](encoding-and-decoding-custom-types.md)
   Make your data types encodable and decodable for compatibility with external representations such as JSON.
-- [typealias Codable](../Swift/Codable.md)
+- [typealias Codable](../swift/codable.md)
   A type that can convert itself into and out of an external representation.
 - [protocol NSCoding](nscoding.md)
   A protocol that enables an object to be encoded and decoded for archiving and distribution.

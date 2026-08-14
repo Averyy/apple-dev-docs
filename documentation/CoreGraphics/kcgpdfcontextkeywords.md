@@ -20,7 +20,7 @@ let kCGPDFContextKeywords: CFString
 
 #### Discussion
 
-The keywords for this document. This key is optional. If the value of  this key is a [`CFString`](https://developer.apple.com/documentation/CoreFoundation/CFString) object, the `/Keywords` entry will be the specified  string. If the value of this key is a [`CFArray`](https://developer.apple.com/documentation/CoreFoundation/CFArray) object, then it must be an array  of [`CFString`](https://developer.apple.com/documentation/CoreFoundation/CFString) objects. The `/Keywords` entry will, in this case, be the concatenation  of the specified strings separated by commas (`","`). In addition, an  entry with the key `"/AAPL:Keywords"` is stored in the document  information dictionary; its value is an array consisting of each of the  specified strings. The value of this key must be in one of the above  forms; otherwise, this key is ignored.
+The keywords for this document. This key is optional. If the value of  this key is a [`CFString`](https://developer.apple.com/documentation/corefoundation/cfstring) object, the `/Keywords` entry will be the specified  string. If the value of this key is a [`CFArray`](https://developer.apple.com/documentation/corefoundation/cfarray) object, then it must be an array  of [`CFString`](https://developer.apple.com/documentation/corefoundation/cfstring) objects. The `/Keywords` entry will, in this case, be the concatenation  of the specified strings separated by commas (`","`). In addition, an  entry with the key `"/AAPL:Keywords"` is stored in the document  information dictionary; its value is an array consisting of each of the  specified strings. The value of this key must be in one of the above  forms; otherwise, this key is ignored.
 
 ## See Also
 

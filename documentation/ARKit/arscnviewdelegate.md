@@ -44,8 +44,8 @@ This protocol extends the [`ARSessionObserver`](arsessionobserver.md) protocol, 
 
 ### Inherits From
 - [ARSessionObserver](arsessionobserver.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [SCNSceneRendererDelegate](../SceneKit/SCNSceneRendererDelegate.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [SCNSceneRendererDelegate](../scenekit/scnscenerendererdelegate.md)
 
 ## See Also
 

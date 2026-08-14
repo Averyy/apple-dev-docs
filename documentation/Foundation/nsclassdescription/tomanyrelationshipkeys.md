@@ -23,7 +23,7 @@ An array of `NSString` objects containing the names of the to-many relationship 
 
 To-many relationship properties are arrays of objects.
 
-If you have an instance of the class the receiver describes, you can use the `NSObject` instance method [`toManyRelationshipKeys`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class/toManyRelationshipKeys) instead.
+If you have an instance of the class the receiver describes, you can use the `NSObject` instance method [`toManyRelationshipKeys`](https://developer.apple.com/documentation/objectivec/nsobject-swift.class/tomanyrelationshipkeys) instead.
 
 ## See Also
 

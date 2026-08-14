@@ -16,7 +16,7 @@ func searchString(_ searchString: String, inUserInterfaceItemString stringToSear
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/Swift/true) if the searchString is matched, otherwise [`false`](https://developer.apple.com/documentation/Swift/false).
+[`true`](https://developer.apple.com/documentation/swift/true) if the searchString is matched, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
 
 #### Discussion
 

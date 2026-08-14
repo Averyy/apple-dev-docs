@@ -16,7 +16,7 @@ var refusesFirstResponder: Bool { get set }
 
 #### Discussion
 
-The value of this property is [`true`](https://developer.apple.com/documentation/Swift/true) if the receiver refuses the first responder role; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
+The value of this property is [`true`](https://developer.apple.com/documentation/swift/true) if the receiver refuses the first responder role; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
 
 ## See Also
 

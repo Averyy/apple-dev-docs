@@ -22,7 +22,7 @@ var curvesData: Data { get set }
 
 #### Discussion
 
-Create the curves data as an [`NSData`](https://developer.apple.com/documentation/Foundation/NSData) object containing a sequence of single-precision RGB values. These values represent a lookup table that’s applied to the input image.
+Create the curves data as an [`NSData`](https://developer.apple.com/documentation/foundation/nsdata) object containing a sequence of single-precision RGB values. These values represent a lookup table that’s applied to the input image.
 
 Core Image unpremultiplies the image before applying the effect, and premultiplies the result after applying the effect.
 

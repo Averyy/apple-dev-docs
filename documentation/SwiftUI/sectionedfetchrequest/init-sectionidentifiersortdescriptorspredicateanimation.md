@@ -23,13 +23,13 @@ Creates a sectioned fetch request based on a section identifier, a predicate, an
 
 #### Discussion
 
-The request gets the entity type from the `Result` instance by calling that managed object’s [`entity()`](https://developer.apple.com/documentation/CoreData/NSManagedObject/entity()) type method. If you need to specify the entity type explicitly, use the [`init(entity:sectionIdentifier:sortDescriptors:predicate:animation:)`](sectionedfetchrequest/init(entity:sectionidentifier:sortdescriptors:predicate:animation:).md) initializer instead. If you need more control over the fetch request configuration, use [`init(fetchRequest:sectionIdentifier:animation:)`](sectionedfetchrequest/init(fetchrequest:sectionidentifier:animation:).md). For value type sort descriptors, use [`init(sectionIdentifier:sortDescriptors:predicate:animation:)`](sectionedfetchrequest/init(sectionidentifier:sortdescriptors:predicate:animation:).md).
+The request gets the entity type from the `Result` instance by calling that managed object’s [`entity()`](https://developer.apple.com/documentation/coredata/nsmanagedobject/entity()) type method. If you need to specify the entity type explicitly, use the [`init(entity:sectionIdentifier:sortDescriptors:predicate:animation:)`](sectionedfetchrequest/init(entity:sectionidentifier:sortdescriptors:predicate:animation:).md) initializer instead. If you need more control over the fetch request configuration, use [`init(fetchRequest:sectionIdentifier:animation:)`](sectionedfetchrequest/init(fetchrequest:sectionidentifier:animation:).md). For value type sort descriptors, use [`init(sectionIdentifier:sortDescriptors:predicate:animation:)`](sectionedfetchrequest/init(sectionidentifier:sortdescriptors:predicate:animation:).md).
 
 ## Parameters
 
 - `sectionIdentifier`: A key path that SwiftUI applies to the `Result` type to get an object’s section identifier.
 - `sortDescriptors`: An array of sort descriptors that define the sort order of the fetched results.
-- `predicate`: An [`NSPredicate`](https://developer.apple.com/documentation/Foundation/NSPredicate) instance that defines logical conditions used to filter the fetched results.
+- `predicate`: An [`NSPredicate`](https://developer.apple.com/documentation/foundation/nspredicate) instance that defines logical conditions used to filter the fetched results.
 - `animation`: The animation to use for user interface changes that result from changes to the fetched results.
 
 ## See Also

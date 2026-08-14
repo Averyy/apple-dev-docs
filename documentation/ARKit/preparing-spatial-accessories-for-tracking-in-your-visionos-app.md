@@ -18,7 +18,7 @@ On Apple Vision Pro, visionOS tracks the 3D position and orientation of a handhe
 
 Using your 3D model asset, train a machine learning model with the accessory tracking tool to generate a `.referenceaccessory` file. Use the *reference accessory file* to track the physical accessory in your app, or make it available to other apps by exporting it system-wide.
 
-![Two views of a yellow and black handheld flashlight-style spatial accessory with LED markers on its top surface: one showing the front, and one showing the rear panel with a power button and additional controls.](https://docs-assets.developer.apple.com/published/12a733087958583a5d7a4dd887e0f1a0/spatial-accessory%402x.png)
+![Two views of a yellow and black handheld flashlight-style spatial accessory with LED markers on its top surface: one showing the front, and one showing the rear panel with a power button and additional controls.](/images/com.apple.arkit/spatial-accessory@2x.png)
 
 #### Ensure Your Items Are Suitable for Accessory Tracking
 
@@ -71,19 +71,19 @@ For the LED constellation, add the LED points that match the pose on the physica
 2. Create a new project, enter the project name, then click Create Project.
 3. In the Project Browser, click the Import Asset button, then choose your USDZ spatial accessory body file.
 
-![The Project Browser in Reality Composer Pro with the Import Asset button highlighted in the toolbar.](https://docs-assets.developer.apple.com/published/f12cc3cc6332b5f440192b5b11c08dcd/spatial-accessory-import-asset%402x.png)
+![The Project Browser in Reality Composer Pro with the Import Asset button highlighted in the toolbar.](/images/com.apple.arkit/spatial-accessory-import-asset@2x.png)
 
 1. Control-click the imported file and choose Add to Scene.
 
-![The Reality Composer Pro context menu with Add to Scene highlighted, and the imported flashlight model shown in the preview.](https://docs-assets.developer.apple.com/published/5ba3e6b6dcba58758c4c94e96ab5214e/spatial-accessory-add-to-scene%402x.png)
+![The Reality Composer Pro context menu with Add to Scene highlighted, and the imported flashlight model shown in the preview.](/images/com.apple.arkit/spatial-accessory-add-to-scene@2x.png)
 
 Map each LED as a single USD primitive, a basic geometric shape (such as a sphere, cube, or cylinder) that other entities can be built from in the USD file format. To add an LED point, click the Add button (+) at the bottom of the Scene navigator on the left and choose Add Child Entity > Geometry > Sphere from the menu.
 
-![Reality Composer Pro showing the Add Child Entity menu with a sphere being added to the spatial accessory model.](https://docs-assets.developer.apple.com/published/6e911b26a2da0b1b279ff787d9391029/spatial-accessory-add-led%402x.png)
+![Reality Composer Pro showing the Add Child Entity menu with a sphere being added to the spatial accessory model.](/images/com.apple.arkit/spatial-accessory-add-led@2x.png)
 
 Rename the added primitive using the naming scheme `ACCESSORY_LED_01`, `ACCESSORY_LED_02`, and so on, numbering each LED you add. To rename it, click the name of the entity in the hierarchy view, press Return, change the name to the proper scheme, then press Return again to save.
 
-![Reality Composer Pro showing a sphere renamed to ACCESSORY_LED_00 with its Transform Component visible in the inspector.](https://docs-assets.developer.apple.com/published/cc25b969dce1f892d712c425d5f5a58d/spatial-accessory-rename-led%402x.png)
+![Reality Composer Pro showing a sphere renamed to ACCESSORY_LED_00 with its Transform Component visible in the inspector.](/images/com.apple.arkit/spatial-accessory-rename-led@2x.png)
 
 Adjust the size of the LED and use the Transform section to the right of the viewport to specify the position and orientation for the LED of the object:
 
@@ -93,7 +93,7 @@ Adjust the size of the LED and use the Transform section to the right of the vie
 
 > **Note**: For specifications on LED sizing, see the [`Accessory Design Guidelines`](https://developer.apple.comhttps://developer.apple.com/accessories/Accessory-Design-Guidelines.pdf).
 
-![Reality Composer Pro showing the Transform Component with position, rotation, and scale values for an LED, and the Radius field for sizing.](https://docs-assets.developer.apple.com/published/3247ca488cc38922693824078dfb6bb9/spatial-accessory-transform-led%402x.png)
+![Reality Composer Pro showing the Transform Component with position, rotation, and scale values for an LED, and the Radius field for sizing.](/images/com.apple.arkit/spatial-accessory-transform-led@2x.png)
 
 ##### Define the Material of the Led
 
@@ -120,7 +120,7 @@ In addition to the LED constellation, add the IMU transform to your model. The I
 
 To add the IMU transform, create an empty child entity, rename it to `ACCESSORY_IMU`, then use the Transform section to set its position and orientation to match the IMU placement in your physical spatial accessory, using your CAD design and IMU datasheet as reference. You can set or change the IMU pose later using the `update-object` command.
 
-![Reality Composer Pro showing the ACCESSORY_IMU empty entity added to the spatial accessory model with its Transform Component visible.](https://docs-assets.developer.apple.com/published/037d967587b3ba73af86b8bcf477227d/spatial-accessory-add-imu%402x.png)
+![Reality Composer Pro showing the ACCESSORY_IMU empty entity added to the spatial accessory model with its Transform Component visible.](/images/com.apple.arkit/spatial-accessory-add-imu@2x.png)
 
 LEDs allow you to mark each section of the spatial accessory so visionOS accurately tracks each part. Because the spatial accessory moves dynamically, place LEDs in strategic spots for the most accurate tracking.
 
@@ -215,11 +215,11 @@ For accessory tracking to work at runtime:
 
 After generating the reference accessory file, set up accessory tracking in your app using ARKit. For game controller-specific uses, be sure to track button inputs.
 
-For a complete walkthrough of building an app that uses your reference accessory file with ARKit, see [`Working with generic spatial accessories`](https://developer.apple.com/documentation/visionOS/working-with-generic-spatial-accessories). For game controller integration, see [`Discovering and tracking spatial game controllers and styli`](https://developer.apple.com/documentation/GameController/discovering-and-tracking-spatial-game-controllers-and-styli).
+For a complete walkthrough of building an app that uses your reference accessory file with ARKit, see [`Working with generic spatial accessories`](https://developer.apple.com/documentation/visionos/working-with-generic-spatial-accessories). For game controller integration, see [`Discovering and tracking spatial game controllers and styli`](https://developer.apple.com/documentation/gamecontroller/discovering-and-tracking-spatial-game-controllers-and-styli).
 
 ## See Also
 
-- [Working with generic spatial accessories](../visionOS/working-with-generic-spatial-accessories.md)
+- [Working with generic spatial accessories](../visionos/working-with-generic-spatial-accessories.md)
   Let people place digital replicas of a generic spatial accessory by tracking the accessory with ARKit.
 - [class AccessoryTrackingProvider](accessorytrackingprovider.md)
   Provides the real time position of accessories in the user’s environment.

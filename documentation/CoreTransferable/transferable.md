@@ -60,9 +60,9 @@ extension UTType {
 }
 ```
 
-> ❗ **Important**: If your app declares custom uniform type identifiers, include corresponding entries in the app’s `Info.plist`. For more information, see [`Defining file and data types for your app`](https://developer.apple.com/documentation/UniformTypeIdentifiers/defining-file-and-data-types-for-your-app).
+> ❗ **Important**: If your app declares custom uniform type identifiers, include corresponding entries in the app’s `Info.plist`. For more information, see [`Defining file and data types for your app`](https://developer.apple.com/documentation/uniformtypeidentifiers/defining-file-and-data-types-for-your-app).
 
-If one of your existing types conforms to [`Codable`](https://developer.apple.com/documentation/Swift/Codable), `Transferable` automatically handles conversion to and from `Data`. The following declares a simple `Note` structure that’s `Codable` and an extension to make it `Transferable`:
+If one of your existing types conforms to [`Codable`](https://developer.apple.com/documentation/swift/codable), `Transferable` automatically handles conversion to and from `Data`. The following declares a simple `Note` structure that’s `Codable` and an extension to make it `Transferable`:
 
 ```swift
 struct Note: Codable {
@@ -125,8 +125,8 @@ The order of the representations in the transfer representation matters; place t
 ## Relationships
 
 ### Inherits From
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

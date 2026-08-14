@@ -22,7 +22,7 @@ let kSecAttrType: CFString
 
 #### Discussion
 
-The corresponding value is of type [`CFNumber`](https://developer.apple.com/documentation/CoreFoundation/CFNumber) and represents the item’s type. This number is the unsigned integer representation of a four-character code (for example, ‘aTyp’).
+The corresponding value is of type [`CFNumber`](https://developer.apple.com/documentation/corefoundation/cfnumber) and represents the item’s type. This number is the unsigned integer representation of a four-character code (for example, ‘aTyp’).
 
 
 ---

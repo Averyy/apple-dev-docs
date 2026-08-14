@@ -28,10 +28,10 @@ The collator object is allocated in the current heap. This function can move mem
 
 ## Parameters
 
-- `locale`: A valid   representing a specific locale, or pass   to request the default system locale. You can supply the value   in the   parameter of the Locales Utilities functions   and   to obtain the locales available for collation on the current system. 
-- `opVariant`: A   value identifying a collation variant within the locale specified in the   parameter. You can also pass 0 to request the default collation variant for any locale. To obtain the varieties of locale-specific collation that are currently available, you can supply the value   in the   parameter of the Locales Utilities functions   and  . 
-- `options`: A   value specifying any collation options that you want to use for the string comparison. 
-- `collatorRef`: A pointer to a value of type  . On return, the   value contains a valid reference to a new collator object. 
+- `locale`: A valid `LocaleRef` representing a specific locale, or pass `NULL` to request the default system locale. You can supply the value `kUnicodeCollationClass` in the `opClass` parameter of the Locales Utilities functions `LocaleOperationCountLocales` and `LocaleOperationGetLocales` to obtain the locales available for collation on the current system. 
+- `opVariant`: A `LocaleOperationVariant` value identifying a collation variant within the locale specified in the `locale` parameter. You can also pass 0 to request the default collation variant for any locale. To obtain the varieties of locale-specific collation that are currently available, you can supply the value `kUnicodeCollationClass` in the `opClass` parameter of the Locales Utilities functions `LocaleOperationCountLocales` and `LocaleOperationGetLocales`. 
+- `options`: A `UCCollateOptions` value specifying any collation options that you want to use for the string comparison. 
+- `collatorRef`: A pointer to a value of type `CollatorRef`. On return, the `CollatorRef` value contains a valid reference to a new collator object. 
 
 ## See Also
 

@@ -10,8 +10,8 @@ When you build 3D experiences with RealityKit, you often animate changes to an e
 
 RealityKit offers two closure-based approaches to implicit animation:
 
-- **[`animate(_:body:completion:)`](entity/animate(_:body:completion:).md)**: A type method you call directly on [`Entity`](entity.md). You pass in an [`Animation`](https://developer.apple.com/documentation/SwiftUI/Animation), and RealityKit animates any property changes you make inside the `body` closure. Use this approach when your animation doesn’t depend on SwiftUI state.
-- **[`animate(body:completion:)`](realityviewcontent/animate(body:completion:).md)**: An instance method on the `content` parameter inside a [`RealityView`](realityview.md) update closure. This approach picks up the animation from the current SwiftUI transaction. You control the animation by binding it to the [`State`](https://developer.apple.com/documentation/SwiftUI/State) variable that triggers the update.
+- **[`animate(_:body:completion:)`](entity/animate(_:body:completion:).md)**: A type method you call directly on [`Entity`](entity.md). You pass in an [`Animation`](https://developer.apple.com/documentation/swiftui/animation), and RealityKit animates any property changes you make inside the `body` closure. Use this approach when your animation doesn’t depend on SwiftUI state.
+- **[`animate(body:completion:)`](realityviewcontent/animate(body:completion:).md)**: An instance method on the `content` parameter inside a [`RealityView`](realityview.md) update closure. This approach picks up the animation from the current SwiftUI transaction. You control the animation by binding it to the [`State`](https://developer.apple.com/documentation/swiftui/state) variable that triggers the update.
 
 Both approaches can animate properties for the following component types:
 
@@ -26,7 +26,7 @@ Both approaches can animate properties for the following component types:
 
 #### Animate Entities Without Swiftui State
 
-Use [`animate(_:body:completion:)`](entity/animate(_:body:completion:).md) to animate entity properties without any SwiftUI state binding. Pass an [`Animation`](https://developer.apple.com/documentation/SwiftUI/Animation) value and a closure that sets the properties you want to change. RealityKit interpolates each property from its current value to the new one using the animation you specify. Often, you can get the animation you want by using one of the static type classes on [`Animation`](https://developer.apple.com/documentation/SwiftUI/Animation), like [`linear`](https://developer.apple.com/documentation/SwiftUI/Animation/linear) or [`easeOut`](https://developer.apple.com/documentation/SwiftUI/Animation/easeOut), rather than manually building a custom [`Animation`](https://developer.apple.com/documentation/SwiftUI/Animation).
+Use [`animate(_:body:completion:)`](entity/animate(_:body:completion:).md) to animate entity properties without any SwiftUI state binding. Pass an [`Animation`](https://developer.apple.com/documentation/swiftui/animation) value and a closure that sets the properties you want to change. RealityKit interpolates each property from its current value to the new one using the animation you specify. Often, you can get the animation you want by using one of the static type classes on [`Animation`](https://developer.apple.com/documentation/swiftui/animation), like [`linear`](https://developer.apple.com/documentation/swiftui/animation/linear) or [`easeOut`](https://developer.apple.com/documentation/swiftui/animation/easeout), rather than manually building a custom [`Animation`](https://developer.apple.com/documentation/swiftui/animation).
 
 The following example moves an entity to a new position over one second using a `linear` animation to give a consistent speed throughout:
 
@@ -40,9 +40,9 @@ The [`animate(_:body:completion:)`](entity/animate(_:body:completion:).md) metho
 
 #### Animate Entities in a Realityview Update Closure
 
-Use [`animate(body:completion:)`](realityviewcontent/animate(body:completion:).md) inside a [`RealityView`](realityview.md) update closure to animate entity changes in response to SwiftUI state changes. Because this method derives its animation from the current SwiftUI transaction, attach an animation to the [`State`](https://developer.apple.com/documentation/SwiftUI/State) variable that triggers the update.
+Use [`animate(body:completion:)`](realityviewcontent/animate(body:completion:).md) inside a [`RealityView`](realityview.md) update closure to animate entity changes in response to SwiftUI state changes. Because this method derives its animation from the current SwiftUI transaction, attach an animation to the [`State`](https://developer.apple.com/documentation/swiftui/state) variable that triggers the update.
 
-Bind the animation to your state variable using the [`animation(_:)`](https://developer.apple.com/documentation/SwiftUI/Binding/animation(_:)) modifier on a [`Binding`](https://developer.apple.com/documentation/SwiftUI/Binding).
+Bind the animation to your state variable using the [`animation(_:)`](https://developer.apple.com/documentation/swiftui/binding/animation(_:)) modifier on a [`Binding`](https://developer.apple.com/documentation/swiftui/binding).
 
 ```swift
 @State private var isScaled = false

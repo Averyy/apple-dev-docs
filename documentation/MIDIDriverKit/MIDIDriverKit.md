@@ -10,14 +10,14 @@ Develop drivers for MIDI devices.
 
 #### Overview
 
-Use the MIDIDriverKit framework to implement a MIDI driver extension that communicates with Core MIDI. The framework handles all user-client communication between your driver extension and the Core MIDI server so you don’t need to implement a MIDI driver plug-in. You can also leverage other transport-based driver extension frameworks, such as [`USBDriverKit`](https://developer.apple.com/documentation/USBDriverKit), in your implementation.
+Use the MIDIDriverKit framework to implement a MIDI driver extension that communicates with Core MIDI. The framework handles all user-client communication between your driver extension and the Core MIDI server so you don’t need to implement a MIDI driver plug-in. You can also leverage other transport-based driver extension frameworks, such as [`USBDriverKit`](https://developer.apple.com/documentation/usbdriverkit), in your implementation.
 
 ## Topics
 
 ### Essentials
 - [Creating a MIDI device driver](creating-a-midi-device-driver.md)
   Implement a configurable virtual MIDI driver as a driver extension that runs in user space in macOS and iPadOS.
-- [com.apple.developer.driverkit.family.midi](../BundleResources/Entitlements/com.apple.developer.driverkit.family.midi.md)
+- [com.apple.developer.driverkit.family.midi](../bundleresources/entitlements/com.apple.developer.driverkit.family.midi.md)
   A Boolean value that indicates whether to match the driver against devices that support MIDI.
 ### Classes
 - [IOUserMIDIDestination](iousermididestination.md)

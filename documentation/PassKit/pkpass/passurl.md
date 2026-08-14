@@ -21,7 +21,7 @@ var passURL: URL? { get }
 
 #### Discussion
 
-Use the [`openURL(_:)`](https://developer.apple.com/documentation/UIKit/UIApplication/openURL(_:)) method to open the pass in the Wallet app.
+Use the [`openURL(_:)`](https://developer.apple.com/documentation/uikit/uiapplication/openurl(_:)) method to open the pass in the Wallet app.
 
 
 ---

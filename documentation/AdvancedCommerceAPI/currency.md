@@ -25,7 +25,7 @@ The currency property contains an ISO 4217 alpha-3 string that represents the cu
 
 To get the current storefront’s currency in your app:
 
-- In iOS 15 through iOS 17, check the `Product.priceFormatStyle.currencyCode` of the generic product ID that represents your Advanced Commerce product. For more information, see [`priceFormatStyle`](https://developer.apple.com/documentation/StoreKit/Product/priceFormatStyle).
+- In iOS 15 through iOS 17, check the `Product.priceFormatStyle.currencyCode` of the generic product ID that represents your Advanced Commerce product. For more information, see [`priceFormatStyle`](https://developer.apple.com/documentation/storekit/product/priceformatstyle).
 - In iOS 17 and later, get the currency value using `Storefront.current.currency`.
 
 For a list of regions and currencies that the App Store supports, see [`Financial reports regions and currencies`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/reference/financial-report-regions-and-currencies).

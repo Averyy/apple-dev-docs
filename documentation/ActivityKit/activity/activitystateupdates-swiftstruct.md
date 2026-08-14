@@ -28,7 +28,7 @@ struct ActivityStateUpdates
 ## Relationships
 
 ### Conforms To
-- [AsyncSequence](../Swift/AsyncSequence.md)
+- [AsyncSequence](../swift/asyncsequence.md)
 
 ## See Also
 

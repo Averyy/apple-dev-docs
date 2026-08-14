@@ -26,7 +26,7 @@ This transformation is reversible.
 
 For example, the string “p̣hās̄ʹā thịy” transliterates to “ภาษาไทย”.
 
-This is equivalent to [`kCFStringTransformLatinThai`](https://developer.apple.com/documentation/CoreFoundation/kCFStringTransformLatinThai).
+This is equivalent to [`kCFStringTransformLatinThai`](https://developer.apple.com/documentation/corefoundation/kcfstringtransformlatinthai).
 
 ## See Also
 

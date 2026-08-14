@@ -31,7 +31,7 @@ The two arrays must have an identical number of elements. The keyframes in the n
 ## Parameters
 
 - `values`: An array of value objects that define the keyframe values for the sequence.
-- `times`: An array of [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) objects containing floating-point values that specify the time values for the keyframes.
+- `times`: An array of [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) objects containing floating-point values that specify the time values for the keyframes.
 
 ## See Also
 

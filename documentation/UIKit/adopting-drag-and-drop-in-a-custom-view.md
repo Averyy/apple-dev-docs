@@ -64,7 +64,7 @@ func dragInteraction(_ interaction: UIDragInteraction, itemsForBeginning session
 }
 ```
 
-The system calls this delegate method in response to the user gesture that initiates dragging. In your implementation, return an array of one or more drag items, each with one item provider. In each item provider, specify one or more data representations of the model object to be dragged. The model object must conform to the [`NSItemProviderWriting`](https://developer.apple.com/documentation/Foundation/NSItemProviderWriting) protocol.
+The system calls this delegate method in response to the user gesture that initiates dragging. In your implementation, return an array of one or more drag items, each with one item provider. In each item provider, specify one or more data representations of the model object to be dragged. The model object must conform to the [`NSItemProviderWriting`](https://developer.apple.com/documentation/foundation/nsitemproviderwriting) protocol.
 
 For more about providing data for dragging, see [`Making a view into a drag source`](making-a-view-into-a-drag-source.md).
 

@@ -35,18 +35,18 @@ class GKBasePlayer
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Inherited By
 - [GKCloudPlayer](gkcloudplayer.md)
 - [GKPlayer](gkplayer.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCopying](../Foundation/NSCopying.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCopying](../foundation/nscopying.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 
@@ -62,9 +62,9 @@ class GKBasePlayer
   A remote player who the local player running your game can invite and communicate with through Game Center.
 - [protocol GKLocalPlayerListener](gklocalplayerlistener.md)
   A protocol that handles events for Game Center players.
-- [static let GKPlayerAuthenticationDidChangeNotificationName: NSNotification.Name](../Foundation/NSNotification/Name-swift.struct/GKPlayerAuthenticationDidChangeNotificationName.md)
+- [static let GKPlayerAuthenticationDidChangeNotificationName: NSNotification.Name](../foundation/nsnotification/name-swift.struct/gkplayerauthenticationdidchangenotificationname.md)
   A notification that posts after GameKit authenticates the local player.
-- [static let GKPlayerDidChangeNotificationName: NSNotification.Name](../Foundation/NSNotification/Name-swift.struct/GKPlayerDidChangeNotificationName.md)
+- [static let GKPlayerDidChangeNotificationName: NSNotification.Name](../foundation/nsnotification/name-swift.struct/gkplayerdidchangenotificationname.md)
   A notification that posts when a player object’s data changes.
 
 

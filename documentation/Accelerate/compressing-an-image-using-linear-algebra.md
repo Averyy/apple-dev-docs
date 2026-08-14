@@ -12,7 +12,7 @@ Reduce the storage size of an image using singular value decomposition (SVD).
 
 This sample code project decomposes an image into three factors using [`singular value decomposition`](https://developer.apple.comhttps://mathworld.wolfram.com/SingularValueDecomposition.html) (SVD). The sample compresses an image by computing the products of the factors submatrices. The image below shows two photographs. The first is the original image, and the second is the same image after the sample applies 10:1 compression:
 
-![Two photographs. The first contains a grayscale image of some flowers. The second shows the same image after compression and shows some degradation and compression artifacts.](https://docs-assets.developer.apple.com/published/ac1163eb694e38c9ccbd27ae0f7b1c6b/accelerate-denoising.png)
+![Two photographs. The first contains a grayscale image of some flowers. The second shows the same image after compression and shows some degradation and compression artifacts.](/images/com.apple.accelerate/accelerate-denoising.png)
 
 Any *m* x *n* matrix, *A*, has an SVD factorization that decomposes it into three factors:
 
@@ -24,7 +24,7 @@ The sample uses the Linear Algebra Package (LAPACK) function `sgesvdx_` to compu
 
 The figure below shows the SVD of a 5 x 3 matrix:
 
-![A diagram showing the singular value decomposition of five-times-three matrix A into three-times-three matrix U multiplied by five-times-three diagonal matrix sigma multiplied by five-times-five transposed matrix V.](https://docs-assets.developer.apple.com/published/f2a3240dea2deb68a5dca93d2d47fbbf/accelerate-figure-1.png)
+![A diagram showing the singular value decomposition of five-times-three matrix A into three-times-three matrix U multiplied by five-times-three diagonal matrix sigma multiplied by five-times-five transposed matrix V.](/images/com.apple.accelerate/accelerate-figure-1.png)
 
 When matrix *A* contains image information, the magnitude of the singular values correlate to the visual significance of features in the image.
 
@@ -32,7 +32,7 @@ The sample reduces the storage size of the original image by returning the produ
 
 For example, if the diagonal elements of *Σ*  are `[2000, 1000, 24]` and you define `k` as `2`, the app keeps `[2000, 1000]` and discards `24`. The following figure shows the matrix multiply function for this example, where the first two singular values contain significant values:
 
-![A diagram showing the singular value decomposition of five-times-three matrix A into three-times-two matrix U multiplied by two-times-two diagonal matrix sigma multiplied by two-times-five transposed matrix V.](https://docs-assets.developer.apple.com/published/ab74c9ce63bde8cd4277e2f56d50acdd/accelerate-figure-2.png)
+![A diagram showing the singular value decomposition of five-times-three matrix A into three-times-two matrix U multiplied by two-times-two diagonal matrix sigma multiplied by two-times-five transposed matrix V.](/images/com.apple.accelerate/accelerate-figure-2.png)
 
 ##### Create a Matrix From the Source Image
 
@@ -226,7 +226,7 @@ defer {
 
 ##### Use Lapack to Compute the Svd
 
-To avoid multiple nested calls to [`withUnsafePointer(to:_:)`](https://developer.apple.com/documentation/Swift/withUnsafePointer(to:_:)-35wrn), the sample declares variables that shadow some of the matrix properties to pass to the SVD routine as [`UnsafePointer`](https://developer.apple.com/documentation/Swift/UnsafePointer) structures.
+To avoid multiple nested calls to [`withUnsafePointer(to:_:)`](https://developer.apple.com/documentation/swift/withunsafepointer(to:_:)-35wrn), the sample declares variables that shadow some of the matrix properties to pass to the SVD routine as [`UnsafePointer`](https://developer.apple.com/documentation/swift/unsafepointer) structures.
 
 ```swift
 var m = __LAPACK_int(a.m)
@@ -352,7 +352,7 @@ Matrix.multiply(a: u_sigma,
 
 ##### Create a Core Graphics Image From the Product of the Factors
 
-The `cgImage` computed property returns a [`CGImage`](https://developer.apple.com/documentation/CoreGraphics/CGImage) instance from a matrix’s data. The computed property creates a temporary vImage buffer that shares its data with the matrix and uses the same planar 32-bit [`vImage_CGImageFormat`](vimage_cgimageformat.md) that the `init(cgImage:)` initializer uses to convert a Core Graphics image to a matrix.
+The `cgImage` computed property returns a [`CGImage`](https://developer.apple.com/documentation/coregraphics/cgimage) instance from a matrix’s data. The computed property creates a temporary vImage buffer that shares its data with the matrix and uses the same planar 32-bit [`vImage_CGImageFormat`](vimage_cgimageformat.md) that the `init(cgImage:)` initializer uses to convert a Core Graphics image to a matrix.
 
 ```swift
 /// Returns a 32-bit per pixel, grayscale `CGImage`instance of the matrix's data.

@@ -23,7 +23,7 @@ func addCurve(to endPoint: CGPoint, controlPoint1: CGPoint, controlPoint2: CGPoi
 
 This method appends a cubic Bézier curve from the current point to the end point specified by the `endPoint` parameter. The two control points define the curvature of the segment. The following image shows an approximation of a cubic Bézier curve given a set of initial points. The exact curvature of the segment involves a complex mathematical relationship between all of the points and is well documented online.
 
-![None](https://docs-assets.developer.apple.com/published/615a19473ab60e5ab20b0c06477bafd3/media-1965856.jpg)
+![None](/images/com.apple.uikit/media-1965856.jpg)
 
 You must set the path’s current point (using the [`move(to:)`](uibezierpath/move(to:).md) method or through the previous creation of a line or curve segment) before you call this method. If the path is empty, this method does nothing. After adding the curve segment, this method updates the current point to the value in `point`.
 

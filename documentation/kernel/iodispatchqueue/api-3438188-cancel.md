@@ -17,7 +17,7 @@ kern_return_t Cancel(IODispatchQueueCancelHandler handler);
 
 #### Return_value
 
-[`kIOReturnSuccess`](https://developer.apple.com/documentation/driverkit/kioreturnsuccess) on success, or another value if an error occurs. For a list of error codes, see `Error Codes`. 
+[`kIOReturnSuccess`](https://developer.apple.com/documentation/driverkit/kioreturnsuccess) on success, or another value if an error occurs. For a list of error codes, see [`Error Codes`](https://developer.apple.com/documentation/driverkit/error-codes). 
 
 #### Discussion
 
@@ -30,7 +30,7 @@ This method asynchronously tells the dispatch queue to stop the execution of que
 ## See Also
 
 - [IODispatchQueueCancelHandler](../driverkit/iodispatchqueuecancelhandler.md)
-  A block to execute when a canceled dispatch queue stops executing tasks.
+  A block to execute when a canceled dispatch queue stops executing tasks. 
 
 
 ---

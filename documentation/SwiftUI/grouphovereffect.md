@@ -21,9 +21,9 @@ Use the [`hoverEffectGroup(_:)`](customhovereffect/hovereffectgroup(_:)-swift.ty
 ## Relationships
 
 ### Conforms To
-- [Copyable](../Swift/Copyable.md)
+- [Copyable](../swift/copyable.md)
 - [CustomHoverEffect](customhovereffect.md)
-- [Escapable](../Swift/Escapable.md)
+- [Escapable](../swift/escapable.md)
 
 ## See Also
 

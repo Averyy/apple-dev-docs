@@ -14,15 +14,15 @@ Locate people and the stance of their bodies by analyzing an image with a PoseNe
 
 This sample project provides an illustrative example of using a third-party [`Core ML`](CoreML.md) model, PoseNet, to detect human body poses from frames captured using a camera. PoseNet models detect 17 different body parts or joints: eyes, ears, nose, shoulders, hips, elbows, knees, wrists, and ankles. Collectively these joints form a pose.
 
-![Flow diagram illustrating the sequence of activities for estimating a pose. The flow begins on the left with an iPhone’s camera, proceeding to a PoseNet model, followed by a generic human figure with the 17 labeled joints, and ends with the same human figure but with the joints connected in a wireframe.](https://docs-assets.developer.apple.com/published/1ff62d703f30b89a46aec980da6524d9/PoseNetPipeline%402x.png)
+![Flow diagram illustrating the sequence of activities for estimating a pose. The flow begins on the left with an iPhone’s camera, proceeding to a PoseNet model, followed by a generic human figure with the 17 labeled joints, and ends with the same human figure but with the joints connected in a wireframe.](/images/com.apple.coreml/PoseNetPipeline@2x.png)
 
 The sample finds the locations of the 17 joints for each person in the image and draws a wireframe pose on top of them.
 
-> **Note**: Starting in iOS 14 and macOS 11, [`Vision`](https://developer.apple.com/documentation/Vision) adds the ability to detect human body poses. For details, see [`Detecting Human Body Poses in Images`](https://developer.apple.com/documentation/Vision/detecting-human-body-poses-in-images).
+> **Note**: Starting in iOS 14 and macOS 11, [`Vision`](https://developer.apple.com/documentation/vision) adds the ability to detect human body poses. For details, see [`Detecting Human Body Poses in Images`](https://developer.apple.com/documentation/vision/detecting-human-body-poses-in-images).
 
 ##### Configure the Capture Session
 
-The sample starts by getting an image from the device’s built-in camera using an [`AVCaptureSession`](https://developer.apple.com/documentation/AVFoundation/AVCaptureSession) (see [`Setting up a capture session`](https://developer.apple.com/documentation/AVFoundation/setting-up-a-capture-session)).
+The sample starts by getting an image from the device’s built-in camera using an [`AVCaptureSession`](https://developer.apple.com/documentation/avfoundation/avcapturesession) (see [`Setting up a capture session`](https://developer.apple.com/documentation/avfoundation/setting-up-a-capture-session)).
 
 ```swift
 if captureSession.isRunning {
@@ -73,7 +73,7 @@ let input = PoseNetInput(image: image, size: self.modelInputSize)
 
 ##### Pass the Input to the Posenet Model
 
-The sample app then proceeds to pass the input to the PoseNet’s [`prediction(from:)`](MLModel/prediction(from:)-9y2aa.md) function to obtain its outputs, which the app uses to detect poses.
+The sample app then proceeds to pass the input to the PoseNet’s [`prediction(from:)`](mlmodel/prediction(from:)-9y2aa.md) function to obtain its outputs, which the app uses to detect poses.
 
 ```swift
 guard let prediction = try? self.poseNetMLModel.prediction(from: input) else {
@@ -167,7 +167,7 @@ return detectedPoses
 
 For each detected pose, the sample app draws a wireframe over the input image, connecting the lines between the joints and then drawing circles for the joints themselves.
 
-![Illustration of a wireframe of connected joints drawn over a generic human figure performing a yoga tree pose.](https://docs-assets.developer.apple.com/published/91060e4ca16a558f9c6bac9f3a2af3e5/PoseNetVisualization%402x.png)
+![Illustration of a wireframe of connected joints drawn over a generic human figure performing a yoga tree pose.](/images/com.apple.coreml/PoseNetVisualization@2x.png)
 
 ```swift
 let dstImageSize = CGSize(width: frame.width, height: frame.height)

@@ -8,7 +8,7 @@ Define and apply custom, default, and inline text styles, or use HTML tags or Ma
 
 Text styles determine the look of text in your article. For example, text styles let you create drop caps and shadowing.
 
-![Screenshot of an article with a drop cap.](https://docs-assets.developer.apple.com/published/102b076a3c5b604470c3e93a4e533e39/media-4085702%402x.png)
+![Screenshot of an article with a drop cap.](/images/com.apple.applenews/media-4085702@2x.png)
 
 In Apple News Format, you can define:
 

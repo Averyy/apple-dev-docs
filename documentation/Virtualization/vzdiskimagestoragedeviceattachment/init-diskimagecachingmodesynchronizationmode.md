@@ -16,7 +16,7 @@ convenience init(diskImage: DiskImage, cachingMode: VZDiskImageCachingMode = .au
 
 #### Discussion
 
-This initializer enables the use of [`DiskImage`](https://developer.apple.com/documentation/DiskImageKit/DiskImage) objects created with the [`DiskImageKit`](https://developer.apple.com/documentation/DiskImageKit) framework, including stacked images with cache and overlay layers.
+This initializer enables the use of [`DiskImage`](https://developer.apple.com/documentation/diskimagekit/diskimage) objects created with the [`DiskImageKit`](https://developer.apple.com/documentation/diskimagekit) framework, including stacked images with cache and overlay layers.
 
 The following example shows how to initialize a storage attachment object using a disk image.
 
@@ -31,7 +31,7 @@ The following example shows how to initialize a storage attachment object using 
 
 ## Parameters
 
-- `diskImage`: A diskImage object created using the [`DiskImageKit`](https://developer.apple.com/documentation/DiskImageKit) framework. It supports both single and stacked disk images.
+- `diskImage`: A diskImage object created using the [`DiskImageKit`](https://developer.apple.com/documentation/diskimagekit) framework. It supports both single and stacked disk images.
 - `cachingMode`: The host-level [`VZDiskImageCachingMode`](vzdiskimagecachingmode.md) policy for the disk image. This is independent of cache layers in the disk image stack.
 - `synchronizationMode`: How the disk image synchronizes with the underlying storage when the guest operating system flushes data, described by one of the available [`VZDiskImageSynchronizationMode`](vzdiskimagesynchronizationmode.md) modes.
 

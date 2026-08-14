@@ -24,9 +24,9 @@ Thread safe starting in OS X v10.2.
 
 ## Parameters
 
-- `theAEDescList`: A pointer to the descriptor list containing the descriptor. See  .
-- `index`: A one-based positive integer indicating the position of the descriptor to get the data size for.   returns an error if you pass zero, a negative number, or a value that is out of range.
-- `typeCode`: A pointer to a descriptor type. On return, specifies the descriptor type of the descriptor. For a list of AppleScript’s predefined descriptor types, see  . See  .
+- `theAEDescList`: A pointer to the descriptor list containing the descriptor. See [`AEDescList`](aedesclist.md).
+- `index`: A one-based positive integer indicating the position of the descriptor to get the data size for. `AESizeOfNthItem` returns an error if you pass zero, a negative number, or a value that is out of range.
+- `typeCode`: A pointer to a descriptor type. On return, specifies the descriptor type of the descriptor. For a list of AppleScript’s predefined descriptor types, see [`Descriptor Type Constants`](apple_events/1542788-descriptor_type_constants.md). See [`DescType`](desctype.md).
 - `dataSize`: A pointer to a size variable. On return, the length (in bytes) of the data in the descriptor.
 
 ## See Also

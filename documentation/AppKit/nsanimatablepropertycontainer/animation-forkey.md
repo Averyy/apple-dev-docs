@@ -17,13 +17,13 @@ func animation(forKey key: NSAnimatablePropertyKey) -> Any?
 
 #### Return Value
 
-The animation to perform. A subclass of [`CAAnimation`](https://developer.apple.com/documentation/QuartzCore/CAAnimation).
+The animation to perform. A subclass of [`CAAnimation`](https://developer.apple.com/documentation/quartzcore/caanimation).
 
 #### Discussion
 
 When the action specified by `key` is triggered for an object, this method is consulted to find the animation, if any, that should be performed in response.
 
-Like its Core Animation [`CALayer`](https://developer.apple.com/documentation/QuartzCore/CALayer) counterpart, [`action(forKey:)`](https://developer.apple.com/documentation/QuartzCore/CALayer/action(forKey:)), this method is a funnel point that defines the order in which the search for an animation proceeds.It first checks the receiver’s Getting the Animator Proxy dictionary for a value matching `key`, then falls back to  [`animator()`](nsanimatablepropertycontainer/animator().md) for the receiver’s class.
+Like its Core Animation [`CALayer`](https://developer.apple.com/documentation/quartzcore/calayer) counterpart, [`action(forKey:)`](https://developer.apple.com/documentation/quartzcore/calayer/action(forkey:)), this method is a funnel point that defines the order in which the search for an animation proceeds.It first checks the receiver’s Getting the Animator Proxy dictionary for a value matching `key`, then falls back to  [`animator()`](nsanimatablepropertycontainer/animator().md) for the receiver’s class.
 
 Subclasses should not typically need to override this method.
 

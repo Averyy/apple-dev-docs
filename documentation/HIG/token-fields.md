@@ -11,12 +11,12 @@ framework: HIG
 
 A token field is a type of text field that can convert text into *tokens* that are easy to select and manipulate.
 
-![A stylized representation of a text field containing a person's name formatted as a token. The image is tinted red to subtly reflect the red in the original six-color Apple logo.](https://docs-assets.developer.apple.com/published/92af7d62b46a81356b820e2f588dcb9f/components-token-field-intro~dark%402x.png)
+![A stylized representation of a text field containing a person's name formatted as a token. The image is tinted red to subtly reflect the red in the original six-color Apple logo.](/images/com.apple.HIG/components-token-field-intro~dark@2x.png)
 For example, Mail uses token fields for the address fields in the compose window. As people enter recipients, Mail converts the text that represents each recipient’s name into a token. People can select these recipient tokens and drag to reorder them or move them into a different field.
 You can configure a token field to present people with a list of suggestions as they enter text into the field. For example, Mail suggests recipients as people type in an address field. When people select a suggested recipient, Mail inserts the recipient into the field as a token.
-![A partial screenshot of a Mail compose window in which tokens represent some recipients.](https://docs-assets.developer.apple.com/published/c06c372d575e5885d7674a205abf1a24/token-fields-suggestion~dark%402x.png)
+![A partial screenshot of a Mail compose window in which tokens represent some recipients.](/images/com.apple.HIG/token-fields-suggestion~dark@2x.png)
 An individual token can also include a contextual menu that offers information about the token or editing options. For example, a recipient token in Mail includes a contextual menu with commands for editing the recipient name, marking the recipient as a VIP, and viewing the recipient’s contact card, among others.
-![A partial screenshot of a Mail compose window in which one recipient token reveals a menu of commands.](https://docs-assets.developer.apple.com/published/07e5daf563d43c268a09725ddeee4809/token-fields-contextual~dark%402x.png)
+![A partial screenshot of a Mail compose window in which one recipient token reveals a menu of commands.](/images/com.apple.HIG/token-fields-contextual~dark@2x.png)
 Tokens can also represent search terms in some situations; for guidance, see [Search fields](search-fields.md).
 
 ## Best practices
@@ -35,7 +35,7 @@ Tokens can also represent search terms in some situations; for guidance, see [Se
 [Context menus](context-menus.md)
 
 #### Developer documentation
-[NSTokenField](../AppKit/NSTokenField.md) — AppKit
+[NSTokenField](../appkit/nstokenfield.md) — AppKit
 
 
 

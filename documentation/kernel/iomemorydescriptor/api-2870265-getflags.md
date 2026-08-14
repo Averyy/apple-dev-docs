@@ -24,7 +24,7 @@ uint64_t getFlags(void);
   Accessor to get the length of the memory descriptor (over all its ranges).
 - [- getLength](iomemorydescriptor/1442036-getlength.md)
   Accessor to get the length of the memory descriptor (over all its ranges).
-- [- GetLength](../driverkit/iomemorydescriptor/getlength.md)
+- [- GetLength](iomemorydescriptor/3180642-getlength.md)
   Returns the length of the memory block represented by this object.
 - [- getDMAMapLength](iomemorydescriptor/3553361-getdmamaplength.md)
 - [- getMetaClass](iomemorydescriptor/1442096-getmetaclass.md)

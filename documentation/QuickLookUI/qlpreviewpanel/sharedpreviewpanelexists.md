@@ -16,7 +16,7 @@ class func sharedPreviewPanelExists() -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/Swift/true) if the shared Quick Look preview panel instance has been created, otherwise [`false`](https://developer.apple.com/documentation/Swift/false).
+[`true`](https://developer.apple.com/documentation/swift/true) if the shared Quick Look preview panel instance has been created, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
 
 ## See Also
 

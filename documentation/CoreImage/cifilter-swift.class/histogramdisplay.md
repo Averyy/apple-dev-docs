@@ -30,9 +30,9 @@ This method applies the histogram display filter to the result of the output fro
 The histogram display filter uses the following properties:
 
 - **`inputImage`**: An image with the type [`CIImage`](ciimage.md). Typically this is the output from the area histogram filter.
-- **`height`**: A `float` representing the height of the generated histogram image as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
-- **`lowLimit`**: A `float` representing the fraction of the left portion of the histogram image to make darker as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
-- **`hightLimit`**: A `float` representing the fraction of the right portion of the histogram to make lighter as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+- **`height`**: A `float` representing the height of the generated histogram image as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
+- **`lowLimit`**: A `float` representing the fraction of the left portion of the histogram image to make darker as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
+- **`hightLimit`**: A `float` representing the fraction of the right portion of the histogram to make lighter as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
 
 The following code creates a filter that results in a histogram diagram generated from the input image:
 
@@ -60,7 +60,7 @@ func histogramDisplay(inputImage: CIImage) -> CIImage {
 }
 ```
 
-![Two images side by side horizontally. The left image is a modern building with white concrete and tinted glass windows with a clear sky in the background. The right image is the result of applying the histogram display filter to the output of the area histogram filter. There are three overlaid charts representing the histograms for the red, green, and blue components.](https://docs-assets.developer.apple.com/published/24a44bbeb4a9e9acd5808409d2244916/media-4332168%402x.png)
+![Two images side by side horizontally. The left image is a modern building with white concrete and tinted glass windows with a clear sky in the background. The right image is the result of applying the histogram display filter to the output of the area histogram filter. There are three overlaid charts representing the histograms for the red, green, and blue components.](/images/com.apple.coreimage/media-4332168@2x.png)
 
 ## See Also
 

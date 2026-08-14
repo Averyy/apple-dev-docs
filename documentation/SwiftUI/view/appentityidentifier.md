@@ -45,7 +45,7 @@ struct FooView {
 
 To remove the association, set `appEntityIdentifier` to `nil`.
 
-For more information, refer to doc:providing-contextual-cues-to-Apple-Intelligence-and-Siri and [`App Intents`](https://developer.apple.com/documentation/AppIntents).
+For more information, refer to doc:providing-contextual-cues-to-Apple-Intelligence-and-Siri and [`App Intents`](https://developer.apple.com/documentation/appintents).
 
 ## Parameters
 

@@ -22,7 +22,7 @@ Asynchronously creates a 3D texture by generating it from images.
 
 #### Discussion
 
-RealityKit creates a [`MTLTextureType.type3D`](https://developer.apple.com/documentation/Metal/MTLTextureType/type3D) texture with `depth == slices.count` from an array of images.
+RealityKit creates a [`MTLTextureType.type3D`](https://developer.apple.com/documentation/metal/mtltexturetype/type3d) texture with `depth == slices.count` from an array of images.
 
 You can assign the resulting texture to a material you create in Reality Composer Pro that requires a 3D texture.
 

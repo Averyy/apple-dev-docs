@@ -36,25 +36,25 @@ protocol AMWorkflowControllerDelegate : NSObjectProtocol
 - [func workflowController(AMWorkflowController, didError: any Error)](amworkflowcontrollerdelegate/workflowcontroller(_:diderror:).md)
   Notifies the delegate when the workflow encounters an error.
 ### Deprecated
-- [func workflowController(AMWorkflowController, willRun: AMAction)](AMWorkflowControllerDelegate/workflowController(_:willRun:).md)
+- [func workflowController(AMWorkflowController, willRun: AMAction)](amworkflowcontrollerdelegate/workflowcontroller(_:willrun:).md)
   Notifies the delegate when the specified action is about to run.
-- [func workflowControllerWillRun(AMWorkflowController)](AMWorkflowControllerDelegate/workflowControllerWillRun(_:).md)
+- [func workflowControllerWillRun(AMWorkflowController)](amworkflowcontrollerdelegate/workflowcontrollerwillrun(_:).md)
   Notifies the delegate when the workflow controller object is about to run.
-- [func workflowController(AMWorkflowController, didRun: AMAction)](AMWorkflowControllerDelegate/workflowController(_:didRun:).md)
+- [func workflowController(AMWorkflowController, didRun: AMAction)](amworkflowcontrollerdelegate/workflowcontroller(_:didrun:).md)
   Notifies the delegate when the specified action finishes running.
-- [func workflowControllerDidRun(AMWorkflowController)](AMWorkflowControllerDelegate/workflowControllerDidRun(_:).md)
+- [func workflowControllerDidRun(AMWorkflowController)](amworkflowcontrollerdelegate/workflowcontrollerdidrun(_:).md)
   Notifies the delegate when the workflow controller object finishes running.
-- [func workflowControllerWillStop(AMWorkflowController)](AMWorkflowControllerDelegate/workflowControllerWillStop(_:).md)
+- [func workflowControllerWillStop(AMWorkflowController)](amworkflowcontrollerdelegate/workflowcontrollerwillstop(_:).md)
   Tells the delegate that the workflow controller object is about to stop.
-- [func workflowControllerDidStop(AMWorkflowController)](AMWorkflowControllerDelegate/workflowControllerDidStop(_:).md)
+- [func workflowControllerDidStop(AMWorkflowController)](amworkflowcontrollerdelegate/workflowcontrollerdidstop(_:).md)
   Tells the delegate that the workflow controller object has stopped.
-- [func workflowController(AMWorkflowController, didError: any Error)](AMWorkflowControllerDelegate/workflowController(_:didError:).md)
+- [func workflowController(AMWorkflowController, didError: any Error)](amworkflowcontrollerdelegate/workflowcontroller(_:diderror:).md)
   Notifies the delegate when the workflow encounters an error.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

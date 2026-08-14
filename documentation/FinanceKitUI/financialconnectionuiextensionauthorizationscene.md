@@ -29,10 +29,10 @@ Your scene will be provided a `FinancialConnectionExtensionAuthorizationRequest`
 ## Relationships
 
 ### Conforms To
-- [AppExtensionScene](../ExtensionKit/AppExtensionScene.md)
+- [AppExtensionScene](../extensionkit/appextensionscene.md)
 - [FinancialConnectionUIExtensionScene](financialconnectionuiextensionscene.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 
 ---

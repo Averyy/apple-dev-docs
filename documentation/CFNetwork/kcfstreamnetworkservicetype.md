@@ -3,7 +3,7 @@
 **Framework**: CFNetwork  
 **Kind**: var
 
-The type of service for the stream. Providing the service type allows the system to properly handle certain attributes of the stream, including routing and suspension behavior. Most streams do not need to set this property. See [`Stream Service Types`](https://developer.apple.com/documentation/CoreFoundation/stream-service-types) for a list of possible values.
+The type of service for the stream. Providing the service type allows the system to properly handle certain attributes of the stream, including routing and suspension behavior. Most streams do not need to set this property. See [`Stream Service Types`](https://developer.apple.com/documentation/corefoundation/stream-service-types) for a list of possible values.
 
 **Availability**:
 - iOS 4.0+
@@ -35,7 +35,7 @@ let kCFStreamNetworkServiceType: CFString
 - [let kCFStreamPropertyHTTPProxyPort: CFString](kcfstreampropertyhttpproxyport.md)
 - [let kCFStreamPropertyHTTPRequestBytesWrittenCount: CFString](kcfstreampropertyhttprequestbyteswrittencount.md)
 - [let kCFStreamPropertyHTTPResponseHeader: CFString](kcfstreampropertyhttpresponseheader.md)
-  HTTP Response Header property. When copied by [`CFReadStreamCopyProperty(_:_:)`](https://developer.apple.com/documentation/CoreFoundation/CFReadStreamCopyProperty(_:_:)), the header of an HTTP response message is returned.
+  HTTP Response Header property. When copied by [`CFReadStreamCopyProperty(_:_:)`](https://developer.apple.com/documentation/corefoundation/cfreadstreamcopyproperty(_:_:)), the header of an HTTP response message is returned.
 - [let kCFStreamPropertyHTTPSProxyHost: CFString](kcfstreampropertyhttpsproxyhost.md)
 - [let kCFStreamPropertyHTTPSProxyPort: CFString](kcfstreampropertyhttpsproxyport.md)
 - [let kCFStreamPropertyHTTPShouldAutoredirect: CFString](kcfstreampropertyhttpshouldautoredirect.md)

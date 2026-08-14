@@ -24,7 +24,7 @@ Diffable data sources use *snapshots* to provide data for collection views and t
 
 The data in a snapshot is made up of the sections and items you want to display, in the order that you determine. You configure what to display by adding, deleting, or moving the sections and items.
 
-> ❗ **Important**:  Each of your sections and items must have unique identifiers that conform to the [`Hashable`](https://developer.apple.com/documentation/Swift/Hashable) protocol. Use `struct` or `enum` Swift value types for your identifiers, including built-in types such as `Int`, `String`, or `UUID`. If you use a Swift `class` for your identifiers, your `class` must be a subclass of `NSObject`.
+> ❗ **Important**:  Each of your sections and items must have unique identifiers that conform to the [`Hashable`](https://developer.apple.com/documentation/swift/hashable) protocol. Use `struct` or `enum` Swift value types for your identifiers, including built-in types such as `Int`, `String`, or `UUID`. If you use a Swift `class` for your identifiers, your `class` must be a subclass of `NSObject`.
 
 To display data in a view using a snapshot:
 
@@ -56,7 +56,7 @@ For more information, see the diffable data source types:
 
 - [`UICollectionViewDiffableDataSourceReference`](uicollectionviewdiffabledatasourcereference.md)
 - [`UITableViewDiffableDataSourceReference`](uitableviewdiffabledatasourcereference.md)
-- [`NSCollectionViewDiffableDataSource`](https://developer.apple.com/documentation/AppKit/NSCollectionViewDiffableDataSource-axww)
+- [`NSCollectionViewDiffableDataSource`](https://developer.apple.com/documentation/appkit/nscollectionviewdiffabledatasource-axww)
 
 > ❗ **Important**: If you’re working in a Swift codebase, always use [`NSDiffableDataSourceSnapshot`](nsdiffabledatasourcesnapshot-swift.struct.md) instead.
 
@@ -137,15 +137,15 @@ let snapshot = snapshotReference as NSDiffableDataSourceSnapshot<Int, UUID>
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCopying](../Foundation/NSCopying.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCopying](../foundation/nscopying.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 
 ---

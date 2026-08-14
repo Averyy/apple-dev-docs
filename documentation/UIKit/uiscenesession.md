@@ -53,23 +53,23 @@ You don’t create session objects directly. UIKit creates sessions in response 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCoding](../Foundation/NSCoding.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [NSSecureCoding](../Foundation/NSSecureCoding.md)
-- [Sendable](../Swift/Sendable.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCoding](../foundation/nscoding.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [Sendable](../swift/sendable.md)
 
 ## See Also
 
 - [Specifying the scenes your app supports](specifying-the-scenes-your-app-supports.md)
   Tell the system about your app’s scenes, including the objects you use to manage each scene and its initial user interface.
-- [UIApplicationSceneManifest](../BundleResources/Information-Property-List/UIApplicationSceneManifest.md)
+- [UIApplicationSceneManifest](../bundleresources/information-property-list/uiapplicationscenemanifest.md)
   The information about the app’s scene-based life-cycle support.
 - [class UISceneConfiguration](uisceneconfiguration.md)
   Information about the objects and storyboard for UKit to use when creating a particular scene.

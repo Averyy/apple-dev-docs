@@ -9,7 +9,7 @@ Identify software preventing Xcode 15 from connecting to Apple devices, and modi
 Xcode 15 uses a network-based interface to communicate with Apple devices connected to the Mac with a USB cable. In some environments, network management software may interfere with Xcode’s ability to connect to these devices. These configurations include:
 
 - VPN apps using Packet Filter (PF) rules
-- VPN apps using a [`Network Extension`](https://developer.apple.com/documentation/NetworkExtension) provider with [`includeAllNetworks`](https://developer.apple.com/documentation/NetworkExtension/NEVPNProtocol/includeAllNetworks) enabled
+- VPN apps using a [`Network Extension`](https://developer.apple.com/documentation/networkextension) provider with [`includeAllNetworks`](https://developer.apple.com/documentation/networkextension/nevpnprotocol/includeallnetworks) enabled
 - Security configurations using PF
 
 These configurations can prevent the link-local IPv6 traffic that Xcode uses to communicate with a connected Apple device from reaching the device. If you’re a VPN developer or IT professional, follow this document to verify what parts of your configuration affect Xcode, and how to modify your configuration to avoid blocking Xcode’s device communication network traffic. If you’re an app developer in a large organization experiencing device connection issues with Xcode 15, you may need to get assistance from your IT department. If you’re an app developer using a commercial VPN or security product not administered by an IT department, contact the vendor for assistance.
@@ -37,7 +37,7 @@ After confirming the software affecting Xcode’s connection to a connected devi
 
 If your VPN product or security configuration uses PF to filter network packets, update your PF rules to allow traffic on the network interfaces Xcode uses for device communication. These rules need to be continuously updated, as the network interfaces Xcode uses to communicate with a connected device changes over time.
 
-To monitor for network interface changes, use [`NWPathMonitor`](https://developer.apple.com/documentation/Network/NWPathMonitor), or create a [`nw_path_monitor_t`](https://developer.apple.com/documentation/Network/nw_path_monitor_t) through [`nw_path_monitor_create()`](https://developer.apple.com/documentation/Network/nw_path_monitor_create()). Each time the path monitor notifies you that the network interfaces changed, use `ioctl` with a `SIOCGIFDIRECTLINK` request to identify the multiple network interfaces Xcode uses for device connection traffic. The system marks these interfaces with the `ifr_is_directlink` flag. Configure your PF rules to allow any IPv6 traffic on interfaces marked with this flag through the filter.
+To monitor for network interface changes, use [`NWPathMonitor`](https://developer.apple.com/documentation/network/nwpathmonitor), or create a [`nw_path_monitor_t`](https://developer.apple.com/documentation/network/nw_path_monitor_t) through [`nw_path_monitor_create()`](https://developer.apple.com/documentation/network/nw_path_monitor_create()). Each time the path monitor notifies you that the network interfaces changed, use `ioctl` with a `SIOCGIFDIRECTLINK` request to identify the multiple network interfaces Xcode uses for device connection traffic. The system marks these interfaces with the `ifr_is_directlink` flag. Configure your PF rules to allow any IPv6 traffic on interfaces marked with this flag through the filter.
 
 ```c
 /**
@@ -73,7 +73,7 @@ The `SIOCGIFDIRECTLINK` API was added in macOS 14.4, and requires building your 
 
 #### Review If Your Vpn Requires Sending All Network Traffic Over the Tunnel
 
-VPN products based on the [`NEVPNProtocol`](https://developer.apple.com/documentation/NetworkExtension/NEVPNProtocol) interface should review their use of the `includeAllNetworks` property. If `includeAllNetworks` is required for your configuration, set [`excludeDeviceCommunication`](https://developer.apple.com/documentation/NetworkExtension/NEVPNProtocol/excludeDeviceCommunication) to `true` so that Xcode’s device communication is omitted from your tunnel.
+VPN products based on the [`NEVPNProtocol`](https://developer.apple.com/documentation/networkextension/nevpnprotocol) interface should review their use of the `includeAllNetworks` property. If `includeAllNetworks` is required for your configuration, set [`excludeDeviceCommunication`](https://developer.apple.com/documentation/networkextension/nevpnprotocol/excludedevicecommunication) to `true` so that Xcode’s device communication is omitted from your tunnel.
 
 #### Revision History
 

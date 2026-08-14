@@ -18,7 +18,7 @@ All snapshot URLs must include a signature. To create your signature, gather the
 - The Key ID for a key with the MapKit JS service enabled
 - Your private key file (.p8) for the key
 
-If you don’t have a MapKit JS key, learn how to obtain one in [`Creating a Maps identifier and a private key`](https://developer.apple.com/documentation/AppleMapsServerAPI/creating-a-maps-identifier-and-a-private-key).
+If you don’t have a MapKit JS key, learn how to obtain one in [`Creating a Maps identifier and a private key`](https://developer.apple.com/documentation/applemapsserverapi/creating-a-maps-identifier-and-a-private-key).
 
 > 💡 **Tip**:  To locate your Team ID, sign in to your [`Apple Developer account`](https://developer.apple.comhttps://developer.apple.com/account) and click Membership in the left sidebar.
 

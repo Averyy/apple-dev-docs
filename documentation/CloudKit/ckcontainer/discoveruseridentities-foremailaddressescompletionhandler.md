@@ -25,7 +25,7 @@ func discoverUserIdentities(forEmailAddresses emails: [String], completionHandle
 
 This closure doesn’t return a value and takes the following parameters:
 
-- A [`Result`](https://developer.apple.com/documentation/Swift/Result) that contains either a dictionary of user identities, or an error that describes why CloudKit can’t discover the email addresses. In the successful case, the dictionary uses the email addresses you specify in `emails` as its keys. Only successfully discovered user identities are present in this dictionary.
+- A [`Result`](https://developer.apple.com/documentation/swift/result) that contains either a dictionary of user identities, or an error that describes why CloudKit can’t discover the email addresses. In the successful case, the dictionary uses the email addresses you specify in `emails` as its keys. Only successfully discovered user identities are present in this dictionary.
 
 Use this method to retrieve the identities of users who the current user knows. The users you’re searching for must meet the following criteria:
 

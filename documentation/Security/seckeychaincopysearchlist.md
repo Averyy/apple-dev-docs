@@ -20,7 +20,7 @@ A result code. See [`Security Framework Result Codes`](security-framework-result
 
 ## Parameters
 
-- `searchList`: On return, the returned keychain search list. In Objective-C, call the [`CFRelease`](https://developer.apple.com/documentation/CoreFoundation/CFRelease) function to release this object when you are finished using it.
+- `searchList`: On return, the returned keychain search list. In Objective-C, call the [`CFRelease`](https://developer.apple.com/documentation/corefoundation/cfrelease) function to release this object when you are finished using it.
 
 
 ---

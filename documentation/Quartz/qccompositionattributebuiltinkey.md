@@ -16,7 +16,7 @@ let QCCompositionAttributeBuiltInKey: String
 
 #### Discussion
 
-The associated value is an `NSNumber` object that contains a Boolean value. [`true`](https://developer.apple.com/documentation/Swift/true) indicates the composition is built-in (provided by macOS).
+The associated value is an `NSNumber` object that contains a Boolean value. [`true`](https://developer.apple.com/documentation/swift/true) indicates the composition is built-in (provided by macOS).
 
 ## See Also
 

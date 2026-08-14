@@ -25,7 +25,7 @@ A new asset object.
 
 #### Discussion
 
-Use this initializer when you want to programmatically populate an asset with content (for example, for use in exporting to a file) while controlling the allocation of mesh data buffers associated with the asset. For example, to use the MetalKit framework for loading vertex data into GPU buffers for rendering using Metal, pass a [`MTKMeshBufferAllocator`](https://developer.apple.com/documentation/MetalKit/MTKMeshBufferAllocator) object for the `bufferAllocator` parameter.
+Use this initializer when you want to programmatically populate an asset with content (for example, for use in exporting to a file) while controlling the allocation of mesh data buffers associated with the asset. For example, to use the MetalKit framework for loading vertex data into GPU buffers for rendering using Metal, pass a [`MTKMeshBufferAllocator`](https://developer.apple.com/documentation/metalkit/mtkmeshbufferallocator) object for the `bufferAllocator` parameter.
 
 ## Parameters
 

@@ -19,7 +19,7 @@ HLS supports the following:
 
 The following figure shows the three components of an HTTP Live Stream: the server component, the distribution component, and the client software.
 
-![Flow diagram showing the four parts of an HTTP Live Stream. The media recording is sent to a server, distributed over the web, and sent to the client app.](https://docs-assets.developer.apple.com/published/80fd0d84ea04e487087af24c24190c5d/http-live-streaming-1%402x.png)
+![Flow diagram showing the four parts of an HTTP Live Stream. The media recording is sent to a server, distributed over the web, and sent to the client app.](/images/com.apple.HTTP-Live-Streaming/http-live-streaming-1@2x.png)
 
 In a typical configuration, a hardware encoder takes audio-video input, encodes it as HEVC video and AC-3 audio, and outputs a fragmented MPEG-4 file or an MPEG-2 transport stream. A software stream segmenter then breaks the stream into a series of short media files, which are placed on a web server. The segmenter also creates and maintains an index file containing a list of the media files. The URL of the index file is published on the web server. Client software reads the index, then requests the listed media files in order and displays them without any pauses or gaps between segments.
 
@@ -37,7 +37,7 @@ The distribution system is a web server or a web-caching system that delivers th
 
 Client software is responsible for determining the appropriate media to request, downloading those resources, and then reassembling them so that the media can be presented to the user in a continuous stream. For the rules governing the interaction between an HLS player and its server, see [`HTTP Live Streaming 2nd Edition`](https://developer.apple.comhttps://datatracker.ietf.org/doc/html/draft-pantos-hls-rfc8216bis).
 
-Apple provides several frameworks that support HTTP Live Streaming, including [`AVKit`](https://developer.apple.com/documentation/AVKit), [`AVFoundation`](https://developer.apple.com/documentation/AVFoundation), and [`WebKit`](https://developer.apple.com/documentation/WebKit). Support has been available since iOS 3.0 and Safari 4.0, so there’s no need to develop your own client software.
+Apple provides several frameworks that support HTTP Live Streaming, including [`AVKit`](https://developer.apple.com/documentation/avkit), [`AVFoundation`](https://developer.apple.com/documentation/avfoundation), and [`WebKit`](https://developer.apple.com/documentation/webkit). Support has been available since iOS 3.0 and Safari 4.0, so there’s no need to develop your own client software.
 
 However, if you do develop your own client software, begin by fetching the index file using a URL that identifies the stream. The index file, in turn, specifies the location of the available media files, decryption keys, and any alternate streams available. For the selected stream, download each available media file in sequence. Each file contains a consecutive segment of the stream. Once it has a sufficient amount of data downloaded, present the reassembled stream to the user.
 

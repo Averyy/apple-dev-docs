@@ -20,7 +20,7 @@ class var beforeCATransactionCommit: UIUpdateActionPhase { get }
 
 #### Discussion
 
-This phase runs before [`flush()`](https://developer.apple.com/documentation/QuartzCore/CATransaction/flush()).
+This phase runs before [`flush()`](https://developer.apple.com/documentation/quartzcore/catransaction/flush()).
 
 ## See Also
 

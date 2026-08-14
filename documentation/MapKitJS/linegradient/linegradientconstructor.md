@@ -29,7 +29,7 @@ overlay.style.lineGradient = new mapkit.LineGradient({
 
 If the start or end of the line doesn’t have a defined color, the gradient uses the style’s [`strokeColor`](style/strokecolor.md) as a default.
 
-You can extend gradients programatically with [`addColorStop(offset, color)`](linegradient/addcolorstop.md) and [`addColorStopAtIndex(index, color)`](linegradient/addcolorstopatindex.md).
+You can extend gradients programatically with [`addColorStop()`](linegradient/addcolorstop.md) and [`addColorStopAtIndex()`](linegradient/addcolorstopatindex.md).
 
 ## Parameters
 

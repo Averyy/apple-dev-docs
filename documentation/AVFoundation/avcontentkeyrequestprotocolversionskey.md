@@ -22,7 +22,7 @@ let AVContentKeyRequestProtocolVersionsKey: String
 
 #### Discussion
 
-The contents of this key are an [`NSArray`](https://developer.apple.com/documentation/Foundation/NSArray) or one or more [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) objects.
+The contents of this key are an [`NSArray`](https://developer.apple.com/documentation/foundation/nsarray) or one or more [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) objects.
 
 ## See Also
 

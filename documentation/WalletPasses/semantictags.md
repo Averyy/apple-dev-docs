@@ -82,7 +82,7 @@ object SemanticTags
 - `internationalDocumentsVerifiedDeclarationName` (localizable string): The name of the declaration given once the passenger’s international documents are verified. Examples include `DOCS OK` or `Travel Ready`. If `internationalDocumentsAreVerified` is `true`, Wallet displays a badge on the boarding pass with this value.
 - `leagueAbbreviation` (localizable string): The abbreviated league name for a sports event. Use this key only for a sports event ticket.
 - `leagueName` (localizable string): The unabbreviated league name for a sports event. Use this key only for a sports event ticket.
-- `loungePlaceIDs` ([string]): The `MapKit` `Place IDs` that reference the transit provider lounge locations. For more information, see [`Identifying unique locations with Place IDs`](https://developer.apple.com/documentation/MapKit/identifying-unique-locations-with-place-ids).
+- `loungePlaceIDs` ([string]): The `MapKit` `Place IDs` that reference the transit provider lounge locations. For more information, see [`Identifying unique locations with Place IDs`](https://developer.apple.com/documentation/mapkit/identifying-unique-locations-with-place-ids).
 - `membershipProgramName` (localizable string): The name of a frequent flyer or loyalty program. Use this key for any type of boarding pass.
 - `membershipProgramNumber` (localizable string): The ticketed passenger’s frequent flyer or loyalty number. Use this key for any type of boarding pass.
 - `membershipProgramStatus` (localizable string): The ticketed passenger’s frequent flyer or loyalty program status. Use this key for any type of boarding pass.

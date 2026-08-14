@@ -16,7 +16,7 @@ Stack views are the most primitive layout container available in SwiftUI. Use st
 
 Use [`HStack`](hstack.md) to lay out views in a horizontal line, [`VStack`](vstack.md) to position views in a vertical line, and [`ZStack`](zstack.md) to layer views on top of one another. Then, combine stack views to compose more complex layouts. These three kinds of stacks, along with their alignment and spacing properties, view modifiers, and [`Spacer`](spacer.md) views combine to allow extensive layout flexibility.
 
-![A diagram showing how a generic user profile layout might utilize stack views. The diagram shows the rendered layout next to an exploded, 3D illustration of the view hierarchy showing four layers of views stacked on top of each other. The lowest level of the hierarchy is a ZStack; above that is an Image view, then an HStack, and finally a VStack and Spacer view at the highest level.](https://docs-assets.developer.apple.com/published/cfcda1d8b2521e35ff381ae4ae6e2143/Picking-Container-Views-for-Your-Content-1%402x.png)
+![A diagram showing how a generic user profile layout might utilize stack views. The diagram shows the rendered layout next to an exploded, 3D illustration of the view hierarchy showing four layers of views stacked on top of each other. The lowest level of the hierarchy is a ZStack; above that is an Image view, then an HStack, and finally a VStack and Spacer view at the highest level.](/images/com.apple.SwiftUI/Picking-Container-Views-for-Your-Content-1@2x.png)
 
 You often use stack views as building blocks inside other container views. For example, a [`List`](list.md) typically contains stack views, with which you lay out views inside each row.
 
@@ -28,7 +28,7 @@ You can also use [`HStack`](hstack.md), [`VStack`](vstack.md), [`LazyHStack`](la
 
 Stack views and lazy stacks have similar functionality, and they may feel interchangeable, but they each have strengths in different situations. Stack views load their child views all at once, making layout fast and reliable, because the system knows the size and shape of every subview as it loads them. Lazy stacks trade some degree of layout correctness for performance, because the system only calculates the geometry for subviews as they become visible.
 
-![A diagram showing how the system loads views on demand in a lazy stack view container.](https://docs-assets.developer.apple.com/published/11e35ee58bbcc2fe0e58e4add7ff42d1/Picking-Container-Views-for-Your-Content-2%402x.png)
+![A diagram showing how the system loads views on demand in a lazy stack view container.](/images/com.apple.SwiftUI/Picking-Container-Views-for-Your-Content-2@2x.png)
 
 When choosing the type of stack view to use, always start with a standard stack view and only switch to a lazy stack if profiling your code shows a worthwhile performance improvement. For more information on lazy stack views and how to measure your app’s view loading performance, see [`Creating performant scrollable stacks`](creating-performant-scrollable-stacks.md).
 
@@ -36,7 +36,7 @@ When choosing the type of stack view to use, always start with a standard stack 
 
 To lay out views horizontally and vertically at the same time, use a [`LazyVGrid`](lazyvgrid.md) or [`LazyHGrid`](lazyhgrid.md). Grids are a good container choice to lay out content that naturally displays in square containers, like an image gallery. Grids are also a good choice to scale user interface layouts up for display on larger devices. For example, a directory of contact information might suit a list or vertical stack on an iPhone, but might fit more naturally in a grid layout when scaled up to a larger device like the iPad or Mac.
 
-![A diagram showing how a user interface might scale up from a device with a smaller screen, such as an iPhone onto a device with a larger screen, like a Mac.](https://docs-assets.developer.apple.com/published/a7493092020e736a8b98e0d451be0c8d/Picking-Container-Views-for-Your-Content-3%402x.png)
+![A diagram showing how a user interface might scale up from a device with a smaller screen, such as an iPhone onto a device with a larger screen, like a Mac.](/images/com.apple.SwiftUI/Picking-Container-Views-for-Your-Content-3@2x.png)
 
 Like stack views, SwiftUI grid views don’t inherently include a scrolling viewport; place them inside a [`ScrollView`](scrollview.md) if the content might be larger than the available space.
 
@@ -52,7 +52,7 @@ Like [`LazyHStack`](lazyhstack.md) and [`LazyVStack`](lazyvstack.md), rows insid
 
 Use [`Form`](form.md) to build data-entry interfaces, settings, or preference screens that use system-standard controls.
 
-![A diagram showing a macOS preferences window, and an iOS settings screen next to each other. The screens both contain the same settings, but they use different, platform-appropriate controls.](https://docs-assets.developer.apple.com/published/624bd221651ed358c66daa08c3cfb6bf/Picking-Container-Views-for-Your-Content-4%402x.png)
+![A diagram showing a macOS preferences window, and an iOS settings screen next to each other. The screens both contain the same settings, but they use different, platform-appropriate controls.](/images/com.apple.SwiftUI/Picking-Container-Views-for-Your-Content-4@2x.png)
 
 Like all SwiftUI views, forms display their content in a platform-appropriate way. Be aware that the layout of controls inside a [`Form`](form.md) may differ significantly based on the platform. For example, a [`Picker`](picker.md) control in a [`Form`](form.md) on iOS adds navigation, showing the picker’s choices on a separate screen, while the same [`Picker`](picker.md) on macOS displays a pop-up button or set of radio buttons.
 

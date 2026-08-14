@@ -17,7 +17,7 @@ let kSecCodeInfoTimestamp: CFString
 
 #### Discussion
 
-The value is a [`CFDate`](https://developer.apple.com/documentation/CoreFoundation/CFDate) object describing the signing date as (securely) certified by a timestamp authority service. This timestamp cannot be falsified by the signer, and is trusted to the same degree as the timestamp service that created the timestamp.
+The value is a [`CFDate`](https://developer.apple.com/documentation/corefoundation/cfdate) object describing the signing date as (securely) certified by a timestamp authority service. This timestamp cannot be falsified by the signer, and is trusted to the same degree as the timestamp service that created the timestamp.
 
 
 ---

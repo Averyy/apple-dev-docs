@@ -10,7 +10,7 @@ Capturing a photo with an iOS device camera is a complex process involving physi
 
 After you call [`capturePhoto(with:delegate:)`](avcapturephotooutput/capturephoto(with:delegate:).md), your delegate object can follow along with five major steps in the process (or more, depending on your photo settings). Depending on your capture workflow and the capture UI you want to create, your delegate can handle some or all of these steps:
 
-![Diagram of numbered photo capture process steps after calling capturePhoto().](https://docs-assets.developer.apple.com/published/3c97003e1414fa267a5bf5915da75619/media-2961961%402x.png)
+![Diagram of numbered photo capture process steps after calling capturePhoto().](/images/com.apple.avfoundation/media-2961961@2x.png)
 
 1. Settings resolved
 2. Exposure started

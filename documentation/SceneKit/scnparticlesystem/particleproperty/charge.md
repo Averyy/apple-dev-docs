@@ -22,7 +22,7 @@ static let charge: SCNParticleSystem.ParticleProperty
 
 #### Discussion
 
-This property’s value is a floating-point scalar (an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) object for particle property controllers, or a single `float` value for particle event or modifier blocks). A particle’s charge determines its behavior when affected by an electric or magnetic field created with the [`SCNPhysicsField`](scnphysicsfield.md) class.
+This property’s value is a floating-point scalar (an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) object for particle property controllers, or a single `float` value for particle event or modifier blocks). A particle’s charge determines its behavior when affected by an electric or magnetic field created with the [`SCNPhysicsField`](scnphysicsfield.md) class.
 
 The particle system’s [`particleCharge`](scnparticlesystem/particlecharge.md) and [`particleChargeVariation`](scnparticlesystem/particlechargevariation.md) properties determine the initial charge for each particle.
 

@@ -17,7 +17,7 @@ func xpc_main(_ handler: xpc_connection_handler_t) -> Never
 
 #### Discussion
 
-This is the springboard into the XPC service runtime. This function sets up your service bundle’s listener connection and manages it automatically. After this initial setup, this function calls [`dispatchMain()`](https://developer.apple.com/documentation/Dispatch/dispatchMain()). You may override this behavior by setting the [`RunLoopType`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/XPCService/RunLoopType) key in your XPC service bundle’s `Info.plist` under the `XPCService` dictionary.
+This is the springboard into the XPC service runtime. This function sets up your service bundle’s listener connection and manages it automatically. After this initial setup, this function calls [`dispatchMain()`](https://developer.apple.com/documentation/dispatch/dispatchmain()). You may override this behavior by setting the [`RunLoopType`](https://developer.apple.com/documentation/bundleresources/information-property-list/xpcservice/runlooptype) key in your XPC service bundle’s `Info.plist` under the `XPCService` dictionary.
 
 ## Parameters
 

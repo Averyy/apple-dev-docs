@@ -17,7 +17,7 @@ A message that tells people why your app receives voice-over-IP (VoIP) calls in 
 
 #### Discussion
 
-For more information, see [`CallKit`](https://developer.apple.com/documentation/CallKit).
+For more information, see [`CallKit`](https://developer.apple.com/documentation/callkit).
 
 
 ---

@@ -18,7 +18,7 @@ class APActivationPayload
 
 #### Overview
 
-When users launch an App Clip, the platform passes an activation payload to the App Clip as part of an [`NSUserActivity`](https://developer.apple.com/documentation/Foundation/NSUserActivity) object. When the App Clip receives the payload, confirm the user’s physical location at the time of the invocation.
+When users launch an App Clip, the platform passes an activation payload to the App Clip as part of an [`NSUserActivity`](https://developer.apple.com/documentation/foundation/nsuseractivity) object. When the App Clip receives the payload, confirm the user’s physical location at the time of the invocation.
 
 For more information, see [`Responding to invocations`](responding-to-invocations.md).
 
@@ -43,17 +43,17 @@ For more information, see [`Responding to invocations`](responding-to-invocation
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCoding](../Foundation/NSCoding.md)
-- [NSCopying](../Foundation/NSCopying.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [NSSecureCoding](../Foundation/NSSecureCoding.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCoding](../foundation/nscoding.md)
+- [NSCopying](../foundation/nscopying.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSSecureCoding](../foundation/nssecurecoding.md)
 
 ## See Also
 
@@ -67,7 +67,7 @@ For more information, see [`Responding to invocations`](responding-to-invocation
   Add code to quickly confirm a person’s physical location while respecting their privacy.
 - [Launching another app’s App Clip from your app](launching-another-app-s-app-clip-from-your-app.md)
   Enable people to launch another app’s App Clip from your app with App Clip links and offer a rich preview of it with the Link Presentation framework.
-- [NSAppClip](../BundleResources/Information-Property-List/NSAppClip.md)
+- [NSAppClip](../bundleresources/information-property-list/nsappclip.md)
   A collection of keys that an App Clip uses to get additional capabilities.
 
 

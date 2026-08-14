@@ -22,7 +22,7 @@ let kSecMatchSearchList: CFString
 
 #### Discussion
 
-The value is a [`CFArray`](https://developer.apple.com/documentation/CoreFoundation/CFArray) of [`SecKeychain`](seckeychain.md) items. If provided, the search will be limited to the keychain items contained in this list.
+The value is a [`CFArray`](https://developer.apple.com/documentation/corefoundation/cfarray) of [`SecKeychain`](seckeychain.md) items. If provided, the search will be limited to the keychain items contained in this list.
 
 
 ---

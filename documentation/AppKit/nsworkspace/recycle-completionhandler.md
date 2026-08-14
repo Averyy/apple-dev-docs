@@ -22,7 +22,7 @@ In macOS 10.6, this method requires the app to run the main run loop in a common
 
 ## Parameters
 
-- `URLs`: An array of [`NSURL`](https://developer.apple.com/documentation/Foundation/NSURL) objects representing the files to move to the trash. This parameter must not be `nil`
+- `URLs`: An array of [`NSURL`](https://developer.apple.com/documentation/foundation/nsurl) objects representing the files to move to the trash. This parameter must not be `nil`
 - `handler`: The completion handler block object to call when the operation completes. You may specify `nil` for this parameter. If this parameter is not `nil`, you must call the [`recycle(_:completionHandler:)`](nsworkspace/recycle(_:completionhandler:).md) method from a block running on an active dispatch queue; your completion handler block is subsequently executed on the same dispatch queue. The block takes two arguments: - **newURLs**: A dictionary that maps the file’s original location to its location in the trash. Each key is a URL from the `URLs` parameter. The value of each key is a URL representing the location of the file in the trash. If this method could not move a file to the trash, the corresponding URL is not included in the dictionary.
 - **error**: If the operation succeeded for every file, this parameter is `nil`. If the operation failed for one or more files, the parameter contains an error object describing the overall result of the operation in a manner suitable for presentation to the user.
 

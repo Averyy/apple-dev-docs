@@ -23,7 +23,7 @@ func decodeTopLevelDecodable<T>(_ type: T.Type, forKey key: String) throws -> T?
 
 #### Discussion
 
-If the archive is not a valid property list, this method throws the [`DecodingError.dataCorrupted(_:)`](https://developer.apple.com/documentation/Swift/DecodingError/dataCorrupted(_:)) error. If a value within the archive fails to decode, this method throws the corresponding error.
+If the archive is not a valid property list, this method throws the [`DecodingError.dataCorrupted(_:)`](https://developer.apple.com/documentation/swift/decodingerror/datacorrupted(_:)) error. If a value within the archive fails to decode, this method throws the corresponding error.
 
 ## Parameters
 

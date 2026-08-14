@@ -12,7 +12,7 @@ To enable the Verifier API, verify that the person’s iPhone supports it, then 
 
 For design guidance, see [`Human Interface Guidelines > ID Verifier`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/id-verifier).
 
-> ❗ **Important**: To perform mobile document requests, add the “Verifier API” capability to your app’s target in Xcode. For more information, see [`Adding capabilities to your app`](https://developer.apple.com/documentation/Xcode/adding-capabilities-to-your-app).
+> ❗ **Important**: To perform mobile document requests, add the “Verifier API” capability to your app’s target in Xcode. For more information, see [`Adding capabilities to your app`](https://developer.apple.com/documentation/xcode/adding-capabilities-to-your-app).
 
 #### Verify Device Support
 

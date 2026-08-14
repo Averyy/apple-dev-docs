@@ -31,10 +31,10 @@ Use values of this type in conjunction with the `SwiftUI/View/groupActivityAssoc
 ## Relationships
 
 ### Conforms To
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 
@@ -42,14 +42,14 @@ Use values of this type in conjunction with the `SwiftUI/View/groupActivityAssoc
   Create shared experiences for people wearing Vision Pro in the same room and those on FaceTime.
 - [Adding spatial Persona support to an activity](adding-spatial-persona-support-to-an-activity.md)
   Update your SharePlay activities to support spatial Personas and the shared context when running in visionOS.
-- [Implementing SharePlay for immersive spaces in visionOS](../visionOS/implementing-shareplay-for-immersive-spaces-in-visionos.md)
+- [Implementing SharePlay for immersive spaces in visionOS](../visionos/implementing-shareplay-for-immersive-spaces-in-visionos.md)
   Enable collaborative spatial experiences by using SharePlay to synchronize 3D content among participants.
 - [class SystemCoordinator](systemcoordinator.md)
   A type you use to coordinate your interface’s behavior when an active SharePlay session supports spatial placement of content.
 - [SystemCoordinator.ParticipantState](systemcoordinator/participantstate.md)
   A structure that tells you whether a participant supports a shared simulation space for the current activity.
 - [func groupActivityAssociation(GroupActivityAssociationKind?) -> some View
-](../SwiftUI/View/groupActivityAssociation(_:).md)
+](../swiftui/view/groupactivityassociation(_:).md)
   Specifies how a view should be associated with the current SharePlay group activity.
 - [class GroupActivityAssociationInteraction](groupactivityassociationinteraction.md)
   An interaction configures a view’s association with the current SharePlay group activity.

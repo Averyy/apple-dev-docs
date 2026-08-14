@@ -19,7 +19,7 @@ void force::twist(float3 origin, float strength, float attraction)
 
 This function creates a vortex-like effect by applying two force components: a tangential force that causes rotation around the origin, and an optional attractive or repulsive force toward or away from the origin. The twist occurs around a vertical (Y-axis) through the specified origin point.
 
-> **Note**: ![Graph](https://docs-assets.developer.apple.com/published/3f449b2104da17812b5552060b14ea92/force__twist.svg)
+> **Note**: ![Graph](/images/com.apple.computegraph/force__twist.svg)
 
 ## Parameters
 

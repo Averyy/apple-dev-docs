@@ -40,7 +40,7 @@ The [`UIViewPropertyAnimator`](uiviewpropertyanimator.md) class adopts this prot
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 - [UIViewAnimating](uiviewanimating.md)
 ### Conforming Types
 - [UIViewPropertyAnimator](uiviewpropertyanimator.md)

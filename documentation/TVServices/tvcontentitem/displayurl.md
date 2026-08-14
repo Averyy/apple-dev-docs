@@ -16,7 +16,7 @@ var displayURL: URL? { get set }
 
 #### Discussion
 
-When the user selects the item, your application is launched if it wasn’t already running and then your [`UIApplication`](https://developer.apple.com/documentation/UIKit/UIApplication) delegate is called. If at all possible, your application should immediately display the description of the item without any prompting for other information or displaying any other UI.
+When the user selects the item, your application is launched if it wasn’t already running and then your [`UIApplication`](https://developer.apple.com/documentation/uikit/uiapplication) delegate is called. If at all possible, your application should immediately display the description of the item without any prompting for other information or displaying any other UI.
 
 ## See Also
 

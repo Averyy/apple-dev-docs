@@ -52,7 +52,7 @@ Use this type for radio stations, live streams, and other continuous audio broad
 ## Relationships
 
 ### Conforms To
-- [Identifiable](../Swift/Identifiable.md)
+- [Identifiable](../swift/identifiable.md)
 - [MediaContentRepresentable](mediacontentrepresentable.md)
 
 ## See Also

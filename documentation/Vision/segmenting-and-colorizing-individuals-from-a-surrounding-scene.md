@@ -16,7 +16,7 @@ Segmenting individuals in photos is a powerful tool that can provide more creati
 
 This sample shows you how to generate segmented masks for up to four individuals in a scene. This sample generates one mask for everyone if more than four individuals are in the scene. Individuals in each mask are then colorized. You can then select the individuals you want to segment and colorize.
 
-![An illustration of two images, side-by-side. The original image, on the left, contains three individuals. The other image, on the right, shows the three individuals after segmentation with colorized masks.](https://docs-assets.developer.apple.com/published/1b5b15b6087dede39902996c70ab0675/OverviewCombined.png)
+![An illustration of two images, side-by-side. The original image, on the left, contains three individuals. The other image, on the right, shows the three individuals after segmentation with colorized masks.](/images/Vision/OverviewCombined.png)
 
 ##### Configure the Sample Code Project
 
@@ -119,9 +119,9 @@ for index in selectedSegments {
 }
 ```
 
-The following illustration depicts the colorization when the person using this sample selects two segmentations when there are up to four people in the image. The sample masks three of the people with different, selected colors. ![An illustration representing a photograph of three people next to a path with trees and a cityscape in the background. Three people are colorized in different colors.](https://docs-assets.developer.apple.com/published/7c84662321540bb45ed962e5d14a989f/ThreeSelected.png)
+The following illustration depicts the colorization when the person using this sample selects two segmentations when there are up to four people in the image. The sample masks three of the people with different, selected colors. ![An illustration representing a photograph of three people next to a path with trees and a cityscape in the background. Three people are colorized in different colors.](/images/Vision/ThreeSelected.png)
 
-If the person using this sample selects all the people and the background of the image, this sample masks the background with the selected color, and masks and colorizes the people. ![An illustration representing three people that are colorized in different colors and the background is obscured.](https://docs-assets.developer.apple.com/published/5870355f3620718d92adb6f133346e3e/NoneSelectedColorized.png)
+If the person using this sample selects all the people and the background of the image, this sample masks the background with the selected color, and masks and colorizes the people. ![An illustration representing three people that are colorized in different colors and the background is obscured.](/images/Vision/NoneSelectedColorized.png)
 
 ##### Colorize More Than Four People in an Image
 
@@ -136,7 +136,7 @@ if selectedSegments.contains(1) {
 }
 ```
 
-![An illustration representing a photograph of five people next to a path with trees and a cityscape in the background. The individuals are obscured and colorized with one color in the image.](https://docs-assets.developer.apple.com/published/b4d3d7e689f6ab088bb475364cab5286/OneSegmenationMask.png)
+![An illustration representing a photograph of five people next to a path with trees and a cityscape in the background. The individuals are obscured and colorized with one color in the image.](/images/Vision/OneSegmenationMask.png)
 
 If the person using the sample selects the background mask in the image, the sample masks the background of the image with a specific color, but leaves the people in the foreground of the image intact. This allows for selectively coloring the background of the image based on the segmentation mask.
 
@@ -151,13 +151,13 @@ if selectedSegments.contains(0) {
 }
 ```
 
-![An illustration representing a photograph of five people with the background obscured.](https://docs-assets.developer.apple.com/published/1ed237c1490febb9052e588fbcc27d56/NoBackgroundAll.png)
+![An illustration representing a photograph of five people with the background obscured.](/images/Vision/NoBackgroundAll.png)
 
 ## See Also
 
 - [Applying Matte Effects to People in Images and Video](applying-matte-effects-to-people-in-images-and-video.md)
   Generate image masks for people automatically by using semantic person-segmentation.
-- [Detecting human actions in a live video feed](../CreateML/detecting-human-actions-in-a-live-video-feed.md)
+- [Detecting human actions in a live video feed](../createml/detecting-human-actions-in-a-live-video-feed.md)
   Identify body movements by sending a person’s pose data from a series of video frames to an action-classification model.
 - [class VNStatefulRequest](vnstatefulrequest.md)
   An abstract request type that builds evidence of a condition over time.

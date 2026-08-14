@@ -22,10 +22,10 @@ struct DidSendActionMessage
 ## Relationships
 
 ### Conforms To
-- [Copyable](../Swift/Copyable.md)
-- [Escapable](../Swift/Escapable.md)
-- [NotificationCenter.MainActorMessage](../Foundation/NotificationCenter/MainActorMessage.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Copyable](../swift/copyable.md)
+- [Escapable](../swift/escapable.md)
+- [NotificationCenter.MainActorMessage](../foundation/notificationcenter/mainactormessage.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 
 ---

@@ -22,7 +22,7 @@ typealias MagicCookieInfo = AudioCodecMagicCookieInfo
 ## See Also
 
 - [struct ExtendedControlEvent](extendedcontrolevent.md)
-- [typealias MIDIEndpointRef](../CoreMIDI/MIDIEndpointRef.md)
+- [typealias MIDIEndpointRef](../coremidi/midiendpointref.md)
   A MIDI source or destination an entity owns.
 - [typealias NoteInstanceID](noteinstanceid.md)
 - [typealias ReadBytesFDF](readbytesfdf.md)

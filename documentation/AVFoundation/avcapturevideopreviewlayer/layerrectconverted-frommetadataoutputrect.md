@@ -24,7 +24,7 @@ A rectangle in the preview layer’s coordinate system.
 
 #### Discussion
 
-A metadata capture output’s [`rectOfInterest`](avcapturemetadataoutput/rectofinterest.md) a [`CGRect`](https://developer.apple.com/documentation/CoreFoundation/CGRect) value where `{0,0}` represents the top-left of the picture area, and `{1,1}` represents the bottom-right on an unrotated image.
+A metadata capture output’s [`rectOfInterest`](avcapturemetadataoutput/rectofinterest.md) a [`CGRect`](https://developer.apple.com/documentation/corefoundation/cgrect) value where `{0,0}` represents the top-left of the picture area, and `{1,1}` represents the bottom-right on an unrotated image.
 
 The system takes the layer’s frame size and its [`videoGravity`](avcapturevideopreviewlayer/videogravity.md) into consideration when making the conversion.
 

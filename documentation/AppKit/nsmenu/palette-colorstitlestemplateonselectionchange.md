@@ -52,7 +52,7 @@ menuItem.submenu = menu
 parentMenu.addItem(menuItem)
 ```
 
-![A presentation style menu with five solid colored circles of various colors that display horizontally left to right. The first two circles have checkmarks in the middle.](https://docs-assets.developer.apple.com/published/1f23b72d94db32f4efc69882003da882/media-4304328%402x.png)
+![A presentation style menu with five solid colored circles of various colors that display horizontally left to right. The first two circles have checkmarks in the middle.](/images/com.apple.appkit/media-4304328@2x.png)
 
 This code is similar to the previous example, only here the menu displays the `templateImage` of a flag tinted to the corresponding color you set in the `colors` array. When you select an item in this menu the image changes from a flag to a checkmark.
 
@@ -85,7 +85,7 @@ menuItem.submenu = menu
 parentMenu.addItem(menuItem)
 ```
 
-![A presentation style menu showing two checkmarks and three flags of various colors that display horizontally left to right.](https://docs-assets.developer.apple.com/published/33abeeccf164cbe50f7bcf312810f72a/media-4304329%402x.png)
+![A presentation style menu showing two checkmarks and three flags of various colors that display horizontally left to right.](/images/com.apple.appkit/media-4304329@2x.png)
 
 When setting the `template` image favor images that tint (such as system images). Raster images don’t tint in this presentation style.
 

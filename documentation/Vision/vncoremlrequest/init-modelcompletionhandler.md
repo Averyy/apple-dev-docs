@@ -21,11 +21,11 @@ init(model: VNCoreMLModel, completionHandler: VNRequestCompletionHandler? = nil)
 
 #### Discussion
 
-Initialization can fail if the [`Core ML`](https://developer.apple.com/documentation/CoreML) model you provide isn’t supported in Vision, such as if the model doesn’t accept an image as input.
+Initialization can fail if the [`Core ML`](https://developer.apple.com/documentation/coreml) model you provide isn’t supported in Vision, such as if the model doesn’t accept an image as input.
 
 ## Parameters
 
-- `model`: The [`Core ML`](https://developer.apple.com/documentation/CoreML) model on which to base the Vision request.
+- `model`: The [`Core ML`](https://developer.apple.com/documentation/coreml) model on which to base the Vision request.
 - `completionHandler`: An optional block of code to execute after model initialization.
 
 ## See Also

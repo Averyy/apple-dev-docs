@@ -20,7 +20,7 @@ To enable extension syncing for your iOS content blocker extension or Safari web
 
 Only add this to your `Info.plist` if the bundle ID for your iOS app is different from the bundle ID for your macOS app.
 
-For more information, see [`Syncing Safari web extensions across devices and platforms`](https://developer.apple.com/documentation/SafariServices/syncing-safari-web-extensions-across-devices-and-platforms).
+For more information, see [`Syncing Safari web extensions across devices and platforms`](https://developer.apple.com/documentation/safariservices/syncing-safari-web-extensions-across-devices-and-platforms).
 
 ## See Also
 

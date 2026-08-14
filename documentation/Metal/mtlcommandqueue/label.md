@@ -22,7 +22,7 @@ var label: String? { get set }
 
 #### Discussion
 
-Set labels to help you quickly identify a GPU at runtime in the Metal debugging and profiling tools. See [`Naming resources and commands`](https://developer.apple.com/documentation/Xcode/Naming-resources-and-commands).
+Set labels to help you quickly identify a GPU at runtime in the Metal debugging and profiling tools. See [`Naming resources and commands`](https://developer.apple.com/documentation/xcode/naming-resources-and-commands).
 
 ## See Also
 

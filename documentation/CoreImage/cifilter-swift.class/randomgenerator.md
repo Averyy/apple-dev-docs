@@ -40,7 +40,7 @@ func random() -> CIImage {
 }
 ```
 
-![A random generator that displays random colors in each pixel.](https://docs-assets.developer.apple.com/published/46c6eb2447fc2ecb698f4c8c360f45de/media-3590973%402x.png)
+![A random generator that displays random colors in each pixel.](/images/com.apple.coreimage/media-3590973@2x.png)
 
 ## See Also
 

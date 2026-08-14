@@ -46,7 +46,7 @@ Safari 15.2 ships with iOS and iPadOS 15.2 and macOS 12.1.
 
 ###### New Features
 
-- Added support for using Private Click Measurement for in-app direct response advertising with [`SFSafariViewController`](https://developer.apple.com/documentation/SafariServices/SFSafariViewController).
+- Added support for using Private Click Measurement for in-app direct response advertising with [`SFSafariViewController`](https://developer.apple.com/documentation/safariservices/sfsafariviewcontroller).
 
 ##### Security
 

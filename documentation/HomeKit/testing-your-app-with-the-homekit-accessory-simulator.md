@@ -16,7 +16,7 @@ You download the HAS as part of the *Additional Tools for Xcode* package found o
 
 As a convenience, Xcode provides a link to the download page from the Capabilities pane. Xcode displays a button embedded in the HomeKit capability that takes you directly to the download page in Safari.
 
-![Screenshot showing the location of the HomeKit Accessory Simulator button in Xcode’s Capabilities pane.](https://docs-assets.developer.apple.com/published/ea8605b4e7c5de134ea2f66e8514aa5a/media-3150785%402x.png)
+![Screenshot showing the location of the HomeKit Accessory Simulator button in Xcode’s Capabilities pane.](/images/com.apple.homekit/media-3150785@2x.png)
 
 After downloading the disk image file, open it and navigate to the `Hardware` folder. Drag the `HomeKitAccessorySimulator.app` from there to your `Applications` folder. Double-click to launch the simulator.
 
@@ -24,7 +24,7 @@ After downloading the disk image file, open it and navigate to the `Hardware` fo
 
 Accessories in a home automation network are physical devices like light bulbs or garage door openers. Accessories provide control points called services. For example, a garage door opener might offer a door opener and a light. Each service, in turn, has characteristics—the values that describe and control the service. The light has a power state (on or off), a brightness level, and so on. Accessories also have hidden services, like the accessory information service that provides manufacturing information.
 
-![Block diagram of an example garage door accessory with several user interactive services and one hidden service.](https://docs-assets.developer.apple.com/published/f59dbb43abd61d5f338c9cd8eb5268a4/media-3150784%402x.png)
+![Block diagram of an example garage door accessory with several user interactive services and one hidden service.](/images/com.apple.homekit/media-3150784@2x.png)
 
 In the HomeKit Accessory Simulator, define accessories that you can use with your app. For details, see the *HomeKit Accessory Simulation Help*, accessible through the simulator’s `Help` menu.
 
@@ -38,7 +38,7 @@ In the HomeKit Accessory Simulator, define accessories that you can use with you
 
 To be able to access simulated accessories from a HomeKit enabled app, you associate them with a home network. You can do this from any device on your local area network running the Home app, which is installed on all iOS devices by default. The accessory becomes part of the logged-in user’s home network. From the Home or Rooms tab, tap the plus button and choose Add Accessory. Then follow the instructions in the dialog that appears.
 
-![Screenshot showing the location of the Add Accessory button in Apple’s Home app.](https://docs-assets.developer.apple.com/published/11f756cd175d892f9656efb1d2bb15f0/media-3150786%402x.png)
+![Screenshot showing the location of the Add Accessory button in Apple’s Home app.](/images/com.apple.homekit/media-3150786@2x.png)
 
 Alternatively, you can call the [`addAndSetupAccessories(completionHandler:)`](hmhome/addandsetupaccessories(completionhandler:).md) method from your app.
 

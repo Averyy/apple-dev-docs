@@ -22,7 +22,7 @@ final var outputPixelFormatType: OSType { get set }
 
 #### Discussion
 
-The default value is [`kCVPixelFormatType_OneComponent8`](https://developer.apple.com/documentation/CoreVideo/kCVPixelFormatType_OneComponent8).
+The default value is [`kCVPixelFormatType_OneComponent8`](https://developer.apple.com/documentation/corevideo/kcvpixelformattype_onecomponent8).
 
 ## See Also
 

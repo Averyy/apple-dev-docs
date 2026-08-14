@@ -21,7 +21,7 @@ func cancelExport()
 
 #### Discussion
 
-Apple discourages the use of this symbol. Use [`cancel()`](https://developer.apple.com/documentation/Swift/Task/cancel()) on the [`Task`](https://developer.apple.com/documentation/Swift/Task) or parent task that initiated the export instead.
+Apple discourages the use of this symbol. Use [`cancel()`](https://developer.apple.com/documentation/swift/task/cancel()) on the [`Task`](https://developer.apple.com/documentation/swift/task) or parent task that initiated the export instead.
 
 
 ---

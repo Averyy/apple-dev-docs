@@ -58,7 +58,7 @@ Even when an object that conforms to [`UIFocusItem`](uifocusitem.md) isn’t cur
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 - [UIFocusEnvironment](uifocusenvironment.md)
 ### Conforming Types
 - [UIActionSheet](uiactionsheet.md)

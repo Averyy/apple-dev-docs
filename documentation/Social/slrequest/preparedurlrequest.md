@@ -3,7 +3,7 @@
 **Framework**: Social  
 **Kind**: method
 
-Returns an authorized URL request that can be sent using an [`NSURLConnection`](https://developer.apple.com/documentation/Foundation/NSURLConnection) object.
+Returns an authorized URL request that can be sent using an [`NSURLConnection`](https://developer.apple.com/documentation/foundation/nsurlconnection) object.
 
 **Availability**:
 - iOS 6.0+

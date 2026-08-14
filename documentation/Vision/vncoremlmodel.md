@@ -21,7 +21,7 @@ class VNCoreMLModel
 
 #### Overview
 
-A [`Core ML`](https://developer.apple.com/documentation/CoreML) model encapsulates the information trained from a data set used to drive Vision recognition requests. See [`Getting a Core ML Model`](https://developer.apple.com/documentation/CoreML/getting-a-core-ml-model) for instructions on training your own model. Once you train the model, use this class to initialize a [`VNCoreMLRequest`](vncoremlrequest.md) for identification.
+A [`Core ML`](https://developer.apple.com/documentation/coreml) model encapsulates the information trained from a data set used to drive Vision recognition requests. See [`Getting a Core ML Model`](https://developer.apple.com/documentation/coreml/getting-a-core-ml-model) for instructions on training your own model. Once you train the model, use this class to initialize a [`VNCoreMLRequest`](vncoremlrequest.md) for identification.
 
 ## Topics
 
@@ -38,14 +38,14 @@ A [`Core ML`](https://developer.apple.com/documentation/CoreML) model encapsulat
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

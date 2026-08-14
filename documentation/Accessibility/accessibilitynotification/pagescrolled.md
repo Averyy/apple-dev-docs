@@ -22,7 +22,7 @@ struct PageScrolled
 
 #### Overview
 
-Include an announcement value, such as [`String`](https://developer.apple.com/documentation/Swift/String) or [`AttributedString`](https://developer.apple.com/documentation/Foundation/AttributedString), for an assistive app to announce. When an assistive app repeatedly receives the same scroll position value, it indicates to the user that scrolling can’t continue due to a border or boundary.
+Include an announcement value, such as [`String`](https://developer.apple.com/documentation/swift/string) or [`AttributedString`](https://developer.apple.com/documentation/foundation/attributedstring), for an assistive app to announce. When an assistive app repeatedly receives the same scroll position value, it indicates to the user that scrolling can’t continue due to a border or boundary.
 
 ## Topics
 

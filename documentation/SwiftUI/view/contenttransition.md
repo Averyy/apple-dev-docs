@@ -57,9 +57,9 @@ This example uses an ease-in–ease-out animation with a five-second duration to
 
 | Time | Display |
 | --- | --- |
-| Start | ![The text Content transition in a small red font.](https://docs-assets.developer.apple.com/published/eba2db780339b6fbbd97763e652ad3b2/ContentTransition-1%402x.png) |
-| Middle | ![The text Content transition in a medium brown font.](https://docs-assets.developer.apple.com/published/746174d6317e87efbfe56c78d5e18a17/ContentTransition-2%402x.png) |
-| End | ![The text Content transition in a large green font.](https://docs-assets.developer.apple.com/published/534b62d2cd433733bbf2df631ad7fb5c/ContentTransition-3%402x.png) |
+| Start | ![The text Content transition in a small red font.](/images/com.apple.SwiftUI/ContentTransition-1@2x.png) |
+| Middle | ![The text Content transition in a medium brown font.](/images/com.apple.SwiftUI/ContentTransition-2@2x.png) |
+| End | ![The text Content transition in a large green font.](/images/com.apple.SwiftUI/ContentTransition-3@2x.png) |
 
 To control whether content transitions use GPU-accelerated rendering, set the value of the [`contentTransitionAddsDrawingGroup`](environmentvalues/contenttransitionaddsdrawinggroup.md) environment variable.
 

@@ -16,12 +16,12 @@ func show(relativeTo positioningRect: NSRect, of positioningView: NSView, prefer
 
 #### Discussion
 
-This method raises [`internalInconsistencyException`](https://developer.apple.com/documentation/Foundation/NSExceptionName/internalInconsistencyException) if [`contentViewController`](nspopover/contentviewcontroller.md) or the view controller’s view is `nil`. If the popover is already being shown, this method updates the anchored view, rectangle, and preferred edge. If the positioning view is not visible, this method does nothing.
+This method raises [`internalInconsistencyException`](https://developer.apple.com/documentation/foundation/nsexceptionname/internalinconsistencyexception) if [`contentViewController`](nspopover/contentviewcontroller.md) or the view controller’s view is `nil`. If the popover is already being shown, this method updates the anchored view, rectangle, and preferred edge. If the positioning view is not visible, this method does nothing.
 
 ## Parameters
 
 - `positioningRect`: The rectangle within `positioningView` relative to which the popover should be positioned. Normally set to the bounds of `positioningView`. May be an empty rectangle, which will default to the bounds of `positioningView`.
-- `positioningView`: The view relative to which the popover should be positioned. Causes the method to raise  [`invalidArgumentException`](https://developer.apple.com/documentation/Foundation/NSExceptionName/invalidArgumentException) if `nil`.
+- `positioningView`: The view relative to which the popover should be positioned. Causes the method to raise  [`invalidArgumentException`](https://developer.apple.com/documentation/foundation/nsexceptionname/invalidargumentexception) if `nil`.
 - `preferredEdge`: The edge of `positioningView` the popover should prefer to be anchored to.
 
 ## See Also

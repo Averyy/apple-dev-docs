@@ -25,9 +25,9 @@ The Contacts framework is available on all Apple platforms, and replaces the Add
 
 The contact class ([`CNContact`](cncontact.md)) is a thread-safe, immutable value object of contact properties, such as the contact’s name, image, and phone numbers.
 
-![An organizational diagram showing that a contact object has a mutable variant and can have properties that labeled value objects represent.](https://docs-assets.developer.apple.com/published/6134ab604038f65abb3b1934845877e3/media-4097928%402x.png)
+![An organizational diagram showing that a contact object has a mutable variant and can have properties that labeled value objects represent.](/images/com.apple.contacts/media-4097928@2x.png)
 
-The contact class is like [`NSDictionary`](https://developer.apple.com/documentation/Foundation/NSDictionary) in that it has a mutable subclass, [`CNMutableContact`](cnmutablecontact.md), you can use to modify contact properties. For contact properties that can have multiple values, such as phone numbers and email addresses, the framework uses an array of [`CNLabeledValue`](cnlabeledvalue.md) objects. The labeled value class is a thread-safe, immutable tuple of labels and values. Labels describe each value to the user, allowing differentiation, such as home and work phone numbers. The Contacts framework provides some predefined labels and you can create your own custom labels.
+The contact class is like [`NSDictionary`](https://developer.apple.com/documentation/foundation/nsdictionary) in that it has a mutable subclass, [`CNMutableContact`](cnmutablecontact.md), you can use to modify contact properties. For contact properties that can have multiple values, such as phone numbers and email addresses, the framework uses an array of [`CNLabeledValue`](cnlabeledvalue.md) objects. The labeled value class is a thread-safe, immutable tuple of labels and values. Labels describe each value to the user, allowing differentiation, such as home and work phone numbers. The Contacts framework provides some predefined labels and you can create your own custom labels.
 
 ```swift
 import UIKit
@@ -181,7 +181,7 @@ if contact.isKeyAvailable(CNContactPhoneNumbersKey) {
 
 You can automatically link contacts in different accounts that represent the same person. Linked contacts display in macOS and iOS apps as unified contacts. A unified contact is an in-memory, temporary view of the set of linked contacts that the system merges into one contact.
 
-![A diagram that shows the merging of a person’s iCloud and social media account contact information into a single, unified contact.](https://docs-assets.developer.apple.com/published/cfa03d439ca8d58fde7097c96da298ec/media-4097927%402x.png)
+![A diagram that shows the merging of a person’s iCloud and social media account contact information into a single, unified contact.](/images/com.apple.contacts/media-4097927@2x.png)
 
 By default the Contacts framework returns unified contacts. Each fetched unified contact object ([`CNContact`](cncontact.md)) has its own unique identifier that’s different from any individual contact’s identifier in the set of linked contacts. When refetching a unified contact, be sure to use its identifier.
 
@@ -231,17 +231,17 @@ do {
 
 ###### Contacts Changed Notifications
 
-After successfully executing a save, the contact store posts a [`CNContactStoreDidChange`](https://developer.apple.com/documentation/Foundation/NSNotification/Name-swift.struct/CNContactStoreDidChange) notification to the default notification center. If you cache any Contacts framework objects, you need to refetch those objects, either by their identifiers, or with the predicates that you used to originally fetch them, and then release the cached objects. Note that cached objects are stale, but not invalid.
+After successfully executing a save, the contact store posts a [`CNContactStoreDidChange`](https://developer.apple.com/documentation/foundation/nsnotification/name-swift.struct/cncontactstoredidchange) notification to the default notification center. If you cache any Contacts framework objects, you need to refetch those objects, either by their identifiers, or with the predicates that you used to originally fetch them, and then release the cached objects. Note that cached objects are stale, but not invalid.
 
 ###### Containers and Groups
 
 A user may have contacts in their device’s local account or server accounts that they configure to sync contacts. Each account has at least one container of contacts. A contact can be in only one container.
 
-![A diagram that shows two containers — one for a person’s iCloud contacts and one for that person’s social media account contacts.](https://docs-assets.developer.apple.com/published/2bbc8662204e71cf1615ea930e94bc5d/media-4097926%402x.png)
+![A diagram that shows two containers — one for a person’s iCloud contacts and one for that person’s social media account contacts.](/images/com.apple.contacts/media-4097926@2x.png)
 
 A group is a set of contacts within a container. Not all accounts support groups, and some accounts also support subgroups. An iCloud account has only one container and may have many groups, but no subgroups. An Exchange account doesn’t support groups, but may have multiple containers representing Exchange folders.
 
-![A diagram that shows two containers — one for a person’s iCloud contacts and one for that person’s social media account contacts. The iCloud container has two groups within it that each have three contacts. The two groups overlap with one contact. The social media account container has one group of two contacts in it. ](https://docs-assets.developer.apple.com/published/585822f69e7d848112def4280e5f6a94/media-4097924%402x.png)
+![A diagram that shows two containers — one for a person’s iCloud contacts and one for that person’s social media account contacts. The iCloud container has two groups within it that each have three contacts. The two groups overlap with one contact. The social media account container has one group of two contacts in it. ](/images/com.apple.contacts/media-4097924@2x.png)
 
 ## Topics
 
@@ -252,9 +252,9 @@ A group is a set of contacts within a container. Not all accounts support groups
   Allow people to grant your app access to contact data by adding the Contact access button and Contact access picker to your app.
 - [class CNContactStore](cncontactstore.md)
   The object that fetches and saves contacts, groups, and containers from the user’s Contacts database.
-- [NSContactsUsageDescription](../BundleResources/Information-Property-List/NSContactsUsageDescription.md)
+- [NSContactsUsageDescription](../bundleresources/information-property-list/nscontactsusagedescription.md)
   A message that tells people why the app is requesting access to their contacts.
-- [com.apple.developer.contacts.notes](../BundleResources/Entitlements/com.apple.developer.contacts.notes.md)
+- [com.apple.developer.contacts.notes](../bundleresources/entitlements/com.apple.developer.contacts.notes.md)
   A Boolean value that indicates whether the app may access the notes in contact entries.
 ### Contact data
 - [class CNContact](cncontact.md)

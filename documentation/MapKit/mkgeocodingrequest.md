@@ -22,7 +22,7 @@ class MKGeocodingRequest
 
 #### Discussion
 
-Use this class to look up the coordinate for an address string you provide, for example if you want to display the location in a map. This example shows how to use a [`Task`](https://developer.apple.com/documentation/Swift/Task) modifier on a SwiftUI view to geocode an array of street addresses to the corresponding coordinates that MapKit returns in an array of [`MKMapItem`](mkmapitem.md) objects.
+Use this class to look up the coordinate for an address string you provide, for example if you want to display the location in a map. This example shows how to use a [`Task`](https://developer.apple.com/documentation/swift/task) modifier on a SwiftUI view to geocode an array of street addresses to the corresponding coordinates that MapKit returns in an array of [`MKMapItem`](mkmapitem.md) objects.
 
 ```swift
 
@@ -90,14 +90,14 @@ struct MyGeocoderView: View {
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

@@ -276,9 +276,9 @@ Bridging from `NSDictionary` to `Dictionary` first calls the `copy(with:)` metho
 ### Using a Dictionary as a Data Value
 - [init?(from: MLDataValue.DictionaryType)](dictionary/init(from:)-5zhfu.md)
 ### Reference Types
-- [class NSDictionary](../Foundation/NSDictionary.md)
+- [class NSDictionary](../foundation/nsdictionary.md)
   A static collection of objects associated with unique keys.
-- [class NSMutableDictionary](../Foundation/NSMutableDictionary.md)
+- [class NSMutableDictionary](../foundation/nsmutabledictionary.md)
   A dynamic collection of objects associated with unique keys.
 ### Supporting Types
 - [Dictionary.Keys](dictionary/keys-swift.struct.md)
@@ -329,7 +329,7 @@ Bridging from `NSDictionary` to `Dictionary` first calls the `copy(with:)` metho
 ## Relationships
 
 ### Conforms To
-- [CVAttachmentValueRepresentable](../CoreVideo/CVAttachmentValueRepresentable.md)
+- [CVAttachmentValueRepresentable](../corevideo/cvattachmentvaluerepresentable.md)
 - [CVarArg](cvararg.md)
 - [Collection](collection.md)
 - [Copyable](copyable.md)
@@ -342,7 +342,7 @@ Bridging from `NSDictionary` to `Dictionary` first calls the `copy(with:)` metho
 - [Escapable](escapable.md)
 - [ExpressibleByDictionaryLiteral](expressiblebydictionaryliteral.md)
 - [Hashable](hashable.md)
-- [MLDataValueConvertible](../CreateML/MLDataValueConvertible.md)
+- [MLDataValueConvertible](../createml/mldatavalueconvertible.md)
 - [Sendable](sendable.md)
 - [SendableMetatype](sendablemetatype.md)
 - [Sequence](sequence.md)

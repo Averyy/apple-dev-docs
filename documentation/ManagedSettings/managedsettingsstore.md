@@ -141,7 +141,7 @@ In a few cases, you can also access the effective settings. For example, a media
 ## Relationships
 
 ### Conforms To
-- [ObservableObject](../Combine/ObservableObject.md)
+- [ObservableObject](../combine/observableobject.md)
 
 
 ---

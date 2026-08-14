@@ -19,7 +19,7 @@ var videoExportPreset: String { get set }
 
 #### Discussion
 
-The value of this key is one of the export presets supported by the [`AVAssetExportSession`](https://developer.apple.com/documentation/AVFoundation/AVAssetExportSession) class. For a list of possible values, see the export preset constants in [`AVAssetExportSession`](https://developer.apple.com/documentation/AVFoundation/AVAssetExportSession).
+The value of this key is one of the export presets supported by the [`AVAssetExportSession`](https://developer.apple.com/documentation/avfoundation/avassetexportsession) class. For a list of possible values, see the export preset constants in [`AVAssetExportSession`](https://developer.apple.com/documentation/avfoundation/avassetexportsession).
 
 ## See Also
 

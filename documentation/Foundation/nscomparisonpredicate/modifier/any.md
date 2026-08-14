@@ -22,7 +22,7 @@ case any
 
 #### Discussion
 
-The left hand side must be a collection. The corresponding predicate compares each value in the left hand side against the right hand side and returns [`true`](https://developer.apple.com/documentation/Swift/true) when it finds the first match—or [`false`](https://developer.apple.com/documentation/Swift/false) if no match is found
+The left hand side must be a collection. The corresponding predicate compares each value in the left hand side against the right hand side and returns [`true`](https://developer.apple.com/documentation/swift/true) when it finds the first match—or [`false`](https://developer.apple.com/documentation/swift/false) if no match is found
 
 ## See Also
 

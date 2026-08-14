@@ -16,7 +16,7 @@ var allowedInputSourceLocales: [String]? { get set }
 
 #### Discussion
 
-The value of this property is an array of [`NSString`](https://developer.apple.com/documentation/Foundation/NSString) objects, each of which contains a locale identifier. You can assign the meta-locale identifier, [`NSAllRomanInputSourcesLocaleIdentifier`](nsallromaninputsourceslocaleidentifier.md), to specify input sources that are limited for Roman script editing.
+The value of this property is an array of [`NSString`](https://developer.apple.com/documentation/foundation/nsstring) objects, each of which contains a locale identifier. You can assign the meta-locale identifier, [`NSAllRomanInputSourcesLocaleIdentifier`](nsallromaninputsourceslocaleidentifier.md), to specify input sources that are limited for Roman script editing.
 
 
 ---

@@ -31,7 +31,7 @@ The default value of this property is `nil`, which means that the scene’s [`an
 
 A camera must be added as a child of the scene for it to render that scene.
 
-Listing 1 shows, in Swift, how to add a camera to an [`SKScene`](skscene.md) named `scene`. The camera is positioned in the center of the scene which gives the same result as rendering a camera-less scene with an [`anchorPoint`](skscene/anchorpoint.md) of [`zero`](https://developer.apple.com/documentation/CoreFoundation/CGPoint/zero).
+Listing 1 shows, in Swift, how to add a camera to an [`SKScene`](skscene.md) named `scene`. The camera is positioned in the center of the scene which gives the same result as rendering a camera-less scene with an [`anchorPoint`](skscene/anchorpoint.md) of [`zero`](https://developer.apple.com/documentation/corefoundation/cgpoint/zero).
 
 Listing 1. Adding a camera to a scene
 

@@ -16,7 +16,7 @@ var isSetOnMouseExited: Bool { get }
 
 #### Discussion
 
-[`true`](https://developer.apple.com/documentation/Swift/true) if the receiver becomes current when it receives a [`mouseExited(with:)`](nscursor/mouseexited(with:).md) message; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
+[`true`](https://developer.apple.com/documentation/swift/true) if the receiver becomes current when it receives a [`mouseExited(with:)`](nscursor/mouseexited(with:).md) message; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
 
 ## See Also
 

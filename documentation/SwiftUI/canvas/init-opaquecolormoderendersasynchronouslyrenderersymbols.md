@@ -58,9 +58,9 @@ You can use any SwiftUI view for the `mark` input:
 ScatterPlotView(rects: rects, mark: Image(systemName: "circle"))
 ```
 
-If the `rects` input contains 50 randomly arranged [`CGRect`](https://developer.apple.com/documentation/CoreFoundation/CGRect) instances, SwiftUI draws a plot like this:
+If the `rects` input contains 50 randomly arranged [`CGRect`](https://developer.apple.com/documentation/corefoundation/cgrect) instances, SwiftUI draws a plot like this:
 
-![A screenshot of a scatter plot inside a blue rectangle, containing](https://docs-assets.developer.apple.com/published/c9690af16722852c643d0340841d7eb1/Canvas-init-1%402x.png)
+![A screenshot of a scatter plot inside a blue rectangle, containing](/images/com.apple.SwiftUI/Canvas-init-1@2x.png)
 
 The symbol inputs, like all other elements that you draw to the canvas, lack individual accessibility and interactivity, even if the original SwiftUI view has these attributes. However, you can add accessibility and interactivity modifers to the canvas as a whole.
 

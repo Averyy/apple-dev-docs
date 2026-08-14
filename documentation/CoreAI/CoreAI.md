@@ -18,13 +18,13 @@ Run AI models in your app on Apple silicon.
 
 Core AI helps you build, run, and deploy AI models in your app. Designed with Apple silicon in mind, Core AI allows your app to use the latest model architectures and inference techniques across the CPU, GPU, and Neural Engine. The Swift API makes common tasks simple, while giving you more control over model specialization, caching, and inference performance when needed.
 
-![An illustration showing AI models connecting to Apple devices.](https://docs-assets.developer.apple.com/published/3436c2b440f83e13deb0e14474c5e08e/core-ai-framework-hero%402x.png)
+![An illustration showing AI models connecting to Apple devices.](/images/com.apple.coreai/core-ai-framework-hero@2x.png)
 
 Alongside the framework, Core AI includes additional tools for model preparation, integration, and debugging. Prepare your models for Apple silicon with [`Core AI Optimization`](https://developer.apple.comhttps://apple.github.io/coreai-optimization), then convert them into the `.aimodel` format with [`Core AI PyTorch Extensions`](https://developer.apple.comhttps://apple.github.io/coreai-torch). The [`Core AI Debugger`](https://developer.apple.comhttps://developer.apple.com/core-ai-debugger/) app supports visualization and numeric debugging, letting you inspect model structure and trace tensor values directly back to your Python source code. For a catalog of ready-to-export models and a Swift package with helpers for common inference patterns, see [`Core AI Models`](https://developer.apple.comhttps://github.com/apple/coreai-models).
 
 Core AI also integrates with Xcode and the developer toolchain. The Core AI debug gauge and Core AI instrument help you monitor and profile inference performance in your app. You can also compile models ahead of time with the `coreai-build` command-line tool.
 
-If your app uses model types other than neural networks, such as decision trees or tabular feature engineering, see [`Core ML`](https://developer.apple.com/documentation/CoreML).
+If your app uses model types other than neural networks, such as decision trees or tabular feature engineering, see [`Core ML`](https://developer.apple.com/documentation/coreml).
 
 ## Topics
 

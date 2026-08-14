@@ -30,7 +30,7 @@ The state preservation system calls this method at the beginning of the preserva
 
 Your implementation of this method can encode restorable view and view controller objects that it needs to reference. Encoding a restorable view or view controller writes that object’s restoration identifier to the coder. (That identifier is used during the decode process to locate the new version of the object.) If the view or view controller defines a [`encodeRestorableState(with:)`](uiviewcontroller/encoderestorablestate(with:).md) method, that method is also called at some point so that the object can encode its own state.
 
-Apart from views and view controllers, other objects follow the normal serialization process and must adopt the [`NSCoding`](https://developer.apple.com/documentation/Foundation/NSCoding) protocol before they can be encoded. Encoding such objects embeds the object’s contents in the archive directly. During the decode process, a new object is created and initialized with the data from the archive.
+Apart from views and view controllers, other objects follow the normal serialization process and must adopt the [`NSCoding`](https://developer.apple.com/documentation/foundation/nscoding) protocol before they can be encoded. Encoding such objects embeds the object’s contents in the archive directly. During the decode process, a new object is created and initialized with the data from the archive.
 
 ## Parameters
 

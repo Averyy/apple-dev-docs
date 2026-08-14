@@ -6,7 +6,7 @@ Wrap a daemon in an app-like structure to use an entitlement thatʼs authorized 
 
 #### Overview
 
-Some APIs are usable from a daemon but require that the daemon claim a restricted entitlement thatʼs authorized by a provisioning profile. For example, the [`Endpoint Security`](https://developer.apple.com/documentation/EndpointSecurity) API is usable from a daemon but requires that the daemon has the [`com.apple.developer.endpoint-security.client`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.endpoint-security.client) entitlement, and that it’s authorized by a provisioning profile. This is problematic because a daemon is a standalone executable, so you canʼt embed a provisioning profile in it. To get around this limitation, wrap your daemon in an app-like structure.
+Some APIs are usable from a daemon but require that the daemon claim a restricted entitlement thatʼs authorized by a provisioning profile. For example, the [`Endpoint Security`](https://developer.apple.com/documentation/endpointsecurity) API is usable from a daemon but requires that the daemon has the [`com.apple.developer.endpoint-security.client`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.endpoint-security.client) entitlement, and that it’s authorized by a provisioning profile. This is problematic because a daemon is a standalone executable, so you canʼt embed a provisioning profile in it. To get around this limitation, wrap your daemon in an app-like structure.
 
 > ❗ **Important**: If the API youʼre using supports system extensions, avoid this issue by switching from a daemon to a system extension. System extensions readily support provisioning profiles, and Xcode automatically creates and embeds the profile in that case.
 
@@ -28,11 +28,11 @@ Switch to the Signing & Capabilities tab and configure it as follows:
 - Add the Hardened Runtime capability, which youʼll need to notarize your daemon.
 - Add the Custom Network Protocol capability, which enables the `com.apple.developer.networking.custom-protocol` entitlement that must be authorized by a provisioning profile. Adding it to your target triggers Xcodeʼs automatic code-signing machinery to register your App ID, create a provisioning profile for that App ID, and embed that provisioning profile in the built product.
 
-> ❗ **Important**: If your ultimate goal is to use the [`com.apple.developer.endpoint-security.client`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.endpoint-security.client) entitlement, first add the Custom Network Protocol capability to force Xcode to register your App ID and generate an initial provisioning profile. Then follow the instructions on [`Provisioning with managed capabilities`](https://developer.apple.comhttps://developer.apple.com/help/account/reference/provisioning-with-managed-capabilities) to add the Endpoint Security additional capability to your App ID.  Finally, remove the Custom Network Protocol capability, assuming your daemon doesn’t need it for other reasons.
+> ❗ **Important**: If your ultimate goal is to use the [`com.apple.developer.endpoint-security.client`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.endpoint-security.client) entitlement, first add the Custom Network Protocol capability to force Xcode to register your App ID and generate an initial provisioning profile. Then follow the instructions on [`Provisioning with managed capabilities`](https://developer.apple.comhttps://developer.apple.com/help/account/reference/provisioning-with-managed-capabilities) to add the Endpoint Security additional capability to your App ID.  Finally, remove the Custom Network Protocol capability, assuming your daemon doesn’t need it for other reasons.
 
 Switch to the Build Settings tab and remove the Enable App Sandbox (`ENABLE_APP_SANDBOX`) build setting, if present.
 
-Switch to the Info tab and delete all the app-specific items ([`NSPrincipalClass`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSPrincipalClass), [`NSMainStoryboardFile`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSMainStoryboardFile), [`NSSupportsSuddenTermination`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSSupportsSuddenTermination), `NSSupportsAutomaticTermination`, and [`CFBundleIconFile`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/CFBundleIconFile)).  Some of these items may not be present, depending on the exact version of Xcode youʼre using.
+Switch to the Info tab and delete all the app-specific items ([`NSPrincipalClass`](https://developer.apple.com/documentation/bundleresources/information-property-list/nsprincipalclass), [`NSMainStoryboardFile`](https://developer.apple.com/documentation/bundleresources/information-property-list/nsmainstoryboardfile), [`NSSupportsSuddenTermination`](https://developer.apple.com/documentation/bundleresources/information-property-list/nssupportssuddentermination), `NSSupportsAutomaticTermination`, and [`CFBundleIconFile`](https://developer.apple.com/documentation/bundleresources/information-property-list/cfbundleiconfile)).  Some of these items may not be present, depending on the exact version of Xcode youʼre using.
 
 In the Project navigator, remove the `AppDelegate.swift`, `ViewController.swift`, `Assets.xcassets`, and `Main.storyboard` files.
 
@@ -152,11 +152,11 @@ Or, if youʼre using an alternative build system, like a makefile, update it to 
   Sign Mac code for distribution using either Xcode or command-line tools.
 - [Using the latest code signature format](using-the-latest-code-signature-format.md)
   Update legacy app code signatures so your app runs on current OS releases.
-- [Notarizing macOS software before distribution](../Security/notarizing-macos-software-before-distribution.md)
+- [Notarizing macOS software before distribution](../security/notarizing-macos-software-before-distribution.md)
   Give users even more confidence in your macOS software by submitting it to Apple for notarization.
 - [Synchronizing code signing identities with your developer account](sharing-your-teams-signing-certificates.md)
   Ensure you and other team members can sign your organization’s code and installer packages in Xcode.
-- [TN3125: Inside Code Signing: Provisioning Profiles](../Technotes/tn3125-inside-code-signing-provisioning-profiles.md)
+- [TN3125: Inside Code Signing: Provisioning Profiles](../technotes/tn3125-inside-code-signing-provisioning-profiles.md)
   Learn how provisioning profiles enable third-party code to run on Apple platforms.
 
 

@@ -22,7 +22,7 @@ class MapKit extends EventTarget
 
 #### Overview
 
-The [`mapkit`](mapkit.md) object is the main namespace for the MapKit JS framework. Similar to [`MapKit`](https://developer.apple.com/documentation/MapKit) for apps, you can use MapKit JS to display interactive maps with customized annotations and overlays, and provide directions and search services. Your app can supply step-by-step navigation, and help a user find a location by autocompleting a search query.
+The [`mapkit`](mapkit.md) object is the main namespace for the MapKit JS framework. Similar to [`MapKit`](https://developer.apple.com/documentation/mapkit) for apps, you can use MapKit JS to display interactive maps with customized annotations and overlays, and provide directions and search services. Your app can supply step-by-step navigation, and help a user find a location by autocompleting a search query.
 
 MapKit JS lets you customize the look of your map. You can choose style details for overlays and annotations, display a standard street map or one that uses satellite imagery, and adjust the visibility of map controls. Additionally, you can customize a map’s behavior by providing event handlers that cause the map to scroll or respond when users select items. You can also enable or disable panning, zooming, and rotation.
 

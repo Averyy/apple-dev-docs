@@ -17,7 +17,7 @@ Access and share health and fitness data while maintaining the user’s privacy 
 
 HealthKit provides a central repository for health and fitness data on iPhone and Apple Watch. With the user’s permission, apps communicate with the HealthKit store to access and share this data.
 
-![An image showing the Health app summary screen.](https://docs-assets.developer.apple.com/published/5dc94eee75b3c9209adc58b2bb39f5ef/health-summary%402x.png)
+![An image showing the Health app summary screen.](/images/com.apple.healthkit/health-summary@2x.png)
 
 Creating a complete, personalized health and fitness experience includes a variety of tasks:
 
@@ -44,7 +44,7 @@ HealthKit is also designed to manage and merge data from multiple sources. For e
   Request permission to read and share data in your app.
 - [Protecting user privacy](protecting-user-privacy.md)
   Respect and safeguard your user’s privacy.
-- [HealthKit updates](../Updates/HealthKit.md)
+- [HealthKit updates](../updates/healthkit.md)
   Learn about important changes to HealthKit.
 - [HealthKitUI](../healthkitui/healthkitui.md)
   Display user interface that enables a person to view and interact with their health data.

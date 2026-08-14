@@ -19,7 +19,7 @@ enum : unsigned int {
 
 ### Constants
 - [kINQUIRY_VERSION_DESCRIPTOR_SAT](1643311-anonymous/kinquiry_version_descriptor_sat.md)
-- [kINQUIRY_VERSION_DESCRIPTOR_SAT](../driverkit/1643311-anonymous/kinquiry_version_descriptor_sat.md)
+- [kINQUIRY_VERSION_DESCRIPTOR_SAT](../driverkit/kinquiry_version_descriptor_sat.md)
 
 
 ---

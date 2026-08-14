@@ -22,7 +22,7 @@ Set this property to an ISO 3166-1 alpha-2, two-letter country code. Any system-
 
 This property is optional and you choose how to derive the value. You can set this property using the country from a person’s billing address — which is how the App Store sets its search territory — or you can use some other source, for example, language settings.
 
-The alternative marketplace associates an app it distributes with the countries in which it’s available by defining `countriesSupported` in the app catalog that Applebot crawls. For more information, see [`Building a searchable catalog for your marketplace app for inclusion in Spotlight`](https://developer.apple.com/documentation/AppStoreConnectAPI/building-a-searchable-catalog-for-your-marketplace-app-for-inclusion-in-spotlight#4330689).
+The alternative marketplace associates an app it distributes with the countries in which it’s available by defining `countriesSupported` in the app catalog that Applebot crawls. For more information, see [`Building a searchable catalog for your marketplace app for inclusion in Spotlight`](https://developer.apple.com/documentation/appstoreconnectapi/building-a-searchable-catalog-for-your-marketplace-app-for-inclusion-in-spotlight).
 
 ## See Also
 

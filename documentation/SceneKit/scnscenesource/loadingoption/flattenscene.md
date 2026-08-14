@@ -22,9 +22,9 @@ static let flattenScene: SCNSceneSource.LoadingOption
 
 #### Discussion
 
-The value for this key is an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) object containing a Boolean value. The default value is [`false`](https://developer.apple.com/documentation/Swift/false).
+The value for this key is an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) object containing a Boolean value. The default value is [`false`](https://developer.apple.com/documentation/swift/false).
 
-If you set this option’s value to [`true`](https://developer.apple.com/documentation/Swift/true), SceneKit attempts to reduce the complexity of the scene graph loaded from the scene source by merging geometries and combining nodes. Use this option for more efficient rendering when manipulation of the scene graph is not needed (for example, when rendering a quick preview of a scene’s contents).
+If you set this option’s value to [`true`](https://developer.apple.com/documentation/swift/true), SceneKit attempts to reduce the complexity of the scene graph loaded from the scene source by merging geometries and combining nodes. Use this option for more efficient rendering when manipulation of the scene graph is not needed (for example, when rendering a quick preview of a scene’s contents).
 
 ## See Also
 

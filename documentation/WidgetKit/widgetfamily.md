@@ -26,7 +26,7 @@ Widgets can support one or more sizes, giving users the flexibility to configure
 
 > **Note**: The sizes of widgets may vary across devices. Your widget content should be flexible and avoid using fixed values.
 
-You specify the sizes your widget supports using the [`supportedFamilies(_:)`](https://developer.apple.com/documentation/SwiftUI/WidgetConfiguration/supportedFamilies(_:)) property modifier when defining your widget’s configuration.
+You specify the sizes your widget supports using the [`supportedFamilies(_:)`](https://developer.apple.com/documentation/swiftui/widgetconfiguration/supportedfamilies(_:)) property modifier when defining your widget’s configuration.
 
 ```swift
 struct GameStatusWidget: Widget {
@@ -75,13 +75,13 @@ Use the [`WidgetFamily`](widgetfamily.md) value to return the appropriate conten
 ## Relationships
 
 ### Conforms To
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [RawRepresentable](../Swift/RawRepresentable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [RawRepresentable](../swift/rawrepresentable.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 
@@ -93,7 +93,7 @@ Use the [`WidgetFamily`](widgetfamily.md) value to return the appropriate conten
   Offer Live Activities, controls, animate data updates, and add interactivity to widgets.
 - [Preparing widgets for additional platforms, contexts, and appearances](preparing-widgets-for-additional-contexts-and-appearances.md)
   Create widgets that support additional platforms and adapt to their context.
-- [protocol Widget](../SwiftUI/Widget.md)
+- [protocol Widget](../swiftui/widget.md)
   The configuration and content of a widget to display on the Home screen or in Notification Center.
 - [struct StaticConfiguration](staticconfiguration.md)
   An object describing the content of a widget that has no user-configurable options.

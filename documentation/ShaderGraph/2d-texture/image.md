@@ -35,11 +35,11 @@ The Image node creates a material from an image file. This node samples data fro
 
 Below is an example of a simple node graph that uses the Image node to create a material from an image:
 
-![None](https://docs-assets.developer.apple.com/published/98d58918f59501fe37fa0e93fa270b92/ImageGraph.png)
+![None](/images/ShaderGraph-Docs/ImageGraph.png)
 
 Below, the resulting texture applies to a cube:
 
-![None](https://docs-assets.developer.apple.com/published/353f7f54898ac6f9c13f9374acc8cb66/ImageMaterial.png)
+![None](/images/ShaderGraph-Docs/ImageMaterial.png)
 
 ## See Also
 

@@ -25,7 +25,7 @@ var perShareParticipantResultBlock: ((CKUserIdentity.LookupInfo, Result<CKShare.
 This property is a closure that returns no value and has the following parameters:
 
 - The lookup info of the share participant.
-- A [`Result`](https://developer.apple.com/documentation/Swift/Result) that contains either a generated share participant, or an error that describes why CloudKit can’t generate the share participant.
+- A [`Result`](https://developer.apple.com/documentation/swift/result) that contains either a generated share participant, or an error that describes why CloudKit can’t generate the share participant.
 
 The fetch operation executes this closure once for each lookup info in the [`userIdentityLookupInfos`](ckfetchshareparticipantsoperation/useridentitylookupinfos.md) property. Each time the closure executes, it executes serially with respect to the other closures of the operation.
 

@@ -16,7 +16,7 @@ var preferredTransform: CGAffineTransform { get set }
 
 #### Discussion
 
-This property is only valid for tracks with visual media types and is [`CGAffineTransformIdentity`](https://developer.apple.com/documentation/CoreGraphics/CGAffineTransformIdentity) for other track types.
+This property is only valid for tracks with visual media types and is [`CGAffineTransformIdentity`](https://developer.apple.com/documentation/coregraphics/cgaffinetransformidentity) for other track types.
 
 ## See Also
 

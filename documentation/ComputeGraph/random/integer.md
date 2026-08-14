@@ -23,7 +23,7 @@ A pseudo-random 32-bit unsigned integer.
 
 This function generates a random integer covering the full range of 32-bit unsigned values and increments the internal random seed for subsequent calls.
 
-> **Note**: ![Graph](https://docs-assets.developer.apple.com/published/d225cb6ed1cd242dcd392840ccd82e53/random__integer.svg)
+> **Note**: ![Graph](/images/com.apple.computegraph/random__integer.svg)
 
 
 ---

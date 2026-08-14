@@ -12,7 +12,7 @@ Contextual menu items and toolbar items give you ways to add more menu options a
 
 The `SFSafariContextMenu` key lets your app extension add items to the context menu that appears in webpages. See [`Context menus`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/macos/menus/contextual-menus/) for design guidelines.
 
-![A screenshot of a context menu in Safari. It’s a vertical menu containing five options, including Reload Page and Inspect Element. ](https://docs-assets.developer.apple.com/published/c35ab9d49f9e8e49de2b754599fe084e/media-3027377%402x.png)
+![A screenshot of a context menu in Safari. It’s a vertical menu containing five options, including Reload Page and Inspect Element. ](/images/com.apple.safariservices/media-3027377@2x.png)
 
 The key’s value must be an array, and must contain one dictionary with two subkeys for each menu item.
 
@@ -45,7 +45,7 @@ For example, if you add two contextual menu items, your `Info.plist` file might 
 
 The `SFSafariToolbarItem` dictionary adds a toolbar item to Safari windows. See [`Toolbars`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/macos/windows-and-views/toolbars/) for design guidelines.
 
-![A screenshot of a partial Safari toolbar. It shows standard toolbar items, as well as an app extension toolbar item that looks like a lightning bolt inside a circle. ](https://docs-assets.developer.apple.com/published/21e2316c9ce5a406ca193a4330baa8aa/media-3027375%402x.png)
+![A screenshot of a partial Safari toolbar. It shows standard toolbar items, as well as an app extension toolbar item that looks like a lightning bolt inside a circle. ](/images/com.apple.safariservices/media-3027375@2x.png)
 
 Each app extension can have only one toolbar item. The value for this key is a dictionary that describes the toolbar item. There are four required keys for the toolbar item dictionary.
 

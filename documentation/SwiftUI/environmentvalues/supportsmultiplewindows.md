@@ -41,14 +41,14 @@ struct NewMailViewerButton: View {
 The reported value depends on both the platform and how you configure your app:
 
 - In macOS, this property returns `true` for any app that uses the SwiftUI app lifecycle.
-- In iPadOS, this property returns `true` for any app that uses the SwiftUI app lifecycle and has the Information Property List key [`UIApplicationSupportsMultipleScenes`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/UIApplicationSceneManifest/UIApplicationSupportsMultipleScenes) set to `true`.
+- In iPadOS, this property returns `true` for any app that uses the SwiftUI app lifecycle and has the Information Property List key [`UIApplicationSupportsMultipleScenes`](https://developer.apple.com/documentation/bundleresources/information-property-list/uiapplicationscenemanifest/uiapplicationsupportsmultiplescenes) set to `true`.
 - For all other platforms and configurations, the value returns `false`.
 
 If the value is false and you try to open a window, SwiftUI ignores the action and logs a runtime error.
 
 ## See Also
 
-- [Presenting windows and spaces](../visionOS/presenting-windows-and-spaces.md)
+- [Presenting windows and spaces](../visionos/presenting-windows-and-spaces.md)
   Open and close the scenes that make up your app’s interface.
 - [var openWindow: OpenWindowAction](environmentvalues/openwindow.md)
   A window presentation action stored in a view’s environment.

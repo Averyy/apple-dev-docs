@@ -59,9 +59,9 @@ For information about how to create and configure your table’s cells using you
 
 ##### Specify the Location of Rows and Sections
 
-Table views communicate the location of cells to you using the [`row`](https://developer.apple.com/documentation/Foundation/NSIndexPath/row) and [`section`](https://developer.apple.com/documentation/Foundation/NSIndexPath/section) properties of [`NSIndexPath`](https://developer.apple.com/documentation/Foundation/NSIndexPath) objects. Row and section indexes are zero based, so the first section is at index `0`, the second at index `1`, and so on. Similarly, the first row of each section is at index `0`, which means you need both the [`section`](https://developer.apple.com/documentation/Foundation/NSIndexPath/section) and [`row`](https://developer.apple.com/documentation/Foundation/NSIndexPath/row) values to identify a row uniquely. If your table has no sections, you need only the [`row`](https://developer.apple.com/documentation/Foundation/NSIndexPath/row) value.
+Table views communicate the location of cells to you using the [`row`](https://developer.apple.com/documentation/foundation/nsindexpath/row) and [`section`](https://developer.apple.com/documentation/foundation/nsindexpath/section) properties of [`NSIndexPath`](https://developer.apple.com/documentation/foundation/nsindexpath) objects. Row and section indexes are zero based, so the first section is at index `0`, the second at index `1`, and so on. Similarly, the first row of each section is at index `0`, which means you need both the [`section`](https://developer.apple.com/documentation/foundation/nsindexpath/section) and [`row`](https://developer.apple.com/documentation/foundation/nsindexpath/row) values to identify a row uniquely. If your table has no sections, you need only the [`row`](https://developer.apple.com/documentation/foundation/nsindexpath/row) value.
 
-![Illustration that shows a table with multiple sections. The first section has an index of 0 and no row value. The nine rows in the first section have indexes between 0 and 8. The second section has an index of 1 and no row value. Its first row starts at index 0 again.](https://docs-assets.developer.apple.com/published/9b202d53b6f805deaaabbaed86a978cc/media-3148902%402x.png)
+![Illustration that shows a table with multiple sections. The first section has an index of 0 and no row value. The nine rows in the first section have indexes between 0 and 8. The second section has an index of 1 and no row value. Its first row starts at index 0 again.](/images/com.apple.uikit/media-3148902@2x.png)
 
 ## Topics
 
@@ -96,7 +96,7 @@ Table views communicate the location of cells to you using the [`row`](https://d
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 ### Conforming Types
 - [UITableViewController](uitableviewcontroller.md)
 - [UITableViewDiffableDataSource](uitableviewdiffabledatasource-2euir.md)

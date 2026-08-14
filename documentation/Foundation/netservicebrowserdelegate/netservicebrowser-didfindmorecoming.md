@@ -21,7 +21,7 @@ optional func netServiceBrowser(_ browser: NetServiceBrowser, didFind service: N
 
 #### Discussion
 
-The delegate uses this message to compile a list of available services. It should wait until `moreServicesComing` is [`false`](https://developer.apple.com/documentation/Swift/false) to do a bulk update of user interface elements.
+The delegate uses this message to compile a list of available services. It should wait until `moreServicesComing` is [`false`](https://developer.apple.com/documentation/swift/false) to do a bulk update of user interface elements.
 
 ##### Special Considerations
 
@@ -31,7 +31,7 @@ If the delegate chooses to resolve `netService`, it should retain `netService` a
 
 - `browser`: Sender of this delegate message.
 - `service`: Network service found by `netServiceBrowser`. The delegate can use this object to connect to and use the service.
-- `moreComing`: [`true`](https://developer.apple.com/documentation/Swift/true) when `netServiceBrowser` is waiting for additional services. [`false`](https://developer.apple.com/documentation/Swift/false) when there are no additional services.
+- `moreComing`: [`true`](https://developer.apple.com/documentation/swift/true) when `netServiceBrowser` is waiting for additional services. [`false`](https://developer.apple.com/documentation/swift/false) when there are no additional services.
 
 ## See Also
 

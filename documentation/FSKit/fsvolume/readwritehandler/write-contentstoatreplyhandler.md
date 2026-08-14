@@ -19,7 +19,7 @@ func write(contents: Data, to item: FSItem, at offset: off_t) async throws -> FS
 
 FSKit expects this routine to allocate space in the file system to extend the file as necessary.
 
-If the volume experiences an out-of-space condition, reply with an error of domain [`NSPOSIXErrorDomain`](https://developer.apple.com/documentation/Foundation/NSPOSIXErrorDomain) and code `ENOSPC`.
+If the volume experiences an out-of-space condition, reply with an error of domain [`NSPOSIXErrorDomain`](https://developer.apple.com/documentation/foundation/nsposixerrordomain) and code `ENOSPC`.
 
 ## Parameters
 

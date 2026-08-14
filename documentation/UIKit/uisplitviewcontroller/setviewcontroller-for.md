@@ -29,9 +29,9 @@ For a column-style split view controller, you use this method to assign child vi
 
 | Column | Assigned As-Is |
 | --- | --- |
-| Primary | [`UINavigationController`](uinavigationcontroller.md) ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) [`UIViewController`](uiviewcontroller.md) with [`UINavigationController`](uinavigationcontroller.md) as its first child |
+| Primary | [`UINavigationController`](uinavigationcontroller.md) ![None](/images/com.apple.uikit/spacer.png) [`UIViewController`](uiviewcontroller.md) with [`UINavigationController`](uinavigationcontroller.md) as its first child |
 | Supplementary | [`UINavigationController`](uinavigationcontroller.md) |
-| Secondary | [`UITabBarController`](uitabbarcontroller.md) with [`UINavigationController`](uinavigationcontroller.md)s in its tabs ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) [`UINavigationController`](uinavigationcontroller.md) ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) [`UIViewController`](uiviewcontroller.md) with [`UINavigationController`](uinavigationcontroller.md) as its first child |
+| Secondary | [`UITabBarController`](uitabbarcontroller.md) with [`UINavigationController`](uinavigationcontroller.md)s in its tabs ![None](/images/com.apple.uikit/spacer.png) [`UINavigationController`](uinavigationcontroller.md) ![None](/images/com.apple.uikit/spacer.png) [`UIViewController`](uiviewcontroller.md) with [`UINavigationController`](uinavigationcontroller.md) as its first child |
 | Compact | Any [`UIViewController`](uiviewcontroller.md) |
 
 You can’t assign a [`UITabBarController`](uitabbarcontroller.md) to the primary or supplementary columns.

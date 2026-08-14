@@ -22,11 +22,11 @@ Start by identifying the commands that access the same resource, such as an [`MT
 
 It’s okay for multiple commands to load data from the same resource memory at the same time because they all read from memory without modifying it. For example, multiple commands can load segments of a buffer at the same time, even if those segments overlap, because none of them are writing to that memory.
 
-![A diagram showing multiple commands loading data from the same buffer memory simultaneously without conflicts because they only read from memory.](https://docs-assets.developer.apple.com/published/55b7de25fbb234c8d0189cced32ddc02/resource-synchronization-1%402x.png)
+![A diagram showing multiple commands loading data from the same buffer memory simultaneously without conflicts because they only read from memory.](/images/com.apple.metal/resource-synchronization-1@2x.png)
 
 However, an app can introduce an access conflict when it encodes commands that both read and write to the same memory of a resource.
 
-![A diagram showing commands that both read and write to the same resource memory, creating an access conflict.](https://docs-assets.developer.apple.com/published/9a22c358356855e3b640292e0475ae44/resource-synchronization-2%402x.png)
+![A diagram showing commands that both read and write to the same resource memory, creating an access conflict.](/images/com.apple.metal/resource-synchronization-2@2x.png)
 
 Locate potential access conflicts by checking which resources apply to multiple commands, where at least one of those commands modifies the resource with a store operation. Commands with an access conflict that run concurrently create a race condition that can yield inconsistent results. This is because any overlapping memory load and store operations don’t always run in the same order relative to each other. Each time a GPU runs a batch of commands without synchronization, a load operation from one command can run before, during, or after a store operation.
 

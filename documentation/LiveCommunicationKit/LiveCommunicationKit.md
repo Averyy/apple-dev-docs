@@ -23,9 +23,9 @@ Using LiveCommunicationKit in your app allows people to configure their device t
 
 ##### Manage User Privacy
 
-With a person’s permission, an installed health research app that uses [`SensorKit`](https://developer.apple.com/documentation/SensorKit) entitlements may collect Speech Metrics data while your LiveCommunicationKit app is in use. To prevent this, set the [`SRResearchDataGeneration`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/SRResearchDataGeneration) information property list key to `NO`.
+With a person’s permission, an installed health research app that uses [`SensorKit`](https://developer.apple.com/documentation/sensorkit) entitlements may collect Speech Metrics data while your LiveCommunicationKit app is in use. To prevent this, set the [`SRResearchDataGeneration`](https://developer.apple.com/documentation/bundleresources/information-property-list/srresearchdatageneration) information property list key to `NO`.
 
-> ❗ **Important**: When someone starts a conversation in your app that uses LiveCommunicationKit, your app provides the contact information of the recipient to the system. The system may use that information to indicate communication with that person as a suggestion in the Journal app, or in other apps that use the [`Journaling Suggestions`](https://developer.apple.com/documentation/JournalingSuggestions) framework.
+> ❗ **Important**: When someone starts a conversation in your app that uses LiveCommunicationKit, your app provides the contact information of the recipient to the system. The system may use that information to indicate communication with that person as a suggestion in the Journal app, or in other apps that use the [`Journaling Suggestions`](https://developer.apple.com/documentation/journalingsuggestions) framework.
 
 ## Topics
 
@@ -34,7 +34,7 @@ With a person’s permission, an installed health research app that uses [`Senso
   Let people initiate and receive VoIP conversations, and configure your app so it can be the default calling app on a person’s device.
 - [Preparing your app to be the default dialer app](preparing-your-app-to-be-the-default-dialer-app.md)
   Let people configure their device to set your app as the default dialer app.
-- [LiveCommunicationKit updates](../Updates/LiveCommunicationKit.md)
+- [LiveCommunicationKit updates](../updates/livecommunicationkit.md)
   Learn about important changes to LiveCommunicationKit.
 ### Cellular network conversations
 - [class TelephonyConversationManager](telephonyconversationmanager.md)

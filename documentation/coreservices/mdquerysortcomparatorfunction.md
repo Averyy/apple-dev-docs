@@ -22,9 +22,9 @@ The function must return one of the CFComparisonResults `kCFCompareLessThan`, `k
 ## Parameters
 
 - `query`: The query instance.
-- `attrs1`: A C array of attribute values for a result. The values occur in the array in the same order and position that the attribute names were passed in the   array when the query was created. The values of the attributes will be   if the attribute doesn't exist for a result or if read access to that attribute is not allowed.
-- `attrs2`: A C array of attribute values for a result. The values occur in the array in the same order and position that the attribute names were passed in the   array when the query was created. The values of the attributes will be   if the attribute doesn't exist for a result or if read access to that attribute is not allowed.
-- `context`: The user-defined context parameter provided in the function  .
+- `attrs1`: A C array of attribute values for a result. The values occur in the array in the same order and position that the attribute names were passed in the `sortingAttrs` array when the query was created. The values of the attributes will be `NULL` if the attribute doesn't exist for a result or if read access to that attribute is not allowed.
+- `attrs2`: A C array of attribute values for a result. The values occur in the array in the same order and position that the attribute names were passed in the `sortingAttrs` array when the query was created. The values of the attributes will be `NULL` if the attribute doesn't exist for a result or if read access to that attribute is not allowed.
+- `context`: The user-defined context parameter provided in the function `MDQuerySetSortComparator`.
 
 ## See Also
 

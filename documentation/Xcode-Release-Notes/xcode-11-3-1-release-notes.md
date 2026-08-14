@@ -24,7 +24,7 @@ Xcode 11.3.1 supports developing apps for iOS 13.3, iPadOS 13.3, tvOS 13.3, watc
 
 ###### Resolved Issues
 
-- Fixed a crash that could occur when using an attributed string in a [`UILabel`](https://developer.apple.com/documentation/UIKit/UILabel). (55737956, 57990674)
+- Fixed a crash that could occur when using an attributed string in a [`UILabel`](https://developer.apple.com/documentation/uikit/uilabel). (55737956, 57990674)
 - Fixed a crash that could occur after dragging a toolbar item out of the Allowed set in the canvas. (18133890, 57982132)
 
 ##### Simulator

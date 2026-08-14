@@ -33,9 +33,9 @@ For more information about how to use this structure, see the [`results`](cssear
 ## Relationships
 
 ### Conforms To
-- [AsyncSequence](../Swift/AsyncSequence.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [AsyncSequence](../swift/asyncsequence.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

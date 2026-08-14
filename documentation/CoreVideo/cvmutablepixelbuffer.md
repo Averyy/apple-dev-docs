@@ -48,11 +48,11 @@ struct CVMutablePixelBuffer
 - [CVBufferRepresentable](cvbufferrepresentable.md)
 - [CVImageBufferRepresentable](cvimagebufferrepresentable.md)
 - [CVPixelBufferRepresentable](cvpixelbufferrepresentable.md)
-- [Escapable](../Swift/Escapable.md)
-- [InferenceValue.MutableViewRepresentable](../CoreAI/InferenceValue/MutableViewRepresentable.md)
-- [InferenceValue.ViewRepresentable](../CoreAI/InferenceValue/ViewRepresentable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Escapable](../swift/escapable.md)
+- [InferenceValue.MutableViewRepresentable](../coreai/inferencevalue/mutableviewrepresentable.md)
+- [InferenceValue.ViewRepresentable](../coreai/inferencevalue/viewrepresentable.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

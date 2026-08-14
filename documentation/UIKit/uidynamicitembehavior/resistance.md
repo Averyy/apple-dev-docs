@@ -20,7 +20,7 @@ var resistance: CGFloat { get set }
 
 #### Discussion
 
-Default value is `0.0`. Valid range is from `0.0` for no velocity damping, to [`CGFLOAT_MAX`](https://developer.apple.com/documentation/CoreFoundation/CGFLOAT_MAX) for complete velocity damping. If you set this property to `1.0`, a dynamic item’s motion stops as soon as there is no force applied to it.
+Default value is `0.0`. Valid range is from `0.0` for no velocity damping, to [`CGFLOAT_MAX`](https://developer.apple.com/documentation/corefoundation/cgfloat_max) for complete velocity damping. If you set this property to `1.0`, a dynamic item’s motion stops as soon as there is no force applied to it.
 
 ## See Also
 

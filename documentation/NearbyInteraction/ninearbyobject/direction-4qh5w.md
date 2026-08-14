@@ -37,7 +37,7 @@ This property is a Cartesian triplet (x,y,z) in normalized units with a range of
 
 The following figure illustrates the direction-vector coordinate space from two different angles.
 
-![A diagram of a phone in two different orientations, each with a coordinate system that renders from an origin in the middle of the device. The phone on the left shows the back of the phone, with an up-axis labeled “+y”. Its horizontal axis points left, and is labeled “+x”. Its z-axis points toward the reader, and is labeled “-z”. The phone on the right faces toward the reader, with an up-axis labeled “+y”. Its horizontal axis points right and is labeled “+x”. Its z-axis points away from the reader, and is labeled “-z”.](https://docs-assets.developer.apple.com/published/eaa9b90498bacaef6df0517071bb32d9/media-3798530%402x.png)
+![A diagram of a phone in two different orientations, each with a coordinate system that renders from an origin in the middle of the device. The phone on the left shows the back of the phone, with an up-axis labeled “+y”. Its horizontal axis points left, and is labeled “+x”. Its z-axis points toward the reader, and is labeled “-z”. The phone on the right faces toward the reader, with an up-axis labeled “+y”. Its horizontal axis points right and is labeled “+x”. Its z-axis points away from the reader, and is labeled “-z”.](/images/com.apple.nearbyinteraction/media-3798530@2x.png)
 
 For more information, see [`Initiating and maintaining a session`](initiating-and-maintaining-a-session.md).
 

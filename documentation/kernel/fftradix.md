@@ -21,8 +21,6 @@ An `FFTRadix` value is passed as an argument to [`vDSP_create_fftsetup`](1580009
 ## Topics
 
 ### Constants
-- [kFFTRadix2](../accelerate/kfftradix2.md)
-- [kFFTRadix3](../accelerate/kfftradix3.md)
 - [kFFTRadix5](1645051-anonymous/kfftradix5.md)
   Specifies a radix of 5.
 

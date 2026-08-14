@@ -17,7 +17,7 @@ A subclass of NSPopover that displays a popover tip in AppKit applications.
 
 #### Overview
 
-Use this to create a tip you want to display and lay out as a [`NSPopover`](https://developer.apple.com/documentation/AppKit/NSPopover).
+Use this to create a tip you want to display and lay out as a [`NSPopover`](https://developer.apple.com/documentation/appkit/nspopover).
 
 Adding and removing TipNSView from your app is done by listening to a tip’s [`shouldDisplayUpdates`](tip/shoulddisplayupdates.md) or [`statusUpdates`](tip/statusupdates.md).
 
@@ -94,21 +94,21 @@ class CatTracksViewController: NSViewController {
 ## Relationships
 
 ### Inherits From
-- [NSPopover](../AppKit/NSPopover.md)
+- [NSPopover](../appkit/nspopover.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSAccessibilityElementProtocol](../AppKit/NSAccessibilityElementProtocol.md)
-- [NSAccessibilityProtocol](../AppKit/NSAccessibilityProtocol.md)
-- [NSAppearanceCustomization](../AppKit/NSAppearanceCustomization.md)
-- [NSCoding](../Foundation/NSCoding.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [NSStandardKeyBindingResponding](../AppKit/NSStandardKeyBindingResponding.md)
-- [NSTouchBarProvider](../AppKit/NSTouchBarProvider.md)
-- [NSUserActivityRestoring](../AppKit/NSUserActivityRestoring.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSAccessibilityElementProtocol](../appkit/nsaccessibilityelementprotocol.md)
+- [NSAccessibilityProtocol](../appkit/nsaccessibilityprotocol.md)
+- [NSAppearanceCustomization](../appkit/nsappearancecustomization.md)
+- [NSCoding](../foundation/nscoding.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSStandardKeyBindingResponding](../appkit/nsstandardkeybindingresponding.md)
+- [NSTouchBarProvider](../appkit/nstouchbarprovider.md)
+- [NSUserActivityRestoring](../appkit/nsuseractivityrestoring.md)
 
 ## See Also
 

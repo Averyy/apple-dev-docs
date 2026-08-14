@@ -22,7 +22,7 @@ let kCVImageBufferCleanApertureVerticalOffsetKey: CFString
 
 #### Discussion
 
-The vertical offset value is of type [`CFNumber`](https://developer.apple.com/documentation/CoreFoundation/CFNumber).
+The vertical offset value is of type [`CFNumber`](https://developer.apple.com/documentation/corefoundation/cfnumber).
 
 ## See Also
 

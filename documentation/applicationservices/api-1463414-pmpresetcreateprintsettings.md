@@ -20,9 +20,9 @@ A result code. See [`Result Codes`](core_printing#1670007.md).
 
 ## Parameters
 
-- `preset`: The preset whose settings you want to obtain. You can use the function   to obtain the presets for a given printer.
+- `preset`: The preset whose settings you want to obtain. You can use the function [`PMPrinterCopyPresets(_:_:)`](1459117-pmprintercopypresets.md) to obtain the presets for a given printer.
 - `session`: The session you use to present the Print dialog.
-- `printSettings`: A pointer to your   variable. On return, the variable refers to a print settings object with settings that correspond to the specified preset. You are responsible for releasing the print settings object with the function  .
+- `printSettings`: A pointer to your [`PMPrintSettings`](pmprintsettings.md) variable. On return, the variable refers to a print settings object with settings that correspond to the specified preset. You are responsible for releasing the print settings object with the function [`PMRelease(_:)`](1461402-pmrelease.md).
 
 ## See Also
 

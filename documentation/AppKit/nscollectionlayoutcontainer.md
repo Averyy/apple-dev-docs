@@ -35,7 +35,7 @@ In a section provider, you use the [`container`](nscollectionlayoutenvironment/c
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

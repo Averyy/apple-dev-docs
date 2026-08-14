@@ -21,7 +21,7 @@ let kCIInputAngleKey: String
 
 #### Discussion
 
-A key for a scalar value ([`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber)) that specifies an angle.
+A key for a scalar value ([`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber)) that specifies an angle.
 
 ## See Also
 

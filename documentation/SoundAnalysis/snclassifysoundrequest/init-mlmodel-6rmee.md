@@ -26,7 +26,7 @@ init(mlModel: MLModel) throws
 
 #### Discussion
 
-The model you provide must accept audio data as input and produce a classification dictionary output that contains the probability of each category. For example, you can generate a sound classifier model by creating an [`MLSoundClassifier`](https://developer.apple.com/documentation/CreateML/MLSoundClassifier) and training it with your own audio files.
+The model you provide must accept audio data as input and produce a classification dictionary output that contains the probability of each category. For example, you can generate a sound classifier model by creating an [`MLSoundClassifier`](https://developer.apple.com/documentation/createml/mlsoundclassifier) and training it with your own audio files.
 
 ## Parameters
 

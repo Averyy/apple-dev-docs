@@ -8,7 +8,7 @@ Provide a Settings window in your Mac app built with Mac Catalyst so users can m
 
 Mac apps typically display app-specific settings using a Settings window accessible through the standard Settings menu item under the app menu in the menu bar.
 
-Mac apps built with Mac Catalyst that include a `Settings.bundle` file automatically get the Settings menu item and a Settings window. When a user selects the Settings menu item, the system displays a Mac-friendly Settings window based on the options provided in your Settings bundle. To learn about Settings bundles, see [`Building a Settings bundle for your app`](https://developer.apple.com/documentation/Foundation/building-a-settings-bundle-for-your-app).
+Mac apps built with Mac Catalyst that include a `Settings.bundle` file automatically get the Settings menu item and a Settings window. When a user selects the Settings menu item, the system displays a Mac-friendly Settings window based on the options provided in your Settings bundle. To learn about Settings bundles, see [`Building a Settings bundle for your app`](https://developer.apple.com/documentation/foundation/building-a-settings-bundle-for-your-app).
 
 ##### Add a Settings Window to Your App
 
@@ -19,11 +19,11 @@ To include a Settings window in your Mac app, start by adding a `Settings.bundle
 3. Enter the name of your settings bundle.
 4. Click Create.
 
-![A screenshot of the new file dialog in Xcode, showing the selection of the iOS platform, and the selection of the Settings Bundle template.](https://docs-assets.developer.apple.com/published/6d7d50a892f4a6ebbaf652ae3a176ec9/displaying-a-settings-window-1%402x.png)
+![A screenshot of the new file dialog in Xcode, showing the selection of the iOS platform, and the selection of the Settings Bundle template.](/images/com.apple.uikit/displaying-a-settings-window-1@2x.png)
 
 ##### Add Toolbar Tabs to the Settings Window
 
-A Settings bundle can include one or more child panes that allow you to organize your settings hierarchically (see [`Building a Settings bundle for your app`](https://developer.apple.com/documentation/Foundation/building-a-settings-bundle-for-your-app#Add-a-child-page-element)). In iOS, the Settings app displays a child pane as a settings row. When the user taps the row, the app displays a new view showing the settings defined in the child pane’s property list file.
+A Settings bundle can include one or more child panes that allow you to organize your settings hierarchically (see [`Building a Settings bundle for your app`](https://developer.apple.com/documentation/foundation/building-a-settings-bundle-for-your-app)). In iOS, the Settings app displays a child pane as a settings row. When the user taps the row, the app displays a new view showing the settings defined in the child pane’s property list file.
 
 In macOS, the Settings window displays a child pane as a tab on the window’s toolbar. When the user clicks the tab, they see the settings provided in the child pane’s property list file.
 
@@ -48,7 +48,7 @@ Each dictionary contains the following keys that define the contents of the prom
 - **`ConfirmText`**: Optional. A string with the text displayed in the prompt’s confirmation button. The toggle switch value changes when the user clicks this button.
 - **`DenyText`**: Optional. A string with the text displayed in the prompt’s cancel button. The toggle switch value doesn’t change when the user clicks this button.
 
-For more information, see [`Building a Settings bundle for your app`](https://developer.apple.com/documentation/Foundation/building-a-settings-bundle-for-your-app#Add-a-toggle-switch-element).
+For more information, see [`Building a Settings bundle for your app`](https://developer.apple.com/documentation/foundation/building-a-settings-bundle-for-your-app).
 
 ##### Display Subtitles for Toggle Switches
 

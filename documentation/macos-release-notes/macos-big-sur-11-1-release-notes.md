@@ -6,13 +6,13 @@ Update your apps to use new features, and test your apps against API changes.
 
 #### Overview
 
-The macOS 11.1 SDK provides support to develop apps for Macs running macOS Big Sur 11.1. The SDK comes bundled with Xcode 12.3, available from the Mac App Store. For information on the compatibility requirements for Xcode 12.3, see [`Xcode 12.3 Release Notes`](https://developer.apple.com/documentation/Xcode-Release-Notes/xcode-12_3-release-notes).
+The macOS 11.1 SDK provides support to develop apps for Macs running macOS Big Sur 11.1. The SDK comes bundled with Xcode 12.3, available from the Mac App Store. For information on the compatibility requirements for Xcode 12.3, see [`Xcode 12.3 Release Notes`](https://developer.apple.com/documentation/xcode-release-notes/xcode-12_3-release-notes).
 
 ##### Appkit
 
 ###### Resolved Issues
 
-- [`NSToolbar`](https://developer.apple.com/documentation/AppKit/NSToolbar) controls now draw the background correctly when you click or roll over them. (71592628)
+- [`NSToolbar`](https://developer.apple.com/documentation/appkit/nstoolbar) controls now draw the background correctly when you click or roll over them. (71592628)
 
 ##### Mac Catalyst
 
@@ -22,7 +22,7 @@ The macOS 11.1 SDK provides support to develop apps for Macs running macOS Big S
 
 ###### Known Issues
 
-- When you present a view controller with page sheet or form sheet presentation style, the size of the view controller’s root view is, by default, determined by the value returned from the presented view controller’s [`preferredContentSize`](https://developer.apple.com/documentation/UIKit/UIViewController/preferredContentSize) method and the view is not resizable. You can arrange for the presented view controller to be resizable by using Auto Layout to specify the maximum and minimum sizes of its root view. To enable this, set the [`canResizeToFitContent`](https://developer.apple.com/documentation/UIKit/UIWindow/canResizeToFitContent) property of the application’s main window to YES. One way to do this is to override the [`willMove(toWindow:)`](https://developer.apple.com/documentation/UIKit/UIView/willMove(toWindow:)) or [`didMoveToWindow()`](https://developer.apple.com/documentation/UIKit/UIView/didMoveToWindow()) methods of a view in the main view controller. (65254666) For example: ```swift
+- When you present a view controller with page sheet or form sheet presentation style, the size of the view controller’s root view is, by default, determined by the value returned from the presented view controller’s [`preferredContentSize`](https://developer.apple.com/documentation/uikit/uiviewcontroller/preferredcontentsize) method and the view is not resizable. You can arrange for the presented view controller to be resizable by using Auto Layout to specify the maximum and minimum sizes of its root view. To enable this, set the [`canResizeToFitContent`](https://developer.apple.com/documentation/uikit/uiwindow/canresizetofitcontent) property of the application’s main window to YES. One way to do this is to override the [`willMove(toWindow:)`](https://developer.apple.com/documentation/uikit/uiview/willmove(towindow:)) or [`didMoveToWindow()`](https://developer.apple.com/documentation/uikit/uiview/didmovetowindow()) methods of a view in the main view controller. (65254666) For example: ```swift
 - (void)willMoveToWindow:(UIWindow *)newWindow {
     [super willMoveToWindow:newWindow];
     newWindow.canResizeToFitContent = YES;

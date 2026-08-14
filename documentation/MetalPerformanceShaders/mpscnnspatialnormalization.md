@@ -25,11 +25,11 @@ The spatial normalization for a feature channel applies the kernel over local re
 
 For each feature channel, the function computes the sum of squares of `X` inside each rectangle, `N2(i,j)`. It then divides each element of `X` as follows:
 
-![Y(i,j) = X(i,j) / (delta + alpha/(kw*kh) * N2(i,j))^beta](https://docs-assets.developer.apple.com/published/ac698d749cc4e24dd6eac74538c7a877/media-2903551%402x.png)
+![Y(i,j) = X(i,j) / (delta + alpha/(kw*kh) * N2(i,j))^beta](/images/com.apple.metalperformanceshaders/media-2903551@2x.png)
 
 Where `kw` and `kh` are the values of the `kernelWidth` and `kernelHeight` properties, respectively. It is your responsibility to ensure that the combination of the values of the [`delta`](mpscnnspatialnormalization/delta.md) and [`alpha`](mpscnnspatialnormalization/alpha.md) `kernelWidth` `kernelHeight` properties does not result in a situation where the denominator becomes zero (in such situations the resulting pixel-value is undefined).
 
-> **Note**:  The encoding methods in the [`MPSUnaryImageKernel`](mpsunaryimagekernel.md) class can be used to encode an [`MPSCNNSpatialNormalization`](mpscnnspatialnormalization.md) object to a [`MTLCommandBuffer`](https://developer.apple.com/documentation/Metal/MTLCommandBuffer) object.
+> **Note**:  The encoding methods in the [`MPSUnaryImageKernel`](mpsunaryimagekernel.md) class can be used to encode an [`MPSCNNSpatialNormalization`](mpscnnspatialnormalization.md) object to a [`MTLCommandBuffer`](https://developer.apple.com/documentation/metal/mtlcommandbuffer) object.
 
 ## Topics
 
@@ -54,15 +54,15 @@ Where `kw` and `kh` are the values of the `kernelWidth` and `kernelHeight` prope
 ### Inherits From
 - [MPSCNNKernel](mpscnnkernel.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCoding](../Foundation/NSCoding.md)
-- [NSCopying](../Foundation/NSCopying.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [NSSecureCoding](../Foundation/NSSecureCoding.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCoding](../foundation/nscoding.md)
+- [NSCopying](../foundation/nscopying.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSSecureCoding](../foundation/nssecurecoding.md)
 
 ## See Also
 

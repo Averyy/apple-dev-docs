@@ -42,7 +42,7 @@ HStack {
 
 In the example above, the first [`Text`](text.md) element has the default priority `0` which causes its view to shrink dramatically due to the higher priority of the second [`Text`](text.md) element, even though all of their other attributes (font, font size and character count) are the same.
 
-![A screenshot showing twoText views different layout](https://docs-assets.developer.apple.com/published/b5b61472d516abe7f653465f4e5f7db7/SwiftUI-View-layoutPriority%402x.png)
+![A screenshot showing twoText views different layout](/images/com.apple.SwiftUI/SwiftUI-View-layoutPriority@2x.png)
 
 A parent layout offers the child views with the highest layout priority all the space offered to the parent minus the minimum space required for all its lower-priority children.
 

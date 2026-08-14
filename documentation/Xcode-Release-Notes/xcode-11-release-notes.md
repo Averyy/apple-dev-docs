@@ -14,7 +14,7 @@ Xcode 11 is available in the Mac App Store and includes SDKs for iOS 13, macOS C
 
 ###### New Features
 
-- Xcode 11 supports development with [`SwiftUI`](https://developer.apple.com/documentation/SwiftUI). (22843503) > **Note**: SwiftUI previews and inspectors are only available when running on macOS Catalina 10.15.
+- Xcode 11 supports development with [`SwiftUI`](https://developer.apple.com/documentation/swiftui). (22843503) > **Note**: SwiftUI previews and inspectors are only available when running on macOS Catalina 10.15.
 - Xcode 11 adds support for Mac Catalyst to bring iPad apps to the Mac. (43577997) > **Note**: iPad apps can only be configured to build for Mac when running on macOS Catalina 10.15, and the My Mac run destination is unavailable on earlier versions of macOS.
 - You can now change the appearance of Xcode independently of the system appearance setting. (41165587)
 - Xcode supports uploading apps from the Organizer window or from the command line with `xcodebuild` or `xcrun altool`. Application Loader is no longer included with Xcode. (29008875)
@@ -139,18 +139,18 @@ const int * const valuePtr = &value1;   // Stored in __DATA_CONST
 
 ###### New Features
 
-- The view debugger now shows the names of [`NSImage`](https://developer.apple.com/documentation/AppKit/NSImage) instances in the inspector. (35516797)
+- The view debugger now shows the names of [`NSImage`](https://developer.apple.com/documentation/appkit/nsimage) instances in the inspector. (35516797)
 - The graphical filter in the Size inspector for debugging view hierarchies identifies which attributes on the selected view are constrained. Selecting attributes in the filter narrows the displayed constraints to ones matching that attribute. Standard modifier keys such as Shift and Command can be used to expand the selection showing the union of constraints matching those attributes. (44864394)
 - You can now debug the view hierarchies of watchOS apps. (45173634)
 - You can now simulate network conditions and thermal states for a connected device from the Devices and Simulators window. (44608479)
-- The view debugger shows [`UIWindowScene`](https://developer.apple.com/documentation/UIKit/UIWindowScene) instances in the debug navigator and canvas. (45378799)
+- The view debugger shows [`UIWindowScene`](https://developer.apple.com/documentation/uikit/uiwindowscene) instances in the debug navigator and canvas. (45378799)
 - View debugging can be disabled in the scheme options. (45928299)
 - The Size inspector for debugging view hierarchies has more details about constraints including a filter, hover highlighting in the editor, and better descriptions. (16153188)
 - The view debugger supports debugging Mac Catalyst apps. (37507479)
-- The view debugger inspector shows [`contentTintColor`](https://developer.apple.com/documentation/AppKit/NSButton/contentTintColor) for [`NSImageView`](https://developer.apple.com/documentation/AppKit/NSImageView) and [`NSButton`](https://developer.apple.com/documentation/AppKit/NSButton). (49506123)
+- The view debugger inspector shows [`contentTintColor`](https://developer.apple.com/documentation/appkit/nsbutton/contenttintcolor) for [`NSImageView`](https://developer.apple.com/documentation/appkit/nsimageview) and [`NSButton`](https://developer.apple.com/documentation/appkit/nsbutton). (49506123)
 - The view debugger now shows the names of iOS named and system colors. (45162028)
 - The view debugger shows trait collection information. (45161975)
-- The view debugger shows the names of [`UIImage`](https://developer.apple.com/documentation/UIKit/UIImage) instances. (45327089)
+- The view debugger shows the names of [`UIImage`](https://developer.apple.com/documentation/uikit/uiimage) instances. (45327089)
 - The view debugger now shows symbol information, like baseline and midline. (49508874)
 - The debug bar appearance switcher supports changing between dark and light modes on iOS. (45161907)
 - The “Pause on issues” checkboxes in the Diagnostics tab of the Scheme Editor are replaced by regular breakpoints. You can use the Breakpoints Navigator to create a Runtime Issue Breakpoint. (31409112)
@@ -163,7 +163,7 @@ const int * const valuePtr = &value1;   // Stored in __DATA_CONST
 - LLDB’s Python scripting is now based on Python 3. If you are using Python extensions that aren’t compatible with Python 3, they will break. To help with the transition, you can run in Python 2 mode by setting a default: ```shell
 defaults write com.apple.dt.lldb DefaultPythonVersion 2
 ``` Python 2 support will be removed in the future. (47806994)
-- Swift [`Decimal`](https://developer.apple.com/documentation/Foundation/Decimal) values have a data formatter in LLDB, making them display in a readable way. (38983073)
+- Swift [`Decimal`](https://developer.apple.com/documentation/foundation/decimal) values have a data formatter in LLDB, making them display in a readable way. (38983073)
 
 ###### Known Issues
 
@@ -203,7 +203,7 @@ defaults write com.apple.dt.lldb DefaultPythonVersion 2
 - Tracks in Instruments can now be formed in hierarchies. They can now represent any engineering type and are created using Custom Instruments. (28615789)
 - Instruments now allows for copying multiple rows from a table at one time. (39326522)
 - Instruments allows for creating scopes for easier navigation within the trace document. (49022012)
-- `<os-signpost-point-schema>` is available in the Custom Instruments to match point events coming from [`os_signpost(_:dso:log:name:signpostID:)`](https://developer.apple.com/documentation/os/os_signpost(_:dso:log:name:signpostID:)-2oz8u). (50586708)
+- `<os-signpost-point-schema>` is available in the Custom Instruments to match point events coming from [`os_signpost(_:dso:log:name:signpostID:)`](https://developer.apple.com/documentation/os/os_signpost(_:dso:log:name:signpostid:)-2oz8u). (50586708)
 
 ###### Known Issues
 
@@ -213,32 +213,32 @@ defaults write com.apple.dt.lldb DefaultPythonVersion 2
 
 ###### New Features
 
-- Interface Builder supports iOS 13 [`UIVisualEffectView`](https://developer.apple.com/documentation/UIKit/UIVisualEffectView) blur and vibrancy visual effects. (48023286)
-- Interface Builder supports iOS 13 [`UIActivityIndicatorView`](https://developer.apple.com/documentation/UIKit/UIActivityIndicatorView) styles. (48573772)
+- Interface Builder supports iOS 13 [`UIVisualEffectView`](https://developer.apple.com/documentation/uikit/uivisualeffectview) blur and vibrancy visual effects. (48023286)
+- Interface Builder supports iOS 13 [`UIActivityIndicatorView`](https://developer.apple.com/documentation/uikit/uiactivityindicatorview) styles. (48573772)
 - The iOS home indicator color now adapts to light and dark canvas appearances. (48610782)
-- Interface Builder supports customizing [`UIButton`](https://developer.apple.com/documentation/UIKit/UIButton) symbol configurations. (51323174)
-- Interface Builder supports the new layout [`TVCollectionViewFullScreenLayout`](https://developer.apple.com/documentation/TVUIKit/TVCollectionViewFullScreenLayout) on Apple TV. (47598895)
-- [`UIViewController`](https://developer.apple.com/documentation/UIKit/UIViewController) instances now default to the Automatic modal presentation mode. Modal presentation segues can override this setting. (48129590)
+- Interface Builder supports customizing [`UIButton`](https://developer.apple.com/documentation/uikit/uibutton) symbol configurations. (51323174)
+- Interface Builder supports the new layout [`TVCollectionViewFullScreenLayout`](https://developer.apple.com/documentation/tvuikit/tvcollectionviewfullscreenlayout) on Apple TV. (47598895)
+- [`UIViewController`](https://developer.apple.com/documentation/uikit/uiviewcontroller) instances now default to the Automatic modal presentation mode. Modal presentation segues can override this setting. (48129590)
 - Interface Builder supports Dark Mode on iOS. (45314199)
 - Interface Builder’s device bar lets you switch between the light and dark appearance for iOS apps. (45282451)
-- You can add SwiftUI hosting controllers, such as [`UIHostingController`](https://developer.apple.com/documentation/SwiftUI/UIHostingController), to connect a storyboard controller flow to a hosting controller that manages a SwiftUI view hierarchy. You can populate the contents of a hosting controller in Interface Builder by providing a custom subclass that programmatically sets the [`rootView`](https://developer.apple.com/documentation/SwiftUI/UIHostingController/rootView) of the controller. (46039344) You can also set the root view of a [`UIHostingController`](https://developer.apple.com/documentation/SwiftUI/UIHostingController) or [`NSHostingController`](https://developer.apple.com/documentation/SwiftUI/NSHostingController) using a Segue Action.
+- You can add SwiftUI hosting controllers, such as [`UIHostingController`](https://developer.apple.com/documentation/swiftui/uihostingcontroller), to connect a storyboard controller flow to a hosting controller that manages a SwiftUI view hierarchy. You can populate the contents of a hosting controller in Interface Builder by providing a custom subclass that programmatically sets the [`rootView`](https://developer.apple.com/documentation/swiftui/uihostingcontroller/rootview) of the controller. (46039344) You can also set the root view of a [`UIHostingController`](https://developer.apple.com/documentation/swiftui/uihostingcontroller) or [`NSHostingController`](https://developer.apple.com/documentation/swiftui/nshostingcontroller) using a Segue Action.
 - The object library now matches the selected system-wide appearance. (50874168)
-- The [`NSStackView`](https://developer.apple.com/documentation/AppKit/NSStackView) inspector now allows configuring negative spacing. (49012055)
-- [`NSSwitch`](https://developer.apple.com/documentation/AppKit/NSSwitch) is available when running on macOS 10.15. (47566686)
-- Cells in a [`UITableView`](https://developer.apple.com/documentation/UIKit/UITableView) can now self size with Auto Layout constrained views in the canvas. To opt into the behavior for existing table views, enable “Automatic” for the table view estimated item size, and “Automatic” for cell’s height in the Size inspector. (35735970)
-- [`NSView`](https://developer.apple.com/documentation/AppKit/NSView) and [`UIView`](https://developer.apple.com/documentation/UIKit/UIView) have a layout mode option in the Size inspector to explicitly opt into “translates autoresizing mask into constraints”. The default setting is “Automatic”, which is the existing behavior. “Automatic” implies that “translate autoresizing mask into constraints” is *off* when a view affect by constraints in the storyboard or `.xib` file, but *on* if unconstrained. (37352354)
+- The [`NSStackView`](https://developer.apple.com/documentation/appkit/nsstackview) inspector now allows configuring negative spacing. (49012055)
+- [`NSSwitch`](https://developer.apple.com/documentation/appkit/nsswitch) is available when running on macOS 10.15. (47566686)
+- Cells in a [`UITableView`](https://developer.apple.com/documentation/uikit/uitableview) can now self size with Auto Layout constrained views in the canvas. To opt into the behavior for existing table views, enable “Automatic” for the table view estimated item size, and “Automatic” for cell’s height in the Size inspector. (35735970)
+- [`NSView`](https://developer.apple.com/documentation/appkit/nsview) and [`UIView`](https://developer.apple.com/documentation/uikit/uiview) have a layout mode option in the Size inspector to explicitly opt into “translates autoresizing mask into constraints”. The default setting is “Automatic”, which is the existing behavior. “Automatic” implies that “translate autoresizing mask into constraints” is *off* when a view affect by constraints in the storyboard or `.xib` file, but *on* if unconstrained. (37352354)
 - Improved the reliability of Auto Layout constraint generation with “Add Missing Constraints”. (43694622)
-- The contents of a [`UIScrollView`](https://developer.apple.com/documentation/UIKit/UIScrollView) are scrollable within the canvas, once its subviews are fully constrained with Auto Layout constraints. (44727961)
-- Cells in a [`UICollectionView`](https://developer.apple.com/documentation/UIKit/UICollectionView) can now self size with Auto Layout constrained views in the canvas. To opt into the behavior for existing collection views, enable “Automatic” for the collection view’s estimated size, and “Automatic” for cell’s size from the Size inspector. If deploying before iOS 13, you can activate self sizing collection view cells by calling [`performBatchUpdates(_:completion:)`](https://developer.apple.com/documentation/UIKit/UICollectionView/performBatchUpdates(_:completion:)) during [`viewDidLoad()`](https://developer.apple.com/documentation/UIKit/UIViewController/viewDidLoad()). (45617083)
+- The contents of a [`UIScrollView`](https://developer.apple.com/documentation/uikit/uiscrollview) are scrollable within the canvas, once its subviews are fully constrained with Auto Layout constraints. (44727961)
+- Cells in a [`UICollectionView`](https://developer.apple.com/documentation/uikit/uicollectionview) can now self size with Auto Layout constrained views in the canvas. To opt into the behavior for existing collection views, enable “Automatic” for the collection view’s estimated size, and “Automatic” for cell’s size from the Size inspector. If deploying before iOS 13, you can activate self sizing collection view cells by calling [`performBatchUpdates(_:completion:)`](https://developer.apple.com/documentation/uikit/uicollectionview/performbatchupdates(_:completion:)) during [`viewDidLoad()`](https://developer.apple.com/documentation/uikit/uiviewcontroller/viewdidload()). (45617083)
 - In inspector font popovers, the Family popup now renders menu items as a preview of the applicable font. (31484154)
 - Update Frames can now be performed document-wide for misplaced frames, without selecting a view. (22076710)
-- Content and Frame Layout guides are supported for [`UIScrollView`](https://developer.apple.com/documentation/UIKit/UIScrollView) and can be enabled in the Size inspector for more control over your scrollable content. (29711618)
+- Content and Frame Layout guides are supported for [`UIScrollView`](https://developer.apple.com/documentation/uikit/uiscrollview) and can be enabled in the Size inspector for more control over your scrollable content. (29711618)
 - Interface Builder supports the new Apple TV tab bar style. (47598643)
-- The new [`WKInterfaceTextField`](https://developer.apple.com/documentation/WatchKit/WKInterfaceTextField) interface element is available for watchOS. (45754186)
+- The new [`WKInterfaceTextField`](https://developer.apple.com/documentation/watchkit/wkinterfacetextfield) interface element is available for watchOS. (45754186)
 - The canvas supports customizing interfaces for Mac Catalyst apps. (37797710)
 - SF Symbols are available in image inspector properties. (47532055)
-- The [`UIImageView`](https://developer.apple.com/documentation/UIKit/UIImageView) inspector includes support for configuring symbols. (47797500)
-- A view controller method annotated with the new `@IBSegueAction` attribute can be used to create a segue’s destination view controller in code, using a custom initializer with any required values. This makes it possible to use view controllers with non-optional initialization requirements in storyboards. Create a connection from a segue to an `@IBSegueAction` method on its source view controller. On new OS versions that support Segue Actions, that method will be called and the value it returns will be the `destinationViewController` of the segue object passed to [`prepare(for:sender:)`](https://developer.apple.com/documentation/UIKit/UIViewController/prepare(for:sender:)). Multiple `@IBSegueAction` methods may be defined on a single source view controller, which can alleviate the need to check segue identifier strings in [`prepare(for:sender:)`](https://developer.apple.com/documentation/UIKit/UIViewController/prepare(for:sender:)). (47091566) An `IBSegueAction` method takes up to three parameters: a coder, the sender, and the segue’s identifier. The first parameter is required, and the other parameters can be omitted from your method’s signature if desired. The [`NSCoder`](https://developer.apple.com/documentation/Foundation/NSCoder) must be passed through to the destination view controller’s initializer, to ensure it’s customized with values configured in storyboard. The method returns a view controller that matches the destination controller type defined in the storyboard, or nil to cause a destination controller to be initialized with the standard init(coder:) method. If you know you don’t need to return `nil`, the return type can be non-optional. In Swift, add the `@IBSegueAction` attribute: ```swift
+- The [`UIImageView`](https://developer.apple.com/documentation/uikit/uiimageview) inspector includes support for configuring symbols. (47797500)
+- A view controller method annotated with the new `@IBSegueAction` attribute can be used to create a segue’s destination view controller in code, using a custom initializer with any required values. This makes it possible to use view controllers with non-optional initialization requirements in storyboards. Create a connection from a segue to an `@IBSegueAction` method on its source view controller. On new OS versions that support Segue Actions, that method will be called and the value it returns will be the `destinationViewController` of the segue object passed to [`prepare(for:sender:)`](https://developer.apple.com/documentation/uikit/uiviewcontroller/prepare(for:sender:)). Multiple `@IBSegueAction` methods may be defined on a single source view controller, which can alleviate the need to check segue identifier strings in [`prepare(for:sender:)`](https://developer.apple.com/documentation/uikit/uiviewcontroller/prepare(for:sender:)). (47091566) An `IBSegueAction` method takes up to three parameters: a coder, the sender, and the segue’s identifier. The first parameter is required, and the other parameters can be omitted from your method’s signature if desired. The [`NSCoder`](https://developer.apple.com/documentation/foundation/nscoder) must be passed through to the destination view controller’s initializer, to ensure it’s customized with values configured in storyboard. The method returns a view controller that matches the destination controller type defined in the storyboard, or nil to cause a destination controller to be initialized with the standard init(coder:) method. If you know you don’t need to return `nil`, the return type can be non-optional. In Swift, add the `@IBSegueAction` attribute: ```swift
 @IBSegueAction
 func makeDogController(coder: NSCoder, sender: Any?, segueIdentifier: String?)
 -> ViewController? {
@@ -268,7 +268,7 @@ func makeDogController(coder: NSCoder, sender: Any?, segueIdentifier: String?)
 - If a glyph has a light and dark mode representation, the dark mode representation won’t be picked up in the storyboard. (50354204)
 - UIKit menus configured in Interface Builder are available at runtime on macOS, but not on iOS. (51077651)
 - The iOS status bar is not displayed in the Interface Builder canvas. (48639919)
-- There is an issue with [`UITabBarController`](https://developer.apple.com/documentation/UIKit/UITabBarController) where decoding an instance from a storyboard will create some extra views at the left end of the screen. Developers may remove these by applying a workaround. (55310448) **Workaround**: To remove the extraneous views from Storyboard, create a subclass of a [`UITabBarController`](https://developer.apple.com/documentation/UIKit/UITabBarController) and add the following snippet in the class’s [`init(coder:)`](https://developer.apple.com/documentation/UIKit/UIViewController/init(coder:)) method: ```swift
+- There is an issue with [`UITabBarController`](https://developer.apple.com/documentation/uikit/uitabbarcontroller) where decoding an instance from a storyboard will create some extra views at the left end of the screen. Developers may remove these by applying a workaround. (55310448) **Workaround**: To remove the extraneous views from Storyboard, create a subclass of a [`UITabBarController`](https://developer.apple.com/documentation/uikit/uitabbarcontroller) and add the following snippet in the class’s [`init(coder:)`](https://developer.apple.com/documentation/uikit/uiviewcontroller/init(coder:)) method: ```swift
 class WorkaroundTabBarController: UITabBarController {
   required init?(coder: NSCoder) {
       super.init(coder: coder)
@@ -284,13 +284,13 @@ class WorkaroundTabBarController: UITabBarController {
 ##### Resolved Issues
 
 - Connect-to-source popover fields support cut, copy, paste, and select all. (40899355)
-- Corrected the alignment of [`UILabel`](https://developer.apple.com/documentation/UIKit/UILabel), [`UITextField`](https://developer.apple.com/documentation/UIKit/UITextField), and [`UITextView`](https://developer.apple.com/documentation/UIKit/UITextView) instances with alignment set to “center” or “right” in Interface Builder when designing for or running on macOS. (50062524)
-- The inspector for [`UIDatePicker`](https://developer.apple.com/documentation/UIKit/UIDatePicker) now shows only the properties applicable to the selected mode. (26726319)
+- Corrected the alignment of [`UILabel`](https://developer.apple.com/documentation/uikit/uilabel), [`UITextField`](https://developer.apple.com/documentation/uikit/uitextfield), and [`UITextView`](https://developer.apple.com/documentation/uikit/uitextview) instances with alignment set to “center” or “right” in Interface Builder when designing for or running on macOS. (50062524)
+- The inspector for [`UIDatePicker`](https://developer.apple.com/documentation/uikit/uidatepicker) now shows only the properties applicable to the selected mode. (26726319)
 - The preview editor’s menu for adding iOS devices now matches the current canvas orientation. (48818470)
 - Preview editor items now preserve the configured locale or pseudo-locale. (48303753)
-- [`UIDatePicker`](https://developer.apple.com/documentation/UIKit/UIDatePicker) objects configured as Count Down in Interface Builder now use the specified duration at runtime. (23426425)
+- [`UIDatePicker`](https://developer.apple.com/documentation/uikit/uidatepicker) objects configured as Count Down in Interface Builder now use the specified duration at runtime. (23426425)
 - The Embed In bar button is also visible in documents not using Auto Layout. (46855203)
-- Subclasses of [`NSControl`](https://developer.apple.com/documentation/AppKit/NSControl) now have unique icons in the library and document outline. (24231920)
+- Subclasses of [`NSControl`](https://developer.apple.com/documentation/appkit/nscontrol) now have unique icons in the library and document outline. (24231920)
 - Fixed an issue where system colors in XIB files set to deploy before iOS 13.0 wouldn’t adapt to the system appearance at runtime. (54362252)
 
 ##### Localization
@@ -303,7 +303,7 @@ class WorkaroundTabBarController: UITabBarController {
 - The `genstrings` tool is enhanced and merged with the `extractLocStrings` tool. The previous version is deprecated, has been renamed to `ogenstrings`, and must now be invoked with `xcrun`. Any scripts that invoked `xcrun extractLocStrings` should be changed to use `genstrings`, but a compatibility symbolic link is currently provided that invokes `genstrings`. (19709395)
 - The `genstrings` tool now takes an `-encoding` argument that allows specification of the file encoding for input files. (48224455)
 - The updated version of `genstrings` has improved error reporting, and may report errors in scenarios that were previously silently accepted. As an example, `genstrings MyApp/*` will fail if the MyApp directory contains a subdirectory, because `genstrings` file arguments are required to be source files. (48304658)
-- The `genstrings` tool can now take any number of `-s` arguments to specify additional macros similar to [`NSLocalizedString`](https://developer.apple.com/documentation/Foundation/NSLocalizedString) or functions from which to extract strings. For example, `genstrings -s MyErrorSring -s MyUIString myfile.swift` treats both `MyErrorString` and `MyUIString` as equivalent to [`NSLocalizedString`](https://developer.apple.com/documentation/Foundation/NSLocalizedString). (48734596) > **Note**: Using `-s` arguments doesn’t suppress support for `NSLocalizedString` or `CFCopyLocalizedString`.
+- The `genstrings` tool can now take any number of `-s` arguments to specify additional macros similar to [`NSLocalizedString`](https://developer.apple.com/documentation/foundation/nslocalizedstring) or functions from which to extract strings. For example, `genstrings -s MyErrorSring -s MyUIString myfile.swift` treats both `MyErrorString` and `MyUIString` as equivalent to [`NSLocalizedString`](https://developer.apple.com/documentation/foundation/nslocalizedstring). (48734596) > **Note**: Using `-s` arguments doesn’t suppress support for `NSLocalizedString` or `CFCopyLocalizedString`.
 - The Export for Localization command and `genstrings` tool now support multiline Swift and Objective-C strings, and have relaxed whitespace requirements when recognizing arguments to `NSLocalizedString`. (50516442)
 - The performance of the Export for Localization command is substantially improved. (40548416)
 
@@ -348,8 +348,8 @@ class WorkaroundTabBarController: UITabBarController {
 ###### Known Issues
 
 - A new project that contains a USDz file and was never manually saved will have missing USDz objects when opened after an autosave. (53565602) **Workaround:** Manually save and re-open the project.
-- The [`RealityKit`](https://developer.apple.com/documentation/RealityKit) [`ARView`](https://developer.apple.com/documentation/RealityKit/ARView) class isn’t found at runtime when loading a storyboard if its module isn’t specified in Interface Builder. The following error message displays in the Xcode console: “Unknown class ARView in Interface Builder file.” (50840767) **Workaround:** [`ARView`](https://developer.apple.com/documentation/RealityKit/ARView) is a Swift view class, and requires both its class name ([`ARView`](https://developer.apple.com/documentation/RealityKit/ARView)) and module ([`RealityKit`](https://developer.apple.com/documentation/RealityKit)) to be specified in the Interface Builder inspector.
-- RealityKit’s [`ARView`](https://developer.apple.com/documentation/RealityKit/ARView) class is not found at runtime when loading a storyboard if RealityKit isn’t otherwise used within the Xcode project. The following error message displays in the Xcode console: “Unknown class _TtC10RealityKit6ARView in Interface Builder file.” (50900969) **Workaround:** This issue occurs if you import RealityKit and define an `@IBOutlet` with a type of [`ARView`](https://developer.apple.com/documentation/RealityKit/ARView), but don’t otherwise use RealityKit symbols in your project. To ensure that RealityKit is loaded at runtime with this configuration, manually add RealityKit to your target’s Link Binary with Libraries build phase.
+- The [`RealityKit`](https://developer.apple.com/documentation/realitykit) [`ARView`](https://developer.apple.com/documentation/realitykit/arview) class isn’t found at runtime when loading a storyboard if its module isn’t specified in Interface Builder. The following error message displays in the Xcode console: “Unknown class ARView in Interface Builder file.” (50840767) **Workaround:** [`ARView`](https://developer.apple.com/documentation/realitykit/arview) is a Swift view class, and requires both its class name ([`ARView`](https://developer.apple.com/documentation/realitykit/arview)) and module ([`RealityKit`](https://developer.apple.com/documentation/realitykit)) to be specified in the Interface Builder inspector.
+- RealityKit’s [`ARView`](https://developer.apple.com/documentation/realitykit/arview) class is not found at runtime when loading a storyboard if RealityKit isn’t otherwise used within the Xcode project. The following error message displays in the Xcode console: “Unknown class _TtC10RealityKit6ARView in Interface Builder file.” (50900969) **Workaround:** This issue occurs if you import RealityKit and define an `@IBOutlet` with a type of [`ARView`](https://developer.apple.com/documentation/realitykit/arview), but don’t otherwise use RealityKit symbols in your project. To ensure that RealityKit is loaded at runtime with this configuration, manually add RealityKit to your target’s Link Binary with Libraries build phase.
 - The Rename menu item isn’t enabled when scene, object, or behavior is selected. (54274819) **Workaround**: You can rename scenes and objects using the Name field in the Properties inspector. You can rename behaviors by right-clicking the behavior and selecting Rename from the contextual menu.
 
 ###### Resolved Issues
@@ -399,18 +399,18 @@ xcrun simctl status_bar <device> override --time "9:41" --batteryState charged -
 ``` See `xcrun simctl help status_bar` for the full range of options. (51697821)
 - Metal is available in iOS 13 and tvOS 13 simulators when running on macOS 10.15. Metal code is executed on the host Mac GPU, and is significantly faster than simulated OpenGL code. (System APIs in watchOS 6.0 simulators are also GPU accelerated.) The APIs in SceneKit, CoreAnimation, and other system frameworks abstract many differences between GPUs, reducing the need for device-specific code. When running on earlier versions of macOS or in an environment where Metal is not available, simulators continue to use software rendered OpenGL. If your Mac has multiple GPUs, use the File menu in Simulator to select which GPU to use. If the GPU in use becomes unavailable, any simulators using it automatically shut down. (18430676)
 - Xcode no longer creates every available iOS simulator device by default. Instead a set of the most commonly used devices are created. To create other devices — or multiple instances of a device — open the Devices window, select Simulators, click the **+** button, enter a name, and select the relevant device type and OS version. In Terminal, execute the `xcrun simctl create <name> <device type> <OS version>` command, for example `xcrun simctl create "My iPhone 7" "iPhone 7" iOS13.0`. (49428617)
-- [`CAMetalLayer`](https://developer.apple.com/documentation/QuartzCore/CAMetalLayer) is available in iOS 13 and tvOS 13 simulators. (45101325)
+- [`CAMetalLayer`](https://developer.apple.com/documentation/quartzcore/cametallayer) is available in iOS 13 and tvOS 13 simulators. (45101325)
 - iOS 13, watchOS 6, and tvOS 13 simulators now have a `dyld` shared cache. This improves simulator launch times and reduces the number of open file handles used by simulator processes. If you report an issue you believe is related to the shared cache, include a `simctl diagnose` and the output of launching your program with `DYLD_PRINT_LIBRARIES=1`. (13632739) > **Note**: A missing symbol crash may now mention the shared cache but this is not a shared cache bug. The message is merely informing you that the shared cache was consulted when searching for the symbol.
 - `simctl` now accepts short aliases for runtime names. This means you can create a new iPhone X simulator with a command like `simctl create 'iPhone X' iOS13`. (41089607)
 - For headless and continuous integration scenarios, you can configure CoreSimulator to skip compositing operations in the virtual frame buffer by setting `defaults write com.apple.CoreSimulator FramebufferServerRendererPolicy` to `none`. In this mode simulators can’t be viewed and `simctl io` is unable to take screenshots or record videos. (48264341)
-- Bundles without a [`CFBundleVersion`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/CFBundleVersion) are invalid and can’t be properly installed on devices or simulators. CoreSimulator now checks and rejects such bundles earlier in the process with a clearer error message. (49892531)
+- Bundles without a [`CFBundleVersion`](https://developer.apple.com/documentation/bundleresources/information-property-list/cfbundleversion) are invalid and can’t be properly installed on devices or simulators. CoreSimulator now checks and rejects such bundles earlier in the process with a clearer error message. (49892531)
 - The Simulator dock icon now includes a menu to quickly boot a simulator. (43067512)
 - Simulator’s File menu now includes a GPU selection menu to control which GPU is used by Metal support in simulators and for compositing by Simulator’s virtual frame buffer. If the Use External GPU When Available item is checked, any simulators booted after an external GPU is connected use the external GPU. If the external GPU is disconnected, any simulators using it automatically shut down. Changes to these settings only take effect when a simulator is booted. Simulators already booted when this setting is changed continue using the previously selected GPU until they’re restarted. (46134036)
 - iOS 13 simulators now strictly simulate edge gestures. To perform an edge swipe in a simulator turn on bezel mode and begin your gesture in the bezel area. (55052127)
 
 ###### Known Issues
 
-- Simulator doesn’t distribute the load if multiple GPUs in a system match the chosen GPU policy. Only the first matching GPU, as returned by [`MTLCopyAllDevices()`](https://developer.apple.com/documentation/Metal/MTLCopyAllDevices()), is used. (50608554) **Workaround:** You may see higher performance by locating the simulator window on the display directly connected to the GPU the simulator is using, which avoids copying across GPUs. > **Note**: As with any app that leverages the GPU, the performance behavior for an externally connected display varies depending on workload.
+- Simulator doesn’t distribute the load if multiple GPUs in a system match the chosen GPU policy. Only the first matching GPU, as returned by [`MTLCopyAllDevices()`](https://developer.apple.com/documentation/metal/mtlcopyalldevices()), is used. (50608554) **Workaround:** You may see higher performance by locating the simulator window on the display directly connected to the GPU the simulator is using, which avoids copying across GPUs. > **Note**: As with any app that leverages the GPU, the performance behavior for an externally connected display varies depending on workload.
 - Video recording of the iOS 13, tvOS 13, and watchOS 6 simulator through `xcrun simctl io `**` recordVideo` returns an error instead of recording video. (50625716)
 - watchOS simulators don’t honor a breakpoint on a cold boot. (51148192) **Workaround:** Completely boot the simulator before launching the app you’re debugging.
 - iCould Drive isn’t supported in iOS 13.0 and earlier simulator runtimes when running on macOS Catalina 10.15. Logging into iCloud on impacted simulators will result in `bird` terminating and relaunching in a cycle. (51392951) **Workaround**: Log out of iCloud in impacted simulators to halt the crash cycle.
@@ -425,7 +425,7 @@ xcrun simctl spawn <device> defaults write com.apple.springboard FBLaunchWatchdo
 
 - Simulator correctly displays the checkmark for Touch ID > Enrolled when it’s enrolled. (50553667)
 - Automatic synchronization of pasteboards between a host and simulated devices behaves correctly. (46686100)
-- [`IOSurface`](https://developer.apple.com/documentation/IOSurface/IOSurface) is now functional in iOS 13, watchOS 6, and tvOS 13 simulators. (11051639)
+- [`IOSurface`](https://developer.apple.com/documentation/iosurface/iosurface) is now functional in iOS 13, watchOS 6, and tvOS 13 simulators. (11051639)
 - Apps in a simulator that plays audio no longer automatically also open the microphone for input. (32406954)
 - The previously deprecated `availability` field in `simctl` list’s JSON output is removed. Use the `isAvailable` Boolean field to determine availability. (45142676)
 - Fixed an issue that could cause Simulator to crash or become unresponsive following clipboard-related actions in other applications if automatic pasteboard synchronization is enabled. (54011137)
@@ -481,7 +481,7 @@ xcrun simctl spawn <device> defaults write com.apple.springboard FBLaunchWatchdo
 
 ###### Resolved Issues
 
-- [`NSProgressIndicator`](https://developer.apple.com/documentation/AppKit/NSProgressIndicator) objects now preserve the current value configured in the inspector when built and run. (43257511)
+- [`NSProgressIndicator`](https://developer.apple.com/documentation/appkit/nsprogressindicator) objects now preserve the current value configured in the inspector when built and run. (43257511)
 - Resolved an issue where Xcode erroneously opened an assistant editor when you ran Fix All Issues using a keyboard shortcut. (37995114)
 - Added dedicated syntax coloring for `// MARK: `comments and `#pragma mark` directives, which you can customize in Preferences > Fonts & Colors > Mark. (22114159)
 - You can command-click on Swift operators to use Quick Help and Jump to Definition. (32695862)
@@ -589,7 +589,7 @@ ProcessEnvironment.PATH! += ":/usr/local/bin"
 ProcessEnvironment.self.PATH! += ":/usr/local/bin"
 someVarOfProcessEnvironmentDotType.PATH! += ":/usr/local/bin"
 ```
-- Assigning [`Optional.none`](https://developer.apple.com/documentation/Swift/Optional/none) to an enumeration that also has a `none` case, or comparing such an enumeration with [`Optional.none`](https://developer.apple.com/documentation/Swift/Optional/none) now produces a warning. Such expressions create an ambiguity because the compiler chooses [`Optional.none`](https://developer.apple.com/documentation/Swift/Optional/none) over the `none` case defined by your own enumeration. ([`SR-2176`](https://developer.apple.comhttps://bugs.swift.org/browse/SR-2176), 26126801) ```swift
+- Assigning [`Optional.none`](https://developer.apple.com/documentation/swift/optional/none) to an enumeration that also has a `none` case, or comparing such an enumeration with [`Optional.none`](https://developer.apple.com/documentation/swift/optional/none) now produces a warning. Such expressions create an ambiguity because the compiler chooses [`Optional.none`](https://developer.apple.com/documentation/swift/optional/none) over the `none` case defined by your own enumeration. ([`SR-2176`](https://developer.apple.comhttps://bugs.swift.org/browse/SR-2176), 26126801) ```swift
 enum Foo { case none }
 
 // Assigned Optional.none instead of Foo.none.
@@ -641,7 +641,7 @@ struct Box<Value> {
     func transform2() -> Box<Value> { return self }
 }
 ``` In classes, `Self` is the dynamic type of the `self` value, as before. Existing restrictions on `Self` in declaration types still apply; that is, `Self` can only appear as the return type of a method. However, `Self` can now be used inside the body of a method without limitation. ([`SE-0068`](https://developer.apple.comhttps://github.com/apple/swift-evolution/blob/master/proposals/0068-universal-self.md), 17892696)
-- [`Array`](https://developer.apple.com/documentation/Swift/Array) and [`ContiguousArray`](https://developer.apple.com/documentation/Swift/ContiguousArray) now have the [`init(unsafeUninitializedCapacity:initializingWith:)`](https://developer.apple.com/documentation/Swift/Array/init(unsafeUninitializedCapacity:initializingWith:)) initializer, which provides access to the array’s uninitialized storage. (21880692)
+- [`Array`](https://developer.apple.com/documentation/swift/array) and [`ContiguousArray`](https://developer.apple.com/documentation/swift/contiguousarray) now have the [`init(unsafeUninitializedCapacity:initializingWith:)`](https://developer.apple.com/documentation/swift/array/init(unsafeuninitializedcapacity:initializingwith:)) initializer, which provides access to the array’s uninitialized storage. (21880692)
 - More thorough checking has been implemented for restrictions around escaping closures capturing in-out parameters or values of `noescape` type. While most code isn’t affected, there are edge cases where the Swift 5.0 compiler accepted code that violated these restrictions. ([`SR-8546`](https://developer.apple.comhttps://bugs.swift.org/browse/SR-8546), [`SR-9043`](https://developer.apple.comhttps://bugs.swift.org/browse/SR-9043), 43355341) An example of invalid code which was incorrectly accepted by the Swift 5.0 compiler is an `@escaping` closure that calls a local function that references an in-out parameter from an outer scope: ```swift
 struct BadCaptureExample {
     var escapingClosure: () -> ()
@@ -666,9 +666,9 @@ func takesNoEscape(_ fn: () -> ()) {
 
 ###### Known Issues
 
-- The `NEHotspotConfigurationError` enum from the [`Network Extension`](https://developer.apple.com/documentation/NetworkExtension) framework changed from `NS_ENUM` to `NS_ERROR_ENUM`, which can cause compiler errors in existing Swift code that uses the enum. For example, in code like this: ```swift
+- The `NEHotspotConfigurationError` enum from the [`Network Extension`](https://developer.apple.com/documentation/networkextension) framework changed from `NS_ENUM` to `NS_ERROR_ENUM`, which can cause compiler errors in existing Swift code that uses the enum. For example, in code like this: ```swift
 let code = NEHotspotConfigurationError(rawValue: errorCode)
-``` You will see the error message: “error: incorrect argument label in call (have ‘rawValue:’, expected ‘_nsError:’).” (54134493) **Workaround**: Replace references of `NEHotspotConfigurationError` with [`NEHotspotConfigurationError`](https://developer.apple.com/documentation/NetworkExtension/NEHotspotConfigurationError). For the above example, change the code to: ```swift
+``` You will see the error message: “error: incorrect argument label in call (have ‘rawValue:’, expected ‘_nsError:’).” (54134493) **Workaround**: Replace references of `NEHotspotConfigurationError` with [`NEHotspotConfigurationError`](https://developer.apple.com/documentation/networkextension/nehotspotconfigurationerror). For the above example, change the code to: ```swift
 let code = NEHotspotConfigurationError.Code(rawValue: errorCode)
 ```
 
@@ -688,7 +688,7 @@ func foo(bar x: Int, bar y: Int) {}
 subscript(a x: Int, a y: Int) -> Int {}
 ```
 - Static libraries are now always force-loaded in their entirety during linking, fixing most “unable to demangle” runtime errors. (47598583)
-- `weak` and `unowned` stored properties no longer inhibit the automatic synthesis of [`Equatable`](https://developer.apple.com/documentation/Swift/Equatable) or [`Hashable`](https://developer.apple.com/documentation/Swift/Hashable) conformance. (SR-9827, 50566123)
+- `weak` and `unowned` stored properties no longer inhibit the automatic synthesis of [`Equatable`](https://developer.apple.com/documentation/swift/equatable) or [`Hashable`](https://developer.apple.com/documentation/swift/hashable) conformance. (SR-9827, 50566123)
 - If symbols in a crash log aren’t properly demangled, run the `swift-demangle` command and pass in the content of the crash log. (34920390)
 - If a type has the same name as its containing module, importing that module from a module interface works properly. (19481048, 48445154)
 
@@ -702,17 +702,17 @@ subscript(a x: Int, a y: Int) -> Int {}
 - Pinching to zoom is unavailable in live previews. (51183125) **Workaround:** Exit live mode or use the zoom controls in the canvas or editor menu.
 - Static previews for iOS, tvOS, and watchOS don’t support SceneKit, MapKit, and Metal views, and experience a delay when rendering updates. (50965310)
 - Previews in packages always perform a full build of the active scheme. (51030302)
-- [`HStack`](https://developer.apple.com/documentation/SwiftUI/HStack) and [`VStack`](https://developer.apple.com/documentation/SwiftUI/VStack) inspectors don’t support custom layout guides. (49710501) **Workaround:** Use the source editor for custom layout guides.
+- [`HStack`](https://developer.apple.com/documentation/swiftui/hstack) and [`VStack`](https://developer.apple.com/documentation/swiftui/vstack) inspectors don’t support custom layout guides. (49710501) **Workaround:** Use the source editor for custom layout guides.
 - The attribute inspector doesn’t allow specifying flexible frames. (51310989) **Workaround**: Use the source editor to work with the frame inspector when specifying flexible size information.
 - Entering live preview mode in the canvas might take several seconds the first time. (46505269)
 - Previews may fail or update incorrectly when switching between files. (50841287) **Workaround:** Add a newline to the end of the active file, then click Resume in the banner that appears.
 - The attributes inspector stays visible after the canvas closes, gets stuck on the last selected item, and doesn’t function. (50958316) **Workaround:** Reopen the canvas or switch to a different file.
-- Previews don’t appear in the canvas for `private` and `fileprivate` structures that conform to [`PreviewProvider`](https://developer.apple.com/documentation/SwiftUI/PreviewProvider). (47011316) **Workaround:** Remove the `private` or `fileprivate` access control from your conforming type.
+- Previews don’t appear in the canvas for `private` and `fileprivate` structures that conform to [`PreviewProvider`](https://developer.apple.com/documentation/swiftui/previewprovider). (47011316) **Workaround:** Remove the `private` or `fileprivate` access control from your conforming type.
 - Previews might take several seconds to update when switching devices in the run destination selector the first time. (47562171)
 - Previews might temporarily show the incorrect device chrome when switching devices using the run destination from the Scheme pop-up menu. (49496647)
 - Undo is unavailable in the canvas. (49651153) **Workaround:** Bring the source editor into focus and perform the undo there.
 - Text view doesn’t display properly in tvOS playgrounds. (54148259)
-- SwiftUI has an API that lets you change the value type of [`Binding`](https://developer.apple.com/documentation/SwiftUI/Binding) to [`AnyHashable`](https://developer.apple.com/documentation/Swift/AnyHashable): ```swift
+- SwiftUI has an API that lets you change the value type of [`Binding`](https://developer.apple.com/documentation/swiftui/binding) to [`AnyHashable`](https://developer.apple.com/documentation/swift/anyhashable): ```swift
 let someBinding: Binding<String> = ...
 
 let typeErasedBinding = Binding<AnyHashable>(someBinding)
@@ -770,9 +770,9 @@ let typeErasedBinding = Binding<AnyHashable>(someBinding)
 ###### New Features
 
 - The test plan editor now supports selecting a target to use when expanding build setting variables in command-line arguments and environment variable entries. (51841050)
-- Support for writing [`XCTest`](https://developer.apple.com/documentation/XCTest) UI tests that interact with SwiftUI views. (35224680)
+- Support for writing [`XCTest`](https://developer.apple.com/documentation/xctest) UI tests that interact with SwiftUI views. (35224680)
 - Test Plans are a new way to manage which tests run, and how those tests run. Schemes can reference multiple test plans, and define a default test plan for automation. A new Test Plan editor supports defining test configurations, which can inherit shared settings from the plan itself. Running tests in Xcode now runs tests across all test configurations. The Source Editor test diamonds are updated to support running a test in a single configuration, and the Test Navigator is updated to allow choosing the active test plan. Test reports are updated to support displaying results generated by a test plan. (16138582)
-- XCTest includes augmented performance testing capabilities with the new [`measure(metrics:options:block:)`](https://developer.apple.com/documentation/XCTest/XCTestCase/measure(metrics:options:block:)) method and related methods. The metrics argument requires a list of objects conforming to the [`XCTMetric`](https://developer.apple.com/documentation/XCTest/XCTMetric) protocol. You can either implement your own custom metrics or use [`XCTClockMetric`](https://developer.apple.com/documentation/XCTest/XCTClockMetric), [`XCTOSSignpostMetric`](https://developer.apple.com/documentation/XCTest/XCTOSSignpostMetric), [`XCTCPUMetric`](https://developer.apple.com/documentation/XCTest/XCTCPUMetric), [`XCTMemoryMetric`](https://developer.apple.com/documentation/XCTest/XCTMemoryMetric), or [`XCTStorageMetric`](https://developer.apple.com/documentation/XCTest/XCTStorageMetric). (49430032) The following shows an example performance test that measures the CPU and Memory impact of sorting a list: ```swift
+- XCTest includes augmented performance testing capabilities with the new [`measure(metrics:options:block:)`](https://developer.apple.com/documentation/xctest/xctestcase/measure(metrics:options:block:)) method and related methods. The metrics argument requires a list of objects conforming to the [`XCTMetric`](https://developer.apple.com/documentation/xctest/xctmetric) protocol. You can either implement your own custom metrics or use [`XCTClockMetric`](https://developer.apple.com/documentation/xctest/xctclockmetric), [`XCTOSSignpostMetric`](https://developer.apple.com/documentation/xctest/xctossignpostmetric), [`XCTCPUMetric`](https://developer.apple.com/documentation/xctest/xctcpumetric), [`XCTMemoryMetric`](https://developer.apple.com/documentation/xctest/xctmemorymetric), or [`XCTStorageMetric`](https://developer.apple.com/documentation/xctest/xctstoragemetric). (49430032) The following shows an example performance test that measures the CPU and Memory impact of sorting a list: ```swift
 func testExample() {
     // Measures the CPU and memory impact of sorting the input list.
     measure(metrics: [XCTCPUMetric(), XCTMemoryMetric()]) {
@@ -780,7 +780,7 @@ func testExample() {
     }
 }
 ```
-- Added an assertion function, `XCTUnwrap`, for use in Swift tests. `XCTUnwrap` asserts that an Optional variable’s value is not `nil`, returning its value if the assertion succeeds. This removes the need to combine [`XCTAssertNotNil(_:_:file:line:)`](https://developer.apple.com/documentation/XCTest/XCTAssertNotNil(_:_:file:line:)) with either unwrapping the value or dealing with conditional chaining for the rest of the test. For example: ```swift
+- Added an assertion function, `XCTUnwrap`, for use in Swift tests. `XCTUnwrap` asserts that an Optional variable’s value is not `nil`, returning its value if the assertion succeeds. This removes the need to combine [`XCTAssertNotNil(_:_:file:line:)`](https://developer.apple.com/documentation/xctest/xctassertnotnil(_:_:file:line:)) with either unwrapping the value or dealing with conditional chaining for the rest of the test. For example: ```swift
 func testFirstNameNotEmpty() throws {
     let forenames: [String] = customer.forenames
 
@@ -816,7 +816,7 @@ SWIFT_INCLUDE_PATHS = "$(inherited) $(PLATFORM_DIR)/Developer/usr/lib"
 - Schemes which have been converted to use test plans – and have test plan entries in the Build action enabled for actions other than Test (such as Run) – no longer crash with versions of Xcode before 11.0. (53645359)
 - The structured build log in Xcode, and in standalone Result Bundles, shows durations for each step again. (48126238)
 - The Execute in Parallel checkbox in the test action of a scheme is now enabled for test targets of a Swift package. (47564543)
-- The [`exists`](https://developer.apple.com/documentation/XCTest/XCUIElement/exists) property on [`XCUIElement`](https://developer.apple.com/documentation/XCTest/XCUIElement) now produces test failures in situations where XCTest is unable to inspect the application’s UI — for example, due to the app’s main thread being unresponsive — instead of returning `false` in those situations. (37359653)
+- The [`exists`](https://developer.apple.com/documentation/xcuiautomation/xcuielement/exists) property on [`XCUIElement`](https://developer.apple.com/documentation/xcuiautomation/xcuielement) now produces test failures in situations where XCTest is unable to inspect the application’s UI — for example, due to the app’s main thread being unresponsive — instead of returning `false` in those situations. (37359653)
 - The unit test discovery mechanism is more efficient for large projects. The test navigator gets populated faster after reopening a project. (32567980)
 
 ##### Watchos

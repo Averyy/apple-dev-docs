@@ -19,7 +19,7 @@ case blackOutline
 
 #### Discussion
 
-Use this button when displaying this button against a dark background (shown here against a black background). ![None](https://docs-assets.developer.apple.com/published/6fa3946450baf393545dcb16e96eabc8/media-2557100%402x.png)
+Use this button when displaying this button against a dark background (shown here against a black background). ![None](/images/com.apple.passkit/media-2557100@2x.png)
 
 ## See Also
 

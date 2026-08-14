@@ -16,9 +16,9 @@ The Kernel Framework provides the APIs and support for kernel-resident device dr
 ### Kernel Extensions
 - [Implementing drivers, system extensions, and kexts](implementing_drivers_system_extensions_and_kexts.md)
   Create drivers and system extensions to communicate with hardware and provide low-level services, and only use kernel extensions for a few tasks. 
-- [Installing a custom kernel extension](../apple-silicon/installing-a-custom-kernel-extension.md)
+- [Installing a Custom Kernel Extension](../apple-silicon/installing-a-custom-kernel-extension.md)
   Install kernel extensions using a custom installer package, and help users understand the installation process.
-- [Debugging a custom kernel extension](../apple-silicon/debugging-a-custom-kernel-extension.md)
+- [Debugging a Custom Kernel Extension](../apple-silicon/debugging-a-custom-kernel-extension.md)
   Configure your system to enable the debugging of custom kernel extensions from a second Mac.
 - [Generating a Non-Maskable Interrupt](generating_a_non-maskable_interrupt.md)
   Interrupt the kernel on a target Mac and attach a remote debugger to it.
@@ -80,7 +80,7 @@ The Kernel Framework provides the APIs and support for kernel-resident device dr
 - [IOEventLinkInterface](ioeventlinkinterface.md)
 - [IOGuardPageMemoryDescriptor](ioguardpagememorydescriptor.md)
 - [IOHIDTranslationService](iohidtranslationservice.md)
-- [IOServiceStateNotificationDispatchSource](../driverkit/ioservicestatenotificationdispatchsource.md)
+- [IOServiceStateNotificationDispatchSource](ioservicestatenotificationdispatchsource.md)
 - [IOServiceStateNotificationDispatchSourceInterface](ioservicestatenotificationdispatchsourceinterface.md)
 - [IOWorkGroup](ioworkgroup.md)
 - [IOWorkGroupInterface](ioworkgroupinterface.md)

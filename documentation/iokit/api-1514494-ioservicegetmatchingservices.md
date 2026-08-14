@@ -28,7 +28,7 @@ This is the preferred method of finding IOService objects currently registered b
 
 ## Parameters
 
-- `masterPort`: The primary port obtained from  . Pass   to look up the default primary port.
+- `masterPort`: The primary port obtained from [`IOMasterPort(_:_:)`](1514652-iomasterport.md). Pass [`kIOMasterPortDefault`](kiomasterportdefault.md) to look up the default primary port.
 - `matching`: A CF dictionary containing matching information, of which one reference is always consumed by this function (Note prior to the Tiger release there was a small chance that the dictionary might not be released if there was an error attempting to serialize the dictionary). IOKitLib can construct matching dictionaries for common criteria with helper functions such as IOServiceMatching, IOServiceNameMatching, IOBSDNameMatching.
 - `existing`: An iterator handle is returned on success, and should be released by the caller when the iteration is finished.
 

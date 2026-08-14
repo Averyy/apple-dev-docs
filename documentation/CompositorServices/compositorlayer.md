@@ -22,9 +22,9 @@ A type that you use with an immersive space to display fully immersive content u
 
 #### Overview
 
-Use a [`CompositorLayer`](compositorlayer.md) to specify the content of an [`ImmersiveSpace`](https://developer.apple.com/documentation/SwiftUI/ImmersiveSpace) when you want to render that content yourself using Metal. When you present a space with this content, Compositor Services creates a [`LayerRenderer`](layerrenderer.md) type for you to use with your rendering code. The layer renderer provides configuration details, timing information, and the Metal types and information you need to configure your rendering loop and manage the rendering process.
+Use a [`CompositorLayer`](compositorlayer.md) to specify the content of an [`ImmersiveSpace`](https://developer.apple.com/documentation/swiftui/immersivespace) when you want to render that content yourself using Metal. When you present a space with this content, Compositor Services creates a [`LayerRenderer`](layerrenderer.md) type for you to use with your rendering code. The layer renderer provides configuration details, timing information, and the Metal types and information you need to configure your rendering loop and manage the rendering process.
 
-The following example shows a [`ImmersiveSpace`](https://developer.apple.com/documentation/SwiftUI/ImmersiveSpace) that uses a [`CompositorLayer`](compositorlayer.md) to specify its content. Use the closure for the [`CompositorLayer`](compositorlayer.md) to set up and start your Metal rendering code. In this example, Compositor Services creates the layer using a default set of Metal configuration options. To customize the configuration of your Metal rendering environment, pass a custom [`CompositorLayerConfiguration`](compositorlayerconfiguration.md) type to your [`CompositorLayer`](compositorlayer.md) at initialization time.
+The following example shows a [`ImmersiveSpace`](https://developer.apple.com/documentation/swiftui/immersivespace) that uses a [`CompositorLayer`](compositorlayer.md) to specify its content. Use the closure for the [`CompositorLayer`](compositorlayer.md) to set up and start your Metal rendering code. In this example, Compositor Services creates the layer using a default set of Metal configuration options. To customize the configuration of your Metal rendering environment, pass a custom [`CompositorLayerConfiguration`](compositorlayerconfiguration.md) type to your [`CompositorLayer`](compositorlayer.md) at initialization time.
 
 ```swift
 ImmersiveSpace(id: "MyContent") {
@@ -53,12 +53,12 @@ For more information about how to set up and start your Metal rendering engine, 
 ## Relationships
 
 ### Conforms To
-- [CompositorContent](../SwiftUI/CompositorContent.md)
-- [Copyable](../Swift/Copyable.md)
-- [Escapable](../Swift/Escapable.md)
-- [ImmersiveSpaceContent](../SwiftUI/ImmersiveSpaceContent.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [CompositorContent](../swiftui/compositorcontent.md)
+- [Copyable](../swift/copyable.md)
+- [Escapable](../swift/escapable.md)
+- [ImmersiveSpaceContent](../swiftui/immersivespacecontent.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

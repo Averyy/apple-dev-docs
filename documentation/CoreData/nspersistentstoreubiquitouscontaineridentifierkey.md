@@ -20,7 +20,7 @@ let NSPersistentStoreUbiquitousContainerIdentifierKey: String
 
 #### Discussion
 
-Core Data passes the persistent identifer to [`url(forUbiquityContainerIdentifier:)`](https://developer.apple.com/documentation/Foundation/FileManager/url(forUbiquityContainerIdentifier:)).
+Core Data passes the persistent identifer to [`url(forUbiquityContainerIdentifier:)`](https://developer.apple.com/documentation/foundation/filemanager/url(forubiquitycontaineridentifier:)).
 
 ## See Also
 

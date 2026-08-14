@@ -26,7 +26,7 @@ Returns the first object contained in the receiving array that’s equal to an o
 
 #### Discussion
 
-This method uses [`isEqual(_:)`](https://developer.apple.com/documentation/ObjectiveC/NSObjectProtocol/isEqual(_:)) to check for object equality.
+This method uses [`isEqual(_:)`](https://developer.apple.com/documentation/objectivec/nsobjectprotocol/isequal(_:)) to check for object equality.
 
 ## Parameters
 

@@ -51,9 +51,9 @@ print("max", c) // Prints "max 3.6"
 ## Parameters
 
 - `__A`: Single-precision real input vector.
-- `__I`: Stride for  .
+- `__I`: Stride for `A`.
 - `__C`: Output scalar.
-- `__N`: The number of elements to process. If   is zero ( ), this function returns  .
+- `__N`: The number of elements to process. If `N` is zero (`0`), this function returns `-INFINITY`.
 
 
 ---

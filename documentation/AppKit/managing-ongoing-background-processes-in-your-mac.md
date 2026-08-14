@@ -17,15 +17,15 @@ For apps that provide background processing of any kind, it‘s not always readi
 
 When an app doesn’t terminate background processes after someone quits, macOS shows a Dock indicator for the app and adds a Dock menu item, as shown below, to stop running the app in the background. Clicking on the menu item terminates the app’s background processes. If someone stops an app’s background activity multiple times, macOS presents an alert that allows people to either continue to allow the app to run in the background in the future, or to prevent its future background activity. The system only shows this alert a limited number of times when a person chooses the “Stop running in background” option.
 
-An application which transitions away from the Foreground type to a UIElement or BackgroundOnly type, using either [`setActivationPolicy(_:)`](NSApplication/setActivationPolicy(_:).md) or [`TransformProcessType(_:_:)`](https://developer.apple.com/documentation/applicationservices/1462420-transformprocesstype), disappears from the Dock and doesn’t show the indicator, but the system still presents a notification.
+An application which transitions away from the Foreground type to a UIElement or BackgroundOnly type, using either [`setActivationPolicy(_:)`](nsapplication/setactivationpolicy(_:).md) or [`TransformProcessType(_:_:)`](https://developer.apple.com/documentation/applicationservices/1462420-transformprocesstype), disappears from the Dock and doesn’t show the indicator, but the system still presents a notification.
 
-![An screenshot of the Doc that shows a an popover that tells someone that an app is running in the background.](https://docs-assets.developer.apple.com/published/9c41b425d82455392dfff0f7e11ca008/background-app-running-dock%402x.png)
+![An screenshot of the Doc that shows a an popover that tells someone that an app is running in the background.](/images/com.apple.appkit/background-app-running-dock@2x.png)
 
-![An screenshot of an alert that asks someone if an app should continue to run in background in the future and that gives instructions on how to manage this capability.](https://docs-assets.developer.apple.com/published/db93278ea8a7e61f41dbfd80b55b01c8/background-app-running-alert%402x.png)
+![An screenshot of an alert that asks someone if an app should continue to run in background in the future and that gives instructions on how to manage this capability.](/images/com.apple.appkit/background-app-running-alert@2x.png)
 
 When an app runs in the background for the first time, macOS also presents a notification. Clicking on the notification brings the person using the app to Settings > Login Items & Extensions, where they can see and manage each app’s background activity.
 
-![An screenshot of a notification that informs someone that an app they quit has background processes that continue to run.](https://docs-assets.developer.apple.com/published/aa2a521e2a16489eb5c4882e3e3ce448/background-app-running-notification%402x.png)
+![An screenshot of a notification that informs someone that an app they quit has background processes that continue to run.](/images/com.apple.appkit/background-app-running-notification@2x.png)
 
 #### Keep People in Charge of Whats Running
 
@@ -35,15 +35,15 @@ Apps running in macOS have a number of options available to manage their use of 
 
 #### Provide a Control to Manage Long Running Work After an App Quits
 
-In the scenarios where an app has to finish up a long running task (such as cloud syncing operations, or importing or exporting data) after someone quits, having a visible UI element, such as a progress bar indicates to the system that the background processing can continue. Another strategy is to use a [`MenuBarExtra`](https://developer.apple.com/documentation/SwiftUI/MenuBarExtra) to provide progress updates and include some way to control the action. You can implement this either by a menu bar extra command that returns the app to a visible state — which makes the app reappear in the Dock — or by giving people additional options in menu bar extra such as the ability to suspend or cancel the background activity (for example, through a “Quit” or “Stop XXX activity” command), or both.
+In the scenarios where an app has to finish up a long running task (such as cloud syncing operations, or importing or exporting data) after someone quits, having a visible UI element, such as a progress bar indicates to the system that the background processing can continue. Another strategy is to use a [`MenuBarExtra`](https://developer.apple.com/documentation/swiftui/menubarextra) to provide progress updates and include some way to control the action. You can implement this either by a menu bar extra command that returns the app to a visible state — which makes the app reappear in the Dock — or by giving people additional options in menu bar extra such as the ability to suspend or cancel the background activity (for example, through a “Quit” or “Stop XXX activity” command), or both.
 
 #### Manage a Persistent App Related Background Service
 
-If your app needs a persistent background service to support its activities, consider using the [`Service Management`](https://developer.apple.com/documentation/ServiceManagement) framework to register a launch agent or launch daemon. Registering a service using the [`SMAppService`](https://developer.apple.com/documentation/ServiceManagement/SMAppService) notifies someone about the new background item. Someone can then, if necessary, disable registered services in System Settings.
+If your app needs a persistent background service to support its activities, consider using the [`Service Management`](https://developer.apple.com/documentation/servicemanagement) framework to register a launch agent or launch daemon. Registering a service using the [`SMAppService`](https://developer.apple.com/documentation/servicemanagement/smappservice) notifies someone about the new background item. Someone can then, if necessary, disable registered services in System Settings.
 
-Test your app when the service is in a disabled state (toggled off) in the System Settings to ensure it works as expected. You can use the `SMAppService`.[`status`](https://developer.apple.com/documentation/ServiceManagement/SMAppService/status-swift.property) property to programmatically examine the current state of the service. If your background service needs configuration — such as a database server — a best practice is to provide a preference pane in System Settings that allows someone to configure the service, as well as to start and stop it. For more information on creating preference panes, see [`Preference Panes`](https://developer.apple.com/documentation/PreferencePanes).
+Test your app when the service is in a disabled state (toggled off) in the System Settings to ensure it works as expected. You can use the `SMAppService`.[`status`](https://developer.apple.com/documentation/servicemanagement/smappservice/status-swift.property) property to programmatically examine the current state of the service. If your background service needs configuration — such as a database server — a best practice is to provide a preference pane in System Settings that allows someone to configure the service, as well as to start and stop it. For more information on creating preference panes, see [`Preference Panes`](https://developer.apple.com/documentation/preferencepanes).
 
-![An screenshot of System Settings that shows details of apps that start at login or run in the background.](https://docs-assets.developer.apple.com/published/7b50d0f6618da44f6c6b6e69d20af656/background-app-settings%402x.png)
+![An screenshot of System Settings that shows details of apps that start at login or run in the background.](/images/com.apple.appkit/background-app-settings@2x.png)
 
 #### Control Apps Without a User Interface Ui
 
@@ -51,12 +51,12 @@ Some apps don’t have a UI. For example, an app that handles a custom URL schem
 
 Non-UI apps may use one or the other of these options (doing both also works, but isn’t required) to ensure termination when the app’s main UI quits:
 
-- Set the property [`automaticTerminationSupportEnabled`](https://developer.apple.com/documentation/Foundation/ProcessInfo/automaticTerminationSupportEnabled) or [`NSSupportsSuddenTermination`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSSupportsSuddenTermination) in the app’s Information Property List in Xcode, depending on whether your Non-UI app needs a graceful shutdown (`NSSupportsAutomaticTermination`) or can tolerate a sudden termination with no warning (`NSSupportsSuddenTermination`).
-- If it doesn’t show UI (such as a [`MenuBarExtra`](https://developer.apple.com/documentation/SwiftUI/MenuBarExtra)), the app should quit a few seconds after finishing any work, this allows the app to process any possible queued system events before quitting.
+- Set the property [`automaticTerminationSupportEnabled`](https://developer.apple.com/documentation/foundation/processinfo/automaticterminationsupportenabled) or [`NSSupportsSuddenTermination`](https://developer.apple.com/documentation/bundleresources/information-property-list/nssupportssuddentermination) in the app’s Information Property List in Xcode, depending on whether your Non-UI app needs a graceful shutdown (`NSSupportsAutomaticTermination`) or can tolerate a sudden termination with no warning (`NSSupportsSuddenTermination`).
+- If it doesn’t show UI (such as a [`MenuBarExtra`](https://developer.apple.com/documentation/swiftui/menubarextra)), the app should quit a few seconds after finishing any work, this allows the app to process any possible queued system events before quitting.
 
-> **Note**: The system doesn’t honor runtime changes to the [`automaticTerminationOptOutCounter`](https://developer.apple.com/documentation/Foundation/NSProcessInfo/automaticTerminationOptOutCounter) property in [`ProcessInfo`](https://developer.apple.com/documentation/Foundation/ProcessInfo) for this purpose. Use one of the options described above, such as the Information Property List settings instead.
+> **Note**: The system doesn’t honor runtime changes to the [`automaticTerminationOptOutCounter`](https://developer.apple.com/documentation/foundation/nsprocessinfo/automaticterminationoptoutcounter) property in [`ProcessInfo`](https://developer.apple.com/documentation/foundation/processinfo) for this purpose. Use one of the options described above, such as the Information Property List settings instead.
 
-For an example of a GUI-less agent app, see [`Updating your app package installer to use the new Service Management API`](https://developer.apple.com/documentation/ServiceManagement/updating-your-app-package-installer-to-use-the-new-service-management-api).
+For an example of a GUI-less agent app, see [`Updating your app package installer to use the new Service Management API`](https://developer.apple.com/documentation/servicemanagement/updating-your-app-package-installer-to-use-the-new-service-management-api).
 
 #### Understand How Implementation Decisions Affect Processes Management
 
@@ -83,15 +83,15 @@ If your visible application directly launches background / non-visible applicati
     }
 ```
 
-1. Set the property [`automaticTerminationSupportEnabled`](https://developer.apple.com/documentation/Foundation/ProcessInfo/automaticTerminationSupportEnabled) or [`NSSupportsSuddenTermination`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSSupportsSuddenTermination) in the app’s [`Information Property List`](https://developer.apple.com/documentation/BundleResources/Information-Property-List) in Xcode. The choice of which method to use depends on whether your non-UI app needs a graceful shutdown (`NSSupportsAutomaticTermination`) or whether it can tolerate a sudden termination with no warning (`NSSupportsSuddenTermination`).
+1. Set the property [`automaticTerminationSupportEnabled`](https://developer.apple.com/documentation/foundation/processinfo/automaticterminationsupportenabled) or [`NSSupportsSuddenTermination`](https://developer.apple.com/documentation/bundleresources/information-property-list/nssupportssuddentermination) in the app’s [`Information Property List`](https://developer.apple.com/documentation/bundleresources/information-property-list) in Xcode. The choice of which method to use depends on whether your non-UI app needs a graceful shutdown (`NSSupportsAutomaticTermination`) or whether it can tolerate a sudden termination with no warning (`NSSupportsSuddenTermination`).
 
 #### Managing Execed Processes
 
 If your app creates background processes using `system()` , `fork()`, or `posix_spawn()` to start other processes from your app, then ensure that these processes are terminated as your app quits by adopting one of these best practices.
 
-- Consider moving this functionality into an XPC service or an extension inside your app. This allows the system to track this relationship between the app and the service and terminate these processes for you automatically. For more information, see [`Creating XPC services`](https://developer.apple.com/documentation/XPC/creating-xpc-services).
-- If your app needs to start a long-term process which runs after your app terminates, consider using a launch agent managed with [`SMAppService`](https://developer.apple.com/documentation/ServiceManagement/SMAppService) instead of using `fork()`, `posix_spawn()`, or `system()`, which allows a person to control this in the System Settings app pane.
-- If your app needs to share information or processing between a group of apps, look into a per-user XPC service or a launch agent. For more information on launch agents, see [`Service Management`](https://developer.apple.com/documentation/ServiceManagement).
+- Consider moving this functionality into an XPC service or an extension inside your app. This allows the system to track this relationship between the app and the service and terminate these processes for you automatically. For more information, see [`Creating XPC services`](https://developer.apple.com/documentation/xpc/creating-xpc-services).
+- If your app needs to start a long-term process which runs after your app terminates, consider using a launch agent managed with [`SMAppService`](https://developer.apple.com/documentation/servicemanagement/smappservice) instead of using `fork()`, `posix_spawn()`, or `system()`, which allows a person to control this in the System Settings app pane.
+- If your app needs to share information or processing between a group of apps, look into a per-user XPC service or a launch agent. For more information on launch agents, see [`Service Management`](https://developer.apple.com/documentation/servicemanagement).
 
 #### Manage Self Backgrounding Apps
 

@@ -42,7 +42,7 @@ The text in the above example spans more than one line because:
 
 The modifier applies the alignment to the all the lines of text in the view, regardless of why wrapping occurs:
 
-![A block of text that spans 5 lines. The lines of text are center-aligned.](https://docs-assets.developer.apple.com/published/108e89dd918c8628ecce347bf78c9b53/View-multilineTextAlignment-1-iOS%402x.png)
+![A block of text that spans 5 lines. The lines of text are center-aligned.](/images/com.apple.SwiftUI/View-multilineTextAlignment-1-iOS@2x.png)
 
 The modifier has no effect on a [`Text`](text.md) view that contains only one line of text, because a text view has a width that exactly matches the width of its widest line. If you want to align an entire text view rather than its contents, set the aligment of its container, like a [`VStack`](vstack.md) or a frame that you create with the [`frame(minWidth:idealWidth:maxWidth:minHeight:idealHeight:maxHeight:alignment:)`](view/frame(minwidth:idealwidth:maxwidth:minheight:idealheight:maxheight:alignment:).md) modifier.
 

@@ -23,7 +23,7 @@ var sourceItem: (any UIPopoverPresentationControllerSourceItem)? { get set }
 
 #### Discussion
 
-Assign a value to this property to anchor the popover to the specified [`UIBarButtonItem`](uibarbuttonitem.md) or [`NSToolbarItem`](https://developer.apple.com/documentation/AppKit/NSToolbarItem). In iOS 18 and earlier, the popover’s arrow points to the specified item. In iOS 26 and later, the popover animates from and replaces the specified item until someone selects an action item or dismisses the popover.
+Assign a value to this property to anchor the popover to the specified [`UIBarButtonItem`](uibarbuttonitem.md) or [`NSToolbarItem`](https://developer.apple.com/documentation/appkit/nstoolbaritem). In iOS 18 and earlier, the popover’s arrow points to the specified item. In iOS 26 and later, the popover animates from and replaces the specified item until someone selects an action item or dismisses the popover.
 
 Alternatively, you may specify the anchor location for the popover using the [`sourceView`](uipopoverpresentationcontroller/sourceview.md) and [`sourceRect`](uipopoverpresentationcontroller/sourcerect.md) properties.
 

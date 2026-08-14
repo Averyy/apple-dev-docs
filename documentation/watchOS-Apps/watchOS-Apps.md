@@ -8,7 +8,7 @@ Build watchOS apps that combine complications, notifications, and Siri to create
 
 Apple Watch provides easy access to vital information on someone’s wrist. The watchOS experience focuses on quick actions that achieve useful tasks through brief, punctuated interactions.
 
-![An illustration showing an Apple Watch surrounded by icons representing common features, including creating user interfaces, playing background audio, and displaying custom notifications.](https://docs-assets.developer.apple.com/published/338a988aa783dd6f74046d0101407df4/WatchKit-1%402x.png)
+![An illustration showing an Apple Watch surrounded by icons representing common features, including creating user interfaces, playing background audio, and displaying custom notifications.](/images/com.apple.watchOS-Apps/WatchKit-1@2x.png)
 
 On Apple Watch, keep interactions as short as possible. Provide vital information at a glance, encouraging the wearer to respond with just a few taps, and then drop their wrist and move on. They don’t need to wait to see if the action succeeds; instead, the watchOS app automatically notifies them of any important updates.
 
@@ -20,25 +20,25 @@ When designing a watchOS app, mix a combination of the following technologies to
 
 The main app serves as the foundation for your watchOS app experience. Anyone can launch and interact with your app directly. However, the app’s interface isn’t necessarily the primary way people interact with your app. Many may prefer to interact through complications or notifications, and may never explicitly launch your app.
 
-![An illustration of a watch face showing four watchOS app icons.](https://docs-assets.developer.apple.com/published/c54dd895f3e9d547684408b76e0e797e/app%402x.png)
+![An illustration of a watch face showing four watchOS app icons.](/images/com.apple.watchOS-Apps/app@2x.png)
 
 #### Complications
 
 Complications provide small glimpses into your app’s data directly on the watch face. People can add complications to most watch faces, but space is limited. Design complications to show information that is timely, up to date, and useful. People can also launch the watchOS app quickly and easily by tapping a complication.
 
-![An illustration of a watch face with the corners highlighted to represent corner complications.](https://docs-assets.developer.apple.com/published/a9fbf6cf8c536511a2692372542da3b5/complications%402x.png)
+![An illustration of a watch face with the corners highlighted to represent corner complications.](/images/com.apple.watchOS-Apps/complications@2x.png)
 
 #### Notifications
 
 Use notifications to alert people of significant events. You can also provide actions so that people can respond immediately without opening your app. You can use either local or remote notifications to communicate, even when your app isn’t running.
 
-![An illustration of a watch face showing a notification icon and two bars representing notification text.](https://docs-assets.developer.apple.com/published/68f83998b0e0117749ab87023203291c/notification%402x.png)
+![An illustration of a watch face showing a notification icon and two bars representing notification text.](/images/com.apple.watchOS-Apps/notification@2x.png)
 
 #### Siri
 
-Use SiriKit and App intents to expand the ways people can interact with your app. If your app uses domains like messaging or media, use [`SiriKit`](https://developer.apple.com/documentation/SiriKit) to add Siri support to your app. For other features, use [`App Intents`](https://developer.apple.com/documentation/AppIntents) to expose your app’s functionality to system services like Siri and the Shortcuts app.
+Use SiriKit and App intents to expand the ways people can interact with your app. If your app uses domains like messaging or media, use [`SiriKit`](https://developer.apple.com/documentation/sirikit) to add Siri support to your app. For other features, use [`App Intents`](https://developer.apple.com/documentation/appintents) to expose your app’s functionality to system services like Siri and the Shortcuts app.
 
-![An illustration of a watch face showing the Siri icon and the text What can I help you with?](https://docs-assets.developer.apple.com/published/55a6be7ce63438fdc13d04ae6b715a30/siri%402x.png)
+![An illustration of a watch face showing the Siri icon and the text What can I help you with?](/images/com.apple.watchOS-Apps/siri@2x.png)
 
 ## Topics
 
@@ -49,7 +49,7 @@ Use SiriKit and App intents to expand the ways people can interact with your app
   Integrate SwiftUI elements and watch-specific features, and build widgets for the Smart Stack.
 - [Building a watchOS app](building_a_watchos_app.md)
   Set up your app’s life cycle and create its user interface with SwiftUI.
-- [watchOS updates](../Updates/watchos.md)
+- [watchOS updates](../updates/watchos.md)
   Learn about important changes to watchOS.
 - [Migrating to a single-target watchOS app](migrating-to-a-single-target-watchos-app.md)
   Adopt the single-target configuration to simplify your project and avoid ambiguity about where to store resources and apply entitlements.
@@ -64,7 +64,7 @@ Use SiriKit and App intents to expand the ways people can interact with your app
   Seamlessly schedule updates to your user interface, even while it’s inactive.
 - [Authenticating users on Apple Watch](authenticating-users-on-apple-watch.md)
   Create an account sign-up and sign-in strategy for your app.
-- [Responding to the Action button on Apple Watch Ultra](../AppIntents/ActionButtonArticle.md)
+- [Responding to the Action button on Apple Watch Ultra](../appintents/actionbuttonarticle.md)
   Use App Intents to register actions for your app.
 - [Enabling the double-tap gesture on Apple Watch](enabling-double-tap.md)
   Customize your app’s response to the double-tap gesture on Apple Watch.
@@ -81,41 +81,41 @@ Use SiriKit and App intents to expand the ways people can interact with your app
 - [Setting the app’s accent color](setting-the-app-s-accent-color.md)
   Set your app’s accent color.
 ### Complications
-- [Creating accessory widgets and watch complications](../WidgetKit/Creating-accessory-widgets-and-watch-complications.md)
+- [Creating accessory widgets and watch complications](../widgetkit/creating-accessory-widgets-and-watch-complications.md)
   Support accessory widgets that appear on the Lock Screen and as complications on Apple Watch.
-- [Migrating ClockKit complications to WidgetKit](../WidgetKit/Converting-A-ClockKit-App.md)
+- [Migrating ClockKit complications to WidgetKit](../widgetkit/converting-a-clockkit-app.md)
   Leverage WidgetKit’s API to create watchOS complications using SwiftUI.
-- [Creating a widget extension](../WidgetKit/Creating-a-Widget-Extension.md)
+- [Creating a widget extension](../widgetkit/creating-a-widget-extension.md)
   Display your app’s content in a convenient, informative widget on various devices.
-- [Keeping a widget up to date](../WidgetKit/Keeping-a-Widget-Up-To-Date.md)
+- [Keeping a widget up to date](../widgetkit/keeping-a-widget-up-to-date.md)
   Plan your widget’s timeline to show timely, relevant information using dynamic views, and update the timeline when things change.
-- [Increasing the visibility of widgets in Smart Stacks](../WidgetKit/Widget-Suggestions-In-Smart-Stacks.md)
+- [Increasing the visibility of widgets in Smart Stacks](../widgetkit/widget-suggestions-in-smart-stacks.md)
   Provide contextual information and donate intents to the system to make sure your widget appears prominently in Smart Stacks.
 ### Notifications
 - [Notifications](notifications.md)
   Communicate with users even when your app isn’t running.
 ### Siri
-- [Creating an Intents App Extension](../SiriKit/creating-an-intents-app-extension.md)
+- [Creating an Intents App Extension](../sirikit/creating-an-intents-app-extension.md)
   Add and configure an Intents app extension in your Xcode project.
 ### Health and fitness
-- [Setting up HealthKit](../HealthKit/setting-up-healthkit.md)
+- [Setting up HealthKit](../healthkit/setting-up-healthkit.md)
   Set up and configure your HealthKit store.
-- [Authorizing access to health data](../HealthKit/authorizing-access-to-health-data.md)
+- [Authorizing access to health data](../healthkit/authorizing-access-to-health-data.md)
   Request permission to read and share data in your app.
-- [Saving data to HealthKit](../HealthKit/saving-data-to-healthkit.md)
+- [Saving data to HealthKit](../healthkit/saving-data-to-healthkit.md)
   Create and share HealthKit samples.
-- [Reading data from HealthKit](../HealthKit/reading-data-from-healthkit.md)
+- [Reading data from HealthKit](../healthkit/reading-data-from-healthkit.md)
   Use queries to request sample data from HealthKit.
-- [Build a workout app for Apple Watch](../HealthKit/build-a-workout-app-for-apple-watch.md)
+- [Build a workout app for Apple Watch](../healthkit/build-a-workout-app-for-apple-watch.md)
   Create your own workout app, quickly and easily, with HealthKit and SwiftUI.
 ### Runtime management
-- [Background execution](../WatchKit/background-execution.md)
+- [Background execution](../watchkit/background-execution.md)
   Manage background sessions and tasks.
-- [Life cycles](../WatchKit/life-cycles.md)
+- [Life cycles](../watchkit/life-cycles.md)
   Receive and respond to life-cycle notifications.
-- [Using extended runtime sessions](../WatchKit/using-extended-runtime-sessions.md)
+- [Using extended runtime sessions](../watchkit/using-extended-runtime-sessions.md)
   Create an extended runtime session that continues running your app after the user stops interacting with it.
-- [Interacting with Bluetooth peripherals during background app refresh](../WatchKit/interacting-with-bluetooth-peripherals-during-background-app-refresh.md)
+- [Interacting with Bluetooth peripherals during background app refresh](../watchkit/interacting-with-bluetooth-peripherals-during-background-app-refresh.md)
   Keep your complications up-to-date by reading values from a Bluetooth peripheral while your app is running in the background.
 ### Network requests
 - [Making default and ephemeral requests](making-default-and-ephemeral-requests.md)

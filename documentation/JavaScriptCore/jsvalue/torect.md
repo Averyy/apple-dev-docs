@@ -25,7 +25,7 @@ A CoreGraphics point representation of the value.
 
 #### Discussion
 
-This method treats the value as a JavaScript object, reading the values of its `x`, `y`, `width`, and `height` properties using the [`toDouble()`](jsvalue/todouble().md) method and creating a [`CGRect`](https://developer.apple.com/documentation/CoreFoundation/CGRect) structure from the result. If the value is not a JavaScript object or does not have the appropriate properties, each of the resulting rectangle’s coordinates is not a number (NaN).
+This method treats the value as a JavaScript object, reading the values of its `x`, `y`, `width`, and `height` properties using the [`toDouble()`](jsvalue/todouble().md) method and creating a [`CGRect`](https://developer.apple.com/documentation/corefoundation/cgrect) structure from the result. If the value is not a JavaScript object or does not have the appropriate properties, each of the resulting rectangle’s coordinates is not a number (NaN).
 
 ## See Also
 
@@ -42,7 +42,7 @@ This method treats the value as a JavaScript object, reading the values of its `
 - [func toUInt32() -> UInt32](jsvalue/touint32.md)
   Converts the JavaScript value to a native unsigned integer value.
 - [func toNumber() -> NSNumber!](jsvalue/tonumber.md)
-  Converts the JavaScript value to a [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) object.
+  Converts the JavaScript value to a [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) object.
 - [func toString() -> String!](jsvalue/tostring.md)
   Converts the JavaScript value to a native string.
 - [func toDate() -> Date!](jsvalue/todate.md)

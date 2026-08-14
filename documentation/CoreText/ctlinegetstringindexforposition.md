@@ -22,7 +22,7 @@ func CTLineGetStringIndexForPosition(_ line: CTLine, _ position: CGPoint) -> CFI
 
 #### Return Value
 
-The string index for the position, or if the line does not support string access, [`kCFNotFound`](https://developer.apple.com/documentation/CoreFoundation/kCFNotFound). Relative to the line’s string range, this value can be no less than the first string index and no greater than the last string index plus 1.
+The string index for the position, or if the line does not support string access, [`kCFNotFound`](https://developer.apple.com/documentation/corefoundation/kcfnotfound). Relative to the line’s string range, this value can be no less than the first string index and no greater than the last string index plus 1.
 
 #### Discussion
 

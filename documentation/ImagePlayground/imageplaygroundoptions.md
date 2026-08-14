@@ -20,7 +20,7 @@ struct ImagePlaygroundOptions
 
 #### Overview
 
-Create an instance of this structure and use it to specify the options you want to use when generating images. Apply these options to your SwiftUI sheet using the [`imagePlaygroundOptions(_:)`](https://developer.apple.com/documentation/SwiftUI/View/imagePlaygroundOptions(_:)) modifier, or assign them to properties of the [`ImagePlaygroundViewController`](imageplaygroundviewcontroller.md) or [`ImageCreator`](imagecreator.md) type before generating any images.
+Create an instance of this structure and use it to specify the options you want to use when generating images. Apply these options to your SwiftUI sheet using the [`imagePlaygroundOptions(_:)`](https://developer.apple.com/documentation/swiftui/view/imageplaygroundoptions(_:)) modifier, or assign them to properties of the [`ImagePlaygroundViewController`](imageplaygroundviewcontroller.md) or [`ImageCreator`](imagecreator.md) type before generating any images.
 
 ## Topics
 
@@ -50,9 +50,9 @@ Create an instance of this structure and use it to specify the options you want 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../Swift/Equatable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Equatable](../swift/equatable.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 
 ---

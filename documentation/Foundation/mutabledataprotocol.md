@@ -29,13 +29,13 @@ protocol MutableDataProtocol : DataProtocol, MutableCollection, RangeReplaceable
 ## Relationships
 
 ### Inherits From
-- [BidirectionalCollection](../Swift/BidirectionalCollection.md)
-- [Collection](../Swift/Collection.md)
+- [BidirectionalCollection](../swift/bidirectionalcollection.md)
+- [Collection](../swift/collection.md)
 - [DataProtocol](dataprotocol.md)
-- [MutableCollection](../Swift/MutableCollection.md)
-- [RandomAccessCollection](../Swift/RandomAccessCollection.md)
-- [RangeReplaceableCollection](../Swift/RangeReplaceableCollection.md)
-- [Sequence](../Swift/Sequence.md)
+- [MutableCollection](../swift/mutablecollection.md)
+- [RandomAccessCollection](../swift/randomaccesscollection.md)
+- [RangeReplaceableCollection](../swift/rangereplaceablecollection.md)
+- [Sequence](../swift/sequence.md)
 ### Conforming Types
 - [Data](data.md)
 

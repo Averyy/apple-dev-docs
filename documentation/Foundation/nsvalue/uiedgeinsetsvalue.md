@@ -25,7 +25,7 @@ The UIKit edge insets structure representation of the value.
 
 ## See Also
 
-- [struct UIEdgeInsets](../UIKit/UIEdgeInsets.md)
+- [struct UIEdgeInsets](../uikit/uiedgeinsets.md)
   The inset distances for views.
 - [init(UIEdgeInsets: UIEdgeInsets)](nsvalue/init(uiedgeinsets:).md)
   Creates a new value object containing the specified UIKit edge insets structure.

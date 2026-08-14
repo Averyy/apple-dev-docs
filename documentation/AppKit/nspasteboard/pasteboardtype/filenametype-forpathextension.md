@@ -16,7 +16,7 @@ static func fileNameType(forPathExtension fileType: String) -> NSPasteboard.Past
 
 #### Discussion
 
-Returns an [`NSString`](https://developer.apple.com/documentation/Foundation/NSString) to a pasteboard type representing a filename based on the supplied string `fileType`.
+Returns an [`NSString`](https://developer.apple.com/documentation/foundation/nsstring) to a pasteboard type representing a filename based on the supplied string `fileType`.
 
 ## See Also
 

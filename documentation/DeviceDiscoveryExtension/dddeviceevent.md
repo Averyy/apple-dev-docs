@@ -30,7 +30,7 @@ var session: DDDiscoverySession?
 var deviceEvent = DDDeviceEvent(eventType: .deviceFound, device: ddDevice)
 ```
 
-Then, the extension provides the discovered device to the system using [`report(_:)`](dddiscoverysession/report(_:).md) for eventual display in the route picker view ([`AVRoutePickerView`](https://developer.apple.com/documentation/AVKit/AVRoutePickerView)).
+Then, the extension provides the discovered device to the system using [`report(_:)`](dddiscoverysession/report(_:).md) for eventual display in the route picker view ([`AVRoutePickerView`](https://developer.apple.com/documentation/avkit/avroutepickerview)).
 
 ```swift
 session?.report(deviceEvent)
@@ -52,14 +52,14 @@ session?.report(deviceEvent)
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

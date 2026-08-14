@@ -19,7 +19,7 @@ class UIViewPrintFormatter
 
 #### Overview
 
-Instances of three system classes offer usable view print formatters to applications: [`UIWebView`](uiwebview.md) and [`UITextView`](uitextview.md) of the UIKit framework, and [`MKMapView`](https://developer.apple.com/documentation/MapKit/MKMapView) of the MapKit framework. To obtain a view print formatter for a print job, call the [`UIView`](uiview.md) method [`viewPrintFormatter()`](uiview/viewprintformatter().md) and initialize the print formatter’s inherited layout properties.
+Instances of three system classes offer usable view print formatters to applications: [`UIWebView`](uiwebview.md) and [`UITextView`](uitextview.md) of the UIKit framework, and [`MKMapView`](https://developer.apple.com/documentation/mapkit/mkmapview) of the MapKit framework. To obtain a view print formatter for a print job, call the [`UIView`](uiview.md) method [`viewPrintFormatter()`](uiview/viewprintformatter().md) and initialize the print formatter’s inherited layout properties.
 
 Add the print formatter to the print job in one of two ways:
 
@@ -45,13 +45,13 @@ Subclassing `UIViewPrintFormatter` to print the contents of a view is not recomm
 ### Inherits From
 - [UIPrintFormatter](uiprintformatter.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCopying](../Foundation/NSCopying.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCopying](../foundation/nscopying.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

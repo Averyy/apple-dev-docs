@@ -22,7 +22,7 @@ static let foregroundColor: NSAttributedString.Key
 
 #### Discussion
 
-In macOS, the value of this attribute is an [`NSColor`](https://developer.apple.com/documentation/AppKit/NSColor) instance. In iOS, tvOS, watchOS, and Mac Catalyst, the value of this attribute is a [`UIColor`](https://developer.apple.com/documentation/UIKit/UIColor) instance. Use this attribute to specify the color of the text during rendering. If you don’t specify this attribute, the text renders in black.
+In macOS, the value of this attribute is an [`NSColor`](https://developer.apple.com/documentation/appkit/nscolor) instance. In iOS, tvOS, watchOS, and Mac Catalyst, the value of this attribute is a [`UIColor`](https://developer.apple.com/documentation/uikit/uicolor) instance. Use this attribute to specify the color of the text during rendering. If you don’t specify this attribute, the text renders in black.
 
 ## See Also
 

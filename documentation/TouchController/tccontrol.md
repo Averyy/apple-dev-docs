@@ -45,7 +45,7 @@ protocol TCControl : TCControlLayout
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 - [TCControlLayout](tccontrollayout.md)
 ### Conforming Types
 - [TCButton](tcbutton.md)

@@ -17,11 +17,11 @@ typealias SecTransformDataBlock = (CFTypeRef) -> Unmanaged<CFTypeRef>?
 
 #### Return Value
 
-`NULL` for the [`kSecTransformActionInternalizeExtraData`](ksectransformactioninternalizeextradata.md) action, the data to be passed to the output attribute for any other action, or a [`CFError`](https://developer.apple.com/documentation/CoreFoundation/CFError) instance on failure.
+`NULL` for the [`kSecTransformActionInternalizeExtraData`](ksectransformactioninternalizeextradata.md) action, the data to be passed to the output attribute for any other action, or a [`CFError`](https://developer.apple.com/documentation/corefoundation/cferror) instance on failure.
 
 ## Parameters
 
-- `data`: The data to be processed. When this block is used to to implement the [`kSecTransformActionProcessData`](ksectransformactionprocessdata.md) action, the data is the input data that is to be processed into the output data. When this block is used to implement the [`kSecTransformActionInternalizeExtraData`](ksectransformactioninternalizeextradata.md) action, the data is a [`CFDictionary`](https://developer.apple.com/documentation/CoreFoundation/CFDictionary) that contains the data that needs to be imported.
+- `data`: The data to be processed. When this block is used to to implement the [`kSecTransformActionProcessData`](ksectransformactionprocessdata.md) action, the data is the input data that is to be processed into the output data. When this block is used to implement the [`kSecTransformActionInternalizeExtraData`](ksectransformactioninternalizeextradata.md) action, the data is a [`CFDictionary`](https://developer.apple.com/documentation/corefoundation/cfdictionary) that contains the data that needs to be imported.
 
 
 ---

@@ -16,7 +16,7 @@ final class CameraRegionProvider
 
 #### Overview
 
-An enterprise license is required to use the CameraRegionProvider. The provider will not deliver any data without it. The app must include the [`Camera Region access`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.arkit.camera-region.allow) entitlement.
+An enterprise license is required to use the CameraRegionProvider. The provider will not deliver any data without it. The app must include the [`Camera Region access`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.arkit.camera-region.allow) entitlement.
 
 ## Topics
 
@@ -49,10 +49,10 @@ An enterprise license is required to use the CameraRegionProvider. The provider 
 ## Relationships
 
 ### Conforms To
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
 - [DataProvider](dataprovider.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

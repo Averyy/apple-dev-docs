@@ -31,7 +31,7 @@ In macOS 10.6 and later, Core Data supports block-based predicates in the in-mem
 ## Parameters
 
 - `block`: The block is applied to the object to be evaluated. The block takes two arguments: - **evaluatedObject**: The object to be evaluated.
-- **bindings**: The substitution variables dictionary. The dictionary must contain key-value pairs for all variables in the receiver. The block returns [`true`](https://developer.apple.com/documentation/Swift/true) if the `evaluatedObject` evaluates to true, otherwise [`false`](https://developer.apple.com/documentation/Swift/false).
+- **bindings**: The substitution variables dictionary. The dictionary must contain key-value pairs for all variables in the receiver. The block returns [`true`](https://developer.apple.com/documentation/swift/true) if the `evaluatedObject` evaluates to true, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
 
 ## See Also
 

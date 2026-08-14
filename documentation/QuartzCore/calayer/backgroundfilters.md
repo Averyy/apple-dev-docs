@@ -25,7 +25,7 @@ Background filters affect the content behind the layer that shows through into t
 
 The default value of this property is `nil`.
 
-Changing the inputs of the [`CIFilter`](https://developer.apple.com/documentation/CoreImage/CIFilter-swift.class) object directly after it is attached to the layer causes undefined behavior. In macOS, it is possible to modify filter parameters after attaching them to the layer but you must use the layer’s [`setValue(_:forKeyPath:)`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class/setValue(_:forKeyPath:)) method to do so. In addition, you must assign a name to the filter so that you can identify it in the array. For example, to change the `inputRadius` parameter of the filter, you could use code similar to the following:
+Changing the inputs of the [`CIFilter`](https://developer.apple.com/documentation/coreimage/cifilter-swift.class) object directly after it is attached to the layer causes undefined behavior. In macOS, it is possible to modify filter parameters after attaching them to the layer but you must use the layer’s [`setValue(_:forKeyPath:)`](https://developer.apple.com/documentation/objectivec/nsobject-swift.class/setvalue(_:forkeypath:)) method to do so. In addition, you must assign a name to the filter so that you can identify it in the array. For example, to change the `inputRadius` parameter of the filter, you could use code similar to the following:
 
 **Swift**:
 
@@ -53,7 +53,7 @@ layer.backgroundFilters = [NSArray arrayWithObject:filter];
 
 You use the layer’s [`masksToBounds`](calayer/maskstobounds.md) to control the extent of its background filter’s effect.
 
-The following code shows how to create two overlapping text layers, `background` and `foreground`. A Gaussian blur filter is added to the foreground layer’s [`backgroundFilters`](calayer/backgroundfilters.md) array and its [`masksToBounds`](calayer/maskstobounds.md) is set to [`true`](https://developer.apple.com/documentation/Swift/true):
+The following code shows how to create two overlapping text layers, `background` and `foreground`. A Gaussian blur filter is added to the foreground layer’s [`backgroundFilters`](calayer/backgroundfilters.md) array and its [`masksToBounds`](calayer/maskstobounds.md) is set to [`true`](https://developer.apple.com/documentation/swift/true):
 
 ```swift
 view.layer = CALayer()
@@ -86,11 +86,11 @@ background.addSublayer(foreground)
 
 The following figure shows the result: the background layer is only blurred where it is overlapped by the foreground layer.
 
-![Background filter effect with mask to bounds](https://docs-assets.developer.apple.com/published/872d1fd56b8940c30020c805f2515c87/media-2851423%402x.png)
+![Background filter effect with mask to bounds](/images/com.apple.quartzcore/media-2851423@2x.png)
 
-However, if the foreground layer’s [`masksToBounds`](calayer/maskstobounds.md) is set to [`false`](https://developer.apple.com/documentation/Swift/false), the entire background layer is blurred as illustrated in the following figure.
+However, if the foreground layer’s [`masksToBounds`](calayer/maskstobounds.md) is set to [`false`](https://developer.apple.com/documentation/swift/false), the entire background layer is blurred as illustrated in the following figure.
 
-![Background filter effect without mask to bounds](https://docs-assets.developer.apple.com/published/1408d14df377140131d12a954aea8241/media-2851424%402x.png)
+![Background filter effect without mask to bounds](/images/com.apple.quartzcore/media-2851424@2x.png)
 
 ##### Special Considerations
 

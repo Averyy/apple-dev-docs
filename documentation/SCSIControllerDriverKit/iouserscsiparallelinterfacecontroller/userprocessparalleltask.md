@@ -23,7 +23,7 @@ The following example shows a minimal implementation of [`UserProcessParallelTas
 1. The example starts by using the `parallelRequest` parameter’s [`fControllerTaskIdentifier`](scsiuserparalleltask/fcontrollertaskidentifier.md) to look up task data, which it stores in a hypothetical convenience type called `TaskData`.
 2. Next, it sets the metadata for this I/O operation. The kernel generates one long phsyical segment with [`fBufferIOVMAddr`](scsiuserparalleltask/fbufferiovmaddr.md) as its start address, as seen here in the call to a hypothetical `PrepareScatterGatherList()` function. You may need to prepare a custom scatter gather list if your hardware specification requires you to split this up into multiple segments.
 3. After that, the example retains and stashes  the `completion` callback for later.
-4. Finally, the code posts the request to the hardware by calling `PostSCSIRequest()`, another hypothetical convenience function. Assuming this call returns [`kIOReturnSuccess`](https://developer.apple.com/documentation/DriverKit/kIOReturnSuccess), the example sets the `response` in-out parameter to [`kSCSIServiceResponse_Request_In_Process`](https://developer.apple.com/documentation/DriverKit/SCSIServiceResponse/kSCSIServiceResponse_Request_In_Process), to indicate to the kernel that the request is underway.
+4. Finally, the code posts the request to the hardware by calling `PostSCSIRequest()`, another hypothetical convenience function. Assuming this call returns [`kIOReturnSuccess`](https://developer.apple.com/documentation/driverkit/kioreturnsuccess), the example sets the `response` in-out parameter to [`kSCSIServiceResponse_Request_In_Process`](https://developer.apple.com/documentation/driverkit/scsiserviceresponse/kscsiserviceresponse_request_in_process), to indicate to the kernel that the request is underway.
 
 ```objc
 kern_return_t
@@ -59,7 +59,7 @@ IMPL ( ExampleSCSIDext, UserProcessParallelTask )
 
 - `parallelRequest`: A [`SCSIUserParallelTask`](scsiuserparalleltask.md) object that contains all necessary request information.
 - `response`: A service response for the request.
-- `completion`: An [`OSAction`](https://developer.apple.com/documentation/DriverKit/OSAction) object that the dext class uses to complete the request.
+- `completion`: An [`OSAction`](https://developer.apple.com/documentation/driverkit/osaction) object that the dext class uses to complete the request.
 
 ## See Also
 

@@ -25,7 +25,7 @@ The date representation of the value.
 
 #### Discussion
 
-If the value contains a JavaScript `Date` object, this method returns an equivalent [`NSDate`](https://developer.apple.com/documentation/Foundation/NSDate) representation. Otherwise, this method uses JavaScript type coercion to interpret the value as a number of seconds and creates an [`NSDate`](https://developer.apple.com/documentation/Foundation/NSDate) object with the [`dateWithTimeIntervalSince1970:`](https://developer.apple.com/documentation/Foundation/NSDate/dateWithTimeIntervalSince1970:) method.
+If the value contains a JavaScript `Date` object, this method returns an equivalent [`NSDate`](https://developer.apple.com/documentation/foundation/nsdate) representation. Otherwise, this method uses JavaScript type coercion to interpret the value as a number of seconds and creates an [`NSDate`](https://developer.apple.com/documentation/foundation/nsdate) object with the [`dateWithTimeIntervalSince1970:`](https://developer.apple.com/documentation/foundation/nsdate/datewithtimeintervalsince1970:) method.
 
 ## See Also
 
@@ -42,7 +42,7 @@ If the value contains a JavaScript `Date` object, this method returns an equival
 - [func toUInt32() -> UInt32](jsvalue/touint32.md)
   Converts the JavaScript value to a native unsigned integer value.
 - [func toNumber() -> NSNumber!](jsvalue/tonumber.md)
-  Converts the JavaScript value to a [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) object.
+  Converts the JavaScript value to a [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) object.
 - [func toString() -> String!](jsvalue/tostring.md)
   Converts the JavaScript value to a native string.
 - [func toArray() -> [Any]!](jsvalue/toarray.md)

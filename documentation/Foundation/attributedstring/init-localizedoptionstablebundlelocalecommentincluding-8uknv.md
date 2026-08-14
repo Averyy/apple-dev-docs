@@ -70,7 +70,7 @@ When the string loads, the automatic grammar agreement feature adjusts the text 
   Creates an attributed string by looking up a localized string from the app’s bundle.
 - [init<S>(localized: String.LocalizationValue, options: AttributedString.FormattingOptions, table: String?, bundle: Bundle?, locale: Locale?, comment: StaticString?, including: KeyPath<AttributeScopes, S.Type>)](attributedstring/init(localized:options:table:bundle:locale:comment:including:)-5jzpg.md)
   Creates an attributed string by looking up a localized string from the app’s bundle, including an attribute scope that a key path identifies.
-- [String.LocalizationValue](../Swift/String/LocalizationValue.md)
+- [String.LocalizationValue](../swift/string/localizationvalue.md)
   A reference to a localizable string, with optional string interpolation.
 - [AttributedString.FormattingOptions](attributedstring/formattingoptions.md)
   Options that affect the handling of attributes.

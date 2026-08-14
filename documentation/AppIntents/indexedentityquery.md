@@ -25,7 +25,7 @@ protocol IndexedEntityQuery : EntityQuery where Self.Entity : IndexedEntity
 
 #### Overview
 
-Adopt this protocol in query types for app entities that you donate to your app’s Spotlight index using the [`indexAppEntities(_:priority:)`](https://developer.apple.com/documentation/CoreSpotlight/CSSearchableIndex/indexAppEntities(_:priority:)) method. When the system encounters an issue with an app’s index, it can ask that app to reindex its content. During reindexing, the system calls the methods of this protocol if your query type supports the protocol. If your type doesn’t support the protocol, Spotlight continues to ask your app’s [`CSSearchableIndexDelegate`](https://developer.apple.com/documentation/CoreSpotlight/CSSearchableIndexDelegate) object to reindex any content. Similarly, if you donated an entity by associating it with a [`CSSearchableItem`](https://developer.apple.com/documentation/CoreSpotlight/CSSearchableItem) type, Spotlight uses your [`CSSearchableIndexDelegate`](https://developer.apple.com/documentation/CoreSpotlight/CSSearchableIndexDelegate) object.
+Adopt this protocol in query types for app entities that you donate to your app’s Spotlight index using the [`indexAppEntities(_:priority:)`](https://developer.apple.com/documentation/corespotlight/cssearchableindex/indexappentities(_:priority:)) method. When the system encounters an issue with an app’s index, it can ask that app to reindex its content. During reindexing, the system calls the methods of this protocol if your query type supports the protocol. If your type doesn’t support the protocol, Spotlight continues to ask your app’s [`CSSearchableIndexDelegate`](https://developer.apple.com/documentation/corespotlight/cssearchableindexdelegate) object to reindex any content. Similarly, if you donated an entity by associating it with a [`CSSearchableItem`](https://developer.apple.com/documentation/corespotlight/cssearchableitem) type, Spotlight uses your [`CSSearchableIndexDelegate`](https://developer.apple.com/documentation/corespotlight/cssearchableindexdelegate) object.
 
 Implement the methods of this protocol and use them to retrieve the specified entities and donate them again to Spotlight. The following example shows the implementation of this protocol for a photos app. The methods fetch the requested app entities and donate them again using the app’s preferred searchable index.
 
@@ -59,8 +59,8 @@ For more information about indexing your app entites, see [`Making app entities 
 - [DynamicOptionsProvider](dynamicoptionsprovider.md)
 - [EntityQuery](entityquery.md)
 - [PersistentlyIdentifiable](persistentlyidentifiable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

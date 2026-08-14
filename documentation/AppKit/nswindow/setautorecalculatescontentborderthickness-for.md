@@ -24,7 +24,7 @@ Typically, if you call `setContentBorderThickness:forEdge:`, you should also cal
 
 ## Parameters
 
-- `flag`: If [`true`](https://developer.apple.com/documentation/Swift/true), the window calculates the thickness of the edge automatically; if [`false`](https://developer.apple.com/documentation/Swift/false), it does not.
+- `flag`: If [`true`](https://developer.apple.com/documentation/swift/true), the window calculates the thickness of the edge automatically; if [`false`](https://developer.apple.com/documentation/swift/false), it does not.
 - `edge`: The border to set auto-recalculation on or off: - `NSMaxYEdge`: Top border.
 - `NSMinYEdge`: Bottom border.
 

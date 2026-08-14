@@ -21,7 +21,7 @@ var size: vector_double2 { get }
 
 #### Discussion
 
-If you later generate a texture image from the noise map with the [`SKTexture`](https://developer.apple.com/documentation/SpriteKit/SKTexture) class, this size is also the pixel dimensions of the texture to generate.
+If you later generate a texture image from the noise map with the [`SKTexture`](https://developer.apple.com/documentation/spritekit/sktexture) class, this size is also the pixel dimensions of the texture to generate.
 
 This property is read-only; you define the size of a noise map when creating it with the [`interpolatedValue(at:)`](gknoisemap/interpolatedvalue(at:).md) initializer.
 

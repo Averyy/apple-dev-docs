@@ -14,7 +14,7 @@ In this context, a debug or development build is unoptimized, where either the `
 
 In debug builds, Xcode 15 or later treats mergeable dependencies like normal dynamic libraries, without the overhead of creating mergeable metadata and merging all the libraries. In release builds, Xcode creates the mergeable metadata in your dynamic libraries, and merges dependencies into the target binary.
 
-![A diagram that shows the difference between app binary structure and size in debug and release builds.](https://docs-assets.developer.apple.com/published/4d30d76e7fd1cf9d1def67b3378d1684/configuring-your-project-to-use-mergeable-libraries%402x.png)
+![A diagram that shows the difference between app binary structure and size in debug and release builds.](/images/com.apple.Xcode/configuring-your-project-to-use-mergeable-libraries@2x.png)
 
 In release builds, the binary is slightly larger, but avoids the overhead of loading dynamic links at runtime.
 

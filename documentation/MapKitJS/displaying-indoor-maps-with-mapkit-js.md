@@ -6,7 +6,7 @@ Use the Indoor Mapping Data Format (IMDF) to show an indoor map with custom over
 
 #### Overview
 
-This sample uses the [`importGeoJSON(data, callback)`](mapkit/importgeojson.md) method from MapKit JS to import data in [`Indoor Mapping Data Format (IMDF)`](https://developer.apple.comhttps://register.apple.com/resources/imdf/), and render an indoor map in your browser. The sample app demonstrates decoding, rendering, and styling of a small subset of the IMDF feature types and properties.
+This sample uses the [`importGeoJSON()`](mapkit/importgeojson.md) method from MapKit JS to import data in [`Indoor Mapping Data Format (IMDF)`](https://developer.apple.comhttps://register.apple.com/resources/imdf/), and render an indoor map in your browser. The sample app demonstrates decoding, rendering, and styling of a small subset of the IMDF feature types and properties.
 
 Use these examples to create your own indoor map with a style that is consistent with your app’s design. You can handle feature categories specific to your venue, and configure the map style using your own colors, icons, and level picker.
 
@@ -18,7 +18,7 @@ To run this sample code:
 
 - Run a web server to serve the assets in a directory for the project.
 - Host the directory `Dinoseum`, and its content, at the root of your web server.
-- Generate a MapKit JS token and copy it into the `jwtoken` file within the `Dinoseum` directory. For more information, see [`Creating and using tokens with Maps Server API`](https://developer.apple.com/documentation/AppleMapsServerAPI/creating-and-using-tokens-with-maps-server-api).
+- Generate a MapKit JS token and copy it into the `jwtoken` file within the `Dinoseum` directory. For more information, see [`Creating and using tokens with Maps Server API`](https://developer.apple.com/documentation/applemapsserverapi/creating-and-using-tokens-with-maps-server-api).
 
 ## See Also
 

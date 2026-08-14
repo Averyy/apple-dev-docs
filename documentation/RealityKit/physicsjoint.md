@@ -94,7 +94,7 @@ If both are [`PhysicsBodyMode.dynamic`](physicsbodymode/dynamic.md), set the hea
 ## Relationships
 
 ### Inherits From
-- [Equatable](../Swift/Equatable.md)
+- [Equatable](../swift/equatable.md)
 ### Conforming Types
 - [PhysicsCustomJoint](physicscustomjoint.md)
 - [PhysicsDistanceJoint](physicsdistancejoint.md)

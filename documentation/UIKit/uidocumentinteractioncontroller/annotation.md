@@ -19,7 +19,7 @@ var annotation: Any? { get set }
 
 #### Discussion
 
-Use this property to pass information about the document type to the app responsible for opening it. Although the type of this object should be one used to contain property list information—namely, [`NSDictionary`](https://developer.apple.com/documentation/Foundation/NSDictionary), [`NSArray`](https://developer.apple.com/documentation/Foundation/NSArray), [`NSData`](https://developer.apple.com/documentation/Foundation/NSData), [`NSString`](https://developer.apple.com/documentation/Foundation/NSString), [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber), or [`NSDate`](https://developer.apple.com/documentation/Foundation/NSDate)—the root object must be an [`NSDictionary`](https://developer.apple.com/documentation/Foundation/NSDictionary).
+Use this property to pass information about the document type to the app responsible for opening it. Although the type of this object should be one used to contain property list information—namely, [`NSDictionary`](https://developer.apple.com/documentation/foundation/nsdictionary), [`NSArray`](https://developer.apple.com/documentation/foundation/nsarray), [`NSData`](https://developer.apple.com/documentation/foundation/nsdata), [`NSString`](https://developer.apple.com/documentation/foundation/nsstring), [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber), or [`NSDate`](https://developer.apple.com/documentation/foundation/nsdate)—the root object must be an [`NSDictionary`](https://developer.apple.com/documentation/foundation/nsdictionary).
 
 ## See Also
 

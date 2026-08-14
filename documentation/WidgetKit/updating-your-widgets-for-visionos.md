@@ -26,10 +26,10 @@ For design guidance, refer to [`Human Interface Guidelines > Widgets`](https://d
 
 ##### Support Recessed and Elevated Mounting Styles
 
-People add widgets to a room and pin them to a surface. By default, widgets in visionOS sit directly on top of horizontal and vertical surfaces, taking on an elevated look. On horizontal surfaces, widgets always appear with this look. Additionally, widgets can appear recessed, directly embedded into a vertical surface like a wall. If one of these styles isn’t a good fit for your widget, use the [`supportedMountingStyles(_:)`](https://developer.apple.com/documentation/SwiftUI/WidgetConfiguration/supportedMountingStyles(_:)) view modifier to specify the [`WidgetMountingStyle`](WidgetMountingStyle.md) your visionOS or iOS and iPadOS widget supports:
+People add widgets to a room and pin them to a surface. By default, widgets in visionOS sit directly on top of horizontal and vertical surfaces, taking on an elevated look. On horizontal surfaces, widgets always appear with this look. Additionally, widgets can appear recessed, directly embedded into a vertical surface like a wall. If one of these styles isn’t a good fit for your widget, use the [`supportedMountingStyles(_:)`](https://developer.apple.com/documentation/swiftui/widgetconfiguration/supportedmountingstyles(_:)) view modifier to specify the [`WidgetMountingStyle`](widgetmountingstyle.md) your visionOS or iOS and iPadOS widget supports:
 
-- By default, widgets support both [`elevated`](WidgetMountingStyle/elevated.md) and [`recessed`](WidgetMountingStyle/recessed.md) mounting styles.
-- If your widget only supports the [`recessed`](WidgetMountingStyle/recessed.md) mounting style, people can’t place it on horizontal surfaces.
+- By default, widgets support both [`elevated`](widgetmountingstyle/elevated.md) and [`recessed`](widgetmountingstyle/recessed.md) mounting styles.
+- If your widget only supports the [`recessed`](widgetmountingstyle/recessed.md) mounting style, people can’t place it on horizontal surfaces.
 
 For example, a widget might use a photo to create the illusion of a window into another part of the world. This widget would rely on a sense of depth and alignment that doesn’t make sense on a horizontal surface, and does not support the `elevated` mounting style as shown in the following example:
 
@@ -49,11 +49,11 @@ struct WeatherWidget: Widget {
 
 ##### Support Visionos Rendering Styles and Extra Large Widgets
 
-By default, widgets in visionOS appear under a glass texture. For widgets that your visionOS app offers, choose between the default glass texture or an alternative paper texture that gives the widget a poster-like look. To specify your widget’s texture, use the [`widgetTexture(_:)`](https://developer.apple.com/documentation/SwiftUI/WidgetConfiguration/widgetTexture(_:)) view modifier and choose between [`glass`](widgettexture/glass.md) and [`paper`](widgettexture/paper.md).
+By default, widgets in visionOS appear under a glass texture. For widgets that your visionOS app offers, choose between the default glass texture or an alternative paper texture that gives the widget a poster-like look. To specify your widget’s texture, use the [`widgetTexture(_:)`](https://developer.apple.com/documentation/swiftui/widgetconfiguration/widgettexture(_:)) view modifier and choose between [`glass`](widgettexture/glass.md) and [`paper`](widgettexture/paper.md).
 
 > **Note**: With the glass texture, blend modes on your widget’s views don’t interact with the container background. If your widget relies on this, use the paper texture instead.
 
-Especially if your widgets uses a poster-like look, consider offering a [`WidgetFamily.systemExtraLargePortrait`](widgetfamily/systemextralargeportrait.md) or [`WidgetFamily.systemExtraLarge`](widgetfamily/systemextralarge.md) widget by including it in the array of [`supportedFamilies(_:)`](https://developer.apple.com/documentation/SwiftUI/WidgetConfiguration/supportedFamilies(_:)) as shown in the following example:
+Especially if your widgets uses a poster-like look, consider offering a [`WidgetFamily.systemExtraLargePortrait`](widgetfamily/systemextralargeportrait.md) or [`WidgetFamily.systemExtraLarge`](widgetfamily/systemextralarge.md) widget by including it in the array of [`supportedFamilies(_:)`](https://developer.apple.com/documentation/swiftui/widgetconfiguration/supportedfamilies(_:)) as shown in the following example:
 
 ```swift
 struct CaffeineTrackerWidget: Widget {
@@ -81,7 +81,7 @@ While widgets in visionOS share a lot of similarities with widgets on other plat
 
 To make sure your widget remains glanceable, respond to a person’s proximity and update its layout accordingly:
 
-1. Use the [`levelOfDetail`](https://developer.apple.com/documentation/SwiftUI/EnvironmentValues/levelOfDetail) environment variable to detect a person’s proximity.
+1. Use the [`levelOfDetail`](https://developer.apple.com/documentation/swiftui/environmentvalues/levelofdetail) environment variable to detect a person’s proximity.
 2. Update your views to display a [`default`](levelofdetail/default.md) level of detail when a person is close to the widget.
 3. Display a [`simplified`](levelofdetail/simplified.md) layout with fewer, larger elements that ensures the widget remains legible from a distance.
 
@@ -117,12 +117,12 @@ struct TotalCaffeineView: View {
 ## See Also
 
 - [func widgetTexture(WidgetTexture) -> some WidgetConfiguration
-](../SwiftUI/WidgetConfiguration/widgetTexture(_:).md)
+](../swiftui/widgetconfiguration/widgettexture(_:).md)
   Specifies the widget texture for this widget.
 - [struct WidgetTexture](widgettexture.md)
   Values that define the texture of the widget’s coating layer.
 - [func supportedMountingStyles([WidgetMountingStyle]) -> some WidgetConfiguration
-](../SwiftUI/WidgetConfiguration/supportedMountingStyles(_:).md)
+](../swiftui/widgetconfiguration/supportedmountingstyles(_:).md)
   Specifies the mounting style for this widget.
 - [struct WidgetMountingStyle](widgetmountingstyle.md)
   Values that define the widget’s supported mounting style.

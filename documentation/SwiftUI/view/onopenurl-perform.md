@@ -29,13 +29,13 @@ A view that handles incoming URLs.
 
 Use this view modifier to receive URLs in a particular scene within your app. The scene that SwiftUI routes the incoming URL to depends on the structure of your app, what scenes are active, and other configuration. For more information, see [`handlesExternalEvents(matching:)`](scene/handlesexternalevents(matching:).md).
 
-UI frameworks traditionally pass Universal Links to your app using an [`NSUserActivity`](https://developer.apple.com/documentation/Foundation/NSUserActivity). However, SwiftUI passes a Universal Link to your app directly as a URL, which you receive using this modifier. To receive other user activities, like when your app participates in Handoff, use the [`onContinueUserActivity(_:perform:)`](view/oncontinueuseractivity(_:perform:).md) modifier instead.
+UI frameworks traditionally pass Universal Links to your app using an [`NSUserActivity`](https://developer.apple.com/documentation/foundation/nsuseractivity). However, SwiftUI passes a Universal Link to your app directly as a URL, which you receive using this modifier. To receive other user activities, like when your app participates in Handoff, use the [`onContinueUserActivity(_:perform:)`](view/oncontinueuseractivity(_:perform:).md) modifier instead.
 
-For more information about linking into your app, see [`Allowing apps and websites to link to your content`](https://developer.apple.com/documentation/Xcode/allowing-apps-and-websites-to-link-to-your-content).
+For more information about linking into your app, see [`Allowing apps and websites to link to your content`](https://developer.apple.com/documentation/xcode/allowing-apps-and-websites-to-link-to-your-content).
 
 ## Parameters
 
-- `action`: A closure that SwiftUI calls when your app receives a Universal Link or a custom [`URL`](https://developer.apple.com/documentation/Foundation/URL). The closure takes the URL as an input parameter.
+- `action`: A closure that SwiftUI calls when your app receives a Universal Link or a custom [`URL`](https://developer.apple.com/documentation/foundation/url). The closure takes the URL as an input parameter.
 
 ## See Also
 

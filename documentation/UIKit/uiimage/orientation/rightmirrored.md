@@ -23,11 +23,11 @@ case rightMirrored
 
 If an image is encoded with this orientation, then displayed by software unaware of orientation metadata, the image appears to be horizontally mirrored, then rotated 90° clockwise. (That is, to present the image in its intended orientation, you can rotate  90° counter-clockwise, then flip horizontally.)
 
-![To correct an image with rightMirrored orientation for display, rotate it 90° counterclockwise then flip it horizontally.](https://docs-assets.developer.apple.com/published/6427cc1184994ac80c5119002426bac6/media-2948306%402x.png)
+![To correct an image with rightMirrored orientation for display, rotate it 90° counterclockwise then flip it horizontally.](/images/com.apple.uikit/media-2948306@2x.png)
 
 ## See Also
 
-- [CGImagePropertyOrientation.rightMirrored](../ImageIO/CGImagePropertyOrientation/rightMirrored.md)
+- [CGImagePropertyOrientation.rightMirrored](../imageio/cgimagepropertyorientation/rightmirrored.md)
   The encoded image data is horizontally flipped and rotated 90° clockwise from the image’s intended display orientation.
 - [UIImage.Orientation.up](uiimage/orientation/up.md)
   The original pixel data matches the image’s intended display orientation.

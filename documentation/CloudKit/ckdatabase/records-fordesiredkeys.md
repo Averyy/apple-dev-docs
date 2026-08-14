@@ -22,7 +22,7 @@ func records(for ids: [CKRecord.ID], desiredKeys: [CKRecord.FieldKey]? = nil) as
 
 #### Return Value
 
-A dictionary that contains the fetched records. The dictionary uses the identifiers you specify in `ids` as its keys. The value of each key is a [`Result`](https://developer.apple.com/documentation/Swift/Result) that contains either the corresponding fetched record, or an error that describes why CloudKit can’t provide that record.
+A dictionary that contains the fetched records. The dictionary uses the identifiers you specify in `ids` as its keys. The value of each key is a [`Result`](https://developer.apple.com/documentation/swift/result) that contains either the corresponding fetched record, or an error that describes why CloudKit can’t provide that record.
 
 #### Discussion
 

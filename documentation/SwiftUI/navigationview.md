@@ -30,7 +30,7 @@ struct NavigationView<Content> where Content : View
 
 Use a `NavigationView` to create a navigation-based app in which the user can traverse a collection of views. Users navigate to a destination view by selecting a [`NavigationLink`](navigationlink.md) that you provide. On iPadOS and macOS, the destination content appears in the next column. Other platforms push a new view onto the stack, and enable removing items from the stack with platform-specific controls, like a Back button or a swipe gesture.
 
-![A diagram showing a multicolumn navigation view on macOS, and a stack of views on iOS.](https://docs-assets.developer.apple.com/published/fca0c98e5ab89310dea5abd6e14697cc/NavigationView-1%402x.png)
+![A diagram showing a multicolumn navigation view on macOS, and a stack of views on iOS.](/images/com.apple.SwiftUI/NavigationView-1@2x.png)
 
 Use the [`init(content:)`](navigationview/init(content:).md) initializer to create a navigation view that directly associates navigation links and their destination views:
 

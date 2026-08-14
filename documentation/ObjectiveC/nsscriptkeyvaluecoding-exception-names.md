@@ -7,7 +7,7 @@ Exceptions raised by key-value coding methods.
 ## Topics
 
 ### Constants
-- [let NSOperationNotSupportedForKeyException: String](../Foundation/NSOperationNotSupportedForKeyException.md)
+- [let NSOperationNotSupportedForKeyException: String](../foundation/nsoperationnotsupportedforkeyexception.md)
 
 ## See Also
 

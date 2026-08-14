@@ -20,7 +20,7 @@ The AudioToolbox framework provides interfaces for recording, playback, and stre
 ## Topics
 
 ### Essentials
-- [Porting your audio code to Apple silicon](../Apple-Silicon/porting-your-audio-code-to-apple-silicon.md)
+- [Porting your audio code to Apple silicon](../apple-silicon/porting-your-audio-code-to-apple-silicon.md)
   Eliminate issues in your audio-specific code when running on Apple silicon Mac computers.
 ### Audio Units
 - [Generating spatial audio from a multichannel audio stream](generating-spatial-audio-from-a-multichannel-audio-stream.md)

@@ -26,19 +26,19 @@ Core Data attribute types explicitly distinguish between bit size. This allows t
 
 | **Attribute type** | **Type** | **Scalar type** | **Scalar by default** |
 | --- | --- | --- | --- |
-| Integer 16 | [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) | [`Int16`](https://developer.apple.com/documentation/Swift/Int16) | Yes |
-| Integer 32 | [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) | [`Int32`](https://developer.apple.com/documentation/Swift/Int32) | Yes |
-| Integer 64 | [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) | [`Int64`](https://developer.apple.com/documentation/Swift/Int64) | Yes |
-| Double | [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) | [`Double`](https://developer.apple.com/documentation/Swift/Double) | Yes |
-| Float | [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) | [`Float`](https://developer.apple.com/documentation/Swift/Float) | Yes |
-| Boolean | [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) | [`Bool`](https://developer.apple.com/documentation/Swift/Bool) | Yes |
-| Date | [`NSDate`](https://developer.apple.com/documentation/Foundation/NSDate) | [`TimeInterval`](https://developer.apple.com/documentation/Foundation/TimeInterval) | No |
-| Decimal | [`NSDecimalNumber`](https://developer.apple.com/documentation/Foundation/NSDecimalNumber) | [`NSDecimalNumber`](https://developer.apple.com/documentation/Foundation/NSDecimalNumber) | No |
-| UUID | [`UUID`](https://developer.apple.com/documentation/Foundation/UUID) | [`UUID`](https://developer.apple.com/documentation/Foundation/UUID) | No |
-| URI | [`URL`](https://developer.apple.com/documentation/Foundation/URL) | — | — |
-| String | [`String`](https://developer.apple.com/documentation/Swift/String) | — | — |
-| Binary data | [`Data`](https://developer.apple.com/documentation/Foundation/Data) | — | — |
-| Transformable | [`NSObject`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class) | — | — |
+| Integer 16 | [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) | [`Int16`](https://developer.apple.com/documentation/swift/int16) | Yes |
+| Integer 32 | [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) | [`Int32`](https://developer.apple.com/documentation/swift/int32) | Yes |
+| Integer 64 | [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) | [`Int64`](https://developer.apple.com/documentation/swift/int64) | Yes |
+| Double | [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) | [`Double`](https://developer.apple.com/documentation/swift/double) | Yes |
+| Float | [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) | [`Float`](https://developer.apple.com/documentation/swift/float) | Yes |
+| Boolean | [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) | [`Bool`](https://developer.apple.com/documentation/swift/bool) | Yes |
+| Date | [`NSDate`](https://developer.apple.com/documentation/foundation/nsdate) | [`TimeInterval`](https://developer.apple.com/documentation/foundation/timeinterval) | No |
+| Decimal | [`NSDecimalNumber`](https://developer.apple.com/documentation/foundation/nsdecimalnumber) | [`NSDecimalNumber`](https://developer.apple.com/documentation/foundation/nsdecimalnumber) | No |
+| UUID | [`UUID`](https://developer.apple.com/documentation/foundation/uuid) | [`UUID`](https://developer.apple.com/documentation/foundation/uuid) | No |
+| URI | [`URL`](https://developer.apple.com/documentation/foundation/url) | — | — |
+| String | [`String`](https://developer.apple.com/documentation/swift/string) | — | — |
+| Binary data | [`Data`](https://developer.apple.com/documentation/foundation/data) | — | — |
+| Transformable | [`NSObject`](https://developer.apple.com/documentation/objectivec/nsobject-swift.class) | — | — |
 | Composite | — | — | — |
 | Undefined | — | — | — |
 
@@ -83,9 +83,9 @@ Core Data attribute types explicitly distinguish between bit size. This allows t
 ## Relationships
 
 ### Conforms To
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [RawRepresentable](../Swift/RawRepresentable.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [RawRepresentable](../swift/rawrepresentable.md)
 
 ## See Also
 

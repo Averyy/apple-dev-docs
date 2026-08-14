@@ -21,14 +21,14 @@ protocol StoreDownloaderExtension : ManagedDownloaderExtension
 
 #### Overview
 
-You can optionally implement the inherited `ManagedDownloaderExtension` requirements, but don’t implement any of the inherited `BADownloaderExtension` requirements for which this protocol provides a default implementation. For more information, see [`Background Assets`](https://developer.apple.com/documentation/BackgroundAssets).
+You can optionally implement the inherited `ManagedDownloaderExtension` requirements, but don’t implement any of the inherited `BADownloaderExtension` requirements for which this protocol provides a default implementation. For more information, see [`Background Assets`](https://developer.apple.com/documentation/backgroundassets).
 
 ## Relationships
 
 ### Inherits From
-- [AppExtension](../ExtensionFoundation/AppExtension.md)
-- [BADownloaderExtension](../BackgroundAssets/BADownloaderExtension-qwaw.md)
-- [ManagedDownloaderExtension](../BackgroundAssets/ManagedDownloaderExtension.md)
+- [AppExtension](../extensionfoundation/appextension.md)
+- [BADownloaderExtension](../backgroundassets/badownloaderextension-qwaw.md)
+- [ManagedDownloaderExtension](../backgroundassets/manageddownloaderextension.md)
 
 
 ---

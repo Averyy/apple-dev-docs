@@ -26,7 +26,7 @@ A string representation of `value`, formatted according to the style’s configu
 
 #### Discussion
 
-Use this method when you want to create a single style instance, and then use it to format multiple integers. To format a single integer, use the [`BinaryInteger`](https://developer.apple.com/documentation/Swift/BinaryInteger) instance method [`formatted(_:)`](https://developer.apple.com/documentation/Swift/BinaryInteger/formatted(_:)-4qd73), passing in an instance of [`IntegerFormatStyle.Percent`](integerformatstyle/percent.md), or [`formatted()`](https://developer.apple.com/documentation/Swift/BinaryInteger/formatted()) to use a default style.
+Use this method when you want to create a single style instance, and then use it to format multiple integers. To format a single integer, use the [`BinaryInteger`](https://developer.apple.com/documentation/swift/binaryinteger) instance method [`formatted(_:)`](https://developer.apple.com/documentation/swift/binaryinteger/formatted(_:)-4qd73), passing in an instance of [`IntegerFormatStyle.Percent`](integerformatstyle/percent.md), or [`formatted()`](https://developer.apple.com/documentation/swift/binaryinteger/formatted()) to use a default style.
 
 ## Parameters
 

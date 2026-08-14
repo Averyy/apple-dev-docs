@@ -22,7 +22,7 @@ case firstBaseline
 
 The following image shows an example of a horizontal stack view that uses the [`UIStackView.Alignment.firstBaseline`](uistackview/alignment-swift.enum/firstbaseline.md) alignment.
 
-![A horizontal stack view with three text-based subviews. The stack view aligns the subviews according to their first baseline.](https://docs-assets.developer.apple.com/published/d3fa0e8957c2e2141207a0f4f8783b57/media-2557467%402x.png)
+![A horizontal stack view with three text-based subviews. The stack view aligns the subviews according to their first baseline.](/images/com.apple.uikit/media-2557467@2x.png)
 
 ## See Also
 

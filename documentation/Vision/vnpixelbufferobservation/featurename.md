@@ -21,7 +21,7 @@ var featureName: String? { get }
 
 #### Discussion
 
-This value is [`nil`](https://developer.apple.com/documentation/ObjectiveC/nil-227m0) if the observation isn’t the result of a [`VNCoreMLRequest`](vncoremlrequest.md) operation.
+This value is [`nil`](https://developer.apple.com/documentation/objectivec/nil-227m0) if the observation isn’t the result of a [`VNCoreMLRequest`](vncoremlrequest.md) operation.
 
 ## See Also
 

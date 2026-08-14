@@ -19,7 +19,7 @@ class let touchBarSkipAheadTemplateName: String
 
 #### Discussion
 
-![Template image for skip ahead](https://docs-assets.developer.apple.com/published/c0718ea246ab00273c078bba34abb1ba/media-2793539%402x.png)
+![Template image for skip ahead](/images/com.apple.appkit/media-2793539@2x.png)
 
 Touch Bar template images are exclusively for use in [`NSTouchBarItem`](nstouchbaritem.md) objects and not in onscreen windows.
 

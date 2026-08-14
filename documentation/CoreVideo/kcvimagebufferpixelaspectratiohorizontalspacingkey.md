@@ -22,7 +22,7 @@ let kCVImageBufferPixelAspectRatioHorizontalSpacingKey: CFString
 
 #### Discussion
 
-The horizontal spacing value is of type [`CFNumber`](https://developer.apple.com/documentation/CoreFoundation/CFNumber).
+The horizontal spacing value is of type [`CFNumber`](https://developer.apple.com/documentation/corefoundation/cfnumber).
 
 ## See Also
 

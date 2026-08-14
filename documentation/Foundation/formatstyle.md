@@ -22,7 +22,7 @@ protocol FormatStyle<FormatInput, FormatOutput> : Decodable, Encodable, Hashable
 
 #### Overview
 
-Types conforming to the [`FormatStyle`](formatstyle.md) protocol take their input type and produce formatted instances of their output type. The formatting process accounts for locale-specific conventions, like grouping and separators for numbers, and presentation of units for measurements. The format styles Foundation provides produce their output as [`String`](https://developer.apple.com/documentation/Swift/String) or [`AttributedString`](attributedstring.md) instances. You can also create custom styles that format their output as any type, like XML or JSON [`Data`](data.md) or an image.
+Types conforming to the [`FormatStyle`](formatstyle.md) protocol take their input type and produce formatted instances of their output type. The formatting process accounts for locale-specific conventions, like grouping and separators for numbers, and presentation of units for measurements. The format styles Foundation provides produce their output as [`String`](https://developer.apple.com/documentation/swift/string) or [`AttributedString`](attributedstring.md) instances. You can also create custom styles that format their output as any type, like XML or JSON [`Data`](data.md) or an image.
 
 There are two basic approaches to using a [`FormatStyle`](formatstyle.md):
 
@@ -46,15 +46,15 @@ Foundation caches identical instances of a customized format style, so you don�
 
 ##### Accessing Static Instances
 
-Types that conform to [`FormatStyle`](formatstyle.md) typically extend the base protocol with type properties or type methods to provide convenience instances. These are available for use in a data type’s `formatted(_:)` method when the format style’s input type matches the data type. For example, the various numeric format styles define `number` properties with generic constraints to match the different numeric types ([`Double`](https://developer.apple.com/documentation/Swift/Double), [`Int`](https://developer.apple.com/documentation/Swift/Int), [`Float16`](https://developer.apple.com/documentation/Swift/Float16), and so on).
+Types that conform to [`FormatStyle`](formatstyle.md) typically extend the base protocol with type properties or type methods to provide convenience instances. These are available for use in a data type’s `formatted(_:)` method when the format style’s input type matches the data type. For example, the various numeric format styles define `number` properties with generic constraints to match the different numeric types ([`Double`](https://developer.apple.com/documentation/swift/double), [`Int`](https://developer.apple.com/documentation/swift/int), [`Float16`](https://developer.apple.com/documentation/swift/float16), and so on).
 
-To see how this works, consider this example of a default formatter for an [`Int`](https://developer.apple.com/documentation/Swift/Int) value. Because `123456789` is a [`BinaryInteger`](https://developer.apple.com/documentation/Swift/BinaryInteger), its [`formatted(_:)`](https://developer.apple.com/documentation/Swift/BinaryInteger/formatted(_:)-4qd73) method accepts an [`IntegerFormatStyle`](integerformatstyle.md) parameter. The following example shows the style’s default behavior in the `en_US` locale.
+To see how this works, consider this example of a default formatter for an [`Int`](https://developer.apple.com/documentation/swift/int) value. Because `123456789` is a [`BinaryInteger`](https://developer.apple.com/documentation/swift/binaryinteger), its [`formatted(_:)`](https://developer.apple.com/documentation/swift/binaryinteger/formatted(_:)-4qd73) method accepts an [`IntegerFormatStyle`](integerformatstyle.md) parameter. The following example shows the style’s default behavior in the `en_US` locale.
 
 ```swift
 let formatted = 123456789.formatted(IntegerFormatStyle()) // "123,456,789"
 ```
 
-[`IntegerFormatStyle`](integerformatstyle.md) extends [`FormatStyle`](formatstyle.md) with multiple type properties called `number`, each of which is an [`IntegerFormatStyle`](integerformatstyle.md) instance; these properties differ by which [`BinaryInteger`](https://developer.apple.com/documentation/Swift/BinaryInteger)-conforming type they take as input. Since one of these statically-defined properties ([`number`](formatstyle/number-7fxvo.md)) takes [`Int`](https://developer.apple.com/documentation/Swift/Int) as its input, you can use this type property instead of instantiating a new format style instance. Using dot notation to access this property on the inferred [`FormatStyle`](formatstyle.md) makes the call point much easier to read, as seen here:
+[`IntegerFormatStyle`](integerformatstyle.md) extends [`FormatStyle`](formatstyle.md) with multiple type properties called `number`, each of which is an [`IntegerFormatStyle`](integerformatstyle.md) instance; these properties differ by which [`BinaryInteger`](https://developer.apple.com/documentation/swift/binaryinteger)-conforming type they take as input. Since one of these statically-defined properties ([`number`](formatstyle/number-7fxvo.md)) takes [`Int`](https://developer.apple.com/documentation/swift/int) as its input, you can use this type property instead of instantiating a new format style instance. Using dot notation to access this property on the inferred [`FormatStyle`](formatstyle.md) makes the call point much easier to read, as seen here:
 
 ```swift
 let formatted = 123456789.formatted( .number) // "123,456,789"
@@ -247,10 +247,10 @@ You can use a [`ParseStrategy`](parsestrategy.md) one of two ways:
 ## Relationships
 
 ### Inherits From
-- [Decodable](../Swift/Decodable.md)
-- [Encodable](../Swift/Encodable.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
+- [Decodable](../swift/decodable.md)
+- [Encodable](../swift/encodable.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
 ### Inherited By
 - [DiscreteFormatStyle](discreteformatstyle.md)
 - [ParseableFormatStyle](parseableformatstyle.md)

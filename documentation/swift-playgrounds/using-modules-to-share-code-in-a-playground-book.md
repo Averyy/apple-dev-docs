@@ -8,7 +8,7 @@ In Swift Playgrounds 3.0 and later, make code available across multiple chapters
 
 Where you place the code in a book determines its visibilty to other parts of the book. For example, the code in the `main.swift` file on a page isn’t visible to the rest of the book. If your book contains multiple pages or chapters that require access to a shared codebase, place the code in a module. The following screenshot shows files from multiple modules open across several tabs:
 
-![A screenshot showing the tabbed interface learners use to switch between files opened from multiple modules. Three tabs are open: main.swift, SharedCode, and AnotherModule. SharedCode is the active tab.](https://docs-assets.developer.apple.com/published/2d1040d9c30eca8c7783b286c05955df/using-modules-to-share-code-in-a-playground-book-1%402x.png)
+![A screenshot showing the tabbed interface learners use to switch between files opened from multiple modules. Three tabs are open: main.swift, SharedCode, and AnotherModule. SharedCode is the active tab.](/images/com.apple.Swift-Playgrounds/using-modules-to-share-code-in-a-playground-book-1@2x.png)
 
 By sharing code throughout your book, you provide consistent APIs that teach a common interface.
 

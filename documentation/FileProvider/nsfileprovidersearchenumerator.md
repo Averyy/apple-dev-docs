@@ -34,7 +34,7 @@ Implement this protocol by implementing the [`enumerateSearchResults(for:startin
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

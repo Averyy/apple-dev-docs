@@ -38,7 +38,7 @@ if let television = try? await ModelEntity(named: "tv_retro") {
 
 | [`ModelDebugOptionsComponent.VisualizationMode.none`](modeldebugoptionscomponent/visualizationmode-swift.enum/none.md) | `metallic` |
 | --- | --- |
-| ![A screenshot of a virtual TV in a visionOS app. The TV is an old-fashioned television displaying a multicolored test pattern. It is drawn with shadows and highlights to appear as realistic as possible.](https://docs-assets.developer.apple.com/published/a57e508a6549f1c8cce08e79ea6b7ec5/ModelDebugOptionsComponent-VisualizationMode-enum-none.jpg) | ![A screenshot of a virtual TV in a visionOS app. The TV is using a metallic visualization, appearing mostly in black, with some white representing the metallic parts such as antenna dials, and a metallic frame around the screen.](https://docs-assets.developer.apple.com/published/db245ee1fc0f69f89b6c604f4aeb2949/ModelDebugOptionsComponent-VisualizationMode-enum-metallic.jpg) |
+| ![A screenshot of a virtual TV in a visionOS app. The TV is an old-fashioned television displaying a multicolored test pattern. It is drawn with shadows and highlights to appear as realistic as possible.](/images/com.apple.RealityKit/ModelDebugOptionsComponent-VisualizationMode-enum-none.jpg) | ![A screenshot of a virtual TV in a visionOS app. The TV is using a metallic visualization, appearing mostly in black, with some white representing the metallic parts such as antenna dials, and a metallic frame around the screen.](/images/com.apple.RealityKit/ModelDebugOptionsComponent-VisualizationMode-enum-metallic.jpg) |
 
 ## See Also
 

@@ -22,7 +22,7 @@ import Security.AuthorizationPlugin
 #import <Security/AuthorizationPlugin.h>       
 ```
 
-> **Note**:  When your plug-in needs to interact with the user, subclass the [`SFAuthorizationPluginView`](https://developer.apple.com/documentation/SecurityInterface/SFAuthorizationPluginView) class to maintain the look and feel of the system authentication dialogs.
+> **Note**:  When your plug-in needs to interact with the user, subclass the [`SFAuthorizationPluginView`](https://developer.apple.com/documentation/securityinterface/sfauthorizationpluginview) class to maintain the look and feel of the system authentication dialogs.
 
 ## Topics
 

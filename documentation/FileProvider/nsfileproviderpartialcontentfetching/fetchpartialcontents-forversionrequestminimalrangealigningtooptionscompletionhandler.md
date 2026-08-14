@@ -41,9 +41,9 @@ However, when updating existing files, the system sets the `options` parameter t
 
 By default, the system calls the [`fetchPartialContents(for:version:request:minimalRange:aligningTo:options:completionHandler:)`](nsfileproviderpartialcontentfetching/fetchpartialcontents(for:version:request:minimalrange:aligningto:options:completionhandler:).md) method concurrently when there are multiple outstanding requests. This can include making multiple concurrent requests for different parts of the file.
 
-You can control concurrent requests by setting the [`NSExtensionFileProviderDownloadPipelineDepth`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSExtension/NSExtensionFileProviderDownloadPipelineDepth) key in your extension’s `Info.plist` file. Set the value to the number of concurrent downloads the system can create per domain. This value must be between 1 and 128.
+You can control concurrent requests by setting the [`NSExtensionFileProviderDownloadPipelineDepth`](https://developer.apple.com/documentation/bundleresources/information-property-list/nsextension/nsextensionfileproviderdownloadpipelinedepth) key in your extension’s `Info.plist` file. Set the value to the number of concurrent downloads the system can create per domain. This value must be between 1 and 128.
 
-> **Note**:  You must set the [`NSExtensionFileProviderDownloadPipelineDepth`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSExtension/NSExtensionFileProviderDownloadPipelineDepth) key for each domain. The setting affects all requests for files in the specified domain.
+> **Note**:  You must set the [`NSExtensionFileProviderDownloadPipelineDepth`](https://developer.apple.com/documentation/bundleresources/information-property-list/nsextension/nsextensionfileproviderdownloadpipelinedepth) key for each domain. The setting affects all requests for files in the specified domain.
 
 ##### Managing File Ownership
 
@@ -55,7 +55,7 @@ If the extension or system crashes after you call the completion handler but bef
 
 You can control which processes can request files. By default, the system automatically manages files based on its POSIX access control lists.
 
-To prevent a process from accessing content from the extension’s domain, save an array of strings to the `NSFileProviderExtensionNonMaterializingProcessNames` [`UserDefaults`](https://developer.apple.com/documentation/Foundation/UserDefaults) key. The system won’t fetch content if the requesting process’s name matches a string in this array.
+To prevent a process from accessing content from the extension’s domain, save an array of strings to the `NSFileProviderExtensionNonMaterializingProcessNames` [`UserDefaults`](https://developer.apple.com/documentation/foundation/userdefaults) key. The system won’t fetch content if the requesting process’s name matches a string in this array.
 
 - In macOS 11.0 and later, the system checks this list when a process reads a file using POSIX filesystem calls.
 - In macOS 11.4 and later, the system also checks this list when a process reads a file using file coordination.
@@ -64,9 +64,9 @@ To prevent a process from accessing content from the extension’s domain, save 
 
 If the system requests an item that your file provider extension doesn’t know about, pass the [`NSFileProviderError.Code.noSuchItem`](nsfileprovidererror/code/nosuchitem.md) error to the completion handler. The system then treats the item as if someone had removed the item from the domain, and it attempts to delete the file. If it can’t delete the item (for example, because the item has local changes) it recreates the item by calling your extension’s [`createItem(basedOn:fields:contents:options:request:completionHandler:)`](nsfileproviderreplicatedextension/createitem(basedon:fields:contents:options:request:completionhandler:).md) method.
 
-If the user doesn’t have access to the file, you can pass an [`NSFileReadNoPermissionError`](https://developer.apple.com/documentation/Foundation/NSFileReadNoPermissionError-swift.var) error to the completion handler. The system then displays that error to the user.
+If the user doesn’t have access to the file, you can pass an [`NSFileReadNoPermissionError`](https://developer.apple.com/documentation/foundation/nsfilereadnopermissionerror-swift.var) error to the completion handler. The system then displays that error to the user.
 
-Your extension can also pass [`NSFileProviderError.Code.notAuthenticated`](nsfileprovidererror/code/notauthenticated.md) and [`NSFileReadNoPermissionError`](https://developer.apple.com/documentation/Foundation/NSFileReadNoPermissionError-swift.var) errors if it can’t download the items because of the system or domain’s current state. In those cases, the system displays an error to the user, and doesn’t make another fetch request until the next time it receives an update notification about the item.
+Your extension can also pass [`NSFileProviderError.Code.notAuthenticated`](nsfileprovidererror/code/notauthenticated.md) and [`NSFileReadNoPermissionError`](https://developer.apple.com/documentation/foundation/nsfilereadnopermissionerror-swift.var) errors if it can’t download the items because of the system or domain’s current state. In those cases, the system displays an error to the user, and doesn’t make another fetch request until the next time it receives an update notification about the item.
 
 If you can’t provide the requested version for an item, provide a different version unless the system passed the [`strictVersioning`](nsfileproviderfetchcontentsoptions/strictversioning.md) key in the `options` parameter. In this case, pass a [`NSFileProviderError.Code.versionNoLongerAvailable`](nsfileprovidererror/code/versionnolongeravailable.md) error to the completion handler instead.
 
@@ -76,9 +76,9 @@ The system considers all other errors as transient, and attempts to request the 
 
 ##### Canceling Downloads
 
-Your implementation of this method must return a [`Progress`](https://developer.apple.com/documentation/Foundation/Progress) item that tracks your app’s progress while downloading the requested range. The system uses this item to show the progress to the user.
+Your implementation of this method must return a [`Progress`](https://developer.apple.com/documentation/foundation/progress) item that tracks your app’s progress while downloading the requested range. The system uses this item to show the progress to the user.
 
-If the user cancels the operation, the system calls the progress item’s [`cancellationHandler`](https://developer.apple.com/documentation/Foundation/Progress/cancellationHandler) block. Use this block to stop fetching the item, because it’s no longer required.
+If the user cancels the operation, the system calls the progress item’s [`cancellationHandler`](https://developer.apple.com/documentation/foundation/progress/cancellationhandler) block. Use this block to stop fetching the item, because it’s no longer required.
 
 ## Parameters
 

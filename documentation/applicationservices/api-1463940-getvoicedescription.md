@@ -26,9 +26,9 @@ If the voice specification structure does not identify anavailable voice, `GetVo
 
 ## Parameters
 
-- `voice`: A pointer to the voice specification structure identifying the voice to be described, or   to obtain a description of the system default voice. 
-- `info`: A pointer to a voice description structure. If this parameter is  , the function does not fill in the fields of the voice description structure; instead, it simply determines whether the   parameter specifies an available voice and, if not, returns a   error. 
-- `infoLength`: The length, in bytes, of the voice description structure. In the current version of the Speech Synthesis Manager, the voice description structure contains 362 bytes. However, you should always use the   function to determine the length of this structure. 
+- `voice`: A pointer to the voice specification structure identifying the voice to be described, or `NULL` to obtain a description of the system default voice. 
+- `info`: A pointer to a voice description structure. If this parameter is `NULL`, the function does not fill in the fields of the voice description structure; instead, it simply determines whether the `voice` parameter specifies an available voice and, if not, returns a `voiceNotFound` error. 
+- `infoLength`: The length, in bytes, of the voice description structure. In the current version of the Speech Synthesis Manager, the voice description structure contains 362 bytes. However, you should always use the `SizeOf` function to determine the length of this structure. 
 
 ## See Also
 

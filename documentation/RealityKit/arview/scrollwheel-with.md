@@ -17,7 +17,7 @@ Informs the view that the mouse’s scroll wheel has moved.
 
 #### Discussion
 
-The view handles the event instead of passing it to the next responder. See [`NSResponder`](https://developer.apple.com/documentation/AppKit/NSResponder) for more information about the responder chain.
+The view handles the event instead of passing it to the next responder. See [`NSResponder`](https://developer.apple.com/documentation/appkit/nsresponder) for more information about the responder chain.
 
 ## Parameters
 

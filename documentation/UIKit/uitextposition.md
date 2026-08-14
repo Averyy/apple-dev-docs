@@ -21,7 +21,7 @@ class UITextPosition
 
 #### Overview
 
-Classes that adopt the [`UITextInput`](uitextinput.md) protocol must create custom [`UITextPosition`](uitextposition.md) objects for representing specific locations within the text managed by the class. The text input system uses both these objects and [`UITextRange`](uitextrange.md) objects for communicating text-layout information. There are two reasons for using objects for text positions rather than primitive types such as [`NSInteger`](https://developer.apple.com/documentation/ObjectiveC/NSInteger):
+Classes that adopt the [`UITextInput`](uitextinput.md) protocol must create custom [`UITextPosition`](uitextposition.md) objects for representing specific locations within the text managed by the class. The text input system uses both these objects and [`UITextRange`](uitextrange.md) objects for communicating text-layout information. There are two reasons for using objects for text positions rather than primitive types such as [`NSInteger`](https://developer.apple.com/documentation/objectivec/nsinteger):
 
 - Some documents contain nested elements (for example, HTML tags and embedded objects) and you need to track both absolute position and position in the visible text.
 - The WebKit framework requires that text indexes and offsets be represented by objects.
@@ -33,15 +33,15 @@ This class declares no methods of its own.
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [Sendable](../Swift/Sendable.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [Sendable](../swift/sendable.md)
 
 ## See Also
 

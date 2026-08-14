@@ -24,11 +24,11 @@ static let NSManagedObjectContextDidSave: NSNotification.Name
 
 > ❗ **Important**:  Use [`NSManagedObjectContextDidSaveObjectIDs`](nsnotification/name-swift.struct/nsmanagedobjectcontextdidsaveobjectids.md) instead of this notification.
 
-This notification’s `object` is the saved context. Don’t peform any asynchronous work or block the calling thread. [`NSManagedObjectContext`](https://developer.apple.com/documentation/CoreData/NSManagedObjectContext) posts notifications to the same thread that creates it.
+This notification’s `object` is the saved context. Don’t peform any asynchronous work or block the calling thread. [`NSManagedObjectContext`](https://developer.apple.com/documentation/coredata/nsmanagedobjectcontext) posts notifications to the same thread that creates it.
 
-The `userInfo` dictionary contains the inserted, updated, and deleted managed objects of the completed save. For the keys to access those objects, see [`NSManagedObjectContext.NotificationKey`](https://developer.apple.com/documentation/CoreData/NSManagedObjectContext/NotificationKey). Don’t capture the dictionary’s contents.
+The `userInfo` dictionary contains the inserted, updated, and deleted managed objects of the completed save. For the keys to access those objects, see [`NSManagedObjectContext.NotificationKey`](https://developer.apple.com/documentation/coredata/nsmanagedobjectcontext/notificationkey). Don’t capture the dictionary’s contents.
 
-To safely use the provided managed objects on the current thread, create a new context and use its [`mergeChanges(fromContextDidSave:)`](https://developer.apple.com/documentation/CoreData/NSManagedObjectContext/mergeChanges(fromContextDidSave:)) method to merge in the notification’s changes.
+To safely use the provided managed objects on the current thread, create a new context and use its [`mergeChanges(fromContextDidSave:)`](https://developer.apple.com/documentation/coredata/nsmanagedobjectcontext/mergechanges(fromcontextdidsave:)) method to merge in the notification’s changes.
 
 ## See Also
 

@@ -7,7 +7,6 @@ An option to display a date that uses the notification’s delivery timestamp.
 
 **Availability**:
 - iOS 26.5+
-- iPadOS 26.5+
 
 ## Declaration
 

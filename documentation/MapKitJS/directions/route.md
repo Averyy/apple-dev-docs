@@ -20,7 +20,7 @@ A promise that resolves with a [`DirectionsResponse`](directionsresponse.md) on 
 
 #### Discussion
 
-Call the [`route(request)`](directions/route.md) method to get directions.
+Call the [`route()`](directions/route.md) method to get directions.
 
 The resolved [`DirectionsResponse`](directionsresponse.md) object has the following properties:
 

@@ -10,7 +10,7 @@ To conduct a search in your app’s data model, create storage for the query tex
 
 You can also optionally provide storage for tokens, which are discrete search terms that your app recognizes. Tokens provide a way to combine multiple search terms, and make it easier for you to indicate that a search term is common or expected in your app.
 
-![A wide rectangle with rounded corners that contains a magnifying glass on the left, followed by the three words, Apple, Banana, and Pear, each inside its own dark gray rectangle. An X in a dark gray circle appears on the far right of the bounding rectangle.](https://docs-assets.developer.apple.com/published/2139de17579d7f0ab113083751fc86b8/Search-tokens-0-macOS%402x.png)
+![A wide rectangle with rounded corners that contains a magnifying glass on the left, followed by the three words, Apple, Banana, and Pear, each inside its own dark gray rectangle. An X in a dark gray circle appears on the far right of the bounding rectangle.](/images/com.apple.SwiftUI/Search-tokens-0-macOS@2x.png)
 
 For information on how to control the placement of the search field in your app’s interface, see [`Adding a search interface to your app`](adding-a-search-interface-to-your-app.md).
 
@@ -55,7 +55,7 @@ struct ContentView: View {
 
 In addition to a search string, the search field can also display tokens when you use one of the searchable modifiers that has a `tokens` parameter, like [`searchable(text:tokens:placement:prompt:token:)`](view/searchable(text:tokens:placement:prompt:token:).md).
 
-You create tokens by defining a group of values that conform to the [`Identifiable`](https://developer.apple.com/documentation/Swift/Identifiable) protocol, then instantiate the collection of values. For example you can create an enumeration of fruit tokens:
+You create tokens by defining a group of values that conform to the [`Identifiable`](https://developer.apple.com/documentation/swift/identifiable) protocol, then instantiate the collection of values. For example you can create an enumeration of fruit tokens:
 
 ```swift
 enum FruitToken: String, Identifiable, Hashable, CaseIterable {
@@ -87,7 +87,7 @@ ProductList(departmentId: departmentId, productId: $productId)
 
 You can represent the token with a [`Text`](text.md) view, as the above example demonstrates. In iOS and iPadOS, you can use a [`Label`](label.md) instead. Ensure the view clearly represents the corresponding search query, and if you use a label, that the tokens fit the search query field’s height. Tokens appear at the beginning of the search field before any plain text. The following shows how the search field looks when the `tokens` array contains the `apple` and `banana` tokens:
 
-![A macOS window with three navigation panes. The pane on the left lists the items, Produce, Frozen, and Bakery. The middle pane has the placeholder text, Select a Department. The pane on the right has the placeholder text, Select a Product. The toolbar has a search field in the upper-right of the window that has the words, Apple and Banana, each inside a gray rectangle.](https://docs-assets.developer.apple.com/published/4daad83077a7b788e2d116be1650b822/Search-tokens-1-macOS%402x.png)
+![A macOS window with three navigation panes. The pane on the left lists the items, Produce, Frozen, and Bakery. The middle pane has the placeholder text, Select a Department. The pane on the right has the placeholder text, Select a Product. The toolbar has a search field in the upper-right of the window that has the words, Apple and Banana, each inside a gray rectangle.](/images/com.apple.SwiftUI/Search-tokens-1-macOS@2x.png)
 
 ##### Support Tokens That Have a Mutable Component
 

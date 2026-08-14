@@ -16,7 +16,7 @@ let IKImageBrowserNSURLRepresentationType: String
 
 #### Discussion
 
-An [`NSURL`](https://developer.apple.com/documentation/Foundation/NSURL)object.
+An [`NSURL`](https://developer.apple.com/documentation/foundation/nsurl)object.
 
 ## See Also
 

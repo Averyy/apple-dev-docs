@@ -23,7 +23,7 @@ func remapValues(toCurveWithControlPoints controlPoints: [NSNumber : NSNumber])
 
 When you call this method, the [`GKNoise`](gknoise.md) class first interpolates the values specified in the `controlPoints` parameter to create a smooth curve. Then, this method uses the curve to replace values in the noise field. For example, passing the control points `[-1.0: -1.0, -0.5: 0.5, 0.5: -0.5, 1.0: 1.0]` defines an S-shaped curve that leaves the lowest and highest values in the noise field unchanged, but replaces moderately low values with moderately high values and vice versa.
 
-![None](https://docs-assets.developer.apple.com/published/9b3a3fb1539dceb756f4564e553397eb/media-2556387%402x.png)
+![None](/images/com.apple.gameplaykit/media-2556387@2x.png)
 
 ## Parameters
 

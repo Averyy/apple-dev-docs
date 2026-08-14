@@ -21,7 +21,7 @@ var mASBD: AudioStreamBasicDescription
 
 #### Discussion
 
-An [`AudioStreamBasicDescription`](https://developer.apple.com/documentation/CoreAudioTypes/AudioStreamBasicDescription) struct.
+An [`AudioStreamBasicDescription`](https://developer.apple.com/documentation/coreaudiotypes/audiostreambasicdescription) struct.
 
 
 ---

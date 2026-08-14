@@ -24,7 +24,7 @@ CFMutableDictionary manages dynamic dictionaries. The basic interface for managi
 
 You create a mutable dictionary object using either the [`CFDictionaryCreateMutable(_:_:_:_:)`](cfdictionarycreatemutable(_:_:_:_:).md) or [`CFDictionaryCreateMutableCopy(_:_:_:)`](cfdictionarycreatemutablecopy(_:_:_:).md) function. You can add key-value pairs using the [`CFDictionaryAddValue(_:_:_:)`](cfdictionaryaddvalue(_:_:_:).md) and [`CFDictionarySetValue(_:_:_:)`](cfdictionarysetvalue(_:_:_:).md) functions. When adding key-value pairs to a dictionary, the keys and values are not copied—they are retained so they are not invalidated before the dictionary is deallocated. You can remove key-value pairs using the [`CFDictionaryRemoveValue(_:_:)`](cfdictionaryremovevalue(_:_:).md) function. When removing key-value pairs from a dictionary, the keys and values are released.
 
-CFMutableDictionary is “toll-free bridged” with its Cocoa Foundation counterpart, [`NSMutableDictionary`](https://developer.apple.com/documentation/Foundation/NSMutableDictionary). What this means is that the Core Foundation type is interchangeable in function or method calls with the bridged Foundation object. This means that in a method where you see an `NSMutableDictionary *` parameter, you can pass in a `CFMutableDictionaryRef`, and in a function where you see a `CFMutableDictionaryRef` parameter, you can pass in an NSMutableDictionary instance. This also applies to concrete subclasses of NSMutableDictionary. See [`Toll-Free Bridged Types`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFDesignConcepts/Articles/tollFreeBridgedTypes.html#//apple_ref/doc/uid/TP40010677) for more information on toll-free bridging.
+CFMutableDictionary is “toll-free bridged” with its Cocoa Foundation counterpart, [`NSMutableDictionary`](https://developer.apple.com/documentation/foundation/nsmutabledictionary). What this means is that the Core Foundation type is interchangeable in function or method calls with the bridged Foundation object. This means that in a method where you see an `NSMutableDictionary *` parameter, you can pass in a `CFMutableDictionaryRef`, and in a function where you see a `CFMutableDictionaryRef` parameter, you can pass in an NSMutableDictionary instance. This also applies to concrete subclasses of NSMutableDictionary. See [`Toll-Free Bridged Types`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFDesignConcepts/Articles/tollFreeBridgedTypes.html#//apple_ref/doc/uid/TP40010677) for more information on toll-free bridging.
 
 ## Topics
 
@@ -50,8 +50,8 @@ CFMutableDictionary is “toll-free bridged” with its Cocoa Foundation counter
 ### Inherits From
 - [CFDictionary](cfdictionary.md)
 ### Conforms To
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
 
 ## See Also
 

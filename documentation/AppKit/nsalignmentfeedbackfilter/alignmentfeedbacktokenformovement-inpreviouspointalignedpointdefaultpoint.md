@@ -29,9 +29,9 @@ If no feedback token is returned, don’t perform the alignment or request hapti
 ## Parameters
 
 - `view`: The view ([`NSView`](nsview.md)) in which the object was moved.
-- `previousPoint`: The location ([`NSPoint`](https://developer.apple.com/documentation/Foundation/NSPoint)) of the object prior to its move.
-- `alignedPoint`: The new location ([`NSPoint`](https://developer.apple.com/documentation/Foundation/NSPoint)) of the object if alignment occurs.
-- `defaultPoint`: The current location ([`NSPoint`](https://developer.apple.com/documentation/Foundation/NSPoint)) of the object. This is where the user actually moved the object. This location may be offset from the location of the cursor.
+- `previousPoint`: The location ([`NSPoint`](https://developer.apple.com/documentation/foundation/nspoint)) of the object prior to its move.
+- `alignedPoint`: The new location ([`NSPoint`](https://developer.apple.com/documentation/foundation/nspoint)) of the object if alignment occurs.
+- `defaultPoint`: The current location ([`NSPoint`](https://developer.apple.com/documentation/foundation/nspoint)) of the object. This is where the user actually moved the object. This location may be offset from the location of the cursor.
 
 ## See Also
 

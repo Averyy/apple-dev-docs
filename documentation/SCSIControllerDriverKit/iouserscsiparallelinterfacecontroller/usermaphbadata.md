@@ -16,13 +16,13 @@ virtual kern_return_t UserMapHBAData(uint32_t *uniqueTaskID);
 
 #### Return Value
 
-A value that indicates the result of memory-mapping the data. [`kIOReturnSuccess`](https://developer.apple.com/documentation/DriverKit/kIOReturnSuccess) indicates success. For error definitions, see [`IOKit Constants`](https://developer.apple.com/documentation/iokit/iokit_constants).
+A value that indicates the result of memory-mapping the data. [`kIOReturnSuccess`](https://developer.apple.com/documentation/driverkit/kioreturnsuccess) indicates success. For error definitions, see [`IOKit Constants`](https://developer.apple.com/documentation/iokit/iokit_constants).
 
 #### Discussion
 
 The driver extension class should override this function and memory-map and prepare any host bus adapter (HBA)-specific task data for direct memory access (DMA). The framework calls this method for every `SCSIParallelTask` immediately after creating the task in the kernel. The driver extension class should also set a unique task ID. The framework uses this ID to uniquely identify the corresponding `SCSIParallelTask` in the kernel.
 
-The following listing shows an example of implementing [`UserMapHBAData`](iouserscsiparallelinterfacecontroller/usermaphbadata.md). It starts by creating an [`IOBufferMemoryDescriptor`](https://developer.apple.com/documentation/DriverKit/IOBufferMemoryDescriptor) for the controller’s specific data structure. It also maps memory to the dext’s memory space. Then the example adds the task to its own task data list, and sets the `uniqueTaskID` in-out variable to a newly-incremented unique ID. This allows the kernel to associate this task with its corresponding [`SCSIParallelTaskIdentifier`](https://developer.apple.com/documentation/kernel/scsiparalleltaskidentifier).
+The following listing shows an example of implementing [`UserMapHBAData`](iouserscsiparallelinterfacecontroller/usermaphbadata.md). It starts by creating an [`IOBufferMemoryDescriptor`](https://developer.apple.com/documentation/driverkit/iobuffermemorydescriptor) for the controller’s specific data structure. It also maps memory to the dext’s memory space. Then the example adds the task to its own task data list, and sets the `uniqueTaskID` in-out variable to a newly-incremented unique ID. This allows the kernel to associate this task with its corresponding [`SCSIParallelTaskIdentifier`](https://developer.apple.com/documentation/kernel/scsiparalleltaskidentifier).
 
 ```objc
 kern_return_t
@@ -45,7 +45,7 @@ IMPL ( ExampleSCSIDext, UserMapHBAData )
 }
 ```
 
-It’s important to perform preprocessing like memory mapping early — before serving I/O — because doing so on the I/O path can affect performance. For example, calling an API like [`CreateMapping`](https://developer.apple.com/documentation/DriverKit/IOMemoryDescriptor/CreateMapping) in the I/O path can cause additional RPC overhead.
+It’s important to perform preprocessing like memory mapping early — before serving I/O — because doing so on the I/O path can affect performance. For example, calling an API like [`CreateMapping`](https://developer.apple.com/documentation/driverkit/iomemorydescriptor/createmapping) in the I/O path can cause additional RPC overhead.
 
 ## Parameters
 

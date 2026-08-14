@@ -15,9 +15,9 @@ Enable support for media format readers; tap and process audio from an audio mix
 
 #### Overview
 
-Call the [`MTRegisterProfessionalVideoWorkflowFormatReaders()`](mtregisterprofessionalvideoworkflowformatreaders().md) function to enable the use of custom [`MediaExtension`](https://developer.apple.com/documentation/MediaExtension) format readers.
+Call the [`MTRegisterProfessionalVideoWorkflowFormatReaders()`](mtregisterprofessionalvideoworkflowformatreaders().md) function to enable the use of custom [`MediaExtension`](https://developer.apple.com/documentation/mediaextension) format readers.
 
-Use an [`MTAudioProcessingTap`](mtaudioprocessingtap.md) to tap audio from an [`AVPlayer`](https://developer.apple.com/documentation/AVFoundation/AVPlayer).
+Use an [`MTAudioProcessingTap`](mtaudioprocessingtap.md) to tap audio from an [`AVPlayer`](https://developer.apple.com/documentation/avfoundation/avplayer).
 
 ## Topics
 

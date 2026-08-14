@@ -36,8 +36,8 @@ To make a custom type usable in AppIntents, conform it to this protocol by imple
 
 ### Inherits From
 - [IntentValueExpressing](intentvalueexpressing.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 ### Inherited By
 - [IntentValueConvertibleWrapper](intentvalueconvertiblewrapper.md)
 ### Conforming Types

@@ -14,7 +14,7 @@ Subclass [`SKNode`](sknode.md) (or one of its subclasses) when you need to custo
 
 ###### Subclass a Node to Implement Node Archiving
 
-If you add properties to a subclass and that subclass needs to be archived, the [`NSCoding`](https://developer.apple.com/documentation/Foundation/NSCoding) protocol needs to be implemented on your subclasses. See [`Archives and Serializations Programming Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/Archiving/Archiving.html#//apple_ref/doc/uid/10000047i).
+If you add properties to a subclass and that subclass needs to be archived, the [`NSCoding`](https://developer.apple.com/documentation/foundation/nscoding) protocol needs to be implemented on your subclasses. See [`Archives and Serializations Programming Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/Archiving/Archiving.html#//apple_ref/doc/uid/10000047i).
 
 ###### Use a Shader Instead of Subclassing to Do Custom Node Drawing
 
@@ -26,7 +26,7 @@ In many cases, expect to add methods that can be called during the scene’s pre
 
 ##### Handle User Input with a Node
 
-If you want to implement event handling in a node class, you must implement separate event-handling code for iOS and macOS. The [`SKNode`](sknode.md) class inherits from [`NSResponder`](https://developer.apple.com/documentation/AppKit/NSResponder) on macOS and [`UIResponder`](https://developer.apple.com/documentation/UIKit/UIResponder) on iOS. See [`Controlling User Interaction on Nodes`](controlling-user-interaction-on-nodes.md) for more information.
+If you want to implement event handling in a node class, you must implement separate event-handling code for iOS and macOS. The [`SKNode`](sknode.md) class inherits from [`NSResponder`](https://developer.apple.com/documentation/appkit/nsresponder) on macOS and [`UIResponder`](https://developer.apple.com/documentation/uikit/uiresponder) on iOS. See [`Controlling User Interaction on Nodes`](controlling-user-interaction-on-nodes.md) for more information.
 
 ##### Delegate Tasks to a Node
 

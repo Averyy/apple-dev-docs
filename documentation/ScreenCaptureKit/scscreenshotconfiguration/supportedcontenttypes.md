@@ -17,7 +17,7 @@ class var supportedContentTypes: [UTType] { get }
 
 #### Discussion
 
-You can save the output [`CGImage`](https://developer.apple.com/documentation/CoreGraphics/CGImage) into HEIC, JPEG, and PNG formats.
+You can save the output [`CGImage`](https://developer.apple.com/documentation/coregraphics/cgimage) into HEIC, JPEG, and PNG formats.
 
 
 ---

@@ -6,14 +6,14 @@ Network APIs for use by all types of NetworkExtension providers and by hotspot h
 
 #### Overview
 
-NetworkExtension providers and hotspot helpers run in an unusual network environment that can cause problems for general-purpose networking APIs. For example, [`URLSession`](https://developer.apple.com/documentation/Foundation/URLSession) typically sends requests via the default route, which is inappropriate for a hotspot helper that must always use the Wi-Fi interface. The NetworkExtension framework includes a number of APIs that are useful in such situations.
+NetworkExtension providers and hotspot helpers run in an unusual network environment that can cause problems for general-purpose networking APIs. For example, [`URLSession`](https://developer.apple.com/documentation/foundation/urlsession) typically sends requests via the default route, which is inappropriate for a hotspot helper that must always use the Wi-Fi interface. The NetworkExtension framework includes a number of APIs that are useful in such situations.
 
 These APIs have the following key characteristics:
 
 - They aren’t general-purpose APIs; they can only be used in the context of a NetworkExtension provider or hotspot helper.
 - In many cases, you don’t need to use them. For example, it’s possible for a packet tunnel provider to use a general-purpose networking API, like BSD Sockets, for its tunnel connection.
 
-The recommended general-purpose networking APIs are the [`URL Loading System`](https://developer.apple.com/documentation/Foundation/url-loading-system) for HTTP and the [`Network`](https://developer.apple.com/documentation/Network) framework for TCP and UDP.
+The recommended general-purpose networking APIs are the [`URL Loading System`](https://developer.apple.com/documentation/foundation/url-loading-system) for HTTP and the [`Network`](https://developer.apple.com/documentation/network) framework for TCP and UDP.
 
 ## Topics
 

@@ -19,7 +19,7 @@ case love
 
 #### Discussion
 
-![None](https://docs-assets.developer.apple.com/published/9eb5f1ba68d0b7acf9a328ea1f8a6586/media-2934521%402x.png)
+![None](/images/com.apple.uikit/media-2934521@2x.png)
 
 ## See Also
 

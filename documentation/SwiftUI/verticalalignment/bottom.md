@@ -28,7 +28,7 @@ static let bottom: VerticalAlignment
 
 Use this guide to align the bottom edges of views:
 
-![A box that contains the word, Bottom. A horizontal](https://docs-assets.developer.apple.com/published/cf3af2d8bd3b57705462db8e421c1aba/VerticalAlignment-bottom-1-iOS%402x.png)
+![A box that contains the word, Bottom. A horizontal](/images/com.apple.SwiftUI/VerticalAlignment-bottom-1-iOS@2x.png)
 
 The following code generates the image above using an [`HStack`](hstack.md):
 

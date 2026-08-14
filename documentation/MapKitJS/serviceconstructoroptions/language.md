@@ -16,7 +16,7 @@ language?: string;
 
 #### Discussion
 
-If you set a language ID, the service request returns content in the specified language, if available, such as, `fr-CA` or `en-GB`. If you don’t provide a language ID, the service object uses the language ID the system provides to the [`init(options)`](mapkit/init.md) call, or the browser’s default language.
+If you set a language ID, the service request returns content in the specified language, if available, such as, `fr-CA` or `en-GB`. If you don’t provide a language ID, the service object uses the language ID the system provides to the [`init()`](mapkit/init.md) call, or the browser’s default language.
 
 ## See Also
 

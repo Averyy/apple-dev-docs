@@ -12,7 +12,7 @@ When you use RealityKit, the framework manages GPU access for you. However, your
 
 RealityKit helps you get the most out of textures. For example, the framework automatically generates and uses *mipmaps*, which are a series of progressively lower resolution variants of your texture that improve render times when applied to distant objects.
 
-![A depiction of progressively lower resolution textures created from a single high resolution texture. The first texture shows a 16 by 16 grid of pixels overlaid on a pattern to create mipmap 0. The second texture shows an 8 by 8 grid of pixels covering the same texture at half the resolution to create mipmap 1. The third texture shows a 4 by 4 grid covering the same texture at a quarter of the original resolution to create mipmap 2.](https://docs-assets.developer.apple.com/published/74a8a8029f7d7921e3da46d48cc90c6c/reducing-gpu-utilization-in-your-realitykit-app-1%402x.png)
+![A depiction of progressively lower resolution textures created from a single high resolution texture. The first texture shows a 16 by 16 grid of pixels overlaid on a pattern to create mipmap 0. The second texture shows an 8 by 8 grid of pixels covering the same texture at half the resolution to create mipmap 1. The third texture shows a 4 by 4 grid covering the same texture at a quarter of the original resolution to create mipmap 2.](/images/com.apple.RealityKit/reducing-gpu-utilization-in-your-realitykit-app-1@2x.png)
 
 You can take additional steps to minimize memory consumption and reduce GPU utilization:
 

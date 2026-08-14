@@ -31,7 +31,7 @@ An NSURL object initialized with `path`.
 ## Parameters
 
 - `path`: The path that the NSURL object will represent. `path` should be a valid system path, and must not be an empty path. If `path` begins with a tilde, it must first be expanded with [`expandingTildeInPath`](nsstring/expandingtildeinpath.md). If `path` is a relative path, it is treated as being relative to the current working directory.
-- `isDir`: A Boolean value that specifies whether `path` is treated as a directory path when resolving against relative path components. Pass [`true`](https://developer.apple.com/documentation/Swift/true) if the `path` indicates a directory, [`false`](https://developer.apple.com/documentation/Swift/false) otherwise.
+- `isDir`: A Boolean value that specifies whether `path` is treated as a directory path when resolving against relative path components. Pass [`true`](https://developer.apple.com/documentation/swift/true) if the `path` indicates a directory, [`false`](https://developer.apple.com/documentation/swift/false) otherwise.
 
 ## See Also
 

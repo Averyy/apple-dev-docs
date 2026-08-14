@@ -20,7 +20,7 @@ Any items following `item` in the back-forward list are removed. This method als
 
 ## Parameters
 
-- `item`: A web history item that represents a visited webpage. If `item` is `nil`, an [`invalidArgumentException`](https://developer.apple.com/documentation/Foundation/NSExceptionName/invalidArgumentException) exception is raised.
+- `item`: A web history item that represents a visited webpage. If `item` is `nil`, an [`invalidArgumentException`](https://developer.apple.com/documentation/foundation/nsexceptionname/invalidargumentexception) exception is raised.
 
 
 ---

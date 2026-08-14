@@ -18,7 +18,7 @@ case bevel
 
 Here is an example of the appearance of this style:
 
-![Diagram that shows the bevel line join style.](https://docs-assets.developer.apple.com/published/bc0b448e0197d150d0153756da15c6a4/media-3670929%402x.png)
+![Diagram that shows the bevel line join style.](/images/com.apple.appkit/media-3670929@2x.png)
 
 ## See Also
 

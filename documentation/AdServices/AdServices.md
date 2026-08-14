@@ -22,7 +22,7 @@ The Apple Ads Attribution API is a solution that combines the `AdServices` frame
 
 The following diagram illustrates using the AdServices framework in combination with a RESTful endpoint to retrieve attribution data:
 
-![A diagram showing the sequence of interaction between the AdServices framework and RESTful API.](https://docs-assets.developer.apple.com/published/f0cd7bd0fb49333e7481ce470651a1cf/ad_services-1%402x.png)
+![A diagram showing the sequence of interaction between the AdServices framework and RESTful API.](/images/com.apple.AdServices/ad_services-1@2x.png)
 
 - In step 1, request a token from the `AdServices` framework.
 - In step 2, the `AdServices` framework generates a token.

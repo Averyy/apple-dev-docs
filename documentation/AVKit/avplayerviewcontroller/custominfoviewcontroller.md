@@ -16,7 +16,7 @@ var customInfoViewController: UIViewController? { get set }
 
 #### Discussion
 
-Use [`preferredContentSize`](https://developer.apple.com/documentation/UIKit/UIViewController/preferredContentSize) to provide the desired view size for the view.
+Use [`preferredContentSize`](https://developer.apple.com/documentation/uikit/uiviewcontroller/preferredcontentsize) to provide the desired view size for the view.
 
 ## See Also
 

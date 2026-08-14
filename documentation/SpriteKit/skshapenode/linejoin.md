@@ -22,7 +22,7 @@ var lineJoin: CGLineJoin { get set }
 
 #### Discussion
 
-The default value is [`CGLineJoin.bevel`](https://developer.apple.com/documentation/CoreGraphics/CGLineJoin/bevel). See [`CGLineJoin`](https://developer.apple.com/documentation/CoreGraphics/CGLineJoin).
+The default value is [`CGLineJoin.bevel`](https://developer.apple.com/documentation/coregraphics/cglinejoin/bevel). See [`CGLineJoin`](https://developer.apple.com/documentation/coregraphics/cglinejoin).
 
 ## See Also
 

@@ -16,8 +16,8 @@ convenience init(contents: NSAttributedString, markerAttributes: [NSAttributedSt
 
 ## Parameters
 
-- `contents`: An [`NSAttributedString`](https://developer.apple.com/documentation/Foundation/NSAttributedString) that contains the contents of the text list element.
-- `markerAttributes`: A dictionary of [`NSAttributedString.Key`](https://developer.apple.com/documentation/Foundation/NSAttributedString/Key) keys and IDs that describe the marker attributes.
+- `contents`: An [`NSAttributedString`](https://developer.apple.com/documentation/foundation/nsattributedstring) that contains the contents of the text list element.
+- `markerAttributes`: A dictionary of [`NSAttributedString.Key`](https://developer.apple.com/documentation/foundation/nsattributedstring/key) keys and IDs that describe the marker attributes.
 - `textList`: The [`NSTextList`](nstextlist.md) to add elements to.
 - `children`: An array of [`NSTextListElement`](nstextlistelement.md) elements.
 

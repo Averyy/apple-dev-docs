@@ -42,14 +42,14 @@ Use this provider to indicate to ARKit the types of plane anchors for your app t
 ## Relationships
 
 ### Conforms To
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
 - [DataProvider](dataprovider.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 
-- [Placing content on detected planes](../visionOS/placing-content-on-detected-planes.md)
+- [Placing content on detected planes](../visionos/placing-content-on-detected-planes.md)
   Detect horizontal surfaces like tables and floors, as well as vertical planes like walls and doors.
 - [struct PlaneAnchor](planeanchor.md)
   An anchor that represents horizontal and vertical planes.

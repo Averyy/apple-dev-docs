@@ -41,8 +41,8 @@ If a workspace is provided, this value is ignored, and the number of intervals i
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../Swift/BitwiseCopyable.md)
-- [Sendable](../Swift/Sendable.md)
+- [BitwiseCopyable](../swift/bitwisecopyable.md)
+- [Sendable](../swift/sendable.md)
 
 ## See Also
 

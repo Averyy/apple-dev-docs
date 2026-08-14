@@ -17,7 +17,7 @@ var item: Any { get }
 
 #### Discussion
 
-Use this property to provide the data you want to pass to the sharing service. The item must conform to the [`NSPasteboardWriting`](nspasteboardwriting.md) protocol, or be an [`NSItemProvider`](https://developer.apple.com/documentation/Foundation/NSItemProvider) or [`NSDocument`](nsdocument.md) object.
+Use this property to provide the data you want to pass to the sharing service. The item must conform to the [`NSPasteboardWriting`](nspasteboardwriting.md) protocol, or be an [`NSItemProvider`](https://developer.apple.com/documentation/foundation/nsitemprovider) or [`NSDocument`](nsdocument.md) object.
 
 
 ---

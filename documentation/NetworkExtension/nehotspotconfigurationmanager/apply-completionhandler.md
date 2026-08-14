@@ -30,8 +30,8 @@ The system calls your completion handler when it has applied the Wi-Fi level con
 
 Furthermore, joining a Wi-Fi network doesn’t guarantee that the network is fully operational. The system might still be in the process of configuring TCP/IP on that network. If you plan to connect to a service on that network, use an API that waits for connectivity. For example:
 
-- To start a TCP connection to a Bonjour service, use [`NWConnection`](https://developer.apple.com/documentation/Network/NWConnection).
-- To fetch a URL, use [`URLSession`](https://developer.apple.com/documentation/Foundation/URLSession) with the [`waitsForConnectivity`](https://developer.apple.com/documentation/Foundation/URLSessionConfiguration/waitsForConnectivity) option.
+- To start a TCP connection to a Bonjour service, use [`NWConnection`](https://developer.apple.com/documentation/network/nwconnection).
+- To fetch a URL, use [`URLSession`](https://developer.apple.com/documentation/foundation/urlsession) with the [`waitsForConnectivity`](https://developer.apple.com/documentation/foundation/urlsessionconfiguration/waitsforconnectivity) option.
 
 ## Parameters
 

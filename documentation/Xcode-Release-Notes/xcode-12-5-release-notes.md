@@ -23,7 +23,7 @@ Xcode 12.5 includes SDKs for iOS 14.5, iPadOS 14.5, tvOS 14.5, watchOS 7.4, and 
 
 - Fixed an issue that could cause code completion, live issues, and other code-analysis features to produce incorrect results after you moved any of the source files of an open Xcode project. (57054858)
 - Large workspaces now open faster. (70276306)
-- Fixed an issue that could cause iOS 12.5, tvOS 14.5, watchOS 7.4, and earlier to set the minimum deployment target based on the app’s [`LSMinimumSystemVersion`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/LSMinimumSystemVersion) instead of its [`MinimumOSVersion`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/MinimumOSVersion). (76221112)
+- Fixed an issue that could cause iOS 12.5, tvOS 14.5, watchOS 7.4, and earlier to set the minimum deployment target based on the app’s [`LSMinimumSystemVersion`](https://developer.apple.com/documentation/bundleresources/information-property-list/lsminimumsystemversion) instead of its [`MinimumOSVersion`](https://developer.apple.com/documentation/bundleresources/information-property-list/minimumosversion). (76221112)
 
 ###### Deprecations
 
@@ -114,11 +114,11 @@ test {
 
 ###### New Features
 
-- You can now configure a Module for custom classes in the inspector for [`NSObjectController`](https://developer.apple.com/documentation/AppKit/NSObjectController) and similar objects. (35971498)
+- You can now configure a Module for custom classes in the inspector for [`NSObjectController`](https://developer.apple.com/documentation/appkit/nsobjectcontroller) and similar objects. (35971498)
 
 ###### Resolved Issues
 
-- [`NSButton`](https://developer.apple.com/documentation/AppKit/NSButton)’s  “Image Only” Position setting now properly displays an image without a title at runtime. (16200971)
+- [`NSButton`](https://developer.apple.com/documentation/appkit/nsbutton)’s  “Image Only” Position setting now properly displays an image without a title at runtime. (16200971)
 - Fixed an issue where the assistant editor wouldn’t display source code for a selected object’s custom Swift class if the class was annotated with `@objc`. (19623315)
 - Fixed an issue where connect-to-source wouldn’t properly escape Swift keywords in Outlet and Action names. (22527929)
 - Fixed an issue where Editor > Debug Selected Views failed to attach to `@IBDesignable` views for debugging. (45217745) (FB5645911)
@@ -164,7 +164,7 @@ test {
 
 ###### Resolved Issues
 
-- The [`preferredColorScheme(_:)`](https://developer.apple.com/documentation/SwiftUI/View/preferredColorScheme(_:)) modifier now applies the theme to the nearest enclosing presentation, and its contained views. (62745457)
+- The [`preferredColorScheme(_:)`](https://developer.apple.com/documentation/swiftui/view/preferredcolorscheme(_:)) modifier now applies the theme to the nearest enclosing presentation, and its contained views. (62745457)
 
 ##### Signing and Distribution
 
@@ -175,11 +175,11 @@ test {
 
 ###### Known Issues
 
-- Xcode doesn’t build projects with a signing certificate on a smart card, or that is accessed via a [`CryptoTokenKit`](https://developer.apple.com/documentation/CryptoTokenKit) extension. (58266781) (FB7516556) **Workaround**: Instead of signing in Xcode or `xcodebuild`, run `codesign` in a post-build step.
+- Xcode doesn’t build projects with a signing certificate on a smart card, or that is accessed via a [`CryptoTokenKit`](https://developer.apple.com/documentation/cryptotokenkit) extension. (58266781) (FB7516556) **Workaround**: Instead of signing in Xcode or `xcodebuild`, run `codesign` in a post-build step.
 - OS X 10.11 or earlier may reject code signatures added to universal binaries by Xcode 12.5 running in macOS 11.2 or earlier. (70724583) (FB8830007) **Workaround**: Specify `--digest-algorithm=sha1,sha256` to the `codesign` utility at signing time. In Xcode, specify this using the `OTHER_CODE_SIGN_FLAGS` build setting.
 - If you embed a binary that contains an old code signature in your app, your app may fail to install and launch on devices running iOS 14.5 with the error message “The code signature version is no longer supported.” (77494287) To resolve this issue, first ensure that embedding the binary is necessary for your app to operate. If the binary is a static library, it’s not necessary to embed it. Stop embedding the binary in your app by following these steps: 1. Select your project in the Project Navigator.
 2. Select your app’s target from the Targets list.
-3. In the General tab, under the Frameworks, Libraries, and Embedded Content section; click the Embed pop-up menu next to your static library, and then choose Do Not Embed. If operating your app requires you to embed the binary, you can update its signature by following the instructions documented at [`Using the latest code signature format`](https://developer.apple.com/documentation/Xcode/using-the-latest-code-signature-format).
+3. In the General tab, under the Frameworks, Libraries, and Embedded Content section; click the Embed pop-up menu next to your static library, and then choose Do Not Embed. If operating your app requires you to embed the binary, you can update its signature by following the instructions documented at [`Using the latest code signature format`](https://developer.apple.com/documentation/xcode/using-the-latest-code-signature-format).
 
 ##### Simulator
 
@@ -210,7 +210,7 @@ git symbolic-ref refs/remotes/origin/HEAD refs/remotes/origin/<your_default_bran
 ###### New Features
 
 - StoreKit Testing in Xcode now supports testing of non-renewing subscriptions. (59478394)
-- The [`StoreKit Test`](https://developer.apple.com/documentation/StoreKitTest) framework is now available on watchOS. (68152552)
+- The [`StoreKit Test`](https://developer.apple.com/documentation/storekittest) framework is now available on watchOS. (68152552)
 
 ##### Swift
 
@@ -239,7 +239,7 @@ struct Bar {
 let _: Foo? = .bar.anotherFoo.getFoo().optionalFoo?.optionalFoo![]
 ```
 - Swift includes more checks when bridging data from Objective-C. In particular, the runtime library aborts your program with a suitable error message if it detects a non-nullable pointer that contains a null value. (58650899)
-- You can now use [`Float16`](https://developer.apple.com/documentation/Swift/Float16) in code running on Apple silicon. (61937297)
+- You can now use [`Float16`](https://developer.apple.com/documentation/swift/float16) in code running on Apple silicon. (61937297)
 - Property wrappers are now supported on local variables. (73377111)
 - Functions, subscripts, and initializers may now have more than one variadic parameter. When using variadic parameters, also label the parameter immediately following a variadic parameter. ([`SE-0284`](https://developer.apple.comhttps://github.com/apple/swift-evolution/blob/main/proposals/0284-multiple-variadic-parameters.md), 73676506) This makes declarations like the following valid: ```swift
 func foo(_ a: Int..., b: Double...) { }
@@ -333,7 +333,7 @@ func outer(x: Int, y: String) {
 - Input strings representing values closer to 0 than to the maximum negative non-zero subnormal value now return a value of `-0`.
 - The runtime and compiler support for Swift’s `is`, `as?`, and `as!` operators has been overhauled, providing more consistent and predictable behavior. (58991956)
 - If your app (including loaded OS binaries) contains multiple redundant protocol conformances, Swift now uses the first one it finds in the first binary loaded (including in OS binaries). (72049977)
-- Fixed a crash that occurred when setting a value using a [`ReferenceWritableKeyPath`](https://developer.apple.com/documentation/Swift/ReferenceWritableKeyPath) that was upcast to a [`WritableKeyPath`](https://developer.apple.com/documentation/Swift/WritableKeyPath). (74191390) (FB8999603)
+- Fixed a crash that occurred when setting a value using a [`ReferenceWritableKeyPath`](https://developer.apple.com/documentation/swift/referencewritablekeypath) that was upcast to a [`WritableKeyPath`](https://developer.apple.com/documentation/swift/writablekeypath). (74191390) (FB8999603)
 
 ###### Known Issues
 
@@ -372,7 +372,7 @@ enum AppAction : FileHandlerAction {
 
 ###### New Features
 
-- XCTest now supports marking test failures as “expected.” Expected test failures don’t impact the overall pass/fail result of the suite containing the test. Xcode displays expected failures differently in the Test Navigator and Test Report, and highlights the line of code where the expected failure occurred along with an optional user description. Expected test failures provide a low-overhead tool for preserving the overall “green” state of a project’s test suite when there are failures which can’t be immediately resolved, ensuring that any new failures are clearly visible. In contrast to skipping a test with [`XCTSkip`](https://developer.apple.com/documentation/XCTest/XCTSkip-swift.struct), a test with an expected failure still runs, reporting any unexpected changes. (13408632) To mark a failure as expected, call the new [`XCTExpectFailure`](https://developer.apple.com/documentation/XCTest/XCTExpectFailure) API in a test before the code which produces the test failure, for example: ```swift
+- XCTest now supports marking test failures as “expected.” Expected test failures don’t impact the overall pass/fail result of the suite containing the test. Xcode displays expected failures differently in the Test Navigator and Test Report, and highlights the line of code where the expected failure occurred along with an optional user description. Expected test failures provide a low-overhead tool for preserving the overall “green” state of a project’s test suite when there are failures which can’t be immediately resolved, ensuring that any new failures are clearly visible. In contrast to skipping a test with [`XCTSkip`](https://developer.apple.com/documentation/xctest/xctskip-swift.struct), a test with an expected failure still runs, reporting any unexpected changes. (13408632) To mark a failure as expected, call the new [`XCTExpectFailure`](https://developer.apple.com/documentation/xctest/xctexpectfailure) API in a test before the code which produces the test failure, for example: ```swift
 XCTExpectFailure("…")
 // Perform test which currently fails
 ``` Additionally, the scope of the expected failure can be limited by enclosing the failing code in a closure: ```swift
@@ -392,16 +392,16 @@ XCTExpectFailure("…", options: options)
 - Xcode now allows you to clean test results without having to re-open your workspace by selecting Clean Test Results from Xcode’s Product menu. (16527161)
 - Xcode now supports XCTest unit and UI tests for watchOS apps. When creating a new watchOS app, check the Include tests checkbox to add a unit and UI test target to the newly created project. For an existing project, add a unit or UI test target via File > New > Target, and then add the test target to the Test action of the WatchKit App scheme. To run the tests, select a watch simulator or device from the run destinations menu in the toolbar, and then choose Product > Test. Note that testing is supported on watchOS 7.4 or later. (21395998)
 - XCTest now automatically includes specialized subclasses of Swift generic test classes when running tests on macOS 11.3, iOS 14.5, tvOS 14.5, watchOS 7.4, or later OS versions. This allows you to use generics to improve reusability of test classes. (23493200)
-- XCTest now includes [`XCTAssertIdentical(_:_:_:file:line:)`](https://developer.apple.com/documentation/XCTest/XCTAssertIdentical(_:_:_:file:line:)) and [`XCTAssertNotIdentical(_:_:_:file:line:)`](https://developer.apple.com/documentation/XCTest/XCTAssertNotIdentical(_:_:_:file:line:)) APIs to assert whether two object instances are identical (the same instance) and are stricter than [`XCTAssertEqual`](https://developer.apple.com/documentation/XCTest/XCTAssertEqual) by using the `===` operator instead of `==` in Swift. (46137782)
+- XCTest now includes [`XCTAssertIdentical(_:_:_:file:line:)`](https://developer.apple.com/documentation/xctest/xctassertidentical(_:_:_:file:line:)) and [`XCTAssertNotIdentical(_:_:_:file:line:)`](https://developer.apple.com/documentation/xctest/xctassertnotidentical(_:_:_:file:line:)) APIs to assert whether two object instances are identical (the same instance) and are stricter than [`XCTAssertEqual`](https://developer.apple.com/documentation/xctest/xctassertequal) by using the `===` operator instead of `==` in Swift. (46137782)
 - The code coverage report now shows the number of executable lines per file. (68808019)
 
 ###### Resolved Issues
 
-- The `message` String parameter of `XCTSkip.init(_:file:line:)` no longer includes `@autoclosure` incorrectly. Unlike its conditional variants [`XCTSkipIf`](https://developer.apple.com/documentation/XCTest/XCTSkipIf) and [`XCTSkipUnless`](https://developer.apple.com/documentation/XCTest/XCTSkipUnless), XCTSkip’s initializer unconditionally evaluates its message string. (63827685)
+- The `message` String parameter of `XCTSkip.init(_:file:line:)` no longer includes `@autoclosure` incorrectly. Unlike its conditional variants [`XCTSkipIf`](https://developer.apple.com/documentation/xctest/xctskipif) and [`XCTSkipUnless`](https://developer.apple.com/documentation/xctest/xctskipunless), XCTSkip’s initializer unconditionally evaluates its message string. (63827685)
 - If a test times out (due to having Test Timeouts enabled in the active Test Plan), any content that the test emitted to standard out or standard error prior to the timeout is now included in the test log. (64591225)
 - Xcode and `xcodebuild` now prevent the computer from sleeping while executing tests. (67493488)
 - If code under test crashes, and Xcode is able to collect a crash report, the error message that Xcode generates in the Test Report and Test Log includes the crashing symbol, as well as the Application Specific Information field from the crash report. (69755517)
-- Fixed an issue where methods on [`XCTOSSignpostMetric`](https://developer.apple.com/documentation/XCTest/XCTOSSignpostMetric) threw an exception on watchOS. (72552791)
+- Fixed an issue where methods on [`XCTOSSignpostMetric`](https://developer.apple.com/documentation/xctest/xctossignpostmetric) threw an exception on watchOS. (72552791)
 - Xcode no longer incorrectly reports a name that starts with “<unknown>” for tests that the test code dynamically generates at runtime. (73767460)
 
 ###### Known Issues

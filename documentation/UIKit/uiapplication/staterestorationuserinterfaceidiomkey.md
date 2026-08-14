@@ -20,7 +20,7 @@ class let stateRestorationUserInterfaceIdiomKey: String
 
 #### Discussion
 
-The value of this key is an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) object containing one of the values for the [`UIUserInterfaceIdiom`](uiuserinterfaceidiom.md) enum. This value reflects whether the interface that was saved was targeting the iPad or iPhone idiom.
+The value of this key is an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) object containing one of the values for the [`UIUserInterfaceIdiom`](uiuserinterfaceidiom.md) enum. This value reflects whether the interface that was saved was targeting the iPad or iPhone idiom.
 
 ## See Also
 

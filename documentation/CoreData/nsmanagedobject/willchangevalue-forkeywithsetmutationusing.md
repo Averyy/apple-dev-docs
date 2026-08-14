@@ -30,7 +30,7 @@ You must not override this method.
 
 - `inKey`: The name of a property that is a to-many relationship
 - `inMutationKind`: The type of change that will be made.
-- `inObjects`: The objects that were involved in the change (see [`NSKeyValueSetMutationKind`](https://developer.apple.com/documentation/Foundation/NSKeyValueSetMutationKind)).
+- `inObjects`: The objects that were involved in the change (see [`NSKeyValueSetMutationKind`](https://developer.apple.com/documentation/foundation/nskeyvaluesetmutationkind)).
 
 ## See Also
 

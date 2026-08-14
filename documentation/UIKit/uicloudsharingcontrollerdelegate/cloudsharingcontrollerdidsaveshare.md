@@ -19,7 +19,7 @@ optional func cloudSharingControllerDidSaveShare(_ csc: UICloudSharingController
 
 #### Discussion
 
-Implement this method to receive a notification from the [`UICloudSharingController`](uicloudsharingcontroller.md) instance after it saves changes to the [`CKShare`](https://developer.apple.com/documentation/CloudKit/CKShare) record.
+Implement this method to receive a notification from the [`UICloudSharingController`](uicloudsharingcontroller.md) instance after it saves changes to the [`CKShare`](https://developer.apple.com/documentation/cloudkit/ckshare) record.
 
 ## See Also
 

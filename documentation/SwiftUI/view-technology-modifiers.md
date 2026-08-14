@@ -6,16 +6,16 @@ Add modifiers to customize SwiftUI views that other Apple frameworks provide.
 
 #### Overview
 
-Configure and customize SwiftUI views that you integrate from other Apple frameworks, such as web views from [`WebKit`](https://developer.apple.com/documentation/WebKit) or maps from [`MapKit`](https://developer.apple.com/documentation/MapKit), with these modifiers.
+Configure and customize SwiftUI views that you integrate from other Apple frameworks, such as web views from [`WebKit`](https://developer.apple.com/documentation/webkit) or maps from [`MapKit`](https://developer.apple.com/documentation/mapkit), with these modifiers.
 
 For more information, see [`Technology-specific views`](technology-specific-views.md).
 
 ## Topics
 
 ### Displaying web content
-- [struct WebView](../WebKit/WebView-swift.struct.md)
+- [struct WebView](../webkit/webview-swift.struct.md)
   A view that displays some web content.
-- [class WebPage](../WebKit/WebPage.md)
+- [class WebPage](../webkit/webpage.md)
   An object that controls and manages the behavior of interactive web content.
 - [func onWebViewImmersiveEnvironmentRequest(shouldAllow: (WebPage.FrameInfo) async -> Bool, present: (WebPage.ImmersiveEnvironment) async throws -> Void, dismiss: (WebPage.ImmersiveEnvironment) async -> Void) -> some View](view/onwebviewimmersiveenvironmentrequest(shouldallow:present:dismiss:).md)
   Manages the lifecycle of immersive environments requested by websites.
@@ -40,11 +40,11 @@ For more information, see [`Technology-specific views`](technology-specific-view
 - [func webViewTextSelection<S>(S) -> some View](view/webviewtextselection(_:).md)
   Determines whether to allow people to select or otherwise interact with text.
 ### Accessing Apple Pay and Wallet
-- [struct PayWithApplePayButton](../PassKit/PayWithApplePayButton.md)
+- [struct PayWithApplePayButton](../passkit/paywithapplepaybutton.md)
   A type that provides a button to pay with Apple pay.
-- [struct AddPassToWalletButton](../PassKit/AddPassToWalletButton.md)
+- [struct AddPassToWalletButton](../passkit/addpasstowalletbutton.md)
   A type that provides a button that enables people to add a new or existing pass to Apple Wallet.
-- [struct VerifyIdentityWithWalletButton](../PassKit/VerifyIdentityWithWalletButton.md)
+- [struct VerifyIdentityWithWalletButton](../passkit/verifyidentitywithwalletbutton.md)
   A type that displays a button to present the identity verification flow.
 - [func addOrderToWalletButtonStyle(AddOrderToWalletButtonStyle) -> some View](view/addordertowalletbuttonstyle(_:).md)
   Sets the button’s style.
@@ -68,13 +68,13 @@ For more information, see [`Technology-specific views`](technology-specific-view
   Sets the style to be used by the button. (see `PayWithApplePayButtonStyle`).
 - [func verifyIdentityWithWalletButtonStyle(VerifyIdentityWithWalletButtonStyle) -> some View](view/verifyidentitywithwalletbuttonstyle(_:).md)
   Sets the style to be used by the button. (see `PKIdentityButtonStyle`).
-- [struct AsyncShareablePassConfiguration](../PassKit/AsyncShareablePassConfiguration.md)
+- [struct AsyncShareablePassConfiguration](../passkit/asyncshareablepassconfiguration.md)
 - [func transactionTask(CredentialTransaction.Configuration?, action: (CredentialTransaction) async -> Void) -> some View](view/transactiontask(_:action:).md)
   Provides a task to perform before this view appears
 ### Authorizing and authenticating
-- [struct LocalAuthenticationView](../LocalAuthentication/LocalAuthenticationView.md)
+- [struct LocalAuthenticationView](../localauthentication/localauthenticationview.md)
   A SwiftUI view that displays an authentication interface.
-- [struct SignInWithAppleButton](../AuthenticationServices/SignInWithAppleButton.md)
+- [struct SignInWithAppleButton](../authenticationservices/signinwithapplebutton.md)
   A SwiftUI view that creates the Sign in with Apple button for display.
 - [func signInWithAppleButtonStyle(SignInWithAppleButton.Style) -> some View](view/signinwithapplebuttonstyle(_:).md)
   Sets the style used for displaying the control (see `SignInWithAppleButton.Style`).
@@ -83,7 +83,7 @@ For more information, see [`Technology-specific views`](technology-specific-view
 - [var webAuthenticationSession: WebAuthenticationSession](environmentvalues/webauthenticationsession.md)
   A value provided in the SwiftUI environment that views can use to authenticate a user through a web service.
 ### Configuring Family Sharing
-- [struct FamilyActivityPicker](../FamilyControls/FamilyActivityPicker.md)
+- [struct FamilyActivityPicker](../familycontrols/familyactivitypicker.md)
   A view in which users specify applications, web domains, and categories without revealing their choices to the app.
 - [func familyActivityPicker(isPresented: Binding<Bool>, selection: Binding<FamilyActivitySelection>) -> some View](view/familyactivitypicker(ispresented:selection:).md)
   Presents an activity picker view as a sheet.
@@ -92,7 +92,7 @@ For more information, see [`Technology-specific views`](technology-specific-view
 - [func familyActivityPicker(title: String?, headerText: String?, footerText: String?, isPresented: Binding<Bool>, selection: Binding<FamilyActivitySelection>) -> some View](view/familyactivitypicker(title:headertext:footertext:ispresented:selection:).md)
   Present an activity picker sheet for selecting apps and websites to manage.
 ### Reporting on device activity
-- [struct DeviceActivityReport](../DeviceActivity/DeviceActivityReport.md)
+- [struct DeviceActivityReport](../deviceactivity/deviceactivityreport.md)
   A view that reports the user’s application, category, and web domain activity in a privacy-preserving way.
 ### Working with managed devices
 - [func managedContentStyle(ManagedContentStyle) -> some View](view/managedcontentstyle(_:).md)
@@ -100,16 +100,16 @@ For more information, see [`Technology-specific views`](technology-specific-view
 - [func automatedDeviceEnrollmentAddition(isPresented: Binding<Bool>) -> some View](view/automateddeviceenrollmentaddition(ispresented:).md)
   Presents a modal view that enables users to add devices to their organization.
 ### Creating graphics
-- [struct Chart](../Charts/Chart.md)
+- [struct Chart](../charts/chart.md)
   A SwiftUI view that displays a chart.
-- [struct SceneView](../SceneKit/SceneView.md)
+- [struct SceneView](../scenekit/sceneview.md)
   A SwiftUI view for displaying 3D SceneKit content.
-- [struct SpriteView](../SpriteKit/SpriteView.md)
+- [struct SpriteView](../spritekit/spriteview.md)
   A SwiftUI view that renders a SpriteKit scene.
 ### Getting location information
-- [struct LocationButton](../CoreLocationUI/LocationButton.md)
+- [struct LocationButton](../corelocationui/locationbutton.md)
   A SwiftUI button that grants one-time location authorization.
-- [struct Map](../MapKit/Map.md)
+- [struct Map](../mapkit/map.md)
   A view that displays an embedded map interface.
 - [func mapStyle(MapStyle) -> some View](view/mapstyle(_:).md)
   Specifies the map style to be used.
@@ -144,11 +144,11 @@ For more information, see [`Technology-specific views`](technology-specific-view
 - [func mapItemDetailSheet(item: Binding<MKMapItem?>, displaysMap: Bool) -> some View](view/mapitemdetailsheet(item:displaysmap:).md)
   Presents a map item detail sheet.
 ### Displaying media
-- [struct CameraView](../HomeKit/CameraView.md)
+- [struct CameraView](../homekit/cameraview.md)
   A SwiftUI view into which a video stream or an image snapshot is rendered.
-- [struct NowPlayingView](../WatchKit/NowPlayingView.md)
+- [struct NowPlayingView](../watchkit/nowplayingview.md)
   A view that displays the system’s Now Playing interface so that the user can control audio.
-- [struct VideoPlayer](../AVKit/VideoPlayer.md)
+- [struct VideoPlayer](../avkit/videoplayer.md)
   A view that displays content from a player and a native user interface to control playback.
 - [func continuityDevicePicker(isPresented: Binding<Bool>, onDidConnect: ((AVContinuityDevice?) -> Void)?) -> some View](view/continuitydevicepicker(ispresented:ondidconnect:).md)
   A `continuityDevicePicker` should be used to discover and connect nearby continuity device through a button interface or other form of activation. On tvOS, this presents a fullscreen continuity device picker experience when selected. The modal view covers as much the screen of `self` as possible when a given condition is true.
@@ -160,7 +160,7 @@ For more information, see [`Technology-specific views`](technology-specific-view
 - [func groupActivityAssociation(GroupActivityAssociationKind?) -> some View](view/groupactivityassociation(_:).md)
   Specifies how a view should be associated with the current SharePlay group activity.
 ### Selecting photos
-- [struct PhotosPicker](../PhotosUI/PhotosPicker.md)
+- [struct PhotosPicker](../photosui/photospicker.md)
   A view that displays a Photos picker for choosing assets from the photo library.
 - [func photosPicker(isPresented: Binding<Bool>, selection: Binding<PhotosPickerItem?>, matching: PHPickerFilter?, preferredItemEncoding: PhotosPickerItem.EncodingDisambiguationPolicy) -> some View](view/photospicker(ispresented:selection:matching:preferreditemencoding:).md)
   Presents a Photos picker that selects a `PhotosPickerItem`.
@@ -213,7 +213,7 @@ For more information, see [`Technology-specific views`](technology-specific-view
 - [func quickLookPreview<Items>(Binding<Items.Element?>, in: Items) -> some View](view/quicklookpreview(_:in:).md)
   Presents a Quick Look preview of the URLs you provide.
 ### Interacting with networked devices
-- [struct DevicePicker](../DeviceDiscoveryUI/DevicePicker.md)
+- [struct DevicePicker](../devicediscoveryui/devicepicker.md)
   A SwiftUI view that displays other devices on the network, and creates an encrypted connection to a copy of your app running on that device.
 - [var devicePickerSupports: DevicePickerSupportedAction](environmentvalues/devicepickersupports.md)
   Checks for support to present a DevicePicker.

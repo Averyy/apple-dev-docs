@@ -55,22 +55,22 @@ You use object anchors to learn about the position and orientation of a real-wor
 ### Conforms To
 - [ARKitCoordinateSpaceProviding](arkitcoordinatespaceproviding.md)
 - [Anchor](anchor.md)
-- [Copyable](../Swift/Copyable.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Escapable](../Swift/Escapable.md)
-- [Identifiable](../Swift/Identifiable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Copyable](../swift/copyable.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Escapable](../swift/escapable.md)
+- [Identifiable](../swift/identifiable.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 - [TrackableAnchor](trackableanchor.md)
 
 ## See Also
 
 - [class ObjectTrackingProvider](objecttrackingprovider.md)
   A source of real-time position of reference objects in a person’s environment.
-- [Exploring object tracking with ARKit](../visionOS/exploring_object_tracking_with_arkit.md)
+- [Exploring object tracking with ARKit](../visionos/exploring_object_tracking_with_arkit.md)
   Find and track real-world objects in visionOS using reference objects you train with Create ML.
-- [Implementing object tracking in your app](../visionOS/implementing-object-tracking-in-your-app.md)
+- [Implementing object tracking in your app](../visionos/implementing-object-tracking-in-your-app.md)
   Create engaging interactions by training models to recognize and track real-world objects in people’s surroundings.
 
 

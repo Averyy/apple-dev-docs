@@ -30,7 +30,7 @@ The completion handler is called after the [`viewDidDisappear(_:)`](uiviewcontro
 
 ## Parameters
 
-- `flag`: Pass [`true`](https://developer.apple.com/documentation/Swift/true) to animate the transition.
+- `flag`: Pass [`true`](https://developer.apple.com/documentation/swift/true) to animate the transition.
 - `completion`: The block to execute after the view controller is dismissed. This block has no return value and takes no parameters. You may specify `nil` for this parameter.
 
 ## See Also

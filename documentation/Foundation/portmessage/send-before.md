@@ -17,7 +17,7 @@ func send(before date: Date) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/Swift/true) if the operation is successful, otherwise [`false`](https://developer.apple.com/documentation/Swift/false) (for example, if the operation times out).
+[`true`](https://developer.apple.com/documentation/swift/true) if the operation is successful, otherwise [`false`](https://developer.apple.com/documentation/swift/false) (for example, if the operation times out).
 
 #### Discussion
 

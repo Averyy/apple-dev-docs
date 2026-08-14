@@ -24,11 +24,11 @@ struct vImage_AffineTransform
 
 This structure represents the 3x2 matrix :
 
-![3 by 2 matrix](https://docs-assets.developer.apple.com/published/15175700351555931d77e36e3b8efd15/media-2557524.gif)
+![3 by 2 matrix](/images/com.apple.accelerate/media-2557524.gif)
 
-In 32-bit applications, this structure is just like the Core Graphics [`CGAffineTransform`](https://developer.apple.com/documentation/CoreFoundation/CGAffineTransform) data structure. In 64-bit applications, the Core Graphics data structure is equivalent to [`vImage_AffineTransform_Double`](vimage_affinetransform_double.md). Most of the time, you should use the [`vImage_CGAffineTransform`](vimage_cgaffinetransform.md) data structure, which changes size depending on architecture.
+In 32-bit applications, this structure is just like the Core Graphics [`CGAffineTransform`](https://developer.apple.com/documentation/corefoundation/cgaffinetransform) data structure. In 64-bit applications, the Core Graphics data structure is equivalent to [`vImage_AffineTransform_Double`](vimage_affinetransform_double.md). Most of the time, you should use the [`vImage_CGAffineTransform`](vimage_cgaffinetransform.md) data structure, which changes size depending on architecture.
 
-The [`CGAffineTransform`](https://developer.apple.com/documentation/CoreGraphics/cgaffinetransform) describes functions for creating and manipulating matrixes of this form.
+The [`CGAffineTransform`](https://developer.apple.com/documentation/coregraphics/cgaffinetransform) describes functions for creating and manipulating matrixes of this form.
 
 ## Topics
 
@@ -54,8 +54,8 @@ The [`CGAffineTransform`](https://developer.apple.com/documentation/CoreGraphics
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../Swift/BitwiseCopyable.md)
-- [Sendable](../Swift/Sendable.md)
+- [BitwiseCopyable](../swift/bitwisecopyable.md)
+- [Sendable](../swift/sendable.md)
 
 ## See Also
 

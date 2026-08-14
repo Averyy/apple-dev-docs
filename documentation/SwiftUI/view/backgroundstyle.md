@@ -32,7 +32,7 @@ Image(systemName: "swift")
     .backgroundStyle(.blue.gradient)
 ```
 
-![An image of the Swift logo inside a circle that’s blue with a slight](https://docs-assets.developer.apple.com/published/4b3325ab8b030bb73b60cd8cfe326695/View-backgroundStyle-1-iOS%402x.png)
+![An image of the Swift logo inside a circle that’s blue with a slight](/images/com.apple.SwiftUI/View-backgroundStyle-1-iOS@2x.png)
 
 To restore the default background style, set the [`backgroundStyle`](environmentvalues/backgroundstyle.md) environment value to `nil` using the [`environment(_:_:)`](view/environment(_:_:).md) modifer:
 

@@ -22,7 +22,7 @@ init(copying cvPixelBuffer: CVPixelBuffer, cvImageFormat: vImageCVImageFormat, c
 
 #### Discussion
 
-The following code shows how to incorporate a vImage pixel buffer into a [`CIImageProcessorKernel`](https://developer.apple.com/documentation/CoreImage/CIImageProcessorKernel) instance. The code calls [`init(copying:cvImageFormat:cgImageFormat:pixelFormat:)`](vimage/pixelbuffer/init(copying:cvimageformat:cgimageformat:pixelformat:).md) to initialize a pixel buffer from the processor kernel’s input.
+The following code shows how to incorporate a vImage pixel buffer into a [`CIImageProcessorKernel`](https://developer.apple.com/documentation/coreimage/ciimageprocessorkernel) instance. The code calls [`init(copying:cvImageFormat:cgImageFormat:pixelFormat:)`](vimage/pixelbuffer/init(copying:cvimageformat:cgimageformat:pixelformat:).md) to initialize a pixel buffer from the processor kernel’s input.
 
 ```swift
 class ContrastStretchImageProcessorKernel: CIImageProcessorKernel {

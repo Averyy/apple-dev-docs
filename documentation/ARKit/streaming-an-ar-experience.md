@@ -13,15 +13,15 @@ Control an AR experience remotely by transferring sensor and user input over the
 
 The sample app, AR Stream, shares the augmented camera feed with a peer device, and enables it to take control by interacting with the remote AR experience. For example, a user shares their screen depicting their physical environment with a computer technician who assists the user with troubleshooting a hardware issue. As the user views a broken device resting on a table from different angles, the remote technician interacts with the experience by augmenting the user’s camera feed with textual annotations that describe the necessary steps to repair the device.
 
-![An illustration of a user's device viewing an AR experience in front of a real-world computer tower on a table. The screen displays the tower through the device’s camera feed, which the app augments with explanatory text that the remote technician creates.](https://docs-assets.developer.apple.com/published/e0bb1908e2ec930a83a07e11d1f863f6/ar-streaming-hero.png)
+![An illustration of a user's device viewing an AR experience in front of a real-world computer tower on a table. The screen displays the tower through the device’s camera feed, which the app augments with explanatory text that the remote technician creates.](/images/com.apple.arkit/ar-streaming-hero.png)
 
-To enable the remote user to see the user’s physical environment, AR Stream shares device sensor information across the network. By compressing camera frames with [`Video Toolbox`](https://developer.apple.com/documentation/VideoToolbox), the app provides the peer with good visibility of the user’s view by displaying the remote experience at a high frame rate.
+To enable the remote user to see the user’s physical environment, AR Stream shares device sensor information across the network. By compressing camera frames with [`Video Toolbox`](https://developer.apple.com/documentation/videotoolbox), the app provides the peer with good visibility of the user’s view by displaying the remote experience at a high frame rate.
 
 AR Stream also sends mathematical details about the user’s real-world pose to the remote user to process the peer’s touch input. The sample app sends the session’s inverse view and inverse projection matrices to the remote device so it can calculate a location in the user’s environment where the remote user taps. To indicate when the remote user taps the screen, AR Stream places a helpful virtual indicator at the tap location.
 
 #### Display a Camera Feed and Monitor the Session
 
-AR Stream displays the device’s camera feed by configuring a window with a view controller that displays an [`ARView`](https://developer.apple.com/documentation/RealityKit/ARView) (see the sample project’s `Main.storyboard` file). By default,[`ARView`](https://developer.apple.com/documentation/RealityKit/ARView) runs a session with a world-tracking configuration [`ARWorldTrackingConfiguration`](arworldtrackingconfiguration.md). To receive notifications of the view’s session events, the project’s view controller (see `ViewController` in the sample project) assigns itself as the session delegate.
+AR Stream displays the device’s camera feed by configuring a window with a view controller that displays an [`ARView`](https://developer.apple.com/documentation/realitykit/arview) (see the sample project’s `Main.storyboard` file). By default,[`ARView`](https://developer.apple.com/documentation/realitykit/arview) runs a session with a world-tracking configuration [`ARWorldTrackingConfiguration`](arworldtrackingconfiguration.md). To receive notifications of the view’s session events, the project’s view controller (see `ViewController` in the sample project) assigns itself as the session delegate.
 
 ```swift
 arView.session.delegate = self
@@ -29,13 +29,13 @@ arView.session.delegate = self
 
 #### Capture Frames
 
-To show the user’s physical environment to the remote user, AR Stream uses ReplayKit to open a screen-recording session with [`RPScreenRecorder`](https://developer.apple.com/documentation/ReplayKit/RPScreenRecorder).
+To show the user’s physical environment to the remote user, AR Stream uses ReplayKit to open a screen-recording session with [`RPScreenRecorder`](https://developer.apple.com/documentation/replaykit/rpscreenrecorder).
 
 ```swift
 RPScreenRecorder.shared().startCapture {
 ```
 
-The screen recording captures the contents of the app’s main window, which includes any augmentations that RealityKit may add to the camera feed. In the [`startCapture(handler:completionHandler:)`](https://developer.apple.com/documentation/ReplayKit/RPScreenRecorder/startCapture(handler:completionHandler:)) closure, the sample project passes the captured screen (`sampleBuffer`) to the `compressAndSend` function for eventual transmission over the network. The sample project also passes in the session’s current frame to conform the screen captures to the camera-image size.
+The screen recording captures the contents of the app’s main window, which includes any augmentations that RealityKit may add to the camera feed. In the [`startCapture(handler:completionHandler:)`](https://developer.apple.com/documentation/replaykit/rpscreenrecorder/startcapture(handler:completionhandler:)) closure, the sample project passes the captured screen (`sampleBuffer`) to the `compressAndSend` function for eventual transmission over the network. The sample project also passes in the session’s current frame to conform the screen captures to the camera-image size.
 
 ```swift
 if type == .video {
@@ -43,11 +43,11 @@ if type == .video {
     videoProcessor.compressAndSend(sampleBuffer, arFrame: currentFrame) {
 ```
 
-> **Note**: Although [`ARView`](https://developer.apple.com/documentation/RealityKit/ARView) provides a  [`snapshot(saveToHDR:completion:)`](https://developer.apple.com/documentation/RealityKit/ARView/snapshot(saveToHDR:completion:)-66jzu) function to capture the contents of the view, ReplayKit’s screen recording is more conducive to real-time capture.
+> **Note**: Although [`ARView`](https://developer.apple.com/documentation/realitykit/arview) provides a  [`snapshot(saveToHDR:completion:)`](https://developer.apple.com/documentation/realitykit/arview/snapshot(savetohdr:completion:)-66jzu) function to capture the contents of the view, ReplayKit’s screen recording is more conducive to real-time capture.
 
 #### Compress and Send Frames to the Peer
 
-The sample project’s `VideoProcessor` class implements the `compressAndSend` function, which uses [`VTCompressionSession`](https://developer.apple.com/documentation/VideoToolbox/VTCompressionSession) to compress the captured video frames.
+The sample project’s `VideoProcessor` class implements the `compressAndSend` function, which uses [`VTCompressionSession`](https://developer.apple.com/documentation/videotoolbox/vtcompressionsession) to compress the captured video frames.
 
 ```swift
 VTCompressionSessionEncodeFrame(compressionSession,
@@ -58,14 +58,14 @@ VTCompressionSessionEncodeFrame(compressionSession,
     infoFlagsOut: nil) {
 ```
 
-To ensure timely compression for the real-time streaming use case of the app, the video processor enables the compression session’s [`kVTCompressionPropertyKey_RealTime`](https://developer.apple.com/documentation/VideoToolbox/kVTCompressionPropertyKey_RealTime) option.
+To ensure timely compression for the real-time streaming use case of the app, the video processor enables the compression session’s [`kVTCompressionPropertyKey_RealTime`](https://developer.apple.com/documentation/videotoolbox/kvtcompressionpropertykey_realtime) option.
 
 ```swift
 VTSessionSetProperty(compressionSession, key: kVTCompressionPropertyKey_RealTime,
     value: kCFBooleanTrue)
 ```
 
-After the [`VTCompressionSession`](https://developer.apple.com/documentation/VideoToolbox/VTCompressionSession) finishes encoding a frame, the app creates a `VideoFrameData` instance using the compressed frame and the inverse view and projection matrices from the corresponding [`ARFrame`](arframe.md).
+After the [`VTCompressionSession`](https://developer.apple.com/documentation/videotoolbox/vtcompressionsession) finishes encoding a frame, the app creates a `VideoFrameData` instance using the compressed frame and the inverse view and projection matrices from the corresponding [`ARFrame`](arframe.md).
 
 ```swift
 let videoFrameData = VideoFrameData(sampleBuffer: sampleBuffer, arFrame: arFrame)
@@ -84,7 +84,7 @@ do {
 }
 ```
 
-The screen-recording closure defines the send handler to contain code that uses [`Multipeer Connectivity`](https://developer.apple.com/documentation/MultipeerConnectivity) to transmit the video data over the local network.
+The screen-recording closure defines the send handler to contain code that uses [`Multipeer Connectivity`](https://developer.apple.com/documentation/multipeerconnectivity) to transmit the video data over the local network.
 
 ```swift
 multipeerSession.sendToAllPeers(data, reliably: true)
@@ -107,7 +107,7 @@ To house the transmitted video frame, AR Stream reconstructs a sample buffer.
 let sampleBuffer = videoFrameData.makeSampleBuffer()
 ```
 
-The system can display only uncompressed data, so the video processor decompresses the video frame using [`VTDecompressionSession`](https://developer.apple.com/documentation/VideoToolbox/VTDecompressionSession) within its `decompress` function.
+The system can display only uncompressed data, so the video processor decompresses the video frame using [`VTDecompressionSession`](https://developer.apple.com/documentation/videotoolbox/vtdecompressionsession) within its `decompress` function.
 
 ```swift
 VTDecompressionSessionDecodeFrame(decompressionSession,
@@ -133,9 +133,9 @@ overlayViewController?.renderer.enqueueFrame(
 
 #### Display the Remote Users Camera Feed
 
-AR Stream defines an [`MTKView`](https://developer.apple.com/documentation/MetalKit/MTKView) subclass, `OverlayViewController`, that displays the remote user’s camera feed on top of the [`ARView`](https://developer.apple.com/documentation/RealityKit/ARView) by placing a *picture-in-picture* (PiP) view at the bottom left of the screen.
+AR Stream defines an [`MTKView`](https://developer.apple.com/documentation/metalkit/mtkview) subclass, `OverlayViewController`, that displays the remote user’s camera feed on top of the [`ARView`](https://developer.apple.com/documentation/realitykit/arview) by placing a *picture-in-picture* (PiP) view at the bottom left of the screen.
 
-![A screenshot of the app at launch that displays the camera feed of the user’s AR experience at full size. At the bottom left, the app overlays a smaller view — or PiP view — that represents the camera feed of the remote user’s experience.](https://docs-assets.developer.apple.com/published/10a488f59f21fe469045f05871130c14/ar-streaming-pip-view.jpg)
+![A screenshot of the app at launch that displays the camera feed of the user’s AR experience at full size. At the bottom left, the app overlays a smaller view — or PiP view — that represents the camera feed of the remote user’s experience.](/images/com.apple.arkit/ar-streaming-pip-view.jpg)
 
 The sample project’s `AppDelegate` configures the PiP view in a secondary window. Because ReplayKit’s screen recording captures only the main window, the PiP view displays only the remote user’s camera feed.
 
@@ -219,11 +219,11 @@ if let result = raycastResults.first {
 
 To enable the remote user to interact with the user’s AR experience, the app places a virtual ball at the location in the environment where the remote user taps.
 
-![A screenshot of the app that displays the camera feed of the user’s AR experience at full size. A purple virtual ball rests on a real desk in the remote user’s PiP view to indicate where the user tapped the remote user’s PiP view.](https://docs-assets.developer.apple.com/published/8268b999db44dca704b0c092567df256/ar-streaming-virtual-content.jpg)
+![A screenshot of the app that displays the camera feed of the user’s AR experience at full size. A purple virtual ball rests on a real desk in the remote user’s PiP view to indicate where the user tapped the remote user’s PiP view.](/images/com.apple.arkit/ar-streaming-virtual-content.jpg)
 
 > ❗ **Important**: AR Stream displays a virtual ball for simplicity. An app may require different virtual content, such as an arrow that points to a precise spot, or virtual text that explains the importance of a location. For an example app that displays text at a real-world location, see [`Creating screen annotations for objects in an AR experience`](creating-screen-annotations-for-objects-in-an-ar-experience.md).
 
-The project creates this visual marker using a ball-shaped [`ModelEntity`](https://developer.apple.com/documentation/RealityKit/ModelEntity).
+The project creates this visual marker using a ball-shaped [`ModelEntity`](https://developer.apple.com/documentation/realitykit/modelentity).
 
 ```swift
 let marker: AnchorEntity = {

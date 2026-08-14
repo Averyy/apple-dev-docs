@@ -14,7 +14,7 @@ Interact with accessories that track subjects on camera as they move around.
 
 DockKit interfaces with DockKit-compatible motorized stands known as dock accessories to track the location of objects that appear in video frames. It determines how to best position the iPhone camera to frame and track objects, with improved person tracking using combined body and face tracking for human subjects. This feature, known as *system tracking*, automatically starts as soon as a person docks iPhone onto a compatible motorized stand and launches the Camera app. For example, system tracking is useful for content creators who want the camera to follow them while they move around their space, or instructors on a video call who are walking around a classroom.
 
-You can disable system tracking and implement your own tracking behavior by using [`DockAccessoryManager`](dockaccessorymanager.md) and [`DockAccessory`](dockaccessory.md). Implement your own tracking behavior to follow a location of a custom object such as a pet, or a pair of hands performing a task. DockKit accessories integrate with [`AVCaptureSession`](https://developer.apple.com/documentation/AVFoundation/AVCaptureSession) so apps with camera permissions work seamlessly together.
+You can disable system tracking and implement your own tracking behavior by using [`DockAccessoryManager`](dockaccessorymanager.md) and [`DockAccessory`](dockaccessory.md). Implement your own tracking behavior to follow a location of a custom object such as a pet, or a pair of hands performing a task. DockKit accessories integrate with [`AVCaptureSession`](https://developer.apple.com/documentation/avfoundation/avcapturesession) so apps with camera permissions work seamlessly together.
 
 ## Topics
 

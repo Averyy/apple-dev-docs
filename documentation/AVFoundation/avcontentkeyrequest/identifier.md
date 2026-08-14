@@ -22,7 +22,7 @@ var identifier: (any Sendable)? { get }
 
 #### Discussion
 
-This property is specific to the container and the protocol. To use the key with an HTTP Live Streaming [`AVURLAsset`](avurlasset.md), the identifier must be an [`NSURL`](https://developer.apple.com/documentation/Foundation/NSURL) that matches a key `URI` in the media playlist.
+This property is specific to the container and the protocol. To use the key with an HTTP Live Streaming [`AVURLAsset`](avurlasset.md), the identifier must be an [`NSURL`](https://developer.apple.com/documentation/foundation/nsurl) that matches a key `URI` in the media playlist.
 
 ## See Also
 

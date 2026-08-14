@@ -22,7 +22,7 @@ static let CKAccountChanged: NSNotification.Name
 
 #### Discussion
 
-Create an instance of [`CKContainer`](https://developer.apple.com/documentation/CloudKit/CKContainer) to receive this notification. The container posts the notification using an arbitrary queue. Use the [`accountStatus(completionHandler:)`](https://developer.apple.com/documentation/CloudKit/CKContainer/accountStatus(completionHandler:)) method to obtain the account’s status.
+Create an instance of [`CKContainer`](https://developer.apple.com/documentation/cloudkit/ckcontainer) to receive this notification. The container posts the notification using an arbitrary queue. Use the [`accountStatus(completionHandler:)`](https://developer.apple.com/documentation/cloudkit/ckcontainer/accountstatus(completionhandler:)) method to obtain the account’s status.
 
 
 ---

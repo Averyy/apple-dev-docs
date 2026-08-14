@@ -22,7 +22,7 @@ static let shadow: NSAttributedString.Key
 
 #### Discussion
 
-The value of this attribute is an [`NSShadow`](https://developer.apple.com/documentation/AppKit/NSShadow) object. The default value of this property is `nil`.
+The value of this attribute is an [`NSShadow`](https://developer.apple.com/documentation/appkit/nsshadow) object. The default value of this property is `nil`.
 
 ## See Also
 

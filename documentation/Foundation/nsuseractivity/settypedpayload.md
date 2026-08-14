@@ -24,13 +24,13 @@ func setTypedPayload<T>(_ payload: T) throws where T : Decodable, T : Encodable
 
 > ❗ **Important**:  This method applies only to SwiftUI apps.
 
-Use this method to set the user activity’s [`userInfo`](nsuseractivity/userinfo.md) dictionary in a type-safe manner. After you set the [`userInfo`](nsuseractivity/userinfo.md) dictionary using this approach, the keys in the [`userInfo`](nsuseractivity/userinfo.md) dictionary match the coding keys from the [`Codable`](https://developer.apple.com/documentation/Swift/Codable) type you provide as the `payload`.
+Use this method to set the user activity’s [`userInfo`](nsuseractivity/userinfo.md) dictionary in a type-safe manner. After you set the [`userInfo`](nsuseractivity/userinfo.md) dictionary using this approach, the keys in the [`userInfo`](nsuseractivity/userinfo.md) dictionary match the coding keys from the [`Codable`](https://developer.apple.com/documentation/swift/codable) type you provide as the `payload`.
 
 If the type can’t be encoded into the [`userInfo`](nsuseractivity/userinfo.md) dictionary, this method throws [`NSUserActivity.TypedPayloadError.encodingError`](nsuseractivity/typedpayloaderror/encodingerror.md).
 
 ## Parameters
 
-- `payload`: The instance to convert to [`userInfo`](nsuseractivity/userinfo.md). The type of the `payload` instance must conform to [`Codable`](https://developer.apple.com/documentation/Swift/Codable).
+- `payload`: The instance to convert to [`userInfo`](nsuseractivity/userinfo.md). The type of the `payload` instance must conform to [`Codable`](https://developer.apple.com/documentation/swift/codable).
 
 ## See Also
 

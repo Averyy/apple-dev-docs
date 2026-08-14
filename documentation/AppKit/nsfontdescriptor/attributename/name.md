@@ -16,7 +16,7 @@ static let name: NSFontDescriptor.AttributeName
 
 #### Discussion
 
-The value of this attribute is an [`NSString`](https://developer.apple.com/documentation/Foundation/NSString) object.
+The value of this attribute is an [`NSString`](https://developer.apple.com/documentation/foundation/nsstring) object.
 
 ## See Also
 

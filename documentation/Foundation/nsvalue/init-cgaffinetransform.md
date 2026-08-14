@@ -29,7 +29,7 @@ A new value object that contains the affine transform information.
 
 ## See Also
 
-- [CGAffineTransform](../CoreGraphics/cgaffinetransform.md)
+- [CGAffineTransform](../coregraphics/cgaffinetransform.md)
   An affine transformation matrix for use in drawing 2D graphics.
 - [init(CGPoint: CGPoint)](nsvalue/init(cgpoint:).md)
   Creates a new value object containing the specified CoreGraphics point structure.

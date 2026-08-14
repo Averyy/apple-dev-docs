@@ -51,7 +51,7 @@ To create a map view with a 3D perspective, `MapCamera` takes input from the cam
 ## Relationships
 
 ### Conforms To
-- [Equatable](../Swift/Equatable.md)
+- [Equatable](../swift/equatable.md)
 
 ## See Also
 

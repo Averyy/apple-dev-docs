@@ -79,8 +79,8 @@ Use this view to create marker instances in the closure you provide to the `cont
 
 ### Conforms To
 - [MapContent](mapcontent.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

@@ -50,13 +50,13 @@ The IOCommandPool class is used to manipulate a pool of commands which inherit f
 - [- getCommand](iocommandpool/1560741-getcommand.md)
 - [- getMetaClass](iocommandpool/1560745-getmetaclass.md)
 - [- init](iocommandpool/1560739-init.md)
-- [- init](../driverkit/iocommandpool/3758242-init.md)
-- [- initWithQueue](../driverkit/iocommandpool/3758243-initwithqueue.md)
+- [- init](../driverkit/iocommandpool/init.md)
+- [- initWithQueue](../driverkit/iocommandpool/initwithqueue.md)
 - [- initWithWorkLoop](iocommandpool/1560744-initwithworkloop.md)
 - [- returnCommand](iocommandpool/1560740-returncommand.md)
 ### Type Methods
 - [+ commandPool](iocommandpool/1560747-commandpool.md)
-- [+ withQueue](../driverkit/iocommandpool/3758244-withqueue.md)
+- [+ withQueue](../driverkit/iocommandpool/withqueue.md)
 - [+ withWorkLoop](iocommandpool/1560746-withworkloop.md)
 
 ## Relationships

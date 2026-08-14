@@ -20,7 +20,7 @@ A custom class that descends from [`NSCollectionViewLayoutInvalidationContext`](
 
 #### Discussion
 
-If you define a custom invalidation context class to store information related to your layout, override this method and use it to return your custom subclass. Methods of this class that create invalidation contexts automatically create instances of the class you provide, initializing those instances using its [`init()`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class/init()) method.
+If you define a custom invalidation context class to store information related to your layout, override this method and use it to return your custom subclass. Methods of this class that create invalidation contexts automatically create instances of the class you provide, initializing those instances using its [`init()`](https://developer.apple.com/documentation/objectivec/nsobject-swift.class/init()) method.
 
 ## See Also
 

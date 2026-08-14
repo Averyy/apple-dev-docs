@@ -23,11 +23,11 @@ The Custom Keyboard Extension template provides a starting point for you to buil
 5. Specify the name of your extension and configure the language and other options.
 6. Click Finish.
 
-![Screenshot of Xcode’s new target dialog with Custom Keyboard Extension highlighted.](https://docs-assets.developer.apple.com/published/5c33dbd2003e91541f0453a03e138c2f/media-3570733%402x.png)
+![Screenshot of Xcode’s new target dialog with Custom Keyboard Extension highlighted.](/images/com.apple.uikit/media-3570733@2x.png)
 
 Make sure the Display Name field in the General tab of your keyboard target accurately describes your keyboard. The Settings app uses this value in the list of third-party keyboards.
 
-![Screenshot of the Identity section from Xcode’s Project editor showing the Display Name field. ](https://docs-assets.developer.apple.com/published/705644ded1016199b2092257ab518f05/media-3570265%402x.png)
+![Screenshot of the Identity section from Xcode’s Project editor showing the Display Name field. ](/images/com.apple.uikit/media-3570265@2x.png)
 
 If you support multiple languages that require different keyboard layout or functionality, repeat the steps above to add additional custom keyboard targets for each language. Set the `PrimaryLanguage` value accordingly in each of the target’s `Info.plist` files.
 
@@ -35,15 +35,15 @@ If you support multiple languages that require different keyboard layout or func
 
 If applicable to your custom keyboard, edit the keyboard extension’s `Info.plist` to configure the following options:
 
-| **IsASCIICapable** | Set this to [`true`](https://developer.apple.com/documentation/Swift/true) if your keyboard is capable of generating standard ASCII characters. |
+| **IsASCIICapable** | Set this to [`true`](https://developer.apple.com/documentation/swift/true) if your keyboard is capable of generating standard ASCII characters. |
 | --- | --- |
-| **PrefersRightToLeft** | If your keyboard primarily supports right to left languages, or if the insertion cursor should default to the right when editing in a text field, set this to [`true`](https://developer.apple.com/documentation/Swift/true). |
+| **PrefersRightToLeft** | If your keyboard primarily supports right to left languages, or if the insertion cursor should default to the right when editing in a text field, set this to [`true`](https://developer.apple.com/documentation/swift/true). |
 | **PrimaryLanguage** | Set this to a string representing the primary language your keyboard supports. Use a two-character code like `nl` for Dutch, or language and country code such as `nl-BE` for Dutch in Belgium. The Settings app displays the primary language in the list of keyboards. |
-| **RequestsOpenAccess** | Set this to [`true`](https://developer.apple.com/documentation/Swift/true) if your keyboard needs access to network resources, to write to a shared group container, or other capabilities. For more information, see [`Configuring open access for a custom keyboard`](configuring-open-access-for-a-custom-keyboard.md). |
+| **RequestsOpenAccess** | Set this to [`true`](https://developer.apple.com/documentation/swift/true) if your keyboard needs access to network resources, to write to a shared group container, or other capabilities. For more information, see [`Configuring open access for a custom keyboard`](configuring-open-access-for-a-custom-keyboard.md). |
 
-Set these keys in the [`NSExtension`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSExtension) > [`NSExtensionAttributes`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSExtension/NSExtensionAttributes) dictionary of the `Info.plist` file:
+Set these keys in the [`NSExtension`](https://developer.apple.com/documentation/bundleresources/information-property-list/nsextension) > [`NSExtensionAttributes`](https://developer.apple.com/documentation/bundleresources/information-property-list/nsextension/nsextensionattributes) dictionary of the `Info.plist` file:
 
-![Screenshot showing the NSExtensionAttributes section in a custom keyboard target’s Info.plist file. ](https://docs-assets.developer.apple.com/published/94a9892ed497de8e7e52e95fe427b6fd/media-3570266%402x.png)
+![Screenshot showing the NSExtensionAttributes section in a custom keyboard target’s Info.plist file. ](/images/com.apple.uikit/media-3570266@2x.png)
 
 ##### Add Your Custom User Interface
 
@@ -53,9 +53,9 @@ When the user activates your keyboard, it replaces the system keyboard. Your cus
 
 When designing your keyboard’s user interface, incorporate a button to switch keyboards. The system keyboard uses a button with a globe icon as shown in the following image.
 
-![Screenshot showing the standard system keyboard.](https://docs-assets.developer.apple.com/published/0163b0e6d684e60e9d3cadfa08e83e4d/media-3570257%402x.png)
+![Screenshot showing the standard system keyboard.](/images/com.apple.uikit/media-3570257@2x.png)
 
-Use the [`needsInputModeSwitchKey`](uiinputviewcontroller/needsinputmodeswitchkey.md) property on [`UIInputViewController`](uiinputviewcontroller.md) to determine if you should display a button to switch keyboards. If the user has only one keyboard enabled, there’s no need to show a keyboard switching interface. On iPhones with Face ID, iOS automatically shows the globe icon below your keyboard view and sets this property to [`false`](https://developer.apple.com/documentation/Swift/false), indicating that you shouldn’t show your button.
+Use the [`needsInputModeSwitchKey`](uiinputviewcontroller/needsinputmodeswitchkey.md) property on [`UIInputViewController`](uiinputviewcontroller.md) to determine if you should display a button to switch keyboards. If the user has only one keyboard enabled, there’s no need to show a keyboard switching interface. On iPhones with Face ID, iOS automatically shows the globe icon below your keyboard view and sets this property to [`false`](https://developer.apple.com/documentation/swift/false), indicating that you shouldn’t show your button.
 
 Configure your keyboard switching button with an action targeting the [`handleInputModeList(from:with:)`](uiinputviewcontroller/handleinputmodelist(from:with:).md) method of your input view controller subclass. The default custom keyboard template does this by adding an action to the button:
 
@@ -65,11 +65,11 @@ nextKeyboardButton.addTarget(self, action: #selector(handleInputModeList(from:wi
 
 Using [`allTouchEvents`](uicontrol/event/alltouchevents.md) allows the system to automatically show the keyboard list picker when the user long presses the button.
 
-![Screenshot of the system keyboard after the user long presses the globe icon. The globe button displays a popup menu allowing the user to select between their enabled keyboards, or open Keyboard Settings.](https://docs-assets.developer.apple.com/published/4ad81e605c6c99663c3452b0278588db/media-3570259%402x.png)
+![Screenshot of the system keyboard after the user long presses the globe icon. The globe button displays a popup menu allowing the user to select between their enabled keyboards, or open Keyboard Settings.](/images/com.apple.uikit/media-3570259@2x.png)
 
 Your keyboard should also be flexible with the layout because the width of the keyboard can vary, even while it’s currently on screen. All keyboards should support both compact and regular widths and allow for transitioning between the two. Test your keyboard in portrait and landscape orientations, and on iPadOS be sure to test your keyboard in a floating view.
 
-![Screenshot showing a floating keyboard in iPadOS.](https://docs-assets.developer.apple.com/published/a962463f019041183abfcdeadfc95d06/media-3571051%402x.png)
+![Screenshot showing a floating keyboard in iPadOS.](/images/com.apple.uikit/media-3571051@2x.png)
 
 For more details, see [`Configuring a custom keyboard interface`](configuring-a-custom-keyboard-interface.md).
 
@@ -109,7 +109,7 @@ Your custom keyboard code executes in a separate process, and that process has a
 - Be sure to handle low memory notifications. Release any resources that aren’t strictly necessary.
 - Keep in mind that dismissing the keyboard won’t necessarily terminate the keyboard extension process. Don’t assume the system releases memory your keyboard is using when it’s no longer visible on screen.
 
-For more information on crash logs related to memory usage limits, see [`Diagnosing issues using crash reports and device logs`](https://developer.apple.com/documentation/Xcode/diagnosing-issues-using-crash-reports-and-device-logs) and `EXC_CRASH (SIGQUIT)`.
+For more information on crash logs related to memory usage limits, see [`Diagnosing issues using crash reports and device logs`](https://developer.apple.com/documentation/xcode/diagnosing-issues-using-crash-reports-and-device-logs) and `EXC_CRASH (SIGQUIT)`.
 
 ## Topics
 

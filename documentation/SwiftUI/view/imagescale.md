@@ -46,7 +46,7 @@ VStack {
 }
 ```
 
-![A view showing small, medium, and large hearts rendered at a size](https://docs-assets.developer.apple.com/published/75aceca7a4758e6a07e038b1baacf2f3/SwiftUI-View-imageScale%402x.png)
+![A view showing small, medium, and large hearts rendered at a size](/images/com.apple.SwiftUI/SwiftUI-View-imageScale@2x.png)
 
 ## Parameters
 

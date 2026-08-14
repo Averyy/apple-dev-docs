@@ -28,7 +28,7 @@ case payAsYouGo
 
 With a pay as you go payment mode, users pay the discounted price at each billing period during the discount period.
 
-![Example of a subscription timeline with a pay as you go payment mode. The  introductory price is billed three times.](https://docs-assets.developer.apple.com/published/cdf7424c589eb68fe7962e3c551ebba1/media-2942132%402x.png)
+![Example of a subscription timeline with a pay as you go payment mode. The  introductory price is billed three times.](/images/com.apple.storekit/media-2942132@2x.png)
 
 ## See Also
 

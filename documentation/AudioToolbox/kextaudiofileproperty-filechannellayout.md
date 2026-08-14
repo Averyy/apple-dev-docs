@@ -21,7 +21,7 @@ var kExtAudioFileProperty_FileChannelLayout: ExtAudioFilePropertyID { get }
 
 #### Discussion
 
-A file’s channel layout. Value is a read/write [`AudioChannelLayout`](https://developer.apple.com/documentation/CoreAudioTypes/AudioChannelLayout) struct.
+A file’s channel layout. Value is a read/write [`AudioChannelLayout`](https://developer.apple.com/documentation/coreaudiotypes/audiochannellayout) struct.
 
 #### Discussion
 

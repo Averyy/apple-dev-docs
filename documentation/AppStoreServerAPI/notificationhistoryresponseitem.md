@@ -31,8 +31,8 @@ object notificationHistoryResponseItem
 ## Properties
 
 - `sendAttempts` ([sendAttemptItem]): An array of information the App Store server records for its attempts to send a notification to your server. The maximum number of entries in the array is six.
-- `signedPayload` (signedPayload): The cryptographically signed payload, in JSON Web Signature (JWS) format, containing the original response body of a version 2 notification. For more information, see [`signedPayload`](https://developer.apple.com/documentation/AppStoreServerNotifications/signedPayload) in [`App Store Server Notifications`](https://developer.apple.com/documentation/AppStoreServerNotifications).
-- `firstSendAttemptResult` (string): The result of the App Store server’s first attempt to send the notification to your server’s [`App Store Server Notifications V2`](https://developer.apple.com/documentation/AppStoreServerNotifications/App-Store-Server-Notifications-V2) endpoint. Use the earliest [`sendAttemptItem`](sendattemptitem.md) in the `sendAttempts` array instead.
+- `signedPayload` (signedPayload): The cryptographically signed payload, in JSON Web Signature (JWS) format, containing the original response body of a version 2 notification. For more information, see [`signedPayload`](https://developer.apple.com/documentation/appstoreservernotifications/signedpayload) in [`App Store Server Notifications`](https://developer.apple.com/documentation/appstoreservernotifications).
+- `firstSendAttemptResult` (string): The result of the App Store server’s first attempt to send the notification to your server’s [`App Store Server Notifications V2`](https://developer.apple.com/documentation/appstoreservernotifications/app-store-server-notifications-v2) endpoint. Use the earliest [`sendAttemptItem`](sendattemptitem.md) in the `sendAttempts` array instead.
 
 ## See Also
 

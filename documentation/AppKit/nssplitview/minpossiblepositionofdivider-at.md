@@ -16,7 +16,7 @@ func minPossiblePositionOfDivider(at dividerIndex: Int) -> CGFloat
 
 #### Return Value
 
-A [`CGFloat`](https://developer.apple.com/documentation/CoreFoundation/CGFloat-swift.struct) that specifies the minimum possible position of the divider.
+A [`CGFloat`](https://developer.apple.com/documentation/corefoundation/cgfloat-swift.struct) that specifies the minimum possible position of the divider.
 
 #### Discussion
 

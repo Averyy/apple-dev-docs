@@ -18,7 +18,7 @@ struct GroupImmersionStyles
 
 When a participant in an activity changes the immersion style of their immersive space, the system adds the style to this sequence. Configure an asynchronous task to monitor this sequence and process results when they arrive.
 
-The following example shows you how to configure this task and use it to iterate over the available items. The `systemCoordinator` variable contains the session’s [`SystemCoordinator`](SystemCoordinator.md) object.
+The following example shows you how to configure this task and use it to iterate over the available items. The `systemCoordinator` variable contains the session’s [`SystemCoordinator`](systemcoordinator.md) object.
 
 ```swift
 Task.detached {
@@ -47,7 +47,7 @@ Task.detached {
 ## Relationships
 
 ### Conforms To
-- [AsyncSequence](../Swift/AsyncSequence.md)
+- [AsyncSequence](../swift/asyncsequence.md)
 
 ## See Also
 

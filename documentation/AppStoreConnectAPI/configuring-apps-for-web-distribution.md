@@ -24,9 +24,9 @@ If your web distribution app is already approved, you need to generate an altern
 
 If your web distribution app is not in one of the following states (all of which are after approval by App Review): `Pending Developer Release, Pending Apple Release,` or `Ready for Distribution,` the alternative distribution package is automatically created after approval.
 
-After the alternative distribution package is created, you can ingest and process the provided files. For more information, see [`Ingesting an alternative distribution package`](https://developer.apple.com/documentation/appdistribution/ingesting-an-alternative-distribution-package).
+After the alternative distribution package is created, you can ingest and process the provided files. For more information, see [`Ingesting an alternative distribution package`](https://developer.apple.com/documentation/marketplacekit/ingesting-an-alternative-distribution-package).
 
-Finally, you set up your web server to allow users to get your app. For more information, see [`Distributing your app from your website`](https://developer.apple.com/documentation/appdistribution/distributing-your-app-from-your-website).
+Finally, you set up your web server to allow users to get your app. For more information, see [`Distributing your app from your website`](https://developer.apple.com/documentation/marketplacekit/distributing-your-app-from-your-website).
 
 ## See Also
 

@@ -28,7 +28,7 @@ The maximum magnitude of the vector.
 
 This function calculates the maximum magnitude of the first `N` elements of input vector `A`, and writes the result to output scalar `C`.
 
-![A diagram showing the operation of this function. There are three rows. The top row represents the input vector, A, with three boxes. The middle row represents the operation a boxes that contains the absolute-maximum function. The bottom row represents the output scalar value C as a  box. The diagram has connecting lines from the input vector to the operation, and from the operation to the output scalar value.](https://docs-assets.developer.apple.com/published/b8755d65817f9bcfd462cce3bc658684/media-4465953%402x.png)
+![A diagram showing the operation of this function. There are three rows. The top row represents the input vector, A, with three boxes. The middle row represents the operation a boxes that contains the absolute-maximum function. The bottom row represents the output scalar value C as a  box. The diagram has connecting lines from the input vector to the operation, and from the operation to the output scalar value.](/images/com.apple.accelerate/media-4465953@2x.png)
 
 The following code shows an example of using this function:
 

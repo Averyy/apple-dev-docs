@@ -42,9 +42,9 @@ If you only wish to customize the link’s title, you can use one of the conveni
 ShareLink("Share URL", item: URL(string: "https://developer.apple.com/xcode/swiftui/")!)
 ```
 
-The link can share any content that is [`Transferable`](https://developer.apple.com/documentation/CoreTransferable/Transferable). Many framework types, like [`URL`](https://developer.apple.com/documentation/Foundation/URL), already conform to this protocol. You can also make your own types transferable.
+The link can share any content that is [`Transferable`](https://developer.apple.com/documentation/coretransferable/transferable). Many framework types, like [`URL`](https://developer.apple.com/documentation/foundation/url), already conform to this protocol. You can also make your own types transferable.
 
-For example, you can use [`ProxyRepresentation`](https://developer.apple.com/documentation/CoreTransferable/ProxyRepresentation) to resolve your own type to a framework type:
+For example, you can use [`ProxyRepresentation`](https://developer.apple.com/documentation/coretransferable/proxyrepresentation) to resolve your own type to a framework type:
 
 ```swift
 struct Photo: Transferable {
@@ -72,9 +72,9 @@ struct PhotoView: View {
 }
 ```
 
-Sometimes the content that your app shares isn’t immediately available. You can use [`FileRepresentation`](https://developer.apple.com/documentation/CoreTransferable/FileRepresentation) or [`DataRepresentation`](https://developer.apple.com/documentation/CoreTransferable/DataRepresentation) when you need an asynchronous operation, like a network request, to retrieve and prepare the content.
+Sometimes the content that your app shares isn’t immediately available. You can use [`FileRepresentation`](https://developer.apple.com/documentation/coretransferable/filerepresentation) or [`DataRepresentation`](https://developer.apple.com/documentation/coretransferable/datarepresentation) when you need an asynchronous operation, like a network request, to retrieve and prepare the content.
 
-Note that some applications offer their sharing service for files, but not for a wide range of different data types, for example, Mail.app, Notes.app, Messages.app or AirDrop. If you don’t see a particular sharing service in the presented `ShareLink`, try adding a [`FileRepresentation`](https://developer.apple.com/documentation/CoreTransferable/FileRepresentation) to the type’s `Transferable` conformance.
+Note that some applications offer their sharing service for files, but not for a wide range of different data types, for example, Mail.app, Notes.app, Messages.app or AirDrop. If you don’t see a particular sharing service in the presented `ShareLink`, try adding a [`FileRepresentation`](https://developer.apple.com/documentation/coretransferable/filerepresentation) to the type’s `Transferable` conformance.
 
 A `Transferable` type also lets you provide multiple content types for a single shareable item. The share interface shows relevant sharing services based on the types that you provide.
 

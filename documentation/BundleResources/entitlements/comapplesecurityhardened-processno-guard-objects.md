@@ -23,7 +23,7 @@ The system turns on guard objects automatically when you set [`com.apple.securit
 
 Guard objects can increase memory usage or decrease execution speed, depending on your app’s workload. If guard objects cause an unacceptable impact, set this entitlement’s value to `true` to turn off guard objects.
 
-For more information, see [`Enabling enhanced security for your app`](https://developer.apple.com/documentation/Xcode/enabling-enhanced-security-for-your-app).
+For more information, see [`Enabling enhanced security for your app`](https://developer.apple.com/documentation/xcode/enabling-enhanced-security-for-your-app).
 
 > **Note**: This entitlement requires the following entitlements: - [`com.apple.security.hardened-process`](entitlements/com.apple.security.hardened-process.md)
 - [`com.apple.security.hardened-process.enhanced-security-version-string`](entitlements/com.apple.security.hardened-process.enhanced-security-version-string.md)

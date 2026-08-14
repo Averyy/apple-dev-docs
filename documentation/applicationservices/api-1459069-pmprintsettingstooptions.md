@@ -25,7 +25,7 @@ This function creates a CUPS options string that captures the data in the specif
 ## Parameters
 
 - `settings`: The print settings to convert.
-- `options`: A pointer to a C string. On return, a CUPS options string describing the print settings, or   if the print settings could not be converted. The function allocates storage for the string. You are responsible for freeing the storage.
+- `options`: A pointer to a C string. On return, a CUPS options string describing the print settings, or `NULL` if the print settings could not be converted. The function allocates storage for the string. You are responsible for freeing the storage.
 
 ## See Also
 

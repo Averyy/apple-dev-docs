@@ -25,7 +25,7 @@ The separator layout guide represents the frame of the separator, which the syst
 
 By default, when you apply a system-provided content configuration to a list cell, the separator automatically aligns to the primary text in the content view. For custom subviews in the cell, you need to add a constraint to this layout guide that connects it to the leading edge of the cell’s primary content.
 
-![Diagram of a Favorites menu item with a separator below the cell, indicating another cell below. The separator layout guide appears around the frame of the separator. The leading edge of the separator layout guide is constrained to the leading edge of the primary content, the beginning of the word “Favorites.”](https://docs-assets.developer.apple.com/published/8604949838a7f6bcc3cba5d4bc284a2f/media-3680734%402x.png)
+![Diagram of a Favorites menu item with a separator below the cell, indicating another cell below. The separator layout guide appears around the frame of the separator. The leading edge of the separator layout guide is constrained to the leading edge of the primary content, the beginning of the word “Favorites.”](/images/com.apple.uikit/media-3680734@2x.png)
 
 To align the separators to your content, add constraints to the leading or trailing anchors of this layout guide.
 

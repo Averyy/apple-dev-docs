@@ -16,7 +16,7 @@ func chooseIdentityPanelShowHelp(_ sender: SFChooseIdentityPanel!) -> Bool
 
 #### Discussion
 
-You can use this delegate method to implement custom help if you call the [`setShowsHelp(_:)`](https://developer.apple.com/documentation/SecurityInterface/SFChooseIdentityPanel/setShowsHelp(_:)) method to display a help button in the sheet or panel. If you are not implementing custom help, do not implement this method.
+You can use this delegate method to implement custom help if you call the [`setShowsHelp(_:)`](https://developer.apple.com/documentation/securityinterface/sfchooseidentitypanel/setshowshelp(_:)) method to display a help button in the sheet or panel. If you are not implementing custom help, do not implement this method.
 
 ## Parameters
 
@@ -24,9 +24,9 @@ You can use this delegate method to implement custom help if you call the [`setS
 
 ## See Also
 
-- [func setShowsHelp(Bool)](../SecurityInterface/SFChooseIdentityPanel/setShowsHelp(_:).md)
+- [func setShowsHelp(Bool)](../securityinterface/sfchooseidentitypanel/setshowshelp(_:).md)
   Displays a Help button in the sheet or panel.
-- [var delegate: (any NSWindowDelegate)?](../AppKit/NSWindow/delegate.md)
+- [var delegate: (any NSWindowDelegate)?](../appkit/nswindow/delegate.md)
   The window’s delegate.
 
 

@@ -25,7 +25,7 @@ Adopt this protocol in the custom types you use to send and receive messages dur
 
 Providing an app-specific string makes it possible to use different types to support messages. When the message data contains a custom message ID, [`GroupSessionMessenger`](groupsessionmessenger.md) looks for a type that conforms to the protocol with a [`messageIdentifier`](custommessageidentifiable/messageidentifier.md) property that contains the matching string. It then creates that type and decodes the message data into it.
 
-> **Note**: Custom types that adopt this protocol must also adopt the [`Codable`](https://developer.apple.com/documentation/Swift/Codable) protocol.
+> **Note**: Custom types that adopt this protocol must also adopt the [`Codable`](https://developer.apple.com/documentation/swift/codable) protocol.
 
 ## Topics
 

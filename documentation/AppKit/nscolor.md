@@ -30,7 +30,7 @@ For user-specified colors, you can also display a color panel and let the user s
 
 ##### Color and Color Spaces
 
-A color object is typically represented internally as a Core Graphics color ([`CGColor`](https://developer.apple.com/documentation/CoreGraphics/CGColor)) in a Core Graphics color space ([`CGColorSpace`](https://developer.apple.com/documentation/CoreGraphics/CGColorSpace)). Colors can also be created in extended color spaces:
+A color object is typically represented internally as a Core Graphics color ([`CGColor`](https://developer.apple.com/documentation/coregraphics/cgcolor)) in a Core Graphics color space ([`CGColorSpace`](https://developer.apple.com/documentation/coregraphics/cgcolorspace)). Colors can also be created in extended color spaces:
 
 - [`extendedSRGB`](nscolorspace/extendedsrgb.md)
 - [`extendedGenericGamma22Gray`](nscolorspace/extendedgenericgamma22gray.md)
@@ -182,25 +182,25 @@ For design guidance, see Human Interface Guidelines > [`Color`](https://develope
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [Copyable](../Swift/Copyable.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Escapable](../Swift/Escapable.md)
-- [Hashable](../Swift/Hashable.md)
+- [CVarArg](../swift/cvararg.md)
+- [Copyable](../swift/copyable.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Escapable](../swift/escapable.md)
+- [Hashable](../swift/hashable.md)
 - [NSAccessibilityColor](nsaccessibilitycolor.md)
-- [NSCoding](../Foundation/NSCoding.md)
-- [NSCopying](../Foundation/NSCopying.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSCoding](../foundation/nscoding.md)
+- [NSCopying](../foundation/nscopying.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 - [NSPasteboardReading](nspasteboardreading.md)
 - [NSPasteboardWriting](nspasteboardwriting.md)
-- [NSSecureCoding](../Foundation/NSSecureCoding.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
-- [Transferable](../CoreTransferable/Transferable.md)
+- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
+- [Transferable](../coretransferable/transferable.md)
 
 ## See Also
 

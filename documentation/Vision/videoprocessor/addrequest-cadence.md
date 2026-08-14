@@ -22,7 +22,7 @@ final func addRequest<T>(_ request: T, cadence: VideoProcessor.Cadence? = nil) a
 
 #### Return Value
 
-An [`AsyncSequence`](https://developer.apple.com/documentation/Swift/AsyncSequence) that produces a request result for each frame.
+An [`AsyncSequence`](https://developer.apple.com/documentation/swift/asyncsequence) that produces a request result for each frame.
 
 #### Discussion
 

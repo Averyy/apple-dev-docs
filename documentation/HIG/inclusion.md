@@ -11,7 +11,7 @@ framework: HIG
 
 Inclusive apps and games put people first by prioritizing respectful communication and presenting content and functionality in ways that everyone can access and understand.
 
-![A sketch of two people, suggesting inclusion. The image is overlaid with rectangular and circular grid lines and is tinted yellow to subtly reflect the yellow in the original six-color Apple logo.](https://docs-assets.developer.apple.com/published/6fa36ff527c2c691a2b18d780f02cc2f/foundations-inclusion-intro~dark%402x.png)
+![A sketch of two people, suggesting inclusion. The image is overlaid with rectangular and circular grid lines and is tinted yellow to subtly reflect the yellow in the original six-color Apple logo.](/images/com.apple.HIG/foundations-inclusion-intro~dark@2x.png)
 To help you design an inclusive app or game, consider the following goals as you review the words and images you use and the experiences you offer.
 As with all design, designing an inclusive app is an iterative process that takes time to get right. Throughout the process, be prepared to examine your assumptions about how other people think and feel and be open to evolving knowledge and understanding.
 
@@ -51,9 +51,9 @@ Throughout history, cultures around the world have recognized a spectrum of self
 You can help everyone feel welcome in your app or game by avoiding unnecessary references to specific genders. For example, a recipe-sharing app that uses copy like “You can let a subscriber post his or her recipes to your shared folder” could avoid unnecessary gender references by using an alternative like “Subscribers can post recipes to your shared folder.” In addition to using the gender-neutral noun “subscribers,” the revised copy avoids the unnecessary singular pronouns “his” and “her,” helping the sentence remain inclusive when it’s localized for languages that use gendered pronouns.
 In addition, you can often avoid referencing a specific gender in an avatar, emoji, glyph, or game character. To welcome everyone to your app or game, prefer giving people the tools they need to customize such items as they choose.
 If you need to depict a generic person or people, use a nongendered human image to reinforce the message that *generic person* means *human*, not *man* or *woman*. SF Symbols provides many nongendered glyphs you can use, such as the figure and person symbols shown here:
-![A solid silhouette of a person from the shoulders up, within a circle.](https://docs-assets.developer.apple.com/published/e40b513272bcc9732bfd0915f65621e0/person-crop-circle~dark%402x.png)
-![Solid silhouettes of three people, with the left silhouette in the foreground and the other two in the background, all from the shoulders up.](https://docs-assets.developer.apple.com/published/95981e2ad434b11ff78f1ae2266d3fe4/person-3-fill~dark%402x.png)
-![A solid silhouette of a person standing with an arm raised high on the left side of the image.](https://docs-assets.developer.apple.com/published/a5e50ee133c406aaf8e2e3c23d025d2b/figure-wave~dark%402x.png)
+![A solid silhouette of a person from the shoulders up, within a circle.](/images/com.apple.HIG/person-crop-circle~dark@2x.png)
+![Solid silhouettes of three people, with the left silhouette in the foreground and the other two in the background, all from the shoulders up.](/images/com.apple.HIG/person-3-fill~dark@2x.png)
+![A solid silhouette of a person standing with an arm raised high on the left side of the image.](/images/com.apple.HIG/figure-wave~dark@2x.png)
 Most apps and games don’t need to know a person’s gender, but if you require this information — such as for health or legal reasons — consider providing inclusive options, such as *nonbinary*, *self-identify*, and *decline to state*. In this situation, you could also let people specify the pronouns they use so you can address them properly when necessary.
 
 ## People and settings
@@ -87,7 +87,7 @@ As you design content that welcomes people of all abilities, consider the follow
 To learn more about making your app or game accessible, see [Accessibility](accessibility.md).
 
 ## Languages
-People expect to customize their device by choosing a language for text and a region for formatting values like date, time, and money. To welcome a global audience, first prepare your software to handle languages and regions other than your own — a process called *internationalization* — and provide translated text and resources for specific locales. For an overview of internationalization, see [Expanding your app to new markets](https://developer.apple.com/localization/); for developer guidance on localization, see [Localization](../Xcode/localization.md).
+People expect to customize their device by choosing a language for text and a region for formatting values like date, time, and money. To welcome a global audience, first prepare your software to handle languages and regions other than your own — a process called *internationalization* — and provide translated text and resources for specific locales. For an overview of internationalization, see [Expanding your app to new markets](https://developer.apple.com/localization/); for developer guidance on localization, see [Localization](../xcode/localization.md).
 Creating an inclusive experience can also help you prepare for localization. For example, using plain language, avoiding unnecessary gender references, representing a variety of people, and avoiding stereotypes and culture-specific content, can put you in a good position to create versions of your software localized into more languages. Using [SF Symbols](sf-symbols.md) for the glyphs in your app or game can also help streamline localization. In addition to providing many language-specific glyphs, SF Symbols includes glyphs you can use in both left-to-right and right-to-left contexts; for guidance, see [Right to left](right-to-left.md).
 As you localize your app or game and related content, also be aware of the ways you use color. Colors often have strong culture-specific meanings, so it’s essential to discover how people respond to specific colors in each locale you support. In some places, for example, white is associated with death or grief, whereas in other places, it’s associated with purity or peace. If you use color as a way to communicate, make sure your color choices communicate the same thing in each version of your software.
 
@@ -101,7 +101,7 @@ As you localize your app or game and related content, also be aware of the ways 
 [Accessibility](accessibility.md)
 
 #### Developer documentation
-[Localization](../Xcode/localization.md) — Xcode
+[Localization](../xcode/localization.md) — Xcode
 
 #### Videos
 - [Principles of inclusive app design](https://developer.apple.com/videos/play/wwdc2025/316) - Discover how understanding disability can help you create better apps for everyone. Find out how to make your apps more inclusive by supporting multiple types of interaction, providing customization, and adopting accessibility APIs.

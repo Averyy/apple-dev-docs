@@ -10,7 +10,7 @@ To support Sign in with Apple on your website, or in your app on another platfor
 
 ##### Enable an App Id
 
-For users to authenticate with your web service, you must have an existing app in the App Store that uses Sign in with Apple. To enable an existing app, see [`Implementing User Authentication with Sign in with Apple`](https://developer.apple.com/documentation/AuthenticationServices/implementing-user-authentication-with-sign-in-with-apple). Enable the Sign in with Apple capability for an app in Xcode, or by editing an App ID configuration in [`Certificates, Identifiers & Profiles`](https://developer.apple.comhttps://developer.apple.com/account/resources). When configuring your App ID, you have the following options:
+For users to authenticate with your web service, you must have an existing app in the App Store that uses Sign in with Apple. To enable an existing app, see [`Implementing User Authentication with Sign in with Apple`](https://developer.apple.com/documentation/authenticationservices/implementing-user-authentication-with-sign-in-with-apple). Enable the Sign in with Apple capability for an app in Xcode, or by editing an App ID configuration in [`Certificates, Identifiers & Profiles`](https://developer.apple.comhttps://developer.apple.com/account/resources). When configuring your App ID, you have the following options:
 
 - Enable the App ID as a primary App ID
 - Enable the App ID and group with an existing primary App ID
@@ -36,7 +36,7 @@ For more information about configuring your Services ID, see [`Configure Sign in
 
 ##### Create a Private Key
 
-Apple associates your Sign in with Apple private key with a primary app, and its app group, if available. You use a private key to sign developer tokens when communicating with the Sign in with Apple servers. For example, when generating and validating tokens for user authentication, app transfer, and user migration to a newly transferred developer team, you use the private key ID in the token header, and the private key signs the token. To validate your web service, Sign in with Apple requires you to create a JSON web token (JWT) with the key identifier (`kid`) in the header. For information on getting a key identifier, see [`Get a key identifier`](https://developer.apple.comhttps://developer.apple.com/help/account/manage-keys/get-a-key-identifier). For information on generating the JWT, see [`Creating a client secret`](https://developer.apple.com/documentation/AccountOrganizationalDataSharing/creating-a-client-secret).
+Apple associates your Sign in with Apple private key with a primary app, and its app group, if available. You use a private key to sign developer tokens when communicating with the Sign in with Apple servers. For example, when generating and validating tokens for user authentication, app transfer, and user migration to a newly transferred developer team, you use the private key ID in the token header, and the private key signs the token. To validate your web service, Sign in with Apple requires you to create a JSON web token (JWT) with the key identifier (`kid`) in the header. For information on getting a key identifier, see [`Get a key identifier`](https://developer.apple.comhttps://developer.apple.com/help/account/manage-keys/get-a-key-identifier). For information on generating the JWT, see [`Creating a client secret`](https://developer.apple.com/documentation/accountorganizationaldatasharing/creating-a-client-secret).
 
 Each primary app can have a maximum of two private keys.
 

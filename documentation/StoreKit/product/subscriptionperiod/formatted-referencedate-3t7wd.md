@@ -34,7 +34,7 @@ subscriptionPeriod.formatted(product.subscriptionPeriodFormatStyle, referenceDat
 ## Parameters
 
 - `format`: A format style that has a date range input. The format style for a product is [`subscriptionPeriodFormatStyle`](product/subscriptionperiodformatstyle.md).
-- `referenceDate`: The lower bound date for a date range representing the subscription period. The default value is [`now`](https://developer.apple.com/documentation/Foundation/Date/now).
+- `referenceDate`: The lower bound date for a date range representing the subscription period. The default value is [`now`](https://developer.apple.com/documentation/foundation/date/now).
 
 ## See Also
 

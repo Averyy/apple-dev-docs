@@ -17,7 +17,7 @@ Creates a preview of a SwiftUI view using the specified traits and custom viewpo
 
 #### Overview
 
-This macro behaves like [`Preview(_:traits:_:body:)`](preview(_:traits:_:body:).md) except that it also enables you to specify one or more [`PreviewCamera`](https://developer.apple.com/documentation/DeveloperToolsSupport/PreviewCamera) instances that define custom, fixed viewpoints from which to view the preview:
+This macro behaves like [`Preview(_:traits:_:body:)`](preview(_:traits:_:body:).md) except that it also enables you to specify one or more [`PreviewCamera`](https://developer.apple.com/documentation/developertoolssupport/previewcamera) instances that define custom, fixed viewpoints from which to view the preview:
 
 ```swift
 #Preview {
@@ -37,7 +37,7 @@ Other preview macros provide different customization options. For example, if yo
 ## Parameters
 
 - `name`: An optional display name for the preview. If you don’t specify a name, the canvas labels the preview using the line number where the preview appears in source.
-- `traits`: An optional list of [`PreviewTrait`](https://developer.apple.com/documentation/DeveloperToolsSupport/PreviewTrait) instances that customize the appearance of the preview.
+- `traits`: An optional list of [`PreviewTrait`](https://developer.apple.com/documentation/developertoolssupport/previewtrait) instances that customize the appearance of the preview.
 - `body`: A [`ContentBuilder`](contentbuilder.md) that produces a SwiftUI view to preview. You typically specify one of your app’s custom views and optionally any inputs, model data, modifiers, and enclosing views that the custom view needs for normal operation.
 - `cameras`: One or more preview cameras that indicate the custom, fixed viewpoints that you want to be able to view the preview from. The first of these replaces the front viewpoint as the default.
 

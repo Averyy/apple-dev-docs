@@ -16,7 +16,7 @@ An entitlement that enables an app to use the Accessory Access framework to mana
 
 This entitlement enables your app to gain exclusive access to USB devices using the Accessory Access framework.
 
-> **Note**: Without this entitlement, your code receives an AccessoryAccess error [`internalError`](https://developer.apple.com/documentation/AccessoryAccess/AAError/internalError) and a failure reason string of “Unable to communicate with service” when it attempts to call API in the Accessory Access framework.
+> **Note**: Without this entitlement, your code receives an AccessoryAccess error [`internalError`](https://developer.apple.com/documentation/accessoryaccess/aaerror/internalerror) and a failure reason string of “Unable to communicate with service” when it attempts to call API in the Accessory Access framework.
 
 Add the entitlement to your app by following these steps:
 
@@ -24,7 +24,7 @@ Add the entitlement to your app by following these steps:
 2. Select the Signing & Capabilities panel.
 3. Click “+ Capabilities” and enter “accessory” in the search field; then double-click the “Accessory Access” entry to add the entitlement to your app’s entitlements file.
 
-For more information about using the Accessory Access framework, see [`Accessory Access`](https://developer.apple.com/documentation/AccessoryAccess).
+For more information about using the Accessory Access framework, see [`Accessory Access`](https://developer.apple.com/documentation/accessoryaccess).
 
 
 ---

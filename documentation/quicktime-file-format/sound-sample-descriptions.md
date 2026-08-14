@@ -6,7 +6,7 @@ A sound sample description contains information that defines how to interpret so
 
 #### Overview
 
-The sound sample description contains information that defines how to interpret sound media data. This sample description is based on the standard sample description, as described in [`Sample description atom ('stsd')`](sample_description_atom.md).
+The sound sample description contains information that defines how to interpret sound media data. This sample description is based on the standard sample description, as described in [`Sample description atom`](sample_description_atom.md).
 
 The data format field contains the format of the audio data. This may specify a compression format or one of several uncompressed audio formats. The following table shows a list of some supported sound formats.
 

@@ -7,7 +7,6 @@ Participants that were removed by this operation.
 
 **Availability**:
 - iOS 26.0+
-- iPadOS 26.0+
 
 ## Declaration
 

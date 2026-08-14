@@ -28,7 +28,7 @@ optional func encode(commandBuffer: any MTLCommandBuffer, inputs: [any MTLTextur
 
 Implement this method to use the GPU to evaluate your layer. Fill `commandBuffer` with the GPU commands that evaluate the layer. Don’t commit the command buffer in this method; Core ML executes the command buffer after this method returns.
 
-Improve your layer’s performance by caching the [`MTLComputePipelineState`](https://developer.apple.com/documentation/Metal/MTLComputePipelineState) instances you create and intend to reuse in subsequent calls.
+Improve your layer’s performance by caching the [`MTLComputePipelineState`](https://developer.apple.com/documentation/metal/mtlcomputepipelinestate) instances you create and intend to reuse in subsequent calls.
 
 Implementing this method doesn’t guarantee that Core ML evaluates this layer on the GPU. For example, Core ML may evaluate the layer on the CPU if the system doesn’t have enough GPU’s resources to run the custom layer.
 

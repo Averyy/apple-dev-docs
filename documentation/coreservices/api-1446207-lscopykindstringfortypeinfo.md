@@ -32,10 +32,10 @@ Thread-safe since Mac OS version 10.2
 
 ## Parameters
 
-- `inType`: The file type to consider. Comparison of file types is case-sensitive. Pass   if the items’ file type is unimportant.
-- `inCreator`: The creator signature to consider. Comparison of creator signatures is case-sensitive. Pass   if the items’ creator signature is unimportant.
-- `inExtension`: A Core Foundation string object specifying the filename extension to consider; see the   in the Core Foundation Reference Documentation for a description of the   data type. Comparison of filename extensions is case-insensitive. Pass   if the items’ filename extension is unimportant.
-- `outKindString`: A pointer to a Core Foundation string object that, on return, will contain the requested kind string; see the   in the Core Foundation Reference Documentation for a description of the   data type. You are responsible for releasing this object.
+- `inType`: The file type to consider. Comparison of file types is case-sensitive. Pass `kLSUnknownType` if the items’ file type is unimportant.
+- `inCreator`: The creator signature to consider. Comparison of creator signatures is case-sensitive. Pass `kLSUnknownCreator` if the items’ creator signature is unimportant. > **Note**: In macOS 10.6 and later, the `inCreator` parameter is ignored.
+- `inExtension`: A Core Foundation string object specifying the filename extension to consider; see the *CFString Reference* in the Core Foundation Reference Documentation for a description of the `CFStringRef` data type. Comparison of filename extensions is case-insensitive. Pass `NULL` if the items’ filename extension is unimportant.
+- `outKindString`: A pointer to a Core Foundation string object that, on return, will contain the requested kind string; see the *CFString Reference* in the Core Foundation Reference Documentation for a description of the `CFStringRef` data type. You are responsible for releasing this object.
 
 ## See Also
 

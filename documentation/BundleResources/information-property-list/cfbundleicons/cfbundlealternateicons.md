@@ -22,7 +22,7 @@ The value of this key is different in iOS and tvOS.
 
 In tvOS, the value of the key is an array of strings. The value of each string is the name of an icon file in your app.
 
-In iOS, the value of the key is a dictionary. The key for each dictionary entry is the name of the alternate icon, which is also the string you pass to [`setAlternateIconName(_:completionHandler:)`](https://developer.apple.com/documentation/UIKit/UIApplication/setAlternateIconName(_:completionHandler:)) when changing icons. The value for each dictionary key is an [`AppIconReferenceName`](information-property-list/cfbundleicons/cfbundlealternateicons/appiconreferencename.md) dictionary.
+In iOS, the value of the key is a dictionary. The key for each dictionary entry is the name of the alternate icon, which is also the string you pass to [`setAlternateIconName(_:completionHandler:)`](https://developer.apple.com/documentation/uikit/uiapplication/setalternateiconname(_:completionhandler:)) when changing icons. The value for each dictionary key is an [`AppIconReferenceName`](information-property-list/cfbundleicons/cfbundlealternateicons/appiconreferencename.md) dictionary.
 
 ## Topics
 

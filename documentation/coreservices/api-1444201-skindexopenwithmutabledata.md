@@ -30,12 +30,12 @@ A call to `SKIndexOpenWithMutableData` retains the opened index. When your appli
 
 ##### 1680673
 
-You cannot use [`CFMakeCollectable`](https://developer.apple.com/documentation/corefoundation/1521163-cfmakecollectable) with [`SKIndex`](skindex.md) objects.
+You cannot use [`CFMakeCollectable`](https://developer.apple.com/documentation/corefoundation/cfmakecollectable) with [`SKIndex`](skindex.md) objects.
 
 ## Parameters
 
 - `inData`: The index to open.
-- `inIndexName`: The name of the index. Can be  , in which case this function attempts to open the index with the default name of  .
+- `inIndexName`: The name of the index. Can be `NULL`, in which case this function attempts to open the index with the default name of `IADefaultIndex`.
 
 ## See Also
 

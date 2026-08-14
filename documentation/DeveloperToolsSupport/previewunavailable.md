@@ -32,9 +32,9 @@ This type supports the expansion of preview macros. You don’t use it directly.
 ## Relationships
 
 ### Conforms To
-- [Error](../Swift/Error.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Error](../swift/error.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 
 ---

@@ -6,21 +6,21 @@ Learn about important changes to Sensitive Content Analysis.
 
 #### Overview
 
-Browse notable changes in [`Sensitive Content Analysis`](https://developer.apple.com/documentation/SensitiveContentAnalysis).
+Browse notable changes in [`Sensitive Content Analysis`](https://developer.apple.com/documentation/sensitivecontentanalysis).
 
 #### June 2026
 
 ##### Content Classification
 
-- Identify specific categories of sensitive content detected in media using the [`detectedTypes`](https://developer.apple.com/documentation/SensitiveContentAnalysis/SCSensitivityAnalysis/detectedTypes) property on [`SCSensitivityAnalysis`](https://developer.apple.com/documentation/SensitiveContentAnalysis/SCSensitivityAnalysis). The framework returns a set of [`SCSensitivityAnalysis.ContentType`](https://developer.apple.com/documentation/SensitiveContentAnalysis/SCSensitivityAnalysis/ContentType) values that categorize detected sensitive material.
-- Distinguish between [`sexuallyExplicit`](https://developer.apple.com/documentation/SensitiveContentAnalysis/SCSensitivityAnalysis/ContentType/sexuallyExplicit) and [`goreOrViolence`](https://developer.apple.com/documentation/SensitiveContentAnalysis/SCSensitivityAnalysis/ContentType/goreOrViolence) content types to provide context-appropriate interventions in your app.
+- Identify specific categories of sensitive content detected in media using the [`detectedTypes`](https://developer.apple.com/documentation/sensitivecontentanalysis/scsensitivityanalysis/detectedtypes) property on [`SCSensitivityAnalysis`](https://developer.apple.com/documentation/sensitivecontentanalysis/scsensitivityanalysis). The framework returns a set of [`SCSensitivityAnalysis.ContentType`](https://developer.apple.com/documentation/sensitivecontentanalysis/scsensitivityanalysis/contenttype) values that categorize detected sensitive material.
+- Distinguish between [`sexuallyExplicit`](https://developer.apple.com/documentation/sensitivecontentanalysis/scsensitivityanalysis/contenttype/sexuallyexplicit) and [`goreOrViolence`](https://developer.apple.com/documentation/sensitivecontentanalysis/scsensitivityanalysis/contenttype/goreorviolence) content types to provide context-appropriate interventions in your app.
 
 #### June 2025
 
 ##### Video Stream Analysis
 
-- Analyze live video streams for sensitive content using [`SCVideoStreamAnalyzer`](https://developer.apple.com/documentation/SensitiveContentAnalysis/SCVideoStreamAnalyzer).
-- Receive intervention guidance when sensitive content appears in a video stream, including recommendations to interrupt video playback, indicate sensitivity, or mute audio through the [`SCVideoStreamAnalysisChangeHandler`](https://developer.apple.com/documentation/SensitiveContentAnalysis/SCVideoStreamAnalysisChangeHandler).
+- Analyze live video streams for sensitive content using [`SCVideoStreamAnalyzer`](https://developer.apple.com/documentation/sensitivecontentanalysis/scvideostreamanalyzer).
+- Receive intervention guidance when sensitive content appears in a video stream, including recommendations to interrupt video playback, indicate sensitivity, or mute audio through the [`SCVideoStreamAnalysisChangeHandler`](https://developer.apple.com/documentation/sensitivecontentanalysis/scvideostreamanalysischangehandler).
 
 ## See Also
 

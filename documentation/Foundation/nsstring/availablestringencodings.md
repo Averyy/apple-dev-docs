@@ -34,7 +34,7 @@ Among the more commonly used encodings are:
 - [`NSISOLatin2StringEncoding`](nsisolatin2stringencoding.md)
 - [`NSSymbolStringEncoding`](nssymbolstringencoding.md)
 
-See the [`NSStringEncoding`](nsstringencoding.md) type for a larger list and descriptions of many supported encodings. In addition to those encodings listed here, you can also use the encodings defined for CFString in Core Foundation; you just need to call the [`CFStringConvertEncodingToNSStringEncoding(_:)`](https://developer.apple.com/documentation/CoreFoundation/CFStringConvertEncodingToNSStringEncoding(_:)) function to convert them to a usable format.
+See the [`NSStringEncoding`](nsstringencoding.md) type for a larger list and descriptions of many supported encodings. In addition to those encodings listed here, you can also use the encodings defined for CFString in Core Foundation; you just need to call the [`CFStringConvertEncodingToNSStringEncoding(_:)`](https://developer.apple.com/documentation/corefoundation/cfstringconvertencodingtonsstringencoding(_:)) function to convert them to a usable format.
 
 ## See Also
 

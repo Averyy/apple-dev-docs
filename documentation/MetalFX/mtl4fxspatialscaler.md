@@ -37,7 +37,7 @@ See [`MTLFXSpatialScalerBase`](mtlfxspatialscalerbase.md) for more details on co
 
 ### Inherits From
 - [MTLFXSpatialScalerBase](mtlfxspatialscalerbase.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 
 ---

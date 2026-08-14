@@ -26,7 +26,7 @@ You don’t initialize this type yourself. Instead, WidgetKit creates this type 
 ## Relationships
 
 ### Conforms To
-- [View](../SwiftUI/View.md)
+- [View](../swiftui/view.md)
 
 
 ---

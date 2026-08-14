@@ -56,7 +56,7 @@ shapeLayer.fillRule = kCAFillRuleEvenOdd
 
 The following figure shows the resulting shape layer.
 
-![Composite path displayed in a shape layer](https://docs-assets.developer.apple.com/published/67723bba6f48e3e15851ddfb2c5a2a8c/media-2825196%402x.png)
+![Composite path displayed in a shape layer](/images/com.apple.quartzcore/media-2825196@2x.png)
 
 > **Note**:  Shape rasterization may favor speed over accuracy. For example, pixels with multiple intersecting path segments may not give exact results.
 
@@ -102,16 +102,16 @@ The following figure shows the resulting shape layer.
 - [CALayer](calayer.md)
 ### Conforms To
 - [CAMediaTiming](camediatiming.md)
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCoding](../Foundation/NSCoding.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [NSSecureCoding](../Foundation/NSSecureCoding.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCoding](../foundation/nscoding.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

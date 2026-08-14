@@ -25,7 +25,7 @@ To streamline and enhance video playback controls, a video player component empo
 
 The example below shows an entity with a [`VideoPlayerComponent`](videoplayercomponent.md) attached:
 
-The following code example shows the basic setup for initializing a `VideoPlayerComponent` with an [`AVPlayer`](https://developer.apple.com/documentation/AVFoundation/AVPlayer):
+The following code example shows the basic setup for initializing a `VideoPlayerComponent` with an [`AVPlayer`](https://developer.apple.com/documentation/avfoundation/avplayer):
 
 ```swift
 // Create an entity for display.

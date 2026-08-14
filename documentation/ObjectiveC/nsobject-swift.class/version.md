@@ -44,7 +44,7 @@ The version number applies to `NSArchiver`/`NSUnarchiver`, but not to `NSKeyedAr
 
 ## See Also
 
-- [func version(forClassName: String) -> Int](../Foundation/NSCoder/version(forClassName:).md)
+- [func version(forClassName: String) -> Int](../foundation/nscoder/version(forclassname:).md)
   This method is present for historical reasons and is not used with keyed archivers.
 - [func awakeAfter(using: NSCoder) -> Any?](nsobject-swift.class/awakeafter(using:).md)
   Overridden by subclasses to substitute another object in place of the object that was decoded and subsequently received this message.

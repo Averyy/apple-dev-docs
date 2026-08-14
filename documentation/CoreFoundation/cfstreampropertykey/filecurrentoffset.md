@@ -36,20 +36,20 @@ static let fileCurrentOffset: CFStreamPropertyKey!
   Should Close Native Socket property key.
 - [let kCFStreamPropertySocketSecurityLevel: CFString](kcfstreampropertysocketsecuritylevel.md)
   Socket Security Level property key.
-- [let kCFStreamPropertySSLPeerCertificates: CFString](../CFNetwork/kCFStreamPropertySSLPeerCertificates.md)
+- [let kCFStreamPropertySSLPeerCertificates: CFString](../cfnetwork/kcfstreampropertysslpeercertificates.md)
   SSL Peer Certificates property key for copy operations, which return a `CFArray` object containing `SecCertificateRef` objects.
-- [let kCFStreamPropertySSLPeerTrust: CFString](../CFNetwork/kCFStreamPropertySSLPeerTrust.md)
+- [let kCFStreamPropertySSLPeerTrust: CFString](../cfnetwork/kcfstreampropertysslpeertrust.md)
   SSL Peer Trust property key for copy operations, which return a `SecTrustRef` object containing the result of the SSL handshake.
-- [let kCFStreamPropertySSLSettings: CFString](../CFNetwork/kCFStreamPropertySSLSettings.md)
+- [let kCFStreamPropertySSLSettings: CFString](../cfnetwork/kcfstreampropertysslsettings.md)
   SSL Settings property key for set operations.
-- [let kCFStreamPropertySSLContext: CFString](../CFNetwork/kCFStreamPropertySSLContext.md)
+- [let kCFStreamPropertySSLContext: CFString](../cfnetwork/kcfstreampropertysslcontext.md)
 - [let kCFStreamPropertySOCKSProxy: CFString](kcfstreampropertysocksproxy.md)
   SOCKS proxy property key.
-- [let kCFStreamPropertyProxyLocalBypass: CFString](../CFNetwork/kCFStreamPropertyProxyLocalBypass.md)
+- [let kCFStreamPropertyProxyLocalBypass: CFString](../cfnetwork/kcfstreampropertyproxylocalbypass.md)
   Proxy Local Bypass property key.
-- [let kCFStreamPropertySocketRemoteHost: CFString](../CFNetwork/kCFStreamPropertySocketRemoteHost.md)
+- [let kCFStreamPropertySocketRemoteHost: CFString](../cfnetwork/kcfstreampropertysocketremotehost.md)
   The key’s value is a `CFHostRef` for the remote host if it is known. If not, its value is `NULL`.
-- [let kCFStreamPropertySocketRemoteNetService: CFString](../CFNetwork/kCFStreamPropertySocketRemoteNetService.md)
+- [let kCFStreamPropertySocketRemoteNetService: CFString](../cfnetwork/kcfstreampropertysocketremotenetservice.md)
   The key’s value is a `CFNetServiceRef` for the remote network service if it is known. If not, its value is `NULL`.
 
 

@@ -21,7 +21,7 @@ protocol MDLMeshBufferAllocator : NSObjectProtocol
 
 #### Overview
 
-Classes adopting this protocol provide different ways of handling mesh buffer data. For example, the [`MTKMeshBufferAllocator`](https://developer.apple.com/documentation/MetalKit/MTKMeshBufferAllocator) class can share mesh data with Metal buffers for use in rendering.
+Classes adopting this protocol provide different ways of handling mesh buffer data. For example, the [`MTKMeshBufferAllocator`](https://developer.apple.com/documentation/metalkit/mtkmeshbufferallocator) class can share mesh data with Metal buffers for use in rendering.
 
 When you load meshes from a file with the [`MDLAsset`](mdlasset.md) class or generate meshes with the [`MDLMesh`](mdlmesh.md) class, you must specify an allocator. By choosing an allocator specific to how you use a mesh, you can ensure that vertex and index data for the mesh is copied and transformed a minimal number of times between loading and use.
 
@@ -44,7 +44,7 @@ When you load meshes from a file with the [`MDLAsset`](mdlasset.md) class or gen
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 ### Conforming Types
 - [MDLMeshBufferDataAllocator](mdlmeshbufferdataallocator.md)
 

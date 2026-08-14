@@ -21,7 +21,7 @@ A result code. The result code `kPMNotImplemented` indicates that the printer dr
 ## Parameters
 
 - `printer`: The printer whose number of resolution settings you want to obtain.
-- `count`: A pointer to your   variable. On return, the variable contains the number of resolutions that are supported for the specified printer.
+- `count`: A pointer to your `UInt32` variable. On return, the variable contains the number of resolutions that are supported for the specified printer.
 
 ## See Also
 

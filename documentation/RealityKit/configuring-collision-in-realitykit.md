@@ -18,7 +18,7 @@ This sample code project shows how to use collision groups and collision filters
 
 Collision filters define which entities will collide with which other entities based on the other entity’s collision group. That means all entities that share the same filter are part of the same group or groups and have the same collision properties.  More than one filter can be created for each collision group, however, so not all members of the same collision group necessarily collide with the same other objects.
 
-`CollisionGroup` conforms to [`OptionSet`](https://developer.apple.com/documentation/Swift/OptionSet), which means you typically create individual groups by assigning each group a different bit flag value. If each group has a distinct bit representing it, that allows you to configure collision filters that collide with, or ignore any combination of individual collision groups using `OptionSet`’s various methods.
+`CollisionGroup` conforms to [`OptionSet`](https://developer.apple.com/documentation/swift/optionset), which means you typically create individual groups by assigning each group a different bit flag value. If each group has a distinct bit representing it, that allows you to configure collision filters that collide with, or ignore any combination of individual collision groups using `OptionSet`’s various methods.
 
 Here is how the four collision groups in this sample project are defined:
 
@@ -57,7 +57,7 @@ Requires Xcode 16.2, iOS 18, and an iOS device with an A9 or later processor. AR
 
 - [Simulating physics with collisions in your visionOS app](simulating-physics-with-collisions-in-your-visionos-app.md)
   Create entities that behave and react like physical objects in a RealityKit view.
-- [Creating an interactive 3D model in visionOS](../visionOS/creating-an-interactable-3d-model-in-visionos.md)
+- [Creating an interactive 3D model in visionOS](../visionos/creating-an-interactable-3d-model-in-visionos.md)
   Display an interactive car model using gestures in a reality view.
 - [struct CollisionComponent](collisioncomponent.md)
   A component that gives an entity the ability to collide with other entities that also have collision components.

@@ -26,7 +26,7 @@ This transformation is reversible.
 
 For example, the string “hangul” transliterates to “한굴”.
 
-This is equivalent to [`kCFStringTransformLatinHangul`](https://developer.apple.com/documentation/CoreFoundation/kCFStringTransformLatinHangul).
+This is equivalent to [`kCFStringTransformLatinHangul`](https://developer.apple.com/documentation/corefoundation/kcfstringtransformlatinhangul).
 
 ## See Also
 

@@ -16,7 +16,7 @@ You use Playground Support from within playgrounds to:
 - Access and share persistent data
 - Assess the progress of the learner, update hints, and show success text
 
-You also use Playground Support to display and dismiss , which show the results of running the code in a playground. You can create live views for your own types by leveraging the built-in live view representations available on many existing types.
+You also use Playground Support to display and dismiss *live views*, which show the results of running the code in a playground. You can create live views for your own types by leveraging the built-in live view representations available on many existing types.
 
 Traditional live views are available in playgrounds in Xcode and in Swift Playgrounds. They run in the same process as the code in the playground, so you can access their properties and methods as usual; however, they're reset each time you run the playground. The always-on live view in Swift Playgrounds, activated when you add `LiveView.swift` to a page, executes in its own process so you can persist information and visuals between successive runs. The always-on live view isn't reset until you leave the page. 
 

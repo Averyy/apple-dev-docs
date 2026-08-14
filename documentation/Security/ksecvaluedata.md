@@ -27,7 +27,7 @@ let kSecValueData: CFString
 
 #### Discussion
 
-The corresponding value is of type [`CFData`](https://developer.apple.com/documentation/CoreFoundation/CFData).  For keys and password items, the data is secret (encrypted) and may require the user to enter a password for access.
+The corresponding value is of type [`CFData`](https://developer.apple.com/documentation/corefoundation/cfdata).  For keys and password items, the data is secret (encrypted) and may require the user to enter a password for access.
 
 
 ---

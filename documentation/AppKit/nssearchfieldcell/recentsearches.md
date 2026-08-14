@@ -16,7 +16,7 @@ var recentSearches: [String]! { get set }
 
 #### Discussion
 
-This property contains an array of [`NSString`](https://developer.apple.com/documentation/Foundation/NSString) objects, each of which contains a search string either displayed in the search menu or from a recent autosave archive. If there have been no recent searches and no prior searches saved under an autosave name, this array may be empty. When loading your interface, you might set the value of this property to a set of saved search strings.
+This property contains an array of [`NSString`](https://developer.apple.com/documentation/foundation/nsstring) objects, each of which contains a search string either displayed in the search menu or from a recent autosave archive. If there have been no recent searches and no prior searches saved under an autosave name, this array may be empty. When loading your interface, you might set the value of this property to a set of saved search strings.
 
 ## See Also
 

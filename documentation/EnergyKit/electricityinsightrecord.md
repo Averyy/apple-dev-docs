@@ -22,8 +22,8 @@ This structure provides electricity usage data categorized by environmental impa
 
 The electricity usage data ([`dataByGridCleanliness`](electricityinsightrecord/databygridcleanliness.md)) refers to either energy consumption or generation measurements, or amounts of time that an electrical device is operational and consuming energy. The type of electricity usage data depends on the generic type parameter ([`ElectricityInsightMeasure`](electricityinsightmeasure.md)) for a given instance, which can be either:
 
-- [`ElectricityInsightRecord`](electricityinsightrecord.md)<[`Measurement`](https://developer.apple.com/documentation/Foundation/Measurement)<[`UnitEnergy`](https://developer.apple.com/documentation/Foundation/UnitEnergy)>>
-- [`ElectricityInsightRecord`](electricityinsightrecord.md)<[`Duration`](https://developer.apple.com/documentation/Swift/Duration)>
+- [`ElectricityInsightRecord`](electricityinsightrecord.md)<[`Measurement`](https://developer.apple.com/documentation/foundation/measurement)<[`UnitEnergy`](https://developer.apple.com/documentation/foundation/unitenergy)>>
+- [`ElectricityInsightRecord`](electricityinsightrecord.md)<[`Duration`](https://developer.apple.com/documentation/swift/duration)>
 
 ## Topics
 

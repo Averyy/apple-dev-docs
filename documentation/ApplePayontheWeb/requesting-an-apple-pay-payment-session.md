@@ -25,7 +25,7 @@ For Apple Pay on the web, you can also use the endpoint `POST https://<validatio
 
 Use the merchant identity certificate associated with your merchant ID in the request. See [`Configuring Your Environment`](configuring-your-environment.md) for more information.
 
-- **`merchantIdentifier`**: Your merchant ID. For payment platforms registering merchants through the [`Apple Pay Web Merchant Registration API`](https://developer.apple.com/documentation/ApplePayWebMerchantRegistrationAPI), this should be the `partnerInternalMerchantIdentifier` defined for the each registered merchant.
+- **`merchantIdentifier`**: Your merchant ID. For payment platforms registering merchants through the [`Apple Pay Web Merchant Registration API`](https://developer.apple.com/documentation/applepaywebmerchantregistrationapi), this should be the `partnerInternalMerchantIdentifier` defined for the each registered merchant.
 - **`displayName`**: A string of 64 or fewer UTF-8 characters containing the canonical name for your store, suitable for display. A good display name remains a consistent value for the store and doesn’t contain dynamic values such as incrementing order numbers. Don’t localize the name. Use only characters from the supported character sets in the fonts listed in the table below.
 - **`initiative`**: A predefined value that identifies the e-commerce application making the request.
 - **`initiativeContext`**: A value you provide based on the initiative.
@@ -73,7 +73,7 @@ A session request with a JSON payload for Apple Pay on the web.
 
 The `displayName` you provide in the payload appears in the Touch Bar like this:
 
-![A screenshot of the Touch Bar requesting Touch ID for an Apple Pay transaction.](https://docs-assets.developer.apple.com/published/73df4987bb2df22455118477c50306ab/media-3199964%402x.png)
+![A screenshot of the Touch Bar requesting Touch ID for an Apple Pay transaction.](/images/com.apple.applepayontheweb/media-3199964@2x.png)
 
 > **Note**:  Start Session is being phased out and replaced by Payment Session.
 

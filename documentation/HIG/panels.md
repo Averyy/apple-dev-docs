@@ -11,7 +11,7 @@ framework: HIG
 
 In a macOS app, a panel typically floats above other open windows providing supplementary controls, options, or information related to the active window or current selection.
 
-![A stylized representation of a panel floating above a window. The image is tinted red to subtly reflect the red in the original six-color Apple logo.](https://docs-assets.developer.apple.com/published/d7f533ec9504d74179c4d2e48a8a3e9b/components-panel-intro~dark%402x.png)
+![A stylized representation of a panel floating above a window. The image is tinted red to subtly reflect the red in the original six-color Apple logo.](/images/com.apple.HIG/components-panel-intro~dark@2x.png)
 In general, a panel has a less prominent appearance than an app’s [macOS window states](windows.md#macOS-window-states). When the situation calls for it, a panel can also use a dark, translucent style to support a heads-up display (or *HUD*) experience.
 When your app runs in other platforms, consider using a modal view to present supplementary content that’s relevant to the current task or selection. For guidance, see [Modality](modality.md).
 
@@ -27,7 +27,7 @@ When your app runs in other platforms, consider using a modal view to present su
 
 ## HUD-style panels
 A HUD-style panel serves the same function as a standard panel, but its appearance is darker and translucent. HUDs work well in apps that present highly visual content or that provide an immersive experience, such as media editing or a full-screen slide show. For example, QuickTime Player uses a HUD to display inspector information without obstructing too much content.
-![A screenshot of a translucent HUD panel, used to display inspector information for a movie file, including the filename, format, frames per second, data rate, and the frame size of the movie content.](https://docs-assets.developer.apple.com/published/5f0dcceec65bbe08f5b80bcbd2d4f65e/hud-style-panel~dark%402x.png)
+![A screenshot of a translucent HUD panel, used to display inspector information for a movie file, including the filename, format, frames per second, data rate, and the frame size of the movie content.](/images/com.apple.HIG/hud-style-panel~dark@2x.png)
 **Prefer standard panels.** People can be distracted or confused by a HUD when there’s no logical reason for its presence. Also, a HUD might not match the current appearance setting. In general, use a HUD only:
 - In a media-oriented app that presents movies, photos, or slides
 - When a standard panel would obscure essential content
@@ -35,7 +35,7 @@ A HUD-style panel serves the same function as a standard panel, but its appearan
 **Maintain one panel style when your app switches modes.** For example, if you use a HUD when your app is in full-screen mode, prefer maintaining the HUD style when people take your app out of full-screen mode.
 **Use color sparingly in HUDs.** Too much color in the dark appearance of a HUD can be distracting. Often, you need only small amounts of high-contrast color to highlight important information in a HUD.
 **Keep HUDs small.** HUDs are designed to be unobtrusively useful, so letting them grow too large defeats their primary purpose. Don’t let a HUD obscure the content it adjusts, and make sure it doesn’t compete with the content for people’s attention.
-For developer guidance, see [hudWindow](../AppKit/NSWindow/StyleMask-swift.struct/hudWindow.md).
+For developer guidance, see [hudWindow](../appkit/nswindow/stylemask-swift.struct/hudwindow.md).
 
 ## Platform considerations
 *Not supported in iOS, iPadOS, tvOS, visionOS, or watchOS.*
@@ -47,8 +47,8 @@ For developer guidance, see [hudWindow](../AppKit/NSWindow/StyleMask-swift.struc
 [Modality](modality.md)
 
 #### Developer documentation
-[NSPanel](../AppKit/NSPanel.md) — AppKit
-[hudWindow](../AppKit/NSWindow/StyleMask-swift.struct/hudWindow.md) — AppKit
+[NSPanel](../appkit/nspanel.md) — AppKit
+[hudWindow](../appkit/nswindow/stylemask-swift.struct/hudwindow.md) — AppKit
 
 
 

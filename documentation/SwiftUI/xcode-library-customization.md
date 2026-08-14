@@ -8,16 +8,16 @@ Expose custom views and modifiers in the Xcode library.
 
 You can add your custom SwiftUI views and view modifiers to Xcode’s library. This allows anyone developing your app or adopting your framework to access them by clicking the Library button (+) in Xcode’s toolbar. You can select and drag the custom library items into code, just like you would for system-provided items.
 
-![None](https://docs-assets.developer.apple.com/published/75621f8df7fbcc9a90dc8e0bf967ef78/xcode-library-customization-hero%402x.png)
+![None](/images/com.apple.SwiftUI/xcode-library-customization-hero@2x.png)
 
-To add items to the library, create a structure that conforms to the [`LibraryContentProvider`](https://developer.apple.com/documentation/DeveloperToolsSupport/LibraryContentProvider) protocol and encapsulate any items you want to add as [`LibraryItem`](https://developer.apple.com/documentation/DeveloperToolsSupport/LibraryItem) instances. Implement the [`views`](https://developer.apple.com/documentation/DeveloperToolsSupport/LibraryContentProvider/views) computed property to add library items containing views. Implement the [`modifiers(base:)`](https://developer.apple.com/documentation/DeveloperToolsSupport/LibraryContentProvider/modifiers(base:)) method to add items containing view modifiers. Xcode harvests items from all of the library content providers in your project as you work, and makes them available to you in its library.
+To add items to the library, create a structure that conforms to the [`LibraryContentProvider`](https://developer.apple.com/documentation/developertoolssupport/librarycontentprovider) protocol and encapsulate any items you want to add as [`LibraryItem`](https://developer.apple.com/documentation/developertoolssupport/libraryitem) instances. Implement the [`views`](https://developer.apple.com/documentation/developertoolssupport/librarycontentprovider/views) computed property to add library items containing views. Implement the [`modifiers(base:)`](https://developer.apple.com/documentation/developertoolssupport/librarycontentprovider/modifiers(base:)) method to add items containing view modifiers. Xcode harvests items from all of the library content providers in your project as you work, and makes them available to you in its library.
 
 ## Topics
 
 ### Creating library items
-- [protocol LibraryContentProvider](../DeveloperToolsSupport/LibraryContentProvider.md)
+- [protocol LibraryContentProvider](../developertoolssupport/librarycontentprovider.md)
   A source of Xcode library and code completion content.
-- [struct LibraryItem](../DeveloperToolsSupport/LibraryItem.md)
+- [struct LibraryItem](../developertoolssupport/libraryitem.md)
   A single item to add to the Xcode library.
 
 ## See Also

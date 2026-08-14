@@ -30,15 +30,15 @@ When the audio engine’s I/O unit observes a change to the audio input or outpu
 
 - [static let AVAudioUnitComponentTagsDidChange: NSNotification.Name](nsnotification/name-swift.struct/avaudiounitcomponenttagsdidchange.md)
   A notification that indicates when component tags change.
-- [class let interruptionNotification: NSNotification.Name](../AVFAudio/AVAudioSession/interruptionNotification.md)
+- [class let interruptionNotification: NSNotification.Name](../avfaudio/avaudiosession/interruptionnotification.md)
   A notification the system posts when an audio interruption occurs.
-- [class let mediaServicesWereLostNotification: NSNotification.Name](../AVFAudio/AVAudioSession/mediaServicesWereLostNotification.md)
+- [class let mediaServicesWereLostNotification: NSNotification.Name](../avfaudio/avaudiosession/mediaserviceswerelostnotification.md)
   A notification the system posts when it terminates the media server.
-- [class let mediaServicesWereResetNotification: NSNotification.Name](../AVFAudio/AVAudioSession/mediaServicesWereResetNotification.md)
+- [class let mediaServicesWereResetNotification: NSNotification.Name](../avfaudio/avaudiosession/mediaserviceswereresetnotification.md)
   A notification the system posts when the media server restarts.
-- [class let routeChangeNotification: NSNotification.Name](../AVFAudio/AVAudioSession/routeChangeNotification.md)
+- [class let routeChangeNotification: NSNotification.Name](../avfaudio/avaudiosession/routechangenotification.md)
   A notification the system posts when its audio route changes.
-- [class let silenceSecondaryAudioHintNotification: NSNotification.Name](../AVFAudio/AVAudioSession/silenceSecondaryAudioHintNotification.md)
+- [class let silenceSecondaryAudioHintNotification: NSNotification.Name](../avfaudio/avaudiosession/silencesecondaryaudiohintnotification.md)
   A notification the system posts when the primary audio from other apps starts and stops.
 
 

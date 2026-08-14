@@ -40,7 +40,7 @@ VStack {
 
 The [`VStack`](vstack.md) in the example above centers the first toggle’s control element in the available space, while it centers the second toggle’s combined label and control element:
 
-![A screenshot showing a view with two toggle controls where one label](https://docs-assets.developer.apple.com/published/2f1d6257593725bab61b7e3d52b8e2d0/View-labelsHidden-1%402x.png)
+![A screenshot showing a view with two toggle controls where one label](/images/com.apple.SwiftUI/View-labelsHidden-1@2x.png)
 
 Always provide a label for controls, even when you hide the label, because SwiftUI uses labels for other purposes, including accessibility.
 

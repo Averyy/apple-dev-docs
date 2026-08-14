@@ -48,7 +48,7 @@ MapKit classes, protocols, and entitlements that are no longer supported.
 - [enum MKPinAnnotationColor](mkpinannotationcolor.md)
   The supported colors for pin annotations.
 ### Entitlements
-- [Maps Entitlement](../BundleResources/Entitlements/com.apple.developer.maps.md)
+- [Maps Entitlement](../bundleresources/entitlements/com.apple.developer.maps.md)
   A Boolean value that indicates whether the app may provide directions beyond what Maps supports, such as subway routes, hiking trails, and bike paths.
 
 

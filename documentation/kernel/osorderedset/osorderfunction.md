@@ -24,9 +24,9 @@ A comparison result of the object:
 
 ## Parameters
 
-- `obj1`: An object from the ordered set. May be  .
-- `obj2`: The object being ordered within the ordered set. May be  .
-- `context`: A pointer to a user-provided context. May be  .
+- `obj1`: An object from the ordered set. May be `NULL`.
+- `obj2`: The object being ordered within the ordered set. May be `NULL`.
+- `context`: A pointer to a user-provided context. May be `NULL`.
 
 
 ---

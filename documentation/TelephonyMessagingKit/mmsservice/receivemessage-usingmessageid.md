@@ -7,7 +7,6 @@ Retrieves an MMS message that matches the given identifiers.
 
 **Availability**:
 - iOS 26.0+
-- iPadOS 26.0+
 
 ## Declaration
 

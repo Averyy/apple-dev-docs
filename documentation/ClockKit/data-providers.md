@@ -58,7 +58,7 @@ Feed data to a complication template.
   An abstract class that defines the base behavior for all templates.
 - [enum CLKComplicationFamily](clkcomplicationfamily.md)
   Constants indicating the template groups.
-- [CLKComplicationSupportedFamilies](../BundleResources/Information-Property-List/CLKComplicationSupportedFamilies.md)
+- [CLKComplicationSupportedFamilies](../bundleresources/information-property-list/clkcomplicationsupportedfamilies.md)
   The complication families for which the app can provide data.
 
 

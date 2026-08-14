@@ -29,14 +29,14 @@ enum ActivityPreviewViewKind
 ## Relationships
 
 ### Conforms To
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 
-- [Displaying live data with Live Activities](../ActivityKit/displaying-live-data-with-live-activities.md)
+- [Displaying live data with Live Activities](../activitykit/displaying-live-data-with-live-activities.md)
   Display up-to-date data and offer quick interactions in the Dynamic Island, on the Lock Screen, in CarPlay, and on a paired Mac or Apple Watch.
-- [ActivityKit](../ActivityKit/ActivityKit.md)
+- [ActivityKit](../activitykit/activitykit.md)
   Share live updates from your app as Live Activities on iPhone, iPad, Apple Watch, and the Mac.
 - [Creating a widget extension](creating-a-widget-extension.md)
   Display your app’s content in a convenient, informative widget on various devices.

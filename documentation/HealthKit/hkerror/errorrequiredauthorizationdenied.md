@@ -21,7 +21,7 @@ static var errorRequiredAuthorizationDenied: HKError.Code { get }
 
 #### Discussion
 
-You can specify required clinical record types using the [`NSHealthRequiredReadAuthorizationTypeIdentifiers`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSHealthRequiredReadAuthorizationTypeIdentifiers) `Info.plist` key.
+You can specify required clinical record types using the [`NSHealthRequiredReadAuthorizationTypeIdentifiers`](https://developer.apple.com/documentation/bundleresources/information-property-list/nshealthrequiredreadauthorizationtypeidentifiers) `Info.plist` key.
 
 ## See Also
 

@@ -21,9 +21,9 @@ class CAMetalLayer
 
 #### Overview
 
-Use a [`CAMetalLayer`](cametallayer.md) when you want to use Metal to render a layer’s contents; for example, to render into a view. Consider using [`MTKView`](https://developer.apple.com/documentation/MetalKit/MTKView) instead, because this class automatically wraps a [`CAMetalLayer`](cametallayer.md) object and provides a higher-level abstraction.
+Use a [`CAMetalLayer`](cametallayer.md) when you want to use Metal to render a layer’s contents; for example, to render into a view. Consider using [`MTKView`](https://developer.apple.com/documentation/metalkit/mtkview) instead, because this class automatically wraps a [`CAMetalLayer`](cametallayer.md) object and provides a higher-level abstraction.
 
-If you’re using UIKit, to create a view that uses a [`CAMetalLayer`](cametallayer.md), create a subclass of [`UIView`](https://developer.apple.comhttps://developer.apple.com/library/archive/releasenotes/iPhone/RN-iPhoneSDK/index.html#//apple_ref/doc/uid/TP40007428-CH1-SW18) and override its [`layerClass`](https://developer.apple.com/documentation/UIKit/UIView/layerClass) class method to return a [`CAMetalLayer`](cametallayer.md):
+If you’re using UIKit, to create a view that uses a [`CAMetalLayer`](cametallayer.md), create a subclass of [`UIView`](https://developer.apple.comhttps://developer.apple.com/library/archive/releasenotes/iPhone/RN-iPhoneSDK/index.html#//apple_ref/doc/uid/TP40007428-CH1-SW18) and override its [`layerClass`](https://developer.apple.com/documentation/uikit/uiview/layerclass) class method to return a [`CAMetalLayer`](cametallayer.md):
 
 ```objc
 + (Class) layerClass
@@ -32,7 +32,7 @@ If you’re using UIKit, to create a view that uses a [`CAMetalLayer`](cametalla
 }
 ```
 
-If you’re using AppKit, configure an [`NSView`](https://developer.apple.com/documentation/AppKit/NSView) object to use a backing layer and assign a [`CAMetalLayer`](cametallayer.md) object to the view:
+If you’re using AppKit, configure an [`NSView`](https://developer.apple.com/documentation/appkit/nsview) object to use a backing layer and assign a [`CAMetalLayer`](cametallayer.md) object to the view:
 
 ```objc
 myView.wantsLayer = YES;
@@ -60,7 +60,7 @@ renderPassDescriptor.colorAttachments[0].clearColor = MTLClearColorMake(0.0,0.0,
 ...
 ```
 
-To change the layer’s contents to the new drawable, call the [`present(_:)`](https://developer.apple.com/documentation/Metal/MTLCommandBuffer/present(_:)) method (or one of its variants) on the command buffer containing the encoded render pass, passing in the drawable object to present.
+To change the layer’s contents to the new drawable, call the [`present(_:)`](https://developer.apple.com/documentation/metal/mtlcommandbuffer/present(_:)) method (or one of its variants) on the command buffer containing the encoded render pass, passing in the drawable object to present.
 
 ```objc
 [commandBuffer presentDrawable:drawable];
@@ -98,7 +98,7 @@ func draw(in view: MTKView) {
 
 This block releases drawables promptly and avoids possible deadlock situations with multiple drawables. Release drawables as soon as possible after committing your onscreen render pass.
 
-> **Note**:  As of iOS 10 and tvOS 10, you can safely retain a drawable to query its properties, such as [`drawableID`](https://developer.apple.com/documentation/Metal/MTLDrawable/drawableID) and [`presentedTime`](https://developer.apple.com/documentation/Metal/MTLDrawable/presentedTime), after the system has presented it. If you don’t need to query these properties, release the drawable when you no longer need it.
+> **Note**:  As of iOS 10 and tvOS 10, you can safely retain a drawable to query its properties, such as [`drawableID`](https://developer.apple.com/documentation/metal/mtldrawable/drawableid) and [`presentedTime`](https://developer.apple.com/documentation/metal/mtldrawable/presentedtime), after the system has presented it. If you don’t need to query these properties, release the drawable when you no longer need it.
 
 ## Topics
 
@@ -145,16 +145,16 @@ This block releases drawables promptly and avoids possible deadlock situations w
 - [CALayer](calayer.md)
 ### Conforms To
 - [CAMediaTiming](camediatiming.md)
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCoding](../Foundation/NSCoding.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [NSSecureCoding](../Foundation/NSSecureCoding.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCoding](../foundation/nscoding.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

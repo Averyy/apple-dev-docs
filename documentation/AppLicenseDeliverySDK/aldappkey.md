@@ -13,7 +13,7 @@ struct ALDAppKey
 
 #### Overview
 
-An instance of this structure represents a unique variant for an app. The [`AppleItemID`](https://developer.apple.com/documentation/MarketplaceKit/AppleItemID) argument to the [`init(appleItemID:appKeyBlob:)`](aldappkey/init(appleitemid:appkeyblob:).md) initializer refers to the app, and the `appKeyBlob` argument refers to a *key blob* for a specific app variant that App Store Connect provides your marketplace server during app ingestion. For more information, see [`Ingesting an alternative distribution package`](https://developer.apple.com/documentation/appdistribution/ingesting-an-alternative-distribution-package).
+An instance of this structure represents a unique variant for an app. The [`AppleItemID`](https://developer.apple.com/documentation/marketplacekit/appleitemid) argument to the [`init(appleItemID:appKeyBlob:)`](aldappkey/init(appleitemid:appkeyblob:).md) initializer refers to the app, and the `appKeyBlob` argument refers to a *key blob* for a specific app variant that App Store Connect provides your marketplace server during app ingestion. For more information, see [`Ingesting an alternative distribution package`](https://developer.apple.com/documentation/marketplacekit/ingesting-an-alternative-distribution-package).
 
 ## Topics
 

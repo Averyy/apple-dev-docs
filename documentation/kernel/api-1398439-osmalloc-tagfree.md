@@ -20,7 +20,7 @@ OSMalloc tags must not be freed while any memory blocks allocated with them stil
 
 ## Parameters
 
-- `tag`: The   to free.
+- `tag`: The [`OSMallocTag`](osmalloctag.md) to free.
 
 ## See Also
 

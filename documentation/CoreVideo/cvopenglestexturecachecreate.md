@@ -22,10 +22,10 @@ Upon successful creation of the texture cache, this function returns [`kCVReturn
 
 ## Parameters
 
-- `allocator`: The [`CFAllocator`](https://developer.apple.com/documentation/CoreFoundation/CFAllocator) to use for allocating the texture cache. This parameter can be `NULL`.
-- `cacheAttributes`: A [`CFDictionary`](https://developer.apple.com/documentation/CoreFoundation/CFDictionary) containing the attributes of the texture cache itself. This parameter can be `NULL`.
+- `allocator`: The [`CFAllocator`](https://developer.apple.com/documentation/corefoundation/cfallocator) to use for allocating the texture cache. This parameter can be `NULL`.
+- `cacheAttributes`: A [`CFDictionary`](https://developer.apple.com/documentation/corefoundation/cfdictionary) containing the attributes of the texture cache itself. This parameter can be `NULL`.
 - `eaglContext`: The OpenGLES 2.0 context into which the texture objects will be created. OpenGLES 1.x contexts are not supported.
-- `textureAttributes`: A [`CFDictionary`](https://developer.apple.com/documentation/CoreFoundation/CFDictionary) containing the attributes to be used for creating the [`CVOpenGLESTexture`](cvopenglestexture.md) objects. This parameter can be `NULL`.
+- `textureAttributes`: A [`CFDictionary`](https://developer.apple.com/documentation/corefoundation/cfdictionary) containing the attributes to be used for creating the [`CVOpenGLESTexture`](cvopenglestexture.md) objects. This parameter can be `NULL`.
 - `cacheOut`: A pointer to a `CVOpenGLESTextureCacheRef` where the newly created texture cache will be placed.
 
 ## See Also

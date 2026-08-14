@@ -22,7 +22,7 @@ The unavailable capabilities based on the hardware and the user authorization.
 
 #### Discussion
 
-You manage and run the [`ARSession`](https://developer.apple.com/documentation/ARKit/ARSession) for the `SpatialTrackingSession`.
+You manage and run the [`ARSession`](https://developer.apple.com/documentation/arkit/arsession) for the `SpatialTrackingSession`.
 
 ## Parameters
 

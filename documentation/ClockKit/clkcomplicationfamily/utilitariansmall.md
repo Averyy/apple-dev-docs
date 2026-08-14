@@ -18,7 +18,7 @@ case utilitarianSmall
 
 The following figure shows the size and location of the utilitarian small complication.
 
-![Diagram showing the size and position of a utilitarian small complication.](https://docs-assets.developer.apple.com/published/17c5ece38ff3c299a1698b4947d8d546/media-2933733%402x.png)
+![Diagram showing the size and position of a utilitarian small complication.](/images/com.apple.clockkit/media-2933733@2x.png)
 
 The utilitarian small family can display the [`CLKComplicationTemplateUtilitarianSmallFlat`](clkcomplicationtemplateutilitariansmallflat.md), [`CLKComplicationTemplateUtilitarianSmallSquare`](clkcomplicationtemplateutilitariansmallsquare.md), [`CLKComplicationTemplateUtilitarianSmallRingText`](clkcomplicationtemplateutilitariansmallringtext.md), and [`CLKComplicationTemplateUtilitarianSmallRingImage`](clkcomplicationtemplateutilitariansmallringimage.md) templates.
 

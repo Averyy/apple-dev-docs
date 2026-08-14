@@ -30,7 +30,7 @@ var recipientProperties: [GKPlayer : [String : Any]]? { get set }
 
 Matchmaking rules may use these properties to improve matchmaking results and reduce wait times. You set rules in App Store Connect to find players that best match one or more of the recipient’s properties in a reasonable amount of time by loosening the criteria over time.
 
-This property contains key-value pairs where the keys are the recipient player objects and the values are the recipient’s properties. The recipient’s properties are key-value pairs with game-specific meanings where keys may be any string, except `gc`, which GameKit reserves. The values need to be types that the [`JSONSerialization`](https://developer.apple.com/documentation/Foundation/JSONSerialization) class can convert to JSON data.
+This property contains key-value pairs where the keys are the recipient player objects and the values are the recipient’s properties. The recipient’s properties are key-value pairs with game-specific meanings where keys may be any string, except `gc`, which GameKit reserves. The values need to be types that the [`JSONSerialization`](https://developer.apple.com/documentation/foundation/jsonserialization) class can convert to JSON data.
 
 ```swift
 // Create a match request.

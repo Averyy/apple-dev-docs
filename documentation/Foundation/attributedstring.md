@@ -66,7 +66,7 @@ You can define your own custom attributes by creating types that conform to [`At
 
 ##### Creating Attributed Strings with Markdown
 
-You can create an attributed string by passing a standard [`String`](https://developer.apple.com/documentation/Swift/String) or [`Data`](data.md) instance that contains Markdown to initializers like [`init(markdown:options:baseURL:)`](attributedstring/init(markdown:options:baseurl:)-52n3u.md). The attributed string creates attributes by parsing the markup in the string.
+You can create an attributed string by passing a standard [`String`](https://developer.apple.com/documentation/swift/string) or [`Data`](data.md) instance that contains Markdown to initializers like [`init(markdown:options:baseURL:)`](attributedstring/init(markdown:options:baseurl:)-52n3u.md). The attributed string creates attributes by parsing the markup in the string.
 
 ```swift
 do {
@@ -114,7 +114,7 @@ You can define your own attributes by implementing [`AttributedStringKey`](attri
   Creates an attributed string by looking up a localized string from the app’s bundle, including an attribute scope.
 - [init<S>(localized: String.LocalizationValue, options: AttributedString.FormattingOptions, table: String?, bundle: Bundle?, locale: Locale?, comment: StaticString?, including: KeyPath<AttributeScopes, S.Type>)](attributedstring/init(localized:options:table:bundle:locale:comment:including:)-5jzpg.md)
   Creates an attributed string by looking up a localized string from the app’s bundle, including an attribute scope that a key path identifies.
-- [String.LocalizationValue](../Swift/String/LocalizationValue.md)
+- [String.LocalizationValue](../swift/string/localizationvalue.md)
   A reference to a localizable string, with optional string interpolation.
 - [AttributedString.FormattingOptions](attributedstring/formattingoptions.md)
   Options that affect the handling of attributes.
@@ -329,23 +329,23 @@ You can define your own attributes by implementing [`AttributedStringKey`](attri
 ### Conforms To
 - [AttributedStringAttributeMutation](attributedstringattributemutation.md)
 - [AttributedStringProtocol](attributedstringprotocol.md)
-- [Copyable](../Swift/Copyable.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Decodable](../Swift/Decodable.md)
+- [Copyable](../swift/copyable.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Decodable](../swift/decodable.md)
 - [DecodableWithConfiguration](decodablewithconfiguration.md)
-- [Encodable](../Swift/Encodable.md)
+- [Encodable](../swift/encodable.md)
 - [EncodableWithConfiguration](encodablewithconfiguration.md)
-- [Equatable](../Swift/Equatable.md)
-- [Escapable](../Swift/Escapable.md)
-- [ExpressibleByExtendedGraphemeClusterLiteral](../Swift/ExpressibleByExtendedGraphemeClusterLiteral.md)
-- [ExpressibleByStringLiteral](../Swift/ExpressibleByStringLiteral.md)
-- [ExpressibleByUnicodeScalarLiteral](../Swift/ExpressibleByUnicodeScalarLiteral.md)
-- [Hashable](../Swift/Hashable.md)
-- [IntentValueConvertible](../AppIntents/IntentValueConvertible.md)
-- [IntentValueExpressing](../AppIntents/IntentValueExpressing.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
-- [Transferable](../CoreTransferable/Transferable.md)
+- [Equatable](../swift/equatable.md)
+- [Escapable](../swift/escapable.md)
+- [ExpressibleByExtendedGraphemeClusterLiteral](../swift/expressiblebyextendedgraphemeclusterliteral.md)
+- [ExpressibleByStringLiteral](../swift/expressiblebystringliteral.md)
+- [ExpressibleByUnicodeScalarLiteral](../swift/expressiblebyunicodescalarliteral.md)
+- [Hashable](../swift/hashable.md)
+- [IntentValueConvertible](../appintents/intentvalueconvertible.md)
+- [IntentValueExpressing](../appintents/intentvalueexpressing.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
+- [Transferable](../coretransferable/transferable.md)
 
 ## See Also
 

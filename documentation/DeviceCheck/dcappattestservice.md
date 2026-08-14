@@ -55,14 +55,14 @@ For more information about how to support App Attest in your app, see [`Establis
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 
@@ -76,7 +76,7 @@ For more information about how to support App Attest in your app, see [`Establis
   Test your implementation in a development environment and onboard users gradually.
 - [Attestation Object Validation Guide](attestation-object-validation-guide.md)
   Use this guide to validate your implementation of verifying the attestation object verification process.
-- [App Attest Environment](../BundleResources/Entitlements/com.apple.developer.devicecheck.appattest-environment.md)
+- [App Attest Environment](../bundleresources/entitlements/com.apple.developer.devicecheck.appattest-environment.md)
   The environment for an app that uses the App Attest service to validate itself.
 
 

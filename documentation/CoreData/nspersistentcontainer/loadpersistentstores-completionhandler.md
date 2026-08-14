@@ -26,7 +26,7 @@ Once the persistent container has been initialized, you need to execute [`loadPe
 
 Once the completion handler has fired, the stack is fully initialized and is ready for use. The completion handler will be called once for each persistent store that is created.
 
-If there is an error in the loading of the persistent stores, the [`NSError`](https://developer.apple.com/documentation/Foundation/NSError) value will be populated.
+If there is an error in the loading of the persistent stores, the [`NSError`](https://developer.apple.com/documentation/foundation/nserror) value will be populated.
 
 ## Parameters
 

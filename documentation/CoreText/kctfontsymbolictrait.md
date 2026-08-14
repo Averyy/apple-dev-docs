@@ -22,7 +22,7 @@ let kCTFontSymbolicTrait: CFString
 
 #### Discussion
 
-The value is returned as a [`CFNumber`](https://developer.apple.com/documentation/CoreFoundation/CFNumber) object.
+The value is returned as a [`CFNumber`](https://developer.apple.com/documentation/corefoundation/cfnumber) object.
 
 ## See Also
 

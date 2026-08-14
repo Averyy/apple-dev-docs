@@ -20,7 +20,7 @@ The StoreKitTest framework makes StoreKit testing in Xcode available for automat
 
 For testing in-app purchase transactions, use `SKTestSession`. Each instance of `SKTestSession` gives you access to the same settings you manually change for StoreKit testing in Xcode. Use this class to test a variety of in-app purchase scenarios, such as subscription renewals and Ask to Buy transactions, and maintain control over the transactions in the testing environment.
 
-For testing ad impressions and postbacks, use `SKAdTestSession`. Each instance of `SKAdTestSession` holds a set of test postbacks that you create and can use in multiple unit tests. Ad networks that use [`SKAdNetwork`](https://developer.apple.com/documentation/StoreKit/SKAdNetwork) APIs can use this class to validate the ad impressions that they sign, and test receiving postbacks on their server. Advertised apps can test their conversion value updates.
+For testing ad impressions and postbacks, use `SKAdTestSession`. Each instance of `SKAdTestSession` holds a set of test postbacks that you create and can use in multiple unit tests. Ad networks that use [`SKAdNetwork`](https://developer.apple.com/documentation/storekit/skadnetwork) APIs can use this class to validate the ad impressions that they sign, and test receiving postbacks on their server. Advertised apps can test their conversion value updates.
 
 Testing StoreKit in iOS, watchOS, or tvOS apps requires Xcode 12 or later running on macOS 10.15 or later. Testing StoreKit in a macOS app requires Xcode 12 or later running on macOS 11 or later.
 
@@ -29,7 +29,7 @@ Testing StoreKit in iOS, watchOS, or tvOS apps requires Xcode 12 or later runnin
 ## Topics
 
 ### StoreKit transaction testing
-- [Setting up StoreKit Testing in Xcode](../Xcode/setting-up-storekit-testing-in-xcode.md)
+- [Setting up StoreKit Testing in Xcode](../xcode/setting-up-storekit-testing-in-xcode.md)
   Prepare your test environment to test in-app purchases with data you configure locally.
 - [class SKTestSession](sktestsession.md)
   The controls and environment configuration you use to test StoreKit transactions in Xcode.

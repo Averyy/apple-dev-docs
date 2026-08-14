@@ -20,7 +20,7 @@ let VSOpenTVProviderSettingsURLString: String
 
 #### Discussion
 
-Pass this URL to [`open(_:options:completionHandler:)`](https://developer.apple.com/documentation/UIKit/UIApplication/open(_:options:completionHandler:)) to open the Settings app and show the TV Provider settings.
+Pass this URL to [`open(_:options:completionHandler:)`](https://developer.apple.com/documentation/uikit/uiapplication/open(_:options:completionhandler:)) to open the Settings app and show the TV Provider settings.
 
 
 ---

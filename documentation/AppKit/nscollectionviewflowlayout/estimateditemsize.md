@@ -16,9 +16,9 @@ var estimatedItemSize: NSSize { get set }
 
 #### Discussion
 
-Providing an estimated item size lets the collection view defer some of the calculations needed to determine the size of its content, which can improve performance. Instead of explicitly computing the size of each item, the flow layout assumes that offscreen items have the estimated size. The estimated size is used only until an actual value is calculated. The default value of this property is [`NSZeroSize`](https://developer.apple.com/documentation/Foundation/NSZeroSize).
+Providing an estimated item size lets the collection view defer some of the calculations needed to determine the size of its content, which can improve performance. Instead of explicitly computing the size of each item, the flow layout assumes that offscreen items have the estimated size. The estimated size is used only until an actual value is calculated. The default value of this property is [`NSZeroSize`](https://developer.apple.com/documentation/foundation/nszerosize).
 
-If the value of this property is not [`NSZeroSize`](https://developer.apple.com/documentation/Foundation/NSZeroSize), the flow layout uses the estimated size you specified. If all of your items actually have the same size, use the [`itemSize`](nscollectionviewflowlayout/itemsize.md) property to set their size and set this property to [`NSZeroSize`](https://developer.apple.com/documentation/Foundation/NSZeroSize). For more information about how item sizes are determined, see [`Understanding How the Flow Layout is Generated`](nscollectionviewflowlayout#Understanding-How-the-Flow-Layout-is-Generated.md).
+If the value of this property is not [`NSZeroSize`](https://developer.apple.com/documentation/foundation/nszerosize), the flow layout uses the estimated size you specified. If all of your items actually have the same size, use the [`itemSize`](nscollectionviewflowlayout/itemsize.md) property to set their size and set this property to [`NSZeroSize`](https://developer.apple.com/documentation/foundation/nszerosize). For more information about how item sizes are determined, see [`Understanding How the Flow Layout is Generated`](nscollectionviewflowlayout#Understanding-How-the-Flow-Layout-is-Generated.md).
 
 ## See Also
 

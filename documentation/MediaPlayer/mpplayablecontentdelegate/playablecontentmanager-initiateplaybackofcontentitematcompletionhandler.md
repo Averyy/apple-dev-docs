@@ -27,7 +27,7 @@ The system calls this method when a media player interface needs to play a media
 
 - `contentManager`: The content manager that initiated the request.
 - `indexPath`: The index for the indicated item.
-- `completionHandler`: A block that the system calls after initiating a playback request. The block takes the following parameter: - **error**: Pass [`nil`](https://developer.apple.com/documentation/ObjectiveC/nil-227m0) if playback successfully began. If playback can’t begin, pass an error to indicate the reason.
+- `completionHandler`: A block that the system calls after initiating a playback request. The block takes the following parameter: - **error**: Pass [`nil`](https://developer.apple.com/documentation/objectivec/nil-227m0) if playback successfully began. If playback can’t begin, pass an error to indicate the reason.
 
 
 ---

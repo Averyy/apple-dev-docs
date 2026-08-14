@@ -19,7 +19,7 @@ static let eyeSquintLeft: ARFaceAnchor.BlendShapeLocation
 
 The figure below shows a face geometry (see [`ARSCNFaceGeometry`](arscnfacegeometry.md)) in two states, demonstrating values of `0.0` and `1.0` for this coefficient. In both states, the values for all other [`ARFaceAnchor.BlendShapeLocation`](arfaceanchor/blendshapelocation.md) coefficients are set to `0.0`.
 
-![None](https://docs-assets.developer.apple.com/published/6d4b6f4e85a6fb03d4c822ddd4a0cab9/media-2929201%402x.png)
+![None](/images/com.apple.arkit/media-2929201@2x.png)
 
 ## See Also
 

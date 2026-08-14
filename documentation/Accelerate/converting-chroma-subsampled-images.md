@@ -14,15 +14,15 @@ Alternatively, other image transformations, such as adjusting saturation, requir
 
 The code in this article uses the 4:2:0 subsampling scheme, which means there’s one Cb and one Cr pixel for every four luminance pixels. That is, each chrominance channel is half of the width and half of the height of the luminance channel. For example, 4:2:0 subsampling represents a 4 x 2 image with a 4 x 2 luminance channel and two 2 x 1 chrominance channels:
 
-![A diagram showing source RGB pixels converted to discrete luminance and chrominance pixels arranged as two-times-two tiles.](https://docs-assets.developer.apple.com/published/fc95d53c190aa0f91c8411fcd7bbf01a/media-4264983%402x.png)
+![A diagram showing source RGB pixels converted to discrete luminance and chrominance pixels arranged as two-times-two tiles.](/images/com.apple.accelerate/media-4264983@2x.png)
 
 The images below show the 4:2:0 subsampling scheme applied to a photograph. The *Y* luminance channel has the same resolution as the original image. However, the *Cb* and *Cr* chrominance channels have a lower resolution. For each 2 x 2 square of pixels in the luminance channel, the chrominance channels only contain a single pixel. Therefore, the chrominance channels are a quarter of the size of the luminance channel.
 
-![A diagram that shows the sizes and content of the two chrominance channels and single luminance channel of a YpCbCr image compared to an RGB image of the same subject. On the left are the three YpCbCr channels and on the right in the single, interleaved RGB image.](https://docs-assets.developer.apple.com/published/696306b4d1602091ebaca151924bab5d/media-3866875%402x.png)
+![A diagram that shows the sizes and content of the two chrominance channels and single luminance channel of a YpCbCr image compared to an RGB image of the same subject. On the left are the three YpCbCr channels and on the right in the single, interleaved RGB image.](/images/com.apple.accelerate/media-3866875@2x.png)
 
 ##### Define the Core Video and Core Graphics Image Formats
 
-If you’re working with [`CVPixelBuffer`](https://developer.apple.com/documentation/CoreVideo/cvpixelbuffer-q2e) objects, the vImage library provides the [`vImageCVImageFormat_CreateWithCVPixelBuffer(_:)`](vimagecvimageformat_createwithcvpixelbuffer(_:).md) and [`make(buffer:)`](vimagecvimageformat/make(buffer:).md) functions that generate a [`vImageCVImageFormat`](vimagecvimageformat.md) structure from a Core Video pixel buffer. However, the code in this article defines a [`vImageCVImageFormat.Format.format420YpCbCr8PlanarFullRange`](vimagecvimageformat/format/format420ypcbcr8planarfullrange.md) Core Video image format that describes the YpCbCr image. The code below also defines an 8-bit-per-channel RGB Core Graphics image format:
+If you’re working with [`CVPixelBuffer`](https://developer.apple.com/documentation/corevideo/cvpixelbuffer-q2e) objects, the vImage library provides the [`vImageCVImageFormat_CreateWithCVPixelBuffer(_:)`](vimagecvimageformat_createwithcvpixelbuffer(_:).md) and [`make(buffer:)`](vimagecvimageformat/make(buffer:).md) functions that generate a [`vImageCVImageFormat`](vimagecvimageformat.md) structure from a Core Video pixel buffer. However, the code in this article defines a [`vImageCVImageFormat.Format.format420YpCbCr8PlanarFullRange`](vimagecvimageformat/format/format420ypcbcr8planarfullrange.md) Core Video image format that describes the YpCbCr image. The code below also defines an 8-bit-per-channel RGB Core Graphics image format:
 
 ```swift
 var cgImageFormat = vImage_CGImageFormat(
@@ -67,7 +67,7 @@ try cgToCvConverter.convert(from: [rgbSourceBuffer],
 
 On return, the three pixel buffers in the `ypCbCr8PlanarBuffers` array contain the luminance and two chrominance channels. The image below shows the luminance channel (left), the Cb channel (middle), and the Cr channel (right):
 
-![Three grayscale images of the different planes of the YpCrCb representation of a photograph of a flower. The first image contains the luminance information. The second and third images contain the chrominance information and are scaled that the only fill the top-left quarter of the image.](https://docs-assets.developer.apple.com/published/05210844d773d099f3ddea68afb37de1/media-4264989%402x.png)
+![Three grayscale images of the different planes of the YpCrCb representation of a photograph of a flower. The first image contains the luminance information. The second and third images contain the chrominance information and are scaled that the only fill the top-left quarter of the image.](/images/com.apple.accelerate/media-4264989@2x.png)
 
 ##### Apply an Operation to the Subsampled Chrominance Channels
 
@@ -117,7 +117,7 @@ try cvToCgConverter.convert(from: ypCbCr8PlanarBuffers,
 
 On return, `rgbDestinationBuffer` contains the desaturated version (right) of the original image (left).
 
-![A side-by-side comparison of the original photograph of a flower and the desaturated version of the same photograph.](https://docs-assets.developer.apple.com/published/1df1b26d502a07d2261f0ac6c69daf84/media-4264990%402x.png)
+![A side-by-side comparison of the original photograph of a flower and the desaturated version of the same photograph.](/images/com.apple.accelerate/media-4264990@2x.png)
 
 ## See Also
 

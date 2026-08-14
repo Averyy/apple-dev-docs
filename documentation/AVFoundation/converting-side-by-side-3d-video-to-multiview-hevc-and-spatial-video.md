@@ -20,7 +20,7 @@ For videos you capture with a consistent camera configuration, you can optionall
 
 Adding spatial metadata to a stereo MV-HEVC video prompts Apple platforms to consider the video as *spatial* instead of just stereo, and opts the video into visual treatments on Apple Vision Pro that can minimize common causes of stereo viewing discomfort.
 
-To learn more about when to provide spatial metadata for a stereo MV-HEVC video and the metadata values to provide, see [`Creating spatial photos and videos with spatial metadata`](https://developer.apple.com/documentation/ImageIO/Creating-spatial-photos-and-videos-with-spatial-metadata).
+To learn more about when to provide spatial metadata for a stereo MV-HEVC video and the metadata values to provide, see [`Creating spatial photos and videos with spatial metadata`](https://developer.apple.com/documentation/imageio/creating-spatial-photos-and-videos-with-spatial-metadata).
 
 You can verify this sample’s MV-HEVC output by opening it with the sample project from [`Reading multiview 3D video files`](reading-multiview-3d-video-files.md).
 
@@ -83,7 +83,7 @@ if !reader.startReading() {
 }
 ```
 
-When creating the reader track output, the app specifies the file’s pixel format and [`IOSurface`](https://developer.apple.com/documentation/IOSurface) settings in the `readerSettings` dictionary. The app indicates that output goes to a 32-bit ARGB pixel buffer, using [`kCVPixelBufferPixelFormatTypeKey`](https://developer.apple.com/documentation/CoreVideo/kCVPixelBufferPixelFormatTypeKey) with a value of [`kCVPixelFormatType_32ARGB`](https://developer.apple.com/documentation/CoreVideo/kCVPixelFormatType_32ARGB). The sample app also manages its own pixel buffer allocations, passing an empty array as the value for [`kCVPixelBufferIOSurfacePropertiesKey`](https://developer.apple.com/documentation/CoreVideo/kCVPixelBufferIOSurfacePropertiesKey).
+When creating the reader track output, the app specifies the file’s pixel format and [`IOSurface`](https://developer.apple.com/documentation/iosurface) settings in the `readerSettings` dictionary. The app indicates that output goes to a 32-bit ARGB pixel buffer, using [`kCVPixelBufferPixelFormatTypeKey`](https://developer.apple.com/documentation/corevideo/kcvpixelbufferpixelformattypekey) with a value of [`kCVPixelFormatType_32ARGB`](https://developer.apple.com/documentation/corevideo/kcvpixelformattype_32argb). The sample app also manages its own pixel buffer allocations, passing an empty array as the value for [`kCVPixelBufferIOSurfacePropertiesKey`](https://developer.apple.com/documentation/corevideo/kcvpixelbufferiosurfacepropertieskey).
 
 ##### Configure the Output Mv Hevc File
 
@@ -99,7 +99,7 @@ var multiviewCompressionProperties: [CFString: Any] = [
 ]
 ```
 
-[`kVTCompressionPropertyKey_HasLeftStereoEyeView`](https://developer.apple.com/documentation/VideoToolbox/kVTCompressionPropertyKey_HasLeftStereoEyeView) and [`kVTCompressionPropertyKey_HasRightStereoEyeView`](https://developer.apple.com/documentation/VideoToolbox/kVTCompressionPropertyKey_HasRightStereoEyeView) are `true`, because the output contains a layer for each eye. [`kVTCompressionPropertyKey_MVHEVCVideoLayerIDs`](https://developer.apple.com/documentation/VideoToolbox/kVTCompressionPropertyKey_MVHEVCVideoLayerIDs), [`kVTCompressionPropertyKey_MVHEVCViewIDs`](https://developer.apple.com/documentation/VideoToolbox/kVTCompressionPropertyKey_MVHEVCViewIDs), and [`kVTCompressionPropertyKey_MVHEVCLeftAndRightViewIDs`](https://developer.apple.com/documentation/VideoToolbox/kVTCompressionPropertyKey_MVHEVCLeftAndRightViewIDs) define the layer and view IDs to use for multiview HEVC encoding. In the sample app, these are all the same.
+[`kVTCompressionPropertyKey_HasLeftStereoEyeView`](https://developer.apple.com/documentation/videotoolbox/kvtcompressionpropertykey_hasleftstereoeyeview) and [`kVTCompressionPropertyKey_HasRightStereoEyeView`](https://developer.apple.com/documentation/videotoolbox/kvtcompressionpropertykey_hasrightstereoeyeview) are `true`, because the output contains a layer for each eye. [`kVTCompressionPropertyKey_MVHEVCVideoLayerIDs`](https://developer.apple.com/documentation/videotoolbox/kvtcompressionpropertykey_mvhevcvideolayerids), [`kVTCompressionPropertyKey_MVHEVCViewIDs`](https://developer.apple.com/documentation/videotoolbox/kvtcompressionpropertykey_mvhevcviewids), and [`kVTCompressionPropertyKey_MVHEVCLeftAndRightViewIDs`](https://developer.apple.com/documentation/videotoolbox/kvtcompressionpropertykey_mvhevcleftandrightviewids) define the layer and view IDs to use for multiview HEVC encoding. In the sample app, these are all the same.
 
 The sample app uses `0` for the left eye layer/view ID and `1` for the right eye layer/view ID.
 
@@ -182,11 +182,11 @@ multiviewWriter.startSession(atSourceTime: CMTime.zero)
 frameInput.requestMediaDataWhenReady(on: DispatchQueue(label: "Multiview HEVC Writer")) {
 ```
 
-The closure argument of `requestMediaDataWhenReady(on:using:)` runs on the provided [`DispatchQueue`](https://developer.apple.com/documentation/Dispatch/DispatchQueue) when the first data read is available. The closure itself is responsible for managing resources that process the media data, and running a loop to process data efficiently.
+The closure argument of `requestMediaDataWhenReady(on:using:)` runs on the provided [`DispatchQueue`](https://developer.apple.com/documentation/dispatch/dispatchqueue) when the first data read is available. The closure itself is responsible for managing resources that process the media data, and running a loop to process data efficiently.
 
 ##### Create the Video Frame Transfer Session and Output Pixel Buffer Pool
 
-To perform the data transfer from the source track, the pixel input adapter requires a pixel buffer as a source. The app creates a [`VTPixelTransferSession`](https://developer.apple.com/documentation/VideoToolbox/VTPixelTransferSession) to allow for reading data from the video source, and uses the `AVAssetWriterInputTaggedPixelBufferGroupAdaptor`’s existing pixel buffer pool to allocate pixel buffers for the new multiview eye layers.
+To perform the data transfer from the source track, the pixel input adapter requires a pixel buffer as a source. The app creates a [`VTPixelTransferSession`](https://developer.apple.com/documentation/videotoolbox/vtpixeltransfersession) to allow for reading data from the video source, and uses the `AVAssetWriterInputTaggedPixelBufferGroupAdaptor`’s existing pixel buffer pool to allocate pixel buffers for the new multiview eye layers.
 
 ```swift
 var session: VTPixelTransferSession? = nil
@@ -200,9 +200,9 @@ guard let pixelBufferPool = bufferInputAdapter.pixelBufferPool else {
 
 ##### Copy Frame Images From Input to Output
 
-After preparing resources, the app then begins a loop to process frames until there’s no more data, or the input read has stopped to buffer data. The [`isReadyForMoreMediaData`](avassetwriterinput/isreadyformoremediadata.md) property of an input source is `true` if another frame is immediately available to process. When a frame is ready, a [`CVImageBuffer`](https://developer.apple.com/documentation/CoreVideo/CVImageBuffer) instance is created from it.
+After preparing resources, the app then begins a loop to process frames until there’s no more data, or the input read has stopped to buffer data. The [`isReadyForMoreMediaData`](avassetwriterinput/isreadyformoremediadata.md) property of an input source is `true` if another frame is immediately available to process. When a frame is ready, a [`CVImageBuffer`](https://developer.apple.com/documentation/corevideo/cvimagebuffer) instance is created from it.
 
-The app is now ready to handle sampling. If there’s an available sample, the app processes it in the `convertFrame` method, then calls [`appendTaggedBuffers(_:withPresentationTime:)`](avassetwriterinputtaggedpixelbuffergroupadaptor/appendtaggedbuffers(_:withpresentationtime:).md), copying the side-by-side sample buffer’s [`outputPresentationTimeStamp`](https://developer.apple.com/documentation/CoreMedia/CMSampleBuffer/outputPresentationTimeStamp) timestamp to the new multiview timestamp.
+The app is now ready to handle sampling. If there’s an available sample, the app processes it in the `convertFrame` method, then calls [`appendTaggedBuffers(_:withPresentationTime:)`](avassetwriterinputtaggedpixelbuffergroupadaptor/appendtaggedbuffers(_:withpresentationtime:).md), copying the side-by-side sample buffer’s [`outputPresentationTimeStamp`](https://developer.apple.com/documentation/coremedia/cmsamplebuffer/outputpresentationtimestamp) timestamp to the new multiview timestamp.
 
 ```swift
 while frameInput.isReadyForMoreMediaData && bufferInputAdapter.assetWriterInput.isReadyForMoreMediaData {
@@ -217,7 +217,7 @@ while frameInput.isReadyForMoreMediaData && bufferInputAdapter.assetWriterInput.
         }
 ```
 
-Input reading finishes when there are no more sample buffers to process from the input stream. The app calls [`markAsFinished()`](avassetwriterinput/markasfinished().md) to close the stream, and [`finishWriting(completionHandler:)`](avassetwriter/finishwriting(completionhandler:).md) to complete the multiview video write. The app also calls [`resume()`](https://developer.apple.com/documentation/Swift/CheckedContinuation/resume()) on its associated [`CheckedContinuation`](https://developer.apple.com/documentation/Swift/CheckedContinuation), to return to the `await` call, then breaks from the processing loop.
+Input reading finishes when there are no more sample buffers to process from the input stream. The app calls [`markAsFinished()`](avassetwriterinput/markasfinished().md) to close the stream, and [`finishWriting(completionHandler:)`](avassetwriter/finishwriting(completionhandler:).md) to complete the multiview video write. The app also calls [`resume()`](https://developer.apple.com/documentation/swift/checkedcontinuation/resume()) on its associated [`CheckedContinuation`](https://developer.apple.com/documentation/swift/checkedcontinuation), to return to the `await` call, then breaks from the processing loop.
 
 ```swift
 frameInput.markAsFinished()
@@ -260,11 +260,11 @@ guard VTPixelTransferSessionTransferImage(session, from: imageBuffer, to: pixelB
 }
 ```
 
-Setting aperture view properties on [`CVBufferSetAttachment(_:_:_:_:)`](https://developer.apple.com/documentation/CoreVideo/CVBufferSetAttachment(_:_:_:_:)) defines how to capture and crop input images. The aperture here is the size of an eye image, and the center of the capture frame offset with [`kCVImageBufferCleanApertureHorizontalOffsetKey`](https://developer.apple.com/documentation/CoreVideo/kCVImageBufferCleanApertureHorizontalOffsetKey) by `-0.5 * width` for the left eye and `+0.5 * width` for the right eye, to capture the correct half of the side-by-side frame.
+Setting aperture view properties on [`CVBufferSetAttachment(_:_:_:_:)`](https://developer.apple.com/documentation/corevideo/cvbuffersetattachment(_:_:_:_:)) defines how to capture and crop input images. The aperture here is the size of an eye image, and the center of the capture frame offset with [`kCVImageBufferCleanApertureHorizontalOffsetKey`](https://developer.apple.com/documentation/corevideo/kcvimagebuffercleanaperturehorizontaloffsetkey) by `-0.5 * width` for the left eye and `+0.5 * width` for the right eye, to capture the correct half of the side-by-side frame.
 
-The app then calls [`VTSessionSetProperty(_:key:value:)`](https://developer.apple.com/documentation/VideoToolbox/VTSessionSetProperty(_:key:value:)) to crop the image to the aperture frame with [`kVTScalingMode_CropSourceToCleanAperture`](https://developer.apple.com/documentation/VideoToolbox/kVTScalingMode_CropSourceToCleanAperture). Next, the app calls [`VTPixelTransferSessionTransferImage(_:from:to:)`](https://developer.apple.com/documentation/VideoToolbox/VTPixelTransferSessionTransferImage(_:from:to:)) to copy source pixels to the destination buffer.
+The app then calls [`VTSessionSetProperty(_:key:value:)`](https://developer.apple.com/documentation/videotoolbox/vtsessionsetproperty(_:key:value:)) to crop the image to the aperture frame with [`kVTScalingMode_CropSourceToCleanAperture`](https://developer.apple.com/documentation/videotoolbox/kvtscalingmode_cropsourcetocleanaperture). Next, the app calls [`VTPixelTransferSessionTransferImage(_:from:to:)`](https://developer.apple.com/documentation/videotoolbox/vtpixeltransfersessiontransferimage(_:from:to:)) to copy source pixels to the destination buffer.
 
-The final step is to create a [`CMTaggedBuffer`](https://developer.apple.com/documentation/CoreMedia/CMTaggedBuffer) for the eye image to return to the calling output writer.
+The final step is to create a [`CMTaggedBuffer`](https://developer.apple.com/documentation/coremedia/cmtaggedbuffer) for the eye image to return to the calling output writer.
 
 ```swift
 let tags: [CMTag] = [.videoLayerID(Int64(layerID)), .stereoView(eye)]
@@ -280,7 +280,7 @@ taggedBuffers.append(buffer)
   Show a specific area of a video by using timed display mask rectangle metadata.
 - [Writing fragmented MPEG-4 files for HTTP Live Streaming](writing-fragmented-mpeg-4-files-for-http-live-streaming.md)
   Create an HTTP Live Streaming presentation by turning a movie file into a sequence of fragmented MPEG-4 files.
-- [Creating spatial photos and videos with spatial metadata](../ImageIO/Creating-spatial-photos-and-videos-with-spatial-metadata.md)
+- [Creating spatial photos and videos with spatial metadata](../imageio/creating-spatial-photos-and-videos-with-spatial-metadata.md)
   Add spatial metadata to stereo photos and videos to create spatial media for viewing on Apple Vision Pro.
 - [Tagging media with video color information](tagging-media-with-video-color-information.md)
   Inspect and set video color space information when writing and transcoding media.

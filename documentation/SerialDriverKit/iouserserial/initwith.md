@@ -20,7 +20,7 @@ virtual bool initWith(IOBufferMemoryDescriptor *ifmd);
 
 #### Discussion
 
-Do not override or call this method. Instead, override the [`init`](https://developer.apple.com/documentation/USBSerialDriverKit/IOUserUSBSerial/init) method and use it to allocate memory for your driver’s data structures.
+Do not override or call this method. Instead, override the [`init`](https://developer.apple.com/documentation/usbserialdriverkit/iouserusbserial/init) method and use it to allocate memory for your driver’s data structures.
 
 ## Parameters
 

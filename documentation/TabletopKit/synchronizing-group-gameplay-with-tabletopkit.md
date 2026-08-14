@@ -29,7 +29,7 @@ class Game {
 }
 ```
 
-The `GameView` structure contains the [`RealityView`](https://developer.apple.com/documentation/RealityKit/RealityView), which hosts game content and the toolbar for player interaction, and stores the `Game` object as an environment property. The [`tabletopGame(_:parent:automaticUpdate:)`](https://developer.apple.com/documentation/SwiftUI/View/tabletopGame(_:parent:automaticUpdate:)) modifier connects the `TabletopGame` object to the `RealityView`. The modifier returns the appropriate delegate for the game equipment ID that passes into the update closure. A [`Task`](https://developer.apple.com/documentation/Swift/Task) creates `GroupActivityManager`, which connects multiple players and provides the `TabletopGame` object.
+The `GameView` structure contains the [`RealityView`](https://developer.apple.com/documentation/realitykit/realityview), which hosts game content and the toolbar for player interaction, and stores the `Game` object as an environment property. The [`tabletopGame(_:parent:automaticUpdate:)`](https://developer.apple.com/documentation/swiftui/view/tabletopgame(_:parent:automaticupdate:)) modifier connects the `TabletopGame` object to the `RealityView`. The modifier returns the appropriate delegate for the game equipment ID that passes into the update closure. A [`Task`](https://developer.apple.com/documentation/swift/task) creates `GroupActivityManager`, which connects multiple players and provides the `TabletopGame` object.
 
 ```swift
 var body: some View {
@@ -63,7 +63,7 @@ var body: some View {
 }
 ```
 
-The player joins other players by tapping the SharePlay button in the volume’s toolbar. This instantiates an `Activity` object that implements the [`GroupActivity`](https://developer.apple.com/documentation/GroupActivities/GroupActivity) protocol. `Activity` initializes an observable `GroupActivityManager` awaiting `Activity` sessions that coordinate with the provided `TabletopGame`. TabletopKit handles all player connections and synchronization. The app only needs to register its equipment and actions, and then handle their updates.
+The player joins other players by tapping the SharePlay button in the volume’s toolbar. This instantiates an `Activity` object that implements the [`GroupActivity`](https://developer.apple.com/documentation/groupactivities/groupactivity) protocol. `Activity` initializes an observable `GroupActivityManager` awaiting `Activity` sessions that coordinate with the provided `TabletopGame`. TabletopKit handles all player connections and synchronization. The app only needs to register its equipment and actions, and then handle their updates.
 
 ```swift
 struct Activity: GroupActivity {

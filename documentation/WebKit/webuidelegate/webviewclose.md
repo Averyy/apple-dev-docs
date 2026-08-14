@@ -16,7 +16,7 @@ optional func webViewClose(_ sender: WebView!)
 
 #### Discussion
 
-If you display multiple web views in a window then you might want to close only `sender` in your implementation. By default, this method sends the [`close()`](https://developer.apple.com/documentation/AppKit/NSWindow/close()) method to the [`NSWindow`](https://developer.apple.com/documentation/AppKit/NSWindow) object that contains `sender`.
+If you display multiple web views in a window then you might want to close only `sender` in your implementation. By default, this method sends the [`close()`](https://developer.apple.com/documentation/appkit/nswindow/close()) method to the [`NSWindow`](https://developer.apple.com/documentation/appkit/nswindow) object that contains `sender`.
 
 ## Parameters
 

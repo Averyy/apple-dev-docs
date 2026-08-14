@@ -25,7 +25,7 @@ The softmax filter is applied across feature channels in a convolutional manner 
 
 For each feature channel per pixel in an image in a feature map, the softmax filter computes the following:
 
-![pixel = exp(pixel(x,y,k))/sum(exp(pixel(x,y,0)) … exp(pixel(x,y,N-1))](https://docs-assets.developer.apple.com/published/46f2f324f577960e552d1a59114e482d/media-2903559%402x.png)
+![pixel = exp(pixel(x,y,k))/sum(exp(pixel(x,y,0)) … exp(pixel(x,y,N-1))](/images/com.apple.metalperformanceshaders/media-2903559@2x.png)
 
 Where `R` is the result channel in the pixel and `N` is the number of feature channels.
 
@@ -34,15 +34,15 @@ Where `R` is the result channel in the pixel and `N` is the number of feature ch
 ### Inherits From
 - [MPSCNNKernel](mpscnnkernel.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCoding](../Foundation/NSCoding.md)
-- [NSCopying](../Foundation/NSCopying.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [NSSecureCoding](../Foundation/NSSecureCoding.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCoding](../foundation/nscoding.md)
+- [NSCopying](../foundation/nscopying.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSSecureCoding](../foundation/nssecurecoding.md)
 
 ## See Also
 

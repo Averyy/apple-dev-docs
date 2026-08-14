@@ -15,7 +15,7 @@ An entitlement required for app extensions to perform a one-time transfer of on-
 
 #### Discussion
 
-Use this entitlement with the app extension that implements the [`AppMigrationExtension`](https://developer.apple.com/documentation/AppMigrationKit/AppMigrationExtension) protocol from the [`AppMigrationKit`](https://developer.apple.com/documentation/AppMigrationKit) framework.
+Use this entitlement with the app extension that implements the [`AppMigrationExtension`](https://developer.apple.com/documentation/appmigrationkit/appmigrationextension) protocol from the [`AppMigrationKit`](https://developer.apple.com/documentation/appmigrationkit) framework.
 
 The value of this entitlement is an array of strings. Populate this value with a one-item array containing the bundle identifier of the extension’s containing app. No other values are valid.
 

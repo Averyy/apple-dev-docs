@@ -16,9 +16,9 @@ var canCollapseFromWindowResize: Bool { get set }
 
 #### Discussion
 
-This can differ from [`canCollapse`](NSSplitViewItem/canCollapse.md) to allow divider collapsing but not windows resize collapsing, or vice versa.
+This can differ from [`canCollapse`](nssplitviewitem/cancollapse.md) to allow divider collapsing but not windows resize collapsing, or vice versa.
 
-The default value of this property is [`true`](https://developer.apple.com/documentation/Swift/true) for Sidebars and [`false`](https://developer.apple.com/documentation/Swift/false) for Inspectors.
+The default value of this property is [`true`](https://developer.apple.com/documentation/swift/true) for Sidebars and [`false`](https://developer.apple.com/documentation/swift/false) for Inspectors.
 
 > **Note**:  Setting `canCollapse` for sidebars resets this value to that new value.
 

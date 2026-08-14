@@ -29,8 +29,8 @@ Objects that gather metrics during performance tests must conform to `XCTMetric`
 ## Relationships
 
 ### Inherits From
-- [NSCopying](../Foundation/NSCopying.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSCopying](../foundation/nscopying.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 ### Conforming Types
 - [XCTApplicationLaunchMetric](xctapplicationlaunchmetric.md)
 - [XCTCPUMetric](xctcpumetric.md)

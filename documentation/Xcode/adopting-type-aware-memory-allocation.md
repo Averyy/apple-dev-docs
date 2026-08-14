@@ -21,7 +21,7 @@ To enable the type-aware memory allocator without adding the Enhanced Security c
 - Set the `CLANG_ENABLE_C_TYPED_ALLOCATOR_SUPPORT` build setting with the value `YES`
 - Set the `CLANG_ENABLE_CPLUSPLUS_TYPED_ALLOCATOR_SUPPORT` build setting with the value to `YES`
 
-Consider adding the [`com.apple.security.hardened-process.hardened-heap`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.security.hardened-process.hardened-heap) entitlement with the value `YES` to apply additional runtime allocator restrictions.
+Consider adding the [`com.apple.security.hardened-process.hardened-heap`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.security.hardened-process.hardened-heap) entitlement with the value `YES` to apply additional runtime allocator restrictions.
 
 ##### Make Type Aware Memory Allocations
 

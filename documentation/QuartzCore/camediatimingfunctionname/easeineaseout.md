@@ -34,7 +34,7 @@ verticalAnimation.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFun
 
 A layer animated with the animation created by the code above and with linearly interpolated horizontal movement would describe a path similar to the following figure.
 
-![Path taken using ease-in-ease-out timing function](https://docs-assets.developer.apple.com/published/8503fdf3db9809be5465103752d0914b/media-2776818%402x.png)
+![Path taken using ease-in-ease-out timing function](/images/com.apple.quartzcore/media-2776818@2x.png)
 
 ## See Also
 

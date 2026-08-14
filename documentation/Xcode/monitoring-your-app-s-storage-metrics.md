@@ -8,7 +8,7 @@ Track your app’s storage footprint over time using Xcode Organizer to catch re
 
 Maintaining a responsible storage footprint is important, because devices have a limited amount of storage shared across all apps. An app that unexpectedly grows its storage use might prevent people from installing new apps, delay system updates, or trigger performance degradation due to low storage. Use the Storage pane in Xcode Organizer to monitor how your app’s Documents & Data and App Size change across releases.
 
-![A screenshot of the Storage metric pane in Xcode Organizer, showing the Documents & Data chart with stacked histogram bars representing cache folder size and other items, and the App Size chart with histogram bars showing app bundle size across versions. The horizontal dashed line that bisects each chart indicates how your app’s storage metrics compare to other similar apps.](https://docs-assets.developer.apple.com/published/4bdf6d5f711c80095641d8bc6a149aa6/monitoring-your-app-s-storage-metrics-1%402x.png)
+![A screenshot of the Storage metric pane in Xcode Organizer, showing the Documents & Data chart with stacked histogram bars representing cache folder size and other items, and the App Size chart with histogram bars showing app bundle size across versions. The horizontal dashed line that bisects each chart indicates how your app’s storage metrics compare to other similar apps.](/images/com.apple.Xcode/monitoring-your-app-s-storage-metrics-1@2x.png)
 
 ##### Manage Data Usage and Cache Behavior
 
@@ -16,7 +16,7 @@ The Storage pane in Xcode Organizer shows a Documents & Data chart that breaks d
 
 The system automatically purges files in the cache folder when device storage is low, freeing space without requiring people to manually delete app data. While the system manages cache size, don’t rely on it entirely for cache management, particularly for frequently used apps, which the system is less likely to purge. Proactively remove unused and inaccessible cached files to keep your app’s cache size reasonable. Only store in the cache folder files your app can regenerate or operate without. For guidance on what belongs in the cache folder and how it compares to other short-lived directories, see [`Store short-lived files`](https://developer.apple.comhttps://developer.apple.com/documentation/foundation/using-the-file-system-effectively?#Store-short-lived-files).
 
-Some networking APIs, such as [`URLSessionDownloadTask`](https://developer.apple.com/documentation/Foundation/URLSessionDownloadTask), write data to a temporary location rather than the cache folder. Apps that use these APIs are responsible for managing the downloaded content. For guidance on where to store downloaded files and how to minimize your app’s overall disk footprint, see [`Reducing your app’s disk usage`](reducing-your-app-s-disk-usage.md).
+Some networking APIs, such as [`URLSessionDownloadTask`](https://developer.apple.com/documentation/foundation/urlsessiondownloadtask), write data to a temporary location rather than the cache folder. Apps that use these APIs are responsible for managing the downloaded content. For guidance on where to store downloaded files and how to minimize your app’s overall disk footprint, see [`Reducing your app’s disk usage`](reducing-your-app-s-disk-usage.md).
 
 ##### Monitor Your Apps Size
 

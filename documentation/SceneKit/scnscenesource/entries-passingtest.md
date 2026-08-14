@@ -28,8 +28,8 @@ An array of SceneKit objects from the scene source that pass the test.
 
 SceneKit recognizes objects of the following classes in scene files:
 
-- [`CAAnimation`](https://developer.apple.com/documentation/QuartzCore/CAAnimation)
-- [`NSImage`](https://developer.apple.com/documentation/AppKit/NSImage)
+- [`CAAnimation`](https://developer.apple.com/documentation/quartzcore/caanimation)
+- [`NSImage`](https://developer.apple.com/documentation/appkit/nsimage)
 - [`SCNCamera`](scncamera.md)
 - [`SCNGeometry`](scngeometry.md)
 - [`SCNLight`](scnlight.md)
@@ -58,7 +58,7 @@ NSArray *geometryNodes = [sceneSource entriesPassingTest:^BOOL(id entry, NSStrin
 
 - `predicate`: The block to be applied to each object in the scene source. The block takes three parameters: - **entry**: The object to be tested.
 - **identifier**: The unique identifier of the object in the scene source.
-- **stop**: A reference to a Boolean value. Set `*stop` to [`true`](https://developer.apple.com/documentation/Swift/true) within the block to abort further processing of the scene source’s contents. The block returns a Boolean value indicating whether the entry object passed the test and should be included in the method’s returned array.
+- **stop**: A reference to a Boolean value. Set `*stop` to [`true`](https://developer.apple.com/documentation/swift/true) within the block to abort further processing of the scene source’s contents. The block returns a Boolean value indicating whether the entry object passed the test and should be included in the method’s returned array.
 
 ## See Also
 

@@ -37,8 +37,8 @@ Don’t create an [`IOUSBHostPipe`](iousbhostpipe.md) object directly. To retrie
 - [IOUSBIsochronousFrame](iousbisochronousframe.md)
   A structure representing a single frame in an isochronous transfer.
 ### Interacting with Descriptor Rings
-- [CreateMemoryDescriptorRing](IOUSBHostPipe/CreateMemoryDescriptorRing.md)
-- [SetMemoryDescriptor](IOUSBHostPipe/SetMemoryDescriptor.md)
+- [CreateMemoryDescriptorRing](iousbhostpipe/creatememorydescriptorring.md)
+- [SetMemoryDescriptor](iousbhostpipe/setmemorydescriptor.md)
 - [AsyncIOBundled](iousbhostpipe/asynciobundled.md)
   Enqueues a contiguous group of requests from the descriptor ring.
 - [CompleteAsyncIOBundled](iousbhostpipe/completeasynciobundled.md)
@@ -81,7 +81,7 @@ Don’t create an [`IOUSBHostPipe`](iousbhostpipe.md) object directly. To retrie
 ## Relationships
 
 ### Inherits From
-- [OSObject](../DriverKit/OSObject.md)
+- [OSObject](../driverkit/osobject.md)
 
 
 ---

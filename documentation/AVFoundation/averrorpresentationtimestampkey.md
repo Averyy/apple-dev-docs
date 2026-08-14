@@ -22,7 +22,7 @@ let AVErrorPresentationTimeStampKey: String
 
 #### Discussion
 
-The associated value is of type [`CMTime`](https://developer.apple.com/documentation/CoreMedia/CMTime).
+The associated value is of type [`CMTime`](https://developer.apple.com/documentation/coremedia/cmtime).
 
 ## See Also
 

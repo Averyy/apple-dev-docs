@@ -16,7 +16,7 @@ var availableFunctionalUnitTypes: [NSNumber] { get }
 
 #### Discussion
 
-This array contains [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) objects whose values are of type [`ICScannerFunctionalUnitType`](icscannerfunctionalunittype.md).
+This array contains [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) objects whose values are of type [`ICScannerFunctionalUnitType`](icscannerfunctionalunittype.md).
 
 ## See Also
 

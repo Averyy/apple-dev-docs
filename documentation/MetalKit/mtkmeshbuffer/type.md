@@ -21,7 +21,7 @@ var type: MDLMeshBufferType { get }
 
 #### Discussion
 
-A [`MDLMeshBuffer`](https://developer.apple.com/documentation/ModelIO/MDLMeshBuffer) object can contain Model I/O mesh vertex data or submesh index data.
+A [`MDLMeshBuffer`](https://developer.apple.com/documentation/modelio/mdlmeshbuffer) object can contain Model I/O mesh vertex data or submesh index data.
 
 ## See Also
 

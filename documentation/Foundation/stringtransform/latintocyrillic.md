@@ -26,7 +26,7 @@ This transformation is reversible.
 
 For example, the string “kirillica” transliterates to “кириллица”.
 
-This is equivalent to [`kCFStringTransformLatinCyrillic`](https://developer.apple.com/documentation/CoreFoundation/kCFStringTransformLatinCyrillic).
+This is equivalent to [`kCFStringTransformLatinCyrillic`](https://developer.apple.com/documentation/corefoundation/kcfstringtransformlatincyrillic).
 
 ## See Also
 

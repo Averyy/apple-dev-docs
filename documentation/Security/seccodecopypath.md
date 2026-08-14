@@ -23,7 +23,7 @@ A result code. See [`Code Signing Services Result Codes`](code-signing-services-
 
 - `staticCode`: The code or static code object whose code you wish to locate. If you provide a code object, the function processes it in the same manner as the  [`SecCodeCopyStaticCode(_:_:_:)`](seccodecopystaticcode(_:_:_:).md) function.
 - `flags`: Optional flags; see [`SecCSFlags`](seccsflags.md) for possible values. Pass [`kSecCSDefaultFlags`](seccsflags/kseccsdefaultflags.md) for standard behavior.
-- `path`: On return, provides a URL identifying the location on disk of the code or static code object. For single files, the URL points to the file. For bundles, it points to the directory containing the entire bundle. In Objective-C, call the [`CFRelease`](https://developer.apple.com/documentation/CoreFoundation/CFRelease) function to release this object when you are finished with it.
+- `path`: On return, provides a URL identifying the location on disk of the code or static code object. For single files, the URL points to the file. For bundles, it points to the directory containing the entire bundle. In Objective-C, call the [`CFRelease`](https://developer.apple.com/documentation/corefoundation/cfrelease) function to release this object when you are finished with it.
 
 ## See Also
 

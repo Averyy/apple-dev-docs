@@ -27,7 +27,7 @@ var sheen: PhysicallyBasedMaterial.SheenColor? { get set }
 
 For a [`PhysicallyBasedMaterial`](physicallybasedmaterial.md), object, you can use `sheen` to add soft specular highlights that simulate subtle reflections like the ones that occur with some materials, primarily fabrics. You can specify `sheen` using a single color, or you can provide a UV-mapped image.
 
-![An illustration showing two spheres. The one on the right has very](https://docs-assets.developer.apple.com/published/359c94162d7f5fc848064f68f22585d1/PhysicallyBasedMaterial-sheen-1%402x.png)
+![An illustration showing two spheres. The one on the right has very](/images/com.apple.RealityKit/PhysicallyBasedMaterial-sheen-1@2x.png)
 
 The following example specifies `sheen` using a single value for the entire material:
 

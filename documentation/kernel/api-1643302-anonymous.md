@@ -27,14 +27,14 @@ enum : unsigned int {
 - [kINQUIRY_PageB2_PageCode](1643302-anonymous/kinquiry_pageb2_pagecode.md)
 - [kINQUIRY_PageC0_PageCode](1643302-anonymous/kinquiry_pagec0_pagecode.md)
 - [kINQUIRY_PageC1_PageCode](1643302-anonymous/kinquiry_pagec1_pagecode.md)
-- [kINQUIRY_Page00_PageCode](../driverkit/1643302-anonymous/kinquiry_page00_pagecode.md)
-- [kINQUIRY_Page80_PageCode](../driverkit/1643302-anonymous/kinquiry_page80_pagecode.md)
-- [kINQUIRY_Page83_PageCode](../driverkit/1643302-anonymous/kinquiry_page83_pagecode.md)
-- [kINQUIRY_Page89_PageCode](../driverkit/1643302-anonymous/kinquiry_page89_pagecode.md)
-- [kINQUIRY_PageB0_PageCode](../driverkit/1643302-anonymous/kinquiry_pageb0_pagecode.md)
-- [kINQUIRY_PageB1_PageCode](../driverkit/1643302-anonymous/kinquiry_pageb1_pagecode.md)
-- [kINQUIRY_PageC0_PageCode](../driverkit/1643302-anonymous/kinquiry_pagec0_pagecode.md)
-- [kINQUIRY_PageC1_PageCode](../driverkit/1643302-anonymous/kinquiry_pagec1_pagecode.md)
+- [kINQUIRY_Page00_PageCode](../driverkit/kinquiry_page00_pagecode.md)
+- [kINQUIRY_Page80_PageCode](../driverkit/kinquiry_page80_pagecode.md)
+- [kINQUIRY_Page83_PageCode](../driverkit/kinquiry_page83_pagecode.md)
+- [kINQUIRY_Page89_PageCode](../driverkit/kinquiry_page89_pagecode.md)
+- [kINQUIRY_PageB0_PageCode](../driverkit/kinquiry_pageb0_pagecode.md)
+- [kINQUIRY_PageB1_PageCode](../driverkit/kinquiry_pageb1_pagecode.md)
+- [kINQUIRY_PageC0_PageCode](../driverkit/kinquiry_pagec0_pagecode.md)
+- [kINQUIRY_PageC1_PageCode](../driverkit/kinquiry_pagec1_pagecode.md)
 
 
 ---

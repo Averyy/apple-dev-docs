@@ -7,7 +7,7 @@ An optional name atom.
 
 #### Overview
 
-For more information, see [`Name atom ('name')`](name_atom.md).
+For more information, see [`Name atom`](name_atom.md).
 
 ## See Also
 

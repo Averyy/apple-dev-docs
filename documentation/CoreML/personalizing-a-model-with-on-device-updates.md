@@ -54,7 +54,7 @@ The sample makes each `MLDictionaryFeatureProvider` by initializing it with a di
 - The underlying image of the drawing keyed by `"drawing"`
 - The emoji character as a string keyed by `"label"`
 
-The sample creates a feature value for the emoji string by using [`init(string:)`](mlfeaturevalue/init(string:).md). However, to convert the drawing’s underlying [`CGImage`](https://developer.apple.com/documentation/CoreGraphics/CGImage) into a feature value, the sample acquires the image constraint of the model’s image input feature.
+The sample creates a feature value for the emoji string by using [`init(string:)`](mlfeaturevalue/init(string:).md). However, to convert the drawing’s underlying [`CGImage`](https://developer.apple.com/documentation/coregraphics/cgimage) into a feature value, the sample acquires the image constraint of the model’s image input feature.
 
 ```swift
 let imageFeatureValue = try? MLFeatureValue(cgImage: preparedImage,
@@ -143,7 +143,7 @@ do {
 
 ##### Load the Updated Model
 
-Use your updated model by loading it with the model’s [`init(contentsOf:)`](mlmodel/init(contentsof:).md) initializer. The sample loads a new instance of `UpdatableDrawingClassifier` with the [`URL`](https://developer.apple.com/documentation/Foundation/URL) of the updated model file the app saved in the previous step.
+Use your updated model by loading it with the model’s [`init(contentsOf:)`](mlmodel/init(contentsof:).md) initializer. The sample loads a new instance of `UpdatableDrawingClassifier` with the [`URL`](https://developer.apple.com/documentation/foundation/url) of the updated model file the app saved in the previous step.
 
 ```swift
 guard FileManager.default.fileExists(atPath: updatedModelURL.path) else {

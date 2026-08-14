@@ -25,7 +25,7 @@ var perRecordZoneSaveBlock: ((CKRecordZone.ID, Result<CKRecordZone, any Error>) 
 This property is a closure that returns no value and has the following parameters:
 
 - The ID of the record zone that CloudKit saves.
-- A [`Result`](https://developer.apple.com/documentation/Swift/Result) that contains either - The record zone that CloudKit saves
+- A [`Result`](https://developer.apple.com/documentation/swift/result) that contains either - The record zone that CloudKit saves
 - An error that provides information about a failure saving the record zone.
 
 The closure executes once for each record zone in the [`recordZonesToSave`](ckmodifyrecordzonesoperation/recordzonestosave.md) property. Each time the closure executes, it executes serially with respect to the other record zone completion blocks of the operation.

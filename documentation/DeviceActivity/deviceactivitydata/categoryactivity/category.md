@@ -18,7 +18,7 @@ var category: ActivityCategory
 
 #### Discussion
 
-Your device activity report extension can access the category’s [`localizedDisplayName`](https://developer.apple.com/documentation/ManagedSettings/ActivityCategory/localizedDisplayName).
+Your device activity report extension can access the category’s [`localizedDisplayName`](https://developer.apple.com/documentation/managedsettings/activitycategory/localizeddisplayname).
 
 
 ---

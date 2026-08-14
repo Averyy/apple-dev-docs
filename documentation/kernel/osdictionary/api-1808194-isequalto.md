@@ -24,7 +24,7 @@ Two OSDictionary objects are considered equal by this function if both have obje
 ## Parameters
 
 - `aDictionary`: The dictionary to be compared against the receiver.
-- `keys`: An OSArray or OSDictionary containing the keys (as   or  ) describing the intersection for the comparison.
+- `keys`: An OSArray or OSDictionary containing the keys (as `OSString` or [`OSSymbol`](ossymbol.md)) describing the intersection for the comparison.
 
 ## See Also
 

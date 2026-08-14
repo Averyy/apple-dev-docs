@@ -24,10 +24,10 @@ Thread safe starting in OS X v10.2.
 
 ## Parameters
 
-- `theAppleEvent`: A pointer to the Apple event to get the attribute data from. See  .
-- `theAEKeyword`: The keyword that specifies the attribute. Some keyword constants are described in  . See  .
-- `typeCode`: A pointer to a descriptor type. On return, specifies the descriptor type of the attribute. For a list of AppleScript’s predefined descriptor types, see  . Can be  . See  .
-- `dataSize`: A pointer to a size variable. On return, the length, in bytes, of the data in the attribute. Can be  .
+- `theAppleEvent`: A pointer to the Apple event to get the attribute data from. See [`AppleEvent`](appleevent.md).
+- `theAEKeyword`: The keyword that specifies the attribute. Some keyword constants are described in [`Keyword Attribute Constants`](apple_events/1542920-keyword_attribute_constants.md). See [`AEKeyword`](aekeyword.md).
+- `typeCode`: A pointer to a descriptor type. On return, specifies the descriptor type of the attribute. For a list of AppleScript’s predefined descriptor types, see [`Descriptor Type Constants`](apple_events/1542788-descriptor_type_constants.md). Can be `NULL`. See [`DescType`](desctype.md).
+- `dataSize`: A pointer to a size variable. On return, the length, in bytes, of the data in the attribute. Can be `NULL`.
 
 ## See Also
 

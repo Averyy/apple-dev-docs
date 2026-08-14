@@ -45,13 +45,13 @@ struct PhysicsBodyParameterTypes
 ## Relationships
 
 ### Conforms To
-- [Decodable](../Swift/Decodable.md)
-- [Encodable](../Swift/Encodable.md)
-- [Equatable](../Swift/Equatable.md)
-- [ExpressibleByArrayLiteral](../Swift/ExpressibleByArrayLiteral.md)
-- [OptionSet](../Swift/OptionSet.md)
-- [RawRepresentable](../Swift/RawRepresentable.md)
-- [SetAlgebra](../Swift/SetAlgebra.md)
+- [Decodable](../swift/decodable.md)
+- [Encodable](../swift/encodable.md)
+- [Equatable](../swift/equatable.md)
+- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
+- [OptionSet](../swift/optionset.md)
+- [RawRepresentable](../swift/rawrepresentable.md)
+- [SetAlgebra](../swift/setalgebra.md)
 
 ## See Also
 

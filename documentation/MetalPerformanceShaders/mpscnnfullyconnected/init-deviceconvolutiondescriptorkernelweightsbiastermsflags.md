@@ -24,7 +24,7 @@ A valid [`MPSCNNFullyConnected`](mpscnnfullyconnected.md) object or `nil`, if fa
 
 #### Discussion
 
-> **Note**:  The encode methods in the [`MPSCNNKernel`](mpscnnkernel.md) class can be used to encode an [`MPSCNNFullyConnected`](mpscnnfullyconnected.md) object to a [`MTLCommandBuffer`](https://developer.apple.com/documentation/Metal/MTLCommandBuffer) object.
+> **Note**:  The encode methods in the [`MPSCNNKernel`](mpscnnkernel.md) class can be used to encode an [`MPSCNNFullyConnected`](mpscnnfullyconnected.md) object to a [`MTLCommandBuffer`](https://developer.apple.com/documentation/metal/mtlcommandbuffer) object.
 
 ## Parameters
 

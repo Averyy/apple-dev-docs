@@ -42,10 +42,10 @@ Train, evaluate, and export your sound classifier by following similar steps to 
 - [`Creating an Image Classifier Model`](creating-an-image-classifier-model.md)
 - [`Creating an Action Classifier Model`](creating-an-action-classifier-model.md)
 
-Add the sound classifier’s Core ML model to an Xcode project and use it to create an [`SNClassifySoundRequest`](https://developer.apple.com/documentation/SoundAnalysis/SNClassifySoundRequest) at runtime. Your app uses the sound request to identify sounds in an audio file or audio stream by following the steps in the following articles, respectively:
+Add the sound classifier’s Core ML model to an Xcode project and use it to create an [`SNClassifySoundRequest`](https://developer.apple.com/documentation/soundanalysis/snclassifysoundrequest) at runtime. Your app uses the sound request to identify sounds in an audio file or audio stream by following the steps in the following articles, respectively:
 
-- [`Classifying Sounds in an Audio File`](https://developer.apple.com/documentation/SoundAnalysis/classifying-sounds-in-an-audio-file)
-- [`Classifying Sounds in an Audio Stream`](https://developer.apple.com/documentation/SoundAnalysis/classifying-sounds-in-an-audio-stream)
+- [`Classifying Sounds in an Audio File`](https://developer.apple.com/documentation/soundanalysis/classifying-sounds-in-an-audio-file)
+- [`Classifying Sounds in an Audio Stream`](https://developer.apple.com/documentation/soundanalysis/classifying-sounds-in-an-audio-stream)
 
 ## Topics
 
@@ -110,13 +110,13 @@ Add the sound classifier’s Core ML model to an Xcode project and use it to cre
 ## Relationships
 
 ### Conforms To
-- [Copyable](../Swift/Copyable.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomPlaygroundDisplayConvertible](../Swift/CustomPlaygroundDisplayConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Escapable](../Swift/Escapable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Copyable](../swift/copyable.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomPlaygroundDisplayConvertible](../swift/customplaygrounddisplayconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Escapable](../swift/escapable.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 
 ---

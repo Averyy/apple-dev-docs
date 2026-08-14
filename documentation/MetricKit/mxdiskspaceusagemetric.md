@@ -30,11 +30,11 @@ Disk space is a limited resource shared by many apps. Optimize your app’s disk
 
 Modern file systems such APFS provide enhanced features to maximize space utilization, such as file cloning. The disk space usage metric reports size accurately without double counting the cloned files.
 
-For example, if you copy a file using [`copyItem(at:to:)`](https://developer.apple.com/documentation/Foundation/FileManager/copyItem(at:to:)), the file system shows two separate files. However, due to the file system optimization, the copied file shares the same storage space with the original file. If you manually calculate the size of all your files, your calculation may also include the copied file, resulting in a larger size than expected.
+For example, if you copy a file using [`copyItem(at:to:)`](https://developer.apple.com/documentation/foundation/filemanager/copyitem(at:to:)), the file system shows two separate files. However, due to the file system optimization, the copied file shares the same storage space with the original file. If you manually calculate the size of all your files, your calculation may also include the copied file, resulting in a larger size than expected.
 
 ##### Storing App Specific Files
 
-Use the [`totalCacheFolderSize`](mxdiskspaceusagemetric/totalcachefoldersize.md) property of MXDiskSpaceUsageMetric to gain insights into how the operating system manages your app’s cached content in the field. Placing files in the appropriate directories, such as the [`cachesDirectory`](https://developer.apple.com/documentation/Foundation/URL/cachesDirectory) and [`temporaryDirectory`](https://developer.apple.com/documentation/Foundation/URL/temporaryDirectory) (see [`File System Basics`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/FileManagement/Conceptual/FileSystemProgrammingGuide/FileSystemOverview/FileSystemOverview.html)), allows the system to intelligently manage and purge content when necessary, ensuring optimal disk space utilization and a better user experience.
+Use the [`totalCacheFolderSize`](mxdiskspaceusagemetric/totalcachefoldersize.md) property of MXDiskSpaceUsageMetric to gain insights into how the operating system manages your app’s cached content in the field. Placing files in the appropriate directories, such as the [`cachesDirectory`](https://developer.apple.com/documentation/foundation/url/cachesdirectory) and [`temporaryDirectory`](https://developer.apple.com/documentation/foundation/url/temporarydirectory) (see [`File System Basics`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/FileManagement/Conceptual/FileSystemProgrammingGuide/FileSystemOverview/FileSystemOverview.html)), allows the system to intelligently manage and purge content when necessary, ensuring optimal disk space utilization and a better user experience.
 
 ## Topics
 
@@ -63,14 +63,14 @@ Use the [`totalCacheFolderSize`](mxdiskspaceusagemetric/totalcachefoldersize.md)
 ### Inherits From
 - [MXMetric](mxmetric.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCoding](../Foundation/NSCoding.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [NSSecureCoding](../Foundation/NSSecureCoding.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCoding](../foundation/nscoding.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSSecureCoding](../foundation/nssecurecoding.md)
 
 ## See Also
 

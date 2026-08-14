@@ -22,7 +22,7 @@ let kCGPDFXOutputCondition: CFString
 
 #### Discussion
 
-This key is optional. If present, the value of this key must be a [`CFString`](https://developer.apple.com/documentation/CoreFoundation/CFString) object.
+This key is optional. If present, the value of this key must be a [`CFString`](https://developer.apple.com/documentation/corefoundation/cfstring) object.
 
 ## See Also
 

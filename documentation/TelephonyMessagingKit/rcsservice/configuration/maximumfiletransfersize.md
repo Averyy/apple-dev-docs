@@ -7,7 +7,6 @@ The maximum size of a file that the RCS file transfer service can send.
 
 **Availability**:
 - iOS 26.0+
-- iPadOS 26.0+
 
 ## Declaration
 
@@ -17,7 +16,7 @@ var maximumFileTransferSize: Measurement<UnitInformationStorage>? { get }
 
 #### Discussion
 
-This value is represented as a Foundation [`Measurement`](https://developer.apple.com/documentation/Foundation/Measurement) that uses the [`UnitInformationStorage`](https://developer.apple.com/documentation/Foundation/UnitInformationStorage) unit type. If the messaging service doesn’t limit the file size, the value is `nil`.
+This value is represented as a Foundation [`Measurement`](https://developer.apple.com/documentation/foundation/measurement) that uses the [`UnitInformationStorage`](https://developer.apple.com/documentation/foundation/unitinformationstorage) unit type. If the messaging service doesn’t limit the file size, the value is `nil`.
 
 ## See Also
 

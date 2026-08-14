@@ -23,13 +23,13 @@ class PHASESwitchNodeDefinition
 
 A switch node takes a different path in a sound-event hierarchy depending on the value that the app supplies for the node’s switch metaparameter. You define the available paths ahead of time by calling [`addSubtree(_:switchValue:)`](phaseswitchnodedefinition/addsubtree(_:switchvalue:).md) at least twice and supplying the subtree’s unique string name as the switch value. When your app invokes a sound event at runtime, PHASE checks the value of [`switchMetaParameterDefinition`](phaseswitchnodedefinition/switchmetaparameterdefinition.md) to determine which path to take.
 
-![Illustration of a flowchart that represents a sound event node tree. The chart contains three boxes, which represent nodes. At left, a box labeled Switch Node contains the text Input Metaparameter Terrain. An arrow flows to the right from the switch node to a box resting at the bottom of the figure that’s labeled Sampler Node Sidewalk Footstep. Another arrow flows to the right from the switch node to a box resting at the top of the figure, labeled Sampler Node Grass Footstep.](https://docs-assets.developer.apple.com/published/ca9b1fe656ec9cead83a5017abbb03c9/media-3918861%402x.png)
+![Illustration of a flowchart that represents a sound event node tree. The chart contains three boxes, which represent nodes. At left, a box labeled Switch Node contains the text Input Metaparameter Terrain. An arrow flows to the right from the switch node to a box resting at the bottom of the figure that’s labeled Sampler Node Sidewalk Footstep. Another arrow flows to the right from the switch node to a box resting at the top of the figure, labeled Sampler Node Grass Footstep.](/images/com.apple.phase/media-3918861@2x.png)
 
 ##### Switch Between Mulitple Node Trees
 
 For example, the following diagram represents a node tree that plays one of three grass or sidewalk footstep sounds, depending on the app’s current state. The app sets a value for the switch-node metaparameter according to the terrain on which the player in a game currently stands.
 
-![Illustration of a flow chart that represents a sound event node tree. At left, a box labeled Switch Node cointains the text Input Metaparameter terrain. Two arrows flow out of the node to respective boxes that are both labeled Random Node. One random node branches to two different boxes labeled Sampler Node. One sampler node contains the text Grass Footstep Variation One. The other sampler node contains the text Grass Footstep Variation Two. The other random node branches to two different boxes titled Sampler Node. One sampler node contains the text Cobblestone Footstep Variation One. The other sampler node contains the text Cobblestone Footstep Variation Two. ](https://docs-assets.developer.apple.com/published/74bd2906e5c8cd42e42a2dd07e1b55be/media-3918863%402x.png)
+![Illustration of a flow chart that represents a sound event node tree. At left, a box labeled Switch Node cointains the text Input Metaparameter terrain. Two arrows flow out of the node to respective boxes that are both labeled Random Node. One random node branches to two different boxes labeled Sampler Node. One sampler node contains the text Grass Footstep Variation One. The other sampler node contains the text Grass Footstep Variation Two. The other random node branches to two different boxes titled Sampler Node. One sampler node contains the text Cobblestone Footstep Variation One. The other sampler node contains the text Cobblestone Footstep Variation Two. ](/images/com.apple.phase/media-3918863@2x.png)
 
 The following code creates a random node subtree for each terrain type and adds each one as a subtree to the switch node.
 
@@ -151,12 +151,12 @@ footstepEvent.metaParameters[@"terrain"] = @"grass";
 ### Inherits From
 - [PHASESoundEventNodeDefinition](phasesoundeventnodedefinition.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

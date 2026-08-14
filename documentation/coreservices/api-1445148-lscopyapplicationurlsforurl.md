@@ -30,8 +30,8 @@ Thread-safe since macOS 10.3.
 
 ## Parameters
 
-- `inURL`: A Core Foundation URL reference designating the item for which all suitable apps are requested. See   for a description of the   data type.
-- `inRolesMask`: A bit mask specifying the apps’ role or roles with respect to the designated item. See   for a description of this mask. This parameter applies only to URLs with a scheme component of  , and is ignored for all other schemes. If the role is unimportant, pass  .
+- `inURL`: A Core Foundation URL reference designating the item for which all suitable apps are requested. See `CFURL` for a description of the `CFURLRef` data type.
+- `inRolesMask`: A bit mask specifying the apps’ role or roles with respect to the designated item. See [`LSRolesMask`](lsrolesmask.md) for a description of this mask. This parameter applies only to URLs with a scheme component of `file`, and is ignored for all other schemes. If the role is unimportant, pass `kLSRolesAll`.
 
 ## See Also
 

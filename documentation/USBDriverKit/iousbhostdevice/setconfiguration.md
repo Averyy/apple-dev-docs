@@ -16,7 +16,7 @@ virtual kern_return_t SetConfiguration(uint8_t bConfigurationValue, bool matchIn
 
 #### Return Value
 
-[`kIOReturnSuccess`](https://developer.apple.com/documentation/DriverKit/kIOReturnSuccess) on success, or another value if an error occurs. See [`Error Codes`](https://developer.apple.com/documentation/DriverKit/error-codes).
+[`kIOReturnSuccess`](https://developer.apple.com/documentation/driverkit/kioreturnsuccess) on success, or another value if an error occurs. See [`Error Codes`](https://developer.apple.com/documentation/driverkit/error-codes).
 
 #### Discussion
 
@@ -25,7 +25,7 @@ This method terminates all previously configured child interfaces and sets the n
 ## Parameters
 
 - `bConfigurationValue`: The configuration to select. You can get this value from the [`bConfigurationValue`](iousbconfigurationdescriptor/bconfigurationvalue.md) field of the [`IOUSBConfigurationDescriptor`](iousbconfigurationdescriptor.md) structure.
-- `matchInterfaces`: A Boolean value indicating whether you want the system to perform matching on the interfaces of the new configuration. Specify [`false`](https://developer.apple.com/documentation/Swift/false) to skip the matching process.
+- `matchInterfaces`: A Boolean value indicating whether you want the system to perform matching on the interfaces of the new configuration. Specify [`false`](https://developer.apple.com/documentation/swift/false) to skip the matching process.
 
 
 ---

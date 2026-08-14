@@ -23,7 +23,7 @@ protocol SCStreamOutput : NSObjectProtocol
 
 The [`SCStreamOutput`](scstreamoutput.md) protocol provides a way to retrieve output from an [`SCStream`](scstream.md).
 
-After you call [`startCapture(completionHandler:)`](scstream/startcapture(completionhandler:).md), the system provides frame data through the [`stream(_:didOutputSampleBuffer:of:)`](scstreamoutput/stream(_:didoutputsamplebuffer:of:).md) method. You can inspect the [`CMSampleBuffer`](https://developer.apple.com/documentation/CoreMedia/CMSampleBuffer) to retrieve image data, and inspect the sample buffer for metadata about the frame.
+After you call [`startCapture(completionHandler:)`](scstream/startcapture(completionhandler:).md), the system provides frame data through the [`stream(_:didOutputSampleBuffer:of:)`](scstreamoutput/stream(_:didoutputsamplebuffer:of:).md) method. You can inspect the [`CMSampleBuffer`](https://developer.apple.com/documentation/coremedia/cmsamplebuffer) to retrieve image data, and inspect the sample buffer for metadata about the frame.
 
 ## Topics
 
@@ -34,7 +34,7 @@ After you call [`startCapture(completionHandler:)`](scstream/startcapture(comple
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

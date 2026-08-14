@@ -59,7 +59,7 @@ Occlusion only works in mixed or progressive immersive space. For progressive sp
 
 ### Conforms To
 - [Component](component.md)
-- [Equatable](../Swift/Equatable.md)
+- [Equatable](../swift/equatable.md)
 
 ## See Also
 

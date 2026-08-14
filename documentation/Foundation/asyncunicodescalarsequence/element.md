@@ -22,7 +22,7 @@ typealias Element = UnicodeScalar
 
 #### Discussion
 
-[`AsyncUnicodeScalarSequence`](asyncunicodescalarsequence.md) produces elements of type [`UnicodeScalar`](https://developer.apple.com/documentation/Swift/UnicodeScalar).
+[`AsyncUnicodeScalarSequence`](asyncunicodescalarsequence.md) produces elements of type [`UnicodeScalar`](https://developer.apple.com/documentation/swift/unicodescalar).
 
 
 ---

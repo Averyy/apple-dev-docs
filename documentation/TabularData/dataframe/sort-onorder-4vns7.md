@@ -24,11 +24,11 @@ mutating func sort(on columnName: String, order: Order = .ascending)
 
 This is a convenience method that only works for columns of the following types:
 
-- [`Bool`](https://developer.apple.com/documentation/Swift/Bool)
-- [`Int`](https://developer.apple.com/documentation/Swift/Int)
-- [`Float`](https://developer.apple.com/documentation/Swift/Float)
-- [`Double`](https://developer.apple.com/documentation/Swift/Double)
-- [`Date`](https://developer.apple.com/documentation/Foundation/Date)
+- [`Bool`](https://developer.apple.com/documentation/swift/bool)
+- [`Int`](https://developer.apple.com/documentation/swift/int)
+- [`Float`](https://developer.apple.com/documentation/swift/float)
+- [`Double`](https://developer.apple.com/documentation/swift/double)
+- [`Date`](https://developer.apple.com/documentation/foundation/date)
 
 > **Note**: Elements with a value of `nil` are less than all non-`nil` values.
 

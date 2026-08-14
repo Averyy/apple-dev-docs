@@ -18,15 +18,15 @@ protocol PushToTalkTransmissionIntent : SystemIntent
 
 #### Overview
 
-Create an app intent that confirms to this protocol to manually start or end an audio transmission that uses the Push to Talk framework. For additional information about transmitting audio with the Push to Talk framework, see [`Push to Talk`](https://developer.apple.com/documentation/PushToTalk).
+Create an app intent that confirms to this protocol to manually start or end an audio transmission that uses the Push to Talk framework. For additional information about transmitting audio with the Push to Talk framework, see [`Push to Talk`](https://developer.apple.com/documentation/pushtotalk).
 
 ## Relationships
 
 ### Inherits From
 - [AppIntent](appintent.md)
 - [PersistentlyIdentifiable](persistentlyidentifiable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 - [SystemIntent](systemintent.md)
 
 ## See Also

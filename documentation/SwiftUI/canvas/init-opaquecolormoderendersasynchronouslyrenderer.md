@@ -38,7 +38,7 @@ Canvas { context, size in
 
 The example above draws the outline of an ellipse that exactly inscribes a canvas with a blue border:
 
-![A screenshot of a canvas view that shows the green outline of an](https://docs-assets.developer.apple.com/published/da33312de456cfbf0dfa4f0f517083c8/Canvas-1%402x.png)
+![A screenshot of a canvas view that shows the green outline of an](/images/com.apple.SwiftUI/Canvas-1@2x.png)
 
 For information about using a context to draw into a canvas, see [`GraphicsContext`](graphicscontext.md). If you want to provide SwiftUI views for the renderer to use as drawing elements, use [`init(opaque:colorMode:rendersAsynchronously:renderer:symbols:)`](canvas/init(opaque:colormode:rendersasynchronously:renderer:symbols:).md) instead.
 

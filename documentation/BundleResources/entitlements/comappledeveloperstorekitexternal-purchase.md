@@ -37,7 +37,7 @@ If your account receives this entitlement, which is also known as the StoreKit E
 </plist>
 ```
 
-For more information, see [`External Purchase`](https://developer.apple.com/documentation/StoreKit/external-purchase).
+For more information, see [`External Purchase`](https://developer.apple.com/documentation/storekit/external-purchase).
 
 ## See Also
 

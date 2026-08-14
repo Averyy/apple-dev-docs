@@ -2,7 +2,7 @@
 
 **Framework**: Foundation
 
-These constants are used as the keys in the outDetails dictionaries returned by [`NSSpellServer`](nsspellserver.md) and [`checkGrammar(of:startingAt:language:wrap:inSpellDocumentWithTag:details:)`](https://developer.apple.com/documentation/AppKit/NSSpellChecker/checkGrammar(of:startingAt:language:wrap:inSpellDocumentWithTag:details:)) ([`NSSpellChecker`](https://developer.apple.com/documentation/AppKit/NSSpellChecker)).
+These constants are used as the keys in the outDetails dictionaries returned by [`NSSpellServer`](nsspellserver.md) and [`checkGrammar(of:startingAt:language:wrap:inSpellDocumentWithTag:details:)`](https://developer.apple.com/documentation/appkit/nsspellchecker/checkgrammar(of:startingat:language:wrap:inspelldocumentwithtag:details:)) ([`NSSpellChecker`](https://developer.apple.com/documentation/appkit/nsspellchecker)).
 
 ## Topics
 

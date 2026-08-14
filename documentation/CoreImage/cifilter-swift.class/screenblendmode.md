@@ -43,7 +43,7 @@ func screenBlendMode(inputImage: CIImage, backgroundImage: CIImage) -> CIImage {
 }
 ```
 
-![The image on the top left shows a beach with multiple palm trees and a rainbow arching across the blue sky.  The image below is a gradient image displaying a gradual color shift from purple to a dark orange. The image on the right shows the output from applying a screen-blend mode filter. The result displays a blend of the colors from the gradient and the beach rainbow photos, creating a brighter image. ](https://docs-assets.developer.apple.com/published/9836f664fed2bf605a485e81428868e7/media-3546401%402x.png)
+![The image on the top left shows a beach with multiple palm trees and a rainbow arching across the blue sky.  The image below is a gradient image displaying a gradual color shift from purple to a dark orange. The image on the right shows the output from applying a screen-blend mode filter. The result displays a blend of the colors from the gradient and the beach rainbow photos, creating a brighter image. ](/images/com.apple.coreimage/media-3546401@2x.png)
 
 ## See Also
 

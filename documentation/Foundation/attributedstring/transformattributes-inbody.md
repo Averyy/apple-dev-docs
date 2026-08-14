@@ -24,7 +24,7 @@ mutating func transformAttributes<E>(in selection: inout AttributedTextSelection
 
 Applies the given `body` to the selection. Specifically, in the case of a selection spanning one or multiple characters, the `body` is applied to every run in the selection individually, modifying only the part of the run that is in the selection.
 
-In the case of an insertion point, the `body` is applied to the attribute container defining the typing attributes. After that, attributes that are bound to the whole paragraph or the character immediately preceding the caret via [`AttributedString.AttributeRunBoundaries`](AttributedString/AttributeRunBoundaries.md) are applied directly to attributed string at the respective range.
+In the case of an insertion point, the `body` is applied to the attribute container defining the typing attributes. After that, attributes that are bound to the whole paragraph or the character immediately preceding the caret via [`AttributedString.AttributeRunBoundaries`](attributedstring/attributerunboundaries.md) are applied directly to attributed string at the respective range.
 
 Use this function to implement controls that operate on the user’s current selection. Some controls define the new value relative to the current state of each individual run in the selection, e.g. a stepper for the font size:
 

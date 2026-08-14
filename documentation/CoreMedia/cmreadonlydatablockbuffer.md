@@ -72,18 +72,18 @@ Block buffer provides a contiguous range of data offsets (from 0 to [`count`](cm
 ## Relationships
 
 ### Conforms To
-- [BidirectionalCollection](../Swift/BidirectionalCollection.md)
+- [BidirectionalCollection](../swift/bidirectionalcollection.md)
 - [CMSampleBuffer.Content](cmsamplebuffer/content.md)
 - [CMSampleBuffer.ContentWithFormatDescription](cmsamplebuffer/contentwithformatdescription.md)
 - [CMSampleBuffer.MultiSampleContent](cmsamplebuffer/multisamplecontent.md)
-- [Collection](../Swift/Collection.md)
-- [Copyable](../Swift/Copyable.md)
-- [DataProtocol](../Foundation/DataProtocol.md)
-- [Escapable](../Swift/Escapable.md)
-- [RandomAccessCollection](../Swift/RandomAccessCollection.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
-- [Sequence](../Swift/Sequence.md)
+- [Collection](../swift/collection.md)
+- [Copyable](../swift/copyable.md)
+- [DataProtocol](../foundation/dataprotocol.md)
+- [Escapable](../swift/escapable.md)
+- [RandomAccessCollection](../swift/randomaccesscollection.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sequence](../swift/sequence.md)
 
 ## See Also
 

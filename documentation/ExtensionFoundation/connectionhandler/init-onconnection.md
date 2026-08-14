@@ -21,7 +21,7 @@ Initializes the connection handler with a closure that accepts a Foundation XPC 
 
 #### Discussion
 
-Use this initializer if your app extension communicates with the host app using [`XPC`](https://developer.apple.com/documentation/Foundation/xpc).
+Use this initializer if your app extension communicates with the host app using [`XPC`](https://developer.apple.com/documentation/foundation/xpc).
 
 ## See Also
 

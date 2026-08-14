@@ -92,7 +92,7 @@ class PlayerModel: MediaSessionRepresentable {
 ## Relationships
 
 ### Inherits From
-- [Identifiable](../Swift/Identifiable.md)
+- [Identifiable](../swift/identifiable.md)
 
 ## See Also
 

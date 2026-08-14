@@ -114,7 +114,7 @@ To enable either of the system-provided document browser animations, first you n
 transitionController = transitionController(forDocumentAt: documentURL)
 ```
 
-To enable the loading animation, assign a [`Progress`](https://developer.apple.com/documentation/Foundation/Progress) object to the transition controller when you begin to load the document.
+To enable the loading animation, assign a [`Progress`](https://developer.apple.com/documentation/foundation/progress) object to the transition controller when you begin to load the document.
 
 ```swift
 // Set up the loading animation.

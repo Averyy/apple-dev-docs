@@ -16,7 +16,7 @@ let IKSlideshowPDFDisplayMode: String
 
 #### Discussion
 
-The associated value is a PDF display mode constant, such as [`PDFDisplayMode.singlePage`](https://developer.apple.com/documentation/PDFKit/PDFDisplayMode/singlePage) or [`PDFDisplayMode.twoUp`](https://developer.apple.com/documentation/PDFKit/PDFDisplayMode/twoUp). See [`PDFView`](https://developer.apple.com/documentation/PDFKit/PDFView) for more information.
+The associated value is a PDF display mode constant, such as [`PDFDisplayMode.singlePage`](https://developer.apple.com/documentation/pdfkit/pdfdisplaymode/singlepage) or [`PDFDisplayMode.twoUp`](https://developer.apple.com/documentation/pdfkit/pdfdisplaymode/twoup). See [`PDFView`](https://developer.apple.com/documentation/pdfkit/pdfview) for more information.
 
 ## See Also
 

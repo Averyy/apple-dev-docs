@@ -33,7 +33,7 @@ This function calculates the sums of the first `N` elements of input vectors `A`
     C[n] = A[n] + B[n];
 ```
 
-![A diagram showing the operation of this function. There are three rows. The top row represents the input vectors, A and B, with three boxes of each. The middle row represents the operation as three boxes with plus signs. The bottom row represents the output vector C as three boxes. The diagram has connecting lines from the input vectors to the operation, and from the operation to the output vectors.](https://docs-assets.developer.apple.com/published/7621d1c03eb1cfdeb4f5b95abdf1baba/media-4389095%402x.png)
+![A diagram showing the operation of this function. There are three rows. The top row represents the input vectors, A and B, with three boxes of each. The middle row represents the operation as three boxes with plus signs. The bottom row represents the output vector C as three boxes. The diagram has connecting lines from the input vectors to the operation, and from the operation to the output vectors.](/images/com.apple.accelerate/media-4389095@2x.png)
 
 The following code shows an example of using this function:
 

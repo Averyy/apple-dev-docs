@@ -16,7 +16,7 @@ static let outputToFileURL: NSSpeechSynthesizer.SpeechPropertyKey
 
 #### Discussion
 
-An [`NSURL`](https://developer.apple.com/documentation/Foundation/NSURL) object. To write the speech output to a file, use the file’s [`NSURL`](https://developer.apple.com/documentation/Foundation/NSURL); to generate the sound through the computer’s speakers, use `nil`. This property works with [`setObject(_:forProperty:)`](nsspeechsynthesizer/setobject(_:forproperty:).md).
+An [`NSURL`](https://developer.apple.com/documentation/foundation/nsurl) object. To write the speech output to a file, use the file’s [`NSURL`](https://developer.apple.com/documentation/foundation/nsurl); to generate the sound through the computer’s speakers, use `nil`. This property works with [`setObject(_:forProperty:)`](nsspeechsynthesizer/setobject(_:forproperty:).md).
 
 ## See Also
 

@@ -30,7 +30,7 @@ If the associated private key is not found in one of the specified keychains, th
 
 - `keychainOrArray`: A reference to a keychain or an array of keychains to search for the associated private key. Specify `NULL` to search the user’s default keychain search list.
 - `certificateRef`: The certificate for which you want to create an identity.
-- `identityRef`: On return, an identity object for the certificate and its associated private key. In Objective-C, call the [`CFRelease`](https://developer.apple.com/documentation/CoreFoundation/CFRelease) function to release this object when you are finished with it.
+- `identityRef`: On return, an identity object for the certificate and its associated private key. In Objective-C, call the [`CFRelease`](https://developer.apple.com/documentation/corefoundation/cfrelease) function to release this object when you are finished with it.
 
 
 ---

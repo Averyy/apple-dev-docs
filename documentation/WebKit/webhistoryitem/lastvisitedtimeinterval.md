@@ -16,7 +16,7 @@ var lastVisitedTimeInterval: TimeInterval { get }
 
 #### Discussion
 
-The interval is from a reference date as determined by [`NSDate`](https://developer.apple.com/documentation/Foundation/NSDate).
+The interval is from a reference date as determined by [`NSDate`](https://developer.apple.com/documentation/foundation/nsdate).
 
 ## See Also
 

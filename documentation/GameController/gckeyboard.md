@@ -21,16 +21,16 @@ class GCKeyboard
 
 #### Overview
 
-To get the keyboard object and its input values, register for the [`GCKeyboardDidConnect`](https://developer.apple.com/documentation/Foundation/NSNotification/Name-swift.struct/GCKeyboardDidConnect) (Swift) or [`GCKeyboardDidConnectNotification`](gckeyboarddidconnectnotification.md) (Objective-C) notification for when a keyboard connects to the device, or use the [`coalesced`](gckeyboard/coalesced.md) class property. Then get the input values from the keyboard object’s [`keyboardInput`](gckeyboard/keyboardinput.md) controller profile.
+To get the keyboard object and its input values, register for the [`GCKeyboardDidConnect`](https://developer.apple.com/documentation/foundation/nsnotification/name-swift.struct/gckeyboarddidconnect) (Swift) or [`GCKeyboardDidConnectNotification`](gckeyboarddidconnectnotification.md) (Objective-C) notification for when a keyboard connects to the device, or use the [`coalesced`](gckeyboard/coalesced.md) class property. Then get the input values from the keyboard object’s [`keyboardInput`](gckeyboard/keyboardinput.md) controller profile.
 
 ## Topics
 
 ### Discovering keyboards
 - [class var coalesced: GCKeyboard?](gckeyboard/coalesced.md)
   The keyboard currently connected to the device.
-- [static let GCKeyboardDidConnect: NSNotification.Name](../Foundation/NSNotification/Name-swift.struct/GCKeyboardDidConnect.md)
+- [static let GCKeyboardDidConnect: NSNotification.Name](../foundation/nsnotification/name-swift.struct/gckeyboarddidconnect.md)
   A notification that posts after a keyboard connects to the device.
-- [static let GCKeyboardDidDisconnect: NSNotification.Name](../Foundation/NSNotification/Name-swift.struct/GCKeyboardDidDisconnect.md)
+- [static let GCKeyboardDidDisconnect: NSNotification.Name](../foundation/nsnotification/name-swift.struct/gckeyboarddiddisconnect.md)
   A notification that posts after a single keyboard, or the last of multiple keyboards, disconnects from the device.
 ### Getting input values
 - [var keyboardInput: GCKeyboardInput?](gckeyboard/keyboardinput.md)
@@ -44,15 +44,15 @@ To get the keyboard object and its input values, register for the [`GCKeyboardDi
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
 - [GCDevice](gcdevice.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

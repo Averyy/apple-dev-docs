@@ -31,7 +31,7 @@ The [`PaperMarkup`](papermarkup.md) data model works hand-in-hand with the view 
 
 **SwiftUI**:
 
-In SwiftUI, you use [`UIViewControllerRepresentable`](https://developer.apple.com/documentation/SwiftUI/UIViewControllerRepresentable) to wrap the UIKit-based markup controller:
+In SwiftUI, you use [`UIViewControllerRepresentable`](https://developer.apple.com/documentation/swiftui/uiviewcontrollerrepresentable) to wrap the UIKit-based markup controller:
 
 ```swift
 import SwiftUI
@@ -256,7 +256,7 @@ class DocumentViewController: UIViewController {
 
 **AppKit**:
 
-This code creates a [`MarkupToolbarViewController`](markuptoolbarviewcontroller.md), sets the toolbar’s delegate to the markup controller, and adds it to the view hierarchy using the standard [`NSViewController`](https://developer.apple.com/documentation/AppKit/NSViewController) embedding process.
+This code creates a [`MarkupToolbarViewController`](markuptoolbarviewcontroller.md), sets the toolbar’s delegate to the markup controller, and adds it to the view hierarchy using the standard [`NSViewController`](https://developer.apple.com/documentation/appkit/nsviewcontroller) embedding process.
 
 ```swift
 import AppKit

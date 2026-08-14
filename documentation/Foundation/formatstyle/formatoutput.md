@@ -23,7 +23,7 @@ associatedtype FormatOutput
 
 #### Discussion
 
-Conforming types in Foundation define this type as either [`String`](https://developer.apple.com/documentation/Swift/String) or [`AttributedString`](attributedstring.md).
+Conforming types in Foundation define this type as either [`String`](https://developer.apple.com/documentation/swift/string) or [`AttributedString`](attributedstring.md).
 
 ## See Also
 

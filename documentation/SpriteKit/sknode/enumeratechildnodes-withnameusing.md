@@ -28,7 +28,7 @@ func enumerateChildNodes(withName name: String, using block: @escaping (SKNode, 
 
 This method enumerates the child array in order, searching for nodes whose names match the search parameter. The block is called once for each node that matches the name parameter.
 
-The following Swift code shows how you could enumerate through the child nodes of a scene with a name containing the string `yellow`. Each matching node is hidden until the enumeration finds a node that also contains the string `triangle`. When this node is reached, `stop` is set to [`true`](https://developer.apple.com/documentation/Swift/true) and the processing stops.
+The following Swift code shows how you could enumerate through the child nodes of a scene with a name containing the string `yellow`. Each matching node is hidden until the enumeration finds a node that also contains the string `triangle`. When this node is reached, `stop` is set to [`true`](https://developer.apple.com/documentation/swift/true) and the processing stops.
 
 Listing 1. Enumerating child nodes
 
@@ -75,7 +75,7 @@ parentNode.enumerateChildNodes(withName: "SKSpriteNode") {
 ## Parameters
 
 - `name`: The name to search for. This may be either the literal name of the node or a customized search string. See `Searching the Node Tree`.
-- `block`: A block to execute on nodes that match the `name` parameter. The block has the signature `(node:` [`SKNode`](sknode.md) `, stop:` [`UnsafeMutablePointer`](https://developer.apple.com/documentation/Swift/UnsafeMutablePointer) `<` [`ObjCBool`](https://developer.apple.com/documentation/ObjectiveC/ObjCBool) `>)`.
+- `block`: A block to execute on nodes that match the `name` parameter. The block has the signature `(node:` [`SKNode`](sknode.md) `, stop:` [`UnsafeMutablePointer`](https://developer.apple.com/documentation/swift/unsafemutablepointer) `<` [`ObjCBool`](https://developer.apple.com/documentation/objectivec/objcbool) `>)`.
 
 ## See Also
 

@@ -22,9 +22,9 @@ var alignmentMode: String { get set }
 
 #### Discussion
 
-When you define a layout rectangle for the text using its [`containerFrame`](scntext/containerframe.md) property, SceneKit uses the [`alignmentMode`](scntext/alignmentmode.md) property to determine where each line of text is placed horizontally relative to the layout rectangle. For possible values, see [`Horizontal alignment modes`](https://developer.apple.com/documentation/QuartzCore/horizontal-alignment-modes) in [`CATextLayer`](https://developer.apple.com/documentation/QuartzCore/CATextLayer).
+When you define a layout rectangle for the text using its [`containerFrame`](scntext/containerframe.md) property, SceneKit uses the [`alignmentMode`](scntext/alignmentmode.md) property to determine where each line of text is placed horizontally relative to the layout rectangle. For possible values, see [`Horizontal alignment modes`](https://developer.apple.com/documentation/quartzcore/horizontal-alignment-modes) in [`CATextLayer`](https://developer.apple.com/documentation/quartzcore/catextlayer).
 
-The default value of this property is [`natural`](https://developer.apple.com/documentation/QuartzCore/CATextLayerAlignmentMode/natural), specifying that text is aligned relative to the default alignment of its script. (For example, left-to-right languages are left-aligned.)
+The default value of this property is [`natural`](https://developer.apple.com/documentation/quartzcore/catextlayeralignmentmode/natural), specifying that text is aligned relative to the default alignment of its script. (For example, left-to-right languages are left-aligned.)
 
 ## See Also
 

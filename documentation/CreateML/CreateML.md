@@ -17,11 +17,11 @@ Create machine learning models for use in your app.
 
 Use Create ML with familiar tools like Swift and macOS playgrounds to create and train custom machine learning models on your Mac. You can train models to perform tasks like recognizing images, extracting meaning from text, or finding relationships between numerical values.
 
-![Diagram showing how you use images, text, and other structured data with Create ML to train a Core ML model.](https://docs-assets.developer.apple.com/published/eb03080ad7cc9d6f88eadc90b3bac920/create-ml-1%402x.png)
+![Diagram showing how you use images, text, and other structured data with Create ML to train a Core ML model.](/images/com.apple.createml/create-ml-1@2x.png)
 
-You train a model to recognize patterns by showing it representative samples. For example, you can train a model to recognize dogs by showing it lots of images of different dogs. After you’ve trained the model, you test it out on data it hasn’t seen before, and evaluate how well it performed the task. When the model is performing well enough, you’re ready to integrate it into your app using [`Core ML`](https://developer.apple.com/documentation/CoreML).
+You train a model to recognize patterns by showing it representative samples. For example, you can train a model to recognize dogs by showing it lots of images of different dogs. After you’ve trained the model, you test it out on data it hasn’t seen before, and evaluate how well it performed the task. When the model is performing well enough, you’re ready to integrate it into your app using [`Core ML`](https://developer.apple.com/documentation/coreml).
 
-![Diagram showing the Create ML workflow: Gather data, train the model, and evaluate the trained model.](https://docs-assets.developer.apple.com/published/8140ce0ea19e9ada712c516d10436651/create-ml-2%402x.png)
+![Diagram showing the Create ML workflow: Gather data, train the model, and evaluate the trained model.](/images/com.apple.createml/create-ml-2@2x.png)
 
 Create ML leverages the machine learning infrastructure built in to Apple products like Photos and Siri. This means your image classification and natural language models are smaller and take much less time to train.
 

@@ -29,8 +29,8 @@ An opaque reference to a mutable font collection.
 ### Inherits From
 - [CTFontCollection](ctfontcollection.md)
 ### Conforms To
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
 
 
 ---

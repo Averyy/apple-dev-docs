@@ -24,9 +24,9 @@ class GCRacingWheel
 ### Discovering racing wheels
 - [class var connectedRacingWheels: Set<GCRacingWheel>](gcracingwheel/connectedracingwheels.md)
   The racing wheels connected to the device.
-- [static let GCRacingWheelDidConnect: NSNotification.Name](../Foundation/NSNotification/Name-swift.struct/GCRacingWheelDidConnect.md)
+- [static let GCRacingWheelDidConnect: NSNotification.Name](../foundation/nsnotification/name-swift.struct/gcracingwheeldidconnect.md)
   A notification that posts after a racing wheel controller connects to the device.
-- [static let GCRacingWheelDidDisconnect: NSNotification.Name](../Foundation/NSNotification/Name-swift.struct/GCRacingWheelDidDisconnect.md)
+- [static let GCRacingWheelDidDisconnect: NSNotification.Name](../foundation/nsnotification/name-swift.struct/gcracingwheeldiddisconnect.md)
   A notification that posts after a racing wheel controller disconnects from the device.
 ### Getting events
 - [func acquireDevice() throws](gcracingwheel/acquiredevice.md)
@@ -52,15 +52,15 @@ class GCRacingWheel
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
 - [GCDevice](gcdevice.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

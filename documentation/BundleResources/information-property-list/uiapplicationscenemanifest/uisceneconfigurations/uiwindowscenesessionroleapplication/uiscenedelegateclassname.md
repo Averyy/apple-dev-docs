@@ -16,7 +16,7 @@ The name of the app-specific class that you want UIKit to instantiate and use as
 
 #### Discussion
 
-The class you specify for this key must adopt the [`UISceneDelegate`](https://developer.apple.com/documentation/UIKit/UISceneDelegate) protocol. If the class you specify for the [`UISceneClassName`](information-property-list/uiapplicationscenemanifest/uisceneconfigurations/uiwindowscenesessionroleapplication/uisceneclassname.md) key is [`UIWindowScene`](https://developer.apple.com/documentation/UIKit/UIWindowScene), your class must adopt the [`UIWindowSceneDelegate`](https://developer.apple.com/documentation/UIKit/UIWindowSceneDelegate) protocol.
+The class you specify for this key must adopt the [`UISceneDelegate`](https://developer.apple.com/documentation/uikit/uiscenedelegate) protocol. If the class you specify for the [`UISceneClassName`](information-property-list/uiapplicationscenemanifest/uisceneconfigurations/uiwindowscenesessionroleapplication/uisceneclassname.md) key is [`UIWindowScene`](https://developer.apple.com/documentation/uikit/uiwindowscene), your class must adopt the [`UIWindowSceneDelegate`](https://developer.apple.com/documentation/uikit/uiwindowscenedelegate) protocol.
 
 ## See Also
 

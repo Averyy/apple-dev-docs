@@ -30,9 +30,9 @@ There are three key components to a widget:
 - A timeline provider that drives the process of updating the widget’s view over time.
 - SwiftUI views used by WidgetKit to display the widget.
 
-For information about adding a widget extension to your app, and keeping your widget up to date, see [`Creating a widget extension`](https://developer.apple.com/documentation/WidgetKit/Creating-a-Widget-Extension) and [`Keeping a widget up to date`](https://developer.apple.com/documentation/WidgetKit/Keeping-a-Widget-Up-To-Date), respectively.
+For information about adding a widget extension to your app, and keeping your widget up to date, see [`Creating a widget extension`](https://developer.apple.com/documentation/widgetkit/creating-a-widget-extension) and [`Keeping a widget up to date`](https://developer.apple.com/documentation/widgetkit/keeping-a-widget-up-to-date), respectively.
 
-By adding a custom SiriKit intent definition, you can let users customize their widgets to show the information that’s most relevant to them. If you’ve already added support for Siri or Shortcuts, you’re well on your way to supporting customizable widgets. For more information, see [`Making a configurable widget`](https://developer.apple.com/documentation/WidgetKit/Making-a-Configurable-Widget).
+By adding a custom SiriKit intent definition, you can let users customize their widgets to show the information that’s most relevant to them. If you’ve already added support for Siri or Shortcuts, you’re well on your way to supporting customizable widgets. For more information, see [`Making a configurable widget`](https://developer.apple.com/documentation/widgetkit/making-a-configurable-widget).
 
 A type conforming to this protocol inherits `@preconcurrency @MainActor` isolation from the protocol if the conformance is included in the type’s base declaration:
 
@@ -65,13 +65,13 @@ extension MyCustomType: Transition {
 
 ## See Also
 
-- [Building Widgets Using WidgetKit and SwiftUI](../WidgetKit/building-widgets-using-widgetkit-and-swiftui.md)
+- [Building Widgets Using WidgetKit and SwiftUI](../widgetkit/building-widgets-using-widgetkit-and-swiftui.md)
   Create widgets to show your app’s content on the Home screen, with custom intents for user-customizable settings.
-- [Creating a widget extension](../WidgetKit/Creating-a-Widget-Extension.md)
+- [Creating a widget extension](../widgetkit/creating-a-widget-extension.md)
   Display your app’s content in a convenient, informative widget on various devices.
-- [Keeping a widget up to date](../WidgetKit/Keeping-a-Widget-Up-To-Date.md)
+- [Keeping a widget up to date](../widgetkit/keeping-a-widget-up-to-date.md)
   Plan your widget’s timeline to show timely, relevant information using dynamic views, and update the timeline when things change.
-- [Making a configurable widget](../WidgetKit/Making-a-Configurable-Widget.md)
+- [Making a configurable widget](../widgetkit/making-a-configurable-widget.md)
   Give people the option to customize their widgets by adding a custom app intent to your project.
 - [protocol WidgetBundle](widgetbundle.md)
   A container used to expose multiple widgets from a single widget extension.

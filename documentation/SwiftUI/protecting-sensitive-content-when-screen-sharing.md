@@ -12,7 +12,7 @@ iOS and iPadOS provide a built-in API to detect when the system captures a scene
 
 #### Detect When the System Captures Your Apps Content
 
-When a screen capture session is active — including screen recording, mirroring, or remote control — the system updates the scene’s capture state. Use the [`isSceneCaptured`](EnvironmentValues/isSceneCaptured.md) environment value in SwiftUI or [`sceneCaptureState`](https://developer.apple.com/documentation/UIKit/UITraitCollection/sceneCaptureState) in UIKit to observe this state. When the state changes, update your UI accordingly — for example, replacing sensitive views with redacted or placeholder content.
+When a screen capture session is active — including screen recording, mirroring, or remote control — the system updates the scene’s capture state. Use the [`isSceneCaptured`](environmentvalues/isscenecaptured.md) environment value in SwiftUI or [`sceneCaptureState`](https://developer.apple.com/documentation/uikit/uitraitcollection/scenecapturestate) in UIKit to observe this state. When the state changes, update your UI accordingly — for example, replacing sensitive views with redacted or placeholder content.
 
 **SwiftUI**:
 
@@ -65,7 +65,7 @@ The right response depends on the sensitivity of the data your app handles and t
 
 #### Balance Protection with Usability
 
-[`sceneCaptureState`](https://developer.apple.com/documentation/UIKit/UITraitCollection/sceneCaptureState) activates for all capture events, including everyday uses like recording a tutorial or mirroring to a personal Apple TV. Keep these considerations in mind when deciding how to respond:
+[`sceneCaptureState`](https://developer.apple.com/documentation/uikit/uitraitcollection/scenecapturestate) activates for all capture events, including everyday uses like recording a tutorial or mirroring to a personal Apple TV. Keep these considerations in mind when deciding how to respond:
 
 - **Apply protections selectively.** Target the highest-risk areas of your app rather than blocking functionality broadly. A blanket app-level lockdown may frustrate people with legitimate screen-sharing needs.
 - **Use neutral language.** Avoid messaging that implies the person is under attack. A calm, informative notification — such as “Screen sharing is active. Some content is protected during this session.” — is less alarming and more effective.
@@ -73,7 +73,7 @@ The right response depends on the sensitivity of the data your app handles and t
 
 ## See Also
 
-- [Designing your app for the Always On state](../watchOS-Apps/designing-your-app-for-the-always-on-state.md)
+- [Designing your app for the Always On state](../watchos-apps/designing-your-app-for-the-always-on-state.md)
   Customize your watchOS app’s user interface for continuous display.
 - [func privacySensitive(Bool) -> some View](view/privacysensitive(_:).md)
   Marks the view as containing sensitive, private user data.

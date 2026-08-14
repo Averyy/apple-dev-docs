@@ -37,7 +37,7 @@ Follow these steps in Xcode to record a processor trace:
 
 Instruments processes the trace data and displays a timeline of the trace, which includes tracks for the Processor Trace and Thread State Trace instruments. You can analyze the trace data, or save the trace file to analyze it later or share it with your team.
 
-![An Instruments screenshot with the Processor Trace timeline highlighted, and a region selected in the timeline. The detail view shows the function call summary for a traced app’s main thread.](https://docs-assets.developer.apple.com/published/7b9a91d35562ac5a46a9bf5d942a091a/processor-trace-summary%402x.png)
+![An Instruments screenshot with the Processor Trace timeline highlighted, and a region selected in the timeline. The detail view shows the function call summary for a traced app’s main thread.](/images/com.apple.Xcode/processor-trace-summary@2x.png)
 
 To record and analyze processor traces from the build of your app that you distribute to customers, you need to generate and store the debugging information from that build so that Instruments can use it to generate function call backtraces. For more information, see [`Building your app to include debugging information`](building-your-app-to-include-debugging-information.md).
 
@@ -62,7 +62,7 @@ To focus on a region you’re interested in, click in the Processor Trace track 
 
 The Call Tree view shows a top-down tree of the processor cycles and instructions that run during the process that Instruments traces, with summary statistics for each call. Alternatively, you can switch to a flame graph visualization using the Graph button at the top right of the Call Tree view. The flame graph shows the fraction of time the traced process spends running each function, organized by each function’s position in the call stack. Use the Call Tree view to investigate how functions spend time running their own code, as well as the code in the functions that they call.
 
-![An Instruments screenshot of the Call Tree view showing a flame graph for a traced app.](https://docs-assets.developer.apple.com/published/4de96080e62831a613fdcdf644b355a5/processor-trace-flame-graph%402x.png)
+![An Instruments screenshot of the Call Tree view showing a flame graph for a traced app.](/images/com.apple.Xcode/processor-trace-flame-graph@2x.png)
 
 The Summary: Function Calls view shows an aggregation of the functions that your app runs during the recording, along with statistics that include the number of times the app runs each function, the active duration of the function, and the number of instructions the processor uses running each function. The list of functions includes library code, as well as functions that the compiler synthesizes. Use this view to get an overview of where your app spends its time and to prioritize deeper investigation into specific functions.
 
@@ -72,13 +72,13 @@ The Function Calls view shows a list of all the functions that Instruments trace
 
 Click the disclosure triangle next to your target process’s name in the timeline to see a list of the threads that Instruments traces in that process, along with a visualization in the timeline of the functions that are active in each thread. Select the timeline track for a thread, then choose View > Selected Track > Size to Fit to expand the track and display the names of active functions in their entries in the timeline. Use this view to understand which function is running in your app’s thread, and correlate that information with other events in the Instruments timeline.
 
-![An Instruments screenshot of the timeline view showing the active functions on the main thread of a traced app.](https://docs-assets.developer.apple.com/published/3cc994ab79dbaea029884b14fe63afdb/processor-trace-function-flow%402x.png)
+![An Instruments screenshot of the timeline view showing the active functions on the main thread of a traced app.](/images/com.apple.Xcode/processor-trace-function-flow@2x.png)
 
 #### Filter Detail Views By Function Process or Thread
 
 In any of the Processor Trace instrument’s detail views, type a function name into the “Input filter” field, or Control-click a function and choose Add to Detail Filter, to filter the view so that it displays only information about that function. You can also filter by process, or by thread, by adding the process or thread’s name to the detail filter.
 
-![An Instruments screenshot of the Input filter field with the word objc, and the Summary: Function Calls view showing only functions that contain objc in their names.](https://docs-assets.developer.apple.com/published/0759841476289c6d21c5653790be82d4/processor-trace-filter%402x.png)
+![An Instruments screenshot of the Input filter field with the word objc, and the Summary: Function Calls view showing only functions that contain objc in their names.](/images/com.apple.Xcode/processor-trace-filter@2x.png)
 
 #### Set the Inspection Range to the Lifetime of a Function Call
 
@@ -86,7 +86,7 @@ The Processor Trace instrument’s detail views show information about the proce
 
 In the Function Calls view, Control-click a function’s Duration value and choose Set Inspection Range to change the region of interest in the timeline to the interval between the processor starting to run the function and the function exiting.
 
-![An Instruments screenshot of the detail view showing the function calls that a traced process made during the selected inspection range in the timeline view.](https://docs-assets.developer.apple.com/published/bba0927c9af08ebb337de7542d16c592/processor-trace-functions%402x.png)
+![An Instruments screenshot of the detail view showing the function calls that a traced process made during the selected inspection range in the timeline view.](/images/com.apple.Xcode/processor-trace-functions@2x.png)
 
 #### Charge Prune and Flatten Function Profiles
 
@@ -98,7 +98,7 @@ You can flatten library calls to boundary frames to hide internal details of lib
 
 Review and change your choices by clicking the Charge, Prune, Flatten button at the bottom of the detail view.
 
-![An Instruments screenshot of the detail view showing the call profile for a traced app, where the functions in the AppKit library are flattened to boundary frames.](https://docs-assets.developer.apple.com/published/cb4269b5907b4ab1ff3908f8446689c8/processor-trace-flatten%402x.png)
+![An Instruments screenshot of the detail view showing the call profile for a traced app, where the functions in the AppKit library are flattened to boundary frames.](/images/com.apple.Xcode/processor-trace-flatten@2x.png)
 
 #### Review Your Apps Processor Usage
 

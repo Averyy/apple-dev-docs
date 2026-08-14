@@ -22,7 +22,7 @@ struct MapMarker
 
 #### Overview
 
-Create a [`Map`](map.md) and display marker annotations by returning a view that conforms to [`MapAnnotationProtocol`](mapannotationprotocol.md), such as [`MapMarker`](mapmarker.md), from the trailing closure of [`init(coordinateRegion:interactionModes:showsUserLocation:userTrackingMode:annotationItems:annotationContent:)`](map/init(coordinateregion:interactionmodes:showsuserlocation:usertrackingmode:annotationitems:annotationcontent:).md) or [`init(mapRect:interactionModes:showsUserLocation:userTrackingMode:annotationItems:annotationContent:)`](map/init(maprect:interactionmodes:showsuserlocation:usertrackingmode:annotationitems:annotationcontent:).md). Items you provide as a collection to the source annotations need to conform to [`Identifiable`](https://developer.apple.com/documentation/Swift/Identifiable).
+Create a [`Map`](map.md) and display marker annotations by returning a view that conforms to [`MapAnnotationProtocol`](mapannotationprotocol.md), such as [`MapMarker`](mapmarker.md), from the trailing closure of [`init(coordinateRegion:interactionModes:showsUserLocation:userTrackingMode:annotationItems:annotationContent:)`](map/init(coordinateregion:interactionmodes:showsuserlocation:usertrackingmode:annotationitems:annotationcontent:).md) or [`init(mapRect:interactionModes:showsUserLocation:userTrackingMode:annotationItems:annotationContent:)`](map/init(maprect:interactionmodes:showsuserlocation:usertrackingmode:annotationitems:annotationcontent:).md). Items you provide as a collection to the source annotations need to conform to [`Identifiable`](https://developer.apple.com/documentation/swift/identifiable).
 
 For example, the following code displays a map with a marker annotation:
 

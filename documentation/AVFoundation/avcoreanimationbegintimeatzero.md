@@ -21,7 +21,7 @@ let AVCoreAnimationBeginTimeAtZero: CFTimeInterval
 
 #### Discussion
 
-The constant is a small, non-zero, positive value which prevents CoreAnimation from replacing `0.0` with [`CACurrentMediaTime()`](https://developer.apple.com/documentation/QuartzCore/CACurrentMediaTime()).
+The constant is a small, non-zero, positive value which prevents CoreAnimation from replacing `0.0` with [`CACurrentMediaTime()`](https://developer.apple.com/documentation/quartzcore/cacurrentmediatime()).
 
 
 ---

@@ -22,7 +22,7 @@ Pass both the bookmark data and access token to your networking extension. For i
 
 ##### Register Download Progress with the System
 
-In your networking extension, receive the bookmark data and resolve the download’s destination URL. Initialize a [`BEDownloadMonitor`](bedownloadmonitor-9bwls.md) object with the download source URL, destination URL, access token, and a [`Progress`](https://developer.apple.com/documentation/Foundation/Progress) object that you use to report the download’s progress to the system:
+In your networking extension, receive the bookmark data and resolve the download’s destination URL. Initialize a [`BEDownloadMonitor`](bedownloadmonitor-9bwls.md) object with the download source URL, destination URL, access token, and a [`Progress`](https://developer.apple.com/documentation/foundation/progress) object that you use to report the download’s progress to the system:
 
 ```swift
 let destinationURL = try! URL(resolvingBookmarkData: destinationData)
@@ -40,11 +40,11 @@ downloadMonitor.useDownloadsFolder() { finalLocation in
 }
 ```
 
-The bookmark you get in the completion handler isn’t suitable for storing to resolve later, if you need to do this then create your own bookmark with security scope. For more information, see [`bookmarkData(options:includingResourceValuesForKeys:relativeTo:)`](https://developer.apple.com/documentation/Foundation/NSURL/bookmarkData(options:includingResourceValuesForKeys:relativeTo:)).
+The bookmark you get in the completion handler isn’t suitable for storing to resolve later, if you need to do this then create your own bookmark with security scope. For more information, see [`bookmarkData(options:includingResourceValuesForKeys:relativeTo:)`](https://developer.apple.com/documentation/foundation/nsurl/bookmarkdata(options:includingresourcevaluesforkeys:relativeto:)).
 
 ##### Download the File and Report Progress to the System
 
-When your network extension is ready to commence the download, call [`beginMonitoring()`](bedownloadmonitor-9bwls/beginmonitoring().md). If you requested that the system use the person’s Downloads folder, this method returns the placeholder location that the system creates to host the downloaded content, as both a URL and bookmark data. Make a network connection to download the content, for example using the [`URL Loading System`](https://developer.apple.com/documentation/Foundation/url-loading-system), store data in the file at the download’s destination URL, and update the `Progress` object that you passed to the `BEDownloadMonitor`:
+When your network extension is ready to commence the download, call [`beginMonitoring()`](bedownloadmonitor-9bwls/beginmonitoring().md). If you requested that the system use the person’s Downloads folder, this method returns the placeholder location that the system creates to host the downloaded content, as both a URL and bookmark data. Make a network connection to download the content, for example using the [`URL Loading System`](https://developer.apple.com/documentation/foundation/url-loading-system), store data in the file at the download’s destination URL, and update the `Progress` object that you passed to the `BEDownloadMonitor`:
 
 ```swift
 var downloadCompletedWithoutError = false

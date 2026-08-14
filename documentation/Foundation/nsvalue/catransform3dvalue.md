@@ -21,7 +21,7 @@ var caTransform3DValue: CATransform3D { get }
 
 ## See Also
 
-- [struct CATransform3D](../QuartzCore/CATransform3D.md)
+- [struct CATransform3D](../quartzcore/catransform3d.md)
   The standard transform matrix used throughout Core Animation.
 - [init(CATransform3D: CATransform3D)](nsvalue/init(catransform3d:).md)
   Creates a new value object containing the specified CoreAnimation transform structure.

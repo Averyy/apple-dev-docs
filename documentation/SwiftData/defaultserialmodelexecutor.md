@@ -29,13 +29,13 @@ class DefaultSerialModelExecutor
 ## Relationships
 
 ### Conforms To
-- [Copyable](../Swift/Copyable.md)
-- [Escapable](../Swift/Escapable.md)
-- [Executor](../Swift/Executor.md)
+- [Copyable](../swift/copyable.md)
+- [Escapable](../swift/escapable.md)
+- [Executor](../swift/executor.md)
 - [ModelExecutor](modelexecutor.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
-- [SerialExecutor](../Swift/SerialExecutor.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
+- [SerialExecutor](../swift/serialexecutor.md)
 - [SerialModelExecutor](serialmodelexecutor.md)
 
 ## See Also

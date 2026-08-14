@@ -28,7 +28,7 @@ Creates a configuration for a widget, with no user-configurable options.
 
 ## See Also
 
-- [var body: Self.Body](../SwiftUI/WidgetConfiguration/body-swift.property.md)
+- [var body: Self.Body](../swiftui/widgetconfiguration/body-swift.property.md)
   The content and behavior of this widget.
 
 

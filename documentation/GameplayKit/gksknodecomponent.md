@@ -21,7 +21,7 @@ class GKSKNodeComponent
 
 #### Overview
 
-Adding a [`GKSKNodeComponent`](gksknodecomponent.md) object to an entity automatically updates the [`entity`](https://developer.apple.com/documentation/SpriteKit/SKNode/entity) property of the component’s SpriteKit node (an [`SKNode`](https://developer.apple.com/documentation/SpriteKit/SKNode) object) to point to that entity.
+Adding a [`GKSKNodeComponent`](gksknodecomponent.md) object to an entity automatically updates the [`entity`](https://developer.apple.com/documentation/spritekit/sknode/entity) property of the component’s SpriteKit node (an [`SKNode`](https://developer.apple.com/documentation/spritekit/sknode) object) to point to that entity.
 
 When you add entities and components to a node in the Xcode SpriteKit scene editor, Xcode automatically creates a [`GKSKNodeComponent`](gksknodecomponent.md) object to manage the relationship between that SpriteKit node and the [`GKEntity`](gkentity.md) object that node represents. Load the scene file with the [`GKScene`](gkscene.md) class to access these entities and components.
 
@@ -43,16 +43,16 @@ For more information on Entity-Component architecture, read [`Entities and Compo
 ### Inherits From
 - [GKComponent](gkcomponent.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
 - [GKAgentDelegate](gkagentdelegate.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCoding](../Foundation/NSCoding.md)
-- [NSCopying](../Foundation/NSCopying.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [NSSecureCoding](../Foundation/NSSecureCoding.md)
+- [Hashable](../swift/hashable.md)
+- [NSCoding](../foundation/nscoding.md)
+- [NSCopying](../foundation/nscopying.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSSecureCoding](../foundation/nssecurecoding.md)
 
 ## See Also
 

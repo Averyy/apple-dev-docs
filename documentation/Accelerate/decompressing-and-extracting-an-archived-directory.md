@@ -12,7 +12,7 @@ The code below decompresses the file generated using the steps explained in [`Co
 
 ##### Create the File Stream to Read the Source Archive
 
-The [`ArchiveByteStream`](https://developer.apple.com/documentation/AppleArchive/ArchiveByteStream) class provides static factory methods that create streams for different functions. In this case, use [`fileStream(path:mode:options:permissions:)`](https://developer.apple.com/documentation/AppleArchive/ArchiveByteStream/fileStream(path:mode:options:permissions:)) to create a byte stream that reads the source file:
+The [`ArchiveByteStream`](https://developer.apple.com/documentation/applearchive/archivebytestream) class provides static factory methods that create streams for different functions. In this case, use [`fileStream(path:mode:options:permissions:)`](https://developer.apple.com/documentation/applearchive/archivebytestream/filestream(path:mode:options:permissions:)) to create a byte stream that reads the source file:
 
 ```swift
 let archiveFilePath = FilePath(NSTemporaryDirectory() + "directory.aar")
@@ -91,7 +91,7 @@ defer {
 
 ##### Decompress and Extract the Archived Directory
 
-Finally, call [`process(readingFrom:writingTo:)`](https://developer.apple.com/documentation/AppleArchive/ArchiveByteStream/process(readingFrom:writingTo:)) to write the output of the decode stream to the extract stream. In turn, the extract stream extracts each archive element to the decompression destination:
+Finally, call [`process(readingFrom:writingTo:)`](https://developer.apple.com/documentation/applearchive/archivebytestream/process(readingfrom:writingto:)) to write the output of the decode stream to the extract stream. In turn, the extract stream extracts each archive element to the decompression destination:
 
 ```swift
 do {
@@ -102,7 +102,7 @@ do {
 }
 ```
 
-On return, the operation recreates the contents of the directory previously archived in `directory.aar` in [`NSTemporaryDirectory()`](https://developer.apple.com/documentation/Foundation/NSTemporaryDirectory()) `+ “dest/”.`
+On return, the operation recreates the contents of the directory previously archived in `directory.aar` in [`NSTemporaryDirectory()`](https://developer.apple.com/documentation/foundation/nstemporarydirectory()) `+ “dest/”.`
 
 ## See Also
 

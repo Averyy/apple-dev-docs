@@ -13,7 +13,7 @@ Help users organize their photos into albums and browse photo collections in a g
 
 #### Overview
 
-The Photos app on iOS displays assets in a thumbnail grid. This sample demonstrates how to achieve a similar layout with a custom [`UICollectionViewController`](https://developer.apple.com/documentation/UIKit/UICollectionViewController). It fetches asset thumbnails using PhotoKit, then displays them as a single photo, video, or Live Photo asset.
+The Photos app on iOS displays assets in a thumbnail grid. This sample demonstrates how to achieve a similar layout with a custom [`UICollectionViewController`](https://developer.apple.com/documentation/uikit/uicollectionviewcontroller). It fetches asset thumbnails using PhotoKit, then displays them as a single photo, video, or Live Photo asset.
 
 The sample app, PhotoBrowse, also demonstrates how to organize the user’s photos into albums and built-in collections, such as Recently Added and Favorites. It supports album creation, deletion, modification, as well as the editing and favoriting of individual assets.
 
@@ -68,7 +68,7 @@ imageManager.stopCachingImages(for: removedAssets,
                                targetSize: thumbnailSize, contentMode: .aspectFill, options: nil)
 ```
 
-Implement the `UICollectionView` delegate method [`cellForItem(at:)`](https://developer.apple.com/documentation/UIKit/UICollectionView/cellForItem(at:)) to use thumbnails instead of full assets. PhotoKit allows you to request assets directly, and even badge Live Photos to set them apart:
+Implement the `UICollectionView` delegate method [`cellForItem(at:)`](https://developer.apple.com/documentation/uikit/uicollectionview/cellforitem(at:)) to use thumbnails instead of full assets. PhotoKit allows you to request assets directly, and even badge Live Photos to set them apart:
 
 ```swift
 // Dequeue a GridViewCell.
@@ -93,7 +93,7 @@ imageManager.requestImage(for: asset, targetSize: thumbnailSize, contentMode: .a
 
 ##### Show a Single Photo Video or Live Photo
 
-`AssetViewController` implements the view of a single asset. If the asset is a video or Live Photo, the view controller also supports playback through a [`UIBarButtonItem`](https://developer.apple.com/documentation/UIKit/UIBarButtonItem):
+`AssetViewController` implements the view of a single asset. If the asset is a video or Live Photo, the view controller also supports playback through a [`UIBarButtonItem`](https://developer.apple.com/documentation/uikit/uibarbuttonitem):
 
 ```swift
 // Set the appropriate toolbar items based on the media type of the asset.
@@ -132,7 +132,7 @@ On tvOS, PhotoKit supports Live Photo playback:
 #endif
 ```
 
-The view controller supports playback by creating an [`AVPlayer`](https://developer.apple.com/documentation/AVFoundation/AVPlayer) and layering it on top of the item once the [`PHImageManager`](https://developer.apple.com/documentation/photos/phimagemanager) fetches a video:
+The view controller supports playback by creating an [`AVPlayer`](https://developer.apple.com/documentation/avfoundation/avplayer) and layering it on top of the item once the [`PHImageManager`](https://developer.apple.com/documentation/photos/phimagemanager) fetches a video:
 
 ```swift
 // Request an AVPlayerItem for the displayed PHAsset.

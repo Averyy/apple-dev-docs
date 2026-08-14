@@ -18,7 +18,7 @@ string transaction_id
 
 This field is returned in the JSON response, in the [`responseBody.Latest_receipt_info`](responsebody/latest_receipt_info-data.dictionary.md) and [`responseBody.Receipt.In_app`](responsebody/receipt-data.dictionary/in_app-data.dictionary.md) arrays.
 
-This value has the same format as the transaction’s [`transactionIdentifier`](https://developer.apple.com/documentation/StoreKit/SKPaymentTransaction/transactionIdentifier) property; however, the values may not be the same.
+This value has the same format as the transaction’s [`transactionIdentifier`](https://developer.apple.com/documentation/storekit/skpaymenttransaction/transactionidentifier) property; however, the values may not be the same.
 
 You can use this value to:
 

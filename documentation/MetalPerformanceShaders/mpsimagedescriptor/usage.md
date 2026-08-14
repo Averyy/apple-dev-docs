@@ -21,7 +21,7 @@ var usage: MTLTextureUsage { get set }
 
 #### Discussion
 
-The default value is [`shaderRead`](https://developer.apple.com/documentation/Metal/MTLTextureUsage/shaderRead)`|`[`shaderWrite`](https://developer.apple.com/documentation/Metal/MTLTextureUsage/shaderWrite).
+The default value is [`shaderRead`](https://developer.apple.com/documentation/metal/mtltextureusage/shaderread)`|`[`shaderWrite`](https://developer.apple.com/documentation/metal/mtltextureusage/shaderwrite).
 
 ## See Also
 

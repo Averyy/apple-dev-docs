@@ -39,7 +39,7 @@ import Observation
 
 After you fetch the list of apps from the model, display them in a compact content style within your custom view.
 
-![An image of the bottom of an iPhone showing an app with a banner that contains a title, subtitle, and an install button.](https://docs-assets.developer.apple.com/published/580c12870254422a479ee299ff61ae92/fetching-displaying-managed-apps%402x.png)
+![An image of the bottom of an iPhone showing an app with a banner that contains a title, subtitle, and an install button.](/images/com.apple.ManagedAppDistribution/fetching-displaying-managed-apps@2x.png)
 
 This code snippet demonstrates how to display the list of apps.
 

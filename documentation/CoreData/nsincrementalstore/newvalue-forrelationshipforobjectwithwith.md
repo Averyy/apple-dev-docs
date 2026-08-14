@@ -26,7 +26,7 @@ The value of the relationship specified `relationship` of the object with object
 
 #### Discussion
 
-If the relationship is a to-one, the method should return an [`NSManagedObjectID`](nsmanagedobjectid.md) instance that identifies the destination, or an instance of [`NSNull`](https://developer.apple.com/documentation/Foundation/NSNull) if the relationship value is `nil`.
+If the relationship is a to-one, the method should return an [`NSManagedObjectID`](nsmanagedobjectid.md) instance that identifies the destination, or an instance of [`NSNull`](https://developer.apple.com/documentation/foundation/nsnull) if the relationship value is `nil`.
 
 If the relationship is a to-many, the method should return a collection object containing [`NSManagedObjectID`](nsmanagedobjectid.md) instances to identify the related objects. Using an `NSArray` instance is preferred because it will be the most efficient. A store may also return an instance of `NSSet` or `NSOrderedSet`; an instance of `NSDictionary` is not acceptable.
 

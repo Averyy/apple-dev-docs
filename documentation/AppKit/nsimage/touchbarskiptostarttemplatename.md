@@ -19,7 +19,7 @@ class let touchBarSkipToStartTemplateName: String
 
 #### Discussion
 
-![Template image for skip to start](https://docs-assets.developer.apple.com/published/5386c5a586b3694c252cfa2fa620a802/media-2825128%402x.png)
+![Template image for skip to start](/images/com.apple.appkit/media-2825128@2x.png)
 
 Touch Bar template images are exclusively for use in [`NSTouchBarItem`](nstouchbaritem.md) objects and not in onscreen windows.
 

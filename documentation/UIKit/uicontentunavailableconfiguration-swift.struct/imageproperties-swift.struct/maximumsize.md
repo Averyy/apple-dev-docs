@@ -20,7 +20,7 @@ var maximumSize: CGSize { get set }
 
 #### Discussion
 
-The default value is [`CGSizeZero`](https://developer.apple.com/documentation/CoreGraphics/CGSizeZero). Setting a [`width`](https://developer.apple.com/documentation/CoreFoundation/CGSize/width) or [`height`](https://developer.apple.com/documentation/CoreFoundation/CGSize/height) of zero makes the size unconstrained on that dimension. If the image exceeds [`maximumSize`](uicontentunavailableconfiguration-swift.struct/imageproperties-swift.struct/maximumsize.md) size on either dimension, the view reduces its size proportionately, maintaining aspect ratio.
+The default value is [`CGSizeZero`](https://developer.apple.com/documentation/coregraphics/cgsizezero). Setting a [`width`](https://developer.apple.com/documentation/corefoundation/cgsize/width) or [`height`](https://developer.apple.com/documentation/corefoundation/cgsize/height) of zero makes the size unconstrained on that dimension. If the image exceeds [`maximumSize`](uicontentunavailableconfiguration-swift.struct/imageproperties-swift.struct/maximumsize.md) size on either dimension, the view reduces its size proportionately, maintaining aspect ratio.
 
 
 ---

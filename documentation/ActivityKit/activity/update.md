@@ -21,7 +21,7 @@ func update(_ content: ActivityContent<Activity<Attributes>.ContentState>) async
 
 #### Discussion
 
-Use this function to update the Live Activity while your app is in the foreground or while it’s in the background — for example, by using [`Background Tasks`](https://developer.apple.com/documentation/BackgroundTasks).
+Use this function to update the Live Activity while your app is in the foreground or while it’s in the background — for example, by using [`Background Tasks`](https://developer.apple.com/documentation/backgroundtasks).
 
 > **Note**: The system ignores attempts to update a Live Activity that ended.
 

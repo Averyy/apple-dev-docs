@@ -19,7 +19,7 @@ To create a new project in Xcode:
 
 Xcode then displays the “Choose options for your new project” dialog, as in the following figure:
 
-![A screenshot of the Choose options for your new project dialog in Xcode. The Product Name field is empty. The Team dropdown says Add account. The Organization Identifier is com.examples. The Bundle Identifier is com.examples.ProductName. The selected Type is Safari Web Extension. The selected Language is Swift. Include Tests is unchecked. The Next button is disabled.](https://docs-assets.developer.apple.com/published/7325ba512a450f94f1ab7bf1316d88b1/media-3744497%402x.png)
+![A screenshot of the Choose options for your new project dialog in Xcode. The Product Name field is empty. The Team dropdown says Add account. The Organization Identifier is com.examples. The Bundle Identifier is com.examples.ProductName. The selected Type is Safari Web Extension. The selected Language is Swift. Include Tests is unchecked. The Next button is disabled.](/images/com.apple.safariservices/media-3744497@2x.png)
 
 Provide information in the dialog for Xcode to configure your project:
 
@@ -37,7 +37,7 @@ Provide information in the dialog for Xcode to configure your project:
 
 Xcode generates the project, provides default versions of the files you need to create your Safari web extension, and organizes them into the groups and folders illustrated in the following figure:
 
-![A screenshot of the Xcode Project navigator showing the HelloWorld Extension group expanded, and the Resources group inside it expanded. The Resources group contains a _locales folder, an images folder, and the manifest.json, background.js, content.js, popup.html, popup.css, and popup.js files.](https://docs-assets.developer.apple.com/published/c0e10acaa64fce201a958108d9847e5d/media-3744500%402x.png)
+![A screenshot of the Xcode Project navigator showing the HelloWorld Extension group expanded, and the Resources group inside it expanded. The Resources group contains a _locales folder, an images folder, and the manifest.json, background.js, content.js, popup.html, popup.css, and popup.js files.](/images/com.apple.safariservices/media-3744500@2x.png)
 
 The project contains default versions of web extension files in the Resources group:
 

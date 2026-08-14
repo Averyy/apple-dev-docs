@@ -24,7 +24,7 @@ Add the Default Calling App entitlement to your app by following these steps:
 2. Add a new capability by clicking the + Capability button and then type “Default Calling” in the search field.
 3. Double-click the Default Calling App entry to add the entitlement to your app.
 
-Xcode displays the Default Calling App entitlement, along with any other entitlements, in the capabilities list under your app’s signing information. For more information, see [`Preparing your app to be the default calling app`](https://developer.apple.com/documentation/CallKit/Preparing-your-app-to-be-the-default-calling-app).
+Xcode displays the Default Calling App entitlement, along with any other entitlements, in the capabilities list under your app’s signing information. For more information, see [`Preparing your app to be the default calling app`](https://developer.apple.com/documentation/callkit/preparing-your-app-to-be-the-default-calling-app).
 
 
 ---

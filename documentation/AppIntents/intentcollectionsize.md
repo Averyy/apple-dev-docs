@@ -27,8 +27,8 @@ struct IntentCollectionSize
 ## Relationships
 
 ### Conforms To
-- [Equatable](../Swift/Equatable.md)
-- [ExpressibleByIntegerLiteral](../Swift/ExpressibleByIntegerLiteral.md)
+- [Equatable](../swift/equatable.md)
+- [ExpressibleByIntegerLiteral](../swift/expressiblebyintegerliteral.md)
 
 ## See Also
 

@@ -48,7 +48,7 @@ Be aware that [`Publishers.Share`](publishers/share.md) is a class rather than a
 ## Relationships
 
 ### Conforms To
-- [Equatable](../Swift/Equatable.md)
+- [Equatable](../swift/equatable.md)
 - [Publisher](publisher.md)
 
 ## See Also

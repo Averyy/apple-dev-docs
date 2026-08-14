@@ -43,7 +43,7 @@ func sourceAtopCompositing(inputImage: CIImage, backgroundImage: CIImage) -> CII
 }
 ```
 
-![The image on the top left shows a beach with multiple palm trees and a rainbow arching across the blue sky.  The image below is a gradient image displaying a gradual color shift from purple to a dark orange. The image on the right shows the output from applying a source-atop compositing filter. The result displays the overlapping area of the gradient image showing on the beach photo with no changes to color in either image.](https://docs-assets.developer.apple.com/published/eb145f55ccfa8509818269eb5531f393/media-3546396%402x.png)
+![The image on the top left shows a beach with multiple palm trees and a rainbow arching across the blue sky.  The image below is a gradient image displaying a gradual color shift from purple to a dark orange. The image on the right shows the output from applying a source-atop compositing filter. The result displays the overlapping area of the gradient image showing on the beach photo with no changes to color in either image.](/images/com.apple.coreimage/media-3546396@2x.png)
 
 ## See Also
 

@@ -19,7 +19,7 @@ static let cloudKitShareMetadata: UIApplication.LaunchOptionsKey
 
 #### Discussion
 
-The value of this key is a [`CKShare.Metadata`](https://developer.apple.com/documentation/CloudKit/CKShare/Metadata) object. Schedule a [`CKAcceptSharesOperation`](https://developer.apple.com/documentation/CloudKit/CKAcceptSharesOperation) task with the provided metadata object.
+The value of this key is a [`CKShare.Metadata`](https://developer.apple.com/documentation/cloudkit/ckshare/metadata) object. Schedule a [`CKAcceptSharesOperation`](https://developer.apple.com/documentation/cloudkit/ckacceptsharesoperation) task with the provided metadata object.
 
 ## See Also
 

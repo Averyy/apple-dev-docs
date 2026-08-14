@@ -43,7 +43,7 @@ For more information, see [`Matchmaking rules`](matchmaking-rules.md).
 
 ## See Also
 
-- [Create a Queue](../AppStoreConnectAPI/POST-v1-gameCenterMatchmakingQueues.md)
+- [Create a Queue](../appstoreconnectapi/post-v1-gamecentermatchmakingqueues.md)
   Create a queue and add it to a rule set.
 - [var properties: [String : Any]?](gkmatchrequest/properties.md)
   The criteria for the local player that Game Center uses to find other players when using matchmaking rules.

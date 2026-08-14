@@ -16,13 +16,13 @@ class AVContinuityDevicePickerViewController
 
 #### Overview
 
-The view controller presents an interface on an Apple TV that lets a person choose a nearby continuity device ([`AVContinuityDevice`](https://developer.apple.com/documentation/AVFoundation/AVContinuityDevice)). Your app can then connect to that device’s cameras and microphones (see [`AVCaptureDevice`](https://developer.apple.com/documentation/AVFoundation/AVCaptureDevice) and [`AVAudioSessionPortDescription`](https://developer.apple.com/documentation/AVFAudio/AVAudioSessionPortDescription), respectively).
+The view controller presents an interface on an Apple TV that lets a person choose a nearby continuity device ([`AVContinuityDevice`](https://developer.apple.com/documentation/avfoundation/avcontinuitydevice)). Your app can then connect to that device’s cameras and microphones (see [`AVCaptureDevice`](https://developer.apple.com/documentation/avfoundation/avcapturedevice) and [`AVAudioSessionPortDescription`](https://developer.apple.com/documentation/avfaudio/avaudiosessionportdescription), respectively).
 
 > ❗ **Important**:  The continuity device picker presents any devices near the Apple TV that use the same Apple ID.
 
 To respond to the various outcome events from the picker, your app needs to implement the [`AVContinuityDevicePickerViewControllerDelegate`](avcontinuitydevicepickerviewcontrollerdelegate.md) and assign it to the picker’s [`delegate`](avcontinuitydevicepickerviewcontroller/delegate.md) property.
 
-> **Note**:  SwiftUI apps can present the same interface with the [`continuityDevicePicker(isPresented:onDidConnect:)`](https://developer.apple.com/documentation/SwiftUI/View/continuityDevicePicker(isPresented:onDidConnect:)) view modifier.
+> **Note**:  SwiftUI apps can present the same interface with the [`continuityDevicePicker(isPresented:onDidConnect:)`](https://developer.apple.com/documentation/swiftui/view/continuitydevicepicker(ispresented:ondidconnect:)) view modifier.
 
 ## Topics
 
@@ -36,27 +36,25 @@ To respond to the various outcome events from the picker, your app needs to impl
 ## Relationships
 
 ### Inherits From
-- [UIViewController](../UIKit/UIViewController.md)
+- [UIViewController](../uikit/uiviewcontroller.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCoding](../Foundation/NSCoding.md)
-- [NSExtensionRequestHandling](../Foundation/NSExtensionRequestHandling.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
-- [UIActivityItemsConfigurationProviding](../UIKit/UIActivityItemsConfigurationProviding.md)
-- [UIAppearanceContainer](../UIKit/UIAppearanceContainer.md)
-- [UIContentContainer](../UIKit/UIContentContainer.md)
-- [UIFocusEnvironment](../UIKit/UIFocusEnvironment.md)
-- [UIResponderStandardEditActions](../UIKit/UIResponderStandardEditActions.md)
-- [UIStateRestoring](../UIKit/UIStateRestoring.md)
-- [UITraitChangeObservable](../UIKit/UITraitChangeObservable-67e94.md)
-- [UITraitEnvironment](../UIKit/UITraitEnvironment.md)
-- [UIUserActivityRestoring](../UIKit/UIUserActivityRestoring.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCoding](../foundation/nscoding.md)
+- [NSExtensionRequestHandling](../foundation/nsextensionrequesthandling.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [UIActivityItemsConfigurationProviding](../uikit/uiactivityitemsconfigurationproviding.md)
+- [UIAppearanceContainer](../uikit/uiappearancecontainer.md)
+- [UIContentContainer](../uikit/uicontentcontainer.md)
+- [UIFocusEnvironment](../uikit/uifocusenvironment.md)
+- [UIResponderStandardEditActions](../uikit/uiresponderstandardeditactions.md)
+- [UIStateRestoring](../uikit/uistaterestoring.md)
+- [UITraitChangeObservable](../uikit/uitraitchangeobservable-67e94.md)
+- [UITraitEnvironment](../uikit/uitraitenvironment.md)
+- [UIUserActivityRestoring](../uikit/uiuseractivityrestoring.md)
 
 ## See Also
 

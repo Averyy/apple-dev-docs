@@ -20,7 +20,7 @@ var kAudioSessionProperty_InputSource: Int { get }
 
 #### Discussion
 
-A read/write [`CFNumber`](https://developer.apple.com/documentation/CoreFoundation/CFNumber) object that indicates the audio input source, from a USB audio accessory attached through the iPad camera connection kit, that you want to use.
+A read/write [`CFNumber`](https://developer.apple.com/documentation/corefoundation/cfnumber) object that indicates the audio input source, from a USB audio accessory attached through the iPad camera connection kit, that you want to use.
 
 #### Discussion
 

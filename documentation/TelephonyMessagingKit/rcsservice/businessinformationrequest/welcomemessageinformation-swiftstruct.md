@@ -5,7 +5,6 @@
 
 **Availability**:
 - iOS 27.0+ (Beta)
-- iPadOS 27.0+ (Beta)
 
 ## Declaration
 
@@ -26,8 +25,8 @@ struct WelcomeMessageInformation
 ## Relationships
 
 ### Conforms To
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 
 ---

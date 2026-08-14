@@ -12,7 +12,7 @@ AVCaptureVideoDataOutput is capable of outputting pixel buffers to your app in m
 
 A common mistake is to *default* to selecting ‘BGRA’ as the output format. This format is not a native capture format, which means that AVCapture has to perform a conversion to deliver this format. Additionally, this format requires significantly more memory than many of the native capture formats.
 
-Consider a common scenario where the [`activeFormat`](https://developer.apple.com/documentation/AVFoundation/AVCaptureDevice/activeFormat) of the [`AVCaptureDevice`](https://developer.apple.com/documentation/AVFoundation/AVCaptureDevice) is configured to capture in ‘420v’:
+Consider a common scenario where the [`activeFormat`](https://developer.apple.com/documentation/avfoundation/avcapturedevice/activeformat) of the [`AVCaptureDevice`](https://developer.apple.com/documentation/avfoundation/avcapturedevice) is configured to capture in ‘420v’:
 
 In this scenario, if you request that the video data output deliver pixel buffers in ‘BGRA’, then AVCapture has to convert every captured ‘420v’ pixel buffer to ‘BGRA’. AVCapture performs these conversions efficiently, but they are not free.
 
@@ -22,7 +22,7 @@ Instead of paying the costs of pixel format conversion and high memory bandwidth
 
 #### Discovering Available Output Pixel Formats
 
-Not all devices support the full range of output pixel formats. To see the available formats at run time, iterate through the [`AVCaptureVideoDataOutput`](https://developer.apple.com/documentation/AVFoundation/AVCaptureVideoDataOutput)’s array of [`availableVideoPixelFormatTypes`](https://developer.apple.com/documentation/AVFoundation/AVCaptureVideoDataOutput/availableVideoPixelFormatTypes).
+Not all devices support the full range of output pixel formats. To see the available formats at run time, iterate through the [`AVCaptureVideoDataOutput`](https://developer.apple.com/documentation/avfoundation/avcapturevideodataoutput)’s array of [`availableVideoPixelFormatTypes`](https://developer.apple.com/documentation/avfoundation/avcapturevideodataoutput/availablevideopixelformattypes).
 
 > **Note**: The availableVideoPixelFormatTypes array is dynamic, and depends on the activeFormat of the capture device that the AVCaptureVideoDataOutput is connected to.
 

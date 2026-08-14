@@ -29,9 +29,9 @@ The temporary image will be released when the command buffer is committed. The u
 
 This function provides access to pixel formats not typically covered by the [`init(commandBuffer:imageDescriptor:)`](mpstemporaryimage/init(commandbuffer:imagedescriptor:).md) method. The feature channels will be inferred from the pixel format without changing the width. The following restrictions apply:
 
-- The texture type must be [`MTLTextureType.type2D`](https://developer.apple.com/documentation/Metal/MTLTextureType/type2D) or [`MTLTextureType.type2DArray`](https://developer.apple.com/documentation/Metal/MTLTextureType/type2DArray).
-- The texture usage must contain at least one of [`shaderRead`](https://developer.apple.com/documentation/Metal/MTLTextureUsage/shaderRead) or [`shaderWrite`](https://developer.apple.com/documentation/Metal/MTLTextureUsage/shaderWrite).
-- The storage mode must be [`MTLStorageMode.private`](https://developer.apple.com/documentation/Metal/MTLStorageMode/private).
+- The texture type must be [`MTLTextureType.type2D`](https://developer.apple.com/documentation/metal/mtltexturetype/type2d) or [`MTLTextureType.type2DArray`](https://developer.apple.com/documentation/metal/mtltexturetype/type2darray).
+- The texture usage must contain at least one of [`shaderRead`](https://developer.apple.com/documentation/metal/mtltextureusage/shaderread) or [`shaderWrite`](https://developer.apple.com/documentation/metal/mtltextureusage/shaderwrite).
+- The storage mode must be [`MTLStorageMode.private`](https://developer.apple.com/documentation/metal/mtlstoragemode/private).
 - The depth must be 1.
 
 ## Parameters
@@ -45,7 +45,7 @@ This function provides access to pixel formats not typically covered by the [`in
   Initializes a temporary image for use on a command buffer.
 - [class MPSImageDescriptor](mpsimagedescriptor.md)
   A description of the attributes used to create an [`MPSImage`](mpsimage.md).
-- [class MTLTextureDescriptor](../Metal/MTLTextureDescriptor.md)
+- [class MTLTextureDescriptor](../metal/mtltexturedescriptor.md)
   An instance that you use to configure new Metal texture instances.
 - [convenience init(commandBuffer: any MTLCommandBuffer, textureDescriptor: MTLTextureDescriptor, featureChannels: Int)](mpstemporaryimage/init(commandbuffer:texturedescriptor:featurechannels:).md)
 

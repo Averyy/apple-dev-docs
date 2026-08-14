@@ -21,7 +21,7 @@ init(ink: PKInk, path: PKStrokePath, transform: CGAffineTransform = .identity, m
 
 - `ink`: The [`PKInkReference`](pkinkreference.md) the framework uses to render this stroke.
 - `path`: The B-spline path that describes this stroke.
-- `transform`: The [`CGAffineTransform`](https://developer.apple.com/documentation/CoreFoundation/CGAffineTransform) to apply to this stroke. Defaults to [`CGAffineTransformIdentity`](https://developer.apple.com/documentation/CoreGraphics/CGAffineTransformIdentity).
+- `transform`: The [`CGAffineTransform`](https://developer.apple.com/documentation/corefoundation/cgaffinetransform) to apply to this stroke. Defaults to [`CGAffineTransformIdentity`](https://developer.apple.com/documentation/coregraphics/cgaffinetransformidentity).
 - `mask`: The pretransform mask the framework uses to clip the rendering of the stroke.
 - `randomSeed`: The random seed for the stroke.
 

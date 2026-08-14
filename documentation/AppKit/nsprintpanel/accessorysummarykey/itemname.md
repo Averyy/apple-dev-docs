@@ -16,7 +16,7 @@ static let itemName: NSPrintPanel.AccessorySummaryKey
 
 #### Discussion
 
-The corresponding value should be an [`NSString`](https://developer.apple.com/documentation/Foundation/NSString) object.
+The corresponding value should be an [`NSString`](https://developer.apple.com/documentation/foundation/nsstring) object.
 
 ## See Also
 

@@ -26,7 +26,7 @@ Instances of [`Decimal.FormatStyle`](decimal/formatstyle.md) create localized, h
 
 [`Decimal.FormatStyle`](decimal/formatstyle.md) includes two nested types, [`Decimal.FormatStyle.Percent`](decimal/formatstyle/percent.md) and [`Decimal.FormatStyle.Currency`](decimal/formatstyle/currency.md), for working with percentages and currencies, respectively. Each format style includes a configuration that determines how it represents numeric values, for things like grouping, displaying signs, and variant presentations like scientific notation. [`Decimal.FormatStyle`](decimal/formatstyle.md) and [`Decimal.FormatStyle.Percent`](decimal/formatstyle/percent.md) include a [`NumberFormatStyleConfiguration`](numberformatstyleconfiguration.md), and [`Decimal.FormatStyle.Currency`](decimal/formatstyle/currency.md) includes a [`CurrencyFormatStyleConfiguration`](currencyformatstyleconfiguration.md). You can customize numeric formatting for a style by adjusting its backing configuration. The system automatically caches unique configurations of a format style to enhance performance.
 
-> **Note**:  Foundation provides other format style types for working with the numeric types that the Swift standard library defines. [`IntegerFormatStyle`](integerformatstyle.md) works with types that conform to [`BinaryInteger`](https://developer.apple.com/documentation/Swift/BinaryInteger), and [`FloatingPointFormatStyle`](floatingpointformatstyle.md) works with types that conform to [`BinaryFloatingPoint`](https://developer.apple.com/documentation/Swift/BinaryFloatingPoint).
+> **Note**:  Foundation provides other format style types for working with the numeric types that the Swift standard library defines. [`IntegerFormatStyle`](integerformatstyle.md) works with types that conform to [`BinaryInteger`](https://developer.apple.com/documentation/swift/binaryinteger), and [`FloatingPointFormatStyle`](floatingpointformatstyle.md) works with types that conform to [`BinaryFloatingPoint`](https://developer.apple.com/documentation/swift/binaryfloatingpoint).
 
 ##### Formatting Decimal Values
 
@@ -176,18 +176,18 @@ let localizedDecimal = match?.1 // 49525.99
 ## Relationships
 
 ### Conforms To
-- [Copyable](../Swift/Copyable.md)
-- [CustomConsumingRegexComponent](../Swift/CustomConsumingRegexComponent.md)
-- [Decodable](../Swift/Decodable.md)
-- [Encodable](../Swift/Encodable.md)
-- [Equatable](../Swift/Equatable.md)
-- [Escapable](../Swift/Escapable.md)
+- [Copyable](../swift/copyable.md)
+- [CustomConsumingRegexComponent](../swift/customconsumingregexcomponent.md)
+- [Decodable](../swift/decodable.md)
+- [Encodable](../swift/encodable.md)
+- [Equatable](../swift/equatable.md)
+- [Escapable](../swift/escapable.md)
 - [FormatStyle](formatstyle.md)
-- [Hashable](../Swift/Hashable.md)
+- [Hashable](../swift/hashable.md)
 - [ParseableFormatStyle](parseableformatstyle.md)
-- [RegexComponent](../Swift/RegexComponent.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [RegexComponent](../swift/regexcomponent.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

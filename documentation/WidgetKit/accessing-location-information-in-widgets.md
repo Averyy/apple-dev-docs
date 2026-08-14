@@ -12,14 +12,14 @@ Widgets can present relevant and useful information by taking a user’s locatio
 
 To use Location Services in your widget:
 
-- Add the [`NSWidgetWantsLocation`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSWidgetWantsLocation) key to your widget extension’s `Info.plist` file.
+- Add the [`NSWidgetWantsLocation`](https://developer.apple.com/documentation/bundleresources/information-property-list/nswidgetwantslocation) key to your widget extension’s `Info.plist` file.
 - Add the relevant purpose strings to the `Info.plist` file of the app that contains the widget.
 
-> ❗ **Important**: Before your widget can receive location information, your app must request a person’s permission to access their location. For most widgets, requesting When In Use authorization is the right choice, because of its better privacy and battery life implications. For more information, see [`Requesting authorization to use location services`](https://developer.apple.com/documentation/CoreLocation/requesting-authorization-to-use-location-services).
+> ❗ **Important**: Before your widget can receive location information, your app must request a person’s permission to access their location. For most widgets, requesting When In Use authorization is the right choice, because of its better privacy and battery life implications. For more information, see [`Requesting authorization to use location services`](https://developer.apple.com/documentation/corelocation/requesting-authorization-to-use-location-services).
 
 ##### Access Location Information From Your Widget
 
-When the user adds a widget that uses location, the system asks whether they want to extend the app’s location authorization to the widget. Use [`isAuthorizedForWidgetUpdates`](https://developer.apple.com/documentation/CoreLocation/CLLocationManager/isAuthorizedForWidgetUpdates) to determine whether the widget is eligible to receive location updates. Users can change their approval choice at any time in Settings > Privacy > Location Services.
+When the user adds a widget that uses location, the system asks whether they want to extend the app’s location authorization to the widget. Use [`isAuthorizedForWidgetUpdates`](https://developer.apple.com/documentation/corelocation/cllocationmanager/isauthorizedforwidgetupdates) to determine whether the widget is eligible to receive location updates. Users can change their approval choice at any time in Settings > Privacy > Location Services.
 
 After the user approves the widget’s use of location information, the system considers it “in use” for a short period of time after the widget is visible. If the system refreshes the widget’s view during this in-use period, the widget has access to location information. For example, immediately after a user adds a widget to their Home Screen and approves extending the app’s location authorization, the user’s location is available to the widget.
 

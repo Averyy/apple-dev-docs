@@ -22,7 +22,7 @@ This sample shows how to visualize a dataset using a variety of chart types incl
 
 The `Scatterplot` view displays a scatterplot that maps the capacity density of each facility by its location. The sample app allows toggling between using longitude or latitude as the basis for location.
 
-![A screenshot of the sample app that shows a scatterplot with many datapoints and a line representing a regression equation running through the data. A segmented control to choose longitude or latitude for the x-axis appears above the scatterplot.](https://docs-assets.developer.apple.com/published/9aec4265b4e5620939fbcc76686f4620/dashboard-sample-scatterplot%402x.png)
+![A screenshot of the sample app that shows a scatterplot with many datapoints and a line representing a regression equation running through the data. A segmented control to choose longitude or latitude for the x-axis appears above the scatterplot.](/images/com.apple.Charts/dashboard-sample-scatterplot@2x.png)
 
 The scatterplot uses the [`PointPlot`](pointplot.md) type to plot the data efficiently, enabling a smooth animation in the chart as the underlying data changes.
 
@@ -58,7 +58,7 @@ LinePlot(x: "x", y: "y") { x in
 
 The `ThematicMap` view displays a chart that shows the datapoints in an outline of a map of the contiguous United States.
 
-![A screenshot of the sample app that shows an outline map of the contiguous United States, showing many datapoints inside the map outline. The points on the map vary by size to represent a range of capacities for each installation.](https://docs-assets.developer.apple.com/published/840720f6a9cd791d1949ef2e91f2c605/dashboard-sample-map%402x.png)
+![A screenshot of the sample app that shows an outline map of the contiguous United States, showing many datapoints inside the map outline. The points on the map vary by size to represent a range of capacities for each installation.](/images/com.apple.Charts/dashboard-sample-map@2x.png)
 
 The sample uses [`LinePlot`](lineplot.md) to draw the outline of a simple thematic map, connecting longitude and latitude points of the federal borders of the contiguous United States:
 

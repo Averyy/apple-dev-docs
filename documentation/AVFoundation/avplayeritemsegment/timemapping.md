@@ -22,7 +22,7 @@ var timeMapping: CMTimeMapping { get }
 
 #### Discussion
 
-The time mapping’s source time range represents the start time and duration in the segment source’s timeline, either the primary item or interstitial event. The target time range represents the start time and duration in the integrated timeline. For interstitial events that occupy a single point, the target’s duration is [`zero`](https://developer.apple.com/documentation/CoreMedia/CMTime/zero).
+The time mapping’s source time range represents the start time and duration in the segment source’s timeline, either the primary item or interstitial event. The target time range represents the start time and duration in the integrated timeline. For interstitial events that occupy a single point, the target’s duration is [`zero`](https://developer.apple.com/documentation/coremedia/cmtime/zero).
 
 ## See Also
 

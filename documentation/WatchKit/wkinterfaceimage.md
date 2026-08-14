@@ -44,8 +44,8 @@ The images you use in your interface can come from many different locations, and
 
 You can store animated image sequences in your Watch app bundle, but your image files must use specific naming conventions. For information about these conventions, see [`Animating a Series of Images`](wkinterfaceimage#Animating-a-Series-of-Images.md).
 
-- Store downloaded image files in your WatchKit extension’s container directory. Image files must be stored locally in your extension’s container directory and loaded into memory at runtime. When loading an image file that you want to display without modification, load the raw image data into an [`NSData`](https://developer.apple.com/documentation/Foundation/NSData) object and use the [`setImageData(_:)`](wkinterfaceimage/setimagedata(_:).md) method to display it in your interface. Raw image data is typically compressed and can be sent more quickly than a [`UIImage`](https://developer.apple.com/documentation/UIKit/UIImage) object.
-- Set dynamically created images directly. For content that you draw programmatically, create a [`UIImage`](https://developer.apple.com/documentation/UIKit/UIImage) of the final results and display it using the [`setImage(_:)`](wkinterfaceimage/setimage(_:).md) method. You also use this technique for animated images sequences you create dynamically using the [`animatedImageNamed(_:duration:)`](https://developer.apple.com/documentation/UIKit/UIImage/animatedImageNamed(_:duration:)) or [`animatedImage(with:duration:)`](https://developer.apple.com/documentation/UIKit/UIImage/animatedImage(with:duration:)) method.
+- Store downloaded image files in your WatchKit extension’s container directory. Image files must be stored locally in your extension’s container directory and loaded into memory at runtime. When loading an image file that you want to display without modification, load the raw image data into an [`NSData`](https://developer.apple.com/documentation/foundation/nsdata) object and use the [`setImageData(_:)`](wkinterfaceimage/setimagedata(_:).md) method to display it in your interface. Raw image data is typically compressed and can be sent more quickly than a [`UIImage`](https://developer.apple.com/documentation/uikit/uiimage) object.
+- Set dynamically created images directly. For content that you draw programmatically, create a [`UIImage`](https://developer.apple.com/documentation/uikit/uiimage) of the final results and display it using the [`setImage(_:)`](wkinterfaceimage/setimage(_:).md) method. You also use this technique for animated images sequences you create dynamically using the [`animatedImageNamed(_:duration:)`](https://developer.apple.com/documentation/uikit/uiimage/animatedimagenamed(_:duration:)) or [`animatedImage(with:duration:)`](https://developer.apple.com/documentation/uikit/uiimage/animatedimage(with:duration:)) method.
 
 When creating your images, always create them at a size that is appropriate for the underlying device. Whenever possible, try to use the same size image regardless of the underlying device. In cases where you need different images for different device sizes, use asset catalogs to store the different versions of the image using the same image name. If the image you specify is too large or too small, WatchKit uses the mode attribute you set in Interface Builder to determine how to render the image.
 
@@ -53,19 +53,19 @@ When creating your images, always create them at a size that is appropriate for 
 
 You can specify images using any image formats supported by iOS, but it is recommended that you use JPEG and PNG images whenever possible. Specifying images in formats other than JPEG and PNG can introduce a performance penalty when rendering those images. All images should be designed for Retina displays, and image filenames you provide yourself should include the `@2x` modifier in the filename.
 
-For more information about the supported image formats, see [`UIImage`](https://developer.apple.com/documentation/UIKit/UIImage).
+For more information about the supported image formats, see [`UIImage`](https://developer.apple.com/documentation/uikit/uiimage).
 
 ##### Animating a Series of Images
 
-Animated images are an easy and fast way to make your interface more dynamic and engaging for users. You create animated images from existing images in your asset catalog or by creating a [`UIImage`](https://developer.apple.com/documentation/UIKit/UIImage) object using the images you want.
+Animated images are an easy and fast way to make your interface more dynamic and engaging for users. You create animated images from existing images in your asset catalog or by creating a [`UIImage`](https://developer.apple.com/documentation/uikit/uiimage) object using the images you want.
 
 For animations based on images in your asset catalogs, name your image resources using the convention *<name><number>*, where the *<name>* string is the same for all images and the *<number>* value indicates the position of the image in the animation sequence. The number of the first image in the sequence must be `0` or `1`. For example, an animation with three images could have the file names `image1`, `image2`, and `image3`. If you store image resource files in your Watch app bundle without using asset catalogs, the naming convention for your image files is the same except your files should also have the appropriate filename extension.
 
-Whenever possible, place image resources in an asset catalog in your Watch app bundle (not in your WatchKit extension’s bundle). Placing them in the Watch app bundle lets you use the [`setImageNamed(_:)`](wkinterfaceimage/setimagenamed(_:).md) method to load the animated image at runtime, which simplifies the loading process. For animations you generate dynamically, use the [`animatedImage(with:duration:)`](https://developer.apple.com/documentation/UIKit/UIImage/animatedImage(with:duration:)) method of [`UIImage`](https://developer.apple.com/documentation/UIKit/UIImage) to assemble your animation in your WatchKit extension, and then set that animation using the [`setImage(_:)`](wkinterfaceimage/setimage(_:).md) method.
+Whenever possible, place image resources in an asset catalog in your Watch app bundle (not in your WatchKit extension’s bundle). Placing them in the Watch app bundle lets you use the [`setImageNamed(_:)`](wkinterfaceimage/setimagenamed(_:).md) method to load the animated image at runtime, which simplifies the loading process. For animations you generate dynamically, use the [`animatedImage(with:duration:)`](https://developer.apple.com/documentation/uikit/uiimage/animatedimage(with:duration:)) method of [`UIImage`](https://developer.apple.com/documentation/uikit/uiimage) to assemble your animation in your WatchKit extension, and then set that animation using the [`setImage(_:)`](wkinterfaceimage/setimage(_:).md) method.
 
-> **Note**:  You cannot use the [`animatedImageNamed(_:duration:)`](https://developer.apple.com/documentation/UIKit/UIImage/animatedImageNamed(_:duration:)) method of [`UIImage`](https://developer.apple.com/documentation/UIKit/UIImage) to create an animated image based on images in your Watch app’s bundle. That method looks for images in the bundle of the active process, which is your WatchKit extension’s bundle. To load an animated image sequence from images in your Watch app bundle, you must name your image resources appropriately and use the [`setImageNamed(_:)`](wkinterfaceimage/setimagenamed(_:).md) method of this class.
+> **Note**:  You cannot use the [`animatedImageNamed(_:duration:)`](https://developer.apple.com/documentation/uikit/uiimage/animatedimagenamed(_:duration:)) method of [`UIImage`](https://developer.apple.com/documentation/uikit/uiimage) to create an animated image based on images in your Watch app’s bundle. That method looks for images in the bundle of the active process, which is your WatchKit extension’s bundle. To load an animated image sequence from images in your Watch app bundle, you must name your image resources appropriately and use the [`setImageNamed(_:)`](wkinterfaceimage/setimagenamed(_:).md) method of this class.
 
-For more information on how to create animated images, see the discussions of the [`animatedImageNamed(_:duration:)`](https://developer.apple.com/documentation/UIKit/UIImage/animatedImageNamed(_:duration:)) and [`animatedImage(with:duration:)`](https://developer.apple.com/documentation/UIKit/UIImage/animatedImage(with:duration:)) methods in [`UIImage`](https://developer.apple.com/documentation/UIKit/UIImage).
+For more information on how to create animated images, see the discussions of the [`animatedImageNamed(_:duration:)`](https://developer.apple.com/documentation/uikit/uiimage/animatedimagenamed(_:duration:)) and [`animatedImage(with:duration:)`](https://developer.apple.com/documentation/uikit/uiimage/animatedimage(with:duration:)) methods in [`UIImage`](https://developer.apple.com/documentation/uikit/uiimage).
 
 ##### Interface Builder Configuration Options
 
@@ -95,12 +95,12 @@ Xcode lets you configure information about your image interface object in your s
 ### Inherits From
 - [WKInterfaceObject](wkinterfaceobject.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 - [WKImageAnimatable](wkimageanimatable.md)
 
 ## See Also

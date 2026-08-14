@@ -87,19 +87,19 @@ As relevant events occur within your WatchKit app, the app object notifies its d
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [Sendable](../Swift/Sendable.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [Sendable](../swift/sendable.md)
 
 ## See Also
 
-- [Setting up a watchOS project](../watchOS-Apps/setting-up-a-watchos-project.md)
+- [Setting up a watchOS project](../watchos-apps/setting-up-a-watchos-project.md)
   Create a new watchOS project or add a watch target to an existing iOS project.
 - [protocol WKApplicationDelegate](wkapplicationdelegate.md)
   A collection of methods that manages the app-level behavior for a single-target watchOS app.
@@ -111,7 +111,7 @@ As relevant events occur within your WatchKit app, the app object notifies its d
   Creates the application object and the application delegate, and sets up the app’s event cycle.
 - [class WKInterfaceDevice](wkinterfacedevice.md)
   An object that provides information about the user’s Apple Watch.
-- [WKPrefersNetworkUponForeground](../BundleResources/Information-Property-List/WKPrefersNetworkUponForeground.md)
+- [WKPrefersNetworkUponForeground](../bundleresources/information-property-list/wkprefersnetworkuponforeground.md)
   A Boolean value that indicates whether an app requires network access on launch.
 
 

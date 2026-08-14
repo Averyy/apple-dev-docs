@@ -22,11 +22,11 @@ class SCNText
 
 #### Overview
 
-![None](https://docs-assets.developer.apple.com/published/a6e68c528e0ad20b9b78fb21c14430d8/media-2929805%402x.png)
+![None](/images/com.apple.scenekit/media-2929805@2x.png)
 
-You provide text for the geometry using an [`NSString`](https://developer.apple.com/documentation/Foundation/NSString) or [`NSAttributedString`](https://developer.apple.com/documentation/Foundation/NSAttributedString) object. In the former case, the properties of the [`SCNText`](scntext.md) object determine the style and formatting of the entire body of text. When you create a text geometry from an attributed string, SceneKit styles the text according to the attributes in the string, and the properties of the [`SCNText`](scntext.md) object determine the default style for portions of the string that have no style attributes. SceneKit can create text geometry using any font and style supported by the Core Text framework, with the exception of bitmap fonts (such as those that define color emoji characters).
+You provide text for the geometry using an [`NSString`](https://developer.apple.com/documentation/foundation/nsstring) or [`NSAttributedString`](https://developer.apple.com/documentation/foundation/nsattributedstring) object. In the former case, the properties of the [`SCNText`](scntext.md) object determine the style and formatting of the entire body of text. When you create a text geometry from an attributed string, SceneKit styles the text according to the attributes in the string, and the properties of the [`SCNText`](scntext.md) object determine the default style for portions of the string that have no style attributes. SceneKit can create text geometry using any font and style supported by the Core Text framework, with the exception of bitmap fonts (such as those that define color emoji characters).
 
-In the local coordinate system of the text geometry, the origin corresponds to the lower left corner of the text, with the text extending in the x- and y-axis dimensions. The geometry is centered along its z-axis. For example, if its [`extrusionDepth`](scntext/extrusiondepth.md) property is `1.0`, the geometry extends from `-0.5` to `0.5` along the z-axis. An extrusion depth of zero creates a flat, one-sided shape—the geometry is confined to the plane whose z-coordinate is `0.0`, and viewable only from its front unless its material’s [`isDoubleSided`](scnmaterial/isdoublesided.md) property is [`true`](https://developer.apple.com/documentation/Swift/true).
+In the local coordinate system of the text geometry, the origin corresponds to the lower left corner of the text, with the text extending in the x- and y-axis dimensions. The geometry is centered along its z-axis. For example, if its [`extrusionDepth`](scntext/extrusiondepth.md) property is `1.0`, the geometry extends from `-0.5` to `0.5` along the z-axis. An extrusion depth of zero creates a flat, one-sided shape—the geometry is confined to the plane whose z-coordinate is `0.0`, and viewable only from its front unless its material’s [`isDoubleSided`](scnmaterial/isdoublesided.md) property is [`true`](https://developer.apple.com/documentation/swift/true).
 
 To position and orient a text geometry in a scene, attach it to the [`geometry`](scnnode/geometry.md) property of an [`SCNNode`](scnnode.md) object.
 
@@ -78,15 +78,15 @@ SceneKit can render each element using a different material. For details, see th
 ### Inherits From
 - [SCNGeometry](scngeometry.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCoding](../Foundation/NSCoding.md)
-- [NSCopying](../Foundation/NSCopying.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [NSSecureCoding](../Foundation/NSSecureCoding.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCoding](../foundation/nscoding.md)
+- [NSCopying](../foundation/nscopying.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSSecureCoding](../foundation/nssecurecoding.md)
 - [SCNAnimatable](scnanimatable.md)
 - [SCNBoundingVolume](scnboundingvolume.md)
 - [SCNShadable](scnshadable.md)

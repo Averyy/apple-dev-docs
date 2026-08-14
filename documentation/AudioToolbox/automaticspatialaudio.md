@@ -16,7 +16,7 @@ struct AutomaticSpatialAudio
 
 #### Overview
 
-Sounds with an automatic spatial audio experience that belong to an [`AVAudioSession`](https://developer.apple.com/documentation/AVFAudio/AVAudioSession) inherit its [`intendedSpatialExperience`](https://developer.apple.com/documentation/AVFAudio/AVAudioSession/intendedSpatialExperience-1qwbe).
+Sounds with an automatic spatial audio experience that belong to an [`AVAudioSession`](https://developer.apple.com/documentation/avfaudio/avaudiosession) inherit its doc://com.apple.documentation/documentation/avfaudio/avaudiosession/intendedspatialexperience-1qwbe.
 
 ```swift
 // Configure an audio player with an automatic spatial audio experience.
@@ -26,12 +26,12 @@ myPlayer.intendedSpatialExperience = .automatic
 ## Relationships
 
 ### Conforms To
-- [Decodable](../Swift/Decodable.md)
-- [Encodable](../Swift/Encodable.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Decodable](../swift/decodable.md)
+- [Encodable](../swift/encodable.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 - [SpatialAudioExperience](spatialaudioexperience.md)
 
 

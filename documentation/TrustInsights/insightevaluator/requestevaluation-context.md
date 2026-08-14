@@ -27,7 +27,7 @@ The [`InsightEvaluation`](insightevaluation.md) that contains the results of the
 
 > **Note**: The evaluation process includes processing both on device and on Apple’s servers and can take several seconds to perform an evaluation.
 
-To use the Trust Insights framework in your app, add the `com.apple.developer.trustinsights.base` entitlement to your apps capabilities in Xcode. For more information, see  [`Trust Insights`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.trustinsights.base).
+To use the Trust Insights framework in your app, add the `com.apple.developer.trustinsights.base` entitlement to your apps capabilities in Xcode. For more information, see  [`Trust Insights`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.trustinsights.base).
 
 ## Parameters
 

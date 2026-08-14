@@ -16,7 +16,7 @@ var showsSuppressionButton: Bool { get set }
 
 #### Discussion
 
-The default value of this property is [`false`](https://developer.apple.com/documentation/Swift/false), which specifies the absence of a suppression checkbox in the alert. Set the value to [`true`](https://developer.apple.com/documentation/Swift/true) to show a suppression checkbox in the alert.
+The default value of this property is [`false`](https://developer.apple.com/documentation/swift/false), which specifies the absence of a suppression checkbox in the alert. Set the value to [`true`](https://developer.apple.com/documentation/swift/true) to show a suppression checkbox in the alert.
 
 By default, a suppression checkbox has the title, “Do not show this message again.” In macOS 11.0 and later, if the alert displays multiple buttons that prompt the user to make a choice, the title is “Do not ask again.” To customize it, use the checkbox’s `title` property, as follows:
 
@@ -48,7 +48,7 @@ if defaults.bool(forKey: alertSuppressionKey) {
 }
 ```
 
-![Alert with a suppression checkbox and customized text](https://docs-assets.developer.apple.com/published/b5a549bdf6aab0c012c66df20fc5a4cc/media-3686600%402x.png)
+![Alert with a suppression checkbox and customized text](/images/com.apple.appkit/media-3686600@2x.png)
 
 ## See Also
 

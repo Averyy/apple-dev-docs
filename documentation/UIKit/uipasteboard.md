@@ -19,7 +19,7 @@ class UIPasteboard
 
 #### Overview
 
-For sharing data with any other app, use the systemwide general pasteboard. For sharing data with another app from your team — that has the same team ID as the app to share from — configure an App Group. For more information about configuring an App Group, see [`Configuring app groups`](https://developer.apple.com/documentation/Xcode/configuring-app-groups).
+For sharing data with any other app, use the systemwide general pasteboard. For sharing data with another app from your team — that has the same team ID as the app to share from — configure an App Group. For more information about configuring an App Group, see [`Configuring app groups`](https://developer.apple.com/documentation/xcode/configuring-app-groups).
 
 In typical usage, an object in your app writes data to a pasteboard when the user requests a copy, cut, or duplicate operation on a selection in the user interface. Another object in the same or different app then reads that data from the pasteboard and presents it to the user at a new location. This usually happens when the user requests a paste operation.
 
@@ -35,8 +35,8 @@ You can create named pasteboards with the class methods [`init(name:create:)`](u
 
 The [`UIPasteboard`](uipasteboard.md) class provides methods for reading and writing individual pasteboard items, as well as methods for reading and writing multiple pasteboard items at once. For more information, see [`Getting and setting pasteboard items`](uipasteboard#Getting-and-setting-pasteboard-items.md) in the topic groups below. The data to write to a pasteboard can be in one of the following forms:
 
-- If the data is an object that conforms to [`NSItemProviderWriting`](https://developer.apple.com/documentation/Foundation/NSItemProviderWriting), use [`setItemProviders(_:localOnly:expirationDate:)`](uipasteboard/setitemproviders(_:localonly:expirationdate:).md) to write it to the pasteboard.
-- If you can represent the data with a common object — such as [`NSString`](https://developer.apple.com/documentation/Foundation/NSString), [`NSArray`](https://developer.apple.com/documentation/Foundation/NSArray), [`NSDictionary`](https://developer.apple.com/documentation/Foundation/NSDictionary), [`NSDate`](https://developer.apple.com/documentation/Foundation/NSDate), [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber), [`UIImage`](uiimage.md), or [`NSURL`](https://developer.apple.com/documentation/Foundation/NSURL) — you can write it to the pasteboard as a value using a method such as [`setValue(_:forPasteboardType:)`](uipasteboard/setvalue(_:forpasteboardtype:).md).
+- If the data is an object that conforms to [`NSItemProviderWriting`](https://developer.apple.com/documentation/foundation/nsitemproviderwriting), use [`setItemProviders(_:localOnly:expirationDate:)`](uipasteboard/setitemproviders(_:localonly:expirationdate:).md) to write it to the pasteboard.
+- If you can represent the data with a common object — such as [`NSString`](https://developer.apple.com/documentation/foundation/nsstring), [`NSArray`](https://developer.apple.com/documentation/foundation/nsarray), [`NSDictionary`](https://developer.apple.com/documentation/foundation/nsdictionary), [`NSDate`](https://developer.apple.com/documentation/foundation/nsdate), [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber), [`UIImage`](uiimage.md), or [`NSURL`](https://developer.apple.com/documentation/foundation/nsurl) — you can write it to the pasteboard as a value using a method such as [`setValue(_:forPasteboardType:)`](uipasteboard/setvalue(_:forpasteboardtype:).md).
 - If the data is binary, use the [`setData(_:forPasteboardType:)`](uipasteboard/setdata(_:forpasteboardtype:).md) method to write it to the pasteboard.
 
 The [`UIPasteboard`](uipasteboard.md) class provides convenience methods for writing and reading strings, images, URLs, and colors to and from single or multiple pasteboard items. See [`Getting and setting pasteboard items of standard data types`](uipasteboard#Getting-and-setting-pasteboard-items-of-standard-data-types.md) in the topic groups below.
@@ -57,7 +57,7 @@ Use the following properties to avoid user notifications and alerts when the sys
 - [`types`](uipasteboard/types.md), [`types(forItemSet:)`](uipasteboard/types(foritemset:).md)
 - [`itemSet(withPasteboardTypes:)`](uipasteboard/itemset(withpasteboardtypes:).md)
 - [`hasColors`](uipasteboard/hascolors.md), [`hasImages`](uipasteboard/hasimages.md), [`hasStrings`](uipasteboard/hasstrings.md), [`hasURLs`](uipasteboard/hasurls.md)
-- [`canLoadObject(ofClass:)`](https://developer.apple.com/documentation/Foundation/NSItemProvider/canLoadObject(ofClass:)-3eig9), [`canLoadObject(ofClass:)`](https://developer.apple.com/documentation/Foundation/NSItemProvider/canLoadObject(ofClass:)-40grc)
+- [`canLoadObject(ofClass:)`](https://developer.apple.com/documentation/foundation/nsitemprovider/canloadobject(ofclass:)-3eig9), [`canLoadObject(ofClass:)`](https://developer.apple.com/documentation/foundation/nsitemprovider/canloadobject(ofclass:)-40grc)
 - any of the pattern-detection methods in the [`Detecting patterns of content in pasteboard items`](uipasteboard#Detecting-patterns-of-content-in-pasteboard-items.md) group in the topic groups below
 
 The system notifies the user when you access properties or call methods that pull data from the pasteboard if the system doesn’t determine that the user intends to access that data.
@@ -66,9 +66,9 @@ The system notifies the user when you access properties or call methods that pul
 
 When you write an object to a pasteboard, the pasteboard stores it as a *pasteboard item*. A pasteboard item consists of one or more key-value pairs in which the key identifies the representation type (sometimes called a *pasteboard type*) of the value.
 
-A uniform type identifier frequently functions as the key for a representation type. For example, you can use the [`UTTypeJPEG`](https://developer.apple.com/documentation/UniformTypeIdentifiers/UTTypeJPEG) uniform type identifier (a constant for `public.jpeg`) as a representation type key for JPEG data.
+A uniform type identifier frequently functions as the key for a representation type. For example, you can use the [`UTTypeJPEG`](https://developer.apple.com/documentation/uniformtypeidentifiers/uttypejpeg) uniform type identifier (a constant for `public.jpeg`) as a representation type key for JPEG data.
 
-For a discussion of uniform type identifiers, and a list of common ones, see [`Uniform Type Identifiers`](https://developer.apple.com/documentation/UniformTypeIdentifiers).
+For a discussion of uniform type identifiers, and a list of common ones, see [`Uniform Type Identifiers`](https://developer.apple.com/documentation/uniformtypeidentifiers).
 
 Your app can use any string to name a representation type; however, for app-specific data types, it’s best practice to use reverse-DNS notation to ensure the uniqueness of the type (for example, `com.myCompany.myApp.myType`).
 
@@ -80,7 +80,7 @@ For more about representation types, read the discussion for the [`types`](uipas
 
 When a user signs into iCloud, the general pasteboard automatically transfers its contents to nearby devices that use the same iCloud account. You can control Handoff behavior when writing contents to the general pasteboard, and can set an expiration for items, using the [`setItemProviders(_:localOnly:expirationDate:)`](uipasteboard/setitemproviders(_:localonly:expirationdate:).md), [`setObjects(_:localOnly:expirationDate:)`](uipasteboard/setobjects(_:localonly:expirationdate:)-3h3iz.md), or [`setItems(_:options:)`](uipasteboard/setitems(_:options:).md) methods, as follows:
 
-- To exclude a pasteboard from Handoff, specify [`false`](https://developer.apple.com/documentation/Swift/false) for the `localOnly` parameter, or call the [`setItems(_:options:)`](uipasteboard/setitems(_:options:).md) method with the [`localOnly`](uipasteboard/optionskey/localonly.md) option.
+- To exclude a pasteboard from Handoff, specify [`false`](https://developer.apple.com/documentation/swift/false) for the `localOnly` parameter, or call the [`setItems(_:options:)`](uipasteboard/setitems(_:options:).md) method with the [`localOnly`](uipasteboard/optionskey/localonly.md) option.
 - To indicate an expiration time and date for copied data, provide the `expirationDate` parameter, or call the [`setItems(_:options:)`](uipasteboard/setitems(_:options:).md) method with the [`expirationDate`](uipasteboard/optionskey/expirationdate.md) option. At the time and date that you set, the system removes the pasteboard items from the pasteboard.
 
 ##### Using Pasteboards with Other Objects
@@ -229,16 +229,16 @@ A typical app that implements copy, paste, and duplicate operations also manages
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

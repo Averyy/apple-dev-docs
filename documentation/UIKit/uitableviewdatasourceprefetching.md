@@ -45,7 +45,7 @@ The [`tableView(_:prefetchRowsAt:)`](uitableviewdatasourceprefetching/tableview(
 - Data is currently being prefetched, but isn’t yet available.
 - Data hasn’t yet been requested.
 
-One approach that handles all of these situations is to use [`Operation`](https://developer.apple.com/documentation/Foundation/Operation) to load the data for each row. You create the [`Operation`](https://developer.apple.com/documentation/Foundation/Operation) object and store it in the prefetch method. The data source method can then either retrieve the operation and the result, or create it if it doesn’t exist. For further information about how you can use asynchronous programming models to achieve this desired behavior, see [`Concurrency Programming Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Conceptual/ConcurrencyProgrammingGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40008091).
+One approach that handles all of these situations is to use [`Operation`](https://developer.apple.com/documentation/foundation/operation) to load the data for each row. You create the [`Operation`](https://developer.apple.com/documentation/foundation/operation) object and store it in the prefetch method. The data source method can then either retrieve the operation and the result, or create it if it doesn’t exist. For further information about how you can use asynchronous programming models to achieve this desired behavior, see [`Concurrency Programming Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Conceptual/ConcurrencyProgrammingGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40008091).
 
 ## Topics
 
@@ -58,7 +58,7 @@ One approach that handles all of these situations is to use [`Operation`](https:
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

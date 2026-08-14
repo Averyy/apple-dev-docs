@@ -16,7 +16,7 @@ transportType?: TransportType;
 
 #### Discussion
 
-Use `transportType` to specify the mode of transportation for your [`route(request)`](directions/route.md) and [`eta(request)`](directions/eta.md) requests.
+Use `transportType` to specify the mode of transportation for your [`route()`](directions/route.md) and [`eta()`](directions/eta.md) requests.
 
 The default value of this property is [`Automobile`](transporttype/automobile.md).
 

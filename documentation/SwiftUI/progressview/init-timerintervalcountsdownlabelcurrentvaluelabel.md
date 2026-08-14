@@ -41,7 +41,7 @@ struct ContentView: View {
 }
 ```
 
-![A horizontal bar that represents progress, partially filled in from](https://docs-assets.developer.apple.com/published/7afea2bc36293b26400c634e5e9ef856/ProgressView-6-macOS%402x.png)
+![A horizontal bar that represents progress, partially filled in from](/images/com.apple.SwiftUI/ProgressView-6-macOS@2x.png)
 
 By default, the progress view empties as time passes from the start of the date range to the end, but you can use the `countsDown` parameter to create a progress view that fills as time passes, as the above example demonstrates.
 

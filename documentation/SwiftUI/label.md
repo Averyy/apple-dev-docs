@@ -31,7 +31,7 @@ struct Label<Title, Icon> where Title : View, Icon : View
 
 One of the most common and recognizable user interface components is the combination of an icon and a label. This idiom appears across many kinds of apps and shows up in collections, lists, menus of action items, and disclosable lists, just to name a few.
 
-You create a label, in its simplest form, by providing a title and the name of an image, such as an icon from the [`SF Symbols`](https://developer.apple.com/design/Human-Interface-Guidelines/sf-symbols) collection:
+You create a label, in its simplest form, by providing a title and the name of an image, such as an icon from the [`SF Symbols`](https://developer.apple.com/design/human-interface-guidelines/sf-symbols) collection:
 
 ```swift
 Label("Lightning", systemImage: "bolt.fill")

@@ -27,7 +27,7 @@ The function may hold onto the given attribute name and/orvalue in some other da
 
 - `query`: The query instance.
 - `item`: The default MDItemRef for the result.
-- `context`: The user-defined context parameter provided to the   function.
+- `context`: The user-defined context parameter provided to the `MDQuerySetCreateResultFunction` function.
 
 ## See Also
 

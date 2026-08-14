@@ -6,7 +6,7 @@ Learn about important changes to Hypervisor.
 
 #### Overview
 
-Browse notable changes in [`Hypervisor`](https://developer.apple.com/documentation/Hypervisor).
+Browse notable changes in [`Hypervisor`](https://developer.apple.com/documentation/hypervisor).
 
 #### June 2025
 
@@ -14,7 +14,7 @@ Browse notable changes in [`Hypervisor`](https://developer.apple.com/documentati
 
 #### June 2024
 
-- Build your own VM solutions with added support for nested virtualization in Apple silicon chips, and enable a Hypervisor to run inside another VM. Nested virtualization capabilities on a Mac with Apple silicon use a new exception level (EL), EL2, which the framework enables though several new methods, including [`hv_vm_config_set_el2_enabled(_:_:)`](https://developer.apple.com/documentation/Hypervisor/hv_vm_config_set_el2_enabled(_:_:)), and a number of enumeration constants that describe ARM system registers.
+- Build your own VM solutions with added support for nested virtualization in Apple silicon chips, and enable a Hypervisor to run inside another VM. Nested virtualization capabilities on a Mac with Apple silicon use a new exception level (EL), EL2, which the framework enables though several new methods, including [`hv_vm_config_set_el2_enabled(_:_:)`](https://developer.apple.com/documentation/hypervisor/hv_vm_config_set_el2_enabled(_:_:)), and a number of enumeration constants that describe ARM system registers.
 - Add support for virtualized ARM Generic Interrupt Controller (GIC) devices and provide an efficient mechanism to manage interrupt delivery to a virtual machine. Providing a GIC device reduces the custom code you need to write to emulate an interrupt controller.
 - Add support for GIC hypervisor control system registers that GIC devices provide for nested virtualization support. Support for these registers allows hypervisors running in a virtual machine to inject interrupts to their guests.
 

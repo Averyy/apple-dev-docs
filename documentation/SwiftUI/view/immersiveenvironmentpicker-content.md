@@ -30,7 +30,7 @@ SystemPlayerView(player: player)
     }
 ```
 
-Use a [`UIViewControllerRepresentable`](uiviewcontrollerrepresentable.md) instance to display a [`AVPlayerViewController`](https://developer.apple.com/documentation/AVKit/AVPlayerViewController) class in your SwiftUI interface.
+Use a [`UIViewControllerRepresentable`](uiviewcontrollerrepresentable.md) instance to display a [`AVPlayerViewController`](https://developer.apple.com/documentation/avkit/avplayerviewcontroller) class in your SwiftUI interface.
 
 ```swift
 struct SystemPlayerView: UIViewControllerRepresentable {
@@ -46,9 +46,9 @@ struct SystemPlayerView: UIViewControllerRepresentable {
 }
 ```
 
-Items will be donated to media players (like [`AVPlayerViewController`](https://developer.apple.com/documentation/AVKit/AVPlayerViewController)) downstream in the hierarchy.
+Items will be donated to media players (like [`AVPlayerViewController`](https://developer.apple.com/documentation/avkit/avplayerviewcontroller)) downstream in the hierarchy.
 
-> **Note**: View the sample code in [`Building an immersive media viewing experience`](https://developer.apple.com/documentation/visionOS/building-an-immersive-media-viewing-experience) to see an immersive space in action.
+> **Note**: View the sample code in [`Building an immersive media viewing experience`](https://developer.apple.com/documentation/visionos/building-an-immersive-media-viewing-experience) to see an immersive space in action.
 
 
 ---

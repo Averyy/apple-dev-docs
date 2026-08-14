@@ -28,14 +28,14 @@ A set of groups of subscription options that include optional views for labels a
 - [init(idType: GroupID.Type, groupedBy: (Product) -> GroupID, label: (GroupID) -> Label, marketingContent: (GroupID) -> MarketingContent)](subscriptionoptiongroupset/init(idtype:groupedby:label:marketingcontent:).md)
 ### Creating the group style
 - [func subscriptionStoreOptionGroupStyle(some SubscriptionOptionGroupStyle) -> some View
-](../SwiftUI/View/subscriptionStoreOptionGroupStyle(_:).md)
+](../swiftui/view/subscriptionstoreoptiongroupstyle(_:).md)
   Sets the style subscription store views within this view use to display groups of subscription options.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 - [StoreContent](storecontent.md)
 
 ## See Also

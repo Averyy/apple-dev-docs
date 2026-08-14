@@ -72,9 +72,9 @@ enum DataLayout
 ## Relationships
 
 ### Conforms To
-- [CaseIterable](../Swift/CaseIterable.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
+- [CaseIterable](../swift/caseiterable.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
 
 
 ---

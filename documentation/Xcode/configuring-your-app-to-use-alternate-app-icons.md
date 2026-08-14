@@ -16,15 +16,15 @@ This sample code project demonstrates how to configure your app so that people c
 
 ##### Add Icon Files for the Alternate Icons
 
-For each alternate app icon, the project requires an Icon Composer file. Create your app icon using Icon Composer, then add it to the Project navigator in your Xcode project. For more information, see [`Creating your app icon using Icon Composer`](creating-your-app-icon-using-icon-composer.md). For design guidance, see [`App icons`](https://developer.apple.com/design/Human-Interface-Guidelines/app-icons).
+For each alternate app icon, the project requires an Icon Composer file. Create your app icon using Icon Composer, then add it to the Project navigator in your Xcode project. For more information, see [`Creating your app icon using Icon Composer`](creating-your-app-icon-using-icon-composer.md). For design guidance, see [`App icons`](https://developer.apple.com/design/human-interface-guidelines/app-icons).
 
 ##### Configure the Asset Catalog Compiler
 
-The system gathers information about the app’s icons from the app’s `Info.plist` file under the top-level key [`CFBundleIcons`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/CFBundleIcons). Xcode adds entries to this file for the icons the project specifies through build settings under Asset Catalog Compiler - Options.
+The system gathers information about the app’s icons from the app’s `Info.plist` file under the top-level key [`CFBundleIcons`](https://developer.apple.com/documentation/bundleresources/information-property-list/cfbundleicons). Xcode adds entries to this file for the icons the project specifies through build settings under Asset Catalog Compiler - Options.
 
-For each icon file that the project specifies by name in the build setting Alternate App Icon Sets, Xcode adds an entry under the key [`CFBundleAlternateIcons`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/CFBundleIcons/CFBundleAlternateIcons).
+For each icon file that the project specifies by name in the build setting Alternate App Icon Sets, Xcode adds an entry under the key [`CFBundleAlternateIcons`](https://developer.apple.com/documentation/bundleresources/information-property-list/cfbundleicons/cfbundlealternateicons).
 
-Xcode enters the name of the primary app icon specified in the build setting Primary App Icon Set Name under the key [`CFBundlePrimaryIcon`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/CFBundleIcons/CFBundlePrimaryIcon). This setting is also available through the App Icons and Launch Screen section of the General pane. For more information about build settings, see [`Build settings reference`](build-settings-reference.md).
+Xcode enters the name of the primary app icon specified in the build setting Primary App Icon Set Name under the key [`CFBundlePrimaryIcon`](https://developer.apple.com/documentation/bundleresources/information-property-list/cfbundleicons/cfbundleprimaryicon). This setting is also available through the App Icons and Launch Screen section of the General pane. For more information about build settings, see [`Build settings reference`](build-settings-reference.md).
 
 > ❗ **Important**: To change the values of `CFBundleIcons`, `CFBundleAlternateIcons`, and `CFBundlePrimaryIcon`, modify their related build settings. Don’t edit or remove these keys manually from the `Info.plist` file.
 
@@ -38,7 +38,7 @@ For more information about build configuration files, see [`Adding a build confi
 
 ##### Change the Apps Icon
 
-When people select an alternate icon in the app interface, the app calls [`setAlternateIconName(_:completionHandler:)`](https://developer.apple.com/documentation/UIKit/UIApplication/setAlternateIconName(_:completionHandler:)) with the name of the new icon. This tells the system to display the new icon for this app. The system automatically displays an alert notifying people of the change. Passing `nil` displays the app’s primary icon.
+When people select an alternate icon in the app interface, the app calls [`setAlternateIconName(_:completionHandler:)`](https://developer.apple.com/documentation/uikit/uiapplication/setalternateiconname(_:completionhandler:)) with the name of the new icon. This tells the system to display the new icon for this app. The system automatically displays an alert notifying people of the change. Passing `nil` displays the app’s primary icon.
 
 ```swift
 UIApplication.shared.setAlternateIconName(iconName) { error in
@@ -49,7 +49,7 @@ UIApplication.shared.setAlternateIconName(iconName) { error in
 
 ```
 
-The current icon’s name is available through the property [`alternateIconName`](https://developer.apple.com/documentation/UIKit/UIApplication/alternateIconName).
+The current icon’s name is available through the property [`alternateIconName`](https://developer.apple.com/documentation/uikit/uiapplication/alternateiconname).
 
 ## See Also
 

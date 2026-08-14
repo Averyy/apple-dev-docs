@@ -23,7 +23,7 @@ init(namedColumns: [String : MLUntypedColumn]) throws
 
 Use this initializer to create a data table from untyped columns.
 
-![A table of information about a book. Columns named “Title”, “Author”,](https://docs-assets.developer.apple.com/published/3426640fe0e03c0d418fc851e1dd6812/MLDataTable-init%28namedColumns%3A%29-1%402x.png)
+![A table of information about a book. Columns named “Title”, “Author”,](/images/com.apple.createml/MLDataTable-init(namedColumns:)-1@2x.png)
 
 For example, to create a data table as shown above, first create your untyped columns.
 

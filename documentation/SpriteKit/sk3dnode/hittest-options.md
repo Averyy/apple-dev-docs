@@ -22,7 +22,7 @@ func hitTest(_ point: CGPoint, options: [String : Any]? = nil) -> [SCNHitTestRes
 
 #### Return Value
 
-An array of [`SCNHitTestResult`](https://developer.apple.com/documentation/SceneKit/SCNHitTestResult) objects representing search results.
+An array of [`SCNHitTestResult`](https://developer.apple.com/documentation/scenekit/scnhittestresult) objects representing search results.
 
 #### Discussion
 

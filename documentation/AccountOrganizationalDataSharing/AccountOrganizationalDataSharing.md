@@ -10,7 +10,7 @@ Provide people with the ability to authorize your apps and websites that access 
 
 #### Overview
 
-With [`OAuth 2.0`](https://developer.apple.comhttps://datatracker.ietf.org/doc/html/rfc6749), Account & Organizational Data Sharing gives your users a safe way to authorize your apps and websites to access information about them on Apple services, for example [`Roster API`](https://developer.apple.com/documentation/RosterAPI).
+With [`OAuth 2.0`](https://developer.apple.comhttps://datatracker.ietf.org/doc/html/rfc6749), Account & Organizational Data Sharing gives your users a safe way to authorize your apps and websites to access information about them on Apple services, for example [`Roster API`](https://developer.apple.com/documentation/rosterapi).
 
 ## Topics
 

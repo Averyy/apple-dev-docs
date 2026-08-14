@@ -22,7 +22,7 @@ let kCGImageDestinationOptimizeColorForSharing: CFString
 
 #### Discussion
 
-The value of this key must be a [`CFBoolean`](https://developer.apple.com/documentation/CoreFoundation/CFBoolean) value. The default value is [`kCFBooleanFalse`](https://developer.apple.com/documentation/CoreFoundation/kCFBooleanFalse). Include this key and set it to [`kCFBooleanTrue`](https://developer.apple.com/documentation/CoreFoundation/kCFBooleanTrue) to color convert the image using its colorspace, which provides better compatibility with older devices.
+The value of this key must be a [`CFBoolean`](https://developer.apple.com/documentation/corefoundation/cfboolean) value. The default value is [`kCFBooleanFalse`](https://developer.apple.com/documentation/corefoundation/kcfbooleanfalse). Include this key and set it to [`kCFBooleanTrue`](https://developer.apple.com/documentation/corefoundation/kcfbooleantrue) to color convert the image using its colorspace, which provides better compatibility with older devices.
 
 ## See Also
 

@@ -28,7 +28,7 @@ struct OSSignposter
 
 Signposts allow you to record meaningful information about the duration of your app’s tasks using the same subsystems and categories that you use for logging. Use `OSSignposter` to create signposted intervals in your code, and then use Instruments’ `os_signposts` instrument to record those intervals as you run your app and perform the actions to measure. Instruments displays signpost data visually in a timeline.
 
-![An image that shows several signposted intervals on a timeline in Instruments. The first interval has a highlight and displays the OS signpost icon at its start and end. The icons represent the calls in code that begin and end the signposted interval.](https://docs-assets.developer.apple.com/published/79b69e2516a36b5482a43e514c95a48b/media-3855979%402x.png)
+![An image that shows several signposted intervals on a timeline in Instruments. The first interval has a highlight and displays the OS signpost icon at its start and end. The icons represent the calls in code that begin and end the signposted interval.](/images/com.apple.os/media-3855979@2x.png)
 
 To add a signposted interval, create a signpost ID — an identifier that disambiguates intervals that have the same name, subsystem, and category, and that exist within the same scope — and then add a call to one of the class’s `beginInterval` methods just before the code you want to measure. Retain the interval state it returns, and end the interval by passing that state to one of the class’s `endInterval` methods, which you call immediately after the measured code. A signposter uses interval state to enforce a number of runtime assertions, the behavior of which depends on your app’s build configuration. For more information, see [`OSSignpostIntervalState`](ossignpostintervalstate.md). A signposted interval consists of one begin call and one end call only.
 
@@ -91,8 +91,8 @@ To add a signposted interval, create a signpost ID — an identifier that disamb
 ## Relationships
 
 ### Conforms To
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

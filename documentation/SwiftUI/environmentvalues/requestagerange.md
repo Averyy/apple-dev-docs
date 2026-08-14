@@ -19,7 +19,7 @@ var requestAgeRange: DeclaredAgeRangeAction { get }
 
 #### Discussion
 
-Call this action from a [`Button`](Button.md) or [`onAppear(perform:)`](View/onAppear(perform:).md) to ask people to share their age range with your app.
+Call this action from a [`Button`](button.md) or [`onAppear(perform:)`](view/onappear(perform:).md) to ask people to share their age range with your app.
 
 
 ---

@@ -57,7 +57,7 @@ if graph.size == 0 {
 
 ## See Also
 
-- [Updating a Model File to a Model Package](../CoreML/updating-a-model-file-to-a-model-package.md)
+- [Updating a Model File to a Model Package](../coreml/updating-a-model-file-to-a-model-package.md)
   Convert a Core ML model file into a model package in Xcode.
 - [struct bnns_graph_t](bnns_graph_t.md)
   The compiled graph object.

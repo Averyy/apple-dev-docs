@@ -13,7 +13,7 @@ framework: HIG
 
 An edit menu lets people make changes to selected content in the current view, in addition to offering related commands like Copy, Select, Translate, and Look Up.
 
-![A stylized representation of an edit menu extending from selected text. The image is tinted red to subtly reflect the red in the original six-color Apple logo.](https://docs-assets.developer.apple.com/published/bce8928c8f3ac503bfe241fd3de75263/components-edit-menu-intro~dark%402x.png)
+![A stylized representation of an edit menu extending from selected text. The image is tinted red to subtly reflect the red in the original six-color Apple logo.](/images/com.apple.HIG/components-edit-menu-intro~dark@2x.png)
 In addition to text, an edit menu’s commands can apply to many types of selectable content, such as images, files, and objects like contact cards, charts, or map locations. In iOS, iPadOS, and visionOS, the system automatically detects the data type of a selected item, which can result in the addition of a related action to the edit menu. For example, selecting an address can add an  item like *Get directions* to the edit menu.
 Edit menus can look and behave slightly differently in different platforms.
 - In iOS, the edit menu displays commands in a compact, horizontal list that appears when people touch and hold or double-tap to select content in a view. People can tap a chevron on the trailing edge to expand it into a [Context menus](context-menus.md).
@@ -23,7 +23,7 @@ Edit menus can look and behave slightly differently in different platforms.
 Editing content is rare in tvOS and watchOS experiences, so the system doesn’t provide an edit menu in these platforms.
 
 ## Best practices
-**Prefer the system-provided edit menu.** People are familiar with the contents and behavior of the system-provided component, so creating a custom menu that presents the same commands is redundant and likely to be confusing. For a list of standard edit menu commands, see [UIResponderStandardEditActions](../UIKit/UIResponderStandardEditActions.md).
+**Prefer the system-provided edit menu.** People are familiar with the contents and behavior of the system-provided component, so creating a custom menu that presents the same commands is redundant and likely to be confusing. For a list of standard edit menu commands, see [UIResponderStandardEditActions](../uikit/uiresponderstandardeditactions.md).
 **Let people reveal an edit menu using the system-defined interactions they already know.** For example, people expect to touch and hold on a touchscreen, pinch and hold in visionOS, or use a secondary click with an attached trackpad or keyboard. Although the interactions to reveal an edit menu can differ based on platform, people don’t appreciate having to learn a custom interaction to perform a standard task.
 **Offer commands that are relevant in the current context, removing or dimming commands that don’t apply.** For example, if nothing is selected, avoid showing options that require a selection, such as Copy or Cut. Similarly, avoid showing a Paste option when there’s nothing to paste.
 **List custom commands near relevant system-provided ones.** For example, if you offer custom formatting commands, you can help maintain the ordering people expect by listing them after the system-provided commands in the format section. Avoid overwhelming people with too many custom commands.
@@ -54,8 +54,8 @@ To learn about the order of items in a macOS app’s Edit menu, see [Edit menu](
 [Undo and redo](undo-and-redo.md)
 
 #### Developer documentation
-[UIEditMenuInteraction](../UIKit/UIEditMenuInteraction.md) — UIKit
-[NSMenu](../AppKit/NSMenu.md) — AppKit
+[UIEditMenuInteraction](../uikit/uieditmenuinteraction.md) — UIKit
+[NSMenu](../appkit/nsmenu.md) — AppKit
 
 ## Change log
 | Date | Changes |

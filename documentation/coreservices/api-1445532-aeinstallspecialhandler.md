@@ -37,9 +37,9 @@ Your application should not install a handler in a system dispatch table with th
 
 ## Parameters
 
-- `functionClass`: See  .
-- `handler`: A universal procedure pointer to the special handler to install. See  .
-- `isSysHandler`: Specifies the special handler dispatch table to add the handler to. Pass   to add the handler to the system special handler dispatch table or   to add the handler to your application’s special handler dispatch table. Use of the system special handler dispatch table is not recommended.
+- `functionClass`: A value that specifies the type of handler to install. You can use any of the constants defined in [`Special Handler Callback Constants`](apple_events/1572726-special_handler_callback_constan.md). If there is already an entry in the specified special handler dispatch table for the value you specify in this parameter, it is replaced. See [`AEKeyword`](aekeyword.md).
+- `handler`: A universal procedure pointer to the special handler to install. See [`AEEventHandlerUPP`](aeeventhandlerupp.md).
+- `isSysHandler`: Specifies the special handler dispatch table to add the handler to. Pass `TRUE` to add the handler to the system special handler dispatch table or `FALSE` to add the handler to your application’s special handler dispatch table. Use of the system special handler dispatch table is not recommended.
 
 ## See Also
 

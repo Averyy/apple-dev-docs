@@ -27,7 +27,7 @@ The buffer contains a collection of `int32`, `float16`, `float32`, or `float64` 
 ## Parameters
 
 - `type`: The element type of the buffer passed in the body. This must be a Swift primitive type equivalent to `dataType`. This closure takes the following parameter: - **`ptr`**: The pointer to the buffer.
-- `body`: A closure with an [`UnsafeBufferPointer`](https://developer.apple.com/documentation/Swift/UnsafeBufferPointer) parameter that points to the storage for the multiarray.
+- `body`: A closure with an [`UnsafeBufferPointer`](https://developer.apple.com/documentation/swift/unsafebufferpointer) parameter that points to the storage for the multiarray.
 
 ## See Also
 

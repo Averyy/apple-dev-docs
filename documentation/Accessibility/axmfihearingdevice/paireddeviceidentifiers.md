@@ -20,11 +20,11 @@ static func pairedDeviceIdentifiers() -> [UUID]
 
 #### Return Value
 
-An array of [`NSUUID`](https://developer.apple.com/documentation/Foundation/NSUUID) objects that represent the [`Core Bluetooth`](https://developer.apple.com/documentation/CoreBluetooth) UUIDs of the hearing device peripherals.
+An array of [`NSUUID`](https://developer.apple.com/documentation/foundation/nsuuid) objects that represent the [`Core Bluetooth`](https://developer.apple.com/documentation/corebluetooth) UUIDs of the hearing device peripherals.
 
 #### Discussion
 
-This function returns each [`CBPeripheral`](https://developer.apple.com/documentation/CoreBluetooth/CBPeripheral) with a manufacturer that matches the manufacturer in your app’s `hearing.aid.app` entitlement. For bimodal hearing devices, specify an array of manufacturers for this entitlement.
+This function returns each [`CBPeripheral`](https://developer.apple.com/documentation/corebluetooth/cbperipheral) with a manufacturer that matches the manufacturer in your app’s `hearing.aid.app` entitlement. For bimodal hearing devices, specify an array of manufacturers for this entitlement.
 
 Find and connect to the matching hearing device peripherals like this:
 

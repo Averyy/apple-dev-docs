@@ -8,7 +8,7 @@ A gesture-based screen reader that provides an auditory description of the conte
 
 VoiceOver is an assistive technology that enables people to experience the interface on their devices without having to see the screen. People who are blind or have low vision depend on VoiceOver to provide auditory feedback while using their devices, but VoiceOver can be useful to people in a wide variety of contexts. For example, someone prone to motion sickness might choose to turn VoiceOver on while they’re in a moving vehicle. Learn more about testing your app with VoiceOver to make sure it works well for people who use this assistive technology.
 
-![](https://docs-assets.developer.apple.com/published/3cd218b9da43d8e5fd580797ddc711e9/voiceover%402x.png)
+![](/images/com.apple.Accessibility/voiceover@2x.png)
 
 ###### Learn to Use Voiceover
 
@@ -26,7 +26,7 @@ VoiceOver is an assistive technology that enables people to experience the inter
 ### Develop for VoiceOver
 - [Performing accessibility testing for your app](performing-accessibility-testing-for-your-app.md)
   Test your app with accessibility settings and assistive technologies to discover and address accessibility issues.
-- [Supporting VoiceOver in your app](../UIKit/supporting-voiceover-in-your-app.md)
+- [Supporting VoiceOver in your app](../uikit/supporting-voiceover-in-your-app.md)
   Add VoiceOver support to make your iOS app more accessible to users who are blind or have low vision.
 - [WWDC21 Challenge: VoiceOver Maze](wwdc21_challenge_voiceover_maze.md)
   Navigate to the end of a dark maze using VoiceOver as your guide.

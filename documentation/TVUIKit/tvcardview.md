@@ -18,7 +18,7 @@ class TVCardView
 
 A `TVCardView` object is a specialized version of [`TVLockupView`](tvlockupview.md) that presents an arbitrarily composed view hierarchy in a floating content view. You add custom subviews to the [`contentView`](tvlockupview/contentview.md) property, and the subviews act as a single unit in regard to selection and motion effects. You typically use a TVCardView to display ratings and reviews for a media item. The following figure shows a rating card that consists of two label views (the rating and related information) and an image view (the stars).
 
-![A darkened screen with a highlighted box in the upper left corner containing the rating for a media item.](https://docs-assets.developer.apple.com/published/9e3a591eedd92d1c844d51b7ed6b4f51/media-3016830%402x.png)
+![A darkened screen with a highlighted box in the upper left corner containing the rating for a media item.](/images/com.apple.tvuikit/media-3016830@2x.png)
 
 ## Topics
 
@@ -31,32 +31,32 @@ A `TVCardView` object is a specialized version of [`TVLockupView`](tvlockupview.
 ### Inherits From
 - [TVLockupView](tvlockupview.md)
 ### Conforms To
-- [CALayerDelegate](../QuartzCore/CALayerDelegate.md)
-- [CLBodyIdentifiable](../CoreLocation/CLBodyIdentifiable.md)
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCoding](../Foundation/NSCoding.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
-- [UIAccessibilityIdentification](../UIKit/UIAccessibilityIdentification.md)
-- [UIActivityItemsConfigurationProviding](../UIKit/UIActivityItemsConfigurationProviding.md)
-- [UIAppearance](../UIKit/UIAppearance.md)
-- [UIAppearanceContainer](../UIKit/UIAppearanceContainer.md)
-- [UIContextMenuInteractionDelegate](../UIKit/UIContextMenuInteractionDelegate.md)
-- [UICoordinateSpace](../UIKit/UICoordinateSpace.md)
-- [UIDynamicItem](../UIKit/UIDynamicItem.md)
-- [UIFocusEnvironment](../UIKit/UIFocusEnvironment.md)
-- [UIFocusItem](../UIKit/UIFocusItem.md)
-- [UIFocusItemContainer](../UIKit/UIFocusItemContainer.md)
-- [UIPopoverPresentationControllerSourceItem](../UIKit/UIPopoverPresentationControllerSourceItem.md)
-- [UIResponderStandardEditActions](../UIKit/UIResponderStandardEditActions.md)
-- [UITraitChangeObservable](../UIKit/UITraitChangeObservable-67e94.md)
-- [UITraitEnvironment](../UIKit/UITraitEnvironment.md)
-- [UIUserActivityRestoring](../UIKit/UIUserActivityRestoring.md)
+- [CALayerDelegate](../quartzcore/calayerdelegate.md)
+- [CLBodyIdentifiable](../corelocation/clbodyidentifiable.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCoding](../foundation/nscoding.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
+- [UIAccessibilityIdentification](../uikit/uiaccessibilityidentification.md)
+- [UIActivityItemsConfigurationProviding](../uikit/uiactivityitemsconfigurationproviding.md)
+- [UIAppearance](../uikit/uiappearance.md)
+- [UIAppearanceContainer](../uikit/uiappearancecontainer.md)
+- [UIContextMenuInteractionDelegate](../uikit/uicontextmenuinteractiondelegate.md)
+- [UICoordinateSpace](../uikit/uicoordinatespace.md)
+- [UIDynamicItem](../uikit/uidynamicitem.md)
+- [UIFocusEnvironment](../uikit/uifocusenvironment.md)
+- [UIFocusItem](../uikit/uifocusitem.md)
+- [UIFocusItemContainer](../uikit/uifocusitemcontainer.md)
+- [UIPopoverPresentationControllerSourceItem](../uikit/uipopoverpresentationcontrollersourceitem.md)
+- [UIResponderStandardEditActions](../uikit/uiresponderstandardeditactions.md)
+- [UITraitChangeObservable](../uikit/uitraitchangeobservable-67e94.md)
+- [UITraitEnvironment](../uikit/uitraitenvironment.md)
+- [UIUserActivityRestoring](../uikit/uiuseractivityrestoring.md)
 
 ## See Also
 

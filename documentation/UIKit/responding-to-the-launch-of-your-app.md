@@ -48,11 +48,11 @@ When the user launches your app, make a good impression by launching quickly. Pe
 Move tasks that aren’t critical to your app’s initialization out of the launch-time sequence. For example:
 
 - Defer the initialization of features that your app doesn’t need immediately.
-- Move important, long-running tasks off your app’s main thread. For example, run them asynchronously on a global dispatch queue or in a [`Task`](https://developer.apple.com/documentation/Swift/Task).
+- Move important, long-running tasks off your app’s main thread. For example, run them asynchronously on a global dispatch queue or in a [`Task`](https://developer.apple.com/documentation/swift/task).
 
 ##### Determine Why Your Scene Connected
 
-When UIKit connects to a scene in your app, it passes along a [`UIScene.ConnectionOptions`](uiscene/connectionoptions.md) object that contains information about why UIKit connected to the scene. For example, this could indicate that the user requested your app to open a [`URL`](https://developer.apple.com/documentation/Foundation/URL), which you might use to display a screen related to information provided in the `URL`.
+When UIKit connects to a scene in your app, it passes along a [`UIScene.ConnectionOptions`](uiscene/connectionoptions.md) object that contains information about why UIKit connected to the scene. For example, this could indicate that the user requested your app to open a [`URL`](https://developer.apple.com/documentation/foundation/url), which you might use to display a screen related to information provided in the `URL`.
 
 The following code shows how you can check for a `URL` that contains information in query items in the scene’s connection options:
 

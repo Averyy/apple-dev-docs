@@ -23,7 +23,7 @@ func add(to runloop: RunLoop, forMode mode: RunLoop.Mode)
 
 You can associate a display link with multiple input modes. While the run loop is executing in a mode you specify, the display link notifies the target when the system requires new frames.
 
-You can specify a custom mode or use one of the modes listed in [`RunLoop`](https://developer.apple.com/documentation/Foundation/RunLoop).
+You can specify a custom mode or use one of the modes listed in [`RunLoop`](https://developer.apple.com/documentation/foundation/runloop).
 
 The run loop retains the display link. To remove the display link from all run loops, call [`invalidate()`](cadisplaylink/invalidate().md).
 

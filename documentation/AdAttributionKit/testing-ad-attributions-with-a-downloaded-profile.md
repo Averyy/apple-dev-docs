@@ -10,7 +10,7 @@ Reduce the time-window for ad attributions and inspect postbacks using a proxy d
 
 You can reduce the time-window for receiving ad attribution postbacks by installing an AdAttributionKit testing profile on your test device.
 
-Download the latest profile by signing in to your [`Apple Developer account`](https://developer.apple.comhttps://developer.apple.com/) and then downloading the [`AdAttributionKit profile`](https://developer.apple.comhttps://developer.apple.com/services-account/download?path=/Developer_Tools/AdAttributionKit_Profile/AdAttributionKitDeveloperTestingProfile.mobileconfig). This profile is compatible with both AdAttributionKit and [`SKAdNetwork`](https://developer.apple.com/documentation/StoreKit/SKAdNetwork).
+Download the latest profile by signing in to your [`Apple Developer account`](https://developer.apple.comhttps://developer.apple.com/) and then downloading the [`AdAttributionKit profile`](https://developer.apple.comhttps://developer.apple.com/services-account/download?path=/Developer_Tools/AdAttributionKit_Profile/AdAttributionKitDeveloperTestingProfile.mobileconfig). This profile is compatible with both AdAttributionKit and [`SKAdNetwork`](https://developer.apple.com/documentation/storekit/skadnetwork).
 
 For information about installing profiles, see [`Install a configuration profile on your iPhone or iPad`](https://developer.apple.comhttps://support.apple.com/en-us/102400). You can install this profile on devices running iOS or iPadOS 17.4 or later.
 

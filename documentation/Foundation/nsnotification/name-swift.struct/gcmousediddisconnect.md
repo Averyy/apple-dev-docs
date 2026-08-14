@@ -21,7 +21,7 @@ static let GCMouseDidDisconnect: NSNotification.Name
 
 #### Discussion
 
-The notification object is a [`GCMouse`](https://developer.apple.com/documentation/GameController/GCMouse) object that represents the mouse.
+The notification object is a [`GCMouse`](https://developer.apple.com/documentation/gamecontroller/gcmouse) object that represents the mouse.
 
 The system posts this notification on the main actor.
 

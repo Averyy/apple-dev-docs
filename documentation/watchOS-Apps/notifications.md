@@ -20,7 +20,7 @@ A watchOS app can customize notifications to:
 - Receive remote notifications directly from your server.
 - Receive background notifications from your server.
 
-For more information, see [`User Notifications`](https://developer.apple.com/documentation/UserNotifications)
+For more information, see [`User Notifications`](https://developer.apple.com/documentation/usernotifications)
 
 ## Topics
 

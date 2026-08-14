@@ -63,9 +63,9 @@ The QuickTime MPEG layer 3 (MP3) codecs come in two particular flavors. The firs
 MPEG-4 audio is stored as a sound track with data format `'mp4a'` and certain additions to the sound sample description and sound track atom. Specifically:
 
 - The compression ID is set to `-2` and redefined sample tables are used (see Redefined Sample Tables).
-- The sound sample description includes an siDecompressionParam atom (see [`siDecompressionParam atom ('wave')`](sidecompressionparam_atom.md)). The `siDecompressionParam` atom includes: - An MPEG-4 elementary stream descriptor extension atom (see [`MPEG-4 elementary stream descriptor atom  ('esds')`](mpeg-4_elementary_sound_stream_descriptor_atom.md)).
-- The inclusion of a format atom is strongly recommended. See [`Format atom ('frma')`](format_atom.md).
-- The last atom in the `siDecompressionParam` atom must be a terminator atom. See [`Terminator atom ('0x00000000')`](terminator_atom.md).
+- The sound sample description includes an siDecompressionParam atom (see [`siDecompressionParam atom`](sidecompressionparam_atom.md)). The `siDecompressionParam` atom includes: - An MPEG-4 elementary stream descriptor extension atom (see [`MPEG-4 elementary stream descriptor atom  ('esds')`](mpeg-4_elementary_sound_stream_descriptor_atom.md)).
+- The inclusion of a format atom is strongly recommended. See [`Format atom`](format_atom.md).
+- The last atom in the `siDecompressionParam` atom must be a terminator atom. See [`Terminator atom`](terminator_atom.md).
 - Other atoms may be present as well; unknown atoms should be ignored.
 
 The audio data is stored as an elementary MPEG-4 audio stream, as defined in ISO/IEC specification 14496-1.

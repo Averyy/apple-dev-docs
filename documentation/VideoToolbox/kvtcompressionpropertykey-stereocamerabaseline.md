@@ -20,7 +20,7 @@ let kVTCompressionPropertyKey_StereoCameraBaseline: CFString
 
 #### Discussion
 
-This property sets a value for the [`kCMFormatDescriptionExtension_StereoCameraBaseline`](https://developer.apple.com/documentation/CoreMedia/kCMFormatDescriptionExtension_StereoCameraBaseline) format description on the output samples. The value is an unsigned 32-bit integer in micrometers, or thousandths of a millimeter (for example 63123 micrometers is 63.123 millimeters).
+This property sets a value for the [`kCMFormatDescriptionExtension_StereoCameraBaseline`](https://developer.apple.com/documentation/coremedia/kcmformatdescriptionextension_stereocamerabaseline) format description on the output samples. The value is an unsigned 32-bit integer in micrometers, or thousandths of a millimeter (for example 63123 micrometers is 63.123 millimeters).
 
 This property is optional. Only specify a value if you know the specific distance.
 

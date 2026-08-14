@@ -20,7 +20,7 @@ int64 price
 
 #### Discussion
 
-This value represents the price, in milliunits of the [`currency`](https://developer.apple.com/documentation/AppStoreServerNotifications/currency), of the In-App Purchase that the system records in the transaction. One unit of the currency equals 1000 milliunits.
+This value represents the price, in milliunits of the [`currency`](https://developer.apple.com/documentation/appstoreservernotifications/currency), of the In-App Purchase that the system records in the transaction. One unit of the currency equals 1000 milliunits.
 
 The `price` value reflects all of the following:
 

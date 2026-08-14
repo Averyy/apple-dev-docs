@@ -22,7 +22,7 @@ let kCMMetadataIdentifier_QuickTimeMetadataVideoOrientation: CFString
 
 #### Discussion
 
-For possible values and their meanings, see [`kCGImagePropertyOrientation`](https://developer.apple.com/documentation/ImageIO/kCGImagePropertyOrientation).
+For possible values and their meanings, see [`kCGImagePropertyOrientation`](https://developer.apple.com/documentation/imageio/kcgimagepropertyorientation).
 
 ## See Also
 

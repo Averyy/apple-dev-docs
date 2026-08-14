@@ -26,7 +26,7 @@ static func presentOfferCodeRedeemSheet(in scene: UIWindowScene) async throws
 
 #### Discussion
 
-The [`presentOfferCodeRedeemSheet(in:)`](appstore/presentoffercoderedeemsheet(in:).md) method displays a system sheet in the window scene, where customers can enter and redeem offer codes. If you generate offer codes in App Store Connect, call this function to enable customers to redeem the offer. To display the sheet using SwiftUI, see [`offerCodeRedemption(isPresented:onCompletion:)`](https://developer.apple.com/documentation/SwiftUI/View/offerCodeRedemption(isPresented:onCompletion:)).
+The [`presentOfferCodeRedeemSheet(in:)`](appstore/presentoffercoderedeemsheet(in:).md) method displays a system sheet in the window scene, where customers can enter and redeem offer codes. If you generate offer codes in App Store Connect, call this function to enable customers to redeem the offer. To display the sheet using SwiftUI, see [`offerCodeRedemption(isPresented:onCompletion:)`](https://developer.apple.com/documentation/swiftui/view/offercoderedemption(ispresented:oncompletion:)).
 
 > ❗ **Important**:  Set up offer codes in App Store Connect before calling this API. Customers can only redeem these offers in your app through the redemption sheet; don’t use a custom UI.
 
@@ -38,12 +38,12 @@ In Mac apps built with Mac Catalyst, this method throws a [`StoreKitError.unknow
 
 ## Parameters
 
-- `scene`: The [`UIWindowScene`](https://developer.apple.com/documentation/UIKit/UIWindowScene) that StoreKit uses to display the offer code redemption sheet.
+- `scene`: The [`UIWindowScene`](https://developer.apple.com/documentation/uikit/uiwindowscene) that StoreKit uses to display the offer code redemption sheet.
 
 ## See Also
 
 - [func offerCodeRedemption(isPresented: Binding<Bool>, onCompletion: (Result<Void, any Error>) -> Void) -> some View
-](../SwiftUI/View/offerCodeRedemption(isPresented:onCompletion:).md)
+](../swiftui/view/offercoderedemption(ispresented:oncompletion:).md)
 - [static func presentOfferCodeRedeemSheet(from: NSViewController) async throws](appstore/presentoffercoderedeemsheet(from:).md)
   Displays a sheet in the view that enables customers to redeem an offer code that you configure in App Store Connect.
 

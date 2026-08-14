@@ -32,9 +32,9 @@ If no result is found, this function creates a dynamic type beginning with the `
 
 ## Parameters
 
-- `inTagClass`: The class of the   parameter. For more information, see  .
+- `inTagClass`: The class of the `inTag` parameter. For more information, see `Type Tag Classes`.
 - `inTag`: The tag to translate into a uniform type identifier.
-- `inConformingToUTI`: If not  , all returned uniform type identifiers must conform to this parameter.
+- `inConformingToUTI`: If not `nil`, all returned uniform type identifiers must conform to this parameter.
 
 ## See Also
 

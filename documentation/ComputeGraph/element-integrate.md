@@ -15,7 +15,7 @@ void element_integrate()
 
 #### Discussion
 
-> **Note**: ![Graph](https://docs-assets.developer.apple.com/published/478792eb0e45dbd8ce0dd16275ce3d77/element_integrate.svg)
+> **Note**: ![Graph](/images/com.apple.computegraph/element_integrate.svg)
 
 > **Note**: Reads and writes to element state `float3 position`
 

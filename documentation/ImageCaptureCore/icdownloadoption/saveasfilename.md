@@ -20,7 +20,7 @@ static let saveAsFilename: ICDownloadOption
 
 #### Discussion
 
-Specify the filename as an [`NSString`](https://developer.apple.com/documentation/Foundation/NSString) object.
+Specify the filename as an [`NSString`](https://developer.apple.com/documentation/foundation/nsstring) object.
 
 ## See Also
 

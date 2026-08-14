@@ -30,7 +30,7 @@ alpha*x + beta
 
 The following illustrates the output that the activation function generates from inputs in the range `-10...10`, an `alpha` of `2.0`, and a `beta` of `10.0`:
 
-![Graph that shows input values for the activation function on horizontal axis and its output values on vertical axis. ](https://docs-assets.developer.apple.com/published/53bd53767e103b3fc9318f964d518037/media-3560495%402x.png)
+![Graph that shows input values for the activation function on horizontal axis and its output values on vertical axis. ](/images/com.apple.accelerate/media-3560495@2x.png)
 
 ## See Also
 

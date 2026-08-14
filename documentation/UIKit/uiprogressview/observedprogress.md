@@ -20,9 +20,9 @@ var observedProgress: Progress? { get set }
 
 #### Discussion
 
-When this property is set, the progress view updates its progress value automatically using information it receives from the [`Progress`](https://developer.apple.com/documentation/Foundation/Progress) object. (Progress updates are animated.) Set the property to `nil` when you want to update the progress manually. The default value of this property is `nil`.
+When this property is set, the progress view updates its progress value automatically using information it receives from the [`Progress`](https://developer.apple.com/documentation/foundation/progress) object. (Progress updates are animated.) Set the property to `nil` when you want to update the progress manually. The default value of this property is `nil`.
 
-For more information about configuring a progress object to manage progress information, see [`Progress`](https://developer.apple.com/documentation/Foundation/Progress).
+For more information about configuring a progress object to manage progress information, see [`Progress`](https://developer.apple.com/documentation/foundation/progress).
 
 ## See Also
 

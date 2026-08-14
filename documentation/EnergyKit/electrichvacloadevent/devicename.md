@@ -26,7 +26,7 @@ Set a String value that meets these criteria:
 
 The EnergyKit framework alters the value to abide by these rules, if necessary.
 
-The Home app incorporates the device by this name when you adopt the [`EnergyKit LoadEvents Entitlement`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.energykit.loadevents-experience).
+The Home app incorporates the device by this name when you adopt the [`EnergyKit LoadEvents Entitlement`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.energykit.loadevents-experience).
 
 ## See Also
 

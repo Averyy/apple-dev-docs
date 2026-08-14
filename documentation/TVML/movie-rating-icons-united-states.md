@@ -12,19 +12,19 @@ United States movie rating icons indicate who is allowed to watch a movie in the
 
 The resource name for the general admission icon for the United States is `mpaa-g`. Place a general admission rating icon next to content to indicate that the content is suitable to be watched by people of any age. Place the general admissions rating icon using `<img src="resource://mpaa-g" />`.
 
-![The letter G, inside a black rectangle with rounded corners.](https://docs-assets.developer.apple.com/published/fa54f9213eb6084c458c9b83f1f5aa3a/movie-rating-icons-united-states-1%402x.png)
+![The letter G, inside a black rectangle with rounded corners.](/images/com.apple.TVML/movie-rating-icons-united-states-1@2x.png)
 
 ##### Parental Guidance
 
 The resource name for the parental guidance icon for the United States is `mpaa-pg`. Place a parental guidance rating icon next to content to indicate that parents should review the content before allowing their children to see it. Place a parental guidance rating icon using `<img src="resource://mpaa-pg" />`.
 
-![The phrase P G, inside a black rectangle with rounded corners.](https://docs-assets.developer.apple.com/published/61db6f8a91e6769a473a1485cb024f23/movie-rating-icons-united-states-2%402x.png)
+![The phrase P G, inside a black rectangle with rounded corners.](/images/com.apple.TVML/movie-rating-icons-united-states-2@2x.png)
 
 ##### Parents Strongly Cautioned
 
 The resource name for the parents strongly cautioned icon for the United States is `mpaa-pg13`. Place a parents strongly cautioned rating icon next to content to indicate that parents should review the content before allowing children under the age of 13 to see it. Place a parents strongly cautioned rating icon using `<img src="resource://mpaa-pg13" />`.
 
-![The phrase P G dash thirteen, inside a black rectangle with rounded corners.](https://docs-assets.developer.apple.com/published/96199b6dfb4d979334420425832279f1/movie-rating-icons-united-states-3%402x.png)
+![The phrase P G dash thirteen, inside a black rectangle with rounded corners.](/images/com.apple.TVML/movie-rating-icons-united-states-3@2x.png)
 
 ##### Restricted
 
@@ -32,25 +32,25 @@ The resource name for the restricted icon for the United States is `mpaa-r`. Pla
 
 > **Note**: In Tennessee, children under the age of 18 must be accompanied by an adult to watch a restricted movie.
 
-![The letter R, inside a black rectangle with rounded corners.](https://docs-assets.developer.apple.com/published/8dc23d7e4b5301a3b82724b923eb0081/movie-rating-icons-united-states-4%402x.png)
+![The letter R, inside a black rectangle with rounded corners.](/images/com.apple.TVML/movie-rating-icons-united-states-4@2x.png)
 
 ##### Adults Only
 
 The resource name for the adults only icon for the United States is `mpaa-nc17`. Place an adults only rating icon next to content to indicate that the content can only be watched by someone who is 18 or older. Place an adults only rating icon using <img src=“resource://mpaa-pg13” /> `<img src="resource://mpaa-nc17" />`.
 
-![The phrase N C dash seventeen, inside a black rectangle with rounded corners.](https://docs-assets.developer.apple.com/published/72340767eecf63db1a6fe1a7d48be7ea/movie-rating-icons-united-states-5%402x.png)
+![The phrase N C dash seventeen, inside a black rectangle with rounded corners.](/images/com.apple.TVML/movie-rating-icons-united-states-5@2x.png)
 
 ##### Unrated
 
 The resource name for the unrated icon for the United States is `unrated`. Place an unrated rating icon next to content to indicate that the content has not been rated by the MPAA. This icon is often used with an extended or director’s cut version of a movie. Place an unrated rating icon using <img src=“resource://mpaa-pg13” /> `<img src="resource://unrated" />`.
 
-![The word unrated, inside a black rectangle with rounded corners.](https://docs-assets.developer.apple.com/published/4f44adceaa31bbdcf5454273f36bf453/movie-rating-icons-united-states-6%402x.png)
+![The word unrated, inside a black rectangle with rounded corners.](/images/com.apple.TVML/movie-rating-icons-united-states-6@2x.png)
 
 ##### Not Rated
 
 The resource name for the not rated icon for the United States is `nr`. Place a not rated rating icon next to content to indicate that the content has not been rated by the MPAA. This icon is often used to indicate that the movie was never submitted to the MPAA. Place a not rated rating icon using <img src=“resource://mpaa-pg13” /> `<img src="resource://nr" />`.
 
-![The phrase not rated, inside a black rectangle with rounded corners.](https://docs-assets.developer.apple.com/published/21a7bf18b5fa9ade6dc7c3c86551bb35/movie-rating-icons-united-states-7%402x.png)
+![The phrase not rated, inside a black rectangle with rounded corners.](/images/com.apple.TVML/movie-rating-icons-united-states-7@2x.png)
 
 ## See Also
 

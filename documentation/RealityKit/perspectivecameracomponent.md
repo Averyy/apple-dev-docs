@@ -64,7 +64,7 @@ In AR scenarios, the system provides the camera automatically; however, in non-A
 
 ### Conforms To
 - [Component](component.md)
-- [Equatable](../Swift/Equatable.md)
+- [Equatable](../swift/equatable.md)
 
 ## See Also
 

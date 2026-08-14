@@ -19,11 +19,11 @@ var suspended: Bool { get set }
 
 See [`DistributedNotificationCenter.SuspensionBehavior`](distributednotificationcenter/suspensionbehavior.md) for details on how the receiver delivers notifications to their observers when normal notification delivery is suspended.
 
-The [`NSApplication`](https://developer.apple.com/documentation/AppKit/NSApplication) class automatically suspends distributed notification delivery when the application is not active. Applications based on the Application Kit framework should let AppKit manage the suspension of notification delivery. Foundation-only programs may have occasional need to use this method.
+The [`NSApplication`](https://developer.apple.com/documentation/appkit/nsapplication) class automatically suspends distributed notification delivery when the application is not active. Applications based on the Application Kit framework should let AppKit manage the suspension of notification delivery. Foundation-only programs may have occasional need to use this method.
 
 ## Parameters
 
-- `suspended`: [`true`](https://developer.apple.com/documentation/Swift/true) suspends notification delivery, [`false`](https://developer.apple.com/documentation/Swift/false) resumes it.
+- `suspended`: [`true`](https://developer.apple.com/documentation/swift/true) suspends notification delivery, [`false`](https://developer.apple.com/documentation/swift/false) resumes it.
 
 ## See Also
 

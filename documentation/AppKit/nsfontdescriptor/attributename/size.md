@@ -16,7 +16,7 @@ static let size: NSFontDescriptor.AttributeName
 
 #### Discussion
 
-The value of this attribute is an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) object containing a floating-point value.
+The value of this attribute is an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) object containing a floating-point value.
 
 ## See Also
 

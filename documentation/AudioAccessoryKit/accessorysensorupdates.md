@@ -7,7 +7,6 @@ Subscribes to a stream of raw sensor data packets from a connected accessory.
 
 **Availability**:
 - iOS 27.0+ (Beta)
-- iPadOS 27.0+ (Beta)
 
 ## Declaration
 
@@ -51,9 +50,9 @@ sensorTask = Task { [weak self] in
 ## Relationships
 
 ### Conforms To
-- [AsyncSequence](../Swift/AsyncSequence.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [AsyncSequence](../swift/asyncsequence.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 
 ---

@@ -21,7 +21,7 @@ func index(before i: JointTransforms.Index) -> JointTransforms.Index
 
 #### Discussion
 
-For more on calculating indices, see [`index(before:)`](https://developer.apple.com/documentation/Swift/Array/index(before:)).
+For more on calculating indices, see [`index(before:)`](https://developer.apple.com/documentation/swift/array/index(before:)).
 
 ## See Also
 

@@ -20,11 +20,11 @@ func prepare(forError error: any Error)
 
 #### Discussion
 
-While your file provider is enumerating its content, the system calls this method whenever your file provider returns an [`NSFileProviderErrorDomain`](https://developer.apple.com/documentation/FileProvider/NSFileProviderErrorDomain) error with a [`NSFileProviderError.Code.notAuthenticated`](https://developer.apple.com/documentation/FileProvider/NSFileProviderError/Code/notAuthenticated) code. Use this method to present an interface to authenticate the user.
+While your file provider is enumerating its content, the system calls this method whenever your file provider returns an [`NSFileProviderErrorDomain`](https://developer.apple.com/documentation/fileprovider/nsfileprovidererrordomain) error with a [`NSFileProviderError.Code.notAuthenticated`](https://developer.apple.com/documentation/fileprovider/nsfileprovidererror/code/notauthenticated) code. Use this method to present an interface to authenticate the user.
 
 ## Parameters
 
-- `error`: An object representing the authentication error. Your File Provider extension can pass additional information in the error’s [`userInfo`](https://developer.apple.com/documentation/Foundation/NSError/userInfo) property.
+- `error`: An object representing the authentication error. Your File Provider extension can pass additional information in the error’s [`userInfo`](https://developer.apple.com/documentation/foundation/nserror/userinfo) property.
 
 ## See Also
 

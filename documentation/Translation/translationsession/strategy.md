@@ -32,7 +32,7 @@ This determines which model your app uses for translating content. The framework
 ## Relationships
 
 ### Conforms To
-- [Equatable](../Swift/Equatable.md)
+- [Equatable](../swift/equatable.md)
 
 
 ---

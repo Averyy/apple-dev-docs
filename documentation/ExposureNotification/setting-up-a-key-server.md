@@ -172,9 +172,9 @@ To calculate the `signature` data inside a `TEKSignature` message, start by gene
   Inform people when they may have been exposed to COVID-19.
 - [class ENManager](enmanager.md)
   A class that manages exposure notifications.
-- [ENDeveloperRegion](../BundleResources/Information-Property-List/ENDeveloperRegion.md)
+- [ENDeveloperRegion](../bundleresources/information-property-list/endeveloperregion.md)
   A string that specifies the region that the app supports.
-- [ENAPIVersion](../BundleResources/Information-Property-List/ENAPIVersion.md)
+- [ENAPIVersion](../bundleresources/information-property-list/enapiversion.md)
   A number that specifies the version of the API to use.
 - [Changing Configuration Values Using the Server‑to‑Server API](changing-configuration-values-using-the-server-to-server-api.md)
   Update Exposure Notifications configuration values from a Public Health Authority’s server.

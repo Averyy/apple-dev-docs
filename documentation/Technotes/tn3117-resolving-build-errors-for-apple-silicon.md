@@ -15,7 +15,7 @@ Xcode’s default architecture build settings provide the recommended combinatio
 | Excluded Architectures | `EXCLUDED_ARCHS` | No value |
 | Valid Architectures | `VALID_ARCHS` | All supported architectures for the platform (Deprecated setting) |
 
-For an overview of each of these build settings, see the [`Build settings reference`](https://developer.apple.com/documentation/Xcode/build-settings-reference).
+For an overview of each of these build settings, see the [`Build settings reference`](https://developer.apple.com/documentation/xcode/build-settings-reference).
 
 By keeping your architecture build settings set to these default values, you’ll automatically build with the latest recommended CPU architectures, which change as Apple’s platforms evolve. For example, a Mac app using the default architecture build settings automatically gains support for both Apple silicon and Intel-based Macs once built with Xcode 12.2 or later.
 
@@ -48,15 +48,15 @@ Missing 64-bit support. iOS apps uploaded to App Store Connect must
 include 64-bit support.
 ```
 
-If you receive any of those error messages, the combination of values set in `ARCHS`, `VALID_ARCHS`, and `EXCLUDED_ARCHS` prevented the build from having the necessary architectures. The first step in resolving the build error is to reset each of these build settings back to their default value for every target in your app. See [`Configuring the build settings of a target`](https://developer.apple.com/documentation/Xcode/configuring-the-build-settings-of-a-target) for how to modify build settings, and [`Unset Valid Architectures`](tn3117-resolving-build-errors-for-apple-silicon#Unset-Valid-Architectures.md) for special considerations when resetting `VALID_ARCHS`.
+If you receive any of those error messages, the combination of values set in `ARCHS`, `VALID_ARCHS`, and `EXCLUDED_ARCHS` prevented the build from having the necessary architectures. The first step in resolving the build error is to reset each of these build settings back to their default value for every target in your app. See [`Configuring the build settings of a target`](https://developer.apple.com/documentation/xcode/configuring-the-build-settings-of-a-target) for how to modify build settings, and [`Unset Valid Architectures`](tn3117-resolving-build-errors-for-apple-silicon#Unset-Valid-Architectures.md) for special considerations when resetting `VALID_ARCHS`.
 
-Once these build settings are reset back to their default values, build your app to see if the build succeeds. If your build still completes with errors, use the information in the remainder of this article to resolve those errors. If you are building a Mac app, also consult [`Building a universal macOS binary`](https://developer.apple.com/documentation/Apple-Silicon/building-a-universal-macos-binary) for additional information on resolving build issues unique to Mac apps.
+Once these build settings are reset back to their default values, build your app to see if the build succeeds. If your build still completes with errors, use the information in the remainder of this article to resolve those errors. If you are building a Mac app, also consult [`Building a universal macOS binary`](https://developer.apple.com/documentation/apple-silicon/building-a-universal-macos-binary) for additional information on resolving build issues unique to Mac apps.
 
 #### Unset Valid Architectures
 
 Xcode 12 deprecated the `VALID_ARCHS` build setting, and moved it from the Architectures build settings group to the User-Defined build settings group. All targets overriding this setting should completely remove the override from the Xcode project by looking at the User-Defined group of build settings.
 
-![Xcode’s build settings with ](https://docs-assets.developer.apple.com/published/c9d391e3a5b8b52b1bf4c2b1e611fc75/tn3117-valid-archs%402x.png)
+![Xcode’s build settings with ](/images/com.apple.technotes/tn3117-valid-archs@2x.png)
 
 To remove this setting from a target, use the Delete key to remove it. Once `VALID_ARCHS` is no longer set for a target, it will disappear from the User-Defined build setting group.
 
@@ -83,7 +83,7 @@ note: 'Example.xcframework' is missing architecture(s) required by this target
 'ExampleApp')
 ```
 
-If the library named in the error message is from a vendor, see [`Update pre-compiled libraries from vendors`](tn3117-resolving-build-errors-for-apple-silicon#Update-pre-compiled-libraries-from-vendors.md). If you have source code for the library, rebuild the library as an XCFramework with support for the simulator on Apple silicon. To learn how to build an XCFramework, see [`Creating a multiplatform binary framework bundle`](https://developer.apple.com/documentation/Xcode/creating-a-multi-platform-binary-framework-bundle).
+If the library named in the error message is from a vendor, see [`Update pre-compiled libraries from vendors`](tn3117-resolving-build-errors-for-apple-silicon#Update-pre-compiled-libraries-from-vendors.md). If you have source code for the library, rebuild the library as an XCFramework with support for the simulator on Apple silicon. To learn how to build an XCFramework, see [`Creating a multiplatform binary framework bundle`](https://developer.apple.com/documentation/xcode/creating-a-multi-platform-binary-framework-bundle).
 
 > ❗ **Important**: To resolve these errors, either rebuild the library or follow the advice in [`Update pre-compiled libraries from vendors`](tn3117-resolving-build-errors-for-apple-silicon#Update-pre-compiled-libraries-from-vendors.md). Don’t launch Xcode using Rosetta to resolve these errors.
 
@@ -95,11 +95,11 @@ If you’re developing a watchOS app, all XCFrameworks for your watchOS app must
 
 If the library producing the build error is a pre-compiled library from a vendor and you don’t have the source code, contact the vendor for an updated XCFramework supporting Apple silicon. If an update isn’t available from the vendor, temporarily use the `EXCLUDED_ARCHS` build setting to exclude `arm64` for the simulator SDK as shown in the figure below. Do not exclude `arm64` for any other SDK.
 
-![Xcode’s build settings with ](https://docs-assets.developer.apple.com/published/569d1af9b27571ba97ee33855f112f35/tn3117-excluded-archs-simulator%402x.png)
+![Xcode’s build settings with ](/images/com.apple.technotes/tn3117-excluded-archs-simulator@2x.png)
 
 After temporarily changing `EXCLUDED_ARCHS`, select the appropriate simulator destinations through the Product > Destination > Destination Architectures menu, and choose Show Rosetta Destinations. Once the library is updated with Apple silicon support and `EXCLUDED_ARCHS` is unset, choose Show Apple Silicon Destinations from the same menu. These menu items are available starting with Xcode 14.3.
 
-![Xcode’s menu for displaying simulator destinations](https://docs-assets.developer.apple.com/published/8d098b22ef97e0e2d162cefe9eec7986/tn3117-destination_archs%402x.png)
+![Xcode’s menu for displaying simulator destinations](/images/com.apple.technotes/tn3117-destination_archs@2x.png)
 
 > ❗ **Important**: Always contact the library vendor to request an updated library supporting the simulator on Apple silicon. Modifications to the `EXCLUDED_ARCHS` build setting for a simulator SDK are not a replacement for getting an updated library, and should only be used while waiting for the vendor to make an updated library available. Remove the changes to `EXCLUDED_ARCHS` after receiving the updated library.
 

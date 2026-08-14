@@ -17,8 +17,8 @@ func setFrame(_ frameRect: NSRect, display displayFlag: Bool, animate animateFla
 ## Parameters
 
 - `frameRect`: The frame rectangle for the window, including the title bar.
-- `displayFlag`: Specifies whether the window redraws the views that need to be displayed. When [`true`](https://developer.apple.com/documentation/Swift/true) the window sends a [`displayIfNeeded()`](nswindow/displayifneeded().md) message down its view hierarchy, thus redrawing all views.
-- `animateFlag`: Specifies whether the window performs a smooth resize. [`true`](https://developer.apple.com/documentation/Swift/true) to perform the animation, whose duration is specified by [`animationResizeTime(_:)`](nswindow/animationresizetime(_:).md).
+- `displayFlag`: Specifies whether the window redraws the views that need to be displayed. When [`true`](https://developer.apple.com/documentation/swift/true) the window sends a [`displayIfNeeded()`](nswindow/displayifneeded().md) message down its view hierarchy, thus redrawing all views.
+- `animateFlag`: Specifies whether the window performs a smooth resize. [`true`](https://developer.apple.com/documentation/swift/true) to perform the animation, whose duration is specified by [`animationResizeTime(_:)`](nswindow/animationresizetime(_:).md).
 
 ## See Also
 

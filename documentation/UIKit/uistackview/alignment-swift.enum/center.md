@@ -22,7 +22,7 @@ case center
 
 The following image shows an example of a horizontal stack view that uses the [`UIStackView.Alignment.center`](uistackview/alignment-swift.enum/center.md) alignment.
 
-![A horizontal stack view with four arranged subviews. The stack view aligns the subviews by their centers along the stack view’s axis.](https://docs-assets.developer.apple.com/published/3da79803479722da5a3fa9685f9da431/media-2557468%402x.png)
+![A horizontal stack view with four arranged subviews. The stack view aligns the subviews by their centers along the stack view’s axis.](/images/com.apple.uikit/media-2557468@2x.png)
 
 ## See Also
 

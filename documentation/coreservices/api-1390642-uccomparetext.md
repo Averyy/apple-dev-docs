@@ -30,13 +30,13 @@ You can also call the `UCCompareText` function multiple times to compare differe
 
 ## Parameters
 
-- `collatorRef`: A valid reference to a collator object;   is not allowed. You can use the function   to obtain a collator reference. 
-- `text1Ptr`: A pointer to the first Unicode string (a   array) to compare. 
+- `collatorRef`: A valid reference to a collator object; `NULL` is not allowed. You can use the function [`UCCreateCollator(_:_:_:_:)`](1390403-uccreatecollator.md) to obtain a collator reference. 
+- `text1Ptr`: A pointer to the first Unicode string (a `UniChar` array) to compare. 
 - `text1Length`: The total count of Unicode characters in the first string being compared. 
 - `text2Ptr`: A pointer to the second Unicode string to compare.
 - `text2Length`: The total count of Unicode characters in the second string being compared.
-- `equivalent`: A pointer to a   value or  . On return,   produces a value of   if the strings are equivalent for the options you have specified in the collator object. If you wish simply to sort a list of strings in order, using your specified options, you can pass   for the   parameter and only use the   parameter’s result. In this case, all available comparison criteria are used to put the strings in a deterministic order, even if they are considered “equivalent” for the options you have specified. Note that you can set either the   or the   parameters to  , but not both. 
-- `order`: A pointer to a signed, 32-bit integer value, or pass  . If you wish simply to test strings for equivalence, using your specified options (which can be much faster than determining ordering), you can pass   for the   parameter and only use the   parameter’s result. (Note that either the   or the   parameters may be  , but not both. 
+- `equivalent`: A pointer to a `Boolean` value or `NULL`. On return, `UCCompareText` produces a value of `true` if the strings are equivalent for the options you have specified in the collator object. If you wish simply to sort a list of strings in order, using your specified options, you can pass `NULL` for the `equivalent` parameter and only use the `order` parameter’s result. In this case, all available comparison criteria are used to put the strings in a deterministic order, even if they are considered “equivalent” for the options you have specified. Note that you can set either the `equivalent` or the `order` parameters to `NULL`, but not both. 
+- `order`: A pointer to a signed, 32-bit integer value, or pass `NULL`. If you wish simply to test strings for equivalence, using your specified options (which can be much faster than determining ordering), you can pass `NULL` for the `order` parameter and only use the `equivalent` parameter’s result. (Note that either the `equivalent` or the `order` parameters may be `NULL`, but not both. 
 
 ## See Also
 

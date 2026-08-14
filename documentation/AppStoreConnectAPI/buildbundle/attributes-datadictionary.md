@@ -28,7 +28,7 @@ object BuildBundle.Attributes
 
 - `bundleId` (string): The bundle ID of the build bundle.
 - `bundleType` (BuildBundleType): The type of the build bundle.
-- `deviceProtocols` ([string]): The protocols that the app uses to communicate with external accessory hardware. For more information, see [`UISupportedExternalAccessoryProtocols`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/UISupportedExternalAccessoryProtocols).
+- `deviceProtocols` ([string]): The protocols that the app uses to communicate with external accessory hardware. For more information, see [`UISupportedExternalAccessoryProtocols`](https://developer.apple.com/documentation/bundleresources/information-property-list/uisupportedexternalaccessoryprotocols).
 - `dSYMUrl` (uri): The URL to the symbolication file for the app or App Clip.
 - `entitlements` (BuildBundle.Attributes.Entitlements): Entitlement information for your app or App Clip.
 - `fileName` (string): The name of the build bundle.

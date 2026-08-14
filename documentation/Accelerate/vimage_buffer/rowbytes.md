@@ -52,7 +52,7 @@ try subBufferTwo.copy(destinationBuffer: &subBufferOne, pixelSize: 3)
 
 On return, `bufferOne` contains the top-left quadrant of `bufferTwo` copied to its bottom-right quadrant.
 
-![A composite image that contains a background photograph of a leafy plant and a foreground photograph of a bunch of flowers. The foreground image fills the bottom-right quadrant of the image.](https://docs-assets.developer.apple.com/published/76b45275d4f48f17e26c4ad1be3b5b0a/media-4052506%402x.png)
+![A composite image that contains a background photograph of a leafy plant and a foreground photograph of a bunch of flowers. The foreground image fills the bottom-right quadrant of the image.](/images/com.apple.accelerate/media-4052506@2x.png)
 
 When you allocate floating-point data for images, keep the data 4-byte-aligned by allocating bytes as integer multiples of four. For best performance, allocate bytes as integer multiples of 16.
 

@@ -61,7 +61,7 @@ Implement this protocol on the class that encapsulates the searchable content fo
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 ### Conforming Types
 - [UITextView](uitextview.md)
 

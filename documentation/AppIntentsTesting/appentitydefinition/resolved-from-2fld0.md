@@ -26,7 +26,7 @@ The resolved entity.
 
 #### Discussion
 
-Use this to verify the import direction — that an [`IntentFile`](https://developer.apple.com/documentation/AppIntents/IntentFile) produced by `AnyAppEntity/exported(as:)-swift.method` (or constructed from test data) can be resolved back into an entity through the same pipeline used at runtime.
+Use this to verify the import direction — that an [`IntentFile`](https://developer.apple.com/documentation/appintents/intentfile) produced by `AnyAppEntity/exported(as:)-swift.method` (or constructed from test data) can be resolved back into an entity through the same pipeline used at runtime.
 
 > **Note**: If the entity type does not support the file’s content type.
 

@@ -18,13 +18,13 @@ SharePlay allows multiple people to collaborate and share content such as photos
 
 This sample code project uses SharePlay to create a shared photo gallery containing images. Participants in a FaceTime call, or using nearby sharing on visionOS, can upload images to share with each other. All participants in the session see the changes in real time.
 
-While running the app, Control-clicking or long-pressing on an image gives you the option to remove an image or open it with [`Quick Look`](https://developer.apple.com/documentation/QuickLook) as a preview. When you open a QuickLook preview, the window opens only for you.
+While running the app, Control-clicking or long-pressing on an image gives you the option to remove an image or open it with [`Quick Look`](https://developer.apple.com/documentation/quicklook) as a preview. When you open a QuickLook preview, the window opens only for you.
 
 SharePlay allows you to share different types of data among participants. Because this sample sends larger amounts of data, like images and files, it uses [`GroupSessionJournal`](groupsessionjournal.md) to share data. For smaller amounts of data or more time-sensitive messages, like adding a comment to someone’s shared image, use [`GroupSessionMessenger`](groupsessionmessenger.md). For more information, see [`Synchronizing data during a SharePlay activity`](synchronizing-data-during-a-shareplay-activity.md).
 
-> **Note**: SharePlay requires the `Group Activities` capability. For instructions on adding a capability to Xcode, see [`Adding capabilities to your app`](https://developer.apple.com/documentation/Xcode/adding-capabilities-to-your-app).
+> **Note**: SharePlay requires the `Group Activities` capability. For instructions on adding a capability to Xcode, see [`Adding capabilities to your app`](https://developer.apple.com/documentation/xcode/adding-capabilities-to-your-app).
 
-For a SharePlay sample code project that uses `GroupSessionMessenger`, see [`Implementing SharePlay for immersive spaces in visionOS`](https://developer.apple.com/documentation/visionOS/implementing-shareplay-for-immersive-spaces-in-visionos).
+For a SharePlay sample code project that uses `GroupSessionMessenger`, see [`Implementing SharePlay for immersive spaces in visionOS`](https://developer.apple.com/documentation/visionos/implementing-shareplay-for-immersive-spaces-in-visionos).
 
 #### Define a Custom Group Activity
 
@@ -49,7 +49,7 @@ For more information, see [`Defining your app’s SharePlay activities`](definin
 
 The app’s toolbar includes a button to start a SharePlay session, but the implementation differs by platform.
 
-For iOS and macOS apps, the button is a [`ShareLink`](https://developer.apple.com/documentation/SwiftUI/ShareLink), which shows the share sheet when tapped or clicked. If a FaceTime call is active, it allows you to start a new SharePlay session; otherwise you can start a new FaceTime call:
+For iOS and macOS apps, the button is a [`ShareLink`](https://developer.apple.com/documentation/swiftui/sharelink), which shows the share sheet when tapped or clicked. If a FaceTime call is active, it allows you to start a new SharePlay session; otherwise you can start a new FaceTime call:
 
 ```swift
 ShareLink(item: PhotoShareActivity(), preview: SharePreview("Share photos")) {
@@ -77,7 +77,7 @@ Button {
 }
 ```
 
-visionOS apps also allow people to start an activity from the Share Window menu in the window bar of an app while in a FaceTime call. To donate the activity to the menu, the main view includes a [`ShareLink`](https://developer.apple.com/documentation/SwiftUI/ShareLink), which is hidden from the UI with the [`hidden()`](https://developer.apple.com/documentation/SwiftUI/View/hidden()) modifier.
+visionOS apps also allow people to start an activity from the Share Window menu in the window bar of an app while in a FaceTime call. To donate the activity to the menu, the main view includes a [`ShareLink`](https://developer.apple.com/documentation/swiftui/sharelink), which is hidden from the UI with the [`hidden()`](https://developer.apple.com/documentation/swiftui/view/hidden()) modifier.
 
 ```swift
 ShareLink(item: PhotoShareActivity(), preview: SharePreview("Share Images"))
@@ -140,15 +140,15 @@ init(_ groupSession: GroupSession<PhotoShareActivity>, appModel: AppModel) async
 }
 ```
 
-Because people probably won’t join the call at the same time, the app needs to handle bringing people up to date. `GroupSessionJournal` handles this for you to mitigate re-uploading large attachments. For more information on handling this if you’re syncing other data, see [`Joining and managing a shared activity`](joining-and-managing-a-shared-activity.md). For an example, see [`Implementing SharePlay for immersive spaces in visionOS`](https://developer.apple.com/documentation/visionOS/implementing-shareplay-for-immersive-spaces-in-visionos) or [`Building a guessing game for visionOS`](building-a-guessing-game-for-visionos.md).
+Because people probably won’t join the call at the same time, the app needs to handle bringing people up to date. `GroupSessionJournal` handles this for you to mitigate re-uploading large attachments. For more information on handling this if you’re syncing other data, see [`Joining and managing a shared activity`](joining-and-managing-a-shared-activity.md). For an example, see [`Implementing SharePlay for immersive spaces in visionOS`](https://developer.apple.com/documentation/visionos/implementing-shareplay-for-immersive-spaces-in-visionos) or [`Building a guessing game for visionOS`](building-a-guessing-game-for-visionos.md).
 
 #### Upload Images
 
-The app uses a [`PhotosPicker`](https://developer.apple.com/documentation/PhotosUI/PhotosPicker) to allow people to upload images from their photo library. For more information on using `PhotosPicker` in SwiftUI, see [`Bringing Photos picker to your SwiftUI app`](https://developer.apple.com/documentation/PhotoKit/bringing-photos-picker-to-your-swiftui-app).
+The app uses a [`PhotosPicker`](https://developer.apple.com/documentation/photosui/photospicker) to allow people to upload images from their photo library. For more information on using `PhotosPicker` in SwiftUI, see [`Bringing Photos picker to your SwiftUI app`](https://developer.apple.com/documentation/photokit/bringing-photos-picker-to-your-swiftui-app).
 
-The sample app represents images chosen from the photo picker as instances of `DisplayImage`, a [`Transferable`](https://developer.apple.com/documentation/CoreTransferable/Transferable) structure that stores image data and metadata like the date created and the owner.
+The sample app represents images chosen from the photo picker as instances of `DisplayImage`, a [`Transferable`](https://developer.apple.com/documentation/coretransferable/transferable) structure that stores image data and metadata like the date created and the owner.
 
-When someone chooses an image from the photo picker, the app loads a `Data` object from the [`PhotosPickerItem`](https://developer.apple.com/documentation/PhotosUI/PhotosPickerItem) that represents the image and updates the local images array with that data:
+When someone chooses an image from the photo picker, the app loads a `Data` object from the [`PhotosPickerItem`](https://developer.apple.com/documentation/photosui/photospickeritem) that represents the image and updates the local images array with that data:
 
 ```swift
  if let loadedData = try await photoPickerItem.loadTransferable(type: Data.self) {
@@ -165,7 +165,7 @@ When someone chooses an image from the photo picker, the app loads a `Data` obje
 }
 ```
 
-If the sample app has an existing SharePlay session, the method shares the local images with the other participants. If there isn’t an existing SharePlay session, the UI uses the image data in `localImagesByIdentifier` and initializes an [`Image`](https://developer.apple.com/documentation/SwiftUI/Image) using that data.
+If the sample app has an existing SharePlay session, the method shares the local images with the other participants. If there isn’t an existing SharePlay session, the UI uses the image data in `localImagesByIdentifier` and initializes an [`Image`](https://developer.apple.com/documentation/swiftui/image) using that data.
 
 #### Synchronize Files Between Participants
 
@@ -201,7 +201,7 @@ private func observeJournalAttachments() -> Task<Void, Error> {
 }
 ```
 
-The `processIncomingAttachments` method loads the contents of the incoming attachment as a `DisplayImage` by calling [`load(_:)`](groupsessionjournal/attachment/load(_:).md) on it, and specifying the `DisplayImage` type. The method saves the data in a dictionary, which the UI iterates over and uses to initialize an [`Image`](https://developer.apple.com/documentation/SwiftUI/Image) to show to all participants:
+The `processIncomingAttachments` method loads the contents of the incoming attachment as a `DisplayImage` by calling [`load(_:)`](groupsessionjournal/attachment/load(_:).md) on it, and specifying the `DisplayImage` type. The method saves the data in a dictionary, which the UI iterates over and uses to initialize an [`Image`](https://developer.apple.com/documentation/swiftui/image) to show to all participants:
 
 ```swift
 private func loadAttachment(_ attachment: GroupSessionJournal.Attachment) async {

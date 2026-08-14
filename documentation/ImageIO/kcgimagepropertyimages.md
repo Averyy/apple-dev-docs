@@ -22,7 +22,7 @@ let kCGImagePropertyImages: CFString
 
 #### Discussion
 
-The value of this property is a [`CFArray`](https://developer.apple.com/documentation/CoreFoundation/CFArray). Each element in the array is a [`CFDictionary`](https://developer.apple.com/documentation/CoreFoundation/CFDictionary) that contains metadata for one of the images. For example, the dictionary might contain the width and height of the image, the image’s color space name, thumbnail image information, and any auxiliary data.
+The value of this property is a [`CFArray`](https://developer.apple.com/documentation/corefoundation/cfarray). Each element in the array is a [`CFDictionary`](https://developer.apple.com/documentation/corefoundation/cfdictionary) that contains metadata for one of the images. For example, the dictionary might contain the width and height of the image, the image’s color space name, thumbnail image information, and any auxiliary data.
 
 ## See Also
 

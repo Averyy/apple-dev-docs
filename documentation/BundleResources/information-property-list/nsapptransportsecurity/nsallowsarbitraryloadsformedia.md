@@ -19,9 +19,9 @@ A Boolean value indicating whether all App Transport Security restrictions are d
 
 #### Discussion
 
-Set this key’s value to `YES` to disable App Transport Security restrictions for media loaded using the [`AVFoundation`](https://developer.apple.com/documentation/AVFoundation) framework, without affecting your [`URLSession`](https://developer.apple.com/documentation/Foundation/URLSession) connections. Domains you specify in the [`NSExceptionDomains`](information-property-list/nsapptransportsecurity/nsexceptiondomains.md) dictionary aren’t affected by this key’s value.
+Set this key’s value to `YES` to disable App Transport Security restrictions for media loaded using the [`AVFoundation`](https://developer.apple.com/documentation/avfoundation) framework, without affecting your [`URLSession`](https://developer.apple.com/documentation/foundation/urlsession) connections. Domains you specify in the [`NSExceptionDomains`](information-property-list/nsapptransportsecurity/nsexceptiondomains.md) dictionary aren’t affected by this key’s value.
 
-Employ this key only for loading encrypted media—like files protected by FairPlay or by secure [`HTTP Live Streaming`](https://developer.apple.com/documentation/HTTP-Live-Streaming)—that don’t contain personalized information.
+Employ this key only for loading encrypted media—like files protected by FairPlay or by secure [`HTTP Live Streaming`](https://developer.apple.com/documentation/http-live-streaming)—that don’t contain personalized information.
 
 In iOS 10 and later and in macOS 10.12 and later, if you include this key with any value, then App Transport Security ignores the value of the [`NSAllowsArbitraryLoads`](information-property-list/nsapptransportsecurity/nsallowsarbitraryloads.md) key, instead using that key’s default value of `NO`. For more information about how the OS version affects ATS behavior, see the [`NSAppTransportSecurity`](information-property-list/nsapptransportsecurity.md) key’s Versioning section.
 

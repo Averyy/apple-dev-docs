@@ -27,7 +27,7 @@ class CHHapticPattern
 
 A haptic pattern represents the waveform of a haptic through a hierarchical set of key-value pairs, starting at the topmost level with a [`CHHapticPattern.Key`](chhapticpattern/key.md). This key marks the beginning of an array of events and [`parameterID`](chhapticpattern/key/parameterid.md) definitions. Each event has an associated time that indicates when the system delivers the event to the haptic engine.
 
-![A diagram showing the contents of a pattern: its keys, values, and subdictionaries.](https://docs-assets.developer.apple.com/published/34fa249208e0ab093d6f9cc9a6c29417/media-3163328%402x.png)
+![A diagram showing the contents of a pattern: its keys, values, and subdictionaries.](/images/com.apple.corehaptics/media-3163328@2x.png)
 
 These key-value pairs represent not only events constituting the pattern, but also individual parameters of each event, which are characteristics of the haptic, such as sharpness and intensity. More complicated patterns also contain key-value pairs for parameter curves, which you can use to modulate parameters over time.
 
@@ -70,14 +70,14 @@ Regardless of the building block you choose to generate a custom haptic, you can
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

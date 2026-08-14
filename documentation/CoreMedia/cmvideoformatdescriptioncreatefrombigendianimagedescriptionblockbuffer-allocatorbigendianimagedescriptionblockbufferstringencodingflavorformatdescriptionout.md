@@ -24,7 +24,7 @@ func CMVideoFormatDescriptionCreateFromBigEndianImageDescriptionBlockBuffer(allo
 
 - `allocator`: Allocator to use for allocating the `CMVideoFormatDescription` object. May be `NULL`.
 - `imageDescriptionBlockBuffer`: CMBlockBuffer containing ImageDescription data structure in big-endian byte ordering.
-- `stringEncoding`: Pass [`CFStringGetSystemEncoding()`](https://developer.apple.com/documentation/CoreFoundation/CFStringGetSystemEncoding()) or `GetApplicationTextEncoding()`.
+- `stringEncoding`: Pass [`CFStringGetSystemEncoding()`](https://developer.apple.com/documentation/corefoundation/cfstringgetsystemencoding()) or `GetApplicationTextEncoding()`.
 - `flavor`: `kCMImageDescriptionFlavor` constant or `NULL` for QuickTimeMovie flavor.
 - `formatDescriptionOut`: Receives new `CMVideoFormatDescription`.
 

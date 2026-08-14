@@ -39,7 +39,7 @@ This memory layout corresponds to the [`MTLAccelerationStructureInstanceDescript
 ## Relationships
 
 ### Conforms To
-- [Sendable](../Swift/Sendable.md)
+- [Sendable](../swift/sendable.md)
 
 ## See Also
 

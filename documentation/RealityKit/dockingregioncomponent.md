@@ -16,7 +16,7 @@ struct DockingRegionComponent
 
 #### Overview
 
-A docking-region component establishes a fixed area within an immersive environment that an [`AVPlayerViewController`](https://developer.apple.com/documentation/AVKit/AVPlayerViewController) window scene anchors to, which prevents a person from moving the window with a pinch-and-drag gesture.
+A docking-region component establishes a fixed area within an immersive environment that an [`AVPlayerViewController`](https://developer.apple.com/documentation/avkit/avplayerviewcontroller) window scene anchors to, which prevents a person from moving the window with a pinch-and-drag gesture.
 
 To anchor dockable scenes, attach a `DockingRegionComponent` to an entity. The entity’s position represents the docking position. Specify the width to set the docking boundary; the docking region maintains a cinematic `2.4:1` width/height ratio, ideal for wide display formats.
 

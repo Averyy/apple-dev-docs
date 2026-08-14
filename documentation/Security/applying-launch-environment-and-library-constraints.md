@@ -16,7 +16,7 @@ Launch environment constraints represent tests of attributes of an executable fi
 
 - **Self constraint**: The constraint applies to the executable that embeds the constraint in its code signature.
 - **Parent constraint**: The constraint applies to the executable file for the process that launches the constrained executable, for example by calling `posix_spawn(_:_:_:_:_:_:)`.
-- **Responsible constraint**: The constraint applies to the executable file for the process that’s responsible for launching the constrained executable. The app that initiates an [`XPC`](https://developer.apple.com/documentation/XPC) connection is responsible for launching the XPC service. An app that launches a helper process directly is both the parent process and the responsible process for the helper.
+- **Responsible constraint**: The constraint applies to the executable file for the process that’s responsible for launching the constrained executable. The app that initiates an [`XPC`](https://developer.apple.com/documentation/xpc) connection is responsible for launching the XPC service. An app that launches a helper process directly is both the parent process and the responsible process for the helper.
 
 The kernel doesn’t launch a process if its executable file contains any embedded launch environment constraints that aren’t satisfied.
 
@@ -38,7 +38,7 @@ To embed a launch constraint or library constraint into the code signature for a
 4. Switch to the Build Settings tab.
 5. Set the appropriate build setting in the Signing group to the path to the property list file that contains the constraint definition. For a self constraint, use Launch Constraint Process Plist. For a parent constraint, use Launch Constraint Parent Process Plist. For a responsible process constraint, use Launch Constraint Responsible Process List. For a library constraint, use Library Load Constraint Plist.
 
-![A screenshot of Xcode. The Signing build settings are visible, and the setting for the Launch Constraint Parent Process Plist is being edited.](https://docs-assets.developer.apple.com/published/857f404743f04d56847bc38a27f91f5f/media-4257729%402x.png)
+![A screenshot of Xcode. The Signing build settings are visible, and the setting for the Launch Constraint Parent Process Plist is being edited.](/images/com.apple.security/media-4257729@2x.png)
 
 For information about the options to use with `codesign` in Terminal, see the UNIX manual page for `codesign`.
 

@@ -21,11 +21,11 @@ For details about working with HID hardware, see the HID specification at [`http
 
 You can’t use automatic code signing for this sample app. You must create an explicit App ID and provisioning profile, and your provisioning profile must contain the following set of entitlements:
 
-- [`com.apple.developer.driverkit.family.hid.eventservice`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.driverkit.family.hid.eventservice)
-- [`com.apple.developer.driverkit.transport.hid`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.driverkit.transport.hid)
-- [`com.apple.developer.driverkit`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.driverkit)
+- [`com.apple.developer.driverkit.family.hid.eventservice`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.driverkit.family.hid.eventservice)
+- [`com.apple.developer.driverkit.transport.hid`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.driverkit.transport.hid)
+- [`com.apple.developer.driverkit`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.driverkit)
 
-Request these entitlements from Apple, and use them to configure a provisioning profile for the sample. See [`Requesting Entitlements for DriverKit Development`](https://developer.apple.com/documentation/DriverKit/requesting-entitlements-for-driverkit-development).
+Request these entitlements from Apple, and use them to configure a provisioning profile for the sample. See [`Requesting Entitlements for DriverKit Development`](https://developer.apple.com/documentation/driverkit/requesting-entitlements-for-driverkit-development).
 
 To test this sample with custom stylus hardware, update the `IOKitPersonalities` dictionary in the driver’s `Info.plist` file. The `HIDStylusDriver` personality contains hypothetical values of the kind of keys to include. Change the values of the `VendorID` and `ProductID` keys to match values from your own custom hardware. You can also change the `PrimaryUsagePage` and `PrimaryUsage` keys to support different device usages. Leave the other keys unchanged.
 
@@ -38,9 +38,9 @@ Enabling developer mode allows you to run and debug the StylusApp in place, with
 
 After you install the DriverKit extension, you can verify its installation by running the `systemextensionsctl list` command in Terminal. You can also use that tool to uninstall your extension or reset the state of your system extensions.
 
-Note: If an error occurs during the installation process, the app writes an appropriate error message to the Xcode console. If you get an unknown error, verify that the  [`OSBundleUsageDescriptionKey`](https://developer.apple.com/documentation/SystemExtensions/OSBundleUsageDescriptionKey) key in the driver’s `Info.plist` file has the correct spelling.
+Note: If an error occurs during the installation process, the app writes an appropriate error message to the Xcode console. If you get an unknown error, verify that the  [`OSBundleUsageDescriptionKey`](https://developer.apple.com/documentation/systemextensions/osbundleusagedescriptionkey) key in the driver’s `Info.plist` file has the correct spelling.
 
-For additional information, see [`Debugging and testing system extensions`](https://developer.apple.com/documentation/DriverKit/debugging-and-testing-system-extensions).
+For additional information, see [`Debugging and testing system extensions`](https://developer.apple.com/documentation/driverkit/debugging-and-testing-system-extensions).
 
 ##### Start Up the Event Service
 
@@ -67,7 +67,7 @@ IMPL(HIDStylusDriver, Start)
     }
 ```
 
-Notice that the implementation of the `Start` method includes the [`IMPL`](https://developer.apple.com/documentation/DriverKit/IMPL) macro instead of the normal list of parameters. This macro provides binding between the kernel (which calls the method), and the method itself (which runs in user space). The [`SUPERDISPATCH`](https://developer.apple.com/documentation/DriverKit/SUPERDISPATCH) macro provides a similar binding in the other direction. The sample uses it to call inherited methods that run in the kernel, such as the [`Start`](iouserhideventservice/start.md) method of [`IOUserHIDEventService`](iouserhideventservice.md).
+Notice that the implementation of the `Start` method includes the [`IMPL`](https://developer.apple.com/documentation/driverkit/impl) macro instead of the normal list of parameters. This macro provides binding between the kernel (which calls the method), and the method itself (which runs in user space). The [`SUPERDISPATCH`](https://developer.apple.com/documentation/driverkit/superdispatch) macro provides a similar binding in the other direction. The sample uses it to call inherited methods that run in the kernel, such as the [`Start`](iouserhideventservice/start.md) method of [`IOUserHIDEventService`](iouserhideventservice.md).
 
 ##### Identify Stylus Related Elements
 
@@ -223,11 +223,11 @@ void HIDStylusDriver::handleDigitizerReport(uint64_t timestamp,
 }
 ```
 
-Unlike other inherited methods, the [`dispatchDigitizerStylusEvent`](iohideventservice/dispatchdigitizerstylusevent.md) method of [`IOHIDEventService`](iohideventservice.md) runs locally in the driver’s process space, not in the kernel. DriverKit annotates such methods by appending the `LOCAL` or `LOCALONLY` macro to the method definition. When calling such methods, the sample uses the standard calling semantics for inherited methods, and doesn’t include the [`SUPERDISPATCH`](https://developer.apple.com/documentation/DriverKit/SUPERDISPATCH) macro.
+Unlike other inherited methods, the [`dispatchDigitizerStylusEvent`](iohideventservice/dispatchdigitizerstylusevent.md) method of [`IOHIDEventService`](iohideventservice.md) runs locally in the driver’s process space, not in the kernel. DriverKit annotates such methods by appending the `LOCAL` or `LOCALONLY` macro to the method definition. When calling such methods, the sample uses the standard calling semantics for inherited methods, and doesn’t include the [`SUPERDISPATCH`](https://developer.apple.com/documentation/driverkit/superdispatch) macro.
 
 ## See Also
 
-- [com.apple.developer.driverkit.transport.hid](../BundleResources/Entitlements/com.apple.developer.driverkit.transport.hid.md)
+- [com.apple.developer.driverkit.transport.hid](../bundleresources/entitlements/com.apple.developer.driverkit.transport.hid.md)
   A Boolean value that indicates whether the driver communicates with human interface devices.
 - [Handling Keyboard Events from a Human Interface Device](handling-keyboard-events-from-a-human-interface-device.md)
   Process keyboard-related data from a human interface device and dispatch events to the system.

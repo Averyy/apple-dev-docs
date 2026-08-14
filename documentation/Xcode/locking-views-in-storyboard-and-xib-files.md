@@ -20,7 +20,7 @@ To lock a single view, select the user interface file (files with a `.storyboard
 - **Localizable Properties**: Lock localizable properties, such as user-facing text and size.
 - **Non-localizable Properties**: Lock non-localizable properties (make user-facing text and size properties editable).
 
-![Screenshot of a view inspector showing the location of the Lock pop-up menu.](https://docs-assets.developer.apple.com/published/ec4a9d070923ee61715dc39ffd8f3d42/locking-views-in-storyboard-and-xib-files-1%402x.png)
+![Screenshot of a view inspector showing the location of the Lock pop-up menu.](/images/com.apple.Xcode/locking-views-in-storyboard-and-xib-files-1@2x.png)
 
 For example, choose Localizable Properties while waiting for translations from localizers. If you import localizations and don’t want to make other changes inadvertently, choose Non-localizable Properties.
 

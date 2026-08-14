@@ -73,7 +73,7 @@ let target3: BindTarget = .entity("entityA").entity("entityB").parameter("myInt"
 ## Relationships
 
 ### Conforms To
-- [Equatable](../Swift/Equatable.md)
+- [Equatable](../swift/equatable.md)
 
 ## See Also
 

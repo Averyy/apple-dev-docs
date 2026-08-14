@@ -30,7 +30,7 @@ The returned image is the smallest available image that’s at least as large as
 
 ## Parameters
 
-- `size`: The size, in points, for the new [`UIImage`](https://developer.apple.com/documentation/UIKit/UIImage) object.
+- `size`: The size, in points, for the new [`UIImage`](https://developer.apple.com/documentation/uikit/uiimage) object.
 
 ## See Also
 

@@ -18,11 +18,11 @@ class NSMagnificationGestureRecognizer
 
 This object tracks pinch gestures on a track pad or other input device and stores the resulting magnification value for you to use in your code.
 
-This gesture recognizer automatically sets the value of the [`delaysMagnificationEvents`](nsgesturerecognizer/delaysmagnificationevents.md) property to [`true`](https://developer.apple.com/documentation/Swift/true).
+This gesture recognizer automatically sets the value of the [`delaysMagnificationEvents`](nsgesturerecognizer/delaysmagnificationevents.md) property to [`true`](https://developer.apple.com/documentation/swift/true).
 
 ## Topics
 
-### Finding the magnification factor
+### Finding the Magnification Factor
 - [var magnification: CGFloat](nsmagnificationgesturerecognizer/magnification.md)
   The amount of magnification to apply.
 
@@ -31,15 +31,15 @@ This gesture recognizer automatically sets the value of the [`delaysMagnificatio
 ### Inherits From
 - [NSGestureRecognizer](nsgesturerecognizer.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCoding](../Foundation/NSCoding.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCoding](../foundation/nscoding.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

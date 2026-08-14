@@ -22,7 +22,7 @@ class CXAction
 
 Each instance of [`CXAction`](cxaction.md) is uniquely identified by a [`uuid`](cxaction/uuid.md), which is generated on initialization. An action also tracks whether it has been completed or not.
 
-To perform one or more actions, you add them to a new [`CXTransaction`](cxtransaction.md) object and pass the transaction to an instance of [`CXCallController`](cxcallcontroller.md) using the [`request(_:completion:)`](cxcallcontroller/request(_:completion:).md) method. After each action is performed by the telephony provider, the provider’s delegate calls either the [`fulfill()`](cxaction/fulfill().md) method, indicating that the action was successfully performed, or the [`fail()`](cxaction/fail().md) method, to indicate that an error occurred; both of these methods set the [`isComplete`](cxaction/iscomplete.md) property of the action to [`true`](https://developer.apple.com/documentation/Swift/true).
+To perform one or more actions, you add them to a new [`CXTransaction`](cxtransaction.md) object and pass the transaction to an instance of [`CXCallController`](cxcallcontroller.md) using the [`request(_:completion:)`](cxcallcontroller/request(_:completion:).md) method. After each action is performed by the telephony provider, the provider’s delegate calls either the [`fulfill()`](cxaction/fulfill().md) method, indicating that the action was successfully performed, or the [`fail()`](cxaction/fail().md) method, to indicate that an error occurred; both of these methods set the [`isComplete`](cxaction/iscomplete.md) property of the action to [`true`](https://developer.apple.com/documentation/swift/true).
 
 The [`CXCallAction`](cxcallaction.md) subclass is an abstract class that represents an action associated with a [`CXCall`](cxcall.md) object. The CallKit framework provides several concrete [`CXCallAction`](cxcallaction.md) subclasses to represent actions such as answering a call and putting a call on hold.
 
@@ -49,19 +49,19 @@ The [`CXCallAction`](cxcallaction.md) subclass is an abstract class that represe
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Inherited By
 - [CXCallAction](cxcallaction.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCoding](../Foundation/NSCoding.md)
-- [NSCopying](../Foundation/NSCopying.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [NSSecureCoding](../Foundation/NSSecureCoding.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCoding](../foundation/nscoding.md)
+- [NSCopying](../foundation/nscopying.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSSecureCoding](../foundation/nssecurecoding.md)
 
 ## See Also
 

@@ -7,7 +7,6 @@ Creates a new file upload request with the given parameters.
 
 **Availability**:
 - iOS 26.0+
-- iPadOS 26.0+
 
 ## Declaration
 

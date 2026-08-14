@@ -7,7 +7,7 @@ An atom that indicates not to automatically select this track.
 
 #### Overview
 
-See [`Track exclude from autoselection atom ('txas')`](track_exclude_from_autoselection_atom.md).
+See [`Track exclude from autoselection atom`](track_exclude_from_autoselection_atom.md).
 
 ## See Also
 

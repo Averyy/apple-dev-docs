@@ -34,7 +34,7 @@ Text("Rotation by passing an angle in degrees")
     .border(Color.gray)
 ```
 
-![A screenshot of text in a grey box. The text says Rotation by passing an angle in degrees. The text is rendered in a way that makes it appear farther from the viewer on the right side and closer on the left, as if the text is angled to face someone sitting on the viewer’s right.](https://docs-assets.developer.apple.com/published/26dcde23639ed248bfc573a1a0986072/SwiftUI-View-rotation3DEffect%402x.png)
+![A screenshot of text in a grey box. The text says Rotation by passing an angle in degrees. The text is rendered in a way that makes it appear farther from the viewer on the right side and closer on the left, as if the text is angled to face someone sitting on the viewer’s right.](/images/com.apple.SwiftUI/SwiftUI-View-rotation3DEffect@2x.png)
 
 > ❗ **Important**: To truly rotate a view in three dimensions, use a 3D rotation modifier without a perspective input like [`rotation3DEffect(_:axis:anchor:)`](view/rotation3deffect(_:axis:anchor:).md).
 

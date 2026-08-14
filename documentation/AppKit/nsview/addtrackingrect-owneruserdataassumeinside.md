@@ -29,7 +29,7 @@ In macOS 10.5 and later, tracking areas provide a greater range of functionality
 - `rect`: A rectangle that defines a region of the view for tracking mouse-entered and mouse-exited events.
 - `owner`: The object that gets sent the event messages. It can be the view itself or some other object (such as an NSCursor or a custom drawing tool object), as long as it responds to both [`mouseEntered(with:)`](nsresponder/mouseentered(with:).md) and [`mouseExited(with:)`](nsresponder/mouseexited(with:).md).
 - `data`: Data stored in the [`NSEvent`](nsevent.md) object for each tracking event.
-- `flag`: If [`true`](https://developer.apple.com/documentation/Swift/true), the first event will be generated when the cursor leaves `aRect`, regardless if the cursor is inside `aRect` when the tracking rectangle is added. If [`false`](https://developer.apple.com/documentation/Swift/false) the first event will be generated when the cursor leaves `aRect` if the cursor is initially inside `aRect`, or when the cursor enters `aRect` if the cursor is initially outside `aRect`.  You usually want to set this flag to [`false`](https://developer.apple.com/documentation/Swift/false).
+- `flag`: If [`true`](https://developer.apple.com/documentation/swift/true), the first event will be generated when the cursor leaves `aRect`, regardless if the cursor is inside `aRect` when the tracking rectangle is added. If [`false`](https://developer.apple.com/documentation/swift/false) the first event will be generated when the cursor leaves `aRect` if the cursor is initially inside `aRect`, or when the cursor enters `aRect` if the cursor is initially outside `aRect`.  You usually want to set this flag to [`false`](https://developer.apple.com/documentation/swift/false).
 
 ## See Also
 

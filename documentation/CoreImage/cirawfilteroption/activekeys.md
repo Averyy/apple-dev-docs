@@ -21,7 +21,7 @@ static let activeKeys: CIRAWFilterOption
 
 #### Discussion
 
-The associated value is an [`NSSet`](https://developer.apple.com/documentation/Foundation/NSSet) object containing the set of input keys which may be used to affect the output image. (Depending on the input image type and the decoder version, some input keys may be unavailable.) This key is read-only.
+The associated value is an [`NSSet`](https://developer.apple.com/documentation/foundation/nsset) object containing the set of input keys which may be used to affect the output image. (Depending on the input image type and the decoder version, some input keys may be unavailable.) This key is read-only.
 
 ## See Also
 

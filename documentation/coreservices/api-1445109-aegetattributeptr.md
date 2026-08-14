@@ -30,13 +30,13 @@ Thread safe starting in OS X v10.2.
 
 ## Parameters
 
-- `theAppleEvent`: A pointer to the Apple event to get the attribute data from. See  .
-- `theAEKeyword`: The keyword that specifies the desired attribute. Some keyword constants are described in  . See  .
-- `desiredType`: See  .
-- `typeCode`: A pointer to a descriptor type. On return, specifies the descriptor type of the attribute data pointed to by  . The returned type is either the same as the type specified by the   parameter or, if the desired type was type wildcard, the true type of the descriptor. For a list of AppleScript’s predefined descriptor types, see  . See  .
-- `dataPtr`: A pointer to a buffer, local variable, or other storage location, created and disposed of by your application. The size in bytes must be at least as large as the value you pass in the   parameter. On return, contains the attribute data.
-- `maximumSize`: The maximum length, in bytes, of the expected attribute data. The   function will not return more data than you specify in this parameter. 
-- `actualSize`: A pointer to a size variable. On return, the length, in bytes, of the data for the specified Apple event attribute. If this value is larger than the value you passed in the   parameter, the buffer pointed to by   was not large enough to contain all of the data for the attribute, though   does not write beyond the end of the buffer. If the buffer was too small, you can resize it and call   again.
+- `theAppleEvent`: A pointer to the Apple event to get the attribute data from. See [`AppleEvent`](appleevent.md).
+- `theAEKeyword`: The keyword that specifies the desired attribute. Some keyword constants are described in [`Keyword Attribute Constants`](apple_events/1542920-keyword_attribute_constants.md). See [`AEKeyword`](aekeyword.md).
+- `desiredType`: The desired descriptor type for the copied data. For a list of AppleScript’s predefined descriptor types, see [`Descriptor Type Constants`](apple_events/1542788-descriptor_type_constants.md). If the descriptor specified by the `theAEKeyword` parameter is not of the desired type, `AEGetAttributePtr` attempts to coerce the data to this type. However, if you pass a value of `typeWildCard`, no coercion is performed, and the descriptor type of the returned data is the same as the descriptor type of the Apple event attribute. On return, you can determine the actual descriptor type by examining the `typeCode` parameter. See [`DescType`](desctype.md).
+- `typeCode`: A pointer to a descriptor type. On return, specifies the descriptor type of the attribute data pointed to by `dataPtr`. The returned type is either the same as the type specified by the `desiredType` parameter or, if the desired type was type wildcard, the true type of the descriptor. For a list of AppleScript’s predefined descriptor types, see [`Descriptor Type Constants`](apple_events/1542788-descriptor_type_constants.md). See [`DescType`](desctype.md).
+- `dataPtr`: A pointer to a buffer, local variable, or other storage location, created and disposed of by your application. The size in bytes must be at least as large as the value you pass in the `maximumSize` parameter. On return, contains the attribute data.
+- `maximumSize`: The maximum length, in bytes, of the expected attribute data. The `AEGetAttributePtr` function will not return more data than you specify in this parameter. 
+- `actualSize`: A pointer to a size variable. On return, the length, in bytes, of the data for the specified Apple event attribute. If this value is larger than the value you passed in the `maximumSize` parameter, the buffer pointed to by `dataPtr` was not large enough to contain all of the data for the attribute, though `AEGetAttributePtr` does not write beyond the end of the buffer. If the buffer was too small, you can resize it and call `AEGetAttributePtr` again.
 
 ## See Also
 

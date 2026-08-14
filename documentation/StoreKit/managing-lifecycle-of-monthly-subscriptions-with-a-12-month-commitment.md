@@ -12,7 +12,7 @@ For more information on configuring, merchandising, purchasing, and entitling a 
 
 #### Manage Subscription Renewals
 
-A monthly subscription with a 12-month commitment automatically bills monthly. Process the resulting transaction and enable access to content the same way as for standard subscriptions. When subscriptions renew, your server receives a `DID_RENEW` notification ([`notificationType`](https://developer.apple.com/documentation/AppStoreServerNotifications/notificationType)) at your [`App Store Server Notifications V2`](https://developer.apple.com/documentation/AppStoreServerNotifications/App-Store-Server-Notifications-V2) endpoint. Your app receives a transaction through the [`updates`](Transaction/updates.md) listener.
+A monthly subscription with a 12-month commitment automatically bills monthly. Process the resulting transaction and enable access to content the same way as for standard subscriptions. When subscriptions renew, your server receives a `DID_RENEW` notification ([`notificationType`](https://developer.apple.com/documentation/appstoreservernotifications/notificationtype)) at your [`App Store Server Notifications V2`](https://developer.apple.com/documentation/appstoreservernotifications/app-store-server-notifications-v2) endpoint. Your app receives a transaction through the [`updates`](transaction/updates.md) listener.
 
 The following fields in the transaction provide additional information about the commitment plan:
 
@@ -30,9 +30,9 @@ When a customer cancels a monthly subscription with a 12-month commitment, they�
 
 - The App Store server sets [`willAutoRenew`](product/subscriptioninfo/renewalinfo/commitmentinfo-swift.struct/willautorenew.md) in the commitment information ([`Product.SubscriptionInfo.RenewalInfo.CommitmentInfo`](product/subscriptioninfo/renewalinfo/commitmentinfo-swift.struct.md)) to `0`, to indicate the commitment doesn’t renew when the term ends.
 - The [`willAutoRenew`](product/subscriptioninfo/renewalinfo/willautorenew.md) in the subscription renewal info ([`renewalInfo`](product/subscriptioninfo/status-swift.struct/renewalinfo.md))  remains `1`, indicating that monthly billing continues for the remaining periods of the current commitment.
-- App Store Server Notifications sends a `DID_CHANGE_RENEWAL_STATUS` [`notificationType`](https://developer.apple.com/documentation/AppStoreServerNotifications/notificationType) with an `AUTO_RENEW_DISABLED` [`subtype`](https://developer.apple.com/documentation/AppStoreServerNotifications/subtype) to your server.
+- App Store Server Notifications sends a `DID_CHANGE_RENEWAL_STATUS` [`notificationType`](https://developer.apple.com/documentation/appstoreservernotifications/notificationtype) with an `AUTO_RENEW_DISABLED` [`subtype`](https://developer.apple.com/documentation/appstoreservernotifications/subtype) to your server.
 
-App Store Server Notifications continues to send `DID_RENEW` notifications for each remaining billing period. *Continue providing access to the subscription through the end of the commitment period.* After the 12th and final period, the App Store server sends an `EXPIRED` [`notificationType`](https://developer.apple.com/documentation/AppStoreServerNotifications/notificationType). Access ends here.
+App Store Server Notifications continues to send `DID_RENEW` notifications for each remaining billing period. *Continue providing access to the subscription through the end of the commitment period.* After the 12th and final period, the App Store server sends an `EXPIRED` [`notificationType`](https://developer.apple.com/documentation/appstoreservernotifications/notificationtype). Access ends here.
 
 When you receive a `DID_CHANGE_RENEWAL_STATUS` notification, check the billing plan type on the transaction first:
 
@@ -43,7 +43,7 @@ When you receive a `DID_CHANGE_RENEWAL_STATUS` notification, check the billing p
 
 When a monthly renewal fails due to a billing issue, the App Store automatically attempts to recover the payment. While the subscription is in a billing retry state, revoke access to the subscription, and restore it if billing recovers. If the App Store is unable to recover the payment within 90 days, the commitment ends and you revoke service permanently for that transaction.
 
-App Store Server Notifications sends the following notifications ([`notificationType`](https://developer.apple.com/documentation/AppStoreServerNotifications/notificationType)) to indicate the billing retry status:
+App Store Server Notifications sends the following notifications ([`notificationType`](https://developer.apple.com/documentation/appstoreservernotifications/notificationtype)) to indicate the billing retry status:
 
 | Notification type | Transaction detail | App’s action |
 | --- | --- | --- |
@@ -51,17 +51,17 @@ App Store Server Notifications sends the following notifications ([`notification
 | `DID_RENEW` with subtype `BILLING_RECOVERY` | `commitmentExpiresDate` shifts to a new billing date, reflecting the recovery date. | Restore access to the subscription. |
 | `EXPIRED` with subtype `BILLING_RETRY` | `isInBillingRetryPeriod` is `false`. | Previously revoked access is final. |
 
-For more information on the transaction and subscription renewal information you receive with notifications, see [`JWSTransactionDecodedPayload`](https://developer.apple.com/documentation/AppStoreServerNotifications/JWSTransactionDecodedPayload) and [`JWSRenewalInfoDecodedPayload`](https://developer.apple.com/documentation/AppStoreServerNotifications/JWSRenewalInfoDecodedPayload).
+For more information on the transaction and subscription renewal information you receive with notifications, see [`JWSTransactionDecodedPayload`](https://developer.apple.com/documentation/appstoreservernotifications/jwstransactiondecodedpayload) and [`JWSRenewalInfoDecodedPayload`](https://developer.apple.com/documentation/appstoreservernotifications/jwsrenewalinfodecodedpayload).
 
 After a billing issue recovery, read the `commitmentExpiresDate` from the latest transaction, because it differs from the original commitment end date. Subsequent renewals follow the shifted schedule.
 
-Billing Grace Period doesn’t apply to monthly subscriptions with 12-month commitments. Revoke access to the subscription as soon as you receive a `DID_FAIL_TO_RENEW` [`notificationType`](https://developer.apple.com/documentation/AppStoreServerNotifications/notificationType).
+Billing Grace Period doesn’t apply to monthly subscriptions with 12-month commitments. Revoke access to the subscription as soon as you receive a `DID_FAIL_TO_RENEW` [`notificationType`](https://developer.apple.com/documentation/appstoreservernotifications/notificationtype).
 
 #### Respond to Refund Consumption Requests
 
-When a customer submits a refund request for a subscription with a commitment plan, your server receives a `CONSUMPTION_REQUEST` notification at your [`App Store Server Notifications V2`](https://developer.apple.com/documentation/AppStoreServerNotifications/App-Store-Server-Notifications-V2) endpoint.
+When a customer submits a refund request for a subscription with a commitment plan, your server receives a `CONSUMPTION_REQUEST` notification at your [`App Store Server Notifications V2`](https://developer.apple.com/documentation/appstoreservernotifications/app-store-server-notifications-v2) endpoint.
 
-Respond with the consumption information and your refund preference for that billing period. For more information on consumption requests, see [`Send Consumption Information`](https://developer.apple.com/documentation/AppStoreServerAPI/Send-Consumption-Information).
+Respond with the consumption information and your refund preference for that billing period. For more information on consumption requests, see [`Send Consumption Information`](https://developer.apple.com/documentation/appstoreserverapi/send-consumption-information).
 
 #### Manage Access After a Refund
 
@@ -92,10 +92,10 @@ With the configuration in place, you can:
 - Test your commitment-plan merchandising by verifying that your app returns the correct product and that both the monthly price and the total commitment price display correctly.
 - Test the purchase flow by initiating a purchase using the `billingPlanType(.monthly)` option and inspecting `commitmentInfo` on the resulting transaction.
 - Validate commitment progress UI by reading `billingPeriodNumber`, `totalBillingPeriods`, and the expiration date fields from the transaction.
-- Simulate a cancellation by canceling the subscription in the Transaction Manager. Confirm that your app continues to grant access to the subscription through the remaining billing periods. For more information, see [`Testing in-app purchases with StoreKit transaction manager in Xcode`](https://developer.apple.com/documentation/Xcode/testing-in-app-purchases-with-storeKit-transaction-manager-in-code).
+- Simulate a cancellation by canceling the subscription in the Transaction Manager. Confirm that your app continues to grant access to the subscription through the remaining billing periods. For more information, see [`Testing in-app purchases with StoreKit transaction manager in Xcode`](https://developer.apple.com/documentation/xcode/testing-in-app-purchases-with-storekit-transaction-manager-in-code).
 - Test your entitlement logic by confirming your app uses [`expirationDate`](transaction/expirationdate.md) in [`Transaction`](transaction.md) for subscription-access decisions and only uses [`expirationDate`](transaction/commitmentinfo-swift.struct/expirationdate.md) in [`Transaction.CommitmentInfo`](transaction/commitmentinfo-swift.struct.md) to display the commitment progress.
 
-For more information, see [`Setting up StoreKit Testing in Xcode`](https://developer.apple.com/documentation/Xcode/setting-up-storekit-testing-in-xcode).
+For more information, see [`Setting up StoreKit Testing in Xcode`](https://developer.apple.com/documentation/xcode/setting-up-storekit-testing-in-xcode).
 
 #### Test Your App in the Sandbox Environment
 

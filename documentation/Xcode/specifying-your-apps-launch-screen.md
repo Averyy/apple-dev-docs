@@ -25,9 +25,9 @@ For apps with simple user interfaces, using the information property list in you
 3. Click the Add button (+), type in `UILaunchScreen`, and press Return to add the launch screen key to the property list. If the `UILaunchScreen` key is already present, you can skip this step.
 4. Select the `UILaunchScreen` key, click the Add button, and add additional keys to specify configuration options for your launch screen.
 
-![Screenshot of the information property list section named Launch Screen. The UILaunchScreen key is nested under Launch Screen. A new row is nested under UILaunchScreen to indicate where to add additional keys.](https://docs-assets.developer.apple.com/published/3417cef9027059fb04c67da2580e88ec/specifying-your-apps-launch-screen-2%402x.png)
+![Screenshot of the information property list section named Launch Screen. The UILaunchScreen key is nested under Launch Screen. A new row is nested under UILaunchScreen to indicate where to add additional keys.](/images/com.apple.Xcode/specifying-your-apps-launch-screen-2@2x.png)
 
-Define the appearance of the launch screen by specifying a combination of launch screen options from the possible keys in [`UILaunchScreen`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/UILaunchScreen).
+Define the appearance of the launch screen by specifying a combination of launch screen options from the possible keys in [`UILaunchScreen`](https://developer.apple.com/documentation/bundleresources/information-property-list/uilaunchscreen).
 
 ##### Configure a Launch Screen Storyboard
 
@@ -36,7 +36,7 @@ Alternatively, you can configure your launch screen in a user interface file, a 
 Follow these guidelines when creating a launch screen storyboard:
 
 - Use only UIKit classes.
-- Use a single root view that’s a [`UIView`](https://developer.apple.com/documentation/UIKit/UIView) or [`UIViewController`](https://developer.apple.com/documentation/UIKit/UIViewController) object.
+- Use a single root view that’s a [`UIView`](https://developer.apple.com/documentation/uikit/uiview) or [`UIViewController`](https://developer.apple.com/documentation/uikit/uiviewcontroller) object.
 - Don’t make any connections to your code, for example, don’t add actions or outlets.
 - Don’t use deprecated views such as `UIWebView`.
 - Don’t use any custom classes.
@@ -52,7 +52,7 @@ If your project doesn’t contain a default launch screen file, add a launch scr
 4. In the settings for your target, select the General tab and find the “App Icons and Launch Screen” section.
 5. From the Launch Screen File pop-up menu, choose the new launch screen file.
 
-![Screenshot of target settings with the General tab selected. The App Icons and Launch Screen section shows a field with the name Launch Screen File that lists the name of the launch screen storyboard file to use.](https://docs-assets.developer.apple.com/published/0715ea8200fa2050b0bbea0b29c28d5f/specifying-your-apps-launch-screen-3%402x.png)
+![Screenshot of target settings with the General tab selected. The App Icons and Launch Screen section shows a field with the name Launch Screen File that lists the name of the launch screen storyboard file to use.](/images/com.apple.Xcode/specifying-your-apps-launch-screen-3@2x.png)
 
 ## See Also
 

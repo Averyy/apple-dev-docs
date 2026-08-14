@@ -19,7 +19,7 @@ func present(from item: UIBarButtonItem, animated: Bool, completionHandler compl
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/Swift/true) if the picker was displayed or [`false`](https://developer.apple.com/documentation/Swift/false) if the picker was already visible.
+[`true`](https://developer.apple.com/documentation/swift/true) if the picker was displayed or [`false`](https://developer.apple.com/documentation/swift/false) if the picker was already visible.
 
 #### Discussion
 
@@ -32,7 +32,7 @@ Calling this method while the picker is currently displayed in a popover dismiss
 ## Parameters
 
 - `item`: The bar button item to use as the anchor for the popover.
-- `animated`: [`true`](https://developer.apple.com/documentation/Swift/true) to animate the display of the picker or [`false`](https://developer.apple.com/documentation/Swift/false) to display it without animations.
+- `animated`: [`true`](https://developer.apple.com/documentation/swift/true) to animate the display of the picker or [`false`](https://developer.apple.com/documentation/swift/false) to display it without animations.
 - `completion`: A block to execute when the picker is dismissed. Use this block to receive information about the selected printer or information about any errors that occurred.
 
 ## See Also

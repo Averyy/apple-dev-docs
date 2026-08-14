@@ -30,7 +30,7 @@ var isAuthenticated: Bool { get }
   A handler that GameKit calls while initializing the local player.
 - [func fetchItems(forIdentityVerificationSignature: ((URL?, Data?, Data?, UInt64, (any Error)?) -> Void)?)](gklocalplayer/fetchitems(foridentityverificationsignature:).md)
   Generates a signature that you can use to authenticate the local player on your own server.
-- [static let GKPlayerAuthenticationDidChangeNotificationName: NSNotification.Name](../Foundation/NSNotification/Name-swift.struct/GKPlayerAuthenticationDidChangeNotificationName.md)
+- [static let GKPlayerAuthenticationDidChangeNotificationName: NSNotification.Name](../foundation/nsnotification/name-swift.struct/gkplayerauthenticationdidchangenotificationname.md)
   A notification that posts after GameKit authenticates the local player.
 
 

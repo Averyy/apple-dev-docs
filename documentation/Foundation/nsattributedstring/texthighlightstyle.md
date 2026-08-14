@@ -36,11 +36,11 @@ Use an [`NSAttributedString.TextHighlightStyle`](nsattributedstring/texthighligh
 ## Relationships
 
 ### Conforms To
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [RawRepresentable](../Swift/RawRepresentable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [RawRepresentable](../swift/rawrepresentable.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 
@@ -52,9 +52,9 @@ Use an [`NSAttributedString.TextHighlightStyle`](nsattributedstring/texthighligh
   Constants for the type of effect to apply to the text.
 - [NSAttributedString.SpellingState](nsattributedstring/spellingstate.md)
   Constants for the spelling state attribute key.
-- [struct NSUnderlineStyle](../UIKit/NSUnderlineStyle.md)
+- [struct NSUnderlineStyle](../uikit/nsunderlinestyle.md)
   Constants for the underline style and strikethrough style attribute keys.
-- [enum NSWritingDirectionFormatType](../UIKit/NSWritingDirectionFormatType.md)
+- [enum NSWritingDirectionFormatType](../uikit/nswritingdirectionformattype.md)
   Constants for the writing direction attribute key.
 
 

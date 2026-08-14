@@ -26,7 +26,7 @@ Setting the tracking mode to [`MKUserTrackingMode.follow`](mkusertrackingmode/fo
 ## Parameters
 
 - `mode`: The mode for tracking the user’s location. [`MKUserTrackingMode`](mkusertrackingmode.md) describes the possible values.
-- `animated`: If [`true`](https://developer.apple.com/documentation/Swift/true), the map animates the change from the current mode to the new mode; otherwise, it doesn’t. This parameter affects only tracking-mode changes. Changes to the user’s location or heading use animation.
+- `animated`: If [`true`](https://developer.apple.com/documentation/swift/true), the map animates the change from the current mode to the new mode; otherwise, it doesn’t. This parameter affects only tracking-mode changes. Changes to the user’s location or heading use animation.
 
 ## See Also
 

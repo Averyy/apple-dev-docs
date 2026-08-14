@@ -104,8 +104,8 @@ updateTask = Task {
 ## Relationships
 
 ### Conforms To
-- [Copyable](../Swift/Copyable.md)
-- [Escapable](../Swift/Escapable.md)
+- [Copyable](../swift/copyable.md)
+- [Escapable](../swift/escapable.md)
 - [HKAsyncQuery](hkasyncquery.md)
 - [HKAsyncSequenceQuery](hkasyncsequencequery.md)
 

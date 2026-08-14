@@ -36,7 +36,7 @@ Make sure your subclass of [`FSUnaryFileSystem`](fsunaryfilesystem.md) conforms 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 
 ---

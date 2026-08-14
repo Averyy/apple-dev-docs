@@ -29,7 +29,7 @@ A Boolean value that indicates whether the text view can handle the action messa
 
 #### Discussion
 
-This method is similar to [`responds(to:)`](https://developer.apple.com/documentation/ObjectiveC/NSObjectProtocol/responds(to:)), except that even if your text view implements the action message, it can decline to handle it by returning `false` from this method.
+This method is similar to [`responds(to:)`](https://developer.apple.com/documentation/objectivec/nsobjectprotocol/responds(to:)), except that even if your text view implements the action message, it can decline to handle it by returning `false` from this method.
 
 ## Parameters
 

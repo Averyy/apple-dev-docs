@@ -22,7 +22,7 @@ let kCGImageSourceShouldCache: CFString
 
 #### Discussion
 
-The value of this key is a [`CFBoolean`](https://developer.apple.com/documentation/CoreFoundation/CFBoolean). The default value is [`kCFBooleanTrue`](https://developer.apple.com/documentation/CoreFoundation/kCFBooleanTrue) for 64-bit architectures, and [`kCFBooleanFalse`](https://developer.apple.com/documentation/CoreFoundation/kCFBooleanFalse) for 32-bit architectures.
+The value of this key is a [`CFBoolean`](https://developer.apple.com/documentation/corefoundation/cfboolean). The default value is [`kCFBooleanTrue`](https://developer.apple.com/documentation/corefoundation/kcfbooleantrue) for 64-bit architectures, and [`kCFBooleanFalse`](https://developer.apple.com/documentation/corefoundation/kcfbooleanfalse) for 32-bit architectures.
 
 Include this key in the options dictionary you pass to the functions [`CGImageSourceCopyPropertiesAtIndex(_:_:_:)`](cgimagesourcecopypropertiesatindex(_:_:_:).md) and [`CGImageSourceCreateImageAtIndex(_:_:_:)`](cgimagesourcecreateimageatindex(_:_:_:).md).
 

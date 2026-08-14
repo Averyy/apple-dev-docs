@@ -63,7 +63,7 @@ Most volumes conform to either this protocol or [`FSVolume.ReadWriteHandler`](fs
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

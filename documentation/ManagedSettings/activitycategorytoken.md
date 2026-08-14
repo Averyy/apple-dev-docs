@@ -18,7 +18,7 @@ typealias ActivityCategoryToken = Token<ActivityCategory>
 
 #### Discussion
 
-Use `ActivityCategoryToken` to restrict and filter device applications without access to personal user data. [`FamilyActivitySelection`](https://developer.apple.com/documentation/FamilyControls/FamilyActivitySelection) provides tokens that devices within the same Family Sharing group can use to identify applications.
+Use `ActivityCategoryToken` to restrict and filter device applications without access to personal user data. [`FamilyActivitySelection`](https://developer.apple.com/documentation/familycontrols/familyactivityselection) provides tokens that devices within the same Family Sharing group can use to identify applications.
 
 ## See Also
 

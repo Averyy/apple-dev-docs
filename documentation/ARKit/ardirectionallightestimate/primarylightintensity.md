@@ -21,7 +21,7 @@ When ARKit analyzes the directional lighting environment for a detected face, th
 
 If your app displays AR content using a technology that doesn’t support environment-based lighting, this [`primaryLightIntensity`](ardirectionallightestimate/primarylightintensity.md) property represents the average of directional light sources in the scene. This value is scaled to be appropriate for use in rendering architectures that use realistic lighting metrics, with a value of 1000 representing neutral lighting.
 
-For example, you can pass this value directly to the [`intensity`](https://developer.apple.com/documentation/SceneKit/SCNLight/intensity) property of a SceneKit directional light for lighting results that roughly match those of the real-world scene captured by the device camera. (However, passing this value to SceneKit is generally not necessary; the [`ARSCNView`](arscnview.md) class automatically sets SceneKit lighting based on the [`sphericalHarmonicsCoefficients`](ardirectionallightestimate/sphericalharmonicscoefficients.md) property.)
+For example, you can pass this value directly to the [`intensity`](https://developer.apple.com/documentation/scenekit/scnlight/intensity) property of a SceneKit directional light for lighting results that roughly match those of the real-world scene captured by the device camera. (However, passing this value to SceneKit is generally not necessary; the [`ARSCNView`](arscnview.md) class automatically sets SceneKit lighting based on the [`sphericalHarmonicsCoefficients`](ardirectionallightestimate/sphericalharmonicscoefficients.md) property.)
 
 ## See Also
 

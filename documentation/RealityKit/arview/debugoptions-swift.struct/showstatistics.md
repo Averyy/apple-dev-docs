@@ -26,7 +26,7 @@ static let showStatistics: ARView.DebugOptions
 
 Add this debug option to a view’s [`debugOptions`](arview/debugoptions-swift.property.md) option set to display a variety of resource utilization metrics, overlaid on the view. The statistics update in real time so you can examine how your app performs and what resources it consumes under different usage conditions.
 
-![A screenshot of a RealityKit app running on an iPad, showing statistics in](https://docs-assets.developer.apple.com/published/4ae6ce5c8e636852322064a0932f33d4/ARView-DebugOptions-swift-struct-showStatistics-1%402x.png)
+![A screenshot of a RealityKit app running on an iPad, showing statistics in](/images/com.apple.RealityKit/ARView-DebugOptions-swift-struct-showStatistics-1@2x.png)
 
 For more information about how to use the data shown above and described below, see [`Improving the Performance of a RealityKit App`](improving-the-performance-of-a-realitykit-app.md).
 

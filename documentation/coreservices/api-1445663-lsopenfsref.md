@@ -36,8 +36,8 @@ Thread-safe since Mac OS version 10.2.
 
 ## Parameters
 
-- `inRef`: A pointer to a file-system reference designating the item to open; see the   in the Carbon File Management Documentation for a description of the   data type.
-- `outLaunchedRef`: A pointer to a file-system reference that, on return, will identify the application launched. Pass   if this information is unimportant.
+- `inRef`: A pointer to a file-system reference designating the item to open; see the *File Manager Reference* in the Carbon File Management Documentation for a description of the `FSRef` data type.
+- `outLaunchedRef`: A pointer to a file-system reference that, on return, will identify the application launched. Pass `NULL` if this information is unimportant.
 
 ## See Also
 

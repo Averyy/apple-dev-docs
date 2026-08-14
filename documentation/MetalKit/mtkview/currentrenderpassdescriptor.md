@@ -27,9 +27,9 @@ This property is `nil` if the view’s [`device`](mtkview/device.md) property is
 
 The view configures the render pass as follows:
 
-- If multisampling isn’t enabled—The color attachment at index 0 of the render pass descriptor points to the texture assigned to the current drawable, with a load action of [`MTLLoadAction.clear`](https://developer.apple.com/documentation/Metal/MTLLoadAction/clear) and a store action of [`MTLStoreAction.store`](https://developer.apple.com/documentation/Metal/MTLStoreAction/store).
-- If you’ve enabled multisampling—The color attachment at index 0 of the render pass descriptor points to the multisample texture, the resolve texture points to the texture assigned to the current drawable, and the attachment has a load action of [`MTLLoadAction.clear`](https://developer.apple.com/documentation/Metal/MTLLoadAction/clear) and a store action of [`MTLStoreAction.multisampleResolve`](https://developer.apple.com/documentation/Metal/MTLStoreAction/multisampleResolve).
-- If you’ve specified a depth or stencil target—The render pass configures the appropriate targets, with a load action of [`MTLLoadAction.clear`](https://developer.apple.com/documentation/Metal/MTLLoadAction/clear) and a store action of [`MTLStoreAction.dontCare`](https://developer.apple.com/documentation/Metal/MTLStoreAction/dontCare).
+- If multisampling isn’t enabled—The color attachment at index 0 of the render pass descriptor points to the texture assigned to the current drawable, with a load action of [`MTLLoadAction.clear`](https://developer.apple.com/documentation/metal/mtlloadaction/clear) and a store action of [`MTLStoreAction.store`](https://developer.apple.com/documentation/metal/mtlstoreaction/store).
+- If you’ve enabled multisampling—The color attachment at index 0 of the render pass descriptor points to the multisample texture, the resolve texture points to the texture assigned to the current drawable, and the attachment has a load action of [`MTLLoadAction.clear`](https://developer.apple.com/documentation/metal/mtlloadaction/clear) and a store action of [`MTLStoreAction.multisampleResolve`](https://developer.apple.com/documentation/metal/mtlstoreaction/multisampleresolve).
+- If you’ve specified a depth or stencil target—The render pass configures the appropriate targets, with a load action of [`MTLLoadAction.clear`](https://developer.apple.com/documentation/metal/mtlloadaction/clear) and a store action of [`MTLStoreAction.dontCare`](https://developer.apple.com/documentation/metal/mtlstoreaction/dontcare).
 
 ## See Also
 

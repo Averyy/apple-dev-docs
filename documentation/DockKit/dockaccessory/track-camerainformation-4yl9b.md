@@ -31,7 +31,7 @@ Disable system tracking, then supply the observations at a fixed rate between 10
 
 ## Parameters
 
-- `metadata`: An array of [`AVMetadataObject`](https://developer.apple.com/documentation/AVFoundation/AVMetadataObject) objects indicating the location of objects within the frame.
+- `metadata`: An array of [`AVMetadataObject`](https://developer.apple.com/documentation/avfoundation/avmetadataobject) objects indicating the location of objects within the frame.
 - `cameraInformation`: The camera in current use and its orientation.
 
 ## See Also

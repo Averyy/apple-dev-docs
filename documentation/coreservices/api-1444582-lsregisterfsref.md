@@ -28,8 +28,8 @@ Thread-safe since Mac OS version 10.3.
 
 ## Parameters
 
-- `inRef`: A pointer to a file-system reference designating the application to be registered; see the   in the Carbon File Management Documentation for a description of the   data type.
-- `inUpdate`: A Boolean value specifying whether Launch Services should update existing information registered for the application, if any. If this parameter is  , the application will not be registered if it has already been registered previously and its current modification date has not changed from when it was last registered; if the parameter is  , the application’s registered information will be updated even if its modification date has not changed.
+- `inRef`: A pointer to a file-system reference designating the application to be registered; see the *File Manager Reference* in the Carbon File Management Documentation for a description of the `FSRef` data type.
+- `inUpdate`: A Boolean value specifying whether Launch Services should update existing information registered for the application, if any. If this parameter is `false`, the application will not be registered if it has already been registered previously and its current modification date has not changed from when it was last registered; if the parameter is `true`, the application’s registered information will be updated even if its modification date has not changed.
 
 ## See Also
 

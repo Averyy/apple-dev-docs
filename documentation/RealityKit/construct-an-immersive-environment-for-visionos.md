@@ -26,7 +26,7 @@ This sample’s garden scene is a well-balanced environment.
 
 All shaders aren’t created equal. Physically based rendering (PBR) materials are considerably more complex than unlit materials, which just map a texture or color onto an object without requiring lighting calculations. Most 3D modeling applications provide a way to bake lighting into a texture, creating the illusion of a lighted entity. Baking lighting into your model’s textures isn’t always possible, but when you use an unlit material instead of a PBR material, you improve your environment’s performance. The sample app uses unlit materials as much as possible to limit pixel shader cost.
 
-When creating [`UnlitMaterial`](UnlitMaterial.md), pass `false` to the intializer’s `applyPostProcessToneMap` parameter for better performance and more accurate colors; for example:
+When creating [`UnlitMaterial`](unlitmaterial.md), pass `false` to the intializer’s `applyPostProcessToneMap` parameter for better performance and more accurate colors; for example:
 
 ```swift
 let material = UnlitMaterial(color: .white,
@@ -35,7 +35,7 @@ let material = UnlitMaterial(color: .white,
 
 You can also set `applyPostProcessToneMap` to `false` in Reality Composer Pro’s inspector by selecting a material in the hierarchy browser, and then selecting that material’s UnlitSurface node in the Shader Graph.
 
-![A screenshot of Reality Composer Pro's inspector showing the 'Apply Post Process Tone Box' checkbox.](https://docs-assets.developer.apple.com/published/5a51afe5c3b34c6bcc7a87e30b60cd93/Immersion-rcpro-applytonemap%402x~dark.png)
+![A screenshot of Reality Composer Pro's inspector showing the 'Apply Post Process Tone Box' checkbox.](/images/com.apple.RealityKit/Immersion-rcpro-applytonemap@2x~dark.png)
 
 Certain other settings can affect the complexity and performance of the shaders that RealityKit generates. For example, enabling transparency can add nontrivial overhead to the generated shader, as can using trilinear filtering on textures. For more information, see [`Improving the Performance of a RealityKit App`](improving-the-performance-of-a-realitykit-app.md).
 
@@ -49,7 +49,7 @@ To create your environment’s sky and distant objects, place a large dome over 
 
 Beyond a certain distance, a viewer can’t tell the difference between an entity and a rendered version of that entity mapped to the sky dome, but the texture-mapped version adds no vertices to the scene other than those needed to create the sky dome.
 
-![A screenshot of a sky dome in an outdoor environment.](https://docs-assets.developer.apple.com/published/4712e7f0ae0d5c6750dce59579c118b7/immersive-environment-skydome%402x.png)
+![A screenshot of a sky dome in an outdoor environment.](/images/com.apple.RealityKit/immersive-environment-skydome@2x.png)
 
 #### Use Geometry Efficiently
 
@@ -86,13 +86,13 @@ To control the lighting of your scene, provide an image-based lighting (IBL) tex
 }
 ```
 
-When using IBL in your scene, add an `ImageBasedLightReceiverComponent` to any entity in the scene using PBR materials, such as [`PhysicallyBasedMaterial`](PhysicallyBasedMaterial.md), [`SimpleMaterial`](SimpleMaterial.md), or materials created in Reality Composer’s Shader Graph of type `Physically Based`, or of type `Custom` that uses a `MaterialXPreviewSurface` shader node. If you don’t provide an IBL texture when using PBR materials, those materials render using RealityKit’s default IBL texture when in immersive mode.
+When using IBL in your scene, add an `ImageBasedLightReceiverComponent` to any entity in the scene using PBR materials, such as [`PhysicallyBasedMaterial`](physicallybasedmaterial.md), [`SimpleMaterial`](simplematerial.md), or materials created in Reality Composer’s Shader Graph of type `Physically Based`, or of type `Custom` that uses a `MaterialXPreviewSurface` shader node. If you don’t provide an IBL texture when using PBR materials, those materials render using RealityKit’s default IBL texture when in immersive mode.
 
 #### Instrument Your Environment
 
 Use the RealityKit Trace tool in Instruments to identify performance bottlenecks caused by your environment. With your project open in Xcode, select Product -> Analyze and choose the RealityKit Trace instrument. Click the red record button on the left side of the toolbar to start your app running. Use your app normally for a few minutes, then hit the same button again to stop recording. That button now shows a white square instead of the red circle to indicate the recording is in process. It takes a little bit of time for Instrument to process the recorded data after you stop it. For more information on the RealityKit Trace tool, see the [`Meet RealityKit Trace`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2023/10099/) video from WWDC23.
 
-![A screenshot of Instrument's RealityKit Trace results window with callouts numbered 1, 2, and 3 identifying elements of the window.](https://docs-assets.developer.apple.com/published/cd4872b4c162387e4a9155933816d32d/environment-instruments%402x.png)
+![A screenshot of Instrument's RealityKit Trace results window with callouts numbered 1, 2, and 3 identifying elements of the window.](/images/com.apple.RealityKit/environment-instruments@2x.png)
 
 Once Instruments finishes processing, expand the tool called RealityKit Metrics (1), and select the Reality Module called 3D Render (2). Look on the left side of the window and confirm that you can see Summary: Reality Module Metrics. The metrics in the bottom pane (3) provide information about the work your app’s shaders are doing behind the scenes.
 

@@ -16,7 +16,7 @@ var contentTimeForTransition: CMTime { get }
 
 #### Discussion
 
-The time value commonly marks the beginning of the end credits in a television show or movie. For other content, this may be at the very end of the video. The default value, [`indefinite`](https://developer.apple.com/documentation/CoreMedia/CMTime/indefinite), indicates that the transition should occur at the very end of the current player item’s end time; this is equivalent to using the duration of the asset.
+The time value commonly marks the beginning of the end credits in a television show or movie. For other content, this may be at the very end of the video. The default value, [`indefinite`](https://developer.apple.com/documentation/coremedia/cmtime/indefinite), indicates that the transition should occur at the very end of the current player item’s end time; this is equivalent to using the duration of the asset.
 
 ## See Also
 

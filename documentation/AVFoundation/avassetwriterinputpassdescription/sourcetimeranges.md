@@ -21,7 +21,7 @@ var sourceTimeRanges: [NSValue] { get }
 
 #### Discussion
 
-Each element in the array is an [`NSValue`](https://developer.apple.com/documentation/Foundation/NSValue) object that wraps a [`CMTimeRange`](https://developer.apple.com/documentation/CoreMedia/CMTimeRange) structure that represents one source time range. The value of this property is suitable to pass to the [`reset(forReadingTimeRanges:)`](avassetreaderoutput/reset(forreadingtimeranges:).md) method of [`AVAssetReaderOutput`](avassetreaderoutput.md).
+Each element in the array is an [`NSValue`](https://developer.apple.com/documentation/foundation/nsvalue) object that wraps a [`CMTimeRange`](https://developer.apple.com/documentation/coremedia/cmtimerange) structure that represents one source time range. The value of this property is suitable to pass to the [`reset(forReadingTimeRanges:)`](avassetreaderoutput/reset(forreadingtimeranges:).md) method of [`AVAssetReaderOutput`](avassetreaderoutput.md).
 
 
 ---

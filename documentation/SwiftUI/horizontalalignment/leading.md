@@ -28,7 +28,7 @@ static let leading: HorizontalAlignment
 
 Use this guide to align the leading edges of views. For a device that uses a left-to-right language, the leading edge is on the left:
 
-![A box that contains the word, Leading. Vertical](https://docs-assets.developer.apple.com/published/7bde2ddd5347556c261423c21c988e18/HorizontalAlignment-leading-1-iOS%402x.png)
+![A box that contains the word, Leading. Vertical](/images/com.apple.SwiftUI/HorizontalAlignment-leading-1-iOS@2x.png)
 
 The following code generates the image above using a [`VStack`](vstack.md):
 

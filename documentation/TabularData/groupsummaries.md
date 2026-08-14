@@ -35,7 +35,7 @@ protocol GroupSummaries : CustomStringConvertible
 ## Relationships
 
 ### Inherits From
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
 
 ## See Also
 

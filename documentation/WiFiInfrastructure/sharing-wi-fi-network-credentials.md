@@ -12,7 +12,7 @@ Use Wi-Fi Infrastructure to automatically share Wi-Fi network credentials after 
 
 #### Overview
 
-This sample project uses two app targets to demonstrate using [`AccessorySetupKit`](https://developer.apple.com/documentation/AccessorySetupKit) with [`Wi-Fi Infrastructure`](WiFiInfrastructure.md) to share Wi-Fi credentials with a Bluetooth accessory. The `ASKSampleWiFiAccessory` app target simulates a Bluetooth accessory that can receive Wi-Fi credentials, while the `WiFiNetworkSharingSample` app target demonstrates how to pair with the accessory and share network information.
+This sample project uses two app targets to demonstrate using [`AccessorySetupKit`](https://developer.apple.com/documentation/accessorysetupkit) with [`Wi-Fi Infrastructure`](WiFiInfrastructure.md) to share Wi-Fi credentials with a Bluetooth accessory. The `ASKSampleWiFiAccessory` app target simulates a Bluetooth accessory that can receive Wi-Fi credentials, while the `WiFiNetworkSharingSample` app target demonstrates how to pair with the accessory and share network information.
 
 The `ASKSampleWiFiAccessory` target simulates a Bluetooth dice accessory that advertises itself for pairing, receives Wi-Fi network credentials from the paired device, and sends dice roll results back over Bluetooth.
 
@@ -34,7 +34,7 @@ Because this sample has two targets, use the following steps to run this sample:
 
 ## See Also
 
-- [com.apple.developer.wifi-infrastructure](../BundleResources/Entitlements/com.apple.developer.wifi-infrastructure.md)
+- [com.apple.developer.wifi-infrastructure](../bundleresources/entitlements/com.apple.developer.wifi-infrastructure.md)
   The entitlement the system requires for an app to use the Wi-Fi Infrastructure framework.
 
 

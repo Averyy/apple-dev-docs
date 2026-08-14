@@ -20,7 +20,7 @@ var serviceSubscriberCellularProvidersDidUpdateNotifier: ((String) -> Void)? { g
 
 The block object executes on the default priority global dispatch queue when the user’s cellular provider information changes. This occurs, for example, if a user swaps the device’s SIM card with one from another provider, while your app is running.
 
-To handle changes in cellular service provider information, define a block in your app and assign it to this property. Implement the block to support being called from any context. To get the new information, use the [`NSString`](https://developer.apple.com/documentation/Foundation/NSString) (which contains the identifier of the service whose information has changed) as the key into [`serviceSubscriberCellularProviders`](cttelephonynetworkinfo/servicesubscribercellularproviders.md).
+To handle changes in cellular service provider information, define a block in your app and assign it to this property. Implement the block to support being called from any context. To get the new information, use the [`NSString`](https://developer.apple.com/documentation/foundation/nsstring) (which contains the identifier of the service whose information has changed) as the key into [`serviceSubscriberCellularProviders`](cttelephonynetworkinfo/servicesubscribercellularproviders.md).
 
 ## See Also
 
@@ -32,7 +32,7 @@ To handle changes in cellular service provider information, define a block in yo
   A block dispatched when the user’s cellular service provider information changes.
 - [var serviceSubscriberCellularProviders: [String : CTCarrier]?](cttelephonynetworkinfo/servicesubscribercellularproviders.md)
   A dictionary that contains carrier information about each service.
-- [static let CTRadioAccessTechnologyDidChange: NSNotification.Name](../Foundation/NSNotification/Name-swift.struct/CTRadioAccessTechnologyDidChange.md)
+- [static let CTRadioAccessTechnologyDidChange: NSNotification.Name](../foundation/nsnotification/name-swift.struct/ctradioaccesstechnologydidchange.md)
   The name of the notification indicating that the radio access technology changed for one of the services.
 
 

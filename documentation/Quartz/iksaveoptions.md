@@ -32,7 +32,7 @@ class IKSaveOptions
 - [var delegate: AnyObject!](iksaveoptions/delegate.md)
   Specifies the delegate object.
 ### File Type Filtering
-- [func saveOptions(IKSaveOptions!, shouldShowUTType: String!) -> Bool](../ObjectiveC/NSObject-swift.class/saveOptions(_:shouldShowUTType:).md)
+- [func saveOptions(IKSaveOptions!, shouldShowUTType: String!) -> Bool](../objectivec/nsobject-swift.class/saveoptions(_:shouldshowuttype:).md)
   Called to determine if the specified uniform type identifier should be shown in the save panel.
 ### Instance Properties
 - [var rememberLastSetting: Bool](iksaveoptions/rememberlastsetting.md)
@@ -42,14 +42,14 @@ class IKSaveOptions
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

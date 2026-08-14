@@ -16,7 +16,7 @@ func restoreWindow(withIdentifier identifier: NSUserInterfaceItemIdentifier, sta
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/Swift/true) if the window was restored; otherwise [`false`](https://developer.apple.com/documentation/Swift/false).
+[`true`](https://developer.apple.com/documentation/swift/true) if the window was restored; otherwise [`false`](https://developer.apple.com/documentation/swift/false).
 
 #### Discussion
 

@@ -21,10 +21,10 @@ By already supporting the [`accented`](widgetrenderingmode/accented.md) renderin
 
 To update your widget to support Liquid Glass:
 
-1. Add the [`widgetRenderingMode`](https://developer.apple.com/documentation/SwiftUI/EnvironmentValues/widgetRenderingMode) environment variable and conditionally update your widget layout for each rendering mode as explained in the previous section.
+1. Add the [`widgetRenderingMode`](https://developer.apple.com/documentation/swiftui/environmentvalues/widgetrenderingmode) environment variable and conditionally update your widget layout for each rendering mode as explained in the previous section.
 2. Display full-color images, page, or partially transparent content only for the [`fullColor`](widgetrenderingmode/fullcolor.md) rendering mode.
 3. Adjust your widget’s layout as needed for the [`accented`](widgetrenderingmode/accented.md) rendering mode.
-4. Group your views into a primary and an accent group using the [`widgetAccentable(_:)`](https://developer.apple.com/documentation/SwiftUI/View/widgetAccentable(_:)) view modifier. Views you don’t mark as accentable are part of the primary group.
+4. Group your views into a primary and an accent group using the [`widgetAccentable(_:)`](https://developer.apple.com/documentation/swiftui/view/widgetaccentable(_:)) view modifier. Views you don’t mark as accentable are part of the primary group.
 5. Configure the rendering of any image using the [`WidgetAccentedRenderingMode`](widgetaccentedrenderingmode.md) view modifier.
 
 ##### Choose Rendering Modes for Images and Views
@@ -38,7 +38,7 @@ Using the `WidgetAccentedRenderingMode` view modifier, conditionally render imag
 
 > 💡 **Tip**: Using `accented`, `desaturated`, or `accentedDesaturated` rendering modes helps the widget fit the system’s cohesive look on the Home Screen. Reserve the `fullColor` rendering mode for images that represent media content, such as album artwork or a book cover.
 
-To learn more about Liquid Glass and how to design and develop interfaces that work well with the material, refer to [`Liquid Glass`](https://developer.apple.com/documentation/TechnologyOverviews/liquid-glass) and [`Adopting Liquid Glass`](https://developer.apple.com/documentation/TechnologyOverviews/adopting-liquid-glass).
+To learn more about Liquid Glass and how to design and develop interfaces that work well with the material, refer to [`Liquid Glass`](https://developer.apple.com/documentation/technologyoverviews/liquid-glass) and [`Adopting Liquid Glass`](https://developer.apple.com/documentation/technologyoverviews/adopting-liquid-glass).
 
 ## See Also
 

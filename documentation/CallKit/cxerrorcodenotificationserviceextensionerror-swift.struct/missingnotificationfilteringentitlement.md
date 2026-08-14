@@ -22,7 +22,7 @@ static var missingNotificationFilteringEntitlement: CXErrorCodeNotificationServi
 
 To call the [`reportNewIncomingVoIPPushPayload(_:completion:)`](cxprovider/reportnewincomingvoippushpayload(_:completion:).md) method, a notification service extension must have a `com.apple.developer.usernotifications.filtering` entitlement. To apply for this entitlement, see [`https://developer.apple.com/contact/request/notification-service`](https://developer.apple.comhttps://developer.apple.com/contact/request/notification-service).
 
-After you receive permission to use the entitlement, add [`com.apple.developer.usernotifications.filtering`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.usernotifications.filtering) to the entitlements file for the Notification Service Extension target.
+After you receive permission to use the entitlement, add [`com.apple.developer.usernotifications.filtering`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.usernotifications.filtering) to the entitlements file for the Notification Service Extension target.
 
 ## See Also
 

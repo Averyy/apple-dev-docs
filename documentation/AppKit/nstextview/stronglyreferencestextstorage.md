@@ -16,7 +16,7 @@ class var stronglyReferencesTextStorage: Bool { get }
 
 #### Discussion
 
-The default value is [`true`](https://developer.apple.com/documentation/Swift/true).
+The default value is [`true`](https://developer.apple.com/documentation/swift/true).
 
 Under the policy, each text view strongly retains its text storage and its text container weakly references the view. In addition, the text views are compatible with `__weak storage`.
 

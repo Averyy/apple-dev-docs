@@ -22,7 +22,7 @@ class AVPlayerVideoOutput
 
 #### Overview
 
-Attach a video output to an [`AVPlayer`](avplayer.md) object to access the player’s video data as [`CMTaggedBufferGroupRef`](https://developer.apple.com/documentation/CoreMedia/CMTaggedBufferGroupRef) objects.
+Attach a video output to an [`AVPlayer`](avplayer.md) object to access the player’s video data as [`CMTaggedBufferGroupRef`](https://developer.apple.com/documentation/coremedia/cmtaggedbuffergroupref) objects.
 
 > ❗ **Important**:  You can only attach an instance of this class to a single player at a time. Attempting to attach the instance to more than one player results in the system raising an exception.
 
@@ -43,16 +43,16 @@ Attach a video output to an [`AVPlayer`](avplayer.md) object to access the playe
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

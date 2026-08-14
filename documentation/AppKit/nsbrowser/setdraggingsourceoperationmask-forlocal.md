@@ -21,7 +21,7 @@ func setDraggingSourceOperationMask(_ mask: NSDragOperation, forLocal isLocal: B
 ## Parameters
 
 - `mask`: Dragging operation mask to use for either local or external drag operations, as specified by localDestination.
-- `isLocal`: Indicates the location of the dragging operation’s destination object: [`true`](https://developer.apple.com/documentation/Swift/true) for this application; [`false`](https://developer.apple.com/documentation/Swift/false) for another application.
+- `isLocal`: Indicates the location of the dragging operation’s destination object: [`true`](https://developer.apple.com/documentation/swift/true) for this application; [`false`](https://developer.apple.com/documentation/swift/false) for another application.
 
 ## See Also
 

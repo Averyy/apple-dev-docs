@@ -43,12 +43,12 @@ You use this value with [`AVEncoderAudioQualityKey`](avencoderaudioqualitykey.md
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../Swift/BitwiseCopyable.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [RawRepresentable](../Swift/RawRepresentable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [BitwiseCopyable](../swift/bitwisecopyable.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [RawRepresentable](../swift/rawrepresentable.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 
@@ -58,7 +58,7 @@ You use this value with [`AVEncoderAudioQualityKey`](avencoderaudioqualitykey.md
   A constant that represents an integer from the audio quality enumeration.
 - [Encoder Settings](encoder-settings.md)
   The constants that define the audio encoder settings for the audio recorder class.
-- [Time pitch algorithm settings](../AVFoundation/time-pitch-algorithm-settings.md)
+- [Time pitch algorithm settings](../avfoundation/time-pitch-algorithm-settings.md)
   The constants that define the values for the time pitch algorithms.
 
 

@@ -22,7 +22,7 @@ let kCVImageBufferDisplayDimensionsKey: CFString
 
 #### Discussion
 
-The dictionary is of type [`CFDictionary`](https://developer.apple.com/documentation/CoreFoundation/CFDictionary). See [`Image Buffer Display Dimensions Keys`](image-buffer-display-dimensions-keys.md) for more information.
+The dictionary is of type [`CFDictionary`](https://developer.apple.com/documentation/corefoundation/cfdictionary). See [`Image Buffer Display Dimensions Keys`](image-buffer-display-dimensions-keys.md) for more information.
 
 ## See Also
 

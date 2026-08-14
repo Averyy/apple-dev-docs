@@ -39,9 +39,9 @@ The spot color filter uses the following properties:
 - **`closeness1`**: A `float` representing how closely the first center color must match before it’s replaced.
 - **`closeness2`**: A `float` representing how closely the second center color must match before it’s replaced.
 - **`closeness3`**: A `float` representing how closely the third center color must match before it’s replaced.
-- **`contrast1`**: A `float` representing the contrast of the first replacement color as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
-- **`contrast2`**: A `float` representing the contrast of the second replacement color as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
-- **`contrast3`**: A `float` representing the contrast of the third replacement color as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+- **`contrast1`**: A `float` representing the contrast of the first replacement color as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
+- **`contrast2`**: A `float` representing the contrast of the second replacement color as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
+- **`contrast3`**: A `float` representing the contrast of the third replacement color as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
 
 The following code creates a filter that replaces the colors of the input image with the specified colors:
 
@@ -57,7 +57,7 @@ func spotColor(inputImage: CIImage) -> CIImage {
 }
 ```
 
-![Two pictures of a pink flower surrounded by foliage. The photo on the left has no modifications to color. In the photo on the right, a spot color filter is applied, resulting in less color in the image with the center flower becoming brown and the foliage becoming a solid light green.](https://docs-assets.developer.apple.com/published/dcedae989b297f2e9f4808e6bebae13a/media-3600008%402x.png)
+![Two pictures of a pink flower surrounded by foliage. The photo on the left has no modifications to color. In the photo on the right, a spot color filter is applied, resulting in less color in the image with the center flower becoming brown and the foliage becoming a solid light green.](/images/com.apple.coreimage/media-3600008@2x.png)
 
 ## See Also
 

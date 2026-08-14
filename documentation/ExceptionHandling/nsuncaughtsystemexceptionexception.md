@@ -18,7 +18,7 @@ let NSUncaughtSystemExceptionException: String
 ## See Also
 
 - [let NSStackTraceKey: String](nsstacktracekey.md)
-  The key for fetching the stack trace (an [`NSString`](https://developer.apple.com/documentation/Foundation/NSString) object) in the [`userInfo`](https://developer.apple.com/documentation/Foundation/NSException/userInfo-swift.property) dictionary of the [`NSException`](https://developer.apple.com/documentation/Foundation/NSException) object passed into one of the delegate methods described in [`NSExceptionHandlerDelegate`](nsexceptionhandlerdelegate#Logging-and-handling-exceptions.md).
+  The key for fetching the stack trace (an [`NSString`](https://developer.apple.com/documentation/foundation/nsstring) object) in the [`userInfo`](https://developer.apple.com/documentation/foundation/nsexception/userinfo-swift.property) dictionary of the [`NSException`](https://developer.apple.com/documentation/foundation/nsexception) object passed into one of the delegate methods described in [`NSExceptionHandlerDelegate`](nsexceptionhandlerdelegate.md).
 - [let NSUncaughtRuntimeErrorException: String](nsuncaughtruntimeerrorexception.md)
   Identifies an Objective-C runtime error.
 

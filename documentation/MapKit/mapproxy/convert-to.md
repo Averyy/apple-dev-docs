@@ -22,7 +22,7 @@ func convert(_ coordinate: CLLocationCoordinate2D, to space: some CoordinateSpac
 
 #### Return Value
 
-Returns a [`CGPoint`](https://developer.apple.com/documentation/CoreFoundation/CGPoint); otherwise `nil`, if `coordinate` isn’t represented by a point in the [`MapReader`](mapreader.md) associated with a [`Map`](map.md).
+Returns a [`CGPoint`](https://developer.apple.com/documentation/corefoundation/cgpoint); otherwise `nil`, if `coordinate` isn’t represented by a point in the [`MapReader`](mapreader.md) associated with a [`Map`](map.md).
 
 ## Parameters
 

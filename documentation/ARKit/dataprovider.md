@@ -33,9 +33,9 @@ Most providers supply an asynchronous sequence of updated anchors for the provid
 ## Relationships
 
 ### Inherits From
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 ### Conforming Types
 - [AccessoryTrackingProvider](accessorytrackingprovider.md)
 - [BarcodeDetectionProvider](barcodedetectionprovider.md)
@@ -55,7 +55,7 @@ Most providers supply an asynchronous sequence of updated anchors for the provid
 
 ## See Also
 
-- [Setting up access to ARKit data](../visionOS/setting-up-access-to-arkit-data.md)
+- [Setting up access to ARKit data](../visionos/setting-up-access-to-arkit-data.md)
   Check whether your app can use ARKit and respect people’s privacy.
 - [class ARKitSession](arkitsession.md)
   The main entry point for receiving data from ARKit.

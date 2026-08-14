@@ -20,7 +20,7 @@ final var contentsRect: CGRect { get }
 
 #### Discussion
 
-If the interaction’s view isn’t an instance of [`UIImageView`](https://developer.apple.com/documentation/UIKit/UIImageView), your app sets the value for this property by implementing the [`ImageAnalysisInteractionDelegate`](imageanalysisinteractiondelegate.md) callback [`contentsRect(for:)`](imageanalysisinteractiondelegate/contentsrect(for:).md). The default return value is the unit rectangle, `[0.0, 0.0, 1.0, 1.0]`, which represents the whole view contents.
+If the interaction’s view isn’t an instance of [`UIImageView`](https://developer.apple.com/documentation/uikit/uiimageview), your app sets the value for this property by implementing the [`ImageAnalysisInteractionDelegate`](imageanalysisinteractiondelegate.md) callback [`contentsRect(for:)`](imageanalysisinteractiondelegate/contentsrect(for:).md). The default return value is the unit rectangle, `[0.0, 0.0, 1.0, 1.0]`, which represents the whole view contents.
 
 ## See Also
 

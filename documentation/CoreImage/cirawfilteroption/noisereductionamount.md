@@ -21,7 +21,7 @@ static let noiseReductionAmount: CIRAWFilterOption
 
 #### Discussion
 
-The associated value must be an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) object that specifies a floating-point value between `0.0` and `1.0`. The value has no effect if the image used for initialization is not RAW.
+The associated value must be an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) object that specifies a floating-point value between `0.0` and `1.0`. The value has no effect if the image used for initialization is not RAW.
 
 ## See Also
 

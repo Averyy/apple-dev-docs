@@ -16,7 +16,7 @@ optional var pixelFormatsWithReducedResolutionDecodeSupport: [NSNumber] { get }
 
 #### Discussion
 
-This array contains [`CMPixelFormatType`](https://developer.apple.com/documentation/CoreMedia/CMPixelFormatType) values. The system queries this property on the extension when [`Video Toolbox`](https://developer.apple.com/documentation/VideoToolbox) queries the [`kVTDecompressionPropertyKey_PixelFormatsWithReducedResolutionSupport`](https://developer.apple.com/documentation/VideoToolbox/kVTDecompressionPropertyKey_PixelFormatsWithReducedResolutionSupport) on the hosting [`VTDecompressionSession`](https://developer.apple.com/documentation/VideoToolbox/VTDecompressionSession).
+This array contains [`CMPixelFormatType`](https://developer.apple.com/documentation/coremedia/cmpixelformattype) values. The system queries this property on the extension when [`Video Toolbox`](https://developer.apple.com/documentation/videotoolbox) queries the [`kVTDecompressionPropertyKey_PixelFormatsWithReducedResolutionSupport`](https://developer.apple.com/documentation/videotoolbox/kvtdecompressionpropertykey_pixelformatswithreducedresolutionsupport) on the hosting [`VTDecompressionSession`](https://developer.apple.com/documentation/videotoolbox/vtdecompressionsession).
 
 ## See Also
 

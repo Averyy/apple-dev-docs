@@ -19,14 +19,14 @@ let MFMailComposeErrorDomain: String
 
 #### Discussion
 
-The error domain associated with [`NSError`](https://developer.apple.com/documentation/Foundation/NSError) objects.
+The error domain associated with [`NSError`](https://developer.apple.com/documentation/foundation/nserror) objects.
 
 ## See Also
 
 - [struct MFMailComposeError](mfmailcomposeerror.md)
   Mail composition errors.
 - [MFMailComposeError.Code](mfmailcomposeerror/code.md)
-  Error codes for [`NSError`](https://developer.apple.com/documentation/Foundation/NSError) objects that are associated with the mail composition interface.
+  Error codes for [`NSError`](https://developer.apple.com/documentation/foundation/nserror) objects that are associated with the mail composition interface.
 
 
 ---

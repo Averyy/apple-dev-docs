@@ -16,7 +16,7 @@ var selectedSegment: Int { get set }
 
 #### Discussion
 
-If the control allows multiple selections, this property contains the most recently selected segment. If the index is out of bounds, an exception ([`rangeException`](https://developer.apple.com/documentation/Foundation/NSExceptionName/rangeException)) is raised.
+If the control allows multiple selections, this property contains the most recently selected segment. If the index is out of bounds, an exception ([`rangeException`](https://developer.apple.com/documentation/foundation/nsexceptionname/rangeexception)) is raised.
 
 ## See Also
 

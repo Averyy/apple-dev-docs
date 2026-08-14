@@ -23,7 +23,7 @@ func prepareInterfaceToChangePassword(for serviceIdentifier: ASCredentialService
 
 #### Discussion
 
-If the extension’s `Info.plist` file includes the [`ASAccountAuthenticationModificationPasswordGenerationRequirements`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSExtension/ASAccountAuthenticationModificationPasswordGenerationRequirements) key, the value of `newPassword` satisfies the specified requirements.
+If the extension’s `Info.plist` file includes the [`ASAccountAuthenticationModificationPasswordGenerationRequirements`](https://developer.apple.com/documentation/bundleresources/information-property-list/nsextension/asaccountauthenticationmodificationpasswordgenerationrequirements) key, the value of `newPassword` satisfies the specified requirements.
 
 ## Parameters
 
@@ -36,11 +36,11 @@ If the extension’s `Info.plist` file includes the [`ASAccountAuthenticationMod
 
 - [func changePasswordWithoutUserInteraction(for: ASCredentialServiceIdentifier, existingCredential: ASPasswordCredential, newPassword: String, userInfo: [AnyHashable : Any]?)](asaccountauthenticationmodificationviewcontroller/changepasswordwithoutuserinteraction(for:existingcredential:newpassword:userinfo:).md)
   Upgrades a user’s weak password to a strong password.
-- [ASAccountAuthenticationModificationSupportsStrongPasswordChange](../BundleResources/Information-Property-List/NSExtension/ASAccountAuthenticationModificationSupportsStrongPasswordChange.md)
+- [ASAccountAuthenticationModificationSupportsStrongPasswordChange](../bundleresources/information-property-list/nsextension/asaccountauthenticationmodificationsupportsstrongpasswordchange.md)
   A Boolean value that indicates whether the extension supports upgrading a user’s password to a strong password.
-- [ASAccountAuthenticationModificationPasswordGenerationRequirements](../BundleResources/Information-Property-List/NSExtension/ASAccountAuthenticationModificationPasswordGenerationRequirements.md)
+- [ASAccountAuthenticationModificationPasswordGenerationRequirements](../bundleresources/information-property-list/nsextension/asaccountauthenticationmodificationpasswordgenerationrequirements.md)
   The rules the system satisfies when generating a strong password for your extension during an automatic upgrade.
-- [ASAccountAuthenticationModificationOptOutOfSecurityPromptsOnSignIn](../BundleResources/Information-Property-List/ASAccountAuthenticationModificationOptOutOfSecurityPromptsOnSignIn.md)
+- [ASAccountAuthenticationModificationOptOutOfSecurityPromptsOnSignIn](../bundleresources/information-property-list/asaccountauthenticationmodificationoptoutofsecuritypromptsonsignin.md)
   A Boolean value that indicates the system shouldn’t show security recommendation prompts when users sign in using the app.
 
 

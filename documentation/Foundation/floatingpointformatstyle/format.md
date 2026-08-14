@@ -36,7 +36,7 @@ let nums = [100.1, 1000.2, 10000.3, 100000.4, 1000000.5]
 let formattedNums = nums.map { scientificStyle.format($0) } // ["1.001E2", "1.0002E3", "1.00003E4", "1.000004E5", "1E6"]
 ```
 
-To format a single floating-point value, use the [`BinaryFloatingPoint`](https://developer.apple.com/documentation/Swift/BinaryFloatingPoint) instance method [`formatted(_:)`](https://developer.apple.com/documentation/Swift/BinaryFloatingPoint/formatted(_:)-4ksqj), passing in an instance of [`FloatingPointFormatStyle`](floatingpointformatstyle.md), or [`formatted()`](https://developer.apple.com/documentation/Swift/BinaryFloatingPoint/formatted()) to use a default style.
+To format a single floating-point value, use the [`BinaryFloatingPoint`](https://developer.apple.com/documentation/swift/binaryfloatingpoint) instance method [`formatted(_:)`](https://developer.apple.com/documentation/swift/binaryfloatingpoint/formatted(_:)-4ksqj), passing in an instance of [`FloatingPointFormatStyle`](floatingpointformatstyle.md), or [`formatted()`](https://developer.apple.com/documentation/swift/binaryfloatingpoint/formatted()) to use a default style.
 
 ## Parameters
 

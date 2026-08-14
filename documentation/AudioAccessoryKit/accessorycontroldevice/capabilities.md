@@ -7,7 +7,6 @@ A set of capabilities that an audio accessory supports.
 
 **Availability**:
 - iOS 26.4+
-- iPadOS 26.4+
 
 ## Declaration
 
@@ -35,13 +34,13 @@ The [`AccessoryControlDevice`](accessorycontroldevice.md) class’s initializer 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../Swift/Equatable.md)
-- [ExpressibleByArrayLiteral](../Swift/ExpressibleByArrayLiteral.md)
-- [OptionSet](../Swift/OptionSet.md)
-- [RawRepresentable](../Swift/RawRepresentable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
-- [SetAlgebra](../Swift/SetAlgebra.md)
+- [Equatable](../swift/equatable.md)
+- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
+- [OptionSet](../swift/optionset.md)
+- [RawRepresentable](../swift/rawrepresentable.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
+- [SetAlgebra](../swift/setalgebra.md)
 
 ## See Also
 

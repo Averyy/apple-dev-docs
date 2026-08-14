@@ -14,7 +14,7 @@ Testing win-back offers in Xcode is convenient early in the development process,
 
 ##### Perform Basic Setup
 
-Before you can begin testing in Xcode, complete the steps in [`Setting up StoreKit Testing in Xcode`](https://developer.apple.com/documentation/Xcode/setting-up-storekit-testing-in-xcode), including creating a StoreKit configuration file and enabling StoreKit testing in Xcode.
+Before you can begin testing in Xcode, complete the steps in [`Setting up StoreKit Testing in Xcode`](https://developer.apple.com/documentation/xcode/setting-up-storekit-testing-in-xcode), including creating a StoreKit configuration file and enabling StoreKit testing in Xcode.
 
 ##### Configure Win Back Offers for Testing
 
@@ -42,7 +42,7 @@ To display a win-back offer, run your app in the Xcode environment and follow th
 4. Wait for the canceled subscription to expire. The system makes the win-back offer available to redeem as soon as the subscription expires.
 5. In your app, open your store. Examine your app’s implementation of the win-back offer. For example, if your app uses [`StoreKit views`](storekit-views.md), the eligible offers appear automatically when your app displays a [`SubscriptionStoreView`](subscriptionstoreview.md).
 
-For more information about using the transaction manager, see [`Testing in-app purchases with StoreKit transaction manager in Xcode`](https://developer.apple.com/documentation/Xcode/testing-in-app-purchases-with-storeKit-transaction-manager-in-code).
+For more information about using the transaction manager, see [`Testing in-app purchases with StoreKit transaction manager in Xcode`](https://developer.apple.com/documentation/xcode/testing-in-app-purchases-with-storekit-transaction-manager-in-code).
 
 ##### Reset or Rerun the Test
 

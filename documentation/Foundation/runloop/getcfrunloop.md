@@ -22,7 +22,7 @@ func getCFRunLoop() -> CFRunLoop
 
 #### Return Value
 
-The receiver’s underlying [`CFRunLoop`](https://developer.apple.com/documentation/CoreFoundation/CFRunLoop) object.
+The receiver’s underlying [`CFRunLoop`](https://developer.apple.com/documentation/corefoundation/cfrunloop) object.
 
 #### Discussion
 

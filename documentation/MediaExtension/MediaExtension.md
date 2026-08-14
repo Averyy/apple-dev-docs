@@ -11,7 +11,7 @@ This framework provides a means for developers to create format readers, video d
 
 #### Overview
 
-MediaExtension format readers encapsulate media assets that the system doesn’t natively support so that the system can recognize them. MediaExtension video decoders decode video formats that the system doesn’t natively support. MediaExtension RAW processors work together with video decoders to allow direct control over the RAW decoding process. Developers need to build format readers, video decoders, and RAW processors as [`ExtensionKit`](https://developer.apple.com/documentation/ExtensionKit) bundles and embed them in a host app. Once a user installs and runs the host app, the embedded extensions become available to any app on the user’s system that opts in to using them.
+MediaExtension format readers encapsulate media assets that the system doesn’t natively support so that the system can recognize them. MediaExtension video decoders decode video formats that the system doesn’t natively support. MediaExtension RAW processors work together with video decoders to allow direct control over the RAW decoding process. Developers need to build format readers, video decoders, and RAW processors as [`ExtensionKit`](https://developer.apple.com/documentation/extensionkit) bundles and embed them in a host app. Once a user installs and runs the host app, the embedded extensions become available to any app on the user’s system that opts in to using them.
 
 ## Topics
 

@@ -27,7 +27,7 @@ var activeFormat: AVCaptureDevice.Format { get set }
 
 In iOS, a device’s active format and a capture session’s [`sessionPreset`](avcapturesession/sessionpreset.md) are mutually exclusive. If you set a device’s active format, the session to which it’s attached changes its preset to [`inputPriority`](avcapturesession/preset/inputpriority.md). Likewise if you set a preset on a capture session, the session assumes control of its input devices, and configures their active format appropriately.
 
-> **Note**:  Audio devices don’t expose any user-configurable formats in iOS. To configure audio input on iOS, use [`AVAudioSession`](https://developer.apple.com/documentation/AVFAudio/AVAudioSession) and its related APIs instead.
+> **Note**:  Audio devices don’t expose any user-configurable formats in iOS. To configure audio input on iOS, use [`AVAudioSession`](https://developer.apple.com/documentation/avfaudio/avaudiosession) and its related APIs instead.
 
 Set the [`activeFormat`](avcapturedevice/activeformat.md), [`activeVideoMinFrameDuration`](avcapturedevice/activevideominframeduration.md), and [`activeVideoMaxFrameDuration`](avcapturedevice/activevideomaxframeduration.md) properties simultaneously by performing the configuration between calls to the session’s [`beginConfiguration()`](avcapturesession/beginconfiguration().md) and [`commitConfiguration()`](avcapturesession/commitconfiguration().md) methods.
 

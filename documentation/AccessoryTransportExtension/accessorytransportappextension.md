@@ -24,11 +24,11 @@ protocol AccessoryTransportAppExtension : AppExtension
 
 Implement this protocol in an extension with an `EXExtensionPointIdentifier` value of `com.apple.accessory-transport-extension` to relay data to your accessory. The extension supports sharing Wi-Fi networks and forwarding iOS system notifications.
 
-> ❗ **Important**: The system requires your app extension to have the [`com.apple.developer.accessory-transport-extension`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.accessory-transport-extension) entitlement to use this protocol.
+> ❗ **Important**: The system requires your app extension to have the [`com.apple.developer.accessory-transport-extension`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.accessory-transport-extension) entitlement to use this protocol.
 
 #### Wi Fi Network Sharing
 
-Use this extension with [`Wi-Fi Infrastructure`](https://developer.apple.com/documentation/WiFiInfrastructure) to share a Wi-Fi network with your accessory. The system calls your extension’s [`accept(sessionRequest:)`](accessorytransportappextension/accept(sessionrequest:).md) method when it needs to establish a transport session for Wi-Fi sharing.
+Use this extension with [`Wi-Fi Infrastructure`](https://developer.apple.com/documentation/wifiinfrastructure) to share a Wi-Fi network with your accessory. The system calls your extension’s [`accept(sessionRequest:)`](accessorytransportappextension/accept(sessionrequest:).md) method when it needs to establish a transport session for Wi-Fi sharing.
 
 In your extension’s target properties, specify the extension point identifier:
 
@@ -63,7 +63,7 @@ class MyTransportEventHandler: AccessoryTransportSession.EventHandler {
 }
 ```
 
-After accepting a session, your extension connects directly to the accessory using [`ASAccessorySession`](https://developer.apple.com/documentation/AccessorySetupKit/ASAccessorySession) and delivers Wi-Fi network data using [`WINetworkSharingProvider`](https://developer.apple.com/documentation/WiFiInfrastructure/WINetworkSharingProvider).
+After accepting a session, your extension connects directly to the accessory using [`ASAccessorySession`](https://developer.apple.com/documentation/accessorysetupkit/asaccessorysession) and delivers Wi-Fi network data using [`WINetworkSharingProvider`](https://developer.apple.com/documentation/wifiinfrastructure/winetworksharingprovider).
 
 #### Notification Forwarding
 
@@ -113,7 +113,7 @@ The system encrypts data using keys through your app’s [`AccessoryTransportSec
 ## Relationships
 
 ### Inherits From
-- [AppExtension](../ExtensionFoundation/AppExtension.md)
+- [AppExtension](../extensionfoundation/appextension.md)
 
 ## See Also
 
@@ -121,7 +121,7 @@ The system encrypts data using keys through your app’s [`AccessoryTransportSec
   An interface that enables you to configure and manage communication between your extension and the system.
 - [class AccessoryTransportSession](accessorytransportsession.md)
   A class that manages a transport session between the extension and the system.
-- [Wi-Fi Infrastructure](../WiFiInfrastructure/WiFiInfrastructure.md)
+- [Wi-Fi Infrastructure](../wifiinfrastructure/wifiinfrastructure.md)
   Share Wi-Fi network credentials securely between devices and connected accessories.
 
 

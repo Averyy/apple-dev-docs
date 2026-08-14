@@ -22,7 +22,7 @@ unowned(unsafe) var textStorage: NSTextStorage? { get set }
 
 - [func addLayoutManager(NSLayoutManager)](nstextstorage/addlayoutmanager(_:).md)
   Adds a layout manager to the text storage object’s set of layout managers.
-- [func replaceTextStorage(NSTextStorage)](../AppKit/NSLayoutManager/replaceTextStorage(_:).md)
+- [func replaceTextStorage(NSTextStorage)](../appkit/nslayoutmanager/replacetextstorage(_:).md)
   Replaces the layout manager’s current text storage object with the specified object.
 
 

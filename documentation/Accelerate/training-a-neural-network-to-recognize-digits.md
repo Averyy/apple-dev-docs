@@ -43,7 +43,7 @@ The optimizer’s gradual changes to the weights, bias, beta, and gamma increase
 
 The image below shows the relationships between the layers:
 
-![A flow diagram that shows the flow of information during the training phase of the sample code project.](https://docs-assets.developer.apple.com/published/ddfb3aca1226c12e9b9d39e5f9b01151/flow_2x.png)
+![A flow diagram that shows the flow of information during the training phase of the sample code project.](/images/com.apple.accelerate/flow_2x.png)
 
 ##### Define the Filter Parameters
 
@@ -385,7 +385,7 @@ adam.timeStep += 1
 
 The sample iterates over the forward, loss, backward, and optimization steps, and with each iteration, the trend of the loss is to reduce. The following graph shows the loss, as a solid stroke, decreasing during training:
 
-![A graph with loss as the y-axis and training epochs as the x-axis that shows loss decreasing during training.](https://docs-assets.developer.apple.com/published/2194b12e310fe2c0d14164f29ae8d4b3/loss_2x.png)
+![A graph with loss as the y-axis and training epochs as the x-axis that shows loss decreasing during training.](/images/com.apple.accelerate/loss_2x.png)
 
 The code in the sample defines a maximum number of iterations. Additionally, it calculates a moving average of recent loss values, which appear as a dashed stroke in the graph above. At each iteration, the sample checks whether the recent average loss is below that threshold, and, if it is, it breaks from the training phase early.
 

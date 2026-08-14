@@ -111,8 +111,8 @@ class AudioHardwareDevice
 ### Inherited By
 - [AudioHardwareAggregateDevice](audiohardwareaggregatedevice.md)
 ### Conforms To
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 
 ---

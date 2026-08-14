@@ -12,11 +12,11 @@ Reduce or remove periodic artifacts from images.
 
 Accelerate’s vDSP module provides functions to perform 2D fast Fourier transforms (FFTs) on matrices of data, such as images. You can exploit the amplitude peaks in the frequency domain of periodic patterns, such as halftone screens, to reduce or remove such artifacts from images. The example below shows an image with halftone artifacts (left) and the same image with the halftone artifacts reduced (right):
 
-![A comparison of the original image of a flower with its descreened counterpart. A zoomed-in segment of the original image shows pronounced diagonal halftone lines. In the descreened image, the same close-up segment appears smoother, with more continuous tones.](https://docs-assets.developer.apple.com/published/cd044b250fdee1c6b64487d5224b8aca/halftone_descreen_2x.png)
+![A comparison of the original image of a flower with its descreened counterpart. A zoomed-in segment of the original image shows pronounced diagonal halftone lines. In the descreened image, the same close-up segment appears smoother, with more continuous tones.](/images/com.apple.accelerate/halftone_descreen_2x.png)
 
 The sample app reduces halftone artifacts from a source image by first performing forward FFTs on the image and a halftone screen sample. The following image shows the positive frequencies of the halftone sample’s frequency-domain representation. For more information on performing Fourier transforms on 2D data, see [`Understanding data packing for Fourier transforms`](understanding-data-packing-for-fourier-transforms.md).
 
-![An image of the frequency-domain representation of the halftone screen containing a series of bright star shapes. The stars follow a diagonal path from the top-left to the middle-right of the image and decrease in size from left to right.](https://docs-assets.developer.apple.com/published/2c27cb3bb371156d18d1cf4e2a1b9279/halftone_frequency_domain_2x.png)
+![An image of the frequency-domain representation of the halftone screen containing a series of bright star shapes. The stars follow a diagonal path from the top-left to the middle-right of the image and decrease in size from left to right.](/images/com.apple.accelerate/halftone_frequency_domain_2x.png)
 
 The descreening operation zeroes frequency-domain values in the source image that correspond to the bright peaks in the halftone sample’s frequency-domain values.
 

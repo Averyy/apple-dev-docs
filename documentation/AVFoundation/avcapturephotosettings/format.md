@@ -24,8 +24,8 @@ This property is read-only—you specify a processed format when creating a sett
 
 When capturing images in processed formats, the following requirements apply:
 
-- This dictionary must contain a value for either the [`kCVPixelBufferPixelFormatTypeKey`](https://developer.apple.com/documentation/CoreVideo/kCVPixelBufferPixelFormatTypeKey) (to request an uncompressed format) or [`AVVideoCodecKey`](avvideocodeckey.md) (to request a compressed format such as JPEG) key, but not both.
-- If this dictionary has the [`kCVPixelBufferPixelFormatTypeKey`](https://developer.apple.com/documentation/CoreVideo/kCVPixelBufferPixelFormatTypeKey) key, the value for that key must be listed in the photo output’s [`availablePhotoPixelFormatTypes`](avcapturephotooutput/availablephotopixelformattypes-6eyb.md) array.
+- This dictionary must contain a value for either the [`kCVPixelBufferPixelFormatTypeKey`](https://developer.apple.com/documentation/corevideo/kcvpixelbufferpixelformattypekey) (to request an uncompressed format) or [`AVVideoCodecKey`](avvideocodeckey.md) (to request a compressed format such as JPEG) key, but not both.
+- If this dictionary has the [`kCVPixelBufferPixelFormatTypeKey`](https://developer.apple.com/documentation/corevideo/kcvpixelbufferpixelformattypekey) key, the value for that key must be listed in the photo output’s [`availablePhotoPixelFormatTypes`](avcapturephotooutput/availablephotopixelformattypes-6eyb.md) array.
 
 If this dictionary has the [`AVVideoCodecKey`](avvideocodeckey.md) key, the value for that key must be listed in the photo output’s [`availablePhotoCodecTypes`](avcapturephotooutput/availablephotocodectypes.md) array.
 

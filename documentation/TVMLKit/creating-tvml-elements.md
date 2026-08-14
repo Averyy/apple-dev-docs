@@ -54,7 +54,7 @@ func makeView(element: TVViewElement, existingView: UIView?) -> UIView? {
 
 ##### Access the Shared Interface
 
-To enable your class to communicate with your JavaScript code, associate the class with the [`shared()`](tvinterfacefactory/shared().md) interface. Before setting the application controller, set the [`extendedInterfaceCreator`](tvinterfacefactory/extendedinterfacecreator.md) property to an instance of the class inside of the [`application(_:didFinishLaunchingWithOptions:)`](https://developer.apple.com/documentation/UIKit/UIApplicationDelegate/application(_:didFinishLaunchingWithOptions:)) function:
+To enable your class to communicate with your JavaScript code, associate the class with the [`shared()`](tvinterfacefactory/shared().md) interface. Before setting the application controller, set the [`extendedInterfaceCreator`](tvinterfacefactory/extendedinterfacecreator.md) property to an instance of the class inside of the [`application(_:didFinishLaunchingWithOptions:)`](https://developer.apple.com/documentation/uikit/uiapplicationdelegate/application(_:didfinishlaunchingwithoptions:)) function:
 
 ```swift
 TVInterfaceFactory.shared().extendedInterfaceCreator = CustomElements()

@@ -17,12 +17,12 @@ struct SupportedActivityFamiliesEnvironmentKey
 
 #### Overview
 
-To detect the currently rendered activity family size, use the [`activityFamily`](https://developer.apple.com/documentation/SwiftUI/EnvironmentValues/activityFamily) environment variable.
+To detect the currently rendered activity family size, use the [`activityFamily`](https://developer.apple.com/documentation/swiftui/environmentvalues/activityfamily) environment variable.
 
 ## Relationships
 
 ### Conforms To
-- [EnvironmentKey](../SwiftUI/EnvironmentKey.md)
+- [EnvironmentKey](../swiftui/environmentkey.md)
 
 
 ---

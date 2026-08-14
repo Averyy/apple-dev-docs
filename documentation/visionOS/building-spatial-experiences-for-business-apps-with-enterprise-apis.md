@@ -12,19 +12,19 @@ You can use the entitlements that enterprise APIs for visionOS offer to create e
 
 The first category of APIs provides enhanced sensor access and improves the visual capabilities of Apple Vision Pro.
 
-- **[`Main camera access`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.arkit.main-camera-access.allow)**: Capture input data from the forward-facing main camera.
-- **[`Camera Region access`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.arkit.camera-region.allow)**: Capture input data from a specific spatial region in the person’s view for the app to process or display.
-- **[`Shared Coordinate Space access`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.arkit.shared-coordinate-space.allow)**: Share a coordinate space with other devices in the same physical space as each other to create shared spaces and objects between the devices.
-- **[`Passthrough in screen capture`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.screen-capture.include-passthrough)**: Access a composite feed of what an Apple Vision Pro wearer is seeing (physical world and digital content).
-- **[`Spatial barcode and QR code scanning`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.arkit.barcode-detection.allow)**: Scan barcodes and QR codes with the ability to decode contents and locate spatial positions.
+- **[`Main camera access`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.arkit.main-camera-access.allow)**: Capture input data from the forward-facing main camera.
+- **[`Camera Region access`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.arkit.camera-region.allow)**: Capture input data from a specific spatial region in the person’s view for the app to process or display.
+- **[`Shared Coordinate Space access`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.arkit.shared-coordinate-space.allow)**: Share a coordinate space with other devices in the same physical space as each other to create shared spaces and objects between the devices.
+- **[`Passthrough in screen capture`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.screen-capture.include-passthrough)**: Access a composite feed of what an Apple Vision Pro wearer is seeing (physical world and digital content).
+- **[`Spatial barcode and QR code scanning`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.arkit.barcode-detection.allow)**: Scan barcodes and QR codes with the ability to decode contents and locate spatial positions.
 
 The second category focuses on platform control to help you get the most out of visionOS.
 
-- **[`App-Protected Content`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.protected-content)**: Prohibit content captures (screenshots, screen recordings, AirPlay, and SharePlay) of a view.
-- **[`Object-tracking parameter adjustment`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.arkit.object-tracking-parameter-adjustment.allow)**: Optimize known object detection and tracking using configurable parameters.
-- **[`Increased performance headroom`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.app-compute-category)**: Use increased power of the CPU and GPU for high-compute needs, with a tradeoff of increased thermal usage and reduced battery life.
-- **[`Window Follow Mode`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.window-body-follow)**: Allow windows to follow the user to their next destination.
-- **[`Visual Fidelity monitoring`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.arkit.visual-fidelity.allow)**: Monitor fit and field of view coverage on Apple Vision Pro.
+- **[`App-Protected Content`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.protected-content)**: Prohibit content captures (screenshots, screen recordings, AirPlay, and SharePlay) of a view.
+- **[`Object-tracking parameter adjustment`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.arkit.object-tracking-parameter-adjustment.allow)**: Optimize known object detection and tracking using configurable parameters.
+- **[`Increased performance headroom`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.app-compute-category)**: Use increased power of the CPU and GPU for high-compute needs, with a tradeoff of increased thermal usage and reduced battery life.
+- **[`Window Follow Mode`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.window-body-follow)**: Allow windows to follow the user to their next destination.
+- **[`Visual Fidelity monitoring`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.arkit.visual-fidelity.allow)**: Monitor fit and field of view coverage on Apple Vision Pro.
 
 > **Note**: Each of these entitlements allows a device to operate outside the default configuration. When using these features, be aware that they may impact the performance of other apps.
 

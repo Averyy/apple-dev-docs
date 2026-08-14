@@ -22,7 +22,7 @@ static let NSManagedObjectContextWillSave: NSNotification.Name
 
 #### Discussion
 
-This notification’s `object` is the context that’s about to save. Only use the notification to operate on the in-process save operation. For example, to insert additional managed objects. Don’t peform any asynchronous work or block the calling thread. [`NSManagedObjectContext`](https://developer.apple.com/documentation/CoreData/NSManagedObjectContext) posts notifications to the same thread that creates it.
+This notification’s `object` is the context that’s about to save. Only use the notification to operate on the in-process save operation. For example, to insert additional managed objects. Don’t peform any asynchronous work or block the calling thread. [`NSManagedObjectContext`](https://developer.apple.com/documentation/coredata/nsmanagedobjectcontext) posts notifications to the same thread that creates it.
 
 There is no `userInfo` dictionary.
 

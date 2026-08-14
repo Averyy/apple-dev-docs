@@ -80,12 +80,12 @@ struct SampleView: View {
 ## Relationships
 
 ### Conforms To
-- [View](../SwiftUI/View.md)
+- [View](../swiftui/view.md)
 
 ## See Also
 
 - [func popoverTip((any Tip)?, arrowEdge: Edge?, action: (Tips.Action) -> Void) -> some View
-](../SwiftUI/View/popoverTip(_:arrowEdge:action:).md)
+](../swiftui/view/popovertip(_:arrowedge:action:).md)
   Presents a popover tip on the modified view.
 
 

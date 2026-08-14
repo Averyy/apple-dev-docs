@@ -19,7 +19,7 @@ var ES_EVENT_TYPE_AUTH_FILE_PROVIDER_MATERIALIZE: es_event_type_t { get }
 
 This identifier corresponds to the [`es_events_t`](es_events_t.md) union member [`file_provider_materialize`](es_events_t/file_provider_materialize.md), which has the type [`es_event_file_provider_materialize_t`](es_event_file_provider_materialize_t.md).
 
-See the [`File Provider`](https://developer.apple.com/documentation/FileProvider) framework for more information on file provider materialization.
+See the [`File Provider`](https://developer.apple.com/documentation/fileprovider) framework for more information on file provider materialization.
 
 ## See Also
 

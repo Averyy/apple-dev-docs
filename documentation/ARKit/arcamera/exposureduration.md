@@ -21,7 +21,7 @@ If you display an AR experience using a custom Metal renderer, use this value to
 
 If [`ARSCNView`](arscnview.md) is your renderer, SceneKit automatically applies motion blur to your virtual content. For more information, see [`rendersMotionBlur`](arscnview/rendersmotionblur.md).
 
-![Screenshot showing the before and after case of virtual content rendering with motion blur.](https://docs-assets.developer.apple.com/published/355e2c150e6b31f68b1f99074bfa3127/media-3231008%402x.png)
+![Screenshot showing the before and after case of virtual content rendering with motion blur.](/images/com.apple.arkit/media-3231008@2x.png)
 
 
 ---

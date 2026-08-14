@@ -20,9 +20,9 @@ var toolbarItemPresentationSize: UINSToolbarItemPresentationSize { get set }
 
 #### Discussion
 
-[`NSToolbar`](https://developer.apple.com/documentation/AppKit/NSToolbar) supports various display modes that affect the amount of space available for displaying toolbar items. If you use [`NSUIViewToolbarItem`](nsuiviewtoolbaritem.md) to host a [`UIView`](uiview.md) in an [`NSToolbar`](https://developer.apple.com/documentation/AppKit/NSToolbar) when you build your app with Mac Catalyst, that view receives information about its expected size through this trait. Use this trait to make any necessary adjustments to your custom view when the trait collection changes, such as when the toolbar switches to a new display mode.
+[`NSToolbar`](https://developer.apple.com/documentation/appkit/nstoolbar) supports various display modes that affect the amount of space available for displaying toolbar items. If you use [`NSUIViewToolbarItem`](nsuiviewtoolbaritem.md) to host a [`UIView`](uiview.md) in an [`NSToolbar`](https://developer.apple.com/documentation/appkit/nstoolbar) when you build your app with Mac Catalyst, that view receives information about its expected size through this trait. Use this trait to make any necessary adjustments to your custom view when the trait collection changes, such as when the toolbar switches to a new display mode.
 
-The default value of this trait is [`UINSToolbarItemPresentationSize.unspecified`](uinstoolbaritempresentationsize/unspecified.md) when an [`NSToolbar`](https://developer.apple.com/documentation/AppKit/NSToolbar) doesn’t host the view.
+The default value of this trait is [`UINSToolbarItemPresentationSize.unspecified`](uinstoolbaritempresentationsize/unspecified.md) when an [`NSToolbar`](https://developer.apple.com/documentation/appkit/nstoolbar) doesn’t host the view.
 
 ## See Also
 

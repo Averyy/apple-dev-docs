@@ -23,15 +23,15 @@ func setActive(_ active: Bool, options: AVAudioSession.SetActiveOptions = []) th
 
 Your app may activate a session with category [`playback`](avaudiosession/category-swift.struct/playback.md) when another app is hosting a call, for example to start a `SharePlay` activity. However, your app isn’t permitted to capture the microphone of the active call.
 
-> **Note**:  If you attempt to activate a session with category [`record`](avaudiosession/category-swift.struct/record.md) or [`playAndRecord`](avaudiosession/category-swift.struct/playandrecord.md) when another app is already hosting a call, then your session fails with the error [`AVAudioSessionErrorInsufficientPriority`](https://developer.apple.com/documentation/CoreAudioTypes/AVAudioSessionErrorInsufficientPriority).
+> **Note**:  If you attempt to activate a session with category [`record`](avaudiosession/category-swift.struct/record.md) or [`playAndRecord`](avaudiosession/category-swift.struct/playandrecord.md) when another app is already hosting a call, then your session fails with the error [`AVAudioSessionErrorInsufficientPriority`](https://developer.apple.com/documentation/coreaudiotypes/avaudiosessionerrorinsufficientpriority).
 
-The session fails to activate if another audio session has higher priority than yours (such as a phone call) and neither audio session allows mixing. Deactivating an audio session with running audio objects stops the objects, makes the session inactive, and returns an [`AVAudioSession.ErrorCode.isBusy`](https://developer.apple.com/documentation/CoreAudioTypes/AVAudioSession/ErrorCode/isBusy) error.
+The session fails to activate if another audio session has higher priority than yours (such as a phone call) and neither audio session allows mixing. Deactivating an audio session with running audio objects stops the objects, makes the session inactive, and returns an [`AVAudioSession.ErrorCode.isBusy`](https://developer.apple.com/documentation/coreaudiotypes/avaudiosession/errorcode/isbusy) error.
 
-When your app deactivates a session, the return value is [`false`](https://developer.apple.com/documentation/Foundation/NSExpression/false) but the active state changes to deactivate.
+When your app deactivates a session, the return value is [`false`](https://developer.apple.com/documentation/foundation/nsexpression/false) but the active state changes to deactivate.
 
 ## Parameters
 
-- `active`: Specify [`true`](https://developer.apple.com/documentation/Swift/true) to activate your app’s audio session, or [`false`](https://developer.apple.com/documentation/Swift/false) to deactivate it.
+- `active`: Specify [`true`](https://developer.apple.com/documentation/swift/true) to activate your app’s audio session, or [`false`](https://developer.apple.com/documentation/swift/false) to deactivate it.
 - `options`: An integer bit mask containing one or more constants from the [`AVAudioSession.SetActiveOptions`](avaudiosession/setactiveoptions.md) enumeration.
 
 ## Topics

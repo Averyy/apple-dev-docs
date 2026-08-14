@@ -25,7 +25,7 @@ With a *UI update link*, you can follow the progress of each UI update and expre
 
 There are multiple use cases for [`UIUpdateLink`](uiupdatelink.md), including:
 
-- To monitor when UI updates occur and synchronize your drawing code with each update, similar to how you might use [`CADisplayLink`](https://developer.apple.com/documentation/QuartzCore/CADisplayLink).
+- To monitor when UI updates occur and synchronize your drawing code with each update, similar to how you might use [`CADisplayLink`](https://developer.apple.com/documentation/quartzcore/cadisplaylink).
 - To influence how UI updates occur by expressing preferences to the system, such as requesting continuous UI updates, immediate rendering of frames, and more.
 - To specify precisely at which point in the UI update process to perform certain actions.
 - To implement support for low-latency input, such as a custom low-latency drawing implementation for a pencil-drawing app.
@@ -105,15 +105,15 @@ updateLink.addAction(to: .afterUpdateScheduled) { link, info in
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [Sendable](../Swift/Sendable.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [Sendable](../swift/sendable.md)
 
 ## See Also
 

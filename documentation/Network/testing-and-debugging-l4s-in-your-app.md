@@ -14,7 +14,7 @@ L4S uses an Explicit Congestion Notification (ECN) mechanism to give early warni
 
 Apple’s QUIC implementation fully supports L4S, whereas Apple’s TCP implementation supports only the receiver-side L4S. Apple’s FaceTime application also supports L4S. As L4S may not be enabled for all users, turn on L4S support for QUIC, TCP, and FaceTime on iOS and iPadOS devices by turning on L4S in Developer settings.
 
-![None](https://docs-assets.developer.apple.com/published/0dbddc44800f42c6b312258d9de33a0c/media-4225936%402x.png)
+![None](/images/com.apple.network/media-4225936@2x.png)
 
 On macOS, enable L4S by using the following command in Terminal:
 
@@ -28,7 +28,7 @@ The sending device indicates that it’s L4S capable by setting the ECN-Capable 
 
 To confirm that your Apple device is L4S capable, take a packet capture using Wireshark, and look for ECT(1) in the IP header of transmitted packets as shown below. Some networks bleach (zero) the ECN field. Apple’s stack performs validation in the beginning of the connection to test for bleaching. If bleaching is detected, Apple’s stack doesn’t use ECN and, therefore, L4S for such connections. Look for ECT(1) in at least 10–20 sent packets.
 
-![None](https://docs-assets.developer.apple.com/published/6c81b9001fd2da289793c397b6179cdf/media-4225937%402x.png)
+![None](/images/com.apple.network/media-4225937@2x.png)
 
 Because Apple’s QUIC stack always provides ECN feedback when the device acts as a receiver, you don’t need to confirm ECT(1) on Apple devices.
 
@@ -41,21 +41,21 @@ When L4S is enabled for the TCP receiver side, an Apple device negotiates Accura
 
 Apple’s TCP implementation provides both types of feedback. To confirm that Apple’s implementation negotiated Accurate ECN in the three-way handshake, take a packet capture on the device, and look in the synchronize (SYN) packet for the flags set as shown in the figure below. You need the latest version of Wireshark to parse the new Accurate ECN feedback in TCP.
 
-![None](https://docs-assets.developer.apple.com/published/fa5220dbadbf2b769eced63310be06bd/media-4225943%402x.png)
+![None](/images/com.apple.network/media-4225943@2x.png)
 
 Then, to check how the server responded to this request, check if TCP flags are set on the synchronize-acknowledge (SYN-ACK) packet as below.
 
-![None](https://docs-assets.developer.apple.com/published/acab774efabed5154c6d6335dce08c44/media-4225940%402x.png)
+![None](/images/com.apple.network/media-4225940@2x.png)
 
 In the last ACK packet of the three-way handshake, Apple’s implementation adds the Accurate ECN TCP option in addition to setting the ACE header flags.
 
 After the negotiation is complete, the server may send data packets. If it supports L4S sender-side behavior, the server indicates that it’s L4S capable by setting the ECT codepoint to 01. You can check for ECT(1) in the client-side packet capture by looking at packets from the server to the client. As some networks may inconsistently affect the ECN field, check at least 10–20 packets.
 
-![None](https://docs-assets.developer.apple.com/published/c6646351351003937460fe4d01e956f2/media-4225939%402x.png)
+![None](/images/com.apple.network/media-4225939@2x.png)
 
 To verify that your Apple device echoes Accurate ECN feedback, look at the ACE flags and Accurate ECN options because some of these fields change as more packets arrive. Note that the ACE flags use only 3 bits to count the number of CE packets, so they reset to 0 each time 8 CE packets arrive.
 
-![None](https://docs-assets.developer.apple.com/published/1c2c811615d9562841f9fa7299e7c933/media-4225942%402x.png)
+![None](/images/com.apple.network/media-4225942@2x.png)
 
 ##### Test Your App Against Third Party Quic Server Implementations
 
@@ -91,9 +91,9 @@ export SSLKEYLOGFILE=/tmp/keys.log
 2. Perform a Wireshark capture. Using a filter for User Datagram Protocol (UDP) packets is optional.
 3. In Wireshark Preferences > Protocols > TLS, select the `SSLKEYLOGFILE` as the TLS secret log file in the (Pre)-Master-Secret log filename field.
 
-![None](https://docs-assets.developer.apple.com/published/8cbc8fdad80345633d34a8719b27ccfd/media-4225969%402x.png) 6. In Wireshark, select any packet with an ACK_ECN frame. Then, in the packet details view below under QUIC, look at the ECT counts. If the ECT counts are nonzero, then your server supports ECN and is capable of being an L4S server.
+![None](/images/com.apple.network/media-4225969@2x.png) 6. In Wireshark, select any packet with an ACK_ECN frame. Then, in the packet details view below under QUIC, look at the ECT counts. If the ECT counts are nonzero, then your server supports ECN and is capable of being an L4S server.
 
-![None](https://docs-assets.developer.apple.com/published/e322cf90620195fa7da546a103559512/media-4225970%402x.png)
+![None](/images/com.apple.network/media-4225970@2x.png)
 
 ##### Test L4s on a Linux Tcp Implementation
 
@@ -137,11 +137,11 @@ To verify that your network bottleneck supports L4S, run the following test:
 1. Start an L4S flow and a non-L4S flow together in the direction (upload or download) you want to test, running them long enough to be sure to saturate the bottleneck. Consider using two devices, one with L4S turned on and the other with L4S turned off.
 2. Take a packet capture at the receiver, and check if there are non-zero CE counts in the IP header of received packets as shown below.
 
-![None](https://docs-assets.developer.apple.com/published/f1836f82070bc2fb94fd2c931591cd03/media-4241170%402x.png) 3. If you can’t take a packet capture at the receiver, you can verify the CE counts in the ACK header at the sender. The figure below shows how QUIC formats the ACK header.
+![None](/images/com.apple.network/media-4241170@2x.png) 3. If you can’t take a packet capture at the receiver, you can verify the CE counts in the ACK header at the sender. The figure below shows how QUIC formats the ACK header.
 
-![None](https://docs-assets.developer.apple.com/published/ce7174a9a475afa38718cc92229ceb3d/media-4241169%402x.png) 4. The screenshot below for TCP shows both CE counts in ACE flags and byte counts for ECT(1), CE, and ECT(0) in Accurate ECN options.
+![None](/images/com.apple.network/media-4241169@2x.png) 4. The screenshot below for TCP shows both CE counts in ACE flags and byte counts for ECT(1), CE, and ECT(0) in Accurate ECN options.
 
-![None](https://docs-assets.developer.apple.com/published/206dfc625e83595d05abbb7fcc14ad93/media-4241168%402x.png) 5. If there are no CE marks for either flow, your network bottleneck doesn’t support either Classic ECN AQM or L4S AQM. 6. If either flow has CE marks, measure the round-trip time (or alternatively, the one way delay) of each flow. If both L4S and non-L4S flow have the same round-trip time, your network bottleneck likely supports classic ECN AQM. If the L4S flow has a lower round-trip time than the non-L4S flow, your network bottleneck likely supports L4S AQM.
+![None](/images/com.apple.network/media-4241168@2x.png) 5. If there are no CE marks for either flow, your network bottleneck doesn’t support either Classic ECN AQM or L4S AQM. 6. If either flow has CE marks, measure the round-trip time (or alternatively, the one way delay) of each flow. If both L4S and non-L4S flow have the same round-trip time, your network bottleneck likely supports classic ECN AQM. If the L4S flow has a lower round-trip time than the non-L4S flow, your network bottleneck likely supports L4S AQM.
 
 ##### Ensure Low Latency and Low Loss on Your Network
 

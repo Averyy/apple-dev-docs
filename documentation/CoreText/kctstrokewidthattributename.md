@@ -22,7 +22,7 @@ let kCTStrokeWidthAttributeName: CFString
 
 #### Discussion
 
-Value must be a [`CFNumber`](https://developer.apple.com/documentation/CoreFoundation/CFNumber) object. Default value is `0.0`, or no stroke. This attribute, interpreted as a percentage of font point size, controls the text drawing mode: positive values effect drawing with stroke only; negative values are for stroke and fill. A typical value for outlined text is `3.0`.
+Value must be a [`CFNumber`](https://developer.apple.com/documentation/corefoundation/cfnumber) object. Default value is `0.0`, or no stroke. This attribute, interpreted as a percentage of font point size, controls the text drawing mode: positive values effect drawing with stroke only; negative values are for stroke and fill. A typical value for outlined text is `3.0`.
 
 ## See Also
 

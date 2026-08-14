@@ -22,12 +22,12 @@ This API can help with a wide variety of tasks. For example, you can use it to h
 - SSID with EAP authentication
 - Hotspot 2.0 with EAP authentication
 
-[`NEHotspotConfigurationManager`](nehotspotconfigurationmanager.md) is only supported on iOS. For macOS, use the [`Core WLAN`](https://developer.apple.com/documentation/CoreWLAN) framework, which provides a full-featured Wi-Fi configuration and management API.
+[`NEHotspotConfigurationManager`](nehotspotconfigurationmanager.md) is only supported on iOS. For macOS, use the [`Core WLAN`](https://developer.apple.com/documentation/corewlan) framework, which provides a full-featured Wi-Fi configuration and management API.
 
 ## Topics
 
 ### Essentials
-- [Hotspot Configuration Entitlement](../BundleResources/Entitlements/com.apple.developer.networking.HotspotConfiguration.md)
+- [Hotspot Configuration Entitlement](../bundleresources/entitlements/com.apple.developer.networking.hotspotconfiguration.md)
   A Boolean value indicating whether your app can use the hotspot manager to configure Wi-Fi networks.
 ### Wi-Fi network configuration
 - [class NEHotspotConfigurationManager](nehotspotconfigurationmanager.md)

@@ -17,7 +17,7 @@ let kAudioSession_AudioRouteKey_Inputs: CFString!
 
 #### Discussion
 
-If there is an audio input available, the array contains a [`CFDictionary`](https://developer.apple.com/documentation/CoreFoundation/CFDictionary) object with a single key, namely [`kAudioSession_AudioRouteKey_Type`](kaudiosession_audioroutekey_type.md), whose value is one of the constants in [`Audio Input Routes`](audio-input-routes.md).
+If there is an audio input available, the array contains a [`CFDictionary`](https://developer.apple.com/documentation/corefoundation/cfdictionary) object with a single key, namely [`kAudioSession_AudioRouteKey_Type`](kaudiosession_audioroutekey_type.md), whose value is one of the constants in [`Audio Input Routes`](audio-input-routes.md).
 
 If no audio input is available, the array is empty.
 

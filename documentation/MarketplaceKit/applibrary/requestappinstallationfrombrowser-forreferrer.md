@@ -22,7 +22,7 @@ final func requestAppInstallationFromBrowser(for url: URL, referrer: URL) async 
 
 #### Discussion
 
-Web browsers that render with [`BrowserEngineKit`](https://developer.apple.com/documentation/BrowserEngineKit) rather than [`WebKit`](https://developer.apple.com/documentation/WebKit) call this method to forward the installation of an app from the developer’s webpage. Your browser listens for [`MarketplaceKitURIScheme`](marketplacekiturischeme.md) invocations to field such requests.
+Web browsers that render with [`BrowserEngineKit`](https://developer.apple.com/documentation/browserenginekit) rather than [`WebKit`](https://developer.apple.com/documentation/webkit) call this method to forward the installation of an app from the developer’s webpage. Your browser listens for [`MarketplaceKitURIScheme`](marketplacekiturischeme.md) invocations to field such requests.
 
 For more information, see [`Enabling alternative distribution app installation in a browser`](enabling-alternative-distribution-app-installation-in-a-browser.md).
 

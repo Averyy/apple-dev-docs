@@ -14,7 +14,7 @@ Give a language model access to your app’s Core Spotlight index to enable natu
 
 This sample demonstrates [`SpotlightSearchTool`](spotlightsearchtool.md), a type that connects a Foundation Models language-model session to your app’s Core Spotlight index. Using `SpotlightSearchTool`, the language model can search, filter, and reason about your indexed content, turning a metadata-based index into a conversational search experience.
 
-![A person asks “What hikes are by the ocean?” in the sample app’s search field. Matching trail cards, including Crystal Cove State Park and Lands End Trail, appear above a streamed summary of nearby coastal hikes.](https://docs-assets.developer.apple.com/published/db6e03966d14d5d5698f38d0638ed8d6/spotlightsearchtool-hero%402x.png)
+![A person asks “What hikes are by the ocean?” in the sample app’s search field. Matching trail cards, including Crystal Cove State Park and Lands End Trail, appear above a streamed summary of nearby coastal hikes.](/images/com.apple.corespotlight/spotlightsearchtool-hero@2x.png)
 
 The app indexes a collection of hiking trail entries as [`CSSearchableItem`](cssearchableitem.md) objects, then lets people ask natural-language questions like “Which trails in California have water features?” The language model uses the tool to query the index and streams a response alongside the matching trail results.
 
@@ -65,17 +65,17 @@ let tool = SpotlightSearchTool(
 
 #### Adopt Private Cloud Compute
 
-By default, the sample runs searches on the on-device [`SystemLanguageModel`](https://developer.apple.com/documentation/FoundationModels/SystemLanguageModel), so the project builds and runs without additional configuration. The view model exposes the model it uses as a `serverModel` property:
+By default, the sample runs searches on the on-device [`SystemLanguageModel`](https://developer.apple.com/documentation/foundationmodels/systemlanguagemodel), so the project builds and runs without additional configuration. The view model exposes the model it uses as a `serverModel` property:
 
 ```swift
 let serverModel = SystemLanguageModel()
 ```
 
-To route searches through Private Cloud Compute (PCC) instead, initialize `serverModel` with [`PrivateCloudComputeLanguageModel`](https://developer.apple.com/documentation/FoundationModels/PrivateCloudComputeLanguageModel). When `serverModel` is the PCC model, the search tool uses the [`SpotlightSearchTool.GuidanceLevel.complete`](spotlightsearchtool/guidancelevel/complete.md) guide for richer query construction; on device, it uses [`SpotlightSearchTool.GuidanceLevel.focused(_:)`](spotlightsearchtool/guidancelevel/focused(_:).md) and provides more explicit search instructions to suit the smaller model. For eligibility and setup, see [`Adding server-side intelligence with Private Cloud Compute`](https://developer.apple.com/documentation/FoundationModels/adding-server-side-intelligence-with-private-cloud-compute).
+To route searches through Private Cloud Compute (PCC) instead, initialize `serverModel` with [`PrivateCloudComputeLanguageModel`](https://developer.apple.com/documentation/foundationmodels/privatecloudcomputelanguagemodel). When `serverModel` is the PCC model, the search tool uses the [`SpotlightSearchTool.GuidanceLevel.complete`](spotlightsearchtool/guidancelevel/complete.md) guide for richer query construction; on device, it uses [`SpotlightSearchTool.GuidanceLevel.focused(_:)`](spotlightsearchtool/guidancelevel/focused(_:).md) and provides more explicit search instructions to suit the smaller model. For eligibility and setup, see [`Adding server-side intelligence with Private Cloud Compute`](https://developer.apple.com/documentation/foundationmodels/adding-server-side-intelligence-with-private-cloud-compute).
 
 #### Stream Responses From the Language Model
 
-The sample passes the search tool to a [`LanguageModelSession`](https://developer.apple.com/documentation/FoundationModels/LanguageModelSession) along with system instructions that describe the indexed data. When a person submits a query, the session calls the tool to find matching entries and streams a natural-language response. The sample creates a fresh session and tool for each search so every query starts with fresh context:
+The sample passes the search tool to a [`LanguageModelSession`](https://developer.apple.com/documentation/foundationmodels/languagemodelsession) along with system instructions that describe the indexed data. When a person submits a query, the session calls the tool to find matching entries and streams a natural-language response. The sample creates a fresh session and tool for each search so every query starts with fresh context:
 
 ```swift
 let session = LanguageModelSession(

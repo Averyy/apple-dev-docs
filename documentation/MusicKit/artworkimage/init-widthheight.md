@@ -23,7 +23,7 @@ init(_ artwork: Artwork, width: CGFloat, height: CGFloat)
 
 #### Discussion
 
-This initializer derives the [`URL`](https://developer.apple.com/documentation/Foundation/URL) for loading the artwork image from the [`Artwork`](Artwork.md) instance and the specified sizing parameters, as well as the display scale for the current environment.
+This initializer derives the [`URL`](https://developer.apple.com/documentation/foundation/url) for loading the artwork image from the [`Artwork`](artwork.md) instance and the specified sizing parameters, as well as the display scale for the current environment.
 
 The loaded image and placeholder have constrained frames from these sizing parameters.
 

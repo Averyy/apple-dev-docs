@@ -31,7 +31,7 @@ The [`safeAreaAspectFitLayoutGuide`](uiwindow/safeareaaspectfitlayoutguide.md) p
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

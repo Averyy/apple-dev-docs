@@ -43,7 +43,7 @@ The following table describes the metrics for the aggregated broadcast push noti
 | Notifications published | The number of broadcast push notifications accepted by APNs. |
 | Notifications delivered | The number of broadcast push notifications delivered by APNs. |
 | Total subscriptions | A snapshot count of the device subscriptions. APNs records subscription snapshots throughout the day and reports the highest value for each day. |
-| Unique subscribers | Only available for application metrics. ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) A snapshot count of unique devices subscribed to at least one channel for your app. APNs records subscription snapshots throughout the day and reports the highest value for each day. |
+| Unique subscribers | Only available for application metrics. ![None](/images/com.apple.usernotifications/spacer.png) A snapshot count of unique devices subscribed to at least one channel for your app. APNs records subscription snapshots throughout the day and reports the highest value for each day. |
 
 ## See Also
 

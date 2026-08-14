@@ -8,7 +8,7 @@ Displays a rating for an item.
 
 Use the `ratingTemplate` element to display a rating for an item. The following figure shows the basic layout for a `ratingTemplate` page. The theme for the rating template defaults to the system preference.
 
-![Layout diagram showing a title area above a rating area.](https://docs-assets.developer.apple.com/published/5e0f80e80961edce4fb4115afe226fd7/ratingtemplate-1%402x.png)
+![Layout diagram showing a title area above a rating area.](/images/com.apple.TVML/ratingtemplate-1@2x.png)
 
 ##### Main Elements
 
@@ -43,7 +43,7 @@ The following listing shows the TVML for a `ratingTemplate` example. The example
 
 The following figure shows the output for the above example:
 
-![Screenshot showing a title and 4 of 5 rating stars filled in.](https://docs-assets.developer.apple.com/published/58081fddd58d0ffa662961ac2bcb4377/ratingtemplate-2%402x.png)
+![Screenshot showing a title and 4 of 5 rating stars filled in.](/images/com.apple.TVML/ratingtemplate-2@2x.png)
 
 ## Topics
 

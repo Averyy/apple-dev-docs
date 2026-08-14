@@ -20,11 +20,11 @@ Combining Core Data’s proven persistence technology and Swift’s modern concu
 
 SwiftData has uses beyond persisting locally created content. For example, an app that fetches data from a remote web service might use SwiftData to implement a lightweight caching mechanism and provide limited offline functionality.
 
-![A white Swift logo containing ones and zeros on a blueprint-style background.](https://docs-assets.developer.apple.com/published/aa99d190da3e4c58796b4201d5e7b4c7/swiftdata-hero%402x.png)
+![A white Swift logo containing ones and zeros on a blueprint-style background.](/images/com.apple.SwiftData/swiftdata-hero@2x.png)
 
 SwiftData is unintrusive by design and supplements your app’s existing model classes. Attach the [`Model()`](model().md) macro to any model class to make it persistable. Customize the behavior of that model’s properties with the [`Attribute(_:originalName:hashModifier:)`](attribute(_:originalname:hashmodifier:).md) and [`Relationship(_:deleteRule:minimumModelCount:maximumModelCount:originalName:inverse:hashModifier:)`](relationship(_:deleterule:minimummodelcount:maximummodelcount:originalname:inverse:hashmodifier:).md) macros. Use the [`ModelContext`](modelcontext.md) class to insert, update, and delete instances of that model, and to write unsaved changes to disk.
 
-To display models in a SwiftUI view, use the [`Query()`](query().md) macro and specify a predicate or fetch descriptor. SwiftData performs the fetch when the view appears, and tells SwiftUI about any subsequent changes to the fetched models so the view can update accordingly. You can access the model context in any SwiftUI view using the [`modelContext`](https://developer.apple.com/documentation/SwiftUI/EnvironmentValues/modelContext) environment value, and specify a particular model container or context for a view with the [`modelContainer(_:)`](https://developer.apple.com/documentation/SwiftUI/View/modelContainer(_:)) and [`modelContext(_:)`](https://developer.apple.com/documentation/SwiftUI/View/modelContext(_:)) view modifiers.
+To display models in a SwiftUI view, use the [`Query()`](query().md) macro and specify a predicate or fetch descriptor. SwiftData performs the fetch when the view appears, and tells SwiftUI about any subsequent changes to the fetched models so the view can update accordingly. You can access the model context in any SwiftUI view using the [`modelContext`](https://developer.apple.com/documentation/swiftui/environmentvalues/modelcontext) environment value, and specify a particular model container or context for a view with the [`modelContainer(_:)`](https://developer.apple.com/documentation/swiftui/view/modelcontainer(_:)) and [`modelContext(_:)`](https://developer.apple.com/documentation/swiftui/view/modelcontext(_:)) view modifiers.
 
 ## Topics
 
@@ -33,9 +33,9 @@ To display models in a SwiftUI view, use the [`Query()`](query().md) macro and s
   Describe your model classes to SwiftData using the framework’s macros, and store instances of those models so they exist beyond the app’s runtime.
 - [Adding and editing persistent data in your app](adding-and-editing-persistent-data-in-your-app.md)
   Create a data entry form for collecting and changing data managed by SwiftData.
-- [Adopting SwiftData for a Core Data app](../CoreData/adopting-swiftdata-for-a-core-data-app.md)
+- [Adopting SwiftData for a Core Data app](../coredata/adopting-swiftdata-for-a-core-data-app.md)
   Persist data in your app intuitively with the Swift native persistence framework.
-- [SwiftData updates](../Updates/SwiftData.md)
+- [SwiftData updates](../updates/swiftdata.md)
   Learn about important changes to SwiftData.
 - [Adopting inheritance in SwiftData](adopting-inheritance-in-swiftdata.md)
   Add flexibility to your models using class inheritance.
@@ -95,7 +95,7 @@ To display models in a SwiftUI view, use the [`Query()`](query().md) macro and s
   An interface that enables a custom data store to support batch requests.
 - [protocol HistoryProviding](historyproviding.md)
   An interface that enables a custom data store to provide the history of changes for its persisted models.
-- [Building a document-based app using SwiftData](../SwiftUI/Building-a-document-based-app-using-SwiftData.md)
+- [Building a document-based app using SwiftData](../swiftui/building-a-document-based-app-using-swiftdata.md)
   Code along with the WWDC presenter to transform an app with SwiftData.
 - [struct ModelDocument](modeldocument.md)
   A document type that uses SwiftData to manage its storage.

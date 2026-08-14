@@ -135,7 +135,7 @@ struct LetterCountTests {
 
 When the run finishes, open the Report navigator and select the Evaluations item beneath the test run to open the evaluation report:
 
-![A screenshot of the Report navigator in Xcode. Beneath a completed LetterCount test run, the Evaluations item is selected, alongside the Insights, Coverage, Tests, and Log items.](https://docs-assets.developer.apple.com/published/fa92113c6990dc4d63eba51d07abab1f/eval-report-navigator%402x.png)
+![A screenshot of the Report navigator in Xcode. Beneath a completed LetterCount test run, the Evaluations item is selected, alongside the Insights, Coverage, Tests, and Log items.](/images/com.apple.evaluations/eval-report-navigator@2x.png)
 
 You get back an [`EvaluationResult`](evaluationresult.md) with three views into your data:
 
@@ -174,7 +174,7 @@ For guidance on interpreting results and iterating on your feature, see [`Design
 
 Your intelligence-powered features may rely on tools that fetch live data, perform calculations, or trigger actions. Evaluations let you verify that the model passes the correct arguments and calls tools in the expected order.
 
-For details on how to integrate tool calling with Foundation Models, see [`Expanding generation with tool calling`](https://developer.apple.com/documentation/FoundationModels/expanding-generation-with-tool-calling).
+For details on how to integrate tool calling with Foundation Models, see [`Expanding generation with tool calling`](https://developer.apple.com/documentation/foundationmodels/expanding-generation-with-tool-calling).
 
 The following example defines a simple, letter-counting tool:
 
@@ -245,11 +245,11 @@ var evaluators: Evaluators {
 
 Running the evaluation with and without the tool produces a summary row for each, so you can compare them at a glance. Here are both rows under the same test:
 
-![A screenshot of the Evaluations summary in the Xcode Test Report. Under the LetterCountTests group, the LetterCountEvaluation row shows an Exact Match ratio of 58 percent and the LetterCountEvaluationTools row shows 100 percent, each across 12 responses.](https://docs-assets.developer.apple.com/published/cb2954c110959f2c08a402b161ce0163/eval-summary%402x.png)
+![A screenshot of the Evaluations summary in the Xcode Test Report. Under the LetterCountTests group, the LetterCountEvaluation row shows an Exact Match ratio of 58 percent and the LetterCountEvaluationTools row shows 100 percent, each across 12 responses.](/images/com.apple.evaluations/eval-summary@2x.png)
 
 For a side-by-side view, choose Compare and select a run for each side. This figure shows that adding the counting tool lifts the mean Exact Match score from 58 percent to 100 percent and brings every failing prompt up to a pass:
 
-![A screenshot of the Compare view in the Xcode Test Report showing LetterCountEvaluation beside LetterCountEvaluationTools. The mean Exact Match score rises from 58 percent without the tool to 100 percent with the tool, and the per-prompt table shows the prompts that fail without the tool passing with it.](https://docs-assets.developer.apple.com/published/e6aec08d91c89588be705539d9d48526/eval-run-comparison%402x.png)
+![A screenshot of the Compare view in the Xcode Test Report showing LetterCountEvaluation beside LetterCountEvaluationTools. The mean Exact Match score rises from 58 percent without the tool to 100 percent with the tool, and the per-prompt table shows the prompts that fail without the tool passing with it.](/images/com.apple.evaluations/eval-run-comparison@2x.png)
 
 For more on evaluating tool calling, see [`Evaluating tool-calling behavior`](evaluating-tool-calling-behavior.md).
 

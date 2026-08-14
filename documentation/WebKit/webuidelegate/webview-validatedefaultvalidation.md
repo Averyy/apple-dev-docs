@@ -16,17 +16,17 @@ optional func webView(_ webView: WebView!, validate item: (any NSValidatedUserIn
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/Swift/true) if the specified user interface item is valid; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
+[`true`](https://developer.apple.com/documentation/swift/true) if the specified user interface item is valid; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
 
 #### Discussion
 
-See [`NSUserInterfaceValidations`](https://developer.apple.com/documentation/AppKit/NSUserInterfaceValidations) and [`NSValidatedUserInterfaceItem`](https://developer.apple.com/documentation/AppKit/NSValidatedUserInterfaceItem) for more information about user interface validation. If you do not implement this method, the value of `defaultValidation` is used.
+See [`NSUserInterfaceValidations`](https://developer.apple.com/documentation/appkit/nsuserinterfacevalidations) and [`NSValidatedUserInterfaceItem`](https://developer.apple.com/documentation/appkit/nsvalidateduserinterfaceitem) for more information about user interface validation. If you do not implement this method, the value of `defaultValidation` is used.
 
 ## Parameters
 
 - `webView`: The web view that sent the message.
 - `item`: The user interface item being validated.
-- `defaultValidation`: [`true`](https://developer.apple.com/documentation/Swift/true) if the web view believes the user interface item is valid; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
+- `defaultValidation`: [`true`](https://developer.apple.com/documentation/swift/true) if the web view believes the user interface item is valid; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
 
 ## See Also
 

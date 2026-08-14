@@ -12,7 +12,7 @@ The code below decompresses and parses the file generated using the steps explai
 
 ##### Specify the Compressed File Path
 
-Create a [`FilePath`](https://developer.apple.com/documentation/System/FilePath) structure that specifies the file name and location of the AppleArchive file that stores the compressed data. You must add read and write file access to the Downloads folder in the Signing and Capabilities pane. To learn more about configuring the App Sandbox, see [`Configure App Sandbox`](https://developer.apple.comhttps://help.apple.com/xcode/mac/current/#/devbd04af149).
+Create a [`FilePath`](https://developer.apple.com/documentation/system/filepath) structure that specifies the file name and location of the AppleArchive file that stores the compressed data. You must add read and write file access to the Downloads folder in the Signing and Capabilities pane. To learn more about configuring the App Sandbox, see [`Configure App Sandbox`](https://developer.apple.comhttps://help.apple.com/xcode/mac/current/#/devbd04af149).
 
 The following code creates a file path to `lorem.aar`:
 
@@ -32,7 +32,7 @@ let archiveFilePath: FilePath = {
 
 ##### Create the File Stream to Read the Source Archive
 
-The [`ArchiveByteStream`](https://developer.apple.com/documentation/AppleArchive/ArchiveByteStream) class provides static factory methods that create streams for different functions. In this case, use [`fileStream(path:mode:options:permissions:)`](https://developer.apple.com/documentation/AppleArchive/ArchiveByteStream/fileStream(path:mode:options:permissions:)) to create a byte stream that reads the source file:
+The [`ArchiveByteStream`](https://developer.apple.com/documentation/applearchive/archivebytestream) class provides static factory methods that create streams for different functions. In this case, use [`fileStream(path:mode:options:permissions:)`](https://developer.apple.com/documentation/applearchive/archivebytestream/filestream(path:mode:options:permissions:)) to create a byte stream that reads the source file:
 
 ```swift
 guard let readFileStream = ArchiveByteStream.fileStream(
@@ -78,7 +78,7 @@ defer {
 
 ##### Derive the Size of the Uncompressed String
 
-Use the size of the `DAT` blob field that you specified in [`Compressing and saving a string to the file system`](compressing-and-saving-a-string-to-the-file-system#Define-the-archive-header.md) to create a buffer to receive the uncompressed data. To access the size, read the DAT field of the decode stream’s header:
+Use the size of the `DAT` blob field that you specified in [`Compressing and saving a string to the file system`](compressing-and-saving-a-string-to-the-file-system.md) to create a buffer to receive the uncompressed data. To access the size, read the DAT field of the decode stream’s header:
 
 ```swift
 guard
@@ -103,7 +103,7 @@ guard byteCount != 0 else {
 
 ##### Decompress the Archived String
 
-Create an [`UnsafeMutableRawBufferPointer`](https://developer.apple.com/documentation/Swift/UnsafeMutableRawBufferPointer) structure and allocate to it it the size of the original string to receive the decompressed data:
+Create an [`UnsafeMutableRawBufferPointer`](https://developer.apple.com/documentation/swift/unsafemutablerawbufferpointer) structure and allocate to it it the size of the original string to receive the decompressed data:
 
 ```swift
 let rawBufferPtr = UnsafeMutableRawBufferPointer.allocate(
@@ -115,7 +115,7 @@ defer {
 }
 ```
 
-Call [`readBlob(key:into:)`](https://developer.apple.com/documentation/AppleArchive/ArchiveStreamProtocol/readBlob(key:into:)) to read the decompressed data from the `DAT` field and write it to the raw buffer pointer. The decode stream parses its input from the decompression stream that, in turn, decompresses its input from the AppleArchive file supplied by the file stream.
+Call [`readBlob(key:into:)`](https://developer.apple.com/documentation/applearchive/archivestreamprotocol/readblob(key:into:)) to read the decompressed data from the `DAT` field and write it to the raw buffer pointer. The decode stream parses its input from the decompression stream that, in turn, decompresses its input from the AppleArchive file supplied by the file stream.
 
 ```swift
 do {
@@ -128,7 +128,7 @@ do {
 
 ##### Create a String From the Raw Buffer Pointer
 
-Create a string from the raw buffer pointer by creating a typed pointer that’s bound to [`CChar`](https://developer.apple.com/documentation/Swift/CChar), and use [`init(cString:)`](https://developer.apple.com/documentation/Swift/String/init(cString:)-2p84k) to initialize the new string:
+Create a string from the raw buffer pointer by creating a typed pointer that’s bound to [`CChar`](https://developer.apple.com/documentation/swift/cchar), and use [`init(cString:)`](https://developer.apple.com/documentation/swift/string/init(cstring:)-2p84k) to initialize the new string:
 
 ```swift
 let typedPtr = rawBufferPtr.bindMemory(to: CChar.self)

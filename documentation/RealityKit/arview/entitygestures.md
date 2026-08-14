@@ -40,11 +40,11 @@ struct EntityGestures
 ## Relationships
 
 ### Conforms To
-- [Equatable](../Swift/Equatable.md)
-- [ExpressibleByArrayLiteral](../Swift/ExpressibleByArrayLiteral.md)
-- [OptionSet](../Swift/OptionSet.md)
-- [RawRepresentable](../Swift/RawRepresentable.md)
-- [SetAlgebra](../Swift/SetAlgebra.md)
+- [Equatable](../swift/equatable.md)
+- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
+- [OptionSet](../swift/optionset.md)
+- [RawRepresentable](../swift/rawrepresentable.md)
+- [SetAlgebra](../swift/setalgebra.md)
 
 ## See Also
 

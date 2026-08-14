@@ -24,7 +24,7 @@ mutating func appendInterpolation<F>(_ input: F.FormatInput, format: F) where F 
 
 Don’t call this method directly; it’s used by the compiler when interpreting string interpolations.
 
-The following example shows how to use a string interpolation to format a [`Date`](https://developer.apple.com/documentation/Foundation/Date) with a [`Date.FormatStyle`](https://developer.apple.com/documentation/Foundation/Date/FormatStyle) and append it to static text. The resulting interpolation implicitly creates a [`LocalizedStringKey`](localizedstringkey.md), which a [`Text`](text.md) uses to provide its content.
+The following example shows how to use a string interpolation to format a [`Date`](https://developer.apple.com/documentation/foundation/date) with a [`Date.FormatStyle`](https://developer.apple.com/documentation/foundation/date/formatstyle) and append it to static text. The resulting interpolation implicitly creates a [`LocalizedStringKey`](localizedstringkey.md), which a [`Text`](text.md) uses to provide its content.
 
 ```swift
 Text("The time is \(myDate, format: Date.FormatStyle(date: .omitted, time:.complete).attributedStyle)")

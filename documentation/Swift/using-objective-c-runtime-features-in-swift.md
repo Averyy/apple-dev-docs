@@ -10,9 +10,9 @@ Some Objective-C APIs—like target-action—accept method or property names as 
 
 ##### Use Selectors to Arrange Calls to Objective C Methods
 
-In Objective-C, a selector is a type that refers to the name of an Objective-C method. In Swift, Objective-C selectors are represented by the [`Selector`](https://developer.apple.com/documentation/ObjectiveC/Selector) structure, and you create them using the `#selector` expression.
+In Objective-C, a selector is a type that refers to the name of an Objective-C method. In Swift, Objective-C selectors are represented by the [`Selector`](https://developer.apple.com/documentation/objectivec/selector) structure, and you create them using the `#selector` expression.
 
-In Swift, you create a selector for an Objective-C method by placing the name of the method within the `#selector` expression: `#selector(MyViewController.tappedButton(_:))`. To construct a selector for a property’s Objective-C getter or setter method, prefix the property name using the `getter:` or `setter:` label, like `#selector(getter: MyViewController.myButton)`. The example below shows a selector being used as part of the target-action pattern to call a method in response to the [`touchUpInside`](https://developer.apple.com/documentation/UIKit/UIControl/Event/touchUpInside) event.
+In Swift, you create a selector for an Objective-C method by placing the name of the method within the `#selector` expression: `#selector(MyViewController.tappedButton(_:))`. To construct a selector for a property’s Objective-C getter or setter method, prefix the property name using the `getter:` or `setter:` label, like `#selector(getter: MyViewController.myButton)`. The example below shows a selector being used as part of the target-action pattern to call a method in response to the [`touchUpInside`](https://developer.apple.com/documentation/uikit/uicontrol/event/touchupinside) event.
 
 ```swift
 import UIKit
@@ -43,7 +43,7 @@ In Objective-C, a key is a string that identifies a specific property of an obje
 
 > ❗ **Important**: Objective-C key paths are distinct from, but related to, key-path expressions in Swift. For information about key-path expressions, see [`Key-Path Expression`](https://developer.apple.comhttps://docs.swift.org/swift-book/documentation/the-swift-programming-language/expressions#Key-Path-Expression) in [`The Swift Programming Language`](https://developer.apple.comhttps://docs.swift.org/swift-book/).
 
-You use the `#keyPath` string expression to create compiler-checked keys and key paths that can be used by KVC methods like [`value(forKey:)`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class/value(forKey:)) and [`value(forKeyPath:)`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class/value(forKeyPath:)). The `#keyPath` string expression accepts chained method or property references. It also supports chaining through optional values within a chain, such as `#keyPath(Person.bestFriend.name)`. Key paths created using the `#keyPath` string expression don’t pass type information about the properties or methods they reference to the APIs that accept key paths.
+You use the `#keyPath` string expression to create compiler-checked keys and key paths that can be used by KVC methods like [`value(forKey:)`](https://developer.apple.com/documentation/objectivec/nsobject-swift.class/value(forkey:)) and [`value(forKeyPath:)`](https://developer.apple.com/documentation/objectivec/nsobject-swift.class/value(forkeypath:)). The `#keyPath` string expression accepts chained method or property references. It also supports chaining through optional values within a chain, such as `#keyPath(Person.bestFriend.name)`. Key paths created using the `#keyPath` string expression don’t pass type information about the properties or methods they reference to the APIs that accept key paths.
 
 The example below defines a `Person` class, creates two instances of it, and uses several `#keyPath` string expressions to access properties and properties of those properties:
 

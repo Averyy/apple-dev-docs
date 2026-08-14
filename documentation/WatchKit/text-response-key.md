@@ -7,7 +7,7 @@ Keys for retrieving text response information.
 ## Topics
 
 ### Constants
-- [let UIUserNotificationActionResponseTypedTextKey: String](../UIKit/UIUserNotificationActionResponseTypedTextKey.md)
+- [let UIUserNotificationActionResponseTypedTextKey: String](../uikit/uiusernotificationactionresponsetypedtextkey.md)
   The response text selected by the user.
 
 ## See Also

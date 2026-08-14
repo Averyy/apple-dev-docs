@@ -88,7 +88,7 @@ In the ARMv6 environment, the stack frame size is not fixed and the stack pointe
 - The *saved registers area* contains the values of registers that the callee must restore before it returns. For more information, see [`Preserve specific registers in ARMv6`](writing-armv6-code-for-ios#Preserve-specific-registers-in-ARMv6.md).
 - The *local storage area* contains each subroutine’s local variables.
 
-![An illustration of the ARM stack, before and after a function call.](https://docs-assets.developer.apple.com/published/a357a5ca6ad94caa17f06172dc98d9fd/writing-armv6-code-for-ios-1%402x.png)
+![An illustration of the ARM stack, before and after a function call.](/images/com.apple.Xcode/writing-armv6-code-for-ios-1@2x.png)
 
 ##### Create the Prolog and Epilog for a Function
 

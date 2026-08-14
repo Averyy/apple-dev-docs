@@ -10,11 +10,11 @@ Many people play games on iOS devices without using a physical controller. You c
 
 ##### Create a Custom View Controller Subclass
 
-A Metal-based game typically presents content in a [`UIView`](https://developer.apple.com/documentation/UIKit/UIView). An instance of [`UIViewController`](https://developer.apple.com/documentation/UIKit/UIViewController), known as the root view controller, manages the [`UIView`](https://developer.apple.com/documentation/UIKit/UIView). Your root view controller is responsible for the [`GCVirtualController`](gcvirtualcontroller.md) instance. To take responsibility, subclass from [`GCEventViewController`](gceventviewcontroller.md) rather than [`UIViewController`](https://developer.apple.com/documentation/UIKit/UIViewController).
+A Metal-based game typically presents content in a [`UIView`](https://developer.apple.com/documentation/uikit/uiview). An instance of [`UIViewController`](https://developer.apple.com/documentation/uikit/uiviewcontroller), known as the root view controller, manages the [`UIView`](https://developer.apple.com/documentation/uikit/uiview). Your root view controller is responsible for the [`GCVirtualController`](gcvirtualcontroller.md) instance. To take responsibility, subclass from [`GCEventViewController`](gceventviewcontroller.md) rather than [`UIViewController`](https://developer.apple.com/documentation/uikit/uiviewcontroller).
 
 > **Note**:  If your game supports tvOS, you need to subclass from [`GCEventViewController`](gceventviewcontroller.md).
 
-To create a custom subclass of [`UIViewController`](https://developer.apple.com/documentation/UIKit/UIViewController), create a new file in your project using the Cocoa Touch Class template. In the “Subclass of” combination box, enter “GCEventViewController”. In the Language menu, choose Objective-C. Then, open the newly created header file and import the Game Controller framework.
+To create a custom subclass of [`UIViewController`](https://developer.apple.com/documentation/uikit/uiviewcontroller), create a new file in your project using the Cocoa Touch Class template. In the “Subclass of” combination box, enter “GCEventViewController”. In the Language menu, choose Objective-C. Then, open the newly created header file and import the Game Controller framework.
 
 If the game uses a storyboard, [`update your main scene`](https://developer.apple.comhttps://developer.apple.com/library/archive/featuredarticles/ViewControllerPGforiPhoneOS/DefiningYourSubclass.html) to use a new view controller class derived from [`GCEventViewController`](gceventviewcontroller.md). Alternatively, if the game creates a root view controller programmatically, then update the code to create an instance of a new subclass derived from [`GCEventViewController`](gceventviewcontroller.md).
 
@@ -22,8 +22,8 @@ If the game uses a storyboard, [`update your main scene`](https://developer.appl
 
 When you connect a [`GCVirtualController`](gcvirtualcontroller.md), a new [`GCController`](gccontroller.md) appears in the controllers array. The elements that this controller supports are controlled by the configuration created for [`GCVirtualController`](gcvirtualcontroller.md). To configure a virtual controller, follow these steps:
 
-1. In your subclass of [`UIViewController`](https://developer.apple.com/documentation/UIKit/UIViewController), add a [`GCVirtualController`](gcvirtualcontroller.md) instance variable.
-2. Add an override to the [`viewDidLoad()`](https://developer.apple.com/documentation/UIKit/UIViewController/viewDidLoad()) method that creates the virtual controller and stores it in an instance variable.
+1. In your subclass of [`UIViewController`](https://developer.apple.com/documentation/uikit/uiviewcontroller), add a [`GCVirtualController`](gcvirtualcontroller.md) instance variable.
+2. Add an override to the [`viewDidLoad()`](https://developer.apple.com/documentation/uikit/uiviewcontroller/viewdidload()) method that creates the virtual controller and stores it in an instance variable.
 
 ```swift
 @implementation MyGameViewController {
@@ -52,7 +52,7 @@ When you connect a [`GCVirtualController`](gcvirtualcontroller.md), a new [`GCCo
 
 If there are no physical controllers connected, the game shows the virtual controller by default. If the player connects a physical controller, the game hides the virtual controller.
 
-To show a virtual controller when there are no physical controllers connected, call [`connect(replyHandler:)`](gcvirtualcontroller/connect(replyhandler:).md) on it in the [`GCControllerDidDisconnect`](https://developer.apple.com/documentation/Foundation/NSNotification/Name-swift.struct/GCControllerDidDisconnect) (Swift) or [`GCControllerDidDisconnectNotification`](gccontrollerdiddisconnectnotification.md) (Objective-C) handler.
+To show a virtual controller when there are no physical controllers connected, call [`connect(replyHandler:)`](gcvirtualcontroller/connect(replyhandler:).md) on it in the [`GCControllerDidDisconnect`](https://developer.apple.com/documentation/foundation/nsnotification/name-swift.struct/gccontrollerdiddisconnect) (Swift) or [`GCControllerDidDisconnectNotification`](gccontrollerdiddisconnectnotification.md) (Objective-C) handler.
 
 ```swift
 - (void)controllerDidDisconnect:(NSNotification *)notification {
@@ -72,7 +72,7 @@ When your game starts and there are no controllers connected, call [`connect(rep
 }
 ```
 
-To hide the virtual controller when a player connects a physical controller, call disconnect on the virtual controller in the [`GCControllerDidConnect`](https://developer.apple.com/documentation/Foundation/NSNotification/Name-swift.struct/GCControllerDidConnect) (Swift) or [`GCControllerDidConnectNotification`](gccontrollerdidconnectnotification.md) (Objective-C) handler. The game might receive a connection notification for a physical controller before receiving a notification for the virtual controller because controller connections are asynchronous.
+To hide the virtual controller when a player connects a physical controller, call disconnect on the virtual controller in the [`GCControllerDidConnect`](https://developer.apple.com/documentation/foundation/nsnotification/name-swift.struct/gccontrollerdidconnect) (Swift) or [`GCControllerDidConnectNotification`](gccontrollerdidconnectnotification.md) (Objective-C) handler. The game might receive a connection notification for a physical controller before receiving a notification for the virtual controller because controller connections are asynchronous.
 
 ```swift
 - (void)controllerDidConnect:(NSNotification *)notification {
@@ -146,7 +146,7 @@ Set the hidden property to true when you create the [`GCVirtualController.Config
 }
 ```
 
-Add code to the implementation of [`viewDidLoad()`](https://developer.apple.com/documentation/UIKit/UIViewController/viewDidLoad()) to install one or more [`UIGestureRecognizer`](https://developer.apple.com/documentation/UIKit/UIGestureRecognizer) objects on the game’s view. For example, use a [`UIPanGestureRecognizer`](https://developer.apple.com/documentation/UIKit/UIPanGestureRecognizer) to implement a direction pad or a [`UILongPressGestureRecognizer`](https://developer.apple.com/documentation/UIKit/UILongPressGestureRecognizer) to implement a button. Set the view controller as the delegate and the target of each gesture recognizer, and store them in instance variables.
+Add code to the implementation of [`viewDidLoad()`](https://developer.apple.com/documentation/uikit/uiviewcontroller/viewdidload()) to install one or more [`UIGestureRecognizer`](https://developer.apple.com/documentation/uikit/uigesturerecognizer) objects on the game’s view. For example, use a [`UIPanGestureRecognizer`](https://developer.apple.com/documentation/uikit/uipangesturerecognizer) to implement a direction pad or a [`UILongPressGestureRecognizer`](https://developer.apple.com/documentation/uikit/uilongpressgesturerecognizer) to implement a button. Set the view controller as the delegate and the target of each gesture recognizer, and store them in instance variables.
 
 ```swift
 @implementation MyGameViewController {
@@ -173,7 +173,7 @@ Add code to the implementation of [`viewDidLoad()`](https://developer.apple.com/
 }
 ```
 
-Then, declare an extension of the root view controller subclass that conforms to [`UIGestureRecognizerDelegate`](https://developer.apple.com/documentation/UIKit/UIGestureRecognizerDelegate). In the extension, declare the action methods that the configured gesture recognizers invoke.
+Then, declare an extension of the root view controller subclass that conforms to [`UIGestureRecognizerDelegate`](https://developer.apple.com/documentation/uikit/uigesturerecognizerdelegate). In the extension, declare the action methods that the configured gesture recognizers invoke.
 
 ```swift
 // Declares an extension (unnamed category) of MyGameViewController.
@@ -215,7 +215,7 @@ Implement the action methods to interpret the location of the touch, update the 
 }
 ```
 
-Next, implement the [`gestureRecognizer(_:shouldReceive:)`](https://developer.apple.com/documentation/UIKit/UIGestureRecognizerDelegate/gestureRecognizer(_:shouldReceive:)-16fuh) delegate method to define the bounds of the gesture recognizer. Calculate the bounding boxes of the controls based on the view’s current size, and place it within the view’s current safe area.
+Next, implement the [`gestureRecognizer(_:shouldReceive:)`](https://developer.apple.com/documentation/uikit/uigesturerecognizerdelegate/gesturerecognizer(_:shouldreceive:)-16fuh) delegate method to define the bounds of the gesture recognizer. Calculate the bounding boxes of the controls based on the view’s current size, and place it within the view’s current safe area.
 
 ```swift
 - (CGRect)calculateThumbstickRegionBounds {
@@ -259,7 +259,7 @@ Next, implement the [`gestureRecognizer(_:shouldReceive:)`](https://developer.ap
 }
 ```
 
-Update [`GCControllerDidConnect`](https://developer.apple.com/documentation/Foundation/NSNotification/Name-swift.struct/GCControllerDidConnect) (Swift) and [`GCControllerDidDisconnect`](https://developer.apple.com/documentation/Foundation/NSNotification/Name-swift.struct/GCControllerDidDisconnect) (Swift) handlers to show or hide the custom user interface when the virtual controller is connected. For Objective-C, update the [`GCControllerDidConnectNotification`](gccontrollerdidconnectnotification.md) and [`GCControllerDidDisconnectNotification`](gccontrollerdiddisconnectnotification.md) handlers.
+Update [`GCControllerDidConnect`](https://developer.apple.com/documentation/foundation/nsnotification/name-swift.struct/gccontrollerdidconnect) (Swift) and [`GCControllerDidDisconnect`](https://developer.apple.com/documentation/foundation/nsnotification/name-swift.struct/gccontrollerdiddisconnect) (Swift) handlers to show or hide the custom user interface when the virtual controller is connected. For Objective-C, update the [`GCControllerDidConnectNotification`](gccontrollerdidconnectnotification.md) and [`GCControllerDidDisconnectNotification`](gccontrollerdiddisconnectnotification.md) handlers.
 
 ```swift
 - (void)gameDidStart {

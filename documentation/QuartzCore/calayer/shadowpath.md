@@ -54,11 +54,11 @@ let shadowPath = CGPath(ellipseIn: CGRect(x: -contactShadowSize,
 layer.shadowPath = shadowPath
 ```
 
-![Layer with contact shadow effect](https://docs-assets.developer.apple.com/published/7687cdf63459da4f4f192ad43da1b3f0/media-2851604%402x.png)
+![Layer with contact shadow effect](/images/com.apple.quartzcore/media-2851604@2x.png)
 
 The following code shows how to create a path to simulate the Pages *Curved Shadow*. The left, top and right sides of the path are straight lines, and the bottom is a concave curve as illustrated in the following figure.
 
-![Shadow path for curved shadow effect](https://docs-assets.developer.apple.com/published/efb38018812c344291d36650810beca8/media-2851608%402x.png)
+![Shadow path for curved shadow effect](/images/com.apple.quartzcore/media-2851608@2x.png)
 
 ```swift
 let layer = CALayer()
@@ -88,7 +88,7 @@ shadowPath.addQuadCurve(to: CGPoint(x: layer.shadowRadius,
 layer.shadowPath = shadowPath
 ```
 
-![Layer with curved shadow effect](https://docs-assets.developer.apple.com/published/46bb206ab743dc6e42bfc8323dcc53a5/media-2851607%402x.png)
+![Layer with curved shadow effect](/images/com.apple.quartzcore/media-2851607@2x.png)
 
 ## See Also
 

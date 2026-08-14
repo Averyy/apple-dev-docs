@@ -20,7 +20,7 @@ var rectOfInterest: CGRect { get set }
 
 #### Discussion
 
-The value of this property is a [`CGRect`](https://developer.apple.com/documentation/CoreFoundation/CGRect) value that determines the object’s rectangle of interest for each frame of video.
+The value of this property is a [`CGRect`](https://developer.apple.com/documentation/corefoundation/cgrect) value that determines the object’s rectangle of interest for each frame of video.
 
 The rectangle’s origin is top left and is relative to the coordinate space of the device providing the metadata.
 

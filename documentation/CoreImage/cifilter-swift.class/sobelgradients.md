@@ -39,7 +39,7 @@ func sobelGradients(inputImage: CIImage) -> CIImage {
 }
 ```
 
-![Two images arranged horizontally. The left image is a photograph of modern building with horizontal concrete beams and large tinted windows. The image on the right shows the result of applying the Sobel gradients filter. Edges in the image are highlighted and flat areas of the image are set to black.](https://docs-assets.developer.apple.com/published/1e5dbb0c8b04fbe1acbf26834c940983/media-4407283%402x.png)
+![Two images arranged horizontally. The left image is a photograph of modern building with horizontal concrete beams and large tinted windows. The image on the right shows the result of applying the Sobel gradients filter. Edges in the image are highlighted and flat areas of the image are set to black.](/images/com.apple.coreimage/media-4407283@2x.png)
 
 ## See Also
 

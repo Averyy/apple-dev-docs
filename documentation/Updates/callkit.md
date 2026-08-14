@@ -6,11 +6,11 @@ Learn about important changes to CallKit.
 
 #### Overview
 
-Browse notable changes in [`CallKit`](https://developer.apple.com/documentation/CallKit).
+Browse notable changes in [`CallKit`](https://developer.apple.com/documentation/callkit).
 
 #### June 2025
 
-- Configure a call to include an option to use the system’s translation capabilities with a [`CXSetTranslatingCallAction`](https://developer.apple.com/documentation/CallKit/CXSetTranslatingCallAction).
+- Configure a call to include an option to use the system’s translation capabilities with a [`CXSetTranslatingCallAction`](https://developer.apple.com/documentation/callkit/cxsettranslatingcallaction).
 
 ## See Also
 

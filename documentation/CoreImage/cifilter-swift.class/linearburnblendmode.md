@@ -43,7 +43,7 @@ func linearBurnBlendMode(inputImage: CIImage, backgroundImage: CIImage) -> CIIma
 }
 ```
 
-![The image on the top left shows a beach with multiple palm trees and a rainbow arching across the blue sky.  The image below is a gradient image displaying a gradual color shift from purple to a dark orange. The image on the right shows the output from applying a linear burn blend mode filter. The result displays the beach rainbow image with very little detail and brightness.](https://docs-assets.developer.apple.com/published/904c7771377899996781ec8ee9425ca8/media-3546415%402x.png)
+![The image on the top left shows a beach with multiple palm trees and a rainbow arching across the blue sky.  The image below is a gradient image displaying a gradual color shift from purple to a dark orange. The image on the right shows the output from applying a linear burn blend mode filter. The result displays the beach rainbow image with very little detail and brightness.](/images/com.apple.coreimage/media-3546415@2x.png)
 
 ## See Also
 

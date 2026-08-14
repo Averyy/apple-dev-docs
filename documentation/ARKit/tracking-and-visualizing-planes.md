@@ -21,7 +21,7 @@ ARKit requires iOS 11 and a device with an A9 (or later) processor. ARKit is not
 
 The [`ARSCNView`](arscnview.md) class is a SceneKit view that includes an [`ARSession`](arsession.md) object that manages the motion tracking and image processing required to create an augmented reality (AR) experience. However, to run a session you must provide a session configuration.
 
-![Architecture diagram: an ARKit view owns an ARSession, which requires an ARConfiguration to run.](https://docs-assets.developer.apple.com/published/f6ef42e874d7ac79b0101e462bde2c94/tracking-visualizing-planes-1.png)
+![Architecture diagram: an ARKit view owns an ARSession, which requires an ARConfiguration to run.](/images/com.apple.arkit/tracking-visualizing-planes-1.png)
 
 The [`ARWorldTrackingConfiguration`](arworldtrackingconfiguration.md) class provides high-precision motion tracking and enables features to help you place virtual content in relation to real-world surfaces. To start an AR session, create a session configuration object with the options you want (such as plane detection), then call the [`run(_:options:)`](arsession/run(_:options:).md) method on the [`session`](arscnview/session.md) object of your [`ARSCNView`](arscnview.md) instance:
 
@@ -33,13 +33,13 @@ sceneView.session.run(configuration)
 
 Run your session only when the view that will display it is onscreen.
 
-> ❗ **Important**: If your app requires ARKit for its core functionality, use the [`arkit`](https://developer.apple.comhttps://developer.apple.com/library/content/documentation/General/Reference/InfoPlistKeyReference/Articles/iPhoneOSKeys.html#//apple_ref/doc/uid/TP40009252-SW3) key in the [`UIRequiredDeviceCapabilities`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/UIRequiredDeviceCapabilities) section of your app’s `Info.plist` file to make your app available only on devices that support ARKit. If AR is a secondary feature of your app, use the [`isSupported`](arconfiguration/issupported.md) property to determine whether to offer AR-based features.
+> ❗ **Important**: If your app requires ARKit for its core functionality, use the [`arkit`](https://developer.apple.comhttps://developer.apple.com/library/content/documentation/General/Reference/InfoPlistKeyReference/Articles/iPhoneOSKeys.html#//apple_ref/doc/uid/TP40009252-SW3) key in the [`UIRequiredDeviceCapabilities`](https://developer.apple.com/documentation/bundleresources/information-property-list/uirequireddevicecapabilities) section of your app’s `Info.plist` file to make your app available only on devices that support ARKit. If AR is a secondary feature of your app, use the [`isSupported`](arconfiguration/issupported.md) property to determine whether to offer AR-based features.
 
 #### Place 3d Content for Detected Planes
 
 After you’ve set up your AR session, you can use SceneKit to place virtual content in the view.
 
-When plane detection is enabled, ARKit adds and updates anchors for each detected plane. By default, the [`ARSCNView`](arscnview.md) class adds an [`SCNNode`](https://developer.apple.com/documentation/SceneKit/SCNNode) object to the SceneKit scene for each anchor. Your view’s delegate can implement the [`renderer(_:didAdd:for:)`](arscnviewdelegate/renderer(_:didadd:for:).md) method to add content to the scene. When you add content as a child of the node corresponding to the anchor, the `ARSCNView` class automatically moves that content as ARKit refines its estimate of the plane’s position.
+When plane detection is enabled, ARKit adds and updates anchors for each detected plane. By default, the [`ARSCNView`](arscnview.md) class adds an [`SCNNode`](https://developer.apple.com/documentation/scenekit/scnnode) object to the SceneKit scene for each anchor. Your view’s delegate can implement the [`renderer(_:didAdd:for:)`](arscnviewdelegate/renderer(_:didadd:for:).md) method to add content to the scene. When you add content as a child of the node corresponding to the anchor, the `ARSCNView` class automatically moves that content as ARKit refines its estimate of the plane’s position.
 
 ```swift
 func renderer(_ renderer: SCNSceneRenderer, didAdd node: SCNNode, for anchor: ARAnchor) {
@@ -55,7 +55,7 @@ func renderer(_ renderer: SCNSceneRenderer, didAdd node: SCNNode, for anchor: AR
 }
 ```
 
-ARKit offers two ways to track the area of an estimated plane. A plane anchor’s [`geometry`](arplaneanchor/geometry.md) describes a convex polygon tightly enclosing all points that ARKit currently estimates to be part of the same plane (easily visualized using [`ARSCNPlaneGeometry`](arscnplanegeometry.md). ARKit also provides a simpler estimate in a plane anchor’s [`extent`](arplaneanchor/extent.md) and [`center`](arplaneanchor/center.md)], which together describe a rectangular boundary (easily visualized using [`SCNPlane`](https://developer.apple.com/documentation/SceneKit/SCNPlane).
+ARKit offers two ways to track the area of an estimated plane. A plane anchor’s [`geometry`](arplaneanchor/geometry.md) describes a convex polygon tightly enclosing all points that ARKit currently estimates to be part of the same plane (easily visualized using [`ARSCNPlaneGeometry`](arscnplanegeometry.md). ARKit also provides a simpler estimate in a plane anchor’s [`extent`](arplaneanchor/extent.md) and [`center`](arplaneanchor/center.md)], which together describe a rectangular boundary (easily visualized using [`SCNPlane`](https://developer.apple.com/documentation/scenekit/scnplane).
 
 ```swift
 // Create a mesh to visualize the estimated shape of the plane.
@@ -74,7 +74,7 @@ extentNode.simdPosition = anchor.center
 extentNode.eulerAngles.x = -.pi / 2
 ```
 
-ARKit continually updates its estimates of each detected plane’s shape and extent. To show the current estimated shape for each plane, this sample app also implements the [`renderer(_:didUpdate:for:)`](arscnviewdelegate/renderer(_:didupdate:for:).md) method, updating the [`ARSCNPlaneGeometry`](arscnplanegeometry.md) and [`SCNPlane`](https://developer.apple.com/documentation/SceneKit/SCNPlane) objects to reflect the latest information from ARKit.
+ARKit continually updates its estimates of each detected plane’s shape and extent. To show the current estimated shape for each plane, this sample app also implements the [`renderer(_:didUpdate:for:)`](arscnviewdelegate/renderer(_:didupdate:for:).md) method, updating the [`ARSCNPlaneGeometry`](arscnplanegeometry.md) and [`SCNPlane`](https://developer.apple.com/documentation/scenekit/scnplane) objects to reflect the latest information from ARKit.
 
 ```swift
 func renderer(_ renderer: SCNSceneRenderer, didUpdate node: SCNNode, for anchor: ARAnchor) {

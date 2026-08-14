@@ -51,7 +51,7 @@ var body: some View {
 }
 ```
 
-![A macOS window showing four buttons, arranged in two columns. Each](https://docs-assets.developer.apple.com/published/6c9e401f5cf5e71f1b7ce476ac8383ac/View-monospacedDigit-1%402x.png)
+![A macOS window showing four buttons, arranged in two columns. Each](/images/com.apple.SwiftUI/View-monospacedDigit-1@2x.png)
 
 If a child view’s base font doesn’t support fixed-width digits, the font remains unchanged.
 

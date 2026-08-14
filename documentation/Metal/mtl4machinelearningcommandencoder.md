@@ -44,7 +44,7 @@ The [`dispatchNetwork(intermediatesHeap:)`](mtl4machinelearningcommandencoder/di
 
 ### Inherits From
 - [MTL4CommandEncoder](mtl4commandencoder.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

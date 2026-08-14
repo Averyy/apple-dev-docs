@@ -19,7 +19,7 @@ optional func previewController(_ controller: QLPreviewController, transitionIma
 
 #### Return Value
 
-A [`UIImage`](https://developer.apple.com/documentation/UIKit/UIImage) object that the preview controller cross-fades with when zooming.
+A [`UIImage`](https://developer.apple.com/documentation/uikit/uiimage) object that the preview controller cross-fades with when zooming.
 
 #### Discussion
 

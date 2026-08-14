@@ -6,7 +6,7 @@ Convert color from one profile’s color space to another.
 
 #### Overview
 
-A [`ColorSyncTransform`](colorsynctransform.md) precomputes the conversion between a sequence of profiles. Color conversion requires significant computation, so the way you apply a transform affects performance. To convert pixels directly, call [`ColorSyncTransformConvert(_:_:_:_:_:_:_:_:_:_:_:_:)`](colorsynctransformconvert(_:_:_:_:_:_:_:_:_:_:_:_:).md). For production code or large buffers, get better performance by extracting a ColorSync *code fragment* with [`ColorSyncCreateCodeFragment(_:_:)`](colorsynccreatecodefragment(_:_:).md) and running it through [`vImage`](https://developer.apple.com/documentation/Accelerate/vImage). Describe the layout of your pixel buffers with the pixel-format constants in [`Pixel format and data layout`](pixel-format.md).
+A [`ColorSyncTransform`](colorsynctransform.md) precomputes the conversion between a sequence of profiles. Color conversion requires significant computation, so the way you apply a transform affects performance. To convert pixels directly, call [`ColorSyncTransformConvert(_:_:_:_:_:_:_:_:_:_:_:_:)`](colorsynctransformconvert(_:_:_:_:_:_:_:_:_:_:_:_:).md). For production code or large buffers, get better performance by extracting a ColorSync *code fragment* with [`ColorSyncCreateCodeFragment(_:_:)`](colorsynccreatecodefragment(_:_:).md) and running it through [`vImage`](https://developer.apple.com/documentation/accelerate/vimage). Describe the layout of your pixel buffers with the pixel-format constants in [`Pixel format and data layout`](pixel-format.md).
 
 ## Topics
 

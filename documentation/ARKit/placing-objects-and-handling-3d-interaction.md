@@ -87,7 +87,7 @@ func setPosition(with raycastResult: ARRaycastResult, _ camera: ARCamera?) {
 }
 ```
 
-The ray-cast result also indicates how the surface is angled with respect to gravity. To preview the angle at which the user’s virtual content can be placed on the surface, update the focus square’s [`simdWorldTransform`](https://developer.apple.com/documentation/SceneKit/SCNNode/simdWorldTransform) with the result’s orientation.
+The ray-cast result also indicates how the surface is angled with respect to gravity. To preview the angle at which the user’s virtual content can be placed on the surface, update the focus square’s [`simdWorldTransform`](https://developer.apple.com/documentation/scenekit/scnnode/simdworldtransform) with the result’s orientation.
 
 ```swift
 func updateOrientation(basedOn raycastResult: ARRaycastResult) {

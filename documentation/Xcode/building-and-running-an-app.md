@@ -24,7 +24,7 @@ A *build scheme* is a collection of settings that specify which targets to build
 
 To build an app, or any other target, choose a scheme that contains the target. Xcode displays the selected scheme in the toolbar of your project window. To change the selected scheme, click the scheme name and choose a new one from the pop-up menu.
 
-![A screenshot of the project editor showing the scheme pop-up menu displayed in the toolbar with the scheme that builds the app selected.](https://docs-assets.developer.apple.com/published/f7afef3afd8dd907dae0a062d8309f1b/build-select-scheme%402x.png)
+![A screenshot of the project editor showing the scheme pop-up menu displayed in the toolbar with the scheme that builds the app selected.](/images/com.apple.Xcode/build-select-scheme@2x.png)
 
 For more information on schemes, see [`Customizing the build schemes for a project`](customizing-the-build-schemes-for-a-project.md).
 
@@ -32,7 +32,7 @@ For more information on schemes, see [`Customizing the build schemes for a proje
 
 After you choose a scheme to build, click the run destination name next to the scheme name in the toolbar, and choose a simulated or physical device from the pop-up menu.
 
-![A screenshot of the project editor showing the run destination pop-up menu displayed in the toolbar with My Mac selected.](https://docs-assets.developer.apple.com/published/292a795d5fa6f2f532ab1c4a00ae57c0/build-select-device%402x.png)
+![A screenshot of the project editor showing the run destination pop-up menu displayed in the toolbar with My Mac selected.](/images/com.apple.Xcode/build-select-device@2x.png)
 
 Choose a run destination that gives you the capabilities you need. For Mac products, choose My Mac. For other platforms, if the app doesn’t require actual hardware, you can choose a simulator to test features quickly on your Mac. If your app requires actual hardware, or you’re ready to see how your app behaves in real conditions, choose a physical device.
 
@@ -58,7 +58,7 @@ A scheme’s build configuration determines how Xcode launches the product. For 
   Develop apps in SwiftUI with an interactive preview that keeps the code and layout in sync.
 - [Previewing your app’s interface in Xcode](previewing-your-apps-interface-in-xcode.md)
   Iterate designs quickly and preview your apps’ displays across different Apple devices.
-- [Xcode updates](../Updates/Xcode.md)
+- [Xcode updates](../updates/xcode.md)
   Learn about important changes to Xcode.
 
 

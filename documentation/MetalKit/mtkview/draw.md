@@ -21,7 +21,7 @@ func draw()
 
 #### Discussion
 
-This method manually tells the view to redraw its contents. Calling this method causes the view to call either the [`draw(in:)`](mtkviewdelegate/draw(in:).md) method of the view’s [`delegate`](mtkview/delegate.md), or the [`draw(_:)`](https://developer.apple.com/documentation/UIKit/UIView/draw(_:)) method of the [`MTKView`](mtkview.md) subclass. Never call this method inside either drawing function.
+This method manually tells the view to redraw its contents. Calling this method causes the view to call either the [`draw(in:)`](mtkviewdelegate/draw(in:).md) method of the view’s [`delegate`](mtkview/delegate.md), or the [`draw(_:)`](https://developer.apple.com/documentation/uikit/uiview/draw(_:)) method of the [`MTKView`](mtkview.md) subclass. Never call this method inside either drawing function.
 
 ## See Also
 
@@ -30,7 +30,7 @@ This method manually tells the view to redraw its contents. Calling this method 
 - [var isPaused: Bool](mtkview/ispaused.md)
   A Boolean value that indicates whether the draw loop is paused.
 - [var enableSetNeedsDisplay: Bool](mtkview/enablesetneedsdisplay.md)
-  A Boolean value that indicates whether the view responds to [`setNeedsDisplay()`](https://developer.apple.com/documentation/UIKit/UIView/setNeedsDisplay()).
+  A Boolean value that indicates whether the view responds to [`setNeedsDisplay()`](https://developer.apple.com/documentation/uikit/uiview/setneedsdisplay()).
 - [var presentsWithTransaction: Bool](mtkview/presentswithtransaction.md)
   A Boolean value that determines whether the view presents its content using a Core Animation transaction.
 

@@ -23,8 +23,8 @@ case lz4
 
 For more information on the LZ4 codec, see:
 
-- [`Algorithm.lz4`](https://developer.apple.com/documentation/Compression/Algorithm/lz4)
-- [`COMPRESSION_LZ4`](https://developer.apple.com/documentation/Compression/COMPRESSION_LZ4)
+- [`Algorithm.lz4`](https://developer.apple.com/documentation/compression/algorithm/lz4)
+- [`COMPRESSION_LZ4`](https://developer.apple.com/documentation/compression/compression_lz4)
 
 ## See Also
 

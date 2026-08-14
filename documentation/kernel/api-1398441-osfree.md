@@ -18,7 +18,7 @@ void OSFree(void *addr, uint32_t size, OSMallocTag tag);
 
 - `addr`: A pointer to the memory block to free.
 - `size`: The size of the memory block to free.
-- `tag`: The   with which   was originally allocated.
+- `tag`: The [`OSMallocTag`](osmalloctag.md) with which `addr` was originally allocated.
 
 ## See Also
 

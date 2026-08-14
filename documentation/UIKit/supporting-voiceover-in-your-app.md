@@ -10,7 +10,7 @@ VoiceOver is a gesture-based screen reader that enables people to experience the
 
 With a few steps, you can make your app VoiceOver-accessible in Xcode or programmatically. By increasing accessibility, you open your app to a wider audience, and make it easier for everyone to use.
 
-![The image shows two iPhones with VoiceOver turned on. The phone on the left shows Settings > Accessibility > VoiceOver, with the VoiceOver cursor highlighting the descriptive text for Live Recognition. The phone on the right shows the Lists view in the Contacts app, with the VoiceOver cursor highlighting the iCloud section header.](https://docs-assets.developer.apple.com/published/0ec72214996f37417402cbba929e8954/supporting-voiceover-in-your-app%402x.png)
+![The image shows two iPhones with VoiceOver turned on. The phone on the left shows Settings > Accessibility > VoiceOver, with the VoiceOver cursor highlighting the descriptive text for Live Recognition. The phone on the right shows the Lists view in the Contacts app, with the VoiceOver cursor highlighting the iCloud section header.](/images/com.apple.uikit/supporting-voiceover-in-your-app@2x.png)
 
 ##### Audit Your App with Voiceover on
 
@@ -56,7 +56,7 @@ To ensure that users understand the intent of your interface, you might need to 
 
 When using standard UIKit controls, assign accessibility labels and hints in Xcode using the Identity inspector’s Accessibility pane. To improve accessibility, you make an element accessible by selecting the Accessibility Enabled option. For example, the play button in a music app might include the following label and hint:
 
-![An Xcode screenshot showing the Accessibility pane of the Identity inspector. This pane has a checkbox to enable accessibility, and three text fields to enter text for an object’s label, hint, and identifier. The Accessibility Enabled option is in a selected state. The Label field says Play Song, the Hint field says Play the selected song, and the Identifier field is blank.](https://docs-assets.developer.apple.com/published/528cb16f77dbcb86b9dd97bc81c0ed3f/media-3023633%402x.png)
+![An Xcode screenshot showing the Accessibility pane of the Identity inspector. This pane has a checkbox to enable accessibility, and three text fields to enter text for an object’s label, hint, and identifier. The Accessibility Enabled option is in a selected state. The Label field says Play Song, the Hint field says Play the selected song, and the Identifier field is blank.](/images/com.apple.uikit/media-3023633@2x.png)
 
 ##### Add Accessibility Labels and Hints Programmatically
 
@@ -79,7 +79,7 @@ score.accessibilityHint = "Your current score"
 
 VoiceOver reads in the direction of the device’s language. For example, VoiceOver reads English from left-to-right and it reads Arabic and Farsi from right-to-left. If you vertically stack labels in a UI, or display text in a table, VoiceOver may not read the labels in the correct order. You can programmatically group accessibility elements to ensure that VoiceOver reads them as you intend. For example, if you’re creating an app that stacks a title and a value to display a person’s name and email address, depending on their order in the interface, VoiceOver may not read those elements together. Group the elements to ensure that you’re creating a clear context.
 
-![Two side-by-side diagrams demonstrating how VoiceOver reads ungrouped and grouped labels. The left diagram contains two stacks of ungrouped labels depicting a person’s name and email address. The first stack consists of the Name label with the person’s name below, and the second stack consists of the Email label with the email address below. VoiceOver reads these four items in a top-left, top-right, bottom-left, and bottom-right sequence — Name label, Email label, person’s name, email address. The right diagram consists of two label groups. The first group contains the Name label and the person’s name, and the second group contains the Email label and the email address. VoiceOver reads the first group before reading the second group.](https://docs-assets.developer.apple.com/published/d67fc838451984c42bf909f66d9955c9/media-3023631%402x.png)
+![Two side-by-side diagrams demonstrating how VoiceOver reads ungrouped and grouped labels. The left diagram contains two stacks of ungrouped labels depicting a person’s name and email address. The first stack consists of the Name label with the person’s name below, and the second stack consists of the Email label with the email address below. VoiceOver reads these four items in a top-left, top-right, bottom-left, and bottom-right sequence — Name label, Email label, person’s name, email address. The right diagram consists of two label groups. The first group contains the Name label and the person’s name, and the second group contains the Email label and the email address. VoiceOver reads the first group before reading the second group.](/images/com.apple.uikit/media-3023631@2x.png)
 
 In the image above, there are four labels on the left that VoiceOver reads from the leading to the trailing edge, in this case, left-to-right. Although every element is accessible to VoiceOver, this doesn’t provide the best user experience. On the right, VoiceOver reads the grouped labels in the intended order, which allows clear navigation.
 

@@ -21,7 +21,7 @@ let kVTDecompressionResolutionKey_Width: CFString
 
 #### Discussion
 
-The value is a [`CFNumber`](https://developer.apple.com/documentation/CoreFoundation/CFNumber).
+The value is a [`CFNumber`](https://developer.apple.com/documentation/corefoundation/cfnumber).
 
 ## See Also
 

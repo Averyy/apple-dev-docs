@@ -20,7 +20,7 @@ func testExpectedFailure() throws {
 
 If any assertions fail in a test after you call `XCTExpectFailure`, Xcode marks the test as an expected failure instead of a test failure.
 
-![An image showing two unit tests. The first test demonstrates how Xcode highlights an assertion that failed as an expected failure. The second test shows how Xcode highlights a test as failed when a failure was expected but did not occur.](https://docs-assets.developer.apple.com/published/7a0f4a47a6e8ac7c9aa2b5a2448a868c/media-3734335%402x.png)
+![An image showing two unit tests. The first test demonstrates how Xcode highlights an assertion that failed as an expected failure. The second test shows how Xcode highlights a test as failed when a failure was expected but did not occur.](/images/com.apple.xctest/media-3734335@2x.png)
 
 If no assertion failures occur, Xcode marks the test as failing because the expected failure doesn’t occur. Remove the expected failure to have Xcode mark the test as passing in future tests, or use the expected failure options below to refine your expected failure.
 

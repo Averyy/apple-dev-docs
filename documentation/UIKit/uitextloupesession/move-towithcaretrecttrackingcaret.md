@@ -28,7 +28,7 @@ Call this method repeatedly from a gesture recognizer when the touch location ch
 ## Parameters
 
 - `point`: The new location you want to magnify with the loupe. When creating the loupe with a gesture recognizer, specify the location of the gesture.
-- `caretRect`: The current position of the caret handle. Specify [`CGRectNull`](https://developer.apple.com/documentation/CoreGraphics/CGRectNull) if the view doesn’t contain a selection or the caret isn’t visible.
+- `caretRect`: The current position of the caret handle. Specify [`CGRectNull`](https://developer.apple.com/documentation/coregraphics/cgrectnull) if the view doesn’t contain a selection or the caret isn’t visible.
 - `tracksCaret`: `true` if you want the loupe to track the movements of the caret. If you specify `true`, provide a valid rectangle in the `caretRect` parameter. Specify `false` to continue tracking the location of touch events.
 
 ## See Also

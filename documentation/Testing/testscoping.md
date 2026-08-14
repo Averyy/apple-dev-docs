@@ -28,8 +28,8 @@ Provide custom scope for tests by implementing the [`scopeProvider(for:testCase:
 ## Relationships
 
 ### Inherits From
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 ### Conforming Types
 - [IssueHandlingTrait](issuehandlingtrait.md)
 - [ParallelizationTrait](parallelizationtrait.md)

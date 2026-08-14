@@ -36,7 +36,7 @@ struct SimpleGauge: View {
 }
 ```
 
-![A linear gauge that shows an indicator at 40 percent along the length](https://docs-assets.developer.apple.com/published/294460fde9fad086627bca9bbcea396f/SwiftUI-Gauge-ValueLabelLinear%402x.png)
+![A linear gauge that shows an indicator at 40 percent along the length](/images/com.apple.SwiftUI/SwiftUI-Gauge-ValueLabelLinear@2x.png)
 
 ## Parameters
 

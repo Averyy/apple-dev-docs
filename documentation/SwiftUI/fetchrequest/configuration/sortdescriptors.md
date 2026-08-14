@@ -23,7 +23,7 @@ The request’s sort descriptors, accessed as value types.
 
 #### Discussion
 
-Set this configuration value to cause a [`FetchRequest`](fetchrequest.md) to execute a fetch with a new collection of [`SortDescriptor`](https://developer.apple.com/documentation/Foundation/SortDescriptor) instances. If you want to use [`NSSortDescriptor`](https://developer.apple.com/documentation/Foundation/NSSortDescriptor) instances, set [`nsSortDescriptors`](fetchrequest/configuration/nssortdescriptors.md) instead.
+Set this configuration value to cause a [`FetchRequest`](fetchrequest.md) to execute a fetch with a new collection of [`SortDescriptor`](https://developer.apple.com/documentation/foundation/sortdescriptor) instances. If you want to use [`NSSortDescriptor`](https://developer.apple.com/documentation/foundation/nssortdescriptor) instances, set [`nsSortDescriptors`](fetchrequest/configuration/nssortdescriptors.md) instead.
 
 Access this value of a [`FetchRequest.Configuration`](fetchrequest/configuration.md) structure for a given request by using the [`sortDescriptors`](fetchedresults/sortdescriptors.md) property on the associated [`FetchedResults`](fetchedresults.md) instance, either directly or through a [`Binding`](binding.md).
 

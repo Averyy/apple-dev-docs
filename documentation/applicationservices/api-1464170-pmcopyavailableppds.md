@@ -20,8 +20,8 @@ A result code. See [`Result Codes`](core_printing#1670007.md).
 
 ## Parameters
 
-- `domain`: The PPD domain to search. See   for a description of the constants you can use to specify the domain.
-- `ppds`: A pointer to your   variable. On return, the variable refers to a Core Foundation array of PPD files in the specified domain. Each element in the array is a Core Foundation URL object that specifies the location of a PPD file or a compressed PPD file. You are responsible for releasing the array. If the specified domain is not valid, the variable is set to  .
+- `domain`: The PPD domain to search. See [`PMPPDDomain`](pmppddomain.md) for a description of the constants you can use to specify the domain.
+- `ppds`: A pointer to your [`CFArray`](https://developer.apple.com/documentation/corefoundation/cfarray) variable. On return, the variable refers to a Core Foundation array of PPD files in the specified domain. Each element in the array is a Core Foundation URL object that specifies the location of a PPD file or a compressed PPD file. You are responsible for releasing the array. If the specified domain is not valid, the variable is set to `NULL`.
 
 ## See Also
 

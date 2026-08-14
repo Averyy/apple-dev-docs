@@ -38,8 +38,8 @@ This message interoperates with the notification [`NSSystemClockDidChange`](nsno
 
 ### Conforms To
 - [NotificationCenter.MainActorMessage](notificationcenter/mainactormessage.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 
 ---

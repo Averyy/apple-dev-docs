@@ -68,7 +68,7 @@ class ExtensionExample: ContactProviderExtension {
 ## Relationships
 
 ### Inherits From
-- [AppExtension](../ExtensionFoundation/AppExtension.md)
+- [AppExtension](../extensionfoundation/appextension.md)
 - [ContactItemEnumerating](contactitemenumerating.md)
 
 

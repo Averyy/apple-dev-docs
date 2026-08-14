@@ -43,7 +43,7 @@ The `NSFontManager` implementation of this method refuses to convert a font’s 
 
 ## Parameters
 
-- `upFlag`: If [`true`](https://developer.apple.com/documentation/Swift/true), a heavier font is returned; if it’s [`false`](https://developer.apple.com/documentation/Swift/false), a lighter font is returned.
+- `upFlag`: If [`true`](https://developer.apple.com/documentation/swift/true), a heavier font is returned; if it’s [`false`](https://developer.apple.com/documentation/swift/false), a lighter font is returned.
 - `fontObj`: The font whose weight is increased or decreased.
 
 ## See Also

@@ -38,7 +38,7 @@ If a file system volume doesn’t conform to this protocol, the kernel layer can
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

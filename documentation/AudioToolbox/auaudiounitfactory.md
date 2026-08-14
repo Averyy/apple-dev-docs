@@ -25,9 +25,9 @@ protocol AUAudioUnitFactory : NSExtensionRequestHandling
 
 #### Overview
 
-In most cases, if your audio unit specifies parameters to configure its behavior, it should provide a custom user interface to control those parameters. You create this user interface by subclassing the [`AUViewController`](https://developer.apple.com/documentation/CoreAudioKit/AUViewController) class and implementing this protocol on your subclass.
+In most cases, if your audio unit specifies parameters to configure its behavior, it should provide a custom user interface to control those parameters. You create this user interface by subclassing the [`AUViewController`](https://developer.apple.com/documentation/coreaudiokit/auviewcontroller) class and implementing this protocol on your subclass.
 
-If your audio unit doesn’t provide a custom user interface, subclass the [`NSObject`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class) class instead. In this case, the hosting app must create a generic user interface for your audio unit.
+If your audio unit doesn’t provide a custom user interface, subclass the [`NSObject`](https://developer.apple.com/documentation/objectivec/nsobject-swift.class) class instead. In this case, the hosting app must create a generic user interface for your audio unit.
 
 ## Topics
 
@@ -38,14 +38,14 @@ If your audio unit doesn’t provide a custom user interface, subclass the [`NSO
 ## Relationships
 
 ### Inherits From
-- [NSExtensionRequestHandling](../Foundation/NSExtensionRequestHandling.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSExtensionRequestHandling](../foundation/nsextensionrequesthandling.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 
-- [Creating an audio unit extension](../AVFAudio/creating-an-audio-unit-extension.md)
+- [Creating an audio unit extension](../avfaudio/creating-an-audio-unit-extension.md)
   Build an extension by using an Xcode template.
-- [Creating custom audio effects](../AVFAudio/creating-custom-audio-effects.md)
+- [Creating custom audio effects](../avfaudio/creating-custom-audio-effects.md)
   Add custom audio-effect processing to apps like Logic Pro X and GarageBand by creating Audio Unit (AU) plug-ins.
 - [Incorporating Audio Effects and Instruments](incorporating-audio-effects-and-instruments.md)
   Add custom audio processing and MIDI instruments to your app by hosting Audio Unit (AU) plug-ins.

@@ -16,7 +16,7 @@ To produce high-resolution content for people to view on 2D displays, the system
 
 ##### Pair Your Apple Vision Pro to Xcode
 
-Before capturing screenshots and video from your device, pair it with a Mac that has Xcode and the visionOS SDK installed. For instructions on pairing your device, see [`Running your app on simulated or physical devices`](https://developer.apple.com/documentation/Xcode/running-your-app-on-simulated-or-physical-devices).
+Before capturing screenshots and video from your device, pair it with a Mac that has Xcode and the visionOS SDK installed. For instructions on pairing your device, see [`Running your app on simulated or physical devices`](https://developer.apple.com/documentation/xcode/running-your-app-on-simulated-or-physical-devices).
 
 ##### Prepare to Capture Your App and Its Surroundings
 
@@ -32,7 +32,7 @@ To capture screenshots or video from a device, select your device from the captu
 2. Choose File > Developer Capture to bring up the Developer Capture dialog.
 3. Select the device to capture from the pop-up menu.
 
-![A screenshot of the Developer Capture dialog that includes a camera button and a video button on the left to begin and end screenshot and video capture sessions, respectively; a pop-up menu to select devices on the right; and a status message below the pop-up menu that lists ready next to checkmark in a circle.](https://docs-assets.developer.apple.com/published/b492114b52f3506f230772e9fcc6176d/developer-capture-dialog%402x.png)
+![A screenshot of the Developer Capture dialog that includes a camera button and a video button on the left to begin and end screenshot and video capture sessions, respectively; a pop-up menu to select devices on the right; and a status message below the pop-up menu that lists ready next to checkmark in a circle.](/images/com.apple.visionOS/developer-capture-dialog@2x.png)
 
 If you see the message “Preparing, wait for the device to be ready”. You can click the info button that appears to the right of the pop-up menu for more information.
 
@@ -40,7 +40,7 @@ If you see the message “Preparing, wait for the device to be ready”. You can
 
 To begin capturing screenshots from Apple Vision Pro, click the button with the still camera icon in the capture dialog. The system begins your capture session:
 
-![A screenshot of the Developer Capture dialog that includes a stop button on the left to end the capture session, a countdown button to capture a screenshot, an unavailable pop-up menu with your device selected. Below the pop-up menu, a message counting down the time remaining in the current capture session reads: 00:46 Remaining.](https://docs-assets.developer.apple.com/published/bb46eb086fc77d93fdd674dc0e0ca32b/developer-capture-time-remaining%402x.png)
+![A screenshot of the Developer Capture dialog that includes a stop button on the left to end the capture session, a countdown button to capture a screenshot, an unavailable pop-up menu with your device selected. Below the pop-up menu, a message counting down the time remaining in the current capture session reads: 00:46 Remaining.](/images/com.apple.visionOS/developer-capture-time-remaining@2x.png)
 
 To capture a screenshot immediately, without a countdown, press the spacebar. Click the countdown button to capture a screenshot after a 3 second countdown. Continue to keep relevant content centered and in frame for screenshots. The aspect ratio of screenshots crops content that appears at the sides of an experience.
 
@@ -66,7 +66,7 @@ Use additional video-editing tools to trim, edit, and apply post-processing, suc
 
 ## See Also
 
-- [Reality Composer Pro](../RealityComposerPro/RealityComposerPro.md)
+- [Reality Composer Pro](../realitycomposerpro/realitycomposerpro.md)
   Build, design, and orchestrate 3D content for your RealityKit apps.
 - [Chaparral Village: Building an immersive visionOS adventure game](chaparral-village-building-an-immersive-visionos-adventure-game.md)
   Create an adventure game using SwiftUI, RealityKit, and Reality Composer Pro 3.
@@ -84,7 +84,7 @@ Use additional video-editing tools to trim, edit, and apply post-processing, suc
   Add a deeper level of immersion to media playback in your app with RealityKit and Reality Composer Pro.
 - [Enabling video reflections in an immersive environment](enabling-video-reflections-in-an-immersive-environment.md)
   Create a more immersive experience by adding video reflections in a custom environment.
-- [Combining 2D and 3D views in an immersive app](../RealityKit/combining-2d-and-3d-views-in-an-immersive-app.md)
+- [Combining 2D and 3D views in an immersive app](../realitykit/combining-2d-and-3d-views-in-an-immersive-app.md)
   Use attachments to place 2D content relative to 3D content in your visionOS app.
 - [Understanding the modular architecture of RealityKit](understanding-the-realitykit-modular-architecture.md)
   Learn how everything fits together in RealityKit.

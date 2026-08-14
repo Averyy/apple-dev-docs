@@ -15,7 +15,7 @@ The name of the app-specific class you want UIKit to instantiate and use as the 
 
 #### Discussion
 
-The delegate class you specify for [`CPTemplateApplicationInstrumentClusterSceneSessionRoleApplication`](information-property-list/uiapplicationscenemanifest/uisceneconfigurations/cptemplateapplicationinstrumentclusterscenesessionroleapplication.md) must adopt the [`CPTemplateApplicationInstrumentClusterSceneDelegate`](https://developer.apple.com/documentation/CarPlay/CPTemplateApplicationInstrumentClusterSceneDelegate) protocol.
+The delegate class you specify for [`CPTemplateApplicationInstrumentClusterSceneSessionRoleApplication`](information-property-list/uiapplicationscenemanifest/uisceneconfigurations/cptemplateapplicationinstrumentclusterscenesessionroleapplication.md) must adopt the [`CPTemplateApplicationInstrumentClusterSceneDelegate`](https://developer.apple.com/documentation/carplay/cptemplateapplicationinstrumentclusterscenedelegate) protocol.
 
 ## See Also
 

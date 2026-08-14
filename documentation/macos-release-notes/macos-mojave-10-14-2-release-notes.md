@@ -6,7 +6,7 @@ Update your apps to use new features, and test your apps against API changes.
 
 #### Overview
 
-The macOS 10.14.1 SDK provides support for developing apps for Macs running macOS Mojave 10.14.2. The SDK comes bundled with Xcode 10.1 available from the Mac App Store. For information on the compatibility requirements for Xcode 10.1, see [`Xcode Release Notes`](https://developer.apple.com/documentation/Xcode-Release-Notes).
+The macOS 10.14.1 SDK provides support for developing apps for Macs running macOS Mojave 10.14.2. The SDK comes bundled with Xcode 10.1 available from the Mac App Store. For information on the compatibility requirements for Xcode 10.1, see [`Xcode Release Notes`](https://developer.apple.com/documentation/xcode-release-notes).
 
 ##### Security
 

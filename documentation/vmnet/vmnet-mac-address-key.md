@@ -17,7 +17,7 @@ let vmnet_mac_address_key: UnsafePointer<CChar>
 
 #### Discussion
 
-The value for this key is of type [`XPC_TYPE_STRING`](https://developer.apple.com/documentation/XPC/XPC_TYPE_STRING-swift.var).
+The value for this key is of type [`XPC_TYPE_STRING`](https://developer.apple.com/documentation/xpc/xpc_type_string-swift.var).
 
 ## See Also
 

@@ -34,7 +34,7 @@ Implement this protocol to make an attribute decodable. Decoding an [`Attributed
 
 ### Inherits From
 - [AttributedStringKey](attributedstringkey.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 ### Conforming Types
 - [AttributeScopes.AccessibilityAttributes.AdjustedPitchAttribute](attributescopes/accessibilityattributes/adjustedpitchattribute.md)
 - [AttributeScopes.AccessibilityAttributes.AnnouncementPriorityAttribute](attributescopes/accessibilityattributes/announcementpriorityattribute.md)

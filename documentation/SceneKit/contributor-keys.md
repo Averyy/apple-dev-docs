@@ -6,7 +6,7 @@ Metadata identifying the user and authoring tool that created a scene file, used
 
 #### Overview
 
-Authoring tools that generate scene files may include metadata identifying the name and version of the authoring software and the name of the user who created the file. The values for these keys are [`NSString`](https://developer.apple.com/documentation/Foundation/NSString) objects.
+Authoring tools that generate scene files may include metadata identifying the name and version of the authoring software and the name of the user who created the file. The values for these keys are [`NSString`](https://developer.apple.com/documentation/foundation/nsstring) objects.
 
 ## Topics
 

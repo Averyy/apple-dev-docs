@@ -18,7 +18,7 @@ subscript(index: Int32) -> (Float, Float, Float) { get }
 
 #### Discussion
 
-This subscript operates on three-component geometry sources with a [`format`](argeometrysource/format.md) of [`MTLVertexFormat.float3`](https://developer.apple.com/documentation/Metal/MTLVertexFormat/float3). This operator returns an (x, y, z) offset relative to its parent anchor’s position that corresponds to the subscripted vertex position in [`vertices`](armeshgeometry/vertices.md) and to the subscripted normal vector in [`normals`](armeshgeometry/normals.md).
+This subscript operates on three-component geometry sources with a [`format`](argeometrysource/format.md) of [`MTLVertexFormat.float3`](https://developer.apple.com/documentation/metal/mtlvertexformat/float3). This operator returns an (x, y, z) offset relative to its parent anchor’s position that corresponds to the subscripted vertex position in [`vertices`](armeshgeometry/vertices.md) and to the subscripted normal vector in [`normals`](armeshgeometry/normals.md).
 
 ## See Also
 

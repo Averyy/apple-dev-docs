@@ -21,9 +21,9 @@ var kAudioFilePropertyAlbumArtwork: AudioFilePropertyID { get }
 
 #### Discussion
 
-A [`CFData`](https://developer.apple.com/documentation/CoreFoundation/CFData) object containing an image file associated with the audio file.
+A [`CFData`](https://developer.apple.com/documentation/corefoundation/cfdata) object containing an image file associated with the audio file.
 
-The image data is formatted as either JFIF (JPEG) or PNG (PNG). If you access this property, your app is responsible for releasing the [`CFData`](https://developer.apple.com/documentation/CoreFoundation/CFData) object.
+The image data is formatted as either JFIF (JPEG) or PNG (PNG). If you access this property, your app is responsible for releasing the [`CFData`](https://developer.apple.com/documentation/corefoundation/cfdata) object.
 
 ## See Also
 

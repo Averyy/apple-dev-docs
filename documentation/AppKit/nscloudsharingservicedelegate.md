@@ -16,11 +16,11 @@ protocol NSCloudSharingServiceDelegate : NSSharingServiceDelegate
 
 #### Overview
 
-CloudKit allows a user to share a hierarchy of records with other iCloud users. In macOS, you use [`NSItemProvider`](https://developer.apple.com/documentation/Foundation/NSItemProvider) and [`NSSharingService`](nssharingservice.md) to facilitate sharing. Register an instance of [`CKShare`](https://developer.apple.com/documentation/CloudKit/CKShare) with an item provider, and then use a sharing service to present it to the user. You must initialize the service with the [`cloudSharing`](nssharingservice/name/cloudsharing.md) service name. If the share is new, the user can configure the share and invite other iCloud users to participate. Otherwise, they can use the service to manage the share’s participants and their permissions.
+CloudKit allows a user to share a hierarchy of records with other iCloud users. In macOS, you use [`NSItemProvider`](https://developer.apple.com/documentation/foundation/nsitemprovider) and [`NSSharingService`](nssharingservice.md) to facilitate sharing. Register an instance of [`CKShare`](https://developer.apple.com/documentation/cloudkit/ckshare) with an item provider, and then use a sharing service to present it to the user. You must initialize the service with the [`cloudSharing`](nssharingservice/name/cloudsharing.md) service name. If the share is new, the user can configure the share and invite other iCloud users to participate. Otherwise, they can use the service to manage the share’s participants and their permissions.
 
 This protocol defines methods that the sharing service calls when it saves changes to a share, or deletes it. The service also asks its delegate to provide the preferred sharing options when creating a new share. Set the service’s [`delegate`](nssharingservice/delegate.md) property to an object that implements this protocol. Use your implementation to provide any appropriate behavior, such as deleting a share you cache locally when the service deletes it from the server.
 
-For more information about CloudKit sharing, see [`Shared Records`](https://developer.apple.com/documentation/CloudKit/shared-records).
+For more information about CloudKit sharing, see [`Shared Records`](https://developer.apple.com/documentation/cloudkit/shared-records).
 
 ## Topics
 
@@ -39,7 +39,7 @@ For more information about CloudKit sharing, see [`Shared Records`](https://deve
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 - [NSSharingServiceDelegate](nssharingservicedelegate.md)
 
 ## See Also

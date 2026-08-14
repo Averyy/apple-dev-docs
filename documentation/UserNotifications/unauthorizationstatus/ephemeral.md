@@ -19,7 +19,7 @@ case ephemeral
 
 #### Discussion
 
-An App Clip may have the ability to schedule or receive notifications for a limited amount of time. For more information, see [`Enabling notifications in App Clips`](https://developer.apple.com/documentation/AppClip/enabling-notifications-in-app-clips).
+An App Clip may have the ability to schedule or receive notifications for a limited amount of time. For more information, see [`Enabling notifications in App Clips`](https://developer.apple.com/documentation/appclip/enabling-notifications-in-app-clips).
 
 ## See Also
 

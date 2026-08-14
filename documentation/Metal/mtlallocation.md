@@ -38,7 +38,7 @@ See [`Simplifying GPU resource management with residency sets`](simplifying-gpu-
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 ### Inherited By
 - [MTL4MachineLearningPipelineState](mtl4machinelearningpipelinestate.md)
 - [MTLAccelerationStructure](mtlaccelerationstructure.md)

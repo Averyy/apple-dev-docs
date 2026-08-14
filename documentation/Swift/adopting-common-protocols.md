@@ -134,7 +134,7 @@ If your type contains properties that don’t affect whether two instances are c
 
 ##### Customize Nsobject Subclass Behavior
 
-`NSObject` subclasses inherit conformance to the `Equatable` and `Hashable` protocols, with equality based on instance identity. If you need to customize this behavior, override the [`isEqual(_:)`](https://developer.apple.com/documentation/ObjectiveC/NSObjectProtocol/isEqual(_:)) method and [`hash`](https://developer.apple.com/documentation/ObjectiveC/NSObjectProtocol/hash) property instead of the `==` operator method and `hashValue` property.
+`NSObject` subclasses inherit conformance to the `Equatable` and `Hashable` protocols, with equality based on instance identity. If you need to customize this behavior, override the [`isEqual(_:)`](https://developer.apple.com/documentation/objectivec/nsobjectprotocol/isequal(_:)) method and [`hash`](https://developer.apple.com/documentation/objectivec/nsobjectprotocol/hash) property instead of the `==` operator method and `hashValue` property.
 
 ```swift
 extension MyNSObjectSubclass {

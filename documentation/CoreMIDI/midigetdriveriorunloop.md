@@ -20,7 +20,7 @@ func MIDIGetDriverIORunLoop() -> Unmanaged<CFRunLoop>
 
 #### Return Value
 
-The [`CFRunLoop`](https://developer.apple.com/documentation/CoreFoundation/CFRunLoop) of the server’s driver I/O thread.
+The [`CFRunLoop`](https://developer.apple.com/documentation/corefoundation/cfrunloop) of the server’s driver I/O thread.
 
 #### Discussion
 

@@ -70,7 +70,7 @@ let content = MusicContent(
 ## Relationships
 
 ### Conforms To
-- [Identifiable](../Swift/Identifiable.md)
+- [Identifiable](../swift/identifiable.md)
 
 ## See Also
 

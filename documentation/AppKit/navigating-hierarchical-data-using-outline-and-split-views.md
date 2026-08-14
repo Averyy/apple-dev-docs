@@ -28,11 +28,11 @@ When you use `NSOutlineView` with [`NSSplitViewController`](nssplitviewcontrolle
 
 An outline view works well as part of a primary-detail user interface. When the user selects an item from the outline view on the left, the detail view shows the results of the selection. For a primary-detail configuration, use [`NSSplitView`](nssplitview.md), which arranges two or more views in a linear stack running horizontally. The system embeds each view in its own [`NSSplitViewItem`](nssplitviewitem.md). In this sample project, the left split-view item is a view controller called `OutlineViewController`, and the right split-view item is called `DetailViewController`. The `OutlineViewController` class focuses on how to use [`NSOutlineView`](nsoutlineview.md).
 
-![A diagram depicting the two split-view items on each side of the sample’s user interface for NSSplitViewController. The OutlineViewController on the left shows a hierarchal outline representation, and the DetailViewController on the right shows a blank box.](https://docs-assets.developer.apple.com/published/eb5a7a6bccaecff9d5c25bbea46f036d/sourceview-diagram%402x.png)
+![A diagram depicting the two split-view items on each side of the sample’s user interface for NSSplitViewController. The OutlineViewController on the left shows a hierarchal outline representation, and the DetailViewController on the right shows a blank box.](/images/com.apple.appkit/sourceview-diagram@2x.png)
 
 In a primary-detail user interface, the list view on the left must remain the same size when the split view grows or shrinks, while the detail view on the right changes size. To implement this behavior, the app uses the *holding priority* on the split-view items. The view with the lowest holding priority is the first to increase its width as the split view grows or shrinks. To keep the left split-view item from growing, set its holding priority to `200`, and set the item on the right to `199`.
 
-![A diagram depicting the two split view items on each side of the sample’s user interface for NSSplitViewController. The split-view item on the right has a lower holding priority than the one on the left.](https://docs-assets.developer.apple.com/published/1f28555eeee8353d160b81c01da087a0/sourceview-diagram2%402x.png)
+![A diagram depicting the two split view items on each side of the sample’s user interface for NSSplitViewController. The split-view item on the right has a lower holding priority than the one on the left.](/images/com.apple.appkit/sourceview-diagram2@2x.png)
 
 ##### Define Hierarchical Content with a Tree Controller
 

@@ -44,7 +44,7 @@ var body: some View {
 }
 ```
 
-![A default alert dialog with the title Current Location Not Available in bold text, the message your current location can’t be determined at this time in smaller text, and a default OK button.](https://docs-assets.developer.apple.com/published/8ebf34ed1e8f5e8b85930f7576e9371e/SwiftUI-Alert-OK%402x.png)
+![A default alert dialog with the title Current Location Not Available in bold text, the message your current location can’t be determined at this time in smaller text, and a default OK button.](/images/com.apple.SwiftUI/SwiftUI-Alert-OK@2x.png)
 
 To customize the alert, add instances of the [`Alert.Button`](alert/button.md) type, which provides standardized buttons for common tasks like canceling and performing destructive actions. The following example uses two buttons: a default button labeled “Try Again” that calls a `saveWorkoutData` method, and a “Delete” button that calls a destructive `deleteWorkoutData` method.
 
@@ -71,7 +71,7 @@ var body: some View {
 }
 ```
 
-![An alert dialog with the title, Unable to Save Workout Data in bold text, and](https://docs-assets.developer.apple.com/published/b0cc30235176ee89cfb5db5aebe43368/SwiftUI-Alert-default-and-destructive%402x.png)
+![An alert dialog with the title, Unable to Save Workout Data in bold text, and](/images/com.apple.SwiftUI/SwiftUI-Alert-default-and-destructive@2x.png)
 
 The alert handles its own dismissal when the user taps one of the buttons in the alert, by setting the bound `isPresented` value back to `false`.
 

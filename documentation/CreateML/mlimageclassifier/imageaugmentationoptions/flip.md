@@ -22,7 +22,7 @@ static let flip: MLImageClassifier.ImageAugmentationOptions
 
 Use this option to tell the image classifier to augment your training data set by flipping the original images.
 
-![Diagram showing how the original image results in three flipped variants.](https://docs-assets.developer.apple.com/published/062c2d1598840c3a4a94abe8bf4015bb/MLImageClassifier-ImageAugmentationOptions-flip-1%402x.png)
+![Diagram showing how the original image results in three flipped variants.](/images/com.apple.createml/MLImageClassifier-ImageAugmentationOptions-flip-1@2x.png)
 
 The classifier creates three new images by flipping the original horizontally, vertically, and both horizontally and vertically.
 

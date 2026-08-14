@@ -44,7 +44,7 @@ protocol NSTextElementProvider : NSObjectProtocol
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 ### Conforming Types
 - [NSTextContentManager](nstextcontentmanager.md)
 - [NSTextContentStorage](nstextcontentstorage.md)

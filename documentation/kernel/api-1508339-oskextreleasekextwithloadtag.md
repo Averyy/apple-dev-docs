@@ -34,7 +34,7 @@ Kexts should not retain and release other kexts; linkage references are accounte
 
 ## Parameters
 
-- `loadTag`: The load tag of the kext to be released. See  .
+- `loadTag`: The load tag of the kext to be released. See [`OSKextGetCurrentLoadTag`](1508336-oskextgetcurrentloadtag.md).
 
 ## See Also
 

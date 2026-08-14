@@ -19,7 +19,7 @@ To start monitoring submersion data, instantiate a [`CMWaterSubmersionManager`](
 
 Before you can instantiate the [`CMWaterSubmersionManager`](cmwatersubmersionmanager.md) class, your app needs to include a Submerged Depth and Pressure entitlement to access submersion data.
 
-To access data for dives with a maximum depth of 6 meters, add the Shallow Depth and Pressure capability to your app. For more information, see [`Adding capabilities to your app`](https://developer.apple.com/documentation/Xcode/adding-capabilities-to-your-app).
+To access data for dives with a maximum depth of 6 meters, add the Shallow Depth and Pressure capability to your app. For more information, see [`Adding capabilities to your app`](https://developer.apple.com/documentation/xcode/adding-capabilities-to-your-app).
 
 To enable a maximum depth of 40 meters, you need to apply for the full Submersion Depth and Pressure entitlement. For more information, see [`the Submerged Depth and Pressure entitlement request form.`](https://developer.apple.comhttps://developer.apple.com/contact/request/submerged-depth-pressure-api-development/)
 
@@ -27,9 +27,9 @@ If you instantiate the manager without an entitlement, the system calls your del
 
 ##### Authorize Access to Motion Data
 
-The system automatically asks the wearer for authorization to access motion data when you first instantiate a [`CMWaterSubmersionManager`](cmwatersubmersionmanager.md); however, before you can instantiate the manager, you need to include the [`NSMotionUsageDescription`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSMotionUsageDescription) key in your app target’s information property list and provide a usage description string.
+The system automatically asks the wearer for authorization to access motion data when you first instantiate a [`CMWaterSubmersionManager`](cmwatersubmersionmanager.md); however, before you can instantiate the manager, you need to include the [`NSMotionUsageDescription`](https://developer.apple.com/documentation/bundleresources/information-property-list/nsmotionusagedescription) key in your app target’s information property list and provide a usage description string.
 
-![An Xcode screenshot of an app target’s information property list, with the Motion Usage Description key highlighted.](https://docs-assets.developer.apple.com/published/abf9523bc09713905a9cee676772037e/media-4110816%402x.png)
+![An Xcode screenshot of an app target’s information property list, with the Motion Usage Description key highlighted.](/images/com.apple.coremotion/media-4110816@2x.png)
 
 The system displays this usage description when it prompts the wearer for authorization to access motion data. If you don’t include a usage description string, your app crashes when you try to instantiate a [`CMWaterSubmersionManager`](cmwatersubmersionmanager.md) object.
 
@@ -37,7 +37,7 @@ The system displays this usage description when it prompts the wearer for author
 
 To make sure your app continues to run, and remains visible, you need to add the `underwater-depth` Background Mode to your app’s `Info.plist` file. This background mode lets your app run as the frontmost app during a dive session.
 
-Open the `Info.plist` file as XML by Control-clicking it in the Project navigator and selecting Open As > Source Code. Next, edit the string value for the [`WKBackgroundModes`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/WKBackgroundModes) key so that it contains the `underwater-depth` value.
+Open the `Info.plist` file as XML by Control-clicking it in the Project navigator and selecting Open As > Source Code. Next, edit the string value for the [`WKBackgroundModes`](https://developer.apple.com/documentation/bundleresources/information-property-list/wkbackgroundmodes) key so that it contains the `underwater-depth` value.
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -58,7 +58,7 @@ If your app doesn’t already have an `Info.plist` file, you can add a placehold
 1. Select your app’s WatchKit Extension target and click the Signing & Capabilities tab.
 2. Choose Editor > Add Capability and double-click the Background Modes capability to add it to the Signing & Capabilities pane.
 3. Choose an option to use as a placeholder from the Session Type pop-up menu. The `Info.plist` file appears in the Project navigator.
-4. Open the `Info.plist` file as XML source code and replace the placeholder string value for the [`WKBackgroundModes`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/WKBackgroundModes) key with the `underwater-depth` value.
+4. Open the `Info.plist` file as XML source code and replace the placeholder string value for the [`WKBackgroundModes`](https://developer.apple.com/documentation/bundleresources/information-property-list/wkbackgroundmodes) key with the `underwater-depth` value.
 
 Adding the `underwater-depth` Background Mode capability to your `Info.plist` file lets your app run an extended runtime session so that it can remain the frontmost app for the duration of the dive session. It also adds your app to the list of apps that the system can autolaunch when the wearer submerges the watch.
 
@@ -76,7 +76,7 @@ guard CMWaterSubmersionManager.waterSubmersionAvailable else {
 }
 ```
 
-On Apple Watch Ultra, the system sets [`waterSubmersionAvailable`](cmwatersubmersionmanager/watersubmersionavailable.md) to [`true`](https://developer.apple.com/documentation/Swift/true). On all other devices and in Simulator, the system sets it to [`false`](https://developer.apple.com/documentation/Swift/false).
+On Apple Watch Ultra, the system sets [`waterSubmersionAvailable`](cmwatersubmersionmanager/watersubmersionavailable.md) to [`true`](https://developer.apple.com/documentation/swift/true). On all other devices and in Simulator, the system sets it to [`false`](https://developer.apple.com/documentation/swift/false).
 
 ##### Start Monitoring Submersion Data
 
@@ -236,17 +236,17 @@ func myStartDiveSession() {
 
 This session continues to run until:
 
-- You explicitly cancel the session by calling [`invalidate()`](https://developer.apple.com/documentation/WatchKit/WKExtendedRuntimeSession/invalidate()) on it.
+- You explicitly cancel the session by calling [`invalidate()`](https://developer.apple.com/documentation/watchkit/wkextendedruntimesession/invalidate()) on it.
 - The wearer turns off Water Lock.
 - Your app remains in the [`CMWaterSubmersionEvent.State.notSubmerged`](cmwatersubmersionevent/state-swift.enum/notsubmerged.md) state for at least 10 minutes.
 
-For more information, see [`Using extended runtime sessions`](https://developer.apple.com/documentation/WatchKit/using-extended-runtime-sessions).
+For more information, see [`Using extended runtime sessions`](https://developer.apple.com/documentation/watchkit/using-extended-runtime-sessions).
 
 ##### Transition to a Touchless User Interface
 
 Starting an extended runtime session automatically enables Water Lock on the watch. As a result, the system disables the watch’s touchscreen for the duration of the dive. If you want the wearer to interact with your app during the dive, you need to enable interaction using either the Digital Crown or the Action button.
 
-Many views, like [`List`](https://developer.apple.com/documentation/SwiftUI/List), [`ScrollView`](https://developer.apple.com/documentation/SwiftUI/ScrollView), and [`Picker`](https://developer.apple.com/documentation/SwiftUI/Picker), automatically respond to the Digital Crown. The wearer can interact with these elements without needing any changes to the user interface.
+Many views, like [`List`](https://developer.apple.com/documentation/swiftui/list), [`ScrollView`](https://developer.apple.com/documentation/swiftui/scrollview), and [`Picker`](https://developer.apple.com/documentation/swiftui/picker), automatically respond to the Digital Crown. The wearer can interact with these elements without needing any changes to the user interface.
 
 ```swift
 struct MyPickerView: View {
@@ -269,7 +269,7 @@ struct MyPickerView: View {
 }
 ```
 
-You can also use the [`digitalCrownRotation(_:)`](https://developer.apple.com/documentation/SwiftUI/View/digitalCrownRotation(_:)) view modifier to respond directly when the wearer rotates the Digital Crown.
+You can also use the [`digitalCrownRotation(_:)`](https://developer.apple.com/documentation/swiftui/view/digitalcrownrotation(_:)) view modifier to respond directly when the wearer rotates the Digital Crown.
 
 ```swift
 struct DigitalCrown: View {
@@ -288,7 +288,7 @@ struct DigitalCrown: View {
 }
 ```
 
-For the Action button, implement a [`StartDiveIntent`](https://developer.apple.com/documentation/AppIntents/StartDiveIntent) to launch your app and prepare for a new dive when the wearer first presses the Action button. You can then donate an [`AppIntent`](https://developer.apple.com/documentation/AppIntents/AppIntent) for the Action button’s next action. If the wearer presses the Action button any other time during the session, it triggers the next action. Your app can have only one next action at a time, and donating a new intent changes the next action — letting you customize the next action based on your app’s current state.
+For the Action button, implement a [`StartDiveIntent`](https://developer.apple.com/documentation/appintents/startdiveintent) to launch your app and prepare for a new dive when the wearer first presses the Action button. You can then donate an [`AppIntent`](https://developer.apple.com/documentation/appintents/appintent) for the Action button’s next action. If the wearer presses the Action button any other time during the session, it triggers the next action. Your app can have only one next action at a time, and donating a new intent changes the next action — letting you customize the next action based on your app’s current state.
 
 ```swift
 // Create an intent to launch your app and set up the dive manager.
@@ -318,11 +318,11 @@ struct MyBeginDescent: AppIntent {
 
 ```
 
-For more information, see [`Responding to the Action button on Apple Watch Ultra`](https://developer.apple.com/documentation/AppIntents/ActionButtonArticle).
+For more information, see [`Responding to the Action button on Apple Watch Ultra`](https://developer.apple.com/documentation/appintents/actionbuttonarticle).
 
 ##### Handle Automatic Dive Sessions
 
-If you don’t explicitly start an extended runtime session, the system automatically starts a session when the wearer descends below 1 meter. It then passes the session to your app delegate’s [`handle(_:)`](https://developer.apple.com/documentation/WatchKit/WKApplicationDelegate/handle(_:)-7kiwx) method. To use this session, add a delegate and save it to a variable that remains in scope for the entire dive’s duration.
+If you don’t explicitly start an extended runtime session, the system automatically starts a session when the wearer descends below 1 meter. It then passes the session to your app delegate’s [`handle(_:)`](https://developer.apple.com/documentation/watchkit/wkapplicationdelegate/handle(_:)-7kiwx) method. To use this session, add a delegate and save it to a variable that remains in scope for the entire dive’s duration.
 
 ```swift
 func handle(_ extendedRuntimeSession: WKExtendedRuntimeSession) {
@@ -345,7 +345,7 @@ On Apple Watch Ultra, the wearer can tell the system to launch an app when the w
 
 The system adds your app to the list of autolaunchable apps as soon as you add the `underwater-depth` Background Mode capability to your app’s `Info.plist` file. This means your app needs to respond appropriately if the wearer sets it as the autolaunch app, and jumps into the water without otherwise interacting with your app.
 
-For example, you can set up your app’s [`CMWaterSubmersionManager`](cmwatersubmersionmanager.md) when your app launches. This ensures that your app is always ready to receive submersion data. Then, when the wearer descends below 1 meter, you can use your [`handle(_:)`](https://developer.apple.com/documentation/WatchKit/WKApplicationDelegate/handle(_:)-7kiwx) method to grab the automatically generated extended runtime session. Alternatively, if you prefer to explicitly start your own extended runtime session, you can start the session when your app receives a [`CMWaterSubmersionEvent.State.submerged`](cmwatersubmersionevent/state-swift.enum/submerged.md) event.
+For example, you can set up your app’s [`CMWaterSubmersionManager`](cmwatersubmersionmanager.md) when your app launches. This ensures that your app is always ready to receive submersion data. Then, when the wearer descends below 1 meter, you can use your [`handle(_:)`](https://developer.apple.com/documentation/watchkit/wkapplicationdelegate/handle(_:)-7kiwx) method to grab the automatically generated extended runtime session. Alternatively, if you prefer to explicitly start your own extended runtime session, you can start the session when your app receives a [`CMWaterSubmersionEvent.State.submerged`](cmwatersubmersionevent/state-swift.enum/submerged.md) event.
 
 ##### Test Submersion Data
 

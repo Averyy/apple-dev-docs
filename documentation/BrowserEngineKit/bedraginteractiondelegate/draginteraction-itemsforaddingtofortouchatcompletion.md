@@ -17,7 +17,7 @@ optional func dragInteraction(_ dragInteraction: BEDragInteraction, itemsForAddi
 
 #### Discussion
 
-This method is the asynchronous variant of [`dragInteraction(_:itemsForAddingTo:withTouchAt:)`](https://developer.apple.com/documentation/UIKit/UIDragInteractionDelegate/dragInteraction(_:itemsForAddingTo:withTouchAt:)). If your delegate implements this method, the system calls this method instead of the synchronous version.
+This method is the asynchronous variant of [`dragInteraction(_:itemsForAddingTo:withTouchAt:)`](https://developer.apple.com/documentation/uikit/uidraginteractiondelegate/draginteraction(_:itemsforaddingto:withtouchat:)). If your delegate implements this method, the system calls this method instead of the synchronous version.
 
 Call the completion handler as soon you prepare its arguments. The system times out the completion handler if a long delay occurs before you call the handler.
 

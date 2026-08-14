@@ -15,7 +15,7 @@ let kCGWindowBounds: CFString
 
 #### Discussion
 
-The value for this key is a [`CFDictionary`](https://developer.apple.com/documentation/CoreFoundation/CFDictionary) type that must be decoded to a [`CGRect`](https://developer.apple.com/documentation/CoreFoundation/CGRect) type using the [`CGRectMakeWithDictionaryRepresentation(_:_:)`](cgrectmakewithdictionaryrepresentation(_:_:).md) function. The coordinates of the rectangle are specified in screen space, where the origin is in the upper-left corner of the main display.
+The value for this key is a [`CFDictionary`](https://developer.apple.com/documentation/corefoundation/cfdictionary) type that must be decoded to a [`CGRect`](https://developer.apple.com/documentation/corefoundation/cgrect) type using the [`CGRectMakeWithDictionaryRepresentation(_:_:)`](cgrectmakewithdictionaryrepresentation(_:_:).md) function. The coordinates of the rectangle are specified in screen space, where the origin is in the upper-left corner of the main display.
 
 ## See Also
 

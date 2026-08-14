@@ -22,9 +22,9 @@ class func identifierForUserVisibleFile(at url: URL) async throws -> (NSFileProv
 
 > ❗ **Important**:  You can call this method from synchronous code using a completion handler, as shown on this page, or you can call it as an asynchronous method that has the following declaration: ```swift
 class func identifierForUserVisibleFile(at url: URL) async throws -> (NSFileProviderItemIdentifier, NSFileProviderDomainIdentifier)
-``` For information about concurrency and asynchronous code in Swift, see [`Calling Objective-C APIs Asynchronously`](https://developer.apple.com/documentation/Swift/calling-objective-c-apis-asynchronously).
+``` For information about concurrency and asynchronous code in Swift, see [`Calling Objective-C APIs Asynchronously`](https://developer.apple.com/documentation/swift/calling-objective-c-apis-asynchronously).
 
-If the URL doesn’t refer to an item managed by your File Provider extension, the system returns a [`NSFileNoSuchFileError`](https://developer.apple.com/documentation/Foundation/NSFileNoSuchFileError-swift.var) error.
+If the URL doesn’t refer to an item managed by your File Provider extension, the system returns a [`NSFileNoSuchFileError`](https://developer.apple.com/documentation/foundation/nsfilenosuchfileerror-swift.var) error.
 
 ## Parameters
 

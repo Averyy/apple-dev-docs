@@ -29,9 +29,9 @@ If you call this function after initiating a print job (for example, by calling 
 ## Parameters
 
 - `printSettings`: The print settings object you want to update.
-- `key`: A string constant that specifies the key for the desired setting. Some keys are currently defined in  ; other keys are user-defined.
-- `value`: A Core Foundation object that corresponds to the specified key. If you pass  , any existing setting for the specified key is removed.
-- `locked`: If  , the item being set should be locked; otherwise,  . Currently, you should always pass  .
+- `key`: A string constant that specifies the key for the desired setting. Some keys are currently defined in `PMTicket.h`; other keys are user-defined.
+- `value`: A Core Foundation object that corresponds to the specified key. If you pass `NULL`, any existing setting for the specified key is removed.
+- `locked`: If `true`, the item being set should be locked; otherwise, `false`. Currently, you should always pass `false`.
 
 ## See Also
 

@@ -22,13 +22,13 @@ Adding information to your app about additional [`iCloud support resources`](htt
 
 ## See Also
 
-- [TipKit](../TipKit/TipKit.md)
+- [TipKit](../tipkit/tipkit.md)
   Display tips that help people discover features in your app.
-- [class NSHelpManager](../AppKit/NSHelpManager.md)
+- [class NSHelpManager](../appkit/nshelpmanager.md)
   An object for displaying online help for an app.
 - [Adding the Virtualization Entitlement to Your Project](adding-the-virtualization-entitlement-to-your-project.md)
   Configure your project to use the Virtualization framework.
-- [com.apple.security.virtualization](../BundleResources/Entitlements/com.apple.security.virtualization.md)
+- [com.apple.security.virtualization](../bundleresources/entitlements/com.apple.security.virtualization.md)
   A Boolean value that indicates whether your app can use the Virtualization framework.
 
 

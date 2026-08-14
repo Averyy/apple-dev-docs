@@ -22,14 +22,14 @@ This document describes the generic `CFStream` functions, data types, and consta
   Creates readable and writable streams connected to a socket.
 - [func CFStreamCreateBoundPair(CFAllocator!, UnsafeMutablePointer<Unmanaged<CFReadStream>?>!, UnsafeMutablePointer<Unmanaged<CFWriteStream>?>!, CFIndex)](cfstreamcreateboundpair(_:_:_:_:).md)
   Creates a bound pair of read and write streams.
-- [func CFStreamCreatePairWithSocketToCFHost(CFAllocator?, CFHost, Int32, UnsafeMutablePointer<Unmanaged<CFReadStream>?>?, UnsafeMutablePointer<Unmanaged<CFWriteStream>?>?)](../CFNetwork/CFStreamCreatePairWithSocketToCFHost(_:_:_:_:_:).md)
+- [func CFStreamCreatePairWithSocketToCFHost(CFAllocator?, CFHost, Int32, UnsafeMutablePointer<Unmanaged<CFReadStream>?>?, UnsafeMutablePointer<Unmanaged<CFWriteStream>?>?)](../cfnetwork/cfstreamcreatepairwithsockettocfhost(_:_:_:_:_:).md)
   Creates readable and writable streams connected to a given `CFHost` object.
-- [func CFStreamCreatePairWithSocketToNetService(CFAllocator?, CFNetService, UnsafeMutablePointer<Unmanaged<CFReadStream>?>?, UnsafeMutablePointer<Unmanaged<CFWriteStream>?>?)](../CFNetwork/CFStreamCreatePairWithSocketToNetService(_:_:_:_:).md)
+- [func CFStreamCreatePairWithSocketToNetService(CFAllocator?, CFNetService, UnsafeMutablePointer<Unmanaged<CFReadStream>?>?, UnsafeMutablePointer<Unmanaged<CFWriteStream>?>?)](../cfnetwork/cfstreamcreatepairwithsockettonetservice(_:_:_:_:).md)
   Creates a pair of streams for a CFNetService.
 ### Obtaining Errors
-- [func CFSocketStreamSOCKSGetError(UnsafePointer<CFStreamError>) -> Int32](../CFNetwork/CFSocketStreamSOCKSGetError(_:).md)
+- [func CFSocketStreamSOCKSGetError(UnsafePointer<CFStreamError>) -> Int32](../cfnetwork/cfsocketstreamsocksgeterror(_:).md)
   This function gets error codes in the `kCFStreamErrorDomainSOCKS` domain from the `CFStreamError` returned by a stream operation.
-- [func CFSocketStreamSOCKSGetErrorSubdomain(UnsafePointer<CFStreamError>) -> Int32](../CFNetwork/CFSocketStreamSOCKSGetErrorSubdomain(_:).md)
+- [func CFSocketStreamSOCKSGetErrorSubdomain(UnsafePointer<CFStreamError>) -> Int32](../cfnetwork/cfsocketstreamsocksgeterrorsubdomain(_:).md)
   Gets the error subdomain associated with errors in the `kCFStreamErrorDomainSOCKS` domain from the `CFStreamError` returned by a stream operation.
 ### Setting the Security Protocol
 - [func CFReadStreamSetProperty(CFReadStream!, CFStreamPropertyKey!, CFTypeRef!) -> Bool](cfreadstreamsetproperty(_:_:_:).md)
@@ -52,7 +52,7 @@ This document describes the generic `CFStream` functions, data types, and consta
   Defines constants for values returned in the domain field of the `CFStreamError` structure.
 - [Error Subdomains](error-subdomains.md)
   Subdomains used to determine how to interpret an error in the `kCFStreamErrorDomainSOCKS` domain.
-- [Secure Sockets (SOCKS) Errors](../CFNetwork/1518266-secure-sockets-socks-errors.md)
+- [Secure Sockets (SOCKS) Errors](../cfnetwork/1518266-secure-sockets-socks-errors.md)
   Error codes returned by the `kCFStreamErrorDomainSOCKS` error domain.
 - [struct CFStreamEventType](cfstreameventtype.md)
   Defines constants for stream-related events.

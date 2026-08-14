@@ -20,7 +20,7 @@ func preparingThumbnail(of size: CGSize) -> UIImage?
 
 #### Return Value
 
-A new thumbnail image. Returns `nil` if the original image isn’t backed by a [`CGImage`](https://developer.apple.com/documentation/CoreGraphics/CGImage) or if the image data is corrupt or malformed.
+A new thumbnail image. Returns `nil` if the original image isn’t backed by a [`CGImage`](https://developer.apple.com/documentation/coregraphics/cgimage) or if the image data is corrupt or malformed.
 
 #### Discussion
 

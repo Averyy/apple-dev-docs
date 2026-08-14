@@ -24,7 +24,7 @@ static var saveFailed: MFMailComposeError.Code { get }
 - [static var sendFailed: MFMailComposeError.Code](mfmailcomposeerror/sendfailed.md)
   An error occurred while trying to queue or send the email message.
 - [MFMailComposeError.Code](mfmailcomposeerror/code.md)
-  Error codes for [`NSError`](https://developer.apple.com/documentation/Foundation/NSError) objects that are associated with the mail composition interface.
+  Error codes for [`NSError`](https://developer.apple.com/documentation/foundation/nserror) objects that are associated with the mail composition interface.
 
 
 ---

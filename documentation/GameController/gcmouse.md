@@ -21,23 +21,23 @@ class GCMouse
 
 #### Overview
 
-To get a mouse object and its input values, register for the [`GCMouseDidConnect`](https://developer.apple.com/documentation/Foundation/NSNotification/Name-swift.struct/GCMouseDidConnect) (Swift) or [`GCMouseDidConnectNotification`](gcmousedidconnectnotification.md) (Objective-C) notification for when a mouse connects to the device. Then register for the [`GCMouseDidBecomeCurrent`](https://developer.apple.com/documentation/Foundation/NSNotification/Name-swift.struct/GCMouseDidBecomeCurrent)  (Swift) or [`GCMouseDidBecomeCurrentNotification`](gcmousedidbecomecurrentnotification.md) (Objective-C) notification for when it becomes the [`current`](gcmouse/current.md) mouse. Alternatively, use the [`current`](gcmouse/current.md) class property or the [`mice()`](gcmouse/mice().md) class method to get a mouse object. Then get the current input values from the mouse object’s [`mouseInput`](gcmouse/mouseinput.md) controller profile.
+To get a mouse object and its input values, register for the [`GCMouseDidConnect`](https://developer.apple.com/documentation/foundation/nsnotification/name-swift.struct/gcmousedidconnect) (Swift) or [`GCMouseDidConnectNotification`](gcmousedidconnectnotification.md) (Objective-C) notification for when a mouse connects to the device. Then register for the [`GCMouseDidBecomeCurrent`](https://developer.apple.com/documentation/foundation/nsnotification/name-swift.struct/gcmousedidbecomecurrent)  (Swift) or [`GCMouseDidBecomeCurrentNotification`](gcmousedidbecomecurrentnotification.md) (Objective-C) notification for when it becomes the [`current`](gcmouse/current.md) mouse. Alternatively, use the [`current`](gcmouse/current.md) class property or the [`mice()`](gcmouse/mice().md) class method to get a mouse object. Then get the current input values from the mouse object’s [`mouseInput`](gcmouse/mouseinput.md) controller profile.
 
 ## Topics
 
 ### Discovering mouse devices
 - [class func mice() -> [GCMouse]](gcmouse/mice.md)
   Returns any mice that the user connects to the device.
-- [static let GCMouseDidConnect: NSNotification.Name](../Foundation/NSNotification/Name-swift.struct/GCMouseDidConnect.md)
+- [static let GCMouseDidConnect: NSNotification.Name](../foundation/nsnotification/name-swift.struct/gcmousedidconnect.md)
   A notification that posts after a mouse connects to the device.
-- [static let GCMouseDidDisconnect: NSNotification.Name](../Foundation/NSNotification/Name-swift.struct/GCMouseDidDisconnect.md)
+- [static let GCMouseDidDisconnect: NSNotification.Name](../foundation/nsnotification/name-swift.struct/gcmousediddisconnect.md)
   A notification that posts after a mouse disconnects from the device.
 ### Handling multiple mouse devices
 - [class var current: GCMouse?](gcmouse/current.md)
   The most recent mouse that the user connects.
-- [static let GCMouseDidBecomeCurrent: NSNotification.Name](../Foundation/NSNotification/Name-swift.struct/GCMouseDidBecomeCurrent.md)
+- [static let GCMouseDidBecomeCurrent: NSNotification.Name](../foundation/nsnotification/name-swift.struct/gcmousedidbecomecurrent.md)
   A notification that posts when a mouse becomes the most recent mouse that the user connects.
-- [static let GCMouseDidStopBeingCurrent: NSNotification.Name](../Foundation/NSNotification/Name-swift.struct/GCMouseDidStopBeingCurrent.md)
+- [static let GCMouseDidStopBeingCurrent: NSNotification.Name](../foundation/nsnotification/name-swift.struct/gcmousedidstopbeingcurrent.md)
   A notification that posts when a mouse stops being the most recent mouse that the user connects.
 ### Getting input values
 - [var mouseInput: GCMouseInput?](gcmouse/mouseinput.md)
@@ -55,15 +55,15 @@ To get a mouse object and its input values, register for the [`GCMouseDidConnect
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
 - [GCDevice](gcdevice.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

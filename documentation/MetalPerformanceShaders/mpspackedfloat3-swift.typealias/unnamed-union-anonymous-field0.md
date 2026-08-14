@@ -20,7 +20,7 @@ struct __Unnamed_union___Anonymous_field0
 ## Relationships
 
 ### Conforms To
-- [Sendable](../Swift/Sendable.md)
+- [Sendable](../swift/sendable.md)
 
 
 ---

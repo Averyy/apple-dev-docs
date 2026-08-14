@@ -27,7 +27,7 @@ A succinct label that identifies the purpose of the image.
 
 The default value for this property is `false`.
 
-For entities with [`isAccessibilityElement`](entity/isaccessibilityelement.md) set to [`true`](https://developer.apple.com/documentation/Swift/true), iOS uses this string to provide information to users of assistive technologies like VoiceOver. Set this property to a name or short description that accurately describes the entity. If you wish to provide additional information or a longer description of the entity, you can use [`accessibilityDescription`](entity/accessibilitydescription.md).
+For entities with [`isAccessibilityElement`](entity/isaccessibilityelement.md) set to [`true`](https://developer.apple.com/documentation/swift/true), iOS uses this string to provide information to users of assistive technologies like VoiceOver. Set this property to a name or short description that accurately describes the entity. If you wish to provide additional information or a longer description of the entity, you can use [`accessibilityDescription`](entity/accessibilitydescription.md).
 
 ## See Also
 

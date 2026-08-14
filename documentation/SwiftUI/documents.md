@@ -8,11 +8,11 @@ Enable people to open and manage documents.
 
 Create a user interface for opening and editing documents.
 
-![None](https://docs-assets.developer.apple.com/published/9f0133f6a85bd81cbf87453f28384847/documents-hero%402x.png)
+![None](/images/com.apple.SwiftUI/documents-hero@2x.png)
 
-Use the [`ReadableDocument`](ReadableDocument.md) and [`WritableDocument`](WritableDocument.md) protocols to define your document model, or adopt [`Document`](Document.md), a convenience protocol that combines both, when your document needs to support reading and writing. They give you direct access to file URLs, integrate with Swift concurrency, and support progress reporting. You can also use SwiftData-backed documents using an initializer like [`init(editing:contentType:editor:prepareDocument:)`](DocumentGroup/init(editing:contentType:editor:prepareDocument:).md).
+Use the [`ReadableDocument`](readabledocument.md) and [`WritableDocument`](writabledocument.md) protocols to define your document model, or adopt [`Document`](document.md), a convenience protocol that combines both, when your document needs to support reading and writing. They give you direct access to file URLs, integrate with Swift concurrency, and support progress reporting. You can also use SwiftData-backed documents using an initializer like [`init(editing:contentType:editor:prepareDocument:)`](documentgroup/init(editing:contenttype:editor:preparedocument:).md).
 
-SwiftUI supports standard behaviors people expect from a document-based app, appropriate for each platform, like multiwindow support, open and save panels. For related design guidance, see [`Patterns`](https://developer.apple.com/design/Human-Interface-Guidelines/patterns) in the Human Interface Guidelines.
+SwiftUI supports standard behaviors people expect from a document-based app, appropriate for each platform, like multiwindow support, open and save panels. For related design guidance, see [`Patterns`](https://developer.apple.com/design/human-interface-guidelines/patterns) in the Human Interface Guidelines.
 
 ## Topics
 

@@ -40,14 +40,14 @@ protocol NSTextElementProvider : NSObjectProtocol
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 ### Conforming Types
 - [NSTextContentManager](nstextcontentmanager.md)
 - [NSTextContentStorage](nstextcontentstorage.md)
 
 ## See Also
 
-- [Enriching your text in text views](../UIKit/enriching-your-text-in-text-views.md)
+- [Enriching your text in text views](../uikit/enriching-your-text-in-text-views.md)
   Support line numbering, section collapsing, inline attachment caching, exclusion paths, text attachments, and text lists in a text view.
 - [class NSTextParagraph](nstextparagraph.md)
   A class that represents a single paragraph backed by an attributed string as the contents.

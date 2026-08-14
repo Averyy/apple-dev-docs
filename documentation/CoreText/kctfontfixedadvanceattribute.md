@@ -22,7 +22,7 @@ let kCTFontFixedAdvanceAttribute: CFString
 
 #### Discussion
 
-If present and specified, this attribute is used to specify a constant advance to override any font values. The value associated with this key is a float represented as a [`CFNumber`](https://developer.apple.com/documentation/CoreFoundation/CFNumber) object.
+If present and specified, this attribute is used to specify a constant advance to override any font values. The value associated with this key is a float represented as a [`CFNumber`](https://developer.apple.com/documentation/corefoundation/cfnumber) object.
 
 ## See Also
 

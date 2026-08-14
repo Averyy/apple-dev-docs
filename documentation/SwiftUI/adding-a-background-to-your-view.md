@@ -43,7 +43,7 @@ struct SignInView: View {
 
 The [`background(alignment:content:)`](view/background(alignment:content:).md) view modifier constrains the size of the background view to be the same size as the view to which it’s attached:
 
-![A screenshot of an iPhone showing a gradient background for the welcome title, text field, and button in the horizontal stack, not filling in the rest of the phone’s background.](https://docs-assets.developer.apple.com/published/0bf57a769f3fffece6ad3746e6189c9b/Adding-a-Background-to-Your-View-1%402x.png)
+![A screenshot of an iPhone showing a gradient background for the welcome title, text field, and button in the horizontal stack, not filling in the rest of the phone’s background.](/images/com.apple.SwiftUI/Adding-a-Background-to-Your-View-1@2x.png)
 
 ##### Expand the Background Underneath Your View
 
@@ -76,7 +76,7 @@ struct SignInView: View {
 
 View sizes within a depth stack are independent, unlike when using the background view modifier. The view from [`Gradient`](gradient.md) expands to fill the space available to the stack, but avoids the safe area insets by default:
 
-![A screenshot of an iPhone showing a gradient background filling almost all of the background, excluding the top status bar and the bottom bar.](https://docs-assets.developer.apple.com/published/28c3048a58718732a59c8d93b16cf7eb/Adding-a-Background-to-Your-View-2%402x.png)
+![A screenshot of an iPhone showing a gradient background filling almost all of the background, excluding the top status bar and the bottom bar.](/images/com.apple.SwiftUI/Adding-a-Background-to-Your-View-2@2x.png)
 
 For more information on usings stacks to combine views, see [`Building layouts with stack views`](building-layouts-with-stack-views.md).
 
@@ -111,13 +111,13 @@ struct SignInView: View {
 
 The background gradient fills the display area of the device and ignores the safe area insets.
 
-![A screenshot of an iPhone showing a gradient background filling the entire background.](https://docs-assets.developer.apple.com/published/412380a0db85bd69c4d78c41bc8bf147/Adding-a-Background-to-Your-View-3%402x.png)
+![A screenshot of an iPhone showing a gradient background filling the entire background.](/images/com.apple.SwiftUI/Adding-a-Background-to-Your-View-3@2x.png)
 
 ##### Adjust Views When Displaying the Keyboard
 
 You can ignore the keyboard’s safe area by adding the [`ignoresSafeArea(_:edges:)`](view/ignoressafearea(_:edges:).md) modifier. When you activate the keyboard, the content of the vertical stack remains fixed, ignoring the space used by the keyboard:
 
-![A screenshot of an iPhone showing a gradient background filling the entire background, with the keyboard overlaid at the bottom of the screen. The welcome title, text field, and button within the horizontal stack are centered between the top and bottom of the iPhone, with the keyboard obscuring the lower portion of the background.](https://docs-assets.developer.apple.com/published/dbcdefbeadfd2a3fd95589b4e72b7eb6/Adding-a-Background-to-Your-View-4%402x.png)
+![A screenshot of an iPhone showing a gradient background filling the entire background, with the keyboard overlaid at the bottom of the screen. The welcome title, text field, and button within the horizontal stack are centered between the top and bottom of the iPhone, with the keyboard obscuring the lower portion of the background.](/images/com.apple.SwiftUI/Adding-a-Background-to-Your-View-4@2x.png)
 
 To get the contents of the vertical stack to respect the safe areas and adjust to the keyboard, move the modifier to only apply to the background view.
 
@@ -148,7 +148,7 @@ struct SignInView: View {
 
 To accommodate the keyboard, SwiftUI resizes and positions your view. Because the background view has the [`ignoresSafeArea(_:edges:)`](view/ignoressafearea(_:edges:).md) modifier, it remains unchanged.
 
-![A screenshot of an iPhone showing a gradient background filling the entire background, with the keyboard overlaid at the bottom of the screen. The welcome title, text field, and button within the horizontal stack is centered between the top of the keyboard and the top of the iPhone, and the gradient background extends underneath the keyboard for the full height of the iPhone.](https://docs-assets.developer.apple.com/published/6efd7980ea4347e5b74de09f0907c406/Adding-a-Background-to-Your-View-5%402x.png)
+![A screenshot of an iPhone showing a gradient background filling the entire background, with the keyboard overlaid at the bottom of the screen. The welcome title, text field, and button within the horizontal stack is centered between the top of the keyboard and the top of the iPhone, and the gradient background extends underneath the keyboard for the full height of the iPhone.](/images/com.apple.SwiftUI/Adding-a-Background-to-Your-View-5@2x.png)
 
 ## See Also
 

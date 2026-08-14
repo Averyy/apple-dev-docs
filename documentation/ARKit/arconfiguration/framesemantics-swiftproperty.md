@@ -36,9 +36,9 @@ if let config = mySession.configuration as? ARBodyTrackingConfiguration {
 
 People occlusion is a feature that enables people in the camera feed to cover your app’s virtual content.
 
-![Illustration showing two people standing in front of a virtual object. On the left, the person is partially occluded by the virtual object, breaking the illusion that the virtual object is actually placed in the physical environment. On the right, the person occludes the virtual object which maintains the illusion that the virtual object is actually placed in the physical environment. ](https://docs-assets.developer.apple.com/published/5193e10c0631586408ee15a863543416/media-3541708%402x.png)
+![Illustration showing two people standing in front of a virtual object. On the left, the person is partially occluded by the virtual object, breaking the illusion that the virtual object is actually placed in the physical environment. On the right, the person occludes the virtual object which maintains the illusion that the virtual object is actually placed in the physical environment. ](/images/com.apple.arkit/media-3541708@2x.png)
 
-To indicate that a person should overlap your app’s virtual content when the person is closer to the camera than the virtual content, add the [`personSegmentationWithDepth`](ARConfiguration/FrameSemantics-swift.struct/personSegmentationWithDepth.md) option to your configuration’s frame semantics.
+To indicate that a person should overlap your app’s virtual content when the person is closer to the camera than the virtual content, add the [`personSegmentationWithDepth`](arconfiguration/framesemantics-swift.struct/personsegmentationwithdepth.md) option to your configuration’s frame semantics.
 
 ```swift
 if let config = mySession.configuration as? ARWorldTrackingConfiguration {
@@ -49,13 +49,13 @@ if let config = mySession.configuration as? ARWorldTrackingConfiguration {
 
 ```
 
-![Screenshot of two people in the camera feed with a virtual object between them. The person who’s in front of the virtual object occludes the virtual object, and the person behind the virtual object is occluded by the virtual object.](https://docs-assets.developer.apple.com/published/4b7f06d0108afa1d653dbe1dd5ffb8b1/media-3541707%402x.png)
+![Screenshot of two people in the camera feed with a virtual object between them. The person who’s in front of the virtual object occludes the virtual object, and the person behind the virtual object is occluded by the virtual object.](/images/com.apple.arkit/media-3541707@2x.png)
 
 To indicate that a person should overlap your app’s virtual content regardless of the person’s depth in the scene, use the [`personSegmentation`](arconfiguration/framesemantics-swift.struct/personsegmentation.md) frame semantic instead. This option is particularly appropriate for green-screen scenarios.
 
-![Screenshot of two people in the camera feed standing in front of a virtual background.](https://docs-assets.developer.apple.com/published/13df4f15a3ec26839e6ce6e088661bd9/media-3541705%402x.png)
+![Screenshot of two people in the camera feed standing in front of a virtual background.](/images/com.apple.arkit/media-3541705@2x.png)
 
-Standard renderers ([`ARView`](https://developer.apple.com/documentation/RealityKit/ARView), and [`ARSCNView`](arscnview.md)) implement people occlusion for you. See [`Occluding virtual content with people`](occluding-virtual-content-with-people.md) for a sample app that demonstrates people occlusion in RealityKit.
+Standard renderers ([`ARView`](https://developer.apple.com/documentation/realitykit/arview), and [`ARSCNView`](arscnview.md)) implement people occlusion for you. See [`Occluding virtual content with people`](occluding-virtual-content-with-people.md) for a sample app that demonstrates people occlusion in RealityKit.
 
 If you implement your own renderer, use [`segmentationBuffer`](arframe/segmentationbuffer.md) and [`estimatedDepthData`](arframe/estimateddepthdata.md) to implement people occlusion yourself. [`ARMatteGenerator`](armattegenerator.md) helps you by providing masks. For a sample app that demonstrates matte generator and people occlusion, see [`Effecting People Occlusion in Custom Renderers`](effecting-people-occlusion-in-custom-renderers.md).
 

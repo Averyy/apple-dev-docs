@@ -18,7 +18,7 @@ case graphicCorner
 
 The following figure shows the size and location of the graphic corner complication.
 
-![Diagram showing the size and position of a graphic corner complication.](https://docs-assets.developer.apple.com/published/41114aa92463de270eee698d8eae3e6c/media-3030698%402x.png)
+![Diagram showing the size and position of a graphic corner complication.](/images/com.apple.clockkit/media-3030698@2x.png)
 
 ## See Also
 

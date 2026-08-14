@@ -24,7 +24,7 @@ A new invalid coupon error.
 
 #### Discussion
 
-Use this convenience method to create a payment error object instead of creating an [`NSError`](https://developer.apple.com/documentation/Foundation/NSError) object yourself. This method indicates that the coupon code received from the Apple Pay sheet is invalid.
+Use this convenience method to create a payment error object instead of creating an [`NSError`](https://developer.apple.com/documentation/foundation/nserror) object yourself. This method indicates that the coupon code received from the Apple Pay sheet is invalid.
 
 The error you provide and its optional message appear on the Apple Pay sheet. There’s limited available space to display messages, so keep your messages concise.
 

@@ -21,7 +21,7 @@ var kAudioFormatProperty_AvailableEncodeChannelLayoutTags: AudioFormatPropertyID
 
 #### Discussion
 
-An array of [`AudioChannelLayoutTag`](https://developer.apple.com/documentation/CoreAudioTypes/AudioChannelLayoutTag) values for the format and number of channels specified. If `mChannelsPerFrame` field of the specifier is zero, then all layouts supported by the format are returned. The specifier is an [`AudioStreamBasicDescription`](https://developer.apple.com/documentation/CoreAudioTypes/AudioStreamBasicDescription) structure with at least the `mFormatID` and `mChannelsPerFrame` fields set.
+An array of [`AudioChannelLayoutTag`](https://developer.apple.com/documentation/coreaudiotypes/audiochannellayouttag) values for the format and number of channels specified. If `mChannelsPerFrame` field of the specifier is zero, then all layouts supported by the format are returned. The specifier is an [`AudioStreamBasicDescription`](https://developer.apple.com/documentation/coreaudiotypes/audiostreambasicdescription) structure with at least the `mFormatID` and `mChannelsPerFrame` fields set.
 
 ## See Also
 

@@ -21,7 +21,7 @@ init(ints: MLUntypedColumn)
 
 #### Return Value
 
-A new untyped column of integers; otherwise an invalid column if any element of the given column cannot be converted to [`Int`](https://developer.apple.com/documentation/Swift/Int).
+A new untyped column of integers; otherwise an invalid column if any element of the given column cannot be converted to [`Int`](https://developer.apple.com/documentation/swift/int).
 
 #### Discussion
 

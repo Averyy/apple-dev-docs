@@ -25,7 +25,7 @@ In versions of macOS prior to OS X v10.4, the parameter type for `inDocumentID` 
 ## Parameters
 
 - `inIndex`: The index containing the text of the document whose term count you are interested in.
-- `inDocumentID`: The ID of the document URL object whose associated term count you are interested in. Obtain a document ID by calling  .
+- `inDocumentID`: The ID of the document URL object whose associated term count you are interested in. Obtain a document ID by calling [`SKIndexGetDocumentID(_:_:)`](1444437-skindexgetdocumentid.md).
 - `inTermID`: The ID of the term whose number of occurrences you want.
 
 ## See Also

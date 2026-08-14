@@ -22,7 +22,7 @@ func shareMetadatas(for urls: [URL]) async throws -> [URL : Result<CKShare.Metad
 
 #### Return Value
 
-A dictionary of fetched share metadatas. The dictionary uses the URLs you specify in `urls` as its keys. The value of each key is a [`Result`](https://developer.apple.com/documentation/Swift/Result) that contains either the corresponding fetched share metadata, or an error that describes why CloudKit can’t fetch that share metadata.
+A dictionary of fetched share metadatas. The dictionary uses the URLs you specify in `urls` as its keys. The value of each key is a [`Result`](https://developer.apple.com/documentation/swift/result) that contains either the corresponding fetched share metadata, or an error that describes why CloudKit can’t fetch that share metadata.
 
 #### Discussion
 

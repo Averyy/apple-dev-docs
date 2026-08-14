@@ -16,7 +16,7 @@ var showsAdditionalContentIndicators: Bool { get set }
 
 #### Discussion
 
-When [`true`](https://developer.apple.com/documentation/Swift/true), the scrubber uses a fade effect to indicate that there is additional content the user can scroll to. The default value is [`false`](https://developer.apple.com/documentation/Swift/false).
+When [`true`](https://developer.apple.com/documentation/swift/true), the scrubber uses a fade effect to indicate that there is additional content the user can scroll to. The default value is [`false`](https://developer.apple.com/documentation/swift/false).
 
 ## See Also
 

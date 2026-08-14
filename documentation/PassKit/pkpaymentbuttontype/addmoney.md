@@ -23,7 +23,7 @@ case addMoney
 
 This button looks like:
 
-![A button with the text “Add Money with” and the Apple Pay logo.](https://docs-assets.developer.apple.com/published/0a996f92f72f6590efd25f9223f41459/media-3667465%402x.png)
+![A button with the text “Add Money with” and the Apple Pay logo.](/images/com.apple.passkit/media-3667465@2x.png)
 
 For design guidance, see [`Human Interface Guidelines > Apple Pay > Buttons and Marks`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/apple-pay/overview/buttons-and-marks/).
 

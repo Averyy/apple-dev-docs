@@ -12,15 +12,15 @@ If you distribute a web browser app on macOS, you can make it eligible to partic
 
 ##### Declare the Session Handling Capability
 
-Using the Xcode property list editor, add the [`ASWebAuthenticationSessionWebBrowserSupportCapabilities`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/ASWebAuthenticationSessionWebBrowserSupportCapabilities) key to your web browser’s [`Information Property List`](https://developer.apple.com/documentation/BundleResources/Information-Property-List). For the key’s value, create a dictionary that contains the [`IsSupported`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/ASWebAuthenticationSessionWebBrowserSupportCapabilities/IsSupported) key, with a corresponding value of `YES`.
+Using the Xcode property list editor, add the [`ASWebAuthenticationSessionWebBrowserSupportCapabilities`](https://developer.apple.com/documentation/bundleresources/information-property-list/aswebauthenticationsessionwebbrowsersupportcapabilities) key to your web browser’s [`Information Property List`](https://developer.apple.com/documentation/bundleresources/information-property-list). For the key’s value, create a dictionary that contains the [`IsSupported`](https://developer.apple.com/documentation/bundleresources/information-property-list/aswebauthenticationsessionwebbrowsersupportcapabilities/issupported) key, with a corresponding value of `YES`.
 
-![Screenshot of Xcode showing the web browser support capabilities property list key.](https://docs-assets.developer.apple.com/published/bce22b90617f2467e0da2aebfea298b8/media-3357176%402x.png)
+![Screenshot of Xcode showing the web browser support capabilities property list key.](/images/com.apple.authenticationservices/media-3357176@2x.png)
 
 By declaring this capability, you tell the system that your web browser app handles single sign-on requests. If the user has set your browser as the default, the system routes authentication requests to it.
 
-Optionally, add the [`EphemeralBrowserSessionIsSupported`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/ASWebAuthenticationSessionWebBrowserSupportCapabilities/EphemeralBrowserSessionIsSupported) key with a value that indicates whether your browser supports ephemeral browsing.
+Optionally, add the [`EphemeralBrowserSessionIsSupported`](https://developer.apple.com/documentation/bundleresources/information-property-list/aswebauthenticationsessionwebbrowsersupportcapabilities/ephemeralbrowsersessionissupported) key with a value that indicates whether your browser supports ephemeral browsing.
 
-![Screenshot of Xcode showing the ephemeral browser session support key.](https://docs-assets.developer.apple.com/published/d1f3fb5027a503468ebceb4b883bedac/media-3357175%402x.png)
+![Screenshot of Xcode showing the ephemeral browser session support key.](/images/com.apple.authenticationservices/media-3357175@2x.png)
 
 If you don’t provide the key, or if you set its value to `NO` and an app tries to conduct an ephemeral authentication session, the system warns the user. If do you declare support by setting the value to `YES`, be sure to respect the [`shouldUseEphemeralSession`](aswebauthenticationsessionrequest/shoulduseephemeralsession.md) property on any incoming authentication requests, as described below in [`Perform Authentication`](supporting-single-sign-on-in-a-web-browser-app#Perform-Authentication.md).
 
@@ -59,7 +59,7 @@ func cancel(_ request: ASWebAuthenticationSessionRequest!) {
 }
 ```
 
-After implementing the interface, tell the system how to find your session handler by setting the [`sessionHandler`](aswebauthenticationsessionwebbrowsersessionmanager/sessionhandler.md) property of the shared session manager. You typically do this once at startup. For example, you might set the property in your app delegate’s [`applicationDidFinishLaunching(_:)`](https://developer.apple.com/documentation/AppKit/NSApplicationDelegate/applicationDidFinishLaunching(_:)) method:
+After implementing the interface, tell the system how to find your session handler by setting the [`sessionHandler`](aswebauthenticationsessionwebbrowsersessionmanager/sessionhandler.md) property of the shared session manager. You typically do this once at startup. For example, you might set the property in your app delegate’s [`applicationDidFinishLaunching(_:)`](https://developer.apple.com/documentation/appkit/nsapplicationdelegate/applicationdidfinishlaunching(_:)) method:
 
 ```swift
 func applicationDidFinishLaunching(_ aNotification: Notification) {
@@ -73,7 +73,7 @@ func applicationDidFinishLaunching(_ aNotification: Notification) {
 
 When your handler receives a new authentication request, load the URL given in the request’s [`url`](aswebauthenticationsessionrequest/url.md) property and display the content to the user. The user interacts with the content to authenticate—for example, by entering credentials and clicking a button. The service performing the authentication indicates the outcome by redirecting the browser to a URL that uses a known callback scheme.
 
-The request’s [`callbackURLScheme`](aswebauthenticationsessionrequest/callbackurlscheme.md) property tells your browser what callback scheme the service uses. When your browser detects a redirect involving this scheme, pass the entire URL back to the session manager by calling the request’s [`complete(withCallbackURL:)`](aswebauthenticationsessionrequest/complete(withcallbackurl:).md) method. For example, when using the WebKit API, you can do this from the navigation delegate’s [`webView(_:decidePolicyFor:decisionHandler:)`](https://developer.apple.com/documentation/WebKit/WKNavigationDelegate/webView(_:decidePolicyFor:decisionHandler:)-2ni62) method:
+The request’s [`callbackURLScheme`](aswebauthenticationsessionrequest/callbackurlscheme.md) property tells your browser what callback scheme the service uses. When your browser detects a redirect involving this scheme, pass the entire URL back to the session manager by calling the request’s [`complete(withCallbackURL:)`](aswebauthenticationsessionrequest/complete(withcallbackurl:).md) method. For example, when using the WebKit API, you can do this from the navigation delegate’s [`webView(_:decidePolicyFor:decisionHandler:)`](https://developer.apple.com/documentation/webkit/wknavigationdelegate/webview(_:decidepolicyfor:decisionhandler:)-2ni62) method:
 
 ```swift
 func webView(_ webView: WKWebView,
@@ -123,7 +123,7 @@ Use this indicator to adjust the behavior of your browser at startup. For exampl
   A SwiftUI environment value that views use to authenticate someone using a web service.
 - [class ASWebAuthenticationSessionWebBrowserSessionManager](aswebauthenticationsessionwebbrowsersessionmanager.md)
   A session manager that mediates sharing data between an app and a web browser.
-- [ASWebAuthenticationSessionWebBrowserSupportCapabilities](../BundleResources/Information-Property-List/ASWebAuthenticationSessionWebBrowserSupportCapabilities.md)
+- [ASWebAuthenticationSessionWebBrowserSupportCapabilities](../bundleresources/information-property-list/aswebauthenticationsessionwebbrowsersupportcapabilities.md)
   A collection of keys that a browser app uses to declare its ability to handle authentication requests from other apps.
 
 

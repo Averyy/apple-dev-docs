@@ -56,7 +56,7 @@ Use this type for audiobooks and other spoken-word book content.
 ## Relationships
 
 ### Conforms To
-- [Identifiable](../Swift/Identifiable.md)
+- [Identifiable](../swift/identifiable.md)
 - [MediaContentRepresentable](mediacontentrepresentable.md)
 
 ## See Also

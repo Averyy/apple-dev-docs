@@ -38,9 +38,9 @@ After you are finished with your mark callback function, you can dispose of the 
 
 ## Parameters
 
-- `dToken`: A pointer to the token for the Apple event object to be marked. (Token is defined in  . See  .
-- `markToken`: A pointer to the mark token used to mark the Apple event object. See  .
-- `index`: The number of times your   function has been called for the current mark token (that is, the number of Apple event objects that have so far passed the test, including the element to be marked).
+- `dToken`: A pointer to the token for the Apple event object to be marked. (Token is defined in [`AEDisposeToken(_:)`](1446783-aedisposetoken.md). See [`AEDesc`](aedesc.md).
+- `markToken`: A pointer to the mark token used to mark the Apple event object. See [`AEDesc`](aedesc.md).
+- `index`: The number of times your `MyMarkCallback` function has been called for the current mark token (that is, the number of Apple event objects that have so far passed the test, including the element to be marked).
 
 ## See Also
 

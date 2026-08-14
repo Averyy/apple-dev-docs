@@ -10,9 +10,9 @@ Display SpriteKit content on the screen by configuring a SpriteKit renderer, its
 
 > **Note**:  There are other ways to draw SpriteKit content besides using a view. See [`Choosing a SpriteKit Scene Renderer`](choosing-a-spritekit-scene-renderer.md) for options.
 
-![Screenshot of on the app window displaying an image (a sprite) using SpriteKit.](https://docs-assets.developer.apple.com/published/ced8e73de0c8478570ea46f6b7090c2e/media-3016873%402x.png)
+![Screenshot of on the app window displaying an image (a sprite) using SpriteKit.](/images/com.apple.spritekit/media-3016873@2x.png)
 
-Because the code in this article sets up a view, you put the lines from each of the following code listings into a view controller’s [`viewDidLoad()`](https://developer.apple.com/documentation/UIKit/UIViewController/viewDidLoad()) function.
+Because the code in this article sets up a view, you put the lines from each of the following code listings into a view controller’s [`viewDidLoad()`](https://developer.apple.com/documentation/uikit/uiviewcontroller/viewdidload()) function.
 
 ##### Create the Scene
 
@@ -54,7 +54,7 @@ if let skView = self.view as? SKView {
 
 ```
 
-Because the code in this article sets up a view, you add it to your view controller’s [`viewDidLoad()`](https://developer.apple.com/documentation/UIKit/UIViewController/viewDidLoad()) function.
+Because the code in this article sets up a view, you add it to your view controller’s [`viewDidLoad()`](https://developer.apple.com/documentation/uikit/uiviewcontroller/viewdidload()) function.
 
 ## See Also
 

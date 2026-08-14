@@ -21,7 +21,7 @@ class var colorDodge: CIBlendKernel { get }
 
 #### Discussion
 
-![The result of using the color dodge blend kernel (background image is top left, foreground image is bottom left)](https://docs-assets.developer.apple.com/published/e3dbcbfe6354ff3cbdaf8ab2105e177a/media-2926851%402x.png)
+![The result of using the color dodge blend kernel (background image is top left, foreground image is bottom left)](/images/com.apple.coreimage/media-2926851@2x.png)
 
 ## See Also
 

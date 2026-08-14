@@ -78,7 +78,7 @@ myLock.lock()
 myLock.unlock()
 ```
 
-When using this approach, you must call [`unlock()`](osallocatedunfairlock/unlock().md) from the same thread you use to call [`lock()`](osallocatedunfairlock/lock().md). Because of this, it’s unsafe to use this approach across an `await` suspension point. When using a lock with asynchronous code, lock using a closure or, even better, consider using an [`Actor`](https://developer.apple.com/documentation/Swift/Actor).
+When using this approach, you must call [`unlock()`](osallocatedunfairlock/unlock().md) from the same thread you use to call [`lock()`](osallocatedunfairlock/lock().md). Because of this, it’s unsafe to use this approach across an `await` suspension point. When using a lock with asynchronous code, lock using a closure or, even better, consider using an [`Actor`](https://developer.apple.com/documentation/swift/actor).
 
 > ⚠️ **Warning**:  [`OSAllocatedUnfairLock`](osallocatedunfairlock.md) isn’t a recursive lock. Attempting to lock an object more than once from the same thread without unlocking in between triggers a runtime exception.
 
@@ -121,8 +121,8 @@ When using this approach, you must call [`unlock()`](osallocatedunfairlock/unloc
 ## Relationships
 
 ### Conforms To
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

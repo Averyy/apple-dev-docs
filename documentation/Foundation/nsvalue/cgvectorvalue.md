@@ -25,7 +25,7 @@ The CoreGraphics vector structure representation of the value.
 
 ## See Also
 
-- [struct CGVector](../CoreFoundation/CGVector.md)
+- [struct CGVector](../corefoundation/cgvector.md)
   A structure that contains a two-dimensional vector.
 - [init(CGPoint: CGPoint)](nsvalue/init(cgpoint:).md)
   Creates a new value object containing the specified CoreGraphics point structure.

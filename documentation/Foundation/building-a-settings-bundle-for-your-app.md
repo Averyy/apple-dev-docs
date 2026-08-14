@@ -12,7 +12,7 @@ To add custom settings to the system’s Settings app, include a Settings bundle
 
 If your iOS app supports Mac Catalyst, the system uses your app’s Settings bundle to create an appropriate settings interface when your app runs in macOS. The system displays and manages this settings interface for you, and automatically adds a menu item to your app’s menus to display that interface. This system-provided settings interface matches the experience that people expect for apps in macOS.
 
-> **Note**: To determine when to add a Settings bundle to your app, see [`Settings`](https://developer.apple.com/design/Human-Interface-Guidelines/settings) in Human Interface Guidelines.
+> **Note**: To determine when to add a Settings bundle to your app, see [`Settings`](https://developer.apple.com/design/human-interface-guidelines/settings) in Human Interface Guidelines.
 
 ##### Add the Settings Bundle and Initial Content to Your Project
 
@@ -124,7 +124,7 @@ If a group element appeared previously in the list of items, the presence of thi
 
 ##### Add a Slider Element
 
-A slider element displays a row with a slider control that you can use to represent a continuous range of values. The control in this row is equivalent to a [`Slider`](https://developer.apple.com/documentation/SwiftUI/Slider), [`UISlider`](https://developer.apple.com/documentation/UIKit/UISlider), or [`NSSlider`](https://developer.apple.com/documentation/AppKit/NSSlider) control. The slider control spans the entire width of the row, with the slider’s minimum position located at the leading edge of the row. The following table lists the supported keys and their purpose.
+A slider element displays a row with a slider control that you can use to represent a continuous range of values. The control in this row is equivalent to a [`Slider`](https://developer.apple.com/documentation/swiftui/slider), [`UISlider`](https://developer.apple.com/documentation/uikit/uislider), or [`NSSlider`](https://developer.apple.com/documentation/appkit/nsslider) control. The slider control spans the entire width of the row, with the slider’s minimum position located at the leading edge of the row. The following table lists the supported keys and their purpose.
 
 | Key name | Value type | Description |
 | --- | --- | --- |
@@ -172,7 +172,7 @@ Use the Titles and Values keys of this element to provide meaningful description
 
 ##### Add a Toggle Switch Element
 
-A toggle switch element displays a control with a binary choice and a title describing the meaning behind that choice. This element is equivalent to a [`Toggle`](https://developer.apple.com/documentation/SwiftUI/Toggle), [`UISwitch`](https://developer.apple.com/documentation/UIKit/UISwitch), or [`NSSwitch`](https://developer.apple.com/documentation/AppKit/NSSwitch) control. Typically, you use this element for settings that enable or disable features. The following table lists the supported keys and their purpose.
+A toggle switch element displays a control with a binary choice and a title describing the meaning behind that choice. This element is equivalent to a [`Toggle`](https://developer.apple.com/documentation/swiftui/toggle), [`UISwitch`](https://developer.apple.com/documentation/uikit/uiswitch), or [`NSSwitch`](https://developer.apple.com/documentation/appkit/nsswitch) control. Typically, you use this element for settings that enable or disable features. The following table lists the supported keys and their purpose.
 
 | Key name | Value type | Description |
 | --- | --- | --- |

@@ -18,7 +18,7 @@ Serializes the view to the specified coder.
 
 #### Overview
 
-This property inherits from [`UIView`](https://developer.apple.com/documentation/UIKit/UIView).
+This property inherits from [`UIView`](https://developer.apple.com/documentation/uikit/uiview).
 
 ## Parameters
 

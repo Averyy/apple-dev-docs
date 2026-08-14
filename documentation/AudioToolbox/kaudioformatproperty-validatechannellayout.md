@@ -21,9 +21,9 @@ var kAudioFormatProperty_ValidateChannelLayout: AudioFormatPropertyID { get }
 
 #### Discussion
 
-Indicates the validity of the [`AudioChannelLayout`](https://developer.apple.com/documentation/CoreAudioTypes/AudioChannelLayout) struct provided as the specifier. The property value and size are not used and must be set to `NULL`. This is useful if the layout has come from an untrusted source such as a file. It returns `noErr` if the `AudioChannelLayout` is OK, [`kAudio_ParamError`](https://developer.apple.com/documentation/CoreAudioTypes/kAudio_ParamError) if there is a structural problem with the layout, or [`kAudioFormatUnknownFormatError`](kaudioformatunknownformaterror.md) for unrecognized layout tags or channel labels.
+Indicates the validity of the [`AudioChannelLayout`](https://developer.apple.com/documentation/coreaudiotypes/audiochannellayout) struct provided as the specifier. The property value and size are not used and must be set to `NULL`. This is useful if the layout has come from an untrusted source such as a file. It returns `noErr` if the `AudioChannelLayout` is OK, [`kAudio_ParamError`](https://developer.apple.com/documentation/coreaudiotypes/kaudio_paramerror) if there is a structural problem with the layout, or [`kAudioFormatUnknownFormatError`](kaudioformatunknownformaterror.md) for unrecognized layout tags or channel labels.
 
-If the layout tag is [`kAudioChannelLayoutTag_UseChannelDescriptions`](https://developer.apple.com/documentation/CoreAudioTypes/kAudioChannelLayoutTag_UseChannelDescriptions) it returns the number of channel descriptions.
+If the layout tag is [`kAudioChannelLayoutTag_UseChannelDescriptions`](https://developer.apple.com/documentation/coreaudiotypes/kaudiochannellayouttag_usechanneldescriptions) it returns the number of channel descriptions.
 
 ## See Also
 

@@ -72,7 +72,7 @@ MKLocalSearch *search = [[MKLocalSearch alloc] initWithRequest:searchRequest];
 }];
 ```
 
-If your app uses an [`MKLocalSearchCompleter`](mklocalsearchcompleter.md) object to implement autocomplete support for user-supplied search strings, initialize your search request using the search completion that the user selects. In that case, use the [`init(completion:)`](mklocalsearch/request/init(completion:).md) method instead of the [`init()`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class/init()) method to initialize your search request object. The completion object automatically provides the value for the [`naturalLanguageQuery`](mklocalsearch/request/naturallanguagequery.md) property.
+If your app uses an [`MKLocalSearchCompleter`](mklocalsearchcompleter.md) object to implement autocomplete support for user-supplied search strings, initialize your search request using the search completion that the user selects. In that case, use the [`init(completion:)`](mklocalsearch/request/init(completion:).md) method instead of the [`init()`](https://developer.apple.com/documentation/objectivec/nsobject-swift.class/init()) method to initialize your search request object. The completion object automatically provides the value for the [`naturalLanguageQuery`](mklocalsearch/request/naturallanguagequery.md) property.
 
 ## Topics
 
@@ -107,15 +107,15 @@ If your app uses an [`MKLocalSearchCompleter`](mklocalsearchcompleter.md) object
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCopying](../Foundation/NSCopying.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCopying](../foundation/nscopying.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

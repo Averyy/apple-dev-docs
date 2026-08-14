@@ -267,7 +267,7 @@ let contentTaggingModel = SystemLanguageModel(useCase: .contentTagging)
 
 #### Integrate with Other Framework Features
 
-You can combine these generative model features with other Apple frameworks. For example, the `LocationLookup` class uses [`MapKit`](https://developer.apple.com/documentation/MapKit) to search for addresses for our points of interest, showing how to combine model-generated content with weather information and location data for complete travel planning.
+You can combine these generative model features with other Apple frameworks. For example, the `LocationLookup` class uses [`MapKit`](https://developer.apple.com/documentation/mapkit) to search for addresses for our points of interest, showing how to combine model-generated content with weather information and location data for complete travel planning.
 
 ```swift
 @Observable @MainActor
@@ -303,7 +303,7 @@ The model generates location names as text, and the `LocationLookup` class conve
 
 ## See Also
 
-- [Foundation Models updates](../Updates/FoundationModels.md)
+- [Foundation Models updates](../updates/foundationmodels.md)
   Learn about important changes to Foundation Models.
 - [Generating content and performing tasks with Foundation Models](generating-content-and-performing-tasks-with-foundation-models.md)
   Enhance the experience in your app by prompting an on-device large language model.

@@ -13,9 +13,9 @@ For a comprehensive treatment of object specifiers, including sample code, see [
 ## Topics
 
 ### Working with object specifiers
-- [var objectSpecifier: NSScriptObjectSpecifier?](../ObjectiveC/NSObject-swift.class/objectSpecifier.md)
+- [var objectSpecifier: NSScriptObjectSpecifier?](../objectivec/nsobject-swift.class/objectspecifier.md)
   Returns an object specifier for the receiver.
-- [func indicesOfObjects(byEvaluatingObjectSpecifier: NSScriptObjectSpecifier) -> [NSNumber]?](../ObjectiveC/NSObject-swift.class/indicesOfObjects(byEvaluatingObjectSpecifier:).md)
+- [func indicesOfObjects(byEvaluatingObjectSpecifier: NSScriptObjectSpecifier) -> [NSNumber]?](../objectivec/nsobject-swift.class/indicesofobjects(byevaluatingobjectspecifier:).md)
   Returns the indices of the specified container objects.
 
 ## See Also
@@ -23,9 +23,9 @@ For a comprehensive treatment of object specifiers, including sample code, see [
 - [Cocoa Scripting Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/ScriptableCocoaApplications/SApps_intro/SAppsIntro.html#//apple_ref/doc/uid/TP40002164)
 - [NSComparisonMethods](nscomparisonmethods.md)
   A collection of default comparison methods useful for performing specifier tests.
-- [NSScriptingComparisonMethods](../ObjectiveC/nsscriptingcomparisonmethods.md)
+- [NSScriptingComparisonMethods](../objectivec/nsscriptingcomparisonmethods.md)
   A collection of methods useful for comparing script objects.
-- [NSScriptKeyValueCoding](../ObjectiveC/nsscriptkeyvaluecoding.md)
+- [NSScriptKeyValueCoding](../objectivec/nsscriptkeyvaluecoding.md)
   A collection of methods that provide additional capabilities for working with key-value coding.
 - [class NSScriptCoercionHandler](nsscriptcoercionhandler.md)
   A mechanism for converting one kind of scripting data to another.

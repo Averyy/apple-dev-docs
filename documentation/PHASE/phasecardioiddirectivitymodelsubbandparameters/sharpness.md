@@ -23,7 +23,7 @@ var sharpness: Double { get set }
 
 This property condenses the shape of the [`pattern`](phasecardioiddirectivitymodelsubbandparameters/pattern.md) such that higher values extend the shape frontwards. Increasing sharpness for dipole (a [`pattern`](phasecardioiddirectivitymodelsubbandparameters/pattern.md) value of `1.0`), extends the shape frontwards and backwards.
 
-The default value is `1.0`. Values greater than `1.0` increase sharpness. The framework clamps the value to the range `[1.0,` [`greatestFiniteMagnitude`](https://developer.apple.com/documentation/Swift/Double/greatestFiniteMagnitude)`]`.
+The default value is `1.0`. Values greater than `1.0` increase sharpness. The framework clamps the value to the range `[1.0,` [`greatestFiniteMagnitude`](https://developer.apple.com/documentation/swift/double/greatestfinitemagnitude)`]`.
 
 ## See Also
 

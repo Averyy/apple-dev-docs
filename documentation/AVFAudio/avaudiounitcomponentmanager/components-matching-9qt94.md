@@ -25,7 +25,7 @@ An array of `AVAudioComponent` objects that match the `description`.
 
 #### Discussion
 
-- desc: The [`AudioComponentDescription`](https://developer.apple.com/documentation/AudioToolbox/AudioComponentDescription) structure to match. The method uses the `type`, `subtype` and `manufacturer` fields to search for matching audio units. A value of `0` for any of these fields is a wildcard and returns the first match the method finds.
+- desc: The [`AudioComponentDescription`](https://developer.apple.com/documentation/audiotoolbox/audiocomponentdescription) structure to match. The method uses the `type`, `subtype` and `manufacturer` fields to search for matching audio units. A value of `0` for any of these fields is a wildcard and returns the first match the method finds.
 
 ## See Also
 

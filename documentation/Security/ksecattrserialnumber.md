@@ -22,7 +22,7 @@ let kSecAttrSerialNumber: CFString
 
 #### Discussion
 
-The corresponding value is of type [`CFData`](https://developer.apple.com/documentation/CoreFoundation/CFData) and contains the serial number data of a certificate. Items of class [`kSecClassCertificate`](ksecclasscertificate.md) have this attribute. Read only.
+The corresponding value is of type [`CFData`](https://developer.apple.com/documentation/corefoundation/cfdata) and contains the serial number data of a certificate. Items of class [`kSecClassCertificate`](ksecclasscertificate.md) have this attribute. Read only.
 
 
 ---

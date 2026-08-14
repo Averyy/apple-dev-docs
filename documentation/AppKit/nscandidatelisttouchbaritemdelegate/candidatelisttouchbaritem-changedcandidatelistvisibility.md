@@ -18,7 +18,7 @@ optional func candidateListTouchBarItem(_ anItem: NSCandidateListTouchBarItem<An
 ## Parameters
 
 - `anItem`: The candidate list item whose candidate list’s visibility has changed.
-- `isVisible`: A Boolean value that specifies whether or not the candidate list is visible. If [`true`](https://developer.apple.com/documentation/Swift/true) then the candidate list is visible, [`false`](https://developer.apple.com/documentation/Swift/false) otherwise.
+- `isVisible`: A Boolean value that specifies whether or not the candidate list is visible. If [`true`](https://developer.apple.com/documentation/swift/true) then the candidate list is visible, [`false`](https://developer.apple.com/documentation/swift/false) otherwise.
 
 
 ---

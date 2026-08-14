@@ -8,7 +8,7 @@ Shape a physics body to your graphics for the right blend of collision accuracy 
 
 In most cases, a physics body should have a size and shape that closely approximates the visual representation of the corresponding node. For example, the rocket shown below has a narrow shape that is not well represented by either a circle or a rectangle. A convex polygon shape is chosen and fitted to match the sprite’s artwork.
 
-![Match the shape with a close representation](https://docs-assets.developer.apple.com/published/597b253d465dc9cdab89a45b4583ac19/media-2984898%402x.png)
+![Match the shape with a close representation](/images/com.apple.spritekit/media-2984898@2x.png)
 
 ##### Shape a Physics Body Using a Textures Alpha Channel
 

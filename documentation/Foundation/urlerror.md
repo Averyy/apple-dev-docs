@@ -154,11 +154,11 @@ These error codes are for [`NSError`](nserror.md) objects in the domain [`NSURLE
 
 ### Conforms To
 - [CustomNSError](customnserror.md)
-- [Equatable](../Swift/Equatable.md)
-- [Error](../Swift/Error.md)
-- [Hashable](../Swift/Hashable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Equatable](../swift/equatable.md)
+- [Error](../swift/error.md)
+- [Hashable](../swift/hashable.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

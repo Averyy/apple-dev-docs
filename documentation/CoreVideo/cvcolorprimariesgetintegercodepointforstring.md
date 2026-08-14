@@ -22,7 +22,7 @@ func CVColorPrimariesGetIntegerCodePointForString(_ colorPrimariesString: CFStri
 
 #### Return Value
 
-The code point corresponding to the color primaries string, or `2` (unknown) if the string is [`nil`](https://developer.apple.com/documentation/ObjectiveC/nil-227m0) or the system doesn’t recognize it.
+The code point corresponding to the color primaries string, or `2` (unknown) if the string is [`nil`](https://developer.apple.com/documentation/objectivec/nil-227m0) or the system doesn’t recognize it.
 
 ## Parameters
 

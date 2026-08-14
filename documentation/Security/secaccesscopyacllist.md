@@ -25,7 +25,7 @@ An access instance can have any number of ACL entries for specific operations or
 ## Parameters
 
 - `accessRef`: The access instance from which to retrieve the information.
-- `aclList`: A pointer the method uses to return an array of [`SecACL`](secacl.md) instances. In Objective-C, call the [`CFRelease`](https://developer.apple.com/documentation/CoreFoundation/CFRelease) function to release the array when you are finished using it.
+- `aclList`: A pointer the method uses to return an array of [`SecACL`](secacl.md) instances. In Objective-C, call the [`CFRelease`](https://developer.apple.com/documentation/corefoundation/cfrelease) function to release the array when you are finished using it.
 
 
 ---

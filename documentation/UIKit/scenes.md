@@ -8,7 +8,7 @@ Manage multiple instances of your app’s UI simultaneously, and direct resource
 
 UIKit manages each instance of your app’s UI using a [`UIWindowScene`](uiwindowscene.md) object. A *scene* contains the windows and view controllers for presenting one instance of your UI. Each scene also has a corresponding [`UIWindowSceneDelegate`](uiwindowscenedelegate.md) object, which you use to coordinate interactions between UIKit and your app. Scenes run concurrently with each other, sharing the same memory and app process space. As a result, a single app may have multiple scenes and scene delegate objects active at the same time.
 
-![An image showing two instances of the Notes app running side-by-side on iPad.](https://docs-assets.developer.apple.com/published/2ca9357918eb89b8fdb96cf9e324b12a/media-3335652%402x.png)
+![An image showing two instances of the Notes app running side-by-side on iPad.](/images/com.apple.uikit/media-3335652@2x.png)
 
 Manage the configuration of new scenes from your [`UIApplicationDelegate`](uiapplicationdelegate.md) object.
 
@@ -33,7 +33,7 @@ Manage the configuration of new scenes from your [`UIApplicationDelegate`](uiapp
 ### Configuration
 - [Specifying the scenes your app supports](specifying-the-scenes-your-app-supports.md)
   Tell the system about your app’s scenes, including the objects you use to manage each scene and its initial user interface.
-- [UIApplicationSceneManifest](../BundleResources/Information-Property-List/UIApplicationSceneManifest.md)
+- [UIApplicationSceneManifest](../bundleresources/information-property-list/uiapplicationscenemanifest.md)
   The information about the app’s scene-based life-cycle support.
 - [class UISceneConfiguration](uisceneconfiguration.md)
   Information about the objects and storyboard for UKit to use when creating a particular scene.

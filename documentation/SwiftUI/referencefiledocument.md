@@ -82,9 +82,9 @@ final class PDFDocument: ReferenceFileDocument {
 ## Relationships
 
 ### Inherits From
-- [ObservableObject](../Combine/ObservableObject.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [ObservableObject](../combine/observableobject.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

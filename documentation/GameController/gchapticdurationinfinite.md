@@ -21,7 +21,7 @@ let GCHapticDurationInfinite: Float
 
 #### Discussion
 
-Use this constant to create a [`CHHapticEvent`](https://developer.apple.com/documentation/CoreHaptics/CHHapticEvent) object with an infinite duration. For example, create an infinite haptic event that you update in a loop to adjust a controller’s motor intensity.
+Use this constant to create a [`CHHapticEvent`](https://developer.apple.com/documentation/corehaptics/chhapticevent) object with an infinite duration. For example, create an infinite haptic event that you update in a loop to adjust a controller’s motor intensity.
 
 ## See Also
 

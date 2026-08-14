@@ -22,7 +22,7 @@ func currentTime() -> CMTime
 
 #### Return Value
 
-A [`CMTime`](https://developer.apple.com/documentation/CoreMedia/CMTime) object.
+A [`CMTime`](https://developer.apple.com/documentation/coremedia/cmtime) object.
 
 ## See Also
 

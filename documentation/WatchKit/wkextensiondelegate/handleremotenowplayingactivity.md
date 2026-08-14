@@ -22,7 +22,7 @@ When the user begins playing audio content on the corresponding iOS app, your wa
 
 To opt out of this autolaunch behavior, set the Opt out of Auto-launch Audio App (`PUICAutoLaunchAudioOptOut`) key in your WatchKit extension’s `Info.plist` file, as shown in [`Figure 1`](wkextensiondelegate/2980708-handleremotenowplayingactivity#3002766.md).
 
-![A screenshot showing the Opt out of Auto-launch Audio App key in the Info.plist editor.](https://docs-assets.developer.apple.com/published/f6ffc84786915b6c987489b947eedd4c/media-3002766%402x.png)
+![A screenshot showing the Opt out of Auto-launch Audio App key in the Info.plist editor.](/images/com.apple.watchkit/media-3002766@2x.png)
 
 
 ---

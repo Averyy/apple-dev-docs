@@ -28,6 +28,8 @@ This method adds a new data entry of dataSize to the queue. It sets the size par
 
 If the queue is empty when a new entry is added, the port specified in IODataQueueSetNotificationPort will be used to send a message to the client process that data is now available.
 
+**Please note that using this method without mapped memory create from an IOSharedDataQueue will result in undefined behavior. **
+
 ## Parameters
 
 - `dataQueue`: The IODataQueueMemory region mapped from the kernel created from an IOSharedDataQueue.

@@ -8,7 +8,7 @@ Displays elements on top of other elements.
 
 The `overlay` element provides the ability to place elements on top of images contained within a `lockup` element. The `overlay` element superimposes the elements it contains over an image. The `overlay` element creates a view where the elements it contains are arranged using the `tv-align` and `tv-position` styles. Containing elements are centered by default.
 
-![Layout diagram showing the positions other elements can be placed in.](https://docs-assets.developer.apple.com/published/8ab94a6903cb538652ca1484db33c75a/overlay-1%402x.png)
+![Layout diagram showing the positions other elements can be placed in.](/images/com.apple.TVML/overlay-1@2x.png)
 
 Elements contained in the same position are arranged from the top of the cell to the bottom, in the same order in which they are specified in the `overlay` element. You can specify a `<background><img /></background>` that displays a background image inside of the `overlay`. The background image is top-aligned and is fitted to the size of the `overlay` while keeping the image’s original aspect ratio. Text wrapping inside of the `overlay` only occurs in the `header`, `center`, and `footer` positions.
 

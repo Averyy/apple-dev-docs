@@ -37,8 +37,8 @@ Connections of stylus accessories will be reflected in the `styli` array of the 
 ## Relationships
 
 ### Conforms To
-- [NotificationCenter.MainActorMessage](../Foundation/NotificationCenter/MainActorMessage.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [NotificationCenter.MainActorMessage](../foundation/notificationcenter/mainactormessage.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 
 ---

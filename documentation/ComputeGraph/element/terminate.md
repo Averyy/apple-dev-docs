@@ -17,7 +17,7 @@ void element::terminate(bool terminate)
 
 #### Discussion
 
-> **Note**: ![Graph](https://docs-assets.developer.apple.com/published/47a0f13de57cec294087647b3fb2b530/element__terminate.svg)
+> **Note**: ![Graph](/images/com.apple.computegraph/element__terminate.svg)
 
 ## Parameters
 

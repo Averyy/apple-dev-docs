@@ -54,14 +54,14 @@ print(d)
 
 ## Parameters
 
-- `__A`: The single-precision real input vector  . 
-- `__IA`: The stride for input vector  . 
-- `__B`: The single-precision real input vector  .
-- `__IB`: The stride for input vector  . 
-- `__C`: The single-precision real input vector  . 
-- `__IC`: The stride for input vector  .
+- `__A`: The single-precision real input vector `A`. 
+- `__IA`: The stride for input vector `A`. 
+- `__B`: The single-precision real input vector `B`.
+- `__IB`: The stride for input vector `B`. 
+- `__C`: The single-precision real input vector `C`. 
+- `__IC`: The stride for input vector `C`.
 - `__D`: The single-precision real output vector.
-- `__ID`: The stride for output vector  . 
+- `__ID`: The stride for output vector `D`. 
 - `__N`: The number of elements to process.
 
 ## See Also

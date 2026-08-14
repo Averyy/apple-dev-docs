@@ -7,7 +7,6 @@ A structure that represents RFC 3994 composing indicator content in an RCS messa
 
 **Availability**:
 - iOS 26.0+
-- iPadOS 26.0+
 
 ## Declaration
 
@@ -32,7 +31,7 @@ This content type indicates whether the party sending the message is currently a
   The time of last activity.
 - [var contentType: UTType?](rcsmessage/composingindicator/contenttype.md)
   The type of message being composed.
-- [struct UTType](../UniformTypeIdentifiers/UTType-swift.struct.md)
+- [struct UTType](../uniformtypeidentifiers/uttype-swift.struct.md)
   A structure that represents a type of data to load, send, or receive.
 - [var refreshInterval: Duration?](rcsmessage/composingindicator/refreshinterval.md)
   The time interval after which the receiver can expect an update from the composer.
@@ -43,11 +42,11 @@ This content type indicates whether the party sending the message is currently a
 ## Relationships
 
 ### Conforms To
-- [Decodable](../Swift/Decodable.md)
-- [Encodable](../Swift/Encodable.md)
-- [Equatable](../Swift/Equatable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Decodable](../swift/decodable.md)
+- [Encodable](../swift/encodable.md)
+- [Equatable](../swift/equatable.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

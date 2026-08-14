@@ -10,7 +10,7 @@ The vDSP library contains a collection of highly optimized functions for DSP, ty
 
 The following sequence of images illustrates an example of the vDSP library’s capabilities. The [`vDSP_vtmerg`](vdsp_vtmerg.md) function combines two waveforms to produce a vector to create a smooth transition between two signals.
 
-![A flow diagram that depicts how the tapered merge function combines two sine waves. The top row shows a low-frequency sine wave on the left and a high-frequency sine wave on the right. The bottom row shows the merged result. The resulting signal starts with a low-frequency wave and gradually transforms to a high-frequency wave.](https://docs-assets.developer.apple.com/published/a3694216774f4879f22facd838b98c34/media-4310314%402x.png)
+![A flow diagram that depicts how the tapered merge function combines two sine waves. The top row shows a low-frequency sine wave on the left and a high-frequency sine wave on the right. The bottom row shows the merged result. The resulting signal starts with a low-frequency wave and gradually transforms to a high-frequency wave.](/images/com.apple.accelerate/media-4310314@2x.png)
 
 > **Note**:  Unless otherwise mentioned, vDSP functions with the same input and output sizes (in bytes) work in-place.
 

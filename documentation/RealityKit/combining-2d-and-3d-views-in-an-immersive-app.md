@@ -16,16 +16,16 @@ The rainbow that appears in the sample app contains two USDZ models and four [`R
 
 - The green arch is a USDZ file from Reality Composer Pro with a custom shader graph material.
 - The yellow arch is a USDZ file from Reality Composer Pro with a programmatically created simple material.
-- The orange arch is a reality view attachment containing a [`UIView`](https://developer.apple.com/documentation/UIKit/UIView) in a [`UIViewRepresentable`](https://developer.apple.com/documentation/SwiftUI/UIViewRepresentable) with a custom 2D arc shape.
+- The orange arch is a reality view attachment containing a [`UIView`](https://developer.apple.com/documentation/uikit/uiview) in a [`UIViewRepresentable`](https://developer.apple.com/documentation/swiftui/uiviewrepresentable) with a custom 2D arc shape.
 - The red arch is a reality view attachment containing a `UIView` in a `UIViewRepresentable` with a custom 2D arc shape.
-- The pink arch is a reality view attachment containing a SwiftUI [`View`](https://developer.apple.com/documentation/SwiftUI/View) with a custom 2D arc shape.
+- The pink arch is a reality view attachment containing a SwiftUI [`View`](https://developer.apple.com/documentation/swiftui/view) with a custom 2D arc shape.
 - The blue arch is a reality view attachment containing a SwiftUI `View` with a custom 2D arc shape.
 
 The app loads the 3D assets from Reality Composer Pro as a [`ModelEntity`](modelentity.md) in a [`RealityView`](realityview.md), and creates a reality view attachment for each of the 2D arches to attach them to the view.
 
-The cloud attachments at the locations of tap gestures are `RealityViewAttachments` containing [`Text`](https://developer.apple.com/documentation/SwiftUI/Text) with an SF Symbols image.
+The cloud attachments at the locations of tap gestures are `RealityViewAttachments` containing [`Text`](https://developer.apple.com/documentation/swiftui/text) with an SF Symbols image.
 
-![A screenshot of a simulated Apple Vision Pro environment showing a rainbow that consists of six arches of various colors and cloud attachments within a room.](https://docs-assets.developer.apple.com/published/53573759062f3fbda0f3931702fc7cae/combining-2d-3d-views-main%402x.png)
+![A screenshot of a simulated Apple Vision Pro environment showing a rainbow that consists of six arches of various colors and cloud attachments within a room.](/images/com.apple.RealityKit/combining-2d-3d-views-main@2x.png)
 
 ##### Load and Configure Entities From Reality Composer Pro
 
@@ -171,7 +171,7 @@ func configureForTapGesture(entity: Entity) async {
 }
 ```
 
-Add a [`SpatialTapGesture`](https://developer.apple.com/documentation/SwiftUI/SpatialTapGesture) to the `RealityView` and make sure it uses [`targetedToAnyEntity()`](https://developer.apple.com/documentation/SwiftUI/Gesture/targetedToAnyEntity()), or specify which entities to target with [`targetedToEntity(_:)`](https://developer.apple.com/documentation/SwiftUI/Gesture/targetedToEntity(_:)). Then use [`convert(_:from:to:)`](RealityCoordinateSpaceConverting/convert(_:from:to:)-6uv65.md) to convert the location of the tap gesture from the local coordinate space of the entity to the scene’s coordinate space.
+Add a [`SpatialTapGesture`](https://developer.apple.com/documentation/swiftui/spatialtapgesture) to the `RealityView` and make sure it uses [`targetedToAnyEntity()`](https://developer.apple.com/documentation/swiftui/gesture/targetedtoanyentity()), or specify which entities to target with [`targetedToEntity(_:)`](https://developer.apple.com/documentation/swiftui/gesture/targetedtoentity(_:)). Then use [`convert(_:from:to:)`](realitycoordinatespaceconverting/convert(_:from:to:)-6uv65.md) to convert the location of the tap gesture from the local coordinate space of the entity to the scene’s coordinate space.
 
 ```swift
 .simultaneousGesture(
@@ -219,9 +219,9 @@ for cloud in rainbowModel.tapAttachments {
 
 ## See Also
 
-- [Hello World](../visionOS/World.md)
+- [Hello World](../visionos/world.md)
   Use windows, volumes, and immersive spaces to teach people about the Earth.
-- [Enabling video reflections in an immersive environment](../visionOS/enabling-video-reflections-in-an-immersive-environment.md)
+- [Enabling video reflections in an immersive environment](../visionos/enabling-video-reflections-in-an-immersive-environment.md)
   Create a more immersive experience by adding video reflections in a custom environment.
 - [Creating a spatial drawing app with RealityKit](creating-a-spatial-drawing-app-with-realitykit.md)
   Use low-level mesh and texture APIs to achieve fast updates to a person’s brush strokes by integrating RealityKit with ARKit and SwiftUI.

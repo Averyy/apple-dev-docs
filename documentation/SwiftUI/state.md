@@ -86,7 +86,7 @@ Initialize state by providing a default value in the state’s declaration, as i
 
 ##### Store Observable Objects
 
-You can also store observable objects that you create with the [`Observable()`](https://developer.apple.com/documentation/Observation/Observable()) macro in `State`; for example:
+You can also store observable objects that you create with the [`Observable()`](https://developer.apple.com/documentation/observation/observable()) macro in `State`; for example:
 
 ```swift
 @Observable
@@ -121,11 +121,11 @@ struct ContentView: View {
 
 Delaying the creation of the observable state object ensures that unnecessary allocations of the object don’t happen each time SwiftUI initializes the view. Using the [`task(name:priority:file:line:_:)`](view/task(name:priority:file:line:_:).md) modifier is also an effective way to defer any other kind of work required to create the initial state of the view, such as network calls or file access.
 
-> **Note**: It’s possible to store an object that conforms to the [`ObservableObject`](https://developer.apple.com/documentation/Combine/ObservableObject) protocol in a `State` property. However the view will only update when the reference to the object changes, such as when setting the property with a reference to another object. The view will not update if any of the object’s published properties change. To track changes to both the reference and the object’s published properties, use [`StateObject`](stateobject.md) instead of [`State`](state.md) when storing the object.
+> **Note**: It’s possible to store an object that conforms to the [`ObservableObject`](https://developer.apple.com/documentation/combine/observableobject) protocol in a `State` property. However the view will only update when the reference to the object changes, such as when setting the property with a reference to another object. The view will not update if any of the object’s published properties change. To track changes to both the reference and the object’s published properties, use [`StateObject`](stateobject.md) instead of [`State`](state.md) when storing the object.
 
 ##### Share Observable State Objects with Subviews
 
-To share an [`Observable`](https://developer.apple.com/documentation/Observation/Observable) object stored in `State` with a subview, pass the object reference to the subview. SwiftUI updates the subview anytime an observable property of the object changes, but only when the subview’s [`body`](view/body-8kl5o.md) reads the property. For example, in the following code `BookView` updates each time `title` changes but not when `isAvailable` changes:
+To share an [`Observable`](https://developer.apple.com/documentation/observation/observable) object stored in `State` with a subview, pass the object reference to the subview. SwiftUI updates the subview anytime an observable property of the object changes, but only when the subview’s [`body`](view/body-8kl5o.md) reads the property. For example, in the following code `BookView` updates each time `title` changes but not when `isAvailable` changes:
 
 ```swift
 @Observable
@@ -245,8 +245,8 @@ struct BookEditorView: View {
 
 ### Conforms To
 - [DynamicProperty](dynamicproperty.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

@@ -7,7 +7,6 @@ Event triggered when a group’s encryption state changes, which causes the grou
 
 **Availability**:
 - iOS 26.5+
-- iPadOS 26.5+
 
 ## Declaration
 
@@ -32,8 +31,8 @@ You can ignore this event if the group was unnamed.
 ## Relationships
 
 ### Conforms To
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 
 ---

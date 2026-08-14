@@ -29,7 +29,7 @@ Your app’s implementation of this method may choose to seek by a different int
 ## Parameters
 
 - `pictureInPictureController`: The Picture in Picture controller.
-- `skipInterval`: A [`CMTime`](https://developer.apple.com/documentation/CoreMedia/CMTime) value that indicates the time interval by which to skip.
+- `skipInterval`: A [`CMTime`](https://developer.apple.com/documentation/coremedia/cmtime) value that indicates the time interval by which to skip.
 - `completionHandler`: You must call the completion handler whether your seek operation succeeds or fails. Failing to call the completion handler is an app error and leaves the user interface in a seeking state.
 
 ## See Also

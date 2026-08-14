@@ -19,7 +19,7 @@ ApplePayShippingContactEditingMode shippingContactEditingMode;
 
 Set the value to `storePickup` for an in-store or other pickup to prevent the user from editing the shipping address.
 
-For more information on configuring a package for store pickup, see [`Displaying a Read-Only Pickup Address`](https://developer.apple.com/documentation/PassKit/displaying-a-read-only-pickup-address).
+For more information on configuring a package for store pickup, see [`Displaying a Read-Only Pickup Address`](https://developer.apple.com/documentation/passkit/displaying-a-read-only-pickup-address).
 
 > ❗ **Important**:  Determine whether to disable editing of the shipping contact field before displaying the payment sheet. Switching from a noneditable to an editable shipping contact field requires the user to restart the payment process.
 

@@ -22,7 +22,7 @@ var requiresPrevColorTexture: Bool { get set }
 
 When this property is YES (the default), you must assign a valid texture to the interpolator’s `prevColorTexture` property before encoding. When NO, the frame interpolator internally manages the previous color data and `prevColorTexture` may be nil.
 
-This property’s default value is [`true`](https://developer.apple.com/documentation/Swift/true).
+This property’s default value is [`true`](https://developer.apple.com/documentation/swift/true).
 
 
 ---

@@ -8,7 +8,7 @@ Keys for specifying the behavior of a light using the [`attribute(forKey:)`](scn
 
 You can also get, set, or animate changes to the values of lighting attributes using [`Key-value coding`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Conceptual/DevPedia-CocoaCore/KeyValueCoding.html#//apple_ref/doc/uid/TP40008195-CH25) with the keys listed above.
 
-You provide or retrieve a value for each key as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) object containing the appropriate numeric type.
+You provide or retrieve a value for each key as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) object containing the appropriate numeric type.
 
 ## Topics
 

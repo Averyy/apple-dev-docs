@@ -22,7 +22,7 @@ static func winBackOffer(_ offer: Product.SubscriptionOffer) -> Product.Purchase
 
 #### Discussion
 
-To test win-back offers in Xcode, set up the offers in your StoreKit configuration file. For more information, see [`Setting up StoreKit Testing in Xcode`](https://developer.apple.com/documentation/Xcode/setting-up-storekit-testing-in-xcode).
+To test win-back offers in Xcode, set up the offers in your StoreKit configuration file. For more information, see [`Setting up StoreKit Testing in Xcode`](https://developer.apple.com/documentation/xcode/setting-up-storekit-testing-in-xcode).
 
 ## Parameters
 

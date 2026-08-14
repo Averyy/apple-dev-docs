@@ -24,8 +24,8 @@ You can specify a word callback function by passing the `kSpeechWordCFCallBack` 
 
 - `chan`: The speech channel that has finished processing input text.
 - `refCon`: The reference constant associated with the speech channel. 
-- `aString`: A string containing the original text passed to the speech synthesizer in the   call. 
-- `wordRange`: The range of characters in   that corresponds to the word. 
+- `aString`: A string containing the original text passed to the speech synthesizer in the [`SpeakCFString(_:_:_:)`](1461621-speakcfstring.md) call. 
+- `wordRange`: The range of characters in `aString` that corresponds to the word. 
 
 ## See Also
 

@@ -21,7 +21,7 @@ var preprocessorMacros: [String : NSObject]? { get set }
 
 #### Discussion
 
-Define the macros as a dictionary where each key is a string, and the values can be either an [`NSString`](https://developer.apple.com/documentation/Foundation/NSString) or [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) instance.
+Define the macros as a dictionary where each key is a string, and the values can be either an [`NSString`](https://developer.apple.com/documentation/foundation/nsstring) or [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) instance.
 
 The default value is `nil`.
 

@@ -7,7 +7,6 @@ The content type of the part, as a Uniform Type Identifier.
 
 **Availability**:
 - iOS 26.0+
-- iPadOS 26.0+
 
 ## Declaration
 
@@ -38,7 +37,7 @@ Most MMS clients support the following content types:
 - `video/3gp`
 - `video/3gp`
 
-You can also use custom content types, such as a [`UTType`](https://developer.apple.com/documentation/UniformTypeIdentifiers/UTType-swift.struct) based on a custom MIME type.
+You can also use custom content types, such as a [`UTType`](https://developer.apple.com/documentation/uniformtypeidentifiers/uttype-swift.struct) based on a custom MIME type.
 
 ## See Also
 
@@ -52,7 +51,7 @@ You can also use custom content types, such as a [`UTType`](https://developer.ap
   The file name of the MMS part.
 - [var contentID: String](mmspartcontent/contentid.md)
   A unique identifier for the part.
-- [struct UTType](../UniformTypeIdentifiers/UTType-swift.struct.md)
+- [struct UTType](../uniformtypeidentifiers/uttype-swift.struct.md)
   A structure that represents a type of data to load, send, or receive.
 
 

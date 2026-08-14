@@ -16,14 +16,14 @@ The authorization status that your app has determines if and when it receives lo
 Whenever possible, request only When In Use authorization. This mode has powerful features, allowing your app to:
 
 - Access all available location services while the user is using the app. If the user stops using your app, any outstanding requests suspend until the user resumes using your app.
-- Continue to get location updates even after your app enters the background, if you’ve enabled background location updates in your Xcode project. See [`Handling location updates in the background`](https://developer.apple.com/documentation/CoreLocation/handling-location-updates-in-the-background) for more information.
-- Use location notification triggers to launch. If your app can rely on your user’s interaction, set up a [`UNLocationNotificationTrigger`](https://developer.apple.com/documentation/UserNotifications/UNLocationNotificationTrigger) to notify users when they enter a relevant region. When users click through the notification, the system launches the app, making it eligible to receive the location event. This method lets users decide at a relevant moment whether to share their location with your app.
+- Continue to get location updates even after your app enters the background, if you’ve enabled background location updates in your Xcode project. See [`Handling location updates in the background`](https://developer.apple.com/documentation/corelocation/handling-location-updates-in-the-background) for more information.
+- Use location notification triggers to launch. If your app can rely on your user’s interaction, set up a [`UNLocationNotificationTrigger`](https://developer.apple.com/documentation/usernotifications/unlocationnotificationtrigger) to notify users when they enter a relevant region. When users click through the notification, the system launches the app, making it eligible to receive the location event. This method lets users decide at a relevant moment whether to share their location with your app.
 
-Location services are available to apps with [`CLAuthorizationStatus.authorizedWhenInUse`](https://developer.apple.com/documentation/CoreLocation/CLAuthorizationStatus/authorizedWhenInUse) only while the app is “in use”. On all platforms that support When In Use authorization, an app is considered in use:
+Location services are available to apps with [`CLAuthorizationStatus.authorizedWhenInUse`](https://developer.apple.com/documentation/corelocation/clauthorizationstatus/authorizedwheninuse) only while the app is “in use”. On all platforms that support When In Use authorization, an app is considered in use:
 
 - When the app runs in the foreground.
 - In the few seconds after an app leaves the foreground, a short grace period for your app to finish any current location tasks the user initiated.
-- When the app shows the background location usage indicator ([`showsBackgroundLocationIndicator`](https://developer.apple.com/documentation/CoreLocation/CLLocationManager/showsBackgroundLocationIndicator)). On iOS, the indicator is a blue bar or pill at the top of the screen; on watchOS it’s a small icon.
+- When the app shows the background location usage indicator ([`showsBackgroundLocationIndicator`](https://developer.apple.com/documentation/corelocation/cllocationmanager/showsbackgroundlocationindicator)). On iOS, the indicator is a blue bar or pill at the top of the screen; on watchOS it’s a small icon.
 
 For watchOS, the system always considers a complication on the current watch face to be in use. However, while the complication can receive location updates, you request authorization prompts from the main watch app. On watchOS there’s no way to opt out of showing the background location usage indicator.
 

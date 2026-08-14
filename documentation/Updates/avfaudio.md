@@ -6,15 +6,15 @@ Learn about important changes to AVFAudio.
 
 #### Overview
 
-Browse notable changes in [`AVFAudio`](https://developer.apple.com/documentation/AVFAudio).
+Browse notable changes in [`AVFAudio`](https://developer.apple.com/documentation/avfaudio).
 
 #### June 2024
 
 ##### Spatial Audio with Avaudioengine
 
-- Adjust the [`AVAudioEnvironmentNode`](https://developer.apple.com/documentation/AVFAudio/AVAudioEnvironmentNode) orientation to match someone’s head pose via compatible AirPods by setting the new [`isListenerHeadTrackingEnabled`](https://developer.apple.com/documentation/AVFAudio/AVAudioEnvironmentNode/isListenerHeadTrackingEnabled) property to `true`. The system requires your app to have the [`com.apple.developer.coremotion.head-pose`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.coremotion.head-pose) entitlement to observe this property.
-- Tailor [`AVAudioEnvironmentNode`](https://developer.apple.com/documentation/AVFAudio/AVAudioEnvironmentNode) output according to a person’s personalized spatial audio profile that they configure in Settings by adding the [`com.apple.developer.spatial-audio.profile-access`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.spatial-audio.profile-access) entitlement to your app.
-- Instruct [`AVAudioEnvironmentNode`](https://developer.apple.com/documentation/AVFAudio/AVAudioEnvironmentNode) to ignore the new system spatial audio toggle in Control Center by adding the [`AVGameBypassSystemSpatialAudio`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/AVGameBypassSystemSpatialAudio) key to your app’s `Info.plist`.
+- Adjust the [`AVAudioEnvironmentNode`](https://developer.apple.com/documentation/avfaudio/avaudioenvironmentnode) orientation to match someone’s head pose via compatible AirPods by setting the new [`isListenerHeadTrackingEnabled`](https://developer.apple.com/documentation/avfaudio/avaudioenvironmentnode/islistenerheadtrackingenabled) property to `true`. The system requires your app to have the [`com.apple.developer.coremotion.head-pose`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.coremotion.head-pose) entitlement to observe this property.
+- Tailor [`AVAudioEnvironmentNode`](https://developer.apple.com/documentation/avfaudio/avaudioenvironmentnode) output according to a person’s personalized spatial audio profile that they configure in Settings by adding the [`com.apple.developer.spatial-audio.profile-access`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.spatial-audio.profile-access) entitlement to your app.
+- Instruct [`AVAudioEnvironmentNode`](https://developer.apple.com/documentation/avfaudio/avaudioenvironmentnode) to ignore the new system spatial audio toggle in Control Center by adding the [`AVGameBypassSystemSpatialAudio`](https://developer.apple.com/documentation/bundleresources/information-property-list/avgamebypasssystemspatialaudio) key to your app’s `Info.plist`.
 
 ## See Also
 

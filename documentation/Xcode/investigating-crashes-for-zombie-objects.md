@@ -10,7 +10,7 @@ Once an Objective-C or Swift object no longer has any strong references to it, t
 
 ##### Determine Whether a Crash Report Has Signs of a Zombie
 
-The Objective-C runtime can’t message objects deallocated from memory, so crashes often occur in the [`objc_msgSend`](https://developer.apple.com/documentation/ObjectiveC/objc_msgSend), `objc_retain`, or `objc_release` functions. For example, a crash where the Objective-C runtime can’t send a message to the deallocated object looks like this:
+The Objective-C runtime can’t message objects deallocated from memory, so crashes often occur in the [`objc_msgSend`](https://developer.apple.com/documentation/objectivec/objc_msgsend), `objc_retain`, or `objc_release` functions. For example, a crash where the Objective-C runtime can’t send a message to the deallocated object looks like this:
 
 ```other
 Thread 0 Crashed:
@@ -28,7 +28,7 @@ Thread 2 Crashed:
 2   com.apple.CoreFoundation        0x00007fff485feee6 _CFAutoreleasePoolPop + 22
 ```
 
-Another pattern that indicates a zombie object is a stack frame for an *unrecognized selector*, which is a method that an object doesn’t implement. Often this kind of crash looks like code where an unexpected type of object is asked to do something it obviously can’t do, such as a number formatter class trying to play a sound. This is because the operating system reused memory that once held the deallocated object, and that memory now contains a different kind of object. A zombie identified by an unrecognized selector has a call stack with the [`doesNotRecognizeSelector(_:)`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class/doesNotRecognizeSelector(_:)) method:
+Another pattern that indicates a zombie object is a stack frame for an *unrecognized selector*, which is a method that an object doesn’t implement. Often this kind of crash looks like code where an unexpected type of object is asked to do something it obviously can’t do, such as a number formatter class trying to play a sound. This is because the operating system reused memory that once held the deallocated object, and that memory now contains a different kind of object. A zombie identified by an unrecognized selector has a call stack with the [`doesNotRecognizeSelector(_:)`](https://developer.apple.com/documentation/objectivec/nsobject-swift.class/doesnotrecognizeselector(_:)) method:
 
 ```other
 Last Exception Backtrace:
@@ -45,7 +45,7 @@ Terminating app due to uncaught exception 'NSInvalidArgumentException',
     unrecognized selector sent to instance 0x28360dac0'
 ```
 
-In this example, a message was sent to a [`NumberFormatter`](https://developer.apple.com/documentation/Foundation/NumberFormatter) to perform the `playSound` selector, but [`NumberFormatter`](https://developer.apple.com/documentation/Foundation/NumberFormatter) doesn’t implement a method with that name, so the app crashed. An object was previously allocated at the same memory address as the current [`NumberFormatter`](https://developer.apple.com/documentation/Foundation/NumberFormatter) that did implement the `playSound` method, but that object was deallocated, and the unrelated [`NumberFormatter`](https://developer.apple.com/documentation/Foundation/NumberFormatter) object is now using the same memory address. The `playSound` selector is a clue for debugging. If you identify the class implementing the `playSound` selector, you can identify the code paths that call it and determine why the expected object deallocated too early.
+In this example, a message was sent to a [`NumberFormatter`](https://developer.apple.com/documentation/foundation/numberformatter) to perform the `playSound` selector, but [`NumberFormatter`](https://developer.apple.com/documentation/foundation/numberformatter) doesn’t implement a method with that name, so the app crashed. An object was previously allocated at the same memory address as the current [`NumberFormatter`](https://developer.apple.com/documentation/foundation/numberformatter) that did implement the `playSound` method, but that object was deallocated, and the unrelated [`NumberFormatter`](https://developer.apple.com/documentation/foundation/numberformatter) object is now using the same memory address. The `playSound` selector is a clue for debugging. If you identify the class implementing the `playSound` selector, you can identify the code paths that call it and determine why the expected object deallocated too early.
 
 ##### Investigate the Source of the Zombie
 

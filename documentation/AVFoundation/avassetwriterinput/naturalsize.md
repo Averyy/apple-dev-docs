@@ -21,7 +21,7 @@ var naturalSize: CGSize { get set }
 
 #### Discussion
 
-The default value is [`CGSizeZero`](https://developer.apple.com/documentation/CoreGraphics/CGSizeZero), which indicates the system sets the natural size according to the dimensions of the output track’s format descriptions.
+The default value is [`CGSizeZero`](https://developer.apple.com/documentation/coregraphics/cgsizezero), which indicates the system sets the natural size according to the dimensions of the output track’s format descriptions.
 
 You can’t set this value after writing starts.
 

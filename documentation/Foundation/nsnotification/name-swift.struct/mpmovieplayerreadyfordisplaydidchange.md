@@ -19,7 +19,7 @@ static let MPMoviePlayerReadyForDisplayDidChange: NSNotification.Name
 
 #### Discussion
 
-To check whether a movie player is ready for display, access its [`readyForDisplay`](https://developer.apple.com/documentation/MediaPlayer/MPMoviePlayerController/readyForDisplay) property. The movie player whose display state has changed is available as the object associated with the notification.
+To check whether a movie player is ready for display, access its [`readyForDisplay`](https://developer.apple.com/documentation/mediaplayer/mpmovieplayercontroller/readyfordisplay) property. The movie player whose display state has changed is available as the object associated with the notification.
 
 ## See Also
 

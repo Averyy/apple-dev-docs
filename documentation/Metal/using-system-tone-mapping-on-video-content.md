@@ -6,7 +6,7 @@ Use EDR metadata to apply the default system tone mapping to a layer.
 
 #### Overview
 
-When processing video content, you usually want to work in a linear color space. You also want to display content that’s consistent with how playback would appear in AVFoundation or other playback mechanisms. To create content in your app that is consistent with the system behavior, create a Metal layer with a linear color space and attach an [`CAEDRMetadata`](https://developer.apple.com/documentation/QuartzCore/CAEDRMetadata) object defining how the system should tone map the video content.
+When processing video content, you usually want to work in a linear color space. You also want to display content that’s consistent with how playback would appear in AVFoundation or other playback mechanisms. To create content in your app that is consistent with the system behavior, create a Metal layer with a linear color space and attach an [`CAEDRMetadata`](https://developer.apple.com/documentation/quartzcore/caedrmetadata) object defining how the system should tone map the video content.
 
 The code below creates a Metal layer with an extended linear BT.2020 color space and metadata that applies an HDR10 tone mapping based on the reference display.
 
@@ -40,7 +40,7 @@ CAEDRMetadata *edrMetaData = [CAEDRMetadata HDR10MetadataWithMinLuminance: 0.005
 metalLayer.EDRMetadata = edrMetaData;
 ```
 
-Your rendering code needs to generate pixel values consistent with the EDR metadata object. For example, in the above code, the `opticalOutputScale` was set to `100`, so a pixel value of `1.0` corresponds to `100` nits. For more information, see [`CAEDRMetadata`](https://developer.apple.com/documentation/QuartzCore/CAEDRMetadata).
+Your rendering code needs to generate pixel values consistent with the EDR metadata object. For example, in the above code, the `opticalOutputScale` was set to `100`, so a pixel value of `1.0` corresponds to `100` nits. For more information, see [`CAEDRMetadata`](https://developer.apple.com/documentation/quartzcore/caedrmetadata).
 
 ## See Also
 

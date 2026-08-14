@@ -19,7 +19,7 @@ var currentSystemCode: Data { get }
 
 #### Discussion
 
-The system code matches one of the entries in the array for the [`ISO18092 system codes for NFC Tag Reader Session`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.nfc.readersession.felica.systemcodes) information property list key.
+The system code matches one of the entries in the array for the [`ISO18092 system codes for NFC Tag Reader Session`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.nfc.readersession.felica.systemcodes) information property list key.
 
 ## See Also
 

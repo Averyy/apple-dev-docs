@@ -38,17 +38,17 @@ struct RedactionReasons
 ## Relationships
 
 ### Conforms To
-- [Equatable](../Swift/Equatable.md)
-- [ExpressibleByArrayLiteral](../Swift/ExpressibleByArrayLiteral.md)
-- [OptionSet](../Swift/OptionSet.md)
-- [RawRepresentable](../Swift/RawRepresentable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
-- [SetAlgebra](../Swift/SetAlgebra.md)
+- [Equatable](../swift/equatable.md)
+- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
+- [OptionSet](../swift/optionset.md)
+- [RawRepresentable](../swift/rawrepresentable.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
+- [SetAlgebra](../swift/setalgebra.md)
 
 ## See Also
 
-- [Designing your app for the Always On state](../watchOS-Apps/designing-your-app-for-the-always-on-state.md)
+- [Designing your app for the Always On state](../watchos-apps/designing-your-app-for-the-always-on-state.md)
   Customize your watchOS app’s user interface for continuous display.
 - [Protecting sensitive content when screen sharing and remote control are active](protecting-sensitive-content-when-screen-sharing.md)
   Detect active screen capture sessions and respond appropriately to protect sensitive content in your app.

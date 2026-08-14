@@ -19,7 +19,7 @@ case home
 
 #### Discussion
 
-![None](https://docs-assets.developer.apple.com/published/722dedc7b0879e0a0990f185e35e489f/media-2934518%402x.png)
+![None](/images/com.apple.uikit/media-2934518@2x.png)
 
 ## See Also
 

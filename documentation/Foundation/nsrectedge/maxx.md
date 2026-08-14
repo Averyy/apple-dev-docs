@@ -17,7 +17,7 @@ case maxX
 
 #### Discussion
 
-This is equivalent to [`CGRectEdge.maxXEdge`](https://developer.apple.com/documentation/CoreFoundation/CGRectEdge/maxXEdge).
+This is equivalent to [`CGRectEdge.maxXEdge`](https://developer.apple.com/documentation/corefoundation/cgrectedge/maxxedge).
 
 ## See Also
 

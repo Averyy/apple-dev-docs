@@ -21,7 +21,7 @@ var pixelBufferPool: CVPixelBufferPool? { get }
 
 #### Discussion
 
-For maximum efficiency, you should create [`CVPixelBuffer`](https://developer.apple.com/documentation/CoreVideo/cvpixelbuffer-q2e) objects for [`append(_:withPresentationTime:)`](avassetwriterinputpixelbufferadaptor/append(_:withpresentationtime:).md) by using this pool with the [`CVPixelBufferPoolCreatePixelBuffer(_:_:_:)`](https://developer.apple.com/documentation/CoreVideo/CVPixelBufferPoolCreatePixelBuffer(_:_:_:)) function.
+For maximum efficiency, you should create [`CVPixelBuffer`](https://developer.apple.com/documentation/corevideo/cvpixelbuffer-q2e) objects for [`append(_:withPresentationTime:)`](avassetwriterinputpixelbufferadaptor/append(_:withpresentationtime:).md) by using this pool with the [`CVPixelBufferPoolCreatePixelBuffer(_:_:_:)`](https://developer.apple.com/documentation/corevideo/cvpixelbufferpoolcreatepixelbuffer(_:_:_:)) function.
 
 This value is `nil` prior to calling [`startSession(atSourceTime:)`](avassetwriter/startsession(atsourcetime:).md)on the associated [`AVAssetWriter`](avassetwriter.md) object.
 

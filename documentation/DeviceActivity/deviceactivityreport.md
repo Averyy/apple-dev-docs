@@ -19,7 +19,7 @@ A view that reports the user’s application, category, and web domain activity 
 
 #### Overview
 
-When you create a report, the system asks your app’s device activity report extension to provide a [`View`](https://developer.apple.com/documentation/SwiftUI/View) representing the user’s device activity. To protect the user’s privacy, your extension runs in a sandbox. This sandbox prevents your extension from making network requests or moving sensitive content outside the extension’s address space. The extension point identifier for all device activity report extensions is `com.apple.deviceactivityui.report-extension`. You can configure a report with a custom context and filter, and then display the report like any SwiftUI view.
+When you create a report, the system asks your app’s device activity report extension to provide a [`View`](https://developer.apple.com/documentation/swiftui/view) representing the user’s device activity. To protect the user’s privacy, your extension runs in a sandbox. This sandbox prevents your extension from making network requests or moving sensitive content outside the extension’s address space. The extension point identifier for all device activity report extensions is `com.apple.deviceactivityui.report-extension`. You can configure a report with a custom context and filter, and then display the report like any SwiftUI view.
 
 ```swift
 struct ExampleView: View {
@@ -79,7 +79,7 @@ struct ExampleView: View {
 }
 ```
 
-The system will only provide your extension with device activity data if the user has authorized your app for family controls on their device or on the device(s) of children in their iCloud family. See [`AuthorizationCenter`](https://developer.apple.com/documentation/FamilyControls/AuthorizationCenter) for more details.
+The system will only provide your extension with device activity data if the user has authorized your app for family controls on their device or on the device(s) of children in their iCloud family. See [`AuthorizationCenter`](https://developer.apple.com/documentation/familycontrols/authorizationcenter) for more details.
 
 ## Topics
 
@@ -96,9 +96,9 @@ The system will only provide your extension with device activity data if the use
 ## Relationships
 
 ### Conforms To
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
-- [View](../SwiftUI/View.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
+- [View](../swiftui/view.md)
 
 ## See Also
 

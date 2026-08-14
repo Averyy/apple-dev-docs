@@ -16,7 +16,7 @@ static let fullScreenModeApplicationPresentationOptions: NSView.FullScreenModeOp
 
 #### Discussion
 
-The corresponding value is an instance of [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) containing an unsigned integer value of [`NSApplication.PresentationOptions`](nsapplication/presentationoptions-swift.struct.md). Those options can be combined using the C bit-wise `OR` operator before created the `NSNumber` instance. See [`NSApplication`](nsapplication.md) constants section [`NSApplication.PresentationOptions`](nsapplication/presentationoptions-swift.struct.md) for more information on these options.
+The corresponding value is an instance of [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) containing an unsigned integer value of [`NSApplication.PresentationOptions`](nsapplication/presentationoptions-swift.struct.md). Those options can be combined using the C bit-wise `OR` operator before created the `NSNumber` instance. See [`NSApplication`](nsapplication.md) constants section [`NSApplication.PresentationOptions`](nsapplication/presentationoptions-swift.struct.md) for more information on these options.
 
 ## See Also
 

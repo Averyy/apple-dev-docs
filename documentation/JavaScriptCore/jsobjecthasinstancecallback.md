@@ -21,7 +21,7 @@ typealias JSObjectHasInstanceCallback = (JSContextRef?, JSObjectRef?, JSValueRef
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/Swift/true) if `possibleInstance` is an instance of `constructor` according to the JavaScript `instanceof` expression; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
+[`true`](https://developer.apple.com/documentation/swift/true) if `possibleInstance` is an instance of `constructor` according to the JavaScript `instanceof` expression; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
 
 #### Discussion
 
@@ -33,7 +33,7 @@ bool HasInstance(JSContextRef ctx, JSObjectRef constructor, JSValueRef possibleI
 
 If the JavaScript expression `someValue instanceof myObject` invokes your callback, it sets `constructor` to `myObject`, and `possibleInstance` to `someValue`.
 
-If this callback is `NULL`, `instanceof` expressions that target your object return [`false`](https://developer.apple.com/documentation/Swift/false).
+If this callback is `NULL`, `instanceof` expressions that target your object return [`false`](https://developer.apple.com/documentation/swift/false).
 
 Standard JavaScript practice calls for objects that implement the [`callAsConstructor`](jsclassdefinition/callasconstructor.md) callback to implement the [`hasInstance`](jsclassdefinition/hasinstance.md) callback, as well.
 

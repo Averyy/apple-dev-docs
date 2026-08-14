@@ -16,7 +16,7 @@ func encodeRestorableState(with coder: NSCoder, backgroundQueue queue: Operation
 
 #### Discussion
 
-Don’t call this method directly. The system calls this method on the main thread. The receiver may synchronously encode state to `coder` or may enqueue asynchronous work to encode additional restorable state using the provided serial background [`OperationQueue`](https://developer.apple.com/documentation/Foundation/OperationQueue), if it can safely access and encode that information. The encoding process finishes when the enqueued operations complete.
+Don’t call this method directly. The system calls this method on the main thread. The receiver may synchronously encode state to `coder` or may enqueue asynchronous work to encode additional restorable state using the provided serial background [`OperationQueue`](https://developer.apple.com/documentation/foundation/operationqueue), if it can safely access and encode that information. The encoding process finishes when the enqueued operations complete.
 
 If you override this method, call the super implementation.
 

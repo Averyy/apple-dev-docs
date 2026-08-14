@@ -34,7 +34,7 @@ This event represents a call to `mpo_vnode_check_lookup_preflight`, which the sy
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../Swift/BitwiseCopyable.md)
+- [BitwiseCopyable](../swift/bitwisecopyable.md)
 
 ## See Also
 

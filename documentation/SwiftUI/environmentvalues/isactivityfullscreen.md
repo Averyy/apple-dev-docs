@@ -18,7 +18,7 @@ var isActivityFullscreen: Bool { get }
 
 #### Discussion
 
-When a Live Activity fills the entire screen, the system extends the background tint color you set with the [`activityBackgroundTint(_:)`](View/activityBackgroundTint(_:).md) modifier to fill the screen.
+When a Live Activity fills the entire screen, the system extends the background tint color you set with the [`activityBackgroundTint(_:)`](view/activitybackgroundtint(_:).md) modifier to fill the screen.
 
 Note that this environment variable is always `false` in iOS 16.
 

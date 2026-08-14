@@ -24,7 +24,7 @@ Handles the `kIOMessageDeviceSignaledWakeup` message from a provider identifying
 
 ## Parameters
 
-- `type`: A type defined in  .
+- `type`: A type defined in `IOMessage.h`.
 - `provider`: The provider from which the message originates.
 - `argument`: An argument defined by the message type.
 

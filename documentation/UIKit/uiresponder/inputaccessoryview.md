@@ -25,7 +25,7 @@ The value of this read-only property is `nil`. If you want to attach custom cont
 
 This property has special considerations in visionOS:
 
-- In apps built for visionOS, this property isn’t available. Use [`bottomOrnament`](https://developer.apple.com/documentation/SwiftUI/ToolbarItemPlacement/bottomOrnament) instead.
+- In apps built for visionOS, this property isn’t available. Use [`bottomOrnament`](https://developer.apple.com/documentation/swiftui/toolbaritemplacement/bottomornament) instead.
 - In compatible iPad and iPhone apps running in visionOS, the app’s idiom determines this property’s behavior. For apps running in the [`UIUserInterfaceIdiom.pad`](uiuserinterfaceidiom/pad.md) idiom, the accessory view renders at the bottom of the app window. For apps running in the [`UIUserInterfaceIdiom.phone`](uiuserinterfaceidiom/phone.md) idiom, this property doesn’t have any effect.
 
 ## See Also

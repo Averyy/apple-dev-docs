@@ -19,7 +19,7 @@ class func canPrint(_ url: URL) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/Swift/true) if UIKit can print the contents of the referenced file, otherwise [`false`](https://developer.apple.com/documentation/Swift/false). The method returns [`false`](https://developer.apple.com/documentation/Swift/false) if `url` references PDF data that specifies that printing is not allowed.
+[`true`](https://developer.apple.com/documentation/swift/true) if UIKit can print the contents of the referenced file, otherwise [`false`](https://developer.apple.com/documentation/swift/false). The method returns [`false`](https://developer.apple.com/documentation/swift/false) if `url` references PDF data that specifies that printing is not allowed.
 
 #### Discussion
 
@@ -27,7 +27,7 @@ You should call this method to test the data referenced by a URL prior to assign
 
 ## Parameters
 
-- `url`: An object representing a URL. Valid `NSURL` objects must use the `file:` or any scheme that can return an [`NSData`](https://developer.apple.com/documentation/Foundation/NSData) object with a registered protocol. The file referenced by the URL must contain PDF data or an image in a format supported by the Image I/O framework. See [`View Programming Guide for iOS`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/WindowsViews/Conceptual/ViewPG_iPhoneOS/Introduction/Introduction.html#//apple_ref/doc/uid/TP40009503) in [`View Programming Guide for iOS`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/WindowsViews/Conceptual/ViewPG_iPhoneOS/Introduction/Introduction.html#//apple_ref/doc/uid/TP40009503) for a list of the supported image formats.
+- `url`: An object representing a URL. Valid `NSURL` objects must use the `file:` or any scheme that can return an [`NSData`](https://developer.apple.com/documentation/foundation/nsdata) object with a registered protocol. The file referenced by the URL must contain PDF data or an image in a format supported by the Image I/O framework. See [`View Programming Guide for iOS`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/WindowsViews/Conceptual/ViewPG_iPhoneOS/Introduction/Introduction.html#//apple_ref/doc/uid/TP40009503) in [`View Programming Guide for iOS`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/WindowsViews/Conceptual/ViewPG_iPhoneOS/Introduction/Introduction.html#//apple_ref/doc/uid/TP40009503) for a list of the supported image formats.
 
 ## See Also
 

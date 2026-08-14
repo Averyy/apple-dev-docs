@@ -20,7 +20,7 @@ func pushConfigurationViewController(_ viewController: UIViewController!)
 
 Typically, this method is called in the tap handler for a configuration item. A user selects a configuration item from the list displayed in the compose view and the associated configuration view controller is displayed. Only one configuration view controller can be visible at a time.
 
-Note that your custom configuration view controller should set its [`preferredContentSize`](https://developer.apple.com/documentation/UIKit/UIViewController/preferredContentSize) property to an appropriate value. `SLComposeServiceViewController` observes changes to the [`preferredContentSize`](https://developer.apple.com/documentation/UIKit/UIViewController/preferredContentSize) property and animates view size changes if necessary.
+Note that your custom configuration view controller should set its [`preferredContentSize`](https://developer.apple.com/documentation/uikit/uiviewcontroller/preferredcontentsize) property to an appropriate value. `SLComposeServiceViewController` observes changes to the [`preferredContentSize`](https://developer.apple.com/documentation/uikit/uiviewcontroller/preferredcontentsize) property and animates view size changes if necessary.
 
 ## Parameters
 

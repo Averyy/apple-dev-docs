@@ -16,7 +16,7 @@ func startSpeaking(_ sender: Any?)
 
 #### Discussion
 
-Speech continues asynchronously until the end of the text or until terminated by invoking the [`stopSpeaking(_:)`](webview-swift.class/stopspeaking(_:).md) method. This method behaves similar to the [`startSpeaking(_:)`](https://developer.apple.com/documentation/AppKit/NSTextView/startSpeaking(_:)) method in [`NSTextView`](https://developer.apple.com/documentation/AppKit/NSTextView).
+Speech continues asynchronously until the end of the text or until terminated by invoking the [`stopSpeaking(_:)`](webview-swift.class/stopspeaking(_:).md) method. This method behaves similar to the [`startSpeaking(_:)`](https://developer.apple.com/documentation/appkit/nstextview/startspeaking(_:)) method in [`NSTextView`](https://developer.apple.com/documentation/appkit/nstextview).
 
 ## Parameters
 

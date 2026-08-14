@@ -7,7 +7,6 @@ A string to represent the type of phone number; for example, “Work”.
 
 **Availability**:
 - iOS 26.0+
-- iPadOS 26.0+
 
 ## Declaration
 

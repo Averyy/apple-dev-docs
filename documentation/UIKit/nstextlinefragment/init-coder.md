@@ -20,7 +20,7 @@ init?(coder aDecoder: NSCoder)
 
 ## Parameters
 
-- `aDecoder`: A decoder that conforms to the [`NSCoder`](https://developer.apple.com/documentation/Foundation/NSCoder) protocol.
+- `aDecoder`: A decoder that conforms to the [`NSCoder`](https://developer.apple.com/documentation/foundation/nscoder) protocol.
 
 ## See Also
 

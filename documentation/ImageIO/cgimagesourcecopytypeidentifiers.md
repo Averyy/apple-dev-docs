@@ -26,7 +26,7 @@ Returns an array of the uniform type identifiers that are supported for image so
 
 #### Discussion
 
-For a list of system-declared and third-party identifiers, see [`Uniform Type Identifiers`](https://developer.apple.com/documentation/UniformTypeIdentifiers).
+For a list of system-declared and third-party identifiers, see [`Uniform Type Identifiers`](https://developer.apple.com/documentation/uniformtypeidentifiers).
 
 ## See Also
 

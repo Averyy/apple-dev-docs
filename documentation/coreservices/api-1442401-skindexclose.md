@@ -16,7 +16,7 @@ func SKIndexClose(_ inIndex: SKIndex!)
 
 #### Discussion
 
-When your application no longer needs an index that it has opened or created, call [`SKIndexClose(_:)`](1442401-skindexclose.md). Calling this function is equivalent to calling [`CFRelease`](https://developer.apple.com/documentation/corefoundation/1521153-cfrelease) on an index.
+When your application no longer needs an index that it has opened or created, call [`SKIndexClose(_:)`](1442401-skindexclose.md). Calling this function is equivalent to calling [`CFRelease`](https://developer.apple.com/documentation/corefoundation/cfrelease) on an index.
 
 Search Kit is thread-safe. You can use separate indexing and searching threads. Your application is responsible for ensuring that no more than one process is open at a time for writing to an index.
 

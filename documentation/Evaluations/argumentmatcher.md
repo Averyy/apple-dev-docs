@@ -82,17 +82,17 @@ let matchers: [ArgumentMatcher] = [
 ## Relationships
 
 ### Conforms To
-- [ConvertibleFromGeneratedContent](../FoundationModels/ConvertibleFromGeneratedContent.md)
-- [ConvertibleToGeneratedContent](../FoundationModels/ConvertibleToGeneratedContent.md)
-- [Copyable](../Swift/Copyable.md)
-- [Decodable](../Swift/Decodable.md)
-- [Encodable](../Swift/Encodable.md)
-- [Escapable](../Swift/Escapable.md)
-- [Generable](../FoundationModels/Generable.md)
-- [InstructionsRepresentable](../FoundationModels/InstructionsRepresentable.md)
-- [PromptRepresentable](../FoundationModels/PromptRepresentable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [ConvertibleFromGeneratedContent](../foundationmodels/convertiblefromgeneratedcontent.md)
+- [ConvertibleToGeneratedContent](../foundationmodels/convertibletogeneratedcontent.md)
+- [Copyable](../swift/copyable.md)
+- [Decodable](../swift/decodable.md)
+- [Encodable](../swift/encodable.md)
+- [Escapable](../swift/escapable.md)
+- [Generable](../foundationmodels/generable.md)
+- [InstructionsRepresentable](../foundationmodels/instructionsrepresentable.md)
+- [PromptRepresentable](../foundationmodels/promptrepresentable.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

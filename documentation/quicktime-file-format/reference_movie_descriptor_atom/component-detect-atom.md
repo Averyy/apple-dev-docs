@@ -7,7 +7,7 @@ A reference movie atom may contain an optional component detect atom.
 
 #### Overview
 
-Multiple component detect atoms can be present. See [`Component detect atom ('rmcd')`](component_detect_atom.md) for more information.
+Multiple component detect atoms can be present. See [`Component detect atom`](component_detect_atom.md) for more information.
 
 ## See Also
 

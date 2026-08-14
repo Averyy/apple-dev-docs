@@ -22,9 +22,9 @@ By default, RealityKit automatically creates light probes to record the lighting
 
 To disable this effect, add this option to the [`renderOptions`](arview/renderoptions-swift.property.md) set.
 
-Alternatively, to use environment lighting but control the probes manually, ensure the render option set doesn’t include this option. Then configure the session for manual environment texturing, using the [`ARWorldTrackingConfiguration.EnvironmentTexturing.manual`](https://developer.apple.com/documentation/ARKit/ARWorldTrackingConfiguration/EnvironmentTexturing-swift.enum/manual) value.
+Alternatively, to use environment lighting but control the probes manually, ensure the render option set doesn’t include this option. Then configure the session for manual environment texturing, using the [`ARWorldTrackingConfiguration.EnvironmentTexturing.manual`](https://developer.apple.com/documentation/arkit/arworldtrackingconfiguration/environmenttexturing-swift.enum/manual) value.
 
-For more information about creating and placing probes manually, see [`Adding realistic reflections to an AR experience`](https://developer.apple.com/documentation/ARKit/adding-realistic-reflections-to-an-ar-experience).
+For more information about creating and placing probes manually, see [`Adding realistic reflections to an AR experience`](https://developer.apple.com/documentation/arkit/adding-realistic-reflections-to-an-ar-experience).
 
 ## See Also
 

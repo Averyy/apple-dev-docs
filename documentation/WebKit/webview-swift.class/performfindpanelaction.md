@@ -16,7 +16,7 @@ func performFindPanelAction(_ sender: Any?)
 
 #### Discussion
 
-This method behaves similar to the [`performFindPanelAction(_:)`](https://developer.apple.com/documentation/AppKit/NSTextView/performFindPanelAction(_:)) method in [`NSTextView`](https://developer.apple.com/documentation/AppKit/NSTextView).
+This method behaves similar to the [`performFindPanelAction(_:)`](https://developer.apple.com/documentation/appkit/nstextview/performfindpanelaction(_:)) method in [`NSTextView`](https://developer.apple.com/documentation/appkit/nstextview).
 
 ## Parameters
 

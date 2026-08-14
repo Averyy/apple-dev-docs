@@ -8,9 +8,9 @@ Manage text storage and perform custom layout of text-based content in your app�
 
 TextKit is a powerful and versatile text layout and rendering engine available in UIKit and AppKit. It provides several classes to control the layout of text, including [`NSTextLayoutManager`](nstextlayoutmanager.md), [`NSTextContentStorage`](nstextcontentstorage.md), [`NSTextViewportLayoutController`](nstextviewportlayoutcontroller.md), and [`NSTextContainer`](nstextcontainer.md).
 
-In UIKit, you can use [`UITextView`](uitextview.md), which packages TextKit capabilities to provide a convenient text rendering and editing experience. [`UITextView`](uitextview.md) uses [`NSTextContentStorage`](nstextcontentstorage.md) as the text backing store manager. [`NSTextContentStorage`](nstextcontentstorage.md) uses an instance of [`NSTextStorage`](nstextstorage.md) as the backing store, which is a subclass of [`NSMutableAttributedString`](https://developer.apple.com/documentation/Foundation/NSMutableAttributedString). For an example, see [`Enriching your text in text views`](enriching-your-text-in-text-views.md).
+In UIKit, you can use [`UITextView`](uitextview.md), which packages TextKit capabilities to provide a convenient text rendering and editing experience. [`UITextView`](uitextview.md) uses [`NSTextContentStorage`](nstextcontentstorage.md) as the text backing store manager. [`NSTextContentStorage`](nstextcontentstorage.md) uses an instance of [`NSTextStorage`](nstextstorage.md) as the backing store, which is a subclass of [`NSMutableAttributedString`](https://developer.apple.com/documentation/foundation/nsmutableattributedstring). For an example, see [`Enriching your text in text views`](enriching-your-text-in-text-views.md).
 
-Alternatively, you can build custom text views using your own `UIView` or `CALayer` by rendering text provided by the TextKit text engine. Use [`NSTextContentStorage`](nstextcontentstorage.md) if you want an [`NSAttributedString`](https://developer.apple.com/documentation/Foundation/NSAttributedString)-related storage type, or subclass [`NSTextContentManager`](nstextcontentmanager.md) to use your own. For an example, see [`Using TextKit 2 to interact with text`](using-textkit-2-to-interact-with-text.md).
+Alternatively, you can build custom text views using your own `UIView` or `CALayer` by rendering text provided by the TextKit text engine. Use [`NSTextContentStorage`](nstextcontentstorage.md) if you want an [`NSAttributedString`](https://developer.apple.com/documentation/foundation/nsattributedstring)-related storage type, or subclass [`NSTextContentManager`](nstextcontentmanager.md) to use your own. For an example, see [`Using TextKit 2 to interact with text`](using-textkit-2-to-interact-with-text.md).
 
 When using [`UITextView`](uitextview.md), access the TextKit engine through the view’s [`textLayoutManager`](uitextview/textlayoutmanager.md), [`textContainer`](uitextview/textcontainer.md), and [`textStorage`](uitextview/textstorage.md) properties. [`UITextView`](uitextview.md) provides access to two layout engines: the modern [`textLayoutManager`](uitextview/textlayoutmanager.md), which uses [`NSTextLayoutManager`](nstextlayoutmanager.md), and the legacy [`layoutManager`](uitextview/layoutmanager.md), which uses [`NSLayoutManager`](nslayoutmanager.md). Use [`textLayoutManager`](uitextview/textlayoutmanager.md) for better performance, and support for international languages. Because TextKit classes are available in both UIKit and AppKit, the same techniques apply across iOS, iPadOS, macOS, tvOS, and visionOS.
 
@@ -21,9 +21,9 @@ When using [`UITextView`](uitextview.md), access the TextKit engine through the 
   A concrete object for managing your view’s text content and generating the text elements necessary for layout.
 - [class NSTextContentManager](nstextcontentmanager.md)
   An abstract class that defines the interface and a default implementation for managing the text document contents.
-- [class NSAttributedString](../Foundation/NSAttributedString.md)
+- [class NSAttributedString](../foundation/nsattributedstring.md)
   A string of text that manages data, layout, and stylistic information for ranges of characters to support rendering.
-- [class NSMutableAttributedString](../Foundation/NSMutableAttributedString.md)
+- [class NSMutableAttributedString](../foundation/nsmutableattributedstring.md)
   A mutable string with associated attributes (such as visual style, hyperlinks, or accessibility data) for portions of its text.
 ### Formatting and attributes
 - [class NSParagraphStyle](nsparagraphstyle.md)

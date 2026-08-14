@@ -21,7 +21,7 @@ var kAudioFilePropertyInfoDictionary: AudioFilePropertyID { get }
 
 #### Discussion
 
-If you access this property, your app is responsible for releasing the [`CFDictionary`](https://developer.apple.com/documentation/CoreFoundation/CFDictionary) object.
+If you access this property, your app is responsible for releasing the [`CFDictionary`](https://developer.apple.com/documentation/corefoundation/cfdictionary) object.
 
 In macOS, an audio file component (of type `AudioFileComponent` is free to add keys to the dictionaries they return for this property.
 

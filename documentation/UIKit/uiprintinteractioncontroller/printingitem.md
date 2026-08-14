@@ -19,11 +19,11 @@ var printingItem: Any? { get set }
 
 #### Discussion
 
-The object must be an instance of the [`NSURL`](https://developer.apple.com/documentation/Foundation/NSURL), [`NSData`](https://developer.apple.com/documentation/Foundation/NSData), or [`UIImage`](uiimage.md) class. An object of the first two types must reference or contain image data or PDF data. `NSURL` objects must use the `file:` or any scheme that can return an [`NSData`](https://developer.apple.com/documentation/Foundation/NSData) object with a registered protocol. Image data (including that encapsulated by [`UIImage`](uiimage.md)) must be in a format supported by the Image I/O framework; see [`UIImage`](uiimage.md) for more information. The object is released at the end of the print job. The default value is `nil`.
+The object must be an instance of the [`NSURL`](https://developer.apple.com/documentation/foundation/nsurl), [`NSData`](https://developer.apple.com/documentation/foundation/nsdata), or [`UIImage`](uiimage.md) class. An object of the first two types must reference or contain image data or PDF data. `NSURL` objects must use the `file:` or any scheme that can return an [`NSData`](https://developer.apple.com/documentation/foundation/nsdata) object with a registered protocol. Image data (including that encapsulated by [`UIImage`](uiimage.md)) must be in a format supported by the Image I/O framework; see [`UIImage`](uiimage.md) for more information. The object is released at the end of the print job. The default value is `nil`.
 
 If you set this property, `UIPrintInteractionController` sets the [`printingItems`](uiprintinteractioncontroller/printingitems.md), [`printPageRenderer`](uiprintinteractioncontroller/printpagerenderer.md), and [`printFormatter`](uiprintinteractioncontroller/printformatter.md) properties to `nil`. (You can only set one of these properties for a print job).
 
-If this property is set and the [`showsPageRange`](uiprintinteractioncontroller/showspagerange.md) property is set to [`true`](https://developer.apple.com/documentation/Swift/true)—and the printing item is a PDF document of more than one page—the printing options include the control for selecting a page range.
+If this property is set and the [`showsPageRange`](uiprintinteractioncontroller/showspagerange.md) property is set to [`true`](https://developer.apple.com/documentation/swift/true)—and the printing item is a PDF document of more than one page—the printing options include the control for selecting a page range.
 
 ## See Also
 

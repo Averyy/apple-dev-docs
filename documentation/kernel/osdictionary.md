@@ -22,11 +22,13 @@ You must generally cast retrieved objects from [`OSObject`](osobject.md) to the 
 
 When iterating an OSDictionary using OSCollectionIterator, the objects returned from getNextObject are dictionary keys (not the object values for those keys). You can use the keys to retrieve their associated object values.
 
-As with all Libkern collection classes, OSDictionary retains keys and objects added to it, and releases keys and objects removed from it (or replaced). An OSDictionary also grows as necessary to accommodate new key/value pairs,  Core Foundation collections (it does not, however, shrink).
+As with all Libkern collection classes, OSDictionary retains keys and objects added to it, and releases keys and objects removed from it (or replaced). An OSDictionary also grows as necessary to accommodate new key/value pairs, *unlike* Core Foundation collections (it does not, however, shrink).
 
- OSDictionary currently uses a linear search algorithm, and is not designed for high-performance access of many values. It is intended as a simple associative-storage mechanism only.
+**Note:** OSDictionary currently uses a linear search algorithm, and is not designed for high-performance access of many values. It is intended as a simple associative-storage mechanism only.
 
-With very few exceptions in the I/O Kit, all Libkern-based C++ classes, functions, and macros are  to use in a primary interrupt context. Consult the I/O Kit documentation related to primary interrupts for more information.
+**Use Restrictions**
+
+With very few exceptions in the I/O Kit, all Libkern-based C++ classes, functions, and macros are **unsafe** to use in a primary interrupt context. Consult the I/O Kit documentation related to primary interrupts for more information.
 
 OSDictionary provides no concurrency protection; it's up to the usage context to provide any protection necessary. Some portions of the I/O Kit, such as IORegistryEntry, handle synchronization via defined member functions for setting properties.
 
@@ -95,50 +97,50 @@ OSDictionary provides no concurrency protection; it's up to the usage context to
   Creates and initializes an OSDictionary populated with keys and objects provided.
 ### Instance Methods
 - [- copyCollection](osdictionary/1412868-copycollection.md)
-- [- ensureCapacity](../driverkit/osdictionary/ensurecapacity.md)
+- [- ensureCapacity](osdictionary/3180896-ensurecapacity.md)
   Allocates capacity for members in dictionary.
-- [- flushCollection](../driverkit/osdictionary/flushcollection.md)
+- [- flushCollection](osdictionary/3180897-flushcollection.md)
   Removes and drops references to all members of dictionary.
-- [- free](../driverkit/osdictionary/free.md)
-- [- getCapacity](../driverkit/osdictionary/getcapacity.md)
+- [- free](osdictionary/3180898-free.md)
+- [- getCapacity](osdictionary/3180899-getcapacity.md)
   Returns count of currently allocated capacity for members in dictionary.
 - [- getCapacityIncrement](osdictionary/1412877-getcapacityincrement.md)
-- [- getCount](../driverkit/osdictionary/getcount.md)
+- [- getCount](osdictionary/3180900-getcount.md)
   Returns count of members in dictionary.
 - [- getMetaClass](osdictionary/1412876-getmetaclass.md)
 - [- getNextObjectForIterator](osdictionary/1412886-getnextobjectforiterator.md)
 - [- getObject](osdictionary/1412897-getobject.md)
-- [- getObject](../driverkit/osdictionary/getobject-9ikoz.md)
+- [- getObject](osdictionary/3180901-getobject.md)
   Returns a member of the dictionary.
-- [- getObject](../driverkit/osdictionary/getobject-8k3ie.md)
+- [- getObject](osdictionary/3433846-getobject.md)
   Returns a member of the dictionary.
 - [- initIterator](osdictionary/1412888-inititerator.md)
 - [- initWithCapacity](osdictionary/1412883-initwithcapacity.md)
 - [- initWithDictionary](osdictionary/1412866-initwithdictionary.md)
 - [- initWithObjects](osdictionary/1412860-initwithobjects.md)
 - [- initWithObjects](osdictionary/3516835-initwithobjects.md)
-- [- isEqualTo](../driverkit/osdictionary/isequalto-2p9or.md)
+- [- isEqualTo](osdictionary/3180902-isequalto.md)
   Compares certain members of two dictionaries with isEqualTo().
-- [- isEqualTo](../driverkit/osdictionary/isequalto-3c1k0.md)
+- [- isEqualTo](osdictionary/3433847-isequalto.md)
   Compares all members of two dictionaries with isEqualTo().
-- [- isEqualTo](../driverkit/osdictionary/isequalto-3kuk7.md)
+- [- isEqualTo](osdictionary/3433848-isequalto.md)
   Compares the dictionary with an OSObject
 - [- iterateObjects](osdictionary/2967352-iterateobjects.md)
 - [- iterateObjects](osdictionary/3516836-iterateobjects.md)
 - [- iteratorSize](osdictionary/1412862-iteratorsize.md)
-- [- merge](../driverkit/osdictionary/merge.md)
+- [- merge](osdictionary/3180904-merge.md)
   Adds all members of a dictionary to this dictionary.
 - [- removeObject](osdictionary/1412855-removeobject.md)
-- [- removeObject](../driverkit/osdictionary/removeobject-25qm5.md)
+- [- removeObject](osdictionary/3180905-removeobject.md)
   Remove an object by key from the dictionary.
-- [- removeObject](../driverkit/osdictionary/removeobject-156jh.md)
+- [- removeObject](osdictionary/3433849-removeobject.md)
   Remove an object by key from the dictionary.
 - [- serialize](osdictionary/1412870-serialize.md)
 - [- setCapacityIncrement](osdictionary/1412885-setcapacityincrement.md)
 - [- setObject](osdictionary/1412895-setobject.md)
-- [- setObject](../driverkit/osdictionary/setobject-9b4z0.md)
+- [- setObject](osdictionary/3180906-setobject.md)
   Add or replace an object in the dictionary.
-- [- setObject](../driverkit/osdictionary/setobject-7q0u2.md)
+- [- setObject](osdictionary/3433850-setobject.md)
   Add or replace an object in the dictionary.
 - [- setObject](osdictionary/3567168-setobject.md)
 - [- setObject](osdictionary/3567169-setobject.md)
@@ -146,12 +148,12 @@ OSDictionary provides no concurrency protection; it's up to the usage context to
 - [- setOptions](osdictionary/1412891-setoptions.md)
   Recursively sets option bits in the dictionary and all child collections.
 ### Type Methods
-- [+ withCapacity](../driverkit/osdictionary/withcapacity.md)
+- [+ withCapacity](osdictionary/3180907-withcapacity.md)
   Allocates an OSDictionary object with preallocated capacity.
-- [+ withDictionary](../driverkit/osdictionary/withdictionary.md)
+- [+ withDictionary](osdictionary/3180908-withdictionary.md)
   Allocates an OSDictionary object with given members and preallocated capacity.
 - [+ withObjects](osdictionary/1412890-withobjects.md)
-- [+ withObjects](../driverkit/osdictionary/withobjects.md)
+- [+ withObjects](osdictionary/3180909-withobjects.md)
   Allocates an OSDictionary object with given members and preallocated capacity.
 
 ## Relationships

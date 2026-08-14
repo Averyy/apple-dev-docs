@@ -5,7 +5,6 @@
 
 **Availability**:
 - iOS 27.0+ (Beta)
-- iPadOS 27.0+ (Beta)
 
 ## Declaration
 
@@ -25,11 +24,11 @@ final class AudioAccessoryHeadTracking
 ## Relationships
 
 ### Conforms To
-- [AccessoryFeature](../AccessoryTransportExtension/AccessoryFeature.md)
-- [AppExtensionPoint.Capability](../ExtensionFoundation/AppExtensionPoint/Capability.md)
-- [Identifiable](../Swift/Identifiable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [AccessoryFeature](../accessorytransportextension/accessoryfeature.md)
+- [AppExtensionPoint.Capability](../extensionfoundation/appextensionpoint/capability.md)
+- [Identifiable](../swift/identifiable.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 
 ---

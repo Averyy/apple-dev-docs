@@ -18,7 +18,7 @@ var detailSummary: String? { get set }
 
 #### Discussion
 
-The template only displays a detail card when the user selects a point of interest. If this property is [`nil`](https://developer.apple.com/documentation/ObjectiveC/nil-227m0), the card displays the point of interest’s [`summary`](cppointofinterest/summary.md) instead.
+The template only displays a detail card when the user selects a point of interest. If this property is [`nil`](https://developer.apple.com/documentation/objectivec/nil-227m0), the card displays the point of interest’s [`summary`](cppointofinterest/summary.md) instead.
 
 ## See Also
 

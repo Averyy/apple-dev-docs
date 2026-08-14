@@ -18,7 +18,7 @@ struct RunSystemShortcutIntent
 
 #### Overview
 
-Only use `RunSystemShortcutIntent` to initialize a [`Button`](https://developer.apple.com/documentation/SwiftUI/Button) with the [`init(_:intent:)`](https://developer.apple.com/documentation/SwiftUI/Button/init(_:intent:)) initializer and place the button in a widget. The run system shortcut intent doesn’t provide functionality in other contexts.
+Only use `RunSystemShortcutIntent` to initialize a [`Button`](https://developer.apple.com/documentation/swiftui/button) with the [`init(_:intent:)`](https://developer.apple.com/documentation/swiftui/button/init(_:intent:)) initializer and place the button in a widget. The run system shortcut intent doesn’t provide functionality in other contexts.
 
 When a person configures the widget, they choose the button’s action. It can:
 
@@ -92,8 +92,8 @@ The `RunSystemShortcutIntent` represents a person’s chosen action when they co
 ### Conforms To
 - [AppIntent](appintent.md)
 - [PersistentlyIdentifiable](persistentlyidentifiable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 - [SystemIntent](systemintent.md)
 
 ## See Also

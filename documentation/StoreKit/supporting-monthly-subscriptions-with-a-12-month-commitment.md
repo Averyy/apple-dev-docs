@@ -20,7 +20,7 @@ Supporting a monthly subscription with a 12-month commitment involves the follow
 
 This feature requires using Xcode 26.5 SDK or later. You can deploy monthly subscriptions with 12-month commitments worldwide (except the United States and Singapore) to customers with devices running iOS 26.4, iPadOS 26.4, macOS 26.4, tvOS 26.4, and visionOS 26.4 or later.
 
-Use  [`App Store Server Notifications V2`](https://developer.apple.com/documentation/AppStoreServerNotifications/App-Store-Server-Notifications-V2) to manage the subscription life cycle on your server. Transactions are available in your app through StoreKit, and on the server through the [`App Store Server API`](https://developer.apple.com/documentation/AppStoreServerAPI) and App Store Server Notifications APIs.
+Use  [`App Store Server Notifications V2`](https://developer.apple.com/documentation/appstoreservernotifications/app-store-server-notifications-v2) to manage the subscription life cycle on your server. Transactions are available in your app through StoreKit, and on the server through the [`App Store Server API`](https://developer.apple.com/documentation/appstoreserverapi) and App Store Server Notifications APIs.
 
 This article uses the term *commitment plan* to refer to a monthly subscription with a 12-month commitment.
 

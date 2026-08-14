@@ -13,7 +13,7 @@ framework: HIG
 
 When you use Mac Catalyst to create a Mac version of your iPad app, you give people the opportunity to enjoy the experience in a new environment.
 
-![A sketch of an iPad overlapping a Mac, suggesting an iPad app running on Mac. The image is overlaid with rectangular and circular grid lines and is tinted blue to subtly reflect the blue in the original six-color Apple logo.](https://docs-assets.developer.apple.com/published/6723d78214d515778c09dfeb3f103be8/technologies-Mac-Catalyst-intro~dark%402x.png)
+![A sketch of an iPad overlapping a Mac, suggesting an iPad app running on Mac. The image is overlaid with rectangular and circular grid lines and is tinted blue to subtly reflect the blue in the original six-color Apple logo.](/images/com.apple.HIG/technologies-Mac-Catalyst-intro~dark@2x.png)
 
 ## Before you start
 Many iPad apps are great candidates for creating a Mac app built with Mac Catalyst. This is especially true for apps that already work well on iPad and support key iPad features, such as:
@@ -37,9 +37,9 @@ System-provided UI elements take on a more Mac-like appearance, too; for example
 - Form sheet
 - Contextual actions
 - Color picker
-To learn more about the characteristics that distinguish the Mac experience, see [Designing for macOS](designing-for-macos.md). For developer guidance, see [Mac Catalyst](../UIKit/mac-catalyst.md).
+To learn more about the characteristics that distinguish the Mac experience, see [Designing for macOS](designing-for-macos.md). For developer guidance, see [Mac Catalyst](../uikit/mac-catalyst.md).
 
-> **Note:** To discover how views and controls can change when you create a Mac app using Mac Catalyst, download [UIKit Catalog: Creating and customizing views and controls](../UIKit/uikit-catalog-creating-and-customizing-views-and-controls.md) and build the macOS target.
+> **Note:** To discover how views and controls can change when you create a Mac app using Mac Catalyst, download [UIKit Catalog: Creating and customizing views and controls](../uikit/uikit-catalog-creating-and-customizing-views-and-controls.md) and build the macOS target.
 
 ## Choose an idiom
 When you first create your Mac app using Mac Catalyst, Xcode defaults to the “Scale Interface to Match iPad” setting, or *iPad idiom*. With this setting, the system ensures that your Mac app appears consistent with the macOS display environment without requiring significant changes to the app’s layout. However, text and graphics may appear slightly less detailed because iPadOS views and text scale down to 77% in macOS when you use the iPad idiom. For example, the system scales text that uses the iPadOS baseline font size of 17pt down to 13pt in macOS.
@@ -49,7 +49,7 @@ You’re most likely to benefit from the Mac idiom if your app displays a lot of
 **Adjust font sizes as needed.** With the Mac idiom, text renders at 100% of its configured size, which can appear too large without adjustment. When possible, use text styles and avoid fixed font sizes.
 **Make sure views and images look good in the Mac version of your app.** With the Mac idiom, iPadOS views render at 100% of their size, making them appear more detailed. To help you visualize the difference, consider the two depictions of an image asset shown below. One version illustrates how the asset appears when you use the iPad idiom, and the other version shows how the asset appears when you adopt the Mac idiom. Both depictions are zoomed in to show how the image renders with more details when you use the Mac idiom.
 
-> **Note:** When you adopt the Mac idiom, the unscaled views and interface elements report different metrics, often resulting in a significant amount of additional work. To reduce the amount of work, avoid using fixed font, view, or layout sizes. For developer guidance, see [Choosing a user interface idiom for your Mac app](../UIKit/choosing-a-user-interface-idiom-for-your-mac-app.md).
+> **Note:** When you adopt the Mac idiom, the unscaled views and interface elements report different metrics, often resulting in a significant amount of additional work. To reduce the amount of work, avoid using fixed font, view, or layout sizes. For developer guidance, see [Choosing a user interface idiom for your Mac app](../uikit/choosing-a-user-interface-idiom-for-your-mac-app.md).
 **Limit your appearance customizations to standard macOS appearance customizations that are the same or similar to those available in iPadOS.** Not all appearance customizations available to iPadOS controls are available to macOS controls.
 
 ## Integrate the Mac experience
@@ -103,10 +103,10 @@ To take advantage of the wider Mac screen in ways that give Mac users a great ex
 ### Menus
 Mac users are familiar with the persistent menu bar and expect to find all of an app’s commands in it. In contrast, iPadOS doesn’t have a persistent menu bar, and iPad users expect to find app commands within the app’s UI or in the shortcut interface that displays when they hold the Command key on a connected keyboard.
 
-> **Note:** To support keyboard shortcuts for menu commands, use [UIKeyCommand](../UIKit/UIKeyCommand.md). For developer guidance, see [Adding menus and shortcuts to the menu bar and user interface](../UIKit/adding-menus-and-shortcuts-to-the-menu-bar-and-user-interface.md).
+> **Note:** To support keyboard shortcuts for menu commands, use [UIKeyCommand](../uikit/uikeycommand.md). For developer guidance, see [Adding menus and shortcuts to the menu bar and user interface](../uikit/adding-menus-and-shortcuts-to-the-menu-bar-and-user-interface.md).
 If you provide [pop-up buttons](https://developer.apple.com/design/human-interface-guidelines/pop-up-buttons) or [pull-down buttons](https://developer.apple.com/design/human-interface-guidelines/pull-down-buttons) that reveal a menu in your iPad app, the menu automatically takes on a macOS appearance in the Mac app you create with Mac Catalyst.
 
-> **Note:** To add and remove custom app menus, use [UIMenuBuilder](../UIKit/UIMenuBuilder.md) and add menu items that represent your iPad app’s commands as menu items with [UICommand](../UIKit/UICommand.md).
+> **Note:** To add and remove custom app menus, use [UIMenuBuilder](../uikit/uimenubuilder.md) and add menu items that represent your iPad app’s commands as menu items with [UICommand](../uikit/uicommand.md).
 The system automatically converts the context menus in your iPad app to context menus in the macOS version of your app. As you create the Mac version of your app, consider looking for additional places to support context menus. Mac users tend to expect every object in your app to offer a context menu of relevant actions. Note that on a Mac, a context menu is sometimes called a *contextual* menu.
 
 ## Platform considerations
@@ -118,7 +118,7 @@ The system automatically converts the context menus in your iPad app to context 
 [Designing for macOS](designing-for-macos.md)
 
 #### Developer documentation
-[Mac Catalyst](../UIKit/mac-catalyst.md) — UIKit
+[Mac Catalyst](../uikit/mac-catalyst.md) — UIKit
 
 #### Videos
 - [Designing iPad Apps for Mac](https://developer.apple.com/videos/play/wwdc2019/809) - Discover how you can create a great Mac experience with your iPad app. Learn about essential techniques for adapting your iPad app's layout and architecture for Mac, considerations for type and color, and how you can take advantage of macOS interfaces such as the menu bar, sidebar and window toolbar.

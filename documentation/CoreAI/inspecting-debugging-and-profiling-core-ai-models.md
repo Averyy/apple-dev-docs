@@ -14,7 +14,7 @@ Core AI provides three tools to help you investigate model behavior, monitor act
 
 The Core AI debug gauge and Core AI instrument focus on a model that’s already running inside your app. Core AI Debugger works directly with the `.aimodel` file and gives you a closer look when something the gauge or instrument flags needs deeper inspection. The tools share data, so a finding in one often leads to a closer look in another.
 
-![A two-phase workflow diagram. In the Development phase, authoring and optimization sends reference data to Core AI Debugger and saves an .aimodel file. The .aimodel file provides numeric debug data to Core AI Debugger and integrates into an app in the Runtime phase. The app runs into the Core AI debug gauge, which captures data back to Core AI Debugger and captures a trace into the Core AI instrument. The app also profiles directly into the Core AI instrument.](https://docs-assets.developer.apple.com/published/dc31861e2e125ae16c5012eca31fc37e/core-ai-framework-overview-flow%402x.png)
+![A two-phase workflow diagram. In the Development phase, authoring and optimization sends reference data to Core AI Debugger and saves an .aimodel file. The .aimodel file provides numeric debug data to Core AI Debugger and integrates into an app in the Runtime phase. The app runs into the Core AI debug gauge, which captures data back to Core AI Debugger and captures a trace into the Core AI instrument. The app also profiles directly into the Core AI instrument.](/images/com.apple.coreai/core-ai-framework-overview-flow@2x.png)
 
 For project setup, the Xcode model viewer, and how to load a model in your app, see [`Integrating on-device AI models in your app with Core AI`](integrating-on-device-ai-models-in-your-app-with-core-ai.md).
 

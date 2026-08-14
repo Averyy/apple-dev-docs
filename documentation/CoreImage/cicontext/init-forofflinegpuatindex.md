@@ -22,7 +22,7 @@ A Core Image context.
 
 GPU devices that are not currently being used to drive a display can be used for Core Image rendering. Use the [`offlineGPUCount()`](cicontext/offlinegpucount().md) method to determine whether any such GPUs are available.
 
-To create a Metal-based Core Image context using an offline GPU, use the [`MTLCopyAllDevices()`](https://developer.apple.com/documentation/Metal/MTLCopyAllDevices()) function to list Metal devices, then choose a device without a display to pass to the [`init(mtlDevice:)`](cicontext/init(mtldevice:)-swey.md) method.
+To create a Metal-based Core Image context using an offline GPU, use the [`MTLCopyAllDevices()`](https://developer.apple.com/documentation/metal/mtlcopyalldevices()) function to list Metal devices, then choose a device without a display to pass to the [`init(mtlDevice:)`](cicontext/init(mtldevice:)-swey.md) method.
 
 ## Parameters
 

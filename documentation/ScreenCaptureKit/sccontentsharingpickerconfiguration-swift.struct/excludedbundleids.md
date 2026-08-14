@@ -17,7 +17,7 @@ var excludedBundleIDs: Array<String>
 
 ## See Also
 
-- [Bundle IDs](../AppStoreConnectAPI/bundle-ids.md)
+- [Bundle IDs](../appstoreconnectapi/bundle-ids.md)
   Manage the bundle IDs that uniquely identify your apps.
 - [var allowedPickerModes: SCContentSharingPickerMode](sccontentsharingpickerconfiguration-swift.struct/allowedpickermodes.md)
   The content-selection modes supported by the picker.

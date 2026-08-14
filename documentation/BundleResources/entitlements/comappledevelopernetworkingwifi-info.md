@@ -16,7 +16,7 @@ A Boolean value indicating whether your app can access information about the con
 
 #### Discussion
 
-This key indicates whether your app may use the [`CNCopyCurrentNetworkInfo`](https://developer.apple.com/documentation/SystemConfiguration/CNCopyCurrentNetworkInfo) function to obtain information about the current Wi-Fi network.
+This key indicates whether your app may use the [`CNCopyCurrentNetworkInfo`](https://developer.apple.com/documentation/systemconfiguration/cncopycurrentnetworkinfo) function to obtain information about the current Wi-Fi network.
 
 To add this entitlement to your app, enable the Access WiFi Information capability in Xcode.
 

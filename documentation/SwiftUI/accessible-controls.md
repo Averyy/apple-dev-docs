@@ -8,9 +8,9 @@ Improve access to actions that your app can undertake.
 
 Help people using assistive technologies to gain access to controls in your app.
 
-![None](https://docs-assets.developer.apple.com/published/206dea16b7574c6f5be707477407cfd3/accessible-controls-hero%402x.png)
+![None](/images/com.apple.SwiftUI/accessible-controls-hero@2x.png)
 
-For design guidance, see [`Accessibility`](https://developer.apple.com/design/Human-Interface-Guidelines/accessibility#Buttons-and-controls) in the Accessibility section of the Human Interface Guidelines.
+For design guidance, see [`Accessibility`](https://developer.apple.com/design/human-interface-guidelines/accessibility) in the Accessibility section of the Human Interface Guidelines.
 
 ## Topics
 

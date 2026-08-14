@@ -27,7 +27,7 @@ Use this property to ensure:
 
 The reserved layout size only affects the amount of space for the image, and its positioning within that space. It doesn’t affect the size of the image.
 
-The default value is [`CGSizeZero`](https://developer.apple.com/documentation/CoreGraphics/CGSizeZero). A width or height of zero means that the system uses the default behavior for that dimension:
+The default value is [`CGSizeZero`](https://developer.apple.com/documentation/coregraphics/cgsizezero). A width or height of zero means that the system uses the default behavior for that dimension:
 
 - The system centers symbol images inside a predefined reserved layout size that scales with the content size category.
 - Nonsymbol images use a reserved layout size equal to the actual size of the displayed image.

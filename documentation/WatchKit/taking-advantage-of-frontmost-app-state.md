@@ -23,7 +23,7 @@ When a person raises their wrist, the system automatically activates and display
 
 ##### Respond to a Notification
 
-For example, when the frontmost app receives a notification, the system calls your notification delegate’s [`userNotificationCenter(_:willPresent:withCompletionHandler:)`](https://developer.apple.com/documentation/UserNotifications/UNUserNotificationCenterDelegate/userNotificationCenter(_:willPresent:withCompletionHandler:)) method, rather than displaying the notification alert. Your app can then respond by playing a haptic feedback or custom sound, and updating the user interface.
+For example, when the frontmost app receives a notification, the system calls your notification delegate’s [`userNotificationCenter(_:willPresent:withCompletionHandler:)`](https://developer.apple.com/documentation/usernotifications/unusernotificationcenterdelegate/usernotificationcenter(_:willpresent:withcompletionhandler:)) method, rather than displaying the notification alert. Your app can then respond by playing a haptic feedback or custom sound, and updating the user interface.
 
 > **Note**:  If a person explicitly closes the app by pressing the digital crown or covering the screen, the app doesn’t become the frontmost app and doesn’t remain in the inactive state, but transitions quickly to the background instead.
 
@@ -33,15 +33,15 @@ By default, the frontmost app remains in the foreground for two minutes before t
 
 People can configure how long apps remain as the frontmost app using Settings > General > Wake Screen. The Return to Clock setting sets the default duration for all apps.
 
-![A screenshot of the settings that determine how long a watchOS app is allowed to remain the frontmost app.](https://docs-assets.developer.apple.com/published/8b115a024eafb02968695fbebb32649e/media-3732051%402x.png)
+![A screenshot of the settings that determine how long a watchOS app is allowed to remain the frontmost app.](/images/com.apple.watchkit/media-3732051@2x.png)
 
 People can also set a custom duration for a specific app by scrolling down to the list of apps and selecting the app to customize.
 
-![A screenshot of the settings that customize the amount of time the Now Playing app is allowed to remain the frontmost app.](https://docs-assets.developer.apple.com/published/47cb5ca2e9a09898fed9416aa14e27f7/media-3732047%402x.png)
+![A screenshot of the settings that customize the amount of time the Now Playing app is allowed to remain the frontmost app.](/images/com.apple.watchkit/media-3732047@2x.png)
 
-> **Note**:  In watchOS 6 and earlier, apps could request additional frontmost app time by setting the extension’s [`isFrontmostTimeoutExtended`](wkextension/isfrontmosttimeoutextended.md) property to [`true`](https://developer.apple.com/documentation/Swift/true); however, starting with watchOS 7, the user controls the duration of an app’s frontmost state.
+> **Note**:  In watchOS 6 and earlier, apps could request additional frontmost app time by setting the extension’s [`isFrontmostTimeoutExtended`](wkextension/isfrontmosttimeoutextended.md) property to [`true`](https://developer.apple.com/documentation/swift/true); however, starting with watchOS 7, the user controls the duration of an app’s frontmost state.
 
-Workout, location, background audio, and audio-recording apps appear to behave similarly to the frontmost app. However, these apps continue to run in the background throughout the entire workout, location, or audio session. If the person navigates to the watch face during a session, the system displays a glyph at the top of the watch face. If the person taps the glyph, the associated app resumes running in the foreground. For more information, see [`HKWorkoutSession`](https://developer.apple.com/documentation/HealthKit/HKWorkoutSession).
+Workout, location, background audio, and audio-recording apps appear to behave similarly to the frontmost app. However, these apps continue to run in the background throughout the entire workout, location, or audio session. If the person navigates to the watch face during a session, the system displays a glyph at the top of the watch face. If the person taps the glyph, the associated app resumes running in the foreground. For more information, see [`HKWorkoutSession`](https://developer.apple.com/documentation/healthkit/hkworkoutsession).
 
 ## See Also
 

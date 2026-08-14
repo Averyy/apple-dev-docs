@@ -26,9 +26,9 @@ The type [`Date.FormatStyle.Symbol.DayPeriod`](date/formatstyle/symbol/dayperiod
 
 | Factory variable | Description |
 | --- | --- |
-| [`conversational(_:)`](date/formatstyle/symbol/dayperiod/conversational(_:).md) | Conversational abbreviated period. For example, `at night`, `nachm.`, `iltap`. ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) Conversational narrow period. For example, `at night`, `nachmittags`, `iltapäivällä`. ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) Conversational wide period. For example, `at night`, `nachm.`, `ip.` |
-| [`standard(_:)`](date/formatstyle/symbol/dayperiod/standard(_:).md) | Abbreviated period. For example, `am`. ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) Narrow period. For example, `a`. ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) Wide period. For example, `am`. |
-| [`with12s(_:)`](date/formatstyle/symbol/dayperiod/with12s(_:).md) | Abbreviated period including designations for noon and midnight. For example, `mid.` ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) Narrow period including designations for noon and midnight. For example, `md`. ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) Wide period including designations for noon and midnight. For example, `midnight`. |
+| [`conversational(_:)`](date/formatstyle/symbol/dayperiod/conversational(_:).md) | Conversational abbreviated period. For example, `at night`, `nachm.`, `iltap`. ![None](/images/com.apple.foundation/spacer.png) Conversational narrow period. For example, `at night`, `nachmittags`, `iltapäivällä`. ![None](/images/com.apple.foundation/spacer.png) Conversational wide period. For example, `at night`, `nachm.`, `ip.` |
+| [`standard(_:)`](date/formatstyle/symbol/dayperiod/standard(_:).md) | Abbreviated period. For example, `am`. ![None](/images/com.apple.foundation/spacer.png) Narrow period. For example, `a`. ![None](/images/com.apple.foundation/spacer.png) Wide period. For example, `am`. |
+| [`with12s(_:)`](date/formatstyle/symbol/dayperiod/with12s(_:).md) | Abbreviated period including designations for noon and midnight. For example, `mid.` ![None](/images/com.apple.foundation/spacer.png) Narrow period including designations for noon and midnight. For example, `md`. ![None](/images/com.apple.foundation/spacer.png) Wide period including designations for noon and midnight. For example, `midnight`. |
 
 The day period format style may be uppercase or lowercase depending on the locale and other options.
 
@@ -56,10 +56,10 @@ For more information about formatting dates, see the [`Date.FormatStyle`](date/f
 ## Relationships
 
 ### Conforms To
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

@@ -13,7 +13,7 @@ Develop system extensions that enhance user security.
 
 Endpoint Security is a C API for monitoring system events for potentially malicious activity. You can write your client in any language that supports native calls. Your client registers with Endpoint Security to authorize pending events, or receive notifications of events that already occurred. These events include process executions, mounting file systems, forking processes, and raising signals.
 
-Develop your system extension with Endpoint Security and package it in an app that uses the [`System Extensions`](https://developer.apple.com/documentation/SystemExtensions) framework to install and upgrade the extension on the user’s Mac.
+Develop your system extension with Endpoint Security and package it in an app that uses the [`System Extensions`](https://developer.apple.com/documentation/systemextensions) framework to install and upgrade the extension on the user’s Mac.
 
 ## Topics
 
@@ -25,7 +25,7 @@ Develop your system extension with Endpoint Security and package it in an app th
 - [Event Types](event-types.md)
   Types used by messages to deliver details specific to different kinds of Endpoint Security events.
 ### Entitlements
-- [com.apple.developer.endpoint-security.client](../BundleResources/Entitlements/com.apple.developer.endpoint-security.client.md)
+- [com.apple.developer.endpoint-security.client](../bundleresources/entitlements/com.apple.developer.endpoint-security.client.md)
   The entitlement required to monitor system events for potentially malicious activity.
 ### Reference
 - [EndpointSecurity Constants](endpointsecurity-constants.md)

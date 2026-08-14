@@ -28,7 +28,7 @@ The `getItem` function retrieves the data associated with the given key. If the 
 
 ## Parameters
 
-- `key`: A   object containing the key being searched for.
+- `key`: A `String` object containing the key being searched for.
 
 ## See Also
 

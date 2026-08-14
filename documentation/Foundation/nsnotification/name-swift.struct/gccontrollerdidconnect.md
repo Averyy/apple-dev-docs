@@ -21,7 +21,7 @@ static let GCControllerDidConnect: NSNotification.Name
 
 #### Discussion
 
-The notification object is the [`GCController`](https://developer.apple.com/documentation/GameController/GCController) object that connects to the device.
+The notification object is the [`GCController`](https://developer.apple.com/documentation/gamecontroller/gccontroller) object that connects to the device.
 
 The system posts this notification on the main actor.
 

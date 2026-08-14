@@ -19,7 +19,7 @@ case invitation
 
 #### Discussion
 
-![None](https://docs-assets.developer.apple.com/published/44b13014d8a6b751d3a26e6e88340fb0/media-2934523%402x.png)
+![None](/images/com.apple.uikit/media-2934523@2x.png)
 
 ## See Also
 

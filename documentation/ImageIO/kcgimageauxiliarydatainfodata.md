@@ -22,7 +22,7 @@ let kCGImageAuxiliaryDataInfoData: CFString
 
 #### Discussion
 
-The value of this property is a [`CFData`](https://developer.apple.com/documentation/CoreFoundation/CFData). Use the [`kCGImagePropertyAuxiliaryDataType`](kcgimagepropertyauxiliarydatatype.md) property to determine the format of this data.
+The value of this property is a [`CFData`](https://developer.apple.com/documentation/corefoundation/cfdata). Use the [`kCGImagePropertyAuxiliaryDataType`](kcgimagepropertyauxiliarydatatype.md) property to determine the format of this data.
 
 ## See Also
 

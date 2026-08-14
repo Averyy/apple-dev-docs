@@ -22,9 +22,9 @@ init(referencing lockedCVPixelBuffer: CVPixelBuffer, planeIndex: Int, overrideSi
 
 ## Parameters
 
-- `lockedCVPixelBuffer`: The locked Core Video pixel buffer. Use [`CVPixelBufferLockBaseAddress(_:_:)`](https://developer.apple.com/documentation/CoreVideo/CVPixelBufferLockBaseAddress(_:_:)) and [`CVPixelBufferUnlockBaseAddress(_:_:)`](https://developer.apple.com/documentation/CoreVideo/CVPixelBufferUnlockBaseAddress(_:_:)) to lock and unlock the pixel buffer.
+- `lockedCVPixelBuffer`: The locked Core Video pixel buffer. Use [`CVPixelBufferLockBaseAddress(_:_:)`](https://developer.apple.com/documentation/corevideo/cvpixelbufferlockbaseaddress(_:_:)) and [`CVPixelBufferUnlockBaseAddress(_:_:)`](https://developer.apple.com/documentation/corevideo/cvpixelbufferunlockbaseaddress(_:_:)) to lock and unlock the pixel buffer.
 - `planeIndex`: The index of the plane that the function references.
-- `overrideSize`: An optional size that overrides the size returned by [`CVPixelBufferGetHeightOfPlane(_:_:)`](https://developer.apple.com/documentation/CoreVideo/CVPixelBufferGetHeightOfPlane(_:_:)) and [`CVPixelBufferGetWidthOfPlane(_:_:)`](https://developer.apple.com/documentation/CoreVideo/CVPixelBufferGetWidthOfPlane(_:_:)). Use this parameter if you intend to pass the buffer to the any-to-any converter that requires all buffers to be the same size.
+- `overrideSize`: An optional size that overrides the size returned by [`CVPixelBufferGetHeightOfPlane(_:_:)`](https://developer.apple.com/documentation/corevideo/cvpixelbuffergetheightofplane(_:_:)) and [`CVPixelBufferGetWidthOfPlane(_:_:)`](https://developer.apple.com/documentation/corevideo/cvpixelbuffergetwidthofplane(_:_:)). Use this parameter if you intend to pass the buffer to the any-to-any converter that requires all buffers to be the same size.
 - `pixelFormat`: The pixel format of the initialized buffer.
 
 ## See Also

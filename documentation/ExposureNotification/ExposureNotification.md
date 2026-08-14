@@ -25,17 +25,17 @@ The ExposureNotification framework defines two user roles:
 - **Affected user**: When a user has a confirmed or probable diagnosis of COVID-19 (as defined by the Health Authority), the framework identifies them as *affected* and shares their diagnosis keys to alert other users to potential exposure.
 - **Potentially exposed user**: To assign a user the *potentially exposed* role, use the framework to determine whether a set of temporary exposure keys indicate proximity to an affected user. If so, the app can retrieve additional information such as date and duration from the framework.
 
-> ❗ **Important**:  Before you can develop an app that uses ExposureNotification, you need the [`com.apple.developer.exposure-notification`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.exposure-notification) entitlement. For more information on this entitlement, see [`Exposure Notification APIs Addendum`](https://developer.apple.comhttps://developer.apple.com/contact/request/download/Exposure_Notification_Addendum.pdf). To get permission to use this entitlement, see [`Exposure Notification Entitlement Request`](https://developer.apple.comhttps://developer.apple.com/contact/request/exposure-notification-entitlement).
+> ❗ **Important**:  Before you can develop an app that uses ExposureNotification, you need the [`com.apple.developer.exposure-notification`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.exposure-notification) entitlement. For more information on this entitlement, see [`Exposure Notification APIs Addendum`](https://developer.apple.comhttps://developer.apple.com/contact/request/download/Exposure_Notification_Addendum.pdf). To get permission to use this entitlement, see [`Exposure Notification Entitlement Request`](https://developer.apple.comhttps://developer.apple.com/contact/request/exposure-notification-entitlement).
 
 ##### Identify Your Apps Region
 
-All EN apps must specify the region for which they work by adding a key called [`ENDeveloperRegion`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/ENDeveloperRegion) to the app’s `Info.plist` file. The value for `ENDeveloperRegion` is set to a string that represents the app’s region. This value can be an ISO 3166-1 country code (for example, “CA” for Canada), or the ISO 3166-1/3166-2 country code plus subdivision code (“US-CA” for California).
+All EN apps must specify the region for which they work by adding a key called [`ENDeveloperRegion`](https://developer.apple.com/documentation/bundleresources/information-property-list/endeveloperregion) to the app’s `Info.plist` file. The value for `ENDeveloperRegion` is set to a string that represents the app’s region. This value can be an ISO 3166-1 country code (for example, “CA” for Canada), or the ISO 3166-1/3166-2 country code plus subdivision code (“US-CA” for California).
 
-Explicitly set the associated domain link to your region code. Avoid using wildcards because they can impact system operations. See [`Associated Domains Entitlement`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.associated-domains) for more information.
+Explicitly set the associated domain link to your region code. Avoid using wildcards because they can impact system operations. See [`Associated Domains Entitlement`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.associated-domains) for more information.
 
 ##### Specify Exposure Notification Api Version
 
-iOS 13.7 introduces a new method of calculating the user’s Exposure Risk Value, described in [`ENExposureConfiguration`](enexposureconfiguration.md). Apps can implement this new method, or continue to use the calculation method introduced in earlier versions of iOS. To choose your app’s approach, add an entry to your app’s `Info.plist` file with a key of [`ENAPIVersion`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/ENAPIVersion). To use the new approach, specify a value of `2`. To use the original approach, specify a value of `1`.
+iOS 13.7 introduces a new method of calculating the user’s Exposure Risk Value, described in [`ENExposureConfiguration`](enexposureconfiguration.md). Apps can implement this new method, or continue to use the calculation method introduced in earlier versions of iOS. To choose your app’s approach, add an entry to your app’s `Info.plist` file with a key of [`ENAPIVersion`](https://developer.apple.com/documentation/bundleresources/information-property-list/enapiversion). To use the new approach, specify a value of `2`. To use the original approach, specify a value of `1`.
 
 ##### Support Exposure Notification Express
 
@@ -52,9 +52,9 @@ Starting with iOS 13.7, Health Authorities can inform users of potential exposur
   Ensure that your server meets the requirements for supporting Exposure Notifications.
 - [class ENManager](enmanager.md)
   A class that manages exposure notifications.
-- [ENDeveloperRegion](../BundleResources/Information-Property-List/ENDeveloperRegion.md)
+- [ENDeveloperRegion](../bundleresources/information-property-list/endeveloperregion.md)
   A string that specifies the region that the app supports.
-- [ENAPIVersion](../BundleResources/Information-Property-List/ENAPIVersion.md)
+- [ENAPIVersion](../bundleresources/information-property-list/enapiversion.md)
   A number that specifies the version of the API to use.
 - [Changing Configuration Values Using the Server‑to‑Server API](changing-configuration-values-using-the-server-to-server-api.md)
   Update Exposure Notifications configuration values from a Public Health Authority’s server.

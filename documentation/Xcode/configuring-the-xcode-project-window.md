@@ -10,7 +10,7 @@ The Xcode *project window* is your primary interface for viewing, editing, and m
 
 The main window opens when you create or open a project. To open additional main windows, choose File > New > Window.
 
-![An Xcode screenshot of the project editor showing the location of the main window areas: the toolbar at the top, navigator area on the far left, editor area in the middle, and inspector area on the far right. In the editor area, the source editor is on the left, the canvas is on the right, and the debugger is below.](https://docs-assets.developer.apple.com/published/d950a7772e9d4bfbe652ccb68b3ddc58/xcode-window-areas%402x.png)
+![An Xcode screenshot of the project editor showing the location of the main window areas: the toolbar at the top, navigator area on the far left, editor area in the middle, and inspector area on the far right. In the editor area, the source editor is on the left, the canvas is on the right, and the debugger is below.](/images/com.apple.Xcode/xcode-window-areas@2x.png)
 
 The areas of the main window:
 
@@ -51,7 +51,7 @@ Use the controls on the editor toolbar to open multiple files in separate editor
 - To change the focus of the Project navigator and inspector to an editor pane, click it.
 - To temporarily expand or collapse an editor pane, click the Focus/Unfocus this Editor Pane button on the left of the editor toolbar.
 
-![An Xcode screenshot of the project editor with the Project navigator on the left and a source file selected. The editor area on the right shows the comparison view above and two source editor panes side-by-side below with the Canvas menu item selected from the Adjust Editor Options pop-up menu.](https://docs-assets.developer.apple.com/published/c902ea1cf11e2fa48287367f158132d3/configuring-editor-area%402x.png)
+![An Xcode screenshot of the project editor with the Project navigator on the left and a source file selected. The editor area on the right shows the comparison view above and two source editor panes side-by-side below with the Canvas menu item selected from the Adjust Editor Options pop-up menu.](/images/com.apple.Xcode/configuring-editor-area@2x.png)
 
 ##### Choose Editor Options and Companion Views
 
@@ -88,7 +88,7 @@ Use the *tab bar* that appears above an editor pane to open and pin files that y
 
 For other actions, Control-click the tab and choose an item from the pop-up menu, such as Close Other Tabs.
 
-![An Xcode screenshot of the project editor with the Project navigator on the left and a source file selected. The editor area is on the right with the source editor on its right and the canvas on its left. The tab bar appears above the editor toolbar with a tab contextual pop-up menu showing the Close Other Tabs menu item selected.](https://docs-assets.developer.apple.com/published/526fd0bed9b35ee85a941e3ad7b9eecf/using-editor-tabs%402x.png)
+![An Xcode screenshot of the project editor with the Project navigator on the left and a source file selected. The editor area is on the right with the source editor on its right and the canvas on its left. The tab bar appears above the editor toolbar with a tab contextual pop-up menu showing the Close Other Tabs menu item selected.](/images/com.apple.Xcode/using-editor-tabs@2x.png)
 
 ## See Also
 

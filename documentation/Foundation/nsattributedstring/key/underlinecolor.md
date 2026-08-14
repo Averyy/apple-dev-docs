@@ -22,7 +22,7 @@ static let underlineColor: NSAttributedString.Key
 
 #### Discussion
 
-The value of this attribute is a [`UIColor`](https://developer.apple.com/documentation/UIKit/UIColor) object. The default value is `nil`, indicating same as foreground color.
+The value of this attribute is a [`UIColor`](https://developer.apple.com/documentation/uikit/uicolor) object. The default value is `nil`, indicating same as foreground color.
 
 ## See Also
 

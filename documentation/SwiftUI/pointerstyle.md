@@ -19,7 +19,7 @@ struct PointerStyle
 
 Use the [`pointerStyle(_:)`](view/pointerstyle(_:).md) view modifier to set a view’s pointer style.
 
-For guidance on choosing an appropriate pointer style, refer to [`Pointing devices`](https://developer.apple.com/design/Human-Interface-Guidelines/pointing-devices) in the Human Interface Guidelines.
+For guidance on choosing an appropriate pointer style, refer to [`Pointing devices`](https://developer.apple.com/design/human-interface-guidelines/pointing-devices) in the Human Interface Guidelines.
 
 ## Topics
 
@@ -71,8 +71,8 @@ For guidance on choosing an appropriate pointer style, refer to [`Pointing devic
 ## Relationships
 
 ### Conforms To
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

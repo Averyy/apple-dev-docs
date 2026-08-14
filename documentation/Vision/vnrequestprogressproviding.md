@@ -36,7 +36,7 @@ Adopt this protocol for potentially long-running Vision requests to provide info
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 ### Conforming Types
 - [VNRecognizeTextRequest](vnrecognizetextrequest.md)
 

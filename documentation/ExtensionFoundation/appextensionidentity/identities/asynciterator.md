@@ -25,7 +25,7 @@ struct AsyncIterator
 ## Relationships
 
 ### Conforms To
-- [AsyncIteratorProtocol](../Swift/AsyncIteratorProtocol.md)
+- [AsyncIteratorProtocol](../swift/asynciteratorprotocol.md)
 
 ## See Also
 

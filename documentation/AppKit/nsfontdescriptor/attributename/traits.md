@@ -16,7 +16,7 @@ static let traits: NSFontDescriptor.AttributeName
 
 #### Discussion
 
-The value of this attribute is an [`NSDictionary`](https://developer.apple.com/documentation/Foundation/NSDictionary) object. The default value is supplied by the font. See [`NSFontDescriptor.TraitKey`](nsfontdescriptor/traitkey.md) for dictionary keys.
+The value of this attribute is an [`NSDictionary`](https://developer.apple.com/documentation/foundation/nsdictionary) object. The default value is supplied by the font. See [`NSFontDescriptor.TraitKey`](nsfontdescriptor/traitkey.md) for dictionary keys.
 
 ## See Also
 

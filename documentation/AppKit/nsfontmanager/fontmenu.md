@@ -20,7 +20,7 @@ The font conversion system menu.
 
 ## Parameters
 
-- `create`: If [`true`](https://developer.apple.com/documentation/Swift/true), the menu object is created if necessary; if [`false`](https://developer.apple.com/documentation/Swift/false), it is not.
+- `create`: If [`true`](https://developer.apple.com/documentation/swift/true), the menu object is created if necessary; if [`false`](https://developer.apple.com/documentation/swift/false), it is not.
 
 ## See Also
 

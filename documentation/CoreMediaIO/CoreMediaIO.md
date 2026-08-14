@@ -11,7 +11,7 @@ Securely support custom camera devices in macOS.
 
 #### Overview
 
-Use the Core Media I/O framework to enable support for custom camera devices in macOS. Starting in macOS 12.3, the framework builds on [`System Extensions`](https://developer.apple.com/documentation/SystemExtensions) to enable you to support custom devices while maintaining system privacy and security protections. The system prevents apps from loading extension code into their process to ensure that they can’t bypass macOS privacy protections or mask their identity.
+Use the Core Media I/O framework to enable support for custom camera devices in macOS. Starting in macOS 12.3, the framework builds on [`System Extensions`](https://developer.apple.com/documentation/systemextensions) to enable you to support custom devices while maintaining system privacy and security protections. The system prevents apps from loading extension code into their process to ensure that they can’t bypass macOS privacy protections or mask their identity.
 
 > ❗ **Important**: Apple recommends replacing legacy Device Abstraction Layer (DAL) plug-ins with Core Media I/O extensions.
 

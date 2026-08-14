@@ -25,11 +25,11 @@ Increases or decreases contrast of values using a linear slope multiplier.
 
 Below is an example of a node graph that uses the `Contrast` node to make a black and white arrow texture more gray and closer in color.
 
-![None](https://docs-assets.developer.apple.com/published/b875b7e718e1101dcab31f42da00ba66/ContrastGraph.png)
+![None](/images/ShaderGraph-Docs/ContrastGraph.png)
 
 Below, the resulting texture applies to a cube:
 
-![None](https://docs-assets.developer.apple.com/published/b5031fa1f42bfc35c8ab51be05d66b6d/ContrastMaterial.png)
+![None](/images/ShaderGraph-Docs/ContrastMaterial.png)
 
 In the image above, the value of `Pivot` is `0.2`, which represents a dark gray. Because the value of `Amount` is also `0.2`, the contrast of the input decreases while the color value of the texture moves closer to the `Pivot` input. As a result, the output texture of the node becomes a gray version of the original black and white arrow texture.
 

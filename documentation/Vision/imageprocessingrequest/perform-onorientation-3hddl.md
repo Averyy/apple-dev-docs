@@ -27,7 +27,7 @@ The observation — or list of observations — the request produces.
 
 ## Parameters
 
-- `sampleBuffer`: The input [`CMSampleBuffer`](https://developer.apple.com/documentation/CoreMedia/CMSampleBuffer) on which to perform the request.
+- `sampleBuffer`: The input [`CMSampleBuffer`](https://developer.apple.com/documentation/coremedia/cmsamplebuffer) on which to perform the request.
 - `orientation`: The orientation of the input image. Default is `nil`.
 
 ## See Also

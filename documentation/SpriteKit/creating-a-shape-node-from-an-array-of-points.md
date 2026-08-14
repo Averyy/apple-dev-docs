@@ -22,7 +22,7 @@ let splineShapeNode = SKShapeNode(splinePoints: &points,
 
 The following image shows `linearShapeNode` in blue and `splineShapeNode` in red.
 
-![Shape nodes created from points](https://docs-assets.developer.apple.com/published/d8c3df98083749ec51557e7d89d034b5/media-2975239%402x.png)
+![Shape nodes created from points](/images/com.apple.spritekit/media-2975239@2x.png)
 
 ## See Also
 

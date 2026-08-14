@@ -29,7 +29,7 @@ let count: Int64 = 1024
 let formatted = count.formatted(.byteCount(style: .memory)) // "1 kB"
 ```
 
-You can also customize a byte count format style, and use this to format one or more [`Int64`](https://developer.apple.com/documentation/Swift/Int64) instances. The following example creates a format style to only use kilobyte units, and to spell out the exact byte count of the measurement.
+You can also customize a byte count format style, and use this to format one or more [`Int64`](https://developer.apple.com/documentation/swift/int64) instances. The following example creates a format style to only use kilobyte units, and to spell out the exact byte count of the measurement.
 
 ```swift
 let style = ByteCountFormatStyle(style: .memory,                                 
@@ -79,13 +79,13 @@ let formatted = counts.map ( {style.format($0) } ) // ["Zero kB", "1 kB", "2 kB"
 ## Relationships
 
 ### Conforms To
-- [Decodable](../Swift/Decodable.md)
-- [Encodable](../Swift/Encodable.md)
-- [Equatable](../Swift/Equatable.md)
+- [Decodable](../swift/decodable.md)
+- [Encodable](../swift/encodable.md)
+- [Equatable](../swift/equatable.md)
 - [FormatStyle](formatstyle.md)
-- [Hashable](../Swift/Hashable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Hashable](../swift/hashable.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

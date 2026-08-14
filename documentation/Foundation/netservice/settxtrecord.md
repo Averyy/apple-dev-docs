@@ -21,7 +21,7 @@ func setTXTRecord(_ recordData: Data?) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/Swift/true) if `recordData` is successfully set as the TXT record, otherwise [`false`](https://developer.apple.com/documentation/Swift/false).
+[`true`](https://developer.apple.com/documentation/swift/true) if `recordData` is successfully set as the TXT record, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
 
 ## Parameters
 

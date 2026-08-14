@@ -16,7 +16,7 @@ var underlyingAccessory: Accessory? { get }
 
 #### Discussion
 
-Provides access to the abstracted ARKit [`Accessory`](https://developer.apple.com/documentation/ARKit/Accessory) object.
+Provides access to the abstracted ARKit [`Accessory`](https://developer.apple.com/documentation/arkit/accessory) object.
 
 
 ---

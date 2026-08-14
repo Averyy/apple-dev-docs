@@ -22,7 +22,7 @@ static let noise: MLImageClassifier.ImageAugmentationOptions
 
 Use this option to tell the image classifier to augment your training data set by adding noise to the original images.
 
-![Diagram showing how the original image results in four variants with random amounts of noise added.](https://docs-assets.developer.apple.com/published/2b6951c7e197e293b6eb8be1665e9703/MLImageClassifier-ImageAugmentationOptions-noise-1%402x.png)
+![Diagram showing how the original image results in four variants with random amounts of noise added.](/images/com.apple.createml/MLImageClassifier-ImageAugmentationOptions-noise-1@2x.png)
 
 The classifier creates four new images with random amounts of noise for each original.
 

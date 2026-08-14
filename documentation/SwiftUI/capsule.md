@@ -41,12 +41,12 @@ A capsule shape is equivalent to a rounded rectangle where the corner radius is 
 
 ### Conforms To
 - [Animatable](animatable.md)
-- [Copyable](../Swift/Copyable.md)
-- [Escapable](../Swift/Escapable.md)
+- [Copyable](../swift/copyable.md)
+- [Escapable](../swift/escapable.md)
 - [InsettableShape](insettableshape.md)
 - [RoundedRectangularShape](roundedrectangularshape.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 - [Shape](shape.md)
 - [View](view.md)
 

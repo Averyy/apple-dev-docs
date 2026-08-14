@@ -39,7 +39,7 @@ Optionally, implement the [`layoutChildren(for:visualState:)`](equipment/layoutc
 ## Relationships
 
 ### Inherits From
-- [Identifiable](../Swift/Identifiable.md)
+- [Identifiable](../swift/identifiable.md)
 ### Inherited By
 - [EntityEquipment](entityequipment.md)
 

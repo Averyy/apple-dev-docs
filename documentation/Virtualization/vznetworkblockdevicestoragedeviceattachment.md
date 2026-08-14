@@ -22,7 +22,7 @@ The NBD client attempts to connect to the NBD server referred to by the URL used
 
 Reconnection attempts take place throughout the life cycle of the VM when the NBD client encounters a recoverable error such as connection timeout and unexpected connection errors. The NBD client disconnects from the server when the VM shuts down.
 
-Using this attachment requires the app to have the [`com.apple.security.network.client`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.security.network.client) entitlement because this attachment opens an outgoing network connection.
+Using this attachment requires the app to have the [`com.apple.security.network.client`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.security.network.client) entitlement because this attachment opens an outgoing network connection.
 
 To create a device that uses an NBD service, first initialize a `VZNetworkBlockDeviceStorageDeviceAttachment` with the URI of an NBD server, then use the attachment to configure a [`VZStorageDeviceConfiguration`](vzstoragedeviceconfiguration.md) as shown in the example below (the attachment works with any subclass of [`VZStorageDeviceConfiguration`](vzstoragedeviceconfiguration.md), not just [`VZVirtioBlockDeviceConfiguration`](vzvirtioblockdeviceconfiguration.md)):
 
@@ -90,12 +90,12 @@ For more information about the NBD URL format, see the [`Network Block Device UR
 ### Inherits From
 - [VZStorageDeviceAttachment](vzstoragedeviceattachment.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

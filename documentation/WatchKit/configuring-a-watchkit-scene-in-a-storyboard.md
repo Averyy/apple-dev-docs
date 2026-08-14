@@ -20,7 +20,7 @@ In watchOS 4 and later, SpriteKit and SceneKit scenes can fill the full screen. 
 
 To enable full screen mode, place a SpriteKit or SceneKit scene as the interface controller’s only content. Then, in the interface controller’s Attribute inspector, enable the Full Screen attribute.
 
-![A screenshot showing the Full Screen attribute. ](https://docs-assets.developer.apple.com/published/27bd4b57c9ca3d48a96447c8972c2b98/media-2982918%402x.png)
+![A screenshot showing the Full Screen attribute. ](/images/com.apple.watchkit/media-2982918@2x.png)
 
 
 ---

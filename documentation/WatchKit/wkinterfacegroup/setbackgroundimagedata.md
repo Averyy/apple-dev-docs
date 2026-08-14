@@ -16,7 +16,7 @@ func setBackgroundImageData(_ imageData: Data?)
 
 #### Discussion
 
-Use this method when you already have image data in the raw PNG or JPG format. This method sends the data as-is, which lets you send the data in a compressed format. Sending compressed data is often more efficient than sending a [`UIImage`](https://developer.apple.com/documentation/UIKit/UIImage) object.
+Use this method when you already have image data in the raw PNG or JPG format. This method sends the data as-is, which lets you send the data in a compressed format. Sending compressed data is often more efficient than sending a [`UIImage`](https://developer.apple.com/documentation/uikit/uiimage) object.
 
 ## Parameters
 

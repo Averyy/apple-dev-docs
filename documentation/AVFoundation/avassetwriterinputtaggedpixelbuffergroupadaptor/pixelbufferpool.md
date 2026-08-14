@@ -20,7 +20,7 @@ var pixelBufferPool: CVPixelBufferPool? { get }
 
 #### Discussion
 
-For maximum efficiency, create the pixel buffers of tagged buffer groups using this pool with the [`CVPixelBufferPoolCreatePixelBuffer(_:_:_:)`](https://developer.apple.com/documentation/CoreVideo/CVPixelBufferPoolCreatePixelBuffer(_:_:_:)) function.
+For maximum efficiency, create the pixel buffers of tagged buffer groups using this pool with the [`CVPixelBufferPoolCreatePixelBuffer(_:_:_:)`](https://developer.apple.com/documentation/corevideo/cvpixelbufferpoolcreatepixelbuffer(_:_:_:)) function.
 
 The value of this property is `nil` before you call [`startWriting()`](avassetwriter/startwriting().md) on the associated [`AVAssetWriter`](avassetwriter.md) object. Query this property after writing starts to retrieve a `non-nil` value.
 

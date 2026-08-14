@@ -25,7 +25,7 @@ func appEntityIdentifier<I>(forSelectionType itemType: I.Type = I.self, identifi
 
 Use this modifier to make app entities that describe data in a list discoverable by Apple Intelligence and Siri. This provides additional context to the system when the list appears onscreen and people scroll through it.
 
-The following example associates a [`List`](List.md) view that displays books with an app entity for each book in the list.
+The following example associates a [`List`](list.md) view that displays books with an app entity for each book in the list.
 
 ```swift
 struct BookListView: View {
@@ -44,7 +44,7 @@ struct BookListView: View {
  }
 ```
 
-For more information, refer to doc:providing-contextual-cues-to-Apple-Intelligence-and-Siri and [`App Intents`](https://developer.apple.com/documentation/AppIntents).
+For more information, refer to doc:providing-contextual-cues-to-Apple-Intelligence-and-Siri and [`App Intents`](https://developer.apple.com/documentation/appintents).
 
 ## See Also
 

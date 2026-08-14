@@ -41,8 +41,8 @@ Model I/O uses this interface to represent content loaded from an asset file. Va
 
 ### Inherits From
 - [MDLComponent](mdlcomponent.md)
-- [NSFastEnumeration](../Foundation/NSFastEnumeration.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSFastEnumeration](../foundation/nsfastenumeration.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 ### Conforming Types
 - [MDLObjectContainer](mdlobjectcontainer.md)
 

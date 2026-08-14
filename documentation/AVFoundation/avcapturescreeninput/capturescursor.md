@@ -18,7 +18,7 @@ var capturesCursor: Bool { get set }
 
 When this property is true (the default), captured video frames include the mouse pointer. If you change this property to false, the captured output contains only the windows on the screen (that is, the mouse pointer is invisible in captured video).
 
-> **Note**:  Even if you hide the mouse pointer in captured output, [`CMSampleBuffer`](https://developer.apple.com/documentation/CoreMedia/CMSampleBuffer) objects vended by the capture include metadata for the cursor position and mouse button state. See [`kCMIOSampleBufferAttachmentKey_MouseAndKeyboardModifiers`](https://developer.apple.com/documentation/CoreMediaIO/kCMIOSampleBufferAttachmentKey_MouseAndKeyboardModifiers).
+> **Note**:  Even if you hide the mouse pointer in captured output, [`CMSampleBuffer`](https://developer.apple.com/documentation/coremedia/cmsamplebuffer) objects vended by the capture include metadata for the cursor position and mouse button state. See [`kCMIOSampleBufferAttachmentKey_MouseAndKeyboardModifiers`](https://developer.apple.com/documentation/coremediaio/kcmiosamplebufferattachmentkey_mouseandkeyboardmodifiers).
 
 ## See Also
 

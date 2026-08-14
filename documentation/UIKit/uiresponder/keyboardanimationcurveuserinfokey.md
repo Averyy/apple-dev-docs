@@ -20,7 +20,7 @@ class let keyboardAnimationCurveUserInfoKey: String
 
 #### Discussion
 
-The value for this key is an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) object that contains a [`UIView.AnimationCurve`](uiview/animationcurve.md) constant used to determine how the system animates the keyboard onto or off the screen. You can use this value to match the animation of the keyboard in your own animations.
+The value for this key is an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) object that contains a [`UIView.AnimationCurve`](uiview/animationcurve.md) constant used to determine how the system animates the keyboard onto or off the screen. You can use this value to match the animation of the keyboard in your own animations.
 
 Before using this value, convert the animation curve constant to [`UIView.AnimationOptions`](uiview/animationoptions.md), which you can pass to one of UIKit’s animation methods, such as [`animate(withDuration:animations:completion:)`](uiview/animate(withduration:animations:completion:).md).
 

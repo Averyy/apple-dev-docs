@@ -25,7 +25,7 @@ A data object containing [`MDLVoxelIndex`](mdlvoxelindex.md) values.
 
 #### Discussion
 
-The returned [`NSData`](https://developer.apple.com/documentation/Foundation/NSData) object contains an array of [`MDLVoxelIndex`](mdlvoxelindex.md) values describing the locations of voxels within the specified volume as well as their volumetric relationship to the object modeled by the voxel array.
+The returned [`NSData`](https://developer.apple.com/documentation/foundation/nsdata) object contains an array of [`MDLVoxelIndex`](mdlvoxelindex.md) values describing the locations of voxels within the specified volume as well as their volumetric relationship to the object modeled by the voxel array.
 
 ## Parameters
 

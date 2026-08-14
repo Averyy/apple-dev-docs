@@ -21,7 +21,7 @@ let kCIAttributeFilterName: String
 
 #### Discussion
 
-The filter name, specified as an [`NSString`](https://developer.apple.com/documentation/Foundation/NSString) object.
+The filter name, specified as an [`NSString`](https://developer.apple.com/documentation/foundation/nsstring) object.
 
 ## See Also
 

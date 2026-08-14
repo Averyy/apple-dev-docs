@@ -21,11 +21,11 @@ func hasPerformanceProfile(_ performanceProfile: NSProcessPerformanceProfile) ->
 
 #### Return Value
 
-True if the system is running under the given performance profile. If the profile isn’t [`sustained`](https://developer.apple.com/documentation/Metal/NSProcessPerformanceProfile/sustained), the app might cause the device to throttle under a heavy workload.
+True if the system is running under the given performance profile. If the profile isn’t [`sustained`](https://developer.apple.com/documentation/metal/nsprocessperformanceprofile/sustained), the app might cause the device to throttle under a heavy workload.
 
 ## Parameters
 
-- `performanceProfile`: The desired performance profile. Choose between: [`default`](https://developer.apple.com/documentation/Metal/NSProcessPerformanceProfile/default) and [`sustained`](https://developer.apple.com/documentation/Metal/NSProcessPerformanceProfile/sustained).
+- `performanceProfile`: The desired performance profile. Choose between: [`default`](https://developer.apple.com/documentation/metal/nsprocessperformanceprofile/default) and [`sustained`](https://developer.apple.com/documentation/metal/nsprocessperformanceprofile/sustained).
 
 ## See Also
 

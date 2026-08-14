@@ -26,11 +26,11 @@ class SKOverlay
 
 By displaying an overlay, you can recommend another app to users and enable them to download it immediately. To recommend media that’s not an app, or to display a product page within your app, use [`SKStoreProductViewController`](skstoreproductviewcontroller.md).
 
-> ❗ **Important**:  If you display an overlay in your App Clip, you may only recommend the App Clip’s corresponding full app and need to initialize the overlay with an [`SKOverlay.AppClipConfiguration`](skoverlay/appclipconfiguration.md) object. For more information, see [`Recommending your app to App Clip users`](https://developer.apple.com/documentation/AppClip/recommending-your-app-to-app-clip-users).
+> ❗ **Important**:  If you display an overlay in your App Clip, you may only recommend the App Clip’s corresponding full app and need to initialize the overlay with an [`SKOverlay.AppClipConfiguration`](skoverlay/appclipconfiguration.md) object. For more information, see [`Recommending your app to App Clip users`](https://developer.apple.com/documentation/appclip/recommending-your-app-to-app-clip-users).
 
-If you’re using SwiftUI, make use of the `appStoreOverlay(isPresented:configuration:)` modifier. For example usage, see [`Fruta: Building a feature-rich app with SwiftUI`](https://developer.apple.com/documentation/AppClip/fruta-building-a-feature-rich-app-with-swiftui).
+If you’re using SwiftUI, make use of the `appStoreOverlay(isPresented:configuration:)` modifier. For example usage, see [`Fruta: Building a feature-rich app with SwiftUI`](https://developer.apple.com/documentation/appclip/fruta-building-a-feature-rich-app-with-swiftui).
 
-To display an App Store overlay in an app that uses [`UIKit`](https://developer.apple.com/documentation/UIKit):
+To display an App Store overlay in an app that uses [`UIKit`](https://developer.apple.com/documentation/uikit):
 
 1. Create an [`SKOverlay.AppConfiguration`](skoverlay/appconfiguration.md) with the iTunes identifier of the app you want to recommend.
 2. Initialize `SKOverlay` with the configuration object.
@@ -80,14 +80,14 @@ To respond to the overlay’s appearance, dismissal, or failure to load, set the
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

@@ -13,11 +13,11 @@ Cover your app’s virtual content with people that ARKit perceives in the camer
 
 By default, virtual content covers anything in the camera feed. For example, when a person passes in front of a virtual object, the object is drawn on top of the person, which can break the illusion of the AR experience.
 
-![Screenshot of virtual books drawn on top of a person.](https://docs-assets.developer.apple.com/published/4c0490a4cc2d074602b03a229cd28680/figure1-annotated.png)
+![Screenshot of virtual books drawn on top of a person.](/images/com.apple.arkit/figure1-annotated.png)
 
 To cover your app’s virtual content with people that ARKit perceives in the camera feed, you enable *people occlusion*. Your app can then render a virtual object behind people who pass in front of the camera. ARKit accomplishes the occlusion by identifying regions in the camera feed where people reside, and preventing virtual content from drawing into that region’s pixels.
 
-![Screenshot of the virtual books behind the person.](https://docs-assets.developer.apple.com/published/9ec57b947ed7064da9005afeac529989/figure2-annotated.png)
+![Screenshot of the virtual books behind the person.](/images/com.apple.arkit/figure2-annotated.png)
 
 This sample renders its graphics using RealityKit, but you can follow the same steps to use people occlusion with SceneKit. To enable people occlusion in Metal apps, see [`Effecting People Occlusion in Custom Renderers`](effecting-people-occlusion-in-custom-renderers.md).
 
@@ -51,15 +51,15 @@ arView.session.run(config)
 
 The [`personSegmentationWithDepth`](arconfiguration/framesemantics-swift.struct/personsegmentationwithdepth.md) option specifies that a person occludes a virtual object only when the person is closer to the camera than the virtual object.
 
-![Screenshot of people occlusion with depth.](https://docs-assets.developer.apple.com/published/f6770bbb0eba749cbc51690111811142/figure3-annotated.png)
+![Screenshot of people occlusion with depth.](/images/com.apple.arkit/figure3-annotated.png)
 
 Alternatively, the [`personSegmentation`](arconfiguration/framesemantics-swift.struct/personsegmentation.md) frame semantic gives you the option of always occluding virtual content with any people that ARKit perceives in the camera feed irrespective of depth. This technique is useful, for example, in green-screen scenarios.
 
-![Screenshot of people occlusion with virtual background.](https://docs-assets.developer.apple.com/published/a8660b7bc5fa2f9d0bbaddb18ecc069c/figure4-annotated.png)
+![Screenshot of people occlusion with virtual background.](/images/com.apple.arkit/figure4-annotated.png)
 
 #### Disable People Occlusion
 
-You might choose to disable people occlusion for performance reasons if, for example, no virtual content is present in the scene, or if the device has reached a serious or critical [`thermalState`](https://developer.apple.com/documentation/Foundation/ProcessInfo/thermalState-swift.property) (see [`ProcessInfo.ThermalState`](https://developer.apple.com/documentation/Foundation/ProcessInfo/ThermalState-swift.enum)). To temporarily disable people occlusion, remove that option from your app’s [`frameSemantics`](arconfiguration/framesemantics-swift.property.md).
+You might choose to disable people occlusion for performance reasons if, for example, no virtual content is present in the scene, or if the device has reached a serious or critical [`thermalState`](https://developer.apple.com/documentation/foundation/processinfo/thermalstate-swift.property) (see [`ProcessInfo.ThermalState`](https://developer.apple.com/documentation/foundation/processinfo/thermalstate-swift.enum)). To temporarily disable people occlusion, remove that option from your app’s [`frameSemantics`](arconfiguration/framesemantics-swift.property.md).
 
 ```swift
 config.frameSemantics.remove(.personSegmentationWithDepth)

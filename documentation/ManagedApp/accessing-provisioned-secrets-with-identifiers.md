@@ -19,7 +19,7 @@ Some device management features rely on *secrets*, that is, secure credentials p
 
 Your app accesses secrets by their identifier using the framework supplied secret *provider* classes. Each provider offers a list of identifiers that catalogs all the currently available secrets, of a particular type, that an MDM admin provisions. You can access secrets using predefined identifiers, or identifiers that you add to your app’s configuration.
 
-The provider’s list of identifiers is an [`AsyncSequence`](https://developer.apple.com/documentation/Swift/AsyncSequence). If your app requires notification when the available secrets change, or if your app supports dynamic lists of secrets, iterate the sequence for the lifetime of the app using `for await`.
+The provider’s list of identifiers is an [`AsyncSequence`](https://developer.apple.com/documentation/swift/asyncsequence). If your app requires notification when the available secrets change, or if your app supports dynamic lists of secrets, iterate the sequence for the lifetime of the app using `for await`.
 
 #### Specify the Secrets Your App Supports
 
@@ -27,7 +27,7 @@ To implement features with secrets, identify the provisions that you require fro
 
 > **Note**: If your app also defines a configuration specification for general information, you can add your secrets requirements to the same document. For more information about general configuration, see [`Specifying and decoding a configuration`](specifying-and-decoding-a-configuration.md).
 
-When an admin provisions secrets on their MDM server according to your specification, they use [`Device Management`](https://developer.apple.com/documentation/DeviceManagement). The device’s operating system works with [`Device Management`](https://developer.apple.com/documentation/DeviceManagement) to ingest the secrets on the device. From the perspective of your app, [`ManagedApp`](ManagedApp.md) receives the secrets automatically.
+When an admin provisions secrets on their MDM server according to your specification, they use [`Device Management`](https://developer.apple.com/documentation/devicemanagement). The device’s operating system works with [`Device Management`](https://developer.apple.com/documentation/devicemanagement) to ingest the secrets on the device. From the perspective of your app, [`ManagedApp`](ManagedApp.md) receives the secrets automatically.
 
 #### Retrieve Secrets Using a Known Identifier
 
@@ -57,7 +57,7 @@ do { /* Attempt to look up the login password. */
 // Use the password.
 ```
 
-Another task that often uses known identifiers is responding to client certificate authentication challenges. The following example responds to a client certificate challenge within the [`URLSessionDelegate`](https://developer.apple.com/documentation/Foundation/URLSessionDelegate) callback, and requests an identity using the [`ManagedAppIdentitiesProvider`](managedappidentitiesprovider.md) accessor:
+Another task that often uses known identifiers is responding to client certificate authentication challenges. The following example responds to a client certificate challenge within the [`URLSessionDelegate`](https://developer.apple.com/documentation/foundation/urlsessiondelegate) callback, and requests an identity using the [`ManagedAppIdentitiesProvider`](managedappidentitiesprovider.md) accessor:
 
 ```swift
 public func urlSession(_ session: URLSession, 
@@ -88,7 +88,7 @@ public func urlSession(_ session: URLSession,
 
 #### Retrieve Secrets Using the Providers Identifiers Sequence
 
-If your app needs a notification when the available secrets change, or if your app maintains dynamic lists of secrets, use the provider’s [`AsyncSequence`](https://developer.apple.com/documentation/Swift/AsyncSequence).  Use a `for await` construct on the provider’s `identifiers` property to listen for changes. The following example builds a list of available usernames by iterating the  [`ManagedAppIdentitiesProvider`](managedappidentitiesprovider.md) sequence:
+If your app needs a notification when the available secrets change, or if your app maintains dynamic lists of secrets, use the provider’s [`AsyncSequence`](https://developer.apple.com/documentation/swift/asyncsequence).  Use a `for await` construct on the provider’s `identifiers` property to listen for changes. The following example builds a list of available usernames by iterating the  [`ManagedAppIdentitiesProvider`](managedappidentitiesprovider.md) sequence:
 
 ```swift
 let accountUsernameIdentifierPrefix = "User:"
@@ -123,7 +123,7 @@ do { /* Access the identity. */
 }
 ```
 
-Alternatively, your app can use the identity for cryptographic signing. Because [`SecIdentity`](https://developer.apple.com/documentation/Security/SecIdentity) is in the [`Security`](https://developer.apple.com/documentation/Security) framework, you can create a cryptographic signature using other [`Security`](https://developer.apple.com/documentation/Security) framework API. The following code begins a signature by acquiring a reference to the identity’s private key:
+Alternatively, your app can use the identity for cryptographic signing. Because [`SecIdentity`](https://developer.apple.com/documentation/security/secidentity) is in the [`Security`](https://developer.apple.com/documentation/security) framework, you can create a cryptographic signature using other [`Security`](https://developer.apple.com/documentation/security) framework API. The following code begins a signature by acquiring a reference to the identity’s private key:
 
 ```swift
 // Access the private key. 
@@ -131,9 +131,9 @@ var privateKey: SecKey? = nil
 SecIdentityCopyPrivateKey(identity, &privateKey)
 ```
 
-The [`SecKey`](https://developer.apple.com/documentation/Security/SecKey) object is an opaque reference to the underlying private key data that’s in system memory. Don’t load actual private key data in your app’s memory unless absolutely necessary; for example, when using the  [`SecKeyCopyExternalRepresentation(_:_:)`](https://developer.apple.com/documentation/Security/SecKeyCopyExternalRepresentation(_:_:)) function.
+The [`SecKey`](https://developer.apple.com/documentation/security/seckey) object is an opaque reference to the underlying private key data that’s in system memory. Don’t load actual private key data in your app’s memory unless absolutely necessary; for example, when using the  [`SecKeyCopyExternalRepresentation(_:_:)`](https://developer.apple.com/documentation/security/seckeycopyexternalrepresentation(_:_:)) function.
 
-While choosing the signing algorithm, call [`SecKeyIsAlgorithmSupported(_:_:_:)`](https://developer.apple.com/documentation/Security/SecKeyIsAlgorithmSupported(_:_:_:)) to ensure the admin-provisioned key supports the algorithm:
+While choosing the signing algorithm, call [`SecKeyIsAlgorithmSupported(_:_:_:)`](https://developer.apple.com/documentation/security/seckeyisalgorithmsupported(_:_:_:)) to ensure the admin-provisioned key supports the algorithm:
 
 ```swift
 // Choose signing algorithm. 

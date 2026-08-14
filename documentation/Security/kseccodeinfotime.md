@@ -17,7 +17,7 @@ let kSecCodeInfoTime: CFString
 
 #### Discussion
 
-The value is a [`CFDate`](https://developer.apple.com/documentation/CoreFoundation/CFDate) object. Note that a signer is able to omit this date or pre-date it. Therefore, this is not necessarily the date the code was actually signed. However, you do know that this is the date the signer wanted you to see. Ad-hoc signatures never have secured signing dates.
+The value is a [`CFDate`](https://developer.apple.com/documentation/corefoundation/cfdate) object. Note that a signer is able to omit this date or pre-date it. Therefore, this is not necessarily the date the code was actually signed. However, you do know that this is the date the signer wanted you to see. Ad-hoc signatures never have secured signing dates.
 
 Specify the [`kSecCSSigningInformation`](kseccssigninginformation.md) flag when calling the [`SecCodeCopySigningInformation(_:_:_:)`](seccodecopysigninginformation(_:_:_:).md) function to get this information.
 

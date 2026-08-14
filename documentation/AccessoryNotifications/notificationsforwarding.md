@@ -7,7 +7,6 @@ A class for handling notification forwarding in your accessory’s data provider
 
 **Availability**:
 - iOS 26.5+
-- iPadOS 26.5+
 
 ## Declaration
 
@@ -17,7 +16,7 @@ final class NotificationsForwarding
 
 #### Overview
 
-Implement the [`NotificationsForwarding.AccessoryNotificationsHandler`](notificationsforwarding/accessorynotificationshandler.md) protocol in your [`AccessoryDataProvider`](https://developer.apple.com/documentation/AccessoryTransportExtension/AccessoryDataProvider) extension to receive and manage system notifications that iOS forwards to your accessory.
+Implement the [`NotificationsForwarding.AccessoryNotificationsHandler`](notificationsforwarding/accessorynotificationshandler.md) protocol in your [`AccessoryDataProvider`](https://developer.apple.com/documentation/accessorytransportextension/accessorydataprovider) extension to receive and manage system notifications that iOS forwards to your accessory.
 
 ## Topics
 
@@ -36,11 +35,11 @@ Implement the [`NotificationsForwarding.AccessoryNotificationsHandler`](notifica
 ## Relationships
 
 ### Conforms To
-- [AccessoryFeature](../AccessoryTransportExtension/AccessoryFeature.md)
-- [AppExtensionPoint.Capability](../ExtensionFoundation/AppExtensionPoint/Capability.md)
-- [Identifiable](../Swift/Identifiable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [AccessoryFeature](../accessorytransportextension/accessoryfeature.md)
+- [AppExtensionPoint.Capability](../extensionfoundation/appextensionpoint/capability.md)
+- [Identifiable](../swift/identifiable.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

@@ -34,7 +34,7 @@ Your characters should be rigged in a standard T-pose. Although some software pa
 
 The torso of a puppeteering skeleton should contain eight joints: the hip joint, which is the root of the joint hierarchy, and seven spine joints. The hip joint and first spine joint overlap when the character is in the T-pose position.
 
-![Illustration showing a humanoid figure with the names of the joints and relationships for the torso.](https://docs-assets.developer.apple.com/published/dc4cbe06094fb66fc4ab3f95b3d87a51/ARKit-body-motion-capture-spine%402x.png)
+![Illustration showing a humanoid figure with the names of the joints and relationships for the torso.](/images/com.apple.arkit/ARKit-body-motion-capture-spine@2x.png)
 
 | Joint name | Parent joint |
 | --- | --- |
@@ -51,7 +51,7 @@ The torso of a puppeteering skeleton should contain eight joints: the hip joint,
 
 The head contains four neck joints extending from the spine, as well as joints for controlling the specific parts of the head, including the eyes and eyelids, nose, chin, and jaw.
 
-![Illustration showing just the head and neck portion of the humanoid character, with the joint names labeled.](https://docs-assets.developer.apple.com/published/7ee4abb6f3f1f5ef58b9d36f761f565c/ARKit-body-motion-capture-head-neck%402x.png)
+![Illustration showing just the head and neck portion of the humanoid character, with the joint names labeled.](/images/com.apple.arkit/ARKit-body-motion-capture-head-neck@2x.png)
 
 | Joint name | Parent joint |
 | --- | --- |
@@ -76,7 +76,7 @@ The head contains four neck joints extending from the spine, as well as joints f
 
 Both arms descend from the seventh spine joint and are comprised of three joints, representing the shoulder, elbow, and wrist.
 
-![Illustration showing a humanoid with the joint names in the arms labeled.](https://docs-assets.developer.apple.com/published/3b888a17da9de0219cc3916f728e41cd/ARKit-body-motion-capture-arms%402x.png)
+![Illustration showing a humanoid with the joint names in the arms labeled.](/images/com.apple.arkit/ARKit-body-motion-capture-arms@2x.png)
 
 | Joint name | Parent joint |
 | --- | --- |
@@ -91,7 +91,7 @@ Both arms descend from the seventh spine joint and are comprised of three joints
 
 The leg and foot joints of the model descend from the hips, with joints for moving the upper legs, lower legs, feet, and toes.
 
-![Illustration of a humanoid figure with the leg joints highlighted and labeled.](https://docs-assets.developer.apple.com/published/bb1e70357edb8d5e3a87a4ae50874508/ARKit-body-motion-capture-legs-feet%402x.png)
+![Illustration of a humanoid figure with the leg joints highlighted and labeled.](/images/com.apple.arkit/ARKit-body-motion-capture-legs-feet@2x.png)
 
 | Joint name | Parent joint |
 | --- | --- |
@@ -110,7 +110,7 @@ The leg and foot joints of the model descend from the hips, with joints for movi
 
 The hands contain many joints, with each of the four fingers comprised of five joints descending from the hand. The thumb has only four joints, but also descends from the hand joint.
 
-![Illustration showing the right hand of the humanoid figure highlighted, with some of the joints named.](https://docs-assets.developer.apple.com/published/500bfa6da116f5127dcd0178402f3e56/ARKit-right-hand-joints%402x.png)
+![Illustration showing the right hand of the humanoid figure highlighted, with some of the joints named.](/images/com.apple.arkit/ARKit-right-hand-joints@2x.png)
 
 | Joint name | Parent joint |
 | --- | --- |
@@ -144,7 +144,7 @@ The hands contain many joints, with each of the four fingers comprised of five j
 
 The structure and naming convention of the joints of the left hand are similar to those of the right.
 
-![Illustration showing the left hand of the humanoid figure highlighted, with some of the joints named.](https://docs-assets.developer.apple.com/published/3c7cea365e43ce5a6cc41b4459ae2d1d/ARKit-left-hand-joints%402x.png)
+![Illustration showing the left hand of the humanoid figure highlighted, with some of the joints named.](/images/com.apple.arkit/ARKit-left-hand-joints@2x.png)
 
 | Joint name | Parent joint |
 | --- | --- |

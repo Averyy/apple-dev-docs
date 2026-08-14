@@ -8,7 +8,7 @@ React to system events, like opening a URL.
 
 Specify view and scene modifiers to indicate how your app responds to certain system events. For example, you can use the [`onOpenURL(perform:)`](view/onopenurl(perform:).md) view modifier to define an action to take when your app receives a universal link, or use the [`backgroundTask(_:action:)`](scene/backgroundtask(_:action:).md) scene modifier to specify an asynchronous task to carry out in response to a background task event, like the completion of a background URL session.
 
-![None](https://docs-assets.developer.apple.com/published/b70766bbbd9cc1bd02c1faddc9c01a4e/system-events-hero%402x.png)
+![None](/images/com.apple.SwiftUI/system-events-hero@2x.png)
 
 ## Topics
 

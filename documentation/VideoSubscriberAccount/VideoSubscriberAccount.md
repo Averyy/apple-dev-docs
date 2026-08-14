@@ -20,7 +20,7 @@ Support TV provider and Apple TV app functionality.
 ## Topics
 
 ### Essentials
-- [Video Subscriber Account updates](../Updates/VideoSubscriberAccount.md)
+- [Video Subscriber Account updates](../updates/videosubscriberaccount.md)
   Learn about important changes in Video Subscriber Account.
 ### TV provider authentication
 - [class VSAccountManager](vsaccountmanager.md)

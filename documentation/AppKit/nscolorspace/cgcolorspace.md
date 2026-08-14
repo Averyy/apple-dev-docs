@@ -16,7 +16,7 @@ var cgColorSpace: CGColorSpace? { get }
 
 #### Discussion
 
-The value of this property is a reference to an Core Graphics color-space object ([`CGColorSpace`](https://developer.apple.com/documentation/CoreGraphics/CGColorSpace)) or `NULL` if the type of color space represented by the receiver cannot be represented by a `CGColorSpace` object.
+The value of this property is a reference to an Core Graphics color-space object ([`CGColorSpace`](https://developer.apple.com/documentation/coregraphics/cgcolorspace)) or `NULL` if the type of color space represented by the receiver cannot be represented by a `CGColorSpace` object.
 
 ## See Also
 

@@ -18,7 +18,7 @@ An array that contains the view’s subviews.
 
 #### Overview
 
-This property inherits from [`UIView`](https://developer.apple.com/documentation/UIKit/UIView).
+This property inherits from [`UIView`](https://developer.apple.com/documentation/uikit/uiview).
 
 ## See Also
 

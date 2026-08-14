@@ -26,7 +26,7 @@ protocol AppEntityAnnotatable
 
 #### Overview
 
-System types adopt the `AppEntityAnnotatable` protocol and use it to store a reference to an app entity. Don’t add support for this protocol to your own custom types. Instead, the system incorporates it into types like [`NSUserActivity`](https://developer.apple.com/documentation/Foundation/NSUserActivity) to support your custom entities. The system types use the presence of an entity to improve system experiences like Apple Intelligence, Siri, and Shortcuts.
+System types adopt the `AppEntityAnnotatable` protocol and use it to store a reference to an app entity. Don’t add support for this protocol to your own custom types. Instead, the system incorporates it into types like [`NSUserActivity`](https://developer.apple.com/documentation/foundation/nsuseractivity) to support your custom entities. The system types use the presence of an entity to improve system experiences like Apple Intelligence, Siri, and Shortcuts.
 
 ## Topics
 

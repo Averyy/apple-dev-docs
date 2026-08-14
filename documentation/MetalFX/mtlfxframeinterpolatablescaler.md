@@ -20,7 +20,7 @@ protocol MTLFXFrameInterpolatableScaler : NSObjectProtocol
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 ### Inherited By
 - [MTL4FXTemporalDenoisedScaler](mtl4fxtemporaldenoisedscaler.md)
 - [MTL4FXTemporalScaler](mtl4fxtemporalscaler.md)

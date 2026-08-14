@@ -8,7 +8,7 @@ Define reportable metadata types, obtain a state reporter for your domain, and r
 
 StateReporting helps track the states your app moves through during use, giving diagnostic tools the context to attribute performance metrics to specific features and conditions. Each state is identified by a string label you provide when reporting a transition, along with optional structured metadata. You define the domains and states that make sense for your app, obtain a reporter for each domain, and report transitions at the right call sites.
 
-To begin using StateReporting, link the framework to your app target and call the API at state transitions. From there, diagnostic tools like [`MetricKit`](https://developer.apple.com/documentation/MetricKit) and Instruments surface your reported state in their reports. Use those reports to attribute performance metrics to the specific features and states in your app.
+To begin using StateReporting, link the framework to your app target and call the API at state transitions. From there, diagnostic tools like [`MetricKit`](https://developer.apple.com/documentation/metrickit) and Instruments surface your reported state in their reports. Use those reports to attribute performance metrics to the specific features and states in your app.
 
 #### Define a State Reporter
 
@@ -71,11 +71,11 @@ Avoid embedding dynamic values directly in a label or stable metadata string, as
 
 You can call [`reporter(for:stableMetadata:volatileMetadata:)`](statereporter/reporter(for:stablemetadata:volatilemetadata:).md) from an app extension, using the same pattern as in your main app. Create or obtain a reporter for the appropriate domain, then call [`reportTransition(to:stableMetadata:volatileMetadata:)`](statereporter/reporttransition(to:stablemetadata:volatilemetadata:).md) at state transitions within the extension.
 
-Because metric data isn’t available for app extensions, state transitions emitted from an extension don’t appear in a [`MetricReport`](https://developer.apple.com/documentation/MetricKit/MetricReport).
+Because metric data isn’t available for app extensions, state transitions emitted from an extension don’t appear in a [`MetricReport`](https://developer.apple.com/documentation/metrickit/metricreport).
 
-Diagnostic reports can include extension state. States emitted by the extension appear in [`states`](https://developer.apple.com/documentation/MetricKit/DiagnosticReport/Environment-swift.struct/states), giving diagnostic tools the full state context at the time of the event. The system delivers diagnostic reports to the main app, not the extension itself.
+Diagnostic reports can include extension state. States emitted by the extension appear in [`states`](https://developer.apple.com/documentation/metrickit/diagnosticreport/environment-swift.struct/states), giving diagnostic tools the full state context at the time of the event. The system delivers diagnostic reports to the main app, not the extension itself.
 
-The extension must register its domains with [`MetricManager`](https://developer.apple.com/documentation/MetricKit/MetricManager) directly. Create a `MetricManager` instance within the extension and pass the relevant domains to [`enabledStateReportingDomains`](https://developer.apple.com/documentation/MetricKit/MetricManager/enabledStateReportingDomains). The extension must both register its domains and emit states and signposts.
+The extension must register its domains with [`MetricManager`](https://developer.apple.com/documentation/metrickit/metricmanager) directly. Create a `MetricManager` instance within the extension and pass the relevant domains to [`enabledStateReportingDomains`](https://developer.apple.com/documentation/metrickit/metricmanager/enabledstatereportingdomains). The extension must both register its domains and emit states and signposts.
 
 #### Define Reportable Metadata
 

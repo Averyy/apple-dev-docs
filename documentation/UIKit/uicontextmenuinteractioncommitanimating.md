@@ -33,7 +33,7 @@ When the user taps in a preview interface to dismiss it, UIKit creates an object
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 - [UIContextMenuInteractionAnimating](uicontextmenuinteractionanimating.md)
 
 ## See Also

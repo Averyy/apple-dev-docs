@@ -22,7 +22,7 @@ func CTRunGetAttributes(_ run: CTRun) -> CFDictionary
 
 #### Return Value
 
-A valid [`CFDictionary`](https://developer.apple.com/documentation/CoreFoundation/CFDictionary) or `NULL` on error or if the run has no attributes.
+A valid [`CFDictionary`](https://developer.apple.com/documentation/corefoundation/cfdictionary) or `NULL` on error or if the run has no attributes.
 
 #### Discussion
 

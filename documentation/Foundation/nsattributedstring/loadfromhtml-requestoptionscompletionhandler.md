@@ -21,7 +21,7 @@ class func fromHTML(request: URLRequest, options: [NSAttributedString.DocumentRe
 ## Parameters
 
 - `request`: A request to fetch an HTML document.
-- `options`: Specifies additional options for loading the document. For a list of possible keys, see [`NSAttributedStringDocumentReadingOptionKey`](https://developer.apple.com/documentation/UIKit/NSAttributedStringDocumentReadingOptionKey).
+- `options`: Specifies additional options for loading the document. For a list of possible keys, see [`NSAttributedStringDocumentReadingOptionKey`](https://developer.apple.com/documentation/uikit/nsattributedstringdocumentreadingoptionkey).
 - `completionHandler`: A completion handler to execute with the results.
 
 ## See Also

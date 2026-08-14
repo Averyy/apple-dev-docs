@@ -53,7 +53,7 @@ protocol MTL4CommandEncoder : NSObjectProtocol
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 ### Inherited By
 - [MTL4ComputeCommandEncoder](mtl4computecommandencoder.md)
 - [MTL4MachineLearningCommandEncoder](mtl4machinelearningcommandencoder.md)

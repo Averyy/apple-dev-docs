@@ -31,7 +31,7 @@ protocol AppEnum : AppValue, StaticDisplayRepresentable, RawRepresentable where 
 
 When you want an app intent parameter or app entity property to have a fixed set of values, set the type of the underlying property to one that adopts the `AppEnum` protocol. In custom code, you use enumerations to limit the number of values available to a property of that type. For example, a fitness app might specify the available workout types using an enumeration instead of a string, because the enumeration requires someone to choose only known values. The `AppEnum` protocol adds metadata that Siri and other system features require to interact with your enumeration or custom type.
 
-Add the `AppEnum` protocol to an existing enumeration or type you plan to use in an app intent or app entity. For best results, base your enumeration on a type that’s easily convertible to a string such as the [`String`](https://developer.apple.com/documentation/Swift/String) or [`Int`](https://developer.apple.com/documentation/Swift/Int) type.
+Add the `AppEnum` protocol to an existing enumeration or type you plan to use in an app intent or app entity. For best results, base your enumeration on a type that’s easily convertible to a string such as the [`String`](https://developer.apple.com/documentation/swift/string) or [`Int`](https://developer.apple.com/documentation/swift/int) type.
 
 The `AppEnum` protocol adds conformance to several other protocols to your type, including the [`TypeDisplayRepresentable`](typedisplayrepresentable.md) and [`CaseDisplayRepresentable`](casedisplayrepresentable.md) protocols. You’re responsible for implementing these protocols and providing descriptions of your type and each of the cases it contains. The following example shows an enumeration that a workout app uses to specify the available activities. The implementations of the [`typeDisplayRepresentation`](typedisplayrepresentable/typedisplayrepresentation.md) and [`caseDisplayRepresentations`](casedisplayrepresentable/casedisplayrepresentations.md) properties provide the protocol-mandated descriptions of the type and each activity. The system uses your descriptions in dialogs and to resolve parameters more quickly.
 
@@ -78,14 +78,14 @@ enum ActivityStyle: String, AppEnum {
 ### Inherits From
 - [AppValue](appvalue.md)
 - [CaseDisplayRepresentable](casedisplayrepresentable.md)
-- [CaseIterable](../Swift/CaseIterable.md)
-- [CustomLocalizedStringResourceConvertible](../Foundation/CustomLocalizedStringResourceConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
+- [CaseIterable](../swift/caseiterable.md)
+- [CustomLocalizedStringResourceConvertible](../foundation/customlocalizedstringresourceconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
 - [PersistentlyIdentifiable](persistentlyidentifiable.md)
-- [RawRepresentable](../Swift/RawRepresentable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [RawRepresentable](../swift/rawrepresentable.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 - [StaticDisplayRepresentable](staticdisplayrepresentable.md)
 - [TypeDisplayRepresentable](typedisplayrepresentable.md)
 ### Inherited By

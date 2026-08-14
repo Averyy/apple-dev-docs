@@ -18,7 +18,7 @@ Find and play songs, audio podcasts, audio books, and more from within your app.
 
 Use the Media Player framework, which is part of [`MusicKit`](https://developer.apple.comhttps://developer.apple.com/musickit/), to control playback of the user’s media from your app. If your app incorporates music, you can use this framework to search for audio content, such as songs, podcasts, and books, in the user’s library. You can then play that content directly or ask the system Music app to play it. For example, a game might give users the option to play their own music while completing a particular game level.
 
-> ❗ **Important**:  To protect user privacy, users need to grant permission for your app to access their media library. Add the [`NSAppleMusicUsageDescription`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSAppleMusicUsageDescription) key to your app’s `Info.plist` file, and include a description of how you intend to use the user’s library. If this key isn’t present, the system terminates your app when it tries to access the user’s library.
+> ❗ **Important**:  To protect user privacy, users need to grant permission for your app to access their media library. Add the [`NSAppleMusicUsageDescription`](https://developer.apple.com/documentation/bundleresources/information-property-list/nsapplemusicusagedescription) key to your app’s `Info.plist` file, and include a description of how you intend to use the user’s library. If this key isn’t present, the system terminates your app when it tries to access the user’s library.
 
 To play content from the user’s library using the Media Player framework, use one of the built-in [`MPMusicPlayerController`](mpmusicplayercontroller.md) objects:
 
@@ -27,14 +27,14 @@ To play content from the user’s library using the Media Player framework, use 
 
 Use media queries to retrieve the items you want to play and to populate the queue for the media player you select. After a user gives your app permission to access their Apple Music account, it can add songs, create playlists, and play songs from Apple Music. If your app detects that the user isn’t an Apple Music subscriber, it can offer a trial.
 
-You can’t play video media items directly using the Media Player framework. To play videos containing [`MPMediaItem`](mpmediaitem.md) objects, use an [`AVPlayer`](https://developer.apple.com/documentation/AVFoundation/AVPlayer) object from [`AVFoundation`](https://developer.apple.com/documentation/AVFoundation). The system player also provides a way to play video items using the system apps.
+You can’t play video media items directly using the Media Player framework. To play videos containing [`MPMediaItem`](mpmediaitem.md) objects, use an [`AVPlayer`](https://developer.apple.com/documentation/avfoundation/avplayer) object from [`AVFoundation`](https://developer.apple.com/documentation/avfoundation). The system player also provides a way to play video items using the system apps.
 
 > ❗ **Important**:  Only use this framework to facilitate playback of the user’s audio content within your app. Don’t gather information about the user’s audio content for any other purpose. For more information about accessing Apple Music content, see the [`App Store review guidelines`](https://developer.apple.comhttps://developer.apple.com/app-store/review/guidelines/#apple-sites-and-services).
 
 ## Topics
 
 ### Essentials
-- [NSAppleMusicUsageDescription](../BundleResources/Information-Property-List/NSAppleMusicUsageDescription.md)
+- [NSAppleMusicUsageDescription](../bundleresources/information-property-list/nsapplemusicusagedescription.md)
   A message that tells people why the app is requesting access to their media library.
 ### Built-in music playback
 - [Playing audio using the built-in music player](playing-audio-using-the-built-in-music-player.md)

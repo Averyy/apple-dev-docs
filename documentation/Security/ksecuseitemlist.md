@@ -22,7 +22,7 @@ let kSecUseItemList: CFString
 
 #### Discussion
 
-The corresponding value is of type [`CFArray`](https://developer.apple.com/documentation/CoreFoundation/CFArray), where the array contains either [`SecKeychainItem`](seckeychainitem.md), [`SecKey`](seckey.md), [`SecCertificate`](seccertificate.md), [`SecIdentity`](secidentity.md), or  (for persistent item references) [`CFData`](https://developer.apple.com/documentation/CoreFoundation/CFData) items. The items in the array must all be of the same type.
+The corresponding value is of type [`CFArray`](https://developer.apple.com/documentation/corefoundation/cfarray), where the array contains either [`SecKeychainItem`](seckeychainitem.md), [`SecKey`](seckey.md), [`SecCertificate`](seccertificate.md), [`SecIdentity`](secidentity.md), or  (for persistent item references) [`CFData`](https://developer.apple.com/documentation/corefoundation/cfdata) items. The items in the array must all be of the same type.
 
 When this attribute is provided, no keychains are searched. Instead, the specified array is treated as the set of all possible items to search (or to add if the function being called is [`SecItemAdd(_:_:)`](secitemadd(_:_:).md)).
 

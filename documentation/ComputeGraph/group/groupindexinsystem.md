@@ -23,7 +23,7 @@ The zero-based index of this group in the system
 
 Use this function to identify which group the current element belongs to, enabling group-specific behaviors and calculations across multiple groups.
 
-> **Note**: ![Graph](https://docs-assets.developer.apple.com/published/3109bf940da7e9e525b0b4eda9fbf2e9/group__groupIndexInSystem.svg)
+> **Note**: ![Graph](/images/com.apple.computegraph/group__groupIndexInSystem.svg)
 
 
 ---

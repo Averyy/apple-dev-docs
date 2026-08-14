@@ -22,7 +22,7 @@ func CFStringConvertEncodingToNSStringEncoding(_ encoding: CFStringEncoding) -> 
 
 #### Return Value
 
-The Cocoa encoding (of type [`NSStringEncoding`](https://developer.apple.com/documentation/Foundation/NSStringEncoding)) that is closest to the Core Foundation encoding `encoding`. The behavior is undefined if an invalid string encoding is passed.
+The Cocoa encoding (of type [`NSStringEncoding`](https://developer.apple.com/documentation/foundation/nsstringencoding)) that is closest to the Core Foundation encoding `encoding`. The behavior is undefined if an invalid string encoding is passed.
 
 #### Discussion
 

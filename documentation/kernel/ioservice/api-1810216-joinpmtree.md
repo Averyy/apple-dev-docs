@@ -18,7 +18,7 @@ A driver uses this method to call its nub when initializing (usually in its `sta
 
 ## Parameters
 
-- `driver`: The driver to be added to the power plane, usually  .
+- `driver`: The driver to be added to the power plane, usually `this`.
 
 ## See Also
 

@@ -19,7 +19,7 @@ var ignoresViewportScaleLimits: Bool { get set }
 
 #### Discussion
 
-When set to [`true`](https://developer.apple.com/documentation/Swift/true), this property overrides the `user-scalable` HTML property in a webpage, and lets the web view scale its webpage content regardless of the author’s intent. The default value of this property is [`false`](https://developer.apple.com/documentation/Swift/false).
+When set to [`true`](https://developer.apple.com/documentation/swift/true), this property overrides the `user-scalable` HTML property in a webpage, and lets the web view scale its webpage content regardless of the author’s intent. The default value of this property is [`false`](https://developer.apple.com/documentation/swift/false).
 
 ## See Also
 

@@ -29,18 +29,18 @@ This method generates a PDF417 barcode as an image. PDF417 is a high-density sta
 
 The PDF417 barcode generator filter uses the following properties:
 
-- **`message`**: An [`NSData`](https://developer.apple.com/documentation/Foundation/NSData) object representing the data to be encoded as a barcode.
-- **`minWidth`**: A `float` representing the minimum width of the barcode’s data area, in pixels as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
-- **`maxWidth`**: A `float` representing the maximum width of the barcode’s data area, in pixels, as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
-- **`maxHeight`**: A `float` representing the maximum height of the barcode’s data area, in pixels, as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
-- **`minHeight`**: A `float` representing the minimum height of the barcode’s data area, in pixels, as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
-- **`dataColums`**: A `float` representing the number of columns in the data area as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
-- **`rows`**: A `float` representing the number of rows in the data area as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
-- **`preferredAspectRatio`**: A `float` representing the desired aspect ratio as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
-- **`compactionMode`**: An option that determines which method the generator uses to compress data as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber). See the note below for the possible values.
-- **`compactStyle`**: A `Boolean` value of `0` or `1` that determines the omission of redundant elements to make the generated barcode more compact as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+- **`message`**: An [`NSData`](https://developer.apple.com/documentation/foundation/nsdata) object representing the data to be encoded as a barcode.
+- **`minWidth`**: A `float` representing the minimum width of the barcode’s data area, in pixels as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
+- **`maxWidth`**: A `float` representing the maximum width of the barcode’s data area, in pixels, as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
+- **`maxHeight`**: A `float` representing the maximum height of the barcode’s data area, in pixels, as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
+- **`minHeight`**: A `float` representing the minimum height of the barcode’s data area, in pixels, as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
+- **`dataColums`**: A `float` representing the number of columns in the data area as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
+- **`rows`**: A `float` representing the number of rows in the data area as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
+- **`preferredAspectRatio`**: A `float` representing the desired aspect ratio as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
+- **`compactionMode`**: An option that determines which method the generator uses to compress data as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber). See the note below for the possible values.
+- **`compactStyle`**: A `Boolean` value of `0` or `1` that determines the omission of redundant elements to make the generated barcode more compact as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
 - **`correctionLevel`**: A `float` between 0 and 8 that determines the amount of redundancy to include in the barcode’s data to prevent errors when the barcode is read. If left unspecified, the generator chooses a correction level based on the size of the message data.
-- **`alwaysSpecifyCompaction`**: A `Boolean` value of `0` or `1` that determines the inclusion of information about the compaction mode in the barcode as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber). If a PDF417 barcode doesn’t contain compaction mode information, the reader assumes text-based compaction.
+- **`alwaysSpecifyCompaction`**: A `Boolean` value of `0` or `1` that determines the inclusion of information about the compaction mode in the barcode as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber). If a PDF417 barcode doesn’t contain compaction mode information, the reader assumes text-based compaction.
 
 The `compactionMode` property takes one of the following numeric values:
 
@@ -74,7 +74,7 @@ func pdf417Barcode(inputMessage: String) -> CIImage {
 }
 ```
 
-![An image of a black and white PDF417 barcode made of vertical lines of various widths and squares representing the encoded data of 47212826.](https://docs-assets.developer.apple.com/published/78d6a4f5ff73d2f4ea6d592ad3a14c84/media-3546316%402x.png)
+![An image of a black and white PDF417 barcode made of vertical lines of various widths and squares representing the encoded data of 47212826.](/images/com.apple.coreimage/media-3546316@2x.png)
 
 ## See Also
 

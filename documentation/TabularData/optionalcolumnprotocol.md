@@ -94,10 +94,10 @@ protocol OptionalColumnProtocol<WrappedElement> : ColumnProtocol
 ## Relationships
 
 ### Inherits From
-- [BidirectionalCollection](../Swift/BidirectionalCollection.md)
-- [Collection](../Swift/Collection.md)
+- [BidirectionalCollection](../swift/bidirectionalcollection.md)
+- [Collection](../swift/collection.md)
 - [ColumnProtocol](columnprotocol.md)
-- [Sequence](../Swift/Sequence.md)
+- [Sequence](../swift/sequence.md)
 ### Conforming Types
 - [Column](column.md)
 - [ColumnSlice](columnslice.md)

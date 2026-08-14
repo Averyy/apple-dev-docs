@@ -24,7 +24,7 @@ class NLGazetteer
 
 Use an [`NLGazetteer`](nlgazetteer.md) to augment an [`NLTagger`](nltagger.md) when you need to tag a specific set of terms (single words or short phrases) with a label. Typically, you add one gazetteer per language, or one language-independent gazetteer, to an [`NLTagger`](nltagger.md) with its [`setGazetteers(_:for:)`](nltagger/setgazetteers(_:for:).md) method. The tagger uses its gazetteers to look up each term it processes. If a gazetteer has a label for a term, the tagger uses that label to tag the term, instead of inferring a tag itself.
 
-Typically, you create a gazetteer at development time, such as in a macOS playground, with Create ML’s [`MLGazetteer`](https://developer.apple.com/documentation/CreateML/MLGazetteer). Alternatively, you can create an [`NLGazetteer`](nlgazetteer.md) at runtime by using [`init(dictionary:language:)`](nlgazetteer/init(dictionary:language:).md).
+Typically, you create a gazetteer at development time, such as in a macOS playground, with Create ML’s [`MLGazetteer`](https://developer.apple.com/documentation/createml/mlgazetteer). Alternatively, you can create an [`NLGazetteer`](nlgazetteer.md) at runtime by using [`init(dictionary:language:)`](nlgazetteer/init(dictionary:language:).md).
 
 ## Topics
 
@@ -52,14 +52,14 @@ Typically, you create a gazetteer at development time, such as in a macOS playgr
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

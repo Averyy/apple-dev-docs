@@ -73,7 +73,7 @@ Matrices provide a convenient way to transform (translate, rotate, and scale) po
 
 The following image shows point *A* translated to *B*, rotated to *C*, and scaled to *D*:
 
-![Graphic showing a 2D point translated, rotated, and scaled. Using the translate matrix, point A at coordinates 3, 2 is translated to point B at coordinates 4, 5. Using the rotate matrix, point B at 4, 5 is rotated to point C at 0.964102, 6.33013. Using the scale matrix, point C at 0.964102, 6.33013 is scaled to point D at 7.71282, 7.91266.](https://docs-assets.developer.apple.com/published/0b379dabbfd3bdeb1460adbbc97ccca2/media-2972223%402x.png)
+![Graphic showing a 2D point translated, rotated, and scaled. Using the translate matrix, point A at coordinates 3, 2 is translated to point B at coordinates 4, 5. Using the rotate matrix, point B at 4, 5 is rotated to point C at 0.964102, 6.33013. Using the scale matrix, point C at 0.964102, 6.33013 is scaled to point D at 7.71282, 7.91266.](/images/com.apple.accelerate/media-2972223@2x.png)
 
 By representing 2D coordinates as a three-element vector, you can transform points using matrix multiplication. Typically, the third component of the vector, `z`, is set to 1, which indicates that the vector represents a position in space.
 
@@ -94,7 +94,7 @@ A translate matrix takes the following form:
 | `0` | `1` | `ty` |
 | `0` | `0` | `1` |
 
-The simd library provides constants for identity matrices (matrices with ones along the diagonal, and zeros elsewhere). The 3 x 3 [`Float`](https://developer.apple.com/documentation/Swift/Float) identity matrix is [`matrix_identity_float3x3`](https://developer.apple.com/documentation/simd/matrix_identity_float3x3).
+The simd library provides constants for identity matrices (matrices with ones along the diagonal, and zeros elsewhere). The 3 x 3 [`Float`](https://developer.apple.com/documentation/swift/float) identity matrix is [`matrix_identity_float3x3`](https://developer.apple.com/documentation/simd/matrix_identity_float3x3).
 
 The following function returns a [`simd_float3x3`](https://developer.apple.com/documentation/simd/simd_float3x3) matrix using the specified `tx` and `ty` translate values by setting the elements in an identity matrix:
 

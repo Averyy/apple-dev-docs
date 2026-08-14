@@ -54,7 +54,7 @@ By default, [`frameSemantics`](arconfiguration/framesemantics-swift.property.md)
 - [var environmentTexturing: ARWorldTrackingConfiguration.EnvironmentTexturing](arbodytrackingconfiguration/environmenttexturing.md)
   The behavior ARKit uses for generating environment textures.
 ### Accessing App Clip Codes
-- [Interacting with App Clip Codes in AR](../AppClip/interacting-with-app-clip-codes-in-ar.md)
+- [Interacting with App Clip Codes in AR](../appclip/interacting-with-app-clip-codes-in-ar.md)
   Display content and provide services in an AR experience with App Clip Codes.
 - [class var supportsAppClipCodeTracking: Bool](arbodytrackingconfiguration/supportsappclipcodetracking.md)
   A flag that indicates if the device tracks App Clip Codes.
@@ -68,13 +68,13 @@ By default, [`frameSemantics`](arconfiguration/framesemantics-swift.property.md)
 ### Inherits From
 - [ARConfiguration](arconfiguration.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCopying](../Foundation/NSCopying.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCopying](../foundation/nscopying.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

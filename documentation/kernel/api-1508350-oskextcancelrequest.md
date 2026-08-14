@@ -27,7 +27,7 @@ Kexts do not need to cancel outstanding requests in their module stop functions;
 ## Parameters
 
 - `requestTag`: A tag identifying a pending request.
-- `contextOut`: If non- , filled with the context pointer originally passed with the request.
+- `contextOut`: If non-`NULL`, filled with the context pointer originally passed with the request.
 
 ## See Also
 

@@ -19,7 +19,7 @@ class let touchBarSlideshowTemplateName: String
 
 #### Discussion
 
-![Template image for slideshow](https://docs-assets.developer.apple.com/published/327f90e42f59da3e22ce99db360bf676/media-2793515%402x.png)
+![Template image for slideshow](/images/com.apple.appkit/media-2793515@2x.png)
 
 Touch Bar template images are exclusively for use in [`NSTouchBarItem`](nstouchbaritem.md) objects and not in onscreen windows.
 

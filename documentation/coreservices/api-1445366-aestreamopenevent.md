@@ -26,7 +26,7 @@ If there is not enough available storage to complete the operation, `AEStreamOpe
 
 ## Parameters
 
-- `event`: An existing Apple event. See  .
+- `event`: An existing Apple event. See [`AppleEvent`](appleevent.md).
 
 ## See Also
 

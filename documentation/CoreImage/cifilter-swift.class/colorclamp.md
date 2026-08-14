@@ -45,7 +45,7 @@ func colorClamp(inputImage: CIImage) -> CIImage {
 }
 ```
 
-![Two versions of a photograph side by side. The photo on the left shows a small bunch of flowers photographed close up, in focus, with good light and no effects. In the photo on the right, a color clamp filter is applied, resulting in a red hue added to the entire image.](https://docs-assets.developer.apple.com/published/054dd9d8f9f07d1863a9245fec10d266/media-3545003%402x.png)
+![Two versions of a photograph side by side. The photo on the left shows a small bunch of flowers photographed close up, in focus, with good light and no effects. In the photo on the right, a color clamp filter is applied, resulting in a red hue added to the entire image.](/images/com.apple.coreimage/media-3545003@2x.png)
 
 ## See Also
 

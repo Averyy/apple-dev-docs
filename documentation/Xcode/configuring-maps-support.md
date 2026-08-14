@@ -10,7 +10,7 @@ An iOS app that’s able to display point-to-point directions can register as a 
 
 A routing app provides specific directions in addition to what Maps supports, such as subway routes, hiking trails, and bike paths. Before you can select the routing modes that your app supports, follow the steps in [`Add a capability`](adding-capabilities-to-your-app#Add-a-capability.md) to add the Maps capability to your app’s target.
 
-![A screenshot of Xcode’s Capabilities library with a list of available capabilities on the left and an information pane on the right. The list shows a range of capabilities from Maps to Siri, and the Maps capability is in a selected state. The text on the information pane explains that, with MapKit, you can create routing apps that users can access from Maps. Your apps can provide specific directions beyond what the Maps app supports, including subway routes, hiking trails, or bike paths.](https://docs-assets.developer.apple.com/published/a05f851a0639bc61e3073396ffe1e82b/maps%402x.png)
+![A screenshot of Xcode’s Capabilities library with a list of available capabilities on the left and an information pane on the right. The list shows a range of capabilities from Maps to Siri, and the Maps capability is in a selected state. The text on the information pane explains that, with MapKit, you can create routing apps that users can access from Maps. Your apps can provide specific directions beyond what the Maps app supports, including subway routes, hiking trails, or bike paths.](/images/com.apple.Xcode/maps@2x.png)
 
 > **Note**: This capability is only applicable to custom routing apps on iOS. You don’t need to add the Maps capability to a macOS app to be able to use the MapKit framework.
 
@@ -25,9 +25,9 @@ steps:
 4. Find the Maps capability.
 5. Select the relevant routing modes by checking the corresponding checkboxes.
 
-![A screenshot of the Maps capability after you add it to a target. The Airplane, Bus, and Ferry routing modes are in an enabled state.](https://docs-assets.developer.apple.com/published/9609f68ccf2d2e3e7a374a7cf1db3cec/routing-modes%402x.png)
+![A screenshot of the Maps capability after you add it to a target. The Airplane, Bus, and Ferry routing modes are in an enabled state.](/images/com.apple.Xcode/routing-modes@2x.png)
 
-Xcode adds the [`MKDirectionsApplicationSupportedModes`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/MKDirectionsApplicationSupportedModes) array to your app’s `Info.plist` file (if not already present) and uses the modes you select to populate the array with the necessary values.
+Xcode adds the [`MKDirectionsApplicationSupportedModes`](https://developer.apple.com/documentation/bundleresources/information-property-list/mkdirectionsapplicationsupportedmodes) array to your app’s `Info.plist` file (if not already present) and uses the modes you select to populate the array with the necessary values.
 
 After you select the necessary routing modes, there are additional configuration steps you must complete before your app can start providing point-to-point directions, such as specifying a directions request document type and declaring your app’s geographic region. For more information, see [`Configuring Your App to Accept Direction Requests`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/UserExperience/Conceptual/LocationAwarenessPG/ProvidingDirections/ProvidingDirections.html#//apple_ref/doc/uid/TP40009497-CH8-SW8).
 

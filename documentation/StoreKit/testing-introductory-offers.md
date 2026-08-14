@@ -20,7 +20,7 @@ Introductory offers are only offered once, but when testing your app, you can re
 2. Tap the expired subscription you want to reactivate. The subscription products that appear are those you configured in App Store Connect under the same subscription group.
 3. If the test account used an introductory offer, then the system diplays a Reset Eligibility button that lets you reset and redeem another introductory offer.
 
-![A screenshot of the edit subscriptions sheet for an app’s subscriptions. The sheet shows the app’s subscription options and the currently selected subscription. Below the subscription options, the sheet displays a Reset Eligibility button and a Cancel Free Trial button.](https://docs-assets.developer.apple.com/published/718f2e24fd660ccad2dfed18105033b6/media-3866189%402x.png)
+![A screenshot of the edit subscriptions sheet for an app’s subscriptions. The sheet shows the app’s subscription options and the currently selected subscription. Below the subscription options, the sheet displays a Reset Eligibility button and a Cancel Free Trial button.](/images/com.apple.storekit/media-3866189@2x.png)
 
 ## See Also
 

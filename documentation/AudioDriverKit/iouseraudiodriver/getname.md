@@ -16,7 +16,7 @@ OSSharedPtr<OSString> GetName();
 
 #### Return Value
 
-A `OSSharedPtr` to an [`OSString`](https://developer.apple.com/documentation/DriverKit/OSString) containing the driver name.
+A `OSSharedPtr` to an [`OSString`](https://developer.apple.com/documentation/driverkit/osstring) containing the driver name.
 
 #### Discussion
 

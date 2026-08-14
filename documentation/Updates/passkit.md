@@ -6,11 +6,11 @@ Learn more about changes to PassKit.
 
 #### Overview
 
-Browse notable changes to [`PassKit (Apple Pay and Wallet)`](https://developer.apple.com/documentation/PassKit).
+Browse notable changes to [`PassKit (Apple Pay and Wallet)`](https://developer.apple.com/documentation/passkit).
 
 #### June 2024
 
-- Use `merchantCategoryCode` to add an optional Merchant Category Code (MCC) to your payment transactions. Add this property to the [`PKPaymentRequest`](https://developer.apple.com/documentation/PassKit/PKPaymentRequest) object to categorize the type of goods or services provided by the merchant.
+- Use `merchantCategoryCode` to add an optional Merchant Category Code (MCC) to your payment transactions. Add this property to the [`PKPaymentRequest`](https://developer.apple.com/documentation/passkit/pkpaymentrequest) object to categorize the type of goods or services provided by the merchant.
 
 ## See Also
 

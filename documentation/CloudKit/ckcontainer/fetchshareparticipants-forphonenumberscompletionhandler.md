@@ -25,7 +25,7 @@ func fetchShareParticipants(forPhoneNumbers phoneNumbers: [String], completionHa
 
 The closure doesn’t return a value and takes the following parameters:
 
-- A dictionary of fetched share participants. The dictionary uses the phone numbers you specify in `phoneNumbers` as its keys. The value of each key is a [`Result`](https://developer.apple.com/documentation/Swift/Result) that contains either the corresponding fetched share participant, or an error that describes why CloudKit can’t fetch that share participant.
+- A dictionary of fetched share participants. The dictionary uses the phone numbers you specify in `phoneNumbers` as its keys. The value of each key is a [`Result`](https://developer.apple.com/documentation/swift/result) that contains either the corresponding fetched share participant, or an error that describes why CloudKit can’t fetch that share participant.
 
 CloudKit can translate any valid phone number into a share participant. If the phone number doesn’t correspond to a known iCloud account, then at share-accept-time, CloudKit offers the accepting participant a vetting process. The accepting participant uses this vetting process to link the phone number to an iCloud account.
 

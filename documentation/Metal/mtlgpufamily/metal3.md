@@ -26,8 +26,8 @@ The following platform and GPU combinations support Metal 3:
 |  | GPUs |
 | --- | --- |
 | iOS | A14 and later |
-| iPadOS | A14 and later ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) M1 and later |
-| macOS | M1 and later ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) AMD Vega ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) AMD 5000-series ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) AMD 6000-series ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) Intel Iris Pro Graphics  ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) Intel UHD Graphics 630 |
+| iPadOS | A14 and later ![None](/images/com.apple.metal/spacer.png) M1 and later |
+| macOS | M1 and later ![None](/images/com.apple.metal/spacer.png) AMD Vega ![None](/images/com.apple.metal/spacer.png) AMD 5000-series ![None](/images/com.apple.metal/spacer.png) AMD 6000-series ![None](/images/com.apple.metal/spacer.png) Intel Iris Pro Graphics  ![None](/images/com.apple.metal/spacer.png) Intel UHD Graphics 630 |
 
 ## See Also
 

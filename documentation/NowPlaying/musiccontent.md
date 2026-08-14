@@ -81,7 +81,7 @@ var content: some MediaContentRepresentable {
 ## Relationships
 
 ### Conforms To
-- [Identifiable](../Swift/Identifiable.md)
+- [Identifiable](../swift/identifiable.md)
 - [MediaContentRepresentable](mediacontentrepresentable.md)
 
 ## See Also

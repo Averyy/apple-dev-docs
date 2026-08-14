@@ -22,7 +22,7 @@ func clip(to rect: CGRect)
 
 To restrict the active drawing area to the specified rectangle, call this method before executing drawing commands.
 
-To use a more complex shape as a clipping mask, use the [`clip(to:mask:)`](https://developer.apple.com/documentation/CoreGraphics/CGContext/clip(to:mask:)) method on the underlying Core Graphics context, accessed through the [`cgContext`](uigraphicsrenderercontext/cgcontext.md) property.
+To use a more complex shape as a clipping mask, use the [`clip(to:mask:)`](https://developer.apple.com/documentation/coregraphics/cgcontext/clip(to:mask:)) method on the underlying Core Graphics context, accessed through the [`cgContext`](uigraphicsrenderercontext/cgcontext.md) property.
 
 ## Parameters
 

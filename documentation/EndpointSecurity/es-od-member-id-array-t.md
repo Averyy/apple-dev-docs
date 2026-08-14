@@ -26,7 +26,7 @@ struct es_od_member_id_array_t
 ## Relationships
 
 ### Conforms To
-- [Sendable](../Swift/Sendable.md)
+- [Sendable](../swift/sendable.md)
 
 ## See Also
 

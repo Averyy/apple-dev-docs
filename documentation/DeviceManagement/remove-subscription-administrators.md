@@ -34,8 +34,10 @@ Send a POST request to revoke administrator access from users for specific subsc
 
 ### Request
 - [object ManageSubscriptionAdminsRequest](managesubscriptionadminsrequest.md)
+  The request body for adding or removing subscription administrators.
 ### Response
 - [object ManageSubscriptionAdminsResponse](managesubscriptionadminsresponse.md)
+  The confirmation response that the server returns after adding or removing subscription administrators.
 - [object ErrorResponse](errorresponse.md)
   The response that contains the error that occurs.
 ### Content Metadata
@@ -52,6 +54,10 @@ Send a POST request to revoke administrator access from users for specific subsc
 
 ## See Also
 
+- [Enable Subscriptions](enable-subscriptions.md)
+  Declare that your device management service supports subscription management.
+- [Disable Subscriptions](disable-subscriptions.md)
+  Declare that your device management service doesn’t support subscription management.
 - [Get Subscriptions](get-subscriptions.md)
   Get the subscriptions that your organization manages.
 - [Get Subscription Assignments](get-subscription-assignments.md)

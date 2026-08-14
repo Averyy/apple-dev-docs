@@ -16,7 +16,7 @@ let IKSlideshowPDFDisplayBox: String
 
 #### Discussion
 
-The associated value is a type of display box, such as [`PDFDisplayBox.mediaBox`](https://developer.apple.com/documentation/PDFKit/PDFDisplayBox/mediaBox) or [`PDFDisplayBox.mediaBox`](https://developer.apple.com/documentation/PDFKit/PDFDisplayBox/mediaBox). See [`PDFPage`](https://developer.apple.com/documentation/PDFKit/PDFPage) for more information.
+The associated value is a type of display box, such as [`PDFDisplayBox.mediaBox`](https://developer.apple.com/documentation/pdfkit/pdfdisplaybox/mediabox) or [`PDFDisplayBox.mediaBox`](https://developer.apple.com/documentation/pdfkit/pdfdisplaybox/mediabox). See [`PDFPage`](https://developer.apple.com/documentation/pdfkit/pdfpage) for more information.
 
 ## See Also
 

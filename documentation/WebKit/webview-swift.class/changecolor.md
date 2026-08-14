@@ -16,7 +16,7 @@ func changeColor(_ sender: Any?)
 
 #### Discussion
 
-This method is invoked by the `NSColorPanel` sender and behaves similar to the [`changeColor(_:)`](https://developer.apple.com/documentation/AppKit/NSTextView/changeColor(_:)) method in [`NSTextView`](https://developer.apple.com/documentation/AppKit/NSTextView).
+This method is invoked by the `NSColorPanel` sender and behaves similar to the [`changeColor(_:)`](https://developer.apple.com/documentation/appkit/nstextview/changecolor(_:)) method in [`NSTextView`](https://developer.apple.com/documentation/appkit/nstextview).
 
 ## Parameters
 

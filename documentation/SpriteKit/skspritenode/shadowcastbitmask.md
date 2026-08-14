@@ -26,7 +26,7 @@ var shadowCastBitMask: UInt32 { get set }
 
 #### Discussion
 
-To determine whether this sprite blocks the light (casting a shadow), the sprite’s [`shadowedBitMask`](skspritenode/shadowedbitmask.md) property is tested against the light’s [`categoryBitMask`](https://developer.apple.com/documentation/SceneKit/SCNLight/categoryBitMask) property by performing a logical AND operation. If the comparison results in a nonzero value, the sprite casts a shadow past itself.
+To determine whether this sprite blocks the light (casting a shadow), the sprite’s [`shadowedBitMask`](skspritenode/shadowedbitmask.md) property is tested against the light’s [`categoryBitMask`](https://developer.apple.com/documentation/scenekit/scnlight/categorybitmask) property by performing a logical AND operation. If the comparison results in a nonzero value, the sprite casts a shadow past itself.
 
 ## See Also
 

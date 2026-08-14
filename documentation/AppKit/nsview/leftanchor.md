@@ -16,7 +16,7 @@ var leftAnchor: NSLayoutXAxisAnchor { get }
 
 #### Discussion
 
-Use this anchor to create constraints with the view’s left edge. You can only combine this anchor with a subset of the [`NSLayoutXAxisAnchor`](https://developer.apple.com/documentation/UIKit/NSLayoutXAxisAnchor) anchors. You can combine a `leftAnchor` with another `leftAnchor`, a `rightAnchor`, or a `centerXAnchor`. For more information, see [`NSLayoutAnchor`](https://developer.apple.com/documentation/UIKit/NSLayoutAnchor).
+Use this anchor to create constraints with the view’s left edge. You can only combine this anchor with a subset of the [`NSLayoutXAxisAnchor`](https://developer.apple.com/documentation/uikit/nslayoutxaxisanchor) anchors. You can combine a `leftAnchor` with another `leftAnchor`, a `rightAnchor`, or a `centerXAnchor`. For more information, see [`NSLayoutAnchor`](https://developer.apple.com/documentation/uikit/nslayoutanchor).
 
 ## See Also
 

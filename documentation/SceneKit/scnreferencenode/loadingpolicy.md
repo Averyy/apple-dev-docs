@@ -22,7 +22,7 @@ var loadingPolicy: SCNReferenceLoadingPolicy { get set }
 
 #### Discussion
 
-If this property’s value is [`SCNReferenceLoadingPolicy.immediate`](scnreferenceloadingpolicy/immediate.md) (the default), instantiating a reference node from an archive (using the [`NSKeyedUnarchiver`](https://developer.apple.com/documentation/Foundation/NSKeyedUnarchiver) class) automatically loads the node’s external content. Set this property to [`SCNReferenceLoadingPolicy.onDemand`](scnreferenceloadingpolicy/ondemand.md) before archiving an [`SCNReferenceNode`](scnreferencenode.md) object if you don’t want that reference node to automatically load its content when unarchived. In that case, call the [`load()`](scnreferencenode/load().md) method after unarchiving when you want to load the node’s content.
+If this property’s value is [`SCNReferenceLoadingPolicy.immediate`](scnreferenceloadingpolicy/immediate.md) (the default), instantiating a reference node from an archive (using the [`NSKeyedUnarchiver`](https://developer.apple.com/documentation/foundation/nskeyedunarchiver) class) automatically loads the node’s external content. Set this property to [`SCNReferenceLoadingPolicy.onDemand`](scnreferenceloadingpolicy/ondemand.md) before archiving an [`SCNReferenceNode`](scnreferencenode.md) object if you don’t want that reference node to automatically load its content when unarchived. In that case, call the [`load()`](scnreferencenode/load().md) method after unarchiving when you want to load the node’s content.
 
 ## See Also
 

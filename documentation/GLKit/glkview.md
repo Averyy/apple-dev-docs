@@ -20,7 +20,7 @@ class GLKView
 
 The [`GLKView`](glkview.md) class simplifies the effort required to create an OpenGL ES application by  directly managing a framebuffer object on your behalf; your application simply needs to draw into the framebuffer when the contents need to be updated.
 
-To use this class in your application, create a new [`GLKView`](glkview.md) object and provide it an OpenGL ES context. Then, modify the view’s [`drawableColorFormat`](glkview/drawablecolorformat.md), [`drawableDepthFormat`](glkview/drawabledepthformat.md), [`drawableStencilFormat`](glkview/drawablestencilformat.md), and [`drawableMultisample`](glkview/drawablemultisample.md) properties to configure the format of the drawable’s framebuffer object. After this, the view automatically creates or updates the framebuffer object whenever the view must be redrawn. A [`GLKView`](glkview.md) object uses the regular view drawing cycle for a [`UIView`](https://developer.apple.com/documentation/UIKit/UIView)object, calling its [`draw(_:)`](https://developer.apple.com/documentation/UIKit/UIView/draw(_:)) method whenever the contents of the view need to be updated. Before calling its `draw `method, the view makes its [`EAGLContext`](https://developer.apple.com/documentation/OpenGLES/EAGLContext) object the current OpenGL ES context and binds its framebuffer object to the OpenGL ES context as the target for rendering commands. Your application’s implementation of the `draw` method should call one or more OpenGL ES functions to render an image into the framebuffer object. Then, the view resolves any multisampling that you may have enabled and delivers the finished results.
+To use this class in your application, create a new [`GLKView`](glkview.md) object and provide it an OpenGL ES context. Then, modify the view’s [`drawableColorFormat`](glkview/drawablecolorformat.md), [`drawableDepthFormat`](glkview/drawabledepthformat.md), [`drawableStencilFormat`](glkview/drawablestencilformat.md), and [`drawableMultisample`](glkview/drawablemultisample.md) properties to configure the format of the drawable’s framebuffer object. After this, the view automatically creates or updates the framebuffer object whenever the view must be redrawn. A [`GLKView`](glkview.md) object uses the regular view drawing cycle for a [`UIView`](https://developer.apple.com/documentation/uikit/uiview)object, calling its [`draw(_:)`](https://developer.apple.com/documentation/uikit/uiview/draw(_:)) method whenever the contents of the view need to be updated. Before calling its `draw `method, the view makes its [`EAGLContext`](https://developer.apple.com/documentation/opengles/eaglcontext) object the current OpenGL ES context and binds its framebuffer object to the OpenGL ES context as the target for rendering commands. Your application’s implementation of the `draw` method should call one or more OpenGL ES functions to render an image into the framebuffer object. Then, the view resolves any multisampling that you may have enabled and delivers the finished results.
 
 > ❗ **Important**:  Your drawing method should only modify the contents of the framebuffer object. Never attempt to read the pixel information from the underlying framebuffer object, modify or dispose of the framebuffer object, or read its other properties by calling OpenGL ES functions. Instead, rely on the properties and methods provided by the [`GLKView`](glkview.md) class.
 
@@ -79,36 +79,34 @@ Typically, there is no need to subclass the [`GLKView`](glkview.md) class. Inste
 ## Relationships
 
 ### Inherits From
-- [UIView](../UIKit/UIView.md)
+- [UIView](../uikit/uiview.md)
 ### Conforms To
-- [CALayerDelegate](../QuartzCore/CALayerDelegate.md)
-- [CLBodyIdentifiable](../CoreLocation/CLBodyIdentifiable.md)
-- [CMBodyIdentifiable](../CoreMotion/CMBodyIdentifiable.md)
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCoding](../Foundation/NSCoding.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
-- [UIAccessibilityIdentification](../UIKit/UIAccessibilityIdentification.md)
-- [UIActivityItemsConfigurationProviding](../UIKit/UIActivityItemsConfigurationProviding.md)
-- [UIAppearance](../UIKit/UIAppearance.md)
-- [UIAppearanceContainer](../UIKit/UIAppearanceContainer.md)
-- [UICoordinateSpace](../UIKit/UICoordinateSpace.md)
-- [UIDynamicItem](../UIKit/UIDynamicItem.md)
-- [UIFocusEnvironment](../UIKit/UIFocusEnvironment.md)
-- [UIFocusItem](../UIKit/UIFocusItem.md)
-- [UIFocusItemContainer](../UIKit/UIFocusItemContainer.md)
-- [UILargeContentViewerItem](../UIKit/UILargeContentViewerItem.md)
-- [UIPasteConfigurationSupporting](../UIKit/UIPasteConfigurationSupporting.md)
-- [UIPopoverPresentationControllerSourceItem](../UIKit/UIPopoverPresentationControllerSourceItem.md)
-- [UIResponderStandardEditActions](../UIKit/UIResponderStandardEditActions.md)
-- [UITraitChangeObservable](../UIKit/UITraitChangeObservable-67e94.md)
-- [UITraitEnvironment](../UIKit/UITraitEnvironment.md)
-- [UIUserActivityRestoring](../UIKit/UIUserActivityRestoring.md)
+- [CALayerDelegate](../quartzcore/calayerdelegate.md)
+- [CLBodyIdentifiable](../corelocation/clbodyidentifiable.md)
+- [CMBodyIdentifiable](../coremotion/cmbodyidentifiable.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCoding](../foundation/nscoding.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [UIAccessibilityIdentification](../uikit/uiaccessibilityidentification.md)
+- [UIActivityItemsConfigurationProviding](../uikit/uiactivityitemsconfigurationproviding.md)
+- [UIAppearance](../uikit/uiappearance.md)
+- [UIAppearanceContainer](../uikit/uiappearancecontainer.md)
+- [UICoordinateSpace](../uikit/uicoordinatespace.md)
+- [UIDynamicItem](../uikit/uidynamicitem.md)
+- [UIFocusEnvironment](../uikit/uifocusenvironment.md)
+- [UIFocusItem](../uikit/uifocusitem.md)
+- [UIFocusItemContainer](../uikit/uifocusitemcontainer.md)
+- [UILargeContentViewerItem](../uikit/uilargecontentvieweritem.md)
+- [UIPasteConfigurationSupporting](../uikit/uipasteconfigurationsupporting.md)
+- [UIPopoverPresentationControllerSourceItem](../uikit/uipopoverpresentationcontrollersourceitem.md)
+- [UIResponderStandardEditActions](../uikit/uiresponderstandardeditactions.md)
+- [UITraitChangeObservable](../uikit/uitraitchangeobservable-67e94.md)
+- [UITraitEnvironment](../uikit/uitraitenvironment.md)
+- [UIUserActivityRestoring](../uikit/uiuseractivityrestoring.md)
 
 ## See Also
 

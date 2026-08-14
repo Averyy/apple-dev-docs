@@ -22,7 +22,7 @@ var streamDescription: UnsafePointer<AudioStreamBasicDescription> { get }
 
 #### Discussion
 
-Returns an [`AudioStreamBasicDescription`](https://developer.apple.com/documentation/CoreAudioTypes/AudioStreamBasicDescription) that you use with lower-level audio APIs.
+Returns an [`AudioStreamBasicDescription`](https://developer.apple.com/documentation/coreaudiotypes/audiostreambasicdescription) that you use with lower-level audio APIs.
 
 
 ---

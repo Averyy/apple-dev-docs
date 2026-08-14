@@ -14,7 +14,7 @@ Offer In-App Purchases and manage entitlements using signed transactions and sta
 
 The sample project demonstrates how to use StoreKit in a SwiftUI-based iOS app with a simulated app server, SKDemoServer. SKDemoServer is a Swift package that acts as the app’s backend by vending product identifiers and persisting consumable purchase entitlements using SwiftData.
 
-To test your implementation of In-App Purchases using StoreKit, you can use StoreKit Testing in Xcode and the sandbox environment. For more information, see [`Testing at all stages of development with Xcode and the sandbox`](testing-at-all-stages-of-development-with-xcode-and-the-sandbox.md), [`Testing In-App Purchases with sandbox`](testing-in-app-purchases-with-sandbox.md), and [`Setting up StoreKit Testing in Xcode`](https://developer.apple.com/documentation/Xcode/setting-up-storekit-testing-in-xcode).
+To test your implementation of In-App Purchases using StoreKit, you can use StoreKit Testing in Xcode and the sandbox environment. For more information, see [`Testing at all stages of development with Xcode and the sandbox`](testing-at-all-stages-of-development-with-xcode-and-the-sandbox.md), [`Testing In-App Purchases with sandbox`](testing-in-app-purchases-with-sandbox.md), and [`Setting up StoreKit Testing in Xcode`](https://developer.apple.com/documentation/xcode/setting-up-storekit-testing-in-xcode).
 
 > **Note**: This sample code project is associated with WWDC26 session 210: [`What’s new in Apple In-App Purchase`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2026/210).
 
@@ -24,10 +24,10 @@ This sample code project implements StoreKit Testing in Xcode to let you test In
 
 To test the sample in Xcode:
 
-1. Select the sample target, then configure it to use your Developer team for signing. For more information, see “Assign the project to a team” in [`Preparing your app for distribution`](https://developer.apple.com/documentation/Xcode/preparing-your-app-for-distribution).
-2. Edit the SKDemo “Run” scheme, and select `Products.storekit` for StoreKit configuration. For more information, see “Enable StoreKit Testing in Xcode” in [`Setting up StoreKit Testing in Xcode`](https://developer.apple.com/documentation/Xcode/setting-up-storekit-testing-in-xcode).
+1. Select the sample target, then configure it to use your Developer team for signing. For more information, see “Assign the project to a team” in [`Preparing your app for distribution`](https://developer.apple.com/documentation/xcode/preparing-your-app-for-distribution).
+2. Edit the SKDemo “Run” scheme, and select `Products.storekit` for StoreKit configuration. For more information, see “Enable StoreKit Testing in Xcode” in [`Setting up StoreKit Testing in Xcode`](https://developer.apple.com/documentation/xcode/setting-up-storekit-testing-in-xcode).
 3. Build and run the sample app on a device or in the Simulator.
-4. The sample app displays a list of products available for sale in `Products.storekit` upon launching. If the sample app fails to display an In-App Purchase, see [`TN3185: Troubleshooting In-App Purchases availability in Xcode`](https://developer.apple.com/documentation/Technotes/tn3185-troubleshooting-in-app-purchases-availability-in-xcode).
+4. The sample app displays a list of products available for sale in `Products.storekit` upon launching. If the sample app fails to display an In-App Purchase, see [`TN3185: Troubleshooting In-App Purchases availability in Xcode`](https://developer.apple.com/documentation/technotes/tn3185-troubleshooting-in-app-purchases-availability-in-xcode).
 
 ##### Test the Sample Code Project in the Sandbox Environment
 
@@ -43,12 +43,12 @@ To prepare this sample code project to run in the sandbox, perform the following
 
 To prepare this sample code project to use information from App Store Connect, perform the following steps in Xcode:
 
-1. Select the sample target, then change the bundle ID to your testing app’s bundle ID. For more information, see “Set the bundle ID” in [`Preparing your app for distribution`](https://developer.apple.com/documentation/Xcode/preparing-your-app-for-distribution).
-2. Configure the target to use your Developer team for signing. For more information, see “Assign the project to a team” in [`Preparing your app for distribution`](https://developer.apple.com/documentation/Xcode/preparing-your-app-for-distribution).
-3. Edit the SKDemo “Run” scheme, and remove `Products.storekit` from StoreKit configuration. For more information, see “Disable StoreKit Testing in Xcode” in [`Setting up StoreKit Testing in Xcode`](https://developer.apple.com/documentation/Xcode/setting-up-storekit-testing-in-xcode).
+1. Select the sample target, then change the bundle ID to your testing app’s bundle ID. For more information, see “Set the bundle ID” in [`Preparing your app for distribution`](https://developer.apple.com/documentation/xcode/preparing-your-app-for-distribution).
+2. Configure the target to use your Developer team for signing. For more information, see “Assign the project to a team” in [`Preparing your app for distribution`](https://developer.apple.com/documentation/xcode/preparing-your-app-for-distribution).
+3. Edit the SKDemo “Run” scheme, and remove `Products.storekit` from StoreKit configuration. For more information, see “Disable StoreKit Testing in Xcode” in [`Setting up StoreKit Testing in Xcode`](https://developer.apple.com/documentation/xcode/setting-up-storekit-testing-in-xcode).
 4. In the `Server.swift` file, replace 3F19ED53 with your new SKDemo+ subscription Group ID and C0372950 with your new Car Wash subscription Group ID from App Store Connect.
 
-You’re now ready to test this sample in the sandbox environment. Sign in to the device with a Sandbox Apple Account, then build and run this sample in Xcode. The sample app displays a list of products available for sale in the App Store upon launching. If the sample app fails to display an In-App Purchase, see [`TN3186: Troubleshooting In-App Purchases availability in the sandbox`](https://developer.apple.com/documentation/Technotes/tn3186-troubleshooting-in-app-purchases-availability-in-the-sandbox).
+You’re now ready to test this sample in the sandbox environment. Sign in to the device with a Sandbox Apple Account, then build and run this sample in Xcode. The sample app displays a list of products available for sale in the App Store upon launching. If the sample app fails to display an In-App Purchase, see [`TN3186: Troubleshooting In-App Purchases availability in the sandbox`](https://developer.apple.com/documentation/technotes/tn3186-troubleshooting-in-app-purchases-availability-in-the-sandbox).
 
 ## See Also
 

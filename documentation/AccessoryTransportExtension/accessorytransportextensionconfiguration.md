@@ -19,9 +19,9 @@ protocol AccessoryTransportExtensionConfiguration : AppExtensionConfiguration
 ## Relationships
 
 ### Inherits From
-- [AppExtensionConfiguration](../ExtensionFoundation/AppExtensionConfiguration.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [AppExtensionConfiguration](../extensionfoundation/appextensionconfiguration.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 
@@ -29,7 +29,7 @@ protocol AccessoryTransportExtensionConfiguration : AppExtensionConfiguration
   A protocol for an extension that transmits data to an accessory you develop.
 - [class AccessoryTransportSession](accessorytransportsession.md)
   A class that manages a transport session between the extension and the system.
-- [Wi-Fi Infrastructure](../WiFiInfrastructure/WiFiInfrastructure.md)
+- [Wi-Fi Infrastructure](../wifiinfrastructure/wifiinfrastructure.md)
   Share Wi-Fi network credentials securely between devices and connected accessories.
 
 

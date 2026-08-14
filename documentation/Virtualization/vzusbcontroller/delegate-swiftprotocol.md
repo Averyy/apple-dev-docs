@@ -26,7 +26,7 @@ A class conforming to the VZUSBControllerDelegate protocol can provide methods t
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 
 ---

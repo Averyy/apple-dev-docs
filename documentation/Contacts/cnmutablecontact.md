@@ -101,19 +101,19 @@ To remove the value for a property, set string and array properties to empty, an
 ### Inherits From
 - [CNContact](cncontact.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [Identifiable](../Swift/Identifiable.md)
-- [NSCoding](../Foundation/NSCoding.md)
-- [NSCopying](../Foundation/NSCopying.md)
-- [NSItemProviderReading](../Foundation/NSItemProviderReading.md)
-- [NSItemProviderWriting](../Foundation/NSItemProviderWriting.md)
-- [NSMutableCopying](../Foundation/NSMutableCopying.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [NSSecureCoding](../Foundation/NSSecureCoding.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [Identifiable](../swift/identifiable.md)
+- [NSCoding](../foundation/nscoding.md)
+- [NSCopying](../foundation/nscopying.md)
+- [NSItemProviderReading](../foundation/nsitemproviderreading.md)
+- [NSItemProviderWriting](../foundation/nsitemproviderwriting.md)
+- [NSMutableCopying](../foundation/nsmutablecopying.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSSecureCoding](../foundation/nssecurecoding.md)
 
 ## See Also
 

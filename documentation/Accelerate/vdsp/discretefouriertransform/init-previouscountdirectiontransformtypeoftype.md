@@ -92,7 +92,7 @@ The following tables show the complete list of supported lengths for different v
 - `count`: The number of complex elements.
 - `direction`: A flag that specifies the transform direction.
 - `transformType`: A flag that specifies whether the forward transform is real-to-complex or complex-to-complex.
-- `ofType`: The data type for the discrete Fourier transform operation. For split-complex operations, this needs to be be either [`Float`](https://developer.apple.com/documentation/Swift/Float) or [`Double`](https://developer.apple.com/documentation/Swift/Double). For interleaved operations, this needs to be either [`DSPComplex`](dspcomplex.md) or [`DSPDoubleComplex`](dspdoublecomplex.md).
+- `ofType`: The data type for the discrete Fourier transform operation. For split-complex operations, this needs to be be either [`Float`](https://developer.apple.com/documentation/swift/float) or [`Double`](https://developer.apple.com/documentation/swift/double). For interleaved operations, this needs to be either [`DSPComplex`](dspcomplex.md) or [`DSPDoubleComplex`](dspdoublecomplex.md).
 
 
 ---

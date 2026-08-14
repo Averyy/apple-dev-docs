@@ -24,7 +24,7 @@ This sample demonstrates how to refine the system provided glass effect in toolb
 
 The system applies Liquid Glass to the toolbar items automatically.
 
-![An image of the landmark detail view for Mount Fuji on an iPad, with the toolbar and a portion of the sidebar visible. The toolbar items show the Liquid Glass effect. From the leading to trailing edge, there is a back button, share button, favorite button, collections button, info button, and a search bar.](https://docs-assets.developer.apple.com/published/8469736ee2a49f0c1638d7780cfd358a/Landmarks-Building-an-app-with-Liquid-Glass-4%402x.png)
+![An image of the landmark detail view for Mount Fuji on an iPad, with the toolbar and a portion of the sidebar visible. The toolbar items show the Liquid Glass effect. From the leading to trailing edge, there is a back button, share button, favorite button, collections button, info button, and a search bar.](/images/com.apple.SwiftUI/Landmarks-Building-an-app-with-Liquid-Glass-4@2x.png)
 
 #### Organize the Toolbar Items Into Logical Groupings
 

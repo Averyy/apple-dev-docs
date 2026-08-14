@@ -6,11 +6,11 @@ Create click-through web ads that attribute App Store app installations to your 
 
 #### Overview
 
-The web provides a broad platform for advertising apps to a wide audience. In iOS 16.1 and later, ad networks can use the [`SKAdNetwork for Web Ads`](SKAdNetworkforWebAds.md) API to get [`SKAdNetwork`](https://developer.apple.com/documentation/StoreKit/SKAdNetwork) attributions for App Store app installations that originate from web ads in Safari.
+The web provides a broad platform for advertising apps to a wide audience. In iOS 16.1 and later, ad networks can use the [`SKAdNetwork for Web Ads`](SKAdNetworkforWebAds.md) API to get [`SKAdNetwork`](https://developer.apple.com/documentation/storekit/skadnetwork) attributions for App Store app installations that originate from web ads in Safari.
 
 ##### Register an Ad Network
 
-Before creating an attributable ad link, you need to register your ad network with Apple. For information, see [`Registering an ad network`](https://developer.apple.com/documentation/StoreKit/registering-an-ad-network).
+Before creating an attributable ad link, you need to register your ad network with Apple. For information, see [`Registering an ad network`](https://developer.apple.com/documentation/storekit/registering-an-ad-network).
 
 ##### Create a Link with the Expected Format
 
@@ -23,7 +23,7 @@ attributionSourceNonce="t8naKxXHTzuTJhNfljADPQ">
 </a>
 ```
 
-Provide the following values to retrieve the full [`SKAdNetwork`](https://developer.apple.com/documentation/StoreKit/SKAdNetwork) attribution information when a person clicks the ad:
+Provide the following values to retrieve the full [`SKAdNetwork`](https://developer.apple.com/documentation/storekit/skadnetwork) attribution information when a person clicks the ad:
 
 - **`{itunes_item_id}`**: The App Store ID of the app that the ad impression advertises.
 - **`attributionDestination`**: The effective top-level domain and one more preceding domain component (eTLD+1) representation of the ad network that seeks ad attribution. This value needs to match the `source_domain` value in the request and response for [`Get a Signed Web Ad Impression Payload`](get-a-signed-skadnetwork-ad-payload-for-a-web-ad..md).

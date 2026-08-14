@@ -6,20 +6,20 @@ Learn about important changes to Core Spotlight.
 
 #### Overview
 
-Browse notable changes in [`Core Spotlight`](https://developer.apple.com/documentation/CoreSpotlight).
+Browse notable changes in [`Core Spotlight`](https://developer.apple.com/documentation/corespotlight).
 
 #### July 2026
 
-- Follow the [`Searching indexed content with natural language`](https://developer.apple.com/documentation/CoreSpotlight/searching-indexed-content-with-natural-language) sample app to learn how you can give a language model access to your app’s Core Spotlight index and let people use natural language to search your app’s content.
+- Follow the [`Searching indexed content with natural language`](https://developer.apple.com/documentation/corespotlight/searching-indexed-content-with-natural-language) sample app to learn how you can give a language model access to your app’s Core Spotlight index and let people use natural language to search your app’s content.
 
 #### June 2026
 
-- Make your app’s indexed content available to Foundation models using [`SpotlightSearchTool`](https://developer.apple.com/documentation/CoreSpotlight/SpotlightSearchTool).
-- Refer to your Spotlight indexes when reindexing entities using [`CSSearchableIndexDescription`](https://developer.apple.com/documentation/CoreSpotlight/CSSearchableIndexDescription).
+- Make your app’s indexed content available to Foundation models using [`SpotlightSearchTool`](https://developer.apple.com/documentation/corespotlight/spotlightsearchtool).
+- Refer to your Spotlight indexes when reindexing entities using [`CSSearchableIndexDescription`](https://developer.apple.com/documentation/corespotlight/cssearchableindexdescription).
 
 #### June 2024
 
-- Search your indexed content for items that are similar in meaning to the query string, but not necessarily a lexical match, using [`CSUserQuery`](https://developer.apple.com/documentation/CoreSpotlight/CSUserQuery). Disable this semantic search support using the [`disableSemanticSearch`](https://developer.apple.com/documentation/CoreSpotlight/CSUserQueryContext/disableSemanticSearch) property of [`CSUserQueryContext`](https://developer.apple.com/documentation/CoreSpotlight/CSUserQueryContext).
+- Search your indexed content for items that are similar in meaning to the query string, but not necessarily a lexical match, using [`CSUserQuery`](https://developer.apple.com/documentation/corespotlight/csuserquery). Disable this semantic search support using the [`disableSemanticSearch`](https://developer.apple.com/documentation/corespotlight/csuserquerycontext/disablesemanticsearch) property of [`CSUserQueryContext`](https://developer.apple.com/documentation/corespotlight/csuserquerycontext).
 
 ## See Also
 

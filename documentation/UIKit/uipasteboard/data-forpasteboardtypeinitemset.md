@@ -19,7 +19,7 @@ func data(forPasteboardType pasteboardType: String, inItemSet itemSet: IndexSet?
 
 #### Return Value
 
-An array of [`NSData`](https://developer.apple.com/documentation/Foundation/NSData) objects or, if a requested pasteboard item has no data of the the type indicated by `pasteboardType`, a [`NSNull`](https://developer.apple.com/documentation/Foundation/NSNull) object.
+An array of [`NSData`](https://developer.apple.com/documentation/foundation/nsdata) objects or, if a requested pasteboard item has no data of the the type indicated by `pasteboardType`, a [`NSNull`](https://developer.apple.com/documentation/foundation/nsnull) object.
 
 ## Parameters
 

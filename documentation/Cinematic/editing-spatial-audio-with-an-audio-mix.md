@@ -12,7 +12,7 @@ Add Spatial Audio editing capabilities with the Audio Mix API in the Cinematic f
 
 Beginning with iPhone 16, you can use Spatial Audio capture to record video with 3D audio, and edit the audio mix in the Photos app. With Audio Mix, you have creative control of the background and foreground sounds in a recording. It isolates speech as foreground and ambience as background, and you can select between multiple creative rendering styles to adjust the mix.
 
-The `SpatialAudioCLI` sample project is a command-line tool that demonstrates three different methods for applying an audio mix: using [`AVPlayer`](https://developer.apple.com/documentation/AVFoundation/AVPlayer), using [`AVAssetWriter`](https://developer.apple.com/documentation/AVFoundation/AVAssetWriter), and using [`kAudioUnitSubType_AUAudioMix`](https://developer.apple.com/documentation/AudioToolbox/kAudioUnitSubType_AUAudioMix).
+The `SpatialAudioCLI` sample project is a command-line tool that demonstrates three different methods for applying an audio mix: using [`AVPlayer`](https://developer.apple.com/documentation/avfoundation/avplayer), using [`AVAssetWriter`](https://developer.apple.com/documentation/avfoundation/avassetwriter), and using [`kAudioUnitSubType_AUAudioMix`](https://developer.apple.com/documentation/audiotoolbox/kaudiounitsubtype_auaudiomix).
 
 > **Note**: This sample code project is associated with WWDC25 session 251: [`Enhance your app’s audio content creation capabilities`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2025/251).
 
@@ -20,20 +20,20 @@ The `SpatialAudioCLI` sample project is a command-line tool that demonstrates th
 
 For best results, use `SpatialAudioCLI` with media that contains a Spatial Audio track. On all iPhone 16 models, Spatial Audio recording is available when capturing video with the Camera app. See the [`iPhone User Guide`](https://developer.apple.comhttps://support.apple.com/en-kw/guide/iphone/iph31c1ca6c7/ios) for how to change sound recording options.
 
-You can record Spatial Audio in your app by setting the [`multichannelAudioMode`](https://developer.apple.com/documentation/AVFoundation/AVCaptureDeviceInput/multichannelAudioMode) property of the [`AVCaptureDeviceInput`](https://developer.apple.com/documentation/AVFoundation/AVCaptureDeviceInput) to a value of `firstOrderAmbisonics`.
+You can record Spatial Audio in your app by setting the [`multichannelAudioMode`](https://developer.apple.com/documentation/avfoundation/avcapturedeviceinput/multichannelaudiomode) property of the [`AVCaptureDeviceInput`](https://developer.apple.com/documentation/avfoundation/avcapturedeviceinput) to a value of `firstOrderAmbisonics`.
 
 ##### Adjust the Audio Mix in Avplayer
 
-The simplest way to adjust the audio mix is to play Spatial Audio assets with [`AVPlayer`](https://developer.apple.com/documentation/AVFoundation/AVPlayer).
+The simplest way to adjust the audio mix is to play Spatial Audio assets with [`AVPlayer`](https://developer.apple.com/documentation/avfoundation/avplayer).
 
-First, the sample loads the specified input file into an [`AVPlayerItem`](https://developer.apple.com/documentation/AVFoundation/AVPlayerItem):
+First, the sample loads the specified input file into an [`AVPlayerItem`](https://developer.apple.com/documentation/avfoundation/avplayeritem):
 
 ```swift
 let myAsset = AVURLAsset(url: URL(filePath: "myMediaURL"))
 let myPlayerItem = AVPlayerItem(asset: myAsset)
 ```
 
-Then the sample uses the [`AVAsset`](https://developer.apple.com/documentation/AVFoundation/AVAsset) to initialize an instance of `CNAssetSpatialAudioInfo`:
+Then the sample uses the [`AVAsset`](https://developer.apple.com/documentation/avfoundation/avasset) to initialize an instance of `CNAssetSpatialAudioInfo`:
 
 ```swift
 do {
@@ -44,7 +44,7 @@ do {
 }
 ```
 
-The two primary mix parameters are `effectIntensity` and `renderingStyle`. The sample creates an [`AVAudioMix`](https://developer.apple.com/documentation/AVFoundation/AVAudioMix) with the specified mix parameters and sets it on the [`AVPlayerItem`](https://developer.apple.com/documentation/AVFoundation/AVPlayerItem):
+The two primary mix parameters are `effectIntensity` and `renderingStyle`. The sample creates an [`AVAudioMix`](https://developer.apple.com/documentation/avfoundation/avaudiomix) with the specified mix parameters and sets it on the [`AVPlayerItem`](https://developer.apple.com/documentation/avfoundation/avplayeritem):
 
 ```swift
 // Sets the mix parameters.

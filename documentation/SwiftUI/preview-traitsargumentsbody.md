@@ -24,7 +24,7 @@ Creates a group of previews of a parameterized SwiftUI view, varying its inputs 
 ## Parameters
 
 - `name`: An optional display name for the preview. If you don’t specify a name, the canvas labels the preview using the line number where the preview appears in source.
-- `traits`: Optional [`PreviewTrait`](https://developer.apple.com/documentation/DeveloperToolsSupport/PreviewTrait) instances that customizes the appearance of the preview.
+- `traits`: Optional [`PreviewTrait`](https://developer.apple.com/documentation/developertoolssupport/previewtrait) instances that customizes the appearance of the preview.
 - `arguments`: An array of inputs to pass into the preview’s `body`.
 - `body`: A [`ContentBuilder`](contentbuilder.md) mapping an argument to a SwiftUI view to preview.
 

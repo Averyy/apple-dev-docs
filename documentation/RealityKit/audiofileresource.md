@@ -75,18 +75,18 @@ Load an audio file resource, like an audio file stored in .aiff or other format,
 ### Inherits From
 - [AudioResource](audioresource.md)
 ### Conforms To
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
 - [Resource](resource.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 
 - [class AudioFileGroupResource](audiofilegroupresource.md)
   An audio file group.
 - [class AudioBufferResource](audiobufferresource.md)
-  An audio resource that you load from an [`AVAudioBuffer`](https://developer.apple.com/documentation/AVFAudio/AVAudioBuffer).
+  An audio resource that you load from an [`AVAudioBuffer`](https://developer.apple.com/documentation/avfaudio/avaudiobuffer).
 - [struct AudioLibraryComponent](audiolibrarycomponent.md)
   A container for audio resources that you can look up by user-defined names.
 - [class AudioResource](audioresource.md)

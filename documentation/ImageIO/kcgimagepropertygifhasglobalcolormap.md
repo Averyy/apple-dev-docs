@@ -22,7 +22,7 @@ let kCGImagePropertyGIFHasGlobalColorMap: CFString
 
 #### Discussion
 
-The value of this key is a [`CFBoolean`](https://developer.apple.com/documentation/CoreFoundation/CFBoolean).
+The value of this key is a [`CFBoolean`](https://developer.apple.com/documentation/corefoundation/cfboolean).
 
 ## See Also
 

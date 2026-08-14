@@ -33,10 +33,10 @@ A new opaque symbolic factorization.
 - `blockSize`: The block size.
 - `type`: The factorization type.
 - `factorization`: A pointer to a private internal representation of the symbolic factor.
-- `workspaceSize_Float`: The size in bytes of workspace necessary to perform numerical factorization in [`Float`](https://developer.apple.com/documentation/Swift/Float).
-- `workspaceSize_Double`: The size in bytes of workspace necessary to perform numerical factorization in [`Double`](https://developer.apple.com/documentation/Swift/Double).
-- `factorSize_Float`: The minimum size in bytes necessary to store numerical factors in [`Float`](https://developer.apple.com/documentation/Swift/Float).
-- `factorSize_Double`: The minimum size in bytes necessary to store numerical factors in [`Double`](https://developer.apple.com/documentation/Swift/Double).
+- `workspaceSize_Float`: The size in bytes of workspace necessary to perform numerical factorization in [`Float`](https://developer.apple.com/documentation/swift/float).
+- `workspaceSize_Double`: The size in bytes of workspace necessary to perform numerical factorization in [`Double`](https://developer.apple.com/documentation/swift/double).
+- `factorSize_Float`: The minimum size in bytes necessary to store numerical factors in [`Float`](https://developer.apple.com/documentation/swift/float).
+- `factorSize_Double`: The minimum size in bytes necessary to store numerical factors in [`Double`](https://developer.apple.com/documentation/swift/double).
 
 ## See Also
 

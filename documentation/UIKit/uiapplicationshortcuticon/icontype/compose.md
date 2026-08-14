@@ -19,7 +19,7 @@ case compose
 
 #### Discussion
 
-![None](https://docs-assets.developer.apple.com/published/9b9b4206e8fa3b5c4b4e10be3eb3c5d7/media-2934509%402x.png)
+![None](/images/com.apple.uikit/media-2934509@2x.png)
 
 ## See Also
 

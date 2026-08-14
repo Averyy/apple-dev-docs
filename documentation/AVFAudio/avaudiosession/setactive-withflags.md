@@ -21,7 +21,7 @@ If another app’s active audio session has higher priority than your app, and t
 
 ## Parameters
 
-- `active`: Use [`true`](https://developer.apple.com/documentation/Swift/true) to activate your app’s audio session or [`false`](https://developer.apple.com/documentation/Swift/false) to deactivate it.
+- `active`: Use [`true`](https://developer.apple.com/documentation/swift/true) to activate your app’s audio session or [`false`](https://developer.apple.com/documentation/swift/false) to deactivate it.
 - `flags`: A bitmapped value containing one or more flags.
 
 

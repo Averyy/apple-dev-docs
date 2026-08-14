@@ -37,7 +37,7 @@ vDSP.formWindow(usingSequence: .blackman,
 
 The following figure illustrates the values of the output vector, `c`:
 
-![Visualization of a Blackman window.](https://docs-assets.developer.apple.com/published/60bd6fe48f68c85247dc2dc8de350818/media-3362253%402x.png)
+![Visualization of a Blackman window.](/images/com.apple.accelerate/media-3362253@2x.png)
 
 ## Parameters
 

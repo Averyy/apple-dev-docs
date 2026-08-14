@@ -28,7 +28,7 @@ func requestAuthorization(options: UNAuthorizationOptions = []) async throws -> 
 
 > ❗ **Important**:  You can call this method from synchronous code using a completion handler, as shown on this page, or you can call it as an asynchronous method that has the following declaration: ```swift
 func requestAuthorization(options: UNAuthorizationOptions = []) async throws -> Bool
-``` For information about concurrency and asynchronous code in Swift, see [`Calling Objective-C APIs Asynchronously`](https://developer.apple.com/documentation/Swift/calling-objective-c-apis-asynchronously).
+``` For information about concurrency and asynchronous code in Swift, see [`Calling Objective-C APIs Asynchronously`](https://developer.apple.com/documentation/swift/calling-objective-c-apis-asynchronously).
 
 If your app’s local or remote notifications involve user interactions, you must request authorization for the system to perform those interactions on your app’s behalf. Interactions include displaying an alert, playing a sound, or badging the app’s icon.
 
@@ -54,7 +54,7 @@ do {
 ## Parameters
 
 - `options`: The authorization options your app is requesting. You may combine the available constants to request authorization for multiple items. Request only the authorization options that you plan to use. For a list of possible values, see [`UNAuthorizationOptions`](unauthorizationoptions.md).
-- `completionHandler`: The block to execute asynchronously with the results. This block may execute on a background thread. The block has no return value and has the following parameters: - **granted**: A Boolean value indicating whether the person grants authorization. The value of this parameter is [`true`](https://developer.apple.com/documentation/Swift/true) when the person grants authorization for one or more options. The value is [`false`](https://developer.apple.com/documentation/Swift/false) when the person denies authorization or authorization is  undetermined. Use [`getNotificationSettings(completionHandler:)`](unusernotificationcenter/getnotificationsettings(completionhandler:).md) to check the authorization status.
+- `completionHandler`: The block to execute asynchronously with the results. This block may execute on a background thread. The block has no return value and has the following parameters: - **granted**: A Boolean value indicating whether the person grants authorization. The value of this parameter is [`true`](https://developer.apple.com/documentation/swift/true) when the person grants authorization for one or more options. The value is [`false`](https://developer.apple.com/documentation/swift/false) when the person denies authorization or authorization is  undetermined. Use [`getNotificationSettings(completionHandler:)`](unusernotificationcenter/getnotificationsettings(completionhandler:).md) to check the authorization status.
 - **error**: An object containing error information or `nil` if no error occurs.
 
 ## See Also

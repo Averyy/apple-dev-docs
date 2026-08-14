@@ -14,7 +14,7 @@ Keep your app content front and center while providing quick access to navigatio
 
 #### Overview
 
-[`Destination Video`](https://developer.apple.com/documentation/visionOS/destination-video) adopts the [`sidebarAdaptable`](tabviewstyle/sidebaradaptable.md) tab view style, which optimizes the content browsing experience for each platform.
+[`Destination Video`](https://developer.apple.com/documentation/visionos/destination-video) adopts the [`sidebarAdaptable`](tabviewstyle/sidebaradaptable.md) tab view style, which optimizes the content browsing experience for each platform.
 
 Starting in iPadOS 18, the tab bar appears on the top of the screen floating over your content instead of appearing at the bottom of the screen. This appearance creates an immersive full-screen browsing experience. Tab bars provide people with access to the top-level navigation in your app. However, too many tabs can make it hard for people to locate content. Implementing a sidebar makes it easier to navigate a detailed information hierarchy.
 
@@ -49,7 +49,7 @@ enum Tabs: Equatable, Hashable, Identifiable {
 
 > **Note**: When using symbol images for your tabs, use the outline variant. The system automatically selects the filled variant when it appears in a tab bar.
 
-![A screenshot of the iPadOS tab bar in Simulator. The tab bar is highlighted, the tab bar has an icon on the left that turns it into a sidebar, followed by the tabs: Watch Now, Library, New, Favorites, and Search, which appears as a magnifying glass.](https://docs-assets.developer.apple.com/published/9a5ad10f868c9474778c59000b7602ec/Enhancing-your-app-content-with-tab-navigation-create-tab%402x.png)
+![A screenshot of the iPadOS tab bar in Simulator. The tab bar is highlighted, the tab bar has an icon on the left that turns it into a sidebar, followed by the tabs: Watch Now, Library, New, Favorites, and Search, which appears as a magnifying glass.](/images/com.apple.SwiftUI/Enhancing-your-app-content-with-tab-navigation-create-tab@2x.png)
 
 Additionally, this sample uses the [`search`](tabrole/search.md) role with the [`init(value:role:content:)`](tab/init(value:role:content:).md) initializer. Setting the tab role to `search` makes the system applies a few default customizations to the `Tab`. The search tab gets:
 
@@ -65,7 +65,7 @@ Tab(value: .search, role: .search) {
 
 Pinned tabs appear at the trailing edge of the tab bar, depending on the preferred language of your app. When the language is a left-to-right language, they appear on the right side. When the language is a right-to-left language, they’re on the left side.
 
-![A screenshot of the tab bar with the a search tab highlighted.  The tab bar has an icon on the left that turns it into a sidebar, followed by the tabs: Watch Now, Library, New, Favorites, and Search, which appears as a magnifying glass.](https://docs-assets.developer.apple.com/published/59a57fb092b9a75b4ef8c91d81b0986e/Enhancing-your-app-content-with-tab-navigation-search%402x.png)
+![A screenshot of the tab bar with the a search tab highlighted.  The tab bar has an icon on the left that turns it into a sidebar, followed by the tabs: Watch Now, Library, New, Favorites, and Search, which appears as a magnifying glass.](/images/com.apple.SwiftUI/Enhancing-your-app-content-with-tab-navigation-search@2x.png)
 
 ##### Build Hierarchy in Tab View
 
@@ -141,7 +141,7 @@ A `TabView` with the `sidebarAdaptable` style appears differently depending on t
 
 **macOS**:
 
-![A screenshot of tab view on macOS](https://docs-assets.developer.apple.com/published/d86d64648482d8e9501242564d8d27ba/Enhancing-your-app-content-with-tab-navigation-macOS%402x.png)
+![A screenshot of tab view on macOS](/images/com.apple.SwiftUI/Enhancing-your-app-content-with-tab-navigation-macOS@2x.png)
 
 > **Note**: By default, contents in a `ScrollView(.horizontal)` scroll under the sidebar when you use the `sidebarAdaptable` tab view style in iPadOS. You can prevent the content from scrolling under the sidebar by adding the [`clipped(antialiased:)`](view/clipped(antialiased:).md) or [`clipShape(_:style:)`](view/clipshape(_:style:).md) modifier to `ScrollView`.
 
@@ -183,7 +183,7 @@ Tab("Watch Now", systemImage: "play", value: .watchNow) {
 .customizationBehavior(.disabled, for: .sidebar, .tabBar)
 ```
 
-![A screenshot of a tab view in edit mode on iPad.](https://docs-assets.developer.apple.com/published/493112fc30c02a81d5a079a6b7e45a34/Enhancing-your-app-content-with-tab-navigation-customization%402x.png)
+![A screenshot of a tab view in edit mode on iPad.](/images/com.apple.SwiftUI/Enhancing-your-app-content-with-tab-navigation-customization@2x.png)
 
 ##### Set the Default Visibility for Tabs
 
@@ -202,19 +202,19 @@ TabSection {
 
 **iOS**:
 
-![A screenshot of tab view on iOS.](https://docs-assets.developer.apple.com/published/3b94e40a70cf512f26ed1900ff2e5e71/Enhancing-your-app-content-with-tab-navigation-iOS%402x.png)
+![A screenshot of tab view on iOS.](/images/com.apple.SwiftUI/Enhancing-your-app-content-with-tab-navigation-iOS@2x.png)
 
 **macOS**:
 
-![A screenshot of tab view on macOS](https://docs-assets.developer.apple.com/published/d86d64648482d8e9501242564d8d27ba/Enhancing-your-app-content-with-tab-navigation-macOS%402x.png)
+![A screenshot of tab view on macOS](/images/com.apple.SwiftUI/Enhancing-your-app-content-with-tab-navigation-macOS@2x.png)
 
 **visionOS**:
 
-![An image that shows tab view on visionOS.](https://docs-assets.developer.apple.com/published/0c8e9497ef4f8b04e1a24a43058e293b/Enhancing-your-app-content-with-tab-navigation-visionOS.png)
+![An image that shows tab view on visionOS.](/images/com.apple.SwiftUI/Enhancing-your-app-content-with-tab-navigation-visionOS.png)
 
 If you enable customization, the [`defaultVisibility(_:for:)`](tabcontent/defaultvisibility(_:for:).md) modifier still allows people to drag a tab from the sidebar into the tab bar. If you want to restrict tabs to only appear in the sidebar use [`sidebarOnly`](tabplacement/sidebaronly.md) instead of setting the default visibility.
 
-For design guidance, see Human Interface Guidelines >  [`Tab bars`](https://developer.apple.com/design/Human-Interface-Guidelines/tab-bars).
+For design guidance, see Human Interface Guidelines >  [`Tab bars`](https://developer.apple.com/design/human-interface-guidelines/tab-bars).
 
 ###### Related Samples
 

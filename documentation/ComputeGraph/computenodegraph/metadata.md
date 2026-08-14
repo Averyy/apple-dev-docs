@@ -28,10 +28,10 @@ struct Metadata
 ## Relationships
 
 ### Conforms To
-- [Equatable](../Swift/Equatable.md)
-- [ExpressibleByDictionaryLiteral](../Swift/ExpressibleByDictionaryLiteral.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Equatable](../swift/equatable.md)
+- [ExpressibleByDictionaryLiteral](../swift/expressiblebydictionaryliteral.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 
 ---

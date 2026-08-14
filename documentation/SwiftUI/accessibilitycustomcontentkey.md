@@ -35,7 +35,7 @@ Use `AccessibilityCustomContentKey` and the associated modifiers taking this val
 ## Relationships
 
 ### Conforms To
-- [Equatable](../Swift/Equatable.md)
+- [Equatable](../swift/equatable.md)
 
 ## See Also
 

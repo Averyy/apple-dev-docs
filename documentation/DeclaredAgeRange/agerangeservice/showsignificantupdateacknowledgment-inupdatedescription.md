@@ -19,7 +19,7 @@ func showSignificantUpdateAcknowledgment(in windowScene: UIWindowScene, updateDe
 
 #### Discussion
 
-Call this function to inform people that your app has undergone a significant change that requires their acknowledgment. For more information on what constitutes a significant app change, refer to [`SignificantAppUpdateTopic`](https://developer.apple.com/documentation/PermissionKit/SignificantAppUpdateTopic).
+Call this function to inform people that your app has undergone a significant change that requires their acknowledgment. For more information on what constitutes a significant app change, refer to [`SignificantAppUpdateTopic`](https://developer.apple.com/documentation/permissionkit/significantappupdatetopic).
 
 > ❗ **Important**: Before calling this function, check [`AgeRangeService.RegulatoryFeature`](agerangeservice/regulatoryfeature.md) to determine if a person must acknowledge your significant app change.
 

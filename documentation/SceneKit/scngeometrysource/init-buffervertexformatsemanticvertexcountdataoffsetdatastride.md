@@ -26,7 +26,7 @@ A new geometry source object.
 
 #### Discussion
 
-Use this method to create a geometry source whose underlying data can be modified at render time by a Metal compute shader running on the GPU. To create a [`MTLBuffer`](https://developer.apple.com/documentation/Metal/MTLBuffer) object for use with a geometry source, use the [`device`](scnscenerenderer/device.md) property of the SceneKit view (or other renderer) responsible for drawing your scene.
+Use this method to create a geometry source whose underlying data can be modified at render time by a Metal compute shader running on the GPU. To create a [`MTLBuffer`](https://developer.apple.com/documentation/metal/mtlbuffer) object for use with a geometry source, use the [`device`](scnscenerenderer/device.md) property of the SceneKit view (or other renderer) responsible for drawing your scene.
 
 ```objc
 // Create and fill a buffer.
@@ -67,7 +67,7 @@ Then, to modify the buffer’s contents at render time, implement a scene render
 ## Parameters
 
 - `buffer`: A Metal buffer containing per-vertex data for the geometry source.
-- `vertexFormat`: The type of per-vertex data in the buffer. A [`MTLVertexFormat`](https://developer.apple.com/documentation/Metal/MTLVertexFormat) value defines the number of components for each vector in the geometry source and the data type and size of each component.
+- `vertexFormat`: The type of per-vertex data in the buffer. A [`MTLVertexFormat`](https://developer.apple.com/documentation/metal/mtlvertexformat) value defines the number of components for each vector in the geometry source and the data type and size of each component.
 - `semantic`: The semantic value (or attribute) that the geometry source describes for each vertex. See Geometry Semantic Identifiers for available values.
 - `vertexCount`: The number of vertices in the geometry source.
 - `offset`: The offset, in bytes, from the beginning of the data to the first vector component to be used in the geometry source.

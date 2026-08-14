@@ -38,11 +38,11 @@ Base type for all CoreVideo buffers
 ## Relationships
 
 ### Conforms To
-- [CMAttachmentBearerProtocol](../CoreMedia/CMAttachmentBearerProtocol.md)
-- [Copyable](../Swift/Copyable.md)
-- [Equatable](../Swift/Equatable.md)
-- [Escapable](../Swift/Escapable.md)
-- [Hashable](../Swift/Hashable.md)
+- [CMAttachmentBearerProtocol](../coremedia/cmattachmentbearerprotocol.md)
+- [Copyable](../swift/copyable.md)
+- [Equatable](../swift/equatable.md)
+- [Escapable](../swift/escapable.md)
+- [Hashable](../swift/hashable.md)
 
 ## See Also
 

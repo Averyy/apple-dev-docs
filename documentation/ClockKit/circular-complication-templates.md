@@ -8,11 +8,11 @@ Display graphical data in a compact circle.
 
 The graphic circular templates display a compact version of the app’s data.
 
-![An illustration of seven graphic circular templates, including icons, text, and numbers positioned inside open and closed gauges.](https://docs-assets.developer.apple.com/published/04e1129579eb25c6c03350a6f8841188/media-3744073%402x.png)
+![An illustration of seven graphic circular templates, including icons, text, and numbers positioned inside open and closed gauges.](/images/com.apple.clockkit/media-3744073@2x.png)
 
 The tinted versions of the templates are shown below:
 
-![An illustration that shows tinted versions of the seven graphic circular templates, including icons, text, and numbers positioned inside open and closed gauges. ](https://docs-assets.developer.apple.com/published/d6c5fa5cc6e6ce15246540ef77b321da/media-3744087%402x.png)
+![An illustration that shows tinted versions of the seven graphic circular templates, including icons, text, and numbers positioned inside open and closed gauges. ](/images/com.apple.clockkit/media-3744087@2x.png)
 
 ## Topics
 

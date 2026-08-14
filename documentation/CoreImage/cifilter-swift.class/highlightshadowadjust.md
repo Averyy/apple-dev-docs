@@ -30,9 +30,9 @@ This method applies the highlight-shadow adjust filter to an image. The effect a
 The highlight-shadow adjust filter uses the following properties:
 
 - **`inputImage`**: An image with the type [`CIImage`](ciimage.md).
-- **`shadowAmount`**: A `float` representing the amount of generated shadow as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
-- **`radius`**: A `float` representing the radius of the shadow as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
-- **`highlightAmount`**: A `float` representing the strength of the shadow as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+- **`shadowAmount`**: A `float` representing the amount of generated shadow as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
+- **`radius`**: A `float` representing the radius of the shadow as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
+- **`highlightAmount`**: A `float` representing the strength of the shadow as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
 
 The following code creates a filter that results in a brighter image with reduced shadows:
 
@@ -45,7 +45,7 @@ func highlightShadowAdjust(inputImage: CIImage) -> CIImage {
 }
 ```
 
-![Two pictures of a pink flower surrounded by foliage. The photo on the left shows a single flower photographed close up, in focus, with good light and no effects. In the photo on the right, the highlight shadow adjust filter is applied, resulting in a brighter image with a darker color on the pink flower.](https://docs-assets.developer.apple.com/published/8c92dff56fe67ce7879fbdad420d1e67/media-3600012%402x.png)
+![Two pictures of a pink flower surrounded by foliage. The photo on the left shows a single flower photographed close up, in focus, with good light and no effects. In the photo on the right, the highlight shadow adjust filter is applied, resulting in a brighter image with a darker color on the pink flower.](/images/com.apple.coreimage/media-3600012@2x.png)
 
 ## See Also
 

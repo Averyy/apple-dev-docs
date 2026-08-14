@@ -88,7 +88,7 @@ The [`dropInteraction(_:performDrop:)`](uidropinteractiondelegate/dropinteractio
 
 When the touch point for a drop session moves over a view that you’ve configured as a drop destination, the system initiates a conversation with the drop interaction delegate. This conversation gives your app opportunities to accept or reject the drop, to prepare for consuming the drag items, and to update your model and UI, as shown here:
 
-![APIs for consuming data from drag items in a drop destination](https://docs-assets.developer.apple.com/published/67b275f6dcc278f02bdbad17ff2c6a7e/media-2903753%402x.png)
+![APIs for consuming data from drag items in a drop destination](/images/com.apple.uikit/media-2903753@2x.png)
 
 The figure above depicts the steps for consuming a drag item, in context:
 

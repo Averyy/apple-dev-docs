@@ -21,7 +21,7 @@ class MKOverlayPathRenderer
 
 #### Overview
 
-Use this renderer when a [`CGPath`](https://developer.apple.com/documentation/CoreGraphics/CGPath) object defines your overlay’s shape. By default, this renderer fills the overlay’s shape and represents the strokes of the path using its current attributes.
+Use this renderer when a [`CGPath`](https://developer.apple.com/documentation/coregraphics/cgpath) object defines your overlay’s shape. By default, this renderer fills the overlay’s shape and represents the strokes of the path using its current attributes.
 
 You can use this class as-is or subclass it to define additional drawing behaviors. If you subclass it, override the [`createPath()`](mkoverlaypathrenderer/createpath().md) method and use that method to build the appropriate path object. To change the path, invalidate it and recreate the path using the new data your subclass obtains.
 
@@ -74,12 +74,12 @@ You can use this class as-is or subclass it to define additional drawing behavio
 - [MKPolygonRenderer](mkpolygonrenderer.md)
 - [MKPolylineRenderer](mkpolylinerenderer.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

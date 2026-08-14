@@ -13,7 +13,7 @@ framework: HIG
 
 On devices that include the Always On display, the system can continue to display an app’s interface when people suspend their interactions with the device.
 
-![A sketch of an Apple Watch containing a person running, suggesting an Always On display. The image is overlaid with rectangular and circular grid lines and is tinted blue to subtly reflect the blue in the original six-color Apple logo.](https://docs-assets.developer.apple.com/published/4de76f628a44504f6cd0e52bb30b97ae/technologies-always-on-intro~dark%402x.png)
+![A sketch of an Apple Watch containing a person running, suggesting an Always On display. The image is overlaid with rectangular and circular grid lines and is tinted blue to subtly reflect the blue in the original six-color Apple logo.](/images/com.apple.HIG/technologies-always-on-intro~dark@2x.png)
 In the Always On state, a device can continue to give people useful, glanceable information in a low-power, privacy-preserving way by dimming the display and minimizing onscreen motion. The system can display different items depending on the device.
 - On iPhone 14 Pro and iPhone 14 Pro Max, the system displays Lock Screen items like [Widgets](widgets.md) and [Live Activities](live-activities.md) when people set aside their device face up and stop interacting with it.
 - When people drop their wrist while wearing Apple Watch, the system dims the watch face, continuing to display the interface of the app as long as it’s either frontmost or running a background session.
@@ -35,7 +35,7 @@ On both devices, the system displays notifications while in Always On, and peopl
 [Designing for watchOS](designing-for-watchos.md)
 
 #### Developer documentation
-[Designing your app for the Always On state](../watchOS-Apps/designing-your-app-for-the-always-on-state.md) — watchOS apps
+[Designing your app for the Always On state](../watchos-apps/designing-your-app-for-the-always-on-state.md) — watchOS apps
 
 #### Videos
 - [What's new in watchOS 8](https://developer.apple.com/videos/play/wwdc2021/10002) - watchOS 8 brings all-new opportunities to keep people up to date on their watch face. With new APIs for the Always-On Retina display and updating complications from Bluetooth devices and background delivery of HealthKit data, it's never been easier to keep your app up to date. Learn about region-based user notifications to leverage location in your app. Explore all the new enhancements to SwiftUI and watchOS that will get you excited to build your next Watch app.

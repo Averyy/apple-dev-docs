@@ -16,9 +16,9 @@ class TVCaptionButtonView
 
 #### Overview
 
-A caption button responds to user interactions and can contain an image or text. When the caption button comes into focus, the caption button expands in the [`leading`](https://developer.apple.com/documentation/AppKit/NSDirectionalEdgeInsets/leading), [`top`](https://developer.apple.com/documentation/AppKit/NSDirectionalEdgeInsets/top), and [`trailing`](https://developer.apple.com/documentation/AppKit/NSDirectionalEdgeInsets/trailing) directions. The user can click the caption button to select an option. As the user moves their finger on the Siri Remote up and down, or left and right, the caption button may limit the direction of the tilt based on the type set in [`motionDirection`](tvcaptionbuttonview/motiondirection.md).
+A caption button responds to user interactions and can contain an image or text. When the caption button comes into focus, the caption button expands in the [`leading`](https://developer.apple.com/documentation/appkit/nsdirectionaledgeinsets/leading), [`top`](https://developer.apple.com/documentation/appkit/nsdirectionaledgeinsets/top), and [`trailing`](https://developer.apple.com/documentation/appkit/nsdirectionaledgeinsets/trailing) directions. The user can click the caption button to select an option. As the user moves their finger on the Siri Remote up and down, or left and right, the caption button may limit the direction of the tilt based on the type set in [`motionDirection`](tvcaptionbuttonview/motiondirection.md).
 
-![A darkened figure with a highlighted button. The button contains a stylized TV icon with the word preview below the button.](https://docs-assets.developer.apple.com/published/c55bd30fa76dfaf03b308c89e32830f5/media-3016836%402x.png)
+![A darkened figure with a highlighted button. The button contains a stylized TV icon with the word preview below the button.](/images/com.apple.tvuikit/media-3016836@2x.png)
 
 ## Topics
 
@@ -42,32 +42,32 @@ A caption button responds to user interactions and can contain an image or text.
 ### Inherits From
 - [TVLockupView](tvlockupview.md)
 ### Conforms To
-- [CALayerDelegate](../QuartzCore/CALayerDelegate.md)
-- [CLBodyIdentifiable](../CoreLocation/CLBodyIdentifiable.md)
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCoding](../Foundation/NSCoding.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
-- [UIAccessibilityIdentification](../UIKit/UIAccessibilityIdentification.md)
-- [UIActivityItemsConfigurationProviding](../UIKit/UIActivityItemsConfigurationProviding.md)
-- [UIAppearance](../UIKit/UIAppearance.md)
-- [UIAppearanceContainer](../UIKit/UIAppearanceContainer.md)
-- [UIContextMenuInteractionDelegate](../UIKit/UIContextMenuInteractionDelegate.md)
-- [UICoordinateSpace](../UIKit/UICoordinateSpace.md)
-- [UIDynamicItem](../UIKit/UIDynamicItem.md)
-- [UIFocusEnvironment](../UIKit/UIFocusEnvironment.md)
-- [UIFocusItem](../UIKit/UIFocusItem.md)
-- [UIFocusItemContainer](../UIKit/UIFocusItemContainer.md)
-- [UIPopoverPresentationControllerSourceItem](../UIKit/UIPopoverPresentationControllerSourceItem.md)
-- [UIResponderStandardEditActions](../UIKit/UIResponderStandardEditActions.md)
-- [UITraitChangeObservable](../UIKit/UITraitChangeObservable-67e94.md)
-- [UITraitEnvironment](../UIKit/UITraitEnvironment.md)
-- [UIUserActivityRestoring](../UIKit/UIUserActivityRestoring.md)
+- [CALayerDelegate](../quartzcore/calayerdelegate.md)
+- [CLBodyIdentifiable](../corelocation/clbodyidentifiable.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCoding](../foundation/nscoding.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
+- [UIAccessibilityIdentification](../uikit/uiaccessibilityidentification.md)
+- [UIActivityItemsConfigurationProviding](../uikit/uiactivityitemsconfigurationproviding.md)
+- [UIAppearance](../uikit/uiappearance.md)
+- [UIAppearanceContainer](../uikit/uiappearancecontainer.md)
+- [UIContextMenuInteractionDelegate](../uikit/uicontextmenuinteractiondelegate.md)
+- [UICoordinateSpace](../uikit/uicoordinatespace.md)
+- [UIDynamicItem](../uikit/uidynamicitem.md)
+- [UIFocusEnvironment](../uikit/uifocusenvironment.md)
+- [UIFocusItem](../uikit/uifocusitem.md)
+- [UIFocusItemContainer](../uikit/uifocusitemcontainer.md)
+- [UIPopoverPresentationControllerSourceItem](../uikit/uipopoverpresentationcontrollersourceitem.md)
+- [UIResponderStandardEditActions](../uikit/uiresponderstandardeditactions.md)
+- [UITraitChangeObservable](../uikit/uitraitchangeobservable-67e94.md)
+- [UITraitEnvironment](../uikit/uitraitenvironment.md)
+- [UIUserActivityRestoring](../uikit/uiuseractivityrestoring.md)
 
 ## See Also
 

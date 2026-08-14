@@ -20,7 +20,7 @@ var ciImage: CIImage? { get }
 
 #### Discussion
 
-If the `UIImage` object was initialized using a [`CGImage`](https://developer.apple.com/documentation/CoreGraphics/CGImage), the value of the property is `nil`.
+If the `UIImage` object was initialized using a [`CGImage`](https://developer.apple.com/documentation/coregraphics/cgimage), the value of the property is `nil`.
 
 ## See Also
 

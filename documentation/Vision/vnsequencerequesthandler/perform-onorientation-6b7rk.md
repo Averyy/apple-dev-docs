@@ -22,7 +22,7 @@ func perform(_ requests: [VNRequest], on sampleBuffer: CMSampleBuffer, orientati
 ## Parameters
 
 - `requests`: The array of requests to perform.
-- `sampleBuffer`: A sample buffer containing a valid [`imageBuffer`](https://developer.apple.com/documentation/CoreMedia/CMSampleBuffer/imageBuffer).
+- `sampleBuffer`: A sample buffer containing a valid [`imageBuffer`](https://developer.apple.com/documentation/coremedia/cmsamplebuffer/imagebuffer).
 - `orientation`: The orientation of the image contained within the sample buffer.
 
 ## See Also

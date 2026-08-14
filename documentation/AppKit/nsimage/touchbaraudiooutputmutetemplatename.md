@@ -19,7 +19,7 @@ class let touchBarAudioOutputMuteTemplateName: String
 
 #### Discussion
 
-![Template image for audio output mute](https://docs-assets.developer.apple.com/published/08abaaf64889f193d9ed1a3093654780/media-2825104%402x.png)
+![Template image for audio output mute](/images/com.apple.appkit/media-2825104@2x.png)
 
 Touch Bar template images are exclusively for use in [`NSTouchBarItem`](nstouchbaritem.md) objects and not in onscreen windows.
 

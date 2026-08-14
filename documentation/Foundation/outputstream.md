@@ -26,7 +26,7 @@ class OutputStream
 
 #### Overview
 
-[`OutputStream`](outputstream.md) is “toll-free bridged” with its Core Foundation counterpart, [`CFWriteStream`](https://developer.apple.com/documentation/CoreFoundation/CFWriteStream). For more information on toll-free bridging, see [`Toll-Free Bridging`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Conceptual/CocoaEncyclopedia/Toll-FreeBridgin/Toll-FreeBridgin.html#//apple_ref/doc/uid/TP40010810-CH2).
+[`OutputStream`](outputstream.md) is “toll-free bridged” with its Core Foundation counterpart, [`CFWriteStream`](https://developer.apple.com/documentation/corefoundation/cfwritestream). For more information on toll-free bridging, see [`Toll-Free Bridging`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Conceptual/CocoaEncyclopedia/Toll-FreeBridgin/Toll-FreeBridgin.html#//apple_ref/doc/uid/TP40010810-CH2).
 
 ##### Subclassing Notes
 
@@ -45,7 +45,7 @@ From the current write pointer, take up to the number of bytes specified in the 
 - If there was an error writing to the stream, return `-1`.
 - [`hasSpaceAvailable`](outputstream/hasspaceavailable.md)
 
-Return [`true`](https://developer.apple.com/documentation/Swift/true) if the stream can currently accept more data, [`false`](https://developer.apple.com/documentation/Swift/false) if it cannot. If you want to be semantically compatible with `NSOutputStream`, return [`true`](https://developer.apple.com/documentation/Swift/true) if a write must be attempted to determine if space is available.
+Return [`true`](https://developer.apple.com/documentation/swift/true) if the stream can currently accept more data, [`false`](https://developer.apple.com/documentation/swift/false) if it cannot. If you want to be semantically compatible with `NSOutputStream`, return [`true`](https://developer.apple.com/documentation/swift/true) if a write must be attempted to determine if space is available.
 
 ## Topics
 
@@ -75,14 +75,14 @@ Return [`true`](https://developer.apple.com/documentation/Swift/true) if the str
 ### Inherits From
 - [Stream](stream.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

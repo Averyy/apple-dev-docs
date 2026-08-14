@@ -35,15 +35,15 @@ The [`shared`](nsapplication/shared.md) class method initializes the display env
 
 The shared [`NSApplication`](nsapplication.md) object performs the important task of receiving events from the window server and distributing them to the proper [`NSResponder`](nsresponder.md) objects. `NSApp` translates an event into an [`NSEvent`](nsevent.md) object, then forwards the event object to the affected [`NSWindow`](nswindow.md) object. All keyboard and mouse events go directly to the [`NSWindow`](nswindow.md) object associated with the event. The only exception to this rule is if the Command key is pressed when a key-down event occurs; in this case, every [`NSWindow`](nswindow.md) object has an opportunity to respond to the event. When a window object receives an [`NSEvent`](nsevent.md) object from `NSApp`, it distributes it to the objects in its view hierarchy.
 
-[`NSApplication`](nsapplication.md) is also responsible for dispatching certain Apple events received by the app. For example, macOS sends Apple events to your app at various times, such as when the app is launched or reopened. [`NSApplication`](nsapplication.md) installs Apple event handlers to handle these events by sending a message to the appropriate object. You can also use the [`NSAppleEventManager`](https://developer.apple.com/documentation/Foundation/NSAppleEventManager) class to register your own Apple event handlers. The [`applicationWillFinishLaunching(_:)`](nsapplicationdelegate/applicationwillfinishlaunching(_:).md) method is generally the best place to do so. For more information on how events are handled and how you can modify the default behavior, including information on working with Apple events in scriptable apps, see [`How Cocoa Applications Handle Apple Events`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/ScriptableCocoaApplications/SApps_handle_AEs/SAppsHandleAEs.html#//apple_ref/doc/uid/20001239) in [`Cocoa Scripting Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/ScriptableCocoaApplications/SApps_intro/SAppsIntro.html#//apple_ref/doc/uid/TP40002164).
+[`NSApplication`](nsapplication.md) is also responsible for dispatching certain Apple events received by the app. For example, macOS sends Apple events to your app at various times, such as when the app is launched or reopened. [`NSApplication`](nsapplication.md) installs Apple event handlers to handle these events by sending a message to the appropriate object. You can also use the [`NSAppleEventManager`](https://developer.apple.com/documentation/foundation/nsappleeventmanager) class to register your own Apple event handlers. The [`applicationWillFinishLaunching(_:)`](nsapplicationdelegate/applicationwillfinishlaunching(_:).md) method is generally the best place to do so. For more information on how events are handled and how you can modify the default behavior, including information on working with Apple events in scriptable apps, see [`How Cocoa Applications Handle Apple Events`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/ScriptableCocoaApplications/SApps_handle_AEs/SAppsHandleAEs.html#//apple_ref/doc/uid/20001239) in [`Cocoa Scripting Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/ScriptableCocoaApplications/SApps_intro/SAppsIntro.html#//apple_ref/doc/uid/TP40002164).
 
-The [`NSApplication`](nsapplication.md) class sets up `@autorelease` block during initialization and inside the event loop—specifically, within its initialization (or [`shared`](nsapplication/shared.md)) and [`run()`](nsapplication/run().md) methods. Similarly, the methods AppKit adds to [`Bundle`](https://developer.apple.com/documentation/Foundation/Bundle) employ `@autorelease` blocks during the loading of nib files. These `@autorelease` blocks aren’t accessible outside the scope of the respective [`NSApplication`](nsapplication.md) and [`Bundle`](https://developer.apple.com/documentation/Foundation/Bundle) methods. Typically, an app creates objects either while the event loop is running or by loading objects from nib files, so this lack of access usually isn’t a problem. However, if you do need to use Cocoa classes within the `main()` function itself (other than to load nib files or to instantiate [`NSApplication`](nsapplication.md)), you should create an `@autorelease` block to contain the code using the classes.
+The [`NSApplication`](nsapplication.md) class sets up `@autorelease` block during initialization and inside the event loop—specifically, within its initialization (or [`shared`](nsapplication/shared.md)) and [`run()`](nsapplication/run().md) methods. Similarly, the methods AppKit adds to [`Bundle`](https://developer.apple.com/documentation/foundation/bundle) employ `@autorelease` blocks during the loading of nib files. These `@autorelease` blocks aren’t accessible outside the scope of the respective [`NSApplication`](nsapplication.md) and [`Bundle`](https://developer.apple.com/documentation/foundation/bundle) methods. Typically, an app creates objects either while the event loop is running or by loading objects from nib files, so this lack of access usually isn’t a problem. However, if you do need to use Cocoa classes within the `main()` function itself (other than to load nib files or to instantiate [`NSApplication`](nsapplication.md)), you should create an `@autorelease` block to contain the code using the classes.
 
 ##### The Delegate and Notifications
 
 You can assign a delegate to your [`NSApplication`](nsapplication.md) object. The delegate responds to certain messages on behalf of the object. Some of these messages, such as [`application(_:openFile:)`](nsapplicationdelegate/application(_:openfile:).md), ask the delegate to perform an action. Another message, [`applicationShouldTerminate(_:)`](nsapplicationdelegate/applicationshouldterminate(_:).md), lets the delegate determine whether the app should be allowed to quit. The [`NSApplication`](nsapplication.md) class sends these messages directly to its delegate.
 
-[`NSApplication`](nsapplication.md) also posts notifications to the app’s default notification center. Any object may register to receive one or more of the notifications posted by [`NSApplication`](nsapplication.md) by sending the message [`addObserver(_:selector:name:object:)`](https://developer.apple.com/documentation/Foundation/NotificationCenter/addObserver(_:selector:name:object:)) to the default notification center (an instance of the `NSNotificationCenter` class). The delegate of [`NSApplication`](nsapplication.md) is automatically registered to receive these notifications if it implements certain delegate methods. For example, [`NSApplication`](nsapplication.md) posts notifications when it’s about to be done launching the app and when it’s done launching the app ([`willFinishLaunchingNotification`](nsapplication/willfinishlaunchingnotification.md) and [`didFinishLaunchingNotification`](nsapplication/didfinishlaunchingnotification.md)). The delegate has an opportunity to respond to these notifications by implementing the methods [`applicationWillFinishLaunching(_:)`](nsapplicationdelegate/applicationwillfinishlaunching(_:).md) and [`applicationDidFinishLaunching(_:)`](nsapplicationdelegate/applicationdidfinishlaunching(_:).md). If the delegate wants to be informed of both events, it implements both methods. If it needs to know only when the app is finished launching, it implements only [`applicationDidFinishLaunching(_:)`](nsapplicationdelegate/applicationdidfinishlaunching(_:).md).
+[`NSApplication`](nsapplication.md) also posts notifications to the app’s default notification center. Any object may register to receive one or more of the notifications posted by [`NSApplication`](nsapplication.md) by sending the message [`addObserver(_:selector:name:object:)`](https://developer.apple.com/documentation/foundation/notificationcenter/addobserver(_:selector:name:object:)) to the default notification center (an instance of the `NSNotificationCenter` class). The delegate of [`NSApplication`](nsapplication.md) is automatically registered to receive these notifications if it implements certain delegate methods. For example, [`NSApplication`](nsapplication.md) posts notifications when it’s about to be done launching the app and when it’s done launching the app ([`willFinishLaunchingNotification`](nsapplication/willfinishlaunchingnotification.md) and [`didFinishLaunchingNotification`](nsapplication/didfinishlaunchingnotification.md)). The delegate has an opportunity to respond to these notifications by implementing the methods [`applicationWillFinishLaunching(_:)`](nsapplicationdelegate/applicationwillfinishlaunching(_:).md) and [`applicationDidFinishLaunching(_:)`](nsapplicationdelegate/applicationdidfinishlaunching(_:).md). If the delegate wants to be informed of both events, it implements both methods. If it needs to know only when the app is finished launching, it implements only [`applicationDidFinishLaunching(_:)`](nsapplicationdelegate/applicationdidfinishlaunching(_:).md).
 
 ##### System Services
 
@@ -312,25 +312,25 @@ Do not override [`shared`](nsapplication/shared.md). The default implementation,
 ### Inherits From
 - [NSResponder](nsresponder.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [Copyable](../Swift/Copyable.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Escapable](../Swift/Escapable.md)
-- [Hashable](../Swift/Hashable.md)
+- [CVarArg](../swift/cvararg.md)
+- [Copyable](../swift/copyable.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Escapable](../swift/escapable.md)
+- [Hashable](../swift/hashable.md)
 - [NSAccessibilityElementProtocol](nsaccessibilityelementprotocol.md)
 - [NSAccessibilityProtocol](nsaccessibilityprotocol.md)
 - [NSAppearanceCustomization](nsappearancecustomization.md)
-- [NSCoding](../Foundation/NSCoding.md)
+- [NSCoding](../foundation/nscoding.md)
 - [NSMenuItemValidation](nsmenuitemvalidation.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 - [NSStandardKeyBindingResponding](nsstandardkeybindingresponding.md)
 - [NSTouchBarProvider](nstouchbarprovider.md)
 - [NSUserActivityRestoring](nsuseractivityrestoring.md)
 - [NSUserInterfaceValidations](nsuserinterfacevalidations.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

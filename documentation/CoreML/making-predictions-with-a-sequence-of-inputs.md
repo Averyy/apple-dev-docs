@@ -14,7 +14,7 @@ Processing natural language is a difficult task for machine learning models beca
 
 Consider a neural network model trained to generate the Shakespeare play *Romeo and Juliet*. The neural network encodes the relationship between words and their neighboring words, without using explicit rules. In the popular line, “O, Romeo, Romeo, wherefore art thou Romeo?” the word Romeo appears three times, but each occurrence has a different word following it. The model needs a way to differentiate between the uses. Recurrent neural networks are a class of neural networks that address this problem by using the state of the model after processing each word as additional input when processing a word.
 
-![None](https://docs-assets.developer.apple.com/published/63caaea3f5cfba79afba4842b327095a/media-2940382%402x.png)
+![None](/images/com.apple.coreml/media-2940382@2x.png)
 
 [`Figure 1`](making_predictions_with_a_sequence_of_inputs#2940382.md) shows an example workflow of a network that has learned *Romeo and Juliet*. To start the phrase, “O” and a `nil` state are provided as input. The next word is predicted, and the network also generates a representation of its state for the input “O”, referred to as *f*(“O”). The next input word “Romeo” is combined with the previous state, *f*(“O”), to create the next input. Given that input, the model again outputs “Romeo” with high probability.
 
@@ -24,13 +24,13 @@ The next input word, “Romeo”, is identical to the previous input word. Howev
 
 Add a recurrent neural network based model to your project in Xcode to see the state of the neural network exposed as input and output features.
 
-![None](https://docs-assets.developer.apple.com/published/6a9458a9201d9232a22ccaa7cb0e451b/media-2937173%402x.png)
+![None](/images/com.apple.coreml/media-2937173@2x.png)
 
 [`Figure 2`](making_predictions_with_a_sequence_of_inputs#2937173.md) shows the view in Xcode for the `ShakespeareLanguageModel` that has a recurrent neural network layer, with its state input and output features listed. Other recurrent neural networks, like Long Short-Term Memory and Gated Recurrent networks, create input and output features automatically.
 
-This network takes two inputs: the input word and the state input, which is optional. The word is a [`String`](https://developer.apple.com/documentation/Swift/String) and the state, named `stateIn`, is a one dimensional [`MLMultiArray`](mlmultiarray.md) of 512 [`Double`](https://developer.apple.com/documentation/Swift/Double) values. The state input is optional because the beginning of a sequence has no prior state.
+This network takes two inputs: the input word and the state input, which is optional. The word is a [`String`](https://developer.apple.com/documentation/swift/string) and the state, named `stateIn`, is a one dimensional [`MLMultiArray`](mlmultiarray.md) of 512 [`Double`](https://developer.apple.com/documentation/swift/double) values. The state input is optional because the beginning of a sequence has no prior state.
 
-There are three outputs of the network: the most probable next word, a [`Dictionary`](https://developer.apple.com/documentation/Swift/Dictionary) of possible next words paired with their probabilities, and a one dimensional [`MLMultiArray`](mlmultiarray.md) of 512 [`Double`](https://developer.apple.com/documentation/Swift/Double) values, named `stateOut`, that represent the network’s state after processing the input.
+There are three outputs of the network: the most probable next word, a [`Dictionary`](https://developer.apple.com/documentation/swift/dictionary) of possible next words paired with their probabilities, and a one dimensional [`MLMultiArray`](mlmultiarray.md) of 512 [`Double`](https://developer.apple.com/documentation/swift/double) values, named `stateOut`, that represent the network’s state after processing the input.
 
 The [`MLMultiArray`](mlmultiarray.md) output represents the state of the network, which is the level of activation of its internal nodes. In order for the network to “remember” what input sequence has been processed, the previous output state must accompany the next input.
 

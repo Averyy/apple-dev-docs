@@ -6,20 +6,20 @@ Learn about important changes to PencilKit.
 
 #### Overview
 
-Browse notable changes in [`PencilKit`](https://developer.apple.com/documentation/PencilKit).
+Browse notable changes in [`PencilKit`](https://developer.apple.com/documentation/pencilkit).
 
 #### June 2026
 
 ##### Strokes
 
-- Access and assign a stable identity to strokes and stroke paths using the `id` property on [`PKStroke`](https://developer.apple.com/documentation/PencilKit/PKStroke-swift.struct) and [`PKStrokePath`](https://developer.apple.com/documentation/PencilKit/PKStrokePath-swift.struct), which conform to `Identifiable`.
-- Select strokes programmatically and respond to selection changes using the [`selection`](https://developer.apple.com/documentation/PencilKit/PKCanvasView/selection) property and the [`canvasViewSelectionDidChange(_:)`](https://developer.apple.com/documentation/PencilKit/PKCanvasViewDelegate/canvasViewSelectionDidChange(_:)) delegate method.
-- Erase portions of a drawing along a path using [`erasePath(_:mask:transform:)`](https://developer.apple.com/documentation/PencilKit/PKDrawing-swift.struct/erasePath(_:mask:transform:)-shn), or get a new drawing with the erasure applied using [`erasingPath(_:mask:transform:)`](https://developer.apple.com/documentation/PencilKit/PKDrawing-swift.struct/erasingPath(_:mask:transform:)-9dpi9).
-- Convert a stroke path to a `CGPath` using the [`bezierRepresentation`](https://developer.apple.com/documentation/PencilKit/PKStrokePathReference/bezierRepresentation) property, or create a stroke path from a bezier path using [`init(bezierPath:creationDate:pointProvider:)`](https://developer.apple.com/documentation/PencilKit/PKStrokePath-swift.struct/init(bezierPath:creationDate:pointProvider:)).
+- Access and assign a stable identity to strokes and stroke paths using the `id` property on [`PKStroke`](https://developer.apple.com/documentation/pencilkit/pkstroke-swift.struct) and [`PKStrokePath`](https://developer.apple.com/documentation/pencilkit/pkstrokepath-swift.struct), which conform to `Identifiable`.
+- Select strokes programmatically and respond to selection changes using the [`selection`](https://developer.apple.com/documentation/pencilkit/pkcanvasview/selection) property and the [`canvasViewSelectionDidChange(_:)`](https://developer.apple.com/documentation/pencilkit/pkcanvasviewdelegate/canvasviewselectiondidchange(_:)) delegate method.
+- Erase portions of a drawing along a path using [`erasePath(_:mask:transform:)`](https://developer.apple.com/documentation/pencilkit/pkdrawing-swift.struct/erasepath(_:mask:transform:)-shn), or get a new drawing with the erasure applied using [`erasingPath(_:mask:transform:)`](https://developer.apple.com/documentation/pencilkit/pkdrawing-swift.struct/erasingpath(_:mask:transform:)-9dpi9).
+- Convert a stroke path to a `CGPath` using the [`bezierRepresentation`](https://developer.apple.com/documentation/pencilkit/pkstrokepathreference/bezierrepresentation) property, or create a stroke path from a bezier path using [`init(bezierPath:creationDate:pointProvider:)`](https://developer.apple.com/documentation/pencilkit/pkstrokepath-swift.struct/init(bezierpath:creationdate:pointprovider:)).
 
 ##### Handwriting Recognition
 
-- Recognize handwritten text, search within ink, and generate indexable string content using [`PKStrokeRecognizer`](https://developer.apple.com/documentation/PencilKit/PKStrokeRecognizer).
+- Recognize handwritten text, search within ink, and generate indexable string content using [`PKStrokeRecognizer`](https://developer.apple.com/documentation/pencilkit/pkstrokerecognizer).
 
 ## See Also
 

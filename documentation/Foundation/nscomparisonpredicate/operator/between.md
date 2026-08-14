@@ -22,7 +22,7 @@ case between
 
 #### Discussion
 
-Returns [`true`](https://developer.apple.com/documentation/Swift/true) if `[lhs between rhs]`; the right hand side must be an array in which the first element sets the lower bound and the second element the upper, inclusive. Comparison is performed using `compare(_:)` or the class-appropriate equivalent.
+Returns [`true`](https://developer.apple.com/documentation/swift/true) if `[lhs between rhs]`; the right hand side must be an array in which the first element sets the lower bound and the second element the upper, inclusive. Comparison is performed using `compare(_:)` or the class-appropriate equivalent.
 
 ## See Also
 

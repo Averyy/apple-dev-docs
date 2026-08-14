@@ -22,7 +22,7 @@ class NSTextCheckingResult
 
 #### Overview
 
-On both iOS and macOS, instances of [`NSTextCheckingResult`](nstextcheckingresult.md) are returned by the [`NSRegularExpression`](nsregularexpression.md) class and the [`NSDataDetector`](nsdatadetector.md) class to indicate the discovery of content. In those cases, what is found may be a match for a regular expression or a date, address, phone number, and so on. In macOS, instances of `NSTextCheckingResult` are returned by the [`NSSpellChecker`](https://developer.apple.com/documentation/AppKit/NSSpellChecker) object to describe the results of spelling, grammar, or text-substitution actions.
+On both iOS and macOS, instances of [`NSTextCheckingResult`](nstextcheckingresult.md) are returned by the [`NSRegularExpression`](nsregularexpression.md) class and the [`NSDataDetector`](nsdatadetector.md) class to indicate the discovery of content. In those cases, what is found may be a match for a regular expression or a date, address, phone number, and so on. In macOS, instances of `NSTextCheckingResult` are returned by the [`NSSpellChecker`](https://developer.apple.com/documentation/appkit/nsspellchecker) object to describe the results of spelling, grammar, or text-substitution actions.
 
 ## Topics
 
@@ -123,16 +123,16 @@ On both iOS and macOS, instances of [`NSTextCheckingResult`](nstextcheckingresul
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
 - [NSCoding](nscoding.md)
 - [NSCopying](nscopying.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 - [NSSecureCoding](nssecurecoding.md)
 
 ## See Also

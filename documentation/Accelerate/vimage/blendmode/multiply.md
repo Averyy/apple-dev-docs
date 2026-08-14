@@ -24,7 +24,7 @@ case multiply
 
 The following image shows the result of compositing using the multiply blend mode:
 
-![Graphic showing the multiply blend mode composite operation.](https://docs-assets.developer.apple.com/published/621f96b00e4e06cb86e86045ac707912/media-3958278%402x.png)
+![Graphic showing the multiply blend mode composite operation.](/images/com.apple.accelerate/media-3958278@2x.png)
 
 The bottom-right quadrant in the result is black because the operation multiplies each bottom-layer pixel value by `0.0` from the top layer.
 

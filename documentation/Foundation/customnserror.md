@@ -34,9 +34,9 @@ protocol CustomNSError : Error
 ## Relationships
 
 ### Inherits From
-- [Error](../Swift/Error.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Error](../swift/error.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 ### Conforming Types
 - [CocoaError](cocoaerror.md)
 - [MachError](macherror.md)
@@ -45,7 +45,7 @@ protocol CustomNSError : Error
 
 ## See Also
 
-- [protocol Error](../Swift/Error.md)
+- [protocol Error](../swift/error.md)
   A type representing an error value that can be thrown.
 - [class NSError](nserror.md)
   Information about an error condition including a domain, a domain-specific error code, and application-specific information.

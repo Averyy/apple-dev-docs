@@ -36,9 +36,9 @@ protocol SpatialTypeProtocol<Scalar> : Decodable, Encodable, Equatable
 ## Relationships
 
 ### Inherits From
-- [Decodable](../Swift/Decodable.md)
-- [Encodable](../Swift/Encodable.md)
-- [Equatable](../Swift/Equatable.md)
+- [Decodable](../swift/decodable.md)
+- [Encodable](../swift/encodable.md)
+- [Equatable](../swift/equatable.md)
 ### Inherited By
 - [ClampableWithinRectProtocol](clampablewithinrectprotocol.md)
 - [Primitive3DProtocol](primitive3dprotocol.md)

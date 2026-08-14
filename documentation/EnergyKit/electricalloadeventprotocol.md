@@ -27,11 +27,11 @@ Don’t declare new conformances to `ElectricalLoadEventProtocol`. Only [`Electr
 ## Relationships
 
 ### Inherits From
-- [Decodable](../Swift/Decodable.md)
-- [Encodable](../Swift/Encodable.md)
-- [Identifiable](../Swift/Identifiable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Decodable](../swift/decodable.md)
+- [Encodable](../swift/encodable.md)
+- [Identifiable](../swift/identifiable.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 ### Conforming Types
 - [ElectricHVACLoadEvent](electrichvacloadevent.md)
 - [ElectricVehicleLoadEvent](electricvehicleloadevent.md)

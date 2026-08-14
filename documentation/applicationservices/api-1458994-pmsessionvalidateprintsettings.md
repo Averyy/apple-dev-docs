@@ -26,7 +26,7 @@ You must call this function between the creation and release of a printing sessi
 
 - `printSession`: The printing session for the specified print settings object.
 - `printSettings`: The print settings object to validate.
-- `result`: A pointer to your Boolean variable. On return,   if any parameters changed, or   if no parameters changed.
+- `result`: A pointer to your Boolean variable. On return, `true` if any parameters changed, or `false` if no parameters changed.
 
 ## See Also
 

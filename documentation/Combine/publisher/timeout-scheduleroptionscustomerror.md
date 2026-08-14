@@ -28,7 +28,7 @@ A publisher that terminates if the specified interval elapses with no events rec
 
 Use [`timeout(_:scheduler:options:customError:)`](publisher/timeout(_:scheduler:options:customerror:).md) to terminate a publisher if an element isn’t delivered within a timeout interval you specify.
 
-In the example below, a [`PassthroughSubject`](passthroughsubject.md) publishes [`String`](https://developer.apple.com/documentation/Swift/String) elements and is configured to time out if no new elements are received within its `TIME_OUT` window of 5 seconds. A single value is published after the specified 2-second `WAIT_TIME`, after which no more elements are available; the publisher then times out and completes normally.
+In the example below, a [`PassthroughSubject`](passthroughsubject.md) publishes [`String`](https://developer.apple.com/documentation/swift/string) elements and is configured to time out if no new elements are received within its `TIME_OUT` window of 5 seconds. A single value is published after the specified 2-second `WAIT_TIME`, after which no more elements are available; the publisher then times out and completes normally.
 
 ```swift
 var WAIT_TIME : Int = 2

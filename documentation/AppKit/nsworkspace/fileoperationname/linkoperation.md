@@ -16,7 +16,7 @@ static let linkOperation: NSWorkspace.FileOperationName
 
 #### Discussion
 
-Behaves the same as [`linkItem(at:to:)`](https://developer.apple.com/documentation/Foundation/FileManager/linkItem(at:to:)).
+Behaves the same as [`linkItem(at:to:)`](https://developer.apple.com/documentation/foundation/filemanager/linkitem(at:to:)).
 
 ## See Also
 

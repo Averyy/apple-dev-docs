@@ -20,7 +20,7 @@ The notification object is the WebView that changed its typing style. This notif
 
 ## See Also
 
-- [var typingStyle: DOMCSSStyleDeclaration!](../WebKit/WebView-swift.class/typingStyle.md)
+- [var typingStyle: DOMCSSStyleDeclaration!](../webkit/webview-swift.class/typingstyle.md)
   The receiver’s CSS typing style.
 - [static let WebHistoryAllItemsRemoved: NSNotification.Name](nsnotification/name-swift.struct/webhistoryallitemsremoved.md)
   Posted when all history items have been removed from the web history.

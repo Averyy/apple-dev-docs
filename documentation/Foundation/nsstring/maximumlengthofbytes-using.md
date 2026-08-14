@@ -22,7 +22,7 @@ func maximumLengthOfBytes(using enc: UInt) -> Int
 
 #### Return Value
 
-The maximum number of bytes needed to store the receiver in `encoding` in a non-external representation. The length does not include space for a terminating `NULL` character. Returns `0` if the amount of memory required for storing the results of the encoding conversion would exceed [`NSIntegerMax`](https://developer.apple.com/documentation/ObjectiveC/NSIntegerMax).
+The maximum number of bytes needed to store the receiver in `encoding` in a non-external representation. The length does not include space for a terminating `NULL` character. Returns `0` if the amount of memory required for storing the results of the encoding conversion would exceed [`NSIntegerMax`](https://developer.apple.com/documentation/objectivec/nsintegermax).
 
 #### Discussion
 

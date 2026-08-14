@@ -22,7 +22,7 @@ func CMRemoveAttachment(_ target: CMAttachmentBearer, key: CFString)
 
 #### Discussion
 
-If the attachment exists, the function removes the attachment and decrements the retain count. Given a [`CVBuffer`](https://developer.apple.com/documentation/CoreVideo/CVBuffer), `CMRemoveAttachment` is equivalent to `CVBufferRemoveAttachment`.
+If the attachment exists, the function removes the attachment and decrements the retain count. Given a [`CVBuffer`](https://developer.apple.com/documentation/corevideo/cvbuffer), `CMRemoveAttachment` is equivalent to `CVBufferRemoveAttachment`.
 
 ## Parameters
 

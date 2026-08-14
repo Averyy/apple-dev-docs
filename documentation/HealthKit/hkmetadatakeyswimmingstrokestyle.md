@@ -21,7 +21,7 @@ let HKMetadataKeySwimmingStrokeStyle: String
 
 #### Discussion
 
-Set this key on workout lap events. Set its value to an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) object that contains a valid value from the  [`HKSwimmingStrokeStyle`](hkswimmingstrokestyle.md) enumeration.
+Set this key on workout lap events. Set its value to an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) object that contains a valid value from the  [`HKSwimmingStrokeStyle`](hkswimmingstrokestyle.md) enumeration.
 
 ## Topics
 

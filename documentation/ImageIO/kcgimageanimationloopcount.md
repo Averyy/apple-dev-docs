@@ -22,9 +22,9 @@ let kCGImageAnimationLoopCount: CFString
 
 #### Discussion
 
-The value of this property is a [`CFNumber`](https://developer.apple.com/documentation/CoreFoundation/CFNumber) that contains an unsigned integer. To override the loop count value in the image file, include this property in the options dictionary when animating an image.
+The value of this property is a [`CFNumber`](https://developer.apple.com/documentation/corefoundation/cfnumber) that contains an unsigned integer. To override the loop count value in the image file, include this property in the options dictionary when animating an image.
 
-You may specify [`kCFNumberPositiveInfinity`](https://developer.apple.com/documentation/CoreFoundation/kCFNumberPositiveInfinity) for this property to animate the images continuously.
+You may specify [`kCFNumberPositiveInfinity`](https://developer.apple.com/documentation/corefoundation/kcfnumberpositiveinfinity) for this property to animate the images continuously.
 
 ## See Also
 

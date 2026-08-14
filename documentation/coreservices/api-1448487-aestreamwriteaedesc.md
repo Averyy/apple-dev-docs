@@ -26,8 +26,8 @@ Do not use [`AEStreamOpenDesc(_:_:)`](1446544-aestreamopendesc.md) and [`AEStrea
 
 ## Parameters
 
-- `ref`: An   containing the stream data.
-- `desc`: A pointer to the descriptor you want to copy into the stream. See  .
+- `ref`: An [`AEStreamRef`](aestreamref.md) containing the stream data.
+- `desc`: A pointer to the descriptor you want to copy into the stream. See [`AEDesc`](aedesc.md).
 
 ## See Also
 

@@ -7,7 +7,6 @@ A protocol that enables bidirectional communication between your extension and t
 
 **Availability**:
 - iOS 26.5+
-- iPadOS 26.5+
 
 ## Declaration
 
@@ -36,8 +35,8 @@ Use the session object provided to [`didActivate(for:)`](notificationsforwarding
 ## Relationships
 
 ### Inherits From
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 ### Conforming Types
 - [NotificationsForwarding.Session](notificationsforwarding/session.md)
 

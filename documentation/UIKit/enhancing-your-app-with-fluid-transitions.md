@@ -8,7 +8,7 @@ Use the fluid zoom transition to provide a continuously interactive and responsi
 
 iOS 18 introduces a fluid, continuously interactive zoom transition. You can use this transition when your app navigates from a large cell or thumbnail to increase the sense of continuity in your app. People can then grab, drag, and control the transitions when they begin and anytime during their animation.
 
-![None](https://docs-assets.developer.apple.com/published/bd50d0379034d35e5c72efaca38e8530/media-4422984%402x.png)
+![None](/images/com.apple.uikit/media-4422984@2x.png)
 
 For example, someone taps a thumbnail and your app pushes the corresponding view controller onto the navigation stack. If you’re using the zoom transition, they can stop the transition or drag it to slow it down or reverse it. Both your app’s state and the transition animation seamlessly change based on a person’s gestures.
 
@@ -33,7 +33,7 @@ detailViewController.preferredTransition = .zoom { [self] _ in
 navigationController?.pushViewController(detailViewController, animated: true)
 ```
 
-> ❗ **Important**:  Because the transition runs on both zoom in and zoom out, use a stable identifier to look up the view in the closure instead of capturing a [`UIView`](uiview.md) or [`IndexPath`](https://developer.apple.com/documentation/Foundation/IndexPath) instance.
+> ❗ **Important**:  Because the transition runs on both zoom in and zoom out, use a stable identifier to look up the view in the closure instead of capturing a [`UIView`](uiview.md) or [`IndexPath`](https://developer.apple.com/documentation/foundation/indexpath) instance.
 
 If your app lets people swipe between different items without leaving the detail view, the thumbnail you want to zoom back to can change. To look up the correct thumbnail, use the context that the system passes to the closure.
 
@@ -63,7 +63,7 @@ navigationController?.pushViewController(detailViewController, animated: true)
 
 View controllers go through a number of state changes when pushing them onto or popping them off the navigation stack.
 
-![An illustration that shows the relationship between the view controller states, the transitions, and the callback methods. The illustration has four states: disappeared, appearing, appeared, and disappearing. When transitioning from disappeared to appearing, the system calls viewWillAppear, adds the view to the view hierarchy, and then calls viewIsAppearing. When transitioning from appearing to appeared, it calls viewDidAppear. When transitioning from appeared to disappearing, it calls viewWillDisappear. Finally, when transitioning from disappearing to disappeared, it removes the view from the view hierarchy, and then calls viewDidDisappear.](https://docs-assets.developer.apple.com/published/e97461b40b52ce1a5a9f78c0b8bfeed8/media-4414969%402x.png)
+![An illustration that shows the relationship between the view controller states, the transitions, and the callback methods. The illustration has four states: disappeared, appearing, appeared, and disappearing. When transitioning from disappeared to appearing, the system calls viewWillAppear, adds the view to the view hierarchy, and then calls viewIsAppearing. When transitioning from appearing to appeared, it calls viewDidAppear. When transitioning from appeared to disappearing, it calls viewWillDisappear. Finally, when transitioning from disappearing to disappeared, it removes the view from the view hierarchy, and then calls viewDidDisappear.](/images/com.apple.uikit/media-4414969@2x.png)
 
 When you push a view controller onto the navigation stack, the controller begins in the *disappeared* state. As it transitions to the *appeared* state, the system performs the following steps:
 
@@ -74,7 +74,7 @@ When you push a view controller onto the navigation stack, the controller begins
 5. Calls [`viewDidAppear(_:)`](uiviewcontroller/viewdidappear(_:).md).
 6. Ends in the appeared state.
 
-![An illustration that shows the view controller’s state changes during a push transition. It starts in the disappeared state. The system calls viewWillAppear, adds the view to the view hierarchy, and then calls viewIsAppearing as the controller moves to the appearing state. The system then calls viewDidAppear as the controller moves to the appeared state.](https://docs-assets.developer.apple.com/published/c291f5d39a4710a35a376032ddc8a36a/media-4422525%402x.png)
+![An illustration that shows the view controller’s state changes during a push transition. It starts in the disappeared state. The system calls viewWillAppear, adds the view to the view hierarchy, and then calls viewIsAppearing as the controller moves to the appearing state. The system then calls viewDidAppear as the controller moves to the appeared state.](/images/com.apple.uikit/media-4422525@2x.png)
 
 When you pop a view controller off the navigation stack, it starts in the appeared state. The system then performs the following steps:
 
@@ -84,15 +84,15 @@ When you pop a view controller off the navigation stack, it starts in the appear
 4. Calls [`viewDidDisappear(_:)`](uiviewcontroller/viewdiddisappear(_:).md).
 5. Ends in the disappeared state.
 
-![An illustration that shows the view controller’s state changes during a pop transition. It starts in the appeared state. The system calls viewWillDisappear as the controller moves to the disappearing state. The system then removes the view from the view hierarchy and calls viewDidDisappear as the view controller transitions to the disappeared state.](https://docs-assets.developer.apple.com/published/be3392ac981e83490758da2b05c8eadb/media-4422524%402x.png)
+![An illustration that shows the view controller’s state changes during a pop transition. It starts in the appeared state. The system calls viewWillDisappear as the controller moves to the disappearing state. The system then removes the view from the view hierarchy and calls viewDidDisappear as the view controller transitions to the disappeared state.](/images/com.apple.uikit/media-4422524@2x.png)
 
 When someone interrupts the fluid zoom transition, the sequence of events changes. If a person cancels a navigation pop, the system calls [`viewWillDisappear(_:)`](uiviewcontroller/viewwilldisappear(_:).md) and transitions to the disappearing state. At that point, the system transitions directly to the appearing state and calls [`viewDidDisappear(_:)`](uiviewcontroller/viewdiddisappear(_:).md) before ending in the appeared state. This transition occurs within one cycle of the run loop, so new events can’t interrupt it.
 
-![An illustration that shows the view controller’s state changes when someone cancels a pop transition. The view controller starts in the appeared state. The system calls viewWillDisappear as the controller transitions to the disappearing state. Then the view controller transitions directly to the appearing state. The system calls viewDidAppear, and the view controller transitions to the appeared state.](https://docs-assets.developer.apple.com/published/bcf6a36e70e75b1a165c3369e2f40f16/media-4422527%402x.png)
+![An illustration that shows the view controller’s state changes when someone cancels a pop transition. The view controller starts in the appeared state. The system calls viewWillDisappear as the controller transitions to the disappearing state. Then the view controller transitions directly to the appearing state. The system calls viewDidAppear, and the view controller transitions to the appeared state.](/images/com.apple.uikit/media-4422527@2x.png)
 
 However, if someone interrupts a navigation push, the system doesn’t cancel push transitions. Instead, the system completes the transition to the appeared state and begins the navigation pop within one cycle of the run loop. The pop transition then proceeds as before, and either runs to completion or gets interrupted again.
 
-![An illustration that shows the view controller state changes when someone interrupts a push transition, converting it to a pop transition. The push transition starts in the disappeared state and progresses to the appeared state, even after the push transition is interrupted. It then begins a pop transition, moving from the appeared state back to the disappeared state. The system performs all the actions in the cycle: calls viewWillAppear, adds the view to the view hierarchy, calls viewIsAppearing, calls viewDidAppear, calls viewWillDisappear, removes the view from the view hierarchy, and calls viewDidDisappear.](https://docs-assets.developer.apple.com/published/46c46c5d95d188e3dc5d7c6d8e514a72/media-4422526%402x.png)
+![An illustration that shows the view controller state changes when someone interrupts a push transition, converting it to a pop transition. The push transition starts in the disappeared state and progresses to the appeared state, even after the push transition is interrupted. It then begins a pop transition, moving from the appeared state back to the disappeared state. The system performs all the actions in the cycle: calls viewWillAppear, adds the view to the view hierarchy, calls viewIsAppearing, calls viewDidAppear, calls viewWillDisappear, removes the view from the view hierarchy, and calls viewDidDisappear.](/images/com.apple.uikit/media-4422526@2x.png)
 
 > ❗ **Important**:  The system handles the push and pop transitions differently. It doesn’t cancel a push — instead, it converts it to a pop. This ensures that the view controller reaches the appeared state, and calls the full cycle of appear and disappear callbacks.
 

@@ -20,7 +20,7 @@ var onWristDate: Date? { get }
 
 Use this property to compute the duration that the user wears their Apple Watch.
 
-The initial value of the [`onWristDate`](srwristdetection/onwristdate.md) property is [`nil`](https://developer.apple.com/documentation/ObjectiveC/nil-227m0) and the [`offWristDate`](srwristdetection/offwristdate.md) property is the current date. The system changes the value of these properties as follows:
+The initial value of the [`onWristDate`](srwristdetection/onwristdate.md) property is [`nil`](https://developer.apple.com/documentation/objectivec/nil-227m0) and the [`offWristDate`](srwristdetection/offwristdate.md) property is the current date. The system changes the value of these properties as follows:
 
 - When the user puts on their Apple Watch, the [`onWristDate`](srwristdetection/onwristdate.md) property becomes the current date and the [`offWristDate`](srwristdetection/offwristdate.md) property remains the same.
 - When the user takes off their Apple Watch, the [`offWristDate`](srwristdetection/offwristdate.md) property becomes the current date, and the [`onWristDate`](srwristdetection/onwristdate.md) property remains the same.

@@ -58,19 +58,19 @@ The format you supply in response is:
 
 #### Renew an App License From Your App
 
-To renew a license, call [`requestLicenseRenewal(appleItemIDs:)`](https://developer.apple.com/documentation/MarketplaceKit/AppLibrary/requestLicenseRenewal(appleItemIDs:)) from within your marketplace app, or other app you distribute from your website. The system then calls your license renewal endpoint and provides the license ID for the given [`AppleItemID`](https://developer.apple.com/documentation/MarketplaceKit/AppleItemID). Your license server responds by providing a new license with the `issuedTime` set to today, and a `duration` set at your discretion.
+To renew a license, call [`requestLicenseRenewal(appleItemIDs:)`](https://developer.apple.com/documentation/marketplacekit/applibrary/requestlicenserenewal(appleitemids:)) from within your marketplace app, or other app you distribute from your website. The system then calls your license renewal endpoint and provides the license ID for the given [`AppleItemID`](https://developer.apple.com/documentation/marketplacekit/appleitemid). Your license server responds by providing a new license with the `issuedTime` set to today, and a `duration` set at your discretion.
 
 If any logic running on your web server determines that an app license needs adjusting, record the state and periodically check it from your marketplace app. For example, your marketplace app can call a custom endpoint you implement just for that purpose. When the state indicates the license needs adjusting, your app calls `requestLicenseRenewal(appleItemIDs:)`, which intructs the system to send the renewal request to your license server.
 
 #### Revoke an App License From Your App
 
-To revoke an app license, call [`requestLicenseRenewal(appleItemIDs:)`](https://developer.apple.com/documentation/MarketplaceKit/AppLibrary/requestLicenseRenewal(appleItemIDs:)) passing the app’s [`AppleItemID`](https://developer.apple.com/documentation/MarketplaceKit/AppleItemID) from your app. The system then sends a request to your license renewal endpoint with that app’s license ID. In response, your endpoint includes the license ID in the `ineligibleLicenses` array, which instructs the system to prevent the app from running.
+To revoke an app license, call [`requestLicenseRenewal(appleItemIDs:)`](https://developer.apple.com/documentation/marketplacekit/applibrary/requestlicenserenewal(appleitemids:)) passing the app’s [`AppleItemID`](https://developer.apple.com/documentation/marketplacekit/appleitemid) from your app. The system then sends a request to your license renewal endpoint with that app’s license ID. In response, your endpoint includes the license ID in the `ineligibleLicenses` array, which instructs the system to prevent the app from running.
 
 #### Resolve an Expired License From the Home Screen
 
 When a license expires for your marketplace app or an app that your marketplace distributes and a person taps the app icon on the Home Screen, the system presents the alert:
 
-![A screenshot of the iOS Home Screen that includes an app icon titled Camping World. An alert displays in the center of the screen that reads App License Expired. The license for Camping App has expired. To open the app, you must first resolve the issue. Two buttons follow side by side in the alert. The button on the left reads Cancel and the button on the right reads Resolve.](https://docs-assets.developer.apple.com/published/4ab84a64c023aa270c274bd679f6177c/renewing-and-revoking-app-licenses-1%402x.png)
+![A screenshot of the iOS Home Screen that includes an app icon titled Camping World. An alert displays in the center of the screen that reads App License Expired. The license for Camping App has expired. To open the app, you must first resolve the issue. Two buttons follow side by side in the alert. The button on the left reads Cancel and the button on the right reads Resolve.](/images/com.apple.AppLicenseDeliverySDK/renewing-and-revoking-app-licenses-1@2x.png)
 
 A Resolve button follows that, after a person taps it, presents a web view that loads a page you specify in your server’s `marketplace-kit` configuration file as the `licenseResolutionURL`:
 
@@ -87,15 +87,15 @@ When the system issues a GET request for the page, it includes the following par
 
 | License resolution parameter | Description |
 | --- | --- |
-| `account` | The account you associate with the person in the intitial [`MarketplaceKitURIScheme`](https://developer.apple.com/documentation/MarketplaceKit/MarketplaceKitURIScheme) to install the app. |
-| `appleItemID` | An identifier for a requested app. For more information, see [`AppleItemID`](https://developer.apple.com/documentation/MarketplaceKit/AppleItemID). |
-| `appleVersionID` | A version number that corresponds to the alternative distribution package. For more information, see [`AppleVersionID`](https://developer.apple.com/documentation/MarketplaceKit/AppleVersionID). |
+| `account` | The account you associate with the person in the intitial [`MarketplaceKitURIScheme`](https://developer.apple.com/documentation/marketplacekit/marketplacekiturischeme) to install the app. |
+| `appleItemID` | An identifier for a requested app. For more information, see [`AppleItemID`](https://developer.apple.com/documentation/marketplacekit/appleitemid). |
+| `appleVersionID` | A version number that corresponds to the alternative distribution package. For more information, see [`AppleVersionID`](https://developer.apple.com/documentation/marketplacekit/appleversionid). |
 
 Format the web page in your response to the person’s unique situation so they can resolve the issue in line. If they can’t resolve the issue immediately, your webpage provides the necessary context on the expiration or status of the problem.
 
 If your configuration file lacks `licenseResolutionURL`, then the system presents the alert:
 
-![A screenshot of the iOS Home Screen that includes an app icon titled Camping World. An alert displays in the center of the screen that reads App License Expired. The license for Camping App has expired and can't be opened. Contact the developer for additional details. The alert contains a button that reads OK.](https://docs-assets.developer.apple.com/published/5225eec16e210d829b1f2f6078ac2ae8/renewing-and-revoking-app-licenses-2%402x.png)
+![A screenshot of the iOS Home Screen that includes an app icon titled Camping World. An alert displays in the center of the screen that reads App License Expired. The license for Camping App has expired and can't be opened. Contact the developer for additional details. The alert contains a button that reads OK.](/images/com.apple.AppLicenseDeliverySDK/renewing-and-revoking-app-licenses-2@2x.png)
 
 ## See Also
 

@@ -6,15 +6,15 @@ Learn about important changes to Audio Toolbox.
 
 #### Overview
 
-Browse notable changes in [`Audio Toolbox`](https://developer.apple.com/documentation/AudioToolbox).
+Browse notable changes in [`Audio Toolbox`](https://developer.apple.com/documentation/audiotoolbox).
 
 #### June 2024
 
 ##### Spatial Audio with Auspatialmixer
 
-- Adjust the spatial mixer orientation to match someone’s head pose via compatible AirPods by setting the new [`kAudioUnitProperty_SpatialMixerEnableHeadTracking`](https://developer.apple.com/documentation/AudioToolbox/kAudioUnitProperty_SpatialMixerEnableHeadTracking) property to `true`. The system requires your app to have the [`com.apple.developer.coremotion.head-pose`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.coremotion.head-pose) entitlement to observe this property.
-- Tailor spatial mixing output according to a person’s personalized spatial audio profile that they configure in Settings by adding the [`com.apple.developer.spatial-audio.profile-access`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.spatial-audio.profile-access) entitlement to your app.
-- Instruct spatial mixing to ignore the new system spatial audio toggle in Control Center by adding the [`AVGameBypassSystemSpatialAudio`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/AVGameBypassSystemSpatialAudio) key to your app’s `Info.plist`.
+- Adjust the spatial mixer orientation to match someone’s head pose via compatible AirPods by setting the new [`kAudioUnitProperty_SpatialMixerEnableHeadTracking`](https://developer.apple.com/documentation/audiotoolbox/kaudiounitproperty_spatialmixerenableheadtracking) property to `true`. The system requires your app to have the [`com.apple.developer.coremotion.head-pose`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.coremotion.head-pose) entitlement to observe this property.
+- Tailor spatial mixing output according to a person’s personalized spatial audio profile that they configure in Settings by adding the [`com.apple.developer.spatial-audio.profile-access`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.spatial-audio.profile-access) entitlement to your app.
+- Instruct spatial mixing to ignore the new system spatial audio toggle in Control Center by adding the [`AVGameBypassSystemSpatialAudio`](https://developer.apple.com/documentation/bundleresources/information-property-list/avgamebypasssystemspatialaudio) key to your app’s `Info.plist`.
 
 ## See Also
 

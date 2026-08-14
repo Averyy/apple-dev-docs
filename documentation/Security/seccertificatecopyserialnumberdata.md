@@ -26,12 +26,12 @@ The content of a DER-encoded integer (without the tag and length fields) for thi
 
 #### Discussion
 
-In Objective-C, if the function returns an error free it with a call to [`CFRelease`](https://developer.apple.com/documentation/CoreFoundation/CFRelease) when you are done with it. If it returns data, you must free that as well.
+In Objective-C, if the function returns an error free it with a call to [`CFRelease`](https://developer.apple.com/documentation/corefoundation/cfrelease) when you are done with it. If it returns data, you must free that as well.
 
 ## Parameters
 
 - `certificate`: The certificate from which to copy the serial number.
-- `error`: A [`CFError`](https://developer.apple.com/documentation/CoreFoundation/CFError) pointer the function uses to return an error instance on failure. Set to `nil` to ignore any error.
+- `error`: A [`CFError`](https://developer.apple.com/documentation/corefoundation/cferror) pointer the function uses to return an error instance on failure. Set to `nil` to ignore any error.
 
 
 ---

@@ -18,7 +18,7 @@ case butt
 
 Here is an example of the appearance of this style:
 
-![Diagram that shows the butt line cap style.](https://docs-assets.developer.apple.com/published/55f4560ea57e003d22575615b367c028/media-3670932%402x.png)
+![Diagram that shows the butt line cap style.](/images/com.apple.appkit/media-3670932@2x.png)
 
 ## See Also
 

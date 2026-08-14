@@ -7,7 +7,6 @@ Initializes a notification response with the given identifiers and optional user
 
 **Availability**:
 - iOS 26.5+
-- iPadOS 26.5+
 
 ## Declaration
 

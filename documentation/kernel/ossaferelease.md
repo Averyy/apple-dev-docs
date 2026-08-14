@@ -16,7 +16,7 @@ Release an object if not `NULL`.
 
 ## Parameters
 
-- `inst`: Instance of an OSObject, may be  .
+- `inst`: Instance of an OSObject, may be `NULL`.
 
 ## See Also
 

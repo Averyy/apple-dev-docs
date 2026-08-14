@@ -25,7 +25,7 @@ This data type defines a file-based launch specification designating,by file-sys
 - [init(appRef: UnsafePointer<FSRef>!, numDocs: Int, itemRefs: UnsafePointer<FSRef>!, passThruParams: UnsafePointer<AEDesc>!, launchFlags: LSLaunchFlags, asyncRefCon: UnsafeMutableRawPointer!)](lslaunchfsrefspec/1442457-init.md)
 ### Instance Properties
 - [var appRef: UnsafePointer<FSRef>!](lslaunchfsrefspec/1448321-appref.md)
-  A pointer to a file-system reference designatingthe application to launch; see the  inthe Carbon File Management Documentation for a description of the `FSRef` datatype. Set this field to `NULL` torequest that each item in the `itemRefs` arraybe opened in its own preferred application.
+  A pointer to a file-system reference designatingthe application to launch; see the *File Manager Reference* inthe Carbon File Management Documentation for a description of the `FSRef` datatype. Set this field to `NULL` torequest that each item in the `itemRefs` arraybe opened in its own preferred application.
 - [var asyncRefCon: UnsafeMutableRawPointer!](lslaunchfsrefspec/1450600-asyncrefcon.md)
   A pointer to an arbitrary application-definedvalue, passed in the Carbon event notifying you of an application’slaunch or termination (if you have registered for such notification).The value of this field can be `NULL`.
 - [var itemRefs: UnsafePointer<FSRef>!](lslaunchfsrefspec/1444360-itemrefs.md)
@@ -35,7 +35,7 @@ This data type defines a file-based launch specification designating,by file-sys
 - [var numDocs: Int](lslaunchfsrefspec/1450323-numdocs.md)
   The number of elements in the array specifiedby the `itemRefs` field.The value of this field can be `0`,in which case the application designated by `appRef` islaunched without opening any items.
 - [var passThruParams: UnsafePointer<AEDesc>!](lslaunchfsrefspec/1445933-passthruparams.md)
-  A pointer to an Apple event descriptor that ispassed untouched as an optional parameter, with keyword `keyAEPropData` (`'prdt'`),in the Apple event sent to each application launched or activated(whether individual preferred applications or the application designatedby `appRef`). See the  in the Carbon Interapplication CommunicationDocumentation for a description of the `AEDesc` datatype. The value of this field can be `NULL`.
+  A pointer to an Apple event descriptor that ispassed untouched as an optional parameter, with keyword `keyAEPropData` (`'prdt'`),in the Apple event sent to each application launched or activated(whether individual preferred applications or the application designatedby `appRef`). See the *AppleEvent Manager Reference* in the Carbon Interapplication CommunicationDocumentation for a description of the `AEDesc` datatype. The value of this field can be `NULL`.
 
 ## See Also
 

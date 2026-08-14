@@ -25,7 +25,7 @@ func fetch(withSubscriptionIDs subscriptionIDs: [CKSubscription.ID], completionH
 
 The completion handler takes the following parameters:
 
-- A [`Result`](https://developer.apple.com/documentation/Swift/Result) that contains either a dictionary of fetched subscriptions, or an error if the request fails, such as when the network is unavailable or the device doesn’t have an active iCloud account. When present, the dictionary uses the identifiers you specify in `subscriptionIDs` as its keys. The value of each key is a [`Result`](https://developer.apple.com/documentation/Swift/Result) that contains either the corresponding fetched subscription, or an error that describes why CloudKit can’t provide that subscription.
+- A [`Result`](https://developer.apple.com/documentation/swift/result) that contains either a dictionary of fetched subscriptions, or an error if the request fails, such as when the network is unavailable or the device doesn’t have an active iCloud account. When present, the dictionary uses the identifiers you specify in `subscriptionIDs` as its keys. The value of each key is a [`Result`](https://developer.apple.com/documentation/swift/result) that contains either the corresponding fetched subscription, or an error that describes why CloudKit can’t provide that subscription.
 
 For information on a more configurable way to fetch specific subscriptions, see [`CKFetchSubscriptionsOperation`](ckfetchsubscriptionsoperation.md).
 

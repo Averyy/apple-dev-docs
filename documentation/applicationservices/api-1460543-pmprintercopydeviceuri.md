@@ -25,7 +25,7 @@ The device URI of a printer describes how to communicate with the device. For so
 ## Parameters
 
 - `printer`: The printer whose device URI you want to obtain.
-- `deviceURI`: A pointer to your   variable. On return, the variable refers to a Core Foundation URL that specifies the printer's device URI. You are responsible for releasing the URL. If an error occurs, the variable is set to  .
+- `deviceURI`: A pointer to your [`CFURL`](https://developer.apple.com/documentation/corefoundation/cfurl) variable. On return, the variable refers to a Core Foundation URL that specifies the printer's device URI. You are responsible for releasing the URL. If an error occurs, the variable is set to `NULL`.
 
 ## See Also
 

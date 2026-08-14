@@ -83,20 +83,20 @@ List(directoryContents, selection: $selection) { entry in
 ## Relationships
 
 ### Inherits From
-- [NSMenu](../AppKit/NSMenu.md)
+- [NSMenu](../appkit/nsmenu.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSAccessibilityElementProtocol](../AppKit/NSAccessibilityElementProtocol.md)
-- [NSAccessibilityProtocol](../AppKit/NSAccessibilityProtocol.md)
-- [NSAppearanceCustomization](../AppKit/NSAppearanceCustomization.md)
-- [NSCoding](../Foundation/NSCoding.md)
-- [NSCopying](../Foundation/NSCopying.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [NSUserInterfaceItemIdentification](../AppKit/NSUserInterfaceItemIdentification.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSAccessibilityElementProtocol](../appkit/nsaccessibilityelementprotocol.md)
+- [NSAccessibilityProtocol](../appkit/nsaccessibilityprotocol.md)
+- [NSAppearanceCustomization](../appkit/nsappearancecustomization.md)
+- [NSCoding](../foundation/nscoding.md)
+- [NSCopying](../foundation/nscopying.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSUserInterfaceItemIdentification](../appkit/nsuserinterfaceitemidentification.md)
 
 ## See Also
 

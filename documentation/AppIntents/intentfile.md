@@ -67,19 +67,19 @@ Provide an intent file entity implementation to describe data you store in a fil
 ## Relationships
 
 ### Conforms To
-- [Copyable](../Swift/Copyable.md)
-- [CustomLocalizedStringResourceConvertible](../Foundation/CustomLocalizedStringResourceConvertible.md)
-- [Decodable](../Swift/Decodable.md)
+- [Copyable](../swift/copyable.md)
+- [CustomLocalizedStringResourceConvertible](../foundation/customlocalizedstringresourceconvertible.md)
+- [Decodable](../swift/decodable.md)
 - [DisplayRepresentable](displayrepresentable.md)
-- [Encodable](../Swift/Encodable.md)
-- [Equatable](../Swift/Equatable.md)
-- [Escapable](../Swift/Escapable.md)
-- [Hashable](../Swift/Hashable.md)
+- [Encodable](../swift/encodable.md)
+- [Equatable](../swift/equatable.md)
+- [Escapable](../swift/escapable.md)
+- [Hashable](../swift/hashable.md)
 - [InstanceDisplayRepresentable](instancedisplayrepresentable.md)
 - [IntentValueConvertible](intentvalueconvertible.md)
 - [IntentValueExpressing](intentvalueexpressing.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 - [TypeDisplayRepresentable](typedisplayrepresentable.md)
 
 

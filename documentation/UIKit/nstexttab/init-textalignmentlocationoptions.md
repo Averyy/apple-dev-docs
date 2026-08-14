@@ -25,7 +25,7 @@ An initialized text tab.
 
 #### Discussion
 
-The text alignment is used to determine the position of text inside the tab column. See [`NSParagraphStyle.TextTabType`](https://developer.apple.com/documentation/AppKit/NSParagraphStyle/TextTabType) for a mapping between alignments and tab stop types
+The text alignment is used to determine the position of text inside the tab column. See [`NSParagraphStyle.TextTabType`](https://developer.apple.com/documentation/appkit/nsparagraphstyle/texttabtype) for a mapping between alignments and tab stop types
 
 ## Parameters
 

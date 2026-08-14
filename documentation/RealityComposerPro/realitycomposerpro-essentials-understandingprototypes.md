@@ -11,7 +11,7 @@ In Reality Composer Pro, a **prototype** is a source asset, and an **instance** 
 - If you change a prototype, Reality Composer Pro propagates those changes to every instance of that prototype in your project.
 - If you make changes in the Scene Hierarchy to an instance of a prototype, Reality Composer Pro treats the changes as an **override** on the instance. Overrides don’t affect the prototype itself. Overrides appear in the Scene Hierarchy as a small dot next to the icon.
 
-![A screenshot of the Reality Composer Pro Scene Hierarchy with a white override-indicator dot next to an instance.](https://docs-assets.developer.apple.com/published/b735e828d97e9e869ab6244e58d315ad/SceneHierarchyCropped%402x.png)
+![A screenshot of the Reality Composer Pro Scene Hierarchy with a white override-indicator dot next to an instance.](/images/RealityComposerPro/SceneHierarchyCropped@2x.png)
 
 > ❗ **Important**: When you directly assign a prototype to a component — for example, assigning a material to a model component — Reality Composer Pro may not automatically create an instance. Any edits to the material directly edit the prototype instead. To assign an instance, Control-click the material in the Project Browser, select **Instance**, and then assign the instanced material to the model component.
 
@@ -39,11 +39,11 @@ Use the Inspector or the Scene Hierarchy to propagate or reset overrides on an i
 
 **From the Inspector:** Control-click the entry you want to change, and then select **Propagate** or **Reset**.
 
-![The Reality Composer Pro Inspector context menu showing Propagate and Reset options for a prototype entry.](https://docs-assets.developer.apple.com/published/2e5889613ad3ef33b84a85cd5dd34d54/InspectorOverride%402x.png)
+![The Reality Composer Pro Inspector context menu showing Propagate and Reset options for a prototype entry.](/images/RealityComposerPro/InspectorOverride@2x.png)
 
 **From the Scene Hierarchy:** Control-click an asset, and then select **Reset**, **Propagate**, or **Make Unique**.
 
-![The Reality Composer Pro Scene Hierarchy context menu showing Reset, Propagate, and Make Unique options.](https://docs-assets.developer.apple.com/published/b36bdbc0a77bc229562f7fbae33f39aa/SceneHierarchyComponentContextMenu%402x.png)
+![The Reality Composer Pro Scene Hierarchy context menu showing Reset, Propagate, and Make Unique options.](/images/RealityComposerPro/SceneHierarchyComponentContextMenu@2x.png)
 
 #### Change the Prototype Referenced By an Instance
 
@@ -51,7 +51,7 @@ In the Inspector, change the prototype that an instance references.
 
 Select the instance in the Hierarchy. In the Inspector, click the prototype field and select a different prototype from the Project Browser. The instance retains its current overrides, which now apply on top of the new prototype’s values. Remove any overrides that no longer apply to the new prototype.
 
-![A screenshot of the Reality Composer Pro Inspector showing the option to change the prototype that an instance references.](https://docs-assets.developer.apple.com/published/0b6159a449e770c10894029cd0993985/MaterialPrototype%402x.png)
+![A screenshot of the Reality Composer Pro Inspector showing the option to change the prototype that an instance references.](/images/RealityComposerPro/MaterialPrototype@2x.png)
 
 ## See Also
 

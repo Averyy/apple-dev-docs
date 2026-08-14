@@ -22,7 +22,7 @@ let NSURLErrorFailingURLPeerTrustErrorKey: String
 
 #### Discussion
 
-The corresponding value is the [`SecTrust`](https://developer.apple.com/documentation/Security/SecTrust) object.
+The corresponding value is the [`SecTrust`](https://developer.apple.com/documentation/security/sectrust) object.
 
 ## See Also
 

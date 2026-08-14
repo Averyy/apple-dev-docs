@@ -7,7 +7,6 @@ Creates a new send encrypted message request with the given parameters.
 
 **Availability**:
 - iOS 26.5+
-- iPadOS 26.5+
 
 ## Declaration
 

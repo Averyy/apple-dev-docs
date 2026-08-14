@@ -12,11 +12,11 @@ Materials define how an object’s surface interacts with light. Properties such
 
 Reality Composer Pro offers several material types you can use to achieve virtually any effect:
 
-- **Physically Based** — Physically based materials simulate how surfaces interact with light in the real world. See [`PhysicallyBasedMaterial`](https://developer.apple.com/documentation/RealityKit/PhysicallyBasedMaterial) for more information.
-- **Occlusion** — Occlusion materials create invisible surfaces that hide virtual content behind them, letting virtual objects appear to pass behind real-world surfaces or other invisible boundaries. See [`OcclusionMaterial`](https://developer.apple.com/documentation/RealityKit/OcclusionMaterial) for more information.
-- **Portal** — Portal materials simulate looking through a window, a gateway, or a rip in space into another location. See [`PortalMaterial`](https://developer.apple.com/documentation/RealityKit/PortalMaterial) for more information.
-- **Shader Graph** — Shader Graph materials are custom materials created in a visual, node-based workflow. Unlike PBR or Unlit, Shader Graph materials support arbitrary logic, animation, and runtime parameter changes. These are the materials you work with in the Shader Graph Editor to create virtually any type of material and its unique properties. See [`ShaderGraphMaterial`](https://developer.apple.com/documentation/RealityKit/ShaderGraphMaterial) for more information.
-- **Unlit** — Unlit materials don’t respond to lights in the scene. Their color and brightness remain consistent regardless of the environment’s lighting conditions. See [`UnlitMaterial`](https://developer.apple.com/documentation/RealityKit/UnlitMaterial) for more information.
+- **Physically Based** — Physically based materials simulate how surfaces interact with light in the real world. See [`PhysicallyBasedMaterial`](https://developer.apple.com/documentation/realitykit/physicallybasedmaterial) for more information.
+- **Occlusion** — Occlusion materials create invisible surfaces that hide virtual content behind them, letting virtual objects appear to pass behind real-world surfaces or other invisible boundaries. See [`OcclusionMaterial`](https://developer.apple.com/documentation/realitykit/occlusionmaterial) for more information.
+- **Portal** — Portal materials simulate looking through a window, a gateway, or a rip in space into another location. See [`PortalMaterial`](https://developer.apple.com/documentation/realitykit/portalmaterial) for more information.
+- **Shader Graph** — Shader Graph materials are custom materials created in a visual, node-based workflow. Unlike PBR or Unlit, Shader Graph materials support arbitrary logic, animation, and runtime parameter changes. These are the materials you work with in the Shader Graph Editor to create virtually any type of material and its unique properties. See [`ShaderGraphMaterial`](https://developer.apple.com/documentation/realitykit/shadergraphmaterial) for more information.
+- **Unlit** — Unlit materials don’t respond to lights in the scene. Their color and brightness remain consistent regardless of the environment’s lighting conditions. See [`UnlitMaterial`](https://developer.apple.com/documentation/realitykit/unlitmaterial) for more information.
 
 #### Create a Material Asset
 
@@ -24,7 +24,7 @@ You can create a material in two ways.
 
 In the Project Browser, Control-click anywhere in your project, then select **New** > **Material**. The new material defaults to the Shader Graph material type. After creating the material, double-click it in the Project Browser to open it in the **Shader Graph Editor**.
 
-![A screenshot of the Project Browser showing how to add a new material.](https://docs-assets.developer.apple.com/published/8a9021fd3cb47d130a246c0eeb6bf916/AddAsset%402x.png)
+![A screenshot of the Project Browser showing how to add a new material.](/images/RealityComposerPro/AddAsset@2x.png)
 
 Another way to create a material in the Project Browser is to click **[+]** and then select **Material**.
 
@@ -32,7 +32,7 @@ Another way to create a material in the Project Browser is to click **[+]** and 
 
 > **Note**: When you add a new Geometry Entity (Plane, Sphere, or Box) to the Scene Hierarchy, Reality Composer Pro automatically assigns `default_material` under Material Slots in the Inspector and classifies it as a **Shader Graph**. You can click `default_material` to select another material, or change Shader Graph to another option.
 
-![A screenshot showing the default material assigned to a new geometry entity.](https://docs-assets.developer.apple.com/published/eb8d0e4ea90d18aa655f66243ac794c9/addNewGeometry%402x.png)
+![A screenshot showing the default material assigned to a new geometry entity.](/images/RealityComposerPro/addNewGeometry@2x.png)
 
 > **Note**: If you change `default_material`, those changes affect every new geometry entity that uses this material.
 
@@ -64,7 +64,7 @@ In the Hierarchy:
 - Select a material in the Hierarchy to change the material that the instance is pointing to.
 - You can click a model and then view the material applied to it in the Inspector.
 
-![A screenshot showing a material selected in the scene hierarchy.](https://docs-assets.developer.apple.com/published/7906d11d625ab5bf9be2e05615ce20fa/DefaultMaterial%402x.png)
+![A screenshot showing a material selected in the scene hierarchy.](/images/RealityComposerPro/DefaultMaterial@2x.png)
 
 #### Inspect Materials in the Project Browser
 
@@ -73,7 +73,7 @@ In the Project Browser:
 - Select (click) a material in the Project Browser to directly edit its properties and settings in the Inspector.
 - Double-click a Shader Graph material to open the Shader Graph Editor. See [`Designing materials with Shader Graph`](designing-materials-with-shader-graph.md) to learn about working with Shader Graph materials.
 
-![A screenshot showing a material selected in the Project Browser.](https://docs-assets.developer.apple.com/published/48b5a1e062fdf6833851d5e1866e0372/ShaderGraph-ShaderGraph%402x.png)
+![A screenshot showing a material selected in the Project Browser.](/images/RealityComposerPro/ShaderGraph-ShaderGraph@2x.png)
 
 #### Inspect Materials in the Viewport
 
@@ -110,7 +110,7 @@ Sets the material shader to one of the following:
 
 ##### Face Culling
 
-Face culling optimizes rendering by discarding the hidden faces of a polygon. Determines if the shader displays front, back, or no faces. See [`CustomMaterial.FaceCulling`](https://developer.apple.com/documentation/RealityKit/CustomMaterial/FaceCulling-swift.typealias) for more information.
+Face culling optimizes rendering by discarding the hidden faces of a polygon. Determines if the shader displays front, back, or no faces. See [`CustomMaterial.FaceCulling`](https://developer.apple.com/documentation/realitykit/custommaterial/faceculling-swift.typealias) for more information.
 
 Options include Back, Front, or None.
 
@@ -128,17 +128,17 @@ When toggled on, the material writes its depth into RealityKit’s depth buffer.
 
 ##### Physically Based Material Options
 
-The following options apply when the Shader type is set to **Physically Based**. See [`PhysicallyBasedMaterial`](https://developer.apple.com/documentation/RealityKit/PhysicallyBasedMaterial) in the Apple Developer Documentation for more information.
+The following options apply when the Shader type is set to **Physically Based**. See [`PhysicallyBasedMaterial`](https://developer.apple.com/documentation/realitykit/physicallybasedmaterial) in the Apple Developer Documentation for more information.
 
 ##### Blend Mode
 
-The transparency of an entity (Opaque or Transparent). See [`CustomMaterial.Blending`](https://developer.apple.com/documentation/RealityKit/CustomMaterial/Blending-swift.enum) for more information.
+The transparency of an entity (Opaque or Transparent). See [`CustomMaterial.Blending`](https://developer.apple.com/documentation/realitykit/custommaterial/blending-swift.enum) for more information.
 
 > **Note**: Available options change depending on which Blend Mode is selected.
 
 ##### Opacity Scale
 
-Available when Blend Mode = Transparent. Sets the opacity of the material. A value of 0.0 makes the material fully transparent, and a value of 1.0 makes the material fully opaque. See [`CustomMaterial.Opacity`](https://developer.apple.com/documentation/RealityKit/CustomMaterial/Opacity) for more information.
+Available when Blend Mode = Transparent. Sets the opacity of the material. A value of 0.0 makes the material fully transparent, and a value of 1.0 makes the material fully opaque. See [`CustomMaterial.Opacity`](https://developer.apple.com/documentation/realitykit/custommaterial/opacity) for more information.
 
 ##### Opacity Texture
 
@@ -146,39 +146,39 @@ Available when Blend Mode = Transparent.
 
 ##### Base Color Texture
 
-Foundational image file that defines the flat, physical color of a surface without any lighting or shadow information. Determines the fundamental color of materials like brick, wood, or cloth. See [`PhysicallyBasedMaterial.BaseColor`](https://developer.apple.com/documentation/RealityKit/PhysicallyBasedMaterial/BaseColor-swift.struct) for more information.
+Foundational image file that defines the flat, physical color of a surface without any lighting or shadow information. Determines the fundamental color of materials like brick, wood, or cloth. See [`PhysicallyBasedMaterial.BaseColor`](https://developer.apple.com/documentation/realitykit/physicallybasedmaterial/basecolor-swift.struct) for more information.
 
 ##### Roughness Texture
 
-The texture that determines how much light scatters across a surface, making objects look polished and glossy or dry, chalky, and matte. A value of 1.0 makes the material rough, and a value of 0.0 removes all roughness to make a smooth material. See [`PhysicallyBasedMaterial.Roughness`](https://developer.apple.com/documentation/RealityKit/PhysicallyBasedMaterial/Roughness-swift.struct) for more information.
+The texture that determines how much light scatters across a surface, making objects look polished and glossy or dry, chalky, and matte. A value of 1.0 makes the material rough, and a value of 0.0 removes all roughness to make a smooth material. See [`PhysicallyBasedMaterial.Roughness`](https://developer.apple.com/documentation/realitykit/physicallybasedmaterial/roughness-swift.struct) for more information.
 
 ##### Metallic Texture
 
-A mask that controls how light is reflected. It determines which parts of an object’s surface react like metal and which act like non-metals (like wood, stone, or plastic). See [`PhysicallyBasedMaterial.Metallic`](https://developer.apple.com/documentation/RealityKit/PhysicallyBasedMaterial/Metallic-swift.struct) for more information.
+A mask that controls how light is reflected. It determines which parts of an object’s surface react like metal and which act like non-metals (like wood, stone, or plastic). See [`PhysicallyBasedMaterial.Metallic`](https://developer.apple.com/documentation/realitykit/physicallybasedmaterial/metallic-swift.struct) for more information.
 
 ##### Normal Texture
 
-A UV-mapped image that encodes surface normals to simulate fine surface details without adding geometry. See [`PhysicallyBasedMaterial.Normal`](https://developer.apple.com/documentation/RealityKit/PhysicallyBasedMaterial/Normal-swift.struct) for more information.
+A UV-mapped image that encodes surface normals to simulate fine surface details without adding geometry. See [`PhysicallyBasedMaterial.Normal`](https://developer.apple.com/documentation/realitykit/physicallybasedmaterial/normal-swift.struct) for more information.
 
 ##### Clearcoat Texture
 
-The transparent highlights that simulate a clear, shiny coating over an underlying material on an entity. See [`PhysicallyBasedMaterial.Clearcoat`](https://developer.apple.com/documentation/RealityKit/PhysicallyBasedMaterial/Clearcoat-swift.struct) for more information.
+The transparent highlights that simulate a clear, shiny coating over an underlying material on an entity. See [`PhysicallyBasedMaterial.Clearcoat`](https://developer.apple.com/documentation/realitykit/physicallybasedmaterial/clearcoat-swift.struct) for more information.
 
 ##### Clearcoat Roughness Texture
 
-The degree to which an entity’s clear, shiny coating scatters light to create soft highlights. See [`PhysicallyBasedMaterial.ClearcoatRoughness`](https://developer.apple.com/documentation/RealityKit/PhysicallyBasedMaterial/ClearcoatRoughness-swift.struct) for more information.
+The degree to which an entity’s clear, shiny coating scatters light to create soft highlights. See [`PhysicallyBasedMaterial.ClearcoatRoughness`](https://developer.apple.com/documentation/realitykit/physicallybasedmaterial/clearcoatroughness-swift.struct) for more information.
 
 ##### Emissive Texture
 
-The color of the light the entity emits. This makes a surface appear to glow or self-illuminate, regardless of surrounding light. See [`PhysicallyBasedMaterial.EmissiveColor`](https://developer.apple.com/documentation/RealityKit/PhysicallyBasedMaterial/EmissiveColor-swift.struct) for more information.
+The color of the light the entity emits. This makes a surface appear to glow or self-illuminate, regardless of surrounding light. See [`PhysicallyBasedMaterial.EmissiveColor`](https://developer.apple.com/documentation/realitykit/physicallybasedmaterial/emissivecolor-swift.struct) for more information.
 
 ##### Specular Texture
 
-A grayscale image that affects the intensity of light reflections on non-metallic surfaces to control how shiny or dull a material looks at different angles. See [`PhysicallyBasedMaterial.Specular`](https://developer.apple.com/documentation/RealityKit/PhysicallyBasedMaterial/Specular-swift.struct) for more information.
+A grayscale image that affects the intensity of light reflections on non-metallic surfaces to control how shiny or dull a material looks at different angles. See [`PhysicallyBasedMaterial.Specular`](https://developer.apple.com/documentation/realitykit/physicallybasedmaterial/specular-swift.struct) for more information.
 
 ##### Ambient Occlusion Texture
 
-Sets the degree of ambient lighting that the material receives to simulate soft shadows and subtle shading. See [`PhysicallyBasedMaterial.AmbientOcclusion`](https://developer.apple.com/documentation/RealityKit/PhysicallyBasedMaterial/AmbientOcclusion-swift.struct) for more information.
+Sets the degree of ambient lighting that the material receives to simulate soft shadows and subtle shading. See [`PhysicallyBasedMaterial.AmbientOcclusion`](https://developer.apple.com/documentation/realitykit/physicallybasedmaterial/ambientocclusion-swift.struct) for more information.
 
 ##### Base Color Tint
 
@@ -189,7 +189,7 @@ Tints the base color for the material. You can select a color or use a texture f
 - sRGB
 - Linear sRGB
 
-See [`PhysicallyBasedMaterial.BaseColor`](https://developer.apple.com/documentation/RealityKit/PhysicallyBasedMaterial/BaseColor-swift.struct) for more information.
+See [`PhysicallyBasedMaterial.BaseColor`](https://developer.apple.com/documentation/realitykit/physicallybasedmaterial/basecolor-swift.struct) for more information.
 
 > **Note**: If both Base Color Tint and Base Color Texture are defined for the same material, the system uses the tint color to tint the texture.
 
@@ -211,7 +211,7 @@ The following options apply when the Shader type is set to **Shader Graph**.
 
 ##### Lighting Model
 
-Specifies the lighting model to use. See [`CustomMaterial.LightingModel`](https://developer.apple.com/documentation/RealityKit/CustomMaterial/LightingModel-swift.enum) for more information.
+Specifies the lighting model to use. See [`CustomMaterial.LightingModel`](https://developer.apple.com/documentation/realitykit/custommaterial/lightingmodel-swift.enum) for more information.
 
 - Lit
 - Unlit

@@ -47,7 +47,7 @@ Apps can use the [`guidedAccessRestrictionState(forIdentifier:)`](uiaccessibilit
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

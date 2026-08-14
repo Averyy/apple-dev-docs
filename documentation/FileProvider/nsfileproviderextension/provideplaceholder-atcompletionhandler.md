@@ -21,7 +21,7 @@ func providePlaceholder(at url: URL) async throws
 
 > ❗ **Important**:  You can call this method from synchronous code using a completion handler, as shown on this page, or you can call it as an asynchronous method that has the following declaration: ```swift
 func providePlaceholder(at url: URL) async throws
-``` For information about concurrency and asynchronous code in Swift, see [`Calling Objective-C APIs Asynchronously`](https://developer.apple.com/documentation/Swift/calling-objective-c-apis-asynchronously).
+``` For information about concurrency and asynchronous code in Swift, see [`Calling Objective-C APIs Asynchronously`](https://developer.apple.com/documentation/swift/calling-objective-c-apis-asynchronously).
 
 The system calls this method when it needs a placeholder for a document that’s returned by the File Provider extension, but is not stored locally. Override `providePlaceholder(at:completionHandler:)` to create a placeholder for the given URL. This task can be broken into three steps: looking up the document’s file provider item, writing the placeholder, and calling the completion handler.
 

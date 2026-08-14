@@ -15,7 +15,7 @@ Use Service Management to install and observe the permission settings of three s
 
 - **LoginItems**: An app that `launchd` starts when the user logs in. A `LoginItem` is an app that continues running until the user logs out or manually quits. Its primary purpose is to enable the system to launch helper executables automatically
 - **LaunchAgents**: Processes that run on behalf of the currently logged-in user. `launchd`, a system-level process, manages Agents. Agents can communicate with other processes in the same user session and with system-wide daemons in the system context.
-- **LaunchDaemons**: A stand-alone background process that `launchd` manages on behalf of the user and which runs as root and may run before any users have logged on to the system. A daemon doesn’t interact with a user process directly; it can only respond to requests made by user processes in the form of a low-level request, such as a system request, for example [`XPC`](https://developer.apple.com/documentation/Foundation/xpc), low-level Interprocess Communications system.
+- **LaunchDaemons**: A stand-alone background process that `launchd` manages on behalf of the user and which runs as root and may run before any users have logged on to the system. A daemon doesn’t interact with a user process directly; it can only respond to requests made by user processes in the form of a low-level request, such as a system request, for example [`XPC`](https://developer.apple.com/documentation/foundation/xpc), low-level Interprocess Communications system.
 
 ## Topics
 

@@ -53,18 +53,18 @@ Ambient audio sources are well suited to play back multichannel content which ca
 
 ### Conforms To
 - [Component](component.md)
-- [Copyable](../Swift/Copyable.md)
-- [Decodable](../Swift/Decodable.md)
-- [Encodable](../Swift/Encodable.md)
-- [Equatable](../Swift/Equatable.md)
-- [Escapable](../Swift/Escapable.md)
-- [Hashable](../Swift/Hashable.md)
+- [Copyable](../swift/copyable.md)
+- [Decodable](../swift/decodable.md)
+- [Encodable](../swift/encodable.md)
+- [Equatable](../swift/equatable.md)
+- [Escapable](../swift/escapable.md)
+- [Hashable](../swift/hashable.md)
 
 ## See Also
 
 - [Creating a Spaceship game](creating-a-spaceship-game.md)
   Build an immersive game using RealityKit audio, simulation, and rendering features.
-- [Playing spatial audio](../visionOS/playing-spatial-audio-in-visionos.md)
+- [Playing spatial audio](../visionos/playing-spatial-audio-in-visionos.md)
   Create and adjust spatial audio in visionOS with RealityKit.
 - [struct SpatialAudioComponent](spatialaudiocomponent.md)
   A component that configures how sounds emit from an entity into a person’s environment.

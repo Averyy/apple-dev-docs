@@ -24,7 +24,7 @@ Thread safe starting in OS X v10.2.
 
 ## Parameters
 
-- `desc`: A pointer to a new descriptor. See  .
+- `desc`: A pointer to a new descriptor. See [`AEDesc`](aedesc.md).
 
 ## See Also
 

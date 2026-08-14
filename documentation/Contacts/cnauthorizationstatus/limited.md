@@ -26,7 +26,7 @@ case limited
 
 A person can give your app limited access to their contacts by choosing this option when your app first attempts to authorize for accessing contacts. Thereafter, the person can maintain the set of contacts exposed to your app by managing them in the Settings app.
 
-Your app can prompt the person to add contacts to the limited-access set by displaying a [`ContactAccessButton`](https://developer.apple.com/documentation/ContactsUI/ContactAccessButton), in association with a search UI your app provides. You can also display a picker to add contacts with the SwiftUI view modifier [`contactAccessPicker(isPresented:completionHandler:)`](https://developer.apple.com/documentation/SwiftUI/View/contactAccessPicker(isPresented:completionHandler:)).
+Your app can prompt the person to add contacts to the limited-access set by displaying a [`ContactAccessButton`](https://developer.apple.com/documentation/contactsui/contactaccessbutton), in association with a search UI your app provides. You can also display a picker to add contacts with the SwiftUI view modifier [`contactAccessPicker(isPresented:completionHandler:)`](https://developer.apple.com/documentation/swiftui/view/contactaccesspicker(ispresented:completionhandler:)).
 
 ## See Also
 

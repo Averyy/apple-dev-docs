@@ -38,7 +38,7 @@ Keep a copy of `observer` in your app in case you want to stop receiving notific
   Returns an array of all the Metal device instances in the system.
 - [func MTLRemoveDeviceObserver(any NSObjectProtocol)](mtlremovedeviceobserver(_:).md)
   Removes a registered observer of device notifications.
-- [func CGDirectDisplayCopyCurrentMetalDevice(CGDirectDisplayID) -> (any MTLDevice)?](../CoreGraphics/CGDirectDisplayCopyCurrentMetalDevice(_:).md)
+- [func CGDirectDisplayCopyCurrentMetalDevice(CGDirectDisplayID) -> (any MTLDevice)?](../coregraphics/cgdirectdisplaycopycurrentmetaldevice(_:).md)
   Returns the GPU device instance that’s currently driving a display.
 - [typealias MTLDeviceNotificationHandler](mtldevicenotificationhandler.md)
   A Swift closure or an Objective-C block that Metal calls when the system adds or removes a GPU device.

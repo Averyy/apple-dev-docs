@@ -16,7 +16,7 @@ func isExpandable(_ item: Any?) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/Swift/true) if `item` is expandable—that is, `item` can contain other items, otherwise [`false`](https://developer.apple.com/documentation/Swift/false).
+[`true`](https://developer.apple.com/documentation/swift/true) if `item` is expandable—that is, `item` can contain other items, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
 
 ## Parameters
 

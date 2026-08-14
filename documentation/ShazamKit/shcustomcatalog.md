@@ -38,7 +38,7 @@ Create a custom catalog by adding reference signatures that you generate from au
 - [func write(to: URL) throws](shcustomcatalog/write(to:).md)
   Saves the custom catalog to a local file.
 ### Getting the content type
-- [static var shazamCustomCatalog: UTType](../UniformTypeIdentifiers/UTType-swift.struct/shazamCustomCatalog.md)
+- [static var shazamCustomCatalog: UTType](../uniformtypeidentifiers/uttype-swift.struct/shazamcustomcatalog.md)
   A type that represents a custom catalog.
 ### Initializers
 - [init(dataRepresentation: Data) throws](shcustomcatalog/init(datarepresentation:).md)
@@ -52,14 +52,14 @@ Create a custom catalog by adding reference signatures that you generate from au
 ### Inherits From
 - [SHCatalog](shcatalog.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

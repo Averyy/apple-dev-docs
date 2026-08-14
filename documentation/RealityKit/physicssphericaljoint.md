@@ -39,7 +39,7 @@ To add limits to the rotational freedom of `pin1`, define a tuple value for [`an
 ## Relationships
 
 ### Conforms To
-- [Equatable](../Swift/Equatable.md)
+- [Equatable](../swift/equatable.md)
 - [PhysicsJoint](physicsjoint.md)
 
 ## See Also

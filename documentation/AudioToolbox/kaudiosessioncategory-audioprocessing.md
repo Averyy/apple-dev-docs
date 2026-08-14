@@ -24,7 +24,7 @@ This category disables playback (audio output) and disables recording (audio inp
 
 Audio processing does not normally continue when your app is in the background. However, when your app moves to the background, you can request additional time to complete processing. for more information, see [`Internationalizing Your App`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/iPhone/Conceptual/iPhoneOSProgrammingGuide/ExpectedAppBehaviors/ExpectedAppBehaviors.html#//apple_ref/doc/uid/TP40007072-CH3-SW10) in [`App Programming Guide for iOS`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/iPhone/Conceptual/iPhoneOSProgrammingGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40007072).
 
-This category is equivalent to the [`audioProcessing`](https://developer.apple.com/documentation/AVFAudio/AVAudioSession/Category-swift.struct/audioProcessing) category provided in the AVFoundation framework.
+This category is equivalent to the [`audioProcessing`](https://developer.apple.com/documentation/avfaudio/avaudiosession/category-swift.struct/audioprocessing) category provided in the AVFoundation framework.
 
 ## See Also
 

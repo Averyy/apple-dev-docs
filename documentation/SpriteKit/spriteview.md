@@ -33,9 +33,9 @@ A SwiftUI view that renders a SpriteKit scene.
 ## Relationships
 
 ### Conforms To
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
-- [View](../SwiftUI/View.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
+- [View](../swiftui/view.md)
 
 
 ---

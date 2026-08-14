@@ -24,7 +24,7 @@ static let topLeading: Alignment
 
 This alignment combines the [`leading`](horizontalalignment/leading.md) horizontal guide and the [`top`](verticalalignment/top.md) vertical guide:
 
-![A square that’s divided into four equal quadrants. The upper-](https://docs-assets.developer.apple.com/published/de50bc2331e7c7eaa5ab009f298e040d/Alignment-topLeading-1-iOS%402x.png)
+![A square that’s divided into four equal quadrants. The upper-](/images/com.apple.SwiftUI/Alignment-topLeading-1-iOS@2x.png)
 
 ## See Also
 

@@ -7,7 +7,7 @@ An atom that holds the integer value for the next unique item identifier to assi
 
 #### Overview
 
-For more information, see [`Metadata header atom ('mhdr')`](metadata_header_atom.md).
+For more information, see [`Metadata header atom`](metadata_header_atom.md).
 
 ## See Also
 

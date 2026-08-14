@@ -24,14 +24,14 @@ The default implementation of this method first calls the [`contents(forType:)`]
 If you override this method, it’s recommended that you first call the superclass implementation of the method (`super`). If you do not call `super`, you must do two things:
 
 - Call [`performAsynchronousFileAccess(_:)`](uidocument/performasynchronousfileaccess(_:).md) to put the save operation on a background queue.
-- In the block parameter, implement coordinated writing by using the [`NSFileCoordinator`](https://developer.apple.com/documentation/Foundation/NSFileCoordinator) class.
+- In the block parameter, implement coordinated writing by using the [`NSFileCoordinator`](https://developer.apple.com/documentation/foundation/nsfilecoordinator) class.
 - From within the coordinated write, call [`writeContents(_:andAttributes:safelyTo:for:)`](uidocument/writecontents(_:andattributes:safelyto:for:).md).
 
 ## Parameters
 
 - `url`: The file URL identifying the location in the application sandbox to write the document data to. Typically, this is the URL obtained from the [`fileURL`](uidocument/fileurl.md) property.
 - `saveOperation`: A constant that indicates whether the document file is being written the first time or whether it is being overwritten. See [`UIDocument.SaveOperation`](uidocument/saveoperation.md) for details.
-- `completionHandler`: A block with code that is executed when the save operation concludes. The block returns no value and has one parameter: - **`success`**: [`true`](https://developer.apple.com/documentation/Swift/true) if the save operation succeeds, otherwise [`false`](https://developer.apple.com/documentation/Swift/false). This block is invoked on the calling queue.
+- `completionHandler`: A block with code that is executed when the save operation concludes. The block returns no value and has one parameter: - **`success`**: [`true`](https://developer.apple.com/documentation/swift/true) if the save operation succeeds, otherwise [`false`](https://developer.apple.com/documentation/swift/false). This block is invoked on the calling queue.
 
 ## See Also
 

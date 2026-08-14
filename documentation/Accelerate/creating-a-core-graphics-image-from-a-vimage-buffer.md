@@ -10,7 +10,7 @@ vImage provides a function for creating Core Graphics images from vImage buffers
 
 ##### Create the Image
 
-You create a Core Graphics image from the buffer, and initialize a [`UIImage`](https://developer.apple.com/documentation/UIKit/UIImage) instance from that. The [`createCGImage(format:flags:)`](vimage_buffer/createcgimage(format:flags:).md) function returns a [`CGImage`](https://developer.apple.com/documentation/CoreGraphics/CGImage) instance based on the supplied Core Graphics image format (for more information, see [`Converting bitmap data between Core Graphics images and vImage buffers`](converting-bitmap-data-between-core-graphics-images-and-vimage-buffers.md)).
+You create a Core Graphics image from the buffer, and initialize a [`UIImage`](https://developer.apple.com/documentation/uikit/uiimage) instance from that. The [`createCGImage(format:flags:)`](vimage_buffer/createcgimage(format:flags:).md) function returns a [`CGImage`](https://developer.apple.com/documentation/coregraphics/cgimage) instance based on the supplied Core Graphics image format (for more information, see [`Converting bitmap data between Core Graphics images and vImage buffers`](converting-bitmap-data-between-core-graphics-images-and-vimage-buffers.md)).
 
 The following example shows how to create a Core Graphics image from a vImage buffer:
 

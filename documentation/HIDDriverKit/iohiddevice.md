@@ -39,13 +39,13 @@ class IOHIDDevice;
 ## Relationships
 
 ### Inherits From
-- [IOService](../DriverKit/IOService.md)
+- [IOService](../driverkit/ioservice.md)
 ### Inherited By
 - [IOUserHIDDevice](iouserhiddevice.md)
 
 ## See Also
 
-- [com.apple.developer.driverkit.family.hid.device](../BundleResources/Entitlements/com.apple.developer.driverkit.family.hid.device.md)
+- [com.apple.developer.driverkit.family.hid.device](../bundleresources/entitlements/com.apple.developer.driverkit.family.hid.device.md)
   A Boolean value that indicates whether the driver provides a HID-related service to the system.
 - [IOHIDInterface](iohidinterface.md)
   A provider object for a HID device’s interface.

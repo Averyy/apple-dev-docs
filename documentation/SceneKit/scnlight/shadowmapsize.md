@@ -24,7 +24,7 @@ var shadowMapSize: CGSize { get set }
 
 SceneKit produces shadows by rendering the silhouettes of scene geometry into a 2D shadow map image and then projecting that image into the rendered scene. A larger shadow map image produces more detailed shadows at a higher cost to rendering performance; a smaller shadow map renders more quickly but results in pixelation at the edges of shadows.
 
-The default value is [`CGSizeZero`](https://developer.apple.com/documentation/CoreGraphics/CGSizeZero), specifying that SceneKit chooses a shadow map size automatically.
+The default value is [`CGSizeZero`](https://developer.apple.com/documentation/coregraphics/cgsizezero), specifying that SceneKit chooses a shadow map size automatically.
 
 ## See Also
 

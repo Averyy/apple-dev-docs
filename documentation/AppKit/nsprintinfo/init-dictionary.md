@@ -20,7 +20,7 @@ An initialized `NSPrintInfo` object, or nil if the object could not be created.
 
 #### Discussion
 
-This method is the designated initializer for this class. Non-object values should be stored in `NSValue` objects (or an appropriate subclass like `NSNumber`) in the dictionary. See [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) for a list of types which should be stored using the `NSNumber` class; otherwise use `NSValue`.
+This method is the designated initializer for this class. Non-object values should be stored in `NSValue` objects (or an appropriate subclass like `NSNumber`) in the dictionary. See [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) for a list of types which should be stored using the `NSNumber` class; otherwise use `NSValue`.
 
 ## Parameters
 

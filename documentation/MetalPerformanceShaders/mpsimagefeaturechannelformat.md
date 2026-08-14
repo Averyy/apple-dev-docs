@@ -21,7 +21,7 @@ enum MPSImageFeatureChannelFormat
 
 #### Overview
 
-A pixel in an [`MPSImage`](mpsimage.md) object may have many channels in it, sometimes many more than 4, that exceed the limit of what a [`MTLPixelFormat`](https://developer.apple.com/documentation/Metal/MTLPixelFormat) value can encode. The storage format for a single channel within a pixel can be given by the [`MPSImageFeatureChannelFormat`](mpsimagefeaturechannelformat.md) type. The number of channels is defined by the [`featureChannels`](mpsimage/featurechannels.md) property of an [`MPSImage`](mpsimage.md) object. The size of the pixel is the size of the channel format multiplied by the number of feature channels. No padding is allowed, except to round out to a full byte.
+A pixel in an [`MPSImage`](mpsimage.md) object may have many channels in it, sometimes many more than 4, that exceed the limit of what a [`MTLPixelFormat`](https://developer.apple.com/documentation/metal/mtlpixelformat) value can encode. The storage format for a single channel within a pixel can be given by the [`MPSImageFeatureChannelFormat`](mpsimagefeaturechannelformat.md) type. The number of channels is defined by the [`featureChannels`](mpsimage/featurechannels.md) property of an [`MPSImage`](mpsimage.md) object. The size of the pixel is the size of the channel format multiplied by the number of feature channels. No padding is allowed, except to round out to a full byte.
 
 ## Topics
 
@@ -43,12 +43,12 @@ A pixel in an [`MPSImage`](mpsimage.md) object may have many channels in it, som
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../Swift/BitwiseCopyable.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [RawRepresentable](../Swift/RawRepresentable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [BitwiseCopyable](../swift/bitwisecopyable.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [RawRepresentable](../swift/rawrepresentable.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

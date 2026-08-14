@@ -16,8 +16,8 @@ typedef void (*IOUSBLowLatencyIsocCompletionAction)(void *target, void *paramete
 
 ## Parameters
 
-- `target`: The target that the   structure specifies.
-- `parameter`: The parameter that the   structure specifies.
+- `target`: The target that the `IOUSBLowLatencyIsocCompletion` structure specifies.
+- `parameter`: The parameter that the `IOUSBLowLatencyIsocCompletion` structure specifies.
 - `status`: The completion status.
 - `pFrames`: A pointer to the low latency frame list containing the status for each frame that transfers.
 

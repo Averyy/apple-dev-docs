@@ -19,7 +19,7 @@ func pop(to targetTemplate: CPTemplate, animated: Bool)
 ## Parameters
 
 - `targetTemplate`: The template that you want at the top of the stack. The template must be on the navigation stack before you call this method.
-- `animated`: A Boolean value that indicates whether the system animates the display of transitioning templates. Set to [`true`](https://developer.apple.com/documentation/Swift/true) to animate the transition.
+- `animated`: A Boolean value that indicates whether the system animates the display of transitioning templates. Set to [`true`](https://developer.apple.com/documentation/swift/true) to animate the transition.
 
 ## See Also
 

@@ -23,7 +23,7 @@ Use the StoreKit framework to provide the following features and services for yo
 - **Messages**: Control the display of App Store messages in your app.
 - **Reviews**: Request App Store reviews and ratings from your customers.
 - **Recommendations**: Provide recommendations for third-party content that customers can purchase from the App Store.
-- **Ad network attribution**: Validate advertisement-driven app installations. See [`AdAttributionKit`](https://developer.apple.com/documentation/AdAttributionKit) for app ad campaigns on the App Store and alternative marketplaces.
+- **Ad network attribution**: Validate advertisement-driven app installations. See [`AdAttributionKit`](https://developer.apple.com/documentation/adattributionkit) for app ad campaigns on the App Store and alternative marketplaces.
 
 The StoreKit framework also provides functionality for [`External Purchase`](external-purchase.md), [`External link account`](external-link-account.md), [`PaymentMethodBinding`](paymentmethodbinding.md), and [`StoreDownloaderExtension`](storedownloaderextension.md).
 
@@ -91,17 +91,17 @@ The StoreKit framework also provides functionality for [`External Purchase`](ext
 
 ## See Also
 
-- [App Store Server API](../AppStoreServerAPI/AppStoreServerAPI.md)
+- [App Store Server API](../appstoreserverapi/appstoreserverapi.md)
   Manage your customers’ App Store transactions from your server.
-- [StoreKit Test](../StoreKitTest/StoreKitTest.md)
+- [StoreKit Test](../storekittest/storekittest.md)
   Create and automate tests in Xcode for your app’s subscription and in-app purchase transactions, and SKAdNetwork implementations.
-- [App Store Server Notifications](../AppStoreServerNotifications/AppStoreServerNotifications.md)
+- [App Store Server Notifications](../appstoreservernotifications/appstoreservernotifications.md)
   Monitor In-App Purchase events in real time and learn of unreported external purchase tokens, with server notifications from the App Store.
-- [App Store Connect API](../AppStoreConnectAPI/AppStoreConnectAPI.md)
+- [App Store Connect API](../appstoreconnectapi/appstoreconnectapi.md)
   The data structure that represents an app store connect api resource.
-- [Advanced Commerce API](../AdvancedCommerceAPI/AdvancedCommerceAPI.md)
+- [Advanced Commerce API](../advancedcommerceapi/advancedcommerceapi.md)
   Support In-App Purchases through the App Store for exceptionally large catalogs of custom one-time purchases, subscriptions, and subscriptions with optional add-ons.
-- [App Store Receipts](../AppStoreReceipts/AppStoreReceipts.md)
+- [App Store Receipts](../appstorereceipts/appstorereceipts.md)
   Validate app and In-App Purchase receipts with the App Store.
 
 

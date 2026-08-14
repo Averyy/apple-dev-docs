@@ -24,7 +24,7 @@ When an `NSSpecifierTest` object is properly initialized, it holds two objects:
 - A “value” or “test” object used as the basis of the comparison; this object can be a regular object or object specifier (such as “blue” in “words whose color is blue”).
 - An object specifier evaluating to the container (“words”).
 
-The instance also encapsulates a selector identifying the method performing this comparison. The informal protocol [`NSComparisonMethods`](nscomparisonmethods.md) defines a set of comparison methods useful for this purpose, while [`NSScriptingComparisonMethods`](https://developer.apple.com/documentation/ObjectiveC/nsscriptingcomparisonmethods) describes additional methods you may need to use for scripting.
+The instance also encapsulates a selector identifying the method performing this comparison. The informal protocol [`NSComparisonMethods`](nscomparisonmethods.md) defines a set of comparison methods useful for this purpose, while [`NSScriptingComparisonMethods`](https://developer.apple.com/documentation/objectivec/nsscriptingcomparisonmethods) describes additional methods you may need to use for scripting.
 
 The test object is compared, using the selector, against each object in the container. Specifiers in these tests usually have [`containerIsObjectBeingTested`](nsscriptobjectspecifier/containerisobjectbeingtested.md) invoked on their topmost container.
 
@@ -47,15 +47,15 @@ You should rarely need to subclass `NSSpecifierTest`.
 ### Inherits From
 - [NSScriptWhoseTest](nsscriptwhosetest.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
 - [NSCoding](nscoding.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

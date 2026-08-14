@@ -27,7 +27,7 @@ If you override this method, you must ensure that the document is in the proper 
 ## Parameters
 
 - `sharingService`: The sharing service that is sharing the document.
-- `completionHandler`: The completion handler block to call with the results. AppKit calls this method after attempting to share the document. The handler block has no return value and takes the following parameter: - **success**: A Boolean value indicating whether the sharing attempt was successful. The value is [`true`](https://developer.apple.com/documentation/Swift/true) if sharing succeeded, or [`false`](https://developer.apple.com/documentation/Swift/false) if it didn’t.
+- `completionHandler`: The completion handler block to call with the results. AppKit calls this method after attempting to share the document. The handler block has no return value and takes the following parameter: - **success**: A Boolean value indicating whether the sharing attempt was successful. The value is [`true`](https://developer.apple.com/documentation/swift/true) if sharing succeeded, or [`false`](https://developer.apple.com/documentation/swift/false) if it didn’t.
 
 ## See Also
 

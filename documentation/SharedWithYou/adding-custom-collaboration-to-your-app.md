@@ -6,11 +6,11 @@ Integrate your custom collaboration app with Messages.
 
 #### Overview
 
-If your app uses iCloud to store shared content, you can use the steps in [`Adding shared content collaboration to your app`](adding-shared-content-collaboration-to-your-app.md) to add collaboration. To share content without using iCloud, the Shared with You framework provides an [`SWCollaborationMetadata`](https://developer.apple.com/documentation/sharedwithyoucore/swcollaborationmetadata) object wrapped in [`NSItemProvider`](https://developer.apple.com/documentation/Foundation/NSItemProvider) to implement a custom collaboration infrastructure.
+If your app uses iCloud to store shared content, you can use the steps in [`Adding shared content collaboration to your app`](adding-shared-content-collaboration-to-your-app.md) to add collaboration. To share content without using iCloud, the Shared with You framework provides an [`SWCollaborationMetadata`](https://developer.apple.com/documentation/sharedwithyoucore/swcollaborationmetadata) object wrapped in [`NSItemProvider`](https://developer.apple.com/documentation/foundation/nsitemprovider) to implement a custom collaboration infrastructure.
 
 Before you can use this collaboration infrastructure, your app needs to support universal links to share content with other apps. For more details about implementing universal links, see [`Making your app content shareable`](making-your-app-content-shareable.md).
 
-![An illustration of a horizontal iPhone labeled Sending Device. At the top center of the device screen is an app icon with an arrow labeled Share pointing right to a rectangle labeled Collaboration Metadata. An arrow points down from that rectangle to a rectangle labeled Share Sheet/Drag & Drop. From there, an arrow points left to a Messages app icon. The app icon at the top also has a line pointing left and down to two stacked rectangles. The top rectangle is labeled Universal Link and the bottom one is labeled Identifier. The bottom rectangle has an arrow pointing down and right to the Messages app icon. An arrow points up from the Messages app icon to a square with a ? in it. That square has an arrow pointing up to the app icon. The app icon has an arrow pointing up to a square with a ? in it that sits above the device. The square above the device has an arrow pointing right to a Server icon.](https://docs-assets.developer.apple.com/published/3901cbcbc6321c17cec79fa745082f0f/media-4110288%402x.png)
+![An illustration of a horizontal iPhone labeled Sending Device. At the top center of the device screen is an app icon with an arrow labeled Share pointing right to a rectangle labeled Collaboration Metadata. An arrow points down from that rectangle to a rectangle labeled Share Sheet/Drag & Drop. From there, an arrow points left to a Messages app icon. The app icon at the top also has a line pointing left and down to two stacked rectangles. The top rectangle is labeled Universal Link and the bottom one is labeled Identifier. The bottom rectangle has an arrow pointing down and right to the Messages app icon. An arrow points up from the Messages app icon to a square with a ? in it. That square has an arrow pointing up to the app icon. The app icon has an arrow pointing up to a square with a ? in it that sits above the device. The square above the device has an arrow pointing right to a Server icon.](/images/com.apple.sharedwithyou/media-4110288@2x.png)
 
 > **Note**:  Session 10093: [`Integrate your custom collaboration app with Messages`](https://developer.apple.comhttps://developer.apple.com/wwdc22/10093)
 
@@ -18,7 +18,7 @@ Before you can use this collaboration infrastructure, your app needs to support 
 
 When a user decides to share a collaboration from your app through the Messages app, you first create metadata to represent the content. The metadata includes share options the user can configure prior to sending the message, and many other properties you can customize. Next, you provide that metadata to the share sheet, or to drag and drop using the steps below in the “Present a collaboration view” section.
 
-The string you pass to [`SWLocalCollaborationIdentifier`](https://developer.apple.com/documentation/sharedwithyoucore/swlocalcollaborationidentifier) doesn’t need to be unique across devices, it’s only for your app to use locally. Similarly, the system displays the initiator’s account handle and name that your app retrieves from [`personNameComponents(from:)`](https://developer.apple.com/documentation/Foundation/PersonNameComponentsFormatter/personNameComponents(from:)) locally so the collaborator can confirm their account.
+The string you pass to [`SWLocalCollaborationIdentifier`](https://developer.apple.com/documentation/sharedwithyoucore/swlocalcollaborationidentifier) doesn’t need to be unique across devices, it’s only for your app to use locally. Similarly, the system displays the initiator’s account handle and name that your app retrieves from [`personNameComponents(from:)`](https://developer.apple.com/documentation/foundation/personnamecomponentsformatter/personnamecomponents(from:)) locally so the collaborator can confirm their account.
 
 ```swift
 // Configure the SWCollaborationMetadata.
@@ -63,7 +63,7 @@ metadata.defaultShareOptions = SWCollaborationShareOptions(optionsGroups: option
 
 ##### Present a Collaboration View
 
-If your app uses SwiftUI, [`SWCollaborationMetadata`](https://developer.apple.com/documentation/sharedwithyoucore/swcollaborationmetadata) is compatible with the [`Transferable`](https://developer.apple.com/documentation/CoreTransferable/Transferable) protocol and the [`ShareLink`](https://developer.apple.com/documentation/SwiftUI/ShareLink) view. In the example below, the app defines a `Transferable` model object and creates a [`ProxyRepresentation`](https://developer.apple.com/documentation/CoreTransferable/ProxyRepresentation) to return a collaboration metadata instance. Then, the app passes that model object to a `ShareLink` instance in the view.
+If your app uses SwiftUI, [`SWCollaborationMetadata`](https://developer.apple.com/documentation/sharedwithyoucore/swcollaborationmetadata) is compatible with the [`Transferable`](https://developer.apple.com/documentation/coretransferable/transferable) protocol and the [`ShareLink`](https://developer.apple.com/documentation/swiftui/sharelink) view. In the example below, the app defines a `Transferable` model object and creates a [`ProxyRepresentation`](https://developer.apple.com/documentation/coretransferable/proxyrepresentation) to return a collaboration metadata instance. Then, the app passes that model object to a `ShareLink` instance in the view.
 
 ```swift
 // Configure the SwiftUI TransferRepresentation object.
@@ -95,9 +95,9 @@ struct ContentView: View {
 
 It’s good practice to register multiple representations of the content to support sharing through as many channels as possible. For example, Messages automatically offers an option to send the content as a copy if you provide a file representation.
 
-For UIKit and AppKit apps, use [`NSItemProvider`](https://developer.apple.com/documentation/Foundation/NSItemProvider) to support content sharing. `SWCollaborationMetadata` conforms to the [`NSItemProviderReading`](https://developer.apple.com/documentation/Foundation/NSItemProviderReading) and [`NSItemProviderWriting`](https://developer.apple.com/documentation/Foundation/NSItemProviderWriting) protocols, so you can register a metadata instance with an item provider to support collaboration. Use `NSItemProvider` with [`UIActivityViewController`](https://developer.apple.com/documentation/UIKit/UIActivityViewController) and [`UIDragItem`](https://developer.apple.com/documentation/UIKit/UIDragItem) in iOS and iPadOS, and [`NSSharingServicePicker`](https://developer.apple.com/documentation/AppKit/NSSharingServicePicker) in macOS.
+For UIKit and AppKit apps, use [`NSItemProvider`](https://developer.apple.com/documentation/foundation/nsitemprovider) to support content sharing. `SWCollaborationMetadata` conforms to the [`NSItemProviderReading`](https://developer.apple.com/documentation/foundation/nsitemproviderreading) and [`NSItemProviderWriting`](https://developer.apple.com/documentation/foundation/nsitemproviderwriting) protocols, so you can register a metadata instance with an item provider to support collaboration. Use `NSItemProvider` with [`UIActivityViewController`](https://developer.apple.com/documentation/uikit/uiactivityviewcontroller) and [`UIDragItem`](https://developer.apple.com/documentation/uikit/uidragitem) in iOS and iPadOS, and [`NSSharingServicePicker`](https://developer.apple.com/documentation/appkit/nssharingservicepicker) in macOS.
 
-In the example code below, the app registers the collaboration metadata in an `NSItemProvider` instance. Then the app creates a [`UIActivityItemsConfiguration`](https://developer.apple.com/documentation/UIKit/UIActivityItemsConfiguration) object with the item provider object and passes that to the `UIActivityViewController`. Finally, the app presents the share sheet.
+In the example code below, the app registers the collaboration metadata in an `NSItemProvider` instance. Then the app creates a [`UIActivityItemsConfiguration`](https://developer.apple.com/documentation/uikit/uiactivityitemsconfiguration) object with the item provider object and passes that to the `UIActivityViewController`. Finally, the app presents the share sheet.
 
 ```swift
 // Present the iOS share sheet.
@@ -111,7 +111,7 @@ func presentActivityViewController(metadata: SWCollaborationMetadata) {
 }
 ```
 
-To support drag and drop in iOS, initialize `NSItemProvider` and register the metadata the same way as in the previous code example, then create a [`UIDragItem`](https://developer.apple.com/documentation/UIKit/UIDragItem) with the item provider.
+To support drag and drop in iOS, initialize `NSItemProvider` and register the metadata the same way as in the previous code example, then create a [`UIDragItem`](https://developer.apple.com/documentation/uikit/uidragitem) with the item provider.
 
 ```swift
 // Support iOS drag and drop.
@@ -123,7 +123,7 @@ func createDragItem(metadata: SWCollaborationMetadata) -> UIDragItem {
 }
 ```
 
-The API is similar in macOS for the sharing popover. Use the item provider to initialize an [`NSSharingServicePicker`](https://developer.apple.com/documentation/AppKit/NSSharingServicePicker) object and show the picker relative to a target view.
+The API is similar in macOS for the sharing popover. Use the item provider to initialize an [`NSSharingServicePicker`](https://developer.apple.com/documentation/appkit/nssharingservicepicker) object and show the picker relative to a target view.
 
 ```swift
 // Show the macOS sharing popover.
@@ -136,7 +136,7 @@ func showSharingServicePicker(view: NSView, metadata: SWCollaborationMetadata) {
 }
 ```
 
-To support drag and drop in macOS, use [`NSPasteboardItem`](https://developer.apple.com/documentation/AppKit/NSPasteboardItem) instead of `NSItemProvider`. Assign the collaboration metadata to [`collaborationMetadata`](https://developer.apple.com/documentation/AppKit/NSPasteboardItem/collaborationMetadata) on a new `NSPasteboardItem` instance.
+To support drag and drop in macOS, use [`NSPasteboardItem`](https://developer.apple.com/documentation/appkit/nspasteboarditem) instead of `NSItemProvider`. Assign the collaboration metadata to [`collaborationMetadata`](https://developer.apple.com/documentation/appkit/nspasteboarditem/collaborationmetadata) on a new `NSPasteboardItem` instance.
 
 ```swift
 // Support macOS drag and drop.
@@ -152,7 +152,7 @@ The system stages a draft of your collaborative content in Messages. After a per
 
 ##### Prepare the Collaboration Coordinator
 
-`SWCollaborationCoordinator` is a singleton, meaning there’s a global shared instance that your app uses to respond to action requests. Your app defines an action handler that conforms to the [`SWCollaborationActionHandler`](https://developer.apple.com/documentation/sharedwithyoucore/swcollaborationactionhandler) protocol. Because the collaboration coordinator runs in the background and can send requests for actions to your app at any time, define your action handler early in the launch process. The app in the example below registers the handler in the [`application(_:didFinishLaunchingWithOptions:)`](https://developer.apple.com/documentation/UIKit/UIApplicationDelegate/application(_:didFinishLaunchingWithOptions:)) method:
+`SWCollaborationCoordinator` is a singleton, meaning there’s a global shared instance that your app uses to respond to action requests. Your app defines an action handler that conforms to the [`SWCollaborationActionHandler`](https://developer.apple.com/documentation/sharedwithyoucore/swcollaborationactionhandler) protocol. Because the collaboration coordinator runs in the background and can send requests for actions to your app at any time, define your action handler early in the launch process. The app in the example below registers the handler in the [`application(_:didFinishLaunchingWithOptions:)`](https://developer.apple.com/documentation/uikit/uiapplicationdelegate/application(_:didfinishlaunchingwithoptions:)) method:
 
 ```swift
 // Assign your action handler to the SWCollaborationCoordinator.
@@ -206,13 +206,13 @@ The root hash is the root node of a data structure called a *Merkle tree*. A Mer
 
 In the example below, the user has three devices and three public keys. The keys are unique for each collaboration identifier that your app provides, using a process called key diversification. To prevent tracking the number of devices registered to a user, the system pads the set with random keys up to a fixed size. Your server hashes the padded set of diversified keys to create the leaf nodes of the tree with a SHA-256 algorithm.
 
-![A tree diagram of rectangles and connecting lines that represent nodes and their relationships. The node at the top is labeled with a hexidecimal hash number and has two nodes below it labeled H10 and H11. The H10 node on the left has two nodes below it labeled H7 and H8. Node H7 has two nodes below it labeled H1 and H2. H1 has a dimmed rectangle below it labeled P1. H2 has a dimmed rectangle below it labeled P2. Node H8 has two nodes below it labeled H3 and H4. H3 has a dimmed rectangle below it labeled P3. H4 has a dimmed rectangle below it labeled R1. Node H11 has a node below it labeled H9. Node H9 has two nodes below it labeled H5 and H6. H5 has a dimmed rectangle below it labeled R2. H6 has a dimmed rectangle below it labeled R3.](https://docs-assets.developer.apple.com/published/a23d8777e31365b9627c4cdba003556b/media-4110140%402x.png)
+![A tree diagram of rectangles and connecting lines that represent nodes and their relationships. The node at the top is labeled with a hexidecimal hash number and has two nodes below it labeled H10 and H11. The H10 node on the left has two nodes below it labeled H7 and H8. Node H7 has two nodes below it labeled H1 and H2. H1 has a dimmed rectangle below it labeled P1. H2 has a dimmed rectangle below it labeled P2. Node H8 has two nodes below it labeled H3 and H4. H3 has a dimmed rectangle below it labeled P3. H4 has a dimmed rectangle below it labeled R1. Node H11 has a node below it labeled H9. Node H9 has two nodes below it labeled H5 and H6. H5 has a dimmed rectangle below it labeled R2. H6 has a dimmed rectangle below it labeled R3.](/images/com.apple.sharedwithyou/media-4110140@2x.png)
 
 Your server then concatenates and hashes each pair of leaf nodes to derive their predecessor nodes. Repeat this process with the predecessor nodes until a single root node remains. This is the root hash that the system uses to uniquely represent this recipient’s identity across their devices.
 
 The figure below shows that it’s possible to generate a root hash using a subset of the nodes from a complete Merkle tree. Your server can use the hashes H4, H7, and H11, along with the diversified public key P3, to reproduce the root hash in this tree. First, hash the public key to get the missing leaf node H3. Then use H3 and H4 to generate H8. Next, use the given H7 node with H8 to generate H10. Finally, use H10 and H11 to produce the root hash.
 
-![A tree diagram of rectangles and connecting lines that represent nodes and their relationships. Green nodes represent a known device. Orange represents a calculated node. Unknown devices are dimmed. The node at the top is orange and labeled with a hexidecimal hash number and has two nodes below it labeled H10 and H11. The H10 node on the left is orange and has two nodes below it labeled H7 and H8. Node H7 is green and has two dimmed nodes below it labeled H1 and H2. H1 has a dimmed rectangle below it labeled P1. H2 has a dimmed rectangle below it labeled P2. H3 has a dimmed rectangle below it labeled P3. H4 has a dimmed rectangle below it labeled R1. The H8 node is orange and has two nodes below it labeled H3 and H4. H3 is orange and has a green rectangle below it labeled P3. H4 has a dimmed rectangle below it labeled R1. The H11 node is green and has a node below it labeled H9. The H9 node is dimmed and has two dimmed nodes below it labeled H5 and H6. H5 has a dimmed rectangle below it labeled R2. H6 has a dimmed rectangle below it labeled R3.](https://docs-assets.developer.apple.com/published/b91b4a58d6e501c0632c863326585769/media-4110141%402x.png)
+![A tree diagram of rectangles and connecting lines that represent nodes and their relationships. Green nodes represent a known device. Orange represents a calculated node. Unknown devices are dimmed. The node at the top is orange and labeled with a hexidecimal hash number and has two nodes below it labeled H10 and H11. The H10 node on the left is orange and has two nodes below it labeled H7 and H8. Node H7 is green and has two dimmed nodes below it labeled H1 and H2. H1 has a dimmed rectangle below it labeled P1. H2 has a dimmed rectangle below it labeled P2. H3 has a dimmed rectangle below it labeled P3. H4 has a dimmed rectangle below it labeled R1. The H8 node is orange and has two nodes below it labeled H3 and H4. H3 is orange and has a green rectangle below it labeled P3. H4 has a dimmed rectangle below it labeled R1. The H11 node is green and has a node below it labeled H9. The H9 node is dimmed and has two dimmed nodes below it labeled H5 and H6. H5 has a dimmed rectangle below it labeled R2. H6 has a dimmed rectangle below it labeled R3.](/images/com.apple.sharedwithyou/media-4110141@2x.png)
 
 It’s important to note that you can prove the system uses the public key P3 to generate a given root hash, without needing to reconstruct the entire tree. The subset of nodes necessary to do this is a proof of inclusion. Verification begins when your app opens a universal link. To do this, you first need to check that the link is collaborative.
 
@@ -222,7 +222,7 @@ It’s important to note that you can prove the system uses the public key P3 to
 
 Use the signature to ensure that a bad actor can’t send the request to gain access to your collaboration. The data can be a challenge you request from your server, or a nonce that the device generates. The example below uses the challenge approach.
 
-The system passes the URL, which is the universal link associated with a collaboration, to [`application(_:didFinishLaunchingWithOptions:)`](https://developer.apple.com/documentation/UIKit/UIApplicationDelegate/application(_:didFinishLaunchingWithOptions:)). Use this URL to fetch the associated `SWCollaborationHighlight` from the `SWHighlightCenter`.
+The system passes the URL, which is the universal link associated with a collaboration, to [`application(_:didFinishLaunchingWithOptions:)`](https://developer.apple.com/documentation/uikit/uiapplicationdelegate/application(_:didfinishlaunchingwithoptions:)). Use this URL to fetch the associated `SWCollaborationHighlight` from the `SWHighlightCenter`.
 
 Request the challenge from the server, and pass the returned data to the `getSignedIdentityProof` method on `SWHighlightCenter`, along with the highlight. This method returns a signed identity proof that the app sends to the server for verification.
 

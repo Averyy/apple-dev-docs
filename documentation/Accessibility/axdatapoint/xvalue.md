@@ -23,7 +23,7 @@ var xValue: AXDataPointValue { get set }
 
 #### Discussion
 
-Use a `double` value for a numeric x-axis, or an [`NSString`](https://developer.apple.com/documentation/Foundation/NSString) value for a categorical x-axis.
+Use a `double` value for a numeric x-axis, or an [`NSString`](https://developer.apple.com/documentation/foundation/nsstring) value for a categorical x-axis.
 
 ## See Also
 

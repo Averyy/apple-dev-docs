@@ -27,9 +27,9 @@ class CIImage
 
 #### Overview
 
-You use `CIImage` objects in conjunction with other Core Image classes—such as [`CIFilter`](cifilter-swift.class.md), [`CIContext`](cicontext.md), [`CIVector`](civector.md), and [`CIColor`](cicolor.md)—to take advantage of the built-in Core Image filters when processing images. You can create `CIImage` objects with data supplied from a variety of sources, including Quartz 2D images, Core Video image buffers ([`CVImageBuffer`](https://developer.apple.com/documentation/CoreVideo/CVImageBuffer)), URL-based objects, and `NSData` objects.
+You use `CIImage` objects in conjunction with other Core Image classes—such as [`CIFilter`](cifilter-swift.class.md), [`CIContext`](cicontext.md), [`CIVector`](civector.md), and [`CIColor`](cicolor.md)—to take advantage of the built-in Core Image filters when processing images. You can create `CIImage` objects with data supplied from a variety of sources, including Quartz 2D images, Core Video image buffers ([`CVImageBuffer`](https://developer.apple.com/documentation/corevideo/cvimagebuffer)), URL-based objects, and `NSData` objects.
 
-Although a `CIImage` object has image data associated with it, it is not an image. You can think of a `CIImage` object as an image “recipe.” A `CIImage` object has all the information necessary to produce an image, but Core Image doesn’t actually render an image until it is told to do so. This lazy evaluation allows Core Image to operate as efficiently as possible. To show a `CIImage` object as an on-screen image, you can display it as a [`UIImage`](https://developer.apple.com/documentation/UIKit/UIImage) in [`UIImageView`](https://developer.apple.com/documentation/UIKit/UIImageView):
+Although a `CIImage` object has image data associated with it, it is not an image. You can think of a `CIImage` object as an image “recipe.” A `CIImage` object has all the information necessary to produce an image, but Core Image doesn’t actually render an image until it is told to do so. This lazy evaluation allows Core Image to operate as efficiently as possible. To show a `CIImage` object as an on-screen image, you can display it as a [`UIImage`](https://developer.apple.com/documentation/uikit/uiimage) in [`UIImageView`](https://developer.apple.com/documentation/uikit/uiimageview):
 
 **Swift**:
 
@@ -283,22 +283,22 @@ For a discussion of all the methods you can use to create `CIImage` objects on i
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [AttachableAsImage](../Testing/AttachableAsImage.md)
-- [CVarArg](../Swift/CVarArg.md)
-- [Copyable](../Swift/Copyable.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Escapable](../Swift/Escapable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCoding](../Foundation/NSCoding.md)
-- [NSCopying](../Foundation/NSCopying.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [NSSecureCoding](../Foundation/NSSecureCoding.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [AttachableAsImage](../testing/attachableasimage.md)
+- [CVarArg](../swift/cvararg.md)
+- [Copyable](../swift/copyable.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Escapable](../swift/escapable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCoding](../foundation/nscoding.md)
+- [NSCopying](../foundation/nscopying.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

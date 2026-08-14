@@ -7,7 +7,7 @@ An atom that specifies the characteristics of a single track within a movie.
 
 #### Overview
 
-See [`Track header atom ('tkhd')`](track_header_atom.md).
+See [`Track header atom`](track_header_atom.md).
 
 ## See Also
 

@@ -19,7 +19,7 @@ class let touchBarTextListTemplateName: String
 
 #### Discussion
 
-![Template image for list](https://docs-assets.developer.apple.com/published/9f90398ccdea1503aa829c27f27b117d/media-2793531%402x.png)
+![Template image for list](/images/com.apple.appkit/media-2793531@2x.png)
 
 Touch Bar template images are exclusively for use in [`NSTouchBarItem`](nstouchbaritem.md) objects and not in onscreen windows.
 

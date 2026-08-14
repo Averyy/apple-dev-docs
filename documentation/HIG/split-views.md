@@ -13,7 +13,7 @@ framework: HIG
 
 A split view manages the presentation of multiple adjacent panes of content, each of which can contain a variety of components, including tables, collections, images, and custom views.
 
-![A stylized representation of a window consisting of three areas: a sidebar, a canvas, and an inspector. The image is tinted red to subtly reflect the red in the original six-color Apple logo.](https://docs-assets.developer.apple.com/published/9e6eafd676d03f6520243733eaf3c42e/components-split-view-intro~dark%402x.png)
+![A stylized representation of a window consisting of three areas: a sidebar, a canvas, and an inspector. The image is tinted red to subtly reflect the red in the original six-color Apple logo.](/images/com.apple.HIG/components-split-view-intro~dark@2x.png)
 Typically, you use a split view to show multiple levels of your app’s hierarchy at once and support navigation between them. In this scenario, selecting an item in the view’s primary pane displays the item’s contents in the secondary pane. Similarly, a split view can display a tertiary pane if items in the secondary pane contain additional content.
 It’s common to use a split view to display a [Sidebars](sidebars.md) for navigation, where the leading pane lists the top-level items or collections in an app, and the secondary and optional tertiary panes can present child collections and item details. Rarely, you might also use a split view to provide groups of functionality that supplement the primary view — for example, Keynote in macOS uses split view panes to present the slide navigator, the presenter notes, and the inspector pane in areas that surround the main slide canvas.
 
@@ -28,14 +28,14 @@ It’s common to use a split view to display a [Sidebars](sidebars.md) for navig
 
 ### iPadOS
 In iPadOS, a split view can include either two vertical panes, like Mail, or three vertical panes, like Keynote.
-**Account for narrow, compact, and intermediate window widths.** Since iPad windows are fluidly resizable, it’s important to consider the design of a split view layout at multiple widths. In particular, ensure that it’s possible to navigate between the various panes in a logical way. For guidance, see [Layout](layout.md). For developer guidance, see [NavigationSplitView](../SwiftUI/NavigationSplitView.md) and [UISplitViewController](../UIKit/UISplitViewController.md).
+**Account for narrow, compact, and intermediate window widths.** Since iPad windows are fluidly resizable, it’s important to consider the design of a split view layout at multiple widths. In particular, ensure that it’s possible to navigate between the various panes in a logical way. For guidance, see [Layout](layout.md). For developer guidance, see [NavigationSplitView](../swiftui/navigationsplitview.md) and [UISplitViewController](../uikit/uisplitviewcontroller.md).
 
 ### macOS
-In macOS, you can arrange the panes of a split view vertically, horizontally, or both. A split view includes dividers between panes that can support dragging to resize them. For developer guidance, see [VSplitView](../SwiftUI/VSplitView.md) and [HSplitView](../SwiftUI/HSplitView.md).
+In macOS, you can arrange the panes of a split view vertically, horizontally, or both. A split view includes dividers between panes that can support dragging to resize them. For developer guidance, see [VSplitView](../swiftui/vsplitview.md) and [HSplitView](../swiftui/hsplitview.md).
 **Set reasonable defaults for minimum and maximum pane sizes.** If people can resize the panes in your app’s split view, make sure to use sizes that keep the divider visible. If a pane gets too small, the divider can seem to disappear, becoming difficult to use.
 **Consider letting people hide a pane when it makes sense.** If your app includes an editing area, for example, consider letting people hide other panes to reduce distractions or allow more room for editing — in Keynote, people can hide the navigator and presenter notes panes when they want to edit slide content.
 **Provide multiple ways to reveal hidden panes.** For example, you might provide a toolbar button or a menu command — including a keyboard shortcut — that people can use to restore a hidden pane.
-**Prefer the thin divider style.** The thin divider measures one point in width, giving you maximum space for content while remaining easy for people to use. Avoid using thicker divider styles unless you have a specific need. For example, if both sides of a divider present table rows that use strong linear elements that might make a thin divider hard to distinguish, it might work to use a thicker divider. For developer guidance, see [NSSplitView.DividerStyle](../AppKit/NSSplitView/DividerStyle-swift.enum.md).
+**Prefer the thin divider style.** The thin divider measures one point in width, giving you maximum space for content while remaining easy for people to use. Avoid using thicker divider styles unless you have a specific need. For example, if both sides of a divider present table rows that use strong linear elements that might make a thin divider hard to distinguish, it might work to use a thicker divider. For developer guidance, see [NSSplitView.DividerStyle](../appkit/nssplitview/dividerstyle-swift.enum.md).
 
 ### tvOS
 In tvOS, a split view can work well to help people filter content. When people choose a filter category in the primary pane, your app can display the results in the secondary pane.
@@ -50,7 +50,7 @@ In tvOS, a split view can work well to help people filter content. When people c
 In watchOS, the split view displays either the list view or a detail view as a full-screen view.
 **Automatically display the most relevant detail view.** When your app launches, show people the most pertinent information. For example, display information relevant to their location, the time, or their recent actions.
 **If your app displays multiple detail pages, place the detail views in a vertical [Tab views](tab-views.md).** People can then use the Digital Crown to scroll between the detail view’s tabs. watchOS also displays a page indicator next to the Digital Crown, indicating the number of tabs and the currently selected tab.
-![A screenshot showing a detail view with a vertical tab on Apple Watch. The page indicator next to the Digital Crown shows that the fifth tab is currently selected.](https://docs-assets.developer.apple.com/published/3f36258648d54880e800568e88b5076b/split-view-watch-vertical-tab%402x.png)
+![A screenshot showing a detail view with a vertical tab on Apple Watch. The page indicator next to the Digital Crown shows that the fifth tab is currently selected.](/images/com.apple.HIG/split-view-watch-vertical-tab@2x.png)
 
 ## Resources
 
@@ -60,9 +60,9 @@ In watchOS, the split view displays either the list view or a detail view as a f
 [Layout](layout.md)
 
 #### Developer documentation
-[NavigationSplitView](../SwiftUI/NavigationSplitView.md) — SwiftUI
-[UISplitViewController](../UIKit/UISplitViewController.md) — UIKit
-[NSSplitViewController](../AppKit/NSSplitViewController.md) — AppKit
+[NavigationSplitView](../swiftui/navigationsplitview.md) — SwiftUI
+[UISplitViewController](../uikit/uisplitviewcontroller.md) — UIKit
+[NSSplitViewController](../appkit/nssplitviewcontroller.md) — AppKit
 
 #### Videos
 - [Make your UIKit app more flexible](https://developer.apple.com/videos/play/wwdc2025/282) - Find out how your UIKit app can become more flexible on iPhone, iPad, Mac, and Apple Vision Pro by using scenes and container view controllers. Learn to unlock your app’s full potential by transitioning from an app-centric to a scene-based lifecycle, including enhanced window resizing and improved multitasking. Explore enhancements to UISplitViewController, such as interactive column resizing and first-class support for inspector columns. And make your views and controls more adaptive by adopting new layout APIs.

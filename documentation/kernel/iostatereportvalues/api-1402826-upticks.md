@@ -4,7 +4,6 @@
 **Kind**: structp
 
 **Availability**:
-- DriverKit 24.4+
 - macOS 10.9+
 
 ## Declaration

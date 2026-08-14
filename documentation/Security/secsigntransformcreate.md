@@ -16,7 +16,7 @@ func SecSignTransformCreate(_ key: SecKey, _ error: UnsafeMutablePointer<Unmanag
 
 #### Return Value
 
-A pointer to a new transform or `NULL` on error. In Objective-C, call the [`CFRelease`](https://developer.apple.com/documentation/CoreFoundation/CFRelease) function to free this object’s memory when you are done with it.
+A pointer to a new transform or `NULL` on error. In Objective-C, call the [`CFRelease`](https://developer.apple.com/documentation/corefoundation/cfrelease) function to free this object’s memory when you are done with it.
 
 #### Discussion
 
@@ -25,7 +25,7 @@ This function creates a transform which computes a cryptographic signature. The 
 ## Parameters
 
 - `key`: A [`SecKey`](seckey.md) with the private key used for signing.
-- `error`: A pointer to a [`CFError`](https://developer.apple.com/documentation/CoreFoundation/CFError). This pointer will be set if an error occurred. This value may be `NULL` if you do not want an error returned.
+- `error`: A pointer to a [`CFError`](https://developer.apple.com/documentation/corefoundation/cferror). This pointer will be set if an error occurred. This value may be `NULL` if you do not want an error returned.
 
 
 ---

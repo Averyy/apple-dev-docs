@@ -6,7 +6,7 @@ Pass image data between Core Graphics and vImage to create and manipulate images
 
 #### Overview
 
-When you work with bitmap images, you typically work with Core Graphics [`CGImage`](https://developer.apple.com/documentation/CoreGraphics/CGImage) instances. The vImage library provides functionality that allows you to work with Core Graphics bitmap images. Typically, you convert a [`CGImage`](https://developer.apple.com/documentation/CoreGraphics/CGImage) instance to a vImage buffer, apply operations to the vImage buffer, and convert the transformed data to a new [`CGImage`](https://developer.apple.com/documentation/CoreGraphics/CGImage) instance.
+When you work with bitmap images, you typically work with Core Graphics [`CGImage`](https://developer.apple.com/documentation/coregraphics/cgimage) instances. The vImage library provides functionality that allows you to work with Core Graphics bitmap images. Typically, you convert a [`CGImage`](https://developer.apple.com/documentation/coregraphics/cgimage) instance to a vImage buffer, apply operations to the vImage buffer, and convert the transformed data to a new [`CGImage`](https://developer.apple.com/documentation/coregraphics/cgimage) instance.
 
 Conversions between Core Graphics-backed images and vImage buffers require a [`vImage_CGImageFormat`](vimage_cgimageformat.md) format structure. The format describes properties such as the color space, the number of channels and how they’re ordered, and the size, in bits, of the color channels.
 
@@ -22,9 +22,9 @@ var format = vImage_CGImageFormat(
     bitmapInfo: .init(rawValue: CGImageAlphaInfo.noneSkipFirst.rawValue))!
 ```
 
-The [`init(cgImage:cgImageFormat:pixelFormat:)`](vimage/pixelbuffer/init(cgimage:cgimageformat:pixelformat:).md) initializer creates a pixel buffer from a [`CGImage`](https://developer.apple.com/documentation/CoreGraphics/CGImage) instance and converts the source image data to the format that the [`vImage_CGImageFormat`](vimage_cgimageformat.md) describes. If you’re working with [`vImage_Buffer`](vimage_buffer.md) structures, the [`vImageBuffer_InitWithCGImage(_:_:_:_:_:)`](vimagebuffer_initwithcgimage(_:_:_:_:_:).md) function performs the same conversion and creates a buffer that’s suitable for working with ARGB8888 operations, such as [`vImageConvolve_ARGB8888(_:_:_:_:_:_:_:_:_:_:_:)`](vimageconvolve_argb8888(_:_:_:_:_:_:_:_:_:_:_:).md).
+The [`init(cgImage:cgImageFormat:pixelFormat:)`](vimage/pixelbuffer/init(cgimage:cgimageformat:pixelformat:).md) initializer creates a pixel buffer from a [`CGImage`](https://developer.apple.com/documentation/coregraphics/cgimage) instance and converts the source image data to the format that the [`vImage_CGImageFormat`](vimage_cgimageformat.md) describes. If you’re working with [`vImage_Buffer`](vimage_buffer.md) structures, the [`vImageBuffer_InitWithCGImage(_:_:_:_:_:)`](vimagebuffer_initwithcgimage(_:_:_:_:_:).md) function performs the same conversion and creates a buffer that’s suitable for working with ARGB8888 operations, such as [`vImageConvolve_ARGB8888(_:_:_:_:_:_:_:_:_:_:_:)`](vimageconvolve_argb8888(_:_:_:_:_:_:_:_:_:_:_:).md).
 
-The code below creates a buffer from a [`CGImage`](https://developer.apple.com/documentation/CoreGraphics/CGImage) instance named `cgImage` and prints the values of the first two pixels. The opaque alpha values (`255`) are the first value in each pixel as [`CGImageAlphaInfo.noneSkipFirst`](https://developer.apple.com/documentation/CoreGraphics/CGImageAlphaInfo/noneSkipFirst) defines.
+The code below creates a buffer from a [`CGImage`](https://developer.apple.com/documentation/coregraphics/cgimage) instance named `cgImage` and prints the values of the first two pixels. The opaque alpha values (`255`) are the first value in each pixel as [`CGImageAlphaInfo.noneSkipFirst`](https://developer.apple.com/documentation/coregraphics/cgimagealphainfo/noneskipfirst) defines.
 
 ```swift
 let buf = try vImage.PixelBuffer(
@@ -44,9 +44,9 @@ For all the examples in this article, pass the [`vImage_CGImageFormat`](vimage_c
 let result = buf.makeCGImage(cgImageFormat: format)
 ```
 
-On return, `result` is a four-channel 8-bit-per-channel image with [`CGImageAlphaInfo.noneSkipLast`](https://developer.apple.com/documentation/CoreGraphics/CGImageAlphaInfo/noneSkipLast) alpha ordering.
+On return, `result` is a four-channel 8-bit-per-channel image with [`CGImageAlphaInfo.noneSkipLast`](https://developer.apple.com/documentation/coregraphics/cgimagealphainfo/noneskiplast) alpha ordering.
 
-![A color photograph of a flower.](https://docs-assets.developer.apple.com/published/e1dcfd821ae7c4dcc337fc0723d06f84/media-4265606%402x.png)
+![A color photograph of a flower.](/images/com.apple.accelerate/media-4265606@2x.png)
 
 ##### Initialize a 32 Bit Core Graphics Image Format From Hard Coded Values
 
@@ -87,7 +87,7 @@ let result = buf.makeCGImage(cgImageFormat: format)
 
 On return, `result` contains a grayscale version of the original image.
 
-![A grayscale photograph of a flower.](https://docs-assets.developer.apple.com/published/ae5f5747dea959308768dc11cf3050ff/media-4265605%402x.png)
+![A grayscale photograph of a flower.](/images/com.apple.accelerate/media-4265605@2x.png)
 
 ##### Initialize a Core Graphics Image Format From a Core Graphics Image
 
@@ -105,7 +105,7 @@ print(format.colorSpace.takeRetainedValue().name!)  // kCGColorSpaceDisplayP3
 print (format.bitmapInfo)                           // noneSkipLast
 ```
 
-In this example, the image’s inherent channel ordering is [`CGImageAlphaInfo.noneSkipLast`](https://developer.apple.com/documentation/CoreGraphics/CGImageAlphaInfo/noneSkipLast). The code below prints the first two pixels and shows that the opaque alpha values (`255`) are the last two values in each pixel:
+In this example, the image’s inherent channel ordering is [`CGImageAlphaInfo.noneSkipLast`](https://developer.apple.com/documentation/coregraphics/cgimagealphainfo/noneskiplast). The code below prints the first two pixels and shows that the opaque alpha values (`255`) are the last two values in each pixel:
 
 ```swift
 let buf = try vImage.PixelBuffer(cgImage: cgImage,

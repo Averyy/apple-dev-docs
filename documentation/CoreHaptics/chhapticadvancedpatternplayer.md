@@ -57,7 +57,7 @@ Unlike [`CHHapticPatternPlayer`](chhapticpatternplayer.md), the advanced pattern
 
 ### Inherits From
 - [CHHapticPatternPlayer](chhapticpatternplayer.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

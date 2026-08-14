@@ -12,42 +12,42 @@ framework: HIG
 Explore fundamental principles that guide design across Apple platforms.
 
 The most successful and enduring designs are based on a deep understanding of how people think, feel, and interact with the world. The principles here reflect this reality, and form the foundation for guidance throughout the Human Interface Guidelines. There’s no one right way to apply these principles. Instead, they’re tools to help you weigh competing priorities and make key decisions on the path to a great design.
-![A symbol of three concentric circles. The symbol is tinted green to subtly reflect the green in the original six-color Apple logo.](https://docs-assets.developer.apple.com/published/d5a391afe0d21ae7e641b50c6ed81247/purpose-icon-padding%402x.png)
+![A symbol of three concentric circles. The symbol is tinted green to subtly reflect the green in the original six-color Apple logo.](/images/com.apple.HIG/purpose-icon-padding@2x.png)
 
 ### Purpose
 **Make something meaningful.**
 Design starts with intention. Identify what matters most to the people you’re designing for. Focus on making those things great, and you’ll create an experience that people truly value.
-![A symbol of a person with outstretched arms and legs. The symbol is tinted green to subtly reflect the green in the original six-color Apple logo.](https://docs-assets.developer.apple.com/published/39f90a7be0f57875aa8906d4b50de972/agency-icon-padding%402x.png)
+![A symbol of a person with outstretched arms and legs. The symbol is tinted green to subtly reflect the green in the original six-color Apple logo.](/images/com.apple.HIG/agency-icon-padding@2x.png)
 
 ### Agency
 **Let people do things their own way.**
 An interface exists to help people accomplish their goals. Give them the freedom to act, keep them informed about what’s happening, and make it easy to recover from mistakes.
-![A symbol of two people facing each other and clasping hands. The symbol is tinted green to subtly reflect the green in the original six-color Apple logo.](https://docs-assets.developer.apple.com/published/c58d857ce01ab52301e770aa8fe22eca/responsibility-icon-padding%402x.png)
+![A symbol of two people facing each other and clasping hands. The symbol is tinted green to subtly reflect the green in the original six-color Apple logo.](/images/com.apple.HIG/responsibility-icon-padding@2x.png)
 
 ### Responsibility
 **Act in people’s best interest.**
 Your work has an impact on people’s lives. Earn their trust by prioritizing safety and privacy, and being transparent about what your product does and why.
-![A symbol of a house. The symbol is tinted green to subtly reflect the green in the original six-color Apple logo.](https://docs-assets.developer.apple.com/published/7007c74421b5492c26910fa875fd9b13/familiarity-icon-padding%402x.png)
+![A symbol of a house. The symbol is tinted green to subtly reflect the green in the original six-color Apple logo.](/images/com.apple.HIG/familiarity-icon-padding@2x.png)
 
 ### Familiarity
 **Build on what people know.**
 Drawing on concepts people already understand helps them feel immediately at home. Ground your experience in established physical and digital patterns and apply them consistently throughout your design.
-![A symbol of two perpendicular intersecting lines, each with an arrow pointing outward on both ends. The symbol is tinted green to subtly reflect the green in the original six-color Apple logo.](https://docs-assets.developer.apple.com/published/e27d0555970ffdc67b115fac32b68645/flexibility-icon-padding%402x.png)
+![A symbol of two perpendicular intersecting lines, each with an arrow pointing outward on both ends. The symbol is tinted green to subtly reflect the green in the original six-color Apple logo.](/images/com.apple.HIG/flexibility-icon-padding@2x.png)
 
 ### Flexibility
 **Adapt to diverse contexts and needs.**
 People use your software in ways as unique as they are. The more your design acknowledges this, the more people feel welcome to use it. Be mindful of experiences other than yours, and try to support as many devices, types of interaction, and perspectives as possible.
-![A symbol of a pair of scissors. The symbol is tinted green to subtly reflect the green in the original six-color Apple logo.](https://docs-assets.developer.apple.com/published/b6e1f00156a4d9629d0cc8d532fecd77/simplicity-icon-padding%402x.png)
+![A symbol of a pair of scissors. The symbol is tinted green to subtly reflect the green in the original six-color Apple logo.](/images/com.apple.HIG/simplicity-icon-padding@2x.png)
 
 ### Simplicity
 **Be clear and direct.**
 A well-designed experience removes the unnecessary, with every element earning its place. When your interface is logically organized and straightforward to navigate, it’s easier to get things done.
-![A symbol of a drawing compass. The symbol is tinted green to subtly reflect the green in the original six-color Apple logo.](https://docs-assets.developer.apple.com/published/82a5297ce13eb8ecefd4b4b014bdaff4/craft-icon-padding%402x.png)
+![A symbol of a drawing compass. The symbol is tinted green to subtly reflect the green in the original six-color Apple logo.](/images/com.apple.HIG/craft-icon-padding@2x.png)
 
 ### Craft
 **Care about every detail.**
 Your design is a reflection of how much you care. It shows your dedication to delivering the best possible experience for people. Take the time to do the work well.
-![A symbol of a heart. The symbol is tinted green to subtly reflect the green in the original six-color Apple logo.](https://docs-assets.developer.apple.com/published/2aec188cc7f8841af080bc557678381c/delight-icon-padding%402x.png)
+![A symbol of a heart. The symbol is tinted green to subtly reflect the green in the original six-color Apple logo.](/images/com.apple.HIG/delight-icon-padding@2x.png)
 
 ### Delight
 **Make it human.**

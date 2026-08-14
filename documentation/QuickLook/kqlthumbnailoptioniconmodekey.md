@@ -16,7 +16,7 @@ let kQLThumbnailOptionIconModeKey: CFString!
 
 #### Discussion
 
-The default value is [`kCFBooleanFalse`](https://developer.apple.com/documentation/CoreFoundation/kCFBooleanFalse). If you use the default, the Quick Look feature creates a thumbnail image with no icon decor. To create the thumbnail as an icon, set the value to [`kCFBooleanTrue`](https://developer.apple.com/documentation/CoreFoundation/kCFBooleanTrue). The icon’s image includes all the typical icon decor, such as shadows and a curled corner.
+The default value is [`kCFBooleanFalse`](https://developer.apple.com/documentation/corefoundation/kcfbooleanfalse). If you use the default, the Quick Look feature creates a thumbnail image with no icon decor. To create the thumbnail as an icon, set the value to [`kCFBooleanTrue`](https://developer.apple.com/documentation/corefoundation/kcfbooleantrue). The icon’s image includes all the typical icon decor, such as shadows and a curled corner.
 
 ## See Also
 

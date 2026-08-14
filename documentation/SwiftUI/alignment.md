@@ -32,7 +32,7 @@ An `Alignment` contains a [`HorizontalAlignment`](horizontalalignment.md) guide 
 
 SwiftUI provides a set of built-in alignments that represent common combinations of the built-in horizontal and vertical alignment guides. The blue boxes in the following diagram demonstrate the alignment named by each box’s label, relative to the background view:
 
-![A square that’s divided into four equal quadrants. The upper-](https://docs-assets.developer.apple.com/published/09693fd98ab76356519a900fd33d9e7f/Alignment-1-iOS%402x.png)
+![A square that’s divided into four equal quadrants. The upper-](/images/com.apple.SwiftUI/Alignment-1-iOS@2x.png)
 
 The following code generates the diagram above, where each blue box appears in an overlay that’s configured with a different alignment:
 
@@ -144,11 +144,11 @@ For more information about creating custom guides, including the code that creat
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../Swift/BitwiseCopyable.md)
-- [Copyable](../Swift/Copyable.md)
-- [Equatable](../Swift/Equatable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [BitwiseCopyable](../swift/bitwisecopyable.md)
+- [Copyable](../swift/copyable.md)
+- [Equatable](../swift/equatable.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

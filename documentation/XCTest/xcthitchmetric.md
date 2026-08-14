@@ -21,7 +21,7 @@ class XCTHitchMetric
 
 #### Discussion
 
-A hitch occurs when your app doesn’t prepare the content it displays in time for the system to render it in the next screen update. For more information, see [`Understanding hitches in your app`](https://developer.apple.com/documentation/Xcode/understanding-hitches-in-your-app).
+A hitch occurs when your app doesn’t prepare the content it displays in time for the system to render it in the next screen update. For more information, see [`Understanding hitches in your app`](https://developer.apple.com/documentation/xcode/understanding-hitches-in-your-app).
 
 ## Topics
 
@@ -32,15 +32,15 @@ A hitch occurs when your app doesn’t prepare the content it displays in time f
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCopying](../Foundation/NSCopying.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCopying](../foundation/nscopying.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 - [XCTMetric](xctmetric.md)
 
 ## See Also

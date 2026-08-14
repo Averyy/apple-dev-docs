@@ -27,7 +27,7 @@ When the user composes a message, MailKit requests a compose session handler obj
 
 Each of the items in the list above corresponds to methods that the handler implements.
 
-To indicate that your extension contains a compose session handler, add `MEComposeSessionHandler` to the [`MEExtensionCapabilities`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSExtension/NSExtensionAttributes/MEExtensionCapabilities) array in the extension’s `Info.plist` file:
+To indicate that your extension contains a compose session handler, add `MEComposeSessionHandler` to the [`MEExtensionCapabilities`](https://developer.apple.com/documentation/bundleresources/information-property-list/nsextension/nsextensionattributes/meextensioncapabilities) array in the extension’s `Info.plist` file:
 
 ```swift
 <key>NSExtensionAttributes</key>
@@ -68,7 +68,7 @@ To indicate that your extension contains a compose session handler, add `MECompo
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 
 ---

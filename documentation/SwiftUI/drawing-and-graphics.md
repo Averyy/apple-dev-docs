@@ -8,11 +8,11 @@ Enhance your views with graphical effects and customized drawings.
 
 You create rich, dynamic user interfaces with the built-in views and [`Shapes`](shapes.md) that SwiftUI provides. To enhance any view, you can apply many of the graphical effects typically associated with a graphics context, like setting colors, adding masks, and creating composites.
 
-![None](https://docs-assets.developer.apple.com/published/80221e0a7ef63e2fa17f92780533bf94/drawing-and-graphics-hero%402x.png)
+![None](/images/com.apple.SwiftUI/drawing-and-graphics-hero@2x.png)
 
 When you need the flexibility of immediate mode drawing in a graphics context, use a [`Canvas`](canvas.md) view. This can be particularly helpful when you want to draw an extremely large number of dynamic shapes — for example, to create particle effects.
 
-For design guidance, see [`Materials`](https://developer.apple.com/design/Human-Interface-Guidelines/materials) and [`Color`](https://developer.apple.com/design/Human-Interface-Guidelines/color) in the Human Interface Guidelines.
+For design guidance, see [`Materials`](https://developer.apple.com/design/human-interface-guidelines/materials) and [`Color`](https://developer.apple.com/design/human-interface-guidelines/color) in the Human Interface Guidelines.
 
 ## Topics
 

@@ -23,7 +23,7 @@ var seed: UInt64 { get set }
 
 Any two random sources initialized with the same seed value will generate the same sequence of random numbers. To replicate the behavior of an existing [`GKLinearCongruentialRandomSource`](gklinearcongruentialrandomsource.md) instance, read this property and then create a new instance by passing the resulting value to the [`init(seed:)`](gklinearcongruentialrandomsource/init(seed:).md) initializer.
 
-For a source of high-entropy seed data, see the [`SecRandomCopyBytes(_:_:_:)`](https://developer.apple.com/documentation/Security/SecRandomCopyBytes(_:_:_:)) function.
+For a source of high-entropy seed data, see the [`SecRandomCopyBytes(_:_:_:)`](https://developer.apple.com/documentation/security/secrandomcopybytes(_:_:_:)) function.
 
 
 ---

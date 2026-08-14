@@ -23,9 +23,9 @@ class GKRidgedNoiseSource
 
 Ridged noise is similar to Perlin noise (see the [`GKPerlinNoiseSource`](gkperlinnoisesource.md) class), but with thinner features resembling natural phenomena such as forked lightning and mountain peaks.
 
-![None](https://docs-assets.developer.apple.com/published/075b3b90b4d5b8bac0ffca9f84e19df7/media-2556363%402x.png)
+![None](/images/com.apple.gameplaykit/media-2556363@2x.png)
 
-Like all [`GKNoiseSource`](gknoisesource.md) subclasses, a ridged noise source represents a noise generation algorithm and its parameters. To make use of a noise source, first create [`GKNoise`](gknoise.md) object from it (and optionally apply operations to that noise object or combine it with other noise objects). Then create a [`GKNoiseMap`](gknoisemap.md) object from your noise object, generating a concrete field of values that you can sample from directly or visualize using the [`SKTexture`](https://developer.apple.com/documentation/SpriteKit/SKTexture) or `SKTileMap` class.
+Like all [`GKNoiseSource`](gknoisesource.md) subclasses, a ridged noise source represents a noise generation algorithm and its parameters. To make use of a noise source, first create [`GKNoise`](gknoise.md) object from it (and optionally apply operations to that noise object or combine it with other noise objects). Then create a [`GKNoiseMap`](gknoisemap.md) object from your noise object, generating a concrete field of values that you can sample from directly or visualize using the [`SKTexture`](https://developer.apple.com/documentation/spritekit/sktexture) or `SKTileMap` class.
 
 ## Topics
 
@@ -38,12 +38,12 @@ Like all [`GKNoiseSource`](gknoisesource.md) subclasses, a ridged noise source r
 ### Inherits From
 - [GKCoherentNoiseSource](gkcoherentnoisesource.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

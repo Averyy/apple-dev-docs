@@ -16,16 +16,16 @@ Make your app’s media playback controls available on the Lock Screen, Control 
 
 #### Overview
 
-The Now Playing framework makes it easy for people to quickly access your app’s media controls across Apple platforms. The Now Playing interface integrates the controls on the Lock Screen, in Control Center, on Apple Watch, and in CarPlay. Use it to publish playback for music, audiobooks, podcasts, movies, TV shows, and other content. You describe your media content and supported commands with an [`Observable`](https://developer.apple.com/documentation/Observation/Observable) model, and the framework updates the system whenever your model changes.
+The Now Playing framework makes it easy for people to quickly access your app’s media controls across Apple platforms. The Now Playing interface integrates the controls on the Lock Screen, in Control Center, on Apple Watch, and in CarPlay. Use it to publish playback for music, audiobooks, podcasts, movies, TV shows, and other content. You describe your media content and supported commands with an [`Observable`](https://developer.apple.com/documentation/observation/observable) model, and the framework updates the system whenever your model changes.
 
-![An illustration of a Now Playing media control card showing track and artist information with play, pause, and skip buttons, surrounded by icons representing iPhone, headphones, a car, a speaker, and Apple Vision Pro.](https://docs-assets.developer.apple.com/published/5817dbb9c02c01618a8f4654ce293274/now-playing-hero%402x.png)
+![An illustration of a Now Playing media control card showing track and artist information with play, pause, and skip buttons, surrounded by icons representing iPhone, headphones, a car, a speaker, and Apple Vision Pro.](/images/com.apple.nowplaying/now-playing-hero@2x.png)
 
 Now Playing supports two kinds of sessions:
 
-- **Local sessions:** Publish playback that happens on the current device. Create a type that conforms to [`MediaSessionRepresentable`](mediasessionrepresentable.md) and use [`MediaSession`](mediasession.md) to register it with the system. The framework observes your [`Observable`](https://developer.apple.com/documentation/Observation/Observable) model and publishes changes to the system as they happen.
+- **Local sessions:** Publish playback that happens on the current device. Create a type that conforms to [`MediaSessionRepresentable`](mediasessionrepresentable.md) and use [`MediaSession`](mediasession.md) to register it with the system. The framework observes your [`Observable`](https://developer.apple.com/documentation/observation/observable) model and publishes changes to the system as they happen.
 - **Remote sessions:** Publish playback that happens on external devices, such as speakers, streaming sticks, or smart TVs. Create an app extension that conforms to [`RemoteMediaSessionExtension`](remotemediasessionextension.md) and provide sessions conforming to [`RemoteMediaSessionRepresentable`](remotemediasessionrepresentable.md). Start remote sessions from your app using [`RemoteMediaSession`](remotemediasession.md), or from your server using push notifications when your app isn’t running.
 
-> ❗ **Important**: Don’t mix the Now Playing framework with the [`MPNowPlayingInfoCenter`](https://developer.apple.com/documentation/MediaPlayer/MPNowPlayingInfoCenter) and [`MPRemoteCommandCenter`](https://developer.apple.com/documentation/MediaPlayer/MPRemoteCommandCenter) APIs from the [`Media Player`](https://developer.apple.com/documentation/MediaPlayer) framework for local playback. Doing so results in undefined behavior.
+> ❗ **Important**: Don’t mix the Now Playing framework with the [`MPNowPlayingInfoCenter`](https://developer.apple.com/documentation/mediaplayer/mpnowplayinginfocenter) and [`MPRemoteCommandCenter`](https://developer.apple.com/documentation/mediaplayer/mpremotecommandcenter) APIs from the [`Media Player`](https://developer.apple.com/documentation/mediaplayer) framework for local playback. Doing so results in undefined behavior.
 
 ## Topics
 

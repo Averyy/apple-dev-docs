@@ -18,7 +18,7 @@ Group Activities allows you to build shared experiences across devices with Shar
 
 The sample app, DrawTogether, builds on some of the concepts introduced in WWDC21 session [`10225: Coordinate media experiences with Group Activities`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2021/10225/). It allows you to draw together while on a FaceTime call. The entire screen is the canvas, and everyone draws with a random color.
 
-There are two steps to adopt a [`GroupActivity`](groupactivity.md): activity creation and session management. These are covered in detail in WWDC21 session [`10225: Coordinate media experiences with Group Activities`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2021/10225/) and in [`Supporting coordinated media playback`](https://developer.apple.com/documentation/AVFoundation/supporting-coordinated-media-playback).
+There are two steps to adopt a [`GroupActivity`](groupactivity.md): activity creation and session management. These are covered in detail in WWDC21 session [`10225: Coordinate media experiences with Group Activities`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2021/10225/) and in [`Supporting coordinated media playback`](https://developer.apple.com/documentation/avfoundation/supporting-coordinated-media-playback).
 
 These steps change slightly when building a custom experience, starting with activity creation. Activity creation consists of configuring the activity, and then activating the activity. Only the configuration part is different for a custom activity compared to a media activity.
 
@@ -86,7 +86,7 @@ func configureGroupSession(_ groupSession: GroupSession<DrawTogether>) {
     self.messenger = messenger
 ```
 
-When using `GroupSessionMessenger`, the sample code defines the type of data to exchange between participants. The app shares the strokes themselves. The sample defines the `UpsertStrokeMessage` structure to represent a stroke with three properties: an identifier, a color, and a coordinate point. The sample also specifies that the `UpsertStrokeMessage` structure conforms to the [`Codable`](https://developer.apple.com/documentation/Swift/Codable) protocol. `GroupSessionMessenger` automatically handles the serialization and deserialization of the message data if the messages are `Codable`.
+When using `GroupSessionMessenger`, the sample code defines the type of data to exchange between participants. The app shares the strokes themselves. The sample defines the `UpsertStrokeMessage` structure to represent a stroke with three properties: an identifier, a color, and a coordinate point. The sample also specifies that the `UpsertStrokeMessage` structure conforms to the [`Codable`](https://developer.apple.com/documentation/swift/codable) protocol. `GroupSessionMessenger` automatically handles the serialization and deserialization of the message data if the messages are `Codable`.
 
 ```swift
 struct UpsertStrokeMessage: Codable {

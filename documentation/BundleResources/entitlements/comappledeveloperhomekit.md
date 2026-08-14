@@ -20,7 +20,7 @@ A Boolean value that indicates whether users of the app may manage HomeKit-compa
 
 This key Indicates whether the users of an app may manage HomeKit-compatible accessories, such as switches, lights, fans, locks, and thermostats.
 
-To add this entitlement to your app, enable the HomeKit capability in Xcode. For more information, see [`Enabling HomeKit in your app`](https://developer.apple.com/documentation/HomeKit/enabling-homekit-in-your-app).
+To add this entitlement to your app, enable the HomeKit capability in Xcode. For more information, see [`Enabling HomeKit in your app`](https://developer.apple.com/documentation/homekit/enabling-homekit-in-your-app).
 
 ## See Also
 

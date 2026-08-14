@@ -29,7 +29,7 @@ For a seamless user experience, load the product information before presenting t
 ## Parameters
 
 - `parameters`: A dictionary describing the content you want the view controller to display. See [`Product Dictionary Keys`](product-dictionary-keys.md) for keys that describe the product. See [`Ad network install-validation keys`](ad-network-install-validation-keys.md) for keys that describe an impression in an advertising campaign.
-- `block`: A block to be called when the product information has been loaded from the App Store. The completion block is called on the main thread and receives the following parameters: - **`result`**: [`true`](https://developer.apple.com/documentation/Swift/true) if the product information was successfully loaded, otherwise [`false`](https://developer.apple.com/documentation/Swift/false).
+- `block`: A block to be called when the product information has been loaded from the App Store. The completion block is called on the main thread and receives the following parameters: - **`result`**: [`true`](https://developer.apple.com/documentation/swift/true) if the product information was successfully loaded, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
 - **`error`**: If an error occurred, this object describes the error. If the product information was successfully loaded, this value is `nil`.
 
 ## See Also

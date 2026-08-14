@@ -24,7 +24,7 @@ static var preferredTransform: AVAsyncProperty<Root, CGAffineTransform> { get }
 
 Use the [`load(_:isolation:)`](avasynchronouskeyvalueloading/load(_:isolation:).md) method to retrieve the property value.
 
-This value typically, but not always, equals [`CGAffineTransformIdentity`](https://developer.apple.com/documentation/CoreGraphics/CGAffineTransformIdentity).
+This value typically, but not always, equals [`CGAffineTransformIdentity`](https://developer.apple.com/documentation/coregraphics/cgaffinetransformidentity).
 
 ## See Also
 

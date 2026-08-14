@@ -20,7 +20,7 @@ var isModalInPresentation: Bool { get set }
 
 #### Discussion
 
-The default value of this property is [`false`](https://developer.apple.com/documentation/Swift/false). When you set it to [`true`](https://developer.apple.com/documentation/Swift/true), UIKit ignores events outside the view controller’s bounds and prevents the interactive dismissal of the view controller while it is onscreen.
+The default value of this property is [`false`](https://developer.apple.com/documentation/swift/false). When you set it to [`true`](https://developer.apple.com/documentation/swift/true), UIKit ignores events outside the view controller’s bounds and prevents the interactive dismissal of the view controller while it is onscreen.
 
 ## See Also
 

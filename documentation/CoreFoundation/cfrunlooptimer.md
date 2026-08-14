@@ -28,7 +28,7 @@ A repeating timer reschedules itself based on the scheduled firing time, not the
 
 Each run loop timer can be registered in only one run loop at a time, although it can be added to multiple run loop modes within that run loop.
 
-CFRunLoopTimer is “toll-free bridged” with its Cocoa Foundation counterpart, [`Timer`](https://developer.apple.com/documentation/Foundation/Timer). This means that the Core Foundation type is interchangeable in function or method calls with the bridged Foundation object. Therefore, in a method where you see an `NSTimer *` parameter, you can pass in a `CFRunLoopTimerRef`, and in a function where you see a `CFRunLoopTimerRef` parameter, you can pass in an `NSTimer` instance. This also applies to concrete subclasses of `NSTimer`. See [`Toll-Free Bridged Types`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFDesignConcepts/Articles/tollFreeBridgedTypes.html#//apple_ref/doc/uid/TP40010677) for more information on toll-free bridging.
+CFRunLoopTimer is “toll-free bridged” with its Cocoa Foundation counterpart, [`Timer`](https://developer.apple.com/documentation/foundation/timer). This means that the Core Foundation type is interchangeable in function or method calls with the bridged Foundation object. Therefore, in a method where you see an `NSTimer *` parameter, you can pass in a `CFRunLoopTimerRef`, and in a function where you see a `CFRunLoopTimerRef` parameter, you can pass in an `NSTimer` instance. This also applies to concrete subclasses of `NSTimer`. See [`Toll-Free Bridged Types`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFDesignConcepts/Articles/tollFreeBridgedTypes.html#//apple_ref/doc/uid/TP40010677) for more information on toll-free bridging.
 
 ## Topics
 
@@ -65,8 +65,8 @@ CFRunLoopTimer is “toll-free bridged” with its Cocoa Foundation counterpart,
 ## Relationships
 
 ### Conforms To
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
 
 ## See Also
 

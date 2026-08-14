@@ -17,7 +17,7 @@ virtual kern_return_t HasPCIPowerManagement(uint64_t state);
 
 #### Return Value
 
-[`kIOReturnSuccess`](https://developer.apple.com/documentation/DriverKit/kIOReturnSuccess) if the specified state is supported, or another value if isn’t supported. See [`Error Codes`](https://developer.apple.com/documentation/DriverKit/error-codes).
+[`kIOReturnSuccess`](https://developer.apple.com/documentation/driverkit/kioreturnsuccess) if the specified state is supported, or another value if isn’t supported. See [`Error Codes`](https://developer.apple.com/documentation/driverkit/error-codes).
 
 #### Discussion
 

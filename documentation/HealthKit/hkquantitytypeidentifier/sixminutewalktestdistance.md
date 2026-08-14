@@ -46,7 +46,7 @@ Samples indicate whether the device was sufficiently calibrated to support an ac
 ## Topics
 
 ### Enabling Recalibration
-- [com.apple.developer.healthkit.recalibrate-estimates](../BundleResources/Entitlements/com.apple.developer.healthkit.recalibrate-estimates.md)
+- [com.apple.developer.healthkit.recalibrate-estimates](../bundleresources/entitlements/com.apple.developer.healthkit.recalibrate-estimates.md)
   A Boolean value that determines whether your app can recalibrate the prediction algorithm used to calculate supported sample types.
 ### Accessing Estimate Dates
 - [let HKMetadataKeyDateOfEarliestDataUsedForEstimate: String](hkmetadatakeydateofearliestdatausedforestimate.md)

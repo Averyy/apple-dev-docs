@@ -22,7 +22,7 @@ var insertedObjects: Set<NSManagedObject> { get }
 
 #### Discussion
 
-A managed object context does not post key-value observing notifications when the return value of `insertedObjects` changes—it does, however, post a [`NSManagedObjectContextObjectsDidChange`](https://developer.apple.com/documentation/Foundation/NSNotification/Name-swift.struct/NSManagedObjectContextObjectsDidChange) notification when a change is made, and a [`NSManagedObjectContextWillSave`](https://developer.apple.com/documentation/Foundation/NSNotification/Name-swift.struct/NSManagedObjectContextWillSave) and a [`NSManagedObjectContextDidSave`](https://developer.apple.com/documentation/Foundation/NSNotification/Name-swift.struct/NSManagedObjectContextDidSave) notification before and after changes are committed respectively.
+A managed object context does not post key-value observing notifications when the return value of `insertedObjects` changes—it does, however, post a [`NSManagedObjectContextObjectsDidChange`](https://developer.apple.com/documentation/foundation/nsnotification/name-swift.struct/nsmanagedobjectcontextobjectsdidchange) notification when a change is made, and a [`NSManagedObjectContextWillSave`](https://developer.apple.com/documentation/foundation/nsnotification/name-swift.struct/nsmanagedobjectcontextwillsave) and a [`NSManagedObjectContextDidSave`](https://developer.apple.com/documentation/foundation/nsnotification/name-swift.struct/nsmanagedobjectcontextdidsave) notification before and after changes are committed respectively.
 
 ## See Also
 

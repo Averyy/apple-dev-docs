@@ -8,7 +8,7 @@ Use iterative methods to solve systems of equations where the coefficient matrix
 
 The code in this article solves the following equation by using the iterative method of least squares minimum residual (LSMR) to find the solution.
 
-![A mathematical equation that consists of a four-by-three matrix with three empty elements multiplied by the four-element vector of unknown values, x, that equals a four-element vector of known values.](https://docs-assets.developer.apple.com/published/fb5a8b83d2f4620c55f66124efb9e7f8/media-2904629%402x.png)
+![A mathematical equation that consists of a four-by-three matrix with three empty elements multiplied by the four-element vector of unknown values, x, that equals a four-element vector of known values.](/images/com.apple.accelerate/media-2904629@2x.png)
 
 In the equation above, `A` refers to the four-by-three matrix, and `b` to the right-hand-side vector. The code in this article solves the equation `Ax = b` by finding `x`.
 

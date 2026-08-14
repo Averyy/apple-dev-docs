@@ -26,12 +26,12 @@ enum ImageQuality
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../Swift/BitwiseCopyable.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [RawRepresentable](../Swift/RawRepresentable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [BitwiseCopyable](../swift/bitwisecopyable.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [RawRepresentable](../swift/rawrepresentable.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 
@@ -43,7 +43,7 @@ enum ImageQuality
   Creates an attachment containing a PNG representation of the provided screenshot.
 - [convenience init(screenshot: XCUIScreenshot, quality: XCTAttachment.ImageQuality)](xctattachment/init(screenshot:quality:).md)
   Creates an attachment containing a representation of the provided screenshot at the requested image quality.
-- [class XCUIScreenshot](../XCUIAutomation/XCUIScreenshot.md)
+- [class XCUIScreenshot](../xcuiautomation/xcuiscreenshot.md)
   A captured image of a screen, app, or UI element state.
 
 

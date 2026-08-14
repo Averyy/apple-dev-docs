@@ -192,7 +192,7 @@ The app lets a person change the appearance of the emitter’s particles by appl
 emitterComponent.mainEmitter.image = textureResource
 ```
 
-You can create a texture resource by loading an image from the app’s bundle with the [`load(named:in:)`](textureresource/load(named:in:).md) method, or by passing a [`CGImage`](https://developer.apple.com/documentation/CoreGraphics/CGImage) instance to the [`generate(from:withName:options:)`](textureresource/generate(from:withname:options:).md) factory method.
+You can create a texture resource by loading an image from the app’s bundle with the [`load(named:in:)`](textureresource/load(named:in:).md) method, or by passing a [`CGImage`](https://developer.apple.com/documentation/coregraphics/cgimage) instance to the [`generate(from:withName:options:)`](textureresource/generate(from:withname:options:).md) factory method.
 
 The app generates a texture resource in its `generateTextureFromSystemName(_:)` method by taking these steps:
 

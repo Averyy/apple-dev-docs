@@ -22,11 +22,11 @@ A new `WAPublisherListener.Action` that configures the listener to accept networ
 
 #### Discussion
 
-Set up your app’s first connection to a device using Wi-Fi Aware service discovery. Apps can do so by defining a single “control” service used for initial discovery and connection, and creating a `NetworkListener` for that service via [`connecting(to:from:datapath:)`](WAPublisherListener/Action/connecting(to:from:datapath:).md). Subsequent connections may then use a `.addingConnections` `NetworkListener` to quickly connect without going through the service discovery process again.
+Set up your app’s first connection to a device using Wi-Fi Aware service discovery. Apps can do so by defining a single “control” service used for initial discovery and connection, and creating a `NetworkListener` for that service via [`connecting(to:from:datapath:)`](wapublisherlistener/action/connecting(to:from:datapath:).md). Subsequent connections may then use a `.addingConnections` `NetworkListener` to quickly connect without going through the service discovery process again.
 
 The framework limits the listener to accepting connections from the paired devices specified.
 
-> ❗ **Important**: Your app must have at least one pre-existing [`NetworkConnection`](https://developer.apple.com/documentation/Network/NetworkConnection) to a remote device before it can make additional connections to an `.addingConnections NetworkListener` on that device.
+> ❗ **Important**: Your app must have at least one pre-existing [`NetworkConnection`](https://developer.apple.com/documentation/network/networkconnection) to a remote device before it can make additional connections to an `.addingConnections NetworkListener` on that device.
 
 ```swift
 // Create a listener to add new connections.

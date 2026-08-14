@@ -30,7 +30,7 @@ SceneKit determines the filled area of the path using the even-odd winding rule 
 
 The extruded shape is centered at the zero point of its z-axis. For example, an extrusion depth of `1.0` creates a shape that extends from `-0.5` to `0.5` along the z-axis. An extrusion depth of zero creates a flat, one-sided shape.
 
-The path’s flatness (see [`flatness`](https://developer.apple.com/documentation/AppKit/NSBezierPath/flatness) in [`NSBezierPath`](https://developer.apple.com/documentation/AppKit/NSBezierPath)) determines the level of detail SceneKit uses in building a three-dimensional shape from the path. A larger flatness value results in fewer polygons to render, increasing performance, and a smaller flatness value increases the smoothness of curves at a cost to performance.
+The path’s flatness (see [`flatness`](https://developer.apple.com/documentation/appkit/nsbezierpath/flatness) in [`NSBezierPath`](https://developer.apple.com/documentation/appkit/nsbezierpath)) determines the level of detail SceneKit uses in building a three-dimensional shape from the path. A larger flatness value results in fewer polygons to render, increasing performance, and a smaller flatness value increases the smoothness of curves at a cost to performance.
 
 ## Parameters
 

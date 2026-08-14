@@ -7,7 +7,7 @@ An atom that contains information about text media.
 
 #### Overview
 
-For more information, see [`Text media information atom ('text')`](text_media_information_atom.md)
+For more information, see [`Text media information atom`](text_media_information_atom.md)
 
 ## See Also
 

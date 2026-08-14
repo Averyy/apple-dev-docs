@@ -26,7 +26,7 @@ You use actions most often to change the structure and content of the [`SCNNode`
 
 ##### Working with Actions
 
-To create an action, call the class method for the action you are interested in. Then, configure the action’s properties. Finally, to execute the action, call a node object’s [`run(_:)`](https://developer.apple.com/documentation/SpriteKit/SKNode/run(_:)) method (or a similar method from the [`SCNActionable`](scnactionable.md) protocol) and pass it the action object.
+To create an action, call the class method for the action you are interested in. Then, configure the action’s properties. Finally, to execute the action, call a node object’s [`run(_:)`](https://developer.apple.com/documentation/spritekit/sknode/run(_:)) method (or a similar method from the [`SCNActionable`](scnactionable.md) protocol) and pass it the action object.
 
 Most actions allow you to change a node’s properties, such as its position, rotation, or scale. Many of these actions are animated by SceneKit, meaning that they change the properties of the associated node over more than one frame of animation rendered by the scene. When an action is animated, the [`duration`](scnaction/duration.md) property states how long that action takes to complete in seconds and its [`timingMode`](scnaction/timingmode.md) property defines the rate at which the animation executes. The action’s [`speed`](scnaction/speed.md) property allows you to adjust the timing of the animation by increasing or decreasing its playback speed.
 
@@ -139,17 +139,17 @@ You never subclass [`SCNAction`](scnaction.md) directly. Instead, create actions
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCoding](../Foundation/NSCoding.md)
-- [NSCopying](../Foundation/NSCopying.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [NSSecureCoding](../Foundation/NSSecureCoding.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCoding](../foundation/nscoding.md)
+- [NSCopying](../foundation/nscopying.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSSecureCoding](../foundation/nssecurecoding.md)
 
 ## See Also
 

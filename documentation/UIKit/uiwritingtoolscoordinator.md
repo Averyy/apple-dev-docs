@@ -30,7 +30,7 @@ Create the `UIWritingToolsCoordinator` object when setting up your UI, and initi
 
 When defining the delegate, choose an object from your app that has access to your view and its text storage. You can adopt the [`UIWritingToolsCoordinator.Delegate`](uiwritingtoolscoordinator/delegate-swift.protocol.md) protocol in the view itself, or in another type that your view uses to manage content. During the interactions with Writing Tools, the delegate gets and sets the contents of the view’s text storage and supports Writing Tools behaviors.
 
-> **Note**: You don’t need to create an `UIWritingToolsCoordinator`  object if you display text using a [`UITextView`](uitextview.md), [`NSTextView`](https://developer.apple.com/documentation/AppKit/NSTextView), [`Text`](https://developer.apple.com/documentation/SwiftUI/Text), [`TextField`](https://developer.apple.com/documentation/SwiftUI/TextField), or [`TextEditor`](https://developer.apple.com/documentation/SwiftUI/TextEditor) view. Those views already include the required support to handle Writing Tools interactions.
+> **Note**: You don’t need to create an `UIWritingToolsCoordinator`  object if you display text using a [`UITextView`](uitextview.md), [`NSTextView`](https://developer.apple.com/documentation/appkit/nstextview), [`Text`](https://developer.apple.com/documentation/swiftui/text), [`TextField`](https://developer.apple.com/documentation/swiftui/textfield), or [`TextEditor`](https://developer.apple.com/documentation/swiftui/texteditor) view. Those views already include the required support to handle Writing Tools interactions.
 
 ## Topics
 
@@ -96,15 +96,15 @@ When defining the delegate, choose an object from your app that has access to yo
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [Sendable](../Swift/Sendable.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [Sendable](../swift/sendable.md)
 - [UIInteraction](uiinteraction.md)
 
 ## See Also

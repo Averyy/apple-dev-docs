@@ -18,7 +18,7 @@ Each technique gives you different amounts of control over the presentation and 
 
 Using segues in your storyboard is the recommended way to present and dismiss view controllers. A segue is a visual representation of a transition from one view controller to another. A segue starts with an action such as a button tap or table-row selection in the initial view controller. When that action occurs, UIKit creates the view controller at the other end of the segue and presents it automatically. Because you create and configure segues in your storyboard, you can change them very quickly.
 
-![An illustration of a segue between two view controllers. Tapping a table row in the first view controller triggers the segue. ](https://docs-assets.developer.apple.com/published/f98f713da106117c15ad64254d3c07c4/media-3376046%402x.png)
+![An illustration of a segue between two view controllers. Tapping a table row in the first view controller triggers the segue. ](/images/com.apple.uikit/media-3376046@2x.png)
 
 Start a segue from any object that implements an action method, such as a control or gesture recognizer. You may also start segues from table rows and collection view cells.
 

@@ -21,7 +21,7 @@ static let neutralTint: CIRAWFilterOption
 
 #### Discussion
 
-The associated value is a floating-point value packaged as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) object. Use this key to set or fetch the temperature and tint values.  You can query this value to get the current tint value.
+The associated value is a floating-point value packaged as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) object. Use this key to set or fetch the temperature and tint values.  You can query this value to get the current tint value.
 
 ## See Also
 

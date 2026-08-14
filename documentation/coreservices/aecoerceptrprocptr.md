@@ -36,12 +36,12 @@ After you are finished with a coercion callback function, and have removed it wi
 
 ## Parameters
 
-- `typeCode`: The descriptor type of the original data. For a list of AppleScript’s predefined descriptor types, see  . See  .
+- `typeCode`: The descriptor type of the original data. For a list of AppleScript’s predefined descriptor types, see [`Descriptor Type Constants`](apple_events/1542788-descriptor_type_constants.md). See [`DescType`](desctype.md).
 - `dataPtr`: A pointer to the data to coerce.
 - `dataSize`: The length, in bytes, of the data to coerce.
-- `toType`: The desired descriptor type for the resulting descriptor. For a list of AppleScript’s predefined descriptor types, see  . See  .
-- `handlerRefcon`: A reference constant that is stored in the coercion dispatch table entry for the handler. The Apple Event Manager passes this value to the handler each time it calls it. The reference constant may have a value of  .
-- `result`: A pointer to a descriptor where your coercion routine must store the descriptor that contains the coerced data. If your routine cannot coerce the data, return a null descriptor. See  .
+- `toType`: The desired descriptor type for the resulting descriptor. For a list of AppleScript’s predefined descriptor types, see [`Descriptor Type Constants`](apple_events/1542788-descriptor_type_constants.md). See [`DescType`](desctype.md).
+- `handlerRefcon`: A reference constant that is stored in the coercion dispatch table entry for the handler. The Apple Event Manager passes this value to the handler each time it calls it. The reference constant may have a value of `NULL`.
+- `result`: A pointer to a descriptor where your coercion routine must store the descriptor that contains the coerced data. If your routine cannot coerce the data, return a null descriptor. See [`AEDesc`](aedesc.md).
 
 ## See Also
 

@@ -28,7 +28,7 @@ This function is rarely used. Most applications do not set the output resolution
 
 - `printer`: The printer whose output resolution you want to change.
 - `printSettings`: The print settings object used for the print job.
-- `resolutionP`: A pointer to a   structure that specifies the desired resolution in pixels per inch.
+- `resolutionP`: A pointer to a [`PMResolution`](core_printing/pmresolution.md) structure that specifies the desired resolution in pixels per inch.
 
 ## See Also
 

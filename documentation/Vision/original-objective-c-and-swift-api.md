@@ -31,7 +31,7 @@
 ### Image sequence analysis
 - [Applying Matte Effects to People in Images and Video](applying-matte-effects-to-people-in-images-and-video.md)
   Generate image masks for people automatically by using semantic person-segmentation.
-- [Detecting human actions in a live video feed](../CreateML/detecting-human-actions-in-a-live-video-feed.md)
+- [Detecting human actions in a live video feed](../createml/detecting-human-actions-in-a-live-video-feed.md)
   Identify body movements by sending a person’s pose data from a series of video frames to an action-classification model.
 - [Segmenting and colorizing individuals from a surrounding scene](segmenting-and-colorizing-individuals-from-a-surrounding-scene.md)
   Use the Vision framework to isolate and apply colors to people in an image.
@@ -172,7 +172,7 @@
 ### Text recognition
 - [Recognizing Text in Images](recognizing-text-in-images.md)
   Add text-recognition features to your app using the Vision framework.
-- [Structuring recognized text on a document](../VisionKit/structuring-recognized-text-on-a-document.md)
+- [Structuring recognized text on a document](../visionkit/structuring-recognized-text-on-a-document.md)
   Detect, recognize, and structure text on a business card or receipt using Vision and VisionKit.
 - [Extracting phone numbers from text in images](extracting-phone-numbers-from-text-in-images.md)
   Analyze and filter phone numbers from text in live capture by using Vision.
@@ -185,7 +185,7 @@
 ### Object recognition
 - [Recognizing Objects in Live Capture](recognizing-objects-in-live-capture.md)
   Apply Vision algorithms to identify objects in real-time video.
-- [Understanding a Dice Roll with Vision and Object Detection](../CoreML/understanding-a-dice-roll-with-vision-and-object-detection.md)
+- [Understanding a Dice Roll with Vision and Object Detection](../coreml/understanding-a-dice-roll-with-vision-and-object-detection.md)
   Detect dice position and values shown in a camera frame, and determine the end of a roll by leveraging a dice detection model.
 - [class VNRecognizedObjectObservation](vnrecognizedobjectobservation.md)
   A detected object observation with an array of classification labels that classify the recognized object.
@@ -230,7 +230,7 @@
 - [var VNGenerateForegroundInstanceMaskRequestRevision1: Int](vngenerateforegroundinstancemaskrequestrevision1.md)
   A constant for specifying the first revision of the foreground instance mask request.
 ### Machine learning image analysis
-- [Classifying Images with Vision and Core ML](../CoreML/classifying-images-with-vision-and-core-ml.md)
+- [Classifying Images with Vision and Core ML](../coreml/classifying-images-with-vision-and-core-ml.md)
   Crop and scale photos using the Vision framework and classify them with a Core ML model.
 - [Training a Create ML Model to Classify Flowers](training-a-create-ml-model-to-classify-flowers.md)
   Train a flower classifier using Create ML in Swift Playgrounds, and apply the resulting model to real-time image classification using Vision.

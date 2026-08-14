@@ -22,7 +22,7 @@ The newly created [`NSDocument`](nsdocument.md) object, or `nil` if the document
 
 The default implementation of this method copies the file if specified, determines the type of the document, calls [`makeDocument(for:withContentsOf:ofType:)`](nsdocumentcontroller/makedocument(for:withcontentsof:oftype:).md) to instantiate it, sends the document `setDisplayName:` to name it if `displayNameOrNil` is not `nil`, calls [`addDocument(_:)`](nsdocumentcontroller/adddocument(_:).md) to record its opening, and sends the document [`makeWindowControllers()`](nsdocument/makewindowcontrollers().md) and [`showWindows()`](nsdocument/showwindows().md) messages.
 
-The default implementation of this method uses the file coordination mechanism introduced in OS X v10.7. It passes the document to the `NSFileCoordinator` method [`addFilePresenter(_:)`](https://developer.apple.com/documentation/Foundation/NSFileCoordinator/addFilePresenter(_:)) immediately after calling the [`addDocument(_:)`](nsdocumentcontroller/adddocument(_:).md) method. (The balancing invocation of the [`NSFileCoordinator`](https://developer.apple.com/documentation/Foundation/NSFileCoordinator) method [`removeFilePresenter(_:)`](https://developer.apple.com/documentation/Foundation/NSFileCoordinator/removeFilePresenter(_:)) is in the [`NSDocument`](nsdocument.md) method [`close()`](nsdocument/close().md).)
+The default implementation of this method uses the file coordination mechanism introduced in OS X v10.7. It passes the document to the `NSFileCoordinator` method [`addFilePresenter(_:)`](https://developer.apple.com/documentation/foundation/nsfilecoordinator/addfilepresenter(_:)) immediately after calling the [`addDocument(_:)`](nsdocumentcontroller/adddocument(_:).md) method. (The balancing invocation of the [`NSFileCoordinator`](https://developer.apple.com/documentation/foundation/nsfilecoordinator) method [`removeFilePresenter(_:)`](https://developer.apple.com/documentation/foundation/nsfilecoordinator/removefilepresenter(_:)) is in the [`NSDocument`](nsdocument.md) method [`close()`](nsdocument/close().md).)
 
 You can override this method to customize how documents are duplicated. It is called by the [`NSDocument`](nsdocument.md) method [`duplicate()`](nsdocument/duplicate().md). It may also be called from other places in AppKit.
 
@@ -33,7 +33,7 @@ In most cases, an app does not need to call this method directly.
 ## Parameters
 
 - `url`: The URL locating the document from which contents of the new document are copied.
-- `duplicateByCopying`: If [`true`](https://developer.apple.com/documentation/Swift/true), the contents located at the passed-in URL are copied into a file located in the directory used for the autosaved contents of untitled documents.
+- `duplicateByCopying`: If [`true`](https://developer.apple.com/documentation/swift/true), the contents located at the passed-in URL are copied into a file located in the directory used for the autosaved contents of untitled documents.
 - `displayNameOrNil`: If not `nil` then this value is used to derive a display name for the new document that does not match one that is already in use by an open document.
 
 ## See Also

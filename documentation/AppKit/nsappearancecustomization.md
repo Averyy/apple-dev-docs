@@ -31,7 +31,7 @@ When an object adopts this protocol, assigning a value to the [`appearance`](nsa
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 ### Conforming Types
 - [NSApplication](nsapplication.md)
 - [NSBackgroundExtensionView](nsbackgroundextensionview.md)

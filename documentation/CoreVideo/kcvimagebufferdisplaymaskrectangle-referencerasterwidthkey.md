@@ -22,7 +22,7 @@ let kCVImageBufferDisplayMaskRectangle_ReferenceRasterWidthKey: CFString
 
 #### Discussion
 
-The `0,0` origin is the top-left corner. The raster width value is a [`CFNumber`](https://developer.apple.com/documentation/CoreFoundation/CFNumber) of an unsigned 16-bit integer. The value usually matches the width of the video or the output device.
+The `0,0` origin is the top-left corner. The raster width value is a [`CFNumber`](https://developer.apple.com/documentation/corefoundation/cfnumber) of an unsigned 16-bit integer. The value usually matches the width of the video or the output device.
 
 ## See Also
 

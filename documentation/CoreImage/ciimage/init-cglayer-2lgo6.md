@@ -20,7 +20,7 @@ The initialized image object.
 
 ## Parameters
 
-- `layer`: A CGLayer object. For more information see [`Quartz 2D Programming Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/GraphicsImaging/Conceptual/drawingwithquartz2d/Introduction/Introduction.html#//apple_ref/doc/uid/TP30001066) and [`CGLayer`](https://developer.apple.com/documentation/CoreGraphics/CGLayer).
+- `layer`: A CGLayer object. For more information see [`Quartz 2D Programming Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/GraphicsImaging/Conceptual/drawingwithquartz2d/Introduction/Introduction.html#//apple_ref/doc/uid/TP30001066) and [`CGLayer`](https://developer.apple.com/documentation/coregraphics/cglayer).
 
 ## See Also
 

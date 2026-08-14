@@ -22,7 +22,7 @@ case fillEqually
 
 The following image shows an example of a horizontal stack view that uses the [`UIStackView.Distribution.fillEqually`](uistackview/distribution-swift.enum/fillequally.md) distribution.
 
-![A horizontal stack view with four arranged subviews. The stack view resizes the width of the arranged views so that they fill the available space along the stack view’s axis, with each view having equal size.](https://docs-assets.developer.apple.com/published/1ed0432157959d227b0968a172a2651c/media-2557447%402x.png)
+![A horizontal stack view with four arranged subviews. The stack view resizes the width of the arranged views so that they fill the available space along the stack view’s axis, with each view having equal size.](/images/com.apple.uikit/media-2557447@2x.png)
 
 ## See Also
 

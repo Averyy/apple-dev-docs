@@ -21,7 +21,7 @@ let kVTDecompressionPropertyKey_GeneratePerFrameHDRDisplayMetadata: CFString
 
 #### Discussion
 
-If the color space and YCbCr matrix match a supported HDR format such as HLG ([`kCMFormatDescriptionTransferFunction_ITU_R_2100_HLG`](https://developer.apple.com/documentation/CoreMedia/kCMFormatDescriptionTransferFunction_ITU_R_2100_HLG)) the system analyzes the decoded frame and adds the metadata as an attachment to the pixel buffers.
+If the color space and YCbCr matrix match a supported HDR format such as HLG ([`kCMFormatDescriptionTransferFunction_ITU_R_2100_HLG`](https://developer.apple.com/documentation/coremedia/kcmformatdescriptiontransferfunction_itu_r_2100_hlg)) the system analyzes the decoded frame and adds the metadata as an attachment to the pixel buffers.
 
 ## See Also
 

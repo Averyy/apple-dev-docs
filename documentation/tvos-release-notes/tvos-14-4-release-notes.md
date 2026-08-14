@@ -6,7 +6,7 @@ Update your apps to use new features, and test your apps against API changes.
 
 #### Overview
 
-The tvOS 14.4 SDK provides support to develop tvOS apps for Apple TV devices running tvOS 14.4. The SDK comes bundled with Xcode 12.4, available from the Mac App Store. For information on the compatibility requirements for Xcode 12.4, see [`Xcode 12.4 Release Notes`](https://developer.apple.com/documentation/Xcode-Release-Notes/xcode-12_4-release-notes).
+The tvOS 14.4 SDK provides support to develop tvOS apps for Apple TV devices running tvOS 14.4. The SDK comes bundled with Xcode 12.4, available from the Mac App Store. For information on the compatibility requirements for Xcode 12.4, see [`Xcode 12.4 Release Notes`](https://developer.apple.com/documentation/xcode-release-notes/xcode-12_4-release-notes).
 
 ##### General
 

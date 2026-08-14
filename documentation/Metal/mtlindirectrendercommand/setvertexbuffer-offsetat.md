@@ -22,7 +22,7 @@ func setVertexBuffer(_ buffer: any MTLBuffer, offset: Int, at index: Int)
 
 #### Discussion
 
-You don’t need to call this method if you create an indirect command buffer with its [`inheritBuffers`](mtlindirectcommandbufferdescriptor/inheritbuffers.md) property equal to [`true`](https://developer.apple.com/documentation/Swift/true). The command gets the arguments from the parent encoder when it runs.
+You don’t need to call this method if you create an indirect command buffer with its [`inheritBuffers`](mtlindirectcommandbufferdescriptor/inheritbuffers.md) property equal to [`true`](https://developer.apple.com/documentation/swift/true). The command gets the arguments from the parent encoder when it runs.
 
 If you need to pass other kinds of parameters to your shader, such as textures and samplers, create an argument buffer and pass it to the shader using this method.
 

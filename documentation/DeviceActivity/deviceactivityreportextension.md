@@ -18,7 +18,7 @@ protocol DeviceActivityReportExtension : AppExtension
 
 #### Overview
 
-Your extension is provided with the data that your app requests when it instantiates a `DeviceActivityReport`, which it uses to render a [`View`](https://developer.apple.com/documentation/SwiftUI/View) representing the user’s device activity.
+Your extension is provided with the data that your app requests when it instantiates a `DeviceActivityReport`, which it uses to render a [`View`](https://developer.apple.com/documentation/swiftui/view) representing the user’s device activity.
 
 ## Topics
 
@@ -32,7 +32,7 @@ Your extension is provided with the data that your app requests when it instanti
 ## Relationships
 
 ### Inherits From
-- [AppExtension](../ExtensionFoundation/AppExtension.md)
+- [AppExtension](../extensionfoundation/appextension.md)
 
 ## See Also
 

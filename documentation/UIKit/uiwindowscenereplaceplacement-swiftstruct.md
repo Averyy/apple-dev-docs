@@ -20,8 +20,8 @@ struct UIWindowSceneReplacePlacement
 ## Relationships
 
 ### Conforms To
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
 - [UIWindowScenePlacement](uiwindowsceneplacement-swift.protocol.md)
 
 ## See Also

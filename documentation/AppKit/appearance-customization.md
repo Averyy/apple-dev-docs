@@ -7,7 +7,7 @@ Add Dark Mode support to your app, and use appearance proxies to modify your UI.
 ## Topics
 
 ### Dark Mode
-- [Supporting Dark Mode in your interface](../UIKit/supporting-dark-mode-in-your-interface.md)
+- [Supporting Dark Mode in your interface](../uikit/supporting-dark-mode-in-your-interface.md)
   Update colors, images, and behaviors so that your app adapts automatically when Dark Mode is active.
 ### Appearance System
 - [class NSAppearance](nsappearance.md)

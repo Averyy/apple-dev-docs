@@ -11,7 +11,7 @@ When you build an app or third-party SDK that uses any required reason API, perf
 1. Add the `NSPrivacyAccessedAPITypes` key and set its value to the dictionary.
 2. For each required reason API your app or third-party SDK uses, add a dictionary as a value for the `NSPrivacyAccessedAPITypes` key. The dictionary includes the category of the reason API and a list of reasons for using this API. For more information, see [`Add an accessed API type and reasons dictionary`](tn3183-adding-required-reason-api-entries-to-your-privacy-manifest#Add-an-accessed-API-type-and-reasons-dictionary.md).
 
-See [`Privacy manifest files`](https://developer.apple.com/documentation/BundleResources/privacy-manifest-files) and [`Describing use of required reason API`](https://developer.apple.com/documentation/BundleResources/describing-use-of-required-reason-api) for more information about the privacy manifest and these keys.
+See [`Privacy manifest files`](https://developer.apple.com/documentation/bundleresources/privacy-manifest-files) and [`Describing use of required reason API`](https://developer.apple.com/documentation/bundleresources/describing-use-of-required-reason-api) for more information about the privacy manifest and these keys.
 
 This document describes how to add the `NSPrivacyAccessedAPIType`, `NSPrivacyAccessedAPITypeReasons`, and `NSPrivacyAccessedAPITypes` keys to your privacy manifest in Xcode. If you work outside of Xcode, review this document to learn about the expected structure of each key.
 
@@ -19,7 +19,7 @@ This document describes how to add the `NSPrivacyAccessedAPIType`, `NSPrivacyAcc
 
 #### Select an Accessed Api Category
 
-A privacy accessed API category identifies the category of required reason APIs your app or third-party SDK uses. Set the value of the `NSPrivacyAccessedAPIType` key to a privacy accessed API category. For more information, see [`Describing use of required reason API`](https://developer.apple.com/documentation/BundleResources/describing-use-of-required-reason-api).
+A privacy accessed API category identifies the category of required reason APIs your app or third-party SDK uses. Set the value of the `NSPrivacyAccessedAPIType` key to a privacy accessed API category. For more information, see [`Describing use of required reason API`](https://developer.apple.com/documentation/bundleresources/describing-use-of-required-reason-api).
 
 The possible values of a privacy accessed API category are:
 
@@ -74,7 +74,7 @@ To add the `NSPrivacyAccessedAPITypeReasons` key to a privacy accessed API type 
 6. Confirm the value is `Array` in the Type column.
 7. Click the disclosure triangle to the left of `NSPrivacyAccessedAPITypeReasons` to reveal it.
 8. Click the Add button (+) beside `NSPrivacyAccessedAPITypeReasons` to add a reason.
-9. Choose a reason from the pop-up menu in the Value column. For possible values, see [`Describing use of required reason API`](https://developer.apple.com/documentation/BundleResources/describing-use-of-required-reason-api).
+9. Choose a reason from the pop-up menu in the Value column. For possible values, see [`Describing use of required reason API`](https://developer.apple.com/documentation/bundleresources/describing-use-of-required-reason-api).
 10. Confirm that the value exactly matches a reason for the `NSPrivacyAccessedAPIType` key you use in step 3.
 
 #### Add an Accessed Api Type and Reasons Dictionary
@@ -160,7 +160,7 @@ The following example declares disk space required reason API usage in an app na
 
 **Property list**:
 
-![A privacy manifest that declares disk space required reason API usage.](https://docs-assets.developer.apple.com/published/0ac7048f47872a5dd9eec2f1dcbab922/tn3183-required_reason_api_entry%402x.png)
+![A privacy manifest that declares disk space required reason API usage.](/images/com.apple.technotes/tn3183-required_reason_api_entry@2x.png)
 
 Repeat step 5 for each additional required reason API your app or third-party SDK uses. The example below additionally declares user defaults required reason API usage in `Sample`:
 
@@ -197,7 +197,7 @@ Repeat step 5 for each additional required reason API your app or third-party SD
 
 **Property list**:
 
-![A privacy manifest that declares disk space and user defaults required reason APIs usage.](https://docs-assets.developer.apple.com/published/57b364f5e36a60a4151c09bcd8c2cd47/tn3183-required_reason_api_entries%402x.png)
+![A privacy manifest that declares disk space and user defaults required reason APIs usage.](/images/com.apple.technotes/tn3183-required_reason_api_entries@2x.png)
 
 #### Revision History
 

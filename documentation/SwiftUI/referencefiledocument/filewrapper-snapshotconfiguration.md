@@ -21,7 +21,7 @@ func fileWrapper(snapshot: Self.Snapshot, configuration: Self.WriteConfiguration
 
 #### Return Value
 
-The destination to serialize the document contents to. The value can be a newly created [`FileWrapper`](https://developer.apple.com/documentation/Foundation/FileWrapper) or an update of the one provided in the `configuration` input.
+The destination to serialize the document contents to. The value can be a newly created [`FileWrapper`](https://developer.apple.com/documentation/foundation/filewrapper) or an update of the one provided in the `configuration` input.
 
 #### Discussion
 

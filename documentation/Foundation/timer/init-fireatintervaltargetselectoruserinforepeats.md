@@ -22,7 +22,7 @@ init(fireAt date: Date, interval ti: TimeInterval, target t: Any, selector s: Se
 
 #### Return Value
 
-The receiver, initialized such that, when added to a run loop, it will fire at `date` and then, if `repeats` is [`true`](https://developer.apple.com/documentation/Swift/true), every `ti` after that.
+The receiver, initialized such that, when added to a run loop, it will fire at `date` and then, if `repeats` is [`true`](https://developer.apple.com/documentation/swift/true), every `ti` after that.
 
 #### Discussion
 
@@ -37,7 +37,7 @@ You must add the new timer to a run loop, using [`add(_:forMode:)`](runloop/add(
 - (void)timerFireMethod:(NSTimer *)timer
 ```
 - `ui`: Custom user info for the timer. The timer maintains a strong reference to this object until it (the timer) is invalidated. This parameter may be `nil`.
-- `rep`: If [`true`](https://developer.apple.com/documentation/Swift/true), the timer will repeatedly reschedule itself until invalidated. If [`false`](https://developer.apple.com/documentation/Swift/false), the timer will be invalidated after it fires.
+- `rep`: If [`true`](https://developer.apple.com/documentation/swift/true), the timer will repeatedly reschedule itself until invalidated. If [`false`](https://developer.apple.com/documentation/swift/false), the timer will be invalidated after it fires.
 
 ## See Also
 

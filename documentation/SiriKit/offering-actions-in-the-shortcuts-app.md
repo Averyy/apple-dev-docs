@@ -14,7 +14,7 @@ However, sometimes there are actions in your app the user hasn’t performed tha
 
 ##### Suggest a Shortcut
 
-To suggest a shortcut to an action that the user hasn’t performed but may want to add to Siri, create an [`INShortcutReference`](https://developer.apple.com/documentation/intents/inshortcutreference) object with either an [`INIntent`](https://developer.apple.com/documentation/intents/inintent) or [`NSUserActivity`](https://developer.apple.com/documentation/Foundation/NSUserActivity) object that defines the action. Then add the shortcut to an array. Repeat for each suggestion your app wants to make. After creating the list of shortcut suggestions, call [`setShortcutSuggestions(_:)`](https://developer.apple.com/documentation/intents/invoiceshortcutcenter/setshortcutsuggestions(_:)), passing in the shortcuts.
+To suggest a shortcut to an action that the user hasn’t performed but may want to add to Siri, create an [`INShortcutReference`](https://developer.apple.com/documentation/intents/inshortcutreference) object with either an [`INIntent`](https://developer.apple.com/documentation/intents/inintent) or [`NSUserActivity`](https://developer.apple.com/documentation/foundation/nsuseractivity) object that defines the action. Then add the shortcut to an array. Repeat for each suggestion your app wants to make. After creating the list of shortcut suggestions, call [`setShortcutSuggestions(_:)`](https://developer.apple.com/documentation/intents/invoiceshortcutcenter/setshortcutsuggestions(_:)), passing in the shortcuts.
 
 ```swift
 import Intents

@@ -56,7 +56,7 @@ Use the `sceneName` property to refer to a scene to load it or transition to it 
 
 ## See Also
 
-- [Specifying a lighting environment in AR Quick Look](../ARKit/specifying-a-lighting-environment-in-ar-quick-look.md)
+- [Specifying a lighting environment in AR Quick Look](../arkit/specifying-a-lighting-environment-in-ar-quick-look.md)
   Add metadata to your USDZ file to specify its lighting characteristics.
 - [preferredIblVersion](preferrediblversion.md)
   Metadata that determines the lighting environment of virtual content.

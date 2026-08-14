@@ -30,9 +30,9 @@ This method applies the light tunnel filter to an image. This effect distorts th
 The light tunnel filter uses the following properties:
 
 - **`inputImage`**: An image with the type [`CIImage`](ciimage.md).
-- **`center`**: A set of coordinates marking the center of the light tunnel as a [`CGPoint`](https://developer.apple.com/documentation/CoreFoundation/CGPoint).
-- **`radius`**: A `float` representing the amount of pixels the filter uses to create the light tunnel as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
-- **rotation**: A `float` representing the rotation angle of the light tunnel as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+- **`center`**: A set of coordinates marking the center of the light tunnel as a [`CGPoint`](https://developer.apple.com/documentation/corefoundation/cgpoint).
+- **`radius`**: A `float` representing the amount of pixels the filter uses to create the light tunnel as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
+- **rotation**: A `float` representing the rotation angle of the light tunnel as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
 
 The following code creates a filter that generates a swirling pattern from the input image:
 
@@ -50,7 +50,7 @@ func lightTunnel(inputImage: CIImage) -> CIImage {
 }
 ```
 
-![Two images arranged horizontally. The left image contains a photograph of three hydrangea flowers with leaves in the background. The image on the right shows the result of applying the light tunnel filter, which produces a swirling pattern that shrinks towards the center of the image.](https://docs-assets.developer.apple.com/published/1f1f0ae6ef35ebae2cbf3e3ddf7cb743/media-4407304%402x.png)
+![Two images arranged horizontally. The left image contains a photograph of three hydrangea flowers with leaves in the background. The image on the right shows the result of applying the light tunnel filter, which produces a swirling pattern that shrinks towards the center of the image.](/images/com.apple.coreimage/media-4407304@2x.png)
 
 ## See Also
 

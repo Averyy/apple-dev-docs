@@ -61,7 +61,7 @@ Assign a delegate that Nearby Interaction can use to notify your app of importan
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

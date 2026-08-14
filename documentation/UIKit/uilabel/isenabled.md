@@ -20,7 +20,7 @@ var isEnabled: Bool { get set }
 
 #### Discussion
 
-This property determines only how the label draws its text. The label dims the text somewhat when not enabled to indicate it’s not active. The default value of this property is [`true`](https://developer.apple.com/documentation/Swift/true).
+This property determines only how the label draws its text. The label dims the text somewhat when not enabled to indicate it’s not active. The default value of this property is [`true`](https://developer.apple.com/documentation/swift/true).
 
 ## See Also
 

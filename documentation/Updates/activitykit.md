@@ -6,12 +6,12 @@ Learn about important changes in ActivityKit.
 
 #### Overview
 
-Browse notable changes in [`ActivityKit`](https://developer.apple.com/documentation/ActivityKit).
+Browse notable changes in [`ActivityKit`](https://developer.apple.com/documentation/activitykit).
 
 #### June 2025
 
 - Live Activities automatically appear on the Mac in the Menu bar and in CarPlay.
-- Schedule Live Activities for a specific time using [`request(attributes:content:pushType:style:alertConfiguration:start:)`](https://developer.apple.com/documentation/ActivityKit/Activity/request(attributes:content:pushType:style:alertConfiguration:start:)).
+- Schedule Live Activities for a specific time using [`request(attributes:content:pushType:style:alertConfiguration:start:)`](https://developer.apple.com/documentation/activitykit/activity/request(attributes:content:pushtype:style:alertconfiguration:start:)).
 
 #### June 2024
 

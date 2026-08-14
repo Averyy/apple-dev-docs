@@ -22,7 +22,7 @@ case personalVoiceAllowAppsToRequestToUse
 
 #### Discussion
 
-You use this constant with [`openSettings(for:)`](accessibilitysettings/opensettings(for:).md). This constant is relevant for the [`AVSpeechSynthesizer.PersonalVoiceAuthorizationStatus`](https://developer.apple.com/documentation/AVFAudio/AVSpeechSynthesizer/PersonalVoiceAuthorizationStatus-swift.enum) API.
+You use this constant with [`openSettings(for:)`](accessibilitysettings/opensettings(for:).md). This constant is relevant for the [`AVSpeechSynthesizer.PersonalVoiceAuthorizationStatus`](https://developer.apple.com/documentation/avfaudio/avspeechsynthesizer/personalvoiceauthorizationstatus-swift.enum) API.
 
 
 ---

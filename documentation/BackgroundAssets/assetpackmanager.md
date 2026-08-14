@@ -99,9 +99,9 @@ The first time that your code refers to the shared manager, Background Assets co
 ## Relationships
 
 ### Conforms To
-- [Actor](../Swift/Actor.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Actor](../swift/actor.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 
@@ -111,9 +111,9 @@ The first time that your code refers to the shared manager, Background Assets co
   A manifest of asset packs that are available to download.
 - [protocol ManagedDownloaderExtension](manageddownloaderextension.md)
   An app extension that uses the system implementation to schedule asset-pack downloads automatically.
-- [BAAppGroupID](../BundleResources/Information-Property-List/BAAppGroupID.md)
+- [BAAppGroupID](../bundleresources/information-property-list/baappgroupid.md)
   The app group identifier that you share between your app and the extension that uses asset packs.
-- [BAHasManagedAssetPacks](../BundleResources/Information-Property-List/BAHasManagedAssetPacks.md)
+- [BAHasManagedAssetPacks](../bundleresources/information-property-list/bahasmanagedassetpacks.md)
   A Boolean value that indicates whether you let the system automatically manage your asset packs.
 
 

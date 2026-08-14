@@ -16,7 +16,7 @@ var registeredDraggedTypes: [NSPasteboard.PasteboardType] { get }
 
 #### Discussion
 
-This property contains an array of [`NSString`](https://developer.apple.com/documentation/Foundation/NSString) objects, each of which corresponds to a [`Uniform Type Identifier`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Conceptual/DevPedia-CocoaCore/UniformTypeIdentifier.html#//apple_ref/doc/uid/TP40008195-CH60). The array elements are in no particular order, but the array is guaranteed not to contain duplicate entries. To register your view’s drag types, use the [`registerForDraggedTypes(_:)`](nsview/registerfordraggedtypes(_:).md) method.
+This property contains an array of [`NSString`](https://developer.apple.com/documentation/foundation/nsstring) objects, each of which corresponds to a [`Uniform Type Identifier`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Conceptual/DevPedia-CocoaCore/UniformTypeIdentifier.html#//apple_ref/doc/uid/TP40008195-CH60). The array elements are in no particular order, but the array is guaranteed not to contain duplicate entries. To register your view’s drag types, use the [`registerForDraggedTypes(_:)`](nsview/registerfordraggedtypes(_:).md) method.
 
 ## See Also
 

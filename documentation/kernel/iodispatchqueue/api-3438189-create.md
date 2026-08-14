@@ -17,7 +17,7 @@ static kern_return_t Create(const char *name, uint64_t options, uint64_t priorit
 
 #### Return_value
 
-[`kIOReturnSuccess`](https://developer.apple.com/documentation/driverkit/kioreturnsuccess) on success, or another value if an error occurs. For a list of error codes, see `Error Codes`. 
+[`kIOReturnSuccess`](https://developer.apple.com/documentation/driverkit/kioreturnsuccess) on success, or another value if an error occurs. For a list of error codes, see [`Error Codes`](https://developer.apple.com/documentation/driverkit/error-codes). 
 
 #### Discussion
 
@@ -25,8 +25,8 @@ Creates a new dispatch queue object. All queues are currently serial, executing 
 
 ## Parameters
 
-- `options`: No options are currently defined. Specify   for this parameter.
-- `priority`: No priorities are currently defined. Specify   for this parameter.
+- `options`: No options are currently defined. Specify `0` for this parameter.
+- `priority`: No priorities are currently defined. Specify `0` for this parameter.
 
 ## See Also
 

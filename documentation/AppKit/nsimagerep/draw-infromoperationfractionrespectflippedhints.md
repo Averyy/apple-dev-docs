@@ -16,7 +16,7 @@ func draw(in dstSpacePortionRect: NSRect, from srcSpacePortionRect: NSRect, oper
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/Swift/true) if the image was successfully drawn; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
+[`true`](https://developer.apple.com/documentation/swift/true) if the image was successfully drawn; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
 
 #### Discussion
 
@@ -28,7 +28,7 @@ If the `srcSpacePortionRect` and `dstSpacePortionRect` rectangles have different
 - `srcSpacePortionRect`: The source rectangle specifying the portion of the image you want to draw. The coordinates of this rectangle must be specified using the image’s own coordinate system. If you pass in `NSZeroRect`, the entire image is drawn.
 - `op`: The compositing operation to use when drawing the image. See the [`NSCompositingOperation`](nscompositingoperation.md) constants.
 - `requestedAlpha`: The opacity of the image, specified as a value from 0.0 to 1.0. Specifying a value of 0.0 draws the image as fully transparent while a value of 1.0 draws the image as fully opaque. Values greater than 1.0 are interpreted as 1.0.
-- `respectContextIsFlipped`: [`true`](https://developer.apple.com/documentation/Swift/true) if the flipped context of the receiver should be respected, otherwise [`false`](https://developer.apple.com/documentation/Swift/false).
+- `respectContextIsFlipped`: [`true`](https://developer.apple.com/documentation/swift/true) if the flipped context of the receiver should be respected, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
 - `hints`: An optional dictionary of hints that provide more context for selecting or generating the image. See `Image Hint Dictionary Keys` for possible values.
 
 ## See Also

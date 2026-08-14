@@ -18,7 +18,7 @@ class VZVirtualMachineView
 
 The `VZVirtualMachineView` is a UI element that shows the contents of the VM frame buffer that you can optionally configure to respond to changes in the host’s display settings. If the VM configuration includes a keyboard and a pointing device, the view forwards keyboard and mouse events to the VM through those devices.
 
-For a [`Sendable`](https://developer.apple.com/documentation/Swift/Sendable) wrapper that connects a virtual machine view to a virtual machine, see [`VZVirtualMachineViewAdaptor`](vzvirtualmachineviewadaptor.md).
+For a [`Sendable`](https://developer.apple.com/documentation/swift/sendable) wrapper that connects a virtual machine view to a virtual machine, see [`VZVirtualMachineViewAdaptor`](vzvirtualmachineviewadaptor.md).
 
 ## Topics
 
@@ -36,24 +36,24 @@ For a [`Sendable`](https://developer.apple.com/documentation/Swift/Sendable) wra
 ## Relationships
 
 ### Inherits From
-- [NSView](../AppKit/NSView.md)
+- [NSView](../appkit/nsview.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSAccessibilityElementProtocol](../AppKit/NSAccessibilityElementProtocol.md)
-- [NSAccessibilityProtocol](../AppKit/NSAccessibilityProtocol.md)
-- [NSAnimatablePropertyContainer](../AppKit/NSAnimatablePropertyContainer.md)
-- [NSAppearanceCustomization](../AppKit/NSAppearanceCustomization.md)
-- [NSCoding](../Foundation/NSCoding.md)
-- [NSDraggingDestination](../AppKit/NSDraggingDestination.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [NSStandardKeyBindingResponding](../AppKit/NSStandardKeyBindingResponding.md)
-- [NSTouchBarProvider](../AppKit/NSTouchBarProvider.md)
-- [NSUserActivityRestoring](../AppKit/NSUserActivityRestoring.md)
-- [NSUserInterfaceItemIdentification](../AppKit/NSUserInterfaceItemIdentification.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSAccessibilityElementProtocol](../appkit/nsaccessibilityelementprotocol.md)
+- [NSAccessibilityProtocol](../appkit/nsaccessibilityprotocol.md)
+- [NSAnimatablePropertyContainer](../appkit/nsanimatablepropertycontainer.md)
+- [NSAppearanceCustomization](../appkit/nsappearancecustomization.md)
+- [NSCoding](../foundation/nscoding.md)
+- [NSDraggingDestination](../appkit/nsdraggingdestination.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSStandardKeyBindingResponding](../appkit/nsstandardkeybindingresponding.md)
+- [NSTouchBarProvider](../appkit/nstouchbarprovider.md)
+- [NSUserActivityRestoring](../appkit/nsuseractivityrestoring.md)
+- [NSUserInterfaceItemIdentification](../appkit/nsuserinterfaceitemidentification.md)
 
 ## See Also
 

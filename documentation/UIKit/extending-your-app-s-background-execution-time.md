@@ -6,7 +6,7 @@ Ensure that critical tasks finish when your app moves to the background.
 
 #### Overview
 
-Extending your app’s background execution time ensures that you have adequate time to perform critical tasks. For tasks that require more background time, use [`Background Tasks`](https://developer.apple.com/documentation/BackgroundTasks).
+Extending your app’s background execution time ensures that you have adequate time to perform critical tasks. For tasks that require more background time, use [`Background Tasks`](https://developer.apple.com/documentation/backgroundtasks).
 
 When your app moves to the background, the system calls your app delegate’s [`applicationDidEnterBackground(_:)`](uiapplicationdelegate/applicationdidenterbackground(_:).md) method. That method has five seconds to perform any tasks and return. Shortly after that method returns, the system puts your app into the suspended state. For most apps, five seconds is enough to perform any crucial tasks, but if you need more time, you can ask UIKit to extend your app’s runtime.
 
@@ -38,7 +38,7 @@ func sendDataToServer(data: NSData) {
 }
 ```
 
-> **Note**:  The [`beginBackgroundTask(withName:expirationHandler:)`](uiapplication/beginbackgroundtask(withname:expirationhandler:).md) method can’t be called from an app extension. To request extra execution time from your app extension, call the [`performExpiringActivity(withReason:using:)`](https://developer.apple.com/documentation/Foundation/ProcessInfo/performExpiringActivity(withReason:using:)) method of [`ProcessInfo`](https://developer.apple.com/documentation/Foundation/ProcessInfo) instead.
+> **Note**:  The [`beginBackgroundTask(withName:expirationHandler:)`](uiapplication/beginbackgroundtask(withname:expirationhandler:).md) method can’t be called from an app extension. To request extra execution time from your app extension, call the [`performExpiringActivity(withReason:using:)`](https://developer.apple.com/documentation/foundation/processinfo/performexpiringactivity(withreason:using:)) method of [`ProcessInfo`](https://developer.apple.com/documentation/foundation/processinfo) instead.
 
 ## See Also
 

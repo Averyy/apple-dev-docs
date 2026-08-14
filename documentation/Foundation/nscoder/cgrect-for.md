@@ -21,7 +21,7 @@ class func cgRect(for string: String) -> CGRect
 
 #### Return Value
 
-A Core Graphics structure that represents a rectangle. If the string is not well-formed, the function returns [`CGRectZero`](https://developer.apple.com/documentation/CoreGraphics/CGRectZero).
+A Core Graphics structure that represents a rectangle. If the string is not well-formed, the function returns [`CGRectZero`](https://developer.apple.com/documentation/coregraphics/cgrectzero).
 
 #### Discussion
 

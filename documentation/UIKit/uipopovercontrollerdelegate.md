@@ -39,7 +39,7 @@ For more information about the [`UIPopoverController`](uipopovercontroller.md) c
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

@@ -24,7 +24,7 @@ To perform Unicode string comparison, you must supply locale and collation speci
 
 ## Parameters
 
-- `collatorRef`: A reference to a valid collator object. The   function sets   to  . 
+- `collatorRef`: A reference to a valid collator object. The `UCDisposeCollator` function sets `*collatorRef` to `NULL`. 
 
 ## See Also
 

@@ -30,7 +30,7 @@ For more information about using operation queues, see the [`Concurrency Program
 
 ##### Determine the Execution Order
 
-An operation queue organizes and invokes its operations according to their readiness, priority level, and interoperation dependencies. If all of the queued operations have the same [`queuePriority`](operation/queuepriority-swift.property.md) and the [`isReady`](operation/isready.md) property returns [`true`](https://developer.apple.com/documentation/Swift/true), the queue invokes them in the order you added them. Otherwise, the operation queue always invokes the operation with the highest priority relative to the other ready operations.
+An operation queue organizes and invokes its operations according to their readiness, priority level, and interoperation dependencies. If all of the queued operations have the same [`queuePriority`](operation/queuepriority-swift.property.md) and the [`isReady`](operation/isready.md) property returns [`true`](https://developer.apple.com/documentation/swift/true), the queue invokes them in the order you added them. Otherwise, the operation queue always invokes the operation with the highest priority relative to the other ready operations.
 
 However, don’t rely on queue semantics to ensure a specific execution order of operations  because changes in the readiness of an operation can change the resulting execution order. Interoperation dependencies provide an absolute execution order for operations, even if those operations are located in different operation queues. An operation object isn’t ready to run until all of its dependent operations have finished running.
 
@@ -62,7 +62,7 @@ For more information about KVO and how to attach observers to an object, see the
 
 You can safely use a single [`OperationQueue`](operationqueue.md) object from multiple threads without creating additional locks to synchronize access to that object.
 
-Operation queues use the [`Dispatch`](https://developer.apple.com/documentation/Dispatch) framework to initiate the execution of their operations. As a result, queues always invoke operations on a separate thread, regardless of whether the operation is synchronous or asynchronous.
+Operation queues use the [`Dispatch`](https://developer.apple.com/documentation/dispatch) framework to initiate the execution of their operations. As a result, queues always invoke operations on a separate thread, regardless of whether the operation is synchronous or asynchronous.
 
 ## Topics
 
@@ -127,20 +127,20 @@ Operation queues use the [`Dispatch`](https://developer.apple.com/documentation/
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [Copyable](../Swift/Copyable.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Escapable](../Swift/Escapable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [Copyable](../swift/copyable.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Escapable](../swift/escapable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 - [ProgressReporting](progressreporting.md)
-- [Scheduler](../Combine/Scheduler.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Scheduler](../combine/scheduler.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

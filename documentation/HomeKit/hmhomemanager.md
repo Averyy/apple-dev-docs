@@ -27,11 +27,11 @@ class HMHomeManager
 
 HomeKit stores the user’s home automation information in a database that’s shared among Apple’s built-in iOS Home app, your HomeKit-enabled app, and apps from other developers. All these apps access the database as peers using the HomeKit framework.
 
-![Diagram showing how different apps use HomeKit to access the shared HomeKit database.](https://docs-assets.developer.apple.com/published/1d1af3529d72cebfde9b21706f91cb43/media-3111423%402x.png)
+![Diagram showing how different apps use HomeKit to access the shared HomeKit database.](/images/com.apple.homekit/media-3111423@2x.png)
 
 Each app creates a single [`HMHomeManager`](hmhomemanager.md) instance to coordinate its HomeKit-related activities. The manager’s [`homes`](hmhomemanager/homes.md) array gives your app access to a collection of [`HMHome`](hmhome.md) instances that represent the user’s homes. These in turn contain references to the home automation accessories that your app can inspect and control.
 
-![Diagram showing a collection of homes within the home manager, each of which has a collection of accessories.](https://docs-assets.developer.apple.com/published/0a853498ff99cc139c55fe113f1169a1/media-3111594%402x.png)
+![Diagram showing a collection of homes within the home manager, each of which has a collection of accessories.](/images/com.apple.homekit/media-3111594@2x.png)
 
 Adopt the [`HMHomeManagerDelegate`](hmhomemanagerdelegate.md) protocol in your app to stay informed of any changes to the set of homes made outside your app.
 
@@ -70,16 +70,16 @@ Adopt the [`HMHomeManagerDelegate`](hmhomemanagerdelegate.md) protocol in your a
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

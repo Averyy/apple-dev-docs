@@ -16,7 +16,7 @@ class IKFilterBrowserPanel
 
 #### Overview
 
-The `IKFilterBrowserPanel` class provides a user interface that allows users to browse Core Image filters ([`CIFilter`](https://developer.apple.com/documentation/CoreImage/CIFilter-swift.class)), to preview a filter, and to get additional information about the filter, such as its description.
+The `IKFilterBrowserPanel` class provides a user interface that allows users to browse Core Image filters ([`CIFilter`](https://developer.apple.com/documentation/coreimage/cifilter-swift.class)), to preview a filter, and to get additional information about the filter, such as its description.
 
 An `IKFilterBrowserPanel` object can be displayed as:
 
@@ -55,27 +55,27 @@ The `IKFilterBrowserPanel` class allows the user to create filter collections th
 ## Relationships
 
 ### Inherits From
-- [NSPanel](../AppKit/NSPanel.md)
+- [NSPanel](../appkit/nspanel.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSAccessibilityElementProtocol](../AppKit/NSAccessibilityElementProtocol.md)
-- [NSAccessibilityProtocol](../AppKit/NSAccessibilityProtocol.md)
-- [NSAnimatablePropertyContainer](../AppKit/NSAnimatablePropertyContainer.md)
-- [NSAppearanceCustomization](../AppKit/NSAppearanceCustomization.md)
-- [NSCoding](../Foundation/NSCoding.md)
-- [NSMenuItemValidation](../AppKit/NSMenuItemValidation.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [NSStandardKeyBindingResponding](../AppKit/NSStandardKeyBindingResponding.md)
-- [NSTouchBarProvider](../AppKit/NSTouchBarProvider.md)
-- [NSUserActivityRestoring](../AppKit/NSUserActivityRestoring.md)
-- [NSUserInterfaceItemIdentification](../AppKit/NSUserInterfaceItemIdentification.md)
-- [NSUserInterfaceValidations](../AppKit/NSUserInterfaceValidations.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSAccessibilityElementProtocol](../appkit/nsaccessibilityelementprotocol.md)
+- [NSAccessibilityProtocol](../appkit/nsaccessibilityprotocol.md)
+- [NSAnimatablePropertyContainer](../appkit/nsanimatablepropertycontainer.md)
+- [NSAppearanceCustomization](../appkit/nsappearancecustomization.md)
+- [NSCoding](../foundation/nscoding.md)
+- [NSMenuItemValidation](../appkit/nsmenuitemvalidation.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSStandardKeyBindingResponding](../appkit/nsstandardkeybindingresponding.md)
+- [NSTouchBarProvider](../appkit/nstouchbarprovider.md)
+- [NSUserActivityRestoring](../appkit/nsuseractivityrestoring.md)
+- [NSUserInterfaceItemIdentification](../appkit/nsuserinterfaceitemidentification.md)
+- [NSUserInterfaceValidations](../appkit/nsuserinterfacevalidations.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

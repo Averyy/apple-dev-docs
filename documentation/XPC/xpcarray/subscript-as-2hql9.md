@@ -22,7 +22,7 @@ subscript<T>(index: Int, as type: T.Type = T.self) -> T? where T : BinaryFloatin
 
 #### Return Value
 
-The value at the specified index in the array, otherwise [`nil`](https://developer.apple.com/documentation/ObjectiveC/nil-227m0).
+The value at the specified index in the array, otherwise [`nil`](https://developer.apple.com/documentation/objectivec/nil-227m0).
 
 ## Parameters
 

@@ -20,7 +20,7 @@ An initialized server object.
 
 #### Discussion
 
-This method examines the `Info.plist` file  for the entries shown in the table below. The class names are loaded, but no classes are instantiated. Additionally, an [`NSConnection`](https://developer.apple.com/documentation/Foundation/NSConnection) object is allocated and registered using the input method connection name supplied in the `Info.plist` file.
+This method examines the `Info.plist` file  for the entries shown in the table below. The class names are loaded, but no classes are instantiated. Additionally, an [`NSConnection`](https://developer.apple.com/documentation/foundation/nsconnection) object is allocated and registered using the input method connection name supplied in the `Info.plist` file.
 
 | Key | Value |
 | --- | --- |

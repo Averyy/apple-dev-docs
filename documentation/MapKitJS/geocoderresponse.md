@@ -20,7 +20,7 @@ interface GeocoderResponse
 
 #### Overview
 
-The `data` parameter of the [`lookup(place, options)`](geocoder/lookup.md) or [`reverseLookup(coordinate, options)`](geocoder/reverselookup.md) callback function contains the geocoder response. MapKit JS parses the `data` object from the geocoder JSON response, which contains an array of [`Place`](place.md) objects.
+The `data` parameter of the [`lookup()`](geocoder/lookup.md) or [`reverseLookup()`](geocoder/reverselookup.md) callback function contains the geocoder response. MapKit JS parses the `data` object from the geocoder JSON response, which contains an array of [`Place`](place.md) objects.
 
 If there’s no response, [`results`](geocoderresponse/results.md) is an empty array.
 

@@ -28,7 +28,7 @@ For example, `OSLogMessageComponent` can represent the number associated with a 
 
 ### Constants
 - [OSLogMessageComponent.ArgumentCategory.data](oslogmessagecomponent/argumentcategory-swift.enum/data.md)
-  The argument is an [`NSData`](https://developer.apple.com/documentation/Foundation/NSData) object.
+  The argument is an [`NSData`](https://developer.apple.com/documentation/foundation/nsdata) object.
 - [OSLogMessageComponent.ArgumentCategory.double](oslogmessagecomponent/argumentcategory-swift.enum/double.md)
   The argument is a double.
 - [OSLogMessageComponent.ArgumentCategory.int64](oslogmessagecomponent/argumentcategory-swift.enum/int64.md)
@@ -45,12 +45,12 @@ For example, `OSLogMessageComponent` can represent the number associated with a 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../Swift/BitwiseCopyable.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [RawRepresentable](../Swift/RawRepresentable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [BitwiseCopyable](../swift/bitwisecopyable.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [RawRepresentable](../swift/rawrepresentable.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

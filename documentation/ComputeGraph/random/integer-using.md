@@ -23,7 +23,7 @@ A pseudo-random 32-bit unsigned integer.
 
 This function generates a random integer covering the full range of 32-bit unsigned values using the provided seed. The seed is not modified, allowing for reproducible random number generation. Use this when you need deterministic randomness or want to control the random sequence independently.
 
-> **Note**: ![Graph](https://docs-assets.developer.apple.com/published/cb7024e4bcc2bae32639fe217885d7d3/random__integer_using.svg)
+> **Note**: ![Graph](/images/com.apple.computegraph/random__integer_using.svg)
 
 ## Parameters
 

@@ -24,7 +24,7 @@ var contentSize: CGSize { get set }
 
 #### Discussion
 
-The unit of size is points. The default size is [`CGSizeZero`](https://developer.apple.com/documentation/CoreGraphics/CGSizeZero).
+The unit of size is points. The default size is [`CGSizeZero`](https://developer.apple.com/documentation/coregraphics/cgsizezero).
 
 ## See Also
 

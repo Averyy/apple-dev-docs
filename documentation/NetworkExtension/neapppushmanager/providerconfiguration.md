@@ -19,7 +19,7 @@ var providerConfiguration: [String : Any] { get set }
 
 #### Discussion
 
-The dictionary’s values must only use data types supported by [`PropertyListSerialization`](https://developer.apple.com/documentation/Foundation/PropertyListSerialization); you can’t use custom types for the values.
+The dictionary’s values must only use data types supported by [`PropertyListSerialization`](https://developer.apple.com/documentation/foundation/propertylistserialization); you can’t use custom types for the values.
 
 The manager passes this dictionary as-is to the [`NEAppPushProvider`](neapppushprovider.md) when the provider starts.
 

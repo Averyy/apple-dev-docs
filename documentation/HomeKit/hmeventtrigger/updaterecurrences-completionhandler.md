@@ -19,7 +19,7 @@ func updateRecurrences(_ recurrences: [DateComponents]?) async throws
 
 ## Parameters
 
-- `recurrences`: An array of [`DateComponents`](https://developer.apple.com/documentation/Foundation/DateComponents) that represent the days of the week that the event trigger can repeat. Only respects the [`weekday`](https://developer.apple.com/documentation/Foundation/DateComponents/weekday) property of [`DateComponents`](https://developer.apple.com/documentation/Foundation/DateComponents).
+- `recurrences`: An array of [`DateComponents`](https://developer.apple.com/documentation/foundation/datecomponents) that represent the days of the week that the event trigger can repeat. Only respects the [`weekday`](https://developer.apple.com/documentation/foundation/datecomponents/weekday) property of [`DateComponents`](https://developer.apple.com/documentation/foundation/datecomponents).
 - `completion`: A block that executes after processing the request. The block takes the following parameter: - **error**: If the request was successful, the value of `error` is `nil`; otherwise, the value provides more information about the request status.
 
 ## See Also

@@ -31,7 +31,7 @@ This matrix is not modified by this method.
 
 - `scaleX`: The x component in the vector.
 - `scaleY`: The y component in the vector. If undefined, the x component is used.
-- `scaleZ`: The z component in the vector. If undefined,   is used.
+- `scaleZ`: The z component in the vector. If undefined, `1` is used.
 
 ## See Also
 

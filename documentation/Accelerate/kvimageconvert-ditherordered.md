@@ -24,7 +24,7 @@ var kvImageConvert_DitherOrdered: UInt32 { get }
 
 The following shows an 8-bit RGB image converted to a 1-bit planar image with [`vImageConvert_Planar8toPlanar1(_:_:_:_:_:)`](vimageconvert_planar8toplanar1(_:_:_:_:_:).md) using [`kvImageConvert_DitherOrdered`](kvimageconvert_ditherordered.md):
 
-![Photos showing the original image and the dithered image.](https://docs-assets.developer.apple.com/published/5b2119e8877c0162436f5b1f9b5af451/media-3358025%402x.png)
+![Photos showing the original image and the dithered image.](/images/com.apple.accelerate/media-3358025@2x.png)
 
 To learn about converting an RGB image to grayscale, see [`Converting color images to grayscale`](converting-color-images-to-grayscale.md).
 

@@ -7,7 +7,6 @@ An option to display a date for all-day events.
 
 **Availability**:
 - iOS 26.5+
-- iPadOS 26.5+
 
 ## Declaration
 

@@ -19,8 +19,8 @@ init(formatDescription desc: CMMetadataFormatDescription, clock: CMClock)
 
 ## Parameters
 
-- `desc`: A [`CMFormatDescription`](https://developer.apple.com/documentation/CoreMedia/CMFormatDescription) that defines the metadata to be supplied by the client. Throws [`invalidArgumentException`](https://developer.apple.com/documentation/Foundation/NSExceptionName/invalidArgumentException) if `NULL` is passed.
-- `clock`: A [`CMClock`](https://developer.apple.com/documentation/CoreMedia/CMClock) that provides the timebase for the supplied samples. Throws [`invalidArgumentException`](https://developer.apple.com/documentation/Foundation/NSExceptionName/invalidArgumentException) if `NULL` is passed.
+- `desc`: A [`CMFormatDescription`](https://developer.apple.com/documentation/coremedia/cmformatdescription) that defines the metadata to be supplied by the client. Throws [`invalidArgumentException`](https://developer.apple.com/documentation/foundation/nsexceptionname/invalidargumentexception) if `NULL` is passed.
+- `clock`: A [`CMClock`](https://developer.apple.com/documentation/coremedia/cmclock) that provides the timebase for the supplied samples. Throws [`invalidArgumentException`](https://developer.apple.com/documentation/foundation/nsexceptionname/invalidargumentexception) if `NULL` is passed.
 
 
 ---

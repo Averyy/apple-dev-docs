@@ -30,9 +30,9 @@ This method applies the pinch distortion filter to an image. This effect creates
 The pinch distortion filter uses the following properties:
 
 - **`inputImage`**: An image with the type [`CIImage`](ciimage.md).
-- **`center`**: A set of coordinates marking the center of the image as a [`CGPoint`](https://developer.apple.com/documentation/CoreFoundation/CGPoint).
-- **`scale`**: A float representing the amount of pinching effect as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
-- **`radius`**: A float representing the amount of pixels used to create the distortion as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+- **`center`**: A set of coordinates marking the center of the image as a [`CGPoint`](https://developer.apple.com/documentation/corefoundation/cgpoint).
+- **`scale`**: A float representing the amount of pinching effect as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
+- **`radius`**: A float representing the amount of pixels used to create the distortion as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
 
 The following code creates a filter that results in a distorted image from the center of the photo:
 
@@ -47,7 +47,7 @@ func pinch(inputImage: CIImage) -> CIImage {
 }
 ```
 
-![Two images next to each other. The image on the left contains a black-and-white checkerboard pattern. The image on the right has the pinch distortion filter applied. The center of the image appears to be pulled tightly into the screen with the outer area stretched to compensate.](https://docs-assets.developer.apple.com/published/f5a8e51a352671d7f2176b9e2c9f20b5/media-4407323%402x.png)
+![Two images next to each other. The image on the left contains a black-and-white checkerboard pattern. The image on the right has the pinch distortion filter applied. The center of the image appears to be pulled tightly into the screen with the outer area stretched to compensate.](/images/com.apple.coreimage/media-4407323@2x.png)
 
 ## See Also
 

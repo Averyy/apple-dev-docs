@@ -16,7 +16,7 @@ func abortEditing() -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/Swift/true) if there was a field editor associated with the control; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
+[`true`](https://developer.apple.com/documentation/swift/true) if there was a field editor associated with the control; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
 
 #### Discussion
 

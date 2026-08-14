@@ -22,7 +22,7 @@ let kVTCompressionPropertyKey_MVHEVCVideoLayerIDs: CFString
 
 This property is specific to MV-HEVC.
 
-Specifying layer ID values advises the encoder to expect [`CMTaggedBufferGroupRef`](https://developer.apple.com/documentation/CoreMedia/CMTaggedBufferGroupRef) objects with specific [`CMTag`](https://developer.apple.com/documentation/CoreMedia/CMTag-swift.class) values that reference them.
+Specifying layer ID values advises the encoder to expect [`CMTaggedBufferGroupRef`](https://developer.apple.com/documentation/coremedia/cmtaggedbuffergroupref) objects with specific [`CMTag`](https://developer.apple.com/documentation/coremedia/cmtag-swift.class) values that reference them.
 
 The default value is `NULL`.
 

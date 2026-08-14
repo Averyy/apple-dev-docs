@@ -41,7 +41,7 @@ func photoEffectFade(inputImage: CIImage ) -> CIImage {
 }
 ```
 
-![Two pictures of a pink flower surrounded by foliage. The photo on the left shows a single flower photographed close-up, in focus, with good light and no effects. In the photo on the right, a photo effect fade filter is applied, resulting in the image becoming desaturated.](https://docs-assets.developer.apple.com/published/5862ad1a1d12fb7a71a25a90bd06a3fc/media-3545034%402x.png)
+![Two pictures of a pink flower surrounded by foliage. The photo on the left shows a single flower photographed close-up, in focus, with good light and no effects. In the photo on the right, a photo effect fade filter is applied, resulting in the image becoming desaturated.](/images/com.apple.coreimage/media-3545034@2x.png)
 
 ## See Also
 

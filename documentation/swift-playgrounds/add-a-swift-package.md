@@ -22,7 +22,7 @@ Swift Playgrounds uses the Swift Package Manager to locate the requested package
 
 The `DeckOfPlayingCards` package provides a single product. Select it with the toggle switch in the figure below and tap or click “Add to Project”. Then Swift Package Manager downloads the selected version. The `DeckOfPlayingCards` package appears in the Packages section of the project navigator below your code.
 
-![A screenshot showing the Add Package settings in Swift Playgrounds. The settings contain an editable DeckOfPlayingCards package url, version and update method pickers, and an enabled DeckOfPlayingCards switch in the Products To Add section. The panel also includes two buttons: Cancel and Add to Project.](https://docs-assets.developer.apple.com/published/630e672f33e81d2a161de7030476fe60/add-a-package-1%402x.png)
+![A screenshot showing the Add Package settings in Swift Playgrounds. The settings contain an editable DeckOfPlayingCards package url, version and update method pickers, and an enabled DeckOfPlayingCards switch in the Products To Add section. The panel also includes two buttons: Cancel and Add to Project.](/images/com.apple.Swift-Playgrounds/add-a-package-1@2x.png)
 
 With the Swift package added to your app playground, you’ll need to import its code and resources for use in your own code. The `DeckOfPlayingCards` package contains two modules – pieces of functionality – of interest for this sample, the `PlayingCard` and `DeckOfPlayingCards` modules. You can review the code for `DeckOfPlayingCards` in the `Deck` file in the package’s `DeckOfPlayingCards` source directory in the Project navigator. The `Deck` code contains the following functions:
 
@@ -56,7 +56,7 @@ struct ContentView: View {
 }
 ```
 
-![The completed Card app in Swift Playgrounds. There are three vertical views in the app. The left column is the Project Navigator, which lists the Code files for the app project and any package dependencies is in the Packages section. In the Code section, the ContentView file is selected. The code from the ContentView file is shown in the center view. The right view shows the App Preview, with three playing cards that were dealt. The cards displayed in the App Preview are, from top to bottom, the four of diamonds, the king of spades, and the five of hearts.](https://docs-assets.developer.apple.com/published/5086db84d81532aff4a91f3e102fd55e/add-a-package-2%402x.png)
+![The completed Card app in Swift Playgrounds. There are three vertical views in the app. The left column is the Project Navigator, which lists the Code files for the app project and any package dependencies is in the Packages section. In the Code section, the ContentView file is selected. The code from the ContentView file is shown in the center view. The right view shows the App Preview, with three playing cards that were dealt. The cards displayed in the App Preview are, from top to bottom, the four of diamonds, the king of spades, and the five of hearts.](/images/com.apple.Swift-Playgrounds/add-a-package-2@2x.png)
 
 ## See Also
 

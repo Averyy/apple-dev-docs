@@ -23,7 +23,7 @@ case tip
 
 This button looks like:
 
-![A button with the text “Tip with” and the Apple Pay logo.](https://docs-assets.developer.apple.com/published/9f1d50576721f30734b7bc4f1b33e30a/media-3667471%402x.png)
+![A button with the text “Tip with” and the Apple Pay logo.](/images/com.apple.passkit/media-3667471@2x.png)
 
 For design guidance, see [`Human Interface Guidelines > Apple Pay > Buttons and Marks`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/apple-pay/overview/buttons-and-marks/).
 

@@ -27,7 +27,7 @@ var showsWidgetContainerBackground: Bool { get }
 
 In iOS 16 and earlier, this environment variable is always `true` for system widgets and `false` for accessory widgets. In macOS 13 and earlier, and in watchOS 9 and earlier, it always evaluates to `true`.
 
-If you pass `false` to [`containerBackgroundRemovable(_:)`](WidgetConfiguration/containerBackgroundRemovable(_:).md) to always show the widget background, the system shows the widget background even if `showsWidgetContainerBackground` evaluates to `true`.
+If you pass `false` to [`containerBackgroundRemovable(_:)`](widgetconfiguration/containerbackgroundremovable(_:).md) to always show the widget background, the system shows the widget background even if `showsWidgetContainerBackground` evaluates to `true`.
 
 ## See Also
 

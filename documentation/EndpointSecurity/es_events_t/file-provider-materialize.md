@@ -17,7 +17,7 @@ var file_provider_materialize: es_event_file_provider_materialize_t { get set }
 
 #### Discussion
 
-See the [`File Provider`](https://developer.apple.com/documentation/FileProvider) framework for more information on file providers.
+See the [`File Provider`](https://developer.apple.com/documentation/fileprovider) framework for more information on file providers.
 
 ## See Also
 

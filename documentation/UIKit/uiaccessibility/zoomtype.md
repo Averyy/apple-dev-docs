@@ -29,25 +29,25 @@ enum ZoomType
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../Swift/BitwiseCopyable.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [RawRepresentable](../Swift/RawRepresentable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [BitwiseCopyable](../swift/bitwisecopyable.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [RawRepresentable](../swift/rawrepresentable.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 
 - [UIAccessibilityContainer](uiaccessibilitycontainer.md)
   Provide a set of methods that view subclasses use to make subcomponents accessible as separate elements.
-- [var accessibilityActivationPoint: CGPoint](../ObjectiveC/NSObject-swift.class/accessibilityActivationPoint.md)
-- [var accessibilityFocusedUIElement: Any?](../ObjectiveC/NSObject-swift.class/accessibilityFocusedUIElement.md)
-- [var accessibilityFrame: CGRect](../ObjectiveC/NSObject-swift.class/accessibilityFrame.md)
-- [func accessibilityHitTest(NSPoint) -> Any?](../ObjectiveC/NSObject-swift.class/accessibilityHitTest(_:).md)
-- [var accessibilityNavigationStyle: UIAccessibilityNavigationStyle](../ObjectiveC/NSObject-swift.class/accessibilityNavigationStyle.md)
+- [var accessibilityActivationPoint: CGPoint](../objectivec/nsobject-swift.class/accessibilityactivationpoint.md)
+- [var accessibilityFocusedUIElement: Any?](../objectivec/nsobject-swift.class/accessibilityfocuseduielement.md)
+- [var accessibilityFrame: CGRect](../objectivec/nsobject-swift.class/accessibilityframe.md)
+- [func accessibilityHitTest(NSPoint) -> Any?](../objectivec/nsobject-swift.class/accessibilityhittest(_:).md)
+- [var accessibilityNavigationStyle: UIAccessibilityNavigationStyle](../objectivec/nsobject-swift.class/accessibilitynavigationstyle.md)
 - [enum UIAccessibilityNavigationStyle](uiaccessibilitynavigationstyle.md)
   Constants that describe how to navigate an object’s elements with an assistive app.
-- [var accessibilityPath: UIBezierPath?](../ObjectiveC/NSObject-swift.class/accessibilityPath.md)
+- [var accessibilityPath: UIBezierPath?](../objectivec/nsobject-swift.class/accessibilitypath.md)
 - [static func zoomFocusChanged(zoomType: UIAccessibility.ZoomType, toFrame: CGRect, in: UIView)](uiaccessibility/zoomfocuschanged(zoomtype:toframe:in:).md)
   Notifies the system when the app’s focus changes to a new location.
 - [static var assistiveTouch: UIGuidedAccessAccessibilityFeature](uiguidedaccessaccessibilityfeature/assistivetouch.md)

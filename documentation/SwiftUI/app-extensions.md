@@ -6,24 +6,24 @@ Extend your app’s basic functionality to other parts of the system, like by ad
 
 #### Overview
 
-Use SwiftUI along with [`WidgetKit`](https://developer.apple.com/documentation/WidgetKit) to add widgets to your app.
+Use SwiftUI along with [`WidgetKit`](https://developer.apple.com/documentation/widgetkit) to add widgets to your app.
 
-![None](https://docs-assets.developer.apple.com/published/b4da7f7032a035f40f8426797d9c227c/app-extensions-hero%402x.png)
+![None](/images/com.apple.SwiftUI/app-extensions-hero@2x.png)
 
 Widgets provide quick access to relevant content from your app. Define a structure that conforms to the [`Widget`](widget.md) protocol, and declare a view hierarchy for the widget. Configure the views inside the widget as you do other SwiftUI views, using view modifiers, including a few widget-specific modifiers.
 
-For design guidance, see [`Widgets`](https://developer.apple.com/design/Human-Interface-Guidelines/widgets) in the Human Interface Guidelines.
+For design guidance, see [`Widgets`](https://developer.apple.com/design/human-interface-guidelines/widgets) in the Human Interface Guidelines.
 
 ## Topics
 
 ### Creating widgets
-- [Building Widgets Using WidgetKit and SwiftUI](../WidgetKit/building-widgets-using-widgetkit-and-swiftui.md)
+- [Building Widgets Using WidgetKit and SwiftUI](../widgetkit/building-widgets-using-widgetkit-and-swiftui.md)
   Create widgets to show your app’s content on the Home screen, with custom intents for user-customizable settings.
-- [Creating a widget extension](../WidgetKit/Creating-a-Widget-Extension.md)
+- [Creating a widget extension](../widgetkit/creating-a-widget-extension.md)
   Display your app’s content in a convenient, informative widget on various devices.
-- [Keeping a widget up to date](../WidgetKit/Keeping-a-Widget-Up-To-Date.md)
+- [Keeping a widget up to date](../widgetkit/keeping-a-widget-up-to-date.md)
   Plan your widget’s timeline to show timely, relevant information using dynamic views, and update the timeline when things change.
-- [Making a configurable widget](../WidgetKit/Making-a-Configurable-Widget.md)
+- [Making a configurable widget](../widgetkit/making-a-configurable-widget.md)
   Give people the option to customize their widgets by adding a custom app intent to your project.
 - [protocol Widget](widget.md)
   The configuration and content of a widget to display on the Home screen or in Notification Center.

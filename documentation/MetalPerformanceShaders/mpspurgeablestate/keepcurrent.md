@@ -21,7 +21,7 @@ case keepCurrent
 
 #### Discussion
 
-Using this option keeps the current state unchanged. It is equivalent to [`MTLPurgeableState.keepCurrent`](https://developer.apple.com/documentation/Metal/MTLPurgeableState/keepCurrent).
+Using this option keeps the current state unchanged. It is equivalent to [`MTLPurgeableState.keepCurrent`](https://developer.apple.com/documentation/metal/mtlpurgeablestate/keepcurrent).
 
 ## See Also
 

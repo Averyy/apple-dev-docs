@@ -24,7 +24,7 @@ The Thread network extended PAN identifier.
 
 #### Discussion
 
-The system retrieves the network parameters from [`retrieveCredentials(forExtendedPANID:completion:)`](https://developer.apple.com/documentation/ThreadNetwork/THClient/retrieveCredentials(forExtendedPANID:completion:)) using the provided parameter. The credentials must be present in the store or else association and pairing fails.
+The system retrieves the network parameters from [`retrieveCredentials(forExtendedPANID:completion:)`](https://developer.apple.com/documentation/threadnetwork/thclient/retrievecredentials(forextendedpanid:completion:)) using the provided parameter. The credentials must be present in the store or else association and pairing fails.
 
 ## See Also
 

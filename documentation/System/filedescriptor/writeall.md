@@ -31,7 +31,7 @@ This method either writes the entire contents of `sequence`, or throws an error 
 
 Writes to the position associated with this file descriptor, and increments that position by the number of bytes written. See also [`seek(offset:from:)`](filedescriptor/seek(offset:from:).md).
 
-If `sequence` doesn’t implement the [`withContiguousStorageIfAvailable(_:)`](https://developer.apple.com/documentation/Swift/Sequence/withContiguousStorageIfAvailable(_:)-4don7) method, temporary space will be allocated as needed.
+If `sequence` doesn’t implement the [`withContiguousStorageIfAvailable(_:)`](https://developer.apple.com/documentation/swift/sequence/withcontiguousstorageifavailable(_:)) method, temporary space will be allocated as needed.
 
 ## Parameters
 

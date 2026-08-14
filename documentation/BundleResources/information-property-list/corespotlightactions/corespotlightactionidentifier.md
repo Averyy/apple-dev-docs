@@ -16,7 +16,7 @@ A string an app defines to identify the action.
 
 #### Discussion
 
-Core Spotlight includes the value of this key in the `userInfo` dictionary of the [`NSUserActivity`](https://developer.apple.com/documentation/Foundation/NSUserActivity) when it invokes the app.
+Core Spotlight includes the value of this key in the `userInfo` dictionary of the [`NSUserActivity`](https://developer.apple.com/documentation/foundation/nsuseractivity) when it invokes the app.
 
 ## See Also
 

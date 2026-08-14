@@ -29,7 +29,7 @@ This method applies the vibrance filter to an image. The effect adjusts the satu
 
 The vibrance filter uses the following properties:
 
-- **`amount`**: A `float` representing the amount to adjust the saturation with the type [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+- **`amount`**: A `float` representing the amount to adjust the saturation with the type [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
 - **`inputImage`**: An image with the type [`CIImage`](ciimage.md).
 
 The following code creates a filter that adds darkness to the input image:
@@ -43,7 +43,7 @@ func vibrance(inputImage: CIImage) -> CIImage {
 }
 ```
 
-![Two versions of a photograph side by side. The photo on the left shows a small bunch of flowers photographed close up, in focus, with good light and no effects. In the photo on the right, a vibrance filter is applied, resulting in a darker color in the flower petals.](https://docs-assets.developer.apple.com/published/c528a3450ffc6f00055379329535fde3/media-3544997%402x.png)
+![Two versions of a photograph side by side. The photo on the left shows a small bunch of flowers photographed close up, in focus, with good light and no effects. In the photo on the right, a vibrance filter is applied, resulting in a darker color in the flower petals.](/images/com.apple.coreimage/media-3544997@2x.png)
 
 ## See Also
 

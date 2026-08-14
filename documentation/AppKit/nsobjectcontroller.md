@@ -18,7 +18,7 @@ class NSObjectController
 
 [`NSObjectController`](nsobjectcontroller.md) is a Cocoa bindings–compatible controller class. Properties of the content object of instances of this class can be bound to user interface elements to access and modify their values.
 
-By default, the content of an [`NSObjectController`](nsobjectcontroller.md) instance is an [`NSMutableDictionary`](https://developer.apple.com/documentation/Foundation/NSMutableDictionary) object. This allows a single [`NSObjectController`](nsobjectcontroller.md) instance to be used to manage many different properties referenced by key-value paths. The default content object class can be changed by calling [`objectClass`](nsobjectcontroller/objectclass.md), which subclasses must override. Your application should use a custom data class that is key-value compliant whenever possible.
+By default, the content of an [`NSObjectController`](nsobjectcontroller.md) instance is an [`NSMutableDictionary`](https://developer.apple.com/documentation/foundation/nsmutabledictionary) object. This allows a single [`NSObjectController`](nsobjectcontroller.md) instance to be used to manage many different properties referenced by key-value paths. The default content object class can be changed by calling [`objectClass`](nsobjectcontroller/objectclass.md), which subclasses must override. Your application should use a custom data class that is key-value compliant whenever possible.
 
 ##### Object Controllers Entity Mode and Lazy Fetching
 
@@ -99,17 +99,17 @@ Add, Insert, and Remove operations on controllers that use lazy fetching behave 
 - [NSArrayController](nsarraycontroller.md)
 - [NSTreeController](nstreecontroller.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCoding](../Foundation/NSCoding.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCoding](../foundation/nscoding.md)
 - [NSEditor](nseditor.md)
 - [NSEditorRegistration](nseditorregistration.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

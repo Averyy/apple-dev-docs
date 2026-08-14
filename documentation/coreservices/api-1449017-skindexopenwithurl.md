@@ -28,13 +28,13 @@ Search Kit is thread-safe. You can use separate indexing and searching threads. 
 
 ##### 1680695
 
-You cannot use [`CFMakeCollectable`](https://developer.apple.com/documentation/corefoundation/1521163-cfmakecollectable) with [`SKIndex`](skindex.md) objects.
+You cannot use [`CFMakeCollectable`](https://developer.apple.com/documentation/corefoundation/cfmakecollectable) with [`SKIndex`](skindex.md) objects.
 
 ## Parameters
 
 - `inURL`: The location of the index.
-- `inIndexName`: The name of the index. Can be  , in which case this function attempts to open the index with the default name of  .
-- `inWriteAccess`: A Boolean value indicating whether the index is open for updating. To open an index for searching only, pass   (  or  ). To open it for searching and updating, pass   (  or  ).
+- `inIndexName`: The name of the index. Can be `NULL`, in which case this function attempts to open the index with the default name of `IADefaultIndex`.
+- `inWriteAccess`: A Boolean value indicating whether the index is open for updating. To open an index for searching only, pass `false` (`0` or `kCFBoolenFalse`). To open it for searching and updating, pass `true` (`1` or `kCFBooleanTrue`).
 
 ## See Also
 

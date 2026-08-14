@@ -18,7 +18,7 @@ init(uuid: UUID)
 
 ## Parameters
 
-- `uuid`: The [`NSUUID`](https://developer.apple.com/documentation/Foundation/NSUUID) that identifies the beacon.
+- `uuid`: The [`NSUUID`](https://developer.apple.com/documentation/foundation/nsuuid) that identifies the beacon.
 
 ## See Also
 

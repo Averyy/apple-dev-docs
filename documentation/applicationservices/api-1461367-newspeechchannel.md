@@ -28,7 +28,7 @@ Your application should not attempt to manipulate the datapointed to by a variab
 
 ## Parameters
 
-- `voice`: Specifying a voice means the initial speaking rate is determined by the synthesizer’s default speaking rate; passing   means the speaking rate is automatically set to the rate the user specifies in Speech preferences.
+- `voice`: A pointer to the voice specification structure corresponding to the voice to be used for the new speech channel. Pass `NULL` to create a speech channel using the system default voice. Specifying a voice means the initial speaking rate is determined by the synthesizer’s default speaking rate; passing `NULL` means the speaking rate is automatically set to the rate the user specifies in Speech preferences.
 - `chan`: On return, a pointer to a valid speech channel.
 
 ## See Also

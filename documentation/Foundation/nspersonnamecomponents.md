@@ -28,7 +28,7 @@ An `NSPersonNameComponents` object encapsulates the components of a person’s n
 
 `NSPersonNameComponents` objects can be used by an instance of [`PersonNameComponentsFormatter`](personnamecomponentsformatter.md) to create string representations suitable for display in the current locale.
 
-> ❗ **Important**:  The Swift overlay to the Foundation framework provides the [`PersonNameComponents`](personnamecomponents.md) structure, which bridges to the [`NSPersonNameComponents`](nspersonnamecomponents.md) class. For more information about value types, see [`Working with Foundation Types`](https://developer.apple.com/documentation/Swift/working-with-foundation-types).
+> ❗ **Important**:  The Swift overlay to the Foundation framework provides the [`PersonNameComponents`](personnamecomponents.md) structure, which bridges to the [`NSPersonNameComponents`](nspersonnamecomponents.md) class. For more information about value types, see [`Working with Foundation Types`](https://developer.apple.com/documentation/swift/working-with-foundation-types).
 
 ##### Working with Names
 
@@ -36,7 +36,7 @@ It is important to understand that names are disjoint from a person’s identity
 
 Many locales and cultures have rules about what kinds of names are allowed and how they are structured. An `NSPersonNameComponents` object does not impose any restrictions about which combinations of properties may have values or what those values may be.
 
-> **Note**:  `NSPersonNameComponents` represents only the components of a name. To represent contact information, such as postal addresses or phone numbers, in addition to a personal name, use [`CNContact`](https://developer.apple.com/documentation/Contacts/CNContact) or [`CNMutableContact`](https://developer.apple.com/documentation/Contacts/CNMutableContact) instead.
+> **Note**:  `NSPersonNameComponents` represents only the components of a name. To represent contact information, such as postal addresses or phone numbers, in addition to a personal name, use [`CNContact`](https://developer.apple.com/documentation/contacts/cncontact) or [`CNMutableContact`](https://developer.apple.com/documentation/contacts/cnmutablecontact) instead.
 
 ##### Name Components
 
@@ -112,7 +112,7 @@ Users often prefer to be addressed informally when using an app, so the use of h
 
 ###### Phonetic Representation
 
-It is sometimes beneficial to provide phonetic representations to aid in the pronunciation of names that are foreign or unfamiliar. For example, the Malay name “يوسف بن اسحاق” in Jawi script may be transliterated into Latin script as “Yusof bin Ishak” for English-speaking locales, where Latin script is commonly used. Depending on the locale and on the way the name is to be displayed to the user, it may be appropriate to provide an appropriate transliteration. This may be provided by the user or computed using the [`CFStringTransform(_:_:_:_:)`](https://developer.apple.com/documentation/CoreFoundation/CFStringTransform(_:_:_:_:)) function, except for names in certain nonphonetic scripts.
+It is sometimes beneficial to provide phonetic representations to aid in the pronunciation of names that are foreign or unfamiliar. For example, the Malay name “يوسف بن اسحاق” in Jawi script may be transliterated into Latin script as “Yusof bin Ishak” for English-speaking locales, where Latin script is commonly used. Depending on the locale and on the way the name is to be displayed to the user, it may be appropriate to provide an appropriate transliteration. This may be provided by the user or computed using the [`CFStringTransform(_:_:_:_:)`](https://developer.apple.com/documentation/corefoundation/cfstringtransform(_:_:_:_:)) function, except for names in certain nonphonetic scripts.
 
 A phonetic representation may also be used to specify the pronunciation of a name in idiographic script with multiple pronunciations. For example, the character “藤” in the Japanese name “近藤 藤子 (Kondō Fujiko)” is pronounced “dō” in the family name and “fuji” in the given name, which can be clarified by providing the furigana “こんどう ふじこ” as a phonetic representation for a Japanese locale.
 
@@ -147,18 +147,18 @@ Because each alias represents a separate name, an individual with one or more al
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [Copyable](../Swift/Copyable.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Escapable](../Swift/Escapable.md)
-- [Hashable](../Swift/Hashable.md)
+- [CVarArg](../swift/cvararg.md)
+- [Copyable](../swift/copyable.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Escapable](../swift/escapable.md)
+- [Hashable](../swift/hashable.md)
 - [NSCoding](nscoding.md)
 - [NSCopying](nscopying.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 - [NSSecureCoding](nssecurecoding.md)
 
 

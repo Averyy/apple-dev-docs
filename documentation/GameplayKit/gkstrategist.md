@@ -57,7 +57,7 @@ For more information about describing your gameplay model and using strategists,
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 ### Conforming Types
 - [GKMinmaxStrategist](gkminmaxstrategist.md)
 - [GKMonteCarloStrategist](gkmontecarlostrategist.md)

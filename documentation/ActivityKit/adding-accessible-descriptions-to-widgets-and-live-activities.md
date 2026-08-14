@@ -10,9 +10,9 @@ Designing with accessibility in mind is a foundational principle when creating a
 
 ##### Provide Accessibility Labels
 
-Add accessibility labels for each SwiftUI view you use as needed and make sure your accessibility labels fit the widget or Live Activity content. To review API that allows you to add accessible descriptions to SwiftUI views, see [`Accessible descriptions`](https://developer.apple.com/documentation/SwiftUI/Accessible-descriptions).
+Add accessibility labels for each SwiftUI view you use as needed and make sure your accessibility labels fit the widget or Live Activity content. To review API that allows you to add accessible descriptions to SwiftUI views, see [`Accessible descriptions`](https://developer.apple.com/documentation/swiftui/accessible-descriptions).
 
-The example below shows how the [`Emoji Rangers: Supporting Live Activities, interactivity, and animations`](https://developer.apple.com/documentation/WidgetKit/emoji-rangers-supporting-live-activities-interactivity-and-animations) app uses the [`accessibilityLabel(_:)`](https://developer.apple.com/documentation/SwiftUI/View/accessibilityLabel(_:)-1d7jv) modifier to add accessibility labels for minimal, compact leading, and compact trailing presentations.
+The example below shows how the [`Emoji Rangers: Supporting Live Activities, interactivity, and animations`](https://developer.apple.com/documentation/widgetkit/emoji-rangers-supporting-live-activities-interactivity-and-animations) app uses the [`accessibilityLabel(_:)`](https://developer.apple.com/documentation/swiftui/view/accessibilitylabel(_:)-1d7jv) modifier to add accessibility labels for minimal, compact leading, and compact trailing presentations.
 
 ```swift
 import SwiftUI

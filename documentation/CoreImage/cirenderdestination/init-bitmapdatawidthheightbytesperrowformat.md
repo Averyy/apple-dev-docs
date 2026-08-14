@@ -25,7 +25,7 @@ A [`CIRenderDestination`](cirenderdestination.md) object for rendering to a clie
 
 #### Discussion
 
-The destination’s [`colorSpace`](ciimage/colorspace.md) property will default to a [`CGColorSpace`](https://developer.apple.com/documentation/CoreGraphics/CGColorSpace) created with [`sRGB`](https://developer.apple.com/documentation/CoreGraphics/CGColorSpace/sRGB), [`extendedSRGB`](https://developer.apple.com/documentation/CoreGraphics/CGColorSpace/extendedSRGB), or [`genericGrayGamma2_2`](https://developer.apple.com/documentation/CoreGraphics/CGColorSpace/genericGrayGamma2_2).
+The destination’s [`colorSpace`](ciimage/colorspace.md) property will default to a [`CGColorSpace`](https://developer.apple.com/documentation/coregraphics/cgcolorspace) created with [`sRGB`](https://developer.apple.com/documentation/coregraphics/cgcolorspace/srgb), [`extendedSRGB`](https://developer.apple.com/documentation/coregraphics/cgcolorspace/extendedsrgb), or [`genericGrayGamma2_2`](https://developer.apple.com/documentation/coregraphics/cgcolorspace/genericgraygamma2_2).
 
 ## Parameters
 

@@ -44,7 +44,7 @@ Subviews are proxies to the resolved view they represent, meaning that modifiers
 ## Relationships
 
 ### Conforms To
-- [Identifiable](../Swift/Identifiable.md)
+- [Identifiable](../swift/identifiable.md)
 - [View](view.md)
 
 ## See Also

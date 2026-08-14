@@ -22,7 +22,7 @@ let kCTCharacterShapeAttributeName: CFString
 
 #### Discussion
 
-Value must be a [`CFNumber`](https://developer.apple.com/documentation/CoreFoundation/CFNumber) object. Default is value is `0` (disabled). A non-zero value is interpreted as Apple Type Services `kCharacterShapeType` selector `+ 1` (see `<ATS/SFNTLayoutTypes.h>` for selectors). For example, an attribute value of `1` corresponds to `kTraditionalCharactersSelector`.
+Value must be a [`CFNumber`](https://developer.apple.com/documentation/corefoundation/cfnumber) object. Default is value is `0` (disabled). A non-zero value is interpreted as Apple Type Services `kCharacterShapeType` selector `+ 1` (see `<ATS/SFNTLayoutTypes.h>` for selectors). For example, an attribute value of `1` corresponds to `kTraditionalCharactersSelector`.
 
 ## See Also
 

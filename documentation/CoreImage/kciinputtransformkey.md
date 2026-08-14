@@ -21,7 +21,7 @@ let kCIInputTransformKey: String
 
 #### Discussion
 
-A key for an [`NSAffineTransform`](https://developer.apple.com/documentation/Foundation/NSAffineTransform) object that specifies a transformation to apply.
+A key for an [`NSAffineTransform`](https://developer.apple.com/documentation/foundation/nsaffinetransform) object that specifies a transformation to apply.
 
 ## See Also
 

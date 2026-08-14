@@ -21,7 +21,7 @@ static let size: UIFontDescriptor.AttributeName
 
 #### Discussion
 
-The value is an optional [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) object that contains a float value. This float value specifies the font size.
+The value is an optional [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) object that contains a float value. This float value specifies the font size.
 
 ## See Also
 

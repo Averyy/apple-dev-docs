@@ -19,7 +19,7 @@ case missingEntitlement
 
 #### Discussion
 
-The app must have the [`System Extension Entitlement`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.system-extension.install) to activate or deactivate system extensions.
+The app must have the [`System Extension Entitlement`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.system-extension.install) to activate or deactivate system extensions.
 
 ## See Also
 

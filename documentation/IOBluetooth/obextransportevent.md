@@ -30,7 +30,7 @@ You will need to construcy these when data is received, and then pass a pointer 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../Swift/BitwiseCopyable.md)
+- [BitwiseCopyable](../swift/bitwisecopyable.md)
 
 ## See Also
 

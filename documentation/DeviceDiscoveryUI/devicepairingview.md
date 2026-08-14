@@ -30,19 +30,19 @@ A `DevicePairingView` should be used to become discoverable to local devices fro
 ## Relationships
 
 ### Conforms To
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
-- [View](../SwiftUI/View.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
+- [View](../swiftui/view.md)
 
 ## See Also
 
-- [Building peer-to-peer apps](../WiFiAware/Building-peer-to-peer-apps.md)
+- [Building peer-to-peer apps](../wifiaware/building-peer-to-peer-apps.md)
   Communicate with nearby devices over a secure, high-throughput, low-latency connection by using Wi-Fi Aware.
 - [class DDDevicePairingViewController](dddevicepairingviewcontroller.md)
   A UIKit view that displays and manages the device discovery and pairing process.
 - [struct DDDevicePairingAccess](dddevicepairingaccess.md)
   Specifies the access level requested for device discovery.
-- [NSApplicationServices](../BundleResources/Information-Property-List/NSApplicationServices.md)
+- [NSApplicationServices](../bundleresources/information-property-list/nsapplicationservices.md)
   A list of service providers and the devices that they support.
 
 

@@ -24,7 +24,7 @@ ARKit automatically manages representations of such objects in an active AR sess
 Trackable anchor classes affect other ARKit behaviors:
 
 - The [`getCurrentWorldMap(completionHandler:)`](arsession/getcurrentworldmap(completionhandler:).md) method automatically includes only non-trackable anchors in the [`ARWorldMap`](arworldmap.md) it creates. (After you create a world map, you can add other anchors to it if you choose.)
-- [`ARSCNView`](arscnview.md) and [`ARSKView`](arskview.md) automatically hide the nodes for anchors whose [`isTracked`](artrackable/istracked.md) property is [`false`](https://developer.apple.com/documentation/Swift/false).
+- [`ARSCNView`](arscnview.md) and [`ARSKView`](arskview.md) automatically hide the nodes for anchors whose [`isTracked`](artrackable/istracked.md) property is [`false`](https://developer.apple.com/documentation/swift/false).
 - World-tracking sessions use non-trackable anchors to optimize tracking quality in the area around each anchor. Trackable anchors do not affect world tracking.
 
 ## Topics
@@ -36,7 +36,7 @@ Trackable anchor classes affect other ARKit behaviors:
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 ### Conforming Types
 - [ARAppClipCodeAnchor](arappclipcodeanchor.md)
 - [ARBodyAnchor](arbodyanchor.md)

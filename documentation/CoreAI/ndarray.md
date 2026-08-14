@@ -78,11 +78,11 @@ An `NDArray` stores data in a layout defined by its [`shape`](ndarray/shape.md),
 ## Relationships
 
 ### Conforms To
-- [Escapable](../Swift/Escapable.md)
+- [Escapable](../swift/escapable.md)
 - [InferenceValue.MutableViewRepresentable](inferencevalue/mutableviewrepresentable.md)
 - [InferenceValue.ViewRepresentable](inferencevalue/viewrepresentable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

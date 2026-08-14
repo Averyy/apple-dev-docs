@@ -40,7 +40,7 @@ The name of a custom script’s corresponding file determines when Xcode Cloud r
 - **`ci_pre_xcodebuild.sh`**: The pre-`xcodebuild` script runs before Xcode Cloud runs the `xcodebuild` command. You might use a pre-`xcodebuild` script to compile additional dependencies.
 - **`ci_post_xcodebuild.sh`**: The post-`xcodebuild` script runs after Xcode Cloud runs the `xcodebuild` command — even if the `xcodebuild` command fails. You might use a post-`xcodebuild` script to upload artifacts to storage or another service.
 
-![An illustration that shows the different steps Xcode Cloud performs when it performs an action, including the custom build scripts from left to right.](https://docs-assets.developer.apple.com/published/6dc78b269a115b929a161d8daec31be0/Writing-Custom-Build-Scripts-1%402x.png)
+![An illustration that shows the different steps Xcode Cloud performs when it performs an action, including the custom build scripts from left to right.](/images/com.apple.Xcode/Writing-Custom-Build-Scripts-1@2x.png)
 
 To create a custom build script:
 

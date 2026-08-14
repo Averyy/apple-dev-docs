@@ -18,7 +18,7 @@ convenience init(inspectorWithViewController viewController: NSViewController)
 
 In macOS 14.0 and later, inspectors use standard system default values for these properties:
 
-- [`canCollapse`](nssplitviewitem/cancollapse.md) is [`true`](https://developer.apple.com/documentation/Swift/true).
+- [`canCollapse`](nssplitviewitem/cancollapse.md) is [`true`](https://developer.apple.com/documentation/swift/true).
 - [`minimumThickness`](nssplitviewitem/minimumthickness.md) and [`maximumThickness`](nssplitviewitem/maximumthickness.md)are the standard inspector size (270) and aren’t resizable by default.
 
 ## See Also

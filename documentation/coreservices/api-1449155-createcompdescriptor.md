@@ -20,11 +20,11 @@ A result code. See [`Result Codes`](https://developer.apple.com/documentation/ap
 
 ## Parameters
 
-- `comparisonOperator`: See  .
-- `operand1`: A pointer to an object specifier. See  .
-- `operand2`: A pointer to a descriptor (which can be an object specifier or any other descriptor) whose value is compared to the value of  . See  .
-- `disposeInputs`: A Boolean value. Pass   if the function should automatically dispose of any descriptors you have provided in the   and   parameters to the function. Pass   if your application will dispose of the descriptors itself. A value of   may be more efficient for some applications because it allows them to reuse descriptors. 
-- `theDescriptor`: A pointer to a descriptor. On successful return, the comparison descriptor created by  . Your application must dispose of this descriptor after it has finished using it. See  .
+- `comparisonOperator`: The comparison operator for comparing the descriptors in the `operand1` and `operand2` parameters. The standard comparison operators are defined in [`Comparison Operator Constants`](https://developer.apple.com/documentation/applicationservices/apple_event_manager/comparison_operator_constants). The actual comparison of the two operands is performed by the object comparison function provided by the client application. The way a comparison operator is interpreted is up to each application. See [`DescType`](desctype.md).
+- `operand1`: A pointer to an object specifier. See [`AEDesc`](aedesc.md).
+- `operand2`: A pointer to a descriptor (which can be an object specifier or any other descriptor) whose value is compared to the value of `operand1`. See [`AEDesc`](aedesc.md).
+- `disposeInputs`: A Boolean value. Pass `TRUE` if the function should automatically dispose of any descriptors you have provided in the `operand1` and `operand2` parameters to the function. Pass `FALSE` if your application will dispose of the descriptors itself. A value of `FALSE` may be more efficient for some applications because it allows them to reuse descriptors. 
+- `theDescriptor`: A pointer to a descriptor. On successful return, the comparison descriptor created by `CreateCompDescriptor`. Your application must dispose of this descriptor after it has finished using it. See [`AEDesc`](aedesc.md).
 
 ## See Also
 

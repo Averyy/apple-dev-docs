@@ -26,7 +26,7 @@ A new string made by replacing in the receiver all percent escapes with the matc
 
 #### Discussion
 
-See [`CFURLCreateStringByReplacingPercentEscapes(_:_:_:)`](https://developer.apple.com/documentation/CoreFoundation/CFURLCreateStringByReplacingPercentEscapes(_:_:_:)) for more complex transformations.
+See [`CFURLCreateStringByReplacingPercentEscapes(_:_:_:)`](https://developer.apple.com/documentation/corefoundation/cfurlcreatestringbyreplacingpercentescapes(_:_:_:)) for more complex transformations.
 
 ## Parameters
 

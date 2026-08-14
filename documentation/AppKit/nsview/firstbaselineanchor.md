@@ -16,7 +16,7 @@ var firstBaselineAnchor: NSLayoutYAxisAnchor { get }
 
 #### Discussion
 
-For views with multiple lines of text, this anchor represents the baseline of the top row of text. Use this anchor to create constraints with this baseline. You can only combine this anchor with other [`NSLayoutYAxisAnchor`](https://developer.apple.com/documentation/UIKit/NSLayoutYAxisAnchor) anchors. For more information, see [`NSLayoutAnchor`](https://developer.apple.com/documentation/UIKit/NSLayoutAnchor).
+For views with multiple lines of text, this anchor represents the baseline of the top row of text. Use this anchor to create constraints with this baseline. You can only combine this anchor with other [`NSLayoutYAxisAnchor`](https://developer.apple.com/documentation/uikit/nslayoutyaxisanchor) anchors. For more information, see [`NSLayoutAnchor`](https://developer.apple.com/documentation/uikit/nslayoutanchor).
 
 ## See Also
 

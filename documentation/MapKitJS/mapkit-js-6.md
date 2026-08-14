@@ -15,11 +15,11 @@ MapKit JS 6.0 adopts modern web platform conventions. For detailed guidance on u
 ###### New Features
 
 - The map now zooms and pans with wheel events without requiring someone to hold the Shift key.
-- [`load(libraryNames)`](mapkit/load.md) now returns `Promise<MapKit>`, and the `data-callback` function now also fires when libraries fail to load.
+- [`load()`](mapkit/load.md) now returns `Promise<MapKit>`, and the `data-callback` function now also fires when libraries fail to load.
 - You can now pass plain object literals in place of data type class instances. New interfaces define the expected shape: [`CoordinateData`](coordinatedata.md), [`CoordinateRegionData`](coordinateregiondata.md), [`CoordinateSpanData`](coordinatespandata.md), [`CameraZoomRangeData`](camerazoomrangedata.md), [`MapPointData`](mappointdata.md), [`MapRectData`](maprectdata.md), [`MapSizeData`](mapsizedata.md), and [`PaddingData`](paddingdata.md).
 - [`ImageAnnotation`](imageannotation.md) and [`MarkerAnnotation`](markerannotation.md) now accept [`ImageSource`](imagesource.md) objects directly, in addition to [`ImageHashObject`](imagehashobject.md) and [`ImageDelegate`](imagedelegate.md). You can also pass `Promise<ImageSource>` for async image loading.
 - The [`TileOverlay`](tileoverlay.md) [`imageForTile`](tileoverlay/imagefortile.md) callback now accepts [`ImageSource`](imagesource.md), `Promise<ImageSource>`, or `null` for client-side tile rendering.
-- A new overload of [`getPlace(id, options)`](placelookup/getplace.md) accepts a [`MapFeatureAnnotation`](mapfeatureannotation.md) directly.
+- A new overload of [`getPlace()`](placelookup/getplace.md) accepts a [`MapFeatureAnnotation`](mapfeatureannotation.md) directly.
 
 ###### Updates
 
@@ -33,8 +33,8 @@ MapKit JS 6.0 adopts modern web platform conventions. For detailed guidance on u
 The framework has deprecated the following:
 
 - Callback parameters and numeric request IDs in asynchronous service APIs. Use `Promise`-based return values with async/await, and `AbortController`/`AbortSignal` for cancellation.
-- [`fetchPlace(callback)`](mapfeatureannotation/fetchplace.md) , use [`getPlace(id, options)`](placelookup/getplace.md) instead.
-- [`getImageUrl(ratio, callback)`](imagedelegate/getimageurl.md), use [`getImage(ratio)`](imagedelegate/getimage.md) instead.
+- [`fetchPlace()`](mapfeatureannotation/fetchplace.md) , use [`getPlace()`](placelookup/getplace.md) instead.
+- [`getImageUrl()`](imagedelegate/getimageurl.md), use [`getImage()`](imagedelegate/getimage.md) instead.
 - [`toMapRect()`](coordinateregion/tomaprect.md) because it’s mathematically imprecise. Use [`MapRect`](maprect.md) directly.
 - This release renames the `urlTemplate` property on [`TileOverlay`](tileoverlay.md) to [`imageForTile`](tileoverlay/imagefortile.md).
 - Enumeration accessors like `mapkit.Map.MapTypes` now live at the top level of the [`mapkit`](mapkit.md) namespace with singular names like [`MapType`](maptype.md).

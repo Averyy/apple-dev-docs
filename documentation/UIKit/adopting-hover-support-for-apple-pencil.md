@@ -72,7 +72,7 @@ case .changed:
     }
 ```
 
-To render the strokes on the canvas, the sample calls `updatePath(point: CGPoint)`, which updates the Bezier path associated with the current stroke and renders the visual output to a [`CAShapeLayer`](https://developer.apple.com/documentation/QuartzCore/CAShapeLayer).
+To render the strokes on the canvas, the sample calls `updatePath(point: CGPoint)`, which updates the Bezier path associated with the current stroke and renders the visual output to a [`CAShapeLayer`](https://developer.apple.com/documentation/quartzcore/cashapelayer).
 
 ##### Create a Gesture Recognizer for Hover Preview
 

@@ -54,9 +54,9 @@ print(String(format: "sum %.4f", sum),
 
 - `__A`: Single-precision input vector.
 - `__IA`: Stride for the input vector.
-- `__Sum`: Single-precision sum (scalar) of the elements of  .
-- `__SumOfSquares`: Single-precision sum (scalar) of the squares of the elements of  .
-- `__N`: Number of elements in  .
+- `__Sum`: Single-precision sum (scalar) of the elements of `A`.
+- `__SumOfSquares`: Single-precision sum (scalar) of the squares of the elements of `A`.
+- `__N`: Number of elements in `A`.
 
 
 ---

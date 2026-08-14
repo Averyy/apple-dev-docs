@@ -22,13 +22,13 @@ struct Column<WrappedElement>
 
 #### Overview
 
-A column is a [`Collection`](https://developer.apple.com/documentation/Swift/Collection) that contains values of a specific type, including:
+A column is a [`Collection`](https://developer.apple.com/documentation/swift/collection) that contains values of a specific type, including:
 
-- [`Int`](https://developer.apple.com/documentation/Swift/Int)
-- [`Double`](https://developer.apple.com/documentation/Swift/Double)
-- [`String`](https://developer.apple.com/documentation/Swift/String)
+- [`Int`](https://developer.apple.com/documentation/swift/int)
+- [`Double`](https://developer.apple.com/documentation/swift/double)
+- [`String`](https://developer.apple.com/documentation/swift/string)
 
-Each element in a column is an [`Optional`](https://developer.apple.com/documentation/Swift/Optional) of the column’s type. Each `nil` element represents a missing value.
+Each element in a column is an [`Optional`](https://developer.apple.com/documentation/swift/optional) of the column’s type. Each `nil` element represents a missing value.
 
 ## Topics
 
@@ -187,24 +187,24 @@ Each element in a column is an [`Optional`](https://developer.apple.com/document
 ## Relationships
 
 ### Conforms To
-- [BidirectionalCollection](../Swift/BidirectionalCollection.md)
-- [Collection](../Swift/Collection.md)
+- [BidirectionalCollection](../swift/bidirectionalcollection.md)
+- [Collection](../swift/collection.md)
 - [ColumnProtocol](columnprotocol.md)
-- [Copyable](../Swift/Copyable.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomReflectable](../Swift/CustomReflectable.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Decodable](../Swift/Decodable.md)
-- [Encodable](../Swift/Encodable.md)
-- [Equatable](../Swift/Equatable.md)
-- [Escapable](../Swift/Escapable.md)
-- [Hashable](../Swift/Hashable.md)
-- [MutableCollection](../Swift/MutableCollection.md)
+- [Copyable](../swift/copyable.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomReflectable](../swift/customreflectable.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Decodable](../swift/decodable.md)
+- [Encodable](../swift/encodable.md)
+- [Equatable](../swift/equatable.md)
+- [Escapable](../swift/escapable.md)
+- [Hashable](../swift/hashable.md)
+- [MutableCollection](../swift/mutablecollection.md)
 - [OptionalColumnProtocol](optionalcolumnprotocol.md)
-- [RandomAccessCollection](../Swift/RandomAccessCollection.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
-- [Sequence](../Swift/Sequence.md)
+- [RandomAccessCollection](../swift/randomaccesscollection.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sequence](../swift/sequence.md)
 
 ## See Also
 

@@ -23,7 +23,7 @@ func raiseToPower(_ noise: GKNoise)
 
 Noise values are generally in the range [-1.0, 1.0], so exponentiating some points in a noise field can result in values outside the floating-point domain. Depending on the stylistic result you’re looking for, choose your base and exponent noises carefully or use other noise operations (such as the [`clamp(lowerBound:upperBound:)`](gknoise/clamp(lowerbound:upperbound:).md) and [`remapValues(toCurveWithControlPoints:)`](gknoise/remapvalues(tocurvewithcontrolpoints:).md) methods) to conform the exponent noise to a specific range before using this method.
 
-![None](https://docs-assets.developer.apple.com/published/3043706ebd299a81cd10a5884ece1f88/media-2556399%402x.png)
+![None](/images/com.apple.gameplaykit/media-2556399@2x.png)
 
 ## Parameters
 

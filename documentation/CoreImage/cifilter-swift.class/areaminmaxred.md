@@ -30,7 +30,7 @@ This method applies the area-minimum-maximum-red filter to an image. This effect
 The area-minimum-maximum-red filter uses the following properties:
 
 - **`inputImage`**: An image with the type [`CIImage`](ciimage.md).
-- **`extent`**: A [`CGRect`](https://developer.apple.com/documentation/CoreFoundation/CGRect) that specifies the subregion of the image that you want to process.
+- **`extent`**: A [`CGRect`](https://developer.apple.com/documentation/corefoundation/cgrect) that specifies the subregion of the image that you want to process.
 
 The following code creates a filter that results in a 1 x 1 pixel image with the red and green color components populated:
 
@@ -47,7 +47,7 @@ func areaMinMaxRed(inputImage: CIImage) -> CIImage {
 }
 ```
 
-![Two images arranged horizontally. The left image contains a photograph of three hydrangea flowers with leaves in the background. A 500 x 500 pixel square in the center of the image is highlighted using an outlined box. The image on the right shows the result of applying the area min-max red filter to the 500 x 500 pixel square. The result is a 1 x 1 pixel image containing a green color. This indicates that the 100 x 100 pixel square contains colors that contain a strong red component along with colors that contain a weak red component.](https://docs-assets.developer.apple.com/published/46cac0e7bbcdb6c0c381bc0b7fd2b2fd/media-4331787%402x.png)
+![Two images arranged horizontally. The left image contains a photograph of three hydrangea flowers with leaves in the background. A 500 x 500 pixel square in the center of the image is highlighted using an outlined box. The image on the right shows the result of applying the area min-max red filter to the 500 x 500 pixel square. The result is a 1 x 1 pixel image containing a green color. This indicates that the 100 x 100 pixel square contains colors that contain a strong red component along with colors that contain a weak red component.](/images/com.apple.coreimage/media-4331787@2x.png)
 
 ## See Also
 

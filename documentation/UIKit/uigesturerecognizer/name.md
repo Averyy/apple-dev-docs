@@ -22,7 +22,7 @@ var name: String? { get set }
 
 Assign a string to this property that uniquely identifies the gesture recognizer. Use this name to distinguish one gesture recognizer from another during debugging, or to specify a relationship between gestures in SwiftUI and UIKit.
 
-For example, you can assign a SwiftUI gesture a name when you create it using [`gesture(_:name:isEnabled:)`](https://developer.apple.com/documentation/SwiftUI/View/gesture(_:name:isEnabled:)), as the following code shows:
+For example, you can assign a SwiftUI gesture a name when you create it using [`gesture(_:name:isEnabled:)`](https://developer.apple.com/documentation/swiftui/view/gesture(_:name:isenabled:)), as the following code shows:
 
 ```swift
 // SwiftUI code

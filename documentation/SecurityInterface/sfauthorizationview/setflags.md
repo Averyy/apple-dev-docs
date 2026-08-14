@@ -16,9 +16,9 @@ func setFlags(_ flags: AuthorizationFlags)
 
 #### Discussion
 
-You can use this method to change the authorization flag settings made with the [`setAuthorizationRights(_:)`](sfauthorizationview/setauthorizationrights(_:).md) method or to specify flags other than the default ([`kAuthorizationFlagDefaults`](https://developer.apple.com/documentation/Security/AuthorizationFlags/kAuthorizationFlagDefaults)) used by the [`setString(_:)`](sfauthorizationview/setstring(_:).md) method.
+You can use this method to change the authorization flag settings made with the [`setAuthorizationRights(_:)`](sfauthorizationview/setauthorizationrights(_:).md) method or to specify flags other than the default ([`kAuthorizationFlagDefaults`](https://developer.apple.com/documentation/security/authorizationflags/kauthorizationflagdefaults)) used by the [`setString(_:)`](sfauthorizationview/setstring(_:).md) method.
 
-The authorization flags are described in Authorization Options in [`Authorization Services`](https://developer.apple.com/documentation/Security/authorization-services).
+The authorization flags are described in Authorization Options in [`Authorization Services`](https://developer.apple.com/documentation/security/authorization-services).
 
 ## Parameters
 

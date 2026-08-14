@@ -29,7 +29,7 @@ A new value object that contains the edge inset information.
 
 ## See Also
 
-- [struct UIEdgeInsets](../UIKit/UIEdgeInsets.md)
+- [struct UIEdgeInsets](../uikit/uiedgeinsets.md)
   The inset distances for views.
 - [init(UIOffset: UIOffset)](nsvalue/init(uioffset:).md)
   Creates a new value object containing the specified UIKit offset structure.

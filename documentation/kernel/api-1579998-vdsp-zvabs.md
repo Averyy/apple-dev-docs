@@ -23,9 +23,9 @@ This performs the following operation:
 ## Parameters
 
 - `__A`: Single-precision complex input vector.
-- `__IA`: Address stride for  .
+- `__IA`: Address stride for `A`.
 - `__C`: Single-precision real output vector.
-- `__IC`: Address stride for  .
+- `__IC`: Address stride for `C`.
 - `__N`: The number of elements to process.
 
 

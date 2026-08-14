@@ -54,7 +54,7 @@ VStack {
 
 Changing the alignment of one view may have effects on surrounding views. Here the offset values inside a stack and its contained views is the difference of their absolute offsets.
 
-![A view showing the two emoji offset from a text element using a](https://docs-assets.developer.apple.com/published/d579a7ddd8ed368aada95b05ee12d4af/SwiftUI-View-HAlignmentGuide%402x.png)
+![A view showing the two emoji offset from a text element using a](/images/com.apple.SwiftUI/SwiftUI-View-HAlignmentGuide@2x.png)
 
 ## Parameters
 

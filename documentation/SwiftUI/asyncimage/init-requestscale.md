@@ -33,7 +33,7 @@ If you want to customize the placeholder or apply image-specific modifiers — l
 
 ## Parameters
 
-- `request`: The [`URLRequest`](https://developer.apple.com/documentation/Foundation/URLRequest) of the image to display.
+- `request`: The [`URLRequest`](https://developer.apple.com/documentation/foundation/urlrequest) of the image to display.
 - `scale`: The scale to use for the image. The default is `1`. Set a different value when loading images designed for higher resolution displays. For example, set a value of `2` for an image that you would name with the `@2x` suffix if stored in a file on disk.
 
 ## See Also

@@ -23,7 +23,7 @@ init(scale: Float = 1.0, texture: PhysicallyBasedMaterial.Texture? = nil)
 
 RealityKit automatically draws *specular highlights* for physically based materials using the values of various properties, primarily [`roughness`](physicallybasedmaterial/roughness-swift.property.md) and [`metallic`](physicallybasedmaterial/metallic-swift.property.md). Specular highlights are bright spots of reflected light that appear on shiny objects.
 
-![An illustration showing a sphere and a cube with rounded corners.](https://docs-assets.developer.apple.com/published/0b83dd2d5721a30ef708e7bf6420620b/PhysicallyBasedMaterial-Specular-swift-struct-init%28scale%3Atexture%3A%29-1%402x.png)
+![An illustration showing a sphere and a cube with rounded corners.](/images/com.apple.RealityKit/PhysicallyBasedMaterial-Specular-swift-struct-init(scale:texture:)-1@2x.png)
 
 While many real-world objects can be accurately and realistically simulated with just the core PBR properties, you can create additional realistic effects by augmenting the specular highlights.
 

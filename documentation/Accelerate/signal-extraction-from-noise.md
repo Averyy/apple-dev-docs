@@ -47,11 +47,11 @@ static func generateSignal(noiseAmount: Double,
 
 When the `noiseAmount` parameter is zero, the values that this code generates return a signal like the one in the image below:
 
-![Graphic showing smooth signal waveform.](https://docs-assets.developer.apple.com/published/c278d69f251ec53b7078ea3e005b4388/signal_time_2x.png)
+![Graphic showing smooth signal waveform.](/images/com.apple.accelerate/signal_time_2x.png)
 
 Adding noise to the signal makes it unrecognizable.
 
-![Graphic showing jagged noisy signal waveform.](https://docs-assets.developer.apple.com/published/f10da62626aaeaf1bd66fd1b1718ac58/noisy_time_2x.png)
+![Graphic showing jagged noisy signal waveform.](/images/com.apple.accelerate/noisy_time_2x.png)
 
 ##### Prepare the Dct Setups
 
@@ -82,11 +82,11 @@ forwardDCTSetup.transform(noisySignal,
 
 The following visualization of the frequency-domain data shows the component cosine parts. The `cos(phase * 1) * 1.0` component is on the left, and  `cos(phase * 16) * 1.0` is on the right:
 
-![Graphic showing frequency-domain representation of signal consisting of five peaks.](https://docs-assets.developer.apple.com/published/70516fb5ea214ae9d1e4cf8cec5ee962/denoised_frequency_2x.png)
+![Graphic showing frequency-domain representation of signal consisting of five peaks.](/images/com.apple.accelerate/denoised_frequency_2x.png)
 
 The frequency-domain visualization of the noisy signal shows the dominant frequencies with the noise spread evenly throughout the frequency range. The sample zeroes the low-magnitude data to generate the noise-free signal.
 
-![Graphic showing frequency-domain representation of noisy signal consisting of many small peaks.](https://docs-assets.developer.apple.com/published/da1fdbea6e4b06c68b30f64ab0407785/noisy_frequency_2x.png)
+![Graphic showing frequency-domain representation of noisy signal consisting of many small peaks.](/images/com.apple.accelerate/noisy_frequency_2x.png)
 
 ##### Apply a Threshold to the Frequency Domain Data
 

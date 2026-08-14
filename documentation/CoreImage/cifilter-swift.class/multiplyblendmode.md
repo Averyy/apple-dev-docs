@@ -43,7 +43,7 @@ func multiplyBlendMode(inputImage: CIImage, backgroundImage: CIImage) -> CIImage
 }
 ```
 
-![The image on the top left shows a beach with multiple palm trees and a rainbow arching across the blue sky.  The image below is a gradient image displaying a gradual color shift from purple to a dark orange. The image on the right shows the output from applying a multiply-blend mode filter. The result displays a darker image with the colors blended.](https://docs-assets.developer.apple.com/published/53f73125ebba05a4dbd91a7bbd735e2d/media-3546403%402x.png)
+![The image on the top left shows a beach with multiple palm trees and a rainbow arching across the blue sky.  The image below is a gradient image displaying a gradual color shift from purple to a dark orange. The image on the right shows the output from applying a multiply-blend mode filter. The result displays a darker image with the colors blended.](/images/com.apple.coreimage/media-3546403@2x.png)
 
 ## See Also
 

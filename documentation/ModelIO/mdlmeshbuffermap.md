@@ -21,7 +21,7 @@ class MDLMeshBufferMap
 
 #### Overview
 
-Typically, you do not create [`MDLMeshBufferMap`](mdlmeshbuffermap.md) objects directly. Instead, you use classes supporting the [`MDLMeshBuffer`](mdlmeshbuffer.md) protocol to manage mesh buffer memory shared with a rendering technology—for example, the [`MTKMeshBuffer`](https://developer.apple.com/documentation/MetalKit/MTKMeshBuffer) class for rendering with Metal. A mesh buffer object vends a [`MDLMeshBufferMap`](mdlmeshbuffermap.md) objects when you use the [`map()`](mdlmeshbuffer/map().md) method to gain temporary access to the shared memory.
+Typically, you do not create [`MDLMeshBufferMap`](mdlmeshbuffermap.md) objects directly. Instead, you use classes supporting the [`MDLMeshBuffer`](mdlmeshbuffer.md) protocol to manage mesh buffer memory shared with a rendering technology—for example, the [`MTKMeshBuffer`](https://developer.apple.com/documentation/metalkit/mtkmeshbuffer) class for rendering with Metal. A mesh buffer object vends a [`MDLMeshBufferMap`](mdlmeshbuffermap.md) objects when you use the [`map()`](mdlmeshbuffer/map().md) method to gain temporary access to the shared memory.
 
 > ❗ **Important**:  When you use a mesh buffer’s [`map()`](mdlmeshbuffer/map().md) method, the buffer remains mapped for as long as that [`MDLMeshBufferMap`](mdlmeshbuffermap.md) object exists. Mapping a buffer may impose restrictions on a system. For example, a buffer in shared GPU memory may be unavailable for rendering while mapped, causing draw calls that use the buffer to fail until the corresponding [`MDLMeshBufferMap`](mdlmeshbuffermap.md) object is deallocated.
 
@@ -37,14 +37,14 @@ Typically, you do not create [`MDLMeshBufferMap`](mdlmeshbuffermap.md) objects d
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

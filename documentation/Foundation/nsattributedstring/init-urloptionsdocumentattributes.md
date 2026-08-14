@@ -26,7 +26,7 @@ Returns an initialized attributed string object, or `nil` if the method can’t 
 
 #### Discussion
 
-Filter services can be used to convert the file into a format recognized by Cocoa. The `options` dictionary specifies how the document should be loaded and can contain the values described in [`NSAttributedStringDocumentReadingOptionKey`](https://developer.apple.com/documentation/UIKit/NSAttributedStringDocumentReadingOptionKey). If you specify the [`documentType`](nsattributedstring/documentreadingoptionkey/documenttype.md) or [`fileType`](nsattributedstring/documentreadingoptionkey/filetype.md) attribute, this method treats the data as if it is in the specified format. If you don’t specify one of these options, the method examines the document and loads it using whatever format it seems to contain.
+Filter services can be used to convert the file into a format recognized by Cocoa. The `options` dictionary specifies how the document should be loaded and can contain the values described in [`NSAttributedStringDocumentReadingOptionKey`](https://developer.apple.com/documentation/uikit/nsattributedstringdocumentreadingoptionkey). If you specify the [`documentType`](nsattributedstring/documentreadingoptionkey/documenttype.md) or [`fileType`](nsattributedstring/documentreadingoptionkey/filetype.md) attribute, this method treats the data as if it is in the specified format. If you don’t specify one of these options, the method examines the document and loads it using whatever format it seems to contain.
 
 If an error occurs, the method returns `nil` and sets the `error` parameter to an [`NSError`](nserror.md) object with information about why it couldn’t create the attributed string object.
 

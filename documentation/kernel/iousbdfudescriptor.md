@@ -16,7 +16,7 @@ typedef struct IOUSBDFUDescriptor IOUSBDFUDescriptor;
 
 #### Discussion
 
-See the USB Implementers Forum (USB-IF)  for more information.
+See the USB Implementers Forum (USB-IF) *Universal Serial Bus Power Delivery Firmware Update Specification* for more information.
 
 ## Topics
 

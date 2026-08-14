@@ -126,11 +126,11 @@ You can create as many of these objects as you have memory for. This type assume
 
 ### Conforms To
 - [Assignable](assignable.md)
-- [Copyable](../Swift/Copyable.md)
-- [Equatable](../Swift/Equatable.md)
-- [Escapable](../Swift/Escapable.md)
-- [Hashable](../Swift/Hashable.md)
-- [Identifiable](../Swift/Identifiable.md)
+- [Copyable](../swift/copyable.md)
+- [Equatable](../swift/equatable.md)
+- [Escapable](../swift/escapable.md)
+- [Hashable](../swift/hashable.md)
+- [Identifiable](../swift/identifiable.md)
 - [MergeableDocument](mergeabledocument.md)
 - [MergeablePartsContainer](mergeablepartscontainer.md)
 

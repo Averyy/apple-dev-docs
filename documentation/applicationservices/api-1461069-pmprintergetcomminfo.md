@@ -25,8 +25,8 @@ This function is typically relevant only to PostScript printers. All PostScript 
 ## Parameters
 
 - `printer`: The printer whose information you want to obtain.
-- `supportsTransparentP`: A pointer to your Boolean variable. On return,   indicates that the communication channel to the specified printer supports bytes in the range 0x0–0x1F; otherwise,  .
-- `supportsEightBitP`: A pointer to your Boolean variable. On return,   indicates that the communication channel to the specified printer supports bytes in the range 0x80–0xFF; otherwise,  .
+- `supportsTransparentP`: A pointer to your Boolean variable. On return, `true` indicates that the communication channel to the specified printer supports bytes in the range 0x0–0x1F; otherwise, `false`.
+- `supportsEightBitP`: A pointer to your Boolean variable. On return, `true` indicates that the communication channel to the specified printer supports bytes in the range 0x80–0xFF; otherwise, `false`.
 
 ## See Also
 

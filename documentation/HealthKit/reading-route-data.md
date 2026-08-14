@@ -59,7 +59,7 @@ To process the locations associated with a route:
 
 1. **Create a query object.** Provide a block to receive the locations.
 2. **Run the query.** Call the HealthKit store’s [`execute(_:)`](hkhealthstore/execute(_:).md) method to run the query.
-3. **Receive the route data.** Your block receives one or more batches of location data. When the block’s done parameter is [`true`](https://developer.apple.com/documentation/Swift/true), you have received all the data.
+3. **Receive the route data.** Your block receives one or more batches of location data. When the block’s done parameter is [`true`](https://developer.apple.com/documentation/swift/true), you have received all the data.
 4. **Optionally:** Call the HealthKit store’s [`stop(_:)`](hkhealthstore/stop(_:).md) method to stop the query from receiving additional data.
 
 ```swift
@@ -91,17 +91,17 @@ let query = HKWorkoutRouteQuery(route: myRoute) { (query, locationsOrNil, done, 
 store.execute(query)
 ```
 
-[`HKWorkoutRoute`](hkworkoutroute.md) saves a subset of [`CLLocation`](https://developer.apple.com/documentation/CoreLocation/CLLocation) properties including:
+[`HKWorkoutRoute`](hkworkoutroute.md) saves a subset of [`CLLocation`](https://developer.apple.com/documentation/corelocation/cllocation) properties including:
 
-- [`timestamp`](https://developer.apple.com/documentation/CoreLocation/CLLocation/timestamp)
-- [`coordinate`](https://developer.apple.com/documentation/CoreLocation/CLLocation/coordinate)
-- [`altitude`](https://developer.apple.com/documentation/CoreLocation/CLLocation/altitude)
-- [`speed`](https://developer.apple.com/documentation/CoreLocation/CLLocation/speed)
-- [`course`](https://developer.apple.com/documentation/CoreLocation/CLLocation/course)
-- [`horizontalAccuracy`](https://developer.apple.com/documentation/CoreLocation/CLLocation/horizontalAccuracy)
-- [`verticalAccuracy`](https://developer.apple.com/documentation/CoreLocation/CLLocation/verticalAccuracy)
-- [`speedAccuracy`](https://developer.apple.com/documentation/CoreLocation/CLLocation/speedAccuracy)
-- [`courseAccuracy`](https://developer.apple.com/documentation/CoreLocation/CLLocation/courseAccuracy)
+- [`timestamp`](https://developer.apple.com/documentation/corelocation/cllocation/timestamp)
+- [`coordinate`](https://developer.apple.com/documentation/corelocation/cllocation/coordinate)
+- [`altitude`](https://developer.apple.com/documentation/corelocation/cllocation/altitude)
+- [`speed`](https://developer.apple.com/documentation/corelocation/cllocation/speed)
+- [`course`](https://developer.apple.com/documentation/corelocation/cllocation/course)
+- [`horizontalAccuracy`](https://developer.apple.com/documentation/corelocation/cllocation/horizontalaccuracy)
+- [`verticalAccuracy`](https://developer.apple.com/documentation/corelocation/cllocation/verticalaccuracy)
+- [`speedAccuracy`](https://developer.apple.com/documentation/corelocation/cllocation/speedaccuracy)
+- [`courseAccuracy`](https://developer.apple.com/documentation/corelocation/cllocation/courseaccuracy)
 
 > **Note**:  Locations from the HealthKit store are accurate within 50 meters, but they may need additional smoothing before you can use them. For example, to produce clean lines when it’s plotting the route on a map.
 

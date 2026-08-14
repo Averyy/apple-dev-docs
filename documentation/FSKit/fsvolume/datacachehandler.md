@@ -78,7 +78,7 @@ Transitioning to a less permissive coherency type is considered a â€œdowngradeâ€
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

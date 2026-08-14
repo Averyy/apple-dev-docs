@@ -17,7 +17,7 @@ The Advanced Commerce API relies on up to four generic product identifiers that 
 Set up your server to do the following:
 
 - Support Transport Layer Security (TLS) protocol 1.2 or later.
-- Receive [`App Store Server Notifications V2`](https://developer.apple.com/documentation/AppStoreServerNotifications/App-Store-Server-Notifications-V2) to get up-to-date transaction data. For setup information, see [`Enabling App Store Server Notifications`](https://developer.apple.com/documentation/AppStoreServerNotifications/enabling-app-store-server-notifications).
+- Receive [`App Store Server Notifications V2`](https://developer.apple.com/documentation/appstoreservernotifications/app-store-server-notifications-v2) to get up-to-date transaction data. For setup information, see [`Enabling App Store Server Notifications`](https://developer.apple.com/documentation/appstoreservernotifications/enabling-app-store-server-notifications).
 
 ##### Create a Deep Link to Manage Subscriptions in Your App
 
@@ -33,7 +33,7 @@ Define your SKUs using the best practices for naming and design. For more inform
 
 ##### Test Your App
 
-When you implement the Advanced Commerce API in your app and on your server, you can test in the sandbox environment before sending it to App Review. For more information, see [`Testing In-App Purchases with sandbox`](https://developer.apple.com/documentation/StoreKit/testing-in-app-purchases-with-sandbox).
+When you implement the Advanced Commerce API in your app and on your server, you can test in the sandbox environment before sending it to App Review. For more information, see [`Testing In-App Purchases with sandbox`](https://developer.apple.com/documentation/storekit/testing-in-app-purchases-with-sandbox).
 
 ##### Set Up an Image for the Payment Sheet to Display
 

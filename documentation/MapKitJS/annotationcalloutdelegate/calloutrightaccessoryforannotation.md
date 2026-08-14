@@ -20,7 +20,7 @@ This method returns a DOM element to display as the right accessory.
 
 #### Discussion
 
-You can use this method to provide a custom accessory to the right side of the callout content area. It works similarly to [`calloutLeftAccessoryForAnnotation(annotation)`](annotationcalloutdelegate/calloutleftaccessoryforannotation.md).
+You can use this method to provide a custom accessory to the right side of the callout content area. It works similarly to [`calloutLeftAccessoryForAnnotation()`](annotationcalloutdelegate/calloutleftaccessoryforannotation.md).
 
 ## Parameters
 

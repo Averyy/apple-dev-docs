@@ -16,7 +16,7 @@ func layerContents(forContentsScale layerContentsScale: CGFloat) -> Any
 
 #### Return Value
 
-A object that you can assign to the [`contents`](https://developer.apple.com/documentation/QuartzCore/CALayer/contents) property of a [`CALayer`](https://developer.apple.com/documentation/QuartzCore/CALayer) object. This object contains the image data from the current image optimized for the specified scale factor.
+A object that you can assign to the [`contents`](https://developer.apple.com/documentation/quartzcore/calayer/contents) property of a [`CALayer`](https://developer.apple.com/documentation/quartzcore/calayer) object. This object contains the image data from the current image optimized for the specified scale factor.
 
 #### Discussion
 

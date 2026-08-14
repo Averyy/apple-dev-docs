@@ -39,7 +39,7 @@ If you omit needed intermediate certificates from the `certificates` parameter, 
 
 - `certificates`: The certificate to be verified, plus any other certificates you think might be useful for verifying the certificate. The certificate to be verified must be the first in the array. If you want to specify only one certificate, you can pass a [`SecCertificate`](seccertificate.md) object; otherwise, pass an array of [`SecCertificate`](seccertificate.md) objects.
 - `policies`: References to one or more policies to be evaluated. You can pass a single [`SecPolicy`](secpolicy.md) object, or an array of one or more [`SecPolicy`](secpolicy.md) objects. If you pass in multiple policies, all policies must verify for the certificate chain to be considered valid. You typically use one of the standard policies, like the one returned by [`SecPolicyCreateBasicX509()`](secpolicycreatebasicx509().md).
-- `trust`: On return, points to the newly created trust management object. In Objective-C, call the [`CFRelease`](https://developer.apple.com/documentation/CoreFoundation/CFRelease) function to release this object when you are finished with it.
+- `trust`: On return, points to the newly created trust management object. In Objective-C, call the [`CFRelease`](https://developer.apple.com/documentation/corefoundation/cfrelease) function to release this object when you are finished with it.
 
 
 ---

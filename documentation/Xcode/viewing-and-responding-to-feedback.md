@@ -26,7 +26,7 @@ Xcode shows the list of available apps organized by platform. The feedback for t
 
 The items in the grid show previews of feedback, including screenshots when available, and a summary of the feedback text. An inspector to the right of the grid shows the details for the selected report.
 
-![A screenshot of the Feedback organizer with the Feedback option selected in the Reports section of the sidebar. The app selection pop-up button appears at the top of the sidebar. The center of the organizer displays a grid of feedback previews with one selected and a filter bar at the top for filtering reports. The inspector to the right of the organizer displays details about the selected feedback.](https://docs-assets.developer.apple.com/published/d7cb0ec11b756c21e666d519998a9c2d/viewing-and-responding-to-feedback-1%402x.png)
+![A screenshot of the Feedback organizer with the Feedback option selected in the Reports section of the sidebar. The app selection pop-up button appears at the top of the sidebar. The center of the organizer displays a grid of feedback previews with one selected and a filter bar at the top for filtering reports. The inspector to the right of the organizer displays details about the selected feedback.](/images/com.apple.Xcode/viewing-and-responding-to-feedback-1@2x.png)
 
 Double-click a preview to display the report’s complete text and larger versions of any attached screenshots.
 
@@ -40,7 +40,7 @@ To share a link to a report with another member of your development team, select
 
 To rename reports to help keep them organized and to add notes, use the controls at the bottom of the inspector. Use the Mark as Resolved button in the inspector, or the checkbox next to each preview, to keep track of issues as you resolve them.
 
-![A screenshot of the Feedback organizer with the Feedback option selected in the Reports section of the sidebar. The center of the organizer displays the text of the feedback with one large screenshot below it. Below the large screenshot is a series of screenshot thumbnails. At the top of the inspector to the right is a button for emailing the tester. At the bottom of the inspector are controls for renaming, adding notes, and marking the feedback as resolved.](https://docs-assets.developer.apple.com/published/79bf99da60cc6d50edcd0af7d156dd34/viewing-and-responding-to-feedback-2%402x.png)
+![A screenshot of the Feedback organizer with the Feedback option selected in the Reports section of the sidebar. The center of the organizer displays the text of the feedback with one large screenshot below it. Below the large screenshot is a series of screenshot thumbnails. At the top of the inspector to the right is a button for emailing the tester. At the bottom of the inspector are controls for renaming, adding notes, and marking the feedback as resolved.](/images/com.apple.Xcode/viewing-and-responding-to-feedback-2@2x.png)
 
 
 ---

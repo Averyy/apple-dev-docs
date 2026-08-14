@@ -17,7 +17,7 @@ let NSTypeIdentifierDateText: String
 
 #### Discussion
 
-UTI subtype for [`date`](https://developer.apple.com/documentation/Foundation/NSTextCheckingResult/date), `com.apple.structured-text.date`.
+UTI subtype for [`date`](https://developer.apple.com/documentation/foundation/nstextcheckingresult/date), `com.apple.structured-text.date`.
 
 ## See Also
 

@@ -23,7 +23,7 @@ var location: XCUILocation? { get set }
 
 #### Discussion
 
-Use this property to provide a proxy location to simulate longitude, latitude, and course information for the device. If you don’t provide a proxy location, a test uses the physical location of the device that [`Core Location`](https://developer.apple.com/documentation/CoreLocation) provides. The example below sets the device’s proxy location:
+Use this property to provide a proxy location to simulate longitude, latitude, and course information for the device. If you don’t provide a proxy location, a test uses the physical location of the device that [`Core Location`](https://developer.apple.com/documentation/corelocation) provides. The example below sets the device’s proxy location:
 
 ```swift
 // A device location that wraps a CLLocation object from Core Location.

@@ -22,7 +22,7 @@ func stroke(_ rect: CGRect, blendMode: CGBlendMode)
 
 Before calling this method, select the stroke color with the [`setStroke()`](uicolor/setstroke().md) method on an instance of [`UIColor`](uicolor.md).
 
-The blend mode specifies how the new value for a given pixel is calculated, given the existing pixel value and the currently selected fill color. For more information on the blend modes available, see [`CGBlendMode`](https://developer.apple.com/documentation/CoreGraphics/CGBlendMode).
+The blend mode specifies how the new value for a given pixel is calculated, given the existing pixel value and the currently selected fill color. For more information on the blend modes available, see [`CGBlendMode`](https://developer.apple.com/documentation/coregraphics/cgblendmode).
 
 ## Parameters
 

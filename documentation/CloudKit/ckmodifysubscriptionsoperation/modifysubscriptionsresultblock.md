@@ -24,7 +24,7 @@ var modifySubscriptionsResultBlock: ((Result<Void, any Error>) -> Void)? { get s
 
 The closure returns no value and takes the following parameter:
 
-- A [`Result`](https://developer.apple.com/documentation/Swift/Result) that contains either: - A successful `Result`, or
+- A [`Result`](https://developer.apple.com/documentation/swift/result) that contains either: - A successful `Result`, or
 - An error that contains information about a problem encountered modifying the subscriptions.
 
 The closure executes only once, and represents your final opportunity to process the operation’s results. The closure executes serially with respect to the other closures of the operation.

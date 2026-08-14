@@ -28,7 +28,7 @@ func vImageBuffer_InitForCopyFromCVPixelBuffer(_ buffers: UnsafeMutablePointer<v
 
 The vImage library represents multiple plane Core Video pixel buffers as individual vImage buffers. Call [`vImageConverter_GetNumberOfSourceBuffers(_:)`](vimageconverter_getnumberofsourcebuffers(_:).md) to instantiate the correct number of source buffers. Use this function to initialize the vImage buffers that you pass as the sources to a Core-Video-to-Core-Graphics [`vImageConverter`](vimageconverter.md) instance.
 
-The following shows the code for creating the three source buffers required to represent a [`kCVPixelFormatType_420YpCbCr8Planar`](https://developer.apple.com/documentation/CoreVideo/kCVPixelFormatType_420YpCbCr8Planar) pixel buffer. On return of [`vImageBuffer_InitForCopyFromCVPixelBuffer(_:_:_:_:)`](vimagebuffer_initforcopyfromcvpixelbuffer(_:_:_:_:).md), the three vImage buffers contain the luminance, Cb, and Cr image data.
+The following shows the code for creating the three source buffers required to represent a [`kCVPixelFormatType_420YpCbCr8Planar`](https://developer.apple.com/documentation/corevideo/kcvpixelformattype_420ypcbcr8planar) pixel buffer. On return of [`vImageBuffer_InitForCopyFromCVPixelBuffer(_:_:_:_:)`](vimagebuffer_initforcopyfromcvpixelbuffer(_:_:_:_:).md), the three vImage buffers contain the luminance, Cb, and Cr image data.
 
 ```swift
 let colorSpace = CGColorSpaceCreateDeviceRGB()
@@ -101,8 +101,8 @@ CVPixelBufferUnlockBaseAddress(cvPixelBuffer,
 
 - `buffers`: An array of [`vImage_Buffer`](vimage_buffer.md) structures. The number of source buffers is the return value of [`vImageConverter_GetNumberOfSourceBuffers(_:)`](vimageconverter_getnumberofsourcebuffers(_:).md).
 - `converter`: A Core-Video-to-Core-Graphics [`vImageConverter`](vimageconverter.md) instance.
-- `pixelBuffer`: A locked [`CVPixelBuffer`](https://developer.apple.com/documentation/CoreVideo/CVPixelBuffer) instance.
-- `flags`: The options to use when performing this operation. > ❗ **Important**:  Always pass the [`kvImageNoAllocate`](kvimagenoallocate.md) flag to this function. The [`kvImageNoAllocate`](kvimagenoallocate.md) flag instructs the function to initialize the buffers to read directly from a locked [`CVPixelBuffer`](https://developer.apple.com/documentation/CoreVideo/CVPixelBuffer) instance. All operations that use the buffers must be between calls to the [`CVPixelBufferLockBaseAddress(_:_:)`](https://developer.apple.com/documentation/CoreVideo/CVPixelBufferLockBaseAddress(_:_:)) and [`CVPixelBufferUnlockBaseAddress(_:_:)`](https://developer.apple.com/documentation/CoreVideo/CVPixelBufferUnlockBaseAddress(_:_:)) functions.
+- `pixelBuffer`: A locked [`CVPixelBuffer`](https://developer.apple.com/documentation/corevideo/cvpixelbuffer) instance.
+- `flags`: The options to use when performing this operation. > ❗ **Important**:  Always pass the [`kvImageNoAllocate`](kvimagenoallocate.md) flag to this function. The [`kvImageNoAllocate`](kvimagenoallocate.md) flag instructs the function to initialize the buffers to read directly from a locked [`CVPixelBuffer`](https://developer.apple.com/documentation/corevideo/cvpixelbuffer) instance. All operations that use the buffers must be between calls to the [`CVPixelBufferLockBaseAddress(_:_:)`](https://developer.apple.com/documentation/corevideo/cvpixelbufferlockbaseaddress(_:_:)) and [`CVPixelBufferUnlockBaseAddress(_:_:)`](https://developer.apple.com/documentation/corevideo/cvpixelbufferunlockbaseaddress(_:_:)) functions.
 
 ## See Also
 

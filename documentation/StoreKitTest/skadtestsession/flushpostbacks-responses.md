@@ -26,8 +26,8 @@ To perform tests with postbacks, do the following:
 
 1. Create a test postback using [`SKAdTestPostback`](skadtestpostback.md).
 2. Add the test postbacks to the test session by calling [`setPostbacks(_:)`](skadtestsession/setpostbacks(_:).md).
-3. In the code representing the advertised app, register the test postback by calling [`updatePostbackConversionValue(_:completionHandler:)`](https://developer.apple.com/documentation/StoreKit/SKAdNetwork/updatePostbackConversionValue(_:completionHandler:))or [`registerAppForAdNetworkAttribution()`](https://developer.apple.com/documentation/StoreKit/SKAdNetwork/registerAppForAdNetworkAttribution()).
-4. Optionally, update the conversion value by calling [`updatePostbackConversionValue(_:completionHandler:)`](https://developer.apple.com/documentation/StoreKit/SKAdNetwork/updatePostbackConversionValue(_:completionHandler:)).
+3. In the code representing the advertised app, register the test postback by calling [`updatePostbackConversionValue(_:completionHandler:)`](https://developer.apple.com/documentation/storekit/skadnetwork/updatepostbackconversionvalue(_:completionhandler:))or [`registerAppForAdNetworkAttribution()`](https://developer.apple.com/documentation/storekit/skadnetwork/registerappforadnetworkattribution()).
+4. Optionally, update the conversion value by calling [`updatePostbackConversionValue(_:completionHandler:)`](https://developer.apple.com/documentation/storekit/skadnetwork/updatepostbackconversionvalue(_:completionhandler:)).
 5. Call [`flushPostbacks(responses:)`](skadtestsession/flushpostbacks(responses:).md) when you’re done updating the conversion value and are ready to test receiving postbacks on your server.
 
 ## Parameters

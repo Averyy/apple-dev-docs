@@ -19,7 +19,7 @@ class let touchBarUserGroupTemplateName: String
 
 #### Discussion
 
-![Template image for user group](https://docs-assets.developer.apple.com/published/f057632dcf5900b8b3c37075ee391c78/media-2793481%402x.png)
+![Template image for user group](/images/com.apple.appkit/media-2793481@2x.png)
 
 Touch Bar template images are exclusively for use in [`NSTouchBarItem`](nstouchbaritem.md) objects and not in onscreen windows.
 

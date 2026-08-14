@@ -6,7 +6,7 @@ Analyze data about matchmaking rules.
 
 #### Overview
 
-Use the Metrics APIs to diagnose performance and other issues with matchmaking rules. For more information, see [`Troubleshooting matchmaking rules using metrics`](https://developer.apple.com/documentation/GameKit/troubleshooting-matchmaking-rules-using-metrics) and [`Testing rule sets with player traffic using metrics`](https://developer.apple.com/documentation/GameKit/testing-rule-sets-with-player-traffic-using-metrics).
+Use the Metrics APIs to diagnose performance and other issues with matchmaking rules. For more information, see [`Troubleshooting matchmaking rules using metrics`](https://developer.apple.com/documentation/gamekit/troubleshooting-matchmaking-rules-using-metrics) and [`Testing rule sets with player traffic using metrics`](https://developer.apple.com/documentation/gamekit/testing-rule-sets-with-player-traffic-using-metrics).
 
 ## Topics
 

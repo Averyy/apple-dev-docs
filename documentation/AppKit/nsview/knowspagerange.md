@@ -16,15 +16,15 @@ func knowsPageRange(_ range: NSRangePointer) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/Swift/true) if the view handles page boundaries; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
+[`true`](https://developer.apple.com/documentation/swift/true) if the view handles page boundaries; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
 
 #### Discussion
 
-Returns [`false`](https://developer.apple.com/documentation/Swift/false) if the view uses the default auto-pagination mechanism. The default implementation returns [`false`](https://developer.apple.com/documentation/Swift/false). Override this method if your class handles page boundaries.
+Returns [`false`](https://developer.apple.com/documentation/swift/false) if the view uses the default auto-pagination mechanism. The default implementation returns [`false`](https://developer.apple.com/documentation/swift/false). Override this method if your class handles page boundaries.
 
 ## Parameters
 
-- `range`: On return, holds the page range if [`true`](https://developer.apple.com/documentation/Swift/true) is returned directly. Page numbers are one-based—that is pages run from one to *N*.
+- `range`: On return, holds the page range if [`true`](https://developer.apple.com/documentation/swift/true) is returned directly. Page numbers are one-based—that is pages run from one to *N*.
 
 ## See Also
 

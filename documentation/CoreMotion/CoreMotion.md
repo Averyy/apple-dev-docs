@@ -21,12 +21,12 @@ The services of this framework provide access to motion data either as raw or pr
 
 Not all services are available on all devices, and some services might be unavailable even on devices with the required hardware. For example, many Core Motion services are available to visionOS apps, but those services aren’t available to compatible iPad and iPhone apps running in visionOS. Before you try to use any motion-related services, check the availability of those services using a [`CMMotionManager`](cmmotionmanager.md) object.
 
-> ❗ **Important**:  An iOS app must include usage description keys in its `Info.plist` file for the types of data it needs. If these keys aren’t present, the app crashes when you try to access the corresponding service. To access motion and fitness data, include [`NSMotionUsageDescription`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSMotionUsageDescription). To access the fall-detection service, include [`NSFallDetectionUsageDescription`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSFallDetectionUsageDescription).
+> ❗ **Important**:  An iOS app must include usage description keys in its `Info.plist` file for the types of data it needs. If these keys aren’t present, the app crashes when you try to access the corresponding service. To access motion and fitness data, include [`NSMotionUsageDescription`](https://developer.apple.com/documentation/bundleresources/information-property-list/nsmotionusagedescription). To access the fall-detection service, include [`NSFallDetectionUsageDescription`](https://developer.apple.com/documentation/bundleresources/information-property-list/nsfalldetectionusagedescription).
 
 ## Topics
 
 ### Essentials
-- [Core Motion updates](../Updates/CoreMotion.md)
+- [Core Motion updates](../updates/coremotion.md)
   Learn about important changes to Core Motion.
 - [class CMMotionManager](cmmotionmanager.md)
   The object for starting and managing motion services.
@@ -127,7 +127,7 @@ Not all services are available on all devices, and some services might be unavai
   A delegate that receives information about fall detection events and authorization status changes.
 - [class CMFallDetectionEvent](cmfalldetectionevent.md)
   An object that contains data about a fall detection event.
-- [NSFallDetectionUsageDescription](../BundleResources/Information-Property-List/NSFallDetectionUsageDescription.md)
+- [NSFallDetectionUsageDescription](../bundleresources/information-property-list/nsfalldetectionusagedescription.md)
   A message to the user that explains the app’s request for permission to access fall detection event data.
 ### Historical data
 - [class CMBatchedSensorManager](cmbatchedsensormanager.md)

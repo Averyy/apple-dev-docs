@@ -35,8 +35,8 @@ A [`CAMetalLayer`](cametallayer.md) instance owns any instance that implements t
 ## Relationships
 
 ### Inherits From
-- [MTLDrawable](../Metal/MTLDrawable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [MTLDrawable](../metal/mtldrawable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

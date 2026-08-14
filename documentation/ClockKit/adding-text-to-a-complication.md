@@ -6,7 +6,7 @@ Use text in SwiftUI complications.
 
 #### Overview
 
-When creating ClockKit templates with SwiftUI views, [`Text`](https://developer.apple.com/documentation/SwiftUI/Text) views adapt their appearance based on the template’s complication family. The system automatically sets the font and size to match other templates in the same family.
+When creating ClockKit templates with SwiftUI views, [`Text`](https://developer.apple.com/documentation/swiftui/text) views adapt their appearance based on the template’s complication family. The system automatically sets the font and size to match other templates in the same family.
 
 ##### Match the Expected Font Size
 
@@ -14,7 +14,7 @@ Use the default font size as a guide for the type of information your complicati
 
 ##### Use Text Formatters
 
-When displaying dates and times, use [`Text.DateStyle`](https://developer.apple.com/documentation/SwiftUI/Text/DateStyle) to create localized strings. [`Text.DateStyle`](https://developer.apple.com/documentation/SwiftUI/Text/DateStyle) also defines formatters such as [`relative`](https://developer.apple.com/documentation/SwiftUI/Text/DateStyle/relative), [`offset`](https://developer.apple.com/documentation/SwiftUI/Text/DateStyle/offset), and [`timer`](https://developer.apple.com/documentation/SwiftUI/Text/DateStyle/timer). ClockKit automatically updates information in these formatters, and you can use these formatters when instantiating a [`Text`](https://developer.apple.com/documentation/SwiftUI/Text) view.
+When displaying dates and times, use [`Text.DateStyle`](https://developer.apple.com/documentation/swiftui/text/datestyle) to create localized strings. [`Text.DateStyle`](https://developer.apple.com/documentation/swiftui/text/datestyle) also defines formatters such as [`relative`](https://developer.apple.com/documentation/swiftui/text/datestyle/relative), [`offset`](https://developer.apple.com/documentation/swiftui/text/datestyle/offset), and [`timer`](https://developer.apple.com/documentation/swiftui/text/datestyle/timer). ClockKit automatically updates information in these formatters, and you can use these formatters when instantiating a [`Text`](https://developer.apple.com/documentation/swiftui/text) view.
 
 ```swift
 Text(myEvent.startDate, style: .timer)
@@ -26,7 +26,7 @@ Or use them inline in an interpolated string.
 Text("\(myEvent.name) starts in \(myEvent.startDate, style: .timer)")
 ```
 
-![A preview of a large rectangular complication with a text view that displays a timer that automatically counts down to the next event.](https://docs-assets.developer.apple.com/published/2aeb07ea3989a2e71c8c6879a28a474d/media-3666648%402x.png)
+![A preview of a large rectangular complication with a text view that displays a timer that automatically counts down to the next event.](/images/com.apple.clockkit/media-3666648@2x.png)
 
 ## See Also
 

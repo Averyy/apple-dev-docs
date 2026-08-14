@@ -36,7 +36,7 @@ Use this protocol in addition to another role-based protocol. See [`Custom Contr
 
 ### Inherits From
 - [NSAccessibilityElementProtocol](nsaccessibilityelementprotocol.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 
 ---

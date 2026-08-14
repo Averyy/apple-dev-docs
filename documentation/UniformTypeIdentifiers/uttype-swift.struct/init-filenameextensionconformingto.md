@@ -32,7 +32,7 @@ UTType(tag: filenameExtension,
        conformingTo: supertype)
 ```
 
-To get the type of a file on disk, use [`contentType`](https://developer.apple.com/documentation/Foundation/URLResourceValues/contentType).
+To get the type of a file on disk, use [`contentType`](https://developer.apple.com/documentation/foundation/urlresourcevalues/contenttype).
 
 > ❗ **Important**:  You can’t always derive the type of a file system item based solely on its filename extension.
 

@@ -21,7 +21,7 @@ protocol UITextSelectionHandleView : UICoordinateSpace
 
 #### Overview
 
-Adopt the [`UITextSelectionHandleView`](uitextselectionhandleview.md) protocol in a custom view you use to draw text-selection handles in one of your text views. Use your custom view in conjunction with a [`UITextSelectionDisplayInteraction`](uitextselectiondisplayinteraction.md) object to apply your custom selection UI to one of your text views. This protocol provides the preferred frame for the selection handle, and you provide details about the handle back to the system. Use [`CALayer`](https://developer.apple.com/documentation/QuartzCore/CALayer) objects or your view’s [`draw(_:)`](uiview/draw(_:).md) method to draw the handles.
+Adopt the [`UITextSelectionHandleView`](uitextselectionhandleview.md) protocol in a custom view you use to draw text-selection handles in one of your text views. Use your custom view in conjunction with a [`UITextSelectionDisplayInteraction`](uitextselectiondisplayinteraction.md) object to apply your custom selection UI to one of your text views. This protocol provides the preferred frame for the selection handle, and you provide details about the handle back to the system. Use [`CALayer`](https://developer.apple.com/documentation/quartzcore/calayer) objects or your view’s [`draw(_:)`](uiview/draw(_:).md) method to draw the handles.
 
 After adopting this protocol in your custom view, create exactly two instances and assign them to the [`handleViews`](uitextselectiondisplayinteraction/handleviews.md) property of the interaction object you attached to your text view. Configure one instance as the leading selection handle, and configure the other instance as the trailing selection handle.
 
@@ -41,7 +41,7 @@ After adopting this protocol in your custom view, create exactly two instances a
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 - [UICoordinateSpace](uicoordinatespace.md)
 
 ## See Also

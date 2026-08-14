@@ -28,7 +28,7 @@ When your app is uninstalled, iOS removes the configurations of all networks you
 
 Hotspot Configuration Manager errors are listed in [`NEHotspotConfigurationError`](nehotspotconfigurationerror.md).
 
-> ❗ **Important**:  To use the [`NEHotspotConfigurationManager`](nehotspotconfigurationmanager.md) class, you must enable the Hotspot Configuration capability in Xcode. For more information, see [`Hotspot Configuration Entitlement`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.networking.HotspotConfiguration).
+> ❗ **Important**:  To use the [`NEHotspotConfigurationManager`](nehotspotconfigurationmanager.md) class, you must enable the Hotspot Configuration capability in Xcode. For more information, see [`Hotspot Configuration Entitlement`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.networking.hotspotconfiguration).
 
 ## Topics
 
@@ -51,7 +51,7 @@ Hotspot Configuration Manager errors are listed in [`NEHotspotConfigurationError
 - [enum NEHotspotConfigurationError](nehotspotconfigurationerror.md)
   Error values returned by hotspot configuration manager methods.
 ### Entitlements
-- [Hotspot Configuration Entitlement](../BundleResources/Entitlements/com.apple.developer.networking.HotspotConfiguration.md)
+- [Hotspot Configuration Entitlement](../bundleresources/entitlements/com.apple.developer.networking.hotspotconfiguration.md)
   A Boolean value indicating whether your app can use the hotspot manager to configure Wi-Fi networks.
 ### Instance Methods
 - [func joinAccessoryHotspot(ASAccessory, passphrase: String, completionHandler: (((any Error)?) -> Void)?)](nehotspotconfigurationmanager/joinaccessoryhotspot(_:passphrase:completionhandler:).md)
@@ -60,14 +60,14 @@ Hotspot Configuration Manager errors are listed in [`NEHotspotConfigurationError
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

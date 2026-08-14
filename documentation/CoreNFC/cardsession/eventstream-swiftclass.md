@@ -28,7 +28,7 @@ Get an asychronous sequence of this type from the card session’s [`eventStream
 ## Relationships
 
 ### Conforms To
-- [AsyncSequence](../Swift/AsyncSequence.md)
+- [AsyncSequence](../swift/asyncsequence.md)
 
 ## See Also
 

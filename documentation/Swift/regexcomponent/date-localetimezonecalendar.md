@@ -22,15 +22,15 @@ static func date(_ style: Date.FormatStyle.DateStyle, locale: Locale, timeZone: 
 
 #### Return Value
 
-A `RegexComponent` that matches date substrings as Foundation [`Date`](https://developer.apple.com/documentation/Foundation/Date) instances.
+A `RegexComponent` that matches date substrings as Foundation [`Date`](https://developer.apple.com/documentation/foundation/date) instances.
 
 #### Discussion
 
-This method matches date substrings in accordance with the formatting of Foundation’s [`Date.FormatStyle`](https://developer.apple.com/documentation/Foundation/Date/FormatStyle).
+This method matches date substrings in accordance with the formatting of Foundation’s [`Date.FormatStyle`](https://developer.apple.com/documentation/foundation/date/formatstyle).
 
 If a time value follows the date substring, the matcher ignores it, treating it as any other character sequence. To match date and time substrings, use [`dateTime(date:time:locale:timeZone:calendar:)`](regexcomponent/datetime(date:time:locale:timezone:calendar:).md).
 
-The following example creates a [`Regex`](regex.md) that matches a date formatted with the [`numeric`](https://developer.apple.com/documentation/Foundation/Date/FormatStyle/DateStyle/numeric) style in the `en_US` locale. It then matches this regex against a source string containing a date with this format, some whitespace, a substring, more whitespace, and a currency value.
+The following example creates a [`Regex`](regex.md) that matches a date formatted with the [`numeric`](https://developer.apple.com/documentation/foundation/date/formatstyle/datestyle/numeric) style in the `en_US` locale. It then matches this regex against a source string containing a date with this format, some whitespace, a substring, more whitespace, and a currency value.
 
 ```swift
 let source = "7/31/2022  Lemon-lime slushie      $1.99"
@@ -47,9 +47,9 @@ let date = match.1 // date == Jul 31, 2022 at 12:00 AM PST
 
 ## Parameters
 
-- `style`: A [`Date.FormatStyle.DateStyle`](https://developer.apple.com/documentation/Foundation/Date/FormatStyle/DateStyle) to use when matching date substrings.
+- `style`: A [`Date.FormatStyle.DateStyle`](https://developer.apple.com/documentation/foundation/date/formatstyle/datestyle) to use when matching date substrings.
 - `locale`: The locale to use when matching date substrings. Matching uses this locale to evaluate the order of date components. It also uses the locale’s language for date format styles that use words.
-- `timeZone`: The time zone to use when returning a captured [`Date`](https://developer.apple.com/documentation/Foundation/Date). The returned date’s time value is `00:00:00` in this time zone.
+- `timeZone`: The time zone to use when returning a captured [`Date`](https://developer.apple.com/documentation/foundation/date). The returned date’s time value is `00:00:00` in this time zone.
 - `calendar`: The calendar to use when matching date substrings. If `nil`, matching uses the default calendar of the specified `locale`.
 
 ## See Also

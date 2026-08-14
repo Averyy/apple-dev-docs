@@ -20,7 +20,7 @@ let TVUserActivityTypeBrowsingChannelGuide: String
 
 #### Discussion
 
-Support this [`NSUserActivity`](https://developer.apple.com/documentation/Foundation/NSUserActivity) activity type in your app to display a channel guide or content browser when the user presses the Guide button on a remote. For more details on implementing a channel guide, see [`Providing Channel Navigation`](providing-channel-navigation.md).
+Support this [`NSUserActivity`](https://developer.apple.com/documentation/foundation/nsuseractivity) activity type in your app to display a channel guide or content browser when the user presses the Guide button on a remote. For more details on implementing a channel guide, see [`Providing Channel Navigation`](providing-channel-navigation.md).
 
 ## See Also
 

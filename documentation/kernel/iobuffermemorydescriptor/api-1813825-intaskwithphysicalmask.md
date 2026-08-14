@@ -26,7 +26,7 @@ Added in OS X 10.5, this method allocates a memory buffer with a given size and 
 ## Parameters
 
 - `inTask`: The task the buffer will be mapped in. Pass NULL to create memory unmapped in any task (eg. for use as a DMA buffer).
-- `options`: kIOMapWriteCombineCache - allocate memory with writecombined cache setting.
+- `options`: Options for the allocation: kIODirectionOut, kIODirectionIn - set the direction of the I/O transfer. kIOMemoryPhysicallyContiguous - pass to request memory be physically contiguous. This option is heavily discouraged. The request may fail if memory is fragmented, may cause large amounts of paging activity, and may take a very long time to execute. kIOMemoryKernelUserShared - pass to request memory that will be mapped into both the kernel and client applications. kIOMapInhibitCache - allocate memory with inhibited cache setting. kIOMapWriteThruCache - allocate memory with writethru cache setting. kIOMapCopybackCache - allocate memory with copyback cache setting. kIOMapWriteCombineCache - allocate memory with writecombined cache setting.
 - `capacity`: The number of bytes to allocate.
 - `mask`: The buffer will be allocated with pages such that physical addresses will only have bits set present in physicalMask. For example, pass 0x00000000FFFFFFFFULL for a buffer to be accessed by hardware that has 32 address bits.
 
@@ -50,7 +50,7 @@ Added in OS X 10.5, this method allocates a memory buffer with a given size and 
   Creates a buffer memory descriptor and allocates enough bytes to meet the specified capacity.
 - [+ withCopy](iobuffermemorydescriptor/3074961-withcopy.md)
   Creates a memory buffer with memory descriptor for that buffer.
-- [- free](../driverkit/iobuffermemorydescriptor/free.md)
+- [- free](iobuffermemorydescriptor/3180456-free.md)
   Performs any final cleanup for the memory buffer descriptor object.
 
 

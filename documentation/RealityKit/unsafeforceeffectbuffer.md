@@ -41,7 +41,7 @@ This struct is a transient buffer view of underlying data, and is only available
 ## Relationships
 
 ### Conforms To
-- [Sequence](../Swift/Sequence.md)
+- [Sequence](../swift/sequence.md)
 
 ## See Also
 

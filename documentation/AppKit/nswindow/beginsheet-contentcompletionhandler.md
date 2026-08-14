@@ -21,12 +21,12 @@ A discardable [`NSWindow.HostingSheetRepresentation`](nswindow/hostingsheetrepre
 
 #### Discussion
 
-The presented view supports the same features as when used in the [`sheet(isPresented:onDismiss:content:)`](https://developer.apple.com/documentation/SwiftUI/View/sheet(isPresented:onDismiss:content:)) or [`sheet(item:onDismiss:content:)`](https://developer.apple.com/documentation/SwiftUI/View/sheet(item:onDismiss:content:)) view modifier, such as:
+The presented view supports the same features as when used in the [`sheet(isPresented:onDismiss:content:)`](https://developer.apple.com/documentation/swiftui/view/sheet(ispresented:ondismiss:content:)) or [`sheet(item:onDismiss:content:)`](https://developer.apple.com/documentation/swiftui/view/sheet(item:ondismiss:content:)) view modifier, such as:
 
-- Automatic dismissal with the Escape key and disabling interactive dismissal with [`interactiveDismissDisabled(_:)`](https://developer.apple.com/documentation/SwiftUI/View/interactiveDismissDisabled(_:))
-- Use of [`dismiss`](https://developer.apple.com/documentation/SwiftUI/EnvironmentValues/dismiss) to dismiss the sheet
-- Sheet sizing using [`presentationSizing(_:)`](https://developer.apple.com/documentation/SwiftUI/View/presentationSizing(_:))
-- Standard sheet toolbars using [`toolbar(content:)`](https://developer.apple.com/documentation/SwiftUI/View/toolbar(content:)).
+- Automatic dismissal with the Escape key and disabling interactive dismissal with [`interactiveDismissDisabled(_:)`](https://developer.apple.com/documentation/swiftui/view/interactivedismissdisabled(_:))
+- Use of [`dismiss`](https://developer.apple.com/documentation/swiftui/environmentvalues/dismiss) to dismiss the sheet
+- Sheet sizing using [`presentationSizing(_:)`](https://developer.apple.com/documentation/swiftui/view/presentationsizing(_:))
+- Standard sheet toolbars using [`toolbar(content:)`](https://developer.apple.com/documentation/swiftui/view/toolbar(content:)).
 
 ```None
 parentWindow.beginSheet {

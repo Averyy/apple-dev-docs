@@ -18,6 +18,11 @@ func AXUIElementCopyMultipleAttributeValues(_ element: AXUIElement, _ attributes
 
 If unsuccessful, `AXUIElementCopyMultipleAttributeValues` may return one of the following error codes, among others:
 
+- **`kAXErrorIllegalArgument`**: One of the arguments is an illegal value.
+- **`kAXErrorInvalidUIElement`**: The AXUIElementRef is invalid.
+- **`kAXErrorCannotComplete`**: The function cannot complete because messaging has failed in some way.
+- **`kAXErrorNotImplemented`**: The process does not fully support the accessibility API.
+
 #### Discussion
 
 If the specified AXUIElementRef does not support an attribute passed in the `attributes` array, the returned array can contain an error or CFNull at the corresponding position.
@@ -26,8 +31,8 @@ If the specified AXUIElementRef does not support an attribute passed in the `att
 
 - `element`: The AXUIElementRef representing the accessibility object.
 - `attributes`: An array of attribute names.
-- `options`: A value that tells   how to handle errors.
-- `values`: On return, an array in which each position contains the value of the attribute that is in the corresponding position in the passed-in   array (or CFNull). If   = 0, the   array can contain an AXValueRef of type   in the corresponding position. If   =  , this function will return immediately when it gets an error.
+- `options`: A value that tells `AXUIElementCopyMultipleAttributeValues` how to handle errors.
+- `values`: On return, an array in which each position contains the value of the attribute that is in the corresponding position in the passed-in `attributes` array (or CFNull). If `options` = 0, the `values` array can contain an AXValueRef of type `kAXValueAXErrorType` in the corresponding position. If `options` = `kAXCopyMultipleAttributeOptionStopOnError`, this function will return immediately when it gets an error.
 
 ## See Also
 

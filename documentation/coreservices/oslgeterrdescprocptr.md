@@ -44,7 +44,7 @@ After you are finished with your get error descriptor callback function, you can
 
 ## Parameters
 
-- `appDescPtr`: A pointer to a pointer to a descriptor address. Your error descriptor callback function supplies a pointer to an address of a descriptor where the Apple Event Manager can store the current descriptor if an error occurs. See  .
+- `appDescPtr`: A pointer to a pointer to a descriptor address. Your error descriptor callback function supplies a pointer to an address of a descriptor where the Apple Event Manager can store the current descriptor if an error occurs. See [`AEDesc`](aedesc.md).
 
 ## See Also
 

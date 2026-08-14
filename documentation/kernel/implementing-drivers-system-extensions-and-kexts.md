@@ -12,7 +12,7 @@ Create drivers, system extensions, and kernel extensions for specific low-level 
 - A system extension implements features that require kernel-level cooperation, such as custom security and network behaviors. 
 - A kernel extension (kext) supports any low-level services that cannot be implemented using a dext or system extension.
 
-![An illustration of the relationship between drivers, system extensions, kernel extensions, and the kernel. Kernel extensions run inside the kernel. Drivers and system extensions run in user space and communicate with the kernel for critical needs.](https://docs-assets.developer.apple.com/published/201393b6bb/rendered2x-1591225361.png)
+![An illustration of the relationship between drivers, system extensions, kernel extensions, and the kernel. Kernel extensions run inside the kernel. Drivers and system extensions run in user space and communicate with the kernel for critical needs.](/images/rendered2x-1591225361.png)
 
 Use the DriverKit SDK and [`System Extensions`](https://developer.apple.com/documentation/systemextensions) framework to implement low-level services whenever possible. Drivers and system extensions run in user space, instead of inside the kernel’s process space. Running in user space improves system stability and makes it easier to develop, debug, and install your code. 
 
@@ -62,16 +62,12 @@ Kexts run inside the kernel and must support the same architecture and restricti
 
 If your custom installer package includes kexts, install them as the final installation step. The system manages kexts differently in macOS 11 and later, requiring a reboot to finish the installation process. As part of the reboot process, users must also explicitly change the security settings of their computer to allow the kext installation. 
 
-For information about the kext installation process, see [`Installing a custom kernel extension`](https://developer.apple.com/documentation/apple-silicon/installing-a-custom-kernel-extension).
+For information about the kext installation process, see [`Installing a Custom Kernel Extension`](https://developer.apple.com/documentation/apple-silicon/installing-a-custom-kernel-extension).
 
 ## See Also
 
-- [Installing a custom kernel extension](../apple-silicon/installing-a-custom-kernel-extension.md)
-  Install kernel extensions using a custom installer package, and help users understand the installation process.
-- [Debugging a custom kernel extension](../apple-silicon/debugging-a-custom-kernel-extension.md)
-  Configure your system to enable the debugging of custom kernel extensions from a second Mac.
-- [Generating a Non-Maskable Interrupt](generating_a_non-maskable_interrupt.md)
-  Interrupt the kernel on a target Mac and attach a remote debugger to it.
+- [Creating drivers for iPadOS](../driverkit/creating-drivers-for-ipados.md)
+  Bring your drivers to iPadOS by using the platform’s DriverKit support.
 
 
 ---

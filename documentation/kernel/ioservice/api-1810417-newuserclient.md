@@ -26,9 +26,9 @@ A non kernel client may request a connection be opened via the [`IOServiceOpen`]
 
 ## Parameters
 
-- `owningTask`: The Mach task of the client thread in the process of opening the user client. Note that in macOS, each process is based on a Mach task and one or more Mach threads. For more information on the composition of a Mach task and its relationship with Mach threads, see  .
+- `owningTask`: The Mach task of the client thread in the process of opening the user client. Note that in macOS, each process is based on a Mach task and one or more Mach threads. For more information on the composition of a Mach task and its relationship with Mach threads, see [`Tasks and Threads`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Darwin/Conceptual/KernelProgramming/Mach/Mach.html#//apple_ref/doc/uid/TP30000905-CH209-TPXREF103).
 - `securityID`: A token representing the access level for the task.
-- `type`: A constant specifying the type of connection to be created, specified by the caller of   and interpreted only by the family.
+- `type`: A constant specifying the type of connection to be created, specified by the caller of [`IOServiceOpen`](https://developer.apple.com/documentation/iokit/1514515-ioserviceopen) and interpreted only by the family.
 - `handler`: An instance of an IOUserClient object to represent the connection, which will be released when the connection is closed, or zero if the connection was not opened.
 - `properties`: A dictionary of additional properties for the connection.
 

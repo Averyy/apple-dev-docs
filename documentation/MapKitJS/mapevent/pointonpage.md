@@ -16,7 +16,7 @@ readonly pointOnPage: DOMPoint;
 
 #### Discussion
 
-You can use this property — which is an `(x, y)` coordinate — to derive a latitude and longitude coordinate on the map using [`convertPointOnPageToCoordinate(point)`](map/convertpointonpagetocoordinate.md).
+You can use this property — which is an `(x, y)` coordinate — to derive a latitude and longitude coordinate on the map using [`convertPointOnPageToCoordinate()`](map/convertpointonpagetocoordinate.md).
 
 
 ---

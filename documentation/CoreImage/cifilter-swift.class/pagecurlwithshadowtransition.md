@@ -37,11 +37,11 @@ The page curl with shadow transition filter uses the following properties:
 - **`targetImage`**: The ending image with the type [`CIImage`](ciimage.md).
 - **`backsideImage`**: An image used as the backside of the curl with the type [`CIImage`](ciimage.md).
 - **`extent`**: A [`CIVector`](civector.md) representing the extent of the effect.
-- **`angle`**: A `float` representing the angle of the motion, in radians as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
-- **`shadowAmount`**: A `float` representing the strength of the shadow as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+- **`angle`**: A `float` representing the angle of the motion, in radians as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
+- **`shadowAmount`**: A `float` representing the strength of the shadow as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
 - **`shadowExtent`**: A [`CIVector`](civector.md) representing the rectangular portion of the input image that is used to create the shadow.
-- **`shadowSize`**: A `float` representing the maximum amount of pixels to make up the shadow as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
-- **`time`**: A `float` representing the parametric time of the transition from start (at time 0) to end (at time 1) as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+- **`shadowSize`**: A `float` representing the maximum amount of pixels to make up the shadow as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
+- **`time`**: A `float` representing the parametric time of the transition from start (at time 0) to end (at time 1) as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
 
 The following code creates a page curling back to reveal the target image with an added shadow.
 
@@ -62,7 +62,7 @@ func pageCurl(inputImage: CIImage, targetImage: CIImage, backsideImage: CIImage)
 }
 ```
 
-![Three photographs. In the photo on the left, there are multiple small purple flowers photographed close up with good lighting, and the background has a slight blur. In the photograph on the right is a tall building with two trees directly in front of the building. In the center photograph, a page curl with shadow filter is applied, resulting in a still photo of the moving transition. The left photograph is overlaid on the photo on the right with the left side of the overlaid image curling up to reveal more of the city image under. The curl has an added shadow to the underside.](https://docs-assets.developer.apple.com/published/88d677ea78614c06bec80dfe35c25d48/media-3616423%402x.png)
+![Three photographs. In the photo on the left, there are multiple small purple flowers photographed close up with good lighting, and the background has a slight blur. In the photograph on the right is a tall building with two trees directly in front of the building. In the center photograph, a page curl with shadow filter is applied, resulting in a still photo of the moving transition. The left photograph is overlaid on the photo on the right with the left side of the overlaid image curling up to reveal more of the city image under. The curl has an added shadow to the underside.](/images/com.apple.coreimage/media-3616423@2x.png)
 
 ## See Also
 

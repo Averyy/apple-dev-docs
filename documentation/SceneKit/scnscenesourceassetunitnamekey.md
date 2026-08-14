@@ -22,7 +22,7 @@ let SCNSceneSourceAssetUnitNameKey: String
 
 #### Discussion
 
-The value for this key is an [`NSString`](https://developer.apple.com/documentation/Foundation/NSString) object.
+The value for this key is an [`NSString`](https://developer.apple.com/documentation/foundation/nsstring) object.
 
 ## See Also
 

@@ -23,7 +23,7 @@ A promise that resolves with an [`EtaResponse`](etaresponse.md) on success.
 
 #### Discussion
 
-To get a set of estimated arrival times, provide an [`EtaRequestOptions`](etarequestoptions.md) object when you call the [`eta(request, callback)`](directions/eta1.md) method. You can provide up to 10 destinations. The server returns an error if you request more than 10 destinations in a single request.
+To get a set of estimated arrival times, provide an [`EtaRequestOptions`](etarequestoptions.md) object when you call the [`eta()`](directions/eta1.md) method. You can provide up to 10 destinations. The server returns an error if you request more than 10 destinations in a single request.
 
 Estimated times are returned asynchronously via a callback function. MapKit JS invokes the callback function with two arguments, `error` on failure and `data` on success.
 

@@ -22,7 +22,7 @@ enum DynamicTypeSize
 
 #### Overview
 
-For more information, see [`Typography`](https://developer.apple.com/design/Human-Interface-Guidelines/typography) in the Human Interface Guidelines.
+For more information, see [`Typography`](https://developer.apple.com/design/human-interface-guidelines/typography) in the Human Interface Guidelines.
 
 ## Topics
 
@@ -61,12 +61,12 @@ For more information, see [`Typography`](https://developer.apple.com/design/Huma
 ## Relationships
 
 ### Conforms To
-- [CaseIterable](../Swift/CaseIterable.md)
-- [Comparable](../Swift/Comparable.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [CaseIterable](../swift/caseiterable.md)
+- [Comparable](../swift/comparable.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

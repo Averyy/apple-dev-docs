@@ -19,7 +19,7 @@ case shuffle
 
 #### Discussion
 
-![None](https://docs-assets.developer.apple.com/published/8bb86b3ee6b7a561ab13b922f1e0911f/media-2934535%402x.png)
+![None](/images/com.apple.uikit/media-2934535@2x.png)
 
 ## See Also
 

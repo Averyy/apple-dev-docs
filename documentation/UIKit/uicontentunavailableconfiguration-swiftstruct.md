@@ -24,7 +24,7 @@ A content-unavailable configuration is a composable description of a view that i
 
 The following screenshot shows an example of a content-unavailable view configured by setting the [`image`](uicontentunavailableconfiguration-swift.struct/image.md), [`text`](uicontentunavailableconfiguration-swift.struct/text.md), and [`secondaryText`](uicontentunavailableconfiguration-swift.struct/secondarytext.md) properties.
 
-![A screenshot of a content-unavailable view indicating that there are no reminders in the Work folder.](https://docs-assets.developer.apple.com/published/e180a04649bca008fc44d2d51fe69894/uicontentunavailableconfiguration%402x.png)
+![A screenshot of a content-unavailable view indicating that there are no reminders in the Work folder.](/images/com.apple.uikit/uicontentunavailableconfiguration@2x.png)
 
 ## Topics
 
@@ -90,13 +90,13 @@ The following screenshot shows an example of a content-unavailable view configur
 ## Relationships
 
 ### Conforms To
-- [Copyable](../Swift/Copyable.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomReflectable](../Swift/CustomReflectable.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Escapable](../Swift/Escapable.md)
-- [Hashable](../Swift/Hashable.md)
+- [Copyable](../swift/copyable.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomReflectable](../swift/customreflectable.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Escapable](../swift/escapable.md)
+- [Hashable](../swift/hashable.md)
 - [UIContentConfiguration](uicontentconfiguration-9eib5.md)
 
 ## See Also

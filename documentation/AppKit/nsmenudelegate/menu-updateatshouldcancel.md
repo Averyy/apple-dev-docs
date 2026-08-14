@@ -17,7 +17,7 @@ optional func menu(_ menu: NSMenu, update item: NSMenuItem, at index: Int, shoul
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/Swift/true) to continue the process. If you return [`false`](https://developer.apple.com/documentation/Swift/false), your [`menu(_:update:at:shouldCancel:)`](nsmenudelegate/menu(_:update:at:shouldcancel:).md) is not called again. In that case, it’s your responsibility to trim any extra items from the menu.
+[`true`](https://developer.apple.com/documentation/swift/true) to continue the process. If you return [`false`](https://developer.apple.com/documentation/swift/false), your [`menu(_:update:at:shouldCancel:)`](nsmenudelegate/menu(_:update:at:shouldcancel:).md) is not called again. In that case, it’s your responsibility to trim any extra items from the menu.
 
 #### Discussion
 
@@ -28,7 +28,7 @@ If your [`numberOfItems(in:)`](nsmenudelegate/numberofitems(in:).md) delegate me
 - `menu`: The menu object that owns `item`.
 - `item`: The menu-item object that may be updated.
 - `index`: The integer index of the menu item.
-- `shouldCancel`: Set to [`true`](https://developer.apple.com/documentation/Swift/true) if, due to some user action, the menu no longer needs to be displayed before all the menu items have been updated. You can ignore this flag, return [`true`](https://developer.apple.com/documentation/Swift/true), and continue; or you can save your work (to save time the next time your delegate is called) and return [`false`](https://developer.apple.com/documentation/Swift/false) to stop the updating.
+- `shouldCancel`: Set to [`true`](https://developer.apple.com/documentation/swift/true) if, due to some user action, the menu no longer needs to be displayed before all the menu items have been updated. You can ignore this flag, return [`true`](https://developer.apple.com/documentation/swift/true), and continue; or you can save your work (to save time the next time your delegate is called) and return [`false`](https://developer.apple.com/documentation/swift/false) to stop the updating.
 
 ## See Also
 

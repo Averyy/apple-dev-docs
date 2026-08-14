@@ -35,7 +35,7 @@ The order of the files in the returned array is undefined.
 ## Parameters
 
 - `url`: The URL for the directory whose contents you want to enumerate.
-- `keys`: An array of keys that identify the file properties that you want pre-fetched for each item in the directory. For each returned URL, the specified properties are fetched and cached in the [`NSURL`](nsurl.md) object. For a list of keys you can specify, see [`Common File System Resource Keys`](https://developer.apple.com/documentation/CoreFoundation/common-file-system-resource-keys). If you want directory contents to have no pre-fetched file properties, pass an empty array to this parameter. If you want directory contents to have default set of pre-fetched file properties, pass `nil` to this parameter.
+- `keys`: An array of keys that identify the file properties that you want pre-fetched for each item in the directory. For each returned URL, the specified properties are fetched and cached in the [`NSURL`](nsurl.md) object. For a list of keys you can specify, see [`Common File System Resource Keys`](https://developer.apple.com/documentation/corefoundation/common-file-system-resource-keys). If you want directory contents to have no pre-fetched file properties, pass an empty array to this parameter. If you want directory contents to have default set of pre-fetched file properties, pass `nil` to this parameter.
 - `mask`: Options for the enumeration. Because this method performs only shallow enumerations, options that prevent descending into subdirectories or packages are not allowed; the only supported option is [`skipsHiddenFiles`](filemanager/directoryenumerationoptions/skipshiddenfiles.md).
 
 ## See Also

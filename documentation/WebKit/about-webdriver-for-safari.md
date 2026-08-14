@@ -16,13 +16,13 @@ To support WebDriver without sacrificing a user’s privacy or security, Safari�
 
 Test execution is confined to special automation windows that are isolated from normal browsing windows, user settings, and preferences. You can recognize these windows by their orange Smart Search field. Like a private browsing session, an automation session always starts from a clean slate. It can’t access Safari’s browsing history, AutoFill data, or other sensitive information available in a normal browsing session. These isolated sessions also help to ensure that tests are unaffected by a previous test session’s persistent state.
 
-![Screenshot of an automation window with an orange Smart Search field. ](https://docs-assets.developer.apple.com/published/7851ca0bd577ad0b59391f86ed6d62c5/media-2957225%402x.png)
+![Screenshot of an automation window with an orange Smart Search field. ](/images/com.apple.webkit/media-2957225@2x.png)
 
 ##### Glass Panes
 
 To prevent any attempts to interact with the window or web content during a test, Safari installs a transparent “glass pane” over the automation windows while the browser is being used for WebDriver testing. This pane catches any stray interactions (mouse, keyboard, resizing, and so on) that could affect the automation window. If a running test gets stuck, you can interrupt it by “breaking” the glass pane and stopping the session. When an automation session is interrupted, the test’s connection to the browser is permanently severed, and the automation window remains open for further inspection, until closed manually.
 
-![Screenshot of the dialog that appears when you try to break the glass pane. The dialog presents three buttons: Turn Off All Automation, Stop Session, and Continue Session](https://docs-assets.developer.apple.com/published/52ae8d370de587d6419aae6277ed4c3a/media-2957221%402x.png)
+![Screenshot of the dialog that appears when you try to break the glass pane. The dialog presents three buttons: Turn Off All Automation, Stop Session, and Continue Session](/images/com.apple.webkit/media-2957221@2x.png)
 
 ##### Web Inspector and Webdriver
 

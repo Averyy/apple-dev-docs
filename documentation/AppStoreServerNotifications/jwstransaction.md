@@ -25,7 +25,7 @@ The three components of the string are a header, a payload, and a signature, in 
 
 ##### Use App Store Server Library Functions
 
-To verify a [`JWSTransaction`](jwstransaction.md) on your server, consider implementing the verification using the App Store Server Library function `verifyAndDecodeTransaction`. The library provides this function in each language the library supports. For more information, see [`Simplifying your implementation by using the App Store Server Library`](https://developer.apple.com/documentation/AppStoreServerAPI/simplifying-your-implementation-by-using-the-app-store-server-library).
+To verify a [`JWSTransaction`](jwstransaction.md) on your server, consider implementing the verification using the App Store Server Library function `verifyAndDecodeTransaction`. The library provides this function in each language the library supports. For more information, see [`Simplifying your implementation by using the App Store Server Library`](https://developer.apple.com/documentation/appstoreserverapi/simplifying-your-implementation-by-using-the-app-store-server-library).
 
 ## See Also
 

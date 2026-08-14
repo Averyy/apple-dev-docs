@@ -26,7 +26,7 @@ var bitmapInfo: CGBitmapInfo
 
 #### Discussion
 
-For example, ARGB8888 is [`CGImageAlphaInfo.first`](https://developer.apple.com/documentation/CoreGraphics/CGImageAlphaInfo/first) `|` [`byteOrderDefault`](https://developer.apple.com/documentation/CoreGraphics/CGBitmapInfo/byteOrderDefault), and BGRA8888 is [`CGImageAlphaInfo.first`](https://developer.apple.com/documentation/CoreGraphics/CGImageAlphaInfo/first) `|` [`byteOrder32Little`](https://developer.apple.com/documentation/CoreGraphics/CGBitmapInfo/byteOrder32Little).
+For example, ARGB8888 is [`CGImageAlphaInfo.first`](https://developer.apple.com/documentation/coregraphics/cgimagealphainfo/first) `|` [`byteOrderDefault`](https://developer.apple.com/documentation/coregraphics/cgbitmapinfo/byteorderdefault), and BGRA8888 is [`CGImageAlphaInfo.first`](https://developer.apple.com/documentation/coregraphics/cgimagealphainfo/first) `|` [`byteOrder32Little`](https://developer.apple.com/documentation/coregraphics/cgbitmapinfo/byteorder32little).
 
 ## See Also
 

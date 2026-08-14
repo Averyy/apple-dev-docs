@@ -88,15 +88,15 @@ When you create a texture, Metal copies property values from the descriptor into
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCopying](../Foundation/NSCopying.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCopying](../foundation/nscopying.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 
@@ -107,7 +107,7 @@ When you create a texture, Metal copies property values from the descriptor into
 - [protocol MTLTexture](mtltexture.md)
   A resource that holds formatted image data.
 - [enum MTLTextureCompressionType](mtltexturecompressiontype.md)
-- [class MTKTextureLoader](../MetalKit/MTKTextureLoader.md)
+- [class MTKTextureLoader](../metalkit/mtktextureloader.md)
   An object that creates textures from existing data in common image formats.
 - [class MTLSharedTextureHandle](mtlsharedtexturehandle.md)
   A texture handle that can be shared across process address space boundaries.

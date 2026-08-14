@@ -6,12 +6,12 @@ Learn about important changes to ARKit.
 
 #### Overview
 
-Browse notable changes to [`ARKit`](https://developer.apple.com/documentation/ARKit).
+Browse notable changes to [`ARKit`](https://developer.apple.com/documentation/arkit).
 
 #### June 2024
 
-- Detect physical objects and attach digital content to them with [`ObjectTrackingProvider`](https://developer.apple.com/documentation/ARKit/ObjectTrackingProvider).
-- Use the [`RoomTrackingProvider`](https://developer.apple.com/documentation/ARKit/RoomTrackingProvider) to understand the shape and size of the room that people are in and detect when they enter a different room.
+- Detect physical objects and attach digital content to them with [`ObjectTrackingProvider`](https://developer.apple.com/documentation/arkit/objecttrackingprovider).
+- Use the [`RoomTrackingProvider`](https://developer.apple.com/documentation/arkit/roomtrackingprovider) to understand the shape and size of the room that people are in and detect when they enter a different room.
 
 ## See Also
 

@@ -24,12 +24,12 @@ This class is an abstract class which represents an I/O command passed from a de
 ### Instance Variables
 - [fCommandChain](iocommand/fcommandchain.md)
 ### Instance Methods
-- [- CommandChain](../driverkit/iocommand/3758238-commandchain.md)
-- [- free](../driverkit/iocommand/3758240-free.md)
+- [- CommandChain](../driverkit/iocommand/commandchain.md)
+- [- free](../driverkit/iocommand/free.md)
 - [- getMetaClass](iocommand/1528522-getmetaclass.md)
 - [- init](iocommand/1528524-init.md)
 ### Type Methods
-- [+ FromChain](../driverkit/iocommand/3758239-fromchain.md)
+- [+ FromChain](../driverkit/iocommand/fromchain.md)
 
 ## Relationships
 

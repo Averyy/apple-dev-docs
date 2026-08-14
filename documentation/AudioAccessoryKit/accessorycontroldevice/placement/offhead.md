@@ -7,7 +7,6 @@ The device isn’t on someone’s head.
 
 **Availability**:
 - iOS 26.4+
-- iPadOS 26.4+
 
 ## Declaration
 

@@ -22,7 +22,7 @@ static let font: NSAttributedString.Key
 
 #### Discussion
 
-The value of this attribute is a [`UIFont`](https://developer.apple.com/documentation/UIKit/UIFont) object. Use this attribute to change the font for a range of text. If you do not specify this attribute, the string uses a 12-point Helvetica(Neue) font by default.
+The value of this attribute is a [`UIFont`](https://developer.apple.com/documentation/uikit/uifont) object. Use this attribute to change the font for a range of text. If you do not specify this attribute, the string uses a 12-point Helvetica(Neue) font by default.
 
 ## See Also
 

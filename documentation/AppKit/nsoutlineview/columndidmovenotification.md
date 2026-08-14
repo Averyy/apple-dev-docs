@@ -20,8 +20,8 @@ The notification object is the `NSOutlineView` object in which a column moved. T
 
 | Key | Value |
 | --- | --- |
-| `@"NSOldColumn"` | An [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) object containing the integer value of the column’s original index |
-| `@"NSNewColumn"` | An [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) object containing the integer value of the column’s present index |
+| `@"NSOldColumn"` | An [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) object containing the integer value of the column’s original index |
+| `@"NSNewColumn"` | An [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) object containing the integer value of the column’s present index |
 
 ## See Also
 

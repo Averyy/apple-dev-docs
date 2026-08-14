@@ -22,7 +22,7 @@ static let announcementWasSuccessfulUserInfoKey: String
 
 #### Discussion
 
-The value of this key is an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) object that the system interprets as a Boolean value.
+The value of this key is an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) object that the system interprets as a Boolean value.
 
 ## See Also
 

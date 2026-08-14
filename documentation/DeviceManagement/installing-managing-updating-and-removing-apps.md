@@ -37,7 +37,7 @@ If the configuration contains an `AppStoreID` or `BundleID` key, it also needs t
 
 If the `ManifestURL` key is present, the device downloads a manifest document. The manifest document needs to match the [`ManifestURL`](manifesturl.md) format and reference a single app, using the `.ipa` file format. For the device to automatically detect app updates, the manifest document needs to contain a `bundle-version` key.
 
-If the `AppComposedIdentifier` key is present, its string value is a *composed identifier* that consists of the app’s bundle ID, and either a team ID or a designated requirement. The device uses the bundle ID to find any installed app and check its code signature to verify that it matches each component of the composed identifier. The device doesn’t manage apps with unverified or mismatched code signatures. For more information on code signing, see [`TN3127: Inside Code Signing: Requirements`](https://developer.apple.com/documentation/Technotes/tn3127-inside-code-signing-requirements).
+If the `AppComposedIdentifier` key is present, its string value is a *composed identifier* that consists of the app’s bundle ID, and either a team ID or a designated requirement. The device uses the bundle ID to find any installed app and check its code signature to verify that it matches each component of the composed identifier. The device doesn’t manage apps with unverified or mismatched code signatures. For more information on code signing, see [`TN3127: Inside Code Signing: Requirements`](https://developer.apple.com/documentation/technotes/tn3127-inside-code-signing-requirements).
 
 To create a composed identifier string value:
 

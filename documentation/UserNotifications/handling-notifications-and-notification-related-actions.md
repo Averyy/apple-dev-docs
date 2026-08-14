@@ -11,13 +11,13 @@ Notifications are primarily a way of putting information in front of the user, b
 - Actions selected by the user from the notification interface.
 - A notification that arrives when your app is running in the foreground.
 - A silent notification (see [`Pushing background updates to your App`](pushing-background-updates-to-your-app.md)).
-- A notification associated with the [`PushKit`](https://developer.apple.com/documentation/PushKit) framework, such as VoIP or complication-related notifications.
+- A notification associated with the [`PushKit`](https://developer.apple.com/documentation/pushkit) framework, such as VoIP or complication-related notifications.
 
 ##### Handle User Selected Actions
 
 Actionable notifications let the user respond to a notification directly from the notification interface. In addition to the notification’s content, an actionable notification displays one or more buttons representing the actions that the user can take. Tapping one of the buttons forwards the selected action to your app, without bringing the app to the foreground. If your app supports actionable notification types, you must handle the associated actions.
 
-![A notification for a meeting app contains an invitation along with buttons for accepting or declining the invitation.](https://docs-assets.developer.apple.com/published/b7551599d1d79bbde862870b8b2c59f2/media-2953610%402x.png)
+![A notification for a meeting app contains an invitation along with buttons for accepting or declining the invitation.](/images/com.apple.usernotifications/media-2953610@2x.png)
 
 > **Note**:  You declare actionable notification types at launch time at the same time you declare your app’s supported categories. For more information, see [`Declaring your actionable notification types`](declaring-your-actionable-notification-types.md).
 
@@ -111,7 +111,7 @@ func userNotificationCenter(_ center: UNUserNotificationCenter,
 }
 ```
 
-If you registered your app with PushKit, notifications targeting PushKit-types are always delivered directly to your app and are never displayed to the user. If your app is in the foreground or background, the system gives your app time to process the notification. If your app isn’t running, the system launches your app in the background so that it can process the notification. To send a PushKit notification, your provider server must set the notification’s topic to the appropriate target, such as your app’s complication. For more information about registering for PushKit notifications, see [`PushKit`](https://developer.apple.com/documentation/PushKit).
+If you registered your app with PushKit, notifications targeting PushKit-types are always delivered directly to your app and are never displayed to the user. If your app is in the foreground or background, the system gives your app time to process the notification. If your app isn’t running, the system launches your app in the background so that it can process the notification. To send a PushKit notification, your provider server must set the notification’s topic to the appropriate target, such as your app’s complication. For more information about registering for PushKit notifications, see [`PushKit`](https://developer.apple.com/documentation/pushkit).
 
 ## See Also
 

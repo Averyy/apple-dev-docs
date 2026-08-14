@@ -20,7 +20,7 @@ A CGLayer object.
 
 #### Discussion
 
-After calling this method, Core Image draws content into the CGLayer object. Core Image creates a CGLayer object by calling the Quartz 2D function [`init(_:size:auxiliaryInfo:)`](https://developer.apple.com/documentation/CoreGraphics/CGLayer/init(_:size:auxiliaryInfo:)), whose prototype is:
+After calling this method, Core Image draws content into the CGLayer object. Core Image creates a CGLayer object by calling the Quartz 2D function [`init(_:size:auxiliaryInfo:)`](https://developer.apple.com/documentation/coregraphics/cglayer/init(_:size:auxiliaryinfo:)), whose prototype is:
 
 ```objc
 CGLayerRef CGLayerCreateWithContext (
@@ -30,7 +30,7 @@ CGLayerRef CGLayerCreateWithContext (
 );
 ```
 
-Core Image passes the [`CIContext`](cicontext.md) object as the `context` parameter, the size as the `size` parameter, and the dictionary as the `auxiliaryInfo` parameter. For more information on CGLayer objects, see [`Quartz 2D Programming Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/GraphicsImaging/Conceptual/drawingwithquartz2d/Introduction/Introduction.html#//apple_ref/doc/uid/TP30001066) and [`CGLayer`](https://developer.apple.com/documentation/CoreGraphics/CGLayer).
+Core Image passes the [`CIContext`](cicontext.md) object as the `context` parameter, the size as the `size` parameter, and the dictionary as the `auxiliaryInfo` parameter. For more information on CGLayer objects, see [`Quartz 2D Programming Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/GraphicsImaging/Conceptual/drawingwithquartz2d/Introduction/Introduction.html#//apple_ref/doc/uid/TP30001066) and [`CGLayer`](https://developer.apple.com/documentation/coregraphics/cglayer).
 
 ## Parameters
 

@@ -23,7 +23,7 @@ class NSAdaptiveImageGlyph
 
 An [`NSAdaptiveImageGlyph`](nsadaptiveimageglyph.md) contains an image that automatically adapts to different sizes and resolutions. The text system creates instances of this type to represent custom emojis that people create using the system interfaces. This type manages multiple images, along with metadata describing how to adapt those images correctly to different fonts and font attributes.
 
-Typically, you receive new [`NSAdaptiveImageGlyph`](nsadaptiveimageglyph.md) objects only from the text-input system. When someone creates a new emoji and inserts it into their text, TextKit creates an instance of this type to represent it. If your app examines or changes the attributes of attributed strings, preserve the [`adaptiveImageGlyph`](https://developer.apple.com/documentation/Foundation/NSAttributedString/Key/adaptiveImageGlyph) attribute in Swift or the [`NSAdaptiveImageGlyphAttributeName`](nsadaptiveimageglyphattributename.md) attribute in Objective-C when making any changes. For example, if you filter unknown attributes in a custom text-storage object, update your code to preserve this attribute. The value of the attribute is an [`NSAdaptiveImageGlyph`](nsadaptiveimageglyph.md) containing the emoji data. You can save the image data with the rest of your content and use the data to recreate the type later.
+Typically, you receive new [`NSAdaptiveImageGlyph`](nsadaptiveimageglyph.md) objects only from the text-input system. When someone creates a new emoji and inserts it into their text, TextKit creates an instance of this type to represent it. If your app examines or changes the attributes of attributed strings, preserve the [`adaptiveImageGlyph`](https://developer.apple.com/documentation/foundation/nsattributedstring/key/adaptiveimageglyph) attribute in Swift or the [`NSAdaptiveImageGlyphAttributeName`](nsadaptiveimageglyphattributename.md) attribute in Objective-C when making any changes. For example, if you filter unknown attributes in a custom text-storage object, update your code to preserve this attribute. The value of the attribute is an [`NSAdaptiveImageGlyph`](nsadaptiveimageglyph.md) containing the emoji data. You can save the image data with the rest of your content and use the data to recreate the type later.
 
 ## Topics
 
@@ -42,7 +42,7 @@ Typically, you receive new [`NSAdaptiveImageGlyph`](nsadaptiveimageglyph.md) obj
 - [class var contentType: UTType](nsadaptiveimageglyph/contenttype.md)
   The image data format to use for this image type.
 ### Examining attributed strings
-- [static let adaptiveImageGlyph: NSAttributedString.Key](../Foundation/NSAttributedString/Key/adaptiveImageGlyph.md)
+- [static let adaptiveImageGlyph: NSAttributedString.Key](../foundation/nsattributedstring/key/adaptiveimageglyph.md)
   The adaptive image glyph for the text.
 ### Initializers
 - [convenience init(AttributedString.AdaptiveImageGlyph)](nsadaptiveimageglyph/init(_:).md)
@@ -50,20 +50,20 @@ Typically, you receive new [`NSAdaptiveImageGlyph`](nsadaptiveimageglyph.md) obj
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CTAdaptiveImageProviding](../CoreText/CTAdaptiveImageProviding.md)
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCoding](../Foundation/NSCoding.md)
-- [NSCopying](../Foundation/NSCopying.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [NSSecureCoding](../Foundation/NSSecureCoding.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [CTAdaptiveImageProviding](../coretext/ctadaptiveimageproviding.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCoding](../foundation/nscoding.md)
+- [NSCopying](../foundation/nscopying.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

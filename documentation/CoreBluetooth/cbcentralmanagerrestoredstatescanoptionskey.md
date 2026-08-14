@@ -22,7 +22,7 @@ let CBCentralManagerRestoredStateScanOptionsKey: String
 
 #### Discussion
 
-The value associated with this key is an [`NSDictionary`](https://developer.apple.com/documentation/Foundation/NSDictionary). The dictionary contains all of the peripheral scan options in use by the central manager when the system stopped the app.
+The value associated with this key is an [`NSDictionary`](https://developer.apple.com/documentation/foundation/nsdictionary). The dictionary contains all of the peripheral scan options in use by the central manager when the system stopped the app.
 
 ## See Also
 

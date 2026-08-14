@@ -7,7 +7,6 @@ A unique identifier for the part.
 
 **Availability**:
 - iOS 26.0+
-- iPadOS 26.0+
 
 ## Declaration
 
@@ -31,7 +30,7 @@ You can use this value for ordering or debugging.
   The file name of the MMS part.
 - [var contentType: UTType?](mmspartcontent/contenttype.md)
   The content type of the part, as a Uniform Type Identifier.
-- [struct UTType](../UniformTypeIdentifiers/UTType-swift.struct.md)
+- [struct UTType](../uniformtypeidentifiers/uttype-swift.struct.md)
   A structure that represents a type of data to load, send, or receive.
 
 

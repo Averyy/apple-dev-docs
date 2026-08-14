@@ -21,7 +21,7 @@ var merchantIdentifier: String { get set }
 
 #### Discussion
 
-This value must match one of the merchant identifiers specified by the [`Merchant IDs Entitlement`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.in-app-payments) key in the app’s entitlements. For more information on adding merchant IDs, see [`Configure Apple Pay (iOS, watchOS)`](https://developer.apple.comhttps://help.apple.com/xcode/mac/current/#/deva43983eb7?sub=dev171483d6e).
+This value must match one of the merchant identifiers specified by the [`Merchant IDs Entitlement`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.in-app-payments) key in the app’s entitlements. For more information on adding merchant IDs, see [`Configure Apple Pay (iOS, watchOS)`](https://developer.apple.comhttps://help.apple.com/xcode/mac/current/#/deva43983eb7?sub=dev171483d6e).
 
 ## See Also
 

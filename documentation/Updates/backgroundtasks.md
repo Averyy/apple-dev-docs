@@ -6,13 +6,13 @@ Learn about important changes in Background Tasks.
 
 #### Overview
 
-Browse notable changes in [`Background Tasks`](https://developer.apple.com/documentation/BackgroundTasks).
+Browse notable changes in [`Background Tasks`](https://developer.apple.com/documentation/backgroundtasks).
 
 #### June 2025
 
 ##### Continuous Background Tasks
 
-- Execute long-running jobs using the Continuous Background Task ([`BGContinuedProcessingTask`](https://developer.apple.com/documentation/BackgroundTasks/BGContinuedProcessingTask)), which enables your app’s critical work to complete in the background when a person sends your app to the background before the job completes. For more information, see [`Performing long-running tasks on iOS and iPadOS`](https://developer.apple.com/documentation/BackgroundTasks/performing-long-running-tasks-on-ios-and-ipados).
+- Execute long-running jobs using the Continuous Background Task ([`BGContinuedProcessingTask`](https://developer.apple.com/documentation/backgroundtasks/bgcontinuedprocessingtask)), which enables your app’s critical work to complete in the background when a person sends your app to the background before the job completes. For more information, see [`Performing long-running tasks on iOS and iPadOS`](https://developer.apple.com/documentation/backgroundtasks/performing-long-running-tasks-on-ios-and-ipados).
 
 ## See Also
 

@@ -30,14 +30,14 @@ let outputCount = signal.count - filter.count + 1
 
 ## Parameters
 
-- `__A`: The real single-precision input signal vector. The length of this vector must be at least  .
-- `__IA`: The stride through the input signal vector,  .
+- `__A`: The real single-precision input signal vector. The length of this vector must be at least `N + P - 1`.
+- `__IA`: The stride through the input signal vector, `A`.
 - `__F`: The real single-precision filter vector.
-- `__IF`: The stride through the filter vector,  .
+- `__IF`: The stride through the filter vector, `F`.
 - `__C`: The real single-precision output signal vector.
-- `__IC`: The stride through the output signal vector,  .
-- `__N`: The number of elements in the output signal vector,  . 
-- `__P`: The number of elements in the filter vector,  .
+- `__IC`: The stride through the output signal vector, `C`.
+- `__N`: The number of elements in the output signal vector, `C`. 
+- `__P`: The number of elements in the filter vector, `F`.
 
 
 ---

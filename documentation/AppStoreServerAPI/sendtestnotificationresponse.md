@@ -16,9 +16,9 @@ object SendTestNotificationResponse
 
 #### Discussion
 
-The [`Request a Test Notification`](request-a-test-notification.md) endpoint returns this response, which includes a [`testNotificationToken`](sendtestnotificationresponse/testnotificationtoken.md) value to reference the test associated with your request. When you request a test notification, the App Store server sends a notification with the `TEST` [`notificationType`](https://developer.apple.com/documentation/AppStoreServerNotifications/notificationType) to your server. To learn the result of the App Store server’s attempt to send the `TEST` notification, call [`Get Test Notification Status`](get-test-notification-status.md) with the [`testNotificationToken`](sendtestnotificationresponse/testnotificationtoken.md).
+The [`Request a Test Notification`](request-a-test-notification.md) endpoint returns this response, which includes a [`testNotificationToken`](sendtestnotificationresponse/testnotificationtoken.md) value to reference the test associated with your request. When you request a test notification, the App Store server sends a notification with the `TEST` [`notificationType`](https://developer.apple.com/documentation/appstoreservernotifications/notificationtype) to your server. To learn the result of the App Store server’s attempt to send the `TEST` notification, call [`Get Test Notification Status`](get-test-notification-status.md) with the [`testNotificationToken`](sendtestnotificationresponse/testnotificationtoken.md).
 
-For more information about notifications, see [`App Store Server Notifications`](https://developer.apple.com/documentation/AppStoreServerNotifications).
+For more information about notifications, see [`App Store Server Notifications`](https://developer.apple.com/documentation/appstoreservernotifications).
 
 ## Topics
 

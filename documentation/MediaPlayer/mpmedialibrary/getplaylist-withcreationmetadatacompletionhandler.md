@@ -28,7 +28,7 @@ When there’s no playlist associated with the UUID, the system creates a new pl
 - `uuid`: The unique identifier for the playlist.
 - `creationMetadata`: The metadata that the system uses to create a new playlist, which it ignores if a playlist already exists.
 - `completionHandler`: A block that the system calls after it retrieves or creates the playlist. - **playlist**: Contains the playlist identified by the UUID or the newly created playlist.
-- **error**: If an error occurred, this parameter holds the error object that explains the error. Otherwise, the value of this parameter is [`nil`](https://developer.apple.com/documentation/ObjectiveC/nil-227m0).
+- **error**: If an error occurred, this parameter holds the error object that explains the error. Otherwise, the value of this parameter is [`nil`](https://developer.apple.com/documentation/objectivec/nil-227m0).
 
 
 ---

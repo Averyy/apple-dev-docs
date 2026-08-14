@@ -12,7 +12,7 @@ Rotate an entity around an axis using a Component and a System.
 
 You can use the Entity Component System (ECS) from RealityKit to apply logic to any number of entities in a scene. This sample code provides a component. The system queries scene for all entities that have that component and then rotates those entities based on the speed and axis in the component.
 
-For more information about the ECS, see [`Understanding the modular architecture of RealityKit`](https://developer.apple.com/documentation/visionOS/understanding-the-realitykit-modular-architecture), and for more information about systems, see [`Implementing systems for entities in a scene`](implementing-systems-for-entities-in-a-scene.md).
+For more information about the ECS, see [`Understanding the modular architecture of RealityKit`](https://developer.apple.com/documentation/visionos/understanding-the-realitykit-modular-architecture), and for more information about systems, see [`Implementing systems for entities in a scene`](implementing-systems-for-entities-in-a-scene.md).
 
 ##### Add the Rotation Component to the Entity
 
@@ -49,7 +49,7 @@ update: { context in
 
 ##### Update the Rotation of the Entity on Every Frame
 
-The framework calls the `RotationSystem` function [`update(context:)`](System/update(context:).md) for each frame. The sample includes a query to quickly find entities that have the component:
+The framework calls the `RotationSystem` function [`update(context:)`](system/update(context:).md) for each frame. The sample includes a query to quickly find entities that have the component:
 
 ```swift
 static let rotationQuery = EntityQuery(where: .has(RotationComponent.self))

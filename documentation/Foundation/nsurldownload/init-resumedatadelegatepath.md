@@ -22,13 +22,13 @@ An initialized NSURLDownload object.
 
 If you want to support pausing and resuming downloads, your app must:
 
-1. Call [`deletesFileUponFailure`](nsurldownload/deletesfileuponfailure.md), passing [`false`](https://developer.apple.com/documentation/Swift/false). If you want to support resuming downloads in the event of a lost connection, you should do this immediately after you initialize the download object.
-2. If your app needs to pause the transfer for any reason, call [`cancel()`](nsurldownload/cancel().md). Because your app previously called [`deletesFileUponFailure`](nsurldownload/deletesfileuponfailure.md) with [`false`](https://developer.apple.com/documentation/Swift/false), the in-progress download is not deleted.
+1. Call [`deletesFileUponFailure`](nsurldownload/deletesfileuponfailure.md), passing [`false`](https://developer.apple.com/documentation/swift/false). If you want to support resuming downloads in the event of a lost connection, you should do this immediately after you initialize the download object.
+2. If your app needs to pause the transfer for any reason, call [`cancel()`](nsurldownload/cancel().md). Because your app previously called [`deletesFileUponFailure`](nsurldownload/deletesfileuponfailure.md) with [`false`](https://developer.apple.com/documentation/swift/false), the in-progress download is not deleted.
 3. After your app pauses the transfer or after a transfer error occurs, call [`resumeData`](nsurldownload/resumedata.md) to obtain the data needed to resume the transfer later.
 
 > **Note**:  Resume data is returned only if both the protocol and the server support resuming. In addition, a download of compressed content cannot be resumed if `NSURLDownload` is configured to decompress that data on the fly; for details, read the documentation for the [`canResumeDownloadDecoded(withEncodingMIMEType:)`](nsurldownload/canresumedownloaddecoded(withencodingmimetype:).md) method.
 
-1. If the transfer failed because of a connectivity error, use the `SCNetworkReachability` API to determine an appropriate time to try again. For details, read [`SCNetworkReachability`](https://developer.apple.com/documentation/SystemConfiguration/SCNetworkReachability).
+1. If the transfer failed because of a connectivity error, use the `SCNetworkReachability` API to determine an appropriate time to try again. For details, read [`SCNetworkReachability`](https://developer.apple.com/documentation/systemconfiguration/scnetworkreachability).
 
 If your app explicitly paused the download, wait until it is appropriate to continue the transfer (such as when the user clicks or taps a resume button). 5. Call [`init(resumeData:delegate:path:)`](nsurldownload/init(resumedata:delegate:path:).md) and pass the resume data blob that it previously obtained in step 3.
 

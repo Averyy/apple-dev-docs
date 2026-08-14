@@ -20,7 +20,7 @@ var cameraPosition: RPCameraPosition { get set }
 
 #### Discussion
 
-The default value of this property is [`AVCaptureDevice.Position.front`](https://developer.apple.com/documentation/AVFoundation/AVCaptureDevice/Position-swift.enum/front). You can use this property for key-value observing.
+The default value of this property is [`AVCaptureDevice.Position.front`](https://developer.apple.com/documentation/avfoundation/avcapturedevice/position-swift.enum/front). You can use this property for key-value observing.
 
 ## See Also
 

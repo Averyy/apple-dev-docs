@@ -11,7 +11,7 @@ Every Apple Watch app has an accent color that the system applies to the followi
 - The app’s title string in the status bar
 - The app’s name in short-look notifications
 
-You can access the accent color from the [`accentColor`](https://developer.apple.com/documentation/SwiftUI/Color/accentColor) property.
+You can access the accent color from the [`accentColor`](https://developer.apple.com/documentation/swiftui/color/accentcolor) property.
 
 > **Note**: If your accent color is dark, your text may not be legible against the black background. Consider lightening or saturating your accent color to improve the contrast.
 
@@ -19,7 +19,7 @@ You can access the accent color from the [`accentColor`](https://developer.apple
 
 Xcode automatically configures an asset catalog that includes the accent color when you create a new project. To set the color, open the WatchKit App’s `Assets.xcassets` file, select the AccentColor color set, and then select the AccentColor cell. You can then change the color using the Color section of the Attributes inspector. For example, to specify the RGB values for a color, change the Content to sRGB and then modify the values using the sliders.
 
-![A screenshot showing how to set the accent color using the sRGB controls.](https://docs-assets.developer.apple.com/published/83ee257cfcf8a8fa85aac7ef02171352/setting-the-app-s-accent-color-1%402x.png)
+![A screenshot showing how to set the accent color using the sRGB controls.](/images/com.apple.watchOS-Apps/setting-the-app-s-accent-color-1@2x.png)
 
 Alternatively, you can click the Show Color Panel button, and select a color from the system color panel.
 
@@ -33,13 +33,13 @@ To set the accent color:
 2. Select the Editor > Add New Asset > Color Set menu item to add a new color set to the asset catalog.
 3. In the WatchKit app’s Build Settings, set the Global Accent Color Name to your color set’s name.
 
-![An Xcode screenshot that shows the Global Accent Color Name in the WatchKit app’s Build Settings.](https://docs-assets.developer.apple.com/published/a3a6378b5dcb6a455adfc38d68b13da8/setting-the-app-s-accent-color-2%402x.png)
+![An Xcode screenshot that shows the Global Accent Color Name in the WatchKit app’s Build Settings.](/images/com.apple.watchOS-Apps/setting-the-app-s-accent-color-2@2x.png)
 
 ##### Support Older Operating Systems
 
 In watchOS 6 and earlier, set the Global Tint property instead of the Global Accent Color. To set this property, open the storyboard, and select the File inspector.
 
-![An Xcode screenshot that shows the Global Tint property in the storyboard’s File inspector.](https://docs-assets.developer.apple.com/published/d3ec257de01ef104571965a076d5c94c/setting-the-app-s-accent-color-3%402x.png)
+![An Xcode screenshot that shows the Global Tint property in the storyboard’s File inspector.](/images/com.apple.watchOS-Apps/setting-the-app-s-accent-color-3@2x.png)
 
 Click the Global Tint pop-up button to display a menu with several preexisting colors, plus the option to open a color picker and specify a custom color.
 

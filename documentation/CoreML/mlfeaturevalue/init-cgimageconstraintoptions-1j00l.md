@@ -22,9 +22,9 @@ convenience init(CGImage cgImage: CGImage, constraint: MLImageConstraint, option
 
 ## Parameters
 
-- `cgImage`: A [`CGImage`](https://developer.apple.com/documentation/CoreGraphics/CGImage) instance.
+- `cgImage`: A [`CGImage`](https://developer.apple.com/documentation/coregraphics/cgimage) instance.
 - `constraint`: An [`MLImageConstraint`](mlimageconstraint.md) instance.
-- `options`: A dictionary of [`VNImageCropAndScaleOption`](https://developer.apple.com/documentation/Vision/VNImageCropAndScaleOption) values, each keyed by [`MLFeatureValue.ImageOption`](mlfeaturevalue/imageoption.md).
+- `options`: A dictionary of [`VNImageCropAndScaleOption`](https://developer.apple.com/documentation/vision/vnimagecropandscaleoption) values, each keyed by [`MLFeatureValue.ImageOption`](mlfeaturevalue/imageoption.md).
 
 ## See Also
 

@@ -18,7 +18,7 @@ var extensionContext: NSExtensionContext? { get }
 
 If the view controller is *not* part of an app extension, the value of this property is `nil`.
 
-By checking for `nil` you can employ this method to determine whether the view controller is part of an app or an app extension, for the purpose of conditionalizing your view controller implementation. Refer to [`NSExtensionContext`](https://developer.apple.com/documentation/Foundation/NSExtensionContext) for information about the extension context.
+By checking for `nil` you can employ this method to determine whether the view controller is part of an app or an app extension, for the purpose of conditionalizing your view controller implementation. Refer to [`NSExtensionContext`](https://developer.apple.com/documentation/foundation/nsextensioncontext) for information about the extension context.
 
 ## See Also
 

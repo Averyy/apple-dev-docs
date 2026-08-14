@@ -16,9 +16,9 @@ The key techniques the sample demonstrates are as follows:
 
 - **Latency compensation**: Reduce the lag a person experiences when drawing by predicting anchors for the initial stroke rendering and correcting with the latest anchors for accuracy over time.
 - **Adaptive prediction**: Adjust prediction strategies based on drawing context—using shorter prediction horizons or latest anchors directly when drawing on surfaces to minimize jitter, and longer prediction horirzons when drawing in air.
-- **Surface alignment**: Reduce swimming artifacts between virtual brush strokes and the real world when drawing on physical surfaces by transitioning strokes from the [`ARKitCoordinateSpace.Correction.rendered`](https://developer.apple.com/documentation/ARKit/ARKitCoordinateSpace/Correction/rendered) coordinate space to the [`ARKitCoordinateSpace.Correction.none`](https://developer.apple.com/documentation/ARKit/ARKitCoordinateSpace/Correction/none) coordinate space.
+- **Surface alignment**: Reduce swimming artifacts between virtual brush strokes and the real world when drawing on physical surfaces by transitioning strokes from the [`ARKitCoordinateSpace.Correction.rendered`](https://developer.apple.com/documentation/arkit/arkitcoordinatespace/correction/rendered) coordinate space to the [`ARKitCoordinateSpace.Correction.none`](https://developer.apple.com/documentation/arkit/arkitcoordinatespace/correction/none) coordinate space.
 
-> **Note**: This sample uses the low-level mesh drawing implementation from [`Creating a spatial drawing app with RealityKit`](https://developer.apple.com/documentation/RealityKit/creating-a-spatial-drawing-app-with-realitykit) as its foundation.
+> **Note**: This sample uses the low-level mesh drawing implementation from [`Creating a spatial drawing app with RealityKit`](https://developer.apple.com/documentation/realitykit/creating-a-spatial-drawing-app-with-realitykit) as its foundation.
 
 #### Discover and Track the Active Stylus
 
@@ -100,7 +100,7 @@ private func setActiveStylus(stylus: GCStylus) async {
 }
 ```
 
-The sample wraps updates to the value of `activeStylus` in [`withAnimation(_:_:)`](https://developer.apple.com/documentation/SwiftUI/withAnimation(_:_:)) blocks so that SwiftUI views can animate their content when its value changes. For example, the `StylusSettingsHeaderView` animates a symbol displaying whether the person has connected a stylus by observing this value:
+The sample wraps updates to the value of `activeStylus` in [`withAnimation(_:_:)`](https://developer.apple.com/documentation/swiftui/withanimation(_:_:)) blocks so that SwiftUI views can animate their content when its value changes. For example, the `StylusSettingsHeaderView` animates a symbol displaying whether the person has connected a stylus by observing this value:
 
 ```swift
 struct StylusSettingsHeaderView: View {
@@ -117,7 +117,7 @@ struct StylusSettingsHeaderView: View {
 }
 ```
 
-Finally, the `runAccessoryTracking` method initializes the [`AccessoryTrackingProvider`](https://developer.apple.com/documentation/ARKit/AccessoryTrackingProvider) with the stylus and runs the [`ARKitSession`](https://developer.apple.com/documentation/ARKit/ARKitSession):
+Finally, the `runAccessoryTracking` method initializes the [`AccessoryTrackingProvider`](https://developer.apple.com/documentation/arkit/accessorytrackingprovider) with the stylus and runs the [`ARKitSession`](https://developer.apple.com/documentation/arkit/arkitsession):
 
 ```swift
 private func runAccessoryTracking(for stylus: GCStylus) async {
@@ -133,7 +133,7 @@ private func runAccessoryTracking(for stylus: GCStylus) async {
 }
 ```
 
-For more information about discovering and tracking spatial styli, see [`Discovering and tracking spatial game controllers and styli`](https://developer.apple.com/documentation/GameController/discovering-and-tracking-spatial-game-controllers-and-styli).
+For more information about discovering and tracking spatial styli, see [`Discovering and tracking spatial game controllers and styli`](https://developer.apple.com/documentation/gamecontroller/discovering-and-tracking-spatial-game-controllers-and-styli).
 
 #### Capture Stylus Button Inputs
 
@@ -196,7 +196,7 @@ func getLatestStylusButtonInputs() -> [StylusButtonInput] {
 }
 ```
 
-> **Note**: While button press notification do exist (see [`Handling input events`](https://developer.apple.com/documentation/GameController/handling-input-events#Receive-callbacks-for-input-changes)), in this case the app requires the lowest latency possible for button presses to synchronize them with accessory anchors. As the update loop already notifies the app on every frame render the app can efficiently query the button state at that point.
+> **Note**: While button press notification do exist (see [`Handling input events`](https://developer.apple.com/documentation/gamecontroller/handling-input-events)), in this case the app requires the lowest latency possible for button presses to synchronize them with accessory anchors. As the update loop already notifies the app on every frame render the app can efficiently query the button state at that point.
 
 It’s also important to increase the input queue depth to be large enough to buffer all of the inputs the app could receive from the stylus in a single frame, otherwise the app can miss inputs:
 
@@ -254,7 +254,7 @@ struct StylusAnchorInput {
 }
 ```
 
-The `getAnchorInput` method in `DrawingInputProvider` populates a `StylusAnchorInput` structure by obtaining an [`AccessoryAnchor`](https://developer.apple.com/documentation/ARKit/AccessoryAnchor) for the given tracking mode, and extracting its position relative to an entity with the given [`ARKitCoordinateSpace.Correction`](https://developer.apple.com/documentation/ARKit/ARKitCoordinateSpace/Correction):
+The `getAnchorInput` method in `DrawingInputProvider` populates a `StylusAnchorInput` structure by obtaining an [`AccessoryAnchor`](https://developer.apple.com/documentation/arkit/accessoryanchor) for the given tracking mode, and extracting its position relative to an entity with the given [`ARKitCoordinateSpace.Correction`](https://developer.apple.com/documentation/arkit/arkitcoordinatespace/correction):
 
 ```swift
 private func getAnchorInput(trackingMode: TrackingMode, correction: ARKitCoordinateSpace.Correction, relativeTo: Entity) -> StylusAnchorInput? {
@@ -351,7 +351,7 @@ private func getCurrentStylusInputState(relativeTo: Entity) -> StylusInputState?
 }
 ```
 
-To minimize latency, the sample uses predicted anchors for the initial stylus anchor inputs, and the latest anchors for the final inputs. Additionally, the sample uses the [`ARKitCoordinateSpace.Correction.rendered`](https://developer.apple.com/documentation/ARKit/ARKitCoordinateSpace/Correction/rendered) correction for initial inputs to ensure the stroke aligns with the tip of the pen, and [`ARKitCoordinateSpace.Correction.none`](https://developer.apple.com/documentation/ARKit/ARKitCoordinateSpace/Correction/none) for final anchors when drawing on a surface so that the virtual drawing aligns with the real world surface and straight lines remain straight:
+To minimize latency, the sample uses predicted anchors for the initial stylus anchor inputs, and the latest anchors for the final inputs. Additionally, the sample uses the [`ARKitCoordinateSpace.Correction.rendered`](https://developer.apple.com/documentation/arkit/arkitcoordinatespace/correction/rendered) correction for initial inputs to ensure the stroke aligns with the tip of the pen, and [`ARKitCoordinateSpace.Correction.none`](https://developer.apple.com/documentation/arkit/arkitcoordinatespace/correction/none) for final anchors when drawing on a surface so that the virtual drawing aligns with the real world surface and straight lines remain straight:
 
 ```swift
 var surfaceDrawingSettings = DrawingSettings(
@@ -562,7 +562,7 @@ Here, the `animationDuration` parameter controls how long it takes for the initi
   Use room tracking in visionOS to provide custom interactions with physical spaces.
 - [Placing entities using head and device transform](placing-entities-using-head-and-device-transform.md)
   Query and react to changes in the position and rotation of Apple Vision Pro.
-- [Preparing spatial accessories for tracking in your visionOS app](../ARKit/preparing-spatial-accessories-for-tracking-in-your-visionos-app.md)
+- [Preparing spatial accessories for tracking in your visionOS app](../arkit/preparing-spatial-accessories-for-tracking-in-your-visionos-app.md)
   Prepare a spatial accessory for tracking by training a reference accessory file and integrating it into your visionOS app.
 - [Working with generic spatial accessories](working-with-generic-spatial-accessories.md)
   Let people place digital replicas of a generic spatial accessory by tracking the accessory with ARKit.

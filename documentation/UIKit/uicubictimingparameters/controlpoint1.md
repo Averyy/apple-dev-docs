@@ -20,7 +20,7 @@ var controlPoint1: CGPoint { get }
 
 #### Discussion
 
-This parameter contains the point you specified at initialization time. If you initialized the object with a [`UIView.AnimationCurve`](uiview/animationcurve.md) value instead, this property is set to [`CGPointZero`](https://developer.apple.com/documentation/CoreGraphics/CGPointZero).
+This parameter contains the point you specified at initialization time. If you initialized the object with a [`UIView.AnimationCurve`](uiview/animationcurve.md) value instead, this property is set to [`CGPointZero`](https://developer.apple.com/documentation/coregraphics/cgpointzero).
 
 ## See Also
 

@@ -46,7 +46,7 @@ The [`UICollectionViewFlowLayout`](uicollectionviewflowlayout.md) object expects
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 - [UICollectionViewDelegate](uicollectionviewdelegate.md)
 - [UIScrollViewDelegate](uiscrollviewdelegate.md)
 

@@ -57,7 +57,7 @@ OBJECT IDS cannot be used to identify trigger buttons in **dwTriggerButton**, an
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../Swift/BitwiseCopyable.md)
+- [BitwiseCopyable](../swift/bitwisecopyable.md)
 
 ## See Also
 

@@ -20,7 +20,7 @@ func add(_ mediaItems: [MPMediaItem]) async throws
 ## Parameters
 
 - `mediaItems`: The array of media items to add to the end of the playlist.
-- `completionHandler`: A block that the system calls after it adds the media items to the playlist. - **error**: If an error occurred, this parameter holds the error object that explains the error. Otherwise, the value of this parameter is [`nil`](https://developer.apple.com/documentation/ObjectiveC/nil-227m0).
+- `completionHandler`: A block that the system calls after it adds the media items to the playlist. - **error**: If an error occurred, this parameter holds the error object that explains the error. Otherwise, the value of this parameter is [`nil`](https://developer.apple.com/documentation/objectivec/nil-227m0).
 
 ## See Also
 

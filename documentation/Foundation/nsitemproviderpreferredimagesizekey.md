@@ -22,7 +22,7 @@ let NSItemProviderPreferredImageSizeKey: String
 
 #### Discussion
 
-Use this key only with the [`NSItemProvider`](nsitemprovider.md) type coercion policy. Ensure the value is an [`NSValue`](nsvalue.md) object that contains a [`CGSize`](https://developer.apple.com/documentation/CoreFoundation/CGSize) struct specifying the requested size, in points.
+Use this key only with the [`NSItemProvider`](nsitemprovider.md) type coercion policy. Ensure the value is an [`NSValue`](nsvalue.md) object that contains a [`CGSize`](https://developer.apple.com/documentation/corefoundation/cgsize) struct specifying the requested size, in points.
 
 
 ---

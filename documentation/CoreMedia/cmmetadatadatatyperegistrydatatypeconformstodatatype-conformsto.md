@@ -22,7 +22,7 @@ func CMMetadataDataTypeRegistryDataTypeConformsToDataType(_ dataType: CFString, 
 
 #### Return Value
 
-[`kCFBooleanTrue`](https://developer.apple.com/documentation/CoreFoundation/kCFBooleanTrue) if first data type conforms to the second data type; [`kCFBooleanFalse`](https://developer.apple.com/documentation/CoreFoundation/kCFBooleanFalse) otherwise.
+[`kCFBooleanTrue`](https://developer.apple.com/documentation/corefoundation/kcfbooleantrue) if first data type conforms to the second data type; [`kCFBooleanFalse`](https://developer.apple.com/documentation/corefoundation/kcfbooleanfalse) otherwise.
 
 #### Discussion
 

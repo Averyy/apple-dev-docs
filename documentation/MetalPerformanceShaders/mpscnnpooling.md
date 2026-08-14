@@ -23,7 +23,7 @@ class MPSCNNPooling
 
 Pooling is a form of non-linear sub-sampling. Pooling partitions the input image into a set of rectangles (overlapping or non-overlapping) and, for each such sub-region, outputs a value. The pooling operation is used in computer vision to reduce the dimensionality of intermediate representations.
 
-The encode methods in the [`MPSCNNKernel`](mpscnnkernel.md) class can be used to encode an [`MPSCNNPooling`](mpscnnpooling.md) object to a [`MTLCommandBuffer`](https://developer.apple.com/documentation/Metal/MTLCommandBuffer) object. The exact location of the pooling window for each output value is determined as follows:
+The encode methods in the [`MPSCNNKernel`](mpscnnkernel.md) class can be used to encode an [`MPSCNNPooling`](mpscnnpooling.md) object to a [`MTLCommandBuffer`](https://developer.apple.com/documentation/metal/mtlcommandbuffer) object. The exact location of the pooling window for each output value is determined as follows:
 
 - The pooling window center for the first (top left) output pixel of the clip rectangle is at spatial coordinates `(offset.x, offset.y)` in the input image.
 - From this, the top left corner of the pooling window is at `(offset.x - floor(kernelWidth/2)`, `offset.y - floor(kernelHeight/2))` and extends `(kernelWidth, kernelHeight)` pixels to the right and down direction, which means that the last pixel to be included into the pooling window is at `(offset.x + floor((kernelWidth-1)/2)`, `offset.y + floor((kernelHeight-1)/2))`, so that for even kernel sizes the pooling window extends one pixel more into the left and up direction.
@@ -64,15 +64,15 @@ For an [`MPSCNNPoolingMax`](mpscnnpoolingmax.md) object, the way the input image
 - [MPSCNNPoolingL2Norm](mpscnnpoolingl2norm.md)
 - [MPSCNNPoolingMax](mpscnnpoolingmax.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCoding](../Foundation/NSCoding.md)
-- [NSCopying](../Foundation/NSCopying.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [NSSecureCoding](../Foundation/NSSecureCoding.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCoding](../foundation/nscoding.md)
+- [NSCopying](../foundation/nscopying.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSSecureCoding](../foundation/nssecurecoding.md)
 
 ## See Also
 

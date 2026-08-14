@@ -12,7 +12,7 @@ A *nested* component is a child of the parent component that contains it. The ch
 
 Many design and layout effects require you to use hierarchies of nested components. For example, you can create a layering effect by nesting content (such as a `title`) inside a parent component that has a background [`Fill`](https://developer.apple.com/documentation/applenewsformat/fill). Any content displayed by the parent — as well as any content from its child components — is layered in front of the parent’s background fill, as shown in this example.
 
-![Screenshot of an article with a header component that nests an image and a caption.](https://docs-assets.developer.apple.com/published/dd336c9e9ce58bfb015c98b9aadec812/media-4085703%402x.png)
+![Screenshot of an article with a header component that nests an image and a caption.](/images/com.apple.applenews/media-4085703@2x.png)
 
 Apple News Format has several container components that allow you to nest other components within them:
 

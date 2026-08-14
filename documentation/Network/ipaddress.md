@@ -42,8 +42,8 @@ protocol IPAddress : Sendable
 ## Relationships
 
 ### Inherits From
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 ### Conforming Types
 - [IPv4Address](ipv4address.md)
 - [IPv6Address](ipv6address.md)

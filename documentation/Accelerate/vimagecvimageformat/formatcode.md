@@ -22,7 +22,7 @@ var formatCode: UInt32 { get }
 
 #### Discussion
 
-For example, the following code prints the format code of a [`kCVPixelFormatType_420YpCbCr8Planar`](https://developer.apple.com/documentation/CoreVideo/kCVPixelFormatType_420YpCbCr8Planar) Core Video image format that equals the expected type:
+For example, the following code prints the format code of a [`kCVPixelFormatType_420YpCbCr8Planar`](https://developer.apple.com/documentation/corevideo/kcvpixelformattype_420ypcbcr8planar) Core Video image format that equals the expected type:
 
 ```swift
 let cvImageFormat = vImageCVImageFormat.make(

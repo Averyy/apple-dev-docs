@@ -21,7 +21,7 @@ class var linearLight: CIBlendKernel { get }
 
 #### Discussion
 
-![The result of using the linear light blend kernel (background image is top left, foreground image is bottom left)](https://docs-assets.developer.apple.com/published/25b055a971adaf158512466aa26a0037/media-2926873%402x.png)
+![The result of using the linear light blend kernel (background image is top left, foreground image is bottom left)](/images/com.apple.coreimage/media-2926873@2x.png)
 
 ## See Also
 

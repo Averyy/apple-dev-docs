@@ -19,7 +19,7 @@ case taskCompleted
 
 #### Discussion
 
-![None](https://docs-assets.developer.apple.com/published/7893f87da6ed941dd2256b72ee3267ee/media-2934532%402x.png)
+![None](/images/com.apple.uikit/media-2934532@2x.png)
 
 ## See Also
 

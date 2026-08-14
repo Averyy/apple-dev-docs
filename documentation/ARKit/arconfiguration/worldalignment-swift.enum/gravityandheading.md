@@ -21,7 +21,7 @@ The y-axis matches the direction of gravity as detected by the device’s motion
 
 The x- and z-axes match the longitude and latitude directions as measured by Location Services. The vector `(0,0,-1)` points to true north and the vector `(-1,0,0)` points west. (That is, the positive x-, y-, and z-axes point east, up, and south, respectively.)
 
-![None](https://docs-assets.developer.apple.com/published/43ed9c7be6301ec1d30c268015670bf6/media-2891462%402x.png)
+![None](/images/com.apple.arkit/media-2891462@2x.png)
 
 Although this option fixes the *directions* of the three coordinate axes to real-world directions, the *location* of the coordinate system’s origin is still relative to the device, matching the device’s position as of when the session configuration is first run.
 

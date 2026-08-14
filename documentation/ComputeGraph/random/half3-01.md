@@ -23,7 +23,7 @@ A pseudo-random 3D half-precision vector with components in the range [0.0, 1.0]
 
 This function generates a random 3D vector where each component is independently generated in the range [0.0, 1.0] using half-precision floating-point format. The internal random seed is incremented for subsequent calls.
 
-> **Note**: ![Graph](https://docs-assets.developer.apple.com/published/1257d0320193947f9ca139a80159fce5/random__half3_01.svg)
+> **Note**: ![Graph](/images/com.apple.computegraph/random__half3_01.svg)
 
 
 ---

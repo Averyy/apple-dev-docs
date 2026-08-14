@@ -35,7 +35,7 @@ You can also use [`card`](primitivebuttonstyle/card.md) to construct this style.
 
 ## See Also
 
-- [class TVCardView](../TVUIKit/TVCardView.md)
+- [class TVCardView](../tvuikit/tvcardview.md)
   A view that responds to focus interaction with a motion effect it applies to all of its subviews.
 - [struct DefaultButtonStyle](defaultbuttonstyle.md)
   The default button style, based on the button’s context.

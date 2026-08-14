@@ -21,7 +21,7 @@ var properties: [AnyHashable : Any] { get }
 
 #### Discussion
 
-This dictionary contains the same contents as the [`Image Properties`](https://developer.apple.com/documentation/ImageIO/image-properties) accessed using [`CGImageSourceCopyProperties(_:_:)`](https://developer.apple.com/documentation/ImageIO/CGImageSourceCopyProperties(_:_:)).
+This dictionary contains the same contents as the [`Image Properties`](https://developer.apple.com/documentation/imageio/image-properties) accessed using [`CGImageSourceCopyProperties(_:_:)`](https://developer.apple.com/documentation/imageio/cgimagesourcecopyproperties(_:_:)).
 
 ## See Also
 

@@ -19,7 +19,7 @@ optional func cloudSharingControllerDidStopSharing(_ csc: UICloudSharingControll
 
 #### Discussion
 
-Implement this method to receive a notification from the [`UICloudSharingController`](uicloudsharingcontroller.md) instance after the user who owns the [`CKShare`](https://developer.apple.com/documentation/CloudKit/CKShare) record stops sharing it with all participants.
+Implement this method to receive a notification from the [`UICloudSharingController`](uicloudsharingcontroller.md) instance after the user who owns the [`CKShare`](https://developer.apple.com/documentation/cloudkit/ckshare) record stops sharing it with all participants.
 
 ## See Also
 

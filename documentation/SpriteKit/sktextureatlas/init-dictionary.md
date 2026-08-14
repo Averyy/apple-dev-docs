@@ -34,10 +34,10 @@ Normally, Xcode creates texture atlases at compile time from the image files inc
 
 The keys in the dictionary represent the names of the individual textures. The associated object for each key can be:
 
-- An [`NSString`](https://developer.apple.com/documentation/Foundation/NSString) object that contains a file system path to a file that contains the texture
-- An [`NSURL`](https://developer.apple.com/documentation/Foundation/NSURL) object that contains a file system path to a file that contains the texture
-- A [`UIImage`](https://developer.apple.com/documentation/UIKit/UIImage) object
-- An [`NSImage`](https://developer.apple.com/documentation/AppKit/NSImage) object
+- An [`NSString`](https://developer.apple.com/documentation/foundation/nsstring) object that contains a file system path to a file that contains the texture
+- An [`NSURL`](https://developer.apple.com/documentation/foundation/nsurl) object that contains a file system path to a file that contains the texture
+- A [`UIImage`](https://developer.apple.com/documentation/uikit/uiimage) object
+- An [`NSImage`](https://developer.apple.com/documentation/appkit/nsimage) object
 
 ## Parameters
 

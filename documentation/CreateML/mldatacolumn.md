@@ -21,9 +21,9 @@ struct MLDataColumn<Element> where Element : MLDataValueConvertible
 
 #### Overview
 
-A column is a homogenous collection of data values, similar to an [`Array`](https://developer.apple.com/documentation/Swift/Array). Columns are the main components of an [`MLDataTable`](mldatatable.md) and are designed to efficiently scale with large data sets.
+A column is a homogenous collection of data values, similar to an [`Array`](https://developer.apple.com/documentation/swift/array). Columns are the main components of an [`MLDataTable`](mldatatable.md) and are designed to efficiently scale with large data sets.
 
-Typically you use [`MLDataColumn`](mldatacolumn.md), the typed equivalent to [`MLUntypedColumn`](mluntypedcolumn.md), to work directly with the column’s element type. A data column has extra math and statistics functionality when its element type is [`Int`](https://developer.apple.com/documentation/Swift/Int) or [`Double`](https://developer.apple.com/documentation/Swift/Double).
+Typically you use [`MLDataColumn`](mldatacolumn.md), the typed equivalent to [`MLUntypedColumn`](mluntypedcolumn.md), to work directly with the column’s element type. A data column has extra math and statistics functionality when its element type is [`Int`](https://developer.apple.com/documentation/swift/int) or [`Double`](https://developer.apple.com/documentation/swift/double).
 
 ## Topics
 
@@ -260,12 +260,12 @@ Typically you use [`MLDataColumn`](mldatacolumn.md), the typed equivalent to [`M
 ## Relationships
 
 ### Conforms To
-- [Copyable](../Swift/Copyable.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomPlaygroundDisplayConvertible](../Swift/CustomPlaygroundDisplayConvertible.md)
-- [CustomReflectable](../Swift/CustomReflectable.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Escapable](../Swift/Escapable.md)
+- [Copyable](../swift/copyable.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomPlaygroundDisplayConvertible](../swift/customplaygrounddisplayconvertible.md)
+- [CustomReflectable](../swift/customreflectable.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Escapable](../swift/escapable.md)
 
 ## See Also
 

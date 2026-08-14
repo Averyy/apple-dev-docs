@@ -23,12 +23,12 @@ Creates a fetch request based on a predicate and reference type sort parameters.
 
 #### Discussion
 
-The request gets the entity type from the `Result` instance by calling that managed object’s [`entity()`](https://developer.apple.com/documentation/CoreData/NSManagedObject/entity()) type method. If you need to specify the entity type explicitly, use the [`init(entity:sortDescriptors:predicate:animation:)`](fetchrequest/init(entity:sortdescriptors:predicate:animation:).md) initializer instead. If you need more control over the fetch request configuration, use [`init(fetchRequest:animation:)`](fetchrequest/init(fetchrequest:animation:).md).
+The request gets the entity type from the `Result` instance by calling that managed object’s [`entity()`](https://developer.apple.com/documentation/coredata/nsmanagedobject/entity()) type method. If you need to specify the entity type explicitly, use the [`init(entity:sortDescriptors:predicate:animation:)`](fetchrequest/init(entity:sortdescriptors:predicate:animation:).md) initializer instead. If you need more control over the fetch request configuration, use [`init(fetchRequest:animation:)`](fetchrequest/init(fetchrequest:animation:).md).
 
 ## Parameters
 
 - `sortDescriptors`: An array of sort descriptors that define the sort order of the fetched results.
-- `predicate`: An [`NSPredicate`](https://developer.apple.com/documentation/Foundation/NSPredicate) instance that defines logical conditions used to filter the fetched results.
+- `predicate`: An [`NSPredicate`](https://developer.apple.com/documentation/foundation/nspredicate) instance that defines logical conditions used to filter the fetched results.
 - `animation`: The animation to use for user interface changes that result from changes to the fetched results.
 
 ## See Also

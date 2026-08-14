@@ -49,7 +49,7 @@ The settings this object exposes are the runtime editable values of the solver c
 ## Relationships
 
 ### Conforms To
-- [Identifiable](../Swift/Identifiable.md)
+- [Identifiable](../swift/identifiable.md)
 
 ## See Also
 

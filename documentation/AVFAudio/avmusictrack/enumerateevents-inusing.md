@@ -21,7 +21,7 @@ func enumerateEvents(in range: AVBeatRange, using block: (AVMusicEvent, UnsafeMu
 
 #### Discussion
 
-Examine each event the block returns by using [`isKind(of:)`](https://developer.apple.com/documentation/ObjectiveC/NSObjectProtocol/isKind(of:)) to determine the subclass, and then cast and access it accordingly.
+Examine each event the block returns by using [`isKind(of:)`](https://developer.apple.com/documentation/objectivec/nsobjectprotocol/iskind(of:)) to determine the subclass, and then cast and access it accordingly.
 
 The iteration may continue after removing an event.
 

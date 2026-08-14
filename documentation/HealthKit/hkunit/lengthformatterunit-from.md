@@ -21,11 +21,11 @@ class func lengthFormatterUnit(from unit: HKUnit) -> LengthFormatter.Unit
 
 #### Return Value
 
-A length formatter unit value. For a list of possible length formatter unit values see [`LengthFormatter.Unit`](https://developer.apple.com/documentation/Foundation/LengthFormatter/Unit).
+A length formatter unit value. For a list of possible length formatter unit values see [`LengthFormatter.Unit`](https://developer.apple.com/documentation/foundation/lengthformatter/unit).
 
 ## Parameters
 
-- `unit`: A valid HealthKit unit object.  If the unit is not a length unit, this method throws an exception ([`invalidArgumentException`](https://developer.apple.com/documentation/Foundation/NSExceptionName/invalidArgumentException)).
+- `unit`: A valid HealthKit unit object.  If the unit is not a length unit, this method throws an exception ([`invalidArgumentException`](https://developer.apple.com/documentation/foundation/nsexceptionname/invalidargumentexception)).
 
 ## See Also
 

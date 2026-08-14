@@ -22,7 +22,7 @@ let kCVImageBufferTransferFunctionKey: CFString
 
 #### Discussion
 
-The transfer function value is of type [`CFString`](https://developer.apple.com/documentation/CoreFoundation/CFString). See [`Image Buffer Transfer Function Constants`](image-buffer-transfer-function-constants.md) for more information.
+The transfer function value is of type [`CFString`](https://developer.apple.com/documentation/corefoundation/cfstring). See [`Image Buffer Transfer Function Constants`](image-buffer-transfer-function-constants.md) for more information.
 
 ## See Also
 

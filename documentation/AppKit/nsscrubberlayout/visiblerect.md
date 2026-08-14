@@ -16,7 +16,7 @@ var visibleRect: NSRect { get }
 
 #### Discussion
 
-The value of this property is [`NSZeroRect`](https://developer.apple.com/documentation/Foundation/NSZeroRect) if the layout is not currently assigned to a scrubber control.
+The value of this property is [`NSZeroRect`](https://developer.apple.com/documentation/foundation/nszerorect) if the layout is not currently assigned to a scrubber control.
 
 ## See Also
 

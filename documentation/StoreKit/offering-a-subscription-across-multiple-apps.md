@@ -18,7 +18,7 @@ To get started, use App Store Connect to create a separate and equivalent [`auto
 
 The following image illustrates the steps for implementing a multi-app subscription:
 
-![A diagram of a subscription shared across multiple apps showing the flow of implementation between apps, developer account database, and the App Store.](https://docs-assets.developer.apple.com/published/c8625dbac1c5c2caacdd8f3fd0f5f76d/media-3174488%402x.png)
+![A diagram of a subscription shared across multiple apps showing the flow of implementation between apps, developer account database, and the App Store.](/images/com.apple.storekit/media-3174488@2x.png)
 
 ##### Authenticate the User
 

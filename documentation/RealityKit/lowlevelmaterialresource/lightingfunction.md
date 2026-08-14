@@ -33,8 +33,8 @@ Create a `LightingFunction` through a context’s [`lighting`](lowlevelrendercon
 
 ### Conforms To
 - [LowLevelMaterialResource.Function](lowlevelmaterialresource/function.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

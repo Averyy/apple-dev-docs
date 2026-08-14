@@ -10,7 +10,7 @@ A collection view *layout* defines the visual arrangement of the content in your
 
 Collection view layouts are customizable and highly visual. For example, the App Store app uses a single collection view with custom layouts per section to showcase different kinds of content.
 
-![Schematic representation of the App Store app on iOS, showing a collection view with a compositional layout. The layout is composed of two horizontally-scrolling sections that have different layouts. The top section shows one group with one item visible onscreen, with other groups peeking in from the sides of the screen. The bottom section shows one group that’s a column of three cells, each of those cells being an item.](https://docs-assets.developer.apple.com/published/1bcae7456df55cf8e3407bb9324c0d33/media-3568662%402x.png)
+![Schematic representation of the App Store app on iOS, showing a collection view with a compositional layout. The layout is composed of two horizontally-scrolling sections that have different layouts. The top section shows one group with one item visible onscreen, with other groups peeking in from the sides of the screen. The bottom section shows one group that’s a column of three cells, each of those cells being an item.](/images/com.apple.uikit/media-3568662@2x.png)
 
 For design guidance, see [`Human Interface Guidelines`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/ios/views/collections/).
 

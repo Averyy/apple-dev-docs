@@ -26,7 +26,7 @@ typealias Codable = Decodable & Encodable
 
 ## See Also
 
-- [Encoding and Decoding Custom Types](../Foundation/encoding-and-decoding-custom-types.md)
+- [Encoding and Decoding Custom Types](../foundation/encoding-and-decoding-custom-types.md)
   Make your data types encodable and decodable for compatibility with external representations such as JSON.
 - [protocol Encodable](encodable.md)
   A type that can encode itself to an external representation.

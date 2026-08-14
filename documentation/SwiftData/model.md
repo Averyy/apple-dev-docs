@@ -28,7 +28,7 @@ Converts a Swift class into a stored model that’s managed by SwiftData.
 
 #### Overview
 
-Annotate your model classes with the `@Model` macro to make them persistable. At build time, the macro expands to provide conformance to the [`PersistentModel`](persistentmodel.md) and [`Observable`](https://developer.apple.com/documentation/Observation/Observable) protocols.
+Annotate your model classes with the `@Model` macro to make them persistable. At build time, the macro expands to provide conformance to the [`PersistentModel`](persistentmodel.md) and [`Observable`](https://developer.apple.com/documentation/observation/observable) protocols.
 
 ```swift
 @Model

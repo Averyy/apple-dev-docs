@@ -23,7 +23,7 @@ The count of active elements currently in the group
 
 Use this function to determine how many particles are currently alive in the group, which may be less than the maximum if some particles have expired or not yet spawned.
 
-> **Note**: ![Graph](https://docs-assets.developer.apple.com/published/c0537c260b0ca1dce4eb05f73cff5312/group__elementActiveInGroup.svg)
+> **Note**: ![Graph](/images/com.apple.computegraph/group__elementActiveInGroup.svg)
 
 
 ---

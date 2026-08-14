@@ -4,7 +4,7 @@
 
 Use Apple TV Markup Language to create individual pages inside of a client-server app.
 
-> **Note**: TVML is deprecated in tvOS 18 and later. Instead, develop apps for tvOS with [`SwiftUI`](https://developer.apple.com/documentation/SwiftUI) or [`UIKit`](https://developer.apple.com/documentation/UIKit).
+> **Note**: TVML is deprecated in tvOS 18 and later. Instead, develop apps for tvOS with [`SwiftUI`](https://developer.apple.com/documentation/swiftui) or [`UIKit`](https://developer.apple.com/documentation/uikit).
 
 #### Overview
 
@@ -12,7 +12,7 @@ Every page in a client-server app is built on an Apple TV Markup Language (TVML)
 
 Each template page uses compound and simple elements. Compound elements contain other elements, while simple elements are single lines of TVML. Elements contain the information and images that are displayed on the screen.
 
-Every template has a default presentation theme associated with it. You can set a specific theme for your app setting [`UIUserInterfaceStyle`](https://developer.apple.com/documentation/UIKit/UIUserInterfaceStyle) in the `info.plist` file. Themes provide a consistent look inside of a template.
+Every template has a default presentation theme associated with it. You can set a specific theme for your app setting [`UIUserInterfaceStyle`](https://developer.apple.com/documentation/uikit/uiuserinterfacestyle) in the `info.plist` file. Themes provide a consistent look inside of a template.
 
 You control the flow of a client-server app through a JavaScript file that is called by your binary app. Your JavaScript file needs to be able to load TVML pages and respond to user input. For more information on available JavaScript APIs, see [`TVMLKit JS`](https://developer.apple.com/documentation/tvmljs).
 

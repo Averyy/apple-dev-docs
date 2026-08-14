@@ -73,7 +73,7 @@ Implement the methods of the [`WKNavigationDelegate`](wknavigationdelegate.md) p
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

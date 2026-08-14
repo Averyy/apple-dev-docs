@@ -7,7 +7,7 @@ An atom that contains information for converting from media time to sample numbe
 
 #### Overview
 
-See [`Sample table atom ('stbl')`](sample_table_atom.md).
+See [`Sample table atom`](sample_table_atom.md).
 
 ## See Also
 

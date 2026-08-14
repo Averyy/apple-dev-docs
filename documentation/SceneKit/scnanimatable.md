@@ -26,7 +26,7 @@ protocol SCNAnimatable : NSObjectProtocol
 
 #### Overview
 
-SceneKit uses the same architecture as the Core Animation framework, allowing you to animate property changes implicitly or explicitly. For implicit animation, use the [`SCNTransaction`](scntransaction.md) class to quickly create simple animations with very little code. For more complex animations, explicitly create [`CAAnimation`](https://developer.apple.com/documentation/QuartzCore/CAAnimation) objects, and use the methods in the [`SCNAnimatable`](scnanimatable.md) protocol to attach them to the SceneKit objects you want to animate. You also use the methods in this protocol to control any animations already attached to a SceneKit object.
+SceneKit uses the same architecture as the Core Animation framework, allowing you to animate property changes implicitly or explicitly. For implicit animation, use the [`SCNTransaction`](scntransaction.md) class to quickly create simple animations with very little code. For more complex animations, explicitly create [`CAAnimation`](https://developer.apple.com/documentation/quartzcore/caanimation) objects, and use the methods in the [`SCNAnimatable`](scnanimatable.md) protocol to attach them to the SceneKit objects you want to animate. You also use the methods in this protocol to control any animations already attached to a SceneKit object.
 
 For example, making a node spin continuously for as long as it appears in the scene graph requires explicitly creating an animation that repeats. The following code creates such an animation and attaches it to a node:
 
@@ -71,7 +71,7 @@ rotationAnimation.repeatCount = FLT_MAX; // Repeat the animation forever.
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 ### Conforming Types
 - [SCNAccelerationConstraint](scnaccelerationconstraint.md)
 - [SCNAnimationPlayer](scnanimationplayer.md)

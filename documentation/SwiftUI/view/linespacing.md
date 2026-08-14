@@ -33,7 +33,7 @@ Text("This is a string in a TextField with 10 point spacing applied between the 
     .lineSpacing(10)
 ```
 
-![A screenshot showing the effects of setting line spacing on the text](https://docs-assets.developer.apple.com/published/bf011c30e1779b570a3fe893a5f6c418/SwiftUI-view-lineSpacing%402x.png)
+![A screenshot showing the effects of setting line spacing on the text](/images/com.apple.SwiftUI/SwiftUI-view-lineSpacing@2x.png)
 
 ## Parameters
 

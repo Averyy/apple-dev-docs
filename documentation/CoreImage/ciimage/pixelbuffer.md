@@ -21,7 +21,7 @@ var pixelBuffer: CVPixelBuffer? { get }
 
 #### Discussion
 
-If this image was create using the [`init(cvPixelBuffer:)`](ciimage/init(cvpixelbuffer:)-3wng7.md) initializer, this property’s value is the [`CVPixelBuffer`](https://developer.apple.com/documentation/CoreVideo/CVPixelBuffer) object that provides the image’s underlying image data. Do not modify the contents of this pixel buffer; doing so will cause undefined rendering results.
+If this image was create using the [`init(cvPixelBuffer:)`](ciimage/init(cvpixelbuffer:)-3wng7.md) initializer, this property’s value is the [`CVPixelBuffer`](https://developer.apple.com/documentation/corevideo/cvpixelbuffer) object that provides the image’s underlying image data. Do not modify the contents of this pixel buffer; doing so will cause undefined rendering results.
 
 Otherwise, this property’s value is `nil`—in this case you can obtain a pixel buffer by rendering the image with the [`CIContext`](cicontext.md) [`render(_:to:)`](cicontext/render(_:to:).md) method.
 

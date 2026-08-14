@@ -8,7 +8,7 @@ Show up-to-date, time-based information in your widget even when it isn’t runn
 
 Because your widget extension isn’t always running, you can’t directly update your widget’s content. Instead, WidgetKit renders your widget’s view on your behalf and displays the result. However, some SwiftUI views let you display content that continues updating while your widget is visible.
 
-Using a [`Text`](https://developer.apple.com/documentation/SwiftUI/Text) view in your widget, you can display dates and times that stay up to date onscreen. The following examples show the combinations available.
+Using a [`Text`](https://developer.apple.com/documentation/swiftui/text) view in your widget, you can display dates and times that stay up to date onscreen. The following examples show the combinations available.
 
 To display a relative time that updates automatically:
 
@@ -25,7 +25,7 @@ Text(futureDate, style: .offset)
 // -11 minutes
 ```
 
-Using the [`relative`](https://developer.apple.com/documentation/SwiftUI/Text/DateStyle/relative) style shows the absolute difference between the current date and time and the date specified, regardless of whether the date is in the future or the past. The [`offset`](https://developer.apple.com/documentation/SwiftUI/Text/DateStyle/offset) style shows the difference between the current date and time and the date specified, indicating dates in the future with a minus sign (`-`) prefix and dates in the past with a plus sign (`+`) prefix.
+Using the [`relative`](https://developer.apple.com/documentation/swiftui/text/datestyle/relative) style shows the absolute difference between the current date and time and the date specified, regardless of whether the date is in the future or the past. The [`offset`](https://developer.apple.com/documentation/swiftui/text/datestyle/offset) style shows the difference between the current date and time and the date specified, indicating dates in the future with a minus sign (`-`) prefix and dates in the past with a plus sign (`+`) prefix.
 
 To display a timer that continues updating automatically:
 
@@ -38,7 +38,7 @@ Text(futureDate, style: .timer)
 // 15:00
 ```
 
-For dates in the future, the [`timer`](https://developer.apple.com/documentation/SwiftUI/Text/DateStyle/timer) style counts down until the current time reaches the specified date and time, and counts up when the date passes.
+For dates in the future, the [`timer`](https://developer.apple.com/documentation/swiftui/text/datestyle/timer) style counts down until the current time reaches the specified date and time, and counts up when the date passes.
 
 To display an absolute date or time:
 
@@ -76,7 +76,7 @@ Text("The meeting will take place: \(startDate ... endDate)")
 
 ## See Also
 
-- [struct Text](../SwiftUI/Text.md)
+- [struct Text](../swiftui/text.md)
   A view that displays one or more lines of read-only text.
 
 

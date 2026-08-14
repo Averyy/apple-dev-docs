@@ -25,7 +25,7 @@ optional func webView(_ webView: WKWebView, contextMenuForElement elementInfo: W
 
 ## See Also
 
-- [Adding context menus in your app](../UIKit/adding-context-menus-in-your-app.md)
+- [Adding context menus in your app](../uikit/adding-context-menus-in-your-app.md)
   Provide quick access to useful actions by adding context menus to your iOS app.
 - [func webView(WKWebView, contextMenuConfigurationForElement: WKContextMenuElementInfo, completionHandler: (UIContextMenuConfiguration?) -> Void)](wkuidelegate/webview(_:contextmenuconfigurationforelement:completionhandler:).md)
   Tells the delegate that a contextual menu interaction began.
@@ -33,7 +33,7 @@ optional func webView(_ webView: WKWebView, contextMenuForElement elementInfo: W
   Tells the delegate that the web view is about to present the contextual menu for the specified element.
 - [func webView(WKWebView, contextMenuDidEndForElement: WKContextMenuElementInfo)](wkuidelegate/webview(_:contextmenudidendforelement:).md)
   Tells the delegate that the web view dismissed the contextual menu for the specified element.
-- [class UIContextMenuConfiguration](../UIKit/UIContextMenuConfiguration.md)
+- [class UIContextMenuConfiguration](../uikit/uicontextmenuconfiguration.md)
   An object containing the configuration details for the contextual menu.
 
 

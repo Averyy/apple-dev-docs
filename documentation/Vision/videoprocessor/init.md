@@ -22,7 +22,7 @@ init(_ videoURL: URL)
 
 ## Parameters
 
-- `videoURL`: The video asset in a video format that [`AVFoundation`](https://developer.apple.com/documentation/AVFoundation) supports.
+- `videoURL`: The video asset in a video format that [`AVFoundation`](https://developer.apple.com/documentation/avfoundation) supports.
 
 
 ---

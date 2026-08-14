@@ -16,7 +16,7 @@ var audioOutputDeviceUniqueID: String? { get set }
 
 #### Discussion
 
-The default value of this property is `nil`, which indicates the use of the default audio device. Otherwise, set the value to an [`NSString`](https://developer.apple.com/documentation/Foundation/NSString) containing the unique identifier of the Core Audio output device to use for audio output. [`kAudioDevicePropertyDeviceUID`](https://developer.apple.com/documentation/CoreAudio/kAudioDevicePropertyDeviceUID) is a suitable source of audio output device unique IDs.
+The default value of this property is `nil`, which indicates the use of the default audio device. Otherwise, set the value to an [`NSString`](https://developer.apple.com/documentation/foundation/nsstring) containing the unique identifier of the Core Audio output device to use for audio output. [`kAudioDevicePropertyDeviceUID`](https://developer.apple.com/documentation/coreaudio/kaudiodevicepropertydeviceuid) is a suitable source of audio output device unique IDs.
 
 Modifying this property while the timebase’s rate isn’t `0.0` may cause the rate to briefly change to `0.0`.
 

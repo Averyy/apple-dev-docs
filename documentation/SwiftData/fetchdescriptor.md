@@ -71,9 +71,9 @@ struct FavoriteRecipesList: View {
 ### Creating a fetch descriptor
 - [init(predicate: Predicate<T>?, sortBy: [SortDescriptor<T>])](fetchdescriptor/init(predicate:sortby:).md)
   Creates a fetch descriptor with the specified predicate that, optionally, arranges the fetched models in a particular order.
-- [struct Predicate](../Foundation/Predicate.md)
+- [struct Predicate](../foundation/predicate.md)
   A logical condition used to test a set of input values for searching or filtering.
-- [struct SortDescriptor](../Foundation/SortDescriptor.md)
+- [struct SortDescriptor](../foundation/sortdescriptor.md)
   A serializable description of how to sort numerics and strings.
 ### Constraining the fetch
 - [var predicate: Predicate<T>?](fetchdescriptor/predicate.md)
@@ -95,9 +95,9 @@ struct FavoriteRecipesList: View {
 ## Relationships
 
 ### Conforms To
-- [Equatable](../Swift/Equatable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Equatable](../swift/equatable.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

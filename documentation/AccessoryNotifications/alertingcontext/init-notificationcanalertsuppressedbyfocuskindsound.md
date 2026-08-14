@@ -7,7 +7,6 @@ Initializes an alerting context with notification alert conditions.
 
 **Availability**:
 - iOS 26.5+
-- iPadOS 26.5+
 
 ## Declaration
 

@@ -22,7 +22,7 @@ let kCVImageBufferDisplayMaskRectangle_ReferenceRasterHeightKey: CFString
 
 #### Discussion
 
-The `0,0` origin is the top-left corner. The raster height value is a [`CFNumber`](https://developer.apple.com/documentation/CoreFoundation/CFNumber) of an unsigned 16-bit integer. The value usually matches the height of the video or the output device.
+The `0,0` origin is the top-left corner. The raster height value is a [`CFNumber`](https://developer.apple.com/documentation/corefoundation/cfnumber) of an unsigned 16-bit integer. The value usually matches the height of the video or the output device.
 
 ## See Also
 

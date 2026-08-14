@@ -28,7 +28,7 @@ To send a notification, you call [`CFNotificationCenterPostNotification(_:_:_:_:
 
 There are three types of CFNotificationCenter—a distributed notification center, a local notification center, and a Darwin notification center—an application may have at most one of each type. The distributed notification is obtained with [`CFNotificationCenterGetDistributedCenter()`](cfnotificationcentergetdistributedcenter().md). A distributed notification center delivers notifications between applications. In this case, the notification object must always be a CFString object and the notification dictionary must contain only property list values. The local and Darwin notification centers are available in macOS 10.4 and later, and obtained using [`CFNotificationCenterGetLocalCenter()`](cfnotificationcentergetlocalcenter().md) and [`CFNotificationCenterGetDarwinNotifyCenter()`](cfnotificationcentergetdarwinnotifycenter().md) respectively.
 
-Unlike some other Core Foundation opaque types with names similar to a Cocoa Foundation class (such as CFString and `NSString`), CFNotificationCenter objects cannot be cast (“toll-free bridged”) to [`NotificationCenter`](https://developer.apple.com/documentation/Foundation/NotificationCenter) objects or vice-versa.
+Unlike some other Core Foundation opaque types with names similar to a Cocoa Foundation class (such as CFString and `NSString`), CFNotificationCenter objects cannot be cast (“toll-free bridged”) to [`NotificationCenter`](https://developer.apple.com/documentation/foundation/notificationcenter) objects or vice-versa.
 
 ## Topics
 
@@ -66,8 +66,8 @@ Unlike some other Core Foundation opaque types with names similar to a Cocoa Fou
 ## Relationships
 
 ### Conforms To
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
 
 ## See Also
 

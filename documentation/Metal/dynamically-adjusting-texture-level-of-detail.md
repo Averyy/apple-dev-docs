@@ -12,7 +12,7 @@ While the most common use for mipmaps is to improve sampling quality and perform
 
 Start by creating the textures, as described in [`Creating a mipmapped texture`](creating-a-mipmapped-texture.md). Remember that Metal allocates memory for all of the mipmaps when you create the texture. Instead of loading data for all mipmaps, pick a lower mipmap, and provide data for it and any mipmaps lower in the chain. For example, if you started at mipmap level 3, as shown in the figure below, you are loading only about 2% of the total texture data required for the entire mipmap chain.
 
-![A figure showing a chain of seven mipmaps. Only mipmaps 3 through 6 have image data.](https://docs-assets.developer.apple.com/published/dafb29f75ae2b8c6a374ac3dcac03377/dynamically-adjusting-texture-level-of-detail-1%402x.png)
+![A figure showing a chain of seven mipmaps. Only mipmaps 3 through 6 have image data.](/images/com.apple.metal/dynamically-adjusting-texture-level-of-detail-1@2x.png)
 
 ##### Limit Access to Higher Mipmaps
 
@@ -26,7 +26,7 @@ As the scene animates, some objects may get closer to the camera. Detect when th
 
 When it seems likely that an app needs more detailed textures, start preparing new mipmap data. Depending on what kind of system you are implementing, you might make a network request to your server or render a new mipmap procedurally on the device. When you have the data, copy it into the appropriate mipmaps, and update the range of mipmaps that your shaders can sample. For example, in the following diagram, two additional levels of mipmaps were loaded and copied into the texture.
 
-![A figure showing how the mipmap chain has been updated with additional texture data. Originally, mipmaps 3 through 6 had valid data. After the update, mipmaps 1 through 6 have data. ](https://docs-assets.developer.apple.com/published/2dd86d163e634d814054ca79a316478b/dynamically-adjusting-texture-level-of-detail-2%402x.png)
+![A figure showing how the mipmap chain has been updated with additional texture data. Originally, mipmaps 3 through 6 had valid data. After the update, mipmaps 1 through 6 have data. ](/images/com.apple.metal/dynamically-adjusting-texture-level-of-detail-2@2x.png)
 
 ## See Also
 

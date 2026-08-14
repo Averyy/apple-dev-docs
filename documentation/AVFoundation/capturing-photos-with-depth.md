@@ -10,7 +10,7 @@ On iOS devices with a back-facing dual camera or a front-facing TrueDepth camera
 
 You can use a depth map together with a photo to create image-processing effects that treat foreground and background elements of a photo differently, like the Portrait mode in the iOS Camera app. By saving color and depth data separately, you can even apply and change these effects long after a photo has been captured.
 
-![Figure showing how iOS creates a Portrait photo effect using a color camera image and a depth map](https://docs-assets.developer.apple.com/published/d06edb877980433bf589ec401cb91f66/media-2978410%402x.png)
+![Figure showing how iOS creates a Portrait photo effect using a color camera image and a depth map](/images/com.apple.avfoundation/media-2978410@2x.png)
 
 You can add depth capture to many of the other photography workflows covered in [`Capturing still and Live Photos`](capturing-still-and-live-photos.md) by adding the following steps.
 
@@ -69,7 +69,7 @@ Otherwise, the capture output embeds depth data and depth-related metadata when 
 
 When you enable depth capture with the back-facing dual camera on compatible devices (see [`iOS Device Compatibility Reference`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/DeviceInformation/Reference/iOSDeviceCompatibility/Introduction/Introduction.html#//apple_ref/doc/uid/TP40013599)), the system captures imagery using both cameras. Because the two parallel cameras are a small distance apart on the back of the device, similar features found in both images show a parallax shift: objects that are closer to the camera shift by a greater distance between the two images. The capture system uses this difference, or *disparity*, to infer the relative distances from the camera to objects in the image, as shown below.
 
-![Figure showing how parallax differences between two photos create a depth map](https://docs-assets.developer.apple.com/published/94f213d5be82fedf7626347d3b221af4/media-2978411%402x.png)
+![Figure showing how parallax differences between two photos create a depth map](/images/com.apple.avfoundation/media-2978411@2x.png)
 
 Each point in a depth map captured by a dual camera device measures disparity units of 1/meters, and offers [`AVDepthData.Accuracy.relative`](avdepthdata/accuracy/relative.md) accuracy. An individual point isn’t a good estimate of real-world distance, but the variation between points is consistent enough to use for depth-based image processing effects.
 

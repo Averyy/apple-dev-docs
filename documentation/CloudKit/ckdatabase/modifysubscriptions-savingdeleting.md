@@ -24,8 +24,8 @@ func modifySubscriptions(saving subscriptionsToSave: [CKSubscription], deleting 
 
 A tuple with the following named elements:
 
-- **`saveResults`**: A dictionary of saved subscriptions. The dictionary uses the identifiers of the subscriptions you specify in `subscriptionsToSave` as its keys. The value of each key is a [`Result`](https://developer.apple.com/documentation/Swift/Result) that contains either the corresponding modified subscription (as it appears on the server), or an error that describes why CloudKit can’t modify that subscription.
-- **`deleteResults`**: A dictionary of deleted subscriptions. The dictionary uses the identifiers you specify in `subscriptionIDsToDelete` as its keys. The value of each key is a [`Result`](https://developer.apple.com/documentation/Swift/Result) that contains either [`Void`](https://developer.apple.com/documentation/Swift/Void) to indicate a successful deletion, or an error that describes why CloudKit can’t delete that subscription.
+- **`saveResults`**: A dictionary of saved subscriptions. The dictionary uses the identifiers of the subscriptions you specify in `subscriptionsToSave` as its keys. The value of each key is a [`Result`](https://developer.apple.com/documentation/swift/result) that contains either the corresponding modified subscription (as it appears on the server), or an error that describes why CloudKit can’t modify that subscription.
+- **`deleteResults`**: A dictionary of deleted subscriptions. The dictionary uses the identifiers you specify in `subscriptionIDsToDelete` as its keys. The value of each key is a [`Result`](https://developer.apple.com/documentation/swift/result) that contains either [`Void`](https://developer.apple.com/documentation/swift/void) to indicate a successful deletion, or an error that describes why CloudKit can’t delete that subscription.
 
 #### Discussion
 

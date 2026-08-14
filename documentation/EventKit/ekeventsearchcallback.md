@@ -22,7 +22,7 @@ typealias EKEventSearchCallback = (EKEvent, UnsafeMutablePointer<ObjCBool>) -> V
 ## Parameters
 
 - `event`: An event object to operate on.
-- `stop`: A pointer to a Boolean value. Set this value to [`true`](https://developer.apple.com/documentation/Swift/true) to stop enumerating events.
+- `stop`: A pointer to a Boolean value. Set this value to [`true`](https://developer.apple.com/documentation/swift/true) to stop enumerating events.
 
 ## See Also
 

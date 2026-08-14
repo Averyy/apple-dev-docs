@@ -30,10 +30,10 @@ This method applies the triangle kaleidoscope filter to an image. The effect pro
 The triangle kaleidoscope tile filter uses the following properties:
 
 - **`inputImage`**: An image with the type [`CIImage`](ciimage.md).
-- **`decay`**: A `float` representing the intensity of the color fade from the center of the triangle as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+- **`decay`**: A `float` representing the intensity of the color fade from the center of the triangle as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
 - **`point`**: A set of coordinates marking the center of the triangular area of the input image as a [`CIVector`](civector.md).
-- **`rotation`**: A `float` representing the angle of rotation of the triangle as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
-- **`size`**: A `float` representing the size in pixels of the triangle as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+- **`rotation`**: A `float` representing the angle of rotation of the triangle as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
+- **`size`**: A `float` representing the size in pixels of the triangle as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
 
 The following code creates a filter that produces a triangle tile of the input image, creating an optical illusion:
 
@@ -49,7 +49,7 @@ func triangleKaleidoscope(inputImage: CIImage) -> CIImage {
 }
 ```
 
-![Two photographs of a bouquet of multiple colorful flowers. The photo on the left is up close with good lighting and focus. In the photo on the right, a triangle kaleidoscope filter is applied, resulting in a triangular portion of the image being angled and repeated throughout the entire image.](https://docs-assets.developer.apple.com/published/f00ec66d6be96e93b06365f384ff0dfb/media-3599889%402x.png)
+![Two photographs of a bouquet of multiple colorful flowers. The photo on the left is up close with good lighting and focus. In the photo on the right, a triangle kaleidoscope filter is applied, resulting in a triangular portion of the image being angled and repeated throughout the entire image.](/images/com.apple.coreimage/media-3599889@2x.png)
 
 ## See Also
 

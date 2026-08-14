@@ -24,8 +24,8 @@ Use the required parameters in the [`signature`](signature.md) object to generat
 
 ## Properties
 
-- `version` (string) *(required)*: The SKAdNetwork version. Use version `“4.0”` or later. For version information, see [`SKAdNetwork release notes`](https://developer.apple.com/documentation/StoreKit/skadnetwork-release-notes).
-- `ad_network_id` (string) *(required)*: The ad network ID. You receive an ad network ID when you register to use SKAdNetwork. For more information, see [`Registering an ad network`](https://developer.apple.com/documentation/StoreKit/registering-an-ad-network).
+- `version` (string) *(required)*: The SKAdNetwork version. Use version `“4.0”` or later. For version information, see [`SKAdNetwork release notes`](https://developer.apple.com/documentation/storekit/skadnetwork-release-notes).
+- `ad_network_id` (string) *(required)*: The ad network ID. You receive an ad network ID when you register to use SKAdNetwork. For more information, see [`Registering an ad network`](https://developer.apple.com/documentation/storekit/registering-an-ad-network).
 - `source_identifier` (integer) *(required)*: A four-digit value you use to measure the aspects of an advertising effort or campaign.
 - `itunes_item_id` (integer) *(required)*: The App Store ID of the app that the ad impression advertises. This is the same value the ad network provides in the attributable ad link. For more information, see [`Creating an attributable ad link`](creating-an-attributable-ad-link.md).
 - `nonce` (string) *(required)*: A UUID you generate to include in the signature. This value needs to match the value of `attributionSourceNonce` in the original ad link. This value needs to be in the `UUID` string format. Provide the dash-separated representation of the `attributionSourceNonce`.

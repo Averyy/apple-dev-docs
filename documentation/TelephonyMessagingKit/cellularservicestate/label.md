@@ -7,7 +7,6 @@ The label for a service, as set by the person using the device.
 
 **Availability**:
 - iOS 26.0+
-- iPadOS 26.0+
 
 ## Declaration
 

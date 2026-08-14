@@ -24,7 +24,7 @@ var contentOffset: CGPoint { get set }
 
 #### Discussion
 
-The default value is [`CGPointZero`](https://developer.apple.com/documentation/CoreGraphics/CGPointZero).
+The default value is [`CGPointZero`](https://developer.apple.com/documentation/coregraphics/cgpointzero).
 
 ## See Also
 

@@ -20,7 +20,7 @@ Use this method to change the accessibility traits associated with your interfac
 
 ## Parameters
 
-- `accessibilityTraits`: The traits that characterize this element. For a list of traits and appropriate combinations, see [`UIAccessibilityTraits`](https://developer.apple.com/documentation/UIKit/UIAccessibilityTraits).
+- `accessibilityTraits`: The traits that characterize this element. For a list of traits and appropriate combinations, see [`UIAccessibilityTraits`](https://developer.apple.com/documentation/uikit/uiaccessibilitytraits).
 
 ## See Also
 

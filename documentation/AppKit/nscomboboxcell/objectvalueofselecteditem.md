@@ -18,7 +18,7 @@ var objectValueOfSelectedItem: Any? { get }
 
 The value of this property is the object from the combo box’s internal item list corresponding to the last item selected from the pop-up list, or `nil` if no item is selected.
 
-Note that nothing is initially selected in a newly initialized combo box cell. Accessing this property logs a warning if [`usesDataSource`](nscomboboxcell/usesdatasource.md) is [`true`](https://developer.apple.com/documentation/Swift/true).
+Note that nothing is initially selected in a newly initialized combo box cell. Accessing this property logs a warning if [`usesDataSource`](nscomboboxcell/usesdatasource.md) is [`true`](https://developer.apple.com/documentation/swift/true).
 
 ## See Also
 

@@ -22,7 +22,7 @@ let MPMediaPlaylistPropertySeedItems: String
 
 #### Discussion
 
-Value is an [`NSArray`](https://developer.apple.com/documentation/Foundation/NSArray) object containing one or more [`MPMediaItem`](mpmediaitem.md) objects. Value is `nil` for playlists that don’t have the [`genius`](mpmediaplaylistattribute/genius.md) flag set.
+Value is an [`NSArray`](https://developer.apple.com/documentation/foundation/nsarray) object containing one or more [`MPMediaItem`](mpmediaitem.md) objects. Value is `nil` for playlists that don’t have the [`genius`](mpmediaplaylistattribute/genius.md) flag set.
 
 ## See Also
 

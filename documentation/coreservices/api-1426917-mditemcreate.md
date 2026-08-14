@@ -30,8 +30,8 @@ Prior to OS X v 10.5 items were guaranteed to be unique and == could or `CFEqual
 
 ## Parameters
 
-- `allocator`: The   object to be used to allocate memory for the new object. Pass   or   to use the current default allocator.
-- `path`: A path to the file from which to create the  . The path must exist.
+- `allocator`: The `CFAllocator` object to be used to allocate memory for the new object. Pass `NULL` or `kCFAllocatorDefault` to use the current default allocator.
+- `path`: A path to the file from which to create the `MDItem`. The path must exist.
 
 ## See Also
 

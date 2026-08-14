@@ -47,7 +47,7 @@ In macOS 10.7 and later [`NSDraggingDestination`](nsdraggingdestination.md) is a
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 ### Conforming Types
 - [NSBackgroundExtensionView](nsbackgroundextensionview.md)
 - [NSBox](nsbox.md)

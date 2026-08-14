@@ -25,6 +25,10 @@ Each event contains the duration of the animation. This allows the event handler
 
 The `type` property of an animation event can have the following string values:
 
+- **`webkitAnimationStart`**: Occurs at the start of an animation. It can bubble and be canceled. Its `animationName` property is set.
+- **`webkitAnimationEnd`**: Occurs when the animation finishes. It can bubble and be canceled. Its `animationName` and `elapsedTime` properties are set.
+- **`webkitAnimationIteration`**: Occurs at the end of each iteration of an animation when the -webkit-animation-iteration-count is greater than `1`. It does not occur for animations with an iteration count of `1`. It can bubble and be canceled. Its `animationName` and `elapsedTime` properties are set.
+
 ## Topics
 
 ### Accessing Properties

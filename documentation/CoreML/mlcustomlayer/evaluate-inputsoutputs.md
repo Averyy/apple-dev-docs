@@ -31,7 +31,7 @@ Implement this method to evaluate the inputs using your layer’s custom behavio
 
 The memory for both input and output arrays is preallocated; don’t copy or move it. The inputs and outputs will have the shapes of the most recent call to [`outputShapes(forInputShapes:)`](mlcustomlayer/outputshapes(forinputshapes:).md). Don’t modify the input values.
 
-Investigate [`vecLib`](https://developer.apple.com/documentation/Accelerate/veclib) for methods that could optimize your implementation significantly.
+Investigate [`vecLib`](https://developer.apple.com/documentation/accelerate/veclib) for methods that could optimize your implementation significantly.
 
 ## Parameters
 

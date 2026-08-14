@@ -29,7 +29,7 @@ After you register an undo operation, you can call [`undo()`](undomanager/undo()
 
 Typically, apps with UI interactions work with [`UndoManager`](undomanager.md). For example, UIKit implements undo and redo in its text view object, making it easy for you to undo and redo actions in objects along the responder chain. [`UndoManager`](undomanager.md) also serves as a general-purpose state manager, which you can use to undo and redo many kinds of actions. For example, an interactive command-line utility can use this class to undo the last command run, or a networking library can undo a request by sending another request that invalidates the previous one.
 
-> ❗ **Important**: `UndoManager` is [`MainActor`](https://developer.apple.com/documentation/Swift/MainActor)-isolated in Swift, making it safe to use in UI frameworks like [`AppKit`](https://developer.apple.com/documentation/AppKit) and [`UIKit`](https://developer.apple.com/documentation/UIKit) that expect to execute code on the main thread, queue, or actor. When registering an undoable action with [`registerUndo(withTarget:handler:)`](undomanager/registerundo(withtarget:handler:).md), the `handler` closure is also [`MainActor`](https://developer.apple.com/documentation/Swift/MainActor)-isolated to ensure safety and simplify ergonomics.
+> ❗ **Important**: `UndoManager` is [`MainActor`](https://developer.apple.com/documentation/swift/mainactor)-isolated in Swift, making it safe to use in UI frameworks like [`AppKit`](https://developer.apple.com/documentation/appkit) and [`UIKit`](https://developer.apple.com/documentation/uikit) that expect to execute code on the main thread, queue, or actor. When registering an undoable action with [`registerUndo(withTarget:handler:)`](undomanager/registerundo(withtarget:handler:).md), the `handler` closure is also [`MainActor`](https://developer.apple.com/documentation/swift/mainactor)-isolated to ensure safety and simplify ergonomics.
 
 ## Topics
 
@@ -164,15 +164,15 @@ Typically, apps with UI interactions work with [`UndoManager`](undomanager.md). 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [Sendable](../Swift/Sendable.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [Sendable](../swift/sendable.md)
 
 
 ---

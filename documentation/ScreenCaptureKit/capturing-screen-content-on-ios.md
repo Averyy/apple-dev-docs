@@ -22,10 +22,10 @@ You use the sample to record the screen to a file, to buffer up to 15 seconds of
 
 The sample declares two background modes so ScreenCaptureKit continues to run while the app isn’t frontmost:
 
-- `screen-capture` in [`UIBackgroundModes`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/UIBackgroundModes), so the stream survives backgrounding for full-display capture.
+- `screen-capture` in [`UIBackgroundModes`](https://developer.apple.com/documentation/bundleresources/information-property-list/uibackgroundmodes), so the stream survives backgrounding for full-display capture.
 - `audio`, so the microphone tap keeps producing samples.
 
-The Info property list also declares [`NSCameraUsageDescription`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSCameraUsageDescription) and [`NSPhotoLibraryAddUsageDescription`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSPhotoLibraryAddUsageDescription). Verify both prompts appear the first time you exercise the in-app capture and recording flows.
+The Info property list also declares [`NSCameraUsageDescription`](https://developer.apple.com/documentation/bundleresources/information-property-list/nscamerausagedescription) and [`NSPhotoLibraryAddUsageDescription`](https://developer.apple.com/documentation/bundleresources/information-property-list/nsphotolibraryaddusagedescription). Verify both prompts appear the first time you exercise the in-app capture and recording flows.
 
 #### Present the Content Sharing Picker
 
@@ -91,7 +91,7 @@ if filter.isMicrophoneEnabled {
 try await newStream.startCapture()
 ```
 
-Before starting a full-display capture, the sample activates an [`AVAudioSession`](https://developer.apple.com/documentation/AVFAudio/AVAudioSession) in the [`playAndRecord`](https://developer.apple.com/documentation/AVFAudio/AVAudioSession/Category-swift.struct/playAndRecord) category so the microphone tap keeps producing samples while the app runs in the background.
+Before starting a full-display capture, the sample activates an [`AVAudioSession`](https://developer.apple.com/documentation/avfaudio/avaudiosession) in the [`playAndRecord`](https://developer.apple.com/documentation/avfaudio/avaudiosession/category-swift.struct/playandrecord) category so the microphone tap keeps producing samples while the app runs in the background.
 
 #### Record the Stream to a File
 
@@ -106,7 +106,7 @@ let output = SCRecordingOutput(configuration: config,
 try stream.addRecordingOutput(output)
 ```
 
-When the person stops the recording, the sample removes the output and awaits its finalization through a [`CheckedContinuation`](https://developer.apple.com/documentation/Swift/CheckedContinuation). The delegate’s [`recordingOutputDidFinishRecording(_:)`](screcordingoutputdelegate/recordingoutputdidfinishrecording(_:).md) callback resumes the continuation, at which point the sample hands the file to Photos. The Recent tab later reads [`recordedDuration`](screcordingoutput/recordedduration.md) and [`recordedFileSize`](screcordingoutput/recordedfilesize.md) from the finished `SCRecordingOutput` to display the recording’s duration and size.
+When the person stops the recording, the sample removes the output and awaits its finalization through a [`CheckedContinuation`](https://developer.apple.com/documentation/swift/checkedcontinuation). The delegate’s [`recordingOutputDidFinishRecording(_:)`](screcordingoutputdelegate/recordingoutputdidfinishrecording(_:).md) callback resumes the continuation, at which point the sample hands the file to Photos. The Recent tab later reads [`recordedDuration`](screcordingoutput/recordedduration.md) and [`recordedFileSize`](screcordingoutput/recordedfilesize.md) from the finished `SCRecordingOutput` to display the recording’s duration and size.
 
 #### Save Clips From a Rolling Buffer
 
@@ -129,7 +129,7 @@ Exporting a clip doesn’t interrupt buffering, so the person can capture overla
 
 #### Preview the Camera During Capture
 
-In-app capture mode supports an overlay of the device’s camera. When the filter’s [`isCameraEnabled`](sccontentfilter/iscameraenabled.md) is `true`, the sample attaches an [`SCVideoEffectOutput`](scvideoeffectoutput.md) and stores the [`UIView`](https://developer.apple.com/documentation/UIKit/UIView) the output vends. A [`UIViewRepresentable`](https://developer.apple.com/documentation/SwiftUI/UIViewRepresentable) wrapper embeds that view in the SwiftUI hierarchy so it renders as a floating rounded rectangle anchored to the bottom-trailing corner of the app.
+In-app capture mode supports an overlay of the device’s camera. When the filter’s [`isCameraEnabled`](sccontentfilter/iscameraenabled.md) is `true`, the sample attaches an [`SCVideoEffectOutput`](scvideoeffectoutput.md) and stores the [`UIView`](https://developer.apple.com/documentation/uikit/uiview) the output vends. A [`UIViewRepresentable`](https://developer.apple.com/documentation/swiftui/uiviewrepresentable) wrapper embeds that view in the SwiftUI hierarchy so it renders as a floating rounded rectangle anchored to the bottom-trailing corner of the app.
 
 ```swift
 if captureMode == .inApp && filter.isCameraEnabled,
@@ -146,7 +146,7 @@ The sample re-attaches the preview when the app returns to the foreground, becau
 
 #### Save Recordings to Photos
 
-When a recording or clip finishes, the sample writes it to Photos through [`PHPhotoLibrary`](https://developer.apple.com/documentation/Photos/PHPhotoLibrary). Because the sample only writes to Photos, it requests the narrower [`PHAccessLevel.addOnly`](https://developer.apple.com/documentation/Photos/PHAccessLevel/addOnly) authorization scope rather than full library access — the data-minimization pattern of requesting only what the feature needs. The sample hands the file off with [`shouldMoveFile`](https://developer.apple.com/documentation/Photos/PHAssetResourceCreationOptions/shouldMoveFile) set to `true` so the temporary file doesn’t linger on disk.
+When a recording or clip finishes, the sample writes it to Photos through [`PHPhotoLibrary`](https://developer.apple.com/documentation/photos/phphotolibrary). Because the sample only writes to Photos, it requests the narrower [`PHAccessLevel.addOnly`](https://developer.apple.com/documentation/photos/phaccesslevel/addonly) authorization scope rather than full library access — the data-minimization pattern of requesting only what the feature needs. The sample hands the file off with [`shouldMoveFile`](https://developer.apple.com/documentation/photos/phassetresourcecreationoptions/shouldmovefile) set to `true` so the temporary file doesn’t linger on disk.
 
 ```swift
 let status = await PHPhotoLibrary.requestAuthorization(for: .addOnly)
@@ -160,13 +160,13 @@ try await PHPhotoLibrary.shared().performChanges {
 }
 ```
 
-The Recent tab surfaces the last saved recording and clip and exposes both through [`ShareLink`](https://developer.apple.com/documentation/SwiftUI/ShareLink), so the person can pass a file to another app without leaving the sample.
+The Recent tab surfaces the last saved recording and clip and exposes both through [`ShareLink`](https://developer.apple.com/documentation/swiftui/sharelink), so the person can pass a file to another app without leaving the sample.
 
 ## See Also
 
-- [ScreenCaptureKit updates](../Updates/ScreenCaptureKit.md)
+- [ScreenCaptureKit updates](../updates/screencapturekit.md)
   Learn about important changes to ScreenCaptureKit.
-- [Persistent Content Capture](../BundleResources/Entitlements/com.apple.developer.persistent-content-capture.md)
+- [Persistent Content Capture](../bundleresources/entitlements/com.apple.developer.persistent-content-capture.md)
   A Boolean value that indicates whether a Virtual Network Computing (VNC) app needs persistent access to screen capture.
 - [Capturing screen content in macOS](capturing-screen-content-in-macos.md)
   Stream desktop content like displays, apps, and windows by adopting screen capture in your app.

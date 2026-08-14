@@ -24,18 +24,18 @@ func draw(with rect: CGRect, options: NSString.DrawingOptions = [], attributes: 
 
 This method draws as much of the string as it can inside the specified rectangle, wrapping the string text as needed to make it fit. If the string is too big to fit completely inside the rectangle, the method scales the font or adjusts the letter spacing to make the string fit within the given bounds.
 
-If newline characters are present in the string, those characters are honored and cause subsequent text to be placed on the next line underneath the starting point. To correctly draw and size multi-line text, pass [`usesLineFragmentOrigin`](https://developer.apple.com/documentation/UIKit/NSStringDrawingOptions/usesLineFragmentOrigin) in the options parameter.
+If newline characters are present in the string, those characters are honored and cause subsequent text to be placed on the next line underneath the starting point. To correctly draw and size multi-line text, pass [`usesLineFragmentOrigin`](https://developer.apple.com/documentation/uikit/nsstringdrawingoptions/useslinefragmentorigin) in the options parameter.
 
 ##### Special Considerations
 
 This method uses the baseline origin by default.
 
-If [`usesLineFragmentOrigin`](https://developer.apple.com/documentation/UIKit/NSStringDrawingOptions/usesLineFragmentOrigin) is not specified, the rectangle’s height will be ignored and the operation considered to be single-line rendering.
+If [`usesLineFragmentOrigin`](https://developer.apple.com/documentation/uikit/nsstringdrawingoptions/useslinefragmentorigin) is not specified, the rectangle’s height will be ignored and the operation considered to be single-line rendering.
 
 ## Parameters
 
 - `rect`: The bounding rectangle in which to draw the string.
-- `options`: Additional drawing options to apply to the string during rendering. For a list of possible values, see [`NSStringDrawingOptions`](https://developer.apple.com/documentation/UIKit/NSStringDrawingOptions).
+- `options`: Additional drawing options to apply to the string during rendering. For a list of possible values, see [`NSStringDrawingOptions`](https://developer.apple.com/documentation/uikit/nsstringdrawingoptions).
 - `attributes`: The text attributes with which to draw the string. These are the same attributes that can be applied to an `NSAttributedString` object, but in the case of `NSString` objects, the attributes apply to the entire string, rather than ranges within the string.
 - `context`: A context object with information about how to adjust the font tracking and scaling information. On return, the specified object contains information about the actual values used to render the string. This parameter may be `nil`.
 
@@ -51,7 +51,7 @@ If [`usesLineFragmentOrigin`](https://developer.apple.com/documentation/UIKit/NS
   Returns the bounding box size the receiver occupies when drawn with the given attributes.
 - [func variantFittingPresentationWidth(Int) -> String](nsstring/variantfittingpresentationwidth(_:).md)
   Returns a string variation suitable for the specified presentation width.
-- [struct NSStringDrawingOptions](../UIKit/NSStringDrawingOptions.md)
+- [struct NSStringDrawingOptions](../uikit/nsstringdrawingoptions.md)
   Constants that specify the rendering options for drawing a string.
 
 

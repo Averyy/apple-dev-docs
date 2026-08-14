@@ -59,7 +59,7 @@ func restingOrientation(state: State) -> Rotation3D {
 
 ### Inherits From
 - [Equipment](equipment.md)
-- [Identifiable](../Swift/Identifiable.md)
+- [Identifiable](../swift/identifiable.md)
 
 ## See Also
 

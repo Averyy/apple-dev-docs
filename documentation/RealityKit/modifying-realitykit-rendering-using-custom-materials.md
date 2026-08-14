@@ -16,7 +16,7 @@ In shader programming, the term *fragment* refers to a one-pixel portion of an e
 
 The other type of Metal shader that RealityKit uses is the *vertex shader*. Vertex shaders fire once for every vertex in the entity. If you supply a geometry modifier when creating a custom material, RealityKit’s vertex shader calls it. Geometry modifiers fire once for every vertex in the entity.
 
-For more information on writing Metal shaders, see [`Debugging the shaders within a draw command or compute dispatch`](https://developer.apple.com/documentation/Xcode/Debugging-the-shaders-within-a-draw-command-or-compute-dispatch).
+For more information on writing Metal shaders, see [`Debugging the shaders within a draw command or compute dispatch`](https://developer.apple.com/documentation/xcode/debugging-the-shaders-within-a-draw-command-or-compute-dispatch).
 
 ##### Write a Surface Shader
 
@@ -39,7 +39,7 @@ void myEmptyShader(realitykit::surface_parameters params)
 
 The one parameter that RealityKit passes to your surface shader provides access to all input from the entity’s material, as well as interpolated versions of all of the entity’s per-vertex values, such as UV coordinates and vertex colors. When accessed from a surface shader, Metal returns an interpolated version of per-vertex data, based on the fragment’s position relative to the three vertices that make up its triangle. The following illustration demonstrates how that interpolation works for vertex colors.
 
-![An illustration showing a triangle with three labeled vertices. The top vertex is blue, the lower left vertex is green, and the lower right vertex is red, The interior color of the triangle is a gradient blend between these three colors. An arrow points out a specific fragment that’s closer to the blue and red vertices and is shown to have a purplish color.](https://docs-assets.developer.apple.com/published/fa99b74a62a15d2c3137663a27d7f517/modifying-realitykit-rendering-using-custom-materials-1%402x.png)
+![An illustration showing a triangle with three labeled vertices. The top vertex is blue, the lower left vertex is green, and the lower right vertex is red, The interior color of the triangle is a gradient blend between these three colors. An arrow points out a specific fragment that’s closer to the blue and red vertices and is shown to have a purplish color.](/images/com.apple.RealityKit/modifying-realitykit-rendering-using-custom-materials-1@2x.png)
 
 Specify output using the various `set_` functions on the parameter’s `surface()` property. For example, to set the base color value for the current fragment, call `params.surface().set_base_color()`. The custom material’s lighting model determines which `set_` functions it supports. Your surface shader must call at least one supported `set_` function or nothing renders. For a list of which `set_` functions each lighting model supports, see [`lightingModel`](custommaterial/lightingmodel-swift.property.md).
 
@@ -200,9 +200,9 @@ You can download RealityKit’s custom shader Metal API documentation from [`the
 
 ## See Also
 
-- [Implementing adjustable material](../visionOS/implementing-adjustable-material-in-visionos.md)
+- [Implementing adjustable material](../visionos/implementing-adjustable-material-in-visionos.md)
   Update the adjustable parameters of a 3D model in visionOS.
-- [Displaying a stereoscopic image](../visionOS/displaying-a-stereoscopic-image-in-visionos.md)
+- [Displaying a stereoscopic image](../visionos/displaying-a-stereoscopic-image-in-visionos.md)
   Build a stereoscopic image by applying textures to the left and right eye in a shader graph material.
 - [struct ShaderGraphMaterial](shadergraphmaterial.md)
   A material that comes from a shader graph in a Reality Composer Pro project, or a MaterialX shader.

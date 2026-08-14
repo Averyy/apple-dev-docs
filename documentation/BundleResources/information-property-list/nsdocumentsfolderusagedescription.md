@@ -16,7 +16,7 @@ The user implicitly grants your app access to a file in the Documents folder whe
 
 The first time your app tries to access a file in the user’s Documents folder without implied user consent, the system prompts the user for permission to access the folder’s contents. Add the [`NSDocumentsFolderUsageDescription`](information-property-list/nsdocumentsfolderusagedescription.md) key to your app’s [`Information Property List`](information-property-list.md) file to provide a message that explains why your app needs access. The usage description is optional, but highly recommended.
 
-App Sandbox enforces stricter limits on Documents folder access, so that policy may supersede this one if your app enables sandboxing. See [`App Sandbox`](https://developer.apple.com/documentation/Security/app-sandbox) for more information.
+App Sandbox enforces stricter limits on Documents folder access, so that policy may supersede this one if your app enables sandboxing. See [`App Sandbox`](https://developer.apple.com/documentation/security/app-sandbox) for more information.
 
 After the user chooses whether to grant access, the system remembers the user’s choice. To reset permissions, use the `tccutil` command line utility with your app’s bundle ID:
 

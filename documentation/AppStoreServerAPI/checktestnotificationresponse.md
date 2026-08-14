@@ -22,7 +22,7 @@ object CheckTestNotificationResponse
 
 The [`Get Test Notification Status`](get-test-notification-status.md) endpoint returns this response.
 
-The `sendAttempts` array contains up to six [`sendAttemptItem`](sendattemptitem.md) items: one for the initial attempt, and up to five for the retries. Use this information to troubleshoot your server if it doesn’t receive notifications at its [`App Store Server Notifications V2`](https://developer.apple.com/documentation/AppStoreServerNotifications/App-Store-Server-Notifications-V2) endpoint successfully.
+The `sendAttempts` array contains up to six [`sendAttemptItem`](sendattemptitem.md) items: one for the initial attempt, and up to five for the retries. Use this information to troubleshoot your server if it doesn’t receive notifications at its [`App Store Server Notifications V2`](https://developer.apple.com/documentation/appstoreservernotifications/app-store-server-notifications-v2) endpoint successfully.
 
 The `signedPayload` contains the `TEST` notification that the App Store server attempted to send to your server.
 

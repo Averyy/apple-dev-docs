@@ -41,7 +41,7 @@ func sRGBToLinear(inputImage: CIImage) -> CIImage {
 }
 ```
 
-![Two versions of a photograph side by side. The photo on the left shows the Golden Gate Bridge against a clear sky. In the photo on the right, a sRGB-to-linear tone curve filter is applied, and the image is considerably darker.](https://docs-assets.developer.apple.com/published/72ef711ef6c57190f761df92ef484e52/media-4333632%402x.png)
+![Two versions of a photograph side by side. The photo on the left shows the Golden Gate Bridge against a clear sky. In the photo on the right, a sRGB-to-linear tone curve filter is applied, and the image is considerably darker.](/images/com.apple.coreimage/media-4333632@2x.png)
 
 ## See Also
 

@@ -23,7 +23,7 @@ Set the value of this key to a user-readable description of how your app intends
 
 ## See Also
 
-- [Requesting Access to Apple Music Library](../StoreKit/requesting-access-to-apple-music-library.md)
+- [Requesting Access to Apple Music Library](../storekit/requesting-access-to-apple-music-library.md)
   Prompt the customer to authorize access to Apple Music library.
 
 

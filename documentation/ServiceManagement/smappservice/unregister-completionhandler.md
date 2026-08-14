@@ -19,11 +19,11 @@ func unregister() async throws
 
 > ❗ **Important**:  You can call this method from synchronous code using a completion handler, as shown on this page, or you can call it as an asynchronous method that has the following declaration: ```swift
 func unregister() async throws
-``` For information about concurrency and asynchronous code in Swift, see [`Calling Objective-C APIs Asynchronously`](https://developer.apple.com/documentation/Swift/calling-objective-c-apis-asynchronously).
+``` For information about concurrency and asynchronous code in Swift, see [`Calling Objective-C APIs Asynchronously`](https://developer.apple.com/documentation/swift/calling-objective-c-apis-asynchronously).
 
 ## Parameters
 
-- `handler`: A completion handler to call with the result of the unregistration operation. Upon an unsuccessful return, the handler contains a new [`NSError`](https://developer.apple.com/documentation/Foundation/NSError) object describing the error. Upon successful return, this argument is `NULL`.
+- `handler`: A completion handler to call with the result of the unregistration operation. Upon an unsuccessful return, the handler contains a new [`NSError`](https://developer.apple.com/documentation/foundation/nserror) object describing the error. Upon successful return, this argument is `NULL`.
 
 ## See Also
 

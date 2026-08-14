@@ -14,13 +14,13 @@ Render into an offscreen texture by creating a custom render pass.
 
 #### Overview
 
-A render pass is a sequence of rendering commands that draw into a set of textures. This sample executes a pair of render passes to render a view’s contents. For the first pass, the sample creates a custom render pass to render an image into a texture. This pass is  an *offscreen render pass*, because the sample renders to a normal texture, rather than one created by the display subsystem. The second render pass uses a render pass descriptor, provided by the [`MTKView`](https://developer.apple.com/documentation/MetalKit/MTKView) object, to render and display the final image. The sample uses the texture from the offscreen render pass as source data for the drawing command in the second render pass.
+A render pass is a sequence of rendering commands that draw into a set of textures. This sample executes a pair of render passes to render a view’s contents. For the first pass, the sample creates a custom render pass to render an image into a texture. This pass is  an *offscreen render pass*, because the sample renders to a normal texture, rather than one created by the display subsystem. The second render pass uses a render pass descriptor, provided by the [`MTKView`](https://developer.apple.com/documentation/metalkit/mtkview) object, to render and display the final image. The sample uses the texture from the offscreen render pass as source data for the drawing command in the second render pass.
 
 Offscreen render passes are fundamental building blocks for larger or more complicated renderers. For example, many lighting and shadow algorithms require an offscreen render pass to render shadow information and a second pass to calculate the final scene lighting. Offscreen render passes are also useful when performing batch processing of data that doesn’t need to be displayed onscreen.
 
 ##### Create a Texture for the Offscreen Render Pass
 
-An [`MTKView`](https://developer.apple.com/documentation/MetalKit/MTKView) object automatically creates drawable textures to render into. The sample also needs a texture to render into during the offscreen render pass.  To create that texture, it first creates an [`MTLTextureDescriptor`](mtltexturedescriptor.md) object and configures its properties.
+An [`MTKView`](https://developer.apple.com/documentation/metalkit/mtkview) object automatically creates drawable textures to render into. The sample also needs a texture to render into during the offscreen render pass.  To create that texture, it first creates an [`MTLTextureDescriptor`](mtltexturedescriptor.md) object and configures its properties.
 
 ```objective-c
 MTLTextureDescriptor *texDescriptor = [MTLTextureDescriptor new];

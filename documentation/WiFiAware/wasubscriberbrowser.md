@@ -47,9 +47,9 @@ NetworkBrowser(for: .wifiAware( .connecting(to:.selected(devices),  from:service
 ## Relationships
 
 ### Conforms To
-- [BrowserProvider](../Network/BrowserProvider.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [BrowserProvider](../network/browserprovider.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

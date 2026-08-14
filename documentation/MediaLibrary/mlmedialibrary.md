@@ -19,7 +19,7 @@ class MLMediaLibrary
 
 The media library structure is defined by [`MLMediaSource`](mlmediasource.md), [`MLMediaGroup`](mlmediagroup.md), and [`MLMediaObject`](mlmediaobject.md) classes. At the highest level, all content within a media library instance is categorized by media source. Conceptually, a media source represents a single app, such as iTunes or Aperture. Each source contains a hierarchy of media groups that originates from a root group. These groups consist of media objects—individual files containing a piece of media such as a photo, song, or movie. Only one copy of each object exists within a media library instance, but an object can be referenced by multiple groups from a single source. The structure of the group hierarchy is specific to each media source.
 
-![None](https://docs-assets.developer.apple.com/published/73dd79b649dc0dd8f0d55393c4b66189/media-2930225%402x.png)
+![None](/images/com.apple.medialibrary/media-2930225@2x.png)
 
 A media library is initialized using the [`init(options:)`](mlmedialibrary/init(options:).md) method. The options argument to this method serves as a filter. By specifying which folders or sources to include or exclude during load, you can view a particular subset of groups and objects from your collection. All objects provided are thread-safe. For descriptions of possible load options, see [`Load Options Keys`](load-options-keys.md).
 
@@ -46,14 +46,14 @@ The typical and most efficient use case is to create and use one instance of `ML
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

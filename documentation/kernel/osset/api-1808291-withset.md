@@ -19,14 +19,14 @@ An instance of OSArray containing the objects of `set`, with a retain count of 1
 
 #### Overview
 
-`set` must be non-`NULL`. If `capacity` is nonzero, it must be greater than or equal to `count`. The array will grow as needed to accommodate more key-object pairs (`CFMutableSet`, for which the initial capacity is a hard limit).
+`set` must be non-`NULL`. If `capacity` is nonzero, it must be greater than or equal to `count`. The array will grow as needed to accommodate more key-object pairs (*unlike*[`CFMutableSet`](https://developer.apple.com/documentation/corefoundation/cfmutableset), for which the initial capacity is a hard limit).
 
 The objects in `set` are retained for storage in the new set, not copied.
 
 ## Parameters
 
 - `set`: An OSSet whose contents will be stored in the new instance.
-- `capacity`: The initial storage capacity of the set object. If 0, the capacity is set to the number of objects in  ; otherwise   must be greater than or equal to the number of objects in  .
+- `capacity`: The initial storage capacity of the set object. If 0, the capacity is set to the number of objects in `set`; otherwise `capacity` must be greater than or equal to the number of objects in `array`.
 
 ## See Also
 

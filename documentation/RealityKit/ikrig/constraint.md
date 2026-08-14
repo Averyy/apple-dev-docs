@@ -60,7 +60,7 @@ Each constraint can have its position and orientation demands enabled individual
 ## Relationships
 
 ### Conforms To
-- [Identifiable](../Swift/Identifiable.md)
+- [Identifiable](../swift/identifiable.md)
 
 ## See Also
 

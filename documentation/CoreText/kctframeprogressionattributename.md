@@ -22,7 +22,7 @@ let kCTFrameProgressionAttributeName: CFString
 
 #### Discussion
 
-A [`CFNumber`](https://developer.apple.com/documentation/CoreFoundation/CFNumber) object containing a [`CTFrameProgression`](ctframeprogression.md) constant. The default is `kCTFrameProgressionTopToBottom`.
+A [`CFNumber`](https://developer.apple.com/documentation/corefoundation/cfnumber) object containing a [`CTFrameProgression`](ctframeprogression.md) constant. The default is `kCTFrameProgressionTopToBottom`.
 
 This value determines the line-stacking behavior for a frame and does not affect the appearance of the glyphs within that frame.
 

@@ -22,7 +22,7 @@ func CTFontCollectionCopyFontAttributes(_ collection: CTFontCollection, _ attrib
 
 #### Return Value
 
-An array that contains one [`CFDictionary`](https://developer.apple.com/documentation/CoreFoundation/CFDictionary) value for each descriptor mapping the specified attribute names.
+An array that contains one [`CFDictionary`](https://developer.apple.com/documentation/corefoundation/cfdictionary) value for each descriptor mapping the specified attribute names.
 
 ## Parameters
 

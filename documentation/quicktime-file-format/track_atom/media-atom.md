@@ -7,7 +7,7 @@ An atom that describes and defines a track’s media type and sample data.
 
 #### Overview
 
-See [`Media atom ('mdia')`](media_atom.md).
+See [`Media atom`](media_atom.md).
 
 ## See Also
 

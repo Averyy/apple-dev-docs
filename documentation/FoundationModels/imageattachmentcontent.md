@@ -21,14 +21,14 @@ struct ImageAttachmentContent
 
 #### Overview
 
-You don’t create `ImageAttachmentContent` directly. Instead, use one of the [`Attachment`](attachment.md) initializers to attach a [`CGImage`](https://developer.apple.com/documentation/CoreGraphics/CGImage), [`CIImage`](https://developer.apple.com/documentation/CoreImage/CIImage), [`CVPixelBuffer`](https://developer.apple.com/documentation/CoreVideo/cvpixelbuffer-q2e), or image file URL.
+You don’t create `ImageAttachmentContent` directly. Instead, use one of the [`Attachment`](attachment.md) initializers to attach a [`CGImage`](https://developer.apple.com/documentation/coregraphics/cgimage), [`CIImage`](https://developer.apple.com/documentation/coreimage/ciimage), [`CVPixelBuffer`](https://developer.apple.com/documentation/corevideo/cvpixelbuffer-q2e), or image file URL.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../Swift/Equatable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Equatable](../swift/equatable.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

@@ -27,7 +27,7 @@ This protocol conforms to the [`NSScrubberDelegate`](nsscrubberdelegate.md) prot
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 - [NSScrubberDelegate](nsscrubberdelegate.md)
 
 ## See Also

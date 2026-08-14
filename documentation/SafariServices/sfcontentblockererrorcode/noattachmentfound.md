@@ -16,7 +16,7 @@ case noAttachmentFound
 
 #### Discussion
 
-The Content Blocker extension returned an [`NSExtensionItem`](https://developer.apple.com/documentation/Foundation/NSExtensionItem) that did not include an attachment.
+The Content Blocker extension returned an [`NSExtensionItem`](https://developer.apple.com/documentation/foundation/nsextensionitem) that did not include an attachment.
 
 ## See Also
 

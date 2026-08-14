@@ -81,8 +81,8 @@ The [`CFBagApplyFunction(_:_:_:)`](cfbagapplyfunction(_:_:_:).md) function lets 
 ### Inherited By
 - [CFMutableBag](cfmutablebag.md)
 ### Conforms To
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
 
 ## See Also
 

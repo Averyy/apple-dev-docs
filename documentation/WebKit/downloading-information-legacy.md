@@ -13,7 +13,7 @@
 ## See Also
 
 - [WebKit Objective-C Programming Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/DisplayWebContent/DisplayWebContent.html#//apple_ref/doc/uid/10000164i)
-- [URL Loading System](../Foundation/url-loading-system.md)
+- [URL Loading System](../foundation/url-loading-system.md)
   Interact with URLs and communicate with servers using standard Internet protocols.
 - [Document Object Models API (Legacy)](document-object-models-api-legacy.md)
 - [Setting Up a Web View (Legacy)](setting-up-a-web-view-legacy.md)

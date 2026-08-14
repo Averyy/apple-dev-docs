@@ -21,7 +21,7 @@ func accessibilityDecrement()
 
 #### Discussion
 
-If your element has the [`adjustable`](https://developer.apple.com/documentation/UIKit/UIAccessibilityTraits/adjustable) trait, you must implement this method. Use this method to decrement the value of the element. For example, a [`UISlider`](https://developer.apple.com/documentation/UIKit/UISlider) object uses this method to decrement its value by an appropriate amount.
+If your element has the [`adjustable`](https://developer.apple.com/documentation/uikit/uiaccessibilitytraits/adjustable) trait, you must implement this method. Use this method to decrement the value of the element. For example, a [`UISlider`](https://developer.apple.com/documentation/uikit/uislider) object uses this method to decrement its value by an appropriate amount.
 
 ## See Also
 

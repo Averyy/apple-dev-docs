@@ -22,11 +22,11 @@ static let NSManagedObjectContextDidSaveObjectIDs: NSNotification.Name
 
 #### Discussion
 
-This notification’s `object` is the saved context. Don’t peform any asynchronous work or block the calling thread. [`NSManagedObjectContext`](https://developer.apple.com/documentation/CoreData/NSManagedObjectContext) posts notifications to the same thread that creates it.
+This notification’s `object` is the saved context. Don’t peform any asynchronous work or block the calling thread. [`NSManagedObjectContext`](https://developer.apple.com/documentation/coredata/nsmanagedobjectcontext) posts notifications to the same thread that creates it.
 
-The `userInfo` dictionary contains the identifiers of the inserted, updated, deleted, and invalidated managed objects. For the keys to access those objects, see [`NSManagedObjectContext.NotificationKey`](https://developer.apple.com/documentation/CoreData/NSManagedObjectContext/NotificationKey). It’s safe to capture the dictionary’s contents.
+The `userInfo` dictionary contains the identifiers of the inserted, updated, deleted, and invalidated managed objects. For the keys to access those objects, see [`NSManagedObjectContext.NotificationKey`](https://developer.apple.com/documentation/coredata/nsmanagedobjectcontext/notificationkey). It’s safe to capture the dictionary’s contents.
 
-Use this notification instead of [`NSManagedObjectContextDidSave`](nsnotification/name-swift.struct/nsmanagedobjectcontextdidsave.md) if you intend to process the changed managed object on a different thread. It’s safe to pass instances of [`NSManagedObjectID`](https://developer.apple.com/documentation/CoreData/NSManagedObjectID) across thread boundaries.
+Use this notification instead of [`NSManagedObjectContextDidSave`](nsnotification/name-swift.struct/nsmanagedobjectcontextdidsave.md) if you intend to process the changed managed object on a different thread. It’s safe to pass instances of [`NSManagedObjectID`](https://developer.apple.com/documentation/coredata/nsmanagedobjectid) across thread boundaries.
 
 ## See Also
 

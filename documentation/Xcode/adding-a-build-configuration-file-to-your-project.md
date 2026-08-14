@@ -29,7 +29,7 @@ To create a build configuration file:
 5. Deselect all targets to prevent Xcode from embedding the file as a resource in the target’s bundle.
 6. Click Create to add it to your project.
 
-![A figure that shows the selection of the Configuration Settings File template in Xcode’s file template chooser.](https://docs-assets.developer.apple.com/published/2644ce60d016773eec58777b20fa0216/build-configuration-creation%402x.png)
+![A figure that shows the selection of the Configuration Settings File template in Xcode’s file template chooser.](/images/com.apple.Xcode/build-configuration-creation@2x.png)
 
 ##### Map Build Settings to a Build Configuration
 
@@ -40,7 +40,7 @@ You can specify different build configuration files for debug and release builds
 3. Click the disclosure triangles to expand the Debug and Release build configurations in the Configurations area.
 4. Choose configuration settings files for your Debug and Release builds from the pop-up menus. You can also select a file that applies to both build types.
 
-![A figure that shows the Info tab of the project editor. The Configurations section shows build configuration files assigned to the debug and release builds of a target and its project.](https://docs-assets.developer.apple.com/published/0923c1e0e0a76674a2cbdd81ca108379/build-configuration-mapping%402x.png)
+![A figure that shows the Info tab of the project editor. The Configurations section shows build configuration files assigned to the debug and release builds of a target and its project.](/images/com.apple.Xcode/build-configuration-mapping@2x.png)
 
 Xcode applies settings from a build configuration file before the corresponding settings from the project’s or target’s Build Settings tab. For example, if you provide a build configuration file for your target, Xcode applies the project settings, then the build configuration settings, then the target settings.
 

@@ -19,7 +19,7 @@ var availableImageDataCVPixelFormatTypes: [NSNumber] { get }
 
 #### Discussion
 
-The value of this property is an array of `NSNumber` objects that you can use as values for the [`kCVPixelBufferPixelFormatTypeKey`](https://developer.apple.com/documentation/CoreVideo/kCVPixelBufferPixelFormatTypeKey) in the [`outputSettings`](avcapturestillimageoutput/outputsettings.md) property.
+The value of this property is an array of `NSNumber` objects that you can use as values for the [`kCVPixelBufferPixelFormatTypeKey`](https://developer.apple.com/documentation/corevideo/kcvpixelbufferpixelformattypekey) in the [`outputSettings`](avcapturestillimageoutput/outputsettings.md) property.
 
 ## See Also
 

@@ -29,7 +29,7 @@ The [`MIDIInputPortCreateWithProtocol(_:_:_:_:_:)`](midiinputportcreatewithproto
 ## Parameters
 
 - `evtlist`: The incoming MIDI message(s).
-- `srcConnRefCon`: The refCon that identifies the source of the data, which is the value that you pass for the `connRefCon` parameter to [`MIDIPortConnectSource(_:_:_:)`](midiportconnectsource(_:_:_:).md). This value is always [`nil`](https://developer.apple.com/documentation/ObjectiveC/nil-227m0) when receiving a MIDI event on a virtual input.
+- `srcConnRefCon`: The refCon that identifies the source of the data, which is the value that you pass for the `connRefCon` parameter to [`MIDIPortConnectSource(_:_:_:)`](midiportconnectsource(_:_:_:).md). This value is always [`nil`](https://developer.apple.com/documentation/objectivec/nil-227m0) when receiving a MIDI event on a virtual input.
 
 ## See Also
 

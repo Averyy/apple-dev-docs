@@ -14,7 +14,7 @@ Nonlocalized strings are text that appears in your interface that Xcode won’t 
 
 When you run your app, the nonlocalized strings appear in all caps.
 
-![Screenshot of the Xcode Scheme editor with the Run scheme selected and showing the App Language and App Region menus in the detail area.](https://docs-assets.developer.apple.com/published/2f16e334b21b1b262df18b3d6a8e0f0b/preparing-your-interface-for-localization-1%402x.png)
+![Screenshot of the Xcode Scheme editor with the Run scheme selected and showing the App Language and App Region menus in the detail area.](/images/com.apple.Xcode/preparing-your-interface-for-localization-1@2x.png)
 
 ##### Run Your App Using Pseudolanguages
 

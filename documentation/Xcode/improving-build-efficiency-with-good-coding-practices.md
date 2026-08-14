@@ -43,7 +43,7 @@ When configuring the contents of your Objective-C bridging header, include only 
 
 The following figure illustrates how you might separate the symbols you use externally from those your class uses internally. The `MyViewController.h` header contains only the subset of symbols you reference publicly from your Swift code. The `MyViewController-Internal.h` header includes the remaining symbols in category extensions on your class. Include both headers in your Objective-C implementation file, but include only the public header in your Objective-C bridging file.
 
-![An illustration of one header file that contains public symbols and a separate header file that contains symbols intended only for internal use. ](https://docs-assets.developer.apple.com/published/ea53988c2ab83ed6edae8b073984c8d1/improving-build-efficiency-with-good-coding-practices-1%402x.png)
+![An illustration of one header file that contains public symbols and a separate header file that contains symbols intended only for internal use. ](/images/com.apple.Xcode/improving-build-efficiency-with-good-coding-practices-1@2x.png)
 
 The compiler makes all of your public Swift symbols available to your Objective-C code automatically using a generated header. To minimize the size of this generated header, update your Swift code in the following ways:
 
@@ -55,7 +55,7 @@ The compiler makes all of your public Swift symbols available to your Objective-
 
 The Swift compiler is capable of inferring the type of a variable from the value you assign to it. For simple values, the inference process is quick. For example, if you assign the value `0.0` to a property, the compiler can quickly determine that the type is a floating-point number. However, if you assign a complex value to a variable, the compiler must perform extra work to compute any type information.
 
-Consider the following structure, in which the `bigNumber` property has no explicit type information. To determine the type of that property, the Swift compiler must evaluate the results of the [`reduce(_:_:)`](https://developer.apple.com/documentation/Swift/Array/reduce(_:_:)) function, which takes a nontrivial amount of time.
+Consider the following structure, in which the `bigNumber` property has no explicit type information. To determine the type of that property, the Swift compiler must evaluate the results of the [`reduce(_:_:)`](https://developer.apple.com/documentation/swift/array/reduce(_:_:)) function, which takes a nontrivial amount of time.
 
 ```swift
 struct ContrivedExample {
@@ -116,7 +116,7 @@ func sumNonOptional(i: Int?, j: Int?, k: Int?) -> Int? {
 }
 ```
 
-Although this function represents legal Swift syntax, the one-line closure makes the code hard to read and harder for the compiler to evaluate. In fact, the compiler aborts with an error that states it cannot type-check the expression in a reasonable amount of time. The one-line closure is also unnecessary. The definition of the [`reduce(_:_:)`](https://developer.apple.com/documentation/Swift/Array/reduce(_:_:)) function causes it to return the same type you pass in, which in this case is an optional integer.
+Although this function represents legal Swift syntax, the one-line closure makes the code hard to read and harder for the compiler to evaluate. In fact, the compiler aborts with an error that states it cannot type-check the expression in a reasonable amount of time. The one-line closure is also unnecessary. The definition of the [`reduce(_:_:)`](https://developer.apple.com/documentation/swift/array/reduce(_:_:)) function causes it to return the same type you pass in, which in this case is an optional integer.
 
 Rather than use such a complex expression, it’s better to create something simpler and more readable. The following code offers the same behavior as the single-line closure version, but is easier to read and compiles quickly.
 

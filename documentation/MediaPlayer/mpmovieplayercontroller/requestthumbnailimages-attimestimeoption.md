@@ -24,7 +24,7 @@ This method processes each thumbnail request separately and asynchronously. When
 
 ## Parameters
 
-- `playbackTimes`: An array of [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) objects containing the times at which to capture the thumbnail images. Each time value represents the number of seconds from the beginning of the current movie.
+- `playbackTimes`: An array of [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) objects containing the times at which to capture the thumbnail images. Each time value represents the number of seconds from the beginning of the current movie.
 - `option`: The option to use when determining which specific frame to use for each thumbnail image. For a list of possible values, see [`MPMovieTimeOption`](mpmovietimeoption.md).
 
 ## See Also

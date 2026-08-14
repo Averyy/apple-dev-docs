@@ -16,7 +16,7 @@ func policies() -> [Any]!
 
 #### Discussion
 
-This method returns an autoreleased [`NSArray`](https://developer.apple.com/documentation/Foundation/NSArray) containing one or more instances of [`SecPolicy`](https://developer.apple.com/documentation/Security/SecPolicy). The array always contains at least one item (the Apple X.509 Basic policy, if you have never called the [`setPolicies(_:)`](sfcertificateview/setpolicies(_:).md) method).
+This method returns an autoreleased [`NSArray`](https://developer.apple.com/documentation/foundation/nsarray) containing one or more instances of [`SecPolicy`](https://developer.apple.com/documentation/security/secpolicy). The array always contains at least one item (the Apple X.509 Basic policy, if you have never called the [`setPolicies(_:)`](sfcertificateview/setpolicies(_:).md) method).
 
 ## See Also
 

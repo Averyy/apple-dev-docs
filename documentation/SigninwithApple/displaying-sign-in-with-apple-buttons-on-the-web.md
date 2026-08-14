@@ -8,7 +8,7 @@ Configure the appearance of Sign in with Apple buttons with CSS styles.
 
 You can specify the display of your Sign in with Apple button, and edit its appearance and size to fit your webpage. For a description of the button types and usage information, see [`Sign in with Apple Buttons`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/sign-in-with-apple/overview/#sign-in-with-apple-buttons) in the Human Interface Guidelines.
 
-![An image that shows a Sign in with Apple Button 140 points wide with white text on a black background, a Sign in with Apple button 30 points high with black text on a white background, and a Sign in with Apple logo-only button with a 1:1 aspect ratio.](https://docs-assets.developer.apple.com/published/28d981b3f2c813fc757f128425d8d698/media-3703091%402x.png)
+![An image that shows a Sign in with Apple Button 140 points wide with white text on a black background, a Sign in with Apple button 30 points high with black text on a white background, and a Sign in with Apple logo-only button with a 1:1 aspect ratio.](/images/com.apple.signinwithapple/media-3703091@2x.png)
 
 ##### Create a Wrapper Tag and Configure Localization
 

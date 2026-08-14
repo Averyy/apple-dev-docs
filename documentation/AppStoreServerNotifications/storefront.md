@@ -20,7 +20,7 @@ string storefront
 
 #### Discussion
 
-This property uses the ISO 3166-1 alpha-3 country code representation. This property is the same as the [`countryCode`](https://developer.apple.com/documentation/StoreKit/Storefront/countryCode) in StoreKit.
+This property uses the ISO 3166-1 alpha-3 country code representation. This property is the same as the [`countryCode`](https://developer.apple.com/documentation/storekit/storefront/countrycode) in StoreKit.
 
 ## See Also
 

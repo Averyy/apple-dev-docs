@@ -19,7 +19,7 @@ static let expirationDate: UIPasteboard.OptionsKey
 
 #### Discussion
 
-Specify the date and time as an [`NSDate`](https://developer.apple.com/documentation/Foundation/NSDate) value.
+Specify the date and time as an [`NSDate`](https://developer.apple.com/documentation/foundation/nsdate) value.
 
 ## See Also
 

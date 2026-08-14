@@ -135,8 +135,8 @@ func perform() async throws -> some ReturnsValue<Int> & OpensAppIntent {
 ## Relationships
 
 ### Inherits From
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 ### Inherited By
 - [OpensIntent](opensintent.md)
 - [ProvidesDialog](providesdialog.md)

@@ -21,9 +21,9 @@ static let colorSpace: CIImageOption
 
 #### Discussion
 
-For more information on this data type see [`CGColorSpace`](https://developer.apple.com/documentation/CoreGraphics/CGColorSpace). Typically you use this option when you need to load an elevation, mask, normal vector, or RAW sensor data directly from a file without color correcting it. This constant specifies to override Core Image, which, by default, assumes that data is in GenericRGB.
+For more information on this data type see [`CGColorSpace`](https://developer.apple.com/documentation/coregraphics/cgcolorspace). Typically you use this option when you need to load an elevation, mask, normal vector, or RAW sensor data directly from a file without color correcting it. This constant specifies to override Core Image, which, by default, assumes that data is in GenericRGB.
 
-The value you supply for this dictionary key must be a [`CGColorSpace`](https://developer.apple.com/documentation/CoreGraphics/CGColorSpace) data type. If a value for this key isn’t supplied, the image’s [`colorSpace`](ciimage/colorspace.md) dictionary are populated automatically by calling [`CGImageSourceCopyPropertiesAtIndex(_:_:_:)`](https://developer.apple.com/documentation/ImageIO/CGImageSourceCopyPropertiesAtIndex(_:_:_:)). To request that Core Image perform no color management, specify the [`NSNull`](https://developer.apple.com/documentation/Foundation/NSNull) object as the value for this key. Use this option for images that don’t contain color data (such as elevation maps, normal vector maps, and sampled function tables).
+The value you supply for this dictionary key must be a [`CGColorSpace`](https://developer.apple.com/documentation/coregraphics/cgcolorspace) data type. If a value for this key isn’t supplied, the image’s [`colorSpace`](ciimage/colorspace.md) dictionary are populated automatically by calling [`CGImageSourceCopyPropertiesAtIndex(_:_:_:)`](https://developer.apple.com/documentation/imageio/cgimagesourcecopypropertiesatindex(_:_:_:)). To request that Core Image perform no color management, specify the [`NSNull`](https://developer.apple.com/documentation/foundation/nsnull) object as the value for this key. Use this option for images that don’t contain color data (such as elevation maps, normal vector maps, and sampled function tables).
 
 ## See Also
 

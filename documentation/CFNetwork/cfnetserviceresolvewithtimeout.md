@@ -41,7 +41,7 @@ If the service will be used in asynchronous mode, you must call [`CFNetServiceSe
 
 - `theService`: The CFNetService to resolve; cannot be `NULL`. The resolution will fail if the service doesn’t have a domain, a type, and a name.
 - `timeout`: Value of type `CFTimeInterval` specifying the maximum amount of time allowed to perform the resolution. If the resolution is not performed within the specified amount of time, a timeout error will be returned. If `timeout` is less than or equal to zero, an infinite amount of time is allowed.
-- `error`: Pointer to a [`CFStreamError`](https://developer.apple.com/documentation/CoreFoundation/CFStreamError) structure that will be set to an error code and the error code’s domain if an error occurs; or `NULL` if you don’t want to receive the error code and its domain.
+- `error`: Pointer to a [`CFStreamError`](https://developer.apple.com/documentation/corefoundation/cfstreamerror) structure that will be set to an error code and the error code’s domain if an error occurs; or `NULL` if you don’t want to receive the error code and its domain.
 
 ## See Also
 

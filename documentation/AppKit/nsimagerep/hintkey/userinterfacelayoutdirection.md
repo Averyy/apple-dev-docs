@@ -16,7 +16,7 @@ static let userInterfaceLayoutDirection: NSImageRep.HintKey
 
 #### Discussion
 
-The value for this key is an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) with an [`NSUserInterfaceLayoutDirection`](nsuserinterfacelayoutdirection.md) value.
+The value for this key is an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) with an [`NSUserInterfaceLayoutDirection`](nsuserinterfacelayoutdirection.md) value.
 
 ## See Also
 

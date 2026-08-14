@@ -40,7 +40,7 @@ ZStack {
 
 Without the background modifier, the fill color shows through the label. With the modifier, the label’s text and icon appear backed by a shape filled with a color that’s appropriate for light or dark appearance:
 
-![A screenshot of a flag icon and the word flag inside a rectangle with](https://docs-assets.developer.apple.com/published/bc89a35b3c54aa12cda42b491f420dd6/View-background-9%402x.png)
+![A screenshot of a flag icon and the word flag inside a rectangle with](/images/com.apple.SwiftUI/View-background-9@2x.png)
 
 To create a background with other [`View`](view.md) types — or with a stack of views — use [`background(alignment:content:)`](view/background(alignment:content:).md) instead. To add a [`ShapeStyle`](shapestyle.md) as a background, use [`background(_:ignoresSafeAreaEdges:)`](view/background(_:ignoressafeareaedges:).md).
 

@@ -24,7 +24,7 @@ struct ElectricVehicleLoadEvent
 
 Submit load events to track session-based energy consumption and enable the framework to provide insights about electricity usage and adherence to [`ElectricityGuidance`](electricityguidance.md). Load events focus on energy flow during active charging sessions. Load events include an indication of continuity, specifying the event’s beginning, active state, and end.
 
-Include [`ElectricVehicleStatusEvent`](electricvehiclestatusevent.md) in your load events to explain why charging behavior occurs and provide rich activity logs in the Home app. When you adopt the [`EnergyKit LoadEvents Entitlement`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.energykit.loadevents-experience), the Home app displays your device’s energy usage with the device name and performance metrics you provide.
+Include [`ElectricVehicleStatusEvent`](electricvehiclestatusevent.md) in your load events to explain why charging behavior occurs and provide rich activity logs in the Home app. When you adopt the [`EnergyKit LoadEvents Entitlement`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.energykit.loadevents-experience), the Home app displays your device’s energy usage with the device name and performance metrics you provide.
 
 > ❗ **Important**: The system stores and syncs the energy data that you provide through load events with end-to-end encryption through the entire process, ensuring the data isn’t accessible to anyone, even Apple. For more information, see [`EnergyKit data security`](https://developer.apple.comhttps://support.apple.com/guide/security/secd0a47c14c).
 
@@ -77,12 +77,12 @@ If your vehicle supports vehicle-to-grid (V2G) or vehicle-to-home (V2H) capabili
 ## Relationships
 
 ### Conforms To
-- [Decodable](../Swift/Decodable.md)
+- [Decodable](../swift/decodable.md)
 - [ElectricalLoadEventProtocol](electricalloadeventprotocol.md)
-- [Encodable](../Swift/Encodable.md)
-- [Identifiable](../Swift/Identifiable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Encodable](../swift/encodable.md)
+- [Identifiable](../swift/identifiable.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

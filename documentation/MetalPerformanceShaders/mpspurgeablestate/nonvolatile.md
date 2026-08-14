@@ -21,7 +21,7 @@ case nonVolatile
 
 #### Overview
 
-Use this option to mark the resource as non-volatile so the system doesn’t discard it. This is equivalent to [`MTLPurgeableState.nonVolatile`](https://developer.apple.com/documentation/Metal/MTLPurgeableState/nonVolatile).
+Use this option to mark the resource as non-volatile so the system doesn’t discard it. This is equivalent to [`MTLPurgeableState.nonVolatile`](https://developer.apple.com/documentation/metal/mtlpurgeablestate/nonvolatile).
 
 ## See Also
 

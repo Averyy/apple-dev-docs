@@ -49,7 +49,7 @@ The `Property` protocol defines custom properties that can be associated with pr
 ## Relationships
 
 ### Inherits From
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 ### Conforming Types
 - [ProgressManager.Properties.CompletedByteCount](progressmanager/properties/completedbytecount-swift.enum.md)
 - [ProgressManager.Properties.CompletedFileCount](progressmanager/properties/completedfilecount-swift.enum.md)

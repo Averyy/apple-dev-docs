@@ -27,7 +27,7 @@ The following crash report types aren’t available through the Crashes organize
 
 After selecting a crash report in the Crashes organizer, click Generate Recommendations in the Inspector to get assisted triage in Xcode. After selecting a workspace, Xcode opens your project and pastes the crash stack trace into coding assistant to help you identify and fix the root cause of the crash.
 
-![A screenshot showing the Generate Recommendations button in the Inspector of the Crashes reports pane in Xcode Organizer.](https://docs-assets.developer.apple.com/published/d6c43e06fa82d84dea841181b1f81896/acquiring-crash-reports-and-diagnostic-logs-1%402x.png)
+![A screenshot showing the Generate Recommendations button in the Inspector of the Crashes reports pane in Xcode Organizer.](/images/com.apple.Xcode/acquiring-crash-reports-and-diagnostic-logs-1@2x.png)
 
 ##### Transfer Crash Reports and Device Logs to a Mac
 

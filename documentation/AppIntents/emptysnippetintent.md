@@ -29,8 +29,8 @@ You don’t create this type directly. AppIntent uses the default value for func
 ### Conforms To
 - [AppIntent](appintent.md)
 - [PersistentlyIdentifiable](persistentlyidentifiable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 - [SnippetIntent](snippetintent.md)
 
 

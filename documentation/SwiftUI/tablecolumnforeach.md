@@ -21,7 +21,7 @@ struct TableColumnForEach<Data, ID, RowValue, Sort, Content> where Data : Random
 
 #### Overview
 
-Use `TableColumnForEach` to create columns based on a [`RandomAccessCollection`](https://developer.apple.com/documentation/Swift/RandomAccessCollection) of some data type. Either the collection’s elements must conform to [`Identifiable`](https://developer.apple.com/documentation/Swift/Identifiable) or you need to provide an `id` parameter to the `TableColumnForEach` initializer.
+Use `TableColumnForEach` to create columns based on a [`RandomAccessCollection`](https://developer.apple.com/documentation/swift/randomaccesscollection) of some data type. Either the collection’s elements must conform to [`Identifiable`](https://developer.apple.com/documentation/swift/identifiable) or you need to provide an `id` parameter to the `TableColumnForEach` initializer.
 
 The following example shows the interface for an `AudioSampleTrack`, which h as a collection of `AudioSample` across a dynamic number of `AudioChannel`s. The `Table` is created for displaying rows for each sample. It has one static column for the sample’s timestamp and uses a `TableColumnForEach` instance to produce a column for each of the audio channels in the track.
 

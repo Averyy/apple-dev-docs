@@ -9,7 +9,7 @@ An atom that is the container for carrying metadata.
 
 The following figure shows a sample layout of the metadata atom.
 
-![A diagram that shows a box, with the captions “Metadata atom”, “Atom size”, and “Type = ‘meta’” inside the top of the box. Just below the captions is a box with a solid outline, inside the previous box, that extends almost the width of the containing box, and has the caption “Metadata handler atom ‘hdlr’”. Below that, also inside the Metadata atom box, is a box with a dotted outline that has the caption “Metadata header atom ‘mhdr’”. Below that, also inside the Metadata atom box, is a box with a solid outline that has the caption “Metadata item keys atom ‘keys’”. Below that, also inside the Metadata atom box, is a box with a solid outline that has the caption “Metadata item atom ‘](https://docs-assets.developer.apple.com/published/c0dc3209646369fa649d39fffb773837/metadata-atom%402x.png)
+![A diagram that shows a box, with the captions “Metadata atom”, “Atom size”, and “Type = ‘meta’” inside the top of the box. Just below the captions is a box with a solid outline, inside the previous box, that extends almost the width of the containing box, and has the caption “Metadata handler atom ‘hdlr’”. Below that, also inside the Metadata atom box, is a box with a dotted outline that has the caption “Metadata header atom ‘mhdr’”. Below that, also inside the Metadata atom box, is a box with a solid outline that has the caption “Metadata item keys atom ‘keys’”. Below that, also inside the Metadata atom box, is a box with a solid outline that has the caption “Metadata item atom ‘](/images/com.apple.qtff/metadata-atom@2x.png)
 
 The metadata atom requires atoms with a solid outline, and atoms with a dotted outline are optional.
 

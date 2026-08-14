@@ -29,10 +29,10 @@ This method applies the bokeh blur filter to an image. The effect targets a circ
 
 The bokeh blur filter uses the following properties:
 
-- **`radius`**: A `float` representing the area of effect as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
-- **`ringSize`**: A `float` representing the ring size of the bokeh as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
-- **`ringAmount`**: A `float` representing the emphasis at the ring of the bokeh as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
-- **`softness`**: A `float` representing the softness of the bokeh effect as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+- **`radius`**: A `float` representing the area of effect as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
+- **`ringSize`**: A `float` representing the ring size of the bokeh as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
+- **`ringAmount`**: A `float` representing the emphasis at the ring of the bokeh as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
+- **`softness`**: A `float` representing the softness of the bokeh effect as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
 - **`inputImage`**: A [`CIImage`](ciimage.md) representing the input image to apply the filter to.
 
 The following code creates a filter that adds a softer blur to the input image:
@@ -50,7 +50,7 @@ The following code creates a filter that adds a softer blur to the input image:
     }
 ```
 
-![Two photographs of a beach at sunset with multiple palm trees. The photo on the left is clear and crisp. In the photo on the right, a bokeh blur filter has been applied and the image is softer and looks slightly fuzzy or hazy.](https://docs-assets.developer.apple.com/published/05e232c2a39eb51f6c9a6de5ff51777e/media-3544959%402x.png)
+![Two photographs of a beach at sunset with multiple palm trees. The photo on the left is clear and crisp. In the photo on the right, a bokeh blur filter has been applied and the image is softer and looks slightly fuzzy or hazy.](/images/com.apple.coreimage/media-3544959@2x.png)
 
 ## See Also
 

@@ -18,7 +18,7 @@ typealias CGPSConverterEndDocumentCallback = (UnsafeMutableRawPointer?, Bool) ->
 ## Parameters
 
 - `info`: A generic pointer to private data shared among your callback functions. This is the same pointer you supplied to [`init(info:callbacks:options:)`](cgpsconverter/init(info:callbacks:options:).md).
-- `success`: A Boolean value that indicates whether the PostScript conversion completed successfully ([`true`](https://developer.apple.com/documentation/Swift/true) if it did).
+- `success`: A Boolean value that indicates whether the PostScript conversion completed successfully ([`true`](https://developer.apple.com/documentation/swift/true) if it did).
 
 
 ---

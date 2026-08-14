@@ -21,7 +21,7 @@ var kAudioFileStreamProperty_FileFormat: AudioFileStreamPropertyID { get }
 
 #### Discussion
 
-A `UInt32` four-character code that identifies the audio data format. For a list of audio format IDs, see “Audio Data Format IDs” in [`Core Audio Data Types`](https://developer.apple.com/documentation/CoreAudio/core-audio-data-types).
+A `UInt32` four-character code that identifies the audio data format. For a list of audio format IDs, see “Audio Data Format IDs” in [`Core Audio Data Types`](https://developer.apple.com/documentation/coreaudio/core-audio-data-types).
 
 ## See Also
 

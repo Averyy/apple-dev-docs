@@ -26,7 +26,7 @@ Use this animation for documents that can take a noticeable amount of time to lo
 To set up this animation:
 
 1. Get a transition controller for the document.
-2. Set a [`Progress`](https://developer.apple.com/documentation/Foundation/Progress) object to track the document as it loads. Be sure to keep a strong reference to the transition controller until the animation is complete.
+2. Set a [`Progress`](https://developer.apple.com/documentation/foundation/progress) object to track the document as it loads. Be sure to keep a strong reference to the transition controller until the animation is complete.
 3. Begin loading the document.
 4. When the load action is complete, present the document.
 

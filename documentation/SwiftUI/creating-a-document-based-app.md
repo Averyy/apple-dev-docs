@@ -6,28 +6,28 @@ Build apps that people can use to open, edit, and save files using coordinated f
 
 #### Overview
 
-With document-based apps, people can create and manage their own files, like text documents, drawings, and spreadsheets. The [`Document`](Document.md) protocol — available in iOS 27, macOS 27, and visionOS 27 — gives you direct access to your document’s file URL, so you can:
+With document-based apps, people can create and manage their own files, like text documents, drawings, and spreadsheets. The [`Document`](document.md) protocol — available in iOS 27, macOS 27, and visionOS 27 — gives you direct access to your document’s file URL, so you can:
 
 - Read and write files
 - Pass the URL to other frameworks like Core Graphics, AVFoundation, or PDFKit to report progress during long operations
-- Access the file safely using a `FileCoordinator`, provided by [`makeFileCoordinator()`](URLDocumentConfiguration/makeFileCoordinator().md)
+- Access the file safely using a `FileCoordinator`, provided by [`makeFileCoordinator()`](urldocumentconfiguration/makefilecoordinator().md)
 
-The [`Document`](Document.md) combined protocol has no requirements of its own but conforms to [`ReadableDocument`](ReadableDocument.md) and [`WritableDocument`](WritableDocument.md). With it, you can conveniently declare the conformance of your type, as follows:
+The [`Document`](document.md) combined protocol has no requirements of its own but conforms to [`ReadableDocument`](readabledocument.md) and [`WritableDocument`](writabledocument.md). With it, you can conveniently declare the conformance of your type, as follows:
 
 ```swift
  @Observable
  final class TextDocument: Document { }
 ```
 
-Because [`Document`](Document.md) is a reference type, SwiftUI doesn’t need to recreate the document on every change, and you can observe individual property changes with the [`@Observable`](https://developer.apple.comhttps://developer.apple.com/documentation/observation/observable) macro.
+Because [`Document`](document.md) is a reference type, SwiftUI doesn’t need to recreate the document on every change, and you can observe individual property changes with the [`@Observable`](https://developer.apple.comhttps://developer.apple.com/documentation/observation/observable) macro.
 
 The following diagram shows the relationship between the document protocols and the reader and writer protocols:
 
-![A diagram showing two document protocols side by side. On the left, a writable document protocol lists three requirements and connects with an arrow to a document writer protocol below it. On the right, a readable document protocol lists three requirements and connects with an arrow to a document reader protocol below it.](https://docs-assets.developer.apple.com/published/2d241943cacc35d0217adb9b7081c2b2/Creating-a-document-based-app-document-protocols%402x.png)
+![A diagram showing two document protocols side by side. On the left, a writable document protocol lists three requirements and connects with an arrow to a document writer protocol below it. On the right, a readable document protocol lists three requirements and connects with an arrow to a document reader protocol below it.](/images/com.apple.SwiftUI/Creating-a-document-based-app-document-protocols@2x.png)
 
 #### Set Up a Document Based App
 
-To opt into the document infrastructure — autosaving, file coordination, file dialogs, keyboard shortcuts, conflict resolution, and more — use [`DocumentGroup`](DocumentGroup.md) or [`DocumentGroupLaunchScene`](DocumentGroupLaunchScene.md) as your app’s first scene. In iOS, set [`UISupportsDocumentBrowser`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information-property-list/uisupportsdocumentbrowser) to `YES` in your information property list to present a document browser.
+To opt into the document infrastructure — autosaving, file coordination, file dialogs, keyboard shortcuts, conflict resolution, and more — use [`DocumentGroup`](documentgroup.md) or [`DocumentGroupLaunchScene`](documentgrouplaunchscene.md) as your app’s first scene. In iOS, set [`UISupportsDocumentBrowser`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information-property-list/uisupportsdocumentbrowser) to `YES` in your information property list to present a document browser.
 
 A minimal document-based app looks like this:
 
@@ -44,11 +44,11 @@ struct NotesApp: App {
 }
 ```
 
-The [`DocumentGroup`](DocumentGroup.md) initializers take two closures: an `editor` or `viewer` closure parameter that builds the user interface for an open document, and a `makeDocument` or `makeReadableDocument` closure that returns the document instance.
+The [`DocumentGroup`](documentgroup.md) initializers take two closures: an `editor` or `viewer` closure parameter that builds the user interface for an open document, and a `makeDocument` or `makeReadableDocument` closure that returns the document instance.
 
-The [`URLDocumentConfiguration`](URLDocumentConfiguration.md) class that SwiftUI passes to your document’s initializer exposes the file URL, [`lastContentModificationDate`](URLDocumentConfiguration/lastContentModificationDate.md), and [`makeFileCoordinator()`](URLDocumentConfiguration/makeFileCoordinator().md), which creates a file coordinator for accessing the document’s URL outside of read and write. Plus, it conforms to [`@Observable`](https://developer.apple.comhttps://developer.apple.com/documentation/observation/observable) so your code can react to changes.
+The [`URLDocumentConfiguration`](urldocumentconfiguration.md) class that SwiftUI passes to your document’s initializer exposes the file URL, [`lastContentModificationDate`](urldocumentconfiguration/lastcontentmodificationdate.md), and [`makeFileCoordinator()`](urldocumentconfiguration/makefilecoordinator().md), which creates a file coordinator for accessing the document’s URL outside of read and write. Plus, it conforms to [`@Observable`](https://developer.apple.comhttps://developer.apple.com/documentation/observation/observable) so your code can react to changes.
 
-In iOS, use [`DocumentGroupLaunchScene`](DocumentGroupLaunchScene.md) to customize the document browser launch screen with a custom background and multiple creation buttons, like this example:
+In iOS, use [`DocumentGroupLaunchScene`](documentgrouplaunchscene.md) to customize the document browser launch screen with a custom background and multiple creation buttons, like this example:
 
 ```swift
 @main
@@ -79,23 +79,23 @@ extension DocumentCreationSource {
 }
 ```
 
-In your `TextDocument` initializer, check [`creationSource`](DocumentCreationContext/creationSource.md) to find out which button a person tapped and to set up the document as a list or as a note.
+In your `TextDocument` initializer, check [`creationSource`](documentcreationcontext/creationsource.md) to find out which button a person tapped and to set up the document as a list or as a note.
 
 #### Display a Custom Ui Before Presenting a Document
 
-Because the `makeDocument` and `makeReadableDocument` closures are asynchronous, you can also suspend document creation to display a custom user interface — such as a template picker, a configuration wizard, or an import preview — before the document appears. Refer to [`NewDocumentButton`](NewDocumentButton.md) for an end-to-end example of using the [`CheckedContinuation`](https://developer.apple.comhttps://developer.apple.com/documentation/swift/checkedcontinuation) structure to present a template picker or other setup UI before the document opens.
+Because the `makeDocument` and `makeReadableDocument` closures are asynchronous, you can also suspend document creation to display a custom user interface — such as a template picker, a configuration wizard, or an import preview — before the document appears. Refer to [`NewDocumentButton`](newdocumentbutton.md) for an end-to-end example of using the [`CheckedContinuation`](https://developer.apple.comhttps://developer.apple.com/documentation/swift/checkedcontinuation) structure to present a template picker or other setup UI before the document opens.
 
 #### Create a Simple Document
 
-To conform your model to [`Document`](Document.md), provide values that conform to the [`DocumentReader`](DocumentReader.md) and [`DocumentWriter`](DocumentWriter.md) protocols. In most cases, use the [`FileWrapperDocumentReader`](FileWrapperDocumentReader.md) and [`FileWrapperDocumentWriter`](FileWrapperDocumentWriter.md) convenience types provided by SwiftUI to handle writing and reading for you.
+To conform your model to [`Document`](document.md), provide values that conform to the [`DocumentReader`](documentreader.md) and [`DocumentWriter`](documentwriter.md) protocols. In most cases, use the [`FileWrapperDocumentReader`](filewrapperdocumentreader.md) and [`FileWrapperDocumentWriter`](filewrapperdocumentwriter.md) convenience types provided by SwiftUI to handle writing and reading for you.
 
-Declare [`readableContentTypes`](ReadableDocument/readableContentTypes.md) to list the formats your document can open and [`writableContentTypes`](WritableDocument/writableContentTypes.md) to list the formats it can save. The document browser consults the [`readableContentTypes`](ReadableDocument/readableContentTypes.md) to allow opening the files of supported types; the save panel uses [`writableContentTypes`](WritableDocument/writableContentTypes.md) for format options.
+Declare [`readableContentTypes`](readabledocument/readablecontenttypes.md) to list the formats your document can open and [`writableContentTypes`](writabledocument/writablecontenttypes.md) to list the formats it can save. The document browser consults the [`readableContentTypes`](readabledocument/readablecontenttypes.md) to allow opening the files of supported types; the save panel uses [`writableContentTypes`](writabledocument/writablecontenttypes.md) for format options.
 
-Both [`DocumentReader`](DocumentReader.md) and [`DocumentWriter`](DocumentWriter.md) are independent protocols. When saving, SwiftUI calls [`snapshot(contentType:)`](WritableDocument/snapshot(contentType:).md) to capture the current state, then passes the result to [`DocumentWriter`](DocumentWriter.md) in the background. When reading, [`DocumentReader`](DocumentReader.md) runs in the background and returns a snapshot, which SwiftUI delivers to your document through [`apply(snapshot:previous:)`](ReadableDocument/apply(snapshot:previous:).md).
+Both [`DocumentReader`](documentreader.md) and [`DocumentWriter`](documentwriter.md) are independent protocols. When saving, SwiftUI calls [`snapshot(contentType:)`](writabledocument/snapshot(contenttype:).md) to capture the current state, then passes the result to [`DocumentWriter`](documentwriter.md) in the background. When reading, [`DocumentReader`](documentreader.md) runs in the background and returns a snapshot, which SwiftUI delivers to your document through [`apply(snapshot:previous:)`](readabledocument/apply(snapshot:previous:).md).
 
 A snapshot represents the document’s state at a given moment. A document type can use different snapshot types for reading and writing. You can use anything as a snapshot, including the document type itself. SwiftUI coordinates file access for reading and writing automatically.
 
-Define an [`Observable`](https://developer.apple.com/documentation/Observation/Observable) class that conforms to `Document`, like this:
+Define an [`Observable`](https://developer.apple.com/documentation/observation/observable) class that conforms to `Document`, like this:
 
 ```swift
 import SwiftUI
@@ -150,15 +150,15 @@ final class TextDocument: Document {
 }
 ```
 
-With this document model and the [`DocumentGroup`](DocumentGroup.md) setup from the previous section, you have a complete document-based app with open and save support.
+With this document model and the [`DocumentGroup`](documentgroup.md) setup from the previous section, you have a complete document-based app with open and save support.
 
-When SwiftUI autosaves the document or a person presses Command-S, it calls [`snapshot(contentType:)`](WritableDocument/snapshot(contentType:).md) on the main actor to capture the current state, then calls `writer(configuration:)` to get the [`DocumentWriter`](DocumentWriter.md). SwiftUI then passes the snapshot and destination URL to `write(snapshot:to:previous:progress:)` in the background with coordinated file access.
+When SwiftUI autosaves the document or a person presses Command-S, it calls [`snapshot(contentType:)`](writabledocument/snapshot(contenttype:).md) on the main actor to capture the current state, then calls `writer(configuration:)` to get the [`DocumentWriter`](documentwriter.md). SwiftUI then passes the snapshot and destination URL to `write(snapshot:to:previous:progress:)` in the background with coordinated file access.
 
-Reading works the same way: SwiftUI calls `reader(configuration:)`, passes the file URL to `read(from:progress:)` in the background, then delivers the snapshot to your document through [`apply(snapshot:previous:)`](ReadableDocument/apply(snapshot:previous:).md).
+Reading works the same way: SwiftUI calls `reader(configuration:)`, passes the file URL to `read(from:progress:)` in the background, then delivers the snapshot to your document through [`apply(snapshot:previous:)`](readabledocument/apply(snapshot:previous:).md).
 
 #### Support Read Only Documents
 
-To set up your app to display read-only documents, conform to [`ReadableDocument`](ReadableDocument.md) and use the initializer that produces a `ReadableDocument`-conforming value:
+To set up your app to display read-only documents, conform to [`ReadableDocument`](readabledocument.md) and use the initializer that produces a `ReadableDocument`-conforming value:
 
 ```swift
 DocumentGroup { document in
@@ -196,7 +196,7 @@ struct TextEditorView: View {
 
 A package is a directory that the system presents as a single item. People see one icon in Finder, the Files app, and the document browser that they can drag, share, back up, and sync. Inside, your package can hold any files you need, including metadata, pages, layers, or embedded media.
 
-Start with [`FileWrapperDocumentReader`](FileWrapperDocumentReader.md) and [`FileWrapperDocumentWriter`](FileWrapperDocumentWriter.md). Then use a custom [`DocumentReader`](DocumentReader.md) and [`DocumentWriter`](DocumentWriter.md) only when you need to stream data or access URLs directly, or want to optimize disk operations.
+Start with [`FileWrapperDocumentReader`](filewrapperdocumentreader.md) and [`FileWrapperDocumentWriter`](filewrapperdocumentwriter.md). Then use a custom [`DocumentReader`](documentreader.md) and [`DocumentWriter`](documentwriter.md) only when you need to stream data or access URLs directly, or want to optimize disk operations.
 
 The following example shows a minimal notebook document. Its on-disk layout looks like this:
 
@@ -315,7 +315,7 @@ The [`FileWrapper`](https://developer.apple.comhttps://developer.apple.com/docum
 
 #### Implement Custom Readers and Writers
 
-Both [`FileWrapperDocumentReader`](FileWrapperDocumentReader.md) and [`FileWrapperDocumentWriter`](FileWrapperDocumentWriter.md) delegate reading and writing to [`FileWrapper`](https://developer.apple.comhttps://developer.apple.com/documentation/foundation/filewrapper). For documents that need more control, such as streaming reads, custom writing logic, or direct URL access to frameworks like Core Graphics, AVFoundation, or PDFKit, implement your own types that conform to [`DocumentReader`](DocumentReader.md) and [`DocumentWriter`](DocumentWriter.md).
+Both [`FileWrapperDocumentReader`](filewrapperdocumentreader.md) and [`FileWrapperDocumentWriter`](filewrapperdocumentwriter.md) delegate reading and writing to [`FileWrapper`](https://developer.apple.comhttps://developer.apple.com/documentation/foundation/filewrapper). For documents that need more control, such as streaming reads, custom writing logic, or direct URL access to frameworks like Core Graphics, AVFoundation, or PDFKit, implement your own types that conform to [`DocumentReader`](documentreader.md) and [`DocumentWriter`](documentwriter.md).
 
 The following example shows an image document that uses Core Graphics to load and save JPEG files with adjustable compression quality:
 
@@ -340,7 +340,7 @@ final class ImageDocument: Document {
 }
 ```
 
-`ImageDocument.Reader` conforms to [`DocumentReader`](DocumentReader.md) by implementing `read(from:progress:)`, which passes the source URL to `CGImageSourceCreateWithURL(_:_:)` so Core Graphics handles format detection and decoding, as shown here:
+`ImageDocument.Reader` conforms to [`DocumentReader`](documentreader.md) by implementing `read(from:progress:)`, which passes the source URL to `CGImageSourceCreateWithURL(_:_:)` so Core Graphics handles format detection and decoding, as shown here:
 
 ```swift
 extension ImageDocument {
@@ -367,9 +367,9 @@ extension ImageDocument {
 }
 ```
 
-SwiftUI calls `reader(configuration:)` each time it needs to read or re-read the document, for example, when the document opens or when another process changes it. The [`DocumentReadConfiguration`](DocumentReadConfiguration.md) provides the content type, and the file URL arrives as the `source` parameter to `read(from:progress:)`.
+SwiftUI calls `reader(configuration:)` each time it needs to read or re-read the document, for example, when the document opens or when another process changes it. The [`DocumentReadConfiguration`](documentreadconfiguration.md) provides the content type, and the file URL arrives as the `source` parameter to `read(from:progress:)`.
 
-Next, the following code example shows how to use `CGImageDestination` to encode the image as JPEG and apply the snapshot’s compression quality. `ImageDocument.Writer` conforms to [`DocumentWriter`](DocumentWriter.md) by implementing `write(snapshot:to:previous:progress:)`, which passes the destination URL to `CGImageDestinationCreateWithURL(_:_:_:_:)` so Core Graphics handles JPEG encoding and compression.
+Next, the following code example shows how to use `CGImageDestination` to encode the image as JPEG and apply the snapshot’s compression quality. `ImageDocument.Writer` conforms to [`DocumentWriter`](documentwriter.md) by implementing `write(snapshot:to:previous:progress:)`, which passes the destination URL to `CGImageDestinationCreateWithURL(_:_:_:_:)` so Core Graphics handles JPEG encoding and compression.
 
 ```swift
 extension ImageDocument {
@@ -411,13 +411,13 @@ extension ImageDocument {
 
 The `previous` parameter contains the last successfully written snapshot. For single-file documents like a JPEG, text file, or PDF, you can ignore `previous` because you can usually rewrite the whole file. For package documents, you can compare `previous` against the current snapshot to write only the files that changed.
 
-> ❗ **Important**: The [`snapshot(contentType:)`](WritableDocument/snapshot(contentType:).md) method runs on the main thread. Keep it as lightweight as possible, and perform serialization in [`DocumentWriter`](DocumentWriter.md) because writing runs in the background. The snapshot captures *what* to save; the writer handles *how*.
+> ❗ **Important**: The [`snapshot(contentType:)`](writabledocument/snapshot(contenttype:).md) method runs on the main thread. Keep it as lightweight as possible, and perform serialization in [`DocumentWriter`](documentwriter.md) because writing runs in the background. The snapshot captures *what* to save; the writer handles *how*.
 
 The same approach works with any framework that reads and writes files via URLs, including AVFoundation’s [`AVAssetExportSession`](https://developer.apple.comhttps://developer.apple.com/documentation/avfoundation/avassetexportsession), PDFKit’s [`PDFDocument(url:)`](https://developer.apple.comhttps://developer.apple.com/documentation/pdfkit/pdfdocument/init(url:)), or any C library that accepts file paths.
 
 #### Export Documents
 
-To export a document to a new location or format, use the [`fileExporter(isPresented:document:contentType:defaultFilename:onCompletion:onCancellation:)`](View/fileExporter(isPresented:document:contentType:defaultFilename:onCompletion:onCancellation:).md) view modifier, as shown here:
+To export a document to a new location or format, use the [`fileExporter(isPresented:document:contentType:defaultFilename:onCompletion:onCancellation:)`](view/fileexporter(ispresented:document:contenttype:defaultfilename:oncompletion:oncancellation:).md) view modifier, as shown here:
 
 ```swift
 final class TextDocument: WritableDocument { /* ... */ }

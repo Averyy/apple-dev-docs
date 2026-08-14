@@ -20,7 +20,7 @@ var applicationVersion: String { get }
 
 #### Discussion
 
-Returns the value of [`CFBundleShortVersionString`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/CFBundleShortVersionString) from this app’s information property list.
+Returns the value of [`CFBundleShortVersionString`](https://developer.apple.com/documentation/bundleresources/information-property-list/cfbundleshortversionstring) from this app’s information property list.
 
 ## See Also
 

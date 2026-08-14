@@ -29,7 +29,7 @@ Subclasses should override this function to recursively apply the options to the
 ## Parameters
 
 - `options`: A bitfield whose values turn the options on (1) or off (0).
-- `mask`: A mask indicating which bits in   to change. Pass 0 to get the whole current options bitfield without changing any settings.
+- `mask`: A mask indicating which bits in `options` to change. Pass 0 to get the whole current options bitfield without changing any settings.
 - `context`: Unused.
 
 

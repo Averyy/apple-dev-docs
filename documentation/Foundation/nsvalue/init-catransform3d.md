@@ -29,7 +29,7 @@ A new value object that contains the transform information.
 
 ## See Also
 
-- [struct CATransform3D](../QuartzCore/CATransform3D.md)
+- [struct CATransform3D](../quartzcore/catransform3d.md)
   The standard transform matrix used throughout Core Animation.
 - [var caTransform3DValue: CATransform3D](nsvalue/catransform3dvalue.md)
   The CoreAnimation transform structure representation of the value.

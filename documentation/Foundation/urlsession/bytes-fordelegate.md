@@ -26,7 +26,7 @@ An asynchronously-delivered tuple that contains a [`URLSession.AsyncBytes`](urls
 
 #### Discussion
 
-Use this method when you want to process the bytes while the transfer is underway. You can use a `for`-`await`-`in` loop to handle each byte. For textual data, use the [`URLSession.AsyncBytes`](urlsession/asyncbytes.md) properties [`characters`](https://developer.apple.com/documentation/Swift/AsyncSequence/characters), [`unicodeScalars`](https://developer.apple.com/documentation/Swift/AsyncSequence/unicodeScalars), or [`lines`](https://developer.apple.com/documentation/Swift/AsyncSequence/lines) to receive the content as asynchronous sequences of those types.
+Use this method when you want to process the bytes while the transfer is underway. You can use a `for`-`await`-`in` loop to handle each byte. For textual data, use the [`URLSession.AsyncBytes`](urlsession/asyncbytes.md) properties [`characters`](https://developer.apple.com/documentation/swift/asyncsequence/characters), [`unicodeScalars`](https://developer.apple.com/documentation/swift/asyncsequence/unicodescalars), or [`lines`](https://developer.apple.com/documentation/swift/asyncsequence/lines) to receive the content as asynchronous sequences of those types.
 
 To wait until the session finishes transferring data and receive it in a single [`Data`](data.md) instance, use [`data(for:delegate:)`](urlsession/data(for:delegate:).md).
 

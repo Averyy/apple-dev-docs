@@ -8,7 +8,7 @@ Enable people to search for text or other content within your app.
 
 To present a search field in your app, create and manage storage for search text and optionally for discrete search terms known as *tokens*. Then bind the storage to the search field by applying the searchable view modifier to a view in your app.
 
-![None](https://docs-assets.developer.apple.com/published/366a90bfb4ab3aea60848d447e01a437/search-hero%402x.png)
+![None](/images/com.apple.SwiftUI/search-hero@2x.png)
 
 As people interact with the field, they implicitly modify the underlying storage and, thereby, the search parameters. Your app correspondingly updates other parts of its interface. To enhance the search interaction, you can also:
 
@@ -16,7 +16,7 @@ As people interact with the field, they implicitly modify the underlying storage
 - Implement search scopes that help people to narrow the search space.
 - Detect when people activate the search field, and programmatically dismiss the search field using environment values.
 
-For design guidance, see [`Searching`](https://developer.apple.com/design/Human-Interface-Guidelines/searching) in the Human Interface Guidelines.
+For design guidance, see [`Searching`](https://developer.apple.com/design/human-interface-guidelines/searching) in the Human Interface Guidelines.
 
 ## Topics
 

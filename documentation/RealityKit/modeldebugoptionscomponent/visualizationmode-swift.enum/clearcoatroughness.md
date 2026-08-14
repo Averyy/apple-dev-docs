@@ -36,7 +36,7 @@ if let television = try? await ModelEntity(named: "tv_retro") {
 
 | [`ModelDebugOptionsComponent.VisualizationMode.none`](modeldebugoptionscomponent/visualizationmode-swift.enum/none.md) | `clearcoatRoughness` |
 | --- | --- |
-| ![A screenshot of a virtual TV in a visionOS app. The TV is an old-fashioned television displaying a multicolored test pattern. It is drawn with shadows and highlights to appear as realistic as possible.](https://docs-assets.developer.apple.com/published/a57e508a6549f1c8cce08e79ea6b7ec5/ModelDebugOptionsComponent-VisualizationMode-enum-none.jpg) | ![A screenshot of a virtual TV in a visionOS app. The TV is using a clearcoat roughness visualization, appearing in black. This is a graphical representation of the TV’s clearcoat roughness values.](https://docs-assets.developer.apple.com/published/dd883998f0fb578907595c7e2835d5eb/ModelDebugOptionsComponent-VisualizationMode-enum-clearcoatRoughness.jpg) |
+| ![A screenshot of a virtual TV in a visionOS app. The TV is an old-fashioned television displaying a multicolored test pattern. It is drawn with shadows and highlights to appear as realistic as possible.](/images/com.apple.RealityKit/ModelDebugOptionsComponent-VisualizationMode-enum-none.jpg) | ![A screenshot of a virtual TV in a visionOS app. The TV is using a clearcoat roughness visualization, appearing in black. This is a graphical representation of the TV’s clearcoat roughness values.](/images/com.apple.RealityKit/ModelDebugOptionsComponent-VisualizationMode-enum-clearcoatRoughness.jpg) |
 
 ## See Also
 

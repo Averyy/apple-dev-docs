@@ -18,9 +18,9 @@ A Boolean value indicating whether your app may request a person’s age range.
 
 #### Discussion
 
-This entitlement works with the [`Declared Age Range`](https://developer.apple.com/documentation/DeclaredAgeRange) framework, which enables people to share their age range with your app.
+This entitlement works with the [`Declared Age Range`](https://developer.apple.com/documentation/declaredagerange) framework, which enables people to share their age range with your app.
 
-To use Declared Age Range, add this entitlement to your app by enabling the Declared Age Range capability on your target in Xcode. For more information, refer to [`Adding capabilities to your app`](https://developer.apple.com/documentation/Xcode/adding-capabilities-to-your-app).
+To use Declared Age Range, add this entitlement to your app by enabling the Declared Age Range capability on your target in Xcode. For more information, refer to [`Adding capabilities to your app`](https://developer.apple.com/documentation/xcode/adding-capabilities-to-your-app).
 
 
 ---

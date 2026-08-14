@@ -36,7 +36,7 @@ In a kernel-based file system, you typically preallocate space with the `VNOP_AL
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

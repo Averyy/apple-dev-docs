@@ -22,7 +22,7 @@ static let orientation: NSAttributedString.TextLayoutSectionKey
 
 #### Discussion
 
-An [`NSNumber`](nsnumber.md) object containing an [`NSLayoutManager.TextLayoutOrientation`](https://developer.apple.com/documentation/AppKit/NSLayoutManager/TextLayoutOrientation) value. The default value is [`NSLayoutManager.TextLayoutOrientation.horizontal`](https://developer.apple.com/documentation/AppKit/NSLayoutManager/TextLayoutOrientation/horizontal).
+An [`NSNumber`](nsnumber.md) object containing an [`NSLayoutManager.TextLayoutOrientation`](https://developer.apple.com/documentation/appkit/nslayoutmanager/textlayoutorientation) value. The default value is [`NSLayoutManager.TextLayoutOrientation.horizontal`](https://developer.apple.com/documentation/appkit/nslayoutmanager/textlayoutorientation/horizontal).
 
 ## See Also
 

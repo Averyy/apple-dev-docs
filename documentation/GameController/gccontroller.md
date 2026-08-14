@@ -49,16 +49,16 @@ Alternatively, you can create a snapshot of a real or virtual controller using t
   Starts searching for nearby wireless controllers.
 - [class func stopWirelessControllerDiscovery()](gccontroller/stopwirelesscontrollerdiscovery.md)
   Stops searching for nearby wireless controllers.
-- [static let GCControllerDidConnect: NSNotification.Name](../Foundation/NSNotification/Name-swift.struct/GCControllerDidConnect.md)
+- [static let GCControllerDidConnect: NSNotification.Name](../foundation/nsnotification/name-swift.struct/gccontrollerdidconnect.md)
   A notification that posts after a controller connects to the device.
-- [static let GCControllerDidDisconnect: NSNotification.Name](../Foundation/NSNotification/Name-swift.struct/GCControllerDidDisconnect.md)
+- [static let GCControllerDidDisconnect: NSNotification.Name](../foundation/nsnotification/name-swift.struct/gccontrollerdiddisconnect.md)
   A notification that posts after a controller disconnects from the device.
 ### Handling multiple controllers
 - [class var current: GCController?](gccontroller/current.md)
   The most recently used game controller.
-- [static let GCControllerDidBecomeCurrent: NSNotification.Name](../Foundation/NSNotification/Name-swift.struct/GCControllerDidBecomeCurrent.md)
+- [static let GCControllerDidBecomeCurrent: NSNotification.Name](../foundation/nsnotification/name-swift.struct/gccontrollerdidbecomecurrent.md)
   A notification that posts when a controller becomes the current controller.
-- [static let GCControllerDidStopBeingCurrent: NSNotification.Name](../Foundation/NSNotification/Name-swift.struct/GCControllerDidStopBeingCurrent.md)
+- [static let GCControllerDidStopBeingCurrent: NSNotification.Name](../foundation/nsnotification/name-swift.struct/gccontrollerdidstopbeingcurrent.md)
   A notification that posts when a controller stops being the current controller.
 ### Inspecting a controller
 - [var isAttachedToDevice: Bool](gccontroller/isattachedtodevice.md)
@@ -160,15 +160,15 @@ Alternatively, you can create a snapshot of a real or virtual controller using t
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
 - [GCDevice](gcdevice.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

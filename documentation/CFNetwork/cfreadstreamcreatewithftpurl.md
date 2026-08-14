@@ -25,11 +25,11 @@ A new read stream, or `NULL` if the call failed. Ownership follows the [`The Cre
 
 #### Discussion
 
-This function creates an FTP read stream for downloading data from an FTP URL. If the `ftpURL` parameter is created with the user name and password as part of the URL (such as `ftp://username:password@ftp.example.com`) then the user name and password will automatically be set in the `CFReadStream`. Otherwise, call [`CFReadStreamSetProperty(_:_:_:)`](https://developer.apple.com/documentation/CoreFoundation/CFReadStreamSetProperty(_:_:_:)) to set the steam’s properties, such as `kCFStreamPropertyFTPUserName` and `kCFStreamPropertyFTPPassword` to associate a user name and password with the stream that are used to log in when the stream is opened. See `Constants` for a description of all FTP stream properties.
+This function creates an FTP read stream for downloading data from an FTP URL. If the `ftpURL` parameter is created with the user name and password as part of the URL (such as `ftp://username:password@ftp.example.com`) then the user name and password will automatically be set in the `CFReadStream`. Otherwise, call [`CFReadStreamSetProperty(_:_:_:)`](https://developer.apple.com/documentation/corefoundation/cfreadstreamsetproperty(_:_:_:)) to set the steam’s properties, such as `kCFStreamPropertyFTPUserName` and `kCFStreamPropertyFTPPassword` to associate a user name and password with the stream that are used to log in when the stream is opened. See `Constants` for a description of all FTP stream properties.
 
-To initiate a connection with the FTP server, call [`CFReadStreamOpen(_:)`](https://developer.apple.com/documentation/CoreFoundation/CFReadStreamOpen(_:)). To read the FTP stream, call [`CFReadStreamRead(_:_:_:)`](https://developer.apple.com/documentation/CoreFoundation/CFReadStreamRead(_:_:_:)). If the URL refers to a directory, the stream provides the listing results sent by the server. If the URL refers to a file, the stream provides the data in that file.
+To initiate a connection with the FTP server, call [`CFReadStreamOpen(_:)`](https://developer.apple.com/documentation/corefoundation/cfreadstreamopen(_:)). To read the FTP stream, call [`CFReadStreamRead(_:_:_:)`](https://developer.apple.com/documentation/corefoundation/cfreadstreamread(_:_:_:)). If the URL refers to a directory, the stream provides the listing results sent by the server. If the URL refers to a file, the stream provides the data in that file.
 
-To close a connection with the FTP server, call [`CFReadStreamClose(_:)`](https://developer.apple.com/documentation/CoreFoundation/CFReadStreamClose(_:)).
+To close a connection with the FTP server, call [`CFReadStreamClose(_:)`](https://developer.apple.com/documentation/corefoundation/cfreadstreamclose(_:)).
 
 ## Parameters
 
@@ -52,7 +52,7 @@ To close a connection with the FTP server, call [`CFReadStreamClose(_:)`](https:
 - [let kCFStreamPropertyHTTPProxyPort: CFString](kcfstreampropertyhttpproxyport.md)
 - [let kCFStreamPropertyHTTPRequestBytesWrittenCount: CFString](kcfstreampropertyhttprequestbyteswrittencount.md)
 - [let kCFStreamPropertyHTTPResponseHeader: CFString](kcfstreampropertyhttpresponseheader.md)
-  HTTP Response Header property. When copied by [`CFReadStreamCopyProperty(_:_:)`](https://developer.apple.com/documentation/CoreFoundation/CFReadStreamCopyProperty(_:_:)), the header of an HTTP response message is returned.
+  HTTP Response Header property. When copied by [`CFReadStreamCopyProperty(_:_:)`](https://developer.apple.com/documentation/corefoundation/cfreadstreamcopyproperty(_:_:)), the header of an HTTP response message is returned.
 - [let kCFStreamPropertyHTTPSProxyHost: CFString](kcfstreampropertyhttpsproxyhost.md)
 - [let kCFStreamPropertyHTTPSProxyPort: CFString](kcfstreampropertyhttpsproxyport.md)
 - [let kCFStreamPropertyHTTPShouldAutoredirect: CFString](kcfstreampropertyhttpshouldautoredirect.md)

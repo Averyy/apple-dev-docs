@@ -14,7 +14,7 @@ Calculate the histogram of one image, and apply it to a second image.
 
 The example below shows a source image (bottom left) and a histogram reference image (top left), with the histogram specification output on the right.
 
-![Photos showing a source image of a lemon bloom, a histogram source image of brightly colored flowers, and histogram specified result. The histogram specified result contains the original image with the histogram source image colors.](https://docs-assets.developer.apple.com/published/227e8dda814cb49fe07834e4436fdc61/specification_2x.png)
+![Photos showing a source image of a lemon bloom, a histogram source image of brightly colored flowers, and histogram specified result. The histogram specified result contains the original image with the histogram source image colors.](/images/com.apple.accelerate/specification_2x.png)
 
 Before exploring the code, build and run the app to familiarize yourself with the different visual results the app generates when you select different source and reference images.
 

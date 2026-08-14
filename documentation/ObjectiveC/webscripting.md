@@ -22,7 +22,7 @@ Instances of all other classes will be wrapped before being passed to the script
 
 Access to an object’s attributes, such as instance variables, is managed by key-value coding (KVC). The KVC methods `setValue:forKey:` and `valueForKey:` are used to access the attributes of an object from the scripting environment. Additionally, the scripting environment can attempt any number of attribute requests or method invocations that are not exported by your class. You can manage these requests by overriding the `setValue:forUndefinedKey:` and `valueForUndefinedKey:` methods from the key-value coding protocol.
 
-Exceptions can be raised from the scripting environment by sending a [`throwException(_:)`](https://developer.apple.com/documentation/WebKit/WebScriptObject/throwException(_:)) message to the relevant `WebScriptObject` instance. The method raising the exception must be within the scope of the script invocation.
+Exceptions can be raised from the scripting environment by sending a [`throwException(_:)`](https://developer.apple.com/documentation/webkit/webscriptobject/throwexception(_:)) message to the relevant `WebScriptObject` instance. The method raising the exception must be within the scope of the script invocation.
 
 ## Topics
 

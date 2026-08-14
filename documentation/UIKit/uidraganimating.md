@@ -33,7 +33,7 @@ You can use a [`UIDragAnimating`](uidraganimating.md) object to animate your own
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 ### Inherited By
 - [UICollectionViewDropPlaceholderContext](uicollectionviewdropplaceholdercontext.md)
 - [UITableViewDropPlaceholderContext](uitableviewdropplaceholdercontext.md)

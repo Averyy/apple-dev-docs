@@ -14,7 +14,7 @@ Build neural networks with layers.
 - Initialize [`MPSCNNKernel`](mpscnnkernel.md) objects once and reuse them.
 - You can use [`MPSCNNNeuron`](mpscnnneuron.md) objects and similar to perform pre-processing of images, such as scaling and resizing.
 - Specify a neuron filter with an [`MPSCNNConvolutionDescriptor`](mpscnnconvolutiondescriptor.md) object to combine the convolution and neuron operations.
-- Use [`MPSTemporaryImage`](mpstemporaryimage.md) objects for intermediate images that live for a short period of time (one [`MTLCommandBuffer`](https://developer.apple.com/documentation/Metal/MTLCommandBuffer) object).
+- Use [`MPSTemporaryImage`](mpstemporaryimage.md) objects for intermediate images that live for a short period of time (one [`MTLCommandBuffer`](https://developer.apple.com/documentation/metal/mtlcommandbuffer) object).
 
 [`MPSTemporaryImage`](mpstemporaryimage.md) objects can reduce the amount of memory used by the CNN by several folds, and similarly reduce the amount of CPU time spent allocating storage and latency between the time a command buffer is committed and when it is actually executed on the GPU.
 

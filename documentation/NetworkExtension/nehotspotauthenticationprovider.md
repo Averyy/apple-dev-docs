@@ -39,7 +39,7 @@ Conform to this protocol in your hotspot helper app extension to handle the hots
 ## Relationships
 
 ### Inherits From
-- [AppExtension](../ExtensionFoundation/AppExtension.md)
+- [AppExtension](../extensionfoundation/appextension.md)
 
 ## See Also
 

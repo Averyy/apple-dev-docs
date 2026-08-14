@@ -44,7 +44,7 @@ struct PopoverModel: Identifiable {
 }
 ```
 
-![A screenshot showing a popover that says Custom Message hovering](https://docs-assets.developer.apple.com/published/63364f288054c4ca93b99c9322d4f60e/View-popover-2%402x.png)
+![A screenshot showing a popover that says Custom Message hovering](/images/com.apple.SwiftUI/View-popover-2@2x.png)
 
 > ❗ **Important**: Prior to iOS 18.1, the popover arrow edge was not respected. Apps that are re-compiled with the iOS 18.1 or later SDK or visionOS 2.1 or later SDK and run on iOS 18.1 or later or visionOS 2.1 or later have the arrow edge respected. On macOS, arrow edge has always been respected. Alternatively, to allow the system to choose the best orientation of the popover’s arrow, use the `View/popover(item:attachmentAnchor:content:)` variant.
 

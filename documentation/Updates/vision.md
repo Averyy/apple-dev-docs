@@ -6,19 +6,19 @@ Learn about important changes in Vision.
 
 #### Overview
 
-Browse notable changes in [`Vision`](https://developer.apple.com/documentation/Vision).
+Browse notable changes in [`Vision`](https://developer.apple.com/documentation/vision).
 
 #### June 2025
 
-- Use [`DetectLensSmudgeRequest`](https://developer.apple.com/documentation/Vision/DetectLensSmudgeRequest) and [`SmudgeObservation`](https://developer.apple.com/documentation/Vision/SmudgeObservation) to detect a smudge with a confidence level in an image or video frame capture.
-- Use [`RecognizeDocumentsRequest`](https://developer.apple.com/documentation/Vision/RecognizeDocumentsRequest) and  [`DocumentObservation`](https://developer.apple.com/documentation/Vision/DocumentObservation) to scan a document and recieve detailed information about its structure and content.
+- Use [`DetectLensSmudgeRequest`](https://developer.apple.com/documentation/vision/detectlenssmudgerequest) and [`SmudgeObservation`](https://developer.apple.com/documentation/vision/smudgeobservation) to detect a smudge with a confidence level in an image or video frame capture.
+- Use [`RecognizeDocumentsRequest`](https://developer.apple.com/documentation/vision/recognizedocumentsrequest) and  [`DocumentObservation`](https://developer.apple.com/documentation/vision/documentobservation) to scan a document and recieve detailed information about its structure and content.
 
 #### June 2024
 
 - Use the new Swift-only API that follows best design practices in Swift and leverages modern language features like Swift concurrency for optimal performance.
-- Analyze an image for aesthetically pleasing attributes by using [`CalculateImageAestheticsScoresRequest`](https://developer.apple.com/documentation/Vision/CalculateImageAestheticsScoresRequest) and provides a score through [`ImageAestheticsScoresObservation`](https://developer.apple.com/documentation/Vision/ImageAestheticsScoresObservation). The score indicates whether an image contains memorable or exciting content.
-- Use [`DetectHumanBodyPoseRequest`](https://developer.apple.com/documentation/Vision/DetectHumanBodyPoseRequest) to detect hands along side the 2D body joint skeleton.
-- Use [`DetectHumanBodyPoseRequest.Revision.revision2`](https://developer.apple.com/documentation/Vision/DetectHumanBodyPoseRequest/Revision-swift.enum/revision2) to improve 2D human body pose detection.
+- Analyze an image for aesthetically pleasing attributes by using [`CalculateImageAestheticsScoresRequest`](https://developer.apple.com/documentation/vision/calculateimageaestheticsscoresrequest) and provides a score through [`ImageAestheticsScoresObservation`](https://developer.apple.com/documentation/vision/imageaestheticsscoresobservation). The score indicates whether an image contains memorable or exciting content.
+- Use [`DetectHumanBodyPoseRequest`](https://developer.apple.com/documentation/vision/detecthumanbodyposerequest) to detect hands along side the 2D body joint skeleton.
+- Use [`DetectHumanBodyPoseRequest.Revision.revision2`](https://developer.apple.com/documentation/vision/detecthumanbodyposerequest/revision-swift.enum/revision2) to improve 2D human body pose detection.
 
 ## See Also
 

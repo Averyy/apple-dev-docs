@@ -17,9 +17,9 @@ The entitlement the system requires for an app to use the EnergyKit framework.
 
 #### Discussion
 
-This entitlement works with the [`EnergyKit`](https://developer.apple.com/documentation/EnergyKit) framework, which provides insights and suggestions to manage home device electricity usage.
+This entitlement works with the [`EnergyKit`](https://developer.apple.com/documentation/energykit) framework, which provides insights and suggestions to manage home device electricity usage.
 
-To use EnergyKit, add this entitlement to your app by enabling the EnergyKit capability on your target in Xcode. For more information, see [`Adding capabilities to your app`](https://developer.apple.com/documentation/Xcode/adding-capabilities-to-your-app).
+To use EnergyKit, add this entitlement to your app by enabling the EnergyKit capability on your target in Xcode. For more information, see [`Adding capabilities to your app`](https://developer.apple.com/documentation/xcode/adding-capabilities-to-your-app).
 
 ## See Also
 

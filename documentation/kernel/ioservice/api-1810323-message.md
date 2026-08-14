@@ -24,7 +24,7 @@ A provider may deliver messages via the `message` method to its clients informin
 
 ## Parameters
 
-- `type`: A type defined in   or defined by the provider family.
+- `type`: A type defined in `IOMessage.h` or defined by the provider family.
 - `provider`: The provider from which the message originates.
 - `argument`: An argument defined by the provider family, not used by IOService.
 

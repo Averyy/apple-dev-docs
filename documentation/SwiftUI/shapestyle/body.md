@@ -32,7 +32,7 @@ ZStack {
 .frame(width: 200, height: 50)
 ```
 
-![A screenshot of a cyan rectangle with the text hello appearing](https://docs-assets.developer.apple.com/published/d98cc7c4fc793e30a60868b76210d872/ShapeStyle-body-1%402x.png)
+![A screenshot of a cyan rectangle with the text hello appearing](/images/com.apple.SwiftUI/ShapeStyle-body-1@2x.png)
 
 
 ---

@@ -18,7 +18,7 @@ protocol NFCISO15693Tag : NFCNDEFTag, __NFCTag
 
 #### Overview
 
-The [`NFCTagReaderSessionDelegate`](nfctagreadersessiondelegate-2joku.md) receives an object that conforms to the [`NFCISO15693Tag`](nfciso15693tag.md) protocol when the [`NFCTagReaderSession`](nfctagreadersession.md) detects an ISO 15693-compatible tag. For the delegate to receive the tag object, your app must include the [`Near Field Communication Tag Reader Session Formats Entitlement`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.nfc.readersession.formats).
+The [`NFCTagReaderSessionDelegate`](nfctagreadersessiondelegate-2joku.md) receives an object that conforms to the [`NFCISO15693Tag`](nfciso15693tag.md) protocol when the [`NFCTagReaderSession`](nfctagreadersession.md) detects an ISO 15693-compatible tag. For the delegate to receive the tag object, your app must include the [`Near Field Communication Tag Reader Session Formats Entitlement`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.nfc.readersession.formats).
 
 For the reader session to read and write data to the tag, it must be available to the reader session. Use the [`isAvailable`](nfctag-swift.enum/isavailable.md) property to check the tag’s availability.
 
@@ -118,10 +118,10 @@ For the reader session to read and write data to the tag, it must be available t
 
 ### Inherits From
 - [NFCNDEFTag](nfcndeftag.md)
-- [NSCoding](../Foundation/NSCoding.md)
-- [NSCopying](../Foundation/NSCopying.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [NSSecureCoding](../Foundation/NSSecureCoding.md)
+- [NSCoding](../foundation/nscoding.md)
+- [NSCopying](../foundation/nscopying.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSSecureCoding](../foundation/nssecurecoding.md)
 
 ## See Also
 

@@ -22,7 +22,7 @@ let kCMSampleAttachmentKey_DoNotDisplay: CFString
 
 #### Discussion
 
-Use this attachment at run time to request this behavior from a display pipeline such as the [`AVSampleBufferDisplayLayer`](https://developer.apple.com/documentation/AVFoundation/AVSampleBufferDisplayLayer) class.
+Use this attachment at run time to request this behavior from a display pipeline such as the [`AVSampleBufferDisplayLayer`](https://developer.apple.com/documentation/avfoundation/avsamplebufferdisplaylayer) class.
 
 This attachment is not written to media files.
 

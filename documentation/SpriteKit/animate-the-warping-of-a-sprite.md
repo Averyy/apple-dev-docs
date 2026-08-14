@@ -43,7 +43,7 @@ let warpGeometryGrid = SKWarpGeometryGrid(columns: 2,
 
 A geometry grid warps the geometry defined by the source positions (left illustration) into a new geometry defined by the destination positions (right illustration).
 
-![Warped geometry](https://docs-assets.developer.apple.com/published/3fc81b85459ba8a414e02f7c584254ad/media-2975377%402x.png)
+![Warped geometry](/images/com.apple.spritekit/media-2975377@2x.png)
 
 Several options are available for applying this geometry to a node that conforms to [`SKWarpable`](skwarpable.md), such as an [`SKSpriteNode`](skspritenode.md).
 
@@ -70,7 +70,7 @@ let warpAction = SKAction.animate(withWarps:[warpGeometryGridNoWarp,
                                   times: [0.25, 0.5, 0.75])
 ```
 
-Objects that subclass [`SKNode`](sknode.md) but don’t conform to [`SKWarpable`](skwarpable.md) — for example, [`SKShapeNode`](skshapenode.md), [`SKEmitterNode`](skemitternode.md), or [`SKVideoNode`](skvideonode.md) — can be warped by adding them as children of an [`SKEffectNode`](skeffectnode.md) object. You can, for example, use this approach to distort vector artwork supplied as simple geometric primitives or [`CGPath`](https://developer.apple.com/documentation/CoreGraphics/CGPath) objects and rendered with a shape node.  Warping a particle emitter node that has been added as a child of an effect node allows precise control of the overall shape of a particle system.
+Objects that subclass [`SKNode`](sknode.md) but don’t conform to [`SKWarpable`](skwarpable.md) — for example, [`SKShapeNode`](skshapenode.md), [`SKEmitterNode`](skemitternode.md), or [`SKVideoNode`](skvideonode.md) — can be warped by adding them as children of an [`SKEffectNode`](skeffectnode.md) object. You can, for example, use this approach to distort vector artwork supplied as simple geometric primitives or [`CGPath`](https://developer.apple.com/documentation/coregraphics/cgpath) objects and rendered with a shape node.  Warping a particle emitter node that has been added as a child of an effect node allows precise control of the overall shape of a particle system.
 
 
 ---

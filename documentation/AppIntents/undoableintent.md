@@ -26,9 +26,9 @@ protocol UndoableIntent : SystemIntent
 
 #### Overview
 
-Add support for this protocol if your app intent performs a task that someone might want to undo from your app’s interface. This protocol provides access to an instance of the [`UndoManager`](https://developer.apple.com/documentation/Foundation/UndoManager) type suitable for use in your app intent’s code. You can use this undo manager from either your app or an app extension you use to run app intents.
+Add support for this protocol if your app intent performs a task that someone might want to undo from your app’s interface. This protocol provides access to an instance of the [`UndoManager`](https://developer.apple.com/documentation/foundation/undomanager) type suitable for use in your app intent’s code. You can use this undo manager from either your app or an app extension you use to run app intents.
 
-For more information about adding undo support to your code, see the [`UndoManager`](https://developer.apple.com/documentation/Foundation/UndoManager) type.
+For more information about adding undo support to your code, see the [`UndoManager`](https://developer.apple.com/documentation/foundation/undomanager) type.
 
 ## Topics
 
@@ -41,8 +41,8 @@ For more information about adding undo support to your code, see the [`UndoManag
 ### Inherits From
 - [AppIntent](appintent.md)
 - [PersistentlyIdentifiable](persistentlyidentifiable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 - [SystemIntent](systemintent.md)
 
 ## See Also

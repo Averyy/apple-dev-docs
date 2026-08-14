@@ -22,9 +22,9 @@ static let accelerometer: SRSensor
 
 #### Discussion
 
-The [`sample`](srfetchresult/sample.md) type for this sensor is [[`CMRecordedAccelerometerData`](https://developer.apple.com/documentation/CoreMotion/CMRecordedAccelerometerData)].
+The [`sample`](srfetchresult/sample.md) type for this sensor is [[`CMRecordedAccelerometerData`](https://developer.apple.com/documentation/coremotion/cmrecordedaccelerometerdata)].
 
-You need to provide a reason to record accelerometer data by adding the [`SRSensorUsageMotion`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSSensorKitUsageDetail/SRSensorUsageMotion) dictionary to the [`NSSensorKitUsageDetail`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSSensorKitUsageDetail) key in the information property list.
+You need to provide a reason to record accelerometer data by adding the [`SRSensorUsageMotion`](https://developer.apple.com/documentation/bundleresources/information-property-list/nssensorkitusagedetail/srsensorusagemotion) dictionary to the [`NSSensorKitUsageDetail`](https://developer.apple.com/documentation/bundleresources/information-property-list/nssensorkitusagedetail) key in the information property list.
 
 ## See Also
 

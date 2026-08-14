@@ -23,7 +23,7 @@ case labeledKeypointsData(table: MLDataTable, sessionIdColumn: String = __Defaul
 - table : A data table that contains the hand-joint locations and annotations for a set of hand poses.
 - sessionIdColumn: The name of the column in the data table that contains the session identifiers.
 - labelColumn: The name of the column in the data table that contains the hand pose label names.
-- featureColumn: The name of the column in the data table that contains the hand-joint location data. Each entry in the column must be an [`MLMultiArray`](https://developer.apple.com/documentation/CoreML/MLMultiArray) instance — which you must wrap in an [`MLDataValue.MultiArrayType`](mldatavalue/multiarraytype.md) — that contains three dimensions: - The first dimension has a size of one.
+- featureColumn: The name of the column in the data table that contains the hand-joint location data. Each entry in the column must be an [`MLMultiArray`](https://developer.apple.com/documentation/coreml/mlmultiarray) instance — which you must wrap in an [`MLDataValue.MultiArrayType`](mldatavalue/multiarraytype.md) — that contains three dimensions: - The first dimension has a size of one.
 - The second dimension has three channels: the x-coordinate, the y-coordinate, and the confidence value, respectively. - The third dimension has 21 channels, one for each hand joint.
 
 ## See Also

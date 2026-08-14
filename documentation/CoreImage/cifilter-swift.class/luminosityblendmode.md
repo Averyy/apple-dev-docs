@@ -43,7 +43,7 @@ func luminosityBlendMode(inputImage: CIImage, backgroundImage: CIImage) -> CIIma
 }
 ```
 
-![The image on the top left shows a beach with multiple palm trees and a rainbow arching across the blue sky.  The image below is a gradient image displaying a gradual color shift from purple to a dark orange. The image on the right shows the output from applying a luminosity-blend-mode filter. The result displays brightness of the beach image and the colors of the gradient image.](https://docs-assets.developer.apple.com/published/d24866f4a3636c88648d2039524eb63b/media-3546410%402x.png)
+![The image on the top left shows a beach with multiple palm trees and a rainbow arching across the blue sky.  The image below is a gradient image displaying a gradual color shift from purple to a dark orange. The image on the right shows the output from applying a luminosity-blend-mode filter. The result displays brightness of the beach image and the colors of the gradient image.](/images/com.apple.coreimage/media-3546410@2x.png)
 
 ## See Also
 

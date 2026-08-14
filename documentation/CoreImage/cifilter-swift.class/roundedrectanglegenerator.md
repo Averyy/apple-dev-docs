@@ -30,7 +30,7 @@ This method generates a rounded rectangle image with the specified size, corner 
 The rounded rectangle generator filter uses the following properties:
 
 - **`color`**: A [`CIColor`](cicolor.md) representing the color of the rounded rectangle.
-- **`extent`**: A [`CGRect`](https://developer.apple.com/documentation/CoreFoundation/CGRect) representing the size of the rounded rectangle.
+- **`extent`**: A [`CGRect`](https://developer.apple.com/documentation/corefoundation/cgrect) representing the size of the rounded rectangle.
 - **`radius`**: A `float` representing the curve of the rectangle’s corners.
 
 The following code creates a filter that generates a light blue square with rounded corners:
@@ -45,7 +45,7 @@ func roundedRectangle () -> CIImage {
 }
 ```
 
-![A light blue square with rounded corners.](https://docs-assets.developer.apple.com/published/fec47d30ca6140ee8ffeef30c719fbf3/media-3546319%402x.png)
+![A light blue square with rounded corners.](/images/com.apple.coreimage/media-3546319@2x.png)
 
 ## See Also
 

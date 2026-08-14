@@ -23,9 +23,9 @@ struct Iterator
 ## Relationships
 
 ### Conforms To
-- [IteratorProtocol](../Swift/IteratorProtocol.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [IteratorProtocol](../swift/iteratorprotocol.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 
 ---

@@ -22,7 +22,7 @@ let kCVPixelBufferCGImageCompatibilityKey: CFString
 
 #### Discussion
 
-The value for this key is of type [`CFBoolean`](https://developer.apple.com/documentation/CoreFoundation/CFBoolean), and it indicates compatibility with [`CGImage`](https://developer.apple.com/documentation/CoreGraphics/CGImage) types.
+The value for this key is of type [`CFBoolean`](https://developer.apple.com/documentation/corefoundation/cfboolean), and it indicates compatibility with [`CGImage`](https://developer.apple.com/documentation/coregraphics/cgimage) types.
 
 ## See Also
 

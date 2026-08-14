@@ -20,7 +20,7 @@ static var contentRuleListStoreCompileFailed: WKError.Code { get }
 
 #### Discussion
 
-Check the [`userInfo`](https://developer.apple.com/documentation/Foundation/NSError/userInfo) dictionary of the error object for an explanation of the compilation error that occurred.
+Check the [`userInfo`](https://developer.apple.com/documentation/foundation/nserror/userinfo) dictionary of the error object for an explanation of the compilation error that occurred.
 
 ## See Also
 

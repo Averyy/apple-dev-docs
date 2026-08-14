@@ -26,11 +26,11 @@ In Swift, this object bridges to [`IndexPath`](indexpath.md); use [`NSIndexPath`
 
 Each index in an index path represents the index into an array of children from one node in the tree to another, deeper, node. For example, the index path `1.4.3.2` specifies the path shown in [`Figure 1`](nsindexpath#1965825.md).
 
-![Index path “1.4.3.2”](https://docs-assets.developer.apple.com/published/3a94cb2adc36a5b685ea3a727e5ba729/media-1965825.gif)
+![Index path “1.4.3.2”](/images/com.apple.foundation/media-1965825.gif)
 
-> **Note**:  The UIKit framework adds programming interfaces to the `NSIndexPath` class of the Foundation framework to facilitate the identification of rows and sections in [`UITableView`](https://developer.apple.com/documentation/UIKit/UITableView) objects and the identification of items and sections in [`UICollectionView`](https://developer.apple.com/documentation/UIKit/UICollectionView) objects. The API consists of class factory methods and properties for accessing the various indexed values. You use the factory methods to create an index path for the corresponding table view or collection view.
+> **Note**:  The UIKit framework adds programming interfaces to the `NSIndexPath` class of the Foundation framework to facilitate the identification of rows and sections in [`UITableView`](https://developer.apple.com/documentation/uikit/uitableview) objects and the identification of items and sections in [`UICollectionView`](https://developer.apple.com/documentation/uikit/uicollectionview) objects. The API consists of class factory methods and properties for accessing the various indexed values. You use the factory methods to create an index path for the corresponding table view or collection view.
 
-> ❗ **Important**:  The Swift overlay to the Foundation framework provides the [`IndexPath`](indexpath.md) structure, which bridges to the [`NSIndexPath`](nsindexpath.md) class. For more information about value types, see [`Working with Foundation Types`](https://developer.apple.com/documentation/Swift/working-with-foundation-types).
+> ❗ **Important**:  The Swift overlay to the Foundation framework provides the [`IndexPath`](indexpath.md) structure, which bridges to the [`NSIndexPath`](nsindexpath.md) class. For more information about value types, see [`Working with Foundation Types`](https://developer.apple.com/documentation/swift/working-with-foundation-types).
 
 ## Topics
 
@@ -74,18 +74,18 @@ Each index in an index path represents the index into an array of children from 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [Copyable](../Swift/Copyable.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Escapable](../Swift/Escapable.md)
-- [Hashable](../Swift/Hashable.md)
+- [CVarArg](../swift/cvararg.md)
+- [Copyable](../swift/copyable.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Escapable](../swift/escapable.md)
+- [Hashable](../swift/hashable.md)
 - [NSCoding](nscoding.md)
 - [NSCopying](nscopying.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 - [NSSecureCoding](nssecurecoding.md)
 
 

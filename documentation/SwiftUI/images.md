@@ -6,13 +6,13 @@ Add images and symbols to your app’s user interface.
 
 #### Overview
 
-Display images, including [`SF Symbols`](https://developer.apple.com/design/Human-Interface-Guidelines/sf-symbols), images that you store in an asset catalog, and images that you store on disk, using an [`Image`](image.md) view.
+Display images, including [`SF Symbols`](https://developer.apple.com/design/human-interface-guidelines/sf-symbols), images that you store in an asset catalog, and images that you store on disk, using an [`Image`](image.md) view.
 
-![None](https://docs-assets.developer.apple.com/published/4fb32811fff960a104407b1f3b81a0f0/images-hero%402x.png)
+![None](/images/com.apple.SwiftUI/images-hero@2x.png)
 
 For images that take time to retrieve — for example, when you load an image from a network endpoint — load the image asynchronously using [`AsyncImage`](asyncimage.md). You can instruct that view to display a placeholder during the load operation.
 
-For design guidance, see [`Images`](https://developer.apple.com/design/Human-Interface-Guidelines/images) in the Human Interface Guidelines.
+For design guidance, see [`Images`](https://developer.apple.com/design/human-interface-guidelines/images) in the Human Interface Guidelines.
 
 ## Topics
 

@@ -20,8 +20,8 @@ enum : unsigned int {
 ### Constants
 - [kINQUIRY_MaximumDataSize](1643294-anonymous/kinquiry_maximumdatasize.md)
 - [kINQUIRY_StandardDataHeaderSize](1643294-anonymous/kinquiry_standarddataheadersize.md)
-- [kINQUIRY_MaximumDataSize](../driverkit/1643294-anonymous/kinquiry_maximumdatasize.md)
-- [kINQUIRY_StandardDataHeaderSize](../driverkit/1643294-anonymous/kinquiry_standarddataheadersize.md)
+- [kINQUIRY_MaximumDataSize](../driverkit/kinquiry_maximumdatasize.md)
+- [kINQUIRY_StandardDataHeaderSize](../driverkit/kinquiry_standarddataheadersize.md)
 
 
 ---

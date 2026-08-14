@@ -27,7 +27,7 @@ This property is equivalent to the `kSecAttrApplicationTag` type attribute.
 ## See Also
 
 - [var keyType: String](tktokenkeychainkey/keytype.md)
-  The type of the key. Currently, only [`kSecAttrKeyTypeRSA`](https://developer.apple.com/documentation/Security/kSecAttrKeyTypeRSA) and `kSecAttrKeyTypeECSECPrimeRandom` are supported values.
+  The type of the key. Currently, only [`kSecAttrKeyTypeRSA`](https://developer.apple.com/documentation/security/ksecattrkeytypersa) and `kSecAttrKeyTypeECSECPrimeRandom` are supported values.
 - [var keySizeInBits: Int](tktokenkeychainkey/keysizeinbits.md)
 - [var publicKeyData: Data?](tktokenkeychainkey/publickeydata.md)
   The public key data.

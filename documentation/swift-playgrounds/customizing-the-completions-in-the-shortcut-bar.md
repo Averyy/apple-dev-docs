@@ -10,13 +10,13 @@ You can customize the code completions shown in the shortcut bar by hiding and s
 
 The following image shows customized code completion in the Learn to Code 1 playground book. The shortcut bar has been customized to show only four methods instead of all possible completions, such as public symbols from the Swift standard library or the current module.
 
-![Screenshot showing a playground page. The shortcut bar is highlighted; it only shows 4 available completions because other candidates have been hidden.](https://docs-assets.developer.apple.com/published/8db8887eba191c0cc76125546bcdb4f3/customizing-the-completions-in-the-shortcut-bar-1%402x.png)
+![Screenshot showing a playground page. The shortcut bar is highlighted; it only shows 4 available completions because other candidates have been hidden.](/images/com.apple.Swift-Playgrounds/customizing-the-completions-in-the-shortcut-bar-1@2x.png)
 
 ##### Add Code Completion Comments
 
 Specify the completions you want to show or hide by using the `code-completion` delimiter on a line by itself without any preceding whitespace.
 
-![Diagram that shows the syntax of a code completion delimiter. The first line starts with “//#-code-completion(”, followed by a namespace placeholder, followed by the text “, hide”, followed by a completions placeholder, terminated with “)”. The second line includes the same text, except that “hide” is replaced by “show”. ](https://docs-assets.developer.apple.com/published/edfab22682532d7fc9cd533af138242a/customizing-the-completions-in-the-shortcut-bar-2%402x.png)
+![Diagram that shows the syntax of a code completion delimiter. The first line starts with “//#-code-completion(”, followed by a namespace placeholder, followed by the text “, hide”, followed by a completions placeholder, terminated with “)”. The second line includes the same text, except that “hide” is replaced by “show”. ](/images/com.apple.Swift-Playgrounds/customizing-the-completions-in-the-shortcut-bar-2@2x.png)
 
 Use this delimiter to add or remove a symbol or group of symbols from the list of possible completions. In the first argument, *namespace*, specify the space of possible symbols. In the next argument, specify the action to take: add symbols (*show*) or remove symbols (*hide*) from the list of possible code completions. Some combinations of namespace and action include an optional comma-separated list of completions, such as function names or module names.
 

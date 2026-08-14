@@ -25,7 +25,7 @@ var contentAttributeSet: CSSearchableItemAttributeSet? { get set }
 
 #### Discussion
 
-A [`CSSearchableItemAttributeSet`](https://developer.apple.com/documentation/CoreSpotlight/CSSearchableItemAttributeSet) object encapsulates the set of properties you want to display for a searchable activity.
+A [`CSSearchableItemAttributeSet`](https://developer.apple.com/documentation/corespotlight/cssearchableitemattributeset) object encapsulates the set of properties you want to display for a searchable activity.
 
 ## See Also
 

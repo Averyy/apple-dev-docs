@@ -8,7 +8,7 @@ Enable intelligence tools that you want to use in Xcode.
 
 To use coding intelligence in Xcode, go to the Intelligence settings and turn on the agent and chat products that you want to use. Choose Xcode > Settings and select Intelligence in the sidebar. Where available, you can turn on Claude or ChatGPT in Xcode. You can also use coding tools from other providers.
 
-![A screenshot of the Intelligence settings showing the About Intelligence in Xcode and Privacy link, and the Agents, Model Context Protocol, and Chat setting sections.](https://docs-assets.developer.apple.com/published/034ce543aae8389cd0788990db7b0064/intelligence-settings%402x.png)
+![A screenshot of the Intelligence settings showing the About Intelligence in Xcode and Privacy link, and the Agents, Model Context Protocol, and Chat setting sections.](/images/com.apple.Xcode/intelligence-settings@2x.png)
 
 After you enable an agent or chat provider in the Intelligence settings, you can enter prompts in the coding assistant. When you enter prompts, the agent or model that you set up in the Intelligence settings may access your project files and other information when processing your requests. For more information about sharing your project files with agents and models, click “About Intelligence in Xcode & Privacy…” in the Intelligence settings.
 
@@ -28,13 +28,13 @@ If you have an account, sign in:
 1. In the agent settings, click the More button (…) in the Account row.
 2. In the next sheets, and in the browser window if one appears, follow the instructions to sign in and enter your credentials.
 
-![A screenshot of the Claude Agent settings showing the Model and Account rows.](https://docs-assets.developer.apple.com/published/9277eb4e201667fa271a9f7d5f3fbbbf/intelligence-settings-claude-agent%402x.png)
+![A screenshot of the Claude Agent settings showing the Model and Account rows.](/images/com.apple.Xcode/intelligence-settings-claude-agent@2x.png)
 
 For more information about an agent, click the privacy policy and terms of use links that appear at the bottom of the agent settings.
 
 To enable an agent that doesn’t appear in Intelligence settings and supports the Agent Client Protocol (ACP), click Add an Agent under Agents, enter information in the next sheet, and click Add.
 
-![A screenshot of the Add an ACP Agent sheet with the agent settings and Add button below.](https://docs-assets.developer.apple.com/published/73c89c50f2b7d7d7db19f782a1cb1152/intelligence-settings-add-agent%402x.png)
+![A screenshot of the Add an ACP Agent sheet with the agent settings and Add button below.](/images/com.apple.Xcode/intelligence-settings-add-agent@2x.png)
 
 After you download agents, Xcode automatically updates the downloads if possible. To manage agent downloads, see [`Downloading and installing additional Xcode components`](downloading-and-installing-additional-xcode-components.md).
 

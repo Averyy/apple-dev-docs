@@ -33,7 +33,7 @@ The matrix object must not have had values inserted, else [`SPARSE_CANNOT_SET_PR
 ## Parameters
 
 - `A`: The sparse matrix object.
-- `pname`: The property name to set to [`true`](https://developer.apple.com/documentation/Swift/true).  See [`sparse_matrix_property`](sparse_matrix_property.md) for options.
+- `pname`: The property name to set to [`true`](https://developer.apple.com/documentation/swift/true).  See [`sparse_matrix_property`](sparse_matrix_property.md) for options.
 
 ## See Also
 

@@ -19,7 +19,7 @@ var overrideUserInterfaceStyle: UIUserInterfaceStyle { get set }
 
 #### Discussion
 
-If you set this property, consider if you need to set [`colorUserInterfaceStyle`](pktoolpicker/coloruserinterfacestyle.md) to a select a different user interface style. The default user interface style is [`UIUserInterfaceStyle.unspecified`](https://developer.apple.com/documentation/UIKit/UIUserInterfaceStyle/unspecified).
+If you set this property, consider if you need to set [`colorUserInterfaceStyle`](pktoolpicker/coloruserinterfacestyle.md) to a select a different user interface style. The default user interface style is [`UIUserInterfaceStyle.unspecified`](https://developer.apple.com/documentation/uikit/uiuserinterfacestyle/unspecified).
 
 ## See Also
 

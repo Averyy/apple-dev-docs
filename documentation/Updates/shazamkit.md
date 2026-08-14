@@ -6,12 +6,12 @@ Learn about important changes in ShazamKit.
 
 #### Overview
 
-Browse notable changes in [`ShazamKit`](https://developer.apple.com/documentation/ShazamKit).
+Browse notable changes in [`ShazamKit`](https://developer.apple.com/documentation/shazamkit).
 
 #### June 2024
 
-- Use [`SHManagedSession`](https://developer.apple.com/documentation/ShazamKit/SHManagedSession) across threads since it now conforms to `Sendable`.
-- Use the new [`dataRepresentation`](https://developer.apple.com/documentation/ShazamKit/SHCustomCatalog/dataRepresentation) property in the [`SHCustomCatalog`](https://developer.apple.com/documentation/ShazamKit/SHCustomCatalog) class to get the contents of a catalog.
+- Use [`SHManagedSession`](https://developer.apple.com/documentation/shazamkit/shmanagedsession) across threads since it now conforms to `Sendable`.
+- Use the new [`dataRepresentation`](https://developer.apple.com/documentation/shazamkit/shcustomcatalog/datarepresentation) property in the [`SHCustomCatalog`](https://developer.apple.com/documentation/shazamkit/shcustomcatalog) class to get the contents of a catalog.
 
 ## See Also
 

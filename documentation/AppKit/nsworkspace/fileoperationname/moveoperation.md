@@ -16,7 +16,7 @@ static let moveOperation: NSWorkspace.FileOperationName
 
 #### Discussion
 
-Behaves the same as [`moveItem(at:to:)`](https://developer.apple.com/documentation/Foundation/FileManager/moveItem(at:to:)).
+Behaves the same as [`moveItem(at:to:)`](https://developer.apple.com/documentation/foundation/filemanager/moveitem(at:to:)).
 
 ## See Also
 

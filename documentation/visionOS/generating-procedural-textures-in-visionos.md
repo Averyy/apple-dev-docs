@@ -10,7 +10,7 @@ Display a 3D model that generates procedural textures in a reality view.
 
 #### Overview
 
-This sample demonstrates how to create and display a 3D torus model that dynamically regenerates a [`Metal`](https://developer.apple.com/documentation/Metal) texture at each render frame within a visionOS app.
+This sample demonstrates how to create and display a 3D torus model that dynamically regenerates a [`Metal`](https://developer.apple.com/documentation/metal) texture at each render frame within a visionOS app.
 
 At launch, the app starts a window group that contains:
 
@@ -19,7 +19,7 @@ At launch, the app starts a window group that contains:
 
 ##### Generate the Texture of the Model
 
-The sample constructs the `ProceduralTextureGenerator` structure, which contains the `generate()` method to generate and return a [`TextureResource`](https://developer.apple.com/documentation/RealityKit/TextureResource) to apply to the torus model. The app uses  [`GKARC4RandomSource`](https://developer.apple.com/documentation/GameplayKit/GKARC4RandomSource) to generate a number using the ARC4 algorithm, and assigns the `seed` to the generator to determine the random source’s behavior:
+The sample constructs the `ProceduralTextureGenerator` structure, which contains the `generate()` method to generate and return a [`TextureResource`](https://developer.apple.com/documentation/realitykit/textureresource) to apply to the torus model. The app uses  [`GKARC4RandomSource`](https://developer.apple.com/documentation/gameplaykit/gkarc4randomsource) to generate a number using the ARC4 algorithm, and assigns the `seed` to the generator to determine the random source’s behavior:
 
 ```swift
 import SwiftUI
@@ -46,7 +46,7 @@ struct ProceduralTextureGenerator {
 }
 ```
 
-After creating the generator, the app creates a [`CGDataProvider`](https://developer.apple.com/documentation/CoreGraphics/CGDataProvider) with pixels that the generator randomly assigns. Then it creates the [`CGImage`](https://developer.apple.com/documentation/CoreGraphics/CGImage) for the procedural texture:
+After creating the generator, the app creates a [`CGDataProvider`](https://developer.apple.com/documentation/coregraphics/cgdataprovider) with pixels that the generator randomly assigns. Then it creates the [`CGImage`](https://developer.apple.com/documentation/coregraphics/cgimage) for the procedural texture:
 
 ```swift
 import SwiftUI
@@ -86,7 +86,7 @@ struct ProceduralTextureGenerator {
 }
 ```
 
-The app attempts to create and return a [`TextureResource`](https://developer.apple.com/documentation/RealityKit/TextureResource) with the generated `image`.
+The app attempts to create and return a [`TextureResource`](https://developer.apple.com/documentation/realitykit/textureresource) with the generated `image`.
 
 ##### Update the Texture in Real Time
 
@@ -114,7 +114,7 @@ struct DrawableQueueSystem: System {
 
 The `update()` method iterates through all matching entities during the rendering phase and updates each entity’s `DrawableQueueComponent` by passing the time difference between frames, allowing for smooth real-time updates in the scene.
 
-The initializer registers the `DrawableQueueSystem` within the component, establishing a Metal texture descriptor and a Metal texture. The app attempts to copy the input [`TextureResource`](https://developer.apple.com/documentation/RealityKit/TextureResource) texture data into the Metal texture:
+The initializer registers the `DrawableQueueSystem` within the component, establishing a Metal texture descriptor and a Metal texture. The app attempts to copy the input [`TextureResource`](https://developer.apple.com/documentation/realitykit/textureresource) texture data into the Metal texture:
 
 ```swift
 import SwiftUI
@@ -147,7 +147,7 @@ struct DrawableQueueComponent: Component {
 }
 ```
 
-A [`TextureResource.DrawableQueue`](https://developer.apple.com/documentation/RealityKit/TextureResource/DrawableQueue-swift.class) makes it possible to update a texture resource dynamically. The app creates a descriptor and inserts it into the drawable queue to dynamically replace the texture:
+A [`TextureResource.DrawableQueue`](https://developer.apple.com/documentation/realitykit/textureresource/drawablequeue-swift.class) makes it possible to update a texture resource dynamically. The app creates a descriptor and inserts it into the drawable queue to dynamically replace the texture:
 
 ```swift
 import SwiftUI
@@ -261,7 +261,7 @@ struct EntityView: View {
 
 The `update` closure loops through all the entities in the reality view, and attempts to update the entity in scene updates.
 
-The `makeEntity()` method marks the [`MainActor`](https://developer.apple.com/documentation/Swift/MainActor) to execute in the main dispatch queue:
+The `makeEntity()` method marks the [`MainActor`](https://developer.apple.com/documentation/swift/mainactor) to execute in the main dispatch queue:
 
 ```swift
 @MainActor
@@ -288,9 +288,9 @@ func makeEntity() throws -> ModelEntity {
 }
 ```
 
-The [`loadModel(named:in:)`](https://developer.apple.com/documentation/RealityKit/Entity/loadModel(named:in:)) method synchronously loads a 3D torus model, scales it to the proper size, and applies the `updateEntity()` method.
+The [`loadModel(named:in:)`](https://developer.apple.com/documentation/realitykit/entity/loadmodel(named:in:)) method synchronously loads a 3D torus model, scales it to the proper size, and applies the `updateEntity()` method.
 
-The `updateEntity()` method generates a new texture by passing the seed value into the `generate()` method, and creates a material sampler for the [`PhysicallyBasedMaterial`](https://developer.apple.com/documentation/RealityKit/PhysicallyBasedMaterial):
+The `updateEntity()` method generates a new texture by passing the seed value into the `generate()` method, and creates a material sampler for the [`PhysicallyBasedMaterial`](https://developer.apple.com/documentation/realitykit/physicallybasedmaterial):
 
 ```swift
 @MainActor
@@ -325,7 +325,7 @@ The method applies the material to the model of the entity, and attempts to set 
 
 ##### Set Up the Parent Window
 
-The `DrawableView` creates a [`State`](https://developer.apple.com/documentation/SwiftUI/State) `seed` property to control the randomization of the texture generator:
+The `DrawableView` creates a [`State`](https://developer.apple.com/documentation/swiftui/state) `seed` property to control the randomization of the texture generator:
 
 ```swift
 import SwiftUI
@@ -345,7 +345,7 @@ struct DrawableView: View {
 }
 ```
 
-Using the [`HStack`](https://developer.apple.com/documentation/SwiftUI/HStack) makes it possible to call the `EntityView` that accepts `seed` and a button that increases the value of `seed` on each press.
+Using the [`HStack`](https://developer.apple.com/documentation/swiftui/hstack) makes it possible to call the `EntityView` that accepts `seed` and a button that increases the value of `seed` on each press.
 
 ## See Also
 

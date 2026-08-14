@@ -94,7 +94,7 @@ outputSynchronizer!.setDelegate(self, queue: dataOutputQueue)
 
 ##### Create a Binary Foreground Mask
 
-Assume the foreground to be a human face. You can accomplish face detection through the Vision framework’s [`VNDetectFaceRectanglesRequest`](https://developer.apple.com/documentation/Vision/VNDetectFaceRectanglesRequest), but this sample doesn’t need anything else from Vision, so it’s simpler to consult the [`AVMetadataObject`](avmetadataobject.md) for [`face`](avmetadataobject/objecttype/face.md).
+Assume the foreground to be a human face. You can accomplish face detection through the Vision framework’s [`VNDetectFaceRectanglesRequest`](https://developer.apple.com/documentation/vision/vndetectfacerectanglesrequest), but this sample doesn’t need anything else from Vision, so it’s simpler to consult the [`AVMetadataObject`](avmetadataobject.md) for [`face`](avmetadataobject/objecttype/face.md).
 
 ```swift
 self.session.addOutput(metadataOutput)
@@ -161,13 +161,13 @@ let alphaMatte = depthMaskImage.clampedToExtent()
 
 The parameters of your `CIGaussianBlur` and `CIGammaAdjust` filters directly affect the smoothness of the edge pixels. You can tune the blur and smoothness by adjusting the Gaussian blur filter’s input radius, as well as the gamma adjustment filter’s input power.
 
-![Graph showing the effect of fine-tuning Gaussian blur and Gamma adjustment](https://docs-assets.developer.apple.com/published/d9c978332af648b441769594e26efc66/graph.png)
+![Graph showing the effect of fine-tuning Gaussian blur and Gamma adjustment](/images/com.apple.avfoundation/graph.png)
 
 ##### Blend Foreground and Background with the Alpha Matte
 
 The final step is applying your filtered smooth binary mask to the input video frame.
 
-Because you’ve performed image processing in Core Image using the `CIGaussianBlur` and `CIGammaAdjust` filters, it’s most computationally efficient to apply the resulting mask in Core Image, as well. That means converting your video from [`CVPixelBuffer`](https://developer.apple.com/documentation/CoreVideo/cvpixelbuffer-q2e) format to [`CIImage`](https://developer.apple.com/documentation/CoreImage/CIImage) format, allowing you to apply the alpha matte to the original image, and blend in your custom background image with the `CIBlendWithMask` filter.
+Because you’ve performed image processing in Core Image using the `CIGaussianBlur` and `CIGammaAdjust` filters, it’s most computationally efficient to apply the resulting mask in Core Image, as well. That means converting your video from [`CVPixelBuffer`](https://developer.apple.com/documentation/corevideo/cvpixelbuffer-q2e) format to [`CIImage`](https://developer.apple.com/documentation/coreimage/ciimage) format, allowing you to apply the alpha matte to the original image, and blend in your custom background image with the `CIBlendWithMask` filter.
 
 ```swift
 let image = CIImage(cvPixelBuffer: videoPixelBuffer)

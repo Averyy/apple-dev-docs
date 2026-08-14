@@ -22,7 +22,7 @@ static var atomic: NSData.WritingOptions { get }
 
 #### Discussion
 
-This option is equivalent to using a write method that takes the parameter `atomically` as [`true`](https://developer.apple.com/documentation/Swift/true).
+This option is equivalent to using a write method that takes the parameter `atomically` as [`true`](https://developer.apple.com/documentation/swift/true).
 
 ## See Also
 

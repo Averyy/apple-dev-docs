@@ -18,14 +18,14 @@ A type-erased view representing the icon of the family activity.
 
 #### Overview
 
-Family Controls uses this type as a generic constraint for the `Icon` of the [`Label`](https://developer.apple.com/documentation/SwiftUI/Label) instances it creates.
+Family Controls uses this type as a generic constraint for the `Icon` of the [`Label`](https://developer.apple.com/documentation/swiftui/label) instances it creates.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
-- [View](../SwiftUI/View.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
+- [View](../swiftui/view.md)
 
 ## See Also
 

@@ -7,7 +7,6 @@ An object that coordinates interaction with the TelephonyMessagingKit framework.
 
 **Availability**:
 - iOS 26.0+
-- iPadOS 26.0+
 
 ## Declaration
 
@@ -63,15 +62,15 @@ Use the [`shared`](telephonymessagingsession/shared.md) instance provided by thi
 ## Relationships
 
 ### Conforms To
-- [Identifiable](../Swift/Identifiable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Identifiable](../swift/identifiable.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 
 - [Creating a carrier messaging app](creating-a-carrier-messaging-app.md)
   Use TelephonyMessagingKit to send and receive SMS, MMS, and RCS messages.
-- [Default Carrier Messaging App](../BundleResources/Entitlements/com.apple.developer.carrier-messaging-app.md)
+- [Default Carrier Messaging App](../bundleresources/entitlements/com.apple.developer.carrier-messaging-app.md)
   A Boolean value that indicates whether the app can use the TelephonyMessagingKit framework to serve as the default carrier messaging app.
 
 

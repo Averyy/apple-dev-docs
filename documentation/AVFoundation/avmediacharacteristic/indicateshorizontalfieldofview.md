@@ -21,7 +21,7 @@ static let indicatesHorizontalFieldOfView: AVMediaCharacteristic
 
 #### Discussion
 
-This media characteristic is present when the [`CMVideoFormatDescription`](https://developer.apple.com/documentation/CoreMedia/CMVideoFormatDescription) includes a [`kCMFormatDescriptionExtension_HorizontalFieldOfView`](https://developer.apple.com/documentation/CoreMedia/kCMFormatDescriptionExtension_HorizontalFieldOfView) extension. This is not an indication that the field of view is expanded beyond or more narrow than typical horizontal fields of view.
+This media characteristic is present when the [`CMVideoFormatDescription`](https://developer.apple.com/documentation/coremedia/cmvideoformatdescription) includes a [`kCMFormatDescriptionExtension_HorizontalFieldOfView`](https://developer.apple.com/documentation/coremedia/kcmformatdescriptionextension_horizontalfieldofview) extension. This is not an indication that the field of view is expanded beyond or more narrow than typical horizontal fields of view.
 
 The value of this characteristic is `public.indicates-horizontal-field-of-view`.
 

@@ -22,7 +22,7 @@ var isPositional: Bool { get set }
 
 #### Discussion
 
-If [`true`](https://developer.apple.com/documentation/Swift/true), the audio mixer considers the position and velocity of the [`SKAudioNode`](skaudionode.md) relative to scene’s current [`listener`](skscene/listener.md) node. The mixer applies distance attenuation, doppler shift, and pan effects to the sound. If [`false`](https://developer.apple.com/documentation/Swift/false), then the sound is played normally. The default value is [`true`](https://developer.apple.com/documentation/Swift/true).
+If [`true`](https://developer.apple.com/documentation/swift/true), the audio mixer considers the position and velocity of the [`SKAudioNode`](skaudionode.md) relative to scene’s current [`listener`](skscene/listener.md) node. The mixer applies distance attenuation, doppler shift, and pan effects to the sound. If [`false`](https://developer.apple.com/documentation/swift/false), then the sound is played normally. The default value is [`true`](https://developer.apple.com/documentation/swift/true).
 
 ## See Also
 

@@ -15,11 +15,11 @@ The following Advanced Commerce APIs are endpoints that you call from your serve
 - [`Request Transaction Refund`](request-transaction-refund.md)
 - [`Revoke Subscription`](revoke-subscription.md)
 
-Calls to the Advanced Commerce API’s endpoints require JSON Web Tokens (JWTs) for authorization; you obtain keys to create the tokens from your organization’s App Store Connect account. See [`Creating API keys to authorize API requests`](https://developer.apple.com/documentation/AppStoreServerAPI/creating-api-keys-to-authorize-api-requests) to create your keys. See [`Generating JSON Web Tokens for API requests`](https://developer.apple.com/documentation/AppStoreServerAPI/generating-json-web-tokens-for-api-requests) to generate tokens using your keys and send API requests.
+Calls to the Advanced Commerce API’s endpoints require JSON Web Tokens (JWTs) for authorization; you obtain keys to create the tokens from your organization’s App Store Connect account. See [`Creating API keys to authorize API requests`](https://developer.apple.com/documentation/appstoreserverapi/creating-api-keys-to-authorize-api-requests) to create your keys. See [`Generating JSON Web Tokens for API requests`](https://developer.apple.com/documentation/appstoreserverapi/generating-json-web-tokens-for-api-requests) to generate tokens using your keys and send API requests.
 
 After you have a complete and signed token, provide the token in the request’s authorization header as a bearer token. Generate a new token for each new API request, or reuse tokens until they expire.
 
-> 💡 **Tip**: The App Store Server Library provides a client that makes it easier to adopt the Advanced Commerce APIs, including creating the JWTs to authorize calls. For more information, see [`Simplifying your implementation by using the App Store Server Library`](https://developer.apple.com/documentation/AppStoreServerAPI/simplifying-your-implementation-by-using-the-app-store-server-library).
+> 💡 **Tip**: The App Store Server Library provides a client that makes it easier to adopt the Advanced Commerce APIs, including creating the JWTs to authorize calls. For more information, see [`Simplifying your implementation by using the App Store Server Library`](https://developer.apple.com/documentation/appstoreserverapi/simplifying-your-implementation-by-using-the-app-store-server-library).
 
 ## See Also
 

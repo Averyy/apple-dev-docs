@@ -48,8 +48,8 @@ print(String(format: "sum of signed squares %.4f", c))
 
 ## Parameters
 
-- `__A`: The single-precision real input vector  . 
-- `__I`: The stride for input vector  . 
+- `__A`: The single-precision real input vector `A`. 
+- `__I`: The stride for input vector `A`. 
 - `__C`: The single-precision output scalar. 
 - `__N`: The number of elements to process.
 

@@ -16,7 +16,7 @@ func dragFile(_ filename: String, from rect: NSRect, slideBack flag: Bool, event
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/Swift/true) if the view successfully initiates the dragging operation (which doesn’t necessarily mean the dragging operation concluded successfully). Otherwise, this method returns [`false`](https://developer.apple.com/documentation/Swift/false).
+[`true`](https://developer.apple.com/documentation/swift/true) if the view successfully initiates the dragging operation (which doesn’t necessarily mean the dragging operation concluded successfully). Otherwise, this method returns [`false`](https://developer.apple.com/documentation/swift/false).
 
 #### Discussion
 
@@ -28,7 +28,7 @@ See the [`NSDraggingSource`](nsdraggingsource.md), [`NSDraggingInfo`](nsdragging
 
 - `filename`: A string that specifies the absolute path for the file that is dragged.
 - `rect`: A rectangle that describes the position of the icon in the view’s coordinate system.
-- `flag`: A Boolean that indicates whether the icon being dragged should slide back to its position in the view if the file isn’t accepted. The icon slides back to `aRect` if `slideBack` is [`true`](https://developer.apple.com/documentation/Swift/true), the file is not accepted by the dragging destination, and the user has not disabled icon animation; otherwise it simply disappears.
+- `flag`: A Boolean that indicates whether the icon being dragged should slide back to its position in the view if the file isn’t accepted. The icon slides back to `aRect` if `slideBack` is [`true`](https://developer.apple.com/documentation/swift/true), the file is not accepted by the dragging destination, and the user has not disabled icon animation; otherwise it simply disappears.
 - `event`: The mouse-down event object from which to initiate the drag operation. In particular, its mouse location is used for the offset of the icon being dragged.
 
 ## See Also

@@ -13,7 +13,7 @@ Draw overlapping, transparent surfaces in any order by using tile shaders and im
 
 #### Overview
 
-![A rendering of the order-independent transparency effect.](https://docs-assets.developer.apple.com/published/f118edf6fd4ff055732604dd42bb4bc3/1-OITScene.png)
+![A rendering of the order-independent transparency effect.](/images/com.apple.metal/1-OITScene.png)
 
 In order to draw a convincing transparency effect, apps typically draw a scene’s transparent, 3D geometry in depth order, from farthest to nearest, relative to the camera. These apps use the CPU to sort the geometry by depth before drawing, but this approach has some drawbacks in that it:
 
@@ -167,7 +167,7 @@ Each index in the array represents a layer. The shader tests the depth value of 
 
 The following diagram shows an example of a shader populating layers of the image block as the app renders three transparent triangles.
 
-![A diagram that depicts the shader populating layers of the image block.](https://docs-assets.developer.apple.com/published/114a8b30f1e127119ef87724e6b4bad4/2-DepthDiagram%402x.png)
+![A diagram that depicts the shader populating layers of the image block.](/images/com.apple.metal/2-DepthDiagram@2x.png)
 
 In this example, the app first renders a green triangle whose fragments populate the first layer in the image block. It then renders an orange triangle with depth values less than the green triangle. The shader replaces any fragments covering the green triangle with the orange color and moves the fragments from the green triangle to the next layer. Finally, the app renders a blue triangle whose depth is in between the orange triangle and the green triangle. The shader replaces all the values of the green triangle in the second layer and moves them to the third. This results in an image block with fragments ordered by their depth values.
 

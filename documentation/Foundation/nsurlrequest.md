@@ -30,7 +30,7 @@ Use this type in Swift when you need reference semantics or other Foundation-spe
 
 The mutable subclass of [`NSURLRequest`](nsurlrequest.md) is [`NSMutableURLRequest`](nsmutableurlrequest.md).
 
-> ❗ **Important**:  The Swift overlay to the Foundation framework provides the [`URLRequest`](urlrequest.md) structure, which bridges to the [`NSURLRequest`](nsurlrequest.md) class and its mutable subclass, [`NSMutableURLRequest`](nsmutableurlrequest.md). For more information about value types, see [`Working with Foundation Types`](https://developer.apple.com/documentation/Swift/working-with-foundation-types).
+> ❗ **Important**:  The Swift overlay to the Foundation framework provides the [`URLRequest`](urlrequest.md) structure, which bridges to the [`NSURLRequest`](nsurlrequest.md) class and its mutable subclass, [`NSMutableURLRequest`](nsmutableurlrequest.md). For more information about value types, see [`Working with Foundation Types`](https://developer.apple.com/documentation/swift/working-with-foundation-types).
 
 ##### Reserved Http Headers
 
@@ -130,21 +130,21 @@ If you implement a custom URL protocol by subclassing [`URLProtocol`](urlprotoco
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Inherited By
 - [NSMutableURLRequest](nsmutableurlrequest.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [Copyable](../Swift/Copyable.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Escapable](../Swift/Escapable.md)
-- [Hashable](../Swift/Hashable.md)
+- [CVarArg](../swift/cvararg.md)
+- [Copyable](../swift/copyable.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Escapable](../swift/escapable.md)
+- [Hashable](../swift/hashable.md)
 - [NSCoding](nscoding.md)
 - [NSCopying](nscopying.md)
 - [NSMutableCopying](nsmutablecopying.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 - [NSSecureCoding](nssecurecoding.md)
 
 ## See Also

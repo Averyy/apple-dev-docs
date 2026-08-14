@@ -22,7 +22,7 @@ Using the [`DCDevice`](dcdevice.md) class in your app, you can get a token that 
 
 Someone who modifies your app and distributes it outside the App Store can add unauthorized features like game cheats, ad removal, or access to premium content. The App Attest service gives your app a way to assert its validity so that your server can more confidently provide access to sensitive resources. You use the [`DCAppAttestService`](dcappattestservice.md) class to generate a special cryptographic key on the device, and have Apple attest to the validity of that key. You then use that key to assert the validity of your app whenever you request sensitive data from your server.
 
-![A diagram showing the connections between your app and App Attest, between your app and your server, and between your server and an Apple server.](https://docs-assets.developer.apple.com/published/dc22cc31ec504d09294006e63caf6ed9/devicecheck-1%402x.png)
+![A diagram showing the connections between your app and App Attest, between your app and your server, and between your server and an Apple server.](/images/com.apple.DeviceCheck/devicecheck-1@2x.png)
 
 No single policy can eliminate all fraud. For example, App Attest can’t definitively pinpoint a device with a compromised operating system. Instead, the DeviceCheck services provide information that you can integrate into an overall risk assessment for a given device.
 
@@ -46,7 +46,7 @@ No single policy can eliminate all fraud. For example, App Attest can’t defini
   Use this guide to validate your implementation of verifying the attestation object verification process.
 - [class DCAppAttestService](dcappattestservice.md)
   A service that you use to validate the instance of your app running on a device.
-- [App Attest Environment](../BundleResources/Entitlements/com.apple.developer.devicecheck.appattest-environment.md)
+- [App Attest Environment](../bundleresources/entitlements/com.apple.developer.devicecheck.appattest-environment.md)
   The environment for an app that uses the App Attest service to validate itself.
 ### Errors
 - [struct DCError](dcerror-swift.struct.md)

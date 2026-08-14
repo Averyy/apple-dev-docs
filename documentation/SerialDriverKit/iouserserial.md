@@ -18,7 +18,7 @@ class IOUserSerial;
 
 Subclass `IOUserSerial` and use it to implement a service for communicating with serial devices. This class automatically manages the buffers used to store incoming and outgoing data. You are responsible for configuring your hardware, and for reading and writing data at appropriate times. This class supports configuration through standard modem commands or using universal asynchronous receiver/transmitter (UART) hardware.
 
-If your driver communicates with your device over USB, subclass [`IOUserUSBSerial`](https://developer.apple.com/documentation/USBSerialDriverKit/IOUserUSBSerial) (in the USBSerialDriverKit framework) instead of this class.
+If your driver communicates with your device over USB, subclass [`IOUserUSBSerial`](https://developer.apple.com/documentation/usbserialdriverkit/iouserusbserial) (in the USBSerialDriverKit framework) instead of this class.
 
 ## Topics
 
@@ -78,7 +78,7 @@ If your driver communicates with your device over USB, subclass [`IOUserUSBSeria
 
 ## See Also
 
-- [com.apple.developer.driverkit.family.serial](../BundleResources/Entitlements/com.apple.developer.driverkit.family.serial.md)
+- [com.apple.developer.driverkit.family.serial](../bundleresources/entitlements/com.apple.developer.driverkit.family.serial.md)
   A Boolean value that indicates whether to match the driver against devices with serial communication interfaces.
 
 

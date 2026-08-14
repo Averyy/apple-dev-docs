@@ -22,7 +22,7 @@ let kCVImageBufferChromaSubsamplingKey: CFString
 
 #### Discussion
 
-The original format value is of type [`CFString`](https://developer.apple.com/documentation/CoreFoundation/CFString). See [`Image Buffer Chroma Subsampling Constants`](image-buffer-chroma-subsampling-constants.md) for more information.
+The original format value is of type [`CFString`](https://developer.apple.com/documentation/corefoundation/cfstring). See [`Image Buffer Chroma Subsampling Constants`](image-buffer-chroma-subsampling-constants.md) for more information.
 
 ## See Also
 

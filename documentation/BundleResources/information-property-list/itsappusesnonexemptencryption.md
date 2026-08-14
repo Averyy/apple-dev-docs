@@ -20,7 +20,7 @@ If you set the value to `YES`, you typically also provide a value for the [`ITSE
 
 If you don’t have the [`ITSAppUsesNonExemptEncryption`](information-property-list/itsappusesnonexemptencryption.md) key in your app’s `Info.plist` file, App Store Connect walks you through an export compliance questionnaire every time you upload a new version of your app. Including the key streamlines the app submission process.
 
-For additional information, see [`Complying with Encryption Export Regulations`](https://developer.apple.com/documentation/Security/complying-with-encryption-export-regulations).
+For additional information, see [`Complying with Encryption Export Regulations`](https://developer.apple.com/documentation/security/complying-with-encryption-export-regulations).
 
 ## See Also
 

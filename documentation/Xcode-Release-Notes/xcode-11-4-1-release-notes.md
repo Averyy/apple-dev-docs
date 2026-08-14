@@ -28,7 +28,7 @@ Xcode 11.4.1 includes SDKs for iOS 13.4, iPadOS 13.4, tvOS 13.4, watchOS 6.2, an
 
 ##### Interface Builder
 
-- Fixed an issue that caused some [`UINavigationBar`](https://developer.apple.com/documentation/UIKit/UINavigationBar) appearance properties set in storyboard and XIB documents to be ignored when building with Xcode 11.4. (60883063) (FB7639654)
+- Fixed an issue that caused some [`UINavigationBar`](https://developer.apple.com/documentation/uikit/uinavigationbar) appearance properties set in storyboard and XIB documents to be ignored when building with Xcode 11.4. (60883063) (FB7639654)
 
 ##### Linking
 

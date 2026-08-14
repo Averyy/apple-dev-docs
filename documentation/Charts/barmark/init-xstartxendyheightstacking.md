@@ -34,7 +34,7 @@ Chart(data) {
 }
 ```
 
-![Vertical bar chart with one bar on the y-axis showing profit ranging from 0 to 15000 with stacked categories Gizmos, Gadgets and Widgets. Legend showing the color mapped to a product category.](https://docs-assets.developer.apple.com/published/b27d9c2a04164022067b17c134ac96d2/BarMarkSwift.BarMarkVerticalStacked1DBarChartWithForegroundColor%402x.png)
+![Vertical bar chart with one bar on the y-axis showing profit ranging from 0 to 15000 with stacked categories Gizmos, Gadgets and Widgets. Legend showing the color mapped to a product category.](/images/com.apple.Charts/BarMarkSwift.BarMarkVerticalStacked1DBarChartWithForegroundColor@2x.png)
 
 ## Parameters
 

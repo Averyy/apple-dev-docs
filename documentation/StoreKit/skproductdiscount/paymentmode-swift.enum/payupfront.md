@@ -28,7 +28,7 @@ case payUpFront
 
 With a pay up front payment mode, users pay the discounted price one time, and receive the product for duration of the discount period.
 
-![Example of a subscription timeline with a pay up front payment mode. The introductory price is billed one time.](https://docs-assets.developer.apple.com/published/d4efc45f4203f1875f488fa0f304656f/media-2942133%402x.png)
+![Example of a subscription timeline with a pay up front payment mode. The introductory price is billed one time.](/images/com.apple.storekit/media-2942133@2x.png)
 
 ## See Also
 

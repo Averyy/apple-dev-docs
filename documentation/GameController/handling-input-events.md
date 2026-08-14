@@ -173,7 +173,7 @@ input.elementValueDidChangeHandler = { (input, element) in
 
 ## See Also
 
-- [Game Controller updates](../Updates/GameController.md)
+- [Game Controller updates](../updates/gamecontroller.md)
   Learn about important changes to Game Controller.
 - [Discovering game controllers](discovering-game-controllers.md)
   Implement connection and input handling to provide seamless physical controller support for players.

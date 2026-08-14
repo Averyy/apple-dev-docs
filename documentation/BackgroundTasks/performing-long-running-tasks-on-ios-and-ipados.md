@@ -16,13 +16,13 @@ Unlike other [`BGTask`](bgtask.md) subclasses, [`BGContinuedProcessingTask`](bgc
 
 For added flexibility, you can set the system to fail any task if, under resource constraints, the system can’t begin processing the task immediately. Otherwise, the system queues the task to begin as soon as possible.
 
-![A flow chart that contains interconnected boxes, which represent actors, actions, or conditions. The flowchart shows a long-running task as it begins with a person and flows to and from the app, the framework, and the system, including submission failures. The flow culminates when the system queues the task or runs it.](https://docs-assets.developer.apple.com/published/8eab37a11ab537605095ce372ee0eecb/performing-long-running-tasks-on-ios-and-ipados-1%402x.png)
+![A flow chart that contains interconnected boxes, which represent actors, actions, or conditions. The flowchart shows a long-running task as it begins with a person and flows to and from the app, the framework, and the system, including submission failures. The flow culminates when the system queues the task or runs it.](/images/com.apple.backgroundtasks/performing-long-running-tasks-on-ios-and-ipados-1@2x.png)
 
 When the system runs a continuous background task and a person backgrounds the app, the system keeps them informed of the task’s progress through a system interface. For power and performance considerations, people can cancel a continuous background task if they desire, through the interface. Your app regularly reports progress of the task, which enables the system to make informed suggestions through the interface about possibly stuck tasks that a person can cancel.
 
 If a person cancels a task through the interface, the framework invokes the task’s expiration handler and the app handles the failure. Otherwise, the framework returns control to the app’s completion handler with a success status.
 
-![A flow chart that contains interconnected boxes, which represent actors, actions, or conditions. The flowchart shows a long-running task as it begins with the system and flows to and from the framework, the app, and a person, including background processing or task expiration. The flow culminates when the task completes and the app handles success or failure.](https://docs-assets.developer.apple.com/published/6f3756d2e4ac77f7aaced4dbde52c9cd/performing-long-running-tasks-on-ios-and-ipados-2%402x.png)
+![A flow chart that contains interconnected boxes, which represent actors, actions, or conditions. The flowchart shows a long-running task as it begins with the system and flows to and from the framework, the app, and a person, including background processing or task expiration. The flow culminates when the task completes and the app handles success or failure.](/images/com.apple.backgroundtasks/performing-long-running-tasks-on-ios-and-ipados-2@2x.png)
 
 #### Create a Continuous Background Task Request
 
@@ -51,7 +51,7 @@ if BGTaskScheduler.supportedResources.contains(.gpu) {
 }
 ```
 
-The system requires your app to have the [`Background GPU Access`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.background-tasks.continued-processing.gpu) entitlement with a value of `true` to use the GPU in the background. To do that, enable the Background GPU Access capability on your app’s target. For more information about capabilities in Xcode, see [`Adding capabilities to your app`](https://developer.apple.com/documentation/Xcode/adding-capabilities-to-your-app).
+The system requires your app to have the [`Background GPU Access`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.background-tasks.continued-processing.gpu) entitlement with a value of `true` to use the GPU in the background. To do that, enable the Background GPU Access capability on your app’s target. For more information about capabilities in Xcode, see [`Adding capabilities to your app`](https://developer.apple.com/documentation/xcode/adding-capabilities-to-your-app).
 
 #### Choose a Processing Strategy
 
@@ -120,7 +120,7 @@ private func submit() {
 
 The system displays the job and other continuous background tasks in a Live Activity to inform people of background task progress. It’s important to display accurate progress, as a person can cancel a task through the Live Activity widget if the task appears to be stuck.
 
-To set progress, use the [`ProgressReporting`](https://developer.apple.com/documentation/Foundation/ProgressReporting) protocol that [`BGContinuedProcessingTask`](bgcontinuedprocessingtask.md) conforms to:
+To set progress, use the [`ProgressReporting`](https://developer.apple.com/documentation/foundation/progressreporting) protocol that [`BGContinuedProcessingTask`](bgcontinuedprocessingtask.md) conforms to:
 
 ```swift
 // Create a progress instance.
@@ -178,7 +178,7 @@ A task can fail if your code encounters an error or the system expires your task
 
 - [class BGContinuedProcessingTask](bgcontinuedprocessingtask.md)
   A task that starts in the foreground and can continue running in the background as needed.
-- [Background GPU Access](../BundleResources/Entitlements/com.apple.developer.background-tasks.continued-processing.gpu.md)
+- [Background GPU Access](../bundleresources/entitlements/com.apple.developer.background-tasks.continued-processing.gpu.md)
   The entitlement the system requires for a continuous background task to use the GPU.
 
 

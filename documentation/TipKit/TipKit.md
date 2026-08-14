@@ -18,7 +18,7 @@ Display tips that help people discover features in your app.
 
 Use TipKit to show contextual tips that highlight new, interesting, or unused features people haven’t discovered on their own yet.
 
-![A conceptual image showing general tips added to general apps.](https://docs-assets.developer.apple.com/published/ad49c41b987c8654c79823101b5defd9/tipkit_hero%402x.png)
+![A conceptual image showing general tips added to general apps.](/images/com.apple.TipKit/tipkit_hero@2x.png)
 
 Define your tip content, and the conditions under which they appear, with the [`Tip`](tip.md) protocol. Then draw attention to new features using the [`TipView`](tipview.md).
 
@@ -102,7 +102,7 @@ struct LandmarkTips: App {
 - [struct TipView](tipview.md)
   A user interface element that represents an inline tip.
 - [func popoverTip((any Tip)?, arrowEdge: Edge?, action: (Tips.Action) -> Void) -> some View
-](../SwiftUI/View/popoverTip(_:arrowEdge:action:).md)
+](../swiftui/view/popovertip(_:arrowedge:action:).md)
   Presents a popover tip on the modified view.
 ### UIKit Views
 - [class TipUIView](tipuiview.md)
@@ -127,7 +127,7 @@ struct LandmarkTips: App {
   A repeatable user-defined action.
 ### View Style
 - [func tipViewStyle(some TipViewStyle) -> some View
-](../SwiftUI/View/tipViewStyle(_:).md)
+](../swiftui/view/tipviewstyle(_:).md)
   Sets the given style for TipView within the view hierarchy.
 - [protocol TipViewStyle](tipviewstyle.md)
   A type that applies custom appearance to all tips within a view hierarchy.

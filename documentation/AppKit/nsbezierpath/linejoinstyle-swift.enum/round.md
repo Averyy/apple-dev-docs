@@ -18,7 +18,7 @@ case round
 
 Here is an example of the appearance of this style:
 
-![Diagram that shows the round line join style.](https://docs-assets.developer.apple.com/published/dee3d1377e86998ce0a636ff90571ac3/media-3670931%402x.png)
+![Diagram that shows the round line join style.](/images/com.apple.appkit/media-3670931@2x.png)
 
 ## See Also
 

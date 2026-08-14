@@ -27,7 +27,7 @@ This method also sets the value of the [`customizableViewControllers`](uitabbarc
 ## Parameters
 
 - `viewControllers`: The array of custom view controllers to display in the tab bar interface. The order of the view controllers in this array corresponds to the display order in the tab bar, with the controller at index 0 representing the left-most tab, the controller at index 1 the next tab to the right, and so on.
-- `animated`: If [`true`](https://developer.apple.com/documentation/Swift/true), the tab bar items for the view controllers are animated into position. If [`false`](https://developer.apple.com/documentation/Swift/false), changes to the tab bar items are reflected immediately.
+- `animated`: If [`true`](https://developer.apple.com/documentation/swift/true), the tab bar items for the view controllers are animated into position. If [`false`](https://developer.apple.com/documentation/swift/false), changes to the tab bar items are reflected immediately.
 
 ## See Also
 

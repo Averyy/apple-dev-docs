@@ -22,7 +22,7 @@ struct WAPublishableService
 
 #### Overview
 
-You specify the services your app uses in `Info.plist` via a dictionary under the [`WiFiAwareServices`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/WiFiAwareServices) key:
+You specify the services your app uses in `Info.plist` via a dictionary under the [`WiFiAwareServices`](https://developer.apple.com/documentation/bundleresources/information-property-list/wifiawareservices) key:
 
 - Each *key* in that dictionary is the full service name of a service, and the *value* is a dictionary of configuration properties for that service.
 - If the configuration dictionary contains the `Publishable` key, the system creates a `WAPublishableService` is created for that service and makes it available in [`allServices`](wapublishableservice/allservices.md).
@@ -46,14 +46,14 @@ You specify the services your app uses in `Info.plist` via a dictionary under th
 ## Relationships
 
 ### Conforms To
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Decodable](../Swift/Decodable.md)
-- [Encodable](../Swift/Encodable.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [Identifiable](../Swift/Identifiable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Decodable](../swift/decodable.md)
+- [Encodable](../swift/encodable.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [Identifiable](../swift/identifiable.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 - [WAService](waservice.md)
 
 ## See Also

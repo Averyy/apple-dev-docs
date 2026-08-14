@@ -37,8 +37,8 @@ protocol UIDropSession : ProgressReporting, UIDragDropSession
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [ProgressReporting](../Foundation/ProgressReporting.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [ProgressReporting](../foundation/progressreporting.md)
 - [UIDragDropSession](uidragdropsession.md)
 
 ## See Also

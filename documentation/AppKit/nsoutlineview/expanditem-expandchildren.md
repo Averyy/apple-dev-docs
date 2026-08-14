@@ -16,14 +16,14 @@ func expandItem(_ item: Any?, expandChildren: Bool)
 
 #### Discussion
 
-For example, this method is invoked with the `expandChildren` parameter set to [`true`](https://developer.apple.com/documentation/Swift/true) when a user Option-clicks the disclosure triangle for an item in the outline view (to expand the item and all its contained items).
+For example, this method is invoked with the `expandChildren` parameter set to [`true`](https://developer.apple.com/documentation/swift/true) when a user Option-clicks the disclosure triangle for an item in the outline view (to expand the item and all its contained items).
 
 For each item expanded, posts an item expanded notification.
 
 ## Parameters
 
 - `item`: An item in the receiver. Starting in OS X version 10.5,  passing `'nil'` will expand each item under the root in the outline view.
-- `expandChildren`: If [`true`](https://developer.apple.com/documentation/Swift/true), recursively expands `item` and its children. If [`false`](https://developer.apple.com/documentation/Swift/false), expands `item` only (identical to [`expandItem(_:)`](nsoutlineview/expanditem(_:).md)).
+- `expandChildren`: If [`true`](https://developer.apple.com/documentation/swift/true), recursively expands `item` and its children. If [`false`](https://developer.apple.com/documentation/swift/false), expands `item` only (identical to [`expandItem(_:)`](nsoutlineview/expanditem(_:).md)).
 
 ## See Also
 

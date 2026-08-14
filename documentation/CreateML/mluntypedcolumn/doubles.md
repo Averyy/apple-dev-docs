@@ -21,11 +21,11 @@ var doubles: MLDataColumn<Double>? { get }
 
 #### Return Value
 
-A new data column if the underlying type of the column is [`Double`](https://developer.apple.com/documentation/Swift/Double); otherwise `nil`.
+A new data column if the underlying type of the column is [`Double`](https://developer.apple.com/documentation/swift/double); otherwise `nil`.
 
 #### Discussion
 
-This property is functionally equivalent to passing [`Double`](https://developer.apple.com/documentation/Swift/Double)`.self` to [`column(type:)`](mluntypedcolumn/column(type:).md). Typically you ensure [`type`](mluntypedcolumn/type.md) is equal to [`MLDataValue.ValueType.double`](mldatavalue/valuetype/double.md) before getting this property.
+This property is functionally equivalent to passing [`Double`](https://developer.apple.com/documentation/swift/double)`.self` to [`column(type:)`](mluntypedcolumn/column(type:).md). Typically you ensure [`type`](mluntypedcolumn/type.md) is equal to [`MLDataValue.ValueType.double`](mldatavalue/valuetype/double.md) before getting this property.
 
 ## See Also
 

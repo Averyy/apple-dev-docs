@@ -19,7 +19,7 @@ void output::setScale(float2 scale)
 
 This function applies a scale transformation to the rendered particle output, allowing independent control of horizontal and vertical scaling. This affects only the rendered appearance and does not modify the particle itself.
 
-> **Note**: ![Graph](https://docs-assets.developer.apple.com/published/04960b4bd198a5126fe1b05e8d0f248b/output__setScale.svg)
+> **Note**: ![Graph](/images/com.apple.computegraph/output__setScale.svg)
 
 ## Parameters
 

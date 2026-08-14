@@ -28,9 +28,9 @@ Apple provides functionality to help users avoid this situation. However, there�
 
 ##### Encrypt Fields in Cloudkit
 
-Use the [`encryptedValues`](ckrecord/encryptedvalues.md) property to set a field on a `CKRecord` that instructs CloudKit to automatically encrypt data while writing, and decrypt it while reading. This method of encryption and decryption applies to most of the `Record` value types, including [`NSString`](https://developer.apple.com/documentation/Foundation/NSString), [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber), [`NSDate`](https://developer.apple.com/documentation/Foundation/NSDate), [`NSData`](https://developer.apple.com/documentation/Foundation/NSData), [`CLLocation`](https://developer.apple.com/documentation/CoreLocation/CLLocation), and [`NSArray`](https://developer.apple.com/documentation/Foundation/NSArray). However, there’s no encryption support for [`CKRecord.Reference`](ckrecord/reference.md) objects because they need to be visible to the server. CloudKit encrypts [`CKAsset`](ckasset.md) by default so you can’t set it as a value for the [`encryptedValues`](ckrecord/encryptedvalues.md) property.
+Use the [`encryptedValues`](ckrecord/encryptedvalues.md) property to set a field on a `CKRecord` that instructs CloudKit to automatically encrypt data while writing, and decrypt it while reading. This method of encryption and decryption applies to most of the `Record` value types, including [`NSString`](https://developer.apple.com/documentation/foundation/nsstring), [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber), [`NSDate`](https://developer.apple.com/documentation/foundation/nsdate), [`NSData`](https://developer.apple.com/documentation/foundation/nsdata), [`CLLocation`](https://developer.apple.com/documentation/corelocation/cllocation), and [`NSArray`](https://developer.apple.com/documentation/foundation/nsarray). However, there’s no encryption support for [`CKRecord.Reference`](ckrecord/reference.md) objects because they need to be visible to the server. CloudKit encrypts [`CKAsset`](ckasset.md) by default so you can’t set it as a value for the [`encryptedValues`](ckrecord/encryptedvalues.md) property.
 
-Below is an example of the encrypted values property setting and getting [`NSData`](https://developer.apple.com/documentation/Foundation/NSData):
+Below is an example of the encrypted values property setting and getting [`NSData`](https://developer.apple.com/documentation/foundation/nsdata):
 
 ```swift
 // Create a record.
@@ -59,7 +59,7 @@ Your CloudKit database schema needs to reflect which fields on specific record t
 - Write a new field to a new or existing [`CKRecord`](ckrecord.md) through the [`encryptedValues`](ckrecord/encryptedvalues.md) property in the development environment of your container. This triggers a schema update to your development environment, which reflects in [`CloudKit console`](https://developer.apple.comhttps://icloud.developer.apple.com/dashboard/#home).
 - Using CloudKit console, add a new field to a new record type in your development environment schema. Set the field type to the desired encrypted data type, such as Encrypted Double or Encrypted String.
 
-![A screenshot of the CloudKit database app. The New Records menu item is in a selected state in the Schema section on the left, and the New Record Type pane displays on the right.](https://docs-assets.developer.apple.com/published/bb9ea638f2519ae15e7609b9f48417fd/media-3814031%402x.png)
+![A screenshot of the CloudKit database app. The New Records menu item is in a selected state in the Schema section on the left, and the New Record Type pane displays on the right.](/images/com.apple.cloudkit/media-3814031@2x.png)
 
 Promote this schema change to your production environment before deploying any app changes to the App Store that rely on the new schema.
 

@@ -36,7 +36,7 @@ protocol AVPlaybackUserInterfaceMediaSelectionControllable : AnyObject, Observab
 ## Relationships
 
 ### Inherits From
-- [Observable](../Observation/Observable.md)
+- [Observable](../observation/observable.md)
 ### Inherited By
 - [AVPlaybackUserInterfaceControllable](avplaybackuserinterfacecontrollable-92fri.md)
 

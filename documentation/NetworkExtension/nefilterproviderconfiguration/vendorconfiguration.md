@@ -20,7 +20,7 @@ var vendorConfiguration: [String : Any]? { get set }
 
 #### Discussion
 
-All of the values in this dictionary must be [`NSSecureCoding`](https://developer.apple.com/documentation/Foundation/NSSecureCoding)-compliant.
+All of the values in this dictionary must be [`NSSecureCoding`](https://developer.apple.com/documentation/foundation/nssecurecoding)-compliant.
 
 ## See Also
 

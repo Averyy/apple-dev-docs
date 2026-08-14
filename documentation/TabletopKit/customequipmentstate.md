@@ -22,7 +22,7 @@ protocol CustomEquipmentState : MutableEquipmentState
 ## Relationships
 
 ### Inherits From
-- [Equatable](../Swift/Equatable.md)
+- [Equatable](../swift/equatable.md)
 - [EquipmentState](equipmentstate.md)
 - [MutableEquipmentState](mutableequipmentstate.md)
 

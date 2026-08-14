@@ -5,7 +5,6 @@
 
 **Availability**:
 - iOS 27.0+ (Beta)
-- iPadOS 27.0+ (Beta)
 
 ## Declaration
 
@@ -27,9 +26,9 @@ final class Session
 ## Relationships
 
 ### Conforms To
-- [AccessoryFeatureSession](../AccessoryTransportExtension/AccessoryFeatureSession.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [AccessoryFeatureSession](../accessorytransportextension/accessoryfeaturesession.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 
 ---

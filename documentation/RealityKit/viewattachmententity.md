@@ -26,20 +26,20 @@ An entity that has a view attachment.
 ### Inherits From
 - [Entity](entity.md)
 ### Conforms To
-- [CoordinateSpace3D](../Spatial/CoordinateSpace3D.md)
-- [CoordinateSpace3DFloat](../Spatial/CoordinateSpace3DFloat.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
+- [CoordinateSpace3D](../spatial/coordinatespace3d.md)
+- [CoordinateSpace3DFloat](../spatial/coordinatespace3dfloat.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [Equatable](../swift/equatable.md)
 - [EventSource](eventsource.md)
 - [HasHierarchy](hashierarchy.md)
 - [HasSynchronization](hassynchronization.md)
 - [HasTransform](hastransform.md)
-- [Hashable](../Swift/Hashable.md)
-- [Identifiable](../Swift/Identifiable.md)
-- [Observable](../Observation/Observable.md)
+- [Hashable](../swift/hashable.md)
+- [Identifiable](../swift/identifiable.md)
+- [Observable](../observation/observable.md)
 - [RealityCoordinateSpace](realitycoordinatespace.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

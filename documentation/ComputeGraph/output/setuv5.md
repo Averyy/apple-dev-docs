@@ -19,7 +19,7 @@ void output::setUV5(float4 value)
 
 This function assigns a custom UV coordinate to the fifth texture coordinate channel of the output mesh. If the mesh doesn’t already have a UV5 channel, it will be created. This enables multi-texturing and advanced shader effects.
 
-> **Note**: ![Graph](https://docs-assets.developer.apple.com/published/3a0669cc958806322ce938b28511fc11/output__setUV5.svg)
+> **Note**: ![Graph](/images/com.apple.computegraph/output__setUV5.svg)
 
 > **Note**: Reads and writes to output attribute `float4 uv5`
 

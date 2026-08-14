@@ -18,7 +18,7 @@ class CTCellularPlanProvisioning
 
 #### Overview
 
-This class is only available to carrier apps with the [`com.apple.CommCenter.fine-grained`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.CommCenter.fine-grained) entitlement, where the entitlement’s array of values includes `public-cellular-plan`.
+This class is only available to carrier apps with the [`com.apple.CommCenter.fine-grained`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.commcenter.fine-grained) entitlement, where the entitlement’s array of values includes `public-cellular-plan`.
 
 ## Topics
 
@@ -40,14 +40,14 @@ This class is only available to carrier apps with the [`com.apple.CommCenter.fin
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

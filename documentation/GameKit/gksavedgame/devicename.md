@@ -20,7 +20,7 @@ var deviceName: String? { get }
 
 #### Discussion
 
-In iOS, the user sets the device name by choosing Settings > General > About > Name. To access this device name, your app needs to meet certain criteria and set the [`com.apple.developer.device-information.user-assigned-device-name`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.device-information.user-assigned-device-name) entitlement. Otherwise, the default value for this property is the generic device name.
+In iOS, the user sets the device name by choosing Settings > General > About > Name. To access this device name, your app needs to meet certain criteria and set the [`com.apple.developer.device-information.user-assigned-device-name`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.device-information.user-assigned-device-name) entitlement. Otherwise, the default value for this property is the generic device name.
 
 > **Note**:  In iOS 15 and earlier, the default value for this property is the user-assigned device name in Settings.
 

@@ -21,7 +21,7 @@ In Swift the methods returns an attachment object; in Objective-C the methods re
 ## Parameters
 
 - `url`: A URL that points to a local disk image in RAW format.
-- `readOnly`: A Boolean that indicates whether to configure the disk image as read-only. Specify [`true`](https://developer.apple.com/documentation/Swift/true) to prevent the guest operating system from writing to the disk image, and [`false`](https://developer.apple.com/documentation/Swift/false) to allow writing.
+- `readOnly`: A Boolean that indicates whether to configure the disk image as read-only. Specify [`true`](https://developer.apple.com/documentation/swift/true) to prevent the guest operating system from writing to the disk image, and [`false`](https://developer.apple.com/documentation/swift/false) to allow writing.
 
 ## See Also
 

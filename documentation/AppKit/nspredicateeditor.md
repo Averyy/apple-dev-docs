@@ -16,7 +16,7 @@ class NSPredicateEditor
 
 #### Overview
 
-`NSPredicateEditor` provides an [`NSPredicate`](https://developer.apple.com/documentation/Foundation/NSPredicate) property—[`objectValue`](nscontrol/objectvalue.md) (inherited from [`NSControl`](nscontrol.md))—that you can get and set directly, and that you can bind using Cocoa bindings (you typically configure a predicate editor in Interface Builder). `NSPredicateEditor` depends on another class, [`NSPredicateEditorRowTemplate`](nspredicateeditorrowtemplate.md), that describes the available predicates and how to display them.
+`NSPredicateEditor` provides an [`NSPredicate`](https://developer.apple.com/documentation/foundation/nspredicate) property—[`objectValue`](nscontrol/objectvalue.md) (inherited from [`NSControl`](nscontrol.md))—that you can get and set directly, and that you can bind using Cocoa bindings (you typically configure a predicate editor in Interface Builder). `NSPredicateEditor` depends on another class, [`NSPredicateEditorRowTemplate`](nspredicateeditorrowtemplate.md), that describes the available predicates and how to display them.
 
 Unlike `NSRuleEditor`, `NSPredicateEditor` does not depend on its delegate to populate its rows (and *does not call the populating delegate methods*). Instead, its rows are populated from its `objectValue` property (an instance of `NSPredicate`). `NSPredicateEditor` relies on instances [`NSPredicateEditorRowTemplate`](nspredicateeditorrowtemplate.md), which are responsible for mapping back and forth between the displayed view values and various predicates.
 
@@ -35,28 +35,28 @@ Unlike `NSRuleEditor`, `NSPredicateEditor` does not depend on its delegate to po
 ### Inherits From
 - [NSRuleEditor](nsruleeditor.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
 - [NSAccessibilityElementProtocol](nsaccessibilityelementprotocol.md)
 - [NSAccessibilityProtocol](nsaccessibilityprotocol.md)
 - [NSAnimatablePropertyContainer](nsanimatablepropertycontainer.md)
 - [NSAppearanceCustomization](nsappearancecustomization.md)
-- [NSCoding](../Foundation/NSCoding.md)
+- [NSCoding](../foundation/nscoding.md)
 - [NSDraggingDestination](nsdraggingdestination.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 - [NSStandardKeyBindingResponding](nsstandardkeybindingresponding.md)
 - [NSTouchBarProvider](nstouchbarprovider.md)
 - [NSUserActivityRestoring](nsuseractivityrestoring.md)
 - [NSUserInterfaceItemIdentification](nsuserinterfaceitemidentification.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 
-- [Responding to control-based events using target-action](../UIKit/responding-to-control-based-events-using-target-action.md)
+- [Responding to control-based events using target-action](../uikit/responding-to-control-based-events-using-target-action.md)
   Handle user input by connecting buttons, sliders, and other controls to your app’s code using the target-action design pattern.
 - [class NSButton](nsbutton.md)
   A control that defines an area on the screen that a user clicks to trigger an action.

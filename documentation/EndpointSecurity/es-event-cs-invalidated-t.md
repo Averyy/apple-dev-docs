@@ -36,8 +36,8 @@ Endpoint Security doesn’t generate this event if `CS_HARD` is set, since `CS_H
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../Swift/BitwiseCopyable.md)
-- [Sendable](../Swift/Sendable.md)
+- [BitwiseCopyable](../swift/bitwisecopyable.md)
+- [Sendable](../swift/sendable.md)
 
 
 ---

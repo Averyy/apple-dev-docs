@@ -22,7 +22,7 @@ The `IONetworkData` object is added to a collection using the key from `IONetwor
 
 ## Parameters
 
-- `aData`: The   object.
+- `aData`: The `IONetworkData` object.
 
 ## See Also
 

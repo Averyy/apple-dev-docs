@@ -18,7 +18,7 @@ PencilKit makes it easy to incorporate hand-drawn content into your iPadOS or ma
 
 You capture content in your iPad app using a [`PKCanvasView`](pkcanvasview.md) object that you integrate into your existing view hierarchy. It supports the low-latency capture of touches originating from Apple Pencil or your finger. The canvas object sends final results as a [`PKDrawing`](pkdrawing-swift.struct.md) object, whose contents you can save with your app’s content. You can also convert the drawn content into an image for display in iOS or macOS app.
 
-For information about handling user interactions on Apple Pencil in your UIKit app, see [`Apple Pencil interactions`](https://developer.apple.com/documentation/UIKit/apple-pencil-interactions).
+For information about handling user interactions on Apple Pencil in your UIKit app, see [`Apple Pencil interactions`](https://developer.apple.com/documentation/uikit/apple-pencil-interactions).
 
 ## Topics
 

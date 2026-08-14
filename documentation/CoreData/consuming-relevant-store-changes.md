@@ -8,13 +8,13 @@ Filter store transactions for changes relevant to the current view.
 
 Use persistent history tracking to determine what changes have occurred in the store, and to update your view context only as needed.
 
-For example, consider an app that sometimes shows a list of shopping items, and sometimes shows a list of stores. As the user views the `ShoppingItem` objects from the view context, a background context may download additional `Store` data from a remote source. If the import happens through a batch operation, the save to the store doesn’t generate an [`NSManagedObjectContextDidSave`](https://developer.apple.com/documentation/Foundation/NSNotification/Name-swift.struct/NSManagedObjectContextDidSave) notification, and the view misses these relevant updates. Alternatively, the background context may save changes to the store that don’t affect the current view—for example, inserting, modifying, or deleting `Store` objects. These changes *do* generate context save events, so your view context processes them even though it doesn’t need to.
+For example, consider an app that sometimes shows a list of shopping items, and sometimes shows a list of stores. As the user views the `ShoppingItem` objects from the view context, a background context may download additional `Store` data from a remote source. If the import happens through a batch operation, the save to the store doesn’t generate an [`NSManagedObjectContextDidSave`](https://developer.apple.com/documentation/foundation/nsnotification/name-swift.struct/nsmanagedobjectcontextdidsave) notification, and the view misses these relevant updates. Alternatively, the background context may save changes to the store that don’t affect the current view—for example, inserting, modifying, or deleting `Store` objects. These changes *do* generate context save events, so your view context processes them even though it doesn’t need to.
 
 Persistent history solves the problem by keeping track of every transaction on the store. You can filter this history for relevant changes and decide how or whether to update a view.
 
 ##### Enable History Tracking for Your Local Store
 
-When you create a persistent container, set the [`NSPersistentHistoryTrackingKey`](nspersistenthistorytrackingkey.md) option on the store description to [`true`](https://developer.apple.com/documentation/Swift/true) to enable history tracking.
+When you create a persistent container, set the [`NSPersistentHistoryTrackingKey`](nspersistenthistorytrackingkey.md) option on the store description to [`true`](https://developer.apple.com/documentation/swift/true) to enable history tracking.
 
 ```swift
 // Pass the data model filename to the container’s initializer.
@@ -31,7 +31,7 @@ Core Data tracks all changes to your local store.
 
 ##### Listen for Remote Changes
 
-In the persistent container, set the [`NSPersistentStoreRemoteChangeNotificationPostOptionKey`](nspersistentstoreremotechangenotificationpostoptionkey.md) option to [`true`](https://developer.apple.com/documentation/Swift/true) to enable listening for remote change notifications.
+In the persistent container, set the [`NSPersistentStoreRemoteChangeNotificationPostOptionKey`](nspersistentstoreremotechangenotificationpostoptionkey.md) option to [`true`](https://developer.apple.com/documentation/swift/true) to enable listening for remote change notifications.
 
 ```swift
 description?.setOption(true as NSNumber, forKey: NSPersistentStoreRemoteChangeNotificationPostOptionKey)
@@ -277,7 +277,7 @@ After you delete an object from the store, its [`objectID`](nsmanagedobject/obje
 
 In the Core Data model editor, select an attribute. In the data model editor, select the Preserve After Deletion checkbox.
 
-![Screenshot showing the data model inspector, with the Preserve After Deletion checkbox selected under Advanced. ](https://docs-assets.developer.apple.com/published/5e1c938af187bf038cd4f9a9e391f4fa/media-3233383%402x.png)
+![Screenshot showing the data model inspector, with the Preserve After Deletion checkbox selected under Advanced. ](/images/com.apple.coredata/media-3233383@2x.png)
 
 In the persistent history, [`NSPersistentHistoryChangeType.delete`](nspersistenthistorychangetype/delete.md) changes include a [`tombstone`](nspersistenthistorychange/tombstone.md) dictionary with key-value pairs for any attributes marked for preservation after deletion.
 

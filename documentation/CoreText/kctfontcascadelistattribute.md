@@ -22,7 +22,7 @@ let kCTFontCascadeListAttribute: CFString
 
 #### Discussion
 
-The cascade list is a [`CFArray`](https://developer.apple.com/documentation/CoreFoundation/CFArray) object containing [`CTFontDescriptor`](ctfontdescriptor.md) elements. If unspecified, the global cascade list is used.
+The cascade list is a [`CFArray`](https://developer.apple.com/documentation/corefoundation/cfarray) object containing [`CTFontDescriptor`](ctfontdescriptor.md) elements. If unspecified, the global cascade list is used.
 
 ## See Also
 

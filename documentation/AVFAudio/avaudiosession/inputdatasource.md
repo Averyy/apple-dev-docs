@@ -21,7 +21,7 @@ var inputDataSource: AVAudioSessionDataSourceDescription? { get }
 
 #### Discussion
 
-The value of this property is [`nil`](https://developer.apple.com/documentation/ObjectiveC/nil-227m0) if switching between multiple input sources isn’t currently possible. Only certain devices and peripherals, such as an iPhone equipped with both front- and rear-facing microphones, support this feature.
+The value of this property is [`nil`](https://developer.apple.com/documentation/objectivec/nil-227m0) if switching between multiple input sources isn’t currently possible. Only certain devices and peripherals, such as an iPhone equipped with both front- and rear-facing microphones, support this feature.
 
 ## See Also
 

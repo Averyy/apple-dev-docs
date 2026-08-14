@@ -10,7 +10,7 @@ You can add an *access point* to your game that provides a way for players to ma
 
 The access point initially shows player highlights, like how many achievements they’ve earned and where they stand in leaderboards. Then the access point collapses into the player’s avatar and remains on your game’s screen. When the player taps or clicks the avatar, GameKit displays the dashboard so players can drill down into the details of their Game Center data, including more highlights and statistics. You can choose where to display the access point, and select the highlights to display.
 
-![Image of an iPhone screen in landscape layout, showing a game called The Coast. In the upper left corner of the screen, the access point appears as a small icon and two lines of text documenting the player’s completed achievements.](https://docs-assets.developer.apple.com/published/067f62fec291874a8a29c06e09a9f0dc/media-3729929%402x.png)
+![Image of an iPhone screen in landscape layout, showing a game called The Coast. In the upper left corner of the screen, the access point appears as a small icon and two lines of text documenting the player’s completed achievements.](/images/com.apple.gamekit/media-3729929@2x.png)
 
 You can also display the dashboard on its own, or a particular section of the dashboard. For more information, see [`Displaying the Game Center dashboard`](displaying-the-game-center-dashboard.md). For design guidance, see [`Human Interface Guidelines > Technologies > Game Center > Access point`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/game-center#Access-point).
 
@@ -29,13 +29,13 @@ GKAccessPoint.shared.location = .topLeading
 
 For right-to-left languages, such as Arabic and Hebrew, the system flips the location. For example, [`GKAccessPoint.Location.topLeading`](gkaccesspoint/location-swift.enum/topleading.md) specifies the upper-right corner and [`GKAccessPoint.Location.bottomLeading`](gkaccesspoint/location-swift.enum/bottomleading.md) specifies the bottom-left corner.
 
-To display highlights when the access point appears, set the [`showHighlights`](gkaccesspoint/showhighlights.md) property to [`true`](https://developer.apple.com/documentation/Swift/true):
+To display highlights when the access point appears, set the [`showHighlights`](gkaccesspoint/showhighlights.md) property to [`true`](https://developer.apple.com/documentation/swift/true):
 
 ```swift
 GKAccessPoint.shared.showHighlights = true
 ```
 
-When you’re done configuring the access point, set the [`isActive`](gkaccesspoint/isactive.md) property to [`true`](https://developer.apple.com/documentation/Swift/true):
+When you’re done configuring the access point, set the [`isActive`](gkaccesspoint/isactive.md) property to [`true`](https://developer.apple.com/documentation/swift/true):
 
 ```swift
 GKAccessPoint.shared.isActive = true
@@ -47,7 +47,7 @@ Hide the access point when displaying game intros or settings. To give your play
 
 You can observe access point properties to adjust your game when the access point either changes sizes or just before it presents the dashboard.
 
-![Image of an iPhone screen in landscape layout, showing a player’s dashboard after the player clicks or taps the access point. The dashboard shows three sections, including icons and text, for navigating to the player’s profile, achievements, and leaderboards.](https://docs-assets.developer.apple.com/published/3d9b06cab64bffc6a1b78ffe862593e3/media-3680165%402x.png)
+![Image of an iPhone screen in landscape layout, showing a player’s dashboard after the player clicks or taps the access point. The dashboard shows three sections, including icons and text, for navigating to the player’s profile, achievements, and leaderboards.](/images/com.apple.gamekit/media-3680165@2x.png)
 
 To adjust your graphics when the access point size changes (for example, while it displays highlights), observe the [`frameInScreenCoordinates`](gkaccesspoint/frameinscreencoordinates.md) property. Be sure to convert the screen coordinates of the access point to your view’s coordinates.
 
@@ -93,7 +93,7 @@ Then use the [`trigger(state:handler:)`](gkaccesspoint/trigger(state:handler:).m
 
 ##### Configure the Access Point on Visionos
 
-The location of the access point and dashboard varies depending on the type of visionOS game. To change the default behavior below, set the [`location`](gkaccesspoint/location-swift.property.md) and [`parentWindow`](gkaccesspoint/parentwindow.md) properties before you set [`isActive`](gkaccesspoint/isactive.md) to [`true`](https://developer.apple.com/documentation/Swift/true). For example, if you don’t set the parent window of volumetric games, the access point doesn’t appear.
+The location of the access point and dashboard varies depending on the type of visionOS game. To change the default behavior below, set the [`location`](gkaccesspoint/location-swift.property.md) and [`parentWindow`](gkaccesspoint/parentwindow.md) properties before you set [`isActive`](gkaccesspoint/isactive.md) to [`true`](https://developer.apple.com/documentation/swift/true). For example, if you don’t set the parent window of volumetric games, the access point doesn’t appear.
 
 | Type | Access point behavior |
 | --- | --- |

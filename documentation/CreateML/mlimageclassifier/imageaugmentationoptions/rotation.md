@@ -22,7 +22,7 @@ static let rotation: MLImageClassifier.ImageAugmentationOptions
 
 Use this option to tell the image classifier to augment your training data set by rotating the original images.
 
-![Diagram showing how the original image results in four rotated variants.](https://docs-assets.developer.apple.com/published/ed42a26499089f8a3b7e03c08ff63552/MLImageClassifier-ImageAugmentationOptions-rotation-1%402x.png)
+![Diagram showing how the original image results in four rotated variants.](/images/com.apple.createml/MLImageClassifier-ImageAugmentationOptions-rotation-1@2x.png)
 
 The classifier creates four new images with random rotation angles for each original.
 

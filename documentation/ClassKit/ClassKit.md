@@ -18,7 +18,7 @@ Educational apps provide access to resources like books and videos while reinfor
 
 The ClassKit environment consists of a teacher’s device (or devices) and many student devices communicating through iCloud. Each device runs your app (plus other educational apps) along with Apple’s Schoolwork app, with ClassKit acting as a hub on the device. Using Schoolwork, teachers can see what assignable content your app exposes to ClassKit. They can then create assignments based on that content, and monitor progress of all their students. Meanwhile, students use Schoolwork to receive assignments that link directly to content in your app.
 
-![Diagram showing how your app connects to the other parts of the virtual classroom.](https://docs-assets.developer.apple.com/published/e2acdb865501008f2e8a12d23b500bdd/media-2961556%402x.png)
+![Diagram showing how your app connects to the other parts of the virtual classroom.](/images/com.apple.classkit/media-2961556@2x.png)
 
 ClassKit doesn’t replace any existing logic or storage mechanisms in your app, and you don’t use it to generate any new user interfaces. Instead, you use ClassKit to publicize the structure you already have, so that teachers can use Apple’s Schoolwork app to create assignments based on your app’s content and measure their students’ progress through those assignments.
 
@@ -31,7 +31,7 @@ For student-facing submission functionality, use the [`ClassKit UI`](https://dev
 ### Essentials
 - [Enabling ClassKit in your app](enabling-classkit-in-your-app.md)
   Prepare your app and your development environment to adopt ClassKit.
-- [ClassKit Environment Entitlement](../BundleResources/Entitlements/com.apple.developer.ClassKit-environment.md)
+- [ClassKit Environment Entitlement](../bundleresources/entitlements/com.apple.developer.classkit-environment.md)
   The ClassKit development or production environment for an education app that works with the Schoolwork app.
 - [Incorporating ClassKit into an Educational App](incorporating-classkit-into-an-educational-app.md)
   Walk through the process of setting up assignments and recording student progress.

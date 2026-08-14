@@ -46,10 +46,10 @@ Don’t reuse the same nonce for multiple calls to encryption APIs. It’s criti
 ## Relationships
 
 ### Conforms To
-- [ContiguousBytes](../Foundation/ContiguousBytes.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
-- [Sequence](../Swift/Sequence.md)
+- [ContiguousBytes](../foundation/contiguousbytes.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sequence](../swift/sequence.md)
 
 
 ---

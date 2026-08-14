@@ -16,9 +16,9 @@ var mostCompatibleStringEncoding: UInt { get }
 
 #### Discussion
 
-The string encoding in this property is the encoding with the fewest unmatched characters and glyphs in the font. If this value is [`NSASCIIStringEncoding`](https://developer.apple.com/documentation/Foundation/NSASCIIStringEncoding), the font could not determine the correct encoding; you should assume the font can render only ASCII characters. The font uses heuristically well-known font encodings to determine the value of this property, so for nonstandard encodings the property may not contain the optimal string encoding.
+The string encoding in this property is the encoding with the fewest unmatched characters and glyphs in the font. If this value is [`NSASCIIStringEncoding`](https://developer.apple.com/documentation/foundation/nsasciistringencoding), the font could not determine the correct encoding; you should assume the font can render only ASCII characters. The font uses heuristically well-known font encodings to determine the value of this property, so for nonstandard encodings the property may not contain the optimal string encoding.
 
-You can use the [`data(using:)`](https://developer.apple.com/documentation/Foundation/NSString/data(using:)) or [`data(using:allowLossyConversion:)`](https://developer.apple.com/documentation/Foundation/NSString/data(using:allowLossyConversion:)) methods of [`NSString`](https://developer.apple.com/documentation/Foundation/NSString) to convert strings to this encoding.
+You can use the [`data(using:)`](https://developer.apple.com/documentation/foundation/nsstring/data(using:)) or [`data(using:allowLossyConversion:)`](https://developer.apple.com/documentation/foundation/nsstring/data(using:allowlossyconversion:)) methods of [`NSString`](https://developer.apple.com/documentation/foundation/nsstring) to convert strings to this encoding.
 
 ## See Also
 

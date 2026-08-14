@@ -18,7 +18,7 @@ Plan and implement performance improvements by approaching the problem scientifi
 
 These activities form a cycle of continuous improvement, as the following illustration shows:
 
-![An illustration that shows performance improvement work as a cycle where you gather data about your app’s current performance, determine the most important aspect to improve, profile your app, make a change, and return to gathering data.](https://docs-assets.developer.apple.com/published/bebd5417a094f169e53eed1baac69c8c/improving-your-app-s-performance-1%402x.png)
+![An illustration that shows performance improvement work as a cycle where you gather data about your app’s current performance, determine the most important aspect to improve, profile your app, make a change, and return to gathering data.](/images/com.apple.Xcode/improving-your-app-s-performance-1@2x.png)
 
 Minimizing resource use benefits your users and improves their perceptions of your app. Here are some specific benefits:
 
@@ -27,7 +27,7 @@ Minimizing resource use benefits your users and improves their perceptions of yo
 - Reducing disk writes speeds up your app’s overall performance, makes it more responsive, and reduces wear on users’ device storage.
 - Decreasing hang rate and hang duration improves your users’ perception of your app’s performance and responsiveness.
 - Reducing battery consumption and the use of power-hungry device features makes your app more reliable, and helps ensure that the rest of a person’s device is available when needed.
-- Maintaining low disk space usage allows a person to install and use more apps, and to keep more content on their device. For example, store content that your app can regenerate in the [`cachesDirectory`](https://developer.apple.com/documentation/Foundation/URL/cachesDirectory) so that the system can purge it when needed. Doing so speeds up app and system upgrades, and reduces the iCloud storage space the system requires to create an iCloud backup of the device. For more information, see [`Optimizing Your App’s Data for iCloud Backup`](https://developer.apple.com/documentation/Foundation/optimizing-your-app-s-data-for-icloud-backup).
+- Maintaining low disk space usage allows a person to install and use more apps, and to keep more content on their device. For example, store content that your app can regenerate in the [`cachesDirectory`](https://developer.apple.com/documentation/foundation/url/cachesdirectory) so that the system can purge it when needed. Doing so speeds up app and system upgrades, and reduces the iCloud storage space the system requires to create an iCloud backup of the device. For more information, see [`Optimizing Your App’s Data for iCloud Backup`](https://developer.apple.com/documentation/foundation/optimizing-your-app-s-data-for-icloud-backup).
 
 Even when your measurements and observations show no pressing performance problems, it’s a good idea to run through the performance-improvement cycle and do preventive work to keep your app’s performance from regressing.
 
@@ -36,7 +36,7 @@ Even when your measurements and observations show no pressing performance proble
 To thoroughly understand your app’s performance, combine information from multiple sources:
 
 - Use the [`Xcode Organizer`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2020/10076) to view metrics for launch time, user-interface responsiveness, writes to storage, memory use, and energy use, as well as diagnostic reports for disk writes, crashes, and energy. The Organizer lets you break down measurements by device model, app version, and user percentile. For more information, see [`Analyzing the performance of your shipping app`](analyzing-the-performance-of-your-shipping-app.md).
-- Use [`MetricKit`](https://developer.apple.com/documentation/MetricKit) to gather metrics and record them in your own tools. These metrics are in the form of histograms that record the frequency of observed values over a day. MetricKit goes beyond the metrics in the Metrics organizer to include average pixel luminance, cellular network conditions, and durations associated with custom `OSSignpost` events in your app.
+- Use [`MetricKit`](https://developer.apple.com/documentation/metrickit) to gather metrics and record them in your own tools. These metrics are in the form of histograms that record the frequency of observed values over a day. MetricKit goes beyond the metrics in the Metrics organizer to include average pixel luminance, cellular network conditions, and durations associated with custom `OSSignpost` events in your app.
 - Get feedback from [`TestFlight`](https://developer.apple.comhttps://developer.apple.com/testflight/) testers about their experiences with beta versions of your app. Fill out the Test Information page for your beta version, and request that testers provide feedback about the performance of your app. Include an email address so that testers can report their findings.
 - Investigate feedback from your users about their experiences with released versions of your app. Invite users to send their feedback through email or a dedicated interface within your app. Ask them about their experiences using the app — both what works well and any problems they encounter.
 
@@ -60,11 +60,11 @@ Use [`Instruments`](https://developer.apple.comhttps://help.apple.com/instrument
 
 You get higher-fidelity measurements by profiling on a device instead of the simulator. If the information you gather shows that your app performs poorly on a particular class or model of device, profile on that device.
 
-Find the code that’s causing the performance problem, and create a plan for improving it. Keep in mind that your change may not be localized to a particular line or even function, and you may need to make significant architectural changes to your app. For example, to mitigate a hang that results from synchronously downloading network resources, introduce background operations to handle the networking (see [`Downloading files in the background`](https://developer.apple.com/documentation/Foundation/downloading-files-in-the-background)), and perform a UI update on the main thread when the downloads are complete.
+Find the code that’s causing the performance problem, and create a plan for improving it. Keep in mind that your change may not be localized to a particular line or even function, and you may need to make significant architectural changes to your app. For example, to mitigate a hang that results from synchronously downloading network resources, introduce background operations to handle the networking (see [`Downloading files in the background`](https://developer.apple.com/documentation/foundation/downloading-files-in-the-background)), and perform a UI update on the main thread when the downloads are complete.
 
 ##### Make the Next Change
 
-Implement the change you plan as a result of your investigation. Create an *after* profile in Instruments that you can compare with the *before* profile to ensure your change results in an improvement. Consider writing a performance test in [`XCTest`](https://developer.apple.com/documentation/XCTest) to protect against future regressions in performance, and to serve as a record that the problem existed and you fixed it.
+Implement the change you plan as a result of your investigation. Create an *after* profile in Instruments that you can compare with the *before* profile to ensure your change results in an improvement. Consider writing a performance test in [`XCTest`](https://developer.apple.com/documentation/xctest) to protect against future regressions in performance, and to serve as a record that the problem existed and you fixed it.
 
 ##### Compare the Changed Behavior with Your Original Data
 
@@ -110,7 +110,7 @@ The following articles, Xcode Help topics, and WWDC session videos contain more 
   Use Instruments to analyze the performance, resource usage, and behavior of your apps. Learn how to improve responsiveness, reduce memory usage, and analyze complex behavior over time.
 - [Analyzing the performance of your shipping app](analyzing-the-performance-of-your-shipping-app.md)
   View power and performance metrics for apps you distribute through the App Store.
-- [Creating a performance plan for your visionOS app](../visionOS/creating-a-performance-plan-for-visionos-app.md)
+- [Creating a performance plan for your visionOS app](../visionos/creating-a-performance-plan-for-visionos-app.md)
   Identify your app’s performance and power goals and create a plan to measure and assess them.
 
 

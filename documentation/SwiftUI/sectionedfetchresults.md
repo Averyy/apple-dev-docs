@@ -37,7 +37,7 @@ private var quakes: SectionedFetchResults<String, Quake>
 
 The `quakes` property acts as a collection of [`SectionedFetchResults.Section`](sectionedfetchresults/section.md) instances, each containing a collection of `Quake` instances. The example above depends on the `Quake` model object declaring both `time` and `day` properties, either stored or computed. For best performance with large data sets, use stored properties.
 
-The collection of sections, as well as the collection of managed objects in each section, conforms to the [`RandomAccessCollection`](https://developer.apple.com/documentation/Swift/RandomAccessCollection) protocol, so you can access them as you would any other collection. For example, you can create nested [`ForEach`](foreach.md) loops inside a [`List`](list.md) to iterate over the results:
+The collection of sections, as well as the collection of managed objects in each section, conforms to the [`RandomAccessCollection`](https://developer.apple.com/documentation/swift/randomaccesscollection) protocol, so you can access them as you would any other collection. For example, you can create nested [`ForEach`](foreach.md) loops inside a [`List`](list.md) to iterate over the results:
 
 ```swift
 List {
@@ -55,7 +55,7 @@ Don’t confuse the [`Section`](section.md) view that you use to create a hierar
 
 When you need to dynamically change the request’s section identifier, predicate, or sort descriptors, set the result instance’s [`sectionIdentifier`](sectionedfetchresults/sectionidentifier.md), [`nsPredicate`](sectionedfetchresults/nspredicate.md), and [`sortDescriptors`](sectionedfetchresults/sortdescriptors.md) or [`nsSortDescriptors`](sectionedfetchresults/nssortdescriptors.md) properties, respectively. Be sure that the sorting and sectioning work together to avoid discontinguous sections.
 
-The fetch request and its results use the managed object context stored in the environment, which you can access using the [`managedObjectContext`](environmentvalues/managedobjectcontext.md) environment value. To support user interface activity, you typically rely on the [`viewContext`](https://developer.apple.com/documentation/CoreData/NSPersistentContainer/viewContext) property of a shared [`NSPersistentContainer`](https://developer.apple.com/documentation/CoreData/NSPersistentContainer) instance. For example, you can set a context on your top-level content view using a container that you define as part of your model:
+The fetch request and its results use the managed object context stored in the environment, which you can access using the [`managedObjectContext`](environmentvalues/managedobjectcontext.md) environment value. To support user interface activity, you typically rely on the [`viewContext`](https://developer.apple.com/documentation/coredata/nspersistentcontainer/viewcontext) property of a shared [`NSPersistentContainer`](https://developer.apple.com/documentation/coredata/nspersistentcontainer) instance. For example, you can set a context on your top-level content view using a container that you define as part of your model:
 
 ```swift
 ContentView()
@@ -89,12 +89,12 @@ ContentView()
 ## Relationships
 
 ### Conforms To
-- [BidirectionalCollection](../Swift/BidirectionalCollection.md)
-- [Collection](../Swift/Collection.md)
-- [RandomAccessCollection](../Swift/RandomAccessCollection.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
-- [Sequence](../Swift/Sequence.md)
+- [BidirectionalCollection](../swift/bidirectionalcollection.md)
+- [Collection](../swift/collection.md)
+- [RandomAccessCollection](../swift/randomaccesscollection.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sequence](../swift/sequence.md)
 
 ## See Also
 

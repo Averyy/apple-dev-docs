@@ -24,7 +24,7 @@ A point that is at the same location as `p` but in page coordinates.
 
 ## Parameters
 
-- `node`: The coordinate space for  .
+- `node`: The coordinate space for `p`.
 - `p`: A point in node coordinates to convert to page coordinates.
 
 ## See Also

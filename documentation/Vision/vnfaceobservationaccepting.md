@@ -32,7 +32,7 @@ This protocol allows you to provide an input collection of [`VNFaceObservation`]
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 ### Conforming Types
 - [VNDetectFaceCaptureQualityRequest](vndetectfacecapturequalityrequest.md)
 - [VNDetectFaceLandmarksRequest](vndetectfacelandmarksrequest.md)

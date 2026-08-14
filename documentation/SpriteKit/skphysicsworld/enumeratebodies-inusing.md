@@ -24,7 +24,7 @@ func enumerateBodies(in rect: CGRect, using block: @escaping (SKPhysicsBody, Uns
 
 - `rect`: A rectangle in scene coordinates.
 - `block`: A block to be called for each physics body that contains the point. The block takes the following parameters: - **body**: The physics body that intersected the rectangle.
-- **stop**: A pointer to a Boolean variable. Your block can set this to [`true`](https://developer.apple.com/documentation/Swift/true) to terminate the enumeration.
+- **stop**: A pointer to a Boolean variable. Your block can set this to [`true`](https://developer.apple.com/documentation/swift/true) to terminate the enumeration.
 
 ## See Also
 

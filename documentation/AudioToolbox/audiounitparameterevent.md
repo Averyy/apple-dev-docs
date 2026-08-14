@@ -45,7 +45,7 @@ Apply one or more [`AudioUnitParameterEvent`](audiounitparameterevent.md) events
 ## Relationships
 
 ### Conforms To
-- [Sendable](../Swift/Sendable.md)
+- [Sendable](../swift/sendable.md)
 
 ## See Also
 

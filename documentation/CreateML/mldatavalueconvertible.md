@@ -21,7 +21,7 @@ protocol MLDataValueConvertible
 
 #### Overview
 
-You can use any type that conforms to the [`MLDataValueConvertible`](mldatavalueconvertible.md) protocol in an [`MLDataValue`](mldatavalue.md) or an [`MLDataTable`](mldatatable.md). For example, you can create a data table by using its [`init(dictionary:)`](mldatatable/init(dictionary:).md) initializer with a `[`[`String`](https://developer.apple.com/documentation/Swift/String)`: ``MLDataValueConvertible``]` dictionary.
+You can use any type that conforms to the [`MLDataValueConvertible`](mldatavalueconvertible.md) protocol in an [`MLDataValue`](mldatavalue.md) or an [`MLDataTable`](mldatatable.md). For example, you can create a data table by using its [`init(dictionary:)`](mldatatable/init(dictionary:).md) initializer with a `[`[`String`](https://developer.apple.com/documentation/swift/string)`: ``MLDataValueConvertible``]` dictionary.
 
 ## Topics
 

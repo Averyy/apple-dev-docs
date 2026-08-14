@@ -23,7 +23,7 @@ func doesContain(_ object: Any) -> Bool
 
 Currently, [`doesContain(_:)`](nsobject-swift.class/doescontain(_:).md) messages are never sent to any object from within Cocoa itself.
 
-The default implementation for this method provided by `NSObject` returns [`YES`](yes.md) if the receiver is actually an `NSArray` object and an [`indexOfObjectIdentical(to:)`](https://developer.apple.com/documentation/Foundation/NSArray/indexOfObjectIdentical(to:)) message sent to the same object would return something other than `NSNotFound`.
+The default implementation for this method provided by `NSObject` returns [`YES`](yes.md) if the receiver is actually an `NSArray` object and an [`indexOfObjectIdentical(to:)`](https://developer.apple.com/documentation/foundation/nsarray/indexofobjectidentical(to:)) message sent to the same object would return something other than `NSNotFound`.
 
 ## Parameters
 

@@ -12,7 +12,7 @@ You can use a `.stringsdict` file to provide variants of a string for different 
 
 A `.stringsdict` file is a property list that defines plural, width, and device variants of localizable strings. The `.stringsdict` file contains a dictionary of key-value pairs where the values are either a plural, width, or device rule.
 
-The key for a rule is the string that you pass to [`Text`](https://developer.apple.com/documentation/SwiftUI/Text) structures, the [`NSLocalizedString`](https://developer.apple.com/documentation/Foundation/NSLocalizedString) macro, and similar APIs in your code. The rule can be a plural, width, or device rule that determines which formatted string the macro returns.
+The key for a rule is the string that you pass to [`Text`](https://developer.apple.com/documentation/swiftui/text) structures, the [`NSLocalizedString`](https://developer.apple.com/documentation/foundation/nslocalizedstring) macro, and similar APIs in your code. The rule can be a plural, width, or device rule that determines which formatted string the macro returns.
 
 To create plural variants for formatted strings that contain amounts, see [`Localizing strings that contain plurals`](localizing-strings-that-contain-plurals.md).
 
@@ -46,7 +46,7 @@ In the following `.stringsdict` file, for the `hello` string in the code, the wi
 
 ```
 
-For [`UILabel`](https://developer.apple.com/documentation/UIKit/UILabel) objects, the width is in em units that fit across the app window; otherwise, the width doesn’t have an associated unit.
+For [`UILabel`](https://developer.apple.com/documentation/uikit/uilabel) objects, the width is in em units that fit across the app window; otherwise, the width doesn’t have an associated unit.
 
 The width rule defines variants for a range of widths:
 
@@ -55,7 +55,7 @@ The width rule defines variants for a range of widths:
 
 In the code above, if the width is `2`, the macro returns `Hi`. If the width is `52`, the macro returns `Hello`.
 
-To get a variant for a specific width in your code, see the [`variantFittingPresentationWidth(_:)`](https://developer.apple.com/documentation/Foundation/NSString/variantFittingPresentationWidth(_:)) method.
+To get a variant for a specific width in your code, see the [`variantFittingPresentationWidth(_:)`](https://developer.apple.com/documentation/foundation/nsstring/variantfittingpresentationwidth(_:)) method.
 
 ##### Provide Device Specific String Variants
 

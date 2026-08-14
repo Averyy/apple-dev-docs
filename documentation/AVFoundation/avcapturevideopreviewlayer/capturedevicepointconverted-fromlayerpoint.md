@@ -24,7 +24,7 @@ A point in capture device coordinates.
 
 #### Discussion
 
-A capture device’s [`focusPointOfInterest`](avcapturedevice/focuspointofinterest.md) and [`exposurePointOfInterest`](avcapturedevice/exposurepointofinterest.md) properties provide a [`CGPoint`](https://developer.apple.com/documentation/CoreFoundation/CGPoint) value where `{0,0}` represents the top-left and `{1,1}` represents the bottom-right of the unrotated image.
+A capture device’s [`focusPointOfInterest`](avcapturedevice/focuspointofinterest.md) and [`exposurePointOfInterest`](avcapturedevice/exposurepointofinterest.md) properties provide a [`CGPoint`](https://developer.apple.com/documentation/corefoundation/cgpoint) value where `{0,0}` represents the top-left and `{1,1}` represents the bottom-right of the unrotated image.
 
 The conversion performed by this method takes the layer’s frame size and its [`videoGravity`](avcapturevideopreviewlayer/videogravity.md) into consideration.
 

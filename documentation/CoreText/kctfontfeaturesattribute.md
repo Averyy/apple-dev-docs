@@ -22,7 +22,7 @@ let kCTFontFeaturesAttribute: CFString
 
 #### Discussion
 
-The value associated with this key is a [`CFArray`](https://developer.apple.com/documentation/CoreFoundation/CFArray) object containing font feature dictionaries. This feature list contains the feature information from the [`‘feat’ table`](https://developer.apple.comhttps://developer.apple.com/fonts/TrueType-Reference-Manual/RM06/Chap6feat.html) of the font. For more information, see [`CTFontCopyFeatures(_:)`](ctfontcopyfeatures(_:).md).
+The value associated with this key is a [`CFArray`](https://developer.apple.com/documentation/corefoundation/cfarray) object containing font feature dictionaries. This feature list contains the feature information from the [`‘feat’ table`](https://developer.apple.comhttps://developer.apple.com/fonts/TrueType-Reference-Manual/RM06/Chap6feat.html) of the font. For more information, see [`CTFontCopyFeatures(_:)`](ctfontcopyfeatures(_:).md).
 
 ## See Also
 

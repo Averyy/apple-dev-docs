@@ -38,7 +38,7 @@ protocol NSFileProviderTestingModification : NSFileProviderTestingOperation
 
 ### Inherits From
 - [NSFileProviderTestingOperation](nsfileprovidertestingoperation.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 
@@ -64,7 +64,7 @@ protocol NSFileProviderTestingModification : NSFileProviderTestingOperation
   The location where the operation takes place.
 - [enum NSFileProviderTestingOperationType](nsfileprovidertestingoperationtype.md)
   The action that an operation performs.
-- [com.apple.developer.fileprovider.testing-mode](../BundleResources/Entitlements/com.apple.developer.fileprovider.testing-mode.md)
+- [com.apple.developer.fileprovider.testing-mode](../bundleresources/entitlements/com.apple.developer.fileprovider.testing-mode.md)
   A Boolean value that indicates whether you can place domains in testing mode.
 
 

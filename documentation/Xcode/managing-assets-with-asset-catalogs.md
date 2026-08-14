@@ -20,15 +20,15 @@ To import assets into your project, first, create a new asset set in your asset 
 
 The new, empty asset set appears in the outline view and opens in the detail area.
 
-![Screenshot of the default asset catalog in Xcode. The outline view, which appears on the left, shows three asset sets — accent color, app icon, and image. The image set is selected, shows three empty image wells with the labels 1x, 2x, and 3x in the detail area on the right.](https://docs-assets.developer.apple.com/published/6815e8fa31b70609d264f979266fa596/managing-assets-with-asset-catalogs-1%402x.png)
+![Screenshot of the default asset catalog in Xcode. The outline view, which appears on the left, shows three asset sets — accent color, app icon, and image. The image set is selected, shows three empty image wells with the labels 1x, 2x, and 3x in the detail area on the right.](/images/com.apple.Xcode/managing-assets-with-asset-catalogs-1@2x.png)
 
-To use a single multilayer Icon Composer file that supports [`Liquid Glass`](https://developer.apple.com/documentation/TechnologyOverviews/liquid-glass) instead of an icon asset set, see [`Creating your app icon using Icon Composer`](creating-your-app-icon-using-icon-composer.md).
+To use a single multilayer Icon Composer file that supports [`Liquid Glass`](https://developer.apple.com/documentation/technologyoverviews/liquid-glass) instead of an icon asset set, see [`Creating your app icon using Icon Composer`](creating-your-app-icon-using-icon-composer.md).
 
 ##### Add a New Asset
 
 Next, add your resource to the empty asset set. With the new asset set selected in the outline view, drag the asset you want to import from the Finder to a well in the detail area.
 
-![Screenshot of an asset catalog in Xcode. An image set with the name Image contains a single picture of oranges in the 1x well in the detail area.](https://docs-assets.developer.apple.com/published/fde3f2c3641843d417853ca4df14f28c/managing-assets-with-asset-catalogs-2%402x.png)
+![Screenshot of an asset catalog in Xcode. An image set with the name Image contains a single picture of oranges in the 1x well in the detail area.](/images/com.apple.Xcode/managing-assets-with-asset-catalogs-2@2x.png)
 
 Asset sets contain one or more *wells* that let you specify variations of your asset for different device characteristics. Each well has a label that describes the specific set of characteristics that apply to it. If you want to provide more variations of your asset, drag each asset file to the corresponding well. You can show additional wells by selecting more options in the Attributes inspector.
 

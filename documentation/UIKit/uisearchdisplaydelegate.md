@@ -55,7 +55,7 @@ This protocol defines delegate methods for [`UISearchDisplayController`](uisearc
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

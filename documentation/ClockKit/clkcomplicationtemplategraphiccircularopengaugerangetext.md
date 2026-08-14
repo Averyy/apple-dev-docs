@@ -18,7 +18,7 @@ class CLKComplicationTemplateGraphicCircularOpenGaugeRangeText
 
 This template belongs to the [`CLKComplicationFamily.graphicCircular`](clkcomplicationfamily/graphiccircular.md) family. [`Figure 1`](clkcomplicationtemplategraphiccircularopengaugerangetext#3030687.md) shows the layout of the image and where the template might appear on the clock face.
 
-![Diagram showing the layout of text surrounded by an open gauge with leading and trailing text.](https://docs-assets.developer.apple.com/published/380382346800e6d299fec1f588168dfe/media-3030687%402x.png)
+![Diagram showing the layout of text surrounded by an open gauge with leading and trailing text.](/images/com.apple.clockkit/media-3030687@2x.png)
 
 ## Topics
 
@@ -40,13 +40,13 @@ This template belongs to the [`CLKComplicationFamily.graphicCircular`](clkcompli
 ### Inherits From
 - [CLKComplicationTemplateGraphicCircular](clkcomplicationtemplategraphiccircular.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCopying](../Foundation/NSCopying.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCopying](../foundation/nscopying.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

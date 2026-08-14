@@ -29,7 +29,7 @@ See [`Audio Format Property Identifiers`](1577853-audio-format-property-identifi
   Describes audio left/right balance and front/back fade values.
 - [struct AudioFormatInfo](audioformatinfo.md)
   A structure that specifies an audio format.
-- [struct AudioFormatListItem](../CoreAudioTypes/AudioFormatListItem.md)
+- [struct AudioFormatListItem](../coreaudiotypes/audioformatlistitem.md)
 - [struct AudioPanningInfo](audiopanninginfo.md)
   Audio panning information.
 - [struct ExtendedAudioFormatInfo](extendedaudioformatinfo.md)

@@ -26,7 +26,7 @@ let kSecAttrApplicationTag: CFString
 
 #### Discussion
 
-The corresponding value is of type [`CFData`](https://developer.apple.com/documentation/CoreFoundation/CFData) and contains private tag data.
+The corresponding value is of type [`CFData`](https://developer.apple.com/documentation/corefoundation/cfdata) and contains private tag data.
 
 On key creation, if not explicitly specified, this attribute defaults to `NULL`.
 

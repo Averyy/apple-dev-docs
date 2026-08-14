@@ -19,7 +19,7 @@ var reportEndpoint: URL? { get }
 
 #### Discussion
 
-This read-only property contains the URL that recieves the event attribution data. Your app sets this value by reading it from its `Info.plist` using the [`NSAdvertisingAttributionReportEndpoint`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSAdvertisingAttributionReportEndpoint) key.
+This read-only property contains the URL that recieves the event attribution data. Your app sets this value by reading it from its `Info.plist` using the [`NSAdvertisingAttributionReportEndpoint`](https://developer.apple.com/documentation/bundleresources/information-property-list/nsadvertisingattributionreportendpoint) key.
 
 Specify the desired value in your Xcode project’s `Info.plist` file. Your app uses the value you set in all PCM attribution requests. You can’t change the value at runtime.
 

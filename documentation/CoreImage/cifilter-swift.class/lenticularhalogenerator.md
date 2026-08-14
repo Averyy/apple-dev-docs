@@ -31,12 +31,12 @@ The lenticular halo generator filter uses the following properties:
 
 - **`center`**: A `vector` representing the center of the lens flare as a [`CIVector`](civector.md).
 - **`color`**: A [`CIColor`](cicolor.md) controlling the proportion of red, green, and blue halos.
-- **`haloWidth`**: A `float` representing the halo width as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
-- **`haloRadius`**: A `float` representing the halo radius as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
-- **`haloOverlap`**: A `float` representing the overlap of red, green, and blue halos as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber). A value of 1 results in a full overlap.
-- **`striationStrength`**: A `float` representing the brightness of the rainbow-colored halo area as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
-- **`striationContrast`**: A `float` representing the contrast of the rainbow-colored halo area as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
-- **`time`**: A `float` representing the addition of brightness to the halo as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+- **`haloWidth`**: A `float` representing the halo width as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
+- **`haloRadius`**: A `float` representing the halo radius as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
+- **`haloOverlap`**: A `float` representing the overlap of red, green, and blue halos as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber). A value of 1 results in a full overlap.
+- **`striationStrength`**: A `float` representing the brightness of the rainbow-colored halo area as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
+- **`striationContrast`**: A `float` representing the contrast of the rainbow-colored halo area as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
+- **`time`**: A `float` representing the addition of brightness to the halo as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
 
 The following code creates a filter that generates a lenticular halo image:
 
@@ -55,7 +55,7 @@ func lenticularHalo() -> CIImage {
 }
 ```
 
-![An object made of colored rings gradually changing in color from the center rings made of shades of blues while the outer rings are made of darker shades of red and orange. Each ring of the halo is made of angled striations.](https://docs-assets.developer.apple.com/published/6b13d3d4d979bf12540152407d266c77/media-3592392%402x.png)
+![An object made of colored rings gradually changing in color from the center rings made of shades of blues while the outer rings are made of darker shades of red and orange. Each ring of the halo is made of angled striations.](/images/com.apple.coreimage/media-3592392@2x.png)
 
 ## See Also
 

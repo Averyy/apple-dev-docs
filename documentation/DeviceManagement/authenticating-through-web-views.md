@@ -6,7 +6,7 @@ Use your own custom web interfaces to authenticate users.
 
 #### Overview
 
-Beginning with iOS 13 and macOS 10.15, you can present a custom web interface to the user during Automated Device Enrollment. The `configuration_web_url` key in the Automated Device Enrollment [`Profile`](profile.md) defines the value of a custom URL to be presented in a web view and also supports the [`ASWebAuthenticationSession`](https://developer.apple.com/documentation/AuthenticationServices/ASWebAuthenticationSession). Use this key to define your own UI for authentication, with your preferred authentication method. After authenticating the user, the device management (MDM) enrollment profile downloads to their device.
+Beginning with iOS 13 and macOS 10.15, you can present a custom web interface to the user during Automated Device Enrollment. The `configuration_web_url` key in the Automated Device Enrollment [`Profile`](profile.md) defines the value of a custom URL to be presented in a web view and also supports the [`ASWebAuthenticationSession`](https://developer.apple.com/documentation/authenticationservices/aswebauthenticationsession). Use this key to define your own UI for authentication, with your preferred authentication method. After authenticating the user, the device management (MDM) enrollment profile downloads to their device.
 
 On the initial page load of the `configuration_web_url`:
 

@@ -20,7 +20,7 @@ The adjusted rectangle.
 
 #### Discussion
 
-This method converts the given rectangle to device coordinates, adjusts the rectangle to lie in the center of the pixels, and converts the resulting rectangle back to the view’s coordinate system. Note that this method does not take into account any transformations performed using the [`NSAffineTransform`](https://developer.apple.com/documentation/Foundation/NSAffineTransform) class or Quartz 2D routines.
+This method converts the given rectangle to device coordinates, adjusts the rectangle to lie in the center of the pixels, and converts the resulting rectangle back to the view’s coordinate system. Note that this method does not take into account any transformations performed using the [`NSAffineTransform`](https://developer.apple.com/documentation/foundation/nsaffinetransform) class or Quartz 2D routines.
 
 ## Parameters
 

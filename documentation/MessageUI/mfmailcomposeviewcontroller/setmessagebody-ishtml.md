@@ -26,7 +26,7 @@ Only call this method before you display the mail composition interface. Don’t
 ## Parameters
 
 - `body`: The initial body text of the message. The text is interpreted as either plain text or HTML, depending on the value of the `isHTML` parameter.
-- `isHTML`: Specify [`true`](https://developer.apple.com/documentation/Swift/true) if the body parameter contains HTML content or specify [`false`](https://developer.apple.com/documentation/Swift/false) if it contains plain text.
+- `isHTML`: Specify [`true`](https://developer.apple.com/documentation/swift/true) if the body parameter contains HTML content or specify [`false`](https://developer.apple.com/documentation/swift/false) if it contains plain text.
 
 ## See Also
 

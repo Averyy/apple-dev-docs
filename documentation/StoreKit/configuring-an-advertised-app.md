@@ -12,13 +12,13 @@ Developers opt in to get copies of winning install-validation postbacks.
 
 ##### Configure Your App to Receive Copies of Winning Install Validation Postbacks
 
-To opt in to receive copies of winning install-validation postbacks for your advertised app, add the [`NSAdvertisingAttributionReportEndpoint`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSAdvertisingAttributionReportEndpoint) key in your app’s `Info.plist` file, and configure your server to receive the postbacks.
+To opt in to receive copies of winning install-validation postbacks for your advertised app, add the [`NSAdvertisingAttributionReportEndpoint`](https://developer.apple.com/documentation/bundleresources/information-property-list/nsadvertisingattributionreportendpoint) key in your app’s `Info.plist` file, and configure your server to receive the postbacks.
 
 To add the key in your app’s `Info.plist` file:
 
 1. Select `Info.plist` in the Project navigator in Xcode.
 2. Click the Add button (+) beside a key in the property list editor and press Return.
-3. Type the key name [`NSAdvertisingAttributionReportEndpoint`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSAdvertisingAttributionReportEndpoint).
+3. Type the key name [`NSAdvertisingAttributionReportEndpoint`](https://developer.apple.com/documentation/bundleresources/information-property-list/nsadvertisingattributionreportendpoint).
 4. Choose String from the pop-up menu in the Type column.
 5. Type a valid URL in the format of `“https://example.com”` that contains your domain name in place of `example.com`.
 
@@ -38,9 +38,9 @@ For more information about receiving postbacks, see [`Receiving ad attributions 
   Use the install-validation APIs for your ad campaigns after registering your ad network with Apple.
 - [Configuring a source app](configuring-a-source-app.md)
   Set up a source app to participate in ad campaigns.
-- [SKAdNetworkItems](../BundleResources/Information-Property-List/SKAdNetworkItems.md)
+- [SKAdNetworkItems](../bundleresources/information-property-list/skadnetworkitems.md)
   An array of dictionaries containing a list of ad network IDs.
-- [NSAdvertisingAttributionReportEndpoint](../BundleResources/Information-Property-List/NSAdvertisingAttributionReportEndpoint.md)
+- [NSAdvertisingAttributionReportEndpoint](../bundleresources/information-property-list/nsadvertisingattributionreportendpoint.md)
   The URL where Private Click Measurement and SKAdNetwork send attribution information.
 
 

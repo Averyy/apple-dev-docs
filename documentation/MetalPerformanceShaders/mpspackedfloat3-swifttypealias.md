@@ -41,7 +41,7 @@ typealias MPSPackedFloat3 = _MPSPackedFloat3
 ## Relationships
 
 ### Conforms To
-- [Sendable](../Swift/Sendable.md)
+- [Sendable](../swift/sendable.md)
 
 
 ---

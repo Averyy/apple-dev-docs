@@ -14,9 +14,9 @@ The `Security.Authorization` API is a programming interface to the Security Serv
 
 As shown in the image below, the Security Server is a daemon running in the operating system that provides a trusted implementation of various security protocols, including authorization computation. In turn, the Security Server relies on the Security Agent to interface with users when authentication is needed. Thus an app can verify credentials (usernames and passwords) without ever accessing them directly. This authorization process also allows the means of authentication to change in the future (such as adding Touch ID) without your having to modify your app.
 
-![Diagram showing your app sitting above the Security framework, which in turn sits above the Security Server and the Security Agent.](https://docs-assets.developer.apple.com/published/2658244ce3851ece58fb5cf60b914d8d/media-2891901%402x.png)
+![Diagram showing your app sitting above the Security framework, which in turn sits above the Security Server and the Security Agent.](/images/com.apple.security/media-2891901@2x.png)
 
-> **Note**:  For a simplified, class-based version of this API, consider using the [`SFAuthorization`](https://developer.apple.com/documentation/SecurityFoundation/SFAuthorization) class instead. When you need a user interface that enables display and control of the current authorization state for a particular set of rights, use the [`SFAuthorizationView`](https://developer.apple.com/documentation/SecurityInterface/SFAuthorizationView) class.
+> **Note**:  For a simplified, class-based version of this API, consider using the [`SFAuthorization`](https://developer.apple.com/documentation/securityfoundation/sfauthorization) class instead. When you need a user interface that enables display and control of the current authorization state for a particular set of rights, use the [`SFAuthorizationView`](https://developer.apple.com/documentation/securityinterface/sfauthorizationview) class.
 
 > ❗ **Important**:  The Authorization Services API is not supported within an App Sandbox because the API allows privilege escalation.
 

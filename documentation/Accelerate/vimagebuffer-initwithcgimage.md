@@ -31,7 +31,7 @@ func vImageBuffer_InitWithCGImage(_ buf: UnsafeMutablePointer<vImage_Buffer>, _ 
 
 #### Discussion
 
-The following code shows a passthrough function that accepts a [`CGImage`](https://developer.apple.com/documentation/CoreGraphics/CGImage) image, populates a vImage buffer from the image, and generates a [`CGImage`](https://developer.apple.com/documentation/CoreGraphics/CGImage) image from the buffer.
+The following code shows a passthrough function that accepts a [`CGImage`](https://developer.apple.com/documentation/coregraphics/cgimage) image, populates a vImage buffer from the image, and generates a [`CGImage`](https://developer.apple.com/documentation/coregraphics/cgimage) image from the buffer.
 
 In this example, the call to [`vImageBuffer_InitWithCGImage(_:_:_:_:_:)`](vimagebuffer_initwithcgimage(_:_:_:_:_:).md) populates the [`vImage_CGImageFormat`](vimage_cgimageformat.md) and the [`vImage_Buffer`](vimage_buffer.md) variables with the properties of the source image:
 
@@ -66,7 +66,7 @@ static func passThrough(sourceImage: CGImage) -> CGImage? {
 }
 ```
 
-Pass a fully initialized [`vImage_CGImageFormat`](vimage_cgimageformat.md) to specify that [`vImageBuffer_InitWithCGImage(_:_:_:_:_:)`](vimagebuffer_initwithcgimage(_:_:_:_:_:).md) converts the source [`CGImage`](https://developer.apple.com/documentation/CoreGraphics/CGImage) image to the format that `format` describes. The following example converts the source image to a three-channel, 8-bit-per-channel RGB image:
+Pass a fully initialized [`vImage_CGImageFormat`](vimage_cgimageformat.md) to specify that [`vImageBuffer_InitWithCGImage(_:_:_:_:_:)`](vimagebuffer_initwithcgimage(_:_:_:_:_:).md) converts the source [`CGImage`](https://developer.apple.com/documentation/coregraphics/cgimage) image to the format that `format` describes. The following example converts the source image to a three-channel, 8-bit-per-channel RGB image:
 
 ```swift
 static func passThrough(sourceImage: CGImage) -> CGImage? {

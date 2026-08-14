@@ -19,7 +19,7 @@ object ActiveNSExtensionsResponse.ExtensionsItem
 - `ContainerDisplayName` (string): The display name of the container.
 - `ContainerIdentifier` (string): The identifier of the container.
 - `DisplayName` (string) *(required)*: The extension’s display name.
-- `ExtensionPoint` (string) *(required)*: The [`NSExtensionPointIdentifier`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSExtension/NSExtensionPointIdentifier) for the extension.
+- `ExtensionPoint` (string) *(required)*: The [`NSExtensionPointIdentifier`](https://developer.apple.com/documentation/bundleresources/information-property-list/nsextension/nsextensionpointidentifier) for the extension.
 - `Identifier` (string) *(required)*: The identifier of the extension.
 - `Path` (string) *(required)*: The path to the extension.
 - `UserElection` (string) *(required)*: The user-selected state of the extension, which a user sets in the Extensions preference pane in System Preferences.

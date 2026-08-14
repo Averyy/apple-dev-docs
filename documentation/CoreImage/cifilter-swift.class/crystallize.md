@@ -30,8 +30,8 @@ This method applies the crystallize filter to an image. The effect creates polyg
 The crystallize filter uses the following properties:
 
 - **`inputImage`**: An image with the type [`CIImage`](ciimage.md).
-- **`radius`**: A `float` representing the area of effect as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
-- **`center`**: A set of coordinates marking the center of the image as a [`CGPoint`](https://developer.apple.com/documentation/CoreFoundation/CGPoint).
+- **`radius`**: A `float` representing the area of effect as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
+- **`center`**: A set of coordinates marking the center of the image as a [`CGPoint`](https://developer.apple.com/documentation/corefoundation/cgpoint).
 
 The following code creates a filter that results in an image made of small polygons:
 
@@ -45,7 +45,7 @@ func crystalize(inputImage: CIImage) -> CIImage {
 }
 ```
 
-![Two photographs of multiple sets of small purple flowers surrounded by other flowers and a blue sky. The photo on the left is clear and crisp. In the photo on the right, a crystalize filter is applied, and the image is made of small polygons with the color of the area they’re replacing.](https://docs-assets.developer.apple.com/published/87c96a1f400e1a7001c68ad34668e2f5/media-3599996%402x.png)
+![Two photographs of multiple sets of small purple flowers surrounded by other flowers and a blue sky. The photo on the left is clear and crisp. In the photo on the right, a crystalize filter is applied, and the image is made of small polygons with the color of the area they’re replacing.](/images/com.apple.coreimage/media-3599996@2x.png)
 
 ## See Also
 

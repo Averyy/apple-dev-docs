@@ -20,7 +20,7 @@ var indexPathsForVisibleRows: [IndexPath]? { get }
 
 #### Discussion
 
-The value of this property is an array of [`NSIndexPath`](https://developer.apple.com/documentation/Foundation/NSIndexPath) objects each representing a row index and section index that together identify a visible row in the table view. If no rows are visible, the value is `nil`.
+The value of this property is an array of [`NSIndexPath`](https://developer.apple.com/documentation/foundation/nsindexpath) objects each representing a row index and section index that together identify a visible row in the table view. If no rows are visible, the value is `nil`.
 
 ## See Also
 

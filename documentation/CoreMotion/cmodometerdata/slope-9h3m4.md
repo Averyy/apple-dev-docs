@@ -21,7 +21,7 @@ var slope: Double? { get }
 
 #### Discussion
 
-If the slope measurement is invalid, this property is [`nil`](https://developer.apple.com/documentation/ObjectiveC/nil-227m0).
+If the slope measurement is invalid, this property is [`nil`](https://developer.apple.com/documentation/objectivec/nil-227m0).
 
 ## See Also
 

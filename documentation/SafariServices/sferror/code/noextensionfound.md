@@ -23,7 +23,7 @@ case noExtensionFound
 - [SFError.Code.loadingInterrupted](sferror/code/loadinginterrupted.md)
   There was an error loading the content blocker extension.
 - [SFError.Code.noAttachmentFound](sferror/code/noattachmentfound.md)
-  The Content Blocker extension returned an [`NSExtensionItem`](https://developer.apple.com/documentation/Foundation/NSExtensionItem) that did not include an attachment.
+  The Content Blocker extension returned an [`NSExtensionItem`](https://developer.apple.com/documentation/foundation/nsextensionitem) that did not include an attachment.
 
 
 ---

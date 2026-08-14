@@ -42,12 +42,12 @@ Because this class is a subclass of [`WKAudioFilePlayer`](wkaudiofileplayer.md),
 ### Inherits From
 - [WKAudioFilePlayer](wkaudiofileplayer.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 
@@ -57,7 +57,7 @@ Because this class is a subclass of [`WKAudioFilePlayer`](wkaudiofileplayer.md),
   Provide a view that controls the currently playing audio from your app.
 - [class WKInterfaceVolumeControl](wkinterfacevolumecontrol.md)
   An interface element that provides control of the audio volume from the watch or a paired iPhone.
-- [PUICAutoLaunchAudioOptOut](../BundleResources/Information-Property-List/PUICAutoLaunchAudioOptOut.md)
+- [PUICAutoLaunchAudioOptOut](../bundleresources/information-property-list/puicautolaunchaudiooptout.md)
   A Boolean value that indicates whether a watchOS app should opt out of automatically launching when its companion iOS app starts playing audio content.
 - [class WKAudioFilePlayer](wkaudiofileplayer.md)
   An object that controls playback of a single audio item.

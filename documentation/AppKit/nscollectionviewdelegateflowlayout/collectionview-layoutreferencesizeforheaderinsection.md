@@ -17,7 +17,7 @@ optional func collectionView(_ collectionView: NSCollectionView, layout collecti
 
 #### Return Value
 
-The size of the header. Return [`NSZeroSize`](https://developer.apple.com/documentation/Foundation/NSZeroSize) if you do not want a header added to the section.
+The size of the header. Return [`NSZeroSize`](https://developer.apple.com/documentation/foundation/nszerosize) if you do not want a header added to the section.
 
 #### Discussion
 

@@ -22,7 +22,7 @@ var featureValue: MLFeatureValue { get }
 
 #### Discussion
 
-Refer to [`Core ML`](https://developer.apple.com/documentation/CoreML) documentation and the model itself to learn about proper handling of the content.
+Refer to [`Core ML`](https://developer.apple.com/documentation/coreml) documentation and the model itself to learn about proper handling of the content.
 
 ## See Also
 

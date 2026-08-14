@@ -21,14 +21,14 @@ var supportedOutputChannelLayouts: [AVAudioChannelLayout] { get }
 
 The possible channel layouts for this property are:
 
-- [`kAudioChannelLayoutTag_Stereo`](https://developer.apple.com/documentation/CoreAudioTypes/kAudioChannelLayoutTag_Stereo)
-- [`kAudioChannelLayoutTag_AAC_5_1`](https://developer.apple.com/documentation/CoreAudioTypes/kAudioChannelLayoutTag_AAC_5_1)
-- [`kAudioChannelLayoutTag_MPEG_7_1_C`](https://developer.apple.com/documentation/CoreAudioTypes/kAudioChannelLayoutTag_MPEG_7_1_C)
-- [`kAudioChannelLayoutTag_Atmos_5_1_2`](https://developer.apple.com/documentation/CoreAudioTypes/kAudioChannelLayoutTag_Atmos_5_1_2)
-- [`kAudioChannelLayoutTag_Atmos_5_1_4`](https://developer.apple.com/documentation/CoreAudioTypes/kAudioChannelLayoutTag_Atmos_5_1_4)
-- [`kAudioChannelLayoutTag_Atmos_7_1_2`](https://developer.apple.com/documentation/CoreAudioTypes/kAudioChannelLayoutTag_Atmos_7_1_2)
-- [`kAudioChannelLayoutTag_Atmos_7_1_4`](https://developer.apple.com/documentation/CoreAudioTypes/kAudioChannelLayoutTag_Atmos_7_1_4)
-- [`kAudioChannelLayoutTag_Atmos_9_1_6`](https://developer.apple.com/documentation/CoreAudioTypes/kAudioChannelLayoutTag_Atmos_9_1_6)
+- [`kAudioChannelLayoutTag_Stereo`](https://developer.apple.com/documentation/coreaudiotypes/kaudiochannellayouttag_stereo)
+- [`kAudioChannelLayoutTag_AAC_5_1`](https://developer.apple.com/documentation/coreaudiotypes/kaudiochannellayouttag_aac_5_1)
+- [`kAudioChannelLayoutTag_MPEG_7_1_C`](https://developer.apple.com/documentation/coreaudiotypes/kaudiochannellayouttag_mpeg_7_1_c)
+- [`kAudioChannelLayoutTag_Atmos_5_1_2`](https://developer.apple.com/documentation/coreaudiotypes/kaudiochannellayouttag_atmos_5_1_2)
+- [`kAudioChannelLayoutTag_Atmos_5_1_4`](https://developer.apple.com/documentation/coreaudiotypes/kaudiochannellayouttag_atmos_5_1_4)
+- [`kAudioChannelLayoutTag_Atmos_7_1_2`](https://developer.apple.com/documentation/coreaudiotypes/kaudiochannellayouttag_atmos_7_1_2)
+- [`kAudioChannelLayoutTag_Atmos_7_1_4`](https://developer.apple.com/documentation/coreaudiotypes/kaudiochannellayouttag_atmos_7_1_4)
+- [`kAudioChannelLayoutTag_Atmos_9_1_6`](https://developer.apple.com/documentation/coreaudiotypes/kaudiochannellayouttag_atmos_9_1_6)
 
 This value returns an empty array when the audio session is inactive, ineligible for Now Playing, or the port type isn’t [`carAudio`](avaudiosession/port/caraudio.md) or, in iOS 18 or later, [`airPlay`](avaudiosession/port/airplay.md).
 

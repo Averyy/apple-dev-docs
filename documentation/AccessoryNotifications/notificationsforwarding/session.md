@@ -7,7 +7,6 @@ A session object that facilitates bidirectional communication between the system
 
 **Availability**:
 - iOS 26.5+
-- iPadOS 26.5+
 
 ## Declaration
 
@@ -18,10 +17,10 @@ final class Session
 ## Relationships
 
 ### Conforms To
-- [AccessoryFeatureSession](../AccessoryTransportExtension/AccessoryFeatureSession.md)
+- [AccessoryFeatureSession](../accessorytransportextension/accessoryfeaturesession.md)
 - [NotificationsForwarding.AccessoryNotificationsSession](notificationsforwarding/accessorynotificationssession.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

@@ -28,8 +28,8 @@ The data handle returned in the `result` parameter contains a text string format
 
 ## Parameters
 
-- `desc`: A pointer to a descriptor containing the information to be printed. See  .
-- `result`: A pointer to a location for a new   data type. On return, contains a new handle allocated by the Memory Manager.
+- `desc`: A pointer to a descriptor containing the information to be printed. See [`AEDesc`](aedesc.md).
+- `result`: A pointer to a location for a new `Handle` data type. On return, contains a new handle allocated by the Memory Manager.
 
 ## See Also
 

@@ -28,7 +28,7 @@ This is a generic method to pass a Mach port send right to be used by family spe
 
 ## Parameters
 
-- `connect`: The connect handle created by  .
+- `connect`: The connect handle created by [`IOServiceOpen(_:_:_:_:)`](1514515-ioserviceopen.md).
 - `type`: The type of notification requested, not interpreted by IOKit and family defined.
 - `port`: The port to which to send notifications.
 - `reference`: Some families may support passing a reference parameter for the callers use with the notification.

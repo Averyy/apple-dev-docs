@@ -21,7 +21,7 @@ let kCIAttributeTypeTransform: String
 
 #### Discussion
 
-An [`CGAffineTransform`](https://developer.apple.com/documentation/CoreFoundation/CGAffineTransform) is associated with attribute.
+An [`CGAffineTransform`](https://developer.apple.com/documentation/corefoundation/cgaffinetransform) is associated with attribute.
 
 ## See Also
 

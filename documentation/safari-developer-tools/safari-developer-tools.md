@@ -9,7 +9,7 @@ Inspect, debug, and test web content in Safari, in other apps, and on other devi
 
 Safari includes features and tools to help you inspect, debug, and test web content in Safari, in other apps, and on other devices including iPhone, iPad, Apple Vision Pro, as well as Apple TV for inspecting JavaScript and TVML.
 
-![Mac, iPhone, iPad with developer.apple.com visible. On the Mac, Web Inspector is also visible, showing the timeline for the page loading.](https://docs-assets.developer.apple.com/published/9c93f9fc593317e2d8d15e74ab20a7a7/DeveloperFeatures%402x.png)
+![Mac, iPhone, iPad with developer.apple.com visible. On the Mac, Web Inspector is also visible, showing the timeline for the page loading.](/images/com.apple.safari.developer-tools/DeveloperFeatures@2x.png)
 
 Features like [`Web Inspector`](web-inspector.md) in Safari on macOS let you inspect and experiment with the layout of your webpage, including trying changes to styles, visualizing `grid` and `flex` contain layouts, adjusting typography, including custom variation axes, and emulating user preferences like color scheme or reduced motion to help ensure your content looks great for every user. You can also use Web Inspector to set breakpoints in JavaScript, interactively debug, and inspect the state of your page as you debug. Tools like Timelines let you visualize the impact of your scripts and layout on things like performance and memory use, as well as help identify causes of long frame times.
 

@@ -36,10 +36,10 @@ Thread safe starting in OS X v10.2.
 
 ## Parameters
 
-- `theAEDesc`: A pointer to the descriptor to be flattened. See  .
-- `buffer`: A pointer to memory, allocated by the application, where the flattened data will be stored. See the   parameter for information on how large a buffer you should allocate.
-- `bufferSize`: If   is too small,   returns   and doesn’t store any data in the buffer.
-- `actualSize`: A pointer to a size variable. On return, the variable contains the actual size of the flattened data. You can specify   for this parameter if you do not care about the returned size.
+- `theAEDesc`: A pointer to the descriptor to be flattened. See [`AEDesc`](aedesc.md).
+- `buffer`: A pointer to memory, allocated by the application, where the flattened data will be stored. See the `bufferSize` parameter for information on how large a buffer you should allocate.
+- `bufferSize`: The size of the buffer pointed to by buffer. Prior to calling `AEFlattenDesc`, you call the [`AESizeOfFlattenedDesc(_:)`](1447305-aesizeofflatteneddesc.md) function to determine the required size of the buffer for the flatten operation. If `bufferSize` is too small, `AEFlattenDesc` returns `errAEBufferTooSmall` and doesn’t store any data in the buffer.
+- `actualSize`: A pointer to a size variable. On return, the variable contains the actual size of the flattened data. You can specify `NULL` for this parameter if you do not care about the returned size.
 
 ## See Also
 

@@ -48,7 +48,7 @@ func attributedPrice(price: Int) -> AttributedString {
 
 User interface frameworks like SwiftUI can use these attributes when presenting the attributed string, as seen here:
 
-![The currency value $1,234.00, with the dollar sign and decimal separator in red, and the digits in bold.](https://docs-assets.developer.apple.com/published/c9bc3d04bc2351e7b944af56b38def06/media-4287928%402x.png)
+![The currency value $1,234.00, with the dollar sign and decimal separator in red, and the digits in bold.](/images/com.apple.foundation/media-4287928@2x.png)
 
 ## See Also
 

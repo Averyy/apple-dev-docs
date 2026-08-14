@@ -44,7 +44,7 @@ The following images show robot models with opacity values of `1.0` and `0.5`.
 
 | `opacity: 1` | `opacity: 0.5` |
 | --- | --- |
-| ![An image of an opaque vintage-style toy robot in a living room scene. The robot is facing about 45 degrees to the left and down from the viewer’s perspective.](https://docs-assets.developer.apple.com/published/5a0d4c59785c56c39e5ef6e8b8b6e26a/opacitycomponent-full.jpg) | ![An image of a translucent vintage-style toy robot in a living room scene. The robot is facing about 45 degrees to the left and down from the viewer’s perspective.](https://docs-assets.developer.apple.com/published/75344498b9563f1b26fe1c2710602edd/opacitycomponent-half.jpg) |
+| ![An image of an opaque vintage-style toy robot in a living room scene. The robot is facing about 45 degrees to the left and down from the viewer’s perspective.](/images/com.apple.RealityKit/opacitycomponent-full.jpg) | ![An image of a translucent vintage-style toy robot in a living room scene. The robot is facing about 45 degrees to the left and down from the viewer’s perspective.](/images/com.apple.RealityKit/opacitycomponent-half.jpg) |
 
 ## Topics
 
@@ -62,9 +62,9 @@ The following images show robot models with opacity values of `1.0` and `0.5`.
 
 ### Conforms To
 - [Component](component.md)
-- [Copyable](../Swift/Copyable.md)
-- [Equatable](../Swift/Equatable.md)
-- [Escapable](../Swift/Escapable.md)
+- [Copyable](../swift/copyable.md)
+- [Equatable](../swift/equatable.md)
+- [Escapable](../swift/escapable.md)
 
 ## See Also
 

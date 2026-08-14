@@ -18,7 +18,7 @@ To open the shader cost graph, click the Performance button in the Metal debugge
 
 When you select a pipeline state in the Timeline navigator, the shader cost graph for that pipeline state’s shaders appears on the right.
 
-![A screenshot of the Metal debugger’s shader cost graph.](https://docs-assets.developer.apple.com/published/773d75e7dc21b9b02e57e468305390a0/gputools-metal-debugger-essentials-shader-cost-graph%402x.png)
+![A screenshot of the Metal debugger’s shader cost graph.](/images/com.apple.Xcode/gputools-metal-debugger-essentials-shader-cost-graph@2x.png)
 
 ##### Switch Between Shader Types
 
@@ -38,7 +38,7 @@ The percentage weights appear in the gutter of the shader source code to the lef
 
 The pie chart to the right of each weight contains performance statistics to help you improve the shader code. Hover over a pie chart to display the detailed breakdown of the instructions of a line.
 
-![A screenshot showing the popover that appears after clicking a pie chart icon. The popover contains information about runtime statistics, instruction types, and instruction data types.](https://docs-assets.developer.apple.com/published/1e40900868d2d8cdd2168c2c8461ba16/gputools-metal-debugger-essentials-shader-cost-graph-per-line-stats%402x.png)
+![A screenshot showing the popover that appears after clicking a pie chart icon. The popover contains information about runtime statistics, instruction types, and instruction data types.](/images/com.apple.Xcode/gputools-metal-debugger-essentials-shader-cost-graph-per-line-stats@2x.png)
 
 The instruction details include the following runtime statistics infomation:
 

@@ -21,7 +21,7 @@ final func setContentsRectNeedsUpdate()
 
 #### Discussion
 
-The framework ignores calls to this method when the superview is of type [`NSImageView`](https://developer.apple.com/documentation/AppKit/NSImageView).
+The framework ignores calls to this method when the superview is of type [`NSImageView`](https://developer.apple.com/documentation/appkit/nsimageview).
 
 If the superview is a class other than `NSImageView`, call this method when the layout changes. The overlay view then invokes the delegate’s [`contentsRect(for:)`](imageanalysisoverlayviewdelegate/contentsrect(for:)-34yzu.md) method to request the new content area.
 

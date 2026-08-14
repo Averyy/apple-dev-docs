@@ -61,7 +61,7 @@ The methods that the [`UIScrollViewDelegate`](uiscrollviewdelegate.md) protocol 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 ### Inherited By
 - [UICollectionViewDelegate](uicollectionviewdelegate.md)
 - [UICollectionViewDelegateFlowLayout](uicollectionviewdelegateflowlayout.md)

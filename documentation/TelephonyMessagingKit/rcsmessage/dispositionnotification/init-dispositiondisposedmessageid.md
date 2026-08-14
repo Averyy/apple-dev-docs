@@ -7,7 +7,6 @@ Creates a disposition notification content instance with the given disposition a
 
 **Availability**:
 - iOS 26.0+
-- iPadOS 26.0+
 
 ## Declaration
 

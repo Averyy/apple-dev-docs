@@ -8,13 +8,13 @@ Modernize the iOS apps you choose to run on a Mac with Apple silicon, or opt out
 
 iOS Apps on Mac runs your unmodified iPhone and iPad apps on Apple silicon with no porting process. Your apps use the same frameworks and infrastructure that Mac Catalyst apps use to run, but without the need to recompile for the Mac platform.
 
-![An illustration of an app running on an iPad and a Mac with Apple silicon.](https://docs-assets.developer.apple.com/published/b8882cf87eaa76d58f16819f18a145e1/running-your-ios-apps-on-macos-1%402x.png)
+![An illustration of an app running on an iPad and a Mac with Apple silicon.](/images/com.apple.Apple-Silicon/running-your-ios-apps-on-macos-1@2x.png)
 
 Although there is no porting process, consider updating your code anyway to provide a better user experience when your app runs in macOS. Adopting modern iOS features in your app makes the transition to macOS simpler because modern features map automatically to appropriate macOS behaviors.
 
 In some cases, you might choose to prevent your app from running in macOS altogether. For example, if you already have a macOS app, or your app relies on features available only on iOS devices, you can choose not to run your app in macOS.
 
-> **Note**: Although you can run your iOS apps unmodified on a Mac with Apple silicon, Mac Catalyst lets you build your app specifically for macOS and customize your app’s behavior on that platform. Mac Catalyst also supports deployment on both Apple silicon and Intel-based Mac computers. For more information about how to build your app with Mac Catalyst, see [`Mac Catalyst`](https://developer.apple.com/documentation/UIKit/mac-catalyst).
+> **Note**: Although you can run your iOS apps unmodified on a Mac with Apple silicon, Mac Catalyst lets you build your app specifically for macOS and customize your app’s behavior on that platform. Mac Catalyst also supports deployment on both Apple silicon and Intel-based Mac computers. For more information about how to build your app with Mac Catalyst, see [`Mac Catalyst`](https://developer.apple.com/documentation/uikit/mac-catalyst).
 
 ##### Determine Whether Your App Makes Sense in Macos
 
@@ -40,10 +40,10 @@ Some iOS features make it easier for your app to run in macOS and improve the ov
 - Adopt iPad multitasking and Auto Layout to support resizable windows in macOS. iPad multitasking involves resizing your view controllers to make room for other apps onscreen. If you don’t adopt iPad multitasking, your iPad app runs in a fixed-size window. iPhone apps always run in a fixed-size window.
 - Optimize your view layouts to improve the experience of live-window resizing. Optimal layouts result in faster animations when the user resizes your window.
 - Add iOS keyboard support to your app and create keyboard-based shortcuts for your app’s features. Users can access these shortcuts on any iOS or macOS device with a connected keyboard.
-- Use [`Bundle`](https://developer.apple.com/documentation/Foundation/Bundle) and [`FileManager`](https://developer.apple.com/documentation/Foundation/FileManager) APIs to find files and standard system directories. These APIs always provide you with path locations that are appropriate for the current system.
+- Use [`Bundle`](https://developer.apple.com/documentation/foundation/bundle) and [`FileManager`](https://developer.apple.com/documentation/foundation/filemanager) APIs to find files and standard system directories. These APIs always provide you with path locations that are appropriate for the current system.
 - Use standard gesture recognizers for pinch, scroll, rotate, and zoom effects. The standard gesture recognizers map automatically to appropriate gestures in macOS.
 
-> **Note**: If you design your iPad app for a full-screen experience (for instance, your app is a game), you can add the keys [`UILaunchToFullScreenByDefaultOnMac`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/UILaunchToFullScreenByDefaultOnMac) and [`UISupportsTrueScreenSizeOnMac`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/UISupportsTrueScreenSizeOnMac) to your app’s `Info.plist` file to provide a pixel-perfect, edge-to-edge, full-screen experience when the app runs on a Mac.
+> **Note**: If you design your iPad app for a full-screen experience (for instance, your app is a game), you can add the keys [`UILaunchToFullScreenByDefaultOnMac`](https://developer.apple.com/documentation/bundleresources/information-property-list/uilaunchtofullscreenbydefaultonmac) and [`UISupportsTrueScreenSizeOnMac`](https://developer.apple.com/documentation/bundleresources/information-property-list/uisupportstruescreensizeonmac) to your app’s `Info.plist` file to provide a pixel-perfect, edge-to-edge, full-screen experience when the app runs on a Mac.
 
 ##### Audit Your Code to Handle Environment Differences
 
@@ -52,7 +52,7 @@ When your iOS app runs in macOS, the system automatically maps iOS features to t
 - Your iOS app’s window or other UI elements, including system alerts and pop-ups, are a specific size or at a specific location.
 - Multifinger touch input is available.
 - iOS-specific hardware is available.
-- A front- or rear-facing camera is present. Use [`AVCaptureDevice.DiscoverySession`](https://developer.apple.com/documentation/AVFoundation/AVCaptureDevice/DiscoverySession) to identify an appropriate camera.
+- A front- or rear-facing camera is present. Use [`AVCaptureDevice.DiscoverySession`](https://developer.apple.com/documentation/avfoundation/avcapturedevice/discoverysession) to identify an appropriate camera.
 - Files reside at specific file paths.
 - Device-specific features are always available.
 - The current type of device is always iPhone, iPad, or iPod touch.
@@ -60,7 +60,7 @@ When your iOS app runs in macOS, the system automatically maps iOS features to t
 - PushKit notifications launch your app in the background. In macOS, these notifications launch your app in the foreground instead. Use a notification-service extension to run your code in the background.
 - The presence (or absence) of a symbol conveys special meaning. For example, don’t assume your app runs on a specific device or platform because of the presence or absence of a symbol.
 
-When you check for specific features, fall back to reasonable default behaviors when those features aren’t available. Ensure that the absence of a feature doesn’t cause unexpected results, or prevent the user from doing something meaningful with your app. The [`isiOSAppOnMac`](https://developer.apple.com/documentation/Foundation/ProcessInfo/isiOSAppOnMac) property of [`ProcessInfo`](https://developer.apple.com/documentation/Foundation/ProcessInfo) tells you whether your iOS app is running in macOS or iOS, but checking that property should always be your last choice. It’s better to run the same code on both platforms.
+When you check for specific features, fall back to reasonable default behaviors when those features aren’t available. Ensure that the absence of a feature doesn’t cause unexpected results, or prevent the user from doing something meaningful with your app. The [`isiOSAppOnMac`](https://developer.apple.com/documentation/foundation/processinfo/isiosapponmac) property of [`ProcessInfo`](https://developer.apple.com/documentation/foundation/processinfo) tells you whether your iOS app is running in macOS or iOS, but checking that property should always be your last choice. It’s better to run the same code on both platforms.
 
 For more information about how to handle environment differences, see [`Adapting iOS code to run in the macOS environment`](adapting-ios-code-to-run-in-the-macos-environment.md).
 
@@ -77,13 +77,13 @@ App Store features for iOS continue to work when your app runs in macOS, includi
 
 When you use [`app thinning`](https://developer.apple.comhttps://help.apple.com/xcode/mac/current/#/devbbdc5ce4f) to optimize your app for different devices and operating systems, the App Store selects the resources and content that offer the best fit for a Mac. It then removes any other resources to create a streamlined installation of your app. When you export your app from Xcode 12 or later, you can test the thinning support using the Mac virtual thinning target.
 
-Use [`TestFlight`](https://developer.apple.comhttps://testflight.apple.com) to distribute your app to your testers, or create an archive and export it using the ad-hoc or development distribution method. During the export process, Xcode creates an appropriately signed app for you to distribute to your testers. For more information, see [`Distributing your app to registered devices`](https://developer.apple.com/documentation/Xcode/distributing-your-app-to-registered-devices).
+Use [`TestFlight`](https://developer.apple.comhttps://testflight.apple.com) to distribute your app to your testers, or create an archive and export it using the ad-hoc or development distribution method. During the export process, Xcode creates an appropriately signed app for you to distribute to your testers. For more information, see [`Distributing your app to registered devices`](https://developer.apple.com/documentation/xcode/distributing-your-app-to-registered-devices).
 
 ##### Choose Whether to Include Your Ios App in the Mac App Store
 
 After you sign the updated developer agreement, the App Store automatically makes compatible iOS apps available to users of a Mac with Apple silicon. However, if you’re planning to ship a macOS version of your app, or if your app doesn’t make sense for a Mac, you can change your app’s availability in App Store Connect.
 
-1. Open the [`App Store Connect API`](https://developer.apple.com/documentation/AppStoreConnectAPI) page in App Store Connect.
+1. Open the [`App Store Connect API`](https://developer.apple.com/documentation/appstoreconnectapi) page in App Store Connect.
 2. Disable the “Make this app available on Mac” option.
 
 After you remove your app’s availability for Mac, the Mac App Store stops offering your app for sale. Users who previously downloaded the app for Mac can still use it, but can’t download it again.

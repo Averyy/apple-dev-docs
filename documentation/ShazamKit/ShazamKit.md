@@ -24,7 +24,7 @@ Searching for a match compares a *query signature*, which ShazamKit generates fo
 
 The figure below illustrates matching a query signature with the reference signature in the catalog. The information for a match includes the timecode in the reference recording that matches the start of the query.
 
-![A spectrogram that shows the signature match for a query signature at a specific point in time in a reference signature.](https://docs-assets.developer.apple.com/published/685947e963164829076ac3ec0fe3bbc1/media-3807548%402x.png)
+![A spectrogram that shows the signature match for a query signature at a specific point in time in a reference signature.](/images/com.apple.shazamkit/media-3807548@2x.png)
 
 For example, the Shazam app converts the sound stream from a device’s microphone into a query signature and searches for a match in the Shazam music catalog. The match includes the metadata for the reference signature, such as the song title, artist name, and other details.
 

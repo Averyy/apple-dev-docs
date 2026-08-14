@@ -8,11 +8,11 @@ Compress the contents of an entire directory and store the result on the file sy
 
 In this article, you’ll learn how to use AppleArchive to compress the contents of an entire directory to a single archive file.
 
-The code below compresses the contents of a directory name `src` using the [`Algorithm.lzfse`](https://developer.apple.com/documentation/Compression/Algorithm/lzfse) algorithm, and stores the result in a file named `directory.aar`.
+The code below compresses the contents of a directory name `src` using the [`Algorithm.lzfse`](https://developer.apple.com/documentation/compression/algorithm/lzfse) algorithm, and stores the result in a file named `directory.aar`.
 
 ##### Create the File Stream to Write the Compressed File
 
-Use [`fileStream(path:mode:options:permissions:)`](https://developer.apple.com/documentation/AppleArchive/ArchiveByteStream/fileStream(path:mode:options:permissions:)) to create the file stream that writes the compressed file to the file system. In this case, use the [`writeOnly`](https://developer.apple.com/documentation/System/FileDescriptor/AccessMode/writeOnly) mode:
+Use [`fileStream(path:mode:options:permissions:)`](https://developer.apple.com/documentation/applearchive/archivebytestream/filestream(path:mode:options:permissions:)) to create the file stream that writes the compressed file to the file system. In this case, use the [`writeOnly`](https://developer.apple.com/documentation/system/filedescriptor/accessmode/writeonly) mode:
 
 ```swift
 let archiveDestination = NSTemporaryDirectory() + "directory.aar"
@@ -32,7 +32,7 @@ defer {
 
 ##### Create the Compression Stream
 
-Create the compression stream, and specify the compression algorithm as [`lzfse`](https://developer.apple.com/documentation/AppleArchive/ArchiveCompression/lzfse). Specify the file-writing stream as the stream that receives the compressed data:
+Create the compression stream, and specify the compression algorithm as [`lzfse`](https://developer.apple.com/documentation/applearchive/archivecompression/lzfse). Specify the file-writing stream as the stream that receives the compressed data:
 
 ```swift
 guard let compressStream = ArchiveByteStream.compressionStream(
@@ -68,11 +68,11 @@ guard let keySet = ArchiveHeader.FieldKeySet("TYP,PAT,LNK,DEV,DAT,UID,GID,MOD,FL
 }
 ```
 
-For more information about three-letter keys, see [`init(_:)`](https://developer.apple.com/documentation/AppleArchive/ArchiveHeader/FieldKeySet/init(_:)).
+For more information about three-letter keys, see [`init(_:)`](https://developer.apple.com/documentation/applearchive/archiveheader/fieldkeyset/init(_:)).
 
 ##### Compress the Directory Contents
 
-Use [`writeDirectoryContents(archiveFrom:path:keySet:selectUsing:flags:threadCount:)`](https://developer.apple.com/documentation/AppleArchive/ArchiveStream/writeDirectoryContents(archiveFrom:path:keySet:selectUsing:flags:threadCount:)) to write the directory contents to the encode stream. In turn, the encode stream writes to the compression stream and then, the compression stream writes to the file stream. Finally, the file stream writes the archive file to the file system:
+Use [`writeDirectoryContents(archiveFrom:path:keySet:selectUsing:flags:threadCount:)`](https://developer.apple.com/documentation/applearchive/archivestream/writedirectorycontents(archivefrom:path:keyset:selectusing:flags:threadcount:)) to write the directory contents to the encode stream. In turn, the encode stream writes to the compression stream and then, the compression stream writes to the file stream. Finally, the file stream writes the archive file to the file system:
 
 ```swift
 let sourcePath = NSTemporaryDirectory() + "src/"
@@ -87,7 +87,7 @@ do {
 }
 ```
 
-On return, `directory.aar` exists in [`NSTemporaryDirectory()`](https://developer.apple.com/documentation/Foundation/NSTemporaryDirectory()) and contains the compressed contents of `src/`.
+On return, `directory.aar` exists in [`NSTemporaryDirectory()`](https://developer.apple.com/documentation/foundation/nstemporarydirectory()) and contains the compressed contents of `src/`.
 
 ## See Also
 

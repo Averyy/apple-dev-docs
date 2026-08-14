@@ -6,7 +6,7 @@ Update your apps to use new features, and test your apps against API changes.
 
 #### Overview
 
-The iPadOS 16 SDK provides support to develop apps for iPad devices running iPadOS 16. The SDK comes bundled with Xcode 14.1 RC, available from [`Beta Software Downloads`](https://developer.apple.comhttps://developer.apple.com/download/). For information on the compatibility requirements for Xcode 14.1, see [`Xcode 14.1 Release Notes`](https://developer.apple.com/documentation/Xcode-Release-Notes/xcode-14_1-release-notes).
+The iPadOS 16 SDK provides support to develop apps for iPad devices running iPadOS 16. The SDK comes bundled with Xcode 14.1 RC, available from [`Beta Software Downloads`](https://developer.apple.comhttps://developer.apple.com/download/). For information on the compatibility requirements for Xcode 14.1, see [`Xcode 14.1 Release Notes`](https://developer.apple.com/documentation/xcode-release-notes/xcode-14_1-release-notes).
 
 ##### Avfoundation
 
@@ -52,7 +52,7 @@ The iPadOS 16 SDK provides support to develop apps for iPad devices running iPad
 
 - New data types for running workout metrics like running power, ground contact time, vertical oscillation, running speed, and stride length. (82974514)
 - A new data type is available to track AFib History. (95315701)
-- The [`HealthKit`](https://developer.apple.com/documentation/HealthKit) framework has a new Vision Prescription data type that allows developers and users to store prescription information received from eye care professionals. This feature includes a new set of [`HKSample`](https://developer.apple.com/documentation/HealthKit/HKSample) subclasses that allow developers to encapsulate prescriptions for glasses and contact lenses. Users of iPhone can directly store their prescription information from the Health app as well. Because most regions require the actual prescription document to purchase glasses and contacts, this feature also allows the storage of attachment files in `HealthKit`. Due to the potential privacy concerns around sharing unintended additional details from the prescription, the `HealthKit` framework has a new authorization API to allow users to authorize prescriptions on a per-sample basis. See header documentation in `HealthKit` and watch the WWDC HealthKit session for more information. (82940646)
+- The [`HealthKit`](https://developer.apple.com/documentation/healthkit) framework has a new Vision Prescription data type that allows developers and users to store prescription information received from eye care professionals. This feature includes a new set of [`HKSample`](https://developer.apple.com/documentation/healthkit/hksample) subclasses that allow developers to encapsulate prescriptions for glasses and contact lenses. Users of iPhone can directly store their prescription information from the Health app as well. Because most regions require the actual prescription document to purchase glasses and contacts, this feature also allows the storage of attachment files in `HealthKit`. Due to the potential privacy concerns around sharing unintended additional details from the prescription, the `HealthKit` framework has a new authorization API to allow users to authorize prescriptions on a per-sample basis. See header documentation in `HealthKit` and watch the WWDC HealthKit session for more information. (82940646)
 
 ##### Home
 
@@ -73,7 +73,7 @@ The iPadOS 16 SDK provides support to develop apps for iPad devices running iPad
 
 ###### Deprecations
 
-- Don’t use `MKMapLandscape`, `MKStandardMapConfigurationMapMode`, `[MKMapView configuration]`, and `[MKStandardMapConfiguration showsBuildings]`. Use their functional equivalents [`MKMapConfiguration.ElevationStyle`](https://developer.apple.com/documentation/MapKit/MKMapConfiguration/ElevationStyle-swift.enum), [`MKStandardMapConfiguration.EmphasisStyle`](https://developer.apple.com/documentation/MapKit/MKStandardMapConfiguration/EmphasisStyle-swift.enum), and [`preferredConfiguration`](https://developer.apple.com/documentation/MapKit/MKMapView/preferredConfiguration), instead. Additionally, `showsBuildings` is now deprecated. (93449747)
+- Don’t use `MKMapLandscape`, `MKStandardMapConfigurationMapMode`, `[MKMapView configuration]`, and `[MKStandardMapConfiguration showsBuildings]`. Use their functional equivalents [`MKMapConfiguration.ElevationStyle`](https://developer.apple.com/documentation/mapkit/mkmapconfiguration/elevationstyle-swift.enum), [`MKStandardMapConfiguration.EmphasisStyle`](https://developer.apple.com/documentation/mapkit/mkstandardmapconfiguration/emphasisstyle-swift.enum), and [`preferredConfiguration`](https://developer.apple.com/documentation/mapkit/mkmapview/preferredconfiguration), instead. Additionally, `showsBuildings` is now deprecated. (93449747)
 
 ##### Memory Allocation
 
@@ -99,7 +99,7 @@ The iPadOS 16 SDK provides support to develop apps for iPad devices running iPad
 
 ###### Deprecations
 
-- The `MTLResource.gpuHandle` is deprecated. Use [`gpuResourceID`](https://developer.apple.com/documentation/Metal/MTLAccelerationStructure/gpuResourceID) instead, which functions as a replacement. (92862429)
+- The `MTLResource.gpuHandle` is deprecated. Use [`gpuResourceID`](https://developer.apple.com/documentation/metal/mtlaccelerationstructure/gpuresourceid) instead, which functions as a replacement. (92862429)
 
 ##### Metal Offline Compiler
 
@@ -123,30 +123,30 @@ The iPadOS 16 SDK provides support to develop apps for iPad devices running iPad
 
 ###### New Features
 
-- The [`RoomPlan`](https://developer.apple.com/documentation/RoomPlan) framework is now available in iPadOS 16, enabling 3D parametric model creation of an interior room. The framework uses a device’s sensors, trained machine learning models, and [`RealityKit`](https://developer.apple.com/documentation/RealityKit) rendering capabilities to capture the physical surroundings of an interior room. APIs are available for end-to-end scanning experience, real-time data structures for custom UI creation, and both USD and USDZ generation of 3D room models. (84170837)
+- The [`RoomPlan`](https://developer.apple.com/documentation/roomplan) framework is now available in iPadOS 16, enabling 3D parametric model creation of an interior room. The framework uses a device’s sensors, trained machine learning models, and [`RealityKit`](https://developer.apple.com/documentation/realitykit) rendering capabilities to capture the physical surroundings of an interior room. APIs are available for end-to-end scanning experience, real-time data structures for custom UI creation, and both USD and USDZ generation of 3D room models. (84170837)
 
 ##### Storekit
 
 ###### New Features
 
-- All [`StoreKit`](https://developer.apple.com/documentation/StoreKit) APIs are now annotated for sendability and main actor isolation. (84157048)
+- All [`StoreKit`](https://developer.apple.com/documentation/storekit) APIs are now annotated for sendability and main actor isolation. (84157048)
 - A property `recentSubscriptionStartDate` is included in `RenewalInfo`. It represents the date that marks the start of the most recent period of continuous subscription. A period is considered a continuous subscription if there is no more than a 60-day gap between any two subscribed periods. (86599570)
 
 - `Product` has new properties for localizing prices and subscription periods. For iOS 15, iPadOS 15, macOS 12, tvOS 15, and watchOS 8 or later use `priceFormatStyle` to format numbers derived from `price`. Use `subscriptionPeriodFormatStyle` to format durations of time relating to a subscription period. On iOS 16, iPadOS 16, macOS 13, tvOS 16, and watchOS 9 or later use `subscriptionPeriodUnitFormatStyle` to format single units of a subscription period. (93780442)
 
-- A property environment is included in [`Product.SubscriptionInfo.RenewalInfo`](https://developer.apple.com/documentation/StoreKit/Product/SubscriptionInfo/RenewalInfo) and [`Transaction`](https://developer.apple.com/documentation/StoreKit/Transaction). It represents the server environment in which the `RenewalInfo` and `Transaction` occurred, respectively. (85988753)
+- A property environment is included in [`Product.SubscriptionInfo.RenewalInfo`](https://developer.apple.com/documentation/storekit/product/subscriptioninfo/renewalinfo) and [`Transaction`](https://developer.apple.com/documentation/storekit/transaction). It represents the server environment in which the `RenewalInfo` and `Transaction` occurred, respectively. (85988753)
 
-- [`AppTransaction`](https://developer.apple.com/documentation/StoreKit/AppTransaction) allows developers to cryptographically verify that the app was purchased on the App Store. (86739279)
+- [`AppTransaction`](https://developer.apple.com/documentation/storekit/apptransaction) allows developers to cryptographically verify that the app was purchased on the App Store. (86739279)
 
-- The `recentSubscriptionStartDate` property is included in [`Product.SubscriptionInfo.RenewalInfo`](https://developer.apple.com/documentation/StoreKit/Product/SubscriptionInfo/RenewalInfo). It represents the date that marks the start of the most recent period of continuous subscription. A period is considered a continuous subscription if there’s no more than a 60-day gap between any two subscribed periods. (86599570)
+- The `recentSubscriptionStartDate` property is included in [`Product.SubscriptionInfo.RenewalInfo`](https://developer.apple.com/documentation/storekit/product/subscriptioninfo/renewalinfo). It represents the date that marks the start of the most recent period of continuous subscription. A period is considered a continuous subscription if there’s no more than a 60-day gap between any two subscribed periods. (86599570)
 
-- The [`priceLocale`](https://developer.apple.com/documentation/StoreKit/SKProduct/priceLocale) property is included in [`Product`](https://developer.apple.com/documentation/StoreKit/Product). Use this property to format price values deriving from the product’s decimal price. (81480683)
+- The [`priceLocale`](https://developer.apple.com/documentation/storekit/skproduct/pricelocale) property is included in [`Product`](https://developer.apple.com/documentation/storekit/product). Use this property to format price values deriving from the product’s decimal price. (81480683)
 
-- Present the offer code redemption sheet with the [`offerCodeRedemption(isPresented:onCompletion:)`](https://developer.apple.com/documentation/SwiftUI/View/offerCodeRedemption(isPresented:onCompletion:)) view modifier in your SwiftUI apps. (85321941)
+- Present the offer code redemption sheet with the [`offerCodeRedemption(isPresented:onCompletion:)`](https://developer.apple.com/documentation/swiftui/view/offercoderedemption(ispresented:oncompletion:)) view modifier in your SwiftUI apps. (85321941)
 
 - The StoreKit Messages API allows you to control when App Store messages are displayed in your app. (85321880)
 
-- Read the [`requestReview`](https://developer.apple.com/documentation/SwiftUI/EnvironmentValues/requestReview) environment value to get an instance of a [`RequestReviewAction`](https://developer.apple.com/documentation/StoreKit/RequestReviewAction). Then, call this instance to request to display a review prompt from your SwiftUI apps. (86739003)
+- Read the [`requestReview`](https://developer.apple.com/documentation/swiftui/environmentvalues/requestreview) environment value to get an instance of a [`RequestReviewAction`](https://developer.apple.com/documentation/storekit/requestreviewaction). Then, call this instance to request to display a review prompt from your SwiftUI apps. (86739003)
 
 ##### Storekit
 
@@ -164,20 +164,20 @@ The iPadOS 16 SDK provides support to develop apps for iPad devices running iPad
 
 ###### New Features
 
-- You can now place a [`TextField`](https://developer.apple.com/documentation/SwiftUI/TextField) in an [`Alert`](https://developer.apple.com/documentation/SwiftUI/Alert) by using `alert` modifiers that accept a [`ViewBuilder`](https://developer.apple.com/documentation/SwiftUI/ViewBuilder). (64819930)
+- You can now place a [`TextField`](https://developer.apple.com/documentation/swiftui/textfield) in an [`Alert`](https://developer.apple.com/documentation/swiftui/alert) by using `alert` modifiers that accept a [`ViewBuilder`](https://developer.apple.com/documentation/swiftui/viewbuilder). (64819930)
 
-- For `control`, [`Section`](https://developer.apple.com/documentation/SwiftUI/Section), or other views that have a [`Label`](https://developer.apple.com/documentation/SwiftUI/Label), the [`ViewBuilder`](https://developer.apple.com/documentation/SwiftUI/ViewBuilder) content now automatically arranges and styles multiple views as hierarchical elements, such as `title` and `subtitle`. If the `label` views are intended to be arranged horizontally rather than hierarchically, wrap the views within an [`HStack`](https://developer.apple.com/documentation/SwiftUI/HStack). (85184563)
+- For `control`, [`Section`](https://developer.apple.com/documentation/swiftui/section), or other views that have a [`Label`](https://developer.apple.com/documentation/swiftui/label), the [`ViewBuilder`](https://developer.apple.com/documentation/swiftui/viewbuilder) content now automatically arranges and styles multiple views as hierarchical elements, such as `title` and `subtitle`. If the `label` views are intended to be arranged horizontally rather than hierarchically, wrap the views within an [`HStack`](https://developer.apple.com/documentation/swiftui/hstack). (85184563)
 
-- A `TextField` supports multiline text. Use a [`Axis.vertical`](https://developer.apple.com/documentation/SwiftUI/Axis/vertical) axis on a text field to allow rendering of multiple lines in contexts like forms, where text is expected to be short to medium length. For long-form text editing, continue to use a [`TextEditor`](https://developer.apple.com/documentation/SwiftUI/TextEditor). (51463718)
-- Navigation bars have new default behaviors. A navigation bar defaults to an inline title display mode, if no title is provided. If a title is provided, the default remains large. Use the [`navigationBarTitleDisplayMode(_:)`](https://developer.apple.com/documentation/SwiftUI/View/navigationBarTitleDisplayMode(_:)) modifier to change this. By default, a navigation bar only renders if it has content to display. If a navigation bar has no title, toolbar items, or search content, it’s automatically hidden. Use the [`navigationBarHidden(_:)`](https://developer.apple.com/documentation/SwiftUI/View/navigationBarHidden(_:)) or the new `.toolbar(.visible)` modifier to explicitly show an empty navigation bar. (84996257)
+- A `TextField` supports multiline text. Use a [`Axis.vertical`](https://developer.apple.com/documentation/swiftui/axis/vertical) axis on a text field to allow rendering of multiple lines in contexts like forms, where text is expected to be short to medium length. For long-form text editing, continue to use a [`TextEditor`](https://developer.apple.com/documentation/swiftui/texteditor). (51463718)
+- Navigation bars have new default behaviors. A navigation bar defaults to an inline title display mode, if no title is provided. If a title is provided, the default remains large. Use the [`navigationBarTitleDisplayMode(_:)`](https://developer.apple.com/documentation/swiftui/view/navigationbartitledisplaymode(_:)) modifier to change this. By default, a navigation bar only renders if it has content to display. If a navigation bar has no title, toolbar items, or search content, it’s automatically hidden. Use the [`navigationBarHidden(_:)`](https://developer.apple.com/documentation/swiftui/view/navigationbarhidden(_:)) or the new `.toolbar(.visible)` modifier to explicitly show an empty navigation bar. (84996257)
 
 - A `list` supports Section footers. (78462739)
 - When the toolbar modifier is applied at multiple levels of a hierarchy, items from a child are appended to those from the parent that have the same placement. (65619097)
 - When using `.windowResizability(.contentSize)`, windows created with SwiftUI set their resizable and fullscreen flags based on the size of their contents. (65791490)
-- [`List`](https://developer.apple.com/documentation/SwiftUI/List) separator insets can now be customized using  [`HorizontalEdge.leading`](https://developer.apple.com/documentation/SwiftUI/HorizontalEdge/leading) and [`HorizontalEdge.trailing`](https://developer.apple.com/documentation/SwiftUI/HorizontalEdge/trailing) alignment guides. (74192080)
-- The implementation of `list` no longer uses [`UITableView`](https://developer.apple.com/documentation/UIKit/UITableView). (81571203)
+- [`List`](https://developer.apple.com/documentation/swiftui/list) separator insets can now be customized using  [`HorizontalEdge.leading`](https://developer.apple.com/documentation/swiftui/horizontaledge/leading) and [`HorizontalEdge.trailing`](https://developer.apple.com/documentation/swiftui/horizontaledge/trailing) alignment guides. (74192080)
+- The implementation of `list` no longer uses [`UITableView`](https://developer.apple.com/documentation/uikit/uitableview). (81571203)
 - SwiftUI now enforces at runtime that view and view controller representables are value types. (82982458)
-- Symbol images now use an automatically determined symbol-rendering mode by default. To have a symbol image always use monochrome rendering, use the [`SymbolRenderingMode`](https://developer.apple.com/documentation/SwiftUI/SymbolRenderingMode) modifier. (85524479)
+- Symbol images now use an automatically determined symbol-rendering mode by default. To have a symbol image always use monochrome rendering, use the [`SymbolRenderingMode`](https://developer.apple.com/documentation/swiftui/symbolrenderingmode) modifier. (85524479)
 - A Picker with a menu style in a `list` displays its `label` by default. To hide the `label`, use the `labelsHidden()` modifier. (88228016)
 - Pickers in `list` default to the menu style. (89186618)
 - Changes to `text` and `image` views now animate by default. Use `.contentsTransition(.identity)` to disable this behavior. (89558882)

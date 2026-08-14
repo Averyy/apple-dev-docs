@@ -18,13 +18,13 @@ You can use the Siri Event Suggestions Markup data format to provide event detai
 
 When Mail receives an email or Safari loads a webpage with reservation markup, Siri also adds the event to the user’s Siri Event Suggestions calendar. Mail and Safari also inform the user that the content they’re viewing includes a reservation, so the user can accept or reject the event without leaving their current activity.
 
-![A diagram of the Siri Event Suggestions Markup process, which begins with a graphic representing a piece of reservation data. An arrow points from the reservation graphic to a Siri icon, and from the Siri icon to a calendar, a driving directions graphic, and a Siri Suggestion containing the text “Time to check-in” and “Reservation found in Mail”.](https://docs-assets.developer.apple.com/published/7f308882e351d5cd4cdb42492120db61/media-3672141%402x.png)
+![A diagram of the Siri Event Suggestions Markup process, which begins with a graphic representing a piece of reservation data. An arrow points from the reservation graphic to a Siri icon, and from the Siri icon to a calendar, a driving directions graphic, and a Siri Suggestion containing the text “Time to check-in” and “Reservation found in Mail”.](/images/com.apple.sirieventsuggestionsmarkup/media-3672141@2x.png)
 
 Include reservation markup data when you communicate about confirmed reservations with your users. Use a consistent [`reservationId`](reservationid.md) each time, so the system can manage duplicates between Safari and Mail and across the user’s devices.
 
 Fill out the form at [`Siri Event Suggestions Markup Information`](https://developer.apple.comhttps://developer.apple.com/contact/request/siri-events/) to request inclusion in the domain allow list for event suggestion processing. See [`Checking Your Reservation Markup`](checking-your-reservation-markup.md) for more details about testing your implementation before you apply.
 
-> 💡 **Tip**:  Donate reservation information from your app as well, if you have one. For more information about providing event suggestions from your app, see [`Siri Event Suggestions`](https://developer.apple.com/documentation/SiriKit/siri-event-suggestions).
+> 💡 **Tip**:  Donate reservation information from your app as well, if you have one. For more information about providing event suggestions from your app, see [`Siri Event Suggestions`](https://developer.apple.com/documentation/sirikit/siri-event-suggestions).
 
 ##### Format Reservation Data
 

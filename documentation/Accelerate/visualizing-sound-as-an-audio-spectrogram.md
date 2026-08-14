@@ -16,7 +16,7 @@ You can use audio spectrograms for signal analysis. For example, a spectrogram c
 
 The image below shows the audio spectrogram that this sample created from the *Stargate Opening* sound effect in [`GarageBand`](https://developer.apple.comhttps://www.apple.com/ios/garageband/). The horizontal axis represents time, and the vertical axis represents frequency. The sample calculates the color that represents amplitude using a procedurally generated multidimensional lookup table.
 
-![A screenshot of an audio spectrogram showing a series of vertically stacked diagonal lines that rise and fall, representing the tones of the sampled sound effect.](https://docs-assets.developer.apple.com/published/485fb74f8694c3e396e025955ad66e8e/stargateOpening.jpeg)
+![A screenshot of an audio spectrogram showing a series of vertically stacked diagonal lines that rise and fall, representing the tones of the sampled sound effect.](/images/com.apple.accelerate/stargateOpening.jpeg)
 
 The sample creates an audio spectrogram by performing a discrete cosine transform (DCT) on audio samples. The DCT computes the frequency components of an audio signal and represents the audio as a series of amplitudes at the component frequencies. DCTs are related to Fourier transforms, but use real values rather than complex values. You can learn more about Fourier transforms at [`Finding the component frequencies in a composite sine wave`](finding-the-component-frequencies-in-a-composite-sine-wave.md).
 
@@ -163,7 +163,7 @@ static var multidimensionalLookupTable: vImage.MultidimensionalLookupTable = {
 
 The following image shows the color that the function returns with inputs from `0.0` through `1.0`:
 
-![Image of a horizontal gradient that transitions from dark blue, through red, to green.](https://docs-assets.developer.apple.com/published/4120db1dde17b7b1361574dc4e8a800c/brgColormap.png)
+![Image of a horizontal gradient that transitions from dark blue, through red, to green.](/images/com.apple.accelerate/brgColormap.png)
 
 ##### Prepare the Vimage Pixel Buffers to Display the Audio Spectrogram
 
@@ -212,7 +212,7 @@ The sample builds the filter bank from a series of overlapping triangular window
 
 The following image shows the linear audio spectrogram and the mel spectrogram of the same linearly increasing and decreasing tone. The tone starts at 20 Hz, rises to 22,050 Hz, and drops back to 20 Hz. The image shows that the audio spectrogram represents the objective signal, but the mel spectrogram mirrors human perception, that is, the curve flattens and indicates reduced differentiation between high frequencies.
 
-![A pair of images showing a linear audio spectrogram on the left and a mel audio spectrogram on the right. The shape of the linear spectrogram resembles a triangle. The shape of the mel spectrogram resembles a dome.](https://docs-assets.developer.apple.com/published/6491913be1417e3593347b72c77cae00/linear_vs_mel.png)
+![A pair of images showing a linear audio spectrogram on the left and a mel audio spectrogram on the right. The shape of the linear spectrogram resembles a triangle. The shape of the mel spectrogram resembles a dome.](/images/com.apple.accelerate/linear_vs_mel.png)
 
 In this case, the mel spectrogram consists of 40 filters, so the spectrogram has a lower vertical resolution than the linear spectrogram.
 
@@ -245,13 +245,13 @@ let melFilterBankFrequencies: [Int] = stride(from: minMel, to: maxMel, by: bankW
 
 The following line chart shows 16 generated mel frequencies as squares and the corresponding frequencies in hertz as circles:
 
-![A line chart with a vertical scale measured in hertz and a range of zero to 20,000. The chart contains two lines. A straight line represents 16 mel frequencies, and a curved line below the mel line represents the corresponding frequency in hertz.](https://docs-assets.developer.apple.com/published/e35ca67b0816bf856f4629dae56da6a2/accelerate-mel-hertz_2x.png)
+![A line chart with a vertical scale measured in hertz and a range of zero to 20,000. The chart contains two lines. A straight line represents 16 mel frequencies, and a curved line below the mel line represents the corresponding frequency in hertz.](/images/com.apple.accelerate/accelerate-mel-hertz_2x.png)
 
 ##### Create the Filter Bank
 
 The sample creates the filter bank matrix with `filterBankCount` rows and `sampleCount` columns. Each row contains a triangular window that starts at the previous frequency, peaks at the current frequency, and ends at the next frequency. For example, the following graphic illustrates the values for a filter bank that contains 16 values:
 
-![A graph of 16 stacked horizontal lines, each with a small triangle that indicates nonzero entries. The triangle of the top line is narrow and on the left. Each subsequent line has a slightly wider triangle, shifted to the right.](https://docs-assets.developer.apple.com/published/69a09b4d526095dc6fc4772e779b5f1d/accelerate-filter-bank_2x.png)
+![A graph of 16 stacked horizontal lines, each with a small triangle that indicates nonzero entries. The triangle of the top line is narrow and on the left. Each subsequent line has a slightly wider triangle, shifted to the right.](/images/com.apple.accelerate/accelerate-filter-bank_2x.png)
 
 The `static MelSpectrogram.populateFilterBank(_:melFilterBankFrequencies:)` function populates the `filterBank` array. The function uses [`vDSP_vgen`](vdsp_vgen.md) to generate the attack and decay phases of each triangle.
 
@@ -294,7 +294,7 @@ The sample performs a matrix multiply of each frame of frequency-domain data wit
 
 The following image shows the matrix multiply. The frame of 1024 frequency-domain values is multiplied by 16 overlapping triangular windows, returning the 16-element mel-scaled values.
 
-![A diagram showing the matrix multiply of the 1024-element frequency-domain array on the left multiplied by the filter bank in the center. The result is the 16-element mel spectrogram on the right.](https://docs-assets.developer.apple.com/published/42aff1ccf3490b8f965f8ae207ef1c15/accelerate-matrix-multiply_2x.png)
+![A diagram showing the matrix multiply of the 1024-element frequency-domain array on the left multiplied by the filter bank in the center. The result is the 16-element mel spectrogram on the right.](/images/com.apple.accelerate/accelerate-matrix-multiply_2x.png)
 
 The following code uses [`cblas_sgemm(_:_:_:_:_:_:_:_:_:_:_:_:_:_:)`](cblas_sgemm(_:_:_:_:_:_:_:_:_:_:_:_:_:_:).md) to perform the matrix multiply:
 

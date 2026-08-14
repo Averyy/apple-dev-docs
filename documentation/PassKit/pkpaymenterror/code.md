@@ -23,7 +23,7 @@ enum Code
 
 The user must resolve any errors that you report on the Apple Pay sheet before they’re able to authorize the transaction.  You return any errors in [`PKPaymentAuthorizationResult`](pkpaymentauthorizationresult.md) or [`PKPaymentRequestShippingContactUpdate`](pkpaymentrequestshippingcontactupdate.md).
 
-You can build your own payment error ([`NSError`](https://developer.apple.com/documentation/Foundation/NSError)), or use one of the following convenience methods from [`PKPaymentRequest`](pkpaymentrequest.md) to build it for you.
+You can build your own payment error ([`NSError`](https://developer.apple.com/documentation/foundation/nserror)), or use one of the following convenience methods from [`PKPaymentRequest`](pkpaymentrequest.md) to build it for you.
 
 For an error with contact information: [`paymentContactInvalidError(withContactField:localizedDescription:)`](pkpaymentrequest/paymentcontactinvaliderror(withcontactfield:localizeddescription:).md).
 
@@ -81,12 +81,12 @@ NSError *billingAddressInvalidStreet = [PKPaymentRequest
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../Swift/BitwiseCopyable.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [RawRepresentable](../Swift/RawRepresentable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [BitwiseCopyable](../swift/bitwisecopyable.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [RawRepresentable](../swift/rawrepresentable.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

@@ -20,7 +20,7 @@ var remoteEndpoint: NWEndpoint { get }
 
 #### Discussion
 
-If the flow’s corresponding socket was created using one of the high-level networking APIs such as [`URLSession`](https://developer.apple.com/documentation/Foundation/URLSession) or [`NSURLConnection`](https://developer.apple.com/documentation/Foundation/NSURLConnection), then the hostname property of the `remoteEndpoint` object contains the DNS name of the remote host. If the flow’s corresponding socket was created using the sockets API directly, then the hostname property of the `remoteEndpoint` object contains the IP address of the remote host.
+If the flow’s corresponding socket was created using one of the high-level networking APIs such as [`URLSession`](https://developer.apple.com/documentation/foundation/urlsession) or [`NSURLConnection`](https://developer.apple.com/documentation/foundation/nsurlconnection), then the hostname property of the `remoteEndpoint` object contains the DNS name of the remote host. If the flow’s corresponding socket was created using the sockets API directly, then the hostname property of the `remoteEndpoint` object contains the IP address of the remote host.
 
 
 ---

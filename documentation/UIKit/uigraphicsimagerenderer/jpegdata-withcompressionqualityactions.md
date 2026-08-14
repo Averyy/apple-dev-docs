@@ -20,11 +20,11 @@ func jpegData(withCompressionQuality compressionQuality: CGFloat, actions: (UIGr
 
 #### Return Value
 
-A [`Data`](https://developer.apple.com/documentation/Foundation/Data) object representing a JPEG-encoded representation of the image created by the supplied drawing actions.
+A [`Data`](https://developer.apple.com/documentation/foundation/data) object representing a JPEG-encoded representation of the image created by the supplied drawing actions.
 
 #### Discussion
 
-You provide a set of drawing instructions as the block argument to this method, and the method returns the resulting image as a JPEG-encoded [`Data`](https://developer.apple.com/documentation/Foundation/Data) object.
+You provide a set of drawing instructions as the block argument to this method, and the method returns the resulting image as a JPEG-encoded [`Data`](https://developer.apple.com/documentation/foundation/data) object.
 
 The JPEG format does not support transparency, so this method is only appropriate for use with opaque images.
 
@@ -32,7 +32,7 @@ You can call this method repeatedly to create multiple images, each of which has
 
 ## Parameters
 
-- `compressionQuality`: A [`CGFloat`](https://developer.apple.com/documentation/CoreFoundation/CGFloat-swift.struct) value between `0.0` and `1.0`, representing the compression level the JPEG encoder should use. A value of `1.0` specifies lossless compression, and a value of `0.0` specifies maximum compression.
+- `compressionQuality`: A [`CGFloat`](https://developer.apple.com/documentation/corefoundation/cgfloat-swift.struct) value between `0.0` and `1.0`, representing the compression level the JPEG encoder should use. A value of `1.0` specifies lossless compression, and a value of `0.0` specifies maximum compression.
 - `actions`: A [`UIGraphicsImageRenderer.DrawingActions`](uigraphicsimagerenderer/drawingactions.md) block that, when invoked by the renderer, executes a set of drawing instructions to create the output image.
 
 ## See Also

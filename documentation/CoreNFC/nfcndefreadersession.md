@@ -39,13 +39,13 @@ As with the [`NFCReaderSession`](nfcreadersession-swift.class.md) base class, on
 ### Inherits From
 - [NFCReaderSession](nfcreadersession-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
 - [NFCReaderSessionProtocol](nfcreadersessionprotocol.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 
@@ -59,7 +59,7 @@ As with the [`NFCReaderSession`](nfcreadersession-swift.class.md) base class, on
   The abstract base class that represents a reader session for detecting NFC tags.
 - [protocol NFCReaderSessionProtocol](nfcreadersessionprotocol.md)
   A general interface for interacting with a reader session.
-- [Near Field Communication Tag Reader Session Formats Entitlement](../BundleResources/Entitlements/com.apple.developer.nfc.readersession.formats.md)
+- [Near Field Communication Tag Reader Session Formats Entitlement](../bundleresources/entitlements/com.apple.developer.nfc.readersession.formats.md)
   The Near Field Communication data formats an app can read.
 
 

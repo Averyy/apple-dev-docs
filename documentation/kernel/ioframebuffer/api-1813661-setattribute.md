@@ -23,7 +23,7 @@ IOFramebuffer subclasses may implement this method to allow arbitrary attribute/
 
 ## Parameters
 
-- `attribute`: kIOPowerAttribute The IOFramebuffer class implements most power management (IOService) methods. It calls the subclass to carry out the power management state change with this attribute. When carrying out power state changes, the subclass should call IOFramebuffer::handleEvent for certain changes - set that method for more information.
+- `attribute`: Defines the attribute to be set. Some defined attributes are: kIOPowerAttribute The IOFramebuffer class implements most power management (IOService) methods. It calls the subclass to carry out the power management state change with this attribute. When carrying out power state changes, the subclass should call IOFramebuffer::handleEvent for certain changes - set that method for more information.
 - `value`: The new value for the attribute.
 
 ## See Also

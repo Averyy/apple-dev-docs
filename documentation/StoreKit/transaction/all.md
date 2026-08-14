@@ -37,9 +37,9 @@ The transaction history includes the following in-app purchases:
 - Auto-renewable subscriptions, including all renewals
 - Auto-renewable subscriptions and non-consumables that the customer gets through Family Sharing
 
-By default, when the [`SKIncludeConsumableInAppPurchaseHistory`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/SKIncludeConsumableInAppPurchaseHistory) property list key is `false`, the transaction information excludes finished consumables (unless refunded or revoked).
+By default, when the [`SKIncludeConsumableInAppPurchaseHistory`](https://developer.apple.com/documentation/bundleresources/information-property-list/skincludeconsumableinapppurchasehistory) property list key is `false`, the transaction information excludes finished consumables (unless refunded or revoked).
 
-To get all possible transactions, including all finished consumables, set the [`SKIncludeConsumableInAppPurchaseHistory`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/SKIncludeConsumableInAppPurchaseHistory) property list key to `true`.
+To get all possible transactions, including all finished consumables, set the [`SKIncludeConsumableInAppPurchaseHistory`](https://developer.apple.com/documentation/bundleresources/information-property-list/skincludeconsumableinapppurchasehistory) property list key to `true`.
 
 ## See Also
 

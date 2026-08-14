@@ -39,8 +39,8 @@ Thread-safe since Mac OS version 10.2.
 
 ## Parameters
 
-- `inLaunchSpec`: A pointer to a URL-based launch specification indicating what to open and how to launch the relevant application or applications; see   for a description of this structure.
-- `outLaunchedURL`: Despite the absence of the word   in its name, this function retains the URL reference object on your behalf; you are responsible for releasing this object.
+- `inLaunchSpec`: A pointer to a URL-based launch specification indicating what to open and how to launch the relevant application or applications; see [`LSLaunchURLSpec`](lslaunchurlspec.md) for a description of this structure.
+- `outLaunchedURL`: A pointer to a Core Foundation URL reference that, on return, will identify the application launched; see the *CFURL Reference* in the Core Foundation Reference Documentation for a description of the `CFURLRef` data type. Pass `NULL` if this information is unimportant. If more than one application is launched, the one identified will be the one corresponding to the first item designated in the launch specification. Despite the absence of the word `Copy` in its name, this function retains the URL reference object on your behalf; you are responsible for releasing this object.
 
 ## See Also
 

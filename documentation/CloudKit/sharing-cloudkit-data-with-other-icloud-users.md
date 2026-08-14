@@ -54,7 +54,7 @@ cloudkit/designing-and-creating-a-cloudkit-database
 
 - Before saving a record, the sample doesn’t use any record-type information.
 
-For real-world apps that use record types at an earlier phase, like creating a [`CKQuerySubscription`](CKQuerySubscription.md) at the beginning of a launch session, the schema must be ready first.
+For real-world apps that use record types at an earlier phase, like creating a [`CKQuerySubscription`](ckquerysubscription.md) at the beginning of a launch session, the schema must be ready first.
 
 ##### Create and Share a Topic
 
@@ -82,7 +82,7 @@ newNoteRecord.parent = CKRecord.Reference(record: topicRecord, action: .none)
 
 ##### Share a Record
 
-The sample uses [`UICloudSharingController`](https://developer.apple.com/documentation/UIKit/UICloudSharingController) to implement the sharing flow. Depending on whether the root record is in a shared state, there are different ways to create a sharing controller.
+The sample uses [`UICloudSharingController`](https://developer.apple.com/documentation/uikit/uicloudsharingcontroller) to implement the sharing flow. Depending on whether the root record is in a shared state, there are different ways to create a sharing controller.
 
 ```swift
 if rootRecord.share != nil {
@@ -94,13 +94,13 @@ if rootRecord.share != nil {
 }
 ```
 
-If the root record is in a shared state, the sample grabs the `recordID` from the [`share`](ckrecord/share.md) property of the root record, uses it to fetch the share, which is the associated [`CKShare`](CKShare.md) object, from the server, and calls [`init(share:container:)`](https://developer.apple.com/documentation/UIKit/UICloudSharingController/init(share:container:)) to create a sharing controller.
+If the root record is in a shared state, the sample grabs the `recordID` from the [`share`](ckrecord/share.md) property of the root record, uses it to fetch the share, which is the associated [`CKShare`](ckshare.md) object, from the server, and calls [`init(share:container:)`](https://developer.apple.com/documentation/uikit/uicloudsharingcontroller/init(share:container:)) to create a sharing controller.
 
 ```swift
 let sharingController = UICloudSharingController(share: share, container: self)
 ```
 
-If the root record isn’t in a shared state, the sample uses [`init(preparationHandler:)`](https://developer.apple.com/documentation/UIKit/UICloudSharingController/init(preparationHandler:)) to create the sharing controller.
+If the root record isn’t in a shared state, the sample uses [`init(preparationHandler:)`](https://developer.apple.com/documentation/uikit/uicloudsharingcontroller/init(preparationhandler:)) to create the sharing controller.
 
 ```swift
 let sharingController = UICloudSharingController { (_, prepareCompletionHandler) in
@@ -115,7 +115,7 @@ share[CKShare.SystemFieldKey.title] = "A cool topic to share!" as CKRecordValue
 share.publicPermission = .readWrite
 ```
 
-The sample then saves the share and its root record together using [`CKModifyRecordsOperation`](CKModifyRecordsOperation.md).
+The sample then saves the share and its root record together using [`CKModifyRecordsOperation`](ckmodifyrecordsoperation.md).
 
 ```swift
 let modifyRecordsOp = CKModifyRecordsOperation(recordsToSave: [share, unsharedRootRecord], recordIDsToDelete: nil)
@@ -131,23 +131,23 @@ sharingController.availablePermissions = [.allowPublic, .allowReadOnly, .allowRe
 self.present(sharingController, animated: true) { self.spinner.stopAnimating() }
 ```
 
-Using the sharing UI, users can send a link, stop sharing the record, change the permission for a participant, or quit the flow by closing the UI. According to what users do, the sharing controller may change the root record and its share, and notify the app through the [`UICloudSharingControllerDelegate`](https://developer.apple.com/documentation/UIKit/UICloudSharingControllerDelegate) protocol. To ensure the cached data is consistent with the server truth, the sample implements the following delegate methods:
+Using the sharing UI, users can send a link, stop sharing the record, change the permission for a participant, or quit the flow by closing the UI. According to what users do, the sharing controller may change the root record and its share, and notify the app through the [`UICloudSharingControllerDelegate`](https://developer.apple.com/documentation/uikit/uicloudsharingcontrollerdelegate) protocol. To ensure the cached data is consistent with the server truth, the sample implements the following delegate methods:
 
-- [`cloudSharingControllerDidSaveShare(_:)`](https://developer.apple.com/documentation/UIKit/UICloudSharingControllerDelegate/cloudSharingControllerDidSaveShare(_:)) — CloudKit calls this method when it successfully shares a topic. When this happens, it creates the share and updates the shared topic and notes on the server, so the sample fetches the changes and updates the local cache.
-- [`cloudSharingControllerDidStopSharing(_:)`](https://developer.apple.com/documentation/UIKit/UICloudSharingControllerDelegate/cloudSharingControllerDidStopSharing(_:)) — CloudKit calls this method when users stop sharing a record. When this happens, it removes the share and updates the shared topic and notes on the server, so the sample fetches the changes and updates the local cache.
-- [`cloudSharingController(_:failedToSaveShareWithError:)`](https://developer.apple.com/documentation/UIKit/UICloudSharingControllerDelegate/cloudSharingController(_:failedToSaveShareWithError:)) — CloudKit calls this method when the sharing controller fails to save a share. When this happens, the sample alerts the error and updates the cached root record to avoid an inconsistent status.
+- [`cloudSharingControllerDidSaveShare(_:)`](https://developer.apple.com/documentation/uikit/uicloudsharingcontrollerdelegate/cloudsharingcontrollerdidsaveshare(_:)) — CloudKit calls this method when it successfully shares a topic. When this happens, it creates the share and updates the shared topic and notes on the server, so the sample fetches the changes and updates the local cache.
+- [`cloudSharingControllerDidStopSharing(_:)`](https://developer.apple.com/documentation/uikit/uicloudsharingcontrollerdelegate/cloudsharingcontrollerdidstopsharing(_:)) — CloudKit calls this method when users stop sharing a record. When this happens, it removes the share and updates the shared topic and notes on the server, so the sample fetches the changes and updates the local cache.
+- [`cloudSharingController(_:failedToSaveShareWithError:)`](https://developer.apple.com/documentation/uikit/uicloudsharingcontrollerdelegate/cloudsharingcontroller(_:failedtosavesharewitherror:)) — CloudKit calls this method when the sharing controller fails to save a share. When this happens, the sample alerts the error and updates the cached root record to avoid an inconsistent status.
 
 ##### Maintain a Local Cache of Cloudkit Records
 
 To avoid fetching data from the server each time the zone view and topic view are about to appear, the sample caches the zones in the container, and the topics and notes in the current zone. The caches are both in-memory because the sample doesn’t tend to add more complexity by introducing a persistence layer. Real-world apps can persist their cache to avoid doing an initial fetch on each launch.
 
-The sample establishes the local caches with two steps: initial fetch and incremental update. In [`sceneWillEnterForeground(_:)`](https://developer.apple.com/documentation/UIKit/UISceneDelegate/sceneWillEnterForeground(_:)), the sample checks the account status, and then starts the initial fetch if there isn’t a cache for the current account.
+The sample establishes the local caches with two steps: initial fetch and incremental update. In [`sceneWillEnterForeground(_:)`](https://developer.apple.com/documentation/uikit/uiscenedelegate/scenewillenterforeground(_:)), the sample checks the account status, and then starts the initial fetch if there isn’t a cache for the current account.
 
 ```swift
 let building = appDelegate.buildZoneCacheIfNeed(for: newUserRecordID)
 ```
 
-CloudKit notifications trigger the incremental updates. The sample uses [`CKDatabaseSubscription`](CKDatabaseSubscription.md) to subscribe to CloudKit database changes.
+CloudKit notifications trigger the incremental updates. The sample uses [`CKDatabaseSubscription`](ckdatabasesubscription.md) to subscribe to CloudKit database changes.
 
 ```swift
 let subscription = CKDatabaseSubscription(subscriptionID: subscriptionID)
@@ -164,7 +164,7 @@ operation.modifySubscriptionsCompletionBlock = { _, _, error in
 add(operation, to: operationQueue)
 ```
 
-With the subscriptions, the sample gets push notifications when the database changes, and starts the incremental update from the following [`UNUserNotificationCenterDelegate`](https://developer.apple.com/documentation/UserNotifications/UNUserNotificationCenterDelegate) method:
+With the subscriptions, the sample gets push notifications when the database changes, and starts the incremental update from the following [`UNUserNotificationCenterDelegate`](https://developer.apple.com/documentation/usernotifications/unusernotificationcenterdelegate) method:
 
 ```swift
 func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification,
@@ -175,7 +175,7 @@ func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent noti
 }
 ```
 
-The sample uses [`CKFetchDatabaseChangesOperation`](ckfetchdatabasechangesoperation.md) to fetch the deleted or changed zones. When doing the fetch, CloudKit provides a `serverChangeToken` ([`CKServerChangeToken`](CKServerChangeToken.md)) by calling the operation’s [`changeTokenUpdatedBlock`](ckfetchdatabasechangesoperation/changetokenupdatedblock.md). Apps keep the token and use it as `previousServerChangeToken` for the next fetch.
+The sample uses [`CKFetchDatabaseChangesOperation`](ckfetchdatabasechangesoperation.md) to fetch the deleted or changed zones. When doing the fetch, CloudKit provides a `serverChangeToken` ([`CKServerChangeToken`](ckserverchangetoken.md)) by calling the operation’s [`changeTokenUpdatedBlock`](ckfetchdatabasechangesoperation/changetokenupdatedblock.md). Apps keep the token and use it as `previousServerChangeToken` for the next fetch.
 
 ```swift
 operation.changeTokenUpdatedBlock = { serverChangeToken in
@@ -192,7 +192,7 @@ let operation = CKFetchDatabaseChangesOperation(previousServerChangeToken: serve
 
 After gathering the deleted and changed zones, the sample updates the zone cache and makes it consistent with the server truth.
 
-Similarly, the sample uses [`CKFetchRecordZoneChangesOperation`](CKFetchRecordZoneChangesOperation.md) to gather the deleted and changed topic and notes, and uses them to maintain the topic cache.
+Similarly, the sample uses [`CKFetchRecordZoneChangesOperation`](ckfetchrecordzonechangesoperation.md) to gather the deleted and changed topic and notes, and uses them to maintain the topic cache.
 
 ```swift
 let configuration = CKFetchRecordZoneChangesOperation.ZoneConfiguration()
@@ -203,13 +203,13 @@ let operation = CKFetchRecordZoneChangesOperation(
 )
 ```
 
-To avoid blocking an app’s main queue, CloudKit operations and their callbacks must run on a secondary queue, which can be an app-provided operation queue ([`OperationQueue`](https://developer.apple.com/documentation/Foundation/OperationQueue)), or a private operation queue that CloudKit manages. The sample provides an operation queue to run CloudKit operations and update the cached data when the operations complete. This means the system can access the cached data from different queues: the app’s main queue that reads the data and updates the app UI, and a secondary queue that runs CloudKit operations and updates the data.
+To avoid blocking an app’s main queue, CloudKit operations and their callbacks must run on a secondary queue, which can be an app-provided operation queue ([`OperationQueue`](https://developer.apple.com/documentation/foundation/operationqueue)), or a private operation queue that CloudKit manages. The sample provides an operation queue to run CloudKit operations and update the cached data when the operations complete. This means the system can access the cached data from different queues: the app’s main queue that reads the data and updates the app UI, and a secondary queue that runs CloudKit operations and updates the data.
 
-To be thread-safe, the sample serializes data access with a dispatch queue ([`DispatchQueue`](https://developer.apple.com/documentation/Dispatch/DispatchQueue)). One caveat of this solution is when the main queue needs to read the cached data while the secondary queue is updating it, the main queue must wait until the data update finishes. If the update takes a long time, it blocks the main queue for a long time, which leads to UI unresponsiveness. Real-world apps using the same method to serialize data access need to update the data quickly enough to avoid this issue.
+To be thread-safe, the sample serializes data access with a dispatch queue ([`DispatchQueue`](https://developer.apple.com/documentation/dispatch/dispatchqueue)). One caveat of this solution is when the main queue needs to read the cached data while the secondary queue is updating it, the main queue must wait until the data update finishes. If the update takes a long time, it blocks the main queue for a long time, which leads to UI unresponsiveness. Real-world apps using the same method to serialize data access need to update the data quickly enough to avoid this issue.
 
 ## See Also
 
-- [Sharing Core Data objects between iCloud users](../CoreData/sharing-core-data-objects-between-icloud-users.md)
+- [Sharing Core Data objects between iCloud users](../coredata/sharing-core-data-objects-between-icloud-users.md)
   Use Core Data and CloudKit to synchronize data between devices of an iCloud user and share data between different iCloud users.
 - [class CKShare](ckshare.md)
   A specialized record type that manages a collection of shared records.
@@ -219,9 +219,9 @@ To be thread-safe, the sample serializes data access with a dispatch queue ([`Di
   An object that controls participant access and permission options.
 - [class CKSystemSharingUIObserver](cksystemsharinguiobserver.md)
   An object the system uses to monitor changes in sharing.
-- [class UICloudSharingController](../UIKit/UICloudSharingController.md)
+- [class UICloudSharingController](../uikit/uicloudsharingcontroller.md)
   A view controller that presents standard screens for adding and removing people from a CloudKit share record.
-- [CKSharingSupported](../BundleResources/Information-Property-List/CKSharingSupported.md)
+- [CKSharingSupported](../bundleresources/information-property-list/cksharingsupported.md)
   A Boolean value that indicates your app supports CloudKit Sharing.
 
 

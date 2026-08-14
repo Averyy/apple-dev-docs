@@ -7,18 +7,18 @@ The following values are used as keys in the dictionary returned by [`infoForBin
 ## Topics
 
 ### Constants
-- [static let observedObject: NSBindingInfoKey](../AppKit/NSBindingInfoKey/observedObject.md)
+- [static let observedObject: NSBindingInfoKey](../appkit/nsbindinginfokey/observedobject.md)
   The object that is the observable controller of the binding.
-- [static let observedKeyPath: NSBindingInfoKey](../AppKit/NSBindingInfoKey/observedKeyPath.md)
+- [static let observedKeyPath: NSBindingInfoKey](../appkit/nsbindinginfokey/observedkeypath.md)
   An `NSString` object containing the key path of the binding.
-- [static let options: NSBindingInfoKey](../AppKit/NSBindingInfoKey/options.md)
+- [static let options: NSBindingInfoKey](../appkit/nsbindinginfokey/options.md)
   An `NSDictionary` object containing key value pairs as specified in the options dictionary when the binding was created.
 
 ## See Also
 
-- [struct NSBindingName](../AppKit/NSBindingName.md)
+- [struct NSBindingName](../appkit/nsbindingname.md)
   Values that specify a binding for certain methods.
-- [struct NSBindingOption](../AppKit/NSBindingOption.md)
+- [struct NSBindingOption](../appkit/nsbindingoption.md)
 
 
 ---

@@ -56,7 +56,7 @@ var body: some View {
 }
 ```
 
-![Ten text views, named Item 1 through Item 10, arranged in a](https://docs-assets.developer.apple.com/published/93d31b000cb6f5419689a7b765474401/SwiftUI-VStack-simple%402x.png)
+![Ten text views, named Item 1 through Item 10, arranged in a](/images/com.apple.SwiftUI/SwiftUI-VStack-simple@2x.png)
 
 > **Note**: If you need a vertical stack that conforms to the [`Layout`](layout.md) protocol, like when you want to create a conditional layout using [`AnyLayout`](anylayout.md), use [`VStackLayout`](vstacklayout.md) instead.
 

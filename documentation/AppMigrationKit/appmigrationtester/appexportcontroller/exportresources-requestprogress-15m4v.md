@@ -22,7 +22,7 @@ The results of the export.
 ## Parameters
 
 - `request`: An optional migration request instance to pass to the app extension’s export method. This value defaults to `nil`.
-- `progress`: An optional [`Progress`](https://developer.apple.com/documentation/Foundation/Progress) object the extension uses to report its progress back to the unit test. This value defaults to `nil`.
+- `progress`: An optional [`Progress`](https://developer.apple.com/documentation/foundation/progress) object the extension uses to report its progress back to the unit test. This value defaults to `nil`.
 
 ## See Also
 

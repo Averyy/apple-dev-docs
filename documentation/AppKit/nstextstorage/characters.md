@@ -16,7 +16,7 @@ var characters: [NSTextStorage] { get set }
 
 #### Discussion
 
-Unless you’re dealing with scriptability, you shouldn’t use or modify this property directly. For indexed access to characters, use `NSAttributedString`’s [`length`](https://developer.apple.com/documentation/Foundation/NSAttributedString/length) method to access the string, and `NSString`’s [`character(at:)`](https://developer.apple.com/documentation/Foundation/NSString/character(at:)) method to access the individual characters.
+Unless you’re dealing with scriptability, you shouldn’t use or modify this property directly. For indexed access to characters, use `NSAttributedString`’s [`length`](https://developer.apple.com/documentation/foundation/nsattributedstring/length) method to access the string, and `NSString`’s [`character(at:)`](https://developer.apple.com/documentation/foundation/nsstring/character(at:)) method to access the individual characters.
 
 ## See Also
 

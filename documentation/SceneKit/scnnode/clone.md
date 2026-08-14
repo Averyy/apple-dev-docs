@@ -22,7 +22,7 @@ func clone() -> Self
 
 #### Discussion
 
-This method recursively copies the node and its child nodes. For a nonrecursive copy, use the inherited [`copy()`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class/copy()) method, which creates a copy of the node without any child nodes.
+This method recursively copies the node and its child nodes. For a nonrecursive copy, use the inherited [`copy()`](https://developer.apple.com/documentation/objectivec/nsobject-swift.class/copy()) method, which creates a copy of the node without any child nodes.
 
 Cloning or copying a node creates a duplicate of the node object, but not the geometries, lights, cameras, and other SceneKit objects attached to it—instead, each copied node shares references to these objects.
 

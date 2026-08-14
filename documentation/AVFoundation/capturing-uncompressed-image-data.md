@@ -14,7 +14,7 @@ In iOS, capturing uncompressed image data requires minor changes to the basic ph
 
 ##### Choose Uncompressed Format Settings
 
-To capture in an uncompressed format, create a photo settings object with [`init(format:)`](avcapturephotosettings/init(format:).md). In the format dictionary, specify the [`kCVPixelBufferPixelFormatTypeKey`](https://developer.apple.com/documentation/CoreVideo/kCVPixelBufferPixelFormatTypeKey) with one of the values listed in the photo output’s [`availablePhotoPixelFormatTypes`](avcapturephotooutput/availablephotopixelformattypes-6eyb.md) array. The example below chooses a 32-bit BGRA pixel format, which is useful in some GPU processing workflows:
+To capture in an uncompressed format, create a photo settings object with [`init(format:)`](avcapturephotosettings/init(format:).md). In the format dictionary, specify the [`kCVPixelBufferPixelFormatTypeKey`](https://developer.apple.com/documentation/corevideo/kcvpixelbufferpixelformattypekey) with one of the values listed in the photo output’s [`availablePhotoPixelFormatTypes`](avcapturephotooutput/availablephotopixelformattypes-6eyb.md) array. The example below chooses a 32-bit BGRA pixel format, which is useful in some GPU processing workflows:
 
 ```swift
 // Choose a 32-bit BGRA pixel format and verify the camera supports it.

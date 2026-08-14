@@ -23,7 +23,7 @@ This function reloads the initial TVMLKit JS file without quitting the app. The 
 
 ## Parameters
 
-- `options`: The options used to determine when the app is reloaded. This parameter is a dictionary with a key-value pair. The key can have the value  . The value can have the values   or  .
+- `options`: The options used to determine when the app is reloaded. This parameter is a dictionary with a key-value pair. The key can have the value `when`. The value can have the values `onResume` or `now`.
 - `reloadData`: An optional, developer-defined object that contains information about the current app state.
 
 

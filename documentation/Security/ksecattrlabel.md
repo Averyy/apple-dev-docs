@@ -27,7 +27,7 @@ let kSecAttrLabel: CFString
 
 #### Discussion
 
-The corresponding value is of type [`CFString`](https://developer.apple.com/documentation/CoreFoundation/CFString) and contains the user-visible label for this item.
+The corresponding value is of type [`CFString`](https://developer.apple.com/documentation/corefoundation/cfstring) and contains the user-visible label for this item.
 
 On key creation, if not explicitly specified, this attribute defaults to `NULL`.
 

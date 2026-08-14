@@ -17,7 +17,7 @@ optional func windowDidEndLiveResize(_ notification: Notification)
 
 #### Discussion
 
-You can retrieve the window object in question by sending [`object`](https://developer.apple.com/documentation/Foundation/NSNotification/object) to `notification`.
+You can retrieve the window object in question by sending [`object`](https://developer.apple.com/documentation/foundation/nsnotification/object) to `notification`.
 
 ## Parameters
 

@@ -23,7 +23,7 @@ A promise that resolves with a [`SearchResponse`](searchresponse.md) on success,
 
 #### Discussion
 
-The [`search(query, options)`](search/search.md) method returns a set of locations that matches a user-entered query or a [`SearchAutocompleteResult`](searchautocompleteresult.md).
+The [`search()`](search/search.md) method returns a set of locations that matches a user-entered query or a [`SearchAutocompleteResult`](searchautocompleteresult.md).
 
 The resolved [`SearchResponse`](searchresponse.md) contains the following properties:
 

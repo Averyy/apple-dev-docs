@@ -24,7 +24,7 @@ class NSCountedSet
 
 Each distinct object inserted into an [`NSCountedSet`](nscountedset.md) object has a counter associated with it. [`NSCountedSet`](nscountedset.md) keeps track of the number of times objects are inserted and requires that objects be removed the same number of times. Thus, there is only one instance of an object in an [`NSSet`](nsset.md) object even if the object has been added to the set multiple times. The [`count`](nsset/count.md) method defined by the superclass [`NSSet`](nsset.md) has special significance; it returns the number of distinct objects, not the total number of times objects are represented in the set. The [`NSSet`](nsset.md) and [`NSMutableSet`](nsmutableset.md) classes are provided for static and dynamic sets, respectively, whose elements are distinct.
 
-While [`NSCountedSet`](nscountedset.md) and [`CFBag`](https://developer.apple.com/documentation/CoreFoundation/CFBag) are not toll-free bridged, they provide similar functionality. For more information about `CFBag`, see the [`CFBag`](https://developer.apple.com/documentation/CoreFoundation/CFBag).
+While [`NSCountedSet`](nscountedset.md) and [`CFBag`](https://developer.apple.com/documentation/corefoundation/cfbag) are not toll-free bridged, they provide similar functionality. For more information about `CFBag`, see the [`CFBag`](https://developer.apple.com/documentation/corefoundation/cfbag).
 
 ##### Subclassing Notes
 
@@ -68,22 +68,22 @@ If you change the primitive behavior, you must also override the primitive metho
 ### Inherits From
 - [NSMutableSet](nsmutableset.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomReflectable](../Swift/CustomReflectable.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [ExpressibleByArrayLiteral](../Swift/ExpressibleByArrayLiteral.md)
-- [Hashable](../Swift/Hashable.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomReflectable](../swift/customreflectable.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
+- [Hashable](../swift/hashable.md)
 - [NSCoding](nscoding.md)
 - [NSCopying](nscopying.md)
 - [NSFastEnumeration](nsfastenumeration.md)
 - [NSMutableCopying](nsmutablecopying.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 - [NSSecureCoding](nssecurecoding.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
-- [Sequence](../Swift/Sequence.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sequence](../swift/sequence.md)
 
 ## See Also
 

@@ -26,7 +26,7 @@ In Swift, this object bridges to [`Decimal`](decimal.md); use [`NSDecimalNumber`
 
 `NSDecimalNumber`, an immutable subclass of `NSNumber`, provides an object-oriented wrapper for doing base-10 arithmetic. An instance can represent any number that can be expressed as `mantissa x 10^exponent` where mantissa is a decimal integer up to 38 digits long, and exponent is an integer from –128 through 127.
 
-> ❗ **Important**:  The Swift overlay to the Foundation framework provides the [`Decimal`](decimal.md) structure, which bridges to the [`NSDecimalNumber`](nsdecimalnumber.md) class. For more information about value types, see [`Working with Foundation Types`](https://developer.apple.com/documentation/Swift/working-with-foundation-types).
+> ❗ **Important**:  The Swift overlay to the Foundation framework provides the [`Decimal`](decimal.md) structure, which bridges to the [`NSDecimalNumber`](nsdecimalnumber.md) class. For more information about value types, see [`Working with Foundation Types`](https://developer.apple.com/documentation/swift/working-with-foundation-types).
 
 ## Topics
 
@@ -113,20 +113,20 @@ In Swift, this object bridges to [`Decimal`](decimal.md); use [`NSDecimalNumber`
 ### Inherits From
 - [NSNumber](nsnumber.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [ExpressibleByBooleanLiteral](../Swift/ExpressibleByBooleanLiteral.md)
-- [ExpressibleByFloatLiteral](../Swift/ExpressibleByFloatLiteral.md)
-- [ExpressibleByIntegerLiteral](../Swift/ExpressibleByIntegerLiteral.md)
-- [Hashable](../Swift/Hashable.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [ExpressibleByBooleanLiteral](../swift/expressiblebybooleanliteral.md)
+- [ExpressibleByFloatLiteral](../swift/expressiblebyfloatliteral.md)
+- [ExpressibleByIntegerLiteral](../swift/expressiblebyintegerliteral.md)
+- [Hashable](../swift/hashable.md)
 - [NSCoding](nscoding.md)
 - [NSCopying](nscopying.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 - [NSSecureCoding](nssecurecoding.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 
 ---

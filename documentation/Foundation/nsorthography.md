@@ -28,7 +28,7 @@ Scripts are uniformly described by four-letter ISO 15924 script codes, such as `
 
 Languages are uniformly described by BCP-47 tags (preferably in canonical form). The tag `"und"` is used if a specific language cannot be determined.
 
-You typically work with orthography objects returned from methods and properties for classes like [`NSLinguisticTagger`](nslinguistictagger.md) and [`NSSpellChecker`](https://developer.apple.com/documentation/AppKit/NSSpellChecker).
+You typically work with orthography objects returned from methods and properties for classes like [`NSLinguisticTagger`](nslinguistictagger.md) and [`NSSpellChecker`](https://developer.apple.com/documentation/appkit/nsspellchecker).
 
 ##### Subclassing Notes
 
@@ -62,16 +62,16 @@ Subclasses must override the [`dominantScript`](nsorthography/dominantscript.md)
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
 - [NSCoding](nscoding.md)
 - [NSCopying](nscopying.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 - [NSSecureCoding](nssecurecoding.md)
 
 ## See Also

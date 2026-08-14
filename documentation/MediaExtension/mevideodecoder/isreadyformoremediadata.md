@@ -17,7 +17,7 @@ var isReadyForMoreMediaData: Bool { get }
 
 #### Discussion
 
-Video decoders which operate asynchronously often have a fixed capacity for buffers in flight in the decoder. This property allows the decoder to signal to [`Video Toolbox`](https://developer.apple.com/documentation/VideoToolbox) that its internal buffers are full and it can’t accept more samples. The decoder needs to use [`MEVideoDecoderReadyForMoreMediaDataDidChangeNotification`](mevideodecoderreadyformoremediadatadidchangenotification.md) to notify Video Toolbox when this property changes.
+Video decoders which operate asynchronously often have a fixed capacity for buffers in flight in the decoder. This property allows the decoder to signal to [`Video Toolbox`](https://developer.apple.com/documentation/videotoolbox) that its internal buffers are full and it can’t accept more samples. The decoder needs to use [`MEVideoDecoderReadyForMoreMediaDataDidChangeNotification`](mevideodecoderreadyformoremediadatadidchangenotification.md) to notify Video Toolbox when this property changes.
 
 ## See Also
 

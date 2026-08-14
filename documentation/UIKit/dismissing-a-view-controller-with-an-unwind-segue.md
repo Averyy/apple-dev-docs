@@ -10,7 +10,7 @@ To handle the dismissal of a view controller, create an unwind segue. Unlike the
 
 UIKit determines the target of an unwind segue at runtime, so you aren’t restricted in how you set up your view controller hierarchies. Consider a scenario where two view controllers present the same child view controller, as shown in the following figure. You could add complicated logic to determine which view controller to display next, but such a solution wouldn’t scale well. Instead, UIKit provides a simple programmatic solution that scales to any number of view controllers with minimal effort.
 
-![An illustration showing the problem of connecting an unwind segue to a specific view controller. There might be multiple targets to choose from. ](https://docs-assets.developer.apple.com/published/61b83c9a12a192275987cc892156d382/media-3375405%402x.png)
+![An illustration showing the problem of connecting an unwind segue to a specific view controller. There might be multiple targets to choose from. ](/images/com.apple.uikit/media-3375405@2x.png)
 
 ##### Define an Unwind Action on a Parent View Controller
 
@@ -34,7 +34,7 @@ You don’t need to do anything in your unwind segue action methods. The presenc
 
 In your storyboard, create an unwind segue by right-clicking a triggering object and dragging to the Exit control at the top of your view controller’s scene. You may trigger the segue from any object that supports the target-action design pattern, such as a control or gesture recognizer attached to your view controller.
 
-![An illustration showing how to connect a button to the exit control of a view controller to create an unwind segue.](https://docs-assets.developer.apple.com/published/b11e5fc6be5212414fff10f0d5774de5/media-3376048%402x.png)
+![An illustration showing how to connect a button to the exit control of a view controller to create an unwind segue.](/images/com.apple.uikit/media-3376048@2x.png)
 
 When you connect an object to the Exit control, UIKit presents a list of known action methods. Select one of the action methods to complete the unwind segue. You only select the action method, not a specific view controller. To be displayed after the dismissal, a parent view controller must implement the method you select.
 

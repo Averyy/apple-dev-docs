@@ -18,7 +18,7 @@ class NSUserUnixTask
 
 The [`NSUserUnixTask`](nsuserunixtask.md) class is intended to run unix applications, typically a shell script, from your application. It is intended to execute user-supplied scripts, and will execute them outside of the application’s sandbox, if any.
 
-The class is not intended to execute scripts built into an application; for that, use one of the [`Process`](process.md), [`NSAppleScript`](nsapplescript.md), or [`AMWorkflow`](https://developer.apple.com/documentation/Automator/AMWorkflow) classes.  If the application is sandboxed, then the script must be in the [`FileManager.SearchPathDirectory.applicationScriptsDirectory`](filemanager/searchpathdirectory/applicationscriptsdirectory.md) folder.  A sandboxed application may read from, but not write to, this folder.
+The class is not intended to execute scripts built into an application; for that, use one of the [`Process`](process.md), [`NSAppleScript`](nsapplescript.md), or [`AMWorkflow`](https://developer.apple.com/documentation/automator/amworkflow) classes.  If the application is sandboxed, then the script must be in the [`FileManager.SearchPathDirectory.applicationScriptsDirectory`](filemanager/searchpathdirectory/applicationscriptsdirectory.md) folder.  A sandboxed application may read from, but not write to, this folder.
 
 If you simply need to execute unix scripts without regard to input or output, use [`NSUserScriptTask`](nsuserscripttask.md), which can execute any of the specific types.  If you need specific control over the input to, or output from, or the error stream of the script, use this class.
 
@@ -43,14 +43,14 @@ If you simply need to execute unix scripts without regard to input or output, us
 ### Inherits From
 - [NSUserScriptTask](nsuserscripttask.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

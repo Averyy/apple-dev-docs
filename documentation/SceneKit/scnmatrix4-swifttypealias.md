@@ -24,7 +24,7 @@ typealias SCNMatrix4 = CATransform3D
 
 SceneKit uses matrices to represent coordinate space transformations, which in turn can represent the combined position, rotation or orientation, and scale of an object in three-dimensional space.
 
-> ❗ **Important**:  In macOS, the fields in this structure are [`CGFloat`](https://developer.apple.com/documentation/CoreFoundation/CGFloat-swift.struct) values. In iOS, tvOS, and watchOS, these fields are `float` values.
+> ❗ **Important**:  In macOS, the fields in this structure are [`CGFloat`](https://developer.apple.com/documentation/corefoundation/cgfloat-swift.struct) values. In iOS, tvOS, and watchOS, these fields are `float` values.
 
 ## Topics
 

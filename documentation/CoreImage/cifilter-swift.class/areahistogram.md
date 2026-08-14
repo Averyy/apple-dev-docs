@@ -30,7 +30,7 @@ This filter calculates histograms of the red, green, blue, and alpha colors in t
 The area histogram filter uses the following properties:
 
 - **`inputImage`**: An image with the type [`CIImage`](ciimage.md).
-- **`extent`**: A [`CGRect`](https://developer.apple.com/documentation/CoreFoundation/CGRect) that specifies the subregion of the image that you want to process.
+- **`extent`**: A [`CGRect`](https://developer.apple.com/documentation/corefoundation/cgrect) that specifies the subregion of the image that you want to process.
 - **`scale`**: The scale value to use for the histogram values. If the scale is 1, then the total of all the counts in the histogram equals 1.
 - **`count`**: The number of bins for the histogram. This value determines the width of the output image. Minimum value 1, maximum value 2048.
 
@@ -65,7 +65,7 @@ func histogramDisplay(inputImage: CIImage) -> CIImage {
 
 ```
 
-![Two images arranged horizontally. The left image contains a photograph of three hydrangea flowers with leaves in the background. The image on the right shows the result of the histogram display filter. There are three overlaid charts showing the histogram of the red, green, and blue components.](https://docs-assets.developer.apple.com/published/d97a604d980184e6a74406d6098a21b4/media-4332392%402x.png)
+![Two images arranged horizontally. The left image contains a photograph of three hydrangea flowers with leaves in the background. The image on the right shows the result of the histogram display filter. There are three overlaid charts showing the histogram of the red, green, and blue components.](/images/com.apple.coreimage/media-4332392@2x.png)
 
 ## See Also
 

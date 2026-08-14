@@ -22,7 +22,7 @@ func isEqual(to aString: String) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/Swift/true) if `aString` is equivalent to the receiver (if they have the same id or if they are `NSOrderedSame` in a literal comparison), otherwise [`false`](https://developer.apple.com/documentation/Swift/false).
+[`true`](https://developer.apple.com/documentation/swift/true) if `aString` is equivalent to the receiver (if they have the same id or if they are `NSOrderedSame` in a literal comparison), otherwise [`false`](https://developer.apple.com/documentation/swift/false).
 
 #### Discussion
 
@@ -30,7 +30,7 @@ The comparison uses the canonical representation of strings, which for a particu
 
 ##### Special Considerations
 
-When you know both objects are strings, this method is a faster way to check equality than [`isEqual(_:)`](https://developer.apple.com/documentation/ObjectiveC/NSObjectProtocol/isEqual(_:)).
+When you know both objects are strings, this method is a faster way to check equality than [`isEqual(_:)`](https://developer.apple.com/documentation/objectivec/nsobjectprotocol/isequal(_:)).
 
 ## Parameters
 

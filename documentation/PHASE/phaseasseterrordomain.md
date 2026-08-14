@@ -21,7 +21,7 @@ let PHASEAssetErrorDomain: String
 
 #### Discussion
 
-For more information on Core Foundation error domains, see [`Error domains`](https://developer.apple.com/documentation/CoreFoundation/error-domains).
+For more information on Core Foundation error domains, see [`Error domains`](https://developer.apple.com/documentation/corefoundation/error-domains).
 
 ## See Also
 

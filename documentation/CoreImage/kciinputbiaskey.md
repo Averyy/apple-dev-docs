@@ -21,7 +21,7 @@ let kCIInputBiasKey: String
 
 #### Discussion
 
-A key for the simple bias value to use along with the exposure adjustment ([`kCIInputEVKey`](kciinputevkey.md)). The associated value must be an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) object that specifies floating-point value. The value has no effect if the image used for initialization is not RAW.
+A key for the simple bias value to use along with the exposure adjustment ([`kCIInputEVKey`](kciinputevkey.md)). The associated value must be an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) object that specifies floating-point value. The value has no effect if the image used for initialization is not RAW.
 
 ## See Also
 

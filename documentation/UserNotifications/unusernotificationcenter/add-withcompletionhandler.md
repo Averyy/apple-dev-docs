@@ -24,7 +24,7 @@ func add(_ request: UNNotificationRequest) async throws
 
 > ❗ **Important**:  You can call this method from synchronous code using a completion handler, as shown on this page, or you can call it as an asynchronous method that has the following declaration: ```swift
 func add(_ request: UNNotificationRequest) async throws
-``` For information about concurrency and asynchronous code in Swift, see [`Calling Objective-C APIs Asynchronously`](https://developer.apple.com/documentation/Swift/calling-objective-c-apis-asynchronously).
+``` For information about concurrency and asynchronous code in Swift, see [`Calling Objective-C APIs Asynchronously`](https://developer.apple.com/documentation/swift/calling-objective-c-apis-asynchronously).
 
 This method schedules local notifications only; you cannot use it to schedule the delivery of remote notifications. Upon calling this method, the system begins tracking the trigger conditions associated with your request. When the trigger condition is met, the system delivers your notification. If the request does not contain a [`UNNotificationTrigger`](unnotificationtrigger.md) object, the notification is delivered right away.
 

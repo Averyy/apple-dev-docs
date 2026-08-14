@@ -27,7 +27,7 @@ You can enable video stabilization by setting it to an available stabilization m
 
 Use key-value observing with the [`activeVideoStabilizationMode`](avcaptureconnection/activevideostabilizationmode.md) property to determine which stabilization mode is in use.
 
-You can monitor the [`activeVideoStabilizationMode`](avcaptureconnection/activevideostabilizationmode.md) property to detect which stabilization mode the connection’s using. See [`NSKeyValueObserving`](https://developer.apple.com/documentation/ObjectiveC/nskeyvalueobserving) and [`Using Key-Value Observing in Swift`](https://developer.apple.com/documentation/Swift/using-key-value-observing-in-swift) for more information.
+You can monitor the [`activeVideoStabilizationMode`](avcaptureconnection/activevideostabilizationmode.md) property to detect which stabilization mode the connection’s using. See [`NSKeyValueObserving`](https://developer.apple.com/documentation/objectivec/nskeyvalueobserving) and [`Using Key-Value Observing in Swift`](https://developer.apple.com/documentation/swift/using-key-value-observing-in-swift) for more information.
 
 ## See Also
 

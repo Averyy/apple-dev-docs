@@ -240,8 +240,8 @@ xwRMB5LaaVrQZlhj9xjum0MfDpIS1hJI6p5CHZ8w&scope=searchadsorg'
 | --- | --- | --- |
 | `client_id` | String | **Required**. You receive your `clientId` when you upload a public key. |
 | `client_secret` | String | **Required**. The client secret is a JWT that you create and sign with your private key. |
-| `grant_type` | String | **Required**. The method to request authorization and get an access token.  ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) The value is `client_credentials`. |
-| `scope` | String | **Required**. Defines the access permissions you request from the user, and limits the authorization of the access token you receive. ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) The value is `searchadsorg`. |
+| `grant_type` | String | **Required**. The method to request authorization and get an access token.  ![None](/images/com.apple.appleads/spacer.png) The value is `client_credentials`. |
+| `scope` | String | **Required**. Defines the access permissions you request from the user, and limits the authorization of the access token you receive. ![None](/images/com.apple.appleads/spacer.png) The value is `searchadsorg`. |
 
 After accepting the credentials, the authorization server returns an access token.
 
@@ -261,7 +261,7 @@ QaxF3Gadtu_Z5rYFg.vD0iQuRwHGYVnDy27qexCw",
 
 | **Response parameter** | **Type** | **Description** |
 | --- | --- | --- |
-| `access_token` | String | Your `access_token` is a requirement to make calls to Apple Ads Campaign Management API endpoints. See [`Calling the Apple Ads API`](calling-the-apple-search-ads-api.md). ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) Your `access_token` is valid for the number of seconds that `expires_in` specifies. |
+| `access_token` | String | Your `access_token` is a requirement to make calls to Apple Ads Campaign Management API endpoints. See [`Calling the Apple Ads API`](calling-the-apple-search-ads-api.md). ![None](/images/com.apple.appleads/spacer.png) Your `access_token` is valid for the number of seconds that `expires_in` specifies. |
 | `token_type` | String | The type of access token. The value is always `Bearer`. |
 | `expires_in` | Integer | The token lifetime (TTL) of one hour (3600 seconds). |
 | `scope` | String | Defines the access permissions you request from the user, and limits the authorization of the access token you receive. |

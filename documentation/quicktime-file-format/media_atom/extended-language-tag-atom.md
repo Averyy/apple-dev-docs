@@ -7,7 +7,7 @@ This atom contains the extended language tag describing the media language.
 
 #### Overview
 
-See [`Extended language tag atom ('elng')`](extended_language_tag_atom.md).
+See [`Extended language tag atom`](extended_language_tag_atom.md).
 
 ## See Also
 

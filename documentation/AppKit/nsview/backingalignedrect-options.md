@@ -20,12 +20,12 @@ A rectangle in the view’s interior coordinate system that is aligned to the ba
 
 #### Discussion
 
-Uses the [`NSIntegralRectWithOptions(_:_:)`](https://developer.apple.com/documentation/Foundation/NSIntegralRectWithOptions(_:_:)) function and the given input rectangle and options to produce a backing store pixel-aligned rectangle in the view’s interior coordinates.
+Uses the [`NSIntegralRectWithOptions(_:_:)`](https://developer.apple.com/documentation/foundation/nsintegralrectwithoptions(_:_:)) function and the given input rectangle and options to produce a backing store pixel-aligned rectangle in the view’s interior coordinates.
 
 ## Parameters
 
 - `rect`: The rectangle in the view’s interior coordinate system.
-- `options`: The alignment options. See [`AlignmentOptions`](https://developer.apple.com/documentation/Foundation/AlignmentOptions) for possible values. (Note that although the alignment options specify integral values, the rectangle returned by this method is pixel-aligned.)
+- `options`: The alignment options. See [`AlignmentOptions`](https://developer.apple.com/documentation/foundation/alignmentoptions) for possible values. (Note that although the alignment options specify integral values, the rectangle returned by this method is pixel-aligned.)
 
 ## See Also
 

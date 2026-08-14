@@ -35,7 +35,7 @@ This method is callable without blocking the current thread after you’ve async
 
 ## Parameters
 
-- `preferredLanguages`: An array of BCP 47 language identifier strings. The order of the identifiers in the array reflects the preferred language order, with the most preferred language being first in the array. Typically, you pass the user’s preferred languages by retrieving this array from the [`preferredLanguages`](https://developer.apple.com/documentation/Foundation/NSLocale/preferredLanguages) class method of [`NSLocale`](https://developer.apple.com/documentation/Foundation/NSLocale).
+- `preferredLanguages`: An array of BCP 47 language identifier strings. The order of the identifiers in the array reflects the preferred language order, with the most preferred language being first in the array. Typically, you pass the user’s preferred languages by retrieving this array from the [`preferredLanguages`](https://developer.apple.com/documentation/foundation/nslocale/preferredlanguages) class method of [`NSLocale`](https://developer.apple.com/documentation/foundation/nslocale).
 
 ## See Also
 

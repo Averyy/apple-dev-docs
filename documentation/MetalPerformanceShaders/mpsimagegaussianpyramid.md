@@ -34,22 +34,22 @@ The Gaussian image pyramid is constructed as follows:
 - Afterwards, the image is down-sampled by removing all odd rows and columns, which defines the next level in the Gaussian image pyramid.
 - This procedure is continued until every mip-map level present in the image is filled with all the pyramid levels.
 
-> **Note**:  Make sure your chosen texture type is compatible with mip-mapping and also supports texture views (i.e. the texture’s usage includes the [`pixelFormatView`](https://developer.apple.com/documentation/Metal/MTLTextureUsage/pixelFormatView) option).
+> **Note**:  Make sure your chosen texture type is compatible with mip-mapping and also supports texture views (i.e. the texture’s usage includes the [`pixelFormatView`](https://developer.apple.com/documentation/metal/mtltextureusage/pixelformatview) option).
 
 ## Relationships
 
 ### Inherits From
 - [MPSImagePyramid](mpsimagepyramid.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCoding](../Foundation/NSCoding.md)
-- [NSCopying](../Foundation/NSCopying.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [NSSecureCoding](../Foundation/NSSecureCoding.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCoding](../foundation/nscoding.md)
+- [NSCopying](../foundation/nscopying.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSSecureCoding](../foundation/nssecurecoding.md)
 
 ## See Also
 

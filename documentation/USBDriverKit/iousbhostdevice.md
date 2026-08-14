@@ -20,7 +20,7 @@ An [`IOUSBHostDevice`](iousbhostdevice.md) object represents a USB device connec
 
 Typically, you don’t create [`IOUSBHostDevice`](iousbhostdevice.md) objects directly. Instead, the system creates one during the matching process for the USB device and passes it as the provider object to your custom driver.
 
-To use a host device object, call [`Open`](iousbhostdevice/open.md) to create a new session between the device and your driver. After successfully opening your session, you can request information from the device, fetch descriptors, and iterate over the available interfaces. Remember to close the session you opened in the [`Stop`](https://developer.apple.com/documentation/DriverKit/IOService/Stop) method of your driver.
+To use a host device object, call [`Open`](iousbhostdevice/open.md) to create a new session between the device and your driver. After successfully opening your session, you can request information from the device, fetch descriptors, and iterate over the available interfaces. Remember to close the session you opened in the [`Stop`](https://developer.apple.com/documentation/driverkit/ioservice/stop) method of your driver.
 
 ## Topics
 
@@ -107,7 +107,7 @@ To use a host device object, call [`Open`](iousbhostdevice/open.md) to create a 
 ## Relationships
 
 ### Inherits From
-- [IOService](../DriverKit/IOService.md)
+- [IOService](../driverkit/ioservice.md)
 
 ## See Also
 

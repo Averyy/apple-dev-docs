@@ -30,10 +30,10 @@ This method applies the torus lens distortion filter to an image. This effect di
 The torus lens distortion filter uses the following properties:
 
 - **`inputImage`**: An image with the type [`CIImage`](ciimage.md).
-- **`center`**: A set of coordinates marking the center of the image as a [`CGPoint`](https://developer.apple.com/documentation/CoreFoundation/CGPoint).
-- **`radius`**: A `float` representing the amount of pixels the filter uses in the tours as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
-- **`refraction`**: A `float` representing the refraction of the glass as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
-- **`width`**: A `float` representing the width of the torus ring as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+- **`center`**: A set of coordinates marking the center of the image as a [`CGPoint`](https://developer.apple.com/documentation/corefoundation/cgpoint).
+- **`radius`**: A `float` representing the amount of pixels the filter uses in the tours as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
+- **`refraction`**: A `float` representing the refraction of the glass as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
+- **`width`**: A `float` representing the width of the torus ring as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
 
 The following code creates a filter that results in a torus-shaped object placed over the image:
 
@@ -49,7 +49,7 @@ func torusLens(inputImage: CIImage) -> CIImage {
 }
 ```
 
-![Two images next to each other. The image on the left contains a black-and-white checkerboard pattern. The image on the right has the torus lens distortion filter applied. The image appears to have a ring of distortion around the center.](https://docs-assets.developer.apple.com/published/25b1ca525e15f37ef1e9efdba9f207a2/media-4407288%402x.png)
+![Two images next to each other. The image on the left contains a black-and-white checkerboard pattern. The image on the right has the torus lens distortion filter applied. The image appears to have a ring of distortion around the center.](/images/com.apple.coreimage/media-4407288@2x.png)
 
 ## See Also
 

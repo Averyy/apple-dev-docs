@@ -33,11 +33,11 @@ for (index, imageName) in imageNames.enumerated() {
 
 With the default blend mode of [`SKBlendMode.alpha`](skblendmode/alpha.md), the thee circles look like:
 
-![Overlapping sprite nodes using alpha blending](https://docs-assets.developer.apple.com/published/e34b1c98fde069ffaa6370565f6ffe14/media-2983070%402x.png)
+![Overlapping sprite nodes using alpha blending](/images/com.apple.spritekit/media-2983070@2x.png)
 
 However, with a blend mode of [`SKBlendMode.add`](skblendmode/add.md), the color values are added together, creating a scene that looks like:
 
-![Overlapping sprite nodes using additive blending](https://docs-assets.developer.apple.com/published/636dc48fdc112899bd9ac3ccad739e71/media-2983071%402x.png)
+![Overlapping sprite nodes using additive blending](/images/com.apple.spritekit/media-2983071@2x.png)
 
 ## See Also
 

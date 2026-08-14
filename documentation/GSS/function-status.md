@@ -18,7 +18,7 @@ Three bitfields bundled together make up major status codes in a single [`OM_uin
 
 When a function successfully runs to completion, it returns zero for all of these fields. As a convenience, you can compare the result directly with the status code [`GSS_S_COMPLETE`](gss_s_complete.md) to test for this condition.
 
-![Diagram of the three bitfields that make up the status codes in a value: the 8 bit calling error, the 8 bit routine error, and the 16 bit supplementary information.](https://docs-assets.developer.apple.com/published/e80920a4de046d204e8222153b7debcf/media-3402053%402x.png)
+![Diagram of the three bitfields that make up the status codes in a value: the 8 bit calling error, the 8 bit routine error, and the 16 bit supplementary information.](/images/com.apple.gss/media-3402053@2x.png)
 
 For any other result, use one of the available extraction macros (such as [`GSS_CALLING_ERROR`](gss_calling_error.md)) to obtain a value that you compare against one of the known error codes. For example, you can test for a failure to read one of the function inputs as follows:
 

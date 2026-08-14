@@ -34,9 +34,9 @@ struct ApplicationError
 ## Relationships
 
 ### Conforms To
-- [ExpressibleByIntegerLiteral](../Swift/ExpressibleByIntegerLiteral.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [ExpressibleByIntegerLiteral](../swift/expressiblebyintegerliteral.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

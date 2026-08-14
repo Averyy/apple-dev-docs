@@ -104,12 +104,12 @@ struct ICReturn
 ## Relationships
 
 ### Conforms To
-- [CustomNSError](../Foundation/CustomNSError.md)
-- [Equatable](../Swift/Equatable.md)
-- [Error](../Swift/Error.md)
-- [Hashable](../Swift/Hashable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [CustomNSError](../foundation/customnserror.md)
+- [Equatable](../swift/equatable.md)
+- [Error](../swift/error.md)
+- [Hashable](../swift/hashable.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

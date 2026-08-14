@@ -16,7 +16,7 @@ class NSRuleEditor
 
 #### Overview
 
-A rule editor lets the user visually create and configure a list of options that are expressed as a predicate. (For more information, see [`NSPredicate`](https://developer.apple.com/documentation/Foundation/NSPredicate).) Each row displayed by the rule editor represents a particular path down a tree of choices. The rule editor’s delegate provides the tree of choices to be displayed. The rule editor presents those choices to the user as a row of popup buttons, static text fields, and custom views.
+A rule editor lets the user visually create and configure a list of options that are expressed as a predicate. (For more information, see [`NSPredicate`](https://developer.apple.com/documentation/foundation/nspredicate).) Each row displayed by the rule editor represents a particular path down a tree of choices. The rule editor’s delegate provides the tree of choices to be displayed. The rule editor presents those choices to the user as a row of popup buttons, static text fields, and custom views.
 
 `NSRuleEditor` exposes one binding, `rows`. You can bind `rows` to an ordered collection (such as an instance of `NSMutableArray`). Each object in the collection should have the following properties:
 
@@ -117,28 +117,28 @@ A rule editor lets the user visually create and configure a list of options that
 ### Inherited By
 - [NSPredicateEditor](nspredicateeditor.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
 - [NSAccessibilityElementProtocol](nsaccessibilityelementprotocol.md)
 - [NSAccessibilityProtocol](nsaccessibilityprotocol.md)
 - [NSAnimatablePropertyContainer](nsanimatablepropertycontainer.md)
 - [NSAppearanceCustomization](nsappearancecustomization.md)
-- [NSCoding](../Foundation/NSCoding.md)
+- [NSCoding](../foundation/nscoding.md)
 - [NSDraggingDestination](nsdraggingdestination.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 - [NSStandardKeyBindingResponding](nsstandardkeybindingresponding.md)
 - [NSTouchBarProvider](nstouchbarprovider.md)
 - [NSUserActivityRestoring](nsuseractivityrestoring.md)
 - [NSUserInterfaceItemIdentification](nsuserinterfaceitemidentification.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 
-- [Responding to control-based events using target-action](../UIKit/responding-to-control-based-events-using-target-action.md)
+- [Responding to control-based events using target-action](../uikit/responding-to-control-based-events-using-target-action.md)
   Handle user input by connecting buttons, sliders, and other controls to your app’s code using the target-action design pattern.
 - [class NSButton](nsbutton.md)
   A control that defines an area on the screen that a user clicks to trigger an action.

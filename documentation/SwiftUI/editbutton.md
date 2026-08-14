@@ -49,7 +49,7 @@ var body: some View {
 
 Because the [`ForEach`](foreach.md) in the above example defines behaviors for [`onDelete(perform:)`](dynamicviewcontent/ondelete(perform:).md) and [`onMove(perform:)`](dynamicviewcontent/onmove(perform:).md), the editable list displays the delete and move UI when the user taps Edit. Notice that the Edit button displays the title “Done” while edit mode is active:
 
-![A screenshot of an app with an Edit button in the navigation bar.](https://docs-assets.developer.apple.com/published/ef01598c8da781c8c60c9e3bcaa97418/EditButton-1%402x.png)
+![A screenshot of an app with an Edit button in the navigation bar.](/images/com.apple.SwiftUI/EditButton-1@2x.png)
 
 You can also create custom views that react to changes in the edit mode state, as described in [`EditMode`](editmode.md).
 

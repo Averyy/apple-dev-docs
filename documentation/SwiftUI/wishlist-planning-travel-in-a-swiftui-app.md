@@ -17,7 +17,7 @@ The Wishlist sample app helps people organize travel plans by grouping trips int
 The sample project demonstrates how to:
 
 - Compose custom views.
-- Manage state with the [`Observable()`](https://developer.apple.com/documentation/Observation/Observable()) macro.
+- Manage state with the [`Observable()`](https://developer.apple.com/documentation/observation/observable()) macro.
 - Customize navigation title appearance.
 - Animate view changes.
 - Create zoom transitions to navigation destinations and between buttons and sheets.
@@ -59,7 +59,7 @@ The outer `VStack` stacks the image and text vertically, aligning content to the
 
 ##### Manage State with an Observable Macro
 
-SwiftUI updates views automatically when their dependencies change. Mark model classes with [`Observable()`](https://developer.apple.com/documentation/Observation/Observable()) to opt into automatic change tracking. In Wishlist, the `@Observable` macro synthesizes the necessary code to publish changes made to any stored property:
+SwiftUI updates views automatically when their dependencies change. Mark model classes with [`Observable()`](https://developer.apple.com/documentation/observation/observable()) to opt into automatic change tracking. In Wishlist, the `@Observable` macro synthesizes the necessary code to publish changes made to any stored property:
 
 ```swift
 @Observable
@@ -73,7 +73,7 @@ class DataSource {
 }
 ```
 
-The `DataSource` class stores trips in a [`Dictionary`](https://developer.apple.com/documentation/Swift/Dictionary) keyed by trip ID for efficient lookup. The `didSet` property observer calls `updateGoalAchievements()` whenever the `trips` dictionary changes, keeping goal progress synchronized with trip completion. Any views that read from the `trips` dictionary, like `RecentTripsPageView`, automatically update when the dictionary changes, such as when adding or removing a trip.
+The `DataSource` class stores trips in a [`Dictionary`](https://developer.apple.com/documentation/swift/dictionary) keyed by trip ID for efficient lookup. The `didSet` property observer calls `updateGoalAchievements()` whenever the `trips` dictionary changes, keeping goal progress synchronized with trip completion. Any views that read from the `trips` dictionary, like `RecentTripsPageView`, automatically update when the dictionary changes, such as when adding or removing a trip.
 
 To share this data across the sample app, Wishlist creates a state with the [`State`](state.md) property wrapper inside the [`App`](app.md) struct, then injects the data into the view hierarchy with the [`environment(_:)`](view/environment(_:).md) modifier:
 

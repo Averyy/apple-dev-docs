@@ -22,7 +22,7 @@ var advisoryNotices: [String] { get }
 
 #### Discussion
 
-This property contains an array of [`NSString`](https://developer.apple.com/documentation/Foundation/NSString) objects. The framework localizes each string according to the user’s language preferences. The strings contain additional information that’s important for the user to know about the route. For example, a string might note the closing of a portion of the route during the winter or after big storms.
+This property contains an array of [`NSString`](https://developer.apple.com/documentation/foundation/nsstring) objects. The framework localizes each string according to the user’s language preferences. The strings contain additional information that’s important for the user to know about the route. For example, a string might note the closing of a portion of the route during the winter or after big storms.
 
 ## See Also
 

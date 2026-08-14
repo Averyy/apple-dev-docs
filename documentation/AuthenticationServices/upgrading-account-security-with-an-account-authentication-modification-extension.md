@@ -18,7 +18,7 @@ If your account security policy requires additional steps, such as two-factor au
 
 ##### Configure an Associated Domain
 
-To upgrade user accounts stored in the iOS password manager, you must first establish an association between your app and the domains that to which your account belongs. To make this association, add an associated domain file to your website that includes a `webcredential` entry, and configure a matching [`Associated Domains Entitlement`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.associated-domains). For more information about how to configure associated domains, see [`Supporting associated domains`](https://developer.apple.com/documentation/Xcode/supporting-associated-domains).
+To upgrade user accounts stored in the iOS password manager, you must first establish an association between your app and the domains that to which your account belongs. To make this association, add an associated domain file to your website that includes a `webcredential` entry, and configure a matching [`Associated Domains Entitlement`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.associated-domains). For more information about how to configure associated domains, see [`Supporting associated domains`](https://developer.apple.com/documentation/xcode/supporting-associated-domains).
 
 ##### Add an Account Authentication Modification Extension to Your App
 
@@ -29,13 +29,13 @@ Xcode provides a starting point to create your extension. To add the Account Aut
 3. Enter the name of your extension.
 4. Click Finish.
 
-![A screenshot showing Xcode’s new target sheet with Account Authentication selected](https://docs-assets.developer.apple.com/published/9950a923318cdc966f9fb51301608ade/media-3682821%402x.png)
+![A screenshot showing Xcode’s new target sheet with Account Authentication selected](/images/com.apple.authenticationservices/media-3682821@2x.png)
 
 ##### Declare Supported Upgrade Types
 
-Your extension’s `Info.plist` file specifies the types of upgrades your app supports. To support upgrading weak passwords to strong passwords, set the [`ASAccountAuthenticationModificationSupportsStrongPasswordChange`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSExtension/ASAccountAuthenticationModificationSupportsStrongPasswordChange) key to `YES`. To support upgrading accounts from using passwords to using Sign in with Apple, set the [`ASAccountAuthenticationModificationSupportsUpgradeToSignInWithApple`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSExtension/ASAccountAuthenticationModificationSupportsUpgradeToSignInWithApple) to `YES`.
+Your extension’s `Info.plist` file specifies the types of upgrades your app supports. To support upgrading weak passwords to strong passwords, set the [`ASAccountAuthenticationModificationSupportsStrongPasswordChange`](https://developer.apple.com/documentation/bundleresources/information-property-list/nsextension/asaccountauthenticationmodificationsupportsstrongpasswordchange) key to `YES`. To support upgrading accounts from using passwords to using Sign in with Apple, set the [`ASAccountAuthenticationModificationSupportsUpgradeToSignInWithApple`](https://developer.apple.com/documentation/bundleresources/information-property-list/nsextension/asaccountauthenticationmodificationsupportsupgradetosigninwithapple) to `YES`.
 
-When the system begins a strong password upgrade, it generates a new strong password. If the system-generated password doesn’t meet your needs, optionally add the [`ASAccountAuthenticationModificationPasswordGenerationRequirements`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSExtension/ASAccountAuthenticationModificationPasswordGenerationRequirements) key with a string value that describes your requirements. For details about the format of this string, see [`Customizing Password AutoFill rules`](https://developer.apple.com/documentation/Security/customizing-password-autofill-rules). Use the [`Password Rules Validation Tool`](https://developer.apple.comhttps://developer.apple.com/password-rules/) to verify the passwords the system generates with your requirements.
+When the system begins a strong password upgrade, it generates a new strong password. If the system-generated password doesn’t meet your needs, optionally add the [`ASAccountAuthenticationModificationPasswordGenerationRequirements`](https://developer.apple.com/documentation/bundleresources/information-property-list/nsextension/asaccountauthenticationmodificationpasswordgenerationrequirements) key with a string value that describes your requirements. For details about the format of this string, see [`Customizing Password AutoFill rules`](https://developer.apple.com/documentation/security/customizing-password-autofill-rules). Use the [`Password Rules Validation Tool`](https://developer.apple.comhttps://developer.apple.com/password-rules/) to verify the passwords the system generates with your requirements.
 
 ##### Support Automatic Strong Password Upgrades
 
@@ -61,7 +61,7 @@ This method receives the following parameters:
 
 - An [`ASCredentialServiceIdentifier`](ascredentialserviceidentifier.md) to identify the service to update, for example a website account.
 - The service’s current password.
-- A system-generated strong password, conforming to [`ASAccountAuthenticationModificationPasswordGenerationRequirements`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSExtension/ASAccountAuthenticationModificationPasswordGenerationRequirements), if specified.
+- A system-generated strong password, conforming to [`ASAccountAuthenticationModificationPasswordGenerationRequirements`](https://developer.apple.com/documentation/bundleresources/information-property-list/nsextension/asaccountauthenticationmodificationpasswordgenerationrequirements), if specified.
 - A user-info dictionary that contains app-specific information, if your app initiates the request.
 
 To perform the automatic upgrade, the extension communicates with your server to authorize and perform the upgrade. Use the current password, existing token, or credential information from your app to confirm with your server that the user is authorized to perform the password upgrade. Once the server confirms the user authorization, send the new password to your server to perform the upgrade. If the system-generated password doesn’t satisfy your server’s requirements, you can use a different password than the one the system provides.
@@ -136,7 +136,7 @@ self.extensionContext.getSignInWithAppleUpgradeAuthorization(
 
 ```
 
-To create the Sign in with Apple credential, the system prompts the user and communicates with Apple. If the user cancels the request, the system calls the completion handler with an error that specifies a [`ASExtensionError.Code.userCanceled`](asextensionerror/code/usercanceled.md) code. In that case, cancel the request using the same error code and no failure reason, and don’t show any additional user interface. If the device can’t communicate with Apple’s servers, the completion handler may be passed [`nil`](https://developer.apple.com/documentation/ObjectiveC/nil-227m0) credentials. In this case, cancel the request with an error that specifies [`ASExtensionError.Code.failed`](asextensionerror/code/failed.md) as the error code.
+To create the Sign in with Apple credential, the system prompts the user and communicates with Apple. If the user cancels the request, the system calls the completion handler with an error that specifies a [`ASExtensionError.Code.userCanceled`](asextensionerror/code/usercanceled.md) code. In that case, cancel the request using the same error code and no failure reason, and don’t show any additional user interface. If the device can’t communicate with Apple’s servers, the completion handler may be passed [`nil`](https://developer.apple.com/documentation/objectivec/nil-227m0) credentials. In this case, cancel the request with an error that specifies [`ASExtensionError.Code.failed`](asextensionerror/code/failed.md) as the error code.
 
 ##### Perform Upgrades with Additional Security Requirements
 

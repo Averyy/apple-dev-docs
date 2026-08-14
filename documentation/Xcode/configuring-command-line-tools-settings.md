@@ -14,7 +14,7 @@ You can do this by selecting a default Xcode version to use for command-line too
 
 ##### Check the Default Xcode App for Command Line Tools
 
-To identify the default Xcode app for command-line tools, choose Xcode > Settings, and click Locations in the sidebar. The Command Line Tools section of the Locations pane displays both the Xcode version number and the location of the file. ![A screenshot of the Locations pane in Xcode settings, showing the Archives, Compilation Cache (Automatic size), Command Line Tools, and Custom Paths sections.](https://docs-assets.developer.apple.com/published/bc68aec7bdaba2c786d88b04b05f4cc1/configuring-command-line-tools-settings-01%402x.png)
+To identify the default Xcode app for command-line tools, choose Xcode > Settings, and click Locations in the sidebar. The Command Line Tools section of the Locations pane displays both the Xcode version number and the location of the file. ![A screenshot of the Locations pane in Xcode settings, showing the Archives, Compilation Cache (Automatic size), Command Line Tools, and Custom Paths sections.](/images/com.apple.Xcode/configuring-command-line-tools-settings-01@2x.png)
 
 Alternatively, you can identify the Xcode version from the command line. Enter `xcode-select` with the `--print-path` option in Terminal. This command returns the path of the active developer directory for Xcode. For example, the following command prints the path of the developer directory containing a version of Xcode:
 
@@ -45,7 +45,7 @@ sudo `xcode-select --switch <path/to/>Xcode.app` to set one
 
 To change the default Xcode app for the command-line tools in Xcode, choose a different version of the app from the pop-up menu in Locations settings, under Command Line Tools. The pop-up menu contains the name and build of every Xcode app installed on your Mac.
 
-![A screenshot of Xcode settings with Locations selected, showing the Archives, Compilation Cache(Automatic size), Command Line Tools, and Custom Paths sections. Under Command Line tools,](https://docs-assets.developer.apple.com/published/3f5461a67c10c118ad784741be7abaa7/configuring-command-line-tools-settings-02%402x.png) Enter your administrator password when the system prompts you to confirm the change.
+![A screenshot of Xcode settings with Locations selected, showing the Archives, Compilation Cache(Automatic size), Command Line Tools, and Custom Paths sections. Under Command Line tools,](/images/com.apple.Xcode/configuring-command-line-tools-settings-02@2x.png) Enter your administrator password when the system prompts you to confirm the change.
 
 Alternatively, you can set the default Xcode app for command-line tools in Terminal, using the `xcode-select` command. Enter `xcode-select` with the `--switch` option in Terminal:
 

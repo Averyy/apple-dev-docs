@@ -41,7 +41,7 @@ struct FlavorView: View {
 }
 ```
 
-![A screenshot showing the title of a navigation bar configured using a text view.](https://docs-assets.developer.apple.com/published/e979a74714a538aace4065738249084b/SwiftUI-navigationBarTitle-Text%402x.png)
+![A screenshot showing the title of a navigation bar configured using a text view.](/images/com.apple.SwiftUI/SwiftUI-navigationBarTitle-Text@2x.png)
 
 ## Parameters
 

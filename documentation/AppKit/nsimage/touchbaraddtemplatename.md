@@ -19,7 +19,7 @@ class let touchBarAddTemplateName: String
 
 #### Discussion
 
-![Template image for add](https://docs-assets.developer.apple.com/published/1c5ea9f283f8090f007e5d8682809f55/media-2793453%402x.png)
+![Template image for add](/images/com.apple.appkit/media-2793453@2x.png)
 
 Touch Bar template images are exclusively for use in [`NSTouchBarItem`](nstouchbaritem.md) objects and not in onscreen windows.
 

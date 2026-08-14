@@ -42,7 +42,7 @@ func gammaAdjust(inputImage: CIImage) -> CIImage {
 }
 ```
 
-![Two versions of a photograph side by side. The photo on the left shows a small bunch of flowers photographed close up, in focus, with good light and no effects. In the photo on the right, a gamma adjust filter is applied, resulting in a darker image.](https://docs-assets.developer.apple.com/published/12547450e33cc19b3db92ed13e1bfc15/media-3545006%402x.png)
+![Two versions of a photograph side by side. The photo on the left shows a small bunch of flowers photographed close up, in focus, with good light and no effects. In the photo on the right, a gamma adjust filter is applied, resulting in a darker image.](/images/com.apple.coreimage/media-3545006@2x.png)
 
 ## See Also
 

@@ -47,7 +47,7 @@ func convolutionRGB9Vertical(inputImage: CIImage) -> CIImage {
 }
 ```
 
-![Two images arranged horizontally. The left image contains a photo of the Golden Gate Bridge with a clear sky as the background. The right image shows the result of applying a vertical convolution kernel that blurs the image. Fine detail in the vertical direction is blurred.](https://docs-assets.developer.apple.com/published/8d93f461611583024dbbd834d1dbe326/media-4407305%402x.png)
+![Two images arranged horizontally. The left image contains a photo of the Golden Gate Bridge with a clear sky as the background. The right image shows the result of applying a vertical convolution kernel that blurs the image. Fine detail in the vertical direction is blurred.](/images/com.apple.coreimage/media-4407305@2x.png)
 
 ## See Also
 

@@ -55,7 +55,7 @@ When you configure the collection view object, assign your data source to its [`
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 ### Conforming Types
 - [UICollectionViewController](uicollectionviewcontroller.md)
 - [UICollectionViewDiffableDataSource](uicollectionviewdiffabledatasource-9tqpa.md)

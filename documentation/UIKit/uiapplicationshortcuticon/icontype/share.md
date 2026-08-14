@@ -19,7 +19,7 @@ case share
 
 #### Discussion
 
-![None](https://docs-assets.developer.apple.com/published/ec9bbb29a05ee2c74c64ae489406dc86/media-2934515%402x.png)
+![None](/images/com.apple.uikit/media-2934515@2x.png)
 
 ## See Also
 

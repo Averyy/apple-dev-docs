@@ -136,7 +136,7 @@ If an [`AIModel`](aimodel.md) instance still uses a cache entry, Core AI defers 
 
 #### Share Specialized Models Across Apps
 
-If you have multiple apps or extensions that use the same model, create an app group using the [`App Groups Entitlement`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.security.application-groups). Then use [`init(appGroup:)`](aimodelcache/init(appgroup:).md) to target the group identifier and load a shared cache. This avoids duplicating specializations across apps:
+If you have multiple apps or extensions that use the same model, create an app group using the [`App Groups Entitlement`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.security.application-groups). Then use [`init(appGroup:)`](aimodelcache/init(appgroup:).md) to target the group identifier and load a shared cache. This avoids duplicating specializations across apps:
 
 ```swift
 // Get the app group cache.

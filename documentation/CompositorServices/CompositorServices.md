@@ -14,7 +14,7 @@ Compositor Services lets you draw directly to the device’s displays using Meta
 
 When you present an immersive space with [`CompositorLayer`](compositorlayer.md) content from your app, you receive a [`LayerRenderer`](layerrenderer.md) with the information you need to set up your Metal drawing environment. Use the layer to start your rendering loop and deliver successive frames of content. The layer provides the timing information you need to deliver frames at the refresh rate of the display. It also provides the Metal textures and other information that you need to draw content on the device displays.
 
-For more information about how to draw your app’s content using Metal, see [`Metal`](https://developer.apple.com/documentation/Metal).
+For more information about how to draw your app’s content using Metal, see [`Metal`](https://developer.apple.com/documentation/metal).
 
 ## Topics
 

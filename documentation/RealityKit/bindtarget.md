@@ -76,7 +76,7 @@ For nested entities, the [`BindTarget.path(_:)`](bindtarget/path(_:).md) case re
 ## Relationships
 
 ### Conforms To
-- [Equatable](../Swift/Equatable.md)
+- [Equatable](../swift/equatable.md)
 
 ## See Also
 

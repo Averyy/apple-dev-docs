@@ -8,17 +8,17 @@ Present navigation markers in the Chapters panel to help users quickly navigate 
 
 To help users navigate your content, the Chapters panel presents navigation markers that represent points of interest within the media’s timeline. Users can skip to desired content by selecting a marker with the Siri Remote.
 
-![An image of Apple TV Chapters panel that shows a horizontal list of chapter markers.](https://docs-assets.developer.apple.com/published/afe7e5a11839436e35a4de772857de6a/media-3905733%402x.png)
+![An image of Apple TV Chapters panel that shows a horizontal list of chapter markers.](/images/com.apple.avkit/media-3905733@2x.png)
 
 ##### Set the Navigation Markers
 
-In tvOS, a [`AVPlayerItem`](https://developer.apple.com/documentation/AVFoundation/AVPlayerItem) contains a [`navigationMarkerGroups`](https://developer.apple.com/documentation/AVFoundation/AVPlayerItem/navigationMarkerGroups) property you use to supply chapter information. Set this property to an array of [`AVNavigationMarkersGroup`](avnavigationmarkersgroup.md) objects to define the navigation markers for the current media.
+In tvOS, a [`AVPlayerItem`](https://developer.apple.com/documentation/avfoundation/avplayeritem) contains a [`navigationMarkerGroups`](https://developer.apple.com/documentation/avfoundation/avplayeritem/navigationmarkergroups) property you use to supply chapter information. Set this property to an array of [`AVNavigationMarkersGroup`](avnavigationmarkersgroup.md) objects to define the navigation markers for the current media.
 
-> **Note**:  Although the player item defines the [`navigationMarkerGroups`](https://developer.apple.com/documentation/AVFoundation/AVPlayerItem/navigationMarkerGroups) property as an array, the system only supports the first group in the array.
+> **Note**:  Although the player item defines the [`navigationMarkerGroups`](https://developer.apple.com/documentation/avfoundation/avplayeritem/navigationmarkergroups) property as an array, the system only supports the first group in the array.
 
-An [`AVNavigationMarkersGroup`](avnavigationmarkersgroup.md) contains one or more [`AVTimedMetadataGroup`](https://developer.apple.com/documentation/AVFoundation/AVTimedMetadataGroup) objects, each representing an individual marker presented in the player’s Info panel. Each [`AVTimedMetadataGroup`](https://developer.apple.com/documentation/AVFoundation/AVTimedMetadataGroup) stores a time range in the asset’s timeline to which this marker applies, an array of [`AVMetadataItem`](https://developer.apple.com/documentation/AVFoundation/AVMetadataItem) objects to define the marker’s title, and, optionally, its thumbnail artwork.
+An [`AVNavigationMarkersGroup`](avnavigationmarkersgroup.md) contains one or more [`AVTimedMetadataGroup`](https://developer.apple.com/documentation/avfoundation/avtimedmetadatagroup) objects, each representing an individual marker presented in the player’s Info panel. Each [`AVTimedMetadataGroup`](https://developer.apple.com/documentation/avfoundation/avtimedmetadatagroup) stores a time range in the asset’s timeline to which this marker applies, an array of [`AVMetadataItem`](https://developer.apple.com/documentation/avfoundation/avmetadataitem) objects to define the marker’s title, and, optionally, its thumbnail artwork.
 
-![A top-down component diagram showing a player item containing navigation markers groups at the top. The middle component shows a navigation markers group containing timed metadata groups. The bottom component shows a timed metadata group containing multiple metadata items.](https://docs-assets.developer.apple.com/published/b848aa4715a84b0d69f4d9d5879de6fe/media-3905734%402x.png)
+![A top-down component diagram showing a player item containing navigation markers groups at the top. The middle component shows a navigation markers group containing timed metadata groups. The bottom component shows a timed metadata group containing multiple metadata items.](/images/com.apple.avkit/media-3905734@2x.png)
 
 The following code shows how you can present a chapter list for your media:
 

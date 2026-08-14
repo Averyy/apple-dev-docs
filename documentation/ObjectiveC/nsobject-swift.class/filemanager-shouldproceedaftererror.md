@@ -25,12 +25,12 @@ func fileManager(_ fm: FileManager, shouldProceedAfterError errorInfo: [AnyHasha
 
 #### Discussion
 
-An `NSFileManager` object, `manager`, sends this message for each error it encounters when copying, moving, removing, or linking files or directories. The return value is passed back to the invoker of [`copyPath:toPath:handler:`](https://developer.apple.com/documentation/Foundation/NSFileManager/copyPath:toPath:handler:), [`movePath:toPath:handler:`](https://developer.apple.com/documentation/Foundation/NSFileManager/movePath:toPath:handler:), [`removeFileAtPath:handler:`](https://developer.apple.com/documentation/Foundation/NSFileManager/removeFileAtPath:handler:), or [`linkPath:toPath:handler:`](https://developer.apple.com/documentation/Foundation/NSFileManager/linkPath:toPath:handler:). If an error occurs and your handler has not implemented this method, the invoking method automatically returns [`NO`](no.md).
+An `NSFileManager` object, `manager`, sends this message for each error it encounters when copying, moving, removing, or linking files or directories. The return value is passed back to the invoker of [`copyPath:toPath:handler:`](https://developer.apple.com/documentation/foundation/nsfilemanager/copypath:topath:handler:), [`movePath:toPath:handler:`](https://developer.apple.com/documentation/foundation/nsfilemanager/movepath:topath:handler:), [`removeFileAtPath:handler:`](https://developer.apple.com/documentation/foundation/nsfilemanager/removefileatpath:handler:), or [`linkPath:toPath:handler:`](https://developer.apple.com/documentation/foundation/nsfilemanager/linkpath:topath:handler:). If an error occurs and your handler has not implemented this method, the invoking method automatically returns [`NO`](no.md).
 
 ## Parameters
 
 - `fm`: The file manager that sent this message.
-- `errorInfo`: A dictionary that contains two or three pieces of information (all [`NSString`](https://developer.apple.com/documentation/Foundation/NSString) objects) related to the error: | Key | Value |
+- `errorInfo`: A dictionary that contains two or three pieces of information (all [`NSString`](https://developer.apple.com/documentation/foundation/nsstring) objects) related to the error: | Key | Value |
 | --- | --- |
 | `@"Path"` | The path related to the error (usually the source path) |
 | `@"Error"` | A description of the error |

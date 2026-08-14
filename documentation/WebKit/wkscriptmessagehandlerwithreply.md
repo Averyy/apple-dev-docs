@@ -38,7 +38,7 @@ To call your message handler from JavaScript, send a message to `window.webkit.m
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

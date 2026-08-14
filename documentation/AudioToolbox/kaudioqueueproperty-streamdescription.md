@@ -21,7 +21,7 @@ var kAudioQueueProperty_StreamDescription: AudioQueuePropertyID { get }
 
 #### Discussion
 
-Value is a read-only [`AudioStreamBasicDescription`](https://developer.apple.com/documentation/CoreAudioTypes/AudioStreamBasicDescription) structure, indicating an audio queue’s data format. Primarily useful for obtaining a complete ASBD when recording, in cases where you initially specify a sample rate of `0`.
+Value is a read-only [`AudioStreamBasicDescription`](https://developer.apple.com/documentation/coreaudiotypes/audiostreambasicdescription) structure, indicating an audio queue’s data format. Primarily useful for obtaining a complete ASBD when recording, in cases where you initially specify a sample rate of `0`.
 
 ## See Also
 

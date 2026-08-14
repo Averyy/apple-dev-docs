@@ -16,7 +16,7 @@ typedef struct IOUSBDeviceCapabilityBillboardAltConfig IOUSBDeviceCapabilityBill
 
 #### Discussion
 
-See , 1.2.1, 3.1.6.2.
+See *Universal Serial Bus Device Class Definition for Billboard Devices*, 1.2.1, 3.1.6.2.
 
 ## Topics
 

@@ -16,7 +16,7 @@ The system limits the number of installed fonts, and it derives that limit from 
 
 To register your app as a provider or consumer of systemwide custom fonts, follow the steps in [`Add a capability`](adding-capabilities-to-your-app#Add-a-capability.md) to add the Fonts capability to your app’s target.
 
-![A screenshot of Xcode’s Capabilities library with a list of available capabilities on the left and an information pane on the right. The list shows a range of capabilities from Fonts to In-App Purchase, and the Fonts capability is in a selected state. The text on the information pane explains that the Fonts capability allows your app, with the user’s permission, to install and make use of custom fonts.](https://docs-assets.developer.apple.com/published/e2e14e643f2606c5d2ceb0f8501dc351/fonts%402x.png)
+![A screenshot of Xcode’s Capabilities library with a list of available capabilities on the left and an information pane on the right. The list shows a range of capabilities from Fonts to In-App Purchase, and the Fonts capability is in a selected state. The text on the information pane explains that the Fonts capability allows your app, with the user’s permission, to install and make use of custom fonts.](/images/com.apple.Xcode/fonts@2x.png)
 
 > **Note**: The Fonts capability is only available to use with iOS apps that target iOS 13 and later.
 
@@ -30,7 +30,7 @@ Before your iOS app can install one or more custom fonts or use fonts that other
 4. Find the Fonts capability.
 5. Select the required privileges using the corresponding checkboxes.
 
-![A screenshot of the Fonts capability after you add it to an iOS target. The Install Fonts and Use Installed Fonts privileges are in an enabled state.](https://docs-assets.developer.apple.com/published/7537b87aaffa33681a478a748a9bf357/fonts-consumer-provider%402x.png)
+![A screenshot of the Fonts capability after you add it to an iOS target. The Install Fonts and Use Installed Fonts privileges are in an enabled state.](/images/com.apple.Xcode/fonts-consumer-provider@2x.png)
 
 > 💡 **Tip**: Fonts privileges aren’t exclusive; your iOS app can provide fonts for use in other apps and consume fonts that other apps install systemwide.
 
@@ -38,13 +38,13 @@ Xcode adds the `com.apple.developer.user-fonts` array to your app’s entitlemen
 
 After enabling the required privileges, update your app to perform one or more of the following:
 
-- Register fonts systemwide using one of these registration methods: - [`CTFontManagerRegisterFontURLs(_:_:_:_:)`](https://developer.apple.com/documentation/CoreText/CTFontManagerRegisterFontURLs(_:_:_:_:))
-- [`CTFontManagerRegisterFontDescriptors(_:_:_:_:)`](https://developer.apple.com/documentation/CoreText/CTFontManagerRegisterFontDescriptors(_:_:_:_:))
-- [`CTFontManagerRegisterFontsWithAssetNames(_:_:_:_:_:)`](https://developer.apple.com/documentation/CoreText/CTFontManagerRegisterFontsWithAssetNames(_:_:_:_:_:))
-- Remove installed fonts using one of these unregister methods: - [`CTFontManagerUnregisterFontURLs(_:_:_:)`](https://developer.apple.com/documentation/CoreText/CTFontManagerUnregisterFontURLs(_:_:_:))
-- [`CTFontManagerUnregisterFontDescriptors(_:_:_:)`](https://developer.apple.com/documentation/CoreText/CTFontManagerUnregisterFontDescriptors(_:_:_:))
-- Query all installed fonts using [`CTFontManagerRequestFonts(_:_:)`](https://developer.apple.com/documentation/CoreText/CTFontManagerRequestFonts(_:_:))
-- Listen for font change notifications using [`kCTFontManagerRegisteredFontsChangedNotification`](https://developer.apple.com/documentation/CoreText/kCTFontManagerRegisteredFontsChangedNotification)
+- Register fonts systemwide using one of these registration methods: - [`CTFontManagerRegisterFontURLs(_:_:_:_:)`](https://developer.apple.com/documentation/coretext/ctfontmanagerregisterfonturls(_:_:_:_:))
+- [`CTFontManagerRegisterFontDescriptors(_:_:_:_:)`](https://developer.apple.com/documentation/coretext/ctfontmanagerregisterfontdescriptors(_:_:_:_:))
+- [`CTFontManagerRegisterFontsWithAssetNames(_:_:_:_:_:)`](https://developer.apple.com/documentation/coretext/ctfontmanagerregisterfontswithassetnames(_:_:_:_:_:))
+- Remove installed fonts using one of these unregister methods: - [`CTFontManagerUnregisterFontURLs(_:_:_:)`](https://developer.apple.com/documentation/coretext/ctfontmanagerunregisterfonturls(_:_:_:))
+- [`CTFontManagerUnregisterFontDescriptors(_:_:_:)`](https://developer.apple.com/documentation/coretext/ctfontmanagerunregisterfontdescriptors(_:_:_:))
+- Query all installed fonts using [`CTFontManagerRequestFonts(_:_:)`](https://developer.apple.com/documentation/coretext/ctfontmanagerrequestfonts(_:_:))
+- Listen for font change notifications using [`kCTFontManagerRegisteredFontsChangedNotification`](https://developer.apple.com/documentation/coretext/kctfontmanagerregisteredfontschangednotification)
 
 For more information, see the WWDC session video [`Font Management and Text Scaling`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2019/227).
 

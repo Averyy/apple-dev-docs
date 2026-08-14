@@ -20,7 +20,7 @@ Convert a Core ML model by creating a Metal machine learning (ML) package from i
 
 Metal 4 introduces a new encoder type, [`MTL4MachineLearningCommandEncoder`](mtl4machinelearningcommandencoder.md), which encodes inference commands that run a Core ML model in a machine learning pass that runs alongside your other Metal tasks, such as render and compute passes. To encode machine learning inference commands for the GPU to run, you need to create a machine learning pipeline state, provide an [`MTLHeap`](mtlheap.md) for temporary scratch memory, and [`MTLTensor`](mtltensor.md) instances for the model’s inputs and output. You create a machine learning pipeline-state from the library that Xcode creates from a Metal ML package, which you can then apply to a machine learning encoder.
 
-> **Note**:  Machine learning encoders run Core ML models but they can’t build new networks or modify layers and inputs of existing ones; for those tasks, see [`Core ML`](https://developer.apple.com/documentation/CoreML) and[`Metal Performance Shaders Graph`](https://developer.apple.com/documentation/MetalPerformanceShadersGraph)
+> **Note**:  Machine learning encoders run Core ML models but they can’t build new networks or modify layers and inputs of existing ones; for those tasks, see [`Core ML`](https://developer.apple.com/documentation/coreml) and[`Metal Performance Shaders Graph`](https://developer.apple.com/documentation/metalperformanceshadersgraph)
 
 The system automatically chooses an inference engine, such as a device’s GPU or Apple Neural Engine (ANE) for each machine learning model. The GPU can run additional, independent render or compute work with the GPU when the system chooses to run a model on the ANE.
 

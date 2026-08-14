@@ -23,7 +23,7 @@ case checkout
 
 This button looks like:
 
-![A button with the text “Check out with” and the Apple Pay logo.](https://docs-assets.developer.apple.com/published/e84ea1731cf2a59d10aa8b42dc107277/media-3026883%402x.png)
+![A button with the text “Check out with” and the Apple Pay logo.](/images/com.apple.passkit/media-3026883@2x.png)
 
 For design guidance, see [`Human Interface Guidelines > Apple Pay > Buttons and Marks`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/apple-pay/overview/buttons-and-marks/).
 

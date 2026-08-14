@@ -24,7 +24,7 @@ func addObserver(_ observer: NSObject, toObjectsAt indexes: IndexSet, forKeyPath
 
 The `options` determine what is included in the notifications, and the `context` is passed in the notifications.
 
-This is not merely a convenience method; invoking this method is potentially much faster than repeatedly invoking [`addObserver(_:forKeyPath:options:context:)`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class/addObserver(_:forKeyPath:options:context:)).
+This is not merely a convenience method; invoking this method is potentially much faster than repeatedly invoking [`addObserver(_:forKeyPath:options:context:)`](https://developer.apple.com/documentation/objectivec/nsobject-swift.class/addobserver(_:forkeypath:options:context:)).
 
 ## Parameters
 

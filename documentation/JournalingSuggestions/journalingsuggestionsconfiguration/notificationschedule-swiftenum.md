@@ -23,7 +23,7 @@ An [`JournalingSuggestionsConfiguration.NotificationSchedule.off`](journalingsug
 - Journaling Suggestions aren’t enabled in Settings.
 - Your app isn’t a preferred journal app in Settings.
 - Journaling Suggestions are on but notifications are off in Settings.
-- Your app has incomplete notification setup (for example, it’s missing the [`JSNotificationURLFormat`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/JSNotificationURLFormat) target property).
+- Your app has incomplete notification setup (for example, it’s missing the [`JSNotificationURLFormat`](https://developer.apple.com/documentation/bundleresources/information-property-list/jsnotificationurlformat) target property).
 
 For more information on notifications, see [`Receiving journaling suggestions system notifications`](receiving-journaling-suggestions-from-system-notifications.md).
 
@@ -40,8 +40,8 @@ For more information on notifications, see [`Receiving journaling suggestions sy
 ## Relationships
 
 ### Conforms To
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
 
 ## See Also
 

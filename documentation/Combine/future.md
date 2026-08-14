@@ -26,7 +26,7 @@ final class Future<Output, Failure> where Failure : Error
 
 #### Overview
 
-Use a future to perform some work and then asynchronously publish a single element. You initialize the future with a closure that takes a [`Future.Promise`](future/promise.md); the closure calls the promise with a [`Result`](https://developer.apple.com/documentation/Swift/Result) that indicates either success or failure. In the success case, the future’s downstream subscriber receives the element prior to the publishing stream finishing normally. If the result is an error, publishing terminates with that error.
+Use a future to perform some work and then asynchronously publish a single element. You initialize the future with a closure that takes a [`Future.Promise`](future/promise.md); the closure calls the promise with a [`Result`](https://developer.apple.com/documentation/swift/result) that indicates either success or failure. In the success case, the future’s downstream subscriber receives the element prior to the publishing stream finishing normally. If the result is an error, publishing terminates with that error.
 
 The following example shows a method that uses a future to asynchronously publish a random number after a brief delay:
 
@@ -61,7 +61,7 @@ print("Got random number \(number).")
 
 The `async`-`await` syntax in Swift can also replace the use of a future entirely, for the case where you want to perform some operation after an asynchronous task completes.
 
-You do this with the function [`withCheckedContinuation(isolation:function:_:)`](https://developer.apple.com/documentation/Swift/withCheckedContinuation(isolation:function:_:)) and its throwing equivalent, [`withCheckedThrowingContinuation(isolation:function:_:)`](https://developer.apple.com/documentation/Swift/withCheckedThrowingContinuation(isolation:function:_:)). The following example performs the same asynchronous random number generation as the `Future` example above, but as an `async` method:
+You do this with the function [`withCheckedContinuation(isolation:function:_:)`](https://developer.apple.com/documentation/swift/withcheckedcontinuation(isolation:function:_:)) and its throwing equivalent, [`withCheckedThrowingContinuation(isolation:function:_:)`](https://developer.apple.com/documentation/swift/withcheckedthrowingcontinuation(isolation:function:_:)). The following example performs the same asynchronous random number generation as the `Future` example above, but as an `async` method:
 
 ```swift
 func generateAsyncRandomNumberFromContinuation() async -> Int {
@@ -80,7 +80,7 @@ The call point for this method doesn’t use a closure like the future’s sink 
 let asyncRandom = await generateAsyncRandomNumberFromContinuation()
 ```
 
-For more information on continuations, see the [`Concurrency`](https://developer.apple.com/documentation/Swift/concurrency) topic in the Swift standard library.
+For more information on continuations, see the [`Concurrency`](https://developer.apple.com/documentation/swift/concurrency) topic in the Swift standard library.
 
 ## Topics
 

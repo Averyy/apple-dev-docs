@@ -22,7 +22,7 @@ Deploying a device management service allows administrators to securely and remo
 
 A device management service uses the Mobile Device Management (MDM) protocol to establish a communication channel with devices and declarative configurations, as well as configuration profiles to deploy settings.
 
-Device management works with Managed App Distribution and Managed App Configuration to provide a seamless app download and launch experience. For more information, see [`ManagedAppDistribution`](https://developer.apple.com/documentation/ManagedAppDistribution) and [`ManagedApp`](https://developer.apple.com/documentation/ManagedApp).
+Device management works with Managed App Distribution and Managed App Configuration to provide a seamless app download and launch experience. For more information, see [`ManagedAppDistribution`](https://developer.apple.com/documentation/managedappdistribution) and [`ManagedApp`](https://developer.apple.com/documentation/managedapp).
 
 ## Topics
 
@@ -65,8 +65,6 @@ Device management works with Managed App Distribution and Managed App Configurat
 - [Apple School Manager and Apple Business APIs](../apple-school-and-business-manager-api/apple-school-and-business-manager-api.md)
   Automate device management actions and access data about devices that enroll using Automated Device Enrollment with the Apple School Manager and Apple Business APIs.
 ### Dictionaries
-- [object ResponseErrorCode](responseerrorcode.md)
-  An error code.
 - [object StorefrontsResponse](storefrontsresponse.md)
   The response to a storefront request.
 

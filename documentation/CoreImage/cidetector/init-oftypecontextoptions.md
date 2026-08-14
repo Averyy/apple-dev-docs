@@ -25,7 +25,7 @@ A configured detector.
 
 #### Discussion
 
-A [`CIDetector`](cidetector.md) object can potentially create and hold a significant amount of resources. Where possible, reuse the same [`CIDetector`](cidetector.md) instance. Also, when processing images with a detector object, your application performs better if the [`CIContext`](cicontext.md) used to initialize the detector is the same context used to process the [`ciImage`](https://developer.apple.com/documentation/UIKit/UIImage/ciImage) objects.
+A [`CIDetector`](cidetector.md) object can potentially create and hold a significant amount of resources. Where possible, reuse the same [`CIDetector`](cidetector.md) instance. Also, when processing images with a detector object, your application performs better if the [`CIContext`](cicontext.md) used to initialize the detector is the same context used to process the [`ciImage`](https://developer.apple.com/documentation/uikit/uiimage/ciimage) objects.
 
 ## Parameters
 

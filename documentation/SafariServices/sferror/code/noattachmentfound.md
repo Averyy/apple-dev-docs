@@ -3,7 +3,7 @@
 **Framework**: Safari Services  
 **Kind**: case
 
-The Content Blocker extension returned an [`NSExtensionItem`](https://developer.apple.com/documentation/Foundation/NSExtensionItem) that did not include an attachment.
+The Content Blocker extension returned an [`NSExtensionItem`](https://developer.apple.com/documentation/foundation/nsextensionitem) that did not include an attachment.
 
 **Availability**:
 - iOS 10.0+

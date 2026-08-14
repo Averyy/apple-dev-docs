@@ -14,7 +14,7 @@ Support Apple Pay on your website with JavaScript-based APIs.
 Safari supports two JavaScript APIs that let you accept Apple Pay payments from customers on your website:
 
 - [`Payment Request API`](payment-request-api.md), a [`W3C candidate API`](https://developer.apple.comhttps://www.w3.org/TR/payment-request/)
-- [`Apple Pay JS API`](apple-pay-js-api.md), analogous to the [`PassKit (Apple Pay and Wallet)`](https://developer.apple.com/documentation/PassKit) framework for Apple Pay in apps
+- [`Apple Pay JS API`](apple-pay-js-api.md), analogous to the [`PassKit (Apple Pay and Wallet)`](https://developer.apple.com/documentation/passkit) framework for Apple Pay in apps
 
 > 💡 **Tip**:  You can try out Apple Pay transactions on the demo page. See [`Apple Pay on the Web Interactive Demo`](https://developer.apple.comhttps://applepaydemo.apple.com).
 
@@ -28,14 +28,14 @@ The Apple Pay APIs are available in Safari on the following platforms:
 
 |  | **Worldwide (except China)** | **China** |
 | --- | --- | --- |
-| **Apple Pay JS** | iOS 10 and later ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) macOS 10.12 and later | iOS 11.2 and later ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) (Not available in macOS) |
-| **Payment Request API** | iOS 11.3 and later ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) macOS 10.12.6 and later, in Safari 11.1 and later | iOS 11.3 and later ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) (Not available in macOS) |
+| **Apple Pay JS** | iOS 10 and later ![None](/images/com.apple.applepayontheweb/spacer.png) macOS 10.12 and later | iOS 11.2 and later ![None](/images/com.apple.applepayontheweb/spacer.png) (Not available in macOS) |
+| **Payment Request API** | iOS 11.3 and later ![None](/images/com.apple.applepayontheweb/spacer.png) macOS 10.12.6 and later, in Safari 11.1 and later | iOS 11.3 and later ![None](/images/com.apple.applepayontheweb/spacer.png) (Not available in macOS) |
 
-In iOS, Safari and [`SFSafariViewController`](https://developer.apple.com/documentation/SafariServices/SFSafariViewController) objects support Apple Pay.
+In iOS, Safari and [`SFSafariViewController`](https://developer.apple.com/documentation/safariservices/sfsafariviewcontroller) objects support Apple Pay.
 
 See [`Checking for Apple Pay availability`](checking-for-apple-pay-availability.md) to ensure your implementation only displays the Apple Pay button on supported devices.
 
-> **Note**:  Regulations in some regions may require specific configurations in your implementation. For more information, see [`Complying with regional regulations`](https://developer.apple.com/documentation/PassKit/complying-with-regional-regulations).
+> **Note**:  Regulations in some regions may require specific configurations in your implementation. For more information, see [`Complying with regional regulations`](https://developer.apple.com/documentation/passkit/complying-with-regional-regulations).
 
 ##### Apple Pay Requirements
 

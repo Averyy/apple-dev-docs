@@ -8,9 +8,9 @@ Update your just-in-time (JIT) compiler to work with the Hardened Runtime capabi
 
 A just-in-time (JIT) compiler translates byte-code or intermediate script code into machine-language instructions, and makes those instructions available for execution. An app initiates JIT compilation as needed to support relevant tasks, and the compilation process takes place within the app’s process space. For example, a web browser uses JIT compilation to transform a web page’s script code into runnable code when the user interacts with the appropriate page elements.
 
-![An illustration of an app compiling byte code into native instructions.](https://docs-assets.developer.apple.com/published/73a6da4269f6f95707cfaeaa75ec269c/porting-just-in-time-compilers-to-apple-silicon-1%402x.png)
+![An illustration of an app compiling byte code into native instructions.](/images/com.apple.Apple-Silicon/porting-just-in-time-compilers-to-apple-silicon-1@2x.png)
 
-Because JIT compilation uses some techniques that the Hardened Runtime capability specifically disallows, you need to update your app if it supports that capability. Even if your app doesn’t adopt the Hardened Runtime, you need to still make changes to support Apple silicon. For more information about configuring the Hardened Runtime capability, see [`Hardened Runtime`](https://developer.apple.com/documentation/Security/hardened-runtime).
+Because JIT compilation uses some techniques that the Hardened Runtime capability specifically disallows, you need to update your app if it supports that capability. Even if your app doesn’t adopt the Hardened Runtime, you need to still make changes to support Apple silicon. For more information about configuring the Hardened Runtime capability, see [`Hardened Runtime`](https://developer.apple.com/documentation/security/hardened-runtime).
 
 ##### Enable the Jit Entitlements for the Hardened Runtime
 
@@ -18,7 +18,7 @@ The Hardened Runtime capability prohibits the execution of code in a memory page
 
 To allow JIT compilation in your app, navigate to the Hardened Runtime capability in Xcode and enable the Allow Execution of JIT-compiled Code option for your app. When you enable this option, Xcode adds the `com.apple.security.cs.allow-jit` entitlement to your app. When this entitlement is present, the system allows your app to call `mmap` with the `MAP_JIT` flag. If you don’t have this entitlement, calls using that flag return an error.
 
-When your app has the Hardened Runtime capability and the `com.apple.security.cs.allow-jit` entitlement, it can only create one memory region with the `MAP_JIT` flag set. The `com.apple.security.cs.allow-jit` entitlement is required only when an app adopts the Hardened Runtime capability. If you don’t adopt this capability, you don’t need the entitlement to use the `MAP_JIT` flag. For more information about the entitlement, see [`Allow execution of JIT-compiled code entitlement`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.security.cs.allow-jit).
+When your app has the Hardened Runtime capability and the `com.apple.security.cs.allow-jit` entitlement, it can only create one memory region with the `MAP_JIT` flag set. The `com.apple.security.cs.allow-jit` entitlement is required only when an app adopts the Hardened Runtime capability. If you don’t adopt this capability, you don’t need the entitlement to use the `MAP_JIT` flag. For more information about the entitlement, see [`Allow execution of JIT-compiled code entitlement`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.security.cs.allow-jit).
 
 Additionally, add the `com.apple.security.cs.jit-write-allowlist` entitlement with the value `true`, to enable JIT callback allow lists. Adding this entitlement allows your to call `pthread_jit_write_with_callback_np()`, which you use to write to your app’s JIT region.
 

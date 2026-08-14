@@ -8,7 +8,7 @@ Creates a page that allows users to navigate between full-screen images.
 
 Use the `oneupTemplate` element to display a single, full-screen image. Users can navigate left or right on the remote to select another image. Activating an up action on the remote will shrink the image and allow a description to be displayed. The following figure shows the basic layout for a `oneupTemplate` page. The default theme for a oneup template is `dark`.
 
-![Layout diagram showing a large image area, and a title area followed by a row area at the bottom.](https://docs-assets.developer.apple.com/published/85fb320ae5f70c9902bd68c48e4fe5fc/oneuptemplate-1%402x.png)
+![Layout diagram showing a large image area, and a title area followed by a row area at the bottom.](/images/com.apple.TVML/oneuptemplate-1@2x.png)
 
 ##### Main Elements
 
@@ -78,7 +78,7 @@ The following listing shows the TVML for a `oneupTemplate` example. The example 
 
 The following figure shows the output for the above example:
 
-![Screenshot showing a stylized landscape. A title is directly below the image.](https://docs-assets.developer.apple.com/published/ffe7264ef609c4e3b073daa62a4c0c07/oneuptemplate-2%402x.png)
+![Screenshot showing a stylized landscape. A title is directly below the image.](/images/com.apple.TVML/oneuptemplate-2@2x.png)
 
 ## Topics
 

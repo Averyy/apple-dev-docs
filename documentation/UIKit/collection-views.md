@@ -8,7 +8,7 @@ Display nested views using a configurable and highly customizable layout.
 
 A collection view manages an ordered set of content, such as the grid of photos in the Photos app, and presents it visually.
 
-![A screenshot of the Photos app showing photos organized in the Months view.](https://docs-assets.developer.apple.com/published/cb3507c54de8fcaa8b77daa7c94110f6/collection-views-1%402x.png)
+![A screenshot of the Photos app showing photos organized in the Months view.](/images/com.apple.uikit/collection-views-1@2x.png)
 
 Collection views are a collaboration between many different objects, including:
 
@@ -85,7 +85,7 @@ Collection views are a collaboration between many different objects, including:
 
 ## See Also
 
-- [Autosizing views for localization in iOS](../Xcode/autosizing-views-for-localization-in-ios.md)
+- [Autosizing views for localization in iOS](../xcode/autosizing-views-for-localization-in-ios.md)
   Add auto layout constraints to your app to achieve localizable views.
 - [Table views](table-views.md)
   Display data in a single column of customizable rows.

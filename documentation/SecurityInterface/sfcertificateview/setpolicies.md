@@ -20,7 +20,7 @@ Applications typically display a certificate view in the context of a specific u
 
 ## Parameters
 
-- `policies`: The policy or policies to use. You can pass either a `SecPolicyRef` object or an NSArray (containing one or more objects of type `SecPolicyRef` ) in this parameter. If `policies` is set to nil, the Apple X.509 Basic Policy is used. See [`Certificate, Key, and Trust Services`](https://developer.apple.com/documentation/Security/certificate-key-and-trust-services) for a list of policies and object identifiers provided by the AppleX509TP module.
+- `policies`: The policy or policies to use. You can pass either a `SecPolicyRef` object or an NSArray (containing one or more objects of type `SecPolicyRef` ) in this parameter. If `policies` is set to nil, the Apple X.509 Basic Policy is used. See [`Certificate, Key, and Trust Services`](https://developer.apple.com/documentation/security/certificate-key-and-trust-services) for a list of policies and object identifiers provided by the AppleX509TP module.
 
 ## See Also
 

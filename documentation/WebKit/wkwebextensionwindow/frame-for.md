@@ -20,7 +20,7 @@ optional func frame(for context: WKWebExtensionContext) -> CGRect
 
 #### Discussion
 
-Defaults to [`CGRectNull`](https://developer.apple.com/documentation/CoreGraphics/CGRectNull) if not implemented.
+Defaults to [`CGRectNull`](https://developer.apple.com/documentation/coregraphics/cgrectnull) if not implemented.
 
 ## Parameters
 

@@ -61,7 +61,7 @@ A typical payment request is for a one-time payment. To support different types 
 
 > **Note**:  You can set only one of these optional payment request type properties on a payment request object.
 
-For recurring payments and automatic reload payments, you can optionally set up merchant token life-cycle notifications for the request. For more information, see [`Apple Pay Merchant Token Management API`](https://developer.apple.com/documentation/MerchantTokenNotificationServices).
+For recurring payments and automatic reload payments, you can optionally set up merchant token life-cycle notifications for the request. For more information, see [`Apple Pay Merchant Token Management API`](https://developer.apple.com/documentation/merchanttokennotificationservices).
 
 ## Topics
 

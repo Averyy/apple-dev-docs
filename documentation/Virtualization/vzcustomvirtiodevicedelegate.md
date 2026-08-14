@@ -45,7 +45,7 @@ Virtqueue (Virtio queue) notifications trigger device operations, then the frame
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

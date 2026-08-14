@@ -21,7 +21,7 @@ static let boostShadowAmount: CIRAWFilterOption
 
 #### Discussion
 
-The associated value must be an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) object that specifies floating-point value. The value has no effect if the image used for initialization is not RAW.
+The associated value must be an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) object that specifies floating-point value. The value has no effect if the image used for initialization is not RAW.
 
 ## See Also
 

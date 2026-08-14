@@ -89,7 +89,7 @@ Use the following ephemeral key, response header, and plain text to generate a s
 
 Diffie–Hellman key exchange is a method to securely exchange cryptographic keys over a public channel.
 
-Use the device encryption public key and the ephemeral private key to perform Diffie-Hellman key exchange ([`ecdhKeyExchangeStandard`](https://developer.apple.com/documentation/Security/SecKeyAlgorithm/ecdhKeyExchangeStandard)).
+Use the device encryption public key and the ephemeral private key to perform Diffie-Hellman key exchange ([`ecdhKeyExchangeStandard`](https://developer.apple.com/documentation/security/seckeyalgorithm/ecdhkeyexchangestandard)).
 
 - **Exchanged key (output)**: `L87ywmD3aLpVlXsqAvq7udyr4s6M0y9MjQCytE71epA`
 
@@ -126,7 +126,7 @@ ewogICJlbmMiIDogIkEyNTZHQ00iLAogICJraWQiIDogInBTY251engzeDg1RXlwNkN0SzlVUUFEeE9z
 
 ##### Decrypt the Jwe
 
-The system calculates the key differently when decrypting the JWE. For decryption, the system performs Diffie-Hellman key exchange ([`ecdhKeyExchangeStandard`](https://developer.apple.com/documentation/Security/SecKeyAlgorithm/ecdhKeyExchangeStandard)) using the device encryption private key and the ephemeral public key from the JWE header. The other inputs for ConcatKDF are the same and the system uses the calculated key for AESGCM decryption using the fields from the encrypted JWE.
+The system calculates the key differently when decrypting the JWE. For decryption, the system performs Diffie-Hellman key exchange ([`ecdhKeyExchangeStandard`](https://developer.apple.com/documentation/security/seckeyalgorithm/ecdhkeyexchangestandard)) using the device encryption private key and the ephemeral public key from the JWE header. The other inputs for ConcatKDF are the same and the system uses the calculated key for AESGCM decryption using the fields from the encrypted JWE.
 
 ## See Also
 

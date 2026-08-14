@@ -25,7 +25,7 @@ HTTP requests have these common components: an HTTP request method (GET, POST, P
 
 Use the [`init(forServiceType:requestMethod:url:parameters:)`](slrequest/init(forservicetype:requestmethod:url:parameters:)-2cnf1.md) method to initialize a newly created `SLRequest` object passing the required property values. Use the [`addMultipartData(_:withName:type:)`](slrequest/addmultipartdata(_:withname:type:).md) to optionally specify a multipart POST body. After you create your request, use the [`perform(handler:)`](slrequest/perform(handler:).md) method to send the request, specifying the handler to call when the request is done.
 
-If you already have a sending mechanism, you can use the [`preparedURLRequest()`](slrequest/preparedurlrequest().md) method to create the request that you send using an [`NSURLConnection`](https://developer.apple.com/documentation/Foundation/NSURLConnection) object. If the request requires user authorization, set the [`account`](slrequest/account.md) property to an [`ACAccount`](https://developer.apple.com/documentation/Accounts/ACAccount) object.
+If you already have a sending mechanism, you can use the [`preparedURLRequest()`](slrequest/preparedurlrequest().md) method to create the request that you send using an [`NSURLConnection`](https://developer.apple.com/documentation/foundation/nsurlconnection) object. If the request requires user authorization, set the [`account`](slrequest/account.md) property to an [`ACAccount`](https://developer.apple.com/documentation/accounts/acaccount) object.
 
 Table 1  Social Services Individual Documentation Sites
 
@@ -57,7 +57,7 @@ Table 1  Social Services Individual Documentation Sites
   Account information used to authenticate the request.
 ### Getting the Request Details
 - [func preparedURLRequest() -> URLRequest!](slrequest/preparedurlrequest.md)
-  Returns an authorized URL request that can be sent using an [`NSURLConnection`](https://developer.apple.com/documentation/Foundation/NSURLConnection) object.
+  Returns an authorized URL request that can be sent using an [`NSURLConnection`](https://developer.apple.com/documentation/foundation/nsurlconnection) object.
 - [var requestMethod: SLRequestMethod](slrequest/requestmethod.md)
   The method to use for this request.
 - [enum SLRequestMethod](slrequestmethod.md)
@@ -77,14 +77,14 @@ Table 1  Social Services Individual Documentation Sites
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 
 ---

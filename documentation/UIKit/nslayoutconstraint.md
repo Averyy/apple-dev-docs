@@ -90,7 +90,7 @@ This combination of inequalities, equalities, and priorities gives you a great a
   The priority of the constraint.
 - [struct UILayoutPriority](uilayoutpriority.md)
   The layout priority is used to indicate to the constraint-based layout system which constraints are more important, allowing the system to make appropriate tradeoffs when satisfying the constraints of the system as a whole.
-- [NSLayoutConstraint.Priority](../AppKit/NSLayoutConstraint/Priority-swift.struct.md)
+- [NSLayoutConstraint.Priority](../appkit/nslayoutconstraint/priority-swift.struct.md)
   Layout priority used to indicate the relative importance of constraints, allowing Auto Layout to make appropriate tradeoffs when satisfying the constraints of the system as a whole.
 ### Identifying a constraint
 - [var identifier: String?](nslayoutconstraint/identifier.md)
@@ -105,26 +105,26 @@ This combination of inequalities, equalities, and priorities gives you a great a
   The part of the object’s visual representation that should be used to get the value for the constraint.
 - [NSLayoutConstraint.FormatOptions](nslayoutconstraint/formatoptions.md)
   A bit mask that specifies both a part of an interface element to align and a direction for the alignment between two interface elements.
-- [NSLayoutConstraint.Orientation](../AppKit/NSLayoutConstraint/Orientation.md)
+- [NSLayoutConstraint.Orientation](../appkit/nslayoutconstraint/orientation.md)
   The layout constraint orientation, either horizontal or vertical, that the constraint uses to enforce layout between objects.
 - [NSLayoutConstraint.Axis](nslayoutconstraint/axis.md)
   Keys that specify a horizontal or vertical layout constraint between objects.
-- [struct NSEdgeInsets](../Foundation/NSEdgeInsets.md)
+- [struct NSEdgeInsets](../foundation/nsedgeinsets.md)
   A description of the distance between the edges of two rectangles.
 - [var NSLAYOUTCONSTRAINT_H: Int32](nslayoutconstraint_h.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [Sendable](../Swift/Sendable.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [Sendable](../swift/sendable.md)
 
 ## See Also
 

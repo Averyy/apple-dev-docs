@@ -22,7 +22,7 @@ let SCNSceneExportDestinationURL: String
 
 #### Discussion
 
-Use this option if you export a scene to a temporary directory and then move it to a final location. You must specify a final destination URL (an [`NSURL`](https://developer.apple.com/documentation/Foundation/NSURL) object) if your scene references external resources, such as image files for textures. SceneKit uses this URL to construct appropriate paths for external resources when writing the scene file.
+Use this option if you export a scene to a temporary directory and then move it to a final location. You must specify a final destination URL (an [`NSURL`](https://developer.apple.com/documentation/foundation/nsurl) object) if your scene references external resources, such as image files for textures. SceneKit uses this URL to construct appropriate paths for external resources when writing the scene file.
 
 
 ---

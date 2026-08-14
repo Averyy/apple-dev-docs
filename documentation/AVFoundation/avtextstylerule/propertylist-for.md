@@ -21,7 +21,7 @@ class func propertyList(for textStyleRules: [AVTextStyleRule]) -> Any
 
 #### Return Value
 
-A property-list object that you can pass to the [`PropertyListSerialization`](https://developer.apple.com/documentation/Foundation/PropertyListSerialization) serialization routines.
+A property-list object that you can pass to the [`PropertyListSerialization`](https://developer.apple.com/documentation/foundation/propertylistserialization) serialization routines.
 
 #### Discussion
 

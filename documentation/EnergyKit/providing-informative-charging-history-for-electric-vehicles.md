@@ -8,7 +8,7 @@ Track energy consumption and provide people detailed insights into the charging 
 
 You can use EnergyKit to optimize electric vehicle (EV) charging based on grid cleanliness and electricity rates, and provide people with insights into their charging sessions. Receive grid forecasts from the framework, make intelligent charging decisions, and submit energy usage data back to the framework.
 
-To display energy usage information, adopt the [`EnergyKit LoadEvents Entitlement`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.energykit.loadevents-experience). Use the Home app to display activity logs and insights based on the submitted data.
+To display energy usage information, adopt the [`EnergyKit LoadEvents Entitlement`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.energykit.loadevents-experience). Use the Home app to display activity logs and insights based on the submitted data.
 
 To perform an analysis of energy usage, first gather information:
 
@@ -20,7 +20,7 @@ To perform an analysis of energy usage, first gather information:
 
 Gathering this information allows your app to help people reduce their environmental impact and electricity costs, and answer common questions about their charging sessions.
 
-> ❗ **Important**: Energy guidance is only available in the contiguous United States. To use EnergyKit, the system requires your app to have the [`EnergyKit Entitlement`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.energykit) entitlement with a value of `true`.
+> ❗ **Important**: Energy guidance is only available in the contiguous United States. To use EnergyKit, the system requires your app to have the [`EnergyKit Entitlement`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.energykit) entitlement with a value of `true`.
 
 #### Retrieve Energy Venues
 
@@ -118,7 +118,7 @@ let device = ElectricalLoadDevice(
 )
 ```
 
-The device name appears in the Home app when you adopt the [`EnergyKit LoadEvents Entitlement`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.energykit.loadevents-experience), so choose a name that’s meaningful to the person using your app.
+The device name appears in the Home app when you adopt the [`EnergyKit LoadEvents Entitlement`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.energykit.loadevents-experience), so choose a name that’s meaningful to the person using your app.
 
 When charging begins, start a new charging session. Create a load event with the [`ElectricVehicleLoadEvent.Session.State.begin`](electricvehicleloadevent/session-swift.struct/state-swift.enum/begin.md) state:
 
@@ -222,7 +222,7 @@ The range derives from the current state of charge and the vehicle’s efficienc
 
 #### Generate Status Events
 
-Status events add to the information that load events provide by explaining the reasons behind specific charging behavior. While load events track energy consumption, status events answer questions such as why the car isn’t charging, and when charging can begin. The explanations appear in the Home app’s activity log when your app adopts the [`EnergyKit LoadEvents Entitlement`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.energykit.loadevents-experience).
+Status events add to the information that load events provide by explaining the reasons behind specific charging behavior. While load events track energy consumption, status events answer questions such as why the car isn’t charging, and when charging can begin. The explanations appear in the Home app’s activity log when your app adopts the [`EnergyKit LoadEvents Entitlement`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.energykit.loadevents-experience).
 
 To report charger connection, create a [`ElectricVehicleStatusEvent.Status.chargerPluggedIn`](electricvehiclestatusevent/status-swift.enum/chargerpluggedin.md) event when a person plugs in their vehicle. This event marks the beginning of a potential charging session and provides the vehicle’s initial state:
 
@@ -391,7 +391,7 @@ The framework provides insights only after you submit load events. Insights deri
 
 #### Display Energy Data in the Home App
 
-When you adopt the [`EnergyKit LoadEvents Entitlement`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.energykit.loadevents-experience), the Home app displays your submitted events in a summarized layout. Add this entitlement to your app target in Xcode to enable Home app integration.
+When you adopt the [`EnergyKit LoadEvents Entitlement`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.energykit.loadevents-experience), the Home app displays your submitted events in a summarized layout. Add this entitlement to your app target in Xcode to enable Home app integration.
 
 The Home app displays:
 
@@ -408,9 +408,9 @@ The Home app displays device names according to the [`ElectricalLoadDevice`](ele
 
 - [Optimizing home electricity usage](optimizing-home-electricity-usage.md)
   Shift electric vehicle charging schedules to times when the grid is cleaner and potentially less expensive.
-- [EnergyKit Entitlement](../BundleResources/Entitlements/com.apple.developer.energykit.md)
+- [EnergyKit Entitlement](../bundleresources/entitlements/com.apple.developer.energykit.md)
   The entitlement the system requires for an app to use the EnergyKit framework.
-- [EnergyKit LoadEvents Entitlement](../BundleResources/Entitlements/com.apple.developer.energykit.loadevents-experience.md)
+- [EnergyKit LoadEvents Entitlement](../bundleresources/entitlements/com.apple.developer.energykit.loadevents-experience.md)
   An entitlement that works with the EnergyKit framework to share energy data and usage insights in the Home app.
 
 

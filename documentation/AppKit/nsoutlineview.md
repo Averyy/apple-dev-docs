@@ -21,11 +21,11 @@ Like a table view, an outline view does not store its own data, instead it retri
 An outline view has the following features:
 
 - A user can expand and collapse rows, edit values, and resize and rearrange columns.
-- Each item in the outline view must be unique. In order for the collapsed state to remain consistent between reloads the item’s pointer must remain the same and the item must maintain [`isEqual(_:)`](https://developer.apple.com/documentation/ObjectiveC/NSObjectProtocol/isEqual(_:)) sameness.
+- Each item in the outline view must be unique. In order for the collapsed state to remain consistent between reloads the item’s pointer must remain the same and the item must maintain [`isEqual(_:)`](https://developer.apple.com/documentation/objectivec/nsobjectprotocol/isequal(_:)) sameness.
 - The view gets data from a data source (see [`NSOutlineViewDataSource`](nsoutlineviewdatasource.md)).
 - The view retrieves only the data that needs to be displayed.
 
-> ❗ **Important**:  It is possible that your data source methods for populating the outline view may be called before [`awakeFromNib()`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class/awakeFromNib()) if the data source is specified in Interface Builder. You should defend against this by having the data source’s [`outlineView(_:numberOfChildrenOfItem:)`](nsoutlineviewdatasource/outlineview(_:numberofchildrenofitem:).md) method return `0` for the number of items when the data source has not yet been configured. In [`awakeFromNib()`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class/awakeFromNib()), when the data source is initialized you should always call [`reloadData()`](nstableview/reloaddata().md).
+> ❗ **Important**:  It is possible that your data source methods for populating the outline view may be called before [`awakeFromNib()`](https://developer.apple.com/documentation/objectivec/nsobject-swift.class/awakefromnib()) if the data source is specified in Interface Builder. You should defend against this by having the data source’s [`outlineView(_:numberOfChildrenOfItem:)`](nsoutlineviewdatasource/outlineview(_:numberofchildrenofitem:).md) method return `0` for the number of items when the data source has not yet been configured. In [`awakeFromNib()`](https://developer.apple.com/documentation/objectivec/nsobject-swift.class/awakefromnib()), when the data source is initialized you should always call [`reloadData()`](nstableview/reloaddata().md).
 
 For more information about using NSOutlineView in your app, see [`Navigating Hierarchical Data Using Outline and Split Views`](navigating-hierarchical-data-using-outline-and-split-views.md).
 
@@ -148,11 +148,11 @@ Subclassing `NSOutlineView` is not recommended. Customization can be accomplishe
 ### Inherits From
 - [NSTableView](nstableview.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
 - [NSAccessibilityElementProtocol](nsaccessibilityelementprotocol.md)
 - [NSAccessibilityGroup](nsaccessibilitygroup.md)
 - [NSAccessibilityOutline](nsaccessibilityoutline.md)
@@ -160,10 +160,10 @@ Subclassing `NSOutlineView` is not recommended. Customization can be accomplishe
 - [NSAccessibilityTable](nsaccessibilitytable.md)
 - [NSAnimatablePropertyContainer](nsanimatablepropertycontainer.md)
 - [NSAppearanceCustomization](nsappearancecustomization.md)
-- [NSCoding](../Foundation/NSCoding.md)
+- [NSCoding](../foundation/nscoding.md)
 - [NSDraggingDestination](nsdraggingdestination.md)
 - [NSDraggingSource](nsdraggingsource.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 - [NSStandardKeyBindingResponding](nsstandardkeybindingresponding.md)
 - [NSTextDelegate](nstextdelegate.md)
 - [NSTextViewDelegate](nstextviewdelegate.md)
@@ -171,8 +171,8 @@ Subclassing `NSOutlineView` is not recommended. Customization can be accomplishe
 - [NSUserActivityRestoring](nsuseractivityrestoring.md)
 - [NSUserInterfaceItemIdentification](nsuserinterfaceitemidentification.md)
 - [NSUserInterfaceValidations](nsuserinterfacevalidations.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

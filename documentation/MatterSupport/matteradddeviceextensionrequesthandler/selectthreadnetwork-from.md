@@ -28,7 +28,7 @@ The Matter device provides information about the visible Thread networks that it
 
 The system may provide the selected Thread network in the completion handler. The device commissions onto the specified network. The device must be able to send the device IP traffic after it associates to the given network. Otherwise, if the system returns [`defaultSystemNetwork`](matteradddeviceextensionrequesthandler/threadnetworkassociation/defaultsystemnetwork.md), the device commissions onto the Preferred Thread network known to the device.
 
-Store credentials for the provided Thread network by calling [`storeCredentials(forBorderAgent:activeOperationalDataSet:completion:)`](https://developer.apple.com/documentation/ThreadNetwork/THClient/storeCredentials(forBorderAgent:activeOperationalDataSet:completion:)) before completing this callback.
+Store credentials for the provided Thread network by calling [`storeCredentials(forBorderAgent:activeOperationalDataSet:completion:)`](https://developer.apple.com/documentation/threadnetwork/thclient/storecredentials(forborderagent:activeoperationaldataset:completion:)) before completing this callback.
 
 If the Matter device is already commissioned with a network, the selected network may do nothing.
 

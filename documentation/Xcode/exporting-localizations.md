@@ -12,7 +12,7 @@ Export localizations for the languages and regions you’re ready to support. Yo
 
 In the Project navigator, select the project, then choose Product > Export Localizations. In the dialog that appears, enter a folder name, choose a location, choose the localizations, and click Export.
 
-![Screenshot of a export localizations sheet where you enter a folder name and choose localizations.](https://docs-assets.developer.apple.com/published/4620465e0438b0d81ea1d2bd241250e3/exporting-localizations-1%402x.png)
+![Screenshot of a export localizations sheet where you enter a folder name and choose localizations.](/images/com.apple.Xcode/exporting-localizations-1@2x.png)
 
 > ❗ **Important**: To include all localizable text in your export, enable the [`Use Compiler to Extract Swift Strings`](https://developer.apple.comhttps://developer.apple.com/documentation/xcode/build-settings-reference#Use-Compiler-to-Extract-Swift-Strings) build setting for your project. This setting only impacts Swift strings. Objective-C string extraction works without any additional build settings.
 
@@ -25,7 +25,7 @@ Xcode creates an Xcode Localization Catalog (a folder with a `.xcloc` file exten
 - Creates a strings file for the localizable properties in the information property list file.
 - Copies all localizable resources into the `Source Contents` folder to provide context for localizers.
 
-Xcode extracts strings that you pass to [`Text`](https://developer.apple.com/documentation/SwiftUI/Text) structures, the [`NSLocalizedString`](https://developer.apple.com/documentation/Foundation/NSLocalizedString) macro, and similar APIs in your code. For example, if you pass a string with a comment to the [`NSLocalizedString`](https://developer.apple.com/documentation/Foundation/NSLocalizedString) macro, Xcode includes the comment in the XLIFF file.
+Xcode extracts strings that you pass to [`Text`](https://developer.apple.com/documentation/swiftui/text) structures, the [`NSLocalizedString`](https://developer.apple.com/documentation/foundation/nslocalizedstring) macro, and similar APIs in your code. For example, if you pass a string with a comment to the [`NSLocalizedString`](https://developer.apple.com/documentation/foundation/nslocalizedstring) macro, Xcode includes the comment in the XLIFF file.
 
 In addition, each localization folder in the catalog contains only the resources and assets that you mark as localizable. Prior to localization, the file is a copy of the development language file—a placeholder to provide context for the localizers.
 

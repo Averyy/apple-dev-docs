@@ -20,7 +20,7 @@ This value uniquely identifies a virtual Mac hardware instance. Two VMs running 
 
 When serializing the VM to disk, you can preserve the identifier in a binary representation by serializing the data in the `VZMacMachineIdentifier`.[`dataRepresentation`](vzmachardwaremodel/datarepresentation.md) property. Conversely, you can recreate the identifier with [`init(dataRepresentation:)`](vzmacmachineidentifier/init(datarepresentation:).md) from the binary representation.
 
-You can compare the contents of two identifiers with [`isEqual(to:)`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class/isEqual(to:)).
+You can compare the contents of two identifiers with [`isEqual(to:)`](https://developer.apple.com/documentation/objectivec/nsobject-swift.class/isequal(to:)).
 
 ## Topics
 
@@ -36,15 +36,15 @@ You can compare the contents of two identifiers with [`isEqual(to:)`](https://de
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCopying](../Foundation/NSCopying.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCopying](../foundation/nscopying.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

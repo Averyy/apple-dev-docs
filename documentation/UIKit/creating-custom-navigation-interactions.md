@@ -12,7 +12,7 @@ For most apps, a simple layout is all that’s needed for the user to interact w
 
 Place focusable items in your app and arrange them as desired. Where possible, take advantage of the focus engine’s built-in behavior. Use a focus guide only when absolutely necessary. The following image shows a row of three buttons and a column of three buttons. Focus moves automatically between buttons in the same row or column, but the focus engine doesn’t move focus when the user swipes down from Button 2 or Button 3. However, for this layout, the goal is for Button 4 to become focused when the user swipes down.
 
-![Screenshot that shows the creation of a menu layout.](https://docs-assets.developer.apple.com/published/6c248a54cea79794d38a66c9c81372ac/media-2943339%402x.png)
+![Screenshot that shows the creation of a menu layout.](/images/com.apple.uikit/media-2943339@2x.png)
 
 ##### Add a Focus Guide
 
@@ -37,11 +37,11 @@ myFocusGuide.preferredFocusEnvironments = [button_4]
 
 > **Note**:  The focus guide only works if the constraints are set to Active.
 
-![Screenshot that shows a newly created focus guide.](https://docs-assets.developer.apple.com/published/c7c2a2af4b13e1f40248624d43042691/media-2943334%402x.png)
+![Screenshot that shows a newly created focus guide.](/images/com.apple.uikit/media-2943334@2x.png)
 
 When users swipe down from Button 2 or Button 3, focus correctly redirects to Button 4.
 
-![Screenshot that shows focus redirecting to Button 4.](https://docs-assets.developer.apple.com/published/7a5d92ec8be8fd144426d65574dd3301/media-2943338%402x.png)
+![Screenshot that shows focus redirecting to Button 4.](/images/com.apple.uikit/media-2943338@2x.png)
 
 ## See Also
 

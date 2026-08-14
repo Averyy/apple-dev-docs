@@ -66,9 +66,9 @@ func render() {
 - [struct ObservationRegistrar](observationregistrar.md)
   Provides storage for tracking and access to data changes.
 ### Observation in SwiftUI
-- [Managing model data in your app](../SwiftUI/Managing-model-data-in-your-app.md)
+- [Managing model data in your app](../swiftui/managing-model-data-in-your-app.md)
   Create connections between your app’s data model and views.
-- [Migrating from the Observable Object protocol to the Observable macro](../SwiftUI/Migrating-from-the-observable-object-protocol-to-the-observable-macro.md)
+- [Migrating from the Observable Object protocol to the Observable macro](../swiftui/migrating-from-the-observable-object-protocol-to-the-observable-macro.md)
   Update your existing app to leverage the benefits of Observation in Swift.
 ### Structures
 - [struct ObservationTracking](observationtracking.md)

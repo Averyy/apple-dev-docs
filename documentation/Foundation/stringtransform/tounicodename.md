@@ -24,7 +24,7 @@ static let toUnicodeName: StringTransform
 
 For example, the string “🐶🐮” transforms to `"``\N{DOG FACE}\N{COW FACE}"` .
 
-Passing this constant to the [`applyTransform(_:reverse:range:updatedRange:)`](nsmutablestring/applytransform(_:reverse:range:updatedrange:).md) method is equivalent to passing [`kCFStringTransformToUnicodeName`](https://developer.apple.com/documentation/CoreFoundation/kCFStringTransformToUnicodeName) to [`CFStringTransform(_:_:_:_:)`](https://developer.apple.com/documentation/CoreFoundation/CFStringTransform(_:_:_:_:)).
+Passing this constant to the [`applyTransform(_:reverse:range:updatedRange:)`](nsmutablestring/applytransform(_:reverse:range:updatedrange:).md) method is equivalent to passing [`kCFStringTransformToUnicodeName`](https://developer.apple.com/documentation/corefoundation/kcfstringtransformtounicodename) to [`CFStringTransform(_:_:_:_:)`](https://developer.apple.com/documentation/corefoundation/cfstringtransform(_:_:_:_:)).
 
 > **Note**:  The result of a forward transformation delimits each Unicode name with enclosing curly braces and the leading character sequence `"\N"`. In some programming languages, `"\N{...}"` is used as an escape sequence for Unicode characters in strings and regular expressions; this isn’t supported in Swift or Objective-C. To perform the reverse transform of a string literal in Swift or Objective-C, escape the leading backslash (`"\\N{...}"`) for each Unicode name.
 

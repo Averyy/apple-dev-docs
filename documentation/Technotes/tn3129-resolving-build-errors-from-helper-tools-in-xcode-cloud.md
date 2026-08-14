@@ -10,7 +10,7 @@ Xcode Cloud offers a continuous integration build environment that includes a ma
 
 You define the build environment by choosing the macOS version, the Xcode version, and helper tools that your app’s build requires. As a side effect of using helper tools, you may encounter build errors specific to these helper tools. Xcode Cloud creates a clean, temporary environment for every build, requiring you to install the helper tools during each build. As a result, installation or build errors caused by helper tools may appear more often in Xcode Cloud than locally on your Mac.
 
-> **Note**: To learn more about using third-party tools in Xcode Cloud, see [`Making dependencies available to Xcode Cloud`](https://developer.apple.com/documentation/Xcode/Making-Dependencies-Available-to-Xcode-Cloud) and [`Writing custom build scripts`](https://developer.apple.com/documentation/Xcode/Writing-Custom-Build-Scripts).
+> **Note**: To learn more about using third-party tools in Xcode Cloud, see [`Making dependencies available to Xcode Cloud`](https://developer.apple.com/documentation/xcode/making-dependencies-available-to-xcode-cloud) and [`Writing custom build scripts`](https://developer.apple.com/documentation/xcode/writing-custom-build-scripts).
 
 #### Review Common Causes for Errors Caused By Helper Tools
 
@@ -59,7 +59,7 @@ In many cases, Xcode provides functionality that can replace the helper tool. In
 
 #### Adjust the Xcode Cloud Build Environment
 
-If your app builds using Xcode Cloud and you are unable to remove the helper tool, try to resolve the error by modifying the Environment section of a workflow. Select the Latest Release option for both the Xcode and macOS settings. For workflows that do not release to the App Store, select Latest Beta or Release for both the Xcode and macOS settings. By selecting these options, the macOS SDK version in Xcode matches the macOS version on the build machine, which often resolves the build error. See [`Xcode Cloud workflow reference`](https://developer.apple.com/documentation/Xcode/Xcode-Cloud-Workflow-Reference) for additional information on configuring workflows.
+If your app builds using Xcode Cloud and you are unable to remove the helper tool, try to resolve the error by modifying the Environment section of a workflow. Select the Latest Release option for both the Xcode and macOS settings. For workflows that do not release to the App Store, select Latest Beta or Release for both the Xcode and macOS settings. By selecting these options, the macOS SDK version in Xcode matches the macOS version on the build machine, which often resolves the build error. See [`Xcode Cloud workflow reference`](https://developer.apple.com/documentation/xcode/xcode-cloud-workflow-reference) for additional information on configuring workflows.
 
 #### Manage the Build Environment Manually
 

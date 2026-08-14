@@ -21,11 +21,11 @@ func finalFrame(for vc: UIViewController) -> CGRect
 
 #### Return Value
 
-The frame rectangle for the view or [`CGRectZero`](https://developer.apple.com/documentation/CoreGraphics/CGRectZero) if the frame rectangle is not known or the view is not visible.
+The frame rectangle for the view or [`CGRectZero`](https://developer.apple.com/documentation/coregraphics/cgrectzero) if the frame rectangle is not known or the view is not visible.
 
 #### Discussion
 
-The rectangle returned by this method represents the size of the corresponding view at the end of the transition. For the view being covered during the presentation, the value returned by this method might be [`CGRectZero`](https://developer.apple.com/documentation/CoreGraphics/CGRectZero) but it might also be a valid frame rectangle.
+The rectangle returned by this method represents the size of the corresponding view at the end of the transition. For the view being covered during the presentation, the value returned by this method might be [`CGRectZero`](https://developer.apple.com/documentation/coregraphics/cgrectzero) but it might also be a valid frame rectangle.
 
 ## Parameters
 

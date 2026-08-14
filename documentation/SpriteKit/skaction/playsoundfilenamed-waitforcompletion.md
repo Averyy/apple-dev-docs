@@ -26,12 +26,12 @@ A new action object.
 
 #### Discussion
 
-Use [`SKAction`](skaction.md) `playSoundFileNamed:waitForCompletion:` only for short incidentals. Use [`AVAudioPlayer`](https://developer.apple.com/documentation/AVFAudio/AVAudioPlayer) for long running background music. This action is not reversible; the reversed action is identical to the original action.
+Use [`SKAction`](skaction.md) `playSoundFileNamed:waitForCompletion:` only for short incidentals. Use [`AVAudioPlayer`](https://developer.apple.com/documentation/avfaudio/avaudioplayer) for long running background music. This action is not reversible; the reversed action is identical to the original action.
 
 ## Parameters
 
 - `soundFile`: The name of a sound file in the app’s bundle.
-- `wait`: If [`true`](https://developer.apple.com/documentation/Swift/true), the duration of this action is the same as the length of the audio playback. If [`false`](https://developer.apple.com/documentation/Swift/false), the action is considered to have completed immediately.
+- `wait`: If [`true`](https://developer.apple.com/documentation/swift/true), the duration of this action is the same as the length of the audio playback. If [`false`](https://developer.apple.com/documentation/swift/false), the action is considered to have completed immediately.
 
 ## See Also
 

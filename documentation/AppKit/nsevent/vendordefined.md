@@ -16,7 +16,7 @@ var vendorDefined: Any { get }
 
 #### Discussion
 
-This property contains an array of three [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) objects. Each object encapsulates a `short` value that vendors may return for various reasons; see the vendor documentation for details.This method is valid for mouse events with subtype [`NSTabletPointEventSubtype`](nstabletpointeventsubtype.md) and for [`NSTabletPoint`](nstabletpoint.md) events.
+This property contains an array of three [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) objects. Each object encapsulates a `short` value that vendors may return for various reasons; see the vendor documentation for details.This method is valid for mouse events with subtype [`NSTabletPointEventSubtype`](nstabletpointeventsubtype.md) and for [`NSTabletPoint`](nstabletpoint.md) events.
 
 ## See Also
 

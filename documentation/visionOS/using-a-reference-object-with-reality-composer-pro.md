@@ -20,7 +20,7 @@ You can use Reality Composer Pro to import your reference object file and set up
 4. Click the Open in Reality Composer Pro button at the top right of the 3D View.
 5. When Reality Composer Pro opens, delete both default spheres and the grid material in the Scene navigator on the left to begin with an empty scene.
 
-![An Xcode screenshot showing the Package file selected in the Project navigator on the left, and the Open in Reality Composer Pro button highlighted at the top of the 3D View.](https://docs-assets.developer.apple.com/published/3b6af3b046f7a2bb43ef6f0818a2892c/package-and-rcp%402x.png)
+![An Xcode screenshot showing the Package file selected in the Project navigator on the left, and the Open in Reality Composer Pro button highlighted at the top of the 3D View.](/images/com.apple.visionOS/package-and-rcp@2x.png)
 
 ##### Create an Anchor Entity
 
@@ -28,25 +28,25 @@ After creating an empty scene, you need to create an anchor entity for your refe
 
 Start by clicking the Add button (+) at the bottom of the Scene navigator on the left and choosing Transform from the menu.
 
-![A Reality Composer Pro screenshot of the menu that appears when you click the Add button (+) in the Scene navigator. The Transform option is selected.](https://docs-assets.developer.apple.com/published/7220637c29c8cbe097cc4b2e94ff775c/adding-transform%402x.png)
+![A Reality Composer Pro screenshot of the menu that appears when you click the Add button (+) in the Scene navigator. The Transform option is selected.](/images/com.apple.visionOS/adding-transform@2x.png)
 
 To add anchoring behavior to the entity, you need to add a [`Component`](https://developer.apple.comhttps://developer.apple.com/documentation/realitykit/component). Click the Add Component button at the bottom of the inspector area to the right of the 3D View. From the list of available components that appears, double-click the Anchoring option. The Anchoring component appears in the inspector area for the entity.
 
-![A Reality Composer Pro screenshot highlighting the Add Component button and the Component library dialog with the Anchoring option selected.](https://docs-assets.developer.apple.com/published/dea309094ba7e4fb503583076c577521/adding-anchoring%402x.png)
+![A Reality Composer Pro screenshot highlighting the Add Component button and the Component library dialog with the Anchoring option selected.](/images/com.apple.visionOS/adding-anchoring@2x.png)
 
 The Anchoring component requires a target to tether the anchor entity to. Because you’re tracking an object within your app, click the Target pop-up button for the Anchoring component and choose Object from the menu.
 
-![A Reality Composer Pro screenshot highlighting the Target pop-up menu with the Object option selected.](https://docs-assets.developer.apple.com/published/fdef2f1f1d3ede81347b4c08ca0fcac2/adding-anchoring-object%402x.png)
+![A Reality Composer Pro screenshot highlighting the Target pop-up menu with the Object option selected.](/images/com.apple.visionOS/adding-anchoring-object@2x.png)
 
 To import your reference object file, click the Anchor Object button for the Anchoring component, navigate to the file, and click Select.
 
-![A Reality Composer Pro screenshot showing the File Selection dialog with a reference object file selected.](https://docs-assets.developer.apple.com/published/4aa6dfa606725c8041f356b734e82bb2/importing-reference-object%402x.png)
+![A Reality Composer Pro screenshot showing the File Selection dialog with a reference object file selected.](/images/com.apple.visionOS/importing-reference-object@2x.png)
 
 After importing your reference object file, a semitransparent model of it appears in the 3D View. You can use this *visual cue* as a guide to place virtual content precisely on top of the real object.
 
 You can move the visual cue away from the origin by moving an ancestor entity of the entity with the Anchoring component. This is particularly helpful when you have multiple entities acting as object anchors, which might cause the visual cues to overlap at the origin.
 
-![A Reality Composer Pro screenshot showing the 3D View with a semitransparent model of the reference object.](https://docs-assets.developer.apple.com/published/af82fee711b9f9d15a483cdd2c514186/reference-object-model%402x.png)
+![A Reality Composer Pro screenshot showing the 3D View with a semitransparent model of the reference object.](/images/com.apple.visionOS/reference-object-model@2x.png)
 
 To get the anchor’s position in the real world (an anchor transform) during tracking, you need to configure a `SpatialTrackingSession` using RealityKit. For more information, see [`SpatialTrackingSession`](https://developer.apple.comhttps://developer.apple.com/documentation/realitykit/spatialtrackingsession/).
 

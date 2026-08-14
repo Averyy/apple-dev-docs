@@ -38,7 +38,7 @@ void MyQCPlugInBufferReleaseCallback (const void address,
 ``` Quartz Composer invokes your callback when the memory buffer is no longer needed. The callback can be called from any thread at any time
 - `context`: The context to pass to the release callback.
 - `colorSpace`: The color space of the memory buffer. This must be compatible with the pixel format.
-- `colorMatch`: A Boolean that specifies whether Quartz Composer should color match the image. Pass  [`false`](https://developer.apple.com/documentation/Swift/false) if the image is a mask or gradient or should not be color matched for some other reason. Otherwise, pass [`true`](https://developer.apple.com/documentation/Swift/true).
+- `colorMatch`: A Boolean that specifies whether Quartz Composer should color match the image. Pass  [`false`](https://developer.apple.com/documentation/swift/false) if the image is a mask or gradient or should not be color matched for some other reason. Otherwise, pass [`true`](https://developer.apple.com/documentation/swift/true).
 
 ## See Also
 

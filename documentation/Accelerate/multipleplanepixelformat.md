@@ -24,7 +24,7 @@ protocol MultiplePlanePixelFormat : PixelFormat
 
 Use multiple-plane pixel buffers to store image data as discrete planar buffers that represent individual channels.
 
-For example, the following code deinterleaves an interleaved buffer and applies different gamma adjustments to different color channels. The code calls `PixelBuffer.convert(to:)` to reinterleave the image data and generates a [`CGImage`](https://developer.apple.com/documentation/CoreGraphics/CGImage) instance of the final output.
+For example, the following code deinterleaves an interleaved buffer and applies different gamma adjustments to different color channels. The code calls `PixelBuffer.convert(to:)` to reinterleave the image data and generates a [`CGImage`](https://developer.apple.com/documentation/coregraphics/cgimage) instance of the final output.
 
 ```swift
 let srcImage =  imageLiteral(resourceName: "...").cgImage(

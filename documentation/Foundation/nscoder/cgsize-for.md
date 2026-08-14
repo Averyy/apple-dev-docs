@@ -21,7 +21,7 @@ class func cgSize(for string: String) -> CGSize
 
 #### Return Value
 
-A Core Graphics structure that represents a size. If the string is not well-formed, the function returns [`CGSizeZero`](https://developer.apple.com/documentation/CoreGraphics/CGSizeZero).
+A Core Graphics structure that represents a size. If the string is not well-formed, the function returns [`CGSizeZero`](https://developer.apple.com/documentation/coregraphics/cgsizezero).
 
 #### Discussion
 

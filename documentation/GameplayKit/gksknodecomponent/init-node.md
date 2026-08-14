@@ -25,7 +25,7 @@ A new SpriteKit component.
 
 #### Discussion
 
-When you add this component to a [`GKEntity`](gkentity.md) object, the component automatically sets the [`entity`](https://developer.apple.com/documentation/SpriteKit/SKNode/entity) property of its SpriteKit node to point to that entity.
+When you add this component to a [`GKEntity`](gkentity.md) object, the component automatically sets the [`entity`](https://developer.apple.com/documentation/spritekit/sknode/entity) property of its SpriteKit node to point to that entity.
 
 ## Parameters
 

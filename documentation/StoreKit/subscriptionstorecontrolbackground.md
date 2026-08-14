@@ -25,22 +25,22 @@ struct SubscriptionStoreControlBackground
 ## See Also
 
 - [func containerBackground<S>(S, for: ContainerBackgroundPlacement) -> some View
-](../SwiftUI/View/containerBackground(_:for:).md)
+](../swiftui/view/containerbackground(_:for:).md)
   Sets the container background of the enclosing container using a view.
 - [func containerBackground<V>(for: ContainerBackgroundPlacement, alignment: Alignment, content: () -> V) -> some View
-](../SwiftUI/View/containerBackground(for:alignment:content:).md)
+](../swiftui/view/containerbackground(for:alignment:content:).md)
   Sets the container background of the enclosing container using a view.
 - [func subscriptionStoreControlBackground(some ShapeStyle) -> some View
-](../SwiftUI/View/subscriptionStoreControlBackground(_:)-7jxa9.md)
+](../swiftui/view/subscriptionstorecontrolbackground(_:)-7jxa9.md)
   Set a shape style to use for the background of subscription store view controls within the view.
 - [func subscriptionStoreControlBackground(SubscriptionStoreControlBackground) -> some View
-](../SwiftUI/View/subscriptionStoreControlBackground(_:)-7ev89.md)
+](../swiftui/view/subscriptionstorecontrolbackground(_:)-7ev89.md)
   Set a standard effect to use for the background of subscription store view controls within the view.
-- [static var subscriptionStore: ContainerBackgroundPlacement](../SwiftUI/ContainerBackgroundPlacement/subscriptionStore.md)
+- [static var subscriptionStore: ContainerBackgroundPlacement](../swiftui/containerbackgroundplacement/subscriptionstore.md)
   An automatic placement within a subscription store view, based on the view’s context.
-- [static var subscriptionStoreHeader: ContainerBackgroundPlacement](../SwiftUI/ContainerBackgroundPlacement/subscriptionStoreHeader.md)
+- [static var subscriptionStoreHeader: ContainerBackgroundPlacement](../swiftui/containerbackgroundplacement/subscriptionstoreheader.md)
   A background placement behind the marketing content of a subscription store view.
-- [static var subscriptionStoreFullHeight: ContainerBackgroundPlacement](../SwiftUI/ContainerBackgroundPlacement/subscriptionStoreFullHeight.md)
+- [static var subscriptionStoreFullHeight: ContainerBackgroundPlacement](../swiftui/containerbackgroundplacement/subscriptionstorefullheight.md)
   A background placement that spans the full height of a subscription store view.
 
 

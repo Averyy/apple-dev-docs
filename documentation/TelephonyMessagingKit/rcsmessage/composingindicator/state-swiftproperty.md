@@ -7,7 +7,6 @@ The state of the composer.
 
 **Availability**:
 - iOS 26.0+
-- iPadOS 26.0+
 
 ## Declaration
 
@@ -23,7 +22,7 @@ var state: RCSMessage.ComposingIndicator.State
   The time of last activity.
 - [var contentType: UTType?](rcsmessage/composingindicator/contenttype.md)
   The type of message being composed.
-- [struct UTType](../UniformTypeIdentifiers/UTType-swift.struct.md)
+- [struct UTType](../uniformtypeidentifiers/uttype-swift.struct.md)
   A structure that represents a type of data to load, send, or receive.
 - [var refreshInterval: Duration?](rcsmessage/composingindicator/refreshinterval.md)
   The time interval after which the receiver can expect an update from the composer.

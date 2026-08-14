@@ -16,7 +16,7 @@ let WebPlugInShouldLoadMainResourceKey: String
 
 #### Discussion
 
-If [`true`](https://developer.apple.com/documentation/Swift/true), the plug-in should load its own main resource. If [`false`](https://developer.apple.com/documentation/Swift/false), the plug-in uses the data provided by WebKit and the `webPlugInMainResourceDidReceiveData:` message is sent to the plug-in when data is received. The default value is [`false`](https://developer.apple.com/documentation/Swift/false).
+If [`true`](https://developer.apple.com/documentation/swift/true), the plug-in should load its own main resource. If [`false`](https://developer.apple.com/documentation/swift/false), the plug-in uses the data provided by WebKit and the `webPlugInMainResourceDidReceiveData:` message is sent to the plug-in when data is received. The default value is [`false`](https://developer.apple.com/documentation/swift/false).
 
 ## See Also
 

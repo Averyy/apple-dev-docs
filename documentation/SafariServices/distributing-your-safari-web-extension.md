@@ -18,13 +18,13 @@ To distribute your web extension, first join the Apple Developer Program. The Ap
 
 ##### Distribute Your Extension for Beta Testing in Visionos or Ios
 
-For beta testing in visionOS or iOS, you can send beta testers a signed, ad-hoc distribution copy of the app containing your extension, and then instruct them how to install it. For more information, see [`Distributing your app to registered devices`](https://developer.apple.com/documentation/Xcode/distributing-your-app-to-registered-devices).
+For beta testing in visionOS or iOS, you can send beta testers a signed, ad-hoc distribution copy of the app containing your extension, and then instruct them how to install it. For more information, see [`Distributing your app to registered devices`](https://developer.apple.com/documentation/xcode/distributing-your-app-to-registered-devices).
 
-Alternatively, you can distribute your extension to a wider group of beta testers using TestFlight. For more information, see [`Distributing your app for beta testing and releases`](https://developer.apple.com/documentation/Xcode/distributing-your-app-for-beta-testing-and-releases).
+Alternatively, you can distribute your extension to a wider group of beta testers using TestFlight. For more information, see [`Distributing your app for beta testing and releases`](https://developer.apple.com/documentation/xcode/distributing-your-app-for-beta-testing-and-releases).
 
 ##### Distribute Your Extension for Beta Testing in Macos
 
-Safari only supports signed extensions, but for beta testing, you can send beta testers an unsigned copy of the macOS app containing your extension, and then instruct them how to enable testing. For more information on creating and uploading an archive, see [`Distributing your app for beta testing and releases`](https://developer.apple.com/documentation/Xcode/distributing-your-app-for-beta-testing-and-releases). Use the “Copy App” distribution method, which will distribute a macOS app without code signing, to create a beta version of your macOS app and web extension.
+Safari only supports signed extensions, but for beta testing, you can send beta testers an unsigned copy of the macOS app containing your extension, and then instruct them how to enable testing. For more information on creating and uploading an archive, see [`Distributing your app for beta testing and releases`](https://developer.apple.com/documentation/xcode/distributing-your-app-for-beta-testing-and-releases). Use the “Copy App” distribution method, which will distribute a macOS app without code signing, to create a beta version of your macOS app and web extension.
 
 Then, instruct your beta testers to enable unsigned extensions in Safari or the Mac web app in order to test your extension. For more information, see [`Configure Safari in macOS to run unsigned extensions`](running-your-safari-web-extension#Configure-Safari-in-macOS-to-run-unsigned-extensions.md).
 
@@ -34,13 +34,13 @@ When you’re ready to ship your extension in the App Store, gather the assets a
 
 If you provide your extension on more than one platform, consider selling them together as one product to improve the purchasing experience for your users. For more information, see [`Offering Universal Purchase`](https://developer.apple.comhttps://developer.apple.com/support/universal-purchase/).
 
-Create an archive of your app to use for submission, then upload the archive to the App Store. For more information, see [`Distributing your app for beta testing and releases`](https://developer.apple.com/documentation/Xcode/distributing-your-app-for-beta-testing-and-releases). Choose the “App Store Connect” distribution method to send your macOS or iOS app binary to the app store in preparation for publishing.
+Create an archive of your app to use for submission, then upload the archive to the App Store. For more information, see [`Distributing your app for beta testing and releases`](https://developer.apple.com/documentation/xcode/distributing-your-app-for-beta-testing-and-releases). Choose the “App Store Connect” distribution method to send your macOS or iOS app binary to the app store in preparation for publishing.
 
-Submit your app for review and publishing. For more information, see the section titled “Publish on the App Store” in [`Distributing your app for beta testing and releases`](https://developer.apple.com/documentation/Xcode/distributing-your-app-for-beta-testing-and-releases).
+Submit your app for review and publishing. For more information, see the section titled “Publish on the App Store” in [`Distributing your app for beta testing and releases`](https://developer.apple.com/documentation/xcode/distributing-your-app-for-beta-testing-and-releases).
 
 ##### Distribute Your Developer Id Signed and Notarized Extension Outside the Mac App Store
 
-If you provide your extension in macOS and don’t want to use the Mac App Store for distribution, you can sign and notarize your extension’s app with a Developer ID to distribute it outside the Mac App Store. For more information, see [`Developer ID`](https://developer.apple.comhttps://developer.apple.com/support/developer-id/) and [`Notarizing macOS software before distribution`](https://developer.apple.com/documentation/Security/notarizing-macos-software-before-distribution).
+If you provide your extension in macOS and don’t want to use the Mac App Store for distribution, you can sign and notarize your extension’s app with a Developer ID to distribute it outside the Mac App Store. For more information, see [`Developer ID`](https://developer.apple.comhttps://developer.apple.com/support/developer-id/) and [`Notarizing macOS software before distribution`](https://developer.apple.com/documentation/security/notarizing-macos-software-before-distribution).
 
 ## See Also
 

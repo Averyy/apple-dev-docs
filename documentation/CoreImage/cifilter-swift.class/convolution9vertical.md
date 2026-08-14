@@ -29,7 +29,7 @@ This method applies a 1 x 9 convolution filter to the `RGBA` components of an im
 
 The convolution-9-vertical filter uses the following properties:
 
-- **`bias`**: A `float` representing the value that’s added to each output pixel as a [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+- **`bias`**: A `float` representing the value that’s added to each output pixel as a [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
 - **`weights`**: A [`CIVector`](civector.md) representing the convolution kernel.
 - **`inputImage`**: An image with the type [`CIImage`](ciimage.md).
 
@@ -50,7 +50,7 @@ func convolution9Vertical(inputImage: CIImage) -> CIImage? {
 }
 ```
 
-![Two images arranged horizontally. The left image contains a photo of the Golden Gate Bridge with a clear sky as the background. The right image shows the result of applying a vertical convolution kernel that blurs the image. Fine detail in the vertical direction is blurred.](https://docs-assets.developer.apple.com/published/8d93f461611583024dbbd834d1dbe326/media-4334868%402x.png)
+![Two images arranged horizontally. The left image contains a photo of the Golden Gate Bridge with a clear sky as the background. The right image shows the result of applying a vertical convolution kernel that blurs the image. Fine detail in the vertical direction is blurred.](/images/com.apple.coreimage/media-4334868@2x.png)
 
 ## See Also
 

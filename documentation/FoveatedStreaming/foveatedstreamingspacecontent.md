@@ -17,7 +17,7 @@ A type that defines the content of an immersive space displaying a foveated stre
 
 #### Overview
 
-Don’t use `FoveatedStreamingSpaceContent` directly. The Foveated Streaming framework uses it when you call [`init(foveatedStreaming:content:)`](https://developer.apple.com/documentation/SwiftUI/ImmersiveSpace/init(foveatedStreaming:content:)) to display spatial content from a foveated streaming session alongside [`RealityKit`](https://developer.apple.com/documentation/RealityKit) content:
+Don’t use `FoveatedStreamingSpaceContent` directly. The Foveated Streaming framework uses it when you call [`init(foveatedStreaming:content:)`](https://developer.apple.com/documentation/swiftui/immersivespace/init(foveatedstreaming:content:)) to display spatial content from a foveated streaming session alongside [`RealityKit`](https://developer.apple.com/documentation/realitykit) content:
 
 ```swift
 ImmersiveSpace(foveatedStreaming: session) {
@@ -30,9 +30,9 @@ ImmersiveSpace(foveatedStreaming: session) {
 ## Relationships
 
 ### Conforms To
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
-- [View](../SwiftUI/View.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
+- [View](../swiftui/view.md)
 
 ## See Also
 

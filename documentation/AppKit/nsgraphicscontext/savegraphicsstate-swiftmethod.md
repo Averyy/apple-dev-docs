@@ -18,7 +18,7 @@ func saveGraphicsState()
 
 The new graphics state is a copy of the previous state that can be modified to handle new drawing operations.
 
-Saving the graphics state saves such attributes as the current drawing style, transformation matrix, color, and font. To set drawing style attributes, use the methods of [`NSBezierPath`](nsbezierpath.md). Other attributes are accessed through appropriate objects such as [`NSAffineTransform`](https://developer.apple.com/documentation/Foundation/NSAffineTransform), [`NSColor`](nscolor.md), and [`NSFont`](nsfont.md).
+Saving the graphics state saves such attributes as the current drawing style, transformation matrix, color, and font. To set drawing style attributes, use the methods of [`NSBezierPath`](nsbezierpath.md). Other attributes are accessed through appropriate objects such as [`NSAffineTransform`](https://developer.apple.com/documentation/foundation/nsaffinetransform), [`NSColor`](nscolor.md), and [`NSFont`](nsfont.md).
 
 ## See Also
 

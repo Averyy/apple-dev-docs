@@ -29,7 +29,7 @@ This method determines and then applies the transformation needed to reorient th
 
 ## Parameters
 
-- `orientation`: An integer specifying an image orientation according to the EXIF specification. For details, see [`kCGImagePropertyOrientation`](https://developer.apple.com/documentation/ImageIO/kCGImagePropertyOrientation).
+- `orientation`: An integer specifying an image orientation according to the EXIF specification. For details, see [`kCGImagePropertyOrientation`](https://developer.apple.com/documentation/imageio/kcgimagepropertyorientation).
 
 ## See Also
 

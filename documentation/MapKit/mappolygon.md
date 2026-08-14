@@ -56,8 +56,8 @@ Use this view to create map polygons instances in the closure you provide to the
 ## Relationships
 
 ### Conforms To
-- [Copyable](../Swift/Copyable.md)
-- [Escapable](../Swift/Escapable.md)
+- [Copyable](../swift/copyable.md)
+- [Escapable](../swift/escapable.md)
 - [MapContent](mapcontent.md)
 
 ## See Also

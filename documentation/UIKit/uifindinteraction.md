@@ -30,7 +30,7 @@ When invoking the interaction, the system displays a find panel for entering a s
 
 Input from a hardware keyboard triggers a find interaction using standard system shortcuts such as Command+F for find, Command+G for find next, and Command+Shift+G for find previous. Adding the interaction also enables these commands in the menu bar on macOS when your view becomes first responder. You can also trigger the interaction by calling the [`presentFindNavigator(showingReplace:)`](uifindinteraction/presentfindnavigator(showingreplace:).md) method on the interaction object, providing access to find and replace operations programatically.
 
-Some classes, such as [`UITextView`](uitextview.md), [`WKWebView`](https://developer.apple.com/documentation/WebKit/WKWebView), and [`PDFView`](https://developer.apple.com/documentation/PDFKit/PDFView), support built-in find interactions. To enable the interaction on these views, set [`isFindInteractionEnabled`](uitextview/isfindinteractionenabled.md) to `true`.
+Some classes, such as [`UITextView`](uitextview.md), [`WKWebView`](https://developer.apple.com/documentation/webkit/wkwebview), and [`PDFView`](https://developer.apple.com/documentation/pdfkit/pdfview), support built-in find interactions. To enable the interaction on these views, set [`isFindInteractionEnabled`](uitextview/isfindinteractionenabled.md) to `true`.
 
 ```swift
 textView.isFindInteractionEnabled = true
@@ -101,15 +101,15 @@ Implement the [`UITextSearching`](uitextsearching-53wjq.md) protocol on the clas
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [Sendable](../Swift/Sendable.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [Sendable](../swift/sendable.md)
 - [UIInteraction](uiinteraction.md)
 
 ## See Also

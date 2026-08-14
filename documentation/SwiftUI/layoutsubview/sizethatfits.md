@@ -26,7 +26,7 @@ The size that the subview chooses for itself, given the proposal from its contai
 
 #### Discussion
 
-Use this method as a convenience to get the [`width`](viewdimensions/width.md) and [`height`](viewdimensions/height.md) properties of the [`ViewDimensions`](viewdimensions.md) instance returned by the [`dimensions(in:)`](layoutsubview/dimensions(in:).md) method, reported as a [`CGSize`](https://developer.apple.com/documentation/CoreFoundation/CGSize) instance.
+Use this method as a convenience to get the [`width`](viewdimensions/width.md) and [`height`](viewdimensions/height.md) properties of the [`ViewDimensions`](viewdimensions.md) instance returned by the [`dimensions(in:)`](layoutsubview/dimensions(in:).md) method, reported as a [`CGSize`](https://developer.apple.com/documentation/corefoundation/cgsize) instance.
 
 ## Parameters
 

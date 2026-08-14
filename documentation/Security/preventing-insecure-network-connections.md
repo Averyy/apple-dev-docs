@@ -8,7 +8,7 @@ Enforce secure network links in your app by relying on App Transport Security.
 
 On Apple platforms, a networking security feature called App Transport Security (ATS) improves privacy and data integrity for all apps and app extensions. It does this by requiring that network connections made by your app are secured by the Transport Layer Security (TLS) protocol using reliable certificates and ciphers. ATS blocks connections that don’t meet minimum security requirements.
 
-![Diagram showing how ATS blocks insecure connections, but lets secure traffic flow between your app and the network.](https://docs-assets.developer.apple.com/published/fe39fdee2649e965806cb8b8b4aa45f4/media-3162039%402x.png)
+![Diagram showing how ATS blocks insecure connections, but lets secure traffic flow between your app and the network.](/images/com.apple.security/media-3162039@2x.png)
 
 ATS operates by default for apps linked against the iOS 9.0 or macOS 10.11 SDKs or later. In cases where you need to connect to a server that isn’t fully secure—and that you can’t reconfigure to make more secure—you can add exceptions to loosen some of the ATS requirements.
 
@@ -16,7 +16,7 @@ ATS operates by default for apps linked against the iOS 9.0 or macOS 10.11 SDKs 
 
 ##### Prefer High Level Frameworks in Your App
 
-The system enforces ATS when you use the standard [`URL Loading System`](https://developer.apple.com/documentation/Foundation/url-loading-system). Instances of [`URLSession`](https://developer.apple.com/documentation/Foundation/URLSession) automatically negotiate the most secure connection available from the server. The only action your app must take is to use secure URLs, like those beginning with `https`. Otherwise, ATS denies the connection and prints a console message:
+The system enforces ATS when you use the standard [`URL Loading System`](https://developer.apple.com/documentation/foundation/url-loading-system). Instances of [`URLSession`](https://developer.apple.com/documentation/foundation/urlsession) automatically negotiate the most secure connection available from the server. The only action your app must take is to use secure URLs, like those beginning with `https`. Otherwise, ATS denies the connection and prints a console message:
 
 ```console
 App Transport Security has blocked a cleartext HTTP (http://) resource
@@ -24,7 +24,7 @@ load since it is insecure. Temporary exceptions can be configured via
 your app's Info.plist file.
 ```
 
-ATS doesn’t apply to calls your app makes to lower-level networking interfaces like the [`Network`](https://developer.apple.com/documentation/Network) framework or [`CFNetwork`](https://developer.apple.com/documentation/CFNetwork). In these cases, you take responsibility for ensuring the security of the connection. You can construct a secure connection this way, but mistakes are both easy to make and costly. It’s typically safest to rely on the [`URL Loading System`](https://developer.apple.com/documentation/Foundation/url-loading-system) instead.
+ATS doesn’t apply to calls your app makes to lower-level networking interfaces like the [`Network`](https://developer.apple.com/documentation/network) framework or [`CFNetwork`](https://developer.apple.com/documentation/cfnetwork). In these cases, you take responsibility for ensuring the security of the connection. You can construct a secure connection this way, but mistakes are both easy to make and costly. It’s typically safest to rely on the [`URL Loading System`](https://developer.apple.com/documentation/foundation/url-loading-system) instead.
 
 ##### Ensure the Network Server Meets Minimum Requirements
 
@@ -43,11 +43,11 @@ ATS requires all of these things, and then provides extended security checks:
 - Data must be exchanged using either the AES-128 or the AES-256 symmetric cipher.
 - The link must support perfect forward secrecy (PFS) through Elliptic Curve Diffie-Hellman Ephemeral (ECDHE) key exchange.
 
-> **Note**:  [`URLSession`](https://developer.apple.com/documentation/Foundation/URLSession) automatically handles server trust evaluation for you, but enables you to customize the process, for example to extend trust to a self-signed certificate embedded in your app, or to bypass certificate expiry. When ATS is enabled, you can no longer loosen trust evaluation requirements that way, but you can still tighten them — for example, to implement certificate pinning. For more information, see [`Performing manual server trust authentication`](https://developer.apple.com/documentation/Foundation/performing-manual-server-trust-authentication).
+> **Note**:  [`URLSession`](https://developer.apple.com/documentation/foundation/urlsession) automatically handles server trust evaluation for you, but enables you to customize the process, for example to extend trust to a self-signed certificate embedded in your app, or to bypass certificate expiry. When ATS is enabled, you can no longer loosen trust evaluation requirements that way, but you can still tighten them — for example, to implement certificate pinning. For more information, see [`Performing manual server trust authentication`](https://developer.apple.com/documentation/foundation/performing-manual-server-trust-authentication).
 
 ##### Optional Niap Functional Package for Tls Requirements
 
-ATS provides support to further restrict default TLS client behavior to help meet requirements outlined by the National Information Assurance Partnership (NIAP) in the Functional Package for Transport Layer Security. This compliance mode is opt-in only and provides additional options for regulated environments. To opt-in to this mode, use the [`NSRequiresNIAPTLSPackageVersion`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSRequiresNIAPTLSPackageVersion) key, which can be set to enforce this mode globally, and the [`NSExceptionRequiresNIAPTLSPackageVersion`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSExceptionRequiresNIAPTLSPackageVersion) key to configure exceptions to the global policy on a per-domain basis.
+ATS provides support to further restrict default TLS client behavior to help meet requirements outlined by the National Information Assurance Partnership (NIAP) in the Functional Package for Transport Layer Security. This compliance mode is opt-in only and provides additional options for regulated environments. To opt-in to this mode, use the [`NSRequiresNIAPTLSPackageVersion`](https://developer.apple.com/documentation/bundleresources/information-property-list/nsrequiresniaptlspackageversion) key, which can be set to enforce this mode globally, and the [`NSExceptionRequiresNIAPTLSPackageVersion`](https://developer.apple.com/documentation/bundleresources/information-property-list/nsexceptionrequiresniaptlspackageversion) key to configure exceptions to the global policy on a per-domain basis.
 
 ##### Configure Exceptions Only When Needed and Prefer Server Fixes
 
@@ -55,7 +55,7 @@ ATS disallows a connection if the server fails to meet one of the security check
 
 > ❗ **Important**:  It’s always better to fix the server when faced with an ATS failure. Exceptions reduce the security of your app. Some also require justification when submitting an app to the App Store, as described in the next section.
 
-You configure ATS exceptions by providing a dictionary as the value for the optional [`NSAppTransportSecurity`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSAppTransportSecurity) key in your app’s [`Information Property List`](https://developer.apple.com/documentation/BundleResources/Information-Property-List) file. The dictionary has the following structure, where all keys are optional:
+You configure ATS exceptions by providing a dictionary as the value for the optional [`NSAppTransportSecurity`](https://developer.apple.com/documentation/bundleresources/information-property-list/nsapptransportsecurity) key in your app’s [`Information Property List`](https://developer.apple.com/documentation/bundleresources/information-property-list) file. The dictionary has the following structure, where all keys are optional:
 
 ```console
 NSAppTransportSecurity : Dictionary {
@@ -77,33 +77,33 @@ NSAppTransportSecurity : Dictionary {
 }
 ```
 
-Keys at the first level of the [`NSAppTransportSecurity`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSAppTransportSecurity) dictionary apply to connections made to any domain not specifically called out in the [`NSExceptionDomains`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSAppTransportSecurity/NSExceptionDomains) subdictionary. For example, by setting [`NSAllowsArbitraryLoads`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSAppTransportSecurity/NSAllowsArbitraryLoads) to `YES`, you completely disable ATS for all network connections when you add this to your app’s Info.plist:
+Keys at the first level of the [`NSAppTransportSecurity`](https://developer.apple.com/documentation/bundleresources/information-property-list/nsapptransportsecurity) dictionary apply to connections made to any domain not specifically called out in the [`NSExceptionDomains`](https://developer.apple.com/documentation/bundleresources/information-property-list/nsapptransportsecurity/nsexceptiondomains) subdictionary. For example, by setting [`NSAllowsArbitraryLoads`](https://developer.apple.com/documentation/bundleresources/information-property-list/nsapptransportsecurity/nsallowsarbitraryloads) to `YES`, you completely disable ATS for all network connections when you add this to your app’s Info.plist:
 
-![None](https://docs-assets.developer.apple.com/published/c980f5c9c7c8e8e985bd11f2066aa51b/media-3138689%402x.png)
+![None](/images/com.apple.security/media-3138689@2x.png)
 
-Depending on your use case, you can provide narrower exceptions. For example, by setting [`NSAllowsArbitraryLoadsInWebContent`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSAppTransportSecurity/NSAllowsArbitraryLoadsInWebContent) to `YES`, you can disable ATS restrictions on calls made from within web views, like instances of [`WKWebView`](https://developer.apple.com/documentation/WebKit/WKWebView):
+Depending on your use case, you can provide narrower exceptions. For example, by setting [`NSAllowsArbitraryLoadsInWebContent`](https://developer.apple.com/documentation/bundleresources/information-property-list/nsapptransportsecurity/nsallowsarbitraryloadsinwebcontent) to `YES`, you can disable ATS restrictions on calls made from within web views, like instances of [`WKWebView`](https://developer.apple.com/documentation/webkit/wkwebview):
 
-![None](https://docs-assets.developer.apple.com/published/525ffcae55afd38ad9626f2b15594542/media-3138691%402x.png)
+![None](/images/com.apple.security/media-3138691@2x.png)
 
-You might only need to limit your ATS exception to a single domain. For example, if you need to access the insecure server `http://example.com`, you can still maintain all the benefits of ATS for other domains by setting the [`NSExceptionAllowsInsecureHTTPLoads`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSExceptionAllowsInsecureHTTPLoads) to `YES` in the domain-specific sub-dictionary:
+You might only need to limit your ATS exception to a single domain. For example, if you need to access the insecure server `http://example.com`, you can still maintain all the benefits of ATS for other domains by setting the [`NSExceptionAllowsInsecureHTTPLoads`](https://developer.apple.com/documentation/bundleresources/information-property-list/nsexceptionallowsinsecurehttploads) to `YES` in the domain-specific sub-dictionary:
 
-![None](https://docs-assets.developer.apple.com/published/15237498eed9ac779b0b43b1bc161735/media-3138690%402x.png)
+![None](/images/com.apple.security/media-3138690@2x.png)
 
-> **Note**:  Global exceptions don’t apply to any domains that you add to the [`NSExceptionDomains`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSAppTransportSecurity/NSExceptionDomains) dictionary. So you can invert the previous example—allowing insecure traffic on all domains *except* `example.com`—by placing [`NSAllowsArbitraryLoads`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSAppTransportSecurity/NSAllowsArbitraryLoads) at the top level, and including an empty `example.com` dictionary as an exception domain.
+> **Note**:  Global exceptions don’t apply to any domains that you add to the [`NSExceptionDomains`](https://developer.apple.com/documentation/bundleresources/information-property-list/nsapptransportsecurity/nsexceptiondomains) dictionary. So you can invert the previous example—allowing insecure traffic on all domains *except* `example.com`—by placing [`NSAllowsArbitraryLoads`](https://developer.apple.com/documentation/bundleresources/information-property-list/nsapptransportsecurity/nsallowsarbitraryloads) at the top level, and including an empty `example.com` dictionary as an exception domain.
 
 You can use the `nscurl` command line tool to connect to a server using different combinations of ATS exceptions. This helps you quickly narrow down the source of any ATS failures you have and figure out what exceptions you need. See [`Identifying the Source of Blocked Connections`](identifying-the-source-of-blocked-connections.md) for details.
 
 ##### Provide Justification for Exceptions
 
-Adding certain ATS exceptions to your app’s [`Information Property List`](https://developer.apple.com/documentation/BundleResources/Information-Property-List) file requires you to provide justification, and might trigger additional App Store review for your app. Exceptions that require justification are:
+Adding certain ATS exceptions to your app’s [`Information Property List`](https://developer.apple.com/documentation/bundleresources/information-property-list) file requires you to provide justification, and might trigger additional App Store review for your app. Exceptions that require justification are:
 
-- Arbitrary connection exceptions ([`NSAllowsArbitraryLoads`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSAppTransportSecurity/NSAllowsArbitraryLoads))
-- Media streaming exceptions ([`NSAllowsArbitraryLoadsForMedia`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSAppTransportSecurity/NSAllowsArbitraryLoadsForMedia))
-- Web content loads ([`NSAllowsArbitraryLoadsInWebContent`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSAppTransportSecurity/NSAllowsArbitraryLoadsInWebContent))
-- Per-domain nonsecure connections ([`NSExceptionAllowsInsecureHTTPLoads`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSExceptionAllowsInsecureHTTPLoads))
-- Per-domain minimum TLS version ([`NSExceptionMinimumTLSVersion`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSExceptionMinimumTLSVersion))
+- Arbitrary connection exceptions ([`NSAllowsArbitraryLoads`](https://developer.apple.com/documentation/bundleresources/information-property-list/nsapptransportsecurity/nsallowsarbitraryloads))
+- Media streaming exceptions ([`NSAllowsArbitraryLoadsForMedia`](https://developer.apple.com/documentation/bundleresources/information-property-list/nsapptransportsecurity/nsallowsarbitraryloadsformedia))
+- Web content loads ([`NSAllowsArbitraryLoadsInWebContent`](https://developer.apple.com/documentation/bundleresources/information-property-list/nsapptransportsecurity/nsallowsarbitraryloadsinwebcontent))
+- Per-domain nonsecure connections ([`NSExceptionAllowsInsecureHTTPLoads`](https://developer.apple.com/documentation/bundleresources/information-property-list/nsexceptionallowsinsecurehttploads))
+- Per-domain minimum TLS version ([`NSExceptionMinimumTLSVersion`](https://developer.apple.com/documentation/bundleresources/information-property-list/nsexceptionminimumtlsversion))
 
-[`NSRequiresNIAPTLSPackageVersion`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSRequiresNIAPTLSPackageVersion) and [`NSExceptionRequiresNIAPTLSPackageVersion`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSExceptionRequiresNIAPTLSPackageVersion) don’t require justification because they strengthen rather than weaken security requirements.
+[`NSRequiresNIAPTLSPackageVersion`](https://developer.apple.com/documentation/bundleresources/information-property-list/nsrequiresniaptlspackageversion) and [`NSExceptionRequiresNIAPTLSPackageVersion`](https://developer.apple.com/documentation/bundleresources/information-property-list/nsexceptionrequiresniaptlspackageversion) don’t require justification because they strengthen rather than weaken security requirements.
 
 Some examples of justifications eligible for consideration are:
 
@@ -122,7 +122,7 @@ When submitting your app to the App Store, provide sufficient information for th
 - [Identifying the Source of Blocked Connections](identifying-the-source-of-blocked-connections.md)
   Figure out why App Transport Security denies a network connection.
 ### Exceptions
-- [NSAppTransportSecurity](../BundleResources/Information-Property-List/NSAppTransportSecurity.md)
+- [NSAppTransportSecurity](../bundleresources/information-property-list/nsapptransportsecurity.md)
   A description of changes made to the default security for HTTP connections.
 
 

@@ -92,9 +92,9 @@ Because this behavior varies by device, verify your scene’s lighting on the ol
 
 ### Conforms To
 - [Component](component.md)
-- [Copyable](../Swift/Copyable.md)
-- [Equatable](../Swift/Equatable.md)
-- [Escapable](../Swift/Escapable.md)
+- [Copyable](../swift/copyable.md)
+- [Equatable](../swift/equatable.md)
+- [Escapable](../swift/escapable.md)
 
 ## See Also
 

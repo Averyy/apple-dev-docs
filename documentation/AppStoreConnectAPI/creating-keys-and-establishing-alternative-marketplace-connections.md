@@ -89,7 +89,7 @@ The JWT payload contains information specific to the App Store Connect APIs, suc
 | --- | --- |
 | `iss` | The *issuer* registered claim identifies the principal (or “Verifier”) that issued the token. Because the token belongs to your marketplace, use the marketplace’s app Apple ID, as a `String`. |
 | `iat` | The *issued* *at* registered claim indicates the time at which you generated the token, in terms of the number of seconds following the epoch (January 1 1970 00:00:00), in UTC, as an `Int`. |
-| `exp` | The *expiration time* registered claim identifies the time on or after which the token expires, in terms of the number of seconds following the epoch (January 1 1970 00:00:00), in UTC, as an `Int`. ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) Use an expiration time less than 7 days into the future. |
+| `exp` | The *expiration time* registered claim identifies the time on or after which the token expires, in terms of the number of seconds following the epoch (January 1 1970 00:00:00), in UTC, as an `Int`. ![None](/images/com.apple.appstoreconnectapi/spacer.png) Use an expiration time less than 7 days into the future. |
 | `aud` | The *audience* registered claim identifies the intended recipient of the token. Because the token is for App Store Connect APIs, use `appstoreconnect-v1` as the audience. |
 | `pid` | The *principal developer identifier* registered claim identifies the user (or “Holder”) of the token. Because the user of the token is the alternative distribution app developer, use the app’s Developer ID, as a `String`. |
 

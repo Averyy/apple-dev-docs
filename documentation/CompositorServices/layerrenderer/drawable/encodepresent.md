@@ -19,7 +19,7 @@ func encodePresent()
 
 > **Note**: Commit the command buffer to the layer queue before calling present.
 
-Call this function as the last step before committing the specified command buffer. Specifically, call it after you finish encoding all the work required to render the frame, and immediately before you call the command buffer’s [`commit()`](https://developer.apple.com/documentation/Metal/MTLCommandBuffer/commit()) method. The function adds a presentation event to the buffer that causes the compositor to display your frame.
+Call this function as the last step before committing the specified command buffer. Specifically, call it after you finish encoding all the work required to render the frame, and immediately before you call the command buffer’s [`commit()`](https://developer.apple.com/documentation/metal/mtlcommandbuffer/commit()) method. The function adds a presentation event to the buffer that causes the compositor to display your frame.
 
 
 ---

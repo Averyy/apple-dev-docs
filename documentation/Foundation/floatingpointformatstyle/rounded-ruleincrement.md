@@ -26,7 +26,7 @@ A floating-point format style modified to use the specified rounding rule and in
 
 #### Discussion
 
-The following example creates a default [`FloatingPointFormatStyle`](floatingpointformatstyle.md) for the `en_US` locale, and modifies its rounding behavior. It uses the [`FloatingPointRoundingRule.up`](https://developer.apple.com/documentation/Swift/FloatingPointRoundingRule/up) rounding rule, and an increment of `0.25`. It then applies this style to an array of floating-point values, rounding them to the next greater increment of 0.25.
+The following example creates a default [`FloatingPointFormatStyle`](floatingpointformatstyle.md) for the `en_US` locale, and modifies its rounding behavior. It uses the [`FloatingPointRoundingRule.up`](https://developer.apple.com/documentation/swift/floatingpointroundingrule/up) rounding rule, and an increment of `0.25`. It then applies this style to an array of floating-point values, rounding them to the next greater increment of 0.25.
 
 ```swift
 let roundedStyle = FloatingPointFormatStyle<Double>(locale: Locale(identifier: "en_US"))

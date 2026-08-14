@@ -29,7 +29,7 @@ This function calculates the products of the first `N` elements of the addition 
     E[n] = (A[n]+B[n]) * (C[n]+D[n]); 
 ```
 
-![A diagram showing the operation of this function. There are four rows. The top row represents the input vectors, A, B, C, and D, with three boxes of each. The second row represents the operations that sum vectors A and B, and sum vectors C and D, with three boxes of each. The third row represents the multiplication operation as three boxes.  The bottom row represents the output vector E as three boxes. The diagram has connecting lines from the input vectors to the operations, and from the operations to the output vectors. ](https://docs-assets.developer.apple.com/published/43f694c15ca78fe79df15fdc4c7a05f9/media-4337069%402x.png)
+![A diagram showing the operation of this function. There are four rows. The top row represents the input vectors, A, B, C, and D, with three boxes of each. The second row represents the operations that sum vectors A and B, and sum vectors C and D, with three boxes of each. The third row represents the multiplication operation as three boxes.  The bottom row represents the output vector E as three boxes. The diagram has connecting lines from the input vectors to the operations, and from the operations to the output vectors. ](/images/com.apple.accelerate/media-4337069@2x.png)
 
 The following code shows an example of using this function:
 

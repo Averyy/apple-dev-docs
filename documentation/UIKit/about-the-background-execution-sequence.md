@@ -8,13 +8,13 @@ Learn the order in which your custom code is executed when your app moves to the
 
 An app may enter the background from one of several different starting points. System events can cause a suspended app to be returned to the background, or cause a not running app to be launched directly into the background. A foreground app transitions to the background when another app is launched or when the user returns to the Home screen.
 
-![An app may launch into the background or transition from the foreground to the background. When it finishes processing events in the background, the system takes a snapshot of the app’s UI before moving it to the suspended state.](https://docs-assets.developer.apple.com/published/ca60d404bad2ea27f8d50a1902aa4f88/media-3004365%402x.png)
+![An app may launch into the background or transition from the foreground to the background. When it finishes processing events in the background, the system takes a snapshot of the app’s UI before moving it to the suspended state.](/images/com.apple.uikit/media-3004365@2x.png)
 
 ##### Handle Background Events
 
 For apps that support one of the Background Modes capabilities, the system launches or resumes the app in the background to handle events associated with those capabilities. For example, the system might launch or resume the app to respond to a location update or to perform a background fetch.
 
-![Apps may enable multiple background modes, and be launched in response to events for any of them.](https://docs-assets.developer.apple.com/published/c15d7b38e44923ee38cde4163010cd76/about-the-background-execution-sequence-2%402x.png)
+![Apps may enable multiple background modes, and be launched in response to events for any of them.](/images/com.apple.uikit/about-the-background-execution-sequence-2@2x.png)
 
 If your app isn’t running when an event arrives, the system launches the app and moves it directly to the background, following this sequence:
 

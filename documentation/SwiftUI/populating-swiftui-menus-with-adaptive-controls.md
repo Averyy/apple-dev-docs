@@ -44,7 +44,7 @@ Menu("Actions") {
 }
 ```
 
-![A menu that displays the Duplicate, Rename, and Delete actions.](https://docs-assets.developer.apple.com/published/3bb3a0df88df1ccaac6e7fb064aa1da1/menus-items%402x.png)
+![A menu that displays the Duplicate, Rename, and Delete actions.](/images/com.apple.SwiftUI/menus-items@2x.png)
 
 > **Note**: SwiftUI controls and views are adaptive, and represent functionality and meaning, as well as visual representation. When you open a menu, the menu items appear in a context-appropriate order depending on the platform. For more information, see [`menuOrder(_:)`](view/menuorder(_:).md).
 
@@ -64,7 +64,7 @@ Menu("Actions") {
 }
 ```
 
-![A menu that displays the Duplicate, Rename, and Delete actions with system images to the left of the labels. The Duplicate menu item is represented by two overlapping documents. The Rename menu item is represented by a pencil. The Delete menu item is represented by a trash can.](https://docs-assets.developer.apple.com/published/74cbd5d73f9d46ff7693c5a0c9e72feb/menus-items-glyphs%402x.png)
+![A menu that displays the Duplicate, Rename, and Delete actions with system images to the left of the labels. The Duplicate menu item is represented by two overlapping documents. The Rename menu item is represented by a pencil. The Delete menu item is represented by a trash can.](/images/com.apple.SwiftUI/menus-items-glyphs@2x.png)
 
 You can also construct menu actions by adding the label closure initializers on `Button`. This method provides more flexibility for your subtitles.
 
@@ -93,7 +93,7 @@ Menu("Actions") {
 }
 ```
 
-![A menu that displays the Duplicate, Rename, and Delete actions with text descriptions underneath the labels. The Duplicate menu item has the text description, Duplicate the component. The Rename menu item has the text description, Rename the component. The Delete menu item has the text description, Delete the component.](https://docs-assets.developer.apple.com/published/1420cebee21ada69b5b4351e8f03ac57/menus-items-subtitles%402x.png)
+![A menu that displays the Duplicate, Rename, and Delete actions with text descriptions underneath the labels. The Duplicate menu item has the text description, Duplicate the component. The Rename menu item has the text description, Rename the component. The Delete menu item has the text description, Delete the component.](/images/com.apple.SwiftUI/menus-items-subtitles@2x.png)
 
 You can insert an icon by replacing the first `Text` with a [`Label`](label.md):
 
@@ -120,7 +120,7 @@ Menu("Actions") {
 }
 ```
 
-![A menu that displays the Duplicate, Rename, and Delete actions with text descriptions underneath the labels and icons to the left of each label and description. The Duplicate menu item is represented by two overlapping document icons, and has the text description, Duplicate the component. The Rename menu item is represented by a pencil icon, and has the text description, Rename the component. The Delete menu item is represented by a trash can icon, and has the text description of, Delete the component.](https://docs-assets.developer.apple.com/published/74c40505f56cf948c1b562c023d33258/menus-items-subtitles-glyphs%402x.png)
+![A menu that displays the Duplicate, Rename, and Delete actions with text descriptions underneath the labels and icons to the left of each label and description. The Duplicate menu item is represented by two overlapping document icons, and has the text description, Duplicate the component. The Rename menu item is represented by a pencil icon, and has the text description, Rename the component. The Delete menu item is represented by a trash can icon, and has the text description of, Delete the component.](/images/com.apple.SwiftUI/menus-items-subtitles-glyphs@2x.png)
 
 Add a visual warning cue to menu items that are destructive by nature. Add a [`destructive`](buttonrole/destructive.md) role to `Button` to tint the menu item red. Use `destructive` only for actions that require caution.
 
@@ -134,7 +134,7 @@ Menu("Actions") {
 }
 ```
 
-![A menu that displays the Duplicate, Rename, and Delete actions with text descriptions underneath the labels and icons to the right of each label and description. The Duplicate menu item is represented by two overlapping document icons, and has the text description, Duplicate the component. The Rename menu item is represented by a pencil icon, and has the text description, Rename the component. The Delete label has a red tint to indicate that it's a destructive action. The Delete menu item is represented by a trash can icon, and does not include a text description.](https://docs-assets.developer.apple.com/published/2daf68f488cfafde277f605a2626cf70/menus-items-subtitles-glyphs-destructive%402x.png)
+![A menu that displays the Duplicate, Rename, and Delete actions with text descriptions underneath the labels and icons to the right of each label and description. The Duplicate menu item is represented by two overlapping document icons, and has the text description, Duplicate the component. The Rename menu item is represented by a pencil icon, and has the text description, Rename the component. The Delete label has a red tint to indicate that it's a destructive action. The Delete menu item is represented by a trash can icon, and does not include a text description.](/images/com.apple.SwiftUI/menus-items-subtitles-glyphs-destructive@2x.png)
 
 On macOS, menu items constructed with a `Label` render without an icon by default. Use the [`titleAndIcon`](labelstyle/titleandicon.md) style to override the system behavior and explicitly render an icon for the menu items.
 
@@ -160,7 +160,7 @@ Menu("Actions") {
 }
 ```
 
-![A menu that displays the Duplicate, Rename, Delete, and Favorite actions with text descriptions underneath the labels and icons to the left of each label and description. The Duplicate menu item is represented by two overlapping document icons, and has the text description, Duplicate the component. The Rename menu item is represented by a pencil icon, and has the text description, Rename the component. The Delete menu item is represented by a trash can icon, and has the text description of, Delete the component. The Favorite menu item uses a toggle to favorite the item the menu affects. The Favorite menu item is represented by a heart icon, and does not include a text description. The Favorite menu item has a checkmark to the left of its label.](https://docs-assets.developer.apple.com/published/5b6d821b385df892ec47f6335f3051e5/menus-items-toggle%402x.png)
+![A menu that displays the Duplicate, Rename, Delete, and Favorite actions with text descriptions underneath the labels and icons to the left of each label and description. The Duplicate menu item is represented by two overlapping document icons, and has the text description, Duplicate the component. The Rename menu item is represented by a pencil icon, and has the text description, Rename the component. The Delete menu item is represented by a trash can icon, and has the text description of, Delete the component. The Favorite menu item uses a toggle to favorite the item the menu affects. The Favorite menu item is represented by a heart icon, and does not include a text description. The Favorite menu item has a checkmark to the left of its label.](/images/com.apple.SwiftUI/menus-items-toggle@2x.png)
 
 Just like `Button`, initialize a `Toggle` with a label closure for more flexibility.
 
@@ -175,7 +175,7 @@ Menu("Actions") {
 }
 ```
 
-![A menu that displays the Duplicate, Rename, Delete, and Favorite actions with text descriptions underneath the labels and icons to the left of each label and description. The Duplicate menu item is represented by two overlapping document icons, and has the text description, Duplicate the component. The Rename menu item is represented by a pencil icon, and has the text description, Rename the component. The Delete menu item is represented by a trash can icon, and has the text description of, Delete the component. The Favorite menu item uses a toggle to favorite the item the menu affects. The Favorite menu item is represented by a heart icon, and has the text description, Adds the component to the favorites list. The Favorite menu item has a checkmark to the left of its label.](https://docs-assets.developer.apple.com/published/3229d99d00d8c29d95684d8b9c1bede8/menus-items-toggle-subtitles%402x.png)
+![A menu that displays the Duplicate, Rename, Delete, and Favorite actions with text descriptions underneath the labels and icons to the left of each label and description. The Duplicate menu item is represented by two overlapping document icons, and has the text description, Duplicate the component. The Rename menu item is represented by a pencil icon, and has the text description, Rename the component. The Delete menu item is represented by a trash can icon, and has the text description of, Delete the component. The Favorite menu item uses a toggle to favorite the item the menu affects. The Favorite menu item is represented by a heart icon, and has the text description, Adds the component to the favorites list. The Favorite menu item has a checkmark to the left of its label.](/images/com.apple.SwiftUI/menus-items-toggle-subtitles@2x.png)
 
 Use a [`Picker`](picker.md) within a menu to let people choose from a list of options:
 
@@ -197,7 +197,7 @@ var body: some View {
 }
 ```
 
-![A menu that displays a picker of ice cream flavors, including Chocolate, Vanilla, and Strawberry, with the Chocolate option checked.](https://docs-assets.developer.apple.com/published/e0be6f1ffcfcb8b760d7267c430b80f1/menus-selection%402x.png)
+![A menu that displays a picker of ice cream flavors, including Chocolate, Vanilla, and Strawberry, with the Chocolate option checked.](/images/com.apple.SwiftUI/menus-selection@2x.png)
 
 This example embeds a picker within a menu, displaying multiple selectable items. Although you can select several options, only one item is active at any given time. The selected item, identified with a checkmark, indicates the current selection.
 
@@ -230,7 +230,7 @@ var body: some View {
 }
 ```
 
-![A menu that displays a picker of ice cream flavors and different picker styles. The options include Special request, Include toppings, Chocolate, Vanilla, and Strawberry, with the Chocolate option checked.](https://docs-assets.developer.apple.com/published/e698d5e49f4964093c95136e6d8c4eef/menus-selection-items%402x.png)
+![A menu that displays a picker of ice cream flavors and different picker styles. The options include Special request, Include toppings, Chocolate, Vanilla, and Strawberry, with the Chocolate option checked.](/images/com.apple.SwiftUI/menus-selection-items@2x.png)
 
 You can choose picker styles such as [`inline`](pickerstyle/inline.md), [`menu`](pickerstyle/menu.md), and [`palette`](pickerstyle/palette.md).
 
@@ -268,7 +268,7 @@ var body: some View {
 }
 ```
 
-![A menu that displays a picker with a palette picker for ice cream flavors. Items in the menu include Special request, Include toppings, and Flavor. The Flavor item is closed, as indicated by a right-facing chevron at the right edge of the menu.](https://docs-assets.developer.apple.com/published/b5df2d7ccf7db24edf5ca2f78c7ebf71/menus-selection-submenu%402x.png)
+![A menu that displays a picker with a palette picker for ice cream flavors. Items in the menu include Special request, Include toppings, and Flavor. The Flavor item is closed, as indicated by a right-facing chevron at the right edge of the menu.](/images/com.apple.SwiftUI/menus-selection-submenu@2x.png)
 
 Palette pickers work best in compact scenarios in which someone chooses from a set of symbols. Palette pickers minimize icons, and turn into a horizontal scroll if there’s limited space.
 
@@ -300,7 +300,7 @@ var body: some View {
 }
 ```
 
-![A menu that displays a palette picker using horizontal space for items. Menu items include Special request and Include toppings. Under Flavor is a horizontal row of three colored circles used to represent the ice cream flavors. The left circle is brown, used to represent Chocolate. The brown circle has a gray highlight to indicate that Chocolate has been selected. The center circle is white, used to represent Vanilla. The right circle is red, used to represent Strawberry.](https://docs-assets.developer.apple.com/published/53632c52f56858fe243f5f7338f945b0/menus-picker-palette%402x.png)
+![A menu that displays a palette picker using horizontal space for items. Menu items include Special request and Include toppings. Under Flavor is a horizontal row of three colored circles used to represent the ice cream flavors. The left circle is brown, used to represent Chocolate. The brown circle has a gray highlight to indicate that Chocolate has been selected. The center circle is white, used to represent Vanilla. The right circle is red, used to represent Strawberry.](/images/com.apple.SwiftUI/menus-picker-palette@2x.png)
 
 Menus can also handle numerical values with sliders and steppers.
 
@@ -316,7 +316,7 @@ Menu("Actions") {
 }
 ```
 
-![A menu that displays a picker using a stepper. Menu items include Special request and Include toppings. Under Flavor is a horizontal row of three colored circles used to represent the ice cream flavors. The left circle is brown, used to represent Chocolate. The brown circle has a gray highlight to indicate that Chocolate has been selected. The center circle is white, used to represent Vanilla. The right circle is red, used to represent Strawberry. Beneath the colored circles is a line of gray text that shows the Quantity selected, indicating that three items have been selected. Beneath the Quantity line are a minus button, used to remove an item from the Quantity, and a plus button, used to add an item to the Quantity.](https://docs-assets.developer.apple.com/published/145fcfdcf81fe47fea508bf013dacff9/menus-picker-palette-stepper%402x.png)
+![A menu that displays a picker using a stepper. Menu items include Special request and Include toppings. Under Flavor is a horizontal row of three colored circles used to represent the ice cream flavors. The left circle is brown, used to represent Chocolate. The brown circle has a gray highlight to indicate that Chocolate has been selected. The center circle is white, used to represent Vanilla. The right circle is red, used to represent Strawberry. Beneath the colored circles is a line of gray text that shows the Quantity selected, indicating that three items have been selected. Beneath the Quantity line are a minus button, used to remove an item from the Quantity, and a plus button, used to add an item to the Quantity.](/images/com.apple.SwiftUI/menus-picker-palette-stepper@2x.png)
 
 ##### Group Menu Items
 
@@ -347,7 +347,7 @@ Menu("General Settings") {
 }
 ```
 
-![A menu that displays submenus for various settings options. Menu items include Wi-Fi, Bluetooth, Notifications, Account Settings, and Advanced Settings. The Account Settings and Advanced Settings menu items have submenus, as indicated by a right-facing chevron at the right edge of the menu.](https://docs-assets.developer.apple.com/published/65219a24e08330ffaca4b8cb5731cb0d/menus-submenus-settings%402x.png)
+![A menu that displays submenus for various settings options. Menu items include Wi-Fi, Bluetooth, Notifications, Account Settings, and Advanced Settings. The Account Settings and Advanced Settings menu items have submenus, as indicated by a right-facing chevron at the right edge of the menu.](/images/com.apple.SwiftUI/menus-submenus-settings@2x.png)
 
 In the example above, the Settings menu populates with two submenus, grouping related and less-prominent settings actions.
 
@@ -378,7 +378,7 @@ Menu("Settings") {
 }
 ```
 
-![A menu that displays submenus with dividers. At the top of the menu is a section, labeled General Settings, with the options Wi-Fi, Bluetooth, and Notifications. In the middle of the menu is a section, labeled Account Settings, with the options Profile, Security, and Privacy. At the bottom of the menu is a section, labeled Advanced Settings, with the options Developer Options, System Update, and Backup and Restore.](https://docs-assets.developer.apple.com/published/7e9cd112271a5924e5a73c47b610c350/menus-submenus-settings-groups%402x.png)
+![A menu that displays submenus with dividers. At the top of the menu is a section, labeled General Settings, with the options Wi-Fi, Bluetooth, and Notifications. In the middle of the menu is a section, labeled Account Settings, with the options Profile, Security, and Privacy. At the bottom of the menu is a section, labeled Advanced Settings, with the options Developer Options, System Update, and Backup and Restore.](/images/com.apple.SwiftUI/menus-submenus-settings-groups@2x.png)
 
 ##### Display Compact Menu Items
 

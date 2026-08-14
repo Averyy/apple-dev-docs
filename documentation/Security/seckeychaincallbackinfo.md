@@ -36,7 +36,7 @@ This structure contains information about the keychain event of which your appli
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../Swift/BitwiseCopyable.md)
+- [BitwiseCopyable](../swift/bitwisecopyable.md)
 
 
 ---

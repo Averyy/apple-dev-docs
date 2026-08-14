@@ -22,7 +22,7 @@ let MPNowPlayingInfoPropertyDefaultPlaybackRate: String
 
 #### Discussion
 
-Value is an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) object configured as a `double`. Set this property if your app is playing a media item at a playback rate other than `1.0` as its default rate.
+Value is an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) object configured as a `double`. Set this property if your app is playing a media item at a playback rate other than `1.0` as its default rate.
 
 ## See Also
 

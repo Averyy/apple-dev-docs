@@ -29,7 +29,7 @@ During the translation, Xcode:
 
 You can watch the progress of translations in the transcript and see files that Xcode changes in the artifacts pane.
 
-![A screenshot that shows the conversation sidebar, a localization transcript in the middle, and changes to a string catalog in the artifacts pane on the right. The transcript shows the “Translate my app into Italian” prompt in progress with one translation batch in progress and two translation batches complete. The artifacts pane shows the Localizable string catalog translated into Italian.](https://docs-assets.developer.apple.com/published/f5b3c4f11810ad3ba6cfc0310719f7ba/localizing-using-agents-in-progress%402x.png)
+![A screenshot that shows the conversation sidebar, a localization transcript in the middle, and changes to a string catalog in the artifacts pane on the right. The transcript shows the “Translate my app into Italian” prompt in progress with one translation batch in progress and two translation batches complete. The artifacts pane shows the Localizable string catalog translated into Italian.](/images/com.apple.Xcode/localizing-using-agents-in-progress@2x.png)
 
 After the agent completes the translations, Xcode shows a summary of the changes in the transcript. The summary of changes includes the details of the added or changed files in the artifacts area. You can move the files that Xcode creates to other locations in your project.
 
@@ -39,7 +39,7 @@ To differentiate agentic translations from those that you provide, Xcode sets th
 
 If Xcode omits some user-facing strings when updating string catalogs, make sure you’re using localizable APIs in your code.
 
-If your app uses [`SwiftUI`](https://developer.apple.com/documentation/SwiftUI), the views that the framework provides treat user-facing strings as localizable, so Xcode automatically finds them. However, other Swift code that creates human-readable strings, must explicitly use the [`init(localized:)`](https://developer.apple.com/documentation/Swift/String/init(localized:)) initializer to be localizable.
+If your app uses [`SwiftUI`](https://developer.apple.com/documentation/swiftui), the views that the framework provides treat user-facing strings as localizable, so Xcode automatically finds them. However, other Swift code that creates human-readable strings, must explicitly use the [`init(localized:)`](https://developer.apple.com/documentation/swift/string/init(localized:)) initializer to be localizable.
 
 ```swift
 String(localized: "Hello, world!")
@@ -47,7 +47,7 @@ String(localized: "Hello, world!")
 
 Update your Swift code to use the initializer and build your app again to update the string catalogs.
 
-For additional initializer options, see [`String`](https://developer.apple.com/documentation/Swift/String#Creating-a-Localized-String). For UIKit and AppKit, make sure you use similar localizable APIs. For more information, see [`Preparing your app’s text for translation`](preparing-your-apps-text-for-translation.md).
+For additional initializer options, see [`String`](https://developer.apple.com/documentation/swift/string). For UIKit and AppKit, make sure you use similar localizable APIs. For more information, see [`Preparing your app’s text for translation`](preparing-your-apps-text-for-translation.md).
 
 #### Generate Translations in the String Catalog Editor
 
@@ -59,7 +59,7 @@ You can also generate specific translations in the string catalog editor. Use th
 
 You can also Control-click a language in the sidebar or string in the editor and choose Generate Translations from the contextual menu.
 
-![A screenshot that shows the Project navigator on the left and the string catalog editor on the right. The string catalog editor shows German added with zero percent translation in the sidebar, a string selected in the detail area, and the Generate Translations button in the toolbar.](https://docs-assets.developer.apple.com/published/f0df909ff12580234dd7a2b081a92b1b/string-catalog-editor-generate-translations-button%402x.png)
+![A screenshot that shows the Project navigator on the left and the string catalog editor on the right. The string catalog editor shows German added with zero percent translation in the sidebar, a string selected in the detail area, and the Generate Translations button in the toolbar.](/images/com.apple.Xcode/string-catalog-editor-generate-translations-button@2x.png)
 
 #### Test Machine Translations
 
@@ -67,7 +67,7 @@ You can immediately test the translations in a preview or by running your app on
 
 Before you run your app in Device Hub, set a language and region in the Run scheme. Then make sure that all the text fits when you change the language. For example, use Dynamic Type so words and letters don’t clip in languages that require more height.
 
-![A screenshot that shows the Project navigator on the left with a source file selected, the source editor in the middle showing code for a preview, and the canvas on the right showing the preview localized in Italian.](https://docs-assets.developer.apple.com/published/24ce5ab541dca08062c640b716a01b70/previewing-localizations-in-the-canvas%402x.png)
+![A screenshot that shows the Project navigator on the left with a source file selected, the source editor in the middle showing code for a preview, and the canvas on the right showing the preview localized in Italian.](/images/com.apple.Xcode/previewing-localizations-in-the-canvas@2x.png)
 
 Also, verify that right-to-left languages have enough space. For more information, see [`Previewing localizations`](previewing-localizations.md) and [`Testing localizations when running your app`](testing-localizations-when-running-your-app.md).
 

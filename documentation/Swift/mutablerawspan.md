@@ -101,7 +101,7 @@ struct MutableRawSpan
 ## Relationships
 
 ### Conforms To
-- [ContiguousBytes](../Foundation/ContiguousBytes.md)
+- [ContiguousBytes](../foundation/contiguousbytes.md)
 - [Iterable](iterable.md)
 - [Sendable](sendable.md)
 - [SendableMetatype](sendablemetatype.md)

@@ -22,9 +22,9 @@ var customInfoViewControllers: [UIViewController] { get set }
 
 #### Discussion
 
-The system uses a view controller’s [`title`](https://developer.apple.com/documentation/UIKit/UIViewController/title) property value as the content tab title. Set this property value before adding it to the array so that the title renders correctly in the player’s user interface.
+The system uses a view controller’s [`title`](https://developer.apple.com/documentation/uikit/uiviewcontroller/title) property value as the content tab title. Set this property value before adding it to the array so that the title renders correctly in the player’s user interface.
 
-Similarly, set a [`preferredContentSize`](https://developer.apple.com/documentation/UIKit/UIViewController/preferredContentSize) value on the custom view controllers, or define appropriate auto layout constraints on their views, so the system sizes them correctly in the player user interface.
+Similarly, set a [`preferredContentSize`](https://developer.apple.com/documentation/uikit/uiviewcontroller/preferredcontentsize) value on the custom view controllers, or define appropriate auto layout constraints on their views, so the system sizes them correctly in the player user interface.
 
 > ❗ **Important**:  The view with the greatest height determines the height of all of the content views. Set the height of your content views consistently to simplify layout, or verify that your content renders as intended if the system resizes it.
 

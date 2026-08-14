@@ -15,7 +15,7 @@ Enhance your app experience with system-provided and custom Liquid Glass.
 
 Landmarks is a SwiftUI app that demonstrates how to use the new dynamic and expressive design feature, Liquid Glass. The Landmarks app lets people explore interesting sites around the world. Whether it’s a national park near their home or a far-flung location on a different continent, the app provides a way for people to organize and mark their adventures and receive custom activity badges along the way. Landmarks runs on iPad, iPhone, and Mac.
 
-![An image of screenshots of the landmark detail view for Mount Fuji in the Landmarks app, in a Mac, iPad, and iPhone.](https://docs-assets.developer.apple.com/published/f217ba608fadb4dcc6daeb0f9c6c0128/Landmarks-Building-an-app-with-Liquid-Glass-1%402x.png)
+![An image of screenshots of the landmark detail view for Mount Fuji in the Landmarks app, in a Mac, iPad, and iPhone.](/images/com.apple.SwiftUI/Landmarks-Building-an-app-with-Liquid-Glass-1@2x.png)
 
 Landmarks uses a [`NavigationSplitView`](navigationsplitview.md) to organize and navigate to content in the app, and demonstrates several key concepts to optimize the use of Liquid Glass:
 
@@ -31,7 +31,7 @@ The sample also demonstrates several techniques to use when changing window size
 
 The sample applies a background extension effect to the featured landmark header in the top view, and the main image in the landmark detail view. This effect extends and blurs the image under the sidebar and inspector when they’re open, creating a full edge-to-edge experience.
 
-![An image of the landmark detail view for Mount Fuji in the Landmarks app on an iPad, with the sidebar visible.](https://docs-assets.developer.apple.com/published/be1f84499936c8af77caef51f8fe1539/Landmarks-Building-an-app-with-Liquid-Glass-2%402x.png)
+![An image of the landmark detail view for Mount Fuji in the Landmarks app on an iPad, with the sidebar visible.](/images/com.apple.SwiftUI/Landmarks-Building-an-app-with-Liquid-Glass-2@2x.png)
 
 To achieve this effect, the sample creates and configures an [`Image`](image.md) that extends to both the leading and trailing edges of the containing view, and applies the [`backgroundExtensionEffect()`](view/backgroundextensioneffect().md) modifier to the image. For the featured image, the sample adds an overlay with a headline and button after the modifier, so that only the image extends under the sidebar and inspector.
 
@@ -45,7 +45,7 @@ Within each continent section in `LandmarksView`, an instance of `LandmarkHorizo
 
 To achieve this effect, the app aligns the scroll views next to the leading and trailing edges of the containing view.
 
-![An image of the landmarks view on an iPad, with the sidebar visible and some landmarks visible under the sidebar.](https://docs-assets.developer.apple.com/published/eb641b2d97c629d43e8cf487ffd8dc2c/Landmarks-Building-an-app-with-Liquid-Glass-3%402x.png)
+![An image of the landmarks view on an iPad, with the sidebar visible and some landmarks visible under the sidebar.](/images/com.apple.SwiftUI/Landmarks-Building-an-app-with-Liquid-Glass-3@2x.png)
 
 For more information, see [`Landmarks: Extending horizontal scrolling under a sidebar or inspector`](landmarks-extending-horizontal-scrolling-under-a-sidebar-or-inspector.md).
 
@@ -60,7 +60,7 @@ In `LandmarkDetailView`, the sample adds toolbar items for:
 
 The system applies Liquid Glass to toolbar items automatically:
 
-![An image of the landmark detail view for Mount Fuji on an iPad, with the toolbar and a portion of the sidebar visible. The toolbar items show the Liquid Glass effect. From the leading to trailing edge, there is a back button, share button, favorite button, collections button, info button, and a search bar.](https://docs-assets.developer.apple.com/published/8469736ee2a49f0c1638d7780cfd358a/Landmarks-Building-an-app-with-Liquid-Glass-4%402x.png)
+![An image of the landmark detail view for Mount Fuji on an iPad, with the toolbar and a portion of the sidebar visible. The toolbar items show the Liquid Glass effect. From the leading to trailing edge, there is a back button, share button, favorite button, collections button, info button, and a search bar.](/images/com.apple.SwiftUI/Landmarks-Building-an-app-with-Liquid-Glass-4@2x.png)
 
 The sample also organizes the toolbar into related groups, instead of having all the buttons in one group. For more information, see [`Landmarks: Refining the system provided Liquid Glass effect in toolbars`](landmarks-refining-the-system-provided-glass-effect-in-toolbars.md).
 
@@ -68,7 +68,7 @@ The sample also organizes the toolbar into related groups, instead of having all
 
 Badges provide people with a visual indicator of the activities they’ve recorded in the Landmarks app. When a person completes all four activities for a landmark, they earn that landmark’s badge. The sample uses custom Liquid Glass elements with badges, and shows how to coordinate animations with Liquid Glass.
 
-![An image of the landmarks view on an iPhone, with the badges view visible over some landmarks.](https://docs-assets.developer.apple.com/published/9587c4198233b237bd7b40434c3286e8/Landmarks-Building-an-app-with-Liquid-Glass-5%402x.png)
+![An image of the landmarks view on an iPhone, with the badges view visible over some landmarks.](/images/com.apple.SwiftUI/Landmarks-Building-an-app-with-Liquid-Glass-5@2x.png)
 
 To create a custom Liquid Glass badge, Landmarks uses a view with an `Image` to display a system symbol image for the badge. The badge has a background hexagon `Image` filled with a custom color. The badge view uses the [`glassEffect(_:in:)`](view/glasseffect(_:in:).md) modifier to apply Liquid Glass to the badge.
 
@@ -80,9 +80,9 @@ For more information, see [`Landmarks: Displaying custom activity badges`](landm
 
 Landmarks includes a dynamic and expressive app icon composed in Icon Composer. You build app icons with four layers that the system uses to produce specular highlights when a person moves their device, so that the icon responds as if light was reflecting off the glass. The Settings app allows people to personalize the icon by selecting light, dark, clear, or tinted variants of your app icon as well.
 
-For more information on creating a new app icon, see [`Creating your app icon using Icon Composer`](https://developer.apple.com/documentation/Xcode/creating-your-app-icon-using-icon-composer).
+For more information on creating a new app icon, see [`Creating your app icon using Icon Composer`](https://developer.apple.com/documentation/xcode/creating-your-app-icon-using-icon-composer).
 
-For design guidance, see Human Interface Guidelines >  [`App icons`](https://developer.apple.com/design/Human-Interface-Guidelines/app-icons).
+For design guidance, see Human Interface Guidelines >  [`App icons`](https://developer.apple.com/design/human-interface-guidelines/app-icons).
 
 ## Topics
 
@@ -98,11 +98,11 @@ For design guidance, see Human Interface Guidelines >  [`App icons`](https://dev
 
 ## See Also
 
-- [Adopting Liquid Glass](../TechnologyOverviews/adopting-liquid-glass.md)
+- [Adopting Liquid Glass](../technologyoverviews/adopting-liquid-glass.md)
   Find out how to bring the new material to your app.
-- [Develop in Swift](https://developer.apple.com/tutorials/Develop-in-Swift#explore-xcode)
+- [Develop in Swift](https://developer.apple.com/tutorials/develop-in-swift)
   Develop in Swift Tutorials introduce app development with Swift and Xcode to anyone learning to build apps for Apple platforms.
-- [SwiftUI updates](../Updates/SwiftUI.md)
+- [SwiftUI updates](../updates/swiftui.md)
   Learn about important changes to SwiftUI.
 
 

@@ -33,17 +33,17 @@ You use a date picker only for handling the selection of times and dates. If you
 
 ##### Configure a Date Picker
 
-The [`datePickerMode`](uidatepicker/datepickermode.md) property determines the configuration of a date picker. You can set the [`datePickerMode`](uidatepicker/datepickermode.md) value programmatically or in Interface Builder. For modes that include date or time values, you can also configure the locale, calendar, and time zone information. The date picker uses that information when formatting date and time values for the current user, and defaults to the device’s locale, calendar, and time zone. The [`date`](uidatepicker/date.md) property represents the currently selected date in the form of an [`NSDate`](https://developer.apple.com/documentation/Foundation/NSDate) object, which is calendar and time zone agnostic.
+The [`datePickerMode`](uidatepicker/datepickermode.md) property determines the configuration of a date picker. You can set the [`datePickerMode`](uidatepicker/datepickermode.md) value programmatically or in Interface Builder. For modes that include date or time values, you can also configure the locale, calendar, and time zone information. The date picker uses that information when formatting date and time values for the current user, and defaults to the device’s locale, calendar, and time zone. The [`date`](uidatepicker/date.md) property represents the currently selected date in the form of an [`NSDate`](https://developer.apple.com/documentation/foundation/nsdate) object, which is calendar and time zone agnostic.
 
 To limit the range of dates that the user can select, assign values to the [`minimumDate`](uidatepicker/minimumdate.md) and [`maximumDate`](uidatepicker/maximumdate.md) properties. You can also use the [`minuteInterval`](uidatepicker/minuteinterval.md) property to allow only specific time increments.
 
-Setting the [`datePickerMode`](uidatepicker/datepickermode.md) property to [`UIDatePicker.Mode.countDownTimer`](uidatepicker/mode/countdowntimer.md) allows the user to choose a duration in hours and minutes. When in this mode, the [`countDownDuration`](uidatepicker/countdownduration.md) property represents the displayed duration, measured in seconds as an [`TimeInterval`](https://developer.apple.com/documentation/Foundation/TimeInterval). Note that even though you set this property in seconds, the date picker can only show values in minutes.
+Setting the [`datePickerMode`](uidatepicker/datepickermode.md) property to [`UIDatePicker.Mode.countDownTimer`](uidatepicker/mode/countdowntimer.md) allows the user to choose a duration in hours and minutes. When in this mode, the [`countDownDuration`](uidatepicker/countdownduration.md) property represents the displayed duration, measured in seconds as an [`TimeInterval`](https://developer.apple.com/documentation/foundation/timeinterval). Note that even though you set this property in seconds, the date picker can only show values in minutes.
 
 The figure below shows a date picker configured with the [`datePickerMode`](uidatepicker/datepickermode.md) property set to [`UIDatePicker.Mode.countDownTimer`](uidatepicker/mode/countdowntimer.md) and the [`minuteInterval`](uidatepicker/minuteinterval.md) property set to `5`. The value of [`countDownDuration`](uidatepicker/countdownduration.md) is currently `4500`.
 
-![A screenshot of a wheels-style date pickering showing the selected value of 1 hour and 15 minutes.](https://docs-assets.developer.apple.com/published/b2e540a05def72391939e2cef1050d68/media-2279158%402x.png)
+![A screenshot of a wheels-style date pickering showing the selected value of 1 hour and 15 minutes.](/images/com.apple.uikit/media-2279158@2x.png)
 
-> **Note**:  You can use a [`UIDatePicker`](uidatepicker.md) object for the selection of a time interval, but you must use an [`Timer`](https://developer.apple.com/documentation/Foundation/Timer) object to implement the actual timer behavior. For more information, see [`Timer`](https://developer.apple.com/documentation/Foundation/Timer).
+> **Note**:  You can use a [`UIDatePicker`](uidatepicker.md) object for the selection of a time interval, but you must use an [`Timer`](https://developer.apple.com/documentation/foundation/timer) object to implement the actual timer behavior. For more information, see [`Timer`](https://developer.apple.com/documentation/foundation/timer).
 
 ##### Respond to User Interaction
 
@@ -161,19 +161,19 @@ For further information about making iOS controls accessible, see the [`Accessib
 ### Inherits From
 - [UIControl](uicontrol.md)
 ### Conforms To
-- [CALayerDelegate](../QuartzCore/CALayerDelegate.md)
-- [CLBodyIdentifiable](../CoreLocation/CLBodyIdentifiable.md)
-- [CMBodyIdentifiable](../CoreMotion/CMBodyIdentifiable.md)
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCoding](../Foundation/NSCoding.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [NSTouchBarProvider](../AppKit/NSTouchBarProvider.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [CALayerDelegate](../quartzcore/calayerdelegate.md)
+- [CLBodyIdentifiable](../corelocation/clbodyidentifiable.md)
+- [CMBodyIdentifiable](../coremotion/cmbodyidentifiable.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCoding](../foundation/nscoding.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSTouchBarProvider](../appkit/nstouchbarprovider.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 - [UIAccessibilityIdentification](uiaccessibilityidentification.md)
 - [UIActivityItemsConfigurationProviding](uiactivityitemsconfigurationproviding.md)
 - [UIAppearance](uiappearance.md)

@@ -36,12 +36,12 @@ enum MPSImageEdgeMode
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../Swift/BitwiseCopyable.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [RawRepresentable](../Swift/RawRepresentable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [BitwiseCopyable](../swift/bitwisecopyable.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [RawRepresentable](../swift/rawrepresentable.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 
@@ -51,7 +51,7 @@ enum MPSImageEdgeMode
   A signed coordinate with x, y, and z components.
 - [var clipRect: MTLRegion](mpscnnkernel/cliprect.md)
   An optional clip rectangle to use when writing data. Only the pixels in the clip rectangle will be overwritten.
-- [struct MTLRegion](../Metal/MTLRegion.md)
+- [struct MTLRegion](../metal/mtlregion.md)
   The bounds for a subset of an instance’s elements.
 - [var destinationFeatureChannelOffset: Int](mpscnnkernel/destinationfeaturechanneloffset.md)
   The number of channels in the destination image to skip before writing output data.

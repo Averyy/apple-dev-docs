@@ -20,7 +20,7 @@ class let stateRestorationBundleVersionKey: String
 
 #### Discussion
 
-The value of this key is an [`NSString`](https://developer.apple.com/documentation/Foundation/NSString) object that identifies the version of your app (as obtained from the `CFBundleVersion` key of your app’s `Info.plist` file) that was present when the state information was saved. You can use the value of this key to help make choices about how to proceed during state restoration. For example, if the key indicates that the state is associated with an older version of your app, you might want to avoid restoring the previous state altogether or modify the restoration process more significantly.
+The value of this key is an [`NSString`](https://developer.apple.com/documentation/foundation/nsstring) object that identifies the version of your app (as obtained from the `CFBundleVersion` key of your app’s `Info.plist` file) that was present when the state information was saved. You can use the value of this key to help make choices about how to proceed during state restoration. For example, if the key indicates that the state is associated with an older version of your app, you might want to avoid restoring the previous state altogether or modify the restoration process more significantly.
 
 ## See Also
 

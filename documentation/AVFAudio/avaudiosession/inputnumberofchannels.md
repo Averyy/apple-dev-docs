@@ -21,7 +21,7 @@ var inputNumberOfChannels: Int { get }
 
 #### Discussion
 
-You can observe changes to the value of this property by using key-value observing. For more information, see [`Using Key-Value Observing in Swift`](https://developer.apple.com/documentation/Swift/using-key-value-observing-in-swift).
+You can observe changes to the value of this property by using key-value observing. For more information, see [`Using Key-Value Observing in Swift`](https://developer.apple.com/documentation/swift/using-key-value-observing-in-swift).
 
 ## See Also
 

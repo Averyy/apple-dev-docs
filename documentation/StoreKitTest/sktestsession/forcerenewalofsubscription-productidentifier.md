@@ -24,10 +24,10 @@ func forceRenewalOfSubscription(productIdentifier: String) throws
 
 Use this method to test how your code handles subscription renewals. When you call this method, the subscription expires at the time you call the method, and a new subscription period begins.
 
-To force the subscription renewal, the testing environment changes the [`expirationDate`](https://developer.apple.com/documentation/StoreKit/Transaction/expirationDate) property on the [`Transaction`](https://developer.apple.com/documentation/StoreKit/Transaction) to the current system time. (If your app uses receipts, the receipt also shows this expiration date change). The testing environment also:
+To force the subscription renewal, the testing environment changes the [`expirationDate`](https://developer.apple.com/documentation/storekit/transaction/expirationdate) property on the [`Transaction`](https://developer.apple.com/documentation/storekit/transaction) to the current system time. (If your app uses receipts, the receipt also shows this expiration date change). The testing environment also:
 
 - Enables the subscription auto-renew state
-- Removes a pending price increase, setting it to [`Product.SubscriptionInfo.RenewalInfo.PriceIncreaseStatus.noIncreasePending`](https://developer.apple.com/documentation/StoreKit/Product/SubscriptionInfo/RenewalInfo/PriceIncreaseStatus-swift.enum/noIncreasePending)
+- Removes a pending price increase, setting it to [`Product.SubscriptionInfo.RenewalInfo.PriceIncreaseStatus.noIncreasePending`](https://developer.apple.com/documentation/storekit/product/subscriptioninfo/renewalinfo/priceincreasestatus-swift.enum/noincreasepending)
 
 The testing environment doesn’t change the billing retry state with this call.
 

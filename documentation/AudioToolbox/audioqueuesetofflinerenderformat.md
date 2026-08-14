@@ -32,8 +32,8 @@ You can also use this function to restore an audio queue to normal rendering mod
 ## Parameters
 
 - `inAQ`: The playback audio queue whose rendering mode and audio format you want to set.
-- `inFormat`: The audio format for offline rendering. The format must be some sort of linear PCM. If the format has more than one channel, it must be interleaved. For more information on the [`AudioStreamBasicDescription`](https://developer.apple.com/documentation/CoreAudioTypes/AudioStreamBasicDescription) structure, see [`Core Audio Data Types`](https://developer.apple.com/documentation/CoreAudio/core-audio-data-types). Pass `NULL` to disable offline rendering and return the audio queue to normal output to an audio device.
-- `inLayout`: The channel layout for offline rendering.  For more information on the [`AudioChannelLayout`](https://developer.apple.com/documentation/CoreAudioTypes/AudioChannelLayout) structure, see [`Core Audio Data Types`](https://developer.apple.com/documentation/CoreAudio/core-audio-data-types). Pass `NULL` when using this function to disable offline rendering.
+- `inFormat`: The audio format for offline rendering. The format must be some sort of linear PCM. If the format has more than one channel, it must be interleaved. For more information on the [`AudioStreamBasicDescription`](https://developer.apple.com/documentation/coreaudiotypes/audiostreambasicdescription) structure, see [`Core Audio Data Types`](https://developer.apple.com/documentation/coreaudio/core-audio-data-types). Pass `NULL` to disable offline rendering and return the audio queue to normal output to an audio device.
+- `inLayout`: The channel layout for offline rendering.  For more information on the [`AudioChannelLayout`](https://developer.apple.com/documentation/coreaudiotypes/audiochannellayout) structure, see [`Core Audio Data Types`](https://developer.apple.com/documentation/coreaudio/core-audio-data-types). Pass `NULL` when using this function to disable offline rendering.
 
 ## See Also
 

@@ -16,7 +16,7 @@ var alignmentRectInsets: NSEdgeInsets { get }
 
 #### Discussion
 
-The default value is an [`NSEdgeInsets`](https://developer.apple.com/documentation/Foundation/NSEdgeInsets) structure with the value `0` for each component. Custom views that draw ornamentation around their content can override this property and return insets that align with the edges of the content, excluding the ornamentation. This allows the constraint-based layout system to align views based on their content, rather than just their frame.
+The default value is an [`NSEdgeInsets`](https://developer.apple.com/documentation/foundation/nsedgeinsets) structure with the value `0` for each component. Custom views that draw ornamentation around their content can override this property and return insets that align with the edges of the content, excluding the ornamentation. This allows the constraint-based layout system to align views based on their content, rather than just their frame.
 
 Custom views whose content location can’t be expressed by a simple set of insets should override [`alignmentRect(forFrame:)`](nsview/alignmentrect(forframe:).md) and [`frame(forAlignmentRect:)`](nsview/frame(foralignmentrect:).md) to describe their custom transform between alignment rectangle and frame.
 

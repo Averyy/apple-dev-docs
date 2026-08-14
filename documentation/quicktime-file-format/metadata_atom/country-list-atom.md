@@ -7,7 +7,7 @@ An atom that lists items that are suitable for more than one country.
 
 #### Overview
 
-For more information, see [`Country list atom ('ctry')`](country_list_atom.md).
+For more information, see [`Country list atom`](country_list_atom.md).
 
 ## See Also
 

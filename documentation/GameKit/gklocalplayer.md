@@ -46,7 +46,7 @@ After the local player signs in, their account data and GameKit features are ava
   A Boolean value that indicates whether a local player has signed in to Game Center.
 - [func fetchItems(forIdentityVerificationSignature: ((URL?, Data?, Data?, UInt64, (any Error)?) -> Void)?)](gklocalplayer/fetchitems(foridentityverificationsignature:).md)
   Generates a signature that you can use to authenticate the local player on your own server.
-- [static let GKPlayerAuthenticationDidChangeNotificationName: NSNotification.Name](../Foundation/NSNotification/Name-swift.struct/GKPlayerAuthenticationDidChangeNotificationName.md)
+- [static let GKPlayerAuthenticationDidChangeNotificationName: NSNotification.Name](../foundation/nsnotification/name-swift.struct/gkplayerauthenticationdidchangenotificationname.md)
   A notification that posts after GameKit authenticates the local player.
 ### Determining Whether the Player Is Underage or Restricted
 - [var isUnderage: Bool](gklocalplayer/isunderage.md)
@@ -64,7 +64,7 @@ After the local player signs in, their account data and GameKit features are ava
   Loads the local player’s friends list if the local player and their friends grant access.
 - [func loadFriends(identifiedBy: [String], completionHandler: ([GKPlayer]?, (any Error)?) -> Void)](gklocalplayer/loadfriends(identifiedby:completionhandler:).md)
   Loads the player’s friends list, scoped by the identifiers, if the player and their friends grant access.
-- [NSGKFriendListUsageDescription](../BundleResources/Information-Property-List/NSGKFriendListUsageDescription.md)
+- [NSGKFriendListUsageDescription](../bundleresources/information-property-list/nsgkfriendlistusagedescription.md)
   A message that tells people why the app needs access to their Game Center friends list.
 - [func loadChallengableFriends(completionHandler: (([GKPlayer]?, (any Error)?) -> Void)?)](gklocalplayer/loadchallengablefriends(completionhandler:).md)
   Loads players to whom the local player can issue a challenge.
@@ -113,16 +113,16 @@ After the local player signs in, their account data and GameKit features are ava
 ### Inherits From
 - [GKPlayer](gkplayer.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [Copyable](../Swift/Copyable.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Escapable](../Swift/Escapable.md)
+- [CVarArg](../swift/cvararg.md)
+- [Copyable](../swift/copyable.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Escapable](../swift/escapable.md)
 - [GKSavedGameListener](gksavedgamelistener.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCopying](../Foundation/NSCopying.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [Hashable](../swift/hashable.md)
+- [NSCopying](../foundation/nscopying.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 
@@ -138,9 +138,9 @@ After the local player signs in, their account data and GameKit features are ava
   A class that provides common data and methods for the different player objects.
 - [protocol GKLocalPlayerListener](gklocalplayerlistener.md)
   A protocol that handles events for Game Center players.
-- [static let GKPlayerAuthenticationDidChangeNotificationName: NSNotification.Name](../Foundation/NSNotification/Name-swift.struct/GKPlayerAuthenticationDidChangeNotificationName.md)
+- [static let GKPlayerAuthenticationDidChangeNotificationName: NSNotification.Name](../foundation/nsnotification/name-swift.struct/gkplayerauthenticationdidchangenotificationname.md)
   A notification that posts after GameKit authenticates the local player.
-- [static let GKPlayerDidChangeNotificationName: NSNotification.Name](../Foundation/NSNotification/Name-swift.struct/GKPlayerDidChangeNotificationName.md)
+- [static let GKPlayerDidChangeNotificationName: NSNotification.Name](../foundation/nsnotification/name-swift.struct/gkplayerdidchangenotificationname.md)
   A notification that posts when a player object’s data changes.
 
 

@@ -10,7 +10,7 @@ App developers can get alternative distribution package IDs through the App Stor
 
 The alternative distribution package ID is valid for distributing a marketplace app, an app on an alternative marketplace, or through web distribution. To learn more about creating alternative distribution packages, see [`Creating alternative distribution packages`](creating-alternative-distribution-packages.md).
 
-To learn more about ingesting alternative distribution packages as a marketplace, see [`Processing alternative app marketplace notifications`](https://developer.apple.com/documentation/appdistribution/processing-alternative-marketplace-notifications).
+To learn more about ingesting alternative distribution packages as a marketplace, see [`Processing alternative app marketplace notifications`](https://developer.apple.com/documentation/marketplacekit/processing-alternative-marketplace-notifications).
 
 ## Topics
 

@@ -20,8 +20,8 @@ An initialized `QCRenderer` object or `nil` if initialization is not successful.
 
 ## Parameters
 
-- `context`: An [`NSOpenGLContext`](https://developer.apple.com/documentation/AppKit/NSOpenGLContext) object. The object that you supply must have both a color and a depth buffer.
-- `format`: An  [`NSOpenGLPixelFormat`](https://developer.apple.com/documentation/AppKit/NSOpenGLPixelFormat)  object.
+- `context`: An [`NSOpenGLContext`](https://developer.apple.com/documentation/appkit/nsopenglcontext) object. The object that you supply must have both a color and a depth buffer.
+- `format`: An  [`NSOpenGLPixelFormat`](https://developer.apple.com/documentation/appkit/nsopenglpixelformat)  object.
 - `path`: A string that specifies the location of a composition(`.qtz`) file.
 
 ## See Also

@@ -24,13 +24,13 @@ Instruments includes a default template you use when analyzing your app’s inte
 2. In the Template Selection window, select the Foundation Models template.
 3. Click Choose.
 
-![A screenshot that shows the Template Selection window with the Foundation Models](https://docs-assets.developer.apple.com/published/5e5ee21d294f4845e34a2a24a0bfddbf/analyzing-the-runtime-performance-of-your-foundation-models-app-template-selector%402x.png)
+![A screenshot that shows the Template Selection window with the Foundation Models](/images/com.apple.foundationmodels/analyzing-the-runtime-performance-of-your-foundation-models-app-template-selector@2x.png)
 
 #### Record App Interactions to Gather Data
 
 Before reviewing your app’s performance, check that your development device isn’t under thermal pressure or busy with other work. This helps you ensure that the device is in a good performance state, which can influence your analysis. When you record a run, use your app as normal and focus on interactions that perform requests to the model. Begin gathering data by clicking the Record Trace button in the upper-left corner or by choosing File > Record Trace:
 
-![A screenshot of Instruments that shows the record button in the upper-left](https://docs-assets.developer.apple.com/published/2071901785d7cf1f4d991e1c155a84ff/analyzing-the-runtime-performance-of-your-foundation-models-app-record%402x.png)
+![A screenshot of Instruments that shows the record button in the upper-left](/images/com.apple.foundationmodels/analyzing-the-runtime-performance-of-your-foundation-models-app-record@2x.png)
 
 Because a recording captures and stores all Foundation Models prompts and responses in an unencrypted form, Instruments presents an alert when you begin recording. The captured data can include sensitive information, so handle trace files accordingly, and use this feature in a manner consistent with the [`Apple Developer Program License Agreement`](https://developer.apple.comhttps://developer.apple.com/support/terms/apple-developer-program-license-agreement/). After starting the recording, perform actions that interact with the model, wait for the responses to complete, then click Stop to end recording.
 
@@ -38,7 +38,7 @@ Because a recording captures and stores all Foundation Models prompts and respon
 
 The primary timeline shows events the instrument measures. The width of each component on the timeline indicates latency.
 
-![A screenshot of Instruments displaying the Foundation Models instrument track](https://docs-assets.developer.apple.com/published/7b0fffd5593cdb6f4c121f03a4cf776e/analyzing-the-runtime-performance-of-your-foundation-models-app-record-analysis%402x.png)
+![A screenshot of Instruments displaying the Foundation Models instrument track](/images/com.apple.foundationmodels/analyzing-the-runtime-performance-of-your-foundation-models-app-record-analysis@2x.png)
 
 The Foundation Models track appears in your timeline, with several lanes that provide insight into your recording:
 
@@ -58,7 +58,7 @@ The Inspector shows several details for the request, like the instructions, prom
 3. Select the Model Inference you want to analyze.
 4. If the inspector isn’t visible, choose View > Show Inspector.
 
-![A screenshot of Instruments displaying the Inspector. The inspector displays](https://docs-assets.developer.apple.com/published/d2c98d58dc9fa79313699aa471a92514/analyzing-the-runtime-performance-of-your-foundation-models-app-token-duration%402x.png)
+![A screenshot of Instruments displaying the Inspector. The inspector displays](/images/com.apple.foundationmodels/analyzing-the-runtime-performance-of-your-foundation-models-app-token-duration@2x.png)
 
 The Inspector shows a breakdown of duration details:
 
@@ -76,7 +76,7 @@ The cost of text varies between characters and symbols versus discrete words. Fo
 
 High token counts affect both initial processing time and memory usage. Use the inspector to view a detailed breakdown of token metrics for the request:
 
-![A screenshot of Instruments displaying the Inspector. The inspector displays](https://docs-assets.developer.apple.com/published/297704ddc6a5a5643f0be378aa373d40/analyzing-the-runtime-performance-of-your-foundation-models-app-token-metrics%402x.png)
+![A screenshot of Instruments displaying the Inspector. The inspector displays](/images/com.apple.foundationmodels/analyzing-the-runtime-performance-of-your-foundation-models-app-token-metrics@2x.png)
 
 The Inspector shows a variety of token metrics:
 
@@ -115,7 +115,7 @@ After you make this change, record a new trace and use the Inspector panel to ch
 
 - [Evaluating prompts to measure performance and improve model responses](evaluating-prompts-to-measure-performance-and-improve-model-responses.md)
   Systematically measure and improve the quality of your prompts by using structured evaluation.
-- [Evaluating language model responses](../Evaluations/evaluating-language-model-responses.md)
+- [Evaluating language model responses](../evaluations/evaluating-language-model-responses.md)
   Build an evaluation that runs your intelligence-powered feature against samples and scores each response.
 
 

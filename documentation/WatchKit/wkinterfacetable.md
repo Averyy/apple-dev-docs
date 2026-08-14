@@ -52,7 +52,7 @@ After adding a table object to your storyboard, configure the row controller tha
 
 To configure the contents of a row controller, drag elements from the library and drop them onto the row’s group. For most rows, use a group object as the top-level object. You can also nest group objects to create vertical and horizontal arrangements for your interface objects. To that group, add the objects needed to display the row’s contents.
 
-![A screenshot showing a Table in a storyboard, with the row controller and the corresponding row highlighted.](https://docs-assets.developer.apple.com/published/ba9c3f732c2aa7f009883c9478a4220f/media-1965698%402x.png)
+![A screenshot showing a Table in a storyboard, with the row controller and the corresponding row highlighted.](/images/com.apple.watchkit/media-1965698@2x.png)
 
 Each row controller needs a class to manage the contents of the row at runtime. The class acts as a proxy for the row in your code and stores the outlets you need to configure the contents of the row.
 
@@ -195,12 +195,12 @@ For each row controller in your table, The following table lists the attributes 
 ### Inherits From
 - [WKInterfaceObject](wkinterfaceobject.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

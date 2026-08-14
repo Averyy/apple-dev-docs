@@ -19,7 +19,7 @@ static func convertColor(_ color: UIColor, from: UIUserInterfaceStyle, to: UIUse
 
 #### Return Value
 
-A [`UIColor`](https://developer.apple.com/documentation/UIKit/UIColor) from the user interface style specified in the `to` parameter.
+A [`UIColor`](https://developer.apple.com/documentation/uikit/uicolor) from the user interface style specified in the `to` parameter.
 
 ## Parameters
 

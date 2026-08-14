@@ -31,7 +31,7 @@ This method behaves similarly to [`string(from:style:)`](cncontactformatter/stri
 
 - `contact`: The contact whose name is to be formatted.
 - `style`: The formatting style to be used for the contact name.
-- `attributes`: The default attributes to use. For more information, see [`Formatter`](https://developer.apple.com/documentation/Foundation/Formatter).
+- `attributes`: The default attributes to use. For more information, see [`Formatter`](https://developer.apple.com/documentation/foundation/formatter).
 
 ## See Also
 

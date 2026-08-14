@@ -20,7 +20,7 @@ mutating func transform(using transform: CGAffineTransform)
 
 ## Parameters
 
-- `transform`: The [`CGAffineTransform`](https://developer.apple.com/documentation/CoreFoundation/CGAffineTransform) to apply when transforming the contents of this drawing.
+- `transform`: The [`CGAffineTransform`](https://developer.apple.com/documentation/corefoundation/cgaffinetransform) to apply when transforming the contents of this drawing.
 
 ## See Also
 

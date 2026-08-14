@@ -20,7 +20,7 @@ A promise that resolves with an [`EtaResponse`](etaresponse.md) on success, or r
 
 #### Discussion
 
-To get a set of estimated arrival times, provide an [`EtaRequestOptions`](etarequestoptions.md) object when you call the [`eta(request)`](directions/eta.md) method. You can provide up to 10 destinations. The server returns an error if you request more than 10 destinations in a single request.
+To get a set of estimated arrival times, provide an [`EtaRequestOptions`](etarequestoptions.md) object when you call the [`eta()`](directions/eta.md) method. You can provide up to 10 destinations. The server returns an error if you request more than 10 destinations in a single request.
 
 Pass an `AbortSignal` from an `AbortController` to the [`signal`](etarequestoptions/signal.md) option to allow the controller to cancel a pending request. When the controller aborts, the promise it returns rejects with a `DOMException` whose `name` is `"AbortError"`.
 

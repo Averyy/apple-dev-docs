@@ -28,7 +28,7 @@ A color object contains a set of components (such as red, green, and blue) that 
 
 Color objects provide a fast and convenient way to manage and set colors, especially colors that are used repeatedly. Drawing operations use color objects for setting fill and stroke colors, managing alpha, and setting color with a pattern.
 
-[`CGColor`](cgcolor.md) is derived from [`CFTypeRef`](https://developer.apple.com/documentation/CoreFoundation/CFTypeRef) and inherits the properties that all Core Foundation types have in common.
+[`CGColor`](cgcolor.md) is derived from [`CFTypeRef`](https://developer.apple.com/documentation/corefoundation/cftyperef) and inherits the properties that all Core Foundation types have in common.
 
 ## Topics
 
@@ -87,14 +87,14 @@ Color objects provide a fast and convenient way to manage and set colors, especi
 ## Relationships
 
 ### Conforms To
-- [Copyable](../Swift/Copyable.md)
-- [Decodable](../Swift/Decodable.md)
-- [Encodable](../Swift/Encodable.md)
-- [Equatable](../Swift/Equatable.md)
-- [Escapable](../Swift/Escapable.md)
-- [Hashable](../Swift/Hashable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Copyable](../swift/copyable.md)
+- [Decodable](../swift/decodable.md)
+- [Encodable](../swift/encodable.md)
+- [Equatable](../swift/equatable.md)
+- [Escapable](../swift/escapable.md)
+- [Hashable](../swift/hashable.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

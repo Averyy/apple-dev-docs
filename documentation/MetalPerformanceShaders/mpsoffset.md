@@ -35,8 +35,8 @@ struct MPSOffset
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../Swift/BitwiseCopyable.md)
-- [Sendable](../Swift/Sendable.md)
+- [BitwiseCopyable](../swift/bitwisecopyable.md)
+- [Sendable](../swift/sendable.md)
 
 ## See Also
 
@@ -44,7 +44,7 @@ struct MPSOffset
   The position of the destination image’s clip rectangle origin, relative to the source image.
 - [var clipRect: MTLRegion](mpscnnkernel/cliprect.md)
   An optional clip rectangle to use when writing data. Only the pixels in the clip rectangle will be overwritten.
-- [struct MTLRegion](../Metal/MTLRegion.md)
+- [struct MTLRegion](../metal/mtlregion.md)
   The bounds for a subset of an instance’s elements.
 - [var destinationFeatureChannelOffset: Int](mpscnnkernel/destinationfeaturechanneloffset.md)
   The number of channels in the destination image to skip before writing output data.

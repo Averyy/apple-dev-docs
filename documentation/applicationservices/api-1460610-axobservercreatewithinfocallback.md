@@ -18,6 +18,9 @@ func AXObserverCreateWithInfoCallback(_ application: pid_t, _ callback: AXObserv
 
 If unsuccessful, `AXObserverCreateWithInfoCallback` may return one of the following error codes, among others:
 
+- **`kAXErrorIllegalArgument`**: One or more of the arguments is an illegal value.
+- **`kAXErrorFailure`**: There is some sort of system memory failure.
+
 #### Discussion
 
 When an observed notification is received, it is passed to [`AXObserverCallbackWithInfo`](axobservercallbackwithinfo.md).

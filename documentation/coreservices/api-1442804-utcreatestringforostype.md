@@ -24,7 +24,7 @@ The UTI functions assume that all alternate identifier tags can be represented a
 
 ## Parameters
 
-- `inOSType`: The   to convert.
+- `inOSType`: The `OSType` to convert.
 
 ## See Also
 

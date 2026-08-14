@@ -19,7 +19,7 @@ func addAttachmentData(_ attachmentData: Data, typeIdentifier uti: String, filen
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/Swift/true) if the attachment data was successfully added to the message, or [`false`](https://developer.apple.com/documentation/Swift/false) otherwise.
+[`true`](https://developer.apple.com/documentation/swift/true) if the attachment data was successfully added to the message, or [`false`](https://developer.apple.com/documentation/swift/false) otherwise.
 
 #### Discussion
 
@@ -27,7 +27,7 @@ This method is especially useful when the attachment you want to add to a messag
 
 ## Parameters
 
-- `attachmentData`: Content in the form of an [`NSData`](https://developer.apple.com/documentation/Foundation/NSData) object to attach to the message. Must not be `nil`.
+- `attachmentData`: Content in the form of an [`NSData`](https://developer.apple.com/documentation/foundation/nsdata) object to attach to the message. Must not be `nil`.
 - `uti`: A valid Uniform Type Identifier (UTI) appropriate for the attachment data. See [`Uniform Type Identifiers Reference`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Miscellaneous/Reference/UTIRef/Introduction/Introduction.html#//apple_ref/doc/uid/TP40009257). Must not be `nil`.
 - `filename`: The name to present to the user, in the message UI, for the data attachment.
 

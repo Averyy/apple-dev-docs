@@ -39,8 +39,8 @@ This class extends the standard text input traits to control cursor and selectio
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [UITextInputTraits](../UIKit/UITextInputTraits.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [UITextInputTraits](../uikit/uitextinputtraits.md)
 
 ## See Also
 

@@ -19,7 +19,7 @@ case play
 
 #### Discussion
 
-![None](https://docs-assets.developer.apple.com/published/646622700589f91f24be85a458d53ec6/media-2934510%402x.png)
+![None](/images/com.apple.uikit/media-2934510@2x.png)
 
 ## See Also
 

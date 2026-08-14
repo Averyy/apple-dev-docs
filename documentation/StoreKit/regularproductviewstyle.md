@@ -34,8 +34,8 @@ A style for a product view that uses a standard, platform-appropriate layout.
 
 ### Conforms To
 - [ProductViewStyle](productviewstyle.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

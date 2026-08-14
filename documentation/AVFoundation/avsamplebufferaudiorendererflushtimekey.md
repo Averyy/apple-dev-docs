@@ -22,7 +22,7 @@ let AVSampleBufferAudioRendererFlushTimeKey: String
 
 #### Discussion
 
-The value for this key is an [`NSValue`](https://developer.apple.com/documentation/Foundation/NSValue) object that wraps a [`CMTime`](https://developer.apple.com/documentation/CoreMedia/CMTime) value.
+The value for this key is an [`NSValue`](https://developer.apple.com/documentation/foundation/nsvalue) object that wraps a [`CMTime`](https://developer.apple.com/documentation/coremedia/cmtime) value.
 
 ## See Also
 

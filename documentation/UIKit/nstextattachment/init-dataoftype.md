@@ -36,7 +36,7 @@ When either `contentData` or `uti` is `nil`, TextKit considers the receiver to b
 
 ## See Also
 
-- [convenience init(fileWrapper: FileWrapper?)](../AppKit/NSTextAttachment/init(fileWrapper:).md)
+- [convenience init(fileWrapper: FileWrapper?)](../appkit/nstextattachment/init(filewrapper:).md)
   Creates a text attachment object to contain the specified file wrapper.
 - [init(image: UIImage)](nstextattachment/init(image:).md)
   Creates a text attachment object to contain the specified image.

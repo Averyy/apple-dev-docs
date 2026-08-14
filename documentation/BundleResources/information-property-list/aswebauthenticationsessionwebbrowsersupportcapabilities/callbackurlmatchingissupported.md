@@ -14,7 +14,7 @@ A Boolean that indicates whether the app can handle callbacks to match authentic
 
 #### Discussion
 
-Set the corresponding value to `YES` to indicate that your browser app supports using an [`ASWebAuthenticationSession.Callback`](https://developer.apple.com/documentation/AuthenticationServices/ASWebAuthenticationSession/Callback) to process authentication redirect URLs.
+Set the corresponding value to `YES` to indicate that your browser app supports using an [`ASWebAuthenticationSession.Callback`](https://developer.apple.com/documentation/authenticationservices/aswebauthenticationsession/callback) to process authentication redirect URLs.
 
 > ❗ **Important**: If the system doesn’t find this key in the default browser app’s `Info.plist`, it sends the request to Safari instead.
 

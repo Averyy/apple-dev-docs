@@ -25,7 +25,7 @@ A response indicating whether the person declared their age range. If the person
 
 Regional requirements may override your age gates based on the person’s location.
 
-Use [`requestAgeRange`](https://developer.apple.com/documentation/SwiftUI/EnvironmentValues/requestAgeRange) with SwiftUI environment values to request age ranges in response to user interactions:
+Use [`requestAgeRange`](https://developer.apple.com/documentation/swiftui/environmentvalues/requestagerange) with SwiftUI environment values to request age ranges in response to user interactions:
 
 ```swift
 struct ContentView: View {

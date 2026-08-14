@@ -20,7 +20,7 @@ func attributeSet(for object: NSManagedObject) -> CSSearchableItemAttributeSet?
 
 #### Return Value
 
-An instance of [`CSSearchableItemAttributeSet`](https://developer.apple.com/documentation/CoreSpotlight/CSSearchableItemAttributeSet) that provides the searchable item’s attributes.
+An instance of [`CSSearchableItemAttributeSet`](https://developer.apple.com/documentation/corespotlight/cssearchableitemattributeset) that provides the searchable item’s attributes.
 
 #### Discussion
 

@@ -26,9 +26,9 @@ func specifyHistogram(_ histogram: vImage.PixelBuffer<Format>.HistogramFFFF, des
 
 The example below shows a source image (bottom left) and a histogram reference image (top left), with the histogram specification output on the right:
 
-![Photos showing original image, histogram source image, and histogram specified result.](https://docs-assets.developer.apple.com/published/227e8dda814cb49fe07834e4436fdc61/media-3958172%402x.png)
+![Photos showing original image, histogram source image, and histogram specified result.](/images/com.apple.accelerate/media-3958172@2x.png)
 
-The code below initializes the source and reference buffers from the [`CGImage`](https://developer.apple.com/documentation/CoreGraphics/CGImage) instances `sourceImage` and `referenceImage` respectively:
+The code below initializes the source and reference buffers from the [`CGImage`](https://developer.apple.com/documentation/coregraphics/cgimage) instances `sourceImage` and `referenceImage` respectively:
 
 ```swift
 var cgImageFormat = vImage_CGImageFormat(

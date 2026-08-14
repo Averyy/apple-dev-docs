@@ -26,7 +26,7 @@ Composite attributes support all attribute types except the following:
 
 - [`NSAttributeType.undefinedAttributeType`](nsattributetype/undefinedattributetype.md)
 - [`NSAttributeType.objectIDAttributeType`](nsattributetype/objectidattributetype.md)
-- [`NSAttributeType.binaryDataAttributeType`](nsattributetype/binarydataattributetype.md) (when [`allowsExternalBinaryDataStorage`](nsattributedescription/allowsexternalbinarydatastorage.md) is [`true`](https://developer.apple.com/documentation/Swift/true))
+- [`NSAttributeType.binaryDataAttributeType`](nsattributetype/binarydataattributetype.md) (when [`allowsExternalBinaryDataStorage`](nsattributedescription/allowsexternalbinarydatastorage.md) is [`true`](https://developer.apple.com/documentation/swift/true))
 
 For more information, see [`NSCompositeAttributeDescription`](nscompositeattributedescription.md).
 

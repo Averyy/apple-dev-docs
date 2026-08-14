@@ -18,7 +18,7 @@ optional func panel(_ sender: Any, didChangeToDirectoryURL url: URL?)
 ## Parameters
 
 - `sender`: The panel whose directory changed.
-- `url`: The URL of the new directory, or `nil` if it can’t be represented by an [`NSURL`](https://developer.apple.com/documentation/Foundation/NSURL) object.
+- `url`: The URL of the new directory, or `nil` if it can’t be represented by an [`NSURL`](https://developer.apple.com/documentation/foundation/nsurl) object.
 
 ## See Also
 

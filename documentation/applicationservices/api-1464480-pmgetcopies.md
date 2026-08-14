@@ -21,7 +21,7 @@ A result code. See [`Result Codes`](core_printing#1670007.md).
 ## Parameters
 
 - `printSettings`: The print settings object whose number of copies you want to obtain.
-- `copies`: A pointer to your   variable. On return, the variable contains the number of copies requested by the user.
+- `copies`: A pointer to your `UInt32` variable. On return, the variable contains the number of copies requested by the user.
 
 ## See Also
 

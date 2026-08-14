@@ -48,7 +48,7 @@ struct HueRotation: View {
 }
 ```
 
-![Shows the effect of hueRotation on a linear](https://docs-assets.developer.apple.com/published/81988d93452907f4fe2b3a893f619e75/SwiftUI-hueRotation%402x.png)
+![Shows the effect of hueRotation on a linear](/images/com.apple.SwiftUI/SwiftUI-hueRotation@2x.png)
 
 ## Parameters
 

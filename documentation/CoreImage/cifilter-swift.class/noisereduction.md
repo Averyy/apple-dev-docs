@@ -29,8 +29,8 @@ This method applies the noise reduction filter to an image. The effect calculate
 
 The morphology noise reduction filter uses the following properties:
 
-- **`noiseLevel`**: A `float` representing the amount of noise reduction as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
-- **`sharpness`**: A `float` representing the sharpness of the final image as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+- **`noiseLevel`**: A `float` representing the amount of noise reduction as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
+- **`sharpness`**: A `float` representing the sharpness of the final image as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
 - **`inputImage`**: A [`CIImage`](ciimage.md) representing the input image to apply the filter to.
 
 The following code creates a filter that reduces noise in the input image:
@@ -46,7 +46,7 @@ The following code creates a filter that reduces noise in the input image:
     }
 ```
 
-![Two photographs of a beach at sunset with multiple palm trees. The photo on the left is in focus. In the photo on the right, a noise reduction filter has been applied, and the edges of the objects such as the palm fronds have more sharpness and detail.](https://docs-assets.developer.apple.com/published/f55843916aac0bf24454086ba80927e1/media-3544968%402x.png)
+![Two photographs of a beach at sunset with multiple palm trees. The photo on the left is in focus. In the photo on the right, a noise reduction filter has been applied, and the edges of the objects such as the palm fronds have more sharpness and detail.](/images/com.apple.coreimage/media-3544968@2x.png)
 
 ## See Also
 

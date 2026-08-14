@@ -8,7 +8,7 @@ Build, test, and submit your app with Apple’s integrated development environme
 
 Xcode is the suite of tools you use to build apps for Apple platforms. Use Xcode to manage your entire development workflow — from creating your app to testing, optimizing, and submitting it to the App Store.
 
-![Screenshot of MacBook Pro running Xcode that shows SwiftUI code with a preview of an iOS device.](https://docs-assets.developer.apple.com/published/61c5a3dc437ab297185fa03e2c4e5067/xcode-overview-hero%402x.png)
+![Screenshot of MacBook Pro running Xcode that shows SwiftUI code with a preview of an iOS device.](/images/com.apple.Xcode/xcode-overview-hero@2x.png)
 
 Xcode includes a world-class source editor with code completion, source control, and a powerful debugger. Add playground macros to run code snippets, and add previews to see your UI as you build it. Customize the toolbar and apply themes to your workspace or projects.
 
@@ -37,7 +37,7 @@ Xcode also includes several tools to help you rapidly develop and test your app:
   Iterate designs quickly and preview your apps’ displays across different Apple devices.
 - [Building and running an app](building-and-running-an-app.md)
   Compile your source files and assemble an app bundle to run on a device or simulator.
-- [Xcode updates](../Updates/Xcode.md)
+- [Xcode updates](../updates/xcode.md)
   Learn about important changes to Xcode.
 ### Xcode IDE
 - [Projects and workspaces](projects-and-workspaces.md)
@@ -64,7 +64,7 @@ Xcode also includes several tools to help you rapidly develop and test your app:
   Add app icons, images, strings, data files, machine learning models, and other resources to your projects, and manage how you load them at runtime.
 - [Localization](localization.md)
   Expand the market for your app by supporting multiple languages and regions.
-- [Accessibility Inspector](../Accessibility/accessibility-inspector.md)
+- [Accessibility Inspector](../accessibility/accessibility-inspector.md)
   Reveal how your app represents itself to people using accessibility features.
 ### Documentation
 - [Writing documentation](writing-documentation.md)

@@ -51,7 +51,7 @@ When implementing the methods of this protocol, you must convert coordinate valu
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 ### Inherited By
 - [UITextCursorView](uitextcursorview.md)
 - [UITextSelectionHandleView](uitextselectionhandleview.md)

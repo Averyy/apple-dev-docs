@@ -24,7 +24,7 @@ case easeIn
 
 By creating two separate actions, a [`moveTo(x:duration:)`](skaction/moveto(x:duration:).md) and a [`moveTo(y:duration:)`](skaction/moveto(y:duration:).md), and setting the former to [`SKActionTimingMode.easeIn`](skactiontimingmode/easein.md), you can visualize the effect of this timing mode by tracing the path of a circular shape node running the actions in a group:
 
-![Visualizing ease-in pacing](https://docs-assets.developer.apple.com/published/7895212b238c557342d596909bd37941/media-2743318%402x.png)
+![Visualizing ease-in pacing](/images/com.apple.spritekit/media-2743318@2x.png)
 
 ## See Also
 

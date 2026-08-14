@@ -11,7 +11,7 @@ Integrate an alternative browser engine into your web browser app.
 
 #### Overview
 
-Use the `BrowserEngineCore` framework to support low-level functions for your alternative browser engine that renders its UI using [`BrowserEngineKit`](https://developer.apple.com/documentation/BrowserEngineKit). For more information on developing web browser apps, see [`Designing your browser architecture`](https://developer.apple.com/documentation/BrowserEngineKit/designing-your-browser-architecture).
+Use the `BrowserEngineCore` framework to support low-level functions for your alternative browser engine that renders its UI using [`BrowserEngineKit`](https://developer.apple.com/documentation/browserenginekit). For more information on developing web browser apps, see [`Designing your browser architecture`](https://developer.apple.com/documentation/browserenginekit/designing-your-browser-architecture).
 
 ## Topics
 

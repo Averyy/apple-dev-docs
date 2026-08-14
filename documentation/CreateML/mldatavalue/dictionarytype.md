@@ -34,14 +34,14 @@ struct DictionaryType
 ## Relationships
 
 ### Conforms To
-- [Collection](../Swift/Collection.md)
-- [Copyable](../Swift/Copyable.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Escapable](../Swift/Escapable.md)
+- [Collection](../swift/collection.md)
+- [Copyable](../swift/copyable.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Escapable](../swift/escapable.md)
 - [MLDataValueConvertible](mldatavalueconvertible.md)
-- [Sequence](../Swift/Sequence.md)
+- [Sequence](../swift/sequence.md)
 
 ## See Also
 

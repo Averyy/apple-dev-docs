@@ -41,7 +41,7 @@ videoEntity.components.set(videoPlayerComponent)
 
 ## Parameters
 
-- `avPlayer`: An [`AVPlayer`](https://developer.apple.com/documentation/AVFoundation/AVPlayer) instance.
+- `avPlayer`: An [`AVPlayer`](https://developer.apple.com/documentation/avfoundation/avplayer) instance.
 
 ## See Also
 

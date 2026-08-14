@@ -56,7 +56,7 @@ For more information about multithreading and concurrent programming, see [`Conc
 
 iPhone, Apple Watch, and visionOS each have their own HealthKit store. iPadOS 17 and later also has its own HealthKit store. It is also available on iPadOS apps running on Vision Pro. HealthKit automatically syncs data between these devices. To save space, old data is periodically purged from Apple Watch. Use [`earliestPermittedSampleDate()`](hkhealthstore/earliestpermittedsampledate().md) to determine the earliest samples available on Apple Watch.
 
-While the HealthKit framework is available on iPadOS 16 and earlier and on MacOS 13 and later, these devices don’t have a copy of the HealthKit store. This means you can include HealthKit code in apps running on these devices, simplifying the creation of multiplatform apps. However, they can’t read or write HealthKit data, and calls to [`isHealthDataAvailable()`](hkhealthstore/ishealthdataavailable().md) return [`false`](https://developer.apple.com/documentation/Swift/false).
+While the HealthKit framework is available on iPadOS 16 and earlier and on MacOS 13 and later, these devices don’t have a copy of the HealthKit store. This means you can include HealthKit code in apps running on these devices, simplifying the creation of multiplatform apps. However, they can’t read or write HealthKit data, and calls to [`isHealthDataAvailable()`](hkhealthstore/ishealthdataavailable().md) return [`false`](https://developer.apple.com/documentation/swift/false).
 
 ## See Also
 
@@ -66,7 +66,7 @@ While the HealthKit framework is available on iPadOS 16 and earlier and on MacOS
   Request permission to read and share data in your app.
 - [Protecting user privacy](protecting-user-privacy.md)
   Respect and safeguard your user’s privacy.
-- [HealthKit updates](../Updates/HealthKit.md)
+- [HealthKit updates](../updates/healthkit.md)
   Learn about important changes to HealthKit.
 - [HealthKitUI](../healthkitui/healthkitui.md)
   Display user interface that enables a person to view and interact with their health data.

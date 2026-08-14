@@ -6,7 +6,7 @@ Update your apps to use new features, and test your apps against API changes.
 
 #### Overview
 
-The macOS 12 SDK provides support to develop apps for Mac computers running macOS Monterey 12.0.1. The SDK comes bundled with Xcode 13.1, available from the Mac App Store. For information on the compatibility requirements for Xcode 13.1, see [`Xcode 13.1 Release Notes`](https://developer.apple.com/documentation/Xcode-Release-Notes/xcode-13_1-release-notes).
+The macOS 12 SDK provides support to develop apps for Mac computers running macOS Monterey 12.0.1. The SDK comes bundled with Xcode 13.1, available from the Mac App Store. For information on the compatibility requirements for Xcode 13.1, see [`Xcode 13.1 Release Notes`](https://developer.apple.com/documentation/xcode-release-notes/xcode-13_1-release-notes).
 
 ##### Appkit
 
@@ -22,7 +22,7 @@ The macOS 12 SDK provides support to develop apps for Mac computers running macO
 
 ###### Known Issues
 
-- `NSExpression` immediately forbids certain operations that have significant side effects, like creating and destroying objects. Additionally, casting string class names into Class objects with `NSConstantValueExpression` is deprecated. (84017178) **Workaround:** Pass temporary objects to `NSExpression` in the context parameter of [`expressionValue(with:context:)`](https://developer.apple.com/documentation/Foundation/NSExpression/expressionValue(with:context:)), or with `NSPredicate` as the `substitutionVariables` parameter of [`evaluate(with:substitutionVariables:)`](https://developer.apple.com/documentation/Foundation/NSPredicate/evaluate(with:substitutionVariables:)). You can create a derived predicate with all the substitution variables replaced (bound), using [`withSubstitutionVariables(_:)`](https://developer.apple.com/documentation/Foundation/NSPredicate/withSubstitutionVariables(_:)) on an existing `NSPredicate` so that code using the object can continue to use a simple `evaluate(with object: Any?)` invocation.
+- `NSExpression` immediately forbids certain operations that have significant side effects, like creating and destroying objects. Additionally, casting string class names into Class objects with `NSConstantValueExpression` is deprecated. (84017178) **Workaround:** Pass temporary objects to `NSExpression` in the context parameter of [`expressionValue(with:context:)`](https://developer.apple.com/documentation/foundation/nsexpression/expressionvalue(with:context:)), or with `NSPredicate` as the `substitutionVariables` parameter of [`evaluate(with:substitutionVariables:)`](https://developer.apple.com/documentation/foundation/nspredicate/evaluate(with:substitutionvariables:)). You can create a derived predicate with all the substitution variables replaced (bound), using [`withSubstitutionVariables(_:)`](https://developer.apple.com/documentation/foundation/nspredicate/withsubstitutionvariables(_:)) on an existing `NSPredicate` so that code using the object can continue to use a simple `evaluate(with object: Any?)` invocation.
 
 ##### Icloud
 
@@ -36,13 +36,13 @@ The macOS 12 SDK provides support to develop apps for Mac computers running macO
 
 ###### Known Issues
 
-- Setting the title color of a [`UIButton`](https://developer.apple.com/documentation/UIKit/UIButton) doesn’t work regardless of whether you use [`baseForegroundColor`](https://developer.apple.com/documentation/UIKit/UIButton/Configuration-swift.struct/baseForegroundColor) or [`titleColor(for:)`](https://developer.apple.com/documentation/UIKit/UIButton/titleColor(for:)). (76566253)
+- Setting the title color of a [`UIButton`](https://developer.apple.com/documentation/uikit/uibutton) doesn’t work regardless of whether you use [`baseForegroundColor`](https://developer.apple.com/documentation/uikit/uibutton/configuration-swift.struct/baseforegroundcolor) or [`titleColor(for:)`](https://developer.apple.com/documentation/uikit/uibutton/titlecolor(for:)). (76566253)
 
 ##### Maps
 
 ###### Deprecations
 
-- [`MKPinAnnotationView`](https://developer.apple.com/documentation/MapKit/MKPinAnnotationView) and [`MapPin`](https://developer.apple.com/documentation/MapKit/MapPin) are deprecated in this beta. (78536295)
+- [`MKPinAnnotationView`](https://developer.apple.com/documentation/mapkit/mkpinannotationview) and [`MapPin`](https://developer.apple.com/documentation/mapkit/mappin) are deprecated in this beta. (78536295)
 
 ###### Known Issues
 
@@ -52,7 +52,7 @@ The macOS 12 SDK provides support to develop apps for Mac computers running macO
 
 ###### Deprecations
 
-- Support for cleartext HTTP URL schemes for Proxy Automatic Configuration (PAC) is now deprecated. Use only HTTPS URL schemes for PAC. This affects all PAC configurations, including, but not limited to, configurations set via Settings, System Preferences, profiles, and `URLSession` APIs such as [`connectionProxyDictionary`](https://developer.apple.com/documentation/Foundation/URLSessionConfiguration/connectionProxyDictionary) and [`CFNetworkExecuteProxyAutoConfigurationURL(_:_:_:_:)`](https://developer.apple.com/documentation/CFNetwork/CFNetworkExecuteProxyAutoConfigurationURL(_:_:_:_:)). If you configure a cleartext HTTP PAC URL, the system may upgrade it to HTTPS during PAC file loads. Web Proxy Auto-Discovery (WPAD) Protocol via DNS isn’t affected. Dynamic Host Configuration Protocol (DHCP) Option 252 WPAD may attempt to upgrade cleartext HTTP URLs to HTTPS during PAC file loads. (61981845)
+- Support for cleartext HTTP URL schemes for Proxy Automatic Configuration (PAC) is now deprecated. Use only HTTPS URL schemes for PAC. This affects all PAC configurations, including, but not limited to, configurations set via Settings, System Preferences, profiles, and `URLSession` APIs such as [`connectionProxyDictionary`](https://developer.apple.com/documentation/foundation/urlsessionconfiguration/connectionproxydictionary) and [`CFNetworkExecuteProxyAutoConfigurationURL(_:_:_:_:)`](https://developer.apple.com/documentation/cfnetwork/cfnetworkexecuteproxyautoconfigurationurl(_:_:_:_:)). If you configure a cleartext HTTP PAC URL, the system may upgrade it to HTTPS during PAC file loads. Web Proxy Auto-Discovery (WPAD) Protocol via DNS isn’t affected. Dynamic Host Configuration Protocol (DHCP) Option 252 WPAD may attempt to upgrade cleartext HTTP URLs to HTTPS during PAC file loads. (61981845)
 
 ##### Python
 
@@ -64,7 +64,7 @@ The macOS 12 SDK provides support to develop apps for Mac computers running macO
 
 ###### Known Issues
 
-- The `StreamingInput` init on [`PhotogrammetrySession`](https://developer.apple.com/documentation/RealityKit/PhotogrammetrySession) isn’t supported. (78838906)
+- The `StreamingInput` init on [`PhotogrammetrySession`](https://developer.apple.com/documentation/realitykit/photogrammetrysession) isn’t supported. (78838906)
 
 ##### Shareplay
 
@@ -82,7 +82,7 @@ The macOS 12 SDK provides support to develop apps for Mac computers running macO
 
 ###### Deprecations
 
-- `controlProminence` is deprecated. Use the new `.borderedProminent` [`ButtonStyle`](https://developer.apple.com/documentation/SwiftUI/ButtonStyle) instead. (78908460)
+- `controlProminence` is deprecated. Use the new `.borderedProminent` [`ButtonStyle`](https://developer.apple.com/documentation/swiftui/buttonstyle) instead. (78908460)
 
 - `Fn` (`Function`) shortcut modifier is deprecated and reserved for system usage. (78627099)
 

@@ -16,18 +16,18 @@ Update your app’s configuration settings to opt in to scenes:
 
 1. Open your Xcode project.
 2. Navigate to the Info settings tab for your app target.
-3. Add the [`UIApplicationSceneManifest`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/UIApplicationSceneManifest) dictionary key in the Custom iOS Target Properties section.
+3. Add the [`UIApplicationSceneManifest`](https://developer.apple.com/documentation/bundleresources/information-property-list/uiapplicationscenemanifest) dictionary key in the Custom iOS Target Properties section.
 
-The value of this key is a dictionary, which initially contains the [`UIApplicationSupportsMultipleScenes`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/UIApplicationSceneManifest/UIApplicationSupportsMultipleScenes) key and the [`UISceneConfigurations`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/UIApplicationSceneManifest/UISceneConfigurations) key.
+The value of this key is a dictionary, which initially contains the [`UIApplicationSupportsMultipleScenes`](https://developer.apple.com/documentation/bundleresources/information-property-list/uiapplicationscenemanifest/uiapplicationsupportsmultiplescenes) key and the [`UISceneConfigurations`](https://developer.apple.com/documentation/bundleresources/information-property-list/uiapplicationscenemanifest/uisceneconfigurations) key.
 
-Set the value of the [`UIApplicationSupportsMultipleScenes`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/UIApplicationSceneManifest/UIApplicationSupportsMultipleScenes) key to [`true`](https://developer.apple.com/documentation/Swift/true) to tell the system if your app supports multiple simultaneous scenes, or [`false`](https://developer.apple.com/documentation/Swift/false) if you want to display only one scene at a time. Supporting multiple scenes requires extra work on your part to ensure that your scenes don’t interfere with each other. For example, if your scenes use the same shared data structures, they must coordinate access to those structures to preserve the integrity of your app’s data.
+Set the value of the [`UIApplicationSupportsMultipleScenes`](https://developer.apple.com/documentation/bundleresources/information-property-list/uiapplicationscenemanifest/uiapplicationsupportsmultiplescenes) key to [`true`](https://developer.apple.com/documentation/swift/true) to tell the system if your app supports multiple simultaneous scenes, or [`false`](https://developer.apple.com/documentation/swift/false) if you want to display only one scene at a time. Supporting multiple scenes requires extra work on your part to ensure that your scenes don’t interfere with each other. For example, if your scenes use the same shared data structures, they must coordinate access to those structures to preserve the integrity of your app’s data.
 
 ##### Configure the Details for Each Scene
 
 UIKit handles the creation of your app’s scenes using information that you provide. The simplest way to provide this information is in your app’s Info settings:
 
 1. Open your Xcode project and navigate to the Info settings tab for your app target.
-2. Expand the Application Scene Manifest entry. This entry corresponds to the [`UIApplicationSceneManifest`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/UIApplicationSceneManifest) key. If it isn’t present, add it as described in [`Enable scene support in your project settings`](specifying-the-scenes-your-app-supports#Enable-scene-support-in-your-project-settings.md).
+2. Expand the Application Scene Manifest entry. This entry corresponds to the [`UIApplicationSceneManifest`](https://developer.apple.com/documentation/bundleresources/information-property-list/uiapplicationscenemanifest) key. If it isn’t present, add it as described in [`Enable scene support in your project settings`](specifying-the-scenes-your-app-supports#Enable-scene-support-in-your-project-settings.md).
 3. In the Scene Configuration entry, click the Add (+) button.
 4. Select Window Application Session Role to add a main scene to your app.
 5. Fill in the scene details in the provided entry.
@@ -39,11 +39,11 @@ Most apps need only one main scene, but you may add multiple scenes and configur
 - A unique name that your app uses to identify the scene internally.
 - The name of the storyboard containing the scene’s initial UI. Specify the name without the `.storyboard` filename extension.
 
-For more information about how to configure your scenes, see [`UISceneConfigurations`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/UIApplicationSceneManifest/UISceneConfigurations).
+For more information about how to configure your scenes, see [`UISceneConfigurations`](https://developer.apple.com/documentation/bundleresources/information-property-list/uiapplicationscenemanifest/uisceneconfigurations).
 
 ##### Create the Interface for Your Scene
 
-You specify the UI for your scene using storyboards. The storyboard you assign to the [`UISceneStoryboardFile`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/UIApplicationSceneManifest/UISceneConfigurations/UIWindowSceneSessionRoleApplication/UISceneStoryboardFile) key contains the initial view controller you want to display for your scene. In addition to creating the scene object, UIKit creates a window for your scene automatically and installs the initial view controller from your storyboard in it. You can replace that view controller programmatically using the methods of your [`UIWindowSceneDelegate`](uiwindowscenedelegate.md) object.
+You specify the UI for your scene using storyboards. The storyboard you assign to the [`UISceneStoryboardFile`](https://developer.apple.com/documentation/bundleresources/information-property-list/uiapplicationscenemanifest/uisceneconfigurations/uiwindowscenesessionroleapplication/uiscenestoryboardfile) key contains the initial view controller you want to display for your scene. In addition to creating the scene object, UIKit creates a window for your scene automatically and installs the initial view controller from your storyboard in it. You can replace that view controller programmatically using the methods of your [`UIWindowSceneDelegate`](uiwindowscenedelegate.md) object.
 
 > ❗ **Important**:  Don’t forget to designate an initial view controller in your storyboard. UIKit relies on the presence of this view controller when configuring your UI.
 
@@ -61,7 +61,7 @@ For information about how to handle life-cycle events, see [`Managing your app�
 
 ## See Also
 
-- [UIApplicationSceneManifest](../BundleResources/Information-Property-List/UIApplicationSceneManifest.md)
+- [UIApplicationSceneManifest](../bundleresources/information-property-list/uiapplicationscenemanifest.md)
   The information about the app’s scene-based life-cycle support.
 - [class UISceneConfiguration](uisceneconfiguration.md)
   Information about the objects and storyboard for UKit to use when creating a particular scene.

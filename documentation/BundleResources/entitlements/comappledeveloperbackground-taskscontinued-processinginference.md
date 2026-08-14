@@ -21,7 +21,7 @@ An entitlement that lets a background task run inference on the Neural Engine.
 
 #### Discussion
 
-This entitlement works with [`BGContinuedProcessingTask`](https://developer.apple.com/documentation/BackgroundTasks/BGContinuedProcessingTask), which lets your app’s critical inference work finish on the Neural Engine even when your app moves to the background before the task completes.
+This entitlement works with [`BGContinuedProcessingTask`](https://developer.apple.com/documentation/backgroundtasks/bgcontinuedprocessingtask), which lets your app’s critical inference work finish on the Neural Engine even when your app moves to the background before the task completes.
 
 The system also requires the entitlement for any Neural Engine access while your app is in the background, regardless of whether it’s running a continued background task. You can perform inference with Core AI, Core ML, or Metal Performance Shaders Graph.
 

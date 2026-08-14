@@ -22,7 +22,7 @@ func setKernelBuffer(_ buffer: any MTLBuffer, offset: Int, at index: Int)
 
 #### Discussion
 
-If you created the indirect command buffer with [`inheritBuffers`](mtlindirectcommandbufferdescriptor/inheritbuffers.md) set to [`true`](https://developer.apple.com/documentation/Swift/true), don’t call this method. The command gets the arguments from the parent encoder when you execute the command.
+If you created the indirect command buffer with [`inheritBuffers`](mtlindirectcommandbufferdescriptor/inheritbuffers.md) set to [`true`](https://developer.apple.com/documentation/swift/true), don’t call this method. The command gets the arguments from the parent encoder when you execute the command.
 
 If you need to pass other kinds of parameters to your shader, such as textures and samplers, create an argument buffer and pass it to the shader using this method.
 

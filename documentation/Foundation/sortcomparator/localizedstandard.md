@@ -22,7 +22,7 @@ static var localizedStandard: String.Comparator { get }
 
 #### Discussion
 
-Compares [`String`](https://developer.apple.com/documentation/Swift/String) in a manner similar to the Finder.
+Compares [`String`](https://developer.apple.com/documentation/swift/string) in a manner similar to the Finder.
 
 ## See Also
 

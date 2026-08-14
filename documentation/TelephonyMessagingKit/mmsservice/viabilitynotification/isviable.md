@@ -7,7 +7,6 @@ A Boolean value that indicates whether the device can peform MMS operations at t
 
 **Availability**:
 - iOS 26.0+
-- iPadOS 26.0+
 
 ## Declaration
 

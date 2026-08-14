@@ -21,7 +21,7 @@ protocol EntityAction
 
 #### Overview
 
-Structures that conform to `EntityAction` can contain data that an [`ActionAnimation`](actionanimation.md) stores. If your apps needs to serialize the animation resource to a file, the structure also needs to adopt and conform to the [`Codable`](https://developer.apple.com/documentation/Swift/Codable) protocol.
+Structures that conform to `EntityAction` can contain data that an [`ActionAnimation`](actionanimation.md) stores. If your apps needs to serialize the animation resource to a file, the structure also needs to adopt and conform to the [`Codable`](https://developer.apple.com/documentation/swift/codable) protocol.
 
 As action animation playback occurs, unique action events are raised for its associated `EntityAction` conforming type.
 

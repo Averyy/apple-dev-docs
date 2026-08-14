@@ -20,7 +20,7 @@ class let stateRestorationSystemVersionKey: String
 
 #### Discussion
 
-The value of this key is an [`NSString`](https://developer.apple.com/documentation/Foundation/NSString) object containing the iOS system version that was installed when the archive was saved. The format of this string matches the format of the value in the [`systemVersion`](uidevice/systemversion.md) property of the [`UIDevice`](uidevice.md) class.
+The value of this key is an [`NSString`](https://developer.apple.com/documentation/foundation/nsstring) object containing the iOS system version that was installed when the archive was saved. The format of this string matches the format of the value in the [`systemVersion`](uidevice/systemversion.md) property of the [`UIDevice`](uidevice.md) class.
 
 ## See Also
 

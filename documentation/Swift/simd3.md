@@ -471,8 +471,8 @@ struct SIMD3<Scalar> where Scalar : SIMDScalar
 ## Relationships
 
 ### Conforms To
-- [AnimatableData](../RealityKit/AnimatableData.md)
-- [BindableData](../RealityKit/BindableData.md)
+- [AnimatableData](../realitykit/animatabledata.md)
+- [BindableData](../realitykit/bindabledata.md)
 - [BitwiseCopyable](bitwisecopyable.md)
 - [ConvertibleFromBytes](convertiblefrombytes.md)
 - [Copyable](copyable.md)
@@ -484,8 +484,8 @@ struct SIMD3<Scalar> where Scalar : SIMDScalar
 - [Escapable](escapable.md)
 - [ExpressibleByArrayLiteral](expressiblebyarrayliteral.md)
 - [Hashable](hashable.md)
-- [ProjectiveTransformable3D](../Spatial/ProjectiveTransformable3D.md)
-- [ProjectiveTransformable3DFloat](../Spatial/ProjectiveTransformable3DFloat.md)
+- [ProjectiveTransformable3D](../spatial/projectivetransformable3d.md)
+- [ProjectiveTransformable3DFloat](../spatial/projectivetransformable3dfloat.md)
 - [SIMD](simd.md)
 - [SIMDStorage](simdstorage.md)
 - [Sendable](sendable.md)

@@ -23,14 +23,14 @@ virtual bool initWithObjects(
 
 Not for general use. Use the static instance creation method withObjects instead.
 
-`objects` and `keys` must be non-`NULL`, and `count` must be nonzero. If `capacity` is nonzero, it must be greater than or equal to `count`. The new dictionary will grow as neede to accommodate more key/object pairs (`CFMutableDictionary`, for which the initial capacity is a hard limit).
+`objects` and `keys` must be non-`NULL`, and `count` must be nonzero. If `capacity` is nonzero, it must be greater than or equal to `count`. The new dictionary will grow as neede to accommodate more key/object pairs (*unlike*[`CFMutableDictionary`](https://developer.apple.com/documentation/corefoundation/cfmutabledictionary), for which the initial capacity is a hard limit).
 
 ## Parameters
 
 - `objects`: A C array of OSMetaClassBase-derived objects.
-- `keys`: A C array of OSSymbol keys for the corresponding objects in  .
+- `keys`: A C array of OSSymbol keys for the corresponding objects in `objects`.
 - `count`: The number of keys and objects to be placed into the dictionary.
-- `capacity`: The initial storage capacity of the new dictionary object. If 0,   is used; otherwise this value must be greater than or equal to  .
+- `capacity`: The initial storage capacity of the new dictionary object. If 0, `count` is used; otherwise this value must be greater than or equal to `count`.
 
 ## See Also
 

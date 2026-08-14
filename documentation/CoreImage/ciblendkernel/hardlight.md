@@ -21,7 +21,7 @@ class var hardLight: CIBlendKernel { get }
 
 #### Discussion
 
-![The result of using the hard light blend kernel (background image is top left, foreground image is bottom left)](https://docs-assets.developer.apple.com/published/c95a2dd85e9eb4354559cff298cd8d7e/media-2926867%402x.png)
+![The result of using the hard light blend kernel (background image is top left, foreground image is bottom left)](/images/com.apple.coreimage/media-2926867@2x.png)
 
 ## See Also
 

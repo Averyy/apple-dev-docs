@@ -20,21 +20,21 @@ class PKIdentityDocumentMetadata
 
 #### Overview
 
-This class contains the required and optional metadata you need to configure a pass. It’s similar to [`PKShareablePassMetadata`](PKShareablePassMetadata.md).
+This class contains the required and optional metadata you need to configure a pass. It’s similar to [`PKShareablePassMetadata`](pkshareablepassmetadata.md).
 
 ## Topics
 
 ### Instance Properties
-- [var cardConfigurationIdentifier: String](PKIdentityDocumentMetadata/cardConfigurationIdentifier.md)
-- [var cardTemplateIdentifier: String](PKIdentityDocumentMetadata/cardTemplateIdentifier.md)
-- [var credentialIdentifier: String](PKIdentityDocumentMetadata/credentialIdentifier.md)
-- [var serverEnvironmentIdentifier: String](PKIdentityDocumentMetadata/serverEnvironmentIdentifier.md)
+- [var cardConfigurationIdentifier: String](pkidentitydocumentmetadata/cardconfigurationidentifier.md)
+- [var cardTemplateIdentifier: String](pkidentitydocumentmetadata/cardtemplateidentifier.md)
+- [var credentialIdentifier: String](pkidentitydocumentmetadata/credentialidentifier.md)
+- [var serverEnvironmentIdentifier: String](pkidentitydocumentmetadata/serverenvironmentidentifier.md)
   An identifier that references the target server environment Apple Pay servers need to connect with to provision the pass.
-- [var sharingInstanceIdentifier: String](PKIdentityDocumentMetadata/sharingInstanceIdentifier.md)
+- [var sharingInstanceIdentifier: String](pkidentitydocumentmetadata/sharinginstanceidentifier.md)
   A unique identifier that refers to an instance of sharing credentials to a person’s device that another user, device, or the web initiates.
-- [var documentType: PKAddIdentityDocumentType](PKIdentityDocumentMetadata/documentType.md)
+- [var documentType: PKAddIdentityDocumentType](pkidentitydocumentmetadata/documenttype.md)
   Identifies the type of the identity document.
-- [var issuingCountryCode: String](PKIdentityDocumentMetadata/issuingCountryCode.md)
+- [var issuingCountryCode: String](pkidentitydocumentmetadata/issuingcountrycode.md)
   Identifies the issuing country of the identity document.
 - [var cardConfigurationIdentifier: String](pkidentitydocumentmetadata/cardconfigurationidentifier.md)
 - [var cardTemplateIdentifier: String](pkidentitydocumentmetadata/cardtemplateidentifier.md)
@@ -51,17 +51,17 @@ This class contains the required and optional metadata you need to configure a p
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Inherited By
 - [PKAddIdentityDocumentMetadata](pkaddidentitydocumentmetadata.md)
 - [PKJapanIndividualNumberCardMetadata](pkjapanindividualnumbercardmetadata.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

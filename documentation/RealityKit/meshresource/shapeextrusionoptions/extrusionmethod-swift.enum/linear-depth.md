@@ -28,7 +28,7 @@ var extrusionOptions = ShapeExtrusionOptions()
 extrusionOptions.extrusionMethod = .linear(depth: 0.6)
 ```
 
-![None](https://docs-assets.developer.apple.com/published/d5d20210240cb706420f789afe4bdf8e/generateExtrudedShape-extrusionMethod-linear-red.jpg)
+![None](/images/com.apple.RealityKit/generateExtrudedShape-extrusionMethod-linear-red.jpg)
 
 You can also use [`MeshResource.ShapeExtrusionOptions.ExtrusionMethod.tracePositions(_:)`](meshresource/shapeextrusionoptions/extrusionmethod-swift.enum/tracepositions(_:).md) an equivalent way.
 

@@ -30,8 +30,8 @@ Thread safe starting in OS X v10.3.
 
 ## Parameters
 
-- `ref`: The   to query. Acquired from a previous call to  .
-- `outError`: If the function result is  ,   contains information about the failure. See the Core Foundation Reference Documentation for a description of the   data type.
+- `ref`: The [`AERemoteProcessResolverRef`](aeremoteprocessresolverref.md) to query. Acquired from a previous call to [`AECreateRemoteProcessResolver(_:_:)`](1445692-aecreateremoteprocessresolver.md).
+- `outError`: If the function result is `NULL`, `outError` contains information about the failure. See the Core Foundation Reference Documentation for a description of the `CFStreamError` data type.
 
 ## See Also
 

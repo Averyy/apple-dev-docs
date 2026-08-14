@@ -25,7 +25,7 @@ To create a nonreplicated File Provider extension, start by creating a subclass 
 - Use your method implementations to provide access to the documents and folders managed by your file provider.
 - Don’t call `super` in your method implementations.
 
-Don’t use the [`NSFileProviderExtension`](nsfileproviderextension.md) class in macOS. Instead, create an [`NSObject`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class) subclass that adopts the [`NSFileProviderReplicatedExtension`](nsfileproviderreplicatedextension.md) and [`NSFileProviderEnumerating`](nsfileproviderenumerating.md) protocols. For more information, see [`Replicated File Provider extension`](replicated-file-provider-extension.md).
+Don’t use the [`NSFileProviderExtension`](nsfileproviderextension.md) class in macOS. Instead, create an [`NSObject`](https://developer.apple.com/documentation/objectivec/nsobject-swift.class) subclass that adopts the [`NSFileProviderReplicatedExtension`](nsfileproviderreplicatedextension.md) and [`NSFileProviderEnumerating`](nsfileproviderenumerating.md) protocols. For more information, see [`Replicated File Provider extension`](replicated-file-provider-extension.md).
 
 ## Topics
 
@@ -97,14 +97,14 @@ Don’t use the [`NSFileProviderExtension`](nsfileproviderextension.md) class in
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

@@ -23,7 +23,7 @@ Users can navigate left and right to move between `menuBar` elements. Here’s a
 
 You can also add view elements to the left and right sides of the menu bar. The left `leadingAccessoryView` and right `trailingAccessoryView` can be any simple element, including [`Display Elements`](display-elements.md), [`Multimedia Elements`](multimedia-elements.md), and [`Text Elements`](text-elements.md). Accessory views can also be row elements.
 
-To add the equivalent of a [`leadingAccessoryView`](https://developer.apple.com/documentation/UIKit/UITabBar/leadingAccessoryView), add any supported element before the [`menuBar`](menubar.md) opening tag, as shown here:
+To add the equivalent of a [`leadingAccessoryView`](https://developer.apple.com/documentation/uikit/uitabbar/leadingaccessoryview), add any supported element before the [`menuBar`](menubar.md) opening tag, as shown here:
 
 ```xml
 <menuBarTemplate>
@@ -36,7 +36,7 @@ To add the equivalent of a [`leadingAccessoryView`](https://developer.apple.com/
 </menuBarTemplate>
 ```
 
-To add the equivalent of a [`trailingAccessoryView`](https://developer.apple.com/documentation/UIKit/UITabBar/trailingAccessoryView), add any supported element after the [`menuBar`](menubar.md) closing tag, as shown here:
+To add the equivalent of a [`trailingAccessoryView`](https://developer.apple.com/documentation/uikit/uitabbar/trailingaccessoryview), add any supported element after the [`menuBar`](menubar.md) closing tag, as shown here:
 
 ```xml
 <menuBarTemplate>

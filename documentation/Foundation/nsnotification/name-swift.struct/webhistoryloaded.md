@@ -20,7 +20,7 @@ The notification object is the web history that loaded the history items. This n
 
 ## See Also
 
-- [func load(from: URL!) throws](../WebKit/WebHistory/load(from:).md)
+- [func load(from: URL!) throws](../webkit/webhistory/load(from:).md)
   Loads the contents of the specified web history file.
 - [static let WebHistoryAllItemsRemoved: NSNotification.Name](nsnotification/name-swift.struct/webhistoryallitemsremoved.md)
   Posted when all history items have been removed from the web history.

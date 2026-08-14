@@ -14,7 +14,7 @@ A 64-bit address in physical memory.
 ## Declaration
 
 ```swift
-typedef UInt64 IOPhysicalAddress64;
+typedef uint64_t IOPhysicalAddress64;
 ```
 
 ## See Also

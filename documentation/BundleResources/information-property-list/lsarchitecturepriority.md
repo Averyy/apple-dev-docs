@@ -16,7 +16,7 @@ An array of the architectures that the app supports, arranged according to their
 
 #### Discussion
 
-Use this key to prioritize the execution of a specific architecture in a universal binary. This key contains an array of strings, with each string specifying the name of a supported architecture. The order of the strings in the array represents your preference for executing the app. For example, if you specify the `x86_64` architecture first for a universal app, the system runs that app under Rosetta translation on Apple silicon. For more information about Rosetta translation, see [`About the Rosetta translation environment`](https://developer.apple.com/documentation/Apple-Silicon/about-the-rosetta-translation-environment).
+Use this key to prioritize the execution of a specific architecture in a universal binary. This key contains an array of strings, with each string specifying the name of a supported architecture. The order of the strings in the array represents your preference for executing the app. For example, if you specify the `x86_64` architecture first for a universal app, the system runs that app under Rosetta translation on Apple silicon. For more information about Rosetta translation, see [`About the Rosetta translation environment`](https://developer.apple.com/documentation/apple-silicon/about-the-rosetta-translation-environment).
 
 ## See Also
 

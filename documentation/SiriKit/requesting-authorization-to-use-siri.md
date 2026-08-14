@@ -14,13 +14,13 @@ Siri can’t interact with your app or app extension until the user grants permi
 
 First, enable the Siri capability for your iOS app or WatchKit extension for authorization to succeed. For information about how to enable the Siri capability, see [`Creating an Intents App Extension`](creating-an-intents-app-extension.md).
 
-Next, configure your `Info.plist` file. Include the [`NSSiriUsageDescription`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSSiriUsageDescription) key in your iOS appʼs `Info.plist` file. The value for this key is a string that describes what information your app shares with SiriKit. For example, a workout app might set the value to the string *Workout information will be sent to Siri*. This key is a requirement.
+Next, configure your `Info.plist` file. Include the [`NSSiriUsageDescription`](https://developer.apple.com/documentation/bundleresources/information-property-list/nssiriusagedescription) key in your iOS appʼs `Info.plist` file. The value for this key is a string that describes what information your app shares with SiriKit. For example, a workout app might set the value to the string *Workout information will be sent to Siri*. This key is a requirement.
 
 ##### Request User Authorization
 
 Call the [`requestSiriAuthorization(_:)`](https://developer.apple.com/documentation/intents/inpreferences/requestsiriauthorization(_:)) class method of [`INPreferences`](https://developer.apple.com/documentation/intents/inpreferences) at some point during your iOS app’s execution.
 
-Your app’s authorization status is [`INSiriAuthorizationStatus.notDetermined`](https://developer.apple.com/documentation/intents/insiriauthorizationstatus/notdetermined) until the user authorizes or denies access. When your app requests authorization and its status is undetermined, the system prompts the user to authorize your app. The alert includes the usage description string you provided in the [`NSSiriUsageDescription`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSSiriUsageDescription) key of your app’s `Info.plist` file.
+Your app’s authorization status is [`INSiriAuthorizationStatus.notDetermined`](https://developer.apple.com/documentation/intents/insiriauthorizationstatus/notdetermined) until the user authorizes or denies access. When your app requests authorization and its status is undetermined, the system prompts the user to authorize your app. The alert includes the usage description string you provided in the [`NSSiriUsageDescription`](https://developer.apple.com/documentation/bundleresources/information-property-list/nssiriusagedescription) key of your app’s `Info.plist` file.
 
 The user can approve or deny your app’s request for authorization, and can change your app’s authorization status later in the Settings app. The system remembers your app’s authorization status so that subsequent calls to the [`requestSiriAuthorization(_:)`](https://developer.apple.com/documentation/intents/inpreferences/requestsiriauthorization(_:)) method don’t prompt the user again.
 

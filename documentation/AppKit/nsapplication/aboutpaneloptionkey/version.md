@@ -16,7 +16,7 @@ static let version: NSApplication.AboutPanelOptionKey
 
 #### Discussion
 
-The value of this key is an [`NSString`](https://developer.apple.com/documentation/Foundation/NSString) object with the build version number of the app, such as `58.4`. AppKit displays this string as `(v58.4)`. If not specified, AppKit obtains the version number from the CFBundleVersion key of the app’s Info.plist file. If no version information is found, AppKit does not display version information.
+The value of this key is an [`NSString`](https://developer.apple.com/documentation/foundation/nsstring) object with the build version number of the app, such as `58.4`. AppKit displays this string as `(v58.4)`. If not specified, AppKit obtains the version number from the CFBundleVersion key of the app’s Info.plist file. If no version information is found, AppKit does not display version information.
 
 ## See Also
 

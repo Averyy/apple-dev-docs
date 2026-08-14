@@ -21,7 +21,7 @@ static let expandToHDR: CIImageOption
 
 ## See Also
 
-- [Applying Apple HDR effect to your photos](../AppKit/applying-apple-hdr-effect-to-your-photos.md)
+- [Applying Apple HDR effect to your photos](../appkit/applying-apple-hdr-effect-to-your-photos.md)
   You can decode and apply Apple’s HDR gain map to your own images.
 - [static let applyOrientationProperty: CIImageOption](ciimageoption/applyorientationproperty.md)
   The key for transforming an image according to orientation metadata.

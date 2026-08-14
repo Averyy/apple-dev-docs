@@ -22,7 +22,7 @@ static func iso8601Date(timeZone: TimeZone, dateSeparator: Date.ISO8601FormatSty
 
 #### Return Value
 
-A `RegexComponent` that matches ISO 8601-formatted date substrings as Foundation [`Date`](https://developer.apple.com/documentation/Foundation/Date) instances.
+A `RegexComponent` that matches ISO 8601-formatted date substrings as Foundation [`Date`](https://developer.apple.com/documentation/foundation/date) instances.
 
 #### Discussion
 
@@ -51,7 +51,7 @@ let date = match?.1 // date == Jul 14, 2022 at 12:00 AM PST
 
 ## Parameters
 
-- `timeZone`: The time zone to use when returning a captured [`Date`](https://developer.apple.com/documentation/Foundation/Date). The returned date’s time value is `00:00:00` in this time zone.
+- `timeZone`: The time zone to use when returning a captured [`Date`](https://developer.apple.com/documentation/foundation/date). The returned date’s time value is `00:00:00` in this time zone.
 - `dateSeparator`: The character that separates year, month, and day sections of the date substring.
 
 ## See Also

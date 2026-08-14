@@ -19,7 +19,7 @@ An entitlement that grants an alternative browser engine’s extension the abili
 
 Add this entitlement with a value of `true` to your alternative browser engine’s extension that renders web content.
 
-For more information, see [`Creating browser extensions in Xcode`](https://developer.apple.com/documentation/BrowserEngineKit/creating-browser-extensions-in-xcode).
+For more information, see [`Creating browser extensions in Xcode`](https://developer.apple.com/documentation/browserenginekit/creating-browser-extensions-in-xcode).
 
 ## See Also
 

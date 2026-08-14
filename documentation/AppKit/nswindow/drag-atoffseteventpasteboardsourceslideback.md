@@ -26,7 +26,7 @@ This method should be invoked only from within a view’s implementation of the 
 - `event`: The left-mouse down event that triggered the dragging operation.
 - `pboard`: The pasteboard that holds the data to be transferred to the destination.
 - `sourceObj`: The object serving as the controller of the dragging operation. It must conform to the [`NSDraggingSource`](nsdraggingsource.md) protocol.
-- `slideFlag`: Specifies whether the drag image should slide back to `baseLocation` if it’s rejected by the drag destination. Pass [`true`](https://developer.apple.com/documentation/Swift/true) to specify slide back behavior or [`false`](https://developer.apple.com/documentation/Swift/false) to specify that it should not.
+- `slideFlag`: Specifies whether the drag image should slide back to `baseLocation` if it’s rejected by the drag destination. Pass [`true`](https://developer.apple.com/documentation/swift/true) to specify slide back behavior or [`false`](https://developer.apple.com/documentation/swift/false) to specify that it should not.
 
 ## See Also
 

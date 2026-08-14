@@ -48,10 +48,10 @@ You typically derive a symmetric key from an instance of a shared secret ([`Shar
 ## Relationships
 
 ### Conforms To
-- [ContiguousBytes](../Foundation/ContiguousBytes.md)
-- [Equatable](../Swift/Equatable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [ContiguousBytes](../foundation/contiguousbytes.md)
+- [Equatable](../swift/equatable.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

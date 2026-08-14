@@ -19,7 +19,7 @@ void module::addVelocity(float3 velocity)
 
 Use this function to incrementally adjust an element’s velocity by adding a velocity vector to its existing value.
 
-> **Note**: ![Graph](https://docs-assets.developer.apple.com/published/8a5160e4b76576f75b034f75042a7dc7/module__addVelocity.svg)
+> **Note**: ![Graph](/images/com.apple.computegraph/module__addVelocity.svg)
 
 ## Parameters
 

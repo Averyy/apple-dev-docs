@@ -26,8 +26,8 @@ The descriptor associated with the specified `key` does not need to exist before
 
 ## Parameters
 
-- `ref`: An   containing the stream data.
-- `key`: The   associated with any keyword/descriptor pair in an Apple event. See  .
+- `ref`: An [`AEStreamRef`](aestreamref.md) containing the stream data.
+- `key`: The `AEKeyword` associated with any keyword/descriptor pair in an Apple event. See [`AEKeyword`](aekeyword.md).
 
 ## See Also
 

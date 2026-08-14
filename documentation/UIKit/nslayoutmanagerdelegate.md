@@ -50,7 +50,7 @@ protocol NSLayoutManagerDelegate : NSObjectProtocol
 - [func layoutManager(NSLayoutManager, shouldSetLineFragmentRect: UnsafeMutablePointer<CGRect>, lineFragmentUsedRect: UnsafeMutablePointer<CGRect>, baselineOffset: UnsafeMutablePointer<CGFloat>, in: NSTextContainer, forGlyphRange: NSRange) -> Bool](nslayoutmanagerdelegate/layoutmanager(_:shouldsetlinefragmentrect:linefragmentusedrect:baselineoffset:in:forglyphrange:).md)
   Customizes the line fragment geometry before committing it to the layout cache.
 ### Managing temporary attribute support
-- [func layoutManager(NSLayoutManager, shouldUseTemporaryAttributes: [NSAttributedString.Key : Any], forDrawingToScreen: Bool, atCharacterIndex: Int, effectiveRange: NSRangePointer?) -> [NSAttributedString.Key : Any]?](../AppKit/NSLayoutManagerDelegate/layoutManager(_:shouldUseTemporaryAttributes:forDrawingToScreen:atCharacterIndex:effectiveRange:).md)
+- [func layoutManager(NSLayoutManager, shouldUseTemporaryAttributes: [NSAttributedString.Key : Any], forDrawingToScreen: Bool, atCharacterIndex: Int, effectiveRange: NSRangePointer?) -> [NSAttributedString.Key : Any]?](../appkit/nslayoutmanagerdelegate/layoutmanager(_:shouldusetemporaryattributes:fordrawingtoscreen:atcharacterindex:effectiverange:).md)
   Asks the delegate whether to use temporary attributes when drawing the text.
 ### Deprecated
 - [Control Characters](1619233-control-characters.md)
@@ -59,7 +59,7 @@ protocol NSLayoutManagerDelegate : NSObjectProtocol
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

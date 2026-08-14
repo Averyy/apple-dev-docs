@@ -13,7 +13,7 @@ Associate an iOS device with an accessory’s network to deliver network configu
 
 #### Overview
 
-When you’re building a Wi-Fi accessory, getting it to join the user’s network can be a challenge.  The best way to accomplish this is by using [`EAWiFiUnconfiguredAccessoryBrowser`](https://developer.apple.com/documentation/ExternalAccessory/EAWiFiUnconfiguredAccessoryBrowser) in the MFi Wireless Accessory Configuration process.  If you can’t use that process, this sample demonstrates an alternative method.
+When you’re building a Wi-Fi accessory, getting it to join the user’s network can be a challenge.  The best way to accomplish this is by using [`EAWiFiUnconfiguredAccessoryBrowser`](https://developer.apple.com/documentation/externalaccessory/eawifiunconfiguredaccessorybrowser) in the MFi Wireless Accessory Configuration process.  If you can’t use that process, this sample demonstrates an alternative method.
 
 The sample uses a macOS app to act as an accessory and an iOS app running on an iOS device to configure that accessory.  The goal for the iOS app is to deliver network information to the accessory so it can join the user’s standard Wi-Fi network.  To do that, the iOS app needs to deliver the user’s network SSID and its passphrase to the accessory.  After receiving this information, the accessory can use it to associate itself with the same network as the iOS device.
 

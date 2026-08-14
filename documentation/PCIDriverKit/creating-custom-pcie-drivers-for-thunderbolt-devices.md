@@ -12,7 +12,7 @@ If your Thunderbolt device uses popular PCIe Ethernet controllers from Intel, Br
 
 > **Note**:  If your Thunderbolt device requires capabilities that DriverKit doesn’t support, such as manipulating audio or communicating wirelessly over Bluetooth or Wi-Fi, create your driver as an IOKit kernel extension instead. For more information, see [`Implementing a PCIe Kext for a Thunderbolt Device`](https://developer.apple.com/documentation/kernel/hardware_families/pci/implementing_a_pcie_kext_for_a_thunderbolt_device).
 
-For basic information on how to create a DriverKit extension, see [`Creating a Driver Using the DriverKit SDK`](https://developer.apple.com/documentation/DriverKit/creating-a-driver-using-the-driverkit-sdk).
+For basic information on how to create a DriverKit extension, see [`Creating a Driver Using the DriverKit SDK`](https://developer.apple.com/documentation/driverkit/creating-a-driver-using-the-driverkit-sdk).
 
 ##### Request the Entitlements Required to Run Your Driver
 
@@ -20,16 +20,16 @@ The system requires every DriverKit driver to have an appropriate set of entitle
 
 Drivers for Thunderbolt devices must have the following entitlements:
 
-- [`com.apple.developer.driverkit`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.driverkit)
-- [`com.apple.developer.driverkit.transport.pci`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.driverkit.transport.pci)
+- [`com.apple.developer.driverkit`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.driverkit)
+- [`com.apple.developer.driverkit.transport.pci`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.driverkit.transport.pci)
 
-You request DriverKit entitlements directly from Apple, which adds the entitlements to your developer account. You then add those entitlements to your Xcode project, and to the provisioning profile you use to cryptographically sign your app. For information about how to request DriverKit entitlements and add them to your Xcode project, see [`Requesting Entitlements for DriverKit Development`](https://developer.apple.com/documentation/DriverKit/requesting-entitlements-for-driverkit-development).
+You request DriverKit entitlements directly from Apple, which adds the entitlements to your developer account. You then add those entitlements to your Xcode project, and to the provisioning profile you use to cryptographically sign your app. For information about how to request DriverKit entitlements and add them to your Xcode project, see [`Requesting Entitlements for DriverKit Development`](https://developer.apple.com/documentation/driverkit/requesting-entitlements-for-driverkit-development).
 
 ##### Add Thunderbolt Support to Your Drivers Personality Data
 
 When it detects new hardware, the system must find an appropriate set of drivers to manage that hardware. It does so by comparing the hardware details to information found in the `kIOKitPersonalitiesKey` key of each driver’s `Info.plist` file, and identifying the drivers that best match the hardware. For example, a driver might match only against devices from a specific manufacturer, or devices that support only a specific communication protocol.
 
-To indicate that your PCIe driver supports Thunderbolt, include the `IOPCITunnelCompatible` key in your driver’s personality dictionaries. Include this key only if the [`IOService`](https://developer.apple.com/documentation/DriverKit/IOService) subclass in the `IOClass` key of that dictionary is able to communicate with your Thunderbolt device. The following example shows the presence of this key in a custom PCI driver.
+To indicate that your PCIe driver supports Thunderbolt, include the `IOPCITunnelCompatible` key in your driver’s personality dictionaries. Include this key only if the [`IOService`](https://developer.apple.com/documentation/driverkit/ioservice) subclass in the `IOClass` key of that dictionary is able to communicate with your Thunderbolt device. The following example shows the presence of this key in a custom PCI driver.
 
 ```other
 <key>MyDriverKitDriver</key>
@@ -59,7 +59,7 @@ To indicate that your PCIe driver supports Thunderbolt, include the `IOPCITunnel
 
 ##### Notify the System of External Storage Devices
 
-Users can disconnect most Thunderbolt devices at any time, but macOS doesn’t allow them to disconnect external storage devices without properly ejecting them. If your PCI driver presents the device as storage to the system, notify the system early in your driver’s [`Start`](https://developer.apple.com/documentation/DriverKit/IOService/Start) method by setting the `Physical Interconnect Location` property to `External`, as in the following example:
+Users can disconnect most Thunderbolt devices at any time, but macOS doesn’t allow them to disconnect external storage devices without properly ejecting them. If your PCI driver presents the device as storage to the system, notify the system early in your driver’s [`Start`](https://developer.apple.com/documentation/driverkit/ioservice/start) method by setting the `Physical Interconnect Location` property to `External`, as in the following example:
 
 ```objc
 // Add the Physical Interconnect Location property to the driver.
@@ -71,13 +71,13 @@ OSSafeReleaseNULL(externalStr);
 OSSafeReleaseNULL(dict);
 ```
 
-> ❗ **Important**:  Always set the `Physical Interconnect Location` property early in your driver’s [`Start`](https://developer.apple.com/documentation/DriverKit/IOService/Start) method. Don’t set it after you access the device.
+> ❗ **Important**:  Always set the `Physical Interconnect Location` property early in your driver’s [`Start`](https://developer.apple.com/documentation/driverkit/ioservice/start) method. Don’t set it after you access the device.
 
 ##### Support Message Signaled Interrupts in Your Device
 
 Always use Message Signaled Interrupts (MSI) to generate hardware interrupts from your Thunderbolt devices. You can implement a DriverKit extension with legacy interrupts, but doing so adds latency to any device that shares the interrupt. If you need to support legacy interrupts, the better alternative is to implement your driver as a kernel extension.
 
-For MSI-enabled Thunderbolt devices, the system routes interrupts to the appropriate [`IOInterruptDispatchSource`](https://developer.apple.com/documentation/DriverKit/IOInterruptDispatchSource) object in your driver. Create and configure interrupt dispatch sources in the [`Start`](https://developer.apple.com/documentation/DriverKit/IOService/Start) method of your custom [`IOService`](https://developer.apple.com/documentation/DriverKit/IOService) subclass. For more information, see [`IOInterruptDispatchSource`](https://developer.apple.com/documentation/kernel/iointerruptdispatchsource).
+For MSI-enabled Thunderbolt devices, the system routes interrupts to the appropriate [`IOInterruptDispatchSource`](https://developer.apple.com/documentation/driverkit/iointerruptdispatchsource) object in your driver. Create and configure interrupt dispatch sources in the [`Start`](https://developer.apple.com/documentation/driverkit/ioservice/start) method of your custom [`IOService`](https://developer.apple.com/documentation/driverkit/ioservice) subclass. For more information, see [`IOInterruptDispatchSource`](https://developer.apple.com/documentation/kernel/iointerruptdispatchsource).
 
 ##### Read and Write From the Configuration and Mmio Spaces
 

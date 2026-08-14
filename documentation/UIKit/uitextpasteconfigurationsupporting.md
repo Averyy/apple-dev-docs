@@ -27,7 +27,7 @@ protocol UITextPasteConfigurationSupporting : UIPasteConfigurationSupporting
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 - [UIPasteConfigurationSupporting](uipasteconfigurationsupporting.md)
 ### Inherited By
 - [UITextDroppable](uitextdroppable.md)

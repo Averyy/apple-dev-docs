@@ -6,7 +6,7 @@ Test matchmaking rules using sample data.
 
 #### Overview
 
-Use the Testing APIs to apply matchmaking rules to sample match requests and player properties. For more information, see [`Testing matchmaking rules`](https://developer.apple.com/documentation/GameKit/testing-matchmaking-rules).
+Use the Testing APIs to apply matchmaking rules to sample match requests and player properties. For more information, see [`Testing matchmaking rules`](https://developer.apple.com/documentation/gamekit/testing-matchmaking-rules).
 
 ## Topics
 

@@ -18,7 +18,7 @@ class SFAuthorization
 
 > ❗ **Important**: The authorization services API is not supported within an app sandbox because it allows privilege escalation.
 
-The [`SFAuthorization`](sfauthorization.md) class is an interface for some of the functions in the Authorization Services API. You can use the [`authorizationRef()`](sfauthorization/authorizationref().md) method to obtain an authorization reference, used in other calls to Authorization Services functions. The Authorization Services API is documented in [`Authorization Services`](https://developer.apple.com/documentation/Security/authorization-services).
+The [`SFAuthorization`](sfauthorization.md) class is an interface for some of the functions in the Authorization Services API. You can use the [`authorizationRef()`](sfauthorization/authorizationref().md) method to obtain an authorization reference, used in other calls to Authorization Services functions. The Authorization Services API is documented in [`Authorization Services`](https://developer.apple.com/documentation/security/authorization-services).
 
 ## Topics
 
@@ -48,16 +48,16 @@ The [`SFAuthorization`](sfauthorization.md) class is an interface for some of th
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCoding](../Foundation/NSCoding.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [NSSecureCoding](../Foundation/NSSecureCoding.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCoding](../foundation/nscoding.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSSecureCoding](../foundation/nssecurecoding.md)
 
 
 ---

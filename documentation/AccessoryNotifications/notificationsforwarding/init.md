@@ -7,7 +7,6 @@ Initializes a notifications-forwarding capability with a handler factory.
 
 **Availability**:
 - iOS 26.5+
-- iPadOS 26.5+
 
 ## Declaration
 

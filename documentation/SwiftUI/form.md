@@ -58,7 +58,7 @@ var body: some View {
 }
 ```
 
-![A form on iOS, presented as a grouped list with two sections. The](https://docs-assets.developer.apple.com/published/9b9f14a16c5d9d1fed7b121071bdb262/SwiftUI-Form-iOS%402x.png)
+![A form on iOS, presented as a grouped list with two sections. The](/images/com.apple.SwiftUI/SwiftUI-Form-iOS@2x.png)
 
 On macOS, a similar form renders as a vertical stack. To adhere to macOS platform conventions, this version doesn’t use sections, and uses colons at the end of its labels. It also sets the picker to use the [`inline`](pickerstyle/inline.md) style, which produces radio buttons on macOS.
 
@@ -91,7 +91,7 @@ var body: some View {
 }
 ```
 
-![A form on iOS, presented as a vertical stack of views. At top, it shows](https://docs-assets.developer.apple.com/published/cdbe25e36916e95c7d68402249d02bb4/SwiftUI-Form-macOS%402x.png)
+![A form on iOS, presented as a vertical stack of views. At top, it shows](/images/com.apple.SwiftUI/SwiftUI-Form-macOS@2x.png)
 
 ## Topics
 

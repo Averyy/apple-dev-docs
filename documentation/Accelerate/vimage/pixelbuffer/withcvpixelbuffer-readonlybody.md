@@ -22,7 +22,7 @@ func withCVPixelBuffer(readOnly: Bool, body: (CVPixelBuffer) -> Void)
 
 #### Discussion
 
-Use this function to pass a vImage pixel buffer to other frameworks. For example, the following code creates a Core Image [`CIImage`](https://developer.apple.com/documentation/CoreImage/CIImage) instance from a [`CVPixelBuffer`](https://developer.apple.com/documentation/CoreVideo/CVPixelBuffer) that shares its underlying storage with a pixel buffer:
+Use this function to pass a vImage pixel buffer to other frameworks. For example, the following code creates a Core Image [`CIImage`](https://developer.apple.com/documentation/coreimage/ciimage) instance from a [`CVPixelBuffer`](https://developer.apple.com/documentation/corevideo/cvpixelbuffer) that shares its underlying storage with a pixel buffer:
 
 ```swift
 let src = vImage.PixelBuffer<vImage.Interleaved8x4>(
@@ -38,8 +38,8 @@ src.withCVPixelBuffer(readOnly: false) { cvPixelBuffer in
 
 ## Parameters
 
-- `readOnly`: A Boolean value that specifies whether the function locks the [`CVPixelBuffer`](https://developer.apple.com/documentation/CoreVideo/CVPixelBuffer) with the [`readOnly`](https://developer.apple.com/documentation/CoreVideo/CVPixelBufferLockFlags/readOnly) flag. If the closure doesn’t modify the data, set this parameter to `true`.
-- `body`: A closure with a [`CVPixelBuffer`](https://developer.apple.com/documentation/CoreVideo/CVPixelBuffer) parameter that points to the underlying pixel buffer image data.
+- `readOnly`: A Boolean value that specifies whether the function locks the [`CVPixelBuffer`](https://developer.apple.com/documentation/corevideo/cvpixelbuffer) with the [`readOnly`](https://developer.apple.com/documentation/corevideo/cvpixelbufferlockflags/readonly) flag. If the closure doesn’t modify the data, set this parameter to `true`.
+- `body`: A closure with a [`CVPixelBuffer`](https://developer.apple.com/documentation/corevideo/cvpixelbuffer) parameter that points to the underlying pixel buffer image data.
 
 ## See Also
 

@@ -17,7 +17,7 @@ set isRotationEnabled(value: boolean);
 
 #### Discussion
 
-When `isRotationEnabled` is `false`, you can still rotate the map programmatically by using [`rotation`](map/rotation.md) or [`setRotationAnimated(degrees, animated)`](map/setrotationanimated.md).
+When `isRotationEnabled` is `false`, you can still rotate the map programmatically by using [`rotation`](map/rotation.md) or [`setRotationAnimated()`](map/setrotationanimated.md).
 
 ## See Also
 

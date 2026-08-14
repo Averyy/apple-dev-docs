@@ -63,7 +63,7 @@ saveButton.widthAnchor.constraintLessThanOrEqualToAnchor(cancelButton.widthAncho
 
 ## Parameters
 
-- `anchor`: A dimension anchor from a [`UIView`](uiview.md), [`NSView`](https://developer.apple.com/documentation/AppKit/NSView), or [`UILayoutGuide`](uilayoutguide.md) object.
+- `anchor`: A dimension anchor from a [`UIView`](uiview.md), [`NSView`](https://developer.apple.com/documentation/appkit/nsview), or [`UILayoutGuide`](uilayoutguide.md) object.
 - `m`: The multiplier constant for the constraint.
 
 ## See Also

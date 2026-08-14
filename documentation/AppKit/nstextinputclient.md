@@ -75,7 +75,7 @@ To create another text view class, you can either subclass [`NSTextView`](nstext
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 ### Inherited By
 - [NSTextCheckingClient](nstextcheckingclient.md)
 ### Conforming Types

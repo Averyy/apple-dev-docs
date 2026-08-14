@@ -14,11 +14,11 @@ To save a game, the player must have an iCloud account and enable iCloud Drive i
 
 For GameKit to store the game data in the player’s iCloud account, you need to provide an identifier for the iCloud container that stores the data. Add the iCloud capability to your project and select the iCloud Documents checkbox.
 
-For more information, see [`Configuring iCloud services`](https://developer.apple.com/documentation/Xcode/configuring-icloud-services).
+For more information, see [`Configuring iCloud services`](https://developer.apple.com/documentation/xcode/configuring-icloud-services).
 
 ##### Save a Game
 
-Decide what data to save to the file and encode it as a `Data` object. For example, create a structure containing the properties you want to save to the file that conforms to the [`Codable`](https://developer.apple.com/documentation/Swift/Codable) protocol. Then encode the structure using the [`PropertyListEncoder`](https://developer.apple.com/documentation/Foundation/PropertyListEncoder) class.
+Decide what data to save to the file and encode it as a `Data` object. For example, create a structure containing the properties you want to save to the file that conforms to the [`Codable`](https://developer.apple.com/documentation/swift/codable) protocol. Then encode the structure using the [`PropertyListEncoder`](https://developer.apple.com/documentation/foundation/propertylistencoder) class.
 
 Save the `Data` object to the file using the `GKLocalPlayer` [`saveGameData(_:withName:completionHandler:)`](gklocalplayer/savegamedata(_:withname:completionhandler:).md) method. GameKit overrides an existing file with the same filename. If you want to keep the previous file, pass a unique filename when you invoke this method.
 
@@ -83,9 +83,9 @@ If GameKit notices two saved games with the same filename when you either fetch 
   A class that provides common data and methods for the different player objects.
 - [protocol GKLocalPlayerListener](gklocalplayerlistener.md)
   A protocol that handles events for Game Center players.
-- [static let GKPlayerAuthenticationDidChangeNotificationName: NSNotification.Name](../Foundation/NSNotification/Name-swift.struct/GKPlayerAuthenticationDidChangeNotificationName.md)
+- [static let GKPlayerAuthenticationDidChangeNotificationName: NSNotification.Name](../foundation/nsnotification/name-swift.struct/gkplayerauthenticationdidchangenotificationname.md)
   A notification that posts after GameKit authenticates the local player.
-- [static let GKPlayerDidChangeNotificationName: NSNotification.Name](../Foundation/NSNotification/Name-swift.struct/GKPlayerDidChangeNotificationName.md)
+- [static let GKPlayerDidChangeNotificationName: NSNotification.Name](../foundation/nsnotification/name-swift.struct/gkplayerdidchangenotificationname.md)
   A notification that posts when a player object’s data changes.
 
 

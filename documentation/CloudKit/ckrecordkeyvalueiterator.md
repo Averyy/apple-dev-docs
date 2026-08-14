@@ -29,7 +29,7 @@ struct CKRecordKeyValueIterator
 ## Relationships
 
 ### Conforms To
-- [IteratorProtocol](../Swift/IteratorProtocol.md)
+- [IteratorProtocol](../swift/iteratorprotocol.md)
 
 ## See Also
 

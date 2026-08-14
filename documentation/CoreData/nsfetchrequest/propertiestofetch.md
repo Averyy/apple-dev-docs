@@ -22,13 +22,13 @@ var propertiesToFetch: [Any]? { get set }
 
 #### Discussion
 
-Property descriptions can either be instances of [`NSPropertyDescription`](nspropertydescription.md) or [`NSString`](https://developer.apple.com/documentation/Foundation/NSString). The property descriptions may represent attributes, to-one relationships, or expressions. The name of an attribute or relationship description must match the name of a description on the fetch request’s entity.
+Property descriptions can either be instances of [`NSPropertyDescription`](nspropertydescription.md) or [`NSString`](https://developer.apple.com/documentation/foundation/nsstring). The property descriptions may represent attributes, to-one relationships, or expressions. The name of an attribute or relationship description must match the name of a description on the fetch request’s entity.
 
 ##### Special Considerations
 
-You must set the entity for the fetch request before setting this value; otherwise, [`NSFetchRequest`](nsfetchrequest.md) throws an [`invalidArgumentException`](https://developer.apple.com/documentation/Foundation/NSExceptionName/invalidArgumentException) exception.
+You must set the entity for the fetch request before setting this value; otherwise, [`NSFetchRequest`](nsfetchrequest.md) throws an [`invalidArgumentException`](https://developer.apple.com/documentation/foundation/nsexceptionname/invalidargumentexception) exception.
 
-This property can be set with [`managedObjectResultType`](nsfetchrequestresulttype/managedobjectresulttype.md) and thereby implement a partial faulting (whereby only some of the properties are populated) of the returned objects, as well as the [`dictionaryResultType`](nsfetchrequestresulttype/dictionaryresulttype.md) to define what properties are included in the resulting [`NSDictionary`](https://developer.apple.com/documentation/Foundation/NSDictionary).
+This property can be set with [`managedObjectResultType`](nsfetchrequestresulttype/managedobjectresulttype.md) and thereby implement a partial faulting (whereby only some of the properties are populated) of the returned objects, as well as the [`dictionaryResultType`](nsfetchrequestresulttype/dictionaryresulttype.md) to define what properties are included in the resulting [`NSDictionary`](https://developer.apple.com/documentation/foundation/nsdictionary).
 
 ## See Also
 

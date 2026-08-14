@@ -34,7 +34,7 @@ This method executes synchronously.
 - `opts`: A bit mask that specifies the options for the enumeration (whether it should be performed concurrently and whether it should be performed in reverse order).
 - `block`: The block to apply to elements in the array. The block takes three arguments: - **obj**: The element in the array.
 - **idx**: The index of the element in the array.
-- **stop**: A reference to a Boolean value. The block can set the value to [`true`](https://developer.apple.com/documentation/Swift/true) to stop further enumeration of the array. If a block stops further enumeration, that block continues to run until it’s finished. When the `NSEnumerationConcurrent` enumeration option is specified, enumeration stops after all of the currently running blocks finish. The `stop` argument is an out-only argument. You should only ever set this Boolean to [`true`](https://developer.apple.com/documentation/Swift/true) within the block.
+- **stop**: A reference to a Boolean value. The block can set the value to [`true`](https://developer.apple.com/documentation/swift/true) to stop further enumeration of the array. If a block stops further enumeration, that block continues to run until it’s finished. When the `NSEnumerationConcurrent` enumeration option is specified, enumeration stops after all of the currently running blocks finish. The `stop` argument is an out-only argument. You should only ever set this Boolean to [`true`](https://developer.apple.com/documentation/swift/true) within the block.
 
 ## See Also
 

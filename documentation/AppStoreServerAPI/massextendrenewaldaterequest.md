@@ -25,7 +25,7 @@ This request body applies to the [`Extend Subscription Renewal Dates for All Act
 The `requestIdentifier` uniquely identifies this request. Use the same `requestIdentifier` in the following APIs :
 
 - The [`Get Status of Subscription Renewal Date Extensions`](get-status-of-subscription-renewal-date-extensions.md) endpoint
-- The [`summary`](https://developer.apple.com/documentation/AppStoreServerNotifications/summary) object in [`App Store Server Notifications`](https://developer.apple.com/documentation/AppStoreServerNotifications).
+- The [`summary`](https://developer.apple.com/documentation/appstoreservernotifications/summary) object in [`App Store Server Notifications`](https://developer.apple.com/documentation/appstoreservernotifications).
 
 For more information, see [`Extending the renewal date for auto-renewable subscriptions`](extending-the-renewal-date-for-auto-renewable-subscriptions.md).
 
@@ -36,7 +36,7 @@ For more information, see [`Extending the renewal date for auto-renewable subscr
   The number of days to extend the subscription renewal date.
 - [type extendReasonCode](extendreasoncode.md)
   The code that represents the reason for the subscription-renewal-date extension.
-- [type productId](../AppStoreServerNotifications/productId.md)
+- [type productId](../appstoreservernotifications/productid.md)
   The product identifier of the In-App Purchase.
 - [type requestIdentifier](requestidentifier.md)
   A string that contains a unique identifier you provide to track each subscription-renewal-date extension request.

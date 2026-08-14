@@ -48,7 +48,7 @@ protocol NSSplitViewDelegate : NSObjectProtocol
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 ### Conforming Types
 - [NSSplitViewController](nssplitviewcontroller.md)
 

@@ -25,7 +25,7 @@ Subsurface scattering approximates how light diffuses in from nearby points on t
 - **Scale subsurface weight by distance.** Reduce [`subsurfaceWeight`](physicallybasedmaterial/subsurfaceweight-swift.property.md) toward `0.0` for characters that are not the focal point of a scene. At low weights the subsurface pass contributes minimally to the final image but still incurs cost. Zeroing it out lets the renderer skip it entirely.
 - **Use conservative subsurface radius values.** Large [`subsurfaceRadius`](physicallybasedmaterial/subsurfaceradius-swift.property.md) values widen the scattering kernel and increase per-fragment work. Use the smallest radius that still reads as realistic for the character’s skin tone.
 - **Prefer lower-resolution subsurface maps.** Because subsurface scattering results are low-frequency by nature, subsurface color and radius textures tolerate aggressive downsampling. Use half or quarter resolution compared to your base color map, and enable mipmapping on the [`TextureResource`](textureresource.md).
-- **Prefer a uniform color for subsurface if thermal budget is tight.** The [`subsurfaceColor`](physicallybasedmaterial/subsurfacecolor-swift.property.md) property accepts a single optional texture or a flat [`CGColor`](https://developer.apple.com/documentation/CoreGraphics/CGColor). If you’re near the thermal limit, prefer a uniform color value over a texture to avoid the texture lookup entirely.
+- **Prefer a uniform color for subsurface if thermal budget is tight.** The [`subsurfaceColor`](physicallybasedmaterial/subsurfacecolor-swift.property.md) property accepts a single optional texture or a flat [`CGColor`](https://developer.apple.com/documentation/coregraphics/cgcolor). If you’re near the thermal limit, prefer a uniform color value over a texture to avoid the texture lookup entirely.
 - **Limit the number of subsurface textures.** Subsurface scattering can sample multiple textures. If performance cost is high, use fewer textures to reduce the per-fragment sampling cost.
 
 #### Manage Hair Rendering Cost
@@ -55,13 +55,13 @@ Add the [`showStatistics`](arview/debugoptions-swift.struct/showstatistics.md) o
 
 #### Monitor Thermal State
 
-Excessive GPU load from these effects causes noticeable frame drops and device heating. Monitor thermal state using [`thermalState`](https://developer.apple.com/documentation/Foundation/ProcessInfo/thermalState-swift.property) and the thermal state change notification, and reduce or turn off the most expensive character rendering features as the state moves from `.fair` toward `.serious` and `.critical`.
+Excessive GPU load from these effects causes noticeable frame drops and device heating. Monitor thermal state using [`thermalState`](https://developer.apple.com/documentation/foundation/processinfo/thermalstate-swift.property) and the thermal state change notification, and reduce or turn off the most expensive character rendering features as the state moves from `.fair` toward `.serious` and `.critical`.
 
 ## See Also
 
 - [Applying realistic material and lighting effects to entities](applying-realistic-material-and-lighting-effects-to-entities.md)
   Enhance the appearance of objects in a RealityKit scene with Physically Based Rendering (PBR).
-- [Generating procedural textures](../visionOS/generating-procedural-textures-in-visionos.md)
+- [Generating procedural textures](../visionos/generating-procedural-textures-in-visionos.md)
   Display a 3D model that generates procedural textures in a reality view.
 - [struct PhysicallyBasedMaterial](physicallybasedmaterial.md)
   A material that simulates the appearance of real-world objects.

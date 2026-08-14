@@ -19,7 +19,7 @@ void module::debug::drawVector(float3 vector, float scale, half4 color)
 
 Debug Lines are not enabled by default. You enable them in your editor or by setting `LinkOptions/debugDraw` to true when compiling your pipelines, and assigning a `DebugLinesProvider` to your ComputeGraphSimulation.
 
-> **Note**: ![Graph](https://docs-assets.developer.apple.com/published/3d8d433a93fa76b140803d2b742b96c2/module__debug__drawVector.svg)
+> **Note**: ![Graph](/images/com.apple.computegraph/module__debug__drawVector.svg)
 
 ## Parameters
 

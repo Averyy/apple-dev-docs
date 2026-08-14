@@ -17,7 +17,7 @@ func viewportBounds(for textViewportLayoutController: NSTextViewportLayoutContro
 
 #### Return Value
 
-A [`CGRect`](https://developer.apple.com/documentation/CoreFoundation/CGRect).
+A [`CGRect`](https://developer.apple.com/documentation/corefoundation/cgrect).
 
 ## Parameters
 

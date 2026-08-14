@@ -19,7 +19,7 @@ void output::setUV6(float4 value)
 
 This function assigns a custom UV coordinate to the sixth texture coordinate channel of the output mesh. If the mesh doesn’t already have a UV6 channel, it will be created. This enables multi-texturing and advanced shader effects.
 
-> **Note**: ![Graph](https://docs-assets.developer.apple.com/published/2830f04298ff6ac83662ece24b59e16b/output__setUV6.svg)
+> **Note**: ![Graph](/images/com.apple.computegraph/output__setUV6.svg)
 
 > **Note**: Reads and writes to output attribute `float4 uv6`
 

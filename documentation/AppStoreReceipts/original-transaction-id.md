@@ -22,7 +22,7 @@ This value is identical to the [`transaction_id`](transaction_id.md) except when
 
 You can use this value to:
 
-- Match a transaction found in the receipt to a server-to-server notification event. For more information, see [`Enabling App Store Server Notifications`](https://developer.apple.com/documentation/StoreKit/enabling-app-store-server-notifications).
+- Match a transaction found in the receipt to a server-to-server notification event. For more information, see [`Enabling App Store Server Notifications`](https://developer.apple.com/documentation/storekit/enabling-app-store-server-notifications).
 - Manage auto-renewable subscriptions. Store this value, `product_id`, `expires_date_ms`, and `purchase_date_ms` for each transaction for each customer, as a best practice.
 - Identify a subscription with the `product_id` in the `pending_renewal_info` section. Do not rely on the `original_transaction_id` value on its own. Treat this purchase as a new subscription when you see a new `original_transaction_id` value for a `product_id`.
 - Differentiate a purchase transaction from a restore or a renewal transaction. In a purchase transaction, the `transaction_id` always matches the `original_transaction_id`. For subscriptions, it indicates the first subscription purchase. For a restore or renewal, the `transaction_id` does not match the `original_transaction_id`.

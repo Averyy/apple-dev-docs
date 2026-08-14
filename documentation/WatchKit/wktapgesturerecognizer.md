@@ -24,7 +24,7 @@ You do not create instances of this class programmatically. Instead, add a tap g
 
 A tap gesture recognizer tracks discrete events, and therefore has a limited number of state changes. Each tap in a tap gesture comprises the user touching the screen and then lifting the finger off the screen in about the same location and within a preset amount of time. Gesture recognition occurs when the user performs the specified number of taps. The state transition sequences for a tap gesture are as follows:
 
-![Possible state is Recognized or Failed](https://docs-assets.developer.apple.com/published/cb3692b76f000fb3b3a265280f7fdb70/media-3591359%402x.png)
+![Possible state is Recognized or Failed](/images/com.apple.watchkit/media-3591359@2x.png)
 
 The gesture recognizer calls its action method when it enters the [`WKGestureRecognizerState.recognized`](wkgesturerecognizerstate/recognized.md) state. You can determine the location of the tap by calling its [`locationInObject()`](wkgesturerecognizer/locationinobject().md) method. For more information on implementing discrete gesture recognizers, see [`WKGestureRecognizer`](wkgesturerecognizer.md).
 
@@ -49,12 +49,12 @@ The [`WKGestureRecognizer`](wkgesturerecognizer.md) parent class also defines at
 ### Inherits From
 - [WKGestureRecognizer](wkgesturerecognizer.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

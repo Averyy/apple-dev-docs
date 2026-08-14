@@ -27,7 +27,7 @@ An asynchronous [`CIRenderTask`](cirendertask.md) to render the image to the spe
 
 This method crops the image to the specified rectangle and renders the result at the indicated origin point. If the image’s [`extent`](ciimage/extent.md) property and `fromRect` argument values are infinite, this call renders the image’s (0, 0) point starting from the origin `atPoint`.
 
-You must use an [`MTLTexture`](https://developer.apple.com/documentation/Metal/MTLTexture)-backed [`CIContext`](cicontext.md) to support an [`MTLTexture`](https://developer.apple.com/documentation/Metal/MTLTexture)-backed [`CIRenderDestination`](cirenderdestination.md). Similarly, you must use `GLContext`-backed [`CIContext`](cicontext.md) to support a `GLTexture`-backed [`CIRenderDestination`](cirenderdestination.md).
+You must use an [`MTLTexture`](https://developer.apple.com/documentation/metal/mtltexture)-backed [`CIContext`](cicontext.md) to support an [`MTLTexture`](https://developer.apple.com/documentation/metal/mtltexture)-backed [`CIRenderDestination`](cirenderdestination.md). Similarly, you must use `GLContext`-backed [`CIContext`](cicontext.md) to support a `GLTexture`-backed [`CIRenderDestination`](cirenderdestination.md).
 
 This call returns as soon as it enqueues all work required to render the image on the context’s device. In many situations, after issuing a render, you may need to wait for it to complete. In these cases, use the returned [`CIRenderTask`](cirendertask.md) as follows:
 

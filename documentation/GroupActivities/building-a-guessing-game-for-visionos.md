@@ -16,7 +16,7 @@ After the initial welcome screen for the game, the participants select categorie
 
 > **Note**: This sample code project is associated with WWDC24 session [`10201: Customize spatial Persona templates in SharePlay`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2024/10201).
 
-> **Note**: SharePlay requires the  [`com.apple.developer.group-session`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.group-session) entitlement. For instructions on configuring this entitlement, see “Configure the SharePlay entitlements” section of doc:defining-your-apps-shareplay-activities#Configure-the-SharePlay-entitlements.
+> **Note**: SharePlay requires the  [`com.apple.developer.group-session`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.group-session) entitlement. For instructions on configuring this entitlement, see “Configure the SharePlay entitlements” section of doc:defining-your-apps-shareplay-activities#Configure-the-SharePlay-entitlements.
 
 ##### Define the Group Activity
 
@@ -36,7 +36,7 @@ For more information, see [`Defining your app’s SharePlay activities`](definin
 
 ##### Encourage People to Start a Game
 
-The welcome screen displays a custom `SharePlayButton`; tapping it starts the game. If the player is already in a FaceTime call, the `GuessTogetherActivity` activates. Otherwise, a [`GroupActivitySharingController`](GroupActivitySharingController-ybcy.md) displays a sheet inviting the player to start the FaceTime call. When a recipient accepts the FaceTime call, the system prompts them to join the `GuessTogetherActivity`:
+The welcome screen displays a custom `SharePlayButton`; tapping it starts the game. If the player is already in a FaceTime call, the `GuessTogetherActivity` activates. Otherwise, a [`GroupActivitySharingController`](groupactivitysharingcontroller-ybcy.md) displays a sheet inviting the player to start the FaceTime call. When a recipient accepts the FaceTime call, the system prompts them to join the `GuessTogetherActivity`:
 
 ```swift
 struct SharePlayButton<ActivityType: GroupActivity & Transferable & Sendable>: View {
@@ -159,7 +159,7 @@ For more information, see [`Joining and managing a shared activity`](joining-and
 
 ##### Synchronize Game State By Sending and Receiving Messages
 
-When a player’s action changes the game state, `SessionController` uses [`GroupSessionMessenger`](GroupSessionMessenger.md) to send an update to the other players. For example, when player X joins the red team, `TeamSelectionView` calls `SessionController.joinTeam`. This sets `SessionController.localPlayer.team`, sending a call to `SessionController.shareLocalPlayerState`.
+When a player’s action changes the game state, `SessionController` uses [`GroupSessionMessenger`](groupsessionmessenger.md) to send an update to the other players. For example, when player X joins the red team, `TeamSelectionView` calls `SessionController.joinTeam`. This sets `SessionController.localPlayer.team`, sending a call to `SessionController.shareLocalPlayerState`.
 
 ```swift
 // SessionController
@@ -219,7 +219,7 @@ For more information, see [`Synchronizing data during a SharePlay activity`](syn
 
 ##### Enable Spatial Personas in an Immersive Space
 
-To display spatial Personas when an immersive space is open, set the [`supportsGroupImmersiveSpace`](SystemCoordinator/Configuration-swift.struct/supportsGroupImmersiveSpace.md) property on [`SystemCoordinator.Configuration`](SystemCoordinator/Configuration-swift.struct.md) to `true`:
+To display spatial Personas when an immersive space is open, set the [`supportsGroupImmersiveSpace`](systemcoordinator/configuration-swift.struct/supportsgroupimmersivespace.md) property on [`SystemCoordinator.Configuration`](systemcoordinator/configuration-swift.struct.md) to `true`:
 
 ```swift
 // SessionController
@@ -262,7 +262,7 @@ func updateSpatialTemplatePreference() {
 
 When the game moves to the team-selection stage, the session rearranges the participants according to which team they choose. All participants start in the audience initially facing the app window, which displays buttons to join either the red team or blue team.
 
-![An illustration of the arrangement of participants during the team selection process. Participants start facing the screen. When they select a team, they move to the side of the screen associated with their chosen team.](https://docs-assets.developer.apple.com/published/f192cc4494c399431be94d47d729882e/team-selection%402x.png)
+![An illustration of the arrangement of participants during the team selection process. Participants start facing the screen. When they select a team, they move to the side of the screen associated with their chosen team.](/images/com.apple.GroupActivities/team-selection@2x.png)
 
 The `TeamSelectionTemplate` specifies the positions of seats during the team-selection process. Participants don’t have an assigned role initially, so the system places them in the audience seats. As participants join a team, the system moves them to the assigned seating area for their chosen team.
 
@@ -301,7 +301,7 @@ struct TeamSelectionTemplate: SpatialTemplate {
 
 During gameplay, teams take turns playing the game while the audience watches. Audience members face the main window while the active team sits on either side of that window. The team member giving clues sits on one side of the window, while their teammates sit opposite. The template orients the active team members so that they face each other at the start of the game, with audience members facing the main window.
 
-![An illustration of the arrangement of participants during the game. The active team members sit on opposite sides of the app’s window, while the rest of the players sit in the audience facing the window.](https://docs-assets.developer.apple.com/published/3ec2dd95daa5c384608b8a8819add199/game%402x.png)
+![An illustration of the arrangement of participants during the game. The active team members sit on opposite sides of the app’s window, while the rest of the players sit in the audience facing the window.](/images/com.apple.GroupActivities/game@2x.png)
 
 The `GameTemplate` structure defines separate roles for the current player and the active team members. Members of the opposing team don’t receive a role until it’s their turn to play, so they initially sit in the audience positions. Because the active team members face each other, and not the app window, their seat positions include a `direction` parameter to specify where they look initially.
 

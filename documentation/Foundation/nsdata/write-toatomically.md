@@ -22,7 +22,7 @@ func write(to url: URL, atomically: Bool) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/Swift/true) if the operation succeeds, otherwise [`false`](https://developer.apple.com/documentation/Swift/false).
+[`true`](https://developer.apple.com/documentation/swift/true) if the operation succeeds, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
 
 #### Discussion
 
@@ -33,7 +33,7 @@ This method may not be appropriate when writing to publicly accessible files. To
 ## Parameters
 
 - `url`: The location to which to write the receiver’s bytes. Only `file://` URLs are supported.
-- `atomically`: If [`true`](https://developer.apple.com/documentation/Swift/true), the data is written to a backup location, and then—assuming no errors occur—the backup location is renamed to the name specified by `aURL`; otherwise, the data is written directly to `aURL`. `atomically` is ignored if `aURL` is not of a type the supports atomic writes.
+- `atomically`: If [`true`](https://developer.apple.com/documentation/swift/true), the data is written to a backup location, and then—assuming no errors occur—the backup location is renamed to the name specified by `aURL`; otherwise, the data is written directly to `aURL`. `atomically` is ignored if `aURL` is not of a type the supports atomic writes.
 
 ## See Also
 

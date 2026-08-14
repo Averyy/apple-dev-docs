@@ -41,7 +41,7 @@ For more information about defining a custom pixel format, see [`Pixel Format De
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../Swift/BitwiseCopyable.md)
+- [BitwiseCopyable](../swift/bitwisecopyable.md)
 
 ## See Also
 

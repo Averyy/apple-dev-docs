@@ -21,7 +21,7 @@ The constants that define sample rate converter audio quality settings.
   A constant that represents an integer from the audio quality enumeration.
 - [Encoder Settings](encoder-settings.md)
   The constants that define the audio encoder settings for the audio recorder class.
-- [Time pitch algorithm settings](../AVFoundation/time-pitch-algorithm-settings.md)
+- [Time pitch algorithm settings](../avfoundation/time-pitch-algorithm-settings.md)
   The constants that define the values for the time pitch algorithms.
 
 

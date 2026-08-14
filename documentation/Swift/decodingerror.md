@@ -51,7 +51,7 @@ enum DecodingError
 - [CustomDebugStringConvertible](customdebugstringconvertible.md)
 - [Error](error.md)
 - [Escapable](escapable.md)
-- [LocalizedError](../Foundation/LocalizedError.md)
+- [LocalizedError](../foundation/localizederror.md)
 - [Sendable](sendable.md)
 - [SendableMetatype](sendablemetatype.md)
 

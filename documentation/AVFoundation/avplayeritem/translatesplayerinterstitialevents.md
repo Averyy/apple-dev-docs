@@ -16,7 +16,7 @@ var translatesPlayerInterstitialEvents: Bool { get set }
 
 #### Discussion
 
-Enable this property value to support using interstitial events, or set it to [`false`](https://developer.apple.com/documentation/Swift/false) to perform your own interstitial management.
+Enable this property value to support using interstitial events, or set it to [`false`](https://developer.apple.com/documentation/swift/false) to perform your own interstitial management.
 
 ## See Also
 

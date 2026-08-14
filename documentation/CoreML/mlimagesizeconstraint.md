@@ -32,7 +32,7 @@ If `type` is:
 - [`MLImageSizeConstraintType.enumerated`](mlimagesizeconstrainttype/enumerated.md), the image feature accepts any image size listed in [`enumeratedImageSizes`](mlimagesizeconstraint/enumeratedimagesizes.md).
 - [`MLImageSizeConstraintType.unspecified`](mlimagesizeconstrainttype/unspecified.md), the `MLImageSizeConstraint` instance is not configured and should be ignored. Instead, use the image feature’s default image size constraint, defined by [`pixelsWide`](mlimageconstraint/pixelswide.md) and [`pixelsHigh`](mlimageconstraint/pixelshigh.md).
 
-![Graph diagram showing the constraint’s rectangle defined by the width and height ranges of the constraint, and a blue rectangle, representing a valid image size. The diagram’s X-axis spans from 0 to 250 pixels and the Y-axis spans from 0 to 200 pixels. The constraint rectangle, which has a dashed outline, has a width that spans from 50 to 250 pixels, and a height that spans from 100 to 200 pixels. The sample image size has its lower-left corner at the graph’s origin and its upper-right corner is within the bounds of the constraint rectangle, at 150 pixels wide by 180 pixels high.](https://docs-assets.developer.apple.com/published/d99ccb61d4b994effa121d2a119b98ff/media-3027121%402x.png)
+![Graph diagram showing the constraint’s rectangle defined by the width and height ranges of the constraint, and a blue rectangle, representing a valid image size. The diagram’s X-axis spans from 0 to 250 pixels and the Y-axis spans from 0 to 200 pixels. The constraint rectangle, which has a dashed outline, has a width that spans from 50 to 250 pixels, and a height that spans from 100 to 200 pixels. The sample image size has its lower-left corner at the graph’s origin and its upper-right corner is within the bounds of the constraint rectangle, at 150 pixels wide by 180 pixels high.](/images/com.apple.coreml/media-3027121@2x.png)
 
 ## Topics
 
@@ -57,16 +57,16 @@ If `type` is:
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCoding](../Foundation/NSCoding.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [NSSecureCoding](../Foundation/NSSecureCoding.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCoding](../foundation/nscoding.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSSecureCoding](../foundation/nssecurecoding.md)
 
 ## See Also
 

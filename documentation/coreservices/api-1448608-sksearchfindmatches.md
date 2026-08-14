@@ -34,11 +34,11 @@ Before invoking a search, call [`SKIndexFlush(_:)`](1450667-skindexflush.md) on 
 
 ## Parameters
 
-- `inSearch`: A reference to a search object (SKSearchRef) previously created with  .
-- `inMaximumCount`: The maximum number of items to find. For each item found,   places the associated document ID into the   array. Specify an   of 0 to find as many items as possible within  .
-- `outDocumentIDsArray`: On input, a pointer to an array for document IDs. On output, points to points to the previously allocated array, which now contains the found document IDs. The size of this array must be equal to  .
-- `outScoresArray`: On input, a pointer to an array for scores. On output, points to the previously allocated array, which now contains relevance scores for the found items. The size of this array, if not  , must be equal to  . Can be   on input, provided that your application doesn’t need this information. Search Kit does not normalize relevance scores, so they can be very large.
-- `maximumTime`: The maximum number of seconds before this function returns, whether or not   items have been found. Setting maximumTime to 0 tells the search to return quickly
+- `inSearch`: A reference to a search object (SKSearchRef) previously created with [`SKSearchCreate(_:_:_:)`](1443079-sksearchcreate.md).
+- `inMaximumCount`: The maximum number of items to find. For each item found, [`SKSearchFindMatches(_:_:_:_:_:_:)`](1448608-sksearchfindmatches.md) places the associated document ID into the `outDocumentIDsArray` array. Specify an `inMaximumCount` of 0 to find as many items as possible within `maximumTime`.
+- `outDocumentIDsArray`: On input, a pointer to an array for document IDs. On output, points to points to the previously allocated array, which now contains the found document IDs. The size of this array must be equal to `inMaximumCount`.
+- `outScoresArray`: On input, a pointer to an array for scores. On output, points to the previously allocated array, which now contains relevance scores for the found items. The size of this array, if not `NULL`, must be equal to `inMaximumCount`. Can be `NULL` on input, provided that your application doesn’t need this information. Search Kit does not normalize relevance scores, so they can be very large.
+- `maximumTime`: The maximum number of seconds before this function returns, whether or not `inMaximumCount` items have been found. Setting maximumTime to 0 tells the search to return quickly
 - `outFoundCount`: On input, a pointer to a CFIndex object that will hold the number of items found. On output, points to the CFIndex object that now contains the actual number of items found.
 
 ## See Also

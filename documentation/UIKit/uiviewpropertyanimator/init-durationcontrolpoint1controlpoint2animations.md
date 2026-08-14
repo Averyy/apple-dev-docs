@@ -26,7 +26,7 @@ An initialized animator object or `nil` if the object could not be created.
 
 Use this method to create an animator object using a cubic timing curve whose starting point is (0, 0) and whose end point is (1, 1). The `point1` and `point2` parameters are the control points that define the shape of the resulting Bezier curve. The slope of the curve defines the speed of the animation at different times. Steep slopes cause animations to appear to run faster and shallower slopes cause them to appear to run slower. The following image shows a timing curve where the animations start fast and finish fast but run more slowly through the middle section.
 
-![None](https://docs-assets.developer.apple.com/published/0054ab7fbcfb5dc1810282e7c7d2a202/media-1965739%402x.png)
+![None](/images/com.apple.uikit/media-1965739@2x.png)
 
 The animator object returned by this method begins in the [`UIViewAnimatingState.inactive`](uiviewanimatingstate/inactive.md) state. You must explicitly start the animations by calling the [`startAnimation()`](uiviewanimating/startanimation().md) method.
 

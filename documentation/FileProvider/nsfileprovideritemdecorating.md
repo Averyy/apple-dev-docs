@@ -70,7 +70,7 @@ The `Category` value must be one of the following:
 
 ### Inherits From
 - [NSFileProviderItemProtocol](nsfileprovideritemprotocol.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

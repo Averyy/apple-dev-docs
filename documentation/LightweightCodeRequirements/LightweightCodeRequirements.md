@@ -24,7 +24,7 @@ Code that is cryptographically signed carries tamper-proof statements about its 
 
 The keywords you use to test code properties in the lightweight code requirement DSL are:
 
-- **[`CodeDirectoryHash`](codedirectoryhash.md)**: Tests whether the code’s code directory hash matches a specific value, or is in a list of allowed values. For more information about code directory hashes, see [`TN3126: Inside Code Signing: Hashes`](https://developer.apple.com/documentation/Technotes/tn3126-inside-code-signing-hashes).
+- **[`CodeDirectoryHash`](codedirectoryhash.md)**: Tests whether the code’s code directory hash matches a specific value, or is in a list of allowed values. For more information about code directory hashes, see [`TN3126: Inside Code Signing: Hashes`](https://developer.apple.com/documentation/technotes/tn3126-inside-code-signing-hashes).
 - **[`ProcessCodeSigningFlags`](processcodesigningflags.md)**: Tests whether the executable for a running process has particular flags, defined in [`ProcessCodeSigningFlags.ValueSet`](processcodesigningflags/valueset.md), set in its code signature.
 - **[`OnDiskCodeSigningFlags`](ondiskcodesigningflags.md)**: Tests whether the code on disk has particular flags, defined in [`OnDiskCodeSigningFlags.ValueSet`](ondiskcodesigningflags/valueset.md), set in its code signature.
 - **[`EntitlementsQuery`](entitlementsquery.md)**: Tests whether the executable has a particular entitlement, optionally with a given value.
@@ -59,15 +59,15 @@ Both `allOf(requirement:)` and `anyOf(requirement:)` throw an error if the simpl
 
 #### Test Whether a Running Process Satisfies a Lightweight Code Requirement
 
-Create a [`ProcessCodeRequirement`](processcoderequirement.md) using the DSL and pass it to [`SecTaskValidateForRequirement(task:requirement:)`](sectaskvalidateforrequirement(task:requirement:).md), along with a [`SecTask`](https://developer.apple.com/documentation/Security/SecTask) representing the running process. If the task’s code satisfies the lightweight code requirement, then the function returns `true`; otherwise, it returns `false`.
+Create a [`ProcessCodeRequirement`](processcoderequirement.md) using the DSL and pass it to [`SecTaskValidateForRequirement(task:requirement:)`](sectaskvalidateforrequirement(task:requirement:).md), along with a [`SecTask`](https://developer.apple.com/documentation/security/sectask) representing the running process. If the task’s code satisfies the lightweight code requirement, then the function returns `true`; otherwise, it returns `false`.
 
 #### Test Whether Code on Disk Satisfies a Lightweight Code Requirement
 
-Create an [`OnDiskCodeRequirement`](ondiskcoderequirement.md) using the DSL and pass it to [`SecStaticCodeCheckValidityWithOnDiskRequirement(code:flags:requirement:)`](secstaticcodecheckvaliditywithondiskrequirement(code:flags:requirement:).md) or [`SecCodeCheckValidityWithOnDiskRequirement(code:flags:requirement:)`](seccodecheckvaliditywithondiskrequirement(code:flags:requirement:).md), depending on whether you construct a [`SecStaticCode`](https://developer.apple.com/documentation/Security/SecStaticCode) or [`SecCode`](https://developer.apple.com/documentation/Security/SecCode) to represent the code. Both functions return a [`ValidationResult`](validationresult.md) indicating whether the code has a valid signature, whether it satisfies the requirement, and any error that occurred.
+Create an [`OnDiskCodeRequirement`](ondiskcoderequirement.md) using the DSL and pass it to [`SecStaticCodeCheckValidityWithOnDiskRequirement(code:flags:requirement:)`](secstaticcodecheckvaliditywithondiskrequirement(code:flags:requirement:).md) or [`SecCodeCheckValidityWithOnDiskRequirement(code:flags:requirement:)`](seccodecheckvaliditywithondiskrequirement(code:flags:requirement:).md), depending on whether you construct a [`SecStaticCode`](https://developer.apple.com/documentation/security/secstaticcode) or [`SecCode`](https://developer.apple.com/documentation/security/seccode) to represent the code. Both functions return a [`ValidationResult`](validationresult.md) indicating whether the code has a valid signature, whether it satisfies the requirement, and any error that occurred.
 
 #### Restrict the Executables You Launch As New Processes
 
-Create a [`LaunchCodeRequirement`](launchcoderequirement.md) using the DSL and set it as the [`launchRequirement`](https://developer.apple.com/documentation/Foundation/Process/launchRequirement) on a [`Process`](https://developer.apple.com/documentation/Foundation/Process) instance, before you call [`run()`](https://developer.apple.com/documentation/Foundation/Process/run()). If the executable specified in the process’s [`executableURL`](https://developer.apple.com/documentation/Foundation/Process/executableURL) satisfies the launch requirement, the kernel launches the process; otherwise, `run()` throws an error. You can also encode your requirements as launch constraints in property list files that you embed in your executable’s code signature to restrict which processes can launch your executable and which dynamic libraries your process can load. For more information, see [`Applying launch environment and library constraints`](https://developer.apple.com/documentation/Security/applying-launch-environment-and-library-constraints).
+Create a [`LaunchCodeRequirement`](launchcoderequirement.md) using the DSL and set it as the [`launchRequirement`](https://developer.apple.com/documentation/foundation/process/launchrequirement) on a [`Process`](https://developer.apple.com/documentation/foundation/process) instance, before you call [`run()`](https://developer.apple.com/documentation/foundation/process/run()). If the executable specified in the process’s [`executableURL`](https://developer.apple.com/documentation/foundation/process/executableurl) satisfies the launch requirement, the kernel launches the process; otherwise, `run()` throws an error. You can also encode your requirements as launch constraints in property list files that you embed in your executable’s code signature to restrict which processes can launch your executable and which dynamic libraries your process can load. For more information, see [`Applying launch environment and library constraints`](https://developer.apple.com/documentation/security/applying-launch-environment-and-library-constraints).
 
 ## Topics
 
@@ -91,7 +91,7 @@ Create a [`LaunchCodeRequirement`](launchcoderequirement.md) using the DSL and s
 ### Checking code requirements for launching processes
 - [func SecCodeCheckValidityWithProcessRequirement(code: SecCode, flags: SecCSFlags, requirement: ProcessCodeRequirement) -> ValidationResult](seccodecheckvaliditywithprocessrequirement(code:flags:requirement:).md)
   Checks whether the code associated with a running process satisfies a lightweight code requirement.
-- [var launchRequirement: LaunchCodeRequirement?](../Foundation/Process/launchRequirement.md)
+- [var launchRequirement: LaunchCodeRequirement?](../foundation/process/launchrequirement.md)
 - [struct LaunchCodeRequirement](launchcoderequirement.md)
   A lightweight code requirement that you use to evaluate the executable for a launching process.
 - [func allOf(requirement: () -> [any LaunchConstraint]) -> any LaunchConstraint](allof(requirement:)-4gf5f.md)

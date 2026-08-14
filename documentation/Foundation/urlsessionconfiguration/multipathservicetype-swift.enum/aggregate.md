@@ -19,7 +19,7 @@ case aggregate
 
 #### Discussion
 
-This option is available only for experimentation. Specify it for connections that use cellular data. You must also set the [`Multipath Entitlement`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.networking.multipath) in the Xcode Capabilities pane for your app.
+This option is available only for experimentation. Specify it for connections that use cellular data. You must also set the [`Multipath Entitlement`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.networking.multipath) in the Xcode Capabilities pane for your app.
 
 To enable the aggregation mode, open the Settings app on your development iPhone and navigate to Developer, and then turn on Multipath Networking.
 

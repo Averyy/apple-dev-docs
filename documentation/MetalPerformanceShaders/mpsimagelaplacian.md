@@ -23,7 +23,7 @@ class MPSImageLaplacian
 
 This filter uses an optimized convolution filter with a 3x3 kernel with the following weights:
 
-![None](https://docs-assets.developer.apple.com/published/920e9120976a74b0e57c7fcc80e963aa/media-2556916%402x.png)
+![None](/images/com.apple.metalperformanceshaders/media-2556916@2x.png)
 
 > **Note**:  The optimized convolution filter used by the [`MPSImageLaplacian`](mpsimagelaplacian.md) class could also be created by initializing an [`MPSImageConvolution`](mpsimageconvolution.md) object with `kernelWidth=3`, `kernelHeight=3`, and the weights specified above.
 
@@ -38,15 +38,15 @@ This filter uses an optimized convolution filter with a 3x3 kernel with the foll
 ### Inherits From
 - [MPSUnaryImageKernel](mpsunaryimagekernel.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCoding](../Foundation/NSCoding.md)
-- [NSCopying](../Foundation/NSCopying.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [NSSecureCoding](../Foundation/NSSecureCoding.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCoding](../foundation/nscoding.md)
+- [NSCopying](../foundation/nscopying.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSSecureCoding](../foundation/nssecurecoding.md)
 
 ## See Also
 

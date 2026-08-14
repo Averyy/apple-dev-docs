@@ -22,7 +22,7 @@ var locale: Locale { get set }
 
 #### Discussion
 
-This value determines the locale the test environment uses when it fetches localized metadata for [`SKProductsRequest`](https://developer.apple.com/documentation/StoreKit/SKProductsRequest). You provide localized metadata in your StoreKit configuration file.
+This value determines the locale the test environment uses when it fetches localized metadata for [`SKProductsRequest`](https://developer.apple.com/documentation/storekit/skproductsrequest). You provide localized metadata in your StoreKit configuration file.
 
 Changing this property overrides its setting in the StoreKit configuration file for this test session. Call [`resetToDefaultState()`](sktestsession/resettodefaultstate().md) to revert all settings to those in the configuration file.
 

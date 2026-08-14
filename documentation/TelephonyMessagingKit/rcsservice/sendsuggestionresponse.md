@@ -7,7 +7,6 @@ Sends a response for a business suggestion.
 
 **Availability**:
 - iOS 26.0+
-- iPadOS 26.0+
 
 ## Declaration
 

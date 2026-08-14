@@ -45,7 +45,7 @@ You can pass a function for the system to call when the action triggers by setti
 ## Relationships
 
 ### Conforms To
-- [Identifiable](../Swift/Identifiable.md)
+- [Identifiable](../swift/identifiable.md)
 
 
 ---

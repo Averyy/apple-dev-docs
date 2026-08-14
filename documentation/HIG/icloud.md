@@ -13,7 +13,7 @@ framework: HIG
 
 iCloud is a service that lets people seamlessly access the content they care about — photos, videos, documents, and more — from any device, without performing explicit synchronization.
 
-![A sketch of the iCloud icon. The image is overlaid with rectangular and circular grid lines and is tinted blue to subtly reflect the blue in the original six-color Apple logo.](https://docs-assets.developer.apple.com/published/a4ae6cfc75131b5bd2c4deabb74493df/technologies-iCloud-intro~dark%402x.png)
+![A sketch of the iCloud icon. The image is overlaid with rectangular and circular grid lines and is tinted blue to subtly reflect the blue in the original six-color Apple logo.](/images/com.apple.HIG/technologies-iCloud-intro~dark@2x.png)
 A fundamental aspect of iCloud is transparency. People don’t need to know where content resides. They can just assume they’re always accessing the latest version.
 
 ## Best practices
@@ -26,7 +26,7 @@ A fundamental aspect of iCloud is transparency. People don’t need to know wher
 **Warn about the consequences of deleting a document.** When someone deletes a document in an app that supports iCloud, the document is removed from iCloud and all other devices too. Show a warning and ask for confirmation before performing the deletion.
 **Make conflict resolution prompt and easy.** To the extent possible, try to detect and resolve version conflicts automatically. If this can’t be done, display an unobtrusive notification that makes it easy to differentiate and choose between the conflicting versions. Ideally, conflict resolution occurs as early as possible, so time isn’t wasted in the wrong version.
 **Include iCloud content in search results.** People with iCloud accounts assume their content is universally available, and they expect search results to reflect this perspective.
-**For games, consider saving player progress in iCloud.** Although you can implement this functionality yourself, the GameSave framework offers an efficient solution. It synchronizes save data across devices and offers built-in alerts you can use to help players handle syncing issues during offline play or when conflicts arise. Alternatively, you can implement custom UI that uses GameSave data to resolve these situations. For developer guidance, see [GameSave](../GameSave.md).
+**For games, consider saving player progress in iCloud.** Although you can implement this functionality yourself, the GameSave framework offers an efficient solution. It synchronizes save data across devices and offers built-in alerts you can use to help players handle syncing issues during offline play or when conflicts arise. Alternatively, you can implement custom UI that uses GameSave data to resolve these situations. For developer guidance, see [GameSave](../gamesave.md).
 
 ## Platform considerations
 *No additional considerations for iOS, iPadOS, macOS, tvOS, visionOS, or watchOS.*
@@ -34,8 +34,8 @@ A fundamental aspect of iCloud is transparency. People don’t need to know wher
 ## Resources
 
 #### Developer documentation
-[CloudKit](../CloudKit.md)
-[GameSave](../GameSave.md)
+[CloudKit](../cloudkit.md)
+[GameSave](../gamesave.md)
 
 ## Change log
 | Date | Changes |

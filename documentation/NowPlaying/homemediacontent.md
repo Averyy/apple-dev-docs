@@ -52,7 +52,7 @@ Use this type for home-related media such as security camera feeds, baby monitor
 ## Relationships
 
 ### Conforms To
-- [Identifiable](../Swift/Identifiable.md)
+- [Identifiable](../swift/identifiable.md)
 - [MediaContentRepresentable](mediacontentrepresentable.md)
 
 ## See Also

@@ -18,7 +18,7 @@ Analyze natural language text and deduce its language-specific metadata.
 
 The Natural Language framework provides a variety of natural language processing (NLP) functionality with support for many different languages and scripts. Use this framework to segment natural language text into paragraphs, sentences, or words, and tag information about those segments, such as part of speech, lexical class, lemma, script, and language.
 
-![Diagram showing the types of analysis that the Natural Language framework can perform.](https://docs-assets.developer.apple.com/published/991fa70b8c44e03076c487b8b7e7178b/media-3597579%402x.png)
+![Diagram showing the types of analysis that the Natural Language framework can perform.](/images/com.apple.naturallanguage/media-3597579@2x.png)
 
 Use this framework to perform tasks like:
 
@@ -28,7 +28,7 @@ Use this framework to perform tasks like:
 - *Lemmatization*, deducing a word’s stem based on its morphological analysis.
 - *Named entity recognition*, identifying tokens as names of people, places, or organizations.
 
-You can also use this framework with Create ML to train and deploy custom natural language models. For more information, see [`Creating a text classifier model`](https://developer.apple.com/documentation/CreateML/creating-a-text-classifier-model) and doc:creating-a-word-tagger-model.
+You can also use this framework with Create ML to train and deploy custom natural language models. For more information, see [`Creating a text classifier model`](https://developer.apple.com/documentation/createml/creating-a-text-classifier-model) and doc:creating-a-word-tagger-model.
 
 ## Topics
 
@@ -64,9 +64,9 @@ You can also use this framework with Create ML to train and deploy custom natura
 - [struct NLScript](nlscript.md)
   The writing scripts that the Natural Language framework supports.
 ### Natural language models
-- [Creating a text classifier model](../CreateML/creating-a-text-classifier-model.md)
+- [Creating a text classifier model](../createml/creating-a-text-classifier-model.md)
   Train a machine learning model to classify natural language text.
-- [Creating a word tagger model](../CreateML/creating-a-word-tagger-model.md)
+- [Creating a word tagger model](../createml/creating-a-word-tagger-model.md)
   Train a machine learning model to tag individual words in natural language text.
 - [class NLModel](nlmodel.md)
   A custom model trained to classify or tag natural language text.

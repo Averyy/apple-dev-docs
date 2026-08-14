@@ -19,7 +19,7 @@ When you create a new project, you specify whether you want to add support for C
 5. Enter any other project details and click Next.
 6. Specify a location for your project and click Create.
 
-![Screenshot showing the new project creation dialog with the Core Data Storage option and Host in CloudKit checkbox selected.](https://docs-assets.developer.apple.com/published/f748f77f7568bed1705e93b795580c6d/media-4434183%402x.png)
+![Screenshot showing the new project creation dialog with the Core Data Storage option and Host in CloudKit checkbox selected.](/images/com.apple.coredata/media-4434183@2x.png)
 
 Not all project templates support Core Data. If the template you want to use doesn’t currently support Core Data, add Core Data to the project as described in [`Setting up a Core Data stack`](setting-up-a-core-data-stack.md). Then add Core Data with CloudKit as described in [`Update an existing Xcode project`](setting-up-core-data-with-cloudkit#Update-an-existing-Xcode-project.md).
 
@@ -32,7 +32,7 @@ Core Data with CloudKit requires specific entitlements for your app to communica
 3. Specify your development team.
 4. Click the + Capability button, then do a search for iCloud in the Add Capability editor and select that capability.
 
-![Screenshot showing the locations of the Add Capability button, Automatically manage signing checkbox, and Team dropdown in the Signing & Capabilities tab in Project Settings.](https://docs-assets.developer.apple.com/published/52078c8b70403835bbd18631b9101788/media-4436809%402x.png)
+![Screenshot showing the locations of the Add Capability button, Automatically manage signing checkbox, and Team dropdown in the Signing & Capabilities tab in Project Settings.](/images/com.apple.coredata/media-4436809@2x.png)
 
 An iCloud section appears on your app’s Signing & Capabilities page.
 
@@ -44,7 +44,7 @@ Core Data with CloudKit uses the CloudKit service to access your team’s contai
 2. Select the CloudKit checkbox. This selection also adds push notifications that notify your app when remote content changes.
 3. Under Containers, add or select a container. For more information about working with CloudKit containers and setting up profiles, see [`Enabling CloudKit in Your App`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/DataManagement/Conceptual/CloudKitQuickStart/EnablingiCloudandConfiguringCloudKit/EnablingiCloudandConfiguringCloudKit.html#//apple_ref/doc/uid/TP40014987-CH2).
 
-![Screenshot showing the iCloud section of the Signing & Capabilities tab with CloudKit enabled.](https://docs-assets.developer.apple.com/published/06abe307359943cc63cd1d8c73640f81/media-4436808%402x.png)
+![Screenshot showing the iCloud section of the Signing & Capabilities tab with CloudKit enabled.](/images/com.apple.coredata/media-4436808@2x.png)
 
 Xcode checks that your development team supports the Push Notification and iCloud capabilities, then registers your app’s bundle identifier and manages provisioning profiles.
 
@@ -56,9 +56,9 @@ For CloudKit to silently notify your app when new content is available, without 
 2. Click the + Capability button, then do a search for Background Modes in the Add Capability editor and select that capability.
 3. Select the “Remote notifications” checkbox.
 
-![Screenshot showing the Background Modes section of the Signing & Capabilities tab with the Remote notifications checkbox selected.](https://docs-assets.developer.apple.com/published/ada6c9909dace104f96da43d22dc037d/media-4436810%402x.png)
+![Screenshot showing the Background Modes section of the Signing & Capabilities tab with the Remote notifications checkbox selected.](/images/com.apple.coredata/media-4436810@2x.png)
 
-For more information about silent notifications, see [`Pushing background updates to your App`](https://developer.apple.com/documentation/UserNotifications/pushing-background-updates-to-your-app).
+For more information about silent notifications, see [`Pushing background updates to your App`](https://developer.apple.com/documentation/usernotifications/pushing-background-updates-to-your-app).
 
 ##### Update an Existing Xcode Project
 
@@ -98,7 +98,7 @@ You might need to mirror a subset of your data using CloudKit, while keeping oth
 3. Drag each entity into a configuration.
 4. Select a configuration that you want to sync to CloudKit, then select the “Used with CloudKit” checkbox in the data model editor. Repeat for each configuration that you want to sync.
 
-![Screenshot showing the .xcdatamodeld file with the Configuration list at left containing Default, Cache, Cloud, and Local configurations. The Cloud configuration is selected and its “Used with CloudKit” checkbox is selected in the Data Model inspector.](https://docs-assets.developer.apple.com/published/ecf5d61fd34f3d17ac184ba7bccf9bf1/media-4445965%402x.png)
+![Screenshot showing the .xcdatamodeld file with the Configuration list at left containing Default, Cache, Cloud, and Local configurations. The Cloud configuration is selected and its “Used with CloudKit” checkbox is selected in the Data Model inspector.](/images/com.apple.coredata/media-4445965@2x.png)
 
 For an app without configurations, [`NSPersistentCloudKitContainer`](nspersistentcloudkitcontainer.md) matches the first store description with the first CloudKit container identifier in the entitlements.
 

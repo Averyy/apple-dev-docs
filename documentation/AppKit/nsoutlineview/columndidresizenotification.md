@@ -21,7 +21,7 @@ The notification object is the `NSOutlineView` object in which a column was resi
 | Key | Value |
 | --- | --- |
 | `@"NSTableColumn"` | The column that was resized. |
-| `@"NSOldWidth"` | An [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) object containing the column’s original width |
+| `@"NSOldWidth"` | An [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) object containing the column’s original width |
 
 To observe this notification using Swift concurrency, use [`NSOutlineView.ColumnDidResizeMessage`](nsoutlineview/columndidresizemessage.md).
 

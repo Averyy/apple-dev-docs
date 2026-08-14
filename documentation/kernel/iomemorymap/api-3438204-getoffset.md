@@ -25,9 +25,9 @@ When creating a memory map object, you can map to a location in the middle of th
 
 ## See Also
 
-- [- GetAddress](../driverkit/iomemorymap/getaddress.md)
+- [- GetAddress](iomemorymap/3180656-getaddress.md)
   Returns the address of the memory block.
-- [- GetLength](../driverkit/iomemorymap/getlength.md)
+- [- GetLength](iomemorymap/3180657-getlength.md)
   Returns the length of the memory block in bytes.
 
 

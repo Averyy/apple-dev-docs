@@ -22,7 +22,7 @@ init(contentsOf url: URL) throws
 
 #### Discussion
 
-Use this initializer to create an [`NLGazetteer`](nlgazetteer.md) from an `.mlmodel` file saved by [`MLGazetteer`](https://developer.apple.com/documentation/CreateML/MLGazetteer) in the `Create ML` framework.
+Use this initializer to create an [`NLGazetteer`](nlgazetteer.md) from an `.mlmodel` file saved by [`MLGazetteer`](https://developer.apple.com/documentation/createml/mlgazetteer) in the `Create ML` framework.
 
 ## Parameters
 

@@ -8,11 +8,11 @@ Provide direct access to your camera app’s features to help people quickly cap
 
 iPhone 16 devices provide a new hardware interface — the Camera Control — that enables direct interaction with the camera system. By default, iOS configures the Camera Control to launch and control the Camera app. By adopting support for this feature, you can bring this same level of integration to your camera app.
 
-> **Note**:  To handle capture events from the Capture Control, your app must adopt the [`AVCaptureEventInteraction`](https://developer.apple.com/documentation/AVKit/AVCaptureEventInteraction) class from the AVKit framework. To launch your app from the Camera Control, it needs to adopt the [`LockedCameraCapture`](https://developer.apple.com/documentation/LockedCameraCapture) framework. For an example of how to provide full support for the Camera Control in your app, see [`AVCam: Building a camera app`](avcam-building-a-camera-app.md).
+> **Note**:  To handle capture events from the Capture Control, your app must adopt the [`AVCaptureEventInteraction`](https://developer.apple.com/documentation/avkit/avcaptureeventinteraction) class from the AVKit framework. To launch your app from the Camera Control, it needs to adopt the [`LockedCameraCapture`](https://developer.apple.com/documentation/lockedcameracapture) framework. For an example of how to provide full support for the Camera Control in your app, see [`AVCam: Building a camera app`](avcam-building-a-camera-app.md).
 
 Interacting with the Camera Control reveals a new controls interface like shown below. A single light press of the Camera Control presents an overlay that enables a person to adjust the value of a particular control like the camera’s zoom or exposure. Then by lightly double tapping the button, the user can switch between the controls the app provides by sliding their finger on the Camera Control.
 
-![An image with two screenshots arranged horizontally. The screenshot on the left shows the user interface of a control that adjusts camera zoom. The screenshot on the right shows the controls overlay the system reveals when a user lightly double presses the Camera Control.](https://docs-assets.developer.apple.com/published/63e54fc596bab8bbd804880b88490b17/media-4480139%402x.png)
+![An image with two screenshots arranged horizontally. The screenshot on the left shows the user interface of a control that adjusts camera zoom. The screenshot on the right shows the controls overlay the system reveals when a user lightly double presses the Camera Control.](/images/com.apple.avfoundation/media-4480139@2x.png)
 
 The items this menu presents are instances of [`AVCaptureControl`](avcapturecontrol.md), used to define the abstract interface for control objects. This article describes the framework’s available control types and how to configure your app to use them.
 
@@ -29,7 +29,7 @@ Both control types determine their range by querying the associated device’s a
 
 Configuring your app to use these controls provides user interfaces like shown below:
 
-![An image with two screenshots arranged horizontally. The left screenshot shows the user interface of an AVCaptureSystemZoomSlider. This control displays a row of vertical tick marks across the top to show the range of zoom values, and below it a label that indicates a 1x zoom level. The right screenshot shows the user interface of an AVCaptureSystemExposureBiasSlider. This control displays a row of vertical tick marks with prominent values across its range, and below it a label that indicates an exposure of 0 EV.](https://docs-assets.developer.apple.com/published/80267b7bbad76706830fb1b4b8b261a6/media-4480197%402x.png)
+![An image with two screenshots arranged horizontally. The left screenshot shows the user interface of an AVCaptureSystemZoomSlider. This control displays a row of vertical tick marks across the top to show the range of zoom values, and below it a label that indicates a 1x zoom level. The right screenshot shows the user interface of an AVCaptureSystemExposureBiasSlider. This control displays a row of vertical tick marks with prominent values across its range, and below it a label that indicates an exposure of 0 EV.](/images/com.apple.avfoundation/media-4480197@2x.png)
 
 Adopting system controls is straightforward. You create an instance by passing it an [`AVCaptureDevice`](avcapturedevice.md) object to configure and, optionally, an action to perform after a change occurs. The system calls this action on the `@MainActor` so your app can update its user interface in response to value changes.
 
@@ -70,7 +70,7 @@ let filterPicker = AVCaptureIndexPicker("Filters", symbolName: "camera.filters",
 
 Configuring your app to use these controls provides user interfaces like shown below:
 
-![An image with screenshots of a custom focus slider and a custom camera filter picker. The top-left image shows the focus control’s presentation in the overlay, which displays its SF Symbol and localized title. The screenshot below it shows the user interface the control presents to modify the focus. The top-right image shows the camera filter control’s presentation in the overlay, which displays its SF Symbol and localized title. The screenshot below it shows the user interface the control presents to modify the filter selection. ](https://docs-assets.developer.apple.com/published/6b3c0821cc76f622f5d1e9c00a6c01b1/media-4480196%402x.png)
+![An image with screenshots of a custom focus slider and a custom camera filter picker. The top-left image shows the focus control’s presentation in the overlay, which displays its SF Symbol and localized title. The screenshot below it shows the user interface the control presents to modify the focus. The top-right image shows the camera filter control’s presentation in the overlay, which displays its SF Symbol and localized title. The screenshot below it shows the user interface the control presents to modify the filter selection. ](/images/com.apple.avfoundation/media-4480196@2x.png)
 
 Each control type defines a `value` property that represents its current state, which it updates in response to user interaction. If the state a control represents can change from elsewhere in your app, such as other UI that selects a camera filter, update the control’s `value` property accordingly to keep its state in sync.
 

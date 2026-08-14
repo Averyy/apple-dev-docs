@@ -27,15 +27,15 @@ If the sample buffer carries sample references only, sample data will not be wri
 
 > **Note**:  In a track’s media, the first sample’s decode timestamp must be zero. For an audio track, each sample buffer’s duration is used as the sample decode duration. For other track types, the difference between a sample’s decode timestamp and the following sample’s decode timestamp is used as the first sample’s decode duration, so as to preserve the relative timing.
 
-To make the new samples appear in the track’s timeline, invoke [`insertMediaTimeRange(_:into:)`](avmutablemovietrack/insertmediatimerange(_:into:).md). Retrieve the [`mediaPresentationTimeRange`](avmovietrack/mediapresentationtimerange.md) property before and after appending a sequence of samples, using [`CMTimeRangeGetEnd(_:)`](https://developer.apple.com/documentation/CoreMedia/CMTimeRangeGetEnd(_:)) on each to calculate the media time range for [`insertMediaTimeRange(_:into:)`](avmutablemovietrack/insertmediatimerange(_:into:).md).
+To make the new samples appear in the track’s timeline, invoke [`insertMediaTimeRange(_:into:)`](avmutablemovietrack/insertmediatimerange(_:into:).md). Retrieve the [`mediaPresentationTimeRange`](avmovietrack/mediapresentationtimerange.md) property before and after appending a sequence of samples, using [`CMTimeRangeGetEnd(_:)`](https://developer.apple.com/documentation/coremedia/cmtimerangegetend(_:)) on each to calculate the media time range for [`insertMediaTimeRange(_:into:)`](avmutablemovietrack/insertmediatimerange(_:into:).md).
 
 It’s safe for multiple threads to call this method on different tracks at the same time.
 
 ## Parameters
 
 - `sampleBuffer`: The sample buffer to be appended.
-- `outDecodeTime`: A pointer to a [`CMTime`](https://developer.apple.com/documentation/CoreMedia/CMTime) structure to receive the decode time in the media of the first sample appended from the sample buffer. Pass `NULL` if the information is not needed.
-- `outPresentationTime`: A pointer to a [`CMTime`](https://developer.apple.com/documentation/CoreMedia/CMTime) structure to receive the presentation time in the media of the first sample appended from the sample buffer. Pass `NULL` if the information is not needed.
+- `outDecodeTime`: A pointer to a [`CMTime`](https://developer.apple.com/documentation/coremedia/cmtime) structure to receive the decode time in the media of the first sample appended from the sample buffer. Pass `NULL` if the information is not needed.
+- `outPresentationTime`: A pointer to a [`CMTime`](https://developer.apple.com/documentation/coremedia/cmtime) structure to receive the presentation time in the media of the first sample appended from the sample buffer. Pass `NULL` if the information is not needed.
 
 ## See Also
 

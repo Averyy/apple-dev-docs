@@ -41,7 +41,7 @@ func saliencyMap(inputImage: CIImage) -> CIImage {
 }
 ```
 
-![Two photographs of multiple sets of small purple flowers surrounded by other flowers. The photo on the left is clear and crisp. In the photo on the right, a saliency map filter is applied and the image is transformed to a black image with red highlighting the area of the flower.](https://docs-assets.developer.apple.com/published/0dbd0da7daa97279ebedb5cf5a2bf419/media-3624695%402x.png)
+![Two photographs of multiple sets of small purple flowers surrounded by other flowers. The photo on the left is clear and crisp. In the photo on the right, a saliency map filter is applied and the image is transformed to a black image with red highlighting the area of the flower.](/images/com.apple.coreimage/media-3624695@2x.png)
 
 ## See Also
 

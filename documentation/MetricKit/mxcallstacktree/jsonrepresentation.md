@@ -41,7 +41,7 @@ A call stack is a dictionary containing at most two keys:
 A stack frame is a dictionary containing up to six keys:
 
 - **`binaryName`**: The name of the binary associated with the stack frame.
-- **`binaryUUID`**: A unique ID a developer uses to symbolicate a stack frame. For more information, see [`Adding identifiable symbol names to a crash report`](https://developer.apple.com/documentation/Xcode/adding-identifiable-symbol-names-to-a-crash-report).
+- **`binaryUUID`**: A unique ID a developer uses to symbolicate a stack frame. For more information, see [`Adding identifiable symbol names to a crash report`](https://developer.apple.com/documentation/xcode/adding-identifiable-symbol-names-to-a-crash-report).
 - **`address`**: The memory address of the stack frame.
 - **`offsetIntoBinaryTextSegment`**: The offset of the stack frame into the text segment of the binary.
 - **`sampleCount`**: For a CPU exception, the amount of time spent sampling the stack frame.

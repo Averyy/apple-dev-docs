@@ -49,7 +49,7 @@ print(output[0 ..< Int(outputCount)])
 
 The figure below illustrates the process the function uses to calculate the result:
 
-![A diagram that depicts the steps taken by the function to compute the sliding window sum. The diagram consists of eight stacked rows that represent each step. Each step in the process moves a three-element sliding window from left to right, and the value for each step is the sum of values in the sliding window.](https://docs-assets.developer.apple.com/published/5ae3e9651cc0da0638c748430b882cd4/media-4329487%402x.png)
+![A diagram that depicts the steps taken by the function to compute the sliding window sum. The diagram consists of eight stacked rows that represent each step. Each step in the process moves a three-element sliding window from left to right, and the value for each step is the sum of values in the sliding window.](/images/com.apple.accelerate/media-4329487@2x.png)
 
 Alternatively, the following code shows how to process input elements to generate a specific number of output elements. Use this technique, for example, to process streaming input data. The code below takes `count` elements from the input collection and returns the sums at eight window positions:
 
@@ -83,7 +83,7 @@ print(output[0 ..< Int(outputCount)])
 
 The figure below illustrates the process the function uses to calculate the result:
 
-![A diagram that depicts the steps taken by the function to compute the sliding window sum. The diagram consists of eight stacked rows that represent each step. Each step in the process moves a three-element sliding window from left to right, and the value for each step is the sum of values in the sliding window.](https://docs-assets.developer.apple.com/published/064ef2a3762daf0a2c6c218aa2f13174/media-4329495%402x.png)
+![A diagram that depicts the steps taken by the function to compute the sliding window sum. The diagram consists of eight stacked rows that represent each step. Each step in the process moves a three-element sliding window from left to right, and the value for each step is the sum of values in the sliding window.](/images/com.apple.accelerate/media-4329495@2x.png)
 
 ## Parameters
 

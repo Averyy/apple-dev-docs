@@ -53,7 +53,7 @@ Xcode lets you configure information about your group interface object in your s
 
 In watchOS 4 and later, you can use groups to create overlapping content. Set the group’s Layout attribute in the Attribute inspector to Overlap (see [`Figure 1`](wkinterfacegroup#2929967.md) ). The system positions each item in the group based on the item’s alignment attributes.
 
-![A screenshot showing the Layout attribute’s Overlap option. ](https://docs-assets.developer.apple.com/published/bb7cde1fcecfe2a86345657725036b7e/media-2929967%402x.png)
+![A screenshot showing the Layout attribute’s Overlap option. ](/images/com.apple.watchkit/media-2929967@2x.png)
 
 ## Topics
 
@@ -77,12 +77,12 @@ In watchOS 4 and later, you can use groups to create overlapping content. Set th
 ### Inherits From
 - [WKInterfaceObject](wkinterfaceobject.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 - [WKImageAnimatable](wkimageanimatable.md)
 
 ## See Also

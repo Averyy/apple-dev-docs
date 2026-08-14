@@ -28,7 +28,7 @@ A string variation, or the original string if no variations exist for the specif
 
 You can use this method to provide adaptive strings for the user’s device—that is, text that avoids truncation and maximizes available space. For example, an app running on an iPad Pro in Landscape orientation might welcome a user with the message “Greetings and Salutations!”, whereas the same app running on an iPhone SE in Portrait orientation might instead show an abbreviated welcome message, like “Hello!”.
 
-> **Note**:  Don’t call this method when setting user-visible text for standard UIKit controls, such as [`UILabel`](https://developer.apple.com/documentation/UIKit/UILabel). UIKit provides built-in support for adaptive strings, and automatically selects the string width variant appropriate for the current screen size according to the behavior described below.
+> **Note**:  Don’t call this method when setting user-visible text for standard UIKit controls, such as [`UILabel`](https://developer.apple.com/documentation/uikit/uilabel). UIKit provides built-in support for adaptive strings, and automatically selects the string width variant appropriate for the current screen size according to the behavior described below.
 
 Call this method on a string with one or more width variations. You define width variations for a localized string in a Stringsdict file using the `NSStringVariableWidthRuleType` key, and then retrieve a string with variations using [`NSLocalizedString`](nslocalizedstring.md).
 
@@ -88,7 +88,7 @@ In iOS, width contexts are measured by the number of em units that fit across th
   Calculates and returns the bounding rect for the receiver drawn using the given options and display characteristics, within the specified rectangle in the current graphics context.
 - [func size(withAttributes: [NSAttributedString.Key : Any]?) -> CGSize](nsstring/size(withattributes:).md)
   Returns the bounding box size the receiver occupies when drawn with the given attributes.
-- [struct NSStringDrawingOptions](../UIKit/NSStringDrawingOptions.md)
+- [struct NSStringDrawingOptions](../uikit/nsstringdrawingoptions.md)
   Constants that specify the rendering options for drawing a string.
 
 

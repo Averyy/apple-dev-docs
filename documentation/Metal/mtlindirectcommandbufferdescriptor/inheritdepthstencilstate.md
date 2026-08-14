@@ -21,7 +21,7 @@ var inheritDepthStencilState: Bool { get set }
 
 #### Discussion
 
-The property’s default value is [`true`](https://developer.apple.com/documentation/Swift/true).
+The property’s default value is [`true`](https://developer.apple.com/documentation/swift/true).
 
 
 ---

@@ -20,7 +20,7 @@ This object delivers sample data either by providing sample location and sample 
 
 ##### Delivering Sample Data
 
-An [`MESampleCursor`](mesamplecursor.md) object can return sample data to [`Core Media`](https://developer.apple.com/documentation/CoreMedia) in two ways:
+An [`MESampleCursor`](mesamplecursor.md) object can return sample data to [`Core Media`](https://developer.apple.com/documentation/coremedia) in two ways:
 
 - Return information about the sample data location in the media and let Core Media read the data.
 - Read the data and return sample buffers directly.
@@ -123,8 +123,8 @@ If Core Media can’t directly read the sample data, then the `MESampleCursor` o
 ## Relationships
 
 ### Inherits From
-- [NSCopying](../Foundation/NSCopying.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSCopying](../foundation/nscopying.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

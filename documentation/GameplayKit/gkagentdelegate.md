@@ -43,7 +43,7 @@ To learn more about using goals and agents, see [`Agents, Goals, and Behaviors`]
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 ### Conforming Types
 - [GKSCNNodeComponent](gkscnnodecomponent.md)
 - [GKSKNodeComponent](gksknodecomponent.md)

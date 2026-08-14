@@ -19,7 +19,7 @@ static let noseSneerRight: ARFaceAnchor.BlendShapeLocation
 
 The figure below shows a face geometry (see [`ARSCNFaceGeometry`](arscnfacegeometry.md)) in two states, demonstrating values of `0.0` and `1.0` for this coefficient. In both states, the values for all other [`ARFaceAnchor.BlendShapeLocation`](arfaceanchor/blendshapelocation.md) coefficients are set to `0.0`.
 
-![None](https://docs-assets.developer.apple.com/published/acc573a88e2fe295592a02db22ae40cb/media-2929219%402x.png)
+![None](/images/com.apple.arkit/media-2929219@2x.png)
 
 ## See Also
 

@@ -24,7 +24,7 @@ static let leading: Alignment
 
 This alignment combines the [`leading`](horizontalalignment/leading.md) horizontal guide and the [`center`](verticalalignment/center.md) vertical guide:
 
-![A square that’s divided into four equal quadrants. The upper-](https://docs-assets.developer.apple.com/published/ceff1e80c2597aae93424c0870f02bb9/Alignment-leading-1-iOS%402x.png)
+![A square that’s divided into four equal quadrants. The upper-](/images/com.apple.SwiftUI/Alignment-leading-1-iOS@2x.png)
 
 ## See Also
 

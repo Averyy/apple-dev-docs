@@ -26,11 +26,11 @@ An instance of a type capable of handling the specified intent; otherwise, `nil`
 
 > ❗ **Important**:  The system only invokes this method in apps that support multiple scenes. For more information, see [`Specifying the scenes your app supports`](specifying-the-scenes-your-app-supports.md).
 
-Siri invokes this method on the main queue when it wants to process one of your app’s supported intents. To indicate the intents that your app supports, populate the [`INIntentsSupported`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/INIntentsSupported) array in your app target’s `Info.plist` file.
+Siri invokes this method on the main queue when it wants to process one of your app’s supported intents. To indicate the intents that your app supports, populate the [`INIntentsSupported`](https://developer.apple.com/documentation/bundleresources/information-property-list/inintentssupported) array in your app target’s `Info.plist` file.
 
-In your delegate’s implementation of this method, check the `intent` parameter’s type and return a custom object that adopts the corresponding handling protocol. For example, if `intent` is an instance of [`INPlayMediaIntent`](https://developer.apple.com/documentation/Intents/INPlayMediaIntent), return an object that adopts [`INPlayMediaIntentHandling`](https://developer.apple.com/documentation/Intents/INPlayMediaIntentHandling). Only use the provided intent to determine the handler to return; don’t use it to initialize the handler and don’t store a reference to it. SiriKit updates the intent throughout the request to incorporate information the requester provides. For more information, see [`Dispatching intents to handlers`](https://developer.apple.com/documentation/SiriKit/dispatching-intents-to-handlers).
+In your delegate’s implementation of this method, check the `intent` parameter’s type and return a custom object that adopts the corresponding handling protocol. For example, if `intent` is an instance of [`INPlayMediaIntent`](https://developer.apple.com/documentation/intents/inplaymediaintent), return an object that adopts [`INPlayMediaIntentHandling`](https://developer.apple.com/documentation/intents/inplaymediaintenthandling). Only use the provided intent to determine the handler to return; don’t use it to initialize the handler and don’t store a reference to it. SiriKit updates the intent throughout the request to incorporate information the requester provides. For more information, see [`Dispatching intents to handlers`](https://developer.apple.com/documentation/sirikit/dispatching-intents-to-handlers).
 
-For information about handling intents, see [`Resolving and Handling Intents`](https://developer.apple.com/documentation/SiriKit/resolving-and-handling-intents).
+For information about handling intents, see [`Resolving and Handling Intents`](https://developer.apple.com/documentation/sirikit/resolving-and-handling-intents).
 
 ## Parameters
 

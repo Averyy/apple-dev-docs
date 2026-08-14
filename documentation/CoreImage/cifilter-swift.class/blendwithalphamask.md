@@ -45,7 +45,7 @@ func blendWithAlphaMask(inputimage: CIImage, backgroundimage: CIImage, maskimage
 }
 ```
 
-![A set of four photographs with two stacked on the left and two side by side on the right. The top photo on the left is of the New York City skyline taken from across the river on an overcast day, with a single boat in the center of the image. The bottom photo on the left is of multiple colorful rocks with moss covering them. The first photograph on the right is a transparent image with a five-point triangle, hexagon, circle, and square filled with white. The second photograph on the right is a blend with an alpha mask filter applied, resulting in the skyline photo with the detail of the moss covered rocks showing in the area that is white from the mask image.](https://docs-assets.developer.apple.com/published/9fa21135b87a43a7eb3a8e4c6699f41c/media-3624591%402x.png)
+![A set of four photographs with two stacked on the left and two side by side on the right. The top photo on the left is of the New York City skyline taken from across the river on an overcast day, with a single boat in the center of the image. The bottom photo on the left is of multiple colorful rocks with moss covering them. The first photograph on the right is a transparent image with a five-point triangle, hexagon, circle, and square filled with white. The second photograph on the right is a blend with an alpha mask filter applied, resulting in the skyline photo with the detail of the moss covered rocks showing in the area that is white from the mask image.](/images/com.apple.coreimage/media-3624591@2x.png)
 
 ## See Also
 

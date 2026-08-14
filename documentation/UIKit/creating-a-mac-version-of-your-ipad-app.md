@@ -14,9 +14,9 @@ Configuring your iPad app for Mac can be as simple as adding an entry to the lis
 
 To add support for Mac, open your Xcode project and select the iOS target that you want to configure. In the General tab, under Supported Destinations, click the Add button (+) to add a destination. Select Mac, then Mac Catalyst to add the destination.
 
-![A screenshot of Xcode with the Mac (Mac Catalyst) destination in the Supported Destinations list.](https://docs-assets.developer.apple.com/published/a77376c1a67b5343e4b8facbcf37667e/creating-a-mac-version-of-your-ipad-app-1%402x.png)
+![A screenshot of Xcode with the Mac (Mac Catalyst) destination in the Supported Destinations list.](/images/com.apple.uikit/creating-a-mac-version-of-your-ipad-app-1@2x.png)
 
-When you enable Mac support, Xcode adds the [`App Sandbox Entitlement`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.security.app-sandbox) to your project. Xcode only includes this entitlement in the Mac version of your app, not the iOS version. Xcode also adds My Mac to the list of destinations. Select this destination to run your Mac app from Xcode.
+When you enable Mac support, Xcode adds the [`App Sandbox Entitlement`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.security.app-sandbox) to your project. Xcode only includes this entitlement in the Mac version of your app, not the iOS version. Xcode also adds My Mac to the list of destinations. Select this destination to run your Mac app from Xcode.
 
 At this point, you may be able to build and run the Mac version of your app. To give it a try, select My Mac as the destination and run your project.
 
@@ -31,7 +31,7 @@ When you enable Mac support, Xcode automatically excludes incompatible framework
 
 To manually exclude an item, open Frameworks, Libraries, and Embedded Content under the General tab for your iOS target. Then select only iOS under Filters for the item. This setting excludes the item from the Mac version of your app.
 
-![A screenshot of Xcode showing iOS selected as the supported platform for the framework SomeFramework.](https://docs-assets.developer.apple.com/published/058fa3986142e9d43f3b10cfc406199c/creating-a-mac-version-of-your-ipad-app-2%402x.png)
+![A screenshot of Xcode showing iOS selected as the supported platform for the framework SomeFramework.](/images/com.apple.uikit/creating-a-mac-version-of-your-ipad-app-2@2x.png)
 
 If you have source code referencing APIs unavailable to the Mac version of your app, enclose the code in a compilation conditional block that uses the `targetEnvironment()` (Swift) or `TARGET_OS_MACCATALYST` (Objective-C) platform condition.
 

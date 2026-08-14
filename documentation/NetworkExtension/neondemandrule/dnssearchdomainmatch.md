@@ -21,7 +21,7 @@ var dnsSearchDomainMatch: [String]? { get set }
 
 #### Discussion
 
-An array of [`NSString`](https://developer.apple.com/documentation/Foundation/NSString) objects. If the current default search domain is equal to one of the strings in this array and all of the other conditions in the rule match, then the rule matches. If this property is nil (the default), then the current default search domain does not factor into the rule match.
+An array of [`NSString`](https://developer.apple.com/documentation/foundation/nsstring) objects. If the current default search domain is equal to one of the strings in this array and all of the other conditions in the rule match, then the rule matches. If this property is nil (the default), then the current default search domain does not factor into the rule match.
 
 ## See Also
 

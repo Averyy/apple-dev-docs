@@ -7,7 +7,6 @@ A Boolean value that indicates whether the associated group is end-to-end encryp
 
 **Availability**:
 - iOS 26.5+
-- iPadOS 26.5+
 
 ## Declaration
 

@@ -14,7 +14,7 @@ Pointer authentication works by offering a special CPU instruction to add a cryp
 
 You automatically adopt pointer authentication in your app when you build and deploy a binary that targets the arm64e architecture. You can do this starting in Xcode 10.1. To build an arm64e slice, go to your target’s build settings in Xcode and find the Architectures item. Click the current setting and choose Other. In the box that appears, add arm64e.
 
-![Screenshot of Xcode showing the addition of arm64e to the Architectures item in the Build Settings pane for the iOS app target.](https://docs-assets.developer.apple.com/published/9987567eb3333abe8a1c4a841d58bc78/media-3682831%402x.png)
+![Screenshot of Xcode showing the addition of arm64e to the Architectures item in the Build Settings pane for the iOS app target.](/images/com.apple.security/media-3682831@2x.png)
 
 Devices using the Apple A12 or later A-series processor — like the iPhone XS, iPhone XS Max, iPhone XR, and Apple TV 4K (2nd generation) — support the arm64e architecture, as do the Apple Watch Series 4 or later, and Mac and iPads with Apple silicon. To test your adoption, you have to run your app on one of these devices. You can’t test using the Simulator.
 
@@ -38,7 +38,7 @@ Be aware that other invalid memory accesses, where high-order bits are erroneous
 
 Most code doesn’t require modification to run with pointer authentication, with the possible exception of some low-level code that relies on arm64-specific behavior. For example, a crash reporting library that examines the stack contents needs to strip the PAC out of return addresses. The Apple Clang compiler provides utilities in the `ptrauth.h` header file — like the `ptrauth_strip` macro — to help with these kinds of tasks.
 
-Pointer authentication can also expose latent bugs in existing code. In C++, it’s incorrect to call a virtual method using a declaration that differs from its definition. In practice, such calls typically succeed in arm64, but trigger a pointer authentication failure in arm64e. You might encounter this bug when using `OS_OBJECT` types like [`dispatch_queue_t`](https://developer.apple.com/documentation/Dispatch/dispatch_queue_t) and [`xpc_connection_t`](https://developer.apple.com/documentation/XPC/xpc_connection_t). You can’t pass instances of these types from C++ code to an Objective-C++ function (or vice versa) because they’re defined differently in Objective-C++ to support automatic reference counting (ARC).
+Pointer authentication can also expose latent bugs in existing code. In C++, it’s incorrect to call a virtual method using a declaration that differs from its definition. In practice, such calls typically succeed in arm64, but trigger a pointer authentication failure in arm64e. You might encounter this bug when using `OS_OBJECT` types like [`dispatch_queue_t`](https://developer.apple.com/documentation/dispatch/dispatch_queue_t) and [`xpc_connection_t`](https://developer.apple.com/documentation/xpc/xpc_connection_t). You can’t pass instances of these types from C++ code to an Objective-C++ function (or vice versa) because they’re defined differently in Objective-C++ to support automatic reference counting (ARC).
 
 More generally, the PAC calculation takes into account the pointer value, one of several keys loaded into the CPU, and an optional salt value. To prevent reuse of pointers in different contexts, the PAC calculation depends on the pointer type. Keep these rules in mind when looking for possible issues in your code:
 

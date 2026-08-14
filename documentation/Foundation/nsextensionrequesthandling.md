@@ -33,7 +33,7 @@ The [`NSExtensionRequestHandling`](nsextensionrequesthandling.md) protocol provi
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

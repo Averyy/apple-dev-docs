@@ -20,7 +20,7 @@ let kCGPDFXOutputConditionIdentifier: CFString
 
 #### Discussion
 
-A string identifying the intended output device or production condition in a human- or machine-readable form. This key is required. The value of this key must be a [`CFString`](https://developer.apple.com/documentation/CoreFoundation/CFString) object. For best results, the string should be restricted to characters in the ASCII character set.
+A string identifying the intended output device or production condition in a human- or machine-readable form. This key is required. The value of this key must be a [`CFString`](https://developer.apple.com/documentation/corefoundation/cfstring) object. For best results, the string should be restricted to characters in the ASCII character set.
 
 ## See Also
 

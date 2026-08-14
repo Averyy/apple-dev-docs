@@ -24,7 +24,7 @@ func fulfill()
 
 #### Discussion
 
-Calling this method sets the [`isComplete`](cxaction/iscomplete.md) property value to [`true`](https://developer.apple.com/documentation/Swift/true). Calling this method more than once or calling it after calling the [`fail()`](cxaction/fail().md) method has no effect.
+Calling this method sets the [`isComplete`](cxaction/iscomplete.md) property value to [`true`](https://developer.apple.com/documentation/swift/true). Calling this method more than once or calling it after calling the [`fail()`](cxaction/fail().md) method has no effect.
 
 It’s safe to call `fulfill()` asynchronously. For example, call it in [`CXProviderDelegate`](cxproviderdelegate.md) callback method implementations as shown in the following code snippet from the [`Making and receiving VoIP calls`](making-and-receiving-voip-calls.md) sample code project:
 

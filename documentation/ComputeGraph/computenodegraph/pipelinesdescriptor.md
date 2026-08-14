@@ -50,8 +50,8 @@ let pipelines = try await ComputeNodeGraph.Pipelines(descriptor: descriptor)
 ## Relationships
 
 ### Conforms To
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 
 ---

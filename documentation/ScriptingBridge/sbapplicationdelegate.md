@@ -3,7 +3,7 @@
 **Framework**: Scripting Bridge  
 **Kind**: protocol
 
-This informal protocol defines a delegation method for handling Apple event errors that are sent from a target application to an [`SBApplication`](SBApplication.md) object.
+This informal protocol defines a delegation method for handling Apple event errors that are sent from a target application to an [`SBApplication`](sbapplication.md) object.
 
 **Availability**:
 - Mac Catalyst 13.0+

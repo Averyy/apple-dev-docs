@@ -20,17 +20,17 @@ A row template initialized using the specified arguments.
 
 #### Discussion
 
-The type of `attributeType` dictates the type of view created. For example, [`NSAttributeType.dateAttributeType`](https://developer.apple.com/documentation/CoreData/NSAttributeType/dateAttributeType) creates an [`NSDatePicker`](nsdatepicker.md) object, [`NSAttributeType.integer64AttributeType`](https://developer.apple.com/documentation/CoreData/NSAttributeType/integer64AttributeType) creates a short text field, and [`NSAttributeType.stringAttributeType`](https://developer.apple.com/documentation/CoreData/NSAttributeType/stringAttributeType) produces a longer text field. You can resize the views as you want.
+The type of `attributeType` dictates the type of view created. For example, [`NSAttributeType.dateAttributeType`](https://developer.apple.com/documentation/coredata/nsattributetype/dateattributetype) creates an [`NSDatePicker`](nsdatepicker.md) object, [`NSAttributeType.integer64AttributeType`](https://developer.apple.com/documentation/coredata/nsattributetype/integer64attributetype) creates a short text field, and [`NSAttributeType.stringAttributeType`](https://developer.apple.com/documentation/coredata/nsattributetype/stringattributetype) produces a longer text field. You can resize the views as you want.
 
 Predicates do not automatically coerce types for you. For example, comparing a number to a string will raise an exception. Therefore, the attribute type is also needed to determine how the control’s object value must be coerced before putting it into a predicate.
 
 ## Parameters
 
-- `leftExpressions`: An array of [`NSExpression`](https://developer.apple.com/documentation/Foundation/NSExpression) objects that represent the left side of a predicate.
+- `leftExpressions`: An array of [`NSExpression`](https://developer.apple.com/documentation/foundation/nsexpression) objects that represent the left side of a predicate.
 - `attributeType`: An attribute type for the right side of a predicate. This value dictates the type of view created, and how the control’s object value is coerced before putting it into a predicate.
-- `modifier`: A modifier for the predicate (see [`NSComparisonPredicate.Modifier`](https://developer.apple.com/documentation/Foundation/NSComparisonPredicate/Modifier) for possible values).
-- `operators`: An array of [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) objects specifying the operator type (see [`NSComparisonPredicate.Operator`](https://developer.apple.com/documentation/Foundation/NSComparisonPredicate/Operator) for possible values).
-- `options`: Options for the predicate (see [`NSComparisonPredicate.Options`](https://developer.apple.com/documentation/Foundation/NSComparisonPredicate/Options-swift.struct) for possible values).
+- `modifier`: A modifier for the predicate (see [`NSComparisonPredicate.Modifier`](https://developer.apple.com/documentation/foundation/nscomparisonpredicate/modifier) for possible values).
+- `operators`: An array of [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) objects specifying the operator type (see [`NSComparisonPredicate.Operator`](https://developer.apple.com/documentation/foundation/nscomparisonpredicate/operator) for possible values).
+- `options`: Options for the predicate (see [`NSComparisonPredicate.Options`](https://developer.apple.com/documentation/foundation/nscomparisonpredicate/options-swift.struct) for possible values).
 
 ## See Also
 

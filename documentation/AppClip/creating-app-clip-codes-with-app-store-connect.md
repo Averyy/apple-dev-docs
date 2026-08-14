@@ -34,7 +34,7 @@ The second option is especially useful if you only register one advanced App Cli
 
 If you want to create a single App Clip Code or you selected several App Clip experiences, click Next. Otherwise, to create multiple App Clip Codes for the selected experience, click Yes for that option. On your Mac, choose the URLs you want App Store Connect to use, and store them in a file that uses the comma-separated values (CSV) file format. Each of the file’s rows represents one generated App Clip Code, and each value in a row represents one URL. Upload the CSV file to App Store Connect by clicking Upload URLs and choosing the file on your Mac.
 
-![Screenshot that shows App Store Connect’s website for creating multiple App Clip Codes.](https://docs-assets.developer.apple.com/published/74531165fca6358c72dfc5277e8cd4e7/media-3707429%402x.png)
+![Screenshot that shows App Store Connect’s website for creating multiple App Clip Codes.](/images/com.apple.appclip/media-3707429@2x.png)
 
 The following code snippet shows the example content of a CSV file. [`App Store Connect`](https://developer.apple.comhttps://appstoreconnect.apple.com/) creates one App Clip Code for each row in the file.
 
@@ -56,11 +56,11 @@ On the next screen, choose a default color pattern or experiment with custom col
 
 To ensure users can reliably scan an App Clip Code, the color combination must offer enough contrast. Apple offers default color pairs, but you can experiment and choose a custom pair. If your color selection doesn’t offer enough contrast, App Store Connect suggests different foreground colors based on your custom background color.
 
-![Illustration of an App Clip Code with callouts for background, foreground, and generated colors.](https://docs-assets.developer.apple.com/published/43bb6f81cb86f8b97a45af95fd284152/media-3706517%402x.png)
+![Illustration of an App Clip Code with callouts for background, foreground, and generated colors.](/images/com.apple.appclip/media-3706517@2x.png)
 
 Next, select whether you want to create an NFC-integrated or scan-only App Clip Code. Then, choose the App Clip badge design with the App Clip logo or, if space is at a premium, use the design without the App Clip logo. Click Next and follow the workflow to finish creating your App Clip Code.
 
-![Screenshot that shows App Store Connect’s UI for choosing a color pair.](https://docs-assets.developer.apple.com/published/218660d0decd583fd757fd04071c6b7b/media-3706516%402x.png)
+![Screenshot that shows App Store Connect’s UI for choosing a color pair.](/images/com.apple.appclip/media-3706516@2x.png)
 
 After creating your App Clip Code, download the created SVG file and print it yourself, or work with a professional printing service — for example, [`RR Donnelley`](https://developer.apple.comhttps://touchless.acc.rrd.com/). For printing guidance, refer to [`Preparing multiple App Clip Codes for production`](preparing-multiple-app-clip-codes-for-production.md) and [`Human Interface Guidelines > App Clips > Printing Guidelines`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/app-clips/overview/printing-guidelines/).
 

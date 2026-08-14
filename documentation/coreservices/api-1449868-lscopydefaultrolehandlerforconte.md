@@ -32,7 +32,7 @@ Thread-safe since OS X v10.4.
 ## Parameters
 
 - `inContentType`: The content type. The content type is a uniform type identifier.
-- `inRole`: The role. Pass   if any role is acceptable. For additional possible values, see  .
+- `inRole`: The role. Pass `kLSRolesAll` if any role is acceptable. For additional possible values, see [`LSRolesMask`](lsrolesmask.md).
 
 ## See Also
 

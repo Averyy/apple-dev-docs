@@ -3,7 +3,7 @@
 **Framework**: JavaScriptCore  
 **Kind**: method
 
-Converts the JavaScript value to a [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) object.
+Converts the JavaScript value to a [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) object.
 
 **Availability**:
 - iOS 7.0+
@@ -21,11 +21,11 @@ func toNumber() -> NSNumber!
 
 #### Return Value
 
-A [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) object encapsulating the native representation of the value.
+A [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) object encapsulating the native representation of the value.
 
 #### Discussion
 
-If the value represents a Boolean value, the resulting [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) object is created as with the [`numberWithBool:`](https://developer.apple.com/documentation/Foundation/NSNumber/numberWithBool:) method. Otherwise, this method uses JavaScript type coercion to convert the value to a JavaScript numeric value and creates a [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) object wrapping the result.
+If the value represents a Boolean value, the resulting [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) object is created as with the [`numberWithBool:`](https://developer.apple.com/documentation/foundation/nsnumber/numberwithbool:) method. Otherwise, this method uses JavaScript type coercion to convert the value to a JavaScript numeric value and creates a [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) object wrapping the result.
 
 ## See Also
 

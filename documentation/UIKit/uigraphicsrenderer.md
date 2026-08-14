@@ -44,13 +44,13 @@ import UIKit.UIGraphicsRendererSubclass
 #import <UIKit/UIGraphicsRendererSubclass.h>
 ```
 
-A graphics renderer manages a pool of Core Graphics contexts that are reused with repeated uses of the renderer. The renderer creates these [`CGContext`](https://developer.apple.com/documentation/CoreGraphics/CGContext) objects using the [`context(with:)`](uigraphicsrenderer/context(with:).md) class method, and then wraps each of them in an instance of the class returned by the [`rendererContextClass()`](uigraphicsrenderer/renderercontextclass().md) class method. You must therefore override these two methods in your graphics renderer subclass.
+A graphics renderer manages a pool of Core Graphics contexts that are reused with repeated uses of the renderer. The renderer creates these [`CGContext`](https://developer.apple.com/documentation/coregraphics/cgcontext) objects using the [`context(with:)`](uigraphicsrenderer/context(with:).md) class method, and then wraps each of them in an instance of the class returned by the [`rendererContextClass()`](uigraphicsrenderer/renderercontextclass().md) class method. You must therefore override these two methods in your graphics renderer subclass.
 
 To perform drawing actions on a Core Graphics context, call the [`runDrawingActions(_:completionActions:)`](uigraphicsrenderer/rundrawingactions(_:completionactions:).md) method, providing two blocks. Both of these blocks have a [`UIGraphicsRendererContext`](uigraphicsrenderercontext.md) argument, providing access to a Core Graphics context.
 
 It is recommended that you create a public method on your renderer subclass that internally wraps the [`runDrawingActions(_:completionActions:)`](uigraphicsrenderer/rundrawingactions(_:completionactions:).md) method. This is how the rendering methods operate on the concrete subclasses, for example the [`image(actions:)`](uigraphicsimagerenderer/image(actions:).md) method on [`UIGraphicsImageRenderer`](uigraphicsimagerenderer.md).
 
-Each time the [`runDrawingActions(_:completionActions:)`](uigraphicsrenderer/rundrawingactions(_:completionactions:).md) method is called, the renderer calls the [`prepare(_:with:)`](uigraphicsrenderer/prepare(_:with:).md) method with the [`CGContext`](https://developer.apple.com/documentation/CoreGraphics/CGContext) and [`UIGraphicsRendererContext`](uigraphicsrenderercontext.md) as arguments. Override the [`prepare(_:with:)`](uigraphicsrenderer/prepare(_:with:).md) method to apply the [`UIGraphicsRendererContext`](uigraphicsrenderercontext.md) configuration to the underlying [`CGContext`](https://developer.apple.com/documentation/CoreGraphics/CGContext) before the renderer invokes the drawing actions.
+Each time the [`runDrawingActions(_:completionActions:)`](uigraphicsrenderer/rundrawingactions(_:completionactions:).md) method is called, the renderer calls the [`prepare(_:with:)`](uigraphicsrenderer/prepare(_:with:).md) method with the [`CGContext`](https://developer.apple.com/documentation/coregraphics/cgcontext) and [`UIGraphicsRendererContext`](uigraphicsrenderercontext.md) as arguments. Override the [`prepare(_:with:)`](uigraphicsrenderer/prepare(_:with:).md) method to apply the [`UIGraphicsRendererContext`](uigraphicsrenderercontext.md) configuration to the underlying [`CGContext`](https://developer.apple.com/documentation/coregraphics/cgcontext) before the renderer invokes the drawing actions.
 
 ## Topics
 
@@ -80,17 +80,17 @@ Each time the [`runDrawingActions(_:completionActions:)`](uigraphicsrenderer/run
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Inherited By
 - [UIGraphicsImageRenderer](uigraphicsimagerenderer.md)
 - [UIGraphicsPDFRenderer](uigraphicspdfrenderer.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

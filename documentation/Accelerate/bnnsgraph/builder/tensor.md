@@ -272,9 +272,9 @@ struct Tensor<T> where T : BNNSScalar
 ### Conforms To
 - [BNNSGraph.Builder.OperationParameter](bnnsgraph/builder/operationparameter.md)
 - [BNNSGraph.TensorDescriptor](bnnsgraph/tensordescriptor.md)
-- [Copyable](../Swift/Copyable.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Escapable](../Swift/Escapable.md)
+- [Copyable](../swift/copyable.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Escapable](../swift/escapable.md)
 
 ## See Also
 

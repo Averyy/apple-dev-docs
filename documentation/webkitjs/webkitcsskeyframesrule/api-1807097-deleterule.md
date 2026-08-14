@@ -13,7 +13,7 @@ void deleteRule (in DOMString key);
 
 ## Parameters
 
-- `key`: A selector for the rule that is either a percentage or the keyword   or  .
+- `key`: A selector for the rule that is either a percentage or the keyword `from` or `to`.
 
 ## See Also
 

@@ -37,11 +37,11 @@ private var quakes: SectionedFetchResults<String, Quake>
 
 Always declare properties that have a sectioned fetch request wrapper as private. This lets the compiler help you avoid accidentally setting the property from the memberwise initializer of the enclosing view.
 
-The request infers the entity type from the `Result` type that you specify, which is `Quake` in the example above. Indicate a `SectionIdentifier` type to declare the type found at the fetched object’s `sectionIdentifier` key path. The section identifier type must conform to the [`Hashable`](https://developer.apple.com/documentation/Swift/Hashable) protocol.
+The request infers the entity type from the `Result` type that you specify, which is `Quake` in the example above. Indicate a `SectionIdentifier` type to declare the type found at the fetched object’s `sectionIdentifier` key path. The section identifier type must conform to the [`Hashable`](https://developer.apple.com/documentation/swift/hashable) protocol.
 
 The example above depends on the `Quake` type having a `day` property that’s either a stored or computed string. Be sure to mark any computed property with the `@objc` attribute for it to function as a section identifier. For best performance with large data sets, use stored properties.
 
-The sectioned fetch request and its results use the managed object context stored in the environment, which you can access using the [`managedObjectContext`](environmentvalues/managedobjectcontext.md) environment value. To support user interface activity, you typically rely on the [`viewContext`](https://developer.apple.com/documentation/CoreData/NSPersistentContainer/viewContext) property of a shared [`NSPersistentContainer`](https://developer.apple.com/documentation/CoreData/NSPersistentContainer) instance. For example, you can set a context on your top-level content view using a shared container that you define as part of your model:
+The sectioned fetch request and its results use the managed object context stored in the environment, which you can access using the [`managedObjectContext`](environmentvalues/managedobjectcontext.md) environment value. To support user interface activity, you typically rely on the [`viewContext`](https://developer.apple.com/documentation/coredata/nspersistentcontainer/viewcontext) property of a shared [`NSPersistentContainer`](https://developer.apple.com/documentation/coredata/nspersistentcontainer) instance. For example, you can set a context on your top-level content view using a shared container that you define as part of your model:
 
 ```swift
 ContentView()
@@ -80,9 +80,9 @@ When you need to dynamically change the section identifier, predicate, or sort d
 ## Relationships
 
 ### Conforms To
-- [Copyable](../Swift/Copyable.md)
+- [Copyable](../swift/copyable.md)
 - [DynamicProperty](dynamicproperty.md)
-- [Escapable](../Swift/Escapable.md)
+- [Escapable](../swift/escapable.md)
 
 ## See Also
 

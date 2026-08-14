@@ -16,7 +16,7 @@ static let reversePageOrder: NSPrintInfo.AttributeKey
 
 #### Discussion
 
-If [`true`](https://developer.apple.com/documentation/Swift/true), prints first page last.
+If [`true`](https://developer.apple.com/documentation/swift/true), prints first page last.
 
 ## See Also
 

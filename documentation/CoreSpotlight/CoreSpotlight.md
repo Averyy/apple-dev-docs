@@ -22,13 +22,13 @@ Your app is responsible for indexing your app’s content and maintaining those 
 
 In addition to indexing content, iOS provides additional strategies for making your app’s content searchable:
 
-- Use the search-related properties of [`NSUserActivity`](https://developer.apple.com/documentation/Foundation/NSUserActivity) to add items to the on-device index, with the option to identify the items as eligible for public indexing. Learn more about [`NSUserActivity`](https://developer.apple.com/documentation/Foundation/NSUserActivity) in [`Index Activities and Navigation Points`](https://developer.apple.comhttps://developer.apple.com/library/content/documentation/General/Conceptual/AppSearch/Activities.html#//apple_ref/doc/uid/TP40016308-CH6-SW1).
+- Use the search-related properties of [`NSUserActivity`](https://developer.apple.com/documentation/foundation/nsuseractivity) to add items to the on-device index, with the option to identify the items as eligible for public indexing. Learn more about [`NSUserActivity`](https://developer.apple.com/documentation/foundation/nsuseractivity) in [`Index Activities and Navigation Points`](https://developer.apple.comhttps://developer.apple.com/library/content/documentation/General/Conceptual/AppSearch/Activities.html#//apple_ref/doc/uid/TP40016308-CH6-SW1).
 - Use web markup to index content on your web server in Apple’s server-side index, which makes the data available to all iOS users in Spotlight and Safari search results. For more information, see [`Mark Up Web Content`](https://developer.apple.comhttps://developer.apple.com/library/content/documentation/General/Conceptual/AppSearch/WebContent.html#//apple_ref/doc/uid/TP40016308-CH8-SW1) in [`App Search Programming Guide`](https://developer.apple.comhttps://developer.apple.com/library/content/documentation/General/Conceptual/AppSearch/index.html).
 
 ## Topics
 
 ### Essentials
-- [Core Spotlight updates](../Updates/CoreSpotlight.md)
+- [Core Spotlight updates](../updates/corespotlight.md)
   Learn about important changes to Core Spotlight.
 - [Adding your app’s content to Spotlight indexes](adding-your-app-s-content-to-spotlight-indexes.md)
   Create a description for your app’s content and add it to a Spotlight index to make it searchable.

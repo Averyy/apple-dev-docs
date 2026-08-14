@@ -16,10 +16,10 @@ You don’t need to define new [`GroupActivity`](groupactivity.md) types specifi
 
 You use scenes to manage the content for your app’s windows, volumes, and immersive spaces. You also use scenes to display any activity-related content. When a participant joins an activity, the system selects or opens the scene that supports the activity. If your app has only one scene and one window, the system has only one choice. However, if your app has multiple scenes, you need to help the system choose the correct one.
 
-For each of your app’s scenes, activation conditions tell the system how to handle your app’s SharePlay activities. You also use activation conditions to specify how to handle [`NSUserActivity`](https://developer.apple.com/documentation/Foundation/NSUserActivity) objects, and other incoming events. To specify activation conditions for one of your scenes:
+For each of your app’s scenes, activation conditions tell the system how to handle your app’s SharePlay activities. You also use activation conditions to specify how to handle [`NSUserActivity`](https://developer.apple.com/documentation/foundation/nsuseractivity) objects, and other incoming events. To specify activation conditions for one of your scenes:
 
-- For SwiftUI, add the [`handlesExternalEvents(preferring:allowing:)`](https://developer.apple.com/documentation/SwiftUI/View/handlesExternalEvents(preferring:allowing:)) modifier to your scene type.
-- For UIKit, configure the scene’s [`activationConditions`](https://developer.apple.com/documentation/UIKit/UIScene/activationConditions) property in the [`scene(_:willConnectTo:options:)`](https://developer.apple.com/documentation/UIKit/UISceneDelegate/scene(_:willConnectTo:options:)) method of your scene delegate.
+- For SwiftUI, add the [`handlesExternalEvents(preferring:allowing:)`](https://developer.apple.com/documentation/swiftui/view/handlesexternalevents(preferring:allowing:)) modifier to your scene type.
+- For UIKit, configure the scene’s [`activationConditions`](https://developer.apple.com/documentation/uikit/uiscene/activationconditions) property in the [`scene(_:willConnectTo:options:)`](https://developer.apple.com/documentation/uikit/uiscenedelegate/scene(_:willconnectto:options:)) method of your scene delegate.
 
 When you add an activation condition to a scene, you specify a string that uniquely identifies your SharePlay activity. The string can be anything you want, as long as it creates a unique connection between the activity and the specific scene. When there is a one-to-one correspondence between an activity and scene, the string in the [`activityIdentifier`](groupactivity/activityidentifier.md) property of your activity object is a good choice. When there isn’t a one-to-one correspondence between scene and activity, you must create a string that uniquely identifies the scene. For example, in a document-based app, you might specify the name of a document to direct the system to the scene that contains the document.
 
@@ -37,7 +37,7 @@ var body: some Scene {
 
 In addition to configuring your scene, you need to update your activity object’s metadata with the appropriate string. Specify the string using the [`sceneAssociationBehavior`](groupactivitymetadata/sceneassociationbehavior.md) property of your activity object’s [`GroupActivityMetadata`](groupactivitymetadata.md) structure. Assign the [`default`](sceneassociationbehavior/default.md) value to this property if you use the activity identifier as the string. For any custom strings, assign the [`content(_:)`](sceneassociationbehavior/content(_:).md) value and specify your string. To disable scene association for the activity and handle the presentation of activity-related UI yourself, specify the [`none`](sceneassociationbehavior/none.md) value.
 
-Although the activation conditions and the activity’s `SceneAssociationBehavior` determine the automatically associated scene, you can explicitly specify a different scene using the [`groupActivityAssociation(_:)`](https://developer.apple.com/documentation/SwiftUI/View/groupActivityAssociation(_:)) modifier. Use this modifier on your view to set its activity association to [`primary(_:)`](groupactivityassociationkind/primary(_:).md), and include an identifier that reflects the content of the view.
+Although the activation conditions and the activity’s `SceneAssociationBehavior` determine the automatically associated scene, you can explicitly specify a different scene using the [`groupActivityAssociation(_:)`](https://developer.apple.com/documentation/swiftui/view/groupactivityassociation(_:)) modifier. Use this modifier on your view to set its activity association to [`primary(_:)`](groupactivityassociationkind/primary(_:).md), and include an identifier that reflects the content of the view.
 
 The system shares the most recently opened window whose [`GroupActivityAssociationKind`](groupactivityassociationkind.md) is set to `.primary(_:)`. To stop sharing a scene, set the `GroupActivityAssociationKind` to `nil`.
 
@@ -66,7 +66,7 @@ struct GameApp: App {
 
 For a demonstration, watch the “Support multiple windows” chapter of the WWDC25 session [`Share visionOS experiences with nearby people`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2025/318).
 
-For UIKit, create a [`GroupActivityAssociationInteraction`](groupactivityassociationinteraction.md) and use [`addInteraction(_:)`](https://developer.apple.com/documentation/UIKit/UIView/addInteraction(_:)) to add the scene association interaction.
+For UIKit, create a [`GroupActivityAssociationInteraction`](groupactivityassociationinteraction.md) and use [`addInteraction(_:)`](https://developer.apple.com/documentation/uikit/uiview/addinteraction(_:)) to add the scene association interaction.
 
 ##### Configure Your Apps Support for Spatial Personas
 
@@ -103,7 +103,7 @@ When defining an activity, define additional data messages to synchronize any in
 
 > **Note**: Make sure you separate the messages that all participants require from the ones that only make sense when spatial Personas are visible. Maintaining the shared context is necessary when spatial Personas are visible, but isn’t always necessary at other times. For example, Freeform doesn’t synchronize the scroll position for someone without a spatial Persona.
 
-To determine when someone’s spatial Persona is visible, monitor the [`localParticipantStates`](systemcoordinator/localparticipantstates.md) of your session’s [`SystemCoordinator`](systemcoordinator.md) object. The [`AsyncSequence`](https://developer.apple.com/documentation/Swift/AsyncSequence) in this property reports participant-related state changes, including changes to the visibility of their spatial Persona. Get the [`isSpatial`](systemcoordinator/participantstate/isspatial.md) property of the returned [`SystemCoordinator.ParticipantState`](systemcoordinator/participantstate.md) structure and use it to configure your app’s behavior. The following example uses a task to update the game state to accommodate spatial Personas. When the current participant is spatial, the game sends additional messages to maintain the shared context.
+To determine when someone’s spatial Persona is visible, monitor the [`localParticipantStates`](systemcoordinator/localparticipantstates.md) of your session’s [`SystemCoordinator`](systemcoordinator.md) object. The [`AsyncSequence`](https://developer.apple.com/documentation/swift/asyncsequence) in this property reports participant-related state changes, including changes to the visibility of their spatial Persona. Get the [`isSpatial`](systemcoordinator/participantstate/isspatial.md) property of the returned [`SystemCoordinator.ParticipantState`](systemcoordinator/participantstate.md) structure and use it to configure your app’s behavior. The following example uses a task to update the game state to accommodate spatial Personas. When the current participant is spatial, the game sends additional messages to maintain the shared context.
 
 ```swift
 Task {
@@ -123,7 +123,7 @@ Task {
 
 If one participant opens an immersive space as part of an activity, the system doesn’t automatically open the same immersive space for other participants. Making a transition to an immersive space is a significant change, and some participants might not want to make the transition right away. For example, if a participant is on a phone call, they might not want another app to open an immersive space and hide their call. Instead, the system reports when transitions to immersive spaces occur, and lets you decide when to transition other participants automatically.
 
-To determine when any participant transitions to an immersive space, monitor the [`groupImmersionStyle`](systemcoordinator/groupimmersionstyle.md) property of your [`SystemCoordinator`](systemcoordinator.md) object. This property contains an [`AsyncSequence`](https://developer.apple.com/documentation/Swift/AsyncSequence) that reports the most recent immersion style that a participant adopts. When a participant presents an immersive space, or when they change the immersion style of the current space, the system updates the sequence with the new value. The following example shows a task that opens the immersive space with the same style as the group immersion style.
+To determine when any participant transitions to an immersive space, monitor the [`groupImmersionStyle`](systemcoordinator/groupimmersionstyle.md) property of your [`SystemCoordinator`](systemcoordinator.md) object. This property contains an [`AsyncSequence`](https://developer.apple.com/documentation/swift/asyncsequence) that reports the most recent immersion style that a participant adopts. When a participant presents an immersive space, or when they change the immersion style of the current space, the system updates the sequence with the new value. The following example shows a task that opens the immersive space with the same style as the group immersion style.
 
 ```swift
 Task {
@@ -148,7 +148,7 @@ When an activity takes place in an immersive space, the system creates a shared 
 
 > **Note**: Open your immersive space after starting the SharePlay session to provide a smooth experience. When you open the immersive space before SharePlay starts, the space briefly shifts positions when SharePlay establishes the shared coordinate space, which can be disorienting.
 
-If the immersive space is already open before SharePlay begins, you can use the [`immersiveSpaceDisplacement`](https://developer.apple.com/documentation/SwiftUI/EnvironmentValues/immersiveSpaceDisplacement) environment value to detect when the coordinate space changes and get the current offset of the immersive space relative to its default position. When the value is [`identity`](https://developer.apple.com/documentation/Spatial/Pose3D/identity), the immersive space has no offset. When the value changes to a non-identity pose, SharePlay has established a shared coordinate space.
+If the immersive space is already open before SharePlay begins, you can use the [`immersiveSpaceDisplacement`](https://developer.apple.com/documentation/swiftui/environmentvalues/immersivespacedisplacement) environment value to detect when the coordinate space changes and get the current offset of the immersive space relative to its default position. When the value is [`identity`](https://developer.apple.com/documentation/spatial/pose3d/identity), the immersive space has no offset. When the value changes to a non-identity pose, SharePlay has established a shared coordinate space.
 
 To position content relative to a participant in the shared coordinate space, use the [`localParticipantState`](systemcoordinator/localparticipantstate.md) property of your [`SystemCoordinator`](systemcoordinator.md) to access the local participant’s [`pose`](systemcoordinator/participantstate/pose.md). This property provides the participant’s offset from the spatial template origin. The following example shows how to place an object at a consistent position in front of the local participant:
 
@@ -189,14 +189,14 @@ Task {
 
 - [Configure your visionOS app for sharing with people nearby](configure-your-app-for-sharing-with-people-nearby.md)
   Create shared experiences for people wearing Vision Pro in the same room and those on FaceTime.
-- [Implementing SharePlay for immersive spaces in visionOS](../visionOS/implementing-shareplay-for-immersive-spaces-in-visionos.md)
+- [Implementing SharePlay for immersive spaces in visionOS](../visionos/implementing-shareplay-for-immersive-spaces-in-visionos.md)
   Enable collaborative spatial experiences by using SharePlay to synchronize 3D content among participants.
 - [class SystemCoordinator](systemcoordinator.md)
   A type you use to coordinate your interface’s behavior when an active SharePlay session supports spatial placement of content.
 - [SystemCoordinator.ParticipantState](systemcoordinator/participantstate.md)
   A structure that tells you whether a participant supports a shared simulation space for the current activity.
 - [func groupActivityAssociation(GroupActivityAssociationKind?) -> some View
-](../SwiftUI/View/groupActivityAssociation(_:).md)
+](../swiftui/view/groupactivityassociation(_:).md)
   Specifies how a view should be associated with the current SharePlay group activity.
 - [class GroupActivityAssociationInteraction](groupactivityassociationinteraction.md)
   An interaction configures a view’s association with the current SharePlay group activity.

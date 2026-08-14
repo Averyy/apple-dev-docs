@@ -23,7 +23,7 @@ This method has no effect when the map template is already displaying a navigati
 ## Parameters
 
 - `navigationAlert`: The navigation alert to display.
-- `animated`: To animate the display of the alert, set to [`true`](https://developer.apple.com/documentation/Swift/true); otherwise, set to [`false`](https://developer.apple.com/documentation/Swift/false) to immediately display the alert.
+- `animated`: To animate the display of the alert, set to [`true`](https://developer.apple.com/documentation/swift/true); otherwise, set to [`false`](https://developer.apple.com/documentation/swift/false) to immediately display the alert.
 
 ## See Also
 

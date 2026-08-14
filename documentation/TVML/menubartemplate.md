@@ -8,7 +8,7 @@ Creates a page with items along the top and related information below.
 
 Use the `menuBarTemplate` to display a list of selectable items across the top of the screen. Users can move between menu bar items to change the information displayed below the menu bar. The following figure shows the basic layout for a `menuBarTemplate` page. The theme for the menu bar template defaults to the system preference.
 
-![Layout diagram showing a menu bar area at the top and a related content area below.](https://docs-assets.developer.apple.com/published/177505cf6a027229a8287dbf3d699d01/menubartemplate-1%402x.png)
+![Layout diagram showing a menu bar area at the top and a related content area below.](/images/com.apple.TVML/menubartemplate-1@2x.png)
 
 > **Note**: You can display up to seven items in the menu bar.
 
@@ -64,7 +64,7 @@ The following listing shows the TVML for a `menuBarTemplate` example. The exampl
 
 The following figure shows the output for the above example:
 
-![Screenshot showing a menu bar with user options along the top of the screen.](https://docs-assets.developer.apple.com/published/7f5a8f53e2127507aeb4a0799c71b725/menubartemplate-2%402x.png)
+![Screenshot showing a menu bar with user options along the top of the screen.](/images/com.apple.TVML/menubartemplate-2@2x.png)
 
 ## Topics
 

@@ -64,7 +64,7 @@ The protocol’s required one method, [`peripheralManagerDidUpdateState(_:)`](cb
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

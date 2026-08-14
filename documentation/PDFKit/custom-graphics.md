@@ -16,7 +16,7 @@ You can add a custom drawing to a page or annotation by overriding that class’
 
 ##### Register the Delegate and Set the Page Class
 
-The [`UIViewController`](https://developer.apple.com/documentation/UIKit/UIViewController) class first initializes a [`PDFDocument`](pdfdocument.md) instance and sets its delegate to `self`.
+The [`UIViewController`](https://developer.apple.com/documentation/uikit/uiviewcontroller) class first initializes a [`PDFDocument`](pdfdocument.md) instance and sets its delegate to `self`.
 
 ```swift
 // 1. Set delegate
@@ -24,7 +24,7 @@ document.delegate = self
 pdfView?.document = document
 ```
 
-The delegate, of type [`PDFDocumentDelegate`](pdfdocumentdelegate.md), implements a [`classForPage()`](pdfdocumentdelegate/classforpage().md) method. This method returns [`AnyClass`](https://developer.apple.com/documentation/Swift/AnyClass) and declares that all instances of [`PDFPage`](pdfpage.md) for the document presented through [`PDFView`](pdfview.md) should instantiate the subclass `WatermarkPage`.
+The delegate, of type [`PDFDocumentDelegate`](pdfdocumentdelegate.md), implements a [`classForPage()`](pdfdocumentdelegate/classforpage().md) method. This method returns [`AnyClass`](https://developer.apple.com/documentation/swift/anyclass) and declares that all instances of [`PDFPage`](pdfpage.md) for the document presented through [`PDFView`](pdfview.md) should instantiate the subclass `WatermarkPage`.
 
 This subclass, found in `WatermarkPage.swift`, implements custom drawing.
 

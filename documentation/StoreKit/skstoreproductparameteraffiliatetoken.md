@@ -19,7 +19,7 @@ let SKStoreProductParameterAffiliateToken: String
 
 #### Discussion
 
-The value for this key is an instance of [`NSString`](https://developer.apple.com/documentation/Foundation/NSString).
+The value for this key is an instance of [`NSString`](https://developer.apple.com/documentation/foundation/nsstring).
 
 You receive an affiliate identifier when you sign up for the Affiliate Program. The affiliate associated with this view controller is paid a commission for any items purchased using the controller.
 

@@ -24,7 +24,7 @@ The registration process for an IOService object (the provider) includes instant
 ## Parameters
 
 - `provider`: The registered IOService object that matches a driver personality's matching dictionary.
-- `score`: Pointer to the current driver's probe score, which is used to order multiple matching drivers in the same match category. It defaults to the value of the   property in the drivers property table, or   if none is specified. The   method may alter the score to affect start order.
+- `score`: Pointer to the current driver's probe score, which is used to order multiple matching drivers in the same match category. It defaults to the value of the `IOProbeScore` property in the drivers property table, or `kIODefaultProbeScore` if none is specified. The `probe` method may alter the score to affect start order.
 
 ## See Also
 

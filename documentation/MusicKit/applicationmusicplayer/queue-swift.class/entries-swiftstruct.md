@@ -26,15 +26,15 @@ struct Entries
 ## Relationships
 
 ### Conforms To
-- [BidirectionalCollection](../Swift/BidirectionalCollection.md)
-- [Collection](../Swift/Collection.md)
-- [Equatable](../Swift/Equatable.md)
-- [ExpressibleByArrayLiteral](../Swift/ExpressibleByArrayLiteral.md)
-- [Hashable](../Swift/Hashable.md)
-- [MutableCollection](../Swift/MutableCollection.md)
-- [RandomAccessCollection](../Swift/RandomAccessCollection.md)
-- [RangeReplaceableCollection](../Swift/RangeReplaceableCollection.md)
-- [Sequence](../Swift/Sequence.md)
+- [BidirectionalCollection](../swift/bidirectionalcollection.md)
+- [Collection](../swift/collection.md)
+- [Equatable](../swift/equatable.md)
+- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
+- [Hashable](../swift/hashable.md)
+- [MutableCollection](../swift/mutablecollection.md)
+- [RandomAccessCollection](../swift/randomaccesscollection.md)
+- [RangeReplaceableCollection](../swift/rangereplaceablecollection.md)
+- [Sequence](../swift/sequence.md)
 
 
 ---

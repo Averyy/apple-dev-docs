@@ -42,7 +42,7 @@ You must ensure that the underlying [`bnns_graph_t`](bnns_graph_t.md) instance r
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../Swift/BitwiseCopyable.md)
+- [BitwiseCopyable](../swift/bitwisecopyable.md)
 
 ## See Also
 

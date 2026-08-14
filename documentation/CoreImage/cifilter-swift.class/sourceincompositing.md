@@ -43,7 +43,7 @@ func sourceInCompositing(inputImage: CIImage, backgroundImage: CIImage) -> CIIma
 }
 ```
 
-![The image on the top left shows a beach with multiple palm trees and a rainbow arching across the blue sky.  The image below is a gradient image displaying a gradual color shift from purple to a dark orange. The image on the right shows the output from applying a source-in compositing filter. The result displays the overlapping area of the gradient image and beach image with all the non-overlapping image removed.](https://docs-assets.developer.apple.com/published/fc624344d8a68faaa285115603f73c27/media-3546393%402x.png)
+![The image on the top left shows a beach with multiple palm trees and a rainbow arching across the blue sky.  The image below is a gradient image displaying a gradual color shift from purple to a dark orange. The image on the right shows the output from applying a source-in compositing filter. The result displays the overlapping area of the gradient image and beach image with all the non-overlapping image removed.](/images/com.apple.coreimage/media-3546393@2x.png)
 
 ## See Also
 

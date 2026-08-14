@@ -22,7 +22,7 @@ class SCNCone
 
 #### Overview
 
-![None](https://docs-assets.developer.apple.com/published/c98604b0c5b0a6a33ac4e0c4c7d4e68a/media-2929809%402x.png)
+![None](/images/com.apple.scenekit/media-2929809@2x.png)
 
 A cone defines the surface of a solid whose base is a circle and whose side surface tapers to a point centered above its base. A frustum also has a circular base and tapered sides but has a circular top, similar to a cone cut off below its apex.
 
@@ -57,15 +57,15 @@ A cone geometry may contain two or three [`SCNGeometryElement`](scngeometryeleme
 ### Inherits From
 - [SCNGeometry](scngeometry.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCoding](../Foundation/NSCoding.md)
-- [NSCopying](../Foundation/NSCopying.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [NSSecureCoding](../Foundation/NSSecureCoding.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCoding](../foundation/nscoding.md)
+- [NSCopying](../foundation/nscopying.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSSecureCoding](../foundation/nssecurecoding.md)
 - [SCNAnimatable](scnanimatable.md)
 - [SCNBoundingVolume](scnboundingvolume.md)
 - [SCNShadable](scnshadable.md)

@@ -43,7 +43,7 @@ Text("This long text string is clipped")
     .border(Color.gray)
 ```
 
-![Screenshot showing text clipped to its](https://docs-assets.developer.apple.com/published/e4c793f7bce8e09c9377a929b96e73e7/SwiftUI-View-clipped%402x.png)
+![Screenshot showing text clipped to its](/images/com.apple.SwiftUI/SwiftUI-View-clipped@2x.png)
 
 ## Parameters
 

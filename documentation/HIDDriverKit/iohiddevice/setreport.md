@@ -17,7 +17,7 @@ virtual kern_return_t setReport(IOMemoryDescriptor *report, IOHIDReportType repo
 
 #### Return Value
 
-[`kIOReturnSuccess`](https://developer.apple.com/documentation/DriverKit/kIOReturnSuccess) on success, or another value if an error occurs. See [`Error Codes`](https://developer.apple.com/documentation/DriverKit/error-codes).
+[`kIOReturnSuccess`](https://developer.apple.com/documentation/driverkit/kioreturnsuccess) on success, or another value if an error occurs. See [`Error Codes`](https://developer.apple.com/documentation/driverkit/error-codes).
 
 #### Discussion
 
@@ -29,7 +29,7 @@ The default implementation of this method does nothing. Subclasses must override
 - `reportType`: The report type.
 - `options`: The lower 8 bits of the report ID. The other 24 bits are options to specify the request.
 - `completionTimeout`: The amount of time, in milliseconds, after which to abort the command if the entire command hasn’t finished.
-- `action`: The [`OSAction`](https://developer.apple.com/documentation/DriverKit/OSAction) object to execute when the request completes. Specify `NULL` to execute the request synchronously, which blocks the current thread until the request completes.
+- `action`: The [`OSAction`](https://developer.apple.com/documentation/driverkit/osaction) object to execute when the request completes. Specify `NULL` to execute the request synchronously, which blocks the current thread until the request completes.
 
 ## See Also
 

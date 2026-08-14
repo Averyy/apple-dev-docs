@@ -29,7 +29,7 @@ This protocol provides a factory method to create a new [`MEVideoDecoder`](mevid
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

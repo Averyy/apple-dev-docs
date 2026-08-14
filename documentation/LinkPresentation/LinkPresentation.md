@@ -17,7 +17,7 @@ Fetch, provide, and present rich links in your app.
 
 The Link Presentation framework enables you to present content-rich URLs in a consistent way. Retrieve metadata from a URL, present the rich link content inside your app, and provide link metadata to the share sheet experience in iOS.
 
-![Diagram showing how an LPLinkView presents a map URL with an image of the map on top, and the name and address of the location underneath.](https://docs-assets.developer.apple.com/published/ec676eb619ffcd4310214b60fda5d3b8/linkpresentation-1%402x.png)
+![Diagram showing how an LPLinkView presents a map URL with an image of the map on top, and the name and address of the location underneath.](/images/com.apple.Link-Presentation/linkpresentation-1@2x.png)
 
 For more information about presenting links, see WWDC 2019 session [`262: Embedding and Sharing Visually Rich Links`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2019/262/).
 

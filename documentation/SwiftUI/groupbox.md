@@ -42,7 +42,7 @@ var body: some View {
 }
 ```
 
-![An iOS status bar above a gray rounded rectangle region marking the bounds](https://docs-assets.developer.apple.com/published/30caaa19222a89d8e8c721f916f1003a/SwiftUI-GroupBox-EULA%402x.png)
+![An iOS status bar above a gray rounded rectangle region marking the bounds](/images/com.apple.SwiftUI/SwiftUI-GroupBox-EULA@2x.png)
 
 ## Topics
 

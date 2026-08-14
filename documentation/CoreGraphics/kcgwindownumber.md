@@ -15,7 +15,7 @@ let kCGWindowNumber: CFString
 
 #### Discussion
 
-The value for this key is a [`CFNumber`](https://developer.apple.com/documentation/CoreFoundation/CFNumber) type (encoded as [`kCGWindowIDCFNumberType`](kcgwindowidcfnumbertype.md)) that contains the window ID. The window ID is unique within the current user session.
+The value for this key is a [`CFNumber`](https://developer.apple.com/documentation/corefoundation/cfnumber) type (encoded as [`kCGWindowIDCFNumberType`](kcgwindowidcfnumbertype.md)) that contains the window ID. The window ID is unique within the current user session.
 
 ## See Also
 

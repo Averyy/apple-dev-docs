@@ -94,18 +94,18 @@ Do not subclass or create instances of this class yourself. Always call the [`cu
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 
-- [Setting up a watchOS project](../watchOS-Apps/setting-up-a-watchos-project.md)
+- [Setting up a watchOS project](../watchos-apps/setting-up-a-watchos-project.md)
   Create a new watchOS project or add a watch target to an existing iOS project.
 - [class WKApplication](wkapplication.md)
   The centralized point of control and coordination for apps with a single watchOS app target.
@@ -117,7 +117,7 @@ Do not subclass or create instances of this class yourself. Always call the [`cu
   A collection of methods that manages the app-level behavior of a WatchKit extension.
 - [func WKApplicationMain(Int32, UnsafeMutablePointer<UnsafeMutablePointer<CChar>?>, String?) -> Int32](wkapplicationmain(_:_:_:).md)
   Creates the application object and the application delegate, and sets up the app’s event cycle.
-- [WKPrefersNetworkUponForeground](../BundleResources/Information-Property-List/WKPrefersNetworkUponForeground.md)
+- [WKPrefersNetworkUponForeground](../bundleresources/information-property-list/wkprefersnetworkuponforeground.md)
   A Boolean value that indicates whether an app requires network access on launch.
 
 

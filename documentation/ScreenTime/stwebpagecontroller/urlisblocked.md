@@ -19,7 +19,7 @@ var urlIsBlocked: Bool { get }
 
 #### Discussion
 
-When a parent or guardian blocks the webpage’s URL, the webpage controller displays a blocking UI and then sets this property to [`YES`](https://developer.apple.com/documentation/ObjectiveC/YES).
+When a parent or guardian blocks the webpage’s URL, the webpage controller displays a blocking UI and then sets this property to [`YES`](https://developer.apple.com/documentation/objectivec/yes).
 
 ## See Also
 

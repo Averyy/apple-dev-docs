@@ -22,8 +22,8 @@ protocol DOMEventTarget : NSCopying, NSObjectProtocol
 ## Relationships
 
 ### Inherits From
-- [NSCopying](../Foundation/NSCopying.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSCopying](../foundation/nscopying.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 ### Conforming Types
 - [DOMAttr](domattr.md)
 - [DOMCDATASection](domcdatasection.md)

@@ -26,7 +26,7 @@ protocol TossableFace : RawRepresentable where Self.RawValue == UInt64
 ## Relationships
 
 ### Inherits From
-- [RawRepresentable](../Swift/RawRepresentable.md)
+- [RawRepresentable](../swift/rawrepresentable.md)
 ### Conforming Types
 - [TossableRepresentation.CubeFace](tossablerepresentation/cubeface.md)
 - [TossableRepresentation.DecahedronFace](tossablerepresentation/decahedronface.md)

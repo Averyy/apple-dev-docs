@@ -16,7 +16,7 @@ var requiresUniversalLinks: Bool { get set }
 
 #### Discussion
 
-The default value of this property is [`false`](https://developer.apple.com/documentation/Swift/false), which tells the app to open any URL you provide. Set the value to [`true`](https://developer.apple.com/documentation/Swift/true) when you want the app to open only valid universal links.
+The default value of this property is [`false`](https://developer.apple.com/documentation/swift/false), which tells the app to open any URL you provide. Set the value to [`true`](https://developer.apple.com/documentation/swift/true) when you want the app to open only valid universal links.
 
 The app must be specifically configured to open universal links, and attempts to open such links fail with an appropriate error if the app isn’t properly configured. Attempts may also fail with an error if the user disabled support for opening links with the specified app.
 

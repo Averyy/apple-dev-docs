@@ -16,7 +16,7 @@ func removeItems(at indexes: IndexSet, inParent parent: Any?, withAnimation anim
 
 #### Discussion
 
-This method parallels the [`removeRows(at:withAnimation:)`](nstableview/removerows(at:withanimation:).md) method of [`NSTableView`](nstableview.md) and is used in a way similar to the [`removeObjects(at:)`](https://developer.apple.com/documentation/Foundation/NSMutableArray/removeObjects(at:)) method of [`NSMutableArray`](https://developer.apple.com/documentation/Foundation/NSMutableArray). The method does nothing if `parent` is not expanded. If any of the child items is expanded, then all of its child rows are also be removed.
+This method parallels the [`removeRows(at:withAnimation:)`](nstableview/removerows(at:withanimation:).md) method of [`NSTableView`](nstableview.md) and is used in a way similar to the [`removeObjects(at:)`](https://developer.apple.com/documentation/foundation/nsmutablearray/removeobjects(at:)) method of [`NSMutableArray`](https://developer.apple.com/documentation/foundation/nsmutablearray). The method does nothing if `parent` is not expanded. If any of the child items is expanded, then all of its child rows are also be removed.
 
 > **Note**:  [`NSCell`](nscell.md)-based outline views must first call [`beginUpdates()`](nstableview/beginupdates().md) before calling this method.
 

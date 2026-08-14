@@ -20,7 +20,7 @@ func dataRepresentation() -> Data
 
 #### Return Value
 
-A new [`NSData`](https://developer.apple.com/documentation/Foundation/NSData) object that contains the entire contents of the drawing.
+A new [`NSData`](https://developer.apple.com/documentation/foundation/nsdata) object that contains the entire contents of the drawing.
 
 ## See Also
 

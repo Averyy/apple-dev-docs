@@ -103,7 +103,7 @@ do {
 
 ##### Handle Exceptions in Objective C Only
 
-In Objective-C, exceptions are distinct from errors. Objective-C exception handling uses the `@try`, `@catch`, and `@throw` syntax to indicate unrecoverable programmer errors. This is distinct from the Cocoa pattern—described above—that uses a trailing [`NSError`](https://developer.apple.com/documentation/Foundation/NSError) parameter to indicate recoverable errors that you plan for during development.
+In Objective-C, exceptions are distinct from errors. Objective-C exception handling uses the `@try`, `@catch`, and `@throw` syntax to indicate unrecoverable programmer errors. This is distinct from the Cocoa pattern—described above—that uses a trailing [`NSError`](https://developer.apple.com/documentation/foundation/nserror) parameter to indicate recoverable errors that you plan for during development.
 
 In Swift, you can recover from errors passed using Cocoa’s error pattern, as described above in [`Catch Errors`](handling-cocoa-errors-in-swift#Catch-Errors.md). However, there’s no safe way to recover from Objective-C exceptions in Swift. To handle Objective-C exceptions, write Objective-C code that catches exceptions before they reach any Swift code.
 

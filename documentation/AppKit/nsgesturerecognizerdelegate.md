@@ -40,7 +40,7 @@ Use the methods in this protocol to establish dynamic dependencies between gestu
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

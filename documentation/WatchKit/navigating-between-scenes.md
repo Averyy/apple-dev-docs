@@ -28,15 +28,15 @@ To set up page navigation, connect two or more interface controllers in your sto
 
 Start by adding an interface controller for each page to the storyboard:
 
-![A screenshot showing two interface controllers in the storyboard.](https://docs-assets.developer.apple.com/published/00f70e8e3361b6e0aafa221c556e4989/media-3148631%402x.png)
+![A screenshot showing two interface controllers in the storyboard.](/images/com.apple.watchkit/media-3148631@2x.png)
 
 Control-click the first interface controller and drag to the second interface controller. The second controller should highlight to indicate that a segue is possible.
 
-![A screenshot showing the control-drag operation between two interface controllers.](https://docs-assets.developer.apple.com/published/5710b12bad08cc03deb098b7d5ddec59/media-3148625%402x.png)
+![A screenshot showing the control-drag operation between two interface controllers.](/images/com.apple.watchkit/media-3148625@2x.png)
 
 Release the mouse button and select “next page” from the Relationship Segue pop-up menu:
 
-![A screenshot showing the next page menu item in the Relationship Segue pop-up menu.](https://docs-assets.developer.apple.com/published/e92c0a118e2efeaf8e4cf3b3652420a1/media-3148642%402x.png)
+![A screenshot showing the next page menu item in the Relationship Segue pop-up menu.](/images/com.apple.watchkit/media-3148642@2x.png)
 
 Continue to control-click and drag to connect the rest of your pages.
 
@@ -44,17 +44,17 @@ The order in which you create your segues defines the order of the pages in your
 
 You can also change the set of pages to display. Call your interface controller’s [`reloadRootPageControllers(withNames:contexts:orientation:pageIndex:)`](wkinterfacecontroller/reloadrootpagecontrollers(withnames:contexts:orientation:pageindex:).md) method and pass an array of identifiers for interface controllers defined in your storyboard.
 
-As the user navigates from page to page, watchOS activates and deactivates the interface controllers. Use the controllers’ [`willActivate()`](wkinterfacecontroller/willactivate().md), [`didAppear()`](wkinterfacecontroller/didappear().md), [`willDisappear()`](wkinterfacecontroller/willdisappear().md), and [`didDeactivate()`](https://developer.apple.com/documentation/SecurityInterface/SFAuthorizationPluginView/didDeactivate()) methods to track these transitions.
+As the user navigates from page to page, watchOS activates and deactivates the interface controllers. Use the controllers’ [`willActivate()`](wkinterfacecontroller/willactivate().md), [`didAppear()`](wkinterfacecontroller/didappear().md), [`willDisappear()`](wkinterfacecontroller/willdisappear().md), and [`didDeactivate()`](https://developer.apple.com/documentation/securityinterface/sfauthorizationpluginview/diddeactivate()) methods to track these transitions.
 
 ##### Implement Push Navigation
 
 When using push navigation, you can define the push segues either in the storyboard, or programmatically in code. To add a push segue to the storyboard, Control-drag from a button, group, or table row to the desired control in the new interface controller.
 
-![A screenshot showing the control-drag operation between a button and the next interface controller.](https://docs-assets.developer.apple.com/published/bf452039013a276d5e7c855fedab15bb/media-3148626%402x.png)
+![A screenshot showing the control-drag operation between a button and the next interface controller.](/images/com.apple.watchkit/media-3148626@2x.png)
 
 Next, select Push from the Action Segue pop-up menu:
 
-![A screenshot showing the Push menu item in the Action Segue pop-up menu.](https://docs-assets.developer.apple.com/published/1f01ae5f10276d919685246b7f63a21d/media-3148629%402x.png)
+![A screenshot showing the Push menu item in the Action Segue pop-up menu.](/images/com.apple.watchkit/media-3148629@2x.png)
 
 Alternatively, you can programmatically initiate the push transition by calling the [`pushController(withName:context:)`](wkinterfacecontroller/pushcontroller(withname:context:).md) method:
 
@@ -86,7 +86,7 @@ A modal interface temporarily interrupts the current navigation flow to prompt t
 
 To create a modal segue in your storyboard file, Control-drag from a button, group, or table row (just like adding a Push segue). Select the Modal segue from the Action Segue pop-up menu:
 
-![A screenshot showing the Modal menu item in the Action Segue pop-up menu.](https://docs-assets.developer.apple.com/published/092713a809313bb60cc07759d2a7c1b7/media-3148643%402x.png)
+![A screenshot showing the Modal menu item in the Action Segue pop-up menu.](/images/com.apple.watchkit/media-3148643@2x.png)
 
 To present multiple scenes in a page-based layout, connect all of the modal scenes together using next page segues (just as you would for Page navigation). Then create a modal segue to the first interface controller in that group. If you connect a modal segue to the middle of the group, the system won’t display the interface controllers that precede it.
 

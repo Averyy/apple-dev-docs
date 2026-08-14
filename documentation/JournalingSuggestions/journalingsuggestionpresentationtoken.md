@@ -33,7 +33,7 @@ Create an instance of this class and display a [`JournalingSuggestionsPicker`](j
 ## Relationships
 
 ### Conforms To
-- [Equatable](../Swift/Equatable.md)
+- [Equatable](../swift/equatable.md)
 
 ## See Also
 

@@ -37,7 +37,7 @@ protocol UIInteraction : NSObjectProtocol
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 ### Conforming Types
 - [UIBandSelectionInteraction](uibandselectioninteraction.md)
 - [UICanvasFeedbackGenerator](uicanvasfeedbackgenerator.md)

@@ -61,9 +61,9 @@ Slider(value: $percentage) {
 ## Relationships
 
 ### Conforms To
-- [Comparable](../Swift/Comparable.md)
-- [Equatable](../Swift/Equatable.md)
-- [Identifiable](../Swift/Identifiable.md)
+- [Comparable](../swift/comparable.md)
+- [Equatable](../swift/equatable.md)
+- [Identifiable](../swift/identifiable.md)
 - [SliderTickContent](slidertickcontent.md)
 
 ## See Also

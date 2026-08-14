@@ -22,7 +22,7 @@ var remoteVideoURL: URL? { get set }
 
 #### Discussion
 
-This may reference a remote video file that [`AVFoundation`](https://developer.apple.com/documentation/AVFoundation) can stream.
+This may reference a remote video file that [`AVFoundation`](https://developer.apple.com/documentation/avfoundation) can stream.
 
 ## See Also
 

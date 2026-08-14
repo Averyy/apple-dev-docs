@@ -22,7 +22,7 @@ For more information about the entitlements web browser extensions use, see [`De
 
 #### Create a Task Identity Token
 
-Your content extension creates a task identity token that you pass to the GPU extension using your IPC protocol, for example, with [`XPC`](https://developer.apple.com/documentation/XPC). The task identity token is an unforgeable value that the system uses to identify the process to which it attributes memory in the GPU extension.
+Your content extension creates a task identity token that you pass to the GPU extension using your IPC protocol, for example, with [`XPC`](https://developer.apple.com/documentation/xpc). The task identity token is an unforgeable value that the system uses to identify the process to which it attributes memory in the GPU extension.
 
 To create a task identity token:
 
@@ -42,7 +42,7 @@ if (result == KERN_SUCCESS) {
 
 Receive the task identity token in the GPU extension and use it to attribute memory to the content extension.
 
-To attribute an [`IOSurfaceRef`](https://developer.apple.com/documentation/IOSurface/IOSurfaceRef) to a content extension, call `IOSurfaceSetOwnershipIdentity`:
+To attribute an [`IOSurfaceRef`](https://developer.apple.com/documentation/iosurface/iosurfaceref) to a content extension, call `IOSurfaceSetOwnershipIdentity`:
 
 ```c
 IOSurfaceRef surface = /* Create an IOSurface. */;

@@ -50,7 +50,7 @@ You indicate which scene to open by providing one of the following:
 
 - A string identifier that you pass through the `id` parameter, as in the above example.
 - A `value` parameter that has a type that matches the type that you specify in the scene’s initializer.
-- Both an identifier and a value. This enables you to define multiple window groups that take input values of the same type, like a [`UUID`](https://developer.apple.com/documentation/Foundation/UUID).
+- Both an identifier and a value. This enables you to define multiple window groups that take input values of the same type, like a [`UUID`](https://developer.apple.com/documentation/foundation/uuid).
 
 Use the first option to target either a [`WindowGroup`](windowgroup.md) or a [`Window`](window.md) scene in your app that has a matching identifier. For a `WindowGroup`, the system creates a new window for the group. If the window group presents data, the system provides the default value or `nil` to the window’s root view. If the targeted scene is a `Window`, the system orders it to the front.
 
@@ -78,12 +78,12 @@ Use the other two options to target a `WindowGroup` and provide a value to prese
 ## Relationships
 
 ### Conforms To
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 
-- [Presenting windows and spaces](../visionOS/presenting-windows-and-spaces.md)
+- [Presenting windows and spaces](../visionos/presenting-windows-and-spaces.md)
   Open and close the scenes that make up your app’s interface.
 - [var supportsMultipleWindows: Bool](environmentvalues/supportsmultiplewindows.md)
   A Boolean value that indicates whether the current platform supports opening multiple windows.

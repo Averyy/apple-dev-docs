@@ -29,8 +29,8 @@ protocol ShowsSnippetView : IntentResult where Self.Snippet == _SnippetViewConta
 
 ### Inherits From
 - [IntentResult](intentresult.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 ### Conforming Types
 - [IntentResultContainer](intentresultcontainer.md)
 

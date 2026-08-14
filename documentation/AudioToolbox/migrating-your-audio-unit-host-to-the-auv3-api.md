@@ -10,13 +10,13 @@ The latest Audio Unit standard, AUv3, provides a robust plug-in model built on a
 
 You can adopt the new API while still retaining your ability to host AUv2 audio units. The framework’s bridging layer enables this capability by automatically translating AUv3 calls into their AUv2 equivalents, which means you can use a single API and work with both new and legacy audio units.
 
-![A component diagram that shows the bridging support provided by the framework.](https://docs-assets.developer.apple.com/published/f5490fa2df1cfa8948d30e81b2aaeca6/media-3531569%402x.png)
+![A component diagram that shows the bridging support provided by the framework.](/images/com.apple.audiotoolbox/media-3531569@2x.png)
 
 For a downloadable sample app that uses the core features of the AUv3 API, see [`Incorporating Audio Effects and Instruments`](incorporating-audio-effects-and-instruments.md).
 
 ##### Find Audio Units
 
-The AVFoundation framework’s [`AVAudioUnitComponentManager`](https://developer.apple.com/documentation/AVFAudio/AVAudioUnitComponentManager) class provides a convenient way to find audio components registered with the host system. You use it to search for audio units by description, predicate, or test case, and the component manager returns an array of [`AVAudioUnitComponent`](https://developer.apple.com/documentation/AVFAudio/AVAudioUnitComponent) objects matching your search criteria. The following code example shows how to use each approach to find all audio effects available on the system.
+The AVFoundation framework’s [`AVAudioUnitComponentManager`](https://developer.apple.com/documentation/avfaudio/avaudiounitcomponentmanager) class provides a convenient way to find audio components registered with the host system. You use it to search for audio units by description, predicate, or test case, and the component manager returns an array of [`AVAudioUnitComponent`](https://developer.apple.com/documentation/avfaudio/avaudiounitcomponent) objects matching your search criteria. The following code example shows how to use each approach to find all audio effects available on the system.
 
 ```swift
 // Access the singleton AVAudioUnitComponentManager instance.
@@ -43,7 +43,7 @@ let componentsByTest = manager.components { component, _ in
 
 ##### Instantiate Audio Units
 
-Once you’ve found the list of available audio components, the next step is to instantiate the component you want to use. To instantiate the audio unit, use the [`AVAudioUnit`](https://developer.apple.com/documentation/AVFAudio/AVAudioUnit) class’s [`instantiate(with:options:completionHandler:)`](https://developer.apple.com/documentation/AVFAudio/AVAudioUnit/instantiate(with:options:completionHandler:)) method as shown below.
+Once you’ve found the list of available audio components, the next step is to instantiate the component you want to use. To instantiate the audio unit, use the [`AVAudioUnit`](https://developer.apple.com/documentation/avfaudio/avaudiounit) class’s [`instantiate(with:options:completionHandler:)`](https://developer.apple.com/documentation/avfaudio/avaudiounit/instantiate(with:options:completionhandler:)) method as shown below.
 
 ```swift
 func selectAudioUnit(at index: Int) {
@@ -99,8 +99,8 @@ The following table lists the AUv2 function and its AUv3 method or property equi
 | [`AudioUnitRender(_:_:_:_:_:_:)`](audiounitrender(_:_:_:_:_:_:).md) | [`renderBlock`](auaudiounit/renderblock.md) | Renders audio samples in a real-time context. |
 | [`AudioUnitReset(_:_:_:)`](audiounitreset(_:_:_:).md) | [`reset()`](auaudiounit/reset().md) | Resets the audio unit’s state. |
 | [`AudioUnitScheduleParameters(_:_:_:)`](audiounitscheduleparameters(_:_:_:).md) | [`scheduleParameterBlock`](auaudiounit/scheduleparameterblock.md) | Schedules a change to an audio unit parameter value. |
-| [`AudioUnitGetProperty(_:_:_:_:_:_:)`](audiounitgetproperty(_:_:_:_:_:_:).md) ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) [`AudioUnitSetProperty(_:_:_:_:_:_:)`](audiounitsetproperty(_:_:_:_:_:_:).md) | `audioUnit.propertyName` | Modifies an audio unit property value. |
-| [`AudioUnitGetParameter(_:_:_:_:_:)`](audiounitgetparameter(_:_:_:_:_:).md) ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) [`AudioUnitSetParameter(_:_:_:_:_:_:)`](audiounitsetparameter(_:_:_:_:_:_:).md) | [`parameterTree`](auaudiounit/parametertree.md) | Accesses the parameter tree object that’s used to get and set parameter values. |
+| [`AudioUnitGetProperty(_:_:_:_:_:_:)`](audiounitgetproperty(_:_:_:_:_:_:).md) ![None](/images/com.apple.audiotoolbox/spacer.png) [`AudioUnitSetProperty(_:_:_:_:_:_:)`](audiounitsetproperty(_:_:_:_:_:_:).md) | `audioUnit.propertyName` | Modifies an audio unit property value. |
+| [`AudioUnitGetParameter(_:_:_:_:_:)`](audiounitgetparameter(_:_:_:_:_:).md) ![None](/images/com.apple.audiotoolbox/spacer.png) [`AudioUnitSetParameter(_:_:_:_:_:_:)`](audiounitsetparameter(_:_:_:_:_:_:).md) | [`parameterTree`](auaudiounit/parametertree.md) | Accesses the parameter tree object that’s used to get and set parameter values. |
 
 ##### Present the Audio Units User Interface
 

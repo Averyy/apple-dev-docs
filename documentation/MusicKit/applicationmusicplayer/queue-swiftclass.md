@@ -39,11 +39,11 @@ class Queue
 ### Inherits From
 - [MusicPlayer.Queue](musicplayer/queue.md)
 ### Conforms To
-- [Equatable](../Swift/Equatable.md)
-- [ExpressibleByArrayLiteral](../Swift/ExpressibleByArrayLiteral.md)
-- [Hashable](../Swift/Hashable.md)
-- [Observable](../Observation/Observable.md)
-- [ObservableObject](../Combine/ObservableObject.md)
+- [Equatable](../swift/equatable.md)
+- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
+- [Hashable](../swift/hashable.md)
+- [Observable](../observation/observable.md)
+- [ObservableObject](../combine/observableobject.md)
 
 
 ---

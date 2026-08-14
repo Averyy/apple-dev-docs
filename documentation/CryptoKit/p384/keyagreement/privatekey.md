@@ -57,13 +57,13 @@ struct PrivateKey
 ## Relationships
 
 ### Conforms To
-- [Copyable](../Swift/Copyable.md)
+- [Copyable](../swift/copyable.md)
 - [DiffieHellmanKeyAgreement](diffiehellmankeyagreement.md)
-- [Escapable](../Swift/Escapable.md)
+- [Escapable](../swift/escapable.md)
 - [HPKEDiffieHellmanPrivateKey](hpkediffiehellmanprivatekey.md)
 - [HPKEDiffieHellmanPrivateKeyGeneration](hpkediffiehellmanprivatekeygeneration.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

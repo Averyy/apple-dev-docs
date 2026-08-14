@@ -202,7 +202,7 @@ These fields are the exact and only fields that are mandatory for `MobileApplica
 | --- | --- | --- | --- |
 | App Apple ID | `com.apple.alternativeDistribution.search.appleItemId` | `string` | You can find this value in the alternative distribution package’s manifest.json under the key `appleItemId.` |
 | Apple Version ID | `com.apple.alternativeDistribution.search.appleVersionId` | `string` | You can find this value in the alternative distribution package’s manifest.json under the key `appleVersionId`. |
-| Date published | `datePublished` | `string` ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) following the [`ISO 8601`](https://developer.apple.comhttps://www.iso.org/iso-8601-date-and-time-format.html) standard, in the format `YYYY-MM-DDThh:mm:ssZ` | The UTC timestamp at which time the app version published on the marketplace. |
+| Date published | `datePublished` | `string` ![None](/images/com.apple.appstoreconnectapi/spacer.png) following the [`ISO 8601`](https://developer.apple.comhttps://www.iso.org/iso-8601-date-and-time-format.html) standard, in the format `YYYY-MM-DDThh:mm:ssZ` | The UTC timestamp at which time the app version published on the marketplace. |
 
 > **Note**:  For each version of your app, provide all the fields contained in `supportingData` in a single instance of `supportingData` that wraps all of them.
 
@@ -213,7 +213,7 @@ Optionally, every instance *may* define additional ranking signals to facilitate
 | Property name | Name in code | Type | Note |
 | --- | --- | --- | --- |
 | Aggregate rating | `aggregateRating` | `object` | This object is not in `supportingData` object. All four fields are mandatory. For more information, see the next table. |
-| Country supported | `countriesSupported` | `array` ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) 2-letter country codes as defined per [`ISO 3166-1 alpha-2`](https://developer.apple.comhttps://www.iso.org/obp/ui/#search/code/) | You can use this array to filter the availability of apps per country for Spotlight. |
+| Country supported | `countriesSupported` | `array` ![None](/images/com.apple.appstoreconnectapi/spacer.png) 2-letter country codes as defined per [`ISO 3166-1 alpha-2`](https://developer.apple.comhttps://www.iso.org/obp/ui/#search/code/) | You can use this array to filter the availability of apps per country for Spotlight. |
 | Popularity | `com.apple.alternativeDistribution.search.ranking.popularity` | `float, 0` to `100` | A higher number means a more popular app, that gives a notion of popularity in an alternative marketplace by comparing apps within a specific marketplace. |
 
 This table shows details for the `AggregateRating` properties:
@@ -242,7 +242,7 @@ This example shows the `popularity` property as part of the `supportingData` cod
 
 ##### Understand Supported Countries
 
-Searchabilty for apps distributed on alternative marketplaces has two approaches: Applebot web crawler uses `countriesSupported`, while [`MarketplaceKit`](https://developer.apple.com/documentation/MarketplaceKit) uses `searchTerritory`.
+Searchabilty for apps distributed on alternative marketplaces has two approaches: Applebot web crawler uses `countriesSupported`, while [`MarketplaceKit`](https://developer.apple.com/documentation/marketplacekit) uses `searchTerritory`.
 
 `countriesSupported` is an array that contains a list of 2-letter country codes as defined by [`ISO 3166-1 alpha-2`](https://developer.apple.comhttps://www.iso.org/obp/ui/#search). Use these codes to filter the availability of an app per country for search. You’re responsible for setting an optional territory as necessary inside your marketplace app. To learn more about territory support, see the MarketplaceKit property `searchTerritory`.
 

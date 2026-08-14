@@ -24,7 +24,7 @@ Use this case to create a data source based on a files on disk that contain your
 
 For example, you can initialize a data source with a file URL that indicates a directory called `Training Data` that contains the files `buffalo.1.jpg`, `buffalo.2.jpg`, `cheetah.1.jpg`, and `cheetah.2.jpg`. The first two images receive the label `buffalo`, while the second two images receive the label `cheetah`. The part of the name after the first period can be any arbitrary string.
 
-![Diagram showing a directory called “Training Data” containing images with names that use the label in the](https://docs-assets.developer.apple.com/published/4d24317d8a456b920217ba8bbd8d149a/MLImageClassifier-DataSource-labeledFiles%28at%3A%29-1%402x.png)
+![Diagram showing a directory called “Training Data” containing images with names that use the label in the](/images/com.apple.createml/MLImageClassifier-DataSource-labeledFiles(at:)-1@2x.png)
 
 If you want to create a data source with labels based on how you sort your images into directories, use [`MLImageClassifier.DataSource.labeledDirectories(at:)`](mlimageclassifier/datasource/labeleddirectories(at:).md) instead.
 

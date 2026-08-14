@@ -20,7 +20,7 @@ A dictionary of rendering attributes for the link, or `nil` to use defaults.
 
 #### Discussion
 
-Just as other rendering attributes, specifying [`NSNull`](https://developer.apple.com/documentation/Foundation/NSNull) removes the attribute from the final attributes used for rendering. It has priority over the general rendering attributes.
+Just as other rendering attributes, specifying [`NSNull`](https://developer.apple.com/documentation/foundation/nsnull) removes the attribute from the final attributes used for rendering. It has priority over the general rendering attributes.
 
 The method the framework calls to return a dictionary of attributes for rendering a link attribute name.
 

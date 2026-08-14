@@ -26,7 +26,7 @@ let kSecAttrTokenID: CFString
 
 #### Discussion
 
-The corresponding value is of type [`CFString`](https://developer.apple.com/documentation/CoreFoundation/CFString), and may only be one of the constants specified in [`Token ID Values`](item-attribute-keys-and-values#Token-ID-Values.md). Presence of this key indicates that the item is backed by an external store, as uniquely identified by the value. An item without this attribute is stored as normal in the keychain database.
+The corresponding value is of type [`CFString`](https://developer.apple.com/documentation/corefoundation/cfstring), and may only be one of the constants specified in [`Token ID Values`](item-attribute-keys-and-values#Token-ID-Values.md). Presence of this key indicates that the item is backed by an external store, as uniquely identified by the value. An item without this attribute is stored as normal in the keychain database.
 
 > ❗ **Important**:  You can’t change this attribute after creating the keychain item. It isn’t possible to migrate existing items between stores. Setting `kSecAttrTokenID` when creating a keychain item in macOS makes it behave like an iOS keychain item, as if [`kSecAttrSynchronizable`](ksecattrsynchronizable.md) were also set.
 

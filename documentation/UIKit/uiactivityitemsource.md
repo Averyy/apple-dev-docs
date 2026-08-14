@@ -47,7 +47,7 @@ Because the methods of this protocol are executed on your app’s main thread, y
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 ### Conforming Types
 - [UIActivityItemProvider](uiactivityitemprovider.md)
 

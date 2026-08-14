@@ -23,7 +23,7 @@ The request’s configurable properties.
 
 #### Overview
 
-You initialize a [`FetchRequest`](fetchrequest.md) with an optional predicate and sort descriptors, either explicitly or using a configured [`NSFetchRequest`](https://developer.apple.com/documentation/CoreData/NSFetchRequest). Later, you can dynamically update the predicate and sort parameters using the request’s configuration structure.
+You initialize a [`FetchRequest`](fetchrequest.md) with an optional predicate and sort descriptors, either explicitly or using a configured [`NSFetchRequest`](https://developer.apple.com/documentation/coredata/nsfetchrequest). Later, you can dynamically update the predicate and sort parameters using the request’s configuration structure.
 
 You access or bind to a request’s configuration components through properties on the associated [`FetchedResults`](fetchedresults.md) instance.
 
@@ -94,8 +94,8 @@ When the user types into the text field, the predicate updates, the request fetc
 ## Relationships
 
 ### Conforms To
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

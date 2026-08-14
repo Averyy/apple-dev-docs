@@ -21,7 +21,7 @@ static let auxiliaryDisparity: CIImageOption
 
 #### Discussion
 
-The value of this key is an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) containing a Boolean `true` or `false`.  If the value is `true`, then calls to [`imageWithContentsOfURL:options:`](ciimage/imagewithcontentsofurl:options:.md) and [`imageWithData:options:`](ciimage/imagewithdata:options:.md) will return the auxiliary image as a half-float monochrome image instead of the primary image, or [`nil`](https://developer.apple.com/documentation/ObjectiveC/nil-227m0) if no auxiliary image exists.
+The value of this key is an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) containing a Boolean `true` or `false`.  If the value is `true`, then calls to [`imageWithContentsOfURL:options:`](ciimage/imagewithcontentsofurl:options:.md) and [`imageWithData:options:`](ciimage/imagewithdata:options:.md) will return the auxiliary image as a half-float monochrome image instead of the primary image, or [`nil`](https://developer.apple.com/documentation/objectivec/nil-227m0) if no auxiliary image exists.
 
 ## See Also
 

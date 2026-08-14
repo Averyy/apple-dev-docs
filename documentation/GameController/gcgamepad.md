@@ -27,7 +27,7 @@ The controls associated with the gamepad profile include the following:
 - Four face buttons arranged in a diamond pattern.
 - One directional pad (D-pad).
 
-![None](https://docs-assets.developer.apple.com/published/57237c8130783a4f106842ba76f1ac3b/media-2556316%402x.png)
+![None](/images/com.apple.gamecontroller/media-2556316@2x.png)
 
 ## Topics
 
@@ -68,12 +68,12 @@ The controls associated with the gamepad profile include the following:
 ### Inherited By
 - [GCGamepadSnapshot](gcgamepadsnapshot.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

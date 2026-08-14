@@ -10,7 +10,7 @@ In iOS 15 and later, you can use [`custom product pages`](https://developer.appl
 
 To create a custom product page ad, use the following workflow:
 
-![A diagram showing the five-step workflow for creating a custom product page ad.](https://docs-assets.developer.apple.com/published/56d06d39dc5e190bae2f397206d352ea/media-3921834%402x.png)
+![A diagram showing the five-step workflow for creating a custom product page ad.](/images/com.apple.appleads/media-3921834@2x.png)
 
 1. Use [`Get Product Pages`](get-product-pages.md) to fetch your `productPageId`.
 2. Use [`Get Product Page Locales`](get-product-page-locales.md) to fetch locale metadata and supported languages. Verify that your custom product page locale and asset data match the language and device types in your campaign [`AdGroup`](adgroup.md).

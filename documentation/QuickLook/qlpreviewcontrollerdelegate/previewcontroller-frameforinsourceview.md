@@ -19,7 +19,7 @@ optional func previewController(_ controller: QLPreviewController, frameFor item
 
 #### Return Value
 
-A [`CGRect`](https://developer.apple.com/documentation/CoreFoundation/CGRect) object defining the frame rectangle for the preview item as it appears in your app.
+A [`CGRect`](https://developer.apple.com/documentation/corefoundation/cgrect) object defining the frame rectangle for the preview item as it appears in your app.
 
 #### Discussion
 
@@ -35,23 +35,23 @@ The system only invokes this method when your app uses the animation option for 
 [parentController dismissModalViewControllerAnimated: YES];
 ```
 
-If you use Boolean [`false`](https://developer.apple.com/documentation/Swift/false) in these statements, the [`QLPreviewController`](qlpreviewcontroller.md) displays the preview full screen immediately, with no transition effect.
+If you use Boolean [`false`](https://developer.apple.com/documentation/swift/false) in these statements, the [`QLPreviewController`](qlpreviewcontroller.md) displays the preview full screen immediately, with no transition effect.
 
 The preview item, and its origin point, can change while displaying a preview. For example, the user may navigate to a different item using the controller, or may rotate the device. Return the correct origin point when zooming to full screen, and when zooming back to your representation of the item.
 
-> **Note**:  Zoom animation is most effective on large-screen devices. On iPhone and iPod touch, use a [`UINavigationController`](https://developer.apple.com/documentation/UIKit/UINavigationController) object to push the [`QLPreviewController`](qlpreviewcontroller.md) into view. When using a navigation controller to push a preview, the system doesn’t invoke this method.
+> **Note**:  Zoom animation is most effective on large-screen devices. On iPhone and iPod touch, use a [`UINavigationController`](https://developer.apple.com/documentation/uikit/uinavigationcontroller) object to push the [`QLPreviewController`](qlpreviewcontroller.md) into view. When using a navigation controller to push a preview, the system doesn’t invoke this method.
 
-To produce a zoom animation, return a [`CGRect`](https://developer.apple.com/documentation/CoreFoundation/CGRect) object that represents the frame for the preview item as it appears in your app. Use coordinates relative to the [`UIView`](https://developer.apple.com/documentation/UIKit/UIView) object that contains the item, and specify that view in the `view` parameter.
+To produce a zoom animation, return a [`CGRect`](https://developer.apple.com/documentation/corefoundation/cgrect) object that represents the frame for the preview item as it appears in your app. Use coordinates relative to the [`UIView`](https://developer.apple.com/documentation/uikit/uiview) object that contains the item, and specify that view in the `view` parameter.
 
-Alternatively, you can use screen coordinates for the returned [`CGRect`](https://developer.apple.com/documentation/CoreFoundation/CGRect) object. In this case, you need to specify [`nil`](https://developer.apple.com/documentation/ObjectiveC/nil-227m0) in the `view` parameter.
+Alternatively, you can use screen coordinates for the returned [`CGRect`](https://developer.apple.com/documentation/corefoundation/cgrect) object. In this case, you need to specify [`nil`](https://developer.apple.com/documentation/objectivec/nil-227m0) in the `view` parameter.
 
-To produce a full-screen fade animation rather than a zoom, return a value of [`CGRectZero`](https://developer.apple.com/documentation/CoreGraphics/CGRectZero), or don’t implement this method.
+To produce a full-screen fade animation rather than a zoom, return a value of [`CGRectZero`](https://developer.apple.com/documentation/coregraphics/cgrectzero), or don’t implement this method.
 
 ## Parameters
 
 - `controller`: The [`QLPreviewController`](qlpreviewcontroller.md) that’s requesting the frame for the preview item.
 - `item`: The item to preview or dismiss.
-- `view`: The [`UIView`](https://developer.apple.comhttps://developer.apple.com/library/archive/releasenotes/iPhone/RN-iPhoneSDK/index.html#//apple_ref/doc/uid/TP40007428-CH1-SW18) object that contains the preview item as you display it in your app. By providing a view object to the `view` parameter, you indicate to the [`QLPreviewController`](qlpreviewcontroller.md) that you’re specifying the returned [`CGRect`](https://developer.apple.com/documentation/CoreFoundation/CGRect) object’s origin point relative to that view. Provide `nil` in this parameter to indicate that you’re specifying the [`CGRect`](https://developer.apple.com/documentation/CoreFoundation/CGRect) origin point in screen coordinates.
+- `view`: The [`UIView`](https://developer.apple.comhttps://developer.apple.com/library/archive/releasenotes/iPhone/RN-iPhoneSDK/index.html#//apple_ref/doc/uid/TP40007428-CH1-SW18) object that contains the preview item as you display it in your app. By providing a view object to the `view` parameter, you indicate to the [`QLPreviewController`](qlpreviewcontroller.md) that you’re specifying the returned [`CGRect`](https://developer.apple.com/documentation/corefoundation/cgrect) object’s origin point relative to that view. Provide `nil` in this parameter to indicate that you’re specifying the [`CGRect`](https://developer.apple.com/documentation/corefoundation/cgrect) origin point in screen coordinates.
 
 ## See Also
 

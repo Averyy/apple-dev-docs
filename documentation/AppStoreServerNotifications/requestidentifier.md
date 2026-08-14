@@ -16,7 +16,7 @@ uuid requestIdentifier
 
 #### Discussion
 
-You originally specify the `requestIdentifier` when you call [`Extend Subscription Renewal Dates for All Active Subscribers`](https://developer.apple.com/documentation/AppStoreServerAPI/Extend-Subscription-Renewal-Dates-for-All-Active-Subscribers) in the [`App Store Server API`](https://developer.apple.com/documentation/AppStoreServerAPI).
+You originally specify the `requestIdentifier` when you call [`Extend Subscription Renewal Dates for All Active Subscribers`](https://developer.apple.com/documentation/appstoreserverapi/extend-subscription-renewal-dates-for-all-active-subscribers) in the [`App Store Server API`](https://developer.apple.com/documentation/appstoreserverapi).
 
 ## See Also
 

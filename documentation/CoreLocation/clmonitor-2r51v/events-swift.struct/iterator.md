@@ -24,7 +24,7 @@ Use `CLMonitor.Events.Iterator` to process events that [`CLMonitor`](clmonitor-2
 ## Relationships
 
 ### Conforms To
-- [AsyncIteratorProtocol](../Swift/AsyncIteratorProtocol.md)
+- [AsyncIteratorProtocol](../swift/asynciteratorprotocol.md)
 
 
 ---

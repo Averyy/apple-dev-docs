@@ -34,12 +34,12 @@ Document queries are immutable: The query’s properties are set when the query 
 To create and execute a query, perform the following steps:
 
 1. Create the document type by calling the [`HKObjectType`](hkobjecttype.md) class’s [`documentType(forIdentifier:)`](hkobjecttype/documenttype(foridentifier:).md) method.
-2. (optionally) Create an [`NSPredicate`](https://developer.apple.com/documentation/Foundation/NSPredicate) object to filter the search results.
-3. (optionally) Create an array of [`NSSortDescriptor`](https://developer.apple.com/documentation/Foundation/NSSortDescriptor) objects to provide the sort order for the results.
+2. (optionally) Create an [`NSPredicate`](https://developer.apple.com/documentation/foundation/nspredicate) object to filter the search results.
+3. (optionally) Create an array of [`NSSortDescriptor`](https://developer.apple.com/documentation/foundation/nssortdescriptor) objects to provide the sort order for the results.
 4. Instantiate a new query by calling the [`init(documentType:predicate:limit:sortDescriptors:includeDocumentData:resultsHandler:)`](hkdocumentquery/init(documenttype:predicate:limit:sortdescriptors:includedocumentdata:resultshandler:).md) method.
 5. In the results handler, handle any errors and process the results.
 
-Note, the query returns the results in batches and may call the results handler more than once. If the `done` parameter is set to [`false`](https://developer.apple.com/documentation/Swift/false), the query is still active and will call the results handler with additional results. If the `done` parameter is set to [`true`](https://developer.apple.com/documentation/Swift/true), the query is complete.
+Note, the query returns the results in batches and may call the results handler more than once. If the `done` parameter is set to [`false`](https://developer.apple.com/documentation/swift/false), the query is still active and will call the results handler with additional results. If the `done` parameter is set to [`true`](https://developer.apple.com/documentation/swift/true), the query is complete.
 
 ```swift
 guard let cdaType = HKObjectType.documentType(forIdentifier: .CDA) else {
@@ -96,14 +96,14 @@ As with many HealthKit classes, don’t subclass the [`HKDocumentQuery`](hkdocum
 ### Inherits From
 - [HKQuery](hkquery.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

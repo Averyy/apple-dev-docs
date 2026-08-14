@@ -24,7 +24,7 @@ protocol AccessoryTransportSecurity : AppExtension
 
 Implement this protocol in an extension with an `EXExtensionPointIdentifier` value of `com.apple.accessory-transport-security` to manage the key exchange process that establishes encrypted communication with your accessory. The extension runs in a separate process for security isolation and communicates with the system through the extension’s configuration object ([`AccessoryTransportSecurityConfiguration`](accessorytransportsecurityconfiguration.md)).
 
-> ❗ **Important**: The system requires your app extension to have the [`com.apple.developer.accessory-transport-security`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.accessory-transport-security) entitlement to use this protocol.
+> ❗ **Important**: The system requires your app extension to have the [`com.apple.developer.accessory-transport-security`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.accessory-transport-security) entitlement to use this protocol.
 
 #### Add the Necessary Target Configuration
 
@@ -115,7 +115,7 @@ For more information, see [`Receiving iOS notifications on an accessory`](receiv
 ## Relationships
 
 ### Inherits From
-- [AppExtension](../ExtensionFoundation/AppExtension.md)
+- [AppExtension](../extensionfoundation/appextension.md)
 
 ## See Also
 
@@ -127,7 +127,7 @@ For more information, see [`Receiving iOS notifications on an accessory`](receiv
   A protocol that configures and manages communication between the extension and the system.
 - [protocol AccessoryTransportSecurityConfiguration](accessorytransportsecurityconfiguration.md)
   A protocol that configures and manages communication between your security extension and the system.
-- [Accessory Notifications](../AccessoryNotifications/AccessoryNotifications.md)
+- [Accessory Notifications](../accessorynotifications/accessorynotifications.md)
   Receive forwarded iOS system notifications on an accessory that you develop.
 
 

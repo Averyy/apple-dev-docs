@@ -50,11 +50,11 @@ The methods for reading and writing common file formats also support document at
 
 ##### System Framework Interoperability
 
-[`TextKit`](https://developer.apple.com/documentation/UIKit/textkit) and [`Core Text`](https://developer.apple.com/documentation/CoreText) use attributed strings extensively during the layout and rendering processes. These technologies use the string’s text and rendering-related attributes to calculate the text metrics needed during layout. Similarly, these technologies apply those same attributes during rendering to give the text its styled appearance. The technologies use only attributes that directly affect the appearance of the text, and ignore most other attributes. For some attributes, the text system adds attributes during rendering as needed. For example, the text system provides default style attributes for text with the [`link`](nsattributedstring/key/link.md) attribute.
+[`TextKit`](https://developer.apple.com/documentation/uikit/textkit) and [`Core Text`](https://developer.apple.com/documentation/coretext) use attributed strings extensively during the layout and rendering processes. These technologies use the string’s text and rendering-related attributes to calculate the text metrics needed during layout. Similarly, these technologies apply those same attributes during rendering to give the text its styled appearance. The technologies use only attributes that directly affect the appearance of the text, and ignore most other attributes. For some attributes, the text system adds attributes during rendering as needed. For example, the text system provides default style attributes for text with the [`link`](nsattributedstring/key/link.md) attribute.
 
-[`AppKit`](https://developer.apple.com/documentation/AppKit) and [`UIKit`](https://developer.apple.com/documentation/UIKit) also support attributed strings in several ways. Some views and controls in these frameworks have APIs that accept attributed strings, and render the string with its style information. The frameworks also add methods to the [`NSAttributedString`](nsattributedstring.md) class that let you draw a styled string directly in one of your custom views. Because these methods use TextKit to draw the string, they recognize the same rendering-related attributes as that technology.
+[`AppKit`](https://developer.apple.com/documentation/appkit) and [`UIKit`](https://developer.apple.com/documentation/uikit) also support attributed strings in several ways. Some views and controls in these frameworks have APIs that accept attributed strings, and render the string with its style information. The frameworks also add methods to the [`NSAttributedString`](nsattributedstring.md) class that let you draw a styled string directly in one of your custom views. Because these methods use TextKit to draw the string, they recognize the same rendering-related attributes as that technology.
 
-The [`NSAttributedString`](nsattributedstring.md) class and its Core Foundation counterpart, [`CFAttributedString`](https://developer.apple.com/documentation/CoreFoundation/CFAttributedString), are toll-free bridged, which means you can use the two types interchangeably in your code without losing any text or attribute information.
+The [`NSAttributedString`](nsattributedstring.md) class and its Core Foundation counterpart, [`CFAttributedString`](https://developer.apple.com/documentation/corefoundation/cfattributedstring), are toll-free bridged, which means you can use the two types interchangeably in your code without losing any text or attribute information.
 
 ## Topics
 
@@ -112,9 +112,9 @@ The [`NSAttributedString`](nsattributedstring.md) class and its Core Foundation 
   Constants for the type of effect to apply to the text.
 - [NSAttributedString.SpellingState](nsattributedstring/spellingstate.md)
   Constants for the spelling state attribute key.
-- [struct NSUnderlineStyle](../UIKit/NSUnderlineStyle.md)
+- [struct NSUnderlineStyle](../uikit/nsunderlinestyle.md)
   Constants for the underline style and strikethrough style attribute keys.
-- [enum NSWritingDirectionFormatType](../UIKit/NSWritingDirectionFormatType.md)
+- [enum NSWritingDirectionFormatType](../uikit/nswritingdirectionformattype.md)
   Constants for the writing direction attribute key.
 ### Getting document-wide attributes
 - [NSAttributedString.DocumentAttributeKey](nsattributedstring/documentattributekey.md)
@@ -127,7 +127,7 @@ The [`NSAttributedString`](nsattributedstring.md) class and its Core Foundation 
   Constants for the document type document attribute key.
 - [NSAttributedString.TextLayoutSectionKey](nsattributedstring/textlayoutsectionkey.md)
   Constants for the text layout sections document attribute key.
-- [enum NSTextScalingType](../UIKit/NSTextScalingType.md)
+- [enum NSTextScalingType](../uikit/nstextscalingtype.md)
   Constants that specify the text scaling.
 ### Representing markdown attributes
 - [struct InlinePresentationIntent](inlinepresentationintent.md)
@@ -186,25 +186,25 @@ The [`NSAttributedString`](nsattributedstring.md) class and its Core Foundation 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Inherited By
 - [NSMutableAttributedString](nsmutableattributedstring.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [Copyable](../Swift/Copyable.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Escapable](../Swift/Escapable.md)
-- [Hashable](../Swift/Hashable.md)
+- [CVarArg](../swift/cvararg.md)
+- [Copyable](../swift/copyable.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Escapable](../swift/escapable.md)
+- [Hashable](../swift/hashable.md)
 - [NSCoding](nscoding.md)
 - [NSCopying](nscopying.md)
 - [NSItemProviderReading](nsitemproviderreading.md)
 - [NSItemProviderWriting](nsitemproviderwriting.md)
 - [NSMutableCopying](nsmutablecopying.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [NSPasteboardReading](../AppKit/NSPasteboardReading.md)
-- [NSPasteboardWriting](../AppKit/NSPasteboardWriting.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSPasteboardReading](../appkit/nspasteboardreading.md)
+- [NSPasteboardWriting](../appkit/nspasteboardwriting.md)
 - [NSSecureCoding](nssecurecoding.md)
 
 ## See Also

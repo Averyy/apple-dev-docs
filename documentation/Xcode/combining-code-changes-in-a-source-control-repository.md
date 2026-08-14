@@ -8,7 +8,7 @@ Integrate code changes from multiple sources and resolve conflicts between diffe
 
 If you use source control to work on code with collaborators or to manage multiple versions of your Xcode project for different releases, eventually, you need to sync code changes between versions. Git source control provides a mechanism for combining sets of code changes by merging those changes together, and Xcode provides a visual interface for performing a *merge*.
 
-![Conceptual diagram that shows two rows of commits, each row representing a branch. The rightmost commit in the bottom row merges into the top row to illustrate two commits merging together.](https://docs-assets.developer.apple.com/published/357f965f3904cf401c393b515a8084dd/combining-code-changes-in-a-source-control-repository-1%402x.png)
+![Conceptual diagram that shows two rows of commits, each row representing a branch. The rightmost commit in the bottom row merges into the top row to illustrate two commits merging together.](/images/com.apple.Xcode/combining-code-changes-in-a-source-control-repository-1@2x.png)
 
 ##### Merge Code Changes
 
@@ -27,7 +27,7 @@ In a source control repository, a *conflict* occurs when two commits have incomp
 
 If there are conflicts when you attempt to merge changes in Xcode, Xcode presents a comparison view for you to review and resolve the conflicts.
 
-![The Xcode merge conflict view showing a list of files to merge and highlighting the file with a conflict. The view shows the conflict and the button you use to select a resolution for it. The view also highlights the options to navigate between conflicts in a file.](https://docs-assets.developer.apple.com/published/e0ce932cdaeac8afdbeb8d36974c762e/combining-code-changes-in-a-source-control-repository-2%402x.png)
+![The Xcode merge conflict view showing a list of files to merge and highlighting the file with a conflict. The view shows the conflict and the button you use to select a resolution for it. The view also highlights the options to navigate between conflicts in a file.](/images/com.apple.Xcode/combining-code-changes-in-a-source-control-repository-2@2x.png)
 
 To resolve a conflict, click the question mark (?) for that conflict (that appears in the gutter between the left and right versions of the file) and select which option you want to use to resolve it:
 

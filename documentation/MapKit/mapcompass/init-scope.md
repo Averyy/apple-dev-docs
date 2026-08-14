@@ -23,7 +23,7 @@ Creates a new map compass with the scope you specify.
 
 ## Parameters
 
-- `scope`: A [`Namespace.ID`](https://developer.apple.com/documentation/SwiftUI/Namespace/ID) value that identifies a namespace and that you use to associate this control with a map instance.
+- `scope`: A [`Namespace.ID`](https://developer.apple.com/documentation/swiftui/namespace/id) value that identifies a namespace and that you use to associate this control with a map instance.
 
 
 ---

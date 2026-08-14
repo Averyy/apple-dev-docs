@@ -14,7 +14,7 @@ Some of the new app categories supersede existing ones, such as audio and commun
 
 In iOS 14 and later, the CarPlay framework includes templates that you can use to build your audio app’s user interface. To use these templates, include the `com.apple.developer.carplay-audio` entitlement.
 
-Before iOS 14, you built CarPlay-enabled audio apps using the Media Player framework, and included the `com.apple.developer.playable-content` entitlement. To support iOS 13 and earlier, use the [`Media Player`](https://developer.apple.com/documentation/MediaPlayer) framework and this entitlement. Your app will also work in iOS 14 and later.
+Before iOS 14, you built CarPlay-enabled audio apps using the Media Player framework, and included the `com.apple.developer.playable-content` entitlement. To support iOS 13 and earlier, use the [`Media Player`](https://developer.apple.com/documentation/mediaplayer) framework and this entitlement. Your app will also work in iOS 14 and later.
 
 Audio apps can use the CarPlay framework, the Media Player framework, or both. Include the applicable entitlements that match the frameworks you’re using. To be compatible with iOS 13 and earlier, as well as iOS 14 and later, specify keys for both entitlements in the entitlements file.
 
@@ -29,7 +29,7 @@ Audio apps can use the CarPlay framework, the Media Player framework, or both. I
 
 In iOS 14 and later, the CarPlay framework includes templates that you can use to build your communication app’s user interface. To use these templates, include the `com.apple.developer.carplay-communication` entitlement.
 
-Your communication app can use the CarPlay, [`SiriKit`](https://developer.apple.com/documentation/SiriKit), or [`CallKit`](https://developer.apple.com/documentation/CallKit) framework, or a combination of the three. Include the entitlements that match the frameworks you’re using. If you use the CarPlay framework, your app can’t present a custom user interface in iOS 13 or earlier. However, users can still interact with your app as they have in previous versions.
+Your communication app can use the CarPlay, [`SiriKit`](https://developer.apple.com/documentation/sirikit), or [`CallKit`](https://developer.apple.com/documentation/callkit) framework, or a combination of the three. Include the entitlements that match the frameworks you’re using. If you use the CarPlay framework, your app can’t present a custom user interface in iOS 13 or earlier. However, users can still interact with your app as they have in previous versions.
 
 The following example shows what you might add to a messaging app’s entitlements file, providing compatibility with iOS 13 and earlier, as well as iOS 14 and later:
 
@@ -40,7 +40,7 @@ The following example shows what you might add to a messaging app’s entitlemen
 <true/>
 ```
 
-If your CarPlay-enabled communication app includes VoIP features, provide support for [`INStartCallIntent`](https://developer.apple.com/documentation/Intents/INStartCallIntent). If the VoIP app targets iOS 14 or earlier, provide support for [`INStartAudioCallIntent`](https://developer.apple.com/documentation/Intents/INStartAudioCallIntent) and [`INSearchCallHistoryIntent`](https://developer.apple.com/documentation/Intents/INSearchCallHistoryIntent) in addition to [`INStartCallIntent`](https://developer.apple.com/documentation/Intents/INStartCallIntent).
+If your CarPlay-enabled communication app includes VoIP features, provide support for [`INStartCallIntent`](https://developer.apple.com/documentation/intents/instartcallintent). If the VoIP app targets iOS 14 or earlier, provide support for [`INStartAudioCallIntent`](https://developer.apple.com/documentation/intents/instartaudiocallintent) and [`INSearchCallHistoryIntent`](https://developer.apple.com/documentation/intents/insearchcallhistoryintent) in addition to [`INStartCallIntent`](https://developer.apple.com/documentation/intents/instartcallintent).
 
 ## See Also
 

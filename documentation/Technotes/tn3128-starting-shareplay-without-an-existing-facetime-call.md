@@ -6,15 +6,15 @@ Use the share sheet or group activity sharing controller to start SharePlay dire
 
 #### Overview
 
-With the [`Group Activities`](https://developer.apple.com/documentation/GroupActivities) framework in iOS 15.4 and iPadOS 15.4 and later, you can use the share sheet to start SharePlay experiences directly from your app without an existing FaceTime call.
+With the [`Group Activities`](https://developer.apple.com/documentation/groupactivities) framework in iOS 15.4 and iPadOS 15.4 and later, you can use the share sheet to start SharePlay experiences directly from your app without an existing FaceTime call.
 
 You can make this same SharePlay experience even better by registering a group activity on an item provider and passing the item provider to the share sheet. Then when you select SharePlay the FaceTime call starts with an activity.
 
-If you don’t use the share sheet, you can implement a custom user interface to bring up the [`GroupActivitySharingController`](https://developer.apple.com/documentation/GroupActivities/GroupActivitySharingController-ybcy) and start SharePlay directly from your app without a FaceTime call.
+If you don’t use the share sheet, you can implement a custom user interface to bring up the [`GroupActivitySharingController`](https://developer.apple.com/documentation/groupactivities/groupactivitysharingcontroller-ybcy) and start SharePlay directly from your app without a FaceTime call.
 
 #### Display the Shareplay Button in the Share Sheet
 
-An app doesn’t need to adopt any special APIs to display the SharePlay button in the share sheet. If the app has the [`com.apple.developer.group-session`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.group-session) entitlement, the share sheet displays the SharePlay button automatically. Simply present the share sheet as follows:
+An app doesn’t need to adopt any special APIs to display the SharePlay button in the share sheet. If the app has the [`com.apple.developer.group-session`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.group-session) entitlement, the share sheet displays the SharePlay button automatically. Simply present the share sheet as follows:
 
 ```swift
 let shareSheet = UIActivityViewController(activityItemsConfiguration: configuration)
@@ -24,7 +24,7 @@ present(shareSheet, animated: true)
 
 For example:
 
-![A screenshot of an app that displays the SharePlay button in the share sheet.](https://docs-assets.developer.apple.com/published/fbedfdd155ed9dc3885a86583274631f/tn3128-share_sheet%402x.png)
+![A screenshot of an app that displays the SharePlay button in the share sheet.](/images/com.apple.technotes/tn3128-share_sheet@2x.png)
 
 Tap the SharePlay button, and select a person in the people-picker. Then tap the FaceTime button to start a FaceTime call with SharePlay directly from within the app.
 
@@ -32,7 +32,7 @@ Tap the SharePlay button, and select a person in the people-picker. Then tap the
 
 Displaying the SharePlay button in the share sheet as just described allows you to initiate a FaceTime call without an activity to start. You must interact with the app again to pick the content to SharePlay.
 
-You can improve this same SharePlay experience by using  [`registerGroupActivity(_:)`](https://developer.apple.com/documentation/Foundation/NSItemProvider/registerGroupActivity(_:)) to register a group activity on the item provider, provide the item provider to the share sheet, and present the share sheet. That way, the FaceTime call starts with an activity.
+You can improve this same SharePlay experience by using  [`registerGroupActivity(_:)`](https://developer.apple.com/documentation/foundation/nsitemprovider/registergroupactivity(_:)) to register a group activity on the item provider, provide the item provider to the share sheet, and present the share sheet. That way, the FaceTime call starts with an activity.
 
 ```swift
 // Register your group activity.
@@ -49,11 +49,11 @@ present(shareSheet, animated: true)
 
 Here’s an example implementation:
 
-![A screenshot of an app that displays a group activity and the SharePlay button in the share sheet.](https://docs-assets.developer.apple.com/published/bb1be328149c63734d7665c294abaf82/tn3128-share_sheet_improved%402x.png)
+![A screenshot of an app that displays a group activity and the SharePlay button in the share sheet.](/images/com.apple.technotes/tn3128-share_sheet_improved@2x.png)
 
 #### Display the Shareplay Button Less Prominently
 
-Tune the presentation behavior of the SharePlay button in the share sheet using the [`allowsProminentActivity`](https://developer.apple.com/documentation/UIKit/UIActivityViewController/allowsProminentActivity) property of the  [`UIActivityViewController`](https://developer.apple.com/documentation/UIKit/UIActivityViewController). Just set `allowsProminentActivity` to `false` to display the SharePlay button less prominently in the share sheet actions list.
+Tune the presentation behavior of the SharePlay button in the share sheet using the [`allowsProminentActivity`](https://developer.apple.com/documentation/uikit/uiactivityviewcontroller/allowsprominentactivity) property of the  [`UIActivityViewController`](https://developer.apple.com/documentation/uikit/uiactivityviewcontroller). Just set `allowsProminentActivity` to `false` to display the SharePlay button less prominently in the share sheet actions list.
 
 ```swift
 let shareSheet = UIActivityViewController(activityItemsConfiguration: configuration)
@@ -64,11 +64,11 @@ shareSheet.allowsProminentActivity = false
 
 Here’s how it looks in the share sheet:
 
-![A screenshot of an app that displays the SharePlay button less prominently in the share sheet.](https://docs-assets.developer.apple.com/published/c501f3cd12734c3c4af57a2fcf9a7036/tn3128-share_sheet_less_prominent%402x.png)
+![A screenshot of an app that displays the SharePlay button less prominently in the share sheet.](/images/com.apple.technotes/tn3128-share_sheet_less_prominent@2x.png)
 
 #### Hide the Shareplay Button in the Share Sheet
 
-If you have some content that isn’t integrated with SharePlay, hide the SharePlay button in the share sheet. Set the [`excludedActivityTypes`](https://developer.apple.com/documentation/UIKit/UIActivityViewController/excludedActivityTypes) property on the `UIActivityViewController` to exclude the SharePlay activity type.
+If you have some content that isn’t integrated with SharePlay, hide the SharePlay button in the share sheet. Set the [`excludedActivityTypes`](https://developer.apple.com/documentation/uikit/uiactivityviewcontroller/excludedactivitytypes) property on the `UIActivityViewController` to exclude the SharePlay activity type.
 
 ```swift
 let shareSheet = UIActivityViewController(activityItemsConfiguration: configuration)

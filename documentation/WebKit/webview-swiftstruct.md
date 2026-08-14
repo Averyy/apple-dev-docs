@@ -21,7 +21,7 @@ A view that displays some web content.
 
 #### Overview
 
-Present HTML, CSS, and JavaScript content alongside your app’s native views with [`WebView`](webview-swift.struct.md). Specify web content with a [`URL`](https://developer.apple.com/documentation/Foundation/URL) when using the [`init(url:)`](webview-swift.struct/init(url:).md) initializer, or with a [`WebPage`](webpage.md) when using the [`init(_:)`](webview-swift.struct/init(_:).md) initializer, which allows you to fully control the browsing experience. Any updates to the page propagate the information to the view.
+Present HTML, CSS, and JavaScript content alongside your app’s native views with [`WebView`](webview-swift.struct.md). Specify web content with a [`URL`](https://developer.apple.com/documentation/foundation/url) when using the [`init(url:)`](webview-swift.struct/init(url:).md) initializer, or with a [`WebPage`](webpage.md) when using the [`init(_:)`](webview-swift.struct/init(_:).md) initializer, which allows you to fully control the browsing experience. Any updates to the page propagate the information to the view.
 
 [`WebView`](webview-swift.struct.md) provides a complete browsing experience, including the ability to navigate between different webpages using links, forward and back buttons, and more. When a person clicks a link in your content, the view acts like a browser and displays the content at that link. To customize navigation, use a [`WebPage`](webpage.md) with your [`WebView`](webview-swift.struct.md) and customize the [`WebPage.Configuration`](webpage/configuration.md), or create a new type that conforms to [`WebPage.NavigationDeciding`](webpage/navigationdeciding.md).
 
@@ -50,22 +50,22 @@ struct ContentView: View {
 }
 ```
 
-A [`WebView`](webview-swift.struct.md) is a scrollable view, and behaves similarly to [`ScrollView`](https://developer.apple.com/documentation/SwiftUI/ScrollView). Customize scrolling in a [`WebView`](webview-swift.struct.md) with:
+A [`WebView`](webview-swift.struct.md) is a scrollable view, and behaves similarly to [`ScrollView`](https://developer.apple.com/documentation/swiftui/scrollview). Customize scrolling in a [`WebView`](webview-swift.struct.md) with:
 
-- [`scrollBounceBehavior(_:axes:)`](https://developer.apple.com/documentation/SwiftUI/View/scrollBounceBehavior(_:axes:))
-- [`webViewScrollInputBehavior(_:for:)`](https://developer.apple.com/documentation/SwiftUI/View/webViewScrollInputBehavior(_:for:))
-- [`webViewScrollPosition(_:)`](https://developer.apple.com/documentation/SwiftUI/View/webViewScrollPosition(_:))
-- [`webViewOnScrollGeometryChange(for:of:action:)`](https://developer.apple.com/documentation/SwiftUI/View/webViewOnScrollGeometryChange(for:of:action:))
+- [`scrollBounceBehavior(_:axes:)`](https://developer.apple.com/documentation/swiftui/view/scrollbouncebehavior(_:axes:))
+- [`webViewScrollInputBehavior(_:for:)`](https://developer.apple.com/documentation/swiftui/view/webviewscrollinputbehavior(_:for:))
+- [`webViewScrollPosition(_:)`](https://developer.apple.com/documentation/swiftui/view/webviewscrollposition(_:))
+- [`webViewOnScrollGeometryChange(for:of:action:)`](https://developer.apple.com/documentation/swiftui/view/webviewonscrollgeometrychange(for:of:action:))
 
 Customize [`WebView`](webview-swift.struct.md) display and interactions with view modifiers, such as:
 
-- [`webViewBackForwardNavigationGestures(_:)`](https://developer.apple.com/documentation/SwiftUI/View/webViewBackForwardNavigationGestures(_:))
-- [`webViewMagnificationGestures(_:)`](https://developer.apple.com/documentation/SwiftUI/View/webViewMagnificationGestures(_:))
-- [`webViewLinkPreviews(_:)`](https://developer.apple.com/documentation/SwiftUI/View/webViewLinkPreviews(_:))
-- [`webViewTextSelection(_:)`](https://developer.apple.com/documentation/SwiftUI/View/webViewTextSelection(_:))
-- [`webViewElementFullscreenBehavior(_:)`](https://developer.apple.com/documentation/SwiftUI/View/webViewElementFullscreenBehavior(_:))
-- [`webViewContextMenu(menu:)`](https://developer.apple.com/documentation/SwiftUI/View/webViewContextMenu(menu:))
-- [`webViewContentBackground(_:)`](https://developer.apple.com/documentation/SwiftUI/View/webViewContentBackground(_:))
+- [`webViewBackForwardNavigationGestures(_:)`](https://developer.apple.com/documentation/swiftui/view/webviewbackforwardnavigationgestures(_:))
+- [`webViewMagnificationGestures(_:)`](https://developer.apple.com/documentation/swiftui/view/webviewmagnificationgestures(_:))
+- [`webViewLinkPreviews(_:)`](https://developer.apple.com/documentation/swiftui/view/webviewlinkpreviews(_:))
+- [`webViewTextSelection(_:)`](https://developer.apple.com/documentation/swiftui/view/webviewtextselection(_:))
+- [`webViewElementFullscreenBehavior(_:)`](https://developer.apple.com/documentation/swiftui/view/webviewelementfullscreenbehavior(_:))
+- [`webViewContextMenu(menu:)`](https://developer.apple.com/documentation/swiftui/view/webviewcontextmenu(menu:))
+- [`webViewContentBackground(_:)`](https://developer.apple.com/documentation/swiftui/view/webviewcontentbackground(_:))
 
 To further customize and control a web interaction, connect a [`WebView`](webview-swift.struct.md) to a [`WebPage`](webpage.md). The following example demonstrates this by configuring the view’s navigation title to be the webpage’s title, which the system updates automatically because [`WebPage`](webpage.md) is an `Observable` type:
 
@@ -106,9 +106,9 @@ You can only bind a [`WebPage`](webpage.md) to a single [`WebView`](webview-swif
 ## Relationships
 
 ### Conforms To
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
-- [View](../SwiftUI/View.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
+- [View](../swiftui/view.md)
 
 ## See Also
 

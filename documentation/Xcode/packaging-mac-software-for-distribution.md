@@ -119,15 +119,15 @@ If you’re creating an app for the Mac App Store, submit your signed installer 
 
 #### Notarize Your Product
 
-If you distribute your product directly, notarize the file you intend to distribute to your users. For more information, see [`Customizing the notarization workflow`](https://developer.apple.com/documentation/Security/customizing-the-notarization-workflow). Skip the “Export a package for notarization” section because you already have the file that you want to submit.
+If you distribute your product directly, notarize the file you intend to distribute to your users. For more information, see [`Customizing the notarization workflow`](https://developer.apple.com/documentation/security/customizing-the-notarization-workflow). Skip the “Export a package for notarization” section because you already have the file that you want to submit.
 
 If you distribute your product using nested containers, only notarize the outermost container. For example, if you have an app inside an installer package on a disk image, sign the app, sign the installer package, and sign the disk image, but only notarize the disk image.
 
-If you use a third-party installer tool, refer to [`Customizing the notarization workflow`](https://developer.apple.com/documentation/Security/customizing-the-notarization-workflow).
+If you use a third-party installer tool, refer to [`Customizing the notarization workflow`](https://developer.apple.com/documentation/security/customizing-the-notarization-workflow).
 
 #### Staple Your Product
 
-Once you’ve notarized your product, staple the resulting ticket to the file you intend to distribute. For information about how to do this for an app within a zip archive, see “Staple the Ticket to Your Distribution” in [`Customizing the notarization workflow`](https://developer.apple.com/documentation/Security/customizing-the-notarization-workflow). The other common container formats, installer packages and disk images, support stapling directly.  For example, to staple a ticket to a disk image:
+Once you’ve notarized your product, staple the resulting ticket to the file you intend to distribute. For information about how to do this for an app within a zip archive, see “Staple the Ticket to Your Distribution” in [`Customizing the notarization workflow`](https://developer.apple.com/documentation/security/customizing-the-notarization-workflow). The other common container formats, installer packages and disk images, support stapling directly.  For example, to staple a ticket to a disk image:
 
 ```None
 % xcrun stapler staple FlyingAnimals.dmg
@@ -146,7 +146,7 @@ For products that you distribute directly, test that the product works correctly
 
 For products that you distribute as zip files or disk image files, consider these additional scenarios:
 
-- The person opens your app without moving it to a different location. In this situation, when the person first opens your app, Gatekeeper randomizes its path as returned from [`bundleURL`](https://developer.apple.com/documentation/Foundation/Bundle/bundleURL) and other API. This measure stops your app from accessing resources outside its bundle (and therefore not sealed by its code signature) using a relative path, as an attacker could control those resources to change your app’s behavior. Gatekeeper only performs this *translocation* on first launch, so test the behavior on a subsequent launch too.
+- The person opens your app without moving it to a different location. In this situation, when the person first opens your app, Gatekeeper randomizes its path as returned from [`bundleURL`](https://developer.apple.com/documentation/foundation/bundle/bundleurl) and other API. This measure stops your app from accessing resources outside its bundle (and therefore not sealed by its code signature) using a relative path, as an attacker could control those resources to change your app’s behavior. Gatekeeper only performs this *translocation* on first launch, so test the behavior on a subsequent launch too.
 - The person moves your app to a different location, then launches it. Gatekeeper doesn’t translocate your app’s path in this case.
 
 ## See Also

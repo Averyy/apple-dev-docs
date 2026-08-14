@@ -25,20 +25,20 @@ struct WidgetTexture
 ## Relationships
 
 ### Conforms To
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 
 - [Updating your widgets for visionOS](updating-your-widgets-for-visionos.md)
   Choose widget styles specific to visionOS, support recessed and elevated appearances, and add proximity awareness to your widget.
 - [func widgetTexture(WidgetTexture) -> some WidgetConfiguration
-](../SwiftUI/WidgetConfiguration/widgetTexture(_:).md)
+](../swiftui/widgetconfiguration/widgettexture(_:).md)
   Specifies the widget texture for this widget.
 - [func supportedMountingStyles([WidgetMountingStyle]) -> some WidgetConfiguration
-](../SwiftUI/WidgetConfiguration/supportedMountingStyles(_:).md)
+](../swiftui/widgetconfiguration/supportedmountingstyles(_:).md)
   Specifies the mounting style for this widget.
 - [struct WidgetMountingStyle](widgetmountingstyle.md)
   Values that define the widget’s supported mounting style.

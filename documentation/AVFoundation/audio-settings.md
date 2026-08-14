@@ -7,11 +7,11 @@ Configure audio processing settings using standard key and value constants.
 ## Topics
 
 ### Formats
-- [class AVAudioFormat](../AVFAudio/AVAudioFormat.md)
+- [class AVAudioFormat](../avfaudio/avaudioformat.md)
   An object that describes the representation of an audio format.
-- [class AVAudioChannelLayout](../AVFAudio/AVAudioChannelLayout.md)
+- [class AVAudioChannelLayout](../avfaudio/avaudiochannellayout.md)
   An object that describes the roles of a set of audio channels.
-- [let AVChannelLayoutKey: String](../AVFAudio/AVChannelLayoutKey.md)
+- [let AVChannelLayoutKey: String](../avfaudio/avchannellayoutkey.md)
 - [Linear PCM format settings](linear-pcm-format-settings.md)
   The audio settings that apply to linear PCM audio formats.
 - [Format settings](format-settings.md)
@@ -19,7 +19,7 @@ Configure audio processing settings using standard key and value constants.
 ### Settings
 - [Sample rate conversion settings](sample-rate-conversion-settings.md)
   The constants that define sample rate converter audio quality settings.
-- [enum AVAudioQuality](../AVFAudio/AVAudioQuality.md)
+- [enum AVAudioQuality](../avfaudio/avaudioquality.md)
   The values that specify the sample rate audio quality for encoding and conversion.
 - [Encoder settings](encoder-settings.md)
   The constants that define the audio encoder settings for the audio recorder class.
@@ -28,7 +28,7 @@ Configure audio processing settings using standard key and value constants.
 ### Constants
 - [Encoder bit rate strategy values](encoder-bit-rate-strategy-values.md)
   The constants that represent the possible bit rate strategy values.
-- [var AVAUDIOENGINE_HAVE_AUAUDIOUNIT: Int32](../AVFAudio/AVAUDIOENGINE_HAVE_AUAUDIOUNIT.md)
+- [var AVAUDIOENGINE_HAVE_AUAUDIOUNIT: Int32](../avfaudio/avaudioengine_have_auaudiounit.md)
 
 ## See Also
 

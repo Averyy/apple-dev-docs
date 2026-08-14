@@ -30,7 +30,7 @@ This constant defines an activation function that returns values using the logis
 
 The following illustrates the output that the activation function generates from inputs in the range `-10...10`:
 
-![Graph that shows input values for the activation function on horizontal axis and its output values on vertical axis. ](https://docs-assets.developer.apple.com/published/9d01fae6d0725bbdc18882310bd0832a/media-3654652%402x.png)
+![Graph that shows input values for the activation function on horizontal axis and its output values on vertical axis. ](/images/com.apple.accelerate/media-3654652@2x.png)
 
 ## See Also
 

@@ -27,8 +27,8 @@ CVPixelBufferPool is a utility object for managing a recyclable set of [`CVPixel
 ## Relationships
 
 ### Conforms To
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
 
 ## See Also
 

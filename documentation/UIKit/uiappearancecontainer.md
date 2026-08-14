@@ -41,7 +41,7 @@ func setProperty(property: PropertyType, forAxis1 axis1: IntegerType, axis2: Int
 
 You may have no axes or as many as you like for any property.
 
-The property type may be any standard iOS type: `id`, [`NSInteger`](https://developer.apple.com/documentation/ObjectiveC/NSInteger), [`NSUInteger`](https://developer.apple.com/documentation/ObjectiveC/NSUInteger), [`CGFloat`](https://developer.apple.com/documentation/CoreFoundation/CGFloat-swift.struct), [`CGPoint`](https://developer.apple.com/documentation/CoreFoundation/CGPoint), [`CGSize`](https://developer.apple.com/documentation/CoreFoundation/CGSize), [`CGRect`](https://developer.apple.com/documentation/CoreFoundation/CGRect), [`UIEdgeInsets`](uiedgeinsets.md) or [`UIOffset`](uioffset.md). Axis parameter values must be either [`NSInteger`](https://developer.apple.com/documentation/ObjectiveC/NSInteger) or [`NSUInteger`](https://developer.apple.com/documentation/ObjectiveC/NSUInteger). UIKit throws an exception if other types are used in the axes.
+The property type may be any standard iOS type: `id`, [`NSInteger`](https://developer.apple.com/documentation/objectivec/nsinteger), [`NSUInteger`](https://developer.apple.com/documentation/objectivec/nsuinteger), [`CGFloat`](https://developer.apple.com/documentation/corefoundation/cgfloat-swift.struct), [`CGPoint`](https://developer.apple.com/documentation/corefoundation/cgpoint), [`CGSize`](https://developer.apple.com/documentation/corefoundation/cgsize), [`CGRect`](https://developer.apple.com/documentation/corefoundation/cgrect), [`UIEdgeInsets`](uiedgeinsets.md) or [`UIOffset`](uioffset.md). Axis parameter values must be either [`NSInteger`](https://developer.apple.com/documentation/objectivec/nsinteger) or [`NSUInteger`](https://developer.apple.com/documentation/objectivec/nsuinteger). UIKit throws an exception if other types are used in the axes.
 
 For example, [`UIBarButtonItem`](uibarbuttonitem.md) defines these methods:
 
@@ -52,7 +52,7 @@ For example, [`UIBarButtonItem`](uibarbuttonitem.md) defines these methods:
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 ### Conforming Types
 - [UIActionSheet](uiactionsheet.md)
 - [UIActivityIndicatorView](uiactivityindicatorview.md)

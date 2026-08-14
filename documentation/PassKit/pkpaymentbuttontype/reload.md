@@ -23,7 +23,7 @@ case reload
 
 This button looks like:
 
-![A button with the text “Reload with” and the Apple Pay logo.](https://docs-assets.developer.apple.com/published/98baff5273816b9fd3e132c7db9c6ee7/media-3667472%402x.png)
+![A button with the text “Reload with” and the Apple Pay logo.](/images/com.apple.passkit/media-3667472@2x.png)
 
 For design guidance, see [`Human Interface Guidelines > Apple Pay > Buttons and Marks`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/apple-pay/overview/buttons-and-marks/).
 

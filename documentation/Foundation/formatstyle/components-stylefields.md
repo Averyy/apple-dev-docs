@@ -26,7 +26,7 @@ A date format style that uses the specified style and fields.
 
 #### Discussion
 
-Use this type method when the call point allows the use of [`Date.ComponentsFormatStyle`](date/componentsformatstyle.md). You typically do this when calling the [`formatted(_:)`](https://developer.apple.com/documentation/Swift/Range/formatted(_:)) method of a `Range<Date>`.
+Use this type method when the call point allows the use of [`Date.ComponentsFormatStyle`](date/componentsformatstyle.md). You typically do this when calling the [`formatted(_:)`](https://developer.apple.com/documentation/swift/range/formatted(_:)) method of a `Range<Date>`.
 
 The following example creates a 120-day date range, and then uses a [`Date.ComponentsFormatStyle`](date/componentsformatstyle.md) to express this as a count of weeks and days:
 

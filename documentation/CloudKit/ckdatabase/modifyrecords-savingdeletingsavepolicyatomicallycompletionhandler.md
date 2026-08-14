@@ -23,12 +23,12 @@ func modifyRecords(saving recordsToSave: [CKRecord], deleting recordIDsToDelete:
 
 #### Discussion
 
-The completion handler takes a single [`Result`](https://developer.apple.com/documentation/Swift/Result) parameter that contains either a tuple, or an error if the request fails. For example, when the network is unavailable or the device doesn’t have an active iCloud account, or when `atomically` is [`true`](https://developer.apple.com/documentation/Swift/true) and one or more of the specified changes fail.
+The completion handler takes a single [`Result`](https://developer.apple.com/documentation/swift/result) parameter that contains either a tuple, or an error if the request fails. For example, when the network is unavailable or the device doesn’t have an active iCloud account, or when `atomically` is [`true`](https://developer.apple.com/documentation/swift/true) and one or more of the specified changes fail.
 
 When present, the tuple contains the following named elements:
 
-- **`saveResults`**: A dictionary of saved records. The dictionary uses the identifiers of the records you specify in `recordsToSave` as its keys. The value of each key is a [`Result`](https://developer.apple.com/documentation/Swift/Result) that contains either the corresponding modified record (as it appears on the server), or an error that describes why CloudKit can’t modify that record.
-- **`deleteResults`**: A dictionary of deleted records. The dictionary uses the identifiers you specify in `recordIDsToDelete` as its keys. The value of each key is a [`Result`](https://developer.apple.com/documentation/Swift/Result) that contains either [`Void`](https://developer.apple.com/documentation/Swift/Void) to indicate a successful deletion, or an error that describes why CloudKit can’t delete that record.
+- **`saveResults`**: A dictionary of saved records. The dictionary uses the identifiers of the records you specify in `recordsToSave` as its keys. The value of each key is a [`Result`](https://developer.apple.com/documentation/swift/result) that contains either the corresponding modified record (as it appears on the server), or an error that describes why CloudKit can’t modify that record.
+- **`deleteResults`**: A dictionary of deleted records. The dictionary uses the identifiers you specify in `recordIDsToDelete` as its keys. The value of each key is a [`Result`](https://developer.apple.com/documentation/swift/result) that contains either [`Void`](https://developer.apple.com/documentation/swift/void) to indicate a successful deletion, or an error that describes why CloudKit can’t delete that record.
 
 Deleting records may cause additional deletions if other records in the database reference the deleted records. CloudKit doesn’t provide the identifiers of any additional records it deletes. For information on a more configurable way to modify records, see [`CKModifyRecordsOperation`](ckmodifyrecordsoperation.md).
 
@@ -37,7 +37,7 @@ Deleting records may cause additional deletions if other records in the database
 - `recordsToSave`: The records to save.
 - `recordIDsToDelete`: The identifiers of the records to permanently delete.
 - `savePolicy`: The policy to use when modifying existing records. For possible values, see [`CKModifyRecordsOperation.RecordSavePolicy`](ckmodifyrecordsoperation/recordsavepolicy.md).
-- `atomically`: If [`true`](https://developer.apple.com/documentation/Swift/true), the entire operation fails if CloudKit can’t modify one or more of the specified records; otherwise, CloudKit reports individual failures in the returned tuple. Atomic changes are only applicable in record zones that have the [`atomic`](ckrecordzone/capabilities-swift.struct/atomic.md) capability.
+- `atomically`: If [`true`](https://developer.apple.com/documentation/swift/true), the entire operation fails if CloudKit can’t modify one or more of the specified records; otherwise, CloudKit reports individual failures in the returned tuple. Atomic changes are only applicable in record zones that have the [`atomic`](ckrecordzone/capabilities-swift.struct/atomic.md) capability.
 - `completionHandler`: The closure to execute after CloudKit processes the changes.
 
 ## See Also

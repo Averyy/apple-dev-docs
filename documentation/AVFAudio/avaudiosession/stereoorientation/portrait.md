@@ -21,7 +21,7 @@ case portrait
 
 #### Discussion
 
-![An image showing the stereo orientation for the front and back data source.](https://docs-assets.developer.apple.com/published/0d945cf00b923a25f17cded9e51784cc/media-3633699%402x.png)
+![An image showing the stereo orientation for the front and back data source.](/images/com.apple.avfaudio/media-3633699@2x.png)
 
 ## See Also
 

@@ -31,14 +31,14 @@ The flash transition filter uses the following properties:
 
 - **`inputImage`**: The starting image with the type [`CIImage`](ciimage.md).
 - **`targetImage`**: The ending image with the type [`CIImage`](ciimage.md).
-- **`center`**: A set of coordinates marking the center of the image as a [`CGPoint`](https://developer.apple.com/documentation/CoreFoundation/CGPoint).
-- **`extent`**: A [`CGRect`](https://developer.apple.com/documentation/CoreFoundation/CGRect) representing the size of the rounded rectangle.
+- **`center`**: A set of coordinates marking the center of the image as a [`CGPoint`](https://developer.apple.com/documentation/corefoundation/cgpoint).
+- **`extent`**: A [`CGRect`](https://developer.apple.com/documentation/corefoundation/cgrect) representing the size of the rounded rectangle.
 - **`color`**: A [`CIColor`](cicolor.md) representing the color of the flash effect.
-- **`time`**: A `float` representing the parametric time of the transition from start (at time 0) to end (at time 1) as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
-- **`maxStiriationRadius`**: A `float` representing the radius of the light rays emanating from the flash as a [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
-- **`striationStrength`**: A `float` representing the strength of the light rays emanating from the flash as a [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
-- **`striationContrast`**: A `float` representing the contrast that’s added to each output pixel as a [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
-- **`fadeThreshold`**: A `float` representing the amount of fade between the flash and the target image as a [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+- **`time`**: A `float` representing the parametric time of the transition from start (at time 0) to end (at time 1) as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
+- **`maxStiriationRadius`**: A `float` representing the radius of the light rays emanating from the flash as a [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
+- **`striationStrength`**: A `float` representing the strength of the light rays emanating from the flash as a [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
+- **`striationContrast`**: A `float` representing the contrast that’s added to each output pixel as a [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
+- **`fadeThreshold`**: A `float` representing the amount of fade between the flash and the target image as a [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
 
 The following code creates a filter that transitions from the input image with a large flash of light and fades to the target image.
 
@@ -59,7 +59,7 @@ func flash (inputImage: CIImage, targetImage: CIImage) -> CIImage {
 }
 ```
 
-![Three photographs. In the photo on the left, there are multiple small purple flowers photographed close up with good lighting, and the background has a slight blur. In the photograph on the right is a tall building with two trees directly in front of the building. In the center photograph, a flash transition filter is applied, resulting in a still photo of the moving transition. The left photograph is overlaid on the photo on the right while transitioning by creating a flash of light and slowly fading to the city image.](https://docs-assets.developer.apple.com/published/1cc800de07fe8e9fc18f3a1e056ae18c/media-3616427%402x.png)
+![Three photographs. In the photo on the left, there are multiple small purple flowers photographed close up with good lighting, and the background has a slight blur. In the photograph on the right is a tall building with two trees directly in front of the building. In the center photograph, a flash transition filter is applied, resulting in a still photo of the moving transition. The left photograph is overlaid on the photo on the right while transitioning by creating a flash of light and slowly fading to the city image.](/images/com.apple.coreimage/media-3616427@2x.png)
 
 ## See Also
 

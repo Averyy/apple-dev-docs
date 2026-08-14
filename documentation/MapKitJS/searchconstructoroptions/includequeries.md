@@ -16,7 +16,7 @@ includeQueries?: boolean;
 
 #### Discussion
 
-This option only applies to search autocomplete. For example, if you send *cof* to [`autocomplete(query, options)`](search/autocomplete.md), the search returns only *coffee*. If you send *cof* to [`autocomplete(query, options)`](search/autocomplete.md) while `includeQueries` is `false`, the search returns only addresses and points of interest (given that the setting for those options is `true`) related to *cof* and not necessarily related to *coffee*.
+This option only applies to search autocomplete. For example, if you send *cof* to [`autocomplete()`](search/autocomplete.md), the search returns only *coffee*. If you send *cof* to [`autocomplete()`](search/autocomplete.md) while `includeQueries` is `false`, the search returns only addresses and points of interest (given that the setting for those options is `true`) related to *cof* and not necessarily related to *coffee*.
 
 The default value is `true`.
 

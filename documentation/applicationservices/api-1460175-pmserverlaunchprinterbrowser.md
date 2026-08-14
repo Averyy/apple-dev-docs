@@ -24,8 +24,8 @@ This function displays the standard printer browser to allow the user to create 
 
 ## Parameters
 
-- `server`: The print server to browse. Pass   to specify the local print server. Currently, you may specify only the local print server.
-- `options`: This parameter is reserved for future use. At the present time, pass  . Passing   presents the printer browser in the default fashion.
+- `server`: The print server to browse. Pass `kPMServerLocal` to specify the local print server. Currently, you may specify only the local print server.
+- `options`: This parameter is reserved for future use. At the present time, pass `NULL`. Passing `NULL` presents the printer browser in the default fashion.
 
 ## See Also
 

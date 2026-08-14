@@ -29,7 +29,9 @@ If you call this function after initiating a print job, the change is ignored fo
 ## Parameters
 
 - `printSettings`: The print settings object whose duplex mode you want to set.
-- `duplexSetting`: See   for a full description of the constants you can use to specify the new setting.
+- `duplexSetting`: The new duplex mode setting. Possible values include: - `kPMDuplexNone` (one-sided printing)
+- `kPMDuplexNoTumble` (two-sided printing)
+- `kPMDuplexTumble` (two-sided printing with tumbling) See [`PMDuplexMode`](pmduplexmode.md) for a full description of the constants you can use to specify the new setting.
 
 ## See Also
 

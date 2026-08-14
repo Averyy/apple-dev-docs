@@ -13,7 +13,7 @@ You can provide your readers the option to sign up for your publication’s news
 - Add the newsletter sign-up element to your article.
 - Use components, component styles, component text styles, and layout objects to customize the display of the newsletter sign-up element.
 
-![A screenshot of an Apple News article with a newsletter sign-up element.](https://docs-assets.developer.apple.com/published/38d8b271e8a97289d233ba3ca6f834fd/media-4285520%402x.png)
+![A screenshot of an Apple News article with a newsletter sign-up element.](/images/com.apple.applenews/media-4285520@2x.png)
 
 ##### Create Component Layout Objects for Newsletter Sign Up
 

@@ -12,7 +12,7 @@ You can add effects to images by applying Core Image filters to [`CIImage`](ciim
 2. Add the bloom filter to accentuate highlights.
 3. Use the Lanczos scale filter to scale an image down.
 
-![Photo of a waterwheel filtered using sepia tone, bloom, and Lanczos scale filters](https://docs-assets.developer.apple.com/published/1b1087fac0f14de1442455778e6212b1/media-2955144%402x.png)
+![Photo of a waterwheel filtered using sepia tone, bloom, and Lanczos scale filters](/images/com.apple.coreimage/media-2955144@2x.png)
 
 ##### Create a Context
 
@@ -32,7 +32,7 @@ CIImage* originalCIImage = [CIImage imageWithContentsOfURL:imageURL];
 self.imageView.image = [UIImage imageWithCIImage:originalCIImage];
 ```
 
-The [`CIImage`](ciimage.md) object isn’t itself a displayable image, but rather image data. To display it, you must convert it to another type, such as [`UIImage`](https://developer.apple.com/documentation/UIKit/UIImage).
+The [`CIImage`](ciimage.md) object isn’t itself a displayable image, but rather image data. To display it, you must convert it to another type, such as [`UIImage`](https://developer.apple.com/documentation/uikit/uiimage).
 
 ##### Apply Built in Core Image Filters
 
@@ -57,7 +57,7 @@ To pass the image through the filter, call the sepia filter function.
 CIImage* sepiaCIImage = [self sepiaFilterImage:originalCIImage withIntensity:0.9];
 ```
 
-You can check the intermediate result at any point in the filter chain by converting from [`CIImage`](ciimage.md) to a [`UIImage`](https://developer.apple.com/documentation/UIKit/UIImage). You can then assign this [`UIImage`](https://developer.apple.com/documentation/UIKit/UIImage) to a [`UIImageView`](https://developer.apple.com/documentation/UIKit/UIImageView) for display.
+You can check the intermediate result at any point in the filter chain by converting from [`CIImage`](ciimage.md) to a [`UIImage`](https://developer.apple.com/documentation/uikit/uiimage). You can then assign this [`UIImage`](https://developer.apple.com/documentation/uikit/uiimage) to a [`UIImageView`](https://developer.apple.com/documentation/uikit/uiimageview) for display.
 
 ```swift
 _imageView.image = [UIImage imageWithCIImage:sepiaCIImage];
@@ -77,11 +77,11 @@ The bloom filter accentuates the highlights of an image. You can apply it as par
 }
 ```
 
-Like the sepia filter, the intensity of the bloom filter’s effect ranges between 0 and 1, with 1 being the most intense effect. The bloom filter has an additional r`adius` parameter to determine how much the glowing regions expand. Experiment with a range to values to fine tune the effect, or assign the input parameter to a control like a [`UISlider`](https://developer.apple.com/documentation/UIKit/UISlider) to allow your users to tweak its values.
+Like the sepia filter, the intensity of the bloom filter’s effect ranges between 0 and 1, with 1 being the most intense effect. The bloom filter has an additional r`adius` parameter to determine how much the glowing regions expand. Experiment with a range to values to fine tune the effect, or assign the input parameter to a control like a [`UISlider`](https://developer.apple.com/documentation/uikit/uislider) to allow your users to tweak its values.
 
 > **Note**:  The [`gloom()`](cifilter-swift.class/gloom().md) filter performs the opposite effect.
 
-To display the output, convert the [`CIImage`](ciimage.md) to a [`UIImage`](https://developer.apple.com/documentation/UIKit/UIImage).
+To display the output, convert the [`CIImage`](ciimage.md) to a [`UIImage`](https://developer.apple.com/documentation/uikit/uiimage).
 
 ```swift
 CIImage* bloomCIImage = [self bloomFilterImage:sepiaCIImage withIntensity:1 radius:10];
@@ -111,7 +111,7 @@ Like other built-in filters, the [`lanczosScaleTransform()`](cifilter-swift.clas
 }
 ```
 
-> ❗ **Important**:  To optimize computation, Core Image doesn’t actually render any intermediate [`CIImage`](ciimage.md) result until you force the [`CIImage`](ciimage.md) to display its content onscreen, as you might do using [`UIImageView`](https://developer.apple.com/documentation/UIKit/UIImageView).
+> ❗ **Important**:  To optimize computation, Core Image doesn’t actually render any intermediate [`CIImage`](ciimage.md) result until you force the [`CIImage`](ciimage.md) to display its content onscreen, as you might do using [`UIImageView`](https://developer.apple.com/documentation/uikit/uiimageview).
 
 ```swift
 _imageView.image = [UIImage imageWithCIImage:scaledCIImage];

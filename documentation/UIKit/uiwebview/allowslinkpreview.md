@@ -18,11 +18,11 @@ var allowsLinkPreview: Bool { get set }
 
 #### Discussion
 
-This property is available on devices that support 3D Touch. Default value is [`false`](https://developer.apple.com/documentation/Swift/false).
+This property is available on devices that support 3D Touch. Default value is [`false`](https://developer.apple.com/documentation/swift/false).
 
-If you set this value to [`true`](https://developer.apple.com/documentation/Swift/true) for a web view, users (with devices that support 3D Touch) can preview link destinations, and can preview detected data such as addresses, by pressing on links. Such previews are known to users as *peeks*. If a user presses deeper, the preview navigates (or *pops*, in user terminology) to the destination. Because pop navigation switches the user from your app to Safari, it is opt-in, by way of this property, rather default behavior for this class.
+If you set this value to [`true`](https://developer.apple.com/documentation/swift/true) for a web view, users (with devices that support 3D Touch) can preview link destinations, and can preview detected data such as addresses, by pressing on links. Such previews are known to users as *peeks*. If a user presses deeper, the preview navigates (or *pops*, in user terminology) to the destination. Because pop navigation switches the user from your app to Safari, it is opt-in, by way of this property, rather default behavior for this class.
 
-If you want to support link preview but also want to keep users within your app, you can switch from using the [`UIWebView`](uiwebview.md) class to the [`SFSafariViewController`](https://developer.apple.com/documentation/SafariServices/SFSafariViewController) class. If you are using a web view as an in-app browser, making this change is best practice. The Safari view controller class automatically supports link previews.
+If you want to support link preview but also want to keep users within your app, you can switch from using the [`UIWebView`](uiwebview.md) class to the [`SFSafariViewController`](https://developer.apple.com/documentation/safariservices/sfsafariviewcontroller) class. If you are using a web view as an in-app browser, making this change is best practice. The Safari view controller class automatically supports link previews.
 
 ## See Also
 

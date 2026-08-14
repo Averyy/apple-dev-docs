@@ -21,7 +21,7 @@ struct ReverbComponent
 
 #### Overview
 
-Bring your spatial audio to life by setting a reverb appropriate for your immersive environment. In visionOS, an acoustic simulation of a person’s real environment reverberates the spatial audio sources by default. When presenting your content in [`progressive`](https://developer.apple.com/documentation/SwiftUI/ImmersionStyle/progressive) and [`full`](https://developer.apple.com/documentation/SwiftUI/ImmersionStyle/full) immersive spaces, consider setting a reverb component to make your spatial audio sound like it exists within the environment that your visuals represent.
+Bring your spatial audio to life by setting a reverb appropriate for your immersive environment. In visionOS, an acoustic simulation of a person’s real environment reverberates the spatial audio sources by default. When presenting your content in [`progressive`](https://developer.apple.com/documentation/swiftui/immersionstyle/progressive) and [`full`](https://developer.apple.com/documentation/swiftui/immersionstyle/full) immersive spaces, consider setting a reverb component to make your spatial audio sound like it exists within the environment that your visuals represent.
 
 For example, a desert, living room, and concert hall each have unique acoustical characteristics. When the visuals and acoustic properties of sounds in your content are congruent, the environment becomes more effective as a whole.
 
@@ -54,16 +54,16 @@ if let violin = try? await AudioFileResource(named: "violin") {
 
 Use the [`reverbLevel`](spatialaudiocomponent/reverblevel.md) property to adjust the level of audio you send to the spatial modeler. Use the [`directLevel`](spatialaudiocomponent/directlevel.md) property to adjust the level of audio you send directly to a person’s ears, without additional reverberation. Use the [`directivity`](spatialaudiocomponent/directivity.md) property to define the pattern that disperses sound into the acoustic environment.
 
-In macOS and iOS, only one `ReverbComponent` can be active at a time per [`ARView`](arview.md) or [`RealityView`](realityview.md). In visionOS, a `ReverbComponent` is only active while an app has a [`progressive`](https://developer.apple.com/documentation/SwiftUI/ImmersionStyle/progressive) or [`full`](https://developer.apple.com/documentation/SwiftUI/ImmersionStyle/full) immersive space open.
+In macOS and iOS, only one `ReverbComponent` can be active at a time per [`ARView`](arview.md) or [`RealityView`](realityview.md). In visionOS, a `ReverbComponent` is only active while an app has a [`progressive`](https://developer.apple.com/documentation/swiftui/immersionstyle/progressive) or [`full`](https://developer.apple.com/documentation/swiftui/immersionstyle/full) immersive space open.
 
 You can place multiple simulated reverb components in a scene — for example, one entity each for the ceiling, floor, and walls of a virtual room — and the reflections and reverb update as audio sources move through the space. However, only one preset reverb can be active at a time; if both a preset and simulated reverb are present, the preset takes priority.
 
-When the content is within a [`progressive`](https://developer.apple.com/documentation/SwiftUI/ImmersionStyle/progressive) immersive space, the Digital Crown adjusts how RealityKit blends:
+When the content is within a [`progressive`](https://developer.apple.com/documentation/swiftui/immersionstyle/progressive) immersive space, the Digital Crown adjusts how RealityKit blends:
 
 - The acoustics simulation of a person’s real-world environment
 - The reverberation the `ReverbComponent` generates
 
-When your app is in a Shared Space [`WindowGroup`](https://developer.apple.com/documentation/SwiftUI/WindowGroup) or an [`ImmersiveSpace`](https://developer.apple.com/documentation/SwiftUI/ImmersiveSpace) using a [`mixed`](https://developer.apple.com/documentation/SwiftUI/ImmersionStyle/mixed) style, RealityKit reverberates the spatial audio from the acoustics simulation and ignores the reverberation from the `ReverbComponent`.
+When your app is in a Shared Space [`WindowGroup`](https://developer.apple.com/documentation/swiftui/windowgroup) or an [`ImmersiveSpace`](https://developer.apple.com/documentation/swiftui/immersivespace) using a [`mixed`](https://developer.apple.com/documentation/swiftui/immersionstyle/mixed) style, RealityKit reverberates the spatial audio from the acoustics simulation and ignores the reverberation from the `ReverbComponent`.
 
 ## Topics
 
@@ -78,10 +78,10 @@ When your app is in a Shared Space [`WindowGroup`](https://developer.apple.com/d
 
 ### Conforms To
 - [Component](component.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

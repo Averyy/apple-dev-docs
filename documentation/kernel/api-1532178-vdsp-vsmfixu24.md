@@ -37,10 +37,10 @@ In this pseudocode, `UINT24_MAX` is equal to `2^24 - 1`.
 ## Parameters
 
 - `__A`: The single-precision floating-point input vector.
-- `__IA`: The stride for input vector  . 
+- `__IA`: The stride for input vector `A`. 
 - `__B`: A pointer to a floating-point scaling factor.
 - `__C`: The 24-bit integer output vector. 
-- `__IC`: The stride for output vector  . 
+- `__IC`: The stride for output vector `C`. 
 - `__N`: The number of values to convert.
 
 ## See Also

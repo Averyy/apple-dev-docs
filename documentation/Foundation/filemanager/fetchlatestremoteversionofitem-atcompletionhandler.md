@@ -28,7 +28,7 @@ The version provided by this call depends on several factors:
 - If the server has a newer version and sync isn’t paused, this call replaces the local item and provides the version of the new item.
 - If the server has a newer version but sync is paused, the returned version points to a side location. In this case, call [`replaceItem(at:options:)`](nsfileversion/replaceitem(at:options:).md) on the provided version object to replace the local item with the newer item from the server.
 
-If the device isn’t connected to the network, the call may fail with [`NSFileReadUnknownError`](nsfilereadunknownerror-c.enum.case.md), with the underlying error of [`serverUnreachable`](https://developer.apple.com/documentation/FileProvider/NSFileProviderError/serverUnreachable).
+If the device isn’t connected to the network, the call may fail with [`NSFileReadUnknownError`](nsfilereadunknownerror-c.enum.case.md), with the underlying error of [`serverUnreachable`](https://developer.apple.com/documentation/fileprovider/nsfileprovidererror/serverunreachable).
 
 ## Parameters
 

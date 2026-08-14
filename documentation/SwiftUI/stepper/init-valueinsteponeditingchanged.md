@@ -41,7 +41,7 @@ struct StepperView: View {
 }
 ```
 
-![A view displaying a stepper that increments or decrements within a](https://docs-assets.developer.apple.com/published/21941a9c414c8460cb45d5d7d33ce928/SwiftUI-Stepper-value-step-range%402x.png)
+![A view displaying a stepper that increments or decrements within a](/images/com.apple.SwiftUI/SwiftUI-Stepper-value-step-range@2x.png)
 
 ## Parameters
 

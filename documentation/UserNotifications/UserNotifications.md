@@ -18,7 +18,7 @@ Push user-facing notifications to the user’s device from a server, or generate
 
 User-facing notifications communicate important information to users of your app, regardless of whether your app is running on the user’s device. For example, a sports app can let the user know when their favorite team scores. Notifications can also tell your app to download information and update its interface. Notifications can display an alert, play a sound, or badge the app’s icon.
 
-![A notification interface displayed on the lock screen and on the Home screen of an iOS device.](https://docs-assets.developer.apple.com/published/77222b2547b6bca98259cae756936c96/media-4182210%402x.png)
+![A notification interface displayed on the lock screen and on the Home screen of an iOS device.](/images/com.apple.usernotifications/media-4182210@2x.png)
 
 You can generate notifications locally from your app or remotely from a server that you manage. For *local notifications*, the app creates the notification content and specifies a condition, like a time or location, that triggers the delivery of the notification. For *remote notifications*, your company’s server generates push notifications, and Apple Push Notification service (APNs) handles the delivery of those notifications to the user’s devices.
 
@@ -30,7 +30,7 @@ Use this framework to do the following:
 - Process already delivered notifications.
 - Respond to user-selected actions.
 
-The system makes every attempt to deliver local and remote notifications in a timely manner, but delivery isn’t guaranteed. The PushKit framework offers a more timely delivery mechanism for specific types of notifications, such as those VoIP and watchOS complications use. For more information, see [`PushKit`](https://developer.apple.com/documentation/PushKit).
+The system makes every attempt to deliver local and remote notifications in a timely manner, but delivery isn’t guaranteed. The PushKit framework offers a more timely delivery mechanism for specific types of notifications, such as those VoIP and watchOS complications use. For more information, see [`PushKit`](https://developer.apple.com/documentation/pushkit).
 
 For webpages in Safari version 16.0 and higher, generate remote notifications from a server that you manage using [`Push API`](https://developer.apple.comhttps://www.w3.org/TR/push-api/) code that works in Safari and other browsers.
 
@@ -41,7 +41,7 @@ For design guidance, see [`Human Interface Guidelines > Notifications`](https://
 ## Topics
 
 ### Essentials
-- [User Notifications updates](../Updates/UserNotifications.md)
+- [User Notifications updates](../updates/usernotifications.md)
   Learn about important changes in User Notifications.
 - [Asking permission to use notifications](asking-permission-to-use-notifications.md)
   Request permission to display alerts, play sounds, or badge the app’s icon in response to a notification.
@@ -119,9 +119,9 @@ For design guidance, see [`Human Interface Guidelines > Notifications`](https://
 - [class UNNotificationServiceExtension](unnotificationserviceextension.md)
   An object that modifies the content of a remote notification before it’s delivered to the user.
 ### Entitlements
-- [APS Environment Entitlement](../BundleResources/Entitlements/aps-environment.md)
+- [APS Environment Entitlement](../bundleresources/entitlements/aps-environment.md)
   The environment for push notifications.
-- [APS Environment (macOS) Entitlement](../BundleResources/Entitlements/com.apple.developer.aps-environment.md)
+- [APS Environment (macOS) Entitlement](../bundleresources/entitlements/com.apple.developer.aps-environment.md)
   The environment for push notifications in macOS apps.
 ### Sample code
 - [Handling Communication Notifications and Focus Status Updates](handling-communication-notifications-and-focus-status-updates.md)

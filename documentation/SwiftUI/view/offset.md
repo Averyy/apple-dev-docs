@@ -38,7 +38,7 @@ Text("Offset by passing CGSize()")
     .border(Color.gray)
 ```
 
-![A screenshot showing a view that offset from its original position a](https://docs-assets.developer.apple.com/published/ce41cfcb2217463d1da9217414eb5746/SwiftUI-View-offset%402x.png)
+![A screenshot showing a view that offset from its original position a](/images/com.apple.SwiftUI/SwiftUI-View-offset@2x.png)
 
 ## Parameters
 

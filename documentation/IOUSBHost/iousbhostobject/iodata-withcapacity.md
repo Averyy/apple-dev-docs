@@ -23,7 +23,7 @@ A pointer to an allocated buffer.
 
 This method allocates and maps a kernel buffer that the underlying controller hardware has optimized. Using this method, the buffer doesn’t bounce to perform DMA operations.
 
-> ❗ **Important**:  Because the kernel backs the [`NSMutableData`](https://developer.apple.com/documentation/Foundation/NSMutableData) object, the length and capacity aren’t mutable. Any changes to the length or capacity throws an exception.
+> ❗ **Important**:  Because the kernel backs the [`NSMutableData`](https://developer.apple.com/documentation/foundation/nsmutabledata) object, the length and capacity aren’t mutable. Any changes to the length or capacity throws an exception.
 
 ## Parameters
 

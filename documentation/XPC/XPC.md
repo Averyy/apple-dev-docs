@@ -29,14 +29,14 @@ The type of XPC service you build depends on the requirements of the work it per
 | Launch Daemon | One systemwide process that runs at a higher privilege level, as the `root` user. LaunchDaemons can’t initiate connections to user processes but can respond to requests from them. |
 | XPC Service | One process per client of the service, tied to the lifetime of the client. When a client process connects to the service, `launchd` starts a process for the XPC service. When the client process exits, so does the XPC service. You bundle this type of service inside of an app or framework. |
 
-> **Note**:  The LaunchAgent and LaunchDaemon types require special installation and configuration. Prior to macOS 13, apps typically used installation scripts to configure these service types. In macOS 13 and later, the [`Service Management`](https://developer.apple.com/documentation/ServiceManagement) framework provides a new structure for packaging and installing these service types.
+> **Note**:  The LaunchAgent and LaunchDaemon types require special installation and configuration. Prior to macOS 13, apps typically used installation scripts to configure these service types. In macOS 13 and later, the [`Service Management`](https://developer.apple.com/documentation/servicemanagement) framework provides a new structure for packaging and installing these service types.
 
-You can build an XPC service using C, Swift, or Objective-C. There are both high- and low-level APIs for using XPC. If your project uses the Foundation framework, [`NSXPCConnection`](https://developer.apple.com/documentation/Foundation/NSXPCConnection) provides a high-level object-oriented API that enables a transparent remote method dispatch mechanism between processes. Using [`NSXPCConnection`](https://developer.apple.com/documentation/Foundation/NSXPCConnection) in the Foundation framework lets you design a well-defined protocol for clients to use. If your project doesn’t or can’t link against Foundation, use the lower-level `libSystem` APIs in the XPC framework.
+You can build an XPC service using C, Swift, or Objective-C. There are both high- and low-level APIs for using XPC. If your project uses the Foundation framework, [`NSXPCConnection`](https://developer.apple.com/documentation/foundation/nsxpcconnection) provides a high-level object-oriented API that enables a transparent remote method dispatch mechanism between processes. Using [`NSXPCConnection`](https://developer.apple.com/documentation/foundation/nsxpcconnection) in the Foundation framework lets you design a well-defined protocol for clients to use. If your project doesn’t or can’t link against Foundation, use the lower-level `libSystem` APIs in the XPC framework.
 
 ## Topics
 
 ### Essentials
-- [XPC updates](../Updates/XPC.md)
+- [XPC updates](../updates/xpc.md)
   Learn about important changes to XPC.
 ### Interprocess communication
 - [Creating XPC services](creating-xpc-services.md)

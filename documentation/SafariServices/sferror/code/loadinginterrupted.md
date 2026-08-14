@@ -21,7 +21,7 @@ case loadingInterrupted
 ## See Also
 
 - [SFError.Code.noAttachmentFound](sferror/code/noattachmentfound.md)
-  The Content Blocker extension returned an [`NSExtensionItem`](https://developer.apple.com/documentation/Foundation/NSExtensionItem) that did not include an attachment.
+  The Content Blocker extension returned an [`NSExtensionItem`](https://developer.apple.com/documentation/foundation/nsextensionitem) that did not include an attachment.
 - [SFError.Code.noExtensionFound](sferror/code/noextensionfound.md)
   A Content Blocker or Safari app extension with the specified bundle identifier was not found, or the bundle identifier specified an extension that was not owned by you.
 

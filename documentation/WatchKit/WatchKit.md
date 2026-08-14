@@ -12,18 +12,18 @@ Build watchOS apps that use features the app delegate monitors or controls, such
 
 The WatchKit framework provides infrastructure for creating watchOS apps, including an extension delegate that manages background tasks, extended runtime sessions, and Siri intents. The framework also performs other support tasks, such as accessing information about the user’s Apple Watch.
 
-![An illustration showing a blueprint. The central image displays a drawing of an Apple Watch with gears inside it. There are sketches of icons on either side of the watch.](https://docs-assets.developer.apple.com/published/66915464f240eff7cbd25784f1bb497e/media-3987848%402x.png)
+![An illustration showing a blueprint. The central image displays a drawing of an Apple Watch with gears inside it. There are sketches of icons on either side of the watch.](/images/com.apple.watchkit/media-3987848@2x.png)
 
 You can also use WatchKit to design your app’s user interface in a storyboard, connecting UI elements to an interface controller.
 
-> **Note**:  Building your app with SwiftUI gives you more control over the user interface than designing it in a storyboard. When creating a new watchOS app, strongly consider using [`SwiftUI`](https://developer.apple.com/documentation/SwiftUI). For more information, see [`Building a watchOS app`](https://developer.apple.com/documentation/watchOS-Apps/building_a_watchos_app).
+> **Note**:  Building your app with SwiftUI gives you more control over the user interface than designing it in a storyboard. When creating a new watchOS app, strongly consider using [`SwiftUI`](https://developer.apple.com/documentation/swiftui). For more information, see [`Building a watchOS app`](https://developer.apple.com/documentation/watchos-apps/building_a_watchos_app).
 
-For more information on building watchOS apps, see [`watchOS apps`](https://developer.apple.com/documentation/watchOS-Apps).
+For more information on building watchOS apps, see [`watchOS apps`](https://developer.apple.com/documentation/watchos-apps).
 
 ## Topics
 
 ### App structure
-- [Setting up a watchOS project](../watchOS-Apps/setting-up-a-watchos-project.md)
+- [Setting up a watchOS project](../watchos-apps/setting-up-a-watchos-project.md)
   Create a new watchOS project or add a watch target to an existing iOS project.
 - [class WKApplication](wkapplication.md)
   The centralized point of control and coordination for apps with a single watchOS app target.
@@ -37,7 +37,7 @@ For more information on building watchOS apps, see [`watchOS apps`](https://deve
   Creates the application object and the application delegate, and sets up the app’s event cycle.
 - [class WKInterfaceDevice](wkinterfacedevice.md)
   An object that provides information about the user’s Apple Watch.
-- [WKPrefersNetworkUponForeground](../BundleResources/Information-Property-List/WKPrefersNetworkUponForeground.md)
+- [WKPrefersNetworkUponForeground](../bundleresources/information-property-list/wkprefersnetworkuponforeground.md)
   A Boolean value that indicates whether an app requires network access on launch.
 ### Runtime management
 - [Background execution](background-execution.md)

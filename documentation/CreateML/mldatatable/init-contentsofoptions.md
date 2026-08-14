@@ -31,7 +31,7 @@ Use this initializer to create a data table from either a JavaScript Object Nota
 
 This initializer imports data from a JSON file and creates a row from each dictionary in the root JSON array. The data table names its columns with the dictionary’s keys.
 
-![A table of information about a book. Columns named “Title”, “Author”,](https://docs-assets.developer.apple.com/published/3426640fe0e03c0d418fc851e1dd6812/MLDataTable-init%28contentsOf%3Aoptions%3A%29-1%402x.png)
+![A table of information about a book. Columns named “Title”, “Author”,](/images/com.apple.createml/MLDataTable-init(contentsOf:options:)-1@2x.png)
 
 For example, to create a data table as shown above, build a JSON file with a root array of dictionaries that all use the same set of keys.
 
@@ -87,7 +87,7 @@ If you don’t provide parsing options, it is assumed that your CSV file has the
 
 - The first entry is a header row with the names of the columns. - Data fields are separated by a comma (`,`). - Each row ends with a newline character (`\n`). - Special characters are escaped with a leading backslash (`\`). - Every quote literal (`"`) is represented by two consecutive quotes (`""`).
 
-![A table of information about a book. Columns named “Title”, “Author”,](https://docs-assets.developer.apple.com/published/3426640fe0e03c0d418fc851e1dd6812/MLDataTable-init%28contentsOf%3Aoptions%3A%29-2%402x.png)
+![A table of information about a book. Columns named “Title”, “Author”,](/images/com.apple.createml/MLDataTable-init(contentsOf:options:)-2@2x.png)
 
 For example, to create a data table as shown above, first create a CSV file programmatically or use a spreadsheet app like Numbers to export one, and add it to your project.
 

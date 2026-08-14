@@ -16,7 +16,7 @@ var videoBounds: NSRect { get }
 
 #### Discussion
 
-Use this property to determine the display dimensions of the video image within the player view’s bounds. The size and position of this rectangle depend on the aspect ratio of the media (like 16:9 or 4:3), the player view’s [`bounds`](https://developer.apple.com/documentation/AppKit/NSView/bounds), and its [`controlsStyle`](avplayerview/controlsstyle.md).
+Use this property to determine the display dimensions of the video image within the player view’s bounds. The size and position of this rectangle depend on the aspect ratio of the media (like 16:9 or 4:3), the player view’s [`bounds`](https://developer.apple.com/documentation/appkit/nsview/bounds), and its [`controlsStyle`](avplayerview/controlsstyle.md).
 
 ## See Also
 

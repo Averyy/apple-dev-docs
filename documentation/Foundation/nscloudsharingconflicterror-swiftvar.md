@@ -20,7 +20,7 @@ var NSCloudSharingConflictError: Int { get }
 
 #### Discussion
 
-This error occurs when a conflict is detected while trying to save changes to the [`CKShare`](https://developer.apple.com/documentation/CloudKit/CKShare) or root [`CKRecord`](https://developer.apple.com/documentation/CloudKit/CKRecord). Respond to this error by first fetching the server’s changes to the records, then either handle the conflict manually or present it, which will instruct the user to try the operation again.
+This error occurs when a conflict is detected while trying to save changes to the [`CKShare`](https://developer.apple.com/documentation/cloudkit/ckshare) or root [`CKRecord`](https://developer.apple.com/documentation/cloudkit/ckrecord). Respond to this error by first fetching the server’s changes to the records, then either handle the conflict manually or present it, which will instruct the user to try the operation again.
 
 ## See Also
 

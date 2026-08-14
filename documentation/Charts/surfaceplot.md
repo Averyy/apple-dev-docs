@@ -80,8 +80,8 @@ Chart content that represents a collection of data using three-dimensional data.
 
 ### Conforms To
 - [Chart3DContent](chart3dcontent.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

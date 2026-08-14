@@ -26,7 +26,7 @@ This method behaves the same as calling the [`requestTemporaryFullAccuracyAuthor
 
 ## Parameters
 
-- `purposeKey`: A key in the [`NSLocationTemporaryUsageDescriptionDictionary`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSLocationTemporaryUsageDescriptionDictionary) dictionary of the app’s `Info.plist` file.  The value for this key is an app-provided string that describes the reason for accessing location data with full accuracy.  To localize a usage description, add an entry to your `InfoPlist.strings` file with the same key you provide for this parameter.
+- `purposeKey`: A key in the [`NSLocationTemporaryUsageDescriptionDictionary`](https://developer.apple.com/documentation/bundleresources/information-property-list/nslocationtemporaryusagedescriptiondictionary) dictionary of the app’s `Info.plist` file.  The value for this key is an app-provided string that describes the reason for accessing location data with full accuracy.  To localize a usage description, add an entry to your `InfoPlist.strings` file with the same key you provide for this parameter.
 
 ## See Also
 
@@ -40,9 +40,9 @@ This method behaves the same as calling the [`requestTemporaryFullAccuracyAuthor
   The current authorization status for the app.
 - [enum CLAuthorizationStatus](clauthorizationstatus.md)
   Constants that indicate the app’s authorization to use location services.
-- [NSLocationDefaultAccuracyReduced](../BundleResources/Information-Property-List/NSLocationDefaultAccuracyReduced.md)
+- [NSLocationDefaultAccuracyReduced](../bundleresources/information-property-list/nslocationdefaultaccuracyreduced.md)
   A Boolean value that indicates whether the app requests reduced location accuracy by default.
-- [NSLocationAlwaysAndWhenInUseUsageDescription](../BundleResources/Information-Property-List/NSLocationAlwaysAndWhenInUseUsageDescription.md)
+- [NSLocationAlwaysAndWhenInUseUsageDescription](../bundleresources/information-property-list/nslocationalwaysandwheninuseusagedescription.md)
   A message that tells people why the app is requesting access to their location information at all times.
 
 

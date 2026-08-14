@@ -22,7 +22,7 @@ let CBConnectPeripheralOptionStartDelayKey: String
 
 #### Discussion
 
-The corresponding value is an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) that indicates the duration of the delay in seconds.
+The corresponding value is an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) that indicates the duration of the delay in seconds.
 
 ## See Also
 

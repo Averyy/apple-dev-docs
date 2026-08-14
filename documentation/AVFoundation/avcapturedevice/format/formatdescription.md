@@ -21,7 +21,7 @@ var formatDescription: CMFormatDescription { get }
 
 #### Discussion
 
-Calling this method doesn’t assume ownership of the returned [`CMFormatDescription`](https://developer.apple.com/documentation/CoreMedia/CMFormatDescription).
+Calling this method doesn’t assume ownership of the returned [`CMFormatDescription`](https://developer.apple.com/documentation/coremedia/cmformatdescription).
 
 ## See Also
 

@@ -26,7 +26,7 @@ In GameplayKit, the connections between nodes in a graph are directional. For ex
 ## Parameters
 
 - `nodes`: The nodes connected to this node whose connections are to be removed.
-- `bidirectional`: [`true`](https://developer.apple.com/documentation/Swift/true) to remove connections in both directions if they exist; [`false`](https://developer.apple.com/documentation/Swift/false) to remove only connections from this node to each of the specified nodes.
+- `bidirectional`: [`true`](https://developer.apple.com/documentation/swift/true) to remove connections in both directions if they exist; [`false`](https://developer.apple.com/documentation/swift/false) to remove only connections from this node to each of the specified nodes.
 
 ## See Also
 

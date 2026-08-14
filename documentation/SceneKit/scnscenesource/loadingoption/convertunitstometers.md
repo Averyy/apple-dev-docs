@@ -22,7 +22,7 @@ static let convertUnitsToMeters: SCNSceneSource.LoadingOption
 
 #### Discussion
 
-The value for this key is an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) object containing a floating-point value. The default value is `nil`, specifying no unit conversion.
+The value for this key is an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) object containing a floating-point value. The default value is `nil`, specifying no unit conversion.
 
 SceneKit’s physics simulation works best when one unit in the scene’s coordinate space corresponds to one meter in the physics world. When you load elements from scene files, provide a value for this key specifying the number of meters (in the coordinate space of the loaded scene) for each unit in the scene coordinate space of the elements to be loaded.
 

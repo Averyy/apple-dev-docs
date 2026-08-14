@@ -24,7 +24,7 @@ This version of `release` can be used to break certain retain cycles in object g
 ## Parameters
 
 - `tag`: Used for tracking collection references.
-- `freeWhen`: If decrementing the reference count makes it >=  , the object is immediately freed.
+- `freeWhen`: If decrementing the reference count makes it >= `freeWhen`, the object is immediately freed.
 
 ## See Also
 

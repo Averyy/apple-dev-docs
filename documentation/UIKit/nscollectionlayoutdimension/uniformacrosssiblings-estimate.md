@@ -22,7 +22,7 @@ class func uniformAcrossSiblings(estimate estimatedDimension: CGFloat) -> Self
 
 Use the [`uniformAcrossSiblings(estimate:)`](nscollectionlayoutdimension/uniformacrosssiblings(estimate:).md) dimension to ensure that self-sizing items have a consistent size across their group. This dimension provides an alternative to using the [`estimated(_:)`](nscollectionlayoutdimension/estimated(_:).md) dimension, which might not result in a uniform layout for items that vary in size.
 
-![Two diagrams that each show a horizontal layout group with three items. The left diagram is labeled “Estimated,” and its items vary in size according to their content. The right diagram is labeled “Uniform across siblings,” and its items match the size of the largest item.](https://docs-assets.developer.apple.com/published/c7e06356cfdd7b4bb5a41cf5a632205f/media-4278490%402x.png)
+![Two diagrams that each show a horizontal layout group with three items. The left diagram is labeled “Estimated,” and its items vary in size according to their content. The right diagram is labeled “Uniform across siblings,” and its items match the size of the largest item.](/images/com.apple.uikit/media-4278490@2x.png)
 
 Items with this dimension receive at least as much room as they require, and they increase in size to match the dimension of the largest self-sizing sibling in their parent group. The parent group’s dimension needs to be [`estimated(_:)`](nscollectionlayoutdimension/estimated(_:).md) on the axis where items specify this dimension so the group can grow to fit the items.
 

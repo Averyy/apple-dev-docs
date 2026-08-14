@@ -19,7 +19,7 @@ In most cases, you should let the URL Loading System’s default handling evalua
 
 [`Figure 1`](url_loading_system/handling_an_authentication_challenge/performing_manual_server_trust_authentication#2959678.md) illustrates how an app performs manual credential evaluation by providing a delegate method to handle the authentication challenge. This bypasses the default handling. Instead, the delegate directly compares the server certificate or its public key against a copy of the certificate or key (or a hash of either of these) stored in the app bundle itself. If the delegate decides the server credential is valid, it accepts the server trust and allows the connection to continue.
 
-![Flow diagram of a server trust being evaluated manually by a delegate method. A certificate in the server trust matches a certificate inside the app bundle, so the server trust is manually accepted and the flow ends with a “connect” state.](https://docs-assets.developer.apple.com/published/f0b62792d68fe6d5404e22e59c322799/media-2959678%402x.png)
+![Flow diagram of a server trust being evaluated manually by a delegate method. A certificate in the server trust matches a certificate inside the app bundle, so the server trust is manually accepted and the flow ends with a “connect” state.](/images/com.apple.foundation/media-2959678@2x.png)
 
 > **Note**:  [`URLSession`](urlsession.md) enforces [`App Transport Security (ATS)`](urlsession#App-Transport-Security-ATS.md), if it is enabled for the domain you are connecting to. This applies security requirements for the certificates, TLS version, and cipher used by the connection. You cannot loosen server trust requirements for an ATS-protected domain, but you can tighten them, using the manual evaluation technique shown in this article. See [`NSAppTransportSecurity`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CocoaKeys.html#//apple_ref/doc/plist/info/NSAppTransportSecurity) in [`Information Property List Key Reference`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Introduction/Introduction.html#//apple_ref/doc/uid/TP40009247) for further details.
 
@@ -46,7 +46,7 @@ guard protectionSpace.authenticationMethod ==
 
 ##### Evaluate the Credential in the Challenge
 
-To access the server’s credential, get the [`serverTrust`](urlprotectionspace/servertrust.md) property (an instance of the [`SecTrust`](https://developer.apple.com/documentation/Security/SecTrust) class) from the protection space. The following example shows how to access the server trust and accept or reject it. The listing starts by attempting to get the [`serverTrust`](urlprotectionspace/servertrust.md) property from the protection space, and falls back to default handling if the property is `nil`. Next, it passes the server trust to a private helper method `checkValidity(of:)` that compares the certificate or public key in the server trust to known-good values stored in the app bundle.
+To access the server’s credential, get the [`serverTrust`](urlprotectionspace/servertrust.md) property (an instance of the [`SecTrust`](https://developer.apple.com/documentation/security/sectrust) class) from the protection space. The following example shows how to access the server trust and accept or reject it. The listing starts by attempting to get the [`serverTrust`](urlprotectionspace/servertrust.md) property from the protection space, and falls back to default handling if the property is `nil`. Next, it passes the server trust to a private helper method `checkValidity(of:)` that compares the certificate or public key in the server trust to known-good values stored in the app bundle.
 
 Evaluating credentials in a server trust instance.
 
@@ -70,7 +70,7 @@ Once the code determines the validity of the server trust, it takes one of two a
 - If the server trust’s credential is valid, create a new [`URLCredential`](urlcredential.md) instance from the server trust. Then call the `completionHandler` with the [`URLSession.AuthChallengeDisposition.useCredential`](urlsession/authchallengedisposition/usecredential.md) disposition, passing in the newly-created credential. This tells the system to accept the server’s credentials.
 - If the challenge’s credential is invalid, call the `completionHandler` with the [`URLSession.AuthChallengeDisposition.cancelAuthenticationChallenge`](urlsession/authchallengedisposition/cancelauthenticationchallenge.md) disposition. This tells the system to reject the server’s credentials.
 
-> 💡 **Tip**:  See [`Certificate, Key, and Trust Services`](https://developer.apple.com/documentation/Security/certificate-key-and-trust-services) to learn more about how to evaluate a [`SecTrust`](https://developer.apple.com/documentation/Security/SecTrust) instance or access certificates or public keys from it.
+> 💡 **Tip**:  See [`Certificate, Key, and Trust Services`](https://developer.apple.com/documentation/security/certificate-key-and-trust-services) to learn more about how to evaluate a [`SecTrust`](https://developer.apple.com/documentation/security/sectrust) instance or access certificates or public keys from it.
 
 ##### Create a Long Term Server Authentication Strategy
 

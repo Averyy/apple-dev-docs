@@ -18,11 +18,11 @@ Replace `Enterprise.license` with your license file. The sample app requires a v
 
 ##### Request the Entitlement
 
-Barcode detection is a part of enterprise APIs for visionOS, a collection of APIs that unlock capabilities for enterprise customers. To use barcode detection, you need to apply for the [`Spatial barcode and QR code scanning`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.arkit.barcode-detection.allow) entitlement. For more information, including how to apply for this entitlement, see [`Building spatial experiences for business apps with enterprise APIs for visionOS`](building-spatial-experiences-for-business-apps-with-enterprise-apis.md).
+Barcode detection is a part of enterprise APIs for visionOS, a collection of APIs that unlock capabilities for enterprise customers. To use barcode detection, you need to apply for the [`Spatial barcode and QR code scanning`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.arkit.barcode-detection.allow) entitlement. For more information, including how to apply for this entitlement, see [`Building spatial experiences for business apps with enterprise APIs for visionOS`](building-spatial-experiences-for-business-apps-with-enterprise-apis.md).
 
 ##### Add Usage Descriptions for Arkit Data Access
 
-To help protect people’s privacy, visionOS limits app access to cameras and other sensors in Apple Vision Pro. You need to add an [`NSWorldSensingUsageDescription`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSWorldSensingUsageDescription) to your app’s information property list to provide a usage description that explains how your app uses the data those sensors provide. People see this description when your app prompts for access to world-sensing data.
+To help protect people’s privacy, visionOS limits app access to cameras and other sensors in Apple Vision Pro. You need to add an [`NSWorldSensingUsageDescription`](https://developer.apple.com/documentation/bundleresources/information-property-list/nsworldsensingusagedescription) to your app’s information property list to provide a usage description that explains how your app uses the data those sensors provide. People see this description when your app prompts for access to world-sensing data.
 
 > **Note**: In visionOS, ARKit is only available in an immersive space. See [`Setting up access to ARKit data`](setting-up-access-to-arkit-data.md) to learn more about opening an immersive space and requesting authorization for ARKit data access. To learn more about best practices for privacy, see [`Adopting best practices for privacy and user preferences`](adopting-best-practices-for-privacy.md).
 
@@ -30,7 +30,7 @@ To help protect people’s privacy, visionOS limits app access to cameras and ot
 
 Your visionOS app can detect barcodes in a person’s surroundings and highlight the barcode the person is looking for. The following code example detects and highlights every Code 128 or QR Code symbology in a person’s surroundings. The code example includes three steps: detecting the barcode, printing its decoded content, and creating the highlight animation.
 
-To start detecting barcodes, create a [`BarcodeDetectionProvider`](https://developer.apple.com/documentation/ARKit/BarcodeDetectionProvider) to get the positions of barcodes. Next, specify the [`BarcodeAnchor.Symbology`](https://developer.apple.com/documentation/ARKit/BarcodeAnchor/Symbology-swift.enum) to indicate the types of barcodes you want ARKit to detect in the person’s surroundings. Then, start an [`ARKitSession`](https://developer.apple.com/documentation/ARKit/ARKitSession) with the `BarcodeDetectionProvider`.
+To start detecting barcodes, create a [`BarcodeDetectionProvider`](https://developer.apple.com/documentation/arkit/barcodedetectionprovider) to get the positions of barcodes. Next, specify the [`BarcodeAnchor.Symbology`](https://developer.apple.com/documentation/arkit/barcodeanchor/symbology-swift.enum) to indicate the types of barcodes you want ARKit to detect in the person’s surroundings. Then, start an [`ARKitSession`](https://developer.apple.com/documentation/arkit/arkitsession) with the `BarcodeDetectionProvider`.
 
 ```swift
 import SwiftUI
@@ -80,7 +80,7 @@ struct ImmersiveView: View {
 }
 ```
 
-ARKit delivers an asynchronous stream of updates as it detects changes in the scene. Each update includes a [`BarcodeAnchor`](https://developer.apple.com/documentation/ARKit/BarcodeAnchor) containing the barcode’s payload, extent, and transform. To implement the highlight animation, create a plane that you size and position to match that of the barcode, then fade it in and out.
+ARKit delivers an asynchronous stream of updates as it detects changes in the scene. Each update includes a [`BarcodeAnchor`](https://developer.apple.com/documentation/arkit/barcodeanchor) containing the barcode’s payload, extent, and transform. To implement the highlight animation, create a plane that you size and position to match that of the barcode, then fade it in and out.
 
 > **Note**: You define a barcode’s extents in the x-z plane. They have a width (x-axis), depth (z-axis), and zero height (y-axis).
 
@@ -129,11 +129,11 @@ func playAnimation(for anchor: BarcodeAnchor) {
 }
 ```
 
-> **Note**: Because [`BarcodeDetectionProvider`](https://developer.apple.com/documentation/ARKit/BarcodeDetectionProvider) has a low refresh rate, use its transform to initialize the position of content relative to a stationary barcode.
+> **Note**: Because [`BarcodeDetectionProvider`](https://developer.apple.com/documentation/arkit/barcodedetectionprovider) has a low refresh rate, use its transform to initialize the position of content relative to a stationary barcode.
 
 ##### Determine the Ideal Barcode Width
 
-The sample code project can’t read barcodes that are too small to appear clearly in a person’s field of view. Larger barcodes generally improve readability, providing that they remain within the field of view. The minimum barcode size depends on its [`BarcodeAnchor.Symbology`](https://developer.apple.com/documentation/ARKit/BarcodeAnchor/Symbology-swift.enum). Refer to the table below to determine the minimum width required for a barcode to be readable under nominal lighting conditions (100 lux) at an arm’s length distance (~40 cm).
+The sample code project can’t read barcodes that are too small to appear clearly in a person’s field of view. Larger barcodes generally improve readability, providing that they remain within the field of view. The minimum barcode size depends on its [`BarcodeAnchor.Symbology`](https://developer.apple.com/documentation/arkit/barcodeanchor/symbology-swift.enum). Refer to the table below to determine the minimum width required for a barcode to be readable under nominal lighting conditions (100 lux) at an arm’s length distance (~40 cm).
 
 | Symbology | Minimum width (in cm) |
 | --- | --- |

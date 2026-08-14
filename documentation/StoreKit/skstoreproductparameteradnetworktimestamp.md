@@ -24,7 +24,7 @@ let SKStoreProductParameterAdNetworkTimestamp: String
 
 #### Discussion
 
-The value for this key is an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber). Ad networks generate the timestamp, represented as UNIX time in milliseconds, at the time you’re preparing to serve the ad.
+The value for this key is an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber). Ad networks generate the timestamp, represented as UNIX time in milliseconds, at the time you’re preparing to serve the ad.
 
 ## See Also
 

@@ -17,7 +17,7 @@ A Boolean value indicating whether your app can use the card session API.
 
 #### Discussion
 
-Your app must have this entitlement or else initializing a [`CardSession`](https://developer.apple.com/documentation/CoreNFC/CardSession) raises [`fatalError(_:file:line:)`](https://developer.apple.com/documentation/Swift/fatalError(_:file:line:)).
+Your app must have this entitlement or else initializing a [`CardSession`](https://developer.apple.com/documentation/corenfc/cardsession) raises [`fatalError(_:file:line:)`](https://developer.apple.com/documentation/swift/fatalerror(_:file:line:)).
 
 For more information and to apply for this entitlement, visit [`HCE-based contactless transactions for banking and wallet apps in the European Economic Area`](https://developer.apple.comhttps://developer.apple.com/support/hce-payment-transactions-in-payment-apps/).
 

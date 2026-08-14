@@ -21,7 +21,7 @@ static let boostAmount: CIRAWFilterOption
 
 #### Discussion
 
-The associated value is a floating-point value packaged as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) object. The value must be in the range of `0...1`. A value of `0` indicates no boost, that is, a linear response. The default value is `1`, which indicates full boost.
+The associated value is a floating-point value packaged as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) object. The value must be in the range of `0...1`. A value of `0` indicates no boost, that is, a linear response. The default value is `1`, which indicates full boost.
 
 ## See Also
 

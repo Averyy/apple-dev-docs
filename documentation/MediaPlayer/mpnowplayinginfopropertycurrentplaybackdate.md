@@ -22,7 +22,7 @@ let MPNowPlayingInfoPropertyCurrentPlaybackDate: String
 
 #### Discussion
 
-The value of this property is an [`NSDate`](https://developer.apple.com/documentation/Foundation/NSDate) object.
+The value of this property is an [`NSDate`](https://developer.apple.com/documentation/foundation/nsdate) object.
 
 ## See Also
 

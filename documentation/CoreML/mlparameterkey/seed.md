@@ -22,7 +22,7 @@ class var seed: MLParameterKey { get }
 
 #### Discussion
 
-The value type for the [`seed`](mlparameterkey/seed.md) key is an [`Int64`](https://developer.apple.com/documentation/Swift/Int64).
+The value type for the [`seed`](mlparameterkey/seed.md) key is an [`Int64`](https://developer.apple.com/documentation/swift/int64).
 
 ## See Also
 

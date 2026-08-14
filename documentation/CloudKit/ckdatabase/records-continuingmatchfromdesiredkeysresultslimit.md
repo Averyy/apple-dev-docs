@@ -24,7 +24,7 @@ func records(continuingMatchFrom queryCursor: CKQueryOperation.Cursor, desiredKe
 
 A tuple with the following named elements:
 
-- **`matchResults`**: An array of tuples. Each tuple includes a record identifier and a [`Result`](https://developer.apple.com/documentation/Swift/Result) that contains either the corresponding matched record, or an error that describes why CloudKit can’t provide that record. For example, if CloudKit fails to materialize an asset field, it returns an error instead of a partial record. CloudKit sorts the array according to the query’s sort descriptors.
+- **`matchResults`**: An array of tuples. Each tuple includes a record identifier and a [`Result`](https://developer.apple.com/documentation/swift/result) that contains either the corresponding matched record, or an error that describes why CloudKit can’t provide that record. For example, if CloudKit fails to materialize an asset field, it returns an error instead of a partial record. CloudKit sorts the array according to the query’s sort descriptors.
 - **`queryCursor`**: A cursor if the number of results exceeds `resultsLimit`; otherwise, `nil`.
 
 #### Discussion

@@ -22,7 +22,7 @@ let kCGImageMetadataShouldExcludeXMP: CFString
 
 #### Discussion
 
-The value of this key must be a [`CFBoolean`](https://developer.apple.com/documentation/CoreFoundation/CFBoolean) value. The default value is [`kCFBooleanFalse`](https://developer.apple.com/documentation/CoreFoundation/kCFBooleanFalse), which causes the destination to include XMP metadata. If you use this flag in conjunction with the [`kCGImageDestinationMetadata`](kcgimagedestinationmetadata.md) flag, the image destination preserves EXIF and IPTC tags but doesn’t write XMP packets to the file.
+The value of this key must be a [`CFBoolean`](https://developer.apple.com/documentation/corefoundation/cfboolean) value. The default value is [`kCFBooleanFalse`](https://developer.apple.com/documentation/corefoundation/kcfbooleanfalse), which causes the destination to include XMP metadata. If you use this flag in conjunction with the [`kCGImageDestinationMetadata`](kcgimagedestinationmetadata.md) flag, the image destination preserves EXIF and IPTC tags but doesn’t write XMP packets to the file.
 
 ## See Also
 

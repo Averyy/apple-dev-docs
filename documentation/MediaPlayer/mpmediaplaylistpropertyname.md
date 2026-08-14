@@ -22,7 +22,7 @@ let MPMediaPlaylistPropertyName: String
 
 #### Discussion
 
-Value is an [`NSString`](https://developer.apple.com/documentation/Foundation/NSString) object. Can be used to build a media property predicate as described in [`MPMediaQuery`](mpmediaquery.md).
+Value is an [`NSString`](https://developer.apple.com/documentation/foundation/nsstring) object. Can be used to build a media property predicate as described in [`MPMediaQuery`](mpmediaquery.md).
 
 ## See Also
 

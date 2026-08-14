@@ -20,7 +20,7 @@ var allTargets: Set<AnyHashable> { get }
 
 #### Return Value
 
-A set of all target objects associated with the control. The returned set may include one or more [`NSNull`](https://developer.apple.com/documentation/Foundation/NSNull) objects to indicate actions that are dispatched to the responder chain.
+A set of all target objects associated with the control. The returned set may include one or more [`NSNull`](https://developer.apple.com/documentation/foundation/nsnull) objects to indicate actions that are dispatched to the responder chain.
 
 ## See Also
 

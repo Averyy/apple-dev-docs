@@ -30,17 +30,17 @@ protocol NetworkFixedWidthInteger : FixedWidthInteger
 ## Relationships
 
 ### Inherits From
-- [AdditiveArithmetic](../Swift/AdditiveArithmetic.md)
-- [BinaryInteger](../Swift/BinaryInteger.md)
-- [Comparable](../Swift/Comparable.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [ExpressibleByIntegerLiteral](../Swift/ExpressibleByIntegerLiteral.md)
-- [FixedWidthInteger](../Swift/FixedWidthInteger.md)
-- [Hashable](../Swift/Hashable.md)
-- [LosslessStringConvertible](../Swift/LosslessStringConvertible.md)
-- [Numeric](../Swift/Numeric.md)
-- [Strideable](../Swift/Strideable.md)
+- [AdditiveArithmetic](../swift/additivearithmetic.md)
+- [BinaryInteger](../swift/binaryinteger.md)
+- [Comparable](../swift/comparable.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [ExpressibleByIntegerLiteral](../swift/expressiblebyintegerliteral.md)
+- [FixedWidthInteger](../swift/fixedwidthinteger.md)
+- [Hashable](../swift/hashable.md)
+- [LosslessStringConvertible](../swift/losslessstringconvertible.md)
+- [Numeric](../swift/numeric.md)
+- [Strideable](../swift/strideable.md)
 
 
 ---

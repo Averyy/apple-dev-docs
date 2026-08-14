@@ -30,7 +30,7 @@ _ = try DiskImage(creating: .raw(url: imageURL, blockCount: blockCount))
 
 ## Parameters
 
-- `url`: The [`URL`](https://developer.apple.com/documentation/Foundation/URL) for the disk image file.
+- `url`: The [`URL`](https://developer.apple.com/documentation/foundation/url) for the disk image file.
 - `blockCount`: Size of the disk image in blocks.
 
 

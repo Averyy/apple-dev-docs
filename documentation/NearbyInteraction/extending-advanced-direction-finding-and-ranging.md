@@ -109,11 +109,11 @@ The following example demonstrates a quality estimator for direction measurement
 
 This class is a part of the [`Finding devices with precision`](finding-devices-with-precision.md) sample for iOS 17 that demonstrates measurement quality estimation on devices capable of EDM. This estimator determines measurements are high quality if the framework generates eight or more distinct measurements in the last two seconds, and if the measurements are within a distance threshold of 50 meters. Experiment with different measurement quality metrics to vet the results to meet your app’s intended use cases.
 
-iOS 16 and watchOS 9 introduced an API update to Nearby Interaction for locating stationary devices with high precision aided by an [`ARSession`](https://developer.apple.com/documentation/ARKit/ARSession). With the EDM capabilities introduced in iOS 17 and watchOS 10, second-generation UWB equipped devices can locate moving devices that also have the second-generation UWB chip.
+iOS 16 and watchOS 9 introduced an API update to Nearby Interaction for locating stationary devices with high precision aided by an [`ARSession`](https://developer.apple.com/documentation/arkit/arsession). With the EDM capabilities introduced in iOS 17 and watchOS 10, second-generation UWB equipped devices can locate moving devices that also have the second-generation UWB chip.
 
 ##### Measure the Distance Between Devices
 
-In iOS 14 and watchOS 8 and later, devices equipped with the first-generation UWB chip are capable of precise distance measurement through the Nearby Interaction framework. Devices supporting [`ARKit`](https://developer.apple.com/documentation/ARKit) can locate stationary objects or devices. Devices equipped with the second-generation UWB chip are capable of EDM. Pairs of devices supporting both extended distance measurement and Camera Assistance have the ability to locate moving devices. You can query these capabilities through the [`deviceCapabilities`](nisession/devicecapabilities.md) property check.
+In iOS 14 and watchOS 8 and later, devices equipped with the first-generation UWB chip are capable of precise distance measurement through the Nearby Interaction framework. Devices supporting [`ARKit`](https://developer.apple.com/documentation/arkit) can locate stationary objects or devices. Devices equipped with the second-generation UWB chip are capable of EDM. Pairs of devices supporting both extended distance measurement and Camera Assistance have the ability to locate moving devices. You can query these capabilities through the [`deviceCapabilities`](nisession/devicecapabilities.md) property check.
 
 To check a device’s EDM capability:
 

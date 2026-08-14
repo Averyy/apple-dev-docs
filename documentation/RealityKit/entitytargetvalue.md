@@ -21,9 +21,9 @@ struct EntityTargetValue<Value>
 
 #### Overview
 
-Spatial data from a [`location`](https://developer.apple.com/documentation/SwiftUI/DragGesture/Value/location) returned by a gesture can be converted to and from the entity using functions defined in [`RealityCoordinateSpaceConverting`](realitycoordinatespaceconverting.md).
+Spatial data from a [`location`](https://developer.apple.com/documentation/swiftui/draggesture/value/location) returned by a gesture can be converted to and from the entity using functions defined in [`RealityCoordinateSpaceConverting`](realitycoordinatespaceconverting.md).
 
-For example, here’s how to convert [`location`](https://developer.apple.com/documentation/SwiftUI/DragGesture/Value/location) from a [`DragGesture`](https://developer.apple.com/documentation/SwiftUI/DragGesture) to the parent of an [`Entity`](entity.md):
+For example, here’s how to convert [`location`](https://developer.apple.com/documentation/swiftui/draggesture/value/location) from a [`DragGesture`](https://developer.apple.com/documentation/swiftui/draggesture) to the parent of an [`Entity`](entity.md):
 
 ```swift
 DragGesture(coordinateSpace: .global).targetedToEntity().updating($state) { state, value, _ in
@@ -51,9 +51,9 @@ DragGesture(coordinateSpace: .global).targetedToEntity().updating($state) { stat
 ## Relationships
 
 ### Conforms To
-- [Copyable](../Swift/Copyable.md)
-- [Equatable](../Swift/Equatable.md)
-- [Escapable](../Swift/Escapable.md)
+- [Copyable](../swift/copyable.md)
+- [Equatable](../swift/equatable.md)
+- [Escapable](../swift/escapable.md)
 - [RealityCoordinateSpaceConverting](realitycoordinatespaceconverting.md)
 - [RealityCoordinateSpaceProjecting](realitycoordinatespaceprojecting.md)
 

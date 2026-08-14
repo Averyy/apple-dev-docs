@@ -17,7 +17,7 @@ case minX
 
 #### Discussion
 
-This is equivalent to [`CGRectEdge.minXEdge`](https://developer.apple.com/documentation/CoreFoundation/CGRectEdge/minXEdge).
+This is equivalent to [`CGRectEdge.minXEdge`](https://developer.apple.com/documentation/corefoundation/cgrectedge/minxedge).
 
 ## See Also
 

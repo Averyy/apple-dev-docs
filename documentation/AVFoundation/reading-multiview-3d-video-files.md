@@ -18,7 +18,7 @@ For the full details of the MV-HEVC format, see [`Apple HEVC Stereo Video - Inte
 
 ##### Load and Inspect the Media Asset
 
-The app first displays a button labeled Open MVHEVC File. When selected, the button presents an [`NSOpenPanel`](https://developer.apple.com/documentation/AppKit/NSOpenPanel) for choosing video media. Next, the app initializes a `MediaDetailViewModel`, loading this file as an [`AVURLAsset`](avurlasset.md). Before opening the file to present any elements for a stereo video frame, the app ensures a playable, readable file, and gets its total length in time. This is all performed in the initializer.
+The app first displays a button labeled Open MVHEVC File. When selected, the button presents an [`NSOpenPanel`](https://developer.apple.com/documentation/appkit/nsopenpanel) for choosing video media. Next, the app initializes a `MediaDetailViewModel`, loading this file as an [`AVURLAsset`](avurlasset.md). Before opening the file to present any elements for a stereo video frame, the app ensures a playable, readable file, and gets its total length in time. This is all performed in the initializer.
 
 ```swift
 init(filename: URL) {
@@ -57,7 +57,7 @@ let request = AVSampleBufferRequest(start: cursor)
 var numSamples: Int64 = 0
 ```
 
-To read the timestamps, obtain the sample buffer for the current cursor from [`makeSampleBuffer(for:)`](avsamplebuffergenerator/makesamplebuffer(for:).md), then add the [`presentationTimeStamp`](https://developer.apple.com/documentation/CoreMedia/CMSampleBuffer/presentationTimeStamp) for the frame. The cursor steps forward by calling [`stepInDecodeOrder(byCount:)`](avsamplecursor/stepindecodeorder(bycount:).md), reading and caching timestamps for each frame in the buffer. When `stepInDecodeOrder(byCount:)` returns no next frame, sample times are in the cache and reading the video track completes.
+To read the timestamps, obtain the sample buffer for the current cursor from [`makeSampleBuffer(for:)`](avsamplebuffergenerator/makesamplebuffer(for:).md), then add the [`presentationTimeStamp`](https://developer.apple.com/documentation/coremedia/cmsamplebuffer/presentationtimestamp) for the frame. The cursor steps forward by calling [`stepInDecodeOrder(byCount:)`](avsamplecursor/stepindecodeorder(bycount:).md), reading and caching timestamps for each frame in the buffer. When `stepInDecodeOrder(byCount:)` returns no next frame, sample times are in the cache and reading the video track completes.
 
 ```swift
 repeat {
@@ -69,7 +69,7 @@ repeat {
 
 ##### Load Video Layer Information
 
-After preparing timestamps, the app calls `loadVideoLayerIdsForTrack()` to get the layer IDs for the two tracks associated with the left and right eyes. The app calls [`load(_:isolation:)`](avasynchronouskeyvalueloading/load(_:isolation:).md)to retrieve metadata, then filters the layer data out of the first available track’s [`tagCollections`](https://developer.apple.com/documentation/CoreMedia/CMFormatDescription/tagCollections). The filter predicate is [`value(onlyIfMatching:)`](https://developer.apple.com/documentation/CoreMedia/CMTag-swift.class/value(onlyIfMatching:)), extracting only video layer IDs.
+After preparing timestamps, the app calls `loadVideoLayerIdsForTrack()` to get the layer IDs for the two tracks associated with the left and right eyes. The app calls [`load(_:isolation:)`](avasynchronouskeyvalueloading/load(_:isolation:).md)to retrieve metadata, then filters the layer data out of the first available track’s [`tagCollections`](https://developer.apple.com/documentation/coremedia/cmformatdescription/tagcollections). The filter predicate is [`value(onlyIfMatching:)`](https://developer.apple.com/documentation/coremedia/cmtag-swift.class/value(onlyifmatching:)), extracting only video layer IDs.
 
 ```swift
 private func loadVideoLayerIdsForTrack(_ videoTrack: AVAssetTrack) async throws -> [Int64]? {
@@ -110,7 +110,7 @@ guard taggedBuffers.count == 2 else {
 }
 ```
 
-The app parses each [`CMTaggedBuffer.Buffer.pixelBuffer(_:)`](https://developer.apple.com/documentation/CoreMedia/CMTaggedBuffer/Buffer-swift.enum/pixelBuffer(_:)) from the returned sample buffers into an image for display using [`init(cvPixelBuffer:)`](https://developer.apple.com/documentation/CoreImage/CIImage/init(cvPixelBuffer:)-3wng7). The app creates an [`NSImage`](https://developer.apple.com/documentation/AppKit/NSImage) and sets it to the view content as either `leftEye` or `rightEye` depending on whether the view contains a [`stereoView(_:)`](https://developer.apple.com/documentation/CoreMedia/CMTag-swift.class/stereoView(_:)) for the left or right eye.
+The app parses each [`CMTaggedBuffer.Buffer.pixelBuffer(_:)`](https://developer.apple.com/documentation/coremedia/cmtaggedbuffer/buffer-swift.enum/pixelbuffer(_:)) from the returned sample buffers into an image for display using [`init(cvPixelBuffer:)`](https://developer.apple.com/documentation/coreimage/ciimage/init(cvpixelbuffer:)-3wng7). The app creates an [`NSImage`](https://developer.apple.com/documentation/appkit/nsimage) and sets it to the view content as either `leftEye` or `rightEye` depending on whether the view contains a [`stereoView(_:)`](https://developer.apple.com/documentation/coremedia/cmtag-swift.class/stereoview(_:)) for the left or right eye.
 
 ```swift
 taggedBuffers.forEach { taggedBuffer in

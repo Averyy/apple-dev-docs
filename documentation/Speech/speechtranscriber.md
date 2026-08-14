@@ -63,8 +63,8 @@ Use the [`isAvailable`](speechtranscriber/isavailable.md) or [`supportedLocales`
 
 ### Conforms To
 - [LocaleDependentSpeechModule](localedependentspeechmodule.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 - [SpeechModule](speechmodule.md)
 
 ## See Also

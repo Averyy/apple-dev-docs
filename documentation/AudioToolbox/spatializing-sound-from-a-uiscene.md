@@ -6,13 +6,13 @@ Provide unique app experiences by attaching sounds to windows and volumes in 3D 
 
 #### Overview
 
-Many audio playback APIs have a property to configure their 3D spatial rendering using the [`SpatialAudioExperience`](spatialaudioexperience.md) type [`HeadTrackedSpatialAudio`](headtrackedspatialaudio.md). This article shows how to take advantage of [`HeadTrackedSpatialAudio`](headtrackedspatialaudio.md) to place each sound at the center of its intended [`UIScene`](https://developer.apple.com/documentation/UIKit/UIScene) in your multiwindow or multivolume application.
+Many audio playback APIs have a property to configure their 3D spatial rendering using the [`SpatialAudioExperience`](spatialaudioexperience.md) type [`HeadTrackedSpatialAudio`](headtrackedspatialaudio.md). This article shows how to take advantage of [`HeadTrackedSpatialAudio`](headtrackedspatialaudio.md) to place each sound at the center of its intended [`UIScene`](https://developer.apple.com/documentation/uikit/uiscene) in your multiwindow or multivolume application.
 
-![An illustration of sound spatializing from two windows.](https://docs-assets.developer.apple.com/published/323964a84b824963178ea5b99ae51260/spatializing-sound-from-a-uiscene-01%402x.png)
+![An illustration of sound spatializing from two windows.](/images/com.apple.audiotoolbox/spatializing-sound-from-a-uiscene-01@2x.png)
 
 #### Get the Scenes Identifier
 
-Placing a sound on a specific [`UIScene`](https://developer.apple.com/documentation/UIKit/UIScene) requires knowledge of the target scene’s [`persistentIdentifier`](https://developer.apple.com/documentation/UIKit/UISceneSession/persistentIdentifier). In a SwiftUI application, that means adding both a [`UIApplicationDelegate`](https://developer.apple.com/documentation/UIKit/UIApplicationDelegate) and [`UISceneDelegate`](https://developer.apple.com/documentation/UIKit/UISceneDelegate) to your SwiftUI App:
+Placing a sound on a specific [`UIScene`](https://developer.apple.com/documentation/uikit/uiscene) requires knowledge of the target scene’s [`persistentIdentifier`](https://developer.apple.com/documentation/uikit/uiscenesession/persistentidentifier). In a SwiftUI application, that means adding both a [`UIApplicationDelegate`](https://developer.apple.com/documentation/uikit/uiapplicationdelegate) and [`UISceneDelegate`](https://developer.apple.com/documentation/uikit/uiscenedelegate) to your SwiftUI App:
 
 ```swift
 import SwiftUI 
@@ -47,7 +47,7 @@ class MySceneDelegate: NSObject, UISceneDelegate, ObservableObject {
 }
 ```
 
-The following code makes the identifier for each [`UIScene`](https://developer.apple.com/documentation/UIKit/UIScene) accessible from any SwiftUI [`View`](https://developer.apple.com/documentation/SwiftUI/View) using your [`UISceneDelegate`](https://developer.apple.com/documentation/UIKit/UISceneDelegate) as an [`EnvironmentObject`](https://developer.apple.com/documentation/SwiftUI/EnvironmentObject):
+The following code makes the identifier for each [`UIScene`](https://developer.apple.com/documentation/uikit/uiscene) accessible from any SwiftUI [`View`](https://developer.apple.com/documentation/swiftui/view) using your [`UISceneDelegate`](https://developer.apple.com/documentation/uikit/uiscenedelegate) as an [`EnvironmentObject`](https://developer.apple.com/documentation/swiftui/environmentobject):
 
 ```swift
 import SwiftUI
@@ -63,7 +63,7 @@ struct ContentView: View {
 
 #### Anchor the Sound to the Scene
 
-With a [`UIScene`](https://developer.apple.com/documentation/UIKit/UIScene) identifier in-hand, configure each sound using a [`HeadTrackedSpatialAudio`](headtrackedspatialaudio.md) structure.
+With a [`UIScene`](https://developer.apple.com/documentation/uikit/uiscene) identifier in-hand, configure each sound using a [`HeadTrackedSpatialAudio`](headtrackedspatialaudio.md) structure.
 
 ```swift
 import SwiftUI
@@ -93,7 +93,7 @@ struct ContentView: View {
 }
 ```
 
-Besides just [`AVAudioPlayer`](https://developer.apple.com/documentation/AVFAudio/AVAudioPlayer), you can also use [`SpatialAudioExperience`](spatialaudioexperience.md) types with the other playback APIs listed below.
+Besides just [`AVAudioPlayer`](https://developer.apple.com/documentation/avfaudio/avaudioplayer), you can also use [`SpatialAudioExperience`](spatialaudioexperience.md) types with the other playback APIs listed below.
 
 #### Spatialize System and Alert Sounds
 
@@ -104,19 +104,19 @@ Configure the spatial audio experience of your system and alert sounds using:
 
 #### Spatialize Audio Only Playback Apis
 
-Configure the spatial audio experience of audio-only playback APIs using the [`intendedSpatialExperience`](https://developer.apple.com/documentation/AVFAudio/AVAudioPlayer/intendedSpatialExperience-27klj) property on:
+Configure the spatial audio experience of audio-only playback APIs using the [`intendedSpatialExperience`](https://developer.apple.com/documentation/avfaudio/avaudioplayer/intendedspatialexperience-27klj) property on:
 
-- [`intendedSpatialExperience`](https://developer.apple.com/documentation/AVFAudio/AVAudioPlayer/intendedSpatialExperience-27klj)
-- [`intendedSpatialExperience`](https://developer.apple.com/documentation/AVFAudio/AVAudioOutputNode/intendedSpatialExperience-3ts59)
-- [`intendedSpatialExperience`](AUAudioUnit/intendedSpatialExperience-7uqrm.md)
-- [`intendedSpatialExperience`](https://developer.apple.com/documentation/CoreHaptics/CHHapticEngine/intendedSpatialExperience-55ca0)
+- [`intendedSpatialExperience`](https://developer.apple.com/documentation/avfaudio/avaudioplayer/intendedspatialexperience-27klj)
+- [`intendedSpatialExperience`](https://developer.apple.com/documentation/avfaudio/avaudiooutputnode/intendedspatialexperience-3ts59)
+- [`intendedSpatialExperience`](auaudiounit/intendedspatialexperience-7uqrm.md)
+- [`intendedSpatialExperience`](https://developer.apple.com/documentation/corehaptics/chhapticengine/intendedspatialexperience-55ca0)
 
 #### Spatialize Audio Playback Apis That Also Have Video
 
-Setting a scene identifier on playback APIs that have video content isn’t always necessary as their sound automatically anchors to its visual counterpart. However, if there is no video or if you prefer something besides the automatic behavior, configure the spatial audio experience of these playback APIs using the [`intendedSpatialAudioExperience`](https://developer.apple.com/documentation/AVFoundation/AVPlayer/intendedSpatialAudioExperience-1bd87) property on:
+Setting a scene identifier on playback APIs that have video content isn’t always necessary as their sound automatically anchors to its visual counterpart. However, if there is no video or if you prefer something besides the automatic behavior, configure the spatial audio experience of these playback APIs using the [`intendedSpatialAudioExperience`](https://developer.apple.com/documentation/avfoundation/avplayer/intendedspatialaudioexperience-1bd87) property on:
 
-- [`intendedSpatialAudioExperience`](https://developer.apple.com/documentation/AVFoundation/AVPlayer/intendedSpatialAudioExperience-1bd87)
-- [`intendedSpatialAudioExperience`](https://developer.apple.com/documentation/AVFoundation/AVSampleBufferRenderSynchronizer/intendedSpatialAudioExperience-3z7d3)
+- [`intendedSpatialAudioExperience`](https://developer.apple.com/documentation/avfoundation/avplayer/intendedspatialaudioexperience-1bd87)
+- [`intendedSpatialAudioExperience`](https://developer.apple.com/documentation/avfoundation/avsamplebufferrendersynchronizer/intendedspatialaudioexperience-3z7d3)
 
 ## See Also
 

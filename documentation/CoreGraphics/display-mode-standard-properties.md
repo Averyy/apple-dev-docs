@@ -6,7 +6,7 @@ Keys for the standard properties in a display mode dictionary.
 
 #### Overview
 
-To learn how to use these keys to access the values in a display mode dictionary, see [`CFDictionary`](https://developer.apple.com/documentation/CoreFoundation/CFDictionary).
+To learn how to use these keys to access the values in a display mode dictionary, see [`CFDictionary`](https://developer.apple.com/documentation/corefoundation/cfdictionary).
 
 ##### Special Considerations
 

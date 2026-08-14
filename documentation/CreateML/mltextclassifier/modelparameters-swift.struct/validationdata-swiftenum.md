@@ -42,7 +42,7 @@ enum ValidationData
 
 - [init(validation: MLTextClassifier.ModelParameters.ValidationData, algorithm: MLTextClassifier.ModelAlgorithmType, language: NLLanguage?)](mltextclassifier/modelparameters-swift.struct/init(validation:algorithm:language:).md)
   Creates model parameters for a text classifier with the specified validation data, algorithm, and language.
-- [struct NLLanguage](../NaturalLanguage/NLLanguage.md)
+- [struct NLLanguage](../naturallanguage/nllanguage.md)
   The languages that the Natural Language framework supports.
 - [MLTextClassifier.ModelAlgorithmType](mltextclassifier/modelalgorithmtype.md)
   The type of algorithm that a text classifier uses.

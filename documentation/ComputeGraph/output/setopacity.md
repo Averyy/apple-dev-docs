@@ -19,7 +19,7 @@ void output::setOpacity(half opacity)
 
 This function customizes the alpha component of the rendered particle output, controlling its transparency. This affects only the rendered appearance and does not modify the particle node itself.
 
-> **Note**: ![Graph](https://docs-assets.developer.apple.com/published/a12e4a072973c22a5c5e8ba12ebf3947/output__setOpacity.svg)
+> **Note**: ![Graph](/images/com.apple.computegraph/output__setOpacity.svg)
 
 ## Parameters
 

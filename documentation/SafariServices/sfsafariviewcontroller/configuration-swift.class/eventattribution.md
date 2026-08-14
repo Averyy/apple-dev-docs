@@ -20,7 +20,7 @@ var eventAttribution: UIEventAttribution? { get set }
 
 #### Discussion
 
-For more information about preparing event attribution data, see [`UIEventAttribution`](https://developer.apple.com/documentation/UIKit/UIEventAttribution).
+For more information about preparing event attribution data, see [`UIEventAttribution`](https://developer.apple.com/documentation/uikit/uieventattribution).
 
 ## See Also
 

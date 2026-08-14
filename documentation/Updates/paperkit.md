@@ -6,22 +6,22 @@ Learn about important changes to PaperKit.
 
 #### Overview
 
-Browse notable changes in [`PaperKit`](https://developer.apple.com/documentation/PaperKit).
+Browse notable changes in [`PaperKit`](https://developer.apple.com/documentation/paperkit).
 
 #### June 2026
 
 ##### Data Model
 
-- Represent a markup document using [`PaperMarkup`](https://developer.apple.com/documentation/PaperKit/PaperMarkup), which provides a background color and an ordered collection of markup elements accessible through the [`Markup`](https://developer.apple.com/documentation/PaperKit/Markup) protocol and [`MarkupOrderedSet`](https://developer.apple.com/documentation/PaperKit/MarkupOrderedSet).
+- Represent a markup document using [`PaperMarkup`](https://developer.apple.com/documentation/paperkit/papermarkup), which provides a background color and an ordered collection of markup elements accessible through the [`Markup`](https://developer.apple.com/documentation/paperkit/markup) protocol and [`MarkupOrderedSet`](https://developer.apple.com/documentation/paperkit/markuporderedset).
 
 ##### Markup Elements
 
-- Add images and shapes to a markup document using [`ImageMarkup`](https://developer.apple.com/documentation/PaperKit/ImageMarkup) and [`ShapeMarkup`](https://developer.apple.com/documentation/PaperKit/ShapeMarkup), and embed URLs and magnified views using [`LinkMarkup`](https://developer.apple.com/documentation/PaperKit/LinkMarkup) and [`LoupeMarkup`](https://developer.apple.com/documentation/PaperKit/LoupeMarkup).
-- Control which interactions (such as move, resize, rotate, and delete) are available for each element using [`MarkupInteractions`](https://developer.apple.com/documentation/PaperKit/MarkupInteractions).
+- Add images and shapes to a markup document using [`ImageMarkup`](https://developer.apple.com/documentation/paperkit/imagemarkup) and [`ShapeMarkup`](https://developer.apple.com/documentation/paperkit/shapemarkup), and embed URLs and magnified views using [`LinkMarkup`](https://developer.apple.com/documentation/paperkit/linkmarkup) and [`LoupeMarkup`](https://developer.apple.com/documentation/paperkit/loupemarkup).
+- Control which interactions (such as move, resize, rotate, and delete) are available for each element using [`MarkupInteractions`](https://developer.apple.com/documentation/paperkit/markupinteractions).
 
 ##### Adornments
 
-- Attach custom visuals or handles to specific locations on the canvas using [`MarkupAdornment`](https://developer.apple.com/documentation/PaperKit/MarkupAdornment), and respond to taps and position changes through the [`PaperMarkupViewController`](https://developer.apple.com/documentation/PaperKit/PaperMarkupViewController) delegate.
+- Attach custom visuals or handles to specific locations on the canvas using [`MarkupAdornment`](https://developer.apple.com/documentation/paperkit/markupadornment), and respond to taps and position changes through the [`PaperMarkupViewController`](https://developer.apple.com/documentation/paperkit/papermarkupviewcontroller) delegate.
 
 ## See Also
 

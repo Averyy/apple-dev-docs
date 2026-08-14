@@ -114,9 +114,9 @@ protocol ColumnProtocol<Element> : BidirectionalCollection
 ## Relationships
 
 ### Inherits From
-- [BidirectionalCollection](../Swift/BidirectionalCollection.md)
-- [Collection](../Swift/Collection.md)
-- [Sequence](../Swift/Sequence.md)
+- [BidirectionalCollection](../swift/bidirectionalcollection.md)
+- [Collection](../swift/collection.md)
+- [Sequence](../swift/sequence.md)
 ### Inherited By
 - [OptionalColumnProtocol](optionalcolumnprotocol.md)
 ### Conforming Types

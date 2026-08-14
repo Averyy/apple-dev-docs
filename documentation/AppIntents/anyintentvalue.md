@@ -31,8 +31,8 @@ protocol AnyIntentValue : Sendable
 ## Relationships
 
 ### Inherits From
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 ### Conforming Types
 - [EntityProperty](entityproperty.md)
 - [IntentParameter](intentparameter.md)

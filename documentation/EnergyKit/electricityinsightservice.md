@@ -30,9 +30,9 @@ final actor ElectricityInsightService
 ## Relationships
 
 ### Conforms To
-- [Actor](../Swift/Actor.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Actor](../swift/actor.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

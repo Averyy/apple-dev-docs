@@ -22,11 +22,11 @@ Call this method to register a device with APNs. If registration succeeds, the s
 
 > ❗ **Important**:  Device tokens may change, so don’t cache the device token on the device. Instead, register for remote notifications every time your app launches. If the device token hasn’t changed, registration happens quickly.
 
-To display alerts, play sounds, or perform other user-facing actions, you must also request authorization using the [`UNUserNotificationCenter`](https://developer.apple.com/documentation/UserNotifications/UNUserNotificationCenter) class’s [`requestAuthorization(options:completionHandler:)`](https://developer.apple.com/documentation/UserNotifications/UNUserNotificationCenter/requestAuthorization(options:completionHandler:)) method. If you don’t request and receive authorization for your app’s interactions, the system delivers all remote notifications to your app silently.
+To display alerts, play sounds, or perform other user-facing actions, you must also request authorization using the [`UNUserNotificationCenter`](https://developer.apple.com/documentation/usernotifications/unusernotificationcenter) class’s [`requestAuthorization(options:completionHandler:)`](https://developer.apple.com/documentation/usernotifications/unusernotificationcenter/requestauthorization(options:completionhandler:)) method. If you don’t request and receive authorization for your app’s interactions, the system delivers all remote notifications to your app silently.
 
 If your watchOS app has an iOS companion, always send notifications to both watchOS and the paired iOS device. As long as the payloads are identical, the system recognizes the duplicates, and only displays one notification to the user.
 
-For more information on setting up remote notifications, see [`Setting up a remote notification server`](https://developer.apple.com/documentation/UserNotifications/setting-up-a-remote-notification-server) and [`Registering your app with APNs`](https://developer.apple.com/documentation/UserNotifications/registering-your-app-with-apns).
+For more information on setting up remote notifications, see [`Setting up a remote notification server`](https://developer.apple.com/documentation/usernotifications/setting-up-a-remote-notification-server) and [`Registering your app with APNs`](https://developer.apple.com/documentation/usernotifications/registering-your-app-with-apns).
 
 ## See Also
 

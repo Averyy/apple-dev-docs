@@ -10,11 +10,11 @@ With Apple News Format, you can create signature visual designs for your article
 
 The images below show what your Apple News Format article should look like once you’ve completed the introductory tutorial. These images show some of the design and layout features of Apple News Format. Apple News automatically optimizes your articles for iPhone, iPad, iPod touch, and Mac to give your readers the best experience for their device.
 
-![Screenshot of an Apple News article with a variety of text styles and a photo, on a Mac, iPad, and iPhone.](https://docs-assets.developer.apple.com/published/015363004c93fc4fd07460f23d82248a/media-3958339%402x.png)
+![Screenshot of an Apple News article with a variety of text styles and a photo, on a Mac, iPad, and iPhone.](/images/com.apple.applenews/media-3958339@2x.png)
 
-![Screenshot of an Apple News article with a mosaic on a Mac, iPad, and iPhone.](https://docs-assets.developer.apple.com/published/f84d6eb2a6629ad29f839aeef781e7fc/media-3624430%402x.png)
+![Screenshot of an Apple News article with a mosaic on a Mac, iPad, and iPhone.](/images/com.apple.applenews/media-3624430@2x.png)
 
-![Screenshot of an Apple News article with a map on a Mac, iPad, and iPhone.](https://docs-assets.developer.apple.com/published/0e58c962ab309a678e1391bee54be513/media-3624429%402x.png)
+![Screenshot of an Apple News article with a map on a Mac, iPad, and iPhone.](/images/com.apple.applenews/media-3624429@2x.png)
 
 ##### Choose an Option for Completing the Introductory Tutorial
 

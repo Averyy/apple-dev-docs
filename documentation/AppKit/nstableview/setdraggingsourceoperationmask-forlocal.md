@@ -17,7 +17,7 @@ func setDraggingSourceOperationMask(_ mask: NSDragOperation, forLocal isLocal: B
 ## Parameters
 
 - `mask`: The drag operation mask. See [`NSDragOperation`](nsdragoperation.md) for the supported values.
-- `isLocal`: [`true`](https://developer.apple.com/documentation/Swift/true) if the destination is the same application, otherwise [`false`](https://developer.apple.com/documentation/Swift/false). In either case the specified `mask` value is archived and used.
+- `isLocal`: [`true`](https://developer.apple.com/documentation/swift/true) if the destination is the same application, otherwise [`false`](https://developer.apple.com/documentation/swift/false). In either case the specified `mask` value is archived and used.
 
 ## See Also
 

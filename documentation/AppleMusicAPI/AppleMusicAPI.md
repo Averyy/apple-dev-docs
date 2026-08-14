@@ -17,7 +17,7 @@ Use Apple Music API to access information about media in the Apple Music Catalog
 
 Use this API to retrieve information about albums, songs, artists, playlists, music videos, Apple Music stations, ratings, charts, recommendations, and the user’s most-recently played content. With proper authorization from the user, you can also create or modify playlists and apply ratings to the user’s content.
 
-> **Note**:  Use the [`Apple Music Feed`](https://developer.apple.com/documentation/AppleMusicFeed) to access the Apple Music Catalog in bulk.
+> **Note**:  Use the [`Apple Music Feed`](https://developer.apple.com/documentation/applemusicfeed) to access the Apple Music Catalog in bulk.
 
 ## Topics
 
@@ -124,9 +124,9 @@ Use this API to retrieve information about albums, songs, artists, playlists, mu
 
 ## See Also
 
-- [Media Player](../MediaPlayer/MediaPlayer.md)
+- [Media Player](../mediaplayer/mediaplayer.md)
   Find and play songs, audio podcasts, audio books, and more from within your app.
-- [StoreKit](../StoreKit/StoreKit.md)
+- [StoreKit](../storekit/storekit.md)
   Support In-App Purchases and interactions with the App Store.
 
 

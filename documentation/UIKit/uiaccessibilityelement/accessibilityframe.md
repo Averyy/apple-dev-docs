@@ -22,7 +22,7 @@ var accessibilityFrame: CGRect { get set }
 
 When you create an accessibility element to represent an element in your application, you must set this property to the `CGRect` structure that specifies the object’s screen location and size. (Objects that inherit from `UIView` include this information by default.)
 
-Assigning a new value to this property changes the value of the [`accessibilityFrameInContainerSpace`](uiaccessibilityelement/accessibilityframeincontainerspace.md) property to [`CGRectNull`](https://developer.apple.com/documentation/CoreGraphics/CGRectNull).
+Assigning a new value to this property changes the value of the [`accessibilityFrameInContainerSpace`](uiaccessibilityelement/accessibilityframeincontainerspace.md) property to [`CGRectNull`](https://developer.apple.com/documentation/coregraphics/cgrectnull).
 
 ## See Also
 

@@ -17,7 +17,7 @@ let kSecCodeInfoChangedFiles: CFString
 
 #### Discussion
 
-The value is a [`CFArray`](https://developer.apple.com/documentation/CoreFoundation/CFArray) array of [`CFURL`](https://developer.apple.com/documentation/CoreFoundation/CFURL) objects. Files not in this list have not been touched by the signing operation.
+The value is a [`CFArray`](https://developer.apple.com/documentation/corefoundation/cfarray) array of [`CFURL`](https://developer.apple.com/documentation/corefoundation/cfurl) objects. Files not in this list have not been touched by the signing operation.
 
 Specify the [`kSecCSContentInformation`](kseccscontentinformation.md) flag when calling the [`SecCodeCopySigningInformation(_:_:_:)`](seccodecopysigninginformation(_:_:_:).md) function to get this information.
 

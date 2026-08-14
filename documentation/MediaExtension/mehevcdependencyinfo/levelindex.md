@@ -16,7 +16,7 @@ var levelIndex: Int16 { get set }
 
 #### Discussion
 
-This value maps to the [`kCMHEVCTemporalLevelInfoKey_LevelIndex`](https://developer.apple.com/documentation/CoreMedia/kCMHEVCTemporalLevelInfoKey_LevelIndex) sample buffer attachment, and is `-1` if this information isn’t available.
+This value maps to the [`kCMHEVCTemporalLevelInfoKey_LevelIndex`](https://developer.apple.com/documentation/coremedia/kcmhevctemporallevelinfokey_levelindex) sample buffer attachment, and is `-1` if this information isn’t available.
 
 ## See Also
 

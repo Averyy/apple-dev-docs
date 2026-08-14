@@ -8,7 +8,7 @@ Learn how to identify and handle CloudKit throttles.
 
 The CloudKit infrastructure is shared by all apps and services. The resources are finite, and so high utilization from one app can negatively affect others. To avoid this kind of impact and optimize the overall experience, CloudKit implements a number of limits and controls on incoming traffic, which are known as *throttles*.
 
-CloudKit can enforce throttles when it deems necessary on any app or service that uses the [`CloudKit`](https://developer.apple.com/documentation/CloudKit) framework, [`CloudKit Web Services`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/DataManagement/Conceptual/CloudKitWebServicesReference/index.html), [`CloudKit JS`](https://developer.apple.com/documentation/CloudKitJS), [`NSPersistentCloudKitContainer`](https://developer.apple.com/documentation/CoreData/NSPersistentCloudKitContainer), and [`NSUbiquitousKeyValueStore`](https://developer.apple.com/documentation/Foundation/NSUbiquitousKeyValueStore). This technote discusses how to identify CloudKit throttles with representative error messages and how to handle them.
+CloudKit can enforce throttles when it deems necessary on any app or service that uses the [`CloudKit`](https://developer.apple.com/documentation/cloudkit) framework, [`CloudKit Web Services`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/DataManagement/Conceptual/CloudKitWebServicesReference/index.html), [`CloudKit JS`](https://developer.apple.com/documentation/cloudkitjs), [`NSPersistentCloudKitContainer`](https://developer.apple.com/documentation/coredata/nspersistentcloudkitcontainer), and [`NSUbiquitousKeyValueStore`](https://developer.apple.com/documentation/foundation/nsubiquitouskeyvaluestore). This technote discusses how to identify CloudKit throttles with representative error messages and how to handle them.
 
 #### Identify Cloudkit Throttles
 
@@ -17,7 +17,7 @@ The CloudKit server throttles a request from an app in the following cases:
 - The app issues many CloudKit requests in a short time frame, and hits the rate limit.
 - The app uses CloudKit in an inappropriate pattern, such as simultaneously triggering recurring spikes in request rates from many devices.
 
-When the CloudKit server enforces throttles, it returns an error with a `retryAfter` value, which indicates how long the app should wait before retrying the request. For apps that use the CloudKit framework, the error is converted to [`serviceUnavailable`](https://developer.apple.com/documentation/CloudKit/CKError/serviceUnavailable), with information shown in the following example:
+When the CloudKit server enforces throttles, it returns an error with a `retryAfter` value, which indicates how long the app should wait before retrying the request. For apps that use the CloudKit framework, the error is converted to [`serviceUnavailable`](https://developer.apple.com/documentation/cloudkit/ckerror/serviceunavailable), with information shown in the following example:
 
 ```None
 [
@@ -47,7 +47,7 @@ For apps that use CloudKit Web Services or CloudKit JS, the error is conveyed in
 }
 ```
 
-CloudKit on the device side can work with the server to enforce throttles as well. This prevents CloudKit requests from being sent to the server, and saves networking and server resources. When an app hits this kind of throttle, its CloudKit operation ([`CKOperation`](https://developer.apple.com/documentation/CloudKit/CKOperation)) gets a [`requestRateLimited`](https://developer.apple.com/documentation/CloudKit/CKError/requestRateLimited) error, as shown in the following example:
+CloudKit on the device side can work with the server to enforce throttles as well. This prevents CloudKit requests from being sent to the server, and saves networking and server resources. When an app hits this kind of throttle, its CloudKit operation ([`CKOperation`](https://developer.apple.com/documentation/cloudkit/ckoperation)) gets a [`requestRateLimited`](https://developer.apple.com/documentation/cloudkit/ckerror/requestratelimited) error, as shown in the following example:
 
 ```None
 <CKError 0x600003ba77b0: "Request Rate Limited" (7/2008); 
@@ -66,10 +66,10 @@ CloudKit throttles are implemented to balance the use of CloudKit resources and 
 The best strategy to handle CloudKit throttles is to avoid them in the first place, and respect the `retryAfter` time if they happen. For apps that use the CloudKit framework, consider the following:
 
 - Minimize the number of CloudKit operations and avoid doing many operations in a short time frame.
-- Handle errors for every CloudKit operation. When hitting a `.requestRateLimited` or `.serviceUnavailable` error, retrieve the [`CKErrorRetryAfterKey`](https://developer.apple.com/documentation/CloudKit/CKErrorRetryAfterKey) value from the [`userInfo`](https://developer.apple.com/documentation/Foundation/NSError/userInfo) dictionary, and use it as the number of seconds to wait before retrying the operation.
-- For operations that are not critical for the current launch session, schedule them as background tasks using the [`Background Tasks`](https://developer.apple.com/documentation/BackgroundTasks) framework to have the system run the operations when it determines appropriate.
+- Handle errors for every CloudKit operation. When hitting a `.requestRateLimited` or `.serviceUnavailable` error, retrieve the [`CKErrorRetryAfterKey`](https://developer.apple.com/documentation/cloudkit/ckerrorretryafterkey) value from the [`userInfo`](https://developer.apple.com/documentation/foundation/nserror/userinfo) dictionary, and use it as the number of seconds to wait before retrying the operation.
+- For operations that are not critical for the current launch session, schedule them as background tasks using the [`Background Tasks`](https://developer.apple.com/documentation/backgroundtasks) framework to have the system run the operations when it determines appropriate.
 
-> **Note**: Apps that use [`CKSyncEngine`](https://developer.apple.com/documentation/CloudKit/CKSyncEngine-5sie5), which is a part of the CloudKit framework, don’t need to handle the errors. When hitting a throttle,  `CKSyncEngine` respects it and automatically re-schedules the synchronization tasks after the `retry-after` time.
+> **Note**: Apps that use [`CKSyncEngine`](https://developer.apple.com/documentation/cloudkit/cksyncengine-5sie5), which is a part of the CloudKit framework, don’t need to handle the errors. When hitting a throttle,  `CKSyncEngine` respects it and automatically re-schedules the synchronization tasks after the `retry-after` time.
 
 Similarly, apps that use CloudKit Web Services or CloudKit JS need to gracefully handle the throttle error the CloudKit server returns, and honor the `retry-after` time.
 

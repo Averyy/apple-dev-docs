@@ -25,7 +25,7 @@ var path: NSBezierPath? { get set }
 
 SceneKit determines the filled area of the path using the even-odd winding rule (see [`Winding Rules`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/CocoaDrawingGuide/Paths/Paths.html#//apple_ref/doc/uid/TP40003290-CH206-BAJIJJGD) in [`Cocoa Drawing Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/CocoaDrawingGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40003290)) and extrudes this area to create a three-dimensional geometry. The result of extruding a self-intersecting path is undefined.
 
-The path’s flatness (see [`flatness`](https://developer.apple.com/documentation/AppKit/NSBezierPath/flatness) in [`NSBezierPath`](https://developer.apple.com/documentation/AppKit/NSBezierPath)) determines the level of detail SceneKit uses in building a three-dimensional shape from the path—a larger flatness value results in fewer polygons to render, increasing performance.
+The path’s flatness (see [`flatness`](https://developer.apple.com/documentation/appkit/nsbezierpath/flatness) in [`NSBezierPath`](https://developer.apple.com/documentation/appkit/nsbezierpath)) determines the level of detail SceneKit uses in building a three-dimensional shape from the path—a larger flatness value results in fewer polygons to render, increasing performance.
 
 ## See Also
 

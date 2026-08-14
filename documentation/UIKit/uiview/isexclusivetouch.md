@@ -19,7 +19,7 @@ var isExclusiveTouch: Bool { get set }
 
 #### Discussion
 
-Setting this property to [`true`](https://developer.apple.com/documentation/Swift/true) causes the receiver to block the delivery of touch events to other views in the same window. The default value of this property is [`false`](https://developer.apple.com/documentation/Swift/false).
+Setting this property to [`true`](https://developer.apple.com/documentation/swift/true) causes the receiver to block the delivery of touch events to other views in the same window. The default value of this property is [`false`](https://developer.apple.com/documentation/swift/false).
 
 ## See Also
 

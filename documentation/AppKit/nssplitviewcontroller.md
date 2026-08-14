@@ -20,7 +20,7 @@ A split view controller manages a set of child views that it displays next to ea
 
 A split view controller owns an array of split view items ([`NSSplitViewItem`](nssplitviewitem.md)), each of which has a view controller ([`NSViewController`](nsviewcontroller.md)) and corresponding view. The split view controller’s [`splitView`](nssplitviewcontroller/splitview.md) object manages those child views and the dividers between them.
 
-By default, a split view arranges its child views vertically from top to bottom. To specify a horizontal (side-by-side) arrangement, implement the [`isVertical`](nssplitview/isvertical.md) property of the [`splitView`](nssplitviewcontroller/splitview.md) object to return [`true`](https://developer.apple.com/documentation/Swift/true).
+By default, a split view arranges its child views vertically from top to bottom. To specify a horizontal (side-by-side) arrangement, implement the [`isVertical`](nssplitview/isvertical.md) property of the [`splitView`](nssplitviewcontroller/splitview.md) object to return [`true`](https://developer.apple.com/documentation/swift/true).
 
 The split view controller serves as the delegate of its [`splitView`](nssplitviewcontroller/splitview.md) object. If you override a split view delegate method, your override must call `super`.
 
@@ -70,15 +70,15 @@ For more information about using [`NSSplitViewController`](nssplitviewcontroller
 ### Inherits From
 - [NSViewController](nsviewcontroller.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCoding](../Foundation/NSCoding.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCoding](../foundation/nscoding.md)
 - [NSEditor](nseditor.md)
-- [NSExtensionRequestHandling](../Foundation/NSExtensionRequestHandling.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSExtensionRequestHandling](../foundation/nsextensionrequesthandling.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 - [NSSeguePerforming](nssegueperforming.md)
 - [NSSplitViewDelegate](nssplitviewdelegate.md)
 - [NSStandardKeyBindingResponding](nsstandardkeybindingresponding.md)
@@ -86,8 +86,8 @@ For more information about using [`NSSplitViewController`](nssplitviewcontroller
 - [NSUserActivityRestoring](nsuseractivityrestoring.md)
 - [NSUserInterfaceItemIdentification](nsuserinterfaceitemidentification.md)
 - [NSUserInterfaceValidations](nsuserinterfacevalidations.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

@@ -92,7 +92,7 @@ A `RawSpan` instance is a non-owning, non-escaping view into memory. When a `Raw
 
 ### Conforms To
 - [BitwiseCopyable](bitwisecopyable.md)
-- [ContiguousBytes](../Foundation/ContiguousBytes.md)
+- [ContiguousBytes](../foundation/contiguousbytes.md)
 - [Iterable](iterable.md)
 - [Sendable](sendable.md)
 - [SendableMetatype](sendablemetatype.md)

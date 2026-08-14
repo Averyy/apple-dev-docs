@@ -213,11 +213,11 @@ The example has at least one access conflict because passes 2 and 3 both access 
 - The copy command from the second pass stores to `bufferD`.
 - The dispatch command from the third pass loads from `bufferD`.
 
-![A diagram showing three compute passes where pass 2 stores to buffer D during its blit stage, and pass 3 loads from buffer D during its dispatch stage, creating an access conflict.](https://docs-assets.developer.apple.com/published/b8f2dddda491cfc8f09e6dc865f955c0/synchronizing-passes-with-producer-barriers-1%402x.png)
+![A diagram showing three compute passes where pass 2 stores to buffer D during its blit stage, and pass 3 loads from buffer D during its dispatch stage, creating an access conflict.](/images/com.apple.metal/synchronizing-passes-with-producer-barriers-1@2x.png)
 
 Without synchronization, the GPU can run all three passes and their stages in parallel, which can yield inconsistent results in resources with access conflicts.
 
-![A diagram showing all three passes and their stages running in parallel without synchronization, potentially causing inconsistent results when accessing buffer D.](https://docs-assets.developer.apple.com/published/86e018ad27fa0e256bac86611e0224d2/synchronizing-passes-with-producer-barriers-2%402x.png)
+![A diagram showing all three passes and their stages running in parallel without synchronization, potentially causing inconsistent results when accessing buffer D.](/images/com.apple.metal/synchronizing-passes-with-producer-barriers-2@2x.png)
 
 ##### Resolve Access Conflicts with a Producer Barrier
 
@@ -289,7 +289,7 @@ The following example modifies the code that encodes the second pass by adding a
 
 In this example, the barrier prevents the GPU from running the dispatch stage in the third pass until the blit stages in both the first and second pass finish storing their modifications.
 
-![A diagram showing the producer barrier synchronization where the GPU waits for the blit stages of passes 1 and 2 to complete before running the dispatch stage of pass 3.](https://docs-assets.developer.apple.com/published/899fbb275861abaa947f5dad152a6e28/synchronizing-passes-with-producer-barriers-3%402x.png)
+![A diagram showing the producer barrier synchronization where the GPU waits for the blit stages of passes 1 and 2 to complete before running the dispatch stage of pass 3.](/images/com.apple.metal/synchronizing-passes-with-producer-barriers-3@2x.png)
 
 The barrier unblocks the dispatch stage of the third pass when the blit stage from the first pass finishes running because it’s the last blit stage to finish of all the passes that apply to the `afterStages` parameter.
 

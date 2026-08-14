@@ -23,7 +23,7 @@ func UIRectClip(_ rect: CGRect)
 
 Each call to this function permanently shrinks the clipping path of the current graphics context using the specified rectangle. You cannot use this function to expand the clipping region path. If the current graphics context is `nil`, this function does nothing.
 
-If you need to return the clipping path to its original shape in your drawing code, you should save the current graphics context before calling this function. To save the current state of the graphics context, call the [`saveGState()`](https://developer.apple.com/documentation/CoreGraphics/CGContext/saveGState()) function before making your modifications. When you are ready to restore the original clipping region, you can then use the [`restoreGState()`](https://developer.apple.com/documentation/CoreGraphics/CGContext/restoreGState()) function to restore the previous graphics state.
+If you need to return the clipping path to its original shape in your drawing code, you should save the current graphics context before calling this function. To save the current state of the graphics context, call the [`saveGState()`](https://developer.apple.com/documentation/coregraphics/cgcontext/savegstate()) function before making your modifications. When you are ready to restore the original clipping region, you can then use the [`restoreGState()`](https://developer.apple.com/documentation/coregraphics/cgcontext/restoregstate()) function to restore the previous graphics state.
 
 This function may be called from any thread of your app.
 

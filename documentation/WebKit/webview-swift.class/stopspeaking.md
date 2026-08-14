@@ -16,7 +16,7 @@ func stopSpeaking(_ sender: Any?)
 
 #### Discussion
 
-This action method stops speech that was previously started with [`startSpeaking(_:)`](webview-swift.class/startspeaking(_:).md). This method behaves similar to the [`stopSpeaking(_:)`](https://developer.apple.com/documentation/AppKit/NSTextView/stopSpeaking(_:)) method in [`NSTextView`](https://developer.apple.com/documentation/AppKit/NSTextView).
+This action method stops speech that was previously started with [`startSpeaking(_:)`](webview-swift.class/startspeaking(_:).md). This method behaves similar to the [`stopSpeaking(_:)`](https://developer.apple.com/documentation/appkit/nstextview/stopspeaking(_:)) method in [`NSTextView`](https://developer.apple.com/documentation/appkit/nstextview).
 
 ## Parameters
 

@@ -18,6 +18,9 @@ func AXUIElementSetMessagingTimeout(_ element: AXUIElement, _ timeoutInSeconds: 
 
 If unsuccessful, `AXUIElementSetMessagingTimeout` may return one of the following error codes, among others:
 
+- **`kAXErrorIllegalArgument`**: One or more of the arguments is an illegal value (timeout values must be positive).
+- **`kAXErrorInvalidUIElement`**: The AXUIElementRef is invalid.
+
 #### Discussion
 
 Pass the system-wide accessibility object (see [`AXUIElementCreateSystemWide()`](1462095-axuielementcreatesystemwide.md)) if you want to set the timeout globally for this process. Setting the timeout on another accessibility object sets it only for that object, not for other accessibility objects that are equal to it.

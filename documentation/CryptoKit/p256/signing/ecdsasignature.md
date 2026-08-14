@@ -36,9 +36,9 @@ struct ECDSASignature
 ## Relationships
 
 ### Conforms To
-- [ContiguousBytes](../Foundation/ContiguousBytes.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [ContiguousBytes](../foundation/contiguousbytes.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

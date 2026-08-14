@@ -16,7 +16,7 @@ func indexPathsForVisibleSupplementaryElements(ofKind elementKind: NSCollectionV
 
 #### Return Value
 
-The set of [`NSIndexPath`](https://developer.apple.com/documentation/Foundation/NSIndexPath) objects. The returned array may be empty.
+The set of [`NSIndexPath`](https://developer.apple.com/documentation/foundation/nsindexpath) objects. The returned array may be empty.
 
 #### Discussion
 

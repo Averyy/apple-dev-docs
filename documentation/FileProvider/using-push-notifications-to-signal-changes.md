@@ -6,7 +6,7 @@ Send push notifications to a device to signal changes from your server.
 
 #### Overview
 
-You can signal changes by sending push notifications from a remote server, using the [`PushKit`](https://developer.apple.com/documentation/PushKit) framework and the [`fileProvider`](https://developer.apple.com/documentation/PushKit/PKPushType/fileProvider) push type. When the system receives the notification, it automatically calls the [`signalEnumerator(for:completionHandler:)`](nsfileprovidermanager/signalenumerator(for:completionhandler:).md) method with the specified identifier. It also delivers the notification to any [`PKPushRegistryDelegate`](https://developer.apple.com/documentation/PushKit/PKPushRegistryDelegate) objects.
+You can signal changes by sending push notifications from a remote server, using the [`PushKit`](https://developer.apple.com/documentation/pushkit) framework and the [`fileProvider`](https://developer.apple.com/documentation/pushkit/pkpushtype/fileprovider) push type. When the system receives the notification, it automatically calls the [`signalEnumerator(for:completionHandler:)`](nsfileprovidermanager/signalenumerator(for:completionhandler:).md) method with the specified identifier. It also delivers the notification to any [`PKPushRegistryDelegate`](https://developer.apple.com/documentation/pushkit/pkpushregistrydelegate) objects.
 
 To use push notifications, you start by generating the signing key for your app. Next, you configure your app to receive push notifications. Finally, you send the notifications from your server. The following sections describe each step.
 
@@ -29,7 +29,7 @@ Then, register for push notifications. You can register in your app delegate, yo
 
 > **Note**:  If you only register for push notifications in your app delegate and the device token changes, your app won’t receive notifications until someone launches the app. Registering in the File Provider extension means your app can update the device token the next time anyone interacts with the File Provider extension’s content.
 
-In your `AppDelegate` or `FileProviderExtension` classes, adopt the [`PKPushRegistryDelegate`](https://developer.apple.com/documentation/PushKit/PKPushRegistryDelegate) protocol.
+In your `AppDelegate` or `FileProviderExtension` classes, adopt the [`PKPushRegistryDelegate`](https://developer.apple.com/documentation/pushkit/pkpushregistrydelegate) protocol.
 
 ```swift
 import PushKit
@@ -54,7 +54,7 @@ Also, create a `pushRegistry` instance variable in each class.
 var pushRegistry: PKPushRegistry!
 ```
 
-In your AppDelegate class’s [`application(_:didFinishLaunchingWithOptions:)`](https://developer.apple.com/documentation/UIKit/UIApplicationDelegate/application(_:didFinishLaunchingWithOptions:)) method, register for push notifications.
+In your AppDelegate class’s [`application(_:didFinishLaunchingWithOptions:)`](https://developer.apple.com/documentation/uikit/uiapplicationdelegate/application(_:didfinishlaunchingwithoptions:)) method, register for push notifications.
 
 ```swift
 func application(
@@ -79,11 +79,11 @@ override init() {
 }
 ```
 
-Finally, implement the [`pushRegistry(_:didUpdate:for:)`](https://developer.apple.com/documentation/PushKit/PKPushRegistryDelegate/pushRegistry(_:didUpdate:for:)) delegate method in both your `AppDelegate` and `FileProvider` classes. The [`pushRegistry(_:didInvalidatePushTokenFor:)`](https://developer.apple.com/documentation/PushKit/PKPushRegistryDelegate/pushRegistry(_:didInvalidatePushTokenFor:)) method is optional.
+Finally, implement the [`pushRegistry(_:didUpdate:for:)`](https://developer.apple.com/documentation/pushkit/pkpushregistrydelegate/pushregistry(_:didupdate:for:)) delegate method in both your `AppDelegate` and `FileProvider` classes. The [`pushRegistry(_:didInvalidatePushTokenFor:)`](https://developer.apple.com/documentation/pushkit/pkpushregistrydelegate/pushregistry(_:didinvalidatepushtokenfor:)) method is optional.
 
-> **Note**:  The [`pushRegistry(_:didReceiveIncomingPushWith:for:completion:)`](https://developer.apple.com/documentation/PushKit/PKPushRegistryDelegate/pushRegistry(_:didReceiveIncomingPushWith:for:completion:)) method is never called for [`fileProvider`](https://developer.apple.com/documentation/PushKit/PKPushType/fileProvider) type pushes. These notifications are automatically handled by the system instead.
+> **Note**:  The [`pushRegistry(_:didReceiveIncomingPushWith:for:completion:)`](https://developer.apple.com/documentation/pushkit/pkpushregistrydelegate/pushregistry(_:didreceiveincomingpushwith:for:completion:)) method is never called for [`fileProvider`](https://developer.apple.com/documentation/pushkit/pkpushtype/fileprovider) type pushes. These notifications are automatically handled by the system instead.
 
-In both your `AppDelegate` and `FileProvider` classes’ [`pushRegistry(_:didUpdate:for:)`](https://developer.apple.com/documentation/PushKit/PKPushRegistryDelegate/pushRegistry(_:didUpdate:for:)) methods, when you receive a [`PKPushCredentials`](https://developer.apple.com/documentation/PushKit/PKPushCredentials) instance, extract the value of its [`token`](https://developer.apple.com/documentation/PushKit/PKPushCredentials/token) property, and send it to your server. This value is an app-specific device token. Your server uses the device token to request push notifications for this device.
+In both your `AppDelegate` and `FileProvider` classes’ [`pushRegistry(_:didUpdate:for:)`](https://developer.apple.com/documentation/pushkit/pkpushregistrydelegate/pushregistry(_:didupdate:for:)) methods, when you receive a [`PKPushCredentials`](https://developer.apple.com/documentation/pushkit/pkpushcredentials) instance, extract the value of its [`token`](https://developer.apple.com/documentation/pushkit/pkpushcredentials/token) property, and send it to your server. This value is an app-specific device token. Your server uses the device token to request push notifications for this device.
 
 ```swift
 func pushRegistry(
@@ -102,7 +102,7 @@ You’re now ready to send a push notification. Start by creating a JWT; for det
 
 Then send a POST request to the APNs server with the following values:
 
-- The `:path` value is `/3/device/<device-token>`. This token is the device token you sent to your server from your [`pushRegistry(_:didUpdate:for:)`](https://developer.apple.com/documentation/PushKit/PKPushRegistryDelegate/pushRegistry(_:didUpdate:for:)) method.
+- The `:path` value is `/3/device/<device-token>`. This token is the device token you sent to your server from your [`pushRegistry(_:didUpdate:for:)`](https://developer.apple.com/documentation/pushkit/pkpushregistrydelegate/pushregistry(_:didupdate:for:)) method.
 - The `authorization` value is `bearer <provider token>`. This token is your JWT.
 - The `apns-topic` value is `<bundle identifier>.pushkit.fileprovider`. The bundle identifier is your app’s bundle identifier.
 

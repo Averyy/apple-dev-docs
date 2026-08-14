@@ -23,12 +23,12 @@ func remapValues(toTerracesWithPeaks peakInputValues: [NSNumber], terracesInvert
 
 When you call this method, the [`GKNoise`](gknoise.md) class first creates a curve between the points in the `peakInputValues` array. Each point in the array is a value that remains unchanged, and the `inverted` parameter determines the shape of the curve in between those points. Then, this method uses the curve to replace values in the noise field. The resulting effect can be useful for generating textures that resemble realistic terrain, replacing sloping hills with dramatic plateaus and ridges.
 
-![None](https://docs-assets.developer.apple.com/published/31604a8e83ff7fb74e6c941afbcc97a1/media-2556390%402x.png)
+![None](/images/com.apple.gameplaykit/media-2556390@2x.png)
 
 ## Parameters
 
 - `peakInputValues`: An array of noise values to use as the sharp points of the mapping curve.
-- `inverted`: [`true`](https://developer.apple.com/documentation/Swift/true) for curves that start rising slowly and become more steep; [`false`](https://developer.apple.com/documentation/Swift/false) for curves that start rising quickly and become more shallow.
+- `inverted`: [`true`](https://developer.apple.com/documentation/swift/true) for curves that start rising slowly and become more steep; [`false`](https://developer.apple.com/documentation/swift/false) for curves that start rising quickly and become more shallow.
 
 ## See Also
 

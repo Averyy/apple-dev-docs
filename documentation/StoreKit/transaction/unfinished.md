@@ -35,7 +35,7 @@ A transaction is unfinished until you call [`finish()`](transaction/finish().md)
   Gets the customer’s most recent transaction for an In-App Purchase.
 - [static var all: Transaction.Transactions](transaction/all.md)
   A sequence that emits all the customer’s transactions for your app.
-- [SKIncludeConsumableInAppPurchaseHistory](../BundleResources/Information-Property-List/SKIncludeConsumableInAppPurchaseHistory.md)
+- [SKIncludeConsumableInAppPurchaseHistory](../bundleresources/information-property-list/skincludeconsumableinapppurchasehistory.md)
   A Boolean value that determines whether StoreKit includes finished consumable In-App Purchases in transaction information.
 
 

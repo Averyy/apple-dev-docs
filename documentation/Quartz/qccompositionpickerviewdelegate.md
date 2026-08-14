@@ -7,12 +7,12 @@ The `QCCompositionPickerViewDelegate` informal protocol defines methods that all
 ## Topics
 
 ### Responding to Composition Selections
-- [func compositionPickerView(QCCompositionPickerView!, didSelect: QCComposition!)](../ObjectiveC/NSObject-swift.class/compositionPickerView(_:didSelect:).md)
+- [func compositionPickerView(QCCompositionPickerView!, didSelect: QCComposition!)](../objectivec/nsobject-swift.class/compositionpickerview(_:didselect:).md)
   Performs custom tasks when the selected composition in the composition picker view changes.
 ### Responding to Animation State Changes
-- [func compositionPickerViewDidStartAnimating(QCCompositionPickerView!)](../ObjectiveC/NSObject-swift.class/compositionPickerViewDidStartAnimating(_:).md)
+- [func compositionPickerViewDidStartAnimating(QCCompositionPickerView!)](../objectivec/nsobject-swift.class/compositionpickerviewdidstartanimating(_:).md)
   Performs custom tasks when the composition picker view starts animating a composition.
-- [func compositionPickerViewWillStopAnimating(QCCompositionPickerView!)](../ObjectiveC/NSObject-swift.class/compositionPickerViewWillStopAnimating(_:).md)
+- [func compositionPickerViewWillStopAnimating(QCCompositionPickerView!)](../objectivec/nsobject-swift.class/compositionpickerviewwillstopanimating(_:).md)
   Performs custom tasks when the composition picker view stops animating a composition.
 
 ## See Also

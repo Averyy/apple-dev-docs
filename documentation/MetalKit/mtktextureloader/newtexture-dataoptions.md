@@ -25,7 +25,7 @@ A fully loaded and initialized Metal texture, or `nil` if an error occurred.
 
 ## Parameters
 
-- `data`: The [`NSData`](https://developer.apple.com/documentation/Foundation/NSData) object containing image data.
+- `data`: The [`NSData`](https://developer.apple.com/documentation/foundation/nsdata) object containing image data.
 - `options`: A dictionary describing any additional texture loading steps. See `Texture Loading Options`.
 
 ## See Also

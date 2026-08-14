@@ -392,7 +392,7 @@ The `static_cast` operator converts a generic pointer to a concrete pointer with
 thread int* concrete = static_cast<thread int*>(generic);
 ```
 
-The conversion is only valid when the generic pointer refers to the address space in the cast operator. Invalid conversions can lead to incorrect behavior or results. When you enable Shader Validation, it detects these invalid conversions during development. For more information, see [`Validating your app’s Metal shader usage`](https://developer.apple.com/documentation/Xcode/Validating-your-apps-Metal-shader-usage).
+The conversion is only valid when the generic pointer refers to the address space in the cast operator. Invalid conversions can lead to incorrect behavior or results. When you enable Shader Validation, it detects these invalid conversions during development. For more information, see [`Validating your app’s Metal shader usage`](https://developer.apple.com/documentation/xcode/validating-your-apps-metal-shader-usage).
 
 > **Note**: Casting a null pointer returns a null pointer.
 

@@ -21,7 +21,7 @@ let HKMetadataKeyDevicePlacementSide: String
 
 #### Discussion
 
-This key takes an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) that contains a value from [`HKDevicePlacementSide`](hkdeviceplacementside.md).
+This key takes an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) that contains a value from [`HKDevicePlacementSide`](hkdeviceplacementside.md).
 
 For mobility samples, like [`walkingSpeed`](hkquantitytypeidentifier/walkingspeed.md) or [`walkingDoubleSupportPercentage`](hkquantitytypeidentifier/walkingdoublesupportpercentage.md), this metadata key records the placement of the device as determined by the system.
 

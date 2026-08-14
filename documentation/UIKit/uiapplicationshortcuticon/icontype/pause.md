@@ -19,7 +19,7 @@ case pause
 
 #### Discussion
 
-![None](https://docs-assets.developer.apple.com/published/a4cf2ad984b107ee615314440df0dc5d/media-2934511%402x.png)
+![None](/images/com.apple.uikit/media-2934511@2x.png)
 
 ## See Also
 

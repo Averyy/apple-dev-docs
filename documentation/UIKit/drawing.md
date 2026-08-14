@@ -68,25 +68,25 @@ Configure your app’s drawing environment using colors, renderers, draw paths, 
 - [func UIRectClip(CGRect)](uirectclip(_:).md)
   Modifies the current clipping path by intersecting it with the specified rectangle.
 ### Primitive type conversions
-- [class func cgAffineTransform(for: String) -> CGAffineTransform](../Foundation/NSCoder/cgAffineTransform(for:).md)
+- [class func cgAffineTransform(for: String) -> CGAffineTransform](../foundation/nscoder/cgaffinetransform(for:).md)
   Returns a Core Graphics affine transform structure corresponding to the data in a given string.
-- [class func cgPoint(for: String) -> CGPoint](../Foundation/NSCoder/cgPoint(for:).md)
+- [class func cgPoint(for: String) -> CGPoint](../foundation/nscoder/cgpoint(for:).md)
   Returns a Core Graphics point structure corresponding to the data in a given string.
-- [class func cgRect(for: String) -> CGRect](../Foundation/NSCoder/cgRect(for:).md)
+- [class func cgRect(for: String) -> CGRect](../foundation/nscoder/cgrect(for:).md)
   Returns a Core Graphics rectangle structure corresponding to the data in a given string.
-- [class func cgSize(for: String) -> CGSize](../Foundation/NSCoder/cgSize(for:).md)
+- [class func cgSize(for: String) -> CGSize](../foundation/nscoder/cgsize(for:).md)
   Returns a Core Graphics size structure corresponding to the data in a given string.
-- [class func cgVector(for: String) -> CGVector](../Foundation/NSCoder/cgVector(for:).md)
+- [class func cgVector(for: String) -> CGVector](../foundation/nscoder/cgvector(for:).md)
   Returns a Core Graphics vector corresponding to the data in a given string.
-- [class func string(for: CGAffineTransform) -> String](../Foundation/NSCoder/string(for:)-6yx6n.md)
+- [class func string(for: CGAffineTransform) -> String](../foundation/nscoder/string(for:)-6yx6n.md)
   Returns a string formatted to contain the data from an affine transform.
-- [class func string(for: CGPoint) -> String](../Foundation/NSCoder/string(for:)-6ix86.md)
+- [class func string(for: CGPoint) -> String](../foundation/nscoder/string(for:)-6ix86.md)
   Returns a string formatted to contain the data from a point.
-- [class func string(for: CGRect) -> String](../Foundation/NSCoder/string(for:)-4qz0a.md)
+- [class func string(for: CGRect) -> String](../foundation/nscoder/string(for:)-4qz0a.md)
   Returns a string formatted to contain the data from a rectangle.
-- [class func string(for: CGSize) -> String](../Foundation/NSCoder/string(for:)-2f1xb.md)
+- [class func string(for: CGSize) -> String](../foundation/nscoder/string(for:)-2f1xb.md)
   Returns a string formatted to contain the data from a size data structure.
-- [class func string(for: CGVector) -> String](../Foundation/NSCoder/string(for:)-4omzv.md)
+- [class func string(for: CGVector) -> String](../foundation/nscoder/string(for:)-4omzv.md)
   Returns a string formatted to contain the data from a vector data structure.
 
 ## See Also

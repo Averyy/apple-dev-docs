@@ -6,7 +6,7 @@ Generate an API token to access CloudKit web services or use CloudKit JS.
 
 #### Overview
 
-With CloudKit, you can store data in iCloud and sync it across Apple devices. To access iCloud data from the web or other platforms, you can use [`CloudKit JS`](https://developer.apple.com/documentation/CloudKitJS) or [`CloudKit Web Services`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/DataManagement/Conceptual/CloudKitWebServicesReference/) after obtaining a token.
+With CloudKit, you can store data in iCloud and sync it across Apple devices. To access iCloud data from the web or other platforms, you can use [`CloudKit JS`](https://developer.apple.com/documentation/cloudkitjs) or [`CloudKit Web Services`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/DataManagement/Conceptual/CloudKitWebServicesReference/) after obtaining a token.
 
 ##### Select Api Access for Your Container
 
@@ -17,7 +17,7 @@ Use your web browser to access the CloudKit Database app:
 3. In the top section, choose your app’s container from the list.
 4. In the Settings section on the left, select Tokens & Keys.
 
-![A screenshot showing a selected container in the CloudKit Database app. The screenshot highlights the Tokens & Keys menu item in the Settings section on the left.](https://docs-assets.developer.apple.com/published/be18961ab64d83fa1141ebc118170536/media-3699104%402x.png)
+![A screenshot showing a selected container in the CloudKit Database app. The screenshot highlights the Tokens & Keys menu item in the Settings section on the left.](/images/com.apple.cloudkit/media-3699104@2x.png)
 
 ##### Create the Api Token
 
@@ -30,7 +30,7 @@ To obtain your container’s API token:
 5. To add a description, type it in the Notes field.
 6. Click the Save Changes button.
 
-![A screenshot showing the CloudKit Database app API access management page the for selected container.](https://docs-assets.developer.apple.com/published/bcac804a98038eb7889671279fe61b2f/media-3699263%402x.png)
+![A screenshot showing the CloudKit Database app API access management page the for selected container.](/images/com.apple.cloudkit/media-3699263@2x.png)
 
 ## See Also
 

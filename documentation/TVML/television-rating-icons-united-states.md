@@ -12,41 +12,41 @@ United States television rating icons indicate who a program is designed for. Ra
 
 The resource name for the for children icon for the United States is `tv-y`. Place a for children rating icon next to content to indicate that the content is suitable to be watched by people of any age, but targeted for children 2-6. Place a for children rating icon using `<img src="resource://tv-y" />`.
 
-![The phrase T V dash Y, inside a black rectangle with rounded corners.](https://docs-assets.developer.apple.com/published/aca0876cf5a21f3e040d281e88fa329c/television-rating-icons-united-states-1%402x.png)
+![The phrase T V dash Y, inside a black rectangle with rounded corners.](/images/com.apple.TVML/television-rating-icons-united-states-1@2x.png)
 
 ##### Ages 7 and Older
 
 The resource name for the ages 7 and older icon for the United States is `tv-y7`. Place an ages 7 and older rating icon next to content to indicate that the content is suitable to be watched by children who are 7 and older. Place an ages 7 and older rating icon using `<img src="resource://tv-y7" />`.
 
-![The phrase T V dash Y seven, inside a black rectangle with rounded corners.](https://docs-assets.developer.apple.com/published/a039e8de5e4cd3d41f3408ba738bf958/television-rating-icons-united-states-2%402x.png)
+![The phrase T V dash Y seven, inside a black rectangle with rounded corners.](/images/com.apple.TVML/television-rating-icons-united-states-2@2x.png)
 
 Adding the “FV” descriptor indicates that the television program contains fantasy violence. The resource name for this icon is `tv-y7fv`. Place this icon using `<img src="resource://tv-y7fv" />`.
 
-![The phrase T V dash Y seven F V, inside a black rectangle with rounded corners.](https://docs-assets.developer.apple.com/published/8ab4ffb16dc3620a098afb501300dce0/television-rating-icons-united-states-3%402x.png)
+![The phrase T V dash Y seven F V, inside a black rectangle with rounded corners.](/images/com.apple.TVML/television-rating-icons-united-states-3@2x.png)
 
 ##### All Ages
 
 The resource name for the all ages icon for the United States is `tv-g`. Place an all ages rating icon next to content to indicate that the content is suitable to be watched by audiences of any age. Pplace an all ages rating icon using `<img src="resource://tv-g" />`.
 
-![The phrase T V dash G, inside a black rectangle with rounded corners.](https://docs-assets.developer.apple.com/published/c1c48434c750c55f360fd491cfea1f09/television-rating-icons-united-states-4%402x.png)
+![The phrase T V dash G, inside a black rectangle with rounded corners.](/images/com.apple.TVML/television-rating-icons-united-states-4@2x.png)
 
 ##### Parental Guidance
 
 The resource name for the parental guidance icon for the United States is `tv-pg`. Place a parental guidance rating icon next to content to indicate that parents should review the content before letting young children watch. Place a parental guidance rating icon using `<img src="resource://tv-pg" />`.
 
-![The phrase T V dash P G, inside a black rectangle with rounded corners.](https://docs-assets.developer.apple.com/published/0ab869b0fe4c2060d1be5c126bfe6a0a/television-rating-icons-united-states-5%402x.png)
+![The phrase T V dash P G, inside a black rectangle with rounded corners.](/images/com.apple.TVML/television-rating-icons-united-states-5@2x.png)
 
 ##### Parents Strongly Cautioned
 
 The resource name for the parents strongly cautioned icon for the United States is `tv-14`. Place a parents strongly cautioned rating icon next to content to indicate that parents should review the content before allowing children under the age of 14 to watch. Place a parents strongly cautioned rating icon using `<img src="resource://tv-14" />`.
 
-![The phrase T V dash fourteen, inside a black rectangle with rounded corners.](https://docs-assets.developer.apple.com/published/0d52130e9990e08138ca2723d72d29d2/television-rating-icons-united-states-6%402x.png)
+![The phrase T V dash fourteen, inside a black rectangle with rounded corners.](/images/com.apple.TVML/television-rating-icons-united-states-6@2x.png)
 
 ##### Mature Audiences
 
 The resource name for the mature audiences icon for the United States is `tv-ma`. Place a mature audiences rating icon next to content to indicate that the content is suitable to be watched by adults and may be unsuitable for children under 17. Place a mature audiences rating icon using `<img src="resource://tv-ma" />`.
 
-![The phrase T V dash M A, inside a black rectangle with rounded corners.](https://docs-assets.developer.apple.com/published/e5f7f9c7b4b6c8ea3477d75fae30e815/television-rating-icons-united-states-7%402x.png)
+![The phrase T V dash M A, inside a black rectangle with rounded corners.](/images/com.apple.TVML/television-rating-icons-united-states-7@2x.png)
 
 ## See Also
 

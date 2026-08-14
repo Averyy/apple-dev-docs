@@ -12,7 +12,7 @@ Xcode 11.7 is available in the Mac App Store and includes SDKs for iOS 13.7, iPa
 
 ###### New Features
 
-- New [`Exposure Notification`](https://developer.apple.com/documentation/ExposureNotification) APIs provide additional information about potential exposures. (67425029)
+- New [`Exposure Notification`](https://developer.apple.com/documentation/exposurenotification) APIs provide additional information about potential exposures. (67425029)
 
 ##### Interface Builder
 

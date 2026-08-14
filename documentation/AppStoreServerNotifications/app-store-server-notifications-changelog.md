@@ -67,7 +67,7 @@ To set up your server to receive notifications, see [`Enabling App Store Server 
 
 **New features**
 
-- Added support for the [`Advanced Commerce API`](https://developer.apple.com/documentation/AdvancedCommerceAPI).
+- Added support for the [`Advanced Commerce API`](https://developer.apple.com/documentation/advancedcommerceapi).
 
 ##### July 8 2024
 
@@ -81,7 +81,7 @@ To set up your server to receive notifications, see [`Enabling App Store Server 
 **New features**
 
 - Added the notification type `ONE_TIME_CHARGE` to [`notificationType`](notificationtype.md). This notification type is currently available only in the sandbox environment.
-- Added the fields [`renewalPrice`](https://developer.apple.com/documentation/AppStoreServerAPI/renewalPrice), [`currency`](currency.md), and [`offerDiscountType`](offerdiscounttype.md) to the [`JWSRenewalInfoDecodedPayload`](jwsrenewalinfodecodedpayload.md).
+- Added the fields [`renewalPrice`](https://developer.apple.com/documentation/appstoreserverapi/renewalprice), [`currency`](currency.md), and [`offerDiscountType`](offerdiscounttype.md) to the [`JWSRenewalInfoDecodedPayload`](jwsrenewalinfodecodedpayload.md).
 
 ##### April 11 2024
 
@@ -134,7 +134,7 @@ To set up your server to receive notifications, see [`Enabling App Store Server 
 
 **New features**
 
-- Added a new notification type for App Store Server Notifications 2 that consists of the [`notificationType`](notificationtype.md) value `RENEWAL_EXTENSION` and [`subtype`](subtype.md) values of `SUMMARY` and `FAILURE`. This notification provides information when you extend the subscription renewal date for all active subscribers, based on a product identifier. For more information, see [`Extend Subscription Renewal Dates for All Active Subscribers`](https://developer.apple.com/documentation/AppStoreServerAPI/Extend-Subscription-Renewal-Dates-for-All-Active-Subscribers) in the [`App Store Server API`](https://developer.apple.com/documentation/AppStoreServerAPI).
+- Added a new notification type for App Store Server Notifications 2 that consists of the [`notificationType`](notificationtype.md) value `RENEWAL_EXTENSION` and [`subtype`](subtype.md) values of `SUMMARY` and `FAILURE`. This notification provides information when you extend the subscription renewal date for all active subscribers, based on a product identifier. For more information, see [`Extend Subscription Renewal Dates for All Active Subscribers`](https://developer.apple.com/documentation/appstoreserverapi/extend-subscription-renewal-dates-for-all-active-subscribers) in the [`App Store Server API`](https://developer.apple.com/documentation/appstoreserverapi).
 - Updated the [`responseBodyV2DecodedPayload`](responsebodyv2decodedpayload.md) to include the new [`summary`](summary.md) object, which appears in the payload for a `RENEWAL_EXTENSION` notification with a `SUMMARY` [`subtype`](subtype.md).
 
 ##### November 7 2022
@@ -147,7 +147,7 @@ To set up your server to receive notifications, see [`Enabling App Store Server 
 
 **New features**
 
-- App Store Server Notifications 2 supports sending a `TEST` notification. For more information, see [`notificationType`](notificationtype.md), and the endpoints [`Request a Test Notification`](https://developer.apple.com/documentation/AppStoreServerAPI/Request-a-Test-Notification) and [`Get Test Notification Status`](https://developer.apple.com/documentation/AppStoreServerAPI/Get-Test-Notification-Status) in the [`App Store Server API`](https://developer.apple.com/documentation/AppStoreServerAPI).
+- App Store Server Notifications 2 supports sending a `TEST` notification. For more information, see [`notificationType`](notificationtype.md), and the endpoints [`Request a Test Notification`](https://developer.apple.com/documentation/appstoreserverapi/request-a-test-notification) and [`Get Test Notification Status`](https://developer.apple.com/documentation/appstoreserverapi/get-test-notification-status) in the [`App Store Server API`](https://developer.apple.com/documentation/appstoreserverapi).
 
 ##### May 12 2022
 

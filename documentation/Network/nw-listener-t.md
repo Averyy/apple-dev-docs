@@ -49,9 +49,9 @@ typealias nw_listener_t = any OS_nw_listener
 - [var NW_LISTENER_INFINITE_CONNECTION_LIMIT: UInt32](nw_listener_infinite_connection_limit.md)
   A static value that indicates that inbound connections should not be limited.
 ### Advertising Bonjour Services
-- [NSBonjourServices](../BundleResources/Information-Property-List/NSBonjourServices.md)
+- [NSBonjourServices](../bundleresources/information-property-list/nsbonjourservices.md)
   Bonjour service types browsed by the app.
-- [NSLocalNetworkUsageDescription](../BundleResources/Information-Property-List/NSLocalNetworkUsageDescription.md)
+- [NSLocalNetworkUsageDescription](../bundleresources/information-property-list/nslocalnetworkusagedescription.md)
   A message that tells people why the app is requesting access to the local network.
 - [func nw_listener_set_advertise_descriptor(nw_listener_t, nw_advertise_descriptor_t?)](nw_listener_set_advertise_descriptor(_:_:).md)
   Sets a Bonjour service that advertises the listener on the local network.

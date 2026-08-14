@@ -21,11 +21,11 @@ func newPixelBuffer() -> CVPixelBuffer?
 
 #### Return Value
 
-A [`CVPixelBuffer`](https://developer.apple.com/documentation/CoreVideo/CVPixelBuffer) to use for rendering.
+A [`CVPixelBuffer`](https://developer.apple.com/documentation/corevideo/cvpixelbuffer) to use for rendering.
 
 #### Discussion
 
-The buffer’s [`kCVImageBufferCleanApertureKey`](https://developer.apple.com/documentation/CoreVideo/kCVImageBufferCleanApertureKey) and [`kCVImageBufferPixelAspectRatioKey`](https://developer.apple.com/documentation/CoreVideo/kCVImageBufferPixelAspectRatioKey) attachments are set to match the current composition processor properties. You’re responsible for calling [`CVBufferRelease`](https://developer.apple.com/documentation/CoreVideo/CVBufferRelease) on the pixel buffer.
+The buffer’s [`kCVImageBufferCleanApertureKey`](https://developer.apple.com/documentation/corevideo/kcvimagebuffercleanaperturekey) and [`kCVImageBufferPixelAspectRatioKey`](https://developer.apple.com/documentation/corevideo/kcvimagebufferpixelaspectratiokey) attachments are set to match the current composition processor properties. You’re responsible for calling [`CVBufferRelease`](https://developer.apple.com/documentation/corevideo/cvbufferrelease) on the pixel buffer.
 
 ## See Also
 

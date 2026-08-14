@@ -25,7 +25,7 @@ An R-tree manages its structure to optimize for spatial searches—unlike a basi
 
 An R-tree partitions the space it describes by calculating the minimum bounding regions that enclose each of the added objects. For example, in [`Figure 1`](gkrtree#1965706.md), the numbered shapes are objects added to the tree, and the rectangles marked with letters are the data structure the tree creates to organize them.
 
-![None](https://docs-assets.developer.apple.com/published/5f99f2729a4b81147c7e9a30db31331e/media-1965706%402x.png)
+![None](/images/com.apple.gameplaykit/media-1965706@2x.png)
 
 In this example, the rectangle C is the smallest rectangle that entirely contains objects 1 and 2; the rectangle D is the smallest that contains objects 3, 4, and 5; the rectangle A is the smallest containing all the objects in rectangles C and D; and so on. The R-tree automatically creates these divisions in a way that keeps the tree balanced—that is, so that no branch of the tree contains significantly more objects or sub-branches than any other branch—so that searches for objects in the tree require a uniformly minimal amount of processing.
 
@@ -62,14 +62,14 @@ The [`GKRTree`](gkrtree.md) class is one of three spatial partitioning data stru
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

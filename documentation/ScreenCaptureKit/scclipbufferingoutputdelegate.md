@@ -31,7 +31,7 @@ Defines an interface for delegates of SCClipBufferingOutput to respond to events
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 
 ---

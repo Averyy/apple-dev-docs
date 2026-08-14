@@ -8,7 +8,7 @@ Differentiate your notifications and add action buttons to the notification inte
 
 Actionable notifications let the user respond to a delivered notification without launching the corresponding app. Other notifications display information in a notification interface, but the user’s only course of action is to launch the app. For an actionable notification, the system displays one or more buttons in addition to the notification interface. Tapping a button sends the selected action to the app, which then processes the action in the background.
 
-![A notification for a meeting app contains an invitation along with buttons for accepting or declining the invitation.](https://docs-assets.developer.apple.com/published/b7551599d1d79bbde862870b8b2c59f2/media-2953609%402x.png)
+![A notification for a meeting app contains an invitation along with buttons for accepting or declining the invitation.](/images/com.apple.usernotifications/media-2953609@2x.png)
 
 > **Note**:  When someone performs a Double Tap gesture while viewing a notification on Apple Watch Series 9 or Apple Watch Ultra 2, the system invokes the first nondestructive action. A nondestructive action doesn’t include the [`destructive`](unnotificationactionoptions/destructive.md) option, and won’t delete user data or change the app irrevocably.
 
@@ -19,7 +19,7 @@ To support actionable notifications, you must:
 - Handle all actions that you register.
 - Assign category identifiers to notification payloads when generating notifications.
 
-> **Note**:  The system also uses categories to determine whether it should launch your notification service app extension or notification content app extension. For information about how to create a notification service app extension, see [`Modifying content in newly delivered notifications`](modifying-content-in-newly-delivered-notifications.md). For information about how to create a notification content app extension, see [`Customizing the Appearance of Notifications`](https://developer.apple.com/documentation/UserNotificationsUI/customizing-the-appearance-of-notifications).
+> **Note**:  The system also uses categories to determine whether it should launch your notification service app extension or notification content app extension. For information about how to create a notification service app extension, see [`Modifying content in newly delivered notifications`](modifying-content-in-newly-delivered-notifications.md). For information about how to create a notification content app extension, see [`Customizing the Appearance of Notifications`](https://developer.apple.com/documentation/usernotificationsui/customizing-the-appearance-of-notifications).
 
 ##### Declare Your Custom Actions and Notification Types
 
@@ -134,7 +134,7 @@ func userNotificationCenter(_ center: UNUserNotificationCenter,
 }
 ```
 
-> ❗ **Important**:  If your response to an action involves accessing files on disk, consider a different approach. Users can respond to actions while the device is locked, which would make files encrypted with the [`complete`](https://developer.apple.com/documentation/Foundation/FileProtectionType/complete) option unavailable to your app. If that happens, you may need to save changes temporarily and integrate them into your app’s data structures later.
+> ❗ **Important**:  If your response to an action involves accessing files on disk, consider a different approach. Users can respond to actions while the device is locked, which would make files encrypted with the [`complete`](https://developer.apple.com/documentation/foundation/fileprotectiontype/complete) option unavailable to your app. If that happens, you may need to save changes temporarily and integrate them into your app’s data structures later.
 
 ## See Also
 

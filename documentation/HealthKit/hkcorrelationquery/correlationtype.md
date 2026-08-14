@@ -23,7 +23,7 @@ var correlationType: HKCorrelationType { get }
 ## See Also
 
 - [var samplePredicates: [HKSampleType : NSPredicate]?](hkcorrelationquery/samplepredicates.md)
-  A dictionary whose keys are [`HKSampleType`](hksampletype.md) instances and whose values are [`NSPredicate`](https://developer.apple.com/documentation/Foundation/NSPredicate) instances.
+  A dictionary whose keys are [`HKSampleType`](hksampletype.md) instances and whose values are [`NSPredicate`](https://developer.apple.com/documentation/foundation/nspredicate) instances.
 
 
 ---

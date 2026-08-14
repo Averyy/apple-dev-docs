@@ -27,7 +27,7 @@ See [`SRSensor`](srsensor.md) for the complete list.
 ## Topics
 
 ### Essentials
-- [SensorKit updates](../Updates/SensorKit.md)
+- [SensorKit updates](../updates/sensorkit.md)
   Learn about important changes to SensorKit.
 ### Setup
 - [Configuring your project for sensor reading](configuring-your-project-for-sensor-reading.md)
@@ -35,7 +35,7 @@ See [`SRSensor`](srsensor.md) for the complete list.
 - [class SRSensorReader](srsensorreader.md)
   An object that establishes user authorization and records data for a particular sensor.
 ### Authorization
-- [com.apple.developer.sensorkit.reader.allow](../BundleResources/Entitlements/com.apple.developer.sensorkit.reader.allow.md)
+- [com.apple.developer.sensorkit.reader.allow](../bundleresources/entitlements/com.apple.developer.sensorkit.reader.allow.md)
   The necessary entitlement to access sensor data that’s required by your app’s preapproved research study.
 ### Querying data
 - [class SRFetchRequest](srfetchrequest.md)

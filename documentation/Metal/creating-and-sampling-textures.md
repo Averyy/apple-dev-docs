@@ -18,7 +18,7 @@ You use textures to draw and process images in Metal. A texture is a structured 
 
 Textures are managed by `MTLTexture` objects. A `MTLTexture` object defines the texture’s format, including the size and layout of elements, the number of elements in the texture, and how those elements are organized. Once created, a texture’s format and organization never change. However, you can change the contents of the texture, either by rendering to it or copying data into it.
 
-The Metal framework doesn’t provide an API to directly load image data from a file to a texture. Metal itself only allocates texture resources and provides methods that copy data to and from the texture. Metal apps rely on custom code or other frameworks, like MetalKit, Image I/O, UIKit, or AppKit, to handle image files. For example, you can use [`MTKTextureLoader`](https://developer.apple.com/documentation/MetalKit/MTKTextureLoader) to perform simple texture loading. This sample shows how to write a custom texture loader.
+The Metal framework doesn’t provide an API to directly load image data from a file to a texture. Metal itself only allocates texture resources and provides methods that copy data to and from the texture. Metal apps rely on custom code or other frameworks, like MetalKit, Image I/O, UIKit, or AppKit, to handle image files. For example, you can use [`MTKTextureLoader`](https://developer.apple.com/documentation/metalkit/mtktextureloader) to perform simple texture loading. This sample shows how to write a custom texture loader.
 
 > **Note**: The Xcode project contains schemes for running the sample on macOS, iOS, or tvOS devices. The default scheme is macOS, which runs the sample as is on your Mac.
 
@@ -36,7 +36,7 @@ In the sample, the `AAPLImage` class loads and parses image data from TGA files.
 
 Metal requires all textures to be formatted with a specific [`MTLPixelFormat`](mtlpixelformat.md) value. The pixel format describes the layout of pixel data in the texture. This sample uses the `MTLPixelFormat/bgra8Unorm` pixel format, which uses 32 bits per pixel, arranged into 8 bits per component, in blue, green, red, and alpha order:
 
-![Bit Layout of the BGRA8Unorm Pixel Format](https://docs-assets.developer.apple.com/published/c3d70e8002863ea924bf136c372c5bcf/1-BGRA8UnormBitLayout.png)
+![Bit Layout of the BGRA8Unorm Pixel Format](/images/com.apple.metal/1-BGRA8UnormBitLayout.png)
 
 Before you can populate a Metal texture, you need to format the image data into the texture’s pixel format. TGA files can provide pixel data either in a 32-bit-per-pixel format or a 24-bit-per-pixel format. TGA files that use 32 bits per pixel are already arranged in this format, so you just copy the pixel data. To convert a 24-bit-per-pixel BGR image, copy the red, green, and blue channels and set the alpha channel to 255, indicating a fully opaque pixel.
 
@@ -145,7 +145,7 @@ You can’t render a texture on its own; you need to map it onto geometric primi
 
 For 2D textures, normalized texture coordinates are values from 0.0 to 1.0 in both x and y directions. A value of (0.0, 0.0) specifies the texel at the first byte of the texture data (the top-left corner of the image). A value of (1.0, 1.0) specifies the texel at the last byte of the texture data (the bottom-right corner of the image).
 
-![Visualizing Texture Coordinates](https://docs-assets.developer.apple.com/published/a0dac218926802ccbb16373b9fb7c978/2-MetalTextureCoordinates.png)
+![Visualizing Texture Coordinates](/images/com.apple.metal/2-MetalTextureCoordinates.png)
 
 Add a field to the vertex format to hold texture coordinates:
 

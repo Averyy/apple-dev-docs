@@ -46,7 +46,7 @@ If you can’t reproduce the crash, archive the app, export it for Development d
 
 - Verify the framework’s build setting for Architectures (`ARCHS`) is the default value.
 - Verify the framework’s build setting for Valid Architectures (`VALID_ARCHS`) is the default value.
-- Verify the [`UIRequiredDeviceCapabilities`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/UIRequiredDeviceCapabilities) key in the framework’s `Info.plist` file correctly specifies the CPU architectures the framework supports.
+- Verify the [`UIRequiredDeviceCapabilities`](https://developer.apple.com/documentation/bundleresources/information-property-list/uirequireddevicecapabilities) key in the framework’s `Info.plist` file correctly specifies the CPU architectures the framework supports.
 
 > **Note**: If the missing framework is from a third-party framework vendor or uses third-party development tools to integrate it in your app, contact the vendor for assistance in addressing the issue.
 

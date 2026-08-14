@@ -54,7 +54,7 @@ piece.transform = piece.transform.rotated(by: rotationGestureRecognizer.rotation
 rotationGestureRecognizer.rotation = 0 // Clear rotation so that it is the right delta next time.
 ```
 
-The `scale` and `rotation` properties are relative to the [`anchorPoint`](https://developer.apple.com/documentation/QuartzCore/CALayer/anchorPoint) property of the view’s [`layer`](uiview/layer.md). To be more intuitive when scaling or rotating a view, this sample moves the anchor point to the location of the gestures, which is usually the centroid of the touches involved in the gestures.
+The `scale` and `rotation` properties are relative to the [`anchorPoint`](https://developer.apple.com/documentation/quartzcore/calayer/anchorpoint) property of the view’s [`layer`](uiview/layer.md). To be more intuitive when scaling or rotating a view, this sample moves the anchor point to the location of the gestures, which is usually the centroid of the touches involved in the gestures.
 
 ```swift
 let locationInPiece = gestureRecognizer.location(in: piece)

@@ -24,10 +24,10 @@ protocol StaticDisplayRepresentable : CaseDisplayRepresentable, TypeDisplayRepre
 
 ### Inherits From
 - [CaseDisplayRepresentable](casedisplayrepresentable.md)
-- [CaseIterable](../Swift/CaseIterable.md)
-- [CustomLocalizedStringResourceConvertible](../Foundation/CustomLocalizedStringResourceConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
+- [CaseIterable](../swift/caseiterable.md)
+- [CustomLocalizedStringResourceConvertible](../foundation/customlocalizedstringresourceconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
 - [TypeDisplayRepresentable](typedisplayrepresentable.md)
 ### Inherited By
 - [AppEnum](appenum.md)

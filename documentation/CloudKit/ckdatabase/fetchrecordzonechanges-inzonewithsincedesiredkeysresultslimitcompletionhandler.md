@@ -23,18 +23,18 @@ func fetchRecordZoneChanges(inZoneWith zoneID: CKRecordZone.ID, since changeToke
 
 #### Discussion
 
-The completion handler takes a single [`Result`](https://developer.apple.com/documentation/Swift/Result) parameter that contains either a tuple, or an error if the request fails. For example, when the network is unavailable or the device doesn’t have an active iCloud account.
+The completion handler takes a single [`Result`](https://developer.apple.com/documentation/swift/result) parameter that contains either a tuple, or an error if the request fails. For example, when the network is unavailable or the device doesn’t have an active iCloud account.
 
 When present, the tuple contains the following named elements:
 
-- **`modificationResultsByID`**: A dictionary of record modifications that occur after the time that `changeToken` denotes. The dictionary uses the identifiers of modified records as its keys. The value of each key is a [`Result`](https://developer.apple.com/documentation/Swift/Result) that contains either the corresponding modification, or an error that describes why CloudKit can’t provide that information.
+- **`modificationResultsByID`**: A dictionary of record modifications that occur after the time that `changeToken` denotes. The dictionary uses the identifiers of modified records as its keys. The value of each key is a [`Result`](https://developer.apple.com/documentation/swift/result) that contains either the corresponding modification, or an error that describes why CloudKit can’t provide that information.
 - **`deletions`**: An array of record deletions that occur after the time that `changeToken` denotes. Each deletion contains details about a deleted record.
 - **`changeToken`**: The change token that corresponds to the fetch results’ most recent change.
 - **`moreComing`**: A Boolean value that indicates whether the server has additional changes for you to fetch.
 
 This method fetches record changes in the specified record zone, such as those that occur during record creation, modification, and deletion.
 
-Along with the fetched changes, CloudKit supplies a *change token*, which is an opaque token that denotes a specific point in the record zone’s history. Store this token and provide it the next time you execute this method. Change tokens conform to [`NSSecureCoding`](https://developer.apple.com/documentation/Foundation/NSSecureCoding) and are safe to cache on-disk. Don’t infer any behavior or order from a token’s contents.
+Along with the fetched changes, CloudKit supplies a *change token*, which is an opaque token that denotes a specific point in the record zone’s history. Store this token and provide it the next time you execute this method. Change tokens conform to [`NSSecureCoding`](https://developer.apple.com/documentation/foundation/nssecurecoding) and are safe to cache on-disk. Don’t infer any behavior or order from a token’s contents.
 
 For information on a more configurable way to fetch record zone changes, see [`CKFetchRecordZoneChangesOperation`](ckfetchrecordzonechangesoperation.md).
 

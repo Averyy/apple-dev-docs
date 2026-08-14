@@ -17,7 +17,7 @@ case drop
 
 #### Discussion
 
-To resume notification delivery, set the [`suspended`](distributednotificationcenter/suspended.md) to [`false`](https://developer.apple.com/documentation/Swift/false).
+To resume notification delivery, set the [`suspended`](distributednotificationcenter/suspended.md) to [`false`](https://developer.apple.com/documentation/swift/false).
 
 ## See Also
 

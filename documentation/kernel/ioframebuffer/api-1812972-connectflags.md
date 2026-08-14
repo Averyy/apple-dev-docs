@@ -26,7 +26,7 @@ Hardware that supports simple display sensing, or the classic 3 pin Apple sensin
 
 - `connectIndex`: Index of the display connection, from zero to the value of getConnectionCount().
 - `displayMode`: A display mode ID.
-- `flags`: kDisplayModeValidFlag - mode is considered valid for the connected display by the driver. kDisplayModeSafeFlag - mode is considered safe (not requiring mode change confirmation) for the connected display by the driver. kDisplayModeDefaultFlag - mode is considered default for the connected display by the driver.
+- `flags`: Return the flags value for the given mode with the connected display. Flags are: kDisplayModeValidFlag - mode is considered valid for the connected display by the driver. kDisplayModeSafeFlag - mode is considered safe (not requiring mode change confirmation) for the connected display by the driver. kDisplayModeDefaultFlag - mode is considered default for the connected display by the driver.
 
 ## See Also
 

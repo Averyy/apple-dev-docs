@@ -19,7 +19,7 @@ var minimumDate: Date? { get set }
 
 #### Discussion
 
-Use this property to configure the minimum date that’s selected in the date picker interface. The property contains an [`NSDate`](https://developer.apple.com/documentation/Foundation/NSDate) object or `nil` (the default), which means no minimum date. This property, along with the [`maximumDate`](uidatepicker/maximumdate.md) property, lets you specify a valid date range. If the minimum date value is greater than the maximum date value, both properties are ignored. The minimum and maximum dates are also ignored in the countdown-timer mode ([`UIDatePicker.Mode.countDownTimer`](uidatepicker/mode/countdowntimer.md)).
+Use this property to configure the minimum date that’s selected in the date picker interface. The property contains an [`NSDate`](https://developer.apple.com/documentation/foundation/nsdate) object or `nil` (the default), which means no minimum date. This property, along with the [`maximumDate`](uidatepicker/maximumdate.md) property, lets you specify a valid date range. If the minimum date value is greater than the maximum date value, both properties are ignored. The minimum and maximum dates are also ignored in the countdown-timer mode ([`UIDatePicker.Mode.countDownTimer`](uidatepicker/mode/countdowntimer.md)).
 
 ## See Also
 

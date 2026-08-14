@@ -14,7 +14,7 @@ This sample app demonstrates how to stack multiple text views so the text appear
 
 ##### Initialize the Text
 
-The app’s `DepthTextView` creates and stores a [`Text`](https://developer.apple.com/documentation/SwiftUI/Text) instance as one of its properties:
+The app’s `DepthTextView` creates and stores a [`Text`](https://developer.apple.com/documentation/swiftui/text) instance as one of its properties:
 
 ```swift
 struct DepthTextView: View {
@@ -24,7 +24,7 @@ struct DepthTextView: View {
 }
 ```
 
-By passing [`extraLargeTitle`](https://developer.apple.com/documentation/SwiftUI/Font/extraLargeTitle) to the [`font(_:)`](https://developer.apple.com/documentation/SwiftUI/Text/font(_:)) modifier, it makes the text appear bigger. The main view creates text variations from this property in its methods and computed properties.
+By passing [`extraLargeTitle`](https://developer.apple.com/documentation/swiftui/font/extralargetitle) to the [`font(_:)`](https://developer.apple.com/documentation/swiftui/text/font(_:)) modifier, it makes the text appear bigger. The main view creates text variations from this property in its methods and computed properties.
 
 ##### Create the Foremost Text View
 
@@ -36,7 +36,7 @@ var textFrontView: some View {
 }
 ```
 
-The sample achieves this by passing the largest value into the [`offset(z:)`](https://developer.apple.com/documentation/SwiftUI/View/offset(z:)) modifier. The offset value, excluding the `animationProgress` value that controls the animation, is the product of the `layerSpacing` and `layers` properties:
+The sample achieves this by passing the largest value into the [`offset(z:)`](https://developer.apple.com/documentation/swiftui/view/offset(z:)) modifier. The offset value, excluding the `animationProgress` value that controls the animation, is the product of the `layerSpacing` and `layers` properties:
 
 ```swift
 /// The number of text layers that extend from the window along its z-axis.
@@ -48,7 +48,7 @@ let layerSpacing = 100
 
 ##### Generate a Series of Text Layers Along the Z Axis
 
-The `textMiddleViews` property makes several variations of the `text` property to form the middle layers between the shadow and the front of the stack. It does this by creating a [`ForEach`](https://developer.apple.com/documentation/SwiftUI/ForEach) instance to generate the text views:
+The `textMiddleViews` property makes several variations of the `text` property to form the middle layers between the shadow and the front of the stack. It does this by creating a [`ForEach`](https://developer.apple.com/documentation/swiftui/foreach) instance to generate the text views:
 
 ```swift
 var textMiddleViews: some View {
@@ -64,7 +64,7 @@ var textMiddleViews: some View {
 }   
 ```
 
-The property dynamically applies a unique offset along the z-axis to each text view by passing a larger value to the [`offset(z:)`](https://developer.apple.com/documentation/SwiftUI/View/offset(z:)) modifier with each iteration. This offset creates a stacking effect that shows the text extending outward from the view window.
+The property dynamically applies a unique offset along the z-axis to each text view by passing a larger value to the [`offset(z:)`](https://developer.apple.com/documentation/swiftui/view/offset(z:)) modifier with each iteration. This offset creates a stacking effect that shows the text extending outward from the view window.
 
 The `layers` property controls the number of iterations:
 
@@ -89,13 +89,13 @@ var textShadowView: some View {
 }
 ```
 
-The [`blur(radius:opaque:)`](https://developer.apple.com/documentation/SwiftUI/View/blur(radius:opaque:)) view modifier applies a Gaussian blur to the text view, and the [`opacity(_:)`](https://developer.apple.com/documentation/SwiftUI/Color/opacity(_:)) view modifier makes the view semitransparent.
+The [`blur(radius:opaque:)`](https://developer.apple.com/documentation/swiftui/view/blur(radius:opaque:)) view modifier applies a Gaussian blur to the text view, and the [`opacity(_:)`](https://developer.apple.com/documentation/swiftui/color/opacity(_:)) view modifier makes the view semitransparent.
 
 > **Note**: This property doesn’t change the offset along the z-axis from `0.0`, which places the shadow view in the same plane as the window that contains the `ZStack`.
 
 ##### Stack the Text with Animations
 
-The `DepthTextView` arranges its view properties along its z-axis by adding a [`ZStack`](https://developer.apple.com/documentation/SwiftUI/ZStack) as the main view of its `body` property:
+The `DepthTextView` arranges its view properties along its z-axis by adding a [`ZStack`](https://developer.apple.com/documentation/swiftui/zstack) as the main view of its `body` property:
 
 ```swift
 var body: some View {
@@ -110,13 +110,13 @@ var body: some View {
 }
 ```
 
-The `textShadowView`, `textMiddleViews`, and `textFrontView` properties each create a version of the text. The sample adds an animation effect to its [`ZStack`](https://developer.apple.com/documentation/SwiftUI/ZStack) by passing its `animateWithSpringEffect` method to the stack’s [`onAppear(perform:)`](https://developer.apple.com/documentation/SwiftUI/View/onAppear(perform:)) view modifier.
+The `textShadowView`, `textMiddleViews`, and `textFrontView` properties each create a version of the text. The sample adds an animation effect to its [`ZStack`](https://developer.apple.com/documentation/swiftui/zstack) by passing its `animateWithSpringEffect` method to the stack’s [`onAppear(perform:)`](https://developer.apple.com/documentation/swiftui/view/onappear(perform:)) view modifier.
 
 The `animateWithSpringEffect` method animates the transition through the `animationProgress` property from `0.0` to `1.0` by:
 
-1. Creating a [`Spring`](https://developer.apple.com/documentation/SwiftUI/Spring) instance.
-2. Creating an [`interpolatingSpring`](https://developer.apple.com/documentation/SwiftUI/Animation/interpolatingSpring) animation with that spring.
-3. Passing the spring animation to the [`withAnimation(_:_:)`](https://developer.apple.com/documentation/SwiftUI/withAnimation(_:_:)) method.
+1. Creating a [`Spring`](https://developer.apple.com/documentation/swiftui/spring) instance.
+2. Creating an [`interpolatingSpring`](https://developer.apple.com/documentation/swiftui/animation/interpolatingspring) animation with that spring.
+3. Passing the spring animation to the [`withAnimation(_:_:)`](https://developer.apple.com/documentation/swiftui/withanimation(_:_:)) method.
 
 ```swift
 func animateWithSpringEffect() {

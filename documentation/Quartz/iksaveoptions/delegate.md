@@ -16,7 +16,7 @@ unowned(unsafe) var delegate: AnyObject! { get set }
 
 ## See Also
 
-- [func saveOptions(IKSaveOptions!, shouldShowUTType: String!) -> Bool](../ObjectiveC/NSObject-swift.class/saveOptions(_:shouldShowUTType:).md)
+- [func saveOptions(IKSaveOptions!, shouldShowUTType: String!) -> Bool](../objectivec/nsobject-swift.class/saveoptions(_:shouldshowuttype:).md)
   Called to determine if the specified uniform type identifier should be shown in the save panel.
 
 

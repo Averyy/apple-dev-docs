@@ -23,9 +23,9 @@ class AVVideoCompositionCoreAnimationTool
 
 Any animations will be interpreted on the video’s timeline, not real-time, so you should:
 
-1. Set animations’ [`beginTime`](https://developer.apple.com/documentation/QuartzCore/CAMediaTiming/beginTime) property to [`AVCoreAnimationBeginTimeAtZero`](avcoreanimationbegintimeatzero.md) rather than `0` (which CoreAnimation replaces with [`CACurrentMediaTime()`](https://developer.apple.com/documentation/QuartzCore/CACurrentMediaTime()));
-2. Set [`isRemovedOnCompletion`](https://developer.apple.com/documentation/QuartzCore/CAAnimation/isRemovedOnCompletion) to [`false`](https://developer.apple.com/documentation/Swift/false) on animations so they are not automatically removed;
-3. Avoid using layers that are associated with [`UIView`](https://developer.apple.com/documentation/UIKit/UIView) objects.
+1. Set animations’ [`beginTime`](https://developer.apple.com/documentation/quartzcore/camediatiming/begintime) property to [`AVCoreAnimationBeginTimeAtZero`](avcoreanimationbegintimeatzero.md) rather than `0` (which CoreAnimation replaces with [`CACurrentMediaTime()`](https://developer.apple.com/documentation/quartzcore/cacurrentmediatime()));
+2. Set [`isRemovedOnCompletion`](https://developer.apple.com/documentation/quartzcore/caanimation/isremovedoncompletion) to [`false`](https://developer.apple.com/documentation/swift/false) on animations so they are not automatically removed;
+3. Avoid using layers that are associated with [`UIView`](https://developer.apple.com/documentation/uikit/uiview) objects.
 
 ## Topics
 
@@ -47,16 +47,16 @@ Any animations will be interpreted on the video’s timeline, not real-time, so 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 
 ---

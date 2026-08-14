@@ -30,7 +30,7 @@ You use this closure to configure and return cells when creating a diffable data
 
 - `collectionView`: The collection view to configure this cell for.
 - `indexPath`: The index path that specifies the location of the cell in the collection view.
-- `itemIdentifier`: An object, with a type that implements the [`Hashable`](https://developer.apple.com/documentation/Swift/Hashable) protocol, the data source uses to uniquely identify the item for this cell.
+- `itemIdentifier`: An object, with a type that implements the [`Hashable`](https://developer.apple.com/documentation/swift/hashable) protocol, the data source uses to uniquely identify the item for this cell.
 
 ## See Also
 

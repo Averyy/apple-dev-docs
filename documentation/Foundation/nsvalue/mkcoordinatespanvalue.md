@@ -22,7 +22,7 @@ var mkCoordinateSpanValue: MKCoordinateSpan { get }
 
 ## See Also
 
-- [struct MKCoordinateSpan](../MapKit/MKCoordinateSpan.md)
+- [struct MKCoordinateSpan](../mapkit/mkcoordinatespan.md)
   The width and height of a map region.
 - [init(MKCoordinate: CLLocationCoordinate2D)](nsvalue/init(mkcoordinate:).md)
   Creates a new value object containing the specified CoreLocation geographic coordinate structure.

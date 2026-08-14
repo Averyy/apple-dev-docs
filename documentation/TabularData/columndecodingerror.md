@@ -42,11 +42,11 @@ This error wraps a decoding error and includes the column name and row index whe
 ## Relationships
 
 ### Conforms To
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [Error](../Swift/Error.md)
-- [LocalizedError](../Foundation/LocalizedError.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [Error](../swift/error.md)
+- [LocalizedError](../foundation/localizederror.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

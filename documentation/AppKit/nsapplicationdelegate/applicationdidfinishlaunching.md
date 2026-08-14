@@ -21,7 +21,7 @@ Delegates can implement this method to perform further initialization. This meth
 
 ## Parameters
 
-- `notification`: A notification named [`didFinishLaunchingNotification`](nsapplication/didfinishlaunchingnotification.md). Calling the [`object`](https://developer.apple.com/documentation/Foundation/NSNotification/object) method of this notification returns the `NSApplication` object itself.
+- `notification`: A notification named [`didFinishLaunchingNotification`](nsapplication/didfinishlaunchingnotification.md). Calling the [`object`](https://developer.apple.com/documentation/foundation/nsnotification/object) method of this notification returns the `NSApplication` object itself.
 
 ## See Also
 

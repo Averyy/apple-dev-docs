@@ -45,7 +45,7 @@ func palettize(inputImage: CIImage, paletteImage: CIImage) -> CIImage {
 }
 ```
 
-![One photograph on the left above a gradient image, and a second photograph on the right. The photograph on the left shows a pink flower surrounded by foliage. The image below it is a gradient image displaying a gradual color shift from a dark purple to a light pink. The photo on the right shows the same picture of the pink flower with a palettize filter applied. The photograph displays brightness of the flower image with only the colors provided in the color palette image.](https://docs-assets.developer.apple.com/published/c9e302687df78ed524037019e81bc989/media-3558713%402x.png)
+![One photograph on the left above a gradient image, and a second photograph on the right. The photograph on the left shows a pink flower surrounded by foliage. The image below it is a gradient image displaying a gradual color shift from a dark purple to a light pink. The photo on the right shows the same picture of the pink flower with a palettize filter applied. The photograph displays brightness of the flower image with only the colors provided in the color palette image.](/images/com.apple.coreimage/media-3558713@2x.png)
 
 ## See Also
 

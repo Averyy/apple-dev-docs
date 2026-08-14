@@ -21,13 +21,13 @@ optional func netServiceBrowser(_ browser: NetServiceBrowser, didFindDomain doma
 
 #### Discussion
 
-The delegate uses this message to compile a list of available domains. It should wait until `moreDomainsComing` is [`false`](https://developer.apple.com/documentation/Swift/false) to do a bulk update of user interface elements.
+The delegate uses this message to compile a list of available domains. It should wait until `moreDomainsComing` is [`false`](https://developer.apple.com/documentation/swift/false) to do a bulk update of user interface elements.
 
 ## Parameters
 
 - `browser`: Sender of this delegate message.
 - `domainString`: Name of the domain found by `netServiceBrowser`.
-- `moreComing`: [`true`](https://developer.apple.com/documentation/Swift/true) when `netServiceBrowser` is waiting for additional domains. [`false`](https://developer.apple.com/documentation/Swift/false) when there are no additional domains.
+- `moreComing`: [`true`](https://developer.apple.com/documentation/swift/true) when `netServiceBrowser` is waiting for additional domains. [`false`](https://developer.apple.com/documentation/swift/false) when there are no additional domains.
 
 ## See Also
 

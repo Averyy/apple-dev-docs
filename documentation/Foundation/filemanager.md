@@ -80,7 +80,7 @@ The methods of the shared [`FileManager`](filemanager.md) object can be called f
 ### Locating application group container directories
 - [func containerURL(forSecurityApplicationGroupIdentifier: String) -> URL?](filemanager/containerurl(forsecurityapplicationgroupidentifier:).md)
   Returns the container directory associated with the specified security application group identifier.
-- [App Groups Entitlement](../BundleResources/Entitlements/com.apple.security.application-groups.md)
+- [App Groups Entitlement](../bundleresources/entitlements/com.apple.security.application-groups.md)
   A list of identifiers specifying the groups your app belongs to.
 ### Discovering directory contents
 - [func contentsOfDirectory(at: URL, includingPropertiesForKeys: [URLResourceKey]?, options: FileManager.DirectoryEnumerationOptions) throws -> [URL]](filemanager/contentsofdirectory(at:includingpropertiesforkeys:options:).md)
@@ -282,9 +282,9 @@ The methods of the shared [`FileManager`](filemanager.md) object can be called f
   Creates a symbolic link identified by a given path that refers to a given location.
 - [func pathContentOfSymbolicLink(atPath: String) -> String?](filemanager/pathcontentofsymboliclink(atpath:).md)
   Returns the path of the directory or file that a symbolic link at a given path refers to.
-- [func fileManager(FileManager, shouldProceedAfterError: [AnyHashable : Any]) -> Bool](../ObjectiveC/NSObject-swift.class/fileManager(_:shouldProceedAfterError:).md)
+- [func fileManager(FileManager, shouldProceedAfterError: [AnyHashable : Any]) -> Bool](../objectivec/nsobject-swift.class/filemanager(_:shouldproceedaftererror:).md)
   An `NSFileManager` object sends this message to its handler for each error it encounters when copying, moving, removing, or linking files or directories.
-- [func fileManager(FileManager, willProcessPath: String)](../ObjectiveC/NSObject-swift.class/fileManager(_:willProcessPath:).md)
+- [func fileManager(FileManager, willProcessPath: String)](../objectivec/nsobject-swift.class/filemanager(_:willprocesspath:).md)
   An `NSFileManager` object sends this message to a handler immediately before attempting to move, copy, rename, or delete, or before attempting to link to a given path.
 - [func replaceItemAtURL(originalItemURL: NSURL, withItemAtURL: NSURL, backupItemName: String?, options: FileManager.ItemReplacementOptions) throws -> NSURL?](filemanager/replaceitematurl(originalitemurl:withitematurl:backupitemname:options:).md)
   Replaces the contents of the item at the specified URL in a manner that ensures no data loss occurs.
@@ -292,14 +292,14 @@ The methods of the shared [`FileManager`](filemanager.md) object can be called f
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

@@ -8,7 +8,7 @@ Run draw commands that render to different outputs using the same vertex data mu
 
 With *vertex amplification*, you can encode drawing commands that process the same vertex multiple times, one per render target. Vertex amplification generates copies of a command’s vertex data for each render pipeline. Vertex amplification is more efficient than encoding the command multiple times with the same vertex because the GPU fetches the vertex data only once. The GPU then calls your vertex function multiple times — equal to the amplification multiplier — for each vertex.
 
-![A flow diagram that begins with a single instance of vertex data that flows into a single vertex stage. The vertex stage then produces two outputs that flow into two separate,  parallel render pipeline instances.](https://docs-assets.developer.apple.com/published/c63c5aa8cceb65dc6421201c86838cee/improving-rendering-performance-with-vertex-amplification-1%402x.png)
+![A flow diagram that begins with a single instance of vertex data that flows into a single vertex stage. The vertex stage then produces two outputs that flow into two separate,  parallel render pipeline instances.](/images/com.apple.metal/improving-rendering-performance-with-vertex-amplification-1@2x.png)
 
 For example, you can use vertex amplification to implement cascaded shadow maps, with an amplification multiplier that’s equal to the number of cascade levels.
 

@@ -16,7 +16,7 @@ var recentDocumentURLs: [URL] { get }
 
 #### Discussion
 
-This property contains an array of [`NSURL`](https://developer.apple.com/documentation/Foundation/NSURL) objects corresponding to the recently opened documents. Do not override this property.
+This property contains an array of [`NSURL`](https://developer.apple.com/documentation/foundation/nsurl) objects corresponding to the recently opened documents. Do not override this property.
 
 ## See Also
 

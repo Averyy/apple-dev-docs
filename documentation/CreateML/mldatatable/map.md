@@ -27,7 +27,7 @@ A new [`MLDataColumn`](mldatacolumn.md).
 
 Use this method to create a new column derived from the existing data in the table. The closure you pass evaluates lazily only when the transformed values are needed for a subsequent operation. Your implementation should accept a data table row and must be thread-safe because the framework may invoke the closure concurrently on unspecified threads.
 
-![A table on the left with “Day” and “Temperature” columns. The first](https://docs-assets.developer.apple.com/published/2978b2734af4be5b47c260d7953162ee/MLDataTable-map%28_%3A%29-92wrj-1%402x.png)
+![A table on the left with “Day” and “Temperature” columns. The first](/images/com.apple.createml/MLDataTable-map(_:)-92wrj-1@2x.png)
 
 For example, to perform the column derivation operation shown above, begin by creating a table of data.
 

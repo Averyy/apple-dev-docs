@@ -30,7 +30,7 @@ The number of bytes that were read.
 
 #### Discussion
 
-The doc://com.apple.documentation/documentation/swift/unsafemutablerawbufferpointer/count-95usp property of `buffer` determines the maximum number of bytes that are read into that buffer.
+The [`count`](https://developer.apple.com/documentation/swift/unsafemutablerawbufferpointer/count) property of `buffer` determines the maximum number of bytes that are read into that buffer.
 
 Unlike [`read(into:retryOnInterrupt:)`](filedescriptor/read(into:retryoninterrupt:).md), this method leaves the file’s existing offset unchanged.
 

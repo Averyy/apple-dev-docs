@@ -23,7 +23,7 @@ When you create an attachment with an [`XCTAttachment`](xctattachment.md) conven
 
 Where possible, you should use the [`XCTAttachment`](xctattachment.md) convenience initializers to create attachments for known data types. If you need to create an attachment with a manually specified UTI (such as for a custom data format used by your app), use one of the following initializers instead:
 
-- [`init(archivableObject:uniformTypeIdentifier:)`](xctattachment/init(archivableobject:uniformtypeidentifier:).md) for custom data stored in an object that conforms to [`NSSecureCoding`](https://developer.apple.com/documentation/Foundation/NSSecureCoding)
+- [`init(archivableObject:uniformTypeIdentifier:)`](xctattachment/init(archivableobject:uniformtypeidentifier:).md) for custom data stored in an object that conforms to [`NSSecureCoding`](https://developer.apple.com/documentation/foundation/nssecurecoding)
 - [`init(contentsOfFileAtURL:uniformTypeIdentifier:)`](xctattachment/init(contentsoffileaturl:uniformtypeidentifier:).md) for reading the contents of a file with a known custom UTI
 - [`init(data:uniformTypeIdentifier:)`](xctattachment/init(data:uniformtypeidentifier:).md) for data stored in memory with a known custom UTI
 - [`init(uniformTypeIdentifier:name:payload:userInfo:)`](xctattachment/init(uniformtypeidentifier:name:payload:userinfo:).md) for a data payload with a custom UTI, name, and user info dictionary

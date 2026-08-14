@@ -33,7 +33,7 @@ func MTLCopyAllDevices() -> [any MTLDevice]
   Returns an array of all the Metal GPU devices in the system and registers a notification handler that Metal calls when the device list changes.
 - [func MTLRemoveDeviceObserver(any NSObjectProtocol)](mtlremovedeviceobserver(_:).md)
   Removes a registered observer of device notifications.
-- [func CGDirectDisplayCopyCurrentMetalDevice(CGDirectDisplayID) -> (any MTLDevice)?](../CoreGraphics/CGDirectDisplayCopyCurrentMetalDevice(_:).md)
+- [func CGDirectDisplayCopyCurrentMetalDevice(CGDirectDisplayID) -> (any MTLDevice)?](../coregraphics/cgdirectdisplaycopycurrentmetaldevice(_:).md)
   Returns the GPU device instance that’s currently driving a display.
 - [typealias MTLDeviceNotificationHandler](mtldevicenotificationhandler.md)
   A Swift closure or an Objective-C block that Metal calls when the system adds or removes a GPU device.

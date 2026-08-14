@@ -22,7 +22,7 @@ class NSXPCCoder
 
 #### Overview
 
-If you want to perform custom encoding or decoding of [`Codable`](https://developer.apple.com/documentation/Swift/Codable) objects that your app sends over an [`NSXPCConnection`](nsxpcconnection.md), use [`isKind(of:)`](https://developer.apple.com/documentation/ObjectiveC/NSObjectProtocol/isKind(of:)) to determine if the coder provided to your object is a kind of [`NSXPCCoder`](nsxpccoder.md).
+If you want to perform custom encoding or decoding of [`Codable`](https://developer.apple.com/documentation/swift/codable) objects that your app sends over an [`NSXPCConnection`](nsxpcconnection.md), use [`isKind(of:)`](https://developer.apple.com/documentation/objectivec/nsobjectprotocol/iskind(of:)) to determine if the coder provided to your object is a kind of [`NSXPCCoder`](nsxpccoder.md).
 
 ## Topics
 
@@ -42,14 +42,14 @@ If you want to perform custom encoding or decoding of [`Codable`](https://develo
 ### Inherits From
 - [NSCoder](nscoder.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

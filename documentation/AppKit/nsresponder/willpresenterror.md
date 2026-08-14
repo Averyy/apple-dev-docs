@@ -20,7 +20,7 @@ The customized error object; if you decide not to customize the error presentati
 
 #### Discussion
 
-When overriding this method, you can examine `error` and, if its localized description or recovery information is unhelpfully generic, return an error object with more specific localized text. If you do this, always use the domain and error code of the [`NSError`](https://developer.apple.com/documentation/Foundation/NSError) object to distinguish between errors whose presentation you want to customize and those you don’t. Don’t make decisions based on the localized description, recovery suggestion, or recovery options because parsing localized text is problematic.
+When overriding this method, you can examine `error` and, if its localized description or recovery information is unhelpfully generic, return an error object with more specific localized text. If you do this, always use the domain and error code of the [`NSError`](https://developer.apple.com/documentation/foundation/nserror) object to distinguish between errors whose presentation you want to customize and those you don’t. Don’t make decisions based on the localized description, recovery suggestion, or recovery options because parsing localized text is problematic.
 
 The default implementation of this method returns `error` unchanged.
 

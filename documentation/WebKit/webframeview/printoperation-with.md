@@ -16,11 +16,11 @@ func printOperation(with printInfo: NSPrintInfo!) -> NSPrintOperation!
 
 #### Return Value
 
-An `NSPrintOperation` object set up to print this frame. See [`NSPrintOperation`](https://developer.apple.com/documentation/AppKit/NSPrintOperation) for more information about this object.
+An `NSPrintOperation` object set up to print this frame. See [`NSPrintOperation`](https://developer.apple.com/documentation/appkit/nsprintoperation) for more information about this object.
 
 ## Parameters
 
-- `printInfo`: Information about the print settings needed to print this frame. See [`NSPrintInfo`](https://developer.apple.com/documentation/AppKit/NSPrintInfo) for more information about this object.
+- `printInfo`: Information about the print settings needed to print this frame. See [`NSPrintInfo`](https://developer.apple.com/documentation/appkit/nsprintinfo) for more information about this object.
 
 ## See Also
 

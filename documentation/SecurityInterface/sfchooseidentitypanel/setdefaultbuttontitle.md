@@ -16,7 +16,7 @@ func setDefaultButtonTitle(_ title: String!)
 
 #### Discussion
 
-The default button dismisses the sheet or panel and returns a value of [`NSOKButton`](https://developer.apple.com/documentation/AppKit/NSOKButton).
+The default button dismisses the sheet or panel and returns a value of [`NSOKButton`](https://developer.apple.com/documentation/appkit/nsokbutton).
 
 ## Parameters
 

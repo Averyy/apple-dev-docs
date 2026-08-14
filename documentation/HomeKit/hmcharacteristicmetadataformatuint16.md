@@ -21,7 +21,7 @@ let HMCharacteristicMetadataFormatUInt16: String
 
 #### Discussion
 
-The value is an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) object containing an unsigned 16-bit integer with a range `[0, 65535]`.
+The value is an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) object containing an unsigned 16-bit integer with a range `[0, 65535]`.
 
 ## See Also
 

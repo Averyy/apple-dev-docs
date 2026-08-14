@@ -6,7 +6,7 @@ Objects and data types for transactions that use the Advanced Commerce API.
 
 #### Overview
 
-For more information about [`Advanced Commerce API`](https://developer.apple.com/documentation/AdvancedCommerceAPI), see [`Advanced Commerce API`](https://developer.apple.comhttps://developer.apple.com/in-app-purchase/advanced-commerce-api/).
+For more information about [`Advanced Commerce API`](https://developer.apple.com/documentation/advancedcommerceapi), see [`Advanced Commerce API`](https://developer.apple.comhttps://developer.apple.com/in-app-purchase/advanced-commerce-api/).
 
 ## Topics
 

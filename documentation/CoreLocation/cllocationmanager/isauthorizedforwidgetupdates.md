@@ -27,7 +27,7 @@ This property is `true` when either of the following is true:
 
 > **Note**:  For apps that use [`CLAuthorizationStatus.authorizedWhenInUse`](clauthorizationstatus/authorizedwheninuse.md), after the user agrees to extend an app’s authorization status to widgets, the app’s Location Services settings indicate While Using the App or Widgets as the active access level.
 
-For details about using location information in widgets with [`CLAuthorizationStatus.authorizedWhenInUse`](clauthorizationstatus/authorizedwheninuse.md), see [`Accessing location information in widgets`](https://developer.apple.com/documentation/WidgetKit/Accessing-Location-Information-in-Widgets).
+For details about using location information in widgets with [`CLAuthorizationStatus.authorizedWhenInUse`](clauthorizationstatus/authorizedwheninuse.md), see [`Accessing location information in widgets`](https://developer.apple.com/documentation/widgetkit/accessing-location-information-in-widgets).
 
 ## See Also
 

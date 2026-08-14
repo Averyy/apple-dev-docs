@@ -60,7 +60,7 @@ The [`NSDocument`](nsdocument.md) class implements the file coordination support
 
 ##### Multicore Considerations
 
-In macOS 10.6 and later, `NSDocument` supports the ability to open multiple documents concurrently. However, this support requires the cooperation of the document object. If your document subclass is able to read specific document types independently of other similar documents, you should override the [`canConcurrentlyReadDocuments(ofType:)`](nsdocument/canconcurrentlyreaddocuments(oftype:).md) class method and return [`true`](https://developer.apple.com/documentation/Swift/true) for the appropriate document types. If specific document types rely on shared state information, however, you should return [`false`](https://developer.apple.com/documentation/Swift/false) for those types.
+In macOS 10.6 and later, `NSDocument` supports the ability to open multiple documents concurrently. However, this support requires the cooperation of the document object. If your document subclass is able to read specific document types independently of other similar documents, you should override the [`canConcurrentlyReadDocuments(ofType:)`](nsdocument/canconcurrentlyreaddocuments(oftype:).md) class method and return [`true`](https://developer.apple.com/documentation/swift/true) for the appropriate document types. If specific document types rely on shared state information, however, you should return [`false`](https://developer.apple.com/documentation/swift/false) for those types.
 
 ## Topics
 
@@ -387,24 +387,24 @@ In macOS 10.6 and later, `NSDocument` supports the ability to open multiple docu
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Inherited By
 - [NSPersistentDocument](nspersistentdocument.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [Copyable](../Swift/Copyable.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Escapable](../Swift/Escapable.md)
-- [Hashable](../Swift/Hashable.md)
+- [CVarArg](../swift/cvararg.md)
+- [Copyable](../swift/copyable.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Escapable](../swift/escapable.md)
+- [Hashable](../swift/hashable.md)
 - [NSEditorRegistration](nseditorregistration.md)
-- [NSFilePresenter](../Foundation/NSFilePresenter.md)
+- [NSFilePresenter](../foundation/nsfilepresenter.md)
 - [NSMenuItemValidation](nsmenuitemvalidation.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 - [NSUserActivityRestoring](nsuseractivityrestoring.md)
 - [NSUserInterfaceValidations](nsuserinterfacevalidations.md)
-- [Sendable](../Swift/Sendable.md)
+- [Sendable](../swift/sendable.md)
 
 ## See Also
 

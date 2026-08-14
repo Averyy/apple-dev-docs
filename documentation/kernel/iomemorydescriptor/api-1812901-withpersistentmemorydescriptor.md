@@ -52,7 +52,7 @@ If the original memory descriptor's address and length is still backed by the sa
   Creates an IOMemoryDescriptor to describe one physical range.
 - [+ withPhysicalAddress](iomemorydescriptor/1441877-withphysicaladdress.md)
   Creates an IOMemoryDescriptor to describe one physical range.
-- [- free](../driverkit/iomemorydescriptor/free.md)
+- [- free](iomemorydescriptor/3180646-free.md)
   Performs any final cleanup for the memory descriptor object.
 
 

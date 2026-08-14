@@ -40,7 +40,7 @@ Provide common or predicted search queries to save the user the time of typing t
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 ### Conforming Types
 - [UISearchSuggestionItem](uisearchsuggestionitem.md)
 

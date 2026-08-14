@@ -22,7 +22,7 @@ let kCGImageDestinationImageMaxPixelSize: CFString
 
 #### Discussion
 
-The value of this key must be a [`CFNumber`](https://developer.apple.com/documentation/CoreFoundation/CFNumber). If present, the destination rescales the image as needed to fit within the maximum width and height. If this key isn’t present, the destination retains the native image size.
+The value of this key must be a [`CFNumber`](https://developer.apple.com/documentation/corefoundation/cfnumber). If present, the destination rescales the image as needed to fit within the maximum width and height. If this key isn’t present, the destination retains the native image size.
 
 ## See Also
 

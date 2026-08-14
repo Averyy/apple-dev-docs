@@ -8,11 +8,11 @@ Present content in a separate view that offers focused interaction.
 
 To draw attention to an important, narrowly scoped task, you display a modal presentation, like an alert, popover, sheet, or confirmation dialog.
 
-![None](https://docs-assets.developer.apple.com/published/669dc3d73261bcf3bda09c163d0c4f64/modal-presentations-hero%402x.png)
+![None](/images/com.apple.SwiftUI/modal-presentations-hero@2x.png)
 
 In SwiftUI, you create a modal presentation using a view modifier that defines how the presentation looks and the condition under which SwiftUI presents it. SwiftUI detects when the condition changes and makes the presentation for you. Because you provide a [`Binding`](binding.md) to the condition that initiates the presentation, SwiftUI can reset the underlying value when the user dismisses the presentation.
 
-For design guidance, see [`Modality`](https://developer.apple.com/design/Human-Interface-Guidelines/modality) in the Human Interface Guidelines.
+For design guidance, see [`Modality`](https://developer.apple.com/design/human-interface-guidelines/modality) in the Human Interface Guidelines.
 
 ## Topics
 

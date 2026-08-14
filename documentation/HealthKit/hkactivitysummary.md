@@ -29,7 +29,7 @@ You can read [`HKActivitySummary`](hkactivitysummary.md) objects from the Health
 
 You can instantiate your own [`HKActivitySummary`](hkactivitysummary.md) objects (if needed), but you can’t save [`HKActivitySummary`](hkactivitysummary.md) objects to the store.
 
-You can display an active summary in iOS using the [`HKActivityRingView`](https://developer.apple.com/documentation/healthkitui/hkactivityringview) class or in watchOS using the [`WKInterfaceActivityRing`](https://developer.apple.com/documentation/WatchKit/WKInterfaceActivityRing) class.
+You can display an active summary in iOS using the [`HKActivityRingView`](https://developer.apple.com/documentation/healthkitui/hkactivityringview) class or in watchOS using the [`WKInterfaceActivityRing`](https://developer.apple.com/documentation/watchkit/wkinterfaceactivityring) class.
 
 ## Topics
 
@@ -73,19 +73,19 @@ You can display an active summary in iOS using the [`HKActivityRingView`](https:
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCoding](../Foundation/NSCoding.md)
-- [NSCopying](../Foundation/NSCopying.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [NSSecureCoding](../Foundation/NSSecureCoding.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCoding](../foundation/nscoding.md)
+- [NSCopying](../foundation/nscopying.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

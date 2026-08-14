@@ -30,7 +30,7 @@ The values in a mutable index set are always sorted, so the order in which value
 
 Do not subclass the [`NSMutableIndexSet`](nsmutableindexset.md) class.
 
-> ❗ **Important**:  The Swift overlay to the Foundation framework provides the [`IndexSet`](indexset.md) structure, which bridges to the [`NSMutableIndexSet`](nsmutableindexset.md) class and its immutable superclass, [`NSIndexSet`](nsindexset.md). For more information about value types, see [`Working with Foundation Types`](https://developer.apple.com/documentation/Swift/working-with-foundation-types).
+> ❗ **Important**:  The Swift overlay to the Foundation framework provides the [`IndexSet`](indexset.md) structure, which bridges to the [`NSMutableIndexSet`](nsmutableindexset.md) class and its immutable superclass, [`NSIndexSet`](nsindexset.md). For more information about value types, see [`Working with Foundation Types`](https://developer.apple.com/documentation/swift/working-with-foundation-types).
 
 ## Topics
 
@@ -59,19 +59,19 @@ Do not subclass the [`NSMutableIndexSet`](nsmutableindexset.md) class.
 ### Inherits From
 - [NSIndexSet](nsindexset.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
 - [NSCoding](nscoding.md)
 - [NSCopying](nscopying.md)
 - [NSMutableCopying](nsmutablecopying.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 - [NSSecureCoding](nssecurecoding.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
-- [Sequence](../Swift/Sequence.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sequence](../swift/sequence.md)
 
 
 ---

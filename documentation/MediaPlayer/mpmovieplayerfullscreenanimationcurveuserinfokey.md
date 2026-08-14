@@ -17,7 +17,7 @@ let MPMoviePlayerFullscreenAnimationCurveUserInfoKey: String
 
 #### Discussion
 
-The value of this key is an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) containing an integer value that represents one of the [`UIView.AnimationCurve`](https://developer.apple.com/documentation/UIKit/UIView/AnimationCurve) constants.
+The value of this key is an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) containing an integer value that represents one of the [`UIView.AnimationCurve`](https://developer.apple.com/documentation/uikit/uiview/animationcurve) constants.
 
 ## See Also
 

@@ -25,8 +25,8 @@ protocol HPKEKEMPrivateKey : KEMPrivateKey where Self.PublicKey : HPKEKEMPublicK
 
 ### Inherits From
 - [KEMPrivateKey](kemprivatekey.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 ### Inherited By
 - [HPKEKEMPrivateKeyGeneration](hpkekemprivatekeygeneration.md)
 ### Conforming Types

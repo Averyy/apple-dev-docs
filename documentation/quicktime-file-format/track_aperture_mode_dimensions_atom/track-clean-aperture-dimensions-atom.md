@@ -7,7 +7,7 @@ An atom that carries the pixel dimensions of the track’s clean aperture.
 
 #### Overview
 
-See [`Track clean aperture dimensions atom ('clef')`](track_clean_aperture_dimensions_atom.md).
+See [`Track clean aperture dimensions atom`](track_clean_aperture_dimensions_atom.md).
 
 ## See Also
 

@@ -22,7 +22,7 @@ var iosurface: IOSurfaceRef? { get }
 
 #### Discussion
 
-The property’s value is `nil` for textures that don’t come from an [`IOSurface`](https://developer.apple.com/documentation/IOSurface/IOSurface) instance.
+The property’s value is `nil` for textures that don’t come from an [`IOSurface`](https://developer.apple.com/documentation/iosurface/iosurface) instance.
 
 ## See Also
 

@@ -27,7 +27,7 @@ The stack view also ensures that the [`arrangedSubviews`](uistackview/arrangedsu
 ## Parameters
 
 - `view`: The view to add to the array of views arranged by the stack.
-- `stackIndex`: The index where the stack inserts the new view in its [`arrangedSubviews`](uistackview/arrangedsubviews.md) array. This value must not be greater than the number of views currently in this array. If the index is out of bounds, this method throws an [`internalInconsistencyException`](https://developer.apple.com/documentation/Foundation/NSExceptionName/internalInconsistencyException) exception.
+- `stackIndex`: The index where the stack inserts the new view in its [`arrangedSubviews`](uistackview/arrangedsubviews.md) array. This value must not be greater than the number of views currently in this array. If the index is out of bounds, this method throws an [`internalInconsistencyException`](https://developer.apple.com/documentation/foundation/nsexceptionname/internalinconsistencyexception) exception.
 
 ## See Also
 

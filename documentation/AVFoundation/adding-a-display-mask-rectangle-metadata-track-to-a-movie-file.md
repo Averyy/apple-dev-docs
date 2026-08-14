@@ -39,7 +39,7 @@ The `display-mask-type` argument indicates the display mask to write to the movi
 
 The sample provides a `MovieProcessor` class that contains the app’s metadata processing logic. When you run the app, it passes the command-line arguments you specify to the `MovieProcessor` class’s `processMovie(inputPath:outputPath:displayMaskType:)` method. This method sets up the reading and writing functionality using [`AVAssetReader`](avassetreader.md) and [`AVAssetWriter`](avassetwriter.md), respectively.
 
-To allow the app to append metadata during asset writing, this method calls `addDisplayMaskMetadataTrack(to:videoInput:videoInfo:)` to create an [`AVAssetWriterInput`](avassetwriterinput.md) that writes a timed metadata track for the display mask rectangle. Before creating the writer input, this method creates a [`CMMetadataFormatDescription`](https://developer.apple.com/documentation/CoreMedia/CMMetadataFormatDescription) for the display mask metadata. The format description uses the boxed metadata (`mebx`) type and pairs the [`kCMMetadataIdentifier_QuickTimeMetadataDisplayMaskRectangleMono`](https://developer.apple.com/documentation/CoreMedia/kCMMetadataIdentifier_QuickTimeMetadataDisplayMaskRectangleMono) identifier with the [`kCMMetadataBaseDataType_RasterRectangleValue`](https://developer.apple.com/documentation/CoreMedia/kCMMetadataBaseDataType_RasterRectangleValue) data type:
+To allow the app to append metadata during asset writing, this method calls `addDisplayMaskMetadataTrack(to:videoInput:videoInfo:)` to create an [`AVAssetWriterInput`](avassetwriterinput.md) that writes a timed metadata track for the display mask rectangle. Before creating the writer input, this method creates a [`CMMetadataFormatDescription`](https://developer.apple.com/documentation/coremedia/cmmetadataformatdescription) for the display mask metadata. The format description uses the boxed metadata (`mebx`) type and pairs the [`kCMMetadataIdentifier_QuickTimeMetadataDisplayMaskRectangleMono`](https://developer.apple.com/documentation/coremedia/kcmmetadataidentifier_quicktimemetadatadisplaymaskrectanglemono) identifier with the [`kCMMetadataBaseDataType_RasterRectangleValue`](https://developer.apple.com/documentation/coremedia/kcmmetadatabasedatatype_rasterrectanglevalue) data type:
 
 ```swift
 // Define the metadata specifications for the monoscopic display mask rectangle.
@@ -61,7 +61,7 @@ let status = CMMetadataFormatDescriptionCreateWithMetadataSpecifications(
 )
 ```
 
-> **Note**: The `metadataSpecifications` array can contain additional identifier and data type pairs if you need to store other metadata within this timed metadata track. For list of additional metadata identifiers and data types, see [`CMMetadata`](https://developer.apple.com/documentation/CoreMedia/cmmetadata).
+> **Note**: The `metadataSpecifications` array can contain additional identifier and data type pairs if you need to store other metadata within this timed metadata track. For list of additional metadata identifiers and data types, see [`CMMetadata`](https://developer.apple.com/documentation/coremedia/cmmetadata).
 
 With the format description in place, the method creates an [`AVAssetWriterInput`](avassetwriterinput.md) for the metadata track. It sets [`expectsMediaDataInRealTime`](avassetwriterinput/expectsmediadatainrealtime.md) to `false` because the app writes metadata samples as fast as it can process them, rather than receiving them from a live capture source. It also sets the [`mediaTimeScale`](avassetwriterinput/mediatimescale.md) to match the video track to align the metadata sample timestamps precisely with the video frames:
 
@@ -163,7 +163,7 @@ When the asset writer finishes, the output file contains the original video with
   Create video content for visionOS by converting an existing 3D HEVC file to a multiview HEVC format, optionally adding spatial metadata to create a spatial video.
 - [Writing fragmented MPEG-4 files for HTTP Live Streaming](writing-fragmented-mpeg-4-files-for-http-live-streaming.md)
   Create an HTTP Live Streaming presentation by turning a movie file into a sequence of fragmented MPEG-4 files.
-- [Creating spatial photos and videos with spatial metadata](../ImageIO/Creating-spatial-photos-and-videos-with-spatial-metadata.md)
+- [Creating spatial photos and videos with spatial metadata](../imageio/creating-spatial-photos-and-videos-with-spatial-metadata.md)
   Add spatial metadata to stereo photos and videos to create spatial media for viewing on Apple Vision Pro.
 - [Tagging media with video color information](tagging-media-with-video-color-information.md)
   Inspect and set video color space information when writing and transcoding media.

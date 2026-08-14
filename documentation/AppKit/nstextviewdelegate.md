@@ -91,7 +91,7 @@ protocol NSTextViewDelegate : NSTextDelegate
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 - [NSTextDelegate](nstextdelegate.md)
 ### Conforming Types
 - [NSOutlineView](nsoutlineview.md)

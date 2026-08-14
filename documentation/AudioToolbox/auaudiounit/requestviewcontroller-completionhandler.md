@@ -24,7 +24,7 @@ func requestViewController() async -> NSViewController?
 
 #### Discussion
 
-The completion handler is called on a thread or dispatch queue internal to the audio unit’s implementation. If the audio unit does not implement a custom view controller, it returns `nil`. If it has a custom view controller, it instantiates the view controller and returns it. The custom view controller must be a subclass of [`AUViewController`](https://developer.apple.com/documentation/CoreAudioKit/AUViewController).
+The completion handler is called on a thread or dispatch queue internal to the audio unit’s implementation. If the audio unit does not implement a custom view controller, it returns `nil`. If it has a custom view controller, it instantiates the view controller and returns it. The custom view controller must be a subclass of [`AUViewController`](https://developer.apple.com/documentation/coreaudiokit/auviewcontroller).
 
 
 ---

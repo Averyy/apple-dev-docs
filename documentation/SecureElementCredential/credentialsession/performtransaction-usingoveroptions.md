@@ -40,7 +40,7 @@ If not ended sooner, card emulation expires after 60 seconds and the credential 
 ## Parameters
 
 - `credential`: The credential to activate and transition into card emulation state with.
-- `scene`: The [`UIScene`](https://developer.apple.com/documentation/UIKit/UIScene) the authentication sheet appears over.
+- `scene`: The [`UIScene`](https://developer.apple.com/documentation/uikit/uiscene) the authentication sheet appears over.
 - `options`: Options with which to transition the credential to card emulation mode.
 
 ## See Also

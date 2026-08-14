@@ -31,7 +31,7 @@ Not every certificate subject includes an email address. If the function does no
 ## Parameters
 
 - `certificate`: The certificate object from which to retrieve the email addresses.
-- `emailAddresses`: On return, an array of zero or more `CFStringRef` elements, each containing one email address found in the certificate subject. In Objective-C, call the [`CFRelease`](https://developer.apple.com/documentation/CoreFoundation/CFRelease) function to release this object when you are finished with it.
+- `emailAddresses`: On return, an array of zero or more `CFStringRef` elements, each containing one email address found in the certificate subject. In Objective-C, call the [`CFRelease`](https://developer.apple.com/documentation/corefoundation/cfrelease) function to release this object when you are finished with it.
 
 
 ---

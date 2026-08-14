@@ -19,7 +19,7 @@ optional func widgetMarginInsets(forProposedMarginInsets defaultMarginInset: NSE
 
 #### Return Value
 
-A value of type [`UIEdgeInsets`](https://developer.apple.com/documentation/UIKit/UIEdgeInsets) that contains the custom margin insets a widget is using instead of the default values.
+A value of type [`UIEdgeInsets`](https://developer.apple.com/documentation/uikit/uiedgeinsets) that contains the custom margin insets a widget is using instead of the default values.
 
 #### Discussion
 

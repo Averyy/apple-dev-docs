@@ -42,7 +42,7 @@ for try await slice in slices.prefix(3) {
 }
 ```
 
-You can use AsyncSequence operators like [`prefix(_:)`](https://developer.apple.com/documentation/Swift/AsyncSequence/prefix(_:)) or [`first(where:)`](https://developer.apple.com/documentation/Swift/AsyncSequence/first(where:)) to choose which slices are processed.
+You can use AsyncSequence operators like [`prefix(_:)`](https://developer.apple.com/documentation/swift/asyncsequence/prefix(_:)) or [`first(where:)`](https://developer.apple.com/documentation/swift/asyncsequence/first(where:)) to choose which slices are processed.
 
 The `stride` parameter controls overlap between slices. A smaller stride creates more slices with greater overlap, which increases the number of matching requests. Larger strides create fewer slices, however there are fewer matching requests.
 

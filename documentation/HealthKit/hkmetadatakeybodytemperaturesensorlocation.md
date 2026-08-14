@@ -21,7 +21,7 @@ let HKMetadataKeyBodyTemperatureSensorLocation: String
 
 #### Discussion
 
-This key takes an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) object whose value is [`HKBodyTemperatureSensorLocation`](hkbodytemperaturesensorlocation.md).
+This key takes an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) object whose value is [`HKBodyTemperatureSensorLocation`](hkbodytemperaturesensorlocation.md).
 
 ## Topics
 

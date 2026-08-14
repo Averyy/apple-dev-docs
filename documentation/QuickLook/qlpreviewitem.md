@@ -28,7 +28,7 @@ The QLPreviewItem protocol declares the methods that a QLPreviewController insta
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 ### Conforming Types
 - [ARQuickLookPreviewItem](arquicklookpreviewitem.md)
 

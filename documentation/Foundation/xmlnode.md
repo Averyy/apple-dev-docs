@@ -39,7 +39,7 @@ To subclass [`XMLNode`](xmlnode.md) you need to override the primary initializer
 | [`setStringValue(_:resolvingEntities:)`](xmlnode/setstringvalue(_:resolvingentities:).md) | [`prefix`](xmlnode/prefix.md) |
 | [`index`](xmlnode/index.md) | [`uri`](xmlnode/uri.md) |
 
-By default [`XMLNode`](xmlnode.md) implements the `NSObject` [`isEqual(_:)`](https://developer.apple.com/documentation/ObjectiveC/NSObjectProtocol/isEqual(_:)) method to perform a deep comparison: two [`XMLNode`](xmlnode.md) objects are not considered equal unless they have the same name, same child nodes, same attributes, and so on. The comparison looks at the node and its children, but does not include the node’s parent. If you want a different standard of comparison, override `isEqual:`.
+By default [`XMLNode`](xmlnode.md) implements the `NSObject` [`isEqual(_:)`](https://developer.apple.com/documentation/objectivec/nsobjectprotocol/isequal(_:)) method to perform a deep comparison: two [`XMLNode`](xmlnode.md) objects are not considered equal unless they have the same name, same child nodes, same attributes, and so on. The comparison looks at the node and its children, but does not include the node’s parent. If you want a different standard of comparison, override `isEqual:`.
 
 ###### Special Considerations
 
@@ -157,20 +157,20 @@ Because of the architecture and data model of NSXML, when it parses and processe
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Inherited By
 - [XMLDTD](xmldtd.md)
 - [XMLDTDNode](xmldtdnode.md)
 - [XMLDocument](xmldocument.md)
 - [XMLElement](xmlelement.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
 - [NSCopying](nscopying.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

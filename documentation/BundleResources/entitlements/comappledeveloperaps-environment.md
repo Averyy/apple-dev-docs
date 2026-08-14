@@ -14,7 +14,7 @@ The environment for push notifications in macOS apps.
 
 #### Discussion
 
-This key specifies whether to use the development or production Apple Push Notification service (APNs) environment when registering for push notifications with [`registerForRemoteNotifications()`](https://developer.apple.com/documentation/AppKit/NSApplication/registerForRemoteNotifications()).
+This key specifies whether to use the development or production Apple Push Notification service (APNs) environment when registering for push notifications with [`registerForRemoteNotifications()`](https://developer.apple.com/documentation/appkit/nsapplication/registerforremotenotifications()).
 
 Xcode sets the value of the entitlement based on your app’s current provisioning profile. For example, if you’re using a development provisioning profile, Xcode sets the value to `development`.
 
@@ -22,7 +22,7 @@ To add this entitlement to your app, enable the Push Notifications capability in
 
 ## See Also
 
-- [Registering your app with APNs](../UserNotifications/registering-your-app-with-apns.md)
+- [Registering your app with APNs](../usernotifications/registering-your-app-with-apns.md)
   Communicate with Apple Push Notification service (APNs) and receive a unique device token that identifies your app.
 - [APS Environment Entitlement](entitlements/aps-environment.md)
   The environment for push notifications.

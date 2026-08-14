@@ -58,7 +58,7 @@ scene.size.height / 2)
 }
 ```
 
-![Vector noise with smoothness values of 0.0, 0.5 and 1.0](https://docs-assets.developer.apple.com/published/76d90576754a02b0c7d22ba3be8aecf5/media-2663442%402x.png)
+![Vector noise with smoothness values of 0.0, 0.5 and 1.0](/images/com.apple.spritekit/media-2663442@2x.png)
 
 ## Parameters
 

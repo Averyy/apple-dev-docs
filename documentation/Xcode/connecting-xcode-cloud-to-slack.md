@@ -26,7 +26,7 @@ To install the Slack app using Xcode:
 
 1. Choose Integrate > Manage Workflows to open the Manage Workflows sheet.
 2. Double-click a workflow to open.
-3. Click the Add button (+) next to Post-Actions and choose Notify to add a post-action for sending notifications. ![A screenshot of workflow in Xcode where the Notify - Successes and Failures post-action is visible.](https://docs-assets.developer.apple.com/published/8613e5cc41a84566c0f05c7590bc6ff0/Connecting-Xcode-Cloud-to-Slack-1%402x.png)
+3. Click the Add button (+) next to Post-Actions and choose Notify to add a post-action for sending notifications. ![A screenshot of workflow in Xcode where the Notify - Successes and Failures post-action is visible.](/images/com.apple.Xcode/Connecting-Xcode-Cloud-to-Slack-1@2x.png)
 4. Click the Add button in the Slack section of the post-action you added.
 5. Provide the name of your Slack workspace, then click Connect. This opens your team’s Slack workspace in your browser.
 6. Sign in to your Slack workspace if you aren’t signed in already, and then review the permissions that the Slack app for Xcode Cloud requests.

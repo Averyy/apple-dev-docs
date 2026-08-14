@@ -7,7 +7,7 @@ An atom that specifies the clipping regions for movies and for tracks.
 
 #### Overview
 
-See [`Clipping atom ('clip')`](clipping_atom.md).
+See [`Clipping atom`](clipping_atom.md).
 
 ## See Also
 

@@ -6,7 +6,7 @@ Create JSON Web Tokens signed with your private key to authorize requests for Ap
 
 #### Overview
 
-JSON Web Token (JWT) is an open standard ([`RFC 7519`](https://developer.apple.comhttps://tools.ietf.org/html/rfc7519)) that defines a way to securely transmit information. The [`App Store Server API`](AppStoreServerAPI.md) and [`External Purchase Server API`](https://developer.apple.com/documentation/ExternalPurchaseServerAPI) require a JWT to authorize each request you make to the API. You create the token, signing it with the private key you downloaded from App Store Connect. For more information about creating keys, see [`Creating API keys to authorize API requests`](creating-api-keys-to-authorize-api-requests.md).
+JSON Web Token (JWT) is an open standard ([`RFC 7519`](https://developer.apple.comhttps://tools.ietf.org/html/rfc7519)) that defines a way to securely transmit information. The [`App Store Server API`](AppStoreServerAPI.md) and [`External Purchase Server API`](https://developer.apple.com/documentation/externalpurchaseserverapi) require a JWT to authorize each request you make to the API. You create the token, signing it with the private key you downloaded from App Store Connect. For more information about creating keys, see [`Creating API keys to authorize API requests`](creating-api-keys-to-authorize-api-requests.md).
 
 To generate a signed JWT:
 
@@ -20,11 +20,11 @@ Include the signed JWT in the authorization header of each API request. Generate
 
 ##### Create the Jwt Header
 
-To create a JWT to communicate with the [`App Store Server API`](AppStoreServerAPI.md) or [`External Purchase Server API`](https://developer.apple.com/documentation/ExternalPurchaseServerAPI), use the following fields and values in the header:
+To create a JWT to communicate with the [`App Store Server API`](AppStoreServerAPI.md) or [`External Purchase Server API`](https://developer.apple.com/documentation/externalpurchaseserverapi), use the following fields and values in the header:
 
 | Header Field | Value |
 | --- | --- |
-| `alg` - Encryption Algorithm | `ES256`  ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) All JWTs must be signed with ES256 encryption |
+| `alg` - Encryption Algorithm | `ES256`  ![None](/images/com.apple.appstoreserverapi/spacer.png) All JWTs must be signed with ES256 encryption |
 | `kid` - Key ID | Your private key ID from App Store Connect (Ex: `2X9R4HXF34`) |
 | `typ` - Token Type | `JWT` |
 
@@ -48,7 +48,7 @@ Here’s an example of a JWT header:
 
 ##### Create the Jwt Payload
 
-The JWT payload contains information specific to the [`App Store Server API`](AppStoreServerAPI.md) and [`External Purchase Server API`](https://developer.apple.com/documentation/ExternalPurchaseServerAPI), such as issuer ID and expiration time. Use the following fields — also known as JWT claims — to include these values in the JWT payload:
+The JWT payload contains information specific to the [`App Store Server API`](AppStoreServerAPI.md) and [`External Purchase Server API`](https://developer.apple.com/documentation/externalpurchaseserverapi), such as issuer ID and expiration time. Use the following fields — also known as JWT claims — to include these values in the JWT payload:
 
 | **Payload Field** | **Value** |
 | --- | --- |

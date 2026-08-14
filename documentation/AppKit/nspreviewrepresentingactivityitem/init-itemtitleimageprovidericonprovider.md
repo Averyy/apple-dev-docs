@@ -20,7 +20,7 @@ An initialized item to share.
 
 ## Parameters
 
-- `item`: The item to share from the Mac share sheet. The item must conform to the [`NSPasteboardWriting`](nspasteboardwriting.md) protocol, or be an [`NSItemProvider`](https://developer.apple.com/documentation/Foundation/NSItemProvider) or [`NSDocument`](nsdocument.md) object.
+- `item`: The item to share from the Mac share sheet. The item must conform to the [`NSPasteboardWriting`](nspasteboardwriting.md) protocol, or be an [`NSItemProvider`](https://developer.apple.com/documentation/foundation/nsitemprovider) or [`NSDocument`](nsdocument.md) object.
 - `title`: The localized name of the item.
 - `imageProvider`: An object that provides the image to display as a preview for the item. For example, when you share a URL for a webpage, you might specify the hero image for that page or a rendering of the webpage itself.
 - `iconProvider`: An object that a thumbnail-size image of the source of the item. Typically, you specify your app’s icon but you can provide a different icon if the content has a different source.

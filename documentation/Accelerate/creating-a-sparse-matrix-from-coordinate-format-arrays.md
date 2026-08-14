@@ -12,7 +12,7 @@ In some cases — for example, if you’re reading matrix values from a file —
 
 The following is an example of a symmetric sparse matrix:
 
-![A four-by-four symmetric sparse matrix with four empty cells.](https://docs-assets.developer.apple.com/published/f6bec6052ca56a095367a459900564f8/media-2887076%402x.png)
+![A four-by-four symmetric sparse matrix with four empty cells.](/images/com.apple.accelerate/media-2887076@2x.png)
 
 Because this sparse matrix is symmetric, define it with the arrays below that describe its lower triangle. For example, the value `9.5` is in row 2, column 2.
 

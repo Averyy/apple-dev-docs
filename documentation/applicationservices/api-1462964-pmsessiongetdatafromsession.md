@@ -25,8 +25,8 @@ You must call this function between the creation and release of a printing sessi
 ## Parameters
 
 - `printSession`: The printing session whose data you want to obtain.
-- `key`: The key that uniquely identifies the data to be retrieved. You specify this key when you store the data using the function  . 
-- `data`: A pointer to your   variable. On return, the variable refers to the data retrieved from the printing session.
+- `key`: The key that uniquely identifies the data to be retrieved. You specify this key when you store the data using the function [`PMSessionSetDataInSession(_:_:_:)`](1461902-pmsessionsetdatainsession.md). 
+- `data`: A pointer to your [`CFTypeRef`](https://developer.apple.com/documentation/corefoundation/cftyperef) variable. On return, the variable refers to the data retrieved from the printing session.
 
 ## See Also
 

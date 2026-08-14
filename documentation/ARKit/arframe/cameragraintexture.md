@@ -19,7 +19,7 @@ var cameraGrainTexture: (any MTLTexture)? { get }
 
 Camera grain enhances the visual cohesion of the real and augmented aspects of your user experience by enabling your app’s virtual content to take on similar image noise characteristics that naturally occur in the camera feed.
 
-![Screenshot showing the before and after cases of applying image noise to an app’s virtual content.](https://docs-assets.developer.apple.com/published/91ac97857a79016f3be51942ca95e735/media-3261294%402x.png)
+![Screenshot showing the before and after cases of applying image noise to an app’s virtual content.](/images/com.apple.arkit/media-3261294@2x.png)
 
 If [`ARSCNView`](arscnview.md) is your renderer, SceneKit applies camera grain to your app’s virtual content by default. For more information, see [`rendersCameraGrain`](arscnview/renderscameragrain.md).
 

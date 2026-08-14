@@ -22,7 +22,7 @@ typealias RoundingRule = FloatingPointRoundingRule
 
 #### Discussion
 
-[`NumberFormatStyleConfiguration`](numberformatstyleconfiguration.md) uses the [`FloatingPointRoundingRule`](https://developer.apple.com/documentation/Swift/FloatingPointRoundingRule) enumeration for rounding rule values.
+[`NumberFormatStyleConfiguration`](numberformatstyleconfiguration.md) uses the [`FloatingPointRoundingRule`](https://developer.apple.com/documentation/swift/floatingpointroundingrule) enumeration for rounding rule values.
 
 ## See Also
 

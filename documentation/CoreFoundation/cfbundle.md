@@ -30,7 +30,7 @@ You can also obtain locations of subdirectories in a bundle represented as CFURL
 
 Other functions are used to manage localizations. The [`CFBundleCopyLocalizedString(_:_:_:_:)`](cfbundlecopylocalizedstring(_:_:_:_:).md) and [`CFBundleCopyLocalizationsForURL(_:)`](cfbundlecopylocalizationsforurl(_:).md) functions return a localized string from a bundle’s strings file. The [`CFBundleCopyLocalizationsForPreferences(_:_:)`](cfbundlecopylocalizationsforpreferences(_:_:).md) function returns the localizations that CFBundle would prefer, given the specified bundle and user preference localizations.
 
-Unlike some other Core Foundation opaque types with similar Cocoa Foundation names (such as CFString and `NSString`), [`Bundle`](https://developer.apple.com/documentation/Foundation/Bundle) objects cannot be cast (“toll-free bridged”) to CFBundle objects.
+Unlike some other Core Foundation opaque types with similar Cocoa Foundation names (such as CFString and `NSString`), [`Bundle`](https://developer.apple.com/documentation/foundation/bundle) objects cannot be cast (“toll-free bridged”) to CFBundle objects.
 
 Unlike `NSBundle`, which does not support unloading (because the Objective C runtime does not support the unloading of Objective C code), you can unload CFBundle objects.
 
@@ -166,8 +166,8 @@ Note that it is best to compile any unloadable bundles with the flag `-fno-const
 ## Relationships
 
 ### Conforms To
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
 
 ## See Also
 

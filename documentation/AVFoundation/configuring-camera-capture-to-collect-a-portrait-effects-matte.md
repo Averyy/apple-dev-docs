@@ -40,7 +40,7 @@ The portrait effects matte algorithm uses a combination of person segmentation a
 
 ##### Write a Captured Portrait Effects Matte to Disk
 
-[`AVCapturePhoto`](avcapturephoto.md) offers clients access to the underlying in-memory file container using [`fileDataRepresentation()`](avcapturephoto/filedatarepresentation().md). The resulting [`NSData`](https://developer.apple.com/documentation/Foundation/NSData) is suitable for writing to disk as a HEIC or JPEG file. To replace or strip the portrait effects matte in the image file, call [`fileDataRepresentation(with:)`](avcapturephoto/filedatarepresentation(with:).md), which invokes a customizer object to modify, replace, or strip various pieces of the image before packaging it into a container suitable for writing to disk.
+[`AVCapturePhoto`](avcapturephoto.md) offers clients access to the underlying in-memory file container using [`fileDataRepresentation()`](avcapturephoto/filedatarepresentation().md). The resulting [`NSData`](https://developer.apple.com/documentation/foundation/nsdata) is suitable for writing to disk as a HEIC or JPEG file. To replace or strip the portrait effects matte in the image file, call [`fileDataRepresentation(with:)`](avcapturephoto/filedatarepresentation(with:).md), which invokes a customizer object to modify, replace, or strip various pieces of the image before packaging it into a container suitable for writing to disk.
 
 Both JPEG and HEIC files can store embedded portrait effects matte data. When stored in JFIF/JPEG, the matte is compressed using JPEG. When stored in HEIC files, it’s compressed using the HEVC codec. The matting images tend to contain large areas of flat black or white, so they compress to a file size smaller than iOS 11 photos.
 

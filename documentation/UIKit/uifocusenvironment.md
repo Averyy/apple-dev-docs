@@ -63,7 +63,7 @@ The [`UIFocusEnvironment`](uifocusenvironment.md) protocol provides a common int
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 ### Inherited By
 - [UIFocusItem](uifocusitem.md)
 ### Conforming Types

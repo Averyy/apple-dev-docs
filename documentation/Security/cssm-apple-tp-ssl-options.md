@@ -26,7 +26,7 @@ struct CSSM_APPLE_TP_SSL_OPTIONS
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../Swift/BitwiseCopyable.md)
+- [BitwiseCopyable](../swift/bitwisecopyable.md)
 
 
 ---

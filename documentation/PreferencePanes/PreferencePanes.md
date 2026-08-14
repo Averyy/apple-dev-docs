@@ -23,15 +23,15 @@ System Preferences works with your bundle’s custom [`NSPreferencePane`](nspref
 - [class NSPreferencePane](nspreferencepane.md)
   The interface for providing preference panes to System Preferences or other apps.
 ### Notifications
-- [static let NSPreferencePrefPaneIsAvailable: NSNotification.Name](../Foundation/NSNotification/Name-swift.struct/NSPreferencePrefPaneIsAvailable.md)
+- [static let NSPreferencePrefPaneIsAvailable: NSNotification.Name](../foundation/nsnotification/name-swift.struct/nspreferenceprefpaneisavailable.md)
   Notifies observers that the system preferences app is available to display your preferences.
-- [static let NSPreferencePaneDoUnselect: NSNotification.Name](../Foundation/NSNotification/Name-swift.struct/NSPreferencePaneDoUnselect.md)
+- [static let NSPreferencePaneDoUnselect: NSNotification.Name](../foundation/nsnotification/name-swift.struct/nspreferencepanedounselect.md)
   Notifies observers that the preference pane may be deselected.
-- [static let NSPreferencePaneCancelUnselect: NSNotification.Name](../Foundation/NSNotification/Name-swift.struct/NSPreferencePaneCancelUnselect.md)
+- [static let NSPreferencePaneCancelUnselect: NSNotification.Name](../foundation/nsnotification/name-swift.struct/nspreferencepanecancelunselect.md)
   Notifies observers that the preference pane should not be deselected.
-- [static let NSPreferencePaneSwitchToPane: NSNotification.Name](../Foundation/NSNotification/Name-swift.struct/NSPreferencePaneSwitchToPane.md)
+- [static let NSPreferencePaneSwitchToPane: NSNotification.Name](../foundation/nsnotification/name-swift.struct/nspreferencepaneswitchtopane.md)
   Notifies observers that the user selected a new preference pane.
-- [static let NSPreferencePaneUpdateHelpMenu: NSNotification.Name](../Foundation/NSNotification/Name-swift.struct/NSPreferencePaneUpdateHelpMenu.md)
+- [static let NSPreferencePaneUpdateHelpMenu: NSNotification.Name](../foundation/nsnotification/name-swift.struct/nspreferencepaneupdatehelpmenu.md)
   Notifies observers that your help menu content changed.
 ### Help Menu Keys
 - [let NSPrefPaneHelpMenuInfoPListKey: String](nsprefpanehelpmenuinfoplistkey.md)

@@ -22,8 +22,8 @@ Creates a map scale view.
 
 ## Parameters
 
-- `anchorEdge`: The fixed edge the scale grows and shrinks from. Use this outside of [`mapControls(_:)`](https://developer.apple.com/documentation/SwiftUI/View/mapControls(_:)) view modifier.
-- `scope`: A [`Namespace.ID`](https://developer.apple.com/documentation/SwiftUI/Namespace/ID) value that identifies this namespace and that you can use to associate this control with a map instance.
+- `anchorEdge`: The fixed edge the scale grows and shrinks from. Use this outside of [`mapControls(_:)`](https://developer.apple.com/documentation/swiftui/view/mapcontrols(_:)) view modifier.
+- `scope`: A [`Namespace.ID`](https://developer.apple.com/documentation/swiftui/namespace/id) value that identifies this namespace and that you can use to associate this control with a map instance.
 
 ## See Also
 

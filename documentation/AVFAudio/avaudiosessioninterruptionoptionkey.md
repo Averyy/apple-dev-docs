@@ -21,7 +21,7 @@ let AVAudioSessionInterruptionOptionKey: String
 
 #### Discussion
 
-The value for this key is an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) object containing an unsigned integer that identifies any options associated with the interruption. For a list of possible flags, see [`AVAudioSession.InterruptionOptions`](avaudiosession/interruptionoptions.md).
+The value for this key is an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) object containing an unsigned integer that identifies any options associated with the interruption. For a list of possible flags, see [`AVAudioSession.InterruptionOptions`](avaudiosession/interruptionoptions.md).
 
 ## See Also
 

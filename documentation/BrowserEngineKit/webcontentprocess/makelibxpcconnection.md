@@ -22,7 +22,7 @@ An object that represents the new XPC connection.
 
 #### Discussion
 
-When you create an [`xpc_connection_t`](https://developer.apple.com/documentation/XPC/xpc_connection_t) in your browser app using this method, the system calls your extension’s [`handle(xpcConnection:)`](webcontentextension/handle(xpcconnection:).md) method to supply the remote end of the connection to your extension process.
+When you create an [`xpc_connection_t`](https://developer.apple.com/documentation/xpc/xpc_connection_t) in your browser app using this method, the system calls your extension’s [`handle(xpcConnection:)`](webcontentextension/handle(xpcconnection:).md) method to supply the remote end of the connection to your extension process.
 
 
 ---

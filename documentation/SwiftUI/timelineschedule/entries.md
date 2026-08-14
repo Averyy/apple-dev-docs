@@ -23,7 +23,7 @@ associatedtype Entries : Sequence where Self.Entries.Element == Date
 
 #### Discussion
 
-The [`entries(from:mode:)`](timelineschedule/entries(from:mode:).md) method returns a value of this type, which is a [`Sequence`](https://developer.apple.com/documentation/Swift/Sequence) of dates in ascending order. A [`TimelineView`](timelineview.md) that you create with a schedule updates its content at the moments in time corresponding to the dates included in the sequence.
+The [`entries(from:mode:)`](timelineschedule/entries(from:mode:).md) method returns a value of this type, which is a [`Sequence`](https://developer.apple.com/documentation/swift/sequence) of dates in ascending order. A [`TimelineView`](timelineview.md) that you create with a schedule updates its content at the moments in time corresponding to the dates included in the sequence.
 
 ## See Also
 

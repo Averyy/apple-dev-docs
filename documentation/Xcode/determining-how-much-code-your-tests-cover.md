@@ -29,23 +29,23 @@ You enable code coverage in the Configurations pane of your test plan using the 
 5. Click the value for Code Coverage and select the “Gather coverage for” checkbox on the popover.
 6. Use the options from the pop-up menu to select targets to collect the information from.
 
-![An Xcode screenshot showing the Code Coverage setting in the Configurations pane of the test plan editor.](https://docs-assets.developer.apple.com/published/97e56b657465633415ec6c057b2ff38e/determining-how-much-code-your-tests-cover-1%402x.png)
+![An Xcode screenshot showing the Code Coverage setting in the Configurations pane of the test plan editor.](/images/com.apple.Xcode/determining-how-much-code-your-tests-cover-1@2x.png)
 
 ##### Examine Code Coverage Results
 
 After completing a test run, Xcode uses the coverage data to create a report in the Coverage pane of the Report navigator. The coverage report shows summary information about the test run, a listing of source files and functions within the files, and the coverage percentage for each.
 
-![An Xcode screenshot showing the Coverage pane of the Report navigator.](https://docs-assets.developer.apple.com/published/c88afc382edacc83628ac7a8d1618a16/determining-how-much-code-your-tests-cover-2%402x.png)
+![An Xcode screenshot showing the Coverage pane of the Report navigator.](/images/com.apple.Xcode/determining-how-much-code-your-tests-cover-2@2x.png)
 
 The source editor shows counts for each line of code in the file, and highlights code that didn’t execute. It highlights areas of code that need coverage rather than areas that have coverage.
 
 For example, positioning the pointer over the `Calculator.input(_:)` method in the coverage report above shows a button that takes you to the annotated source code.
 
-![An Xcode screenshot showing an area in the source editor that has coverage.](https://docs-assets.developer.apple.com/published/ae77bc401e43825a8ad748fd8325119d/determining-how-much-code-your-tests-cover-3%402x.png)
+![An Xcode screenshot showing an area in the source editor that has coverage.](/images/com.apple.Xcode/determining-how-much-code-your-tests-cover-3@2x.png)
 
 The coverage annotation appears on the right and shows the number of times that the test executed a particular part of the code. You can hover over areas with red highlights to identify code your test didn’t cover.
 
-![An Xcode screenshot showing an area in the source editor that needs coverage.](https://docs-assets.developer.apple.com/published/4ca40c4ba50d914dace499593f90ef01/determining-how-much-code-your-tests-cover-4%402x.png)
+![An Xcode screenshot showing an area in the source editor that needs coverage.](/images/com.apple.Xcode/determining-how-much-code-your-tests-cover-4@2x.png)
 
 According to the counts in the screenshot above, the test frequently called the `Calculator.input(_:)` method. However, there are sections of the method that the test didn’t call. This report data indicates an opportunity to write a test for a missing condition to ensure that the error handling works the way you intend.
 

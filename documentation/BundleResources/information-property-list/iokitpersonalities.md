@@ -32,7 +32,7 @@ Include any of the following keys in your personality dictionary to customize th
 - `IOParentMatch`
 - `IOPathMatch`
 - `IOMatchCategory`
-- Device-specific keys, such as `DeviceUsagePairs`, `VendorID`, or `ProductID`. See a specific [`IOService`](https://developer.apple.com/documentation/DriverKit/IOService) subclass for information about the keys it supports.
+- Device-specific keys, such as `DeviceUsagePairs`, `VendorID`, or `ProductID`. See a specific [`IOService`](https://developer.apple.com/documentation/driverkit/ioservice) subclass for information about the keys it supports.
 
 Include one of more of the following keys to specify how to load your driver’s code:
 

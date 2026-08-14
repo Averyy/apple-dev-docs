@@ -6,13 +6,13 @@ Learn about important changes to Network Extension.
 
 #### Overview
 
-Browse notable changes in [`Network Extension`](https://developer.apple.com/documentation/NetworkExtension).
+Browse notable changes in [`Network Extension`](https://developer.apple.com/documentation/networkextension).
 
 #### June 2026
 
-- Fine-tune your use of URL filters by setting the [`NEURLFilterManager`](https://developer.apple.com/documentation/NetworkExtension/NEURLFilterManager) properties [`urlParsingConfiguration`](https://developer.apple.com/documentation/NetworkExtension/NEURLFilterManager/urlParsingConfiguration) and [`urlParsingRegularExpression`](https://developer.apple.com/documentation/NetworkExtension/NEURLFilterManager/urlParsingRegularExpression).
-- Produce reports of filtered URLs and send them back to your server by setting the [`reportEndpoint`](https://developer.apple.com/documentation/NetworkExtension/NEURLFilterManager/reportEndpoint) property of [`NEURLFilterManager`](https://developer.apple.com/documentation/NetworkExtension/NEURLFilterManager). Configure reporting with the properties [`reportFormat`](https://developer.apple.com/documentation/NetworkExtension/NEURLFilterManager/reportFormat-swift.property) and [`reportInterval`](https://developer.apple.com/documentation/NetworkExtension/NEURLFilterManager/reportInterval). Note that filtered URL reporting is available only from supervised devices.
-- When using [`Local push connectivity`](https://developer.apple.com/documentation/NetworkExtension/local-push-connectivity), use the 3GPP Mission Critical Services (MCX) network slice on supported networks by setting the [`matchMissionCriticalService`](https://developer.apple.com/documentation/NetworkExtension/NEAppPushManager/matchMissionCriticalService) property of [`NEAppPushManager`](https://developer.apple.com/documentation/NetworkExtension/NEAppPushManager).
+- Fine-tune your use of URL filters by setting the [`NEURLFilterManager`](https://developer.apple.com/documentation/networkextension/neurlfiltermanager) properties [`urlParsingConfiguration`](https://developer.apple.com/documentation/networkextension/neurlfiltermanager/urlparsingconfiguration) and [`urlParsingRegularExpression`](https://developer.apple.com/documentation/networkextension/neurlfiltermanager/urlparsingregularexpression).
+- Produce reports of filtered URLs and send them back to your server by setting the [`reportEndpoint`](https://developer.apple.com/documentation/networkextension/neurlfiltermanager/reportendpoint) property of [`NEURLFilterManager`](https://developer.apple.com/documentation/networkextension/neurlfiltermanager). Configure reporting with the properties [`reportFormat`](https://developer.apple.com/documentation/networkextension/neurlfiltermanager/reportformat-swift.property) and [`reportInterval`](https://developer.apple.com/documentation/networkextension/neurlfiltermanager/reportinterval). Note that filtered URL reporting is available only from supervised devices.
+- When using [`Local push connectivity`](https://developer.apple.com/documentation/networkextension/local-push-connectivity), use the 3GPP Mission Critical Services (MCX) network slice on supported networks by setting the [`matchMissionCriticalService`](https://developer.apple.com/documentation/networkextension/neapppushmanager/matchmissioncriticalservice) property of [`NEAppPushManager`](https://developer.apple.com/documentation/networkextension/neapppushmanager).
 
 ## See Also
 

@@ -21,7 +21,7 @@ class CARenderer
 
 #### Overview
 
-For real-time output you should use an instance of [`NSView`](https://developer.apple.com/documentation/AppKit/NSView) to host the layer-tree.
+For real-time output you should use an instance of [`NSView`](https://developer.apple.com/documentation/appkit/nsview) to host the layer-tree.
 
 ## Topics
 
@@ -58,14 +58,14 @@ For real-time output you should use an instance of [`NSView`](https://developer.
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

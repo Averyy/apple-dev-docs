@@ -50,7 +50,7 @@ Transform information—that is, the combination of an object’s position, orie
 
 ### Inherits From
 - [MDLComponent](mdlcomponent.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 ### Conforming Types
 - [MDLTransform](mdltransform.md)
 - [MDLTransformStack](mdltransformstack.md)

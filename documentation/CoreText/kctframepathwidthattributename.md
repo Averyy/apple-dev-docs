@@ -22,7 +22,7 @@ let kCTFramePathWidthAttributeName: CFString
 
 #### Discussion
 
-The value must be a [`CFNumber`](https://developer.apple.com/documentation/CoreFoundation/CFNumber) object containing a value specifying the frame width. The default width value is zero.
+The value must be a [`CFNumber`](https://developer.apple.com/documentation/corefoundation/cfnumber) object containing a value specifying the frame width. The default width value is zero.
 
 ## See Also
 

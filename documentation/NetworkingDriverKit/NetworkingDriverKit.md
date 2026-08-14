@@ -10,23 +10,23 @@ Develop drivers for Ethernet networking devices.
 
 #### Overview
 
-Use NetworkingDriverKit to develop drivers for USB Ethernet adapters. This framework extends the API of [`DriverKit`](https://developer.apple.com/documentation/DriverKit), providing you with a service class for managing your networking driver. It also provides support for managing the memory you use to store packets, transferring those packets between the device and networking stack, and inspecting the Ethernet link status.
+Use NetworkingDriverKit to develop drivers for USB Ethernet adapters. This framework extends the API of [`DriverKit`](https://developer.apple.com/documentation/driverkit), providing you with a service class for managing your networking driver. It also provides support for managing the memory you use to store packets, transferring those packets between the device and networking stack, and inspecting the Ethernet link status.
 
 Note that Ethernet is the only networking interface currently supported by NetworkingDriverKit.
 
-Develop your driver with DriverKit and NetworkingDriverKit. Use USBDriverKit to manage the connection to your hardware device. Include your driver inside your macOS app and use the [`System Extensions`](https://developer.apple.com/documentation/SystemExtensions) framework to install and upgrade the driver on the user’s Mac.
+Develop your driver with DriverKit and NetworkingDriverKit. Use USBDriverKit to manage the connection to your hardware device. Include your driver inside your macOS app and use the [`System Extensions`](https://developer.apple.com/documentation/systemextensions) framework to install and upgrade the driver on the user’s Mac.
 
 > **Note**:  NetworkingDriverKit is available on macOS.
 
 ## Topics
 
 ### Essentials
-- [com.apple.developer.driverkit.family.networking](../BundleResources/Entitlements/com.apple.developer.driverkit.family.networking.md)
+- [com.apple.developer.driverkit.family.networking](../bundleresources/entitlements/com.apple.developer.driverkit.family.networking.md)
   A Boolean value that indicates whether to match the driver against devices that communicate using networking protocols.
 ### Samples
-- [Connecting a network driver](../PCIDriverKit/connecting-a-network-driver.md)
+- [Connecting a network driver](../pcidriverkit/connecting-a-network-driver.md)
   Create an Ethernet driver that interfaces with the system’s network protocol stack.
-- [DriverKit sample code](../DriverKit/driverkit-sample-code.md)
+- [DriverKit sample code](../driverkit/driverkit-sample-code.md)
   Explore projects that demonstrate how to write macOS device drivers with the DriverKit family of frameworks.
 ### Network Service
 - [IOUserNetworkEthernet](iousernetworkethernet.md)

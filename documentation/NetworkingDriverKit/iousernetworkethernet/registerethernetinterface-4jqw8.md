@@ -16,7 +16,7 @@ virtual kern_return_t RegisterEthernetInterface(IOUserNetworkMACAddress macAddre
 
 #### Discussion
 
-Call this method toward the end of your [`Start`](https://developer.apple.com/documentation/DriverKit/IOService/Start) method when your driver is ready to begin processing incoming and outgoing network packets.
+Call this method toward the end of your [`Start`](https://developer.apple.com/documentation/driverkit/ioservice/start) method when your driver is ready to begin processing incoming and outgoing network packets.
 
 ## Parameters
 

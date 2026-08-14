@@ -16,7 +16,7 @@ struct GeometrySource
 
 #### Overview
 
-Mesh-anchor geometry ([`MeshDescriptor`](https://developer.apple.com/documentation/RealityKit/MeshDescriptor)) uses geometry sources to hold 3D data like vertices and normals in an efficent, array-like format. A Metal buffer wraps the data and other properties specify how to interpret that data.
+Mesh-anchor geometry ([`MeshDescriptor`](https://developer.apple.com/documentation/realitykit/meshdescriptor)) uses geometry sources to hold 3D data like vertices and normals in an efficent, array-like format. A Metal buffer wraps the data and other properties specify how to interpret that data.
 
 If [`componentsPerVector`](geometrysource/componentspervector.md) is greater than one, the element type of the geometry-source array is itself a sequence (pairs, triplets, and so on).
 
@@ -43,10 +43,10 @@ If [`componentsPerVector`](geometrysource/componentspervector.md) is greater tha
 ## Relationships
 
 ### Conforms To
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

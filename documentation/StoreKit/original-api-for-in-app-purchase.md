@@ -10,7 +10,7 @@ The In-App Purchase APIs, including the original API and the Swift-based [`In-Ap
 
 The StoreKit framework connects to the App Store on your app’s behalf to prompt for, and securely process, payments. The framework then notifies your app, which delivers the purchased products. To validate purchases, you can verify receipts on your server with the App Store or on the device. For auto-renewable subscriptions, the App Store can also notify your server of key subscription events.
 
-![A diagram of the interactions between StoreKit, your app, the App Store, and your server that occur during a transaction.](https://docs-assets.developer.apple.com/published/3cddba76b6de9f552b4afc2d69fd0799/media-3039996%402x.png)
+![A diagram of the interactions between StoreKit, your app, the App Store, and your server that occur during a transaction.](/images/com.apple.storekit/media-3039996@2x.png)
 
 For more information about In-App Purchases, including configuration, testing, marketing, and more, see [`In-App Purchase`](https://developer.apple.comhttps://developer.apple.com/in-app-purchase/).
 
@@ -76,7 +76,7 @@ You can sync and restore non-consumables and auto-renewable subscriptions across
   Select the type of receipt validation, on the device or on your server, that works for your app.
 - [Validating receipts with the App Store](validating-receipts-with-the-app-store.md)
   Verify transactions with the App Store on a secure server.
-- [var appStoreReceiptURL: URL?](../Foundation/Bundle/appStoreReceiptURL.md)
+- [var appStoreReceiptURL: URL?](../foundation/bundle/appstorereceipturl.md)
   The file URL for the bundle’s App Store receipt.
 - [class SKReceiptRefreshRequest](skreceiptrefreshrequest.md)
   A request to the App Store to get the app receipt, which represents the customer’s transactions with your app.
@@ -125,7 +125,7 @@ You can sync and restore non-consumables and auto-renewable subscriptions across
 ### Testing In-App Purchases
 - [Testing at all stages of development with Xcode and the sandbox](testing-at-all-stages-of-development-with-xcode-and-the-sandbox.md)
   Verify your implementation of In-App Purchases by testing your code throughout its development.
-- [Setting up StoreKit Testing in Xcode](../Xcode/setting-up-storekit-testing-in-xcode.md)
+- [Setting up StoreKit Testing in Xcode](../xcode/setting-up-storekit-testing-in-xcode.md)
   Prepare your test environment to test in-app purchases with data you configure locally.
 - [Testing In-App Purchases in Xcode](testing-in-app-purchases-in-xcode.md)
   Use locally configured product data to test and debug your In-App Purchases implementation.

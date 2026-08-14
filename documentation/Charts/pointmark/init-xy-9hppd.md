@@ -33,7 +33,7 @@ Chart(data) {
 }
 ```
 
-![Horizontal point chart with weight plotted to the x-axis. There are 9 points at: 22, 24, 18, 22, 30, 27, 20, 14, 29.](https://docs-assets.developer.apple.com/published/e85b84eb94067584f0bafe19fd8a686c/PointMarkSwift.PointMarkHorizontalPointChart%402x.png)
+![Horizontal point chart with weight plotted to the x-axis. There are 9 points at: 22, 24, 18, 22, 30, 27, 20, 14, 29.](/images/com.apple.Charts/PointMarkSwift.PointMarkHorizontalPointChart@2x.png)
 
 For more background, see the first example used in [`PointMark`](pointmark.md) which shows the structure that contains the `weight` property.
 

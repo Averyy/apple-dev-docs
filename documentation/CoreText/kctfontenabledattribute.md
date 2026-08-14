@@ -22,7 +22,7 @@ let kCTFontEnabledAttribute: CFString
 
 #### Discussion
 
-The returned value is an integer represented as a [`CFNumber`](https://developer.apple.com/documentation/CoreFoundation/CFNumber) object representing a Boolean value. Unregistered font descriptors return `NULL`, which is equivalent to `false`.
+The returned value is an integer represented as a [`CFNumber`](https://developer.apple.com/documentation/corefoundation/cfnumber) object representing a Boolean value. Unregistered font descriptors return `NULL`, which is equivalent to `false`.
 
 ## See Also
 

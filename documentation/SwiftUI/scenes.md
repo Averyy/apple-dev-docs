@@ -8,7 +8,7 @@ Declare the user interface groupings that make up the parts of your app.
 
 A scene represents a part of your app’s user interface that has a life cycle that the system manages. An [`App`](app.md) instance presents the scenes it contains, while each [`Scene`](scene.md) acts as the root element of a [`View`](view.md) hierarchy.
 
-![None](https://docs-assets.developer.apple.com/published/0ae322d333458f9341bc3aa57f4e8250/scenes-hero%402x.png)
+![None](/images/com.apple.SwiftUI/scenes-hero@2x.png)
 
 The system presents scenes in different ways depending on the type of scene, the platform, and the context. A scene might fill the entire display, part of the display, a window, a tab in a window, or something else. In some cases, your app might also be able to display more than one instance of the scene at a time, like when a user simultaneously opens multiple windows based on a single [`WindowGroup`](windowgroup.md) declaration in your app. For more information about the primary built-in scene types, see [`Windows`](windows.md) and [`Documents`](documents.md).
 

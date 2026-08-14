@@ -22,7 +22,7 @@ var metallic: CustomMaterial.Metallic { get set }
 
 In physically based rendering, the `metallic` property represents the reflectiveness of an entity. Use this property to specify whether the entity displays metallic qualities and reflects the surrounding environment, or displays dielectric qualities and doesn’t reflect the environment. With custom materials, RealityKit doesn’t automatically use the values set on this property. To render a custom material using the metallic property, set [`lightingModel`](custommaterial/lightingmodel-swift.property.md) to [`CustomMaterial.LightingModel.lit`](custommaterial/lightingmodel-swift.enum/lit.md) or [`CustomMaterial.LightingModel.clearcoat`](custommaterial/lightingmodel-swift.enum/clearcoat.md) and call `params.surface().set_roughness()` from its surface shader.
 
-![An illustration showing two spheres rendered in RealityKit. The sphere](https://docs-assets.developer.apple.com/published/905cfc9b323ae0c410a550342e2dc378/CustomMaterial-metallic-swift-property-1%402x.png)
+![An illustration showing two spheres rendered in RealityKit. The sphere](/images/com.apple.RealityKit/CustomMaterial-metallic-swift-property-1@2x.png)
 
 The following Swift code shows how to use an image and a scale to specify roughness:
 

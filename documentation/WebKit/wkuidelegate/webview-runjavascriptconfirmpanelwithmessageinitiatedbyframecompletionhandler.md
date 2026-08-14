@@ -27,7 +27,7 @@ For user security, implementations of this method should call attention to the f
 - `webView`: The web view invoking the delegate method.
 - `message`: The message to be displayed.
 - `frame`: Information about the frame whose JavaScript process initiated this call.
-- `completionHandler`: The completion handler to call after the confirm panel has been dismissed. Pass [`true`](https://developer.apple.com/documentation/Swift/true) if the user chose OK, and pass [`false`](https://developer.apple.com/documentation/Swift/false) if the user chose Cancel.
+- `completionHandler`: The completion handler to call after the confirm panel has been dismissed. Pass [`true`](https://developer.apple.com/documentation/swift/true) if the user chose OK, and pass [`false`](https://developer.apple.com/documentation/swift/false) if the user chose Cancel.
 
 ## See Also
 

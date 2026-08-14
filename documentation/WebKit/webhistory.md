@@ -49,30 +49,30 @@ class WebHistory
 - [Web History Dictionary Keys](web-history-dictionary-keys.md)
   The key for accessing the web history items stored in a notification’s user information dictionary.
 ### Notifications
-- [static let WebHistoryAllItemsRemoved: NSNotification.Name](../Foundation/NSNotification/Name-swift.struct/WebHistoryAllItemsRemoved.md)
+- [static let WebHistoryAllItemsRemoved: NSNotification.Name](../foundation/nsnotification/name-swift.struct/webhistoryallitemsremoved.md)
   Posted when all history items have been removed from the web history.
-- [static let WebHistoryItemChanged: NSNotification.Name](../Foundation/NSNotification/Name-swift.struct/WebHistoryItemChanged.md)
+- [static let WebHistoryItemChanged: NSNotification.Name](../foundation/nsnotification/name-swift.struct/webhistoryitemchanged.md)
   Posted by a WebHistoryItem object when the value of the history item’s title, alternate title, URL strings, or last visited interval changes.
-- [static let WebHistoryItemsAdded: NSNotification.Name](../Foundation/NSNotification/Name-swift.struct/WebHistoryItemsAdded.md)
+- [static let WebHistoryItemsAdded: NSNotification.Name](../foundation/nsnotification/name-swift.struct/webhistoryitemsadded.md)
   Posted when history items have been added to a web history.
-- [static let WebHistoryItemsRemoved: NSNotification.Name](../Foundation/NSNotification/Name-swift.struct/WebHistoryItemsRemoved.md)
+- [static let WebHistoryItemsRemoved: NSNotification.Name](../foundation/nsnotification/name-swift.struct/webhistoryitemsremoved.md)
   Posted when items have been removed from the web history.
-- [static let WebHistoryLoaded: NSNotification.Name](../Foundation/NSNotification/Name-swift.struct/WebHistoryLoaded.md)
+- [static let WebHistoryLoaded: NSNotification.Name](../foundation/nsnotification/name-swift.struct/webhistoryloaded.md)
   Posted when web history items have been loaded from a URL.
-- [static let WebHistorySaved: NSNotification.Name](../Foundation/NSNotification/Name-swift.struct/WebHistorySaved.md)
+- [static let WebHistorySaved: NSNotification.Name](../foundation/nsnotification/name-swift.struct/webhistorysaved.md)
   Posted when web history items have been saved to a URL.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

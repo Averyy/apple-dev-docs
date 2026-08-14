@@ -16,7 +16,7 @@ func open(serviceQueue: dispatch_queue_t?) async throws -> IOUSBHostDevice
 
 #### Discussion
 
-This operation opens a connection to the USB accessory for exclusive access and returns its [`IOUSBHostDevice`](https://developer.apple.com/documentation/IOUSBHost/IOUSBHostDevice) object. An app can call this multiple times, subsequent calls will return the same `IOUSBHostDevice` instance.
+This operation opens a connection to the USB accessory for exclusive access and returns its [`IOUSBHostDevice`](https://developer.apple.com/documentation/iousbhost/iousbhostdevice) object. An app can call this multiple times, subsequent calls will return the same `IOUSBHostDevice` instance.
 
 When the process no longer needs exclusive access to this accessory, call [`close(completionHandler:)`](aausbaccessory/close(completionhandler:).md) to close the accessory. This will close all open connections to the accessory and invalidate all the IOUSBHostDevice objects.
 

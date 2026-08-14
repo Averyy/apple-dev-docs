@@ -34,8 +34,8 @@ protocol AssignableDocumentConfiguration : Hashable
 ## Relationships
 
 ### Inherits From
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
 
 ## See Also
 

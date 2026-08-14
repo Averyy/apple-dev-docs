@@ -19,7 +19,7 @@ This sample code app showcases physics-driven dice simulation with realistic tos
 - Produce outcomes for all of the dice thrown for a particular roll.
 - Convert between the logical face of a die and the corresponding resting orientation.
 
-![A circular table with seven dice tossed on it, which include a tetrahedron (4-sided),](https://docs-assets.developer.apple.com/published/150eee8e8735fb6c4d3359160700c747/simulating-dice-rolls-as-a-component-for-your-game-custom-dice-model-hero%402x.png)
+![A circular table with seven dice tossed on it, which include a tetrahedron (4-sided),](/images/com.apple.tabletopkit/simulating-dice-rolls-as-a-component-for-your-game-custom-dice-model-hero@2x.png)
 
 The app provides a tabletop gaming experience in a volumetric window that allows a player to toss an individual die or a group of dice. After tossing an individual or group of dice, the sample shows the total score.
 
@@ -27,7 +27,7 @@ The app provides a tabletop gaming experience in a volumetric window that allows
 
 Before creating the representation of dice with `TabletopKit`, the sample app includes corresponding `USDZ` files for each of the dice in the `RealityKit` content bundle, including a custom 8-sided die, shown here:
 
-![A screenshot of Xcode with the project navigator open. The RealityKitContent](https://docs-assets.developer.apple.com/published/905b70249125e9c544c4083f554914a9/simulating-dice-rolls-as-a-component-for-your-game-custom-dice-model%402x.png)
+![A screenshot of Xcode with the project navigator open. The RealityKitContent](/images/com.apple.tabletopkit/simulating-dice-rolls-as-a-component-for-your-game-custom-dice-model@2x.png)
 
 The face mapping system allows you to assign custom values to each face of a die. The sample includes standard sequential mappings for most dice, but also demonstrates custom scoring with a custom 8-sided die:
 

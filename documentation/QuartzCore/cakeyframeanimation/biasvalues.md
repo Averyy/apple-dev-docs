@@ -21,7 +21,7 @@ var biasValues: [NSNumber]? { get set }
 
 #### Discussion
 
-This property is an array of [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) objects, used only for the cubic calculation modes. Positive values move the curve before the control point while negative values move it after the control point. The first value defines the behavior of the tangent to the first control point, the second value controls the second point’s tangents, and so on. If you do not specify a value for a given control point, the value `0` is used.
+This property is an array of [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) objects, used only for the cubic calculation modes. Positive values move the curve before the control point while negative values move it after the control point. The first value defines the behavior of the tangent to the first control point, the second value controls the second point’s tangents, and so on. If you do not specify a value for a given control point, the value `0` is used.
 
 ## See Also
 

@@ -36,7 +36,7 @@ if let television = try? await ModelEntity(named: "tv_retro") {
 
 | [`ModelDebugOptionsComponent.VisualizationMode.none`](modeldebugoptionscomponent/visualizationmode-swift.enum/none.md) | `roughness` |
 | --- | --- |
-| ![A screenshot of a virtual TV in a visionOS app. The TV is an old-fashioned television displaying a multicolored test pattern. It is drawn with shadows and highlights to appear as realistic as possible.](https://docs-assets.developer.apple.com/published/a57e508a6549f1c8cce08e79ea6b7ec5/ModelDebugOptionsComponent-VisualizationMode-enum-none.jpg) | ![A screenshot of a virtual TV in a visionOS app. The TV is using a roughness visualization, appearing in shades of gray, which is a graphical representation of the TV’s surface roughness.](https://docs-assets.developer.apple.com/published/09c095729c730271033f8585aa5b979f/ModelDebugOptionsComponent-VisualizationMode-enum-roughness.jpg) |
+| ![A screenshot of a virtual TV in a visionOS app. The TV is an old-fashioned television displaying a multicolored test pattern. It is drawn with shadows and highlights to appear as realistic as possible.](/images/com.apple.RealityKit/ModelDebugOptionsComponent-VisualizationMode-enum-none.jpg) | ![A screenshot of a virtual TV in a visionOS app. The TV is using a roughness visualization, appearing in shades of gray, which is a graphical representation of the TV’s surface roughness.](/images/com.apple.RealityKit/ModelDebugOptionsComponent-VisualizationMode-enum-roughness.jpg) |
 
 ## See Also
 

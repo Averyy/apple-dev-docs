@@ -46,7 +46,7 @@ let data = Data(johnnyAppleseed)
 let bImage = barcode(inputMessage: data)
 ```
 
-![A QR code containing the text Johnny Appleseed.](https://docs-assets.developer.apple.com/published/24c42769de52d594e7afa325f3c526a8/media-4327881%402x.png)
+![A QR code containing the text Johnny Appleseed.](/images/com.apple.coreimage/media-4327881@2x.png)
 
 ## See Also
 

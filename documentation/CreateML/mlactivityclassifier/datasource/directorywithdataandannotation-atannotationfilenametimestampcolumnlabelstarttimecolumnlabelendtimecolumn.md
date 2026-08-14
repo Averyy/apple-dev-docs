@@ -16,7 +16,7 @@ case directoryWithDataAndAnnotation(at: URL, annotationFileName: String, timeSta
 
 #### Discussion
 
-Create a data source by gathering all activity data files, and one annotation file, into a directory. Pass that directory’s [`URL`](https://developer.apple.com/documentation/Foundation/URL) and the relevant column names of the annotation file to [`MLActivityClassifier.DataSource.directoryWithDataAndAnnotation(at:annotationFileName:timeStampColumn:labelStartTimeColumn:labelEndTimeColumn:)`](mlactivityclassifier/datasource/directorywithdataandannotation(at:annotationfilename:timestampcolumn:labelstarttimecolumn:labelendtimecolumn:).md).
+Create a data source by gathering all activity data files, and one annotation file, into a directory. Pass that directory’s [`URL`](https://developer.apple.com/documentation/foundation/url) and the relevant column names of the annotation file to [`MLActivityClassifier.DataSource.directoryWithDataAndAnnotation(at:annotationFileName:timeStampColumn:labelStartTimeColumn:labelEndTimeColumn:)`](mlactivityclassifier/datasource/directorywithdataandannotation(at:annotationfilename:timestampcolumn:labelstarttimecolumn:labelendtimecolumn:).md).
 
 ## Parameters
 

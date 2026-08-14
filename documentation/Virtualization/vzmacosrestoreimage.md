@@ -23,7 +23,7 @@ class VZMacOSRestoreImage
 
 To set up a new VM compatible with the restore image, use [`mostFeaturefulSupportedConfiguration`](vzmacosrestoreimage/mostfeaturefulsupportedconfiguration.md) to obtain the [`hardwareModel`](vzmacplatformconfiguration/hardwaremodel.md) of the [`VZMacPlatformConfiguration`](vzmacplatformconfiguration.md). Then, create a [`VZMacOSRestoreImage`](vzmacosrestoreimage.md) object by loading an installation media file. Initialize a [`VZMacOSInstaller`](vzmacosinstaller.md) object with this `VZMacOSRestoreImage` object to install the operating system onto a VM.
 
-> ❗ **Important**:  Loading a restore image requires the app to have the [`com.apple.security.virtualization`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.security.virtualization) entitlement.
+> ❗ **Important**:  Loading a restore image requires the app to have the [`com.apple.security.virtualization`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.security.virtualization) entitlement.
 
 ## Topics
 
@@ -51,14 +51,14 @@ To set up a new VM compatible with the restore image, use [`mostFeaturefulSuppor
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

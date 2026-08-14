@@ -22,11 +22,11 @@ let MPNowPlayingInfoPropertyInternationalStandardRecordingCode: String
 
 #### Discussion
 
-The value is a string that represents the International Standard Recording Code (ISRC) for a song, if one is available. System services that leverage Now Playing data, such as Music Haptics, use this value. For more information, read [`Music Haptics`](https://developer.apple.com/documentation/MediaAccessibility/music-haptics).
+The value is a string that represents the International Standard Recording Code (ISRC) for a song, if one is available. System services that leverage Now Playing data, such as Music Haptics, use this value. For more information, read [`Music Haptics`](https://developer.apple.com/documentation/mediaaccessibility/music-haptics).
 
 ## See Also
 
-- [Music Haptics](../MediaAccessibility/music-haptics.md)
+- [Music Haptics](../mediaaccessibility/music-haptics.md)
   Play haptic tracks along with known music tracks.
 - [let MPNowPlayingInfoCollectionIdentifier: String](mpnowplayinginfocollectionidentifier.md)
   The identifier of the collection the Now Playing item belongs to.

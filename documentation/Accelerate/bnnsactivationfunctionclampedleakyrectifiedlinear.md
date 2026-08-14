@@ -33,7 +33,7 @@ else
 
 The following illustrates the output that the activation function generates from inputs in the range `-10...10`, an `alpha` of `1` and a `beta` of `5`:
 
-![Graph that shows input values for the activation function on horizontal axis and its output values on vertical axis. ](https://docs-assets.developer.apple.com/published/62ed93d48f882033f042838fc45e4a9a/media-3560471%402x.png)
+![Graph that shows input values for the activation function on horizontal axis and its output values on vertical axis. ](/images/com.apple.accelerate/media-3560471@2x.png)
 
 ## See Also
 

@@ -10,7 +10,7 @@ When the built-in UIKit gesture recognizers don’t provide the behavior you wan
 
 You might also use a custom gesture recognizer to simplify the event-handling code in your app. For example, the [`Leveraging touch input for drawing apps`](leveraging-touch-input-for-drawing-apps.md) sample uses a gesture recognizer to capture input and display it onscreen, as shown in the following image.
 
-![A screenshot from an app that uses a custom gesture recognizer to allow a user to draw on the screen.](https://docs-assets.developer.apple.com/published/8c1ad4a11fc749881fd9f3b64868d482/implementing-a-custom-gesture-recognizer-1%402x.png)
+![A screenshot from an app that uses a custom gesture recognizer to allow a user to draw on the screen.](/images/com.apple.uikit/implementing-a-custom-gesture-recognizer-1@2x.png)
 
 To define a custom gesture recognizer, subclass [`UIGestureRecognizer`](uigesturerecognizer.md) (or one of its subclasses). At the top of your source file, import the `UIGestureRecognizerSubclass.h` header file (for Objective-C) or the `UIKit.UIGestureRecognizerSubclass` module (for Swift), as shown in the following code. This file defines the methods and properties that you must override to implement your custom gesture recognizer.
 

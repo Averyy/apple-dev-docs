@@ -18,9 +18,9 @@ var developerPostbackURL: URL? { get }
 
 #### Discussion
 
-Use this property to view the URL that [`SKAdNetwork`](https://developer.apple.com/documentation/StoreKit/SKAdNetwork) computes to send a copy of the winning postback to the developer. This property has a valid URL only if you specify a valid URL in the [`NSAdvertisingAttributionReportEndpoint`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSAdvertisingAttributionReportEndpoint) key in your app’s `Info.plist`. For more information, see [`Configuring an advertised app`](https://developer.apple.com/documentation/StoreKit/configuring-an-advertised-app).
+Use this property to view the URL that [`SKAdNetwork`](https://developer.apple.com/documentation/storekit/skadnetwork) computes to send a copy of the winning postback to the developer. This property has a valid URL only if you specify a valid URL in the [`NSAdvertisingAttributionReportEndpoint`](https://developer.apple.com/documentation/bundleresources/information-property-list/nsadvertisingattributionreportendpoint) key in your app’s `Info.plist`. For more information, see [`Configuring an advertised app`](https://developer.apple.com/documentation/storekit/configuring-an-advertised-app).
 
-> **Note**:  The testing environment doesn’t use this URL. [`SKAdNetwork`](https://developer.apple.com/documentation/StoreKit/SKAdNetwork) sends copies of winning postbacks in the production environment only.
+> **Note**:  The testing environment doesn’t use this URL. [`SKAdNetwork`](https://developer.apple.com/documentation/storekit/skadnetwork) sends copies of winning postbacks in the production environment only.
 
 
 ---

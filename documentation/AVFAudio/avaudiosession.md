@@ -253,7 +253,7 @@ The audio session uses this configuration when you activate the session using th
 - [class let mediaServicesWereLostNotification: NSNotification.Name](avaudiosession/mediaserviceswerelostnotification.md)
   A notification the system posts when it terminates the media server.
 ### Errors
-- [AVAudioSession.ErrorCode](../CoreAudioTypes/AVAudioSession/ErrorCode.md)
+- [AVAudioSession.ErrorCode](../coreaudiotypes/avaudiosession/errorcode.md)
   Codes that describe error conditions that may occur when performing audio session operations.
 ### Deprecated
 - [Deprecated Symbols](deprecated-symbols.md)
@@ -272,16 +272,16 @@ The audio session uses this configuration when you activate the session using th
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

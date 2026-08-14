@@ -11,11 +11,11 @@ Add offline audio processing features to your app by enabling offline manual ren
 
 You commonly use [`AVAudioEngine`](avaudioengine.md) to add advanced real-time audio playback features to your app. In a real-time scenario, the audio hardware drives the engine’s I/O and renders the data to the output hardware, such as the device’s built-in speaker or connected headphones.
 
-![Flow diagram showing an app using an audio engine in a real-time context. The audio flows from the app to a player node, then to a mixer node, followed by the output node, and ultimately to the device speaker or connected headphones.](https://docs-assets.developer.apple.com/published/7dde6099f292530041b1e699e27d9ec3/realtime.png)
+![Flow diagram showing an app using an audio engine in a real-time context. The audio flows from the app to a player node, then to a mixer node, followed by the output node, and ultimately to the device speaker or connected headphones.](/images/com.apple.avfaudio/realtime.png)
 
 You can also use `AVAudioEngine` to perform *offline* audio processing by enabling the engine’s offline manual rendering mode.  In this mode, the engine’s input and output nodes are disconnected from the audio hardware and the rendering is driven by your app. You use offline manual rendering mode to perform advanced postprocessing tasks, such as applying effects or performing audio analysis, usually much faster than you can do in real time.
 
-![Flow diagram showing an app using an audio engine in an offline context. The audio flows from the app to a player node, then to an effect node, followed by the output node, and finally back to the app to write the processed audio to disk.](https://docs-assets.developer.apple.com/published/f6a15fd001f0ceebcd185b9ba077250c/offline.png)
+![Flow diagram showing an app using an audio engine in an offline context. The audio flows from the app to a player node, then to an effect node, followed by the output node, and finally back to the app to write the processed audio to disk.](/images/com.apple.avfaudio/offline.png)
 
 This sample playground shows you how to enable the audio engine’s manual rendering mode and drive the rendering process from your app.
 

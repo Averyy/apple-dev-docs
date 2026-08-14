@@ -20,7 +20,7 @@ static let externalObjects: UINib.OptionsKey
 
 #### Discussion
 
-The value for this key is an [`NSDictionary`](https://developer.apple.com/documentation/Foundation/NSDictionary) object. The keys of the dictionary are the names of any proxy objects in the nib file, and the value for each key is the actual object to use in place of the proxy.
+The value for this key is an [`NSDictionary`](https://developer.apple.com/documentation/foundation/nsdictionary) object. The keys of the dictionary are the names of any proxy objects in the nib file, and the value for each key is the actual object to use in place of the proxy.
 
 
 ---

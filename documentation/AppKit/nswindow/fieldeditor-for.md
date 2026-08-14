@@ -16,7 +16,7 @@ func fieldEditor(_ createFlag: Bool, for object: Any?) -> NSText?
 
 #### Return Value
 
-Returns the field editor for the designated object (`object`) or, if `object` is `nil`, the default field editor. Returns `nil` if `createFlag` is [`false`](https://developer.apple.com/documentation/Swift/false) and if the field editor doesn’t exist.
+Returns the field editor for the designated object (`object`) or, if `object` is `nil`, the default field editor. Returns `nil` if `createFlag` is [`false`](https://developer.apple.com/documentation/swift/false) and if the field editor doesn’t exist.
 
 #### Discussion
 
@@ -31,7 +31,7 @@ The window’s delegate can substitute a custom field editor in place of the win
 
 ## Parameters
 
-- `createFlag`: If [`true`](https://developer.apple.com/documentation/Swift/true), creates a field editor if one doesn’t exist; if [`false`](https://developer.apple.com/documentation/Swift/false), does not create a field editor. A freshly created `NSWindow` object doesn’t have a field editor. After a field editor has been created for a window, the `createFlag` argument is ignored. By passing [`false`](https://developer.apple.com/documentation/Swift/false) for `createFlag` and testing the return value, however, you can predicate an action on the existence of the field editor.
+- `createFlag`: If [`true`](https://developer.apple.com/documentation/swift/true), creates a field editor if one doesn’t exist; if [`false`](https://developer.apple.com/documentation/swift/false), does not create a field editor. A freshly created `NSWindow` object doesn’t have a field editor. After a field editor has been created for a window, the `createFlag` argument is ignored. By passing [`false`](https://developer.apple.com/documentation/swift/false) for `createFlag` and testing the return value, however, you can predicate an action on the existence of the field editor.
 - `object`: A text-displaying object for which the delegate (in [`windowWillReturnFieldEditor(_:to:)`](nswindowdelegate/windowwillreturnfieldeditor(_:to:).md)) assigns a custom field editor. Pass `nil` to get the default field editor, which can be the `NSWindow` field editor or a custom field editor returned by the delegate.
 
 ## See Also

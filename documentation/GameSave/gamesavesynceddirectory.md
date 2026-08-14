@@ -20,7 +20,7 @@ class GameSaveSyncedDirectory
 
 #### Overview
 
-To get an instance of the directory, call [`openDirectory(containerIdentifier:)`](gamesavesynceddirectory/opendirectory(containeridentifier:).md), which returns the directory for the iCloud container associated with the specified identifier. Calling this method starts syncing the directory in the background on the specified container. When the game needs to access the contents of the directory, show a UI while the directory fully syncs using the [`gameSaveSyncingAlert(directory:finishedLoading:)`](https://developer.apple.com/documentation/SwiftUI/View/gameSaveSyncingAlert(directory:finishedLoading:)) view extension if your app uses SwiftUI, the [`finishSyncing(statusDisplay:)`](gamesavesynceddirectory/finishsyncing(statusdisplay:)-500el.md) method if your app uses UIKit, or the [`finishSyncing(statusDisplay:)`](gamesavesynceddirectory/finishsyncing(statusdisplay:)-309nq.md) method if your app uses AppKit.
+To get an instance of the directory, call [`openDirectory(containerIdentifier:)`](gamesavesynceddirectory/opendirectory(containeridentifier:).md), which returns the directory for the iCloud container associated with the specified identifier. Calling this method starts syncing the directory in the background on the specified container. When the game needs to access the contents of the directory, show a UI while the directory fully syncs using the [`gameSaveSyncingAlert(directory:finishedLoading:)`](https://developer.apple.com/documentation/swiftui/view/gamesavesyncingalert(directory:finishedloading:)) view extension if your app uses SwiftUI, the [`finishSyncing(statusDisplay:)`](gamesavesynceddirectory/finishsyncing(statusdisplay:)-500el.md) method if your app uses UIKit, or the [`finishSyncing(statusDisplay:)`](gamesavesynceddirectory/finishsyncing(statusdisplay:)-309nq.md) method if your app uses AppKit.
 
 If you’re showing your own UI, call the [`finishSyncing()`](gamesavesynceddirectory/finishsyncing().md) method to wait for the directory to finish syncing.
 
@@ -56,13 +56,13 @@ After the directory is ready to use, syncing pauses until you close the director
 ## Relationships
 
 ### Conforms To
-- [Copyable](../Swift/Copyable.md)
-- [Equatable](../Swift/Equatable.md)
-- [Escapable](../Swift/Escapable.md)
-- [Identifiable](../Swift/Identifiable.md)
-- [Observable](../Observation/Observable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Copyable](../swift/copyable.md)
+- [Equatable](../swift/equatable.md)
+- [Escapable](../swift/escapable.md)
+- [Identifiable](../swift/identifiable.md)
+- [Observable](../observation/observable.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 
 ---

@@ -107,7 +107,7 @@ struct MyApp: App {
 
 Customize the messages displayed on the permissions sheet by setting the following key:
 
-- [`NSHealthShareUsageDescription`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSHealthShareUsageDescription) customizes the message for reading data.
+- [`NSHealthShareUsageDescription`](https://developer.apple.com/documentation/bundleresources/information-property-list/nshealthshareusagedescription) customizes the message for reading data.
 
 > ⚠️ **Warning**: You must set the usage key, or your app crashes when you request authorization.
 
@@ -118,8 +118,8 @@ After users set the permissions for your app, they can always change them using 
 ## Parameters
 
 - `store`: The HealthKit store where you’re requesting authorization.
-- `readTypes`: An optional set containing the data types you want to read. This set can contain any concrete subclass of the [`HKObjectType`](https://developer.apple.com/documentation/HealthKit/HKObjectType) class (any of the [`HKCharacteristicType`](https://developer.apple.com/documentation/HealthKit/HKCharacteristicType), [`HKQuantityType`](https://developer.apple.com/documentation/HealthKit/HKQuantityType), [`HKCategoryType`](https://developer.apple.com/documentation/HealthKit/HKCategoryType), [`HKWorkoutType`](https://developer.apple.com/documentation/HealthKit/HKWorkoutType), or [`HKCorrelationType`](https://developer.apple.com/documentation/HealthKit/HKCorrelationType) classes ). If the user grants permission, your app can read these data types from the HealthKit store.
-- `trigger`: A value used to trigger the request. This value must be a [`State`](State.md) variable. Any change to the variable triggers a request.
+- `readTypes`: An optional set containing the data types you want to read. This set can contain any concrete subclass of the [`HKObjectType`](https://developer.apple.com/documentation/healthkit/hkobjecttype) class (any of the [`HKCharacteristicType`](https://developer.apple.com/documentation/healthkit/hkcharacteristictype), [`HKQuantityType`](https://developer.apple.com/documentation/healthkit/hkquantitytype), [`HKCategoryType`](https://developer.apple.com/documentation/healthkit/hkcategorytype), [`HKWorkoutType`](https://developer.apple.com/documentation/healthkit/hkworkouttype), or [`HKCorrelationType`](https://developer.apple.com/documentation/healthkit/hkcorrelationtype) classes ). If the user grants permission, your app can read these data types from the HealthKit store.
+- `trigger`: A value used to trigger the request. This value must be a [`State`](state.md) variable. Any change to the variable triggers a request.
 - `completion`: A block that the system calls after the request is complete. The system passes the result parameter.
 
 ## See Also

@@ -41,7 +41,7 @@ The single required method in the protocol, [`widgetList(_:viewControllerForRow:
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

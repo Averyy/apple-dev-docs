@@ -19,7 +19,7 @@ class let touchBarPlayTemplateName: String
 
 #### Discussion
 
-![Template image for play](https://docs-assets.developer.apple.com/published/0e00bdef310493c435c2675895cec9b6/media-2793536%402x.png)
+![Template image for play](/images/com.apple.appkit/media-2793536@2x.png)
 
 Touch Bar template images are exclusively for use in [`NSTouchBarItem`](nstouchbaritem.md) objects and not in onscreen windows.
 

@@ -19,7 +19,7 @@ static let MPMoviePlayerPlaybackStateDidChange: NSNotification.Name
 
 #### Discussion
 
-Playback state can change programmatically (see [`MPMediaPlayback`](https://developer.apple.com/documentation/MediaPlayer/MPMediaPlayback)) or by user interaction. To retrieve the playback state of a movie player, access its [`playbackState`](https://developer.apple.com/documentation/MediaPlayer/MPMoviePlayerController/playbackState) property. The movie player whose state has changed is available as the object associated with the notification.
+Playback state can change programmatically (see [`MPMediaPlayback`](https://developer.apple.com/documentation/mediaplayer/mpmediaplayback)) or by user interaction. To retrieve the playback state of a movie player, access its [`playbackState`](https://developer.apple.com/documentation/mediaplayer/mpmovieplayercontroller/playbackstate) property. The movie player whose state has changed is available as the object associated with the notification.
 
 ## See Also
 

@@ -26,7 +26,7 @@ The optional “user info” dictionary may provide additional information that 
 
 In general, a method should signal an error condition by returning, for example, `false` or `NULL` rather than by the simple presence of an error object. The method can then optionally return an CFError object by reference, in order to further describe the error.
 
-CFError is toll-free bridged to [`NSError`](https://developer.apple.com/documentation/Foundation/NSError) in the Foundation framework—for more details on toll-free bridging, see [`Toll-Free Bridged Types`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFDesignConcepts/Articles/tollFreeBridgedTypes.html#//apple_ref/doc/uid/TP40010677). `NSError` has some additional guidelines that make it easy to report errors automatically to users and attempt to recover from them. See [`Error Handling Programming Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/ErrorHandlingCocoa/ErrorHandling/ErrorHandling.html#//apple_ref/doc/uid/TP40001806) for more information on `NSError` programming guidelines.
+CFError is toll-free bridged to [`NSError`](https://developer.apple.com/documentation/foundation/nserror) in the Foundation framework—for more details on toll-free bridging, see [`Toll-Free Bridged Types`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFDesignConcepts/Articles/tollFreeBridgedTypes.html#//apple_ref/doc/uid/TP40010677). `NSError` has some additional guidelines that make it easy to report errors automatically to users and attempt to recover from them. See [`Error Handling Programming Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/ErrorHandlingCocoa/ErrorHandling/ErrorHandling.html#//apple_ref/doc/uid/TP40001806) for more information on `NSError` programming guidelines.
 
 ## Topics
 
@@ -60,13 +60,13 @@ CFError is toll-free bridged to [`NSError`](https://developer.apple.com/document
 ## Relationships
 
 ### Conforms To
-- [Copyable](../Swift/Copyable.md)
-- [Equatable](../Swift/Equatable.md)
-- [Error](../Swift/Error.md)
-- [Escapable](../Swift/Escapable.md)
-- [Hashable](../Swift/Hashable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Copyable](../swift/copyable.md)
+- [Equatable](../swift/equatable.md)
+- [Error](../swift/error.md)
+- [Escapable](../swift/escapable.md)
+- [Hashable](../swift/hashable.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

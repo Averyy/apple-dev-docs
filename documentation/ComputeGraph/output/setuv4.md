@@ -19,7 +19,7 @@ void output::setUV4(float4 value)
 
 This function assigns a custom UV coordinate to the fourth texture coordinate channel of the output mesh. If the mesh doesn’t already have a UV4 channel, it will be created. This enables multi-texturing and advanced shader effects.
 
-> **Note**: ![Graph](https://docs-assets.developer.apple.com/published/c7ab8b984c6a8d4f7fe6c4eddcd50d00/output__setUV4.svg)
+> **Note**: ![Graph](/images/com.apple.computegraph/output__setUV4.svg)
 
 > **Note**: Reads and writes to output attribute `float4 uv4`
 

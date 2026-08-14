@@ -16,7 +16,7 @@ func goForward()
 
 #### Discussion
 
-This method works by changing the current item to the item that follows it. This method raises an [`internalInconsistencyException`](https://developer.apple.com/documentation/Foundation/NSExceptionName/internalInconsistencyException) exception if no item follows the current item.
+This method works by changing the current item to the item that follows it. This method raises an [`internalInconsistencyException`](https://developer.apple.com/documentation/foundation/nsexceptionname/internalinconsistencyexception) exception if no item follows the current item.
 
 ## See Also
 

@@ -23,14 +23,14 @@ Your app can also use a framework-provided task to execute critical jobs in the 
 ## Topics
 
 ### Essentials
-- [Background Tasks updates](../Updates/BackgroundTasks.md)
+- [Background Tasks updates](../updates/backgroundtasks.md)
   Learn about important changes in Background Tasks.
 - [class BGTaskScheduler](bgtaskscheduler.md)
   A class for scheduling tasks that add background support to your app’s most critical work.
 - [class BGTask](bgtask.md)
   An abstract class for the framework’s tasks.
 ### Background tasks
-- [Using background tasks to update your app](../UIKit/using-background-tasks-to-update-your-app.md)
+- [Using background tasks to update your app](../uikit/using-background-tasks-to-update-your-app.md)
   Configure your app to perform tasks in the background to make efficient use of processing time and power.
 - [Refreshing and Maintaining Your App Using Background Tasks](refreshing-and-maintaining-your-app-using-background-tasks.md)
   Use scheduled background tasks for refreshing your app content and for performing maintenance.
@@ -47,7 +47,7 @@ Your app can also use a framework-provided task to execute critical jobs in the 
   Use a continuous background task to do work that can complete as needed.
 - [class BGContinuedProcessingTask](bgcontinuedprocessingtask.md)
   A task that starts in the foreground and can continue running in the background as needed.
-- [Background GPU Access](../BundleResources/Entitlements/com.apple.developer.background-tasks.continued-processing.gpu.md)
+- [Background GPU Access](../bundleresources/entitlements/com.apple.developer.background-tasks.continued-processing.gpu.md)
   The entitlement the system requires for a continuous background task to use the GPU.
 ### Task requests
 - [class BGProcessingTaskRequest](bgprocessingtaskrequest.md)

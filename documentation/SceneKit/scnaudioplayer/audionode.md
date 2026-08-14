@@ -22,7 +22,7 @@ var audioNode: AVAudioNode? { get }
 
 #### Discussion
 
-SceneKit uses this [`AVAudioNode`](https://developer.apple.com/documentation/AVFAudio/AVAudioNode) object to perform 3D positional mixing during playback. Use this object to vary parameters such as volume and reverb in real time during playback. To set default values for those parameters, use the [`audioSource`](scnaudioplayer/audiosource.md) property.
+SceneKit uses this [`AVAudioNode`](https://developer.apple.com/documentation/avfaudio/avaudionode) object to perform 3D positional mixing during playback. Use this object to vary parameters such as volume and reverb in real time during playback. To set default values for those parameters, use the [`audioSource`](scnaudioplayer/audiosource.md) property.
 
 ## See Also
 

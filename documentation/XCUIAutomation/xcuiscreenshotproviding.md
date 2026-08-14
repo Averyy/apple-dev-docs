@@ -35,7 +35,7 @@ Call this protocol’s [`screenshot()`](xcuiscreenshotproviding/screenshot().md)
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 ### Conforming Types
 - [XCUIApplication](xcuiapplication.md)
 - [XCUIElement](xcuielement.md)

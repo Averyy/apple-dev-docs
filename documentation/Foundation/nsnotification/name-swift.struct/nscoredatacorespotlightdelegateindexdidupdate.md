@@ -22,7 +22,7 @@ static let NSCoreDataCoreSpotlightDelegateIndexDidUpdate: NSNotification.Name
 
 This notification’s `object` is the Core Spotlight delegate. The framework posts the notification to a private thread. Move to a known thread before peforming any work.
 
-The `userInfo` dictionary contains the persistent store’s unique identifier and the most recent history token, which you access with the [`NSStoreUUIDKey`](https://developer.apple.com/documentation/CoreData/NSStoreUUIDKey) and [`NSPersistentHistoryTokenKey`](https://developer.apple.com/documentation/CoreData/NSPersistentHistoryTokenKey) keys. It’s safe to capture the dictionary’s contents.
+The `userInfo` dictionary contains the persistent store’s unique identifier and the most recent history token, which you access with the [`NSStoreUUIDKey`](https://developer.apple.com/documentation/coredata/nsstoreuuidkey) and [`NSPersistentHistoryTokenKey`](https://developer.apple.com/documentation/coredata/nspersistenthistorytokenkey) keys. It’s safe to capture the dictionary’s contents.
 
 ## See Also
 

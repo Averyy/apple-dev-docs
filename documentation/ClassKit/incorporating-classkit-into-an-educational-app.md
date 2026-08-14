@@ -20,9 +20,9 @@ Before starting, be sure to read [`Enabling ClassKit in your app`](enabling-clas
 
 The GreatPlays app provides a navigable hierarchy of plays, acts, and scenes, along with quizzes that test the reader’s comprehension. The app uses a simple data model that represents a collection of plays—the shared `PlayLibrary` instance holds `Play` instances, each of which contain an array of `Act` instances, and so on. These all exist independent of ClassKit.
 
-![Diagram showing how model objects appear in a tree structure.](https://docs-assets.developer.apple.com/published/af312c8ad42197179f5754d8578924d8/ModelHierarchy%402x.png)
+![Diagram showing how model objects appear in a tree structure.](/images/com.apple.classkit/ModelHierarchy@2x.png)
 
-For this example, the structure of a single play—Shakespeare’s *Hamlet*—is added to the library at launch, from inside the [`application(_:didFinishLaunchingWithOptions:)`](https://developer.apple.com/documentation/UIKit/UIApplicationDelegate/application(_:didFinishLaunchingWithOptions:)) method.
+For this example, the structure of a single play—Shakespeare’s *Hamlet*—is added to the library at launch, from inside the [`application(_:didFinishLaunchingWithOptions:)`](https://developer.apple.com/documentation/uikit/uiapplicationdelegate/application(_:didfinishlaunchingwithoptions:)) method.
 
 > **Note**: When writing an app for the educational market, consider supporting shared iPad, as described in [`Optimizing Apps for Shared iPad`](https://developer.apple.comhttps://developer.apple.com/education/shared-ipad/). This sample app does that by not using any persistent local storage and by setting the [`NSSupportsPurgeableLocalStorage`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CocoaKeys.html#//apple_ref/doc/uid/TP40009251-SW45) key to `YES` in its `Info.plist` file.
 
@@ -30,7 +30,7 @@ In a real app, in addition to the structure, you would also add the play’s tex
 
 ##### Define Assignable Content
 
-Your first task in adopting ClassKit is to define your app’s assignable content. You represent a unit of assignable content to ClassKit as a [`CLSContext`](CLSContext.md) instance, and then establish relationships between contexts by grouping them together into a hierarchy. For the play reader, teachers might want to assign a quiz, an individual scene, an act (with all its scenes), or even the whole play. So the existing model hierarchy provides a good template for a context hierarchy.
+Your first task in adopting ClassKit is to define your app’s assignable content. You represent a unit of assignable content to ClassKit as a [`CLSContext`](clscontext.md) instance, and then establish relationships between contexts by grouping them together into a hierarchy. For the play reader, teachers might want to assign a quiz, an individual scene, an act (with all its scenes), or even the whole play. So the existing model hierarchy provides a good template for a context hierarchy.
 
 Because ClassKit layers on top of what your app already does, it’s often best to isolate ClassKit support into class extensions. This scheme avoids disrupting the app’s normal flow. The sample app therefore declares a `Node` protocol that model objects can adopt in an extension to readily associate with a related context:
 
@@ -43,7 +43,7 @@ protocol Node {
 }
 ```
 
-In adopting this protocol, a model object discloses its immediate ancestor and descendants, a unique identifier, and a [`CLSContextType`](CLSContextType.md) value that indicates what kind of content it contains. For example, the `Node` extension to `Act`, shown below, defines its `parent` as the `play` that contains it, and its `children` as the `scenes` it contains. It provides an identifier that is unique to the act, and a context type of [`CLSContextType.chapter`](CLSContextType/chapter.md), which is a reasonable approximation of the role of an act within a play.
+In adopting this protocol, a model object discloses its immediate ancestor and descendants, a unique identifier, and a [`CLSContextType`](clscontexttype.md) value that indicates what kind of content it contains. For example, the `Node` extension to `Act`, shown below, defines its `parent` as the `play` that contains it, and its `children` as the `scenes` it contains. It provides an identifier that is unique to the act, and a context type of [`CLSContextType.chapter`](clscontexttype/chapter.md), which is a reasonable approximation of the role of an act within a play.
 
 ```swift
 extension Act: Node {
@@ -134,9 +134,9 @@ Because you’re only declaring the contexts at this point, you don’t need to 
 
 ##### Build Contexts on Demand
 
-Any time you ask the data store ([`CLSDataStore`](CLSDataStore.md)) for a context, whether during declaration or because you want to activate the context, the data store first looks in its database of stored contexts. If the context is available there, perhaps from a previous launch of your app, the data store returns that. But if it’s not available, the data store asks its [`delegate`](CLSDataStore/delegate.md) to build the context.
+Any time you ask the data store ([`CLSDataStore`](clsdatastore.md)) for a context, whether during declaration or because you want to activate the context, the data store first looks in its database of stored contexts. If the context is available there, perhaps from a previous launch of your app, the data store returns that. But if it’s not available, the data store asks its [`delegate`](clsdatastore/delegate.md) to build the context.
 
-By defining contexts that parallel your model hierarchy, you facilitate the building of new contexts. In your implementation of the [`CLSDataStoreDelegate`](CLSDataStoreDelegate.md) protocol’s [`createContext(forIdentifier:parentContext:parentIdentifierPath:)`](CLSDataStoreDelegate/createContext(forIdentifier:parentContext:parentIdentifierPath:).md) method, you can use characteristics of your model objects to inform context creation.
+By defining contexts that parallel your model hierarchy, you facilitate the building of new contexts. In your implementation of the [`CLSDataStoreDelegate`](clsdatastoredelegate.md) protocol’s [`createContext(forIdentifier:parentContext:parentIdentifierPath:)`](clsdatastoredelegate/createcontext(foridentifier:parentcontext:parentidentifierpath:).md) method, you can use characteristics of your model objects to inform context creation.
 
 In the play reader, the shared instance of the `PlayLibrary` class takes the role of delegate, again using an extension. Its `ClassKit` extension includes the `setupClassKit()` method that assigns itself as the delegate:
 
@@ -181,7 +181,7 @@ func createContext(forIdentifier identifier: String, parentContext: CLSContext, 
 
 ##### Build Contexts From an App Extension
 
-The app includes a ClassKit context provider app extension by defining a target called `ClassKitContextProvider`. A ClassKit extension’s primary class conforms to the [`CLSContextProvider`](CLSContextProvider.md) protocol. Schoolwork calls this protocol’s [`updateDescendants(of:completion:)`](CLSContextProvider/updateDescendants(of:completion:).md) method to create or update the children of a given context as the teacher browses assignable content. This enables Schoolwork to advertise the most up-to-date version of an app’s assignable content, even before the teacher runs the main app for the first time.
+The app includes a ClassKit context provider app extension by defining a target called `ClassKitContextProvider`. A ClassKit extension’s primary class conforms to the [`CLSContextProvider`](clscontextprovider.md) protocol. Schoolwork calls this protocol’s [`updateDescendants(of:completion:)`](clscontextprovider/updatedescendants(of:completion:).md) method to create or update the children of a given context as the teacher browses assignable content. This enables Schoolwork to advertise the most up-to-date version of an app’s assignable content, even before the teacher runs the main app for the first time.
 
 Using the identifier path of the passed-in context, the update method finds the corresponding node in the data model, and then finds the children of that node:
 
@@ -230,7 +230,7 @@ In this app, contexts never change, so the loop moves to the next iteration with
 
 ##### Record Progress with Activities
 
-While contexts declare the structure of your app, you use [`CLSActivity`](CLSActivity.md) instances to report progress through those contexts. For example, for a context representing a scene, the corresponding activity reports how much of the scene the student has read and how long they took to read it.
+While contexts declare the structure of your app, you use [`CLSActivity`](clsactivity.md) instances to report progress through those contexts. For example, for a context representing a scene, the corresponding activity reports how much of the scene the student has read and how long they took to read it.
 
 In addition to the identifier extension, the sample app includes another extension to `Node` that provides default behavior for working with ClassKit activities. Model objects use their own identifier path to locate the matching context, and then use the context to manage activities. For example, the `startActivity()` method defined in the extension begins an activity:
 
@@ -268,7 +268,7 @@ func startActivity(asNew: Bool = false) {
 
 ##### Start Recording When the User Begins an Activity
 
-You typically call methods to record activity from your view controllers. Consider an assignment to read a particular scene. The scene’s view controller knows when the scene appears on screen and has a handle on the scene instance. So the controller is in the best position to tell the scene to begin recording an activity from its [`viewDidAppear(_:)`](https://developer.apple.com/documentation/UIKit/UIViewController/viewDidAppear(_:)) method:
+You typically call methods to record activity from your view controllers. Consider an assignment to read a particular scene. The scene’s view controller knows when the scene appears on screen and has a handle on the scene instance. So the controller is in the best position to tell the scene to begin recording an activity from its [`viewDidAppear(_:)`](https://developer.apple.com/documentation/uikit/uiviewcontroller/viewdidappear(_:)) method:
 
 ```swift
 override func viewDidAppear(_ animated: Bool) {
@@ -308,7 +308,7 @@ func scrollViewDidScroll(_ scrollView: UIScrollView) {
 
 ##### Stop Recording When the User Stops an Activity
 
-The controller informs the scene when the activity is over in its [`viewWillDisappear(_:)`](https://developer.apple.com/documentation/UIKit/UIViewController/viewWillDisappear(_:)) method:
+The controller informs the scene when the activity is over in its [`viewWillDisappear(_:)`](https://developer.apple.com/documentation/uikit/uiviewcontroller/viewwilldisappear(_:)) method:
 
 ```swift
 override func viewWillDisappear(_ animated: Bool) {
@@ -336,7 +336,7 @@ func record() {
 
 ##### Mark an Activity As Done
 
-While recording the quiz score, the app also calls the `markAsDone()` method, as shown in the previous section, which in turn calls the data store’s [`completeAllAssignedActivities(matching:)`](CLSDataStore/completeAllAssignedActivities(matching:).md) method to indicate that the student has finalized the attempt.
+While recording the quiz score, the app also calls the `markAsDone()` method, as shown in the previous section, which in turn calls the data store’s [`completeAllAssignedActivities(matching:)`](clsdatastore/completeallassignedactivities(matching:).md) method to indicate that the student has finalized the attempt.
 
 ```swift
 func markAsDone() {
@@ -367,7 +367,7 @@ If you do decide to set a primary item, make sure you always set the same kind o
 
 - [Enabling ClassKit in your app](enabling-classkit-in-your-app.md)
   Prepare your app and your development environment to adopt ClassKit.
-- [ClassKit Environment Entitlement](../BundleResources/Entitlements/com.apple.developer.ClassKit-environment.md)
+- [ClassKit Environment Entitlement](../bundleresources/entitlements/com.apple.developer.classkit-environment.md)
   The ClassKit development or production environment for an education app that works with the Schoolwork app.
 - [ClassKit UI](../classkitui/classkitui.md)
   Display views that enable students to submit and withdraw assigned documents in your app.

@@ -37,10 +37,10 @@ final class ImageTrackingProvider
 ## Relationships
 
 ### Conforms To
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
 - [DataProvider](dataprovider.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 
@@ -48,7 +48,7 @@ final class ImageTrackingProvider
   Create images from rectangular shapes found in the user’s environment, and augment their appearance.
 - [Detecting Images in an AR Experience](detecting-images-in-an-ar-experience.md)
   React to known 2D images in the user’s environment, and use their positions to place AR content.
-- [Tracking preregistered images in 3D space](../visionOS/tracking-images-in-3d-space.md)
+- [Tracking preregistered images in 3D space](../visionos/tracking-images-in-3d-space.md)
   Place content based on the current position of a known image in a person’s surroundings.
 - [struct ImageAnchor](imageanchor.md)
   A 2D image’s position in a person’s surroundings.

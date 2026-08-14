@@ -20,9 +20,9 @@ interface DirectionsResponse
 
 #### Overview
 
-To get directions, create an instance of [`Directions`](directions.md) and call the [`route(request)`](directions/route.md) method.
+To get directions, create an instance of [`Directions`](directions.md) and call the [`route()`](directions/route.md) method.
 
-The [`route(request)`](directions/route.md) method returns a promise that resolves with a `DirectionsResponse` on success.
+The [`route()`](directions/route.md) method returns a promise that resolves with a `DirectionsResponse` on success.
 
 ## Topics
 

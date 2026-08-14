@@ -20,7 +20,7 @@ virtual bool init();
 
 #### Discussion
 
-The system calls this method shortly after it instantiates your `IOUserUSBSerial` subclass, and before it calls the [`Start`](https://developer.apple.com/documentation/SerialDriverKit/IOUserSerial/Start) method of your service. Limit the work you do in this method to simple tasks that must occur before your service starts. For example, use this method to allocate memory for your `ivars` structure.
+The system calls this method shortly after it instantiates your `IOUserUSBSerial` subclass, and before it calls the [`Start`](https://developer.apple.com/documentation/serialdriverkit/iouserserial/start) method of your service. Limit the work you do in this method to simple tasks that must occur before your service starts. For example, use this method to allocate memory for your `ivars` structure.
 
 Always call `super` at the beginning of your implementation of this method.
 

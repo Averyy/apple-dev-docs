@@ -21,7 +21,7 @@ var cgImage: CGImage? { get }
 
 #### Discussion
 
-If this image was created using the [`init(cgImage:)`](ciimage/init(cgimage:)-2kvvb.md) or [`init(contentsOf:)`](ciimage/init(contentsof:).md) initializer, this property’s value is the [`CGImage`](https://developer.apple.com/documentation/CoreGraphics/CGImage) object that provides the image’s underlying image data. Otherwise, this property’s value is `nil`—in this case you can obtain a CoreGraphics image by rendering the image with the [`CIContext`](cicontext.md) [`createCGImage(_:from:)`](cicontext/createcgimage(_:from:).md) method.
+If this image was created using the [`init(cgImage:)`](ciimage/init(cgimage:)-2kvvb.md) or [`init(contentsOf:)`](ciimage/init(contentsof:).md) initializer, this property’s value is the [`CGImage`](https://developer.apple.com/documentation/coregraphics/cgimage) object that provides the image’s underlying image data. Otherwise, this property’s value is `nil`—in this case you can obtain a CoreGraphics image by rendering the image with the [`CIContext`](cicontext.md) [`createCGImage(_:from:)`](cicontext/createcgimage(_:from:).md) method.
 
 ## See Also
 

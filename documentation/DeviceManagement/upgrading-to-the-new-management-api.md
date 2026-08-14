@@ -20,11 +20,11 @@ The following table shows the differences between the API 1 and API 2 endpoints.
 | `getAssignments` | `POST` | `assignments` | `GET` |
 | `getVPPAssetsSrv` | `POST` | `assets` | `GET` |
 | `getVPPLicensesSrv` | `POST` |  |  |
-| `getVPPUsersSrv` ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) `getVPPUserSrv` | `POST` | `users` | `GET` |
-| `manageVPPLicensesByAdamIdSrv` | `POST` | `assets/associate` ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) `assets/disassociate` | `POST` |
+| `getVPPUsersSrv` ![None](/images/com.apple.devicemanagement/spacer.png) `getVPPUserSrv` | `POST` | `users` | `GET` |
+| `manageVPPLicensesByAdamIdSrv` | `POST` | `assets/associate` ![None](/images/com.apple.devicemanagement/spacer.png) `assets/disassociate` | `POST` |
 | `registerVPPUserSrv` | `POST` | `users/create` | `POST` |
 | `retireVPPUserSrv` | `POST` | `users/retire` | `POST` |
-| `VPPClientConfigSrv` | `POST` | `client/config` ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) `client/config` | `POST` ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) `GET` |
+| `VPPClientConfigSrv` | `POST` | `client/config` ![None](/images/com.apple.devicemanagement/spacer.png) `client/config` | `POST` ![None](/images/com.apple.devicemanagement/spacer.png) `GET` |
 | `VPPServiceConfigSrv` | `POST` | `service/config` | `GET` |
 |  |  | `status` | `GET` |
 |  |  | `assets/revoke` | `POST` |
@@ -68,11 +68,11 @@ For information about subscribing to different notification types, see [`ClientC
 
 #### Set Information About the Device Management Service
 
-In version 2, when creating a [`ClientConfigRequest`](clientconfigrequest.md), you can include [`MdmInfo`](mdminfo.md) in the request. The server returns this information on all subsequent responses to identify which device management service is managing the location. It’s important to interrogate the `MdmInfo` content API responses to ensure no other device management service is attempting to manage the data in this location.
+In version 2, when creating a [`ClientConfigRequest`](clientconfigrequest.md), you can include [`MdmInfo`](mdminfo.md) in the request. The server returns this information on all subsequent responses to identify which device management service is managing the organizational unit. It’s important to interrogate the `MdmInfo` content API responses to ensure no other device management service is attempting to manage the data in this organizational unit.
 
 Within `MdmInfo`, you have the opportunity to include `metadata`, a free-form field to store additional information for the organization.
 
-> **Note**:  In version 2, `metadata` replaces `clientContext` from version 1. It’s advisable to include informative plain text descriptors, particularly in the `name` field, to help identify the device management service in the case of any discrepancies. After a device management service uses version 2, the system automatically updates the `clientContext` in version 1 for that location to display “token being used in v2”.
+> **Note**:  In version 2, `metadata` replaces `clientContext` from version 1. It’s advisable to include informative plain text descriptors, particularly in the `name` field, to help identify the device management service in the case of any discrepancies. After a device management service uses version 2, the system automatically updates the `clientContext` in version 1 for that organizational unit to display “token being used in v2”.
 
 #### Perform Occasional Syncs
 
@@ -80,7 +80,7 @@ Notifications remove the necessity to continually sync with Apple for asset and 
 
 #### Sanitize Device Management Information
 
-To maintain device management hygiene, update the `mdmInfo` field using the [`Client Config`](client-config-4szk1.md) endpoint to reflect any changes. Prior to releasing a location, remove any assets assigned to a location through transferring. If a device management service fails to receive notifications, it’s preferable to sanitize the `notificationUrl` field and reset it to a reachable URL.
+To maintain device management hygiene, update the `mdmInfo` field using the [`Client Config`](client-config-4szk1.md) endpoint to reflect any changes. Prior to releasing an organizational unit, remove any assets assigned to an organizational unit through transferring. If a device management service fails to receive notifications, it’s preferable to sanitize the `notificationUrl` field and reset it to a reachable URL.
 
 ## See Also
 

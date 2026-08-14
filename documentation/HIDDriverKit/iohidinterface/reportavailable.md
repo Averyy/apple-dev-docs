@@ -17,7 +17,7 @@ virtual void ReportAvailable(uint64_t timestamp, uint32_t reportID, uint32_t rep
 
 #### Discussion
 
-Implement a custom version of this method in the [`OSAction`](https://developer.apple.com/documentation/DriverKit/OSAction) object you use to open a session with the interface. Use the [`TYPE`](https://developer.apple.com/documentation/DriverKit/TYPE) macro to let the system know that your method conforms to this prototype.
+Implement a custom version of this method in the [`OSAction`](https://developer.apple.com/documentation/driverkit/osaction) object you use to open a session with the interface. Use the [`TYPE`](https://developer.apple.com/documentation/driverkit/type) macro to let the system know that your method conforms to this prototype.
 
 Don’t call this method directly. The system calls your custom method when a new report arrives.
 

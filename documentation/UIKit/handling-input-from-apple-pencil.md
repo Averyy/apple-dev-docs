@@ -8,7 +8,7 @@ Learn how to detect and respond to touches from Apple Pencil.
 
 UIKit reports touches from Apple Pencil in the same way it reports touches from a person’s fingers. Specifically, UIKit delivers a [`UITouch`](uitouch.md) object containing the location of the touch in your app. However, a touch object originating from Apple Pencil contains additional information, including the azimuth and altitude of Apple Pencil and the amount of force recorded at its tip.
 
-![An illustration of how azimuth (shown on the left) and altitude (shown on the right) are determined when using Apple Pencil on a screen.](https://docs-assets.developer.apple.com/published/346399f07002dc4ec8bcf9cb91af19b4/media-3004388%402x.png)
+![An illustration of how azimuth (shown on the left) and altitude (shown on the right) are determined when using Apple Pencil on a screen.](/images/com.apple.uikit/media-3004388@2x.png)
 
 Because Apple Pencil is a separate device, there’s a delay between the time Apple Pencil gathers altitude, azimuth, and force values and the time that those values are reported to your app. As a result, UIKit may provide *estimated* values for those properties initially, and then provide the real values at a later time. If you use altitude, azimuth, or force information from Apple Pencil, you must explicitly handle estimated properties.
 
@@ -79,9 +79,9 @@ override func touchesEstimatedPropertiesUpdated(_ touches: Set<UITouch>) {
 
 ## See Also
 
-- [Handling double taps from Apple Pencil](../ApplePencil/handling-double-taps-from-apple-pencil.md)
+- [Handling double taps from Apple Pencil](../applepencil/handling-double-taps-from-apple-pencil.md)
   Detect and respond to double taps a person makes on Apple Pencil.
-- [Handling squeezes from Apple Pencil](../ApplePencil/handling-squeezes-from-apple-pencil.md)
+- [Handling squeezes from Apple Pencil](../applepencil/handling-squeezes-from-apple-pencil.md)
   Detect and respond to squeezes a person makes on Apple Pencil Pro.
 
 

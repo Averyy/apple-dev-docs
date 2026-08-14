@@ -20,7 +20,7 @@ class CPManeuver
 
 You use maneuvers to provide turn-by-turn guidance in navigation apps. Each maneuver represents a single navigation instruction and can include a symbol, an instruction, and estimates for remaining time and distance.
 
-You supply an instruction as an array of variants, each with a different length. CarPlay chooses the longest variant that best fits the available space on the screen. You can optionally provide attributed variants that embed images using [`NSTextAttachment`](https://developer.apple.com/documentation/UIKit/NSTextAttachment). See [`attributedInstructionVariants`](cpmaneuver/attributedinstructionvariants.md) for more information.
+You supply an instruction as an array of variants, each with a different length. CarPlay chooses the longest variant that best fits the available space on the screen. You can optionally provide attributed variants that embed images using [`NSTextAttachment`](https://developer.apple.com/documentation/uikit/nstextattachment). See [`attributedInstructionVariants`](cpmaneuver/attributedinstructionvariants.md) for more information.
 
 In addition to the route guidance panel, you can show maneuvers on the CarPlay dashboard or in notification banners. Use the relevant properties to provide context-specific instructions and images.
 
@@ -87,17 +87,17 @@ In addition to the route guidance panel, you can show maneuvers on the CarPlay d
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCoding](../Foundation/NSCoding.md)
-- [NSCopying](../Foundation/NSCopying.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [NSSecureCoding](../Foundation/NSSecureCoding.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCoding](../foundation/nscoding.md)
+- [NSCopying](../foundation/nscopying.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSSecureCoding](../foundation/nssecurecoding.md)
 
 ## See Also
 

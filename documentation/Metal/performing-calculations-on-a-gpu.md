@@ -184,7 +184,7 @@ id<MTLComputeCommandEncoder> computeEncoder = [commandBuffer computeCommandEncod
 
 To encode a command, you make a series of method calls on the encoder. Some methods set state information, like the pipeline state object (PSO) or the arguments to be passed to the pipeline. After you make those state changes, you encode a command to execute the pipeline. The encoder writes all of the state changes and command parameters into the command buffer.
 
-![Command Encoding](https://docs-assets.developer.apple.com/published/ec94660b320c7fbdcdc5c53327507e16/performing-calculations-on-a-gpu%402x.png)
+![Command Encoding](/images/com.apple.metal/performing-calculations-on-a-gpu@2x.png)
 
 ##### Set Pipeline State and Argument Data
 

@@ -20,7 +20,7 @@ var remoteHostname: String? { get }
 
 #### Discussion
 
-This property is only populated for flows originating from create-by-name APIs like [`URLSession`](https://developer.apple.com/documentation/Foundation/URLSession) or [`Network`](https://developer.apple.com/documentation/Network).
+This property is only populated for flows originating from create-by-name APIs like [`URLSession`](https://developer.apple.com/documentation/foundation/urlsession) or [`Network`](https://developer.apple.com/documentation/network).
 
 ## See Also
 

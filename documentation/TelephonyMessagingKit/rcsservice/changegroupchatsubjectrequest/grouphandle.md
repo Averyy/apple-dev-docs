@@ -7,7 +7,6 @@ Group handle indicating the group for which to change the subject.
 
 **Availability**:
 - iOS 26.0+
-- iPadOS 26.0+
 
 ## Declaration
 

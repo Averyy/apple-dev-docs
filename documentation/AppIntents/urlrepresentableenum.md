@@ -24,7 +24,7 @@ protocol URLRepresentableEnum : AppEnum, CustomURLRepresentationParameterConvert
 
 If your app already supports universal links for content, use this protocol to express your app enum types as URLs. When your app enum supports this protocol, the system can use the provided URL to refer to the item. Having a URL representation for your app entity also makes it easier to share the contents of that entity with Siri, Shortcuts, and other system features.
 
-> ❗ **Important**: This protocol requires your app to support universal links. You can’t use this protocol with a custom URL scheme or other approaches. For information about how to add support for universal links, see [`Allowing apps and websites to link to your content`](https://developer.apple.com/documentation/Xcode/allowing-apps-and-websites-to-link-to-your-content).
+> ❗ **Important**: This protocol requires your app to support universal links. You can’t use this protocol with a custom URL scheme or other approaches. For information about how to add support for universal links, see [`Allowing apps and websites to link to your content`](https://developer.apple.com/documentation/xcode/allowing-apps-and-websites-to-link-to-your-content).
 
 Construct URLs using static text and the value of your app enum. For more information on how to create the URL representation, see [`EnumURLRepresentation`](enumurlrepresentation.md).
 
@@ -43,15 +43,15 @@ Construct URLs using static text and the value of your app enum. For more inform
 - [AppEnum](appenum.md)
 - [AppValue](appvalue.md)
 - [CaseDisplayRepresentable](casedisplayrepresentable.md)
-- [CaseIterable](../Swift/CaseIterable.md)
-- [CustomLocalizedStringResourceConvertible](../Foundation/CustomLocalizedStringResourceConvertible.md)
+- [CaseIterable](../swift/caseiterable.md)
+- [CustomLocalizedStringResourceConvertible](../foundation/customlocalizedstringresourceconvertible.md)
 - [CustomURLRepresentationParameterConvertible](customurlrepresentationparameterconvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
 - [PersistentlyIdentifiable](persistentlyidentifiable.md)
-- [RawRepresentable](../Swift/RawRepresentable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [RawRepresentable](../swift/rawrepresentable.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 - [StaticDisplayRepresentable](staticdisplayrepresentable.md)
 - [TypeDisplayRepresentable](typedisplayrepresentable.md)
 

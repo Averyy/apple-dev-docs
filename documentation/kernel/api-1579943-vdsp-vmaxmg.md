@@ -26,11 +26,11 @@ for (n = 0; n < N; ++n)
 ## Parameters
 
 - `__A`: Single-precision real input vector.
-- `__IA`: Stride for  .
+- `__IA`: Stride for `A`.
 - `__B`: Single-precision real input vector.
-- `__IB`: Stride for  .
+- `__IB`: Stride for `B`.
 - `__C`: Single-precision real output vector.
-- `__IC`: Stride for  .
+- `__IC`: Stride for `C`.
 - `__N`: The number of elements to process
 
 

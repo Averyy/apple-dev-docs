@@ -43,7 +43,7 @@ You don’t create instances of this class yourself. Instead, use the object in 
 
 - [struct RelevantIntent](relevantintent.md)
   A type that stores an app intent and indicates its relevance to someone.
-- [struct RelevantContext](../RelevanceKit/RelevantContext.md)
+- [struct RelevantContext](../relevancekit/relevantcontext.md)
   Contextual clues the system uses to show relevant widgets in the Smart Stack on watchOS.
 
 

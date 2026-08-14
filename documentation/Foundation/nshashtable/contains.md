@@ -22,7 +22,7 @@ func contains(_ anObject: ObjectType?) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/Swift/true) if the hash table contains `anObject`, otherwise [`false`](https://developer.apple.com/documentation/Swift/false).
+[`true`](https://developer.apple.com/documentation/swift/true) if the hash table contains `anObject`, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
 
 #### Discussion
 

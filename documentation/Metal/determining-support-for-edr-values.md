@@ -6,9 +6,9 @@ Check whether a display supports EDR.
 
 #### Overview
 
-Discover whether a display supports EDR values by reading the [`maximumPotentialExtendedDynamicRangeColorComponentValue`](https://developer.apple.com/documentation/AppKit/NSScreen/maximumPotentialExtendedDynamicRangeColorComponentValue) property on an [`NSScreen`](https://developer.apple.com/documentation/AppKit/NSScreen) instance for that display. A value greater than `1.0` indicates that the display supports EDR values; otherwise, the display supports only SDR values.
+Discover whether a display supports EDR values by reading the [`maximumPotentialExtendedDynamicRangeColorComponentValue`](https://developer.apple.com/documentation/appkit/nsscreen/maximumpotentialextendeddynamicrangecolorcomponentvalue) property on an [`NSScreen`](https://developer.apple.com/documentation/appkit/nsscreen) instance for that display. A value greater than `1.0` indicates that the display supports EDR values; otherwise, the display supports only SDR values.
 
-This property’s value is independent of the current state of the display. It’s possible for a display to support EDR but to be unable to present those values right now. For information about the current state of the display, check the [`maximumExtendedDynamicRangeColorComponentValue`](https://developer.apple.com/documentation/AppKit/NSScreen/maximumExtendedDynamicRangeColorComponentValue) property.
+This property’s value is independent of the current state of the display. It’s possible for a display to support EDR but to be unable to present those values right now. For information about the current state of the display, check the [`maximumExtendedDynamicRangeColorComponentValue`](https://developer.apple.com/documentation/appkit/nsscreen/maximumextendeddynamicrangecolorcomponentvalue) property.
 
 ## See Also
 

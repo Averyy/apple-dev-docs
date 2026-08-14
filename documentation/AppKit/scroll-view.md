@@ -21,7 +21,7 @@ Provide an interface for navigating content that is too large to fit in the avai
 
 ## See Also
 
-- [Localization-friendly layouts in macOS](../Xcode/localization-friendly-layouts-in-macos.md)
+- [Localization-friendly layouts in macOS](../xcode/localization-friendly-layouts-in-macos.md)
   This project demonstrates localization-friendly auto layout constraints.
 - [Grid View](grid-view.md)
   Arrange views in a flexible grid, and handle the layout associated with those views.

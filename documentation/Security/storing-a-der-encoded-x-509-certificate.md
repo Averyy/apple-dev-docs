@@ -55,7 +55,7 @@ SecCertificateRef certificate =
 if (certificate)  { CFRelease(certificate); } // After you are done with it
 ```
 
-By leaving the first argument empty, you rely on the default allocator to allocate memory for the certificate. Note that in Objective-C, you call [`CFRelease`](https://developer.apple.com/documentation/CoreFoundation/CFRelease) to free the certificate’s memory when you are done with it. In Swift, the system manages the object’s memory automatically.
+By leaving the first argument empty, you rely on the default allocator to allocate memory for the certificate. Note that in Objective-C, you call [`CFRelease`](https://developer.apple.com/documentation/corefoundation/cfrelease) to free the certificate’s memory when you are done with it. In Swift, the system manages the object’s memory automatically.
 
 
 ---

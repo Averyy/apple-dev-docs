@@ -16,7 +16,7 @@ kern_return_t SetName(OSString *in_name);
 
 #### Return Value
 
-[`kIOReturnSuccess`](https://developer.apple.com/documentation/DriverKit/kIOReturnSuccess) on success, or another value if an error occurs. For a list of error codes, see [`Error Codes`](https://developer.apple.com/documentation/DriverKit/error-codes).
+[`kIOReturnSuccess`](https://developer.apple.com/documentation/driverkit/kioreturnsuccess) on success, or another value if an error occurs. For a list of error codes, see [`Error Codes`](https://developer.apple.com/documentation/driverkit/error-codes).
 
 #### Discussion
 
@@ -24,7 +24,7 @@ If the change succeeds, the framework sends a notification to the host to update
 
 ## Parameters
 
-- `in_name`: The name to set, as an [`OSString`](https://developer.apple.com/documentation/DriverKit/OSString).
+- `in_name`: The name to set, as an [`OSString`](https://developer.apple.com/documentation/driverkit/osstring).
 
 ## See Also
 

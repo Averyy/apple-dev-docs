@@ -7,7 +7,6 @@ A Boolean value indicating whether the remote end supports end-to-end encryption
 
 **Availability**:
 - iOS 26.5+
-- iPadOS 26.5+
 
 ## Declaration
 

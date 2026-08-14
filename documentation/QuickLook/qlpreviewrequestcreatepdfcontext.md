@@ -20,7 +20,7 @@ A reference to a Core Graphics context object that is used to display a PDF vers
 
 #### Discussion
 
-Be sure to bracket each PDF page written to the context with [`beginPDFPage(_:)`](https://developer.apple.com/documentation/CoreGraphics/CGContext/beginPDFPage(_:)) and [`endPDFPage()`](https://developer.apple.com/documentation/CoreGraphics/CGContext/endPDFPage()) calls. After calling this function, you should flush the context with [`QLPreviewRequestFlushContext(_:_:)`](qlpreviewrequestflushcontext(_:_:).md).
+Be sure to bracket each PDF page written to the context with [`beginPDFPage(_:)`](https://developer.apple.com/documentation/coregraphics/cgcontext/beginpdfpage(_:)) and [`endPDFPage()`](https://developer.apple.com/documentation/coregraphics/cgcontext/endpdfpage()) calls. After calling this function, you should flush the context with [`QLPreviewRequestFlushContext(_:_:)`](qlpreviewrequestflushcontext(_:_:).md).
 
 ##### Special Considerations
 
@@ -29,8 +29,8 @@ Thread-safety: This function should be called in the same thread as the preview 
 ## Parameters
 
 - `preview`: The preview request object.
-- `mediaBox`: A pointer to the media box of the context. A media box is a rectangle that defines the size and location of the PDF page. The origin of the rectangle should typically be (0,0). If you pass NULL, Quartz uses a default page size of 8.5 by 11 inches (612 by 792 points). For information see the description for [`init(consumer:mediaBox:_:)`](https://developer.apple.com/documentation/CoreGraphics/CGContext/init(consumer:mediaBox:_:)).
-- `auxiliaryInfo`: A dictionary containing PDF auxiliary information. See the description of the auxiliary dictionary keys in [`Auxiliary Dictionary Keys`](https://developer.apple.com/documentation/CoreGraphics/auxiliary-dictionary-keys) for more information about the keys and values of this dictionary.
+- `mediaBox`: A pointer to the media box of the context. A media box is a rectangle that defines the size and location of the PDF page. The origin of the rectangle should typically be (0,0). If you pass NULL, Quartz uses a default page size of 8.5 by 11 inches (612 by 792 points). For information see the description for [`init(consumer:mediaBox:_:)`](https://developer.apple.com/documentation/coregraphics/cgcontext/init(consumer:mediabox:_:)).
+- `auxiliaryInfo`: A dictionary containing PDF auxiliary information. See the description of the auxiliary dictionary keys in [`Auxiliary Dictionary Keys`](https://developer.apple.com/documentation/coregraphics/auxiliary-dictionary-keys) for more information about the keys and values of this dictionary.
 - `properties`: A dictionary containing additional properties for the preview response. For information on acceptable keys and values, see `Preview Properties`.
 
 ## See Also

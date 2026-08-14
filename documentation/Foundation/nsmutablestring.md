@@ -22,13 +22,13 @@ class NSMutableString
 
 #### Overview
 
-In Swift, you can use this type instead of a [`String`](https://developer.apple.com/documentation/Swift/String) in cases that require reference semantics.
+In Swift, you can use this type instead of a [`String`](https://developer.apple.com/documentation/swift/string) in cases that require reference semantics.
 
 The `NSMutableString` class declares the programmatic interface to an object that manages a mutable string—that is, a string whose contents can be edited—that conceptually represents an array of Unicode characters. To construct and manage an immutable string—or a string that cannot be changed after it has been created—use an object of the [`NSString`](nsstring.md) class.
 
 The `NSMutableString` class adds one primitive method—[`replaceCharacters(in:with:)`](nsmutablestring/replacecharacters(in:with:).md)—to the basic string-handling behavior inherited from `NSString`. All other methods that modify a string work through this method. For example, [`insert(_:at:)`](nsmutablestring/insert(_:at:).md) simply replaces the characters in a range of `0` length, while [`deleteCharacters(in:)`](nsmutablestring/deletecharacters(in:).md) replaces the characters in a given range with no characters.
 
-NSMutableString is “toll-free bridged” with its Core Foundation counterpart, [`CFMutableString`](https://developer.apple.com/documentation/CoreFoundation/CFMutableString). See [`Toll-Free Bridging`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Conceptual/CocoaEncyclopedia/Toll-FreeBridgin/Toll-FreeBridgin.html#//apple_ref/doc/uid/TP40010810-CH2) for more information.
+NSMutableString is “toll-free bridged” with its Core Foundation counterpart, [`CFMutableString`](https://developer.apple.com/documentation/corefoundation/cfmutablestring). See [`Toll-Free Bridging`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Conceptual/CocoaEncyclopedia/Toll-FreeBridgin/Toll-FreeBridgin.html#//apple_ref/doc/uid/TP40010810-CH2) for more information.
 
 ## Topics
 
@@ -61,23 +61,23 @@ NSMutableString is “toll-free bridged” with its Core Foundation counterpart,
 ### Inherits From
 - [NSString](nsstring.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [ExpressibleByExtendedGraphemeClusterLiteral](../Swift/ExpressibleByExtendedGraphemeClusterLiteral.md)
-- [ExpressibleByStringLiteral](../Swift/ExpressibleByStringLiteral.md)
-- [ExpressibleByUnicodeScalarLiteral](../Swift/ExpressibleByUnicodeScalarLiteral.md)
-- [Hashable](../Swift/Hashable.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [ExpressibleByExtendedGraphemeClusterLiteral](../swift/expressiblebyextendedgraphemeclusterliteral.md)
+- [ExpressibleByStringLiteral](../swift/expressiblebystringliteral.md)
+- [ExpressibleByUnicodeScalarLiteral](../swift/expressiblebyunicodescalarliteral.md)
+- [Hashable](../swift/hashable.md)
 - [NSCoding](nscoding.md)
 - [NSCopying](nscopying.md)
 - [NSItemProviderReading](nsitemproviderreading.md)
 - [NSItemProviderWriting](nsitemproviderwriting.md)
 - [NSMutableCopying](nsmutablecopying.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 - [NSSecureCoding](nssecurecoding.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 
 ---

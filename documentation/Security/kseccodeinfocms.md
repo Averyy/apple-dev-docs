@@ -17,7 +17,7 @@ let kSecCodeInfoCMS: CFString
 
 #### Discussion
 
-The value is a [`CFData`](https://developer.apple.com/documentation/CoreFoundation/CFData) object. Empty for ad-hoc signed code.
+The value is a [`CFData`](https://developer.apple.com/documentation/corefoundation/cfdata) object. Empty for ad-hoc signed code.
 
 Specify the [`kSecCSSigningInformation`](kseccssigninginformation.md) flag when calling the [`SecCodeCopySigningInformation(_:_:_:)`](seccodecopysigninginformation(_:_:_:).md) function to get this information.
 

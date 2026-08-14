@@ -26,7 +26,7 @@ A new `AVAudioFormat` instance, or `nil` if the initialization fails.
 
 #### Discussion
 
-Note that many settings dictionary elements aren’t relevant for the format, so this method ignores them. For information about supported dictionary values, see [`Audio settings`](https://developer.apple.com/documentation/AVFoundation/audio-settings).
+Note that many settings dictionary elements aren’t relevant for the format, so this method ignores them. For information about supported dictionary values, see [`Audio settings`](https://developer.apple.com/documentation/avfoundation/audio-settings).
 
 ## Parameters
 

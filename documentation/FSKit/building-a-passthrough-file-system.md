@@ -27,7 +27,7 @@ To use the sample file system, do the following:
 
 To create a file system with FSKit, you create an FSKit app extension. You can do this in Xcode by adding a “File system extension” target to your project, which creates a new target with four files:
 
-- An entitlements file with the [`com.apple.developer.fskit.fsmodule`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.fskit.fsmodule) entitlement.
+- An entitlements file with the [`com.apple.developer.fskit.fsmodule`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.fskit.fsmodule) entitlement.
 - An information property list file with an `EXAppExtensionAttributes` dictionary to describe command-line interface access to the file system. For example, the `FSShortName` key in this property list provides the `passthrough` name that serves as a file system type when using the `mount` command earlier.
 - An app extension implementation that conforms to the [`UnaryFileSystemExtension`](unaryfilesystemextension.md) protocol.
 - A file system implementation that conforms to the [`FSUnaryFileSystem`](fsunaryfilesystem.md) and [`FSUnaryFileSystemOperations`](fsunaryfilesystemoperations.md) protocols. The app extension returns this type as the value of its [`fileSystem`](unaryfilesystemextension/filesystem-swift.property.md) property.
@@ -40,7 +40,7 @@ Most of the functionality of an FSKit file system actually comes from subclassin
 
 The sample project defines its volume as the `PassthroughFSVolume` type. With this type, the `PassthroughFileSystem` can implement its required [`loadResource(resource:options:replyHandler:)`](fsunaryfilesystemoperations/loadresource(resource:options:replyhandler:).md) method to set up a `PassthroughFSVolume` as follows:
 
-1. Verify that the source resource is an [`FSPathURLResource`](fspathurlresource.md) and that the extension can access it as a security-scoped resource by calling [`startAccessingSecurityScopedResource()`](https://developer.apple.com/documentation/Foundation/URL/startAccessingSecurityScopedResource()).
+1. Verify that the source resource is an [`FSPathURLResource`](fspathurlresource.md) and that the extension can access it as a security-scoped resource by calling [`startAccessingSecurityScopedResource()`](https://developer.apple.com/documentation/foundation/url/startaccessingsecurityscopedresource()).
 2. Ignore any provided options except for `-f` (“force”), which force-loads the resource into the file system without creating a volume. If a force-loaded file system doesn’t support formatting — which `PassthroughFileSystem` doesn’t — this scenario is an error, and the file system returns the POSIX error `ENOTSUP`.
 3. Call the reply handler closure with a new `PassthroughFSVolume` instance. If this results in an error, call the handler with a `nil` volume and the error instead.
 
@@ -73,7 +73,7 @@ public func loadResource(resource: FSResource, options: FSTaskOptions, replyHand
 }
 ```
 
-The implementation of the required [`unloadResource(resource:options:replyHandler:)`](FSUnaryFileSystemOperations/unloadResource(resource:options:replyHandler:).md) is similar. It verifies that the source is a valid [`FSPathURLResource`](fspathurlresource.md) as before, and that a previous call to [`loadResource(resource:options:replyHandler:)`](fsunaryfilesystemoperations/loadresource(resource:options:replyhandler:).md) successfully set the local `resource` property. If so, the implementation stops accessing the security-scoped URL resource and clears the `resource` property.
+The implementation of the required [`unloadResource(resource:options:replyHandler:)`](fsunaryfilesystemoperations/unloadresource(resource:options:replyhandler:).md) is similar. It verifies that the source is a valid [`FSPathURLResource`](fspathurlresource.md) as before, and that a previous call to [`loadResource(resource:options:replyHandler:)`](fsunaryfilesystemoperations/loadresource(resource:options:replyhandler:).md) successfully set the local `resource` property. If so, the implementation stops accessing the security-scoped URL resource and clears the `resource` property.
 
 ```swift
 public func unloadResource(resource: FSResource, options: FSTaskOptions, replyHandler reply: @escaping ((any Error)?) -> Void) {

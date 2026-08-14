@@ -13,11 +13,11 @@ framework: HIG
 
 On a Mac or an iPad, the menu bar at the top of the screen displays the top-level menus in your app or game.
 
-![A stylized representation of the macOS menu bar displaying a selected menu. The image is tinted red to subtly reflect the red in the original six-color Apple logo.](https://docs-assets.developer.apple.com/published/94c104500838e2283f6f25ba36d54628/components-the-menu-bar-intro~dark%402x.png)
+![A stylized representation of the macOS menu bar displaying a selected menu. The image is tinted red to subtly reflect the red in the original six-color Apple logo.](/images/com.apple.HIG/components-the-menu-bar-intro~dark@2x.png)
 Mac users are very familiar with the macOS menu bar, and they rely on it to help them learn what an app does and find the commands they need. To help your app or game feel at home in macOS, it’s essential to provide a consistent menu bar experience.
 Menu bar menus on iPad are similar to those on Mac, appearing in the same order and with familiar sets of menu items. When you adopt the menu structure that people expect from their experience on Mac, it helps them immediately understand and take advantage of the menu bar on iPad as well.
 Keyboard shortcuts in iPadOS use the same patterns as in macOS. For guidance, see [Standard keyboard shortcuts](keyboards.md#Standard-keyboard-shortcuts).
-![An illustration of an app window on iPad, with its menu bar appearing at the top of the screen and the Edit menu open.](https://docs-assets.developer.apple.com/published/15bdecf2307dd0286a863f257cab9cd6/menu-bar-ipad-overview~dark%402x.png)
+![An illustration of an app window on iPad, with its menu bar appearing at the top of the screen and the Edit menu open.](/images/com.apple.HIG/menu-bar-ipad-overview~dark@2x.png)
 Menus in the menu bar share most of the appearance and behavior characteristics that all menu types have. To learn about menus in general — and how to organize and label menu items — see [Menus](menus.md).
 
 ## Anatomy
@@ -160,13 +160,13 @@ The Help menu — located at the trailing end of the menu bar — provides acces
 | *YourAppName* Help | When the content uses the Help Book format, opens the content in the built-in Help Viewer. |  |
 | *Additional Item* |  | Use a separator between your primary help documentation and additional items, which might include registration information or release notes. Keep the total the number of items you list in the Help menu small to avoid overwhelming people with too many choices when they need help. Alternatively, consider linking to additional items from within your help documentation. |
 
-For guidance, see [Offering help](offering-help.md); for developer guidance, see [NSHelpManager](../AppKit/NSHelpManager.md).
+For guidance, see [Offering help](offering-help.md); for developer guidance, see [NSHelpManager](../appkit/nshelpmanager.md).
 
 ## Dynamic menu items
 In rare cases, it can make sense to present a *dynamic menu item*, which is a menu item that changes its behavior when people choose it while pressing a modifier key (Control, Option, Shift, or Command). For example, the *Minimize* item in the Window menu changes to *Minimize All* when people press the Option key.
 **Avoid making a dynamic menu item the only way to accomplish a task.** Dynamic menu items are hidden by default, so they’re best suited to offer shortcuts to advanced actions that people can accomplish in other ways. For example, if someone hasn’t discovered the *Minimize All* dynamic menu item in the Window menu, they can still minimize each open window.
 **Use dynamic menu items primarily in menu bar menus.** Adding a dynamic menu item to contextual or Dock menus can make the item even harder for people to discover.
-**Require only a single modifier key to reveal a dynamic menu item.** It can be physically awkward to press more than one key while simultaneously opening a menu and choosing a menu item, in addition to reducing the discoverability of the dynamic behavior. For developer guidance, see [isAlternate](../AppKit/NSMenuItem/isAlternate.md).
+**Require only a single modifier key to reveal a dynamic menu item.** It can be physically awkward to press more than one key while simultaneously opening a menu and choosing a menu item, in addition to reducing the discoverability of the dynamic behavior. For developer guidance, see [isAlternate](../appkit/nsmenuitem/isalternate.md).
 
 > **Tip:** macOS automatically sets the width of a menu to hold the widest item, including dynamic menu items.
 
@@ -196,9 +196,9 @@ When menu bar space is constrained, the system prioritizes the display of menus 
 When people enter full-screen mode, the menu bar typically hides until they reveal it by moving the pointer to the top of the screen. For guidance, see [Going full screen](going-full-screen.md).
 
 #### Menu bar extras
-A menu bar extra exposes app-specific functionality using an icon that appears in the menu bar when your app is running, even when it’s not the frontmost app. Menu bar extras are on the opposite side of the menu bar from your app’s menus. For developer guidance, see [MenuBarExtra](../SwiftUI/MenuBarExtra.md).
+A menu bar extra exposes app-specific functionality using an icon that appears in the menu bar when your app is running, even when it’s not the frontmost app. Menu bar extras are on the opposite side of the menu bar from your app’s menus. For developer guidance, see [MenuBarExtra](../swiftui/menubarextra.md).
 When necessary, the system hides menu bar extras to make room for app menus. Similarly, if there are too many menu bar extras, the system may hide some to avoid crowding app menus.
-![A screenshot of the Input menu bar extra and its menu.](https://docs-assets.developer.apple.com/published/ef13d70ca2e8b66ecb75cc2c228ecf7c/menu-bar-extras~dark%402x.png)
+![A screenshot of the Input menu bar extra and its menu.](/images/com.apple.HIG/menu-bar-extras~dark@2x.png)
 **Consider using a symbol to represent your menu bar extra.** You can create an [Icons](icons.md) or you can choose one of the [SF Symbols](sf-symbols.md), using it as-is or customizing it to suit your needs. Both interface icons and symbols use black and clear colors to define their shapes; the system can apply other colors to the black areas in each image so it looks good on both dark and light menu bars, and when your menu bar extra is selected. The menu bar’s height is 24 pt.
 **Display a menu — not a popover — when people click your menu bar extra.** Unless the app functionality you want to expose is too complex for a menu, avoid presenting it in a [Popovers](popovers.md).
 **Let people — not your app — decide whether to put your menu bar extra in the menu bar.** Typically, people add a menu bar extra to the menu bar by changing a setting in an app’s settings window. To ensure discoverability, however, consider giving people the option of doing so during setup.
@@ -213,9 +213,9 @@ When necessary, the system hides menu bar extras to make room for app menus. Sim
 [Standard keyboard shortcuts](keyboards.md#Standard-keyboard-shortcuts)
 
 #### Developer documentation
-[CommandMenu](../SwiftUI/CommandMenu.md) — SwiftUI
-[Adding menus and shortcuts to the menu bar and user interface](../UIKit/adding-menus-and-shortcuts-to-the-menu-bar-and-user-interface.md) — UIKit
-[NSStatusBar](../AppKit/NSStatusBar.md) — AppKit
+[CommandMenu](../swiftui/commandmenu.md) — SwiftUI
+[Adding menus and shortcuts to the menu bar and user interface](../uikit/adding-menus-and-shortcuts-to-the-menu-bar-and-user-interface.md) — UIKit
+[NSStatusBar](../appkit/nsstatusbar.md) — AppKit
 
 #### Videos
 - [Elevate the design of your iPad app](https://developer.apple.com/videos/play/wwdc2025/208) - Make your app look and feel great on iPadOS. Learn best practices for designing a responsive layout for resizable app windows. Get familiar with window controls and explore the best ways to accommodate them. Discover the building blocks of a great menu bar. And meet the new pointer and its updated effects.

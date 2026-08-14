@@ -35,9 +35,9 @@ class Model3DAsset
 ## Relationships
 
 ### Conforms To
-- [Copyable](../Swift/Copyable.md)
-- [Escapable](../Swift/Escapable.md)
-- [Observable](../Observation/Observable.md)
+- [Copyable](../swift/copyable.md)
+- [Escapable](../swift/escapable.md)
+- [Observable](../observation/observable.md)
 
 ## See Also
 

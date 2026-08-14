@@ -42,7 +42,7 @@ TextField("TouchBar Demo", text: $placeholder)
     }
 ```
 
-![A Touch Bar that shows content you create by using a static collection](https://docs-assets.developer.apple.com/published/50abda464413c0ca08d8e80cb02bce7b/SwiftUI-touchbar-static%402x.png)
+![A Touch Bar that shows content you create by using a static collection](/images/com.apple.SwiftUI/SwiftUI-touchbar-static@2x.png)
 
 ## Parameters
 

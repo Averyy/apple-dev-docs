@@ -221,7 +221,7 @@ func login(for userType: TestUserType) -> Result<TestUserType, Error> {
 
 If the login fails, the login activity adds a screenshot as an attachment for later investigation. For more information, see [`Adding Attachments to Tests, Activities, and Issues`](adding-attachments-to-tests-activities-and-issues.md).
 
-You can use `XCTContext` anywhere within your test target, not just within test methods on an [`XCTestCase`](xctestcase.md) subclass. This enables you to define activities in your own utility code, such as in custom methods on subclasses of [`XCUIApplication`](https://developer.apple.com/documentation/XCUIAutomation/XCUIApplication) or [`XCUIElement`](https://developer.apple.com/documentation/XCUIAutomation/XCUIElement).
+You can use `XCTContext` anywhere within your test target, not just within test methods on an [`XCTestCase`](xctestcase.md) subclass. This enables you to define activities in your own utility code, such as in custom methods on subclasses of [`XCUIApplication`](https://developer.apple.com/documentation/xcuiautomation/xcuiapplication) or [`XCUIElement`](https://developer.apple.com/documentation/xcuiautomation/xcuielement).
 
 ## See Also
 

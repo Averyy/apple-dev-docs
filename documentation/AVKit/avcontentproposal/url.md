@@ -16,7 +16,7 @@ var url: URL? { get set }
 
 #### Discussion
 
-Use this property value to initialize a new [`AVPlayerItem`](https://developer.apple.com/documentation/AVFoundation/AVPlayerItem) to play when the user accepts the content proposal. If the value of this property is `nil`, the [`AVPlayerViewControllerDelegate`](avplayerviewcontrollerdelegate.md) must handle the content proposal acceptance.
+Use this property value to initialize a new [`AVPlayerItem`](https://developer.apple.com/documentation/avfoundation/avplayeritem) to play when the user accepts the content proposal. If the value of this property is `nil`, the [`AVPlayerViewControllerDelegate`](avplayerviewcontrollerdelegate.md) must handle the content proposal acceptance.
 
 ## See Also
 

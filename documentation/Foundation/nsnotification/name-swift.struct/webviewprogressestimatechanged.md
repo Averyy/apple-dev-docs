@@ -20,7 +20,7 @@ This notification may be posted zero or more times after a [`WebViewProgressStar
 
 ## See Also
 
-- [var estimatedProgress: Double](../WebKit/WebView-swift.class/estimatedProgress.md)
+- [var estimatedProgress: Double](../webkit/webview-swift.class/estimatedprogress.md)
   An estimate, as a percentage, of the amount of content that is currently loaded.
 - [static let WebHistoryAllItemsRemoved: NSNotification.Name](nsnotification/name-swift.struct/webhistoryallitemsremoved.md)
   Posted when all history items have been removed from the web history.

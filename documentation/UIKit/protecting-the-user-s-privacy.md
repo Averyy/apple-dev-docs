@@ -21,7 +21,7 @@ Consult these documents:
 
 ##### Request Access Only When Your App Needs the Data
 
-Request access to sensitive user or device data—like location, contacts, and photos—at the time your app needs the data. Supply a purpose string (sometimes called a usage description string) in your app’s [`Information Property List`](https://developer.apple.com/documentation/BundleResources/Information-Property-List) that the system can present to a user explaining why your app needs access. Provide reasonable fallback behavior in situations where the user doesn’t grant access to the requested data. For more details, see [`Requesting access to protected resources`](requesting-access-to-protected-resources.md).
+Request access to sensitive user or device data—like location, contacts, and photos—at the time your app needs the data. Supply a purpose string (sometimes called a usage description string) in your app’s [`Information Property List`](https://developer.apple.com/documentation/bundleresources/information-property-list) that the system can present to a user explaining why your app needs access. Provide reasonable fallback behavior in situations where the user doesn’t grant access to the requested data. For more details, see [`Requesting access to protected resources`](requesting-access-to-protected-resources.md).
 
 ##### Be Transparent About How Data Will Be Used
 
@@ -33,8 +33,8 @@ Respect the user’s preferences, and take reasonable steps to protect the data 
 
 - Provide settings that allow the user to disable access to sensitive information. The operating system does this automatically for protected system resources—like location, contacts, and health data—through the Privacy menu of the Settings app. Extend this behavior to any data you cache from these sources or collect directly. For example, if your users build a social media profile containing personal information, offer them a way to delete the data (including any server copies you have).
 - When storing files in iOS, use the strongest data protection level that works for your app, as described in [`Encrypting Your App’s Files`](encrypting-your-app-s-files.md). Use App Transport Security when sending user or device data over the network, as described in [`NSAppTransportSecurity`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CocoaKeys.html#//apple_ref/doc/plist/info/NSAppTransportSecurity).
-- If your app uses the [`ASIdentifierManager`](https://developer.apple.com/documentation/AdSupport/ASIdentifierManager) class, respect the value of its [`isAdvertisingTrackingEnabled`](https://developer.apple.com/documentation/AdSupport/ASIdentifierManager/isAdvertisingTrackingEnabled) property. If the user sets that property to false, then use the [`ASIdentifierManager`](https://developer.apple.com/documentation/AdSupport/ASIdentifierManager) class only for limited advertising purposes, like frequency capping, attribution, conversion events, estimating the number of unique users, advertising fraud detection, and debugging. See the [`AdSupport`](https://developer.apple.com/documentation/AdSupport) framework for additional information.
-- If you must identify users persistently, use the [`identifierForVendor`](uidevice/identifierforvendor.md) property of the [`UIDevice`](uidevice.md) class or the [`advertisingIdentifier`](https://developer.apple.com/documentation/AdSupport/ASIdentifierManager/advertisingIdentifier) property of the [`ASIdentifierManager`](https://developer.apple.com/documentation/AdSupport/ASIdentifierManager) class.
+- If your app uses the [`ASIdentifierManager`](https://developer.apple.com/documentation/adsupport/asidentifiermanager) class, respect the value of its [`isAdvertisingTrackingEnabled`](https://developer.apple.com/documentation/adsupport/asidentifiermanager/isadvertisingtrackingenabled) property. If the user sets that property to false, then use the [`ASIdentifierManager`](https://developer.apple.com/documentation/adsupport/asidentifiermanager) class only for limited advertising purposes, like frequency capping, attribution, conversion events, estimating the number of unique users, advertising fraud detection, and debugging. See the [`AdSupport`](https://developer.apple.com/documentation/adsupport) framework for additional information.
+- If you must identify users persistently, use the [`identifierForVendor`](uidevice/identifierforvendor.md) property of the [`UIDevice`](uidevice.md) class or the [`advertisingIdentifier`](https://developer.apple.com/documentation/adsupport/asidentifiermanager/advertisingidentifier) property of the [`ASIdentifierManager`](https://developer.apple.com/documentation/adsupport/asidentifiermanager) class.
 
 ##### Use the Minimum Amount of Data Required
 
@@ -52,9 +52,9 @@ If your app supports audio input, configure your audio session for recording onl
 
 ## See Also
 
-- [Adopting Liquid Glass](../TechnologyOverviews/adopting-liquid-glass.md)
+- [Adopting Liquid Glass](../technologyoverviews/adopting-liquid-glass.md)
   Find out how to bring the new material to your app.
-- [UIKit updates](../Updates/UIKit.md)
+- [UIKit updates](../updates/uikit.md)
   Learn about important changes to UIKit.
 - [About app development with UIKit](about-app-development-with-uikit.md)
   Learn about the basic support that UIKit and Xcode provide for your iOS and tvOS apps.

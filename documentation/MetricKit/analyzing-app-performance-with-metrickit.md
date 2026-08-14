@@ -6,7 +6,7 @@ Work with the metric values, diagnostic data, and environments in MetricKit repo
 
 #### Overview
 
-MetricKit reports contain a rich set of typed measurements, diagnostic data, and environmental context. [`MetricResult`](metricresult.md) carries individual metric values (scalars, histograms, or statistics depending on the metric), and you can use the [`metricGroup`](metricresult/metricgroup.md) property to route them to category-specific handlers. [`DiagnosticReport`](diagnosticreport.md) wraps a single [`DiagnosticResult`](diagnosticresult.md) case with type-specific properties and a [`CallStackTree`](callstacktree.md) you can navigate to locate the code involved. [`MetricReport`](metricreport.md) and [`DiagnosticReport`](diagnosticreport.md) include an environment with device, operating system, and app context. Both also conform to [`Codable`](https://developer.apple.com/documentation/Swift/Codable), so you can serialize them with [`JSONEncoder`](https://developer.apple.com/documentation/Foundation/JSONEncoder) for storage or upload.
+MetricKit reports contain a rich set of typed measurements, diagnostic data, and environmental context. [`MetricResult`](metricresult.md) carries individual metric values (scalars, histograms, or statistics depending on the metric), and you can use the [`metricGroup`](metricresult/metricgroup.md) property to route them to category-specific handlers. [`DiagnosticReport`](diagnosticreport.md) wraps a single [`DiagnosticResult`](diagnosticresult.md) case with type-specific properties and a [`CallStackTree`](callstacktree.md) you can navigate to locate the code involved. [`MetricReport`](metricreport.md) and [`DiagnosticReport`](diagnosticreport.md) include an environment with device, operating system, and app context. Both also conform to [`Codable`](https://developer.apple.com/documentation/swift/codable), so you can serialize them with [`JSONEncoder`](https://developer.apple.com/documentation/foundation/jsonencoder) for storage or upload.
 
 #### Filter Groups of Metrics
 
@@ -18,13 +18,13 @@ let memoryValues = entry.values.filter { $0.metricGroup == .memory }
 
 #### Understand Measurements
 
-The majority of values are scalar values expressed as a [`Measurement`](https://developer.apple.com/documentation/Foundation/Measurement). A `Measurement` pairs a `Double` value with a unit. MetricKit uses unit types including:
+The majority of values are scalar values expressed as a [`Measurement`](https://developer.apple.com/documentation/foundation/measurement). A `Measurement` pairs a `Double` value with a unit. MetricKit uses unit types including:
 
-- **[`UnitDuration`](https://developer.apple.com/documentation/Foundation/UnitDuration)**: Time-based measurements such as CPU time, hang time, background activity durations, and launch times.
-- **[`UnitInformationStorage`](https://developer.apple.com/documentation/Foundation/UnitInformationStorage)**: Byte-based measurements such as memory usage, network transfer totals, and disk sizes.
-- **[`UnitFrequency`](https://developer.apple.com/documentation/Foundation/UnitFrequency)**: Rate measurements such as frames per second in [`MetricResult.metalFrameRate(_:)`](metricresult/metalframerate(_:).md).
-- **[`SignalBars`](signalbars.md)**: The [`Dimension`](https://developer.apple.com/documentation/Foundation/Dimension) subclass used in [`MetricResult.cellularConditionTime(_:)`](metricresult/cellularconditiontime(_:).md) histograms to represent cellular signal strength levels.
-- **[`HitchTimeRatio`](hitchtimeratio.md)**: The [`Dimension`](https://developer.apple.com/documentation/Foundation/Dimension) subclass used by [`ratio`](hitchtimemetric/ratio.md) and [`hitchTimeRatio`](signpostintervalmetric/hitchtimeratio.md) to represent the ratio of hitch time to total tracked time, expressed as milliseconds per second.
+- **[`UnitDuration`](https://developer.apple.com/documentation/foundation/unitduration)**: Time-based measurements such as CPU time, hang time, background activity durations, and launch times.
+- **[`UnitInformationStorage`](https://developer.apple.com/documentation/foundation/unitinformationstorage)**: Byte-based measurements such as memory usage, network transfer totals, and disk sizes.
+- **[`UnitFrequency`](https://developer.apple.com/documentation/foundation/unitfrequency)**: Rate measurements such as frames per second in [`MetricResult.metalFrameRate(_:)`](metricresult/metalframerate(_:).md).
+- **[`SignalBars`](signalbars.md)**: The [`Dimension`](https://developer.apple.com/documentation/foundation/dimension) subclass used in [`MetricResult.cellularConditionTime(_:)`](metricresult/cellularconditiontime(_:).md) histograms to represent cellular signal strength levels.
+- **[`HitchTimeRatio`](hitchtimeratio.md)**: The [`Dimension`](https://developer.apple.com/documentation/foundation/dimension) subclass used by [`ratio`](hitchtimemetric/ratio.md) and [`hitchTimeRatio`](signpostintervalmetric/hitchtimeratio.md) to represent the ratio of hitch time to total tracked time, expressed as milliseconds per second.
 
 #### Work with Histogram Distributions
 
@@ -194,11 +194,11 @@ if !environment.signpostData.isEmpty {
 }
 ```
 
-[`signpostData`](diagnosticreport/environment-swift.struct/signpostdata.md) is an array of [`SignpostRecord`](signpostrecord.md) values representing any [`OSSignposter`](https://developer.apple.com/documentation/os/OSSignposter) intervals that were active when the diagnostic occurred. [`DiagnosticReport.Environment`](diagnosticreport/environment-swift.struct.md) also provides a [`pid`](diagnosticreport/environment-swift.struct/pid.md), [`bundleIdentifier`](diagnosticreport/environment-swift.struct/bundleidentifier.md), [`regionFormat`](diagnosticreport/environment-swift.struct/regionformat.md), and [`states`](diagnosticreport/environment-swift.struct/states.md).
+[`signpostData`](diagnosticreport/environment-swift.struct/signpostdata.md) is an array of [`SignpostRecord`](signpostrecord.md) values representing any [`OSSignposter`](https://developer.apple.com/documentation/os/ossignposter) intervals that were active when the diagnostic occurred. [`DiagnosticReport.Environment`](diagnosticreport/environment-swift.struct.md) also provides a [`pid`](diagnosticreport/environment-swift.struct/pid.md), [`bundleIdentifier`](diagnosticreport/environment-swift.struct/bundleidentifier.md), [`regionFormat`](diagnosticreport/environment-swift.struct/regionformat.md), and [`states`](diagnosticreport/environment-swift.struct/states.md).
 
 #### Serialize Reports
 
-Both [`MetricReport`](metricreport.md) and [`DiagnosticReport`](diagnosticreport.md) conform to [`Codable`](https://developer.apple.com/documentation/Swift/Codable). To send a [`MetricReport`](metricreport.md) to your server, encode it inside your observation loop using [`JSONEncoder`](https://developer.apple.com/documentation/Foundation/JSONEncoder). Setting the [`encodingFormatKey`](metricreport/encodingformatkey.md) in the encoder’s [`userInfo`](https://developer.apple.com/documentation/Foundation/JSONEncoder/userInfo) to [`MetricReport.EncodingFormat.byStateReportingDomain`](metricreport/encodingformat/bystatereportingdomain.md) groups the encoded output by domain, so both state entries and interval entries in the resulting JSON contain your app’s performance metrics organized by each reporting domain and the states within it:
+Both [`MetricReport`](metricreport.md) and [`DiagnosticReport`](diagnosticreport.md) conform to [`Codable`](https://developer.apple.com/documentation/swift/codable). To send a [`MetricReport`](metricreport.md) to your server, encode it inside your observation loop using [`JSONEncoder`](https://developer.apple.com/documentation/foundation/jsonencoder). Setting the [`encodingFormatKey`](metricreport/encodingformatkey.md) in the encoder’s [`userInfo`](https://developer.apple.com/documentation/foundation/jsonencoder/userinfo) to [`MetricReport.EncodingFormat.byStateReportingDomain`](metricreport/encodingformat/bystatereportingdomain.md) groups the encoded output by domain, so both state entries and interval entries in the resulting JSON contain your app’s performance metrics organized by each reporting domain and the states within it:
 
 ```swift
 import MetricKit

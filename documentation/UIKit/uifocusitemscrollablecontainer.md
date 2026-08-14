@@ -36,7 +36,7 @@ The focus engine scrolls the container to keep items onscreen as they become foc
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 - [UIFocusItemContainer](uifocusitemcontainer.md)
 ### Conforming Types
 - [UICollectionView](uicollectionview.md)

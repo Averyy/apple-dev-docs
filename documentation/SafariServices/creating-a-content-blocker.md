@@ -12,7 +12,7 @@ You use a containing app to contain and deliver a content blocker in the App Sto
 
 When the content blocker launches, it communicates with its containing app through a set of shared resources, and it communicates directly with Safari.
 
-![An image showing a content blocker communicating with various resources.](https://docs-assets.developer.apple.com/published/f6abb4e38e5784ce33805c31812e484a/media-4047829%402x.png)
+![An image showing a content blocker communicating with various resources.](/images/com.apple.safariservices/media-4047829@2x.png)
 
 Apps tell Safari in advance what kinds of content to block. Because Safari doesn’t have to consult with the app during loading, and because Xcode compiles content blockers into bytecode, this model runs efficiently. Additionally, content blockers have no knowledge of users’ history or the websites they visit.
 
@@ -20,7 +20,7 @@ Apps tell Safari in advance what kinds of content to block. Because Safari doesn
 
 Choose File > New > Target and select Content Blocker Extension. Click Next and give your content blocker a name.
 
-![An Xcode screenshot showing the Content Blocker Extension option selected in the Choose a template for your new target dialog.](https://docs-assets.developer.apple.com/published/63322313c509c7bdb7bb2ba0e49da099/media-4047980%402x.png)
+![An Xcode screenshot showing the Content Blocker Extension option selected in the Choose a template for your new target dialog.](/images/com.apple.safariservices/media-4047980@2x.png)
 
 ##### Add Behaviors to Your Content Blocker
 

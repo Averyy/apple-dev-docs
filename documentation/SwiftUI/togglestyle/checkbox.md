@@ -26,11 +26,11 @@ Toggle("Close windows when quitting an app", isOn: $doesClose)
 
 The style produces a label that describes the purpose of the toggle and a checkbox that shows the toggle’s state. To change the toggle’s state, the user clicks the checkbox or its label:
 
-![A screenshot of a box with a checkmark in it, appearing to the left](https://docs-assets.developer.apple.com/published/44cc20451e73db1b6a205127be5f0e85/ToggleStyle-checkbox-1-macOS%402x.png)
+![A screenshot of a box with a checkmark in it, appearing to the left](/images/com.apple.SwiftUI/ToggleStyle-checkbox-1-macOS@2x.png)
 
 The style aligns the trailing edge of the checkbox with the leading edge of the label, and takes as much horizontal space as it needs to fit the label, up to the amount offered by the toggle’s parent view.
 
-This is the default style in macOS in most contexts when you don’t set a style, or when you apply the [`automatic`](togglestyle/automatic.md) style. A [`Form`](form.md) is a convenient way to present a collection of checkboxes with proper spacing and alignment. For guidance on using checkboxes in your user interface, see [`Toggles`](https://developer.apple.com/design/Human-Interface-Guidelines/toggles#Checkboxes) in the Human Interface Guidelines.
+This is the default style in macOS in most contexts when you don’t set a style, or when you apply the [`automatic`](togglestyle/automatic.md) style. A [`Form`](form.md) is a convenient way to present a collection of checkboxes with proper spacing and alignment. For guidance on using checkboxes in your user interface, see [`Toggles`](https://developer.apple.com/design/human-interface-guidelines/toggles) in the Human Interface Guidelines.
 
 ## See Also
 

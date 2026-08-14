@@ -134,7 +134,7 @@ destBytes[0..<n] = someBytes[n..<(n + n)]
 - [BidirectionalCollection](bidirectionalcollection.md)
 - [BitwiseCopyable](bitwisecopyable.md)
 - [Collection](collection.md)
-- [ContiguousBytes](../Foundation/ContiguousBytes.md)
+- [ContiguousBytes](../foundation/contiguousbytes.md)
 - [ConvertibleToBytes](convertibletobytes.md)
 - [Copyable](copyable.md)
 - [CustomDebugStringConvertible](customdebugstringconvertible.md)

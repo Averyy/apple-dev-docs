@@ -19,7 +19,7 @@ var merchantIdentifier: String? { get set }
 
 #### Discussion
 
-This property identifies the merchant making the request, and must match one of the merchant identifiers in the app’s entitlement. For information about configuring the entitlement, see [`com.apple.developer.in-app-identity-presentment.merchant-identifiers`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.in-app-identity-presentment.merchant-identifiers).
+This property identifies the merchant making the request, and must match one of the merchant identifiers in the app’s entitlement. For information about configuring the entitlement, see [`com.apple.developer.in-app-identity-presentment.merchant-identifiers`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.in-app-identity-presentment.merchant-identifiers).
 
 Set this property before you invoke [`requestDocument(_:completion:)`](pkidentityauthorizationcontroller/requestdocument(_:completion:).md).
 

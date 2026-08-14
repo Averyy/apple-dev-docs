@@ -23,7 +23,7 @@ var maximumImageDimension: Int { get set }
 
 Contour detection is computationally intensive. To improve performance, Vision scales the input image down, while maintaining its aspect ratio, such that its maximum dimension is the value of this property. Vision never scales the image up, so specifying the maximum value ensures that the image processes in its original size and not as a downscaled version.
 
-This property supports values from 64 to [`NSUIntegerMax`](https://developer.apple.com/documentation/ObjectiveC/NSUIntegerMax). The default value is 512.
+This property supports values from 64 to [`NSUIntegerMax`](https://developer.apple.com/documentation/objectivec/nsuintegermax). The default value is 512.
 
 ## See Also
 

@@ -20,7 +20,7 @@ Use this method to change the accessibility status of your interface objects.
 
 ## Parameters
 
-- `isAccessibilityElement`: [`true`](https://developer.apple.com/documentation/Swift/true) if the object is an accessibility element or [`false`](https://developer.apple.com/documentation/Swift/false) if it is not.
+- `isAccessibilityElement`: [`true`](https://developer.apple.com/documentation/swift/true) if the object is an accessibility element or [`false`](https://developer.apple.com/documentation/swift/false) if it is not.
 
 ## See Also
 

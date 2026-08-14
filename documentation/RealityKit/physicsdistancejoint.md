@@ -39,7 +39,7 @@ This joint allows full rotational freedom between `pin0` and `pin1`.
 ## Relationships
 
 ### Conforms To
-- [Equatable](../Swift/Equatable.md)
+- [Equatable](../swift/equatable.md)
 - [PhysicsJoint](physicsjoint.md)
 
 ## See Also

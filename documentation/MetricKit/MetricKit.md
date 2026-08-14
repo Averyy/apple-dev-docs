@@ -18,7 +18,7 @@ MetricKit provides on-device app diagnostics and power and performance metrics t
 
 Use this data to improve the performance of your iOS app, macOS app, or Mac Catalyst app.
 
-In iOS 27 and later and macOS 27 and later, [`MetricManager`](metricmanager.md) delivers [`MetricReport`](metricreport.md) and [`DiagnosticReport`](diagnosticreport.md) values through asynchronous sequences. On visionOS 27 and later, [`MetricManager`](metricmanager.md) delivers diagnostic reports only. MetricKit also supports tracking state-based metrics using the [`StateReporting`](https://developer.apple.com/documentation/StateReporting) framework.
+In iOS 27 and later and macOS 27 and later, [`MetricManager`](metricmanager.md) delivers [`MetricReport`](metricreport.md) and [`DiagnosticReport`](diagnosticreport.md) values through asynchronous sequences. On visionOS 27 and later, [`MetricManager`](metricmanager.md) delivers diagnostic reports only. MetricKit also supports tracking state-based metrics using the [`StateReporting`](https://developer.apple.com/documentation/statereporting) framework.
 
 ## Topics
 
@@ -30,7 +30,7 @@ In iOS 27 and later and macOS 27 and later, [`MetricManager`](metricmanager.md) 
 - [Track performance by app state using MetricKit](track-performance-by-app-state-using-metrickit.md)
   Collect performance metrics, diagnostic reports, and experiment data related to your app’s current state using the MetricKit framework.
 ### Performance improvements
-- [Improving your app’s performance](../Xcode/improving-your-app-s-performance.md)
+- [Improving your app’s performance](../xcode/improving-your-app-s-performance.md)
   Model, measure, and boost the performance of your app by using a continuous-improvement cycle.
 ### Metric and diagnostic reports
 - [class MetricManager](metricmanager.md)

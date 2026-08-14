@@ -18,7 +18,7 @@ An array of IOKit object dictionaries.
 ## Parameters
 
 - `className`: String with an IOKit class name.
-- `servicePlane`: . String with the service plane to search. When unspecified,   is used.
+- `servicePlane`: *Optional*. String with the service plane to search. When unspecified, `'IOServicePlane'` is used.
 
 ## See Also
 

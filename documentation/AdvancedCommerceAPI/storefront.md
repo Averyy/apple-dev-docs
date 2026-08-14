@@ -18,7 +18,7 @@ string storefront
 
 Use an ISO 3166-1 Alpha-3 country code to represent the storefront.
 
-To get storefront information in your app, use [`Storefront`](https://developer.apple.com/documentation/StoreKit/Storefront). Get the [`countryCode`](https://developer.apple.com/documentation/StoreKit/Storefront/countryCode) value of the [`current`](https://developer.apple.com/documentation/StoreKit/Storefront/current) storefront, and use that value for `storefront`. Use [`updates`](https://developer.apple.com/documentation/StoreKit/Storefront/updates) to listen for changes to the storefront.
+To get storefront information in your app, use [`Storefront`](https://developer.apple.com/documentation/storekit/storefront). Get the [`countryCode`](https://developer.apple.com/documentation/storekit/storefront/countrycode) value of the [`current`](https://developer.apple.com/documentation/storekit/storefront/current) storefront, and use that value for `storefront`. Use [`updates`](https://developer.apple.com/documentation/storekit/storefront/updates) to listen for changes to the storefront.
 
 ## See Also
 

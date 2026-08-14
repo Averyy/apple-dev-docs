@@ -19,7 +19,7 @@ static var progressAvailable: UIDocument.State { get }
 
 #### Discussion
 
-When this state is set, you can use the [`progress`](https://developer.apple.com/documentation/Foundation/ProgressReporting/progress) property of the document to monitor the current operation.
+When this state is set, you can use the [`progress`](https://developer.apple.com/documentation/foundation/progressreporting/progress) property of the document to monitor the current operation.
 
 ## See Also
 

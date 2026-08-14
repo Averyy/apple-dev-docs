@@ -7,7 +7,6 @@ The service sent the message successfully.
 
 **Availability**:
 - iOS 26.0+
-- iPadOS 26.0+
 
 ## Declaration
 

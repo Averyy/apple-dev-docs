@@ -21,7 +21,7 @@ typealias ACAccountStoreRemoveCompletionHandler = (Bool, (any Error)?) -> Void
 
 The completion handler parameters are:
 
-- **`success`**: A Boolean value indicating whether the operation was successful. [`true`](https://developer.apple.com/documentation/Swift/true) if successful, otherwise [`false`](https://developer.apple.com/documentation/Swift/false).
+- **`success`**: A Boolean value indicating whether the operation was successful. [`true`](https://developer.apple.com/documentation/swift/true) if successful, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
 - **`error`**: An error, if one occurred.
 
 ## See Also

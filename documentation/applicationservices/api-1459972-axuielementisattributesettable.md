@@ -18,6 +18,13 @@ func AXUIElementIsAttributeSettable(_ element: AXUIElement, _ attribute: CFStrin
 
 If unsuccessful, `AXUIElementIsAttributeSettable` may return one of the following error codes, among others:
 
+- **`kAXErrorCannotComplete`**: The function cannot complete because messaging has failed in some way (often due to a timeout).
+- **`kAXErrorIllegalArgument`**: One or more of the arguments is an illegal value.
+- **`kAXErrorAttributeUnsupported`**: The specified AXUIElementRef does not support the specified attribute.
+- **`kAXErrorNoValue`**: The specified attribute does not have a value.
+- **`kAXErrorInvalidUIElement`**: The AXUIElementRef is invalid.
+- **`kAXErrorNotImplemented`**: The process does not fully support the accessibility API.
+
 #### Discussion
 
 If you receive a `kAXErrorCannotComplete` error from this function, you might want to repeat the request or change the timeout value.

@@ -20,7 +20,7 @@ var contactIdentifier: String? { get set }
 
 #### Discussion
 
-When you use the contact’s [`identifier`](https://developer.apple.com/documentation/Contacts/CNContact/identifier) value for the optional [`contactIdentifier`](csperson/contactidentifier.md) property, it enables a direct way to look up the associated contact.
+When you use the contact’s [`identifier`](https://developer.apple.com/documentation/contacts/cncontact/identifier) value for the optional [`contactIdentifier`](csperson/contactidentifier.md) property, it enables a direct way to look up the associated contact.
 
 ## See Also
 

@@ -23,7 +23,7 @@ associatedtype ModifierBase = Any
 
 #### Discussion
 
-To verify that the completion for a modifier compiles, you specify modifiers as they apply to some base type. Since most modifiers can modify any SwiftUI view, you typically specify any concrete implementation of the [`View`](https://developer.apple.com/documentation/SwiftUI/View) protocol for `ModifierBase`. However, some modifiers apply to more specific types, like [`Image`](https://developer.apple.com/documentation/SwiftUI/Image) or [`Text`](https://developer.apple.com/documentation/SwiftUI/Text), or to an entirely different type like [`Shape`](https://developer.apple.com/documentation/SwiftUI/Shape).
+To verify that the completion for a modifier compiles, you specify modifiers as they apply to some base type. Since most modifiers can modify any SwiftUI view, you typically specify any concrete implementation of the [`View`](https://developer.apple.com/documentation/swiftui/view) protocol for `ModifierBase`. However, some modifiers apply to more specific types, like [`Image`](https://developer.apple.com/documentation/swiftui/image) or [`Text`](https://developer.apple.com/documentation/swiftui/text), or to an entirely different type like [`Shape`](https://developer.apple.com/documentation/swiftui/shape).
 
 ## See Also
 

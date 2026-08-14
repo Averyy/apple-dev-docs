@@ -20,11 +20,11 @@ class var areAnimationsEnabled: Bool { get }
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/Swift/true) if animations are enabled; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
+[`true`](https://developer.apple.com/documentation/swift/true) if animations are enabled; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
 
 #### Discussion
 
-The value of this property is [`true`](https://developer.apple.com/documentation/Swift/true) if animations are enabled; otherwise, it is [`false`](https://developer.apple.com/documentation/Swift/false).
+The value of this property is [`true`](https://developer.apple.com/documentation/swift/true) if animations are enabled; otherwise, it is [`false`](https://developer.apple.com/documentation/swift/false).
 
 ## See Also
 

@@ -19,7 +19,7 @@ override dynamic func removeFromParent()
 
 #### Overview
 
-For more information, see [`removeFromParent()`](https://developer.apple.com/documentation/UIKit/UIViewController/removeFromParent()).
+For more information, see [`removeFromParent()`](https://developer.apple.com/documentation/uikit/uiviewcontroller/removefromparent()).
 
 ## See Also
 

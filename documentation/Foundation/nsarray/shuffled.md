@@ -25,7 +25,7 @@ A new array that lists this array’s elements in a random order.
 
 #### Discussion
 
-Calling this method is equivalent to calling the [`shuffled(using:)`](nsarray/shuffled(using:).md) method and passing the system [`sharedRandom()`](https://developer.apple.com/documentation/GameplayKit/GKRandomSource/sharedRandom()) random source. To influence the random shuffling or to be able to deterministically reproduce a series of shuffles, create your own [`GKRandomSource`](https://developer.apple.com/documentation/GameplayKit/GKRandomSource) object.
+Calling this method is equivalent to calling the [`shuffled(using:)`](nsarray/shuffled(using:).md) method and passing the system [`sharedRandom()`](https://developer.apple.com/documentation/gameplaykit/gkrandomsource/sharedrandom()) random source. To influence the random shuffling or to be able to deterministically reproduce a series of shuffles, create your own [`GKRandomSource`](https://developer.apple.com/documentation/gameplaykit/gkrandomsource) object.
 
 ## See Also
 

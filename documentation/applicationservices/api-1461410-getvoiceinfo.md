@@ -28,9 +28,9 @@ If the voice specification is invalid, `GetVoiceInfo` returnsa `voiceNotFound` e
 
 ## Parameters
 
-- `voice`: A pointer to the voice specification structure identifying the voice about which your application requires information, or   to obtain information on the system default voice. 
-- `selector`: A specification of the type of data being requested. For current versions of the Speech Synthesis Manager, you should set this field either to  , if you would like to use the   function to mimic the   function, or to  , if you would like to obtain information about the location of a voice on disk.
-- `voiceInfo`: A pointer to the appropriate data structure. If the selector is  , then   should be a pointer to a voice description structure, and the   field of the structure should be set to the length of the voice description structure. If the selector is  , then   should be a pointer to a voice file information structure. 
+- `voice`: A pointer to the voice specification structure identifying the voice about which your application requires information, or `NULL` to obtain information on the system default voice. 
+- `selector`: A specification of the type of data being requested. For current versions of the Speech Synthesis Manager, you should set this field either to `soVoiceDescription`, if you would like to use the `GetVoiceInfo` function to mimic the `GetVoiceDescription` function, or to `soVoiceFile`, if you would like to obtain information about the location of a voice on disk.
+- `voiceInfo`: A pointer to the appropriate data structure. If the selector is `soVoiceDescription`, then `voiceInfo` should be a pointer to a voice description structure, and the `length` field of the structure should be set to the length of the voice description structure. If the selector is `soVoiceFile`, then `voiceInfo` should be a pointer to a voice file information structure. 
 
 ## See Also
 

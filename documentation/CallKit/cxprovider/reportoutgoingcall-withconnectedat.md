@@ -33,7 +33,7 @@ An outgoing call should call this method after calling the [`reportOutgoingCall(
   Reports a new incoming call with the specified unique identifier to the provider.
 - [class func reportNewIncomingVoIPPushPayload([AnyHashable : Any], completion: (((any Error)?) -> Void)?)](cxprovider/reportnewincomingvoippushpayload(_:completion:).md)
   Reports a new incoming call after your notification service extension decrypts a VoIP call request.
-- [com.apple.developer.usernotifications.filtering](../BundleResources/Entitlements/com.apple.developer.usernotifications.filtering.md)
+- [com.apple.developer.usernotifications.filtering](../bundleresources/entitlements/com.apple.developer.usernotifications.filtering.md)
   Enable receiving notifications without displaying the notification to the user.
 - [func reportOutgoingCall(with: UUID, startedConnectingAt: Date?)](cxprovider/reportoutgoingcall(with:startedconnectingat:).md)
   Reports to the provider that an outgoing call with the specified unique identifier started connecting at a particular time.

@@ -29,13 +29,13 @@ func mergeChanges(fromContextDidSave notification: Notification)
 
 This method refreshes any objects which have been updated in the other context, faults in any newly-inserted objects, and invokes [`delete(_:)`](nsmanagedobjectcontext/delete(_:).md): on those which have been deleted.
 
-You can pass a [`NSManagedObjectContextDidSave`](https://developer.apple.com/documentation/Foundation/NSNotification/Name-swift.struct/NSManagedObjectContextDidSave) notification posted by a managed object context on another thread, however you must not use the managed objects in the user info dictionary directly. For more details, see Concurrency with Core Data.
+You can pass a [`NSManagedObjectContextDidSave`](https://developer.apple.com/documentation/foundation/nsnotification/name-swift.struct/nsmanagedobjectcontextdidsave) notification posted by a managed object context on another thread, however you must not use the managed objects in the user info dictionary directly. For more details, see Concurrency with Core Data.
 
-> **Note**: Objective-C uses instances of [`NSManagedObjectContextDidSaveNotification`](nsmanagedobjectcontextdidsavenotification.md) instead of [`NSManagedObjectContextDidSave`](https://developer.apple.com/documentation/Foundation/NSNotification/Name-swift.struct/NSManagedObjectContextDidSave).
+> **Note**: Objective-C uses instances of [`NSManagedObjectContextDidSaveNotification`](nsmanagedobjectcontextdidsavenotification.md) instead of [`NSManagedObjectContextDidSave`](https://developer.apple.com/documentation/foundation/nsnotification/name-swift.struct/nsmanagedobjectcontextdidsave).
 
 ## Parameters
 
-- `notification`: An instance of an [`NSManagedObjectContextDidSave`](https://developer.apple.com/documentation/Foundation/NSNotification/Name-swift.struct/NSManagedObjectContextDidSave) notification posted by another context.
+- `notification`: An instance of an [`NSManagedObjectContextDidSave`](https://developer.apple.com/documentation/foundation/nsnotification/name-swift.struct/nsmanagedobjectcontextdidsave) notification posted by another context.
 
 ## See Also
 

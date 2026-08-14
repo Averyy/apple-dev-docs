@@ -19,7 +19,7 @@ static let mediaURL: UIImagePickerController.InfoKey
 
 #### Discussion
 
-The value for this key is an [`NSURL`](https://developer.apple.com/documentation/Foundation/NSURL) object.
+The value for this key is an [`NSURL`](https://developer.apple.com/documentation/foundation/nsurl) object.
 
 ## See Also
 

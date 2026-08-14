@@ -23,9 +23,9 @@ If you want to get Search Kit Document URL objects (SKDocumentRefs) instead, use
 ## Parameters
 
 - `inIndex`: The index containing the document information.
-- `inCount`: The number of document IDs in  .
+- `inCount`: The number of document IDs in `inDocumentIDsArray`.
 - `inDocumentIDsArray`: Points to an array of document IDs corresponding to the document URLs (CFURL objects) you want.
-- `outDocumentURLsArray`: When finished with the document URL array, dispose of it by calling   on each array element.
+- `outDocumentURLsArray`: On input, a pointer to an array for document URLs (CFURL objects). On output, points to the previously allocated array, which now contains document URLs corresponding to the document IDs in `inDocumentIDArray`. When finished with the document URL array, dispose of it by calling [`CFRelease`](https://developer.apple.com/documentation/corefoundation/cfrelease) on each array element.
 
 ## See Also
 

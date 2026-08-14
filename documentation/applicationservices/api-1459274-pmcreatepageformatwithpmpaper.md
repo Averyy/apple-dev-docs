@@ -20,7 +20,7 @@ A result code. See [`Result Codes`](core_printing#1670007.md).
 
 ## Parameters
 
-- `pageFormat`: A pointer to your   variable. On return, the variable refers to a new page format object that represents the specified paper. You are responsible for releasing the page format object with the function  .
+- `pageFormat`: A pointer to your [`PMPageFormat`](pmpageformat.md) variable. On return, the variable refers to a new page format object that represents the specified paper. You are responsible for releasing the page format object with the function [`PMRelease(_:)`](1461402-pmrelease.md).
 - `paper`: The type of paper for the new page format object.
 
 ## See Also

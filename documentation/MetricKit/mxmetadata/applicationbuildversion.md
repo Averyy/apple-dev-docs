@@ -20,7 +20,7 @@ var applicationBuildVersion: String { get }
 
 #### Discussion
 
-Returns the value of [`CFBundleVersion`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/CFBundleVersion) from this app’s information property list.
+Returns the value of [`CFBundleVersion`](https://developer.apple.com/documentation/bundleresources/information-property-list/cfbundleversion) from this app’s information property list.
 
 ## See Also
 

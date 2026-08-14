@@ -20,7 +20,7 @@ Returns a summarization object, or `NULL` on failure.
 
 #### Discussion
 
-The [`SKSummaryCreateWithString(_:)`](1446229-sksummarycreatewithstring.md) function creates a summarization object that pre-analyzes a text string to support fast summarization. When your application no longer needs the summarization object, dispose of it by calling [`CFRelease`](https://developer.apple.com/documentation/corefoundation/1521153-cfrelease).
+The [`SKSummaryCreateWithString(_:)`](1446229-sksummarycreatewithstring.md) function creates a summarization object that pre-analyzes a text string to support fast summarization. When your application no longer needs the summarization object, dispose of it by calling [`CFRelease`](https://developer.apple.com/documentation/corefoundation/cfrelease).
 
 ## Parameters
 

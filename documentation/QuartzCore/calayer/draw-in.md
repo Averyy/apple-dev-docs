@@ -27,7 +27,7 @@ Subclasses can override this method and use it to draw the layer’s content. Wh
 
 ## Parameters
 
-- `ctx`: The graphics context in which to draw the content. The context may be clipped to protect valid layer content. Subclasses that wish to find the actual region to draw can call [`boundingBoxOfClipPath`](https://developer.apple.com/documentation/CoreGraphics/CGContext/boundingBoxOfClipPath).
+- `ctx`: The graphics context in which to draw the content. The context may be clipped to protect valid layer content. Subclasses that wish to find the actual region to draw can call [`boundingBoxOfClipPath`](https://developer.apple.com/documentation/coregraphics/cgcontext/boundingboxofclippath).
 
 ## See Also
 

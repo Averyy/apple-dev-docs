@@ -16,7 +16,7 @@ let kSecMatchDiacriticInsensitive: CFString
 
 #### Discussion
 
-The corresponding value is of type [`CFBoolean`](https://developer.apple.com/documentation/CoreFoundation/CFBoolean). If this value is [`kCFBooleanFalse`](https://developer.apple.com/documentation/CoreFoundation/kCFBooleanFalse), or if this attribute is not provided, then diacritic-sensitive string matching is performed.
+The corresponding value is of type [`CFBoolean`](https://developer.apple.com/documentation/corefoundation/cfboolean). If this value is [`kCFBooleanFalse`](https://developer.apple.com/documentation/corefoundation/kcfbooleanfalse), or if this attribute is not provided, then diacritic-sensitive string matching is performed.
 
 
 ---

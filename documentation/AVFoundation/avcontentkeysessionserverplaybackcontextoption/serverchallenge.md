@@ -22,7 +22,7 @@ static let serverChallenge: AVContentKeySessionServerPlaybackContextOption
 
 #### Discussion
 
-Specify this value as an 8-byte [`NSData`](https://developer.apple.com/documentation/Foundation/NSData) object. If you don’t specify a value for this key, the system assumes a default server challenge of `0`.
+Specify this value as an 8-byte [`NSData`](https://developer.apple.com/documentation/foundation/nsdata) object. If you don’t specify a value for this key, the system assumes a default server challenge of `0`.
 
 ## See Also
 

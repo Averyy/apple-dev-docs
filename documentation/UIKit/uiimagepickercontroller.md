@@ -56,7 +56,7 @@ To use an image picker controller, you must provide a delegate that conforms to 
 
 ##### Observe Required Viewing Standards
 
-As a view controller that renders on top of your app for the temporary purpose of selecting images, the picker controller expects your app to keep its contents visible as a prerequisite to operation. In iOS 17 and later, the picker controller ignores touch events while its opacity is anything other than fully opaque. If your app alters the controller’s visibility, such as by adjusting the [`opacity`](https://developer.apple.com/documentation/QuartzCore/CALayer/opacity) of its view’s layer, the picker controller disables user interaction.
+As a view controller that renders on top of your app for the temporary purpose of selecting images, the picker controller expects your app to keep its contents visible as a prerequisite to operation. In iOS 17 and later, the picker controller ignores touch events while its opacity is anything other than fully opaque. If your app alters the controller’s visibility, such as by adjusting the [`opacity`](https://developer.apple.com/documentation/quartzcore/calayer/opacity) of its view’s layer, the picker controller disables user interaction.
 
 ##### Adjust Flash Mode
 
@@ -70,7 +70,7 @@ The default camera interface supports editing movies in the photo library. Editi
 
 ##### Work with Live Photos
 
-Live Photos is a Camera app feature on supported devices, enabling a picture to be not just a single moment in time but to include motion and sound from the moments just before and after its capture. A [`PHLivePhoto`](https://developer.apple.com/documentation/Photos/PHLivePhoto) object represents a Live Photo, and the [`PHLivePhotoView`](https://developer.apple.com/documentation/PhotosUI/PHLivePhotoView) class provides a system-standard, interactive user interface for displaying a Live Photo and playing back its content.
+Live Photos is a Camera app feature on supported devices, enabling a picture to be not just a single moment in time but to include motion and sound from the moments just before and after its capture. A [`PHLivePhoto`](https://developer.apple.com/documentation/photos/phlivephoto) object represents a Live Photo, and the [`PHLivePhotoView`](https://developer.apple.com/documentation/photosui/phlivephotoview) class provides a system-standard, interactive user interface for displaying a Live Photo and playing back its content.
 
 Although Live Photos include sound and motion, they remain photos. When you use an image picker controller to capture or choose still images (by including only the `kUTTypeImage` type in the [`mediaTypes`](uiimagepickercontroller/mediatypes.md) array), assets that were captured as Live Photos continue to appear in the picker. However, when the user chooses an asset, your [`delegate`](uiimagepickercontroller/delegate.md) object receives only a [`UIImage`](uiimage.md) object containing a still-image representation of the Live Photo.
 
@@ -78,9 +78,9 @@ To obtain the full motion and sound content when the user chooses a Live Photo w
 
 ##### Perform Fully Customized Media Capture and Browsing
 
-To perform fully customized image or movie capture, instead use the [`AVFoundation`](https://developer.apple.com/documentation/AVFoundation) framework as described in [`Still and Video Media Capture`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/AudioVideo/Conceptual/AVFoundationPG/Articles/00_Introduction.html#//apple_ref/doc/uid/TP40010188-CH1-SW10). Camera access using the AVFoundation framework is available starting in iOS 4.0.
+To perform fully customized image or movie capture, instead use the [`AVFoundation`](https://developer.apple.com/documentation/avfoundation) framework as described in [`Still and Video Media Capture`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/AudioVideo/Conceptual/AVFoundationPG/Articles/00_Introduction.html#//apple_ref/doc/uid/TP40010188-CH1-SW10). Camera access using the AVFoundation framework is available starting in iOS 4.0.
 
-To create a fully customized image picker for browsing the photo library, use classes from the Photos framework. For example, you could create a custom image picker that displays larger thumbnail images generated and cached by iOS, that makes use of image metadata including timestamp and location information, or that integrates with other features such as MapKit and iCloud Photo Sharing. For more information, see [`PhotoKit`](https://developer.apple.com/documentation/PhotoKit). Media browsing using the Photos framework is available starting in iOS 8.0.
+To create a fully customized image picker for browsing the photo library, use classes from the Photos framework. For example, you could create a custom image picker that displays larger thumbnail images generated and cached by iOS, that makes use of image metadata including timestamp and location information, or that integrates with other features such as MapKit and iCloud Photo Sharing. For more information, see [`PhotoKit`](https://developer.apple.com/documentation/photokit). Media browsing using the Photos framework is available starting in iOS 8.0.
 
 ## Topics
 
@@ -160,17 +160,17 @@ To create a fully customized image picker for browsing the photo library, use cl
 ### Inherits From
 - [UINavigationController](uinavigationcontroller.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCoding](../Foundation/NSCoding.md)
-- [NSExtensionRequestHandling](../Foundation/NSExtensionRequestHandling.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [NSTouchBarProvider](../AppKit/NSTouchBarProvider.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCoding](../foundation/nscoding.md)
+- [NSExtensionRequestHandling](../foundation/nsextensionrequesthandling.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSTouchBarProvider](../appkit/nstouchbarprovider.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 - [UIActivityItemsConfigurationProviding](uiactivityitemsconfigurationproviding.md)
 - [UIAppearanceContainer](uiappearancecontainer.md)
 - [UIContentContainer](uicontentcontainer.md)

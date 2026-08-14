@@ -26,7 +26,7 @@ In addition to alternative app marketplaces, this framework also serves:
 - Web browsers, specifically by requesting app installation on a webpage.
 - Apps that install from an alternative app marketplace or webpage, by determining the installation source at runtime. This allows an app to branch its functionality depending on the installation source.
 
-![Three diagrams that describe the different use cases for MarketplaceKit. From left to right: installing an app from a webpage, installing an app from a alternative app marketplace, and determining an app’s installation source at runtime.](https://docs-assets.developer.apple.com/published/299f1a299648bff2fe696ad51c4bfd02/marketplacekit-hero%402x.png)
+![Three diagrams that describe the different use cases for MarketplaceKit. From left to right: installing an app from a webpage, installing an app from a alternative app marketplace, and determining an app’s installation source at runtime.](/images/com.apple.MarketplaceKit/marketplacekit-hero@2x.png)
 
 > ❗ **Important**: To develop an alternative app marketplace, request approval to use the marketplace entitlement. The request process varies by geographic region. For more information and to request the entitlement, see [`Participating in alternative distribution for specific regions`](participating-in-alternative-distribution-for-specific-regions.md).
 
@@ -55,11 +55,11 @@ In addition to alternative app marketplaces, this framework also serves:
   Renew your app’s authorization when an app needs updating or when a device restores from backup.
 - [Providing age-rating appropriate content](providing-age-rating-appropriate-content.md)
   Check for age-rating based content restrictions and enable people to request approval for apps with a rating beyond the maximum allowed for the device.
-- [com.apple.developer.marketplace.app-installation](../BundleResources/Entitlements/com.apple.developer.marketplace.app-installation.md)
+- [com.apple.developer.marketplace.app-installation](../bundleresources/entitlements/com.apple.developer.marketplace.app-installation.md)
   An entitlement that enables an app to vend other apps as an alternative app marketplace.
-- [com.apple.developer.browser.app-installation](../BundleResources/Entitlements/com.apple.developer.browser.app-installation.md)
+- [com.apple.developer.browser.app-installation](../bundleresources/entitlements/com.apple.developer.browser.app-installation.md)
   An entitlement that enables a browser to install alternative distribution apps from a website.
-- [App License Delivery SDK](../AppLicenseDeliverySDK/AppLicenseDeliverySDK.md)
+- [App License Delivery SDK](../applicensedeliverysdk/applicensedeliverysdk.md)
   Secure the installation of alternative distribution apps on iOS or iPadOS devices by vending licenses from your web server.
 ### Browser support
 - [Enabling alternative distribution app installation in a browser](enabling-alternative-distribution-app-installation-in-a-browser.md)

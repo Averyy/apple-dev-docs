@@ -24,7 +24,7 @@ protocol ObjectiveCConvertibleAttributedStringKey : AttributedStringKey
 
 Conform to this protocol to allow your attributed string key to customize its Objective-C conversion behavior. This allows you to define an Objective-C value type and provide methods to convert to and from this type.
 
-Attributed string keys that don’t conform to this protocol cast the value to [`AnyObject`](https://developer.apple.com/documentation/Swift/AnyObject) before converting to Objective-C. When converting from Objective-C, the value casts to the key’s [`Value`](attributedstringkey/value.md) type. In cases where Swift types bridge automatically to Objective-C types, like [`String`](https://developer.apple.com/documentation/Swift/String) to [`NSString`](nsstring.md), this default behavior is adequate. But for unbridged value types, you need to conform to this protocol and provide the conversion methods.
+Attributed string keys that don’t conform to this protocol cast the value to [`AnyObject`](https://developer.apple.com/documentation/swift/anyobject) before converting to Objective-C. When converting from Objective-C, the value casts to the key’s [`Value`](attributedstringkey/value.md) type. In cases where Swift types bridge automatically to Objective-C types, like [`String`](https://developer.apple.com/documentation/swift/string) to [`NSString`](nsstring.md), this default behavior is adequate. But for unbridged value types, you need to conform to this protocol and provide the conversion methods.
 
 ## Topics
 
@@ -41,7 +41,7 @@ Attributed string keys that don’t conform to this protocol cast the value to [
 
 ### Inherits From
 - [AttributedStringKey](attributedstringkey.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 ### Conforming Types
 - [AttributeScopes.AccessibilityAttributes.AdjustedPitchAttribute](attributescopes/accessibilityattributes/adjustedpitchattribute.md)
 - [AttributeScopes.AccessibilityAttributes.AnnouncementPriorityAttribute](attributescopes/accessibilityattributes/announcementpriorityattribute.md)

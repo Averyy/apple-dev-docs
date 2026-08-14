@@ -16,7 +16,7 @@ static let selectionOnly: NSPrintInfo.AttributeKey
 
 #### Discussion
 
-If [`true`](https://developer.apple.com/documentation/Swift/true), only the current selection is printed.
+If [`true`](https://developer.apple.com/documentation/swift/true), only the current selection is printed.
 
 ## See Also
 

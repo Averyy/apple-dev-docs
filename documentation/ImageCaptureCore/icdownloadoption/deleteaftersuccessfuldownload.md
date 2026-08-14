@@ -20,7 +20,7 @@ static let deleteAfterSuccessfulDownload: ICDownloadOption
 
 #### Discussion
 
-Specify this value as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) object.
+Specify this value as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) object.
 
 ## See Also
 

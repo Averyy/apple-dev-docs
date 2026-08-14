@@ -21,7 +21,7 @@ typealias EKEventStoreRequestAccessCompletionHandler = (Bool, (any Error)?) -> V
 
 ## Parameters
 
-- `granted`: [`true`](https://developer.apple.com/documentation/Swift/true) if the user allows the app to access data in the event store; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
+- `granted`: [`true`](https://developer.apple.com/documentation/swift/true) if the user allows the app to access data in the event store; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
 - `error`: The error that occurred, if any; otherwise, `nil`.
 
 ## See Also
@@ -36,11 +36,11 @@ typealias EKEventStoreRequestAccessCompletionHandler = (Bool, (any Error)?) -> V
   Determines the authorization status for the given entity type.
 - [enum EKAuthorizationStatus](ekauthorizationstatus.md)
   The current authorization status for a specific entity type.
-- [NSCalendarsFullAccessUsageDescription](../BundleResources/Information-Property-List/NSCalendarsFullAccessUsageDescription.md)
+- [NSCalendarsFullAccessUsageDescription](../bundleresources/information-property-list/nscalendarsfullaccessusagedescription.md)
   A message that tells people why the app is requesting access to read and write their calendar data.
-- [NSCalendarsWriteOnlyAccessUsageDescription](../BundleResources/Information-Property-List/NSCalendarsWriteOnlyAccessUsageDescription.md)
+- [NSCalendarsWriteOnlyAccessUsageDescription](../bundleresources/information-property-list/nscalendarswriteonlyaccessusagedescription.md)
   A message that tells people why the app is requesting access to create calendar events.
-- [NSRemindersFullAccessUsageDescription](../BundleResources/Information-Property-List/NSRemindersFullAccessUsageDescription.md)
+- [NSRemindersFullAccessUsageDescription](../bundleresources/information-property-list/nsremindersfullaccessusagedescription.md)
   A message that tells people why the app is requesting access to read and write their reminders data.
 
 

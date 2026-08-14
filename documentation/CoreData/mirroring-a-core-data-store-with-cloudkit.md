@@ -10,7 +10,7 @@ Use Core Data with CloudKit to give users seamless access to the data in your ap
 
 Core Data with CloudKit combines the benefits of local persistence with cloud backup and distribution. Core Data provides powerful object graph management features for developing an app with structured data. CloudKit lets users access their data across every device on their iCloud account, while serving as an always-available backup service.
 
-![Flow diagram showing a record syncing between CloudKit and three devices: a laptop, an iPad, and an iPhone.](https://docs-assets.developer.apple.com/published/9dac8da0d3baed269f67ac229a5ca105/media-3226649%402x.png)
+![Flow diagram showing a record syncing between CloudKit and three devices: a laptop, an iPad, and an iPhone.](/images/com.apple.coredata/media-3226649@2x.png)
 
 ##### Determine If Your App Is Eligible for Core Data with Cloudkit
 

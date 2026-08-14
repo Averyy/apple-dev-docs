@@ -23,7 +23,7 @@ The size as a 2D vector (width, height)
 
 Use this function to read the element’s dimensions in meters, which represent its width and height.
 
-> **Note**: ![Graph](https://docs-assets.developer.apple.com/published/3af32485d8ab3c382f99c7221dcab373/element__size.svg)
+> **Note**: ![Graph](/images/com.apple.computegraph/element__size.svg)
 
 
 ---

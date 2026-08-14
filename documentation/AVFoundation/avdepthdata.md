@@ -41,7 +41,7 @@ There are two ways to capture depth data:
 - The [`AVCaptureDepthDataOutput`](avcapturedepthdataoutput.md) class captures and delivers depth data in a stream (similar to how the [`AVCaptureVideoDataOutput`](avcapturevideodataoutput.md) delivers video data).
 - The [`AVCapturePhotoOutput`](avcapturephotooutput.md) class delivers depth data as a property of an [`AVCapturePhoto`](avcapturephoto.md) object containing the captured image.
 
-You can also create [`AVDepthData`](avdepthdata.md) objects using information obtained from image files with the [`Image I/O`](https://developer.apple.com/documentation/ImageIO) framework.
+You can also create [`AVDepthData`](avdepthdata.md) objects using information obtained from image files with the [`Image I/O`](https://developer.apple.com/documentation/imageio) framework.
 
 When editing images containing depth information, use the methods listed in Transforming and Processing to generate derivative [`AVDepthData`](avdepthdata.md) objects reflecting the edits that have been performed.
 
@@ -84,14 +84,14 @@ When editing images containing depth information, use the methods listed in Tran
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

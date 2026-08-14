@@ -30,9 +30,9 @@ This method applies the triangle tile filter to an image. The effect creates a t
 The triangle tile filter uses the following properties:
 
 - **`inputImage`**: An image with the type [`CIImage`](ciimage.md).
-- **`center`**: A set of coordinates marking the center of the image as a [`CGPoint`](https://developer.apple.com/documentation/CoreFoundation/CGPoint).
-- **`angle`**: A `float` representing the direction of distortion, in radians as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
-- **`width`**: A `float` representing the set width of each tile as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+- **`center`**: A set of coordinates marking the center of the image as a [`CGPoint`](https://developer.apple.com/documentation/corefoundation/cgpoint).
+- **`angle`**: A `float` representing the direction of distortion, in radians as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
+- **`width`**: A `float` representing the set width of each tile as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
 
 The following code creates a filter that produces a triangle of the input image and tiles the result:
 
@@ -47,7 +47,7 @@ func triangle(inputImage: CIImage) -> CIImage {
 }
 ```
 
-![Two photographs of a bouquet of multiple colorful flowers. The photo on the left is up close with good lighting and focus. In the photo on the right, a triangle tile filter is applied, resulting in a triangle portion of the image containing white and blue petals repeated throughout the entire image.](https://docs-assets.developer.apple.com/published/4c6b4266f6192a6dba4f4eb5fd7e0e96/media-3599891%402x.png)
+![Two photographs of a bouquet of multiple colorful flowers. The photo on the left is up close with good lighting and focus. In the photo on the right, a triangle tile filter is applied, resulting in a triangle portion of the image containing white and blue petals repeated throughout the entire image.](/images/com.apple.coreimage/media-3599891@2x.png)
 
 ## See Also
 

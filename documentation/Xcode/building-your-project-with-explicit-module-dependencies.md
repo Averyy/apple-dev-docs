@@ -29,7 +29,7 @@ When explicitly building module dependencies, compilation is divided into three 
 
 In addition to appearing as distinct steps in the build log, you can also review the tasks in the build timeline:
 
-![A screenshot of an Xcode build log and accompanying timeline showing dependency scanning, module build, and compile tasks.](https://docs-assets.developer.apple.com/published/38ec6d9e7cdbcd71c1cb18ff85bf815e/building-your-project-with-explicit-module-dependencies-1%402x.png)
+![A screenshot of an Xcode build log and accompanying timeline showing dependency scanning, module build, and compile tasks.](/images/com.apple.Xcode/building-your-project-with-explicit-module-dependencies-1@2x.png)
 
 ##### Improve Compile Times By Reducing Module Variants
 

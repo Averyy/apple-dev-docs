@@ -22,7 +22,7 @@ var audioSource: SCNAudioSource? { get }
 
 #### Discussion
 
-An [`SCNAudioSource`](scnaudiosource.md) object represents a distinct source of audio—for example, a sound file—that can be reused and shared by many player objects. Use a player’s audio source to configure the default values for playback parameters such as volume and reverb. To vary those parameters in real time during playback, use the [`audioNode`](scnaudioplayer/audionode.md) property to work with the underlying [`AVAudioNode`](https://developer.apple.com/documentation/AVFAudio/AVAudioNode) object.
+An [`SCNAudioSource`](scnaudiosource.md) object represents a distinct source of audio—for example, a sound file—that can be reused and shared by many player objects. Use a player’s audio source to configure the default values for playback parameters such as volume and reverb. To vary those parameters in real time during playback, use the [`audioNode`](scnaudioplayer/audionode.md) property to work with the underlying [`AVAudioNode`](https://developer.apple.com/documentation/avfaudio/avaudionode) object.
 
 If the player was created with the [`audioPlayerWithAVAudioNode:`](scnaudioplayer/audioplayerwithavaudionode:.md) method, this property’s value is `nil`.
 

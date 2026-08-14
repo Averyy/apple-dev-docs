@@ -7,7 +7,6 @@ An option that indicates the person allows notifications from a selected subset 
 
 **Availability**:
 - iOS 26.5+
-- iPadOS 26.5+
 
 ## Declaration
 

@@ -17,7 +17,7 @@ The Landmarks app lets people explore interesting sites around the world. Whethe
 
 This sample demonstrates how to extend horizontal scrolling under a sidebar or inspector. Within each continent section in `LandmarksView`, an instance of `LandmarkHorizontalListView` shows a horizontally scrolling list of landmark views. When open, the landmark views can scroll underneath the sidebar or inspector.
 
-![An image of the landmarks view on an iPad, with the sidebar visible and some landmarks visible under the sidebar.](https://docs-assets.developer.apple.com/published/eb641b2d97c629d43e8cf487ffd8dc2c/Landmarks-Building-an-app-with-Liquid-Glass-3%402x.png)
+![An image of the landmarks view on an iPad, with the sidebar visible and some landmarks visible under the sidebar.](/images/com.apple.SwiftUI/Landmarks-Building-an-app-with-Liquid-Glass-3@2x.png)
 
 #### Configure the Scroll View
 

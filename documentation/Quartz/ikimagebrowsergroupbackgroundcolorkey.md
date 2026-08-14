@@ -16,7 +16,7 @@ let IKImageBrowserGroupBackgroundColorKey: String
 
 #### Discussion
 
-The associated value is an [`NSColor`](https://developer.apple.com/documentation/AppKit/NSColor) object. This color is used only for the bezel style.
+The associated value is an [`NSColor`](https://developer.apple.com/documentation/appkit/nscolor) object. This color is used only for the bezel style.
 
 ## See Also
 

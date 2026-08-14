@@ -19,7 +19,7 @@ static var notAuthenticated: NSFileProviderError.Code { get }
 
 #### Discussion
 
-If your File Provider extension returns a [`notAuthenticated`](nsfileprovidererror/notauthenticated.md) error, the system presents an alert to the user. If you have a File Provider UI extension, the system calls your [`FPUIActionExtensionViewController`](https://developer.apple.com/documentation/FileProviderUI/FPUIActionExtensionViewController) class’s [`prepare(forError:)`](https://developer.apple.com/documentation/FileProviderUI/FPUIActionExtensionViewController/prepare(forError:)) method before displaying the alert.
+If your File Provider extension returns a [`notAuthenticated`](nsfileprovidererror/notauthenticated.md) error, the system presents an alert to the user. If you have a File Provider UI extension, the system calls your [`FPUIActionExtensionViewController`](https://developer.apple.com/documentation/fileproviderui/fpuiactionextensionviewcontroller) class’s [`prepare(forError:)`](https://developer.apple.com/documentation/fileproviderui/fpuiactionextensionviewcontroller/prepare(forerror:)) method before displaying the alert.
 
 ## See Also
 

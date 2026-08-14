@@ -18,6 +18,13 @@ func AXUIElementCopyAttributeValue(_ element: AXUIElement, _ attribute: CFString
 
 If unsuccessful, `AXUIElementCopyAttributeValue` may return one of the following error codes, among others:
 
+- **`kAXErrorAttributeUnsupported`**: The specified AXUIElementRef does not support the specified attribute.
+- **`kAXErrorNoValue`**: The specified attribute does not have a value.
+- **`kAXErrorIllegalArgument`**: One or more of the arguments is an illegal value.
+- **`kAXErrorInvalidUIElement`**: The AXUIElementRef is invalid.
+- **`kAXErrorCannotComplete`**: The function cannot complete because messaging has failed in some way.
+- **`kAXErrorNotImplemented`**: The process does not fully support the accessibility API.
+
 ## Parameters
 
 - `element`: The AXUIElementRef representing the accessibility object.

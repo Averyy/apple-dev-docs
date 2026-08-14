@@ -22,7 +22,7 @@ To add this entitlement to your app, enable the Game Center capability in Xcode.
 
 ## See Also
 
-- [Initializing and configuring Game Center](../GameKit/initializing-and-configuring-game-center.md)
+- [Initializing and configuring Game Center](../gamekit/initializing-and-configuring-game-center.md)
   Enable Game Center, configure features, and test them locally in your Xcode project.
 
 

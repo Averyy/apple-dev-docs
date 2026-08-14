@@ -22,7 +22,7 @@ let CBUUIDCharacteristicUserDescriptionString: String
 
 #### Discussion
 
-The corresponding value for this descriptor is an [`NSString`](https://developer.apple.com/documentation/Foundation/NSString) object.
+The corresponding value for this descriptor is an [`NSString`](https://developer.apple.com/documentation/foundation/nsstring) object.
 
 ## See Also
 

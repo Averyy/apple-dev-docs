@@ -21,7 +21,7 @@ func formatted<S>(_ style: S) -> S.FormatOutput where Self == S.FormatInput, S :
 ## See Also
 
 - [func formatted() -> String](sequence/formatted.md)
-- [struct ListFormatStyle](../Foundation/ListFormatStyle.md)
+- [struct ListFormatStyle](../foundation/listformatstyle.md)
   A type that formats lists of items with a separator and conjunction appropriate for a given locale.
 
 

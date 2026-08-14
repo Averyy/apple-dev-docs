@@ -18,7 +18,9 @@ class OSData : OSObject
 
 OSData represents an array of bytes as a Libkern C++ object. OSData objects are mutable: You can add bytes to them and overwrite portions of the byte array.
 
-With very few exceptions in the I/O Kit, all Libkern-based C++ classes, functions, and macros are  to use in a primary interrupt context. Consult the I/O Kit documentation related to primary interrupts for more information.
+**Use Restrictions**
+
+With very few exceptions in the I/O Kit, all Libkern-based C++ classes, functions, and macros are **unsafe** to use in a primary interrupt context. Consult the I/O Kit documentation related to primary interrupts for more information.
 
 OSData provides no concurrency protection; it's up to the usage context to provide any protection necessary. Some portions of the I/O Kit, such as IORegistryEntry, handle synchronization via defined member functions for setting properties.
 
@@ -80,18 +82,18 @@ OSData provides no concurrency protection; it's up to the usage context to provi
 ### Instance Methods
 - [- appendByte](osdata/1387997-appendbyte.md)
 - [- appendBytes](osdata/1388036-appendbytes.md)
-- [- appendBytes](../driverkit/osdata/appendbytes-38hs5.md)
-  Appends a buffer of bytes to the OSData object’s internal data buffer.
+- [- appendBytes](osdata/3433841-appendbytes.md)
+  Appends a buffer of bytes to the OSData object's internal data buffer.
 - [- ensureCapacity](osdata/1387999-ensurecapacity.md)
-- [- free](../driverkit/osdata/free.md)
-- [- getBytesNoCopy](../driverkit/osdata/getbytesnocopy-91vcg.md)
-  Returns a pointer to the OSData object’s internal data buffer.
-- [- getBytesNoCopy](../driverkit/osdata/getbytesnocopy-53puz.md)
-  Returns a pointer to the OSData object’s internal data buffer.
-- [- getCapacity](../driverkit/osdata/getcapacity.md)
+- [- free](osdata/3180878-free.md)
+- [- getBytesNoCopy](osdata/3180879-getbytesnocopy.md)
+  Returns a pointer to the OSData object's internal data buffer.
+- [- getBytesNoCopy](osdata/3433842-getbytesnocopy.md)
+  Returns a pointer to the OSData object's internal data buffer.
+- [- getCapacity](osdata/3180880-getcapacity.md)
   Returns length of preallocated capacity.
 - [- getCapacityIncrement](osdata/1388014-getcapacityincrement.md)
-- [- getLength](../driverkit/osdata/getlength.md)
+- [- getLength](osdata/3180881-getlength.md)
   Returns length of data present.
 - [- getMetaClass](osdata/1388028-getmetaclass.md)
 - [- initWithBytes](osdata/1388002-initwithbytes.md)
@@ -99,13 +101,13 @@ OSData provides no concurrency protection; it's up to the usage context to provi
 - [- initWithCapacity](osdata/1388008-initwithcapacity.md)
 - [- initWithData](osdata/1388030-initwithdata.md)
 - [- initWithData](osdata/3516834-initwithdata.md)
-- [- isEqualTo](../driverkit/osdata/isequalto-2kdml.md)
+- [- isEqualTo](osdata/3180882-isequalto.md)
   Compares the data with an OSData
-- [- isEqualTo](../driverkit/osdata/isequalto-5ssf5.md)
+- [- isEqualTo](osdata/3433843-isequalto.md)
   Compares the data with an OSString
-- [- isEqualTo](../driverkit/osdata/isequalto-79gqy.md)
+- [- isEqualTo](osdata/3433844-isequalto.md)
   Compares the data with a pointer to bytes
-- [- isEqualTo](../driverkit/osdata/isequalto-4xz0j.md)
+- [- isEqualTo](osdata/3433858-isequalto.md)
   Compares the data with an OSObject
 - [- isSerializable](osdata/2721392-isserializable.md)
 - [- serialize](osdata/1388032-serialize.md)
@@ -115,11 +117,11 @@ OSData provides no concurrency protection; it's up to the usage context to provi
 ### Type Methods
 - [+ withBytes](osdata/1388001-withbytes.md)
 - [+ withBytesNoCopy](osdata/1388010-withbytesnocopy.md)
-- [+ withCapacity](../driverkit/osdata/withcapacity.md)
+- [+ withCapacity](osdata/3180885-withcapacity.md)
   Allocates an OSData object with preallocated capacity.
-- [+ withData](../driverkit/osdata/withdata-9y3g.md)
+- [+ withData](osdata/3180886-withdata.md)
   Allocates an OSData object with a copy of bytes from another OSData.
-- [+ withData](../driverkit/osdata/withdata-4rd8n.md)
+- [+ withData](osdata/3433845-withdata.md)
   Allocates an OSData object with a copy of bytes from a subset of another OSData.
 
 ## Relationships

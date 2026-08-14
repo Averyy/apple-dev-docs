@@ -23,7 +23,7 @@ var undoManager: UndoManager? { get set }
 
 #### Discussion
 
-Assign an instance of [`UndoManager`](https://developer.apple.com/documentation/Foundation/UndoManager) to this property to enable undo support for the context. The undo manager can be exclusive to the context, or an existing manager should you want to integrate this context’s undo operations with those of the rest of your app.
+Assign an instance of [`UndoManager`](https://developer.apple.com/documentation/foundation/undomanager) to this property to enable undo support for the context. The undo manager can be exclusive to the context, or an existing manager should you want to integrate this context’s undo operations with those of the rest of your app.
 
 If the context does use an undo manager, improve performance by temporarily setting this property to `nil` when performing expensive operations, such as importing large numbers of models.
 

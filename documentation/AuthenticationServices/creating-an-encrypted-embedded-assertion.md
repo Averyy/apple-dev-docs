@@ -44,7 +44,7 @@ Configuration of Concat KDF for Platform SSO is per RFC 7518 Section 4.6.2 and N
 | --- | --- | --- |
 | `AlgorithmID` | Set to the octets of the ASCII representation of the `enc` (algorithm) header parameter value. | Per RFC 7518 Section 4.6.2 when using direct key agreement |
 | `PartyUInfo` | ` |  |
-| `PartyVInfo` | This needs to use the `jwe_crypto.apv` value from the login request.  ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) ` |  |
+| `PartyVInfo` | This needs to use the `jwe_crypto.apv` value from the login request.  ![None](/images/com.apple.authenticationservices/spacer.png) ` |  |
 | `SuppPubInfo` | Set to the number of bits in the desired output key. | Per RFC 7518 Section 4.6.2 |
 | `SuppPrivInfo` | `NULL` | Per RFC 7518 Section 4.6.2 |
 

@@ -16,7 +16,7 @@ func setSelectionIndexPaths(_ indexPaths: [IndexPath]) -> Bool
 
 #### Return Value
 
-Return [`true`](https://developer.apple.com/documentation/Swift/true) if the selection has changed, otherwise [`false`](https://developer.apple.com/documentation/Swift/false).
+Return [`true`](https://developer.apple.com/documentation/swift/true) if the selection has changed, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
 
 #### Discussion
 
@@ -24,7 +24,7 @@ Attempting to change the selection may cause a `commitEditing` message which fai
 
 ## Parameters
 
-- `indexPaths`: An array of [`NSIndexPath`](https://developer.apple.com/documentation/Foundation/NSIndexPath) objects specifying the selected objects.
+- `indexPaths`: An array of [`NSIndexPath`](https://developer.apple.com/documentation/foundation/nsindexpath) objects specifying the selected objects.
 
 ## See Also
 

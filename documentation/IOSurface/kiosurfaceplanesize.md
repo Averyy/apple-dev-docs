@@ -23,7 +23,7 @@ let kIOSurfacePlaneSize: CFString
 
 Defaults to plane height * plane bytes per row if not specified.
 
-This value is stored as a [`CFNumber`](https://developer.apple.com/documentation/CoreFoundation/CFNumber).
+This value is stored as a [`CFNumber`](https://developer.apple.com/documentation/corefoundation/cfnumber).
 
 ## See Also
 

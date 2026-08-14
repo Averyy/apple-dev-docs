@@ -20,7 +20,7 @@ var isAdvertisingTrackingEnabled: Bool { get }
 
 #### Discussion
 
-> ⚠️ **Warning**: This property is deprecated. Functionality has been replaced by the [`App Tracking Transparency`](https://developer.apple.com/documentation/AppTrackingTransparency) framework.
+> ⚠️ **Warning**: This property is deprecated. Functionality has been replaced by the [`App Tracking Transparency`](https://developer.apple.com/documentation/apptrackingtransparency) framework.
 
 
 ---

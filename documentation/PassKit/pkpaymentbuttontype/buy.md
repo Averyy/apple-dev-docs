@@ -23,7 +23,7 @@ case buy
 
 This button looks like:
 
-![A button with the text “Buy with” and the Apple Pay logo.](https://docs-assets.developer.apple.com/published/51ff1b7edb5942a063524de776f1c671/media-2903829%402x.png)
+![A button with the text “Buy with” and the Apple Pay logo.](/images/com.apple.passkit/media-2903829@2x.png)
 
 For design guidance, see [`Human Interface Guidelines > Apple Pay > Buttons and Marks`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/apple-pay/overview/buttons-and-marks/).
 

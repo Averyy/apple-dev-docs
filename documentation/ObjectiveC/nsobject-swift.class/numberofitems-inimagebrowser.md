@@ -20,7 +20,7 @@ The number of records managed by the image browser view.
 
 #### Discussion
 
-Your data source must implement this method. An  [`IKImageView`](https://developer.apple.com/documentation/Quartz/IKImageView) object uses this method to determine how many cells it should create and display.
+Your data source must implement this method. An  [`IKImageView`](https://developer.apple.com/documentation/quartz/ikimageview) object uses this method to determine how many cells it should create and display.
 
 ## Parameters
 

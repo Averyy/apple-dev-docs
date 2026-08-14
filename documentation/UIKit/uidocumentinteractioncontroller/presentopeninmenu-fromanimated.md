@@ -19,7 +19,7 @@ func presentOpenInMenu(from item: UIBarButtonItem, animated: Bool) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/Swift/true) if this method was able to display the menu or [`false`](https://developer.apple.com/documentation/Swift/false) if it was not.
+[`true`](https://developer.apple.com/documentation/swift/true) if this method was able to display the menu or [`false`](https://developer.apple.com/documentation/swift/false) if it was not.
 
 #### Discussion
 
@@ -32,7 +32,7 @@ This method displays the menu asynchronously. The document interaction controlle
 ## Parameters
 
 - `item`: The bar button item to which to anchor the menu.
-- `animated`: Specify [`true`](https://developer.apple.com/documentation/Swift/true) to animate the appearance of the menu or [`false`](https://developer.apple.com/documentation/Swift/false) to display it immediately.
+- `animated`: Specify [`true`](https://developer.apple.com/documentation/swift/true) to animate the appearance of the menu or [`false`](https://developer.apple.com/documentation/swift/false) to display it immediately.
 
 ## See Also
 

@@ -19,7 +19,7 @@ static let MPMoviePlayerLoadStateDidChange: NSNotification.Name
 
 #### Discussion
 
-To retrieve the current load state of a movie player, access its [`loadState`](https://developer.apple.com/documentation/MediaPlayer/MPMoviePlayerController/loadState) property. The movie player whose state has changed is available as the object associated with the notification.
+To retrieve the current load state of a movie player, access its [`loadState`](https://developer.apple.com/documentation/mediaplayer/mpmovieplayercontroller/loadstate) property. The movie player whose state has changed is available as the object associated with the notification.
 
 ## See Also
 

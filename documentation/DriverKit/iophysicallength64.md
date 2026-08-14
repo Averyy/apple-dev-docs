@@ -14,7 +14,7 @@ A type that represents the length of a memory block in a 64-bit address space.
 ## Declaration
 
 ```swift
-typedef UInt64 IOPhysicalLength64;
+typedef uint64_t IOPhysicalLength64;
 ```
 
 ## See Also

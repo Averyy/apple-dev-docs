@@ -23,7 +23,7 @@ var contents: Any? { get set }
 
 The default value of this property is `nil`.
 
-If you are using the layer to display a static image, you can set this property to the [`CGImage`](https://developer.apple.com/documentation/CoreGraphics/CGImage) containing the image you want to display. (In macOS 10.6 and later, you can also set the property to an [`NSImage`](https://developer.apple.com/documentation/AppKit/NSImage) object.) Assigning a value to this property causes the layer to use your image rather than create a separate backing store.
+If you are using the layer to display a static image, you can set this property to the [`CGImage`](https://developer.apple.com/documentation/coregraphics/cgimage) containing the image you want to display. (In macOS 10.6 and later, you can also set the property to an [`NSImage`](https://developer.apple.com/documentation/appkit/nsimage) object.) Assigning a value to this property causes the layer to use your image rather than create a separate backing store.
 
 If the layer object is tied to a view object, you should avoid setting the contents of this property directly. The interplay between views and layers usually results in the view replacing the contents of this property during a subsequent update.
 

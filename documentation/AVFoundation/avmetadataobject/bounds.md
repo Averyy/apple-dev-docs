@@ -22,7 +22,7 @@ var bounds: CGRect { get }
 
 The bounding rectangle is specified relative to the picture or video of the corresponding media. The rectangle’s origin is always specified in the top-left corner, and the x and y axis extend down and to the right.
 
-If the metadata has no bounding rectangle, the value of this property should be [`CGRectZero`](https://developer.apple.com/documentation/CoreGraphics/CGRectZero).
+If the metadata has no bounding rectangle, the value of this property should be [`CGRectZero`](https://developer.apple.com/documentation/coregraphics/cgrectzero).
 
 For video content, the bounding rectangle may be expressed using scalar values in the range 0.0 to 1.0. Scalar values remain meaningful even when the original video has been scaled down.
 

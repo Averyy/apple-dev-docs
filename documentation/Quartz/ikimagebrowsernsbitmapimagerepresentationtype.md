@@ -16,7 +16,7 @@ let IKImageBrowserNSBitmapImageRepresentationType: String
 
 #### Discussion
 
-An  [`NSBitmapImageRep`](https://developer.apple.com/documentation/AppKit/NSBitmapImageRep)  object.
+An  [`NSBitmapImageRep`](https://developer.apple.com/documentation/appkit/nsbitmapimagerep)  object.
 
 ## See Also
 

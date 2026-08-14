@@ -24,7 +24,7 @@ You can use this function to create a [`CFURL`](https://developer.apple.com/docu
 
 ## Parameters
 
-- `inDocument`: The document URL object that you want a   object for.
+- `inDocument`: The document URL object that you want a [`CFURL`](https://developer.apple.com/documentation/corefoundation/cfurl) object for.
 
 ## See Also
 

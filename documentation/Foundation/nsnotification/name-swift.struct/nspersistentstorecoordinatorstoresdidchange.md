@@ -24,7 +24,7 @@ static let NSPersistentStoreCoordinatorStoresDidChange: NSNotification.Name
 
 This notification’s `object` is the changed store coordinator. The framework posts the notification to an internal thread. Move to a known thread before peforming any work.
 
-The `userInfo` dictionary contains information about the added, updated, and removed persistent stores, which you access with the [`NSAddedPersistentStoresKey`](https://developer.apple.com/documentation/CoreData/NSAddedPersistentStoresKey), [`NSUUIDChangedPersistentStoresKey`](https://developer.apple.com/documentation/CoreData/NSUUIDChangedPersistentStoresKey), and [`NSRemovedPersistentStoresKey`](https://developer.apple.com/documentation/CoreData/NSRemovedPersistentStoresKey) keys. Don’t capture the dictionary’s contents.
+The `userInfo` dictionary contains information about the added, updated, and removed persistent stores, which you access with the [`NSAddedPersistentStoresKey`](https://developer.apple.com/documentation/coredata/nsaddedpersistentstoreskey), [`NSUUIDChangedPersistentStoresKey`](https://developer.apple.com/documentation/coredata/nsuuidchangedpersistentstoreskey), and [`NSRemovedPersistentStoresKey`](https://developer.apple.com/documentation/coredata/nsremovedpersistentstoreskey) keys. Don’t capture the dictionary’s contents.
 
 ## See Also
 

@@ -16,7 +16,7 @@ class NSUserDefaultsController
 
 #### Overview
 
-[`NSUserDefaultsController`](nsuserdefaultscontroller.md) is a Cocoa bindings–compatible controller class. Properties of the shared instance of this class can be bound to user interface elements to access and modify values stored in [`UserDefaults`](https://developer.apple.com/documentation/Foundation/UserDefaults).
+[`NSUserDefaultsController`](nsuserdefaultscontroller.md) is a Cocoa bindings–compatible controller class. Properties of the shared instance of this class can be bound to user interface elements to access and modify values stored in [`UserDefaults`](https://developer.apple.com/documentation/foundation/userdefaults).
 
 ## Topics
 
@@ -50,21 +50,21 @@ class NSUserDefaultsController
 ### Inherits From
 - [NSController](nscontroller.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCoding](../Foundation/NSCoding.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCoding](../foundation/nscoding.md)
 - [NSEditor](nseditor.md)
 - [NSEditorRegistration](nseditorregistration.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 
-- [class NSUbiquitousKeyValueStore](../Foundation/NSUbiquitousKeyValueStore.md)
+- [class NSUbiquitousKeyValueStore](../foundation/nsubiquitouskeyvaluestore.md)
   An iCloud-based container of key-value pairs you share among instances of your app running on a person’s devices.
 
 

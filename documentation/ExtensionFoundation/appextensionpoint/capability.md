@@ -27,7 +27,7 @@ Types adopt this protocol if they comprise part of an extension’s capabilities
 ## Relationships
 
 ### Inherits From
-- [Identifiable](../Swift/Identifiable.md)
+- [Identifiable](../swift/identifiable.md)
 
 
 ---

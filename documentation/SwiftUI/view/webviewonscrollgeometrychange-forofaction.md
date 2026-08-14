@@ -35,9 +35,9 @@ A view that invokes the action when the relevant part of a web view’s scroll g
 
 ## See Also
 
-- [struct WebView](../WebKit/WebView-swift.struct.md)
+- [struct WebView](../webkit/webview-swift.struct.md)
   A view that displays some web content.
-- [class WebPage](../WebKit/WebPage.md)
+- [class WebPage](../webkit/webpage.md)
   An object that controls and manages the behavior of interactive web content.
 - [func onWebViewImmersiveEnvironmentRequest(shouldAllow: (WebPage.FrameInfo) async -> Bool, present: (WebPage.ImmersiveEnvironment) async throws -> Void, dismiss: (WebPage.ImmersiveEnvironment) async -> Void) -> some View](view/onwebviewimmersiveenvironmentrequest(shouldallow:present:dismiss:).md)
   Manages the lifecycle of immersive environments requested by websites.

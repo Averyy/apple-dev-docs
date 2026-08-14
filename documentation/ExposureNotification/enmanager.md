@@ -93,14 +93,14 @@ After calling [`invalidate()`](enmanager/invalidate().md), your app can’t reus
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 
@@ -110,9 +110,9 @@ After calling [`invalidate()`](enmanager/invalidate().md), your app can’t reus
   Inform people when they may have been exposed to COVID-19.
 - [Setting Up a Key Server](setting-up-a-key-server.md)
   Ensure that your server meets the requirements for supporting Exposure Notifications.
-- [ENDeveloperRegion](../BundleResources/Information-Property-List/ENDeveloperRegion.md)
+- [ENDeveloperRegion](../bundleresources/information-property-list/endeveloperregion.md)
   A string that specifies the region that the app supports.
-- [ENAPIVersion](../BundleResources/Information-Property-List/ENAPIVersion.md)
+- [ENAPIVersion](../bundleresources/information-property-list/enapiversion.md)
   A number that specifies the version of the API to use.
 - [Changing Configuration Values Using the Server‑to‑Server API](changing-configuration-values-using-the-server-to-server-api.md)
   Update Exposure Notifications configuration values from a Public Health Authority’s server.

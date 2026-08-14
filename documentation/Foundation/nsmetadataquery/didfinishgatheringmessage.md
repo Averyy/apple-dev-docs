@@ -36,8 +36,8 @@ This message interoperates with the notification [`NSMetadataQueryDidFinishGathe
 
 ### Conforms To
 - [NotificationCenter.AsyncMessage](notificationcenter/asyncmessage.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

@@ -10,11 +10,11 @@ People can create custom styles for caption appearance in Accessibility settings
 
 In macOS, choose System Settings > Accessibility > Captions to access these options.
 
-![Screenshot of the Accessibility settings in macOS with Captions selected.](https://docs-assets.developer.apple.com/published/cf4c877230b565749de2dc221c1d7e44/media-3709928%402x.png)
+![Screenshot of the Accessibility settings in macOS with Captions selected.](/images/com.apple.mediaaccessibility/media-3709928@2x.png)
 
 When a person creates a custom caption style, the settings affect attributes, such as caption color, font, and language.
 
-![Screenshot of the Captions settings for a custom style in macOS.](https://docs-assets.developer.apple.com/published/ebc6720d9ef8c9e762f4375c3f9a7414/media-3709929%402x.png)
+![Screenshot of the Captions settings for a custom style in macOS.](/images/com.apple.mediaaccessibility/media-3709929@2x.png)
 
 By choosing custom styles for media text, people are requesting improved legibility. The Media Accessibility functions let you to tailor the user experience of your media content. You must be able to influence the caption-rendering process at time of delivery for the following functions to be useful. Retrieving a person’s preferences and dynamically rendering the captions for maximum readability provides the best user experience.
 

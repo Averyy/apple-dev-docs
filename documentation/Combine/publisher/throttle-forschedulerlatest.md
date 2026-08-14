@@ -32,7 +32,7 @@ A publisher that emits either the most-recent or first element received during t
 
 Use [`throttle(for:scheduler:latest:)`](publisher/throttle(for:scheduler:latest:).md) to selectively republish elements from an upstream publisher during an interval you specify. Other elements received from the upstream in the throttling interval aren’t republished.
 
-In the example below, a [`Timer.TimerPublisher`](https://developer.apple.com/documentation/Foundation/Timer/TimerPublisher) produces elements on one-second intervals; the [`throttle(for:scheduler:latest:)`](publisher/throttle(for:scheduler:latest:).md) operator delivers the first event, then republishes only the latest event in the following ten second intervals:
+In the example below, a [`Timer.TimerPublisher`](https://developer.apple.com/documentation/foundation/timer/timerpublisher) produces elements on one-second intervals; the [`throttle(for:scheduler:latest:)`](publisher/throttle(for:scheduler:latest:).md) operator delivers the first event, then republishes only the latest event in the following ten second intervals:
 
 ```swift
 cancellable = Timer.publish(every: 3.0, on: .main, in: .default)

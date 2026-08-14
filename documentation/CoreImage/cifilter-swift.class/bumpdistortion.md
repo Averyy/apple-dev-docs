@@ -30,9 +30,9 @@ This method applies the bump distortion filter to an image. This effect creates 
 The bump distortion filter uses the following properties:
 
 - **`inputImage`**: An image with the type [`CIImage`](ciimage.md).
-- **`radius`**: A `float` representing the amount of pixels the filter uses to create the distortion as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
-- **`center`**: A [`CGPoint`](https://developer.apple.com/documentation/CoreFoundation/CGPoint) representing the center of the effect.
-- **`scale`**: A `float` representing the curvature of the bump effect as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+- **`radius`**: A `float` representing the amount of pixels the filter uses to create the distortion as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
+- **`center`**: A [`CGPoint`](https://developer.apple.com/documentation/corefoundation/cgpoint) representing the center of the effect.
+- **`scale`**: A `float` representing the curvature of the bump effect as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
 
 The following code creates a filter that results in a concave bump distorting the image:
 
@@ -47,7 +47,7 @@ func bump(inputImage: CIImage) -> CIImage {
 }
 ```
 
-![Three images arranged horizontally. On the left, an image with a checkerboard pattern. In the middle, the checkerboard image with a positive scale bump distortion applied, the image appears to bulge out. On the right, the checkerboard image with a negative scale bump distortion applied, the image appears pushed in.](https://docs-assets.developer.apple.com/published/1ae4cbcc8099cb4db3bcfc43eca37de4/media-4407303%402x.png)
+![Three images arranged horizontally. On the left, an image with a checkerboard pattern. In the middle, the checkerboard image with a positive scale bump distortion applied, the image appears to bulge out. On the right, the checkerboard image with a negative scale bump distortion applied, the image appears pushed in.](/images/com.apple.coreimage/media-4407303@2x.png)
 
 ## See Also
 

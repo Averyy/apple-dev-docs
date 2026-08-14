@@ -63,7 +63,7 @@ struct ColorMultiply: View {
 }
 ```
 
-![A screenshot showing two images showing the effect of multiplying the](https://docs-assets.developer.apple.com/published/682cfd4f5a9795001a555e1694a18e43/SwiftUI-View-colorMultiply%402x.png)
+![A screenshot showing two images showing the effect of multiplying the](/images/com.apple.SwiftUI/SwiftUI-View-colorMultiply@2x.png)
 
 ## Parameters
 

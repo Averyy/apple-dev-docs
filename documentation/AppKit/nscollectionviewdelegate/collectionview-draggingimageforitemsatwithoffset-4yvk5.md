@@ -30,7 +30,7 @@ You do not need to implement this method for your collection view to be a drag s
 - `collectionView`: The collection view making the request.
 - `indexes`: The indexes of the items being dragged.
 - `event`: The mouse-down event that initiated the drag.
-- `dragImageOffset`: An in/out parameter that is initially set to [`NSZeroPoint`](https://developer.apple.com/documentation/Foundation/NSZeroPoint), which causes the image to be centered under the mouse. The value can be modified to reposition the returned image.
+- `dragImageOffset`: An in/out parameter that is initially set to [`NSZeroPoint`](https://developer.apple.com/documentation/foundation/nszeropoint), which causes the image to be centered under the mouse. The value can be modified to reposition the returned image.
 
 ## See Also
 

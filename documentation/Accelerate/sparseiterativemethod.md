@@ -36,7 +36,7 @@ struct SparseIterativeMethod
 ## Relationships
 
 ### Conforms To
-- [Sendable](../Swift/Sendable.md)
+- [Sendable](../swift/sendable.md)
 
 
 ---

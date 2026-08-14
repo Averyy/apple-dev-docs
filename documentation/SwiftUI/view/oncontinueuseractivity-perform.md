@@ -27,13 +27,13 @@ A view that handles incoming user activities.
 
 #### Discussion
 
-Use this view modifier to receive [`NSUserActivity`](https://developer.apple.com/documentation/Foundation/NSUserActivity) instances in a particular scene within your app. The scene that SwiftUI routes the incoming user activity to depends on the structure of your app, what scenes are active, and other configuration. For more information, see [`handlesExternalEvents(matching:)`](scene/handlesexternalevents(matching:).md).
+Use this view modifier to receive [`NSUserActivity`](https://developer.apple.com/documentation/foundation/nsuseractivity) instances in a particular scene within your app. The scene that SwiftUI routes the incoming user activity to depends on the structure of your app, what scenes are active, and other configuration. For more information, see [`handlesExternalEvents(matching:)`](scene/handlesexternalevents(matching:).md).
 
 UI frameworks traditionally pass Universal Links to your app using a user activity. However, SwiftUI passes a Universal Link to your app directly as a URL. To receive a Universal Link, use the [`onOpenURL(perform:)`](view/onopenurl(perform:).md) modifier instead.
 
 ## Parameters
 
-- `activityType`: The type of activity that the `action` closure handles. Be sure that this string matches one of the values that you list in the [`NSUserActivityTypes`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSUserActivityTypes) array in your app’s Information Property List.
+- `activityType`: The type of activity that the `action` closure handles. Be sure that this string matches one of the values that you list in the [`NSUserActivityTypes`](https://developer.apple.com/documentation/bundleresources/information-property-list/nsuseractivitytypes) array in your app’s Information Property List.
 - `action`: A closure that SwiftUI calls when your app receives a user activity of the specified type. The closure takes the activity as an input parameter.
 
 ## See Also

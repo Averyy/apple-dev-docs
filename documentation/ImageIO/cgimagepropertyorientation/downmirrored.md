@@ -26,7 +26,7 @@ The (x,y) pixel coordinates of the origin point (0,0) represent the leftmost col
 
 If an image is encoded with this orientation, then displayed by software unaware of orientation metadata, the image appears vertically flipped. (Alternatively, the image is rotated 180° and then flipped horizontally.)
 
-![To correct an image with downMirrored orientation for display, flip it vertically.](https://docs-assets.developer.apple.com/published/8170a1cc20c32b7a29544fc6e92a7f74/media-2948294%402x.png)
+![To correct an image with downMirrored orientation for display, flip it vertically.](/images/com.apple.imageio/media-2948294@2x.png)
 
 ## See Also
 

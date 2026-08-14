@@ -22,7 +22,7 @@ let kSecAttrSecurityDomain: CFString
 
 #### Discussion
 
-The corresponding value is of type [`CFString`](https://developer.apple.com/documentation/CoreFoundation/CFString) and represents the Internet security domain. Items of class [`kSecClassInternetPassword`](ksecclassinternetpassword.md) have this attribute.
+The corresponding value is of type [`CFString`](https://developer.apple.com/documentation/corefoundation/cfstring) and represents the Internet security domain. Items of class [`kSecClassInternetPassword`](ksecclassinternetpassword.md) have this attribute.
 
 
 ---

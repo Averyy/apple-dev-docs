@@ -24,7 +24,7 @@ typealias nw_object_t = any OS_nw_object
 
 Network.framework objects are reference-counted objects that can be used with Automatic Reference Counting (ARC) or directly retained and released.
 
-The objects also conform to the description method of [`NSObject`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class) to be used for debugging.
+The objects also conform to the description method of [`NSObject`](https://developer.apple.com/documentation/objectivec/nsobject-swift.class) to be used for debugging.
 
 
 ---

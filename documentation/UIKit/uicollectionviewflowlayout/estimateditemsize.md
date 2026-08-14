@@ -22,7 +22,7 @@ var estimatedItemSize: CGSize { get set }
 
 Providing an estimated cell size can improve the performance of the collection view when the cells adjust their size dynamically. The estimated value lets the collection view defer some calculations to determine the actual size of its content. Cells that aren’t onscreen are assumed to be the estimated height.
 
-The default value of this property is [`CGSizeZero`](https://developer.apple.com/documentation/CoreGraphics/CGSizeZero). Setting it to any other value, like [`automaticSize`](uicollectionviewflowlayout/automaticsize.md), causes the collection view to query each cell for its actual size using the cell’s [`preferredLayoutAttributesFitting(_:)`](uicollectionreusableview/preferredlayoutattributesfitting(_:).md) method.
+The default value of this property is [`CGSizeZero`](https://developer.apple.com/documentation/coregraphics/cgsizezero). Setting it to any other value, like [`automaticSize`](uicollectionviewflowlayout/automaticsize.md), causes the collection view to query each cell for its actual size using the cell’s [`preferredLayoutAttributesFitting(_:)`](uicollectionreusableview/preferredlayoutattributesfitting(_:).md) method.
 
 If all of your cells are the same size, use the [`itemSize`](uicollectionviewflowlayout/itemsize.md) property, instead of this property, to specify the cell size instead.
 

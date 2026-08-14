@@ -15,7 +15,7 @@ A Boolean value that indicates whether an app may add a device to Automated Devi
 
 #### Discussion
 
-Use [`automatedDeviceEnrollmentAddition(isPresented:)`](https://developer.apple.com/documentation/SwiftUI/View/automatedDeviceEnrollmentAddition(isPresented:)) to present a UI that allows users to add devices to their organization. To obtain permission for this entitlement, see [`Automated Device Enrollment Entitlement Request`](https://developer.apple.comhttps://developer.apple.com/contact/request/automated-device-enrollment/).
+Use [`automatedDeviceEnrollmentAddition(isPresented:)`](https://developer.apple.com/documentation/swiftui/view/automateddeviceenrollmentaddition(ispresented:)) to present a UI that allows users to add devices to their organization. To obtain permission for this entitlement, see [`Automated Device Enrollment Entitlement Request`](https://developer.apple.comhttps://developer.apple.com/contact/request/automated-device-enrollment/).
 
 ## See Also
 

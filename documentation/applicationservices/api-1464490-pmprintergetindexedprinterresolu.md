@@ -26,7 +26,7 @@ You must call this function between the creation and release of a printing sessi
 
 - `printer`: The printer whose resolution you want to obtain.
 - `index`: An index into the range of resolution settings supported by the specified printer. Index values begin at 1.
-- `res`: A pointer to your   data structure. On return, the structure contains the printer resolution setting associated with the index value.
+- `res`: A pointer to your [`PMResolution`](core_printing/pmresolution.md) data structure. On return, the structure contains the printer resolution setting associated with the index value.
 
 ## See Also
 

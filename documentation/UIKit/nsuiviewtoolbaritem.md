@@ -20,7 +20,7 @@ class NSUIViewToolbarItem
 
 #### Overview
 
-The [`NSUIViewToolbarItem`](nsuiviewtoolbaritem.md) class lets you display a [`UIView`](uiview.md) in an [`NSToolbar`](https://developer.apple.com/documentation/AppKit/NSToolbar). Use this class if you have a custom UIKit view you want to appear as a control in a toolbar when you build your app with Mac Catalyst.
+The [`NSUIViewToolbarItem`](nsuiviewtoolbaritem.md) class lets you display a [`UIView`](uiview.md) in an [`NSToolbar`](https://developer.apple.com/documentation/appkit/nstoolbar). Use this class if you have a custom UIKit view you want to appear as a control in a toolbar when you build your app with Mac Catalyst.
 
 For UIKit controls that support behavioral styles, set [`preferredBehavioralStyle`](uibutton/preferredbehavioralstyle.md) to [`UIBehavioralStyle.mac`](uibehavioralstyle/mac.md) if you want them to appear in the toolbar with the appearance and behavior of AppKit controls.
 
@@ -36,31 +36,31 @@ For UIKit controls that support behavioral styles, set [`preferredBehavioralStyl
 ## Relationships
 
 ### Inherits From
-- [NSToolbarItem](../AppKit/NSToolbarItem.md)
+- [NSToolbarItem](../appkit/nstoolbaritem.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCopying](../Foundation/NSCopying.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCopying](../foundation/nscopying.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 - [UIPopoverPresentationControllerSourceItem](uipopoverpresentationcontrollersourceitem.md)
 
 ## See Also
 
-- [class NSToolbarItem](../AppKit/NSToolbarItem.md)
+- [class NSToolbarItem](../appkit/nstoolbaritem.md)
   A single item that appears in a window’s toolbar.
-- [class NSToolbarItemGroup](../AppKit/NSToolbarItemGroup.md)
+- [class NSToolbarItemGroup](../appkit/nstoolbaritemgroup.md)
   A group of subitems in a toolbar item.
-- [NSToolbarItemGroup.ControlRepresentation](../AppKit/NSToolbarItemGroup/ControlRepresentation-swift.enum.md)
-- [NSToolbarItemGroup.SelectionMode](../AppKit/NSToolbarItemGroup/SelectionMode-swift.enum.md)
+- [NSToolbarItemGroup.ControlRepresentation](../appkit/nstoolbaritemgroup/controlrepresentation-swift.enum.md)
+- [NSToolbarItemGroup.SelectionMode](../appkit/nstoolbaritemgroup/selectionmode-swift.enum.md)
   A value that indicates how a grouped toolbar item selects its subitems.
-- [class NSMenuToolbarItem](../AppKit/NSMenuToolbarItem.md)
+- [class NSMenuToolbarItem](../appkit/nsmenutoolbaritem.md)
   A control that presents a menu in a window’s toolbar.
-- [class NSSearchToolbarItem](../AppKit/NSSearchToolbarItem.md)
+- [class NSSearchToolbarItem](../appkit/nssearchtoolbaritem.md)
   A toolbar item that contains a search field optimized for performing text-based searches.
-- [class NSTrackingSeparatorToolbarItem](../AppKit/NSTrackingSeparatorToolbarItem.md)
+- [class NSTrackingSeparatorToolbarItem](../appkit/nstrackingseparatortoolbaritem.md)
   A toolbar separator that aligns with the vertical split view in the same window.
 
 

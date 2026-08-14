@@ -22,7 +22,7 @@ protocol UIActivityItemsConfigurationProviding : NSObjectProtocol
 The user can share content from your app in a number of ways:
 
 - Ask Siri to “share this” on an iOS device.
-- Click an [`NSSharingServicePickerToolbarItem`](https://developer.apple.com/documentation/AppKit/NSSharingServicePickerToolbarItem) in the toolbar of an app built with Mac Catalyst.
+- Click an [`NSSharingServicePickerToolbarItem`](https://developer.apple.com/documentation/appkit/nssharingservicepickertoolbaritem) in the toolbar of an app built with Mac Catalyst.
 - Start a [`UIContextMenuInteraction`](uicontextmenuinteraction.md) by using Force Touch or a long press gesture.
 
 When one of these interactions happens, the system asks your view controller for content to share. Supply multiple representations of the current content, such as a file, image, and URL.
@@ -36,7 +36,7 @@ When one of these interactions happens, the system asks your view controller for
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 ### Conforming Types
 - [UIAccessibilityElement](uiaccessibilityelement.md)
 - [UIActionSheet](uiactionsheet.md)

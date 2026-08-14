@@ -6,7 +6,7 @@ Extend your document-based app to support custom file formats, on-demand file ac
 
 #### Overview
 
-After you’ve created a working document-based app, you can extend it to handle scenarios that go beyond basic reading and writing. Support file formats that the system doesn’t know about by default by using a custom [`UTType`](https://developer.apple.comhttps://developer.apple.com/documentation/uniformtypeidentifiers/uttype). Access files outside the normal read and write lifecycle using [`makeFileCoordinator()`](URLDocumentConfiguration/makeFileCoordinator().md), for example, to open a specific subfile in a package on demand. Add progress reporting to give people feedback during long operations.
+After you’ve created a working document-based app, you can extend it to handle scenarios that go beyond basic reading and writing. Support file formats that the system doesn’t know about by default by using a custom [`UTType`](https://developer.apple.comhttps://developer.apple.com/documentation/uniformtypeidentifiers/uttype). Access files outside the normal read and write lifecycle using [`makeFileCoordinator()`](urldocumentconfiguration/makefilecoordinator().md), for example, to open a specific subfile in a package on demand. Add progress reporting to give people feedback during long operations.
 
 > **Note**: If you’re new to document-based apps in SwiftUI, start with [`Creating a document-based app`](creating-a-document-based-app.md).
 
@@ -47,14 +47,14 @@ extension UTType {
 }
 ```
 
-Then reference your type from the document’s [`readableContentTypes`](ReadableDocument/readableContentTypes.md) and [`writableContentTypes`](WritableDocument/writableContentTypes.md), like this:
+Then reference your type from the document’s [`readableContentTypes`](readabledocument/readablecontenttypes.md) and [`writableContentTypes`](writabledocument/writablecontenttypes.md), like this:
 
 ```swift
 static let readableContentTypes: [UTType] = [.notebook]
 static let writableContentTypes: [UTType] = [.notebook, .utf8PlainText]
 ```
 
-For more about declaring uniform type identifiers for proprietary formats, see [`Defining file and data types for your app`](https://developer.apple.com/documentation/UniformTypeIdentifiers/defining-file-and-data-types-for-your-app).
+For more about declaring uniform type identifiers for proprietary formats, see [`Defining file and data types for your app`](https://developer.apple.com/documentation/uniformtypeidentifiers/defining-file-and-data-types-for-your-app).
 
 > **Note**: Every Mac registers the standard content types that the system provides, but the set of less common types each computer recognizes depends on the software installed on it. A computer might not recognize certain media types, for example, if no installed app declares them. Similarly, a computer that doesn’t have Xcode installed doesn’t recognize `com.apple.xcode.resultbundle`, the type identifier for Xcode result bundles.
 
@@ -77,13 +77,13 @@ coordinator.coordinate(
 }
 ```
 
-> ❗ **Important**: Always use [`makeFileCoordinator()`](URLDocumentConfiguration/makeFileCoordinator().md) for disk access outside of `read` and `write`. Accessing the file URL directly risks corruption because other processes, including iCloud, can change it any time.
+> ❗ **Important**: Always use [`makeFileCoordinator()`](urldocumentconfiguration/makefilecoordinator().md) for disk access outside of `read` and `write`. Accessing the file URL directly risks corruption because other processes, including iCloud, can change it any time.
 
 #### Report Progress
 
 Packages let you read and write incrementally; instead of loading or saving the whole document on every change, you can read only the files you need and write only the ones that changed. For notebook documents that consist of multiple files, custom image formats that store data in separate files, or projects with embedded media, this can mean the difference between a fast autosave and a slow one.
 
-Both [`DocumentReader`](DocumentReader.md) and [`DocumentWriter`](DocumentWriter.md) receive a [`Subprogress`](https://developer.apple.comhttps://developer.apple.com/documentation/foundation/subprogress) parameter via their `read` and `write` methods, respectively. Report progress through the parameter so SwiftUI can display the appropriate UI during long operations.
+Both [`DocumentReader`](documentreader.md) and [`DocumentWriter`](documentwriter.md) receive a [`Subprogress`](https://developer.apple.comhttps://developer.apple.com/documentation/foundation/subprogress) parameter via their `read` and `write` methods, respectively. Report progress through the parameter so SwiftUI can display the appropriate UI during long operations.
 
 Create a [`ProgressReporter`](https://developer.apple.comhttps://developer.apple.com/documentation/foundation/progressreporter) from the [`Subprogress`](https://developer.apple.comhttps://developer.apple.com/documentation/foundation/subprogress) by specifying a total unit count. Then call [`complete(count:)`](https://developer.apple.comhttps://developer.apple.com/documentation/foundation/progressreporter/complete(count:)) as the work finishes, like this:
 

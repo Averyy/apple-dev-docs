@@ -54,7 +54,7 @@ class MyEntity: Entity {
 
 Use transient components to represent runtime state for an entity. For example, an entity representing a fish in a virtual aquarium might store attributes such as hunger in a transient component.
 
-In networked AR experiences, RealityKit sends transient components to peers when it sends the entity, if the component also conforms to [`Codable`](https://developer.apple.com/documentation/Swift/Codable). If transient components don’t conform, ReaityKit still sends the entity to network peers, but it excludes the transient component.
+In networked AR experiences, RealityKit sends transient components to peers when it sends the entity, if the component also conforms to [`Codable`](https://developer.apple.com/documentation/swift/codable). If transient components don’t conform, ReaityKit still sends the entity to network peers, but it excludes the transient component.
 
 ## Relationships
 

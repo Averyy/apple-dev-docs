@@ -40,7 +40,7 @@ Use a [`bnns_graph_shape_t`](bnns_graph_shape_t.md) structure to pass the rank a
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../Swift/BitwiseCopyable.md)
+- [BitwiseCopyable](../swift/bitwisecopyable.md)
 
 ## See Also
 

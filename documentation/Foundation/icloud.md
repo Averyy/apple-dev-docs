@@ -24,15 +24,15 @@ Manage files and key-value data that automatically synchronize among a user’s 
 - [class NSMetadataItem](nsmetadataitem.md)
   The metadata associated with a file.
 ### Entitlements
-- [com.apple.developer.icloud-container-development-container-identifiers](../BundleResources/Entitlements/com.apple.developer.icloud-container-development-container-identifiers.md)
+- [com.apple.developer.icloud-container-development-container-identifiers](../bundleresources/entitlements/com.apple.developer.icloud-container-development-container-identifiers.md)
   The container identifiers for the iCloud development environment.
-- [com.apple.developer.icloud-container-environment](../BundleResources/Entitlements/com.apple.developer.icloud-container-environment.md)
+- [com.apple.developer.icloud-container-environment](../bundleresources/entitlements/com.apple.developer.icloud-container-environment.md)
   The development or production environment to use for the iCloud containers.
-- [iCloud Container Identifiers Entitlement](../BundleResources/Entitlements/com.apple.developer.icloud-container-identifiers.md)
+- [iCloud Container Identifiers Entitlement](../bundleresources/entitlements/com.apple.developer.icloud-container-identifiers.md)
   The container identifiers for the iCloud production environment.
-- [iCloud Services Entitlement](../BundleResources/Entitlements/com.apple.developer.icloud-services.md)
+- [iCloud Services Entitlement](../bundleresources/entitlements/com.apple.developer.icloud-services.md)
   The iCloud services used by the app.
-- [iCloud Key-Value Store Entitlement](../BundleResources/Entitlements/com.apple.developer.ubiquity-kvstore-identifier.md)
+- [iCloud Key-Value Store Entitlement](../bundleresources/entitlements/com.apple.developer.ubiquity-kvstore-identifier.md)
   The container identifier to use for iCloud key-value storage.
 ### Errors
 - [iCloud Error Codes](icloud-error-codes.md)

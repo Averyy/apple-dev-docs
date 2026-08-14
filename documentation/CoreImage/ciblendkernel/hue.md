@@ -21,7 +21,7 @@ class var hue: CIBlendKernel { get }
 
 #### Discussion
 
-![The result of using the hue blend kernel (background image is top left, foreground image is bottom left)](https://docs-assets.developer.apple.com/published/d4106c34dd37613166b3a29b6530cd92/media-2926871%402x.png)
+![The result of using the hue blend kernel (background image is top left, foreground image is bottom left)](/images/com.apple.coreimage/media-2926871@2x.png)
 
 ## See Also
 

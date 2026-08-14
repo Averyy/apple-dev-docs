@@ -26,7 +26,7 @@ The `notificationInfo` dictionary is serialized as a property list, so it can be
 - `name`: Name of the notification to post. Must not be `nil`.
 - `object`: Sender of the notification. May be `nil`.
 - `userInfo`: Dictionary containing additional information. May be `nil`. > ❗ **Important**:  Sandboxed apps can send notifications only if they do not contain a dictionary. If the sending application is in an App Sandbox, `userInfo` *must* be `nil`.
-- `deliverImmediately`: Specifies when to deliver the notification. When [`false`](https://developer.apple.com/documentation/Swift/false), the receiver delivers notifications to their observers according to the suspended-notification behavior specified in the corresponding dispatch table entry. When [`true`](https://developer.apple.com/documentation/Swift/true), the receiver delivers the notification immediately to its observers.
+- `deliverImmediately`: Specifies when to deliver the notification. When [`false`](https://developer.apple.com/documentation/swift/false), the receiver delivers notifications to their observers according to the suspended-notification behavior specified in the corresponding dispatch table entry. When [`true`](https://developer.apple.com/documentation/swift/true), the receiver delivers the notification immediately to its observers.
 
 ## See Also
 

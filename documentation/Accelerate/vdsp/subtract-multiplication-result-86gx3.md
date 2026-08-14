@@ -29,7 +29,7 @@ This function calculates the element-wise product of vector `A` and scalar value
     D[n] = A[n] * B - C[n];
 ```
 
-![A diagram showing the operation of this function. There are four rows. The top row represents the input vector A with three boxes, and the scalar value B with one box. The second row represents the operation that multiplies A and B, with three boxes, as well as the input vector C with three boxes. The third row represents the subtraction operation as three boxes. The bottom row represents the output vector D as three boxes. The diagram has connecting lines from the input vectors to the operations, and from the operations to the output vector.  ](https://docs-assets.developer.apple.com/published/4e34a5f56d6ecfd4fd5bb8762ac89baa/media-4387395%402x.png)
+![A diagram showing the operation of this function. There are four rows. The top row represents the input vector A with three boxes, and the scalar value B with one box. The second row represents the operation that multiplies A and B, with three boxes, as well as the input vector C with three boxes. The third row represents the subtraction operation as three boxes. The bottom row represents the output vector D as three boxes. The diagram has connecting lines from the input vectors to the operations, and from the operations to the output vector.  ](/images/com.apple.accelerate/media-4387395@2x.png)
 
 The following code shows an example of using this function:
 

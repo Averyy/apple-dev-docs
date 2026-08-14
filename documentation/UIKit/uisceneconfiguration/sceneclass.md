@@ -22,7 +22,7 @@ var sceneClass: AnyClass? { get set }
 
 The class you specify must be [`UIScene`](uiscene.md) or one of its subclasses. Typically, you specify the [`UIWindowScene`](uiwindowscene.md) class for all windows associated with your app.
 
-UIKit sets this property’s initial value using the [`UISceneClassName`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/UIApplicationSceneManifest/UISceneConfigurations/UIWindowSceneSessionRoleApplication/UISceneClassName) key from the appropriate scene in your app’s `Info.plist` file.
+UIKit sets this property’s initial value using the [`UISceneClassName`](https://developer.apple.com/documentation/bundleresources/information-property-list/uiapplicationscenemanifest/uisceneconfigurations/uiwindowscenesessionroleapplication/uisceneclassname) key from the appropriate scene in your app’s `Info.plist` file.
 
 ## See Also
 

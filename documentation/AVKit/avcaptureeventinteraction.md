@@ -21,7 +21,7 @@ class AVCaptureEventInteraction
 
 The system Camera app allows people to perform capture functions by pressing hardware buttons on their iOS device. UIKit apps can add similar functionality by using this type to register handlers that respond to interactions from device hardware.
 
-> **Note**:  In SwiftUI, respond to capture events from hardware buttons using [`onCameraCaptureEvent(isEnabled:action:)`](https://developer.apple.com/documentation/SwiftUI/View/onCameraCaptureEvent(isEnabled:action:)) and [`onCameraCaptureEvent(isEnabled:primaryAction:secondaryAction:)`](https://developer.apple.com/documentation/SwiftUI/View/onCameraCaptureEvent(isEnabled:primaryAction:secondaryAction:)) instead.
+> **Note**:  In SwiftUI, respond to capture events from hardware buttons using [`onCameraCaptureEvent(isEnabled:action:)`](https://developer.apple.com/documentation/swiftui/view/oncameracaptureevent(isenabled:action:)) and [`onCameraCaptureEvent(isEnabled:primaryAction:secondaryAction:)`](https://developer.apple.com/documentation/swiftui/view/oncameracaptureevent(isenabled:primaryaction:secondaryaction:)) instead.
 
 The following example shows how to add a handler that captures a photo when a user presses a hardware button on their device.
 
@@ -78,16 +78,16 @@ The event handler queries the capture event to determine its phase, and when the
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [Sendable](../Swift/Sendable.md)
-- [UIInteraction](../UIKit/UIInteraction.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [Sendable](../swift/sendable.md)
+- [UIInteraction](../uikit/uiinteraction.md)
 
 ## See Also
 

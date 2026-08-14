@@ -49,7 +49,7 @@ watchOS supports two broad categories of gesture recognizers: continuous gesture
 
 ###### Continuous Gesture Recognizers
 
-![None](https://docs-assets.developer.apple.com/published/eadbf2c2039e5658266f0bc849dbbbdc/media-2557562%402x.png)
+![None](/images/com.apple.watchkit/media-2557562@2x.png)
 
 Continuous gesture recognizers—for example, pan or long touch recognizers—track the user’s gesture and call the action method multiple times during a single gesture. They typically call the action method once when the gesture begins, one or more times as the gesture progresses, and once when the gesture either ends or is canceled. In your action method, use the gesture recognizer’s [`state`](wkgesturerecognizer/state.md) property to perform appropriate tasks based on the current state. For example:
 
@@ -60,7 +60,7 @@ Continuous gesture recognizers—for example, pan or long touch recognizers—tr
 
 ###### Discrete Gesture Recognizers
 
-![None](https://docs-assets.developer.apple.com/published/cb3692b76f000fb3b3a265280f7fdb70/media-2557566%402x.png)
+![None](/images/com.apple.watchkit/media-2557566@2x.png)
 
 Discrete gesture recognizers—for example, tap or swipe recognizers—only trigger a single event as soon as the gesture is recognized. For example, discrete recognizers call their action method when they enter the [`WKGestureRecognizerState.recognized`](wkgesturerecognizerstate/recognized.md) state. If they enter the [`WKGestureRecognizerState.failed`](wkgesturerecognizerstate/failed.md) state, they fail silently.
 
@@ -93,19 +93,19 @@ Xcode lets you configure information about your gesture recognizer in your story
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Inherited By
 - [WKLongPressGestureRecognizer](wklongpressgesturerecognizer.md)
 - [WKPanGestureRecognizer](wkpangesturerecognizer.md)
 - [WKSwipeGestureRecognizer](wkswipegesturerecognizer.md)
 - [WKTapGestureRecognizer](wktapgesturerecognizer.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

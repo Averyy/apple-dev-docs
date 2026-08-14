@@ -12,7 +12,7 @@ You use a [`URLSession`](urlsession.md) instance to create one or more [`URLSess
 
 You can use one session repeatedly to create tasks. For example, a web browser might have separate sessions for regular and private browsing use, where the private session doesn’t cache its data. [`Figure 1`](url_loading_system#2927983.md) shows how two sessions with these configurations can then create multiple tasks.
 
-![Figure showing two scenarios, default browsing and private browsing, each with a URL Session creating multiple URL Session Tasks. In the default browsing case, the URL Session contains a default configuration. In the private browsing case, it contains an ephemeral configuration.](https://docs-assets.developer.apple.com/published/cbc45a3ebfd73610ee2e1296aa49f88e/media-2927983%402x.png)
+![Figure showing two scenarios, default browsing and private browsing, each with a URL Session creating multiple URL Session Tasks. In the default browsing case, the URL Session contains a default configuration. In the private browsing case, it contains an ephemeral configuration.](/images/com.apple.foundation/media-2927983@2x.png)
 
 Each session is associated with a delegate to receive periodic updates (or errors). The default delegate calls a completion handler block that you provide; if you choose to provide your own custom delegate, this block is not called.
 
@@ -75,9 +75,9 @@ You can configure a session to run in the background, so that while the app is s
 - [class URLProtectionSpace](urlprotectionspace.md)
   A server or an area on a server, commonly referred to as a realm, that requires authentication.
 ### Network activity attribution
-- [Inspecting app activity data](../Network/inspecting-app-activity-data.md)
+- [Inspecting app activity data](../network/inspecting-app-activity-data.md)
   Verify that your app accesses only the user data and network resources that you expect it to access.
-- [Indicating the source of network activity](../Network/indicating-the-source-of-network-activity.md)
+- [Indicating the source of network activity](../network/indicating-the-source-of-network-activity.md)
   Control whether the App Privacy Report attributes network traffic to the app or to the user.
 ### Cookies
 - [class HTTPCookie](httpcookie.md)

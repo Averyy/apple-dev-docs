@@ -40,12 +40,12 @@ enum ControlSize
 ## Relationships
 
 ### Conforms To
-- [CaseIterable](../Swift/CaseIterable.md)
-- [Comparable](../Swift/Comparable.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [CaseIterable](../swift/caseiterable.md)
+- [Comparable](../swift/comparable.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

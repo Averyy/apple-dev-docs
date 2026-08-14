@@ -22,7 +22,7 @@ class CFMutableString
 
 CFMutableString manages dynamic strings. The basic interface for managing strings is provided by [`CFString`](cfstring.md). CFMutableString adds functions to modify the contents of a string.
 
-CFMutableString is “toll-free bridged” with its Cocoa Foundation counterpart, [`NSMutableString`](https://developer.apple.com/documentation/Foundation/NSMutableString). This means that the Core Foundation type is interchangeable in function or method calls with the bridged Foundation object. Therefore, in a method where you see an `NSMutableString *` parameter, you can pass in a `CFMutableStringRef`, and in a function where you see a `CFMutableStringRef` parameter, you can pass in an NSMutableString instance. This also applies to concrete subclasses of NSMutableString. See [`Toll-Free Bridged Types`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFDesignConcepts/Articles/tollFreeBridgedTypes.html#//apple_ref/doc/uid/TP40010677) for more information on toll-free bridging.
+CFMutableString is “toll-free bridged” with its Cocoa Foundation counterpart, [`NSMutableString`](https://developer.apple.com/documentation/foundation/nsmutablestring). This means that the Core Foundation type is interchangeable in function or method calls with the bridged Foundation object. Therefore, in a method where you see an `NSMutableString *` parameter, you can pass in a `CFMutableStringRef`, and in a function where you see a `CFMutableStringRef` parameter, you can pass in an NSMutableString instance. This also applies to concrete subclasses of NSMutableString. See [`Toll-Free Bridged Types`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFDesignConcepts/Articles/tollFreeBridgedTypes.html#//apple_ref/doc/uid/TP40010677) for more information on toll-free bridging.
 
 ## Topics
 
@@ -84,8 +84,8 @@ CFMutableString is “toll-free bridged” with its Cocoa Foundation counterpart
 ### Inherits From
 - [CFString](cfstring.md)
 ### Conforms To
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
 
 ## See Also
 

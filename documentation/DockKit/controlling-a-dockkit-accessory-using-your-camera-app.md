@@ -14,14 +14,14 @@ Follow subjects in real time using an iPhone that you mount on a DockKit accesso
 
 This sample code project shows you how to use your camera app with a DockKit accessory to frame and track subjects in real time. It demonstrates how DockKit system tracking works for your camera app, and how you can override system tracking to frame and track specific subjects using custom machine learning signals. It also shows you how to integrate physical buttons on your DockKit device with camera controls.
 
-The sample uses SwiftUI and the features of Swift concurrency to build a responsive camera app with DockKit control. See [`AVCam: Building a camera app`](https://developer.apple.com/documentation/AVFoundation/avcam-building-a-camera-app) for more details about the camera implementation design. This sample code project uses the sample app from that project as a starting point to write a basic camera app.  The following diagram depicts the app’s design:
+The sample uses SwiftUI and the features of Swift concurrency to build a responsive camera app with DockKit control. See [`AVCam: Building a camera app`](https://developer.apple.com/documentation/avfoundation/avcam-building-a-camera-app) for more details about the camera implementation design. This sample code project uses the sample app from that project as a starting point to write a basic camera app.  The following diagram depicts the app’s design:
 
-![A diagram of two stacked flows depicting the relationships between app objects. The top flow consists of a horizontal rectangle labeled App Content View with arrows pointing to two stacked horizontal rectangles on the right labeled Camera and Dock Controller. The bottom flow has a horizontal rectangle labeled DockKit Camera App with arrows pointing to two horizontal rectangles on the right labeled Dock Controller Model and Camera Model. An arrow from the Dock Controller Model rectangle points right to a horizontal rectangle labeled Dock Control Service, and an arrow from that rectangle points upward to a horizontal rectangle labeled DockAccessory. An arrow from the Camera Model rectangle points right to a horizontal rectangle labeled Capture Service, and an arrow from that rectangle points downward to a horizontal rectangle labeled Movie Capture.  ](https://docs-assets.developer.apple.com/published/7f53701ae5a1f86d205d2a5b952c5b99/app-assembly-overview%402x.png)
+![A diagram of two stacked flows depicting the relationships between app objects. The top flow consists of a horizontal rectangle labeled App Content View with arrows pointing to two stacked horizontal rectangles on the right labeled Camera and Dock Controller. The bottom flow has a horizontal rectangle labeled DockKit Camera App with arrows pointing to two horizontal rectangles on the right labeled Dock Controller Model and Camera Model. An arrow from the Dock Controller Model rectangle points right to a horizontal rectangle labeled Dock Control Service, and an arrow from that rectangle points upward to a horizontal rectangle labeled DockAccessory. An arrow from the Camera Model rectangle points right to a horizontal rectangle labeled Capture Service, and an arrow from that rectangle points downward to a horizontal rectangle labeled Movie Capture.  ](/images/com.apple.DockKit/app-assembly-overview@2x.png)
 
 The sample app defines two key services:
 
 - `CaptureService` is an actor that manages the interactions with the AVFoundation capture APIs. This object configures the capture pipeline and manages its life cycle, and it defines an asynchronous interface to capture videos. It also delegates handling of those operatons to the app’s `MovieCapture` object.
-- `DockControlService` is an actor that manages interactions with a [`DockAccessory`](DockAccessory.md) using DockKit APIs. This object listens to `DockAccessory` connection/disconnection events, manages subscriptions to the connected `DockAccessory`, and controls its movements using an asynchronous interface. It also delegates camera control in response to `DockAccessory` events to the `CameraModel` object.
+- `DockControlService` is an actor that manages interactions with a [`DockAccessory`](dockaccessory.md) using DockKit APIs. This object listens to `DockAccessory` connection/disconnection events, manages subscriptions to the connected `DockAccessory`, and controls its movements using an asynchronous interface. It also delegates camera control in response to `DockAccessory` events to the `CameraModel` object.
 
 > **Note**: Configuring and starting a capture session are blocking operations that can take time to complete. To keep the user interface responsive, the app defines `CaptureService` as an actor type to ensure that AVFoundation capture API calls don’t occur on the main thread.
 
@@ -31,11 +31,11 @@ Because Simulator doesn’t have access to device cameras and can’t connect to
 
 ##### Write a Basic Camera App to Take Photos
 
-See [`AVCam: Building a camera app`](https://developer.apple.com/documentation/AVFoundation/avcam-building-a-camera-app) to learn how to write a basic camera app to capture videos using an iPhone’s front and rear cameras.
+See [`AVCam: Building a camera app`](https://developer.apple.com/documentation/avfoundation/avcam-building-a-camera-app) to learn how to write a basic camera app to capture videos using an iPhone’s front and rear cameras.
 
 ##### Configure the Dockkit Accessory Manager
 
-[`AVCaptureSession`](https://developer.apple.com/documentation/AVFoundation/AVCaptureSession) is a singleton class that provides connection and disconnection notifications with a DockKit accessory by subscribing to the [`accessoryStateChanges`](DockAccessoryManager/accessoryStateChanges.md) API.
+[`AVCaptureSession`](https://developer.apple.com/documentation/avfoundation/avcapturesession) is a singleton class that provides connection and disconnection notifications with a DockKit accessory by subscribing to the [`accessoryStateChanges`](dockaccessorymanager/accessorystatechanges.md) API.
 
 The dock control service subscribes to `accessoryStateChanges` in its `setUp(features: DockAccessoryFeatures)` method.
 
@@ -64,7 +64,7 @@ func setupAccessorySubscriptions(for accesory: DockAccessory) async {
 
 ##### Change the Tracking Mode
 
-The app provides a tracking mode menu to switch between system tracking, custom tracking, and manual tracking. The default is system tracking, which the app sets by calling [`setSystemTrackingEnabled(_:)`](DockAccessoryManager/setSystemTrackingEnabled(_:).md) to `true`.
+The app provides a tracking mode menu to switch between system tracking, custom tracking, and manual tracking. The default is system tracking, which the app sets by calling [`setSystemTrackingEnabled(_:)`](dockaccessorymanager/setsystemtrackingenabled(_:).md) to `true`.
 
 ```swift
 func updateTrackingMode(to trackingMode: TrackingMode) async {
@@ -94,7 +94,7 @@ func selectSubject(at point: CGPoint?) async -> Bool {
 
 ##### Set the Region of Interest
 
-The app provides a region-of-interest toggle to enable or disable setting a region of interest to frame the selected subjects by holding and dragging the camera view. When toggling the region of interest, the `setRegionOfInterest(to region: CGRect)` method allows setting a region [`CGRect`](https://developer.apple.com/documentation/CoreFoundation/CGRect) in the camera view. The dock accessory keeps the subjects framed in the selected region.
+The app provides a region-of-interest toggle to enable or disable setting a region of interest to frame the selected subjects by holding and dragging the camera view. When toggling the region of interest, the `setRegionOfInterest(to region: CGRect)` method allows setting a region [`CGRect`](https://developer.apple.com/documentation/corefoundation/cgrect) in the camera view. The dock accessory keeps the subjects framed in the selected region.
 
 ```swift
 func setRegionOfInterest(to region: CGRect) async {
@@ -104,7 +104,7 @@ func setRegionOfInterest(to region: CGRect) async {
 
 ##### Set the Framing Mode
 
-The app provides a framing mode menu to select a [`DockAccessory.FramingMode`](DockAccessory/FramingMode-swift.enum.md).
+The app provides a framing mode menu to select a [`DockAccessory.FramingMode`](dockaccessory/framingmode-swift.enum.md).
 
 ```swift
 func updateFraming(to framing: FramingMode) async -> Bool {
@@ -131,7 +131,7 @@ func dockKitFramingMode(from framingMode: FramingMode) -> DockAccessory.FramingM
 
 ##### Implement Manual Control Using Actuator Velocities
 
-When someone sets the `TrackingMode` to `TrackingMode.manual`, the app provides chevrons to move `DockAccessory` up, left, right, and down by using the [`setAngularVelocity(_:)`](DockAccessory/setAngularVelocity(_:).md) API.
+When someone sets the `TrackingMode` to `TrackingMode.manual`, the app provides chevrons to move `DockAccessory` up, left, right, and down by using the [`setAngularVelocity(_:)`](dockaccessory/setangularvelocity(_:).md) API.
 
 ```swift
 func handleChevronTapped(chevronType: ChevronType, speed: Double = 0.2) async {
@@ -172,7 +172,7 @@ while(!progress.isCancelled && !progress.isFinished) {
 try await DockAccessoryManager.shared.setSystemTrackingEnabled(trackingMode == .system ? true : false)
 ```
 
-The app uses the helper function `dockKitAnimation(from animation: Animation)` to map a local animation enumeration to [`DockAccessory.Animation`](DockAccessory/Animation.md).
+The app uses the helper function `dockKitAnimation(from animation: Animation)` to map a local animation enumeration to [`DockAccessory.Animation`](dockaccessory/animation.md).
 
 ```swift
 func dockKitAnimation(from animation: Animation) -> DockAccessory.Animation {
@@ -193,7 +193,7 @@ The DockKit menu provides toggles to subscribe to various states, like battery a
 
 ##### Implement the Battery State
 
-The dock control service subscribes to [`batteryStates`](DockAccessory/batteryStates-swift.property.md) to acquire the current battery state of the accessory. The current battery state includes the battery level, charging indicator, and so forth.
+The dock control service subscribes to [`batteryStates`](dockaccessory/batterystates-swift.property.md) to acquire the current battery state of the accessory. The current battery state includes the battery level, charging indicator, and so forth.
 
 ```swift
 for await batterySummaryState in try dockkitAccessory.batteryStates {
@@ -203,7 +203,7 @@ for await batterySummaryState in try dockkitAccessory.batteryStates {
 
 ##### Implement the Tracking States
 
-The dock control service subscribes to [`DockAccessory.TrackingStates`](DockAccessory/TrackingStates-swift.struct.md) to get a list of tracked subjects with attributes like saliency and speaking confidence. The dock control service delegates the handling of the conversion from a normalized subject rectangle to camera view space coordinates to the `CameraModel`, which uses the capture service for the operation. The app uses these states, along with the transformed subject rectangle, to show an overlay on the faces of the subjects.
+The dock control service subscribes to `trackingStates` to get a list of tracked subjects with attributes like saliency and speaking confidence. The dock control service delegates the handling of the conversion from a normalized subject rectangle to camera view space coordinates to the `CameraModel`, which uses the capture service for the operation. The app uses these states, along with the transformed subject rectangle, to show an overlay on the faces of the subjects.
 
 ```swift
 for await trackingSummaryState in try dockkitAccessory.trackingStates {
@@ -225,7 +225,7 @@ for await trackingSummaryState in try dockkitAccessory.trackingStates {
 
 ##### Implement Camera Control Using Accessory Events
 
-The dock control service subscribes to an `async` stream of [`DockAccessory.AccessoryEvents`](DockAccessory/AccessoryEvents-swift.struct.md). A physical input on the [`DockAccessory`](DockAccessory.md) triggers an accessory event. When the app receives an accessory event, it delegates handling of the event to the `CameraModel`, which uses the capture service to perform camera operations.
+The dock control service subscribes to an `async` stream of [`DockAccessory.AccessoryEvents`](dockaccessory/accessoryevents-swift.struct.md). A physical input on the [`DockAccessory`](dockaccessory.md) triggers an accessory event. When the app receives an accessory event, it delegates handling of the event to the `CameraModel`, which uses the capture service to perform camera operations.
 
 ```swift
 for await event in try accesory.accessoryEvents {

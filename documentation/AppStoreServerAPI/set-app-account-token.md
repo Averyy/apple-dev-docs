@@ -17,7 +17,7 @@ Sets the app account token value for a purchase the customer makes outside of yo
 
 An [`appAccountToken`](appaccounttoken.md) is a UUID you create to associate a transaction with a customer account in your system. Use the [`Set App Account Token`](set-app-account-token.md) endpoint to set or reset the `appAccountToken` associated with the transaction you specify in the `originalTransactionId` parameter.
 
-Typically, your app sets the [`appAccountToken(_:)`](https://developer.apple.com/documentation/StoreKit/Product/PurchaseOption/appAccountToken(_:)) when a customer makes a purchase in your app. However, customers can also purchase in-app products outside of your app, for example, by redeeming an offer code in the App Store. In that case, the original transaction doesn’t include an app account token. Use the `Set App Account Token` endpoint to associate an app account token with such transactions.
+Typically, your app sets the [`appAccountToken(_:)`](https://developer.apple.com/documentation/storekit/product/purchaseoption/appaccounttoken(_:)) when a customer makes a purchase in your app. However, customers can also purchase in-app products outside of your app, for example, by redeeming an offer code in the App Store. In that case, the original transaction doesn’t include an app account token. Use the `Set App Account Token` endpoint to associate an app account token with such transactions.
 
 This endpoint supports setting the `appAccountToken` for all product types, including one-time purchases (consumables, non-consumables, and non-renewing subscriptions) and auto-renewable subscriptions. If you call this endpoint for a transaction that already has an `appAccountToken`, the endpoint replaces the existing value with the new value you supply.
 

@@ -20,7 +20,7 @@ var cumulativeSuspendedWithLockedFileExitCount: Int { get }
 
 #### Discussion
 
-A common cause for this kind of exit is writing to an SQLite database as the system is suspending the app. For information on what to do with open files and databases when transitioning to the background, see [`Preparing your UI to run in the background`](https://developer.apple.com/documentation/UIKit/preparing-your-ui-to-run-in-the-background).
+A common cause for this kind of exit is writing to an SQLite database as the system is suspending the app. For information on what to do with open files and databases when transitioning to the background, see [`Preparing your UI to run in the background`](https://developer.apple.com/documentation/uikit/preparing-your-ui-to-run-in-the-background).
 
 ## See Also
 

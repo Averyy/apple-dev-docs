@@ -16,7 +16,7 @@ struct TrackingConfiguration
 
 #### Overview
 
-Your app needs to include the [`Object-tracking parameter adjustment`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.arkit.object-tracking-parameter-adjustment.allow) entitlement to modify the tracking configuration; otherwise, it has no effect.
+Your app needs to include the [`Object-tracking parameter adjustment`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.arkit.object-tracking-parameter-adjustment.allow) entitlement to modify the tracking configuration; otherwise, it has no effect.
 
 ## Topics
 
@@ -41,7 +41,7 @@ Your app needs to include the [`Object-tracking parameter adjustment`](https://d
 ## Relationships
 
 ### Conforms To
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
 
 ## See Also
 

@@ -15,7 +15,7 @@ let kCGWindowLayer: CFString
 
 #### Discussion
 
-The value for this key is a [`CFNumber`](https://developer.apple.com/documentation/CoreFoundation/CFNumber) type (encoded as [`CFNumberType.intType`](https://developer.apple.com/documentation/CoreFoundation/CFNumberType/intType)) that contains the window layer number.
+The value for this key is a [`CFNumber`](https://developer.apple.com/documentation/corefoundation/cfnumber) type (encoded as [`CFNumberType.intType`](https://developer.apple.com/documentation/corefoundation/cfnumbertype/inttype)) that contains the window layer number.
 
 ## See Also
 

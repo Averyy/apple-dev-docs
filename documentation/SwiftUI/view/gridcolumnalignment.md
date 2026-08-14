@@ -53,7 +53,7 @@ Grid(alignment: .leadingFirstTextBaseline) {
 
 This creates the layout of a typical macOS configuration view, with the trailing edge of the first column flush with the leading edge of the second column:
 
-![A screenshot of a configuration view, arranged in a grid. The grid](https://docs-assets.developer.apple.com/published/4f5b4b93d67b82887d0e3b515f084470/View-gridColumnAlignment-1-macOS%402x.png)
+![A screenshot of a configuration view, arranged in a grid. The grid](/images/com.apple.SwiftUI/View-gridColumnAlignment-1-macOS@2x.png)
 
 Add the modifier to only one cell in a column. The grid automatically aligns all cells in that column the same way. You get undefined behavior if you apply different alignments to different cells in the same column.
 

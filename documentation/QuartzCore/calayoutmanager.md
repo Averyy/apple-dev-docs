@@ -28,7 +28,7 @@ protocol CALayoutManager : NSObjectProtocol
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 ### Conforming Types
 - [CAConstraintLayoutManager](caconstraintlayoutmanager.md)
 

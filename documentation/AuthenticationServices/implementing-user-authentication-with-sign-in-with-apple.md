@@ -28,7 +28,7 @@ To configure the sample code project, perform the following steps in Xcode:
 
 ##### Add a Sign in with Apple Button
 
-In the sample app, `LoginViewController` displays a login form and a Sign in with Apple button ([`ASAuthorizationAppleIDButton`](ASAuthorizationAppleIDButton.md)) in its view hierarchy. The view controller also adds itself as the button’s target, and passes an action to be invoked when the button receives a touch-up event.
+In the sample app, `LoginViewController` displays a login form and a Sign in with Apple button ([`ASAuthorizationAppleIDButton`](asauthorizationappleidbutton.md)) in its view hierarchy. The view controller also adds itself as the button’s target, and passes an action to be invoked when the button receives a touch-up event.
 
 ```swift
 func setupProviderLoginView() {
@@ -62,7 +62,7 @@ func handleAuthorizationAppleIDButtonPress() {
 
 > ❗ **Important**: The user must enable Two-Factor Authentication to use Sign in with Apple so that access to the account is secure.
 
-The authorization controller calls the [`presentationAnchor(for:)`](ASAuthorizationControllerPresentationContextProviding/presentationAnchor(for:).md) function to get the window from the app where it presents the Sign in with Apple content to the user in a modal sheet.
+The authorization controller calls the [`presentationAnchor(for:)`](asauthorizationcontrollerpresentationcontextproviding/presentationanchor(for:).md) function to get the window from the app where it presents the Sign in with Apple content to the user in a modal sheet.
 
 ```swift
 func presentationAnchor(for controller: ASAuthorizationController) -> ASPresentationAnchor {
@@ -74,7 +74,7 @@ If the user is signed in at the system-level with their Apple ID, the sheet appe
 
 ##### Handle User Credentials
 
-If the authentication succeeds, the authorization controller invokes the [`authorizationController(controller:didCompleteWithAuthorization:)`](ASAuthorizationControllerDelegate/authorizationController(controller:didCompleteWithAuthorization:).md) delegate function, which the app uses to store the user’s data in the keychain.
+If the authentication succeeds, the authorization controller invokes the [`authorizationController(controller:didCompleteWithAuthorization:)`](asauthorizationcontrollerdelegate/authorizationcontroller(controller:didcompletewithauthorization:).md) delegate function, which the app uses to store the user’s data in the keychain.
 
 ```swift
 func authorizationController(controller: ASAuthorizationController, didCompleteWithAuthorization authorization: ASAuthorization) {
@@ -111,7 +111,7 @@ func authorizationController(controller: ASAuthorizationController, didCompleteW
 
 > **Note**: In your implementation, the `ASAuthorizationControllerDelegate.authorizationController(controller:didCompleteWithAuthorization:)` delegate function should create an account in your system using the data contained in the user identifier.
 
-If the authentication fails, the authorization controller invokes the [`authorizationController(controller:didCompleteWithError:)`](ASAuthorizationControllerDelegate/authorizationController(controller:didCompleteWithError:).md) delegate function to handle the error.
+If the authentication fails, the authorization controller invokes the [`authorizationController(controller:didCompleteWithError:)`](asauthorizationcontrollerdelegate/authorizationcontroller(controller:didcompletewitherror:).md) delegate function to handle the error.
 
 ```swift
 func authorizationController(controller: ASAuthorizationController, didCompleteWithError error: Error) {
@@ -139,13 +139,13 @@ func performExistingAccountSetupFlows() {
 }
 ```
 
-The `authorizationController(controller:didCompleteWithAuthorization:)` delegate function checks whether the credential is an Apple ID ([`ASAuthorizationAppleIDCredential`](ASAuthorizationAppleIDCredential.md)) or a password credential ([`ASPasswordCredential`](ASPasswordCredential.md)). If the credential is a password credential, the system displays an alert allowing the user to authenticate with the existing account.
+The `authorizationController(controller:didCompleteWithAuthorization:)` delegate function checks whether the credential is an Apple ID ([`ASAuthorizationAppleIDCredential`](asauthorizationappleidcredential.md)) or a password credential ([`ASPasswordCredential`](aspasswordcredential.md)). If the credential is a password credential, the system displays an alert allowing the user to authenticate with the existing account.
 
 ##### Check User Credentials at Launch
 
 The sample app only shows the Sign in with Apple user interface when necessary. The app delegate checks the status of the saved user credentials immediately after launch in the `AppDelegate.application(_:didFinishLaunchingWithOptions:)` function.
 
-The [`getCredentialState(forUserID:completion:)`](ASAuthorizationAppleIDProvider/getCredentialState(forUserID:completion:).md) function retrieves the state of the user identifier saved in the keychain. If the user granted authorization for the app (for example, the user is signed into the app with their Apple ID on the device), then the app continues executing. If the user revoked authorization for the app, or the user’s credential state not found, the app displays the log in form by invoking the `showLoginViewController()` function.
+The [`getCredentialState(forUserID:completion:)`](asauthorizationappleidprovider/getcredentialstate(foruserid:completion:).md) function retrieves the state of the user identifier saved in the keychain. If the user granted authorization for the app (for example, the user is signed into the app with their Apple ID on the device), then the app continues executing. If the user revoked authorization for the app, or the user’s credential state not found, the app displays the log in form by invoking the `showLoginViewController()` function.
 
 ```swift
 func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
@@ -173,7 +173,7 @@ func application(_ application: UIApplication, didFinishLaunchingWithOptions lau
   Build a fluid sign-in experience for your tvOS apps using AuthenticationServices.
 - [struct SignInWithAppleButton](signinwithapplebutton.md)
   A SwiftUI view that creates the Sign in with Apple button for display.
-- [Sign in with Apple Entitlement](../BundleResources/Entitlements/com.apple.developer.applesignin.md)
+- [Sign in with Apple Entitlement](../bundleresources/entitlements/com.apple.developer.applesignin.md)
   An entitlement that lets your app use Sign in with Apple.
 - [class ASAuthorizationAppleIDProvider](asauthorizationappleidprovider.md)
   A mechanism for generating requests to authenticate users based on their Apple ID.

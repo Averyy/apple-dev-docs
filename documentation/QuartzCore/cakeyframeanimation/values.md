@@ -23,7 +23,7 @@ var values: [Any]? { get set }
 
 The keyframe values represent the values through which the animation must proceed. The time at which a given keyframe value is applied to the layer depends on the animation timing, which is controlled by the [`calculationMode`](cakeyframeanimation/calculationmode.md), [`keyTimes`](cakeyframeanimation/keytimes.md), and [`timingFunctions`](cakeyframeanimation/timingfunctions.md) properties. Values between keyframes are created using interpolation, unless the calculation mode is set to [`discrete`](caanimationcalculationmode/discrete.md).
 
-Depending on the type of the property, you may need to wrap the values in this array with an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) of [`NSValue`](https://developer.apple.com/documentation/Foundation/NSValue) object. For some Core Graphics data types, you may also need to cast them to `id` before adding them to the array.
+Depending on the type of the property, you may need to wrap the values in this array with an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) of [`NSValue`](https://developer.apple.com/documentation/foundation/nsvalue) object. For some Core Graphics data types, you may also need to cast them to `id` before adding them to the array.
 
 The values in this property are used only if the value in the [`path`](cakeyframeanimation/path.md) property is `nil`.
 

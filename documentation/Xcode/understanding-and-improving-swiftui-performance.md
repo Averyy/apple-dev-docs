@@ -6,11 +6,11 @@ Identify and address long-running view updates, and reduce the frequency of upda
 
 #### Overview
 
-[`SwiftUI`](https://developer.apple.com/documentation/SwiftUI) implements a declarative approach to constructing a user interface. You describe your app’s UI and how it depends on the app’s data and environment. SwiftUI calculates the views that represent the UI, and updates the UI in response to people’s actions and to changes in the view’s dependencies, such as:
+[`SwiftUI`](https://developer.apple.com/documentation/swiftui) implements a declarative approach to constructing a user interface. You describe your app’s UI and how it depends on the app’s data and environment. SwiftUI calculates the views that represent the UI, and updates the UI in response to people’s actions and to changes in the view’s dependencies, such as:
 
 - The view’s state
 - The environment
-- [`Observable`](https://developer.apple.com/documentation/Observation/Observable) model data
+- [`Observable`](https://developer.apple.com/documentation/observation/observable) model data
 
 Your app needs to compute its view bodies quickly to maintain a responsive experience for people who use the app. View bodies that take too long to run, or views that update too frequently, reduce overall system efficiency as they consume resources that the system could use elsewhere. The system requires views to update before the system renders the next display frame on the screen. If the views don’t complete their updates in time, they cause hitches in your app’s UI, giving someone a poor experience of using your app. For more information, see [`Improving app responsiveness`](improving-app-responsiveness.md).
 
@@ -52,7 +52,7 @@ A single instance of a long-running update might not contain enough samples in t
 
 To reset the filter, click Callers/Callees in the Instruments bottom bar, and choose Clear Selection.
 
-A common cause of long view body updates is performing expensive calculations in the view’s  [`body`](https://developer.apple.com/documentation/SwiftUI/View/body-8kl5o) property. Instead, perform the calculation asynchronously, and cache the result to avoid repeating the work every time the view needs to use the result of the calculation.
+A common cause of long view body updates is performing expensive calculations in the view’s  [`body`](https://developer.apple.com/documentation/swiftui/view/body-8kl5o) property. Instead, perform the calculation asynchronously, and cache the result to avoid repeating the work every time the view needs to use the result of the calculation.
 
 ##### Reduce the Frequency of View Updates
 
@@ -62,7 +62,7 @@ Control-click on an update group and choose Set Inspection Range to focus on tha
 
 > **Note**:  You might need to manually adjust the start of the inspection range to include events that cause the update and occur before the update group starts.
 
-Hold the pointer over an update, and then click the arrow that appears and choose Show Causes. The detail view shows a list of updates in the group, and a graphical representation of the events that caused each update, and the effects that each update caused. Nodes in the graph represent objects that generate or receive updates; for example, view bodies, environment objects, and transactions. Edges in the graph represent causal links between nodes; for example, the connection from an [`Observable()`](https://developer.apple.com/documentation/Observation/Observable()) object to a view that reads one of the object’s properties in its `body`.
+Hold the pointer over an update, and then click the arrow that appears and choose Show Causes. The detail view shows a list of updates in the group, and a graphical representation of the events that caused each update, and the effects that each update caused. Nodes in the graph represent objects that generate or receive updates; for example, view bodies, environment objects, and transactions. Edges in the graph represent causal links between nodes; for example, the connection from an [`Observable()`](https://developer.apple.com/documentation/observation/observable()) object to a view that reads one of the object’s properties in its `body`.
 
 Click on a node to see more information about that node in the inspector. Blue nodes represent objects defined by code in your app. Gray nodes represent objects defined by the system.
 
@@ -72,8 +72,8 @@ Click on an edge to see more information about the update the edge represents in
 
 Compare the events that occur in the cause-and-effect graph with your understanding of the purpose of your views to identify unnecessary updates, or updates that are needed but happen too frequently. Examples of causes for too-frequent updates include:
 
-- Your view observes properties on an object that has other observable properties, and updates when one of the other properties changes. Migrate your observable objects to use the [`Observable()`](https://developer.apple.com/documentation/Observation/Observable()) macro, which tracks the properties that a view reads and only emits change events when those properties update. For more information, see [`Migrating from the Observable Object protocol to the Observable macro`](https://developer.apple.com/documentation/SwiftUI/Migrating-from-the-observable-object-protocol-to-the-observable-macro).
-- The view that responds to an update causes the views it contains to update in ways that don’t contribute to meaningful changes in the UI; for example, a custom layout using a [`GeometryReader`](https://developer.apple.com/documentation/SwiftUI/GeometryReader) that recalculates scroll geometry for the views it contains, including for updates that don’t result in any scroll changes. Identify a different view in your app’s view hierarchy that can receive the update and make only relevant changes to the views it contains.
+- Your view observes properties on an object that has other observable properties, and updates when one of the other properties changes. Migrate your observable objects to use the [`Observable()`](https://developer.apple.com/documentation/observation/observable()) macro, which tracks the properties that a view reads and only emits change events when those properties update. For more information, see [`Migrating from the Observable Object protocol to the Observable macro`](https://developer.apple.com/documentation/swiftui/migrating-from-the-observable-object-protocol-to-the-observable-macro).
+- The view that responds to an update causes the views it contains to update in ways that don’t contribute to meaningful changes in the UI; for example, a custom layout using a [`GeometryReader`](https://developer.apple.com/documentation/swiftui/geometryreader) that recalculates scroll geometry for the views it contains, including for updates that don’t result in any scroll changes. Identify a different view in your app’s view hierarchy that can receive the update and make only relevant changes to the views it contains.
 
 For views that need to update in response to frequent updates, follow the steps in [`Improve long-running view body computations`](https://developer.apple.com#Improve-long-running-view-body-computations) above, to improve the efficiency of these updates.
 
@@ -85,24 +85,24 @@ Identify the type of event that most frequently causes your view to update, and 
 
 A cause-and-effect graph that starts with a node that represents code in your app (a blue node), generates events that affect framework code (gray nodes), and ends with a node in your app (another blue node), signifies a situation where your app creates an event that your app needs to respond to itself, but that the SwiftUI framework mediates.
 
-Change your code to reduce the frequency of updates that it causes, by reducing the frequency of the causing events. For example, if you use [`onGeometryChange(for:of:action:)`](https://developer.apple.com/documentation/SwiftUI/View/onGeometryChange(for:of:action:)) to update the layout of subviews whenever a view’s size changes, test whether the magnitude of the change is bigger than a threshold value before updating the layout.
+Change your code to reduce the frequency of updates that it causes, by reducing the frequency of the causing events. For example, if you use [`onGeometryChange(for:of:action:)`](https://developer.apple.com/documentation/swiftui/view/ongeometrychange(for:of:action:)) to update the layout of subviews whenever a view’s size changes, test whether the magnitude of the change is bigger than a threshold value before updating the layout.
 
 ##### Adopt Efficient Swiftui Design Patterns
 
 Keep your view bodies fast. The code in a view body needs to be efficient and rely on limited dependencies, including state and environment objects.
 
-Move business logic and other non-UI work out of views to model types because SwiftUI recreates views, and recalculates view bodies, frequently. So, avoid performing complex, long-running tasks in your [`View`](https://developer.apple.com/documentation/SwiftUI/View) initializer and these methods:
+Move business logic and other non-UI work out of views to model types because SwiftUI recreates views, and recalculates view bodies, frequently. So, avoid performing complex, long-running tasks in your [`View`](https://developer.apple.com/documentation/swiftui/view) initializer and these methods:
 
-- [`body`](https://developer.apple.com/documentation/SwiftUI/View/body-8kl5o)
-- [`onAppear(perform:)`](https://developer.apple.com/documentation/SwiftUI/View/onAppear(perform:))
-- [`onChanged(_:)`](https://developer.apple.com/documentation/SwiftUI/Gesture/onChanged(_:))
+- [`body`](https://developer.apple.com/documentation/swiftui/view/body-8kl5o)
+- [`onAppear(perform:)`](https://developer.apple.com/documentation/swiftui/view/onappear(perform:))
+- [`onChanged(_:)`](https://developer.apple.com/documentation/swiftui/gesture/onchanged(_:))
 - Any other modifiers that can modify view state
 
-Consider the performance impact of complex layouts. Layout readers, for example, [`GeometryReader`](https://developer.apple.com/documentation/SwiftUI/GeometryReader) and [`ScrollViewReader`](https://developer.apple.com/documentation/SwiftUI/ScrollViewReader), observe layout changes in their parent views to recalculate their layouts. Reduce the scope of simultaneous layout and state updates by moving views with state dependencies that don’t affect the layout into a separate view hierarchy.
+Consider the performance impact of complex layouts. Layout readers, for example, [`GeometryReader`](https://developer.apple.com/documentation/swiftui/geometryreader) and [`ScrollViewReader`](https://developer.apple.com/documentation/swiftui/scrollviewreader), observe layout changes in their parent views to recalculate their layouts. Reduce the scope of simultaneous layout and state updates by moving views with state dependencies that don’t affect the layout into a separate view hierarchy.
 
 Avoid storing closures in views. Closures can capture additional state from your parent view that make the view update more often. Whenever any of the closure’s captured state changes, SwiftUI needs to recalculate the closure’s result. If the closure captures `self`, whether explicitly or because it references one of the view’s properties, then SwiftUI recalculates the closure’s result whenever any of the view’s properties changes. When accepting a closure passed to your view’s initializer that builds a child view for your view, call the closure in the initializer so you only store its return value. Don’t mark the closure [`@escaping`](https://developer.apple.comhttps://docs.swift.org/swift-book/documentation/the-swift-programming-language/closures/#Escaping-Closures).
 
-You don’t need to do this for action closures, like the closure you pass to [`Button`](https://developer.apple.com/documentation/SwiftUI/Button), or closures that require a parameter, like the closure you pass to [`ForEach`](https://developer.apple.com/documentation/SwiftUI/ForEach). However, such closures could still cause excessive updates, so follow the steps in [`Reduce the frequency of view updates`](https://developer.apple.com#Reduce-the-frequency-of-view-updates) above, to ensure that your app calls its closures efficiently.
+You don’t need to do this for action closures, like the closure you pass to [`Button`](https://developer.apple.com/documentation/swiftui/button), or closures that require a parameter, like the closure you pass to [`ForEach`](https://developer.apple.com/documentation/swiftui/foreach). However, such closures could still cause excessive updates, so follow the steps in [`Reduce the frequency of view updates`](https://developer.apple.com#Reduce-the-frequency-of-view-updates) above, to ensure that your app calls its closures efficiently.
 
 ## See Also
 

@@ -30,7 +30,7 @@ You can use this type in Swift when you need reference semantics or other Founda
 
 The [`NSString`](nsstring.md) class and its mutable subclass, [`NSMutableString`](nsmutablestring.md), provide an extensive set of APIs for working with strings, including methods for comparing, searching, and modifying strings. [`NSString`](nsstring.md) objects are used throughout Foundation and other Cocoa frameworks, serving as the basis for all textual and linguistic functionality on the platform.
 
-[`NSString`](nsstring.md) is *toll-free bridged* with its Core Foundation counterpart, [`CFString`](https://developer.apple.com/documentation/CoreFoundation/CFString). See [`Toll-Free Bridging`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Conceptual/CocoaEncyclopedia/Toll-FreeBridgin/Toll-FreeBridgin.html#//apple_ref/doc/uid/TP40010810-CH2) for more information.
+[`NSString`](nsstring.md) is *toll-free bridged* with its Core Foundation counterpart, [`CFString`](https://developer.apple.com/documentation/corefoundation/cfstring). See [`Toll-Free Bridging`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Conceptual/CocoaEncyclopedia/Toll-FreeBridgin/Toll-FreeBridgin.html#//apple_ref/doc/uid/TP40010810-CH2) for more information.
 
 ##### String Objects
 
@@ -66,7 +66,7 @@ Make sure your reasons for subclassing [`NSString`](nsstring.md) are valid. Inst
 
 Any subclass of `NSString`   *must* override the primitive instance methods [`length`](nsstring/length.md) and [`character(at:)`](nsstring/character(at:).md). These methods must operate on the backing store that you provide for the characters of the string. For this backing store you can use a static array, a dynamically allocated buffer, a standard `NSString` object, or some other data type or mechanism. You may also choose to override, partially or fully, any other `NSString` method for which you want to provide an alternative implementation. For example, for better performance it is recommended that you override [`getCharacters(_:range:)`](nsstring/getcharacters(_:range:).md) and give it a faster implementation.
 
-You might want to implement an initializer for your subclass that is suited to the backing store that the subclass is managing. The `NSString` class does not have a designated initializer, so your initializer need only invoke the [`init()`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class/init()) method of `super`. The `NSString` class adopts the [`NSCopying`](nscopying.md), [`NSMutableCopying`](nsmutablecopying.md), and [`NSCoding`](nscoding.md) protocols; if you want instances of your own custom subclass created from copying or coding, override the methods in these protocols.
+You might want to implement an initializer for your subclass that is suited to the backing store that the subclass is managing. The `NSString` class does not have a designated initializer, so your initializer need only invoke the [`init()`](https://developer.apple.com/documentation/objectivec/nsobject-swift.class/init()) method of `super`. The `NSString` class adopts the [`NSCopying`](nscopying.md), [`NSMutableCopying`](nsmutablecopying.md), and [`NSCoding`](nscoding.md) protocols; if you want instances of your own custom subclass created from copying or coding, override the methods in these protocols.
 
 ###### Alternatives to Subclassing
 
@@ -291,7 +291,7 @@ If the behavior you want to add supplements that of the existing class, you coul
   Returns the bounding box size the receiver occupies when drawn with the given attributes.
 - [func variantFittingPresentationWidth(Int) -> String](nsstring/variantfittingpresentationwidth(_:).md)
   Returns a string variation suitable for the specified presentation width.
-- [struct NSStringDrawingOptions](../UIKit/NSStringDrawingOptions.md)
+- [struct NSStringDrawingOptions](../uikit/nsstringdrawingoptions.md)
   Constants that specify the rendering options for drawing a string.
 ### Getting Numeric Values
 - [var doubleValue: Double](nsstring/doublevalue.md)
@@ -455,31 +455,31 @@ If the behavior you want to add supplements that of the existing class, you coul
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Inherited By
 - [NSMutableString](nsmutablestring.md)
 ### Conforms To
-- [CKRecordValue](../CloudKit/CKRecordValue-c.protocol.md)
-- [CKRecordValueProtocol](../CloudKit/CKRecordValueProtocol.md)
-- [CNKeyDescriptor](../Contacts/CNKeyDescriptor.md)
-- [CVarArg](../Swift/CVarArg.md)
-- [Copyable](../Swift/Copyable.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Escapable](../Swift/Escapable.md)
-- [ExpressibleByExtendedGraphemeClusterLiteral](../Swift/ExpressibleByExtendedGraphemeClusterLiteral.md)
-- [ExpressibleByStringLiteral](../Swift/ExpressibleByStringLiteral.md)
-- [ExpressibleByUnicodeScalarLiteral](../Swift/ExpressibleByUnicodeScalarLiteral.md)
-- [Hashable](../Swift/Hashable.md)
+- [CKRecordValue](../cloudkit/ckrecordvalue-c.protocol.md)
+- [CKRecordValueProtocol](../cloudkit/ckrecordvalueprotocol.md)
+- [CNKeyDescriptor](../contacts/cnkeydescriptor.md)
+- [CVarArg](../swift/cvararg.md)
+- [Copyable](../swift/copyable.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Escapable](../swift/escapable.md)
+- [ExpressibleByExtendedGraphemeClusterLiteral](../swift/expressiblebyextendedgraphemeclusterliteral.md)
+- [ExpressibleByStringLiteral](../swift/expressiblebystringliteral.md)
+- [ExpressibleByUnicodeScalarLiteral](../swift/expressiblebyunicodescalarliteral.md)
+- [Hashable](../swift/hashable.md)
 - [NSCoding](nscoding.md)
 - [NSCopying](nscopying.md)
 - [NSItemProviderReading](nsitemproviderreading.md)
 - [NSItemProviderWriting](nsitemproviderwriting.md)
 - [NSMutableCopying](nsmutablecopying.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [NSPasteboardReading](../AppKit/NSPasteboardReading.md)
-- [NSPasteboardWriting](../AppKit/NSPasteboardWriting.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSPasteboardReading](../appkit/nspasteboardreading.md)
+- [NSPasteboardWriting](../appkit/nspasteboardwriting.md)
 - [NSSecureCoding](nssecurecoding.md)
 
 

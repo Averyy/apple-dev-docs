@@ -24,7 +24,7 @@ The metrics provide details about the user’s voice, such as tenor, pitch, cade
 
 This sensor doesn’t provide raw audio data. For user privacy, SensorKit removes any transcript strings from the result.
 
-You need to provide a reason to analyze speech by adding the [`SRSensorUsageSpeechMetrics`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSSensorKitUsageDetail/SRSensorUsageSpeechMetrics) dictionary to the [`NSSensorKitUsageDetail`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSSensorKitUsageDetail) key in the information property list.
+You need to provide a reason to analyze speech by adding the [`SRSensorUsageSpeechMetrics`](https://developer.apple.com/documentation/bundleresources/information-property-list/nssensorkitusagedetail/srsensorusagespeechmetrics) dictionary to the [`NSSensorKitUsageDetail`](https://developer.apple.com/documentation/bundleresources/information-property-list/nssensorkitusagedetail) key in the information property list.
 
 ## See Also
 

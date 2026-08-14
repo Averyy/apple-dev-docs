@@ -22,7 +22,7 @@ let kCTFontTraitsAttribute: CFString
 
 #### Discussion
 
-See Accessing Font Traits for the list of font traits. The value associated with this key is a [`CFDictionary`](https://developer.apple.com/documentation/CoreFoundation/CFDictionary) object.
+See Accessing Font Traits for the list of font traits. The value associated with this key is a [`CFDictionary`](https://developer.apple.com/documentation/corefoundation/cfdictionary) object.
 
 ## See Also
 

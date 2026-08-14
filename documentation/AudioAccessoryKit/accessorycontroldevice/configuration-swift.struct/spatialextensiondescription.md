@@ -7,7 +7,6 @@ The spatial audio component description.
 
 **Availability**:
 - iOS 26.4+
-- iPadOS 26.4+
 
 ## Declaration
 

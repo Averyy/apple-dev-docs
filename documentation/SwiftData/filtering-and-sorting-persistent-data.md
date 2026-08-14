@@ -34,7 +34,7 @@ The query macro injects code that keeps the array of earthquake instances synchr
 .navigationSubtitle(quakes[selectedId]?.fullDate ?? "")
 ```
 
-The above code relies on a subscript method that the app defines in an extension of [`Array`](https://developer.apple.com/documentation/Swift/Array):
+The above code relies on a subscript method that the app defines in an extension of [`Array`](https://developer.apple.com/documentation/swift/array):
 
 ```swift
 extension Array where Element: Quake {
@@ -44,13 +44,13 @@ extension Array where Element: Quake {
 }
 ```
 
-The subscript definition relies on the fact that model objects — types attributed with the [`Model()`](model().md) macro, like `Quake` — automatically conform to the [`Identifiable`](https://developer.apple.com/documentation/Swift/Identifiable) protocol, which means that each earthquake instance has a unique `id` parameter. When someone selects an earthquake in the list or map view, the app sets `selectedId` to the selected earthquake’s identifier.
+The subscript definition relies on the fact that model objects — types attributed with the [`Model()`](model().md) macro, like `Quake` — automatically conform to the [`Identifiable`](https://developer.apple.com/documentation/swift/identifiable) protocol, which means that each earthquake instance has a unique `id` parameter. When someone selects an earthquake in the list or map view, the app sets `selectedId` to the selected earthquake’s identifier.
 
 ##### Add a Sort Parameter to Order Data
 
 The map view draws circles to represent quakes at particular locations, using a size for the circle that corresponds to the earthquake’s magnitude. To keep the circles visible when several overlap, `MapView` sorts its query by magnitude so that the map draws larger circles behind smaller ones.
 
-![A screenshot of the sample app running on an iPhone 14 Pro.](https://docs-assets.developer.apple.com/published/d4aefb890b159499d09e002f8d7d794b/Filtering-and-sorting-persistent-data-4%402x.png)
+![A screenshot of the sample app running on an iPhone 14 Pro.](/images/com.apple.SwiftData/Filtering-and-sorting-persistent-data-4@2x.png)
 
 It introduces the sorting by adding parameters to the query macro:
 
@@ -80,7 +80,7 @@ To ensure that the app’s interface remains approachable, the app limits how ma
 - **A date** — To avoid overwhelming the map with too many markers, the app displays only one day’s worth of earthquakes at a time. People can choose which day to view.
 - **A location name** — To enable people to focus on specific earthquakes, people can enter text in a search field that the app matches against earthquake location names.
 
-To implement this filtering, the app defines a static method that returns a [`Predicate`](https://developer.apple.com/documentation/Foundation/Predicate) that takes into account both a search date and search text:
+To implement this filtering, the app defines a static method that returns a [`Predicate`](https://developer.apple.com/documentation/foundation/predicate) that takes into account both a search date and search text:
 
 ```swift
 static func predicate(

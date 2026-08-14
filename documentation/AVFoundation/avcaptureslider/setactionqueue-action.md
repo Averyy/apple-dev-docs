@@ -25,7 +25,7 @@ func setActionQueue(_ actionQueue: DispatchQueue, action: @escaping (Float) -> (
 
 #### Discussion
 
-If the action modifies a property of the camera system, the specified dispatch queue must represent the camera system’s same exclusive execution context (see [`isSameExclusiveExecutionContext(other:)`](https://developer.apple.com/documentation/Swift/SerialExecutor/isSameExclusiveExecutionContext(other:))).
+If the action modifies a property of the camera system, the specified dispatch queue must represent the camera system’s same exclusive execution context (see [`isSameExclusiveExecutionContext(other:)`](https://developer.apple.com/documentation/swift/serialexecutor/issameexclusiveexecutioncontext(other:))).
 
 ## Parameters
 

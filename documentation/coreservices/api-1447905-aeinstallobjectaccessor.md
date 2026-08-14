@@ -30,11 +30,11 @@ If your Carbon application running in Mac OS 8 or OS 9 installs a system object 
 
 ## Parameters
 
-- `desiredClass`: The object type of the Apple event objects located by this accessor. See  .
-- `containerType`: The type of the token whose objects are accessed by this accessor. (Token is defined in  .) The accessor function finds objects in containers specified by tokens of this type. See  .
-- `theAccessor`: A universal procedure pointer to the object accessor function to install. See  .
-- `accessorRefcon`: A reference constant the Apple Event Manager passes to the object accessor function whenever it calls the function. If your object accessor function doesn’t require a reference constant, pass 0 for this parameter. To change the value of the reference constant, you must call   again.
-- `isSysHandler`: Specifies the object accessor dispatch table to add the entry to. Pass   to add the entry to the system object accessor dispatch table or   to add the entry to your application’s object accessor dispatch table. Use of the system object accessor dispatch table is not recommended. 
+- `desiredClass`: The object type of the Apple event objects located by this accessor. See [`DescType`](desctype.md).
+- `containerType`: The type of the token whose objects are accessed by this accessor. (Token is defined in [`AEDisposeToken(_:)`](1446783-aedisposetoken.md).) The accessor function finds objects in containers specified by tokens of this type. See [`DescType`](desctype.md).
+- `theAccessor`: A universal procedure pointer to the object accessor function to install. See [`OSLAccessorUPP`](oslaccessorupp.md).
+- `accessorRefcon`: A reference constant the Apple Event Manager passes to the object accessor function whenever it calls the function. If your object accessor function doesn’t require a reference constant, pass 0 for this parameter. To change the value of the reference constant, you must call `AEInstallObjectAccessor` again.
+- `isSysHandler`: Specifies the object accessor dispatch table to add the entry to. Pass `TRUE` to add the entry to the system object accessor dispatch table or `FALSE` to add the entry to your application’s object accessor dispatch table. Use of the system object accessor dispatch table is not recommended. 
 
 ## See Also
 

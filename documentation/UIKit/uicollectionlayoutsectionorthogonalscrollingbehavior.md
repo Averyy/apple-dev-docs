@@ -22,7 +22,7 @@ enum UICollectionLayoutSectionOrthogonalScrollingBehavior
 
 By default, each section lays out its content along the main axis of its layout, defined by the layout configuration’s [`scrollDirection`](uicollectionviewcompositionallayoutconfiguration/scrolldirection.md) property. You can change this behavior for a particular section by setting its [`orthogonalScrollingBehavior`](nscollectionlayoutsection/orthogonalscrollingbehavior.md) property to a different value than its default [`UICollectionLayoutSectionOrthogonalScrollingBehavior.none`](uicollectionlayoutsectionorthogonalscrollingbehavior/none.md). Setting any other value for this property makes the section lay out its content orthogonally to the main layout axis.
 
-![Diagram of a collection view layout with multiple sections. The collection view sections are laid out vertically, so the collection view scrolls on the vertical axis to reveal more content. The content in the top section of the collection view scrolls on the horizontal axis, orthogonally to the main layout axis of the collection view’s layout.](https://docs-assets.developer.apple.com/published/4cf72f33e39a4d8db2a13d71d4cc3d70/media-3570451%402x.png)
+![Diagram of a collection view layout with multiple sections. The collection view sections are laid out vertically, so the collection view scrolls on the vertical axis to reveal more content. The content in the top section of the collection view scrolls on the horizontal axis, orthogonally to the main layout axis of the collection view’s layout.](/images/com.apple.uikit/media-3570451@2x.png)
 
 ## Topics
 
@@ -45,12 +45,12 @@ By default, each section lays out its content along the main axis of its layout,
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../Swift/BitwiseCopyable.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [RawRepresentable](../Swift/RawRepresentable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [BitwiseCopyable](../swift/bitwisecopyable.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [RawRepresentable](../swift/rawrepresentable.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 
 ---

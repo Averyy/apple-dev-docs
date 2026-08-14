@@ -29,7 +29,7 @@ Create a credential session with the [`startSession()`](credentialsession/starts
 
 The framework provides SwiftUI and UIKit user interfaces for your app to display while using the wired and card emulation states.
 
-You can read the current state at any time from the [`state`](credentialsession/state-swift.property.md) property. The [`eventStream`](credentialsession/eventstream.md) property provides an [`AsyncStream`](https://developer.apple.com/documentation/Swift/AsyncStream) of events from both your own actions on credentials and outside sources like detecting an NFC reader’s RF field.
+You can read the current state at any time from the [`state`](credentialsession/state-swift.property.md) property. The [`eventStream`](credentialsession/eventstream.md) property provides an [`AsyncStream`](https://developer.apple.com/documentation/swift/asyncstream) of events from both your own actions on credentials and outside sources like detecting an NFC reader’s RF field.
 
 An app can have only one active session at a time. When your app no longer needs the credential session, call [`invalidate()`](credentialsession/invalidate().md). If your app goes into the background, the system automatically invalidates your session after a short delay. In wired mode, the system invalidates the session if it goes 15 seconds without performing a [`transceive(_:)`](credentialsession/transceive(_:).md) call.
 
@@ -123,10 +123,10 @@ Certain methods in [`CredentialSession`](credentialsession.md) are only appropri
 ## Relationships
 
 ### Conforms To
-- [Actor](../Swift/Actor.md)
-- [Equatable](../Swift/Equatable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Actor](../swift/actor.md)
+- [Equatable](../swift/equatable.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 
 ---

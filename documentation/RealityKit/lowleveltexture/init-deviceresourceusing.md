@@ -23,7 +23,7 @@ convenience init(deviceResource: LowLevelDeviceResource, using commandBuffer: (a
 ## Parameters
 
 - `deviceResource`: The underlying texture this object should refer to.
-- `commandBuffer`: The [`MTLCommandBuffer`](https://developer.apple.com/documentation/Metal/MTLCommandBuffer) you intend to use for texture modifications. RealityKit waits for the command buffer to complete before utilizing the texture for rendering.
+- `commandBuffer`: The [`MTLCommandBuffer`](https://developer.apple.com/documentation/metal/mtlcommandbuffer) you intend to use for texture modifications. RealityKit waits for the command buffer to complete before utilizing the texture for rendering.
 
 
 ---

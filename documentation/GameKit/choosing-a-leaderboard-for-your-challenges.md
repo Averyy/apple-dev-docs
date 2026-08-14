@@ -67,7 +67,7 @@ A Game Center group allow you to share leaderboard data between two or more game
 
 The system can drive engagement to your game whether you use Game Center leaderboards or your own leaderboard system. To do so, you need to enable Game Center and configure a leaderboard in Xcode that shadows a leaderboard you already provide through your own system.
 
-![A screenshot of the GameKit configuration in Xcode with a leaderboard in a selected state. The leaderboard is configured to be Hidden. It shows help text that reads ‘Hidden leaderboards are not visible in Game Center views. Players can still submit scores to hidden leaderboards.’](https://docs-assets.developer.apple.com/published/b3eb11a7590f936a23b0f876cac852d9/xcode-hidden-leaderboard%402x.png)
+![A screenshot of the GameKit configuration in Xcode with a leaderboard in a selected state. The leaderboard is configured to be Hidden. It shows help text that reads ‘Hidden leaderboards are not visible in Game Center views. Players can still submit scores to hidden leaderboards.’](/images/com.apple.gamekit/xcode-hidden-leaderboard@2x.png)
 
 When you configure the leaderboard in Xcode, set the leaderboard as hidden. A hidden leaderboard won’t show up in any list of leaderboards a person accesses through the Game Center dashboard, Games app, or other game events.
 
@@ -82,7 +82,7 @@ try await GKLeaderboard.submitScore(points,
 ```
 
 If you prefer to submit scores through your own server, see
-[`Game Center leaderboards scores`](https://developer.apple.com/documentation/AppStoreConnectAPI/game-center-leaderboards-scores).
+[`Game Center leaderboards scores`](https://developer.apple.com/documentation/appstoreconnectapi/game-center-leaderboards-scores).
 
 For more information on enabling Game Center, see [`Initializing and configuring Game Center`](initializing-and-configuring-game-center.md). To learn more about configuring leaderboard, see [`Encourage progress and competition with leaderboards`](encourage-progress-and-competition-with-leaderboards.md).
 
@@ -92,7 +92,7 @@ For more information on enabling Game Center, see [`Initializing and configuring
   Encourage friendly competition by adding challenges to your game.
 - [class GKChallengeDefinition](gkchallengedefinition.md)
   An object that represents the static metadata you define for the challenge.
-- [GKShowChallengeBanners](../BundleResources/Information-Property-List/GKShowChallengeBanners.md)
+- [GKShowChallengeBanners](../bundleresources/information-property-list/gkshowchallengebanners.md)
   A Boolean value that indicates whether GameKit can display challenge banners in a game.
 
 

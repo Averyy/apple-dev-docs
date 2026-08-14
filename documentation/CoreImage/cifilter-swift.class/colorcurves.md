@@ -29,8 +29,8 @@ This method applies the color curves filter to an image. The effect uses a three
 
 The color curves filter uses the following properties:
 
-- **`colorSpace`**: A [`CGColorSpace`](https://developer.apple.com/documentation/CoreGraphics/CGColorSpace) representing the color space for the color curve.
-- **`curvesData`**: Data containing a color table of floating-point RGB values as [`NSData`](https://developer.apple.com/documentation/Foundation/NSData).
+- **`colorSpace`**: A [`CGColorSpace`](https://developer.apple.com/documentation/coregraphics/cgcolorspace) representing the color space for the color curve.
+- **`curvesData`**: Data containing a color table of floating-point RGB values as [`NSData`](https://developer.apple.com/documentation/foundation/nsdata).
 - **`curvesDomain`**: A two-element vector that defines the minimum and maximum values of the curve data as a [`CIVector`](civector.md).
 - **`inputImage`**: An image with the type [`CIImage`](ciimage.md).
 
@@ -52,7 +52,7 @@ func colorCurves(inputImage: CIImage) -> CIImage {
 }
 ```
 
-![Two pictures of a pink flower surrounded by foliage. The photo on the left shows a single flower photographed close-up, in focus, with good light and no effects. In the photo on the right, a color curves filter is applied, resulting in the photo becoming brighter.](https://docs-assets.developer.apple.com/published/c9fb02c35d5384dae29cd0e29575c997/media-3545017%402x.png)
+![Two pictures of a pink flower surrounded by foliage. The photo on the left shows a single flower photographed close-up, in focus, with good light and no effects. In the photo on the right, a color curves filter is applied, resulting in the photo becoming brighter.](/images/com.apple.coreimage/media-3545017@2x.png)
 
 ## See Also
 

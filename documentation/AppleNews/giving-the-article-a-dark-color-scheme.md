@@ -10,7 +10,7 @@ In this third advanced article design, you’ll create some visual effects using
 
 **On this page, you’ll learn how to use ComponentStyle objects to implement a color scheme**.
 
-![Screenshot of an Apple News article with a dark color scheme on iPhone.](https://docs-assets.developer.apple.com/published/1159bd5b0ddc9c289e47312c6661f9f2/media-3624917%402x.png)
+![Screenshot of an Apple News article with a dark color scheme on iPhone.](/images/com.apple.applenews/media-3624917@2x.png)
 
 ##### Define a Dark Background Color for Components
 
@@ -288,11 +288,11 @@ To view the dark color scheme when the device appearance is toggled, preview you
 
 **Light Appearance**
 
-![Screenshot of an Apple News article with a dark color scheme on iPhone displaying a light systemwide appearance.](https://docs-assets.developer.apple.com/published/538f90f9e7aa5df57307c6b781824527/media-3966565%402x.png)
+![Screenshot of an Apple News article with a dark color scheme on iPhone displaying a light systemwide appearance.](/images/com.apple.applenews/media-3966565@2x.png)
 
 **Dark Appearance**
 
-![Screenshot of an Apple News article with a dark color scheme on iPhone displaying a dark systemwide appearance.](https://docs-assets.developer.apple.com/published/3ec0beb9f7108c7f92601ee91056edad/media-3966566%402x.png)
+![Screenshot of an Apple News article with a dark color scheme on iPhone displaying a dark systemwide appearance.](/images/com.apple.applenews/media-3966566@2x.png)
 
 ##### Further Exploration
 

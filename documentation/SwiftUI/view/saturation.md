@@ -47,7 +47,7 @@ struct Saturation: View {
 }
 ```
 
-![Rendering showing the effects of saturation adjustments in 20%](https://docs-assets.developer.apple.com/published/3ab2f7bf1752ad0140cc40da2b2075ba/SwiftUI-View-saturation%402x.png)
+![Rendering showing the effects of saturation adjustments in 20%](/images/com.apple.SwiftUI/SwiftUI-View-saturation@2x.png)
 
 > **Note**: `contrast(_:)`
 

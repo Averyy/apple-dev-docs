@@ -28,9 +28,9 @@ Thread safe starting in OS X v10.2.
 
 ## Parameters
 
-- `theAppleEvent`: A pointer to the Apple event to add an attribute to. See the   data type.
-- `theAEKeyword`: See  .
-- `theAEDesc`: A pointer to the descriptor to assign to the attribute. The descriptor type of the specified descriptor should match the defined descriptor type for that attribute. See  .
+- `theAppleEvent`: A pointer to the Apple event to add an attribute to. See the [`AppleEvent`](appleevent.md) data type.
+- `theAEKeyword`: The keyword for the attribute to add. If the Apple event already includes an attribute with this keyword, the attribute is replaced. Some keyword constants are described in [`Keyword Attribute Constants`](apple_events/1542920-keyword_attribute_constants.md). See [`AEKeyword`](aekeyword.md).
+- `theAEDesc`: A pointer to the descriptor to assign to the attribute. The descriptor type of the specified descriptor should match the defined descriptor type for that attribute. See [`AEDesc`](aedesc.md).
 
 ## See Also
 

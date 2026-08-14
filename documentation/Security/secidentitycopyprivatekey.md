@@ -35,7 +35,7 @@ An identity is a digital certificate together with its associated private key.
 ## Parameters
 
 - `identityRef`: The identity object for the identity whose private key you wish to retrieve.
-- `privateKeyRef`: On return, points to the private key object for the specified identity. The private key must be of class type [`SecItemClass.privateKeyItemClass`](secitemclass/privatekeyitemclass.md). In Objective-C, call the [`CFRelease`](https://developer.apple.com/documentation/CoreFoundation/CFRelease) function to release this object when you are finished with it.
+- `privateKeyRef`: On return, points to the private key object for the specified identity. The private key must be of class type [`SecItemClass.privateKeyItemClass`](secitemclass/privatekeyitemclass.md). In Objective-C, call the [`CFRelease`](https://developer.apple.com/documentation/corefoundation/cfrelease) function to release this object when you are finished with it.
 
 
 ---

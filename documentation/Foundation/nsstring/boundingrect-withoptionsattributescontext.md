@@ -26,11 +26,11 @@ The bounding rect for the receiver drawn using the given options and display cha
 
 #### Discussion
 
-To correctly draw and size multi-line text, pass [`usesLineFragmentOrigin`](https://developer.apple.com/documentation/UIKit/NSStringDrawingOptions/usesLineFragmentOrigin) in the options parameter.
+To correctly draw and size multi-line text, pass [`usesLineFragmentOrigin`](https://developer.apple.com/documentation/uikit/nsstringdrawingoptions/useslinefragmentorigin) in the options parameter.
 
-This method returns fractional sizes (in the `size` component of the returned [`CGRect`](https://developer.apple.com/documentation/CoreFoundation/CGRect)); to use a returned size to size views, you must raise its value to the nearest higher integer using the [`ceil`](https://developer.apple.com/documentation/kernel/1557272-ceil) function.
+This method returns fractional sizes (in the `size` component of the returned [`CGRect`](https://developer.apple.com/documentation/corefoundation/cgrect)); to use a returned size to size views, you must raise its value to the nearest higher integer using the [`ceil`](https://developer.apple.com/documentation/kernel/1557272-ceil) function.
 
-This method returns the actual bounds of the glyphs in the string. Some of the glyphs (spaces, for example) are allowed to overlap the layout constraints specified by the size passed in, so in some cases the width value of the size component of the returned [`CGRect`](https://developer.apple.com/documentation/CoreFoundation/CGRect) can exceed the width value of the `size` parameter.
+This method returns the actual bounds of the glyphs in the string. Some of the glyphs (spaces, for example) are allowed to overlap the layout constraints specified by the size passed in, so in some cases the width value of the size component of the returned [`CGRect`](https://developer.apple.com/documentation/corefoundation/cgrect) can exceed the width value of the `size` parameter.
 
 ## Parameters
 
@@ -51,7 +51,7 @@ This method returns the actual bounds of the glyphs in the string. Some of the g
   Returns the bounding box size the receiver occupies when drawn with the given attributes.
 - [func variantFittingPresentationWidth(Int) -> String](nsstring/variantfittingpresentationwidth(_:).md)
   Returns a string variation suitable for the specified presentation width.
-- [struct NSStringDrawingOptions](../UIKit/NSStringDrawingOptions.md)
+- [struct NSStringDrawingOptions](../uikit/nsstringdrawingoptions.md)
   Constants that specify the rendering options for drawing a string.
 
 

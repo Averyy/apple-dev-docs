@@ -58,26 +58,26 @@ The [`NEVPNManager`](nevpnmanager.md) API gives apps the ability to create and m
 - [NEVPNError.Code](nevpnerror-swift.struct/code.md)
   Codes that indicate the source of an error.
 ### Notifications
-- [static let NEVPNConfigurationChange: NSNotification.Name](../Foundation/NSNotification/Name-swift.struct/NEVPNConfigurationChange.md)
+- [static let NEVPNConfigurationChange: NSNotification.Name](../foundation/nsnotification/name-swift.struct/nevpnconfigurationchange.md)
   Posted after the VPN configuration stored in the Network Extension preferences changes.
 ### Entitlements
-- [Personal VPN Entitlement](../BundleResources/Entitlements/com.apple.developer.networking.vpn.api.md)
+- [Personal VPN Entitlement](../bundleresources/entitlements/com.apple.developer.networking.vpn.api.md)
   The API an app can use to create and control a custom system VPN configuration.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Inherited By
 - [NETransparentProxyManager](netransparentproxymanager.md)
 - [NETunnelProviderManager](netunnelprovidermanager.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

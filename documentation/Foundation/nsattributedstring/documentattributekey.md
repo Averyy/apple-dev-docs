@@ -117,11 +117,11 @@ The [`NSAttributedString.DocumentAttributeKey`](nsattributedstring/documentattri
 ## Relationships
 
 ### Conforms To
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [RawRepresentable](../Swift/RawRepresentable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [RawRepresentable](../swift/rawrepresentable.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 
@@ -133,7 +133,7 @@ The [`NSAttributedString.DocumentAttributeKey`](nsattributedstring/documentattri
   Constants for the document type document attribute key.
 - [NSAttributedString.TextLayoutSectionKey](nsattributedstring/textlayoutsectionkey.md)
   Constants for the text layout sections document attribute key.
-- [enum NSTextScalingType](../UIKit/NSTextScalingType.md)
+- [enum NSTextScalingType](../uikit/nstextscalingtype.md)
   Constants that specify the text scaling.
 
 

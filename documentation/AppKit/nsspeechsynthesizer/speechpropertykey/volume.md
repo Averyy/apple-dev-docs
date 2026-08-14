@@ -16,7 +16,7 @@ static let volume: NSSpeechSynthesizer.SpeechPropertyKey
 
 #### Discussion
 
-An [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) that specifies the synthesizer’s speech volume.
+An [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) that specifies the synthesizer’s speech volume.
 
 Volumes are expressed in floating-point values ranging from 0.0 through 1.0. A value of 0.0 corresponds to silence, and a value of 1.0 corresponds to the maximum possible volume. Volume units lie on a scale that is linear with amplitude or voltage. A doubling of perceived loudness corresponds to a doubling of the volume.
 

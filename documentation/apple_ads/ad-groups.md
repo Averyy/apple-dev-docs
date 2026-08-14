@@ -14,7 +14,7 @@ When building a campaign promotion strategy, you define keywords relevant to you
 
 The Search Match feature is an algorithm that uses multiple resources to match your ad to relevant searches in the App Store. The resources include metadata from your App Store product page, information about similar apps in the same genre, and other available search data. Search Match is a good option if you don’t want to figure out all keyword possibilities and actively bid on them.
 
-![Keyword app search example](https://docs-assets.developer.apple.com/published/fa3e1fc5987e946aefdab9346c4cf657/media-3341277%402x.png)
+![Keyword app search example](/images/com.apple.appleads/media-3341277@2x.png)
 
 ##### Enable and Disable Search Match
 

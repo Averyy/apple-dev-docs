@@ -27,7 +27,7 @@ The observation — or list of observations — the request produces.
 
 ## Parameters
 
-- `data`: The input [`Data`](https://developer.apple.com/documentation/Foundation/Data) on which to perform the request.
+- `data`: The input [`Data`](https://developer.apple.com/documentation/foundation/data) on which to perform the request.
 - `orientation`: The orientation of the input image. Default is `nil`.
 
 ## See Also

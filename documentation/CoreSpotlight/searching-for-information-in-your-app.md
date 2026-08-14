@@ -80,7 +80,7 @@ To detect the presence or absence of a particular attribute in an item, compare 
 
 When an attribute contains a date or time value, there are two ways you can specify the value portion of your predicate:
 
-- Specify a floating-point value with the number of seconds relative to January 1, 2001. You can get this value from a [`CFDate`](https://developer.apple.com/documentation/CoreFoundation/CFDate) or [`Date`](https://developer.apple.com/documentation/Foundation/Date) type using the [`CFDateGetAbsoluteTime(_:)`](https://developer.apple.com/documentation/CoreFoundation/CFDateGetAbsoluteTime(_:)) function.
+- Specify a floating-point value with the number of seconds relative to January 1, 2001. You can get this value from a [`CFDate`](https://developer.apple.com/documentation/corefoundation/cfdate) or [`Date`](https://developer.apple.com/documentation/foundation/date) type using the [`CFDateGetAbsoluteTime(_:)`](https://developer.apple.com/documentation/corefoundation/cfdategetabsolutetime(_:)) function.
 - Specify a property of the built-in `$time` variable.
 
 [`CSSearchQuery`](cssearchquery.md) provides the `$time` variable as a convenient way to specify date values in your query strings. When you start a query, the system initializes this variable to the current date and time. Include this variable in the value portion of your predicate to compare a date-based attribute to the date you specify. The following table lists the properties of the variable you can use in your predicates and how the query matches them against attributes.
@@ -112,7 +112,7 @@ The following example shows a query string that includes different types of pred
 
 Search queries are one-shot objects. While they run, they deliver matching items asynchronously to the handlers you provide. When there are no more items, the query stops. You can also stop a query early by calling its [`cancel()`](cssearchquery/cancel().md) method before the system delivers all matching results.
 
-Create a new query using a query string and a [`CSSearchQueryContext`](cssearchquerycontext.md) object, which contains the query configuration parameters. Start the query by fetching the [`results`](cssearchquery/results-swift.property.md) property of the query object and iterating over the results. The property contains an [`AsyncSequence`](https://developer.apple.com/documentation/Swift/AsyncSequence), and fetching it starts the query and begins the delivery of the results. The following function searches for items with a specific title and processes the results in an asynchronous task:
+Create a new query using a query string and a [`CSSearchQueryContext`](cssearchquerycontext.md) object, which contains the query configuration parameters. Start the query by fetching the [`results`](cssearchquery/results-swift.property.md) property of the query object and iterating over the results. The property contains an [`AsyncSequence`](https://developer.apple.com/documentation/swift/asyncsequence), and fetching it starts the query and begins the delivery of the results. The following function searches for items with a specific title and processes the results in an asynchronous task:
 
 ```swift
 import CoreSpotlight
@@ -149,7 +149,7 @@ class QueryExample {
 }
 ```
 
-If you prefer not to process the results using an [`AsyncSequence`](https://developer.apple.com/documentation/Swift/AsyncSequence), specify values for the [`foundItemsHandler`](cssearchquery/founditemshandler.md) and [`completionHandler`](cssearchquery/completionhandler.md) properties. When using handler blocks, you’re responsible for calling the [`start()`](cssearchquery/start().md) method to start the query. To deliver results, the query calls your  [`foundItemsHandler`](cssearchquery/founditemshandler.md) block one or more times, delivering new results with each call. The system executes your completion handler block only once after it finishes delivering all the results.
+If you prefer not to process the results using an [`AsyncSequence`](https://developer.apple.com/documentation/swift/asyncsequence), specify values for the [`foundItemsHandler`](cssearchquery/founditemshandler.md) and [`completionHandler`](cssearchquery/completionhandler.md) properties. When using handler blocks, you’re responsible for calling the [`start()`](cssearchquery/start().md) method to start the query. To deliver results, the query calls your  [`foundItemsHandler`](cssearchquery/founditemshandler.md) block one or more times, delivering new results with each call. The system executes your completion handler block only once after it finishes delivering all the results.
 
 > ❗ **Important**: Process results using either the [`results`](cssearchquery/results-swift.property.md) property or handler blocks, but not both.
 

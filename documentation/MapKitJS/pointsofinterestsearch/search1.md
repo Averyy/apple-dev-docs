@@ -23,9 +23,9 @@ A promise that resolves with a [`PointsOfInterestSearchResponse`](pointsofintere
 
 #### Discussion
 
-The [`search(callback, options)`](pointsofinterestsearch/search1.md) method returns a set of points of interest within the region defined and matching the [`PointOfInterestFilter`](pointofinterestfilter.md).
+The [`search()`](pointsofinterestsearch/search1.md) method returns a set of points of interest within the region defined and matching the [`PointOfInterestFilter`](pointofinterestfilter.md).
 
-MapKit JS invokes the `callback` function on failure and success with two arguments, `error` and `data` that represent failure and success information, respectively. You may optionally provide a delegate object instead of a callback. If you call [`cancel(promise)`](service/cancel.md) before MapKit JS responds, the system doesn’t call the callback or delegate.
+MapKit JS invokes the `callback` function on failure and success with two arguments, `error` and `data` that represent failure and success information, respectively. You may optionally provide a delegate object instead of a callback. If you call [`cancel()`](service/cancel.md) before MapKit JS responds, the system doesn’t call the callback or delegate.
 
 ## Parameters
 

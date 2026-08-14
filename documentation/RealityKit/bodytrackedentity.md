@@ -25,9 +25,9 @@ An entity used to animate a virtual character in an AR scene by tracking a real 
 
 Like a [`ModelEntity`](modelentity.md), a [`BodyTrackedEntity`](bodytrackedentity.md) has a [`ModelComponent`](modelcomponent.md) that defines its physical appearance. Unlike a model entity, a body-tracked entity lacks the components required to participate in collisions or physics simulations. Instead, a [`BodyTrackingComponent`](bodytrackingcomponent.md) drives the positioning and arrangement of the entity based on tracking information from the AR session.
 
-![Diagram showing the components present in the body-tracked](https://docs-assets.developer.apple.com/published/a7ef445bb1ab998fb177db5aa1f926fa/BodyTrackedEntity-1%402x.png)
+![Diagram showing the components present in the body-tracked](/images/com.apple.RealityKit/BodyTrackedEntity-1@2x.png)
 
-For an example of how to use a body-tracked entity, see [`Capturing Body Motion in 3D`](https://developer.apple.com/documentation/ARKit/capturing-body-motion-in-3d).
+For an example of how to use a body-tracked entity, see [`Capturing Body Motion in 3D`](https://developer.apple.com/documentation/arkit/capturing-body-motion-in-3d).
 
 ## Topics
 
@@ -46,30 +46,30 @@ For an example of how to use a body-tracked entity, see [`Capturing Body Motion 
 ### Inherits From
 - [Entity](entity.md)
 ### Conforms To
-- [CoordinateSpace3D](../Spatial/CoordinateSpace3D.md)
-- [CoordinateSpace3DFloat](../Spatial/CoordinateSpace3DFloat.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
+- [CoordinateSpace3D](../spatial/coordinatespace3d.md)
+- [CoordinateSpace3DFloat](../spatial/coordinatespace3dfloat.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [Equatable](../swift/equatable.md)
 - [EventSource](eventsource.md)
 - [HasBodyTracking](hasbodytracking.md)
 - [HasHierarchy](hashierarchy.md)
 - [HasModel](hasmodel.md)
 - [HasSynchronization](hassynchronization.md)
 - [HasTransform](hastransform.md)
-- [Hashable](../Swift/Hashable.md)
-- [Identifiable](../Swift/Identifiable.md)
-- [Observable](../Observation/Observable.md)
+- [Hashable](../swift/hashable.md)
+- [Identifiable](../swift/identifiable.md)
+- [Observable](../observation/observable.md)
 - [RealityCoordinateSpace](realitycoordinatespace.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 
 - [Creating an App for Face-Painting in AR](creating-an-app-for-face-painting-in-ar.md)
   Combine RealityKit’s face detection with PencilKit to implement virtual face-painting.
-- [Occluding virtual content with people](../ARKit/occluding-virtual-content-with-people.md)
+- [Occluding virtual content with people](../arkit/occluding-virtual-content-with-people.md)
   Cover your app’s virtual content with people that ARKit perceives in the camera feed.
-- [Placing entities using head and device transform](../visionOS/placing-entities-using-head-and-device-transform.md)
+- [Placing entities using head and device transform](../visionos/placing-entities-using-head-and-device-transform.md)
   Query and react to changes in the position and rotation of Apple Vision Pro.
 - [struct BodyTrackingComponent](bodytrackingcomponent.md)
   A component for tracking people in an AR session.

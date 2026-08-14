@@ -43,7 +43,7 @@ The following examples show a few common uses of quaternions.
 
 The following illustration shows a point, defined by `originVector`, rotated over the surface of a sphere by 60º about the x axis.
 
-![Image showing a point rotated over the surface of a sphere.](https://docs-assets.developer.apple.com/published/94b593cc8779bb7ac0809cc5eee606c1/media-2970089%402x.png)
+![Image showing a point rotated over the surface of a sphere.](/images/com.apple.accelerate/media-2970089@2x.png)
 
 To apply this rotation, you define the vector to be rotated and the quaternion that represents the rotation:
 
@@ -74,7 +74,7 @@ One of the advantages quaternions have over matrices when representing rotations
 
 The following image shows the spherical linear interpolation along the shortest arc between `q0` and `q1`, and along the longest arc between `q1` and `q2`.
 
-![Image showing the shortest and longest arcs between points on a sphere.](https://docs-assets.developer.apple.com/published/22d9ebcf06a0d166694bde232aeebc04/media-2969367%402x.png)
+![Image showing the shortest and longest arcs between points on a sphere.](/images/com.apple.accelerate/media-2969367@2x.png)
 
 The following code shows how the three points are defined in the preceding image:
 
@@ -123,7 +123,7 @@ To interpolate between multiple quaternions that define positions on the surface
 
 The following image illustrates a series of quaternions that define positions on the surface of a sphere, shown as points, and a line that shows the smooth interpolation between them.
 
-![Image showing a spline passing through multiple points on a sphere.](https://docs-assets.developer.apple.com/published/54c420ba8623a407c3cb9080ad5c3512/media-2969368%402x.png)
+![Image showing a spline passing through multiple points on a sphere.](/images/com.apple.accelerate/media-2969368@2x.png)
 
 Much like [`simd_slerp(_:_:_:)`](https://developer.apple.com/documentation/simd/simd_slerp(_:_:_:)-u2db), [`simd_spline(_:_:_:_:_:)`](https://developer.apple.com/documentation/simd/simd_spline(_:_:_:_:_:)-1ok51) accepts the two quaternions to interpolate between, but also requires the surrounding two quaternions. Given an array of quaternions named `rotations`, the following code iterates over each element, adding a line segment at each interpolated value to build the smooth line shown in the preceding image:
 

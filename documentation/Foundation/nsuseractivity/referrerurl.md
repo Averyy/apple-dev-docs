@@ -26,7 +26,7 @@ var referrerURL: URL? { get set }
   The URL of the webpage to load in a browser to continue the activity.
 - [let NSUserActivityTypeBrowsingWeb: String](nsuseractivitytypebrowsingweb.md)
   An activity that continues from Handoff or a universal link.
-- [let TVUserActivityTypeBrowsingChannelGuide: String](../TVServices/TVUserActivityTypeBrowsingChannelGuide.md)
+- [let TVUserActivityTypeBrowsingChannelGuide: String](../tvservices/tvuseractivitytypebrowsingchannelguide.md)
   An activity for viewing your app’s channel guide.
 
 

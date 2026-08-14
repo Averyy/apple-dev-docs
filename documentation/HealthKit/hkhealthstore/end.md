@@ -20,7 +20,7 @@ This method returns immediately; however, the work is performed asynchronously o
 
 ## Parameters
 
-- `workoutSession`: A currently running workout session. If the session is not running,  the system returns an [`invalidArgumentException`](https://developer.apple.com/documentation/Foundation/NSExceptionName/invalidArgumentException) exception.
+- `workoutSession`: A currently running workout session. If the session is not running,  the system returns an [`invalidArgumentException`](https://developer.apple.com/documentation/foundation/nsexceptionname/invalidargumentexception) exception.
 
 ## See Also
 

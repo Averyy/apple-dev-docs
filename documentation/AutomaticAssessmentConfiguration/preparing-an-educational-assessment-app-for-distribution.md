@@ -42,7 +42,7 @@ In assessment mode, macOS automatically limits access to one or more apps and re
 
 ##### Restrict Third Party Software Keyboards for Ios and Ipados
 
-AAC doesn’t restrict third-party software keyboards, and some third-party keyboards support searching from within the keyboard. If you don’t want these used in your assessment app, you restrict their use with [`application(_:shouldAllowExtensionPointIdentifier:)`](https://developer.apple.com/documentation/UIKit/UIApplicationDelegate/application(_:shouldAllowExtensionPointIdentifier:)) as shown in the code below:
+AAC doesn’t restrict third-party software keyboards, and some third-party keyboards support searching from within the keyboard. If you don’t want these used in your assessment app, you restrict their use with [`application(_:shouldAllowExtensionPointIdentifier:)`](https://developer.apple.com/documentation/uikit/uiapplicationdelegate/application(_:shouldallowextensionpointidentifier:)) as shown in the code below:
 
 ```swift
 // Implement this in the app delegate.
@@ -60,7 +60,7 @@ func application(_ application: UIApplication, shouldAllowExtensionPointIdentifi
 
 A context menu appears when someone selects text or uses a long-press gesture in a text field in iOS or iPadOS. AAC removes the Share, Translate, and Scan Text options from the top-level menu. It’s important to carefully review any additional items that appear and remove them from the menu if you don’t want students to access them during testing.
 
-The function [`buildMenu(with:)`](https://developer.apple.com/documentation/UIKit/UIResponder/buildMenu(with:)) removes unwanted items or the entire menu. The following code in the app’s delegate removes the Autofill menu (which gives access to Contacts and Passwords) to prevent people from using Autofill to access content they’ve added:
+The function [`buildMenu(with:)`](https://developer.apple.com/documentation/uikit/uiresponder/buildmenu(with:)) removes unwanted items or the entire menu. The following code in the app’s delegate removes the Autofill menu (which gives access to Contacts and Passwords) to prevent people from using Autofill to access content they’ve added:
 
 ```swift
 override func buildMenu(with builder: UIMenuBuilder) {
@@ -72,15 +72,15 @@ override func buildMenu(with builder: UIMenuBuilder) {
 }
 ```
 
-Additionally, the property [`lookup`](https://developer.apple.com/documentation/UIKit/UIMenu/Identifier-swift.struct/lookup) removes the Lookup menu, which is another item in this menu that assessment developers often prefer to remove. For more information about this property, see  [`UIMenu.Identifier`](https://developer.apple.com/documentation/UIKit/UIMenu/Identifier-swift.struct).
+Additionally, the property [`lookup`](https://developer.apple.com/documentation/uikit/uimenu/identifier-swift.struct/lookup) removes the Lookup menu, which is another item in this menu that assessment developers often prefer to remove. For more information about this property, see  [`UIMenu.Identifier`](https://developer.apple.com/documentation/uikit/uimenu/identifier-swift.struct).
 
-For more information about context menus, see Human Interface Guidelines > [`Context menus`](https://developer.apple.com/design/Human-Interface-Guidelines/context-menus).
+For more information about context menus, see Human Interface Guidelines > [`Context menus`](https://developer.apple.com/design/human-interface-guidelines/context-menus).
 
 ##### Request Permissions for Your Macos App
 
 AAC prevents the system from showing notifications to people. This means that notifications requesting the user to give permissions, like microphone or camera access, aren’t displayed to users. Therefore, it’s essential to request all necessary permissions before entering AAC, allowing people to respond appropriately. Additionally, rechecking permissions before entering AAC is advisable to confirm that users have granted all required permissions.
 
-[`Requesting Authorization for Media Capture on macOS`](https://developer.apple.com/documentation/BundleResources/requesting-authorization-for-media-capture-on-macos) explains how to prompt the user to authorize access to the camera and microphone.
+[`Requesting Authorization for Media Capture on macOS`](https://developer.apple.com/documentation/bundleresources/requesting-authorization-for-media-capture-on-macos) explains how to prompt the user to authorize access to the camera and microphone.
 
 ##### Control the Context Menu for Macos
 

@@ -8,16 +8,16 @@ A person may be deaf, have partial hearing loss, or have difficulty hearing soun
 
 People who are deaf or hard of hearing can use Apple’s hearing accessibility features to use hearing devices, enhance the sounds they hear, and filter out extraneous noises. Design and develop your app to support hearing accessibility features and provide a great experience for people who rely on these features.
 
-![An illustration that shows a person in a home office with a chair, desk, mug, potted plant, and Mac. The person is wearing AirPods and communicating using sign language to another participant on a video call on their Mac.](https://docs-assets.developer.apple.com/published/a448a891cf93fc2a0ef2d1a154c56009/accessibility-scene-hearing%402x.png)
+![An illustration that shows a person in a home office with a chair, desk, mug, potted plant, and Mac. The person is wearing AirPods and communicating using sign language to another participant on a video call on their Mac.](/images/com.apple.Accessibility/accessibility-scene-hearing@2x.png)
 
 ## Topics
 
 ### Supporting hearing accessibility features
 - [Hearing device support](hearing-device-support.md)
   Access information about paired hearing aid devices and streaming status.
-- [Music Haptics](../MediaAccessibility/music-haptics.md)
+- [Music Haptics](../mediaaccessibility/music-haptics.md)
   Play haptic tracks along with known music tracks.
-- [Captions](../MediaAccessibility/captions.md)
+- [Captions](../mediaaccessibility/captions.md)
   Coordinate the presentation of closed-captioned data for your app’s media files.
 
 ## See Also

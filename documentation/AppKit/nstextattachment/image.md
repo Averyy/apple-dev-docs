@@ -16,7 +16,7 @@ var image: NSImage? { get set }
 
 #### Discussion
 
-For details about using the [`UIImage`](https://developer.apple.com/documentation/UIKit/UIImage) class to create text attachments that automatically adjust to surrounding font and color attributes, see the [`init(image:)`](https://developer.apple.com/documentation/UIKit/NSTextAttachment/init(image:)) initializer.
+For details about using the [`UIImage`](https://developer.apple.com/documentation/uikit/uiimage) class to create text attachments that automatically adjust to surrounding font and color attributes, see the [`init(image:)`](https://developer.apple.com/documentation/uikit/nstextattachment/init(image:)) initializer.
 
 ## See Also
 

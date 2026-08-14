@@ -21,11 +21,11 @@ class func nsDirectionalEdgeInsets(for string: String) -> NSDirectionalEdgeInset
 
 #### Return Value
 
-A directional edge insets data structure. If the string is not well-formed, the function returns [`NSDirectionalEdgeInsetsZero`](https://developer.apple.com/documentation/AppKit/NSDirectionalEdgeInsetsZero).
+A directional edge insets data structure. If the string is not well-formed, the function returns [`NSDirectionalEdgeInsetsZero`](https://developer.apple.com/documentation/appkit/nsdirectionaledgeinsetszero).
 
 ## Parameters
 
-- `string`: A string whose contents are of the form “{top, leading, bottom, trailing}”, where top, leading, bottom, trailing are the floating-point component values of the [`NSDirectionalEdgeInsets`](https://developer.apple.com/documentation/AppKit/NSDirectionalEdgeInsets) structure. An example of a valid string is “`{3.0,8.0,3.0,5.0}`”. The string is not localized, so items are always separated with a comma.
+- `string`: A string whose contents are of the form “{top, leading, bottom, trailing}”, where top, leading, bottom, trailing are the floating-point component values of the [`NSDirectionalEdgeInsets`](https://developer.apple.com/documentation/appkit/nsdirectionaledgeinsets) structure. An example of a valid string is “`{3.0,8.0,3.0,5.0}`”. The string is not localized, so items are always separated with a comma.
 
 ## See Also
 

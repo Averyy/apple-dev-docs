@@ -39,7 +39,7 @@ VStack(alignment: .leading) {
 
 The code above uses an unusually large amount of tracking to make it easy to see the effect.
 
-![Three text views showing character groups with progressively](https://docs-assets.developer.apple.com/published/34e91c37a0c8ae95ca44b891a26e0797/SwiftUI-Text-tracking%402x.png)
+![Three text views showing character groups with progressively](/images/com.apple.SwiftUI/SwiftUI-Text-tracking@2x.png)
 
 The effect of tracking resembles that of the [`kerning(_:)`](text/kerning(_:).md) modifier, but adds or removes trailing whitespace, rather than changing character offsets. Also, using any nonzero amount of tracking disables nonessential ligatures, whereas kerning attempts to maintain ligatures.
 

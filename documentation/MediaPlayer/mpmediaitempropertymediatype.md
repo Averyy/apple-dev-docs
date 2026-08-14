@@ -22,7 +22,7 @@ let MPMediaItemPropertyMediaType: String
 
 #### Discussion
 
-This value is an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) object that represents an [`NSInteger`](https://developer.apple.com/documentation/ObjectiveC/NSInteger) data type. The `NSInteger` value represents a bit field flag, or set of flags, from [`MPMediaType`](mpmediatype.md).
+This value is an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) object that represents an [`NSInteger`](https://developer.apple.com/documentation/objectivec/nsinteger) data type. The `NSInteger` value represents a bit field flag, or set of flags, from [`MPMediaType`](mpmediatype.md).
 
 Can be used to build a media property predicate as described in [`MPMediaPropertyPredicate`](mpmediapropertypredicate.md).
 

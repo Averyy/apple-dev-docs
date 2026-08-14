@@ -13,7 +13,7 @@ Use CryptoKit to carry out operations like hashing, key generation, and encrypti
 
 ## See Also
 
-- [Complying with Encryption Export Regulations](../Security/complying-with-encryption-export-regulations.md)
+- [Complying with Encryption Export Regulations](../security/complying-with-encryption-export-regulations.md)
   Declare the use of encryption in your app to streamline the app submission process.
 - [Storing CryptoKit Keys in the Keychain](storing-cryptokit-keys-in-the-keychain.md)
   Convert between strongly typed cryptographic keys and native keychain types.

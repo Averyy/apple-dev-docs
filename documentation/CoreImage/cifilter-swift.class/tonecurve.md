@@ -51,7 +51,7 @@ func toneCurve(inputImage: CIImage) -> CIImage {
 }
 ```
 
-![Two versions of a photograph side by side. The photo on the left shows a small bunch of flowers photographed close up, in focus, with good light and no effects. In the photo on the right, a tone curve filter is applied, resulting in a brighter image.](https://docs-assets.developer.apple.com/published/0515ed4000c29807050a7d2e2ab4c91b/media-3545005%402x.png)
+![Two versions of a photograph side by side. The photo on the left shows a small bunch of flowers photographed close up, in focus, with good light and no effects. In the photo on the right, a tone curve filter is applied, resulting in a brighter image.](/images/com.apple.coreimage/media-3545005@2x.png)
 
 ## See Also
 

@@ -19,7 +19,7 @@ During a geotracking session, ARKit marks this location in the form of a *locati
 
 For example, when the user approaches a location anchor, an app may reveal a virtual signpost that explains a historic event that occurred there. Or, to form a street route, an app could render a virtual anchor in a series of location anchors that connect.
 
-![Figure of an AR app showing two views. The upper view displays a camera feed that captures a busy city intersection. A series of floating blue buoys form a path leading the user to turn right. In the lower view, a top-down map provides an alternate view of the same scene. Dots on the map correspond to the buoys seen in the camera feed, which appear to lead the user through the city.](https://docs-assets.developer.apple.com/published/3147e58a789e9fe8068eb9257a9f7c0c/arkit-3d-interaction-hero-image.png)
+![Figure of an AR app showing two views. The upper view displays a camera feed that captures a busy city intersection. A series of floating blue buoys form a path leading the user to turn right. In the lower view, a top-down map provides an alternate view of the same scene. Dots on the map correspond to the buoys seen in the camera feed, which appear to lead the user through the city.](/images/com.apple.arkit/arkit-3d-interaction-hero-image.png)
 
 > **Note**: ARKit supports geotracking only with the device’s rear camera.
 
@@ -44,7 +44,7 @@ If the device doesn’t support geotracking, the sample project stops. Optionall
 
 #### Display an Ar View and Map View
 
-As an AR app, the sample project renders location anchors using an [`ARView`](https://developer.apple.com/documentation/RealityKit/ARView). To reinforce the correspondence between geographic locations and positions in the session’s local space, the sample project also displays a map view [`MKMapView`](https://developer.apple.com/documentation/MapKit/MKMapView) that marks the anchors from a top-down perspective. The app displays both views simultaneously by using a stack view ([`UIStackView`](https://developer.apple.com/documentation/UIKit/UIStackView)) with the camera feed on top. See the sample’s `View Controller Scene` within the project’s `Main.storyboard`.
+As an AR app, the sample project renders location anchors using an [`ARView`](https://developer.apple.com/documentation/realitykit/arview). To reinforce the correspondence between geographic locations and positions in the session’s local space, the sample project also displays a map view [`MKMapView`](https://developer.apple.com/documentation/mapkit/mkmapview) that marks the anchors from a top-down perspective. The app displays both views simultaneously by using a stack view ([`UIStackView`](https://developer.apple.com/documentation/uikit/uistackview)) with the camera feed on top. See the sample’s `View Controller Scene` within the project’s `Main.storyboard`.
 
 #### Check Availability and Run a Session
 
@@ -171,7 +171,7 @@ func session(_ session: ARSession, didAdd anchors: [ARAnchor]) {
             self.arView.scene.addAnchor(Entity.placemarkEntity(for: geoAnchor))
 ```
 
-To establish visual correspondence in the map view, the sample project adds an [`MKOverlay`](https://developer.apple.com/documentation/MapKit/MKOverlay) that represents the anchor on the map.
+To establish visual correspondence in the map view, the sample project adds an [`MKOverlay`](https://developer.apple.com/documentation/mapkit/mkoverlay) that represents the anchor on the map.
 
 ```swift
 let anchorIndicator = AnchorIndicator(center: geoAnchor.coordinate)
@@ -209,7 +209,7 @@ An app renders location anchors using an asset that’s less exact if geotrackin
 
 #### Center the Map As the User Moves
 
-The sample project uses updates from [`Core Location`](https://developer.apple.com/documentation/CoreLocation) to center the user in the map view. When the user moves around, Core Location notifies the delegate of any updates in geographic position. The sample project monitors this event by implementing the relevant callback.
+The sample project uses updates from [`Core Location`](https://developer.apple.com/documentation/corelocation) to center the user in the map view. When the user moves around, Core Location notifies the delegate of any updates in geographic position. The sample project monitors this event by implementing the relevant callback.
 
 ```swift
 func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {

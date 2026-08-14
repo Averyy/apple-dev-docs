@@ -21,7 +21,7 @@ Creates a view that displays available devices.
 - `onSelect`: A closure that the framework calls when someone selects a device in the picker view, or cancels the view.
 - `label`: A label the network device picker displays.
 - `fallback`: A view that the framework displays if the current device doesn’t support device discovery.
-- `parameters`: Parameters for your network connection. Use [`applicationService`](https://developer.apple.com/documentation/Network/NWParameters/applicationService) to create a default set of parameters that create an encrypted connection with the other devices. You can also add a [`NWProtocolFramer`](https://developer.apple.com/documentation/Network/NWProtocolFramer) to provide an application-level messaging protocol.
+- `parameters`: Parameters for your network connection. Use [`applicationService`](https://developer.apple.com/documentation/network/nwparameters/applicationservice) to create a default set of parameters that create an encrypted connection with the other devices. You can also add a [`NWProtocolFramer`](https://developer.apple.com/documentation/network/nwprotocolframer) to provide an application-level messaging protocol.
 
 ## See Also
 

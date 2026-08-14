@@ -54,9 +54,9 @@ print(c)
 
 - `__A`: Pointer to single-precision real input scalar.
 - `__B`: Single-precision real input vector.
-- `__IB`: Stride for  .
+- `__IB`: Stride for `B`.
 - `__C`: Single-precision real output vector.
-- `__IC`: Stride for  .
+- `__IC`: Stride for `C`.
 - `__N`: The number of elements to process.
 
 

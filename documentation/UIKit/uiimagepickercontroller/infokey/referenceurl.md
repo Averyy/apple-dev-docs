@@ -20,7 +20,7 @@ static let referenceURL: UIImagePickerController.InfoKey
 
 After the user edits a picked item—such as by cropping an image or trimming a movie—the URL continues to point to the original version of the picked item.
 
-The value for this key is an [`NSURL`](https://developer.apple.com/documentation/Foundation/NSURL) object.
+The value for this key is an [`NSURL`](https://developer.apple.com/documentation/foundation/nsurl) object.
 
 ## See Also
 

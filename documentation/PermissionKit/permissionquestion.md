@@ -49,9 +49,9 @@ final class PermissionQuestion<Topic> where Topic : QuestionTopic
 ## Relationships
 
 ### Conforms To
-- [Decodable](../Swift/Decodable.md)
-- [Encodable](../Swift/Encodable.md)
-- [Identifiable](../Swift/Identifiable.md)
+- [Decodable](../swift/decodable.md)
+- [Encodable](../swift/encodable.md)
+- [Identifiable](../swift/identifiable.md)
 
 ## See Also
 

@@ -117,7 +117,7 @@ The following property appears when you set **Shader** to **Shader Graph**.
 
 > 💡 **Tip**: You can replace images, colors, or values for any of the PBR attributes with another image, color, or value of your choosing. Any changes you make to a material affect any entity bound to that material.
 
-![A screenshot of the Inspector view showing material properties.](https://docs-assets.developer.apple.com/published/e50329a716d03b305844afd25212d299/PBRProperties%402x.png)
+![A screenshot of the Inspector view showing material properties.](/images/RealityComposerPro/PBRProperties@2x.png)
 
 ## See Also
 

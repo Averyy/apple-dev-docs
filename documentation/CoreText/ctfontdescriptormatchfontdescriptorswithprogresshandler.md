@@ -22,7 +22,7 @@ func CTFontDescriptorMatchFontDescriptorsWithProgressHandler(_ descriptors: CFAr
 
 #### Return Value
 
-[`false`](https://developer.apple.com/documentation/Swift/false) if the system couldn’t start the matching process.
+[`false`](https://developer.apple.com/documentation/swift/false) if the system couldn’t start the matching process.
 
 #### Discussion
 
@@ -32,7 +32,7 @@ This function returns immediately, but it can take longer to finish the process.
 
 - `descriptors`: An array of descriptors to process.
 - `mandatoryAttributes`: A set of attributes to match.
-- `progressBlock`: A callback block that indicates the progress of the matching process. Return [`true`](https://developer.apple.com/documentation/Swift/true) to continue or [`false`](https://developer.apple.com/documentation/Swift/false) to cancel the process. This block is called on a private serial queue.
+- `progressBlock`: A callback block that indicates the progress of the matching process. Return [`true`](https://developer.apple.com/documentation/swift/true) to continue or [`false`](https://developer.apple.com/documentation/swift/false) to cancel the process. This block is called on a private serial queue.
 
 ## See Also
 

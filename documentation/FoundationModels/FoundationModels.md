@@ -21,7 +21,7 @@ Perform tasks with models that specialize in language understanding, structured 
 
 The Foundation Models framework provides access to any large language model, like the on-device and Private Cloud Compute models designed for Apple Intelligence. These models help you perform intelligent tasks specific to your use case.
 
-![An illustration that represents a foundation model.](https://docs-assets.developer.apple.com/published/b3611fd2257678850b9584e3d05b7438/foundation-models-framework-hero%402x.png)
+![An illustration that represents a foundation model.](/images/com.apple.foundationmodels/foundation-models-framework-hero@2x.png)
 
 On-device models excel at a diverse range of text generation tasks, like summarization, entity extraction, text and image understanding, refinement, dialog for games, generating creative content, and more. When you need more reasoning capabilities and context size, use Private Cloud Compute or any server model provider.
 
@@ -38,7 +38,7 @@ To use Apple Foundation Models, people need a device that supports Apple Intelli
 ## Topics
 
 ### Essentials
-- [Foundation Models updates](../Updates/FoundationModels.md)
+- [Foundation Models updates](../updates/foundationmodels.md)
   Learn about important changes to Foundation Models.
 - [Generating content and performing tasks with Foundation Models](generating-content-and-performing-tasks-with-foundation-models.md)
   Enhance the experience in your app by prompting an on-device large language model.
@@ -123,7 +123,7 @@ To use Apple Foundation Models, people need a device that supports Apple Intelli
 ### Private Cloud Compute
 - [Adding server-side intelligence with Private Cloud Compute](adding-server-side-intelligence-with-private-cloud-compute.md)
   Access a larger context window and stronger reasoning by routing session requests through Private Cloud Compute.
-- [com.apple.developer.private-cloud-compute](../BundleResources/Entitlements/com.apple.developer.private-cloud-compute.md)
+- [com.apple.developer.private-cloud-compute](../bundleresources/entitlements/com.apple.developer.private-cloud-compute.md)
   A Boolean value that indicates whether the app can use Private Cloud Compute.
 - [class PrivateCloudComputeLanguageModel](privatecloudcomputelanguagemodel.md)
   A variant of Apple Foundation Models that runs on Private Cloud Compute to provide enhanced capabilities while maintaining privacy guarantees.
@@ -156,7 +156,7 @@ To use Apple Foundation Models, people need a device that supports Apple Intelli
 ### Performance and evaluation
 - [Evaluating prompts to measure performance and improve model responses](evaluating-prompts-to-measure-performance-and-improve-model-responses.md)
   Systematically measure and improve the quality of your prompts by using structured evaluation.
-- [Evaluating language model responses](../Evaluations/evaluating-language-model-responses.md)
+- [Evaluating language model responses](../evaluations/evaluating-language-model-responses.md)
   Build an evaluation that runs your intelligence-powered feature against samples and scores each response.
 - [Analyzing the runtime performance of your Foundation Models app](analyzing-the-runtime-performance-of-your-foundation-models-app.md)
   Measure how prompts, responses, and tool calls affect token consumption and response times in Instruments.

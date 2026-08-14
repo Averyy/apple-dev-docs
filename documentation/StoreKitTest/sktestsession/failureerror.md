@@ -21,7 +21,7 @@ var failureError: SKError.Code { get set }
 
 #### Discussion
 
-You can force an error by setting [`failTransactionsEnabled`](sktestsession/failtransactionsenabled.md) to `true` and setting [`failureError`](sktestsession/failureerror.md) value to one of these supported error codes: [`SKError.Code.unknown`](https://developer.apple.com/documentation/StoreKit/SKError/Code/unknown), [`SKError.Code.invalidOfferIdentifier`](https://developer.apple.com/documentation/StoreKit/SKError/Code/invalidOfferIdentifier), [`SKError.Code.invalidSignature`](https://developer.apple.com/documentation/StoreKit/SKError/Code/invalidSignature), [`SKError.Code.missingOfferParams`](https://developer.apple.com/documentation/StoreKit/SKError/Code/missingOfferParams), [`SKError.Code.invalidOfferPrice`](https://developer.apple.com/documentation/StoreKit/SKError/Code/invalidOfferPrice).
+You can force an error by setting [`failTransactionsEnabled`](sktestsession/failtransactionsenabled.md) to `true` and setting [`failureError`](sktestsession/failureerror.md) value to one of these supported error codes: [`SKError.Code.unknown`](https://developer.apple.com/documentation/storekit/skerror/code/unknown), [`SKError.Code.invalidOfferIdentifier`](https://developer.apple.com/documentation/storekit/skerror/code/invalidofferidentifier), [`SKError.Code.invalidSignature`](https://developer.apple.com/documentation/storekit/skerror/code/invalidsignature), [`SKError.Code.missingOfferParams`](https://developer.apple.com/documentation/storekit/skerror/code/missingofferparams), [`SKError.Code.invalidOfferPrice`](https://developer.apple.com/documentation/storekit/skerror/code/invalidofferprice).
 
 Use these settings to test your how your app responds to failed transactions.
 

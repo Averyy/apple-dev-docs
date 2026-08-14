@@ -53,7 +53,7 @@ The `ChecklistToggleStyle` toggle style provides a way to both observe and modif
 
 You can present a collection of toggles that use this style in a stack:
 
-![A screenshot of three items stacked vertically. All have a circle](https://docs-assets.developer.apple.com/published/9b7fe9eb8c503266cef0989aaa76b4f2/ToggleStyle-makeBody-1-iOS%402x.png)
+![A screenshot of three items stacked vertically. All have a circle](/images/com.apple.SwiftUI/ToggleStyle-makeBody-1-iOS@2x.png)
 
 When updating a view hierarchy, the system calls your implementation of the `makeBody(configuration:)` method for each [`Toggle`](toggle.md) instance that uses the associated style.
 
@@ -85,7 +85,7 @@ Toggle("Button", isOn: $isButtonOn)
 
 Both toggles appear with the usual styling, each with a red border:
 
-![A screenshot of a switch toggle with a red border, and a button](https://docs-assets.developer.apple.com/published/ee962c276c8f7fe7def8e6accfb25adc/ToggleStyle-makeBody-2-iOS%402x.png)
+![A screenshot of a switch toggle with a red border, and a button](/images/com.apple.SwiftUI/ToggleStyle-makeBody-2-iOS@2x.png)
 
 Apply the custom style closer to the toggle than the modified style because SwiftUI evaluates style view modifiers in order from outermost to innermost. If you apply the styles in the other order, the red border style doesn’t have an effect, because the built-in styles override it completely.
 

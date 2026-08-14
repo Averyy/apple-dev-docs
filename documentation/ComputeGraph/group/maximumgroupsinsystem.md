@@ -23,7 +23,7 @@ The total number of groups that can exist in the system
 
 Use this function to determine the total capacity of groups in the system, which is useful for normalizing group indices or creating group-based patterns.
 
-> **Note**: ![Graph](https://docs-assets.developer.apple.com/published/466003d2a30df3a6ee16e1ae9f4166f6/group__maximumGroupsInSystem.svg)
+> **Note**: ![Graph](/images/com.apple.computegraph/group__maximumGroupsInSystem.svg)
 
 
 ---

@@ -26,7 +26,7 @@ Notification that a provider has been terminated, sent after recursing up the st
 
 - `provider`: The terminated provider of this object.
 - `options`: Options originally passed to terminate.
-- `defer`: If there is pending I/O that requires this object to persist, and the provider is not opened by this object set   to   and call the   implementation when the I/O completes. Otherwise, leave   set to its default value of  .
+- `defer`: If there is pending I/O that requires this object to persist, and the provider is not opened by this object set `defer` to `true` and call the `IOService::didTerminate()` implementation when the I/O completes. Otherwise, leave `defer` set to its default value of `false`.
 
 ## See Also
 

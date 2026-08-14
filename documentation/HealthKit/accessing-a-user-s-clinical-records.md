@@ -16,7 +16,7 @@ This sample demonstrates how to request access to a user’s clinical records th
 
 ##### Configure the Sample Code Project
 
-To use HealthKit, you must first enable the HealthKit capability and include the [`NSHealthShareUsageDescription`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSHealthShareUsageDescription) key in your app’s `Info.plist` file, as described in [`Accessing Health Records`](accessing-health-records.md). To access the clinical records, check the Clinical Health Records checkbox in the HealthKit capability and include the [`NSHealthClinicalHealthRecordsShareUsageDescription`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSHealthClinicalHealthRecordsShareUsageDescription) key in your app’s `Info.plist` file.
+To use HealthKit, you must first enable the HealthKit capability and include the [`NSHealthShareUsageDescription`](https://developer.apple.com/documentation/bundleresources/information-property-list/nshealthshareusagedescription) key in your app’s `Info.plist` file, as described in [`Accessing Health Records`](accessing-health-records.md). To access the clinical records, check the Clinical Health Records checkbox in the HealthKit capability and include the [`NSHealthClinicalHealthRecordsShareUsageDescription`](https://developer.apple.com/documentation/bundleresources/information-property-list/nshealthclinicalhealthrecordsshareusagedescription) key in your app’s `Info.plist` file.
 
 The sample app enables the capability and provides the usage string.
 
@@ -29,7 +29,7 @@ When you first run the app, it hasn’t requested permission to read or share an
 
 ##### Define the Sample Types to Request
 
-The app defines the clinical record sample types using the [`HKClinicalTypeIdentifier`](HKClinicalTypeIdentifier.md) enumeration. The app must request permission to read all the types that it intends to use. Note that the app may define both clinical records and standard HealthKit sample types at the same time.
+The app defines the clinical record sample types using the [`HKClinicalTypeIdentifier`](hkclinicaltypeidentifier.md) enumeration. The app must request permission to read all the types that it intends to use. Note that the app may define both clinical records and standard HealthKit sample types at the same time.
 
 ```swift
 /// An enumeration that defines two categories of data types: Health Records and Fitness Data.
@@ -121,7 +121,7 @@ Typically, apps that read or share HealthKit data automatically request authoriz
 
 ##### Query for Health Records
 
-To query for clinical records, the app uses an [`HKSampleQuery`](HKSampleQuery.md) as shown below.
+To query for clinical records, the app uses an [`HKSampleQuery`](hksamplequery.md) as shown below.
 
 ```swift
 /// Use HKSampleQuery to query the HealthKit store for samples by type.

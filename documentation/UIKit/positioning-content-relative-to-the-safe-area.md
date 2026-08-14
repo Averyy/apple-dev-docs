@@ -12,7 +12,7 @@ Use safe areas as an aid to laying out your content. Each view has its own layou
 
 The following image shows two different devices with a view of the Calendar app and the safe area associated with each one.
 
-![Safe areas in the Calendar app on two different iPhones.](https://docs-assets.developer.apple.com/published/ffae6eeb748a98b98bf68da66fa244db/media-2936293%402x.png)
+![Safe areas in the Calendar app on two different iPhones.](/images/com.apple.uikit/media-2936293@2x.png)
 
 ##### Extend the Safe Area to Include Custom Views
 
@@ -20,7 +20,7 @@ Your container view controller can display its own content views over the views 
 
 To extend the safe area of an embedded child view controller, modify its [`additionalSafeAreaInsets`](uiviewcontroller/additionalsafeareainsets.md) property. Suppose you define a container view controller that displays custom views along the bottom and right edges of the screen, as shown in the following image. Because the child view controller’s content is underneath the custom views, you must extend the bottom and right insets of the child view controller’s safe area to account for those views.
 
-![Adjusting the safe area to account for custom views.](https://docs-assets.developer.apple.com/published/07e0575dc30eaa858523501b9f19ad09/media-2927047%402x.png)
+![Adjusting the safe area to account for custom views.](/images/com.apple.uikit/media-2927047@2x.png)
 
 The following code shows the [`viewDidAppear(_:)`](uiviewcontroller/viewdidappear(_:).md) method of the container view controller that extends the safe area of its child view controller to account for the custom views, as shown in the image. Make your modifications in this method because the safe area insets for a view aren’t accurate until the view is added to a view hierarchy.
 

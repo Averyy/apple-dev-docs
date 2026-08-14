@@ -28,9 +28,9 @@ Thread-safe since Mac OS version 10.2.
 
 ## Parameters
 
-- `inNameLen`: The number of characters in the filename specified by the   parameter.
+- `inNameLen`: The number of characters in the filename specified by the `inNameBuffer` parameter.
 - `inNameBuffer`: The buffer containing the filename’s Unicode characters.
-- `outExtStartIndex`: A pointer to a value of type   that, on return, will give the starting index of the extension within the filename. If the name does not contain a valid extension (one with no spaces in it), the value on return will be  .
+- `outExtStartIndex`: A pointer to a value of type `UniCharCount` that, on return, will give the starting index of the extension within the filename. If the name does not contain a valid extension (one with no spaces in it), the value on return will be `kLSInvalidExtensionIndex`.
 
 ## See Also
 

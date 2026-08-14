@@ -21,7 +21,7 @@ The window that returned a non-`nil` value or `nil` if all windows returned nil 
 ## Parameters
 
 - `selector`: The selector to perform on each window. This method must not take any arguments and must return a value whose type that can be compared to `nil`.
-- `inOrder`: If [`true`](https://developer.apple.com/documentation/Swift/true), the `aSelector` message is sent to each of the window server’s onscreen windows, going in z-order, until one returns a non-`nil` value. A minimized window is not considered to be onscreen for this check. If [`false`](https://developer.apple.com/documentation/Swift/false), the message is sent to all windows in `NSApp`’s window list, regardless of whether or not they are onscreen. This order is unspecified.
+- `inOrder`: If [`true`](https://developer.apple.com/documentation/swift/true), the `aSelector` message is sent to each of the window server’s onscreen windows, going in z-order, until one returns a non-`nil` value. A minimized window is not considered to be onscreen for this check. If [`false`](https://developer.apple.com/documentation/swift/false), the message is sent to all windows in `NSApp`’s window list, regardless of whether or not they are onscreen. This order is unspecified.
 
 ## See Also
 

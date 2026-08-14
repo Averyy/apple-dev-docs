@@ -34,7 +34,7 @@ Download the latest public version of Xcode from the App Store. Download prerele
 
 Xcode 12.2 and later automatically adds the arm64 architecture to the list of standard architectures for all macOS binaries, including apps and libraries. During the debugging and testing process, Xcode builds only for the current system architecture by default. However, it automatically builds a universal binary for the release version of your code.
 
-![A screenshot of Xcode that shows the Architectures build setting with the standard architectures selected.](https://docs-assets.developer.apple.com/published/d23f0e7ee03976a6c074e6f024e7d565/building-a-universal-macos-binary-1%402x.png)
+![A screenshot of Xcode that shows the Architectures build setting with the standard architectures selected.](/images/com.apple.Apple-Silicon/building-a-universal-macos-binary-1@2x.png)
 
 If you customized the Architectures build setting in your Xcode project, remove your customizations and use the Standard Architectures setting instead.
 
@@ -148,11 +148,11 @@ For information about how to determine whether your app is running as a translat
 
 For universal binaries, the system prefers to execute the slice that is native to the current platform. On an Intel-based Mac computer, the system always executes the `x86_64` slice of the binary. On Apple silicon, the system prefers to execute the `arm64` slice when one is present. Users can force the system to run the app under Rosetta translation by enabling the appropriate option from the app’s Get Info window in the Finder.
 
-If you never want users to run your app under Rosetta translation, add the [`LSRequiresNativeExecution`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/LSRequiresNativeExecution) key to your app’s `Info.plist` file. When that key is present and set to `YES`, the system prevents your app from running under translation. In addition, the system removes the Rosetta translation option from your app’s Get Info window. Don’t include this key until you verify that your app runs correctly on both Apple silicon and Intel-based Mac computers.
+If you never want users to run your app under Rosetta translation, add the [`LSRequiresNativeExecution`](https://developer.apple.com/documentation/bundleresources/information-property-list/lsrequiresnativeexecution) key to your app’s `Info.plist` file. When that key is present and set to `YES`, the system prevents your app from running under translation. In addition, the system removes the Rosetta translation option from your app’s Get Info window. Don’t include this key until you verify that your app runs correctly on both Apple silicon and Intel-based Mac computers.
 
-If you want to prioritize one architecture, without preventing users from running your app under translation, add the [`LSArchitecturePriority`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/LSArchitecturePriority) key to your app’s `Info.plist` file. The value of this key is an ordered array of strings, which define the priority order for selecting an architecture.
+If you want to prioritize one architecture, without preventing users from running your app under translation, add the [`LSArchitecturePriority`](https://developer.apple.com/documentation/bundleresources/information-property-list/lsarchitecturepriority) key to your app’s `Info.plist` file. The value of this key is an ordered array of strings, which define the priority order for selecting an architecture.
 
-> **Note**: If an app doesn’t contain an executable binary, the system may run it under Rosetta translation as a precautionary measure to prevent potential runtime issues. For example, the system runs script-only apps under Rosetta translation. If you verified that your app runs correctly on both Apple silicon and Intel-based Mac computers, add the [`LSArchitecturePriority`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/LSArchitecturePriority) key to your app’s `Info.plist` file and list the `arm64` architecture first.
+> **Note**: If an app doesn’t contain an executable binary, the system may run it under Rosetta translation as a precautionary measure to prevent potential runtime issues. For example, the system runs script-only apps under Rosetta translation. If you verified that your app runs correctly on both Apple silicon and Intel-based Mac computers, add the [`LSArchitecturePriority`](https://developer.apple.com/documentation/bundleresources/information-property-list/lsarchitecturepriority) key to your app’s `Info.plist` file and list the `arm64` architecture first.
 
 ## See Also
 

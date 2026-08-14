@@ -34,7 +34,7 @@ Chart(data) {
 }
 ```
 
-![A scatter plot with wing width plotted on the x-axis and wing height plotted on the y-axis. There are 12 points on the chart that demonstrate a roughly linear relationship between wing width and height.](https://docs-assets.developer.apple.com/published/fca032573a6787a1f164ba898618e71a/PointMarkSwift.PointMarkScatterChart%402x.png)
+![A scatter plot with wing width plotted on the x-axis and wing height plotted on the y-axis. There are 12 points on the chart that demonstrate a roughly linear relationship between wing width and height.](/images/com.apple.Charts/PointMarkSwift.PointMarkScatterChart@2x.png)
 
 For more background, see the first example used in [`PointMark`](pointmark.md) which shows the structure that contains the `wingLength` and `wingHeight` properties.
 

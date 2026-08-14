@@ -25,7 +25,7 @@ This function obtains a list of the papers that a given printer claims to suppor
 ## Parameters
 
 - `printer`: The printer whose paper list you want to obtain.
-- `paperList`: A pointer to your   variable. On return, the variable refers to a Core Foundation array containing the paper list for the specified printer. Each element in the array is an object of type  . You should not release the array without first retaining it.
+- `paperList`: A pointer to your [`CFArray`](https://developer.apple.com/documentation/corefoundation/cfarray) variable. On return, the variable refers to a Core Foundation array containing the paper list for the specified printer. Each element in the array is an object of type [`PMPaper`](pmpaper.md). You should not release the array without first retaining it.
 
 ## See Also
 

@@ -18,7 +18,7 @@ class NSPrintInfo
 
 A shared [`NSPrintInfo`](nsprintinfo.md) object is automatically created for an app and is used by default for all printing jobs for that app. The printing information in an [`NSPrintInfo`](nsprintinfo.md) object is stored in a dictionary. To access the standard attributes in the dictionary directly, this class defines a set of keys and provides the [`dictionary()`](nsprintinfo/dictionary().md) method. You can also initialize an instance of this class using the [`init(dictionary:)`](nsprintinfo/init(dictionary:).md) method.
 
-You can use this dictionary to store custom information associated with a print job. Any non-object values should be stored as [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) or [`NSValue`](https://developer.apple.com/documentation/Foundation/NSValue) objects in the dictionary. See [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) for a list of types which should be stored as numbers. For other non-object values, use the [`NSValue`](https://developer.apple.com/documentation/Foundation/NSValue) class.
+You can use this dictionary to store custom information associated with a print job. Any non-object values should be stored as [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) or [`NSValue`](https://developer.apple.com/documentation/foundation/nsvalue) objects in the dictionary. See [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) for a list of types which should be stored as numbers. For other non-object values, use the [`NSValue`](https://developer.apple.com/documentation/foundation/nsvalue) class.
 
 To store custom information that belongs in printing presets you should use the dictionary returned by the [`printSettings`](nsprintinfo/printsettings.md) method.
 
@@ -119,16 +119,16 @@ To store custom information that belongs in printing presets you should use the 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCoding](../Foundation/NSCoding.md)
-- [NSCopying](../Foundation/NSCopying.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCoding](../foundation/nscoding.md)
+- [NSCopying](../foundation/nscopying.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

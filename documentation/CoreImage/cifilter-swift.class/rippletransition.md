@@ -31,11 +31,11 @@ The ripple transition filter uses the following properties:
 
 - **`inputImage`**: The starting image with the type [`CIImage`](ciimage.md).
 - **`targetImage`**: The ending image with the type [`CIImage`](ciimage.md).
-- **`center`**: A set of coordinates marking the center of the image as a [`CGPoint`](https://developer.apple.com/documentation/CoreFoundation/CGPoint).
-- **`width`**: A `float` representing the width of the ripple effect as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
-- **`extent`**: A [`CGRect`](https://developer.apple.com/documentation/CoreFoundation/CGRect) representing the size of the ripple effect.
-- **`scale`**: A `float` representing the scale of the effect as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
-- **`time`**: A `float` representing the parametric time of the transition from start (at time 0) to end (at time 1) as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+- **`center`**: A set of coordinates marking the center of the image as a [`CGPoint`](https://developer.apple.com/documentation/corefoundation/cgpoint).
+- **`width`**: A `float` representing the width of the ripple effect as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
+- **`extent`**: A [`CGRect`](https://developer.apple.com/documentation/corefoundation/cgrect) representing the size of the ripple effect.
+- **`scale`**: A `float` representing the scale of the effect as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
+- **`time`**: A `float` representing the parametric time of the transition from start (at time 0) to end (at time 1) as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
 
 The following code creates a filter that transitions from the input image to the target image with a water-like ripple effect.
 
@@ -53,7 +53,7 @@ func ripple (inputImage: CIImage, targetImage: CIImage) -> CIImage {
 }
 ```
 
-![Three photographs. In the photo on the left, there are multiple small purple flowers photographed close up with good lighting, and the background has a slight blur. In the photograph on the right is a tall building with two trees directly in front of the building. In the center photograph, a ripple transition filter is applied, resulting in a still photo of the moving transition. The left photograph is overlaid on the phot on the right appearing as a ripple in a pond, slowly fading the flower image to become the city photograph.](https://docs-assets.developer.apple.com/published/97dcd9cd4323a89726741080b83c131f/media-3616425%402x.png)
+![Three photographs. In the photo on the left, there are multiple small purple flowers photographed close up with good lighting, and the background has a slight blur. In the photograph on the right is a tall building with two trees directly in front of the building. In the center photograph, a ripple transition filter is applied, resulting in a still photo of the moving transition. The left photograph is overlaid on the phot on the right appearing as a ripple in a pond, slowly fading the flower image to become the city photograph.](/images/com.apple.coreimage/media-3616425@2x.png)
 
 ## See Also
 

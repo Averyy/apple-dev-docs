@@ -17,7 +17,7 @@ var intendedSpatialAudioExperience: any SpatialAudioExperience { get set }
 
 #### Discussion
 
-If unspecified, the property value defaults to [`CAAutomaticSpatialAudio`](https://developer.apple.com/documentation/AudioToolbox/CAAutomaticSpatialAudio).
+If unspecified, the property value defaults to [`CAAutomaticSpatialAudio`](https://developer.apple.com/documentation/audiotoolbox/caautomaticspatialaudio).
 
 ## See Also
 

@@ -15,7 +15,7 @@ let kCGWindowName: CFString
 
 #### Discussion
 
-The key that identifies the name of the window, as configured in Quartz. The value for this key is a [`CFString`](https://developer.apple.com/documentation/CoreFoundation/CFString) type. (Note that few applications set the Quartz window name.)
+The key that identifies the name of the window, as configured in Quartz. The value for this key is a [`CFString`](https://developer.apple.com/documentation/corefoundation/cfstring) type. (Note that few applications set the Quartz window name.)
 
 ## See Also
 

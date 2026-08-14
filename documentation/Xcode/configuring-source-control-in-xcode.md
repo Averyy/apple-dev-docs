@@ -12,7 +12,7 @@ Xcode lets you customize many default options for working with source control re
 
 In the Source Control settings, select the “Enable source control” option to enable the actions in the Integrate menu and the Source Control navigator. Enabling source control also enables the “Git settings” option under Settings, which you use to configure Git integration options.
 
-![The Xcode Settings dialog showing the Source Control settings. The Enable Source Control option and each of its suboptions are selected. The Show Source Control changes option is also selected.](https://docs-assets.developer.apple.com/published/9130d1d8ccd9832a518f6bd28e73e512/configuring-source-control-in-xcode-1%402x.png)
+![The Xcode Settings dialog showing the Source Control settings. The Enable Source Control option and each of its suboptions are selected. The Show Source Control changes option is also selected.](/images/com.apple.Xcode/configuring-source-control-in-xcode-1@2x.png)
 
 ##### Choose Automatic Source Control Behavior
 
@@ -41,7 +41,7 @@ The Source Control navigator setting specifies how Xcode sorts the files in the 
 
 To configure default settings for Git repositories that you manage through Xcode, click “Git settings.”
 
-![The Xcode Settings dialog showing the Source Control > Git Settings selected. The Author name and Author email fields contain example values.](https://docs-assets.developer.apple.com/published/584916c321c7716f1f32acece10603ef/configuring-source-control-in-xcode-2%402x.png)
+![The Xcode Settings dialog showing the Source Control > Git Settings selected. The Author name and Author email fields contain example values.](/images/com.apple.Xcode/configuring-source-control-in-xcode-2@2x.png)
 
 Customize the Author Name and Author Email to use in the source control history. Users can Control-click a history entry to email the author.
 

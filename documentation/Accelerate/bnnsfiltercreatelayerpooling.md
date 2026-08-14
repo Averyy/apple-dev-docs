@@ -24,7 +24,7 @@ func BNNSFilterCreateLayerPooling(_ layer_params: UnsafePointer<BNNSLayerParamet
 
 Use a pooling layer to downsample an input, selecting, for example, the average or the maximum value in a specified kernel size. The following figure illustrates how a 2 x 2 maximum pooling kernel samples each 2 x 2 block of values of 4 x 4 source. The highlighted block contains the values `[3, 4, 0, 0]`, so the maximum value passed to the destination element in `output` is `4`.
 
-![Figure that shows a two dimensional four times four source matrix downsampled using a two times two pooling kernel that returns a three times three result. The operation writes the maximum value of each two times two block from the source matrix to the result.](https://docs-assets.developer.apple.com/published/270ddffd5acbd5245928a01069909a5d/media-3633103%402x.png)
+![Figure that shows a two dimensional four times four source matrix downsampled using a two times two pooling kernel that returns a three times three result. The operation writes the maximum value of each two times two block from the source matrix to the result.](/images/com.apple.accelerate/media-3633103@2x.png)
 
 The following code shows how you apply pooling to the input in the above figure. Note that the input is a 2 x 2 x 1 [`BNNSDataLayoutImageCHW`](bnnsdatalayoutimagechw.md) tensor. Definie [`x_padding`](bnnslayerparameterspooling/x_padding.md) and [`y_padding`](bnnslayerparameterspooling/y_padding.md) as 1 to add zero padding:
 

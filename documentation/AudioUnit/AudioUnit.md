@@ -15,7 +15,7 @@ Add sophisticated audio manipulation and processing capabilities to your app.
 
 #### Overview
 
-The Audio Unit framework provides interfaces for hosting either version 2 or version 3 audio units and implementing version 3 audio processing plug-ins known as Audio Unit extensions. Developers implementing version 3 audio units should subclass the [`AUAudioUnit`](https://developer.apple.com/documentation/AudioToolbox/AUAudioUnit) class.
+The Audio Unit framework provides interfaces for hosting either version 2 or version 3 audio units and implementing version 3 audio processing plug-ins known as Audio Unit extensions. Developers implementing version 3 audio units should subclass the [`AUAudioUnit`](https://developer.apple.com/documentation/audiotoolbox/auaudiounit) class.
 
 Version 3 Audio Unit extensions can be used on iOS, tvOS, and macOS by host apps and distributed via the App Store.
 

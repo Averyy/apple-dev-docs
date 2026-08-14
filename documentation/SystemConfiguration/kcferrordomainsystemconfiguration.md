@@ -3,7 +3,7 @@
 **Framework**: System Configuration  
 **Kind**: var
 
-A string constant identifying a Core Foundation error domain. See [`CFError`](https://developer.apple.com/documentation/CoreFoundation/CFError) for further information on error domains.
+A string constant identifying a Core Foundation error domain. See [`CFError`](https://developer.apple.com/documentation/corefoundation/cferror) for further information on error domains.
 
 **Availability**:
 - iOS 2.0+

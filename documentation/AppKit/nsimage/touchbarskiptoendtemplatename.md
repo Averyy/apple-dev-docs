@@ -19,7 +19,7 @@ class let touchBarSkipToEndTemplateName: String
 
 #### Discussion
 
-![Template image for skip to end](https://docs-assets.developer.apple.com/published/021c4cf81759626a4b916af6458e9530/media-2793528%402x.png)
+![Template image for skip to end](/images/com.apple.appkit/media-2793528@2x.png)
 
 Touch Bar template images are exclusively for use in [`NSTouchBarItem`](nstouchbaritem.md) objects and not in onscreen windows.
 

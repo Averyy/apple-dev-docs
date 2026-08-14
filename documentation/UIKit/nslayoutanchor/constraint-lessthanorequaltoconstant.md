@@ -68,7 +68,7 @@ textField.leadingAnchor.constraintLessThanOrEqualToAnchor(label.trailingAnchor, 
 
 ## Parameters
 
-- `anchor`: A layout anchor from a [`UIView`](uiview.md), [`NSView`](https://developer.apple.com/documentation/AppKit/NSView), or [`UILayoutGuide`](uilayoutguide.md) object. You must use a subclass of [`NSLayoutAnchor`](nslayoutanchor.md) that matches the current anchor. For example, if you call this method on an [`NSLayoutXAxisAnchor`](nslayoutxaxisanchor.md) object, this parameter must be another [`NSLayoutXAxisAnchor`](nslayoutxaxisanchor.md).
+- `anchor`: A layout anchor from a [`UIView`](uiview.md), [`NSView`](https://developer.apple.com/documentation/appkit/nsview), or [`UILayoutGuide`](uilayoutguide.md) object. You must use a subclass of [`NSLayoutAnchor`](nslayoutanchor.md) that matches the current anchor. For example, if you call this method on an [`NSLayoutXAxisAnchor`](nslayoutxaxisanchor.md) object, this parameter must be another [`NSLayoutXAxisAnchor`](nslayoutxaxisanchor.md).
 - `c`: The constant offset for the constraint.
 
 ## See Also

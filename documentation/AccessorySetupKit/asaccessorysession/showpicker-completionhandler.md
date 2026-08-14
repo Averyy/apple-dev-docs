@@ -17,13 +17,13 @@ func showPicker() async throws
 
 #### Discussion
 
-Use this method when your app includes a [`DeviceDiscoveryExtension`](https://developer.apple.com/documentation/DeviceDiscoveryExtension) for its supported accessories. If your app doesn’t use DDE, call [`showPicker(for:completionHandler:)`](asaccessorysession/showpicker(for:completionhandler:).md) with an array of [`ASPickerDisplayItem`](aspickerdisplayitem.md) instances instead.
+Use this method when your app includes a [`DeviceDiscoveryExtension`](https://developer.apple.com/documentation/devicediscoveryextension) for its supported accessories. If your app doesn’t use DDE, call [`showPicker(for:completionHandler:)`](asaccessorysession/showpicker(for:completionhandler:).md) with an array of [`ASPickerDisplayItem`](aspickerdisplayitem.md) instances instead.
 
 The session’s event handler receives events when this picker displays and dismisses, as well as when the person using the app picks an accessory.
 
 ## Parameters
 
-- `completionHandler`: A block or closure that the picker calls when it completes the operation. The completion handler receives an [`NSError`](https://developer.apple.com/documentation/Foundation/NSError) instance if the picker encounters an error.
+- `completionHandler`: A block or closure that the picker calls when it completes the operation. The completion handler receives an [`NSError`](https://developer.apple.com/documentation/foundation/nserror) instance if the picker encounters an error.
 
 ## See Also
 

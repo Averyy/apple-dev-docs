@@ -16,11 +16,11 @@ func setPolicies(_ policies: Any!)
 
 #### Discussion
 
-The [`SFChooseIdentityPanel`](sfchooseidentitypanel.md) class evaluates trust for the certificates it displays. Applications typically display certificates in the context of a specific use, such as SSL or S/MIME. You should set only the policy references that apply to your intended use. See [`Certificate, Key, and Trust Services`](https://developer.apple.com/documentation/Security/certificate-key-and-trust-services) for a list of policies and object identifiers provided by the [`AppleX509TP Module`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Security/Conceptual/cryptoservices/CDSA/CDSA.html#//apple_ref/doc/uid/TP40011172-CH4-CHDEEDBE).
+The [`SFChooseIdentityPanel`](sfchooseidentitypanel.md) class evaluates trust for the certificates it displays. Applications typically display certificates in the context of a specific use, such as SSL or S/MIME. You should set only the policy references that apply to your intended use. See [`Certificate, Key, and Trust Services`](https://developer.apple.com/documentation/security/certificate-key-and-trust-services) for a list of policies and object identifiers provided by the [`AppleX509TP Module`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Security/Conceptual/cryptoservices/CDSA/CDSA.html#//apple_ref/doc/uid/TP40011172-CH4-CHDEEDBE).
 
 ## Parameters
 
-- `policies`: The policies to use when evaluating the certificates’ status. You can pass either a [`SecPolicy`](https://developer.apple.com/documentation/Security/SecPolicy) object or an [`NSArray`](https://developer.apple.com/documentation/Foundation/NSArray) (containing one or more [`SecPolicy`](https://developer.apple.com/documentation/Security/SecPolicy) instances) in this parameter. If `policies` is set to `nil`, the Apple X.509 Basic Policy is used.
+- `policies`: The policies to use when evaluating the certificates’ status. You can pass either a [`SecPolicy`](https://developer.apple.com/documentation/security/secpolicy) object or an [`NSArray`](https://developer.apple.com/documentation/foundation/nsarray) (containing one or more [`SecPolicy`](https://developer.apple.com/documentation/security/secpolicy) instances) in this parameter. If `policies` is set to `nil`, the Apple X.509 Basic Policy is used.
 
 ## See Also
 

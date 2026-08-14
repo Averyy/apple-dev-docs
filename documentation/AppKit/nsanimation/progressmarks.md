@@ -16,7 +16,7 @@ var progressMarks: [NSNumber] { get set }
 
 #### Discussion
 
-The value of this property is an array of [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) objects, each of which contains a float value, which are typed to the [`NSAnimation.Progress`](nsanimation/progress.md) type. If there are no progress marks, the array is empty. Setting the value of this property is `nil` clears all progress marks.
+The value of this property is an array of [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) objects, each of which contains a float value, which are typed to the [`NSAnimation.Progress`](nsanimation/progress.md) type. If there are no progress marks, the array is empty. Setting the value of this property is `nil` clears all progress marks.
 
 ## See Also
 

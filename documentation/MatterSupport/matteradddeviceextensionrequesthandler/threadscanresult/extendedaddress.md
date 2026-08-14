@@ -20,7 +20,7 @@ var extendedAddress: Data
 
 #### Discussion
 
-This corresponds to the Border Agent ID in [`retrieveCredentials(forBorderAgent:completion:)`](https://developer.apple.com/documentation/ThreadNetwork/THClient/retrieveCredentials(forBorderAgent:completion:)).
+This corresponds to the Border Agent ID in [`retrieveCredentials(forBorderAgent:completion:)`](https://developer.apple.com/documentation/threadnetwork/thclient/retrievecredentials(forborderagent:completion:)).
 
 ## See Also
 

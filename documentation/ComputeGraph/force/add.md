@@ -19,7 +19,7 @@ void force::add(float3 force)
 
 This function applies a specified force to the element by adding it to the force accumulator. Multiple forces can be combined by calling this function (or other force functions) multiple times during simulation.
 
-> **Note**: ![Graph](https://docs-assets.developer.apple.com/published/83bd1c68c3971016b35b2287a9951f74/force__add.svg)
+> **Note**: ![Graph](/images/com.apple.computegraph/force__add.svg)
 
 ## Parameters
 

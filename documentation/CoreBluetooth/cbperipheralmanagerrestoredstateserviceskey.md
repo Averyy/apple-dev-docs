@@ -22,7 +22,7 @@ let CBPeripheralManagerRestoredStateServicesKey: String
 
 #### Discussion
 
-The value associated with this key is an [`NSArray`](https://developer.apple.com/documentation/Foundation/NSArray) of [`CBMutableService`](cbmutableservice.md) objects. It contains all of the services that previously published to the local peripheral’s database when the system quit the app.
+The value associated with this key is an [`NSArray`](https://developer.apple.com/documentation/foundation/nsarray) of [`CBMutableService`](cbmutableservice.md) objects. It contains all of the services that previously published to the local peripheral’s database when the system quit the app.
 
 Restoration includes all information about a service, including any included services, characteristics, characteristic descriptors, and subscribed centrals.
 

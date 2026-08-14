@@ -34,7 +34,7 @@ let formatted = dateRange.formatted(.timeDuration) // "1:35"
 XCTAssertEqual(formatted, "1:35")
 ```
 
-To use the Swift [`Duration`](https://developer.apple.com/documentation/Swift/Duration) type rather than `Date`, use [`Duration.TimeFormatStyle`](https://developer.apple.com/documentation/Swift/Duration/TimeFormatStyle) or [`Duration.UnitsFormatStyle`](https://developer.apple.com/documentation/Swift/Duration/UnitsFormatStyle) instead, and their corresponding static accessors, [`time(pattern:)`](formatstyle/time(pattern:).md) and [`units(allowed:width:maximumUnitCount:zeroValueUnits:valueLength:fractionalPart:)`](formatstyle/units(allowed:width:maximumunitcount:zerovalueunits:valuelength:fractionalpart:).md).
+To use the Swift [`Duration`](https://developer.apple.com/documentation/swift/duration) type rather than `Date`, use [`Duration.TimeFormatStyle`](https://developer.apple.com/documentation/swift/duration/timeformatstyle) or [`Duration.UnitsFormatStyle`](https://developer.apple.com/documentation/swift/duration/unitsformatstyle) instead, and their corresponding static accessors, [`time(pattern:)`](formatstyle/time(pattern:).md) and [`units(allowed:width:maximumUnitCount:zeroValueUnits:valueLength:fractionalPart:)`](formatstyle/units(allowed:width:maximumunitcount:zerovalueunits:valuelength:fractionalpart:).md).
 
 ## See Also
 

@@ -17,9 +17,9 @@ void vDSP_vflt16(const int16_t *vDSP_input1, ptrdiff_t vDSP_stride1, float *vDSP
 ## Parameters
 
 - `++A`: The single-precision floating-point input vector.
-- `__IA`: The stride for input vector  . 
+- `__IA`: The stride for input vector `A`. 
 - `__C`: The single-precision floating-point output vector. 
-- `__IC`: The stride for output vector  . 
+- `__IC`: The stride for output vector `C`. 
 - `__N`: The number of values to convert.
 
 ## See Also

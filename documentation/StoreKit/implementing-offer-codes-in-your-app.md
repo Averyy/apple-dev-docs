@@ -12,10 +12,10 @@ To help you acquire, retain, and win back customers, you can use offer codes. Of
 
 Offer codes are alphanumeric codes that provide In-App Purchases at a discount or for free for a specific duration. Configure the offers and create offer codes in App Store Connect, and distribute them to your customers. Customers can redeem offer codes in the App Store, using offer code redemption URLs, or in your app if you’ve implemented one of the following APIs:
 
-- [`offerCodeRedemption(isPresented:onCompletion:)`](https://developer.apple.com/documentation/SwiftUI/View/offerCodeRedemption(isPresented:onCompletion:)) or [`presentOfferCodeRedeemSheet(in:)`](appstore/presentoffercoderedeemsheet(in:).md), which are available in iOS 16 and later and iPadOS 16 and later
+- [`offerCodeRedemption(isPresented:onCompletion:)`](https://developer.apple.com/documentation/swiftui/view/offercoderedemption(ispresented:oncompletion:)) or [`presentOfferCodeRedeemSheet(in:)`](appstore/presentoffercoderedeemsheet(in:).md), which are available in iOS 16 and later and iPadOS 16 and later
 - [`presentCodeRedemptionSheet()`](skpaymentqueue/presentcoderedemptionsheet().md), which is available in iOS 14 and later and iPadOS 14 and later.
 
-When customers redeem a valid offer code, your app receives a successful transaction on the payment queue, and you receive a server notification if you’ve enabled [`App Store Server Notifications`](https://developer.apple.com/documentation/AppStoreServerNotifications). The receipt contains an `offer_code_ref_name` field that identifies the offer.
+When customers redeem a valid offer code, your app receives a successful transaction on the payment queue, and you receive a server notification if you’ve enabled [`App Store Server Notifications`](https://developer.apple.com/documentation/appstoreservernotifications). The receipt contains an `offer_code_ref_name` field that identifies the offer.
 
 For information on subscription offer types and choosing the offer type to suit your business needs, see [`Providing subscription offers`](https://developer.apple.comhttps://developer.apple.com/app-store/subscriptions/#providing-subscription-offers).
 
@@ -29,7 +29,7 @@ Download the offer codes from App Store Connect to distribute them to your custo
 
 To display the system sheet for customers to redeem offer codes within your app, call one of the redemption APIs, depending on your app’s UI implementation:
 
-- Call [`offerCodeRedemption(isPresented:onCompletion:)`](https://developer.apple.com/documentation/SwiftUI/View/offerCodeRedemption(isPresented:onCompletion:)) if your app uses SwiftUI.
+- Call [`offerCodeRedemption(isPresented:onCompletion:)`](https://developer.apple.com/documentation/swiftui/view/offercoderedemption(ispresented:oncompletion:)) if your app uses SwiftUI.
 - Call [`presentOfferCodeRedeemSheet(in:)`](appstore/presentoffercoderedeemsheet(in:).md) if your app uses UIKit.
 - Call [`presentCodeRedemptionSheet()`](skpaymentqueue/presentcoderedemptionsheet().md) for apps running on devices prior to iOS 16 and iPadOS 16.
 
@@ -45,7 +45,7 @@ To handle offer codes — and other transactions that can occur outside of your 
 
 ##### Identify Subscriptions Purchased with Offer Codes in Receipts
 
-When a customer successfully redeems an offer code, the receipt contains a transaction with the field: `offer_code_ref_name`. This field’s value is the offer reference name that you configure in App Store Connect. The field appears in the [`responseBody.Latest_receipt_info`](https://developer.apple.com/documentation/AppStoreReceipts/responseBody/Latest_receipt_info-data.dictionary) and [`responseBody.Pending_renewal_info`](https://developer.apple.com/documentation/AppStoreReceipts/responseBody/Pending_renewal_info-data.dictionary) objects for receipts, and in the [`unified_receipt.Latest_receipt_info`](https://developer.apple.com/documentation/AppStoreServerNotifications/unified_receipt/Latest_receipt_info-data.dictionary) and [`unified_receipt.Pending_renewal_info`](https://developer.apple.com/documentation/AppStoreServerNotifications/unified_receipt/Pending_renewal_info-data.dictionary) objects for server notifications.
+When a customer successfully redeems an offer code, the receipt contains a transaction with the field: `offer_code_ref_name`. This field’s value is the offer reference name that you configure in App Store Connect. The field appears in the [`responseBody.Latest_receipt_info`](https://developer.apple.com/documentation/appstorereceipts/responsebody/latest_receipt_info-data.dictionary) and [`responseBody.Pending_renewal_info`](https://developer.apple.com/documentation/appstorereceipts/responsebody/pending_renewal_info-data.dictionary) objects for receipts, and in the [`unified_receipt.Latest_receipt_info`](https://developer.apple.com/documentation/appstoreservernotifications/unified_receipt/latest_receipt_info-data.dictionary) and [`unified_receipt.Pending_renewal_info`](https://developer.apple.com/documentation/appstoreservernotifications/unified_receipt/pending_renewal_info-data.dictionary) objects for server notifications.
 
 > **Note**: The `offer_code_ref_name` field is not populated for consumables, non-consumables, and non-renewing subscriptions.
 

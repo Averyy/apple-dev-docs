@@ -21,7 +21,7 @@ For each filter configured in `setup`, the corresponding value in `filter_states
 ## Parameters
 
 - `__setup`: The setup object to modify.
-- `__filter_states`: An input array of   values. The length of this array should be the number of filters configured in  .
+- `__filter_states`: An input array of `bool` values. The length of this array should be the number of filters configured in *setup*.
 
 
 ---

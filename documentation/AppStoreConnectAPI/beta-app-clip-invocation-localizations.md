@@ -8,7 +8,7 @@ Manage beta test information for an App Clip and its invocation, specific to a l
 
 The `betaAppClipInvocationLocalizations` resource represents the localization information of an App Clip you distribute to testers that’s specific to a locale. Use this resource to set the text that appears in the App Clips section of a build in the TestFlight app.
 
-For more information on testing App Clip invocations, see [`Testing the launch experience of your App Clip`](https://developer.apple.com/documentation/AppClip/testing-the-launch-experience-of-your-app-clip).
+For more information on testing App Clip invocations, see [`Testing the launch experience of your App Clip`](https://developer.apple.com/documentation/appclip/testing-the-launch-experience-of-your-app-clip).
 
 ## Topics
 

@@ -8,7 +8,7 @@ Build character animation state machines visually using the Animation Graph in R
 
 Use animation graphs to create custom animations in a visual, node-based, code-free workflow. Using the Animation Graph, you can create tags and conditions to control the flow between different animation states. For general Graph Editor navigation and features, see [`Working with the Graph Editor`](realitycomposerpro-essentials-grapheditoroverview.md).
 
-![Screenshot of animation graph](https://docs-assets.developer.apple.com/published/02e03d4d0cfb29d97c07839d0be1bf0f/AnimationGraph%402x.png)
+![Screenshot of animation graph](/images/RealityComposerPro/AnimationGraph@2x.png)
 
 #### Create an Animation Graph
 
@@ -34,7 +34,7 @@ In the Inspector, under **Inputs**, click **[+]** to add an input. Choose an **I
 
 Click the name field to update the parameter name if needed, then set the **Default Value** and toggle **Read Only** as appropriate.
 
-![Screenshot of adding an input modal](https://docs-assets.developer.apple.com/published/8523c70ed70d87d6d624a01f24f25e07/AddInput%402x.png)
+![Screenshot of adding an input modal](/images/RealityComposerPro/AddInput@2x.png)
 
 #### Add and Configure a State Machine Node
 
@@ -51,7 +51,7 @@ To add a tag to the state, click **[+]** next to **Tags**, click the Tag field a
 - **On Enter and Exit** — The state machine activates the tag when the entity enters the state and when the entity exits the state.
 - **While Active** — The state machine keeps the tag active as long as the entity remains in the specified state.
 
-![Screenshot of the State Machine editor showing tag activation options (On Enter, On Exit, On Enter and Exit, While Active)](https://docs-assets.developer.apple.com/published/07cac85823be9dbadd0f96202e23b157/Conditions%402x.png)
+![Screenshot of the State Machine editor showing tag activation options (On Enter, On Exit, On Enter and Exit, While Active)](/images/RealityComposerPro/Conditions@2x.png)
 
 > 💡 **Tip**: When editing a State Machine, click a State to view or change its associated tags and properties.
 
@@ -65,7 +65,7 @@ Tags activate using the same options described in the State Machine section abov
 
 In the Inspector panel, under **Tags**, click **[+]** to add a tag. Choose the **Type**: Internal, Play Audio, or Enable/Disable Entity. Click the name field to enter a name for the tag.
 
-![Screenshot of the Inspector panel showing the Add Tag section with Internal, Play Audio, and Enable/Disable Entity tag type options](https://docs-assets.developer.apple.com/published/34cd56134bf0e32faef4e07d62620b65/AddTag%402x.png)
+![Screenshot of the Inspector panel showing the Add Tag section with Internal, Play Audio, and Enable/Disable Entity tag type options](/images/RealityComposerPro/AddTag@2x.png)
 
 #### Edit or Delete Animation Graph Tags
 
@@ -83,11 +83,11 @@ Control-click anywhere in the empty space and choose **Add Conduit**, then drag 
 
 Control-click the conduit connector, choose **Add Condition**, and select a condition type (Bool, Finished, Float, and so on).
 
-![Screenshot of the context menu for adding a condition to a conduit](https://docs-assets.developer.apple.com/published/f3a3b52a4fa8532b5f678cb9b88c34bc/Transitions%402x.png)
+![Screenshot of the context menu for adding a condition to a conduit](/images/RealityComposerPro/Transitions@2x.png)
 
 In the Inspector, under **Conditions**, configure your condition. Click the operator icon to change the comparison operator (==, !=, and so on). Click **Settings** to compare against a fixed value or a parameter.
 
-![Screenshot of the condition editor panel showing a configured condition with operator settings](https://docs-assets.developer.apple.com/published/45bdd5cbb570a189ce3a0390c90be7ca/AddCondition%402x.png)
+![Screenshot of the condition editor panel showing a configured condition with operator settings](/images/RealityComposerPro/AddCondition@2x.png)
 
 > 💡 **Tip**: The editor displays different conditions in different colors — for example, trigger conditions appear as blue, while boolean conditions appear as green.
 
@@ -97,13 +97,13 @@ In the Animation Graph, at the top of the screen, click **Debug Graph** and then
 
 Preview how your animations appear and watch the visual flow between nodes — indicated by animated connectors in the Animation Graph — as the entity enters and exits states. In the Inspector panel **Tags** section, watch tags activate and deactivate — indicated by pulsing dots next to the tag names — as your animation plays.
 
-![Screenshot activating the debug menu](https://docs-assets.developer.apple.com/published/0b9794b972b7a6897b6098b43cd69ab7/DebugGraph%402x.png)
+![Screenshot activating the debug menu](/images/RealityComposerPro/DebugGraph@2x.png)
 
 #### Apply an Animation Graph to an Entity
 
 In the Scene Hierarchy, click an entity. In the Inspector, click **Add Component** and choose **Animation Graph**. Click the **Animation Graph** field and select the animation graph you want to apply from the pop-up menu.
 
-![Screenshot of the animation graph component](https://docs-assets.developer.apple.com/published/dc356a2e7374bcc76c9db96fbf90513c/AnimGraphComponent%402x.png)
+![Screenshot of the animation graph component](/images/RealityComposerPro/AnimGraphComponent@2x.png)
 
 #### Animation Graph Nodes
 

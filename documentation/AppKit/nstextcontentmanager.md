@@ -62,27 +62,27 @@ class NSTextContentManager
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Inherited By
 - [NSTextContentStorage](nstextcontentstorage.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCoding](../Foundation/NSCoding.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [NSSecureCoding](../Foundation/NSSecureCoding.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCoding](../foundation/nscoding.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSSecureCoding](../foundation/nssecurecoding.md)
 - [NSTextElementProvider](nstextelementprovider.md)
 
 ## See Also
 
 - [class NSTextContentStorage](nstextcontentstorage.md)
   A concrete object for managing your view’s text content and generating the text elements necessary for layout.
-- [class NSAttributedString](../Foundation/NSAttributedString.md)
+- [class NSAttributedString](../foundation/nsattributedstring.md)
   A string of text that manages data, layout, and stylistic information for ranges of characters to support rendering.
-- [class NSMutableAttributedString](../Foundation/NSMutableAttributedString.md)
+- [class NSMutableAttributedString](../foundation/nsmutableattributedstring.md)
   A mutable string with associated attributes (such as visual style, hyperlinks, or accessibility data) for portions of its text.
 
 

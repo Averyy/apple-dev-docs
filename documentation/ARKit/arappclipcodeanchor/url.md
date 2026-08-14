@@ -25,7 +25,7 @@ This property is `nil` by default. The framework sets a value for this property 
 
 Although you can launch an App Clip from the camera after creating an App Clip local experience, ARKit checks the App Clip experience registry in App Store Connect to determine if your App Clip associates to a particular App Clip Code URL. When ARKit confirms that an App Clip Code in the physical environment belongs to your App Clip experience, the framework sets the value of this property.
 
-After setting up an App Clip experience, distribute your app to testers; for more information, see [`Testing the launch experience of your App Clip`](https://developer.apple.com/documentation/AppClip/testing-the-launch-experience-of-your-app-clip).
+After setting up an App Clip experience, distribute your app to testers; for more information, see [`Testing the launch experience of your App Clip`](https://developer.apple.com/documentation/appclip/testing-the-launch-experience-of-your-app-clip).
 
 ## See Also
 

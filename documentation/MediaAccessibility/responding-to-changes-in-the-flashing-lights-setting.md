@@ -26,7 +26,7 @@ To change the setting, open Settings > Accessibility > Motion and turn on Dim Fl
 
 ##### Play the Video with Dimmed Flashing
 
-With Dim Flashing Lights on, play the sample video in the video player. The sample app shows a custom media timeline below the video in the [`AVPlayer`](https://developer.apple.com/documentation/AVFoundation/AVPlayer). This timeline annotates the segments of the sample video that present a high risk of flashing lights.
+With Dim Flashing Lights on, play the sample video in the video player. The sample app shows a custom media timeline below the video in the [`AVPlayer`](https://developer.apple.com/documentation/avfoundation/avplayer). This timeline annotates the segments of the sample video that present a high risk of flashing lights.
 
 ```swift
 ForEach(videoFlashingTimes, id: \.self) { timeRange in

@@ -6,7 +6,7 @@ An atom that defines how to interpret timed metadata media samples.
 
 #### Overview
 
-The timed metadata sample description contains information that defines how to interpret timed metadata media samples. This sample description is based on the standard sample description header, as described in [`Sample description atom ('stsd')`](sample_description_atom.md).
+The timed metadata sample description contains information that defines how to interpret timed metadata media samples. This sample description is based on the standard sample description header, as described in [`Sample description atom`](sample_description_atom.md).
 
 The metadata sample description is a derived sample description format which describes metadata values represented in atoms. It may also include other atoms not holding metadata values.
 

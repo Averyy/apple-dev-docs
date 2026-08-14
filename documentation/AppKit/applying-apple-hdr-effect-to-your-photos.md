@@ -12,7 +12,7 @@ You can apply Apple high dynamic range (HDR) effect to digital photography image
 
 Get the existing HDR gain map from the image’s auxiliary data using the `urn:com:apple:photo:2020:aux:hdrgainmap` image data type. The gain map is untagged and formatted as linear data. It’s encoded using the Rec.709 transfer function and is 1/4 the resolution of the original image.
 
-For example, using Apple APIs, you can extract the gain map from a [`CGImage`](https://developer.apple.com/documentation/CoreGraphics/CGImage) object by passing [`kCGImageAuxiliaryDataTypeHDRGainMap`](https://developer.apple.com/documentation/ImageIO/kCGImageAuxiliaryDataTypeHDRGainMap) to the [`CGImageSourceCopyAuxiliaryDataInfoAtIndex(_:_:_:)`](https://developer.apple.com/documentation/ImageIO/CGImageSourceCopyAuxiliaryDataInfoAtIndex(_:_:_:)) function.
+For example, using Apple APIs, you can extract the gain map from a [`CGImage`](https://developer.apple.com/documentation/coregraphics/cgimage) object by passing [`kCGImageAuxiliaryDataTypeHDRGainMap`](https://developer.apple.com/documentation/imageio/kcgimageauxiliarydatatypehdrgainmap) to the [`CGImageSourceCopyAuxiliaryDataInfoAtIndex(_:_:_:)`](https://developer.apple.com/documentation/imageio/cgimagesourcecopyauxiliarydatainfoatindex(_:_:_:)) function.
 
 ##### Calculate the Headroom From the Image Metadata
 
@@ -73,11 +73,11 @@ The result of applying the gain map is a linear HDR image with a scale where `1.
 
 ## See Also
 
-- [Providing images for different appearances](../UIKit/providing-images-for-different-appearances.md)
+- [Providing images for different appearances](../uikit/providing-images-for-different-appearances.md)
   Supply image resources appropriate for light and dark appearances and for high-contrast environments.
 - [Supporting Continuity Camera in Your Mac App](supporting-continuity-camera-in-your-mac-app.md)
   Incorporate scanned documents and pictures from a user’s iPhone, iPad, or iPod touch into your Mac app using Continuity Camera.
-- [Supporting HDR images in your app](../UIKit/supporting-hdr-images-in-your-app.md)
+- [Supporting HDR images in your app](../uikit/supporting-hdr-images-in-your-app.md)
   ​ Load, display, edit, and save HDR images using SwiftUI and Core Image. ​
 - [class NSImage](nsimage.md)
   A high-level interface for manipulating image data.

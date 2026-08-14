@@ -44,7 +44,7 @@ struct StepperView: View {
 }
 ```
 
-![A view displaying a stepper with a step size of five, and a prescribed range of 1 though 50.](https://docs-assets.developer.apple.com/published/21941a9c414c8460cb45d5d7d33ce928/SwiftUI-Stepper-value-step-range%402x.png)
+![A view displaying a stepper with a step size of five, and a prescribed range of 1 though 50.](/images/com.apple.SwiftUI/SwiftUI-Stepper-value-step-range@2x.png)
 
 ## Parameters
 

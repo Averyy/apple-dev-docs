@@ -20,16 +20,16 @@ func presentTemplate(_ templateToPresent: CPTemplate, animated: Bool) async thro
 
 > ❗ **Important**:  You can call this method from synchronous code using a completion handler, as shown on this page, or you can call it as an asynchronous method that has the following declaration: ```swift
 func presentTemplate(_ templateToPresent: CPTemplate, animated: Bool) async throws -> Bool
-``` For information about concurrency and asynchronous code in Swift, see [`Calling Objective-C APIs Asynchronously`](https://developer.apple.com/documentation/Swift/calling-objective-c-apis-asynchronously).
+``` For information about concurrency and asynchronous code in Swift, see [`Calling Objective-C APIs Asynchronously`](https://developer.apple.com/documentation/swift/calling-objective-c-apis-asynchronously).
 
 CarPlay can only present one modal template at a time. `templateToPresent` must be one of [`CPActionSheetTemplate`](cpactionsheettemplate.md), [`CPAlertTemplate`](cpalerttemplate.md), or [`CPVoiceControlTemplate`](cpvoicecontroltemplate.md).
 
-CarPlay calls `completion` after it presents the template. The Boolean parameter is [`true`](https://developer.apple.com/documentation/Swift/true) when the presentation succeeds; otherwise, it’s [`false`](https://developer.apple.com/documentation/Swift/false) and CarPlay provides an error that describes the failure. CarPlay throws an exception if the presentation fails and you don’t provide a closure.
+CarPlay calls `completion` after it presents the template. The Boolean parameter is [`true`](https://developer.apple.com/documentation/swift/true) when the presentation succeeds; otherwise, it’s [`false`](https://developer.apple.com/documentation/swift/false) and CarPlay provides an error that describes the failure. CarPlay throws an exception if the presentation fails and you don’t provide a closure.
 
 ## Parameters
 
 - `templateToPresent`: The template to present modally.
-- `animated`: If [`true`](https://developer.apple.com/documentation/Swift/true), CarPlay animates the presentation of the template.
+- `animated`: If [`true`](https://developer.apple.com/documentation/swift/true), CarPlay animates the presentation of the template.
 - `completion`: The closure CarPlay calls after it presents the template.
 
 ## See Also

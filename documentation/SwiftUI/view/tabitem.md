@@ -55,7 +55,7 @@ struct TabItem: View {
 }
 ```
 
-![A screenshot of a two views configured as tab items in a tab](https://docs-assets.developer.apple.com/published/31a47e769ee8bf9c15e5ac357c73020e/SwiftUI-View-tabItem%402x.png)
+![A screenshot of a two views configured as tab items in a tab](/images/com.apple.SwiftUI/SwiftUI-View-tabItem@2x.png)
 
 ## Parameters
 

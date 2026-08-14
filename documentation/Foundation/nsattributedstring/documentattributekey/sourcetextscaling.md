@@ -22,7 +22,7 @@ static let sourceTextScaling: NSAttributedString.DocumentAttributeKey
 
 #### Discussion
 
-The value of this property is one of the options of the [`NSTextScalingType`](https://developer.apple.com/documentation/UIKit/NSTextScalingType) type. Some platforms scale fonts to improve their appearance. Include this attribute to specify the original text-scaling mode you used to create the text.
+The value of this property is one of the options of the [`NSTextScalingType`](https://developer.apple.com/documentation/uikit/nstextscalingtype) type. Some platforms scale fonts to improve their appearance. Include this attribute to specify the original text-scaling mode you used to create the text.
 
 ## See Also
 

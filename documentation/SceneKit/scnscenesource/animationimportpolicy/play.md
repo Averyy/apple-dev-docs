@@ -22,7 +22,7 @@ static let play: SCNSceneSource.AnimationImportPolicy
 
 #### Discussion
 
-Using this policy is equivalent to manually loading each animation, setting its [`repeatCount`](https://developer.apple.com/documentation/QuartzCore/CAMediaTiming/repeatCount) property to `1`, and adding it to the appropriate element of the scene.
+Using this policy is equivalent to manually loading each animation, setting its [`repeatCount`](https://developer.apple.com/documentation/quartzcore/camediatiming/repeatcount) property to `1`, and adding it to the appropriate element of the scene.
 
 ## See Also
 

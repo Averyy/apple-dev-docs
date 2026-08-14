@@ -16,7 +16,7 @@ func CGDisplayAvailableModes(_ dsp: CGDirectDisplayID) -> CFArray?
 
 #### Return Value
 
-An array of dictionaries with display mode information, or `NULL` if the display is invalid. The array is owned by the system and you should not release it. Each dictionary in the array contains information about a mode that the display supports. For a list of the properties in a display mode dictionary, see [`Display Mode Standard Properties`](display-mode-standard-properties.md) and [`Display Mode Optional Properties`](display-mode-optional-properties.md). For general information about using dictionaries, see [`CFDictionary`](https://developer.apple.com/documentation/CoreFoundation/CFDictionary).
+An array of dictionaries with display mode information, or `NULL` if the display is invalid. The array is owned by the system and you should not release it. Each dictionary in the array contains information about a mode that the display supports. For a list of the properties in a display mode dictionary, see [`Display Mode Standard Properties`](display-mode-standard-properties.md) and [`Display Mode Optional Properties`](display-mode-optional-properties.md). For general information about using dictionaries, see [`CFDictionary`](https://developer.apple.com/documentation/corefoundation/cfdictionary).
 
 #### Discussion
 

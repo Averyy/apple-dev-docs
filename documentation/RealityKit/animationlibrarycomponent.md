@@ -120,7 +120,7 @@ To play one of the animations in your app, create an entity from the `.reality` 
 
 ### Conforms To
 - [Component](component.md)
-- [ExpressibleByDictionaryLiteral](../Swift/ExpressibleByDictionaryLiteral.md)
+- [ExpressibleByDictionaryLiteral](../swift/expressiblebydictionaryliteral.md)
 
 ## See Also
 

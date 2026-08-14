@@ -22,7 +22,7 @@ var color: Any { get set }
 
 #### Discussion
 
-The value of this property is an [`NSColor`](https://developer.apple.com/documentation/AppKit/NSColor) or [`CGColor`](https://developer.apple.com/documentation/CoreGraphics/CGColor) object. The default color is white.
+The value of this property is an [`NSColor`](https://developer.apple.com/documentation/appkit/nscolor) or [`CGColor`](https://developer.apple.com/documentation/coregraphics/cgcolor) object. The default color is white.
 
 You can animate changes to this property’s value. See [`Animating SceneKit Content`](animating-scenekit-content.md).
 

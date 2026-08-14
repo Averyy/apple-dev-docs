@@ -23,7 +23,7 @@ enum CMBlockBufferAttachmentKeyDefinitions
 ## Relationships
 
 ### Conforms To
-- [CVAttachmentKeyDefinitions](../CoreVideo/CVAttachmentKeyDefinitions.md)
+- [CVAttachmentKeyDefinitions](../corevideo/cvattachmentkeydefinitions.md)
 
 
 ---

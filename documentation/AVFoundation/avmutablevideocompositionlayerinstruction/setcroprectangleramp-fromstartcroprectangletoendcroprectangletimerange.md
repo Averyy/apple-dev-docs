@@ -25,7 +25,7 @@ The origin of the crop rectangle is the top-left corner of the buffer clean aper
 
 During a crop rectangle ramp, the rectangle is interpolated between the values set at the ramp’s start time and end time. When the starting or ending rectangle is empty, interpolations take into account the origin and size of the empty rectangle.
 
-Before the first specified time for which a crop rectangle is set, the crop rectangle is held constant to [`CGRectInfinite`](https://developer.apple.com/documentation/CoreGraphics/CGRectInfinite) and after the last time for which a crop rectangle is set, the crop rectangle is held constant at that last value.
+Before the first specified time for which a crop rectangle is set, the crop rectangle is held constant to [`CGRectInfinite`](https://developer.apple.com/documentation/coregraphics/cgrectinfinite) and after the last time for which a crop rectangle is set, the crop rectangle is held constant at that last value.
 
 ## Parameters
 

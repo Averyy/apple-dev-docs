@@ -39,7 +39,7 @@ selection.attributes(in: text)[\.foregroundColor].contains(.red)
 ## Relationships
 
 ### Conforms To
-- [Sequence](../Swift/Sequence.md)
+- [Sequence](../swift/sequence.md)
 
 
 ---

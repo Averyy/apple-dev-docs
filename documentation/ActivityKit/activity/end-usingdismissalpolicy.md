@@ -17,7 +17,7 @@ func end(using contentState: Activity<Attributes>.ContentState? = nil, dismissal
 
 #### Discussion
 
-End an active Live Activity while your app is in the foreground or while it’s in the background — for example, by using [`Background Tasks`](https://developer.apple.com/documentation/BackgroundTasks).
+End an active Live Activity while your app is in the foreground or while it’s in the background — for example, by using [`Background Tasks`](https://developer.apple.com/documentation/backgroundtasks).
 
 Include updated data in the `contentState` parameter to ensure the Live Activity shows the latest and final content update after it ends. This is important because the Live Activity remains visible until the system or the person removes it.
 

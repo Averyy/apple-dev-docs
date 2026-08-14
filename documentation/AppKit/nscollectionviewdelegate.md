@@ -30,7 +30,7 @@ For more information about handling drag and drop operations, see [`Drag and Dro
 
 ##### Legacy Support
 
-Before OS X 10.11, collection views supported only a single section of items organized in a grid layout. The drag and drop methods of this protocol include variants that take a single index or an [`NSIndexSet`](https://developer.apple.com/documentation/Foundation/NSIndexSet) as a parameter. Although you can use those methods to implement your drag and drop support, it is recommended that you use the newer methods that take [`NSIndexPath`](https://developer.apple.com/documentation/Foundation/NSIndexPath) objects instead.
+Before OS X 10.11, collection views supported only a single section of items organized in a grid layout. The drag and drop methods of this protocol include variants that take a single index or an [`NSIndexSet`](https://developer.apple.com/documentation/foundation/nsindexset) as a parameter. Although you can use those methods to implement your drag and drop support, it is recommended that you use the newer methods that take [`NSIndexPath`](https://developer.apple.com/documentation/foundation/nsindexpath) objects instead.
 
 ## Topics
 
@@ -104,7 +104,7 @@ Before OS X 10.11, collection views supported only a single section of items org
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 ### Inherited By
 - [NSCollectionViewDelegateFlowLayout](nscollectionviewdelegateflowlayout.md)
 

@@ -20,7 +20,7 @@ A message to the user that explains why the app requested permission to read cli
 
 ## See Also
 
-- [Setting up HealthKit](../HealthKit/setting-up-healthkit.md)
+- [Setting up HealthKit](../healthkit/setting-up-healthkit.md)
   Set up and configure your HealthKit store.
 - [NSHealthShareUsageDescription](information-property-list/nshealthshareusagedescription.md)
   A message that explains to people why the app requests permission to read samples from the HealthKit store.

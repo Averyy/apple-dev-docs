@@ -22,7 +22,7 @@ var retain: CFAllocatorRetainCallBack?
 ## See Also
 
 - [var copyDescription: CFAllocatorCopyDescriptionCallBack?](cfhostclientcontext/copydescription.md)
-  The callback used to create a descriptive string representation of the info pointer (or the data pointed to by the info pointer) for debugging purposes. This callback is called by the [`CFCopyDescription(_:)`](https://developer.apple.com/documentation/CoreFoundation/CFCopyDescription(_:)) function.
+  The callback used to create a descriptive string representation of the info pointer (or the data pointed to by the info pointer) for debugging purposes. This callback is called by the [`CFCopyDescription(_:)`](https://developer.apple.com/documentation/corefoundation/cfcopydescription(_:)) function.
 - [var info: UnsafeMutableRawPointer?](cfhostclientcontext/info.md)
   An arbitrary pointer to allocated memory containing user-defined data that can be associated with the host and that is passed to the callbacks.
 - [var release: CFAllocatorReleaseCallBack?](cfhostclientcontext/release.md)

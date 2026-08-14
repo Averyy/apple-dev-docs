@@ -44,8 +44,8 @@ protocol EntityCollection : Collection where Self.Element == Entity, Self.Index 
 ## Relationships
 
 ### Inherits From
-- [Collection](../Swift/Collection.md)
-- [Sequence](../Swift/Sequence.md)
+- [Collection](../swift/collection.md)
+- [Sequence](../swift/sequence.md)
 ### Conforming Types
 - [Entity.ChildCollection](entity/childcollection.md)
 - [RealityRenderer.EntityCollection](realityrenderer/entitycollection.md)

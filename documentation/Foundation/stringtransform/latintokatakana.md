@@ -26,7 +26,7 @@ This transformation is reversible.
 
 For example, the string “katakana” transliterates to “カタカナ”.
 
-This is equivalent to [`kCFStringTransformLatinKatakana`](https://developer.apple.com/documentation/CoreFoundation/kCFStringTransformLatinKatakana).
+This is equivalent to [`kCFStringTransformLatinKatakana`](https://developer.apple.com/documentation/corefoundation/kcfstringtransformlatinkatakana).
 
 ## See Also
 

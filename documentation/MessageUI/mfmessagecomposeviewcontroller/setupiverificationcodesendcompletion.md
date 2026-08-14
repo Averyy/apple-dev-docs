@@ -19,7 +19,7 @@ func setUPIVerificationCodeSendCompletion(_ completion: @escaping (Bool) -> Void
 
 #### Discussion
 
-If you use the [`com.apple.developer.upi-device-validation`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.upi-device-validation) managed entitlement, [`setUPIVerificationCodeSendCompletion(_:)`](mfmessagecomposeviewcontroller/setupiverificationcodesendcompletion(_:).md) configures the instance of [`MFMessageComposeViewController`](mfmessagecomposeviewcontroller.md) with non-editable recipients and body fields.
+If you use the [`com.apple.developer.upi-device-validation`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.upi-device-validation) managed entitlement, [`setUPIVerificationCodeSendCompletion(_:)`](mfmessagecomposeviewcontroller/setupiverificationcodesendcompletion(_:).md) configures the instance of [`MFMessageComposeViewController`](mfmessagecomposeviewcontroller.md) with non-editable recipients and body fields.
 
 > **Note**:  The [`setUPIVerificationCodeSendCompletion(_:)`](mfmessagecomposeviewcontroller/setupiverificationcodesendcompletion(_:).md) method is only functional on devices with SMS capability and is only compatible with recipients that don’t use iMessage.
 
@@ -28,7 +28,7 @@ The system invokes the completion handler on the main thread. It only invokes th
 The system calls the send completion handler with the transmission result of the message. The system won’t call the completion handler if:
 
 - The device doesn’t have SMS capability.
-- Your app doesn’t have the [`com.apple.developer.upi-device-validation`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.upi-device-validation) entitlement.
+- Your app doesn’t have the [`com.apple.developer.upi-device-validation`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.upi-device-validation) entitlement.
 - The recipient can use iMessage or the person cancels the transaction.
 
 The following code snippet is an example of how you can create an instance of [`MFMessageComposeViewController`](mfmessagecomposeviewcontroller.md), configure it with a UPI verification phone number and generated token, and set a completion block indicating the use of the controller for UPI device enrollment:

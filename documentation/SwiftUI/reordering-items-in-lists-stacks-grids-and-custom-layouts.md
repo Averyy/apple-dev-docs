@@ -14,7 +14,7 @@ If you organize your views into sections that you represent in multiple data col
 
 ##### Reorder Items in a Single Collection
 
-When you have views that you build from a single ordered collection of data items, such as an array of photos in a photography app, first configure your data item with an identifier that conforms to [`Hashable`](https://developer.apple.com/documentation/Swift/Hashable) and [`Sendable`](https://developer.apple.com/documentation/Swift/Sendable). For example, update your data item to conform to  [`Identifiable`](https://developer.apple.com/documentation/Swift/Identifiable) using an identifier data type that conforms to [`Sendable`](https://developer.apple.com/documentation/Swift/Sendable).
+When you have views that you build from a single ordered collection of data items, such as an array of photos in a photography app, first configure your data item with an identifier that conforms to [`Hashable`](https://developer.apple.com/documentation/swift/hashable) and [`Sendable`](https://developer.apple.com/documentation/swift/sendable). For example, update your data item to conform to  [`Identifiable`](https://developer.apple.com/documentation/swift/identifiable) using an identifier data type that conforms to [`Sendable`](https://developer.apple.com/documentation/swift/sendable).
 
 Next, indicate which views you want people to reorder by adding the [`reorderable()`](dynamicviewcontent/reorderable().md) modifier to the [`ForEach`](foreach.md) declaration that generates those views, as the following code shows:
 

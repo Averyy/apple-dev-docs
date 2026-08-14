@@ -22,7 +22,7 @@ let kSecMatchIssuers: CFString
 
 #### Discussion
 
-The corresponding value is of type [`CFArray`](https://developer.apple.com/documentation/CoreFoundation/CFArray), where the array consists of X.500 names of type [`CFData`](https://developer.apple.com/documentation/CoreFoundation/CFData). If provided, returned certificates or identities are limited to those whose certificate chain contains one of the issuers provided in this list.
+The corresponding value is of type [`CFArray`](https://developer.apple.com/documentation/corefoundation/cfarray), where the array consists of X.500 names of type [`CFData`](https://developer.apple.com/documentation/corefoundation/cfdata). If provided, returned certificates or identities are limited to those whose certificate chain contains one of the issuers provided in this list.
 
 
 ---

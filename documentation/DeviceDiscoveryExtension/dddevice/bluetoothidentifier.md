@@ -20,7 +20,7 @@ var bluetoothIdentifier: UUID? { get set }
 
 #### Discussion
 
-An extension may set this property to the Bluetooth identifier of a discovered [`CBPeripheral`](https://developer.apple.com/documentation/CoreBluetooth/CBPeripheral).
+An extension may set this property to the Bluetooth identifier of a discovered [`CBPeripheral`](https://developer.apple.com/documentation/corebluetooth/cbperipheral).
 
 ## See Also
 

@@ -23,7 +23,7 @@ In iOS 4.0, you may want to call this method whenever your application moves to 
 ## Parameters
 
 - `buttonIndex`: The index of the button that was clicked just before invoking this method. The button indices start at `0`.
-- `animated`: [`true`](https://developer.apple.com/documentation/Swift/true) if the receiver should be removed by animating it first; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false) if it should be removed immediately with no animation.
+- `animated`: [`true`](https://developer.apple.com/documentation/swift/true) if the receiver should be removed by animating it first; otherwise, [`false`](https://developer.apple.com/documentation/swift/false) if it should be removed immediately with no animation.
 
 
 ---

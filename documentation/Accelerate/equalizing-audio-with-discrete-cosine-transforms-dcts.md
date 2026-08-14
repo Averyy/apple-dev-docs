@@ -12,13 +12,13 @@ Change the frequency response of an audio signal by manipulating frequency-domai
 
 You can use vDSP functions to shape the output of an audio signal; for example, boosting or cutting the bass or treble of a music track.
 
-This sample app plays a drum loop and allows the user to eliminate frequencies that are either inside or outside a range that two [`Slider`](https://developer.apple.com/documentation/SwiftUI/Slider) controls define.
+This sample app plays a drum loop and allows the user to eliminate frequencies that are either inside or outside a range that two [`Slider`](https://developer.apple.com/documentation/swiftui/slider) controls define.
 
 By performing a forward DCT on the drum loop data and zeroing out parts of the audio spectrum, the sample app applies a band-pass or band-stop filter to the audio.
 
 When you first launch the app, the drum loop plays with a band-pass filter that eliminates very low and very high frequencies. The user interface displays the frequency-domain representation of the equalized drum loop and the shape of the envelope that defines the frequency response.
 
-![A diagram that shows a frequency domain audio signal with the leftmost and rightmost parts of its spectrum zeroed. An additional line follows the shape of zeroed and nonzeroed parts of the spectrum.](https://docs-assets.developer.apple.com/published/62d6b9bf13fae795d04e7a90fae8f81e/spectrum.png)
+![A diagram that shows a frequency domain audio signal with the leftmost and rightmost parts of its spectrum zeroed. An additional line follows the shape of zeroed and nonzeroed parts of the spectrum.](/images/com.apple.accelerate/spectrum.png)
 
 Before exploring the code, try building and running the app to familiarize yourself with the effect of the different equalizations on the drum loop.
 
@@ -36,11 +36,11 @@ guard let samples = try await AudioUtilities.getAudioSamples(
 }
 ```
 
-The `samples` array contains single-precision values that represent the entire content of `Rhythm.aif`. To learn more about the [`AVFoundation`](https://developer.apple.com/documentation/AVFoundation) classes that generate the samples, see [`AVAssetReader`](https://developer.apple.com/documentation/AVFoundation/AVAssetReader) and [`AVAssetReaderTrackOutput`](https://developer.apple.com/documentation/AVFoundation/AVAssetReaderTrackOutput).
+The `samples` array contains single-precision values that represent the entire content of `Rhythm.aif`. To learn more about the [`AVFoundation`](https://developer.apple.com/documentation/avfoundation) classes that generate the samples, see [`AVAssetReader`](https://developer.apple.com/documentation/avfoundation/avassetreader) and [`AVAssetReaderTrackOutput`](https://developer.apple.com/documentation/avfoundation/avassetreadertrackoutput).
 
 ##### Configure Audio Playback
 
-The `DrumLoopProvider` class conforms to the `SignalProvider` protocol and vends an array of single-precision values that represent audio data. The `AudioEqualizationApp` application file creates an instance of `SignalGenerator` and specifies an instance of `DrumLoopProvider` as the signal provider. It also specifies the [`naturalTimeScale`](https://developer.apple.com/documentation/AVFoundation/AVPartialAsyncProperty/naturalTimeScale) of the audio asset as the sample rate.
+The `DrumLoopProvider` class conforms to the `SignalProvider` protocol and vends an array of single-precision values that represent audio data. The `AudioEqualizationApp` application file creates an instance of `SignalGenerator` and specifies an instance of `DrumLoopProvider` as the signal provider. It also specifies the [`naturalTimeScale`](https://developer.apple.com/documentation/avfoundation/avpartialasyncproperty/naturaltimescale) of the audio asset as the sample rate.
 
 The `SignalGenerator.start()` function starts the signal generator.
 
@@ -66,7 +66,7 @@ if (pageNumber + 1) * Self.sampleCount >= samples.count {
 
 The sample can render the audio unaltered by returning `page`.
 
-To learn more about using [`AVAudioEngine`](https://developer.apple.com/documentation/AVFAudio/AVAudioEngine) to render audio, see [`Building a signal generator`](https://developer.apple.com/documentation/AVFAudio/building-a-signal-generator).
+To learn more about using [`AVAudioEngine`](https://developer.apple.com/documentation/avfaudio/avaudioengine) to render audio, see [`Building a signal generator`](https://developer.apple.com/documentation/avfaudio/building-a-signal-generator).
 
 ##### Define the Dct Based Equalization Filter
 
@@ -99,7 +99,7 @@ envelope = [Float](unsafeUninitializedCapacity: DrumLoopProvider.sampleCount) {
 
 The following image visualizes the effect of audio equalization that blocks most of the spectrum except low frequencies. The solid, blue line represents the frequency-domain audio data, and the dashed red line represents the values in the band-stop filter.
 
-![Diagram showing a frequency domain audio signal and a band stop filter. Where the band stop filter values are zero, the frequency domain data is zero. Where the band stop filter values are one, the frequency domain data is unchanged.](https://docs-assets.developer.apple.com/published/517226e33f5d106197a6b66e7c2ed057/bandpass_2x.png)
+![Diagram showing a frequency domain audio signal and a band stop filter. Where the band stop filter values are zero, the frequency domain data is zero. Where the band stop filter values are one, the frequency domain data is unchanged.](/images/com.apple.accelerate/bandpass_2x.png)
 
 ##### Prepare the Dct Setups
 

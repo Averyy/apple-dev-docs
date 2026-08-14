@@ -26,10 +26,10 @@ Do not use [`AEStreamOpenDesc(_:_:)`](1446544-aestreamopendesc.md) and [`AEStrea
 
 ## Parameters
 
-- `ref`: An   containing the stream data.
-- `newType`: A type code for the new   being added to the stream. See  .
+- `ref`: An [`AEStreamRef`](aestreamref.md) containing the stream data.
+- `newType`: A type code for the new `AEDesc` being added to the stream. See [`DescType`](desctype.md).
 - `data`: A pointer to the block of memory containing the descriptor data. This routine copies the memory block immediately, so you do not need to retain it for the benefit of this routine. 
-- `length`: The number of bytes pointed to by the   parameter.
+- `length`: The number of bytes pointed to by the `data` parameter.
 
 ## See Also
 

@@ -16,7 +16,7 @@ var allowsMagnification: Bool { get set }
 
 #### Discussion
 
-The default value is [`false`](https://developer.apple.com/documentation/Swift/false). You can set the `magnification` property even if `allowsMagnification` is set to [`false`](https://developer.apple.com/documentation/Swift/false).
+The default value is [`false`](https://developer.apple.com/documentation/swift/false). You can set the `magnification` property even if `allowsMagnification` is set to [`false`](https://developer.apple.com/documentation/swift/false).
 
 ## See Also
 

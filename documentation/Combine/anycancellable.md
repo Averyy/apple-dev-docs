@@ -49,8 +49,8 @@ An [`AnyCancellable`](anycancellable.md) instance automatically calls [`cancel()
 
 ### Conforms To
 - [Cancellable](cancellable.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
 
 ## See Also
 

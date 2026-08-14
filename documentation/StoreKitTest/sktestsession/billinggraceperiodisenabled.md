@@ -28,7 +28,7 @@ In the production environment, you indicate whether your app supports a billing 
 
 To test how your app handles a grace period when a subscription enters a billing retry state, enable [`shouldEnterBillingRetryOnRenewal`](sktestsession/shouldenterbillingretryonrenewal.md) and [`billingGracePeriodIsEnabled`](sktestsession/billinggraceperiodisenabled.md). All subscriptions fail to renew with a simulated billing issue until you set [`shouldEnterBillingRetryOnRenewal`](sktestsession/shouldenterbillingretryonrenewal.md) to `false`. To resolve a billing issue in the testing environment, call [`resolveIssueForTransaction(identifier:)`](sktestsession/resolveissuefortransaction(identifier:).md).
 
-For more information about billing grace periods and enabling them in the production environment, see [`Reducing Involuntary Subscriber Churn`](https://developer.apple.com/documentation/StoreKit/reducing-involuntary-subscriber-churn) and [`Enable billing grace period for auto-renewable subscriptions`](https://developer.apple.comhttps://help.apple.com/app-store-connect/#/dev58bda3212).
+For more information about billing grace periods and enabling them in the production environment, see [`Reducing Involuntary Subscriber Churn`](https://developer.apple.com/documentation/storekit/reducing-involuntary-subscriber-churn) and [`Enable billing grace period for auto-renewable subscriptions`](https://developer.apple.comhttps://help.apple.com/app-store-connect/#/dev58bda3212).
 
 Changing this property overrides its setting in the StoreKit configuration file for this test session. Call [`resetToDefaultState()`](sktestsession/resettodefaultstate().md) to revert all settings to those in the configuration file.
 

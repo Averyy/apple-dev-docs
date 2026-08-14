@@ -24,7 +24,7 @@ struct UnitsFormatStyle
 
 This style produces formatted strings that break out a duration’s individual components, like “2 min, 3 sec”.
 
-Create a `UnitsFormatStyle` by providing a set of allowed [`Duration.UnitsFormatStyle.Unit`](duration/unitsformatstyle/unit.md) instances — such as hours, minutes, or seconds — for formatted strings to include. You also specify a width for displaying these units, which controls whether they appear as full words (“minutes”) or abbreviations (“min”). The initializers also take optional parameters to control things like the handling of zero units and fractional parts. Then create a formatted string by calling [`formatted(_:)`](duration/formatted(_:).md) on a duration, passing the style, or [`format(_:)`](duration/unitsformatstyle/format(_:).md) on the style, passing a duration. You can also use the style’s [`attributed`](duration/timeformatstyle/attributed-swift.property.md) property to create a style that produces [`AttributedString`](https://developer.apple.com/documentation/Foundation/AttributedString) instances, which contains attributes that indicate the unit value of formatted runs of the string.
+Create a `UnitsFormatStyle` by providing a set of allowed [`Duration.UnitsFormatStyle.Unit`](duration/unitsformatstyle/unit.md) instances — such as hours, minutes, or seconds — for formatted strings to include. You also specify a width for displaying these units, which controls whether they appear as full words (“minutes”) or abbreviations (“min”). The initializers also take optional parameters to control things like the handling of zero units and fractional parts. Then create a formatted string by calling [`formatted(_:)`](duration/formatted(_:).md) on a duration, passing the style, or [`format(_:)`](duration/unitsformatstyle/format(_:).md) on the style, passing a duration. You can also use the style’s [`attributed`](duration/timeformatstyle/attributed-swift.property.md) property to create a style that produces [`AttributedString`](https://developer.apple.com/documentation/foundation/attributedstring) instances, which contains attributes that indicate the unit value of formatted runs of the string.
 
 In situations that expect a [`Duration.UnitsFormatStyle`](duration/unitsformatstyle.md), such as [`formatted(_:)`](duration/formatted(_:).md), you can use the convenience function `.units(allowed:width:maximumUnitCount:zeroValueUnits:valueLength:fractionalPart:)` to create a [`Duration.UnitsFormatStyle`](duration/unitsformatstyle.md), rather than using the full initializer.
 
@@ -92,11 +92,11 @@ The formatted string omits any units that aren’t needed to accurately represen
 ### Conforms To
 - [Copyable](copyable.md)
 - [Decodable](decodable.md)
-- [DiscreteFormatStyle](../Foundation/DiscreteFormatStyle.md)
+- [DiscreteFormatStyle](../foundation/discreteformatstyle.md)
 - [Encodable](encodable.md)
 - [Equatable](equatable.md)
 - [Escapable](escapable.md)
-- [FormatStyle](../Foundation/FormatStyle.md)
+- [FormatStyle](../foundation/formatstyle.md)
 - [Hashable](hashable.md)
 - [Sendable](sendable.md)
 - [SendableMetatype](sendablemetatype.md)

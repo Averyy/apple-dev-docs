@@ -21,7 +21,7 @@ let AVURLAssetReferenceRestrictionsKey: String
 
 #### Discussion
 
-The corresponding value is an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) that wraps an [`AVAssetReferenceRestrictions`](avassetreferencerestrictions.md) enum value, or the logical combination of multiple enum values, that indicate the restrictions the asset uses when resolving references to external media data.
+The corresponding value is an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) that wraps an [`AVAssetReferenceRestrictions`](avassetreferencerestrictions.md) enum value, or the logical combination of multiple enum values, that indicate the restrictions the asset uses when resolving references to external media data.
 
 Some assets can contain references to media data stored outside the asset’s container file, for example in another file. Use this key to specify the policy to use when the asset encounters these references. If an asset contains one or more references to a type forbidden by the reference restriction, loading of asset properties fails, and you can’t use this asset with other AVFoundation objects, such as [`AVPlayerItem`](avplayeritem.md) or [`AVAssetExportSession`](avassetexportsession.md).
 

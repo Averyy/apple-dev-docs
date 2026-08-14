@@ -8,7 +8,7 @@ These constants specify the shape of endpoints for an open path when stroked.
 
 Used by [`lineCap`](cashapelayer/linecap.md). The following figure shows the appearance of the available line cap styles.
 
-![None](https://docs-assets.developer.apple.com/published/5639a2a1fdd14a26edcf53a53ca3d86a/media-1965770.gif)
+![None](/images/com.apple.quartzcore/media-1965770.gif)
 
 ## Topics
 

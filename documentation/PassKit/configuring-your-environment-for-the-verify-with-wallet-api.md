@@ -22,7 +22,7 @@ After you add the `in-app-identity-presentment` entitlement, you’ll set up you
 
 #### Configure Your Apps Entitlement File
 
-Choose the `document-type` you want to add the entitlement to from the entitlement request you submitted. For more information, see [`Managing your app’s information property list values`](https://developer.apple.com/documentation/BundleResources/managing-your-app-s-information-property-list).
+Choose the `document-type` you want to add the entitlement to from the entitlement request you submitted. For more information, see [`Managing your app’s information property list values`](https://developer.apple.com/documentation/bundleresources/managing-your-app-s-information-property-list).
 
 Filter the list of entitlements to just the ones you requested through the entitlement request. The following example shows what a entitlement with the `us-drivers-license` doc-type request might look like:
 

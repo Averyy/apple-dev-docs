@@ -67,7 +67,7 @@ Access network services and handle changes in network configurations. Build on a
 - [typealias CFProxyAutoConfigurationResultCallback](cfproxyautoconfigurationresultcallback.md)
   Callback function called when a proxy autoconfiguration computation has completed.
 - [Property Keys](property-keys.md)
-  Keys for calls to property get/set functions such as [`CFReadStreamSetProperty(_:_:_:)`](https://developer.apple.com/documentation/CoreFoundation/CFReadStreamSetProperty(_:_:_:)) and [`CFReadStreamCopyProperty(_:_:)`](https://developer.apple.com/documentation/CoreFoundation/CFReadStreamCopyProperty(_:_:)).
+  Keys for calls to property get/set functions such as [`CFReadStreamSetProperty(_:_:_:)`](https://developer.apple.com/documentation/corefoundation/cfreadstreamsetproperty(_:_:_:)) and [`CFReadStreamCopyProperty(_:_:)`](https://developer.apple.com/documentation/corefoundation/cfreadstreamcopyproperty(_:_:)).
 - [Proxy Types](proxy-types.md)
   Constants that specify the type of proxy.
 - [Global Proxy Settings Constants](global-proxy-settings-constants.md)
@@ -302,7 +302,7 @@ Access network services and handle changes in network configurations. Build on a
 - [let kCFStreamPropertyHTTPProxyPort: CFString](kcfstreampropertyhttpproxyport.md)
 - [let kCFStreamPropertyHTTPRequestBytesWrittenCount: CFString](kcfstreampropertyhttprequestbyteswrittencount.md)
 - [let kCFStreamPropertyHTTPResponseHeader: CFString](kcfstreampropertyhttpresponseheader.md)
-  HTTP Response Header property. When copied by [`CFReadStreamCopyProperty(_:_:)`](https://developer.apple.com/documentation/CoreFoundation/CFReadStreamCopyProperty(_:_:)), the header of an HTTP response message is returned.
+  HTTP Response Header property. When copied by [`CFReadStreamCopyProperty(_:_:)`](https://developer.apple.com/documentation/corefoundation/cfreadstreamcopyproperty(_:_:)), the header of an HTTP response message is returned.
 - [let kCFStreamPropertyHTTPSProxyHost: CFString](kcfstreampropertyhttpsproxyhost.md)
 - [let kCFStreamPropertyHTTPSProxyPort: CFString](kcfstreampropertyhttpsproxyport.md)
 - [let kCFStreamPropertyHTTPShouldAutoredirect: CFString](kcfstreampropertyhttpshouldautoredirect.md)
@@ -338,7 +338,7 @@ Access network services and handle changes in network configurations. Build on a
 - [func CFStreamCreatePairWithSocketToNetService(CFAllocator?, CFNetService, UnsafeMutablePointer<Unmanaged<CFReadStream>?>?, UnsafeMutablePointer<Unmanaged<CFWriteStream>?>?)](cfstreamcreatepairwithsockettonetservice(_:_:_:_:).md)
   Creates a pair of streams for a CFNetService.
 - [let kCFStreamNetworkServiceType: CFString](kcfstreamnetworkservicetype.md)
-  The type of service for the stream. Providing the service type allows the system to properly handle certain attributes of the stream, including routing and suspension behavior. Most streams do not need to set this property. See [`Stream Service Types`](https://developer.apple.com/documentation/CoreFoundation/stream-service-types) for a list of possible values.
+  The type of service for the stream. Providing the service type allows the system to properly handle certain attributes of the stream, including routing and suspension behavior. Most streams do not need to set this property. See [`Stream Service Types`](https://developer.apple.com/documentation/corefoundation/stream-service-types) for a list of possible values.
 - [let kCFStreamNetworkServiceTypeBackground: CFString](kcfstreamnetworkservicetypebackground.md)
   Specifies that the stream is a background download.
 - [let kCFStreamNetworkServiceTypeCallSignaling: CFString](kcfstreamnetworkservicetypecallsignaling.md)
@@ -359,9 +359,9 @@ Access network services and handle changes in network configurations. Build on a
   The error code is an error code defined in `netdb.h`.
 - [let kCFStreamErrorDomainNetServices: Int32](kcfstreamerrordomainnetservices.md)
   The error code is a `CFNetService` error code. For details, see the [`CFNetServicesError`](cfnetserviceserror.md) enumeration.
-- [let kCFStreamErrorDomainSOCKS: Int32](../CoreFoundation/kCFStreamErrorDomainSOCKS.md)
+- [let kCFStreamErrorDomainSOCKS: Int32](../corefoundation/kcfstreamerrordomainsocks.md)
   The error code is a SOCKS proxy error.
-- [let kCFStreamErrorDomainSSL: Int32](../CoreFoundation/kCFStreamErrorDomainSSL.md)
+- [let kCFStreamErrorDomainSSL: Int32](../corefoundation/kcfstreamerrordomainssl.md)
   The error code is an SSL error code as defined in `Security/SecureTransport.h`.
 - [let kCFStreamErrorDomainSystemConfiguration: Int32](kcfstreamerrordomainsystemconfiguration.md)
   The error code is a system configuration error code as defined in `System/ConfigurationSystemConfiguration.h`.
@@ -373,17 +373,17 @@ Access network services and handle changes in network configurations. Build on a
   A Boolean value indicating that the connection should not be established over a cellular (WWAN) connection. This value can only be set *before* you open the stream.
 - [let kCFStreamPropertyProxyLocalBypass: CFString](kcfstreampropertyproxylocalbypass.md)
   Proxy Local Bypass property key.
-- [let kCFStreamPropertySOCKSPassword: CFString](../CoreFoundation/kCFStreamPropertySOCKSPassword.md)
+- [let kCFStreamPropertySOCKSPassword: CFString](../corefoundation/kcfstreampropertysockspassword.md)
   Constant for the key required to set a user’s password.
-- [let kCFStreamPropertySOCKSProxy: CFString](../CoreFoundation/kCFStreamPropertySOCKSProxy.md)
+- [let kCFStreamPropertySOCKSProxy: CFString](../corefoundation/kcfstreampropertysocksproxy.md)
   SOCKS proxy property key.
-- [let kCFStreamPropertySOCKSProxyHost: CFString](../CoreFoundation/kCFStreamPropertySOCKSProxyHost.md)
+- [let kCFStreamPropertySOCKSProxyHost: CFString](../corefoundation/kcfstreampropertysocksproxyhost.md)
   Constant for the SOCKS proxy host key.
-- [let kCFStreamPropertySOCKSProxyPort: CFString](../CoreFoundation/kCFStreamPropertySOCKSProxyPort.md)
+- [let kCFStreamPropertySOCKSProxyPort: CFString](../corefoundation/kcfstreampropertysocksproxyport.md)
   Constant for the SOCKS proxy host port key.
-- [let kCFStreamPropertySOCKSUser: CFString](../CoreFoundation/kCFStreamPropertySOCKSUser.md)
+- [let kCFStreamPropertySOCKSUser: CFString](../corefoundation/kcfstreampropertysocksuser.md)
   Constant for the key required to set a user name.
-- [let kCFStreamPropertySOCKSVersion: CFString](../CoreFoundation/kCFStreamPropertySOCKSVersion.md)
+- [let kCFStreamPropertySOCKSVersion: CFString](../corefoundation/kcfstreampropertysocksversion.md)
   Constant for the SOCKS version key.
 - [let kCFStreamPropertySSLContext: CFString](kcfstreampropertysslcontext.md)
 - [let kCFStreamPropertySSLPeerCertificates: CFString](kcfstreampropertysslpeercertificates.md)
@@ -392,7 +392,7 @@ Access network services and handle changes in network configurations. Build on a
   SSL Peer Trust property key for copy operations, which return a `SecTrustRef` object containing the result of the SSL handshake.
 - [let kCFStreamPropertySSLSettings: CFString](kcfstreampropertysslsettings.md)
   SSL Settings property key for set operations.
-- [let kCFStreamPropertyShouldCloseNativeSocket: CFString](../CoreFoundation/kCFStreamPropertyShouldCloseNativeSocket.md)
+- [let kCFStreamPropertyShouldCloseNativeSocket: CFString](../corefoundation/kcfstreampropertyshouldclosenativesocket.md)
   Should Close Native Socket property key.
 - [let kCFStreamPropertySocketExtendedBackgroundIdleMode: CFString](kcfstreampropertysocketextendedbackgroundidlemode.md)
   A Boolean value to request that the system keep a socket open and delays reclaiming it when the process moves to the background.
@@ -400,7 +400,7 @@ Access network services and handle changes in network configurations. Build on a
   The key’s value is a `CFHostRef` for the remote host if it is known. If not, its value is `NULL`.
 - [let kCFStreamPropertySocketRemoteNetService: CFString](kcfstreampropertysocketremotenetservice.md)
   The key’s value is a `CFNetServiceRef` for the remote network service if it is known. If not, its value is `NULL`.
-- [let kCFStreamPropertySocketSecurityLevel: CFString](../CoreFoundation/kCFStreamPropertySocketSecurityLevel.md)
+- [let kCFStreamPropertySocketSecurityLevel: CFString](../corefoundation/kcfstreampropertysocketsecuritylevel.md)
   Socket Security Level property key.
 - [let kCFStreamSSLAllowsAnyRoot: CFString](kcfstreamsslallowsanyroot.md)
   Security property key whose value indicates whether root certificates should be allowed.
@@ -418,19 +418,19 @@ Access network services and handle changes in network configurations. Build on a
   Security property key whose value overrides the name used for certificate verification.
 - [let kCFStreamSSLValidatesCertificateChain: CFString](kcfstreamsslvalidatescertificatechain.md)
   Security property key whose value indicates whether the certificate chain should be validated.
-- [let kCFStreamSocketSOCKSVersion4: CFString](../CoreFoundation/kCFStreamSocketSOCKSVersion4.md)
+- [let kCFStreamSocketSOCKSVersion4: CFString](../corefoundation/kcfstreamsocketsocksversion4.md)
   Constant used in the `kCFStreamSockerSOCKSVersion` key to specify SOCKS4 as the SOCKS version for the stream.
-- [let kCFStreamSocketSOCKSVersion5: CFString](../CoreFoundation/kCFStreamSocketSOCKSVersion5.md)
+- [let kCFStreamSocketSOCKSVersion5: CFString](../corefoundation/kcfstreamsocketsocksversion5.md)
   Constant used in the `kCFStreamSOCKSVersion` key to specify SOCKS5 as the SOCKS version for the stream.
-- [let kCFStreamSocketSecurityLevelNegotiatedSSL: CFString](../CoreFoundation/kCFStreamSocketSecurityLevelNegotiatedSSL.md)
+- [let kCFStreamSocketSecurityLevelNegotiatedSSL: CFString](../corefoundation/kcfstreamsocketsecuritylevelnegotiatedssl.md)
   Specifies that the highest level security protocol that can be negotiated be set as the security protocol for a socket stream.
-- [let kCFStreamSocketSecurityLevelNone: CFString](../CoreFoundation/kCFStreamSocketSecurityLevelNone.md)
+- [let kCFStreamSocketSecurityLevelNone: CFString](../corefoundation/kcfstreamsocketsecuritylevelnone.md)
   Specifies that no security level be set.
-- [let kCFStreamSocketSecurityLevelSSLv2: CFString](../CoreFoundation/kCFStreamSocketSecurityLevelSSLv2.md)
+- [let kCFStreamSocketSecurityLevelSSLv2: CFString](../corefoundation/kcfstreamsocketsecuritylevelsslv2.md)
   Specifies that SSL version 2 be set as the security protocol for a socket stream.
-- [let kCFStreamSocketSecurityLevelSSLv3: CFString](../CoreFoundation/kCFStreamSocketSecurityLevelSSLv3.md)
+- [let kCFStreamSocketSecurityLevelSSLv3: CFString](../corefoundation/kcfstreamsocketsecuritylevelsslv3.md)
   Specifies that SSL version 3 be set as the security protocol for a socket stream pair.
-- [let kCFStreamSocketSecurityLevelTLSv1: CFString](../CoreFoundation/kCFStreamSocketSecurityLevelTLSv1.md)
+- [let kCFStreamSocketSecurityLevelTLSv1: CFString](../corefoundation/kcfstreamsocketsecurityleveltlsv1.md)
   Specifies that TLS version 1 be set as the security protocol for a socket stream.
 - [enum CFStreamErrorHTTP](cfstreamerrorhttp.md)
   Error codes that a read stream for an HTTP request may return.

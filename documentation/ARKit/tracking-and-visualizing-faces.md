@@ -21,7 +21,7 @@ This sample app presents a simple interface allowing you to choose between five 
 
 Use the tab bar to switch between these modes.
 
-![Screenshot of UI for choosing AR face modes.](https://docs-assets.developer.apple.com/published/ad7ee8f029463c1094b9d67248c1529e/FaceExampleModes.png)
+![Screenshot of UI for choosing AR face modes.](/images/com.apple.arkit/FaceExampleModes.png)
 
 > ❗ **Important**: Face tracking is available on all devices with Apple Neural Engine in iOS 14 & iPad OS 14, and requires a device with TrueDepth camera on iOS 13 & iPadOS 13 and below. ARKit is not available in iOS Simulator.
 
@@ -63,7 +63,7 @@ func renderer(_ renderer: SCNSceneRenderer, nodeFor anchor: ARAnchor) -> SCNNode
 }
 ```
 
-This example uses a convenience extension on [`SCNReferenceNode`](https://developer.apple.com/documentation/SceneKit/SCNReferenceNode) to load content from an `.scn` file in the app bundle. The [`renderer(_:nodeFor:)`](arscnviewdelegate/renderer(_:nodefor:).md) method provides that node to [`ARSCNView`](arscnview.md), allowing ARKit to automatically adjust the node’s position and orientation to match the tracked face.
+This example uses a convenience extension on [`SCNReferenceNode`](https://developer.apple.com/documentation/scenekit/scnreferencenode) to load content from an `.scn` file in the app bundle. The [`renderer(_:nodeFor:)`](arscnviewdelegate/renderer(_:nodefor:).md) method provides that node to [`ARSCNView`](arscnview.md), allowing ARKit to automatically adjust the node’s position and orientation to match the tracked face.
 
 ##### Use Face Geometry to Model the Users Face
 
@@ -132,7 +132,7 @@ The sample app combines this technique with a SceneKit object positioned in fron
 
 For additional creative uses of face tracking, you can texture-map the live 2D video feed from the camera onto the 3D geometry that ARKit provides. After mapping pixels in the camera video onto the corresponding points on ARKit’s face mesh, you can modify that mesh, creating illusions such as resizing or distorting the user’s face in 3D.
 
-First, create an [`ARSCNFaceGeometry`](arscnfacegeometry.md) for the face and assign the camera image to its main material. [`ARSCNView`](arscnview.md) automatically sets the scene’s [`background`](https://developer.apple.com/documentation/SceneKit/SCNScene/background) material to use the live video feed from the camera, so you can set the geometry to use the same material.
+First, create an [`ARSCNFaceGeometry`](arscnfacegeometry.md) for the face and assign the camera image to its main material. [`ARSCNView`](arscnview.md) automatically sets the scene’s [`background`](https://developer.apple.com/documentation/scenekit/scnscene/background) material to use the live video feed from the camera, so you can set the geometry to use the same material.
 
 ```swift
 // Show video texture as the diffuse material and disable lighting.
@@ -142,7 +142,7 @@ material.diffuse.contents = sceneView.scene.background.contents
 material.lightingModel = .constant
 ```
 
-To correctly align the camera image to the face, you’ll also need to modify the texture coordinates that SceneKit uses for rendering the image on the geometry. One easy way to perform this mapping is with a SceneKit shader modifier (see the [`SCNShadable`](https://developer.apple.com/documentation/SceneKit/SCNShadable) protocol). The shader code here applies the coordinate system transformations needed to convert each vertex position in the mesh from 3D scene space to the 2D image space used by the video texture:
+To correctly align the camera image to the face, you’ll also need to modify the texture coordinates that SceneKit uses for rendering the image on the geometry. One easy way to perform this mapping is with a SceneKit shader modifier (see the [`SCNShadable`](https://developer.apple.com/documentation/scenekit/scnshadable) protocol). The shader code here applies the coordinate system transformations needed to convert each vertex position in the mesh from 3D scene space to the 2D image space used by the video texture:
 
 ```metal
 // Transform the vertex to the camera coordinate system.
@@ -164,7 +164,7 @@ float4 transformedVertex = displayTransform * vertexImageSpace;
 _geometry.texcoords[0] = transformedVertex.xy;
 ```
 
-When you assign a shader code string to the [`geometry`](https://developer.apple.com/documentation/SceneKit/SCNShaderModifierEntryPoint/geometry) entry point, SceneKit configures its renderer to automatically run that code on the GPU for each vertex in the mesh. This shader code also needs to know the intended orientation for the camera image, so the sample gets that from the ARKit `ARFrame/displayTransform(for:viewportSize:)` method and passes it to the shader’s `displayTransform` argument:
+When you assign a shader code string to the [`geometry`](https://developer.apple.com/documentation/scenekit/scnshadermodifierentrypoint/geometry) entry point, SceneKit configures its renderer to automatically run that code on the GPU for each vertex in the mesh. This shader code also needs to know the intended orientation for the camera image, so the sample gets that from the ARKit `ARFrame/displayTransform(for:viewportSize:)` method and passes it to the shader’s `displayTransform` argument:
 
 ```swift
 // Pass view-appropriate image transform to the shader modifier so
@@ -195,7 +195,7 @@ eyeRightNode.scale.z = 1 - eyeBlinkRight
 jawNode.position.y = originalJawY - jawHeight * jawOpen
 ```
 
-There are more than 50 unique [`ARFaceAnchor.BlendShapeLocation`](arfaceanchor/blendshapelocation.md) coefficients, of which your app can use as few or as many as necessary to create the artistic effect you want. In this sample, the `BlendShapeCharacter` class performs this calculation, mapping the [`eyeBlinkLeft`](arfaceanchor/blendshapelocation/eyeblinkleft.md) and [`eyeBlinkRight`](arfaceanchor/blendshapelocation/eyeblinkright.md) parameters to one axis of the [`scale`](https://developer.apple.com/documentation/SceneKit/SCNNode/scale) factor of the robot’s eyes, and the [`jawOpen`](arfaceanchor/blendshapelocation/jawopen.md) parameter to offset the position of the robot’s jaw.
+There are more than 50 unique [`ARFaceAnchor.BlendShapeLocation`](arfaceanchor/blendshapelocation.md) coefficients, of which your app can use as few or as many as necessary to create the artistic effect you want. In this sample, the `BlendShapeCharacter` class performs this calculation, mapping the [`eyeBlinkLeft`](arfaceanchor/blendshapelocation/eyeblinkleft.md) and [`eyeBlinkRight`](arfaceanchor/blendshapelocation/eyeblinkright.md) parameters to one axis of the [`scale`](https://developer.apple.com/documentation/scenekit/scnnode/scale) factor of the robot’s eyes, and the [`jawOpen`](arfaceanchor/blendshapelocation/jawopen.md) parameter to offset the position of the robot’s jaw.
 
 ## See Also
 

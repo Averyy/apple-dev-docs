@@ -23,7 +23,7 @@ The zero-based index of the current element within its group
 
 Use this function to identify which particle within the group is being processed, allowing you to create unique behaviors for different particles in the same group.
 
-> **Note**: ![Graph](https://docs-assets.developer.apple.com/published/b59262f7384bdc796e0535908b818d60/group__elementIndexInGroup.svg)
+> **Note**: ![Graph](/images/com.apple.computegraph/group__elementIndexInGroup.svg)
 
 
 ---

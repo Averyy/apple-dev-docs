@@ -24,7 +24,7 @@ Only add values for data types that your app needs to access. App Review may rej
 
 ## See Also
 
-- [Accessing Health Records](../HealthKit/accessing-health-records.md)
+- [Accessing Health Records](../healthkit/accessing-health-records.md)
   Read clinical record data from the HealthKit store.
 - [HealthKit Entitlement](entitlements/com.apple.developer.healthkit.md)
   A Boolean value that indicates whether the app may request user authorization to access health and activity data that appears in the Health app.

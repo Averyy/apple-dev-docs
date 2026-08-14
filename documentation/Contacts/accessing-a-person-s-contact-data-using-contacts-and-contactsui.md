@@ -24,9 +24,9 @@ Before running the sample code project in Xcode, select the sample target, then 
   Request permission from the person to read and write their contact data.
 - [class CNContactStore](cncontactstore.md)
   The object that fetches and saves contacts, groups, and containers from the user’s Contacts database.
-- [NSContactsUsageDescription](../BundleResources/Information-Property-List/NSContactsUsageDescription.md)
+- [NSContactsUsageDescription](../bundleresources/information-property-list/nscontactsusagedescription.md)
   A message that tells people why the app is requesting access to their contacts.
-- [com.apple.developer.contacts.notes](../BundleResources/Entitlements/com.apple.developer.contacts.notes.md)
+- [com.apple.developer.contacts.notes](../bundleresources/entitlements/com.apple.developer.contacts.notes.md)
   A Boolean value that indicates whether the app may access the notes in contact entries.
 
 

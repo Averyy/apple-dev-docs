@@ -21,7 +21,7 @@ init(modelPath: URL, outputName: String? = nil)
 ## Parameters
 
 - `modelPath`: The location of the neural network `.mlmodel` which contains the feature extractor.
-- `outputName`: The name of a feature extraction layer within the model has one output type of [`MLMultiArray`](https://developer.apple.com/documentation/CoreML/MLMultiArray). Set this value to `nil` if the model, as a whole, accepts an input image and has exactly one output of type [`MLMultiArray`](https://developer.apple.com/documentation/CoreML/MLMultiArray).
+- `outputName`: The name of a feature extraction layer within the model has one output type of [`MLMultiArray`](https://developer.apple.com/documentation/coreml/mlmultiarray). Set this value to `nil` if the model, as a whole, accepts an input image and has exactly one output of type [`MLMultiArray`](https://developer.apple.com/documentation/coreml/mlmultiarray).
 
 
 ---

@@ -13,7 +13,7 @@ Streamline access to users’ location data through a standard, secure UI.
 
 #### Overview
 
-The CoreLocationUI framework contains a standardized UI that interacts securely with [`Core Location`](https://developer.apple.com/documentation/CoreLocation) to request authorization to access location data.
+The CoreLocationUI framework contains a standardized UI that interacts securely with [`Core Location`](https://developer.apple.com/documentation/corelocation) to request authorization to access location data.
 
 CoreLocationUI provides [`LocationButton`](locationbutton.md) for SwiftUI apps and [`CLLocationButton`](cllocationbutton.md) for UIKit apps. Add these buttons to your UI when you want someone to grant one-time authorization for your app to fetch their location. The button’s style is consistent with the standard Core Location design language, giving users a sense of familiarity and trust when they interact with it.
 

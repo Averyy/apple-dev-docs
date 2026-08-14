@@ -25,11 +25,11 @@ Outputs areas of foreground that do not overlap with background.
 
 The `Out` node determines its output using the alpha channels of the foreground and background inputs. The RGB component of the output is `F*(1-b)` and the alpha component of the output is `f*(1-b)`. The visual effect of this node is that within the output, the node preserves the foreground values that don’t overlap with the background alpha. Below is a simple node graph that uses the `Out` node to blend a tile and rock texture:
 
-![None](https://docs-assets.developer.apple.com/published/04e78fb41d59011bd10ba19b9c34b3b1/OutGraph.png)
+![None](/images/ShaderGraph-Docs/OutGraph.png)
 
 Below are the two original images, the image representation of the alpha of the background, and the resulting blended texture applied to a cube:
 
-![None](https://docs-assets.developer.apple.com/published/0e71e7aadb26f829170a47817bc44bae/OutMaterial.png)
+![None](/images/ShaderGraph-Docs/OutMaterial.png)
 
 ## See Also
 

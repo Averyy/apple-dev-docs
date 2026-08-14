@@ -3,7 +3,7 @@
 **Framework**: SpriteKit  
 **Kind**: init
 
-Initializes a video node using an existing [`AVPlayer`](https://developer.apple.com/documentation/AVFoundation/AVPlayer) object.
+Initializes a video node using an existing [`AVPlayer`](https://developer.apple.com/documentation/avfoundation/avplayer) object.
 
 **Availability**:
 - iOS ?+
@@ -26,7 +26,7 @@ An initialized video node.
 
 #### Discussion
 
-You can use the [`AVPlayer`](https://developer.apple.com/documentation/AVFoundation/AVPlayer) object to control playback.
+You can use the [`AVPlayer`](https://developer.apple.com/documentation/avfoundation/avplayer) object to control playback.
 
 Listing 1 shows, in Swift, how you can create a video node using the [`init(avPlayer:)`](skvideonode/init(avplayer:)-9ydbu.md) initializer.
 

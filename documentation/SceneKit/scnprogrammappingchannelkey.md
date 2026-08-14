@@ -22,7 +22,7 @@ let SCNProgramMappingChannelKey: String
 
 #### Discussion
 
-This key can be used with the `options` dictionary for the [`setSemantic(_:forSymbol:options:)`](scnprogram/setsemantic(_:forsymbol:options:).md) method, and applies only to the [`texcoord`](scngeometrysource/semantic-swift.struct/texcoord.md) semantic. Its value is an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) object containing an unsigned integer value.
+This key can be used with the `options` dictionary for the [`setSemantic(_:forSymbol:options:)`](scnprogram/setsemantic(_:forsymbol:options:).md) method, and applies only to the [`texcoord`](scngeometrysource/semantic-swift.struct/texcoord.md) semantic. Its value is an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) object containing an unsigned integer value.
 
 A geometry can provide, and a shader program can use, more than one source of texture coordinates for each vertex. Use this key to specify which geometry source should provide data for each texture sampler vertex attribute declared in a shader program. The mapping channel for a geometry source corresponds to its index in the array returned by calling the [`sources(for:)`](scngeometry/sources(for:).md) method.
 

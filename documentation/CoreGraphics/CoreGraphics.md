@@ -23,15 +23,15 @@ In macOS, Core Graphics also includes services for working with display hardware
 ## Topics
 
 ### Geometric Data Types
-- [struct CGFloat](../CoreFoundation/CGFloat-swift.struct.md)
+- [struct CGFloat](../corefoundation/cgfloat-swift.struct.md)
   The basic type for floating-point scalar values in Core Graphics and related frameworks.
-- [struct CGPoint](../CoreFoundation/CGPoint.md)
-- [struct CGSize](../CoreFoundation/CGSize.md)
+- [struct CGPoint](../corefoundation/cgpoint.md)
+- [struct CGSize](../corefoundation/cgsize.md)
   A structure that contains width and height values.
-- [struct CGRect](../CoreFoundation/CGRect.md)
-- [struct CGVector](../CoreFoundation/CGVector.md)
+- [struct CGRect](../corefoundation/cgrect.md)
+- [struct CGVector](../corefoundation/cgvector.md)
   A structure that contains a two-dimensional vector.
-- [struct CGAffineTransform](../CoreFoundation/CGAffineTransform.md)
+- [struct CGAffineTransform](../corefoundation/cgaffinetransform.md)
 ### 2D Drawing
 - [class CGContext](cgcontext.md)
   A Quartz 2D drawing environment.

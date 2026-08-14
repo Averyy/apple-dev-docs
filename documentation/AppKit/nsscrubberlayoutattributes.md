@@ -18,7 +18,7 @@ class NSScrubberLayoutAttributes
 
 A layout attributes object is the model for the layout of a single item in a scrubber control.
 
-If you require model attributes in addition to those provided by this class, create a subclass and add appropriate attributes. Subclasses must implement [`isEqual(_:)`](https://developer.apple.com/documentation/ObjectiveC/NSObjectProtocol/isEqual(_:)), [`hash`](https://developer.apple.com/documentation/ObjectiveC/NSObjectProtocol/hash) and the [`NSCopying`](https://developer.apple.com/documentation/Foundation/NSCopying) protocol.
+If you require model attributes in addition to those provided by this class, create a subclass and add appropriate attributes. Subclasses must implement [`isEqual(_:)`](https://developer.apple.com/documentation/objectivec/nsobjectprotocol/isequal(_:)), [`hash`](https://developer.apple.com/documentation/objectivec/nsobjectprotocol/hash) and the [`NSCopying`](https://developer.apple.com/documentation/foundation/nscopying) protocol.
 
 ## Topics
 
@@ -38,15 +38,15 @@ If you require model attributes in addition to those provided by this class, cre
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCopying](../Foundation/NSCopying.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCopying](../foundation/nscopying.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

@@ -25,8 +25,8 @@ struct WorldReferenceCoordinateSpace
 ### Conforms To
 - [CoordinateSpace3D](coordinatespace3d.md)
 - [CoordinateSpace3DFloat](coordinatespace3dfloat.md)
-- [Copyable](../Swift/Copyable.md)
-- [Escapable](../Swift/Escapable.md)
+- [Copyable](../swift/copyable.md)
+- [Escapable](../swift/escapable.md)
 
 ## See Also
 

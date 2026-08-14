@@ -16,7 +16,7 @@ static let WKAccessibilityReduceMotionStatusDidChange: NSNotification.Name
 
 #### Discussion
 
-Use this notification to customize your application’s user interface for when reduced motion is enabled. You can also use the [`WKAccessibilityIsReduceMotionEnabled()`](https://developer.apple.com/documentation/WatchKit/WKAccessibilityIsReduceMotionEnabled()) function to determine whether reduced motion is enabled.
+Use this notification to customize your application’s user interface for when reduced motion is enabled. You can also use the [`WKAccessibilityIsReduceMotionEnabled()`](https://developer.apple.com/documentation/watchkit/wkaccessibilityisreducemotionenabled()) function to determine whether reduced motion is enabled.
 
 Observe this notification using the default notification center. This notification doesn’t include a parameter.
 

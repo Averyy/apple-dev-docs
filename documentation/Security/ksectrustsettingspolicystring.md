@@ -17,7 +17,7 @@ var kSecTrustSettingsPolicyString: String { get }
 
 #### Discussion
 
-The value is a [`CFString`](https://developer.apple.com/documentation/CoreFoundation/CFString) object. For the SMIME policy, this string contains an email address. For the SSL policy, it contains a host name.
+The value is a [`CFString`](https://developer.apple.com/documentation/corefoundation/cfstring) object. For the SMIME policy, this string contains an email address. For the SSL policy, it contains a host name.
 
 
 ---

@@ -21,7 +21,7 @@ var synchronizationClock: CMClock? { get }
 
 #### Discussion
 
-The synchronization clock provides the timebase for sample buffers that the stream outputs. Use it to synchronize with the clocks of other media sources, such as the [`synchronizationClock`](https://developer.apple.com/documentation/AVFoundation/AVCaptureSession/synchronizationClock) of [`AVCaptureSession`](https://developer.apple.com/documentation/AVFoundation/AVCaptureSession).
+The synchronization clock provides the timebase for sample buffers that the stream outputs. Use it to synchronize with the clocks of other media sources, such as the [`synchronizationClock`](https://developer.apple.com/documentation/avfoundation/avcapturesession/synchronizationclock) of [`AVCaptureSession`](https://developer.apple.com/documentation/avfoundation/avcapturesession).
 
 
 ---

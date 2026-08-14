@@ -25,7 +25,7 @@ func resolveCounterRange(_ range: Range<Int>) throws -> Data?
 
 #### Return Value
 
-A [`Data`](https://developer.apple.com/documentation/Foundation/Data) instance in Swift, or an [`NSData`](https://developer.apple.com/documentation/Foundation/NSData) instance in Objective-C, if the method successfully resolves the range of samples in the buffer; otherwise, `nil`.
+A [`Data`](https://developer.apple.com/documentation/foundation/data) instance in Swift, or an [`NSData`](https://developer.apple.com/documentation/foundation/nsdata) instance in Objective-C, if the method successfully resolves the range of samples in the buffer; otherwise, `nil`.
 
 #### Discussion
 

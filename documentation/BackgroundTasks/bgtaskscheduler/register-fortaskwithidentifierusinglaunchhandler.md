@@ -24,11 +24,11 @@ func register(forTaskWithIdentifier identifier: String, using queue: dispatch_qu
 
 #### Return Value
 
-Returns [`true`](https://developer.apple.com/documentation/Swift/true) if the launch handler was registered. Returns [`false`](https://developer.apple.com/documentation/Swift/false) if the identifier isn’t included in the [`BGTaskSchedulerPermittedIdentifiers`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/BGTaskSchedulerPermittedIdentifiers) `Info.plist`.
+Returns [`true`](https://developer.apple.com/documentation/swift/true) if the launch handler was registered. Returns [`false`](https://developer.apple.com/documentation/swift/false) if the identifier isn’t included in the [`BGTaskSchedulerPermittedIdentifiers`](https://developer.apple.com/documentation/bundleresources/information-property-list/bgtaskschedulerpermittedidentifiers) `Info.plist`.
 
 #### Discussion
 
-Every identifier in the [`BGTaskSchedulerPermittedIdentifiers`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/BGTaskSchedulerPermittedIdentifiers) requires a handler. Registration of all launch handlers must be complete before the end of [`applicationDidFinishLaunching(_:)`](https://developer.apple.com/documentation/UIKit/UIApplicationDelegate/applicationDidFinishLaunching(_:)).
+Every identifier in the [`BGTaskSchedulerPermittedIdentifiers`](https://developer.apple.com/documentation/bundleresources/information-property-list/bgtaskschedulerpermittedidentifiers) requires a handler. Registration of all launch handlers must be complete before the end of [`applicationDidFinishLaunching(_:)`](https://developer.apple.com/documentation/uikit/uiapplicationdelegate/applicationdidfinishlaunching(_:)).
 
 > ❗ **Important**: Register each task identifier only once. The system kills the app on the second registration of the same task identifier.
 

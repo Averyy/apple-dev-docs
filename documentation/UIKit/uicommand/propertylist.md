@@ -24,11 +24,11 @@ Use [`propertyList`](uicommand/propertylist.md) to associate a small amount of d
 
 **Swift**:
 
-In Swift, the property list should contain only standard library types such as [`Array`](https://developer.apple.com/documentation/Swift/Array), [`Dictionary`](https://developer.apple.com/documentation/Swift/Dictionary), [`String`](https://developer.apple.com/documentation/Swift/String), [`Int`](https://developer.apple.com/documentation/Swift/Int), and [`Double`](https://developer.apple.com/documentation/Swift/Double), and Foundation types such as [`Date`](https://developer.apple.com/documentation/Foundation/Date) and [`Data`](https://developer.apple.com/documentation/Foundation/Data).
+In Swift, the property list should contain only standard library types such as [`Array`](https://developer.apple.com/documentation/swift/array), [`Dictionary`](https://developer.apple.com/documentation/swift/dictionary), [`String`](https://developer.apple.com/documentation/swift/string), [`Int`](https://developer.apple.com/documentation/swift/int), and [`Double`](https://developer.apple.com/documentation/swift/double), and Foundation types such as [`Date`](https://developer.apple.com/documentation/foundation/date) and [`Data`](https://developer.apple.com/documentation/foundation/data).
 
 **Objective-C**:
 
-In Objective-C, the property list should contain only [`NSArray`](https://developer.apple.com/documentation/Foundation/NSArray), [`NSDictionary`](https://developer.apple.com/documentation/Foundation/NSDictionary), [`NSString`](https://developer.apple.com/documentation/Foundation/NSString), [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber), [`NSDate`](https://developer.apple.com/documentation/Foundation/NSDate), and [`NSData`](https://developer.apple.com/documentation/Foundation/NSData) objects.
+In Objective-C, the property list should contain only [`NSArray`](https://developer.apple.com/documentation/foundation/nsarray), [`NSDictionary`](https://developer.apple.com/documentation/foundation/nsdictionary), [`NSString`](https://developer.apple.com/documentation/foundation/nsstring), [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber), [`NSDate`](https://developer.apple.com/documentation/foundation/nsdate), and [`NSData`](https://developer.apple.com/documentation/foundation/nsdata) objects.
 
 ## See Also
 

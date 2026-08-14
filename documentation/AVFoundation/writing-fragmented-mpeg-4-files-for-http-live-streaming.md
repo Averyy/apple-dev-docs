@@ -29,7 +29,7 @@ Before you run the sample code project in Xcode:
   Create video content for visionOS by converting an existing 3D HEVC file to a multiview HEVC format, optionally adding spatial metadata to create a spatial video.
 - [Adding a display mask rectangle metadata track to a movie file](adding-a-display-mask-rectangle-metadata-track-to-a-movie-file.md)
   Show a specific area of a video by using timed display mask rectangle metadata.
-- [Creating spatial photos and videos with spatial metadata](../ImageIO/Creating-spatial-photos-and-videos-with-spatial-metadata.md)
+- [Creating spatial photos and videos with spatial metadata](../imageio/creating-spatial-photos-and-videos-with-spatial-metadata.md)
   Add spatial metadata to stereo photos and videos to create spatial media for viewing on Apple Vision Pro.
 - [Tagging media with video color information](tagging-media-with-video-color-information.md)
   Inspect and set video color space information when writing and transcoding media.

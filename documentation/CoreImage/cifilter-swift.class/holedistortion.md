@@ -30,8 +30,8 @@ This method applies the hole distortion filter to an image. This effect distorts
 The absolute threshold filter uses the following properties:
 
 - **`inputImage`**: An image with the type [`CIImage`](ciimage.md).
-- **`center`**: A set of coordinates marking the center of the image as a [`CGPoint`](https://developer.apple.com/documentation/CoreFoundation/CGPoint).
-- **`radius`**: A `float` representing the amount of pixels the filter uses to create the distortion as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+- **`center`**: A set of coordinates marking the center of the image as a [`CGPoint`](https://developer.apple.com/documentation/corefoundation/cgpoint).
+- **`radius`**: A `float` representing the amount of pixels the filter uses to create the distortion as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
 
 The following code creates a filter that results in an image becoming distorted from the center outward:
 
@@ -45,7 +45,7 @@ func holeDistortion(inputImage: CIImage) -> CIImage {
 }
 ```
 
-![Two images next to each other. The image on the left contains a black-and-white checkerboard pattern. The image on the right has the hole distortion filter applied. The center of the image has been replaced by a black circle and the pixels have been pushed out of place and stretched to make room for this.](https://docs-assets.developer.apple.com/published/f42bdbd7ac365ff3174e1012e7151701/media-4407309%402x.png)
+![Two images next to each other. The image on the left contains a black-and-white checkerboard pattern. The image on the right has the hole distortion filter applied. The center of the image has been replaced by a black circle and the pixels have been pushed out of place and stretched to make room for this.](/images/com.apple.coreimage/media-4407309@2x.png)
 
 ## See Also
 

@@ -22,12 +22,12 @@ optional func application(_ application: UIApplication, didFailToRegisterForRemo
 
 UIKit calls this method if it was unable to register your app with APNs or if your app is not properly configured for remote notifications. During development, make sure your app has the proper entitlements and that its App ID is configured to support push notifications. You might use your implementation of this method to make a note of the failed registration so that you can try again later.
 
-For more information about how to set up and send remote notifications in your app, see [`Setting up a remote notification server`](https://developer.apple.com/documentation/UserNotifications/setting-up-a-remote-notification-server).
+For more information about how to set up and send remote notifications in your app, see [`Setting up a remote notification server`](https://developer.apple.com/documentation/usernotifications/setting-up-a-remote-notification-server).
 
 ## Parameters
 
 - `application`: The app object that initiated the remote-notification registration process.
-- `error`: An [`NSError`](https://developer.apple.com/documentation/Foundation/NSError) object that encapsulates information why registration did not succeed. The app can choose to display this information to the user.
+- `error`: An [`NSError`](https://developer.apple.com/documentation/foundation/nserror) object that encapsulates information why registration did not succeed. The app can choose to display this information to the user.
 
 ## See Also
 

@@ -27,7 +27,7 @@ When your delegate receives this message, the player has accepted a push notific
 ## Parameters
 
 - `match`: A match object containing the current state of the match.
-- `didBecomeActive`: [`true`](https://developer.apple.com/documentation/Swift/true) if the game was launched or brought to the foreground to handle the event.
+- `didBecomeActive`: [`true`](https://developer.apple.com/documentation/swift/true) if the game was launched or brought to the foreground to handle the event.
 
 ## See Also
 

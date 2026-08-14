@@ -7,7 +7,6 @@ A protocol that defines methods for handling notification life cycle events in y
 
 **Availability**:
 - iOS 26.5+
-- iPadOS 26.5+
 
 ## Declaration
 
@@ -44,8 +43,8 @@ Implement this protocol in your app’s [`didActivate(for:)`](notificationsforwa
 ## Relationships
 
 ### Inherits From
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

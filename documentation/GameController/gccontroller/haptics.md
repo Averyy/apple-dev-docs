@@ -21,7 +21,7 @@ var haptics: GCDeviceHaptics? { get }
 
 #### Discussion
 
-Use this property to create [`CHHapticEngine`](https://developer.apple.com/documentation/CoreHaptics/CHHapticEngine) instances as necessary in your app. If the controller doesn’t provide haptics information, this property is `nil`.
+Use this property to create [`CHHapticEngine`](https://developer.apple.com/documentation/corehaptics/chhapticengine) instances as necessary in your app. If the controller doesn’t provide haptics information, this property is `nil`.
 
 ## See Also
 

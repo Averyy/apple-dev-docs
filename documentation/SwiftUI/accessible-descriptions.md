@@ -8,9 +8,9 @@ Describe interface elements to help people understand what they represent.
 
 SwiftUI can often infer some information about your user interface elements, but you can use accessibility modifiers to provide even more information for users that need it.
 
-![None](https://docs-assets.developer.apple.com/published/f52d60c9e7c4a20b6bbd457a3d013a84/accessible-descriptions-hero%402x.png)
+![None](/images/com.apple.SwiftUI/accessible-descriptions-hero@2x.png)
 
-For design guidance, see [`Accessibility`](https://developer.apple.com/design/Human-Interface-Guidelines/accessibility#Content-descriptions) in the Accessibility section of the Human Interface Guidelines.
+For design guidance, see [`Accessibility`](https://developer.apple.com/design/human-interface-guidelines/accessibility) in the Accessibility section of the Human Interface Guidelines.
 
 ## Topics
 

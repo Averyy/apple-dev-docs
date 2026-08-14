@@ -16,11 +16,11 @@ virtual kern_return_t AddCustomProperty(IOUserAudioCustomProperty *in_custom_pro
 
 #### Return Value
 
-[`kIOReturnError`](https://developer.apple.com/documentation/DriverKit/kIOReturnError)
+[`kIOReturnError`](https://developer.apple.com/documentation/driverkit/kioreturnerror)
 
 #### Discussion
 
-This method always returns [`kIOReturnError`](https://developer.apple.com/documentation/DriverKit/kIOReturnError) since a custom property can’t have a custom property.
+This method always returns [`kIOReturnError`](https://developer.apple.com/documentation/driverkit/kioreturnerror) since a custom property can’t have a custom property.
 
 ## Parameters
 

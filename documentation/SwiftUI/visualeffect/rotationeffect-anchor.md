@@ -37,7 +37,7 @@ Text("Rotation by passing an angle in degrees")
     .border(Color.gray)
 ```
 
-![A screenshot of text and a wide grey box. The text says Rotation by passing an angle in degrees. The baseline of the text is rotated clockwise by 22 degrees relative to the box. The center of the box and the center of the text are aligned.](https://docs-assets.developer.apple.com/published/b37c8f57cc3cc583b004f632134572e5/SwiftUI-View-rotationEffect%402x.png)
+![A screenshot of text and a wide grey box. The text says Rotation by passing an angle in degrees. The baseline of the text is rotated clockwise by 22 degrees relative to the box. The center of the box and the center of the text are aligned.](/images/com.apple.SwiftUI/SwiftUI-View-rotationEffect@2x.png)
 
 ## Parameters
 

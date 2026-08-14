@@ -23,7 +23,7 @@ let kIOSurfacePlaneWidth: CFString
 
 Required for image planes.
 
-This value is stored as a [`CFNumber`](https://developer.apple.com/documentation/CoreFoundation/CFNumber).
+This value is stored as a [`CFNumber`](https://developer.apple.com/documentation/corefoundation/cfnumber).
 
 ## See Also
 

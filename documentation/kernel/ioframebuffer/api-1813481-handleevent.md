@@ -23,7 +23,7 @@ IOFramebuffer subclasses should call this IOFramebuffer method on certain power 
 
 ## Parameters
 
-- `event`: kIOFBNotifyDidPowerOn call after entering a state other than the maximum.
+- `event`: The event that has occurred: kIOFBNotifyWillPowerOff call before entering a state other than the maximum. kIOFBNotifyDidPowerOn call after entering the maximum power state. kIOFBNotifyWillPowerOff call before entering a state other than the maximum. kIOFBNotifyDidPowerOn call after entering a state other than the maximum.
 - `info`: None of the above events require additional info, pass zero.
 
 ## See Also

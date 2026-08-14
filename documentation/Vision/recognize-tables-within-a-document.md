@@ -18,7 +18,7 @@ When you run the app, you point your device camera at a document that contains a
 
 The sample demonstrates three main capabilities:
 
-1. Setting up camera capture with [`AVFoundation`](https://developer.apple.com/documentation/AVFoundation) to photograph documents.
+1. Setting up camera capture with [`AVFoundation`](https://developer.apple.com/documentation/avfoundation) to photograph documents.
 2. Detecting a table in a document image using Vision.
 3. Parsing structured data from table cells using DataDetection.
 
@@ -148,7 +148,7 @@ private func parseTable(_ table: DocumentObservation.Container.Table) -> [Contac
 
 The app takes the contact name from the first column and accesses the text content using the [`transcript`](documentobservation/container/text-swift.struct/transcript.md) property.
 
-To process the remaining columns, the app skips the first cell by using [`dropFirst(_:)`](https://developer.apple.com/documentation/Swift/Array/dropFirst(_:)) on the row. It uses the [`DataDetection`](https://developer.apple.com/documentation/DataDetection) framework to find email addresses and phone numbers in the `cell.content.text.detectedData` array.
+To process the remaining columns, the app skips the first cell by using [`dropFirst(_:)`](https://developer.apple.com/documentation/swift/array/dropfirst(_:)) on the row. It uses the [`DataDetection`](https://developer.apple.com/documentation/datadetection) framework to find email addresses and phone numbers in the `cell.content.text.detectedData` array.
 
 The app creates a contact only when it finds an email address. After processing the table, the app stores all the contacts in an array and people can view it through the `ContactView`.
 

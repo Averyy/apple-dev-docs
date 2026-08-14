@@ -6,7 +6,7 @@ Audio codec component types.
 
 #### Overview
 
-Some possible audio codec component subtypes are listed in the format IDs enumeration in the CoreAudioTypes.h header file (see [`Core Audio Data Types`](https://developer.apple.com/documentation/CoreAudio/core-audio-data-types)).
+Some possible audio codec component subtypes are listed in the format IDs enumeration in the CoreAudioTypes.h header file (see [`Core Audio Data Types`](https://developer.apple.com/documentation/coreaudio/core-audio-data-types)).
 
 ## Topics
 

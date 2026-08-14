@@ -74,13 +74,11 @@ final class WeatherService
 ## Relationships
 
 ### Conforms To
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 
-- [Fetching weather forecasts with WeatherKit](fetching_weather_forecasts_with_weatherkit.md)
-  Request and display weather data for destination airports in a flight-planning app.
 - [struct Weather](weather.md)
   A model representing the aggregate weather data the caller requests.
 

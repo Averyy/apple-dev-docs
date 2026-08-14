@@ -38,7 +38,7 @@ protocol NSFileProviderEnumerator : NSObjectProtocol
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 ### Inherited By
 - [NSFileProviderPendingSetEnumerator](nsfileproviderpendingsetenumerator.md)
 

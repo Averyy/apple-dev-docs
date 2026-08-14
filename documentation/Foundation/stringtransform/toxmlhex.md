@@ -26,7 +26,7 @@ This transformation is reversible.
 
 For example, the string “❦” transforms to “&#x2766;”.
 
-This is equivalent to [`kCFStringTransformToXMLHex`](https://developer.apple.com/documentation/CoreFoundation/kCFStringTransformToXMLHex).
+This is equivalent to [`kCFStringTransformToXMLHex`](https://developer.apple.com/documentation/corefoundation/kcfstringtransformtoxmlhex).
 
 ## See Also
 

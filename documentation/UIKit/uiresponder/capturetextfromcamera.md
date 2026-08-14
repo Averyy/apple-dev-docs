@@ -20,7 +20,7 @@ func captureTextFromCamera(_ sender: Any?)
 
 #### Discussion
 
-To receive callbacks from the data scanner, the responder should conform to either the [`UIKeyInput`](uikeyinput.md) or [`UITextInput`](uitextinput.md) protocol. If it conforms to [`UIKeyInput`](uikeyinput.md), the scanner calls the [`insertText:`](https://developer.apple.com/documentation/AppKit/NSTextInput/insertText:) protocol method. If it conforms to [`UITextInput`](uitextinput.md), the scanner calls the [`setMarkedText(_:selectedRange:)`](uitextinput/setmarkedtext(_:selectedrange:).md) and [`unmarkText()`](uitextinput/unmarktext().md) protocol methods.
+To receive callbacks from the data scanner, the responder should conform to either the [`UIKeyInput`](uikeyinput.md) or [`UITextInput`](uitextinput.md) protocol. If it conforms to [`UIKeyInput`](uikeyinput.md), the scanner calls the [`insertText:`](https://developer.apple.com/documentation/appkit/nstextinput/inserttext:) protocol method. If it conforms to [`UITextInput`](uitextinput.md), the scanner calls the [`setMarkedText(_:selectedRange:)`](uitextinput/setmarkedtext(_:selectedrange:).md) and [`unmarkText()`](uitextinput/unmarktext().md) protocol methods.
 
 To determine whether the data scanner runs on the user’s device, pass [`captureTextFromCamera(_:)`](uiresponder/capturetextfromcamera(_:).md) to the [`canPerformAction(_:withSender:)`](uiresponder/canperformaction(_:withsender:).md) method.
 
@@ -30,7 +30,7 @@ To determine whether the data scanner runs on the user’s device, pass [`captur
 
 ## See Also
 
-- [Scanning data with the camera](../VisionKit/scanning-data-with-the-camera.md)
+- [Scanning data with the camera](../visionkit/scanning-data-with-the-camera.md)
   Enable Live Text data scanning of text and codes that appear in the camera’s viewfinder.
 
 

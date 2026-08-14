@@ -44,13 +44,13 @@ class IOHIDDigitizerCollection;
 ## Relationships
 
 ### Inherits From
-- [OSContainer](../DriverKit/OSContainer.md)
+- [OSContainer](../driverkit/oscontainer.md)
 
 ## See Also
 
 - [IOHIDElement](iohidelement.md)
   An object that contains parsed information from a HID input report.
-- [com.apple.developer.hid.virtual.device](../BundleResources/Entitlements/com.apple.developer.hid.virtual.device.md)
+- [com.apple.developer.hid.virtual.device](../bundleresources/entitlements/com.apple.developer.hid.virtual.device.md)
   A Boolean value that indicates whether the driver creates a virtual HID device.
 - [Low-Level Information](low-level-information.md)
   Understand the underlying structures that support HID drivers.

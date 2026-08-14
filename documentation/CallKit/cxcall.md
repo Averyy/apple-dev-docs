@@ -22,7 +22,7 @@ class CXCall
 
 You don’t instantiate [`CXCall`](cxcall.md) objects directly. Instead, [`CXCall`](cxcall.md) objects are created by the telephony provider when an incoming call is received or an outgoing call is initiated.
 
-Each [`CXCall`](cxcall.md) object is uniquely identified by a [`uuid`](cxcall/uuid.md). You primarily interact with calls by passing their unique identifiers to CallKit APIs. For example, to place a call on hold, you create an instance of [`CXSetHeldCallAction`](cxsetheldcallaction.md) with [`init(call:onHold:)`](cxsetheldcallaction/init(call:onhold:).md) passing the [`uuid`](cxcall/uuid.md) of the call and [`true`](https://developer.apple.com/documentation/Swift/true), create a [`CXTransaction`](cxtransaction.md) object containing the action, and then pass the transaction to an instance of [`CXCallController`](cxcallcontroller.md) using the [`request(_:completion:)`](cxcallcontroller/request(_:completion:).md) method.
+Each [`CXCall`](cxcall.md) object is uniquely identified by a [`uuid`](cxcall/uuid.md). You primarily interact with calls by passing their unique identifiers to CallKit APIs. For example, to place a call on hold, you create an instance of [`CXSetHeldCallAction`](cxsetheldcallaction.md) with [`init(call:onHold:)`](cxsetheldcallaction/init(call:onhold:).md) passing the [`uuid`](cxcall/uuid.md) of the call and [`true`](https://developer.apple.com/documentation/swift/true), create a [`CXTransaction`](cxtransaction.md) object containing the action, and then pass the transaction to an instance of [`CXCallController`](cxcallcontroller.md) using the [`request(_:completion:)`](cxcallcontroller/request(_:completion:).md) method.
 
 You can use the [`CXCallObserver`](cxcallobserver.md) managed by a [`CXCallController`](cxcallcontroller.md) to access [`CXCall`](cxcall.md) instances for active calls using the [`calls`](cxcallobserver/calls.md) property, or provide an object conforming to the [`CXCallObserverDelegate`](cxcallobserverdelegate.md) protocol to be notified anytime a call is updated.
 
@@ -43,14 +43,14 @@ You can use the [`CXCallObserver`](cxcallobserver.md) managed by a [`CXCallContr
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

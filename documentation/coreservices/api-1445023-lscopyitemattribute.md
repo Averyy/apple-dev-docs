@@ -24,10 +24,10 @@ Thread-safe since OS X v10.4.
 
 ## Parameters
 
-- `inItem`: The   of the item to query.
-- `inRoles`: The roles. When obtaining attributes related to document binding (such as  ), at least one of the roles must be provided by the application selected. Pass   if any role is acceptable.
-- `inAttributeName`: The name of the attribute to copy. For possible values, see  .
-- `outValue`: A pointer to a  . On return, the   is set to the copied attribute value (a CF object), or is   if an error occurs. The type of the returned object varies depending on the attribute that is requested.
+- `inItem`: The `FSRef` of the item to query.
+- `inRoles`: The roles. When obtaining attributes related to document binding (such as `kLSItemRoleHandlerDisplayName`), at least one of the roles must be provided by the application selected. Pass `kLSRolesAll` if any role is acceptable.
+- `inAttributeName`: The name of the attribute to copy. For possible values, see `Item Attribute Constants`.
+- `outValue`: A pointer to a `CFTypeRef`. On return, the `CFTypeRef` is set to the copied attribute value (a CF object), or is `NULL` if an error occurs. The type of the returned object varies depending on the attribute that is requested.
 
 ## See Also
 

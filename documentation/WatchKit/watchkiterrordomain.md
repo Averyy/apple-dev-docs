@@ -16,7 +16,7 @@ let WatchKitErrorDomain: String
 
 #### Discussion
 
-The system uses this value in the [`NSError`](https://developer.apple.com/documentation/Foundation/NSError) class.
+The system uses this value in the [`NSError`](https://developer.apple.com/documentation/foundation/nserror) class.
 
 
 ---

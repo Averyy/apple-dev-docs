@@ -22,7 +22,7 @@ func processContentKeyResponseError(_ error: any Error)
 
 ## Parameters
 
-- `error`: An [`NSError`](https://developer.apple.com/documentation/Foundation/NSError) that describes why the content key response failed.
+- `error`: An [`NSError`](https://developer.apple.com/documentation/foundation/nserror) that describes why the content key response failed.
 
 ## See Also
 

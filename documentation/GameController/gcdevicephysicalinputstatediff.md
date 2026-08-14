@@ -39,7 +39,7 @@ Use the `GCDevicePhysicalInput` [`nextInputState()`](gcdevicephysicalinput/nexti
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

@@ -19,7 +19,7 @@ class let touchBarTextJustifiedAlignTemplateName: String
 
 #### Discussion
 
-![Template image for justify text](https://docs-assets.developer.apple.com/published/cad033ff478ea671625ee842fe5e106f/media-2825138%402x.png)
+![Template image for justify text](/images/com.apple.appkit/media-2825138@2x.png)
 
 Touch Bar template images are exclusively for use in [`NSTouchBarItem`](nstouchbaritem.md) objects and not in onscreen windows.
 

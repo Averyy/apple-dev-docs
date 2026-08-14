@@ -23,7 +23,7 @@ Before you start testing In-App Purchases in the sandbox environment, make sure 
 2. Your membership Account Holder has signed the Paid Applications Agreement, as described in [`Sign and update agreements`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/manage-agreements/sign-and-update-agreements).
 3. You set up the product information in App Store Connect for the app you’re testing. At minimum, set up a product reference name, product ID, a localized name, and a price. For more information, see [`Overview for configuring in-app purchases`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/configure-in-app-purchase-settings/overview-for-configuring-in-app-purchases).
 4. You create Sandbox Apple Accounts in App Store Connect. For more information, see [`Create a Sandbox Apple Account`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/test-in-app-purchases/create-sandbox-apple-ids).
-5. You grant permission for locally installed apps to run on the device if you test a development-signed build on iOS, watchOS, or visionOS devices. For more information, see [`Enabling Developer Mode on a device`](https://developer.apple.com/documentation/Xcode/enabling-developer-mode-on-a-device).
+5. You grant permission for locally installed apps to run on the device if you test a development-signed build on iOS, watchOS, or visionOS devices. For more information, see [`Enabling Developer Mode on a device`](https://developer.apple.com/documentation/xcode/enabling-developer-mode-on-a-device).
 
 > ❗ **Important**: A Sandbox Apple Account only works for testing In-App Purchases in apps that belong to the same Apple Developer Program account you used to create it. Don’t use a Sandbox Apple Account to test In-App Purchases in another developer’s app.
 
@@ -56,7 +56,7 @@ Follow these steps to access sandbox controls for TestFlight in iOS:
 2. Open Settings and select your Apple Account.
 3. Select Media & Purchases.
 4. On the pop-up menu, select Sign Out.
-5. Next, open Settings and select Developer. (This option is available when you enable [`Enabling Developer Mode on a device`](https://developer.apple.com/documentation/Xcode/enabling-developer-mode-on-a-device)).
+5. Next, open Settings and select Developer. (This option is available when you enable [`Enabling Developer Mode on a device`](https://developer.apple.com/documentation/xcode/enabling-developer-mode-on-a-device)).
 6. Scroll to the bottom of the screen, and select Sign In under Sandbox Apple Account. Enter your Sandbox Apple Account credentials.
 
 Your device now has access to the sandbox controls for testing your beta app, and In-App Purchases use your Sandbox Apple Account.
@@ -93,11 +93,11 @@ For information on all aspects of managing sandbox settings in App Store Connect
 
 ##### Get Server Notifications for the Sandbox Environment
 
-Along with testing In-App Purchase in your app, you can also test related server operations in the sandbox environment. To enable App Store Server Notifications for the sandbox environment, see [`Enabling App Store Server Notifications`](https://developer.apple.com/documentation/AppStoreServerNotifications/enabling-app-store-server-notifications).
+Along with testing In-App Purchase in your app, you can also test related server operations in the sandbox environment. To enable App Store Server Notifications for the sandbox environment, see [`Enabling App Store Server Notifications`](https://developer.apple.com/documentation/appstoreservernotifications/enabling-app-store-server-notifications).
 
-As you test your app, your server receives notifications for In-App Purchase transactions. The notification payload identifies the sandbox environment in the [`environment`](https://developer.apple.com/documentation/AppStoreServerNotifications/environment) property of the [`data`](https://developer.apple.com/documentation/AppStoreServerNotifications/data) object. For more information, [`Testing App Store server notifications`](testing-app-store-server-notifications.md).
+As you test your app, your server receives notifications for In-App Purchase transactions. The notification payload identifies the sandbox environment in the [`environment`](https://developer.apple.com/documentation/appstoreservernotifications/environment) property of the [`data`](https://developer.apple.com/documentation/appstoreservernotifications/data) object. For more information, [`Testing App Store server notifications`](testing-app-store-server-notifications.md).
 
-The [`App Store Server API`](https://developer.apple.com/documentation/AppStoreServerAPI) is also available in the sandbox environment. Use the endpoints’ sandbox URLs to get information about transactions that occur during testing.
+The [`App Store Server API`](https://developer.apple.com/documentation/appstoreserverapi) is also available in the sandbox environment. Use the endpoints’ sandbox URLs to get information about transactions that occur during testing.
 
 ##### Test in App Purchases for All Regions
 

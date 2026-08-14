@@ -32,13 +32,13 @@ You need to configure several parts of your alternative marketplace so it can fu
 - [`Add an Alternative Distribution Domain`](post-v1-alternativedistributiondomains.md) to represent your marketplace app’s base web domain, from which all traffic must flow. This domain serves your marketplace app and all other apps on individual pages on your marketplace.
 - Set up your marketplace search detail so Apple can crawl your sitemap and include your apps in Spotlight search, using [`Add a marketplace search detail url`](post-v1-marketplacesearchdetails.md). To learn more, see [`Building a searchable catalog for your marketplace app for inclusion in Spotlight`](building-a-searchable-catalog-for-your-marketplace-app-for-inclusion-in-spotlight.md).
 
-Next, you need to process alternative distribution packages. For more information, see [`Processing alternative app marketplace notifications`](https://developer.apple.com/documentation/appdistribution/processing-alternative-marketplace-notifications).
+Next, you need to process alternative distribution packages. For more information, see [`Processing alternative app marketplace notifications`](https://developer.apple.com/documentation/marketplacekit/processing-alternative-marketplace-notifications).
 
 Next, you need to obtain the alternative distribution package ID; follow these steps based on whether the app you distribute is already approved by App Review:
 
 - If the app to be distributed on an alternative marketplace is already approved, the app developer needs to generate an alternative distribution package by using the [`Create an Alternative Distribution Package`](post-v1-alternativedistributionpackages.md) endpoint.
 - If the app to be distributed on an alternative marketplace is not in one of the following states (all of which are after approval by App Review): `Pending Developer Release, Pending Apple Release,` or `Ready for Distribution,` the alternative distribution package is automatically created after approval.
-- Once the alternative distribution package is created, and the alternative distribution package ID is provided to the marketplace, either by the app developer or though webhooks, the marketplace can ingest and process the provided files. To learn more, see [`Processing alternative app marketplace notifications`](https://developer.apple.com/documentation/appdistribution/processing-alternative-marketplace-notifications).
+- Once the alternative distribution package is created, and the alternative distribution package ID is provided to the marketplace, either by the app developer or though webhooks, the marketplace can ingest and process the provided files. To learn more, see [`Processing alternative app marketplace notifications`](https://developer.apple.com/documentation/marketplacekit/processing-alternative-marketplace-notifications).
 
 ## See Also
 

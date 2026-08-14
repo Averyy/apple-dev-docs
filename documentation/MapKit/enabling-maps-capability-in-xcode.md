@@ -18,9 +18,9 @@ A routing app, an iOS app that provides point-to-point directions, requires Maps
 
 The screenshot below shows the Maps capability:
 
-![A screenshot showing the Maps capability with no route modes selected. ](https://docs-assets.developer.apple.com/published/552515a1d1d61d338158af21ea51563c/media-3737976%402x.png)
+![A screenshot showing the Maps capability with no route modes selected. ](/images/com.apple.mapkit/media-3737976@2x.png)
 
-For more information on enabling capabilities in your app, see [`Adding capabilities to your app`](https://developer.apple.com/documentation/Xcode/adding-capabilities-to-your-app). For more information on providing directions in your app, see [`MKDirections`](mkdirections.md).
+For more information on enabling capabilities in your app, see [`Adding capabilities to your app`](https://developer.apple.com/documentation/xcode/adding-capabilities-to-your-app). For more information on providing directions in your app, see [`MKDirections`](mkdirections.md).
 
 ## See Also
 

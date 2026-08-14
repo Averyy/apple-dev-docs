@@ -26,7 +26,7 @@ func vImageConvert_16Fto16U(_ src: UnsafePointer<vImage_Buffer>, _ dest: UnsafeP
 
 #### Discussion
 
-The conversion maps source pixels with a value of `0.0` to `0`, and `1.0` to [`max`](https://developer.apple.com/documentation/Swift/UInt16/max).
+The conversion maps source pixels with a value of `0.0` to `0`, and `1.0` to [`max`](https://developer.apple.com/documentation/swift/uint16/max).
 
 ## Parameters
 

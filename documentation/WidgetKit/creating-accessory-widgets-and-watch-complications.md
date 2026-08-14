@@ -33,7 +33,7 @@ To get started:
 4. Add a new iOS widget extension target to your project.
 5. Add code for your iOS and watchOS apps, and create iOS widgets — including for the Lock Screen — and watchOS complications simultaneously using SwiftUI views and WidgetKit.
 
-To learn more about creating widgets and building apps with SwiftUI, see [`Creating a widget extension`](creating-a-widget-extension.md) and [`SwiftUI`](https://developer.apple.com/documentation/SwiftUI). For more information on creating watchOS apps, see [`watchOS apps`](https://developer.apple.com/documentation/watchOS-Apps).
+To learn more about creating widgets and building apps with SwiftUI, see [`Creating a widget extension`](creating-a-widget-extension.md) and [`SwiftUI`](https://developer.apple.com/documentation/swiftui). For more information on creating watchOS apps, see [`watchOS apps`](https://developer.apple.com/documentation/watchos-apps).
 
 ##### Add Accessory Widgets to Your Existing Ios App
 
@@ -41,7 +41,7 @@ If your app supports widgets, adding accessory widgets works like supporting any
 
 If you don’t offer widgets in your app, add a widget extension to your app and support accessory widgets from the start. To learn more about adding a widget extension to your project, see [`Creating a widget extension`](creating-a-widget-extension.md).
 
-Additionally, consider adding support for watchOS with WidgetKit complications by adding a watchOS app target and a watchOS widget extension target. To learn more about creating a watchOS app, see [`watchOS apps`](https://developer.apple.com/documentation/watchOS-Apps).
+Additionally, consider adding support for watchOS with WidgetKit complications by adding a watchOS app target and a watchOS widget extension target. To learn more about creating a watchOS app, see [`watchOS apps`](https://developer.apple.com/documentation/watchos-apps).
 
 ##### Add Widgetkit Complications to Your Existing Watchos App
 
@@ -49,7 +49,7 @@ If your existing watchOS app doesn’t offer complications, add a watchOS widget
 
 If your watchOS app offers ClockKit complications, continue to use these to support watchOS 8 and earlier. However, plan to migrate your existing ClockKit complications to WidgetKit as described in [`Migrating ClockKit complications to WidgetKit`](converting-a-clockkit-app.md).
 
-> ❗ **Important**: As soon as you offer a widget-based complication, the system stops calling ClockKit APIs. For example, it no longer calls your [`CLKComplicationDataSource`](https://developer.apple.com/documentation/ClockKit/CLKComplicationDataSource) object’s methods to request timeline entries. The system may still wake your data source for migration requests.
+> ❗ **Important**: As soon as you offer a widget-based complication, the system stops calling ClockKit APIs. For example, it no longer calls your [`CLKComplicationDataSource`](https://developer.apple.com/documentation/clockkit/clkcomplicationdatasource) object’s methods to request timeline entries. The system may still wake your data source for migration requests.
 
 Additionally, consider adding support for iOS by adding an iOS app target to your Xcode project if your watchOS app doesn’t come with an iOS companion app.
 

@@ -34,15 +34,15 @@ For more information, see [`Registering devices and users`](registering-devices-
 
 #### Use Sso Tokens
 
-Regardless of authentication method, the system stores SSO tokens in the keychain using the keychain data protection attribute [`kSecAttrAccessibleAfterFirstUnlockThisDeviceOnly`](https://developer.apple.com/documentation/Security/kSecAttrAccessibleAfterFirstUnlockThisDeviceOnly) and shares them only with the SSO extension.
+Regardless of authentication method, the system stores SSO tokens in the keychain using the keychain data protection attribute [`kSecAttrAccessibleAfterFirstUnlockThisDeviceOnly`](https://developer.apple.com/documentation/security/ksecattraccessibleafterfirstunlockthisdeviceonly) and shares them only with the SSO extension.
 
 The SSO extension then uses the SSO tokens to authenticate the user to their on-premises apps and on websites as needed. If the SSO tokens are missing, expired, or more than four hours old, Platform SSO refreshes or retrieves new tokens from the identity provider. The system can also retrieve Kerberos TGTs, import them to a credential cache, and (optionally) share them with the Kerberos SSO extension.
 
 #### Configure Platform Sso Using Device Management
 
-Use [`Device Management`](https://developer.apple.com/documentation/DeviceManagement) to securely configure Platform SSO, including registering devices and users, configuring groups, and managing account permissions.
+Use [`Device Management`](https://developer.apple.com/documentation/devicemanagement) to securely configure Platform SSO, including registering devices and users, configuring groups, and managing account permissions.
 
-For more information, see [`Configuring Platform Single Sign-on`](https://developer.apple.com/documentation/DeviceManagement/configuring-platform-single-sign-on).
+For more information, see [`Configuring Platform Single Sign-on`](https://developer.apple.com/documentation/devicemanagement/configuring-platform-single-sign-on).
 
 ## Topics
 
@@ -66,7 +66,7 @@ For more information, see [`Configuring Platform Single Sign-on`](https://develo
   An interface for configuring platform single sign-on.
 - [class ASAuthorizationProviderExtensionLoginManager](asauthorizationproviderextensionloginmanager.md)
   An interface to maintain platform single sign-on (SSO) during authentication and registration.
-- [Configuring Platform Single Sign-on](../DeviceManagement/configuring-platform-single-sign-on.md)
+- [Configuring Platform Single Sign-on](../devicemanagement/configuring-platform-single-sign-on.md)
   Provide a seamless login and authentication experience when integrating with your identity provider.
 ### Authentication
 - [Authentication process](authentication-process.md)

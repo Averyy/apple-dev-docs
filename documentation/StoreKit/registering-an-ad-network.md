@@ -54,9 +54,9 @@ Send your public key file to Apple when you register your ad network.
   Set up a source app to participate in ad campaigns.
 - [Configuring an advertised app](configuring-an-advertised-app.md)
   Prepare an advertised app to participate in ad campaigns.
-- [SKAdNetworkItems](../BundleResources/Information-Property-List/SKAdNetworkItems.md)
+- [SKAdNetworkItems](../bundleresources/information-property-list/skadnetworkitems.md)
   An array of dictionaries containing a list of ad network IDs.
-- [NSAdvertisingAttributionReportEndpoint](../BundleResources/Information-Property-List/NSAdvertisingAttributionReportEndpoint.md)
+- [NSAdvertisingAttributionReportEndpoint](../bundleresources/information-property-list/nsadvertisingattributionreportendpoint.md)
   The URL where Private Click Measurement and SKAdNetwork send attribution information.
 
 

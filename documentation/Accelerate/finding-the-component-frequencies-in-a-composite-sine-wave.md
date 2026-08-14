@@ -8,7 +8,7 @@ Use 1D fast Fourier transform to compute the frequency components of a signal.
 
 Accelerate’s vDSP module provides functions to perform 1D fast Fourier transforms (FFTs) on vectors of data, such as audio signals. The example below shows an input signal (left) and its frequency domain representation (right) after transforming the signal with a forward FFT.
 
-![A diagram that shows, on the left, a plot of the original signal, and, on the right, a plot of the component frequencies as a series of vertical lines.](https://docs-assets.developer.apple.com/published/8fd975813f33515dce846eb4365ba762/media-4264723%402x.png)
+![A diagram that shows, on the left, a plot of the original signal, and, on the right, a plot of the component frequencies as a series of vertical lines.](/images/com.apple.accelerate/media-4264723@2x.png)
 
 You can inspect the frequency-domain data of a forward FFT to compute the individual sine wave components of a composite wave. The technique described in this article is applicable to many digital signal processing applications, for example, finding the dominant frequencies in a dual-tone multi-frequency (DTMF) signal or removing noise from a signal.
 
@@ -52,7 +52,7 @@ let signal = synthesizeSignal(frequencyAmplitudePairs: frequencyAmplitudePairs,
 
 The image below is a visualization of composite sine waves in `signal`:
 
-![A diagram that shows a plot of the original signal in the time domain.](https://docs-assets.developer.apple.com/published/0c181f3799d85d3224507c27f732ca0c/media-4264725%402x.png)
+![A diagram that shows a plot of the original signal in the time domain.](/images/com.apple.accelerate/media-4264725@2x.png)
 
 ##### Create the Fft Setup
 
@@ -164,9 +164,9 @@ let autospectrum = [Float](unsafeUninitializedCapacity: halfN) {
 
 The autospectrum of the forward FFT contains a series of high-magnitude items, rendered as vertical lines in the graph below:
 
-![A diagram that shows a plot of the power spectrum of the original signal in the frequency domain.](https://docs-assets.developer.apple.com/published/c31d2ab888d9e5a277847b7ade375c87/media-4264726%402x.png)
+![A diagram that shows a plot of the power spectrum of the original signal in the frequency domain.](/images/com.apple.accelerate/media-4264726@2x.png)
 
-The autospectrum values correspond to the frequencies and amplitudes you specified in the `frequencies` array. The code below scales the amplitudes to consider the autospectrum calculation and the inverse-transform step. To learn more about scaling time- and frequency-domain data, see [`Understanding data packing for Fourier transforms`](understanding-data-packing-for-fourier-transforms#Scale-time--and-frequency-domain-data.md).
+The autospectrum values correspond to the frequencies and amplitudes you specified in the `frequencies` array. The code below scales the amplitudes to consider the autospectrum calculation and the inverse-transform step. To learn more about scaling time- and frequency-domain data, see [`Understanding data packing for Fourier transforms`](understanding-data-packing-for-fourier-transforms.md).
 
 ```swift
 let componentFrequencyAmplitudePairs = autospectrum.enumerated().filter {

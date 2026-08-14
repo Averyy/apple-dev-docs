@@ -32,7 +32,7 @@ Overriding this method is not recommended. Any changes to the returned glyph ran
 
 - `glyphIndex`: Index of a glyph in the returned container.
 - `effectiveGlyphRange`: If not `NULL`, on output, points to the whole range of glyphs that are in the returned container.
-- `flag`: If [`true`](https://developer.apple.com/documentation/Swift/true), glyph generation and layout are not performed, so this option should not be used unless layout is known to be complete for the range in question, or unless noncontiguous layout is enabled; if [`false`](https://developer.apple.com/documentation/Swift/false), both are performed as needed.
+- `flag`: If [`true`](https://developer.apple.com/documentation/swift/true), glyph generation and layout are not performed, so this option should not be used unless layout is known to be complete for the range in question, or unless noncontiguous layout is enabled; if [`false`](https://developer.apple.com/documentation/swift/false), both are performed as needed.
 
 ## See Also
 
@@ -48,7 +48,7 @@ Overriding this method is not recommended. Any changes to the returned glyph ran
   Associates a text container with the specified range of glyphs.
 - [func textContainerChangedGeometry(NSTextContainer)](nslayoutmanager/textcontainerchangedgeometry(_:).md)
   Invalidates the layout information, and possibly glyphs, for the specified text container and all subsequent text container objects.
-- [func textContainerChangedTextView(NSTextContainer)](../AppKit/NSLayoutManager/textContainerChangedTextView(_:).md)
+- [func textContainerChangedTextView(NSTextContainer)](../appkit/nslayoutmanager/textcontainerchangedtextview(_:).md)
   Updates the information necessary to manage text view objects for the specified text container.
 - [func textContainer(forGlyphAt: Int, effectiveRange: NSRangePointer?) -> NSTextContainer?](nslayoutmanager/textcontainer(forglyphat:effectiverange:).md)
   Returns the text container that manages the layout for the specified glyph, causing layout to happen as necessary.

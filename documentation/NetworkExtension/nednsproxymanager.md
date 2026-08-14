@@ -47,7 +47,7 @@ Instances of the proxy manager are thread safe.
 - [var localizedDescription: String?](nednsproxymanager/localizeddescription.md)
   A description of the DNS proxy.
 ### Notifications
-- [static let NEDNSProxyConfigurationDidChange: NSNotification.Name](../Foundation/NSNotification/Name-swift.struct/NEDNSProxyConfigurationDidChange.md)
+- [static let NEDNSProxyConfigurationDidChange: NSNotification.Name](../foundation/nsnotification/name-swift.struct/nednsproxyconfigurationdidchange.md)
   A notification that is posted when the DNS proxy configuration changes.
 ### Errors
 - [let NEDNSProxyErrorDomain: String](nednsproxyerrordomain.md)
@@ -58,14 +58,14 @@ Instances of the proxy manager are thread safe.
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

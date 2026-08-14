@@ -8,7 +8,6 @@ Establishes a notification session for communication with the system.
 
 **Availability**:
 - iOS 26.5+
-- iPadOS 26.5+
 
 ## Declaration
 

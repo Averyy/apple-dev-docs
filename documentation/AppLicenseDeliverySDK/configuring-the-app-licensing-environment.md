@@ -11,7 +11,7 @@ After your developer account qualifies to build an alternative app marketplace, 
 - Create your App License Delivery signing assets.
 - Build the SDK on your target platform (macOS or Linux).
 
-For more information about alternative app marketplaces, see [`MarketplaceKit`](https://developer.apple.com/documentation/MarketplaceKit).
+For more information about alternative app marketplaces, see [`MarketplaceKit`](https://developer.apple.com/documentation/marketplacekit).
 
 #### Generate Alternative Marketplace App Licensing Assets
 

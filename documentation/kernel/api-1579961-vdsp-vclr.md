@@ -38,7 +38,7 @@ print(c)
 ## Parameters
 
 - `__C`: Single-precision real output vector. 
-- `__IC`: Address stride for  .
+- `__IC`: Address stride for `C`.
 - `__N`: The number of elements to process. 
 
 

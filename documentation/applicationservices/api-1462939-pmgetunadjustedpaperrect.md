@@ -21,7 +21,7 @@ A result code. See [`Result Codes`](core_printing#1670007.md).
 ## Parameters
 
 - `pageFormat`: The page format object whose unadjusted paper rectangle you want to obtain.
-- `paperRect`: A pointer to your   data structure. On return, the structure contains the physical size of the paper, in points. The coordinates of the upper-left corner of the paper rectangle are specified relative to the page rectangle. The coordinates of the upper-left corner of the page rectangle are always (0,0), which means the coordinates of the upper-left corner of the paper rectangle are always negative or (0,0). See Supporting Printing in Your Carbon Application for more information on page and paper rectangles.
+- `paperRect`: A pointer to your [`PMRect`](core_printing/pmrect.md) data structure. On return, the structure contains the physical size of the paper, in points. The coordinates of the upper-left corner of the paper rectangle are specified relative to the page rectangle. The coordinates of the upper-left corner of the page rectangle are always (0,0), which means the coordinates of the upper-left corner of the paper rectangle are always negative or (0,0). See Supporting Printing in Your Carbon Application for more information on page and paper rectangles.
 
 ## See Also
 

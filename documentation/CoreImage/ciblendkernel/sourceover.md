@@ -21,7 +21,7 @@ class var sourceOver: CIBlendKernel { get }
 
 #### Discussion
 
-![The result of using the source over blend kernel (background image is top left, foreground image is bottom left)](https://docs-assets.developer.apple.com/published/0350b6a017603e0bfac0b4bf10dd6ed9/media-2926884%402x.png)
+![The result of using the source over blend kernel (background image is top left, foreground image is bottom left)](/images/com.apple.coreimage/media-2926884@2x.png)
 
 ## See Also
 

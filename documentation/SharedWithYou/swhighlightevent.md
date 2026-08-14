@@ -30,10 +30,10 @@ protocol SWHighlightEvent : NSCopying, NSSecureCoding, NSObjectProtocol
 ## Relationships
 
 ### Inherits From
-- [NSCoding](../Foundation/NSCoding.md)
-- [NSCopying](../Foundation/NSCopying.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [NSSecureCoding](../Foundation/NSSecureCoding.md)
+- [NSCoding](../foundation/nscoding.md)
+- [NSCopying](../foundation/nscopying.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSSecureCoding](../foundation/nssecurecoding.md)
 ### Conforming Types
 - [SWHighlightChangeEvent](swhighlightchangeevent.md)
 - [SWHighlightMembershipEvent](swhighlightmembershipevent.md)

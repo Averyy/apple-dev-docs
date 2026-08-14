@@ -8,9 +8,9 @@ Detect three-dimensional human body poses using the Vision framework.
 
 Vision allows you to take your app’s body pose detection into the third dimension. All photos — with people in them — are a 2D representation of people in a 3D world. Starting in iOS 17 and macOS 14, Vision detects human body poses and measures 17 individual joint locations in 3D space. You access a joint location using the joint name itself, or with a joint group name that returns a collection of joints. The following illustration of a 3D model identifies the 17 joint locations that Vision detects.
 
-![An illustration depicting a 3D model of the human body. The body points that Vision detects are the right and left wrists, elbows, shoulders, hips, knees, and ankles; the top and center of the head, the spine, the root that’s a point between the hips, and a center shoulder point between the shoulders.](https://docs-assets.developer.apple.com/published/7939e90f7e2e46abf55c61682356e1f3/media-4288127%402x.png)
+![An illustration depicting a 3D model of the human body. The body points that Vision detects are the right and left wrists, elbows, shoulders, hips, knees, and ankles; the top and center of the head, the spine, the root that’s a point between the hips, and a center shoulder point between the shoulders.](/images/Vision/media-4288127@2x.png)
 
-Images you capture in Portrait mode using Camera — or using [`AVFoundation`](https://developer.apple.com/documentation/AVFoundation) — contain depth data that helps to detect distance for each pixel. If your content contains depth data, Vision fetches it automatically. With Vision, you can build an app that tracks a person performing an exercise in 3D space, follows the arm movement during a golf swing, or captures character animations for a video game.
+Images you capture in Portrait mode using Camera — or using [`AVFoundation`](https://developer.apple.com/documentation/avfoundation) — contain depth data that helps to detect distance for each pixel. If your content contains depth data, Vision fetches it automatically. With Vision, you can build an app that tracks a person performing an exercise in 3D space, follows the arm movement during a golf swing, or captures character animations for a video game.
 
 For more information about recognizing a body pose in 2D, see [`Detecting Human Body Poses in Images`](detecting-human-body-poses-in-images.md).
 
@@ -66,9 +66,9 @@ let leftWrist = try observation.recognizedPoint(.leftWrist)
 let leftArm = try observation.recognizedPoints(.leftArm)
 ```
 
-If there’s enough depth metadata, [`bodyHeight`](vnhumanbodypose3dobservation/bodyheight.md) provides an estimated height of the subject, in meters; otherwise, [`bodyHeight`](vnhumanbodypose3dobservation/bodyheight.md) returns a reference height of `1.8` meters. The framework provides a measured height only when configuring an [`AVCaptureSession`](https://developer.apple.com/documentation/AVFoundation/AVCaptureSession) to use the LiDAR camera. For more information about configuring your session, see [`Capturing depth using the LiDAR camera`](https://developer.apple.com/documentation/AVFoundation/capturing-depth-using-the-lidar-camera).
+If there’s enough depth metadata, [`bodyHeight`](vnhumanbodypose3dobservation/bodyheight.md) provides an estimated height of the subject, in meters; otherwise, [`bodyHeight`](vnhumanbodypose3dobservation/bodyheight.md) returns a reference height of `1.8` meters. The framework provides a measured height only when configuring an [`AVCaptureSession`](https://developer.apple.com/documentation/avfoundation/avcapturesession) to use the LiDAR camera. For more information about configuring your session, see [`Capturing depth using the LiDAR camera`](https://developer.apple.com/documentation/avfoundation/capturing-depth-using-the-lidar-camera).
 
-![An illustration depicting a three-dimensional model of the human body and a camera. The camera points at the body pose and indicates where a person took the photo in relation to the body pose.](https://docs-assets.developer.apple.com/published/050956dac0bd5eb905b90be303e1905f/media-4292420%402x.png)
+![An illustration depicting a three-dimensional model of the human body and a camera. The camera points at the body pose and indicates where a person took the photo in relation to the body pose.](/images/Vision/media-4292420@2x.png)
 
 Use [`cameraRelativePosition(_:)`](vnhumanbodypose3dobservation/camerarelativeposition(_:).md) to get an estimate of how far the person was away from a camera. To get an accurate understanding of where the camera was when capturing the image, use [`cameraOriginMatrix`](vnhumanbodypose3dobservation/cameraoriginmatrix.md).
 
@@ -106,13 +106,13 @@ let roll = atan2((translationChild.y), (translationChild.x))
 angleVector = simd_float3(pitch, yaw, roll)
 ```
 
-For more information about matrices, see [`Working with Matrices`](https://developer.apple.com/documentation/Accelerate/working-with-matrices).
+For more information about matrices, see [`Working with Matrices`](https://developer.apple.com/documentation/accelerate/working-with-matrices).
 
 ##### Use Depth Data As Input
 
-Depth data contains the information the system needs to reconstruct a 3D scene, and includes camera calibration data. [`AVDepthData`](https://developer.apple.com/documentation/AVFoundation/AVDepthData) serves as the container class for interfacing with depth metadata. Starting in iOS 17 and macOS 14, provide depth data when you initialize a [`VNImageRequestHandler`](vnimagerequesthandler.md) with sample or pixel buffers.
+Depth data contains the information the system needs to reconstruct a 3D scene, and includes camera calibration data. [`AVDepthData`](https://developer.apple.com/documentation/avfoundation/avdepthdata) serves as the container class for interfacing with depth metadata. Starting in iOS 17 and macOS 14, provide depth data when you initialize a [`VNImageRequestHandler`](vnimagerequesthandler.md) with sample or pixel buffers.
 
-Images you capture using Photo mode in Camera store depth as disparity maps — a 2D map reduced from 3D space — with calibration data. You can also configure your [`AVCaptureSession`](https://developer.apple.com/documentation/AVFoundation/AVCaptureSession) to use LiDAR to get depth data. For more information about working with depth, see [`Capturing photos with depth`](https://developer.apple.com/documentation/AVFoundation/capturing-photos-with-depth) and [`Enhancing live video by leveraging TrueDepth camera data`](https://developer.apple.com/documentation/AVFoundation/enhancing-live-video-by-leveraging-truedepth-camera-data).
+Images you capture using Photo mode in Camera store depth as disparity maps — a 2D map reduced from 3D space — with calibration data. You can also configure your [`AVCaptureSession`](https://developer.apple.com/documentation/avfoundation/avcapturesession) to use LiDAR to get depth data. For more information about working with depth, see [`Capturing photos with depth`](https://developer.apple.com/documentation/avfoundation/capturing-photos-with-depth) and [`Enhancing live video by leveraging TrueDepth camera data`](https://developer.apple.com/documentation/avfoundation/enhancing-live-video-by-leveraging-truedepth-camera-data).
 
 ## See Also
 

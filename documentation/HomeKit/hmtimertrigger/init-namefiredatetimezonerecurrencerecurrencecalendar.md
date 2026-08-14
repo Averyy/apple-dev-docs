@@ -33,7 +33,7 @@ A new timer trigger starts out disabled, and must be enabled using [`enable(_:co
 - `fireDate`: The first fire date.
 - `timeZone`: The time zone for the first fire date. Pass `nil` to use the default time zone. See [`timeZone`](hmtimertrigger/timezone.md) for a description of how the time zone is interpreted.
 - `recurrence`: The recurrence interval on which to fire the trigger. `nil` indicates a one-time trigger.
-- `recurrenceCalendar`: The calendar in which to evaluate the recurrence interval of a timer trigger. May be `nil`, in which case the current calendar [`current`](https://developer.apple.com/documentation/Foundation/NSCalendar/current) is used.
+- `recurrenceCalendar`: The calendar in which to evaluate the recurrence interval of a timer trigger. May be `nil`, in which case the current calendar [`current`](https://developer.apple.com/documentation/foundation/nscalendar/current) is used.
 
 ## See Also
 

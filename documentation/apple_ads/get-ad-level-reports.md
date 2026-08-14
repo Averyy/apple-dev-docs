@@ -19,7 +19,7 @@ Use this endpoint to return performance data for `ads` within your campaigns. Th
 
 Historical ad-level metrics for the `APPSTORE_SEARCH_TAB` placement from before API version 5.2 release are reported against `adId=-1`. For `APPSTORE_SEARCH_TAB` ad-level metrics after API version 5.2 release, all default product page ads are reported against a new, real `adId` in reporting payloads.
 
-You can map your campaign installations by `adId` through the [`AdServices`](https://developer.apple.com/documentation/AdServices) attribution framework.
+You can map your campaign installations by `adId` through the [`AdServices`](https://developer.apple.com/documentation/adservices) attribution framework.
 
 ##### Payload Example Get Ad Level Reports
 

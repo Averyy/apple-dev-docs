@@ -7,7 +7,7 @@ An atom that stores information that allows you to decode samples in the media.
 
 #### Overview
 
-See [`Sample description atom ('stsd')`](sample_description_atom.md).
+See [`Sample description atom`](sample_description_atom.md).
 
 ## See Also
 

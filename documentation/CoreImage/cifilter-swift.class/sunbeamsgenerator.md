@@ -31,11 +31,11 @@ The sunbeams generator filter uses the following properties:
 
 - **`center`**: A vector representing the center of the image as a [`CIVector`](civector.md).
 - **`color`**: A [`CIColor`](cicolor.md) representing the color of the sun.
-- **`sunRadius`**: A `float` representing the radius of the center sun as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
-- **`maxStriationRadius`**: A `float` representing the striation radius as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
-- **`striationStrength`**: A `float` representing the striation strength as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
-- **`striationContrast`**: A `float` representing the striation contrast as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
-- **`time`**: A `float` representing the time as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+- **`sunRadius`**: A `float` representing the radius of the center sun as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
+- **`maxStriationRadius`**: A `float` representing the striation radius as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
+- **`striationStrength`**: A `float` representing the striation strength as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
+- **`striationContrast`**: A `float` representing the striation contrast as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
+- **`time`**: A `float` representing the time as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
 
 The following code creates a filter that generates an image that resembles a yellow sun with sunbeams:
 
@@ -53,7 +53,7 @@ The following code creates a filter that generates an image that resembles a yel
     }
 ```
 
-![An image of a hazy yellow and white ball with lines of color gradually fading to the periphery.](https://docs-assets.developer.apple.com/published/bdcee8a6049f4ce7f7bff1d5a1acfd73/media-3546315%402x.png)
+![An image of a hazy yellow and white ball with lines of color gradually fading to the periphery.](/images/com.apple.coreimage/media-3546315@2x.png)
 
 ## See Also
 

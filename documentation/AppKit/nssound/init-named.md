@@ -25,7 +25,7 @@ The returned object can be one of the following:
 - One that’s been assigned a name with the [`name`](nssound/name-swift.property.md) property
 - One of the named system sounds provided by the Application Kit framework
 
-If there’s no known `NSSound` object with `soundName`, this method tries to create one by searching for sound files in the application’s main bundle (see [`Bundle`](https://developer.apple.com/documentation/Foundation/Bundle) for a description of how the bundle’s contents are searched). If no sound file can be located in the application main bundle, the following directories are searched in order:
+If there’s no known `NSSound` object with `soundName`, this method tries to create one by searching for sound files in the application’s main bundle (see [`Bundle`](https://developer.apple.com/documentation/foundation/bundle) for a description of how the bundle’s contents are searched). If no sound file can be located in the application main bundle, the following directories are searched in order:
 
 - `~/Library/Sounds`
 - `/Library/Sounds`

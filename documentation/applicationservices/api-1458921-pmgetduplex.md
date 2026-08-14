@@ -25,7 +25,9 @@ Duplex printing is a print job that prints on both sides of the paper. The Two-S
 ## Parameters
 
 - `printSettings`: The print settings object whose duplex mode you want to obtain.
-- `duplexSetting`: See   for a full description of the duplex mode constants.
+- `duplexSetting`: A pointer to your `PMDuplexMode` variable. On return, the variable contains the duplex mode setting in the current print job. Possible values include: - `kPMDuplexNone` (one-sided printing)
+- `kPMDuplexNoTumble` (two-sided printing)
+- `kPMDuplexTumble` (two-sided printing with tumbling) See [`PMDuplexMode`](pmduplexmode.md) for a full description of the duplex mode constants.
 
 ## See Also
 

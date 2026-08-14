@@ -24,8 +24,8 @@ protocol MusicLibrarySearchable : MusicItem
 
 ### Inherits From
 - [MusicItem](musicitem.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 ### Conforming Types
 - [Album](album.md)
 - [Artist](artist.md)

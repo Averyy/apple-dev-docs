@@ -33,7 +33,7 @@ The system can change the available range of frame rates because it factors in s
 
 The system typically provides a consistent frame rate by choosing one that’s a factor of the display’s maximum refresh rate. For example, a display link could invoke your callback 60 times per second for a display with a refresh rate of 60 hertz. However, the display link could invoke your callback less frequently, such as 30, 20, or 15 hertz, by setting a range with smaller values.
 
-> **Note**:  By default, this property’s values are equal to [`default`](caframeraterange/default.md), which is equivalent to the display’s maximum refresh rate, such as a [`UIScreen`](https://developer.apple.com/documentation/UIKit/UIScreen) instance’s [`maximumFramesPerSecond`](https://developer.apple.com/documentation/UIKit/UIScreen/maximumFramesPerSecond) property.
+> **Note**:  By default, this property’s values are equal to [`default`](caframeraterange/default.md), which is equivalent to the display’s maximum refresh rate, such as a [`UIScreen`](https://developer.apple.com/documentation/uikit/uiscreen) instance’s [`maximumFramesPerSecond`](https://developer.apple.com/documentation/uikit/uiscreen/maximumframespersecond) property.
 
 For more information, see [`Optimizing iPhone and iPad apps to support ProMotion displays`](optimizing-iphone-and-ipad-apps-to-support-promotion-displays.md).
 

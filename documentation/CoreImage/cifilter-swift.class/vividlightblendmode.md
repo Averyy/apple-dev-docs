@@ -41,7 +41,7 @@ func vividLightBlendMode(inputImage: CIImage, backgroundImage: CIImage) -> CIIma
 }
 ```
 
-![Two images arranged vertically on the left and a third image on the right. The top left image contains a photograph of a vineyard. The lower third of the image contains gravel with a deep shadow in the foreground. The image on the bottom left is a closeup photograph of a cactus. The image on the right shows the result of applying the vivid-light blend mode filter.](https://docs-assets.developer.apple.com/published/7a399b3bb44e1bdda387b6c2966a1d99/media-4407307%402x.png)
+![Two images arranged vertically on the left and a third image on the right. The top left image contains a photograph of a vineyard. The lower third of the image contains gravel with a deep shadow in the foreground. The image on the bottom left is a closeup photograph of a cactus. The image on the right shows the result of applying the vivid-light blend mode filter.](/images/com.apple.coreimage/media-4407307@2x.png)
 
 ## See Also
 

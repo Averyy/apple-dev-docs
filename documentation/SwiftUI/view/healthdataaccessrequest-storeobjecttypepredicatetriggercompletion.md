@@ -80,7 +80,7 @@ Based on the results, you can then decide whether you need to request authorizat
 trigger.toggle()
 ```
 
-> ❗ **Important**: Using the [`healthDataAccessRequest(store:shareTypes:readTypes:trigger:completion:)`](View/healthDataAccessRequest(store:shareTypes:readTypes:trigger:completion:).md) method to request read access to any data types that require per-object authorization fails with an [`errorInvalidArgument`](https://developer.apple.com/documentation/HealthKit/HKError/errorInvalidArgument) error.
+> ❗ **Important**: Using the [`healthDataAccessRequest(store:shareTypes:readTypes:trigger:completion:)`](view/healthdataaccessrequest(store:sharetypes:readtypes:trigger:completion:).md) method to request read access to any data types that require per-object authorization fails with an [`errorInvalidArgument`](https://developer.apple.com/documentation/healthkit/hkerror/errorinvalidargument) error.
 
 When your app calls this method, HealthKit displays an authorization sheet that asks for permission to read the samples that match the predicate and object type. The person using your app can then select individual samples to share with your app. The system always asks for permission, regardless of whether the user previously granted it.
 
@@ -91,7 +91,7 @@ People can individually enable each of the prescriptions. After they respond, th
 - `store`: The HealthKit store where you’re requesting authorization.
 - `objectType`: The data type you want to read. This type must be a type that requires per-object authorization.
 - `predicate`: An optional predicate that further restricts the objects of interest.
-- `trigger`: A value used to trigger the request. This value must be a [`State`](State.md) variable. Any change to the variable triggers a request.
+- `trigger`: A value used to trigger the request. This value must be a [`State`](state.md) variable. Any change to the variable triggers a request.
 - `completion`: A block that the system calls after the request is complete. The system passes the result parameter.
 
 ## See Also

@@ -14,7 +14,7 @@ Before submitting your app for review, limit entitlements to the minimum require
 
 ##### Check Target Capabilities
 
-Adding Capabilities to your Xcode project will sometimes add entries into your project’s entitlements files. For more information, see [`Adding capabilities to your app`](https://developer.apple.com/documentation/Xcode/adding-capabilities-to-your-app). In those cases, you may need to manually edit your entitlements file after you turn off those Capabilities to remove the corresponding entries from your entitlements file in cases where Xcode is unable to.
+Adding Capabilities to your Xcode project will sometimes add entries into your project’s entitlements files. For more information, see [`Adding capabilities to your app`](https://developer.apple.com/documentation/xcode/adding-capabilities-to-your-app). In those cases, you may need to manually edit your entitlements file after you turn off those Capabilities to remove the corresponding entries from your entitlements file in cases where Xcode is unable to.
 
 In your Capabilities tab, make sure you’ve only enabled the minimum set of capabilities needed for your app to function.
 
@@ -90,9 +90,9 @@ If you received authorization to use a specific entitlement from a group at Appl
 
 ## See Also
 
-- [Adding capabilities to your app](../Xcode/adding-capabilities-to-your-app.md)
+- [Adding capabilities to your app](../xcode/adding-capabilities-to-your-app.md)
   Configure your target to include and customize capabilities that provide access to Apple’s app services.
-- [Signing a daemon with a restricted entitlement](../Xcode/signing-a-daemon-with-a-restricted-entitlement.md)
+- [Signing a daemon with a restricted entitlement](../xcode/signing-a-daemon-with-a-restricted-entitlement.md)
   Wrap a daemon in an app-like structure to use an entitlement thatʼs authorized by a provisioning profile.
 
 

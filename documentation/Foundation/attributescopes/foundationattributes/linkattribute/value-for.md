@@ -26,7 +26,7 @@ A URL value.
 
 ## Parameters
 
-- `object`: An [`NSObject`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class) to retrieve a URL value from.
+- `object`: An [`NSObject`](https://developer.apple.com/documentation/objectivec/nsobject-swift.class) to retrieve a URL value from.
 
 ## See Also
 

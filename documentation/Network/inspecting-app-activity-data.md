@@ -24,7 +24,7 @@ The system keeps a record — stored only on the user’s device — of the last
 
 After running your app for a while, you can get a report on your app’s activity by tapping the Share button on the App Privacy Report screen:
 
-![A screenshot of the Settings app showing the App Privacy Report view inside the Privacy section. A Share button in the upper right corner of the screen is highlighted.](https://docs-assets.developer.apple.com/published/49cc117555809d14dcc86e3f511c6940/media-3899243%402x.png)
+![A screenshot of the Settings app showing the App Privacy Report view inside the Privacy section. A Share button in the upper right corner of the screen is highlighted.](/images/com.apple.network/media-3899243@2x.png)
 
 Save the report to a location where you can examine it. For example, you can use AirDrop to send it to a nearby Mac.
 
@@ -114,9 +114,9 @@ The dictionary includes the following keys to describe the network activity:
 - **`domainOwner`**: The owner of the domain, if applicable.
 - **`bundleID`**: The bundle identifier of the initiating app.
 
-When deciding how to set the value for the `initiatedType` key, the system attributes connections made from a web browser in your app, like when you instantiate an [`SFSafariViewController`](https://developer.apple.com/documentation/SafariServices/SFSafariViewController), to the user. Otherwise, the system considers any connection that your app makes with the [`URL Loading System`](https://developer.apple.com/documentation/Foundation/url-loading-system), or lower-level interfaces like the [`Network`](Network.md) framework, as app-initiated. This includes user data that you load from a server in direct response to a user action.
+When deciding how to set the value for the `initiatedType` key, the system attributes connections made from a web browser in your app, like when you instantiate an [`SFSafariViewController`](https://developer.apple.com/documentation/safariservices/sfsafariviewcontroller), to the user. Otherwise, the system considers any connection that your app makes with the [`URL Loading System`](https://developer.apple.com/documentation/foundation/url-loading-system), or lower-level interfaces like the [`Network`](Network.md) framework, as app-initiated. This includes user data that you load from a server in direct response to a user action.
 
-You can change the associated value of this key when you make a general network request by setting a property. For example, when creating a [`URLRequest`](https://developer.apple.com/documentation/Foundation/URLRequest), set the [`attribution`](https://developer.apple.com/documentation/Foundation/URLRequest/attribution-swift.property) property; when using an [`NWConnection`](nwconnection.md) instance, call the [`nw_parameters_set_attribution(_:_:)`](nw_parameters_set_attribution(_:_:).md) function. However, only change the attribution for connections that the user directly and completely controls, such as when the user enters a URL or taps or clicks a URL that they can read. For more information about network attribution, see [`Indicating the source of network activity`](indicating-the-source-of-network-activity.md).
+You can change the associated value of this key when you make a general network request by setting a property. For example, when creating a [`URLRequest`](https://developer.apple.com/documentation/foundation/urlrequest), set the [`attribution`](https://developer.apple.com/documentation/foundation/urlrequest/attribution-swift.property) property; when using an [`NWConnection`](nwconnection.md) instance, call the [`nw_parameters_set_attribution(_:_:)`](nw_parameters_set_attribution(_:_:).md) function. However, only change the attribution for connections that the user directly and completely controls, such as when the user enters a URL or taps or clicks a URL that they can read. For more information about network attribution, see [`Indicating the source of network activity`](indicating-the-source-of-network-activity.md).
 
 ##### Consider Whether Your App Needs Changes
 

@@ -35,7 +35,7 @@ You can set an object that implements the [`MTKViewDelegate`](mtkviewdelegate.md
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

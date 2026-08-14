@@ -21,7 +21,7 @@ var targetTimestamp: CFTimeInterval { get }
 
 #### Discussion
 
-Your app needs to call the [`drawable`](cametaldisplaylink/update/drawable.md) instance’s [`present()`](https://developer.apple.com/documentation/Metal/MTLDrawable/present()) method before the deadline. GPU rendering can continue after this time, based on [`preferredFrameLatency`](cametaldisplaylink/preferredframelatency.md). For more information on timing your app’s rendering, see [`metalDisplayLink(_:needsUpdate:)`](cametaldisplaylinkdelegate/metaldisplaylink(_:needsupdate:).md).
+Your app needs to call the [`drawable`](cametaldisplaylink/update/drawable.md) instance’s [`present()`](https://developer.apple.com/documentation/metal/mtldrawable/present()) method before the deadline. GPU rendering can continue after this time, based on [`preferredFrameLatency`](cametaldisplaylink/preferredframelatency.md). For more information on timing your app’s rendering, see [`metalDisplayLink(_:needsUpdate:)`](cametaldisplaylinkdelegate/metaldisplaylink(_:needsupdate:).md).
 
 ## See Also
 

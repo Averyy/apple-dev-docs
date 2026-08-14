@@ -22,7 +22,7 @@ func perform(_ requests: [VNRequest], on image: CIImage) throws
 ## Parameters
 
 - `requests`: An array of [`VNRequest`](vnrequest.md) requests to perform.
-- `image`: The input [`CIImage`](https://developer.apple.com/documentation/CoreImage/CIImage) on which to perform the request.
+- `image`: The input [`CIImage`](https://developer.apple.com/documentation/coreimage/ciimage) on which to perform the request.
 
 ## See Also
 

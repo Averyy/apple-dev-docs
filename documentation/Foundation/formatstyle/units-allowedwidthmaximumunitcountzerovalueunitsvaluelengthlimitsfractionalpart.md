@@ -26,9 +26,9 @@ A duration units format style that uses the specified units.
 
 #### Discussion
 
-Use the dot-notation form of this method when the call point allows the use of [`Duration.UnitsFormatStyle`](https://developer.apple.com/documentation/Swift/Duration/UnitsFormatStyle). You typically do this when calling the [`formatted(_:)`](https://developer.apple.com/documentation/Swift/Duration/formatted(_:)) method of [`Duration`](https://developer.apple.com/documentation/Swift/Duration).
+Use the dot-notation form of this method when the call point allows the use of [`Duration.UnitsFormatStyle`](https://developer.apple.com/documentation/swift/duration/unitsformatstyle). You typically do this when calling the [`formatted(_:)`](https://developer.apple.com/documentation/swift/duration/formatted(_:)) method of [`Duration`](https://developer.apple.com/documentation/swift/duration).
 
-The following example creates a duration to represent 1 hour, 10 minutes, 32 seconds, and 400 milliseconds. It then creates a [`Duration.UnitsFormatStyle`](https://developer.apple.com/documentation/Swift/Duration/UnitsFormatStyle) to show the hours, minutes, seconds, and milliseconds parts. Because `valueLengthLimits` is the range `2...3`, the style formats each unit with a minimum of two digits and a maximum of three. This results in zero-padding the hours part as `01 hr`.
+The following example creates a duration to represent 1 hour, 10 minutes, 32 seconds, and 400 milliseconds. It then creates a [`Duration.UnitsFormatStyle`](https://developer.apple.com/documentation/swift/duration/unitsformatstyle) to show the hours, minutes, seconds, and milliseconds parts. Because `valueLengthLimits` is the range `2...3`, the style formats each unit with a minimum of two digits and a maximum of three. This results in zero-padding the hours part as `01 hr`.
 
 ```swift
 let duration = Duration.seconds(70 * 60 + 32) + Duration.milliseconds(400)

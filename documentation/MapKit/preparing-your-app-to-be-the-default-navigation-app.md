@@ -10,7 +10,7 @@ In iOS and iPadOS 18.4 and later in the European Union (EU), and in iOS 26.2 and
 
 #### Add the Default Navigation App Entitlement
 
-In Xcode, add the `com.apple.developer.navigation-app` entitlement to the `.entitlements` file for your app’s project. For instructions on how to add this entitlement, see [`Default Navigation`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.navigation-app).
+In Xcode, add the `com.apple.developer.navigation-app` entitlement to the `.entitlements` file for your app’s project. For instructions on how to add this entitlement, see [`Default Navigation`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.navigation-app).
 
 #### Adopt the Geonavigation Url Scheme
 
@@ -41,9 +41,9 @@ Use the following steps to add the `geo-navigation` support to your app’s `Inf
 4. Add a URL Schemes array to the URL Types array.
 5. Add a string for the URL Schemes array and set its value to `geo-navigation`.
 
-![An Xcode screenshot of the information property list editor showing a URL scheme with a string value of geo-navigation in the URL Types array.](https://docs-assets.developer.apple.com/published/c676b3452305ab105bea78e87894b3c3/Translation-InfoPlist-URLSchemes%402x.png)
+![An Xcode screenshot of the information property list editor showing a URL scheme with a string value of geo-navigation in the URL Types array.](/images/com.apple.mapkit/Translation-InfoPlist-URLSchemes@2x.png)
 
-Before your app can open incoming `geo-navigation:`  URLs, it needs to support this scheme as a custom URL scheme. To add this support, see [`Defining a custom URL scheme for your app`](https://developer.apple.com/documentation/Xcode/defining-a-custom-url-scheme-for-your-app).
+Before your app can open incoming `geo-navigation:`  URLs, it needs to support this scheme as a custom URL scheme. To add this support, see [`Defining a custom URL scheme for your app`](https://developer.apple.com/documentation/xcode/defining-a-custom-url-scheme-for-your-app).
 
 #### Prepare Your App for Submission to App Store Connect
 

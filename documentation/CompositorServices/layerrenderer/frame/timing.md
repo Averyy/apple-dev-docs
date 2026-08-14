@@ -38,7 +38,7 @@ Before you start drawing your frame’s content, call [`predictTiming()`](layerr
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../Swift/BitwiseCopyable.md)
+- [BitwiseCopyable](../swift/bitwisecopyable.md)
 
 ## See Also
 

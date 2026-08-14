@@ -28,7 +28,7 @@ Include a key entry for each country code where your app supports an external pu
 
 > **Note**:  You can provide one or more links if your app qualifies for the StoreKit External Purchase Link entitlement as described in [`Distributing music streaming apps in the EEA that provide an external purchase link`](https://developer.apple.comhttps://developer.apple.com/support/music-streaming-services-entitlement-eea/).  Otherwise, provide one link for each country code.
 
-Your app accesses these URLs through the [`eligibleURLs`](https://developer.apple.com/documentation/StoreKit/ExternalPurchaseLink/eligibleURLs) array in the [`ExternalPurchaseLink`](https://developer.apple.com/documentation/StoreKit/ExternalPurchaseLink) object, and uses the link you select with the [`open(url:)`](https://developer.apple.com/documentation/StoreKit/ExternalPurchaseLink/open(url:)) method in the [`ExternalPurchaseLink`](https://developer.apple.com/documentation/StoreKit/ExternalPurchaseLink) object.
+Your app accesses these URLs through the [`eligibleURLs`](https://developer.apple.com/documentation/storekit/externalpurchaselink/eligibleurls) array in the [`ExternalPurchaseLink`](https://developer.apple.com/documentation/storekit/externalpurchaselink) object, and uses the link you select with the [`open(url:)`](https://developer.apple.com/documentation/storekit/externalpurchaselink/open(url:)) method in the [`ExternalPurchaseLink`](https://developer.apple.com/documentation/storekit/externalpurchaselink) object.
 
 > ❗ **Important**:  At all times, the destination URLs that you provide in the property list key must match the values in your app binary that you submit to App Review.
 
@@ -67,7 +67,7 @@ The following code example shows a property list entry with keys for several cou
 
 The order of the links is not significant.
 
-For more information, see [`External Purchase`](https://developer.apple.com/documentation/StoreKit/external-purchase) and [`ExternalPurchaseLink`](https://developer.apple.com/documentation/StoreKit/ExternalPurchaseLink).
+For more information, see [`External Purchase`](https://developer.apple.com/documentation/storekit/external-purchase) and [`ExternalPurchaseLink`](https://developer.apple.com/documentation/storekit/externalpurchaselink).
 
 ##### Provide Up to the Maximum Number of Links
 

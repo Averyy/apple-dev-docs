@@ -27,7 +27,7 @@ Don’t conform your classes to [`NSUserActivityRestoring`](nsuseractivityrestor
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 ### Conforming Types
 - [NSApplication](nsapplication.md)
 - [NSBackgroundExtensionView](nsbackgroundextensionview.md)
@@ -107,7 +107,7 @@ Don’t conform your classes to [`NSUserActivityRestoring`](nsuseractivityrestor
 
 ## See Also
 
-- [class NSUserActivity](../Foundation/NSUserActivity.md)
+- [class NSUserActivity](../foundation/nsuseractivity.md)
   A representation of the state of your app at a moment in time.
 
 

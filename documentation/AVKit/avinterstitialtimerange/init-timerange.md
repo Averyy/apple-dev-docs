@@ -20,7 +20,7 @@ A new interstitial time range object.
 
 #### Discussion
 
-To associate interstitial time ranges with an asset for playback, use the [`interstitialTimeRanges`](https://developer.apple.com/documentation/AVFoundation/AVPlayerItem/interstitialTimeRanges) property of an [`AVPlayerItem`](https://developer.apple.com/documentation/AVFoundation/AVPlayerItem) object.
+To associate interstitial time ranges with an asset for playback, use the [`interstitialTimeRanges`](https://developer.apple.com/documentation/avfoundation/avplayeritem/interstitialtimeranges) property of an [`AVPlayerItem`](https://developer.apple.com/documentation/avfoundation/avplayeritem) object.
 
 ## Parameters
 

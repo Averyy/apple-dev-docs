@@ -22,7 +22,7 @@ func CGImageSourceCreateWithURL(_ url: CFURL, _ options: CFDictionary?) -> CGIma
 
 #### Return Value
 
-An image source. You’re responsible for releasing this type using [`CFRelease`](https://developer.apple.com/documentation/CoreFoundation/CFRelease).
+An image source. You’re responsible for releasing this type using [`CFRelease`](https://developer.apple.com/documentation/corefoundation/cfrelease).
 
 ## Parameters
 

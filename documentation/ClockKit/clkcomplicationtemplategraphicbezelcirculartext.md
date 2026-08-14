@@ -20,7 +20,7 @@ The graphic bezel templates display a circular template, and text that wraps aro
 
 This template belongs to the [`CLKComplicationFamily.graphicBezel`](clkcomplicationfamily/graphicbezel.md) family. [`Figure 1`](clkcomplicationtemplategraphicbezelcirculartext#3030704.md) shows the layout of the image and where the template might appear on the clock face.
 
-![Diagram showing the layout of text along the bezel and the circular template.](https://docs-assets.developer.apple.com/published/b3e1d3b34f7459b04787c4cdd7f15288/media-3030704%402x.png)
+![Diagram showing the layout of text along the bezel and the circular template.](/images/com.apple.clockkit/media-3030704@2x.png)
 
 The text is optional; this template can either display a circular template with text, or the circular template by itself.
 
@@ -42,13 +42,13 @@ The text is optional; this template can either display a circular template with 
 ### Inherits From
 - [CLKComplicationTemplate](clkcomplicationtemplate.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCopying](../Foundation/NSCopying.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCopying](../foundation/nscopying.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

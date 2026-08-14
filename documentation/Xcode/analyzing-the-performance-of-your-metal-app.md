@@ -14,7 +14,7 @@ Start the performance analysis from your Xcode project by choosing Product > Pro
 
 In the Template Selection window, select Game Performance and click Choose.
 
-![A screenshot of the Template Selection window with the Game Performance template selected.](https://docs-assets.developer.apple.com/published/413aca0d2375d93079f4af290090bb46/gputools-instruments-game-performance-choose-template%402x.png)
+![A screenshot of the Template Selection window with the Game Performance template selected.](/images/com.apple.Xcode/gputools-instruments-game-performance-choose-template@2x.png)
 
 ##### Get to Know the Instruments
 
@@ -36,11 +36,11 @@ The Game Performance template includes the following instruments:
 
 By default, Instruments doesn’t collect performance counters data. You can optionally include this for the instruments. Click and hold the Record button and choose Recording Options.
 
-![A screenshot of the Recording drop-down menu. The Recording Options menu item is highlighted.](https://docs-assets.developer.apple.com/published/9d60b11c685027ceb9028f9e8d8ef471/gputools-instruments-game-performance-recording-options-dropdown%402x.png)
+![A screenshot of the Recording drop-down menu. The Recording Options menu item is highlighted.](/images/com.apple.Xcode/gputools-instruments-game-performance-recording-options-dropdown@2x.png)
 
 Then, in the Recording Options popover, choose the Performance Limiters option from the Counter Set menu.
 
-![A screenshot of the Recording Options popover showing the Counter Set drop-down menu with the Performance Limiters menu item highlighted.](https://docs-assets.developer.apple.com/published/ab1a17797ac2f78df1ce8eae540d663c/gputools-instruments-game-performance-recording-options-popover%402x.png)
+![A screenshot of the Recording Options popover showing the Counter Set drop-down menu with the Performance Limiters menu item highlighted.](/images/com.apple.Xcode/gputools-instruments-game-performance-recording-options-popover@2x.png)
 
 When you record the Instruments trace, it collects performance limiter and utilization counters data.
 
@@ -48,7 +48,7 @@ When you record the Instruments trace, it collects performance limiter and utili
 
 Begin collecting the data by clicking the Record button.
 
-![A screenshot of the Instruments window highlighting the Record button.](https://docs-assets.developer.apple.com/published/ba489cd080137e86b11aff4643df8c16/gputools-instruments-game-performance-record%402x.png)
+![A screenshot of the Instruments window highlighting the Record button.](/images/com.apple.Xcode/gputools-instruments-game-performance-record@2x.png)
 
 Within your app, perform the actions that reproduce a slow frame rate, and then click the Record button to stop recording.
 
@@ -58,11 +58,11 @@ To expedite your review of the capture results, narrow your focus to around the 
 
 In the display results, hover the pointer over a frame to check its duration. For example, in the screenshot below, the display instance is 50 milliseconds (ms). Below the display instance, you can inspect how many vertical synchronization (vsync) events the app skipped during that time.
 
-![A screenshot of the Display track showing the popover for an instance that skipped many frames.](https://docs-assets.developer.apple.com/published/2b3fed2a704841bc1f5128249eda4838/gputools-instruments-game-performance-frame-drops%402x.png)
+![A screenshot of the Display track showing the popover for an instance that skipped many frames.](/images/com.apple.Xcode/gputools-instruments-game-performance-frame-drops@2x.png)
 
 Because the display instance of 50 ms is significantly longer than the display instances around it, you can consider the delay in frame delivery a stutter. In contrast, the following screenshot shows an app that maintained a consistent frame rate:
 
-![A screenshot of the Display track with no frame drops.](https://docs-assets.developer.apple.com/published/4c56c6f812b0d347f19f9cb1bd8bb004/gputools-instruments-game-performance-good-frame-pacing%402x.png)
+![A screenshot of the Display track with no frame drops.](/images/com.apple.Xcode/gputools-instruments-game-performance-good-frame-pacing@2x.png)
 
 A duration of 16.67 ms is one 60 fps frame, and because all other frames consistently achieve this frame duration, there’s no performance anomaly to observe.
 
@@ -72,7 +72,7 @@ Not all displays use a frame interval of ~16 ms. For example, vertical synchroni
 
 After finding a performance anomaly, look for the cause by examining the GPU activities occurring around that time. The GPU Hardware track shows your shader pipeline stages that run on the shader cores. Any long-running stages or inconsistent durations in the track timeline can indicate a utilization issue. For example, the following screenshot shows a case where a display instance spanned multiple frame intervals, meaning that the app unintentionally skipped frames:
 
-![A screenshot of the GPU channel tracks indicating that a long-running fragment shader is responsible for frameskipping.](https://docs-assets.developer.apple.com/published/9c2bfd5adaaf50238cc9b9221062b364/gputools-instruments-game-performance-gpu-fragment-long-running%402x.png)
+![A screenshot of the GPU channel tracks indicating that a long-running fragment shader is responsible for frameskipping.](/images/com.apple.Xcode/gputools-instruments-game-performance-gpu-fragment-long-running@2x.png)
 
 To begin investigating shader core utilization as a potential cause of poor frame rate, do the following:
 
@@ -94,13 +94,13 @@ The following are additional reasons for overutilization of the shader cores:
 
 While checking your shader core utilization, also look for signs that indicate problems with your app’s CPU utilization. The screenshot below shows a case where frame skipping appears to result from something other than the shader core. Note the gap where the shader core was idle for multiple frames.
 
-![A screenshot of the GPU channel tracks showing a gap where the GPU idles while waiting for the CPU to display.](https://docs-assets.developer.apple.com/published/668dd5cdab16e77385f258187cd3f895/gputools-instruments-game-performance-gpu-idle%402x.png)
+![A screenshot of the GPU channel tracks showing a gap where the GPU idles while waiting for the CPU to display.](/images/com.apple.Xcode/gputools-instruments-game-performance-gpu-idle@2x.png)
 
 When the Display track spans multiple frame intervals and there are gaps in the shader core timeline, it indicates that your host app’s code is running long. Inspect your app’s CPU utilization to determine whether it’s responsible for poor frame rate.
 
 To check your app’s CPU utilization, identify your rendering threads in the thread state tracks. In the case of healthy CPU utilization, your app’s rendering threads generally show a significant amount of blocked time. The following screenshot shows an app’s rendering thread selected, and its blocked time taking around 75% of each ~16 ms frame interval:
 
-![A screenshot showing a significant amount of blocked time on the CPU for the app’s rendering thread.](https://docs-assets.developer.apple.com/published/bdb119826be31e73cd9a2f7e133a0e0d/gputools-instruments-game-performance-cpu-blocked%402x.png)
+![A screenshot showing a significant amount of blocked time on the CPU for the app’s rendering thread.](/images/com.apple.Xcode/gputools-instruments-game-performance-cpu-blocked@2x.png)
 
 Blocked time indicates that your renderer finished submitting its draw commands with some time to spare in the frame interval. Because the amount of blocked time above encompasses about two-thirds of its frame interval, the host app has left enough time for the shader core to start and finish its work within the same frame interval.
 
@@ -113,7 +113,7 @@ By contrast, if your rendering threads don’t show much blocked time, it’s li
 5. Choose Profile from the View Selection menu.
 6. Expand the results list items and look for the highest weight to find the methods that are spending the most time in your host app code.
 
-![A screenshot showing a significant amount of running time on the CPU. The bottom details pane displays a call tree from Time Profiler. The long-running method on the CPU is highlighted.](https://docs-assets.developer.apple.com/published/2371e03b9480a52050f0b870d367bd57/gputools-instruments-game-performance-cpu-long-running%402x.png)
+![A screenshot showing a significant amount of running time on the CPU. The bottom details pane displays a call tree from Time Profiler. The long-running method on the CPU is highlighted.](/images/com.apple.Xcode/gputools-instruments-game-performance-cpu-long-running@2x.png)
 
 > **Note**: Option-click the disclosure triangle to automatically disclose your app’s symbols.
 
@@ -123,7 +123,7 @@ The time a thread spends running is represented by the collection of blue and or
 
 Other processes can preempt your app if you misconfigure thread priority. To consider these kinds of thread-related pipelining issues, check the System Load track.
 
-![A screenshot of the System Load track.](https://docs-assets.developer.apple.com/published/55e138c484968db03e0fb4dad6e84033/gputools-instruments-game-performance-cpu-user-initiated-load%402x.png)
+![A screenshot of the System Load track.](/images/com.apple.Xcode/gputools-instruments-game-performance-cpu-user-initiated-load@2x.png)
 
 The orange spikes in the System Load track indicate that runnable threads outnumbered the CPU cores available to process them. The green areas indicate the opposite — the healthy situation where enough CPU cores were available for processing. To deal with the problematic orange situations, you can use fewer threads and increase the priority of your app’s threads.
 
@@ -135,7 +135,7 @@ To confirm whether low thread-priority is affecting your app’s frame rate, fol
 4. Select your app’s rendering thread in the bottom detail area.
 5. Move the inspection time around the identified performance anomaly in the timeline area, and observe the rendering thread’s state and priority at the inspection time in the bottom detail area.
 
-![A screenshot of Instruments, with the System Load track selected. The bottom details pane displays the threads and their priorities in a table.](https://docs-assets.developer.apple.com/published/a82e9a3583e85841fc81f554178034e2/gputools-instruments-game-performance-cpu-low-thread-priority%402x.png)
+![A screenshot of Instruments, with the System Load track selected. The bottom details pane displays the threads and their priorities in a table.](/images/com.apple.Xcode/gputools-instruments-game-performance-cpu-low-thread-priority@2x.png)
 
 In the above screenshot, the Preempted thread state indicates that other Runnable and Running threads starved the rendering thread of processing. Low thread-priority is an example of how misconfigured host app code relates to low frame rate.
 
@@ -145,7 +145,7 @@ A priority of 45 is recommended for rendering threads. To set your thread’s pr
 
 In addition to shader core and CPU utilization, more subtle causes of low frame rate involve CPU-GPU pipelining. In this context, *pipelining* refers to how well your app coordinates the efforts of the CPU and the GPU while maintaining a consistent frame rate. By minimizing the amount of time the CPU and the GPU wait for each other, you maximize the amount of work each unit does in parallel. That’s called *CPU-GPU overlap*.
 
-For example, if you have a rendering algorithm that needs the result from a compute pass before encoding rendering commands, Metal provides indirect command buffers (ICBs) to increase overlap. By generating rendering commands on the GPU using ICBs, you can avoid having the CPU wait for the compute results. For more information, see [`Encoding indirect command buffers on the GPU`](https://developer.apple.com/documentation/Metal/encoding-indirect-command-buffers-on-the-gpu).
+For example, if you have a rendering algorithm that needs the result from a compute pass before encoding rendering commands, Metal provides indirect command buffers (ICBs) to increase overlap. By generating rendering commands on the GPU using ICBs, you can avoid having the CPU wait for the compute results. For more information, see [`Encoding indirect command buffers on the GPU`](https://developer.apple.com/documentation/metal/encoding-indirect-command-buffers-on-the-gpu).
 
 ## See Also
 

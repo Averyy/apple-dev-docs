@@ -22,7 +22,7 @@ static let common: RunLoop.Mode
 
 #### Discussion
 
-When you add an object to a run loop using this mode, the runloop monitors the object when running in any of the common modes. For details about adding a runloop mode to the set of common modes, see [`CFRunLoopAddCommonMode(_:_:)`](https://developer.apple.com/documentation/CoreFoundation/CFRunLoopAddCommonMode(_:_:)).
+When you add an object to a run loop using this mode, the runloop monitors the object when running in any of the common modes. For details about adding a runloop mode to the set of common modes, see [`CFRunLoopAddCommonMode(_:_:)`](https://developer.apple.com/documentation/corefoundation/cfrunloopaddcommonmode(_:_:)).
 
 ## See Also
 

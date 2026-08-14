@@ -23,7 +23,7 @@ class CAEmitterLayer
 
 The particles, defined by instances of [`CAEmitterCell`](caemittercell.md), are drawn above the layer’s background color and border.
 
-The following code shows how to set up a simple point (the default [`emitterShape`](caemitterlayer/emittershape.md) is [`point`](caemitterlayeremittershape/point.md)) particle emitter. It uses an image named `RadialGradient.png` as the cell contents and, by setting the emitter cell’s [`emissionRange`](caemittercell/emissionrange.md) to `2` × [`pi`](https://developer.apple.com/documentation/Swift/FloatingPoint/pi), the particles are emitted in all directions.
+The following code shows how to set up a simple point (the default [`emitterShape`](caemitterlayer/emittershape.md) is [`point`](caemitterlayeremittershape/point.md)) particle emitter. It uses an image named `RadialGradient.png` as the cell contents and, by setting the emitter cell’s [`emissionRange`](caemittercell/emissionrange.md) to `2` × [`pi`](https://developer.apple.com/documentation/swift/floatingpoint/pi), the particles are emitted in all directions.
 
 ```swift
 let emitterLayer = CAEmitterLayer()
@@ -93,16 +93,16 @@ view.layer.addSublayer(emitterLayer)
 - [CALayer](calayer.md)
 ### Conforms To
 - [CAMediaTiming](camediatiming.md)
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCoding](../Foundation/NSCoding.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [NSSecureCoding](../Foundation/NSSecureCoding.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCoding](../foundation/nscoding.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

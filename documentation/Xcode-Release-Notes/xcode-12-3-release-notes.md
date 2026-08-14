@@ -43,9 +43,9 @@ Xcode 12.3 includes SDKs for iOS 14.3, iPadOS 14.3, tvOS 14.3, watchOS 7.2, and 
 
 ###### Resolved Issues
 
-- Fixed iOS storyboard rendering issues when using [`UISplitViewController`](https://developer.apple.com/documentation/UIKit/UISplitViewController) simulated metric sizes with [`UITabBarController`](https://developer.apple.com/documentation/UIKit/UITabBarController). (69054879) (FB8704013)
+- Fixed iOS storyboard rendering issues when using [`UISplitViewController`](https://developer.apple.com/documentation/uikit/uisplitviewcontroller) simulated metric sizes with [`UITabBarController`](https://developer.apple.com/documentation/uikit/uitabbarcontroller). (69054879) (FB8704013)
 - Fixed an issue that caused Xcode to warn about multiple deprecated system color references in saved documents. (69667149) (FB8749086)
-- Fixed an issue where the background color of a [`UITextField`](https://developer.apple.com/documentation/UIKit/UITextField) could appear transparent in your app instead of the default color. (70559650)
+- Fixed an issue where the background color of a [`UITextField`](https://developer.apple.com/documentation/uikit/uitextfield) could appear transparent in your app instead of the default color. (70559650)
 
 ##### Scenekit
 
@@ -74,7 +74,7 @@ Xcode 12.3 includes SDKs for iOS 14.3, iPadOS 14.3, tvOS 14.3, watchOS 7.2, and 
 
 ###### Resolved Issues
 
-- Fixed a failure that could occur when compiling a project with Mac Catalyst that imports [`OSLog`](https://developer.apple.com/documentation/OSLog) from Swift. (68597591)
+- Fixed a failure that could occur when compiling a project with Mac Catalyst that imports [`OSLog`](https://developer.apple.com/documentation/oslog) from Swift. (68597591)
 
 ## See Also
 

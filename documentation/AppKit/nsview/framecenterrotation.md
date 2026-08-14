@@ -16,7 +16,7 @@ var frameCenterRotation: CGFloat { get set }
 
 #### Discussion
 
-This property contains the angle of rotation of the view’s frame around its center. If you changed the underlying layer’s [`anchorPoint`](https://developer.apple.com/documentation/QuartzCore/CALayer/anchorPoint) property, the result of setting this property is undefined.
+This property contains the angle of rotation of the view’s frame around its center. If you changed the underlying layer’s [`anchorPoint`](https://developer.apple.com/documentation/quartzcore/calayer/anchorpoint) property, the result of setting this property is undefined.
 
 ## See Also
 

@@ -30,7 +30,7 @@ Instances of [`NumberFormatter`](numberformatter.md) format the textual represen
 
 The [`NumberFormatter`](numberformatter.md) class provides flexible options for displaying non-zero fractional parts of numbers.
 
-If you set the [`usesSignificantDigits`](numberformatter/usessignificantdigits.md) property to [`true`](https://developer.apple.com/documentation/Swift/true), you can configure [`NumberFormatter`](numberformatter.md) to display significant digits using the [`minimumSignificantDigits`](numberformatter/minimumsignificantdigits.md) and [`maximumSignificantDigits`](numberformatter/maximumsignificantdigits.md) properties. If [`usesSignificantDigits`](numberformatter/usessignificantdigits.md) is [`false`](https://developer.apple.com/documentation/Swift/false), these properties are ignored. See Configuring Significant Digits.
+If you set the [`usesSignificantDigits`](numberformatter/usessignificantdigits.md) property to [`true`](https://developer.apple.com/documentation/swift/true), you can configure [`NumberFormatter`](numberformatter.md) to display significant digits using the [`minimumSignificantDigits`](numberformatter/minimumsignificantdigits.md) and [`maximumSignificantDigits`](numberformatter/maximumsignificantdigits.md) properties. If [`usesSignificantDigits`](numberformatter/usessignificantdigits.md) is [`false`](https://developer.apple.com/documentation/swift/false), these properties are ignored. See Configuring Significant Digits.
 
 Otherwise, you can configure the minimum and maximum number of integer and fraction digits, or the numbers before and after the decimal separator, respectively, using the [`minimumIntegerDigits`](numberformatter/minimumintegerdigits.md), [`maximumIntegerDigits`](numberformatter/maximumintegerdigits.md), [`minimumFractionDigits`](numberformatter/minimumfractiondigits.md), and [`maximumFractionDigits`](numberformatter/maximumfractiondigits.md) properties. See Configuring Integer and Fraction Digits.
 
@@ -222,16 +222,16 @@ On earlier versions of the operating system, or when using the legacy formatter 
 ### Inherits From
 - [Formatter](formatter.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
 - [NSCoding](nscoding.md)
 - [NSCopying](nscopying.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 
 ---

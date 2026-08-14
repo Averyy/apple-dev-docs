@@ -29,8 +29,8 @@ This method generates a QR code as an image. QR codes are a high-density matrix 
 
 The QR code generator filter uses the following properties:
 
-- **`message`**: A `string` representing the data to be encoded as a QR Code as [`NSData`](https://developer.apple.com/documentation/Foundation/NSData).
-- **`correctionLevel`**: A single letter `string` representing the error-correction format as an [`NSString`](https://developer.apple.com/documentation/Foundation/NSString). L is 7 percent correction, M is 15 percent correction, Q is 25 percent correction, and H is 30 percent correction.
+- **`message`**: A `string` representing the data to be encoded as a QR Code as [`NSData`](https://developer.apple.com/documentation/foundation/nsdata).
+- **`correctionLevel`**: A single letter `string` representing the error-correction format as an [`NSString`](https://developer.apple.com/documentation/foundation/nsstring). L is 7 percent correction, M is 15 percent correction, Q is 25 percent correction, and H is 30 percent correction.
 
 The following code creates a filter that generates a QR code:
 
@@ -43,7 +43,7 @@ func qrCode(inputMessage: String) -> CIImage {
 }
 ```
 
-![An image of a black and white square barcode made of squares representing the encoded data of: Hello world!](https://docs-assets.developer.apple.com/published/1dd09155dbae004c1fbe472164e2a313/media-3546313%402x.png)
+![An image of a black and white square barcode made of squares representing the encoded data of: Hello world!](/images/com.apple.coreimage/media-3546313@2x.png)
 
 ## See Also
 

@@ -13,7 +13,7 @@ An atom that stores data specific to a given audio decompressor.
 
 The `siDecompressionParam` atom provides the ability to store data specific to a given audio decompressor in the `SoundDescription` record. As example, some audio decompression algorithms, such as Microsoft’s ADPCM, require a set of out-of-band values to configure the decompressor. These are stored in an atom of this type.
 
-This atom contains other atoms with audio decompressor settings and is a required extension to the sound sample description for MPEG-4 audio. A `'wave'` chunk for `'mp4a'` typically contains (in order) at least a `'frma'` atom, an `'mp4a'` atom, an `'esds'` atom, and a [`Terminator atom ('0x00000000')`](terminator_atom.md).
+This atom contains other atoms with audio decompressor settings and is a required extension to the sound sample description for MPEG-4 audio. A `'wave'` chunk for `'mp4a'` typically contains (in order) at least a `'frma'` atom, an `'mp4a'` atom, an `'esds'` atom, and a [`Terminator atom`](terminator_atom.md).
 
 The contents of other `siDecompressionParam` atoms are dependent on the audio decompressor.
 

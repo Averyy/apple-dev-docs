@@ -19,7 +19,7 @@ case prohibit
 
 #### Discussion
 
-![None](https://docs-assets.developer.apple.com/published/f5f7cad8bd103460fc06bd970cf53ad1/media-2934516%402x.png)
+![None](/images/com.apple.uikit/media-2934516@2x.png)
 
 ## See Also
 

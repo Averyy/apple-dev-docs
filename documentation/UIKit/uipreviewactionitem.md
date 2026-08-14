@@ -37,7 +37,7 @@ The [`UIPreviewActionItem`](uipreviewactionitem.md) protocol is adopted by the [
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 ### Conforming Types
 - [UIPreviewAction](uipreviewaction.md)
 - [UIPreviewActionGroup](uipreviewactiongroup.md)

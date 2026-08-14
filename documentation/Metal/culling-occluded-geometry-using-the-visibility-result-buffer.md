@@ -20,11 +20,11 @@ The first mode of the app shows how to use fragment counting to determine the nu
 
 The fragment-counting mode shows a stationary red sphere and a smaller green sphere, and counts the number of fragments rendered for the green sphere. The slider on the lower-left corner of the app moves the green sphere left and right. The top-right corner of the window shows the number of fragments drawn from the green sphere. The number of fragments decrease to zero as the red sphere occludes the green sphere.
 
-![A screen shot of Mode 1 that shows a larger stationary red sphere with a smaller movable green sphere to the right of it.](https://docs-assets.developer.apple.com/published/0b6cbbaf9eb5b8a1ecce906bf1ee409c/1-mode1-screenshot.png)
+![A screen shot of Mode 1 that shows a larger stationary red sphere with a smaller movable green sphere to the right of it.](/images/com.apple.metal/1-mode1-screenshot.png)
 
 The occlusion-culling mode is more complex, rendering multiple spheres and using the visibility results to skip the draw calls for occluded spheres. It renders *icosahedrons*, a 20-sided polyhedron serving as a type of proxy geometry for a sphere, to the previous frame. If the fragment count is zero because it’s *occluded* (hidden), the renderer *culls* (skips drawing) it in the next frame. The slider at the bottom left moves the spheres left and right, and the label in the upper right shows the number of rendered spheres.
 
-![A screenshot of Mode 2 that shows a three-dimensional grid of spheres.](https://docs-assets.developer.apple.com/published/f7e0027edf8f3aab0c96bb694d350924/2-mode2-screenshot.png)
+![A screenshot of Mode 2 that shows a three-dimensional grid of spheres.](/images/com.apple.metal/2-mode2-screenshot.png)
 
 The app creates Metal objects, renders 3D objects, and demonstrates two ways to use the visibility result buffer. First, it initializes the visibility result buffers and creates the sphere and icosahedron geometry. Next, it uses shared code to position and render the sphere and icosahedron geometry. Lastly, the app uses the state of the segment control to render either the fragment-counting mode or occlusion-culling mode.
 

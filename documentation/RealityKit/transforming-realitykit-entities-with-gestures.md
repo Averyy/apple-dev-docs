@@ -14,7 +14,7 @@ Manipulating virtual objects using standard system drag, rotate, and scale gestu
 
 ##### Create the Main Component
 
-To implement the gesture functionality, the sample app first creates a `struct` that conforms to [`Component`](component.md). This component marks entities that support transform gestures, and contains the logic to implement those gestures. In order to support Reality Composer Pro, the component also conforms to [`Codable`](https://developer.apple.com/documentation/Swift/Codable). To include the ability to turn different gestures on and off, the component contains three [`Bool`](https://developer.apple.com/documentation/Swift/Bool) properties, one for each of the transforms the component supports. Reality Composer Pro exposes the transforms as checkboxes, which enable or disable specific gestures for an entity.
+To implement the gesture functionality, the sample app first creates a `struct` that conforms to [`Component`](component.md). This component marks entities that support transform gestures, and contains the logic to implement those gestures. In order to support Reality Composer Pro, the component also conforms to [`Codable`](https://developer.apple.com/documentation/swift/codable). To include the ability to turn different gestures on and off, the component contains three [`Bool`](https://developer.apple.com/documentation/swift/bool) properties, one for each of the transforms the component supports. Reality Composer Pro exposes the transforms as checkboxes, which enable or disable specific gestures for an entity.
 
 ```swift
 /// A component that handles gesture logic for an entity.
@@ -53,7 +53,7 @@ Pivoting on drag is more flexible because it allows a person to change their own
 
 ##### Create a State Object
 
-To implement these transform gestures, the app needs to maintain some state. The [`onChanged(_:)`](https://developer.apple.com/documentation/SwiftUI/Gesture/onChanged(_:)) action passes a delta from the start transform, *not* the delta from the previous [`onChanged(_:)`](https://developer.apple.com/documentation/SwiftUI/Gesture/onChanged(_:)) call, so the app needs to keep track of the entity’s starting position, rotation, and scale. For example, each time SwiftUI calls the [`onChanged(_:)`](https://developer.apple.com/documentation/SwiftUI/Gesture/onChanged(_:)) action for a drag gesture, the action provides the total distance dragged on each axis since the gesture started. The app also keeps track of whether a gesture is already in progress. Gestures don’t have an `.onStarted` action, so the app keeps track of whether the gesture has already started so it knows if it needs to store the starting position, rotation, or scale. Lastly, the sample app keeps a reference to the pivot entity. By parenting the dragged entity to the pivot entity, the system calculates the dragged entity’s rotation when the app rotates the pivot entity.
+To implement these transform gestures, the app needs to maintain some state. The [`onChanged(_:)`](https://developer.apple.com/documentation/swiftui/gesture/onchanged(_:)) action passes a delta from the start transform, *not* the delta from the previous [`onChanged(_:)`](https://developer.apple.com/documentation/swiftui/gesture/onchanged(_:)) call, so the app needs to keep track of the entity’s starting position, rotation, and scale. For example, each time SwiftUI calls the [`onChanged(_:)`](https://developer.apple.com/documentation/swiftui/gesture/onchanged(_:)) action for a drag gesture, the action provides the total distance dragged on each axis since the gesture started. The app also keeps track of whether a gesture is already in progress. Gestures don’t have an `.onStarted` action, so the app keeps track of whether the gesture has already started so it knows if it needs to store the starting position, rotation, or scale. Lastly, the sample app keeps a reference to the pivot entity. By parenting the dragged entity to the pivot entity, the system calculates the dragged entity’s rotation when the app rotates the pivot entity.
 
 This component only supports dragging a single entity at a time, so there’s no need to store state on a per-entity level. As a result, the app uses a singleton object to store the state instead of a component:
 
@@ -101,7 +101,7 @@ public class EntityGestureState {
 
 ##### Add Transform Logic to the Main Component
 
-`GestureComponent` needs to implement functions the app calls from the [`onChanged(_:)`](https://developer.apple.com/documentation/SwiftUI/Gesture/onChanged(_:)) and [`onEnded(_:)`](https://developer.apple.com/documentation/SwiftUI/Gesture/onEnded(_:)) actions for each of the three supported types of gestures. The `onChange` functions first retrieve the gesture entity and its state component, creating a new state component if one doesn’t already exist, as shown below:
+`GestureComponent` needs to implement functions the app calls from the [`onChanged(_:)`](https://developer.apple.com/documentation/swiftui/gesture/onchanged(_:)) and [`onEnded(_:)`](https://developer.apple.com/documentation/swiftui/gesture/onended(_:)) actions for each of the three supported types of gestures. The `onChange` functions first retrieve the gesture entity and its state component, creating a new state component if one doesn’t already exist, as shown below:
 
 ```swift
 mutating func onChanged(value: EntityTargetValue<DragGesture.Value>) {
@@ -191,9 +191,9 @@ myEntity.components.set(component)
 
 ## See Also
 
-- [Hello World](../visionOS/World.md)
+- [Hello World](../visionos/world.md)
   Use windows, volumes, and immersive spaces to teach people about the Earth.
-- [Enabling video reflections in an immersive environment](../visionOS/enabling-video-reflections-in-an-immersive-environment.md)
+- [Enabling video reflections in an immersive environment](../visionos/enabling-video-reflections-in-an-immersive-environment.md)
   Create a more immersive experience by adding video reflections in a custom environment.
 - [Creating a spatial drawing app with RealityKit](creating-a-spatial-drawing-app-with-realitykit.md)
   Use low-level mesh and texture APIs to achieve fast updates to a person’s brush strokes by integrating RealityKit with ARKit and SwiftUI.

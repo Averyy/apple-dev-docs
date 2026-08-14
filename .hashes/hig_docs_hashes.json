@@ -1,862 +1,862 @@
 {
   "https://developer.apple.com/tutorials/data/design/human-interface-guidelines.json": {
-    "hash": "e04c37d52550fb9f0619934257df261a9027f60ca6077afaabd7a745fbfe0aef",
+    "hash": "b9847c1e3e7153de21612965c5d6a310464d401d942eb4c9fcc4088b7f9c6422",
     "file_path": "/home/runner/work/apple-dev-docs/apple-dev-docs/documentation/HIG/index.md",
-    "last_updated": "2026-08-11T08:43:26.265071"
+    "last_updated": "2026-08-14T07:56:29.127892"
   },
   "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/getting-started.json": {
-    "hash": "d5bf5d3f3b111c592313af6013d235b23609a4bd6337d236979b9ef1dfe3c4b6",
+    "hash": "d6f5b34ab8df64cf33d74b63b541fab24d070373b76a5b71d6846ab68c720a16",
     "file_path": "/home/runner/work/apple-dev-docs/apple-dev-docs/documentation/HIG/getting-started.md",
-    "last_updated": "2026-08-11T08:43:26.486825"
+    "last_updated": "2026-08-14T07:56:29.250243"
   },
   "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/foundations.json": {
-    "hash": "cd044383cdf8d37cd2f2113f11eebb961a51935acf0398099113f036afade7a3",
+    "hash": "740128eae023132fbfcacfe67bde51e579cf880fdc74f9580a7bb5f59b3b8261",
     "file_path": "/home/runner/work/apple-dev-docs/apple-dev-docs/documentation/HIG/foundations.md",
-    "last_updated": "2026-08-11T08:43:26.730373"
+    "last_updated": "2026-08-14T07:56:29.379230"
   },
   "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/patterns.json": {
-    "hash": "ea78536cb6a7130a03921bee334ecd9e895b2053d7796c741fa874a8ddd1078c",
+    "hash": "800e3af050990cb2fb130d108d51f450bb61967174ad7c8f89e47c9e7fb41406",
     "file_path": "/home/runner/work/apple-dev-docs/apple-dev-docs/documentation/HIG/patterns.md",
-    "last_updated": "2026-08-11T08:43:26.962532"
+    "last_updated": "2026-08-14T07:56:29.533451"
   },
   "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/components.json": {
-    "hash": "6be099ee09c662cdcebdd47e4f3a84db5b9467859136e86a42c45eb523312d2e",
+    "hash": "4d2079c7c0fce3bf0f83830549565032bc9a015efc5e626bb34f7e394dbe4f01",
     "file_path": "/home/runner/work/apple-dev-docs/apple-dev-docs/documentation/HIG/components.md",
-    "last_updated": "2026-08-11T08:43:27.182785"
+    "last_updated": "2026-08-14T07:56:29.708647"
   },
   "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/inputs.json": {
-    "hash": "ad9526f23216fec033df6b36048b32c912fb702bb87152c0b314354e203a34ec",
+    "hash": "45d04409eebc8cdb5ef77afb03aed3f60b5d7219e8d3b0232754d64477c94e8b",
     "file_path": "/home/runner/work/apple-dev-docs/apple-dev-docs/documentation/HIG/inputs.md",
-    "last_updated": "2026-08-11T08:43:27.414212"
+    "last_updated": "2026-08-14T07:56:29.883711"
   },
   "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/technologies.json": {
-    "hash": "25c00643b8fc8d2fafe2c0cfdac6bf01f13d5633190f8777ff7cdfa23a4c4f1c",
+    "hash": "c0e84403f93f0336ca12c812d2191d32c3de94b2f34d1e8d249c4471830ef1c1",
     "file_path": "/home/runner/work/apple-dev-docs/apple-dev-docs/documentation/HIG/technologies.md",
-    "last_updated": "2026-08-11T08:43:27.595186"
+    "last_updated": "2026-08-14T07:56:30.013184"
   },
   "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/app-icons.json": {
-    "hash": "c5a934c54c0fd211b2f6095a8654a3f041f059e5972aaa584bab54daad429105",
+    "hash": "a2225ccc3805bd6b79b69738d17297ab6f77823f3e31b8bf480768198b0253a1",
     "file_path": "/home/runner/work/apple-dev-docs/apple-dev-docs/documentation/HIG/app-icons.md",
-    "last_updated": "2026-08-11T08:43:28.635867"
+    "last_updated": "2026-08-14T07:56:30.817692"
   },
   "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/color.json": {
-    "hash": "f2057c5d519ffc9b7f03fabd5cf06600ba7d65396f16d8e238a28468e8059e60",
+    "hash": "3a5966a41467cab1d34894e5a0fc45d744df1cde6a470bad7daff6b9440c79aa",
     "file_path": "/home/runner/work/apple-dev-docs/apple-dev-docs/documentation/HIG/color.md",
-    "last_updated": "2026-08-11T08:43:28.965551"
+    "last_updated": "2026-08-14T07:56:30.999160"
   },
   "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/materials.json": {
-    "hash": "21ebb95c022518fb07c398039585b895ebd4d9ffa45b5bb68094081d0b0b5419",
+    "hash": "18e668ac258a7062a824e9f56e9432b8c2657a2d2912ac3f5c166cafac6b23a1",
     "file_path": "/home/runner/work/apple-dev-docs/apple-dev-docs/documentation/HIG/materials.md",
-    "last_updated": "2026-08-11T08:43:29.421056"
+    "last_updated": "2026-08-14T07:56:31.424458"
   },
   "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/layout.json": {
-    "hash": "5252bc6d10e0b1a6b098c8f97909c85403cf3845f74a4b49d6f2a8604a590abc",
+    "hash": "0e94f70ecf51a418b0004d567755833f495b46354e689e535dfd822c218bf269",
     "file_path": "/home/runner/work/apple-dev-docs/apple-dev-docs/documentation/HIG/layout.md",
-    "last_updated": "2026-08-11T08:43:29.232939"
+    "last_updated": "2026-08-14T07:56:31.129327"
   },
   "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/icons.json": {
-    "hash": "c4558d2cb68e12e1777211b2371e00c07028e754d867184f01d954e3e1db3d0b",
+    "hash": "77220af689325c183952755d422d55400de5c1bc3888d4e5a97e9082aff806e5",
     "file_path": "/home/runner/work/apple-dev-docs/apple-dev-docs/documentation/HIG/icons.md",
-    "last_updated": "2026-08-11T08:43:32.657478"
+    "last_updated": "2026-08-14T07:56:33.690665"
   },
   "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/accessibility.json": {
-    "hash": "14d5e29139313c61fd49379dbc6680a12c356a33f270a2a649fedc2176a12c21",
+    "hash": "640f149ff97f66bf34fa5808c3dc889657e6bb6e3e942d0596eeb9ca6455125f",
     "file_path": "/home/runner/work/apple-dev-docs/apple-dev-docs/documentation/HIG/accessibility.md",
-    "last_updated": "2026-08-11T08:43:28.403016"
+    "last_updated": "2026-08-14T07:56:30.664018"
   },
   "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/multitasking.json": {
-    "hash": "16570cfb0ad006e234c7a8c66bee9041a0f0a8ad744119f78a5092f72e926a09",
+    "hash": "6f3aa79b380bf06e25b0b7fb0d4bc011d326b7daa29ef9c76279569c40977344",
     "file_path": "/home/runner/work/apple-dev-docs/apple-dev-docs/documentation/HIG/multitasking.md",
-    "last_updated": "2026-08-11T08:43:37.231494"
+    "last_updated": "2026-08-14T07:56:37.440372"
   },
   "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/the-menu-bar.json": {
-    "hash": "7536f606970ef1a4e5d385ddaf70768f6558bc764c7570f303aadbadb9447cba",
+    "hash": "a090e5c95cb420196245a107ddeb642ced60db66d78ceed68a3db2ecf4240e15",
     "file_path": "/home/runner/work/apple-dev-docs/apple-dev-docs/documentation/HIG/the-menu-bar.md",
-    "last_updated": "2026-08-11T08:43:52.772171"
+    "last_updated": "2026-08-14T07:56:52.293474"
   },
   "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/toolbars.json": {
-    "hash": "da63fe123370a0d31780de792abeb3ad22294e48dfdb02d1e0a27b08b6adba11",
+    "hash": "ef1185a034135ea9b8c719f6b40f04db93d0fedfa157329c733645e28a53c414",
     "file_path": "/home/runner/work/apple-dev-docs/apple-dev-docs/documentation/HIG/toolbars.md",
-    "last_updated": "2026-08-11T08:43:52.898451"
+    "last_updated": "2026-08-14T07:56:52.467938"
   },
   "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/search-fields.json": {
-    "hash": "eb5a5b1becf93b965158019fce6f9f858b49c75391873a25e12d9fcef43d3486",
+    "hash": "9e408455bff7a638427d7e68c66dd2c85abb6d1d7e12bee48afa898128d48a89",
     "file_path": "/home/runner/work/apple-dev-docs/apple-dev-docs/documentation/HIG/search-fields.md",
-    "last_updated": "2026-08-11T08:43:30.500119"
+    "last_updated": "2026-08-14T07:56:32.015935"
   },
   "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/game-center.json": {
-    "hash": "8acd3722f2b13e059ac42158db2033e3427f57b0252f4017bfc1686e92ab1b62",
+    "hash": "f8d7423cf5e0a8daa7388cd8cc3eca353b3053cfc6f1fe317be6ec2c6ddf3a99",
     "file_path": "/home/runner/work/apple-dev-docs/apple-dev-docs/documentation/HIG/game-center.md",
-    "last_updated": "2026-08-11T08:43:44.585456"
+    "last_updated": "2026-08-14T07:56:44.681268"
   },
   "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/generative-ai.json": {
-    "hash": "1971568d754db178599f876e5ffb96a30a24fe894ffc67c343525d51135d1a6d",
+    "hash": "bdab29a6042f0d51f3f970c8ba5f70dda15c684cf115d45a4da8a1af02b2e0ff",
     "file_path": "/home/runner/work/apple-dev-docs/apple-dev-docs/documentation/HIG/generative-ai.md",
-    "last_updated": "2026-08-11T08:43:44.763428"
+    "last_updated": "2026-08-14T07:56:44.855940"
   },
   "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/designing-for-ios.json": {
-    "hash": "67fbc39e423a68bbd03d9e2faaabcb8abde73e6d01d77ff85466f3c4ba1f342e",
+    "hash": "c8e951c873ee1e7846b44f9b98ac84d7119c40ec0103b70b6c33296cae9d6bf1",
     "file_path": "/home/runner/work/apple-dev-docs/apple-dev-docs/documentation/HIG/designing-for-ios.md",
-    "last_updated": "2026-08-11T08:43:27.953997"
+    "last_updated": "2026-08-14T07:56:30.313240"
   },
   "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/designing-for-ipados.json": {
-    "hash": "628a1082a7a36514cd658a2f8d8e80155e83e60d6c959cd9f5389c2aabe2e11a",
+    "hash": "858cab377274b2f0cb7f7eec40cf94ca998243eeda6e96af10167f4324085e33",
     "file_path": "/home/runner/work/apple-dev-docs/apple-dev-docs/documentation/HIG/designing-for-ipados.md",
-    "last_updated": "2026-08-11T08:43:31.265763"
+    "last_updated": "2026-08-14T07:56:32.773210"
   },
   "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/designing-for-macos.json": {
-    "hash": "4c17869414b179662f1b03418c832028e827685605bd7369fe8f7524d056fbbc",
+    "hash": "172d7077595c3033b34eb8a1a4f8b95783496a8a4902f517c21ed9c73d258150",
     "file_path": "/home/runner/work/apple-dev-docs/apple-dev-docs/documentation/HIG/designing-for-macos.md",
-    "last_updated": "2026-08-11T08:43:28.125704"
+    "last_updated": "2026-08-14T07:56:30.487737"
   },
   "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/designing-for-tvos.json": {
-    "hash": "68b25a5c4f0a1d3161009081e8b61293906247cf1bbd7f6737aae12b7432c54e",
+    "hash": "701de66cebe0de15f5ad01b23043c8d5ad4d009df705886569c4504abda6c454",
     "file_path": "/home/runner/work/apple-dev-docs/apple-dev-docs/documentation/HIG/designing-for-tvos.md",
-    "last_updated": "2026-08-11T08:43:31.439762"
+    "last_updated": "2026-08-14T07:56:32.905234"
   },
   "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/designing-for-visionos.json": {
-    "hash": "e28e6fcc44b8656c843e7133d2f940277dde4bca1e96f1c85b1384a782fc74cb",
+    "hash": "96a67d6d83a61413e045169ea05dfbf27d16ad55e376f24c8a555651420340c0",
     "file_path": "/home/runner/work/apple-dev-docs/apple-dev-docs/documentation/HIG/designing-for-visionos.md",
-    "last_updated": "2026-08-11T08:43:31.616612"
+    "last_updated": "2026-08-14T07:56:33.028538"
   },
   "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/designing-for-watchos.json": {
-    "hash": "34aadf002858b62d18295d563fd058bc0c5f533eb8163bc0662d53a26bf35f4c",
+    "hash": "67cba353a37feef9668f9b628c78faa3334d3965642265ebaf49e90516192a25",
     "file_path": "/home/runner/work/apple-dev-docs/apple-dev-docs/documentation/HIG/designing-for-watchos.md",
-    "last_updated": "2026-08-11T08:43:31.790894"
+    "last_updated": "2026-08-14T07:56:33.156916"
   },
   "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/designing-for-games.json": {
-    "hash": "a9e99afa7dfc4c761196d893a55de60383e15289eb06736ec1ec0958dc14c19f",
+    "hash": "74ff57b13eab1cd30aeecc7dc2fb588a0bfefc97537ff549087cfb0a093c1224",
     "file_path": "/home/runner/work/apple-dev-docs/apple-dev-docs/documentation/HIG/designing-for-games.md",
-    "last_updated": "2026-08-11T08:43:32.069450"
+    "last_updated": "2026-08-14T07:56:33.268360"
   },
   "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/branding.json": {
-    "hash": "aa01e44435a4951344778516e7e80c986820ebc2c55e2901d8471e0b589fb8b4",
+    "hash": "502217ed822b903a6754675acae6490f8f505af60754858cde0a2bca2f68795d",
     "file_path": "/home/runner/work/apple-dev-docs/apple-dev-docs/documentation/HIG/branding.md",
-    "last_updated": "2026-08-11T08:43:32.293307"
+    "last_updated": "2026-08-14T07:56:33.389284"
   },
   "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/dark-mode.json": {
-    "hash": "d81b0df796c664a652b990a42a943177a85f93463392b90699cb958067c04852",
+    "hash": "6347a15f1af459f4569663cb379cccff552c91ee4d392f041aea5e334d4f8703",
     "file_path": "/home/runner/work/apple-dev-docs/apple-dev-docs/documentation/HIG/dark-mode.md",
-    "last_updated": "2026-08-11T08:43:32.530231"
+    "last_updated": "2026-08-14T07:56:33.563594"
   },
   "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/images.json": {
-    "hash": "52af56bf22fd970596f35a89693269ad7162a83c50315cb6c2006e7f78185500",
+    "hash": "9d3b6397702526365ebe2e68fd46b3cab759798b22f44eceb93aef213f15d766",
     "file_path": "/home/runner/work/apple-dev-docs/apple-dev-docs/documentation/HIG/images.md",
-    "last_updated": "2026-08-11T08:43:32.859490"
+    "last_updated": "2026-08-14T07:56:33.822977"
   },
   "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/immersive-experiences.json": {
-    "hash": "7f73d24288654013bffb6503ffeff433207a2bcb04773a291d62fad9f557d1d9",
+    "hash": "9593f932d0714a6da03a2533f6398b2bfe46bfa48bd3c4b79bc7cc7913103bbb",
     "file_path": "/home/runner/work/apple-dev-docs/apple-dev-docs/documentation/HIG/immersive-experiences.md",
-    "last_updated": "2026-08-11T08:43:33.047930"
+    "last_updated": "2026-08-14T07:56:33.946606"
   },
   "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/inclusion.json": {
-    "hash": "afea15aee17bc93cd23d63c81cdab32da10fa4541f51f9f854826e787ee89221",
+    "hash": "c24e8273250e04804790f539ba81b29231e3bee1988b0118ec1d8feb6234072d",
     "file_path": "/home/runner/work/apple-dev-docs/apple-dev-docs/documentation/HIG/inclusion.md",
-    "last_updated": "2026-08-11T08:43:33.284150"
+    "last_updated": "2026-08-14T07:56:34.119819"
   },
   "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/motion.json": {
-    "hash": "9b63c80fb99debf897efc114dee458635543d080179519f6c37bcca572d1b7cf",
+    "hash": "8db7aad95939fdf17bc3638346ebc7eda6bb63ea5d6379bacf57b6e04834446f",
     "file_path": "/home/runner/work/apple-dev-docs/apple-dev-docs/documentation/HIG/motion.md",
-    "last_updated": "2026-08-11T08:43:33.506601"
+    "last_updated": "2026-08-14T07:56:34.291073"
   },
   "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/privacy.json": {
-    "hash": "753af533a7998109980ecb015b81d5824b838d6d7abaa6b2925d42d3056751e0",
+    "hash": "53da58a330f6405f8b4e433d168084d8819e8d9d6d5b3f980d3cd0f1dc911938",
     "file_path": "/home/runner/work/apple-dev-docs/apple-dev-docs/documentation/HIG/privacy.md",
-    "last_updated": "2026-08-11T08:43:33.692493"
+    "last_updated": "2026-08-14T07:56:34.418006"
   },
   "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/right-to-left.json": {
-    "hash": "5eb5434b84e6902a47d2323e4203eb0f414818639472672393994615899b54e2",
+    "hash": "cd0b2ba3fce97b44c83587743a910f483aef8874ea90695a14cf24b5df02522f",
     "file_path": "/home/runner/work/apple-dev-docs/apple-dev-docs/documentation/HIG/right-to-left.md",
-    "last_updated": "2026-08-11T08:43:33.933176"
+    "last_updated": "2026-08-14T07:56:34.592550"
   },
   "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/sf-symbols.json": {
-    "hash": "bf374233b1a4560000f4a2592df404c7147515ed30be743e3feac9350d7a6dbb",
+    "hash": "0d9b700772c78ed144be105fea54c2242c4ce29bd1dd55e9ab2243e8715049bc",
     "file_path": "/home/runner/work/apple-dev-docs/apple-dev-docs/documentation/HIG/sf-symbols.md",
-    "last_updated": "2026-08-11T08:43:34.124541"
+    "last_updated": "2026-08-14T07:56:34.716943"
   },
   "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/spatial-layout.json": {
-    "hash": "231792ff3a90d94383244bfc38bbce60314c70b9781ea512bd0f2cb8f482377b",
+    "hash": "2bfdac8f328698c95078e76839bbfcf110c079c0fab3ebbdcb3f41e7fff826d9",
     "file_path": "/home/runner/work/apple-dev-docs/apple-dev-docs/documentation/HIG/spatial-layout.md",
-    "last_updated": "2026-08-11T08:43:34.309166"
+    "last_updated": "2026-08-14T07:56:34.888111"
   },
   "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/typography.json": {
-    "hash": "15a663aa728cd7605b808ba57b0686674d5b5f747cba2a29a0a2609b6d455bbe",
+    "hash": "7015bd71b578b9cbd4fd479083253a3b936904f38fc56484ac36b4acaf7e69c7",
     "file_path": "/home/runner/work/apple-dev-docs/apple-dev-docs/documentation/HIG/typography.md",
-    "last_updated": "2026-08-11T08:43:29.661128"
+    "last_updated": "2026-08-14T07:56:31.564381"
   },
   "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/writing.json": {
-    "hash": "b7b557705599cc72bb3a92afd0753b2f27a1ea3ee8f893307d36d5327b0612f4",
+    "hash": "3b71a26acedaa3dcc5a5a5a7f9d295c3bbb953b2d76231eafe57e47a8a9f9a80",
     "file_path": "/home/runner/work/apple-dev-docs/apple-dev-docs/documentation/HIG/writing.md",
-    "last_updated": "2026-08-11T08:43:34.560683"
+    "last_updated": "2026-08-14T07:56:35.010163"
   },
   "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/charting-data.json": {
-    "hash": "8ceb890861455be2dbde6d61921df4495e683ccf68fc2add72ebecddd90d758f",
+    "hash": "697d0f36e1495e33dfeae74a6b305c0a4bba82dcc833518aa036409b63a68105",
     "file_path": "/home/runner/work/apple-dev-docs/apple-dev-docs/documentation/HIG/charting-data.md",
-    "last_updated": "2026-08-11T08:43:34.737626"
+    "last_updated": "2026-08-14T07:56:35.180035"
   },
   "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/collaboration-and-sharing.json": {
-    "hash": "8f2d505a2adf98a120fbc73a86b1088e34635e1dc4c1be3aff608aee49d5acb0",
+    "hash": "456ea554f3330022777053877dc135c6c4424480cf4aaf847cf51bea19198e6c",
     "file_path": "/home/runner/work/apple-dev-docs/apple-dev-docs/documentation/HIG/collaboration-and-sharing.md",
-    "last_updated": "2026-08-11T08:43:34.912835"
+    "last_updated": "2026-08-14T07:56:35.350851"
   },
   "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/drag-and-drop.json": {
-    "hash": "68c5f3d64ab81682e89e7bd8bcc52ed4be3ddaf850509faf6b786ee85006ae90",
+    "hash": "80e2d4e4a34f59901838f874ba1037370428c95282db693b598be941e32a2aa3",
     "file_path": "/home/runner/work/apple-dev-docs/apple-dev-docs/documentation/HIG/drag-and-drop.md",
-    "last_updated": "2026-08-11T08:43:35.094078"
+    "last_updated": "2026-08-14T07:56:35.527589"
   },
   "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/entering-data.json": {
-    "hash": "433fd0d2d026c1980b8e4801e1de3a82006c74c410a3caed88b0c95181f54ba1",
+    "hash": "7289310d188a9fa355ab88f5d7015cfeec43048b71be68375093f2a1cb432849",
     "file_path": "/home/runner/work/apple-dev-docs/apple-dev-docs/documentation/HIG/entering-data.md",
-    "last_updated": "2026-08-11T08:43:35.267281"
+    "last_updated": "2026-08-14T07:56:35.699069"
   },
   "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/feedback.json": {
-    "hash": "800ac1c4d34b4610787b95007053435ccd6183fbb7db2cd65e238e02b070bc99",
+    "hash": "5f51cd12567aeec8511f71cdb812fe1ebac212cb9880019fcd139e35f02ac205",
     "file_path": "/home/runner/work/apple-dev-docs/apple-dev-docs/documentation/HIG/feedback.md",
-    "last_updated": "2026-08-11T08:43:35.494795"
+    "last_updated": "2026-08-14T07:56:35.868715"
   },
   "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/file-management.json": {
-    "hash": "9e9738713072cba54ca4dc6e44a8ed6587a417038e20fd5e606f28930d220f50",
+    "hash": "3520acc6a85ed4aeb20253e70cc3321b8591a7957c3e6a435c711627c1eaeca1",
     "file_path": "/home/runner/work/apple-dev-docs/apple-dev-docs/documentation/HIG/file-management.md",
-    "last_updated": "2026-08-11T08:43:35.670641"
+    "last_updated": "2026-08-14T07:56:36.043868"
   },
   "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/going-full-screen.json": {
-    "hash": "a91d3d739f574538520677ae5c53a42497dc32b81cd8b8e641849a0d6492bb2d",
+    "hash": "fdee017c573d5e726b5d70e9dc860b9c4900a9f839c25e6603c64968b722ab72",
     "file_path": "/home/runner/work/apple-dev-docs/apple-dev-docs/documentation/HIG/going-full-screen.md",
-    "last_updated": "2026-08-11T08:43:35.847694"
+    "last_updated": "2026-08-14T07:56:36.347332"
   },
   "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/launching.json": {
-    "hash": "b824fc2108456c0d0b3872a50a24cebb3433de44eaa11043ff4a5f197b5d3f89",
+    "hash": "6c675be7724cd72fd8352e798873a2c7e0b6a1c55267309aab3b9d9ca831bbd5",
     "file_path": "/home/runner/work/apple-dev-docs/apple-dev-docs/documentation/HIG/launching.md",
-    "last_updated": "2026-08-11T08:43:36.029155"
+    "last_updated": "2026-08-14T07:56:36.519401"
   },
   "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/live-viewing-apps.json": {
-    "hash": "37b0b280ab0a516c909715f9c56011b91ce69f9a4d80e97c011747cdccb21ad5",
+    "hash": "6c5b2d2376f7b7277dda74e08aea2acbb86e424d82c809de75087eb7ae98761c",
     "file_path": "/home/runner/work/apple-dev-docs/apple-dev-docs/documentation/HIG/live-viewing-apps.md",
-    "last_updated": "2026-08-11T08:43:36.199851"
+    "last_updated": "2026-08-14T07:56:36.643987"
   },
   "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/loading.json": {
-    "hash": "3352171d97e797316803db6d281dfe46e6322c3c7810b4ac75e897ae493599db",
+    "hash": "c709d4d694aa0fb3b539300f0312204fecfcfe52ee71e79dd3b21ec0471e20e1",
     "file_path": "/home/runner/work/apple-dev-docs/apple-dev-docs/documentation/HIG/loading.md",
-    "last_updated": "2026-08-11T08:43:36.425159"
+    "last_updated": "2026-08-14T07:56:36.818270"
   },
   "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/managing-accounts.json": {
-    "hash": "9ea9918554253089a6af36739a5c635ff4a4a3168b613406b67912aa89a7f848",
+    "hash": "30b09b1352656b9ebb87d4b97f53d70b3f02b7c23f60fe865d173341691065d5",
     "file_path": "/home/runner/work/apple-dev-docs/apple-dev-docs/documentation/HIG/managing-accounts.md",
-    "last_updated": "2026-08-11T08:43:36.656839"
+    "last_updated": "2026-08-14T07:56:36.941375"
   },
   "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/managing-notifications.json": {
-    "hash": "2a3fa42fe82b7fd6e2756e46adc80e895f84b1511fd3301e2a67b7315d7fe103",
+    "hash": "c60ebf7a8e2bfa019ae7d85ded7ea89f5c9c705e65ffdfb2cacc765139077b02",
     "file_path": "/home/runner/work/apple-dev-docs/apple-dev-docs/documentation/HIG/managing-notifications.md",
-    "last_updated": "2026-08-11T08:43:36.863920"
+    "last_updated": "2026-08-14T07:56:37.116619"
   },
   "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/modality.json": {
-    "hash": "0635d8f94967ffea92be010fa83decabecdc39a1992f50ed573bef978b30cdab",
+    "hash": "76b274d38206731a4ef8b3c310bd7776417ec22b1dc44aaee7893e1d4828efdc",
     "file_path": "/home/runner/work/apple-dev-docs/apple-dev-docs/documentation/HIG/modality.md",
-    "last_updated": "2026-08-11T08:43:37.043621"
+    "last_updated": "2026-08-14T07:56:37.286700"
   },
   "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/offering-help.json": {
-    "hash": "8a3a12d37c4c647dec7f928fdfa352396808f5ffd25a1a5fe568027254f73db9",
+    "hash": "380cc516a8bbddcee99f3791e24738e04e3663e9ff5d1f184a50810871e173b6",
     "file_path": "/home/runner/work/apple-dev-docs/apple-dev-docs/documentation/HIG/offering-help.md",
-    "last_updated": "2026-08-11T08:43:37.409514"
+    "last_updated": "2026-08-14T07:56:37.615128"
   },
   "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/onboarding.json": {
-    "hash": "7919756f8155420709af72c3a8d78e26b66debebd8c138e868b859038d23a256",
+    "hash": "5498f460b9b6c44e65b125d6b97acac2e79501ad5bc6cc271d48c2c1bcac396b",
     "file_path": "/home/runner/work/apple-dev-docs/apple-dev-docs/documentation/HIG/onboarding.md",
-    "last_updated": "2026-08-11T08:43:37.583720"
+    "last_updated": "2026-08-14T07:56:37.739308"
   },
   "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/playing-audio.json": {
-    "hash": "dbef51b6c0cbcc2213a65994b121dbbbe26971392519c919d64a90303924a77c",
+    "hash": "d03f0a891ce9a2c6d5a91bd2f747356e6cf0ab80307eb71dea65ab5c367ff0e6",
     "file_path": "/home/runner/work/apple-dev-docs/apple-dev-docs/documentation/HIG/playing-audio.md",
-    "last_updated": "2026-08-11T08:43:37.767409"
+    "last_updated": "2026-08-14T07:56:37.863224"
   },
   "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/playing-haptics.json": {
-    "hash": "d72d2cad95c549c0ac995336812e59b134403b67058918c52cb4b146a040762c",
+    "hash": "b137f84b46c506b1fbbc66306d01a71316e940244f8256075a234746a424cbaa",
     "file_path": "/home/runner/work/apple-dev-docs/apple-dev-docs/documentation/HIG/playing-haptics.md",
-    "last_updated": "2026-08-11T08:43:37.946853"
+    "last_updated": "2026-08-14T07:56:38.037779"
   },
   "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/playing-video.json": {
-    "hash": "6fdf02d45cc600db5cd4114ee7e299b540a152599b779ae34b27511fed349d13",
+    "hash": "0c27951048728f236da01326c4ad61cdd576d28084fa88ec43caebf6e8345d4c",
     "file_path": "/home/runner/work/apple-dev-docs/apple-dev-docs/documentation/HIG/playing-video.md",
-    "last_updated": "2026-08-11T08:43:38.180643"
+    "last_updated": "2026-08-14T07:56:38.212463"
   },
   "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/printing.json": {
-    "hash": "1ec17433e2d188226057a2bd0d31b4f69395cf3fc15d45175598f25f30011a9a",
+    "hash": "29641d5abfdd1cbd000146af386cd08b044ef674521ba5993d5d176205145261",
     "file_path": "/home/runner/work/apple-dev-docs/apple-dev-docs/documentation/HIG/printing.md",
-    "last_updated": "2026-08-11T08:43:38.378758"
+    "last_updated": "2026-08-14T07:56:38.334900"
   },
   "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/ratings-and-reviews.json": {
-    "hash": "48665e258d7012178ec8554a7313aa1c1e016369669539cd080f5ad77d177701",
+    "hash": "d86e77851eb38f1978cc285991422457df3e1e476436b055d775ad6071df2f95",
     "file_path": "/home/runner/work/apple-dev-docs/apple-dev-docs/documentation/HIG/ratings-and-reviews.md",
-    "last_updated": "2026-08-11T08:43:38.551937"
+    "last_updated": "2026-08-14T07:56:38.509290"
   },
   "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/searching.json": {
-    "hash": "a1730095f27ecef960890b88dc46405647270eeaac02bebed9cc36f67335e8aa",
+    "hash": "4a522c1a6adfea22eb2327861d4dda288b7490bcbb5538038386ecbe17fed859",
     "file_path": "/home/runner/work/apple-dev-docs/apple-dev-docs/documentation/HIG/searching.md",
-    "last_updated": "2026-08-11T08:43:38.728644"
+    "last_updated": "2026-08-14T07:56:38.679718"
   },
   "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/settings.json": {
-    "hash": "f9d6ec000144aa15dd595d1af04f16c867bf5acc84cbd6d6eebb314e22250cd3",
+    "hash": "42549f37bc0e0ef7109fa8efddb33850c91d8c25f4b6ddf3eb2fe46f868ecbde",
     "file_path": "/home/runner/work/apple-dev-docs/apple-dev-docs/documentation/HIG/settings.md",
-    "last_updated": "2026-08-11T08:43:38.903533"
+    "last_updated": "2026-08-14T07:56:38.827556"
   },
   "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/undo-and-redo.json": {
-    "hash": "d20e32f3dd2fd87625927cdee0ed33216f04c02d1739e1c02e423b59e4bedb0a",
+    "hash": "63e7f6b08130bc2dcd6f90e82fe6803b0b8e208b2cc9a430f0044a5673fa7b0e",
     "file_path": "/home/runner/work/apple-dev-docs/apple-dev-docs/documentation/HIG/undo-and-redo.md",
-    "last_updated": "2026-08-11T08:43:39.095126"
+    "last_updated": "2026-08-14T07:56:38.951556"
   },
   "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/workouts.json": {
-    "hash": "0d0b3b7bd7827e8f43d0e20893c67d2dc3f85b79caffb0780b6c58c2098a08bc",
+    "hash": "d2bb65a53cb10e17f5e39d980a8cf66e1b1fb2843e4ccdaa930213dd22133d75",
     "file_path": "/home/runner/work/apple-dev-docs/apple-dev-docs/documentation/HIG/workouts.md",
-    "last_updated": "2026-08-11T08:43:39.276523"
+    "last_updated": "2026-08-14T07:56:39.246155"
   },
   "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/content.json": {
-    "hash": "fdd8e7924f269ef2fe05f1391e2bfd9c1058cccf8c6724de82d423433b8e86a9",
+    "hash": "0f24433e694e54a03ec7452197e8e904ef5d3b2208457460667537244b23ea4b",
     "file_path": "/home/runner/work/apple-dev-docs/apple-dev-docs/documentation/HIG/content.md",
-    "last_updated": "2026-08-11T08:43:39.458966"
+    "last_updated": "2026-08-14T07:56:39.414367"
   },
   "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/layout-and-organization.json": {
-    "hash": "ebb9a33857f7e93ca7a7da3b083e38699099ac7c709763fa190dba5f20688719",
+    "hash": "d8ab1ad7386571d4619c1143b8b6ee3a8fe6c2472892b4335390f4c05d9114e6",
     "file_path": "/home/runner/work/apple-dev-docs/apple-dev-docs/documentation/HIG/layout-and-organization.md",
-    "last_updated": "2026-08-11T08:43:39.631503"
+    "last_updated": "2026-08-14T07:56:39.590195"
   },
   "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/menus-and-actions.json": {
-    "hash": "0c8e53f252ae79d843235ac90a923a0686dbfe3a561c3915874186f8c3205fc5",
+    "hash": "2a7b1c43d3dae63a85572c7c55732013e7477f131128e58df2a16bb5a5fc3056",
     "file_path": "/home/runner/work/apple-dev-docs/apple-dev-docs/documentation/HIG/menus-and-actions.md",
-    "last_updated": "2026-08-11T08:43:39.804277"
+    "last_updated": "2026-08-14T07:56:39.713810"
   },
   "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/navigation-and-search.json": {
-    "hash": "668c07859655a7df14db8e172337b766911fd491fa434adb3757fb67c3699cb3",
+    "hash": "4df0800b6c61a60d9dc0562ee0e304b883213e92a1f0c6294e928136dd8cba48",
     "file_path": "/home/runner/work/apple-dev-docs/apple-dev-docs/documentation/HIG/navigation-and-search.md",
-    "last_updated": "2026-08-11T08:43:39.975284"
+    "last_updated": "2026-08-14T07:56:39.886009"
   },
   "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/presentation.json": {
-    "hash": "0d9e432d2b19a9fcf4f1b41dccac1364099cd780bf8ff6ae58bd23f93a7f73d1",
+    "hash": "7053ffacf7d49ed59691e9ba22f7553f250a38b423673003caaa1d36cfa38ec1",
     "file_path": "/home/runner/work/apple-dev-docs/apple-dev-docs/documentation/HIG/presentation.md",
-    "last_updated": "2026-08-11T08:43:40.148789"
+    "last_updated": "2026-08-14T07:56:40.033903"
   },
   "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/selection-and-input.json": {
-    "hash": "94f0ead5c5eab42b75c7ae02ff45c30cfd7f46310686ae585a91b1a2d7fd973f",
+    "hash": "8a76e19a692bef32acea8ad33052f5c2a0e3d5dec2320d386cbcb2790ae624be",
     "file_path": "/home/runner/work/apple-dev-docs/apple-dev-docs/documentation/HIG/selection-and-input.md",
-    "last_updated": "2026-08-11T08:43:40.324800"
+    "last_updated": "2026-08-14T07:56:40.334161"
   },
   "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/status.json": {
-    "hash": "ce392b142071417d65a7c9eed19416edc7ce1e444d111338121574ed40200f34",
+    "hash": "eea0bd9e638951dcb4ceac7c07e20c062f265fa390c99750880b6f527dd2797b",
     "file_path": "/home/runner/work/apple-dev-docs/apple-dev-docs/documentation/HIG/status.md",
-    "last_updated": "2026-08-11T08:43:40.501230"
+    "last_updated": "2026-08-14T07:56:40.506286"
   },
   "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/system-experiences.json": {
-    "hash": "ebf0ad5cc1de80f587cb5909297e76d060cb5aee70cc40317077cd9390d6214b",
+    "hash": "7186ec311bb521233c7e19c1b131b56768107537503cf4e80a84cfd2505519c2",
     "file_path": "/home/runner/work/apple-dev-docs/apple-dev-docs/documentation/HIG/system-experiences.md",
-    "last_updated": "2026-08-11T08:43:40.693837"
+    "last_updated": "2026-08-14T07:56:40.674256"
   },
   "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/action-button.json": {
-    "hash": "1b0eade9dae94c26e4aae4085bd6abe3043a21c97b1a507aaedebfdf715ccc94",
+    "hash": "826cb2c5fe60d97f5393cc25d7459db18f1335a90b50dc455684318748847c6d",
     "file_path": "/home/runner/work/apple-dev-docs/apple-dev-docs/documentation/HIG/action-button.md",
-    "last_updated": "2026-08-11T08:43:40.865403"
+    "last_updated": "2026-08-14T07:56:40.968374"
   },
   "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/apple-pencil-and-scribble.json": {
-    "hash": "edd5d04a59db97e21826a869f141d956b9e88a30bc78fe808ced65be4397447c",
+    "hash": "ba0e684f4b40c8f6187589e37e5eeaffe4fda110f9ee5cff63590e2d52bfae86",
     "file_path": "/home/runner/work/apple-dev-docs/apple-dev-docs/documentation/HIG/apple-pencil-and-scribble.md",
-    "last_updated": "2026-08-11T08:43:41.044415"
+    "last_updated": "2026-08-14T07:56:41.142590"
   },
   "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/camera-control.json": {
-    "hash": "c49c01247e71365350876f5474b237e511d7c637ced68c00f48bee2cdc68ea16",
+    "hash": "f36ccfab73c4da5ab50fd9d9ebdfb00ce24a11c81f1e7a96faa4e2fc879719d1",
     "file_path": "/home/runner/work/apple-dev-docs/apple-dev-docs/documentation/HIG/camera-control.md",
-    "last_updated": "2026-08-11T08:43:41.222027"
+    "last_updated": "2026-08-14T07:56:41.315050"
   },
   "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/digital-crown.json": {
-    "hash": "6c97ac94cd426e3dfcbd21e81301b0a701fc845b00e330b24c1de52cde40a627",
+    "hash": "314e9ddde84c2aa69cf1fa0a50c3c848b3a1951aae0c5b9cb9796c7e5bb5a7ea",
     "file_path": "/home/runner/work/apple-dev-docs/apple-dev-docs/documentation/HIG/digital-crown.md",
-    "last_updated": "2026-08-11T08:43:41.392523"
+    "last_updated": "2026-08-14T07:56:41.485376"
   },
   "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/eyes.json": {
-    "hash": "5728bebf7634a166eba9a1952d602cde0a0d5b3d6b0e9c48c681a328b541e1b9",
+    "hash": "f4bd3673d426d4875bc5bcbb1b27c3793cc63a521a77c6d6b3a56e03a40a5a60",
     "file_path": "/home/runner/work/apple-dev-docs/apple-dev-docs/documentation/HIG/eyes.md",
-    "last_updated": "2026-08-11T08:43:41.574449"
+    "last_updated": "2026-08-14T07:56:41.658494"
   },
   "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/focus-and-selection.json": {
-    "hash": "153a6d8c7c781a44aa62715b51f05f6e04f582c7c396bfe0aae9891273606723",
+    "hash": "6ffb4ffa8fcdcffaf4f72789d78ad8a431a671677f5d6a817de2945fac206736",
     "file_path": "/home/runner/work/apple-dev-docs/apple-dev-docs/documentation/HIG/focus-and-selection.md",
-    "last_updated": "2026-08-11T08:43:41.752928"
+    "last_updated": "2026-08-14T07:56:41.829986"
   },
   "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/game-controls.json": {
-    "hash": "d408f034d557f90259b2ef3bf14d1442a8f2be77a7f4d4f1dd59cd9e1386c758",
+    "hash": "ec949b88248a5abbeb667de0999577543f73facc8c49aaa54ca579f8d2fc5f98",
     "file_path": "/home/runner/work/apple-dev-docs/apple-dev-docs/documentation/HIG/game-controls.md",
-    "last_updated": "2026-08-11T08:43:41.936155"
+    "last_updated": "2026-08-14T07:56:42.129794"
   },
   "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/gestures.json": {
-    "hash": "2091f9b1ae4922490908b8b0f53bfcc85b2693a6d43f9234fd53a2ebc7e6c4c0",
+    "hash": "19760d89cc1d68bca32a6d5773b01a27e09618fa6a265a3fb3630372ab53a3a3",
     "file_path": "/home/runner/work/apple-dev-docs/apple-dev-docs/documentation/HIG/gestures.md",
-    "last_updated": "2026-08-11T08:43:42.120222"
+    "last_updated": "2026-08-14T07:56:42.300815"
   },
   "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/gyro-and-accelerometer.json": {
-    "hash": "331d8be4af412765a6f2305863e0806797f1172a57363955fc58dbb8f3ffe9d4",
+    "hash": "0005365e05b2a6aed740f57ce06903e02daa3bed41185231bf445ff2c7f7b102",
     "file_path": "/home/runner/work/apple-dev-docs/apple-dev-docs/documentation/HIG/gyro-and-accelerometer.md",
-    "last_updated": "2026-08-11T08:43:42.290453"
+    "last_updated": "2026-08-14T07:56:42.593120"
   },
   "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/keyboards.json": {
-    "hash": "95f73c3ddfc9776e1e0147b7a7778083b1df05b7fb943ba8214ec28e6407f0d9",
+    "hash": "0d63c07ee10b9b5e7ac980309ceabc6ee55111fd0e6a9d1f99b4bf7bc077a9dc",
     "file_path": "/home/runner/work/apple-dev-docs/apple-dev-docs/documentation/HIG/keyboards.md",
-    "last_updated": "2026-08-11T08:43:42.473644"
+    "last_updated": "2026-08-14T07:56:42.768065"
   },
   "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/nearby-interactions.json": {
-    "hash": "325136cdd757e71f0fde7fb933e9d82601fa2f859b7b43936a680aec1ab6b7dc",
+    "hash": "0044baf2228e9a8c09716c454d81e761735c7ce803d30526f6aa03b6db759f00",
     "file_path": "/home/runner/work/apple-dev-docs/apple-dev-docs/documentation/HIG/nearby-interactions.md",
-    "last_updated": "2026-08-11T08:43:42.649270"
+    "last_updated": "2026-08-14T07:56:42.941741"
   },
   "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/pointing-devices.json": {
-    "hash": "01b328a004669ab2b5e1962dce37aa4601e50b3ddee5652e97fc575d73eca690",
+    "hash": "bf1b3c175a8ee5f6ace879d9bb0a8d49e4c9392bacb3db79d96aabddd1f47a97",
     "file_path": "/home/runner/work/apple-dev-docs/apple-dev-docs/documentation/HIG/pointing-devices.md",
-    "last_updated": "2026-08-11T08:43:42.838049"
+    "last_updated": "2026-08-14T07:56:43.123446"
   },
   "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/remotes.json": {
-    "hash": "67a959e10428a44035cd1fcefc442765aa728469bfe9dd45d569d150db75c6ed",
+    "hash": "b29c982a70eb086984ac8aec728ffb137940e5fa406a02feec2305128750048f",
     "file_path": "/home/runner/work/apple-dev-docs/apple-dev-docs/documentation/HIG/remotes.md",
-    "last_updated": "2026-08-11T08:43:43.024290"
+    "last_updated": "2026-08-14T07:56:43.294472"
   },
   "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/airplay.json": {
-    "hash": "d0c068406fbb98073730bc3c6e776f01286d35ebdd0927a1dd7526911181a55f",
+    "hash": "374539071c8b9dd12409dc038849f8d2f4ab2b53287e0a34f2d26487a3ab689f",
     "file_path": "/home/runner/work/apple-dev-docs/apple-dev-docs/documentation/HIG/airplay.md",
-    "last_updated": "2026-08-11T08:43:43.252626"
+    "last_updated": "2026-08-14T07:56:43.468313"
   },
   "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/always-on.json": {
-    "hash": "34af30d7b083718b86edaa9eeabfee8a1fec77cd11a78c65a02024d9f45a3fae",
+    "hash": "91d4bd6a626ff4f8e0e11d72fbe04673a01566a92b5370fda8d5407104f454cb",
     "file_path": "/home/runner/work/apple-dev-docs/apple-dev-docs/documentation/HIG/always-on.md",
-    "last_updated": "2026-08-11T08:43:43.443348"
+    "last_updated": "2026-08-14T07:56:43.642813"
   },
   "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/app-clips.json": {
-    "hash": "c346c24871e951547e5f09a9cc61d81cec4f5c3c9a2b78b8612a8152dafbaef6",
+    "hash": "2472d6cfbcde070117db21f4d3beb82ac5f910cccc3b01a4adfbc145e29e9f6a",
     "file_path": "/home/runner/work/apple-dev-docs/apple-dev-docs/documentation/HIG/app-clips.md",
-    "last_updated": "2026-08-11T08:43:43.656856"
+    "last_updated": "2026-08-14T07:56:43.814369"
   },
   "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/apple-pay.json": {
-    "hash": "5fd328075b762e3eb1275768150d5fa8f2544faf34a132d327b6d7e28ed5b8a3",
+    "hash": "4d61af6799d525f60879842274d523666827ab9bee96a36618bb5cb195e904bb",
     "file_path": "/home/runner/work/apple-dev-docs/apple-dev-docs/documentation/HIG/apple-pay.md",
-    "last_updated": "2026-08-11T08:43:43.852536"
+    "last_updated": "2026-08-14T07:56:43.990924"
   },
   "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/augmented-reality.json": {
-    "hash": "290759f9ca49c31b77179b949cd6a1cae31b7c7236c095848081883b452339ee",
+    "hash": "7199507eaf3be40ee3ce9c17a1b39e9032e6d0937eea995a26ef29f45d9cd149",
     "file_path": "/home/runner/work/apple-dev-docs/apple-dev-docs/documentation/HIG/augmented-reality.md",
-    "last_updated": "2026-08-11T08:43:44.040273"
+    "last_updated": "2026-08-14T07:56:44.166212"
   },
   "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/carekit.json": {
-    "hash": "d4698cf68c17abde950bb79a86d8bf71b87b88931b9b91080e043a222e85b861",
+    "hash": "8c35432245bbdef7ba1fc1eb062d271a54171e4528da835c4bff1872a5120adc",
     "file_path": "/home/runner/work/apple-dev-docs/apple-dev-docs/documentation/HIG/carekit.md",
-    "last_updated": "2026-08-11T08:43:44.224237"
+    "last_updated": "2026-08-14T07:56:44.337682"
   },
   "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/carplay.json": {
-    "hash": "7f5fade3d127984329a1cb916bc15c7a45a2368e46cda75cb754f6ac525f6bee",
+    "hash": "43217c5e00bb622952b8a87c44567cb4da97a54f5c0cdc77d87002d7d972f025",
     "file_path": "/home/runner/work/apple-dev-docs/apple-dev-docs/documentation/HIG/carplay.md",
-    "last_updated": "2026-08-11T08:43:44.402224"
+    "last_updated": "2026-08-14T07:56:44.508473"
   },
   "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/healthkit.json": {
-    "hash": "62ca26f6256150e35611973b1d675f88ae0d060fc3424334ae2f6b6ebb8827b5",
+    "hash": "167f4502dd7300cd75289b483896fb640bce50700b0173925daae0a5ae2d676e",
     "file_path": "/home/runner/work/apple-dev-docs/apple-dev-docs/documentation/HIG/healthkit.md",
-    "last_updated": "2026-08-11T08:43:44.946176"
+    "last_updated": "2026-08-14T07:56:45.037366"
   },
   "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/homekit.json": {
-    "hash": "9f244a47b05cc468e186c0bc0f1dc534ac470185848ae0a045142cc5eddff77c",
+    "hash": "aca954bc492ab35b09944a7e485ec004f63daa765557c71358929961c5e7fb6d",
     "file_path": "/home/runner/work/apple-dev-docs/apple-dev-docs/documentation/HIG/homekit.md",
-    "last_updated": "2026-08-11T08:43:45.202406"
+    "last_updated": "2026-08-14T07:56:45.210885"
   },
   "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/icloud.json": {
-    "hash": "1fac8d88dc07796bce74e9b5f29ec6840a2d1673ce0557e5c2dc28128d71d328",
+    "hash": "d9bb9842efce852980bc2f6bdf42e7fe3dd58ee1016d340a7c9afeafd9aa51b6",
     "file_path": "/home/runner/work/apple-dev-docs/apple-dev-docs/documentation/HIG/icloud.md",
-    "last_updated": "2026-08-11T08:43:45.378702"
+    "last_updated": "2026-08-14T07:56:45.380578"
   },
   "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/id-verifier.json": {
-    "hash": "261948805491630f982c571f00e03348d76002b6ff0670bb8b7161122bed0a3e",
+    "hash": "a741568a117f2df603e134dba21393a3ad85542426b253595d303bc267495620",
     "file_path": "/home/runner/work/apple-dev-docs/apple-dev-docs/documentation/HIG/id-verifier.md",
-    "last_updated": "2026-08-11T08:43:45.597614"
+    "last_updated": "2026-08-14T07:56:45.551774"
   },
   "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/imessage-apps-and-stickers.json": {
-    "hash": "751e8a1c67af293b25e5efcfdc6959eb3c3e920fce45d55608920dc7205899bf",
+    "hash": "0534e2e25df74f4022b4eaf336c1807fe7310af2b21655e54eec268b685ef22a",
     "file_path": "/home/runner/work/apple-dev-docs/apple-dev-docs/documentation/HIG/imessage-apps-and-stickers.md",
-    "last_updated": "2026-08-11T08:43:45.771776"
+    "last_updated": "2026-08-14T07:56:45.724273"
   },
   "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/in-app-purchase.json": {
-    "hash": "616634ddf7fbee5e9e7649d2a97e1882b24052776c9a851d847c7f6280acc8f4",
+    "hash": "3e3c1bb7760d9d044bea2226d19249ef120d056b232154bfee6d1f6cc95227bb",
     "file_path": "/home/runner/work/apple-dev-docs/apple-dev-docs/documentation/HIG/in-app-purchase.md",
-    "last_updated": "2026-08-11T08:43:45.989000"
+    "last_updated": "2026-08-14T07:56:45.896200"
   },
   "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/live-photos.json": {
-    "hash": "7537ad1b25a5036fa1be595f91e3aa5b43ba5f0c73c54fa8915a02115c47d959",
+    "hash": "ef019ffcf50c822121bb87945b699922140e61b262c5fcdc56750f85f3a312c9",
     "file_path": "/home/runner/work/apple-dev-docs/apple-dev-docs/documentation/HIG/live-photos.md",
-    "last_updated": "2026-08-11T08:43:46.164157"
+    "last_updated": "2026-08-14T07:56:46.064298"
   },
   "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/mac-catalyst.json": {
-    "hash": "6eb39a5a04084d5ef199ff1e7edbb88ba6f85b885fb040d6c43b41d55d7a7fd5",
+    "hash": "077828f6179a7fadd8a3027719d18025b998109e7304ea095ba5b403b32bf2a1",
     "file_path": "/home/runner/work/apple-dev-docs/apple-dev-docs/documentation/HIG/mac-catalyst.md",
-    "last_updated": "2026-08-11T08:43:46.344775"
+    "last_updated": "2026-08-14T07:56:46.236181"
   },
   "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/machine-learning.json": {
-    "hash": "a5cc502454794da52e6f569e8c4e84a34fb8f973f66853036f65a3b898a7c95f",
+    "hash": "b75d7570bc4d17d5c72609fe72a4c70668861329be561d27280e6a57ca211c6d",
     "file_path": "/home/runner/work/apple-dev-docs/apple-dev-docs/documentation/HIG/machine-learning.md",
-    "last_updated": "2026-08-11T08:43:46.561335"
+    "last_updated": "2026-08-14T07:56:46.414279"
   },
   "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/maps.json": {
-    "hash": "e2d3565f8f10f888bde21297d713c32daf416e9e3a27312c61cb2d6f9bc517bc",
+    "hash": "12327ae2606a09ce54ae7c3bb25c55ee3790d8231512bb7a4aaae26cbef57657",
     "file_path": "/home/runner/work/apple-dev-docs/apple-dev-docs/documentation/HIG/maps.md",
-    "last_updated": "2026-08-11T08:43:46.768457"
+    "last_updated": "2026-08-14T07:56:46.589169"
   },
   "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/nfc.json": {
-    "hash": "de068b14243d1e3ee228e0afaaf3e00beb0abecadcdeeac6af7d1eeb91e20aea",
+    "hash": "36f623189526ce46a066ad959c7bd45af083f2fb7e5db98e6865253f5be5a707",
     "file_path": "/home/runner/work/apple-dev-docs/apple-dev-docs/documentation/HIG/nfc.md",
-    "last_updated": "2026-08-11T08:43:46.939304"
+    "last_updated": "2026-08-14T07:56:46.759684"
   },
   "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/photo-editing.json": {
-    "hash": "d780897e1f9cdeb0950d22ee51b063b233ff9bb54985a163a586575bf9ef7b28",
+    "hash": "a7853dc7eb3d8f74193bc2e440604b98b6808125b728e3c400bb340ec1e14a06",
     "file_path": "/home/runner/work/apple-dev-docs/apple-dev-docs/documentation/HIG/photo-editing.md",
-    "last_updated": "2026-08-11T08:43:47.114965"
+    "last_updated": "2026-08-14T07:56:46.931593"
   },
   "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/researchkit.json": {
-    "hash": "fd800378c0f2e0486e7740ac1ed86c1e007b189ad463e23a6dc3e643be3c55a7",
+    "hash": "e8861f6192180d5eec85688e93ef55136ae08a67d3ce1bf1094f553adcd87fa6",
     "file_path": "/home/runner/work/apple-dev-docs/apple-dev-docs/documentation/HIG/researchkit.md",
-    "last_updated": "2026-08-11T08:43:47.293343"
+    "last_updated": "2026-08-14T07:56:47.100839"
   },
   "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/shareplay.json": {
-    "hash": "97b852a8b6754f38fea1d2ecf27087b12a4115c8f10e0e3a6fd70ad8f29c88b2",
+    "hash": "6d44b59fabe861294c2ad1aa2031872aaf20d036c3a4ea530c85504b7ba290ab",
     "file_path": "/home/runner/work/apple-dev-docs/apple-dev-docs/documentation/HIG/shareplay.md",
-    "last_updated": "2026-08-11T08:43:47.520644"
+    "last_updated": "2026-08-14T07:56:47.272335"
   },
   "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/shazamkit.json": {
-    "hash": "9c53538d7003b6f3c43eb4e2cf8974b7ebb7ab94eef98d1a5cca72e5134e451a",
+    "hash": "f837be091aec03d4ba48de30a3338ec848d808ca336e52ec86cea4ac120b560d",
     "file_path": "/home/runner/work/apple-dev-docs/apple-dev-docs/documentation/HIG/shazamkit.md",
-    "last_updated": "2026-08-11T08:43:47.695423"
+    "last_updated": "2026-08-14T07:56:47.444107"
   },
   "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/sign-in-with-apple.json": {
-    "hash": "84c6907264170ad12f2ab9d8c012dc5e423592842de5c3655dfe8ea9e4cb9737",
+    "hash": "1aeb68c3d89d07d512eaa9522803b337eea5de9bdcea4c287d6c03f33c57d13e",
     "file_path": "/home/runner/work/apple-dev-docs/apple-dev-docs/documentation/HIG/sign-in-with-apple.md",
-    "last_updated": "2026-08-11T08:43:47.877134"
+    "last_updated": "2026-08-14T07:56:47.618784"
   },
   "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/siri.json": {
-    "hash": "0b61fbafbaaf0e3151c9130729e06db73e56dbb02ba1bba87efb41fde2177790",
+    "hash": "a26fbab9e5edfa76073803bc35257aac7ab127a4922e2f5627f97a4c31fa78ae",
     "file_path": "/home/runner/work/apple-dev-docs/apple-dev-docs/documentation/HIG/siri.md",
-    "last_updated": "2026-08-11T08:43:30.868960"
+    "last_updated": "2026-08-14T07:56:32.479012"
   },
   "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/tap-to-pay-on-iphone.json": {
-    "hash": "0b1a42e064fd0a951ac02531f8d31b585132f594c55536daad817c479bae4aef",
+    "hash": "9c743d3aeb3f9d6d2ba167d1cee3f14846f8c321ec4ff1ff3b5e056c8e8c1944",
     "file_path": "/home/runner/work/apple-dev-docs/apple-dev-docs/documentation/HIG/tap-to-pay-on-iphone.md",
-    "last_updated": "2026-08-11T08:43:48.058886"
+    "last_updated": "2026-08-14T07:56:47.796605"
   },
   "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/voiceover.json": {
-    "hash": "ecdd759795a04ff096e87203f3a6c4f2c0853a2a7da84220c843498adf52f11d",
+    "hash": "1b359d1a41bd043cc639ef30d0d5f259fcd26453f27b898ac1a45ba4f9e14c5b",
     "file_path": "/home/runner/work/apple-dev-docs/apple-dev-docs/documentation/HIG/voiceover.md",
-    "last_updated": "2026-08-11T08:43:48.235779"
+    "last_updated": "2026-08-14T07:56:47.977844"
   },
   "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/wallet.json": {
-    "hash": "43671947e0eda4f531dd7f6da540f05e16a5d34155c0f7cbcdcb359602cf26c9",
+    "hash": "f95df69aeb211ed47976a5a3a44823c6d314d6cfdace53d518e451dceed8db3a",
     "file_path": "/home/runner/work/apple-dev-docs/apple-dev-docs/documentation/HIG/wallet.md",
-    "last_updated": "2026-08-11T08:43:48.464078"
+    "last_updated": "2026-08-14T07:56:48.155724"
   },
   "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/charts.json": {
-    "hash": "8960d53bb0b908f4ef681da0fe77eb77ba2edcc84f6b92495afd2b3bd824adc9",
+    "hash": "9dd4fecb6bc07603efa5976c0685cb6e55015a52a3904e7e551ce2f9971ddd4a",
     "file_path": "/home/runner/work/apple-dev-docs/apple-dev-docs/documentation/HIG/charts.md",
-    "last_updated": "2026-08-11T08:43:48.645332"
+    "last_updated": "2026-08-14T07:56:48.331316"
   },
   "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/image-views.json": {
-    "hash": "c18cb68478e78673b3a5ed1b360700ec83e79f12752aece9a2089102d9b4b93e",
+    "hash": "ef27d4b0571b459900b71d45f32d7b1e2ee85915d34acb5b9f449b83a834c3f2",
     "file_path": "/home/runner/work/apple-dev-docs/apple-dev-docs/documentation/HIG/image-views.md",
-    "last_updated": "2026-08-11T08:43:48.819575"
+    "last_updated": "2026-08-14T07:56:48.502542"
   },
   "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/text-views.json": {
-    "hash": "55c943992ce33de10349cc128e555e62d454eb848fcd3f8b01c1727ccdfc443d",
+    "hash": "4f3b1b8fe9e5050506e976e71b6c2dd61495bd9c9398e8b24327956a4fb70d38",
     "file_path": "/home/runner/work/apple-dev-docs/apple-dev-docs/documentation/HIG/text-views.md",
-    "last_updated": "2026-08-11T08:43:48.992850"
+    "last_updated": "2026-08-14T07:56:48.672400"
   },
   "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/web-views.json": {
-    "hash": "d0a1f397fec39e7443adb5d229112a620a0bb4ffe28eee1be4ed69d76edeacd0",
+    "hash": "7366d3276793300fa90fd953b1bdee556e0e352151ca6af8fc64e6c07e265de8",
     "file_path": "/home/runner/work/apple-dev-docs/apple-dev-docs/documentation/HIG/web-views.md",
-    "last_updated": "2026-08-11T08:43:49.164251"
+    "last_updated": "2026-08-14T07:56:48.844152"
   },
   "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/boxes.json": {
-    "hash": "51dd1f77026a9073b5b167a66c1bfd4a0202cf8838ca295344cd4977fd9c7995",
+    "hash": "1fb93814bad1a8fdbca4c6bdf6192ce86e408f92d0e7d27dcf8fbba35dfebdee",
     "file_path": "/home/runner/work/apple-dev-docs/apple-dev-docs/documentation/HIG/boxes.md",
-    "last_updated": "2026-08-11T08:43:49.336988"
+    "last_updated": "2026-08-14T07:56:49.016784"
   },
   "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/collections.json": {
-    "hash": "f81cabdbb437f71aa81b5a8b2c64f7c4a25b814c359d56cfe5113a91364f93e9",
+    "hash": "29404db78911a962e3d4da03a8890bb852c6f78a7a45f62b5a02f0c245c159bc",
     "file_path": "/home/runner/work/apple-dev-docs/apple-dev-docs/documentation/HIG/collections.md",
-    "last_updated": "2026-08-11T08:43:49.510473"
+    "last_updated": "2026-08-14T07:56:49.185221"
   },
   "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/column-views.json": {
-    "hash": "4826bb44f944e44cdf8f1079d95f95358291d3fb002e93886848d2605d055a35",
+    "hash": "d92eedb66633bdb69b6c275eec11a5894e0a4845e643c6ab1dd57216edec7a1b",
     "file_path": "/home/runner/work/apple-dev-docs/apple-dev-docs/documentation/HIG/column-views.md",
-    "last_updated": "2026-08-11T08:43:49.684829"
+    "last_updated": "2026-08-14T07:56:49.353765"
   },
   "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/disclosure-controls.json": {
-    "hash": "cbc2c6f8aea64e03015f8e16d60390b94e50720da4a92134f90875de87e382a8",
+    "hash": "4df6d17e6dc08985456545a2804d7a560a184dcefd45726f9e405eff63d9551f",
     "file_path": "/home/runner/work/apple-dev-docs/apple-dev-docs/documentation/HIG/disclosure-controls.md",
-    "last_updated": "2026-08-11T08:43:49.865138"
+    "last_updated": "2026-08-14T07:56:49.526723"
   },
   "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/labels.json": {
-    "hash": "deb4a9f17a9cb9761c120873827820133393af41b83b02e86b8de32290ed7617",
+    "hash": "7e51ea5700fe5ee4b7b5f6dc3473ce0e7c233f0cca227cf3aabdd32435c2bc9d",
     "file_path": "/home/runner/work/apple-dev-docs/apple-dev-docs/documentation/HIG/labels.md",
-    "last_updated": "2026-08-11T08:43:50.045544"
+    "last_updated": "2026-08-14T07:56:49.698580"
   },
   "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/lists-and-tables.json": {
-    "hash": "9e230dd49496794babba851927c1258765ac524febe9488efa9add1e6de805df",
+    "hash": "4f0ed50842ed20f760277e3fb967179983c6d34b73ba45bb5e70dea8a49b90af",
     "file_path": "/home/runner/work/apple-dev-docs/apple-dev-docs/documentation/HIG/lists-and-tables.md",
-    "last_updated": "2026-08-11T08:43:50.260395"
+    "last_updated": "2026-08-14T07:56:49.880181"
   },
   "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/lockups.json": {
-    "hash": "f24eb5cae47ae6cceb9000e0cd0f2886345a15aff8ce2261f309c06ca84dbd59",
+    "hash": "eabeb16db4b6b038439a34ea7f7235010501794457786940ec7f7d949c05ea13",
     "file_path": "/home/runner/work/apple-dev-docs/apple-dev-docs/documentation/HIG/lockups.md",
-    "last_updated": "2026-08-11T08:43:50.453168"
+    "last_updated": "2026-08-14T07:56:50.049083"
   },
   "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/outline-views.json": {
-    "hash": "d412e74274f29ee52d5333fc0ee9c93d8bfe2886923d4290a622b55dbf40eed4",
+    "hash": "e8729317a323dbec77b51990316bdac59309712c5ee8fc77586f1838652745d6",
     "file_path": "/home/runner/work/apple-dev-docs/apple-dev-docs/documentation/HIG/outline-views.md",
-    "last_updated": "2026-08-11T08:43:50.627150"
+    "last_updated": "2026-08-14T07:56:50.222051"
   },
   "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/split-views.json": {
-    "hash": "600a296d823b3076246672babb546e6d2c134557827325afc470c002d9216345",
+    "hash": "5449e19fa56231ea1cd564165ded681631ca92d07a80836db5707d18c49a5e4d",
     "file_path": "/home/runner/work/apple-dev-docs/apple-dev-docs/documentation/HIG/split-views.md",
-    "last_updated": "2026-08-11T08:43:50.802463"
+    "last_updated": "2026-08-14T07:56:50.406758"
   },
   "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/tab-views.json": {
-    "hash": "0ce8e5da12045b885f6a68dd69280ace66b27a6d9d84b95f10de907938639b87",
+    "hash": "a918acdca6549b25f06c0f9c9246e5a0cf75a3a2772723d81d61516848278b50",
     "file_path": "/home/runner/work/apple-dev-docs/apple-dev-docs/documentation/HIG/tab-views.md",
-    "last_updated": "2026-08-11T08:43:50.975237"
+    "last_updated": "2026-08-14T07:56:50.575032"
   },
   "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/activity-views.json": {
-    "hash": "f8dcd20db93530bc292b29b7ea3daba9578dc38423fcc6897d44813f029b3d40",
+    "hash": "32fd2c03ec355636a181b8bea6846cd013b333e6db5fc6a046b5a33d85b2a4bf",
     "file_path": "/home/runner/work/apple-dev-docs/apple-dev-docs/documentation/HIG/activity-views.md",
-    "last_updated": "2026-08-11T08:43:51.097326"
+    "last_updated": "2026-08-14T07:56:50.750500"
   },
   "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/buttons.json": {
-    "hash": "96564556c116cfa4fe1ebd35844458eee56f5990ef6407631fafeb683cf62ca0",
+    "hash": "4b184836b77006ebadf5a53743f8e9722ec622affd14c53ac8e3d88429e89357",
     "file_path": "/home/runner/work/apple-dev-docs/apple-dev-docs/documentation/HIG/buttons.md",
-    "last_updated": "2026-08-11T08:43:51.286875"
+    "last_updated": "2026-08-14T07:56:50.920019"
   },
   "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/context-menus.json": {
-    "hash": "8bda2cf70cd3f832e3e42cf554813bc0aeb33183e729dd1f80ad8937e9663578",
+    "hash": "51365a16256a8b36f6737f987ce6abb556a7d49136229758131dcbf7918a98ea",
     "file_path": "/home/runner/work/apple-dev-docs/apple-dev-docs/documentation/HIG/context-menus.md",
-    "last_updated": "2026-08-11T08:43:51.466068"
+    "last_updated": "2026-08-14T07:56:51.091728"
   },
   "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/dock-menus.json": {
-    "hash": "42b99e28e6d9b2e00856b06e1e2f879361392292d21005fad2585b91d6afceb2",
+    "hash": "8eb23f9a4666052518e61623f1f05dd0b49ecaa447f98e4cd2fb0c961e5b5435",
     "file_path": "/home/runner/work/apple-dev-docs/apple-dev-docs/documentation/HIG/dock-menus.md",
-    "last_updated": "2026-08-11T08:43:51.640802"
+    "last_updated": "2026-08-14T07:56:51.263204"
   },
   "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/edit-menus.json": {
-    "hash": "3c3af799a24df8b307f7ef92db090e45f9136a900ec73abc865355c3e32e5364",
+    "hash": "b4be64f79beea8147f15b5d5c4fd0b818310eeb2583efbce640e32e5e77f50a3",
     "file_path": "/home/runner/work/apple-dev-docs/apple-dev-docs/documentation/HIG/edit-menus.md",
-    "last_updated": "2026-08-11T08:43:51.908876"
+    "last_updated": "2026-08-14T07:56:51.431978"
   },
   "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/home-screen-quick-actions.json": {
-    "hash": "29854b30fe431d13226a5c91d78e9c4c30d13e32345a728345aabe34c438c34e",
+    "hash": "82f790a3a6d05cc535fbe06ed80dbf0cae6dbe07da3a75334beadb8be6e02d97",
     "file_path": "/home/runner/work/apple-dev-docs/apple-dev-docs/documentation/HIG/home-screen-quick-actions.md",
-    "last_updated": "2026-08-11T08:43:52.030124"
+    "last_updated": "2026-08-14T07:56:51.604768"
   },
   "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/menus.json": {
-    "hash": "7243e0b578756271dce5099bf300a7eb11da591c75216570965538828772b204",
+    "hash": "ef2c145a4c6d41a46eea3b95b443f7fb7ce8cd3c7347639b87ed157f7ad1e7c6",
     "file_path": "/home/runner/work/apple-dev-docs/apple-dev-docs/documentation/HIG/menus.md",
-    "last_updated": "2026-08-11T08:43:29.952728"
+    "last_updated": "2026-08-14T07:56:31.739538"
   },
   "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/ornaments.json": {
-    "hash": "32e6bf7c0ff144a02dca18820b097c9d01bbedc34ba508254f2b17f6ccd92d58",
+    "hash": "42b306c865e453b873177d0f1b7893c6aa6db06939840ea36e18a2e059d1423f",
     "file_path": "/home/runner/work/apple-dev-docs/apple-dev-docs/documentation/HIG/ornaments.md",
-    "last_updated": "2026-08-11T08:43:52.206670"
+    "last_updated": "2026-08-14T07:56:51.773005"
   },
   "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/pop-up-buttons.json": {
-    "hash": "307f34fecb16d0ca0f595d89f1f4dd8e90b23e4b0f33bd3b6f0a5650a9818db2",
+    "hash": "a67a2f08cb46e8b3602ff2e52000b4212e9e3dc5d2a803405572953ba366b163",
     "file_path": "/home/runner/work/apple-dev-docs/apple-dev-docs/documentation/HIG/pop-up-buttons.md",
-    "last_updated": "2026-08-11T08:43:52.381197"
+    "last_updated": "2026-08-14T07:56:51.945657"
   },
   "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/pull-down-buttons.json": {
-    "hash": "e5232288738746a5cefcb84f91e8598296df88d811ffdda42c2ff6808e5dd4e6",
+    "hash": "c7b112dd9f108103a5e2153dcb0a380c668e7c59491193b274ed8ccf52b8dd6a",
     "file_path": "/home/runner/work/apple-dev-docs/apple-dev-docs/documentation/HIG/pull-down-buttons.md",
-    "last_updated": "2026-08-11T08:43:52.559397"
+    "last_updated": "2026-08-14T07:56:52.117968"
   },
   "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/path-controls.json": {
-    "hash": "a93d082a33656e1b185a7850ea78ce4db72dfa4be4f78c894c27cbb2f30029cc",
+    "hash": "6b7456163a3e00d07cbbc9cfaba7c85cdf761a3341a029953fe651c3468887f7",
     "file_path": "/home/runner/work/apple-dev-docs/apple-dev-docs/documentation/HIG/path-controls.md",
-    "last_updated": "2026-08-11T08:43:53.071099"
+    "last_updated": "2026-08-14T07:56:52.640087"
   },
   "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/sidebars.json": {
-    "hash": "5f75f4cb5a677422165cbb87d94155f4613b528c10fc125e194a55b8fb887ee1",
+    "hash": "fd594f51e122d42cf3e2d8cf62aba4299f9250cb1abc3655018427baf932a020",
     "file_path": "/home/runner/work/apple-dev-docs/apple-dev-docs/documentation/HIG/sidebars.md",
-    "last_updated": "2026-08-11T08:43:30.688217"
+    "last_updated": "2026-08-14T07:56:32.306994"
   },
   "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/tab-bars.json": {
-    "hash": "cbaadb720e3a12361b01e6564ed6d3a698a516740044069835e52296319555aa",
+    "hash": "68fb61df1c38fd7cdec928a3572f7b7fd02fdece90fea2f9fc6d0e086815aeb1",
     "file_path": "/home/runner/work/apple-dev-docs/apple-dev-docs/documentation/HIG/tab-bars.md",
-    "last_updated": "2026-08-11T08:43:53.255330"
+    "last_updated": "2026-08-14T07:56:52.811877"
   },
   "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/token-fields.json": {
-    "hash": "74c2eae8711372febfd25ac634be76338c76deee70b154aa7911f94e40b0446f",
+    "hash": "3365f9ec77e0bd9a4be3a5e64124d57f6f41c9cafb88b936d3254a3dbafc363a",
     "file_path": "/home/runner/work/apple-dev-docs/apple-dev-docs/documentation/HIG/token-fields.md",
-    "last_updated": "2026-08-11T08:43:53.433074"
+    "last_updated": "2026-08-14T07:56:52.982106"
   },
   "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/action-sheets.json": {
-    "hash": "54749a6ba2a291b804f79107bccea8a537d7e37af48da1bc81830062576b1c5f",
+    "hash": "9998a2974b90e4e10c274901fb2eaf1f875e0d45d4d88177afb8e871d6ba8b19",
     "file_path": "/home/runner/work/apple-dev-docs/apple-dev-docs/documentation/HIG/action-sheets.md",
-    "last_updated": "2026-08-11T08:43:53.611110"
+    "last_updated": "2026-08-14T07:56:53.155075"
   },
   "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/alerts.json": {
-    "hash": "37dd1e99ce1b95b58b58e7a794337a140576e41ba7c8501080f0e22f3e368f0c",
+    "hash": "fef4a8e5f3191c351a43b2cfd0206633994c1047024bbde0bff4ad8df8fe5871",
     "file_path": "/home/runner/work/apple-dev-docs/apple-dev-docs/documentation/HIG/alerts.md",
-    "last_updated": "2026-08-11T08:43:53.787816"
+    "last_updated": "2026-08-14T07:56:53.326331"
   },
   "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/page-controls.json": {
-    "hash": "9a51e6dc18e4128ce3780ff4a6baf822d9dca38e82bb23e56faa7aa993b8f9b8",
+    "hash": "e855a8c5daad8eabf7c0e9fc09c9ced28eeee7c8d79339a57c4bc0a794bab95c",
     "file_path": "/home/runner/work/apple-dev-docs/apple-dev-docs/documentation/HIG/page-controls.md",
-    "last_updated": "2026-08-11T08:43:53.964742"
+    "last_updated": "2026-08-14T07:56:53.435673"
   },
   "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/panels.json": {
-    "hash": "613e737d56e41ce3c6d94aa286d951478b039c95da7bbb94b3ea002b330292bb",
+    "hash": "1df3b34e68a1d355e39baab24e933c546e855d6171417d530de0d6caab0e43b7",
     "file_path": "/home/runner/work/apple-dev-docs/apple-dev-docs/documentation/HIG/panels.md",
-    "last_updated": "2026-08-11T08:43:54.140223"
+    "last_updated": "2026-08-14T07:56:53.604246"
   },
   "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/popovers.json": {
-    "hash": "efbe873e169a365efa3b82165b8ed18d7f024e570d2d16ad66f6e318cad5fa8e",
+    "hash": "1a861cd56fb739cf0bf10970622e13bc6bc2e0090f991a7014988e034ccf1f6a",
     "file_path": "/home/runner/work/apple-dev-docs/apple-dev-docs/documentation/HIG/popovers.md",
-    "last_updated": "2026-08-11T08:43:54.315358"
+    "last_updated": "2026-08-14T07:56:53.776403"
   },
   "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/scroll-views.json": {
-    "hash": "45d1cde1a522911be5a0f6630697746e2a352cec0df507abc2197e3930af66c8",
+    "hash": "dae03a6a13d73453b4d58f4d6012757dfa740aee15c10d843617ec3bc0419124",
     "file_path": "/home/runner/work/apple-dev-docs/apple-dev-docs/documentation/HIG/scroll-views.md",
-    "last_updated": "2026-08-11T08:43:30.187354"
+    "last_updated": "2026-08-14T07:56:31.890530"
   },
   "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/sheets.json": {
-    "hash": "23e66dba06bcd3fc29d488358b8dafeddf2138d346927933a1804f12c4e5b72e",
+    "hash": "aed885253d7b0819860197dc1cc58ccea4f201ddcaf16a9e6e12f6ba1fb4f949",
     "file_path": "/home/runner/work/apple-dev-docs/apple-dev-docs/documentation/HIG/sheets.md",
-    "last_updated": "2026-08-11T08:43:54.496659"
+    "last_updated": "2026-08-14T07:56:53.950625"
   },
   "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/windows.json": {
-    "hash": "995f4ee66c19581aa0e05cabb64189e273b9114ef56378665f37d58aeb357b27",
+    "hash": "c5d6414125967f9b4e443c7de00dad976ce1c9dc770f2607ed29e5712bd1531b",
     "file_path": "/home/runner/work/apple-dev-docs/apple-dev-docs/documentation/HIG/windows.md",
-    "last_updated": "2026-08-11T08:43:54.681726"
+    "last_updated": "2026-08-14T07:56:54.119159"
   },
   "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/color-wells.json": {
-    "hash": "67bdc96779dc10201152e0e95fa2d9d05253f11ac8b59593497880d3183dfcfc",
+    "hash": "1a6e368a7c6bbc2de2a933125b824067f1c1e3299acea4e8bfc2734372ccf308",
     "file_path": "/home/runner/work/apple-dev-docs/apple-dev-docs/documentation/HIG/color-wells.md",
-    "last_updated": "2026-08-11T08:43:54.859201"
+    "last_updated": "2026-08-14T07:56:54.291267"
   },
   "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/combo-boxes.json": {
-    "hash": "23cd3065ae262c2eb4347071eae0cc245f8e4bf777c6682722cc8b6425ee53f1",
+    "hash": "4d6fcefa91c2aeb20d1d6c95cfb22f4af3fc02434d6ff79d0af6c92184fb5fa3",
     "file_path": "/home/runner/work/apple-dev-docs/apple-dev-docs/documentation/HIG/combo-boxes.md",
-    "last_updated": "2026-08-11T08:43:55.029244"
+    "last_updated": "2026-08-14T07:56:54.463891"
   },
   "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/digit-entry-views.json": {
-    "hash": "ccd81ab5d28d8fda58219b141e2f39ad9cfeb908d45ae5659fcb7ebaa78eac5f",
+    "hash": "9320dc8b4382eff459f731f84c176a9acd915f3a242ab3902a9d5299ea7bd60e",
     "file_path": "/home/runner/work/apple-dev-docs/apple-dev-docs/documentation/HIG/digit-entry-views.md",
-    "last_updated": "2026-08-11T08:43:55.201516"
+    "last_updated": "2026-08-14T07:56:54.633229"
   },
   "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/image-wells.json": {
-    "hash": "1e8692d129c518052ba0ec038ff6ed8bf026b46400b73033697299c0f9ca0e71",
+    "hash": "71f98f5cb99fe641afbe60b808d6115486854e77d40899b837e89d083158b98b",
     "file_path": "/home/runner/work/apple-dev-docs/apple-dev-docs/documentation/HIG/image-wells.md",
-    "last_updated": "2026-08-11T08:43:55.375544"
+    "last_updated": "2026-08-14T07:56:54.803561"
   },
   "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/pickers.json": {
-    "hash": "0b4969bf897211531ed8911e67cfe330fa81f641acbddc4ea1f690f96515d221",
+    "hash": "94ca84368c1eb3c40f4c71ca096ba2cc8b32f0c00a93a154e58990dea3963e2a",
     "file_path": "/home/runner/work/apple-dev-docs/apple-dev-docs/documentation/HIG/pickers.md",
-    "last_updated": "2026-08-11T08:43:55.553687"
+    "last_updated": "2026-08-14T07:56:54.976020"
   },
   "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/segmented-controls.json": {
-    "hash": "189e7f9d70106bf27eae2efe7900c39b082a9a50d5a5b109f4f2728bfa020e95",
+    "hash": "ca6efced551265411d33942d5a2e8e990c623f667bcc8fc23aa6e5f8f53ceb22",
     "file_path": "/home/runner/work/apple-dev-docs/apple-dev-docs/documentation/HIG/segmented-controls.md",
-    "last_updated": "2026-08-11T08:43:55.732370"
+    "last_updated": "2026-08-14T07:56:55.150739"
   },
   "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/sliders.json": {
-    "hash": "ea5d368220a896489cf6d4a571476b9d35d7db8454ad9f45ce7bd15b30cc77d6",
+    "hash": "6aff0aa758401e7a382f5fc58487879d1028dac1fadc6dfc018d8be6397d7eef",
     "file_path": "/home/runner/work/apple-dev-docs/apple-dev-docs/documentation/HIG/sliders.md",
-    "last_updated": "2026-08-11T08:43:55.909269"
+    "last_updated": "2026-08-14T07:56:55.322481"
   },
   "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/steppers.json": {
-    "hash": "097d94377ad2e9c17d8beaa518b177cb99559ca057826cbd68c475cb7a66387a",
+    "hash": "fd8a569f29ec560e73cb630e5cde596cb596ad17dd837f7c5b388410e7160c81",
     "file_path": "/home/runner/work/apple-dev-docs/apple-dev-docs/documentation/HIG/steppers.md",
-    "last_updated": "2026-08-11T08:43:56.095324"
+    "last_updated": "2026-08-14T07:56:55.488271"
   },
   "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/text-fields.json": {
-    "hash": "55cfce3944a0bd77e05963a02641f38c7791fdf95508fa2f67c50af6d4402e08",
+    "hash": "650d3924a6178c6b3ec2d9767776559abb741a767b81249583d0e8a8d7a276f0",
     "file_path": "/home/runner/work/apple-dev-docs/apple-dev-docs/documentation/HIG/text-fields.md",
-    "last_updated": "2026-08-11T08:43:56.279005"
+    "last_updated": "2026-08-14T07:56:55.660632"
   },
   "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/toggles.json": {
-    "hash": "61daf16bb7c4462db6cf6b9b621ad4633125c2e3fa2159c738be6dc2f5a81b75",
+    "hash": "8f1588088083e1d649febdc5fdb8ada5c8aa174ee8c60477b55f677170d4f0d4",
     "file_path": "/home/runner/work/apple-dev-docs/apple-dev-docs/documentation/HIG/toggles.md",
-    "last_updated": "2026-08-11T08:43:56.457171"
+    "last_updated": "2026-08-14T07:56:55.832292"
   },
   "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/virtual-keyboards.json": {
-    "hash": "47c1fb38b7b993ca76b00055750970e6f8869e9e65995e02e181640bf9eb6c9c",
+    "hash": "41698a30aad23b4f8f85b398e67063456ece2274122cb0638916f60003121a2e",
     "file_path": "/home/runner/work/apple-dev-docs/apple-dev-docs/documentation/HIG/virtual-keyboards.md",
-    "last_updated": "2026-08-11T08:43:56.646339"
+    "last_updated": "2026-08-14T07:56:56.007591"
   },
   "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/activity-rings.json": {
-    "hash": "8f8ec70ddfa5236f9d8d84d1cd6686a01b777a6977a4da344a1e93ecbb5d9f78",
+    "hash": "58f1e280dc3ce3497c17726038390a1d027162753de2ce4e8b4f1ea03c81ad70",
     "file_path": "/home/runner/work/apple-dev-docs/apple-dev-docs/documentation/HIG/activity-rings.md",
-    "last_updated": "2026-08-11T08:43:56.822871"
+    "last_updated": "2026-08-14T07:56:56.178028"
   },
   "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/gauges.json": {
-    "hash": "2605797b23e0e1340605cf375cb95d8077a238bc6c19af9535da464ad68a0a2e",
+    "hash": "095fbb51933708dcfc3ba1be117ba87e88736153258f9b96ad6c3c4930ac0b3c",
     "file_path": "/home/runner/work/apple-dev-docs/apple-dev-docs/documentation/HIG/gauges.md",
-    "last_updated": "2026-08-11T08:43:56.995015"
+    "last_updated": "2026-08-14T07:56:56.349375"
   },
   "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/progress-indicators.json": {
-    "hash": "80549264aeb8441d00ff6bcfeb453f27d366a4bbed99ac0d37dd3aa76d77defa",
+    "hash": "31664d36f98c4ac8c86645642ef5bd7819bd34709c8466be965f193ee90a18fd",
     "file_path": "/home/runner/work/apple-dev-docs/apple-dev-docs/documentation/HIG/progress-indicators.md",
-    "last_updated": "2026-08-11T08:43:57.177261"
+    "last_updated": "2026-08-14T07:56:56.523197"
   },
   "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/rating-indicators.json": {
-    "hash": "913052b991f818c741f7ab1ad07362d2db771410bac5b6ef5d279d71ad25c819",
+    "hash": "021c3620bb76628163b2c388899055606b22ea6afb966490a79176910804b986",
     "file_path": "/home/runner/work/apple-dev-docs/apple-dev-docs/documentation/HIG/rating-indicators.md",
-    "last_updated": "2026-08-11T08:43:57.350361"
+    "last_updated": "2026-08-14T07:56:56.692684"
   },
   "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/app-shortcuts.json": {
-    "hash": "3828a27493de774088b353269a280e25613d9cfb93bafc3846d0d76a8fc53c62",
+    "hash": "7bbc0837df8d35b2029498d9e090f366675ff7981318dfbb8cce1194ae89c04c",
     "file_path": "/home/runner/work/apple-dev-docs/apple-dev-docs/documentation/HIG/app-shortcuts.md",
-    "last_updated": "2026-08-11T08:43:57.528627"
+    "last_updated": "2026-08-14T07:56:56.863340"
   },
   "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/complications.json": {
-    "hash": "d4f5075e420f7b3d52798f49832f149450c64b0d34f0056008131e07f443f73e",
+    "hash": "9faaafcf1131a15d1fe8b24737e84b5c49a609712c6c4f595431f551d2b43310",
     "file_path": "/home/runner/work/apple-dev-docs/apple-dev-docs/documentation/HIG/complications.md",
-    "last_updated": "2026-08-11T08:43:57.749749"
+    "last_updated": "2026-08-14T07:56:57.040470"
   },
   "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/controls.json": {
-    "hash": "5c5fabd46e93986b09d0cf5241d5013992484dc6734285cf4781ea3fe010062c",
+    "hash": "4dc1e2f7dc77d7c34f71f0675798cb4f77f8292304dfe9cf12fbb09c75e9bfe3",
     "file_path": "/home/runner/work/apple-dev-docs/apple-dev-docs/documentation/HIG/controls.md",
-    "last_updated": "2026-08-11T08:43:57.931466"
+    "last_updated": "2026-08-14T07:56:57.212802"
   },
   "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/live-activities.json": {
-    "hash": "06064fb6aef5f57d732a60e429cab784b76454fd6073027a95f50a7603199718",
+    "hash": "875ece0756e4f0ee8c2704c69d39c5bccdf6c933a3009f1987b3992bbaac3055",
     "file_path": "/home/runner/work/apple-dev-docs/apple-dev-docs/documentation/HIG/live-activities.md",
-    "last_updated": "2026-08-11T08:43:58.059573"
+    "last_updated": "2026-08-14T07:56:57.324473"
   },
   "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/notifications.json": {
-    "hash": "0623e3644c742140cd52c93a44b3b4d065d41269b472a4df0a60d3ca856015f4",
+    "hash": "f466e4f11b584497e8a78e3e3de17a83395a069b0c37f9ff38bf7d14d79ad750",
     "file_path": "/home/runner/work/apple-dev-docs/apple-dev-docs/documentation/HIG/notifications.md",
-    "last_updated": "2026-08-11T08:43:58.237845"
+    "last_updated": "2026-08-14T07:56:57.500916"
   },
   "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/status-bars.json": {
-    "hash": "4d3d9beab9c4acc04a68f2c4d4024199487a43632900455aa5b3dc5482faab94",
+    "hash": "9804821d515adceed2c0f965363e0269f01a5c75218bf3bf076f8ab410101049",
     "file_path": "/home/runner/work/apple-dev-docs/apple-dev-docs/documentation/HIG/status-bars.md",
-    "last_updated": "2026-08-11T08:43:58.414799"
+    "last_updated": "2026-08-14T07:56:57.669522"
   },
   "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/top-shelf.json": {
-    "hash": "2b7f1c12a6fd4d7965832d18c01758ec64dd3cee0e9460e5a73e0160699e614f",
+    "hash": "bce70fae25e27b2e3540f08f25ee144108a551e2f34ad98d03c17e0081477c4d",
     "file_path": "/home/runner/work/apple-dev-docs/apple-dev-docs/documentation/HIG/top-shelf.md",
-    "last_updated": "2026-08-11T08:43:58.591248"
+    "last_updated": "2026-08-14T07:56:57.836619"
   },
   "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/watch-faces.json": {
-    "hash": "cec28eebcdc03abed12b0a24927f9e5e5048ad8932021bd3d869a28d955af622",
+    "hash": "4a3c912f07425dfa436b95033e2bfad525ac79334dbe1092cda02706f76452ab",
     "file_path": "/home/runner/work/apple-dev-docs/apple-dev-docs/documentation/HIG/watch-faces.md",
-    "last_updated": "2026-08-11T08:43:58.762020"
+    "last_updated": "2026-08-14T07:56:58.004495"
   },
   "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/widgets.json": {
-    "hash": "842ee3bdc5918708611eed12dec8adbc97f3081ead3bcc6e645bbf00f24b7e47",
+    "hash": "b142e1010dab51012a493c1f9d25f932834b7a29fcdce891a7e31b9dc99d11d1",
     "file_path": "/home/runner/work/apple-dev-docs/apple-dev-docs/documentation/HIG/widgets.md",
-    "last_updated": "2026-08-11T08:43:58.893578"
+    "last_updated": "2026-08-14T07:56:58.182390"
   },
   "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/design-principles.json": {
-    "hash": "793911907365ab6b6668ef6841676231b2f726d3f6ca468fa30992cff5ad09f2",
+    "hash": "e0102c04b22044ddfee59a0733b307ebccff5022baec4e9401f72799c3dd6668",
     "file_path": "/home/runner/work/apple-dev-docs/apple-dev-docs/documentation/HIG/design-principles.md",
-    "last_updated": "2026-08-11T08:43:27.829059"
+    "last_updated": "2026-08-14T07:56:30.187252"
   },
   "https://developer.apple.com/tutorials/data/design/human-interface-guidelines/snippets.json": {
-    "hash": "f82edd7bddb693ddd4669c369863a154d58d38dedc996a75da76785b5d8463ea",
+    "hash": "8b696d277bd5bfd9f77618dbf8449449e0926be97548b6c008f2e4aad85592b0",
     "file_path": "/home/runner/work/apple-dev-docs/apple-dev-docs/documentation/HIG/snippets.md",
-    "last_updated": "2026-08-11T08:43:31.046053"
+    "last_updated": "2026-08-14T07:56:32.649066"
   }
 }

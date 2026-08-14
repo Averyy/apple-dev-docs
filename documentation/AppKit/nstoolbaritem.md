@@ -108,7 +108,7 @@ You can display your toolbar item’s content using a custom view if you prefer,
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Inherited By
 - [NSMenuToolbarItem](nsmenutoolbaritem.md)
 - [NSSearchToolbarItem](nssearchtoolbaritem.md)
@@ -116,19 +116,19 @@ You can display your toolbar item’s content using a custom view if you prefer,
 - [NSToolbarItemGroup](nstoolbaritemgroup.md)
 - [NSTrackingSeparatorToolbarItem](nstrackingseparatortoolbaritem.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [Copyable](../Swift/Copyable.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Escapable](../Swift/Escapable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCopying](../Foundation/NSCopying.md)
+- [CVarArg](../swift/cvararg.md)
+- [Copyable](../swift/copyable.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Escapable](../swift/escapable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCopying](../foundation/nscopying.md)
 - [NSMenuItemValidation](nsmenuitemvalidation.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 - [NSValidatedUserInterfaceItem](nsvalidateduserinterfaceitem.md)
-- [Sendable](../Swift/Sendable.md)
-- [UIPopoverPresentationControllerSourceItem](../UIKit/UIPopoverPresentationControllerSourceItem.md)
+- [Sendable](../swift/sendable.md)
+- [UIPopoverPresentationControllerSourceItem](../uikit/uipopoverpresentationcontrollersourceitem.md)
 
 ## See Also
 

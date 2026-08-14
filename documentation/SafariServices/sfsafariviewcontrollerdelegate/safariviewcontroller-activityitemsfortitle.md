@@ -18,11 +18,11 @@ optional func safariViewController(_ controller: SFSafariViewController, activit
 
 #### Return Value
 
-An array of application-specific services you have chosen to include in the [`UIActivityViewController`](https://developer.apple.com/documentation/UIKit/UIActivityViewController) object.
+An array of application-specific services you have chosen to include in the [`UIActivityViewController`](https://developer.apple.com/documentation/uikit/uiactivityviewcontroller) object.
 
 #### Discussion
 
-The view controller calls this method when the view is about to show an activity view controller. Your delegate can provide unique, application-specific services (such as a social media service) to be included with the system-provided sharing services. See [`UIActivity`](https://developer.apple.com/documentation/UIKit/UIActivity).
+The view controller calls this method when the view is about to show an activity view controller. Your delegate can provide unique, application-specific services (such as a social media service) to be included with the system-provided sharing services. See [`UIActivity`](https://developer.apple.com/documentation/uikit/uiactivity).
 
 ## Parameters
 

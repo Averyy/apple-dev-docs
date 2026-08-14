@@ -22,7 +22,7 @@ After you receive permission to use the entitlement, add [`com.apple.developer.u
 
 ##### Silence Push Notifications
 
-To suppress a notification’s alert, create an empty [`UNNotificationContent`](https://developer.apple.com/documentation/UserNotifications/UNNotificationContent) object in your extension’s [`didReceive(_:withContentHandler:)`](https://developer.apple.com/documentation/UserNotifications/UNNotificationServiceExtension/didReceive(_:withContentHandler:)) method, and pass it to the content handler. Don’t specify a title, subtitle, body, attachments, or sound for the content.
+To suppress a notification’s alert, create an empty [`UNNotificationContent`](https://developer.apple.com/documentation/usernotifications/unnotificationcontent) object in your extension’s [`didReceive(_:withContentHandler:)`](https://developer.apple.com/documentation/usernotifications/unnotificationserviceextension/didreceive(_:withcontenthandler:)) method, and pass it to the content handler. Don’t specify a title, subtitle, body, attachments, or sound for the content.
 
 ```swift
 override func didReceive(_ request: UNNotificationRequest, withContentHandler contentHandler: @escaping (UNNotificationContent) -> Void) {

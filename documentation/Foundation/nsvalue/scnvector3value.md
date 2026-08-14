@@ -22,7 +22,7 @@ var scnVector3Value: SCNVector3 { get }
 
 ## See Also
 
-- [struct SCNVector3](../SceneKit/SCNVector3.md)
+- [struct SCNVector3](../scenekit/scnvector3.md)
   A representation of a three-component vector.
 - [init(SCNVector3: SCNVector3)](nsvalue/init(scnvector3:).md)
   Creates a value object that contains the specified three-element SceneKit vector.

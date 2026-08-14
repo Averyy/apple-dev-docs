@@ -23,7 +23,7 @@ protocol Component
 
 You assemble a particular combination of behavior and appearance for an entity by adding components to the [`components`](entity/components.md) set of an [`Entity`](entity.md) instance. Each component, represented by a type that conforms to the [`Component`](component.md) protocol, defines a single aspect of the entity. For example, one might define a position in space, while another provides a visual appearance. You can add at most one component of a given type to an entity.
 
-![Diagram showing the components present in different kinds of](https://docs-assets.developer.apple.com/published/96d2fd3bd0efc9b6465eba71a243dbc7/Component-1%402x.png)
+![Diagram showing the components present in different kinds of](/images/com.apple.RealityKit/Component-1@2x.png)
 
 RealityKit has a variety of predefined component types that you can use to add commonly needed characteristics. For example, the [`ModelComponent`](modelcomponent.md) specifies visual appearance with a mesh and materials. The [`CollisionComponent`](collisioncomponent.md) contains a shape and other information used to decide if one entity collides with another.
 
@@ -141,7 +141,7 @@ You can also define custom component types. When you do, register that type with
 
 ## See Also
 
-- [Understanding the modular architecture of RealityKit](../visionOS/understanding-the-realitykit-modular-architecture.md)
+- [Understanding the modular architecture of RealityKit](../visionos/understanding-the-realitykit-modular-architecture.md)
   Learn how everything fits together in RealityKit.
 - [Building an immersive experience with RealityKit](building-an-immersive-experience-with-realitykit.md)
   Use systems and postprocessing effects to create a realistic underwater scene.

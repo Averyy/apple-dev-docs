@@ -24,7 +24,7 @@ case lighten
 
 The following image shows the result of compositing using the lighten blend mode:
 
-![Graphic showing the lighten blend mode composite operation.](https://docs-assets.developer.apple.com/published/2eb6c157289d94e6fc5c6b2f023df06e/media-3958276%402x.png)
+![Graphic showing the lighten blend mode composite operation.](/images/com.apple.accelerate/media-3958276@2x.png)
 
 The top-left quadrant in the result is white because no pixels in the bottom layer are brighter than the corresponding pixels in the top layer.
 

@@ -27,11 +27,11 @@ Values of this type define the position of the pixel coordinate origin point (`0
 
 For example, the pixel data for an image captured by an iOS device camera is encoded in the camera sensor’s native landscape orientation. When the user captures a photo while holding the device in portrait orientation, iOS writes an orientation value of [`CGImagePropertyOrientation.right`](cgimagepropertyorientation/right.md) in the resulting image file. Software displaying the image can then, after reading that value from the file’s metadata, apply a 90° clockwise rotation to the image data so that the image appears in the photographer’s intended orientation.
 
-![To correct an image with right orientation for display, rotate it 90° clockwise.](https://docs-assets.developer.apple.com/published/a4de8a358cbf9a76800cc595fceb8892/media-2948298%402x.png)
+![To correct an image with right orientation for display, rotate it 90° clockwise.](/images/com.apple.imageio/media-2948298@2x.png)
 
 ##### Compatibility with Uiimageorientation
 
-The [`CGImagePropertyOrientation`](cgimagepropertyorientation.md) type covers the same set of orientation names available in from the [`UIImage.Orientation`](https://developer.apple.com/documentation/UIKit/UIImage/Orientation) type, but the underlying numeric values of each type do not match. (For example, the “left mirrored” orientation has an underlying value of 5 in [`CGImagePropertyOrientation`](cgimagepropertyorientation.md), but an underlying value of 7 in [`UIImage.Orientation`](https://developer.apple.com/documentation/UIKit/UIImage/Orientation).) If you have an orientation value in one type and need a semantically equivalent value in the other, use a function such as those below to produce the same-named value in the other type:
+The [`CGImagePropertyOrientation`](cgimagepropertyorientation.md) type covers the same set of orientation names available in from the [`UIImage.Orientation`](https://developer.apple.com/documentation/uikit/uiimage/orientation) type, but the underlying numeric values of each type do not match. (For example, the “left mirrored” orientation has an underlying value of 5 in [`CGImagePropertyOrientation`](cgimagepropertyorientation.md), but an underlying value of 7 in [`UIImage.Orientation`](https://developer.apple.com/documentation/uikit/uiimage/orientation).) If you have an orientation value in one type and need a semantically equivalent value in the other, use a function such as those below to produce the same-named value in the other type:
 
 **Swift**:
 
@@ -101,7 +101,7 @@ UIImageOrientation UIImageOrientationForCGImagePropertyOrientation(CGImageProper
 
 ##### Working with Raw Tiffexif Numeric Values
 
-Some APIs describe image orientation with basic integer values, intended for interpretation according to the TIFF and Exif specifications. The [`CGImagePropertyOrientation`](cgimagepropertyorientation.md) type simply defines symbolic names for those values, so you can convert to and from the raw numeric type with C type-cast syntax or the inherited [`init(rawValue:)`](https://developer.apple.com/documentation/Swift/RawRepresentable/init(rawValue:)) initializer and [`rawValue`](https://developer.apple.com/documentation/Swift/RawRepresentable/rawValue-swift.property) property in Swift.
+Some APIs describe image orientation with basic integer values, intended for interpretation according to the TIFF and Exif specifications. The [`CGImagePropertyOrientation`](cgimagepropertyorientation.md) type simply defines symbolic names for those values, so you can convert to and from the raw numeric type with C type-cast syntax or the inherited [`init(rawValue:)`](https://developer.apple.com/documentation/swift/rawrepresentable/init(rawvalue:)) initializer and [`rawValue`](https://developer.apple.com/documentation/swift/rawrepresentable/rawvalue-swift.property) property in Swift.
 
 ## Topics
 
@@ -128,12 +128,12 @@ Some APIs describe image orientation with basic integer values, intended for int
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../Swift/BitwiseCopyable.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [RawRepresentable](../Swift/RawRepresentable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [BitwiseCopyable](../swift/bitwisecopyable.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [RawRepresentable](../swift/rawrepresentable.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

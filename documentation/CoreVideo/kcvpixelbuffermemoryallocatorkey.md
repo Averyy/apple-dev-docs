@@ -22,7 +22,7 @@ let kCVPixelBufferMemoryAllocatorKey: CFString
 
 #### Discussion
 
-The value for this key is of type [`CFAllocator`](https://developer.apple.com/documentation/CoreFoundation/CFAllocator).
+The value for this key is of type [`CFAllocator`](https://developer.apple.com/documentation/corefoundation/cfallocator).
 
 ## See Also
 

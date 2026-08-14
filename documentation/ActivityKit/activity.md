@@ -21,7 +21,7 @@ class Activity<Attributes> where Attributes : ActivityAttributes
 
 #### Overview
 
-The `Activity` object offers functionality to start, update, and end a Live Activity from within your app. You can update or end a Live Activity while your app is in the background, but you can only start a Live Activity while the app is in the foreground, unless you adopt [`App Intents`](https://developer.apple.com/documentation/AppIntents) and start the Live Activity using a [`LiveActivityIntent`](https://developer.apple.com/documentation/AppIntents/LiveActivityIntent).
+The `Activity` object offers functionality to start, update, and end a Live Activity from within your app. You can update or end a Live Activity while your app is in the background, but you can only start a Live Activity while the app is in the foreground, unless you adopt [`App Intents`](https://developer.apple.com/documentation/appintents) and start the Live Activity using a [`LiveActivityIntent`](https://developer.apple.com/documentation/appintents/liveactivityintent).
 
 Additionally, `Activity` offers functionality to observe changes to:
 
@@ -120,7 +120,7 @@ To observe these changes, use the asynchronous sequences the activity object off
 ## Relationships
 
 ### Conforms To
-- [Identifiable](../Swift/Identifiable.md)
+- [Identifiable](../swift/identifiable.md)
 
 ## See Also
 
@@ -128,11 +128,11 @@ To observe these changes, use the asynchronous sequences the activity object off
   Display up-to-date data and offer quick interactions in the Dynamic Island, on the Lock Screen, in CarPlay, and on a paired Mac or Apple Watch.
 - [Starting and updating Live Activities with ActivityKit push notifications](starting-and-updating-live-activities-with-activitykit-push-notifications.md)
   Use ActivityKit to receive push tokens and to remotely start, update, and end your Live Activity with ActivityKit notifications.
-- [Emoji Rangers: Supporting Live Activities, interactivity, and animations](../WidgetKit/emoji-rangers-supporting-live-activities-interactivity-and-animations.md)
+- [Emoji Rangers: Supporting Live Activities, interactivity, and animations](../widgetkit/emoji-rangers-supporting-live-activities-interactivity-and-animations.md)
   Offer Live Activities, controls, animate data updates, and add interactivity to widgets.
-- [NSSupportsLiveActivities](../BundleResources/Information-Property-List/NSSupportsLiveActivities.md)
+- [NSSupportsLiveActivities](../bundleresources/information-property-list/nssupportsliveactivities.md)
   A Boolean value that indicates whether an app supports Live Activities.
-- [NSSupportsLiveActivitiesFrequentUpdates](../BundleResources/Information-Property-List/NSSupportsLiveActivitiesFrequentUpdates.md)
+- [NSSupportsLiveActivitiesFrequentUpdates](../bundleresources/information-property-list/nssupportsliveactivitiesfrequentupdates.md)
   A Boolean value that indicates whether an app can update its Live Activities frequently.
 
 

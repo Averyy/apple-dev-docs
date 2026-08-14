@@ -36,9 +36,9 @@ Initial beta release for preview.
 
 ## See Also
 
-- [Creating API keys to authorize API requests](../AppStoreServerAPI/creating-api-keys-to-authorize-api-requests.md)
+- [Creating API keys to authorize API requests](../appstoreserverapi/creating-api-keys-to-authorize-api-requests.md)
   Create API keys you use to sign JSON Web Tokens and authorize API requests.
-- [Generating JSON Web Tokens for API requests](../AppStoreServerAPI/generating-json-web-tokens-for-api-requests.md)
+- [Generating JSON Web Tokens for API requests](../appstoreserverapi/generating-json-web-tokens-for-api-requests.md)
   Create JSON Web Tokens signed with your private key to authorize requests for App Store Server API and External Purchase Server API.
 
 

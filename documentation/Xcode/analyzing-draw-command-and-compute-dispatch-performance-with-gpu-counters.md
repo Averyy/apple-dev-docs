@@ -8,7 +8,7 @@ Identify issues within your frame capture by examining performance counters.
 
 The Performance Statistics viewer displays counters to help you understand the automatically generated insights for hotspots and bottlenecks so you can improve GPU performance. GPU performance counters are granular statistics that relate to the specific render, compute, or blit work your app performed in the captured frame.
 
-![A screenshot of the Performance Statistics viewer displaying GPU counters in a table.](https://docs-assets.developer.apple.com/published/4a21de0331a63c45e37a896ccf281ac6/gputools-metal-debugger-pv-overview%402x.png)
+![A screenshot of the Performance Statistics viewer displaying GPU counters in a table.](/images/com.apple.Xcode/gputools-metal-debugger-pv-overview@2x.png)
 
 ##### Show Columns for Performance Counters
 
@@ -24,7 +24,7 @@ Control-click a column header to show and hide counter value columns for median,
 
 Move the pointer over a counter to reveal its description.
 
-![A screenshot showing the tooltip for a counter when the pointer hovers over a table row.](https://docs-assets.developer.apple.com/published/4c14715a3898060fa86acf3162d51422/gputools-metal-debugger-pv-tooltip%402x.png)
+![A screenshot showing the tooltip for a counter when the pointer hovers over a table row.](/images/com.apple.Xcode/gputools-metal-debugger-pv-tooltip@2x.png)
 
 By analyzing values that may be hotspots, counters can suggest a specific cause of your app’s performance problem. For example, if the number of vertices is twice as high as you expect, it’s likely that your code has duplicate meshes or render encoder draw calls.
 

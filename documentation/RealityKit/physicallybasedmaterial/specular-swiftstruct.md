@@ -23,7 +23,7 @@ struct Specular
 
 RealityKit automatically draws *specular highlights* for physically based materials, using the values of various properties, primarily [`roughness`](physicallybasedmaterial/roughness-swift.property.md) and [`metallic`](physicallybasedmaterial/metallic-swift.property.md). Specular highlights are bright spots of reflected light that appear on shiny objects.
 
-![An illustration showing a sphere and a cube with rounded corners. Both](https://docs-assets.developer.apple.com/published/0b83dd2d5721a30ef708e7bf6420620b/PhysicallyBasedMaterial-Specular-swift-struct-1%402x.png)
+![An illustration showing a sphere and a cube with rounded corners. Both](/images/com.apple.RealityKit/PhysicallyBasedMaterial-Specular-swift-struct-1@2x.png)
 
 Although many real-world objects can be accurately and realistically simulated with just the core physically based rendering (PBR) properties, you can create additional realistic effects by augmenting the specular highlights.
 
@@ -49,7 +49,7 @@ Use this object to specify the amount of [`specular`](physicallybasedmaterial/sp
 ## Relationships
 
 ### Conforms To
-- [ExpressibleByFloatLiteral](../Swift/ExpressibleByFloatLiteral.md)
+- [ExpressibleByFloatLiteral](../swift/expressiblebyfloatliteral.md)
 
 ## See Also
 
@@ -57,7 +57,7 @@ Use this object to specify the amount of [`specular`](physicallybasedmaterial/sp
   Enhance the appearance of objects in a RealityKit scene with Physically Based Rendering (PBR).
 - [Rendering high-fidelity characters](rendering-high-fidelity-characters.md)
   Configure material and lighting properties to avoid flat, dull skin and static hair on your characters.
-- [Generating procedural textures](../visionOS/generating-procedural-textures-in-visionos.md)
+- [Generating procedural textures](../visionos/generating-procedural-textures-in-visionos.md)
   Display a 3D model that generates procedural textures in a reality view.
 - [struct PhysicallyBasedMaterial](physicallybasedmaterial.md)
   A material that simulates the appearance of real-world objects.

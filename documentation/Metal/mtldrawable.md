@@ -28,7 +28,7 @@ protocol MTLDrawable : NSObjectProtocol
 
 Objects that implement this protocol are connected both to the Metal framework and an underlying display system (such as Core Animation) that’s capable of showing content onscreen. You use drawable objects when you want to render images using Metal and present them onscreen.
 
-Don’t implement this protocol yourself; instead, see [`CAMetalLayer`](https://developer.apple.com/documentation/QuartzCore/CAMetalLayer), for a class that can create and manage drawable objects for you.
+Don’t implement this protocol yourself; instead, see [`CAMetalLayer`](https://developer.apple.com/documentation/quartzcore/cametallayer), for a class that can create and manage drawable objects for you.
 
 ## Topics
 
@@ -51,7 +51,7 @@ Don’t implement this protocol yourself; instead, see [`CAMetalLayer`](https://
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

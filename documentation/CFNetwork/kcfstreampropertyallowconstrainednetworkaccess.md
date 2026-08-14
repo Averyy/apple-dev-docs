@@ -21,7 +21,7 @@ let kCFStreamPropertyAllowConstrainedNetworkAccess: CFString
 
 #### Discussion
 
-The default value is [`kCFBooleanTrue`](https://developer.apple.com/documentation/CoreFoundation/kCFBooleanTrue) and allows the use of constrained interfaces. Set this property to [`kCFBooleanFalse`](https://developer.apple.com/documentation/CoreFoundation/kCFBooleanFalse) to disallow the use of constrained interfaces. For more information about constrained interfaces, see [`allowsConstrainedNetworkAccess`](https://developer.apple.com/documentation/Foundation/URLSessionConfiguration/allowsConstrainedNetworkAccess).
+The default value is [`kCFBooleanTrue`](https://developer.apple.com/documentation/corefoundation/kcfbooleantrue) and allows the use of constrained interfaces. Set this property to [`kCFBooleanFalse`](https://developer.apple.com/documentation/corefoundation/kcfbooleanfalse) to disallow the use of constrained interfaces. For more information about constrained interfaces, see [`allowsConstrainedNetworkAccess`](https://developer.apple.com/documentation/foundation/urlsessionconfiguration/allowsconstrainednetworkaccess).
 
 ## See Also
 

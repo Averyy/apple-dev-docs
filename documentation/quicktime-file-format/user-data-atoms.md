@@ -55,10 +55,10 @@ The user data list entry types are as follows.
 | `'hinf'` | Hint track information—statistical data for real-time streaming of a particular track. For more information, see Hint Track User Data Atom in [`Hint media`](hint_media.md). |  |
 | `'hnti'` | Hint info atom—data used for real-time streaming of a movie or a track. For more information, see Movie Hint Info Atom and Hint Track User Data Atom in [`Hint media`](hint_media.md). |  |
 | `'name'` | Name of object |  |
-| `'tnam'` | Localized track name optionally present in Track user data. The payload is described in [`Track name atom ('tnam')`](track_name_atom.md). |  |
+| `'tnam'` | Localized track name optionally present in Track user data. The payload is described in [`Track name atom`](track_name_atom.md). |  |
 | `'tagc'` | Media characteristic optionally present in Track user data—specialized text that describes something of interest about the track. For more information, see Media Characteristic Tags below. |  |
 | `'LOOP'` | Long integer indicating looping style. This atom is not present unless the movie is set to loop. Values are 0 for normal looping, 1 for palindromic looping. |  |
-| `'ptv '` | Print to video — display movie in full screen mode. This atom contains a 16-byte structure, described in [`Print to video atom ('ptv ')`](print_to_video_atom.md). |  |
+| `'ptv '` | Print to video — display movie in full screen mode. This atom contains a 16-byte structure, described in [`Print to video atom`](print_to_video_atom.md). |  |
 | `'SelO'` | Play selection only—byte indicating that only the selected area of the movie should be played |  |
 | `'WLOC'` | Default window location for movie—two 16-bit values, `{x,y}` |  |
 

@@ -18,7 +18,7 @@ The code in this article shows the use of list views to display a company’s st
 
 ##### Prepare Your Data for Iteration
 
-The most common use of [`List`](list.md) is for representing collections of information in your data model. The following example defines a `Person` as an [`Identifiable`](https://developer.apple.com/documentation/Swift/Identifiable) type with the properties `name` and `phoneNumber`. An array called `staff` contains two instances of this type.
+The most common use of [`List`](list.md) is for representing collections of information in your data model. The following example defines a `Person` as an [`Identifiable`](https://developer.apple.com/documentation/swift/identifiable) type with the properties `name` and `phoneNumber`. An array called `staff` contains two instances of this type.
 
 ```swift
 struct Person: Identifiable {
@@ -47,11 +47,11 @@ struct StaffList: View {
 }
 ```
 
-![A screenshot of a list view, showing a vertical list with two text entries: Juan Chavez and Mei Chen.](https://docs-assets.developer.apple.com/published/b7ac6995caa6809ee5b708eaeb6cc6c2/Displaying-Data-in-Lists-plain-cells%402x.png)
+![A screenshot of a list view, showing a vertical list with two text entries: Juan Chavez and Mei Chen.](/images/com.apple.SwiftUI/Displaying-Data-in-Lists-plain-cells@2x.png)
 
-Members of a list must be uniquely identifiable from one another. Unique identifiers allow SwiftUI to automatically generate animations for changes in the underlying data, like inserts, deletions, and moves. Identify list members either by using a type that conforms to [`Identifiable`](https://developer.apple.com/documentation/Swift/Identifiable), as `Person` does, or by providing an `id` parameter with the key path to a unique property of the type. The `ForEach` that populates the list above depends on this behavior, as do the `List` initializers that take a [`RandomAccessCollection`](https://developer.apple.com/documentation/Swift/RandomAccessCollection) of members to iterate over.
+Members of a list must be uniquely identifiable from one another. Unique identifiers allow SwiftUI to automatically generate animations for changes in the underlying data, like inserts, deletions, and moves. Identify list members either by using a type that conforms to [`Identifiable`](https://developer.apple.com/documentation/swift/identifiable), as `Person` does, or by providing an `id` parameter with the key path to a unique property of the type. The `ForEach` that populates the list above depends on this behavior, as do the `List` initializers that take a [`RandomAccessCollection`](https://developer.apple.com/documentation/swift/randomaccesscollection) of members to iterate over.
 
-> ❗ **Important**: The values you use for [`Identifiable`](https://developer.apple.com/documentation/Swift/Identifiable) data must be unique. Using a [`UUID`](https://developer.apple.com/documentation/Foundation/UUID) or a database row identifier are both good choices, whereas using data like a person’s name or phone number could potentially contain duplicates.
+> ❗ **Important**: The values you use for [`Identifiable`](https://developer.apple.com/documentation/swift/identifiable) data must be unique. Using a [`UUID`](https://developer.apple.com/documentation/foundation/uuid) or a database row identifier are both good choices, whereas using data like a person’s name or phone number could potentially contain duplicates.
 
 ##### Display Data Inside a Row
 
@@ -88,7 +88,7 @@ struct StaffList: View {
 }
 ```
 
-![A list with two entries, each showing a name and phone number. Each list item has a two-line cell. The first line shows the name in bold. The second shows a phone icon, followed by the phone number with a plain font and a lighter color.](https://docs-assets.developer.apple.com/published/2c8fd98f381f2e586664d0aac49327c9/Displaying-Data-in-Lists-custom-cells%402x.png)
+![A list with two entries, each showing a name and phone number. Each list item has a two-line cell. The first line shows the name in bold. The second shows a phone icon, followed by the phone number with a plain font and a lighter color.](/images/com.apple.SwiftUI/Displaying-Data-in-Lists-custom-cells@2x.png)
 
 For more information on composing the types of views commonly used inside list rows, see [`Building layouts with stack views`](building-layouts-with-stack-views.md).
 
@@ -140,7 +140,7 @@ List {
  }
 ```
 
-![A list with sections. The first has a section header with the title Sales, followed by four person entries as individual rows in this section. The next section, Engineering, contains four entries, followed by Customer Service with two entries.](https://docs-assets.developer.apple.com/published/6528d234e95ba5a58e468d77e45f1024/Displaying-Data-in-Lists-sections%402x.png)
+![A list with sections. The first has a section header with the title Sales, followed by four person entries as individual rows in this section. The next section, Engineering, contains four entries, followed by Customer Service with two entries.](/images/com.apple.SwiftUI/Displaying-Data-in-Lists-sections@2x.png)
 
 > **Note**: If your data hierarchy is too deep to represent with a single level of sections and rows, [`OutlineGroup`](outlinegroup.md) and [`DisclosureGroup`](disclosuregroup.md) might be a better fit. These views use a disclosure metaphor to allow someone to drill down to an arbitrary depth in the hierarchy.
 

@@ -56,7 +56,7 @@ struct ShowLicenseAgreement: View {
 }
 ```
 
-![A screenshot of a full-screen modal sheet showing the mockup of a](https://docs-assets.developer.apple.com/published/1f086a26afa553b6877f59b2b320cd85/SwiftUI-View-SheetIsPresentingContent%402x.png)
+![A screenshot of a full-screen modal sheet showing the mockup of a](/images/com.apple.SwiftUI/SwiftUI-View-SheetIsPresentingContent@2x.png)
 
 In vertically compact environments, such as iPhone in landscape orientation, a sheet presentation automatically adapts to appear as a full-screen cover. Use the [`presentationCompactAdaptation(_:)`](view/presentationcompactadaptation(_:).md) or [`presentationCompactAdaptation(horizontal:vertical:)`](view/presentationcompactadaptation(horizontal:vertical:).md) modifier to override this behavior.
 

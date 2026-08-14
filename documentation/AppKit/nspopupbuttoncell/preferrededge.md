@@ -16,7 +16,7 @@ var preferredEdge: NSRectEdge { get set }
 
 #### Discussion
 
-At display time, if attaching the menu to the preferred edge would cause part of the menu to be obscured, the pop-up button may use a different edge. If no preferred edge is set, the pop-up button uses the bottom edge by default, which is [`NSMaxYEdge`](https://developer.apple.com/documentation/Foundation/NSRectEdge/NSMaxYEdge) for flipped views or [`NSMinYEdge`](https://developer.apple.com/documentation/Foundation/NSRectEdge/NSMinYEdge) for unflipped views. Additional values for this property include [`NSMinXEdge`](https://developer.apple.com/documentation/Foundation/NSRectEdge/NSMinXEdge) and [`NSMaxXEdge`](https://developer.apple.com/documentation/Foundation/NSRectEdge/NSMaxXEdge).
+At display time, if attaching the menu to the preferred edge would cause part of the menu to be obscured, the pop-up button may use a different edge. If no preferred edge is set, the pop-up button uses the bottom edge by default, which is [`NSMaxYEdge`](https://developer.apple.com/documentation/foundation/nsrectedge/nsmaxyedge) for flipped views or [`NSMinYEdge`](https://developer.apple.com/documentation/foundation/nsrectedge/nsminyedge) for unflipped views. Additional values for this property include [`NSMinXEdge`](https://developer.apple.com/documentation/foundation/nsrectedge/nsminxedge) and [`NSMaxXEdge`](https://developer.apple.com/documentation/foundation/nsrectedge/nsmaxxedge).
 
 The exact location of the arrow is determined by examining the value of this property and [`arrowPosition`](nspopupbuttoncell/arrowposition.md).
 

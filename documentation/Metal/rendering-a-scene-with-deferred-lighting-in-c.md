@@ -16,7 +16,7 @@ Avoid expensive lighting calculations by implementing a deferred lighting render
 
 This sample demonstrates a deferred lighting renderer that implements shadows using a shadow map, and culls light volumes using the stencil buffer.
 
-![Screenshot of the sample app running to show the rich lighting effects.](https://docs-assets.developer.apple.com/published/b57c4c654a8c9cf836ff539a70bfeb59/deferred-lighting-cpp-1-DeferredLighting%402x.png)
+![Screenshot of the sample app running to show the rich lighting effects.](/images/com.apple.metal/deferred-lighting-cpp-1-DeferredLighting@2x.png)
 
 Deferred lighting can render a large number of lights more easily than forward lighting. For example, with forward lighting, in a scene with many lights, it’s infeasible for every fragment to calculate the contribution of every light. Complex sorting and binning algorithms need to be implemented to limit the calculation of light contributions to only those lights affecting each fragment. With deferred lighting, multiple lights can be applied to the scene with ease.
 
@@ -66,7 +66,7 @@ A traditional deferred lighting renderer is typically separated into two render 
 - **First pass: Geometry buffer rendering.** The renderer draws and transforms the scene’s models, and the fragment function renders the results to a collection of textures known as the *geometry buffer* or *g-buffer*. The geometry buffer contains material colors from the models, as well as per-fragment normal, shadow, and depth values.
 - **Second pass: Deferred lighting and composition.** The renderer draws each light volume, using the geometry buffer data to reconstruct the position of each fragment and apply the lighting calculations. As the lights are drawn, the output of each light is blended on top of the previous light outputs. Finally, the renderer composites other data, such as shadows and directional lighting, onto the scene by executing a full-screen quad or a compute kernel.
 
-![Diagram showing the outputs of the two render passes in a traditional deferred lighting algorithm.](https://docs-assets.developer.apple.com/published/bb16b6059e1d10fa353fb7491b0fa3c4/deferred-lighting-cpp-2-TraditionalDeferredLighting%402x.png)
+![Diagram showing the outputs of the two render passes in a traditional deferred lighting algorithm.](/images/com.apple.metal/deferred-lighting-cpp-2-TraditionalDeferredLighting@2x.png)
 
 > **Note**: Some macOS GPUs have an *immediate mode rendering* (IMR) architecture. On IMR GPUs, a deferred lighting renderer can only be implemented with at least two render passes. Therefore, the sample implements a two-pass deferred lighting algorithm for the macOS version of the app. The iOS and tvOS simulators run on macOS Metal implementations so these also use the two-pass deferred lighting algorithm.
 
@@ -79,13 +79,13 @@ Apple silicon GPUs, found on all iOS and tvOS device and now certain macOS devic
 
 When `MTLStoreActionStore` is set as a store action, output data for the render targets of a render pass is written from tile memory to system memory, where the render targets are backed by textures. If this data is then used for a subsequent render pass, input data from these textures is read from system memory into a texture cache in the GPU. Therefore, a traditional deferred lighting renderer that accesses system memory requires geometry buffer data to be stored in system memory between the first and second render passes.
 
-![Diagram showing how geometry buffer data in a traditional deferred lighting algorithm is transferred between the GPU and system memory.](https://docs-assets.developer.apple.com/published/f2c124cf30e70158df0c358057d5526c/deferred-lighting-cpp-3-TraditionalDeferredLightingOnTBDR%402x.png)
+![Diagram showing how geometry buffer data in a traditional deferred lighting algorithm is transferred between the GPU and system memory.](/images/com.apple.metal/deferred-lighting-cpp-3-TraditionalDeferredLightingOnTBDR@2x.png)
 
 However, because of the TBDR architecture, Apple silicon GPUs can also read data from tile memory at any given time. This allows fragment shaders to read from and perform calculations on render targets in tile memory, before this data is written to tile memory again. This feature allows the sample to avoid storing geometry buffer data in system memory between the first and second render passes; thus, a deferred lighting renderer can be implemented with a single render pass.
 
 Geometry buffer data is produced and consumed exclusively by the GPU, not the CPU, within the single render pass. Therefore, this data isn’t loaded from system memory before the render pass begins, nor is it stored in system memory after the render pass finishes. Instead of reading geometry buffer data from a texture in system memory, the lighting fragment functions read data from the geometry buffer while it’s still attached to the render pass as a render target. Thus, system memory doesn’t need to be allocated for geometry buffer textures, and each of these textures can be declared with a `MTLStorageModeMemoryless` storage mode.
 
-![Diagram showing how geometry buffer data in a single-pass deferred lighting algorithm is accessed in tile memory.](https://docs-assets.developer.apple.com/published/ef0f59c934f11dc0faad9b37bfe5d269/deferred-lighting-cpp-4-SinglePassDeferredLightingOnTBDR%402x.png)
+![Diagram showing how geometry buffer data in a single-pass deferred lighting algorithm is accessed in tile memory.](/images/com.apple.metal/deferred-lighting-cpp-4-SinglePassDeferredLightingOnTBDR@2x.png)
 
 > **Note**: The feature that allows a TBDR GPU to read from attached render targets in a fragment function is also known as *programmable blending*.
 
@@ -93,11 +93,11 @@ Geometry buffer data is produced and consumed exclusively by the GPU, not the CP
 
 By default, when a fragment shader writes data to a pixel, the GPU waits until the shader has completely finished writing to that pixel before beginning the execution of another fragment shader for that same pixel.
 
-![Diagram showing two lights executed by a fragment shader, without raster order groups.](https://docs-assets.developer.apple.com/published/82a3a4f44d2a51fdead28bb54a2eda50/deferred-lighting-cpp-5-DeferredLightingWithoutRasterOrderGroups%402x.png)
+![Diagram showing two lights executed by a fragment shader, without raster order groups.](/images/com.apple.metal/deferred-lighting-cpp-5-DeferredLightingWithoutRasterOrderGroups@2x.png)
 
 Raster order groups allow apps to increase the parallelization of the GPU’s fragment shaders. With raster order groups, a fragment function can separate render targets into different execution groups. This separation allows the GPU to read from and perform calculations on render targets in one group, before a previous instance of a fragment shader has finished writing data to pixels in another group.
 
-![Diagram showing two lights executed by a fragment shader, with raster order groups.](https://docs-assets.developer.apple.com/published/4bc70e042db17895e6cec98e56ea7b76/deferred-lighting-cpp-6-DeferredLightingWithRasterOrderGroups%402x.png)
+![Diagram showing two lights executed by a fragment shader, with raster order groups.](/images/com.apple.metal/deferred-lighting-cpp-6-DeferredLightingWithRasterOrderGroups@2x.png)
 
 In this sample, some lighting fragment functions use these raster order groups:
 
@@ -171,7 +171,7 @@ pRenderEncoder->endEncoding();
 
 The sample renders a shadow map for the single directional light in the scene (the sun) by rendering the model from the light’s perspective.
 
-![Rendering that shows the shadow map.](https://docs-assets.developer.apple.com/published/12a52f863370a51de55d4ae8dea30d20/deferred-lighting-cpp-7-ShadowMap%402x.png)
+![Rendering that shows the shadow map.](/images/com.apple.metal/deferred-lighting-cpp-7-ShadowMap@2x.png)
 
 The render pipeline for the shadow map has a vertex function but not a fragment function; therefore, the sample can determine the screen-space depth value written to the shadow map without executing further stages of the render pipeline. (Additionally, the render executes quickly because it doesn’t have a fragment function.)
 
@@ -214,7 +214,7 @@ The sample’s geometry buffer contains these textures:
 - `normal_shadow_GBuffer`, which stores normal and shadow data. Normal data is stored in the `x`, `y`, and `z` components; shadow data is stored in the `w` component.
 - `depth_GBuffer`, which stores depth values in eye space.
 
-![Rendering that shows the geometry buffer textures.](https://docs-assets.developer.apple.com/published/5a41635942f1a18ca12ec170a704cc37/deferred-lighting-cpp-8-GBufferTextures%402x.png)
+![Rendering that shows the geometry buffer textures.](/images/com.apple.metal/deferred-lighting-cpp-8-GBufferTextures@2x.png)
 
 When the sample renders the geometry buffer, both the traditional and single pass deferred renderers attach all the geometry buffer textures as render targets for the render pass. However, because devices with a TBDR architecture can both render the geometry buffer and read from it in a single render pass, the sample creates the geometry buffer textures with a memoryless storage mode, which indicates that system memory isn’t allocated for these textures. Instead, these textures are allocated and populated only in tile memory for the duration of the render pass.
 
@@ -343,11 +343,11 @@ Because the draw call in `drawPointLightMask:` increments the stencil values for
 
 The following diagrams show the difference in fragment coverage between a rendered frame that uses this stencil mask algorithm and another that doesn’t. When the algorithm is enabled, pixels in green are pixels for which the point light fragment function was executed.
 
-![Rendering that shows point light fragment coverage when the stencil mask is enabled.](https://docs-assets.developer.apple.com/published/b50b2dbf65424a8afffeeffa5c4a13ec/deferred-lighting-cpp-9-StencilMaskOnly%402x.png)
+![Rendering that shows point light fragment coverage when the stencil mask is enabled.](/images/com.apple.metal/deferred-lighting-cpp-9-StencilMaskOnly@2x.png)
 
 When the algorithm is disabled, pixels in green and red are pixels for which the point light fragment function was executed.
 
-![Rendering that shows point light fragment coverage when the stencil mask is disabled.](https://docs-assets.developer.apple.com/published/285a44a90bdba37c7a9adf4245d17cf2/deferred-lighting-cpp-10-StencilMaskVSFullVolumes%402x.png)
+![Rendering that shows point light fragment coverage when the stencil mask is disabled.](/images/com.apple.metal/deferred-lighting-cpp-10-StencilMaskVSFullVolumes@2x.png)
 
 ##### Render the Skybox and Fairy Lights
 

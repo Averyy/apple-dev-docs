@@ -20,7 +20,7 @@ A result code. See [`Result Codes`](core_printing#1670007.md).
 
 ## Parameters
 
-- `workflowItems`: A pointer to your   variable. On return, the variable refers to an Core Foundation array. Each element in the array is a dictionary that describes either a PDF workflow item or a folder containing a set of PDF workflow items. For a list of possible keys, see  . You are responsible for releasing the array.
+- `workflowItems`: A pointer to your [`CFArray`](https://developer.apple.com/documentation/corefoundation/cfarray) variable. On return, the variable refers to an Core Foundation array. Each element in the array is a dictionary that describes either a PDF workflow item or a folder containing a set of PDF workflow items. For a list of possible keys, see [`PDF Workflow Dictionary Keys`](core_printing/pdf_workflow_dictionary_keys.md). You are responsible for releasing the array.
 
 ## See Also
 

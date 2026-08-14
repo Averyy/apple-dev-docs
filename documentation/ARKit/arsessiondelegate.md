@@ -39,7 +39,7 @@ This protocol extends the [`ARSessionObserver`](arsessionobserver.md) protocol, 
 
 ### Inherits From
 - [ARSessionObserver](arsessionobserver.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

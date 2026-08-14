@@ -22,7 +22,7 @@ var mapSize: CGSize { get }
 
 #### Discussion
 
-For a grid set type, the overall size, in points, of the node will be [`numberOfColumns`](sktilemapnode/numberofcolumns.md) `*` [`tileSize`](sktilemapnode/tilesize.md) `.` [`width`](https://developer.apple.com/documentation/CoreFoundation/CGSize/width) wide and [`numberOfRows`](skwarpgeometrygrid/numberofrows.md) `*` [`tileSize`](sktilemapnode/tilesize.md) `.` [`height`](https://developer.apple.com/documentation/CoreFoundation/CGSize/height) high.
+For a grid set type, the overall size, in points, of the node will be [`numberOfColumns`](sktilemapnode/numberofcolumns.md) `*` [`tileSize`](sktilemapnode/tilesize.md) `.` [`width`](https://developer.apple.com/documentation/corefoundation/cgsize/width) wide and [`numberOfRows`](skwarpgeometrygrid/numberofrows.md) `*` [`tileSize`](sktilemapnode/tilesize.md) `.` [`height`](https://developer.apple.com/documentation/corefoundation/cgsize/height) high.
 
 ## See Also
 

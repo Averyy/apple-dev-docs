@@ -55,8 +55,8 @@ struct PreprocessingSupervisedEstimator<Preprocessor, Estimator> where Preproces
 ## Relationships
 
 ### Conforms To
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 - [SupervisedEstimator](supervisedestimator.md)
 
 ## See Also

@@ -10,7 +10,7 @@ You can apply vImage operations, such as blurs and color transforms, to specifie
 
 The following image is an example of the effects possible when you use the techniques in this article. The image shows a single photograph with a portrait-format ROI that the code has desaturated and a landscape-format ROI that the code has blurred.
 
-![A photograph of fruit with a blurred horizontal strip, and a grayscale vertical strip.](https://docs-assets.developer.apple.com/published/5361063cd4584dfafb50aff9eabfe383/media-3377260%402x.png)
+![A photograph of fruit with a blurred horizontal strip, and a grayscale vertical strip.](/images/com.apple.accelerate/media-3377260@2x.png)
 
 ##### Applying Operations to an Roi of a Pixel Buffer
 
@@ -128,7 +128,7 @@ To learn more about using matrix multiplication to convert color images to grays
 
 The following shows the result of desaturating an ROI:
 
-![A photograph of fruit with a grayscale vertical strip.](https://docs-assets.developer.apple.com/published/a9dd2069d2be404051fb148a5560bd97/media-3377262%402x.png)
+![A photograph of fruit with a grayscale vertical strip.](/images/com.apple.accelerate/media-3377262@2x.png)
 
 ##### Apply an Out of Place Operation to an Roi
 
@@ -143,7 +143,7 @@ extension vImage_Buffer {
                           blurRadius: Int) -> vImage_Buffer? {
 ```
 
-The function performs the same check as [`Applying vImage operations to regions of interest`](applying-vimage-operations-to-regions-of-interest#Apply-an-in-place-operation-to-an-ROI.md) on the ROI size:
+The function performs the same check as [`Applying vImage operations to regions of interest`](applying-vimage-operations-to-regions-of-interest.md) on the ROI size:
 
 ```swift
         guard Int(roi.maxX) <= width && Int(roi.maxY) <= height &&
@@ -172,7 +172,7 @@ The function performs the same check as [`Applying vImage operations to regions 
         }
 ```
 
-The out-of-place function uses the same approach as [`Applying vImage operations to regions of interest`](applying-vimage-operations-to-regions-of-interest#Apply-an-in-place-operation-to-an-ROI.md), calculate the start of the ROI. The destination buffer for the blur operation references the copied pixels in `destination`:
+The out-of-place function uses the same approach as [`Applying vImage operations to regions of interest`](applying-vimage-operations-to-regions-of-interest.md), calculate the start of the ROI. The destination buffer for the blur operation references the copied pixels in `destination`:
 
 ```swift
         let start = Int(roi.origin.y) * destination.rowBytes +
@@ -214,7 +214,7 @@ Finally, the [`vImageTentConvolve_ARGB8888(_:_:_:_:_:_:_:_:_:)`](vimagetentconvo
 
 The following shows the result of blurring an ROI:
 
-![Photograph with a blurred horizontal strip.](https://docs-assets.developer.apple.com/published/31db03cd6214ceb253ce5eee08f151ed/media-3377259%402x.png)
+![Photograph with a blurred horizontal strip.](/images/com.apple.accelerate/media-3377259@2x.png)
 
 ## See Also
 

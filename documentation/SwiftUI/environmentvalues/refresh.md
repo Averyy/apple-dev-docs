@@ -56,7 +56,7 @@ struct RefreshableView: View {
 
 Be sure to call the handler asynchronously by preceding it with `await`. Because the call is asynchronous, you can use its lifetime to indicate progress to the user. For example, you can reveal an indeterminate [`ProgressView`](progressview.md) before calling the handler, and hide it when the handler completes.
 
-If your code isn’t already in an asynchronous context, create a [`Task`](https://developer.apple.com/documentation/Swift/Task) for the method to run in. If you do this, consider adding a way for the user to cancel the task. For more information, see [`Concurrency`](https://developer.apple.comhttps://docs.swift.org/swift-book/LanguageGuide/Concurrency.html) in *The Swift Programming Language*.
+If your code isn’t already in an asynchronous context, create a [`Task`](https://developer.apple.com/documentation/swift/task) for the method to run in. If you do this, consider adding a way for the user to cancel the task. For more information, see [`Concurrency`](https://developer.apple.comhttps://docs.swift.org/swift-book/LanguageGuide/Concurrency.html) in *The Swift Programming Language*.
 
 ## See Also
 

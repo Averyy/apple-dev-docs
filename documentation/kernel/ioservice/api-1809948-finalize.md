@@ -22,7 +22,7 @@ The `finalize` method is called in an inactive (ie. terminated) IOService object
 
 ## Parameters
 
-- `options`: The options passed to the terminate method of the IOService object are passed on to  .
+- `options`: The options passed to the terminate method of the IOService object are passed on to `finalize`.
 
 ## See Also
 

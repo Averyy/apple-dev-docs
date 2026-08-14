@@ -211,7 +211,7 @@ Ellipses (`...`) indicate lines of code that have been omitted from this example
 
 Now that the `pullquote` components are combined in a container, you can use HTML to anchor the container, as one unit, to a portion of the body text.
 
-![Screenshot of an Apple News article with an inset pull quote on iPad.](https://docs-assets.developer.apple.com/published/23fe13694bb806cdcb75554542ed96b0/media-3624924%402x.png)
+![Screenshot of an Apple News article with an inset pull quote on iPad.](/images/com.apple.applenews/media-3624924@2x.png)
 
 To create an anchor to a location in a `body` component, you’ll define the target inline in the HTML.
 

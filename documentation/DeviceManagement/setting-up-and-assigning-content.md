@@ -8,11 +8,11 @@ Distribute purchased licenses to managed users through your device management se
 
 Distributing purchased licenses includes configuring a device management service, registering users, purchasing content through Apple School Manager or Apple Business, and assigning that content to users. Each step includes a `curl` example with the v2 API at `https://vpp.itunes.apple.com/mdm` and the corresponding response.
 
-The API uses bearer token authentication. All v2 endpoints require an `Authorization: Bearer {sToken}` header, where the `sToken` is a location-based content token that a content manager downloads from Apple School Manager or Apple Business. For details about how the token works, see [`Getting started with the management API`](getting-started-with-the-management-api.md).
+The API uses bearer token authentication. All v2 endpoints require an `Authorization: Bearer {sToken}` header, where the `sToken` is a content token for an organizational unit that a content manager downloads from Apple School Manager or Apple Business. For details about how the token works, see [`Getting started with the management API`](getting-started-with-the-management-api.md).
 
 #### Fetch the Service Configuration
 
-Start by retrieving the service configuration. Send a GET request to `/v2/service/config` to discover request limits, available URLs, and notification settings for the location you manage.
+Start by retrieving the service configuration. Send a GET request to `/v2/service/config` to discover request limits, available URLs, and notification settings for the organizational unit you manage.
 
 ```javascript
 curl --location --request GET 'https://vpp.itunes.apple.com/mdm/v2/service/config' \
@@ -95,7 +95,7 @@ The server responds with the following:
 }
 ```
 
-The response echoes your configuration along with location information. Subscribe to all notification types so your device management service receives real-time updates about asset count changes, assignment events, user state changes, and subscription activity.
+The response echoes your configuration along with organizational unit information. Subscribe to all notification types so your device management service receives real-time updates about asset count changes, assignment events, user state changes, and subscription activity.
 
 > ❗ **Important**: The server sends a `TEST_NOTIFICATION` to your `notificationUrl` when you configure notifications. If delivery fails, the server rejects the configuration. Make sure your notification endpoint is reachable and returns an HTTP `2xx` response before sending this request.
 
@@ -481,7 +481,7 @@ The `renewing` field confirms that the assigned seat auto-renews. For informatio
 - [Managing subscriptions](managing-subscriptions.md)
   Administer auto-renewable subscription seats for your organization.
 - [Managing users](managing-users.md)
-  Register and manage users for your organization’s managed location.
+  Register and manage users for your organization’s managed organizational unit.
 
 
 ---

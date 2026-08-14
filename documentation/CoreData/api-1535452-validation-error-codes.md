@@ -6,7 +6,7 @@ Error codes relating to the validation of managed objects.
 
 #### Overview
 
-For additional error codes, including `NSValidationErrorMinimum` and `NSValidationErrorMaximum`, see [`NSError`](https://developer.apple.com/documentation/Foundation/NSError).
+For additional error codes, including `NSValidationErrorMinimum` and `NSValidationErrorMaximum`, see [`NSError`](https://developer.apple.com/documentation/foundation/nserror).
 
 ## Topics
 

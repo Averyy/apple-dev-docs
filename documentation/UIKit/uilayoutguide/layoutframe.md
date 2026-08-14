@@ -20,7 +20,7 @@ var layoutFrame: CGRect { get }
 
 #### Discussion
 
-The layout guide defines a rectangular space in its owning view’s coordinate system. This property contains a valid [`CGRect`](https://developer.apple.com/documentation/CoreFoundation/CGRect) value by the time its owning view’s [`layoutSubviews()`](uiview/layoutsubviews().md) method is called.
+The layout guide defines a rectangular space in its owning view’s coordinate system. This property contains a valid [`CGRect`](https://developer.apple.com/documentation/corefoundation/cgrect) value by the time its owning view’s [`layoutSubviews()`](uiview/layoutsubviews().md) method is called.
 
 ## See Also
 

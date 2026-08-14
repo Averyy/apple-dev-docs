@@ -25,7 +25,7 @@ var perShareResultBlock: ((CKShare.Metadata, Result<CKShare, any Error>) -> Void
 The closure returns no value and takes the following parameters:
 
 - The share metadata to process.
-- A [`Result`](https://developer.apple.com/documentation/Swift/Result) that contains either: - The accepted share
+- A [`Result`](https://developer.apple.com/documentation/swift/result) that contains either: - The accepted share
 - An error that contains information about a problem encountered processing the share metadata.
 
 The operation executes this closure once for each element in the [`shareMetadatas`](ckacceptsharesoperation/sharemetadatas.md) property. Each time the closure executes, it executes serially with respect to the other closures of the operation.

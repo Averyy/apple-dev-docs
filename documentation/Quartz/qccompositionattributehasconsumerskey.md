@@ -16,7 +16,7 @@ let QCCompositionAttributeHasConsumersKey: String
 
 #### Discussion
 
-The associated value is an `NSNumber` object that contains a Boolean value. [`true`](https://developer.apple.com/documentation/Swift/true) indicates that the composition has consumers.
+The associated value is an `NSNumber` object that contains a Boolean value. [`true`](https://developer.apple.com/documentation/swift/true) indicates that the composition has consumers.
 
 ## See Also
 

@@ -23,8 +23,8 @@ case zlib
 
 For more information on the zlib codec, see:
 
-- [`Algorithm.zlib`](https://developer.apple.com/documentation/Compression/Algorithm/zlib)
-- [`COMPRESSION_ZLIB`](https://developer.apple.com/documentation/Compression/COMPRESSION_ZLIB)
+- [`Algorithm.zlib`](https://developer.apple.com/documentation/compression/algorithm/zlib)
+- [`COMPRESSION_ZLIB`](https://developer.apple.com/documentation/compression/compression_zlib)
 
 ## See Also
 

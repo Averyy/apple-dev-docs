@@ -30,7 +30,7 @@ If this method is successful, the framework restores the VM and places it in the
 
 ## Parameters
 
-- `saveFileURL`: An [`NSURL`](https://developer.apple.com/documentation/Foundation/NSURL) that indicates the location where the framework reads the saved state of the VM.
+- `saveFileURL`: An [`NSURL`](https://developer.apple.com/documentation/foundation/nsurl) that indicates the location where the framework reads the saved state of the VM.
 - `completionHandler`: A block the framework calls after the VM has been successfully restored or upon an error.
 
 ## See Also

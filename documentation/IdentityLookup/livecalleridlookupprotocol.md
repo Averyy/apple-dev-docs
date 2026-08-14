@@ -31,7 +31,7 @@ protocol LiveCallerIDLookupProtocol : AppExtension
 ## Relationships
 
 ### Inherits From
-- [AppExtension](../ExtensionFoundation/AppExtension.md)
+- [AppExtension](../extensionfoundation/appextension.md)
 
 ## See Also
 

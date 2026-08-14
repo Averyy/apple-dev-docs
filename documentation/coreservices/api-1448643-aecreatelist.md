@@ -34,10 +34,10 @@ Thread safe starting in OS X v10.2.
 
 ## Parameters
 
-- `factoringPtr`: A pointer to the data at the beginning of each descriptor that is the same for all descriptors in the list. If there is no common data, or if you decide not to isolate the common data, pass   as the value of this parameter.
+- `factoringPtr`: A pointer to the data at the beginning of each descriptor that is the same for all descriptors in the list. If there is no common data, or if you decide not to isolate the common data, pass `NULL` as the value of this parameter.
 - `factoredSize`: The size of the common data. If there is no common data, or if you decide not to isolate the common data, pass 0 as the value of this parameter. (See the Discussion section for more information.)
-- `isRecord`: A Boolean value that specifies the kind of list to create. Pass a value of   to create an Apple event record (a data structure of type  ) or   to create a descriptor list.
-- `resultList`: A pointer to a descriptor list variable. On successful return, the descriptor list or Apple event record that the   function creates. On error, a null descriptor. See  .
+- `isRecord`: A Boolean value that specifies the kind of list to create. Pass a value of `TRUE` to create an Apple event record (a data structure of type [`AERecord`](aerecord.md)) or `FALSE` to create a descriptor list.
+- `resultList`: A pointer to a descriptor list variable. On successful return, the descriptor list or Apple event record that the `AECreateList` function creates. On error, a null descriptor. See [`AEDescList`](aedesclist.md).
 
 
 ---

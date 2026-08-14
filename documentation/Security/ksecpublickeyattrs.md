@@ -26,7 +26,7 @@ let kSecPublicKeyAttrs: CFString
 
 #### Discussion
 
-The corresponding value is a [`CFDictionary`](https://developer.apple.com/documentation/CoreFoundation/CFDictionary) containing key-value pairs for attributes specific to the public key to be generated.
+The corresponding value is a [`CFDictionary`](https://developer.apple.com/documentation/corefoundation/cfdictionary) containing key-value pairs for attributes specific to the public key to be generated.
 
 
 ---

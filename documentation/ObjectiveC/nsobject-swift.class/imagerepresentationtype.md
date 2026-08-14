@@ -16,7 +16,7 @@ func imageRepresentationType() -> String!
 
 #### Return Value
 
-A string that specifies the image representation type. The string can be any of the constants defined in [`Image Representation Types`](https://developer.apple.com/documentation/Quartz/image-representation-types).
+A string that specifies the image representation type. The string can be any of the constants defined in [`Image Representation Types`](https://developer.apple.com/documentation/quartz/image-representation-types).
 
 #### Discussion
 

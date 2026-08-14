@@ -6,26 +6,26 @@ Learn about important changes in Journaling Suggestions.
 
 #### Overview
 
-Browse notable changes in [`Journaling Suggestions`](https://developer.apple.com/documentation/JournalingSuggestions).
+Browse notable changes in [`Journaling Suggestions`](https://developer.apple.com/documentation/journalingsuggestions).
 
 #### June 2025
 
 ##### Ipados Support
 
-- [`Journaling Suggestions`](https://developer.apple.com/documentation/JournalingSuggestions) supports iPadOS. Suggestions that the system generates on a person’s iPhone sync over iCloud to their iPad.
+- [`Journaling Suggestions`](https://developer.apple.com/documentation/journalingsuggestions) supports iPadOS. Suggestions that the system generates on a person’s iPhone sync over iCloud to their iPad.
 
 ##### System Notifications
 
-- Register for system Journaling Suggestion notifications, which prompt users to reflect on recent moments. Refer to the notification schedule a person picks in Settings using [`JournalingSuggestionsConfiguration`](https://developer.apple.com/documentation/JournalingSuggestions/JournalingSuggestionsConfiguration). When a person taps a notification, the system launches [`JournalingSuggestionsPicker`](https://developer.apple.com/documentation/JournalingSuggestions/JournalingSuggestionsPicker) for your app when you implement [`JournalingSuggestionPresentationToken`](https://developer.apple.com/documentation/JournalingSuggestions/JournalingSuggestionPresentationToken).
+- Register for system Journaling Suggestion notifications, which prompt users to reflect on recent moments. Refer to the notification schedule a person picks in Settings using [`JournalingSuggestionsConfiguration`](https://developer.apple.com/documentation/journalingsuggestions/journalingsuggestionsconfiguration). When a person taps a notification, the system launches [`JournalingSuggestionsPicker`](https://developer.apple.com/documentation/journalingsuggestions/journalingsuggestionspicker) for your app when you implement [`JournalingSuggestionPresentationToken`](https://developer.apple.com/documentation/journalingsuggestions/journalingsuggestionpresentationtoken).
 
 ##### Event Posters
 
-- Receive suggestions of the [`JournalingSuggestion.EventPoster`](https://developer.apple.com/documentation/JournalingSuggestions/JournalingSuggestion/EventPoster) type for planned or attended events in Apple Invites.
+- Receive suggestions of the [`JournalingSuggestion.EventPoster`](https://developer.apple.com/documentation/journalingsuggestions/journalingsuggestion/eventposter) type for planned or attended events in Apple Invites.
 
 ##### Location and Workouts
 
-- Distinguish work-related location suggestions using the [`isWorkLocation`](https://developer.apple.com/documentation/JournalingSuggestions/JournalingSuggestion/Location/isWorkLocation) property, and receive information about the location from MapKit with [`mapKitItemIdentifier`](https://developer.apple.com/documentation/JournalingSuggestions/JournalingSuggestion/Location/mapKitItemIdentifier).
-- Refer to the name of a particular workout suggestion with  [`localizedName`](https://developer.apple.com/documentation/JournalingSuggestions/JournalingSuggestion/Workout/Details-swift.struct/localizedName).
+- Distinguish work-related location suggestions using the [`isWorkLocation`](https://developer.apple.com/documentation/journalingsuggestions/journalingsuggestion/location/isworklocation) property, and receive information about the location from MapKit with [`mapKitItemIdentifier`](https://developer.apple.com/documentation/journalingsuggestions/journalingsuggestion/location/mapkititemidentifier).
+- Refer to the name of a particular workout suggestion with  [`localizedName`](https://developer.apple.com/documentation/journalingsuggestions/journalingsuggestion/workout/details-swift.struct/localizedname).
 
 #### June 2024
 

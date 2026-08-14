@@ -40,13 +40,13 @@ This data structure is used with the [`kAudioFormatProperty_BalanceFade`](kaudio
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../Swift/BitwiseCopyable.md)
+- [BitwiseCopyable](../swift/bitwisecopyable.md)
 
 ## See Also
 
 - [struct AudioFormatInfo](audioformatinfo.md)
   A structure that specifies an audio format.
-- [struct AudioFormatListItem](../CoreAudioTypes/AudioFormatListItem.md)
+- [struct AudioFormatListItem](../coreaudiotypes/audioformatlistitem.md)
 - [struct AudioPanningInfo](audiopanninginfo.md)
   Audio panning information.
 - [struct ExtendedAudioFormatInfo](extendedaudioformatinfo.md)

@@ -22,7 +22,7 @@ let kSecValuePersistentRef: CFString
 
 #### Discussion
 
-The corresponding value is of type [`CFData`](https://developer.apple.com/documentation/CoreFoundation/CFData). The bytes in this object can be stored by the caller and used on a subsequent invocation of the application (or even a different application) to retrieve the item referenced by it.
+The corresponding value is of type [`CFData`](https://developer.apple.com/documentation/corefoundation/cfdata). The bytes in this object can be stored by the caller and used on a subsequent invocation of the application (or even a different application) to retrieve the item referenced by it.
 
 
 ---

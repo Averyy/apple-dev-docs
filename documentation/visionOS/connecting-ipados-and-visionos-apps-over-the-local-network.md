@@ -13,7 +13,7 @@ Build an iPadOS companion app to control your visionOS app.
 
 #### Overview
 
-When demonstrating visionOS apps to others, someone wearing an Apple Vision Pro can’t easily show what they’re experiencing or request to have someone else control their experience. This sample uses the [`Network`](https://developer.apple.com/documentation/Network) framework to create a companion iPadOS app that remotely controls a visionOS experience, allowing a person to guide demonstrations while someone else wears the headset.
+When demonstrating visionOS apps to others, someone wearing an Apple Vision Pro can’t easily show what they’re experiencing or request to have someone else control their experience. This sample uses the [`Network`](https://developer.apple.com/documentation/network) framework to create a companion iPadOS app that remotely controls a visionOS experience, allowing a person to guide demonstrations while someone else wears the headset.
 
 On Apple Vision Pro and iPad, the app displays a robot configurator where people can change the color of the robot. Someone using Apple Vision Pro sees and configures the 3D robot in their space, while the iPadOS companion app displays the same robot and provides extended controls, like a spatial audio volume slider. Changes made on either device immediately update on the other, keeping the apps synchronized.
 
@@ -23,9 +23,9 @@ The sample contains two targets and a custom package:
 - `Companion`: An iPadOS app that acts as a server and listens for incoming connections from an Apple Vision Pro. The app displays a 3D robot and extended configuration controls. The iPad controls the robot configuration experience on Apple Vision Pro remotely.
 - `PeerToPeerMessaging`: A custom package that contains the networking layer to create the peer-to-peer connection between an Apple Vision Pro and an iPad. You can integrate this package into your own apps to establish peer-to-peer connections with minimal setup.
 
-![A screenshot of an Apple Vision Pro window with a 3D robot on top and color options below.](https://docs-assets.developer.apple.com/published/0cbcdb6252550a0cc0a2c515e0460627/avp-robot%402x.png)
+![A screenshot of an Apple Vision Pro window with a 3D robot on top and color options below.](/images/com.apple.visionOS/avp-robot@2x.png)
 
-![A screenshot of an iPad window with controls, including color options and volume, on the leading side, and a 3D robot on the trailing side.](https://docs-assets.developer.apple.com/published/17c7cf442067b890a13ca3fc78fae2d3/ipad-robot%402x.png)
+![A screenshot of an iPad window with controls, including color options and volume, on the leading side, and a 3D robot on the trailing side.](/images/com.apple.visionOS/ipad-robot@2x.png)
 
 The first part of this article explains how to use the `PeerToPeerMessaging` package in your SwiftUI app to establish connections and synchronize UI without implementing the networking logic yourself. The second part explains how the package implements the networking layer using Network.framework, covering connection establishment, message handling, and security.
 
@@ -37,9 +37,9 @@ After connecting the devices, people using either app can customize the robot’
 
 ##### Configure Bonjour and Network Capabilities
 
-The sample connects the two devices over the local network using [`Bonjour`](https://developer.apple.com/documentation/Network/Bonjour), by adding the `Local Network` capability in the project’s Info pane in Xcode. The app defines a service type of `_example._udp` to uniquely identify the app and adds it to the Info pane with the [`NSBonjourServices`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSBonjourServices) key.
+The sample connects the two devices over the local network using [`Bonjour`](https://developer.apple.com/documentation/network/bonjour), by adding the `Local Network` capability in the project’s Info pane in Xcode. The app defines a service type of `_example._udp` to uniquely identify the app and adds it to the Info pane with the [`NSBonjourServices`](https://developer.apple.com/documentation/bundleresources/information-property-list/nsbonjourservices) key.
 
-For more information on local network and privacy, see [`TN3179: Understanding local network privacy`](https://developer.apple.com/documentation/Technotes/tn3179-understanding-local-network-privacy). For instructions on adding support for local network privacy permissions, watch the WWDC20 presentation, [`Support local network privacy in your app`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2020/10110).
+For more information on local network and privacy, see [`TN3179: Understanding local network privacy`](https://developer.apple.com/documentation/technotes/tn3179-understanding-local-network-privacy). For instructions on adding support for local network privacy permissions, watch the WWDC20 presentation, [`Support local network privacy in your app`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2020/10110).
 
 ##### Create a Connection
 
@@ -160,7 +160,7 @@ final class RobotViewModel {
 
 > ❗ **Important**: Only send messages for updates that occur directly from the view. Sending messages when handling a received message creates an infinite loop.
 
-To synchronize the UI when changes are made on other devices, the sample’s views monitor for incoming messages using a [`task(name:priority:file:line:_:)`](https://developer.apple.com/documentation/SwiftUI/View/task(name:priority:file:line:_:)) modifier and updates the state locally. The `.task` modifier runs for the lifetime of the view and cancels automatically when the view disappears. Messages are received only while the view is visible.
+To synchronize the UI when changes are made on other devices, the sample’s views monitor for incoming messages using a [`task(name:priority:file:line:_:)`](https://developer.apple.com/documentation/swiftui/view/task(name:priority:file:line:_:)) modifier and updates the state locally. The `.task` modifier runs for the lifetime of the view and cancels automatically when the view disappears. Messages are received only while the view is visible.
 
 ```swift
 struct RobotWindowView: View {
@@ -201,7 +201,7 @@ final class RobotViewModel {
 
 ##### Implement Peer to Peer Networking
 
-To establish a secure peer-to-peer connection, the package uses the [`Network`](https://developer.apple.com/documentation/Network) framework and implements several key components:
+To establish a secure peer-to-peer connection, the package uses the [`Network`](https://developer.apple.com/documentation/network) framework and implements several key components:
 
 - `PeerMessagingController`: An observable controller that bridges the actor-isolated networking operations and `MainActor` UI updates.
 - `Server`: An actor that conforms to `PeerMessagingManager` that starts a listener, advertises on Bonjour, and waits for connections.
@@ -227,9 +227,9 @@ The package sets the [`Application-Layer Protocol Negotiation (ALPN)`](https://d
 QUIC(alpn: [NetworkServiceConstants.alpn])
 ```
 
-The package uses [`Bonjour`](https://developer.apple.com/documentation/Network/Bonjour) as the service discovery method. Service discovery methods help you find peers on the local network by advertising and discovering services.
+The package uses [`Bonjour`](https://developer.apple.com/documentation/network/bonjour) as the service discovery method. Service discovery methods help you find peers on the local network by advertising and discovering services.
 
-> **Note**: Alternatively, you could use [`Wi-Fi Aware`](https://developer.apple.com/documentation/WiFiAware) to connect peers on a local Wi-Fi network. For a project demonstrating Wi-Fi Aware, see [`Building peer-to-peer apps`](https://developer.apple.com/documentation/WiFiAware/Building-peer-to-peer-apps).
+> **Note**: Alternatively, you could use [`Wi-Fi Aware`](https://developer.apple.com/documentation/wifiaware) to connect peers on a local Wi-Fi network. For a project demonstrating Wi-Fi Aware, see [`Building peer-to-peer apps`](https://developer.apple.com/documentation/wifiaware/building-peer-to-peer-apps).
 
 To use Bonjour, the package defines a service type that uniquely identifies the app, composed of the ALPN and the transport protocol:
 
@@ -240,7 +240,7 @@ public static let serviceType = "_example._udp"
 
 > ❗ **Important**: If you use a custom ALPN, register the service type you use with [`Service Name and Transport Protocol Port Number Registry`](https://developer.apple.comhttps://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.xhtml) to avoid conflicts.
 
-The package adds the service type in the Info pane in Xcode with the [`NSBonjourServices`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSBonjourServices) key, and uses it when initializing Bonjour for both the server and client:
+The package adds the service type in the Info pane in Xcode with the [`NSBonjourServices`](https://developer.apple.com/documentation/bundleresources/information-property-list/nsbonjourservices) key, and uses it when initializing Bonjour for both the server and client:
 
 ```swift
 for: .bonjour(
@@ -248,15 +248,15 @@ NetworkServiceConstants.serviceType,
 includeTxtRecord: true)
 ```
 
-> **Note**: The package also adds the `Local Network` capability in Xcode to access the local network, as mentioned earlier. For more information on local network and privacy, see [`TN3179: Understanding local network privacy`](https://developer.apple.com/documentation/Technotes/tn3179-understanding-local-network-privacy).
+> **Note**: The package also adds the `Local Network` capability in Xcode to access the local network, as mentioned earlier. For more information on local network and privacy, see [`TN3179: Understanding local network privacy`](https://developer.apple.com/documentation/technotes/tn3179-understanding-local-network-privacy).
 
 ##### Configure the Server Actor
 
 The `Server` actor creates a listener, waits for connections, and sends and receives messages.
 
-The server advertises its availability using [`Bonjour`](https://developer.apple.com/documentation/Network/Bonjour). The server uses a [`NWTXTRecord`](https://developer.apple.com/documentation/Network/NWTXTRecord) to include additional metadata with the service advertisement. The server initializes Bonjour with the service type noted in the Info pane in Xcode and creates a TXT record containing the device ID, which helps the browser identify the correct server.
+The server advertises its availability using [`Bonjour`](https://developer.apple.com/documentation/network/bonjour). The server uses a [`NWTXTRecord`](https://developer.apple.com/documentation/network/nwtxtrecord) to include additional metadata with the service advertisement. The server initializes Bonjour with the service type noted in the Info pane in Xcode and creates a TXT record containing the device ID, which helps the browser identify the correct server.
 
-The server creates a [`NetworkListener`](https://developer.apple.com/documentation/Network/NetworkListener) that awaits incoming connections. The listener fetches a TLS local identity and does peer certificate verification to complete the TLS handshake and create a secure connection.
+The server creates a [`NetworkListener`](https://developer.apple.com/documentation/network/networklistener) that awaits incoming connections. The listener fetches a TLS local identity and does peer certificate verification to complete the TLS handshake and create a secure connection.
 
 ```swift
 // Get the TLS local identity before running the `NetworkListener`.
@@ -286,9 +286,9 @@ try await NetworkListener(
 }
 ```
 
-> 💡 **Tip**: If the listener state is [`NetworkListener.State.waiting(_:)`](https://developer.apple.com/documentation/Network/NetworkListener/State/waiting(_:)), you can check if a person has denied the local network authorization. For more information, see the [`Check for local network access`](https://developer.apple.comhttps://developer.apple.com/documentation/technotes/tn3179-understanding-local-network-privacy#Check-for-local-network-access) section of [`TN3179: Understanding local network privacy`](https://developer.apple.com/documentation/Technotes/tn3179-understanding-local-network-privacy) for examples.
+> 💡 **Tip**: If the listener state is [`NetworkListener.State.waiting(_:)`](https://developer.apple.com/documentation/network/networklistener/state/waiting(_:)), you can check if a person has denied the local network authorization. For more information, see the [`Check for local network access`](https://developer.apple.comhttps://developer.apple.com/documentation/technotes/tn3179-understanding-local-network-privacy#Check-for-local-network-access) section of [`TN3179: Understanding local network privacy`](https://developer.apple.com/documentation/technotes/tn3179-understanding-local-network-privacy) for examples.
 
-The [`run(_:)`](https://developer.apple.com/documentation/Network/NetworkListener/run(_:)-4iov3) method runs the listener and provides a handler for incoming connections. The sample only connects to one peer at a time, so the listener accepts the first connection it receives. This also guards against handling multiple connections that might arrive over different network paths to the same endpoint. The listener then waits for the client to open a QUIC stream over the accepted connection.
+The [`run(_:)`](https://developer.apple.com/documentation/network/networklistener/run(_:)-4iov3) method runs the listener and provides a handler for incoming connections. The sample only connects to one peer at a time, so the listener accepts the first connection it receives. This also guards against handling multiple connections that might arrive over different network paths to the same endpoint. The listener then waits for the client to open a QUIC stream over the accepted connection.
 
 ```swift
 .run { connection in
@@ -316,7 +316,7 @@ The [`run(_:)`](https://developer.apple.com/documentation/Network/NetworkListene
 
 After the client opens a QUIC stream and sends a message, both the client and server can send and receive messages bidirectionally.
 
-To send and receive custom message types over the stream, the client builds a protocol stack on top of the inbound QUIC stream using [`Coder`](https://developer.apple.com/documentation/Network/Coder). The `Coder` protocol automatically frames, encodes, and decodes `Codable` types. The client initializes `Coder` with a generic type that conforms to `PeerToPeerMessage` to allow custom message types, and uses the [`json`](https://developer.apple.com/documentation/Network/NetworkCoder/json) type property to handle JSON encoding and decoding automatically when sending and receiving messages.
+To send and receive custom message types over the stream, the client builds a protocol stack on top of the inbound QUIC stream using [`Coder`](https://developer.apple.com/documentation/network/coder). The `Coder` protocol automatically frames, encodes, and decodes `Codable` types. The client initializes `Coder` with a generic type that conforms to `PeerToPeerMessage` to allow custom message types, and uses the [`json`](https://developer.apple.com/documentation/network/networkcoder/json) type property to handle JSON encoding and decoding automatically when sending and receiving messages.
 
 ```swift
 try await connection.inboundStreams { stack in
@@ -333,13 +333,13 @@ try await connection.inboundStreams { stack in
 }
 ```
 
-The server sends messages of a custom type by calling [`send(_:metadata:)`](https://developer.apple.com/documentation/Network/NetworkChannel/send(_:metadata:)-4rxt1) on the QUIC stream. The protocol stack takes care of the JSON encoding.
+The server sends messages of a custom type by calling [`send(_:metadata:)`](https://developer.apple.com/documentation/network/networkchannel/send(_:metadata:)-4rxt1) on the QUIC stream. The protocol stack takes care of the JSON encoding.
 
 ```swift
 try await currentConnectionInfo?.stream.send(message)
 ```
 
-To receive messages, the server iterates over the stream’s messages, and decodes them automatically. The server relays each message to an [`AsyncStream.Continuation`](https://developer.apple.com/documentation/Swift/AsyncStream/Continuation), making them available to the observable controller for state updates:
+To receive messages, the server iterates over the stream’s messages, and decodes them automatically. The server relays each message to an [`AsyncStream.Continuation`](https://developer.apple.com/documentation/swift/asyncstream/continuation), making them available to the observable controller for state updates:
 
 ```swift
 // Iterate through incoming messages from the QUIC stream and relay them using `receivedMessageContinuation`.
@@ -353,9 +353,9 @@ for try await (message, metadata) in stream.messages {
 
 The `Client` actor creates a browser, discovers a server to connect to, establishes a connection, and sends and receives messages.
 
-The client starts the browser by creating a [`NetworkBrowser`](https://developer.apple.com/documentation/Network/NetworkBrowser) that discovers available [`Bonjour`](https://developer.apple.com/documentation/Network/Bonjour) services.
+The client starts the browser by creating a [`NetworkBrowser`](https://developer.apple.com/documentation/network/networkbrowser) that discovers available [`Bonjour`](https://developer.apple.com/documentation/network/bonjour) services.
 
-When creating the `NetworkBrowser`, the client initializes Bonjour with the service type from the Info pane in Xcode and includes an [`NWTXTRecord`](https://developer.apple.com/documentation/Network/NWTXTRecord) to access metadata from the service advertisement, which contains the server’s ID. The ID tells the browser which server endpoint to connect to. Because QUIC secures the stream with TLS by default, the browser fetches its TLS local identity to use when creating a [`NetworkConnection`](https://developer.apple.com/documentation/Network/NetworkConnection).
+When creating the `NetworkBrowser`, the client initializes Bonjour with the service type from the Info pane in Xcode and includes an [`NWTXTRecord`](https://developer.apple.com/documentation/network/nwtxtrecord) to access metadata from the service advertisement, which contains the server’s ID. The ID tells the browser which server endpoint to connect to. Because QUIC secures the stream with TLS by default, the browser fetches its TLS local identity to use when creating a [`NetworkConnection`](https://developer.apple.com/documentation/network/networkconnection).
 
 ```swift
 // Get the TLS local identity before running the `NetworkBrowser`.
@@ -370,9 +370,9 @@ try await NetworkBrowser(
 }
 ```
 
-> 💡 **Tip**: If the browser state is [`NetworkBrowser.State.waiting(_:)`](https://developer.apple.com/documentation/Network/NetworkBrowser/State/waiting(_:)), you can check if a person has denied the local network authorization. For more information, see the [`Check for local network access`](https://developer.apple.comhttps://developer.apple.com/documentation/technotes/tn3179-understanding-local-network-privacy#Check-for-local-network-access) section of [`TN3179: Understanding local network privacy`](https://developer.apple.com/documentation/Technotes/tn3179-understanding-local-network-privacy) for examples.
+> 💡 **Tip**: If the browser state is [`NetworkBrowser.State.waiting(_:)`](https://developer.apple.com/documentation/network/networkbrowser/state/waiting(_:)), you can check if a person has denied the local network authorization. For more information, see the [`Check for local network access`](https://developer.apple.comhttps://developer.apple.com/documentation/technotes/tn3179-understanding-local-network-privacy#Check-for-local-network-access) section of [`TN3179: Understanding local network privacy`](https://developer.apple.com/documentation/technotes/tn3179-understanding-local-network-privacy) for examples.
 
-The `NetworkBrowser` class’s [`run(_:)`](https://developer.apple.com/documentation/Network/NetworkBrowser/run(_:)-31x4b) method starts the browser and provides a handler for discovered endpoints. Each [`NWEndpoint`](https://developer.apple.com/documentation/Network/NWEndpoint) has a  [`txtRecord`](https://developer.apple.com/documentation/Network/NWEndpoint/txtRecord) that contains the ID included in the server’s TXT record, which corresponds to the unique ID used to choose a device to connect to. The package uses the TXT record to filter for an endpoint with the matching ID, then returns `.finish` with the endpoint to create a connection:
+The `NetworkBrowser` class’s [`run(_:)`](https://developer.apple.com/documentation/network/networkbrowser/run(_:)-31x4b) method starts the browser and provides a handler for discovered endpoints. Each [`NWEndpoint`](https://developer.apple.com/documentation/network/nwendpoint) has a  [`txtRecord`](https://developer.apple.com/documentation/network/nwendpoint/txtrecord) that contains the ID included in the server’s TXT record, which corresponds to the unique ID used to choose a device to connect to. The package uses the TXT record to filter for an endpoint with the matching ID, then returns `.finish` with the endpoint to create a connection:
 
 ```swift
 .run { endpoints in
@@ -415,9 +415,9 @@ let connection = NetworkConnection(
 ).start()
 ```
 
-After starting a connection, the client opens a bidirectional [`QUIC.Stream`](https://developer.apple.com/documentation/Network/QUIC/Stream) over the connection for the peers to communicate.
+After starting a connection, the client opens a bidirectional [`QUIC.Stream`](https://developer.apple.com/documentation/network/quic/stream) over the connection for the peers to communicate.
 
-To send and receive custom message types over the stream,  the client uses [`Coder`](https://developer.apple.com/documentation/Network/Coder) to build a protocol stack on top of the inbound QUIC stream. The `Coder` protocol automatically frames, encodes, and decodes `Codable` types. The client initializes `Coder` with a generic type that conforms to `PeerToPeerMessage`, which allows custom message types and uses [`json`](https://developer.apple.com/documentation/Network/NetworkCoder/json) to handle JSON encoding and decoding automatically when sending and receiving.
+To send and receive custom message types over the stream,  the client uses [`Coder`](https://developer.apple.com/documentation/network/coder) to build a protocol stack on top of the inbound QUIC stream. The `Coder` protocol automatically frames, encodes, and decodes `Codable` types. The client initializes `Coder` with a generic type that conforms to `PeerToPeerMessage`, which allows custom message types and uses [`json`](https://developer.apple.com/documentation/network/networkcoder/json) to handle JSON encoding and decoding automatically when sending and receiving.
 
 ```swift
 let stream = try await connection.openStream { stack in
@@ -427,13 +427,13 @@ let stream = try await connection.openStream { stack in
 }
 ```
 
-The client sends messages of a custom type by calling [`send(_:metadata:)`](https://developer.apple.com/documentation/Network/NetworkChannel/send(_:metadata:)-4rxt1) on the QUIC stream. The protocol stack takes care of the JSON encoding.
+The client sends messages of a custom type by calling [`send(_:metadata:)`](https://developer.apple.com/documentation/network/networkchannel/send(_:metadata:)-4rxt1) on the QUIC stream. The protocol stack takes care of the JSON encoding.
 
 ```swift
 try await currentConnectionInfo?.stream.send(message)
 ```
 
-To receive messages, the client iterates over the stream’s messages, which are decoded automatically. The client relays each message to an [`AsyncStream.Continuation`](https://developer.apple.com/documentation/Swift/AsyncStream/Continuation), making them available to the observable controller for state updates:
+To receive messages, the client iterates over the stream’s messages, which are decoded automatically. The client relays each message to an [`AsyncStream.Continuation`](https://developer.apple.com/documentation/swift/asyncstream/continuation), making them available to the observable controller for state updates:
 
 ```swift
 // Iterate through incoming messages from the QUIC stream and relay them using `receivedMessageContinuation`.
@@ -505,7 +505,7 @@ This architecture keeps the networking logic isolated in actors while providing 
 
 To make a secure handshake between connected devices over a local network, TLS uses [`Public Key Infrastructure (PKI)`](https://developer.apple.comhttps://www.rfc-editor.org/rfc/rfc5280), a framework for managing digital certificates and public-key encryption. During this handshake, peers exchange certificates to verify each other’s identity. This requires each device to have a digital identity, which is a cryptographic asset containing a public certificate and a private key that encrypts the network traffic.
 
-For more information on TLS and local identities, see [`Creating an Identity for Local Network TLS`](https://developer.apple.com/documentation/Network/creating-an-identity-for-local-network-tls).
+For more information on TLS and local identities, see [`Creating an Identity for Local Network TLS`](https://developer.apple.com/documentation/network/creating-an-identity-for-local-network-tls).
 
 This sample uses self-signed certificates to create a digital identity for each peer. For more information, see [`Creating Certificates for TLS Testing`](https://developer.apple.comhttps://developer.apple.com/library/archive/technotes/tn2326/_index.html).
 
@@ -516,20 +516,20 @@ The `TLSIdentity` class in the `PeerToPeerMessaging` package implements the logi
 The class takes the following steps to create a new identity:
 
 1. Generates a private key.
-2. Stores the private key in the keychain with a label that corresponds to the device ID using the [`Keychain services`](https://developer.apple.com/documentation/Security/keychain-services) API.
-3. Gets an external representation of the key and converts the data to [`Apple CryptoKit`](https://developer.apple.com/documentation/CryptoKit) keys.
+2. Stores the private key in the keychain with a label that corresponds to the device ID using the [`Keychain services`](https://developer.apple.com/documentation/security/keychain-services) API.
+3. Gets an external representation of the key and converts the data to [`Apple CryptoKit`](https://developer.apple.com/documentation/cryptokit) keys.
 4. Creates a [`Certificate`](https://developer.apple.comhttps://swiftpackageindex.com/apple/swift-certificates/main/documentation/x509/certificate) using these keys.
 5. Converts the self-signed certificate back to a native keychain type and stores it in the keychain with the same label as the private key.
 
 Storing the identity in the keychain ensures that it persists across app launches and remains secure. The private key never leaves the device.
 
-> **Note**: For more examples of storing keys in the keychain and best practices, see [`Storing CryptoKit Keys in the Keychain`](https://developer.apple.com/documentation/CryptoKit/storing-cryptokit-keys-in-the-keychain).
+> **Note**: For more examples of storing keys in the keychain and best practices, see [`Storing CryptoKit Keys in the Keychain`](https://developer.apple.com/documentation/cryptokit/storing-cryptokit-keys-in-the-keychain).
 
 ##### Validate Peer Certificates
 
 When establishing a connection that uses TLS, both peers must validate each other’s certificates. Because this sample uses self-signed certificates, the `CertificateTrustManager` class implements a “trust on first use” pattern. The class trusts a peer the first time it sees the peer’s certificate, then stores a cryptographic hash of that certificate for future validation. The class rejects the certificate if the identity changes after it’s trusted.
 
-> ❗ **Important**: This approach provides basic protection for sample projects, but it has its limitations. An attacker who intercepts the first connection can substitute their certificate. Production apps should use proper certificate validation with trusted certificate authorities and store trusted certificates in secure locations like [`CloudKit`](https://developer.apple.com/documentation/CloudKit) or a server you control.
+> ❗ **Important**: This approach provides basic protection for sample projects, but it has its limitations. An attacker who intercepts the first connection can substitute their certificate. Production apps should use proper certificate validation with trusted certificate authorities and store trusted certificates in secure locations like [`CloudKit`](https://developer.apple.com/documentation/cloudkit) or a server you control.
 
 To implement the validation, the `CertificateTrustManager` class:
 

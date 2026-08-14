@@ -21,7 +21,7 @@ var contactPredicate: NSPredicate { get }
 
 #### Discussion
 
-Use this property to get a predicate that you can use with a [`CNContactStore`](https://developer.apple.com/documentation/Contacts/CNContactStore) to fetch a [`CNContact`](https://developer.apple.com/documentation/Contacts/CNContact) instance for this participant, if one exists.
+Use this property to get a predicate that you can use with a [`CNContactStore`](https://developer.apple.com/documentation/contacts/cncontactstore) to fetch a [`CNContact`](https://developer.apple.com/documentation/contacts/cncontact) instance for this participant, if one exists.
 
 ## See Also
 

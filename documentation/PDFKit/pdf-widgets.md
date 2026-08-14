@@ -16,7 +16,7 @@ The PDF file format allows for annotations to be associated with a page and a lo
 
 ##### Create Widget Annotations
 
-All widget annotations are instantiated using the [`PDFAnnotation`](PDFAnnotation.md) constructor with subtype [`widget`](PDFAnnotationSubtype/widget.md). To inform PDFKit which type of interactive element to add to the document, the `widgetFieldType` property is set for each widget:
+All widget annotations are instantiated using the [`PDFAnnotation`](pdfannotation.md) constructor with subtype [`widget`](pdfannotationsubtype/widget.md). To inform PDFKit which type of interactive element to add to the document, the `widgetFieldType` property is set for each widget:
 
 ```swift
 // Create a text widget
@@ -68,9 +68,9 @@ widgetAnnotation.isListChoice = false
 
 ##### Add Widgets to the Pdf Page
 
-`ViewController` first loads a URL to the `MyForm.pdf` file through the app’s main bundle. This URL is then used to instantiate a [`PDFDocument`](PDFDocument.md). On success, the document is assigned to the [`PDFView`](PDFView.md) that was set up in Interface Builder. Once the document has been successfully loaded, The first page can be extracted so that widget annotations can be added.
+`ViewController` first loads a URL to the `MyForm.pdf` file through the app’s main bundle. This URL is then used to instantiate a [`PDFDocument`](pdfdocument.md). On success, the document is assigned to the [`PDFView`](pdfview.md) that was set up in Interface Builder. Once the document has been successfully loaded, The first page can be extracted so that widget annotations can be added.
 
-`ViewController` adds the following widgets to the extracted [`PDFPage`](PDFPage.md): three text fields, two radio buttons, three checkboxes, and one push button.
+`ViewController` adds the following widgets to the extracted [`PDFPage`](pdfpage.md): three text fields, two radio buttons, three checkboxes, and one push button.
 
 In addition to basic widget creation, `ViewController` includes a few extra widget-specific properties:
 
@@ -82,7 +82,7 @@ The `textFieldMultiline` text widget annotation sets one extra property: `isMult
 
 > **Note**: The strings used for both `fieldName` and `buttonWidgetStateString` are arbitrary; what matters is that `fieldName` is the same for each button, and the `buttonWidgetStateString` strings for each button are unique to that grouping.
 
-**Button widget properties.** The `resetButton` button widget annotation sets one extra property: [`PDFActionResetForm`](PDFActionResetForm.md). With this property set, the given action is performed when the user clicks (or taps) this button. The `PDFActionResetForm` action is special in that it clears all widgets associated with it. `PDFActionResetForm` takes an array of strings that represent widget field names. The default behavior is to clear all fields included in that array. This behavior can be changed to clear all widgets not included in the array, by setting the `fieldsIncludedAreCleared` property to false. Because the behavior to clear all widgets isn’t included in the list, and no field names were set, this action clears all widgets in the document.
+**Button widget properties.** The `resetButton` button widget annotation sets one extra property: [`PDFActionResetForm`](pdfactionresetform.md). With this property set, the given action is performed when the user clicks (or taps) this button. The `PDFActionResetForm` action is special in that it clears all widgets associated with it. `PDFActionResetForm` takes an array of strings that represent widget field names. The default behavior is to clear all fields included in that array. This behavior can be changed to clear all widgets not included in the array, by setting the `fieldsIncludedAreCleared` property to false. Because the behavior to clear all widgets isn’t included in the list, and no field names were set, this action clears all widgets in the document.
 
 ## See Also
 

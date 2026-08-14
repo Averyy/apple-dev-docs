@@ -22,7 +22,7 @@ var isiOSAppOnMac: Bool { get }
 
 #### Discussion
 
-The value of this property is [`true`](https://developer.apple.com/documentation/Swift/true) only when the process is an iOS app running on a Mac. The value of the property is [`false`](https://developer.apple.com/documentation/Swift/false) for all other apps on the Mac, including Mac apps built using Mac Catalyst. The property is also [`false`](https://developer.apple.com/documentation/Swift/false) for processes running on platforms other than macOS.
+The value of this property is [`true`](https://developer.apple.com/documentation/swift/true) only when the process is an iOS app running on a Mac. The value of the property is [`false`](https://developer.apple.com/documentation/swift/false) for all other apps on the Mac, including Mac apps built using Mac Catalyst. The property is also [`false`](https://developer.apple.com/documentation/swift/false) for processes running on platforms other than macOS.
 
 ## See Also
 

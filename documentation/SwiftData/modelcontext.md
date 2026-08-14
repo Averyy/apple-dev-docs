@@ -152,8 +152,8 @@ struct LastModifiedView: View {
 ## Relationships
 
 ### Conforms To
-- [Equatable](../Swift/Equatable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Equatable](../swift/equatable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

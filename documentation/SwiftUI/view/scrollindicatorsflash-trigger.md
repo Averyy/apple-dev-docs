@@ -51,7 +51,7 @@ Only scroll indicators that you configure to be visible flash. To flash scroll i
 
 ## Parameters
 
-- `value`: The value that causes scroll indicators to flash. The value must conform to the [`Equatable`](https://developer.apple.com/documentation/Swift/Equatable) protocol.
+- `value`: The value that causes scroll indicators to flash. The value must conform to the [`Equatable`](https://developer.apple.com/documentation/swift/equatable) protocol.
 
 ## See Also
 

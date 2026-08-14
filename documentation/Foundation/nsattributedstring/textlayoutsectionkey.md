@@ -38,11 +38,11 @@ Use these constants as values for the [`textLayoutSections`](nsattributedstring/
 ## Relationships
 
 ### Conforms To
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [RawRepresentable](../Swift/RawRepresentable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [RawRepresentable](../swift/rawrepresentable.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 
@@ -54,7 +54,7 @@ Use these constants as values for the [`textLayoutSections`](nsattributedstring/
   Documentwide attributes that provide control over the form of generated HTML.
 - [NSAttributedString.DocumentType](nsattributedstring/documenttype.md)
   Constants for the document type document attribute key.
-- [enum NSTextScalingType](../UIKit/NSTextScalingType.md)
+- [enum NSTextScalingType](../uikit/nstextscalingtype.md)
   Constants that specify the text scaling.
 
 

@@ -22,7 +22,7 @@ init(style: ByteCountFormatStyle.Style = .file, allowedUnits: ByteCountFormatSty
 
 #### Discussion
 
-In situations that can infer the [`ByteCountFormatStyle`](bytecountformatstyle.md) type, you can call [`byteCount(style:allowedUnits:spellsOutZero:includesActualByteCount:)`](formatstyle/bytecount(style:allowedunits:spellsoutzero:includesactualbytecount:)-59ep0.md) instead of explicitly using this initializer. This is the case when you call [`formatted(_:)`](https://developer.apple.com/documentation/Swift/BinaryInteger/formatted(_:)-4qd73) on a [`BinaryInteger`](https://developer.apple.com/documentation/Swift/BinaryInteger).
+In situations that can infer the [`ByteCountFormatStyle`](bytecountformatstyle.md) type, you can call [`byteCount(style:allowedUnits:spellsOutZero:includesActualByteCount:)`](formatstyle/bytecount(style:allowedunits:spellsoutzero:includesactualbytecount:)-59ep0.md) instead of explicitly using this initializer. This is the case when you call [`formatted(_:)`](https://developer.apple.com/documentation/swift/binaryinteger/formatted(_:)-4qd73) on a [`BinaryInteger`](https://developer.apple.com/documentation/swift/binaryinteger).
 
 ## Parameters
 

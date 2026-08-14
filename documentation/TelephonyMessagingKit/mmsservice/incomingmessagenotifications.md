@@ -7,7 +7,6 @@ An asynchronous sequence of incoming message notifications produced by the servi
 
 **Availability**:
 - iOS 26.0+
-- iPadOS 26.0+
 
 ## Declaration
 

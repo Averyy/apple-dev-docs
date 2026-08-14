@@ -1,41 +1,33 @@
-# ServiceConstructorOptions
+# PlaceLookupOptions
 
 **Framework**: MapKit JS  
 **Kind**: struct
 
-Common options you provide when you create a service object.
+Options for place lookup requests.
 
 **Availability**:
-- MapKit JS 5.0+
+- MapKit JS 5.78.1+
 
 ## Declaration
 
 ```swift
-interface ServiceConstructorOptions
+interface PlaceLookupOptions
 ```
 
 ## Topics
 
-### Instance Properties
-- [getsUserLocation](serviceconstructoroptions/getsuserlocation.md)
-  A Boolean value that indicates whether to limit the results to the user’s location, according to the web browser.
-- [language](serviceconstructoroptions/language.md)
-  A language identifier that determines the language for the service results text.
-
-## Relationships
-
-### Inherited By
-- [PointsOfInterestSearchConstructorOptions](pointsofinterestsearchconstructoroptions.md)
-- [SearchConstructorOptions](searchconstructoroptions.md)
+### Options
+- [language](placelookupoptions/language.md)
+  The language to use for the lookup.
+- [signal](placelookupoptions/signal.md)
+  A signal object allowing you to cancel the request.
 
 ## See Also
 
-- [new Geocoder(options)](geocoder/geocoderconstructor.md)
-  Creates a geocoder object and sets optional language and user location properties.
-- [getsUserLocation](service/getsuserlocation.md)
-  A Boolean value that indicates whether the request returns results near a person’s location.
-- [language](service/language.md)
-  A language ID that determines the language to use for displaying addresses.
+- [getPlace(id, options)](placelookup/getplace.md)
+  Obtains a place using its identifier.
+- [getPlace(annotation, options)](placelookup/getplace1.md)
+  Obtains the place associated with a map feature annotation.
 
 
 ---

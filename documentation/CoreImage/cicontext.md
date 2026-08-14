@@ -30,7 +30,7 @@ You use a `CIContext` instance to render a [`CIImage`](ciimage.md) instance whic
 Contexts support automatic color management by performing all processing operations in a working color space. This means that unless told otherwise:
 
 - All input images are color matched from the input’s color space to the working space.
-- All renders are color matched from the working space to the destination space. (For more information on `CGColorSpace` see [`CGColorSpace`](https://developer.apple.com/documentation/CoreGraphics/CGColorSpace))
+- All renders are color matched from the working space to the destination space. (For more information on `CGColorSpace` see [`CGColorSpace`](https://developer.apple.com/documentation/coregraphics/cgcolorspace))
 
 `CIContext` and [`CIImage`](ciimage.md) instances are immutable, so multiple threads can use the same [`CIContext`](cicontext.md) instance to render [`CIImage`](ciimage.md) instances. However, [`CIFilter`](cifilter-swift.class.md) instances are mutable and thus cannot be shared safely among threads. Each thread must take case not to access or modify a [`CIFilter`](cifilter-swift.class.md) instance while it is being used by another thread.
 
@@ -183,16 +183,16 @@ The `CIContext` manages various internal state such as `MTLCommandQueue` and cac
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

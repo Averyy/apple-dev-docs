@@ -11,7 +11,7 @@ framework: HIG
 
 A popover is a transient view that appears above other content when people click or tap a control or interactive area.
 
-![A stylized representation of a popover view. The image is tinted red to subtly reflect the red in the original six-color Apple logo.](https://docs-assets.developer.apple.com/published/cddc0daa359ab267817ef24c0a65a755/components-popover-intro~dark%402x.png)
+![A stylized representation of a popover view. The image is tinted red to subtly reflect the red in the original six-color Apple logo.](/images/com.apple.HIG/components-popover-intro~dark@2x.png)
 
 ## Best practices
 **Use a popover to expose a small amount of information or functionality.** Because a popover disappears after people interact with it, limit the amount of functionality in the popover to a few related tasks. For example, a calendar event popover makes it easy for people to change the date or time of an event, or to move it to another calendar. The popover disappears after the change, letting people continue reviewing the events on their calendar.
@@ -47,9 +47,9 @@ You can make a popover detachable in macOS, which becomes a separate panel when 
 [Modality](modality.md)
 
 #### Developer documentation
-[popover(isPresented:attachmentAnchor:arrowEdge:content:)](../SwiftUI/View/popover(isPresented:attachmentAnchor:arrowEdge:content:).md) — SwiftUI
-[UIPopoverPresentationController](../UIKit/UIPopoverPresentationController.md) — UIKit
-[NSPopover](../AppKit/NSPopover.md) — AppKit
+[popover(isPresented:attachmentAnchor:arrowEdge:content:)](../swiftui/view/popover(ispresented:attachmentanchor:arrowedge:content:).md) — SwiftUI
+[UIPopoverPresentationController](../uikit/uipopoverpresentationcontroller.md) — UIKit
+[NSPopover](../appkit/nspopover.md) — AppKit
 
 
 

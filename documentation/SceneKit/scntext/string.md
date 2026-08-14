@@ -22,7 +22,7 @@ var string: Any? { get set }
 
 #### Discussion
 
-You can supply text as an [`NSString`](https://developer.apple.com/documentation/Foundation/NSString) or [`NSAttributedString`](https://developer.apple.com/documentation/Foundation/NSAttributedString) object. When you use an [`NSString`](https://developer.apple.com/documentation/Foundation/NSString) object, the text geometry’s properties determine the style of the entire body of text. You can use an [`NSAttributedString`](https://developer.apple.com/documentation/Foundation/NSAttributedString) object to provide a body of text containing multiple styles, in which case the text geometry’s properties define the default style for portions of the string without style attributes.
+You can supply text as an [`NSString`](https://developer.apple.com/documentation/foundation/nsstring) or [`NSAttributedString`](https://developer.apple.com/documentation/foundation/nsattributedstring) object. When you use an [`NSString`](https://developer.apple.com/documentation/foundation/nsstring) object, the text geometry’s properties determine the style of the entire body of text. You can use an [`NSAttributedString`](https://developer.apple.com/documentation/foundation/nsattributedstring) object to provide a body of text containing multiple styles, in which case the text geometry’s properties define the default style for portions of the string without style attributes.
 
 The default value of this property is `nil`, which creates an empty text geometry.
 

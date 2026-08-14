@@ -31,7 +31,7 @@ Beginning with macOS 11 and iOS 14, non-drivers may call this function to add en
 - `device`: The device that owns the new entity.
 - `name`: The name of the new entity.
 - `protocol`: The MIDI protocol variant used by the sources and destinations that make up this entity.
-- `embedded`: A Boolean value that indicates whether this entity is inside the device. If you specify [`false`](https://developer.apple.com/documentation/Swift/false), the entity consists only of external connectors to which you can attach other devices.
+- `embedded`: A Boolean value that indicates whether this entity is inside the device. If you specify [`false`](https://developer.apple.com/documentation/swift/false), the entity consists only of external connectors to which you can attach other devices.
 - `numSourceEndpoints`: The entity’s number of source endpoints.
 - `numDestinationEndpoints`: The entity’s number of destination endpoints.
 - `newEntity`: On successful return, points to the newly created entity.

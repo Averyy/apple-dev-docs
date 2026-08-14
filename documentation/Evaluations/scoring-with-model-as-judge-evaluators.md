@@ -23,7 +23,7 @@ This article shows you how to create pointwise evaluations with single and multi
 
 A pointwise evaluator scores each response independently against criteria you define. This lets you evaluate domain-specific qualities that programmatic checks cannot measure, such as whether generated content is accurate, relevant, and useful for your app’s purpose.
 
-The following evaluation uses a [`ModelJudgeEvaluator`](modeljudgeevaluator.md) to assess how well a model generates tags for books based on user reviews. The `BookTags` type uses [`Generable`](https://developer.apple.com/documentation/FoundationModels/Generable) and [`Guide(description:_:)`](https://developer.apple.com/documentation/FoundationModels/Guide(description:_:)) from [`Foundation Models`](https://developer.apple.com/documentation/FoundationModels) to describe the expected output structure to the language model:
+The following evaluation uses a [`ModelJudgeEvaluator`](modeljudgeevaluator.md) to assess how well a model generates tags for books based on user reviews. The `BookTags` type uses [`Generable`](https://developer.apple.com/documentation/foundationmodels/generable) and [`Guide(description:_:)`](https://developer.apple.com/documentation/foundationmodels/guide(description:_:)) from [`Foundation Models`](https://developer.apple.com/documentation/foundationmodels) to describe the expected output structure to the language model:
 
 ```swift
 @Generable
@@ -415,7 +415,7 @@ Model-as-judge evaluators and code-based evaluators work together in the same ev
 
 #### Run a Model As Judge Evaluation
 
-Run your model-as-judge evaluation with [`Swift Testing`](https://developer.apple.com/documentation/Testing), just as you do with other evaluations:
+Run your model-as-judge evaluation with [`Swift Testing`](https://developer.apple.com/documentation/testing), just as you do with other evaluations:
 
 ```swift
 import Testing

@@ -50,7 +50,7 @@ var body: some View {
 }
 ```
 
-![A tvOS app with three buttons labeled 1, 2, and 3 at upper left,](https://docs-assets.developer.apple.com/published/03c76d84c416c44fa581e4c67c79e395/View-focusSection-tvOS%402x.png)
+![A tvOS app with three buttons labeled 1, 2, and 3 at upper left,](/images/com.apple.SwiftUI/View-focusSection-tvOS@2x.png)
 
 Note that because the [`VStack`](vstack.md) containing buttons “1” - “3” does not declare itself as a focus section, it is impossible to direct focus back to the left from buttons “A” - “C”. None of those buttons has a focusable view — in this case either a button or a [`VStack`](vstack.md) with the `focusSection()` modifier — directly to its left.
 

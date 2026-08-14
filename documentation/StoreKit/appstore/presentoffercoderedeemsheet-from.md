@@ -31,14 +31,14 @@ When customers redeem an offer code, StoreKit emits the resulting transaction in
 
 ## Parameters
 
-- `controller`: An [`NSViewController`](https://developer.apple.com/documentation/AppKit/NSViewController) that StoreKit uses to display the offer code redemption sheet.
+- `controller`: An [`NSViewController`](https://developer.apple.com/documentation/appkit/nsviewcontroller) that StoreKit uses to display the offer code redemption sheet.
 
 ## See Also
 
 - [static func presentOfferCodeRedeemSheet(in: UIWindowScene) async throws](appstore/presentoffercoderedeemsheet(in:).md)
   Displays a sheet in the window scene that enables customers to redeem an offer code that you configure in App Store Connect.
 - [func offerCodeRedemption(isPresented: Binding<Bool>, onCompletion: (Result<Void, any Error>) -> Void) -> some View
-](../SwiftUI/View/offerCodeRedemption(isPresented:onCompletion:).md)
+](../swiftui/view/offercoderedemption(ispresented:oncompletion:).md)
 
 
 ---

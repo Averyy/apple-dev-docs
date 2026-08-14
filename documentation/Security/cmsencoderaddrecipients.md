@@ -29,7 +29,7 @@ If you do call this function, you must call it before the first call to the [`CM
 ## Parameters
 
 - `cmsEncoder`: The CMSEncoder reference returned by the `CMSEncoderCreate` function.
-- `recipientOrArray`: Either a single certificate containing a public encryption key for one message recipient, specified as a certificate object (type [`SecCertificate`](seccertificate.md)), or a set of certificates specified as a [`CFArray`](https://developer.apple.com/documentation/CoreFoundation/CFArray) of certificate objects.
+- `recipientOrArray`: Either a single certificate containing a public encryption key for one message recipient, specified as a certificate object (type [`SecCertificate`](seccertificate.md)), or a set of certificates specified as a [`CFArray`](https://developer.apple.com/documentation/corefoundation/cfarray) of certificate objects.
 
 ## See Also
 

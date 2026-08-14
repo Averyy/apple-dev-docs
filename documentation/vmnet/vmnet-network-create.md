@@ -21,7 +21,7 @@ Vmnet network handle on success, otherwise `NULL`.
 
 #### Discussion
 
-This API attempts to reserve the configuration such that subsequent interface start calls is guaranteed to not fail due to resource contention. The lifetime of such reservation is the same as that of [`vmnet_network_ref`](vmnet_network_ref.md). Use [`CFRelease`](https://developer.apple.com/documentation/CoreFoundation/CFRelease) to release the network object.
+This API attempts to reserve the configuration such that subsequent interface start calls is guaranteed to not fail due to resource contention. The lifetime of such reservation is the same as that of [`vmnet_network_ref`](vmnet_network_ref.md). Use [`CFRelease`](https://developer.apple.com/documentation/corefoundation/cfrelease) to release the network object.
 
 ## Parameters
 

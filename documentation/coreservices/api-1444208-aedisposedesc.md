@@ -34,7 +34,7 @@ Thread safe starting in OS X v10.2.
 
 ## Parameters
 
-- `theAEDesc`: A pointer to the descriptor to deallocate. On return, a null descriptor. If you pass a null descriptor in this parameter,   returns  . See  .
+- `theAEDesc`: A pointer to the descriptor to deallocate. On return, a null descriptor. If you pass a null descriptor in this parameter, `AEDisposeDesc` returns `noErr`. See [`AEDesc`](aedesc.md).
 
 
 ---

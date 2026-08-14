@@ -40,7 +40,7 @@ ZStack {
 
 Without the background modifier, the teal color behind the label shows through the label. With the modifier, the label’s text and icon appear backed by a region filled with a color that’s appropriate for light or dark appearance:
 
-![A screenshot of a flag icon and the word flag inside a rectangle; the](https://docs-assets.developer.apple.com/published/8e3ac25578ae088fe9b8c8a1fd739a8b/View-background-7%402x.png)
+![A screenshot of a flag icon and the word flag inside a rectangle; the](/images/com.apple.SwiftUI/View-background-7@2x.png)
 
 If you want to specify a [`View`](view.md) or a stack of views as the background, use [`background(alignment:content:)`](view/background(alignment:content:).md) instead. To specify a [`Shape`](shape.md) or [`InsettableShape`](insettableshape.md), use [`background(_:in:fillStyle:)`](view/background(_:in:fillstyle:).md). To configure the background of a presentation, like a sheet, use [`presentationBackground(_:)`](view/presentationbackground(_:).md).
 

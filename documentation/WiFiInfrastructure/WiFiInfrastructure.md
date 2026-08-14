@@ -32,7 +32,7 @@ With the Wi-Fi Infrastructure framework, you can:
 ## Topics
 
 ### Essentials
-- [com.apple.developer.wifi-infrastructure](../BundleResources/Entitlements/com.apple.developer.wifi-infrastructure.md)
+- [com.apple.developer.wifi-infrastructure](../bundleresources/entitlements/com.apple.developer.wifi-infrastructure.md)
   The entitlement the system requires for an app to use the Wi-Fi Infrastructure framework.
 - [Sharing Wi-Fi network credentials](sharing-wi-fi-network-credentials.md)
   Use Wi-Fi Infrastructure to automatically share Wi-Fi network credentials after establishing a Bluetooth connection.

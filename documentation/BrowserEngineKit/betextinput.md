@@ -188,10 +188,10 @@ Adopt this protocol in a text field to perform asynchronous actions and provide 
 ### Inherits From
 - [BEResponderEditActions](berespondereditactions.md)
 - [BETextSelectionDirectionNavigation](betextselectiondirectionnavigation.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [UIKeyInput](../UIKit/UIKeyInput.md)
-- [UIResponderStandardEditActions](../UIKit/UIResponderStandardEditActions.md)
-- [UITextInputTraits](../UIKit/UITextInputTraits.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [UIKeyInput](../uikit/uikeyinput.md)
+- [UIResponderStandardEditActions](../uikit/uiresponderstandardeditactions.md)
+- [UITextInputTraits](../uikit/uitextinputtraits.md)
 
 ## See Also
 

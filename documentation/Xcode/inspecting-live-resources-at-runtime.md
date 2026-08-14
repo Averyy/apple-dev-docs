@@ -14,15 +14,15 @@ You can preview contents of textures and buffers while debugging your app in Xco
 
 First, pause the app inside a scope that contains a variable referencing the resource. You can achieve this by setting a breakpoint on a line that references the resource. To set a breakpoint, click the line number to the left of the source editor. The example below shows a breakpoint for the line where `_skyMap` is bound to the render encoder:
 
-![A screenshot of Xcode’s source editor, highlighting a line of code with a breakpoint.](https://docs-assets.developer.apple.com/published/f33f01dc549725c850875379bfa880f1/gputools-quick-look-set-breakpoint%402x.png)
+![A screenshot of Xcode’s source editor, highlighting a line of code with a breakpoint.](/images/com.apple.Xcode/gputools-quick-look-set-breakpoint@2x.png)
 
 Then, when yor app pauses at the breakpoint, move the pointer over the variable referencing the resource to reveal the Value inspector.
 
-![A screenshot of the source editor, breaking at a line of code with a breakpoint. The variable underscore sky map is highlighted.](https://docs-assets.developer.apple.com/published/24adafad63942811b270bcf3df4145c2/gputools-quick-look-hit-breakpoint%402x.png)
+![A screenshot of the source editor, breaking at a line of code with a breakpoint. The variable underscore sky map is highlighted.](/images/com.apple.Xcode/gputools-quick-look-hit-breakpoint@2x.png)
 
 Finally, click the Preview button to show the contents of the resource.
 
-![A screenshot of the Preview popover showing the contents of the variable underscore sky map.](https://docs-assets.developer.apple.com/published/25eff4f8f589d29d1b0b63e375b2cf18/gputools-quick-look-preview%402x.png)
+![A screenshot of the Preview popover showing the contents of the variable underscore sky map.](/images/com.apple.Xcode/gputools-quick-look-preview@2x.png)
 
 If the resource is a texture and has multiple slices, like the sky map above, you can drag the slider at the bottom of the Preview popover to see each slice. If the resource has any unexpected values, you can investigate further with the Metal debugger (see [`Investigating visual artifacts`](investigating-visual-artifacts.md)).
 

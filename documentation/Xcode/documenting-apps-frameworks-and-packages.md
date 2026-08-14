@@ -16,11 +16,11 @@ For a deeper understanding of DocC and how to use it to document frameworks and 
 
 For DocC to compile your documentation, build your project. Xcode stores supplementary information about public APIs for frameworks, and internal APIs for app targets, alongside the compiled artifacts. DocC consumes that information and compiles the documentation into a DocC Archive. This process repeats for every framework or package your target depends on.
 
-![A diagram showing how the compiler turns code into an app or framework and supplies information about its public APIs to the documentation compiler, which generates a DocC Archive using that information.](https://docs-assets.developer.apple.com/published/f769db70372edebeaa3a0b4bde7d9c44/docc-compilation-default%402x.png)
+![A diagram showing how the compiler turns code into an app or framework and supplies information about its public APIs to the documentation compiler, which generates a DocC Archive using that information.](/images/com.apple.Xcode/docc-compilation-default@2x.png)
 
 To build documentation for a project, choose Product > Build Documentation. DocC compiles the documentation and opens it in Xcode’s documentation viewer.
 
-![A screenshot of Xcode’s documentation viewer displaying a basic symbol reference page that DocC generates.](https://docs-assets.developer.apple.com/published/2210963c6ca4eefe5c1115f5165ff14a/basic-documentation%402x.png)
+![A screenshot of Xcode’s documentation viewer displaying a basic symbol reference page that DocC generates.](/images/com.apple.Xcode/basic-documentation@2x.png)
 
 ##### Build Multi Language Documentation
 
@@ -33,7 +33,7 @@ DocC takes information from the Swift compiler and the Objective-C compiler and 
 “Build Multi-Language Documentation for Swift Only Targets” or “Build Multi-Language Documentation for Objective-C Only Targets” setting depending on the language in which you implemented the target.
 5. Choose Yes from the setting’s pop-up button to enable the build setting.
 
-![A screenshot of Xcode that shows the Build Multi-Language Documentation for Swift Only Targets setting in an enabled state and the Build Multi-Language Documentation for Objective-C Only Targets setting in a disabled state.](https://docs-assets.developer.apple.com/published/c6f71458412fd7e798466e845f06e88a/multi-language-documentation-build-settings%402x.png)
+![A screenshot of Xcode that shows the Build Multi-Language Documentation for Swift Only Targets setting in an enabled state and the Build Multi-Language Documentation for Objective-C Only Targets setting in a disabled state.](/images/com.apple.Xcode/multi-language-documentation-build-settings@2x.png)
 
 > **Note**: You can’t use the build setting with a Swift package.
 
@@ -48,7 +48,7 @@ To add a documentation catalog to an existing project, follow these steps:
 3. Select the Documentation Catalog template in the Documentation section and click Next.
 4. Enter a filename and click Create.
 
-![A screenshot of Xcode’s file template chooser with the Documentation Catalog template in a selected state in the Documentation section.](https://docs-assets.developer.apple.com/published/df4db4754f5252055a747320655ccdfd/add-documentation-catalog%402x.png)
+![A screenshot of Xcode’s file template chooser with the Documentation Catalog template in a selected state in the Documentation section.](/images/com.apple.Xcode/add-documentation-catalog@2x.png)
 
 ##### Incorporate Documentation Into Your Build Process
 
@@ -62,7 +62,7 @@ To enable the documentation compiler build setting, do the following:
 4. Enter “build documentation” in the search box to locate the Build Documentation during ‘Build’ setting.
 5. Choose Yes from the setting’s pop-up button to enable the build setting.
 
-![A screenshot of Xcode that shows the Build Documentation during ‘Build’ setting in an enabled state.](https://docs-assets.developer.apple.com/published/e58c242e97d168d078bd4af264eb7cae/build-documentation-build-setting%402x.png)
+![A screenshot of Xcode that shows the Build Documentation during ‘Build’ setting in an enabled state.](/images/com.apple.Xcode/build-documentation-build-setting@2x.png)
 
 > **Note**: For existing projects, the build setting appears only after you add a documentation catalog. You can’t use the build setting with a Swift package.
 

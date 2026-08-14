@@ -27,7 +27,7 @@ func reportNewIncomingCall(with UUID: UUID, update: CXCallUpdate) async throws
 
 > ❗ **Important**:  You can call this method from synchronous code using a completion handler, as shown on this page, or you can call it as an asynchronous method that has the following declaration: ```swift
 func reportNewIncomingCall(with UUID: UUID, update: CXCallUpdate) async throws
-``` For information about concurrency and asynchronous code in Swift, see [`Calling Objective-C APIs Asynchronously`](https://developer.apple.com/documentation/Swift/calling-objective-c-apis-asynchronously).
+``` For information about concurrency and asynchronous code in Swift, see [`Calling Objective-C APIs Asynchronously`](https://developer.apple.com/documentation/swift/calling-objective-c-apis-asynchronously).
 
 An incoming call may be disallowed by the system if, for example, the caller handle is blocked, or the user has Do Not Disturb enabled.
 
@@ -41,7 +41,7 @@ An incoming call may be disallowed by the system if, for example, the caller han
 
 - [class func reportNewIncomingVoIPPushPayload([AnyHashable : Any], completion: (((any Error)?) -> Void)?)](cxprovider/reportnewincomingvoippushpayload(_:completion:).md)
   Reports a new incoming call after your notification service extension decrypts a VoIP call request.
-- [com.apple.developer.usernotifications.filtering](../BundleResources/Entitlements/com.apple.developer.usernotifications.filtering.md)
+- [com.apple.developer.usernotifications.filtering](../bundleresources/entitlements/com.apple.developer.usernotifications.filtering.md)
   Enable receiving notifications without displaying the notification to the user.
 - [func reportOutgoingCall(with: UUID, startedConnectingAt: Date?)](cxprovider/reportoutgoingcall(with:startedconnectingat:).md)
   Reports to the provider that an outgoing call with the specified unique identifier started connecting at a particular time.

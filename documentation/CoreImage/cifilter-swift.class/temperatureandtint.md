@@ -45,7 +45,7 @@ func tempatureAndTint(inputImage: CIImage) -> CIImage {
 }
 ```
 
-![Two versions of a photograph side by side. The photo on the left shows a small bunch of flowers photographed close up, in focus, with good light and no effects. In the photo on the right, a temperature and tint filter is applied, resulting in a orange hue applied to the image.](https://docs-assets.developer.apple.com/published/6d6bbf21f7ffb12672085daa6eb5b656/media-3545008%402x.png)
+![Two versions of a photograph side by side. The photo on the left shows a small bunch of flowers photographed close up, in focus, with good light and no effects. In the photo on the right, a temperature and tint filter is applied, resulting in a orange hue applied to the image.](/images/com.apple.coreimage/media-3545008@2x.png)
 
 ## See Also
 

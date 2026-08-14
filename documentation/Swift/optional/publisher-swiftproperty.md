@@ -36,7 +36,7 @@ let optional1: Int? = 1
 // optional1 completed.
 ```
 
-In contrast with the [`Just`](https://developer.apple.com/documentation/Combine/Just) publisher, which always publishes a single value, this publisher might not send any values and instead finish normally if the optional’s `output` is `nil`. In the next example, an `Int?` optional that’s `nil` immediately sends the [`Subscribers.Completion.finished`](https://developer.apple.com/documentation/Combine/Subscribers/Completion/finished) completion, without producing any values.
+In contrast with the [`Just`](https://developer.apple.com/documentation/combine/just) publisher, which always publishes a single value, this publisher might not send any values and instead finish normally if the optional’s `output` is `nil`. In the next example, an `Int?` optional that’s `nil` immediately sends the [`Subscribers.Completion.finished`](https://developer.apple.com/documentation/combine/subscribers/completion/finished) completion, without producing any values.
 
 ```swift
 let optional2: Int? = nil

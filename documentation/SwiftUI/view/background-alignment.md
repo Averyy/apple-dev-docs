@@ -54,7 +54,7 @@ struct Frontmost: View {
 }
 ```
 
-![A view showing a large folder image with a gray diamond placed behind it as its background view.](https://docs-assets.developer.apple.com/published/2f4e39d1360323a046bdf9d567b2600a/View-background-1%402x.png)
+![A view showing a large folder image with a gray diamond placed behind it as its background view.](/images/com.apple.SwiftUI/View-background-1@2x.png)
 
 ## Parameters
 

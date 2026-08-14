@@ -17,7 +17,7 @@ var color: NSColor! { get set }
 
 #### Discussion
 
-If set to [`nil`](https://developer.apple.com/documentation/ObjectiveC/nil-227m0), returns [`textInsertionPointColor`](nscolor/textinsertionpointcolor.md). Defaults to [`textInsertionPointColor`](nscolor/textinsertionpointcolor.md).
+If set to [`nil`](https://developer.apple.com/documentation/objectivec/nil-227m0), returns [`textInsertionPointColor`](nscolor/textinsertionpointcolor.md). Defaults to [`textInsertionPointColor`](nscolor/textinsertionpointcolor.md).
 
 ## See Also
 

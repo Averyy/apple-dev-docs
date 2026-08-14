@@ -16,7 +16,7 @@ static let featureSettings: NSFontDescriptor.AttributeName
 
 #### Discussion
 
-The value of this attribute is an [`NSArray`](https://developer.apple.com/documentation/Foundation/NSArray) of [`NSDictionary`](https://developer.apple.com/documentation/Foundation/NSDictionary) objects. Each dictionary contains [`typeIdentifier`](nsfontdescriptor/featurekey/typeidentifier.md) and [`selectorIdentifier`](nsfontdescriptor/featurekey/selectoridentifier.md).
+The value of this attribute is an [`NSArray`](https://developer.apple.com/documentation/foundation/nsarray) of [`NSDictionary`](https://developer.apple.com/documentation/foundation/nsdictionary) objects. Each dictionary contains [`typeIdentifier`](nsfontdescriptor/featurekey/typeidentifier.md) and [`selectorIdentifier`](nsfontdescriptor/featurekey/selectoridentifier.md).
 
 ## See Also
 

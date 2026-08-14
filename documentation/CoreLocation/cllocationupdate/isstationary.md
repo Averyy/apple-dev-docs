@@ -22,9 +22,9 @@ var isStationary: Bool { get }
 
 #### Discussion
 
-Updates may stop flowing temporarily for several reasons including if the app is no longer authorized to receive location updates or if its location becomes unknown. If Core Location stops delivering updates because the device is stationary, then it sets `isStationary` to [`true`](https://developer.apple.com/documentation/Swift/true); otherwise, it’s [`false`](https://developer.apple.com/documentation/Swift/false).
+Updates may stop flowing temporarily for several reasons including if the app is no longer authorized to receive location updates or if its location becomes unknown. If Core Location stops delivering updates because the device is stationary, then it sets `isStationary` to [`true`](https://developer.apple.com/documentation/swift/true); otherwise, it’s [`false`](https://developer.apple.com/documentation/swift/false).
 
-If `isStationary` is [`true`](https://developer.apple.com/documentation/Swift/true), the framework can suspend updates until the person starts moving, or their location becomes unknown.
+If `isStationary` is [`true`](https://developer.apple.com/documentation/swift/true), the framework can suspend updates until the person starts moving, or their location becomes unknown.
 
 ## See Also
 

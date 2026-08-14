@@ -19,7 +19,7 @@ func dimensionsForSemanticSegmentationMatte(ofType semanticSegmentationMatteType
 
 #### Return Value
 
-A [`CMVideoDimensions`](https://developer.apple.com/documentation/CoreMedia/CMVideoDimensions) structure that provides the height and width of the image mattes.
+A [`CMVideoDimensions`](https://developer.apple.com/documentation/coremedia/cmvideodimensions) structure that provides the height and width of the image mattes.
 
 ## Parameters
 

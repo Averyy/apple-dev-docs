@@ -22,7 +22,7 @@ let SCNConsistencyLineNumberErrorKey: String
 
 #### Discussion
 
-The value for this key is an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) object.
+The value for this key is an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) object.
 
 ## See Also
 

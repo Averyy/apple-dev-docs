@@ -41,7 +41,7 @@ func thermal(inputImage: CIImage ) -> CIImage {
 }
 ```
 
-![Two pictures of a pink flower surrounded by foliage. The photo on the left shows a single flower photographed close-up, in focus, with good light and no effects. In the photo on the right, a thermal filter is applied, which inverts the colors of the image.](https://docs-assets.developer.apple.com/published/d5c1ef261fe7fb4d86c4dfca6ce17889/media-3545033%402x.png)
+![Two pictures of a pink flower surrounded by foliage. The photo on the left shows a single flower photographed close-up, in focus, with good light and no effects. In the photo on the right, a thermal filter is applied, which inverts the colors of the image.](/images/com.apple.coreimage/media-3545033@2x.png)
 
 ## See Also
 

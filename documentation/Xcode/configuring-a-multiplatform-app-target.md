@@ -28,7 +28,7 @@ If your app supports multiple platforms and the platform-specific targets don’
 
 To add a destination to a target, click the Add button (+) under Supported Destinations, and then select the destination from the pop-up menu. Depending on the platforms your app already supports, the Add button brings up a different set of destinations that are available to add to the current target. To remove a destination from a target, select the destination, then click the Remove button (-).
 
-![A screenshot of Xcode showing the target editor area. Under General Settings, a list of Supported Destinations shows iPhone and iPad, followed by a plus button.](https://docs-assets.developer.apple.com/published/0d669eb4746a6ac4ad515384d4e81620/configuring-a-multiplatform-app-target-1%402x.png)
+![A screenshot of Xcode showing the target editor area. Under General Settings, a list of Supported Destinations shows iPhone and iPad, followed by a plus button.](/images/com.apple.Xcode/configuring-a-multiplatform-app-target-1@2x.png)
 
 If you’re adding a Mac or Apple Vision destination to a target, choose the destination type that matches the kind of experience you want to provide from the Mac or Apple Vision menu:
 
@@ -41,9 +41,9 @@ If you’re adding a Mac or Apple Vision destination to a target, choose the des
 
 When you add multiple platforms, you can customize your project settings and build configurations for one or more platforms that you support. You can conditionalize build settings either by platform or build configuration.
 
-For example, append “Mobile” to the display name of the iOS build. In the project editor, choose the project and click the Build Settings tab. In the upper-right corner of the build settings editor, enter `display` in the filter field to quickly find the [`CFBundleDisplayName`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/CFBundleDisplayName) key. Under the key and next to the build configuration you want to vary, such as the default Debug or Release configuration, click the Add button (+). Then choose the iOS platform from the Any SDK pop-up menu and enter the alternate display name on the right.
+For example, append “Mobile” to the display name of the iOS build. In the project editor, choose the project and click the Build Settings tab. In the upper-right corner of the build settings editor, enter `display` in the filter field to quickly find the [`CFBundleDisplayName`](https://developer.apple.com/documentation/bundleresources/information-property-list/cfbundledisplayname) key. Under the key and next to the build configuration you want to vary, such as the default Debug or Release configuration, click the Add button (+). Then choose the iOS platform from the Any SDK pop-up menu and enter the alternate display name on the right.
 
-![A screenshot of Xcode showing a popover for configuring an app’s display name.](https://docs-assets.developer.apple.com/published/dafd865f17cea40573b1abcc766ac292/configuring-a-multiplatform-app-target-2%402x.png)
+![A screenshot of Xcode showing a popover for configuring an app’s display name.](/images/com.apple.Xcode/configuring-a-multiplatform-app-target-2@2x.png)
 
 Similarly, vary other keys for your build configurations, such as appending “Beta” to the display name of a beta build.
 
@@ -76,7 +76,7 @@ Toggle(isOn: $isOn) {
 
 If an entire file is platform specific, you can remove it entirely from the platforms where it’s not applicable. In the project editor, choose the target and click the Build Phases tab. Under Compile Sources in the source file row, deselect Any Supported Platform and from the Filters column pop-up menu, select the platforms.
 
-![A screenshot of Xcode that shows the platform selection popover for a source file. The current selection includes both platforms and there are checkboxes to include or exclude iOS or macOS.](https://docs-assets.developer.apple.com/published/f893fe28f346ef28ea79174c0a5623c7/configuring-a-multiplatform-app-target-3%402x.png)
+![A screenshot of Xcode that shows the platform selection popover for a source file. The current selection includes both platforms and there are checkboxes to include or exclude iOS or macOS.](/images/com.apple.Xcode/configuring-a-multiplatform-app-target-3@2x.png)
 
 ##### Customize the Experience of Your App for Each Platform
 

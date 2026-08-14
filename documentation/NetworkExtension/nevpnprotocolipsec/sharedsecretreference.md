@@ -21,7 +21,7 @@ var sharedSecretReference: Data? { get set }
 
 #### Discussion
 
-The persistent keychain reference must refer to a kerychain item of class [`kSecClassGenericPassword`](https://developer.apple.com/documentation/Security/kSecClassGenericPassword)
+The persistent keychain reference must refer to a kerychain item of class [`kSecClassGenericPassword`](https://developer.apple.com/documentation/security/ksecclassgenericpassword)
 
 ## See Also
 

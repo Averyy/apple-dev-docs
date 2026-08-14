@@ -21,7 +21,7 @@ class var divide: CIBlendKernel { get }
 
 #### Discussion
 
-![The result of using the divide blend kernel (background image is top left, foreground image is bottom left)](https://docs-assets.developer.apple.com/published/49b26a031a14cff0f673f1c62e1580e7/media-2926864%402x.png)
+![The result of using the divide blend kernel (background image is top left, foreground image is bottom left)](/images/com.apple.coreimage/media-2926864@2x.png)
 
 ## See Also
 

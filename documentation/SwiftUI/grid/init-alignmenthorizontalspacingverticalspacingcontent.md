@@ -39,7 +39,7 @@ Grid(horizontalSpacing: 30, verticalSpacing: 30) {
 
 You can list rows and the cells within rows directly, or you can use a [`ForEach`](foreach.md) structure to generate either, as the example above does:
 
-![A screenshot of a grid that contains five rows and five columns.](https://docs-assets.developer.apple.com/published/ce1054ab05e5584be7d38afca7b369b3/Grid-init-1-iOS%402x.png)
+![A screenshot of a grid that contains five rows and five columns.](/images/com.apple.SwiftUI/Grid-init-1-iOS@2x.png)
 
 By default, the grid’s alignment value applies to all of the cells in the grid. However, you can also change the alignment for particular cells or groups of cells:
 

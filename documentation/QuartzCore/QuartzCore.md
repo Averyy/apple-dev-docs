@@ -116,7 +116,7 @@ Core Animation provides high frame rates and smooth animations without burdening
 - [Transforms](transforms.md)
   Define transform matrices to apply affine transformations to layers in Core Animation.
 ### Quartz Composer
-- [class QCCompositionLayer](../Quartz/QCCompositionLayer.md)
+- [class QCCompositionLayer](../quartz/qccompositionlayer.md)
   A layer that loads, plays, and controls Quartz Composer compositions in a Core Animation layer hierarchy.
 ### Reference
 - [Core Animation Structures](core-animation-structures.md)

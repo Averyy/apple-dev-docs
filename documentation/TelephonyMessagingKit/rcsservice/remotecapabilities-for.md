@@ -7,7 +7,6 @@ Requests remote capability discovery for a given handle
 
 **Availability**:
 - iOS 26.0+
-- iPadOS 26.0+
 
 ## Declaration
 

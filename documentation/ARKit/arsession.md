@@ -34,7 +34,7 @@ let session = ARSession()
 session.delegate = self
 ```
 
-If you use one of the standard renderers (like [`ARView`](https://developer.apple.com/documentation/RealityKit/ARView), [`ARSCNView`](arscnview.md), or [`ARSKView`](arskview.md)), the renderer creates a session object for you. When you want to interact with your app’s session, you access it on your app’s renderer.
+If you use one of the standard renderers (like [`ARView`](https://developer.apple.com/documentation/realitykit/arview), [`ARSCNView`](arscnview.md), or [`ARSKView`](arskview.md)), the renderer creates a session object for you. When you want to interact with your app’s session, you access it on your app’s renderer.
 
 ```swift
 let session = myView.session
@@ -117,14 +117,14 @@ Running a session requires a configuration. Subclasses of [`ARConfiguration`](ar
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

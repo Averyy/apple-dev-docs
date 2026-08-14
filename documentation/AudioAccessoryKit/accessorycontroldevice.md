@@ -7,7 +7,6 @@ A configuration object that manages audio accessory capabilities and state.
 
 **Availability**:
 - iOS 26.4+
-- iPadOS 26.4+
 
 ## Declaration
 

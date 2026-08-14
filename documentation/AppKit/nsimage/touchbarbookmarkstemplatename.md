@@ -19,7 +19,7 @@ class let touchBarBookmarksTemplateName: String
 
 #### Discussion
 
-![Template image for bookmarks](https://docs-assets.developer.apple.com/published/cc22f75bba7a8e89f083caa700aa3367/media-2793480%402x.png)
+![Template image for bookmarks](/images/com.apple.appkit/media-2793480@2x.png)
 
 Touch Bar template images are exclusively for use in [`NSTouchBarItem`](nstouchbaritem.md) objects and not in onscreen windows.
 

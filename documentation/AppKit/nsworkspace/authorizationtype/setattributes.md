@@ -16,13 +16,13 @@ case setAttributes
 
 #### Discussion
 
-Signifies that the user has granted authorization for [`setAttributes(_:ofItemAtPath:)`](https://developer.apple.com/documentation/Foundation/FileManager/setAttributes(_:ofItemAtPath:)).
+Signifies that the user has granted authorization for [`setAttributes(_:ofItemAtPath:)`](https://developer.apple.com/documentation/foundation/filemanager/setattributes(_:ofitematpath:)).
 
 Only these attributes can be modified:
 
-- [`ownerAccountID`](https://developer.apple.com/documentation/Foundation/FileAttributeKey/ownerAccountID)
-- [`groupOwnerAccountID`](https://developer.apple.com/documentation/Foundation/FileAttributeKey/groupOwnerAccountID)
-- [`posixPermissions`](https://developer.apple.com/documentation/Foundation/FileAttributeKey/posixPermissions)
+- [`ownerAccountID`](https://developer.apple.com/documentation/foundation/fileattributekey/owneraccountid)
+- [`groupOwnerAccountID`](https://developer.apple.com/documentation/foundation/fileattributekey/groupowneraccountid)
+- [`posixPermissions`](https://developer.apple.com/documentation/foundation/fileattributekey/posixpermissions)
 
 ## See Also
 

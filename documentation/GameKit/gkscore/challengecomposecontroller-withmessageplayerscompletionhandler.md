@@ -21,7 +21,7 @@ func challengeComposeController(withMessage message: String?, players: [GKPlayer
 
 #### Return Value
 
-A [`UIViewController`](https://developer.apple.com/documentation/UIKit/UIViewController) view containing the player identifiers and a player-editable message.
+A [`UIViewController`](https://developer.apple.com/documentation/uikit/uiviewcontroller) view containing the player identifiers and a player-editable message.
 
 #### Discussion
 

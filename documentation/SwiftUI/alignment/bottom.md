@@ -24,7 +24,7 @@ static let bottom: Alignment
 
 This alignment combines the [`center`](horizontalalignment/center.md) horizontal guide and the [`bottom`](verticalalignment/bottom.md) vertical guide:
 
-![A square that’s divided into four equal quadrants. The upper-](https://docs-assets.developer.apple.com/published/e5ea2b4f60dd159f1d144bd2938d6a4d/Alignment-bottom-1-iOS%402x.png)
+![A square that’s divided into four equal quadrants. The upper-](/images/com.apple.SwiftUI/Alignment-bottom-1-iOS@2x.png)
 
 ## See Also
 

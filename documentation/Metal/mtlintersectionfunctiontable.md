@@ -62,7 +62,7 @@ Use the methods on this instance to set the table entries to point at the inters
 ### Inherits From
 - [MTLAllocation](mtlallocation.md)
 - [MTLResource](mtlresource.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

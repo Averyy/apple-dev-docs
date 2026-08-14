@@ -17,7 +17,7 @@ static kern_return_t Create(IOService *provider, uint32_t index, IODispatchQueue
 
 #### Return_value
 
-[`kIOReturnSuccess`](https://developer.apple.com/documentation/driverkit/kioreturnsuccess) on success, or another value if an error occurs. See `Error Codes`. 
+[`kIOReturnSuccess`](https://developer.apple.com/documentation/driverkit/kioreturnsuccess) on success, or another value if an error occurs. See [`Error Codes`](https://developer.apple.com/documentation/driverkit/error-codes). 
 
 #### Discussion
 
@@ -25,19 +25,19 @@ Creates a new interrupt source for the specified provider object. After creating
 
 ## Parameters
 
-- `provider`: The   object representing the hardware device that generated the interrupt.
+- `provider`: The [`IOService`](https://developer.apple.com/documentation/driverkit/ioservice) object representing the hardware device that generated the interrupt.
 - `index`: The index for the interrupt.
 - `queue`: The dispatch queue on which to run any handler blocks.
 - `source`: A variable for storing the dispatch source. On return, this variable contains the retained object. You are responsible for releasing this object. 
 
 ## See Also
 
-- [- SetHandler](../driverkit/iointerruptdispatchsource/sethandler.md)
-  Set the handler block to run when the interrupt fires.
 - [- init](iointerruptdispatchsource/3438203-init.md)
   Handles the basic initialization of the dispatch source.
 - [- free](iointerruptdispatchsource/3438202-free.md)
   Performs any final cleanup for the dispatch source.
+- [- SetHandler](../driverkit/iointerruptdispatchsource/sethandler.md)
+  Set the handler block to run when the interrupt fires.
 
 
 ---

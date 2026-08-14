@@ -39,7 +39,7 @@ Techniques let you specify approaches to rendering a scene that involves multipl
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 ### Conforming Types
 - [SCNCamera](scncamera.md)
 - [SCNLayer](scnlayer.md)

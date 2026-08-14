@@ -7,7 +7,7 @@ Create and manage a system-wide network relay configuration that uses built-in p
 ## Topics
 
 ### Essentials
-- [Network Extensions Entitlement](../BundleResources/Entitlements/com.apple.developer.networking.networkextension.md)
+- [Network Extensions Entitlement](../bundleresources/entitlements/com.apple.developer.networking.networkextension.md)
   The APIs an app can use to customize networking features.
 ### Relay configuration
 - [class NERelayManager](nerelaymanager.md)

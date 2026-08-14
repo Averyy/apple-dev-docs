@@ -10,7 +10,7 @@ A transformation matrix defines how to map points from one coordinate space into
 
 All values in the matrix are 32-bit fixed-point numbers divided as `16.16`, except for the `{u, v, w}` column, which contains 32-bit fixed-point numbers divided as `2.30`. The following figure illustrates the matrix formula QuickTime uses to transform displayed objects.
 
-![An image that shows the matrix formula QuickTime uses to map points from one coordinate space to another. The formula shows a one row, three column matrix with the values x, y, and 1, multiplied by a three row, three column matrix, with the values a, b, and u in the first row, c, d, and v in the second row, and t subscript x, t subscript y, and w in the third row, is equal to a one row, three column matrix with the values x’, y’, and 1.](https://docs-assets.developer.apple.com/published/1bd76ba53b19faeedf2d4176439d17e4/basic-data-type-matrix%402x.png)
+![An image that shows the matrix formula QuickTime uses to map points from one coordinate space to another. The formula shows a one row, three column matrix with the values x, y, and 1, multiplied by a three row, three column matrix, with the values a, b, and u in the first row, c, d, and v in the second row, and t subscript x, t subscript y, and w in the third row, is equal to a one row, three column matrix with the values x’, y’, and 1.](/images/com.apple.qtff/basic-data-type-matrix@2x.png)
 
 When you specify a matrix in a movie header atom for a movie atom, QuickTime applies the transformation from the matrix to the atoms included in the movie atom, such as a clipping atom, one or more track atoms, a user data atom, and a color table atom.
 

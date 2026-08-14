@@ -27,8 +27,8 @@ Text is rendered in the current font, with the current `textBaseline` aligned wi
 ## Parameters
 
 - `text`: A string containing the text to draw.
-- `x`: The x-coordinate of the   point (the left edge, right edge, or center of the text).
-- `y`: The y-coordinate of the   point.
+- `x`: The x-coordinate of the `textAlign` point (the left edge, right edge, or center of the text).
+- `y`: The y-coordinate of the `textBaseline` point.
 - `maxWidth`: The maximum width of the string, in pixels. This parameter is optional. If omitted, the current font size is used and text is clipped if it falls outside the canvas’s clipping region. If a maximum width is specified, the font size is scaled down if necessary to fit the text inside the specified width.
 
 ## See Also

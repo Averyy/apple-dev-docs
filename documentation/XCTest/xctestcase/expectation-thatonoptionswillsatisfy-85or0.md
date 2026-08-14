@@ -19,7 +19,7 @@ func expectation<T, V>(that keyPath: KeyPath<T, V>, on observedObject: T, option
 
 #### Return Value
 
-Creates and returns an expectation associated with the test case that a specific key-value observing (KVO) condition fulfills, see [`Using Key-Value Observing in Swift`](https://developer.apple.com/documentation/Swift/using-key-value-observing-in-swift).
+Creates and returns an expectation associated with the test case that a specific key-value observing (KVO) condition fulfills, see [`Using Key-Value Observing in Swift`](https://developer.apple.com/documentation/swift/using-key-value-observing-in-swift).
 
 ## Parameters
 

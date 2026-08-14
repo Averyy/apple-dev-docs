@@ -39,16 +39,16 @@ For more information on adding Accessibility Nutrition Labels to your app, see [
 ## Topics
 
 ### Essentials
-- [Accessibility updates](../Updates/Accessibility.md)
+- [Accessibility updates](../updates/accessibility.md)
   Learn about important changes to Accessibility.
-- [Accessibility](https://developer.apple.com/design/Human-Interface-Guidelines/accessibility)
+- [Accessibility](https://developer.apple.com/design/human-interface-guidelines/accessibility)
   Accessible user interfaces empower everyone to have a great experience with your app or game.
 - [Performing accessibility testing for your app](performing-accessibility-testing-for-your-app.md)
   Test your app with accessibility settings and assistive technologies to discover and address accessibility issues.
 ### Sample code
 - [Enhancing the accessibility of your SwiftUI app](enhancing-the-accessibility-of-your-swiftui-app.md)
   Support advancements in SwiftUI accessibility to make your app accessible to everyone.
-- [Creating accessible views](../SwiftUI/creating-accessible-views.md)
+- [Creating accessible views](../swiftui/creating-accessible-views.md)
   Make your app accessible to everyone by applying accessibility modifiers to your SwiftUI views.
 - [Delivering an exceptional accessibility experience](delivering_an_exceptional_accessibility_experience.md)
   Make improvements to your app’s interaction model to support assistive technologies such as VoiceOver.
@@ -77,11 +77,11 @@ For more information on adding Accessibility Nutrition Labels to your app, see [
 - [Accessibility API](accessibility-api.md)
   Browse API in the Accessibility framework.
 ### Platforms
-- [Accessibility fundamentals](../SwiftUI/Accessibility-fundamentals.md)
+- [Accessibility fundamentals](../swiftui/accessibility-fundamentals.md)
   Make your SwiftUI apps accessible to everyone, including people with disabilities.
-- [Accessibility for UIKit](../UIKit/accessibility-for-uikit.md)
+- [Accessibility for UIKit](../uikit/accessibility-for-uikit.md)
   Make your UIKit apps accessible to everyone who uses iOS and tvOS.
-- [Accessibility for AppKit](../AppKit/accessibility-for-appkit.md)
+- [Accessibility for AppKit](../appkit/accessibility-for-appkit.md)
   Make your AppKit apps accessible to everyone who uses macOS.
 - [Accessibility for visionOS](accessibility-for-visionos.md)
   Make your apps accessible to everyone who uses visionOS.

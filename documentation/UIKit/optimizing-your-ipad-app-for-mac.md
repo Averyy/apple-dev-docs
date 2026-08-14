@@ -18,7 +18,7 @@ The Mac version of your iPad app supports many system features found in macOS wi
 
 You can, however, extend your app to take advantage of even more system features.
 
-> ❗ **Important**:  Mac apps built with Mac Catalyst can only use [`AppKit`](https://developer.apple.com/documentation/AppKit) APIs marked as available in Mac Catalyst, such as [`NSToolbar`](https://developer.apple.com/documentation/AppKit/NSToolbar) and [`NSTouchBar`](https://developer.apple.com/documentation/AppKit/NSTouchBar). Mac Catalyst doesn’t support accessing unavailable AppKit APIs.
+> ❗ **Important**:  Mac apps built with Mac Catalyst can only use [`AppKit`](https://developer.apple.com/documentation/appkit) APIs marked as available in Mac Catalyst, such as [`NSToolbar`](https://developer.apple.com/documentation/appkit/nstoolbar) and [`NSTouchBar`](https://developer.apple.com/documentation/appkit/nstouchbar). Mac Catalyst doesn’t support accessing unavailable AppKit APIs.
 
 ##### Add Menu Bar Items
 
@@ -84,13 +84,13 @@ class ViewController: UIViewController {
 
 ## See Also
 
-- [Bring an iPad App to the Mac with Mac Catalyst](https://developer.apple.com/tutorials/Mac-Catalyst)
+- [Bring an iPad App to the Mac with Mac Catalyst](https://developer.apple.com/tutorials/mac-catalyst)
   Build a native Mac app from the same codebase as your iPad app.
 - [Choosing a user interface idiom for your Mac app](choosing-a-user-interface-idiom-for-your-mac-app.md)
   Select the iPad or the Mac user interface idiom in your Mac app built with Mac Catalyst.
-- [LSMinimumSystemVersion](../BundleResources/Information-Property-List/LSMinimumSystemVersion.md)
+- [LSMinimumSystemVersion](../bundleresources/information-property-list/lsminimumsystemversion.md)
   The minimum version of the operating system required for the app to run in macOS.
-- [UIApplicationSupportsTabbedSceneCollection](../BundleResources/Information-Property-List/UIApplicationSceneManifest/UIApplicationSupportsTabbedSceneCollection.md)
+- [UIApplicationSupportsTabbedSceneCollection](../bundleresources/information-property-list/uiapplicationscenemanifest/uiapplicationsupportstabbedscenecollection.md)
   A Boolean value indicating whether an app built with Mac Catalyst supports automatic tabbing mode.
 
 

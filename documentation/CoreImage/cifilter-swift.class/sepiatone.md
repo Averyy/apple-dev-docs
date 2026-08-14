@@ -47,7 +47,7 @@ func sepiaTone(inputImage: CIImage ) -> CIImage {
 }
 ```
 
-![Two pictures of a pink flower surrounded by foliage. The photo on the left shows a single flower photographed close-up, in focus, with good light and no effects. In the photo on the right, a photo effect sepia tone filter is applied, transforming the colors in the image to a brown hue. ](https://docs-assets.developer.apple.com/published/8c963a9246969c9124bdb6e929001718/media-3545028%402x.png)
+![Two pictures of a pink flower surrounded by foliage. The photo on the left shows a single flower photographed close-up, in focus, with good light and no effects. In the photo on the right, a photo effect sepia tone filter is applied, transforming the colors in the image to a brown hue. ](/images/com.apple.coreimage/media-3545028@2x.png)
 
 ## See Also
 

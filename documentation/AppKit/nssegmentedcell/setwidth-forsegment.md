@@ -17,7 +17,7 @@ func setWidth(_ width: CGFloat, forSegment segment: Int)
 ## Parameters
 
 - `width`: The width of the segment, measured in points. Specify the value `0` if you want the segment to be sized to fit the available space automatically.
-- `segment`: The index of the segment whose width you want to set. This method raises an exception ([`rangeException`](https://developer.apple.com/documentation/Foundation/NSExceptionName/rangeException)) if the index is out of bounds.
+- `segment`: The index of the segment whose width you want to set. This method raises an exception ([`rangeException`](https://developer.apple.com/documentation/foundation/nsexceptionname/rangeexception)) if the index is out of bounds.
 
 ## See Also
 

@@ -33,7 +33,7 @@ This function calculates the differences of the first `N` elements of input vect
     C[n] = A[n] - B[n];
 ```
 
-![A diagram showing the operation of this function. There are three rows. The top row represents the input vectors, A and B, with three boxes of each. The middle row represents the operation as three boxes with minus signs. The bottom row represents the output vector C as three boxes. The diagram has connecting lines from the input vectors to the operation, and from the operation to the output vectors.](https://docs-assets.developer.apple.com/published/b6392409a61e2886a212bf90df89b30c/media-4336885%402x.png)
+![A diagram showing the operation of this function. There are three rows. The top row represents the input vectors, A and B, with three boxes of each. The middle row represents the operation as three boxes with minus signs. The bottom row represents the output vector C as three boxes. The diagram has connecting lines from the input vectors to the operation, and from the operation to the output vectors.](/images/com.apple.accelerate/media-4336885@2x.png)
 
 The following code shows an example of using this function:
 

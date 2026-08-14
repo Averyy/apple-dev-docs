@@ -8,7 +8,7 @@ Trace and fill built-in and custom shapes with a color, gradient, or other patte
 
 Draw shapes like circles and rectangles, as well as custom paths that define shapes of your own design. Apply styles that include environment-aware colors, rich gradients, and material effects to the foreground, background, and outline of your shapes.
 
-![None](https://docs-assets.developer.apple.com/published/b96b0c072d71e44a18d813a1b180ba9b/shapes-hero%402x.png)
+![None](/images/com.apple.SwiftUI/shapes-hero@2x.png)
 
 If you need the efficiency or flexibility of immediate mode drawing — for example, to create particle effects — use a [`Canvas`](canvas.md) view instead.
 

@@ -19,7 +19,7 @@ void module::setLifetime(float lifetime)
 
 Use this function to control how long an element will exist before being automatically removed from the system.
 
-> **Note**: ![Graph](https://docs-assets.developer.apple.com/published/840e7effcd2650ba021051da15f21900/module__setLifetime.svg)
+> **Note**: ![Graph](/images/com.apple.computegraph/module__setLifetime.svg)
 
 ## Parameters
 

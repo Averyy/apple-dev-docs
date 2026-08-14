@@ -8,7 +8,7 @@ Display data in a single column of customizable rows.
 
 A table view displays a single column of vertically scrolling content, divided into rows and sections. Each row of a table displays a single piece of information related to your app. Sections let you group related rows together. For example, the Contacts app uses a table to display the names of the user’s contacts.
 
-![A screenshot of the Contacts app, which uses a table to organize the user's individual contacts in a scrolling list.](https://docs-assets.developer.apple.com/published/c3bbc132299c757114b6ed3a962aa36a/uitableview-1%402x.png)
+![A screenshot of the Contacts app, which uses a table to organize the user's individual contacts in a scrolling list.](/images/com.apple.uikit/uitableview-1@2x.png)
 
 Table views are a collaboration between many different objects, including:
 
@@ -98,7 +98,7 @@ Table views are a collaboration between many different objects, including:
 
 ## See Also
 
-- [Autosizing views for localization in iOS](../Xcode/autosizing-views-for-localization-in-ios.md)
+- [Autosizing views for localization in iOS](../xcode/autosizing-views-for-localization-in-ios.md)
   Add auto layout constraints to your app to achieve localizable views.
 - [Collection views](collection-views.md)
   Display nested views using a configurable and highly customizable layout.

@@ -6,12 +6,12 @@ Recognize custom link tokens that your app receives in the sandbox testing envir
 
 #### Overview
 
-When you test your app in the sandbox environment, the External Purchase API returns tokens that are valid only in that environment. These tokens have an [`externalPurchaseId`](https://developer.apple.com/documentation/ExternalPurchaseServerAPI/externalPurchaseId) that starts with the string `SANDBOX`. For more information about the token format, see [`Receiving and decoding external purchase tokens`](receiving-and-decoding-external-purchase-tokens.md).
+When you test your app in the sandbox environment, the External Purchase API returns tokens that are valid only in that environment. These tokens have an [`externalPurchaseId`](https://developer.apple.com/documentation/externalpurchaseserverapi/externalpurchaseid) that starts with the string `SANDBOX`. For more information about the token format, see [`Receiving and decoding external purchase tokens`](receiving-and-decoding-external-purchase-tokens.md).
 
 Apps running in the sandbox environment need to satisfy the same requirements as they do in the production environment to receive external purchase tokens, including that they:
 
-- Have an entitlement, such as [`com.apple.developer.storekit.external-purchase-link`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.storekit.external-purchase-link) or  [`com.apple.developer.storekit.external-purchase-link-streaming`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.storekit.external-purchase-link-streaming)
-- Configure the associated property list key if the entitlement requires one, such as [`SKExternalPurchaseCustomLinkRegions`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/SKExternalPurchaseCustomLinkRegions) or [`SKExternalPurchaseLinkStreamingRegions`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/SKExternalPurchaseLinkStreamingRegions)
+- Have an entitlement, such as [`com.apple.developer.storekit.external-purchase-link`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.storekit.external-purchase-link) or  [`com.apple.developer.storekit.external-purchase-link-streaming`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.storekit.external-purchase-link-streaming)
+- Configure the associated property list key if the entitlement requires one, such as [`SKExternalPurchaseCustomLinkRegions`](https://developer.apple.com/documentation/bundleresources/information-property-list/skexternalpurchasecustomlinkregions) or [`SKExternalPurchaseLinkStreamingRegions`](https://developer.apple.com/documentation/bundleresources/information-property-list/skexternalpurchaselinkstreamingregions)
 - Check their eligibility to use the [`External Purchase`](external-purchase.md) API at runtime, with [`isEligible`](externalpurchasecustomlink/iseligible.md) and [`canMakePayments`](appstore/canmakepayments.md)
 
 ##### Handle Custom Link Tokens in the Sandbox Environment
@@ -28,7 +28,7 @@ After a `SERVICES` token period expires, your app can request a new `SERVICES` t
 
 ##### Test Reporting Tokens on Your Server
 
-To test your server’s token reporting implementation, send reports for sandbox tokens to the Sandbox URL of the [`Send External Purchase Report`](https://developer.apple.com/documentation/ExternalPurchaseServerAPI/Send-External-Purchase-Report) endpoint. For more information about reporting tokens, see [`External Purchase Server API`](https://developer.apple.com/documentation/ExternalPurchaseServerAPI).
+To test your server’s token reporting implementation, send reports for sandbox tokens to the Sandbox URL of the [`Send External Purchase Report`](https://developer.apple.com/documentation/externalpurchaseserverapi/send-external-purchase-report) endpoint. For more information about reporting tokens, see [`External Purchase Server API`](https://developer.apple.com/documentation/externalpurchaseserverapi).
 
 To report transactions, you can use any token for the customer that’s active (not expired) at the time of the transaction.
 
@@ -38,11 +38,11 @@ To report transactions, you can use any token for the customer that’s active (
   An enumeration that enables qualifying apps to offer custom links for external purchases and use alternative payment service providers.
 - [ExternalPurchaseCustomLink.Token](externalpurchasecustomlink/token.md)
   A token you use with the External Purchase custom link API.
-- [com.apple.developer.storekit.custom-purchase-link.allowed-regions](../BundleResources/Entitlements/com.apple.developer.storekit.custom-purchase-link.allowed-regions.md)
+- [com.apple.developer.storekit.custom-purchase-link.allowed-regions](../bundleresources/entitlements/com.apple.developer.storekit.custom-purchase-link.allowed-regions.md)
   An entitlement that enables a qualifying app to offer external purchases within app or at a website, in specific regions.
-- [com.apple.developer.storekit.external-purchase-link](../BundleResources/Entitlements/com.apple.developer.storekit.external-purchase-link.md)
+- [com.apple.developer.storekit.external-purchase-link](../bundleresources/entitlements/com.apple.developer.storekit.external-purchase-link.md)
   A Boolean value that indicates whether your app can include a link that directs people to a website to make an external purchase.
-- [SKExternalPurchaseCustomLinkRegions](../BundleResources/Information-Property-List/SKExternalPurchaseCustomLinkRegions.md)
+- [SKExternalPurchaseCustomLinkRegions](../bundleresources/information-property-list/skexternalpurchasecustomlinkregions.md)
   An array of country code strings that indicate the regions where your app supports custom links for the communication and promotion of offers.
 
 

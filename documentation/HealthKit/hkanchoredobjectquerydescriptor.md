@@ -65,13 +65,13 @@ repeat {
 } while (results.addedSamples != []) && (results.deletedObjects != [])
 ```
 
-> 💡 **Tip**:  Because [`HKQueryAnchor`](hkqueryanchor.md) instances adopt the [`NSSecureCoding`](https://developer.apple.com/documentation/Foundation/NSSecureCoding) protocol, you can save the most recent anchor and use it the next time your app launches.
+> 💡 **Tip**:  Because [`HKQueryAnchor`](hkqueryanchor.md) instances adopt the [`NSSecureCoding`](https://developer.apple.com/documentation/foundation/nssecurecoding) protocol, you can save the most recent anchor and use it the next time your app launches.
 
 ##### Monitor for Changes
 
 To monitor the HealthKit store for changes, start by creating an [`HKAnchoredObjectQueryDescriptor`](hkanchoredobjectquerydescriptor.md) instance that matches the data you want to monitor. Pass in the anchor from the last time you read data from the HealthKit store.
 
-Next, call the query descriptor’s [`results(for:)`](hkanchoredobjectquerydescriptor/results(for:).md) method to start your long-running query. This method returns an [`AsyncSequence`](https://developer.apple.com/documentation/Swift/AsyncSequence) instance which HealthKit uses to return `Element` instances. The first result represents any changes currently in the HealthKit store, and additional results represent changes as they occur.
+Next, call the query descriptor’s [`results(for:)`](hkanchoredobjectquerydescriptor/results(for:).md) method to start your long-running query. This method returns an [`AsyncSequence`](https://developer.apple.com/documentation/swift/asyncsequence) instance which HealthKit uses to return `Element` instances. The first result represents any changes currently in the HealthKit store, and additional results represent changes as they occur.
 
 ```swift
 let stepType = HKQuantityType(.stepCount)
@@ -121,12 +121,12 @@ updateTask = Task {
 ## Relationships
 
 ### Conforms To
-- [Copyable](../Swift/Copyable.md)
-- [Escapable](../Swift/Escapable.md)
+- [Copyable](../swift/copyable.md)
+- [Escapable](../swift/escapable.md)
 - [HKAsyncQuery](hkasyncquery.md)
 - [HKAsyncSequenceQuery](hkasyncsequencequery.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

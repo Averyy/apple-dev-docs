@@ -55,15 +55,15 @@ These considerations extend to the availability of certain formatter styles as w
 
 |  | `namePrefix` | `givenName` | `middleName` | `familyName` | `nameSuffix` | `nickname` |
 | --- | --- | --- | --- | --- | --- | --- |
-| Arabic ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) `(ar-SA)` | .د | أحمد |  | محمدالمصري |  |  |
-| Chinese ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) `(zh-Hans)` | 物理学博士 | 振宁 |  | 杨 | 先生 |  |
-| English ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) `(en-US)` | Dr. | Jonathan | Maple | Appleseed | Esq. | Johnny |
-| French ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) `(fr-FR)` | Père | Jean-Philippe |  | de Zélicourt |  | JP |
-| German ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) `(de-DE)` | Dr. med. | Max |  | Mustermann | junior, M.A. |  |
-| Hindi ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) `(hi-IN)` | डॉ. | रिय |  | साहिल |  |  |
-| Japanese ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) `(ja-JP)` |  | 泰夫 |  | 木田 | 先生 |  |
-| Spanish ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) `(es-ES)` | Dr. | José Ramiro |  | Martín González de Rivera | júnior, PhD | Ramiro |
-| Thai ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) `(th-TH)` | ฯพณฯ | สมชาย | ปีเตอร์ | รัตนเรืองรองบวรทิพย์ |  |  |
+| Arabic ![None](/images/com.apple.foundation/spacer.png) `(ar-SA)` | .د | أحمد |  | محمدالمصري |  |  |
+| Chinese ![None](/images/com.apple.foundation/spacer.png) `(zh-Hans)` | 物理学博士 | 振宁 |  | 杨 | 先生 |  |
+| English ![None](/images/com.apple.foundation/spacer.png) `(en-US)` | Dr. | Jonathan | Maple | Appleseed | Esq. | Johnny |
+| French ![None](/images/com.apple.foundation/spacer.png) `(fr-FR)` | Père | Jean-Philippe |  | de Zélicourt |  | JP |
+| German ![None](/images/com.apple.foundation/spacer.png) `(de-DE)` | Dr. med. | Max |  | Mustermann | junior, M.A. |  |
+| Hindi ![None](/images/com.apple.foundation/spacer.png) `(hi-IN)` | डॉ. | रिय |  | साहिल |  |  |
+| Japanese ![None](/images/com.apple.foundation/spacer.png) `(ja-JP)` |  | 泰夫 |  | 木田 | 先生 |  |
+| Spanish ![None](/images/com.apple.foundation/spacer.png) `(es-ES)` | Dr. | José Ramiro |  | Martín González de Rivera | júnior, PhD | Ramiro |
+| Thai ![None](/images/com.apple.foundation/spacer.png) `(th-TH)` | ฯพณฯ | สมชาย | ปีเตอร์ | รัตนเรืองรองบวรทิพย์ |  |  |
 
 ###### Default
 
@@ -190,16 +190,16 @@ If the Abbreviated style is unavailable, the Short style is used instead—unles
 ### Inherits From
 - [Formatter](formatter.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
 - [NSCoding](nscoding.md)
 - [NSCopying](nscopying.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

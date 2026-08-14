@@ -22,7 +22,7 @@ let kSecAttrGeneric: CFString
 
 #### Discussion
 
-The corresponding value is of type [`CFData`](https://developer.apple.com/documentation/CoreFoundation/CFData) and contains a user-defined attribute. Items of class [`kSecClassGenericPassword`](ksecclassgenericpassword.md) have this attribute.
+The corresponding value is of type [`CFData`](https://developer.apple.com/documentation/corefoundation/cfdata) and contains a user-defined attribute. Items of class [`kSecClassGenericPassword`](ksecclassgenericpassword.md) have this attribute.
 
 
 ---

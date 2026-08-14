@@ -25,7 +25,7 @@ let SKStoreProductParameterAdNetworkIdentifier: String
 
 #### Discussion
 
-The value for this key is an [`NSString`](https://developer.apple.com/documentation/Foundation/NSString).
+The value for this key is an [`NSString`](https://developer.apple.com/documentation/foundation/nsstring).
 
 Ad networks obtain an ad network identifier during registration. Ad networks are responsible for sharing their ad network IDs with participating app developers. Apps that display ads and need to initiate the app install validation process must include the ad network ID in their `Info.plist`. For more information see [`Registering an ad network`](registering-an-ad-network.md) and `Configuring Apps`.
 

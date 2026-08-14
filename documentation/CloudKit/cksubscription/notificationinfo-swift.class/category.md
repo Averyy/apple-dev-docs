@@ -21,7 +21,7 @@ var category: String? { get set }
 
 #### Discussion
 
-Categories allow you to present custom actions to the user on your push notifications. For more information, see [`UIMutableUserNotificationCategory`](https://developer.apple.com/documentation/UIKit/UIMutableUserNotificationCategory).
+Categories allow you to present custom actions to the user on your push notifications. For more information, see [`UIMutableUserNotificationCategory`](https://developer.apple.com/documentation/uikit/uimutableusernotificationcategory).
 
 ## See Also
 

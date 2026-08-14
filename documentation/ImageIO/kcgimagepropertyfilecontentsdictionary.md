@@ -22,7 +22,7 @@ let kCGImagePropertyFileContentsDictionary: CFString
 
 #### Discussion
 
-The value of this property is a [`CFDictionary`](https://developer.apple.com/documentation/CoreFoundation/CFDictionary).
+The value of this property is a [`CFDictionary`](https://developer.apple.com/documentation/corefoundation/cfdictionary).
 
 
 ---

@@ -18,7 +18,7 @@ func setAuthorizationRights(_ authorizationRights: UnsafePointer<AuthorizationRi
 
 Either this method or the [`setString(_:)`](sfauthorizationview/setstring(_:).md) method must be called before the view displays correctly.
 
-The authorization rights structures are defined in [`AuthorizationRights`](https://developer.apple.com/documentation/Security/AuthorizationRights) in [`Authorization Services`](https://developer.apple.com/documentation/Security/authorization-services).
+The authorization rights structures are defined in [`AuthorizationRights`](https://developer.apple.com/documentation/security/authorizationrights) in [`Authorization Services`](https://developer.apple.com/documentation/security/authorization-services).
 
 ## Parameters
 

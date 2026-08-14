@@ -50,7 +50,7 @@ Safari’s developer tools include a debugger that you can use to debug scripts 
 
 To debug your JavaScript content scripts in macOS, choose Develop > Show Web Inspector from the Safari menu bar. In iOS, have a simulator open with your extension or attach your iOS device to your computer, then select your simulator or device from Safari’s Develop menu on your computer, and select the page with your extension. Click the Sources tab, and select your content script file from the Extension Scripts folder at the lower left. Then select your extension’s execution context by using the selector in the lower-right corner of the inspector. Set breakpoints by clicking the gutter with line numbers in the source view. Inspect other source files for your extension, such as style sheets, in the Sources area at the lower left.
 
-![A screenshot that shows the Safari web inspector view, showing a selected content script file in the Sources tab with a breakpoint set.](https://docs-assets.developer.apple.com/published/6b0c1c8291dc6787d5d21d5d631bda66/media-3734526%402x.png)
+![A screenshot that shows the Safari web inspector view, showing a selected content script file in the Sources tab with a breakpoint set.](/images/com.apple.safariservices/media-3734526@2x.png)
 
 To debug background scripts in macOS, choose Develop > Web Extension Background Pages and select your background script. In Safari 17 and later in macOS, choose Develop > Web Extension Background Content, then select your background script and profile. In iOS, connect the device to a Mac. In Safari on the Mac, choose Develop > Device, and then select the item containing your extension name, “Extension Background Page,” and the filename of your background script.
 
@@ -58,7 +58,7 @@ To debug your extension’s pop-up in macOS, click the button for your extension
 
 ##### Log Messages to the System Console
 
-If you’re having issues messaging between your native app and your web extension in macOS, log messages to the system console to perform basic debugging. See [`Diagnosing and resolving bugs in your running app`](https://developer.apple.com/documentation/Xcode/diagnosing-and-resolving-bugs-in-your-running-app) to use Xcode’s debugger to inspect your native app when you need more comprehensive debugging tools.
+If you’re having issues messaging between your native app and your web extension in macOS, log messages to the system console to perform basic debugging. See [`Diagnosing and resolving bugs in your running app`](https://developer.apple.com/documentation/xcode/diagnosing-and-resolving-bugs-in-your-running-app) to use Xcode’s debugger to inspect your native app when you need more comprehensive debugging tools.
 
 In the native part of the macOS or iOS app or extension, make calls to `NSLog` (for Objective-C) or `print` (for Swift) to log messages in the system console, and view them in Console.app.
 

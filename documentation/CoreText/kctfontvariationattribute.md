@@ -24,7 +24,7 @@ let kCTFontVariationAttribute: CFString
 
 If specified in a font descriptor, fonts with the specified axes are primary match candidates; if no such fonts exist, this attribute is ignored.
 
-The value associated with this key is a [`CFDictionary`](https://developer.apple.com/documentation/CoreFoundation/CFDictionary) object.
+The value associated with this key is a [`CFDictionary`](https://developer.apple.com/documentation/corefoundation/cfdictionary) object.
 
 ## See Also
 

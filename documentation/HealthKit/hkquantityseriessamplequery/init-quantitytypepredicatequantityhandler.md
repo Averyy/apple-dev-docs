@@ -27,7 +27,7 @@ HealthKit returns quantities in ascending order, based on their start date.
 
 - `quantityType`: The quantity type.
 - `predicate`: A predicate used to filter the results. To query for all the quantity objects for a specific [`HKQuantitySample`](hkquantitysample.md), see [`predicateForObject(with:)`](hkquery/predicateforobject(with:).md).
-- `quantityHandler`: A handler called by the query with the results. The query calls the block multiple times until either the `done` parameter is [`true`](https://developer.apple.com/documentation/Foundation/NSExpression/true), or you call the HealthKit store’s [`stop(_:)`](hkhealthstore/stop(_:).md) method. The handler takes the following arguments: - **`query`**: The query that generated the results.
+- `quantityHandler`: A handler called by the query with the results. The query calls the block multiple times until either the `done` parameter is [`true`](https://developer.apple.com/documentation/foundation/nsexpression/true), or you call the HealthKit store’s [`stop(_:)`](hkhealthstore/stop(_:).md) method. The handler takes the following arguments: - **`query`**: The query that generated the results.
 - **`quantity`**: The next quantity in the series.
 - **`dateInterval`**: The quantity’s date interval.
 - **`quantitySample`**: The quantity sample that owns the series. This parameter is set to `nil` unless [`includeSample`](hkquantityseriessamplequery/includesample.md) is true.

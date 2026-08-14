@@ -16,9 +16,9 @@ var isCollapsed: Bool { get set }
 
 #### Discussion
 
-When [`true`](https://developer.apple.com/documentation/Swift/true), the candidate list is collapsed and not visible to the user.
+When [`true`](https://developer.apple.com/documentation/swift/true), the candidate list is collapsed and not visible to the user.
 
-The default value is [`true`](https://developer.apple.com/documentation/Swift/true).
+The default value is [`true`](https://developer.apple.com/documentation/swift/true).
 
 ## See Also
 

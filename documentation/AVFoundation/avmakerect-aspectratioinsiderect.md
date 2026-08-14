@@ -25,7 +25,7 @@ Returns a scaled `CGRect` that maintains the aspect ratio specified by `aspectRa
 
 #### Discussion
 
-Use this function when attempting to fit the presentation size of a player item object’s content within the bounds of another [`CALayer`](https://developer.apple.com/documentation/QuartzCore/CALayer). Use the returned [`CGRect`](https://developer.apple.com/documentation/CoreFoundation/CGRect) as the player layer’s [`frame`](https://developer.apple.com/documentation/QuartzCore/CALayer/frame) property value. For example:
+Use this function when attempting to fit the presentation size of a player item object’s content within the bounds of another [`CALayer`](https://developer.apple.com/documentation/quartzcore/calayer). Use the returned [`CGRect`](https://developer.apple.com/documentation/corefoundation/cgrect) as the player layer’s [`frame`](https://developer.apple.com/documentation/quartzcore/calayer/frame) property value. For example:
 
 **Swift**:
 

@@ -3,7 +3,7 @@
 **Framework**: CryptoTokenKit  
 **Kind**: property
 
-Whether sessions established for the Smart Card should be considered sensitive. [`false`](https://developer.apple.com/documentation/Swift/false) by default.
+Whether sessions established for the Smart Card should be considered sensitive. [`false`](https://developer.apple.com/documentation/swift/false) by default.
 
 **Availability**:
 - iOS 9.0+
@@ -22,7 +22,7 @@ var isSensitive: Bool { get set }
 
 #### Discussion
 
-When this property is set to [`true`](https://developer.apple.com/documentation/Swift/true), any sessions established for the receiver will begin and end by sending a reset command to the Smart Card. This is recommended anytime potentially sensitive information is transferred.
+When this property is set to [`true`](https://developer.apple.com/documentation/swift/true), any sessions established for the receiver will begin and end by sending a reset command to the Smart Card. This is recommended anytime potentially sensitive information is transferred.
 
 ## See Also
 

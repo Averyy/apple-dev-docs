@@ -20,9 +20,9 @@ class var afterCATransactionCommit: UIUpdateActionPhase { get }
 
 #### Discussion
 
-This phase runs after [`flush()`](https://developer.apple.com/documentation/QuartzCore/CATransaction/flush()). By default, any changes you make to the Core Animation layer tree during this phase or later appear onscreen with the next UI update instead of the current one. However, if you opt in to low-latency event dispatch with [`wantsLowLatencyEventDispatch`](uiupdatelink/wantslowlatencyeventdispatch.md), any changes you make to the Core Animation layer tree before or during the [`beforeLowLatencyCATransactionCommit`](uiupdateactionphase/beforelowlatencycatransactioncommit.md) phase appear onscreen with the current UI update.
+This phase runs after [`flush()`](https://developer.apple.com/documentation/quartzcore/catransaction/flush()). By default, any changes you make to the Core Animation layer tree during this phase or later appear onscreen with the next UI update instead of the current one. However, if you opt in to low-latency event dispatch with [`wantsLowLatencyEventDispatch`](uiupdatelink/wantslowlatencyeventdispatch.md), any changes you make to the Core Animation layer tree before or during the [`beforeLowLatencyCATransactionCommit`](uiupdateactionphase/beforelowlatencycatransactioncommit.md) phase appear onscreen with the current UI update.
 
-> ❗ **Important**:  Although you can send the latest Core Animation layer changes to the render server right away by calling [`commit()`](https://developer.apple.com/documentation/QuartzCore/CATransaction/commit()) or [`flush()`](https://developer.apple.com/documentation/QuartzCore/CATransaction/flush()) manually, doing so isn’t recommended. Calling these methods manually might send unrelated changes to the render server prematurely.
+> ❗ **Important**:  Although you can send the latest Core Animation layer changes to the render server right away by calling [`commit()`](https://developer.apple.com/documentation/quartzcore/catransaction/commit()) or [`flush()`](https://developer.apple.com/documentation/quartzcore/catransaction/flush()) manually, doing so isn’t recommended. Calling these methods manually might send unrelated changes to the render server prematurely.
 
 ## See Also
 

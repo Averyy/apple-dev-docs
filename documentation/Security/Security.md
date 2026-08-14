@@ -24,14 +24,14 @@ Use the Security framework to protect information, establish trust, and control 
 
 As shown in the image below, you can also use lower level cryptographic resources to create new secure services. Cryptography is difficult and the cost of bugs typically so high that it’s rarely a good idea to implement your own cryptography solution. Rely on the Security framework when you need cryptography in your app.
 
-![Diagram showing your app sitting above the Security framework, which provides tools to enable secure interaction with users, data, and code.](https://docs-assets.developer.apple.com/published/c89145031becb4c02e98769e238d4f25/media-2891898%402x.png)
+![Diagram showing your app sitting above the Security framework, which provides tools to enable secure interaction with users, data, and code.](/images/com.apple.security/media-2891898@2x.png)
 
-> **Note**:  Always use the highest level API that meets your needs. The Security framework is not always your best option. For example, to conduct secure network communications, start by considering the [`Foundation`](https://developer.apple.com/documentation/Foundation) framework’s [`URL Loading System`](https://developer.apple.com/documentation/Foundation/url-loading-system), which builds on the Security framework. Only if your app requires lower level access to security protocol functions would you use the secure transport API directly.
+> **Note**:  Always use the highest level API that meets your needs. The Security framework is not always your best option. For example, to conduct secure network communications, start by considering the [`Foundation`](https://developer.apple.com/documentation/foundation) framework’s [`URL Loading System`](https://developer.apple.com/documentation/foundation/url-loading-system), which builds on the Security framework. Only if your app requires lower level access to security protocol functions would you use the secure transport API directly.
 
 ## Topics
 
 ### Essentials
-- [Security updates](../Updates/Security.md)
+- [Security updates](../updates/security.md)
   Learn about important changes to Security.
 ### Authorization and authentication
 - [Password AutoFill](password-autofill.md)
@@ -64,11 +64,11 @@ As shown in the image below, you can also use lower level cryptographic resource
   Manage security protections and resource access for your macOS apps.
 - [Disabling and Enabling System Integrity Protection](disabling-and-enabling-system-integrity-protection.md)
   Disable system protections only temporarily during development to test drivers, kernel extensions, and other low-level code.
-- [Using the latest code signature format](../Xcode/using-the-latest-code-signature-format.md)
+- [Using the latest code signature format](../xcode/using-the-latest-code-signature-format.md)
   Update legacy app code signatures so your app runs on current OS releases.
 - [Updating Mac Software](updating-mac-software.md)
   Implement Mac software updates without causing code-signing crashes.
-- [TN3125: Inside Code Signing: Provisioning Profiles](../Technotes/tn3125-inside-code-signing-provisioning-profiles.md)
+- [TN3125: Inside Code Signing: Provisioning Profiles](../technotes/tn3125-inside-code-signing-provisioning-profiles.md)
   Learn how provisioning profiles enable third-party code to run on Apple platforms.
 ### Launch environment constraints
 - [Applying launch environment and library constraints](applying-launch-environment-and-library-constraints.md)

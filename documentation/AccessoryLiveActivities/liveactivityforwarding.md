@@ -43,11 +43,11 @@ Use this class from your accessory’s data provider extension.
 ## Relationships
 
 ### Conforms To
-- [AccessoryFeature](../AccessoryTransportExtension/AccessoryFeature.md)
-- [AppExtensionPoint.Capability](../ExtensionFoundation/AppExtensionPoint/Capability.md)
-- [Identifiable](../Swift/Identifiable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [AccessoryFeature](../accessorytransportextension/accessoryfeature.md)
+- [AppExtensionPoint.Capability](../extensionfoundation/appextensionpoint/capability.md)
+- [Identifiable](../swift/identifiable.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

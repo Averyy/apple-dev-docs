@@ -36,15 +36,15 @@ In iOS 17 and macOS 12 and later, you can create 3D objects from photographs usi
 
 ## See Also
 
-- [Reality Composer Pro](../RealityComposerPro/RealityComposerPro.md)
+- [Reality Composer Pro](../realitycomposerpro/realitycomposerpro.md)
   Build, design, and orchestrate 3D content for your RealityKit apps.
-- [Swift Splash](../visionOS/swift-splash.md)
+- [Swift Splash](../visionos/swift-splash.md)
   Use RealityKit to create an interactive ride in visionOS.
-- [Diorama](../visionOS/diorama.md)
+- [Diorama](../visionos/diorama.md)
   Design scenes for your visionOS app using Reality Composer Pro.
 - [Presenting an artist’s scene](presenting-an-artists-scene.md)
   Display a scene from Reality Composer Pro in visionOS.
-- [USD](../USD/USD.md)
+- [USD](../usd/usd.md)
   An efficient and scalable way to represent 3D scenes.
 - [Composing interactive 3D content with RealityKit and Reality Composer Pro](composing-interactive-3d-content-with-realitykit-and-reality-composer-pro.md)
   Build an interactive scene using an animation timeline.

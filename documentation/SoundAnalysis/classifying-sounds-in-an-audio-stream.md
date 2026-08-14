@@ -15,13 +15,13 @@ This article builds on the [`Classifying Sounds in an Audio File`](classifying-s
 
 ##### Start an Audio Engine
 
-The [`Audio Engine`](https://developer.apple.com/documentation/AVFAudio/audio-engine) API simplifies audio-related tasks, including capturing audio data with a microphone.
+The [`Audio Engine`](https://developer.apple.com/documentation/avfaudio/audio-engine) API simplifies audio-related tasks, including capturing audio data with a microphone.
 
 Capture audio data from the device’s default microphone:
 
-1. Create an [`AVAudioEngine`](https://developer.apple.com/documentation/AVFAudio/AVAudioEngine) instance.
-2. Save a reference to the microphone’s [`AVAudioFormat`](https://developer.apple.com/documentation/AVFAudio/AVAudioFormat) instance.
-3. Begin the audio pipeline’s data flow by calling the engine’s [`start()`](https://developer.apple.com/documentation/AVFAudio/AVAudioEngine/start()) method.
+1. Create an [`AVAudioEngine`](https://developer.apple.com/documentation/avfaudio/avaudioengine) instance.
+2. Save a reference to the microphone’s [`AVAudioFormat`](https://developer.apple.com/documentation/avfaudio/avaudioformat) instance.
+3. Begin the audio pipeline’s data flow by calling the engine’s [`start()`](https://developer.apple.com/documentation/avfaudio/avaudioengine/start()) method.
 
 ```swift
 func startAudioEngine() {
@@ -41,9 +41,9 @@ func startAudioEngine() {
 }
 ```
 
-When you create an audio engine instance, its default [`inputNode`](https://developer.apple.com/documentation/AVFAudio/AVAudioEngine/inputNode) accesses audio data from the device’s default microphone.
+When you create an audio engine instance, its default [`inputNode`](https://developer.apple.com/documentation/avfaudio/avaudioengine/inputnode) accesses audio data from the device’s default microphone.
 
-> ❗ **Important**:  To access the device’s microphone in iOS or watchOS, add a description for the [`NSMicrophoneUsageDescription`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSMicrophoneUsageDescription) key in your project’s `Info.plist` file.
+> ❗ **Important**:  To access the device’s microphone in iOS or watchOS, add a description for the [`NSMicrophoneUsageDescription`](https://developer.apple.com/documentation/bundleresources/information-property-list/nsmicrophoneusagedescription) key in your project’s `Info.plist` file.
 
 ##### Create a Stream Analyzer
 

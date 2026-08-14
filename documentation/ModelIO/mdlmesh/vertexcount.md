@@ -21,7 +21,7 @@ var vertexCount: Int { get set }
 
 #### Discussion
 
-To determine the total data size of a vertex buffer, multiply this value by the [`stride`](https://developer.apple.com/documentation/Metal/MTLVertexBufferLayoutDescriptor/stride) property of the corresponding layout in the mesh’s [`vertexDescriptor`](mdlmesh/vertexdescriptor.md) object.
+To determine the total data size of a vertex buffer, multiply this value by the [`stride`](https://developer.apple.com/documentation/metal/mtlvertexbufferlayoutdescriptor/stride) property of the corresponding layout in the mesh’s [`vertexDescriptor`](mdlmesh/vertexdescriptor.md) object.
 
 ## See Also
 

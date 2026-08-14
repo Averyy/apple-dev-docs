@@ -41,7 +41,7 @@ If both of the methods in Supporting a Page Indicator are implemented and the pa
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

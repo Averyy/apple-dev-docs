@@ -18,7 +18,7 @@ The registration, termination and open / close functions of IOService use `lockF
 
 ## Parameters
 
-- `isSuccessRequired`: If a request for access to an IOService object should be denied if it is terminated, pass  , otherwise pass  .
+- `isSuccessRequired`: If a request for access to an IOService object should be denied if it is terminated, pass `false`, otherwise pass `true`.
 
 ## See Also
 

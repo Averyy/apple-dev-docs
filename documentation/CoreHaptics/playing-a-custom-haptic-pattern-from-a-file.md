@@ -16,7 +16,7 @@ This app, HapticSampler, describes how to load files formatted as Apple Haptic A
 
 The user interface, defined in `Main.storyboard`, consists of eight buttons, each of which loads and plays a different haptic pattern. AHAP files for eight custom patterns are bundled in the Xcode project. For example, the Sparkle.ahap file defines a haptic pattern with the following intensity and sharpness variations:
 
-![A diagram of the haptic intensity and sharpness variations for the pattern defined in Sparkle.ahap.](https://docs-assets.developer.apple.com/published/93d86de14e61d10230b88c355cf081fa/HapticSparkle%402x.png)
+![A diagram of the haptic intensity and sharpness variations for the pattern defined in Sparkle.ahap.](/images/com.apple.corehaptics/HapticSparkle@2x.png)
 
 You can examine and modify the AHAP file parameters in Xcode or a text editor.
 

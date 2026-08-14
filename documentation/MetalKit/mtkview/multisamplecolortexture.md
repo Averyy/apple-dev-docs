@@ -23,7 +23,7 @@ var multisampleColorTexture: (any MTLTexture)? { get }
 
 The format of this texture is determined by the value of the [`colorPixelFormat`](mtkview/colorpixelformat.md) and [`sampleCount`](mtkview/samplecount.md) properties.
 
-The default value is `nil`. This value is also `nil` if the specified pixel format is [`MTLPixelFormat.invalid`](https://developer.apple.com/documentation/Metal/MTLPixelFormat/invalid), or if [`sampleCount`](mtkview/samplecount.md) is less than or equal to 1.
+The default value is `nil`. This value is also `nil` if the specified pixel format is [`MTLPixelFormat.invalid`](https://developer.apple.com/documentation/metal/mtlpixelformat/invalid), or if [`sampleCount`](mtkview/samplecount.md) is less than or equal to 1.
 
 ## See Also
 

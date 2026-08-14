@@ -16,7 +16,7 @@ interface CloudKit.RecordZoneNotification
 
 #### Overview
 
-This class is similar to the [`CKRecordZoneNotification`](https://developer.apple.com/documentation/CloudKit/CKRecordZoneNotification) class in the CloudKit framework.
+This class is similar to the [`CKRecordZoneNotification`](https://developer.apple.com/documentation/cloudkit/ckrecordzonenotification) class in the CloudKit framework.
 
 ## Topics
 

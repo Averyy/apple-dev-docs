@@ -17,7 +17,7 @@ unowned(unsafe) var depthMap: CVPixelBuffer { get }
 
 #### Discussion
 
-For custom renderers, if you create a texture to send depth data to the GPU, choose a [`MTLPixelFormat`](https://developer.apple.com/documentation/Metal/MTLPixelFormat) according to the [`depthMap`](ardepthdata/depthmap.md) pixel format. Call [`CVPixelBufferGetPixelFormatType(_:)`](https://developer.apple.com/documentation/CoreVideo/CVPixelBufferGetPixelFormatType(_:)) on the [`depthMap`](ardepthdata/depthmap.md) to get its format. For example, if at runtime the [`depthMap`](ardepthdata/depthmap.md) format is [`kCVPixelFormatType_DepthFloat32`](https://developer.apple.com/documentation/CoreVideo/kCVPixelFormatType_DepthFloat32)  ([`OSType`](https://developer.apple.com/documentation/kernel/ostype) ``fdep``), use  [`MTLPixelFormat.r32Float`](https://developer.apple.com/documentation/Metal/MTLPixelFormat/r32Float).
+For custom renderers, if you create a texture to send depth data to the GPU, choose a [`MTLPixelFormat`](https://developer.apple.com/documentation/metal/mtlpixelformat) according to the [`depthMap`](ardepthdata/depthmap.md) pixel format. Call [`CVPixelBufferGetPixelFormatType(_:)`](https://developer.apple.com/documentation/corevideo/cvpixelbuffergetpixelformattype(_:)) on the [`depthMap`](ardepthdata/depthmap.md) to get its format. For example, if at runtime the [`depthMap`](ardepthdata/depthmap.md) format is [`kCVPixelFormatType_DepthFloat32`](https://developer.apple.com/documentation/corevideo/kcvpixelformattype_depthfloat32)  ([`OSType`](https://developer.apple.com/documentation/kernel/ostype) ``fdep``), use  [`MTLPixelFormat.r32Float`](https://developer.apple.com/documentation/metal/mtlpixelformat/r32float).
 
 ## See Also
 

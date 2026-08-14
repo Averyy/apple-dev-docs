@@ -23,7 +23,7 @@ var maximumNumberOfTouches: Int { get set }
 
 #### Discussion
 
-The default value is [`NSUIntegerMax`](https://developer.apple.com/documentation/ObjectiveC/NSUIntegerMax).
+The default value is [`NSUIntegerMax`](https://developer.apple.com/documentation/objectivec/nsuintegermax).
 
 ## See Also
 

@@ -18,7 +18,7 @@ var selectedIndex: Int { get set }
 
 #### Discussion
 
-The value of the property must be within the bounds of the [`pointsOfInterest`](cppointofinteresttemplate/pointsofinterest.md) array, or [`NSNotFound`](https://developer.apple.com/documentation/Foundation/NSNotFound-4qp9h) to indicate no selection.
+The value of the property must be within the bounds of the [`pointsOfInterest`](cppointofinteresttemplate/pointsofinterest.md) array, or [`NSNotFound`](https://developer.apple.com/documentation/foundation/nsnotfound-4qp9h) to indicate no selection.
 
 ## See Also
 

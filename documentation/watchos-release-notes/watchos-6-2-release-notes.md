@@ -6,13 +6,13 @@ Update your apps to use new features, and test your apps against API changes.
 
 #### Overview
 
-The watchOS 6.2 SDK provides support to develop watchOS apps for Apple Watch devices running watchOS 6.2. The SDK comes bundled with Xcode 11.4, available from the Mac App Store. For information on the compatibility requirements for Xcode 11.4, see [`Xcode 11.4 Release Notes`](https://developer.apple.com/documentation/Xcode-Release-Notes/xcode-11_4-release-notes).
+The watchOS 6.2 SDK provides support to develop watchOS apps for Apple Watch devices running watchOS 6.2. The SDK comes bundled with Xcode 11.4, available from the Mac App Store. For information on the compatibility requirements for Xcode 11.4, see [`Xcode 11.4 Release Notes`](https://developer.apple.com/documentation/xcode-release-notes/xcode-11_4-release-notes).
 
 ##### Authentication
 
 ###### New Features
 
-- Support for [`ASWebAuthenticationSession`](https://developer.apple.com/documentation/AuthenticationServices/ASWebAuthenticationSession) is now available when using Apple Watch Series 3 and later. Using this, apps can now authenticate users via web-based logins such as OAuth. (51821703)
+- Support for [`ASWebAuthenticationSession`](https://developer.apple.com/documentation/authenticationservices/aswebauthenticationsession) is now available when using Apple Watch Series 3 and later. Using this, apps can now authenticate users via web-based logins such as OAuth. (51821703)
 
 ##### Storekit
 

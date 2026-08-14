@@ -22,7 +22,7 @@ let kCTFontFeatureSettingsAttribute: CFString
 
 #### Discussion
 
-The value associated with this key is a [`CFArray`](https://developer.apple.com/documentation/CoreFoundation/CFArray) object containing font feature-setting dictionaries. A feature-setting dictionary contains a tuple of a [`kCTFontFeatureTypeIdentifierKey`](kctfontfeaturetypeidentifierkey.md) key-value pair and a [`kCTFontFeatureSelectorIdentifierKey`](kctfontfeatureselectoridentifierkey.md) key-value pair. Each setting dictionary indicates which setting should be turned on.
+The value associated with this key is a [`CFArray`](https://developer.apple.com/documentation/corefoundation/cfarray) object containing font feature-setting dictionaries. A feature-setting dictionary contains a tuple of a [`kCTFontFeatureTypeIdentifierKey`](kctfontfeaturetypeidentifierkey.md) key-value pair and a [`kCTFontFeatureSelectorIdentifierKey`](kctfontfeatureselectoridentifierkey.md) key-value pair. Each setting dictionary indicates which setting should be turned on.
 
 > **Note**:  In the case of duplicate or conflicting settings, the last setting in the list takes precedence. It is the caller’s responsibility to handle exclusive and nonexclusive settings as necessary.
 

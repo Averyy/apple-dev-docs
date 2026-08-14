@@ -20,7 +20,7 @@ The snapshot image  in the provided image type. You are responsible for releasin
 
 ## Parameters
 
-- `type`: A string that specifies any of the following image types: [`NSBitmapImageRep`](https://developer.apple.com/documentation/AppKit/NSBitmapImageRep), [`NSImage`](https://developer.apple.com/documentation/AppKit/NSImage), [`CIImage`](https://developer.apple.com/documentation/CoreImage/CIImage), `CGImage`, `CVOpenGLBuffer`, `CVPixelBuffer`.
+- `type`: A string that specifies any of the following image types: [`NSBitmapImageRep`](https://developer.apple.com/documentation/appkit/nsbitmapimagerep), [`NSImage`](https://developer.apple.com/documentation/appkit/nsimage), [`CIImage`](https://developer.apple.com/documentation/coreimage/ciimage), `CGImage`, `CVOpenGLBuffer`, `CVPixelBuffer`.
 
 ## See Also
 

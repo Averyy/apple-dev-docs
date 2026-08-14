@@ -24,7 +24,7 @@ class CXCallUpdate
 
 #### Overview
 
-[`CXCallUpdate`](cxcallupdate.md) objects are used by the system to communicate changes to calls over time. Not every property on a [`CXCallUpdate`](cxcallupdate.md) object must be set each time, as each object includes only new and changed information. For example, when a call is started, only some properties may be known and included in the first [`CXCallUpdate`](cxcallupdate.md) object sent to the system, such as [`localizedCallerName`](cxcallupdate/localizedcallername.md). Later in the same call, other properties may change; for example, a call may be upgraded from audio only to audio and video, which would be reflected by a new [`CXCallUpdate`](cxcallupdate.md) object with its [`hasVideo`](cxcallupdate/hasvideo.md) property set to [`true`](https://developer.apple.com/documentation/Swift/true).
+[`CXCallUpdate`](cxcallupdate.md) objects are used by the system to communicate changes to calls over time. Not every property on a [`CXCallUpdate`](cxcallupdate.md) object must be set each time, as each object includes only new and changed information. For example, when a call is started, only some properties may be known and included in the first [`CXCallUpdate`](cxcallupdate.md) object sent to the system, such as [`localizedCallerName`](cxcallupdate/localizedcallername.md). Later in the same call, other properties may change; for example, a call may be upgraded from audio only to audio and video, which would be reflected by a new [`CXCallUpdate`](cxcallupdate.md) object with its [`hasVideo`](cxcallupdate/hasvideo.md) property set to [`true`](https://developer.apple.com/documentation/swift/true).
 
 When an incoming call is received, you construct a [`CXCallUpdate`](cxcallupdate.md) object specifying a [`localizedCallerName`](cxcallupdate/localizedcallername.md) and pass that to the [`reportNewIncomingCall(with:update:completion:)`](cxprovider/reportnewincomingcall(with:update:completion:).md) method to notify the telephony provider.
 
@@ -51,19 +51,19 @@ When an active call is updated, you construct a [`CXCallUpdate`](cxcallupdate.md
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCopying](../Foundation/NSCopying.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCopying](../foundation/nscopying.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 
-- [Responding to VoIP Notifications from PushKit](../PushKit/responding-to-voip-notifications-from-pushkit.md)
+- [Responding to VoIP Notifications from PushKit](../pushkit/responding-to-voip-notifications-from-pushkit.md)
   Receive incoming Voice-over-IP (VoIP) push notifications and use them to display the system call interface to the user.
 - [class CXAnswerCallAction](cxanswercallaction.md)
   An encapsulation of the act of answering an incoming call.

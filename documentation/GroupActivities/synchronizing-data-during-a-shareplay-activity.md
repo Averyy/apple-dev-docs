@@ -10,7 +10,7 @@ During a typical activity, you want the content one participant sees on their de
 
 When an activity-related session is active, share data among participants using the objects of the Group Activities framework. You can share data with all participants or a subset of participants. For example, a quiz game might share different information with contestants and the people asking the questions. For time-sensitive messages, send small amounts of data using a [`GroupSessionMessenger`](groupsessionmessenger.md) object. When the amount of data is larger and the arrival time is less important, share that data using a [`GroupSessionJournal`](groupsessionjournal.md) object.
 
-> **Note**: The [`AVFoundation`](https://developer.apple.com/documentation/AVFoundation) framework supports the synchronization of movie playback without custom messages. For more information, see [`Supporting coordinated media playback`](https://developer.apple.com/documentation/AVFoundation/supporting-coordinated-media-playback).
+> **Note**: The [`AVFoundation`](https://developer.apple.com/documentation/avfoundation) framework supports the synchronization of movie playback without custom messages. For more information, see [`Supporting coordinated media playback`](https://developer.apple.com/documentation/avfoundation/supporting-coordinated-media-playback).
 
 ##### Define the Messages to Send
 
@@ -21,7 +21,7 @@ During the creation of an activity, think about what information you need to sha
 - A shopping app might share the ID of the current product page and synchronize items in the shared shopping cart.
 - A workout app might share workout stats for each participant and which track to play.
 
-After you identify the information you want to send, design data types to encapsulate the relevant details. You can send the details using a [`Data`](https://developer.apple.com/documentation/Foundation/Data) object, or design your own custom types that adopt the [`Codable`](https://developer.apple.com/documentation/Swift/Codable) protocol. The following example shows a message structure for a drawing activity. Each message incorporates the next point in the line segment and the color of the segment. When someone draws, the app sends one message for each new point it receives. Small messages can include up to 256 kilobytes of data, but keep the total size as small as possible to minimize the time it takes to send and process the data.
+After you identify the information you want to send, design data types to encapsulate the relevant details. You can send the details using a [`Data`](https://developer.apple.com/documentation/foundation/data) object, or design your own custom types that adopt the [`Codable`](https://developer.apple.com/documentation/swift/codable) protocol. The following example shows a message structure for a drawing activity. Each message incorporates the next point in the line segment and the color of the segment. When someone draws, the app sends one message for each new point it receives. Small messages can include up to 256 kilobytes of data, but keep the total size as small as possible to minimize the time it takes to send and process the data.
 
 ```swift
 struct PenStrokeMessage: Codable {
@@ -31,7 +31,7 @@ struct PenStrokeMessage: Codable {
 }
 ```
 
-When you need to send photos, videos, audio, or other large data types, encode that information into a type that adopts the [`Transferable`](https://developer.apple.com/documentation/CoreTransferable/Transferable) protocol. The [`GroupSessionJournal`](groupsessionjournal.md) object requires this protocol when sending types.
+When you need to send photos, videos, audio, or other large data types, encode that information into a type that adopts the [`Transferable`](https://developer.apple.com/documentation/coretransferable/transferable) protocol. The [`GroupSessionJournal`](groupsessionjournal.md) object requires this protocol when sending types.
 
 ##### Send a Message to One or More Participants
 
@@ -48,7 +48,7 @@ Task {
 }
 ```
 
-To send a message to a subset of participants, include the list of participants when calling the send method. The [`GroupSession`](groupsession.md) object maintains a set of [`Participant`](participant.md) structures, each of which identifies a member taking part in the activity. Use the [`UUID`](https://developer.apple.com/documentation/Foundation/UUID) of each participant to differentiate them within your app. For example, a quiz game app randomly chooses a subset of participants to take the quiz and share their unique IDs with the group. The person giving the quiz then sends only the questions to the people taking the quiz, and sends the questions and answers to everyone else. The following example subtracts the current participant from the set of all participants and sends a ready message to that subset of people:
+To send a message to a subset of participants, include the list of participants when calling the send method. The [`GroupSession`](groupsession.md) object maintains a set of [`Participant`](participant.md) structures, each of which identifies a member taking part in the activity. Use the [`UUID`](https://developer.apple.com/documentation/foundation/uuid) of each participant to differentiate them within your app. For example, a quiz game app randomly chooses a subset of participants to take the quiz and share their unique IDs with the group. The person giving the quiz then sends only the questions to the people taking the quiz, and sends the questions and answers to everyone else. The following example subtracts the current participant from the set of all participants and sends a ready message to that subset of people:
 
 ```swift
 let everyoneElse = session.activeParticipants.subtracting([session.localParticipant])
@@ -60,7 +60,7 @@ messenger.send(ReadyStateMessage(ready: true), to: .only(everyoneElse)) { error 
 
 ##### Receive Messages From Other Participants
 
-Messages targeting the current participant can arrive at any time, so it’s best to use a separate task to listen for them. The [`GroupSessionMessenger`](groupsessionmessenger.md) object delivers messages using an [`AsyncSequence`](https://developer.apple.com/documentation/Swift/AsyncSequence), which makes it easy to receive those messages asynchronously. Respond to incoming messages as quickly as possible by updating your app’s data structures to include the new information.
+Messages targeting the current participant can arrive at any time, so it’s best to use a separate task to listen for them. The [`GroupSessionMessenger`](groupsessionmessenger.md) object delivers messages using an [`AsyncSequence`](https://developer.apple.com/documentation/swift/asyncsequence), which makes it easy to receive those messages asynchronously. Respond to incoming messages as quickly as possible by updating your app’s data structures to include the new information.
 
 When configuring your session, define a task to receive incoming messages for your activity. Inside the task, use a `for..in` loop to wait on the messages property of your [`GroupSessionMessenger`](groupsessionmessenger.md) object. Specify which message you want to receive as a parameter to the messages method. For example, the code below shows how to process incoming pen stroke messages. The function returns a tuple for each element, with each tuple containing the incoming message and any related contextual information. The message is the data structure you defined previously. The contextual information is a [`GroupSessionMessenger.MessageContext`](groupsessionmessenger/messagecontext.md) structure with additional details, such as the participant who sent the message.
 
@@ -82,7 +82,7 @@ Attachments are ideal when you need to send more than just a few kilobytes of in
 
 > **Note**: Don’t use a [`GroupSessionJournal`](groupsessionjournal.md) object to store files larger than 100 megabytes, or when you need to protect or validate content before someone downloads it. Instead, store those files on your company’s server and let participants download them from there.
 
-The [`GroupSessionJournal`](groupsessionjournal.md) object delivers attachments to your app using an [`AsyncSequence`](https://developer.apple.com/documentation/Swift/AsyncSequence) type. To receive attachments, configure a task and use a `for..in` loop and wait on the attachments property of your journal object, as shown in the following example. When attachments are available for your device, the system wakes up your task and delivers an array of [`GroupSessionJournal.Attachment`](groupsessionjournal/attachment.md) structures for you to process.
+The [`GroupSessionJournal`](groupsessionjournal.md) object delivers attachments to your app using an [`AsyncSequence`](https://developer.apple.com/documentation/swift/asyncsequence) type. To receive attachments, configure a task and use a `for..in` loop and wait on the attachments property of your journal object, as shown in the following example. When attachments are available for your device, the system wakes up your task and delivers an array of [`GroupSessionJournal.Attachment`](groupsessionjournal/attachment.md) structures for you to process.
 
 ```swift
 task = Task {

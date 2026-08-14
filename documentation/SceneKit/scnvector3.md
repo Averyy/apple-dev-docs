@@ -24,7 +24,7 @@ struct SCNVector3
 
 SceneKit uses three-component vectors for a variety of purposes, such as describing node or vertex positions, surface normals, and scale or translation transforms. The different vector components should be interpreted based on the context in which the vector is being used.
 
-> ❗ **Important**:  In macOS, the `x`, `y`, and `z` fields in this structure are [`CGFloat`](https://developer.apple.com/documentation/CoreFoundation/CGFloat-swift.struct) values. In iOS, tvOS, and watchOS, these fields are `float` values.
+> ❗ **Important**:  In macOS, the `x`, `y`, and `z` fields in this structure are [`CGFloat`](https://developer.apple.com/documentation/corefoundation/cgfloat-swift.struct) values. In iOS, tvOS, and watchOS, these fields are `float` values.
 
 ## Topics
 
@@ -63,10 +63,10 @@ SceneKit uses three-component vectors for a variety of purposes, such as describ
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../Swift/BitwiseCopyable.md)
-- [Copyable](../Swift/Copyable.md)
-- [Escapable](../Swift/Escapable.md)
-- [Sendable](../Swift/Sendable.md)
+- [BitwiseCopyable](../swift/bitwisecopyable.md)
+- [Copyable](../swift/copyable.md)
+- [Escapable](../swift/escapable.md)
+- [Sendable](../swift/sendable.md)
 
 ## See Also
 

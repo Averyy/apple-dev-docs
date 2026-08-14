@@ -26,7 +26,7 @@ An OSData object created "NoCopy" does not allow bytes to be appended.
 ## Parameters
 
 - `byte`: The byte value to append.
-- `numBytes`: The number of copies of   to append.
+- `numBytes`: The number of copies of `byte` to append.
 
 ## See Also
 

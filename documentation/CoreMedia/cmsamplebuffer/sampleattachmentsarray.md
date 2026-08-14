@@ -21,8 +21,8 @@ struct SampleAttachmentsArray
 ## Relationships
 
 ### Conforms To
-- [Collection](../Swift/Collection.md)
-- [Sequence](../Swift/Sequence.md)
+- [Collection](../swift/collection.md)
+- [Sequence](../swift/sequence.md)
 
 ## See Also
 

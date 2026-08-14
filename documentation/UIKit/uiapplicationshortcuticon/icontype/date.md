@@ -19,7 +19,7 @@ case date
 
 #### Discussion
 
-![None](https://docs-assets.developer.apple.com/published/5e0178b7a22bf3c4df0f32ec2e50d427/media-2934527%402x.png)
+![None](/images/com.apple.uikit/media-2934527@2x.png)
 
 ## See Also
 

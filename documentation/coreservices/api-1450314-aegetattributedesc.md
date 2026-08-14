@@ -28,9 +28,9 @@ Thread safe starting in OS X v10.2.
 
 ## Parameters
 
-- `theAppleEvent`: A pointer to the Apple event to get the attribute descriptor from. See  .
-- `theAEKeyword`: The keyword that specifies the desired attribute. Some keyword constants are described in  . See  .
-- `result`: A pointer to a descriptor. On successful return, a copy of the specified Apple event attribute, coerced, if necessary, to the descriptor type specified in  . On error, a null descriptor. If the function returns successfully, your application should call the   function to dispose of the resulting descriptor after it has finished using it. See  .
+- `theAppleEvent`: A pointer to the Apple event to get the attribute descriptor from. See [`AppleEvent`](appleevent.md).
+- `theAEKeyword`: The keyword that specifies the desired attribute. Some keyword constants are described in [`Keyword Attribute Constants`](apple_events/1542920-keyword_attribute_constants.md). See [`AEKeyword`](aekeyword.md).
+- `result`: A pointer to a descriptor. On successful return, a copy of the specified Apple event attribute, coerced, if necessary, to the descriptor type specified in `desiredType`. On error, a null descriptor. If the function returns successfully, your application should call the [`AEDisposeDesc(_:)`](1444208-aedisposedesc.md) function to dispose of the resulting descriptor after it has finished using it. See [`AEDesc`](aedesc.md).
 
 ## See Also
 

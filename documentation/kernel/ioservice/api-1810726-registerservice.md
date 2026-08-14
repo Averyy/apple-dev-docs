@@ -18,7 +18,7 @@ This function allows an IOService subclass to be published and made available to
 
 ## Parameters
 
-- `options`: The default zero options mask is recommended and should be used in most cases. The registration process is usually asynchronous, with possible driver probing and notification occurring some time later.   may be passed to carry out the matching and notification process for currently registered clients before returning to the caller.
+- `options`: The default zero options mask is recommended and should be used in most cases. The registration process is usually asynchronous, with possible driver probing and notification occurring some time later. `kIOServiceSynchronous` may be passed to carry out the matching and notification process for currently registered clients before returning to the caller.
 
 ## See Also
 

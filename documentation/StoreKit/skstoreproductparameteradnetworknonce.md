@@ -26,7 +26,7 @@ let SKStoreProductParameterAdNetworkNonce: String
 
 #### Discussion
 
-The value for this key is an [`NSUUID`](https://developer.apple.com/documentation/Foundation/NSUUID). Ad networks generate a random value for this key at the time of the ad impression.
+The value for this key is an [`NSUUID`](https://developer.apple.com/documentation/foundation/nsuuid). Ad networks generate a random value for this key at the time of the ad impression.
 
 > ❗ **Important**:  When you generate the signature value ([`SKStoreProductParameterAdNetworkAttributionSignature`](skstoreproductparameteradnetworkattributionsignature.md)), you must sign the nonce as an all-lowercase UUID string representation.
 

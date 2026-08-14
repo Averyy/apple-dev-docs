@@ -27,7 +27,7 @@ A message that tells people why the app is requesting access to the device’s m
 
 ## See Also
 
-- [Requesting authorization to capture and save media](../AVFoundation/requesting-authorization-to-capture-and-save-media.md)
+- [Requesting authorization to capture and save media](../avfoundation/requesting-authorization-to-capture-and-save-media.md)
   Prompt the user to authorize access to the camera, microphone, and photo library.
 - [Requesting Authorization for Media Capture on macOS](requesting-authorization-for-media-capture-on-macos.md)
   Prompt the user to authorize access to the camera and microphone.

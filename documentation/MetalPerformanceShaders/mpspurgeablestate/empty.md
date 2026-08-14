@@ -21,7 +21,7 @@ case empty
 
 #### Overview
 
-The contents of the resource are discarded. This is equivalent to using [`MTLPurgeableState.empty`](https://developer.apple.com/documentation/Metal/MTLPurgeableState/empty).
+The contents of the resource are discarded. This is equivalent to using [`MTLPurgeableState.empty`](https://developer.apple.com/documentation/metal/mtlpurgeablestate/empty).
 
 ## See Also
 

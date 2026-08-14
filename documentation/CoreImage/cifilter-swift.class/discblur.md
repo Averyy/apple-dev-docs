@@ -29,7 +29,7 @@ This method applies the disc blur filter to an image. The effect targets the pix
 
 The disc blur filter uses the following properties:
 
-- **`radius`**: A `float` representing the area of effect as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+- **`radius`**: A `float` representing the area of effect as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
 - **`inputImage`**: A [`CIImage`](ciimage.md) representing the input image to apply the filter to.
 
 The following code creates a filter that adds a strong blur to the input image:
@@ -44,7 +44,7 @@ The following code creates a filter that adds a strong blur to the input image:
     }
 ```
 
-![Two photographs of a beach at sunset with multiple palm trees. The photo on the left is clear and crisp. In the photo on the right, a disc blur filter has been applied that creates a strong blur effect on the palm trees in the foreground of the image.](https://docs-assets.developer.apple.com/published/6e6d6f0dd66aad4f24002217ca3e55da/media-3544964%402x.png)
+![Two photographs of a beach at sunset with multiple palm trees. The photo on the left is clear and crisp. In the photo on the right, a disc blur filter has been applied that creates a strong blur effect on the palm trees in the foreground of the image.](/images/com.apple.coreimage/media-3544964@2x.png)
 
 ## See Also
 

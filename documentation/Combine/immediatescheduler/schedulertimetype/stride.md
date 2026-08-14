@@ -56,16 +56,16 @@ struct Stride
 ## Relationships
 
 ### Conforms To
-- [AdditiveArithmetic](../Swift/AdditiveArithmetic.md)
-- [Comparable](../Swift/Comparable.md)
-- [Decodable](../Swift/Decodable.md)
-- [Encodable](../Swift/Encodable.md)
-- [Equatable](../Swift/Equatable.md)
-- [ExpressibleByFloatLiteral](../Swift/ExpressibleByFloatLiteral.md)
-- [ExpressibleByIntegerLiteral](../Swift/ExpressibleByIntegerLiteral.md)
-- [Numeric](../Swift/Numeric.md)
+- [AdditiveArithmetic](../swift/additivearithmetic.md)
+- [Comparable](../swift/comparable.md)
+- [Decodable](../swift/decodable.md)
+- [Encodable](../swift/encodable.md)
+- [Equatable](../swift/equatable.md)
+- [ExpressibleByFloatLiteral](../swift/expressiblebyfloatliteral.md)
+- [ExpressibleByIntegerLiteral](../swift/expressiblebyintegerliteral.md)
+- [Numeric](../swift/numeric.md)
 - [SchedulerTimeIntervalConvertible](schedulertimeintervalconvertible.md)
-- [SignedNumeric](../Swift/SignedNumeric.md)
+- [SignedNumeric](../swift/signednumeric.md)
 
 
 ---

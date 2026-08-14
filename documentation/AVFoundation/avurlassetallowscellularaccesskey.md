@@ -22,7 +22,7 @@ let AVURLAssetAllowsCellularAccessKey: String
 
 #### Discussion
 
-The default behavior of [`AVURLAsset`](avurlasset.md) allows requests over cellular networks. Set this value to [`false`](https://developer.apple.com/documentation/Swift/false) at initialization time to restrict the default behavior.
+The default behavior of [`AVURLAsset`](avurlasset.md) allows requests over cellular networks. Set this value to [`false`](https://developer.apple.com/documentation/swift/false) at initialization time to restrict the default behavior.
 
 ## See Also
 

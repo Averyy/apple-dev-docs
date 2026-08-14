@@ -21,13 +21,13 @@ func conditionallyBeginAccessingResources() async -> Bool
 
 #### Discussion
 
-If the resources marked with the tags managed by the request are already on the device, you can start accessing them as soon as the completion handler is called with `resourcesAvailable` set to [`true`](https://developer.apple.com/documentation/Swift/true). If all of the resources are not already available, you need to call [`beginAccessingResources(completionHandler:)`](nsbundleresourcerequest/beginaccessingresources(completionhandler:).md) to download them from the App Store.
+If the resources marked with the tags managed by the request are already on the device, you can start accessing them as soon as the completion handler is called with `resourcesAvailable` set to [`true`](https://developer.apple.com/documentation/swift/true). If all of the resources are not already available, you need to call [`beginAccessingResources(completionHandler:)`](nsbundleresourcerequest/beginaccessingresources(completionhandler:).md) to download them from the App Store.
 
-> ❗ **Important**:  If `resourcesAvailable` is [`true`](https://developer.apple.com/documentation/Swift/true), do not call [`beginAccessingResources(completionHandler:)`](nsbundleresourcerequest/beginaccessingresources(completionhandler:).md). You must call this method or [`beginAccessingResources(completionHandler:)`](nsbundleresourcerequest/beginaccessingresources(completionhandler:).md) before accessing any resources marked with the tags managed by the request.
+> ❗ **Important**:  If `resourcesAvailable` is [`true`](https://developer.apple.com/documentation/swift/true), do not call [`beginAccessingResources(completionHandler:)`](nsbundleresourcerequest/beginaccessingresources(completionhandler:).md). You must call this method or [`beginAccessingResources(completionHandler:)`](nsbundleresourcerequest/beginaccessingresources(completionhandler:).md) before accessing any resources marked with the tags managed by the request.
 
 ## Parameters
 
-- `completionHandler`: A block called when the availability of the resources has been checked. The block takes the following parameter: - **resourcesAvailable**: Returns [`true`](https://developer.apple.com/documentation/Swift/true) if all of the resources marked with the tags managed by the request are already on the device. Returns [`false`](https://developer.apple.com/documentation/Swift/false) if any of the resources are not on the device.
+- `completionHandler`: A block called when the availability of the resources has been checked. The block takes the following parameter: - **resourcesAvailable**: Returns [`true`](https://developer.apple.com/documentation/swift/true) if all of the resources marked with the tags managed by the request are already on the device. Returns [`false`](https://developer.apple.com/documentation/swift/false) if any of the resources are not on the device.
 
 ## See Also
 

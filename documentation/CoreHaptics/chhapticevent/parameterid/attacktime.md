@@ -25,7 +25,7 @@ This parameter can be an event parameter or a dynamic parameter. An event parame
 
 A dynamic value indicates that the time at which ramp-up begins can change. For example, a value of `0` indicates that the attack time is at its default value. Positive values up to `1.0` increase the attack time exponentially, while negative values down to `-1.0` decrease the attack time exponentially. Haptic intensity responds to this parameter.
 
-![A series of lines showing how a haptic pattern ramps up in intensity for various values of attack.](https://docs-assets.developer.apple.com/published/097c6160fa300890dfc4825ab2ac4326/media-3235478%402x.png)
+![A series of lines showing how a haptic pattern ramps up in intensity for various values of attack.](/images/com.apple.corehaptics/media-3235478@2x.png)
 
 ## See Also
 

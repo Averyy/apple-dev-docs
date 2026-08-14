@@ -23,14 +23,14 @@ The request’s outcome. For more information, see [`ASAuthorizationResult`](asa
 
 #### Discussion
 
-To perform AutoFill-assisted authorization requests, add the appropriate [`textContentType(_:)`](https://developer.apple.com/documentation/SwiftUI/View/textContentType(_:)-ufdv) to any sign-in related fields, such as those for usernames and passwords:
+To perform AutoFill-assisted authorization requests, add the appropriate [`textContentType(_:)`](https://developer.apple.com/documentation/swiftui/view/textcontenttype(_:)-ufdv) to any sign-in related fields, such as those for usernames and passwords:
 
 ```swift
 TextField("Username", text: $username)
     .textContentType(.username)
 ```
 
-Then use [`task(name:priority:file:line:_:)`](https://developer.apple.com/documentation/SwiftUI/View/task(name:priority:file:line:_:)) or [`task(id:name:priority:file:line:_:)`](https://developer.apple.com/documentation/SwiftUI/View/task(id:name:priority:file:line:_:)) to perform the requests when the view appears:
+Then use [`task(name:priority:file:line:_:)`](https://developer.apple.com/documentation/swiftui/view/task(name:priority:file:line:_:)) or [`task(id:name:priority:file:line:_:)`](https://developer.apple.com/documentation/swiftui/view/task(id:name:priority:file:line:_:)) to perform the requests when the view appears:
 
 ```swift
 .task {

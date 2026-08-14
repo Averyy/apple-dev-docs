@@ -20,7 +20,7 @@ var autoCompletionViewController: UIViewController! { get set }
 
 An autocompletion view can appear in place of the list of configuration items, just below the text view in the compose view. The compose view controller allows only one autocompletion view controller to be present at a time.
 
-Note that your custom autocompletion view controller should set its [`preferredContentSize`](https://developer.apple.com/documentation/UIKit/UIViewController/preferredContentSize) property to an appropriate value. `SLComposeServiceViewController` observes changes to the [`preferredContentSize`](https://developer.apple.com/documentation/UIKit/UIViewController/preferredContentSize) property and animates view size changes, if necessary.
+Note that your custom autocompletion view controller should set its [`preferredContentSize`](https://developer.apple.com/documentation/uikit/uiviewcontroller/preferredcontentsize) property to an appropriate value. `SLComposeServiceViewController` observes changes to the [`preferredContentSize`](https://developer.apple.com/documentation/uikit/uiviewcontroller/preferredcontentsize) property and animates view size changes, if necessary.
 
 
 ---

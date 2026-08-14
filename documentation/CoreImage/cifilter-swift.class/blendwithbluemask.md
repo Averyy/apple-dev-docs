@@ -45,7 +45,7 @@ func blendWithBlueMask(inputimage: CIImage, backgroundimage: CIImage, maskimage:
 }
 ```
 
-![A set of four photographs with two stacked on the left and two side by side on the right. The top photo on the left is of the New York City skyline taken from across the river on an overcast day, with a single boat in the center of the image. The bottom photo on the left is of multiple colorful rocks with green moss covering them. The first photograph on the right is a transparent image with a five-point triangle, hexagon, circle and square filled with a gradient of dark blue to green. The second photograph on the right is a blend with a blue mask filter applied, resulting in the skyline photo with the detail of the moss-covered rocks showing in the area that is dark blue from the mask image.](https://docs-assets.developer.apple.com/published/0c244bb3341e217960e71527cbdbcb6d/media-3624592%402x.png)
+![A set of four photographs with two stacked on the left and two side by side on the right. The top photo on the left is of the New York City skyline taken from across the river on an overcast day, with a single boat in the center of the image. The bottom photo on the left is of multiple colorful rocks with green moss covering them. The first photograph on the right is a transparent image with a five-point triangle, hexagon, circle and square filled with a gradient of dark blue to green. The second photograph on the right is a blend with a blue mask filter applied, resulting in the skyline photo with the detail of the moss-covered rocks showing in the area that is dark blue from the mask image.](/images/com.apple.coreimage/media-3624592@2x.png)
 
 ## See Also
 

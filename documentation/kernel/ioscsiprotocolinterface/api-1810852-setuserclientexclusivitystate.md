@@ -24,7 +24,7 @@ The SetUserClientExclusivityState() method is called by the SCSITaskUserClient t
 ## Parameters
 
 - `userClient`: The instance of SCSITaskUserClient for which to change exclusivity state.
-- `state`: Exclusivity state.   means exclusive access is desired,   means exclusive access is being released.
+- `state`: Exclusivity state. `true` means exclusive access is desired, `false` means exclusive access is being released.
 
 ## See Also
 

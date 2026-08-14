@@ -121,11 +121,11 @@ func photoOutput(_ output: AVCapturePhotoOutput,
 }
 ```
 
-> **Note**:  To display Live Photos after capture, see [`PHLivePhoto`](https://developer.apple.com/documentation/Photos/PHLivePhoto) and [`PHLivePhotoView`](https://developer.apple.com/documentation/PhotosUI/PHLivePhotoView).
+> **Note**:  To display Live Photos after capture, see [`PHLivePhoto`](https://developer.apple.com/documentation/photos/phlivephoto) and [`PHLivePhotoView`](https://developer.apple.com/documentation/photosui/phlivephotoview).
 
 ##### Save a Live Photo to the Photos Library
 
-Use the [`PHAssetCreationRequest`](https://developer.apple.com/documentation/Photos/PHAssetCreationRequest) class to create a single Photos asset consisting of media from multiple files—in the case of a Live Photo, the still image and its paired video. As in [`Saving captured photos`](saving-captured-photos.md), you’ll need to wrap that request in a [`PHPhotoLibrary`](https://developer.apple.com/documentation/Photos/PHPhotoLibrary) change block, and first make sure that your app has the user’s permission to access Photos.
+Use the [`PHAssetCreationRequest`](https://developer.apple.com/documentation/photos/phassetcreationrequest) class to create a single Photos asset consisting of media from multiple files—in the case of a Live Photo, the still image and its paired video. As in [`Saving captured photos`](saving-captured-photos.md), you’ll need to wrap that request in a [`PHPhotoLibrary`](https://developer.apple.com/documentation/photos/phphotolibrary) change block, and first make sure that your app has the user’s permission to access Photos.
 
 ```swift
 func saveLivePhotoToPhotosLibrary(stillImageData: Data, livePhotoMovieURL: URL) {    PHPhotoLibrary.requestAuthorization { status in
@@ -147,13 +147,13 @@ func saveLivePhotoToPhotosLibrary(stillImageData: Data, livePhotoMovieURL: URL) 
 }
 ```
 
-> 💡 **Tip**:  Use the [`shouldMoveFile`](https://developer.apple.com/documentation/Photos/PHAssetResourceCreationOptions/shouldMoveFile) option so that iOS can transfer the movie file from your app’s sandbox to the system Photos library without an expensive data-copying operation.
+> 💡 **Tip**:  Use the [`shouldMoveFile`](https://developer.apple.com/documentation/photos/phassetresourcecreationoptions/shouldmovefile) option so that iOS can transfer the movie file from your app’s sandbox to the system Photos library without an expensive data-copying operation.
 
 ##### Track Live Photo Progress
 
 Capturing Live Photos adds two additional steps to the process shown in [`Tracking photo capture progress`](tracking-photo-capture-progress.md): after delivery of the still photo result (step 4), the photo output notifies you of movie capture status (step 5) and delivers the movie result (step 6). (Final cleanup becomes step 7.)
 
-![Diagram of numbered Live Photo capture process steps after calling capturePhoto().](https://docs-assets.developer.apple.com/published/128c17342e87a15ff120b1259fad4824/media-2961960%402x.png)
+![Diagram of numbered Live Photo capture process steps after calling capturePhoto().](/images/com.apple.avfoundation/media-2961960@2x.png)
 
 When the user captures a Live Photo in the system Camera app, a “Live” indicator appears for a few seconds to let the user know that video and audio are still being recorded. To provide a similar interface in your app, implement these methods in your photo capture delegate:
 

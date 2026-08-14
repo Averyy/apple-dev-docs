@@ -7,7 +7,6 @@ Creates a group with a list of participants and a specified subject.
 
 **Availability**:
 - iOS 26.0+
-- iPadOS 26.0+
 
 ## Declaration
 

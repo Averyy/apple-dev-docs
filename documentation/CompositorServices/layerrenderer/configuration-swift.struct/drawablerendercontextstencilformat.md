@@ -19,7 +19,7 @@ var drawableRenderContextStencilFormat: MTLPixelFormat { get set }
 
 This value corresponds to the pixel format of the stencil texture you attach to your Metal pipeline.
 
-> **Note**: For more information, see [`MTLRenderPassAttachmentDescriptor`](https://developer.apple.com/documentation/Metal/MTLRenderPassAttachmentDescriptor).
+> **Note**: For more information, see [`MTLRenderPassAttachmentDescriptor`](https://developer.apple.com/documentation/metal/mtlrenderpassattachmentdescriptor).
 
 ## See Also
 

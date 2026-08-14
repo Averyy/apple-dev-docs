@@ -43,7 +43,7 @@ To register an observer with a tool picker, call the [`addObserver(_:)`](pktoolp
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 ### Conforming Types
 - [PKCanvasView](pkcanvasview.md)
 

@@ -23,7 +23,7 @@ A new SceneKit plane geometry, or `nil` if the Metal device is unavailable.
 
 A newly created [`ARSCNPlaneGeometry`](arscnplanegeometry.md) instance does not represent any specific plane; use the [`update(from:)`](arscnplanegeometry/update(from:).md) method to make the geometry match the estimated shape of a specific plane anchor.
 
-The geometry contains a single geometry element; as such, assigning more than one material has no visible effect (see the inherited [`materials`](https://developer.apple.com/documentation/SceneKit/SCNGeometry/materials) property).
+The geometry contains a single geometry element; as such, assigning more than one material has no visible effect (see the inherited [`materials`](https://developer.apple.com/documentation/scenekit/scngeometry/materials) property).
 
 ## Parameters
 

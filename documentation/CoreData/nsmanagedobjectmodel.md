@@ -63,7 +63,7 @@ Managed object models are editable until they are used by an object graph manage
 
 ##### Enumerating Entities with Fast Enumeration
 
-In macOS 10.5 and later and on iOS, `NSManagedObjectModel` supports the [`NSFastEnumeration`](https://developer.apple.com/documentation/Foundation/NSFastEnumeration) protocol. You can use this to enumerate over a model’s entities, as illustrated in the following example:
+In macOS 10.5 and later and on iOS, `NSManagedObjectModel` supports the [`NSFastEnumeration`](https://developer.apple.com/documentation/foundation/nsfastenumeration) protocol. You can use this to enumerate over a model’s entities, as illustrated in the following example:
 
 ```objc
 NSManagedObjectModel *aModel = ...;
@@ -139,17 +139,17 @@ for (NSEntityDescription *entity in aModel) {
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCoding](../Foundation/NSCoding.md)
-- [NSCopying](../Foundation/NSCopying.md)
-- [NSFastEnumeration](../Foundation/NSFastEnumeration.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCoding](../foundation/nscoding.md)
+- [NSCopying](../foundation/nscopying.md)
+- [NSFastEnumeration](../foundation/nsfastenumeration.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

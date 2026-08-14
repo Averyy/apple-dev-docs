@@ -16,7 +16,7 @@ class NSSharingService
 
 #### Overview
 
-An [`NSSharingService`](nssharingservice.md) object provides a consistent user experience for sharing items—[`NSURL`](https://developer.apple.com/documentation/Foundation/NSURL) objects, [`NSString`](https://developer.apple.com/documentation/Foundation/NSString) objects, [`NSImage`](nsimage.md) objects, video (through file URLs), of any object that implements the [`NSPasteboardWriting`](nspasteboardwriting.md) protocol—in macOS.
+An [`NSSharingService`](nssharingservice.md) object provides a consistent user experience for sharing items—[`NSURL`](https://developer.apple.com/documentation/foundation/nsurl) objects, [`NSString`](https://developer.apple.com/documentation/foundation/nsstring) objects, [`NSImage`](nsimage.md) objects, video (through file URLs), of any object that implements the [`NSPasteboardWriting`](nspasteboardwriting.md) protocol—in macOS.
 
 For any item or group of items, the [`NSSharingService`](nssharingservice.md) displays a sheet with the content to share. A sharing service can create a post on a social network like Twitter or Facebook, send a message by email or iMessage, upload videos to viewing services, or send a file using AirDrop.
 
@@ -96,14 +96,14 @@ You can use [`NSSharingService`](nssharingservice.md) objects directly in your a
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

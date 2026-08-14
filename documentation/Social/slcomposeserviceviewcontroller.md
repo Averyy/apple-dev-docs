@@ -21,7 +21,7 @@ class SLComposeServiceViewController
 
 The [`SLComposeServiceViewController`](slcomposeserviceviewcontroller.md) class provides a standard compose view, and you can present it for social sharing extensions on iOS and macOS. By default, the compose view includes items such as an editable text view and an indication of remaining characters, in addition to support for previewing attachments and displaying configuration items, such as an account or privacy picker.
 
-The compose view controller gets items for the content and preview areas from the [`extensionContext`](https://developer.apple.com/documentation/UIKit/UIViewController/extensionContext) property of the extension’s [`NSExtensionContext`](https://developer.apple.com/documentation/Foundation/NSExtensionContext) object.
+The compose view controller gets items for the content and preview areas from the [`extensionContext`](https://developer.apple.com/documentation/uikit/uiviewcontroller/extensioncontext) property of the extension’s [`NSExtensionContext`](https://developer.apple.com/documentation/foundation/nsextensioncontext) object.
 
 ## Topics
 
@@ -71,39 +71,39 @@ The compose view controller gets items for the content and preview areas from th
 ## Relationships
 
 ### Inherits From
-- [NSViewController](../AppKit/NSViewController.md)
-- [UIViewController](../UIKit/UIViewController.md)
+- [NSViewController](../appkit/nsviewcontroller.md)
+- [UIViewController](../uikit/uiviewcontroller.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCoding](../Foundation/NSCoding.md)
-- [NSEditor](../AppKit/NSEditor.md)
-- [NSExtensionRequestHandling](../Foundation/NSExtensionRequestHandling.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [NSSeguePerforming](../AppKit/NSSeguePerforming.md)
-- [NSStandardKeyBindingResponding](../AppKit/NSStandardKeyBindingResponding.md)
-- [NSTextDelegate](../AppKit/NSTextDelegate.md)
-- [NSTextViewDelegate](../AppKit/NSTextViewDelegate.md)
-- [NSTouchBarProvider](../AppKit/NSTouchBarProvider.md)
-- [NSUserActivityRestoring](../AppKit/NSUserActivityRestoring.md)
-- [NSUserInterfaceItemIdentification](../AppKit/NSUserInterfaceItemIdentification.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
-- [UIActivityItemsConfigurationProviding](../UIKit/UIActivityItemsConfigurationProviding.md)
-- [UIAppearanceContainer](../UIKit/UIAppearanceContainer.md)
-- [UIContentContainer](../UIKit/UIContentContainer.md)
-- [UIFocusEnvironment](../UIKit/UIFocusEnvironment.md)
-- [UIPasteConfigurationSupporting](../UIKit/UIPasteConfigurationSupporting.md)
-- [UIResponderStandardEditActions](../UIKit/UIResponderStandardEditActions.md)
-- [UIScrollViewDelegate](../UIKit/UIScrollViewDelegate.md)
-- [UIStateRestoring](../UIKit/UIStateRestoring.md)
-- [UITextViewDelegate](../UIKit/UITextViewDelegate.md)
-- [UITraitChangeObservable](../UIKit/UITraitChangeObservable-67e94.md)
-- [UITraitEnvironment](../UIKit/UITraitEnvironment.md)
-- [UIUserActivityRestoring](../UIKit/UIUserActivityRestoring.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCoding](../foundation/nscoding.md)
+- [NSEditor](../appkit/nseditor.md)
+- [NSExtensionRequestHandling](../foundation/nsextensionrequesthandling.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSSeguePerforming](../appkit/nssegueperforming.md)
+- [NSStandardKeyBindingResponding](../appkit/nsstandardkeybindingresponding.md)
+- [NSTextDelegate](../appkit/nstextdelegate.md)
+- [NSTextViewDelegate](../appkit/nstextviewdelegate.md)
+- [NSTouchBarProvider](../appkit/nstouchbarprovider.md)
+- [NSUserActivityRestoring](../appkit/nsuseractivityrestoring.md)
+- [NSUserInterfaceItemIdentification](../appkit/nsuserinterfaceitemidentification.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
+- [UIActivityItemsConfigurationProviding](../uikit/uiactivityitemsconfigurationproviding.md)
+- [UIAppearanceContainer](../uikit/uiappearancecontainer.md)
+- [UIContentContainer](../uikit/uicontentcontainer.md)
+- [UIFocusEnvironment](../uikit/uifocusenvironment.md)
+- [UIPasteConfigurationSupporting](../uikit/uipasteconfigurationsupporting.md)
+- [UIResponderStandardEditActions](../uikit/uiresponderstandardeditactions.md)
+- [UIScrollViewDelegate](../uikit/uiscrollviewdelegate.md)
+- [UIStateRestoring](../uikit/uistaterestoring.md)
+- [UITextViewDelegate](../uikit/uitextviewdelegate.md)
+- [UITraitChangeObservable](../uikit/uitraitchangeobservable-67e94.md)
+- [UITraitEnvironment](../uikit/uitraitenvironment.md)
+- [UIUserActivityRestoring](../uikit/uiuseractivityrestoring.md)
 
 ## See Also
 

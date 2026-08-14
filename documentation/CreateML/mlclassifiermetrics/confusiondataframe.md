@@ -23,7 +23,7 @@ var confusionDataFrame: DataFrame { get }
 
 The confusion data frame describes how examples were mislabeled between categories. Each row contains the true label, the predicted label, and the number of instances of that combination. For example, the table below lists that “business” was labeled correctly with “business” 113 times, while “business” was confused with “entertainment” 2 times.
 
-![A table showing the format of the confusion matrix containing rows for the true label the label predicted by](https://docs-assets.developer.apple.com/published/c9b7730d227217804dd88adf475e1069/MLClassifierMetrics-confusion-1%402x.png)
+![A table showing the format of the confusion matrix containing rows for the true label the label predicted by](/images/com.apple.createml/MLClassifierMetrics-confusion-1@2x.png)
 
 ## See Also
 

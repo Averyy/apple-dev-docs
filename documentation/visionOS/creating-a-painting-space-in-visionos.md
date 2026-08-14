@@ -10,7 +10,7 @@ Implement a painting canvas entity, and update its mesh to represent a stroke.
 
 #### Overview
 
-This sample demonstrates how to create a painting space so that people can pinch-to-draw in an augmented reality space. To achieve this, the app uses hand-tracking technology that [`ARKit`](https://developer.apple.com/documentation/ARKit) provides to monitor a person’s hand movements. To capture and display each stroke, the app creates collision boxes within the environment, stores the person’s drawing points through a pinch gesture, and then updates the mesh at those points to represent the stroke, as the following video shows:
+This sample demonstrates how to create a painting space so that people can pinch-to-draw in an augmented reality space. To achieve this, the app uses hand-tracking technology that [`ARKit`](https://developer.apple.com/documentation/arkit) provides to monitor a person’s hand movements. To capture and display each stroke, the app creates collision boxes within the environment, stores the person’s drawing points through a pinch gesture, and then updates the mesh at those points to represent the stroke, as the following video shows:
 
 ##### Add a System and Component to Enable Real Time Updates
 
@@ -33,7 +33,7 @@ struct ClosureComponent: Component {
 
 The component contains the `closure` variable to track the time. On initialization, it registers `ClosureSystem` into the reality view.
 
-The `ClosureSystem` constructs a query using the [`EntityQuery`](https://developer.apple.com/documentation/RealityKit/EntityQuery) to retrieve all entities with the `ClosureComponent` from the scene. Then it passes the delta time, which is the elapsed time since the last update, to the `closure` variable for each entity:
+The `ClosureSystem` constructs a query using the [`EntityQuery`](https://developer.apple.com/documentation/realitykit/entityquery) to retrieve all entities with the `ClosureComponent` from the scene. Then it passes the delta time, which is the elapsed time since the last update, to the `closure` variable for each entity:
 
 ```swift
 import SwiftUI
@@ -80,7 +80,7 @@ import ARKit
 }
 ```
 
-The `startTracking()` method checks device compatibility for hand tracking and starts the [`ARKitSession`](https://developer.apple.com/documentation/ARKit/ARKitSession) with the [`HandTrackingProvider`](https://developer.apple.com/documentation/ARKit/HandTrackingProvider), while handling potential errors. It continuously waits for anchor updates and assigns the latest left or right hand based on the chirality value:
+The `startTracking()` method checks device compatibility for hand tracking and starts the [`ARKitSession`](https://developer.apple.com/documentation/arkit/arkitsession) with the [`HandTrackingProvider`](https://developer.apple.com/documentation/arkit/handtrackingprovider), while handling potential errors. It continuously waits for anchor updates and assigns the latest left or right hand based on the chirality value:
 
 ```swift
 import RealityKit
@@ -156,7 +156,7 @@ func updateMesh() {
 }
 ```
 
-The method creates the [`MeshResource.Contents`](https://developer.apple.com/documentation/RealityKit/MeshResource/Contents-swift.struct) to represent the content of the mesh that the stroke updates:
+The method creates the [`MeshResource.Contents`](https://developer.apple.com/documentation/realitykit/meshresource/contents-swift.struct) to represent the content of the mesh that the stroke updates:
 
 ```swift
 func updateMesh() {
@@ -181,7 +181,7 @@ func updateMesh() {
 }
 ```
 
-The method creates a [`MeshResource.Instance`](https://developer.apple.com/documentation/RealityKit/MeshResource/Instance), then define a [`MeshResource.Part`](https://developer.apple.com/documentation/RealityKit/MeshResource/Part) for the model, where [`MeshBuffer`](https://developer.apple.com/documentation/RealityKit/MeshBuffer) assigns vertex positions, triangle indices, and normals. Finally, it creates a [`MeshResource.Model`](https://developer.apple.com/documentation/RealityKit/MeshResource/Model) with `part` and assigns to `contents`.
+The method creates a [`MeshResource.Instance`](https://developer.apple.com/documentation/realitykit/meshresource/instance), then define a [`MeshResource.Part`](https://developer.apple.com/documentation/realitykit/meshresource/part) for the model, where [`MeshBuffer`](https://developer.apple.com/documentation/realitykit/meshbuffer) assigns vertex positions, triangle indices, and normals. Finally, it creates a [`MeshResource.Model`](https://developer.apple.com/documentation/realitykit/meshresource/model) with `part` and assigns to `contents`.
 
 The method either updates an existing mesh component on the entity, or creates a new mesh. If a mesh component already exists, it updates it with the `contents`; otherwise, it generates a new mesh with `contents` and assigns it to the entity:
 
@@ -370,7 +370,7 @@ var body: some View {
 
 The `ClosureComponent` iterates through the collection of hand anchors and attempts to retrieve the hand skeleton with each anchor. Then it calculates the distance between the tip of the thumb and the tip of the index finger, using the data from the hand skeleton. If this distance is less than the defined threshold for a pinch gesture, it updates the last known index finger position.
 
-The app attaches the main body view to the `.gesture()` modifier, to recognize user inputs. When the [`DragGesture`](https://developer.apple.com/documentation/SwiftUI/DragGesture) recognizes an `.onChanged` action, it interprets this as the person initiating a painting action, adding a point to the canvas. When the [`DragGesture`](https://developer.apple.com/documentation/SwiftUI/DragGesture) recognizes an `.onEnded` action, it interprets this as the person finishing a painting action, ending the stroke on the canvas:
+The app attaches the main body view to the `.gesture()` modifier, to recognize user inputs. When the [`DragGesture`](https://developer.apple.com/documentation/swiftui/draggesture) recognizes an `.onChanged` action, it interprets this as the person initiating a painting action, adding a point to the canvas. When the [`DragGesture`](https://developer.apple.com/documentation/swiftui/draggesture) recognizes an `.onEnded` action, it interprets this as the person finishing a painting action, ending the stroke on the canvas:
 
 ```swift
 .gesture(

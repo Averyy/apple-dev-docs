@@ -21,7 +21,7 @@ var path: CGPath? { get set }
 
 #### Discussion
 
-For layer properties that contain a [`CGPoint`](https://developer.apple.com/documentation/CoreFoundation/CGPoint) data type, the path object you assign to this property defines the values for that property over the length of the animation. If you specify a value for this property, any data in the [`values`](cakeyframeanimation/values.md) property is ignored.
+For layer properties that contain a [`CGPoint`](https://developer.apple.com/documentation/corefoundation/cgpoint) data type, the path object you assign to this property defines the values for that property over the length of the animation. If you specify a value for this property, any data in the [`values`](cakeyframeanimation/values.md) property is ignored.
 
 Any timing values you specify for the animation are applied to the points used to create the path. Paths can contain points defining move-to, line-to, or curve-to segments. The end point of a line-to or curve-to segment defines the keyframe value. All other points between that end value and the previous value are then interpolated. Move-to segments do not define separate keyframe values.
 

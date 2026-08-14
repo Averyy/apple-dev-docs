@@ -30,7 +30,7 @@ If you do not implement this method, the collection view uses the drag image ret
 - `collectionView`: The collection view making the request.
 - `indexPaths`: The index paths of the items being dragged.
 - `event`: The mouse-down event that began the drag operation. You can use the mouse location when determining what value to return in the `dragImageOffset` parameter.
-- `dragImageOffset`: The offset value to use when positioning the image. On input, the point is [`NSZeroPoint`](https://developer.apple.com/documentation/Foundation/NSZeroPoint), which centers the returned image under the mouse. Your method can return a different point that repositions the drag image by the specified offset values.
+- `dragImageOffset`: The offset value to use when positioning the image. On input, the point is [`NSZeroPoint`](https://developer.apple.com/documentation/foundation/nszeropoint), which centers the returned image under the mouse. Your method can return a different point that repositions the drag image by the specified offset values.
 
 ## See Also
 

@@ -23,7 +23,7 @@ class AVCaptureConnection
 
 Capture inputs have one or more input ports (instances of [`AVCaptureInput.Port`](avcaptureinput/port.md)). Capture outputs can accept data from one or more sources (for example, an [`AVCaptureMovieFileOutput`](avcapturemoviefileoutput.md) object accepts both video and audio data).
 
-You can add an `AVCaptureConnection` instance to a session using the [`addConnection(_:)`](avcapturesession/addconnection(_:).md) method only if the [`canAddConnection(_:)`](avcapturesession/canaddconnection(_:).md) method returns [`true`](https://developer.apple.com/documentation/Swift/true). When using the [`addInput(_:)`](avcapturesession/addinput(_:).md) or [`addOutput(_:)`](avcapturesession/addoutput(_:).md) method, the session forms connections automatically between all compatible inputs and outputs. You only need to add connections manually when adding an input or output with no connections. You can also use connections to enable or disable the flow of data from a given input or to a given output.
+You can add an `AVCaptureConnection` instance to a session using the [`addConnection(_:)`](avcapturesession/addconnection(_:).md) method only if the [`canAddConnection(_:)`](avcapturesession/canaddconnection(_:).md) method returns [`true`](https://developer.apple.com/documentation/swift/true). When using the [`addInput(_:)`](avcapturesession/addinput(_:).md) or [`addOutput(_:)`](avcapturesession/addoutput(_:).md) method, the session forms connections automatically between all compatible inputs and outputs. You only need to add connections manually when adding an input or output with no connections. You can also use connections to enable or disable the flow of data from a given input or to a given output.
 
 ## Topics
 
@@ -106,20 +106,20 @@ You can add an `AVCaptureConnection` instance to a session using the [`addConnec
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 
 - [Setting up a capture session](setting-up-a-capture-session.md)
   Configure input devices, output media, preview views, and basic settings before capturing photos or video.
-- [Accessing the camera while multitasking on iPad](../AVKit/accessing-the-camera-while-multitasking-on-ipad.md)
+- [Accessing the camera while multitasking on iPad](../avkit/accessing-the-camera-while-multitasking-on-ipad.md)
   Operate the camera in Split View, Slide Over, Picture in Picture, and Stage Manager modes.
 - [AVCam: Building a camera app](avcam-building-a-camera-app.md)
   Capture photos and record video using the front and rear iPhone and iPad cameras.

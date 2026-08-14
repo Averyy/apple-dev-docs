@@ -22,7 +22,7 @@ let CBUUIDCharacteristicFormatString: String
 
 #### Discussion
 
-The corresponding value for this descriptor is an [`NSData`](https://developer.apple.com/documentation/Foundation/NSData) object.
+The corresponding value for this descriptor is an [`NSData`](https://developer.apple.com/documentation/foundation/nsdata) object.
 
 ## See Also
 

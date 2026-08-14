@@ -18,7 +18,7 @@ var postbackSequenceIndex: Int { get }
 
 #### Discussion
 
-For more information about receiving time-delayed postbacks for an ad impression, see [`Receiving postbacks in multiple conversion windows`](https://developer.apple.com/documentation/StoreKit/receiving-postbacks-in-multiple-conversion-windows).
+For more information about receiving time-delayed postbacks for an ad impression, see [`Receiving postbacks in multiple conversion windows`](https://developer.apple.com/documentation/storekit/receiving-postbacks-in-multiple-conversion-windows).
 
 ## See Also
 

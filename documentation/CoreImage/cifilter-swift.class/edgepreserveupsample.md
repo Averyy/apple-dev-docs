@@ -31,8 +31,8 @@ The edge preserve upsample filter uses the following properties:
 
 - **`inputImage`**: An image representing the image to upscale with the type [`CIImage`](ciimage.md).
 - **`scaleImage`**: An image representing the reference for scaling the input image with the type [`CIImage`](ciimage.md).
-- **`spatialSigma`**: A float representing the influence of the input image’s spatial information on the upsampling operation as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
-- **`lumaSimga`**: A float representing influence of the input image’s luma information on the upsampling operation as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+- **`spatialSigma`**: A float representing the influence of the input image’s spatial information on the upsampling operation as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
+- **`lumaSimga`**: A float representing influence of the input image’s luma information on the upsampling operation as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
 
 The following code creates a filter that upscales the smaller image to the size of the scale image:
 
@@ -47,7 +47,7 @@ func edgePerserveUp(inputImage: CIImage, smallImage: CIImage) -> CIImage {
 }
 ```
 
-![Two photographs of two large buildings with a clear sky in the background. The buildings have small windows with a lot of horizonal and vertical details. The photo on the left has no modifications to size or color. In the photo on the right, an edge preserve upsample filter is applied, resulting in a scaled-up, larger image.](https://docs-assets.developer.apple.com/published/aae60b3b9a3b8f474fb686bb15bdf7f4/media-3582220%402x.png)
+![Two photographs of two large buildings with a clear sky in the background. The buildings have small windows with a lot of horizonal and vertical details. The photo on the left has no modifications to size or color. In the photo on the right, an edge preserve upsample filter is applied, resulting in a scaled-up, larger image.](/images/com.apple.coreimage/media-3582220@2x.png)
 
 ## See Also
 

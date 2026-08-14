@@ -114,7 +114,7 @@ The [`NSImageRep`](nsimagerep.md) class is called “semiabstract” because it 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Inherited By
 - [NSBitmapImageRep](nsbitmapimagerep.md)
 - [NSCIImageRep](nsciimagerep.md)
@@ -123,22 +123,22 @@ The [`NSImageRep`](nsimagerep.md) class is called “semiabstract” because it 
 - [NSPDFImageRep](nspdfimagerep.md)
 - [NSPICTImageRep](nspictimagerep.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCoding](../Foundation/NSCoding.md)
-- [NSCopying](../Foundation/NSCopying.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCoding](../foundation/nscoding.md)
+- [NSCopying](../foundation/nscopying.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 
-- [Providing images for different appearances](../UIKit/providing-images-for-different-appearances.md)
+- [Providing images for different appearances](../uikit/providing-images-for-different-appearances.md)
   Supply image resources appropriate for light and dark appearances and for high-contrast environments.
 - [Supporting Continuity Camera in Your Mac App](supporting-continuity-camera-in-your-mac-app.md)
   Incorporate scanned documents and pictures from a user’s iPhone, iPad, or iPod touch into your Mac app using Continuity Camera.
-- [Supporting HDR images in your app](../UIKit/supporting-hdr-images-in-your-app.md)
+- [Supporting HDR images in your app](../uikit/supporting-hdr-images-in-your-app.md)
   ​ Load, display, edit, and save HDR images using SwiftUI and Core Image. ​
 - [Applying Apple HDR effect to your photos](applying-apple-hdr-effect-to-your-photos.md)
   You can decode and apply Apple’s HDR gain map to your own images.

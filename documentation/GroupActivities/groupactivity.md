@@ -36,7 +36,7 @@ To initiate an activity, create an instance of your custom type and call its [`p
 
 When an activity begins, the system creates a [`GroupSession`](groupsession.md) instance for the activity and delivers it asynchronously to your app. Use the [`sessions()`](groupactivity/sessions().md) method to get the session and configure your app’s UI.
 
-> ❗ **Important**: `GroupActivity` types must be [`Codable`](https://developer.apple.com/documentation/Swift/Codable) so that the system can serialize them and send them to other participant’s devices.
+> ❗ **Important**: `GroupActivity` types must be [`Codable`](https://developer.apple.com/documentation/swift/codable) so that the system can serialize them and send them to other participant’s devices.
 
 ## Topics
 
@@ -64,14 +64,14 @@ When an activity begins, the system creates a [`GroupSession`](groupsession.md) 
 ## Relationships
 
 ### Inherits From
-- [Decodable](../Swift/Decodable.md)
-- [Encodable](../Swift/Encodable.md)
+- [Decodable](../swift/decodable.md)
+- [Encodable](../swift/encodable.md)
 
 ## See Also
 
 - [Defining your app’s SharePlay activities](defining-your-apps-shareplay-activities.md)
   Configure your app’s SharePlay support and define the activities that people can perform from your app.
-- [Supporting coordinated media playback](../AVFoundation/supporting-coordinated-media-playback.md)
+- [Supporting coordinated media playback](../avfoundation/supporting-coordinated-media-playback.md)
   Create synchronized media experiences that enable users to watch and listen across devices.
 - [struct GroupActivityMetadata](groupactivitymetadata.md)
   Text and image content that describes an activity to potential participants.

@@ -48,7 +48,7 @@ Chart(data) {
 }
 ```
 
-![Scatter plot chart with a rectangle mark annotation. 3 points on the chart at: (5, 5), (2.5, 2.5), (3, 3) the rectangle highlights a rectangular area with coordinates: (0,0), (0,3), (6,3), (6,0).](https://docs-assets.developer.apple.com/published/909a7386624d6d034a15b3f5916107a9/RectangleMarkSwift.RectangleMarkScatterWithRectangleY%402x.png)
+![Scatter plot chart with a rectangle mark annotation. 3 points on the chart at: (5, 5), (2.5, 2.5), (3, 3) the rectangle highlights a rectangular area with coordinates: (0,0), (0,3), (6,3), (6,0).](/images/com.apple.Charts/RectangleMarkSwift.RectangleMarkScatterWithRectangleY@2x.png)
 
 ## See Also
 

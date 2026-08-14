@@ -72,7 +72,7 @@ do {
 ## Parameters
 
 - `completion`: A block that the system calls when the start request is complete. The system sets the following parameters: - **`success`**: A Boolean value that indicates whether the system successfully started mirroring the session.
-- **`error`**: If `success` is [`false`](https://developer.apple.com/documentation/Swift/false), this contains an object that describes the error. Otherwise, it’s `nil`.
+- **`error`**: If `success` is [`false`](https://developer.apple.com/documentation/swift/false), this contains an object that describes the error. Otherwise, it’s `nil`.
 
 ## See Also
 

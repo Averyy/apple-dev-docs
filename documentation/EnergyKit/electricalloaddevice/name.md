@@ -18,7 +18,7 @@ let name: String
 
 #### Discussion
 
-The framework displays this name in the Home app when you adopt the [`EnergyKit LoadEvents Entitlement`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.energykit.loadevents-experience).
+The framework displays this name in the Home app when you adopt the [`EnergyKit LoadEvents Entitlement`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.energykit.loadevents-experience).
 
 ## See Also
 

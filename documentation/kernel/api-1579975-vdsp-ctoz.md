@@ -33,9 +33,9 @@ for (n = 0; n < N; ++n)
 ## Parameters
 
 - `__C`: Single-precision interleaved complex input vector.
-- `__IC`: Stride for  ; must be an even number.
+- `__IC`: Stride for `C`; must be an even number.
 - `__Z`: Single-precision split-complex output vector.
-- `__IZ`: Stride for  .
+- `__IZ`: Stride for `Z`.
 - `__N`: The number of elements to process.
 
 

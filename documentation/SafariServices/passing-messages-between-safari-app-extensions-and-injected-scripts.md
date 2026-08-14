@@ -12,7 +12,7 @@ The solution is to pass messages between the injected script and the app extensi
 
 The complete workflow appears below:
 
-![A diagram showing a message passing from a Safari app extension to an injected script in a webpage and back to the app extension. ](https://docs-assets.developer.apple.com/published/8936272251b5d55a7116403b63e2c45d/media-3027374%402x.png)
+![A diagram showing a message passing from a Safari app extension to an injected script in a webpage and back to the app extension. ](/images/com.apple.safariservices/media-3027374@2x.png)
 
 Within the scripting environment, you have access to the `window` and `document` objects for the browser content, as well as a `safari` object. The `safari` object is an instance of the `SafariAppExtensionNamespace` class. It provides details about your app extension and support for passing messages between your injected script and the app extension.
 
@@ -71,7 +71,7 @@ override func messageReceived(withName messageName: String, from page: SFSafariP
 }
 ```
 
-In Safari 17 and later, check whether the user is browsing with a profile if you need to limit any extension logic to the profile, such as fetching or storing data. To do that, implement the [`beginRequest(with:)`](https://developer.apple.com/documentation/Foundation/NSExtensionRequestHandling/beginRequest(with:)) method.
+In Safari 17 and later, check whether the user is browsing with a profile if you need to limit any extension logic to the profile, such as fetching or storing data. To do that, implement the [`beginRequest(with:)`](https://developer.apple.com/documentation/foundation/nsextensionrequesthandling/beginrequest(with:)) method.
 
 ```swift
 - (void)beginRequestWithExtensionContext:(NSExtensionContext *)context {

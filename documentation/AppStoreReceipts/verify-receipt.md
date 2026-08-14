@@ -14,7 +14,7 @@ Validating with the App Store requires a secure connection between your app and 
 
 Your server must support the Transport Layer Security (TLS) protocol 1.2 or later to call this endpoint.
 
-For more information about server-side receipt validation, see [`Validating receipts with the App Store`](https://developer.apple.com/documentation/StoreKit/validating-receipts-with-the-app-store).
+For more information about server-side receipt validation, see [`Validating receipts with the App Store`](https://developer.apple.com/documentation/storekit/validating-receipts-with-the-app-store).
 
 ##### Use the Sandbox Url for Sandbox Testing
 

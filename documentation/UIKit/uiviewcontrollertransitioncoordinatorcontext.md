@@ -65,7 +65,7 @@ Most animations take place in the view returned by the [`containerView`](uiviewc
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 ### Inherited By
 - [UIViewControllerTransitionCoordinator](uiviewcontrollertransitioncoordinator.md)
 

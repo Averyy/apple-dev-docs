@@ -39,7 +39,7 @@ To subclass `NSXMLElement` you need to override the primary initializer, [`init(
 | [`attributes`](xmlelement/attributes.md) | [`removeChild(at:)`](xmlelement/removechild(at:).md) |
 | [`addNamespace(_:)`](xmlelement/addnamespace(_:).md) | [`setChildren(_:)`](xmlelement/setchildren(_:).md) |
 
-`NSXMLElement` implements  [`isEqual(_:)`](https://developer.apple.com/documentation/ObjectiveC/NSObjectProtocol/isEqual(_:)) to perform a deep comparison: two [`XMLDocument`](xmldocument.md) objects are not considered equal unless they have the same name, same child nodes, same attributes, and so on. If you want a different standard of comparison, override `isEqual:`.
+`NSXMLElement` implements  [`isEqual(_:)`](https://developer.apple.com/documentation/objectivec/nsobjectprotocol/isequal(_:)) to perform a deep comparison: two [`XMLDocument`](xmldocument.md) objects are not considered equal unless they have the same name, same child nodes, same attributes, and so on. If you want a different standard of comparison, override `isEqual:`.
 
 ###### Special Considerations
 
@@ -119,15 +119,15 @@ Note that you can safely set the root element of the XML document (using the `NS
 ### Inherits From
 - [XMLNode](xmlnode.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
 - [NSCopying](nscopying.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

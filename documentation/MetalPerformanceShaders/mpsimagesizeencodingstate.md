@@ -28,7 +28,7 @@ protocol MPSImageSizeEncodingState : NSObjectProtocol
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 ### Conforming Types
 - [MPSCNNConvolutionGradientState](mpscnnconvolutiongradientstate.md)
 - [MPSCNNConvolutionTransposeGradientState](mpscnnconvolutiontransposegradientstate.md)

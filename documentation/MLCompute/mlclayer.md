@@ -39,7 +39,7 @@ This class defines a polymorphic interface for `MLCLayer` subclasses. There are 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Inherited By
 - [MLCActivationLayer](mlcactivationlayer.md)
 - [MLCArithmeticLayer](mlcarithmeticlayer.md)
@@ -71,12 +71,12 @@ This class defines a polymorphic interface for `MLCLayer` subclasses. There are 
 - [MLCTransposeLayer](mlctransposelayer.md)
 - [MLCUpsampleLayer](mlcupsamplelayer.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 
 ---

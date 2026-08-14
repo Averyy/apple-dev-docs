@@ -26,7 +26,7 @@ To build an app or game with SceneKit, you use an [`SCNView`](scnview.md) object
 
 When rendering your scene, an [`SCNView`](scnview.md) object (or other SceneKit renderer) runs a rendering loop that processes and then draws the scene. [`SCNSceneRendererDelegate`](scnscenerendererdelegate.md) shows the steps in this loop.
 
-![None](https://docs-assets.developer.apple.com/published/3f3d7914795ccd9d65d70c7d530f2083/media-2929793%402x.png)
+![None](/images/com.apple.scenekit/media-2929793@2x.png)
 
 Each time through the rendering loop, a SceneKit view (or renderer) executes the following actions in order:
 
@@ -69,7 +69,7 @@ If you want to perform custom rendering before or after SceneKit renders the con
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

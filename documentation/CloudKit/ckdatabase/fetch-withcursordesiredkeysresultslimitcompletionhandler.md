@@ -23,11 +23,11 @@ func fetch(withCursor queryCursor: CKQueryOperation.Cursor, desiredKeys: [CKReco
 
 #### Discussion
 
-The completion handler takes a single [`Result`](https://developer.apple.com/documentation/Swift/Result) parameter that contains either a tuple, or an error if the request fails. For example, when the network is unavailable or the device doesn’t have an active iCloud account.
+The completion handler takes a single [`Result`](https://developer.apple.com/documentation/swift/result) parameter that contains either a tuple, or an error if the request fails. For example, when the network is unavailable or the device doesn’t have an active iCloud account.
 
 When present, the tuple contains the following named elements:
 
-- **`matchResults`**: An array of tuples. Each tuple includes a record identifier and a [`Result`](https://developer.apple.com/documentation/Swift/Result) that contains either the corresponding matched record, or an error that describes why CloudKit can’t provide that record. For example, if CloudKit fails to materialize an asset field, it returns an error instead of a partial record. CloudKit sorts the array according to the query’s sort descriptors.
+- **`matchResults`**: An array of tuples. Each tuple includes a record identifier and a [`Result`](https://developer.apple.com/documentation/swift/result) that contains either the corresponding matched record, or an error that describes why CloudKit can’t provide that record. For example, if CloudKit fails to materialize an asset field, it returns an error instead of a partial record. CloudKit sorts the array according to the query’s sort descriptors.
 - **`queryCursor`**: A cursor if the number of results exceeds `resultsLimit`; otherwise, `nil`.
 
 If you specify `resultsLimit` and the number of matched records exceeds that value, CloudKit provides only that number of records and a *cursor* — an object that marks a specific location in the full search results. To retrieve the next subset of search results, execute this method again and pass the provided cursor from previous execution.

@@ -105,18 +105,18 @@ The behavior of incrementing indefinitely is determined by the type of `Bound`. 
 ## Relationships
 
 ### Conforms To
-- [BNNSGraph.Builder.SliceIndex](../Accelerate/BNNSGraph/Builder/SliceIndex.md)
+- [BNNSGraph.Builder.SliceIndex](../accelerate/bnnsgraph/builder/sliceindex.md)
 - [BitwiseCopyable](bitwisecopyable.md)
 - [ConvertibleFromBytes](convertiblefrombytes.md)
 - [ConvertibleToBytes](convertibletobytes.md)
 - [Copyable](copyable.md)
-- [CustomTestStringConvertible](../Testing/CustomTestStringConvertible.md)
+- [CustomTestStringConvertible](../testing/customteststringconvertible.md)
 - [Decodable](decodable.md)
 - [Encodable](encodable.md)
 - [Escapable](escapable.md)
-- [MLShapedArrayRangeExpression](../CoreML/MLShapedArrayRangeExpression.md)
-- [MLTensorRangeExpression](../CoreML/MLTensorRangeExpression.md)
-- [NDArray.RangeExpression](../CoreAI/NDArray/RangeExpression.md)
+- [MLShapedArrayRangeExpression](../coreml/mlshapedarrayrangeexpression.md)
+- [MLTensorRangeExpression](../coreml/mltensorrangeexpression.md)
+- [NDArray.RangeExpression](../coreai/ndarray/rangeexpression.md)
 - [RangeExpression](rangeexpression.md)
 - [Sendable](sendable.md)
 - [SendableMetatype](sendablemetatype.md)

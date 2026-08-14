@@ -8,7 +8,6 @@ Sends a message to the paired accessory.
 
 **Availability**:
 - iOS 26.5+
-- iPadOS 26.5+
 
 ## Declaration
 
@@ -18,7 +17,7 @@ func send(message: AccessoryMessage) async throws
 
 #### Discussion
 
-Create an [`AccessoryMessage`](https://developer.apple.com/documentation/AccessoryTransportExtension/AccessoryMessage) containing your notification data and send it to your accessory. The system encrypts the message before delivering it to the transport extension for transmission.
+Create an [`AccessoryMessage`](https://developer.apple.com/documentation/accessorytransportextension/accessorymessage) containing your notification data and send it to your accessory. The system encrypts the message before delivering it to the transport extension for transmission.
 
 ## Parameters
 

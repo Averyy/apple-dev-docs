@@ -20,11 +20,11 @@ func dismissalTransitionDidEnd(_ completed: Bool)
 
 #### Discussion
 
-The default implementation of this method does nothing. Subclasses can override this method and use it to remove any custom views that the presentation controller added to the view hierarchy. Remove your views only if the `completed` parameter is [`true`](https://developer.apple.com/documentation/Swift/true).
+The default implementation of this method does nothing. Subclasses can override this method and use it to remove any custom views that the presentation controller added to the view hierarchy. Remove your views only if the `completed` parameter is [`true`](https://developer.apple.com/documentation/swift/true).
 
 ## Parameters
 
-- `completed`: [`true`](https://developer.apple.com/documentation/Swift/true) if the animations completed and the presented view controller was dismissed or [`false`](https://developer.apple.com/documentation/Swift/false) if the animations were canceled and the presented view controller is still visible.
+- `completed`: [`true`](https://developer.apple.com/documentation/swift/true) if the animations completed and the presented view controller was dismissed or [`false`](https://developer.apple.com/documentation/swift/false) if the animations were canceled and the presented view controller is still visible.
 
 ## See Also
 

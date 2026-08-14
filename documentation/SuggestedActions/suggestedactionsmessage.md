@@ -24,7 +24,7 @@ Create a `SuggestedActionsMessage` from your app’s data model for a message, t
 
 The `id` you pass to the create a `SuggestedActionsMessage` must be unique for each message and stable across app launches. Creating stable identifiers lets the framework match messages against previously cached suggested actions.
 
-> **Note**: To use the Suggested Actions framework, add the [`Suggested Actions`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.suggested-actions) entitlement to your app target.
+> **Note**: To use the Suggested Actions framework, add the [`Suggested Actions`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.suggested-actions) entitlement to your app target.
 
 ## Topics
 
@@ -40,8 +40,8 @@ The `id` you pass to the create a `SuggestedActionsMessage` must be unique for e
 ## Relationships
 
 ### Conforms To
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

@@ -16,7 +16,7 @@ func setWantsNotificationForMarkedText(_ flag: Bool)
 
 ## Parameters
 
-- `flag`: If [`true`](https://developer.apple.com/documentation/Swift/true), the field editor posts text change notifications (NSTextDidChangeNotification) while editing marked text; if [`false`](https://developer.apple.com/documentation/Swift/false), notifications are delayed until the marked text confirmation.
+- `flag`: If [`true`](https://developer.apple.com/documentation/swift/true), the field editor posts text change notifications (NSTextDidChangeNotification) while editing marked text; if [`false`](https://developer.apple.com/documentation/swift/false), notifications are delayed until the marked text confirmation.
 
 ## See Also
 

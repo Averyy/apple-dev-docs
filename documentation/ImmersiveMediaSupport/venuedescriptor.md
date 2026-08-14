@@ -50,9 +50,9 @@ This type contains information that includes camera definitions such as the lens
 ## Relationships
 
 ### Conforms To
-- [Actor](../Swift/Actor.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Actor](../swift/actor.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

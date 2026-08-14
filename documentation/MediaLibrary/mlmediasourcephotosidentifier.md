@@ -15,7 +15,7 @@ let MLMediaSourcePhotosIdentifier: String
 
 #### Discussion
 
-If your app uses APIs that have read or write access to the user’s Photos library, the [`NSPhotoLibraryUsageDescription`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSPhotoLibraryUsageDescription) key is required in your information property list.
+If your app uses APIs that have read or write access to the user’s Photos library, the [`NSPhotoLibraryUsageDescription`](https://developer.apple.com/documentation/bundleresources/information-property-list/nsphotolibraryusagedescription) key is required in your information property list.
 
 ## See Also
 

@@ -22,7 +22,7 @@ mutating func appendInterpolation<T>(_ number: @autoclosure @escaping () -> T, f
 
 #### Discussion
 
-> ❗ **Important**:  You don’t call this method directly. Instead, the framework calls it automatically when you append an interpolated type that adopts the [`FixedWidthInteger`](https://developer.apple.com/documentation/Swift/FixedWidthInteger) protocol to a log message.
+> ❗ **Important**:  You don’t call this method directly. Instead, the framework calls it automatically when you append an interpolated type that adopts the [`FixedWidthInteger`](https://developer.apple.com/documentation/swift/fixedwidthinteger) protocol to a log message.
 
 ## Parameters
 

@@ -7,7 +7,6 @@ Expiration date of business information.
 
 **Availability**:
 - iOS 26.0+
-- iPadOS 26.0+
 
 ## Declaration
 

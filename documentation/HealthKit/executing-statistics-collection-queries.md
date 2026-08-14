@@ -12,7 +12,7 @@ Produce data for graphs and charts using statistics collection queries. For exam
 
 Statistics collection queries use an anchor point and a time interval to partition the set of matching samples into collections. The anchor point defines an arbitrary starting point. The position of this point often doesn’t matter. It could be in the future or in the past. Time intervals extend away from this anchor point in both directions.
 
-![An illustration showing a value for each time interval around the specified anchor.](https://docs-assets.developer.apple.com/published/42de5e4a5895738f2d09048853669681/media-3740870%402x.png)
+![An illustration showing a value for each time interval around the specified anchor.](/images/com.apple.healthkit/media-3740870@2x.png)
 
 For example, if you use a 1-day time interval, the anchor point defines the time when each collection begins. The exact date for the anchor point doesn’t matter. It could be 3:34 a.m., January 1, 1970 or 3:34 a.m., March 15, 2065. In both cases, the statistics collection query partitions the matching samples into days, starting each day at 3:34 a.m.
 
@@ -95,7 +95,7 @@ query.initialResultsHandler = {
 ...
 ```
 
-After you handle any errors, process the incoming statistics data, and then update your app. Be sure to dispatch code that updates the user interface to the [`main`](https://developer.apple.com/documentation/Dispatch/DispatchQueue/main) queue.
+After you handle any errors, process the incoming statistics data, and then update your app. Be sure to dispatch code that updates the user interface to the [`main`](https://developer.apple.com/documentation/dispatch/dispatchqueue/main) queue.
 
 The following code calculates the start and end times for a 3-month window and then iterates over all the time intervals in that window. The statistics collection passes the enumeration block a statistics object for each time interval between the start and end dates. However, if the time interval doesn’t contain any samples, the provided statistics’s [`sumQuantity()`](hkstatistics/sumquantity().md) method returns `nil`. Therefore, the sample must check to see whether it has a valid quantity. If it does, it adds the data; otherwise, it skips the time interval.
 

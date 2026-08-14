@@ -20,7 +20,7 @@ func interpolatedLocation(at parametricValue: CGFloat) -> CGPoint
 
 #### Return Value
 
-A [`CGPoint`](https://developer.apple.com/documentation/CoreFoundation/CGPoint) interpolated from supplied `parametricValue`.
+A [`CGPoint`](https://developer.apple.com/documentation/corefoundation/cgpoint) interpolated from supplied `parametricValue`.
 
 ## Parameters
 

@@ -21,7 +21,7 @@ You create a callback with the type methods [`customScheme(_:)`](aswebauthentica
 
 Use this callback to check all main frame URLs that load during the request. When it matches, invoke [`complete(withCallbackURL:)`](aswebauthenticationsessionrequest/complete(withcallbackurl:).md) with that URL.
 
-> ❗ **Important**: Your browser app needs to add [`CallbackURLMatchingIsSupported`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/ASWebAuthenticationSessionWebBrowserSupportCapabilities/CallbackURLMatchingIsSupported) with the value `YES` to the [`ASWebAuthenticationSessionWebBrowserSupportCapabilities`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/ASWebAuthenticationSessionWebBrowserSupportCapabilities) dictionary in your app’s information property list to use this API. If the system doesn’t find this key in the default browser app, it sends the request to Safari instead.
+> ❗ **Important**: Your browser app needs to add [`CallbackURLMatchingIsSupported`](https://developer.apple.com/documentation/bundleresources/information-property-list/aswebauthenticationsessionwebbrowsersupportcapabilities/callbackurlmatchingissupported) with the value `YES` to the [`ASWebAuthenticationSessionWebBrowserSupportCapabilities`](https://developer.apple.com/documentation/bundleresources/information-property-list/aswebauthenticationsessionwebbrowsersupportcapabilities) dictionary in your app’s information property list to use this API. If the system doesn’t find this key in the default browser app, it sends the request to Safari instead.
 
 ## See Also
 

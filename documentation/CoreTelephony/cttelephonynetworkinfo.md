@@ -46,7 +46,7 @@ This class also gives you access to the [`CTCarrier`](ctcarrier.md) object, whic
   A dictionary that contains carrier information about each service.
 - [var serviceSubscriberCellularProvidersDidUpdateNotifier: ((String) -> Void)?](cttelephonynetworkinfo/servicesubscribercellularprovidersdidupdatenotifier.md)
   A block dispatched when there are updates to the user’s cellular provider information for any service.
-- [static let CTRadioAccessTechnologyDidChange: NSNotification.Name](../Foundation/NSNotification/Name-swift.struct/CTRadioAccessTechnologyDidChange.md)
+- [static let CTRadioAccessTechnologyDidChange: NSNotification.Name](../foundation/nsnotification/name-swift.struct/ctradioaccesstechnologydidchange.md)
   The name of the notification indicating that the radio access technology changed for one of the services.
 ### Structures
 - [CTTelephonyNetworkInfo.RadioAccessTechnologyDidChangeMessage](cttelephonynetworkinfo/radioaccesstechnologydidchangemessage.md)
@@ -55,14 +55,14 @@ This class also gives you access to the [`CTCarrier`](ctcarrier.md) object, whic
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

@@ -42,8 +42,8 @@ struct TurbulenceForceEffect
 ## Relationships
 
 ### Conforms To
-- [Decodable](../Swift/Decodable.md)
-- [Encodable](../Swift/Encodable.md)
+- [Decodable](../swift/decodable.md)
+- [Encodable](../swift/encodable.md)
 - [ForceEffectProtocol](forceeffectprotocol.md)
 
 ## See Also

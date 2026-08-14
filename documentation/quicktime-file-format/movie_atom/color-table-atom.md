@@ -7,7 +7,7 @@ An atom that defines a list of preferred colors for displaying the movie on devi
 
 #### Overview
 
-For more information, see [`Color table atom ('ctab')`](color_table_atom.md).
+For more information, see [`Color table atom`](color_table_atom.md).
 
 ## See Also
 

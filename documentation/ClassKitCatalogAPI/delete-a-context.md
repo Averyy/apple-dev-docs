@@ -34,7 +34,7 @@ https://classkit-catalog.apple.com/v1/contexts?environment=development&identifie
 
 - `environment` (string) *(required)*: The development or production environment to use for this access. For details, see [`Testing Your ClassKit Catalog Implementation`](testing-your-classkit-catalog-implementation.md).
 - `identifierPath` (string) *(required)*: The identifier path for the context to delete. Format this value as a URL-encoded JSON array of strings.
-- `locale` (string) *(required)*: The locale of the context to delete. Use one of the identifiers supported by the [`Locale`](https://developer.apple.com/documentation/Foundation/Locale) structure. It must match a locale that your app supports.
+- `locale` (string) *(required)*: The locale of the context to delete. Use one of the identifiers supported by the [`Locale`](https://developer.apple.com/documentation/foundation/locale) structure. It must match a locale that your app supports.
 
 ## See Also
 

@@ -17,7 +17,7 @@ A Boolean value that indicates whether your app can use the TV Provider Authenti
 
 #### Discussion
 
-This entitlement lets you use the [`Video Subscriber Account`](https://developer.apple.com/documentation/VideoSubscriberAccount) framework.
+This entitlement lets you use the [`Video Subscriber Account`](https://developer.apple.com/documentation/videosubscriberaccount) framework.
 
 ## See Also
 

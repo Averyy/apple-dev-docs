@@ -21,7 +21,7 @@ An instance of `NSCloneCommand` clones the specified scriptable object or object
 
 `NSCloneCommand` is part of Cocoa’s built-in scripting support. It works automatically to support the `duplicate` command through key-value coding. Most applications don’t need to subclass `NSCloneCommand` or invoke its methods.
 
-When an instance of `NSCloneCommand` is executed, it clones the specified objects by sending them [`copyWithZone:`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class/copyWithZone:) messages.
+When an instance of `NSCloneCommand` is executed, it clones the specified objects by sending them [`copyWithZone:`](https://developer.apple.com/documentation/objectivec/nsobject-swift.class/copywithzone:) messages.
 
 ## Topics
 
@@ -36,15 +36,15 @@ When an instance of `NSCloneCommand` is executed, it clones the specified object
 ### Inherits From
 - [NSScriptCommand](nsscriptcommand.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
 - [NSCoding](nscoding.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

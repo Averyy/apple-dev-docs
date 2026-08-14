@@ -16,7 +16,7 @@ In [`Adding a Divider`](adding-a-divider.md), you created a divider and used a `
 - Move the photo caption closer to the content above and below it by using smaller values for the `margin` property.
 - Create a new default component text style for components with the `caption` role.
 
-![Screenshot of an Apple News article with a captioned photo on iPad.](https://docs-assets.developer.apple.com/published/5f7f64feedcfb0751a44bd3698636cb5/media-3624434%402x.png)
+![Screenshot of an Apple News article with a captioned photo on iPad.](/images/com.apple.applenews/media-3624434@2x.png)
 
 ##### Define Positions for the Photo and Caption
 

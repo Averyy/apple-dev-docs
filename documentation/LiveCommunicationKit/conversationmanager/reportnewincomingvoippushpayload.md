@@ -23,7 +23,7 @@ final class func reportNewIncomingVoIPPushPayload(_ payload: [AnyHashable : Any]
 
 ## Parameters
 
-- `payload`: A dictionary containing additional data about the incoming conversation. All keys and values in the dictionary must implement the [`NSSecureCoding`](https://developer.apple.com/documentation/Foundation/NSSecureCoding) protocol.
+- `payload`: A dictionary containing additional data about the incoming conversation. All keys and values in the dictionary must implement the [`NSSecureCoding`](https://developer.apple.com/documentation/foundation/nssecurecoding) protocol.
 
 ## See Also
 

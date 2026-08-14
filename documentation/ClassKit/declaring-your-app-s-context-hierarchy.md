@@ -14,7 +14,7 @@ Begin by giving each context a string identifier that’s unique among its sibli
 
 Identifiers only need to be unique among contexts with the same parent. So you might declare a `section-2` context for each of `chapter-1` and `chapter-2` because the complete identifier path uniquely identifies each section. But you can only declare one `section-2` context for a given chapter.
 
-The identifiers don’t require a particular format because they aren’t ever displayed to a user. For example, if your chapter model happens to store a universally unique identifier in a [`UUID`](https://developer.apple.com/documentation/Foundation/UUID) instance, you can use the [`uuidString`](https://developer.apple.com/documentation/Foundation/UUID/uuidString) property to obtain a suitable identifier string for the corresponding context. As the name implies, the identifier is guaranteed to be unique (more than strictly necessary because it’s universally unique). And because you already keep the UUID with the chapter instance, you can easily look up the identifier when you need it.
+The identifiers don’t require a particular format because they aren’t ever displayed to a user. For example, if your chapter model happens to store a universally unique identifier in a [`UUID`](https://developer.apple.com/documentation/foundation/uuid) instance, you can use the [`uuidString`](https://developer.apple.com/documentation/foundation/uuid/uuidstring) property to obtain a suitable identifier string for the corresponding context. As the name implies, the identifier is guaranteed to be unique (more than strictly necessary because it’s universally unique). And because you already keep the UUID with the chapter instance, you can easily look up the identifier when you need it.
 
 ##### Declare Each Leaf Context
 
@@ -46,7 +46,7 @@ for chapter in book.chapters {
 
 ##### Declare Contexts Early
 
-It’s important to declare the entire context hierarchy early in your app’s lifecycle, typically from within [`application(_:didFinishLaunchingWithOptions:)`](https://developer.apple.com/documentation/UIKit/UIApplicationDelegate/application(_:didFinishLaunchingWithOptions:)). If you have dynamic material, such as new game levels that the user downloads long after first running your app, declare that additional content as soon as you know about it.
+It’s important to declare the entire context hierarchy early in your app’s lifecycle, typically from within [`application(_:didFinishLaunchingWithOptions:)`](https://developer.apple.com/documentation/uikit/uiapplicationdelegate/application(_:didfinishlaunchingwithoptions:)). If you have dynamic material, such as new game levels that the user downloads long after first running your app, declare that additional content as soon as you know about it.
 
 You use these declarations to advertise your app’s assignable content to Apple’s Schoolwork app, which is where teachers go to create assignments. Until a teacher’s instance of your app has performed context declaration on their own device, the teacher’s view of Schoolwork won’t offer your app’s content for assignments.
 

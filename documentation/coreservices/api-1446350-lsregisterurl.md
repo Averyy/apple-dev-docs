@@ -29,8 +29,8 @@ Thread-safe since Mac OS version 10.3.
 
 ## Parameters
 
-- `inFileURL`: A Core Foundation URL reference designating the app to be registered; see the   in the Core Foundation Reference Documentation for a description of the   data type. The URL must have scheme   and contain a valid path to an app file or app bundle.
-- `inUpdate`: A Boolean value specifying whether Launch Services should update existing information registered for the app, if any. If this parameter is  , the app will not be registered if it has already been registered previously and its current modification date has not changed from when it was last registered; if the parameter is  , the app’s registered information will be updated even if its modification date has not changed.
+- `inFileURL`: A Core Foundation URL reference designating the app to be registered; see the *CFURL Reference* in the Core Foundation Reference Documentation for a description of the `CFURLRef` data type. The URL must have scheme `file` and contain a valid path to an app file or app bundle.
+- `inUpdate`: A Boolean value specifying whether Launch Services should update existing information registered for the app, if any. If this parameter is `false`, the app will not be registered if it has already been registered previously and its current modification date has not changed from when it was last registered; if the parameter is `true`, the app’s registered information will be updated even if its modification date has not changed.
 
 
 ---

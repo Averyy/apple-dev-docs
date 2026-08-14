@@ -23,7 +23,7 @@ struct PlaneVertex {
 
 In this example, the vertex has a 3D position and a 3D normal vector, but you can further customize your vertex structure with different names and additional data, such as color and UV data.
 
-Make `PlaneVertex` accessible in both Swift files and Metal files by referencing it in a bridging file. See [`Passing Structured Data to a Metal Compute Function`](passing-structured-data-to-a-metal-compute-function#Import-the-struct-in-a-bridging-header.md) for more information about bridging files.
+Make `PlaneVertex` accessible in both Swift files and Metal files by referencing it in a bridging file. See [`Passing Structured Data to a Metal Compute Function`](passing-structured-data-to-a-metal-compute-function.md) for more information about bridging files.
 
 #### Define a Plane Mesh Structure
 
@@ -117,7 +117,7 @@ Finally, create the low-level mesh by describing its vertex capacity, attributes
 
 Prepare the mesh for rendering by filling in its vertex and index buffers with data on the CPU, as in the following image:
 
-![A screenshot of a wireframe rendering of the plane mesh with 16 vertices in each dimension, floating in a kitchen scene. Lines connect the vertices to form 512 triangles.](https://docs-assets.developer.apple.com/published/687b1928fabe0483380ad3d7ebe60f70/creating-a-plane-with-low-level-mesh-1.jpg)
+![A screenshot of a wireframe rendering of the plane mesh with 16 vertices in each dimension, floating in a kitchen scene. Lines connect the vertices to form 512 triangles.](/images/com.apple.RealityKit/creating-a-plane-with-low-level-mesh-1.jpg)
 
 > **Note**: You can also fill in the data on the GPU by running a Metal compute shader (see [`Generating interactive geometry with RealityKit`](generating-interactive-geometry-with-realitykit.md)).
 
@@ -261,7 +261,7 @@ RealityView { content in
 
 The following image shows the result of rendering a `PlaneMesh`’s low-level mesh in the scene:
 
-![A screenshot of a flat plane mesh floating in a kitchen scene. The plane appears light gray.](https://docs-assets.developer.apple.com/published/b5ffd7673f3a52999377fc9bb30a4fd1/creating-a-plane-with-low-level-mesh-2.jpg)
+![A screenshot of a flat plane mesh floating in a kitchen scene. The plane appears light gray.](/images/com.apple.RealityKit/creating-a-plane-with-low-level-mesh-2.jpg)
 
 ## See Also
 

@@ -8,7 +8,7 @@ Package your app-specific data into a template and create a timeline entry for t
 
 ClockKit periodically requests timeline entries from your complication’s data source. A timeline entry consists of a complication template that you have configured with your app’s data and a date that specifies when ClockKit displays that template.
 
-![A figure showing the app data, timeline entry date, and template for a timeline entry.](https://docs-assets.developer.apple.com/published/521293196c639304b3ff24a6b9a837a0/media-3165033%402x.png)
+![A figure showing the app data, timeline entry date, and template for a timeline entry.](/images/com.apple.clockkit/media-3165033@2x.png)
 
 Your data source packages app-specific data into a template that ClockKit can display onscreen. To create the template, you examine the provided [`CLKComplication`](clkcomplication.md) object, select an appropriate template, fill the template with data from your app, and then create a timeline entry for the template.
 

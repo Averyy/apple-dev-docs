@@ -38,8 +38,8 @@ The App Store server and StoreKit provide the `appTransactionID` in the followin
 - This symbol, `appTransactionID`, in the [`AppTransaction`](apptransaction.md) object
 - [`appTransactionID`](product/subscriptioninfo/renewalinfo/apptransactionid.md), in the subscription renewal information [`Product.SubscriptionInfo.RenewalInfo`](product/subscriptioninfo/renewalinfo.md)
 - [`appTransactionID`](transaction/apptransactionid.md), in the transaction information [`Transaction`](transaction.md)
-- In transaction and subscription renewal information you receive from notifications, [`App Store Server Notifications V2`](https://developer.apple.com/documentation/AppStoreServerNotifications/App-Store-Server-Notifications-V2)
-- In transaction and subscription renewal information you receive from the [`App Store Server API`](https://developer.apple.com/documentation/AppStoreServerAPI)
+- In transaction and subscription renewal information you receive from notifications, [`App Store Server Notifications V2`](https://developer.apple.com/documentation/appstoreservernotifications/app-store-server-notifications-v2)
+- In transaction and subscription renewal information you receive from the [`App Store Server API`](https://developer.apple.com/documentation/appstoreserverapi)
 
 
 ---

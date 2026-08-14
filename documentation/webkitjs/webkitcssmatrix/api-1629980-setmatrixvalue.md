@@ -19,7 +19,7 @@ void setMatrixValue(
 
 ## Parameters
 
-- `string`: A string returned by the   transform function—typically returned by  .
+- `string`: A string returned by the [`matrix3d`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/AppleApplications/Reference/SafariCSSRef/Articles/Functions.html#//apple_ref/css/func/matrix3d) transform function—typically returned by `window.getComputedStyle(element).webkitTransform()`.
 
 
 ---

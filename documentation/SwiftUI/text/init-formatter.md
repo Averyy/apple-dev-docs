@@ -26,8 +26,8 @@ Use this initializer to create a text view that formats `subject` using `formatt
 
 ## Parameters
 
-- `subject`: An [`NSObject`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class) instance compatible with `formatter`.
-- `formatter`: A [`Formatter`](https://developer.apple.com/documentation/Foundation/Formatter) capable of converting `subject` into a string representation.
+- `subject`: An [`NSObject`](https://developer.apple.com/documentation/objectivec/nsobject-swift.class) instance compatible with `formatter`.
+- `formatter`: A [`Formatter`](https://developer.apple.com/documentation/foundation/formatter) capable of converting `subject` into a string representation.
 
 ## See Also
 

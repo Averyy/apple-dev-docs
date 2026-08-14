@@ -3,6 +3,8 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
+The request body for adding or removing subscription administrators.
+
 ## Declaration
 
 ```swift
@@ -11,8 +13,8 @@ object ManageSubscriptionAdminsRequest
 
 ## Properties
 
-- `adamIds` ([int64]) *(required)*
-- `clientUserIds` ([string]) *(required)*
+- `adamIds` ([int64]) *(required)*: The set of Adam IDs for the subscriptions to manage.
+- `clientUserIds` ([string]) *(required)*: The set of client user identifiers to add as administrators or remove as administrators.
 
 ## See Also
 
@@ -39,11 +41,13 @@ object ManageSubscriptionAdminsRequest
 - [object ManageSubscriptionsRequest](managesubscriptionsrequest.md)
   The request for subscription management.
 - [object ManageSubscriptionAdminsResponse](managesubscriptionadminsresponse.md)
+  The confirmation response that the server returns after adding or removing subscription administrators.
 - [object ResponseSubscriptionAdmin](responsesubscriptionadmin.md)
+  An administrator for a subscription.
+- [object SubscriptionManagementResponse](subscriptionmanagementresponse.md)
+  A confirmation response that reports your device management service’s subscription management support.
 - [object MdmInfo](mdminfo.md)
   Information about the MDM client.
-- [object EventResponse](eventresponse.md)
-  The response that contains the event identifier.
 
 
 ---

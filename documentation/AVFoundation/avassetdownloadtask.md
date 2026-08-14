@@ -25,7 +25,7 @@ You create instances of this class by calling [`makeAssetDownloadTask(downloadCo
 
 To play an asset while its download is in progress, reuse the [`AVURLAsset`](avurlasset.md) you supplied to the download configuration. The asset reads locally cached segments during concurrent playback when the streaming variant matches the downloading variant.
 
-Adopt the [`AVAssetDownloadDelegate`](avassetdownloaddelegate.md) protocol to receive progress and completion callbacks. Use the inherited [`progress`](https://developer.apple.com/documentation/Foundation/URLSessionTask/progress) property for numeric download progress updates. The delegate method [`urlSession(_:assetDownloadTask:willDownloadTo:)`](avassetdownloaddelegate/urlsession(_:assetdownloadtask:willdownloadto:).md) provides the local file URL where the system stores the asset.
+Adopt the [`AVAssetDownloadDelegate`](avassetdownloaddelegate.md) protocol to receive progress and completion callbacks. Use the inherited [`progress`](https://developer.apple.com/documentation/foundation/urlsessiontask/progress) property for numeric download progress updates. The delegate method [`urlSession(_:assetDownloadTask:willDownloadTo:)`](avassetdownloaddelegate/urlsession(_:assetdownloadtask:willdownloadto:).md) provides the local file URL where the system stores the asset.
 
 > ❗ **Important**: Save the local file URL the delegate provides. You need it to reconstruct the offline [`AVURLAsset`](avurlasset.md) on subsequent app launches.
 
@@ -33,7 +33,7 @@ To augment an existing download, initialize a new task with an [`AVURLAsset`](av
 
 ##### Live Activity
 
-To control how the system schedules downloads, set the `isDiscretionary` property on the [`URLSessionConfiguration`](https://developer.apple.com/documentation/Foundation/URLSessionConfiguration) you pass when creating the [`AVAssetDownloadURLSession`](avassetdownloadurlsession.md). Non-discretionary downloads start as soon as possible. The system defers discretionary downloads until conditions like network and battery state are favorable, and runs them silently in the background.
+To control how the system schedules downloads, set the `isDiscretionary` property on the [`URLSessionConfiguration`](https://developer.apple.com/documentation/foundation/urlsessionconfiguration) you pass when creating the [`AVAssetDownloadURLSession`](avassetdownloadurlsession.md). Non-discretionary downloads start as soon as possible. The system defers discretionary downloads until conditions like network and battery state are favorable, and runs them silently in the background.
 
 On supported platforms, a non-discretionary download displays a Live Activity on the Lock Screen and in the Dynamic Island that shows real-time download progress. Discretionary downloads don’t display a Live Activity.
 
@@ -43,7 +43,7 @@ If any downloads in the group fail, the Live Activity transitions to a failure s
 
 The Live Activity doesn’t reflect download tasks until you resume them. If you resume a task while your app runs in the background, the system might demote it to discretionary. The system queues downloads in the order you resume them.
 
-Swift subclasses of this type must conform to [`Sendable`](https://developer.apple.com/documentation/Swift/Sendable).
+Swift subclasses of this type must conform to [`Sendable`](https://developer.apple.com/documentation/swift/sendable).
 
 ## Topics
 
@@ -60,18 +60,18 @@ Swift subclasses of this type must conform to [`Sendable`](https://developer.app
 ## Relationships
 
 ### Inherits From
-- [URLSessionTask](../Foundation/URLSessionTask.md)
+- [URLSessionTask](../foundation/urlsessiontask.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCopying](../Foundation/NSCopying.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [ProgressReporting](../Foundation/ProgressReporting.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCopying](../foundation/nscopying.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [ProgressReporting](../foundation/progressreporting.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

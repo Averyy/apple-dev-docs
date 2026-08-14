@@ -22,7 +22,7 @@ struct Publisher
 
 #### Overview
 
-If the result is `Swift/Result/success`, then the publisher waits until it receives a request for at least one value, then sends the output to all subscribers and finishes normally. If the result is `/Swift/Result/failure`, then the publisher sends the failure immediately upon subscription. This latter behavior is a contrast with [`Just`](https://developer.apple.com/documentation/Combine/Just), which always publishes a single value.
+If the result is `Swift/Result/success`, then the publisher waits until it receives a request for at least one value, then sends the output to all subscribers and finishes normally. If the result is `/Swift/Result/failure`, then the publisher sends the failure immediately upon subscription. This latter behavior is a contrast with [`Just`](https://developer.apple.com/documentation/combine/just), which always publishes a single value.
 
 ## Topics
 
@@ -72,7 +72,7 @@ If the result is `Swift/Result/success`, then the publisher waits until it recei
 
 ### Conforms To
 - [Equatable](equatable.md)
-- [Publisher](../Combine/Publisher.md)
+- [Publisher](../combine/publisher.md)
 
 ## See Also
 

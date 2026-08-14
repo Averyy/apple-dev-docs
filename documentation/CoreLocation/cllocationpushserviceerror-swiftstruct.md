@@ -36,16 +36,16 @@ struct CLLocationPushServiceError
 ## Relationships
 
 ### Conforms To
-- [CustomNSError](../Foundation/CustomNSError.md)
-- [Equatable](../Swift/Equatable.md)
-- [Error](../Swift/Error.md)
-- [Hashable](../Swift/Hashable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [CustomNSError](../foundation/customnserror.md)
+- [Equatable](../swift/equatable.md)
+- [Error](../swift/error.md)
+- [Hashable](../swift/hashable.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 
-- [Location Push Service Extension](../BundleResources/Entitlements/com.apple.developer.location.push.md)
+- [Location Push Service Extension](../bundleresources/entitlements/com.apple.developer.location.push.md)
   An entitlement to enable a location-sharing app to query someone’s location in response to a push notification.
 - [protocol CLLocationPushServiceExtension](cllocationpushserviceextension.md)
   The interface you adopt in the type that acts as the main entry point for a Location Push Service Extension.

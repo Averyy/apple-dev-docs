@@ -8,7 +8,7 @@ Obtain a Core ML model to use in your app.
 
 Core ML supports a variety of machine learning models, including neural networks, tree ensembles, support vector machines, and generalized linear models. Core ML requires the Core ML model format (models with a `.mlmodel` file extension).
 
-Using [`Create ML`](https://developer.apple.com/documentation/CreateML) and your own data, you can train custom models to perform tasks like recognizing images, extracting meaning from text, or finding relationships between numerical values. Models trained using Create ML are in the Core ML model format and are ready to use in your app.
+Using [`Create ML`](https://developer.apple.com/documentation/createml) and your own data, you can train custom models to perform tasks like recognizing images, extracting meaning from text, or finding relationships between numerical values. Models trained using Create ML are in the Core ML model format and are ready to use in your app.
 
 Apple also provides several popular, open source [`models`](https://developer.apple.comhttps://developer.apple.com/machine-learning/models/) that are already in the Core ML model format. You can download these models and start using them in your app.
 

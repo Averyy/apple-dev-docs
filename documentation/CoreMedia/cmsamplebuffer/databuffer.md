@@ -22,7 +22,7 @@ var dataBuffer: CMBlockBuffer? { get }
 
 #### Discussion
 
-The property is [`nil`](https://developer.apple.com/documentation/ObjectiveC/nil-227m0) if the sample buffer doesn’t contain a [`CMBlockBuffer`](cmblockbuffer-api.md), if the contains a [`CVImageBuffer`](https://developer.apple.com/documentation/CoreVideo/cvimagebuffer-q40), or if there’s an error.
+The property is [`nil`](https://developer.apple.com/documentation/objectivec/nil-227m0) if the sample buffer doesn’t contain a [`CMBlockBuffer`](cmblockbuffer-api.md), if the contains a [`CVImageBuffer`](https://developer.apple.com/documentation/corevideo/cvimagebuffer-q40), or if there’s an error.
 
 ## See Also
 

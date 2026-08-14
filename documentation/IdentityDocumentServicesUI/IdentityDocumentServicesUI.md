@@ -12,7 +12,7 @@ Provide an interface so people can present mobile documents.
 
 #### Overview
 
-The `IdentityDocumentServicesUI` framework contains user-interface objects that support the features in [`IdentityDocumentServices`](https://developer.apple.com/documentation/IdentityDocumentServices). This includes types for implementing authorization UI for an [`IdentityDocumentProvider`](identitydocumentprovider.md) app. It also includes a controller to enable browsers to implement the Digital Credentials API.
+The `IdentityDocumentServicesUI` framework contains user-interface objects that support the features in [`IdentityDocumentServices`](https://developer.apple.com/documentation/identitydocumentservices). This includes types for implementing authorization UI for an [`IdentityDocumentProvider`](identitydocumentprovider.md) app. It also includes a controller to enable browsers to implement the Digital Credentials API.
 
 ## Topics
 
@@ -27,7 +27,7 @@ The `IdentityDocumentServicesUI` framework contains user-interface objects that 
 - [struct IdentityDocumentRequestSceneBuilder](identitydocumentrequestscenebuilder.md)
   A result builder that combines one or more `IdentityDocumentRequestScene`s into a single scene.
 ### Implementing the web presentment flow into your browser
-- [Implementing as an identity document provider](../IdentityDocumentServices/Implenting-as-an-identity-document-provider.md)
+- [Implementing as an identity document provider](../identitydocumentservices/implenting-as-an-identity-document-provider.md)
   Add your app as an option for mobile document web presentment.
 - [class IdentityDocumentWebPresentmentController](identitydocumentwebpresentmentcontroller.md)
   A controller that performs identity document requests originating from the web.

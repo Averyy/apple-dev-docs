@@ -33,7 +33,7 @@ To render seats using an entity, follow these steps:
 ## Relationships
 
 ### Inherits From
-- [Identifiable](../Swift/Identifiable.md)
+- [Identifiable](../swift/identifiable.md)
 - [TableSeat](tableseat.md)
 
 ## See Also

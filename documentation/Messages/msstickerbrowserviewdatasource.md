@@ -36,7 +36,7 @@ Both methods are required. If the sticker collection changes at runtime, call th
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 ### Conforming Types
 - [MSStickerBrowserViewController](msstickerbrowserviewcontroller.md)
 

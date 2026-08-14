@@ -16,7 +16,7 @@ case changeUndone
 
 #### Discussion
 
-A single change has been undone. For example, the built-in undo support of [`NSDocument`](nsdocument.md) passes this value whenever a document receives an [`NSUndoManagerDidUndoChange`](https://developer.apple.com/documentation/Foundation/NSNotification/Name-swift.struct/NSUndoManagerDidUndoChange) from its own undo manager.
+A single change has been undone. For example, the built-in undo support of [`NSDocument`](nsdocument.md) passes this value whenever a document receives an [`NSUndoManagerDidUndoChange`](https://developer.apple.com/documentation/foundation/nsnotification/name-swift.struct/nsundomanagerdidundochange) from its own undo manager.
 
 ## See Also
 

@@ -16,7 +16,7 @@ func readBytes(withExactLength exactLength: Int) throws -> Data
 
 #### Return Value
 
-An [`NSData`](https://developer.apple.com/documentation/Foundation/NSData) object filled with the memory that the framework read, or `nil` if the read failed.
+An [`NSData`](https://developer.apple.com/documentation/foundation/nsdata) object filled with the memory that the framework read, or `nil` if the read failed.
 
 #### Discussion
 

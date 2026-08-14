@@ -21,7 +21,7 @@ var buffer: any MTLBuffer { get }
 
 #### Discussion
 
-Many [`MTKMeshBuffer`](mtkmeshbuffer.md) objects may reference the same [`MTLBuffer`](https://developer.apple.com/documentation/Metal/MTLBuffer) object, in which case each [`MTKMeshBuffer`](mtkmeshbuffer.md) object will have its own unique [`offset`](mtkmeshbuffer/offset.md) value.
+Many [`MTKMeshBuffer`](mtkmeshbuffer.md) objects may reference the same [`MTLBuffer`](https://developer.apple.com/documentation/metal/mtlbuffer) object, in which case each [`MTKMeshBuffer`](mtkmeshbuffer.md) object will have its own unique [`offset`](mtkmeshbuffer/offset.md) value.
 
 ## See Also
 

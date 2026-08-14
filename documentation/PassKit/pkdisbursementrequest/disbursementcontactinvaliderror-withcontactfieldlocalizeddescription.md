@@ -20,7 +20,7 @@ class func disbursementContactInvalidError(withContactField field: PKContactFiel
 
 #### Return Value
 
-An [`NSError`](https://developer.apple.com/documentation/Foundation/NSError) object.
+An [`NSError`](https://developer.apple.com/documentation/foundation/nserror) object.
 
 #### Discussion
 

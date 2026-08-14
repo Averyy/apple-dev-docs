@@ -30,9 +30,9 @@ struct ForEach<Data, ID, Content> where Data : RandomAccessCollection, ID : Hash
 
 #### Overview
 
-Use `ForEach` to provide views based on a [`RandomAccessCollection`](https://developer.apple.com/documentation/Swift/RandomAccessCollection) of some data type. Either the collection’s elements must conform to [`Identifiable`](https://developer.apple.com/documentation/Swift/Identifiable) or you need to provide an `id` parameter to the `ForEach` initializer.
+Use `ForEach` to provide views based on a [`RandomAccessCollection`](https://developer.apple.com/documentation/swift/randomaccesscollection) of some data type. Either the collection’s elements must conform to [`Identifiable`](https://developer.apple.com/documentation/swift/identifiable) or you need to provide an `id` parameter to the `ForEach` initializer.
 
-The following example creates a `NamedFont` type that conforms to [`Identifiable`](https://developer.apple.com/documentation/Swift/Identifiable), and an array of this type called `namedFonts`. A `ForEach` instance iterates over the array, producing new [`Text`](text.md) instances that display examples of each SwiftUI [`Font`](font.md) style provided in the array.
+The following example creates a `NamedFont` type that conforms to [`Identifiable`](https://developer.apple.com/documentation/swift/identifiable), and an array of this type called `namedFonts`. A `ForEach` instance iterates over the array, producing new [`Text`](text.md) instances that display examples of each SwiftUI [`Font`](font.md) style provided in the array.
 
 ```swift
 private struct NamedFont: Identifiable {
@@ -57,7 +57,7 @@ var body: some View {
 }
 ```
 
-![A vertically arranged stack of labels showing various standard fonts,](https://docs-assets.developer.apple.com/published/9819873f850b2cba7a4174a869ad369f/SwiftUI-ForEach-fonts%402x.png)
+![A vertically arranged stack of labels showing various standard fonts,](/images/com.apple.SwiftUI/SwiftUI-ForEach-fonts@2x.png)
 
 Some containers like [`List`](list.md) or [`LazyVStack`](lazyvstack.md) will query the elements within a for each lazily. To obtain maximal performance, ensure that the view created from each element in the collection represents a constant number of views.
 
@@ -117,16 +117,16 @@ When enabling the following launch argument, SwiftUI will log when it encounters
 
 ### Conforms To
 - [AccessibilityRotorContent](accessibilityrotorcontent.md)
-- [AttachmentContent](../RealityKit/AttachmentContent.md)
-- [Chart3DContent](../Charts/Chart3DContent.md)
-- [ChartContent](../Charts/ChartContent.md)
-- [Copyable](../Swift/Copyable.md)
+- [AttachmentContent](../realitykit/attachmentcontent.md)
+- [Chart3DContent](../charts/chart3dcontent.md)
+- [ChartContent](../charts/chartcontent.md)
+- [Copyable](../swift/copyable.md)
 - [CustomizableToolbarContent](customizabletoolbarcontent.md)
-- [DynamicMapContent](../MapKit/DynamicMapContent.md)
+- [DynamicMapContent](../mapkit/dynamicmapcontent.md)
 - [DynamicTableRowContent](dynamictablerowcontent.md)
 - [DynamicViewContent](dynamicviewcontent.md)
-- [Escapable](../Swift/Escapable.md)
-- [MapContent](../MapKit/MapContent.md)
+- [Escapable](../swift/escapable.md)
+- [MapContent](../mapkit/mapcontent.md)
 - [SceneAccessoryContent](sceneaccessorycontent.md)
 - [TabContent](tabcontent.md)
 - [TableRowContent](tablerowcontent.md)

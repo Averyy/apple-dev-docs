@@ -20,7 +20,7 @@ var assetURL: URL? { get }
 
 #### Discussion
 
-A URL pointing to the media item, which you can use to create an [`AVAsset`](https://developer.apple.com/documentation/AVFoundation/AVAsset) object or other URL-based AVFoundation object.
+A URL pointing to the media item, which you can use to create an [`AVAsset`](https://developer.apple.com/documentation/avfoundation/avasset) object or other URL-based AVFoundation object.
 
 ## See Also
 

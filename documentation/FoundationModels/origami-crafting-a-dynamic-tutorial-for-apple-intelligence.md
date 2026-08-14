@@ -15,13 +15,13 @@ Build interactive experiences with Foundation Models and Private Cloud Compute u
 
 Picking up a new craft can be time-consuming, and the Origami app eases you into the art of folding paper into intricate shapes using an easy-to-follow tutorial as your guide. But it’s not just about folding paper; you can use Origami to learn any craft you can make from supplies you have on hand, like crocheting, knitting, or sewing.
 
-![A screenshot of the Origami app’s Brainstorm view showing the person’s supply photos alongside generated craft-project ideas.](https://docs-assets.developer.apple.com/published/1888402a429d36a4343480a43fff149c/origami-hero%402x.png)
+![A screenshot of the Origami app’s Brainstorm view showing the person’s supply photos alongside generated craft-project ideas.](/images/com.apple.foundationmodels/origami-hero@2x.png)
 
 You start by providing a photograph or two of your supplies or inspiration and asking Origami what you can make from them. Origami responds with craft project ideas. You then pick one of the suggested projects, follow a tutorial, and photograph your work at each step so the app can coach you.
 
 Those two interactions rely on multimodal prompting: *Brainstorm* turns photos of your supplies or inspiration into project ideas, and *Coach* compares a progress photo to the current step and tells you how you’re doing as you work through a tutorial.
 
-Brainstorm and Coach use [`LanguageModelSession`](languagemodelsession.md) to accept images and text. You attach a [`CGImage`](https://developer.apple.com/documentation/CoreGraphics/CGImage) to a [`Prompt`](prompt.md), add the text that frames it, and the session returns a [`Generable`](generable.md) value you can render. The picture isn’t a side channel that feeds a separate vision step. It sits in the prompt as a peer to the text and the same model processes the two together.
+Brainstorm and Coach use [`LanguageModelSession`](languagemodelsession.md) to accept images and text. You attach a [`CGImage`](https://developer.apple.com/documentation/coregraphics/cgimage) to a [`Prompt`](prompt.md), add the text that frames it, and the session returns a [`Generable`](generable.md) value you can render. The picture isn’t a side channel that feeds a separate vision step. It sits in the prompt as a peer to the text and the same model processes the two together.
 
 #### Configure the Sample Code Project
 
@@ -262,7 +262,7 @@ In Origami, Coach is built from two pieces working together:
 
 The walkthrough that follows takes a different approach by encapsulating the entire response as a structured `@Generable` value with a Boolean classifier field. Both approaches work; the choice depends on whether you want free-form prose or schema-shaped output.
 
-![A screenshot of Coach reading the person’s progress photo and showing structured feedback alongside the current tutorial step’s instructions.](https://docs-assets.developer.apple.com/published/d43d390fed6734050dc4a090ba8a823b/origami-coach%402x.png)
+![A screenshot of Coach reading the person’s progress photo and showing structured feedback alongside the current tutorial step’s instructions.](/images/com.apple.foundationmodels/origami-coach@2x.png)
 
 In this approach, Coach sends the same kind of multimodal prompt as Brainstorm, aimed at a different question: whether the person’s latest progress photo matches what the current tutorial step asks for. The prompt, which uses the same `toPrompt()` idiom Brainstorm uses, builds from the step number, the step’s text, an instruction to compare the photo against that step’s goal, and the person’s progress photos:
 

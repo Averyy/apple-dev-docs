@@ -28,7 +28,7 @@ protocol AppExtension
 
 This type provides the entry point for an app extension, and every app extension must have a concrete type that adopts it. When a host app launches an app extension, the system looks for an object that adopts this protocol. The protocol provides default implementations of the code required to run the app extension.
 
-When adopting this protocol, implement the [`configuration`](appextension/configuration-swift.property.md) property and provide a type capable of establishing an XPC connection to the host app. If your app extension sends only data to the host app, and doesn’t provide a UI, provide a type that implements the [`AppExtensionConfiguration`](appextensionconfiguration.md) protocol. If your extension provides UI elements for the host app to display, instead provide an instance of the [`AppExtensionSceneConfiguration`](https://developer.apple.com/documentation/ExtensionKit/AppExtensionSceneConfiguration) type.
+When adopting this protocol, implement the [`configuration`](appextension/configuration-swift.property.md) property and provide a type capable of establishing an XPC connection to the host app. If your app extension sends only data to the host app, and doesn’t provide a UI, provide a type that implements the [`AppExtensionConfiguration`](appextensionconfiguration.md) protocol. If your extension provides UI elements for the host app to display, instead provide an instance of the [`AppExtensionSceneConfiguration`](https://developer.apple.com/documentation/extensionkit/appextensionsceneconfiguration) type.
 
 ## Topics
 

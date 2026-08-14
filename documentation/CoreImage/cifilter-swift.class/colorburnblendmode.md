@@ -43,7 +43,7 @@ func colorBurnBlendMode(inputImage: CIImage, backgroundImage: CIImage) -> CIImag
 }
 ```
 
-![The image on the top left shows a beach with multiple palm trees and a rainbow arching across the blue sky.  The image below is a gradient image displaying a gradual color shift from purple to a dark orange. The image on the right shows the output from applying the color burn blend mode filter. This results in a much darker image  with very little detail visible.](https://docs-assets.developer.apple.com/published/f5fddad6ca54b508c4fba656d099fdab/media-3546399%402x.png)
+![The image on the top left shows a beach with multiple palm trees and a rainbow arching across the blue sky.  The image below is a gradient image displaying a gradual color shift from purple to a dark orange. The image on the right shows the output from applying the color burn blend mode filter. This results in a much darker image  with very little detail visible.](/images/com.apple.coreimage/media-3546399@2x.png)
 
 ## See Also
 

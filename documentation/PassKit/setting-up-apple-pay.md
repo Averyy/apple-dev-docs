@@ -35,13 +35,13 @@ After creating a merchant identifier, enable the Apple Pay capability in your Xc
 
 The screenshot below shows the Apple Pay capability without any merchant identifiers:
 
-![A screenshot showing the Apple Pay capability without any listed merchant identifiers. Beneath the empty list of merchant identifiers is a button to add a merchant identifier, and a button to refresh identifiers from the Apple Developer site.](https://docs-assets.developer.apple.com/published/1872acfd24b98f341033640914195123/media-3737978%402x.png)
+![A screenshot showing the Apple Pay capability without any listed merchant identifiers. Beneath the empty list of merchant identifiers is a button to add a merchant identifier, and a button to refresh identifiers from the Apple Developer site.](/images/com.apple.passkit/media-3737978@2x.png)
 
-For more information, see [`Adding capabilities to your app`](https://developer.apple.com/documentation/Xcode/adding-capabilities-to-your-app).
+For more information, see [`Adding capabilities to your app`](https://developer.apple.com/documentation/xcode/adding-capabilities-to-your-app).
 
 ##### Configure Apple Pay on the Web
 
-If you’re also developing websites using [`Apple Pay on the Web`](https://developer.apple.com/documentation/ApplePayontheWeb), you can use the same merchant ID and Payment Processing Certificate for your website. However, Apple Pay on the web requires additional setup; see [`Configuring Your Environment`](https://developer.apple.com/documentation/ApplePayontheWeb/configuring-your-environment), [`Get Started with Apple Pay on the Web`](https://developer.apple.comhttps://developer.apple.com/videos/play/tech-talks/111381), and the [`Apple Pay Merchant Integration Guide`](https://developer.apple.comhttp://developer.apple.com/apple-pay/Apple-Pay-Merchant-Integration-Guide.pdf) for more information.
+If you’re also developing websites using [`Apple Pay on the Web`](https://developer.apple.com/documentation/applepayontheweb), you can use the same merchant ID and Payment Processing Certificate for your website. However, Apple Pay on the web requires additional setup; see [`Configuring Your Environment`](https://developer.apple.com/documentation/applepayontheweb/configuring-your-environment), [`Get Started with Apple Pay on the Web`](https://developer.apple.comhttps://developer.apple.com/videos/play/tech-talks/111381), and the [`Apple Pay Merchant Integration Guide`](https://developer.apple.comhttp://developer.apple.com/apple-pay/Apple-Pay-Merchant-Integration-Guide.pdf) for more information.
 
 ## See Also
 

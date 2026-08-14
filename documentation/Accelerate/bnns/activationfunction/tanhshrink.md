@@ -30,7 +30,7 @@ x − tanh(x)
 
 The following illustrates the output that the activation function generates from inputs in the range `-10...10`:
 
-![Graph that shows input values for the activation function on horizontal axis and its output values on vertical axis. ](https://docs-assets.developer.apple.com/published/93cb7b664a8ec48b2fcad17372682137/media-3654667%402x.png)
+![Graph that shows input values for the activation function on horizontal axis and its output values on vertical axis. ](/images/com.apple.accelerate/media-3654667@2x.png)
 
 ## See Also
 

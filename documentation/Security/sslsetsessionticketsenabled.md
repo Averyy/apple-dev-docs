@@ -28,7 +28,7 @@ By default, session tickets are disabled.
 ## Parameters
 
 - `context`: A session context.
-- `enabled`: A Boolean set to [`true`](https://developer.apple.com/documentation/Swift/true) to enable session ticket resumption, or [`false`](https://developer.apple.com/documentation/Swift/false) to disable it.
+- `enabled`: A Boolean set to [`true`](https://developer.apple.com/documentation/swift/true) to enable session ticket resumption, or [`false`](https://developer.apple.com/documentation/swift/false) to disable it.
 
 
 ---

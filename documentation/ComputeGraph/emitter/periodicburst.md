@@ -17,7 +17,7 @@ void emitter::periodicBurst(float2 intervalRange, uint burstSize)
 
 #### Discussion
 
-> **Note**: ![Graph](https://docs-assets.developer.apple.com/published/820dd2a5b9077da2f0c820f55dd5c612/emitter__periodicBurst.svg)
+> **Note**: ![Graph](/images/com.apple.computegraph/emitter__periodicBurst.svg)
 
 > **Note**: Reads from emitter state `PeriodicEmitterState state`, if it exists
 

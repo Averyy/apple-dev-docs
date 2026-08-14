@@ -54,7 +54,7 @@ The query dictionary’s first key-value pair indicates that the item is an Inte
 
 Although not necessary in this case, you might further characterize the password by specifying additional attributes, such as the port number or the network protocol. For example, if you need to store distinct FTP and HTTP credentials for the same user working on the same server, you might add the [`kSecAttrProtocol`](ksecattrprotocol.md) attribute to distinguish between them.
 
-Finally, the query contains the password from the user, encoded as a [`Data`](https://developer.apple.com/documentation/Foundation/Data) instance.
+Finally, the query contains the password from the user, encoded as a [`Data`](https://developer.apple.com/documentation/foundation/data) instance.
 
 ##### Add the Item
 

@@ -22,7 +22,7 @@ func applyTransform(_ transform: StringTransform, reverse: Bool, range: NSRange,
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/Swift/true) if the transform was successfully applied. Otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
+[`true`](https://developer.apple.com/documentation/swift/true) if the transform was successfully applied. Otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
 
 #### Discussion
 
@@ -30,8 +30,8 @@ In addition to the provided transformation constants, you may use any valid ICU 
 
 ## Parameters
 
-- `transform`: The transformation to apply. For a list of possible values, see [`String Transformations`](string-transformations.md). If the specified transform does not exist, the receiver is not modified, and this method returns [`false`](https://developer.apple.com/documentation/Swift/false).
-- `reverse`: Whether an inverse transform should be used. If the specified transform does not have an inverse, the receiver is not modified, and this method returns [`false`](https://developer.apple.com/documentation/Swift/false).
+- `transform`: The transformation to apply. For a list of possible values, see [`String Transformations`](string-transformations.md). If the specified transform does not exist, the receiver is not modified, and this method returns [`false`](https://developer.apple.com/documentation/swift/false).
+- `reverse`: Whether an inverse transform should be used. If the specified transform does not have an inverse, the receiver is not modified, and this method returns [`false`](https://developer.apple.com/documentation/swift/false).
 - `range`: The range of the string to transform. `range` must not exceed the bounds of the receiver. > ❗ **Important**:  Raises an `NSRangeException` if any part of `aRange` lies beyond the end of the string.
 - `resultingRange`: If the transform was successfully applied, upon return contains the range of the transformed string.
 

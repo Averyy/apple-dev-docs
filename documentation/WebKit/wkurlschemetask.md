@@ -45,7 +45,7 @@ After you load some portion of the resource data, call the [`didReceive(_:)`](wk
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 
@@ -57,7 +57,7 @@ After you load some portion of the resource data, call the [`didReceive(_:)`](wk
   An object that manages the HTTP cookies associated with a particular web view.
 - [protocol WKURLSchemeHandler](wkurlschemehandler.md)
   A protocol for loading resources with URL schemes that WebKit doesn’t handle.
-- [static let readAccessURL: NSAttributedString.DocumentReadingOptionKey](../Foundation/NSAttributedString/DocumentReadingOptionKey/readAccessURL.md)
+- [static let readAccessURL: NSAttributedString.DocumentReadingOptionKey](../foundation/nsattributedstring/documentreadingoptionkey/readaccessurl.md)
   The local files WebKit can access when loading content.
 
 

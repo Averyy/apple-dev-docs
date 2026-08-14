@@ -22,7 +22,7 @@ let kCMSampleAttachmentKey_IsDependedOnByOthers: CFString
 
 #### Discussion
 
-This key has no default value. If this key is not present, dependency information for the sample is unknown. If this key is present and its value is [`kCFBooleanFalse`](https://developer.apple.com/documentation/CoreFoundation/kCFBooleanFalse), the frame is considered droppable.
+This key has no default value. If this key is not present, dependency information for the sample is unknown. If this key is present and its value is [`kCFBooleanFalse`](https://developer.apple.com/documentation/corefoundation/kcfbooleanfalse), the frame is considered droppable.
 
 This attachment is read from and written to media files.
 

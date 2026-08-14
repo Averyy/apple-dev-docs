@@ -14,7 +14,7 @@ A 32-bit address in physical memory.
 ## Declaration
 
 ```swift
-typedef UInt32 IOPhysicalAddress32;
+typedef uint32_t IOPhysicalAddress32;
 ```
 
 ## See Also

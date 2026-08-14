@@ -60,7 +60,7 @@ On 64-bit architectures, this struct contains misaligned function pointers. To a
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../Swift/BitwiseCopyable.md)
+- [BitwiseCopyable](../swift/bitwisecopyable.md)
 
 
 ---

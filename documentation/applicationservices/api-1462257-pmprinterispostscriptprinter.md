@@ -25,7 +25,7 @@ A printer is a PostScript printer if the printer driver takes PostScript directl
 ## Parameters
 
 - `printer`: The printer you’re querying to determine whether it’s a PostScript printer.
-- `isPSPrinter`: A pointer to your Boolean variable. On return,   indicates that the specified printer is a PostScript printer; otherwise,  .
+- `isPSPrinter`: A pointer to your Boolean variable. On return, `true` indicates that the specified printer is a PostScript printer; otherwise, `false`.
 
 ## See Also
 

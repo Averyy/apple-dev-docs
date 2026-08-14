@@ -27,7 +27,7 @@ Filter the commands a frame capture records by selecting specific sources with a
 
 You can program exactly which Metal commands to record in a frame capture by calling the [`begin()`](mtlcapturescope/begin().md) and [`end()`](mtlcapturescope/end().md) methods around the Metal calls you want the capture to include. In the case of a rendering loop, your calls to [`begin()`](mtlcapturescope/begin().md) and [`end()`](mtlcapturescope/end().md) can capture a small part of a frame, or capture data from multiple frames.
 
-For more information about frame captures and capture scopes, see [`Metal debugger`](https://developer.apple.com/documentation/Xcode/Metal-debugger) and [`Metal developer workflows`](https://developer.apple.com/documentation/Xcode/Metal-developer-workflows), respectively.
+For more information about frame captures and capture scopes, see [`Metal debugger`](https://developer.apple.com/documentation/xcode/metal-debugger) and [`Metal developer workflows`](https://developer.apple.com/documentation/xcode/metal-developer-workflows), respectively.
 
 ## Topics
 
@@ -50,7 +50,7 @@ For more information about frame captures and capture scopes, see [`Metal debugg
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

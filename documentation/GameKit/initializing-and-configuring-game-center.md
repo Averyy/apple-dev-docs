@@ -22,7 +22,7 @@ Add the Game Center capability to your project, so you can configure gameplay fe
 4. Click the add capability button (+ Capability) in the toolbar.
 5. Add the Game Center capability by double-clicking on it.
 
-![A screenshot showing the Xcode project with the Game Center capability selected in the Library.](https://docs-assets.developer.apple.com/published/774a9ad7a4c3a585adbadb4bb1bd0082/xcode-game-center-compatibility%402x.png)
+![A screenshot showing the Xcode project with the Game Center capability selected in the Library.](/images/com.apple.gamekit/xcode-game-center-compatibility@2x.png)
 
 For Mac targets, ensure that you enable both Incoming Connections and Outgoing Connections in the App Sandbox capability under Network.
 
@@ -39,7 +39,7 @@ Begin configuring the feature you want by creating a GameKit bundle file:
 5. In the sheet that appears, enter a name for the configuration and select the appropriate targets.
 6. Click Create.
 
-![A screenshot showing the Xcode project with a GameKit configuration file selected. It shows details for an example challenge.](https://docs-assets.developer.apple.com/published/efaca639de76082ecb53dd8591830fde/xcode-challenge-fastest-clear-time%402x.png)
+![A screenshot showing the Xcode project with a GameKit configuration file selected. It shows details for an example challenge.](/images/com.apple.gamekit/xcode-challenge-fastest-clear-time@2x.png)
 
 When you’re ready to deploy your configuration updates, sync them with App Store Connect. If you already configured features in App Store Connect, you can sync your existing configuration with the GameKit bundle file:
 
@@ -65,7 +65,7 @@ Before testing your GameKit configuration, turn on Debug Mode in Xcode:
 4. Scroll down to GameKit Configuration, and click the Enable Debug Mode checkbox.
 5. Click Close.
 
-![A screenshot showing Game Progress Manager that lists three achievements, with one in a selected state. The details panel on the right shows a progress percent — set at 50% — that you can configure for the selected achievement.](https://docs-assets.developer.apple.com/published/af75ca8489bb71d74a68b8fe798d848f/xcode-progress-manager-achievements%402x.png)
+![A screenshot showing Game Progress Manager that lists three achievements, with one in a selected state. The details panel on the right shows a progress percent — set at 50% — that you can configure for the selected achievement.](/images/com.apple.gamekit/xcode-progress-manager-achievements@2x.png)
 
 To test your configuration, open Game Progress Manager in Xcode:
 
@@ -110,7 +110,7 @@ You use the handler to initialize Game Center. If you need to authenticate a per
   Confirm player credentials and device capabilities and check for account restrictions.
 - [Improving the player experience for games with large downloads](improving-the-player-experience-for-games-with-large-downloads.md)
   Provide ample content in your base installation and then use on-demand resources and the Background Assets API to handle additional content.
-- [Game Center Entitlement](../BundleResources/Entitlements/com.apple.developer.game-center.md)
+- [Game Center Entitlement](../bundleresources/entitlements/com.apple.developer.game-center.md)
   A Boolean value that indicates whether users of the app may see and compare achievements on a leaderboard, invite friends, and start multiplayer games.
 
 

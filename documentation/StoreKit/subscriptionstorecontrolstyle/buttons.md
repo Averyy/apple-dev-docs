@@ -23,7 +23,7 @@ A subscription store control style that displays a subscribe button for each sub
 
 #### Discussion
 
-You can also use [`subscriptionStoreControlStyle(_:)`](https://developer.apple.com/documentation/SwiftUI/View/subscriptionStoreControlStyle(_:)) with [`buttons`](subscriptionstorecontrolstyle/buttons.md) as the parameter to construct this style.
+You can also use [`subscriptionStoreControlStyle(_:)`](https://developer.apple.com/documentation/swiftui/view/subscriptionstorecontrolstyle(_:)) with [`buttons`](subscriptionstorecontrolstyle/buttons.md) as the parameter to construct this style.
 
 ## See Also
 

@@ -54,7 +54,7 @@ The index delegate methods are called when there is an issue with the index and 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 ### Conforming Types
 - [CSIndexExtensionRequestHandler](csindexextensionrequesthandler.md)
 

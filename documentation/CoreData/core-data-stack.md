@@ -12,7 +12,7 @@ Core Data provides a set of classes that collaboratively support your app’s mo
 - An instance of [`NSManagedObjectContext`](nsmanagedobjectcontext.md) tracks changes to instances of your app’s types.
 - An instance of [`NSPersistentStoreCoordinator`](nspersistentstorecoordinator.md) saves and fetches instances of your app’s types from stores.
 
-![Diagram showing that a persistent container instance contains references to a managed object model, a managed object context, and a persistent store coordinator that connects to your app’s stores.](https://docs-assets.developer.apple.com/published/5d911adb8af302c1be92e9a1ceb1bef7/media-3118356%402x.png)
+![Diagram showing that a persistent container instance contains references to a managed object model, a managed object context, and a persistent store coordinator that connects to your app’s stores.](/images/com.apple.coredata/media-3118356@2x.png)
 
 You use an [`NSPersistentContainer`](nspersistentcontainer.md) instance to set up the model, context, and store coordinator simultaneously.
 

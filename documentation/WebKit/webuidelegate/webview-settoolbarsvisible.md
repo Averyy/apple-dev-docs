@@ -21,7 +21,7 @@ No action is taken if you do not implement this method.
 ## Parameters
 
 - `sender`: The web view that sent the message.
-- `visible`: If [`true`](https://developer.apple.com/documentation/Swift/true), all toolbars (with the exception of the status bar) are shown; otherwise, all toolbars (with the exception of the status bar) are removed.
+- `visible`: If [`true`](https://developer.apple.com/documentation/swift/true), all toolbars (with the exception of the status bar) are shown; otherwise, all toolbars (with the exception of the status bar) are removed.
 
 ## See Also
 

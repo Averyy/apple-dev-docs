@@ -21,7 +21,7 @@ A search object is created when you call the [`SKSearchCreate(_:_:_:)`](1443079-
 
 ##### 1681574
 
-You cannot use [`CFMakeCollectable`](https://developer.apple.com/documentation/corefoundation/1521163-cfmakecollectable) with SKSearch objects. In a garbage-collected environment, you must use [`CFRelease`](https://developer.apple.com/documentation/corefoundation/1521153-cfrelease) to dispose of an SKSearch object.
+You cannot use [`CFMakeCollectable`](https://developer.apple.com/documentation/corefoundation/cfmakecollectable) with SKSearch objects. In a garbage-collected environment, you must use [`CFRelease`](https://developer.apple.com/documentation/corefoundation/cfrelease) to dispose of an SKSearch object.
 
 
 ---

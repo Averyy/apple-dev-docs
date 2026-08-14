@@ -22,7 +22,7 @@ func CTRubyAnnotationGetTextForPosition(_ rubyAnnotation: CTRubyAnnotation, _ po
 
 #### Return Value
 
-A [`CFString`](https://developer.apple.com/documentation/CoreFoundation/CFString) for the ruby text at the specified position, if the `rubyAnnotation` object is valid; otherwise, `NULL`.
+A [`CFString`](https://developer.apple.com/documentation/corefoundation/cfstring) for the ruby text at the specified position, if the `rubyAnnotation` object is valid; otherwise, `NULL`.
 
 ## Parameters
 

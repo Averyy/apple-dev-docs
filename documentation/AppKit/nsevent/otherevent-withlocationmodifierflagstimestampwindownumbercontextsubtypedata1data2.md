@@ -39,7 +39,7 @@ The created `NSEvent` object or `nil` if the object couldn’t be created.
   The event’s subtype.
 - [var data1: Int](nsevent/data1.md)
   Additional data associated with this event.
-- [var systemUptime: TimeInterval](../Foundation/ProcessInfo/systemUptime.md)
+- [var systemUptime: TimeInterval](../foundation/processinfo/systemuptime.md)
   The amount of time the system has been awake since the last time it was restarted.
 - [var data2: Int](nsevent/data2.md)
   Additional data associated with this event.

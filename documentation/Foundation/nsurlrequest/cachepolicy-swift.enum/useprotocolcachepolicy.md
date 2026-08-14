@@ -38,7 +38,7 @@ For the HTTP and HTTPS protocols, [`NSURLRequest.CachePolicy.useProtocolCachePol
 
 This behavior is illustrated in the figure below.
 
-![Flow chart starting with “need to determine whether to return a cached response”, and then considering various factors to determine whether to return a cached response or to fetch it anew.](https://docs-assets.developer.apple.com/published/06f9bcab68cfd601f3ef5cd9ee33db4f/media-2994170%402x.png)
+![Flow chart starting with “need to determine whether to return a cached response”, and then considering various factors to determine whether to return a cached response or to fetch it anew.](/images/com.apple.foundation/media-2994170@2x.png)
 
 > **Note**:  For the formal definition of these semantics, see [`RFC 2616`](https://developer.apple.comhttp://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html#sec13).
 

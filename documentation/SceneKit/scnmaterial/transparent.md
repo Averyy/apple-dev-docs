@@ -28,7 +28,7 @@ By default, the transparent property’s [`contents`](scnmaterialproperty/conten
 
 The figure below shows a semitransparent material before and after providing a texture image for its transparent property. (To make the transparency effect more visible, a blue sphere is shown behind the transparent material.)
 
-![None](https://docs-assets.developer.apple.com/published/18728322bdfbb6ca75704b7d1745b286/media-2934166%402x.png)
+![None](/images/com.apple.scenekit/media-2934166@2x.png)
 
 The [`transparencyMode`](scnmaterial/transparencymode.md) property controls how SceneKit interprets color information from the transparent property’s contents.
 

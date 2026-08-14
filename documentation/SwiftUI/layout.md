@@ -167,8 +167,8 @@ You can also create custom layout values by creating a layout key. Set a value o
 
 ### Inherits From
 - [Animatable](animatable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 ### Conforming Types
 - [AnyLayout](anylayout.md)
 - [GridLayout](gridlayout.md)

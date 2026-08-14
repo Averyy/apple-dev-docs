@@ -23,7 +23,7 @@ struct AuthorizationController
 
 #### Overview
 
-To access an instance of this type, use the SwiftUI [`Environment`](https://developer.apple.com/documentation/SwiftUI/Environment) property wrapper and specify [`authorizationController`](https://developer.apple.com/documentation/SwiftUI/EnvironmentValues/authorizationController) as the environment value, as the following example shows:
+To access an instance of this type, use the SwiftUI [`Environment`](https://developer.apple.com/documentation/swiftui/environment) property wrapper and specify [`authorizationController`](https://developer.apple.com/documentation/swiftui/environmentvalues/authorizationcontroller) as the environment value, as the following example shows:
 
 ```swift
 struct AuthorizationControllerExample: View {
@@ -76,8 +76,8 @@ struct AuthorizationControllerExample: View {
 ## Relationships
 
 ### Conforms To
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

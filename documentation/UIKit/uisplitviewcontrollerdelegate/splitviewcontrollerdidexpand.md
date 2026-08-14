@@ -22,7 +22,7 @@ optional func splitViewControllerDidExpand(_ svc: UISplitViewController)
 
 This delegate method only applies to column-style split view interfaces. For more information, see [`Split view styles`](uisplitviewcontroller#Split-view-styles.md).
 
-The split view controller calls this method after its interface has expanded, meaning that [`isCollapsed`](uisplitviewcontroller/iscollapsed.md) is [`false`](https://developer.apple.com/documentation/Swift/false). Use this method to perform any customization associated with the expanded interface.
+The split view controller calls this method after its interface has expanded, meaning that [`isCollapsed`](uisplitviewcontroller/iscollapsed.md) is [`false`](https://developer.apple.com/documentation/swift/false). Use this method to perform any customization associated with the expanded interface.
 
 ## Parameters
 

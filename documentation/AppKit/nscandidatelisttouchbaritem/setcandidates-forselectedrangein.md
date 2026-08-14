@@ -16,12 +16,12 @@ func setCandidates(_ candidates: [CandidateType], forSelectedRange selectedRange
 
 #### Discussion
 
-The item uses the block in the [`attributedStringForCandidate`](nscandidatelisttouchbaritem/attributedstringforcandidate.md) property to convert each candidate in the array into an attributed string. If the value of the [`attributedStringForCandidate`](nscandidatelisttouchbaritem/attributedstringforcandidate.md) property is `nil` then [`NSCandidateListTouchBarItem`](nscandidatelisttouchbaritem.md) can format candidates of type [`NSString`](https://developer.apple.com/documentation/Foundation/NSString), [`NSAttributedString`](https://developer.apple.com/documentation/Foundation/NSAttributedString), and [`NSTextCheckingResult`](https://developer.apple.com/documentation/Foundation/NSTextCheckingResult).
+The item uses the block in the [`attributedStringForCandidate`](nscandidatelisttouchbaritem/attributedstringforcandidate.md) property to convert each candidate in the array into an attributed string. If the value of the [`attributedStringForCandidate`](nscandidatelisttouchbaritem/attributedstringforcandidate.md) property is `nil` then [`NSCandidateListTouchBarItem`](nscandidatelisttouchbaritem.md) can format candidates of type [`NSString`](https://developer.apple.com/documentation/foundation/nsstring), [`NSAttributedString`](https://developer.apple.com/documentation/foundation/nsattributedstring), and [`NSTextCheckingResult`](https://developer.apple.com/documentation/foundation/nstextcheckingresult).
 
 ## Parameters
 
 - `candidates`: The array of candidates you wish to display in the candidate list item.
-- `selectedRange`: A range ([`NSRange`](https://developer.apple.com/documentation/Foundation/NSRange-c.struct)) within the string that the candidates represent.
+- `selectedRange`: A range ([`NSRange`](https://developer.apple.com/documentation/foundation/nsrange-c.struct)) within the string that the candidates represent.
 - `originalString`: The original string from which the candidate list was derived.
 
 ## See Also

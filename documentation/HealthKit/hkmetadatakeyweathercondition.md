@@ -21,7 +21,7 @@ let HKMetadataKeyWeatherCondition: String
 
 #### Discussion
 
-This key takes an an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) value that contains an [`HKWeatherCondition`](hkweathercondition.md) value. Set this key on an [`HKWorkout`](hkworkout.md) object to represent the overall weather condition during the workout.
+This key takes an an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) value that contains an [`HKWeatherCondition`](hkweathercondition.md) value. Set this key on an [`HKWorkout`](hkworkout.md) object to represent the overall weather condition during the workout.
 
 ## Topics
 

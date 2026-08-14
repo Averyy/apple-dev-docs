@@ -16,7 +16,7 @@ func indexPathsForVisibleItems() -> Set<IndexPath>
 
 #### Return Value
 
-The set of [`NSIndexPath`](https://developer.apple.com/documentation/Foundation/NSIndexPath) objects corresponding to the currently visible items.
+The set of [`NSIndexPath`](https://developer.apple.com/documentation/foundation/nsindexpath) objects corresponding to the currently visible items.
 
 #### Discussion
 

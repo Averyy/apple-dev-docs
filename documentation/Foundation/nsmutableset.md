@@ -22,13 +22,13 @@ class NSMutableSet
 
 #### Overview
 
-You can use this type in Swift instead of a [`Set`](https://developer.apple.com/documentation/Swift/Set) in cases that require reference semantics.
+You can use this type in Swift instead of a [`Set`](https://developer.apple.com/documentation/swift/set) in cases that require reference semantics.
 
 The `NSMutableSet` class declares the programmatic interface to a mutable, unordered collection of distinct objects.
 
 The [`NSCountedSet`](nscountedset.md) class, which is a concrete subclass of `NSMutableSet`, supports mutable sets that can contain multiple instances of the same element. The [`NSSet`](nsset.md) class supports creating and managing immutable sets.
 
-NSMutableSet is “toll-free bridged” with its Core Foundation counterpart, [`CFMutableSet`](https://developer.apple.com/documentation/CoreFoundation/CFMutableSet). See [`Toll-Free Bridging`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Conceptual/CocoaEncyclopedia/Toll-FreeBridgin/Toll-FreeBridgin.html#//apple_ref/doc/uid/TP40010810-CH2) for more information.
+NSMutableSet is “toll-free bridged” with its Core Foundation counterpart, [`CFMutableSet`](https://developer.apple.com/documentation/corefoundation/cfmutableset). See [`Toll-Free Bridging`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Conceptual/CocoaEncyclopedia/Toll-FreeBridgin/Toll-FreeBridgin.html#//apple_ref/doc/uid/TP40010810-CH2) for more information.
 
 ##### Subclassing Notes
 
@@ -81,22 +81,22 @@ You must also override the primitive methods of the [`NSSet`](nsset.md) class.
 ### Inherited By
 - [NSCountedSet](nscountedset.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomReflectable](../Swift/CustomReflectable.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [ExpressibleByArrayLiteral](../Swift/ExpressibleByArrayLiteral.md)
-- [Hashable](../Swift/Hashable.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomReflectable](../swift/customreflectable.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
+- [Hashable](../swift/hashable.md)
 - [NSCoding](nscoding.md)
 - [NSCopying](nscopying.md)
 - [NSFastEnumeration](nsfastenumeration.md)
 - [NSMutableCopying](nsmutablecopying.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 - [NSSecureCoding](nssecurecoding.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
-- [Sequence](../Swift/Sequence.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sequence](../swift/sequence.md)
 
 
 ---

@@ -22,9 +22,9 @@ let kCGImageSourceCreateThumbnailFromImageAlways: CFString
 
 #### Discussion
 
-The value of this key is a [`CFBoolean`](https://developer.apple.com/documentation/CoreFoundation/CFBoolean). The default value is [`kCFBooleanFalse`](https://developer.apple.com/documentation/CoreFoundation/kCFBooleanFalse).
+The value of this key is a [`CFBoolean`](https://developer.apple.com/documentation/corefoundation/cfboolean). The default value is [`kCFBooleanFalse`](https://developer.apple.com/documentation/corefoundation/kcfbooleanfalse).
 
-If you set the value of this key to [`kCFBooleanTrue`](https://developer.apple.com/documentation/CoreFoundation/kCFBooleanTrue), the image source creates the thumbnail from the full image, subject to the limit specified by [`kCGImageSourceThumbnailMaxPixelSize`](kcgimagesourcethumbnailmaxpixelsize.md). If you don’t specify a maximum pixel size, the image source creates the thumbnail using the image’s full size, which in most cases is not desirable.
+If you set the value of this key to [`kCFBooleanTrue`](https://developer.apple.com/documentation/corefoundation/kcfbooleantrue), the image source creates the thumbnail from the full image, subject to the limit specified by [`kCGImageSourceThumbnailMaxPixelSize`](kcgimagesourcethumbnailmaxpixelsize.md). If you don’t specify a maximum pixel size, the image source creates the thumbnail using the image’s full size, which in most cases is not desirable.
 
 Include this key in the options dictionary you pass to the function [`CGImageSourceCreateThumbnailAtIndex(_:_:_:)`](cgimagesourcecreatethumbnailatindex(_:_:_:).md).
 

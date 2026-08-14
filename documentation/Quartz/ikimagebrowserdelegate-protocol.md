@@ -7,13 +7,13 @@ The `IKImageBrowserDelegate` is an informal protocol for the delegate of an [`IK
 ## Topics
 
 ### Performing Custom Tasks in Response to User Events
-- [func imageBrowser(IKImageBrowserView!, backgroundWasRightClickedWith: NSEvent!)](../ObjectiveC/NSObject-swift.class/imageBrowser(_:backgroundWasRightClickedWith:).md)
+- [func imageBrowser(IKImageBrowserView!, backgroundWasRightClickedWith: NSEvent!)](../objectivec/nsobject-swift.class/imagebrowser(_:backgroundwasrightclickedwith:).md)
   Performs custom tasks when the user right-clicks the image browser view background.
-- [func imageBrowser(IKImageBrowserView!, cellWasRightClickedAt: Int, with: NSEvent!)](../ObjectiveC/NSObject-swift.class/imageBrowser(_:cellWasRightClickedAt:with:).md)
+- [func imageBrowser(IKImageBrowserView!, cellWasRightClickedAt: Int, with: NSEvent!)](../objectivec/nsobject-swift.class/imagebrowser(_:cellwasrightclickedat:with:).md)
   Performs custom tasks when the user right-clicks an item in the image browser view.
-- [func imageBrowser(IKImageBrowserView!, cellWasDoubleClickedAt: Int)](../ObjectiveC/NSObject-swift.class/imageBrowser(_:cellWasDoubleClickedAt:).md)
+- [func imageBrowser(IKImageBrowserView!, cellWasDoubleClickedAt: Int)](../objectivec/nsobject-swift.class/imagebrowser(_:cellwasdoubleclickedat:).md)
   Performs custom tasks when the user double-clicks an item in the image browser view.
-- [func imageBrowserSelectionDidChange(IKImageBrowserView!)](../ObjectiveC/NSObject-swift.class/imageBrowserSelectionDidChange(_:).md)
+- [func imageBrowserSelectionDidChange(IKImageBrowserView!)](../objectivec/nsobject-swift.class/imagebrowserselectiondidchange(_:).md)
   Performs custom tasks when the selection changes.
 
 ## See Also

@@ -18,7 +18,7 @@ class SKAdNetwork
 
 #### Overview
 
-> ❗ **Important**:  Use [`AdAttributionKit`](https://developer.apple.com/documentation/AdAttributionKit) for app ad campaigns on the App Store and alternative marketplaces. See the [`ad attribution developer support page`](https://developer.apple.comhttps://developer.apple.com/app-store/ad-attribution/) for information on how AdAttributionKit helps advertisers measure the success of ad campaigns while helping maintain user privacy. For information on interoperability between SKAdNetwork and AdAttributionKit, see [`Understanding AdAttributionKit and SKAdNetwork interoperability`](https://developer.apple.com/documentation/AdAttributionKit/adattributionkit-skadnetwork-interoperability).
+> ❗ **Important**:  Use [`AdAttributionKit`](https://developer.apple.com/documentation/adattributionkit) for app ad campaigns on the App Store and alternative marketplaces. See the [`ad attribution developer support page`](https://developer.apple.comhttps://developer.apple.com/app-store/ad-attribution/) for information on how AdAttributionKit helps advertisers measure the success of ad campaigns while helping maintain user privacy. For information on interoperability between SKAdNetwork and AdAttributionKit, see [`Understanding AdAttributionKit and SKAdNetwork interoperability`](https://developer.apple.com/documentation/adattributionkit/adattributionkit-skadnetwork-interoperability).
 
 The ad network API helps advertisers measure the success of ad campaigns while maintaining user privacy. The API involves three participants:
 
@@ -26,11 +26,11 @@ The ad network API helps advertisers measure the success of ad campaigns while m
 - *Source apps* that display ads from the ad networks, or websites that display the ads in Safari
 - *Advertised apps* that update conversion values as people engage with the app
 
-Ad networks register with Apple to get an ad network ID and to use the API. Developers configure their apps to accept attributable ads from ad networks, and to receive copies of winning postbacks. For information about setup, see [`Registering an ad network`](registering-an-ad-network.md), [`Configuring a source app`](configuring-a-source-app.md), and [`Configuring an advertised app`](configuring-an-advertised-app.md). For information about displaying ads in Safari, see [`SKAdNetwork for Web Ads`](https://developer.apple.com/documentation/SKAdNetworkforWebAds).
+Ad networks register with Apple to get an ad network ID and to use the API. Developers configure their apps to accept attributable ads from ad networks, and to receive copies of winning postbacks. For information about setup, see [`Registering an ad network`](registering-an-ad-network.md), [`Configuring a source app`](configuring-a-source-app.md), and [`Configuring an advertised app`](configuring-an-advertised-app.md). For information about displaying ads in Safari, see [`SKAdNetwork for Web Ads`](https://developer.apple.com/documentation/skadnetworkforwebads).
 
 The following diagram shows the path of an ad impression that wins ad attribution. The ad network serves an ad that an app or Safari web page displays. A user taps the ad and downloads the advertised app.
 
-![None](https://docs-assets.developer.apple.com/published/cfb86917a943b271b8187aff2aa2993d/media-4103236%402x.png)
+![None](/images/com.apple.storekit/media-4103236@2x.png)
 
 Apple determines a postback data tier for the app download, and the device uses the tier later to determine the level of detail the postback can contain to ensure crowd anonymity. For more information about the postback contents and the data tiers, see [`Receiving postbacks in multiple conversion windows`](receiving-postbacks-in-multiple-conversion-windows.md).
 
@@ -43,7 +43,7 @@ Devices send install-validation postbacks to multiple ad networks that sign thei
 
 The following diagram shows the path of ad impressions that qualify for, but don’t win, the ad attribution. Up to five ad networks receive a single nonwinning postback.
 
-![None](https://docs-assets.developer.apple.com/published/62cd8fd4dc40174006c06a54c155300b/media-4103237%402x.png)
+![None](/images/com.apple.storekit/media-4103237@2x.png)
 
 For more information about receiving ad attributions, including time-window details and other constraints, see [`Receiving ad attributions and postbacks`](receiving-ad-attributions-and-postbacks.md).
 
@@ -57,7 +57,7 @@ The ad network’s responsibilities are to:
 
 - Register and provide its ad network identifier to developers. See [`Registering an ad network`](registering-an-ad-network.md).
 - Serve signed ads to the source app. See [`Signing and providing ads`](signing-and-providing-ads.md).
-- Serve signed ads for display in Safari web pages. See the [`SKAdNetwork for Web Ads`](https://developer.apple.com/documentation/SKAdNetworkforWebAds) API.
+- Serve signed ads for display in Safari web pages. See the [`SKAdNetwork for Web Ads`](https://developer.apple.com/documentation/skadnetworkforwebads) API.
 - Receive install-validation postbacks at the URL it establishes during registration.
 - Verify the postbacks. See [`Verifying an install-validation postback`](verifying-an-install-validation-postback.md).
 
@@ -72,9 +72,9 @@ The advertised app’s responsibilities are to:
 - Optionally, continue to update the conversion value as the user engages with the app, by calling one of the conversion updating methods, such as [`updatePostbackConversionValue(_:coarseValue:lockWindow:completionHandler:)`](skadnetwork/updatepostbackconversionvalue(_:coarsevalue:lockwindow:completionhandler:).md).
 - Optionally, specify a server URL in its `Info.plist` file to receive a copy of the winning install-validation postback. See [`Configuring an advertised app`](configuring-an-advertised-app.md).
 
-Apple designs SKAdNetwork APIs to maintain user privacy. Apps don’t need to use [`App Tracking Transparency`](https://developer.apple.com/documentation/AppTrackingTransparency) before calling SKAdNetwork APIs, and can call these APIs regardless of their tracking authorization status. For more information about privacy, see [`User Privacy and Data Use`](https://developer.apple.comhttps://developer.apple.com/app-store/user-privacy-and-data-use/).
+Apple designs SKAdNetwork APIs to maintain user privacy. Apps don’t need to use [`App Tracking Transparency`](https://developer.apple.com/documentation/apptrackingtransparency) before calling SKAdNetwork APIs, and can call these APIs regardless of their tracking authorization status. For more information about privacy, see [`User Privacy and Data Use`](https://developer.apple.comhttps://developer.apple.com/app-store/user-privacy-and-data-use/).
 
-> **Note**:  The SKAdNetwork APIs have no effect, return empty strings, or return values that indicate unavailability when you call the APIs from a compatible iPad or iPhone app running in macOS or visionOS, from a Mac app built with Mac Catalyst, or from an App Clip’s code. For more information about App Clips, see [`App Clips`](https://developer.apple.com/documentation/AppClip).
+> **Note**:  The SKAdNetwork APIs have no effect, return empty strings, or return values that indicate unavailability when you call the APIs from a compatible iPad or iPhone app running in macOS or visionOS, from a Mac app built with Mac Catalyst, or from an App Clip’s code. For more information about App Clips, see [`App Clips`](https://developer.apple.com/documentation/appclip).
 
 ## Topics
 
@@ -94,9 +94,9 @@ Apple designs SKAdNetwork APIs to maintain user privacy. Apps don’t need to us
   Set up a source app to participate in ad campaigns.
 - [Configuring an advertised app](configuring-an-advertised-app.md)
   Prepare an advertised app to participate in ad campaigns.
-- [SKAdNetworkItems](../BundleResources/Information-Property-List/SKAdNetworkItems.md)
+- [SKAdNetworkItems](../bundleresources/information-property-list/skadnetworkitems.md)
   An array of dictionaries containing a list of ad network IDs.
-- [NSAdvertisingAttributionReportEndpoint](../BundleResources/Information-Property-List/NSAdvertisingAttributionReportEndpoint.md)
+- [NSAdvertisingAttributionReportEndpoint](../bundleresources/information-property-list/nsadvertisingattributionreportendpoint.md)
   The URL where Private Click Measurement and SKAdNetwork send attribution information.
 ### Signing StoreKit-rendered ads
 - [Generating the signature to validate StoreKit-rendered ads](generating-the-signature-to-validate-storekit-rendered-ads.md)
@@ -129,7 +129,7 @@ Apple designs SKAdNetwork APIs to maintain user privacy. Apps don’t need to us
 ### Testing ad attributions and postbacks
 - [Testing ad attributions with a downloaded profile](testing-ad-attributions-with-a-downloaded-profile.md)
   Reduce the time-window for ad attributions and inspect postbacks using a proxy during testing.
-- [Testing and validating ad impression signatures and postbacks for SKAdNetwork](../StoreKitTest/testing-and-validating-ad-impression-signatures-and-postbacks-for-skadnetwork.md)
+- [Testing and validating ad impression signatures and postbacks for SKAdNetwork](../storekittest/testing-and-validating-ad-impression-signatures-and-postbacks-for-skadnetwork.md)
   Validate your ad impressions and test your postbacks by creating unit tests using the StoreKit Test framework.
 ### Deprecated
 - [class func registerAppForAdNetworkAttribution()](skadnetwork/registerappforadnetworkattribution.md)
@@ -140,18 +140,18 @@ Apple designs SKAdNetwork APIs to maintain user privacy. Apps don’t need to us
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 
-- [Understanding AdAttributionKit and SKAdNetwork interoperability](../AdAttributionKit/adattributionkit-skadnetwork-interoperability.md)
+- [Understanding AdAttributionKit and SKAdNetwork interoperability](../adattributionkit/adattributionkit-skadnetwork-interoperability.md)
   Learn how attribution APIs interact to deliver ad impressions.
 - [class SKAdImpression](skadimpression.md)
   A class that defines an ad impression for a view-through ad.

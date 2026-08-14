@@ -15,7 +15,7 @@ An LSTM layer consists of four gates that manipulate cell-state data:
 
 The following figure illustrates the components of an LSTM layer. The inputs are the cell-state (c), the hidden state (h), and the input data (x). The outputs are the updated cell-state (c) and hidden state (h):
 
-![Visualization of an LSTM layer showing the forget gate, input gate, candidate gate, and output gate as boxes that contain a curve that represents the gate’s activation function. The cell state is multiplied by the output of the forget gate, and then added to the product of the outputs of the input gate and candidate gate.](https://docs-assets.developer.apple.com/published/6565aaa85ca2568104335ed3b51b8ac5/media-3633106%402x.png)
+![Visualization of an LSTM layer showing the forget gate, input gate, candidate gate, and output gate as boxes that contain a curve that represents the gate’s activation function. The cell state is multiplied by the output of the forget gate, and then added to the product of the outputs of the input gate and candidate gate.](/images/com.apple.accelerate/media-3633106@2x.png)
 
 Note that the default activation function for the forget, input, and output gates is [`sigmoid`](bnnsactivationfunction/sigmoid.md); the default activation function for the candidate gate is [`tanh`](bnnsactivationfunction/tanh.md).
 

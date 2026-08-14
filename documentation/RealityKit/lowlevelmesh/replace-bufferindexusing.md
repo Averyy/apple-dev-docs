@@ -27,7 +27,7 @@ The buffer’s contents are in an uninitialized state.
 ## Parameters
 
 - `index`: The index of the buffer to modify. Use a value that is less than [`vertexBufferCount`](lowlevelmesh/descriptor-swift.struct/vertexbuffercount.md).
-- `commandBuffer`: The [`MTLCommandBuffer`](https://developer.apple.com/documentation/Metal/MTLCommandBuffer) you intend to use for buffer modifications. RealityKit waits for the command buffer to complete before utilizing the buffer for rendering.
+- `commandBuffer`: The [`MTLCommandBuffer`](https://developer.apple.com/documentation/metal/mtlcommandbuffer) you intend to use for buffer modifications. RealityKit waits for the command buffer to complete before utilizing the buffer for rendering.
 
 ## See Also
 

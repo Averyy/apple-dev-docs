@@ -17,10 +17,10 @@ ProMotion displays are capable of dynamically switching between frame rates rang
 
 Your app may already be capable of taking advantage of these new refresh rates without any changes. Some framework animation features handle frame pacing automatically for you, including:
 
-- [`UIKit`](https://developer.apple.com/documentation/UIKit)
-- [`SwiftUI`](https://developer.apple.com/documentation/SwiftUI)
+- [`UIKit`](https://developer.apple.com/documentation/uikit)
+- [`SwiftUI`](https://developer.apple.com/documentation/swiftui)
 - [`CAAnimation`](caanimation.md)
-- [`SpriteKit`](https://developer.apple.com/documentation/SpriteKit)
+- [`SpriteKit`](https://developer.apple.com/documentation/spritekit)
 
 If your app needs to provide animated content with special timing, you can use [`CADisplayLink`](cadisplaylink.md) to synchronize your drawing code with the display refresh. In the following code example, a `DisplayLinkManager` class handles frame updates by creating and activating a display link:
 
@@ -152,7 +152,7 @@ The following table provides some suggested frame rate hints for different types
 | --- | --- | --- | --- |
 | High-impact animations | Tapping an item in a grid to expand to fullscreen, such as in the Photos app; first-person, full-motion gaming experience; or sheet presentation | `CAFrameRateRange(minimum:80, maximum:120, preferred:120)` | Use sparingly to minimize power consumption |
 | Alpha or color transitions; small movements | Switch or control changing state; progress spinner; blurring a background | [`CAFrameRateRange`](caframeraterange.md).[`default`](caframeraterange/default.md) | No need for a higher frame rate for the same visual effect |
-| Small, low-speed animations | Clock ticking; progress bar | `CAFrameRateRange(minimum:8, maximum:15, preferred:0),`  ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) `CAFrameRateRange(minimum:15, maximum:24, preferred:0),`, or  ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) `CAFrameRateRange(minimum:30, maximum:48, preferred:0)` | Looks good at slow speeds; power-saving opportunities |
+| Small, low-speed animations | Clock ticking; progress bar | `CAFrameRateRange(minimum:8, maximum:15, preferred:0),`  ![None](/images/com.apple.quartzcore/spacer.png) `CAFrameRateRange(minimum:15, maximum:24, preferred:0),`, or  ![None](/images/com.apple.quartzcore/spacer.png) `CAFrameRateRange(minimum:30, maximum:48, preferred:0)` | Looks good at slow speeds; power-saving opportunities |
 | All other cases |  | [`CAFrameRateRange`](caframeraterange.md).[`default`](caframeraterange/default.md) |  |
 
 For a fluid appearance, fast-moving objects that travel across the screen benefit from having a higher refresh rate. Whereas, smaller movements — like an icon that rotates in-place — may look just fine at a lower rate. To save energy, choose the lowest frame rate that achieve’s your desired visual flow.

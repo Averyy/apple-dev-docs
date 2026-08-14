@@ -16,9 +16,9 @@ class IKImageBrowserView
 
 #### Overview
 
-The [`IKImageBrowserView`](ikimagebrowserview.md) class is a view for displaying and browsing a large amount of images and movies efficiently. This class will be deprecated in a future release. Please switch to [`NSCollectionView`](https://developer.apple.com/documentation/AppKit/NSCollectionView) instead.
+The [`IKImageBrowserView`](ikimagebrowserview.md) class is a view for displaying and browsing a large amount of images and movies efficiently. This class will be deprecated in a future release. Please switch to [`NSCollectionView`](https://developer.apple.com/documentation/appkit/nscollectionview) instead.
 
-You must set a datasource for the view and implement, at a minimum, the [`numberOfItems(inImageBrowser:)`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class/numberOfItems(inImageBrowser:)) and [`imageBrowser(_:itemAt:)`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class/imageBrowser(_:itemAt:)) described in [`IKImageBrowserDataSource Protocol`](ikimagebrowserdatasource-protocol.md). The items must conform to the IKImageBrowserItem Protocol protocol.
+You must set a datasource for the view and implement, at a minimum, the [`numberOfItems(inImageBrowser:)`](https://developer.apple.com/documentation/objectivec/nsobject-swift.class/numberofitems(inimagebrowser:)) and [`imageBrowser(_:itemAt:)`](https://developer.apple.com/documentation/objectivec/nsobject-swift.class/imagebrowser(_:itemat:)) described in [`IKImageBrowserDataSource Protocol`](ikimagebrowserdatasource-protocol.md). The items must conform to the IKImageBrowserItem Protocol protocol.
 
 The class’s delegate object must conform to IKImageBrowserDelegate Protocol protocol. It receives notification of changes in selection, as well as mouse events in the cells.
 
@@ -161,27 +161,27 @@ The class’s delegate object must conform to IKImageBrowserDelegate Protocol pr
 ## Relationships
 
 ### Inherits From
-- [NSView](../AppKit/NSView.md)
+- [NSView](../appkit/nsview.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSAccessibilityElementProtocol](../AppKit/NSAccessibilityElementProtocol.md)
-- [NSAccessibilityProtocol](../AppKit/NSAccessibilityProtocol.md)
-- [NSAnimatablePropertyContainer](../AppKit/NSAnimatablePropertyContainer.md)
-- [NSAppearanceCustomization](../AppKit/NSAppearanceCustomization.md)
-- [NSCoding](../Foundation/NSCoding.md)
-- [NSDraggingDestination](../AppKit/NSDraggingDestination.md)
-- [NSDraggingSource](../AppKit/NSDraggingSource.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [NSStandardKeyBindingResponding](../AppKit/NSStandardKeyBindingResponding.md)
-- [NSTouchBarProvider](../AppKit/NSTouchBarProvider.md)
-- [NSUserActivityRestoring](../AppKit/NSUserActivityRestoring.md)
-- [NSUserInterfaceItemIdentification](../AppKit/NSUserInterfaceItemIdentification.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSAccessibilityElementProtocol](../appkit/nsaccessibilityelementprotocol.md)
+- [NSAccessibilityProtocol](../appkit/nsaccessibilityprotocol.md)
+- [NSAnimatablePropertyContainer](../appkit/nsanimatablepropertycontainer.md)
+- [NSAppearanceCustomization](../appkit/nsappearancecustomization.md)
+- [NSCoding](../foundation/nscoding.md)
+- [NSDraggingDestination](../appkit/nsdraggingdestination.md)
+- [NSDraggingSource](../appkit/nsdraggingsource.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSStandardKeyBindingResponding](../appkit/nsstandardkeybindingresponding.md)
+- [NSTouchBarProvider](../appkit/nstouchbarprovider.md)
+- [NSUserActivityRestoring](../appkit/nsuseractivityrestoring.md)
+- [NSUserInterfaceItemIdentification](../appkit/nsuserinterfaceitemidentification.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 
 ---

@@ -17,7 +17,7 @@ int initialize::spawnIndex()
 
 #### Discussion
 
-> **Note**: ![Graph](https://docs-assets.developer.apple.com/published/eccc7e2f2edd43f9e5907c19a3ab884f/initialize__spawnIndex.svg)
+> **Note**: ![Graph](/images/com.apple.computegraph/initialize__spawnIndex.svg)
 
 
 ---

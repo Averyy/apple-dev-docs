@@ -33,11 +33,11 @@ If your app renders with a GPU that isn’t driving your view’s display, the s
 
 The fastest path to present a drawable is to render that drawable with the GPU that drives your view’s display. An example is a MacBook Pro with a discrete GPU and an integrated GPU, where the integrated GPU can drive the built-in display under certain conditions, such as thermal state, battery life, or an app’s needs.
 
-![A system diagram that shows two possible pathways for a drawable. The recommended pathway renders a drawable with an integrated GPU and presents it on a built-in display. The not recommended pathway renders a drawable with a discrete GPU and transfers it to an integrated GPU before presenting it on a built-in display.](https://docs-assets.developer.apple.com/published/dfb4637e8bc81ad32ee2cdd3f52af7d8/FastestDrawablePath_BuiltIn.png)
+![A system diagram that shows two possible pathways for a drawable. The recommended pathway renders a drawable with an integrated GPU and presents it on a built-in display. The not recommended pathway renders a drawable with a discrete GPU and transfers it to an integrated GPU before presenting it on a built-in display.](/images/com.apple.metal/FastestDrawablePath_BuiltIn.png)
 
 Another example is a Mac connected to an external GPU, where the external GPU drives an external display.
 
-![A system diagram that shows two possible pathways for a drawable. The recommended pathway renders a drawable with an external GPU and presents it on an external display. The not recommended pathway renders a drawable with a discrete or integrated GPU and transfers it to an external GPU before presenting it on an external display.](https://docs-assets.developer.apple.com/published/d07ddebc4886354ce8389e6a00378aba/FastestDrawablePath_External.png)
+![A system diagram that shows two possible pathways for a drawable. The recommended pathway renders a drawable with an external GPU and presents it on an external display. The not recommended pathway renders a drawable with a discrete or integrated GPU and transfers it to an external GPU before presenting it on an external display.](/images/com.apple.metal/FastestDrawablePath_External.png)
 
 ##### Transition Smoothly Between Devices
 
@@ -182,7 +182,7 @@ When a device that represents an external GPU is added to the system, the `handl
 
 ##### Update Per Frame State and Data
 
-MetalKit calls the [`draw(in:)`](https://developer.apple.com/documentation/MetalKit/MTKViewDelegate/draw(in:)) method for the sample to render each frame. Within this method, the sample calls the `handlePossibleHotPlugEvent` method to handle device additions or removals on the main thread. Such actions include updating UI related to these device events and completing any additional state changes that need to be executed atomically on a single thread.
+MetalKit calls the [`draw(in:)`](https://developer.apple.com/documentation/metalkit/mtkviewdelegate/draw(in:)) method for the sample to render each frame. Within this method, the sample calls the `handlePossibleHotPlugEvent` method to handle device additions or removals on the main thread. Such actions include updating UI related to these device events and completing any additional state changes that need to be executed atomically on a single thread.
 
 The sample then calls the `drawFrameNumber:toView:` to begin rendering a new frame for the current renderer. To ensure continuous rendering that enables seamless switching between different renderers, the sample stores any nonrendering state separate from the renderers themselves. Then, for each frame, the sample passes any necessary nonrendering state to a specific `AAPLRenderer` instance. In this case, the sample passes the current frame number, `_frameNumber`, to the renderer so it can calculate the position and rotation of the sample’s 3D model.
 

@@ -16,11 +16,11 @@ func callbacks() -> UnsafePointer<AuthorizationCallbacks>!
 
 #### Return Value
 
-An object of type [`AuthorizationCallbacks`](https://developer.apple.com/documentation/Security/AuthorizationCallbacks).
+An object of type [`AuthorizationCallbacks`](https://developer.apple.com/documentation/security/authorizationcallbacks).
 
 #### Discussion
 
-Use the [`AuthorizationCallbacks`](https://developer.apple.com/documentation/Security/AuthorizationCallbacks) structure to get the function pointers to functions such as `SetResult` and `SetContextValue`.
+Use the [`AuthorizationCallbacks`](https://developer.apple.com/documentation/security/authorizationcallbacks) structure to get the function pointers to functions such as `SetResult` and `SetContextValue`.
 
 ## See Also
 

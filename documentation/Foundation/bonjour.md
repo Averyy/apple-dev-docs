@@ -11,9 +11,9 @@ Advertise services for easy discovery on local networks, or discover services ad
   A network service that broadcasts its availability using multicast DNS.
 - [protocol NetServiceDelegate](netservicedelegate.md)
   The interface a net service uses to inform its delegate about the state of the service it offers.
-- [NSBonjourServices](../BundleResources/Information-Property-List/NSBonjourServices.md)
+- [NSBonjourServices](../bundleresources/information-property-list/nsbonjourservices.md)
   Bonjour service types browsed by the app.
-- [NSLocalNetworkUsageDescription](../BundleResources/Information-Property-List/NSLocalNetworkUsageDescription.md)
+- [NSLocalNetworkUsageDescription](../bundleresources/information-property-list/nslocalnetworkusagedescription.md)
   A message that tells people why the app is requesting access to the local network.
 ### Service Discovery
 - [class NetServiceBrowser](netservicebrowser.md)

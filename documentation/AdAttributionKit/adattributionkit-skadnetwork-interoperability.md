@@ -6,13 +6,13 @@ Learn how attribution APIs interact to deliver ad impressions.
 
 #### Overview
 
-AdAttributionKit and [`SKAdNetwork`](https://developer.apple.com/documentation/StoreKit/SKAdNetwork) are frameworks that enable ad attribution and user engagement measurement for conversions. AdAttributionKit works with both the App Store and alternative app marketplaces, while SKAdNetwork works specifically with the App Store.
+AdAttributionKit and [`SKAdNetwork`](https://developer.apple.com/documentation/storekit/skadnetwork) are frameworks that enable ad attribution and user engagement measurement for conversions. AdAttributionKit works with both the App Store and alternative app marketplaces, while SKAdNetwork works specifically with the App Store.
 
 #### Update Conversion Values Independently
 
 The update API to call depends on the framework your ad network is using, although you can use both APIs:
 
-If your framework is integrated with AdAttributionKit, use the [`updateConversionValue(_:coarseConversionValue:lockPostback:)`](postback/updateconversionvalue(_:coarseconversionvalue:lockpostback:).md) or [`updateConversionValue(_:lockPostback:)`](postback/updateconversionvalue(_:lockpostback:).md) API methods. If your framework is integrated with SKAdNetwork, call the [`updatePostbackConversionValue(_:coarseValue:lockWindow:completionHandler:)`](https://developer.apple.com/documentation/StoreKit/SKAdNetwork/updatePostbackConversionValue(_:coarseValue:lockWindow:completionHandler:))  or [`updatePostbackConversionValue(_:coarseValue:completionHandler:)`](https://developer.apple.com/documentation/StoreKit/SKAdNetwork/updatePostbackConversionValue(_:coarseValue:completionHandler:)) API methods.
+If your framework is integrated with AdAttributionKit, use the [`updateConversionValue(_:coarseConversionValue:lockPostback:)`](postback/updateconversionvalue(_:coarseconversionvalue:lockpostback:).md) or [`updateConversionValue(_:lockPostback:)`](postback/updateconversionvalue(_:lockpostback:).md) API methods. If your framework is integrated with SKAdNetwork, call the [`updatePostbackConversionValue(_:coarseValue:lockWindow:completionHandler:)`](https://developer.apple.com/documentation/storekit/skadnetwork/updatepostbackconversionvalue(_:coarsevalue:lockwindow:completionhandler:))  or [`updatePostbackConversionValue(_:coarseValue:completionHandler:)`](https://developer.apple.com/documentation/storekit/skadnetwork/updatepostbackconversionvalue(_:coarsevalue:completionhandler:)) API methods.
 
 If your framework is integrated with both AdAttributionKit and SKAdNetwork, call APIs from both. If your app doesn’t have any pending postbacks — for instance because a person hasn’t seen an ad for your app — the system ignores calls to both AdAttributionKit and SKAdNetwork. Additionally, `.adattributionkit` and `.skadnetwork` ad network IDs are compatible across both AdAttributionKit and SKAdNetwork, so you don’t need a specific ad network ID for one or the other.
 
@@ -28,8 +28,8 @@ The system sorts the impressions based on the following criteria:
 
 #### Bridge Conversions Between Skadnetwork and Adattributionkit
 
-When an app calls the update conversion values APIs in SKAdNetwork, such as [`updatePostbackConversionValue(_:coarseValue:lockWindow:completionHandler:)`](https://developer.apple.com/documentation/StoreKit/SKAdNetwork/updatePostbackConversionValue(_:coarseValue:lockWindow:completionHandler:)), SKAdNetwork bridges the conversion values between the two frameworks by mirroring the call into AdAttributionNetwork by calling
-[`updateConversionValue(_:lockPostback:)`](Postback/updateConversionValue(_:lockPostback:).md).
+When an app calls the update conversion values APIs in SKAdNetwork, such as [`updatePostbackConversionValue(_:coarseValue:lockWindow:completionHandler:)`](https://developer.apple.com/documentation/storekit/skadnetwork/updatepostbackconversionvalue(_:coarsevalue:lockwindow:completionhandler:)), SKAdNetwork bridges the conversion values between the two frameworks by mirroring the call into AdAttributionNetwork by calling
+[`updateConversionValue(_:lockPostback:)`](postback/updateconversionvalue(_:lockpostback:).md).
 
 ## See Also
 

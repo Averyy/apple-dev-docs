@@ -16,11 +16,11 @@ typedef struct IORPCMessageErrorReturnContent IORPCMessageErrorReturnContent;
 ## Topics
 
 ### Instance Properties
-- [hdr](../driverkit/iorpcmessageerrorreturncontent/3222988-hdr.md)
+- [hdr](../driverkit/iorpcmessageerrorreturncontent/hdr.md)
 - [hdr](iorpcmessageerrorreturncontent/3223351-hdr.md)
-- [pad](../driverkit/iorpcmessageerrorreturncontent/3222989-pad.md)
+- [pad](../driverkit/iorpcmessageerrorreturncontent/pad.md)
 - [pad](iorpcmessageerrorreturncontent/3223352-pad.md)
-- [result](../driverkit/iorpcmessageerrorreturncontent/3325568-result.md)
+- [result](../driverkit/iorpcmessageerrorreturncontent/result.md)
 - [result](iorpcmessageerrorreturncontent/3325714-result.md)
 
 ## See Also

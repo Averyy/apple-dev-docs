@@ -21,7 +21,7 @@ static let name: UIFontDescriptor.AttributeName
 
 #### Discussion
 
-The value is an optional [`NSString`](https://developer.apple.com/documentation/Foundation/NSString) object that specifies the PostScript name of the font.
+The value is an optional [`NSString`](https://developer.apple.com/documentation/foundation/nsstring) object that specifies the PostScript name of the font.
 
 ## See Also
 

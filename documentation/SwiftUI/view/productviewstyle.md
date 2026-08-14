@@ -23,7 +23,7 @@ func productViewStyle(_ style: some ProductViewStyle) -> some View
 
 #### Discussion
 
-This modifier styles any [`ProductView`](https://developer.apple.com/documentation/StoreKit/ProductView) or [`StoreView`](https://developer.apple.com/documentation/StoreKit/StoreView) instances within a view.
+This modifier styles any [`ProductView`](https://developer.apple.com/documentation/storekit/productview) or [`StoreView`](https://developer.apple.com/documentation/storekit/storeview) instances within a view.
 
 ## Parameters
 

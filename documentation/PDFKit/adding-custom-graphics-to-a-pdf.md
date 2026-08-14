@@ -10,7 +10,7 @@ You can add custom annotation and page graphics to a PDF by overriding the `draw
 
 Drawings are static, unlike interactive annotation types like widgets. To learn more about widgets, see [`Adding Widgets to a PDF Document`](adding-widgets-to-a-pdf-document.md).
 
-![Add a custom watermark annotation to a PDF. ](https://docs-assets.developer.apple.com/published/e70d9ea8cae1183c2c613784170717c7/media-3039566%402x.png)
+![Add a custom watermark annotation to a PDF. ](/images/com.apple.pdfkit/media-3039566@2x.png)
 
 ##### Register a Delegate for the Document
 
@@ -87,7 +87,7 @@ override func draw(with box: PDFDisplayBox, to context: CGContext) {
 }
 ```
 
-In the appropriate `draw` method, add your custom drawing, in this case the line. To ensure that your drawing maintains its [`CGContext`](https://developer.apple.com/documentation/CoreGraphics/CGContext) properties and doesn’t affect other contexts in your PDF, make sure to save and restore your graphics state (before and after, respectively) you add your custom drawing code.
+In the appropriate `draw` method, add your custom drawing, in this case the line. To ensure that your drawing maintains its [`CGContext`](https://developer.apple.com/documentation/coregraphics/cgcontext) properties and doesn’t affect other contexts in your PDF, make sure to save and restore your graphics state (before and after, respectively) you add your custom drawing code.
 
 > ❗ **Important**:  Ensure that you draw your content with respect to the PDF page coordinate system. The origin is at the bottom left corner, with the Y axis increasing from bottom to top and the X axis increasing from left to right.
 

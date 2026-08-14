@@ -38,7 +38,7 @@ Add a joint to the correct `PhysicsJointsComponent` instance by calling its `Phy
 
 ### Conforms To
 - [Component](component.md)
-- [Equatable](../Swift/Equatable.md)
+- [Equatable](../swift/equatable.md)
 
 ## See Also
 

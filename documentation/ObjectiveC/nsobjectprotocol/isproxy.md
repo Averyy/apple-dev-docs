@@ -27,7 +27,7 @@ func isProxy() -> Bool
 
 #### Discussion
 
-This method is necessary because sending [`isKind(of:)`](nsobjectprotocol/iskind(of:).md) or [`isMember(of:)`](nsobjectprotocol/ismember(of:).md) to an [`NSProxy`](https://developer.apple.com/documentation/Foundation/NSProxy) object will test the object the proxy stands in for, not the proxy itself. Use this method to test if the receiver is a proxy (or a member of some other root class).
+This method is necessary because sending [`isKind(of:)`](nsobjectprotocol/iskind(of:).md) or [`isMember(of:)`](nsobjectprotocol/ismember(of:).md) to an [`NSProxy`](https://developer.apple.com/documentation/foundation/nsproxy) object will test the object the proxy stands in for, not the proxy itself. Use this method to test if the receiver is a proxy (or a member of some other root class).
 
 
 ---

@@ -22,7 +22,7 @@ var pixelFormatType: OSType { get }
 
 #### Discussion
 
-The only supported pixel format type for the matting image is [`kCVPixelFormatType_OneComponent8`](https://developer.apple.com/documentation/CoreVideo/kCVPixelFormatType_OneComponent8).
+The only supported pixel format type for the matting image is [`kCVPixelFormatType_OneComponent8`](https://developer.apple.com/documentation/corevideo/kcvpixelformattype_onecomponent8).
 
 ## See Also
 

@@ -40,8 +40,8 @@ EntityStringQuery adds to a [`EntityQuery`](entityquery.md) the ability to query
 - [DynamicOptionsProvider](dynamicoptionsprovider.md)
 - [EntityQuery](entityquery.md)
 - [PersistentlyIdentifiable](persistentlyidentifiable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 
 ---

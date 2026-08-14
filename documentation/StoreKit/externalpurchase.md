@@ -22,7 +22,7 @@ enum ExternalPurchase
 
 #### Overview
 
-This functionality is only available to and required by apps with the [`com.apple.developer.storekit.external-purchase`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.storekit.external-purchase) entitlement. For more information, see:
+This functionality is only available to and required by apps with the [`com.apple.developer.storekit.external-purchase`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.storekit.external-purchase) entitlement. For more information, see:
 
 - [`Distributing apps using alternative payment providers in the European Union`](https://developer.apple.comhttps://developer.apple.com/go/?id=storekit-external-purchase-eu)
 - [`Distributing dating apps in the Netherlands`](https://developer.apple.comhttps://developer.apple.com/support/storekit-external-entitlement/)
@@ -39,20 +39,20 @@ This functionality is only available to and required by apps with the [`com.appl
   Presents a notice sheet from Apple that informs people of external purchases before showing them, and determines if your app can present external purchases
 - [ExternalPurchase.NoticeResult](externalpurchase/noticeresult.md)
   The options available to people while viewing the external purchase notice sheet.
-- [SKExternalPurchase](../BundleResources/Information-Property-List/SKExternalPurchase.md)
+- [SKExternalPurchase](../bundleresources/information-property-list/skexternalpurchase.md)
   A string array of country codes that indicates your app supports external purchases.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 
-- [com.apple.developer.storekit.external-purchase](../BundleResources/Entitlements/com.apple.developer.storekit.external-purchase.md)
+- [com.apple.developer.storekit.external-purchase](../bundleresources/entitlements/com.apple.developer.storekit.external-purchase.md)
   A Boolean value that indicates whether your app can offer external purchases.
-- [SKExternalPurchase](../BundleResources/Information-Property-List/SKExternalPurchase.md)
+- [SKExternalPurchase](../bundleresources/information-property-list/skexternalpurchase.md)
   A string array of country codes that indicates your app supports external purchases.
 
 

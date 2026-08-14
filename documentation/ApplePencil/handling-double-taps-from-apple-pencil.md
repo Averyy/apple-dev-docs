@@ -8,7 +8,7 @@ Detect and respond to double taps a person makes on Apple Pencil.
 
 You can use Apple Pencil interactions to allow people to access functionality in your app quickly. Double-tapping Apple Pencil lets a person perform actions such as switching between drawing tools without moving the pencil to another location on the screen.
 
-![An illustration showing a hand double-tapping Apple Pencil with the index finger.](https://docs-assets.developer.apple.com/published/796d7b73d68c0168b9105f002aa0984e/apple-pencil-double-tap%402x.png)
+![An illustration showing a hand double-tapping Apple Pencil with the index finger.](/images/com.apple.ApplePencil/apple-pencil-double-tap@2x.png)
 
 ##### Register for a Double Tap
 
@@ -16,7 +16,7 @@ To respond to double taps from Apple Pencil in your app, you need to register yo
 
 **SwiftUI**:
 
-Add an [`onPencilDoubleTap(perform:)`](https://developer.apple.com/documentation/SwiftUI/View/onPencilDoubleTap(perform:)) view modifier to your view.
+Add an [`onPencilDoubleTap(perform:)`](https://developer.apple.com/documentation/swiftui/view/onpencildoubletap(perform:)) view modifier to your view.
 
 ```swift
 MyView()
@@ -27,7 +27,7 @@ MyView()
 
 **UIKit**:
 
-Create a [`UIPencilInteraction`](https://developer.apple.com/documentation/UIKit/UIPencilInteraction) object, passing an object that implements the [`UIPencilInteractionDelegate`](https://developer.apple.com/documentation/UIKit/UIPencilInteractionDelegate) protocol to the `delegate` parameter. Then, add the interaction to your view.
+Create a [`UIPencilInteraction`](https://developer.apple.com/documentation/uikit/uipencilinteraction) object, passing an object that implements the [`UIPencilInteractionDelegate`](https://developer.apple.com/documentation/uikit/uipencilinteractiondelegate) protocol to the `delegate` parameter. Then, add the interaction to your view.
 
 ```swift
 class ViewController: UIViewController, UIPencilInteractionDelegate {
@@ -51,7 +51,7 @@ In your app, you can check the value of this preferred action for double tap.
 
 **SwiftUI**:
 
-To check the preferred action, use the [`preferredPencilDoubleTapAction`](https://developer.apple.com/documentation/SwiftUI/EnvironmentValues/preferredPencilDoubleTapAction) environment value. For possible values, see [`PencilPreferredAction`](https://developer.apple.com/documentation/SwiftUI/PencilPreferredAction).
+To check the preferred action, use the [`preferredPencilDoubleTapAction`](https://developer.apple.com/documentation/swiftui/environmentvalues/preferredpencildoubletapaction) environment value. For possible values, see [`PencilPreferredAction`](https://developer.apple.com/documentation/swiftui/pencilpreferredaction).
 
 ```swift
 @Environment(\.preferredPencilDoubleTapAction) private var preferredAction
@@ -59,7 +59,7 @@ To check the preferred action, use the [`preferredPencilDoubleTapAction`](https:
 
 **UIKit**:
 
-To check the preferred action, use the [`preferredTapAction`](https://developer.apple.com/documentation/UIKit/UIPencilInteraction/preferredTapAction) class property on [`UIPencilInteraction`](https://developer.apple.com/documentation/UIKit/UIPencilInteraction). For possible values, see [`UIPencilPreferredAction`](https://developer.apple.com/documentation/UIKit/UIPencilPreferredAction).
+To check the preferred action, use the [`preferredTapAction`](https://developer.apple.com/documentation/uikit/uipencilinteraction/preferredtapaction) class property on [`UIPencilInteraction`](https://developer.apple.com/documentation/uikit/uipencilinteraction). For possible values, see [`UIPencilPreferredAction`](https://developer.apple.com/documentation/uikit/uipencilpreferredaction).
 
 ```swift
 UIPencilInteraction.preferredTapAction

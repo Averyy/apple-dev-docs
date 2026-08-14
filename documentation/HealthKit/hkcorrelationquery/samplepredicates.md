@@ -3,7 +3,7 @@
 **Framework**: HealthKit  
 **Kind**: property
 
-A dictionary whose keys are [`HKSampleType`](hksampletype.md) instances and whose values are [`NSPredicate`](https://developer.apple.com/documentation/Foundation/NSPredicate) instances.
+A dictionary whose keys are [`HKSampleType`](hksampletype.md) instances and whose values are [`NSPredicate`](https://developer.apple.com/documentation/foundation/nspredicate) instances.
 
 **Availability**:
 - iOS 8.0+

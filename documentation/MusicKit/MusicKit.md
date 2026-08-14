@@ -16,11 +16,11 @@ Integrate your app with Apple Music.
 
 #### Overview
 
-Use MusicKit to integrate your app with [`Apple Music API`](https://developer.apple.com/documentation/AppleMusicAPI), a web service you use to access information about music items in the Apple Music catalog. Using MusicKit, you can more easily build apps that tie into Apple Music.
+Use MusicKit to integrate your app with [`Apple Music API`](https://developer.apple.com/documentation/applemusicapi), a web service you use to access information about music items in the Apple Music catalog. Using MusicKit, you can more easily build apps that tie into Apple Music.
 
 The framework provides a model layer for accessing music items in Swift, as well as playback support so you can add music to your app. Additionally, it provides some related user interface elements, such as a view to display images that correspond to artwork for a music item, or a way to present music subscription offers to users who may not have an active Apple Music subscription.
 
-> ❗ **Important**: Users must grant permission for your app to access their music data. Add the [`NSAppleMusicUsageDescription`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSAppleMusicUsageDescription) key to your app’s `Info.plist` file, and include a description of how you intend to use the user’s media. If this key isn’t present, the system terminates your app when it tries to access the user’s music.
+> ❗ **Important**: Users must grant permission for your app to access their music data. Add the [`NSAppleMusicUsageDescription`](https://developer.apple.com/documentation/bundleresources/information-property-list/nsapplemusicusagedescription) key to your app’s `Info.plist` file, and include a description of how you intend to use the user’s media. If this key isn’t present, the system terminates your app when it tries to access the user’s music.
 
 Request permission for your app to use MusicKit with [`MusicAuthorization`](musicauthorization.md). Check specific capabilities for the current [`MusicSubscription`](musicsubscription.md) to ensure your music-related functionality is available to the user. Find music items using a search term with [`MusicCatalogSearchRequest`](musiccatalogsearchrequest.md), or find music items using a filter with [`MusicCatalogResourceRequest`](musiccatalogresourcerequest.md). Play music in your app with one of the two music players that MusicKit offers. Allow the user to begin a free trial for Apple Music from within your app by presenting a music subscription offer.
 
@@ -33,7 +33,7 @@ You can load content from an arbitrary Apple Music API endpoint with [`MusicData
   Enable your app’s integration with the MusicKit App Service in the developer portal.
 - [Using MusicKit to integrate with Apple Music](using-musickit-to-integrate-with-apple-music.md)
   Find an album in Apple Music that corresponds to a CD in a user’s collection, and present the information for the album.
-- [NSAppleMusicUsageDescription](../BundleResources/Information-Property-List/NSAppleMusicUsageDescription.md)
+- [NSAppleMusicUsageDescription](../bundleresources/information-property-list/nsapplemusicusagedescription.md)
   A message that tells people why the app is requesting access to their media library.
 ### Music Items
 - [struct Album](album.md)
@@ -283,9 +283,9 @@ You can load content from an arbitrary Apple Music API endpoint with [`MusicData
 
 ## See Also
 
-- [Media Player](../MediaPlayer/MediaPlayer.md)
+- [Media Player](../mediaplayer/mediaplayer.md)
   Find and play songs, audio podcasts, audio books, and more from within your app.
-- [Apple Music API](../AppleMusicAPI/AppleMusicAPI.md)
+- [Apple Music API](../applemusicapi/applemusicapi.md)
   Integrate streaming music with catalog and personal content.
 
 

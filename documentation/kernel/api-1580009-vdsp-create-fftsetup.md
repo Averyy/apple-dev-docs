@@ -29,7 +29,7 @@ Call [`vDSP_destroy_fftsetup`](1579978-vdsp_destroy_fftsetup.md) to deallocate t
 ## Parameters
 
 - `__Log2n`: The base-two logarithm of the maximum number of elements the setup structure transforms. Subsequent calls to FFT functions using the resulting setup may transform this length or less.
-- `__Radix`: Specifies radix options. This function only supports radix-2; other radices are deprecated. Use the   for radix-3, and radix-5.
+- `__Radix`: Specifies radix options. This function only supports radix-2; other radices are deprecated. Use the [`Discrete Fourier transforms`](https://developer.apple.com/documentation/accelerate/discrete-fourier-transforms) for radix-3, and radix-5.
 
 
 ---

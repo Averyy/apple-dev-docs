@@ -20,7 +20,7 @@ One way to ensure that non-bundle assets have been successfully loaded on all pe
 
 #### Communicate Load Status
 
-If you’re not able to load all assets ahead of time, one way to ensure that all peers have finished loading assets is to broadcast a message using [`send(_:toPeers:with:)`](https://developer.apple.com/documentation/MultipeerConnectivity/MCSession/send(_:toPeers:with:)) when each peer is done loading. The host app can then keep track of which peers have sent that message and only add the resources to the [`ARView`](arview.md) once all peers have notified it that they have finished loading. You can also have your app broadcast a different message when a peer is unable to load a particular asset. If a peer is unable to load an asset, the host can choose to send that peer a copy of the resource or to disconnect that peer.
+If you’re not able to load all assets ahead of time, one way to ensure that all peers have finished loading assets is to broadcast a message using [`send(_:toPeers:with:)`](https://developer.apple.com/documentation/multipeerconnectivity/mcsession/send(_:topeers:with:)) when each peer is done loading. The host app can then keep track of which peers have sent that message and only add the resources to the [`ARView`](arview.md) once all peers have notified it that they have finished loading. You can also have your app broadcast a different message when a peer is unable to load a particular asset. If a peer is unable to load an asset, the host can choose to send that peer a copy of the resource or to disconnect that peer.
 
 Here’s a simple example of sending a sync message to connected peers:
 
@@ -42,11 +42,11 @@ private func notifyPeers(message: SyncMessage) {
 }
 ```
 
-For more information on sending data between connected peers, see [`Creating a collaborative session`](https://developer.apple.com/documentation/ARKit/creating-a-collaborative-session).
+For more information on sending data between connected peers, see [`Creating a collaborative session`](https://developer.apple.com/documentation/arkit/creating-a-collaborative-session).
 
 #### Send Missing Resources to Peers
 
-Because a non-bundle resource load can fail for a number of reasons, a networked RealityKit app can implement a mechanism to allow peers to request resources they’re unable to load themselves. If one peer has successfully loaded an asset, it can use [`sendResource(at:withName:toPeer:withCompletionHandler:)`](https://developer.apple.com/documentation/MultipeerConnectivity/MCSession/sendResource(at:withName:toPeer:withCompletionHandler:)) to send it to any other connected peer. Once any missing asset are successfully sent to the peers that need it, the host can safely add those assets to the shared RealityKit scene.
+Because a non-bundle resource load can fail for a number of reasons, a networked RealityKit app can implement a mechanism to allow peers to request resources they’re unable to load themselves. If one peer has successfully loaded an asset, it can use [`sendResource(at:withName:toPeer:withCompletionHandler:)`](https://developer.apple.com/documentation/multipeerconnectivity/mcsession/sendresource(at:withname:topeer:withcompletionhandler:)) to send it to any other connected peer. Once any missing asset are successfully sent to the peers that need it, the host can safely add those assets to the shared RealityKit scene.
 
 ## See Also
 

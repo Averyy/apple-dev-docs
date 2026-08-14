@@ -19,17 +19,17 @@ func setTrustedServerCertificates(_ certificates: [Any]) -> Bool
 
 #### Return Value
 
-Returns [`false`](https://developer.apple.com/documentation/Swift/false) if any element in the array is not an object of type [`SecCertificate`](https://developer.apple.com/documentation/Security/SecCertificate) or if the OS fails to find a persistent reference for each element from the application’s keychain; else return [`true`](https://developer.apple.com/documentation/Swift/true).
+Returns [`false`](https://developer.apple.com/documentation/swift/false) if any element in the array is not an object of type [`SecCertificate`](https://developer.apple.com/documentation/security/seccertificate) or if the OS fails to find a persistent reference for each element from the application’s keychain; else return [`true`](https://developer.apple.com/documentation/swift/true).
 
 #### Discussion
 
-Your app must store the certificates in keychain access group `$(TeamIdentifierPrefix)com.apple.networkextensionsharing`. The OS uses [`SecItemCopyMatching(_:_:)`](https://developer.apple.com/documentation/Security/SecItemCopyMatching(_:_:)) to obtain a persistent reference to each certificate from the application’s keychain and uses it during EAP authentication.
+Your app must store the certificates in keychain access group `$(TeamIdentifierPrefix)com.apple.networkextensionsharing`. The OS uses [`SecItemCopyMatching(_:_:)`](https://developer.apple.com/documentation/security/secitemcopymatching(_:_:)) to obtain a persistent reference to each certificate from the application’s keychain and uses it during EAP authentication.
 
 The number of elements in the certificate array may not be more than 10.
 
 ## Parameters
 
-- `certificates`: An array of [`SecCertificate`](https://developer.apple.com/documentation/Security/SecCertificate) objects. The EAP peer uses these certificates to evaluate the trust of the server certificate chain.
+- `certificates`: An array of [`SecCertificate`](https://developer.apple.com/documentation/security/seccertificate) objects. The EAP peer uses these certificates to evaluate the trust of the server certificate chain.
 
 ## See Also
 

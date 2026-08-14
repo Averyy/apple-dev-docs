@@ -21,7 +21,7 @@ protocol MDLMeshBuffer : NSCopying, NSObjectProtocol
 
 #### Overview
 
-Model I/O creates buffers using an allocator that you specify when loading mesh data from a file with the [`MDLAsset`](mdlasset.md) class or generating meshes with the [`MDLMesh`](mdlmesh.md) class. You can also create buffers using an allocator method such as [`newBuffer(with:type:)`](mdlmeshbufferallocator/newbuffer(with:type:).md). The allocator you choose determines the concrete class of a mesh buffer and thus its storage mechanism—for example, the MetalKit [`MTKMeshBufferAllocator`](https://developer.apple.com/documentation/MetalKit/MTKMeshBufferAllocator) class allocates [`MTKMeshBuffer`](https://developer.apple.com/documentation/MetalKit/MTKMeshBuffer) objects, which share storage with Metal buffers for use in rendering.
+Model I/O creates buffers using an allocator that you specify when loading mesh data from a file with the [`MDLAsset`](mdlasset.md) class or generating meshes with the [`MDLMesh`](mdlmesh.md) class. You can also create buffers using an allocator method such as [`newBuffer(with:type:)`](mdlmeshbufferallocator/newbuffer(with:type:).md). The allocator you choose determines the concrete class of a mesh buffer and thus its storage mechanism—for example, the MetalKit [`MTKMeshBufferAllocator`](https://developer.apple.com/documentation/metalkit/mtkmeshbufferallocator) class allocates [`MTKMeshBuffer`](https://developer.apple.com/documentation/metalkit/mtkmeshbuffer) objects, which share storage with Metal buffers for use in rendering.
 
 ## Topics
 
@@ -46,8 +46,8 @@ Model I/O creates buffers using an allocator that you specify when loading mesh 
 ## Relationships
 
 ### Inherits From
-- [NSCopying](../Foundation/NSCopying.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSCopying](../foundation/nscopying.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 ### Conforming Types
 - [MDLMeshBufferData](mdlmeshbufferdata.md)
 

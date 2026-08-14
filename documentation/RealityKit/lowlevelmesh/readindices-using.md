@@ -22,7 +22,7 @@ func readIndices(using commandBuffer: any MTLCommandBuffer) -> any MTLBuffer
 
 ## Parameters
 
-- `commandBuffer`: The [`MTLCommandBuffer`](https://developer.apple.com/documentation/Metal/MTLCommandBuffer) you intend to use for reading. RealityKit waits for the command buffer to complete before discarding the buffer.
+- `commandBuffer`: The [`MTLCommandBuffer`](https://developer.apple.com/documentation/metal/mtlcommandbuffer) you intend to use for reading. RealityKit waits for the command buffer to complete before discarding the buffer.
 
 ## See Also
 

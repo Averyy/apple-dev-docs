@@ -16,7 +16,7 @@ let CLKLaunchedTimelineEntryDateKey: String
 
 #### Discussion
 
-The value of this key is an [`NSDate`](https://developer.apple.com/documentation/Foundation/NSDate) object. When the user taps your complication, ClockKit includes this key in the dictionary that it passes to the extension delegate’s [`handleUserActivity(_:)`](https://developer.apple.com/documentation/WatchKit/WKExtensionDelegate/handleUserActivity(_:)) method.
+The value of this key is an [`NSDate`](https://developer.apple.com/documentation/foundation/nsdate) object. When the user taps your complication, ClockKit includes this key in the dictionary that it passes to the extension delegate’s [`handleUserActivity(_:)`](https://developer.apple.com/documentation/watchkit/wkextensiondelegate/handleuseractivity(_:)) method.
 
 ## See Also
 

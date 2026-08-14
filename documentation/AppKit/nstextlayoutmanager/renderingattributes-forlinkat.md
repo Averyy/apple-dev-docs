@@ -20,7 +20,7 @@ A  dictionary of rendering attributes.
 
 #### Discussion
 
-As with other rendering attributes, specifying [`NSNull`](https://developer.apple.com/documentation/Foundation/NSNull) removes the attribute from the final attributes the framework uses for rendering. It has priority over the general rendering attributes.
+As with other rendering attributes, specifying [`NSNull`](https://developer.apple.com/documentation/foundation/nsnull) removes the attribute from the final attributes the framework uses for rendering. It has priority over the general rendering attributes.
 
 ## Parameters
 

@@ -22,7 +22,7 @@ func subscriptions(for ids: [CKSubscription.ID]) async throws -> [CKSubscription
 
 #### Return Value
 
-A dictionary that contains the fetched subscriptions. The dictionary uses the identifiers you specify in `ids` as its keys. The value of each key is a [`Result`](https://developer.apple.com/documentation/Swift/Result) that contains either the corresponding fetched subscription, or an error that describes why CloudKit can’t provide that subscription.
+A dictionary that contains the fetched subscriptions. The dictionary uses the identifiers you specify in `ids` as its keys. The value of each key is a [`Result`](https://developer.apple.com/documentation/swift/result) that contains either the corresponding fetched subscription, or an error that describes why CloudKit can’t provide that subscription.
 
 #### Discussion
 

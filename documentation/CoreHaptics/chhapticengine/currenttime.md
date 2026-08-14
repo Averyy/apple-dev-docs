@@ -23,7 +23,7 @@ var currentTime: TimeInterval { get }
 
 This time applies to all haptic and audio events sent to and managed by the Core Haptics engine. Use the current time as a way to determine or track the start times of haptic and audio events, created as [`CHHapticEvent`](chhapticevent.md) objects. It corresponds to the [`relativeTime`](chhapticevent/relativetime.md) and [`duration`](chhapticevent/duration.md) properties of haptic events.
 
-> **Note**:  The Core Haptics engine time doesn’t correlate to time used in media playback classes from other frameworks, such as [`AVAudioPlayer`](https://developer.apple.com/documentation/AVFAudio/AVAudioPlayer).
+> **Note**:  The Core Haptics engine time doesn’t correlate to time used in media playback classes from other frameworks, such as [`AVAudioPlayer`](https://developer.apple.com/documentation/avfaudio/avaudioplayer).
 
 ## See Also
 

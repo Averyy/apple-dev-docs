@@ -12,7 +12,7 @@ A model that picks the wrong tool, passes incorrect arguments, or calls tools ou
 
 #### Define Your Tools
 
-Define the tools the model can call. Each tool conforms to the [`Tool`](https://developer.apple.com/documentation/FoundationModels/Tool) protocol with a name, description, and a [`Generable`](https://developer.apple.com/documentation/FoundationModels/Generable) arguments structure that tells the model which parameters to pass.
+Define the tools the model can call. Each tool conforms to the [`Tool`](https://developer.apple.com/documentation/foundationmodels/tool) protocol with a name, description, and a [`Generable`](https://developer.apple.com/documentation/foundationmodels/generable) arguments structure that tells the model which parameters to pass.
 
 This example defines a home automation tool that takes a string and a numeric argument:
 
@@ -41,7 +41,7 @@ struct SetLights: Tool {
 
 In this example, the `call(arguments:)` method returns a string rather than controlling real hardware. Tool-calling evaluation measures whether the model selects the right tool with the right arguments, not what the tool does when called. Your tools don’t need to perform real actions during evaluation, so simple stubs like this one work well.
 
-The following examples reference additional tools such as `set_thermostat` and `lock_door` that follow the same pattern. For details on building tools with [`Foundation Models`](https://developer.apple.com/documentation/FoundationModels), see [`Expanding generation with tool calling`](https://developer.apple.com/documentation/FoundationModels/expanding-generation-with-tool-calling).
+The following examples reference additional tools such as `set_thermostat` and `lock_door` that follow the same pattern. For details on building tools with [`Foundation Models`](https://developer.apple.com/documentation/foundationmodels), see [`Expanding generation with tool calling`](https://developer.apple.com/documentation/foundationmodels/expanding-generation-with-tool-calling).
 
 #### Match a Single Tool Call
 
@@ -295,7 +295,7 @@ Use `ToolsAllPass` to track whether the model meets your threshold. Use `ToolsPe
 
 The detailed results show both metrics for each sample. In this figure, the request to lock up the house expects three tools but matches only one, so `ToolsAllPass` fails while `ToolsPercentagePass` reports 0.33. The request that calls every expected tool passes both:
 
-![A screenshot of the detailed tool-calling results in the Xcode Test Report. A table lists each prompt with its ToolsAllPass pass or fail mark and its ToolsPercentagePass score. The first prompt, to lock up the house, fails ToolsAllPass and scores 0.33, and the second prompt, to prepare the house for guests, passes ToolsAllPass and scores 1.](https://docs-assets.developer.apple.com/published/e1615e987f32bec5516f4374c45faee9/eval-tool-call-results%402x.png)
+![A screenshot of the detailed tool-calling results in the Xcode Test Report. A table lists each prompt with its ToolsAllPass pass or fail mark and its ToolsPercentagePass score. The first prompt, to lock up the house, fails ToolsAllPass and scores 0.33, and the second prompt, to prepare the house for guests, passes ToolsAllPass and scores 1.](/images/com.apple.evaluations/eval-tool-call-results@2x.png)
 
 Organize tool-call metrics alongside other evaluators using [`group(_:_:)`](metricsaggregator/group(_:_:).md):
 

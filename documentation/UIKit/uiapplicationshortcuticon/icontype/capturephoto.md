@@ -19,7 +19,7 @@ case capturePhoto
 
 #### Discussion
 
-![None](https://docs-assets.developer.apple.com/published/b6b2d703ede802610a75162d13ce70c1/media-2934529%402x.png)
+![None](/images/com.apple.uikit/media-2934529@2x.png)
 
 ## See Also
 

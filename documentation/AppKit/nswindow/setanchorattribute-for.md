@@ -16,7 +16,7 @@ func setAnchorAttribute(_ attr: NSLayoutConstraint.Attribute, for orientation: N
 
 ## Parameters
 
-- `attr`: The layout attribute. [`NSLayoutConstraint.Attribute`](https://developer.apple.com/documentation/UIKit/NSLayoutConstraint/Attribute) specifies the possible values.
+- `attr`: The layout attribute. [`NSLayoutConstraint.Attribute`](https://developer.apple.com/documentation/uikit/nslayoutconstraint/attribute) specifies the possible values.
 - `orientation`: The window drag orientation. [`NSLayoutConstraint.Orientation`](nslayoutconstraint/orientation.md) specifies the possible values.
 
 ## See Also

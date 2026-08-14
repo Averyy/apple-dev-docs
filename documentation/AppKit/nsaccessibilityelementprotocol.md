@@ -35,7 +35,7 @@ This protocol provides the base behavior for more specific, role-based accessibi
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 ### Inherited By
 - [NSAccessibilityButton](nsaccessibilitybutton.md)
 - [NSAccessibilityCheckBox](nsaccessibilitycheckbox.md)

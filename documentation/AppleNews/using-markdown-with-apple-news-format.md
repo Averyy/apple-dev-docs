@@ -289,7 +289,7 @@ Apple's main campus occupies 172 acres at [Apple Park](https://maps.apple.com?sl
 
 Apple’s main campus occupies 172 acres at Apple Park.
 
-![Screenshot of a full-screen map showing the location of Apple Park in Cupertino.](https://docs-assets.developer.apple.com/published/7b5d4d4847a0d404897033151e56bbe8/media-3591443%402x.png)
+![Screenshot of a full-screen map showing the location of Apple Park in Cupertino.](/images/com.apple.applenews/media-3591443@2x.png)
 
 ##### Escaping Markdown
 

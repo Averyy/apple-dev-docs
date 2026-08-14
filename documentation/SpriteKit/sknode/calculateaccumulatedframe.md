@@ -58,7 +58,7 @@ parentNode.addChild(boundingBoxNode)
 
 The figure below shows the result of Listing 1 with `parentNode` rendered in blue, `childNode` rendered in red and the `boundingBoxNode` rendered with a dashed line.
 
-![Displaying the accumulated frame of a shape node](https://docs-assets.developer.apple.com/published/027aac3e4a73961ddb2b9a41f5418b27/media-2793217%402x.png)
+![Displaying the accumulated frame of a shape node](/images/com.apple.spritekit/media-2793217@2x.png)
 
 ## See Also
 

@@ -22,9 +22,9 @@ static var errorDomain: String { get }
   Error codes for identity operations.
 - [Error constants](error-constants.md)
   Error code constants for identity operations.
-- [var errorCode: Int](../Foundation/CustomNSError/errorCode-2opgi.md)
+- [var errorCode: Int](../foundation/customnserror/errorcode-2opgi.md)
   The error code within the given domain.
-- [var errorUserInfo: [String : Any]](../Foundation/CustomNSError/errorUserInfo-1aas5.md)
+- [var errorUserInfo: [String : Any]](../foundation/customnserror/erroruserinfo-1aas5.md)
   The default user-info dictionary.
 
 

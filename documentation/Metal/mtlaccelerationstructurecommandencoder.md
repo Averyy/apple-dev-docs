@@ -88,7 +88,7 @@ For more information about stages and synchronization, see [`MTLStages`](mtlstag
 
 ### Inherits From
 - [MTLCommandEncoder](mtlcommandencoder.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

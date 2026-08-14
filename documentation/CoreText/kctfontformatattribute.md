@@ -22,7 +22,7 @@ let kCTFontFormatAttribute: CFString
 
 #### Discussion
 
-The value associated with this key is an integer represented as a [`CFNumber`](https://developer.apple.com/documentation/CoreFoundation/CFNumber) object containing one of the constants in [`CTFontFormat`](ctfontformat.md).
+The value associated with this key is an integer represented as a [`CFNumber`](https://developer.apple.com/documentation/corefoundation/cfnumber) object containing one of the constants in [`CTFontFormat`](ctfontformat.md).
 
 ## See Also
 

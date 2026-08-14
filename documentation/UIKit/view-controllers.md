@@ -147,7 +147,7 @@ UIKit provides several standard view controllers for navigation and managing spe
 ### Interface restoration
 - [Restoring your app’s state](restoring-your-app-s-state.md)
   Provide continuity for the user by preserving current activities.
-- [Restoring your app’s state with SwiftUI](../SwiftUI/restoring-your-app-s-state-with-swiftui.md)
+- [Restoring your app’s state with SwiftUI](../swiftui/restoring-your-app-s-state-with-swiftui.md)
   Provide app continuity for users by preserving their current activities.
 - [Preserving your app’s UI across launches](preserving-your-app-s-ui-across-launches.md)
   Return your app to its previous state after the system terminates it.

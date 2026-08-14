@@ -25,7 +25,7 @@ class AVPlayerLayer
 
 #### Overview
 
-A common way to use this object in iOS or tvOS is as the backing layer for a [`UIView`](https://developer.apple.com/documentation/UIKit/UIView), as the following example shows:
+A common way to use this object in iOS or tvOS is as the backing layer for a [`UIView`](https://developer.apple.com/documentation/uikit/uiview), as the following example shows:
 
 ```swift
 /// A view that displays the visual contents of a player object.
@@ -44,7 +44,7 @@ class PlayerView: UIView {
 }
 ```
 
-> ❗ **Important**:  The value of a player layer’s inherited [`contents`](https://developer.apple.com/documentation/QuartzCore/CALayer/contents) property is opaque and you can’t change it.
+> ❗ **Important**:  The value of a player layer’s inherited [`contents`](https://developer.apple.com/documentation/quartzcore/calayer/contents) property is opaque and you can’t change it.
 
 ## Topics
 
@@ -80,19 +80,19 @@ class PlayerView: UIView {
 ## Relationships
 
 ### Inherits From
-- [CALayer](../QuartzCore/CALayer.md)
+- [CALayer](../quartzcore/calayer.md)
 ### Conforms To
-- [CAMediaTiming](../QuartzCore/CAMediaTiming.md)
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCoding](../Foundation/NSCoding.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [NSSecureCoding](../Foundation/NSSecureCoding.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [CAMediaTiming](../quartzcore/camediatiming.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCoding](../foundation/nscoding.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

@@ -71,9 +71,9 @@ func pointerInteraction(_ interaction: UIPointerInteraction, willExit region: UI
 
 ##### Distinguish Pointing Device Input Events
 
-If you want to distinguish between pointing device touch events and touch events from other sources, like the user’s fingers or Apple Pencil, you can enable the [`UIApplicationSupportsIndirectInputEvents`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/UIApplicationSupportsIndirectInputEvents) key in the `Info.plist` file. With this key enabled, your app can respond to specific gestures targeted at touches of [`UITouch.TouchType.indirectPointer`](uitouch/touchtype/indirectpointer.md).
+If you want to distinguish between pointing device touch events and touch events from other sources, like the user’s fingers or Apple Pencil, you can enable the [`UIApplicationSupportsIndirectInputEvents`](https://developer.apple.com/documentation/bundleresources/information-property-list/uiapplicationsupportsindirectinputevents) key in the `Info.plist` file. With this key enabled, your app can respond to specific gestures targeted at touches of [`UITouch.TouchType.indirectPointer`](uitouch/touchtype/indirectpointer.md).
 
-For more information, see [`UIApplicationSupportsIndirectInputEvents`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/UIApplicationSupportsIndirectInputEvents).
+For more information, see [`UIApplicationSupportsIndirectInputEvents`](https://developer.apple.com/documentation/bundleresources/information-property-list/uiapplicationsupportsindirectinputevents).
 
 ## Topics
 

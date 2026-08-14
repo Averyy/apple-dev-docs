@@ -7,7 +7,7 @@ This atom identifies the media handler component that is to be used to interpret
 
 #### Overview
 
-See [`Handler reference atom ('hdlr')`](handler_reference_atom.md) for more information.
+See [`Handler reference atom`](handler_reference_atom.md) for more information.
 
 Note that the handler reference atom tells you the kind of media this media atom contains—for example, video or sound. The layout of the media information atom is specific to the media handler that is to interpret the media. [`Media information atoms`](media_information_atoms.md) discusses how data may be stored in a media, using the video media format defined by Apple as an example.
 

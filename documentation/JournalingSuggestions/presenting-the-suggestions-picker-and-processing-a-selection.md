@@ -12,9 +12,9 @@ Start by choosing the text for the button in your app that presents the picker. 
 
 When someone chooses a suggestion, the system makes high-level details about the event available to your app. Define the suggestion picker’s `onCompletion` closure to process the details, and incorporate them into your app’s creative workflow. A journaling app, for example, might display a visual suggestion in the format of a photo with placeholder text below it as the beginning of a new journal entry.
 
-![A figure that features four iPhone device frames in an app workflow progressing from left to right. The first frame depicts a blank view and button that reads New Entry. A callout below reads Custom picker button. To the right, the next frame depicts several photos in a thumbnail view under text that reads Highlights from Photo Memories. A callout below reads Suggestions picker. The next frame to the right features the same photo thumbnails in a seletion list, with a thumbnail that featues a flower selected and a button below the list labeled Add to App 1. A callout below reads User selection. The final frame at the right depicts a detailed version of the same flower below user-defined text that reads Coastal Hike, followed by bars that represent a journal entry. A callout below reads Incorporated suggestion.](https://docs-assets.developer.apple.com/published/5a09b293a4ad55eb3bf8c334a37a9785/presenting-the-suggestions-picker-and-processing-a-selection-1%402x.png)
+![A figure that features four iPhone device frames in an app workflow progressing from left to right. The first frame depicts a blank view and button that reads New Entry. A callout below reads Custom picker button. To the right, the next frame depicts several photos in a thumbnail view under text that reads Highlights from Photo Memories. A callout below reads Suggestions picker. The next frame to the right features the same photo thumbnails in a seletion list, with a thumbnail that featues a flower selected and a button below the list labeled Add to App 1. A callout below reads User selection. The final frame at the right depicts a detailed version of the same flower below user-defined text that reads Coastal Hike, followed by bars that represent a journal entry. A callout below reads Incorporated suggestion.](/images/com.apple.JournalingSuggestions/presenting-the-suggestions-picker-and-processing-a-selection-1@2x.png)
 
-Journaling Suggestions gathers information from the system through built-in apps people use, such as Photos, Health, Fitness, Apple Podcasts, and Music. Suggestions can also come from third party apps that provide data through frameworks such as [`HealthKit`](https://developer.apple.com/documentation/HealthKit), [`CallKit`](https://developer.apple.com/documentation/CallKit), or [`SiriKit`](https://developer.apple.com/documentation/SiriKit).
+Journaling Suggestions gathers information from the system through built-in apps people use, such as Photos, Health, Fitness, Apple Podcasts, and Music. Suggestions can also come from third party apps that provide data through frameworks such as [`HealthKit`](https://developer.apple.com/documentation/healthkit), [`CallKit`](https://developer.apple.com/documentation/callkit), or [`SiriKit`](https://developer.apple.com/documentation/sirikit).
 
 #### Maintain User Privacy
 
@@ -24,15 +24,15 @@ When your app attempts to display the picker for the first time, a sheet appears
 
 **Consent sheet**:
 
-![A screenshot of the Journaling Suggestions consent sheet. Text that introduces the concept of Journaling Suggestions resides above a series of buttons. The first button reads About Journaling Suggestions & Privacy. The second reads Turn On Journaling Suggestions. And the last reads Customize.](https://docs-assets.developer.apple.com/published/0106baa2574c8456ae89331df5109953/presenting-the-suggestions-picker-and-processing-a-selection-2%402x.png)
+![A screenshot of the Journaling Suggestions consent sheet. Text that introduces the concept of Journaling Suggestions resides above a series of buttons. The first button reads About Journaling Suggestions & Privacy. The second reads Turn On Journaling Suggestions. And the last reads Customize.](/images/com.apple.JournalingSuggestions/presenting-the-suggestions-picker-and-processing-a-selection-2@2x.png)
 
 **Privacy banner**:
 
-![A screenshot of the journaling suggestions picker that features a privacy banner. A title in the banner reads Private Access to Suggestions,  there's an X button to the right of the title. Below the title reads Journal only has access to the suggestions you choose to write about. A button below reads Learn More.](https://docs-assets.developer.apple.com/published/939fb6ecd2eaa5125ab15a9669167fbb/presenting-the-suggestions-picker-and-processing-a-selection-3%402x.png)
+![A screenshot of the journaling suggestions picker that features a privacy banner. A title in the banner reads Private Access to Suggestions,  there's an X button to the right of the title. Below the title reads Journal only has access to the suggestions you choose to write about. A button below reads Learn More.](/images/com.apple.JournalingSuggestions/presenting-the-suggestions-picker-and-processing-a-selection-3@2x.png)
 
 **Private Access sheet**:
 
-![A screenshot of the Private Access sheet. A title at top reads Private Access & Suggestions. Related explanatory text follows with a Done button that resides at bottom.](https://docs-assets.developer.apple.com/published/2c442331ca12b2b056ba3731da37a540/presenting-the-suggestions-picker-and-processing-a-selection-4%402x.png)
+![A screenshot of the Private Access sheet. A title at top reads Private Access & Suggestions. Related explanatory text follows with a Done button that resides at bottom.](/images/com.apple.JournalingSuggestions/presenting-the-suggestions-picker-and-processing-a-selection-4@2x.png)
 
 > **Note**: The Journaling Suggestions consent sheet displays once per device, so it doesn’t appear if the person already viewed it, either by launching Journal, or by launching another app that uses Journaling Suggestions.
 
@@ -40,7 +40,7 @@ Suggestion data requires careful handling. To further preserve user privacy, fol
 
 #### Add the Journaling Suggestions Entitlement
 
-To use Journaling Suggestions in your app, the  [`com.apple.developer.journal.allow`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.journal.allow) entitlement is required. The suggestions picker fails to present without it. You can can add this entitlement to your app by enabling the Journaling Suggestions capability in Xcode; see [`Adding capabilities to your app`](https://developer.apple.com/documentation/Xcode/adding-capabilities-to-your-app).
+To use Journaling Suggestions in your app, the  [`com.apple.developer.journal.allow`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.journal.allow) entitlement is required. The suggestions picker fails to present without it. You can can add this entitlement to your app by enabling the Journaling Suggestions capability in Xcode; see [`Adding capabilities to your app`](https://developer.apple.com/documentation/xcode/adding-capabilities-to-your-app).
 
 #### Name the Button That Opens the Suggestions Picker
 
@@ -124,9 +124,9 @@ When your app parses a selected suggestion’s details, it organizes that inform
 
 ## See Also
 
-- [Journaling Suggestions updates](../Updates/JournalingSuggestions.md)
+- [Journaling Suggestions updates](../updates/journalingsuggestions.md)
   Learn about important changes in Journaling Suggestions.
-- [com.apple.developer.journal.allow](../BundleResources/Entitlements/com.apple.developer.journal.allow.md)
+- [com.apple.developer.journal.allow](../bundleresources/entitlements/com.apple.developer.journal.allow.md)
   An entitlement that enables an app to present the journaling suggestions picker.
 
 

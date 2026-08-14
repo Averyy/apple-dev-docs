@@ -32,7 +32,7 @@ If your collection view uses a custom implementation of `UICollectionViewDataSou
 
 ## Parameters
 
-- `indexPaths`: An array of [`NSIndexPath`](https://developer.apple.com/documentation/Foundation/NSIndexPath) objects identifying the items you want to update.
+- `indexPaths`: An array of [`NSIndexPath`](https://developer.apple.com/documentation/foundation/nsindexpath) objects identifying the items you want to update.
 
 ## See Also
 

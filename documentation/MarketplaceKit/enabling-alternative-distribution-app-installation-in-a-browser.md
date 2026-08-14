@@ -10,11 +10,11 @@ To enable the installation of an alternative distribution app from a webpage, yo
 
 [`MarketplaceKit`](MarketplaceKit.md) requires a one-to-one mapping between an alternative distribution app and the domain of the website that distributes it. When a page visitor taps a button to install the app, your browser app passes the origin of the site’s main frame to [`MarketplaceKit`](MarketplaceKit.md), which confirms that the owner of the domain also owns the app.
 
-> **Note**: The system requires that your browser app have a specific entitlement to call the [`MarketplaceKit`](MarketplaceKit.md) installation method. For more information and to request the entitlement, see [`com.apple.developer.browser.app-installation`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.browser.app-installation).
+> **Note**: The system requires that your browser app have a specific entitlement to call the [`MarketplaceKit`](MarketplaceKit.md) installation method. For more information and to request the entitlement, see [`com.apple.developer.browser.app-installation`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.browser.app-installation).
 
 #### Respond to App Installation Requests Using Browserenginekit
 
-Browsers that render using [`BrowserEngineKit`](https://developer.apple.com/documentation/BrowserEngineKit) hand off app installation requests to [`MarketplaceKit`](MarketplaceKit.md). Your browser listens for invocations to a URL with the scheme `MarketplaceKit/MarketplaceKitURIScheme`:
+Browsers that render using [`BrowserEngineKit`](https://developer.apple.com/documentation/browserenginekit) hand off app installation requests to [`MarketplaceKit`](MarketplaceKit.md). Your browser listens for invocations to a URL with the scheme `MarketplaceKit/MarketplaceKitURIScheme`:
 
 ```None
 marketplace-kit://install
@@ -48,15 +48,15 @@ To forward the navigation request to [`MarketplaceKit`](MarketplaceKit.md), call
 
 #### Respond to App Installation Requests Using Webkit
 
-If your browser app uses [`WebKit`](https://developer.apple.com/documentation/WebKit), modify your app’s [`webView(_:decidePolicyFor:decisionHandler:)`](https://developer.apple.com/documentation/WebKit/WKNavigationDelegate/webView(_:decidePolicyFor:decisionHandler:)-2ni62) navigation delegate method. When the system calls the delegate method with a URL matching the  `MarketplaceKitURIScheme` scheme, call the `decisionHandler` with a value of `WKNavigationActionPolicyAllow`.
+If your browser app uses [`WebKit`](https://developer.apple.com/documentation/webkit), modify your app’s [`webView(_:decidePolicyFor:decisionHandler:)`](https://developer.apple.com/documentation/webkit/wknavigationdelegate/webview(_:decidepolicyfor:decisionhandler:)-2ni62) navigation delegate method. When the system calls the delegate method with a URL matching the  `MarketplaceKitURIScheme` scheme, call the `decisionHandler` with a value of `WKNavigationActionPolicyAllow`.
 
 Don’t call the [`requestAppInstallationFromBrowser(for:referrer:)`](applibrary/requestappinstallationfrombrowser(for:referrer:).md) method directly. WebKit handles the interaction with [`MarketplaceKit`](MarketplaceKit.md) after you call the navigation delegate’s `decisionHandler` with a value of `WKNavigationActionPolicyAllow`.
 
-Safari is an example of a browser app that uses [`WebKit`](https://developer.apple.com/documentation/WebKit). When a person taps on an `MarketplaceKitURIScheme` URL, it calls Safari’s [`webView(_:decidePolicyFor:decisionHandler:)`](https://developer.apple.com/documentation/WebKit/WKNavigationDelegate/webView(_:decidePolicyFor:decisionHandler:)-2ni62) navigation delegate method with a URL matching the `MarketplaceKitURIScheme`. Safari responds by calling `decisionHandler` with `WKNavigationActionPolicyAllow`, which then causes WebKit to pass the URL to MarketplaceKit and display an install sheet.
+Safari is an example of a browser app that uses [`WebKit`](https://developer.apple.com/documentation/webkit). When a person taps on an `MarketplaceKitURIScheme` URL, it calls Safari’s [`webView(_:decidePolicyFor:decisionHandler:)`](https://developer.apple.com/documentation/webkit/wknavigationdelegate/webview(_:decidepolicyfor:decisionhandler:)-2ni62) navigation delegate method with a URL matching the `MarketplaceKitURIScheme`. Safari responds by calling `decisionHandler` with `WKNavigationActionPolicyAllow`, which then causes WebKit to pass the URL to MarketplaceKit and display an install sheet.
 
 #### Test Web Distribution During Development
 
-In iOS 18.2 and later, development builds of browser apps with the default browser entitlement ([`com.apple.developer.web-browser`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.web-browser)) can test the installation of web-distributed marketplace apps. A development build signed with a development or Ad Hoc provisioning profile can run on Simulator and all physical devices that the target region supports. For region-based caveats, see [`Participating in alternative distribution for specific regions`](participating-in-alternative-distribution-for-specific-regions.md).
+In iOS 18.2 and later, development builds of browser apps with the default browser entitlement ([`com.apple.developer.web-browser`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.web-browser)) can test the installation of web-distributed marketplace apps. A development build signed with a development or Ad Hoc provisioning profile can run on Simulator and all physical devices that the target region supports. For region-based caveats, see [`Participating in alternative distribution for specific regions`](participating-in-alternative-distribution-for-specific-regions.md).
 
 
 ---

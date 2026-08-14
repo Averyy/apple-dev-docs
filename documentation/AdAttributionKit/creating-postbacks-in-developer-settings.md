@@ -10,19 +10,19 @@ Use the AdAttributionKit Development Postbacks tool in the developer settings to
 
 This tool also allows you to configure the amount of data that returns in the postback to simulate different Crowd Anonymity tiers so you can validate server logic for receiving those postbacks. For more information about Crowd Anonymity tiers, see [`Identifying the parameters in a postback`](identifying-the-parameters-in-a-postback.md).
 
-You can access the AdAttributionKit tools by enabling Developer Mode on your test device. For more information, see [`Enabling Developer Mode on a device`](https://developer.apple.com/documentation/Xcode/enabling-developer-mode-on-a-device).
+You can access the AdAttributionKit tools by enabling Developer Mode on your test device. For more information, see [`Enabling Developer Mode on a device`](https://developer.apple.com/documentation/xcode/enabling-developer-mode-on-a-device).
 
 > ❗ **Important**: Enabling Developer Mode reduces the privacy protections the system provides. Use this mode only during development or testing. This setting automatically turns off after two weeks.
 
 After enabling Developer Mode, access the developer settings on your test device by choosing Settings > Developer. Then scroll down to the Ad Attribution Testing section and tap Development Postbacks, as the screenshot below shows:
 
-![An image of the iOS Developer Mode settings that shows a number of test settings, including the switch that enables development testing for AdAttributionKit.](https://docs-assets.developer.apple.com/published/eb124a690f0cb16a89a1e285acb57f65/ad-attribution-testing%402x.png)
+![An image of the iOS Developer Mode settings that shows a number of test settings, including the switch that enables development testing for AdAttributionKit.](/images/com.apple.AdAttributionKit/ad-attribution-testing@2x.png)
 
 #### Create a Development Postback
 
 To create development postbacks for your app, type in your app’s bundle identifier and tap the Configure Development Postbacks button.
 
-![An image of the AdAttributionKit Developer Mode that shows the development postback setup form where someone can enter the bundle ID for their app and further configure, transmit, or clear development postbacks.](https://docs-assets.developer.apple.com/published/2bef515baed7473cb9948234352ecafa/development-postbacks%402x.png)
+![An image of the AdAttributionKit Developer Mode that shows the development postback setup form where someone can enter the bundle ID for their app and further configure, transmit, or clear development postbacks.](/images/com.apple.AdAttributionKit/development-postbacks@2x.png)
 
 > **Note**: An app with the specified bundle identifier needs to exist on your device. The system doesn’t allow you to create development postbacks for an app that isn’t installed.
 
@@ -30,7 +30,7 @@ To create development postbacks for your app, type in your app’s bundle identi
 
 Provide the URL of the server to receive the development postbacks. AdAttributionKit sends the postback to this destination when the postback is eligible for transmission.
 
-![An image of the AdAttributionKit postback destination form that allows someone to enter the URL to use to have the framework send development postback information to the developer's server.](https://docs-assets.developer.apple.com/published/c2ce1f1b0d9a6da8bc71a58b6cded827/postback-destination%402x.png)
+![An image of the AdAttributionKit postback destination form that allows someone to enter the URL to use to have the framework send development postback information to the developer's server.](/images/com.apple.AdAttributionKit/postback-destination@2x.png)
 
 You can also tap Use Developer Postback URL to generate the full postback copy URL that the app’s information property list specifies. This is the same URL that AdAttributionKit generates when creating developer copies of postbacks in full end-to-end flows. For more information on receiving developer postback copies, see [`Configuring an advertised app`](configuring-an-advertised-app.md).
 
@@ -40,7 +40,7 @@ You can also tap Use Developer Postback URL to generate the full postback copy U
 
 Configure each property of the postback in this section. You can create variations of all properties in the postback, including the view or click interaction type, conversion types, and one or three conversion windows.
 
-![An image of the AdAttributionKit postback properties form that allows someone to set values that the framework sends in a development postback.](https://docs-assets.developer.apple.com/published/44703067d263db4201cd39afcd48add3/postback-properties%402x.png)
+![An image of the AdAttributionKit postback properties form that allows someone to set values that the framework sends in a development postback.](/images/com.apple.AdAttributionKit/postback-properties@2x.png)
 
 ##### Add a Conversion Tag
 
@@ -50,7 +50,7 @@ Fill in a conversion tag if you’re testing the overlapping conversion windows 
 
 AdAttributionKit uses Crowd Anonymity to control the amount of data the framework returns in postbacks in production flows. For each postback, adjust the amount of data that AdAttributionKit includes in the postback.
 
-![An image of the AdAttributionKit postback destination form that allows someone to enter the URL to use for the framework to send development postback information to the developer's server.](https://docs-assets.developer.apple.com/published/4f5311c8ed111beb883e3315c8ac3bed/crowd-anonymity-tiers%402x.png)
+![An image of the AdAttributionKit postback destination form that allows someone to enter the URL to use for the framework to send development postback information to the developer's server.](/images/com.apple.AdAttributionKit/crowd-anonymity-tiers@2x.png)
 
 You can use this to test that your server logic is processing different postback data granularities correctly. For more information about Crowd Anonymity, see [`Receiving postbacks in multiple conversion windows`](receiving-postbacks-in-multiple-conversion-windows.md).
 

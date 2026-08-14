@@ -31,7 +31,7 @@ A topic-specific key can have at most one related key in the same environment. W
 
 You need an APNs authentication token signing key to generate the tokens that your server uses. You request this key from your developer account on [`developer.apple.com`](https://developer.apple.comhttps://developer.apple.com/account/resources/keys/list), as shown in the following image:
 
-![Creating an authentication token signing key that supports APNs in your developer account.](https://docs-assets.developer.apple.com/published/0f5993178cc36a886c29a80f8178ef21/media-4286508%402x.png)
+![Creating an authentication token signing key that supports APNs in your developer account.](/images/com.apple.usernotifications/media-4286508@2x.png)
 
 When you request a key, Apple gives you:
 

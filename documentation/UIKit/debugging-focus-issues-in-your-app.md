@@ -14,11 +14,11 @@ See how the focus engine determines which view is currently in focus by turning 
 
 In your Xcode project, select Edit Scheme and add `-UIFocusLoggingEnabled YES` to the Arguments Passed On Launch section.
 
-![Screenshot that shows adding the UIFocusLoggingEnabled argument in Xcode.](https://docs-assets.developer.apple.com/published/c04b32a94b4e27d5867f5e688ab7b741/debugging-focus-issues-in-your-app-1%402x.png)
+![Screenshot that shows adding the UIFocusLoggingEnabled argument in Xcode.](/images/com.apple.uikit/debugging-focus-issues-in-your-app-1@2x.png)
 
 On launch, the debugger logs all focus events and displays the events in the Xcode console and the Console app. The debugger updates the log as focus changes in your app.
 
-![Screenshot of focus debugging logs.](https://docs-assets.developer.apple.com/published/46aad53b865fe480fd66a3dac088ff77/debugging-focus-issues-in-your-app-2%402x.png)
+![Screenshot of focus debugging logs.](/images/com.apple.uikit/debugging-focus-issues-in-your-app-2@2x.png)
 
 ##### Find Focus Issues Using Uifocusdebugger
 

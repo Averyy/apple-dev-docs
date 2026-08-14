@@ -15,15 +15,15 @@ Crop and scale photos using the Vision framework and classify them with a Core M
 
 The app in this sample identifies the most prominent object in an image by using MobileNet, an open source image classifier model that recognizes around 1,000 different categories.
 
-![Screenshots of the app identifying a monarch butterfly, broccoli, and a daisy in a field.](https://docs-assets.developer.apple.com/published/a6c71d92d5585738a6b20c2a3d6c99c1/Screenshots%402x~dark.png)
+![Screenshots of the app identifying a monarch butterfly, broccoli, and a daisy in a field.](/images/com.apple.coreml/Screenshots@2x~dark.png)
 
-Each time a user selects a photo from the library or takes a photo with a camera, the app passes it to a [`Vision`](https://developer.apple.com/documentation/Vision) image classification request. Vision resizes and crops the photo to meet the MobileNet model’s constraints for its image input, and then passes the photo to the model using the [`Core ML`](CoreML.md) framework behind the scenes. Once the model generates a prediction, Vision relays it back to the app, which presents the results to the user.
+Each time a user selects a photo from the library or takes a photo with a camera, the app passes it to a [`Vision`](https://developer.apple.com/documentation/vision) image classification request. Vision resizes and crops the photo to meet the MobileNet model’s constraints for its image input, and then passes the photo to the model using the [`Core ML`](CoreML.md) framework behind the scenes. Once the model generates a prediction, Vision relays it back to the app, which presents the results to the user.
 
 The sample uses MobileNet as an example of how to use a third-party Core ML model. You can download open source models — including a newer version of MobileNet — on the [`Core ML model gallery`](https://developer.apple.comhttps://developer.apple.com/machine-learning/models).
 
-Before you integrate a third-party model to solve a problem — which may increase the size of your app — consider using an API in the SDK. For example, the [`Vision`](https://developer.apple.com/documentation/Vision) framework’s [`VNClassifyImageRequest`](https://developer.apple.com/documentation/Vision/VNClassifyImageRequest) class offers the same functionality as MobileNet, but with potentially better performance and without increasing the size of your app (see [`Classifying images for categorization and search`](https://developer.apple.com/documentation/Vision/classifying-images-for-categorization-and-search)).
+Before you integrate a third-party model to solve a problem — which may increase the size of your app — consider using an API in the SDK. For example, the [`Vision`](https://developer.apple.com/documentation/vision) framework’s [`VNClassifyImageRequest`](https://developer.apple.com/documentation/vision/vnclassifyimagerequest) class offers the same functionality as MobileNet, but with potentially better performance and without increasing the size of your app (see [`Classifying images for categorization and search`](https://developer.apple.com/documentation/vision/classifying-images-for-categorization-and-search)).
 
-> **Note**: You can make a custom image classifier that identifies your choice of object types with [`Create ML`](https://developer.apple.com/documentation/CreateML). See [`Creating an Image Classifier Model`](https://developer.apple.com/documentation/CreateML/creating-an-image-classifier-model) to learn how to create a custom image classifier that can replace the MobileNet model in this sample.
+> **Note**: You can make a custom image classifier that identifies your choice of object types with [`Create ML`](https://developer.apple.com/documentation/createml). See [`Creating an Image Classifier Model`](https://developer.apple.com/documentation/createml/creating-an-image-classifier-model) to learn how to create a custom image classifier that can replace the MobileNet model in this sample.
 
 ##### Configure the Sample Code Project
 
@@ -43,39 +43,39 @@ At launch, the `ImagePredictor` class creates an image classifier singleton by c
 The method creates a Core ML model instance for Vision by:
 
 1. Creating an instance of the model’s wrapper class that Xcode auto-generates at compile time
-2. Retrieving the wrapper class instance’s underlying [`MLModel`](MLModel.md) property
-3. Passing the model instance to a [`VNCoreMLModel`](https://developer.apple.com/documentation/Vision/VNCoreMLModel) initializer
+2. Retrieving the wrapper class instance’s underlying [`MLModel`](mlmodel.md) property
+3. Passing the model instance to a [`VNCoreMLModel`](https://developer.apple.com/documentation/vision/vncoremlmodel) initializer
 
 The Image Predictor class minimizes runtime by only creating a single instance it shares across the app.
 
-> **Note**: Share a single [`VNCoreMLModel`](https://developer.apple.com/documentation/Vision/VNCoreMLModel) instance for each Core ML model in your project.
+> **Note**: Share a single [`VNCoreMLModel`](https://developer.apple.com/documentation/vision/vncoremlmodel) instance for each Core ML model in your project.
 
 ##### Create an Image Classification Request
 
-The Image Predictor class creates an image classification request — a [`VNCoreMLRequest`](https://developer.apple.com/documentation/Vision/VNCoreMLRequest) instance — by passing the shared image classifier model instance and a request handler to its initializer.
+The Image Predictor class creates an image classification request — a [`VNCoreMLRequest`](https://developer.apple.com/documentation/vision/vncoremlrequest) instance — by passing the shared image classifier model instance and a request handler to its initializer.
 
-The method tells Vision how to adjust images that don’t meet the model’s image input constraints by setting the request’s [`imageCropAndScaleOption`](https://developer.apple.com/documentation/Vision/VNCoreMLRequest/imageCropAndScaleOption) property to [`VNImageCropAndScaleOption.centerCrop`](https://developer.apple.com/documentation/Vision/VNImageCropAndScaleOption/centerCrop).
+The method tells Vision how to adjust images that don’t meet the model’s image input constraints by setting the request’s [`imageCropAndScaleOption`](https://developer.apple.com/documentation/vision/vncoremlrequest/imagecropandscaleoption) property to [`VNImageCropAndScaleOption.centerCrop`](https://developer.apple.com/documentation/vision/vnimagecropandscaleoption/centercrop).
 
 ##### Create a Request Handler
 
-The Image Predictor’s `makePredictions(for photo, ...)` method creates a [`VNImageRequestHandler`](https://developer.apple.com/documentation/Vision/VNImageRequestHandler) for each image by passing the image and its orientation to the initializer.
+The Image Predictor’s `makePredictions(for photo, ...)` method creates a [`VNImageRequestHandler`](https://developer.apple.com/documentation/vision/vnimagerequesthandler) for each image by passing the image and its orientation to the initializer.
 
-Vision rotates the image based on `orientation` — a [`CGImagePropertyOrientation`](https://developer.apple.com/documentation/ImageIO/CGImagePropertyOrientation) instance — before sending the image to the model.
+Vision rotates the image based on `orientation` — a [`CGImagePropertyOrientation`](https://developer.apple.com/documentation/imageio/cgimagepropertyorientation) instance — before sending the image to the model.
 
 If the image you want to classify has a URL, create a Vision image request handler with one of these initializers:
 
-- [`init(url:options:)`](https://developer.apple.com/documentation/Vision/VNImageRequestHandler/init(url:options:)-4k623)
-- [`init(url:orientation:options:)`](https://developer.apple.com/documentation/Vision/VNImageRequestHandler/init(url:orientation:options:)-70nta)
+- [`init(url:options:)`](https://developer.apple.com/documentation/vision/vnimagerequesthandler/init(url:options:)-4k623)
+- [`init(url:orientation:options:)`](https://developer.apple.com/documentation/vision/vnimagerequesthandler/init(url:orientation:options:)-70nta)
 
 ##### Start the Request
 
-The [`makePredictions(for photo, ...)`][makePredictions] method starts the request by adding it into a [`VNRequest`](https://developer.apple.com/documentation/Vision/VNRequest) array and passes it to the handler’s [`perform(_:)`](https://developer.apple.com/documentation/Vision/VNImageRequestHandler/perform(_:)) method.
+The [`makePredictions(for photo, ...)`][makePredictions] method starts the request by adding it into a [`VNRequest`](https://developer.apple.com/documentation/vision/vnrequest) array and passes it to the handler’s [`perform(_:)`](https://developer.apple.com/documentation/vision/vnimagerequesthandler/perform(_:)) method.
 
-> **Note**: You can perform multiple Vision requests on the same image by adding each request to the array you pass to the [`perform(_:)`](https://developer.apple.com/documentation/Vision/VNImageRequestHandler/perform(_:)) method’s `requests` parameter.
+> **Note**: You can perform multiple Vision requests on the same image by adding each request to the array you pass to the [`perform(_:)`](https://developer.apple.com/documentation/vision/vnimagerequesthandler/perform(_:)) method’s `requests` parameter.
 
 ##### Retrieve the Requests Results
 
-When the image classification request is finished, Vision notifies the Image Predictor by calling the request’s completion handler, `visionRequestHandler(_:error:)`. The method retrieves the request’s [`results`](https://developer.apple.com/documentation/Vision/VNRequest/results) by:
+When the image classification request is finished, Vision notifies the Image Predictor by calling the request’s completion handler, `visionRequestHandler(_:error:)`. The method retrieves the request’s [`results`](https://developer.apple.com/documentation/vision/vnrequest/results) by:
 
 1. Checking the `error` parameter
 2. Casting `results` to a `VNClassificationObservation` array

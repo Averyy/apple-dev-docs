@@ -16,7 +16,7 @@ let kSecAttrPRF: CFString
 
 #### Discussion
 
-The corresponding value is of type [`CFString`](https://developer.apple.com/documentation/CoreFoundation/CFString) and indicates the pseudorandom function associated with this cryptographic key. See [`Pseudorandom Function Values`](item-attribute-keys-and-values#Pseudorandom-Function-Values.md) for a list of valid values.
+The corresponding value is of type [`CFString`](https://developer.apple.com/documentation/corefoundation/cfstring) and indicates the pseudorandom function associated with this cryptographic key. See [`Pseudorandom Function Values`](item-attribute-keys-and-values#Pseudorandom-Function-Values.md) for a list of valid values.
 
 
 ---

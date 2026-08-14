@@ -21,7 +21,7 @@ static let matrix: UIFontDescriptor.AttributeName
 
 #### Discussion
 
-The value is a [`CGAffineTransform`](https://developer.apple.com/documentation/CoreFoundation/CGAffineTransform) instance that specifies the font’s transformation matrix. The default value is the identity matrix.
+The value is a [`CGAffineTransform`](https://developer.apple.com/documentation/corefoundation/cgaffinetransform) instance that specifies the font’s transformation matrix. The default value is the identity matrix.
 
 Because the system applies the matrix to the text matrix at rendering time, translation isn’t available. The rendering engine determines the translation independently.
 

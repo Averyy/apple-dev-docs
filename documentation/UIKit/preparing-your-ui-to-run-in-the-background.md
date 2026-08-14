@@ -54,10 +54,10 @@ During a background transition, perform as many of the following tasks as makes 
 - Dismiss alerts and other temporary interfaces.
 - Close connections to any shared system databases.
 - Unregister from Bonjour services and close any listening sockets associated with them.
-- Ensure that all Metal command buffers have been scheduled. For more information, see [`Preparing your Metal app to run in the background`](https://developer.apple.com/documentation/Metal/preparing-your-metal-app-to-run-in-the-background).
+- Ensure that all Metal command buffers have been scheduled. For more information, see [`Preparing your Metal app to run in the background`](https://developer.apple.com/documentation/metal/preparing-your-metal-app-to-run-in-the-background).
 - Ensure that all OpenGL commands you previously submitted have finished.
 
-You don’t need to discard named images that you loaded from your app’s asset catalog. Similarly, you don’t need to release objects that adopt the [`NSDiscardableContent`](https://developer.apple.com/documentation/Foundation/NSDiscardableContent) protocol or that you manage using an [`NSCache`](https://developer.apple.com/documentation/Foundation/NSCache) object. The system automatically handles the cleanup of those objects.
+You don’t need to discard named images that you loaded from your app’s asset catalog. Similarly, you don’t need to release objects that adopt the [`NSDiscardableContent`](https://developer.apple.com/documentation/foundation/nsdiscardablecontent) protocol or that you manage using an [`NSCache`](https://developer.apple.com/documentation/foundation/nscache) object. The system automatically handles the cleanup of those objects.
 
 Make sure your app isn’t holding any shared system resources when it transitions to the background. If it continues accessing resources like the camera or a shared system database after transitioning to the background, the system terminates your app to free up that resource. If you use a system framework to access a resource, check the framework’s documentation for guidelines about what to do.
 
@@ -81,7 +81,7 @@ Apps don’t normally receive any extra execution time after they enter the back
 - Regular updates from a server.
 - Support for Apple Push Notification service (APNs).
 
-Enable the Background Modes capability in Xcode if your app supports background features. Each background task has different requirements; see the appropriate framework for details about how to implement the feature. For information about how to schedule opportunistic background tasks, see [`Background Tasks`](https://developer.apple.com/documentation/BackgroundTasks).
+Enable the Background Modes capability in Xcode if your app supports background features. Each background task has different requirements; see the appropriate framework for details about how to implement the feature. For information about how to schedule opportunistic background tasks, see [`Background Tasks`](https://developer.apple.com/documentation/backgroundtasks).
 
 ## Topics
 

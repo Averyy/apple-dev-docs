@@ -7,7 +7,6 @@ Retrieves the current notification forwarding status for an accessory.
 
 **Availability**:
 - iOS 26.5+
-- iPadOS 26.5+
 
 ## Declaration
 

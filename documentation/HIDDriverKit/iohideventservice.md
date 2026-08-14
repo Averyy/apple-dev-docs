@@ -57,13 +57,13 @@ An `IOHIDEventService` object receives data from a device and generates events f
 ## Relationships
 
 ### Inherits From
-- [IOService](../DriverKit/IOService.md)
+- [IOService](../driverkit/ioservice.md)
 ### Inherited By
 - [IOUserHIDEventService](iouserhideventservice.md)
 
 ## See Also
 
-- [com.apple.developer.driverkit.family.hid.eventservice](../BundleResources/Entitlements/com.apple.developer.driverkit.family.hid.eventservice.md)
+- [com.apple.developer.driverkit.family.hid.eventservice](../bundleresources/entitlements/com.apple.developer.driverkit.family.hid.eventservice.md)
   A Boolean value that indicates whether the driver provides a HID-related event service to the system.
 - [IOUserHIDEventDriver](iouserhideventdriver.md)
   A complete driver object that dispatches keyboard, digitizer, scrolling, and pointer events originating from a HID device.

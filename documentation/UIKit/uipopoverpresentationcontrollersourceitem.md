@@ -25,7 +25,7 @@ protocol UIPopoverPresentationControllerSourceItem : NSObjectProtocol
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 ### Conforming Types
 - [NSUIViewToolbarItem](nsuiviewtoolbaritem.md)
 - [UIActionSheet](uiactionsheet.md)

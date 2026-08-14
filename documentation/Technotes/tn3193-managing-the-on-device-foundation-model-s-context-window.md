@@ -6,21 +6,21 @@ Learn how to budget for the context window limit of Apple’s on-device foundati
 
 #### Overview
 
-The [`Foundation Models`](https://developer.apple.com/documentation/FoundationModels) provides access to Apple’s on-device foundation model at the core of Apple Intelligence. With the framework, you can build AI-powered features that enhance your app.
+The [`Foundation Models`](https://developer.apple.com/documentation/foundationmodels) provides access to Apple’s on-device foundation model at the core of Apple Intelligence. With the framework, you can build AI-powered features that enhance your app.
 
 Like other Large Language Models (LLMs), Apple’s on-device foundation model processes text in units called tokens. A token corresponds to roughly three to four characters in Latin alphabet languages like English, as elaborated in the WWDC25 session 286: [`Meet the Foundation Models framework`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2025/286/?time=468). For multi-byte languages like Chinese, Japanese, and Korean, it is roughly one character per token.
 
 The maximum number of tokens a LLM can process at once is called the context window. Context window size is determined by model architecture and hardware limits. An on-device LLM running on your iPhone needs a relatively small context window to run efficiently.
 
-Apple’s on-device foundation model has a context window of 4096 tokens per [`LanguageModelSession`](https://developer.apple.com/documentation/FoundationModels/LanguageModelSession). To adapt to this limit, consider techniques to effectively budget for the context window, achieve your use-cases using fewer tokens, and handle the error when you reach the limit.
+Apple’s on-device foundation model has a context window of 4096 tokens per [`LanguageModelSession`](https://developer.apple.com/documentation/foundationmodels/languagemodelsession). To adapt to this limit, consider techniques to effectively budget for the context window, achieve your use-cases using fewer tokens, and handle the error when you reach the limit.
 
 #### Understand How Your App Consumes Tokens
 
-When you interact with a LLM, the model converts your input to a token sequence, and uses it to generate a probability distribution that reflects which token in the model’s vocabulary could be the next. Based on the decoding strategy, which is derived from the [`GenerationOptions`](https://developer.apple.com/documentation/FoundationModels/GenerationOptions) when you use the Foundation Models framework, the model picks the next token, appends it to the sequence, and uses the updated sequence as the input for the next generation cycle. This process repeats until it reaches a stop condition. The final token sequence, after being converted to human-readable content, is the response you get.
+When you interact with a LLM, the model converts your input to a token sequence, and uses it to generate a probability distribution that reflects which token in the model’s vocabulary could be the next. Based on the decoding strategy, which is derived from the [`GenerationOptions`](https://developer.apple.com/documentation/foundationmodels/generationoptions) when you use the Foundation Models framework, the model picks the next token, appends it to the sequence, and uses the updated sequence as the input for the next generation cycle. This process repeats until it reaches a stop condition. The final token sequence, after being converted to human-readable content, is the response you get.
 
-With the Foundation Models framework, you interact with the model using [`Instructions`](https://developer.apple.com/documentation/FoundationModels/Instructions), [`Prompt`](https://developer.apple.com/documentation/FoundationModels/Prompt), [`Tool`](https://developer.apple.com/documentation/FoundationModels/Tool), and [`Generable`](https://developer.apple.com/documentation/FoundationModels/Generable) types, which are passed to the model as part of the input. All the input and response in the generation process contribute tokens to the context window of the current language model session, including instructions, all prompts, the information of tools (schemas, input, and output), `Generable` schemas, and all the model’s responses.
+With the Foundation Models framework, you interact with the model using [`Instructions`](https://developer.apple.com/documentation/foundationmodels/instructions), [`Prompt`](https://developer.apple.com/documentation/foundationmodels/prompt), [`Tool`](https://developer.apple.com/documentation/foundationmodels/tool), and [`Generable`](https://developer.apple.com/documentation/foundationmodels/generable) types, which are passed to the model as part of the input. All the input and response in the generation process contribute tokens to the context window of the current language model session, including instructions, all prompts, the information of tools (schemas, input, and output), `Generable` schemas, and all the model’s responses.
 
-To understand how your input consumes tokens, use [`tokenCount(for:)`](https://developer.apple.com/documentation/FoundationModels/SystemLanguageModel/tokenCount(for:)) to retrieve the token count for your instructions, prompts, tools, [`schema`](https://developer.apple.comhttps://developer.apple.com/documentation/foundationmodels/generationschema), and [`transcript entries`](https://developer.apple.comhttps://developer.apple.com/documentation/foundationmodels/transcript/entry).
+To understand how your input consumes tokens, use [`tokenCount(for:)`](https://developer.apple.com/documentation/foundationmodels/systemlanguagemodel/tokencount(for:)) to retrieve the token count for your instructions, prompts, tools, [`schema`](https://developer.apple.comhttps://developer.apple.com/documentation/foundationmodels/generationschema), and [`transcript entries`](https://developer.apple.comhttps://developer.apple.com/documentation/foundationmodels/transcript/entry).
 
 The Foundation Models instrument allows you to profile your app to observe token consumption while your app is running. To use the instrument:
 
@@ -42,9 +42,9 @@ As an example, to generate a summary for a long article on device, consider sepa
 One way to budget tokens is to ask the model to produce fewer response tokens. If you notice the model producing long, detailed responses, try:
 
 - Include your target response length in your prompt, for example, “In 3 sentences….” or “List 3 reasons that…”.
-- Add a [`Guide(description:)`](https://developer.apple.com/documentation/FoundationModels/Guide(description:)) to any `Generable` arrays (for example, tag lists or name lists) you are generating and specify the max count using [`maximumCount(_:)`](https://developer.apple.com/documentation/FoundationModels/GenerationGuide/maximumCount(_:)).
+- Add a [`Guide(description:)`](https://developer.apple.com/documentation/foundationmodels/guide(description:)) to any `Generable` arrays (for example, tag lists or name lists) you are generating and specify the max count using [`maximumCount(_:)`](https://developer.apple.com/documentation/foundationmodels/generationguide/maximumcount(_:)).
 
-Use [`maximumResponseTokens`](https://developer.apple.com/documentation/FoundationModels/GenerationOptions/maximumResponseTokens) only when you need to protect against unexpectedly verbose responses and runaway generations, since enforcing a strict token response limit can lead the model to produce malformed results or grammatically incorrect partial responses like “A cat is a small.”
+Use [`maximumResponseTokens`](https://developer.apple.com/documentation/foundationmodels/generationoptions/maximumresponsetokens) only when you need to protect against unexpectedly verbose responses and runaway generations, since enforcing a strict token response limit can lead the model to produce malformed results or grammatically incorrect partial responses like “A cat is a small.”
 
 #### Reduce the Prompt Size
 
@@ -84,7 +84,7 @@ There are many methods for RAG, but they typically follow these general steps:
 3. Gather a user query, vectorize it, and use the result to retrieve the most relevant chunks from the database.
 4. Feed the query and the most relevant chunks to the model and collect the response.
 
-For the first step, consider using a chunking model and an embedding model. The former splits large pieces of text to smaller ones; the latter takes text as input, vectorizes it, and outputs a list of numbers that represents the text. After determining the models that work for your use case, integrate them into your app using APIs such as [`Core ML`](https://developer.apple.com/documentation/CoreML). The [`Natural Language`](https://developer.apple.com/documentation/NaturalLanguage) framework provides APIs for tokenizing and embedding text — if that meets your needs. See [`Tokenizing natural language text`](https://developer.apple.com/documentation/NaturalLanguage/tokenizing-natural-language-text) and [`Finding similarities between pieces of text`](https://developer.apple.com/documentation/NaturalLanguage/finding-similarities-between-pieces-of-text) for more information.
+For the first step, consider using a chunking model and an embedding model. The former splits large pieces of text to smaller ones; the latter takes text as input, vectorizes it, and outputs a list of numbers that represents the text. After determining the models that work for your use case, integrate them into your app using APIs such as [`Core ML`](https://developer.apple.com/documentation/coreml). The [`Natural Language`](https://developer.apple.com/documentation/naturallanguage) framework provides APIs for tokenizing and embedding text — if that meets your needs. See [`Tokenizing natural language text`](https://developer.apple.com/documentation/naturallanguage/tokenizing-natural-language-text) and [`Finding similarities between pieces of text`](https://developer.apple.com/documentation/naturallanguage/finding-similarities-between-pieces-of-text) for more information.
 
 In the second step, vectorizing the whole knowledge base may be computationally heavy and take time. You can do it with a dedicated data preparation process that runs separate from the app and then stores the final chunks and embeddings in your app, or makes them available to the app through a server your app uses. RAG can be used as a tool call, or as a step you run before calling the on-device foundation model.
 
@@ -92,7 +92,7 @@ In the second step, vectorizing the whole knowledge base may be computationally 
 
 Even with carefully designed architecture and prompts, you might still exceed the context window limit in some cases. In an open-ended conversation implemented with one large language session, for example, people can continue the chat for long time, and eventually reach the limit.
 
-When that happens, the Foundation Models framework throws an [`LanguageModelSession.GenerationError.exceededContextWindowSize(_:)`](https://developer.apple.com/documentation/FoundationModels/LanguageModelSession/GenerationError/exceededContextWindowSize(_:)) error, and the session won’t be able to respond. To catch the error:
+When that happens, the Foundation Models framework throws an [`LanguageModelSession.GenerationError.exceededContextWindowSize(_:)`](https://developer.apple.com/documentation/foundationmodels/languagemodelsession/generationerror/exceededcontextwindowsize(_:)) error, and the session won’t be able to respond. To catch the error:
 
 ```swift
 do {
@@ -107,7 +107,7 @@ do {
 
 To handle the error, consider creating a new session to continue your workflow. A new session has a new context window, but doesn’t convey the state of the original session. If you need to keep the state, consider the following options:
 
-- Collect the content of the original session through its [`transcript`](https://developer.apple.com/documentation/FoundationModels/LanguageModelSession/transcript) property, do a summary, and create a new session with the result.
+- Collect the content of the original session through its [`transcript`](https://developer.apple.com/documentation/foundationmodels/languagemodelsession/transcript) property, do a summary, and create a new session with the result.
 - Pick some important entries from the original session’s transcript, and use them to create a new session.
 
 The following example shows how to create a new session with the first and last entries of the original session:
@@ -123,7 +123,7 @@ func newContextualSession(with originalSession: LanguageModelSession) -> Languag
 }
 ```
 
-For an example that includes instructions and tool calling, see [`Generate dynamic game content with guided generation and tools`](https://developer.apple.com/documentation/FoundationModels/generate-dynamic-game-content-with-guided-generation-and-tools).
+For an example that includes instructions and tool calling, see [`Generate dynamic game content with guided generation and tools`](https://developer.apple.com/documentation/foundationmodels/generate-dynamic-game-content-with-guided-generation-and-tools).
 
 #### Revision History
 

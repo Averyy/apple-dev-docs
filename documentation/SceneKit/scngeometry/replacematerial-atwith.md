@@ -22,7 +22,7 @@ func replaceMaterial(at index: Int, with material: SCNMaterial)
 
 ## Parameters
 
-- `index`: The index of the attached material to be replaced. > ❗ **Important**:  Raises an exception ([`rangeException`](https://developer.apple.com/documentation/Foundation/NSExceptionName/rangeException)) if `index` is beyond the bounds of the [`materials`](scngeometry/materials.md) array.
+- `index`: The index of the attached material to be replaced. > ❗ **Important**:  Raises an exception ([`rangeException`](https://developer.apple.com/documentation/foundation/nsexceptionname/rangeexception)) if `index` is beyond the bounds of the [`materials`](scngeometry/materials.md) array.
 - `material`: The material with which to replace the attached material.
 
 ## See Also

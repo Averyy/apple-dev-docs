@@ -23,7 +23,7 @@ func setPointsOfInterest(_ pointsOfInterest: [CPPointOfInterest], selectedIndex:
 ## Parameters
 
 - `pointsOfInterest`: An array that contains the points of interest the template displays.
-- `selectedIndex`: The selection’s index. This is the array’s index for the specific point of interest you want to select. Use [`NSNotFound`](https://developer.apple.com/documentation/Foundation/NSNotFound-4qp9h) to indicate no initial selection.
+- `selectedIndex`: The selection’s index. This is the array’s index for the specific point of interest you want to select. Use [`NSNotFound`](https://developer.apple.com/documentation/foundation/nsnotfound-4qp9h) to indicate no initial selection.
 
 ## See Also
 

@@ -30,8 +30,8 @@ This method applies the hexagonal pixelate filter to an image. The effect create
 The hexagonal pixelate filter uses the following properties:
 
 - **`inputImage`**: An image with the type [`CIImage`](ciimage.md).
-- **`center`**: A set of coordinates marking the center of the image as a [`CGPoint`](https://developer.apple.com/documentation/CoreFoundation/CGPoint).
-- **`scale`**: A `float` representing the scale of the hexagons as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+- **`center`**: A set of coordinates marking the center of the image as a [`CGPoint`](https://developer.apple.com/documentation/corefoundation/cgpoint).
+- **`scale`**: A `float` representing the scale of the hexagons as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
 
 The following code creates a filter that results in an image made up of hexagons:
 
@@ -45,7 +45,7 @@ func hexagonalPixelate (inputImage: CIImage) -> CIImage {
 }
 ```
 
-![Two pictures of a pink flower surrounded by foliage. The photo on the left shows a single flower photographed close up, in focus, with good light and no effects. In the photo on the right, the hexagonal pixelate filter is applied, resulting in a distorted image made of hexagons with less detail visible.](https://docs-assets.developer.apple.com/published/5d2144f62d3ccb693aba751a6535a547/media-3600003%402x.png)
+![Two pictures of a pink flower surrounded by foliage. The photo on the left shows a single flower photographed close up, in focus, with good light and no effects. In the photo on the right, the hexagonal pixelate filter is applied, resulting in a distorted image made of hexagons with less detail visible.](/images/com.apple.coreimage/media-3600003@2x.png)
 
 ## See Also
 

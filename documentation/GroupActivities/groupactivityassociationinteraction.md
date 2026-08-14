@@ -27,7 +27,7 @@ By default, the system uses your scene’s activation conditions in concert with
 
 > 💡 **Tip**:  When building a custom [`SpatialTemplate`](spatialtemplate.md), the primary associated scene is the [`app`](spatialtemplateelementposition/app.md) that each seat’s position is relative to.
 
-To add the interaction to a view, use [`addInteraction(_:)`](https://developer.apple.com/documentation/UIKit/UIView/addInteraction(_:)).
+To add the interaction to a view, use [`addInteraction(_:)`](https://developer.apple.com/documentation/uikit/uiview/addinteraction(_:)).
 
 ```swift
 // Create and store the scene association interaction
@@ -65,17 +65,17 @@ func removeGroupActivityAssociation() {
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
-- [UIInteraction](../UIKit/UIInteraction.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
+- [UIInteraction](../uikit/uiinteraction.md)
 
 ## See Also
 
@@ -83,14 +83,14 @@ func removeGroupActivityAssociation() {
   Create shared experiences for people wearing Vision Pro in the same room and those on FaceTime.
 - [Adding spatial Persona support to an activity](adding-spatial-persona-support-to-an-activity.md)
   Update your SharePlay activities to support spatial Personas and the shared context when running in visionOS.
-- [Implementing SharePlay for immersive spaces in visionOS](../visionOS/implementing-shareplay-for-immersive-spaces-in-visionos.md)
+- [Implementing SharePlay for immersive spaces in visionOS](../visionos/implementing-shareplay-for-immersive-spaces-in-visionos.md)
   Enable collaborative spatial experiences by using SharePlay to synchronize 3D content among participants.
 - [class SystemCoordinator](systemcoordinator.md)
   A type you use to coordinate your interface’s behavior when an active SharePlay session supports spatial placement of content.
 - [SystemCoordinator.ParticipantState](systemcoordinator/participantstate.md)
   A structure that tells you whether a participant supports a shared simulation space for the current activity.
 - [func groupActivityAssociation(GroupActivityAssociationKind?) -> some View
-](../SwiftUI/View/groupActivityAssociation(_:).md)
+](../swiftui/view/groupactivityassociation(_:).md)
   Specifies how a view should be associated with the current SharePlay group activity.
 - [struct GroupActivityAssociationKind](groupactivityassociationkind.md)
   An association a user-interface element can have with a SharePlay group activity.

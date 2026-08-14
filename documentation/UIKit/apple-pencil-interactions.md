@@ -8,39 +8,39 @@ Handle user interactions like double tap and squeeze on Apple Pencil.
 
 Apple Pencil interactions let a person perform certain actions in your app by double-tapping or squeezing an Apple Pencil. Support Apple Pencil interactions to give people a quick way to perform their preferred action, such as switching between drawing tools, or a custom action that you define in your app.
 
-![Two illustrations showing a hand double-tapping Apple Pencil with the index finger and a hand squeezing Apple Pencil near the tip.](https://docs-assets.developer.apple.com/published/8e17660a264e7968650999ab74dedbf6/media-4403818%402x.png)
+![Two illustrations showing a hand double-tapping Apple Pencil with the index finger and a hand squeezing Apple Pencil near the tip.](/images/com.apple.uikit/media-4403818@2x.png)
 
-- To learn more about supporting double-tap and squeeze interactions, read [`Handling double taps from Apple Pencil`](https://developer.apple.com/documentation/ApplePencil/handling-double-taps-from-apple-pencil) and [`Handling squeezes from Apple Pencil`](https://developer.apple.com/documentation/ApplePencil/handling-squeezes-from-apple-pencil).
+- To learn more about supporting double-tap and squeeze interactions, read [`Handling double taps from Apple Pencil`](https://developer.apple.com/documentation/applepencil/handling-double-taps-from-apple-pencil) and [`Handling squeezes from Apple Pencil`](https://developer.apple.com/documentation/applepencil/handling-squeezes-from-apple-pencil).
 - To learn more about handling touches, read [`Handling input from Apple Pencil`](handling-input-from-apple-pencil.md).
-- To learn more about incorporating hand-drawn content in your app, see [`Drawing with PencilKit`](https://developer.apple.com/documentation/PencilKit/drawing-with-pencilkit).
+- To learn more about incorporating hand-drawn content in your app, see [`Drawing with PencilKit`](https://developer.apple.com/documentation/pencilkit/drawing-with-pencilkit).
 
 > **Note**:  Only Apple Pencil Pro supports squeeze interactions. The first-generation Apple Pencil doesn’t support Apple Pencil interactions.
 
 ## Topics
 
 ### Essentials
-- [Handling double taps from Apple Pencil](../ApplePencil/handling-double-taps-from-apple-pencil.md)
+- [Handling double taps from Apple Pencil](../applepencil/handling-double-taps-from-apple-pencil.md)
   Detect and respond to double taps a person makes on Apple Pencil.
-- [Handling squeezes from Apple Pencil](../ApplePencil/handling-squeezes-from-apple-pencil.md)
+- [Handling squeezes from Apple Pencil](../applepencil/handling-squeezes-from-apple-pencil.md)
   Detect and respond to squeezes a person makes on Apple Pencil Pro.
 - [Handling input from Apple Pencil](handling-input-from-apple-pencil.md)
   Learn how to detect and respond to touches from Apple Pencil.
 ### Apple Pencil interactions in SwiftUI
 - [func onPencilDoubleTap(perform: (PencilDoubleTapGestureValue) -> Void) -> some View
-](../SwiftUI/View/onPencilDoubleTap(perform:).md)
+](../swiftui/view/onpencildoubletap(perform:).md)
   Adds an action to perform after the user double-taps their Apple Pencil.
-- [struct PencilDoubleTapGestureValue](../SwiftUI/PencilDoubleTapGestureValue.md)
+- [struct PencilDoubleTapGestureValue](../swiftui/pencildoubletapgesturevalue.md)
   Describes the value of an Apple Pencil double-tap gesture.
 - [func onPencilSqueeze(perform: (PencilSqueezeGesturePhase) -> Void) -> some View
-](../SwiftUI/View/onPencilSqueeze(perform:).md)
+](../swiftui/view/onpencilsqueeze(perform:).md)
   Adds an action to perform when the user squeezes their Apple Pencil.
-- [enum PencilSqueezeGesturePhase](../SwiftUI/PencilSqueezeGesturePhase.md)
+- [enum PencilSqueezeGesturePhase](../swiftui/pencilsqueezegesturephase.md)
   Describes the phase and value of an Apple Pencil squeeze gesture.
-- [struct PencilSqueezeGestureValue](../SwiftUI/PencilSqueezeGestureValue.md)
+- [struct PencilSqueezeGestureValue](../swiftui/pencilsqueezegesturevalue.md)
   Describes the value of an Apple Pencil squeeze gesture.
-- [struct PencilPreferredAction](../SwiftUI/PencilPreferredAction.md)
+- [struct PencilPreferredAction](../swiftui/pencilpreferredaction.md)
   An action that the user prefers to perform after double-tapping their Apple Pencil.
-- [struct PencilHoverPose](../SwiftUI/PencilHoverPose.md)
+- [struct PencilHoverPose](../swiftui/pencilhoverpose.md)
   A value describing the location and distance of an Apple Pencil hovering in the area above a view’s bounds.
 ### Apple Pencil interactions in UIKit
 - [class UIPencilInteraction](uipencilinteraction.md)

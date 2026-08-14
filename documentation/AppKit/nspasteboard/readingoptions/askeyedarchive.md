@@ -16,7 +16,7 @@ static var asKeyedArchive: NSPasteboard.ReadingOptions { get }
 
 #### Discussion
 
-AppKit initializes the object using its [`init(coder:)`](https://developer.apple.com/documentation/Foundation/NSCoding/init(coder:)) method.
+AppKit initializes the object using its [`init(coder:)`](https://developer.apple.com/documentation/foundation/nscoding/init(coder:)) method.
 
 ## See Also
 

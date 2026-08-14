@@ -21,7 +21,7 @@ class var componentMax: CIBlendKernel { get }
 
 #### Discussion
 
-![The result of using the component max blend kernel (background image is top left, foreground image is bottom left)](https://docs-assets.developer.apple.com/published/421b54bd5b74c7ff0f6ae07982710adb/media-2926854%402x.png)
+![The result of using the component max blend kernel (background image is top left, foreground image is bottom left)](/images/com.apple.coreimage/media-2926854@2x.png)
 
 ## See Also
 

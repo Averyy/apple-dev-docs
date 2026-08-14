@@ -10,7 +10,7 @@ Apple Music API requires the inclusion of a Music User Token for any requests fo
 
 ##### Automatic Music User Token Management
 
-MusicKit automatically manages Music User Token for Apple platforms and for web apps. If you’re developing an app for Apple platforms (iOS, tvOS, watchOS, or macOS), use [`MusicKit`](https://developer.apple.com/documentation/MusicKit) for Swift to integrate with Apple Music. The framework automatically decorates requests to Apple Music API with a valid Music User Token.
+MusicKit automatically manages Music User Token for Apple platforms and for web apps. If you’re developing an app for Apple platforms (iOS, tvOS, watchOS, or macOS), use [`MusicKit`](https://developer.apple.com/documentation/musickit) for Swift to integrate with Apple Music. The framework automatically decorates requests to Apple Music API with a valid Music User Token.
 
 Similarly, if you’re developing a web app, [`MusicKit on the Web`](https://developer.apple.comhttps://developer.apple.com/musickit/web/?path=/story/user-authorization--page) automatically decorates requests to Apple Music API with a valid Music User Token.
 

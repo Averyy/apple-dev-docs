@@ -26,9 +26,9 @@ A publisher that decodes a given type using a specified decoder and publishes th
 
 #### Discussion
 
-Use [`decode(type:decoder:)`](publisher/decode(type:decoder:).md) with a [`JSONDecoder`](https://developer.apple.com/documentation/Foundation/JSONDecoder) (or a [`PropertyListDecoder`](https://developer.apple.com/documentation/Foundation/PropertyListDecoder) for property lists) to decode data received from a [`URLSession.DataTaskPublisher`](https://developer.apple.com/documentation/Foundation/URLSession/DataTaskPublisher) or other data source using the [`Decodable`](https://developer.apple.com/documentation/Swift/Decodable) protocol.
+Use [`decode(type:decoder:)`](publisher/decode(type:decoder:).md) with a [`JSONDecoder`](https://developer.apple.com/documentation/foundation/jsondecoder) (or a [`PropertyListDecoder`](https://developer.apple.com/documentation/foundation/propertylistdecoder) for property lists) to decode data received from a [`URLSession.DataTaskPublisher`](https://developer.apple.com/documentation/foundation/urlsession/datataskpublisher) or other data source using the [`Decodable`](https://developer.apple.com/documentation/swift/decodable) protocol.
 
-In this example, a [`PassthroughSubject`](passthroughsubject.md) publishes a JSON string. The JSON decoder parses the string, converting its fields according to the [`Decodable`](https://developer.apple.com/documentation/Swift/Decodable) protocol implemented by `Article`, and successfully populating a new `Article`. The [`Publishers.Decode`](publishers/decode.md) publisher then publishes the `Article` to the downstream. If a decoding operation fails, which happens in the case of missing or malformed data in the source JSON string, the stream terminates and passes the error to the downstream subscriber.
+In this example, a [`PassthroughSubject`](passthroughsubject.md) publishes a JSON string. The JSON decoder parses the string, converting its fields according to the [`Decodable`](https://developer.apple.com/documentation/swift/decodable) protocol implemented by `Article`, and successfully populating a new `Article`. The [`Publishers.Decode`](publishers/decode.md) publisher then publishes the `Article` to the downstream. If a decoding operation fails, which happens in the case of missing or malformed data in the source JSON string, the stream terminates and passes the error to the downstream subscriber.
 
 ```swift
 struct Article: Codable {
@@ -50,7 +50,7 @@ dataProvider.send(Data("{\"pubDate\":1574273638.575666, \"title\" : \"My First A
 
 ## Parameters
 
-- `type`: The encoded data to decode into a struct that conforms to the [`Decodable`](https://developer.apple.com/documentation/Swift/Decodable) protocol.
+- `type`: The encoded data to decode into a struct that conforms to the [`Decodable`](https://developer.apple.com/documentation/swift/decodable) protocol.
 - `decoder`: A decoder that implements the [`TopLevelDecoder`](topleveldecoder.md) protocol.
 
 ## See Also

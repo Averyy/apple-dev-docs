@@ -24,7 +24,7 @@ A container that holds the collection of entities that an AR view renders.
 
 You don’t create a [`Scene`](scene.md) instance directly. Instead, you get the one and only scene associated with a view from the [`scene`](arview/scene.md) property of an [`ARView`](arview.md) instance.
 
-![Block diagram showing the scene as a property of an AR view, with anchor](https://docs-assets.developer.apple.com/published/4dc0859966232845f9097db726e4eeb4/Scene-1%402x.png)
+![Block diagram showing the scene as a property of an AR view, with anchor](/images/com.apple.RealityKit/Scene-1@2x.png)
 
 To add content to the view’s scene, you first create and add one or more [`AnchorEntity`](anchorentity.md) instances to the scene’s [`anchors`](scene/anchors.md) collection. Anchors tell RealityKit how to pin virtual content to real world objects, like flat surfaces or images. You then add a hierarchy of other [`Entity`](entity.md) instances to each anchor to indicate the geometry and behaviors that RealityKit should render at a given anchor point.
 
@@ -88,16 +88,16 @@ To add content to the view’s scene, you first create and add one or more [`Anc
 ## Relationships
 
 ### Conforms To
-- [CoordinateSpace3D](../Spatial/CoordinateSpace3D.md)
-- [CoordinateSpace3DFloat](../Spatial/CoordinateSpace3DFloat.md)
-- [Copyable](../Swift/Copyable.md)
-- [Equatable](../Swift/Equatable.md)
-- [Escapable](../Swift/Escapable.md)
+- [CoordinateSpace3D](../spatial/coordinatespace3d.md)
+- [CoordinateSpace3DFloat](../spatial/coordinatespace3dfloat.md)
+- [Copyable](../swift/copyable.md)
+- [Equatable](../swift/equatable.md)
+- [Escapable](../swift/escapable.md)
 - [EventSource](eventsource.md)
-- [Hashable](../Swift/Hashable.md)
-- [Identifiable](../Swift/Identifiable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Hashable](../swift/hashable.md)
+- [Identifiable](../swift/identifiable.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

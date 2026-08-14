@@ -25,7 +25,7 @@ convenience init(commandBuffer: any MTLCommandBuffer, textureDescriptor: MTLText
   A description of the attributes used to create an [`MPSImage`](mpsimage.md).
 - [convenience init(commandBuffer: any MTLCommandBuffer, textureDescriptor: MTLTextureDescriptor)](mpstemporaryimage/init(commandbuffer:texturedescriptor:).md)
   Low-level interface for creating a temporary image using a texture descriptor.
-- [class MTLTextureDescriptor](../Metal/MTLTextureDescriptor.md)
+- [class MTLTextureDescriptor](../metal/mtltexturedescriptor.md)
   An instance that you use to configure new Metal texture instances.
 
 

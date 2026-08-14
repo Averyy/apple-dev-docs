@@ -29,7 +29,7 @@ This function must be called prior to the [`SSLHandshake(_:)`](sslhandshake(_:).
 
 - `context`: An SSL session context reference.
 - `option`: An SSL session option. Possible values are listed in [`SSLSessionOption`](sslsessionoption.md).
-- `value`: Set to [`true`](https://developer.apple.com/documentation/Swift/true) to enable the option, or [`false`](https://developer.apple.com/documentation/Swift/false) to disable it.
+- `value`: Set to [`true`](https://developer.apple.com/documentation/swift/true) to enable the option, or [`false`](https://developer.apple.com/documentation/swift/false) to disable it.
 
 
 ---

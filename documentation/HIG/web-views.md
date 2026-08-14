@@ -11,7 +11,7 @@ framework: HIG
 
 A web view loads and displays rich web content, such as embedded HTML and websites, directly within your app.
 
-![A stylized representation of a compass icon. The image is tinted red to subtly reflect the red in the original six-color Apple logo.](https://docs-assets.developer.apple.com/published/c173ae37f21b7f0ea59e6a5b71e5f91c/components-web-view-intro~dark%402x.png)
+![A stylized representation of a compass icon. The image is tinted red to subtly reflect the red in the original six-color Apple logo.](/images/com.apple.HIG/components-web-view-intro~dark@2x.png)
 For example, Mail uses a web view to show HTML content in messages.
 
 ## Best practices
@@ -27,7 +27,7 @@ For example, Mail uses a web view to show HTML content in messages.
 [Webkit.org](https://webkit.org/)
 
 #### Developer documentation
-[WKWebView](../WebKit/WKWebView.md) — WebKit
+[WKWebView](../webkit/wkwebview.md) — WebKit
 
 #### Videos
 - [Explore WKWebView additions](https://developer.apple.com/videos/play/wwdc2021/10032) - Explore the latest updates to WKWebView. We’ll show you how to use APIs to manipulate web content without JavaScript, explore delegates that can help with WebRTC and Downloads, and share how you can easily create a richer web experience within your app.

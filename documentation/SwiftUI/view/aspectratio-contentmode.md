@@ -31,7 +31,7 @@ A view that constrains this view’s dimensions to the aspect ratio of the given
 
 #### Discussion
 
-Use `aspectRatio(_:contentMode:)` to constrain a view’s dimensions to an aspect ratio specified by a [`CGFloat`](https://developer.apple.com/documentation/CoreFoundation/CGFloat-swift.struct) using the specified content mode.
+Use `aspectRatio(_:contentMode:)` to constrain a view’s dimensions to an aspect ratio specified by a [`CGFloat`](https://developer.apple.com/documentation/corefoundation/cgfloat-swift.struct) using the specified content mode.
 
 If this view is resizable, the resulting view will have `aspectRatio` as its aspect ratio. In this example, the purple ellipse has a 3:4 width-to-height ratio, and scales to fit its frame:
 
@@ -43,7 +43,7 @@ Ellipse()
     .border(Color(white: 0.75))
 ```
 
-![A view showing a purple ellipse that has a 3:4 width-to-height ratio,](https://docs-assets.developer.apple.com/published/ded6be4d50f569c3d928b41997011101/SwiftUI-View-aspectRatio-cgfloat%402x.png)
+![A view showing a purple ellipse that has a 3:4 width-to-height ratio,](/images/com.apple.SwiftUI/SwiftUI-View-aspectRatio-cgfloat@2x.png)
 
 ## Parameters
 

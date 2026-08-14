@@ -25,9 +25,9 @@ The currently connected mouse devices.
 
 ## See Also
 
-- [static let GCMouseDidConnect: NSNotification.Name](../Foundation/NSNotification/Name-swift.struct/GCMouseDidConnect.md)
+- [static let GCMouseDidConnect: NSNotification.Name](../foundation/nsnotification/name-swift.struct/gcmousedidconnect.md)
   A notification that posts after a mouse connects to the device.
-- [static let GCMouseDidDisconnect: NSNotification.Name](../Foundation/NSNotification/Name-swift.struct/GCMouseDidDisconnect.md)
+- [static let GCMouseDidDisconnect: NSNotification.Name](../foundation/nsnotification/name-swift.struct/gcmousediddisconnect.md)
   A notification that posts after a mouse disconnects from the device.
 
 

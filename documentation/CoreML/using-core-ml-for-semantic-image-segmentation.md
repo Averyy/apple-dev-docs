@@ -23,7 +23,7 @@ The sample code project includes an 8-bit palletization image-segmentation model
 
 Select the model in the Xcode file navigator to view details in an Xcode model preview area. The following image shows the metadata and operations for the 8-bit model:
 
-![A screenshot of the Xcode model preview area that shows details about the model you select in the file navigator area.](https://docs-assets.developer.apple.com/published/a5c6acaff8377b69ec33e067fcc76162/selected-detr-model-details%402x.png)
+![A screenshot of the Xcode model preview area that shows details about the model you select in the file navigator area.](/images/com.apple.coreml/selected-detr-model-details@2x.png)
 
 To use a model with a different name, but using the same semantics, replace the source code references in `ViewModel` with the model class for `Model` and `ModelOutput`:
 
@@ -89,7 +89,7 @@ The `Core ML` framework uses optional metadata to map segment label values into 
 
 The following image shows the label metadata in the Xcode model preview area:
 
-![A screenshot of the Xcode model preview area that shows details about the model you select in the file navigator area. It highlights additional metadata that contains model labels — person, bicycle, car, motorcycle, airplane, bus, and so on.](https://docs-assets.developer.apple.com/published/49ea06b95e07841f4a7d38b1bdf9a321/selected-detr-metadata%402x.png)
+![A screenshot of the Xcode model preview area that shows details about the model you select in the file navigator area. It highlights additional metadata that contains model labels — person, bicycle, car, motorcycle, airplane, bus, and so on.](/images/com.apple.coreml/selected-detr-metadata@2x.png)
 
 The sample app reads the segmentation labels from the model metadata by calling the `readSegmentationLabels` method in `MLModel`. For more information about the format `Core ML` uses for metadata, see [`Xcode Model Preview Types`](https://developer.apple.comhttps://apple.github.io/coremltools/docs-guides/source/xcode-model-preview-types.html):
 
@@ -134,7 +134,7 @@ let resultArray = result.semanticPredictionsShapedArray
 
 The sample app provides a visualization of model output by overlaying a masked image — representing the selected segment — on top of the original, like the sky in the following image:
 
-![An image that shows an image mask that the sample overlays on top of the original image.](https://docs-assets.developer.apple.com/published/eea7869f82af6ed71cc39ad781494700/masked-image%402x.png)
+![An image that shows an image mask that the sample overlays on top of the original image.](/images/com.apple.coreml/masked-image@2x.png)
 
 Based on the selection, the sample app colors the labeled regions by calling the `renderMask` method in `ViewModel`:
 

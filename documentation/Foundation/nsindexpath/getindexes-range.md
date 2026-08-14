@@ -26,7 +26,7 @@ You must allocate the memory for the C array.
 
 ## Parameters
 
-- `indexes`: Pointer to a C array of at least as many [`NSUInteger`](https://developer.apple.com/documentation/ObjectiveC/NSUInteger) objects as specified by the length of `positionRange`. On return, the array holds the index path’s indexes.
+- `indexes`: Pointer to a C array of at least as many [`NSUInteger`](https://developer.apple.com/documentation/objectivec/nsuinteger) objects as specified by the length of `positionRange`. On return, the array holds the index path’s indexes.
 - `positionRange`: A range of valid positions within the index path. If the location plus the length of `positionRange` is greater than the length of the index path, this method raises an [`rangeException`](nsexceptionname/rangeexception.md).
 
 ## See Also

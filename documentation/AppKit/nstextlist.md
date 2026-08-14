@@ -22,7 +22,7 @@ Text lists appear as attributes on paragraphs, as part of the paragraph style. A
 
 The methods implementing this are [`textLists`](nsparagraphstyle/textlists.md) on [`NSParagraphStyle`](nsparagraphstyle.md), and [`textLists`](nsmutableparagraphstyle/textlists.md) on [`NSMutableParagraphStyle`](nsmutableparagraphstyle.md).
 
-In addition, [`NSAttributedString`](https://developer.apple.com/documentation/Foundation/NSAttributedString) has convenience methods for lists, such as [`range(of:at:)`](https://developer.apple.com/documentation/Foundation/NSAttributedString/range(of:at:)-6um0x), which determines the range covered by a list, and [`itemNumber(in:at:)`](https://developer.apple.com/documentation/Foundation/NSAttributedString/itemNumber(in:at:)), which determines the ordinal position within a list of a particular item.
+In addition, [`NSAttributedString`](https://developer.apple.com/documentation/foundation/nsattributedstring) has convenience methods for lists, such as [`range(of:at:)`](https://developer.apple.com/documentation/foundation/nsattributedstring/range(of:at:)-6um0x), which determines the range covered by a list, and [`itemNumber(in:at:)`](https://developer.apple.com/documentation/foundation/nsattributedstring/itemnumber(in:at:)), which determines the ordinal position within a list of a particular item.
 
 ## Topics
 
@@ -58,17 +58,17 @@ In addition, [`NSAttributedString`](https://developer.apple.com/documentation/Fo
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCoding](../Foundation/NSCoding.md)
-- [NSCopying](../Foundation/NSCopying.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [NSSecureCoding](../Foundation/NSSecureCoding.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCoding](../foundation/nscoding.md)
+- [NSCopying](../foundation/nscopying.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSSecureCoding](../foundation/nssecurecoding.md)
 
 ## See Also
 

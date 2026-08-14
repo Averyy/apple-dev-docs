@@ -24,7 +24,7 @@ let SKStoreProductParameterAdNetworkAttributionSignature: String
 
 #### Discussion
 
-The value for this key is an [`NSString`](https://developer.apple.com/documentation/Foundation/NSString). The ad network creates the cryptographic signature, used to sign ads. For instructions on generating this value, see [`Generating the signature to validate StoreKit-rendered ads`](generating-the-signature-to-validate-storekit-rendered-ads.md).
+The value for this key is an [`NSString`](https://developer.apple.com/documentation/foundation/nsstring). The ad network creates the cryptographic signature, used to sign ads. For instructions on generating this value, see [`Generating the signature to validate StoreKit-rendered ads`](generating-the-signature-to-validate-storekit-rendered-ads.md).
 
 ## See Also
 

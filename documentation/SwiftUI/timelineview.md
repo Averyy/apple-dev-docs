@@ -69,13 +69,13 @@ For a schedule containing only dates in the past, the timeline view shows the la
 ## Relationships
 
 ### Conforms To
-- [Copyable](../Swift/Copyable.md)
-- [Escapable](../Swift/Escapable.md)
+- [Copyable](../swift/copyable.md)
+- [Escapable](../swift/escapable.md)
 - [View](view.md)
 
 ## See Also
 
-- [Updating watchOS apps with timelines](../watchOS-Apps/updating-watchos-apps-with-timelines.md)
+- [Updating watchOS apps with timelines](../watchos-apps/updating-watchos-apps-with-timelines.md)
   Seamlessly schedule updates to your user interface, even while it’s inactive.
 - [protocol TimelineSchedule](timelineschedule.md)
   A type that provides a sequence of dates for use as a schedule.

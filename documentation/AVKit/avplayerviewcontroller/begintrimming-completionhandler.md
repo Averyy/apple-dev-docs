@@ -20,7 +20,7 @@ func beginTrimming() async -> Bool
 
 #### Discussion
 
-After trimming is complete, you can access the trimmed range by querying the [`forwardPlaybackEndTime`](https://developer.apple.com/documentation/AVFoundation/AVPlayerItem/forwardPlaybackEndTime) and [`reversePlaybackEndTime`](https://developer.apple.com/documentation/AVFoundation/AVPlayerItem/reversePlaybackEndTime) properties on the [`AVPlayerItem`](https://developer.apple.com/documentation/AVFoundation/AVPlayerItem).
+After trimming is complete, you can access the trimmed range by querying the [`forwardPlaybackEndTime`](https://developer.apple.com/documentation/avfoundation/avplayeritem/forwardplaybackendtime) and [`reversePlaybackEndTime`](https://developer.apple.com/documentation/avfoundation/avplayeritem/reverseplaybackendtime) properties on the [`AVPlayerItem`](https://developer.apple.com/documentation/avfoundation/avplayeritem).
 
 For more information on supporting trimming in your app, see [`Trimming and exporting media in visionOS`](trimming-and-exporting-media-in-visionos.md).
 

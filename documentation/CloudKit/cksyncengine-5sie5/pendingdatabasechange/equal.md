@@ -22,7 +22,7 @@ static func == (lhs: CKSyncEngine.PendingDatabaseChange, rhs: CKSyncEngine.Pendi
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/Swift/true) if the two values are equal; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
+[`true`](https://developer.apple.com/documentation/swift/true) if the two values are equal; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
 
 ## Parameters
 

@@ -15,11 +15,11 @@ An entitlement that enables an app to present the journaling suggestions picker.
 
 #### Discussion
 
-The [`Journaling Suggestions`](https://developer.apple.com/documentation/JournalingSuggestions) framework can’t present the [`JournalingSuggestionsPicker`](https://developer.apple.com/documentation/JournalingSuggestions/JournalingSuggestionsPicker) for apps without this entitlement in their code signature. Add this entitlement to your app by enabling the Journaling Suggestions capability in Xcode.
+The [`Journaling Suggestions`](https://developer.apple.com/documentation/journalingsuggestions) framework can’t present the [`JournalingSuggestionsPicker`](https://developer.apple.com/documentation/journalingsuggestions/journalingsuggestionspicker) for apps without this entitlement in their code signature. Add this entitlement to your app by enabling the Journaling Suggestions capability in Xcode.
 
-![Screenshot of the Capabilities pane in Xcode with the Journaling Suggestions capability selected.](https://docs-assets.developer.apple.com/published/a4c58553c13202d4fc9603d740ccf2d7/media-4309269%402x.png)
+![Screenshot of the Capabilities pane in Xcode with the Journaling Suggestions capability selected.](/images/com.apple.bundleresources/media-4309269@2x.png)
 
-For more information about presenting journaling suggestions in your app, see [`Presenting the suggestions picker and processing a selection`](https://developer.apple.com/documentation/JournalingSuggestions/presenting-the-suggestions-picker-and-processing-a-selection).
+For more information about presenting journaling suggestions in your app, see [`Presenting the suggestions picker and processing a selection`](https://developer.apple.com/documentation/journalingsuggestions/presenting-the-suggestions-picker-and-processing-a-selection).
 
 
 ---

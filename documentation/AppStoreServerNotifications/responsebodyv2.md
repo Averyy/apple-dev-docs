@@ -25,7 +25,7 @@ The `signedPayload` object is a JWS representation. To get the transaction and s
 
 1. Parse `signedPayload` to identify the JWS header, payload, and signature representations.
 2. Base64URL-decode the payload to get the [`responseBodyV2DecodedPayload`](responsebodyv2decodedpayload.md). The decoded payload contains details of the notification such as the notification type and  data.
-3. The `data` object contains a `signedTransactionInfo` ([`JWSTransaction`](https://developer.apple.com/documentation/AppStoreServerAPI/JWSTransaction)) and based on the notification type, a `signedRenewalInfo` ([`JWSRenewalInfo`](jwsrenewalinfo.md)). Parse and Base64URL-decode these signed JWS representations to get transaction and subscription renewal details.
+3. The `data` object contains a `signedTransactionInfo` ([`JWSTransaction`](https://developer.apple.com/documentation/appstoreserverapi/jwstransaction)) and based on the notification type, a `signedRenewalInfo` ([`JWSRenewalInfo`](jwsrenewalinfo.md)). Parse and Base64URL-decode these signed JWS representations to get transaction and subscription renewal details.
 
 Each of the signed JWS representations, `signedPayload`, `signedTransactionInfo`, and `signedRenewalInfo`, have a JWS signature that you can validate on your server. Use the algorithm specified in the header’s [`alg`](alg.md) parameter to validate the signature. For more information about validating signatures, see the JSON Web Signature (JWS) [`IETF RFC 7515`](https://developer.apple.comhttps://datatracker.ietf.org/doc/html/rfc7515) specification.
 

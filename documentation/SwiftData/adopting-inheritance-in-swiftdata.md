@@ -285,9 +285,9 @@ struct TripListView: View {
   Describe your model classes to SwiftData using the framework’s macros, and store instances of those models so they exist beyond the app’s runtime.
 - [Adding and editing persistent data in your app](adding-and-editing-persistent-data-in-your-app.md)
   Create a data entry form for collecting and changing data managed by SwiftData.
-- [Adopting SwiftData for a Core Data app](../CoreData/adopting-swiftdata-for-a-core-data-app.md)
+- [Adopting SwiftData for a Core Data app](../coredata/adopting-swiftdata-for-a-core-data-app.md)
   Persist data in your app intuitively with the Swift native persistence framework.
-- [SwiftData updates](../Updates/SwiftData.md)
+- [SwiftData updates](../updates/swiftdata.md)
   Learn about important changes to SwiftData.
 
 

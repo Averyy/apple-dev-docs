@@ -49,7 +49,7 @@ The frame of reference for the position and normal of the hit depends on the ref
 ## Relationships
 
 ### Conforms To
-- [Equatable](../Swift/Equatable.md)
+- [Equatable](../swift/equatable.md)
 
 ## See Also
 

@@ -40,7 +40,7 @@ struct ValueAlignedChartScrollTargetBehavior
 
 ### Conforms To
 - [ChartScrollTargetBehavior](chartscrolltargetbehavior.md)
-- [ScrollTargetBehavior](../SwiftUI/ScrollTargetBehavior.md)
+- [ScrollTargetBehavior](../swiftui/scrolltargetbehavior.md)
 
 ## See Also
 

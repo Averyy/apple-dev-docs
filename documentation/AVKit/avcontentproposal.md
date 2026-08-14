@@ -20,7 +20,7 @@ class AVContentProposal
 
 #### Overview
 
-A content proposal object models the data about the proposed content such as its title, preview image, presentation time, and content URL. You make a content proposal eligible for presentation by setting it as the [`nextContentProposal`](https://developer.apple.com/documentation/AVFoundation/AVPlayerItem/nextContentProposal) of the current [`AVPlayerItem`](https://developer.apple.com/documentation/AVFoundation/AVPlayerItem).
+A content proposal object models the data about the proposed content such as its title, preview image, presentation time, and content URL. You make a content proposal eligible for presentation by setting it as the [`nextContentProposal`](https://developer.apple.com/documentation/avfoundation/avplayeritem/nextcontentproposal) of the current [`AVPlayerItem`](https://developer.apple.com/documentation/avfoundation/avplayeritem).
 
 ```swift
 let proposal = AVContentProposal(contentTimeForTransition: time,
@@ -52,15 +52,15 @@ currentPlayerItem.nextContentProposal = proposal
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCopying](../Foundation/NSCopying.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCopying](../foundation/nscopying.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

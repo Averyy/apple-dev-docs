@@ -25,7 +25,7 @@ class ASAccountAuthenticationModificationUpgradePasswordToStrongPasswordRequest
 
 Your app uses this class to initiate an upgrade from a weak password to a strong system-generated one. After creating the request, your app initiates the upgrade process by instantiating an [`ASAccountAuthenticationModificationController`](asaccountauthenticationmodificationcontroller.md) object and calling [`perform(_:)`](asaccountauthenticationmodificationcontroller/perform(_:).md) on it. The system invokes your authentication modification extension to complete the upgrade.
 
-For details about how to enforce requirements on the password, such as minimum length or requiring both letters and numbers, see [`ASAccountAuthenticationModificationPasswordGenerationRequirements`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSExtension/ASAccountAuthenticationModificationPasswordGenerationRequirements).
+For details about how to enforce requirements on the password, such as minimum length or requiring both letters and numbers, see [`ASAccountAuthenticationModificationPasswordGenerationRequirements`](https://developer.apple.com/documentation/bundleresources/information-property-list/nsextension/asaccountauthenticationmodificationpasswordgenerationrequirements).
 
 ## Topics
 
@@ -44,12 +44,12 @@ For details about how to enforce requirements on the password, such as minimum l
 ### Inherits From
 - [ASAccountAuthenticationModificationRequest](asaccountauthenticationmodificationrequest.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

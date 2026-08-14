@@ -158,11 +158,11 @@ func contextMenuInteraction(_ interaction: UIContextMenuInteraction,
 
 ##### Add a Context Menu to a Web View
 
-Select the Basic test case from the sample’s Web Views outline item. When the user touches and holds on the link within the [`WKWebView`](https://developer.apple.com/documentation/WebKit/WKWebView), the app presents a [`SFSafariViewController`](https://developer.apple.com/documentation/SafariServices/SFSafariViewController) to show that link content with a set of default `UIAction` items. When the user touches the view controller, the user moves out of the app and into Safari.
+Select the Basic test case from the sample’s Web Views outline item. When the user touches and holds on the link within the [`WKWebView`](https://developer.apple.com/documentation/webkit/wkwebview), the app presents a [`SFSafariViewController`](https://developer.apple.com/documentation/safariservices/sfsafariviewcontroller) to show that link content with a set of default `UIAction` items. When the user touches the view controller, the user moves out of the app and into Safari.
 
 Select the Preview Provider test case from the sample’s Web Views outline item. When the user touches and holds on the link within the `WKWebView`, the app presents a custom view controller.
 
-This sample intercepts and adds to that context menu by adopting the [`WKUIDelegate`](https://developer.apple.com/documentation/WebKit/WKUIDelegate) protocol. `WKWebView` asks its delegate to provide the context menu by calling [`webView(_:contextMenuConfigurationForElement:completionHandler:)`](https://developer.apple.com/documentation/WebKit/WKUIDelegate/webView(_:contextMenuConfigurationForElement:completionHandler:)).
+This sample intercepts and adds to that context menu by adopting the [`WKUIDelegate`](https://developer.apple.com/documentation/webkit/wkuidelegate) protocol. `WKWebView` asks its delegate to provide the context menu by calling [`webView(_:contextMenuConfigurationForElement:completionHandler:)`](https://developer.apple.com/documentation/webkit/wkuidelegate/webview(_:contextmenuconfigurationforelement:completionhandler:)).
 
 ```swift
 func webView(_ webView: WKWebView,

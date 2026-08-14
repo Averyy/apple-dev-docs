@@ -9,9 +9,9 @@ Configure how your app’s windows look and function in macOS to provide an enga
 
 #### Overview
 
-The macOS target of [`Destination Video`](https://developer.apple.com/documentation/visionOS/destination-video) demonstrates how you can leverage the window and scene customization APIs (available in macOS 15 and later) to tailor an app’s experience in macOS. This includes changing a toolbar’s appearance and visibility, extending a window’s drag region, participating in a window’s zoom action, and modifying a window’s state restoration behavior.
+The macOS target of [`Destination Video`](https://developer.apple.com/documentation/visionos/destination-video) demonstrates how you can leverage the window and scene customization APIs (available in macOS 15 and later) to tailor an app’s experience in macOS. This includes changing a toolbar’s appearance and visibility, extending a window’s drag region, participating in a window’s zoom action, and modifying a window’s state restoration behavior.
 
-![A screenshot that shows the video player window in front of Destination Video’s main window.](https://docs-assets.developer.apple.com/published/d77c8afb576082a70fb6a3a14bc495d0/WindowCustomizationDestinationVideo%402x.png)
+![A screenshot that shows the video player window in front of Destination Video’s main window.](/images/com.apple.SwiftUI/WindowCustomizationDestinationVideo@2x.png)
 
 #### Remove the Title and Background From the Windows Toolbar
 
@@ -33,11 +33,11 @@ In this instance, the app still requires the window control buttons to close or 
 
 **Before**:
 
-![A window in Destination Video with a window toolbar background and title.](https://docs-assets.developer.apple.com/published/d5cd26341c5677e02f1eb2ef56876d95/Customizing-window-styles-and-state-restoration-behavior-in-macOS-before%402x.png)
+![A window in Destination Video with a window toolbar background and title.](/images/com.apple.SwiftUI/Customizing-window-styles-and-state-restoration-behavior-in-macOS-before@2x.png)
 
 **After**:
 
-![A window in Destination Video with a window toolbar background and title removed.](https://docs-assets.developer.apple.com/published/d11658bd7b0184d21c78d22662cb0db0/Customizing-window-styles-and-state-restoration-behavior-in-macOS-after%402x.png)
+![A window in Destination Video with a window toolbar background and title removed.](/images/com.apple.SwiftUI/Customizing-window-styles-and-state-restoration-behavior-in-macOS-after@2x.png)
 
 It’s important to note that these are visual changes only. The system continues to provide the window’s title to accessibility tools such as screen readers, and the app’s Window menu continues to show the title while the window is open.
 
@@ -61,7 +61,7 @@ The player also uses the [`allowsWindowActivationEvents(_:)`](view/allowswindowa
 
 By default, a window’s toolbar provides buttons that close the window, minimize the window, and enter full-screen mode. If you press and hold the Option key and click the green button, the window zooms instead of going full screen.
 
-![A screenshot showing a window's toolbar buttons. The green button has a popover pointing to it. The popover contains different options for arranging and sizing the window.](https://docs-assets.developer.apple.com/published/841259ef8e8b5a49e4673a20e199bac8/Customizing-window-styles-and-state-restoration-behavior-in-macOS-zoom%402x.png)
+![A screenshot showing a window's toolbar buttons. The green button has a popover pointing to it. The popover contains different options for arranging and sizing the window.](/images/com.apple.SwiftUI/Customizing-window-styles-and-state-restoration-behavior-in-macOS-zoom@2x.png)
 
 Typically, a window zooms to either its defined maximum size, or as large as the display permits. However, you can use the [`windowIdealPlacement(_:)`](scene/windowidealplacement(_:).md) scene method to override this behavior and provide a size and position that’s more appropriate for the window’s contents. The app uses this method to provide a maximum size for the video player that maintains the video’s aspect ratio to prevent black bars appearing above and below it.
 

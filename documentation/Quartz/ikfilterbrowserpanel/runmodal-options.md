@@ -16,7 +16,7 @@ func runModal(options inOptions: [AnyHashable : Any]! = [:]) -> Int32
 
 #### Return Value
 
-Either [`NSOKButton`](https://developer.apple.com/documentation/AppKit/NSOKButton) if the user validates, or [`NSCancelButton`](https://developer.apple.com/documentation/AppKit/NSCancelButton) if the user cancels.
+Either [`NSOKButton`](https://developer.apple.com/documentation/appkit/nsokbutton) if the user validates, or [`NSCancelButton`](https://developer.apple.com/documentation/appkit/nscancelbutton) if the user cancels.
 
 ## Parameters
 

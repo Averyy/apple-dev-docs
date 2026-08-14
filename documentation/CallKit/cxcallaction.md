@@ -33,7 +33,7 @@ The CallKit framework provides the following concrete [`CXCallAction`](cxcallact
 | [`CXSetTranslatingCallAction`](cxsettranslatingcallaction.md) | Starts or stops call translation. |
 | [`CXPlayDTMFCallAction`](cxplaydtmfcallaction.md) | Plays a DTMF (dual tone multifrequency) tone sequence on a call. |
 
-To perform one or more actions, you add them to a new [`CXTransaction`](cxtransaction.md) object and pass the transaction to an instance of [`CXCallController`](cxcallcontroller.md) using the [`request(_:completion:)`](cxcallcontroller/request(_:completion:).md) method. After each action is performed by the telephony provider, the provider’s delegate calls either the [`fulfill()`](cxaction/fulfill().md) method, indicating that the action was successfully performed, or the [`fail()`](cxaction/fail().md) method, to indicate that an error occurred; both of these methods set the [`isComplete`](cxaction/iscomplete.md) property of the action to [`true`](https://developer.apple.com/documentation/Swift/true).
+To perform one or more actions, you add them to a new [`CXTransaction`](cxtransaction.md) object and pass the transaction to an instance of [`CXCallController`](cxcallcontroller.md) using the [`request(_:completion:)`](cxcallcontroller/request(_:completion:).md) method. After each action is performed by the telephony provider, the provider’s delegate calls either the [`fulfill()`](cxaction/fulfill().md) method, indicating that the action was successfully performed, or the [`fail()`](cxaction/fail().md) method, to indicate that an error occurred; both of these methods set the [`isComplete`](cxaction/iscomplete.md) property of the action to [`true`](https://developer.apple.com/documentation/swift/true).
 
 ## Topics
 
@@ -62,15 +62,15 @@ To perform one or more actions, you add them to a new [`CXTransaction`](cxtransa
 - [CXSetTranslatingCallAction](cxsettranslatingcallaction.md)
 - [CXStartCallAction](cxstartcallaction.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCoding](../Foundation/NSCoding.md)
-- [NSCopying](../Foundation/NSCopying.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [NSSecureCoding](../Foundation/NSSecureCoding.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCoding](../foundation/nscoding.md)
+- [NSCopying](../foundation/nscopying.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSSecureCoding](../foundation/nssecurecoding.md)
 
 ## See Also
 

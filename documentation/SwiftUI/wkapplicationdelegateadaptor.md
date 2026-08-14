@@ -34,8 +34,8 @@ A property wrapper that is used in `App` to provide a delegate from WatchKit.
 
 ### Conforms To
 - [DynamicProperty](dynamicproperty.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

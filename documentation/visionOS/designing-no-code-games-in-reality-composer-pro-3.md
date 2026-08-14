@@ -14,13 +14,13 @@ Build a video game in Reality Composer Pro without code using Script Graphs.
 
 This sample code project uses [`Reality Composer Pro`](https://developer.apple.comhttps://developer.apple.com/reality-composer-pro/) and [`RealityKit`](https://developer.apple.comhttps://developer.apple.com/documentation/realitykit) to build a video game whose gameplay you author visually instead of by writing code. The game follows a sleepy squirrel who is taking a nap on top of a leafy pad. The goal of the game is to wake up the squirrel, guide them up a tree through the branches and leaves, so they make it home in time for dinner.
 
-![A screenshot of the squirrel asleep on a leafy pad inside a scene in Reality Composer Pro 3.](https://docs-assets.developer.apple.com/published/78d06c6705910495fcb0bc36fe718fb8/squirrel-overview%402x.png)
+![A screenshot of the squirrel asleep on a leafy pad inside a scene in Reality Composer Pro 3.](/images/com.apple.visionOS/squirrel-overview@2x.png)
 
-Rather than writing code, the sample relies on Script Graphs to drive almost every behavior of the squirrel and the world. A small [`SwiftUI`](https://developer.apple.com/documentation/SwiftUI) layer hosts the scene, shows the speech bubbles and buttons, and trades messages with those graphs. This sample demonstrates how to initialize the [`RealityKitScripting`](https://developer.apple.comhttps://github.com/apple/realitykitscripting) runtime, pass messages between the Script Graph layer and the SwiftUI layer, and design platformer game mechanics inside Reality Composer Pro.
+Rather than writing code, the sample relies on Script Graphs to drive almost every behavior of the squirrel and the world. A small [`SwiftUI`](https://developer.apple.com/documentation/swiftui) layer hosts the scene, shows the speech bubbles and buttons, and trades messages with those graphs. This sample demonstrates how to initialize the [`RealityKitScripting`](https://developer.apple.comhttps://github.com/apple/realitykitscripting) runtime, pass messages between the Script Graph layer and the SwiftUI layer, and design platformer game mechanics inside Reality Composer Pro.
 
 #### Start the Script Graph Runtime
 
-Script Graphs are the visual gameplay logic you author in Reality Composer Pro. Inside Reality Composer Pro, you attach a Scripting component to entities, edit the Script Graph associated with those entities, then publish the entities and logic together as a Reality file. Then in your Xcode project, you initialize the runtime before loading your content in a [`RealityView`](https://developer.apple.com/documentation/RealityKit/RealityView) marked with the `.realityScripting()` view modifier.
+Script Graphs are the visual gameplay logic you author in Reality Composer Pro. Inside Reality Composer Pro, you attach a Scripting component to entities, edit the Script Graph associated with those entities, then publish the entities and logic together as a Reality file. Then in your Xcode project, you initialize the runtime before loading your content in a [`RealityView`](https://developer.apple.com/documentation/realitykit/realityview) marked with the `.realityScripting()` view modifier.
 
 The runtime and view modifier ships in [`RealityKitScripting`](https://developer.apple.comhttps://github.com/apple/realitykitscripting), an open source Swift package maintained by Apple that you add to your Xcode project. Use the Swift Package Manager to add a dependency pointing at `RealityKitScripting`, link the `RealityKitScripting` library to your app target, then import the module wherever your code starts or talks to the runtime. For more detailed instructions on how to add a package to your Xcode project, see [`Adding package dependencies to your app`](https://developer.apple.comhttps://developer.apple.com/documentation/xcode/adding-package-dependencies-to-your-app).
 
@@ -59,15 +59,15 @@ RealityView { content, attachments in
 
 #### Pass Messages Between Swiftui and the Graph
 
-The interface and the gameplay logic need to stay in agreement. When the squirrel speaks, a bubble appears, and when you press a button, the game responds. Script Graphs and [`SwiftUI`](https://developer.apple.com/documentation/SwiftUI) keep that agreement through named scene events. You declare each event once in Reality Composer Pro, after which both sides refer to the events by name.
+The interface and the gameplay logic need to stay in agreement. When the squirrel speaks, a bubble appears, and when you press a button, the game responds. Script Graphs and [`SwiftUI`](https://developer.apple.com/documentation/swiftui) keep that agreement through named scene events. You declare each event once in Reality Composer Pro, after which both sides refer to the events by name.
 
-Send events to the [`Scene`](https://developer.apple.com/documentation/RealityKit/Scene) using the extension method `.send(name:with:)` provided by the `RealityKitScripting` package. Events that require extra data can receive that information in a dictionary using the `with:` parameter.
+Send events to the [`Scene`](https://developer.apple.com/documentation/realitykit/scene) using the extension method `.send(name:with:)` provided by the `RealityKitScripting` package. Events that require extra data can receive that information in a dictionary using the `with:` parameter.
 
 ```swift
 scene.send(name: "setCurrentLevelScreen", with: ["levelScreenName": sceneName])
 ```
 
-Receive events from the [`Scene`](https://developer.apple.com/documentation/RealityKit/Scene) by using the `.subscribe(forEventName:on:)` extension method provided by the `RealityKitScripting` package.
+Receive events from the [`Scene`](https://developer.apple.com/documentation/realitykit/scene) by using the `.subscribe(forEventName:on:)` extension method provided by the `RealityKitScripting` package.
 
 ```swift
 scene.subscribe(forEventName: "squirrelTalk", on: { event in
@@ -87,21 +87,21 @@ scene.subscribe(forEventName: "squirrelTalk", on: { event in
 
 Script Graphs drive almost every behavior in this game instead of Swift code. The moving platforms, the collectibles, and the squirrel’s animations all run as visual node graphs in the scene.
 
-To learn more about building logic in the Script Graph editor, see [`Getting started with Script Graphs`](https://developer.apple.com/documentation/RealityComposerPro/getting-started-with-script-graphs).
+To learn more about building logic in the Script Graph editor, see [`Getting started with Script Graphs`](https://developer.apple.com/documentation/realitycomposerpro/getting-started-with-script-graphs).
 
 Consider the example of bouncy animations on some of the platforms the squirrel jumps across. When the squirrel lands on a surface, the surface squashes under the impact then bounces back to rest. Two Script Graphs produce this behavior, coordinating through a single named event. Unlike the squirrel talk example above, where the graph exchanges messages with SwiftUI, both sides of this event are graphs — one graph detects the landing and announces it, and the other graph plays the reaction.
 
 One graph detects the landing and announces it. In `OnFloorCollision`, an `On Collision Began` node starts when the squirrel touches the surface, and a `Send Entity Event` node sends an event named `bounce` to the entity that plays the animation.
 
-![A screenshot of the OnFloorCollision Script Graph in Reality Composer Pro, where an On Collision Began node feeds a Send Entity Event node that sends an event named bounce.](https://docs-assets.developer.apple.com/published/525dcfba5bfb520931057779b4bc65f3/collision-began%402x.png)
+![A screenshot of the OnFloorCollision Script Graph in Reality Composer Pro, where an On Collision Began node feeds a Send Entity Event node that sends an event named bounce.](/images/com.apple.visionOS/collision-began@2x.png)
 
 In `BounceAnim`, an `On Entity Event` node listens for `bounce` and records the moment it arrives. The rest of the graph uses that timestamp to animate the surface so it squashes and springs back.
 
-![A screenshot of the BounceAnim Script Graph in Reality Composer Pro, where an On Entity Event node for bounce sets a variable to the current time to start the animation.](https://docs-assets.developer.apple.com/published/710512ef3839b0b5f2ee3c800c5f9143/bounce-anim%402x.png)
+![A screenshot of the BounceAnim Script Graph in Reality Composer Pro, where an On Entity Event node for bounce sets a variable to the current time to start the animation.](/images/com.apple.visionOS/bounce-anim@2x.png)
 
 ## See Also
 
-- [Reality Composer Pro](../RealityComposerPro/RealityComposerPro.md)
+- [Reality Composer Pro](../realitycomposerpro/realitycomposerpro.md)
   Build, design, and orchestrate 3D content for your RealityKit apps.
 - [Chaparral Village: Building an immersive visionOS adventure game](chaparral-village-building-an-immersive-visionos-adventure-game.md)
   Create an adventure game using SwiftUI, RealityKit, and Reality Composer Pro 3.
@@ -117,7 +117,7 @@ In `BounceAnim`, an `On Entity Event` node listens for `bounce` and records the 
   Add a deeper level of immersion to media playback in your app with RealityKit and Reality Composer Pro.
 - [Enabling video reflections in an immersive environment](enabling-video-reflections-in-an-immersive-environment.md)
   Create a more immersive experience by adding video reflections in a custom environment.
-- [Combining 2D and 3D views in an immersive app](../RealityKit/combining-2d-and-3d-views-in-an-immersive-app.md)
+- [Combining 2D and 3D views in an immersive app](../realitykit/combining-2d-and-3d-views-in-an-immersive-app.md)
   Use attachments to place 2D content relative to 3D content in your visionOS app.
 - [Understanding the modular architecture of RealityKit](understanding-the-realitykit-modular-architecture.md)
   Learn how everything fits together in RealityKit.

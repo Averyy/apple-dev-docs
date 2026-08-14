@@ -41,7 +41,7 @@ The [`setDynamicShapes(_:forFunction:)`](bnnsgraph/context/setdynamicshapes(_:fo
 ## Relationships
 
 ### Conforms To
-- [ExpressibleByArrayLiteral](../Swift/ExpressibleByArrayLiteral.md)
+- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
 
 ## See Also
 

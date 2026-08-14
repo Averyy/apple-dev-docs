@@ -21,7 +21,7 @@ func compare(_ quantity: HKQuantity) -> ComparisonResult
 
 #### Return Value
 
-[`ComparisonResult.orderedDescending`](https://developer.apple.com/documentation/Foundation/ComparisonResult/orderedDescending) if the parameter is less than the receiver. [`ComparisonResult.orderedAscending`](https://developer.apple.com/documentation/Foundation/ComparisonResult/orderedAscending) if the parameter is greater than the receiver. [`ComparisonResult.orderedSame`](https://developer.apple.com/documentation/Foundation/ComparisonResult/orderedSame) if the quantities are equal.
+[`ComparisonResult.orderedDescending`](https://developer.apple.com/documentation/foundation/comparisonresult/ordereddescending) if the parameter is less than the receiver. [`ComparisonResult.orderedAscending`](https://developer.apple.com/documentation/foundation/comparisonresult/orderedascending) if the parameter is greater than the receiver. [`ComparisonResult.orderedSame`](https://developer.apple.com/documentation/foundation/comparisonresult/orderedsame) if the quantities are equal.
 
 #### Discussion
 
@@ -35,7 +35,7 @@ If you need to programmatically check whether a particular unit is compatible wi
 
 ## Parameters
 
-- `quantity`: The quantity to compare. This method throws an exception if the quantities do not have compatible units ([`invalidArgumentException`](https://developer.apple.com/documentation/Foundation/NSExceptionName/invalidArgumentException)).
+- `quantity`: The quantity to compare. This method throws an exception if the quantities do not have compatible units ([`invalidArgumentException`](https://developer.apple.com/documentation/foundation/nsexceptionname/invalidargumentexception)).
 
 ## See Also
 

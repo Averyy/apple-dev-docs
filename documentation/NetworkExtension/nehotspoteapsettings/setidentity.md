@@ -23,7 +23,7 @@ Returns `false` if the parameter is not an object of `SecIdentityRef` type or if
 
 #### Discussion
 
-Your app must store `SecIdentity` in the keychain access group $`(Team​Identifier​Prefix)com​.apple​.networkextensionsharing`. The OS uses [`SecItemCopyMatching(_:_:)`](https://developer.apple.com/documentation/Security/SecItemCopyMatching(_:_:)) to obtain a persistent reference to this identity from the application’s keychain and uses it during EAP authentication.
+Your app must store `SecIdentity` in the keychain access group $`(Team​Identifier​Prefix)com​.apple​.networkextensionsharing`. The OS uses [`SecItemCopyMatching(_:_:)`](https://developer.apple.com/documentation/security/secitemcopymatching(_:_:)) to obtain a persistent reference to this identity from the application’s keychain and uses it during EAP authentication.
 
 ## Parameters
 

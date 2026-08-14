@@ -35,8 +35,8 @@ protocol DiffieHellmanKeyAgreement : Sendable
 ## Relationships
 
 ### Inherits From
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 ### Inherited By
 - [HPKEDiffieHellmanPrivateKey](hpkediffiehellmanprivatekey.md)
 - [HPKEDiffieHellmanPrivateKeyGeneration](hpkediffiehellmanprivatekeygeneration.md)

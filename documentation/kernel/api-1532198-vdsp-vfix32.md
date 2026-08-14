@@ -21,9 +21,9 @@ If the resulting value is outside the bounds of the output type, the behavior is
 ## Parameters
 
 - `__A`: The single-precision floating-point input vector.
-- `__IA`: The stride for input vector  . 
+- `__IA`: The stride for input vector `A`. 
 - `__C`: The 32-bit integer output vector.
-- `__IC`: The stride for output vector  . 
+- `__IC`: The stride for output vector `C`. 
 - `__N`: The number of values to convert.
 
 ## See Also

@@ -17,7 +17,7 @@ func CGWindowListCopyWindowInfo(_ option: CGWindowListOption, _ relativeToWindow
 
 #### Return Value
 
-An array of [`CFDictionary`](https://developer.apple.com/documentation/CoreFoundation/CFDictionary) types, each of which contains information about one of the windows in the current user session. If there are no windows matching the desired criteria, the function returns an empty array. If you call this function from outside of a GUI security session or when no window server is running, this function returns `NULL`.
+An array of [`CFDictionary`](https://developer.apple.com/documentation/corefoundation/cfdictionary) types, each of which contains information about one of the windows in the current user session. If there are no windows matching the desired criteria, the function returns an empty array. If you call this function from outside of a GUI security session or when no window server is running, this function returns `NULL`.
 
 #### Discussion
 

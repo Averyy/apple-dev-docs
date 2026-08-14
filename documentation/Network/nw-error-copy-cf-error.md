@@ -22,7 +22,7 @@ func nw_error_copy_cf_error(_ error: nw_error_t) -> Unmanaged<CFError>
 
 #### Discussion
 
-The function copies the network error’s information to a [`CFError`](https://developer.apple.com/documentation/CoreFoundation/CFError) instance.
+The function copies the network error’s information to a [`CFError`](https://developer.apple.com/documentation/corefoundation/cferror) instance.
 
 ## See Also
 

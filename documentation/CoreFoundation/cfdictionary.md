@@ -32,7 +32,7 @@ CFDictionary provides functions for querying the values of a dictionary. The fun
 
 The [`CFDictionaryApplyFunction(_:_:_:)`](cfdictionaryapplyfunction(_:_:_:).md) function lets you apply a function to all key-value pairs in a dictionary.
 
-CFDictionary is “toll-free bridged” with its Cocoa Foundation counterpart, [`NSDictionary`](https://developer.apple.com/documentation/Foundation/NSDictionary). This means that the Core Foundation type is interchangeable in function or method calls with the bridged Foundation object. Therefore, in a method where you see an `NSDictionary *` parameter, you can pass in a `CFDictionaryRef`, and in a function where you see a `CFDictionaryRef` parameter, you can pass in an NSDictionary instance. This also applies to concrete subclasses of NSDictionary. See [`Toll-Free Bridged Types`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFDesignConcepts/Articles/tollFreeBridgedTypes.html#//apple_ref/doc/uid/TP40010677) for more information on toll-free bridging.
+CFDictionary is “toll-free bridged” with its Cocoa Foundation counterpart, [`NSDictionary`](https://developer.apple.com/documentation/foundation/nsdictionary). This means that the Core Foundation type is interchangeable in function or method calls with the bridged Foundation object. Therefore, in a method where you see an `NSDictionary *` parameter, you can pass in a `CFDictionaryRef`, and in a function where you see a `CFDictionaryRef` parameter, you can pass in an NSDictionary instance. This also applies to concrete subclasses of NSDictionary. See [`Toll-Free Bridged Types`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFDesignConcepts/Articles/tollFreeBridgedTypes.html#//apple_ref/doc/uid/TP40010677) for more information on toll-free bridging.
 
 ## Topics
 
@@ -91,8 +91,8 @@ CFDictionary is “toll-free bridged” with its Cocoa Foundation counterpart, [
 ### Inherited By
 - [CFMutableDictionary](cfmutabledictionary.md)
 ### Conforms To
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
 
 ## See Also
 

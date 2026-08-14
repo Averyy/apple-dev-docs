@@ -21,7 +21,7 @@ The iCloud services used by the app.
 
 To add this entitlement to your app, enable the iCloud capability and the iCloud Documents or CloudKit service in Xcode.
 
-The value `CloudKit-Anonymous` is only available to App Clips, but App Clips can’t use the values `CloudDocuments` or `CloudKit`. For more information on using CloudKit in your App Clip, see [`Sharing data between your App Clip and your full app`](https://developer.apple.com/documentation/AppClip/sharing-data-between-your-app-clip-and-your-full-app).
+The value `CloudKit-Anonymous` is only available to App Clips, but App Clips can’t use the values `CloudDocuments` or `CloudKit`. For more information on using CloudKit in your App Clip, see [`Sharing data between your App Clip and your full app`](https://developer.apple.com/documentation/appclip/sharing-data-between-your-app-clip-and-your-full-app).
 
 ## See Also
 

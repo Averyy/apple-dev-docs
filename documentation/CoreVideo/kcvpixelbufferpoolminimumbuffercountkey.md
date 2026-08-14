@@ -22,7 +22,7 @@ let kCVPixelBufferPoolMinimumBufferCountKey: CFString
 
 #### Discussion
 
-This value for this key is of type [`CFNumber`](https://developer.apple.com/documentation/CoreFoundation/CFNumber).
+This value for this key is of type [`CFNumber`](https://developer.apple.com/documentation/corefoundation/cfnumber).
 
 ## See Also
 

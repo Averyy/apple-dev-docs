@@ -122,8 +122,8 @@ Build a navigation mesh from a model’s geometry or from raw vertex and polygon
 
 ### Conforms To
 - [Resource](resource.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

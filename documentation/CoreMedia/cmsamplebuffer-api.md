@@ -9,7 +9,7 @@ An object that contains zero or more media samples of a uniform media type.
 Sample buffers are Core Foundation objects that the system uses to move media sample data through the media pipeline. An instance of `CMSampleBuffer` contains zero or more compressed (or uncompressed) samples of a particular media type and contains one of the following:
 
 - A [`CMBlockBuffer`](cmblockbuffer.md) of one or more media samples
-- A [`CVImageBuffer`](https://developer.apple.com/documentation/CoreVideo/cvimagebuffer-q40), a reference to the format description for the stream of `CMSampleBuffers`, size and timing information for each of the contained media samples, and both buffer-level and sample-level attachments
+- A [`CVImageBuffer`](https://developer.apple.com/documentation/corevideo/cvimagebuffer-q40), a reference to the format description for the stream of `CMSampleBuffers`, size and timing information for each of the contained media samples, and both buffer-level and sample-level attachments
 
 A sample buffer can contain both sample-level and buffer-level attachments. Each individual sample in a buffer may provide attachments that include information such as timestamps and video frame dependencies. You read and write sample-level attachments using the [`CMSampleBufferGetSampleAttachmentsArray(_:createIfNecessary:)`](cmsamplebuffergetsampleattachmentsarray(_:createifnecessary:).md) function. Buffer-level attachments provide information about the buffer as a whole, such as playback speed and actions to perform upon consuming the buffer. You can read and write buffer-level attachments using the APIs described in [`CMAttachment`](cmattachment-api.md) and the keys listed under [`Sample Attachment Keys`](sample-attachment-keys.md).
 

@@ -21,7 +21,7 @@ init(url imageURL: URL, options: [VNImageOption : Any] = [:])
 
 ## Parameters
 
-- `imageURL`: A URL pointing to the image to be used for performing the requests.  The image must be in a format supported by [`Image I/O`](https://developer.apple.com/documentation/ImageIO). Image content is immutable.
+- `imageURL`: A URL pointing to the image to be used for performing the requests.  The image must be in a format supported by [`Image I/O`](https://developer.apple.com/documentation/imageio). Image content is immutable.
 - `options`: An optional dictionary containing [`VNImageOption`](vnimageoption.md) keys to auxiliary image data.
 
 ## See Also

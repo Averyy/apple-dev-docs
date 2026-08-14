@@ -7,7 +7,6 @@ A string that contains the notification’s main content.
 
 **Availability**:
 - iOS 26.5+
-- iPadOS 26.5+
 
 ## Declaration
 

@@ -28,7 +28,7 @@ Creates the notification object to receive notifications from IOKit of new devic
 
 ## Parameters
 
-- `masterPort`: The primary port obtained from  . Pass   to look up the default primary port.
+- `masterPort`: The primary port obtained from [`IOMasterPort(_:_:)`](1514652-iomasterport.md). Pass [`kIOMasterPortDefault`](kiomasterportdefault.md) to look up the default primary port.
 
 ## See Also
 

@@ -22,7 +22,7 @@ var kAudioSessionMode_Measurement: Int { get }
 
 When this mode is in use, the device does not perform automatic gain adjustment on incoming audio. For use with the [`kAudioSessionCategory_RecordAudio`](kaudiosessioncategory_recordaudio.md) or [`kAudioSessionCategory_PlayAndRecord`](kaudiosessioncategory_playandrecord.md) audio session categories. On devices with more than one built-in microphone, the primary microphone is used.
 
-This mode is equivalent to the [`measurement`](https://developer.apple.com/documentation/AVFAudio/AVAudioSession/Mode-swift.struct/measurement) mode provided in the AVFoundation framework.
+This mode is equivalent to the [`measurement`](https://developer.apple.com/documentation/avfaudio/avaudiosession/mode-swift.struct/measurement) mode provided in the AVFoundation framework.
 
 ## See Also
 

@@ -17,7 +17,7 @@ static OSPtr<IOBufferMemoryDescriptor> withBytes(const void *bytes, vm_size_t wi
 ## Parameters
 
 - `bytes`: The bytes to copy into the newly allocated buffer. 
-- `withLength`: The number of bytes in the   parameter.
+- `withLength`: The number of bytes in the `bytes` parameter.
 - `withDirection`: The direction of the I/O transfer. For example: kIODirectionOut, kIODirectionIn.
 - `withContiguousMemory`: A Boolean value that indicates whether to use a contiguous block of memory for the descriptor’s buffer. 
 
@@ -41,7 +41,7 @@ static OSPtr<IOBufferMemoryDescriptor> withBytes(const void *bytes, vm_size_t wi
   Creates a buffer memory descriptor and allocates enough bytes to meet the specified capacity.
 - [+ withCopy](iobuffermemorydescriptor/3074961-withcopy.md)
   Creates a memory buffer with memory descriptor for that buffer.
-- [- free](../driverkit/iobuffermemorydescriptor/free.md)
+- [- free](iobuffermemorydescriptor/3180456-free.md)
   Performs any final cleanup for the memory buffer descriptor object.
 
 

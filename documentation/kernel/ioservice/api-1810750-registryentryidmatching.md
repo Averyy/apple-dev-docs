@@ -23,8 +23,8 @@ The matching dictionary created, or passed in, is returned on success, or zero o
 
 ## Parameters
 
-- `name`: The service's ID. Matching is successful on the IOService object that return that ID from the   method.
-- `table`: If zero,   creates a matching dictionary and returns a reference to it, otherwise the matching properties are added to the specified dictionary.
+- `name`: The service's ID. Matching is successful on the IOService object that return that ID from the `IORegistryEntry::getRegistryEntryID()` method.
+- `table`: If zero, `registryEntryIDMatching` creates a matching dictionary and returns a reference to it, otherwise the matching properties are added to the specified dictionary.
 
 ## See Also
 

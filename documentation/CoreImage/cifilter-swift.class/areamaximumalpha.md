@@ -30,7 +30,7 @@ This filter returns the pixel with highest alpha value in the region defined by 
 The area maximum alpha filter uses the following properties:
 
 - **`inputImage`**: An image with the type [`CIImage`](ciimage.md).
-- **`extent`**: A [`CGRect`](https://developer.apple.com/documentation/CoreFoundation/CGRect) that specifies the subregion of the image that you want to process.
+- **`extent`**: A [`CGRect`](https://developer.apple.com/documentation/corefoundation/cgrect) that specifies the subregion of the image that you want to process.
 
 The following code creates a filter that results in a single pixel image containing the pixel with the highest alpha value:
 
@@ -47,7 +47,7 @@ func areaMaximumAlpha(inputImage: CIImage) -> CIImage {
 }
 ```
 
-![Two images side by side arranged horizontally. The left image is a photograph of a modern brick building. A square outline highlights a 500 x 500 pixel region in the image. The right image contains the result of running the area maximum alpha filter. It contains the color with the highest alpha value from the highlighted square.](https://docs-assets.developer.apple.com/published/e28011419e03c28b85437191b4877b88/media-4332167%402x.png)
+![Two images side by side arranged horizontally. The left image is a photograph of a modern brick building. A square outline highlights a 500 x 500 pixel region in the image. The right image contains the result of running the area maximum alpha filter. It contains the color with the highest alpha value from the highlighted square.](/images/com.apple.coreimage/media-4332167@2x.png)
 
 ## See Also
 

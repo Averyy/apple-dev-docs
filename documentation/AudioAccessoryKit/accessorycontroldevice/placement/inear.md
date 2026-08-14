@@ -7,7 +7,6 @@ The device is in someone’s ear.
 
 **Availability**:
 - iOS 26.4+
-- iPadOS 26.4+
 
 ## Declaration
 

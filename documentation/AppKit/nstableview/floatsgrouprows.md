@@ -18,7 +18,7 @@ var floatsGroupRows: Bool { get set }
 
 Group rows are rows for which the table view delegate’s [`tableView(_:isGroupRow:)`](nstableviewdelegate/tableview(_:isgrouprow:).md) method returns YES. These rows can be displayed as if they are floating in a view-based table view.
 
-The default value of this property is [`true`](https://developer.apple.com/documentation/Swift/true).
+The default value of this property is [`true`](https://developer.apple.com/documentation/swift/true).
 
 
 ---

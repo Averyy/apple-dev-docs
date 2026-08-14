@@ -16,7 +16,7 @@ func write(toFile path: String, atomically atomicFlag: Bool, updateFilenames upd
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/Swift/true) when the write operation is successful, [`false`](https://developer.apple.com/documentation/Swift/false) otherwise.
+[`true`](https://developer.apple.com/documentation/swift/true) when the write operation is successful, [`false`](https://developer.apple.com/documentation/swift/false) otherwise.
 
 #### Discussion
 
@@ -25,9 +25,9 @@ Beginning with OS X v10.6, the preferred method of referring to files is with a 
 ## Parameters
 
 - `path`: Pathname of the file-system node to which the receiver’s contents are written.
-- `atomicFlag`: [`true`](https://developer.apple.com/documentation/Swift/true) to write the file safely so that: - An existing file is not overwritten
-- The method fails if the file cannot be written in its entirety [`false`](https://developer.apple.com/documentation/Swift/false) to overwrite an existing file and ignore incomplete writes.
-- `updateFilenamesFlag`: [`true`](https://developer.apple.com/documentation/Swift/true) to update the receiver’s filenames (its filename and—for directory file wrappers—the filenames of its sub–file wrappers) be changed to the filenames of the corresponding nodes in the file system, after a successful write operation. Use this in Save or Save As operations. [`false`](https://developer.apple.com/documentation/Swift/false) to specify that the receiver’s filenames not be updated. Use this in Save To operations.
+- `atomicFlag`: [`true`](https://developer.apple.com/documentation/swift/true) to write the file safely so that: - An existing file is not overwritten
+- The method fails if the file cannot be written in its entirety [`false`](https://developer.apple.com/documentation/swift/false) to overwrite an existing file and ignore incomplete writes.
+- `updateFilenamesFlag`: [`true`](https://developer.apple.com/documentation/swift/true) to update the receiver’s filenames (its filename and—for directory file wrappers—the filenames of its sub–file wrappers) be changed to the filenames of the corresponding nodes in the file system, after a successful write operation. Use this in Save or Save As operations. [`false`](https://developer.apple.com/documentation/swift/false) to specify that the receiver’s filenames not be updated. Use this in Save To operations.
 
 ## See Also
 

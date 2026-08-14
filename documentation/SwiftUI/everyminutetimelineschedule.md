@@ -38,8 +38,8 @@ You can also use [`everyMinute`](timelineschedule/everyminute.md) to construct t
 ## Relationships
 
 ### Conforms To
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 - [TimelineSchedule](timelineschedule.md)
 
 ## See Also

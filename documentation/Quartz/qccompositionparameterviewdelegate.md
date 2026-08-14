@@ -11,10 +11,10 @@ This informal protocol allows your application to define which parameters should
 ## Topics
 
 ### Responding to Composition Selections
-- [func compositionParameterView(QCCompositionParameterView!, shouldDisplayParameterWithKey: String!, attributes: [AnyHashable : Any]!) -> Bool](../ObjectiveC/NSObject-swift.class/compositionParameterView(_:shouldDisplayParameterWithKey:attributes:).md)
+- [func compositionParameterView(QCCompositionParameterView!, shouldDisplayParameterWithKey: String!, attributes: [AnyHashable : Any]!) -> Bool](../objectivec/nsobject-swift.class/compositionparameterview(_:shoulddisplayparameterwithkey:attributes:).md)
   Allows you to define which composition parameters are visible in the user interface when the composition parameter view refreshes.
 ### Responding when an Input Parameter Changes
-- [func compositionParameterView(QCCompositionParameterView!, didChangeParameterWithKey: String!)](../ObjectiveC/NSObject-swift.class/compositionParameterView(_:didChangeParameterWithKey:).md)
+- [func compositionParameterView(QCCompositionParameterView!, didChangeParameterWithKey: String!)](../objectivec/nsobject-swift.class/compositionparameterview(_:didchangeparameterwithkey:).md)
   Called after an input parameter in the composition parameter view has been edited.
 
 ## See Also

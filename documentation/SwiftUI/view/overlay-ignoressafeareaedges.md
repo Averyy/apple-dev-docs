@@ -41,7 +41,7 @@ struct CoveredCircle: View {
 
 SwiftUI anchors the style to the view’s bounds. For the example above, the overlay fills the entirety of the circle’s frame (which happens to be wider than the circle is tall):
 
-![A screenshot of a circle showing through a rectangle that imposes](https://docs-assets.developer.apple.com/published/ad8d81eac6822374f7b9a42224523ba6/View-overlay-5%402x.png)
+![A screenshot of a circle showing through a rectangle that imposes](/images/com.apple.SwiftUI/View-overlay-5@2x.png)
 
 SwiftUI also limits the style’s extent to the view’s container-relative shape. You can see this effect if you constrain the `CoveredCircle` view with a [`containerShape(_:)`](view/containershape(_:).md) modifier:
 
@@ -52,7 +52,7 @@ CoveredCircle()
 
 The overlay takes on the specified container shape:
 
-![A screenshot of a circle showing through a rounded rectangle that](https://docs-assets.developer.apple.com/published/79c6ec70d1f649f4c2eac46aa9cba166/View-overlay-6%402x.png)
+![A screenshot of a circle showing through a rounded rectangle that](/images/com.apple.SwiftUI/View-overlay-6@2x.png)
 
 By default, the overlay ignores safe area insets on all edges, but you can provide a specific set of edges to ignore, or an empty set to respect safe area insets on all edges:
 

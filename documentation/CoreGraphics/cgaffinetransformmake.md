@@ -28,7 +28,7 @@ A new affine transform matrix constructed from the values you specify.
 
 This function creates a `CGAffineTransform` structure that represents a new affine transformation matrix, which you can use (and reuse, if you want) to transform a coordinate system. The matrix takes the following form:
 
-![A 3 by 3 matrix.](https://docs-assets.developer.apple.com/published/ad5f4a5c94518f9345389eb1608389cf/media-1966718%402x.png)
+![A 3 by 3 matrix.](/images/com.apple.coregraphics/media-1966718@2x.png)
 
 Because the third column is always `(0,0,1)`, the `CGAffineTransform` data structure returned by this function contains values for only the first two columns.
 

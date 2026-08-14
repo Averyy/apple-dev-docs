@@ -24,7 +24,7 @@ The layout attributes of the item while it is at the specified position.
 
 #### Discussion
 
-When an item is moving because of user interactivity, the layout object uses this method to retrieve layout attributes to use for the item while it is at the specified position. The default implementation of this method returns a copy of the item’s existing attributes with two changes: the [`center`](uicollectionviewlayoutattributes/center.md) point is set to the value in `position` and the [`zIndex`](uicollectionviewlayoutattributes/zindex.md) value is set to [`NSIntegerMax`](https://developer.apple.com/documentation/ObjectiveC/NSIntegerMax) so that the item floats above other items in the collection view.
+When an item is moving because of user interactivity, the layout object uses this method to retrieve layout attributes to use for the item while it is at the specified position. The default implementation of this method returns a copy of the item’s existing attributes with two changes: the [`center`](uicollectionviewlayoutattributes/center.md) point is set to the value in `position` and the [`zIndex`](uicollectionviewlayoutattributes/zindex.md) value is set to [`NSIntegerMax`](https://developer.apple.com/documentation/objectivec/nsintegermax) so that the item floats above other items in the collection view.
 
 Subclasses can override this method and modify additional layout attributes as needed. If you override this method, call `super` first to retrieve the item’s existing attributes and then make your changes to the returned structure.
 

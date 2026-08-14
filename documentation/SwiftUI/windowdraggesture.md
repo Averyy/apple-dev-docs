@@ -17,7 +17,7 @@ struct WindowDragGesture
 
 #### Overview
 
-To recognize a window drag gesture on a view, create and configure the gesture, and then add it to the view using the [`gesture(_:isEnabled:)`](view/gesture(_:isenabled:).md) modifier. Consider also letting the gesture [`allowsWindowActivationEvents(_:)`](View/allowsWindowActivationEvents(_:).md) so that dragging the containing window works even when it’s inactive.
+To recognize a window drag gesture on a view, create and configure the gesture, and then add it to the view using the [`gesture(_:isEnabled:)`](view/gesture(_:isenabled:).md) modifier. Consider also letting the gesture [`allowsWindowActivationEvents(_:)`](view/allowswindowactivationevents(_:).md) so that dragging the containing window works even when it’s inactive.
 
 To add a window drag gesture to a [`Circle`](circle.md) and change its color while a user performs the window drag gesture:
 

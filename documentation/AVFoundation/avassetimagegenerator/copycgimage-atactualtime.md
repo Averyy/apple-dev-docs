@@ -20,7 +20,7 @@ func copyCGImage(at requestedTime: CMTime, actualTime: UnsafeMutablePointer<CMTi
 
 #### Return Value
 
-A [`CGImage`](https://developer.apple.com/documentation/CoreGraphics/CGImage) for the asset at or near a specified time, or `NULL` if the image could not be created.
+A [`CGImage`](https://developer.apple.com/documentation/coregraphics/cgimage) for the asset at or near a specified time, or `NULL` if the image could not be created.
 
 #### Discussion
 

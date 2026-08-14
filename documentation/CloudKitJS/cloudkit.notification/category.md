@@ -16,7 +16,7 @@ readonly attribute String category;
 
 #### Discussion
 
-Categories of actions allow you to present custom actions to the user on your push notifications. For details, see [`UIUserNotificationCategory`](https://developer.apple.com/documentation/UIKit/UIUserNotificationCategory).
+Categories of actions allow you to present custom actions to the user on your push notifications. For details, see [`UIUserNotificationCategory`](https://developer.apple.com/documentation/uikit/uiusernotificationcategory).
 
 ## See Also
 

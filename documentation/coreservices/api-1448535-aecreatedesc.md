@@ -28,10 +28,10 @@ Thread safe starting in OS X v10.2.
 
 ## Parameters
 
-- `typeCode`: The descriptor type for the new descriptor. For a list of AppleScript’s predefined descriptor types, see  . See  .
-- `dataPtr`: A pointer to the data for the new descriptor. This data is copied into a newly-allocated block of memory for the descriptor that is created. To minimize copying overhead, consider using  .
+- `typeCode`: The descriptor type for the new descriptor. For a list of AppleScript’s predefined descriptor types, see [`Descriptor Type Constants`](apple_events/1542788-descriptor_type_constants.md). See [`DescType`](desctype.md).
+- `dataPtr`: A pointer to the data for the new descriptor. This data is copied into a newly-allocated block of memory for the descriptor that is created. To minimize copying overhead, consider using [`AECreateDescFromExternalPtr(_:_:_:_:_:_:)`](1446239-aecreatedescfromexternalptr.md).
 - `dataSize`: The length, in bytes, of the data for the new descriptor.
-- `result`: A pointer to a descriptor. On successful return, a descriptor that incorporates the data specified by the   parameter. On error, a null descriptor. If the function returns successfully, your application should call the   function to dispose of the resulting descriptor after it has finished using it. See  .
+- `result`: A pointer to a descriptor. On successful return, a descriptor that incorporates the data specified by the `dataPtr` parameter. On error, a null descriptor. If the function returns successfully, your application should call the [`AEDisposeDesc(_:)`](1444208-aedisposedesc.md) function to dispose of the resulting descriptor after it has finished using it. See [`AEDesc`](aedesc.md).
 
 ## See Also
 

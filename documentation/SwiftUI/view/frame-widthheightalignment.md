@@ -48,7 +48,7 @@ VStack {
 }
 ```
 
-![A screenshot showing the effect of frame size options: a purple](https://docs-assets.developer.apple.com/published/90f7ac630e92a53baf01d5297639c05d/SwiftUI-View-frame-1%402x.png)
+![A screenshot showing the effect of frame size options: a purple](/images/com.apple.SwiftUI/SwiftUI-View-frame-1@2x.png)
 
 `The alignment` parameter specifies this view’s alignment within the frame.
 
@@ -60,7 +60,7 @@ Text("Hello world!")
 
 In the example above, the text is positioned at the top, leading corner of the frame. If the text is taller than the frame, its bounds may extend beyond the bottom of the frame’s bounds.
 
-![A screenshot showing the effect of frame size options on a text view](https://docs-assets.developer.apple.com/published/c38bb439a9c5e2632878344997227e8d/SwiftUI-View-frame-2%402x.png)
+![A screenshot showing the effect of frame size options on a text view](/images/com.apple.SwiftUI/SwiftUI-View-frame-2@2x.png)
 
 ## Parameters
 

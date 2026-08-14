@@ -22,7 +22,7 @@ let kCVImageBufferGammaLevelKey: CFString
 
 #### Discussion
 
-The gamma level value is of type [`CFNumber`](https://developer.apple.com/documentation/CoreFoundation/CFNumber).
+The gamma level value is of type [`CFNumber`](https://developer.apple.com/documentation/corefoundation/cfnumber).
 
 ## See Also
 

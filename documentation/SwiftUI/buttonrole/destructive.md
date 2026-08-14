@@ -42,7 +42,7 @@ List {
 .navigationTitle("Shopping List")
 ```
 
-![A screenshot of a list of three items, where the second item is](https://docs-assets.developer.apple.com/published/2209f1ece4e578c31a5d2523b4ed010c/ButtonRole-destructive-1%402x.png)
+![A screenshot of a list of three items, where the second item is](/images/com.apple.SwiftUI/ButtonRole-destructive-1@2x.png)
 
 ## See Also
 

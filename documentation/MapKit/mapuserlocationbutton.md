@@ -38,7 +38,7 @@ Use `MapUserLocationButton` in conjunction with [`Map`](map.md) as a stand alone
     }
 ```
 
-You can also use `MapUserLocationButton` in conjunction with the [`mapControls(_:)`](https://developer.apple.com/documentation/SwiftUI/View/mapControls(_:)) modifier as shown in this example:
+You can also use `MapUserLocationButton` in conjunction with the [`mapControls(_:)`](https://developer.apple.com/documentation/swiftui/view/mapcontrols(_:)) modifier as shown in this example:
 
 ```swift
     Map()
@@ -54,20 +54,20 @@ You can also use `MapUserLocationButton` in conjunction with the [`mapControls(_
   Creates a new user location button with the scope you specify.
 ### Managing map control sizing and visibility
 - [func mapControlVisibility(Visibility) -> some View
-](../SwiftUI/View/mapControlVisibility(_:).md)
+](../swiftui/view/mapcontrolvisibility(_:).md)
   Configures all Map controls in the environment to have the specified visibility
 - [func mapControls(() -> some View) -> some View
-](../SwiftUI/View/mapControls(_:).md)
+](../swiftui/view/mapcontrols(_:).md)
   Configures all `Map` views in the associated environment to have standard size and position controls
-- [func controlSize(_:)](../SwiftUI/View/controlSize(_:).md)
+- [func controlSize(_:)](../swiftui/view/controlsize(_:).md)
   Sets the size for controls within this view.
 ### Setting the namespace Identifier
 - [func mapScope(Namespace.ID) -> some View
-](../SwiftUI/View/mapScope(_:).md)
+](../swiftui/view/mapscope(_:).md)
   Creates a mapScope that SwiftUI uses to connect map controls to an associated map.
 ### Setting the tint and border shape
 - [func buttonBorderShape(ButtonBorderShape) -> some View
-](../SwiftUI/View/buttonBorderShape(_:).md)
+](../swiftui/view/buttonbordershape(_:).md)
   Sets the border shape for buttons in this view.
 - [func tint<S>(S) -> some MapContent](mapcontent/tint(_:).md)
   The tint shape style to apply to map content.
@@ -75,9 +75,9 @@ You can also use `MapUserLocationButton` in conjunction with the [`mapControls(_
 ## Relationships
 
 ### Conforms To
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
-- [View](../SwiftUI/View.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
+- [View](../swiftui/view.md)
 
 ## See Also
 

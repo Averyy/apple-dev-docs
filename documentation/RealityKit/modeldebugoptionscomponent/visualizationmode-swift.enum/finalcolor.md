@@ -34,7 +34,7 @@ if let television = try? await ModelEntity(named: "tv_retro") {
 
 | [`ModelDebugOptionsComponent.VisualizationMode.none`](modeldebugoptionscomponent/visualizationmode-swift.enum/none.md) | `finalColor` |
 | --- | --- |
-| ![A screenshot of a virtual TV in a visionOS app. The TV is an old-fashioned television displaying a multicolored test pattern. It is drawn with shadows and highlights to appear as realistic as possible.](https://docs-assets.developer.apple.com/published/a57e508a6549f1c8cce08e79ea6b7ec5/ModelDebugOptionsComponent-VisualizationMode-enum-none.jpg) | ![A screenshot of a virtual TV in a visionOS app. The TV is using a final color visualization, where every surface is fully opaque, and screen cannot be seen through the now opaque glass.](https://docs-assets.developer.apple.com/published/143f74b10137499656f5ddd77419bd15/ModelDebugOptionsComponent-VisualizationMode-enum-finalColor.jpg) |
+| ![A screenshot of a virtual TV in a visionOS app. The TV is an old-fashioned television displaying a multicolored test pattern. It is drawn with shadows and highlights to appear as realistic as possible.](/images/com.apple.RealityKit/ModelDebugOptionsComponent-VisualizationMode-enum-none.jpg) | ![A screenshot of a virtual TV in a visionOS app. The TV is using a final color visualization, where every surface is fully opaque, and screen cannot be seen through the now opaque glass.](/images/com.apple.RealityKit/ModelDebugOptionsComponent-VisualizationMode-enum-finalColor.jpg) |
 
 ## See Also
 

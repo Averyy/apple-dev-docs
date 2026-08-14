@@ -26,9 +26,9 @@ A new pixel buffer of type [`vImage.DynamicPixelFormat`](vimage/dynamicpixelform
 
 #### Discussion
 
-Use this function to create an image format and pixel buffer from a [`CGImage`](https://developer.apple.com/documentation/CoreGraphics/CGImage) instance. The pixel buffer that this function returns has a pixel format that’s unknown at compile time.
+Use this function to create an image format and pixel buffer from a [`CGImage`](https://developer.apple.com/documentation/coregraphics/cgimage) instance. The pixel buffer that this function returns has a pixel format that’s unknown at compile time.
 
-Note that you can call [`init(cgImage:cgImageFormat:pixelFormat:)`](vimage/pixelbuffer/init(cgimage:cgimageformat:pixelformat:).md) to create a statically typed pixel buffer from a [`CGImage`](https://developer.apple.com/documentation/CoreGraphics/CGImage) instance. However, this function allows you to create your own any-to-any converter for more control over the conversion process to a statically typed buffer.
+Note that you can call [`init(cgImage:cgImageFormat:pixelFormat:)`](vimage/pixelbuffer/init(cgimage:cgimageformat:pixelformat:).md) to create a statically typed pixel buffer from a [`CGImage`](https://developer.apple.com/documentation/coregraphics/cgimage) instance. However, this function allows you to create your own any-to-any converter for more control over the conversion process to a statically typed buffer.
 
 For example, the following code creates a dynamically typed pixel buffer and [`vImage_CGImageFormat`](vimage_cgimageformat.md) from a source image. Use the returned [`vImage_CGImageFormat`](vimage_cgimageformat.md) as the source format on an any-to-any converter. For example:
 

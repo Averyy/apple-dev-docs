@@ -23,17 +23,17 @@ match.message = "We're all counting on you!"
 try await match.endTurn(withNextParticipants: nextParticipants, turnTimeout: GKTurnTimeoutDefault, match: gameData)
 ```
 
-If a participant taps the notification when it appears, GameKit launches the game or brings it to the foreground. GameKit invokes the `GKTurnBasedEventListener` [`player(_:receivedTurnEventFor:didBecomeActive:)`](gkturnbasedeventlistener/player(_:receivedturneventfor:didbecomeactive:).md) protocol method passing [`true`](https://developer.apple.com/documentation/Swift/true) as the active parameter. Implement this method to join the match. For more information on handling turn-based events, see [`Starting turn-based matches and passing turns between players`](starting-turn-based-matches-and-passing-turns-between-players.md).
+If a participant taps the notification when it appears, GameKit launches the game or brings it to the foreground. GameKit invokes the `GKTurnBasedEventListener` [`player(_:receivedTurnEventFor:didBecomeActive:)`](gkturnbasedeventlistener/player(_:receivedturneventfor:didbecomeactive:).md) protocol method passing [`true`](https://developer.apple.com/documentation/swift/true) as the active parameter. Implement this method to join the match. For more information on handling turn-based events, see [`Starting turn-based matches and passing turns between players`](starting-turn-based-matches-and-passing-turns-between-players.md).
 
-If the game is in the foreground, GameKit invokes this method but passes [`false`](https://developer.apple.com/documentation/Swift/false) as the active parameter. You can then present the message in your own interface by getting the message from the match object using the [`message`](gkturnbasedmatch/message.md) property.
+If the game is in the foreground, GameKit invokes this method but passes [`false`](https://developer.apple.com/documentation/swift/false) as the active parameter. You can then present the message in your own interface by getting the message from the match object using the [`message`](gkturnbasedmatch/message.md) property.
 
-To localize a message, add the key you pass to the [`setLocalizableMessageWithKey(_:arguments:)`](gkturnbasedmatch/setlocalizablemessagewithkey(_:arguments:).md) method and a placeholder translation to a `.strings` file in your project (for example, the default `Localizable.strings` file). For more information on adapting your game for different languages and regions, see [`Localization`](https://developer.apple.com/documentation/Xcode/localization).
+To localize a message, add the key you pass to the [`setLocalizableMessageWithKey(_:arguments:)`](gkturnbasedmatch/setlocalizablemessagewithkey(_:arguments:).md) method and a placeholder translation to a `.strings` file in your project (for example, the default `Localizable.strings` file). For more information on adapting your game for different languages and regions, see [`Localization`](https://developer.apple.com/documentation/xcode/localization).
 
 ##### Send Messages From Any Participant
 
 Send a localized message from any participant to others using a Game Center notification. For example, send a reminder to the current participant from another participant who is waiting for them to take their turn. GameKit sends the reminder to the participants as a push notification that doesn’t interrupt their gameplay. The notification only appears when the game isn’t running — it doesn’t appear if the participant runs the game in either the foreground or background.
 
-![A screenshot of the Game Center notification reminder at the top of a phone screen. The notification shows the game name at the top and the message “It’s your turn to play.” at the bottom.](https://docs-assets.developer.apple.com/published/b24487f35ecf2f8cf71f5423f8a14224/media-3894240%402x.png)
+![A screenshot of the Game Center notification reminder at the top of a phone screen. The notification shows the game name at the top and the message “It’s your turn to play.” at the bottom.](/images/com.apple.gamekit/media-3894240@2x.png)
 
 To display the GameKit notification:
 
@@ -49,13 +49,13 @@ let participants = match.participants.filter {
 try await match.sendReminder(to: participants, localizableMessageKey: "It's your turn to play.", arguments: [])
 ```
 
-1. Add the localized message key and placeholder translation to a  `.strings` file in your project. If necessary, add a `.strings` file (for example, the default `Localizable.strings` file) to your project and make it localizable. For the Xcode steps, see [`Adding resources to localizations`](https://developer.apple.com/documentation/Xcode/adding-resources-to-localizations) and `Editing XLIFF and strings files`.
+1. Add the localized message key and placeholder translation to a  `.strings` file in your project. If necessary, add a `.strings` file (for example, the default `Localizable.strings` file) to your project and make it localizable. For the Xcode steps, see [`Adding resources to localizations`](https://developer.apple.com/documentation/xcode/adding-resources-to-localizations) and `Editing XLIFF and strings files`.
 
 ```swift
 "It's your turn to play." = "It's your turn to play.";
 ```
 
-When the player taps the notification, GameKit invokes the `GKTurnBasedEventListener` [`player(_:receivedTurnEventFor:didBecomeActive:)`](gkturnbasedeventlistener/player(_:receivedturneventfor:didbecomeactive:).md) protocol method passing [`true`](https://developer.apple.com/documentation/Swift/true) as the active parameter. Implement this method to join the existing match. For more information on handling turn-based events, see [`Starting turn-based matches and passing turns between players`](starting-turn-based-matches-and-passing-turns-between-players.md).
+When the player taps the notification, GameKit invokes the `GKTurnBasedEventListener` [`player(_:receivedTurnEventFor:didBecomeActive:)`](gkturnbasedeventlistener/player(_:receivedturneventfor:didbecomeactive:).md) protocol method passing [`true`](https://developer.apple.com/documentation/swift/true) as the active parameter. Implement this method to join the existing match. For more information on handling turn-based events, see [`Starting turn-based matches and passing turns between players`](starting-turn-based-matches-and-passing-turns-between-players.md).
 
 > **Note**:  If you exceed the system’s 10-minute limit for the frequency of sending reminders, a `GKServerTurnBasedMaxSessionOtherError` error occurs.
 
@@ -79,7 +79,7 @@ When the player taps the notification, GameKit invokes the `GKTurnBasedEventList
   Exchange request information that participants send in a turn-based match.
 - [class GKTurnBasedExchangeReply](gkturnbasedexchangereply.md)
   Details about a recipient’s response to an exchange request.
-- [GKGameCenterBadgingDisabled](../BundleResources/Information-Property-List/GKGameCenterBadgingDisabled.md)
+- [GKGameCenterBadgingDisabled](../bundleresources/information-property-list/gkgamecenterbadgingdisabled.md)
   A Boolean value indicating whether GameKit can add badges to a turn-based game icon.
 
 

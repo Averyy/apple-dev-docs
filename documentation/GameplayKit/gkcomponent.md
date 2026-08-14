@@ -25,7 +25,7 @@ class GKComponent
 
 You create components by subclassing [`GKComponent`](gkcomponent.md) to implement reusable behavior. Then, you build game entities by creating [`GKEntity`](gkentity.md) objects and using the [`addComponent(_:)`](gkentity/addcomponent(_:).md) method to attach instances of your custom component classes.
 
-At runtime, a component-based game needs to dispatch periodic logic—from an update/render loop method such as [`update(_:)`](https://developer.apple.com/documentation/SpriteKit/SKScene/update(_:)) (SpriteKit) or [`renderer(_:updateAtTime:)`](https://developer.apple.com/documentation/SceneKit/SCNSceneRendererDelegate/renderer(_:updateAtTime:)) (SceneKit), or a [`CADisplayLink`](https://developer.apple.com/documentation/QuartzCore/CADisplayLink) (iOS) or [`CVDisplayLink`](https://developer.apple.com/documentation/CoreVideo/CVDisplayLink) (macOS) timer in a custom rendering engine—to each of its components. GameplayKit provides two mechanisms for dispatching updates:
+At runtime, a component-based game needs to dispatch periodic logic—from an update/render loop method such as [`update(_:)`](https://developer.apple.com/documentation/spritekit/skscene/update(_:)) (SpriteKit) or [`renderer(_:updateAtTime:)`](https://developer.apple.com/documentation/scenekit/scnscenerendererdelegate/renderer(_:updateattime:)) (SceneKit), or a [`CADisplayLink`](https://developer.apple.com/documentation/quartzcore/cadisplaylink) (iOS) or [`CVDisplayLink`](https://developer.apple.com/documentation/corevideo/cvdisplaylink) (macOS) timer in a custom rendering engine—to each of its components. GameplayKit provides two mechanisms for dispatching updates:
 
 - Per-entity. Call each entity’s [`update(deltaTime:)`](gkentity/update(deltatime:).md) method, which will then forward to the [`update(deltaTime:)`](gkcomponent/update(deltatime:).md) method of each component. This option can be quickly implemented in games with a small number of entities and components.
 - Per-component. Use a [`GKComponentSystem`](gkcomponentsystem.md) object to handle all instances of a specific component class. When you call a component system’s [`update(deltaTime:)`](gkcomponentsystem/update(deltatime:).md) method, it forwards to the [`update(deltaTime:)`](gkcomponent/update(deltatime:).md) method of all the component objects it manages. Because a component system needs no knowledge of your game’s entity/component hierarchy, this option works well for games with complex object graphs.
@@ -50,21 +50,21 @@ For more information on Entity-Component architecture, read [`Entities and Compo
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Inherited By
 - [GKAgent](gkagent.md)
 - [GKSCNNodeComponent](gkscnnodecomponent.md)
 - [GKSKNodeComponent](gksknodecomponent.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCoding](../Foundation/NSCoding.md)
-- [NSCopying](../Foundation/NSCopying.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [NSSecureCoding](../Foundation/NSSecureCoding.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCoding](../foundation/nscoding.md)
+- [NSCopying](../foundation/nscopying.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSSecureCoding](../foundation/nssecurecoding.md)
 
 ## See Also
 

@@ -20,7 +20,7 @@ struct Semantic<Element>
 ## Relationships
 
 ### Conforms To
-- [Identifiable](../Swift/Identifiable.md)
+- [Identifiable](../swift/identifiable.md)
 - [MeshBufferSemantic](meshbuffersemantic.md)
 
 

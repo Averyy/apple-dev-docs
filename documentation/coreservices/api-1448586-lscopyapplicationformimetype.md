@@ -24,9 +24,9 @@ Thread-safe since Mac OS version 10.2.
 
 ## Parameters
 
-- `inMIMEType`: A Core Foundation string object specifying the MIME type to consider; see the   in the Core Foundation Reference Documentation for a description of the   data type. Comparison of MIME types is case-insensitive.
-- `inRolesMask`: A bit mask specifying the application’s desired role or roles with respect to items with the specified MIME type; see   for a description of this mask. If the role is unimportant, pass  .
-- `outAppURL`: A pointer to a Core Foundation URL reference that, on return, will identify the preferred application for items with the specified MIME type; see the   in the Core Foundation Reference Documentation for a description of the   data type. You are responsible for releasing the URL reference object.
+- `inMIMEType`: A Core Foundation string object specifying the MIME type to consider; see the *CFString Reference* in the Core Foundation Reference Documentation for a description of the `CFStringRef` data type. Comparison of MIME types is case-insensitive.
+- `inRolesMask`: A bit mask specifying the application’s desired role or roles with respect to items with the specified MIME type; see [`LSRolesMask`](lsrolesmask.md) for a description of this mask. If the role is unimportant, pass `kLSRolesAll`.
+- `outAppURL`: A pointer to a Core Foundation URL reference that, on return, will identify the preferred application for items with the specified MIME type; see the *CFURL Reference* in the Core Foundation Reference Documentation for a description of the `CFURLRef` data type. You are responsible for releasing the URL reference object.
 
 ## See Also
 

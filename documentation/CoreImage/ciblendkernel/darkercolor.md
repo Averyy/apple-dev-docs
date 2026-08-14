@@ -21,7 +21,7 @@ class var darkerColor: CIBlendKernel { get }
 
 #### Discussion
 
-![The result of using the darker color blend kernel (background image is top left, foreground image is bottom left)](https://docs-assets.developer.apple.com/published/02fd8e646805703a4b4b41e6bf133b3e/media-2926857%402x.png)
+![The result of using the darker color blend kernel (background image is top left, foreground image is bottom left)](/images/com.apple.coreimage/media-2926857@2x.png)
 
 ## See Also
 

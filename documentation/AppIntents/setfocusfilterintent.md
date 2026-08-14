@@ -39,11 +39,11 @@ protocol SetFocusFilterIntent : AppIntent, InstanceDisplayRepresentable
 
 ### Inherits From
 - [AppIntent](appintent.md)
-- [CustomLocalizedStringResourceConvertible](../Foundation/CustomLocalizedStringResourceConvertible.md)
+- [CustomLocalizedStringResourceConvertible](../foundation/customlocalizedstringresourceconvertible.md)
 - [InstanceDisplayRepresentable](instancedisplayrepresentable.md)
 - [PersistentlyIdentifiable](persistentlyidentifiable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

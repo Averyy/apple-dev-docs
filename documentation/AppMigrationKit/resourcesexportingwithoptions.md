@@ -48,10 +48,10 @@ Make continuous progress while exporting by repeatedly calling the archiver’s 
 ## Relationships
 
 ### Inherits From
-- [AppExtension](../ExtensionFoundation/AppExtension.md)
+- [AppExtension](../extensionfoundation/appextension.md)
 - [AppMigrationExtension](appmigrationextension.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 ### Inherited By
 - [ResourcesExporting](resourcesexporting.md)
 

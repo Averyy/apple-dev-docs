@@ -27,8 +27,8 @@ The platform expert or other drivers may implement various functions to control 
 
 ## Parameters
 
-- `functionName`: Name of the function to be called. When   is a C string,   converts the C string to an OSSymbol and calls the OSSymbol version of  . This process can block and should not be used from an interrupt context.
-- `waitForFunction`: If  ,   will not return until the function has been called.
+- `functionName`: Name of the function to be called. When `functionName` is a C string, `callPlatformFunction` converts the C string to an OSSymbol and calls the OSSymbol version of `callPlatformFunction`. This process can block and should not be used from an interrupt context.
+- `waitForFunction`: If `true`, `callPlatformFunction` will not return until the function has been called.
 
 ## See Also
 

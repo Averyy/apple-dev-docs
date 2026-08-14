@@ -16,11 +16,11 @@ interface GeoJSONDelegate
 
 #### Overview
 
-The delegate object provides hooks into the key moments in the GeoJSON import process. When you pass a delegate object to the [`importGeoJSON(data, callback)`](mapkit/importgeojson.md) method, you can:
+The delegate object provides hooks into the key moments in the GeoJSON import process. When you pass a delegate object to the [`importGeoJSON()`](mapkit/importgeojson.md) method, you can:
 
 - Modify or replace annotations and overlays before MapKit JS adds them to the [`ItemCollection`](itemcollection.md) object.
 - Override the default GeoJSON mapping behavior.
-- Provide custom styling by implementing [`styleForOverlay(overlay, geoJSON)`](geojsondelegate/styleforoverlay.md).
+- Provide custom styling by implementing [`styleForOverlay()`](geojsondelegate/styleforoverlay.md).
 - Receive feedback on the result from importing GeoJSON data.
 
 ## Topics

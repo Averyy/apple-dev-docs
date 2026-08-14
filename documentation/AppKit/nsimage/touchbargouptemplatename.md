@@ -19,7 +19,7 @@ class let touchBarGoUpTemplateName: String
 
 #### Discussion
 
-![Template image for go up](https://docs-assets.developer.apple.com/published/950b247fda4d8560b5fa06b6e5f58139/media-2793540%402x.png)
+![Template image for go up](/images/com.apple.appkit/media-2793540@2x.png)
 
 Touch Bar template images are exclusively for use in [`NSTouchBarItem`](nstouchbaritem.md) objects and not in onscreen windows.
 

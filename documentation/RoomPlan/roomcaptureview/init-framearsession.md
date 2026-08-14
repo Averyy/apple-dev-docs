@@ -19,14 +19,14 @@ Creates a room-capture view with the given AR session.
 
 #### Discussion
 
-By providing your own [`ARSession`](https://developer.apple.com/documentation/ARKit/ARSession) object, you can continue your app’s existing AR experience by seamlessly transitioning into a room-scanning session wtih RoomPlan. In addition, continuing an `ARSession` across multiple room-capture sessions — specifically, different rooms in the same vicinity — enables you to merge multiple [`CapturedRoom`](capturedroom.md) objects into a single captured structure. For more information, see [`CapturedStructure`](capturedstructure.md).
+By providing your own [`ARSession`](https://developer.apple.com/documentation/arkit/arsession) object, you can continue your app’s existing AR experience by seamlessly transitioning into a room-scanning session wtih RoomPlan. In addition, continuing an `ARSession` across multiple room-capture sessions — specifically, different rooms in the same vicinity — enables you to merge multiple [`CapturedRoom`](capturedroom.md) objects into a single captured structure. For more information, see [`CapturedStructure`](capturedstructure.md).
 
 You can access the `arSession` at runtime through this class’s room-capture session ([`captureSession`](roomcaptureview/capturesession.md)) property. See the [`RoomCaptureSession`](roomcapturesession.md) property [`arSession`](roomcapturesession/arsession.md).
 
 ## Parameters
 
 - `frame`: A structure that positions and shapes the view.
-- `arSession`: A world-tracking session that your app creates and runs with an [`ARWorldTrackingConfiguration`](https://developer.apple.com/documentation/ARKit/ARWorldTrackingConfiguration) before calling this function. If you pass an `ARSession` instance, RoomPlan preserves all of the AR session’s settings.
+- `arSession`: A world-tracking session that your app creates and runs with an [`ARWorldTrackingConfiguration`](https://developer.apple.com/documentation/arkit/arworldtrackingconfiguration) before calling this function. If you pass an `ARSession` instance, RoomPlan preserves all of the AR session’s settings.
 
 ## See Also
 

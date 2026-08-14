@@ -21,7 +21,7 @@ func update(deltaTime seconds: TimeInterval)
 
 #### Discussion
 
-You call this method directly on an individual agent, or on all the agents in your game through a [`GKComponentSystem`](gkcomponentsystem.md) object, whenever you want to run a step of the agent simulation. Typically, a game updates its agent simulation whenever it prepares to draw a new frame—for example, in the [`update(_:)`](https://developer.apple.com/documentation/SpriteKit/SKScene/update(_:)) method of a SpriteKit [`SKScene`](https://developer.apple.com/documentation/SpriteKit/SKScene) object.
+You call this method directly on an individual agent, or on all the agents in your game through a [`GKComponentSystem`](gkcomponentsystem.md) object, whenever you want to run a step of the agent simulation. Typically, a game updates its agent simulation whenever it prepares to draw a new frame—for example, in the [`update(_:)`](https://developer.apple.com/documentation/spritekit/skscene/update(_:)) method of a SpriteKit [`SKScene`](https://developer.apple.com/documentation/spritekit/skscene) object.
 
 ## See Also
 

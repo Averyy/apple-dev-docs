@@ -10,9 +10,9 @@ Create text in color by using HTML to refer to TextStyle objects.
 
 You can then edit the `TextStyle` object in one place and affect multiple ranges of text.
 
-![Screenshot of an Apple News article with an HTML-styled inset pull quote on iPad.](https://docs-assets.developer.apple.com/published/f45f5334e481ed171b4c1f7aa2127d38/media-3624922%402x.png)
+![Screenshot of an Apple News article with an HTML-styled inset pull quote on iPad.](/images/com.apple.applenews/media-3624922@2x.png)
 
-![Screenshot of an Apple News article with an HTML-styled layered header on iPad.](https://docs-assets.developer.apple.com/published/a16b6320509e20b24e416b0876fbd348/media-3624921%402x.png)
+![Screenshot of an Apple News article with an HTML-styled layered header on iPad.](/images/com.apple.applenews/media-3624921@2x.png)
 
 ##### Create Textstyle Objects with Different Colors
 

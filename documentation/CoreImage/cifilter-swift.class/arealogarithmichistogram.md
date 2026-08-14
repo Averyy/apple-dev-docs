@@ -28,7 +28,7 @@ A 1-pixel-high image containing the calculated histogram`.`
 This filter calculates histograms of the `red,``green,``blue,` and `alpha` colors for the specified area of an image. A base two-logarithm function is applied to the values before binning. The `count` property controls the number of bins (or width) of the histogram. The histogram is scaled so that all the values sum to `scale`.
 
 - **`inputImage`**: An image with the type [`CIImage`](ciimage.md).
-- **`extent`**: A [`CGRect`](https://developer.apple.com/documentation/CoreFoundation/CGRect) that specifies the subregion of the image you want to process.
+- **`extent`**: A [`CGRect`](https://developer.apple.com/documentation/corefoundation/cgrect) that specifies the subregion of the image you want to process.
 - **`scale`**: The scale value for the histogram values. If the scale is `1`, then the bins in the resulting image sum to `1`.
 - **`count`**: The number of bins for the histogram. This value determines the width of the output image. Minimum value `1`, and maximum value `2048`.
 - **`minimumStop`**: The minimum of the range of color channel values in the logarithmic histogram image. Defaults to `-10`.
@@ -64,7 +64,7 @@ func logarithmicHistogramDisplay(inputImage: CIImage) -> CIImage {
 }
 ```
 
-![Two images arranged horizontally. The image on the left contains a photograph of a vineyard. The lower third of the image contains gravel with a deep shadow in the foreground. The middle of the image shows the vineyard receding into the distance. The top of the image shows a partially cloudy sky. The image on the right shows the result of the logarithmic histogram display filter. There are three overlayed charts showing the histogram of the red, green and blue components.](https://docs-assets.developer.apple.com/published/4df896e45ef3556427ad53eb0c914aa8/media-4407281%402x.png)
+![Two images arranged horizontally. The image on the left contains a photograph of a vineyard. The lower third of the image contains gravel with a deep shadow in the foreground. The middle of the image shows the vineyard receding into the distance. The top of the image shows a partially cloudy sky. The image on the right shows the result of the logarithmic histogram display filter. There are three overlayed charts showing the histogram of the red, green and blue components.](/images/com.apple.coreimage/media-4407281@2x.png)
 
 ## See Also
 

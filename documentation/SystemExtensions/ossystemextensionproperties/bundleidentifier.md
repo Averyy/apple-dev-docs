@@ -19,7 +19,7 @@ var bundleIdentifier: String { get }
 
 #### Discussion
 
-This is the [`CFBundleIdentifier`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/CFBundleIdentifier) of the extension bundle.
+This is the [`CFBundleIdentifier`](https://developer.apple.com/documentation/bundleresources/information-property-list/cfbundleidentifier) of the extension bundle.
 
 ## See Also
 

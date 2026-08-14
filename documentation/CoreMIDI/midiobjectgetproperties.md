@@ -24,7 +24,7 @@ An `OSStatus` result code.
 
 #### Discussion
 
-The property list may be a dictionary or an array. Dictionaries map property names ([`CFString`](https://developer.apple.com/documentation/CoreFoundation/CFString)) to values, which may be [`CFNumber`](https://developer.apple.com/documentation/CoreFoundation/CFNumber), [`CFString`](https://developer.apple.com/documentation/CoreFoundation/CFString), or [`CFData`](https://developer.apple.com/documentation/CoreFoundation/CFData). Arrays provide collections of other property list types.
+The property list may be a dictionary or an array. Dictionaries map property names ([`CFString`](https://developer.apple.com/documentation/corefoundation/cfstring)) to values, which may be [`CFNumber`](https://developer.apple.com/documentation/corefoundation/cfnumber), [`CFString`](https://developer.apple.com/documentation/corefoundation/cfstring), or [`CFData`](https://developer.apple.com/documentation/corefoundation/cfdata). Arrays provide collections of other property list types.
 
 Properties that an object inherits from its owning object aren’t included.
 

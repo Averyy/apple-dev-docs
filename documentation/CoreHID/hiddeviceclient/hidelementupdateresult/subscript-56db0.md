@@ -16,7 +16,7 @@ subscript(originalRequest: HIDDeviceClient.ProvideElementUpdate) -> Result<Void,
 
 #### Return Value
 
-The result for the specified request that contain Void if successful; otherwise, an error if unsuccessful. Access the results using  [`get()`](https://developer.apple.com/documentation/Swift/Result/get()).
+The result for the specified request that contain Void if successful; otherwise, an error if unsuccessful. Access the results using  [`get()`](https://developer.apple.com/documentation/swift/result/get()).
 
 #### Overview
 

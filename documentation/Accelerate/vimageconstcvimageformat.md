@@ -27,8 +27,8 @@ Use [`vImageCVImageFormat_Copy(_:)`](vimagecvimageformat_copy(_:).md) to create 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
 
 ## See Also
 

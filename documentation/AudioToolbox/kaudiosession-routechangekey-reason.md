@@ -17,7 +17,7 @@ let kAudioSession_RouteChangeKey_Reason: CFString!
 
 #### Discussion
 
-A [`CFNumber`](https://developer.apple.com/documentation/CoreFoundation/CFNumber) object that identifies the reason for the audio route change. See [`Audio Route Change Reasons`](1618380-audio-route-change-reasons.md).
+A [`CFNumber`](https://developer.apple.com/documentation/corefoundation/cfnumber) object that identifies the reason for the audio route change. See [`Audio Route Change Reasons`](1618380-audio-route-change-reasons.md).
 
 ## See Also
 

@@ -25,11 +25,11 @@ Add this view modifier to inform the system that it should display UI for resumi
 
 ## See Also
 
-- [struct CameraView](../HomeKit/CameraView.md)
+- [struct CameraView](../homekit/cameraview.md)
   A SwiftUI view into which a video stream or an image snapshot is rendered.
-- [struct NowPlayingView](../WatchKit/NowPlayingView.md)
+- [struct NowPlayingView](../watchkit/nowplayingview.md)
   A view that displays the system’s Now Playing interface so that the user can control audio.
-- [struct VideoPlayer](../AVKit/VideoPlayer.md)
+- [struct VideoPlayer](../avkit/videoplayer.md)
   A view that displays content from a player and a native user interface to control playback.
 - [func continuityDevicePicker(isPresented: Binding<Bool>, onDidConnect: ((AVContinuityDevice?) -> Void)?) -> some View](view/continuitydevicepicker(ispresented:ondidconnect:).md)
   A `continuityDevicePicker` should be used to discover and connect nearby continuity device through a button interface or other form of activation. On tvOS, this presents a fullscreen continuity device picker experience when selected. The modal view covers as much the screen of `self` as possible when a given condition is true.

@@ -22,7 +22,7 @@ let kCVImageBufferDisplayWidthKey: CFString
 
 #### Discussion
 
-The display width value is of type [`CFNumber`](https://developer.apple.com/documentation/CoreFoundation/CFNumber).
+The display width value is of type [`CFNumber`](https://developer.apple.com/documentation/corefoundation/cfnumber).
 
 ## See Also
 

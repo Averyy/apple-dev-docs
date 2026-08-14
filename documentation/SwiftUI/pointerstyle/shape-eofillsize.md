@@ -16,7 +16,7 @@ static func shape(_ shape: some Shape, eoFill: Bool = false, size: CGSize) -> Po
 
 #### Discussion
 
-For guidance on using a custom pointer, refer to [`Pointing devices`](https://developer.apple.com/design/Human-Interface-Guidelines/pointing-devices) in the Human Interface Guidelines.
+For guidance on using a custom pointer, refer to [`Pointing devices`](https://developer.apple.com/design/human-interface-guidelines/pointing-devices) in the Human Interface Guidelines.
 
 You may apply this pointer style to a single view or a view hierarchy using the [`pointerStyle(_:)`](view/pointerstyle(_:).md) modifier.
 

@@ -22,7 +22,7 @@ func BNNSFilterCreateLayerPadding(_ layer_params: UnsafePointer<BNNSLayerParamet
 
 #### Discussion
 
-Use a padding layer to add elements to an n-dimensional array before and after existing data. The padding can either contain a single value or a reflection of the existing data. For `BNNSPaddingModeConstant`, pass the bit pattern of the padding value, for example, using [`bitPattern`](https://developer.apple.com/documentation/Swift/Float/bitPattern) to pass a single-precision value.
+Use a padding layer to add elements to an n-dimensional array before and after existing data. The padding can either contain a single value or a reflection of the existing data. For `BNNSPaddingModeConstant`, pass the bit pattern of the padding value, for example, using [`bitPattern`](https://developer.apple.com/documentation/swift/float/bitpattern) to pass a single-precision value.
 
 The following code shows how to add two elements before, and four elements after a vector of ten values:
 

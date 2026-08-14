@@ -19,7 +19,7 @@ case cloud
 
 #### Discussion
 
-![None](https://docs-assets.developer.apple.com/published/08a992bf0cf4a3dd5fe9785525fac1f2/media-2934522%402x.png)
+![None](/images/com.apple.uikit/media-2934522@2x.png)
 
 ## See Also
 

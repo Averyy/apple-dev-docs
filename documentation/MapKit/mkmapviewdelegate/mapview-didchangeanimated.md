@@ -23,7 +23,7 @@ optional func mapView(_ mapView: MKMapView, didChange mode: MKUserTrackingMode, 
 
 - `mapView`: The map view where the user-tracking mode changes.
 - `mode`: The mode to use for tracking the user’s location.
-- `animated`: If [`true`](https://developer.apple.com/documentation/Swift/true), the map animates the change from the current mode to the new mode; otherwise, the map doesn’t animate the change. This parameter affects only tracking-mode changes. The map animates all changes to the user’s location and heading.
+- `animated`: If [`true`](https://developer.apple.com/documentation/swift/true), the map animates the change from the current mode to the new mode; otherwise, the map doesn’t animate the change. This parameter affects only tracking-mode changes. The map animates all changes to the user’s location and heading.
 
 ## See Also
 

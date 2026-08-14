@@ -34,7 +34,7 @@ Focus item containers are used by the focus engine to find focus items for a foc
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 ### Inherited By
 - [UIFocusItemScrollableContainer](uifocusitemscrollablecontainer.md)
 ### Conforming Types

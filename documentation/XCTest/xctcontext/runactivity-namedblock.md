@@ -14,7 +14,7 @@ Creates and runs an activity with the provided block of code.
 
 #### Return Value
 
-A [`Result`](https://developer.apple.com/documentation/Swift/Result) object that indicates whether the block of code runs successfully or encounters an error.
+A [`Result`](https://developer.apple.com/documentation/swift/result) object that indicates whether the block of code runs successfully or encounters an error.
 
 #### Discussion
 

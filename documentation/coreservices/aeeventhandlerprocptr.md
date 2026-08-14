@@ -46,9 +46,9 @@ After you are finished with an event handler callback function, and have removed
 
 ## Parameters
 
-- `theAppleEvent`: A pointer to the Apple event to handle. See  .
-- `reply`: A pointer to the default reply Apple event provided by the Apple Event Manager. See  . If no reply is expected,   has descriptor type  .
-- `handlerRefcon`: The reference constant stored in the Apple event dispatch table when you install the handler function for the Apple event. You can store any 32-bit value in the dispatch table and use it any way you want when the handler is called. The reference constant may have a value of  .
+- `theAppleEvent`: A pointer to the Apple event to handle. See [`AppleEvent`](appleevent.md).
+- `reply`: A pointer to the default reply Apple event provided by the Apple Event Manager. See [`AppleEvent`](appleevent.md). If no reply is expected, `reply` has descriptor type `typeNull`.
+- `handlerRefcon`: The reference constant stored in the Apple event dispatch table when you install the handler function for the Apple event. You can store any 32-bit value in the dispatch table and use it any way you want when the handler is called. The reference constant may have a value of `NULL`.
 
 ## See Also
 

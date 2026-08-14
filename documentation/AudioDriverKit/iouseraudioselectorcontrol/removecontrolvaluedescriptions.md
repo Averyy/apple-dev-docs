@@ -16,7 +16,7 @@ kern_return_t RemoveControlValueDescriptions(const IOUserAudioSelectorValueDescr
 
 #### Return Value
 
-[`kIOReturnSuccess`](https://developer.apple.com/documentation/DriverKit/kIOReturnSuccess) if description removal succeeded, or another value if an error occured. For a list of error codes, see [`Error Codes`](https://developer.apple.com/documentation/DriverKit/error-codes).
+[`kIOReturnSuccess`](https://developer.apple.com/documentation/driverkit/kioreturnsuccess) if description removal succeeded, or another value if an error occured. For a list of error codes, see [`Error Codes`](https://developer.apple.com/documentation/driverkit/error-codes).
 
 ## Parameters
 

@@ -14,7 +14,7 @@ Use Create ML Components to analyze a series of video frames and count a person�
 
 This sample app counts a person’s repetitive or periodic body movements (*actions*) by analyzing a series of video frames and making a prediction with a human body action repetition counter. The counter in this sample can count arbitrary body moves that occur at moderate speed, such as jumping jacks, dance spins, and waving arms.
 
-![A flow diagram that illustrates two people performing jumping jacks in front](https://docs-assets.developer.apple.com/published/e1ad4893d09c542febf69ba875fcad1a/createml-components-framework-overview%402x.png)
+![A flow diagram that illustrates two people performing jumping jacks in front](/images/com.apple.createmlcomponents/createml-components-framework-overview@2x.png)
 
 The app continually presents the current action repetition count on top of a live, full-screen video feed from the camera in portrait orientation. When the app detects one or more people in the frame, it overlays a wireframe body pose on each person. At the same time, the app predicts the action repetition count about the most prominent person across multiple frames, typically whoever is closest to the camera.
 
@@ -94,7 +94,7 @@ The `Pose` structure serves the following purposes:
 - Calculates the pose’s area within a frame (See the “Isolate a body pose” section below.).
 - Draws each detected pose as a wireframe of points and lines (See the “Present the poses to the user” section below.).
 
-For more information about the underlying human body pose model, see [`Detecting Human Body Poses in Images`](https://developer.apple.com/documentation/Vision/detecting-human-body-poses-in-images).
+For more information about the underlying human body pose model, see [`Detecting Human Body Poses in Images`](https://developer.apple.com/documentation/vision/detecting-human-body-poses-in-images).
 
 #### Create a Pose Stream
 
@@ -136,7 +136,7 @@ The next transformer in the pipeline, [`PoseSelector`](poseselector.md), selects
 
 The goal of this strategy is to consistently select the same person’s pose from a crowd over time.
 
-![A flow diagram that illustrates two detected poses in the same frame passing](https://docs-assets.developer.apple.com/published/530dc013c2438389999ae0bae4d672e6/pose-selector%402x.png)
+![A flow diagram that illustrates two detected poses in the same frame passing](/images/com.apple.createmlcomponents/pose-selector@2x.png)
 
 > ❗ **Important**: Get the most accurate predictions by using whatever strategy best tracks a person from frame to frame.
 
@@ -144,7 +144,7 @@ The goal of this strategy is to consistently select the same person’s pose fro
 
 The next optional transformer in the pipeline, [`JointsSelector`](jointsselector.md), selects or ignores a specified subset of body joints from the pose.
 
-![A flow diagram that illustrates a full body pose passing into a joints](https://docs-assets.developer.apple.com/published/d014f86d1062d31d77ab37f14103864d/joints-selector%402x.png)
+![A flow diagram that illustrates a full body pose passing into a joints](/images/com.apple.createmlcomponents/joints-selector@2x.png)
 
 For example, to count only upper-body movements, the transformer can ignore lower-body joints in the pose, such as knees and ankles, which can eliminate noise by ignoring any leg movements.
 
@@ -167,7 +167,7 @@ The next transformer in the pipeline is a [`SlidingWindowTransformer`](slidingwi
     .appending(SlidingWindowTransformer<Pose>(stride: 5, length: 90))
 ```
 
-![A flow diagram that illustrates a pose sequence passing into a sliding window](https://docs-assets.developer.apple.com/published/ee43eb3b50c15b7cd790f68415809356/sliding-window%402x.png)
+![A flow diagram that illustrates a pose sequence passing into a sliding window](/images/com.apple.createmlcomponents/sliding-window@2x.png)
 
 The action repetition counter assumes a fixed length of 90, where the sliding window transformer groups 90 frames together to generate a single prediction count. The stride is adjustable. An example is a stride of 10 frames, indicating the count updates every 10 frames, which is about 0.3 seconds if the frame rate is 30 frames per second. When the stride is smaller than the length, the windows overlap.
 
@@ -183,7 +183,7 @@ The next transformer in the pipeline, [`HumanBodyActionCounter`](humanbodyaction
 
 #### Present the Count to the User
 
-The final count appears as a [`SwiftUI`](https://developer.apple.com/documentation/SwiftUI) label on the screen using the `OverlayView` structure on the main thread.
+The final count appears as a [`SwiftUI`](https://developer.apple.com/documentation/swiftui) label on the screen using the `OverlayView` structure on the main thread.
 
 #### Present the Poses to the User
 

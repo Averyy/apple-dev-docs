@@ -6,59 +6,57 @@ Replace hexadecimal addresses in a crash report with function names and line num
 
 #### Overview
 
-When an app crashes, the operating system collects diagnostic information about what the app was doing at the time of crash. One of the most important parts of the crash report are the thread backtraces, reported as hexadecimal addresses. You translate these thread backtraces into readable function names and line numbers in source code, a process called *symbolication*, then use that information to understand why your app crashed. In many cases, the Crashes organizer in Xcode [`automatically symbolicate the crash reports`](https://developer.apple.comhttps://help.apple.com/xcode/mac/current/#/dev709125d2e) for you.
+When an app crashes, the operating system collects diagnostic information about what the app was doing at the time of the crash. One of the most important parts of the crash report is the thread backtraces, which appear as hexadecimal addresses. You translate these addresses into readable function names and line numbers — a process called *symbolication* — to understand why your app crashed. To learn about the structure of a backtrace, see [`Backtraces`](examining-the-fields-in-a-crash-report#Backtraces.md).
 
-##### Determine If a Crash Report Is Symbolicated
+If you include debug symbols when you upload your app to App Store Connect for distribution in the App Store or TestFlight, the Crashes organizer in Xcode automatically symbolicates the crash reports for you. For more information, see [`Building your app to include debugging information`](building-your-app-to-include-debugging-information.md).
 
-To diagnose an app issue using a crash report, you need a fully symbolicated or partially symbolicated crash report. An unsymbolicated crash report is rarely useful.
+##### Determine Whether a Crash Report Is Symbolicated
 
-A fully symbolicated crash report has function names on every frame of the backtrace, instead of hexadecimal memory addresses. Each frame represents a single function call that’s currently running on a specific thread, and provides a view of the functions from your app and the operating system frameworks that were executing at the time your app crashed. Fully symbolicated crash reports give you the most insight about the crash. Once you have a fully symbolicated crash report, consult [`Analyzing a crash report`](analyzing-a-crash-report.md) for details about determing the source of the crash.
+A crash report can be fully symbolicated, partially symbolicated, or unsymbolicated. To diagnose an app issue, you need at least a partially symbolicated crash report — an unsymbolicated crash report is rarely useful.
 
-An example of a fully symbolicated crash report:
+A fully symbolicated crash report displays function names instead of hexadecimal addresses on every frame of the backtrace. Each frame represents a single function call that was on the call stack when your app crashed. Together, the frames show the functions from your app and the operating system frameworks that were active at that moment. Fully symbolicated crash reports give you the most insight into the crash, like in the following example:
 
-```other
+```shell
 Thread 0 name:  Dispatch queue: com.apple.main-thread
 Thread 0 Crashed:
-0   libswiftCore.dylib                0x00000001bd38da70 specialized _fatalErrorMessage+ 2378352 (_:_:file:line:flags:) + 384
-1   libswiftCore.dylib                0x00000001bd38da70 specialized _fatalErrorMessage+ 2378352 (_:_:file:line:flags:) + 384
-2   libswiftCore.dylib                0x00000001bd15958c _ArrayBuffer._checkInoutAndNativeTypeCheckedBounds+ 66956 (_:wasNativeTypeChecked:) + 200
-3   libswiftCore.dylib                0x00000001bd15c814 Array.subscript.getter + 88
-4   TouchCanvas                       0x00000001022cbfa8 Line.updateRectForExistingPoint(_:) (in TouchCanvas) + 656
-5   TouchCanvas                       0x00000001022c90b0 Line.updateWithTouch(_:) (in TouchCanvas) + 464
-6   TouchCanvas                       0x00000001022e7374 CanvasView.updateEstimatedPropertiesForTouches(_:) (in TouchCanvas) + 708
-7   TouchCanvas                       0x00000001022df754 ViewController.touchesEstimatedPropertiesUpdated(_:) (in TouchCanvas) + 304
-8   TouchCanvas                       0x00000001022df7e8 @objc ViewController.touchesEstimatedPropertiesUpdated(_:) (in TouchCanvas) + 120
-9   UIKitCore                         0x00000001b3da6230 forwardMethod1 + 136
-10  UIKitCore                         0x00000001b3da6230 forwardMethod1 + 136
-11  UIKitCore                         0x00000001b3e01e24 -[_UIEstimatedTouchRecord dispatchUpdateWithPressure:stillEstimated:] + 340
+0   TouchCanvas                              0x1046a59b4 Line.updateRectForExistingPoint(_:) + 988
+1   TouchCanvas                              0x1046a56d0 Line.updateRectForExistingPoint(_:) + 248
+2   TouchCanvas                              0x1046ab130 CanvasView.updateEstimatedPropertiesForTouches(_:) + 832
+3   TouchCanvas                              0x1046a8610 @objc ViewController.touchesEstimatedPropertiesUpdated(_:) + 120
+4   UIKitCore                                0x1a6cff6ec forwardMethod1 + 108
+5   UIKitCore                                0x1a6cff6ec forwardMethod1 + 108
+6   UIKitCore                                0x1a73033fc -[_UIEstimatedTouchRecord _dispatchWithCurrentUpdates] + 340
+7   UIKitCore                                0x1a6ba5c40 -[UIEventEnvironment _dispatchAndRemoveStaleEstimationUpdateRecordsWithEventTime:upToRecord:] + 268
+8   UIKitCore                                0x1a5932074 __processEventQueue + 5400
+9   UIKitCore                                0x1a5924c50 updateCycleEntry + 172
+10  UIKitCore                                0x1a5932ee4 _UIUpdateSequenceRunNext + 128
+11  UIKitCore                                0x1a5932374 schedulerStepScheduledMainSectionContinue + 60  
+    
 ```
 
-A partially symbolicated crash report has function names for some of the backtrace frames, and hexadecimal addresses for other frames of the backtrace. A partially symbolicated crash report may contain enough information to understand the crash, depending upon the type of crash and which frames in the backtraces are symbolicated. However, you should still [`Symbolicate the crash report in Xcode`](adding-identifiable-symbol-names-to-a-crash-report#Symbolicate-the-crash-report-in-Xcode.md) to make the report fully symbolicated, which will give you a complete understanding of the crash.
+A partially symbolicated crash report displays function names for some frames of the backtrace and only hexadecimal addresses for others. Depending on the type of crash and which frames include symbol information, the report may give you enough information to understand the crash, as the following example demonstrates:
 
-An example of a partially symbolicated crash report:
-
-```other
-Thread 0 name:  Dispatch queue: com.apple.main-thread
+```shell
+Thread 0 name:   Dispatch queue: com.apple.main-thread
 Thread 0 Crashed:
-0   libswiftCore.dylib                0x00000001bd38da70 specialized _fatalErrorMessage+ 2378352 (_:_:file:line:flags:) + 384
-1   libswiftCore.dylib                0x00000001bd38da70 specialized _fatalErrorMessage+ 2378352 (_:_:file:line:flags:) + 384
-2   libswiftCore.dylib                0x00000001bd15958c _ArrayBuffer._checkInoutAndNativeTypeCheckedBounds+ 66956 (_:wasNativeTypeChecked:) + 200
-3   libswiftCore.dylib                0x00000001bd15c814 Array.subscript.getter + 88
-4   TouchCanvas                       0x00000001022cbfa8 0x1022c0000 + 49064
-5   TouchCanvas                       0x00000001022c90b0 0x1022c0000 + 37040
-6   TouchCanvas                       0x00000001022e7374 0x1022c0000 + 160628
-7   TouchCanvas                       0x00000001022df754 0x1022c0000 + 128852
-8   TouchCanvas                       0x00000001022df7e8 0x1022c0000 + 129000
-9   UIKitCore                         0x00000001b3da6230 forwardMethod1 + 136
-10  UIKitCore                         0x00000001b3da6230 forwardMethod1 + 136
-11  UIKitCore                         0x00000001b3e01e24 -[_UIEstimatedTouchRecord dispatchUpdateWithPressure:stillEstimated:] + 340
+0   TouchCanvas                              0x1045a19b4 0x10459c000 + 22964
+1   TouchCanvas                              0x1045a16d0 0x10459c000 + 22224
+2   TouchCanvas                              0x1045a7130 0x10459c000 + 45360
+3   TouchCanvas                              0x1045a4610 0x10459c000 + 34320
+4   UIKitCore                                0x1a6cff6ec forwardMethod1 + 108
+5   UIKitCore                                0x1a6cff6ec forwardMethod1 + 108
+6   UIKitCore                                0x1a73033fc -[_UIEstimatedTouchRecord _dispatchWithCurrentUpdates] + 340
+7   UIKitCore                                0x1a6ba5c40 -[UIEventEnvironment _dispatchAndRemoveStaleEstimationUpdateRecordsWithEventTime:upToRecord:] + 268
+8   UIKitCore                                0x1a5932074 __processEventQueue + 5400
+9   UIKitCore                                0x1a5924c50 updateCycleEntry + 172
+10  UIKitCore                                0x1a5932ee4 _UIUpdateSequenceRunNext + 128
+11  UIKitCore                                0x1a5932374 schedulerStepScheduledMainSectionContinue + 60
+    
 ```
 
-Unsymbolicated crash reports contain hexadecimal addresses of executable code within the loaded binary images. These reports don’t contain any function names in the backtraces. Because an unsymbolicated crash report is rarely useful, [`Symbolicate the crash report in Xcode`](adding-identifiable-symbol-names-to-a-crash-report#Symbolicate-the-crash-report-in-Xcode.md).
+An unsymbolicated crash report displays only hexadecimal addresses in the backtraces, with no function names, as shown in the following example:
 
-An example of an unsymbolicated symbolicated crash report:
-
-```other
+```shell
 Thread 0 name:  Dispatch queue: com.apple.main-thread
 Thread 0 Crashed:
 0   libswiftCore.dylib                0x00000001bd38da70 0x1bd149000 + 2378352
@@ -73,102 +71,157 @@ Thread 0 Crashed:
 9   UIKitCore                         0x00000001b3da6230 0x1b3348000 + 10871344
 10  UIKitCore                         0x00000001b3da6230 0x1b3348000 + 10871344
 11  UIKitCore                         0x00000001b3e01e24 0x1b3348000 + 11247140
+    
 ```
 
 ##### Symbolicate the Crash Report in Xcode
 
-Xcode is the preferred way to symbolicate crash reports because it uses all available `dSYM` files on your Mac at once. For specialized debugging situations, such as when you have an unsymbolicated stack trace in the Xcode debugger without a full crash report, you can [`Symbolicate the crash report with the command line`](adding-identifiable-symbol-names-to-a-crash-report#Symbolicate-the-crash-report-with-the-command-line.md) to symbolicate each frame.
+To symbolicate a crash report from your device, connect the device to your Mac, click the Reports tab in the Device Hub app, then choose Crashes from the Inspector menu. In the list that appears, select the crash report. For more information, see [`Device Hub`](device-hub.md) and [`Managing your simulated and physical devices in Device Hub`](managing-your-simulated-and-physical-devices-in-device-hub.md).
 
-To symbolicate in Xcode, click the Device Logs button in the [`Devices and Simulators window`](https://developer.apple.comhttps://help.apple.com/xcode/mac/current/#/dev85c64ec79), then drag and drop the crash report file into the list of device logs.
+> ❗ **Important**: Crash reports must have the `.crash` or `.ips` file extension. If the file has a different extension or no extension, rename the file before symbolicating.
 
-> ❗ **Important**: Crash reports must have the `.crash` file extension. If a crash report doesn’t have a file extension, or has a different file extension like `.txt` , rename it with the `.crash` extension before symbolicating it.
+If you receive a crash report from an external source, open the file in Xcode. Choose the applicable project when Xcode prompts you. ![An Xcode dialog to choose a project for symbolication. The dialog shows Open and Cancel buttons.](/images/com.apple.Xcode/adding-identifiable-symbol-names-to-a-crash-report-01@2x.png)
 
-If the crash report does not symbolicate, or only partly symbolicates, Xcode can’t locate matching symbol information, and you’ll need to acquire symbol information in these ways:
+After you choose Open, Xcode attempts to symbolicate all addresses in every thread’s backtrace.
 
-- If the operating system’s frameworks aren’t symbolicated, you need device symbol information matching the operating system version recorded in the crash report. To address this, see [`Acquire device symbol information`](adding-identifiable-symbol-names-to-a-crash-report#Acquire-device-symbol-information.md).
-- If the frames for your app, app extension, or frameworks aren’t symbolicated, you need to locate the existing `dSYM` files using Spotlight. To address this, see [`Locate a dSYM using Spotlight`](adding-identifiable-symbol-names-to-a-crash-report#Locate-a-dSYM-using-Spotlight.md). If your app uses frameworks built by a third-party, you may need to ask the framework vendor for the `dSYM` file.
+If symbolication is incomplete, try the following:
 
-Once you have a fully symbolicated crash report, consult [`Analyzing a crash report`](analyzing-a-crash-report.md) to determine the source of the crash.
+- If Xcode fails to symbolicate the operating system’s frameworks, download the device symbols for the operating system version in the crash report. For more information, see [`Acquiring operating system symbol information`](acquiring-operating-system-symbol-information.md).
+- If Xcode fails to symbolicate an address for your app, app extension, or frameworks, use Spotlight to find the required `.dSYM` files. For more information, see [`Locating a missing debug symbol file`](locating-a-missing-debug-symbol-file.md).
+- If your app uses third-party frameworks or packages, contact their developers to obtain the `.dSYM` file.
 
-##### Acquire Device Symbol Information
+##### Symbolicate the Crash Report Using a Command Line Tool
 
-To make symbols from the operating system frameworks identifiable in a crash report, you need to collect the symbols for the system frameworks from a device. For iOS, iPadOS, tvOS, visionOS, and watchOS apps, Xcode automatically copies operating system symbols from each device you connect to your Mac. For macOS and Mac Catalyst apps, symbolicate the crash log by using Xcode on a version of macOS that matches the macOS version named in the crash report.
+You can symbolicate your crash report in Terminal using the `crashlog` command. Enter `xcrun crashlog` with the path to the crash report you want to symbolicate, as shown here:
 
-The symbols for system frameworks are specific to the operating system release and the CPU architecture of the device. For example, the symbols for an iPhone running iOS 13.1.0 aren’t the same as the symbols for the same iPhone running iOS 13.1.2. If your app runs on operating system versions that support multiple CPU architectures, such as `arm64` and `arm64e`, a device with an `arm64` architecture will only contain the symbols for the `arm64` version of the operating system frameworks; it won’t have symbols for the operating system frameworks on `arm64e` devices.
-
-##### Locate a Dsym Using Spotlight
-
-To determine whether the `dSYM` file you need to symbolicate a hexadecimal addresses for one of your binaries is present on your Mac:
-
-1. Find a frame in the backtrace that isn’t symbolicated. Note the name of the binary image in the second column.
-2. Look for a binary image with that name in the list of binary images at the bottom of the crash report. This list contains the build UUID of each binary image that was loaded into the process at the time of the crash. Use the `grep` command line tool to find the entry in the list of binary images: ```other
-% grep --after-context=1000 "Binary Images:" <Path to Crash Report> | grep <Binary Name>
+```shell
+% xcrun crashlog <path-to-crashReport>
 ```
 
-After getting the build UUID from the binary image section:
+The `xcrun crashlog` command is a shortcut to invoke a Python module that supports parsing and symbolicating crash reports. The module installs `crashlog` into the LLDB command interpreter. After resolving the symbols in each binary image that a crash report references, `crashlog` provides function names, source file names, and line numbers for every frame of the backtrace, like in the following example:
 
-1. Convert the build UUID of the binary image to a 32-character string, that’s separated into groups of 8-4-4-4-12 (`XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX`). All letters must be uppercase.
-2. Search for the build UUID using the `mdfind` command line tool query (including quotation marks): ```other
-% mdfind "com_apple_xcode_dsym_uuids == <UUID>"
+```shell
+% xcrun crashlog /Users/.../TouchCanvas.ips
+(lldb) command script import lldb.macosx
+"crashlog" and "save_crashlog" commands have been installed, use the "--help" options on these commands
+...
+(lldb) crashlog /Users/.../TouchCanvas.ips
+Getting symbols for E3EA8743-C9E6-3C68-BF04-8D51363B689D /var/containers/.../TouchCanvas.app/TouchCanvas...
+...
+Resolved symbols for E3EA8743-C9E6-3C68-BF04-8D51363B689D /Users/.../TouchCanvas.app/TouchCanvas...
+(lldb) process status --verbose
+warning: TouchCanvas was compiled with optimization - stepping may behave oddly; variables may not be available.
+Process 767 stopped
+* thread #1, queue = 'com.apple.main-thread', stop reason = Swift runtime failure: Index out of range
+    frame #0: 0x00000001045a19b4 TouchCanvas`Swift runtime failure: Index out of range at Line.swift:0:27 [synthetic] [opt] [inlined]
+note: This address is not associated with a specific line of code. This may be due to compiler optimizations.
+(lldb) thread backtrace --extended true
+Couldn't find the Objective-C runtime library in loaded images.
+...
+* thread #1, queue = 'com.apple.main-thread', stop reason = Swift runtime failure: Index out of range                                                 
+  * frame #0: 0x00000001045a19b4 TouchCanvas`Swift runtime failure: Index out of range at Line.swift:0:27 [synthetic] [opt] [inlined]
+    frame #1: 0x00000001045a16cf TouchCanvas`Line.updateRectForExistingPoint(point=<unavailable>) at <compiler-generated>:0 [synthetic] [opt]
+    frame #2: 0x00000001045a712f TouchCanvas`Line.updateWithTouch(touch=<unavailable>) at Line.swift:29:24 [synthetic] [opt]
+    frame #3: 0x00000001045a460f TouchCanvas`ViewController.touchesEstimatedPropertiesUpdated(touches=<unavailable>) at ViewController.swift:121:20 [synthetic] [opt] [inlined]
+...
 ```
 
-If Spotlight finds a `dSYM` file for the build UUID, `mdfind` prints the path to the `dSYM` file.
+Alternatively, if you already have an active LLDB session, you can import `lldb.macosx.crashlog`, then run `crashlog` with the path to the crash report you want to symbolicate, like this:
 
-![A crash report with information required to locate a dSYM file using the mdfind command highlighted.](https://docs-assets.developer.apple.com/published/d6a714a368a5151118ff291b7c3ab963/adding-identifiable-symbol-names-to-a-crash-report-1%402x.png)
-
-Using the information in this example, the commands to find the `dSYM` are:
-
-```other
-% grep --after-context=1000 "Binary Images:" <Path to Crash Report> | grep TouchCanvas
-0x1022c0000 - 0x1022effff TouchCanvas arm64  <9cc89c5e55163f4ab40c5821e99f05c6>
-
-% mdfind "com_apple_xcode_dsym_uuids == 9CC89C5E-5516-3F4A-B40C-5821E99F05C6"
+```shell
+(lldb) command script import lldb.macosx.crashlog
+(lldb) crashlog /Users/.../TouchCanvas.ips
 ```
 
-Once you find the `dSYM` file, [`Match build UUIDs`](adding-identifiable-symbol-names-to-a-crash-report#Match-build-UUIDs.md) to confirm that its build UUID matches the binary image’s build UUID. Once you verify that build UUIDs match, either [`Symbolicate the crash report in Xcode`](adding-identifiable-symbol-names-to-a-crash-report#Symbolicate-the-crash-report-in-Xcode.md) or [`Symbolicate the crash report with the command line`](adding-identifiable-symbol-names-to-a-crash-report#Symbolicate-the-crash-report-with-the-command-line.md).
+The `crashlog` command provides additional options you can use to adjust its output. For example, you can parse and load your crash report in a scripted process, choose which frames and how many lines `crashlog` disassembles, and configure the command to display the image list. To learn about these options, enter `xcrun crashlog --help` in Terminal.
 
-If Spotlight doesn’t find a matching `dSYM`, `mdfind` won’t print anything and you’ll need to:
+##### Symbolicate the Crash Report Using a Python Script
 
-- Verify that you still have the Xcode archive for the version of your app that crashed. If you no longer have this archive, you can’t symbolicate your app’s stack frames for that version of your app. To avoid this in the future, release a new version of your app, and retain the Xcode archive for that version. You’ll then be able to symbolicate crash reports for the new version of your app.
-- Ensure the Xcode archive is located somewhere Spotlight can find it, such as your macOS home directory.
-- Verify that your build produces debugging information. See [`Building your app to include debugging information`](building-your-app-to-include-debugging-information.md).
+The `CrashSymbolicator.py` Python 3 script supports JSON-format crash reports and inlined frames when run with its default options. Find it in the `Contents/SharedFrameworks/CoreSymbolicationDT.framework/Resources` directory within the Xcode app bundle. In Terminal, navigate to this directory in your Xcode installation as follows:
 
-##### Match Build Uuids
+```shell
+% xcode-select -p
+/Applications/Xcode.app/Contents/Developer
 
-If you have a binary or a `dSYM` that you think can be used to symbolicate a crash report, verify that the build UUIDs match, using the `dwarfdump` command. If the build UUIDs don’t match each other or don’t match the build UUID listed in the Binary Images section of the crash report, you can’t use the files to symbolicate that crash report.
-
-```other
-% dwarfdump --uuid <PathToDSYMFile>/Contents/Resources/DWARF/<BinaryName>
-% dwarfdump --uuid <PathToBinary>
+% cd /Applications/Xcode.app/Contents/SharedFrameworks/CoreSymbolicationDT.framework/Resources
 ```
 
-##### Symbolicate the Crash Report with the Command Line
+Enter `python3 CrashSymbolicator.py` with the path to your crash report and all the `.dSYM` files that the binary requires for symbolication, like this:
 
-For specialized debugging situations, such as symbolicating parts of a backtrace provided by the LLDB command line, you can symbolicate a crash report using the `atos` command. The `atos` command converts hexadecimal addresses to the identifiable function name and line number from your source code, if symbol information is available. To symbolicate using `atos`:
-
-1. Find a frame in the backtrace that you want to symbolicate. Note the name of the binary image in the second column, and the address in the third column.
-2. Look for a binary image with that name in the list of binary images at the bottom of the crash report. Note the architecture and load address of the binary image.
-3. Locate the `dSYM` file for the binary. If you don’t know where the `dSYM` file is located, see [`Locate a dSYM using Spotlight`](adding-identifiable-symbol-names-to-a-crash-report#Locate-a-dSYM-using-Spotlight.md) to find the `dSYM` file that matches the build UUID of the binary image.
-4. Symbolicate the addresses in the backtrace using `atos` with the formula, substituting the information you gathered in previous steps:
-
-```other
-% atos -arch <BinaryArchitecture> -o <PathToDSYMFile>/Contents/Resources/DWARF/<BinaryName>  -l <LoadAddress> <AddressesToSymbolicate>
+```shell
+% python3 CrashSymbolicator.py <path-to-crashReport> -d <path-to-dSYM>
 ```
 
-> **Note**: `dSYM` files are macOS bundles that contain a file with the debug symbols. When invoking `atos`, you must provide the path to this file inside the bundle, not just to the outer `dSYM` bundle.
+This command prints the result to `stdout`, like in the following example:
 
-As an example, look at the highlighted sections of this crash report:
-
-![A crash report with information required to symbolicate a frame with atos highlighted.](https://docs-assets.developer.apple.com/published/8bfc0ce425495f4fad7e0e498094b48c/adding-identifiable-symbol-names-to-a-crash-report-2%402x.png)
-
-Using the information in this example, the complete `atos` command and its output are:
-
-```other
-% atos -arch arm64 -o TouchCanvas.app.dSYM/Contents/Resources/DWARF/TouchCanvas -l 0x1022c0000 0x00000001022df754
-ViewController.touchesEstimatedPropertiesUpdated(_:) (in TouchCanvas) + 304
+```shell
+% python3 CrashSymbolicator.py /Users/.../TouchCanvas.ips -d /Users/.../TouchCanvas.app.dSYM
+Symbolicating thread 113506
+Symbolicating thread 113533
+...
+{"app_name":"TouchCanvas" ...}
+...
+"frames": [
+{
+"imageOffset": 22964,
+"imageIndex": 0,
+"symbol": "Swift runtime failure: Index out of range",
+"sourceFile": "Line.swift",
+"sourceLine": 0,
+"symbolLocation": 0,
+"inline": "true"
+},
+...
+{
+"imageOffset": 22964,
+"imageIndex": 0,
+"symbol": "Line.updateRectForExistingPoint(_:)",
+"sourceFile": "Line.swift",
+"sourceLine": 230,
+"symbolLocation": 988
+},
+...
 ```
 
-Once you have at least a partially symbolicated crash report by using `atos`, consult [`Analyzing a crash report`](analyzing-a-crash-report.md) for information to determine the source of the crash.
+To save the command’s output to a file, add the `-o` option:
+
+```shell
+% python3 CrashSymbolicator.py /Users/.../TouchCanvas.ips -d /Users/.../TouchCanvas.app.dSYM -o /Users/.../SymbolicatedTouchCanvas.ips
+
+```
+
+To learn about all the options the script offers, enter `python3 CrashSymbolicator.py --help` in Terminal.
+
+##### Symbolicate Individual Addresses of the Crash Report
+
+For specialized debugging situations, such as symbolicating individual stack frames at the LLDB command line, use the `atos` command. This command converts hexadecimal addresses to function names and line numbers in your source code.
+
+To symbolicate a hexadecimal address in your crash report using `atos`, inspect the stack frame that contains it. Note the binary image name in the second column. For example, the following backtrace highlights a frame at line 3 with `0x1045a4610` as the address to symbolicate and a binary image named `TouchCanvas`:
+
+![A crash report with line 3 highlighted. The line shows a hexadecimal address.](/images/com.apple.Xcode/adding-identifiable-symbol-names-to-a-crash-report-02@2x.png)
+
+> **Note**: If the symbol name is `<deduplicated_symbol>` in the stack frame, the linker merged multiple functions with identical machine instructions into a single symbol. This optimization is called *code deduplication*. Xcode turns it on by default in release builds and turns it off in debug builds. To reveal all the functions the deduplicated symbol refers to, add the `-dedup` flag to the `atos` command.
+
+After you find the binary name, look for a matching entry in the list of binary images at the bottom of the crash report. Note its architecture and load address. If you symbolicate the kernel address space, use the `textExecAddress` instead of the load address. The following binary images section shows an `arm64` architecture and a `0x10459c000` load address for `TouchCanvas`:
+
+![A crash report with the binary name, address to symbolicate, and the Binary images section highlighted.](/images/com.apple.Xcode/adding-identifiable-symbol-names-to-a-crash-report-03@2x.png)
+
+Locate the `.dSYM` file for the binary. The file is a macOS bundle that contains the DWARF debug symbol file. When invoking `atos`, provide the path to this file, not just to the `.dSYM` bundle. If you can’t find the `.dSYM`, follow the steps in [`Locating a missing debug symbol file`](locating-a-missing-debug-symbol-file.md) to find the one that matches the binary image’s build UUID.
+
+After you gather the architecture, the `.dSYM` file’s path, the load or `textExecAddress`, and the address to symbolicate, pass them to the following `atos` command:
+
+```shell
+% atos -arch <binary-architecture> -o <path-to-dSYM>/Contents/Resources/DWARF/<binary-name> [-l <load-address>] [-textExecAddress <address>] [-i] [-dedup] <addresses-to-symbolicate> 
+
+```
+
+The compiler may inline functions as an optimization and omit their stack frames from the crash report. To reveal any inlined functions in the expanded backtrace, include the `-i` flag before the address. If symbol information is available, `atos` resolves the address to a function name and displays the source file name and line number, like this:
+
+```shell
+% atos -arch arm64 -o TouchCanvas.app.dSYM/Contents/Resources/DWARF/TouchCanvas -l 0x10459c000 -i 0x1045a4610
+@objc ViewController.touchesEstimatedPropertiesUpdated(_:) (in TouchCanvas) (/<compiler-generated>:0)
+
+```
 
 ## See Also
 

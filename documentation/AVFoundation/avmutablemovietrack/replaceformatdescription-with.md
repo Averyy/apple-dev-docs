@@ -21,12 +21,12 @@ func replaceFormatDescription(_ formatDescription: CMFormatDescription, with new
 
 #### Discussion
 
-Use this method to change a track’s format descriptions, such as adding format description extensions to a format description or changing the audio channel layout of an audio track. Format description can have extensions of type [`kCMFormatDescriptionExtension_VerbatimSampleDescription`](https://developer.apple.com/documentation/CoreMedia/kCMFormatDescriptionExtension_VerbatimSampleDescription) and [`kCMFormatDescriptionExtension_VerbatimISOSampleEntry`](https://developer.apple.com/documentation/CoreMedia/kCMFormatDescriptionExtension_VerbatimISOSampleEntry). If you modify a copy of a format description, delete those extensions from the copy or your changes might be ignored.
+Use this method to change a track’s format descriptions, such as adding format description extensions to a format description or changing the audio channel layout of an audio track. Format description can have extensions of type [`kCMFormatDescriptionExtension_VerbatimSampleDescription`](https://developer.apple.com/documentation/coremedia/kcmformatdescriptionextension_verbatimsampledescription) and [`kCMFormatDescriptionExtension_VerbatimISOSampleEntry`](https://developer.apple.com/documentation/coremedia/kcmformatdescriptionextension_verbatimisosampleentry). If you modify a copy of a format description, delete those extensions from the copy or your changes might be ignored.
 
 ## Parameters
 
-- `formatDescription`: The [`CMFormatDescription`](https://developer.apple.com/documentation/CoreMedia/CMFormatDescription) object to be replaced.
-- `newFormatDescription`: The [`CMFormatDescription`](https://developer.apple.com/documentation/CoreMedia/CMFormatDescription) object to replacing the specified format description.
+- `formatDescription`: The [`CMFormatDescription`](https://developer.apple.com/documentation/coremedia/cmformatdescription) object to be replaced.
+- `newFormatDescription`: The [`CMFormatDescription`](https://developer.apple.com/documentation/coremedia/cmformatdescription) object to replacing the specified format description.
 
 ## See Also
 

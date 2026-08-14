@@ -22,7 +22,7 @@ let kCVImageBufferICCProfileKey: CFString
 
 #### Discussion
 
-The ICC color profile value is of type [`CFData`](https://developer.apple.com/documentation/CoreFoundation/CFData).
+The ICC color profile value is of type [`CFData`](https://developer.apple.com/documentation/corefoundation/cfdata).
 
 ## See Also
 

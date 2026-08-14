@@ -22,7 +22,7 @@ let AVErrorPersistentTrackIDKey: String
 
 #### Discussion
 
-The associated value is of type [`CMPersistentTrackID`](https://developer.apple.com/documentation/CoreMedia/CMPersistentTrackID).
+The associated value is of type [`CMPersistentTrackID`](https://developer.apple.com/documentation/coremedia/cmpersistenttrackid).
 
 ## See Also
 

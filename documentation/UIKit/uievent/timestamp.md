@@ -20,7 +20,7 @@ var timestamp: TimeInterval { get }
 
 #### Discussion
 
-This property contains the number of seconds that have elapsed since system startup. For a description of this time value, see the description of the [`systemUptime`](https://developer.apple.com/documentation/Foundation/ProcessInfo/systemUptime) method of the [`ProcessInfo`](https://developer.apple.com/documentation/Foundation/ProcessInfo) class.
+This property contains the number of seconds that have elapsed since system startup. For a description of this time value, see the description of the [`systemUptime`](https://developer.apple.com/documentation/foundation/processinfo/systemuptime) method of the [`ProcessInfo`](https://developer.apple.com/documentation/foundation/processinfo) class.
 
 
 ---

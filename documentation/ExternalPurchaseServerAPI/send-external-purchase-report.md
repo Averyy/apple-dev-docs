@@ -28,7 +28,7 @@ The server indicates it successfully received your report by returning an `HTTP 
 
 ##### Testing in the Sandbox Environment
 
-Call this endpoint using its sandbox URL only for tokens that the system generates in the sandbox environment. For more information about identifying sandbox tokens, see [`Receiving and decoding external purchase tokens`](https://developer.apple.com/documentation/StoreKit/receiving-and-decoding-external-purchase-tokens).
+Call this endpoint using its sandbox URL only for tokens that the system generates in the sandbox environment. For more information about identifying sandbox tokens, see [`Receiving and decoding external purchase tokens`](https://developer.apple.com/documentation/storekit/receiving-and-decoding-external-purchase-tokens).
 
 > ❗ **Important**: The sandbox tokens and any test transaction data you submit through the sandbox URLs of the External Purchase Server API are not actual transactions.
 

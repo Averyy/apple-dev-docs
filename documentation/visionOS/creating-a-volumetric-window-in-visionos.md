@@ -12,7 +12,7 @@ Display 3D content with a volumetric window that people can move.
 
 This sample code project demonstrates how to create and display 3D models in a visionOS app, using volumetric windows that people can pick up and move around their environment. The app launches directly into a volumetric window containing a 3D model.
 
-The [`volumetric`](https://developer.apple.com/documentation/SwiftUI/WindowStyle/volumetric) window style in SwiftUI creates a 3D volumetric window that someone can pick up and move around their space, similar to a 2D window.
+The [`volumetric`](https://developer.apple.com/documentation/swiftui/windowstyle/volumetric) window style in SwiftUI creates a 3D volumetric window that someone can pick up and move around their space, similar to a 2D window.
 
 ##### Set Up Volumetric Window Requirements
 
@@ -31,7 +31,7 @@ struct VolumetricWindow: View {
 }
 ```
 
-The sample’s `EntryPoint` structure defines a volumetric window group and a `defaultSize` value that sets the initial dimensions of the view. The `Info.plist` specifies the [`UIApplicationPreferredDefaultSceneSessionRole`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/UIApplicationPreferredDefaultSceneSessionRole) as `UIWindowSceneSessionRoleVolumetricApplication` launching directly into the volumetric window.
+The sample’s `EntryPoint` structure defines a volumetric window group and a `defaultSize` value that sets the initial dimensions of the view. The `Info.plist` specifies the [`UIApplicationPreferredDefaultSceneSessionRole`](https://developer.apple.com/documentation/bundleresources/information-property-list/uiapplicationpreferreddefaultscenesessionrole) as `UIWindowSceneSessionRoleVolumetricApplication` launching directly into the volumetric window.
 
 ```swift
 import SwiftUI
@@ -62,7 +62,7 @@ SwiftUI requires three separate arguments to define the width, height, and depth
 
 ##### Load a 3d Model As an Entity in a View
 
-The `VolumetricWindow` view loads a USDZ file as an [`Entity`](https://developer.apple.com/documentation/RealityKit/Entity) instance and adds it to the scene.
+The `VolumetricWindow` view loads a USDZ file as an [`Entity`](https://developer.apple.com/documentation/realitykit/entity) instance and adds it to the scene.
 
 ```swift
 RealityView { content in
@@ -78,9 +78,9 @@ RealityView { content in
 
 ##### Adjust the Entity to the Size of the Volumetric Window
 
-The sample updates the scale and position of the entity in the update closure of [`RealityView`](https://developer.apple.com/documentation/RealityKit/RealityView) to respond to volume resizing.
+The sample updates the scale and position of the entity in the update closure of [`RealityView`](https://developer.apple.com/documentation/realitykit/realityview) to respond to volume resizing.
 
-The `viewBounds` object converts the [`GeometryReader3D`](https://developer.apple.com/documentation/SwiftUI/GeometryReader3D) coordinate space to a local-world coordinate space that `RealityView` uses.
+The `viewBounds` object converts the [`GeometryReader3D`](https://developer.apple.com/documentation/swiftui/geometryreader3d) coordinate space to a local-world coordinate space that `RealityView` uses.
 
 ```swift
 let viewBounds = content.convert(
@@ -90,7 +90,7 @@ let viewBounds = content.convert(
 )
 ```
 
-The [`visualBounds(recursive:relativeTo:excludeInactive:)`](https://developer.apple.com/documentation/RealityKit/HasTransform/visualBounds(recursive:relativeTo:excludeInactive:)) method computes a bounding box that contains the outer dimensions of the entity.
+The [`visualBounds(recursive:relativeTo:excludeInactive:)`](https://developer.apple.com/documentation/realitykit/hastransform/visualbounds(recursive:relativeto:excludeinactive:)) method computes a bounding box that contains the outer dimensions of the entity.
 
 The view bounding box places the model at the bottom of the y-axis value of the window’s view:
 

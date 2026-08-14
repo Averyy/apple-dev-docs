@@ -28,7 +28,7 @@ A collection view can support a section that can collapse into a single horizont
 
 ### Inherits From
 - [NSCollectionViewElement](nscollectionviewelement.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 - [NSUserInterfaceItemIdentification](nsuserinterfaceitemidentification.md)
 
 ## See Also

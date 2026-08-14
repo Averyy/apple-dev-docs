@@ -17,7 +17,7 @@ init(audioSession: AVAudioSession)
 
 #### Discussion
 
-[`BEAudioSession`](beaudiosession-6b7ig.md) wraps the specified [`AVFoundation`](https://developer.apple.com/documentation/AVFoundation) audio session.
+[`BEAudioSession`](beaudiosession-6b7ig.md) wraps the specified [`AVFoundation`](https://developer.apple.com/documentation/avfoundation) audio session.
 
 
 ---

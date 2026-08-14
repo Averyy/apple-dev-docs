@@ -52,26 +52,26 @@ TextKit uses the abstract [`NSTextLocation`](nstextlocation.md) protocol to iden
 ### Inherits From
 - [NSTextContentManager](nstextcontentmanager.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCoding](../Foundation/NSCoding.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [NSSecureCoding](../Foundation/NSSecureCoding.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCoding](../foundation/nscoding.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSSecureCoding](../foundation/nssecurecoding.md)
 - [NSTextElementProvider](nstextelementprovider.md)
 - [NSTextStorageObserving](nstextstorageobserving.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 
 - [class NSTextContentManager](nstextcontentmanager.md)
   An abstract class that defines the interface and a default implementation for managing the text document contents.
-- [class NSAttributedString](../Foundation/NSAttributedString.md)
+- [class NSAttributedString](../foundation/nsattributedstring.md)
   A string of text that manages data, layout, and stylistic information for ranges of characters to support rendering.
-- [class NSMutableAttributedString](../Foundation/NSMutableAttributedString.md)
+- [class NSMutableAttributedString](../foundation/nsmutableattributedstring.md)
   A mutable string with associated attributes (such as visual style, hyperlinks, or accessibility data) for portions of its text.
 
 

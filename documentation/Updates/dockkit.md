@@ -10,7 +10,7 @@ Browse notable changes in [`DockKit`](https://developer.apple.comhttps://develop
 
 #### June 2024
 
-- Use [`accessoryEvents`](https://developer.apple.com/documentation/DockKit/DockAccessory/accessoryEvents-swift.property) to acquire button events, including special ones such as shutter, flip and zoom, and custom events, along with their identifier and pressed state.
+- Use [`accessoryEvents`](https://developer.apple.com/documentation/dockkit/dockaccessory/accessoryevents-swift.property) to acquire button events, including special ones such as shutter, flip and zoom, and custom events, along with their identifier and pressed state.
 - Obtain a summary of each tracked subject. A summary consists of an identifier, face bounding box, saliency rank, speaking confidence, and looking at camera confidence.
 - Pass an array of identifiers to select multiple subjects.
 - Obtain information about the battery of a DockKit accessory, including battery name, battery percentage, and charging state.

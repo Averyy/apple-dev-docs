@@ -16,7 +16,7 @@ class MERAWProcessorPixelBufferManager
 
 #### Discussion
 
-It contains the interfaces that the [`MERAWProcessor`](merawprocessor.md) uses for two tasks. First, to declare its set of requirements for output [`CVPixelBuffer`](https://developer.apple.com/documentation/CoreVideo/cvpixelbuffer-q2e) in the form of a [`pixelBufferAttributes`](merawprocessorpixelbuffermanager/pixelbufferattributes-2cki6.md) dictionary. Second, create pixel buffers that match processor output requirements and satisfy Video Toolbox and client requirements.
+It contains the interfaces that the [`MERAWProcessor`](merawprocessor.md) uses for two tasks. First, to declare its set of requirements for output [`CVPixelBuffer`](https://developer.apple.com/documentation/corevideo/cvpixelbuffer-q2e) in the form of a [`pixelBufferAttributes`](merawprocessorpixelbuffermanager/pixelbufferattributes-2cki6.md) dictionary. Second, create pixel buffers that match processor output requirements and satisfy Video Toolbox and client requirements.
 
 ## Topics
 
@@ -29,14 +29,14 @@ It contains the interfaces that the [`MERAWProcessor`](merawprocessor.md) uses f
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

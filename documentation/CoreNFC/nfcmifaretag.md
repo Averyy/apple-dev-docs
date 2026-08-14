@@ -18,9 +18,9 @@ protocol NFCMiFareTag : NFCNDEFTag, __NFCTag
 
 #### Overview
 
-The [`NFCTagReaderSessionDelegate`](nfctagreadersessiondelegate-2joku.md) receives an object that conforms to the [`NFCMiFareTag`](nfcmifaretag.md) protocol when the [`NFCTagReaderSession`](nfctagreadersession.md) detects a compatible tag. However, if you include the application identifier `D2760000850101`—the identifier for the NDEF application on MIFARE® DESFire® tags (NFC Forum T4T tag platform)—in the [`ISO7816 application identifiers for NFC Tag Reader Session`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.nfc.readersession.iso7816.select-identifiers) array of your `Info.plist` file, the reader session sends the delegate an [`NFCISO7816Tag`](nfciso7816tag.md) object when it finds a tag matching the identifier. To receive the MIFARE DESFire tag as an [`NFCMiFareTag`](nfcmifaretag.md) object, don’t include `D2760000850101` in the array.
+The [`NFCTagReaderSessionDelegate`](nfctagreadersessiondelegate-2joku.md) receives an object that conforms to the [`NFCMiFareTag`](nfcmifaretag.md) protocol when the [`NFCTagReaderSession`](nfctagreadersession.md) detects a compatible tag. However, if you include the application identifier `D2760000850101`—the identifier for the NDEF application on MIFARE® DESFire® tags (NFC Forum T4T tag platform)—in the [`ISO7816 application identifiers for NFC Tag Reader Session`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.nfc.readersession.iso7816.select-identifiers) array of your `Info.plist` file, the reader session sends the delegate an [`NFCISO7816Tag`](nfciso7816tag.md) object when it finds a tag matching the identifier. To receive the MIFARE DESFire tag as an [`NFCMiFareTag`](nfcmifaretag.md) object, don’t include `D2760000850101` in the array.
 
-For the delegate to receive the tag object, your app must include the [`Near Field Communication Tag Reader Session Formats Entitlement`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.nfc.readersession.formats).
+For the delegate to receive the tag object, your app must include the [`Near Field Communication Tag Reader Session Formats Entitlement`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.nfc.readersession.formats).
 
 For the reader session to read and write data to the tag, it must be available to the reader session. Use the [`isAvailable`](nfctag-swift.enum/isavailable.md) property to check the tag’s availability.
 
@@ -50,10 +50,10 @@ MIFARE, MIFARE DESFire, MIFARE Ultralight, and MIFARE Plus are registered tradem
 
 ### Inherits From
 - [NFCNDEFTag](nfcndeftag.md)
-- [NSCoding](../Foundation/NSCoding.md)
-- [NSCopying](../Foundation/NSCopying.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [NSSecureCoding](../Foundation/NSSecureCoding.md)
+- [NSCoding](../foundation/nscoding.md)
+- [NSCopying](../foundation/nscopying.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSSecureCoding](../foundation/nssecurecoding.md)
 
 ## See Also
 

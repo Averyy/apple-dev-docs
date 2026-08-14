@@ -21,15 +21,15 @@ init(pixelBuffer: CVPixelBuffer)
 
 #### Return Value
 
-A [`CIRenderDestination`](cirenderdestination.md) object for rendering to a [`CVPixelBuffer`](https://developer.apple.com/documentation/CoreVideo/CVPixelBuffer).
+A [`CIRenderDestination`](cirenderdestination.md) object for rendering to a [`CVPixelBuffer`](https://developer.apple.com/documentation/corevideo/cvpixelbuffer).
 
 #### Discussion
 
-The destination’s [`colorSpace`](cirenderdestination/colorspace.md) property will default to a [`CGColorSpace`](https://developer.apple.com/documentation/CoreGraphics/CGColorSpace) created by querying the [`CVPixelBuffer`](https://developer.apple.com/documentation/CoreVideo/CVPixelBuffer) object’s attributes.
+The destination’s [`colorSpace`](cirenderdestination/colorspace.md) property will default to a [`CGColorSpace`](https://developer.apple.com/documentation/coregraphics/cgcolorspace) created by querying the [`CVPixelBuffer`](https://developer.apple.com/documentation/corevideo/cvpixelbuffer) object’s attributes.
 
 ## Parameters
 
-- `pixelBuffer`: The [`CVPixelBuffer`](https://developer.apple.com/documentation/CoreVideo/CVPixelBuffer) render target.
+- `pixelBuffer`: The [`CVPixelBuffer`](https://developer.apple.com/documentation/corevideo/cvpixelbuffer) render target.
 
 ## See Also
 

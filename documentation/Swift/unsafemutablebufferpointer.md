@@ -110,15 +110,15 @@ An `UnsafeMutableBufferPointer` instance is a view into memory and does not own 
 ## Relationships
 
 ### Conforms To
-- [AccelerateBuffer](../Accelerate/AccelerateBuffer.md)
-- [AccelerateMutableBuffer](../Accelerate/AccelerateMutableBuffer.md)
+- [AccelerateBuffer](../accelerate/acceleratebuffer.md)
+- [AccelerateMutableBuffer](../accelerate/acceleratemutablebuffer.md)
 - [AtomicRepresentable](../synchronization/atomicrepresentable.md)
-- [BNNSGraph.Builder.OperationParameter](../Accelerate/BNNSGraph/Builder/OperationParameter.md)
-- [BNNSGraph.PointerArgument](../Accelerate/BNNSGraph/PointerArgument.md)
+- [BNNSGraph.Builder.OperationParameter](../accelerate/bnnsgraph/builder/operationparameter.md)
+- [BNNSGraph.PointerArgument](../accelerate/bnnsgraph/pointerargument.md)
 - [BidirectionalCollection](bidirectionalcollection.md)
 - [BitwiseCopyable](bitwisecopyable.md)
 - [Collection](collection.md)
-- [ContiguousBytes](../Foundation/ContiguousBytes.md)
+- [ContiguousBytes](../foundation/contiguousbytes.md)
 - [ConvertibleToBytes](convertibletobytes.md)
 - [Copyable](copyable.md)
 - [CustomDebugStringConvertible](customdebugstringconvertible.md)

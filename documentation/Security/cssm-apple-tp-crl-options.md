@@ -25,7 +25,7 @@ struct CSSM_APPLE_TP_CRL_OPTIONS
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../Swift/BitwiseCopyable.md)
+- [BitwiseCopyable](../swift/bitwisecopyable.md)
 
 
 ---

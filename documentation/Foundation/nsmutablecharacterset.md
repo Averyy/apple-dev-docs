@@ -30,9 +30,9 @@ Mutable character sets are less efficient to use than immutable character sets. 
 
 `NSMutableCharacterSet` defines no primitive methods. Subclasses must implement all methods declared by this class in addition to the primitives of [`NSCharacterSet`](nscharacterset.md). They must also implement [`mutableCopy(with:)`](nsmutablecopying/mutablecopy(with:).md).
 
-`NSMutableCharacterSet` is “toll-free bridged” with its Core Foundation counterpart, [`CFMutableCharacterSet`](https://developer.apple.com/documentation/CoreFoundation/CFMutableCharacterSet). See [`Toll-Free Bridging`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Conceptual/CocoaEncyclopedia/Toll-FreeBridgin/Toll-FreeBridgin.html#//apple_ref/doc/uid/TP40010810-CH2) for more information.
+`NSMutableCharacterSet` is “toll-free bridged” with its Core Foundation counterpart, [`CFMutableCharacterSet`](https://developer.apple.com/documentation/corefoundation/cfmutablecharacterset). See [`Toll-Free Bridging`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Conceptual/CocoaEncyclopedia/Toll-FreeBridgin/Toll-FreeBridgin.html#//apple_ref/doc/uid/TP40010810-CH2) for more information.
 
-> ❗ **Important**:  The Swift overlay to the Foundation framework provides the [`CharacterSet`](characterset.md) structure, which bridges to the [`NSMutableCharacterSet`](nsmutablecharacterset.md) class and its immutable superclass, [`NSCharacterSet`](nscharacterset.md).  For more information about value types, see [`Working with Foundation Types`](https://developer.apple.com/documentation/Swift/working-with-foundation-types).
+> ❗ **Important**:  The Swift overlay to the Foundation framework provides the [`CharacterSet`](characterset.md) structure, which bridges to the [`NSMutableCharacterSet`](nsmutablecharacterset.md) class and its immutable superclass, [`NSCharacterSet`](nscharacterset.md).  For more information about value types, see [`Working with Foundation Types`](https://developer.apple.com/documentation/swift/working-with-foundation-types).
 
 ## Topics
 
@@ -99,18 +99,18 @@ Mutable character sets are less efficient to use than immutable character sets. 
 ### Inherits From
 - [NSCharacterSet](nscharacterset.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
 - [NSCoding](nscoding.md)
 - [NSCopying](nscopying.md)
 - [NSMutableCopying](nsmutablecopying.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 - [NSSecureCoding](nssecurecoding.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 
 ---

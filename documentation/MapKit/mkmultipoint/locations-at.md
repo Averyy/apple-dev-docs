@@ -22,7 +22,7 @@ func locations(at indexes: IndexSet) -> [CGFloat]
 
 #### Return Value
 
-An array of [`CGFloat`](https://developer.apple.com/documentation/CoreFoundation/CGFloat-swift.struct) values.
+An array of [`CGFloat`](https://developer.apple.com/documentation/corefoundation/cgfloat-swift.struct) values.
 
 ## Parameters
 

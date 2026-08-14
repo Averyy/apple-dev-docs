@@ -22,7 +22,7 @@ optional func splitViewControllerDidCollapse(_ svc: UISplitViewController)
 
 This delegate method only applies to column-style split view interfaces. For more information, see [`Split view styles`](uisplitviewcontroller#Split-view-styles.md).
 
-The split view controller calls this method after its interface has collapsed, meaning that [`isCollapsed`](uisplitviewcontroller/iscollapsed.md) is [`true`](https://developer.apple.com/documentation/Swift/true). Use this method to perform any customization associated with the collapsed interface.
+The split view controller calls this method after its interface has collapsed, meaning that [`isCollapsed`](uisplitviewcontroller/iscollapsed.md) is [`true`](https://developer.apple.com/documentation/swift/true). Use this method to perform any customization associated with the collapsed interface.
 
 ## Parameters
 

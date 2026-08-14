@@ -22,7 +22,7 @@ static var package: UTType { get }
 
 #### Discussion
 
-Bundles differ from packages in that a bundle has an internal file hierarchy that [`CFBundle`](https://developer.apple.com/documentation/CoreFoundation/CFBundle) can read, while packages display to the user as if they were regular files. A single file system object can be a package and a bundle.
+Bundles differ from packages in that a bundle has an internal file hierarchy that [`CFBundle`](https://developer.apple.com/documentation/corefoundation/cfbundle) can read, while packages display to the user as if they were regular files. A single file system object can be a package and a bundle.
 
 The identifier for this type is `com.apple.package`.
 

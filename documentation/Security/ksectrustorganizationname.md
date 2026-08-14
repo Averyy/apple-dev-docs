@@ -22,7 +22,7 @@ let kSecTrustOrganizationName: CFString
 
 #### Discussion
 
-The value is a [`CFString`](https://developer.apple.com/documentation/CoreFoundation/CFString) that is meant to be displayed to the user as the validated name of the company or entity that owns the certificate, but only if the [`kSecTrustExtendedValidation`](ksectrustextendedvalidation.md) key is present.
+The value is a [`CFString`](https://developer.apple.com/documentation/corefoundation/cfstring) that is meant to be displayed to the user as the validated name of the company or entity that owns the certificate, but only if the [`kSecTrustExtendedValidation`](ksectrustextendedvalidation.md) key is present.
 
 
 ---

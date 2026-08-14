@@ -17,7 +17,6 @@ typedef int FFTDirection;
 ## Topics
 
 ### Constants
-- [kFFTDirection_Forward](../accelerate/kfftdirection_forward.md)
 - [kFFTDirection_Inverse](1645049-anonymous/kfftdirection_inverse.md)
   Specifies an inverse transform.
 

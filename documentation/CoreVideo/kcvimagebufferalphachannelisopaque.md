@@ -22,7 +22,7 @@ let kCVImageBufferAlphaChannelIsOpaque: CFString
 
 #### Discussion
 
-The value for this key is [`kCFBooleanTrue`](https://developer.apple.com/documentation/CoreFoundation/kCFBooleanTrue) to indicate that the alpha channel is fully opaque. This key isn’t used if the pixel format type has no alpha channel.
+The value for this key is [`kCFBooleanTrue`](https://developer.apple.com/documentation/corefoundation/kcfbooleantrue) to indicate that the alpha channel is fully opaque. This key isn’t used if the pixel format type has no alpha channel.
 
 ## See Also
 

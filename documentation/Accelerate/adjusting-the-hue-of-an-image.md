@@ -14,17 +14,17 @@ This sample code project allows you to adjust the hue of an image by treating th
 
 The image below shows an approximation of an L*a*b* color chart. The *a** value transitions horizontally (left to right) from negative, through zero, to positive, and the *b** value transitions vertically (bottom to top) from negative, through zero, to positive. Because this sample code focuses on color rather than lightness, the image doesn’t consider L*.
 
-![A graphic containing vertical and horizontal gradients. The gradient colors transition from green on the left to red on the right, and from yellow at the top to blue at the bottom.](https://docs-assets.developer.apple.com/published/8b5229283b3e0e9790f3ad28ee2bb7e2/lab-color-chart_2x.png)
+![A graphic containing vertical and horizontal gradients. The gradient colors transition from green on the left to red on the right, and from yellow at the top to blue at the bottom.](/images/com.apple.accelerate/lab-color-chart_2x.png)
 
 The sample uses the vImage Any-to-Any converter to convert the source image’s color space to L*a*b*. The code converts the interleaved L*a*b* image data to multiple-plane image data that it passes to a matrix multiply operation to apply the hue adjustment.
 
 The following image shows four photographs, from left to right, with a hue adjustment of -90º, 0º (an unchanged hue), 90º, and 180º:
 
-![Four photographs of a flower with different hue adjustments.](https://docs-assets.developer.apple.com/published/b3598292b9795848665392d30103feb1/hueAdjust_2x.png)
+![Four photographs of a flower with different hue adjustments.](/images/com.apple.accelerate/hueAdjust_2x.png)
 
 ##### Create the Lab Image Format
 
-To create the image format for the L*a*b* color space, the sample app uses the [`genericLab`](https://developer.apple.com/documentation/CoreGraphics/CGColorSpace/genericLab) system-defined [`CGColorSpace`](https://developer.apple.com/documentation/CoreGraphics/CGColorSpace).
+To create the image format for the L*a*b* color space, the sample app uses the [`genericLab`](https://developer.apple.com/documentation/coregraphics/cgcolorspace/genericlab) system-defined [`CGColorSpace`](https://developer.apple.com/documentation/coregraphics/cgcolorspace).
 
 ```swift
 var labImageFormat = vImage_CGImageFormat(
@@ -98,7 +98,7 @@ The app adjusts the hue of an image by rotating a two-element vector, described 
 
 The following visualizes a sample color (marked *A*) rotated by -90º (marked *C*) and 45º (marked *B*):
 
-![A graphic showing a color rotated by minus 90 degrees and by 45 degrees. The background contains vertical and horizontal gradients. The colors transition from green on the left to red on the right, and from yellow at the top to blue at the bottom. The original color is light yellow. The color that is rotated minus 90 degrees is light green, and the color that is rotated 45 degrees is light red. ](https://docs-assets.developer.apple.com/published/057803bef57b84075891b0e92e7f3688/ColorRotate_2x.png)
+![A graphic showing a color rotated by minus 90 degrees and by 45 degrees. The background contains vertical and horizontal gradients. The colors transition from green on the left to red on the right, and from yellow at the top to blue at the bottom. The original color is light yellow. The color that is rotated minus 90 degrees is light green, and the color that is rotated 45 degrees is light red. ](/images/com.apple.accelerate/ColorRotate_2x.png)
 
 The following code generates the rotation matrix based on `hueAngle`:
 
@@ -144,7 +144,7 @@ Finally, the sample code converts the hue-adjusted planar buffer back to an inte
 labPlanarDestination.interleave(destination: labInterleavedDestination)
 ```
 
-The SwiftUI [`Image`](https://developer.apple.com/documentation/SwiftUI/Image) view supports the L*a*b* color space. The following code creates a Core Graphics image from the interleaved pixel buffer and passes it to the published `outputImage` property that the app displays on the screen:
+The SwiftUI [`Image`](https://developer.apple.com/documentation/swiftui/image) view supports the L*a*b* color space. The following code creates a Core Graphics image from the interleaved pixel buffer and passes it to the published `outputImage` property that the app displays on the screen:
 
 ```swift
 if let result = labInterleavedDestination

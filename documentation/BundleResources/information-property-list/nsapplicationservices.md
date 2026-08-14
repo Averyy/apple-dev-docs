@@ -17,7 +17,7 @@ A list of service providers and the devices that they support.
 
 #### Discussion
 
-Use this key to define which devices [`DeviceDiscoveryUI`](https://developer.apple.com/documentation/DeviceDiscoveryUI) can connect with. The application services’s [`Browses`](information-property-list/nsapplicationservices/browses.md) key takes an array of dictionaries, where each dictionary contains a unique identifier, a usage description string, and a list of supported operating systems. You can define more than one application service for your apps. Each service has its own identifier, and can connect to a different subset of devices.
+Use this key to define which devices [`DeviceDiscoveryUI`](https://developer.apple.com/documentation/devicediscoveryui) can connect with. The application services’s [`Browses`](information-property-list/nsapplicationservices/browses.md) key takes an array of dictionaries, where each dictionary contains a unique identifier, a usage description string, and a list of supported operating systems. You can define more than one application service for your apps. Each service has its own identifier, and can connect to a different subset of devices.
 
 Set these in your tvOS app target’s Info tab, or in its `Info.plist` file.
 
@@ -58,7 +58,7 @@ Set these in your tvOS app target’s Info tab, or in its `Info.plist` file.
 
 You can use the human-readable key names in Xcode’s property list editor.
 
-![A screenshot showing the Application Services settings in Xcode’s property list editor.](https://docs-assets.developer.apple.com/published/cf9a6dfa9f67b5902bd2e32c0021352c/media-4030768%402x.png)
+![A screenshot showing the Application Services settings in Xcode’s property list editor.](/images/com.apple.bundleresources/media-4030768@2x.png)
 
 In the iOS, iPadOS, or watchOS app, use the [`Advertises`](information-property-list/nsapplicationservices/advertises.md) key, and give it an array of dictionaries where each dictionary lists the application service identifier for the connection types supported on this platform.
 
@@ -78,7 +78,7 @@ In the iOS, iPadOS, or watchOS app, use the [`Advertises`](information-property-
 
 You can use the human-readable key names in Xcode’s property list editor.
 
-![A screenshot showing the application services settings in Xcode’s property list editor.](https://docs-assets.developer.apple.com/published/caa062010907505ea9fffc771d37efd9/media-4030766%402x.png)
+![A screenshot showing the application services settings in Xcode’s property list editor.](/images/com.apple.bundleresources/media-4030766@2x.png)
 
 ## Topics
 

@@ -24,7 +24,7 @@ static let omnidirectional: AVAudioSession.PolarPattern
 
 The omnidirectional pattern is circular and picks up sounds from all directions at the same level.
 
-![The omnidirectional pattern picks up sounds equally from all directions.](https://docs-assets.developer.apple.com/published/ccd23dc04d9a02eb835015bcbee1bcce/media-3039131%402x.png)
+![The omnidirectional pattern picks up sounds equally from all directions.](/images/com.apple.avfaudio/media-3039131@2x.png)
 
 ## See Also
 

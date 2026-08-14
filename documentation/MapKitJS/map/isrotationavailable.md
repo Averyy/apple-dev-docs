@@ -22,7 +22,7 @@ MapKit JS determines whether it’s possible to rotate the map, and sets [`isRot
 The value for [`isRotationAvailable`](map/isrotationavailable.md) is:
 
 - **`true`**: When the client renders the map, such as by browsers that support WebGL.
-- **`false`**: When the Apple Maps server renders the map with a grid of image tiles, or when you implement your own tile overlays ([`addTileOverlay(tileOverlay)`](map/addtileoverlay.md)).
+- **`false`**: When the Apple Maps server renders the map with a grid of image tiles, or when you implement your own tile overlays ([`addTileOverlay()`](map/addtileoverlay.md)).
 
 When `isRotationAvailable` is `false`, [`isRotationEnabled`](map/isrotationenabled.md) is always `false` and [`rotation`](map/rotation.md) is always `0`.
 

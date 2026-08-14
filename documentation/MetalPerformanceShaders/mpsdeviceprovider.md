@@ -31,7 +31,7 @@ protocol MPSDeviceProvider
 
 ## See Also
 
-- [class NSKeyedArchiver](../Foundation/NSKeyedArchiver.md)
+- [class NSKeyedArchiver](../foundation/nskeyedarchiver.md)
   An encoder that stores an object’s data to an archive referenced by keys.
 - [class MPSKeyedUnarchiver](mpskeyedunarchiver.md)
   A keyed archiver that supports Metal Performance Shaders kernel decoding.

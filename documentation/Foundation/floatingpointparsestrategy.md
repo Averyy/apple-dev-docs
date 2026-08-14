@@ -33,7 +33,7 @@ let currencyValues = ["$100.11", "$1,000.22", "$10,000.33", "€100.44"]
 let parsedValues = currencyValues.map { try? usCurrencyStrategy.parse($0) } // [Optional(100.11), Optional(1000.22), Optional(10000.33), nil]
 ```
 
-You don’t need to instantiate a parse strategy variable to parse a single string. Instead, use the [`BinaryFloatingPoint`](https://developer.apple.com/documentation/Swift/BinaryFloatingPoint) initializers that take a source [`String`](https://developer.apple.com/documentation/Swift/String) and a `format` parameter to parse the string according to the provided [`FormatStyle`](formatstyle.md). The following example parses a string that represents a currency value in US dollars.
+You don’t need to instantiate a parse strategy variable to parse a single string. Instead, use the [`BinaryFloatingPoint`](https://developer.apple.com/documentation/swift/binaryfloatingpoint) initializers that take a source [`String`](https://developer.apple.com/documentation/swift/string) and a `format` parameter to parse the string according to the provided [`FormatStyle`](formatstyle.md). The following example parses a string that represents a currency value in US dollars.
 
 ```swift
 let formattedUSDollars = "$1,234.56"
@@ -64,15 +64,15 @@ let parsedUSDollars = try? Double(formattedUSDollars, format: .currency(code: "U
 ## Relationships
 
 ### Conforms To
-- [Copyable](../Swift/Copyable.md)
-- [Decodable](../Swift/Decodable.md)
-- [Encodable](../Swift/Encodable.md)
-- [Equatable](../Swift/Equatable.md)
-- [Escapable](../Swift/Escapable.md)
-- [Hashable](../Swift/Hashable.md)
+- [Copyable](../swift/copyable.md)
+- [Decodable](../swift/decodable.md)
+- [Encodable](../swift/encodable.md)
+- [Equatable](../swift/equatable.md)
+- [Escapable](../swift/escapable.md)
+- [Hashable](../swift/hashable.md)
 - [ParseStrategy](parsestrategy.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

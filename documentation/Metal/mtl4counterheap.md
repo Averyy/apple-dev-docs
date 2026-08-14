@@ -41,7 +41,7 @@ The data instances that this type stores correspond to the [`MTL4CounterHeapType
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

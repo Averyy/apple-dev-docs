@@ -7,7 +7,6 @@ The maximum number of participants allowed for a group chat.
 
 **Availability**:
 - iOS 26.0+
-- iPadOS 26.0+
 
 ## Declaration
 

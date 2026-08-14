@@ -48,7 +48,7 @@ The normalized point with coordinates that range between `-1` and `1`. The origi
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

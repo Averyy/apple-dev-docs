@@ -24,11 +24,11 @@ protocol SerialModelExecutor : ModelExecutor, SerialExecutor
 ## Relationships
 
 ### Inherits From
-- [Executor](../Swift/Executor.md)
+- [Executor](../swift/executor.md)
 - [ModelExecutor](modelexecutor.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
-- [SerialExecutor](../Swift/SerialExecutor.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
+- [SerialExecutor](../swift/serialexecutor.md)
 ### Conforming Types
 - [DefaultSerialModelExecutor](defaultserialmodelexecutor.md)
 

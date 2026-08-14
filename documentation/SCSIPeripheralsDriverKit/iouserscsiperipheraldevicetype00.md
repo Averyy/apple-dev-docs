@@ -50,7 +50,7 @@ Use the functions in [`SCSI commands`](scsi-commands.md) to populate Command Des
 ## Relationships
 
 ### Inherits From
-- [IOService](../DriverKit/IOService.md)
+- [IOService](../driverkit/ioservice.md)
 
 ## See Also
 

@@ -22,13 +22,13 @@ Returns the new [`NSDocument`](nsdocument.md) object, or `nil` if a new untitled
 
 The default implementation of this method calls [`defaultType`](nsdocumentcontroller/defaulttype.md) to determine the type of new document to create, calls [`makeUntitledDocument(ofType:)`](nsdocumentcontroller/makeuntitleddocument(oftype:).md) to create it, then calls [`addDocument(_:)`](nsdocumentcontroller/adddocument(_:).md) to record its opening.
 
-When `displayDocument` is [`true`](https://developer.apple.com/documentation/Swift/true), this method sends the new document [`makeWindowControllers()`](nsdocument/makewindowcontrollers().md) and [`showWindows()`](nsdocument/showwindows().md) messages. In this scenario, [`showWindows()`](nsdocument/showwindows().md) shows only the window controllers that have been assigned to the document.
+When `displayDocument` is [`true`](https://developer.apple.com/documentation/swift/true), this method sends the new document [`makeWindowControllers()`](nsdocument/makewindowcontrollers().md) and [`showWindows()`](nsdocument/showwindows().md) messages. In this scenario, [`showWindows()`](nsdocument/showwindows().md) shows only the window controllers that have been assigned to the document.
 
 > **Note**:  In Swift, this method returns a nonoptional result and is marked with the `throws` keyword to indicate that it throws an error in cases of failure. You call this method in a `try` expression and handle any errors in the `catch` clauses of a `do` statement, as described in [`Error Handling`](https://developer.apple.comhttps://docs.swift.org/swift-book/LanguageGuide/ErrorHandling.html) in [`The Swift Programming Language`](https://developer.apple.comhttps://docs.swift.org/swift-book/) and `About Imported Cocoa Error Parameters`.
 
 ## Parameters
 
-- `displayDocument`: [`true`](https://developer.apple.com/documentation/Swift/true) if the user interface for the document should be shown, otherwise [`false`](https://developer.apple.com/documentation/Swift/false).
+- `displayDocument`: [`true`](https://developer.apple.com/documentation/swift/true) if the user interface for the document should be shown, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
 
 ## See Also
 

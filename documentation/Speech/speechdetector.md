@@ -64,8 +64,8 @@ try await analyzer.setModules([transcriber, speechDetector])
 ## Relationships
 
 ### Conforms To
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 - [SpeechModule](speechmodule.md)
 
 ## See Also

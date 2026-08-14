@@ -6,7 +6,7 @@ Compress a string, write it to the file system, and decompress the same file usi
 
 #### Overview
 
-The code in this article uses the [`Compression`](https://developer.apple.com/documentation/Compression) framework to encode (compress) and decode (decompress) a string. The code writes the encoded result to the temporary directory that the [`NSTemporaryDirectory()`](https://developer.apple.com/documentation/Foundation/NSTemporaryDirectory()) function returns.
+The code in this article uses the [`Compression`](https://developer.apple.com/documentation/compression) framework to encode (compress) and decode (decompress) a string. The code writes the encoded result to the temporary directory that the [`NSTemporaryDirectory()`](https://developer.apple.com/documentation/foundation/nstemporarydirectory()) function returns.
 
 The code in this sample is useful in applications that store or transmit text files where saving or sending smaller files can improve performance and reduce storage overhead. This sample app implements *buffer compression*, where it reads the contents of a source buffer in a single step to compress or decompress data.
 
@@ -34,7 +34,7 @@ On return, `sourceBuffer` is an array of [`UInt8`](https://developer.apple.com/d
 
 ##### Create the Destination Buffer
 
-Create an [`UnsafeMutablePointer`](https://developer.apple.com/documentation/Swift/UnsafeMutablePointer) structure and allocate it with a capacity of the source string’s `count` to receive the encoded data.
+Create an [`UnsafeMutablePointer`](https://developer.apple.com/documentation/swift/unsafemutablepointer) structure and allocate it with a capacity of the source string’s `count` to receive the encoded data.
 
 ```swift
 let destinationBuffer = UnsafeMutablePointer<UInt8>.allocate(capacity: sourceString.count)
@@ -46,17 +46,17 @@ defer {
 
 ##### Select a Compression Algorithm
 
-The code in this example uses the [`COMPRESSION_LZMESH`](https://developer.apple.com/documentation/Compression/COMPRESSION_LZMESH) algorithm, which provides the compression ratio of zlib level 5, but with much higher energy efficiency and speed (between 2x and 3x) for both encode and decode operations:
+The code in this example uses the [`COMPRESSION_LZMESH`](https://developer.apple.com/documentation/compression/compression_lzmesh) algorithm, which provides the compression ratio of zlib level 5, but with much higher energy efficiency and speed (between 2x and 3x) for both encode and decode operations:
 
 ```swift
 let algorithm = COMPRESSION_LZMESH
 ```
 
-For apps that require interoperability with non-Apple devices, use [`COMPRESSION_ZLIB`](https://developer.apple.com/documentation/Compression/COMPRESSION_ZLIB) instead. For more information on other compression algorithms, see [`compression_algorithm`](https://developer.apple.com/documentation/Compression/compression_algorithm).
+For apps that require interoperability with non-Apple devices, use [`COMPRESSION_ZLIB`](https://developer.apple.com/documentation/compression/compression_zlib) instead. For more information on other compression algorithms, see [`compression_algorithm`](https://developer.apple.com/documentation/compression/compression_algorithm).
 
 ##### Compress the Data
 
-The [`compression_encode_buffer(_:_:_:_:_:_:)`](https://developer.apple.com/documentation/Compression/compression_encode_buffer(_:_:_:_:_:_:)) function compresses the data, writes the result to the destination buffer, and returns the size of the encoded data.
+The [`compression_encode_buffer(_:_:_:_:_:_:)`](https://developer.apple.com/documentation/compression/compression_encode_buffer(_:_:_:_:_:_:)) function compresses the data, writes the result to the destination buffer, and returns the size of the encoded data.
 
 ```swift
 let compressedSize = compression_encode_buffer(destinationBuffer, sourceString.count,
@@ -65,7 +65,7 @@ let compressedSize = compression_encode_buffer(destinationBuffer, sourceString.c
                                                algorithm)
 ```
 
-When working with small files, the compression may fail and [`compression_encode_buffer(_:_:_:_:_:_:)`](https://developer.apple.com/documentation/Compression/compression_encode_buffer(_:_:_:_:_:_:)) returns `0`.
+When working with small files, the compression may fail and [`compression_encode_buffer(_:_:_:_:_:_:)`](https://developer.apple.com/documentation/compression/compression_encode_buffer(_:_:_:_:_:_:)) returns `0`.
 
 ```swift
 if compressedSize == 0 {
@@ -136,7 +136,7 @@ defer {
 }
 ```
 
-Use [`compression_decode_buffer(_:_:_:_:_:_:)`](https://developer.apple.com/documentation/Compression/compression_decode_buffer(_:_:_:_:_:_:)) to decode the raw bytes of the encoded source data and write the result to `decodedDestinationBuffer`. You can create a string from the destination buffer using the [`init(cString:)`](https://developer.apple.com/documentation/Swift/String/init(cString:)-2p84k) initializer.
+Use [`compression_decode_buffer(_:_:_:_:_:_:)`](https://developer.apple.com/documentation/compression/compression_decode_buffer(_:_:_:_:_:_:)) to decode the raw bytes of the encoded source data and write the result to `decodedDestinationBuffer`. You can create a string from the destination buffer using the [`init(cString:)`](https://developer.apple.com/documentation/swift/string/init(cstring:)-2p84k) initializer.
 
 ```swift
 let decodedString: String = encodedSourceData.withUnsafeBytes { encodedSourceBuffer in
@@ -150,7 +150,7 @@ let decodedString: String = encodedSourceData.withUnsafeBytes { encodedSourceBuf
 }
 ```
 
-The [`compression_decode_buffer(_:_:_:_:_:_:)`](https://developer.apple.com/documentation/Compression/compression_decode_buffer(_:_:_:_:_:_:)) function returns the size of the decoded data. If the decompression fails, the size returned is zero. This may indicate that the memory allocated to the destination buffer is insufficient and you should switch to the stream API or retry with a larger buffer.
+The [`compression_decode_buffer(_:_:_:_:_:_:)`](https://developer.apple.com/documentation/compression/compression_decode_buffer(_:_:_:_:_:_:)) function returns the size of the decoded data. If the decompression fails, the size returned is zero. This may indicate that the memory allocated to the destination buffer is insufficient and you should switch to the stream API or retry with a larger buffer.
 
 ## See Also
 

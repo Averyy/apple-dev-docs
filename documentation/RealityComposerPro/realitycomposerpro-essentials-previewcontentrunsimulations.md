@@ -8,7 +8,7 @@ Test and iterate on your scenes directly in Reality Composer Pro, with or withou
 
 Reality Composer Pro lets you preview or simulate content on both real and virtual devices, with or without a linked Xcode project. You can iterate on your scene and build and run your app without leaving the editor.
 
-![An annotated demo screenshot showing the Reality Composer Pro and Xcode integration workflow.](https://docs-assets.developer.apple.com/published/27934496e598a666040f0a169decc78b/launchbar%402x.png)
+![An annotated demo screenshot showing the Reality Composer Pro and Xcode integration workflow.](/images/RealityComposerPro/launchbar@2x.png)
 
 The Preview tab shows a preview of the currently selected entity you are working on. For example, you can preview any Reality Composer Pro entity in a simulated visionOS or Mac environment — this mode is suited for content creators who want to preview how their scenes look in real time. To test a scene with actual interactions, views, cameras, game controllers, and live code on a real or simulated device, you need to link your Xcode project first. See [`Linking an Xcode project`](realitycomposerpro-essentials-linkingxcodeproject.md) to learn how.
 
@@ -30,7 +30,7 @@ Above the Viewport, click **Running Destinations** and then select a connected d
 
 #### Load Scenes in Your Apps View
 
-You can load a Reality Composer Pro scene the same way you load a `.usdz` asset from your app bundle. Specify the Reality Composer Pro package bundle instead, in the `make` closure of a [`RealityView`](https://developer.apple.com/documentation/RealityKit/RealityView) initializer.
+You can load a Reality Composer Pro scene the same way you load a `.usdz` asset from your app bundle. Specify the Reality Composer Pro package bundle instead, in the `make` closure of a [`RealityView`](https://developer.apple.com/documentation/realitykit/realityview) initializer.
 
 Each Reality Composer Pro package defines a global constant that points to its bundle. The system creates the bundle name by appending “Bundle” to the end of the project’s name.
 

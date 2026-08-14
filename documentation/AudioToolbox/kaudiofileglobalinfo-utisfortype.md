@@ -21,7 +21,7 @@ var kAudioFileGlobalInfo_UTIsForType: AudioFilePropertyID { get }
 
 #### Discussion
 
-If you access this property, your app is responsible for releasing the [`CFArray`](https://developer.apple.com/documentation/CoreFoundation/CFArray) object.
+If you access this property, your app is responsible for releasing the [`CFArray`](https://developer.apple.com/documentation/corefoundation/cfarray) object.
 
 When accessing this property, provide a pointer, in the `inSpecifier` parameter, to an audio file type ID.
 

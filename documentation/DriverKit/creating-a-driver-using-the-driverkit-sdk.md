@@ -10,7 +10,7 @@ Drivers act as a bridge between computer peripherals and the rest of the system.
 
 When the user plugs in a hardware device, the system loads an initial service to communicate with the device and get basic information from it. After it establishes communication, the system loads additional services to handle device-specific interactions. For example, the system might load a service to communicate with a USB device using a specific protocol. Each new service becomes a client of the previous service, which is known as the provider for the client.
 
-![An illustration of the interactions between kernel objects and DriverKit objects to communicate with a hardware device. ](https://docs-assets.developer.apple.com/published/2fee24d31c0a792842bc8a60347d5bd8/media-3572086%402x.png)
+![An illustration of the interactions between kernel objects and DriverKit objects to communicate with a hardware device. ](/images/com.apple.driverkit/media-3572086@2x.png)
 
 Apple supplies drivers and services for all standard hardware devices and communication protocols, including USB, Thunderbolt, Peripheral Component Interconnect (PCI), and more. Apple also provides drivers and services for the most common human interface device (HID) types, including mice and keyboards. You create custom drivers and services to support proprietary features or unique behaviors for your devices. You package your custom driver services inside a DriverKit extension.
 
@@ -43,18 +43,18 @@ The default DriverKit template contains a C++ source file and an IOKit interface
 
 ##### Select an Appropriate Service to Customize
 
-The DriverKit template provides a default subclass of the [`IOService`](ioservice.md) class, which is the base class for all driver services. Although you can subclass [`IOService`](ioservice.md) directly, typically you build off of a class that is more specific to your needs. For example, when developing drivers for USB devices, you build off one of the classes in the [`USBDriverKit`](https://developer.apple.com/documentation/USBDriverKit) framework.
+The DriverKit template provides a default subclass of the [`IOService`](ioservice.md) class, which is the base class for all driver services. Although you can subclass [`IOService`](ioservice.md) directly, typically you build off of a class that is more specific to your needs. For example, when developing drivers for USB devices, you build off one of the classes in the [`USBDriverKit`](https://developer.apple.com/documentation/usbdriverkit) framework.
 
 The services you create embody one of two roles:
 
 - An *interface service* manages information moving to and from the device.
 - A *device service* supports communication with the hardware.
 
-Create interface services for devices that communicate using standards-based protocols, such as USB, but which require interpretation or management of the resulting data. An interface service reads and writes data, processes that data, and does something useful with it. For example, a HID interface service processes input reports from a HID device and dispatches events to the system. Interface classes include [`IOUserHIDEventService`](https://developer.apple.com/documentation/HIDDriverKit/IOUserHIDEventService), [`IOHIDInterface`](https://developer.apple.com/documentation/HIDDriverKit/IOHIDInterface), [`IOUserSerial`](https://developer.apple.com/documentation/SerialDriverKit/IOUserSerial), and [`IOUserNetworkEthernet`](https://developer.apple.com/documentation/NetworkingDriverKit/IOUserNetworkEthernet).
+Create interface services for devices that communicate using standards-based protocols, such as USB, but which require interpretation or management of the resulting data. An interface service reads and writes data, processes that data, and does something useful with it. For example, a HID interface service processes input reports from a HID device and dispatches events to the system. Interface classes include [`IOUserHIDEventService`](https://developer.apple.com/documentation/hiddriverkit/iouserhideventservice), [`IOHIDInterface`](https://developer.apple.com/documentation/hiddriverkit/iohidinterface), [`IOUserSerial`](https://developer.apple.com/documentation/serialdriverkit/iouserserial), and [`IOUserNetworkEthernet`](https://developer.apple.com/documentation/networkingdriverkit/iousernetworkethernet).
 
-Create device services to support custom communication protocols or custom hardware features. Apple provides device services for all standard protocols and hardware types. For example, the [`IOUSBHostDevice`](https://developer.apple.com/documentation/USBDriverKit/IOUSBHostDevice) class reads and writes data from any USB device. You create device services to support custom devices or to configure devices so that the system can use them. Device classes include [`IOUSBHostDevice`](https://developer.apple.com/documentation/USBDriverKit/IOUSBHostDevice), [`IOHIDDevice`](https://developer.apple.com/documentation/HIDDriverKit/IOHIDDevice), and [`IOPCIDevice`](https://developer.apple.com/documentation/PCIDriverKit/IOPCIDevice).
+Create device services to support custom communication protocols or custom hardware features. Apple provides device services for all standard protocols and hardware types. For example, the [`IOUSBHostDevice`](https://developer.apple.com/documentation/usbdriverkit/iousbhostdevice) class reads and writes data from any USB device. You create device services to support custom devices or to configure devices so that the system can use them. Device classes include [`IOUSBHostDevice`](https://developer.apple.com/documentation/usbdriverkit/iousbhostdevice), [`IOHIDDevice`](https://developer.apple.com/documentation/hiddriverkit/iohiddevice), and [`IOPCIDevice`](https://developer.apple.com/documentation/pcidriverkit/iopcidevice).
 
-In your project’s `.iig` file, change the superclass of your custom service to your preferred service class. For example, to define a custom interface for a USB networking device, subclass [`IOUserNetworkEthernet`](https://developer.apple.com/documentation/NetworkingDriverKit/IOUserNetworkEthernet) as shown in the following code.
+In your project’s `.iig` file, change the superclass of your custom service to your preferred service class. For example, to define a custom interface for a USB networking device, subclass [`IOUserNetworkEthernet`](https://developer.apple.com/documentation/networkingdriverkit/iousernetworkethernet) as shown in the following code.
 
 ```objc
 class MyCustomDriver: public IOUserNetworkEthernet
@@ -69,7 +69,7 @@ public:
 
 When the system needs your driver, it instantiates your service class and calls its [`init`](ioservice/init.md) method. Keep the implementation of that method as simple as possible. Typically, the only thing you do at initialization time is allocate space for your driver’s variables.
 
-Your service subclass must not contain any member variables. Instead, define a structure containing the variables your driver requires, and allocate that structure at initialization time. The following code example shows the [`init`](ioservice/init.md) method for a HID keyboard driver, which is a subclass of the [`IOUserHIDEventService`](https://developer.apple.com/documentation/HIDDriverKit/IOUserHIDEventService) class. The driver stores a subset of the event services elements in a custom array that it then stores in the `HIDKeyboardDriver_IVars` structure. At initialization time, the [`init`](ioservice/init.md)> method allocates space for this structure and assigns it to the inherited `ivars` member variable.
+Your service subclass must not contain any member variables. Instead, define a structure containing the variables your driver requires, and allocate that structure at initialization time. The following code example shows the [`init`](ioservice/init.md) method for a HID keyboard driver, which is a subclass of the [`IOUserHIDEventService`](https://developer.apple.com/documentation/hiddriverkit/iouserhideventservice) class. The driver stores a subset of the event services elements in a custom array that it then stores in the `HIDKeyboardDriver_IVars` structure. At initialization time, the [`init`](ioservice/init.md)> method allocates space for this structure and assigns it to the inherited `ivars` member variable.
 
 ```objc
 struct HIDKeyboardDriver_IVars
@@ -169,9 +169,9 @@ The first parameter to the `CreateAction` function is the amount of additional m
 
 The system requires specific information to support the loading and installation of your driver. Specifically, installation of your driver fails if any of the following keys aren’t in the `Info.plist` file of your driver extension:
 
-- [`CFBundleShortVersionString`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/CFBundleShortVersionString)
-- [`CFBundleVersion`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/CFBundleVersion)
-- [`OSBundleUsageDescriptionKey`](https://developer.apple.com/documentation/SystemExtensions/OSBundleUsageDescriptionKey)
+- [`CFBundleShortVersionString`](https://developer.apple.com/documentation/bundleresources/information-property-list/cfbundleshortversionstring)
+- [`CFBundleVersion`](https://developer.apple.com/documentation/bundleresources/information-property-list/cfbundleversion)
+- [`OSBundleUsageDescriptionKey`](https://developer.apple.com/documentation/systemextensions/osbundleusagedescriptionkey)
 
 The system uses the version information to determine when to install a new version of your driver. Increment the version number whenever you change your driver’s behavior and want to install a new version.
 
@@ -185,13 +185,13 @@ The system maintains a registry of installed drivers, and each driver contains i
 
 During its search for drivers, the system uses information from the `IOKitPersonalities` key of each driver’s `Info.plist` file to identify potential matches. This key contains a dictionary of the driver’s *personalities*—that is, the types of devices it supports. Each key in the dictionary is a descriptive name of the personality, and the value is another dictionary of keys that describe the specific personality. Include the following minimum set of keys for each personality:
 
-- [`CFBundleIdentifier`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/CFBundleIdentifier)—The bundle ID of your driver
+- [`CFBundleIdentifier`](https://developer.apple.com/documentation/bundleresources/information-property-list/cfbundleidentifier)—The bundle ID of your driver
 - `IOClass`—The Apple class containing the base behavior
 - `IOUserClass`—The name of your custom service class
 - `IOUserServerName`—The bundle identifier of your driver
 - `IOProviderClass`—The class that your service requires as its provider object
 
-In addition to the minimum set of keys, include additional keys in the personality dictionary that are specific to your IOService subclasses. For example, a personality for an [`IOUserHIDEventService`](https://developer.apple.com/documentation/HIDDriverKit/IOUserHIDEventService) subclass include the `VendorID`, `ProductID`, `PrimaryUsagePage`, and `PrimaryUsage` keys to indicate the device type and manufacturer information. This information helps the system find the most appropriate match for a specific device.
+In addition to the minimum set of keys, include additional keys in the personality dictionary that are specific to your IOService subclasses. For example, a personality for an [`IOUserHIDEventService`](https://developer.apple.com/documentation/hiddriverkit/iouserhideventservice) subclass include the `VendorID`, `ProductID`, `PrimaryUsagePage`, and `PrimaryUsage` keys to indicate the device type and manufacturer information. This information helps the system find the most appropriate match for a specific device.
 
 After the matching process identifies an appropriate driver, it loads the driver, initializes it, and calls its [`Start`](ioservice/start.md) method. Typically, the system instantiates multiple services for a single device, with each new service becoming a client of the previous service. This chain of services allows each service to handle specific tasks and rely on its provider object for lower-level tasks.
 

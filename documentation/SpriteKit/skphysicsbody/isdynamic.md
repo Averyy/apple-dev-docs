@@ -27,7 +27,7 @@ var isDynamic: Bool { get set }
 
 #### Discussion
 
-The default value is [`true`](https://developer.apple.com/documentation/Swift/true). If the value is [`false`](https://developer.apple.com/documentation/Swift/false), the physics body ignores all forces and impulses applied to it. This property is ignored on edge-based bodies; they are automatically static.
+The default value is [`true`](https://developer.apple.com/documentation/swift/true). If the value is [`false`](https://developer.apple.com/documentation/swift/false), the physics body ignores all forces and impulses applied to it. This property is ignored on edge-based bodies; they are automatically static.
 
 ## See Also
 

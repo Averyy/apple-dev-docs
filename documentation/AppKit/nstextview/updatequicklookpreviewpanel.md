@@ -16,7 +16,7 @@ func updateQuickLookPreviewPanel()
 
 #### Discussion
 
-Notifies the  [`QLPreviewPanel`](https://developer.apple.com/documentation/QuickLookUI/QLPreviewPanel) class for possible status changes with the data source or controller.  Typically invoked in response to selection changes.
+Notifies the  [`QLPreviewPanel`](https://developer.apple.com/documentation/quicklookui/qlpreviewpanel) class for possible status changes with the data source or controller.  Typically invoked in response to selection changes.
 
 ## See Also
 

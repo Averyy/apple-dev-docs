@@ -34,7 +34,7 @@ Some ARKit features automatically add special anchors to a session. World-tracki
 In addition to creating your own `ARAnchor` instances to track the real-world positions of your virtual content, you can also subclass `ARAnchor` to associate custom data with anchors you create. Ensure that your anchor classes behave correctly when ARKit updates frames or saves and loads anchors in an [`ARWorldMap`](arworldmap.md):
 
 - Anchor subclasses must fullfill the requirements of the [`ARAnchorCopying`](aranchorcopying.md) protocol. ARKit calls [`init(anchor:)`](aranchorcopying/init(anchor:).md) (on a background thread) to copy instances of your anchor class from each [`ARFrame`](arframe.md) to the next. Your implementation of this initializer should copy the values of any custom properties your subclass adds.
-- Anchor subclasses must also adopt the [`NSSecureCoding`](https://developer.apple.com/documentation/Foundation/NSSecureCoding) protocol. Override [`encode(with:)`](https://developer.apple.com/documentation/Foundation/NSCoding/encode(with:)) and [`init(coder:)`](https://developer.apple.com/documentation/Foundation/NSCoding/init(coder:)) to save and restore the values your subclass’ custom properties when ARKit saves and loads them in a world map.
+- Anchor subclasses must also adopt the [`NSSecureCoding`](https://developer.apple.com/documentation/foundation/nssecurecoding) protocol. Override [`encode(with:)`](https://developer.apple.com/documentation/foundation/nscoding/encode(with:)) and [`init(coder:)`](https://developer.apple.com/documentation/foundation/nscoding/init(coder:)) to save and restore the values your subclass’ custom properties when ARKit saves and loads them in a world map.
 - Anchors are considered equal based on their [`identifier`](aranchor/identifier.md) property.
 - Only anchors that do not adopt [`ARTrackable`](artrackable.md) are included when you save a world map.
 
@@ -61,7 +61,7 @@ In addition to creating your own `ARAnchor` instances to track the real-world po
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Inherited By
 - [ARAppClipCodeAnchor](arappclipcodeanchor.md)
 - [ARBodyAnchor](arbodyanchor.md)
@@ -75,17 +75,17 @@ In addition to creating your own `ARAnchor` instances to track the real-world po
 - [ARPlaneAnchor](arplaneanchor.md)
 ### Conforms To
 - [ARAnchorCopying](aranchorcopying.md)
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCoding](../Foundation/NSCoding.md)
-- [NSCopying](../Foundation/NSCopying.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [NSSecureCoding](../Foundation/NSSecureCoding.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCoding](../foundation/nscoding.md)
+- [NSCopying](../foundation/nscopying.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

@@ -96,7 +96,7 @@ Use the drawable’s [`LayerRenderer.Drawable.View`](layerrenderer/drawable/view
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../Swift/BitwiseCopyable.md)
+- [BitwiseCopyable](../swift/bitwisecopyable.md)
 
 ## See Also
 

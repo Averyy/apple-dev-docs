@@ -23,7 +23,7 @@ func render(in ctx: CGContext)
 
 This method renders directly from the layer tree, ignoring any animations added to the render tree. Renders in the coordinate space of the layer.
 
-The following code shows how you can use [`render(in:)`](calayer/render(in:).md) to create a [`UIImage`](https://developer.apple.com/documentation/UIKit/UIImage) from a [`CAShapeLayer`](cashapelayer.md) with a [`path`](cashapelayer/path.md) that describes a circle. After creating the layer, the code creates a [`CGContext`](https://developer.apple.com/documentation/CoreGraphics/CGContext) into which the circle is rendered. After rendering, [`UIGraphicsGetImageFromCurrentImageContext()`](https://developer.apple.com/documentation/UIKit/UIGraphicsGetImageFromCurrentImageContext()) generates the image.
+The following code shows how you can use [`render(in:)`](calayer/render(in:).md) to create a [`UIImage`](https://developer.apple.com/documentation/uikit/uiimage) from a [`CAShapeLayer`](cashapelayer.md) with a [`path`](cashapelayer/path.md) that describes a circle. After creating the layer, the code creates a [`CGContext`](https://developer.apple.com/documentation/coregraphics/cgcontext) into which the circle is rendered. After rendering, [`UIGraphicsGetImageFromCurrentImageContext()`](https://developer.apple.com/documentation/uikit/uigraphicsgetimagefromcurrentimagecontext()) generates the image.
 
 ```swift
 let diameter: CGFloat = 100

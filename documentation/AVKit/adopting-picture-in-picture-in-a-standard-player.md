@@ -6,7 +6,7 @@ Add Picture in Picture (PiP) playback to your app using a player view controller
 
 #### Overview
 
-The [`AVPlayerViewController`](avplayerviewcontroller.md) provides the standard video playback experience across iOS, iPadOS, and tvOS. In tvOS, it supports a wide variety of remotes, skipping, scanning, scrubbing, Siri commands, interstitial support, and more. After you configure your audio session and set the project capabilities as described in [`Configuring your app for media playback`](https://developer.apple.com/documentation/AVFoundation/configuring-your-app-for-media-playback), your player automatically supports PiP playback. When your app runs on a supported device, the user can manage PiP in the standard player.
+The [`AVPlayerViewController`](avplayerviewcontroller.md) provides the standard video playback experience across iOS, iPadOS, and tvOS. In tvOS, it supports a wide variety of remotes, skipping, scanning, scrubbing, Siri commands, interstitial support, and more. After you configure your audio session and set the project capabilities as described in [`Configuring your app for media playback`](https://developer.apple.com/documentation/avfoundation/configuring-your-app-for-media-playback), your player automatically supports PiP playback. When your app runs on a supported device, the user can manage PiP in the standard player.
 
 ##### Familiarize Yourself with the Pip Controls
 
@@ -20,7 +20,7 @@ Starting in iOS 14, the PiP user interface provides controls that allow users to
 
 ##### Restore Your Video Playback Interface
 
-To handle the restore process, your code must adopt the [`AVPlayerViewControllerDelegate`](avplayerviewcontrollerdelegate.md) protocol and implement the [`playerViewController(_:restoreUserInterfaceForPictureInPictureStopWithCompletionHandler:)`](avplayerviewcontrollerdelegate/playerviewcontroller(_:restoreuserinterfaceforpictureinpicturestopwithcompletionhandler:).md) method. The framework calls this method when control returns to your app, giving you the opportunity to determine how to properly restore your video player’s interface. If you originally presented your video player using the [`present(_:animated:completion:)`](https://developer.apple.com/documentation/UIKit/UIViewController/present(_:animated:completion:)) method of [`UIViewController`](https://developer.apple.com/documentation/UIKit/UIViewController), restore your player interface in the same way in the delegate callback method.
+To handle the restore process, your code must adopt the [`AVPlayerViewControllerDelegate`](avplayerviewcontrollerdelegate.md) protocol and implement the [`playerViewController(_:restoreUserInterfaceForPictureInPictureStopWithCompletionHandler:)`](avplayerviewcontrollerdelegate/playerviewcontroller(_:restoreuserinterfaceforpictureinpicturestopwithcompletionhandler:).md) method. The framework calls this method when control returns to your app, giving you the opportunity to determine how to properly restore your video player’s interface. If you originally presented your video player using the [`present(_:animated:completion:)`](https://developer.apple.com/documentation/uikit/uiviewcontroller/present(_:animated:completion:)) method of [`UIViewController`](https://developer.apple.com/documentation/uikit/uiviewcontroller), restore your player interface in the same way in the delegate callback method.
 
 ```swift
 func playerViewController(_ playerViewController: AVPlayerViewController,
@@ -39,11 +39,11 @@ Avoid adding animations during the swap so you can ensure quick restoration for 
 
 In tvOS, users can play videos in PiP alongside a full-screen video. Video playback can move between PiP and full screen, so your app needs to be ready to handle the swap to provide a seamless PiP experience. When you swap your content with another app, consider your content that’s going into PiP and your content leaving PiP to go full screen. The illustration below shows the life cycle of your full-screen content swapping with another app’s PiP.
 
-![A diagram that describes the sequence of delegate calls your app receives when your full-screen video moves to PiP. When the swap starts, the player view controller calls the will start PiP method. At this point the animations haven’t started. When the swap and animations complete, the player view controller calls the did stop PiP method. Finally, your app is in the background state. ](https://docs-assets.developer.apple.com/published/660b45bbe135d61ae1a97a16422ef178/media-3908854%402x.png)
+![A diagram that describes the sequence of delegate calls your app receives when your full-screen video moves to PiP. When the swap starts, the player view controller calls the will start PiP method. At this point the animations haven’t started. When the swap and animations complete, the player view controller calls the did stop PiP method. Finally, your app is in the background state. ](/images/com.apple.avkit/media-3908854@2x.png)
 
 The illustration below shows the life cycle of your app’s PiP content moving to full screen.
 
-![A diagram that describes the sequence of delegate calls your app receives when your PiP video moves to full screen. When the swap initiates, the system moves your app to the foreground, and the player view controller calls the restore user interface for PiP method. At this point, the swap starts, but animations haven’t started. The player view controller calls the will stop PiP method, and then the did stop PiP method when the swap and animations complete.](https://docs-assets.developer.apple.com/published/7c273e2fce23c889d2c406e3798f81e2/media-3908855%402x.png)
+![A diagram that describes the sequence of delegate calls your app receives when your PiP video moves to full screen. When the swap initiates, the system moves your app to the foreground, and the player view controller calls the restore user interface for PiP method. At this point, the swap starts, but animations haven’t started. The player view controller calls the will stop PiP method, and then the did stop PiP method when the swap and animations complete.](/images/com.apple.avkit/media-3908855@2x.png)
 
 When you swap content within your app, you need to handle both sides of the life cycle events from both video players. The following sequence shows you the callbacks to expect with a video that swaps content between PiP and full screen.
 
@@ -53,7 +53,7 @@ When you swap content within your app, you need to handle both sides of the life
 4. The video starting PiP receives [`playerViewControllerDidStartPictureInPicture(_:)`](avplayerviewcontrollerdelegate/playerviewcontrollerdidstartpictureinpicture(_:).md), and the system completes the swap and animations for the video that started PiP.
 5. The video going full screen receives [`playerViewControllerDidStopPictureInPicture(_:)`](avplayerviewcontrollerdelegate/playerviewcontrollerdidstoppictureinpicture(_:).md), and the system completes the swap and animations for the video that moved full screen.
 
-![A diagram that describes the sequence of delegate calls your app receives when your app owns the full-screen and PiP videos. The sequence of calls you should expect, between your full-screen and PiP players, precedes the diagram.](https://docs-assets.developer.apple.com/published/eea0e50ab42ff488144b862ae57cdf7b/media-3908853%402x.png)
+![A diagram that describes the sequence of delegate calls your app receives when your app owns the full-screen and PiP videos. The sequence of calls you should expect, between your full-screen and PiP players, precedes the diagram.](/images/com.apple.avkit/media-3908853@2x.png)
 
 ## See Also
 

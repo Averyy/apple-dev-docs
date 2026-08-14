@@ -22,7 +22,7 @@ You rarely need to invoke this method directly because Cocoa places an item in t
 
 - `win`: The window being added to the menu. If this window object already exists in the Window menu, this method has no effect.
 - `string`: The string to display for the window’s menu item. How the string is interpreted is dependent on the value in the `isFilename` parameter.
-- `isFilename`: If [`false`](https://developer.apple.com/documentation/Swift/false), `aString` appears literally in the menu; otherwise, `aString` is assumed to be a converted pathname with the name of the file preceding the path (the way the `NSWindow` method [`setTitleWithRepresentedFilename(_:)`](nswindow/settitlewithrepresentedfilename(_:).md) shows a title)
+- `isFilename`: If [`false`](https://developer.apple.com/documentation/swift/false), `aString` appears literally in the menu; otherwise, `aString` is assumed to be a converted pathname with the name of the file preceding the path (the way the `NSWindow` method [`setTitleWithRepresentedFilename(_:)`](nswindow/settitlewithrepresentedfilename(_:).md) shows a title)
 
 ## See Also
 

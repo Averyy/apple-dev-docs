@@ -16,7 +16,7 @@ static let webResourceLoadDelegate: NSAttributedString.DocumentReadingOptionKey
 
 #### Discussion
 
-For HTML only. The value is an [`NSObject`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class).
+For HTML only. The value is an [`NSObject`](https://developer.apple.com/documentation/objectivec/nsobject-swift.class).
 
 If not present, a default delegate is used that permits the loading of subsidiary resources but does not respond to authentication challenges. The previous string constant was `@"WebResourceLoadDelegate"`.
 

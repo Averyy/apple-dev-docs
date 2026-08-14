@@ -18,7 +18,7 @@ static var signatureInvalidKey: SKAdTestError.Code { get }
 
 #### Discussion
 
-The public key that you provide in the [`validate(_:publicKey:)`](skadtestsession/validate(_:publickey:).md) or [`validateImpression(parameters:publicKey:)`](skadtestsession/validateimpression(parameters:publickey:).md) methods must be a key that uses Elliptic Curve Digital Signature Algorithm (ECDSA) with a prime256v1 curve. For more information about the key, see [`Registering an ad network`](https://developer.apple.com/documentation/StoreKit/registering-an-ad-network).
+The public key that you provide in the [`validate(_:publicKey:)`](skadtestsession/validate(_:publickey:).md) or [`validateImpression(parameters:publicKey:)`](skadtestsession/validateimpression(parameters:publickey:).md) methods must be a key that uses Elliptic Curve Digital Signature Algorithm (ECDSA) with a prime256v1 curve. For more information about the key, see [`Registering an ad network`](https://developer.apple.com/documentation/storekit/registering-an-ad-network).
 
 ## See Also
 

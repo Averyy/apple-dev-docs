@@ -42,7 +42,7 @@ OSBoolean represents a boolean `true`/`false` value as a Libkern C++ object. The
 - [withBoolean](osboolean/1808251-withboolean.md)
   Returns one of the global instances of OSBoolean.
 ### Instance Methods
-- [- free](../driverkit/osboolean/free.md)
+- [- free](osboolean/3180835-free.md)
 - [- getMetaClass](osboolean/1585812-getmetaclass.md)
 - [- getValue](osboolean/1585816-getvalue.md)
 - [- isEqualTo](osboolean/1585824-isequalto.md)

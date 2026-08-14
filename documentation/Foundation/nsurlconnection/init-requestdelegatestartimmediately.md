@@ -31,7 +31,7 @@ During the download the connection maintains a strong reference to the `delegate
 
 - `request`: The URL request to load. The `request` object is deep-copied as part of the initialization process. Changes made to `request` after this method returns do not affect the request that is used for the loading process.
 - `delegate`: The delegate object for the connection. The connection calls methods on this delegate as the load progresses.
-- `startImmediately`: [`true`](https://developer.apple.com/documentation/Swift/true) if the connection should begin loading data immediately, otherwise [`false`](https://developer.apple.com/documentation/Swift/false). If you pass [`false`](https://developer.apple.com/documentation/Swift/false), the connection is not scheduled with a run loop. You can then schedule the connection in the run loop and mode of your choice by calling [`schedule(in:forMode:)`](nsurlconnection/schedule(in:formode:).md).
+- `startImmediately`: [`true`](https://developer.apple.com/documentation/swift/true) if the connection should begin loading data immediately, otherwise [`false`](https://developer.apple.com/documentation/swift/false). If you pass [`false`](https://developer.apple.com/documentation/swift/false), the connection is not scheduled with a run loop. You can then schedule the connection in the run loop and mode of your choice by calling [`schedule(in:forMode:)`](nsurlconnection/schedule(in:formode:).md).
 
 ## See Also
 

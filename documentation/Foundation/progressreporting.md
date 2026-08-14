@@ -37,7 +37,7 @@ You are responsible for setting and updating the [`ProgressReporting`](progressr
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 ### Conforming Types
 - [NSBundleResourceRequest](nsbundleresourcerequest.md)
 - [OperationQueue](operationqueue.md)

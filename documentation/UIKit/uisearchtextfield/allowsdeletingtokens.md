@@ -19,9 +19,9 @@ var allowsDeletingTokens: Bool { get set }
 
 #### Discussion
 
-The default value for this property is [`true`](https://developer.apple.com/documentation/Swift/true).
+The default value for this property is [`true`](https://developer.apple.com/documentation/swift/true).
 
-You can always remove tokens programmatically. When this value is [`true`](https://developer.apple.com/documentation/Swift/true), the user can also delete tokens and your app needs to handle tokens being re-added to the field with Undo.
+You can always remove tokens programmatically. When this value is [`true`](https://developer.apple.com/documentation/swift/true), the user can also delete tokens and your app needs to handle tokens being re-added to the field with Undo.
 
 ## See Also
 

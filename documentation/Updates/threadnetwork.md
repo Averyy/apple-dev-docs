@@ -6,13 +6,13 @@ Learn about important changes in ThreadNetwork.
 
 #### Overview
 
-Browse notable changes in  [`ThreadNetwork`](https://developer.apple.com/documentation/ThreadNetwork).
+Browse notable changes in  [`ThreadNetwork`](https://developer.apple.com/documentation/threadnetwork).
 
 #### June 2025
 
 ##### General
 
-- Learn how to get started with Thread development, testing, and certification. For more information, see [`Getting started with ThreadNetwork`](https://developer.apple.com/documentation/ThreadNetwork/getting-started-with-threadnetwork).
+- Learn how to get started with Thread development, testing, and certification. For more information, see [`Getting started with ThreadNetwork`](https://developer.apple.com/documentation/threadnetwork/getting-started-with-threadnetwork).
 
 ## See Also
 

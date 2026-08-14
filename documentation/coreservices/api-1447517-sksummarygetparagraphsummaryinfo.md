@@ -22,8 +22,8 @@ The number of paragraphs in the summary.
 
 - `summary`: The summarization object containing the text from which you want to build a summary.
 - `numParagraphsInSummary`: The maximum number of paragraphs you want in the summary.
-- `outRankOrderOfParagraphs`: On input, a pointer to an array of CFIndex objects. On output, points to the previously allocated array, which now lists the summarization relevance rank of each paragraph in the original text. The most important paragraph gets a rank of 1. The array size must equal  , or else be   if you don’t want to get the relevance ranks.
-- `outParagraphIndexOfParagraphs`: On output, points to an array containing the ordinal number for each paragraph in the original text. Use the   function with one of these numbers to get the corresponding paragraph. The array size must equal  , or else be   if you don’t want to get the ordinal numbers of the paragraphs.
+- `outRankOrderOfParagraphs`: On input, a pointer to an array of CFIndex objects. On output, points to the previously allocated array, which now lists the summarization relevance rank of each paragraph in the original text. The most important paragraph gets a rank of 1. The array size must equal `numParagraphsInSummary`, or else be `NULL` if you don’t want to get the relevance ranks.
+- `outParagraphIndexOfParagraphs`: On output, points to an array containing the ordinal number for each paragraph in the original text. Use the [`SKSummaryCopyParagraphAtIndex(_:_:)`](1445711-sksummarycopyparagraphatindex.md) function with one of these numbers to get the corresponding paragraph. The array size must equal `numParagraphsInSummary`, or else be `NULL` if you don’t want to get the ordinal numbers of the paragraphs.
 
 ## See Also
 

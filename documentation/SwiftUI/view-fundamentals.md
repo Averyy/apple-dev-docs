@@ -8,7 +8,7 @@ Define the visual elements of your app using a hierarchy of views.
 
 Views are the building blocks that you use to declare your app’s user interface. Each view contains a description of what to display for a given state. Every bit of your app that’s visible to the user derives from the description in a view, and any type that conforms to the [`View`](view.md) protocol can act as a view in your app.
 
-![None](https://docs-assets.developer.apple.com/published/61676615099d97b5303fa180a5e1b8d1/view-fundamentals-hero%402x.png)
+![None](/images/com.apple.SwiftUI/view-fundamentals-hero@2x.png)
 
 Compose a custom view by combining built-in views that SwiftUI provides with other custom views that you create in your view’s [`body`](view/body-8kl5o.md) computed property. Configure views using the view modifiers that SwiftUI provides, or by defining your own view modifiers using the [`ViewModifier`](viewmodifier.md) protocol and the [`modifier(_:)`](view/modifier(_:).md) method.
 

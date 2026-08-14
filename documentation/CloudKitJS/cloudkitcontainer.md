@@ -20,7 +20,7 @@ You do not create container objects yourself, nor should you subclass the [`Clou
 
 The asynchronous methods in this class return a `Promise` object that resolves when the operation completes. For a description of the `Promise` class returned by these methods, go to [`Mozilla Developer Network: Promise`](https://developer.apple.comhttps://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise).
 
-This class is similar to the [`CKContainer`](https://developer.apple.com/documentation/CloudKit/CKContainer) class in the CloudKit framework.
+This class is similar to the [`CKContainer`](https://developer.apple.com/documentation/cloudkit/ckcontainer) class in the CloudKit framework.
 
 ## Topics
 

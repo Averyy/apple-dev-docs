@@ -7,7 +7,6 @@ Initializes an message identifier with the given rawValue.
 
 **Availability**:
 - iOS 26.0+
-- iPadOS 26.0+
 
 ## Declaration
 

@@ -75,7 +75,7 @@ The following table describes each parameter in the `RequestConnection` message:
 | `ProtocolVersion` | `String` | The protocol version to use. This is always set to `1`. |
 | `StreamingProvider` | `String` | The specific streaming provider the Apple Vision Pro is requesting. By convention, this is a reverse DNS style string, like `com.example.technology`. |
 | `StreamingProviderVersion` | `String` | The version information for the streaming provider. |
-| `UserInterfaceIdiom` | `String` | The [`UIUserInterfaceIdiom`](https://developer.apple.com/documentation/UIKit/UIUserInterfaceIdiom) of the source device. Always set to `Vision` when streaming to Apple Vision Pro. |
+| `UserInterfaceIdiom` | `String` | The [`UIUserInterfaceIdiom`](https://developer.apple.com/documentation/uikit/uiuserinterfaceidiom) of the source device. Always set to `Vision` when streaming to Apple Vision Pro. |
 | `SessionID` | `String` | A UUID which uniquely identifies this specific foveated streaming session. |
 | `ClientID` | `String` | A UUID which uniquely identifies the Apple Vision Pro device. Persists between sessions; used for pairing. |
 

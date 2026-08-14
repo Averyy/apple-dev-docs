@@ -35,7 +35,7 @@ Each [`AXChart`](axchart.md) requires at least two [`AXDataAxisDescriptor`](axda
 ## Relationships
 
 ### Inherits From
-- [NSCopying](../Foundation/NSCopying.md)
+- [NSCopying](../foundation/nscopying.md)
 ### Conforming Types
 - [AXCategoricalDataAxisDescriptor](axcategoricaldataaxisdescriptor.md)
 - [AXNumericDataAxisDescriptor](axnumericdataaxisdescriptor.md)

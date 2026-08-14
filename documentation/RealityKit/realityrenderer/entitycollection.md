@@ -27,11 +27,11 @@ This collection is used by [`entities`](realityrenderer/entities.md).
 ## Relationships
 
 ### Conforms To
-- [Collection](../Swift/Collection.md)
+- [Collection](../swift/collection.md)
 - [EntityCollection](entitycollection.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
-- [Sequence](../Swift/Sequence.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sequence](../swift/sequence.md)
 
 ## See Also
 

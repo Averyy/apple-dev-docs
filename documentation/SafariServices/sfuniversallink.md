@@ -20,7 +20,7 @@ Universal links are a bridge between an app and a website that have related cont
 
 A web browser uses the `SFUniversalLink` class to discover such applications and provide the person with additional options for interaction beyond the default browser behavior.
 
-In order to use universal links, you need to use the entitlement [`com.apple.developer.associated-domains.applinks.read-write`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.associated-domains.applinks.read-write) with a value of `true`. Before you submit an app with the entitlement to the App Store, you need to get permission to use the entitlement. Request permission at [`https://developer.apple.com/contact/request/browser-universal-links-request`](https://developer.apple.comhttps://developer.apple.com/contact/request/browser-universal-links-request).
+In order to use universal links, you need to use the entitlement [`com.apple.developer.associated-domains.applinks.read-write`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.associated-domains.applinks.read-write) with a value of `true`. Before you submit an app with the entitlement to the App Store, you need to get permission to use the entitlement. Request permission at [`https://developer.apple.com/contact/request/browser-universal-links-request`](https://developer.apple.comhttps://developer.apple.com/contact/request/browser-universal-links-request).
 
 ## Topics
 
@@ -38,20 +38,20 @@ In order to use universal links, you need to use the entitlement [`com.apple.dev
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 
-- [Supporting associated domains](../Xcode/supporting-associated-domains.md)
+- [Supporting associated domains](../xcode/supporting-associated-domains.md)
   Connect your app and a website to provide both a native app and a browser experience.
-- [Associated Domains Entitlement](../BundleResources/Entitlements/com.apple.developer.associated-domains.md)
+- [Associated Domains Entitlement](../bundleresources/entitlements/com.apple.developer.associated-domains.md)
   The associated domains for specific services, such as shared web credentials, universal links, and App Clips.
 
 

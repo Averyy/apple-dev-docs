@@ -46,7 +46,7 @@ To add user interaction to a view controller transition, you must use an animato
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 ### Conforming Types
 - [UIDocumentBrowserTransitionController](uidocumentbrowsertransitioncontroller.md)
 - [UISearchController](uisearchcontroller.md)

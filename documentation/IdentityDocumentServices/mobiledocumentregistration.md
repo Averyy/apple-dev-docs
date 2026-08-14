@@ -41,8 +41,8 @@ Mobile documents, or “mdocs”, are a document format defined in ISO 18013-5.
 
 ### Conforms To
 - [IdentityDocumentRegistration](identitydocumentregistration.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

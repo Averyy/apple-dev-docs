@@ -29,7 +29,7 @@ The layout manager calls this primitive method when it is time to lay out a set 
 - `glyphCount`: The number of glyphs to draw.
 - `font`: The font to apply to the graphics state. This value can be different from the [`NSFontAttributeName`](nsfontattributename.md) value in the `attributes` argument because of various font substitutions that the system automatically executes.
 - `textMatrix`: The affine transform mapping the text space coordinate system to the user space coordinate system. The `tx` and `ty` components of `textMatrix` are ignored because Quartz overrides them with the glyph positions.
-- `attributes`: A dictionary of glyph attributes. For a list of possible keys and values, see [`Glyph Attributes`](https://developer.apple.com/documentation/AppKit/glyph-attributes).
+- `attributes`: A dictionary of glyph attributes. For a list of possible keys and values, see [`Glyph Attributes`](https://developer.apple.com/documentation/appkit/glyph-attributes).
 - `CGContext`: A graphics context object already configured with the information in the `font`, `textMatrix`, and `attributes` parameters
 
 ## See Also

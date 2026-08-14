@@ -10,7 +10,7 @@ Group individual views in your app’s user interface into a scrollable stack vi
 
 #### Overview
 
-[`NSStackView`](NSStackView.md) simplifies the process of stacking arbitrary views together in one place. You embed a stack view inside an `NSScrollView` object, making the stack’s content scrollable when the user resizes the window. This sample shows how to use `NSStackView` with each individual view either disclosed (expanded) or hidden (collapsed).
+[`NSStackView`](nsstackview.md) simplifies the process of stacking arbitrary views together in one place. You embed a stack view inside an `NSScrollView` object, making the stack’s content scrollable when the user resizes the window. This sample shows how to use `NSStackView` with each individual view either disclosed (expanded) or hidden (collapsed).
 
 The sample’s architecture uses the following protocols:
 
@@ -40,7 +40,7 @@ This design simplifies adding stack items as view controllers. When you adopt th
 
 The following illustration shows an example stack view:
 
-![Illustration showing a stack view with four stack item containers. The one on top is expanded and shows the stack item header and stack item body. The bottom three stack item containers are collapsed.](https://docs-assets.developer.apple.com/published/97f9e5dd5f971ea6c87a36263d59f596/infobarstackview-diagram%402x.png)
+![Illustration showing a stack view with four stack item containers. The one on top is expanded and shows the stack item header and stack item body. The bottom three stack item containers are collapsed.](/images/com.apple.appkit/infobarstackview-diagram@2x.png)
 
 ##### Configure the Sample Code Project
 
@@ -56,7 +56,7 @@ Each stack item’s header and body view controllers are loaded from a storyboar
 
 ##### Restore the User Interface
 
-To restore the stack view’s window on relaunch, use the [`NSWindowRestoration`](NSWindowRestoration.md) protocol. The disclosure states of all stack view containers are also restored. Each body view controller saves and restores various parts of its user interface.
+To restore the stack view’s window on relaunch, use the [`NSWindowRestoration`](nswindowrestoration.md) protocol. The disclosure states of all stack view containers are also restored. Each body view controller saves and restores various parts of its user interface.
 
 To restore the states of stack view items, add the `NSRestorableState` to each item’s view controller:
 
@@ -97,7 +97,7 @@ If a disclosure appearance is defined, each section in the stack view gets the `
 
 ## See Also
 
-- [Localization-friendly layouts in macOS](../Xcode/localization-friendly-layouts-in-macos.md)
+- [Localization-friendly layouts in macOS](../xcode/localization-friendly-layouts-in-macos.md)
   This project demonstrates localization-friendly auto layout constraints.
 - [Grid View](grid-view.md)
   Arrange views in a flexible grid, and handle the layout associated with those views.

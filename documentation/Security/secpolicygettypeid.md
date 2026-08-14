@@ -26,7 +26,7 @@ A value that identifies the opaque type of a [`SecPolicy`](secpolicy.md) object.
 
 #### Discussion
 
-This function returns a value that uniquely identifies the opaque type of a [`SecPolicy`](secpolicy.md) object. You can compare this value to the [`CFTypeID`](https://developer.apple.com/documentation/CoreFoundation/CFTypeID) identifier obtained by calling the [`CFGetTypeID(_:)`](https://developer.apple.com/documentation/CoreFoundation/CFGetTypeID(_:)) function on a specific object. These values might change from release to release or platform to platform.
+This function returns a value that uniquely identifies the opaque type of a [`SecPolicy`](secpolicy.md) object. You can compare this value to the [`CFTypeID`](https://developer.apple.com/documentation/corefoundation/cftypeid) identifier obtained by calling the [`CFGetTypeID(_:)`](https://developer.apple.com/documentation/corefoundation/cfgettypeid(_:)) function on a specific object. These values might change from release to release or platform to platform.
 
 
 ---

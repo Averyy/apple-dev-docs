@@ -24,9 +24,15 @@ The printing system uses this function in conjunction with the function [`PMWork
 
 ## Parameters
 
-- `workflowItem`: A file system URL pointing to the workflow item that will handle the PDF file. See  . The following table describes the different types of workflow items for this function.
+- `workflowItem`: A file system URL pointing to the workflow item that will handle the PDF file. See [`PMWorkflowCopyItems(_:)`](1459914-pmworkflowcopyitems.md). The following table describes the different types of workflow items for this function. | Workflow item | Description |
+| --- | --- |
+| Automator action | The action is executed for the PDF file. Available in macOS 10.4 and later. |
+| Folder alias | The PDF file is moved to the resolved folder. |
+| Application or application alias | The application is sent an open event along with a reference to the PDF file. |
+| Compiled AppleScript | The script is run with an open event along with a reference to the PDF file. |
+| Executable tool | The tool is run with the following parameters: `title`, `options`, and `pdfFile`. |
 - `title`: The user-displayable name of the PDF document.
-- `options`: A string of CUPS-style key-value pairs that may be passed to the PDF workflow item. This parameter can be   in which case an empty string of options is used.
+- `options`: A string of CUPS-style key-value pairs that may be passed to the PDF workflow item. This parameter can be `NULL` in which case an empty string of options is used.
 - `pdfFile`: A file system URL pointing to the PDF file to be processed by the workflow item.
 
 ## See Also

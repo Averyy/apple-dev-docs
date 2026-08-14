@@ -21,7 +21,7 @@ var transform: CGAffineTransform { get set }
 
 #### Discussion
 
-By default, the input uses the [`CGAffineTransformIdentity`](https://developer.apple.com/documentation/CoreGraphics/CGAffineTransformIdentity) transform.
+By default, the input uses the [`CGAffineTransformIdentity`](https://developer.apple.com/documentation/coregraphics/cgaffinetransformidentity) transform.
 
 You can’t set this value after writing starts.
 

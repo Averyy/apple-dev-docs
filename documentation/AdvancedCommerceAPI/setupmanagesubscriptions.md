@@ -8,7 +8,7 @@ Create a deep link to a subscription-management page for your app.
 
 Customers use the Settings > Apple Account > Subscriptions page in iOS to manage their subscriptions, including upgrading, downgrading, resubscribing, and canceling. When you offer subscriptions through the Advanced Commerce API, the Subscriptions page displays a “Manage in App” button.
 
-![A diagram of an iOS screen in portrait orientation.  The screen shows the subscription-management page in Apple Account Subscriptions, with a callout indicating the button that uses a deep link back to the related app.](https://docs-assets.developer.apple.com/published/ff08444d776659e7c1efbff76c83e98e/subscription-management-app-link%402x.png)
+![A diagram of an iOS screen in portrait orientation.  The screen shows the subscription-management page in Apple Account Subscriptions, with a callout indicating the button that uses a deep link back to the related app.](/images/com.apple.advancedcommerceapi/subscription-management-app-link@2x.png)
 
 You implement a subscription-management page in your app, and create a deep link URL to it that you submit to Apple. The Settings > Apple Account  > Subscriptions page then uses your deep link for the “Manage in App” button.
 
@@ -16,7 +16,7 @@ You implement a subscription-management page in your app, and create a deep link
 
 Create the deep link by following these guidelines:
 
-- Follow universal link guidelines for the URL. For more information, see [`Allowing apps and websites to link to your content`](https://developer.apple.com/documentation/Xcode/allowing-apps-and-websites-to-link-to-your-content).
+- Follow universal link guidelines for the URL. For more information, see [`Allowing apps and websites to link to your content`](https://developer.apple.com/documentation/xcode/allowing-apps-and-websites-to-link-to-your-content).
 - Ensure the deep link lands on a page in your app that provides information about the subscription’s state and options for the customer to manage their subscription, for example, to change the plan, or resubscribe.
 - Optionally, provide a unique subscription-management deep link URL for each storefront.
 

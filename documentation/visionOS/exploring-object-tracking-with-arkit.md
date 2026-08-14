@@ -27,7 +27,7 @@ The sample bundles a reference object that ARKit uses to recognize an Apple Magi
 
 #### Configure the Object Tracking Capability
 
-To help protect people’s privacy, visionOS limits app access to object-tracking data and other sensors in Apple Vision Pro. Add the World Sensing capability to your app’s target and provide a usage description that explains how your app uses world-sensing data, including object tracking. People see that description when the system prompts for access to object tracking and other world-sensing data. For more information about app capabilities, see [`Adding capabilities to your app`](https://developer.apple.com/documentation/Xcode/adding-capabilities-to-your-app).
+To help protect people’s privacy, visionOS limits app access to object-tracking data and other sensors in Apple Vision Pro. Add the World Sensing capability to your app’s target and provide a usage description that explains how your app uses world-sensing data, including object tracking. People see that description when the system prompts for access to object tracking and other world-sensing data. For more information about app capabilities, see [`Adding capabilities to your app`](https://developer.apple.com/documentation/xcode/adding-capabilities-to-your-app).
 
 #### Load Reference Objects Into the Sample
 
@@ -88,7 +88,7 @@ The second source is a file you pick at runtime by tapping the plus button in th
 
 #### Run Object Tracking on a Session
 
-To start receiving tracking anchors, create an [`ObjectTrackingProvider`](https://developer.apple.com/documentation/ARKit/ObjectTrackingProvider) and initialize it with a reference object. Then start an [`ARKitSession`](https://developer.apple.com/documentation/ARKit/ARKitSession) with the provider.
+To start receiving tracking anchors, create an [`ObjectTrackingProvider`](https://developer.apple.com/documentation/arkit/objecttrackingprovider) and initialize it with a reference object. Then start an [`ARKitSession`](https://developer.apple.com/documentation/arkit/arkitsession) with the provider.
 
 ```swift
 func startTracking() async -> ObjectTrackingProvider? {
@@ -107,7 +107,7 @@ func startTracking() async -> ObjectTrackingProvider? {
 
 #### Respond to Anchor Updates
 
-ARKit delivers an asynchronous stream of updates as it detects changes in the scene. The sample app handles these events on the [`RealityView`](https://developer.apple.com/documentation/RealityKit/RealityView) inside `ObjectTrackingRealityView`.
+ARKit delivers an asynchronous stream of updates as it detects changes in the scene. The sample app handles these events on the [`RealityView`](https://developer.apple.com/documentation/realitykit/realityview) inside `ObjectTrackingRealityView`.
 
 ```swift
 .task {
@@ -147,7 +147,7 @@ When the provider adds an anchor, the sample creates an `ObjectAnchorVisualizati
 
 #### Opt in to High Frame Rate Tracking
 
-By default, ARKit tracks reference objects at a low frame rate, which works well for stationary objects. For handheld and moving objects, opt in to high frame-rate tracking, at the cost of additional power and performance. To enable high frame-rate tracking, create a [`ReferenceObject.Configuration`](https://developer.apple.com/documentation/ARKit/ReferenceObject/Configuration) and set its `highFrameRateTrackingEnabled` property to `true`. Pass the configuration to the [`ReferenceObject`](https://developer.apple.com/documentation/ARKit/ReferenceObject) initializer, then create an [`ObjectTrackingProvider`](https://developer.apple.com/documentation/ARKit/ObjectTrackingProvider) with that reference object.
+By default, ARKit tracks reference objects at a low frame rate, which works well for stationary objects. For handheld and moving objects, opt in to high frame-rate tracking, at the cost of additional power and performance. To enable high frame-rate tracking, create a [`ReferenceObject.Configuration`](https://developer.apple.com/documentation/arkit/referenceobject/configuration) and set its `highFrameRateTrackingEnabled` property to `true`. Pass the configuration to the [`ReferenceObject`](https://developer.apple.com/documentation/arkit/referenceobject) initializer, then create an [`ObjectTrackingProvider`](https://developer.apple.com/documentation/arkit/objecttrackingprovider) with that reference object.
 
 ```swift
 var configuration = ReferenceObject.Configuration()
@@ -157,7 +157,7 @@ let referenceObject = try await ReferenceObject(from: url, configuration: config
 let objectTracking = ObjectTrackingProvider(referenceObjects: [referenceObject])
 ```
 
-The steps for high frame-rate tracking differ if your app uses an [`AnchorEntity`](https://developer.apple.com/documentation/RealityKit/AnchorEntity) instead of handling [`ObjectAnchor`](https://developer.apple.com/documentation/ARKit/ObjectAnchor) updates:
+The steps for high frame-rate tracking differ if your app uses an [`AnchorEntity`](https://developer.apple.com/documentation/realitykit/anchorentity) instead of handling [`ObjectAnchor`](https://developer.apple.com/documentation/arkit/objectanchor) updates:
 
 - Use an `ObjectTrackingProvider` configured for high frame-rate tracking.
 - When the provider adds an anchor, construct an `AnchorEntity` with that anchor and add it to your `RealityView`. Remove the `AnchorEntity` when the provider removes the anchor.
@@ -165,14 +165,14 @@ The steps for high frame-rate tracking differ if your app uses an [`AnchorEntity
 
 #### Choose Between Perceived and Metric Poses
 
-ARKit reports an object’s pose in two coordinate spaces: perceived and metric. The system applies display corrections so that rendered content stays visually stable to the person wearing the device even as they move. Use the perceived pose, the default `coordinateSpace(correction: .rendered)`, when you render an [`Entity`](https://developer.apple.com/documentation/RealityKit/Entity) that needs to stay visually fixed to the tracked object as the person moves around the object. Use the metric pose, `coordinateSpace(correction: .none)`, for measurement, because display correction doesn’t affect it.
+ARKit reports an object’s pose in two coordinate spaces: perceived and metric. The system applies display corrections so that rendered content stays visually stable to the person wearing the device even as they move. Use the perceived pose, the default `coordinateSpace(correction: .rendered)`, when you render an [`Entity`](https://developer.apple.com/documentation/realitykit/entity) that needs to stay visually fixed to the tracked object as the person moves around the object. Use the metric pose, `coordinateSpace(correction: .none)`, for measurement, because display correction doesn’t affect it.
 
 ```swift
 let metricSpace = anchor.coordinateSpace(correction: .none)
 let translation = metricSpace.ancestorFromSpaceTransformFloat().translation
 ```
 
-This sample demonstrates how to read the metric pose and display it in a SwiftUI label that `ObjectAnchorVisualization` attaches above the tracked keyboard using a [`ViewAttachmentComponent`](https://developer.apple.com/documentation/RealityKit/ViewAttachmentComponent).
+This sample demonstrates how to read the metric pose and display it in a SwiftUI label that `ObjectAnchorVisualization` attaches above the tracked keyboard using a [`ViewAttachmentComponent`](https://developer.apple.com/documentation/realitykit/viewattachmentcomponent).
 
 #### Create Your Own Reference Objects
 
@@ -209,7 +209,7 @@ The training mode you specify in Create ML affects tracking accuracy and per-fra
   Query and react to changes in the position and rotation of Apple Vision Pro.
 - [Drawing in the air and on surfaces with a spatial stylus](drawing-in-the-air-and-on-surfaces-with-a-spatial-stylus.md)
   Create a spatial stylus drawing experience that balances latency and accuracy for both in-air and on-surface drawing.
-- [Preparing spatial accessories for tracking in your visionOS app](../ARKit/preparing-spatial-accessories-for-tracking-in-your-visionos-app.md)
+- [Preparing spatial accessories for tracking in your visionOS app](../arkit/preparing-spatial-accessories-for-tracking-in-your-visionos-app.md)
   Prepare a spatial accessory for tracking by training a reference accessory file and integrating it into your visionOS app.
 - [Working with generic spatial accessories](working-with-generic-spatial-accessories.md)
   Let people place digital replicas of a generic spatial accessory by tracking the accessory with ARKit.

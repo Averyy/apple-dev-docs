@@ -25,8 +25,10 @@ The Apple Event Manager provides the following functions (in macOS only) for wor
 ## Parameters
 
 - `header`: A pointer to a Mach message header for the event to be decoded.
-- `event`: A pointer to a null Apple event descriptor (one with descriptor type  ). On successful completion, contains the decoded Apple event. If the function returns successfully, your application should call the   function to dispose of the resulting descriptor after it has finished using it.
-- `reply`: A pointer to a null Apple event descriptor. On successful completion, contains the reply event from the decoded Apple event. To send the reply, you use the following:
+- `event`: A pointer to a null Apple event descriptor (one with descriptor type `typeNull`). On successful completion, contains the decoded Apple event. If the function returns successfully, your application should call the [`AEDisposeDesc(_:)`](1444208-aedisposedesc.md) function to dispose of the resulting descriptor after it has finished using it.
+- `reply`: A pointer to a null Apple event descriptor. On successful completion, contains the reply event from the decoded Apple event. To send the reply, you use the following: ```occ
+AESendMessage(reply, NULL, kAENoReply, kAEDefaultTimeout);
+```
 
 ## See Also
 

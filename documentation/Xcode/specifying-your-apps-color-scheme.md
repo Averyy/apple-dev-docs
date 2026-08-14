@@ -8,7 +8,7 @@ Set a global accent color for your app by using asset catalogs.
 
 An *accent color*, or *tint color*, is a broad theme color that applies to views and controls in your app. Use an accent color to quickly create a unifying color scheme for your app. You can set an accent for your app by specifying an accent color in your asset catalog.
 
-![A slider control set to 75% of its maximum value. The left side of its track, which represents the range between the minimum value and the current value, is tinted with a custom accent color.](https://docs-assets.developer.apple.com/published/0a0df01d211ef225282e3db8e667bfee/specifying-your-apps-color-scheme-1%402x.png)
+![A slider control set to 75% of its maximum value. The left side of its track, which represents the range between the minimum value and the current value, is tinted with a custom accent color.](/images/com.apple.Xcode/specifying-your-apps-color-scheme-1@2x.png)
 
 ##### Create an Accent Color Set
 
@@ -50,7 +50,7 @@ label.textColor = UIColor.tintColor
 
 ## See Also
 
-- [Supporting Dark Mode in your interface](../UIKit/supporting-dark-mode-in-your-interface.md)
+- [Supporting Dark Mode in your interface](../uikit/supporting-dark-mode-in-your-interface.md)
   Update colors, images, and behaviors so that your app adapts automatically when Dark Mode is active.
 
 

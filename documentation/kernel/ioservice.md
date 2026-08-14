@@ -18,7 +18,7 @@ class IOService : IORegistryEntry
 
 [`IOService`](ioservice.md) provides general utility functions that are useful across all families. It defines APIs used to publish services, instantiates other services based on the existence of a providing service such as driver stacking, destroys a service and its dependent stack, and notifies interested parties of service state changes.
 
-This class uses a  that contains service type properties to discover supported devices. For example, a matching dictionary may describe a [`IOUSBHostDevice`](https://developer.apple.com/documentation/usbdriverkit/iousbhostdevice) (or subclass), an [`IOUSBHostDevice`](https://developer.apple.com/documentation/usbdriverkit/iousbhostdevice) with a certain class code, or an [`IOPCIDevice`](iopcidevice.md) with a set of matching names or device and vendor IDs. The list of properties considered for matching depends on the family that creates the dictionary.
+This class uses a *matching dictionary* that contains service type properties to discover supported devices. For example, a matching dictionary may describe a [`IOUSBHostDevice`](https://developer.apple.com/documentation/usbdriverkit/iousbhostdevice) (or subclass), an [`IOUSBHostDevice`](https://developer.apple.com/documentation/usbdriverkit/iousbhostdevice) with a certain class code, or an [`IOPCIDevice`](iopcidevice.md) with a set of matching names or device and vendor IDs. The list of properties considered for matching depends on the family that creates the dictionary.
 
 Matching dictionaries are associated with [`IOService`](ioservice.md) classes by the catalogue, as driver property tables, and also supplied by clients of the notification APIs.
 
@@ -43,6 +43,16 @@ After the drivers are synchronously started, the system delivers the installed �
 ##### 3686816
 
 Here are the service properties you can use when setting up the matching dictionary.
+
+- **`kIOClassKey`**: The class of the driver to instantiate on matching providers.
+- **`kIOProviderClassKey`**: The class of the provider(s) to be considered for matching, checked with [`OSDynamicCast`](https://developer.apple.com/documentation/driverkit/osdynamiccast) so subclasses will also match.
+- **`kIOProbeScoreKey`**: The probe score initially used to order multiple matching drivers.
+- **`kIOMatchCategoryKey`**: A string defining the driver category for matching purposes. All drivers without the [`kIOMatchCategoryKey`](https://developer.apple.com/documentation/iokit/kiomatchcategorykey) property are considered to be in the same default category. Only one driver in a category can be started on each provider.
+- **`kIONameMatchKey`**: A string or collection of strings that match the provider’s name. The comparison is implemented with the [`compareNames`](ioregistryentry/1437634-comparenames.md) method, which supports a single string, or any collection such as `OSArray`, [`OSSet`](osset.md), or [`OSDictionary`](osdictionary.md). of strings. [`IOService`](https://developer.apple.com/documentation/driverkit/ioservice) objects with device tree properties such as  [`IOPCIDevice`](iopcidevice.md) are matched based on that standard’s “compatible”, “name”, “device_type” properties. The matching name is left in the driver’s property table in the [`kIONameMatchedKey`](https://developer.apple.com/documentation/iokit/kionamematchedkey) property.
+- **`kIONameMatchedKey`**: The successfully matched name from the [`kIONameMatchKey`](https://developer.apple.com/documentation/iokit/kionamematchkey) property is left in the driver’s property table as the [`kIONameMatchedKey`](https://developer.apple.com/documentation/iokit/kionamematchedkey) property.
+- **`kIOPropertyMatchKey`**: A dictionary of properties that must exist in the matching [`IOService`](ioservice.md), and compare successfully with [`isEqualTo`](osmetaclassbase/1808069-isequalto.md).
+- **`kIOUserClientClassKey`**: The class name that the service will attempt to allocate when a user client connection is requested. The system queries the device nub first, then the nub’s provider.
+- **`kIOKitDebugKey`**: Debug flags for logging the driver loading process. Flags are defined in `IOKit/IOKitDebug.h`.
 
 ## Topics
 
@@ -303,8 +313,8 @@ Here are the service properties you can use when setting up the matching diction
 ### Instance Methods
 - [- AdjustBusy](ioservice/3753458-adjustbusy.md)
 - [- AdjustBusy_Impl](ioservice/3753459-adjustbusy_impl.md)
-- [- ChangePowerState](../driverkit/ioservice/changepowerstate.md)
-  Changes the device’s power state to the specified level.
+- [- ChangePowerState](ioservice/3180692-changepowerstate.md)
+  Changes the device's power state to the specified level.
 - [- ChangePowerState_Impl](ioservice/3152487-changepowerstate_impl.md)
 - [- ClientCrashed](ioservice/3727923-clientcrashed.md)
 - [- ClientCrashed_Impl](ioservice/3727924-clientcrashed_impl.md)
@@ -313,8 +323,8 @@ Here are the service properties you can use when setting up the matching diction
 - [- CopyDispatchQueue_Impl](ioservice/3075032-copydispatchqueue_impl.md)
 - [- CopyName](ioservice/3753464-copyname.md)
 - [- CopyName_Impl](ioservice/3753465-copyname_impl.md)
-- [- CopyProperties](../driverkit/ioservice/copyproperties.md)
-  Returns the registry properties associated with the current service.
+- [- CopyProperties](ioservice/3180694-copyproperties.md)
+  Returns the registry properties associated with the current service. 
 - [- CopyProperties_Impl](ioservice/3180695-copyproperties_impl.md)
 - [- CopyProviderProperties](ioservice/3538559-copyproviderproperties.md)
 - [- CopyProviderProperties_Impl](ioservice/3538560-copyproviderproperties_impl.md)
@@ -329,9 +339,9 @@ Here are the service properties you can use when setting up the matching diction
 - [- Dispatch](ioservice/3180697-dispatch.md)
 - [- GetBusyState](ioservice/3753476-getbusystate.md)
 - [- GetBusyState_Impl](ioservice/3753477-getbusystate_impl.md)
-- [- GetProvider](../driverkit/ioservice/getprovider.md)
-- [- GetRegistryEntryID](../driverkit/ioservice/getregistryentryid.md)
-  Returns the registry ID for the current service.
+- [- GetProvider](ioservice/3753479-getprovider.md)
+- [- GetRegistryEntryID](ioservice/3180698-getregistryentryid.md)
+  Returns the registry ID for the current service. 
 - [- GetRegistryEntryID_Impl](ioservice/3180699-getregistryentryid_impl.md)
 - [- JoinPMTree](ioservice/4061663-joinpmtree.md)
 - [- JoinPMTree_Impl](ioservice/4061664-joinpmtree_impl.md)
@@ -339,7 +349,7 @@ Here are the service properties you can use when setting up the matching diction
 - [- NewUserClient_Impl](ioservice/3325792-newuserclient_impl.md)
 - [- PMinit](ioservice/1532776-pminit.md)
 - [- PMstop](ioservice/1532667-pmstop.md)
-- [- RegisterService](../driverkit/ioservice/registerservice.md)
+- [- RegisterService](ioservice/3180701-registerservice.md)
   Starts the registration process for the service and performs any additional matching.
 - [- RegisterService_Impl](ioservice/3075044-registerservice_impl.md)
 - [- RemoveProperty](ioservice/3753480-removeproperty.md)
@@ -357,13 +367,13 @@ Here are the service properties you can use when setting up the matching diction
 - [- SetName_Impl](ioservice/3325798-setname_impl.md)
 - [- SetPowerOverride](ioservice/4485635-setpoweroverride.md)
 - [- SetPowerOverride_Impl](ioservice/4485636-setpoweroverride_impl.md)
-- [- SetPowerState](../driverkit/ioservice/setpowerstate.md)
+- [- SetPowerState](ioservice/3180704-setpowerstate.md)
   Updates the service in response to power-related changes for a provider.
 - [- SetPowerState_Impl](ioservice/3180705-setpowerstate_impl.md)
 - [- SetProperties](ioservice/3075047-setproperties.md)
 - [- SetProperties_Impl](ioservice/3075048-setproperties_impl.md)
-- [- Start](../driverkit/ioservice/start.md)
-  Starts the current service and associates it with the specified provider.
+- [- Start](ioservice/3180710-start.md)
+  Starts the current service and associates it with the specified provider.  
 - [- Start_Impl](ioservice/3180711-start_impl.md)
 - [- StateNotificationItemCopy](ioservice/3753486-statenotificationitemcopy.md)
 - [- StateNotificationItemCopy_Impl](ioservice/3753487-statenotificationitemcopy_impl.md)
@@ -371,8 +381,8 @@ Here are the service properties you can use when setting up the matching diction
 - [- StateNotificationItemCreate_Impl](ioservice/3753490-statenotificationitemcreate_impl.md)
 - [- StateNotificationItemSet](ioservice/3753492-statenotificationitemset.md)
 - [- StateNotificationItemSet_Impl](ioservice/3753493-statenotificationitemset_impl.md)
-- [- Stop](../driverkit/ioservice/stop.md)
-  Stops the service associated with the specified provider.
+- [- Stop](ioservice/3180713-stop.md)
+  Stops the service associated with the specified provider. 
 - [- Stop_Impl](ioservice/3180714-stop_impl.md)
 - [- Stop_async](ioservice/3684894-stop_async.md)
 - [- Stop_async_Impl](ioservice/3684895-stop_async_impl.md)
@@ -428,7 +438,7 @@ Here are the service properties you can use when setting up the matching diction
 - [- enableInterrupt](ioservice/1532864-enableinterrupt.md)
 - [- errnoFromReturn](ioservice/1532706-errnofromreturn.md)
 - [- finalize](ioservice/1532659-finalize.md)
-- [- free](../driverkit/ioservice/free.md)
+- [- free](ioservice/3180716-free.md)
   Performs any final cleanup for the service.
 - [- getAggressiveness](ioservice/1532725-getaggressiveness.md)
 - [- getBusyState](ioservice/1532698-getbusystate.md)
@@ -453,7 +463,7 @@ Here are the service properties you can use when setting up the matching diction
 - [- handleOpen](ioservice/1532701-handleopen.md)
 - [- hasParent](ioservice/3857675-hasparent.md)
 - [- init](ioservice/1532700-init.md)
-- [- init](../driverkit/ioservice/init.md)
+- [- init](ioservice/3180717-init.md)
   Handles the basic initialization of the service.
 - [- initialPowerStateForDomainState](ioservice/1532851-initialpowerstatefordomainstate.md)
 - [- invokeNotifier](ioservice/2870327-invokenotifier.md)
@@ -545,14 +555,14 @@ Here are the service properties you can use when setting up the matching diction
 - [+ CopySystemStateNotificationService_Invoke](ioservice/3753469-copysystemstatenotificationservi.md)
 - [+ CoreAnalyticsSendEvent_Invoke](ioservice/3753472-coreanalyticssendevent_invoke.md)
 - [+ CreateDefaultDispatchQueue_Invoke](ioservice/3753475-createdefaultdispatchqueue_invok.md)
-- [+ CreateKernelClassMatchingDictionary](../driverkit/ioservice/createkernelclassmatchingdictionary-9b28.md)
-- [+ CreateKernelClassMatchingDictionary](../driverkit/ioservice/createkernelclassmatchingdictionary-3uqly.md)
-- [+ CreateNameMatchingDictionary](../driverkit/ioservice/createnamematchingdictionary-2nzta.md)
-- [+ CreateNameMatchingDictionary](../driverkit/ioservice/createnamematchingdictionary-206ej.md)
-- [+ CreatePropertyMatchingDictionary](../driverkit/ioservice/createpropertymatchingdictionary-4tuca.md)
-- [+ CreatePropertyMatchingDictionary](../driverkit/ioservice/createpropertymatchingdictionary-6o4ss.md)
-- [+ CreateUserClassMatchingDictionary](../driverkit/ioservice/createuserclassmatchingdictionary-4gpbj.md)
-- [+ CreateUserClassMatchingDictionary](../driverkit/ioservice/createuserclassmatchingdictionary-60ptx.md)
+- [+ CreateKernelClassMatchingDictionary](ioservice/3538562-createkernelclassmatchingdiction.md)
+- [+ CreateKernelClassMatchingDictionary](ioservice/3538563-createkernelclassmatchingdiction.md)
+- [+ CreateNameMatchingDictionary](ioservice/3538564-createnamematchingdictionary.md)
+- [+ CreateNameMatchingDictionary](ioservice/3538565-createnamematchingdictionary.md)
+- [+ CreatePropertyMatchingDictionary](ioservice/3538566-createpropertymatchingdictionary.md)
+- [+ CreatePropertyMatchingDictionary](ioservice/3538567-createpropertymatchingdictionary.md)
+- [+ CreateUserClassMatchingDictionary](ioservice/3538568-createuserclassmatchingdictionar.md)
+- [+ CreateUserClassMatchingDictionary](ioservice/3538569-createuserclassmatchingdictionar.md)
 - [+ Create_Invoke](ioservice/3325790-create_invoke.md)
 - [+ GetBusyState_Invoke](ioservice/3753478-getbusystate_invoke.md)
 - [+ GetRegistryEntryID_Invoke](ioservice/3075041-getregistryentryid_invoke.md)

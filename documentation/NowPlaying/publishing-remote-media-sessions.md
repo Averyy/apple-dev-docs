@@ -14,7 +14,7 @@ Send push notifications from your server to start and update remote sessions, so
 
 #### Define Session Attributes
 
-Create a [`Codable`](https://developer.apple.com/documentation/Swift/Codable) type that captures the playback state of the external device. Your app and extension share this type to communicate session state. Conform to [`RemoteMediaSessionAttributes`](remotemediasessionattributes.md) and include only the fields your app needs to represent the external device’s playback.
+Create a [`Codable`](https://developer.apple.com/documentation/swift/codable) type that captures the playback state of the external device. Your app and extension share this type to communicate session state. Conform to [`RemoteMediaSessionAttributes`](remotemediasessionattributes.md) and include only the fields your app needs to represent the external device’s playback.
 
 ```swift
 struct MySessionAttributes: RemoteMediaSessionAttributes {
@@ -43,7 +43,7 @@ Add an app extension target to your project. In the extension’s Info pane in X
 
 #### Create the App Extension
 
-Define a type that conforms to [`RemoteMediaSessionExtension`](remotemediasessionextension.md) and annotate it with `@main`. The system calls [`session(_:)`](remotemediasessionextension/session(_:).md) when it needs your extension to produce a session for a given set of attributes. From the [`configuration`](https://developer.apple.com/documentation/ExtensionFoundation/AppExtension/configuration-swift.property) property, return a [`RemoteMediaSessionExtensionConfiguration`](remotemediasessionextensionconfiguration.md) initialized with your extension instance.
+Define a type that conforms to [`RemoteMediaSessionExtension`](remotemediasessionextension.md) and annotate it with `@main`. The system calls [`session(_:)`](remotemediasessionextension/session(_:).md) when it needs your extension to produce a session for a given set of attributes. From the [`configuration`](https://developer.apple.com/documentation/extensionfoundation/appextension/configuration-swift.property) property, return a [`RemoteMediaSessionExtensionConfiguration`](remotemediasessionextensionconfiguration.md) initialized with your extension instance.
 
 ```swift
 import ExtensionFoundation
@@ -65,7 +65,7 @@ The framework caches the sessions your extension returns and routes subsequent u
 
 #### Implement the Remote Session Representable
 
-Create a type that conforms to [`RemoteMediaSessionRepresentable`](remotemediasessionrepresentable.md) to provide content, playback state, commands, and device information. Mark it with [`Observable`](https://developer.apple.com/documentation/Observation/Observable) to detect changes automatically.
+Create a type that conforms to [`RemoteMediaSessionRepresentable`](remotemediasessionrepresentable.md) to provide content, playback state, commands, and device information. Mark it with [`Observable`](https://developer.apple.com/documentation/observation/observable) to detect changes automatically.
 
 ```swift
 import NowPlaying

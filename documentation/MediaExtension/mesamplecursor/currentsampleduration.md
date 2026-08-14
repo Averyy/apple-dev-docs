@@ -17,7 +17,7 @@ var currentSampleDuration: CMTime { get }
 
 #### Discussion
 
-This value is [`indefinite`](https://developer.apple.com/documentation/CoreMedia/CMTime/indefinite) if the system needs to advance the sample past its current position to determine the decode duration. This can occur with streaming formats such as MPEG-2 transport streams.
+This value is [`indefinite`](https://developer.apple.com/documentation/coremedia/cmtime/indefinite) if the system needs to advance the sample past its current position to determine the decode duration. This can occur with streaming formats such as MPEG-2 transport streams.
 
 ## See Also
 

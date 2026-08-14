@@ -29,7 +29,7 @@ This method applies a 3 x 3 convolution to the `RGBA` components of an image. Th
 
 The convolution 3 x 3 filter uses the following properties:
 
-- **`bias`**: A `float` representing the value that’s added to each output pixel as a [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+- **`bias`**: A `float` representing the value that’s added to each output pixel as a [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
 - **`weights`**: A [`CIVector`](civector.md) representing the convolution kernel.
 - **`inputImage`**: An image with the type [`CIImage`](ciimage.md).
 
@@ -52,7 +52,7 @@ func convolution3X3(inputImage: CIImage) -> CIImage? {
 }
 ```
 
-![Two images arranged horizontally. The left image is of a modern building with horizontal concrete beams and large tinted windows. The right image shows the result of applying the convolution RGB 3 x 3 filter with a kernel that sharpens the image. Edges and fine detail in the image are emphasized.](https://docs-assets.developer.apple.com/published/03cd5123ceb9be6b74b7c237a7218dd1/media-4334869%402x.png)
+![Two images arranged horizontally. The left image is of a modern building with horizontal concrete beams and large tinted windows. The right image shows the result of applying the convolution RGB 3 x 3 filter with a kernel that sharpens the image. Edges and fine detail in the image are emphasized.](/images/com.apple.coreimage/media-4334869@2x.png)
 
 ## See Also
 

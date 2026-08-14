@@ -7,17 +7,17 @@ Provide a set of methods that view subclasses use to make subcomponents accessib
 ## Topics
 
 ### Providing information about accessibility elements
-- [func accessibilityElementCount() -> Int](../ObjectiveC/NSObject-swift.class/accessibilityElementCount.md)
-- [func accessibilityElement(at: Int) -> Any?](../ObjectiveC/NSObject-swift.class/accessibilityElement(at:).md)
-- [func index(ofAccessibilityElement: Any) -> Int](../ObjectiveC/NSObject-swift.class/index(ofAccessibilityElement:).md)
-- [var accessibilityElements: [Any]?](../ObjectiveC/NSObject-swift.class/accessibilityElements.md)
+- [func accessibilityElementCount() -> Int](../objectivec/nsobject-swift.class/accessibilityelementcount.md)
+- [func accessibilityElement(at: Int) -> Any?](../objectivec/nsobject-swift.class/accessibilityelement(at:).md)
+- [func index(ofAccessibilityElement: Any) -> Int](../objectivec/nsobject-swift.class/index(ofaccessibilityelement:).md)
+- [var accessibilityElements: [Any]?](../objectivec/nsobject-swift.class/accessibilityelements.md)
   An array of features of an object that assistive technologies can access.
-- [var automationElements: [Any]?](../ObjectiveC/NSObject-swift.class/automationElements.md)
-- [var accessibilityContainerType: UIAccessibilityContainerType](../ObjectiveC/NSObject-swift.class/accessibilityContainerType.md)
+- [var automationElements: [Any]?](../objectivec/nsobject-swift.class/automationelements.md)
+- [var accessibilityContainerType: UIAccessibilityContainerType](../objectivec/nsobject-swift.class/accessibilitycontainertype.md)
 - [enum UIAccessibilityContainerType](uiaccessibilitycontainertype.md)
   Constants that indicate the type of content in a data-based container.
 ### Useful links
-- [Accessibility design for Mac Catalyst](../Accessibility/accessibility_design_for_mac_catalyst.md)
+- [Accessibility design for Mac Catalyst](../accessibility/accessibility_design_for_mac_catalyst.md)
   Improve navigation in your app by using keyboard shortcuts and accessibility containers.
 
 ## See Also

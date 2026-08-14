@@ -38,7 +38,7 @@ Endpoint Security generates this event when a process calls [`IOServiceOpen(_:_:
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../Swift/BitwiseCopyable.md)
+- [BitwiseCopyable](../swift/bitwisecopyable.md)
 
 ## See Also
 

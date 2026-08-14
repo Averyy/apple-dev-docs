@@ -40,14 +40,14 @@ For more information about creating a `NetworkListener`, refer to [`WAPublisherL
 ## Relationships
 
 ### Conforms To
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 
-- [class NWParameters](../Network/NWParameters.md)
+- [class NWParameters](../network/nwparameters.md)
   An object that stores the protocols to use for connections, options for sending data, and network path constraints.
-- [struct NWParametersBuilder](../Network/NWParametersBuilder.md)
+- [struct NWParametersBuilder](../network/nwparametersbuilder.md)
   An opaque class that is responsible for creating and configuring NWParameters based on the parameterized protocol stack.
 
 

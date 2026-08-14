@@ -23,7 +23,7 @@ init(pattern: Duration.TimeFormatStyle.Pattern, locale: Locale = .autoupdatingCu
 ## Parameters
 
 - `pattern`: A `Pattern` that specifies the units to include in the displayed string and the behavior of the units.
-- `locale`: The `Locale` used to create the string representation of the duration. This parameter defaults to [`autoupdatingCurrent`](https://developer.apple.com/documentation/Foundation/Locale/autoupdatingCurrent).
+- `locale`: The `Locale` used to create the string representation of the duration. This parameter defaults to [`autoupdatingCurrent`](https://developer.apple.com/documentation/foundation/locale/autoupdatingcurrent).
 
 ## See Also
 

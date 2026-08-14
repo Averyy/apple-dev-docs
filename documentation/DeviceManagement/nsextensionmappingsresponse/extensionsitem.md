@@ -17,7 +17,7 @@ object NSExtensionMappingsResponse.ExtensionsItem
 ## Properties
 
 - `DisplayName` (string) *(required)*: The display name of the extension.
-- `ExtensionPoint` (string) *(required)*: The [`NSExtensionPointIdentifier`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSExtension/NSExtensionPointIdentifier) for the extension.
+- `ExtensionPoint` (string) *(required)*: The [`NSExtensionPointIdentifier`](https://developer.apple.com/documentation/bundleresources/information-property-list/nsextension/nsextensionpointidentifier) for the extension.
 - `Identifier` (string) *(required)*: The identifier of the extension.
 
 ## See Also

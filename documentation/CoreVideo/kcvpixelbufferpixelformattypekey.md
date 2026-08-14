@@ -22,7 +22,7 @@ let kCVPixelBufferPixelFormatTypeKey: CFString
 
 #### Discussion
 
-The value for this key is either a single [`CFNumber`](https://developer.apple.com/documentation/CoreFoundation/CFNumber) value or a [`CFArray`](https://developer.apple.com/documentation/CoreFoundation/CFArray) containing multiple [`CFNumber`](https://developer.apple.com/documentation/CoreFoundation/CFNumber) values.
+The value for this key is either a single [`CFNumber`](https://developer.apple.com/documentation/corefoundation/cfnumber) value or a [`CFArray`](https://developer.apple.com/documentation/corefoundation/cfarray) containing multiple [`CFNumber`](https://developer.apple.com/documentation/corefoundation/cfnumber) values.
 
 ## See Also
 

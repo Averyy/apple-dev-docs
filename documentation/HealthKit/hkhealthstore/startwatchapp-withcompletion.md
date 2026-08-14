@@ -40,7 +40,7 @@ catch {
 logger.debug("*** Workout Session Started ***")
 ```
 
-Next, set up the mirrored workout in the [`WKApplicationDelegate`](https://developer.apple.com/documentation/WatchKit/WKApplicationDelegate) object’s [`handle(_:)`](https://developer.apple.com/documentation/WatchKit/WKApplicationDelegate/handle(_:)-1pfoc) method.
+Next, set up the mirrored workout in the [`WKApplicationDelegate`](https://developer.apple.com/documentation/watchkit/wkapplicationdelegate) object’s [`handle(_:)`](https://developer.apple.com/documentation/watchkit/wkapplicationdelegate/handle(_:)-1pfoc) method.
 
 ```swift
 class AppDelegate: NSObject, WKApplicationDelegate {
@@ -111,7 +111,7 @@ extension WorkoutManager {
 ## Parameters
 
 - `workoutConfiguration`: The configuration data for a new workout session on the watch.
-- `completion`: A block that this method calls after launching the Watch app. The system calls this block, passing the following parameters: - **success**: A Boolean value. This parameter contains [`true`](https://developer.apple.com/documentation/Swift/true) if the watch app launched successfully; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
+- `completion`: A block that this method calls after launching the Watch app. The system calls this block, passing the following parameters: - **success**: A Boolean value. This parameter contains [`true`](https://developer.apple.com/documentation/swift/true) if the watch app launched successfully; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
 - **error**: An error object. If an error occurred, this object contains information about the error; otherwise, it’s set to `nil`.
 
 ## See Also

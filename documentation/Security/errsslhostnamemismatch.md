@@ -22,7 +22,7 @@ var errSSLHostNameMismatch: OSStatus { get }
 
 #### Discussion
 
-This is commonly caused by an incorrect value for the [`kCFStreamSSLPeerName`](https://developer.apple.com/documentation/CFNetwork/kCFStreamSSLPeerName) property within the dictionary associated with the stream’s [`kCFStreamPropertySSLSettings`](https://developer.apple.com/documentation/CFNetwork/kCFStreamPropertySSLSettings) key.
+This is commonly caused by an incorrect value for the [`kCFStreamSSLPeerName`](https://developer.apple.com/documentation/cfnetwork/kcfstreamsslpeername) property within the dictionary associated with the stream’s [`kCFStreamPropertySSLSettings`](https://developer.apple.com/documentation/cfnetwork/kcfstreampropertysslsettings) key.
 
 
 ---

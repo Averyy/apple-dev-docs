@@ -7,7 +7,6 @@ A classification for the notification type.
 
 **Availability**:
 - iOS 26.5+
-- iPadOS 26.5+
 
 ## Declaration
 

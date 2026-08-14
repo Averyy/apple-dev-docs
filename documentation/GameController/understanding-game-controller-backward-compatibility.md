@@ -20,7 +20,7 @@ The emulation layer is disabled by default. People can enable it for your game i
 
 ##### Discover and Identify Game Controller Synthetic Hid Devices
 
-When your app uses the APIs in `IOHIDManager.h` or `IOKitLib.h` to query the HID devices in the I/O registry, game controller synthetic HID devices that match your specified criteria also return. Each game controller synthetic HID device contains a `GCSyntheticDevice` property with a value of [`true`](https://developer.apple.com/documentation/Swift/true) in its I/O registry entry property table. Your app can check for the presence of this key to determine whether an [`IOHIDDeviceRef`](https://developer.apple.com/documentation/iokit/iohiddeviceref) or an [`io_service_t`](https://developer.apple.com/documentation/kernel/io_service_t) refers to a game controller synthetic HID device.
+When your app uses the APIs in `IOHIDManager.h` or `IOKitLib.h` to query the HID devices in the I/O registry, game controller synthetic HID devices that match your specified criteria also return. Each game controller synthetic HID device contains a `GCSyntheticDevice` property with a value of [`true`](https://developer.apple.com/documentation/swift/true) in its I/O registry entry property table. Your app can check for the presence of this key to determine whether an [`IOHIDDeviceRef`](https://developer.apple.com/documentation/iokit/iohiddeviceref) or an [`io_service_t`](https://developer.apple.com/documentation/kernel/io_service_t) refers to a game controller synthetic HID device.
 
 > ❗ **Important**:  Checking for the presence of the `GCSyntheticDevice` property is the only supported way to determine whether a HID device is a game controller synthetic HID device.
 
@@ -32,7 +32,7 @@ if ( IOHIDDeviceGetProperty(device, CFSTR(kIOHIDGCSyntheticDeviceKey)) == kCFBoo
 }
 ```
 
-To prevent matching on game controller synthetic HID devices, add the [`kIOHIDGCSyntheticDeviceKey`](kiohidgcsyntheticdevicekey.md) with a value of [`kCFBooleanFalse`](https://developer.apple.com/documentation/CoreFoundation/kCFBooleanFalse) to the matching criteria your code passes to [`IOHIDManagerSetDeviceMatching`](https://developer.apple.com/documentation/iokit/1438371-iohidmanagersetdevicematching), [`IOServiceGetMatchingServices(_:_:_:)`](https://developer.apple.com/documentation/iokit/1514494-ioservicegetmatchingservices), or similar APIs.
+To prevent matching on game controller synthetic HID devices, add the [`kIOHIDGCSyntheticDeviceKey`](kiohidgcsyntheticdevicekey.md) with a value of [`kCFBooleanFalse`](https://developer.apple.com/documentation/corefoundation/kcfbooleanfalse) to the matching criteria your code passes to [`IOHIDManagerSetDeviceMatching`](https://developer.apple.com/documentation/iokit/1438371-iohidmanagersetdevicematching), [`IOServiceGetMatchingServices(_:_:_:)`](https://developer.apple.com/documentation/iokit/1514494-ioservicegetmatchingservices), or similar APIs.
 
 ```objc
 IOHIDManagerRef manager = IOHIDManagerCreate(kCFAllocatorDefault, kIOHIDManagerOptionNone);

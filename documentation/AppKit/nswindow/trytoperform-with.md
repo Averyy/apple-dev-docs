@@ -16,11 +16,11 @@ func tryToPerform(_ action: Selector, with object: Any?) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/Swift/true) when the window or its delegate perform `action` with `object`; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
+[`true`](https://developer.apple.com/documentation/swift/true) when the window or its delegate perform `action` with `object`; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
 
 #### Discussion
 
-The window tries to perform the method `action` using its inherited `NSResponder` method [`tryToPerform(_:with:)`](nsresponder/trytoperform(_:with:).md). If the window doesn’t perform `action`, the delegate is given the opportunity to perform it using its inherited `NSObject` method [`perform(_:with:)`](https://developer.apple.com/documentation/ObjectiveC/NSObjectProtocol/perform(_:with:)).
+The window tries to perform the method `action` using its inherited `NSResponder` method [`tryToPerform(_:with:)`](nsresponder/trytoperform(_:with:).md). If the window doesn’t perform `action`, the delegate is given the opportunity to perform it using its inherited `NSObject` method [`perform(_:with:)`](https://developer.apple.com/documentation/objectivec/nsobjectprotocol/perform(_:with:)).
 
 ## Parameters
 

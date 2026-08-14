@@ -12,7 +12,7 @@ Capture high-quality photos, video, and audio in your Apple TV app by connecting
 
 Continuity Camera brings the power of the cameras and microphones from an iOS or iPadOS device to Apple TV, including advanced features like Center Stage and Portrait mode.
 
-This sample project provides an example implementation that accesses a camera and microphone from a nearby iPhone or iPad in an Apple TV app. It builds on a similar sample, [`Supporting Continuity Camera in your macOS app`](https://developer.apple.com/documentation/AVFoundation/supporting-continuity-camera-in-your-macos-app), and shares some of its functionality, including automatic camera selection and observing the state of video effects. The following sections focus on the aspects specific to tvOS.
+This sample project provides an example implementation that accesses a camera and microphone from a nearby iPhone or iPad in an Apple TV app. It builds on a similar sample, [`Supporting Continuity Camera in your macOS app`](https://developer.apple.com/documentation/avfoundation/supporting-continuity-camera-in-your-macos-app), and shares some of its functionality, including automatic camera selection and observing the state of video effects. The following sections focus on the aspects specific to tvOS.
 
 > **Note**: This sample code project is associated with WWDC23 session 10256: [`Discover Continuity Camera on tvOS`](https://developer.apple.comhttps://developer.apple.com/wwdc23/10256).
 
@@ -31,7 +31,7 @@ The first time you run the app on an Apple TV, the system prompts you for permis
 
 ##### Present the Continuity Device Picker
 
-When the app launches, it immediately presents a continuity device picker by calling the [`continuityDevicePicker(isPresented:onDidConnect:)`](https://developer.apple.com/documentation/SwiftUI/View/continuityDevicePicker(isPresented:onDidConnect:)) modifier in its SwiftUI implementation.
+When the app launches, it immediately presents a continuity device picker by calling the [`continuityDevicePicker(isPresented:onDidConnect:)`](https://developer.apple.com/documentation/swiftui/view/continuitydevicepicker(ispresented:ondidconnect:)) modifier in its SwiftUI implementation.
 
 ```swift
 .continuityDevicePicker(isPresented: $showContinuityDevicePicker,
@@ -43,7 +43,7 @@ When the app launches, it immediately presents a continuity device picker by cal
     }
 ```
 
-The picker only appears if the `isPresented` parameter — which is a Boolean [`Binding`](https://developer.apple.com/documentation/SwiftUI/Binding) — is `true`. The picker calls the closure the app passes to the `onDidConnect` parameter when a person selects a device and the system successfully connects to it.
+The picker only appears if the `isPresented` parameter — which is a Boolean [`Binding`](https://developer.apple.com/documentation/swiftui/binding) — is `true`. The picker calls the closure the app passes to the `onDidConnect` parameter when a person selects a device and the system successfully connects to it.
 
 ```swift
 func handleNewConnectionForDevice(_ device: AVContinuityDevice?) {
@@ -62,15 +62,15 @@ func handleNewConnectionForDevice(_ device: AVContinuityDevice?) {
 }
 ```
 
-The handling closure’s [`AVContinuityDevice`](https://developer.apple.com/documentation/AVFoundation/AVContinuityDevice) parameter represents the device that a person selects on their Apple TV. Each continuity device has a [`videoDevices`](https://developer.apple.com/documentation/AVFoundation/AVContinuityDevice/videoDevices) property, which is an array of [`AVCaptureDevice`](https://developer.apple.com/documentation/AVFoundation/AVCaptureDevice) instances.
+The handling closure’s [`AVContinuityDevice`](https://developer.apple.com/documentation/avfoundation/avcontinuitydevice) parameter represents the device that a person selects on their Apple TV. Each continuity device has a [`videoDevices`](https://developer.apple.com/documentation/avfoundation/avcontinuitydevice/videodevices) property, which is an array of [`AVCaptureDevice`](https://developer.apple.com/documentation/avfoundation/avcapturedevice) instances.
 
 The app’s `handleNewConnectionForDevice(_:)` method is a minimal implementation that selects the first video device in the array. Apps typically compare all the video device elements and select one that’s appropriate for their needs.
 
-> **Note**: [`UIKit`](https://developer.apple.com/documentation/UIKit) based apps can create a continuity device picker by creating an [`AVContinuityDevicePickerViewController`](AVContinuityDevicePickerViewController.md) instance.
+> **Note**: [`UIKit`](https://developer.apple.com/documentation/uikit) based apps can create a continuity device picker by creating an [`AVContinuityDevicePickerViewController`](avcontinuitydevicepickerviewcontroller.md) instance.
 
 ##### Connect a Video Device to a Capture Session
 
-The app’s `CaptureManager` class creates and maintains an [`AVCaptureSession`](https://developer.apple.com/documentation/AVFoundation/AVCaptureSession) instance for the app’s lifetime. The capture manager’s `setActiveVideoInput(_:)` method creates an [`AVCaptureDeviceInput`](https://developer.apple.com/documentation/AVFoundation/AVCaptureDeviceInput) instance from the video device, and then tests to see whether it’s an acceptable input for the capture session.
+The app’s `CaptureManager` class creates and maintains an [`AVCaptureSession`](https://developer.apple.com/documentation/avfoundation/avcapturesession) instance for the app’s lifetime. The capture manager’s `setActiveVideoInput(_:)` method creates an [`AVCaptureDeviceInput`](https://developer.apple.com/documentation/avfoundation/avcapturedeviceinput) instance from the video device, and then tests to see whether it’s an acceptable input for the capture session.
 
 ```swift
 let name = camera.localizedName
@@ -114,7 +114,7 @@ The `willSet` observer removes the capture session’s current input, if applica
 
 ##### Register for Capture Device Updates
 
-The app receives various updates related to its capture device by registering with [`NotificationCenter`](https://developer.apple.com/documentation/Foundation/NotificationCenter) and with key-value observation (KVO). See [`Using Key-Value Observing in Swift`](https://developer.apple.com/documentation/Swift/using-key-value-observing-in-swift) and [`NSKeyValueObserving`](https://developer.apple.com/documentation/ObjectiveC/nskeyvalueobserving) for more information.
+The app receives various updates related to its capture device by registering with [`NotificationCenter`](https://developer.apple.com/documentation/foundation/notificationcenter) and with key-value observation (KVO). See [`Using Key-Value Observing in Swift`](https://developer.apple.com/documentation/swift/using-key-value-observing-in-swift) and [`NSKeyValueObserving`](https://developer.apple.com/documentation/objectivec/nskeyvalueobserving) for more information.
 
 The app specifically registers for the following events:
 
@@ -124,7 +124,7 @@ The app specifically registers for the following events:
 
 > **Note**: People can enable video effects in Control Center on Apple TV.
 
-The sample’s implementation that monitors the video effects and system changes is similar to the macOS equivalent of this sample, [`Supporting Continuity Camera in your macOS app`](https://developer.apple.com/documentation/AVFoundation/supporting-continuity-camera-in-your-macos-app). The sample also monitors Notification Center events related to the camera. The app’s capture manager responds when a capture device disconnects by registering with Notification Center for the [`wasConnectedNotification`](https://developer.apple.com/documentation/AVFoundation/AVCaptureDevice/wasConnectedNotification) event.
+The sample’s implementation that monitors the video effects and system changes is similar to the macOS equivalent of this sample, [`Supporting Continuity Camera in your macOS app`](https://developer.apple.com/documentation/avfoundation/supporting-continuity-camera-in-your-macos-app). The sample also monitors Notification Center events related to the camera. The app’s capture manager responds when a capture device disconnects by registering with Notification Center for the [`wasConnectedNotification`](https://developer.apple.com/documentation/avfoundation/avcapturedevice/wasconnectednotification) event.
 
 ```swift
 func observeCamera(_ camera: AVCaptureDevice) {
@@ -141,9 +141,9 @@ The app’s `CaptureDeviceNotificationObserver` structure listens for the these 
 
 ##### Configure the Audio Engine with an Audio Input Device
 
-At launch, the app creates an `AudioCapturer` instance, which checks for audio inputs (microphones). It does this by inspecting the [`availableInputs`](https://developer.apple.com/documentation/AVFAudio/AVAudioSession/availableInputs) property of the [`AVAudioSession`](https://developer.apple.com/documentation/AVFAudio/AVAudioSession) type’s shared instance, and then monitoring the property for updates.
+At launch, the app creates an `AudioCapturer` instance, which checks for audio inputs (microphones). It does this by inspecting the [`availableInputs`](https://developer.apple.com/documentation/avfaudio/avaudiosession/availableinputs) property of the [`AVAudioSession`](https://developer.apple.com/documentation/avfaudio/avaudiosession) type’s shared instance, and then monitoring the property for updates.
 
-The app monitors for new microphones — similar to how the app’s capture manager monitors for new cameras — by observing the [`isInputAvailable`](https://developer.apple.com/documentation/AVFAudio/AVAudioSession/isInputAvailable) property of the `AVAudioSession` type’s shared instance.
+The app monitors for new microphones — similar to how the app’s capture manager monitors for new cameras — by observing the [`isInputAvailable`](https://developer.apple.com/documentation/avfaudio/avaudiosession/isinputavailable) property of the `AVAudioSession` type’s shared instance.
 
 ```swift
 private static let inputAvailableKeyPath = "isInputAvailable"
@@ -156,7 +156,7 @@ func registerForInputAvailabilityUpdates(on session: AVAudioSession) {
 }
 ```
 
-When the app has access to a microphone, it configures an [`AVAudioEngine`](https://developer.apple.com/documentation/AVFAudio/AVAudioEngine) instance in the audio capturer’s `setupAndStartAudioSession()` method.
+When the app has access to a microphone, it configures an [`AVAudioEngine`](https://developer.apple.com/documentation/avfaudio/avaudioengine) instance in the audio capturer’s `setupAndStartAudioSession()` method.
 
 ```swift
 func setupAndStartAudioSession() {
@@ -176,7 +176,7 @@ The method configures the audio engine for a conference call scenario when the a
 
 ##### Configure the Audio Engine for a Call
 
-The third step is important for conferencing apps that use Voice over IP (VoIP). The `configureAudioSessionForVoiceChat` method configures the audio session by passing the [`voiceChat`](https://developer.apple.com/documentation/AVFAudio/AVAudioSession/Mode-swift.struct/voiceChat) mode to the audio session’s [`setCategory(_:)`](https://developer.apple.com/documentation/AVFAudio/AVAudioSession/setCategory(_:)) method.
+The third step is important for conferencing apps that use Voice over IP (VoIP). The `configureAudioSessionForVoiceChat` method configures the audio session by passing the [`voiceChat`](https://developer.apple.com/documentation/avfaudio/avaudiosession/mode-swift.struct/voicechat) mode to the audio session’s [`setCategory(_:)`](https://developer.apple.com/documentation/avfaudio/avaudiosession/setcategory(_:)) method.
 
 ```swift
 try avAudioSession.setCategory(.playAndRecord,
@@ -203,9 +203,9 @@ public func bypassVoiceProcessing(_ bypass: Bool) {
 }
 ```
 
-The app can temporarily disable voice processing by setting the [`isVoiceProcessingBypassed`](https://developer.apple.com/documentation/AVFAudio/AVAudioInputNode/isVoiceProcessingBypassed) property of the audio engine’s [`inputNode`](https://developer.apple.com/documentation/AVFAudio/AVAudioEngine/inputNode) to `true`. This gives the app all the incoming audio from the microphone without any adjustments from the system.
+The app can temporarily disable voice processing by setting the [`isVoiceProcessingBypassed`](https://developer.apple.com/documentation/avfaudio/avaudioinputnode/isvoiceprocessingbypassed) property of the audio engine’s [`inputNode`](https://developer.apple.com/documentation/avfaudio/avaudioengine/inputnode) to `true`. This gives the app all the incoming audio from the microphone without any adjustments from the system.
 
-> **Note**: The behavior of the audio engine’s `isVoiceProcessingBypassed` property is similar to [`kAUVoiceIOProperty_BypassVoiceProcessing`](https://developer.apple.com/documentation/AudioToolbox/kAUVoiceIOProperty_BypassVoiceProcessing). For more information, see [`Audio Unit Voice I/O`](https://developer.apple.com/documentation/AudioToolbox/audio-unit-voice-i-o).
+> **Note**: The behavior of the audio engine’s `isVoiceProcessingBypassed` property is similar to [`kAUVoiceIOProperty_BypassVoiceProcessing`](https://developer.apple.com/documentation/audiotoolbox/kauvoiceioproperty_bypassvoiceprocessing). For more information, see [`Audio Unit Voice I/O`](https://developer.apple.com/documentation/audiotoolbox/audio-unit-voice-i-o).
 
 ## See Also
 

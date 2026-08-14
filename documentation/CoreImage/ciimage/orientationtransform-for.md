@@ -21,7 +21,7 @@ func orientationTransform(for orientation: CGImagePropertyOrientation) -> CGAffi
 
 #### Discussion
 
-Returns a [`CGAffineTransform`](https://developer.apple.com/documentation/CoreFoundation/CGAffineTransform) for the [`CGImagePropertyOrientation`](https://developer.apple.com/documentation/ImageIO/CGImagePropertyOrientation) value to apply to the image.
+Returns a [`CGAffineTransform`](https://developer.apple.com/documentation/corefoundation/cgaffinetransform) for the [`CGImagePropertyOrientation`](https://developer.apple.com/documentation/imageio/cgimagepropertyorientation) value to apply to the image.
 
 ## See Also
 

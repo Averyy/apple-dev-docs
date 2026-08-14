@@ -27,7 +27,7 @@ The observation — or list of observations — the request produces.
 
 ## Parameters
 
-- `pixelBuffer`: The input [`CVPixelBuffer`](https://developer.apple.com/documentation/CoreVideo/CVPixelBuffer) on which to perform the request.
+- `pixelBuffer`: The input [`CVPixelBuffer`](https://developer.apple.com/documentation/corevideo/cvpixelbuffer) on which to perform the request.
 - `orientation`: The orientation of the input image. Default is `nil`.
 
 ## See Also

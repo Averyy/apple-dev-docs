@@ -19,7 +19,7 @@ optional func sharingService(_ sharingService: NSSharingService, didFailToShareI
 
 - `sharingService`: The sharing service.
 - `items`: The items being shared.
-- `error`: The error that was encountered when trying to share the item. If the error is [`NSUserCancelledError`](https://developer.apple.com/documentation/Foundation/NSUserCancelledError-swift.var), the user simply cancelled the error.
+- `error`: The error that was encountered when trying to share the item. If the error is [`NSUserCancelledError`](https://developer.apple.com/documentation/foundation/nsusercancellederror-swift.var), the user simply cancelled the error.
 
 ## See Also
 

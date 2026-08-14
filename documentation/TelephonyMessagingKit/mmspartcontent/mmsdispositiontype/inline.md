@@ -7,7 +7,6 @@ A disposition to render the content part in line with the rest of the message.
 
 **Availability**:
 - iOS 26.0+
-- iPadOS 26.0+
 
 ## Declaration
 

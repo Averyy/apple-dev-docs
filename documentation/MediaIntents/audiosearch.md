@@ -26,11 +26,11 @@ struct AudioSearch
 
 #### Overview
 
-People use Apple Intelligence and Siri to find and play audio. By integrating your app’s audio catalog with Apple Intelligence and Siri using the [`App Intents`](https://developer.apple.com/documentation/AppIntents) framework, the system forwards search and playback requests to your app, and your app returns audio search results and allows the system to play your app’s songs, podcasts, audiobooks, and so on.
+People use Apple Intelligence and Siri to find and play audio. By integrating your app’s audio catalog with Apple Intelligence and Siri using the [`App Intents`](https://developer.apple.com/documentation/appintents) framework, the system forwards search and playback requests to your app, and your app returns audio search results and allows the system to play your app’s songs, podcasts, audiobooks, and so on.
 
 The `AudioSearch` structure captures a person’s audio search and playback request — music, podcasts, audiobooks, or other audio content.
 
-Use `AudioSearch` in your [`IntentValueQuery`](https://developer.apple.com/documentation/AppIntents/IntentValueQuery) implementation to find matching audio content in your app’s media catalog.
+Use `AudioSearch` in your [`IntentValueQuery`](https://developer.apple.com/documentation/appintents/intentvaluequery) implementation to find matching audio content in your app’s media catalog.
 
 For more information about allowing people to find audio content in your app with Apple Intelligence and Siri, see [`Responding to audio search and playback requests`](responding-to-audio-search-and-playback-requests.md).
 
@@ -55,21 +55,21 @@ For more information about allowing people to find audio content in your app wit
 ## Relationships
 
 ### Conforms To
-- [Copyable](../Swift/Copyable.md)
-- [CustomLocalizedStringResourceConvertible](../Foundation/CustomLocalizedStringResourceConvertible.md)
-- [Decodable](../Swift/Decodable.md)
-- [DisplayRepresentable](../AppIntents/DisplayRepresentable.md)
-- [Encodable](../Swift/Encodable.md)
-- [Equatable](../Swift/Equatable.md)
-- [Escapable](../Swift/Escapable.md)
-- [Hashable](../Swift/Hashable.md)
-- [InstanceDisplayRepresentable](../AppIntents/InstanceDisplayRepresentable.md)
-- [IntentValueConvertible](../AppIntents/IntentValueConvertible.md)
-- [IntentValueExpressing](../AppIntents/IntentValueExpressing.md)
-- [PersistentlyIdentifiable](../AppIntents/PersistentlyIdentifiable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
-- [TypeDisplayRepresentable](../AppIntents/TypeDisplayRepresentable.md)
+- [Copyable](../swift/copyable.md)
+- [CustomLocalizedStringResourceConvertible](../foundation/customlocalizedstringresourceconvertible.md)
+- [Decodable](../swift/decodable.md)
+- [DisplayRepresentable](../appintents/displayrepresentable.md)
+- [Encodable](../swift/encodable.md)
+- [Equatable](../swift/equatable.md)
+- [Escapable](../swift/escapable.md)
+- [Hashable](../swift/hashable.md)
+- [InstanceDisplayRepresentable](../appintents/instancedisplayrepresentable.md)
+- [IntentValueConvertible](../appintents/intentvalueconvertible.md)
+- [IntentValueExpressing](../appintents/intentvalueexpressing.md)
+- [PersistentlyIdentifiable](../appintents/persistentlyidentifiable.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
+- [TypeDisplayRepresentable](../appintents/typedisplayrepresentable.md)
 
 ## See Also
 

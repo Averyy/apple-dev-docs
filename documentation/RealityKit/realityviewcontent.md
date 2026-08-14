@@ -33,8 +33,8 @@ You can use `RealityViewContent` to add and remove entities, subscribe to Realit
 ## Relationships
 
 ### Conforms To
-- [Copyable](../Swift/Copyable.md)
-- [Escapable](../Swift/Escapable.md)
+- [Copyable](../swift/copyable.md)
+- [Escapable](../swift/escapable.md)
 - [RealityCoordinateSpace](realitycoordinatespace.md)
 - [RealityCoordinateSpaceConverting](realitycoordinatespaceconverting.md)
 - [RealityViewContentProtocol](realityviewcontentprotocol.md)

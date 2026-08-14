@@ -37,8 +37,8 @@ The following table shows the toggle in both the `off` and `on` states, respecti
 
 | Platform | Appearance |
 | --- | --- |
-| iOS, iPadOS | ![A screenshot of two buttons with a flag icon and the word flag inside. The first button isn’t highlighted; the second one is.](https://docs-assets.developer.apple.com/published/29a2510c1ef1b33fa8b54c034916a1b8/ToggleStyle-button-1-iOS%402x.png) |
-| macOS | ![A screenshot of two buttons with a flag icon and the word flag inside. The first button isn’t highlighted; the second one is.](https://docs-assets.developer.apple.com/published/7542554967f1ced9f6ae2d2808a60c84/ToggleStyle-button-1-macOS%402x.png) |
+| iOS, iPadOS | ![A screenshot of two buttons with a flag icon and the word flag inside. The first button isn’t highlighted; the second one is.](/images/com.apple.SwiftUI/ToggleStyle-button-1-iOS@2x.png) |
+| macOS | ![A screenshot of two buttons with a flag icon and the word flag inside. The first button isn’t highlighted; the second one is.](/images/com.apple.SwiftUI/ToggleStyle-button-1-macOS@2x.png) |
 
 A [`Label`](label.md) instance is a good choice for a button toggle’s label. Based on the context, SwiftUI decides whether to display both the title and icon, as in the example above, or just the icon, like when the toggle appears in a toolbar. You can also control the label’s style by adding a [`labelStyle(_:)`](view/labelstyle(_:).md) modifier. In any case, SwiftUI always uses the title to identify the control using VoiceOver.
 

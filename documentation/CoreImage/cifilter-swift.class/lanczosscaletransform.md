@@ -34,8 +34,8 @@ This method applies the Lanczos scale transform filter to an image. The effect c
 The Lanczos scale filter uses the following properties:
 
 - **`inputImage`**: An image with the type [`CIImage`](ciimage.md).
-- **`scale`**: A `float` representing the scaling factor used on the image as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber). Values less than `1.0` scale down the images. Values greater than `1.0` scale up the image.
-- **`aspectRatio`**: A `float` representing the additional horizontal scaling factor used on the image as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+- **`scale`**: A `float` representing the scaling factor used on the image as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber). Values less than `1.0` scale down the images. Values greater than `1.0` scale up the image.
+- **`aspectRatio`**: A `float` representing the additional horizontal scaling factor used on the image as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
 
 The following code creates a filter that results in a smaller scaled image with high quality:
 
@@ -49,7 +49,7 @@ func lanczosScale(inputImage: CIImage) -> CIImage {
 }
 ```
 
-![Two photographs of a large building on the corner of an intersection. The building has small windows and is made of a brick structure. The photo on the left has no modifications to size or color. In the photo on the right, a Lanczos scale transform filter is applied, resulting in a scaled-down or smaller image.](https://docs-assets.developer.apple.com/published/f3e9bc19cd8ae3a39bbc19bdb411ec5e/media-3582221%402x.png)
+![Two photographs of a large building on the corner of an intersection. The building has small windows and is made of a brick structure. The photo on the left has no modifications to size or color. In the photo on the right, a Lanczos scale transform filter is applied, resulting in a scaled-down or smaller image.](/images/com.apple.coreimage/media-3582221@2x.png)
 
 ## See Also
 

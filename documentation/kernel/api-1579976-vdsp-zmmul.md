@@ -24,15 +24,15 @@ This performs the following operation:
 
 ## Parameters
 
-- `__A`: Single-precision complex  -by-  input matrix.
-- `__IA`: Stride for  .
-- `__B`: Single-precision complex  -by- input matrix.
-- `__IB`: Stride for  .
-- `__C`: Single-precision complex  -by-  result matrix.
-- `__IC`: Stride for  .
-- `__M`: The number of rows in matrices   and  .
-- `__N`: The number of columns in matrices   and  .
-- `__P`: The number of columns in matrix   and the number of rows in matrix  .
+- `__A`: Single-precision complex `M`-by-`P` input matrix.
+- `__IA`: Stride for `A`.
+- `__B`: Single-precision complex `P`-by-`N`input matrix.
+- `__IB`: Stride for `B`.
+- `__C`: Single-precision complex `M`-by-`N` result matrix.
+- `__IC`: Stride for `C`.
+- `__M`: The number of rows in matrices `A` and `C`.
+- `__N`: The number of columns in matrices `B` and `C`.
+- `__P`: The number of columns in matrix `A` and the number of rows in matrix `B`.
 
 
 ---

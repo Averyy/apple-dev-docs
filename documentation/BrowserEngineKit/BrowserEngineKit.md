@@ -13,12 +13,12 @@ Create a browser that renders content using an alternative browser engine.
 
 A web browser loads content and code from remote — and potentially untrusted — servers. Design your browser app to isolate access to system resources, the data of the person using the app, and untrusted data from the web. Code defensively to reduce the risk posed by vulnerabilities in your browser code.
 
-If you use [`WKWebView`](https://developer.apple.com/documentation/WebKit/WKWebView) to render web content in your browser app, WebKit automatically distributes its work to extensions that isolate their access to important resources and data.
+If you use [`WKWebView`](https://developer.apple.com/documentation/webkit/wkwebview) to render web content in your browser app, WebKit automatically distributes its work to extensions that isolate their access to important resources and data.
 
-Whether you use [`WebKit`](https://developer.apple.com/documentation/WebKit) or write your own alternative browser engine, you need to:
+Whether you use [`WebKit`](https://developer.apple.com/documentation/webkit) or write your own alternative browser engine, you need to:
 
-- Request the entitlement to act as a person’s default web browser. For more information, see [`Preparing your app to be the default web browser`](https://developer.apple.com/documentation/Xcode/preparing-your-app-to-be-the-default-browser).
-- Watch for the [`MarketplaceKitURIScheme`](https://developer.apple.com/documentation/MarketplaceKit/MarketplaceKitURIScheme) within web content to support alternative distribution apps that install from a website. For more information, see [`Enabling alternative distribution app installation in a browser`](https://developer.apple.com/documentation/appdistribution/enabling-alternative-distribution-app-installation-in-a-browser).
+- Request the entitlement to act as a person’s default web browser. For more information, see [`Preparing your app to be the default web browser`](https://developer.apple.com/documentation/xcode/preparing-your-app-to-be-the-default-browser).
+- Watch for the [`MarketplaceKitURIScheme`](https://developer.apple.com/documentation/marketplacekit/marketplacekiturischeme) within web content to support alternative distribution apps that install from a website. For more information, see [`Enabling alternative distribution app installation in a browser`](https://developer.apple.com/documentation/marketplacekit/enabling-alternative-distribution-app-installation-in-a-browser).
 
 ##### Build a Multi Process Browser
 
@@ -32,7 +32,7 @@ Your browser app can get significant benefits by integrating closely with UIKit.
 
 For information on integrating a custom text view with the UIKit text system, see [`Integrating custom browser text views with UIKit`](integrating-custom-browser-text-views-with-uikit.md).
 
-In your browser app, launch extensions as the person browses web content to make network requests, load the web content, and render media. For more information, see [`Managing the browser extension life cycle`](managing-the-browser-extension-lifecycle.md). Use [`XPC`](https://developer.apple.com/documentation/XPC) to communicate between your browser app and extension processes. For more information, see [`Using XPC to communicate with browser extensions`](using-xpc-to-communicate-with-browser-extensions.md).
+In your browser app, launch extensions as the person browses web content to make network requests, load the web content, and render media. For more information, see [`Managing the browser extension life cycle`](managing-the-browser-extension-lifecycle.md). Use [`XPC`](https://developer.apple.com/documentation/xpc) to communicate between your browser app and extension processes. For more information, see [`Using XPC to communicate with browser extensions`](using-xpc-to-communicate-with-browser-extensions.md).
 
 ##### Develop By Region
 
@@ -41,7 +41,7 @@ To distribute an app that uses an alternative browser engine, request the releva
 Support for alternative browser engines varies by geographic region:
 
 - **European Union**: To request the entitlements in the EU for an iOS or iPadOS app, see [`Using alternative browser engines in the European Union`](https://developer.apple.comhttps://developer.apple.com/support/alternative-browser-engines).
-- **Japan**: To request the entitlements in Japan for an iOS app, see [`Using alternative browser engines in Japan`](https://developer.apple.comhttps://developer.apple.com/support/alternative-browser-engines-jp). Also, your app needs to adopt the [`com.apple.security.hardened-process.checked-allocations`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.security.hardened-process.checked-allocations) entitlement. In apps that aren’t browsers, you can embed only an alternative browser engine of which you have ownership; for more information, see [`Embedded Browser Engine Association Entitlement`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.embedded-web-browser-engine.engine-association).
+- **Japan**: To request the entitlements in Japan for an iOS app, see [`Using alternative browser engines in Japan`](https://developer.apple.comhttps://developer.apple.com/support/alternative-browser-engines-jp). Also, your app needs to adopt the [`com.apple.security.hardened-process.checked-allocations`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.security.hardened-process.checked-allocations) entitlement. In apps that aren’t browsers, you can embed only an alternative browser engine of which you have ownership; for more information, see [`Embedded Browser Engine Association Entitlement`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.embedded-web-browser-engine.engine-association).
 
 ## Topics
 
@@ -50,7 +50,7 @@ Support for alternative browser engines varies by geographic region:
   Create a browser app and associated extensions.
 - [Designing your browser architecture](designing-your-browser-architecture.md)
   Isolate privileged access to system resources and private data from untrusted code.
-- [Preparing your app to be the default web browser](../Xcode/preparing-your-app-to-be-the-default-browser.md)
+- [Preparing your app to be the default web browser](../xcode/preparing-your-app-to-be-the-default-browser.md)
   Configure your browser app so users can set it as the default on their device instead of Safari.
 ### Browser extensions
 - [Creating browser extensions in Xcode](creating-browser-extensions-in-xcode.md)
@@ -111,9 +111,9 @@ Support for alternative browser engines varies by geographic region:
 ### Just-in-time code compilation
 - [Protecting code compiled just in time](protecting-code-compiled-just-in-time.md)
   Toggle memory between being writable and executable.
-- [Improving control flow integrity with pointer authentication](../Apple-Silicon/improving-control-flow-integrity-with-pointer-authentication.md)
+- [Improving control flow integrity with pointer authentication](../apple-silicon/improving-control-flow-integrity-with-pointer-authentication.md)
   Increase confidence that your code uses pointers correctly.
-- [var BE_JIT_WRITE_PROTECT_TAG: Int](../BrowserEngineCore/BE_JIT_WRITE_PROTECT_TAG.md)
+- [var BE_JIT_WRITE_PROTECT_TAG: Int](../browserenginecore/be_jit_write_protect_tag.md)
   A discriminator value the system uses to generate pointer authentication codes for just-in-time compilation.
 ### Downloads
 - [Downloading files in a web browser with an alternative browser engine](downloading-files-in-a-web-browser.md)

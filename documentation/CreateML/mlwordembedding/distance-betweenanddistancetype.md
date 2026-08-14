@@ -28,7 +28,7 @@ The distance
 
 - [func prediction(from: String, maxCount: Int, maxDistance: Double, distanceType: NLDistanceType) throws -> [(text: String, distance: Double)]](mlwordembedding/prediction(from:maxcount:maxdistance:distancetype:).md)
   Predicts neighbors.
-- [enum NLDistanceType](../NaturalLanguage/NLDistanceType.md)
+- [enum NLDistanceType](../naturallanguage/nldistancetype.md)
   The means of calculating a distance between two locations in a text embedding.
 - [func contains(String) -> Bool](mlwordembedding/contains(_:).md)
   Returns a Boolean value indicating whether the vocabulary contains the given string.

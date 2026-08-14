@@ -18,7 +18,7 @@ func connect(to peripheral: CBPeripheral, timeout: TimeInterval? = nil, callback
 ## Parameters
 
 - `peripheral`: The peripheral to attempt to connect to.
-- `timeout`: The amount of time, in seconds, before the connection attempt is aborted. If the timeout value is  , the attempt won’t time out. To cancel a connection attempt, call the   method.
+- `timeout`: The amount of time, in seconds, before the connection attempt is aborted. If the timeout value is `nil`, the attempt won’t time out. To cancel a connection attempt, call the [`disconnect(from:)`](playgroundbluetoothcentralmanager/3029469-disconnect.md) method.
 - `callback`: A function that’s called when the connection attempt succeeds or fails.
 
 ## See Also

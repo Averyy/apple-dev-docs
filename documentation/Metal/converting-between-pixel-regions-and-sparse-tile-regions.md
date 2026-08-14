@@ -20,7 +20,7 @@ MTLSize tileSize = [_device sparseTileSizeWithTextureType:MTLTextureType2D
 
 All tiles in a texture have the same dimensions, and the texture is laid out as a grid of sparse tiles. For example, the following texture image is `256 x 256` pixels.
 
-![A figure showing tiles in a texture, specified in both pixel units and tile units. Pixel units are calculated by multiplying the dimensions in tile units by the tile dimensions. ](https://docs-assets.developer.apple.com/published/91e723cce3377021c868557f38deadb2/converting-between-pixel-regions-and-sparse-tile-regions-1%402x.png)
+![A figure showing tiles in a texture, specified in both pixel units and tile units. Pixel units are calculated by multiplying the dimensions in tile units by the tile dimensions. ](/images/com.apple.metal/converting-between-pixel-regions-and-sparse-tile-regions-1@2x.png)
 
 If the tile size is `64 x 64`, to cover the texture, you need a `4 x 4` grid of sparse tiles. An [`MTLRegion`](mtlregion.md) in tile coordinates with an origin of `(0,0)` and a size of `(1,1)` corresponds to a pixel region with an origin of `(0,0)` and a size of `(64,64)`. Similarly, a tile region with an origin of `(2,1)` and a size of `(2,3)` corresponds to a pixel region with an origin of `(128,64)` and a size of `(128,196)`.
 

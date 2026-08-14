@@ -21,7 +21,7 @@ Displays the widget’s content along a curve if the context allows it.
 
 #### Discussion
 
-The system positions the widget’s content along a curve that follows the corner of the watch face when displaying a [`WidgetFamily.accessoryCorner`](https://developer.apple.com/documentation/WidgetKit/WidgetFamily/accessoryCorner) complication. The widget must use  a  [`widgetLabel(_:)`](View/widgetLabel(_:)-7wguh.md) modifier, and the curving effect modifies only text, SF Symbols, and images.
+The system positions the widget’s content along a curve that follows the corner of the watch face when displaying a [`WidgetFamily.accessoryCorner`](https://developer.apple.com/documentation/widgetkit/widgetfamily/accessorycorner) complication. The widget must use  a  [`widgetLabel(_:)`](view/widgetlabel(_:)-7wguh.md) modifier, and the curving effect modifies only text, SF Symbols, and images.
 
 When displaying an `.accessoryCorner` complication, the system places the widget label on the inside of the curve, and the widget’s content on the outside, as shown below.
 
@@ -33,7 +33,7 @@ var body: some View {
 }
 ```
 
-The system can also curve text, SF symbols, and image content from a [`ViewThatFits`](ViewThatFits.md) view.
+The system can also curve text, SF symbols, and image content from a [`ViewThatFits`](viewthatfits.md) view.
 
 ```swift
 var body: some View {

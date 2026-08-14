@@ -33,9 +33,9 @@ To set up a new Instruments document from Xcode:
 4. In the filter field, enter “fov” to quickly locate the Foveated Streaming Statistics instrument.
 5. Double click the instrument to add the Foveated Streaming Statistics instrument.
 
-![A screenshot of the Instruments app with the Foveated Streaming Statistics instrument added to a blank template. The right side of the window displays three sections with settings for Target, Recorder Settings, and Foveated Streaming Statistics. Under the Target section the target is set to attach to the FoveatedStreaming-Sample app. Under the Recorder Settings section, the Recording Mode is set to Deferred. There are no settings under the Foveated Streaming Statistics section.](https://docs-assets.developer.apple.com/published/bfa0729e05117bf797a92ca6f1cf61b8/setting-up-instruments%402x.png)
+![A screenshot of the Instruments app with the Foveated Streaming Statistics instrument added to a blank template. The right side of the window displays three sections with settings for Target, Recorder Settings, and Foveated Streaming Statistics. Under the Target section the target is set to attach to the FoveatedStreaming-Sample app. Under the Recorder Settings section, the Recording Mode is set to Deferred. There are no settings under the Foveated Streaming Statistics section.](/images/com.apple.FoveatedStreaming/setting-up-instruments@2x.png)
 
-> 💡 **Tip**: You can add additional instruments alongside the Foveated Streaming Statistics instrument to create a more comprehensive performance profile of your app. For more information, see [`Analyzing the performance of your visionOS app`](https://developer.apple.com/documentation/visionOS/analyzing-the-performance-of-your-visionOS-app).
+> 💡 **Tip**: You can add additional instruments alongside the Foveated Streaming Statistics instrument to create a more comprehensive performance profile of your app. For more information, see [`Analyzing the performance of your visionOS app`](https://developer.apple.com/documentation/visionos/analyzing-the-performance-of-your-visionos-app).
 
 #### Capture Streaming Statistics
 
@@ -45,7 +45,7 @@ To collect metrics for a foveated streaming session:
 2. Connect the [`FoveatedStreamingSession`](foveatedstreamingsession.md) in your app to a streaming endpoint that’s actively streaming content.
 3. Click the stop button to stop recording.
 
-![A screenshot of a run of the Foveated Streaming Statistics instrument displaying graphs with metrics for Average Streaming Rate, Available Bandwidth, Frame Receive Rate, Reprojection Rate, Pose Rate, Pose To Frame Submitted Latency, Pose To Frame Dequeued Latency, Pose To Frame Received Latency, and Pose Upload Latency. The Pose Rate metric is selected in a panel at the bottom of the window, displaying a Minimum Pose Rate of 68.8 FPS, an Average Pose Rate of 90.2 FPS, and a Maximum Pose Rate of 125.3 FPS.](https://docs-assets.developer.apple.com/published/35db9637a9dd12d62dd8eabf0e0dad1b/performance-graphs%402x.png)
+![A screenshot of a run of the Foveated Streaming Statistics instrument displaying graphs with metrics for Average Streaming Rate, Available Bandwidth, Frame Receive Rate, Reprojection Rate, Pose Rate, Pose To Frame Submitted Latency, Pose To Frame Dequeued Latency, Pose To Frame Received Latency, and Pose Upload Latency. The Pose Rate metric is selected in a panel at the bottom of the window, displaying a Minimum Pose Rate of 68.8 FPS, an Average Pose Rate of 90.2 FPS, and a Maximum Pose Rate of 125.3 FPS.](/images/com.apple.FoveatedStreaming/performance-graphs@2x.png)
 
 The Foveated Streaming Statistics instrument collects metrics on the following:
 

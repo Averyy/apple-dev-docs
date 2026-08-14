@@ -57,11 +57,11 @@ struct AssetPackManifest
 ## Relationships
 
 ### Conforms To
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [DecodableWithConfiguration](../Foundation/DecodableWithConfiguration.md)
-- [Encodable](../Swift/Encodable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [DecodableWithConfiguration](../foundation/decodablewithconfiguration.md)
+- [Encodable](../swift/encodable.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 
@@ -71,9 +71,9 @@ struct AssetPackManifest
   An actor that manages asset packs.
 - [protocol ManagedDownloaderExtension](manageddownloaderextension.md)
   An app extension that uses the system implementation to schedule asset-pack downloads automatically.
-- [BAAppGroupID](../BundleResources/Information-Property-List/BAAppGroupID.md)
+- [BAAppGroupID](../bundleresources/information-property-list/baappgroupid.md)
   The app group identifier that you share between your app and the extension that uses asset packs.
-- [BAHasManagedAssetPacks](../BundleResources/Information-Property-List/BAHasManagedAssetPacks.md)
+- [BAHasManagedAssetPacks](../bundleresources/information-property-list/bahasmanagedassetpacks.md)
   A Boolean value that indicates whether you let the system automatically manage your asset packs.
 
 

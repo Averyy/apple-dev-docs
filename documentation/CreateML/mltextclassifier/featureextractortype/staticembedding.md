@@ -20,7 +20,7 @@ case staticEmbedding
 
 #### Discussion
 
-The standard word embeddings are the same as those that [`NLEmbedding`](https://developer.apple.com/documentation/NaturalLanguage/NLEmbedding) provides with its [`wordEmbedding(for:)`](https://developer.apple.com/documentation/NaturalLanguage/NLEmbedding/wordEmbedding(for:)) method.
+The standard word embeddings are the same as those that [`NLEmbedding`](https://developer.apple.com/documentation/naturallanguage/nlembedding) provides with its [`wordEmbedding(for:)`](https://developer.apple.com/documentation/naturallanguage/nlembedding/wordembedding(for:)) method.
 
 ## See Also
 

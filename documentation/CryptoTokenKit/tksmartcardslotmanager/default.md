@@ -22,7 +22,7 @@ class var `default`: TKSmartCardSlotManager? { get }
 
 #### Discussion
 
-This method returns `nil` unless the [`com.apple.security.smartcard`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.security.smartcard) entitlement is enabled.
+This method returns `nil` unless the [`com.apple.security.smartcard`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.security.smartcard) entitlement is enabled.
 
 
 ---

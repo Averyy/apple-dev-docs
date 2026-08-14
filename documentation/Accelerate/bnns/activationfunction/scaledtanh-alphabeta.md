@@ -38,7 +38,7 @@ var activation = BNNSActivation(function: .scaledTanh,
 
 The following illustrates the output that the activation function generates from inputs in the range `-10...10`:
 
-![Graph that shows input values for the activation function on horizontal axis and its output values on vertical axis. ](https://docs-assets.developer.apple.com/published/30835bb314f06774fe34a0c01a42dc30/media-3654664%402x.png)
+![Graph that shows input values for the activation function on horizontal axis and its output values on vertical axis. ](/images/com.apple.accelerate/media-3654664@2x.png)
 
 ## See Also
 

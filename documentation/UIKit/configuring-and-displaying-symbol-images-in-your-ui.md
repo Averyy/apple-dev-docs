@@ -47,7 +47,7 @@ let image = UIImage(systemName: "multiply.circle.fill")
 let image = UIImage(named: "custom.multiply.circle")
 ```
 
-When you use AppKit, use [`init(systemSymbolName:accessibilityDescription:)`](https://developer.apple.com/documentation/AppKit/NSImage/init(systemSymbolName:accessibilityDescription:)) to load a system symbol image, and [`init(named:)`](https://developer.apple.com/documentation/AppKit/NSImage/init(named:)) to load your custom symbol image.
+When you use AppKit, use [`init(systemSymbolName:accessibilityDescription:)`](https://developer.apple.com/documentation/appkit/nsimage/init(systemsymbolname:accessibilitydescription:)) to load a system symbol image, and [`init(named:)`](https://developer.apple.com/documentation/appkit/nsimage/init(named:)) to load your custom symbol image.
 
 ```swift
 // Create a system symbol image with an accessibility description.
@@ -62,7 +62,7 @@ let image = NSImage(named: "custom.multiply.circle")
 
 UIKit and AppKit methods return an image object with symbol image information. When you display that symbol image in an image view, the system applies default styling to it. An image with the default styling might appear out of place next to bold text or text that uses the headline text style.
 
-To make the symbol image blend in with the rest of your content, you create a [`UIImage.SymbolConfiguration`](uiimage/symbolconfiguration-swift.class.md) or [`NSImage.SymbolConfiguration`](https://developer.apple.com/documentation/AppKit/NSImage/SymbolConfiguration-swift.class) object with information about how to style the symbol image. Configure the object with the text style you use for neighboring labels and text views, or specify the font you use in those views. You can add weight information to give the symbol image a thinner or thicker appearance, and you can specify whether you want the image to appear slightly larger or smaller than the neighboring text.
+To make the symbol image blend in with the rest of your content, you create a [`UIImage.SymbolConfiguration`](uiimage/symbolconfiguration-swift.class.md) or [`NSImage.SymbolConfiguration`](https://developer.apple.com/documentation/appkit/nsimage/symbolconfiguration-swift.class) object with information about how to style the symbol image. Configure the object with the text style you use for neighboring labels and text views, or specify the font you use in those views. You can add weight information to give the symbol image a thinner or thicker appearance, and you can specify whether you want the image to appear slightly larger or smaller than the neighboring text.
 
 In UIKit, you assign configuration data to the [`preferredSymbolConfiguration`](uiimageview/preferredsymbolconfiguration.md) property of the `UIImageView` that contains your symbol image. Typically, you apply configuration data only to image views. For other types of system views, UIKit provides configuration data based on system requirements. For example, bars configure the symbol images in their bar button items to match the bar’s configuration. The only other time you might use configuration data is when drawing the image directly. In that case, use the [`applying(_:)`](uiimage/configuration-swift.class/applying(_:).md) method to create a version of your image that includes the specified configuration data.
 
@@ -85,7 +85,7 @@ Image(systemName: "multiply.circle.fill")
       .font(.system(size: 42.0))
 ```
 
-In AppKit, you create a configuration object and set [`symbolConfiguration`](https://developer.apple.com/documentation/AppKit/NSImageView/symbolConfiguration) on [`NSImageView`](https://developer.apple.com/documentation/AppKit/NSImageView).
+In AppKit, you create a configuration object and set [`symbolConfiguration`](https://developer.apple.com/documentation/appkit/nsimageview/symbolconfiguration) on [`NSImageView`](https://developer.apple.com/documentation/appkit/nsimageview).
 
 ```swift
 var configuration = NSImage.SymbolConfiguration(paletteColors: [.systemTeal, .systemGray])
@@ -106,7 +106,7 @@ Image(systemName: "multiply.circle.fill")
 imageView.image = image?.withTintColor(.systemRed, renderingMode: .alwaysOriginal)
 ```
 
-In SwiftUI, you set the rendering mode using [`symbolRenderingMode(_:)`](https://developer.apple.com/documentation/SwiftUI/Image/symbolRenderingMode(_:)), and apply colors using `foregroundStyle(_:)`. If a symbol doesn’t support the rendering mode you choose, the system uses the monochrome version. Using `foregroundStyle` with multiple colors implies switching to palette rendering mode, so you can omit setting the rendering mode.
+In SwiftUI, you set the rendering mode using [`symbolRenderingMode(_:)`](https://developer.apple.com/documentation/swiftui/image/symbolrenderingmode(_:)), and apply colors using `foregroundStyle(_:)`. If a symbol doesn’t support the rendering mode you choose, the system uses the monochrome version. Using `foregroundStyle` with multiple colors implies switching to palette rendering mode, so you can omit setting the rendering mode.
 
 ```swift
 // Create a system symbol image in palette rendering mode.
@@ -114,7 +114,7 @@ Image(systemName: "multiply.circle.fill")
       .foregroundStyle(.teal, .gray)
 ```
 
-In UIKit and AppKit, you use a symbol configuration object to modify a symbol’s rendering mode. In AppKit, you apply a configuration using [`withSymbolConfiguration(_:)`](https://developer.apple.com/documentation/AppKit/NSImage/withSymbolConfiguration(_:)), whereas in UIKit, you apply a configuration by using [`applyingSymbolConfiguration(_:)`](uiimage/applyingsymbolconfiguration(_:).md), as the code below shows:
+In UIKit and AppKit, you use a symbol configuration object to modify a symbol’s rendering mode. In AppKit, you apply a configuration using [`withSymbolConfiguration(_:)`](https://developer.apple.com/documentation/appkit/nsimage/withsymbolconfiguration(_:)), whereas in UIKit, you apply a configuration by using [`applyingSymbolConfiguration(_:)`](uiimage/applyingsymbolconfiguration(_:).md), as the code below shows:
 
 ```swift
 // Create an object configured for palette rendering mode.
@@ -135,13 +135,13 @@ In iOS 16 and later, the system can dynamically apply colors to system and custo
 let image = UIImage(systemName: "speaker.wave.3", variableValue: 0.36)
 ```
 
-To use variable rendering in AppKit, see [`init(symbolName:variableValue:)`](https://developer.apple.com/documentation/AppKit/NSImage/init(symbolName:variableValue:)).
+To use variable rendering in AppKit, see [`init(symbolName:variableValue:)`](https://developer.apple.com/documentation/appkit/nsimage/init(symbolname:variablevalue:)).
 
 ##### Update the Weight and Scale of a Symbol
 
 There are nine symbol weights corresponding to a weight of the San Francisco system font, helping you achieve precise weight matching between symbols and adjacent text, while supporting flexibility for different sizes and context.
 
-By specifying a scale, you adjust a symbol’s emphasis compared to adjacent text without disrupting the weight matching with text that uses the same point size.  See [`imageScale`](https://developer.apple.com/documentation/SwiftUI/EnvironmentValues/imageScale) (SwiftUI), [`UIImage.SymbolScale`](uiimage/symbolscale.md) (UIKit), and [`NSImage.SymbolScale`](https://developer.apple.com/documentation/AppKit/NSImage/SymbolScale) (AppKit).
+By specifying a scale, you adjust a symbol’s emphasis compared to adjacent text without disrupting the weight matching with text that uses the same point size.  See [`imageScale`](https://developer.apple.com/documentation/swiftui/environmentvalues/imagescale) (SwiftUI), [`UIImage.SymbolScale`](uiimage/symbolscale.md) (UIKit), and [`NSImage.SymbolScale`](https://developer.apple.com/documentation/appkit/nsimage/symbolscale) (AppKit).
 
 ```swift
 // Create a large scaled symbol image using SwiftUI.
@@ -192,7 +192,7 @@ NSLayoutConstraint.activate([
 ]];
 ```
 
-All system symbol images include baseline information, and `UIImage` exposes the baseline value as an offset from the bottom of the image. Typically, the baseline of a symbol image aligns with the bottom of any text that appears in the image, but even symbol images without text have a baseline. In AppKit, a symbol’s baseline corresponds to the bottom of the [`alignmentRect`](https://developer.apple.com/documentation/AppKit/NSImage/alignmentRect) property, and in UIKit you can add a baseline to any image by calling its [`withBaselineOffset(fromBottom:)`](uiimage/withbaselineoffset(frombottom:).md) method.
+All system symbol images include baseline information, and `UIImage` exposes the baseline value as an offset from the bottom of the image. Typically, the baseline of a symbol image aligns with the bottom of any text that appears in the image, but even symbol images without text have a baseline. In AppKit, a symbol’s baseline corresponds to the bottom of the [`alignmentRect`](https://developer.apple.com/documentation/appkit/nsimage/alignmentrect) property, and in UIKit you can add a baseline to any image by calling its [`withBaselineOffset(fromBottom:)`](uiimage/withbaselineoffset(frombottom:).md) method.
 
 ```swift
 // Create a custom symbol image.
@@ -202,7 +202,7 @@ let image = UIImage(named: "custom.multiply.circle")
 let baselineImage = image?.withBaselineOffset(fromBottom: 2.0)
 ```
 
-In SwiftUI, you use [`firstTextBaseline`](https://developer.apple.com/documentation/SwiftUI/VerticalAlignment/firstTextBaseline) to baseline align a symbol with text.
+In SwiftUI, you use [`firstTextBaseline`](https://developer.apple.com/documentation/swiftui/verticalalignment/firsttextbaseline) to baseline align a symbol with text.
 
 ```swift
 HStack(alignment: .firstTextBaseline) {

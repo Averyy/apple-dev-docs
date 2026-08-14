@@ -17,23 +17,23 @@ There are two steps to using the sample data:
 
 To access the sample accounts, open the Health app on the simulator, and navigate to Health Data > Health Records.
 
-![A screenshot of the Health Records view.](https://docs-assets.developer.apple.com/published/2602c7f73c72d661cb2887e345dc7d38/media-3040233%402x.png)
+![A screenshot of the Health Records view.](/images/com.apple.healthkit/media-3040233@2x.png)
 
 The Health Records view displays a message about adding accounts to healthcare institutions. Click Get Started. The system may ask to access your location, but you do not need to share that information in order to add the sample accounts. The system then shows the three sample accounts, and any supported healthcare institutions in your area if you shared your location.
 
-![A screenshot showing the three sample accounts.](https://docs-assets.developer.apple.com/published/06e5bce582ca5c83637a10256f894b41/media-3040231%402x.png)
+![A screenshot showing the three sample accounts.](/images/com.apple.healthkit/media-3040231@2x.png)
 
 Select the sample account you want to add, and the system displays the data available for that account. Select the data to add it to HealthKit.
 
-![A screenshot showing the sample data from the account.](https://docs-assets.developer.apple.com/published/5056589b0cee311c90f63e2aee003bf8/media-3040229%402x.png)
+![A screenshot showing the sample data from the account.](/images/com.apple.healthkit/media-3040229@2x.png)
 
 Health then displays a confirmation showing that it has added the account to HealthKit. Click the Done button to continue, and the Health Records view shows the account that you added. You can add additional accounts, as needed.
 
-![A screenshot of the Health Records data, including data from the newly added account.](https://docs-assets.developer.apple.com/published/f1246d41e755ba49917c431a8738244e/media-3040232%402x.png)
+![A screenshot of the Health Records data, including data from the newly added account.](/images/com.apple.healthkit/media-3040232@2x.png)
 
 Click on the account to view the data. You can browse all the clinical records associated with the account. This data is also available to your app while it is running on the simulator.
 
-![A screenshot of the sample data downloaded from the account.](https://docs-assets.developer.apple.com/published/90789c7dd2e3804e06205befe3b11b73/media-3040228%402x.png)
+![A screenshot of the sample data downloaded from the account.](/images/com.apple.healthkit/media-3040228@2x.png)
 
 ##### Simulate Updates
 

@@ -7,7 +7,6 @@ An error that indicates the current platform doesn’t support notification forw
 
 **Availability**:
 - iOS 26.5+
-- iPadOS 26.5+
 
 ## Declaration
 

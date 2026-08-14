@@ -20,6 +20,8 @@ OSMetaClassBase is the abstract C++ root class underlying the entire Libkern and
 
 For more information, see [`Introduction to I/O Kit Device Driver Design Guidelines`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/DeviceDrivers/Conceptual/WritingDeviceDriver/Introduction/Intro.html#//apple_ref/doc/uid/TP40002799).
 
+**Use by Kernel Extensions**
+
 Kernel Extensions should never interact directly with OSMetaClassBase, but they will find useful several macros that tie in to the run-time type information system, specifically:
 
 - OSTypeAlloc - allocation of new instances
@@ -29,9 +31,13 @@ Kernel Extensions should never interact directly with OSMetaClassBase, but they 
 
 See OSMetaClass for more run-time type information interfaces.
 
+**Use Restrictions**
+
 OSMetaClassBase should not be subclassed by kernel extensions, nor should kernel extensions call its run-time type functions directly.
 
-The run-time type functions and macros are  to call in a primary interrupt context.
+The run-time type functions and macros are **not safe** to call in a primary interrupt context.
+
+**Concurrency Protection**
 
 The run-time type macros and functions of OSMetaClassBase are thread-safe.
 

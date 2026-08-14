@@ -27,7 +27,7 @@ func requestAccess(for entityType: CNEntityType) async throws -> Bool
 
 > ❗ **Important**: You can call this method from synchronous code using a completion handler, as shown on this page, or you can call it as an asynchronous method that has the following declaration: ```swift
 func requestAccess(for entityType: CNEntityType) async throws -> Bool
-``` For information about concurrency and asynchronous code in Swift, see [`Calling Objective-C APIs Asynchronously`](https://developer.apple.com/documentation/Swift/calling-objective-c-apis-asynchronously).
+``` For information about concurrency and asynchronous code in Swift, see [`Calling Objective-C APIs Asynchronously`](https://developer.apple.com/documentation/swift/calling-objective-c-apis-asynchronously).
 
 Users grant or deny access to contact data on a per-app basis. Request access to contact data by calling the [`requestAccess(for:completionHandler:)`](cncontactstore/requestaccess(for:completionhandler:).md) method, which returns right away. The first time your app calls this method, the system prompts the user to grant or deny access to your app. The system then saves the user’s response and does not prompt them again.
 
@@ -36,7 +36,7 @@ The system executes `completionHandler` on an arbitrary queue. It is recommended
 ## Parameters
 
 - `entityType`: Set to `CNEntityTypeContacts`.
-- `completionHandler`: Set granted to [`true`](https://developer.apple.com/documentation/Swift/true) if the user allows access and error is `nil`.
+- `completionHandler`: Set granted to [`true`](https://developer.apple.com/documentation/swift/true) if the user allows access and error is `nil`.
 
 ## See Also
 

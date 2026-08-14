@@ -40,7 +40,7 @@ If the recorded session meets your needs, you can export it to a Quicktime movie
 
 In Xcode, you can specify an exported recording to use when launching your app. To select a recording, edit your project’s scheme and choose the Run phase from the left pane. Select the Options tab, then look for a row labeled ARKit with a “Replay data” checkbox next to it. Check that box, then choose Add Replay Data to Project from the popup button next to it to select the recording.
 
-![A screenshot showing Xcode’s Scheme window. On the left side, Run is selected. On the right, the Options tab is selected. Near the middle of the window is a field labeled ARKit followed by a checked checkbox that says Replay Data and a drop-down control that reads “AR Session 1.mov”.](https://docs-assets.developer.apple.com/published/d3a2ea8efe6c1a34ac3837f1e3e6f527/media-3744519%402x.png)
+![A screenshot showing Xcode’s Scheme window. On the left side, Run is selected. On the right, the Options tab is selected. Near the middle of the window is a field labeled ARKit followed by a checked checkbox that says Replay Data and a drop-down control that reads “AR Session 1.mov”.](/images/com.apple.arkit/media-3744519@2x.png)
 
 When you run your app with this option selected, it uses the recorded session instead of the device’s camera and sensors.
 

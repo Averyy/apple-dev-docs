@@ -43,7 +43,7 @@ func colorBlendMode(inputImage: CIImage, backgroundImage: CIImage) -> CIImage {
 }
 ```
 
-![The image on the top left shows a beach with multiple palm trees and a rainbow arching across the blue sky.  The image below this is a gradient image displaying a gradual color shift from purple to a dark orange. The image on the right shows the output from applying the color blend mode filter. This results in an image that is darker with color changes to the trees and the sand, and less of the rainbow visible.](https://docs-assets.developer.apple.com/published/c6d84a8ac4674865d4fede908c976df0/media-3546407%402x.png)
+![The image on the top left shows a beach with multiple palm trees and a rainbow arching across the blue sky.  The image below this is a gradient image displaying a gradual color shift from purple to a dark orange. The image on the right shows the output from applying the color blend mode filter. This results in an image that is darker with color changes to the trees and the sand, and less of the rainbow visible.](/images/com.apple.coreimage/media-3546407@2x.png)
 
 ## See Also
 

@@ -7,7 +7,7 @@ Display activity-based services to people.
 ## Topics
 
 ### User activities
-- [class NSUserActivity](../Foundation/NSUserActivity.md)
+- [class NSUserActivity](../foundation/nsuseractivity.md)
   A representation of the state of your app at a moment in time.
 - [protocol UIUserActivityRestoring](uiuseractivityrestoring.md)
   The protocol you adopt to restore an object’s state from a user activity.

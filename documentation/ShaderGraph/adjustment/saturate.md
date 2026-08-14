@@ -29,7 +29,7 @@ The `Saturate` node performs a linear interpolation between the incoming color v
 
 Below is an example of a simple node graph that uses the Saturate node to modify the saturation of an image:
 
-![None](https://docs-assets.developer.apple.com/published/53fe35cf80e429ddc0ea359e9d067a7c/SaturateGraph.png)
+![None](/images/ShaderGraph-Docs/SaturateGraph.png)
 
 Below, the resulting texture applies to a cube:
 

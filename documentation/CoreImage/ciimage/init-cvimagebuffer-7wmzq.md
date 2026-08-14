@@ -27,13 +27,13 @@ The initialized image object.
 
 The `imageBuffer` parameter must be in one of the following formats:
 
-- [`kCVPixelFormatType_32ARGB`](https://developer.apple.com/documentation/CoreVideo/kCVPixelFormatType_32ARGB)
-- [`kCVPixelFormatType_422YpCbCr8`](https://developer.apple.com/documentation/CoreVideo/kCVPixelFormatType_422YpCbCr8)
-- [`kCVPixelFormatType_32BGRA`](https://developer.apple.com/documentation/CoreVideo/kCVPixelFormatType_32BGRA)
+- [`kCVPixelFormatType_32ARGB`](https://developer.apple.com/documentation/corevideo/kcvpixelformattype_32argb)
+- [`kCVPixelFormatType_422YpCbCr8`](https://developer.apple.com/documentation/corevideo/kcvpixelformattype_422ypcbcr8)
+- [`kCVPixelFormatType_32BGRA`](https://developer.apple.com/documentation/corevideo/kcvpixelformattype_32bgra)
 
 ## Parameters
 
-- `imageBuffer`: A  `CVImageBuffer` object in a supported pixel format constant. For more information, see [`Core Video`](https://developer.apple.com/documentation/CoreVideo).
+- `imageBuffer`: A  `CVImageBuffer` object in a supported pixel format constant. For more information, see [`Core Video`](https://developer.apple.com/documentation/corevideo).
 
 ## See Also
 

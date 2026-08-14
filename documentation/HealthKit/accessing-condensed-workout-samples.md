@@ -22,13 +22,13 @@ HealthKit merges quantities within each series to save space and improve query p
 
 In the example below, several energy samples are consecutive in time, and the rates (calories per time unit) of these samples are identical. Thus, instead of storing five quantities in series, HealthKit combines all these into one. Since the rate over time is the same, coalescing doesn’t alter the results of statistics.
 
-![A diagram showing how HealthKit combines five quanties of calories into one. The first four units are ninety calories, and the last unit on the right is 180. All the units combine to total 540 calories.](https://docs-assets.developer.apple.com/published/10b63ae79050bd9142e364e33921daae/healthkit-workouts-1%402x.png)
+![A diagram showing how HealthKit combines five quanties of calories into one. The first four units are ninety calories, and the last unit on the right is 180. All the units combine to total 540 calories.](/images/com.apple.healthkit/healthkit-workouts-1@2x.png)
 
 For heart rate samples associated with first-party workouts, HealthKit coalesces quantities that have the same value and occurred close together. When coalescing, HealthKit replaces the quantities, which are instantaneous in time, with a new quantity that’s the original value and a continuous interval that spans the combined timespan.
 
 In the example below, HealthKit merges consecutive heart rate samples that have the same value and aren’t far apart. Merging instantaneous heart rate quantities results in a continuous interval. HealthKit does this to preserve statistics.
 
-![A diagram showing HealthKit merging consecutive heart rate samples that have the same value at different segments of time. The four heart rate samples, collected every five minutes, are all 80 BPM. An arrow points downward to a heart rate sample of 80 BPM.](https://docs-assets.developer.apple.com/published/b9df7b4fe61b4baa705595b7dd10c00c/healthkit-workouts-2%402x.png)
+![A diagram showing HealthKit merging consecutive heart rate samples that have the same value at different segments of time. The four heart rate samples, collected every five minutes, are all 80 BPM. An arrow points downward to a heart rate sample of 80 BPM.](/images/com.apple.healthkit/healthkit-workouts-2@2x.png)
 
 The condensing and coalescing processes preserve all the data from the original workout and reduce the overhead needed to save that data to disk. However, your app may need to perform additional steps to read the condensed and coalesced data.
 

@@ -27,7 +27,7 @@ protocol MTL4FXTemporalScaler : MTLFXTemporalScalerBase
 ### Inherits From
 - [MTLFXFrameInterpolatableScaler](mtlfxframeinterpolatablescaler.md)
 - [MTLFXTemporalScalerBase](mtlfxtemporalscalerbase.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 
 ---

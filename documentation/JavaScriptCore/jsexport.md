@@ -25,9 +25,9 @@ Implement this protocol to export your Objective-C classes and their instance me
 
 ##### Export Objective C Objects to Javascript
 
-When you create a JavaScript value from an instance of an Objective-C class, and the [`JSValue`](jsvalue.md) class doesn’t specify a copying convention, JavaScriptCore creates a JavaScript wrapper object. For certain classes, JavaScriptCore automatically copies values to the appropriate JavaScript type; for example, [`NSString`](https://developer.apple.com/documentation/Foundation/NSString) instances become JavaScript strings.
+When you create a JavaScript value from an instance of an Objective-C class, and the [`JSValue`](jsvalue.md) class doesn’t specify a copying convention, JavaScriptCore creates a JavaScript wrapper object. For certain classes, JavaScriptCore automatically copies values to the appropriate JavaScript type; for example, [`NSString`](https://developer.apple.com/documentation/foundation/nsstring) instances become JavaScript strings.
 
-JavaScript supports inheritance using a chain of prototype objects. For each Objective-C class you export, JavaScriptCore creates a prototype within the enclosing JavaScript context (a [`JSContext`](jscontext.md) object). For the [`NSObject`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class) class, the prototype object is the JavaScript context’s `Object` prototype. For all other Objective-C classes, JavaScriptCore creates a prototype object with an internal `[Prototype]` property that points to the prototype property it creates for the Objective-C class’s superclass. As such, the prototype chain for a JavaScript wrapper object reflects the wrapped Objective-C type’s inheritance hierarchy.
+JavaScript supports inheritance using a chain of prototype objects. For each Objective-C class you export, JavaScriptCore creates a prototype within the enclosing JavaScript context (a [`JSContext`](jscontext.md) object). For the [`NSObject`](https://developer.apple.com/documentation/objectivec/nsobject-swift.class) class, the prototype object is the JavaScript context’s `Object` prototype. For all other Objective-C classes, JavaScriptCore creates a prototype object with an internal `[Prototype]` property that points to the prototype property it creates for the Objective-C class’s superclass. As such, the prototype chain for a JavaScript wrapper object reflects the wrapped Objective-C type’s inheritance hierarchy.
 
 In addition to the prototype object, JavaScriptCore produces a JavaScript constructor object for each Objective-C class.
 
@@ -76,7 +76,7 @@ The attributes of an Objective-C `@property` declaration determine the attribute
 
 Wrapped Objective-C properties, parameters, and return values convert according to the copying convention that the [`JSValue`](jsvalue.md) class specifies for their types. See [`JSValue`](jsvalue.md) for the complete list of copying conventions.
 
-> **Note**:  If a class declares conformance to the [`JSExport`](jsexport.md) protocol, JavaScriptCore ignores its normal copying conventions for built-in types. For example, if you define a custom [`NSString`](https://developer.apple.com/documentation/Foundation/NSString) subclass that conforms to the [`JSExport`](jsexport.md) protocol and pass an instance of that class to the `valueWithObject:` method, the result is a JavaScript wrapper object for the custom class, not a JavaScript string primitive.
+> **Note**:  If a class declares conformance to the [`JSExport`](jsexport.md) protocol, JavaScriptCore ignores its normal copying conventions for built-in types. For example, if you define a custom [`NSString`](https://developer.apple.com/documentation/foundation/nsstring) subclass that conforms to the [`JSExport`](jsexport.md) protocol and pass an instance of that class to the `valueWithObject:` method, the result is a JavaScript wrapper object for the custom class, not a JavaScript string primitive.
 
 ##### Customize Export of Objective C Selectors
 

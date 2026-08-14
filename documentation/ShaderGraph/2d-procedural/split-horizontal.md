@@ -26,11 +26,11 @@ A left-to-right split matte, split at a specified U value.
 
 This node creates two distinct regions along the horizontal axis. The value of the `Center` input determines these regions. A value of `0` establishes the center at the left-most position, causing the output to always be equal to the `Right` input. A value of `1` establishes the center at the right-most position. Below is a an example of a simple node graph that uses `Split Horizontal` to create a split color:
 
-![None](https://docs-assets.developer.apple.com/published/459511dd7149b3269154ec05b39ee336/SplitHorizontalGraph.png)
+![None](/images/ShaderGraph-Docs/SplitHorizontalGraph.png)
 
 By editing the center value, you change the texture to show a larger left or right region. The image below shows the resulting textures:
 
-![None](https://docs-assets.developer.apple.com/published/5920a6f7e93c7bce9bd9992da86620cb/SplitHorizontalMaterial1.png)
+![None](/images/ShaderGraph-Docs/SplitHorizontalMaterial1.png)
 
 ## See Also
 

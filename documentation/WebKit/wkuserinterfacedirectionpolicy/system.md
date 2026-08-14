@@ -16,7 +16,7 @@ case system
 
 #### Discussion
 
-The web view adheres to the direction in its [`userInterfaceLayoutDirection`](https://developer.apple.com/documentation/AppKit/NSView/userInterfaceLayoutDirection) property.
+The web view adheres to the direction in its [`userInterfaceLayoutDirection`](https://developer.apple.com/documentation/appkit/nsview/userinterfacelayoutdirection) property.
 
 ## See Also
 

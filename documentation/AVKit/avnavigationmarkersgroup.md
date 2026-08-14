@@ -20,7 +20,7 @@ class AVNavigationMarkersGroup
 
 #### Overview
 
-The most common form of a navigation markers group is a chapter list; however, you can also provide other sets of markers to allow a user to jump to significant events in the presentation. For example, a “Goals Scored” markers group might summarize key moments in a recorded sporting event. When you associate navigation markers with an [`AVPlayerItem`](https://developer.apple.com/documentation/AVFoundation/AVPlayerItem) object you present with an [`AVPlayerViewController`](avplayerviewcontroller.md), the user interface provides options for navigating each group.
+The most common form of a navigation markers group is a chapter list; however, you can also provide other sets of markers to allow a user to jump to significant events in the presentation. For example, a “Goals Scored” markers group might summarize key moments in a recorded sporting event. When you associate navigation markers with an [`AVPlayerItem`](https://developer.apple.com/documentation/avfoundation/avplayeritem) object you present with an [`AVPlayerViewController`](avplayerviewcontroller.md), the user interface provides options for navigating each group.
 
 ## Topics
 
@@ -40,14 +40,14 @@ The most common form of a navigation markers group is a chapter list; however, y
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

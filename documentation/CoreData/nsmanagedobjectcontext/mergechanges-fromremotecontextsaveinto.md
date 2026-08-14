@@ -26,7 +26,7 @@ class func mergeChanges(fromRemoteContextSave changeNotificationData: [AnyHashab
 
 #### Discussion
 
-This method more efficiently merges changes into multiple contexts as well as nested contexts. The dictionary keys should be one or more from an [`NSManagedObjectContextObjectsDidChange`](https://developer.apple.com/documentation/Foundation/NSNotification/Name-swift.struct/NSManagedObjectContextObjectsDidChange):  [`NSInsertedObjectsKey`](nsinsertedobjectskey.md), [`NSUpdatedObjectsKey`](nsupdatedobjectskey.md), [`NSDeletedObjectsKey`](nsdeletedobjectskey.md). The values should be an [`NSArray`](https://developer.apple.com/documentation/Foundation/NSArray) of either [`NSManagedObjectID`](nsmanagedobjectid.md) or [`NSURL`](https://developer.apple.com/documentation/Foundation/NSURL) objects conforming to valid results from [`uriRepresentation()`](nsmanagedobjectid/urirepresentation().md).
+This method more efficiently merges changes into multiple contexts as well as nested contexts. The dictionary keys should be one or more from an [`NSManagedObjectContextObjectsDidChange`](https://developer.apple.com/documentation/foundation/nsnotification/name-swift.struct/nsmanagedobjectcontextobjectsdidchange):  [`NSInsertedObjectsKey`](nsinsertedobjectskey.md), [`NSUpdatedObjectsKey`](nsupdatedobjectskey.md), [`NSDeletedObjectsKey`](nsdeletedobjectskey.md). The values should be an [`NSArray`](https://developer.apple.com/documentation/foundation/nsarray) of either [`NSManagedObjectID`](nsmanagedobjectid.md) or [`NSURL`](https://developer.apple.com/documentation/foundation/nsurl) objects conforming to valid results from [`uriRepresentation()`](nsmanagedobjectid/urirepresentation().md).
 
 ## See Also
 

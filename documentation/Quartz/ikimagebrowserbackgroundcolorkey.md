@@ -16,7 +16,7 @@ let IKImageBrowserBackgroundColorKey: String
 
 #### Discussion
 
-The associated value is an [`NSColor`](https://developer.apple.com/documentation/AppKit/NSColor) object.
+The associated value is an [`NSColor`](https://developer.apple.com/documentation/appkit/nscolor) object.
 
 ## See Also
 

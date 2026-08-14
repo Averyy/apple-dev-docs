@@ -26,7 +26,7 @@ class AVPictureInPictureController
 
 #### Overview
 
-To use Picture in Picture, you need to configure your app to support background audio playback. See [`Configuring your app for media playback`](https://developer.apple.com/documentation/AVFoundation/configuring-your-app-for-media-playback) for more details.
+To use Picture in Picture, you need to configure your app to support background audio playback. See [`Configuring your app for media playback`](https://developer.apple.com/documentation/avfoundation/configuring-your-app-for-media-playback) for more details.
 
 Before presenting a user interface to start Picture in Picture, call the [`isPictureInPictureSupported()`](avpictureinpicturecontroller/ispictureinpicturesupported().md) method to determine if the current device supports the feature, and check the [`isPictureInPicturePossible`](avpictureinpicturecontroller/ispictureinpicturepossible.md) property value to determine whether PiP is possible in the current context.
 
@@ -88,14 +88,14 @@ Before presenting a user interface to start Picture in Picture, call the [`isPic
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

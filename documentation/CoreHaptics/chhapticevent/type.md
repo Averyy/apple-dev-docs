@@ -23,7 +23,7 @@ var type: CHHapticEvent.EventType { get }
 
 An audio event can be one of two types: [`audioCustom`](chhapticevent/eventtype/audiocustom.md) or [`audioContinuous`](chhapticevent/eventtype/audiocontinuous.md). Haptic events can be [`hapticTransient`](chhapticevent/eventtype/haptictransient.md) or [`hapticContinuous`](chhapticevent/eventtype/hapticcontinuous.md):
 
-![A chart comparing a transient haptic pattern on the left with a continuous haptic pattern on the right. Transient patterns are instantaneous impulses with almost zero duration, while continuous patterns have a nonzero duration.](https://docs-assets.developer.apple.com/published/26521ebb801409e9176c2d0cbbea7561/media-3197270%402x.png)
+![A chart comparing a transient haptic pattern on the left with a continuous haptic pattern on the right. Transient patterns are instantaneous impulses with almost zero duration, while continuous patterns have a nonzero duration.](/images/com.apple.corehaptics/media-3197270@2x.png)
 
 A transient event lasts a split-second and registers as a tap or impulse, whereas a continuous event feels like an extended buzz of longer duration.
 

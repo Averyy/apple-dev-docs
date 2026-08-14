@@ -22,7 +22,7 @@ func CTFontGetBoundingRectsForGlyphs(_ font: CTFont, _ orientation: CTFontOrient
 
 #### Return Value
 
-The overall bounding rectangle for an array or run of glyphs. Returns [`CGRectNull`](https://developer.apple.com/documentation/CoreGraphics/CGRectNull) on error.
+The overall bounding rectangle for an array or run of glyphs. Returns [`CGRectNull`](https://developer.apple.com/documentation/coregraphics/cgrectnull) on error.
 
 #### Discussion
 
@@ -33,7 +33,7 @@ The bounding rectangles of the individual glyphs are returned through the `bound
 - `font`: The font reference.
 - `orientation`: The intended drawing orientation of the glyphs. Used to determined which glyph metrics to return.
 - `glyphs`: An array of `count` number of glyphs.
-- `boundingRects`: On output, the computed glyph rectangles in an array of `count` number of [`CGRect`](https://developer.apple.com/documentation/CoreFoundation/CGRect) objects. If `NULL`, only the overall bounding rectangle is calculated.
+- `boundingRects`: On output, the computed glyph rectangles in an array of `count` number of [`CGRect`](https://developer.apple.com/documentation/corefoundation/cgrect) objects. If `NULL`, only the overall bounding rectangle is calculated.
 - `count`: The capacity of the `glyphs` and `boundingRects` buffers.
 
 ## See Also

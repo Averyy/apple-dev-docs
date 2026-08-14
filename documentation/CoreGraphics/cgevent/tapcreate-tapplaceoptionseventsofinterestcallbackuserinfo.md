@@ -28,8 +28,8 @@ Event taps receive key up and key down events if one of the following conditions
 
 After creating an event tap, you can add it to a run loop as follows:
 
-1. Pass the event tap to the [`CFMachPortCreateRunLoopSource(_:_:_:)`](https://developer.apple.com/documentation/CoreFoundation/CFMachPortCreateRunLoopSource(_:_:_:)) function to create a run loop event source.
-2. Call the [`CFRunLoopAddSource(_:_:_:)`](https://developer.apple.com/documentation/CoreFoundation/CFRunLoopAddSource(_:_:_:)) function to add the source to the appropriate run loop.
+1. Pass the event tap to the [`CFMachPortCreateRunLoopSource(_:_:_:)`](https://developer.apple.com/documentation/corefoundation/cfmachportcreaterunloopsource(_:_:_:)) function to create a run loop event source.
+2. Call the [`CFRunLoopAddSource(_:_:_:)`](https://developer.apple.com/documentation/corefoundation/cfrunloopaddsource(_:_:_:)) function to add the source to the appropriate run loop.
 
 ## Parameters
 

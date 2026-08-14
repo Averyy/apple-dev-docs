@@ -26,14 +26,14 @@ An initialized `NSString` object containing `length` bytes from `bytes` interpre
 
 #### Discussion
 
-If an error occurs during the creation of the string, then `bytes` isn’t freed even if `flag` is [`true`](https://developer.apple.com/documentation/Swift/true). In this case, the caller is responsible for freeing the buffer. This allows the caller to continue trying to create a string with the buffer, without having the buffer deallocated.
+If an error occurs during the creation of the string, then `bytes` isn’t freed even if `flag` is [`true`](https://developer.apple.com/documentation/swift/true). In this case, the caller is responsible for freeing the buffer. This allows the caller to continue trying to create a string with the buffer, without having the buffer deallocated.
 
 ## Parameters
 
 - `bytes`: A buffer of bytes interpreted in the encoding specified by `encoding`.
 - `len`: The number of bytes to use from `bytes`.
 - `encoding`: The character encoding of `bytes`. For possible values, see [`NSStringEncoding`](nsstringencoding.md).
-- `freeBuffer`: If [`true`](https://developer.apple.com/documentation/Swift/true), the receiver releases the memory with `free()` when it no longer needs the data; if [`false`](https://developer.apple.com/documentation/Swift/false) it won’t.
+- `freeBuffer`: If [`true`](https://developer.apple.com/documentation/swift/true), the receiver releases the memory with `free()` when it no longer needs the data; if [`false`](https://developer.apple.com/documentation/swift/false) it won’t.
 
 ## See Also
 

@@ -21,8 +21,8 @@ protocol RangeComparableProperty : _IntentValue, Comparable
 ## Relationships
 
 ### Inherits From
-- [Comparable](../Swift/Comparable.md)
-- [Equatable](../Swift/Equatable.md)
+- [Comparable](../swift/comparable.md)
+- [Equatable](../swift/equatable.md)
 
 ## See Also
 

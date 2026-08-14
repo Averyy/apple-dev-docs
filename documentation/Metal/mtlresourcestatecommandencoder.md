@@ -53,7 +53,7 @@ Your app does not define classes that implement this protocol. To create an [`MT
 
 ### Inherits From
 - [MTLCommandEncoder](mtlcommandencoder.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

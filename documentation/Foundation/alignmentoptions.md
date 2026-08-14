@@ -17,7 +17,7 @@ struct AlignmentOptions
 
 #### Overview
 
-These constants are used by the [`NSIntegralRectWithOptions(_:_:)`](nsintegralrectwithoptions(_:_:).md) function and other related methods, such as [`backingAlignedRect(_:options:)`](https://developer.apple.com/documentation/AppKit/NSView/backingAlignedRect(_:options:)).
+These constants are used by the [`NSIntegralRectWithOptions(_:_:)`](nsintegralrectwithoptions(_:_:).md) function and other related methods, such as [`backingAlignedRect(_:options:)`](https://developer.apple.com/documentation/appkit/nsview/backingalignedrect(_:options:)).
 
 ## Topics
 
@@ -72,14 +72,14 @@ These constants are used by the [`NSIntegralRectWithOptions(_:_:)`](nsintegralre
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../Swift/BitwiseCopyable.md)
-- [Equatable](../Swift/Equatable.md)
-- [ExpressibleByArrayLiteral](../Swift/ExpressibleByArrayLiteral.md)
-- [OptionSet](../Swift/OptionSet.md)
-- [RawRepresentable](../Swift/RawRepresentable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
-- [SetAlgebra](../Swift/SetAlgebra.md)
+- [BitwiseCopyable](../swift/bitwisecopyable.md)
+- [Equatable](../swift/equatable.md)
+- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
+- [OptionSet](../swift/optionset.md)
+- [RawRepresentable](../swift/rawrepresentable.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
+- [SetAlgebra](../swift/setalgebra.md)
 
 ## See Also
 

@@ -38,7 +38,7 @@ This sequence eagerly stores the results of preprocessing a temporal estimator.
 ## Relationships
 
 ### Conforms To
-- [AsyncSequence](../Swift/AsyncSequence.md)
+- [AsyncSequence](../swift/asyncsequence.md)
 - [TemporalSequence](temporalsequence.md)
 
 ## See Also

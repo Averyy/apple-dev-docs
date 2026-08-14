@@ -69,7 +69,7 @@ protocol DataStore : AnyObject
   An interface that enables a custom data store to support batch requests.
 - [protocol HistoryProviding](historyproviding.md)
   An interface that enables a custom data store to provide the history of changes for its persisted models.
-- [Building a document-based app using SwiftData](../SwiftUI/Building-a-document-based-app-using-SwiftData.md)
+- [Building a document-based app using SwiftData](../swiftui/building-a-document-based-app-using-swiftdata.md)
   Code along with the WWDC presenter to transform an app with SwiftData.
 - [struct ModelDocument](modeldocument.md)
   A document type that uses SwiftData to manage its storage.

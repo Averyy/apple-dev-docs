@@ -12,7 +12,7 @@ To adopt this method of risk assessment, set the `ENAPIVersion` key to the integ
 
 The following diagram illustrates the data structure and formula used to calculate the Exposure Risk Value.
 
-![A diagram that shows how the Exposure Risk Value is calculated.](https://docs-assets.developer.apple.com/published/f0dc0bbf69a650930047281f99a54461/media-3667011%402x.png)
+![A diagram that shows how the Exposure Risk Value is calculated.](/images/com.apple.exposurenotification/media-3667011@2x.png)
 
 The following parameters are used to calculate a risk for each exposure incident:
 
@@ -32,7 +32,7 @@ Level values are in the range of 0-8. While the formula’s range can be up to 4
 
 The following diagram illustrates an example of an Exposure Risk Value calculated for a person who was exposed to another person who was diagnosed positive.
 
-![A diagram showing an example of calculating the risk score.](https://docs-assets.developer.apple.com/published/7e039cc5b66b62addecb0b41471bcf6d/media-3667010%402x.png)
+![A diagram showing an example of calculating the risk score.](/images/com.apple.exposurenotification/media-3667010@2x.png)
 
 For this example, the other user reported a positive diagnosis, the encounter between the two devices lasted 14 minutes, it happened 4 days ago, and the signal strength attenuation between their phones had a weighted average of 68. The `totalRiskScore` is limited and set to 255.
 

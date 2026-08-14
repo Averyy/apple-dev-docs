@@ -26,7 +26,7 @@ Use transposed convolution to upsample a tensor by performing an operation thatâ
 
 The following figure illustrates the process of transposed convolution. The operation multiplies each element in the input by the kernel to produce the corresponding values in the output. The final output, pictured at the bottom of the figure, is the sum of the products:
 
-![Figure that describes a transposed convolution operation over a two times two source matrix using a three times three kernel. Each step is illustrated as a row, showing scalar multiplication of the source element multiplied by the kernel, and the transposed convolution result is the sum of each scalar multiplication.](https://docs-assets.developer.apple.com/published/f459e35c9259780d5d26b6db74ac9c0b/media-3633105%402x.png)
+![Figure that describes a transposed convolution operation over a two times two source matrix using a three times three kernel. Each step is illustrated as a row, showing scalar multiplication of the source element multiplied by the kernel, and the transposed convolution result is the sum of each scalar multiplication.](/images/com.apple.accelerate/media-3633105@2x.png)
 
 Use the following code to perform the illustrated transposed convolution:
 

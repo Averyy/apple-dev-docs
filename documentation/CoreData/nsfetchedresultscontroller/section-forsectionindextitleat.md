@@ -26,7 +26,7 @@ The section number for the given section title and index in the section index
 
 #### Discussion
 
-You would typically call this method when executing `UITableViewDataSource`’s [`tableView(_:sectionForSectionIndexTitle:at:)`](https://developer.apple.com/documentation/UIKit/UITableViewDataSource/tableView(_:sectionForSectionIndexTitle:at:)) method.
+You would typically call this method when executing `UITableViewDataSource`’s [`tableView(_:sectionForSectionIndexTitle:at:)`](https://developer.apple.com/documentation/uikit/uitableviewdatasource/tableview(_:sectionforsectionindextitle:at:)) method.
 
 ## Parameters
 

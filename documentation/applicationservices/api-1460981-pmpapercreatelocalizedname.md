@@ -30,7 +30,7 @@ In macOS 10.5 and later, Apple recommends using this function instead of [`PMPap
 
 - `paper`: The paper whose localized name you want to obtain.
 - `printer`: The printer for which the localization should be performed.
-- `paperName`: A pointer to your   variable. On return, the variable refers to a Core Foundation string that contains the localized name of the paper. This name is appropriate to display in the user interface. If an error occurs, the variable is set to  . You are responsible for releasing the string.
+- `paperName`: A pointer to your [`CFString`](https://developer.apple.com/documentation/corefoundation/cfstring) variable. On return, the variable refers to a Core Foundation string that contains the localized name of the paper. This name is appropriate to display in the user interface. If an error occurs, the variable is set to `NULL`. You are responsible for releasing the string.
 
 ## See Also
 

@@ -21,7 +21,7 @@ static let GCControllerDidStopBeingCurrent: NSNotification.Name
 
 #### Discussion
 
-The notification object is the [`GCController`](https://developer.apple.com/documentation/GameController/GCController) object that’s no longer current.
+The notification object is the [`GCController`](https://developer.apple.com/documentation/gamecontroller/gccontroller) object that’s no longer current.
 
 The system posts this notification on the main actor.
 

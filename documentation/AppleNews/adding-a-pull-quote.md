@@ -13,7 +13,7 @@ You can use pull quotes to highlight particularly compelling and relevant points
 - Add a pull quote to your article.
 - Use style and layout objects to customize a pull quote, including adding hanging punctuation.
 
-![Screenshot of an Apple News article with a pull quote on iPad. The pull quote is aligned with the text body and has a contrasting text style. Underneath the pull quote is a line of attribution text.](https://docs-assets.developer.apple.com/published/3fef2b97e34d4fd5f9dd2d1d4ed5d658/media-3624929%402x.png)
+![Screenshot of an Apple News article with a pull quote on iPad. The pull quote is aligned with the text body and has a contrasting text style. Underneath the pull quote is a line of attribution text.](/images/com.apple.applenews/media-3624929@2x.png)
 
 > 💡 **Tip**:  This example uses curly quotes. If you ever want to use straight quotes instead, make sure you “escape” the straight quotes using a backslash (`\`).
 

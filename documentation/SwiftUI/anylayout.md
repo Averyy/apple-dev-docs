@@ -54,8 +54,8 @@ The types that you use with `AnyLayout` must conform to the [`Layout`](layout.md
 ### Conforms To
 - [Animatable](animatable.md)
 - [Layout](layout.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

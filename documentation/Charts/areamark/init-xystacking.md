@@ -36,7 +36,7 @@ Chart(cheeseburgerCost) { cost in
 
 The resulting chart automatically scales and labels the axes based on the data, and fills the area under the data points with a default color:
 
-![A chart that shows the years 1960 to 2020 on the x-axis and a number in the range of 0 to 1.5 on the y-axis. An irregular, monotonically increasing, piecewise linear curve starts near the lower left and continues toward the upper right. The area under the curve is filled in with a blue color.](https://docs-assets.developer.apple.com/published/36b91667605910cb6256e819437543de/AreaMark-1-macOS%402x.png)
+![A chart that shows the years 1960 to 2020 on the x-axis and a number in the range of 0 to 1.5 on the y-axis. An irregular, monotonically increasing, piecewise linear curve starts near the lower left and continues toward the upper right. The area under the curve is filled in with a blue color.](/images/com.apple.Charts/AreaMark-1-macOS@2x.png)
 
 ## Parameters
 

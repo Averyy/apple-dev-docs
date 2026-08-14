@@ -33,23 +33,23 @@ A navigation controller is a container view controller that manages one or more 
 
 Use a navigation interface to mimic the organization of hierarchical data managed by your app. At each level of the hierarchy, you provide an appropriate screen (managed by a custom view controller) to display the content at that level. The following image shows an example of the navigation interface presented by the Settings application in a simulated iOS device. The first screen presents the user with the list of groups that organize preferences. Selecting a group reveals individual settings and groups of settings for that application. For all but the root view, the navigation controller provides a back button to allow the user to move back up the hierarchy.
 
-![A sample navigation interface](https://docs-assets.developer.apple.com/published/ec22a982d6cb1673c1190305d79cb382/media-1965789%402x.png)
+![A sample navigation interface](/images/com.apple.uikit/media-1965789@2x.png)
 
 A navigation controller object manages the view controllers it contains using an ordered array, known as the *navigation stack*. The first view controller in the array is the root view controller and represents the bottom of the stack. The last view controller in the array is the topmost item on the stack, and represents the view controller that the system is currently displaying. You add and remove view controllers from the stack using segues or using the methods of this class. The user can also remove the topmost view controller using the back button in the navigation bar or using a swipe gesture.
 
-The navigation controller manages the navigation bar at the top of the interface and an optional toolbar at the bottom of the interface. The navigation bar is always present and is managed by the navigation controller itself, which updates the navigation bar using the content provided by its contained view controllers. When the [`isToolbarHidden`](uinavigationcontroller/istoolbarhidden.md) property is [`false`](https://developer.apple.com/documentation/Swift/false), the navigation controller similarly updates the toolbar with contents provided by the topmost view controller.
+The navigation controller manages the navigation bar at the top of the interface and an optional toolbar at the bottom of the interface. The navigation bar is always present and is managed by the navigation controller itself, which updates the navigation bar using the content provided by its contained view controllers. When the [`isToolbarHidden`](uinavigationcontroller/istoolbarhidden.md) property is [`false`](https://developer.apple.com/documentation/swift/false), the navigation controller similarly updates the toolbar with contents provided by the topmost view controller.
 
 A navigation controller coordinates its behavior with its [`delegate`](uinavigationcontroller/delegate.md) object. The delegate object can override the pushing or popping of view controllers, provide custom animation transitions, and specify the preferred orientation for the navigation interface. The delegate object you provide must conform to the [`UINavigationControllerDelegate`](uinavigationcontrollerdelegate.md) protocol.
 
 The following image shows the relationships between the navigation controller and the objects it manages. Use the specified properties of the navigation controller to access these objects.
 
-![Diagram of objects managed by the navigation controller.](https://docs-assets.developer.apple.com/published/743ee76b71b9c1cc86c8e691d6bb17b7/media-1965791.jpg)
+![Diagram of objects managed by the navigation controller.](/images/com.apple.uikit/media-1965791.jpg)
 
 ##### Navigation Controller Views
 
 A navigation controller is a container view controller — that is, it embeds the content of other view controllers inside of itself. You access a navigation controller’s view from its [`view`](uiviewcontroller/view.md) property. This view incorporates the navigation bar, an optional toolbar, and the content view corresponding to the topmost view controller. The following image shows how these views assemble to present the overall navigation interface. In this figure, the navigation interface is further embedded inside a tab bar interface. Although the content of the navigation bar and toolbar views changes, the views themselves don’t. The only view that actually changes is the custom content view provided by the topmost view controller on the navigation stack.
 
-![The views of a navigation controller](https://docs-assets.developer.apple.com/published/aaa68d2967e5dacf95bed1c774852347/media-1965793%402x.png)
+![The views of a navigation controller](/images/com.apple.uikit/media-1965793@2x.png)
 
 > **Note**:  Because the content view underlaps the navigation bar, consider that space when designing your view controller content.
 
@@ -205,17 +205,17 @@ For more information about how state preservation and restoration works, see [`P
 - [UIImagePickerController](uiimagepickercontroller.md)
 - [UIVideoEditorController](uivideoeditorcontroller.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCoding](../Foundation/NSCoding.md)
-- [NSExtensionRequestHandling](../Foundation/NSExtensionRequestHandling.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [NSTouchBarProvider](../AppKit/NSTouchBarProvider.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCoding](../foundation/nscoding.md)
+- [NSExtensionRequestHandling](../foundation/nsextensionrequesthandling.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSTouchBarProvider](../appkit/nstouchbarprovider.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 - [UIActivityItemsConfigurationProviding](uiactivityitemsconfigurationproviding.md)
 - [UIAppearanceContainer](uiappearancecontainer.md)
 - [UIContentContainer](uicontentcontainer.md)

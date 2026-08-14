@@ -21,7 +21,7 @@ A class that defines configuration options for use in NetworkExtension app exten
 
 #### Overview
 
-This class conforms to `NEAppExtensionConfigurationProtocol` and [`AppExtensionConfiguration`](https://developer.apple.com/documentation/ExtensionFoundation/AppExtensionConfiguration) from the [`ExtensionFoundation`](https://developer.apple.com/documentation/ExtensionFoundation) framework. It exists only for use by the framework; you don’t need to use its methods and properties directly.
+This class conforms to `NEAppExtensionConfigurationProtocol` and [`AppExtensionConfiguration`](https://developer.apple.com/documentation/extensionfoundation/appextensionconfiguration) from the [`ExtensionFoundation`](https://developer.apple.com/documentation/extensionfoundation) framework. It exists only for use by the framework; you don’t need to use its methods and properties directly.
 
 ## Topics
 
@@ -36,9 +36,9 @@ This class conforms to `NEAppExtensionConfigurationProtocol` and [`AppExtensionC
 - [NEHotspotEvaluationProviderConfiguration](nehotspotevaluationproviderconfiguration.md)
 - [NEURLFilterControlProviderConfiguration](neurlfiltercontrolproviderconfiguration.md)
 ### Conforms To
-- [AppExtensionConfiguration](../ExtensionFoundation/AppExtensionConfiguration.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [AppExtensionConfiguration](../extensionfoundation/appextensionconfiguration.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 
 ---

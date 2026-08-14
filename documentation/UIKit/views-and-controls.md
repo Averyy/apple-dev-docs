@@ -8,7 +8,7 @@ Present your content onscreen and define the interactions allowed with that cont
 
 Views and controls are the visual building blocks of your app’s user interface. Use them to draw and organize your app’s content onscreen.
 
-![A screenshot of a new event view in the Calendar app, that highlights a label, switch, and date picker.](https://docs-assets.developer.apple.com/published/ce55d50709eeb09e277fb030c4ec89f7/views-and-controls-1%402x.png)
+![A screenshot of a new event view in the Calendar app, that highlights a label, switch, and date picker.](/images/com.apple.uikit/views-and-controls-1@2x.png)
 
 Views can host other views. Embedding one view inside another creates a containment relationship between the host view (known as the *superview*) and the embedded view (known as the *subview*). View hierarchies make it easier to manage views.
 
@@ -32,7 +32,7 @@ For additional information about how to use views and controls, see [`Human Inte
 - [UIKit Catalog: Creating and customizing views and controls](uikit-catalog-creating-and-customizing-views-and-controls.md)
   Customize your app’s user interface with views and controls.
 ### Container views
-- [Autosizing views for localization in iOS](../Xcode/autosizing-views-for-localization-in-ios.md)
+- [Autosizing views for localization in iOS](../xcode/autosizing-views-for-localization-in-ios.md)
   Add auto layout constraints to your app to achieve localizable views.
 - [Collection views](collection-views.md)
   Display nested views using a configurable and highly customizable layout.
@@ -139,7 +139,7 @@ For additional information about how to use views and controls, see [`Human Inte
   An overlay view that verifies user interaction for Web AdAttributionKit.
 - [class UIEventAttribution](uieventattribution.md)
   An object that contains event attribution information for Web AdAttributionKit.
-- [NSAdvertisingAttributionReportEndpoint](../BundleResources/Information-Property-List/NSAdvertisingAttributionReportEndpoint.md)
+- [NSAdvertisingAttributionReportEndpoint](../bundleresources/information-property-list/nsadvertisingattributionreportendpoint.md)
   The URL where Private Click Measurement and SKAdNetwork send attribution information.
 ### SwiftUI
 - [Using SwiftUI with UIKit](using-swiftui-with-uikit.md)

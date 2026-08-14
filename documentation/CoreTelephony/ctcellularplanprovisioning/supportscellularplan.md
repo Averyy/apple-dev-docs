@@ -18,17 +18,17 @@ func supportsCellularPlan() -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/Swift/true) if all requirements are met; otherwise [`false`](https://developer.apple.com/documentation/Swift/false).
+[`true`](https://developer.apple.com/documentation/swift/true) if all requirements are met; otherwise [`false`](https://developer.apple.com/documentation/swift/false).
 
 #### Discussion
 
-This method returns [`true`](https://developer.apple.com/documentation/Swift/true) when all of the following conditions are met:
+This method returns [`true`](https://developer.apple.com/documentation/swift/true) when all of the following conditions are met:
 
 - The device supports eSIM installation.
 - The activation policy allows eSIM installation.
-- Your app includes the [`com.apple.CommCenter.fine-grained`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.CommCenter.fine-grained) entitlement with `public-cellular-plan` in its array of values.
+- Your app includes the [`com.apple.CommCenter.fine-grained`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.commcenter.fine-grained) entitlement with `public-cellular-plan` in its array of values.
 
-You can use this method to verify that your entitlement is properly configured. If you expect the device to support cellular plans but it returns [`false`](https://developer.apple.com/documentation/Swift/false), check that you’ve added the required entitlement to your app and that its value array includes `public-cellular-plan`.
+You can use this method to verify that your entitlement is properly configured. If you expect the device to support cellular plans but it returns [`false`](https://developer.apple.com/documentation/swift/false), check that you’ve added the required entitlement to your app and that its value array includes `public-cellular-plan`.
 
 This method doesn’t check whether you have installed an eSIM. You can call this method at any time.
 

@@ -16,7 +16,7 @@ optional func customVirtioDeviceSaveState(forRestore device: VZCustomVirtioDevic
 
 #### Discussion
 
-Return the state data to save in an [`NSData`](https://developer.apple.com/documentation/Foundation/NSData) object. If there is no state to save, return an empty NSData object ([NSData data]).
+Return the state data to save in an [`NSData`](https://developer.apple.com/documentation/foundation/nsdata) object. If there is no state to save, return an empty NSData object ([NSData data]).
 
 If you return `nil` from this method, the save operation fails.
 

@@ -36,15 +36,15 @@ For information about implementing a file presenter object to receive file-relat
 
 ##### File Presenters and Ios
 
-If your app or extension enters the background with an active file presenter, it may be terminated by the system in order to prevent deadlock on that file. To prevent this situation, call [`removeFilePresenter(_:)`](nsfilecoordinator/removefilepresenter(_:).md) to remove the file presenter in the [`applicationDidEnterBackground(_:)`](https://developer.apple.com/documentation/UIKit/UIApplicationDelegate/applicationDidEnterBackground(_:)) method or in response to a [`didEnterBackgroundNotification`](https://developer.apple.com/documentation/UIKit/UIApplication/didEnterBackgroundNotification) notification. Call [`addFilePresenter(_:)`](nsfilecoordinator/addfilepresenter(_:).md) to add the file presenter again in the [`applicationWillEnterForeground(_:)`](https://developer.apple.com/documentation/UIKit/UIApplicationDelegate/applicationWillEnterForeground(_:)) method or in response to a [`willEnterForegroundNotification`](https://developer.apple.com/documentation/UIKit/UIApplication/willEnterForegroundNotification) notification.
+If your app or extension enters the background with an active file presenter, it may be terminated by the system in order to prevent deadlock on that file. To prevent this situation, call [`removeFilePresenter(_:)`](nsfilecoordinator/removefilepresenter(_:).md) to remove the file presenter in the [`applicationDidEnterBackground(_:)`](https://developer.apple.com/documentation/uikit/uiapplicationdelegate/applicationdidenterbackground(_:)) method or in response to a [`didEnterBackgroundNotification`](https://developer.apple.com/documentation/uikit/uiapplication/didenterbackgroundnotification) notification. Call [`addFilePresenter(_:)`](nsfilecoordinator/addfilepresenter(_:).md) to add the file presenter again in the [`applicationWillEnterForeground(_:)`](https://developer.apple.com/documentation/uikit/uiapplicationdelegate/applicationwillenterforeground(_:)) method or in response to a [`willEnterForegroundNotification`](https://developer.apple.com/documentation/uikit/uiapplication/willenterforegroundnotification) notification.
 
-> **Note**:  The [`UIDocument`](https://developer.apple.com/documentation/UIKit/UIDocument) class automatically removes itself when your app goes to the background. It automatically adds itself again when your app returns to the foreground.
+> **Note**:  The [`UIDocument`](https://developer.apple.com/documentation/uikit/uidocument) class automatically removes itself when your app goes to the background. It automatically adds itself again when your app returns to the foreground.
 
 ##### File Coordinators and Ios
 
-A coordinated read or write will automatically begin a background task when granted, similar to one created with the [`beginBackgroundTask(expirationHandler:)`](https://developer.apple.com/documentation/UIKit/UIApplication/beginBackgroundTask(expirationHandler:)) method. This helps ensure that your app or extension has sufficient time to finish the read or write operation if it’s suspended, without creating a deadlock on access to that file by other processes. If a process is suspended while waiting for a coordinated read or write to be granted, the request is canceled, and an `NSError` object with the code [`NSUserCancelledError`](nsusercancellederror-swift.var.md) is produced. If the background task expires, the process is terminated.
+A coordinated read or write will automatically begin a background task when granted, similar to one created with the [`beginBackgroundTask(expirationHandler:)`](https://developer.apple.com/documentation/uikit/uiapplication/beginbackgroundtask(expirationhandler:)) method. This helps ensure that your app or extension has sufficient time to finish the read or write operation if it’s suspended, without creating a deadlock on access to that file by other processes. If a process is suspended while waiting for a coordinated read or write to be granted, the request is canceled, and an `NSError` object with the code [`NSUserCancelledError`](nsusercancellederror-swift.var.md) is produced. If the background task expires, the process is terminated.
 
-> **Note**:  The [`UIDocument`](https://developer.apple.com/documentation/UIKit/UIDocument) class automatically requests additional background time and safely performs coordinated reads and writes when loading and saving the document.
+> **Note**:  The [`UIDocument`](https://developer.apple.com/documentation/uikit/uidocument) class automatically requests additional background time and safely performs coordinated reads and writes when loading and saving the document.
 
 ##### Threading Considerations
 
@@ -96,14 +96,14 @@ Each file coordinator object you create should be used on a single thread only. 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

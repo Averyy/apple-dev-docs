@@ -28,21 +28,21 @@ nonisolated struct EmptyWidgetConfiguration
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../Swift/BitwiseCopyable.md)
-- [Copyable](../Swift/Copyable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [BitwiseCopyable](../swift/bitwisecopyable.md)
+- [Copyable](../swift/copyable.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 - [WidgetConfiguration](widgetconfiguration.md)
 
 ## See Also
 
-- [Building Widgets Using WidgetKit and SwiftUI](../WidgetKit/building-widgets-using-widgetkit-and-swiftui.md)
+- [Building Widgets Using WidgetKit and SwiftUI](../widgetkit/building-widgets-using-widgetkit-and-swiftui.md)
   Create widgets to show your app’s content on the Home screen, with custom intents for user-customizable settings.
-- [Creating a widget extension](../WidgetKit/Creating-a-Widget-Extension.md)
+- [Creating a widget extension](../widgetkit/creating-a-widget-extension.md)
   Display your app’s content in a convenient, informative widget on various devices.
-- [Keeping a widget up to date](../WidgetKit/Keeping-a-Widget-Up-To-Date.md)
+- [Keeping a widget up to date](../widgetkit/keeping-a-widget-up-to-date.md)
   Plan your widget’s timeline to show timely, relevant information using dynamic views, and update the timeline when things change.
-- [Making a configurable widget](../WidgetKit/Making-a-Configurable-Widget.md)
+- [Making a configurable widget](../widgetkit/making-a-configurable-widget.md)
   Give people the option to customize their widgets by adding a custom app intent to your project.
 - [protocol Widget](widget.md)
   The configuration and content of a widget to display on the Home screen or in Notification Center.

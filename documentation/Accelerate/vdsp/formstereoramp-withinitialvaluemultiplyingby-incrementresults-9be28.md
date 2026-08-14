@@ -40,7 +40,7 @@ let multiplierTwo: [Float] = (0 ..< n).map {
 
 The following figure illustrates the values of `multiplierOne`, as a solid line, and `multiplierTwo`, as a dashed line:
 
-![A graphic shows two sine waves. The first sine wave appears as a solid line and the second sine wave appears as a dashed line. The first sine wave has a higher freqency and a higher amplitude than the second sine wave. ](https://docs-assets.developer.apple.com/published/07d841cbd0f14afc7222e9a7b93aba50/media-3732289%402x.png)
+![A graphic shows two sine waves. The first sine wave appears as a solid line and the second sine wave appears as a dashed line. The first sine wave has a higher freqency and a higher amplitude than the second sine wave. ](/images/com.apple.accelerate/media-3732289@2x.png)
 
 Pass `multiplierOne` and `multiplierTwo` as the `multiplyingBy` parameter of [`formStereoRamp(withInitialValue:multiplyingBy:_:increment:results:_:)`](vdsp/formstereoramp(withinitialvalue:multiplyingby:_:increment:results:_:)-9be28.md):
 
@@ -61,7 +61,7 @@ vDSP.formStereoRamp(withInitialValue: &start,
 
 On return, the output vectors, `results.firstOutput` and `results.secondOutput`, contain ramped-sine waves. The figure below shows the first output as a solid line and the second output as a dashed line:
 
-![A graphic shows two sine waves. The first sine wave appears as a solid line and the second sine wave appears as a dashed line. The first sine wave and has a higher freqency and a higher amplitude than the second sine wave.  Both sine waves are tapered, that is, they begin on the left with a very low amplitude and their amplitudes ramp up towards the right of the image.](https://docs-assets.developer.apple.com/published/e4e631a2cffd2e94d7be845c1d26a6ca/media-3732291%402x.png)
+![A graphic shows two sine waves. The first sine wave appears as a solid line and the second sine wave appears as a dashed line. The first sine wave and has a higher freqency and a higher amplitude than the second sine wave.  Both sine waves are tapered, that is, they begin on the left with a very low amplitude and their amplitudes ramp up towards the right of the image.](/images/com.apple.accelerate/media-3732291@2x.png)
 
 ## Parameters
 

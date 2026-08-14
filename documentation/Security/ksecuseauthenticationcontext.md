@@ -22,7 +22,7 @@ let kSecUseAuthenticationContext: CFString
 
 #### Discussion
 
-The corresponding value is of type [`LAContext`](https://developer.apple.com/documentation/LocalAuthentication/LAContext), and represents a reusable local authentication context that should be used for keychain item authentication, according to the following rules:
+The corresponding value is of type [`LAContext`](https://developer.apple.com/documentation/localauthentication/lacontext), and represents a reusable local authentication context that should be used for keychain item authentication, according to the following rules:
 
 - If this key is not specified, and if the item requires authentication, a new context will be created, used once, and discarded.
 - If this key is specified with a context that has been previously authenticated, the operation will succeed without asking user for authentication.

@@ -18,7 +18,7 @@ var processIdentifier: pid_t { get }
 
 Not all applications have a pid.  Applications without a pid return a value of -1.
 
-Do not rely on this for comparing processes, instead compare NSRunningApplication instances using [`isEqual(_:)`](https://developer.apple.com/documentation/ObjectiveC/NSObjectProtocol/isEqual(_:)).
+Do not rely on this for comparing processes, instead compare NSRunningApplication instances using [`isEqual(_:)`](https://developer.apple.com/documentation/objectivec/nsobjectprotocol/isequal(_:)).
 
 ## See Also
 

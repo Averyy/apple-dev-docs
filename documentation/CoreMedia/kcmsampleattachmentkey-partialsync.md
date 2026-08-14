@@ -22,7 +22,7 @@ let kCMSampleAttachmentKey_PartialSync: CFString
 
 #### Discussion
 
-A partial sync sample can be decoded without requiring any previous samples to have been decoded. Samples following two consecutive partial sync samples also do not require samples prior to the pair to have been decoded. To treat a sample as a partial sync sample, set a value of [`kCFBooleanTrue`](https://developer.apple.com/documentation/CoreFoundation/kCFBooleanTrue) for both this key and the [`kCMSampleAttachmentKey_NotSync`](kcmsampleattachmentkey_notsync.md) key.
+A partial sync sample can be decoded without requiring any previous samples to have been decoded. Samples following two consecutive partial sync samples also do not require samples prior to the pair to have been decoded. To treat a sample as a partial sync sample, set a value of [`kCFBooleanTrue`](https://developer.apple.com/documentation/corefoundation/kcfbooleantrue) for both this key and the [`kCMSampleAttachmentKey_NotSync`](kcmsampleattachmentkey_notsync.md) key.
 
 This attachment is read from and written to media files.
 

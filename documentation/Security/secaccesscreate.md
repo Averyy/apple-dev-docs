@@ -22,7 +22,7 @@ func SecAccessCreate(_ descriptor: CFString, _ trustedlist: CFArray?, _ accessRe
 
 Use this method to create a default access instance containing three ACL entries. If you don’t explicitly create and set an access instance when you create a protected keychain item, keychain services uses a default access like this one.
 
-![Diagram showing the contents of the default access instance, including three entries, each with specific operations and trusted apps.](https://docs-assets.developer.apple.com/published/7bb43362f99e782e9a44a92221966583/media-2983147%402x.png)
+![Diagram showing the contents of the default access instance, including three entries, each with specific operations and trusted apps.](/images/com.apple.security/media-2983147@2x.png)
 
 - **Owner entry.** Determines who can modify the access instance, because it contains the [`kSecACLAuthorizationChangeACL`](ksecaclauthorizationchangeacl.md) authorization. The owner entry’s list of trusted apps is empty, so the user is always prompted for permission if someone tries to change the access instance. All access instances must have exactly one owner entry, so this item can’t be removed, although you can modify it.
 - **Safe entry.** Applies to operations not considered secure, namely encrypting data. This ACL entry trusts all apps by default, because its array of trusted apps is set to `nil`.
@@ -38,7 +38,7 @@ You then apply the fully configured access instance to a keychain item by settin
 
 - `descriptor`: The name of the keychain item as it should appear in security dialogs, such as when an untrusted app tries to gain access to the item and the system prompts the user for permission. Use a name that gives users enough information to make a decision about this item. If you only store one item, a simple description like “Server password” might be sufficient. If you store many similar items, you might need to be more specific. This isn’t necessarily the name that appears in the Keychain Access app.
 - `trustedlist`: An array of [`SecTrustedApplication`](sectrustedapplication.md) instances specifying which apps should be allowed to access the item for restricted operations without triggering confirmation dialogs. Use `nil` to trust only the calling app. Use an empty array to indicate no apps are trusted.
-- `accessRef`: On return, points to the new access instance. In Objective-C, call [`CFRelease`](https://developer.apple.com/documentation/CoreFoundation/CFRelease) to release this instance when you are finished using it.
+- `accessRef`: On return, points to the new access instance. In Objective-C, call [`CFRelease`](https://developer.apple.com/documentation/corefoundation/cfrelease) to release this instance when you are finished using it.
 
 
 ---

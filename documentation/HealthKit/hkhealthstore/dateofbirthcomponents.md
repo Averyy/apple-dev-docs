@@ -21,7 +21,7 @@ func dateOfBirthComponents() throws -> DateComponents
 
 #### Return Value
 
-An [`NSDateComponents`](https://developer.apple.com/documentation/Foundation/NSDateComponents) object representing the user’s birthdate in the Gregorian calendar, or `nil`.
+An [`NSDateComponents`](https://developer.apple.com/documentation/foundation/nsdatecomponents) object representing the user’s birthdate in the Gregorian calendar, or `nil`.
 
 #### Discussion
 

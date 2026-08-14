@@ -23,14 +23,14 @@ A type that specifies the appearance and interaction of controls in the subscrip
 
 #### Overview
 
-Use the [`subscriptionStoreControlStyle(_:)`](https://developer.apple.com/documentation/SwiftUI/View/subscriptionStoreControlStyle(_:)) view modifier to configure the subscription store control style for a view hierarchy.
+Use the [`subscriptionStoreControlStyle(_:)`](https://developer.apple.com/documentation/swiftui/view/subscriptionstorecontrolstyle(_:)) view modifier to configure the subscription store control style for a view hierarchy.
 
 ```swift
 SubscriptionStoreView(groupID: "SAMPLE")
     .subscriptionStoreControlStyle(.prominentPicker)
 ```
 
-You can also configure the control placement using the [`subscriptionStoreControlStyle(_:placement:)`](https://developer.apple.com/documentation/SwiftUI/View/subscriptionStoreControlStyle(_:placement:)) view modifier.
+You can also configure the control placement using the [`subscriptionStoreControlStyle(_:placement:)`](https://developer.apple.com/documentation/swiftui/view/subscriptionstorecontrolstyle(_:placement:)) view modifier.
 
 ##### Create Custom Styles
 
@@ -145,10 +145,10 @@ SubscriptionStoreView(groupID: "SAMPLE")
 ## See Also
 
 - [func subscriptionStoreControlStyle(some SubscriptionStoreControlStyle) -> some View
-](../SwiftUI/View/subscriptionStoreControlStyle(_:).md)
+](../swiftui/view/subscriptionstorecontrolstyle(_:).md)
   Sets the control style for subscription store views within a view.
 - [func subscriptionStoreControlStyle<S>(S, placement: S.Placement) -> some View
-](../SwiftUI/View/subscriptionStoreControlStyle(_:placement:).md)
+](../swiftui/view/subscriptionstorecontrolstyle(_:placement:).md)
   Sets the control style and control placement for subscription store views within a view.
 - [struct SubscriptionStoreControlStyleConfiguration](subscriptionstorecontrolstyleconfiguration.md)
   The properties of a subscription store control that includes the list of auto-renewable subscriptions to merchandise.

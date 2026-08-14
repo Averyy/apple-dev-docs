@@ -48,7 +48,7 @@ Device activity is the amount of time an application, category, or web domain is
 ## Relationships
 
 ### Conforms To
-- [Equatable](../Swift/Equatable.md)
+- [Equatable](../swift/equatable.md)
 
 ## See Also
 

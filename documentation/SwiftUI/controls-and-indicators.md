@@ -8,9 +8,9 @@ Display values and get user selections.
 
 SwiftUI provides controls that enable user interaction specific to each platform and context. For example, people can initiate events with buttons and links, or choose among a set of discrete values with different kinds of pickers. You can also display information to the user with indicators like progress views and gauges.
 
-![None](https://docs-assets.developer.apple.com/published/3d1d4d9ddf1ec58056b340ea15756488/controls-and-indicators-hero%402x.png)
+![None](/images/com.apple.SwiftUI/controls-and-indicators-hero@2x.png)
 
-Use these built-in controls and indicators when composing custom views, and style them to match the needs of your app’s user interface. For design guidance, see [`Menus and actions`](https://developer.apple.com/design/Human-Interface-Guidelines/menus-and-actions), [`Selection and input`](https://developer.apple.com/design/Human-Interface-Guidelines/selection-and-input), and [`Status`](https://developer.apple.com/design/Human-Interface-Guidelines/status) in the Human Interface Guidelines.
+Use these built-in controls and indicators when composing custom views, and style them to match the needs of your app’s user interface. For design guidance, see [`Menus and actions`](https://developer.apple.com/design/human-interface-guidelines/menus-and-actions), [`Selection and input`](https://developer.apple.com/design/human-interface-guidelines/selection-and-input), and [`Status`](https://developer.apple.com/design/human-interface-guidelines/status) in the Human Interface Guidelines.
 
 ## Topics
 

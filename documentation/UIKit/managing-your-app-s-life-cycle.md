@@ -19,11 +19,11 @@ When your app’s state changes, UIKit notifies you by calling methods of the ap
 
 UIKit delivers separate life-cycle events for each scene. A scene represents one instance of your app’s UI running on a device. A person can create multiple scenes for each app, and show and hide them separately. Because each scene has its own life cycle, each can be in a different state of execution. For example, one scene might be in the foreground while others are in the background or are suspended.
 
-> ❗ **Important**:  Scene support is an opt-in feature. To enable basic support, add the [`UIApplicationSceneManifest`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/UIApplicationSceneManifest) key to your app’s `Info.plist` file as described in [`Specifying the scenes your app supports`](specifying-the-scenes-your-app-supports.md).
+> ❗ **Important**:  Scene support is an opt-in feature. To enable basic support, add the [`UIApplicationSceneManifest`](https://developer.apple.com/documentation/bundleresources/information-property-list/uiapplicationscenemanifest) key to your app’s `Info.plist` file as described in [`Specifying the scenes your app supports`](specifying-the-scenes-your-app-supports.md).
 
 The following figure shows the state transitions for scenes. When a person or the system requests a new scene for your app, UIKit creates it and puts it in the unattached state. Person-requested scenes move quickly to the foreground, where they appear onscreen. A system-requested scene typically moves to the background so that it can process an event. For example, the system might launch the scene in the background to process a location event. When someone dismisses your app’s UI, UIKit moves the associated scene to the background state and eventually to the suspended state. UIKit can disconnect a background or suspended scene at any time to reclaim its resources, returning that scene to the unattached state.
 
-![An illustration showing the state transitions for a scene-based app. Scenes start in the unattached state and move to the foreground-active or background state. The foreground-inactive state acts as a transition state.](https://docs-assets.developer.apple.com/published/bb875ff5b6507138789b710fc57afaf1/media-3233330%402x.png)
+![An illustration showing the state transitions for a scene-based app. Scenes start in the unattached state and move to the foreground-active or background state. The foreground-inactive state acts as a transition state.](/images/com.apple.uikit/media-3233330@2x.png)
 
 Use scene transitions to perform the following tasks:
 
@@ -40,7 +40,7 @@ In iOS 12 and earlier, UIKit delivers all life-cycle events to the [`UIApplicati
 
 The following figure shows the state transitions involving the app delegate object. After launch, the system puts the app in the inactive or background state, depending on whether the UI is about to appear onscreen. When launching to the foreground, the system transitions the app to the active state automatically. After that, the state fluctuates between active and background until the app terminates.
 
-![An illustration showing the state transitions for an app without scenes. The app launches into the active or background state. An app transitions through the inactive state. ](https://docs-assets.developer.apple.com/published/9c1b7e06f4aafb7cb32cf9a923f84e01/media-3233333%402x.png)
+![An illustration showing the state transitions for an app without scenes. The app launches into the active or background state. An app transitions through the inactive state. ](/images/com.apple.uikit/media-3233333@2x.png)
 
 Use app transitions to perform the following tasks:
 
@@ -58,7 +58,7 @@ In addition to handling life-cycle events, apps must also be prepared to handle 
 | --- | --- |
 | Memory warnings | Received when your app’s memory usage is too high. Reduce the amount of memory your app uses; see [`Responding to memory warnings`](responding-to-memory-warnings.md). |
 | Protected data becomes available/unavailable | Received when someone locks or unlocks their device. See [`applicationProtectedDataDidBecomeAvailable(_:)`](uiapplicationdelegate/applicationprotecteddatadidbecomeavailable(_:).md) and [`applicationProtectedDataWillBecomeUnavailable(_:)`](uiapplicationdelegate/applicationprotecteddatawillbecomeunavailable(_:).md). |
-| Handoff tasks | Received when an [`NSUserActivity`](https://developer.apple.com/documentation/Foundation/NSUserActivity) object needs to be processed. See [`application(_:didUpdate:)`](uiapplicationdelegate/application(_:didupdate:).md). |
+| Handoff tasks | Received when an [`NSUserActivity`](https://developer.apple.com/documentation/foundation/nsuseractivity) object needs to be processed. See [`application(_:didUpdate:)`](uiapplicationdelegate/application(_:didupdate:).md). |
 | Time changes | Received for several different time changes, such as when the phone carrier sends a time update. See [`applicationSignificantTimeChange(_:)`](uiapplicationdelegate/applicationsignificanttimechange(_:).md). |
 | Open URLs | Received when your app needs to open a resource. See [`application(_:open:options:)`](uiapplicationdelegate/application(_:open:options:).md). |
 

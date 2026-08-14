@@ -25,7 +25,7 @@ Valid values lie between `0.0` and `1.0` inclusive. The default value is `0.0`. 
 
 ## See Also
 
-- [let kCTLanguageAttributeName: CFString](../CoreText/kCTLanguageAttributeName.md)
+- [let kCTLanguageAttributeName: CFString](../coretext/kctlanguageattributename.md)
   The name of the text language.
 - [var lineBreakMode: NSLineBreakMode](nsmutableparagraphstyle/linebreakmode.md)
   The mode for breaking lines in the paragraph.
@@ -33,7 +33,7 @@ Valid values lie between `0.0` and `1.0` inclusive. The default value is `0.0`. 
   The strategies that the text system may use to break lines while laying out the paragraph.
 - [var usesDefaultHyphenation: Bool](nsmutableparagraphstyle/usesdefaulthyphenation.md)
   A Boolean value that indicates whether the paragraph style uses the system hyphenation settings.
-- [var tighteningFactorForTruncation: Float](../AppKit/NSMutableParagraphStyle/tighteningFactorForTruncation.md)
+- [var tighteningFactorForTruncation: Float](../appkit/nsmutableparagraphstyle/tighteningfactorfortruncation.md)
   The threshold for using tightening as an alternative to truncation.
 - [var allowsDefaultTighteningForTruncation: Bool](nsmutableparagraphstyle/allowsdefaulttighteningfortruncation.md)
   A Boolean value that indicates whether the system tightens intercharacter spacing before truncating text.

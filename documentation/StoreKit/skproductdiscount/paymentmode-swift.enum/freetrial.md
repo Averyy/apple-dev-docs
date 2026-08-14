@@ -28,7 +28,7 @@ case freeTrial
 
 With a free trial payment mode, the price is 0, so users pay nothing during the discount period.
 
-![Example of a subscription timeline starting with a free trial. After the free introductory period, the subscription renews at regular price. ](https://docs-assets.developer.apple.com/published/0ee556ad1cee3517fb03233a341235b3/media-2942195%402x.png)
+![Example of a subscription timeline starting with a free trial. After the free introductory period, the subscription renews at regular price. ](/images/com.apple.storekit/media-2942195@2x.png)
 
 ## See Also
 

@@ -20,7 +20,7 @@ Don’t call this method before the test run starts or after it stops.
 - `description`: The description of the failure.
 - `filePath`: The file path to the source file where the failure occurred or `nil` if unknown.
 - `lineNumber`: The line number in the source file at `filePath` where the failure occurred.
-- `expected`: [`true`](https://developer.apple.com/documentation/Swift/true) if the failure was the result of a failed assertion, [`false`](https://developer.apple.com/documentation/Swift/false) if it was the result of an uncaught exception.
+- `expected`: [`true`](https://developer.apple.com/documentation/swift/true) if the failure was the result of a failed assertion, [`false`](https://developer.apple.com/documentation/swift/false) if it was the result of an uncaught exception.
 
 
 ---

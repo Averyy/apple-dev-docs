@@ -14,9 +14,9 @@ To take full advantage of search in your interface, make sure you index your app
 
 Apple’s UI frameworks provide search controls you can add to your interface, and support to provide a consistent search experience. Incorporate these controls into your views and use the built-in support to initiate searches and display the results.
 
-- In SwiftUI, add a `searchable` modifier to a view in your interface. This modifier creates an implicit search field in your interface and binds it to the string you use to initiate queries. For more information, see [`Adding a search interface to your app`](https://developer.apple.com/documentation/SwiftUI/Adding-a-search-interface-to-your-app).
-- In UIKit, add a [`UISearchBar`](https://developer.apple.com/documentation/UIKit/UISearchBar) control to your interface, and display results using an associated [`UISearchController`](https://developer.apple.com/documentation/UIKit/UISearchController).
-- In AppKit, [`NSSearchField`](https://developer.apple.com/documentation/AppKit/NSSearchField) provides a text field with search-related behaviors.
+- In SwiftUI, add a `searchable` modifier to a view in your interface. This modifier creates an implicit search field in your interface and binds it to the string you use to initiate queries. For more information, see [`Adding a search interface to your app`](https://developer.apple.com/documentation/swiftui/adding-a-search-interface-to-your-app).
+- In UIKit, add a [`UISearchBar`](https://developer.apple.com/documentation/uikit/uisearchbar) control to your interface, and display results using an associated [`UISearchController`](https://developer.apple.com/documentation/uikit/uisearchcontroller).
+- In AppKit, [`NSSearchField`](https://developer.apple.com/documentation/appkit/nssearchfield) provides a text field with search-related behaviors.
 
 The built-in search controls provide features that people expect when searching for content, such as text completions and text tokens. You can also apply filters to limit the scope of the search to a particular part of your app. Core Spotlight helps you implement these features by providing the data you need for your app’s interface in a compatible format.
 
@@ -39,7 +39,7 @@ queryContext.enableRankedResults = true
 let query = CSUserQuery(userQueryString: searchText, userQueryContext: queryContext)
 ```
 
-To execute the query in Swift and get the results, fetch the [`responses`](csuserquery/responses-swift.property.md) property of the query object. This property contains an [`AsyncSequence`](https://developer.apple.com/documentation/Swift/AsyncSequence) that delivers values to your app as they become available. Fetching this sequence starts the query and begins delivering both results and suggestions asynchronously to your code. For each response, determine whether it is a search result or a suggested text completion and update your interface appropriately. The following example shows a template to use to process responses from the query:
+To execute the query in Swift and get the results, fetch the [`responses`](csuserquery/responses-swift.property.md) property of the query object. This property contains an [`AsyncSequence`](https://developer.apple.com/documentation/swift/asyncsequence) that delivers values to your app as they become available. Fetching this sequence starts the query and begins delivering both results and suggestions asynchronously to your code. For each response, determine whether it is a search result or a suggested text completion and update your interface appropriately. The following example shows a template to use to process responses from the query:
 
 ```swift
 Task {
@@ -73,7 +73,7 @@ For more information about how to configure query parameters, see [`CSUserQueryC
 
 Suggestions make it easier for someone to discover relevant search terms from your search interface. The [`CSUserQuery`](csuserquery.md) object you use to fetch results also generates suggestions that you can use to populate your search interface. You can display these suggestions any time someone interacts with your search control. When you execute a query, Spotlight offers a set of ranked suggestions based on the query text and your app’s content.
 
-To display suggested text completions from a SwiftUI, add a [`searchSuggestions(_:)`](https://developer.apple.com/documentation/SwiftUI/View/searchSuggestions(_:)) modifier to your view. The modifier takes a closure, which you use to build views for the suggestions. When collecting responses using the [`responses`](csuserquery/responses-swift.property.md) asynchronous sequence, save the [`CSUserQuery.Suggestion`](csuserquery/suggestion.md) structures you receive and use them to create your views. Each structure contains a [`CSSuggestion`](cssuggestion.md) object with the details of the suggestion. The following example iterates over the list of structures and builds a set of text views from the provided suggestions.
+To display suggested text completions from a SwiftUI, add a [`searchSuggestions(_:)`](https://developer.apple.com/documentation/swiftui/view/searchsuggestions(_:)) modifier to your view. The modifier takes a closure, which you use to build views for the suggestions. When collecting responses using the [`responses`](csuserquery/responses-swift.property.md) asynchronous sequence, save the [`CSUserQuery.Suggestion`](csuserquery/suggestion.md) structures you receive and use them to create your views. Each structure contains a [`CSSuggestion`](cssuggestion.md) object with the details of the suggestion. The following example iterates over the list of structures and builds a set of text views from the provided suggestions.
 
 ```swift
 List {
@@ -91,9 +91,9 @@ List {
 
 > **Note**: If you receive suggestions using the [`foundSuggestionsHandler`](csuserquery/foundsuggestionshandler.md) closure, the system provides the [`CSSuggestion`](cssuggestion.md) objects directly. Extract the data from those objects and use it to build your views.
 
-To display suggestions from a [`UISearchController`](https://developer.apple.com/documentation/UIKit/UISearchController) in your UIKit app, create [`UISearchSuggestionItem`](https://developer.apple.com/documentation/UIKit/UISearchSuggestionItem) objects for each suggestion you receive from your query. When you add those suggestion items to the [`searchSuggestions`](https://developer.apple.com/documentation/UIKit/UISearchController/searchSuggestions) property of the search controller, it automatically displays them from its interface. Each time you execute a new query, clear the old search suggestions from this property and add the new ones.
+To display suggestions from a [`UISearchController`](https://developer.apple.com/documentation/uikit/uisearchcontroller) in your UIKit app, create [`UISearchSuggestionItem`](https://developer.apple.com/documentation/uikit/uisearchsuggestionitem) objects for each suggestion you receive from your query. When you add those suggestion items to the [`searchSuggestions`](https://developer.apple.com/documentation/uikit/uisearchcontroller/searchsuggestions) property of the search controller, it automatically displays them from its interface. Each time you execute a new query, clear the old search suggestions from this property and add the new ones.
 
-For more information on adding search suggestions to your SwiftUI views, see [`Suggesting search terms`](https://developer.apple.com/documentation/SwiftUI/Suggesting-search-terms).
+For more information on adding search suggestions to your SwiftUI views, see [`Suggesting search terms`](https://developer.apple.com/documentation/swiftui/suggesting-search-terms).
 
 ## See Also
 

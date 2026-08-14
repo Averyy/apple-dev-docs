@@ -21,7 +21,7 @@ protocol UITextSelectionHighlightView : UICoordinateSpace
 
 #### Overview
 
-Adopt the [`UITextSelectionHighlightView`](uitextselectionhighlightview.md) protocol in a custom view you use to draw the highlight behind text in one of your text views. Use your custom view in conjunction with a [`UITextSelectionDisplayInteraction`](uitextselectiondisplayinteraction.md) object to apply your custom selection UI to one of your text views. This protocol provides the rectangles for your view to fill with the highlight color and appearance. Use [`CALayer`](https://developer.apple.com/documentation/QuartzCore/CALayer) objects or your view’s [`draw(_:)`](uiview/draw(_:).md) method to draw these rectangles.
+Adopt the [`UITextSelectionHighlightView`](uitextselectionhighlightview.md) protocol in a custom view you use to draw the highlight behind text in one of your text views. Use your custom view in conjunction with a [`UITextSelectionDisplayInteraction`](uitextselectiondisplayinteraction.md) object to apply your custom selection UI to one of your text views. This protocol provides the rectangles for your view to fill with the highlight color and appearance. Use [`CALayer`](https://developer.apple.com/documentation/quartzcore/calayer) objects or your view’s [`draw(_:)`](uiview/draw(_:).md) method to draw these rectangles.
 
 After adopting this protocol in your custom view, assign your view to the [`highlightView`](uitextselectiondisplayinteraction/highlightview.md) property of the interaction object you attached to your text view.
 
@@ -34,7 +34,7 @@ After adopting this protocol in your custom view, assign your view to the [`high
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 - [UICoordinateSpace](uicoordinatespace.md)
 
 ## See Also

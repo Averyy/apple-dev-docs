@@ -21,15 +21,15 @@ Your App Clip gives users immediate access to critical or context-specific parts
 
 You can use physical App Clip Codes in the real world to enable users to discover your App Clip. An App Clip Code includes a unique URL and can incorporate an NFC tag. When users hold their iPhone near the code or scan it with the camera or Code Scanner in Control Center, the system offers to launch the code’s associated App Clip.
 
-For more on App Clip Codes, see [`App Clips`](https://developer.apple.com/documentation/AppClip). For an app that reacts to App Clip Codes in AR, see [`Interacting with App Clip Codes in AR`](https://developer.apple.com/documentation/AppClip/interacting-with-app-clip-codes-in-ar).
+For more on App Clip Codes, see [`App Clips`](https://developer.apple.com/documentation/appclip). For an app that reacts to App Clip Codes in AR, see [`Interacting with App Clip Codes in AR`](https://developer.apple.com/documentation/appclip/interacting-with-app-clip-codes-in-ar).
 
 ##### Distinguish Between App Clip Codes
 
 There may be multiple App Clip Codes visible in the camera feed that share the same [`url`](arappclipcodeanchor/url.md), so ARKit also relies on the App Clip Code’s location (see [`transform`](aranchor/transform.md)) to distinguish different App Clip Codes in the physical environment.
 
-When the framework recognizes an App Clip Code, it initializes an [`ARAppClipCodeAnchor`](arappclipcodeanchor.md) and passes it to the session delegate via [`session(_:didAdd:)`](arsessiondelegate/session(_:didadd:).md). If a recognized App Clip Code becomes obscured or is no longer visible in the camera feed, the framework sets the anchor’s [`isTracked`](artrackable/istracked.md) property to [`false`](https://developer.apple.com/documentation/Swift/false) and passes it into the [`session(_:didUpdate:)`](arsessiondelegate/session(_:didupdate:)-3qtt8.md) callback. If the same App Clip Code becomes visible once again:
+When the framework recognizes an App Clip Code, it initializes an [`ARAppClipCodeAnchor`](arappclipcodeanchor.md) and passes it to the session delegate via [`session(_:didAdd:)`](arsessiondelegate/session(_:didadd:).md). If a recognized App Clip Code becomes obscured or is no longer visible in the camera feed, the framework sets the anchor’s [`isTracked`](artrackable/istracked.md) property to [`false`](https://developer.apple.com/documentation/swift/false) and passes it into the [`session(_:didUpdate:)`](arsessiondelegate/session(_:didupdate:)-3qtt8.md) callback. If the same App Clip Code becomes visible once again:
 
-- ARKit sets [`isTracked`](artrackable/istracked.md) to [`true`](https://developer.apple.com/documentation/Swift/true) if the App Clip Code maintained its relative position in the physical environment.
+- ARKit sets [`isTracked`](artrackable/istracked.md) to [`true`](https://developer.apple.com/documentation/swift/true) if the App Clip Code maintained its relative position in the physical environment.
 - ARKit intializes a new [`ARAppClipCodeAnchor`](arappclipcodeanchor.md) if the App Clip Code position in the physical environment changed significantly.
 
 ##### Remove App Clip Codes
@@ -38,7 +38,7 @@ To prevent App Clip Codes from accumulating in the session, ARKit removes anchor
 
 - The framework instantiates a new [`ARAppClipCodeAnchor`](arappclipcodeanchor.md).
 - The new anchor’s [`url`](arappclipcodeanchor/url.md) matches one or more existing anchors with substantially different positions in the physical environment.
-- The existing anchors are untracked ([`isTracked`](artrackable/istracked.md) is [`false`](https://developer.apple.com/documentation/Swift/false)).
+- The existing anchors are untracked ([`isTracked`](artrackable/istracked.md) is [`false`](https://developer.apple.com/documentation/swift/false)).
 
 ## Topics
 
@@ -60,21 +60,21 @@ To prevent App Clip Codes from accumulating in the session, ARKit removes anchor
 ### Conforms To
 - [ARAnchorCopying](aranchorcopying.md)
 - [ARTrackable](artrackable.md)
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCoding](../Foundation/NSCoding.md)
-- [NSCopying](../Foundation/NSCopying.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [NSSecureCoding](../Foundation/NSSecureCoding.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCoding](../foundation/nscoding.md)
+- [NSCopying](../foundation/nscopying.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 
-- [Interacting with App Clip Codes in AR](../AppClip/interacting-with-app-clip-codes-in-ar.md)
+- [Interacting with App Clip Codes in AR](../appclip/interacting-with-app-clip-codes-in-ar.md)
   Display content and provide services in an AR experience with App Clip Codes.
 
 

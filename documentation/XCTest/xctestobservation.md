@@ -59,7 +59,7 @@ See [`XCTestObservationCenter`](xctestobservationcenter.md) for details about re
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

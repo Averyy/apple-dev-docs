@@ -41,7 +41,7 @@ func garborGradients(inputImage: CIImage) -> CIImage {
 }
 ```
 
-![Two pictures of a pink flower surrounded by foliage. The photo on the left shows a single flower photographed close up, in focus, with good light and no effects. In the photo on the right, the Gabor gradient  filter is applied, resulting in the image becoming darker with green and red colors replacing the colors of the original image.](https://docs-assets.developer.apple.com/published/eaa376efebbdb25b6c02fe4ca9016107/media-3600000%402x.png)
+![Two pictures of a pink flower surrounded by foliage. The photo on the left shows a single flower photographed close up, in focus, with good light and no effects. In the photo on the right, the Gabor gradient  filter is applied, resulting in the image becoming darker with green and red colors replacing the colors of the original image.](/images/com.apple.coreimage/media-3600000@2x.png)
 
 ## See Also
 

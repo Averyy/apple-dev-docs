@@ -26,7 +26,7 @@ A string that represents the contents of the set, formatted as a property list.
 
 #### Discussion
 
-This method sends each of the set’s members  `descriptionWithLocale:` with `locale` passed as the sole parameter. If the set’s members do not respond to `descriptionWithLocale:`, this method sends [`description`](https://developer.apple.com/documentation/ObjectiveC/NSObjectProtocol/description) instead.
+This method sends each of the set’s members  `descriptionWithLocale:` with `locale` passed as the sole parameter. If the set’s members do not respond to `descriptionWithLocale:`, this method sends [`description`](https://developer.apple.com/documentation/objectivec/nsobjectprotocol/description) instead.
 
 ## Parameters
 

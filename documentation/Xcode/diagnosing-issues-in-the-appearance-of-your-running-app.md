@@ -16,10 +16,10 @@ Some visual issues only arise when you configure the system using specific envir
 
 To enable one or more of these overrides, click the Environment Overrides button on Xcode’s debugging toolbar, toggle the switch next to the override category, and configure the controls under the category heading.
 
-![Xcode debugger toolbar displaying the Environmental Overrides popup menu with toggle switches to the right of each override type. Appearance is at the top with options below it for dark appearance and light appearance, Dyanmic Type is bleow that with a slider bar currently set at XXX Large, and Accessibility is at the bottom with options that include things such as Increase Contrast, Reduce Motion, and Smart Invert.](https://docs-assets.developer.apple.com/published/fc8815bbdf67290ee67e8a470c914dee/diagnosing-issues-with-your-visual-content-1%402x.png)
+![Xcode debugger toolbar displaying the Environmental Overrides popup menu with toggle switches to the right of each override type. Appearance is at the top with options below it for dark appearance and light appearance, Dyanmic Type is bleow that with a slider bar currently set at XXX Large, and Accessibility is at the bottom with options that include things such as Increase Contrast, Reduce Motion, and Smart Invert.](/images/com.apple.Xcode/diagnosing-issues-with-your-visual-content-1@2x.png)
 
 - **Appearance**: View your app’s content with a light or dark appearance. Select between light and dark appearances using the radio button.
-- **Dynamic Type**: View your app’s content using different dynamic type sizes. Select the size using the slider. For more information on dynamic types, see [`DynamicTypeSize`](https://developer.apple.com/documentation/SwiftUI/DynamicTypeSize).
+- **Dynamic Type**: View your app’s content using different dynamic type sizes. Select the size using the slider. For more information on dynamic types, see [`DynamicTypeSize`](https://developer.apple.com/documentation/swiftui/dynamictypesize).
 - **Accessibility**: View the effects various accessibility features have on your app’s content.  Click the checkboxes to toggle the accessibility features.
 
 ##### Resolve Issues in the Layout of Your Uikit and Swiftui Views
@@ -28,7 +28,7 @@ Use the View debugger, available when targeting iOS, iPadOS, macOS, tvOS, and wa
 
 The debugger displays a 3D rendering of the current view on the canvas in the center, with a representation of the view hierarchy in the Debug navigator. Drag the view in any direction to see a 3D representation of the current view stack, and use the controls at the bottom of the canvas to adjust the views and the spacing between them.
 
-![Xcode displaying the view debugger, rotated to see a three dimensional representation of the view stack. The view debugger shows a selected UILabel that extends to the leading and trailing edges of the view and is truncating text, with the four constraints for the view highlighted.](https://docs-assets.developer.apple.com/published/ecbf24fb595b4cbde72f4c251adbe821/diagnosing-issues-with-your-visual-content-2%402x.png)
+![Xcode displaying the view debugger, rotated to see a three dimensional representation of the view stack. The view debugger shows a selected UILabel that extends to the leading and trailing edges of the view and is truncating text, with the four constraints for the view highlighted.](/images/com.apple.Xcode/diagnosing-issues-with-your-visual-content-2@2x.png)
 
 Click to select a view in either the visual rendering or the view hierarchy in the Debug navigator, then inspect details in the Object inspector or Size inspector. Resolve your layout issue according to the type of layout:
 
@@ -40,7 +40,7 @@ Click to select a view in either the visual rendering or the view hierarchy in t
 
 For visionOS apps with content in an immersive space, it’s often helpful to see a visual representation of coordinate axes, bounding boxes, and other information that is normally invisible. Xcode’s debugging tools include options to display this information in Simulator or on a device. Use them to ensure that your entities are located where you expect, and interacting with each other and the surroundings the way you anticipate. For example, if an entity isn’t responding to events, enable Collision Shapes to confirm the presence of one, required for event handling, and indicate its boundary.
 
-![A macOS display with an Xcode window on the left and Simulator window on the right. Xcode's debugger toolbar displays the Visualizations popup menu which includes options for enabling visualizations for Anchoring, Axes, Bounds, Collisions Shapes and Axes, Occlusion Mesh, and Surfaces, with Collisions Shapes and Axes and Surfaces selected. Simulator displays an immersive experience that includes an interactive 3D globe on the left and 2D window on the right. Outlines appear around each entity to indicate their collision shape, colored arrows indicate axes, and border lines and diagonals mark surfaces.](https://docs-assets.developer.apple.com/published/2a039c7552540f4ccabf20a318d85561/diagnosing-issues-in-the-appearance-of-a-running-app-1%402x.png)
+![A macOS display with an Xcode window on the left and Simulator window on the right. Xcode's debugger toolbar displays the Visualizations popup menu which includes options for enabling visualizations for Anchoring, Axes, Bounds, Collisions Shapes and Axes, Occlusion Mesh, and Surfaces, with Collisions Shapes and Axes and Surfaces selected. Simulator displays an immersive experience that includes an interactive 3D globe on the left and 2D window on the right. Outlines appear around each entity to indicate their collision shape, colored arrows indicate axes, and border lines and diagonals mark surfaces.](/images/com.apple.Xcode/diagnosing-issues-in-the-appearance-of-a-running-app-1@2x.png)
 
 To annotate your content with an overlay, click the Debug Visualizations button on Xcode’s debugging toolbar and select one or more of the options:
 
@@ -57,7 +57,7 @@ To annotate your content with an overlay, click the Debug Visualizations button 
 
 - [Diagnosing memory, thread, and crash issues early](diagnosing-memory-thread-and-crash-issues-early.md)
   Identify runtime crashes and undefined behaviors in your app during testing using Xcode’s sanitizer tools.
-- [Analyzing HTTP traffic with Instruments](../Foundation/analyzing-http-traffic-with-instruments.md)
+- [Analyzing HTTP traffic with Instruments](../foundation/analyzing-http-traffic-with-instruments.md)
   Measure HTTP-based network performance and usage of your apps.
 - [Detecting when your app contacts domains that may be profiling users](detecting-when-your-app-contacts-domains-that-may-be-profiling-users.md)
   Use Instruments to assess whether your app or its third-party SDKs connect to domains that may profile users.

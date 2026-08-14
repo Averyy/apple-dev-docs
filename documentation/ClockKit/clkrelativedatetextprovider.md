@@ -28,15 +28,15 @@ When creating the formatted string, the relative date text provider creates the 
 
 When creating a `CLKRelativeDateTextProvider` object, you must specify which calendar units you want included in the resulting date. Only the following calendar units are supported:
 
-- [`NSYearCalendarUnit`](https://developer.apple.com/documentation/Foundation/NSCalendar/Unit/NSYearCalendarUnit)
-- [`NSMonthCalendarUnit`](https://developer.apple.com/documentation/Foundation/NSCalendar/Unit/NSMonthCalendarUnit)
-- [`NSWeekOfMonthCalendarUnit`](https://developer.apple.com/documentation/Foundation/NSCalendar/Unit/NSWeekOfMonthCalendarUnit)
-- [`NSDayCalendarUnit`](https://developer.apple.com/documentation/Foundation/NSCalendar/Unit/NSDayCalendarUnit)
-- [`NSHourCalendarUnit`](https://developer.apple.com/documentation/Foundation/NSCalendar/Unit/NSHourCalendarUnit)
-- [`NSMinuteCalendarUnit`](https://developer.apple.com/documentation/Foundation/NSCalendar/Unit/NSMinuteCalendarUnit)
-- [`NSSecondCalendarUnit`](https://developer.apple.com/documentation/Foundation/NSCalendar/Unit/NSSecondCalendarUnit)
+- [`NSYearCalendarUnit`](https://developer.apple.com/documentation/foundation/nscalendar/unit/nsyearcalendarunit)
+- [`NSMonthCalendarUnit`](https://developer.apple.com/documentation/foundation/nscalendar/unit/nsmonthcalendarunit)
+- [`NSWeekOfMonthCalendarUnit`](https://developer.apple.com/documentation/foundation/nscalendar/unit/nsweekofmonthcalendarunit)
+- [`NSDayCalendarUnit`](https://developer.apple.com/documentation/foundation/nscalendar/unit/nsdaycalendarunit)
+- [`NSHourCalendarUnit`](https://developer.apple.com/documentation/foundation/nscalendar/unit/nshourcalendarunit)
+- [`NSMinuteCalendarUnit`](https://developer.apple.com/documentation/foundation/nscalendar/unit/nsminutecalendarunit)
+- [`NSSecondCalendarUnit`](https://developer.apple.com/documentation/foundation/nscalendar/unit/nssecondcalendarunit)
 
-> **Note**:  When creating a relative date provider using the [`CLKRelativeDateStyle.timer`](clkrelativedatestyle/timer.md) style, only the [`NSHourCalendarUnit`](https://developer.apple.com/documentation/Foundation/NSCalendar/Unit/NSHourCalendarUnit), [`NSMinuteCalendarUnit`](https://developer.apple.com/documentation/Foundation/NSCalendar/Unit/NSMinuteCalendarUnit), and [`NSSecondCalendarUnit`](https://developer.apple.com/documentation/Foundation/NSCalendar/Unit/NSSecondCalendarUnit) units are supported.
+> **Note**:  When creating a relative date provider using the [`CLKRelativeDateStyle.timer`](clkrelativedatestyle/timer.md) style, only the [`NSHourCalendarUnit`](https://developer.apple.com/documentation/foundation/nscalendar/unit/nshourcalendarunit), [`NSMinuteCalendarUnit`](https://developer.apple.com/documentation/foundation/nscalendar/unit/nsminutecalendarunit), and [`NSSecondCalendarUnit`](https://developer.apple.com/documentation/foundation/nscalendar/unit/nssecondcalendarunit) units are supported.
 
 All other calendar units are ignored.
 
@@ -69,13 +69,13 @@ The format of the relative time value is dependent on the date style you choose 
 ### Inherits From
 - [CLKTextProvider](clktextprovider.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCopying](../Foundation/NSCopying.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCopying](../foundation/nscopying.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

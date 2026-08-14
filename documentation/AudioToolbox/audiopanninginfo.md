@@ -38,7 +38,7 @@ struct AudioPanningInfo
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../Swift/BitwiseCopyable.md)
+- [BitwiseCopyable](../swift/bitwisecopyable.md)
 
 ## See Also
 
@@ -46,7 +46,7 @@ struct AudioPanningInfo
   Describes audio left/right balance and front/back fade values.
 - [struct AudioFormatInfo](audioformatinfo.md)
   A structure that specifies an audio format.
-- [struct AudioFormatListItem](../CoreAudioTypes/AudioFormatListItem.md)
+- [struct AudioFormatListItem](../coreaudiotypes/audioformatlistitem.md)
 - [struct ExtendedAudioFormatInfo](extendedaudioformatinfo.md)
   A specifier for the [`kAudioFormatProperty_FormatList`](kaudioformatproperty_formatlist.md) property, including the codec to use.
 - [typealias AudioFormatPropertyID](audioformatpropertyid.md)

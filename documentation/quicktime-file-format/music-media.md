@@ -10,7 +10,7 @@ Music media is used to store note-based audio data, such as MIDI data, in QuickT
 
 #### Music Sample Description
 
-The music sample description uses the standard sample description header, as described in  [`Sample description atom ('stsd')`](sample_description_atom.md).
+The music sample description uses the standard sample description header, as described in  [`Sample description atom`](sample_description_atom.md).
 
 The data format field in the sample description is always set to `'musi'`. The music media handler adds an additional 32-bit integer field to the sample description containing flags. Currently no flags are defined, and this field should be set to `0`.
 

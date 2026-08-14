@@ -31,7 +31,7 @@ class OSSignpostIntervalState
 
 In debug builds, any assertion failures result in a crash. In production builds, your app continues to run and, instead, the signposter attaches an error message to the interval’s closing signpost.
 
-[`OSSignpostIntervalState`](ossignpostintervalstate.md) adopts the [`Codable`](https://developer.apple.com/documentation/Swift/Codable) protocol, which means you can serialize state and safely share it across processes, as the following example shows:
+[`OSSignpostIntervalState`](ossignpostintervalstate.md) adopts the [`Codable`](https://developer.apple.com/documentation/swift/codable) protocol, which means you can serialize state and safely share it across processes, as the following example shows:
 
 ```swift
 // A closure that represents a process in the context of this example.
@@ -90,10 +90,10 @@ If you don’t have access to the returned interval state from the call that beg
 ## Relationships
 
 ### Conforms To
-- [Decodable](../Swift/Decodable.md)
-- [Encodable](../Swift/Encodable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Decodable](../swift/decodable.md)
+- [Encodable](../swift/encodable.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

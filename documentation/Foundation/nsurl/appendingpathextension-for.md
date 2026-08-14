@@ -26,7 +26,7 @@ A new URL with the type’s preferred extension appended.
 
 #### Discussion
 
-For more information about types, see [`Uniform Type Identifiers`](https://developer.apple.com/documentation/UniformTypeIdentifiers).
+For more information about types, see [`Uniform Type Identifiers`](https://developer.apple.com/documentation/uniformtypeidentifiers).
 
 ## Parameters
 

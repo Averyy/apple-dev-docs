@@ -24,7 +24,7 @@ actor IdentityDocumentProviderRegistrationStore
 
 The system uses the information you register with this store to appropriately surface your app as an option during a presentment. When a person registers a document, the authorization UI you provide through the app’s `IdentityDocumentProvider` extension needs to handle incoming requests for that specific document. The app needs to only register documents that are active and that it can successfully present. If a document becomes inactive, you need to unregister it from the store.
 
-> **Note**:  This API requires the [`Digital Credentials API - Mobile Document Provider`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.identity-document-services.document-provider.mobile-document-types) entitlement for online web presentment.
+> **Note**:  This API requires the [`Digital Credentials API - Mobile Document Provider`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.identity-document-services.document-provider.mobile-document-types) entitlement for online web presentment.
 
 ## Topics
 
@@ -49,9 +49,9 @@ The system uses the information you register with this store to appropriately su
 ## Relationships
 
 ### Conforms To
-- [Actor](../Swift/Actor.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Actor](../swift/actor.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

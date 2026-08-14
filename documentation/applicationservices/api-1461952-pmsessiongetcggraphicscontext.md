@@ -25,7 +25,7 @@ If you’re using Quartz 2D to draw the content for a print job, after each call
 ## Parameters
 
 - `printSession`: The printing session whose Quartz graphics context you want to obtain.
-- `context`: A pointer to your   variable. On return, the variable refers to the Quartz graphics context for the current page in the specified printing session. The context’s origin is at the lower-left corner of the sheet of paper, not the imageable area. You should not release the context without first retaining it. The context is valid only for the current page; you should not retain it beyond the end of the page.
+- `context`: A pointer to your [`CGContext`](https://developer.apple.com/documentation/coregraphics/cgcontext) variable. On return, the variable refers to the Quartz graphics context for the current page in the specified printing session. The context’s origin is at the lower-left corner of the sheet of paper, not the imageable area. You should not release the context without first retaining it. The context is valid only for the current page; you should not retain it beyond the end of the page.
 
 ## See Also
 

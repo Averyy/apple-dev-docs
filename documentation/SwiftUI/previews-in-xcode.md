@@ -8,14 +8,14 @@ Generate dynamic, interactive previews of your custom views.
 
 When you create a custom [`View`](view.md) with SwiftUI, Xcode can display a preview of the view’s content that stays up-to-date as you make changes to the view’s code. You use one of the preview macros — like [`Preview(_:body:)`](preview(_:body:).md) — to tell Xcode what to display. Xcode shows the preview in a canvas beside your code.
 
-![None](https://docs-assets.developer.apple.com/published/5efb20dd844dbf1610ee3a4c833f809b/previews-in-xcode-hero%402x.png)
+![None](/images/com.apple.SwiftUI/previews-in-xcode-hero@2x.png)
 
 Different preview macros enable different kinds of configuration. For example, you can add traits that affect the preview’s appearance using the [`Preview(_:traits:_:body:)`](preview(_:traits:_:body:).md) macro or add custom viewpoints for the preview using the [`Preview(_:traits:body:cameras:)`](preview(_:traits:body:cameras:).md) macro. You can also check how your view behaves inside a specific scene type. For example, in visionOS you can use the [`Preview(_:immersionStyle:traits:body:)`](preview(_:immersionstyle:traits:body:).md) macro to preview your view inside an [`ImmersiveSpace`](immersivespace.md).
 
 ## Topics
 
 ### Essentials
-- [Previewing your app’s interface in Xcode](../Xcode/previewing-your-apps-interface-in-xcode.md)
+- [Previewing your app’s interface in Xcode](../xcode/previewing-your-apps-interface-in-xcode.md)
   Iterate designs quickly and preview your apps’ displays across different Apple devices.
 ### Creating a preview
 - [macro Preview(String?, body: () -> any View)](preview(_:body:).md)

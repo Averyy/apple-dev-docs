@@ -21,7 +21,7 @@ init(targetedCMSampleBuffer sampleBuffer: CMSampleBuffer, options: [VNImageOptio
 
 ## Parameters
 
-- `sampleBuffer`: A sample buffer containing a valid [`imageBuffer`](https://developer.apple.com/documentation/CoreMedia/CMSampleBuffer/imageBuffer).
+- `sampleBuffer`: A sample buffer containing a valid [`imageBuffer`](https://developer.apple.com/documentation/coremedia/cmsamplebuffer/imagebuffer).
 - `options`: A dictionary with options specifying auxiliary information for the image.
 - `completionHandler`: The callback the system invokes when the request finishes executing.
 

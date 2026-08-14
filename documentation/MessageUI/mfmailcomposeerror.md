@@ -27,7 +27,7 @@ struct MFMailComposeError
 - [static var sendFailed: MFMailComposeError.Code](mfmailcomposeerror/sendfailed.md)
   An error occurred while trying to queue or send the email message.
 - [MFMailComposeError.Code](mfmailcomposeerror/code.md)
-  Error codes for [`NSError`](https://developer.apple.com/documentation/Foundation/NSError) objects that are associated with the mail composition interface.
+  Error codes for [`NSError`](https://developer.apple.com/documentation/foundation/nserror) objects that are associated with the mail composition interface.
 ### Error Configuration
 - [static var errorDomain: String](mfmailcomposeerror/errordomain.md)
   The domain for errors related to mail composition.
@@ -35,19 +35,19 @@ struct MFMailComposeError
 ## Relationships
 
 ### Conforms To
-- [CustomNSError](../Foundation/CustomNSError.md)
-- [Equatable](../Swift/Equatable.md)
-- [Error](../Swift/Error.md)
-- [Hashable](../Swift/Hashable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [CustomNSError](../foundation/customnserror.md)
+- [Equatable](../swift/equatable.md)
+- [Error](../swift/error.md)
+- [Hashable](../swift/hashable.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 
 - [let MFMailComposeErrorDomain: String](mfmailcomposeerrordomain.md)
   The domain used for error objects that are associated with the mail composition interface.
 - [MFMailComposeError.Code](mfmailcomposeerror/code.md)
-  Error codes for [`NSError`](https://developer.apple.com/documentation/Foundation/NSError) objects that are associated with the mail composition interface.
+  Error codes for [`NSError`](https://developer.apple.com/documentation/foundation/nserror) objects that are associated with the mail composition interface.
 
 
 ---

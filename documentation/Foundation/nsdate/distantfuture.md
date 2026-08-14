@@ -26,7 +26,7 @@ An [`NSDate`](nsdate.md) object representing a date in the distant future (in te
 
 #### Discussion
 
-You can pass this value when an [`NSDate`](nsdate.md) object is required to have the date argument essentially ignored. For example, the [`NSWindow`](https://developer.apple.com/documentation/AppKit/NSWindow) method [`nextEvent(matching:until:inMode:dequeue:)`](https://developer.apple.com/documentation/AppKit/NSWindow/nextEvent(matching:until:inMode:dequeue:)) returns `nil` if an event specified in the event mask does not happen before the specified date. You can use the object returned by [`distantFuture`](nsdate/distantfuture.md) as the date argument to wait indefinitely for the event to occur.
+You can pass this value when an [`NSDate`](nsdate.md) object is required to have the date argument essentially ignored. For example, the [`NSWindow`](https://developer.apple.com/documentation/appkit/nswindow) method [`nextEvent(matching:until:inMode:dequeue:)`](https://developer.apple.com/documentation/appkit/nswindow/nextevent(matching:until:inmode:dequeue:)) returns `nil` if an event specified in the event mask does not happen before the specified date. You can use the object returned by [`distantFuture`](nsdate/distantfuture.md) as the date argument to wait indefinitely for the event to occur.
 
 ```objc
 myEvent = [myWindow nextEventMatchingMask:myEventMask

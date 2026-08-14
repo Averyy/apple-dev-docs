@@ -16,7 +16,7 @@ Overlays offer a way to layer content over regions of a map and have that conten
 
 ##### Define Overlays with Geographic Coordinates
 
-Overlays are data objects that represent geographic information. Most overlays use geographic coordinates to create contiguous or noncontiguous sets of lines, rectangles, circles, and other shapes. For example, this sample app defines a rectangular area enclosing San Francisco as an array of [`CLLocationCoordinate2D`](https://developer.apple.com/documentation/CoreLocation/CLLocationCoordinate2D) coordinates.
+Overlays are data objects that represent geographic information. Most overlays use geographic coordinates to create contiguous or noncontiguous sets of lines, rectangles, circles, and other shapes. For example, this sample app defines a rectangular area enclosing San Francisco as an array of [`CLLocationCoordinate2D`](https://developer.apple.com/documentation/corelocation/cllocationcoordinate2d) coordinates.
 
 ```swift
 /// A rectangular area containing San Francisco.
@@ -254,7 +254,7 @@ let worldPoints = [MKMapRect.world.origin,
 let desaturatedBase = MKPolygon(points: worldPoints, count: worldPoints.count, interiorPolygons: [parkPolygon])
 ```
 
-When the map view requests renderer objects from the map delegate for these overlay objects, the app configures the [`blendMode`](mkoverlayrenderer/blendmode.md) property with the [`CGBlendMode.screen`](https://developer.apple.com/documentation/CoreGraphics/CGBlendMode/screen) blend mode to lighten the map area outside the park, and the [`CGBlendMode.colorBurn`](https://developer.apple.com/documentation/CoreGraphics/CGBlendMode/colorBurn) blend mode to darken the colors within the park.
+When the map view requests renderer objects from the map delegate for these overlay objects, the app configures the [`blendMode`](mkoverlayrenderer/blendmode.md) property with the [`CGBlendMode.screen`](https://developer.apple.com/documentation/coregraphics/cgblendmode/screen) blend mode to lighten the map area outside the park, and the [`CGBlendMode.colorBurn`](https://developer.apple.com/documentation/coregraphics/cgblendmode/colorburn) blend mode to darken the colors within the park.
 
 ```swift
 func createBlendModesPolygonRenderer(for overlay: MKPolygon) -> MKPolygonRenderer {
@@ -279,7 +279,7 @@ For further information on blend modes, see “Setting Blend Modes” and “Usi
 
 To draw complex overlays that go beyond drawing boundaries and filling standard overlay shapes, this sample code project creates a custom overlay renderer. The app contains data related to earthquake hazards, and defines a custom `MKOverlay` to represent that hazard data. It also defines a custom overlay renderer to draw a color-coded, shaded map of hazards based on the data.
 
-To create a custom overlay renderer, the app subclasses `MKOverlayRenderer` and implements `draw(_:zoomScale:in:)` to draw the earthquake data into the provided [`CGContext`](https://developer.apple.com/documentation/CoreGraphics/CGContext). MapKit calls this method concurrently on multiple background queues for the app to draw the overlay, with each call rendering a specific section of the overlay within the bounds of the `mapRect` parameter.
+To create a custom overlay renderer, the app subclasses `MKOverlayRenderer` and implements `draw(_:zoomScale:in:)` to draw the earthquake data into the provided [`CGContext`](https://developer.apple.com/documentation/coregraphics/cgcontext). MapKit calls this method concurrently on multiple background queues for the app to draw the overlay, with each call rendering a specific section of the overlay within the bounds of the `mapRect` parameter.
 
 ```swift
 override func draw(_ mapRect: MKMapRect, zoomScale: MKZoomScale, in context: CGContext) {

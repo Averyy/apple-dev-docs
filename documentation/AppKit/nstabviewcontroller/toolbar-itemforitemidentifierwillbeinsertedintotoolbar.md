@@ -29,7 +29,7 @@ If you override this method, you must call `super` at some point in your impleme
 
 - `toolbar`: The toolbar making the request.
 - `itemIdentifier`: The identifier of the toolbar item being requested.
-- `flag`: A Boolean indicating whether the item is inserted immediately into the toolbar. A value of [`true`](https://developer.apple.com/documentation/Swift/true) means the item is inserted into the toolbar. A value of [`false`](https://developer.apple.com/documentation/Swift/false) means the item is added to the toolbar’s configuration palette. The same item may be requested more than once with different values for this flag.
+- `flag`: A Boolean indicating whether the item is inserted immediately into the toolbar. A value of [`true`](https://developer.apple.com/documentation/swift/true) means the item is inserted into the toolbar. A value of [`false`](https://developer.apple.com/documentation/swift/false) means the item is added to the toolbar’s configuration palette. The same item may be requested more than once with different values for this flag.
 
 ## See Also
 

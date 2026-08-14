@@ -22,7 +22,7 @@ func write(toFile path: String, atomically useAuxiliaryFile: Bool) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/Swift/true) if the operation succeeds, otherwise [`false`](https://developer.apple.com/documentation/Swift/false).
+[`true`](https://developer.apple.com/documentation/swift/true) if the operation succeeds, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
 
 #### Discussion
 
@@ -31,7 +31,7 @@ This method may not be appropriate when writing to publicly accessible files. To
 ## Parameters
 
 - `path`: The location to which to write the receiver’s bytes. If `path` contains a tilde (~) character, you must expand it with [`expandingTildeInPath`](nsstring/expandingtildeinpath.md) before invoking this method.
-- `useAuxiliaryFile`: If [`true`](https://developer.apple.com/documentation/Swift/true), the data is written to a backup file, and then—assuming no errors occur—the backup file is renamed to the name specified by `path`; otherwise, the data is written directly to `path`.
+- `useAuxiliaryFile`: If [`true`](https://developer.apple.com/documentation/swift/true), the data is written to a backup file, and then—assuming no errors occur—the backup file is renamed to the name specified by `path`; otherwise, the data is written directly to `path`.
 
 ## See Also
 

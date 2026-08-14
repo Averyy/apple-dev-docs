@@ -10,24 +10,24 @@ Let users scan text and codes with the camera, similar to the Live Text interfac
 
 You create a [`DataScannerViewController`](datascannerviewcontroller.md) object and implement its delegate methods to handle when the scanner identifies items in the camera’s live video. When users tap an item, such as a QR code, you offer an appropriate action, depending on the item type. A QR code contains data, called a *payload*, such as a phone number or email address. If the payload is a website, you can open it in the browser or perform some other custom action.
 
-![A mockup of an iPhone screen showing the data scanner view controller view with a QR code highlighted in the camera’s live video.](https://docs-assets.developer.apple.com/published/e5caaaf0e057ee741c6e3ebda42dd26a/scanning_data_with_the_camera-1%402x.png)
+![A mockup of an iPhone screen showing the data scanner view controller view with a QR code highlighted in the camera’s live video.](/images/com.apple.VisionKit/scanning_data_with_the_camera-1@2x.png)
 
-> ❗ **Important**: The code listings in this article use asynchronous methods that you invoke from an `async` method or within a [`Task`](https://developer.apple.com/documentation/Swift/Task) structure. For details on asynchronous flows, see [`Concurrency`](https://developer.apple.com/documentation/Swift/concurrency).
+> ❗ **Important**: The code listings in this article use asynchronous methods that you invoke from an `async` method or within a [`Task`](https://developer.apple.com/documentation/swift/task) structure. For details on asynchronous flows, see [`Concurrency`](https://developer.apple.com/documentation/swift/concurrency).
 
 ##### Provide a Reason for Using the Camera
 
 The first time your app attempts to use the camera, the system prompts users for permission. It displays a dialog that includes the name of your app and a reason that you provide to notify users why you’re using the camera. If the user grants permission, you can use the camera on the device; otherwise, the user is unable to use your app to scan text or codes. If you don’t add this key, a runtime error occurs when you access the camera.
 
-You provide the reason for using the camera in the Xcode project configuration. Add the [`NSCameraUsageDescription`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSCameraUsageDescription) key to the target’s information property list in Xcode.
+You provide the reason for using the camera in the Xcode project configuration. Add the [`NSCameraUsageDescription`](https://developer.apple.com/documentation/bundleresources/information-property-list/nscamerausagedescription) key to the target’s information property list in Xcode.
 
 1. In the project editor, select the target and click Info.
 2. Under Custom iOS Target Properties, click the Plus button in any row.
 3. From the pop-up menu in the Key column, choose Privacy - Camera Usage Description.
 4. In the Value column, enter the reason, such as “Your camera is used to scan text and codes.”
 
-![A screenshot of the Xcode project editor showing the target selected and editing the Privacy - Camera Usage Description key in the Information Property List.](https://docs-assets.developer.apple.com/published/0706781ba990ceeea9f4737390b4f684/scanning_data_with_the_camera-2%402x.png)
+![A screenshot of the Xcode project editor showing the target selected and editing the Privacy - Camera Usage Description key in the Information Property List.](/images/com.apple.VisionKit/scanning_data_with_the_camera-2@2x.png)
 
-For more information about privacy keys, see [`Requesting access to protected resources`](https://developer.apple.com/documentation/UIKit/requesting-access-to-protected-resources).
+For more information about privacy keys, see [`Requesting access to protected resources`](https://developer.apple.com/documentation/uikit/requesting-access-to-protected-resources).
 
 ##### Create a Data Scanner View Controller
 
@@ -74,9 +74,9 @@ var scannerAvailable: Bool {
 
 If the scanner becomes unavailable for any reason while your app is running, the data scanner calls the [`dataScanner(_:becameUnavailableWithError:)`](datascannerviewcontrollerdelegate/datascanner(_:becameunavailablewitherror:).md) delegate method. Implement this delegate method to disable or remove the data-scanning controls in your interface. For example, the scanner calls this method when users tap Don’t Allow the first time the system prompt appears, as described in [`Provide a reason for using the camera`](scanning-data-with-the-camera#Provide-a-reason-for-using-the-camera.md).
 
-To reset the user authorization when testing your code, see [`Requesting access to protected resources`](https://developer.apple.com/documentation/UIKit/requesting-access-to-protected-resources#3137869).
+To reset the user authorization when testing your code, see [`Requesting access to protected resources`](https://developer.apple.com/documentation/uikit/requesting-access-to-protected-resources).
 
-![A screenshot of an iPhone showing the system dialog requesting access to the camera with the reason given by the app, and the Don’t Allow and OK buttons.](https://docs-assets.developer.apple.com/published/7398cd9d1c637939db7eacdd3d2e7e9b/scanning_data_with_the_camera-3%402x.png)
+![A screenshot of an iPhone showing the system dialog requesting access to the camera with the reason given by the app, and the Don’t Allow and OK buttons.](/images/com.apple.VisionKit/scanning_data_with_the_camera-3@2x.png)
 
 ##### Begin Data Scanning
 
@@ -147,7 +147,7 @@ To create a custom text type, pass one of the [`DataScannerViewController.TextCo
 .text(textContentType: .flightNumber)
 ```
 
-To create a custom barcode type, pass the symbology you want to scan to the barcode type initializer. For a complete list of the symbology that the data scanner supports, see [`VNBarcodeSymbology`](https://developer.apple.com/documentation/Vision/VNBarcodeSymbology). For example, create a type for scanning Aztec codes.
+To create a custom barcode type, pass the symbology you want to scan to the barcode type initializer. For a complete list of the symbology that the data scanner supports, see [`VNBarcodeSymbology`](https://developer.apple.com/documentation/vision/vnbarcodesymbology). For example, create a type for scanning Aztec codes.
 
 ```swift
 .barcode(symbologies: [.aztec])
@@ -180,7 +180,7 @@ let textDataType: DataScannerViewController.RecognizedDataType =
 
 Then pass the data type in the `recognizedDataTypes `parameter of the initializer when you create the `DataScannerViewController` object.
 
-To determine whether the data scanner view controller supports a language, check whether the array that the `DataScannerViewController` [`supportedTextRecognitionLanguages`](datascannerviewcontroller/supportedtextrecognitionlanguages.md) class property returns includes the language ID. For more information on language IDs, see [`Choosing localization regions and scripts`](https://developer.apple.com/documentation/Xcode/choosing-localization-regions-and-scripts).
+To determine whether the data scanner view controller supports a language, check whether the array that the `DataScannerViewController` [`supportedTextRecognitionLanguages`](datascannerviewcontroller/supportedtextrecognitionlanguages.md) class property returns includes the language ID. For more information on language IDs, see [`Choosing localization regions and scripts`](https://developer.apple.com/documentation/xcode/choosing-localization-regions-and-scripts).
 
 ## See Also
 

@@ -29,8 +29,8 @@ This method generates a smooth linear-gradient image. The effect creates a gradi
 
 The smooth linear-gradient filter uses the following properties:
 
-- **`point0`**: A [`CGPoint`](https://developer.apple.com/documentation/CoreFoundation/CGPoint) representing the starting position of the gradient.
-- **`point1`**: A [`CGPoint`](https://developer.apple.com/documentation/CoreFoundation/CGPoint) representing the ending position of the gradient.
+- **`point0`**: A [`CGPoint`](https://developer.apple.com/documentation/corefoundation/cgpoint) representing the starting position of the gradient.
+- **`point1`**: A [`CGPoint`](https://developer.apple.com/documentation/corefoundation/cgpoint) representing the ending position of the gradient.
 - **`color0`**: A [`CIColor`](cicolor.md) representing the first color used in the gradient.
 - **`color1`**: A [`CIColor`](cicolor.md) representing the second color used in the gradient.
 
@@ -47,7 +47,7 @@ func smoothLinear() -> CIImage {
 }
 ```
 
-![An image that gradually changes in color from yellow in the bottom left corner to light blue in the top right corner.](https://docs-assets.developer.apple.com/published/03ab63a8892b985c3ac8d0a7693deeed/media-3558802%402x.png)
+![An image that gradually changes in color from yellow in the bottom left corner to light blue in the top right corner.](/images/com.apple.coreimage/media-3558802@2x.png)
 
 ## See Also
 

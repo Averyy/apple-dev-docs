@@ -16,7 +16,7 @@ var applicationState: WKApplicationState { get }
 
 #### Discussion
 
-The watchOS app may be active, inactive, or running in the background. Use this property to get the current state. To receive notifications about state changes, implement the appropriate methods of the [`WKApplicationDelegate`](wkapplicationdelegate.md) object, or create a SwiftUI view that updates based on changes to the [`ScenePhase`](https://developer.apple.com/documentation/SwiftUI/ScenePhase) environment value.
+The watchOS app may be active, inactive, or running in the background. Use this property to get the current state. To receive notifications about state changes, implement the appropriate methods of the [`WKApplicationDelegate`](wkapplicationdelegate.md) object, or create a SwiftUI view that updates based on changes to the [`ScenePhase`](https://developer.apple.com/documentation/swiftui/scenephase) environment value.
 
 ## See Also
 

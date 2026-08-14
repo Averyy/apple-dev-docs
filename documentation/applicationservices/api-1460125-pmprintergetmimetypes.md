@@ -25,8 +25,8 @@ This function retrieves the types of data that can be submitted to a printer wit
 ## Parameters
 
 - `printer`: The printer whose supported MIME types you want to obtain.
-- `settings`: The print settings for the print job. The print settings object contains the job destination, which affects the available types. This parameter may be  .
-- `mimeTypes`: A pointer to your   variable. On return, the variable refers to a Core Foundation array containing the MIME types supported by the specified printer. Each element in the array is a Core Foundation string. You should not release the array without first retaining it.
+- `settings`: The print settings for the print job. The print settings object contains the job destination, which affects the available types. This parameter may be `NULL`.
+- `mimeTypes`: A pointer to your [`CFArray`](https://developer.apple.com/documentation/corefoundation/cfarray) variable. On return, the variable refers to a Core Foundation array containing the MIME types supported by the specified printer. Each element in the array is a Core Foundation string. You should not release the array without first retaining it.
 
 ## See Also
 

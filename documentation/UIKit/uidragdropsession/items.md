@@ -20,7 +20,7 @@ var items: [UIDragItem] { get }
 
 #### Discussion
 
-The drag item’s [`NSItemProvider`](https://developer.apple.com/documentation/Foundation/NSItemProvider) object doesn’t load the data for the item until the drop interaction happens. However, before the interaction happens, you can get the item’s registered type identifiers and metadata. The data is available to you only in the drop interaction delegate’s [`dropInteraction(_:performDrop:)`](uidropinteractiondelegate/dropinteraction(_:performdrop:).md) method.
+The drag item’s [`NSItemProvider`](https://developer.apple.com/documentation/foundation/nsitemprovider) object doesn’t load the data for the item until the drop interaction happens. However, before the interaction happens, you can get the item’s registered type identifiers and metadata. The data is available to you only in the drop interaction delegate’s [`dropInteraction(_:performDrop:)`](uidropinteractiondelegate/dropinteraction(_:performdrop:).md) method.
 
 ## See Also
 

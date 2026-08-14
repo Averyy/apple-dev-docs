@@ -16,7 +16,7 @@ Configure recurring leaderboards in Xcode before accessing them in your code and
 
 You configure a recurring leaderboard like a classic leaderboard, but you also enable the Recurring setting, and configure time-related properties. Under the Recurring section, set a start date for the first occurrence. Then, enter the duration for each occurrence to establish the period in which players can earn scores. To specify the frequency of the occurrences, enter a restart interval. Occurrences are sequential and don’t overlap, so the restart interval must be equal to or greater than the duration. To create a time delay between occurrences, set the restart interval to a number that is greater than the duration.
 
-![A screenshot showing the Xcode project with a GameKit configuration file selected. A recurring leaderboard is in a selected state that starts on Sunday at noon, lasts for 60 minutes, and restarts every 7 days.](https://docs-assets.developer.apple.com/published/167c6541be03494e249acd72adf2be45/xcode-recurring-leaderboard%402x.png)
+![A screenshot showing the Xcode project with a GameKit configuration file selected. A recurring leaderboard is in a selected state that starts on Sunday at noon, lasts for 60 minutes, and restarts every 7 days.](/images/com.apple.gamekit/xcode-recurring-leaderboard@2x.png)
 
 For example, if the restart interval and duration are both 24 hours, the recurring leaderboard runs daily with no gaps between occurrences. To create a 1-hour contest every Sunday at noon, set the start date to Sunday at noon, then set the restart interval to 7 days and the duration to 60 minutes. To create a 15-minute competition every hour, set the restart interval to 60 minutes and the duration to 15 minutes.
 

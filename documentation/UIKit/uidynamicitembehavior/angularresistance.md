@@ -20,7 +20,7 @@ var angularResistance: CGFloat { get set }
 
 #### Discussion
 
-Valid range is `0` through [`CGFLOAT_MAX`](https://developer.apple.com/documentation/CoreFoundation/CGFLOAT_MAX). The greater the value, the greater the angular damping and the faster rotation slows to a stop.
+Valid range is `0` through [`CGFLOAT_MAX`](https://developer.apple.com/documentation/corefoundation/cgfloat_max). The greater the value, the greater the angular damping and the faster rotation slows to a stop.
 
 ## See Also
 

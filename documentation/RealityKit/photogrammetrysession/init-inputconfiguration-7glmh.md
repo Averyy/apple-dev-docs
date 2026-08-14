@@ -19,11 +19,11 @@ convenience init<S>(input: S, configuration: PhotogrammetrySession.Configuration
 
 #### Discussion
 
-Creates a new session instance from a custom sequence of [`PhotogrammetrySample`](photogrammetrysample.md) objects by iterating over the provided  [`Sequence`](https://developer.apple.com/documentation/Swift/Sequence) object.
+Creates a new session instance from a custom sequence of [`PhotogrammetrySample`](photogrammetrysample.md) objects by iterating over the provided  [`Sequence`](https://developer.apple.com/documentation/swift/sequence) object.
 
-The constructor will only use `makeIterator()` on `input` and will then iterate through the sequence only once.  A provided iterator should be lazy, or a lazy  [`Sequence`](https://developer.apple.com/documentation/Swift/Sequence) and map used.
+The constructor will only use `makeIterator()` on `input` and will then iterate through the sequence only once.  A provided iterator should be lazy, or a lazy  [`Sequence`](https://developer.apple.com/documentation/swift/sequence) and map used.
 
-> **Note**: To minimize memory usage, use lazy sequences that only create a [`PhotogrammetrySample`](photogrammetrysample.md) as it iterates by making calls to `next()` on its associated [`IteratorProtocol`](https://developer.apple.com/documentation/Swift/IteratorProtocol).
+> **Note**: To minimize memory usage, use lazy sequences that only create a [`PhotogrammetrySample`](photogrammetrysample.md) as it iterates by making calls to `next()` on its associated [`IteratorProtocol`](https://developer.apple.com/documentation/swift/iteratorprotocol).
 
 ## Parameters
 

@@ -17,7 +17,7 @@ object InvalidNotificationTypeError
 ## Properties
 
 - `errorCode` (int64)
-- `errorMessage` (string): For a list of valid notification types and subtypes, see [`notificationType`](https://developer.apple.com/documentation/AppStoreServerNotifications/notificationType) and [`subtype`](https://developer.apple.com/documentation/AppStoreServerNotifications/subtype). If you provide both a notification type and subtype, ensure the two are a valid combination, as documented on [`subtype`](https://developer.apple.com/documentation/AppStoreServerNotifications/subtype).
+- `errorMessage` (string): For a list of valid notification types and subtypes, see [`notificationType`](https://developer.apple.com/documentation/appstoreservernotifications/notificationtype) and [`subtype`](https://developer.apple.com/documentation/appstoreservernotifications/subtype). If you provide both a notification type and subtype, ensure the two are a valid combination, as documented on [`subtype`](https://developer.apple.com/documentation/appstoreservernotifications/subtype).
 
 ## See Also
 

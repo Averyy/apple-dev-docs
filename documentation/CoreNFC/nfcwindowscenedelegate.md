@@ -20,7 +20,7 @@ protocol NFCWindowSceneDelegate
 
 When the device is eligible to receive NFC-related events, use this protocol to update your user interface. The received [`NFCWindowSceneEvent`](nfcwindowsceneevent.md) indicates whether the event represents the presence of a card reader or a gesture to initiate a contactless transaction by the person using the app.
 
-You typically add conformance to this protocol in your app’s main scene delegate, where you already conform to [`UIWindowSceneDelegate`](https://developer.apple.com/documentation/UIKit/UIWindowSceneDelegate).
+You typically add conformance to this protocol in your app’s main scene delegate, where you already conform to [`UIWindowSceneDelegate`](https://developer.apple.com/documentation/uikit/uiwindowscenedelegate).
 
 ## Topics
 

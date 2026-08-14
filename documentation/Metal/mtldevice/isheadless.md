@@ -22,7 +22,7 @@ var isHeadless: Bool { get }
 
 #### Discussion
 
-The value is [`true`](https://developer.apple.com/documentation/Swift/true) when the GPU is *headless*, which means it isn’t connected to any displays.
+The value is [`true`](https://developer.apple.com/documentation/swift/true) when the GPU is *headless*, which means it isn’t connected to any displays.
 
 ## See Also
 

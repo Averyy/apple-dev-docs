@@ -71,8 +71,8 @@ extension UTType {
 ## Relationships
 
 ### Inherits From
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 ### Conforming Types
 - [CodableRepresentation](codablerepresentation.md)
 - [DataRepresentation](datarepresentation.md)

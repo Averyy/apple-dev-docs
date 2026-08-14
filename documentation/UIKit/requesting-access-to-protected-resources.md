@@ -10,13 +10,13 @@ Modern devices collect and store a wealth of sensitive information about people 
 
 Ensure your app accesses only what it needs to do its job. To support this principle, Apple’s operating systems restrict access to protected data and resources by default. Apps can request access on a case-by-case basis, providing an explanation for why they need access. The person who uses the app decides whether to grant or deny the request.
 
-> 💡 **Tip**:  In addition to asking people for permission to access a resource, in some cases, you also need to separately declare your intent to do so by adding an entitlement to your app, as described in [`Entitlements`](https://developer.apple.com/documentation/BundleResources/Entitlements).
+> 💡 **Tip**:  In addition to asking people for permission to access a resource, in some cases, you also need to separately declare your intent to do so by adding an entitlement to your app, as described in [`Entitlements`](https://developer.apple.com/documentation/bundleresources/entitlements).
 
 ##### Provide a Purpose String
 
 The first time your app attempts to access a protected resource, the system prompts the person using the app for permission. In the following example, an iOS app called FoodDeliveryApp, which provides a food delivery service, generates a prompt requesting access to the person’s location:
 
-![A screenshot of an iOS alert asking the user whether to allow FoodDeliveryApp access to their location data. The alert includes a purpose string message from the app’s developer, and includes the Allow Once, Allow While Using App, and Don't Allow options.](https://docs-assets.developer.apple.com/published/dc86f13c31fcacedf4fc268c64c7b04d/requesting-access-to-protected-resources-1%402x.png)
+![A screenshot of an iOS alert asking the user whether to allow FoodDeliveryApp access to their location data. The alert includes a purpose string message from the app’s developer, and includes the Allow Once, Allow While Using App, and Don't Allow options.](/images/com.apple.uikit/requesting-access-to-protected-resources-1@2x.png)
 
 If the person grants permission, the system remembers the person’s choice and doesn’t prompt again. If the person denies permission, the access attempt that initiates the prompt, and any further attempts, fail in a resource-specific way. For the particular case of access to location data, the person can choose to allow access for one session only by tapping Allow Once.
 
@@ -29,15 +29,15 @@ To provide a purpose string, follow these steps in Xcode:
 3. Choose the protected resource you want to add; in this case, it’s “Location (When in Use)”.
 4. Enter the purpose string in the text field.
 
-![A screenshot of the Xcode capability editor, showing the added NSLocationWhenInUseUsageDescription key and associated string value that matches the message in the previous figure.](https://docs-assets.developer.apple.com/published/75fb0a53e382312c6382f78a91a14342/requesting-access-to-protected-resources-2%402x.png)
+![A screenshot of the Xcode capability editor, showing the added NSLocationWhenInUseUsageDescription key and associated string value that matches the message in the previous figure.](/images/com.apple.uikit/requesting-access-to-protected-resources-2@2x.png)
 
 Always provide a valid purpose string in the Signing and Capabilities editor if your app uses a protected resource. If you don’t, attempts to access the resource fail, and might cause your app to crash. Xcode detects when your app crashes for this reason and reports an issue, telling you to add the purpose string to your app. Click the Add button to provide the purpose string.
 
-![A screenshot of Xcode. The debugger is active, showing that the app crashed because it needs to add a purpose string to access a protected resource.](https://docs-assets.developer.apple.com/published/658f95096c9c4e02cd99895dd1fd6b3e/requesting-access-to-protected-resources-3%402x.png)
+![A screenshot of Xcode. The debugger is active, showing that the app crashed because it needs to add a purpose string to access a protected resource.](/images/com.apple.uikit/requesting-access-to-protected-resources-3@2x.png)
 
-Xcode adds a build setting to your app that configures the purpose string as the value for a [`Information Property List`](https://developer.apple.com/documentation/BundleResources/Information-Property-List); in this example, the key is [`NSLocationWhenInUseUsageDescription`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSLocationWhenInUseUsageDescription), so the build setting is `INFOPLIST_KEY_NSLocationWhenInUseUsageDescription`. For more information on configuring information property list values using build settings, see [`Managing your app’s information property list values`](https://developer.apple.com/documentation/BundleResources/managing-your-app-s-information-property-list).
+Xcode adds a build setting to your app that configures the purpose string as the value for a [`Information Property List`](https://developer.apple.com/documentation/bundleresources/information-property-list); in this example, the key is [`NSLocationWhenInUseUsageDescription`](https://developer.apple.com/documentation/bundleresources/information-property-list/nslocationwheninuseusagedescription), so the build setting is `INFOPLIST_KEY_NSLocationWhenInUseUsageDescription`. For more information on configuring information property list values using build settings, see [`Managing your app’s information property list values`](https://developer.apple.com/documentation/bundleresources/managing-your-app-s-information-property-list).
 
-If your app supports multiple locales, in addition to providing a purpose string in the Signing and Capabilities editor, localize the purpose string for each locale you support. Create a string catalog file called `InfoPlist.xcstrings`, and build your app to populate the string catalog with keys for the usage description strings in your app. Add the translations for your usage description strings to the localizations in the string catalog. For more information, see [`Localizing and varying text with a string catalog`](https://developer.apple.com/documentation/Xcode/localizing-and-varying-text-with-a-string-catalog).
+If your app supports multiple locales, in addition to providing a purpose string in the Signing and Capabilities editor, localize the purpose string for each locale you support. Create a string catalog file called `InfoPlist.xcstrings`, and build your app to populate the string catalog with keys for the usage description strings in your app. Add the translations for your usage description strings to the localizations in the string catalog. For more information, see [`Localizing and varying text with a string catalog`](https://developer.apple.com/documentation/xcode/localizing-and-varying-text-with-a-string-catalog).
 
 ##### Adhere to the Requirements for Purpose Strings
 
@@ -50,7 +50,7 @@ To give people useful, concise information about why you’re requesting access 
 
 Adhere to these requirements for every purpose string in your app, including localized purpose strings.
 
-App Review checks for the use of protected resources, and rejects apps that contain code accessing those resources without a purpose string. For example, an app accessing location might receive the following information from App Review about the requirement that an [`NSLocationWhenInUseUsageDescription`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSLocationWhenInUseUsageDescription) key be present:
+App Review checks for the use of protected resources, and rejects apps that contain code accessing those resources without a purpose string. For example, an app accessing location might receive the following information from App Review about the requirement that an [`NSLocationWhenInUseUsageDescription`](https://developer.apple.com/documentation/bundleresources/information-property-list/nslocationwheninuseusagedescription) key be present:
 
 ```console
 ITMS-90683: Missing purpose string in Info.plist. 
@@ -89,7 +89,7 @@ To reset permissions for a particular service in macOS apps, run the `tccutil re
 $ tccutil reset AppleEvents
 ```
 
-This command resets authorization access for all apps using the protected resource. You can similarly specify Camera, Calendar, Reminders, or other services to reset them individually. For more information, see [`Resetting access to protected resources in macOS`](https://developer.apple.com/documentation/Xcode/resetting-access-to-protected-resources-in-macOS).
+This command resets authorization access for all apps using the protected resource. You can similarly specify Camera, Calendar, Reminders, or other services to reset them individually. For more information, see [`Resetting access to protected resources in macOS`](https://developer.apple.com/documentation/xcode/resetting-access-to-protected-resources-in-macos).
 
 ## See Also
 

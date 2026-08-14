@@ -24,7 +24,7 @@ func SparseMultiply(_ alpha: Float, _ A: SparseMatrix_Float, _ X: DenseMatrix_Fl
 
 Use this function to multiply a scalar value by a sparse matrix, and then by a dense matrix. The following equation is an example of a scalar-matrix-matrix multiplication where the first matrix is sparse:
 
-![A mathematical formula that describes the matrix multiplication, Y equals alpha times A X. A scalar value multiplied by a four-by-four matrix multiplied by a four-by-two matrix equals a four-by-two matrix.](https://docs-assets.developer.apple.com/published/53b1da8d6c73c9a2bfddb41cc988776d/media-3703075%402x.png)
+![A mathematical formula that describes the matrix multiplication, Y equals alpha times A X. A scalar value multiplied by a four-by-four matrix multiplied by a four-by-two matrix equals a four-by-two matrix.](/images/com.apple.accelerate/media-3703075@2x.png)
 
 Call [`SparseMultiply(_:_:_:_:)`](sparsemultiply(_:_:_:_:)-73ruq.md)to calculate the result.
 

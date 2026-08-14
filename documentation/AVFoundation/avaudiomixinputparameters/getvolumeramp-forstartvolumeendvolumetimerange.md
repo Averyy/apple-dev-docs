@@ -22,7 +22,7 @@ func getVolumeRamp(for time: CMTime, startVolume: UnsafeMutablePointer<Float>?, 
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/Swift/true) if the values were retrieved successfully, otherwise [`false`](https://developer.apple.com/documentation/Swift/false). Returns [`false`](https://developer.apple.com/documentation/Swift/false) if `time` is beyond the duration of the last volume ramp that has been set.
+[`true`](https://developer.apple.com/documentation/swift/true) if the values were retrieved successfully, otherwise [`false`](https://developer.apple.com/documentation/swift/false). Returns [`false`](https://developer.apple.com/documentation/swift/false) if `time` is beyond the duration of the last volume ramp that has been set.
 
 #### Discussion
 
@@ -33,7 +33,7 @@ The process of setting up volume ramps requires the configuration of an instance
 - `time`: If a ramp with a time range that contains the specified time has been set, information about the effective ramp for that time is supplied. Otherwise, information about the first ramp that starts after the specified time is supplied.
 - `startVolume`: A pointer to a float to receive the starting volume value for the volume ramp. This value may be `NULL`.
 - `endVolume`: A pointer to a float to receive the ending volume value for the volume ramp. This value may be `NULL`.
-- `timeRange`: A pointer to a [`CMTimeRange`](https://developer.apple.com/documentation/CoreMedia/CMTimeRange) to receive the time range of the volume ramp. This value may be `NULL`.
+- `timeRange`: A pointer to a [`CMTimeRange`](https://developer.apple.com/documentation/coremedia/cmtimerange) to receive the time range of the volume ramp. This value may be `NULL`.
 
 
 ---

@@ -26,7 +26,7 @@ The command and response buffers have a one-to-one mapping; use the same slot nu
 
 ## Parameters
 
-- `action`: A pointer to the [`OSAction`](https://developer.apple.com/documentation/DriverKit/OSAction) object of the asynchronous request that the system specifies in a [`UserProcessBundledParallelTasks`](iouserscsiparallelinterfacecontroller/userprocessbundledparalleltasks.md) call.
+- `action`: A pointer to the [`OSAction`](https://developer.apple.com/documentation/driverkit/osaction) object of the asynchronous request that the system specifies in a [`UserProcessBundledParallelTasks`](iouserscsiparallelinterfacecontroller/userprocessbundledparalleltasks.md) call.
 - `parallelResponseSlotIndices`: The indices of the shared response buffer slots containing a [`SCSIUserParallelResponse`](scsiuserparallelresponse.md) for each task to complete.
 - `parallelResponseSlotIndicesCount`: The number of tasks to complete. Ensure that entries from zero to `(parallelResponseSlotIndicesCount - 1)` have valid indicies.
 

@@ -19,7 +19,7 @@ case interactive
 
 #### Discussion
 
-Specify this option for latency-sensitive, low-volume connections that might use cellular data. You must also set the [`Multipath Entitlement`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.networking.multipath) in the Xcode Capabilities pane for your app.
+Specify this option for latency-sensitive, low-volume connections that might use cellular data. You must also set the [`Multipath Entitlement`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.networking.multipath) in the Xcode Capabilities pane for your app.
 
 ## See Also
 

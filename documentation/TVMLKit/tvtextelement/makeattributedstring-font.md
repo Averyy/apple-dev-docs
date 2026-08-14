@@ -16,11 +16,11 @@ func makeAttributedString(font: UIFont) -> NSAttributedString
 
 #### Return Value
 
-An [`NSAttributedString`](https://developer.apple.com/documentation/Foundation/NSAttributedString) object with the supplied font.
+An [`NSAttributedString`](https://developer.apple.com/documentation/foundation/nsattributedstring) object with the supplied font.
 
 #### Discussion
 
-Supply a font to this method to get the [`NSAttributedString`](https://developer.apple.com/documentation/Foundation/NSAttributedString) representation of the text contained within an element.
+Supply a font to this method to get the [`NSAttributedString`](https://developer.apple.com/documentation/foundation/nsattributedstring) representation of the text contained within an element.
 
 ## Parameters
 

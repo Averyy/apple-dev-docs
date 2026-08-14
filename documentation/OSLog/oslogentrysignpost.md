@@ -22,7 +22,7 @@ class OSLogEntrySignpost
 
 #### Overview
 
-These entries are created by the os_signpost API. To learn more about signposts and how to create a signpost entry, see [`os_signpost(_:dso:log:name:signpostID:)`](https://developer.apple.com/documentation/os/os_signpost(_:dso:log:name:signpostID:)-2oz8u) and [`os_signpost(_:dso:log:name:signpostID:_:_:)`](https://developer.apple.com/documentation/os/os_signpost(_:dso:log:name:signpostID:_:_:)-2om9b).
+These entries are created by the os_signpost API. To learn more about signposts and how to create a signpost entry, see [`os_signpost(_:dso:log:name:signpostID:)`](https://developer.apple.com/documentation/os/os_signpost(_:dso:log:name:signpostid:)-2oz8u) and [`os_signpost(_:dso:log:name:signpostID:_:_:)`](https://developer.apple.com/documentation/os/os_signpost(_:dso:log:name:signpostid:_:_:)-2om9b).
 
 ## Topics
 
@@ -42,14 +42,14 @@ These entries are created by the os_signpost API. To learn more about signposts 
 ### Inherits From
 - [OSLogEntry](oslogentry.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCoding](../Foundation/NSCoding.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [NSSecureCoding](../Foundation/NSSecureCoding.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCoding](../foundation/nscoding.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSSecureCoding](../foundation/nssecurecoding.md)
 - [OSLogEntryFromProcess](oslogentryfromprocess.md)
 - [OSLogEntryWithPayload](oslogentrywithpayload.md)
 

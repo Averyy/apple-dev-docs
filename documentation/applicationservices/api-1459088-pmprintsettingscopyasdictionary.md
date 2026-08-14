@@ -25,7 +25,7 @@ Most developers have no need to use this function. However, one way this functio
 ## Parameters
 
 - `printSettings`: The print settings object with the desired settings.
-- `settingsDictionary`: A pointer to your   variable. On return, the variable refers to a Core Foundation dictionary that contains the settings in the specified print settings object. Some of the keys in this dictionary are currently defined in  ; other keys are user-defined. You are responsible for releasing the dictionary. If an error occurs, the variable is set to  .
+- `settingsDictionary`: A pointer to your [`CFDictionary`](https://developer.apple.com/documentation/corefoundation/cfdictionary) variable. On return, the variable refers to a Core Foundation dictionary that contains the settings in the specified print settings object. Some of the keys in this dictionary are currently defined in `PMTicket.h`; other keys are user-defined. You are responsible for releasing the dictionary. If an error occurs, the variable is set to `NULL`.
 
 ## See Also
 

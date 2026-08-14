@@ -21,7 +21,7 @@ class CredentialTransaction
 
 #### Overview
 
-Use the [`transactionTask(_:action:)`](https://developer.apple.com/documentation/SwiftUI/View/transactionTask(_:action:)) view modifier to create a task for working with a credential. The `action` closure receives a `CredentialTransaction` instance that it can perform actions on.
+Use the [`transactionTask(_:action:)`](https://developer.apple.com/documentation/swiftui/view/transactiontask(_:action:)) view modifier to create a task for working with a credential. The `action` closure receives a `CredentialTransaction` instance that it can perform actions on.
 
 You can call the methods of `CredentialTransaction` and [`CredentialTransaction.Configuration`](credentialtransaction/configuration.md) from both apps and app extensions.
 

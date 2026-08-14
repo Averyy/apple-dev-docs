@@ -30,7 +30,7 @@ Some of the parameters specified in this call override equivalent pixel buffer a
 
 ## Parameters
 
-- `allocator`: The allocator to use for creating the buffer pool. Pass [`kCFAllocatorDefault`](https://developer.apple.com/documentation/CoreFoundation/kCFAllocatorDefault) for the `allocator` parameter to use the default allocator. See [`Predefined Allocators`](https://developer.apple.com/documentation/CoreFoundation/predefined-allocators) for additional values you can use.
+- `allocator`: The allocator to use for creating the buffer pool. Pass [`kCFAllocatorDefault`](https://developer.apple.com/documentation/corefoundation/kcfallocatordefault) for the `allocator` parameter to use the default allocator. See [`Predefined Allocators`](https://developer.apple.com/documentation/corefoundation/predefined-allocators) for additional values you can use.
 - `width`: The width of the pixel buffer, in pixels.
 - `height`: The height of the pixel buffer, in pixels.
 - `pixelFormatType`: The pixel format identified by its respective four character code (type `OSType`).

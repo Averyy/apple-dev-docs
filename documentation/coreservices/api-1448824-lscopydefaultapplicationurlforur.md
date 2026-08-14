@@ -25,8 +25,8 @@ Consults the binding tables to return the application that would be used to open
 ## Parameters
 
 - `inURL`: The URL of the item for which the app is requested.
-- `inRoleMask`: Whether to return the editor or viewer for  . If you don't care which, use  .
-- `outError`: On failure, set to a   describing the problem. If you are not interested in this information, pass  . The caller is responsible for releasing this object.
+- `inRoleMask`: Whether to return the editor or viewer for `inURL`. If you don't care which, use [`all`](lsrolesmask/1450616-all.md).
+- `outError`: On failure, set to a [`CFError`](https://developer.apple.com/documentation/corefoundation/cferror) describing the problem. If you are not interested in this information, pass `NULL`. The caller is responsible for releasing this object.
 
 ## See Also
 

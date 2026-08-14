@@ -21,14 +21,14 @@ protocol WebPlugInViewFactory : NSObjectProtocol
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 
 - [WebKit Objective-C Programming Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/DisplayWebContent/DisplayWebContent.html#//apple_ref/doc/uid/10000164i)
-- [WebPlugIn](../ObjectiveC/webplugin.md)
+- [WebPlugIn](../objectivec/webplugin.md)
   The `WebPlugIn` informal protocol defines methods that enable interaction between an application using the WebKit framework and any WebKit-based plug-ins it may use.
-- [WebPlugInContainer](../ObjectiveC/webplugincontainer.md)
+- [WebPlugInContainer](../objectivec/webplugincontainer.md)
   `WebPlugInContainer` is an informal protocol that enables a plug-in to send messages to the application.
 
 

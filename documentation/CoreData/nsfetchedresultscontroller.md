@@ -22,7 +22,7 @@ class NSFetchedResultsController<ResultType> where ResultType : NSFetchRequestRe
 
 #### Overview
 
-While you can use table views can in several ways, fetched results controllers primarily assist you with a primary list view. [`UITableView`](https://developer.apple.com/documentation/UIKit/UITableView) expects its data source to provide cells as an array of sections made up of rows. You configure a fetched results controller using a *fetch request* — an object that specifies what type of entity to fetch and how to sort the results. You can also add criteria for when to include a specific instance of the entity.
+While you can use table views can in several ways, fetched results controllers primarily assist you with a primary list view. [`UITableView`](https://developer.apple.com/documentation/uikit/uitableview) expects its data source to provide cells as an array of sections made up of rows. You configure a fetched results controller using a *fetch request* — an object that specifies what type of entity to fetch and how to sort the results. You can also add criteria for when to include a specific instance of the entity.
 
 The fetched results controller efficiently analyzes the result of the fetch request and computes all the information about sections in the result set. It also computes all the information for the index based on the result set.
 
@@ -208,7 +208,7 @@ You can’t change the fetch request to modify the results. Do the following if 
 
 When a managed object context notifies the fetched results controller of invalidated *individual* objects, the controller treats these as deleted objects and sends the proper delegate calls.
 
-Simultaneous invalidation of *all* the objects in a managed object context is possible, for example, as a result of calling [`reset()`](nsmanagedobjectcontext/reset().md), or if you remove a store from the persistent store coordinator. When this happens, [`NSFetchedResultsController`](nsfetchedresultscontroller.md) doesn’t invalidate all objects, nor does it send individual notifications for object deletions. Instead, you need to call [`performFetch()`](nsfetchedresultscontroller/performfetch().md) to reset the state of the controller then reload the data in the table view ([`reloadData()`](https://developer.apple.com/documentation/UIKit/UITableView/reloadData())).
+Simultaneous invalidation of *all* the objects in a managed object context is possible, for example, as a result of calling [`reset()`](nsmanagedobjectcontext/reset().md), or if you remove a store from the persistent store coordinator. When this happens, [`NSFetchedResultsController`](nsfetchedresultscontroller.md) doesn’t invalidate all objects, nor does it send individual notifications for object deletions. Instead, you need to call [`performFetch()`](nsfetchedresultscontroller/performfetch().md) to reset the state of the controller then reload the data in the table view ([`reloadData()`](https://developer.apple.com/documentation/uikit/uitableview/reloaddata())).
 
 ##### Subclassing Notes
 
@@ -264,14 +264,14 @@ You create a subclass of this class if you want to customize the creation of sec
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

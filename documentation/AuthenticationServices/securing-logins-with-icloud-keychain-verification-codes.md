@@ -12,7 +12,7 @@ With iCloud Keychain verification codes, iPhones, iPads, and Macs generate verif
 
 ##### Set Up the Verification Code
 
-Both iOS and macOS handle a special URL based on the industry standard [`otpauth specification`](https://developer.apple.comhttps://github.com/google/google-authenticator/wiki/Key-Uri-Format). The Apple-specific version of this URL is identical to the standard, but uses the `apple-otpauth:` scheme. Embed this URL in your webpages and apps to allow your users to set up new code generators directly in the iCloud Keychain password manager with minimal effort. On the web, use an `<a>` tag to create a link. In apps, create an [`NSAttributedString`](https://developer.apple.com/documentation/Foundation/NSAttributedString) with a [`link`](https://developer.apple.com/documentation/Foundation/NSAttributedString/Key/link) attribute, or open the URL in response to a button tap. When the user taps on the URL, the system prompts them to choose a credential. A new verification code is set up for that credential using the parameters specified in the URL.
+Both iOS and macOS handle a special URL based on the industry standard [`otpauth specification`](https://developer.apple.comhttps://github.com/google/google-authenticator/wiki/Key-Uri-Format). The Apple-specific version of this URL is identical to the standard, but uses the `apple-otpauth:` scheme. Embed this URL in your webpages and apps to allow your users to set up new code generators directly in the iCloud Keychain password manager with minimal effort. On the web, use an `<a>` tag to create a link. In apps, create an [`NSAttributedString`](https://developer.apple.com/documentation/foundation/nsattributedstring) with a [`link`](https://developer.apple.com/documentation/foundation/nsattributedstring/key/link) attribute, or open the URL in response to a button tap. When the user taps on the URL, the system prompts them to choose a credential. A new verification code is set up for that credential using the parameters specified in the URL.
 
 The host portion of the URL must be `totp`, and the path should be the proper name of your service, followed by a colon and the user name or email of the account. The `otpauth:` specification defines a number of query parameters. The following are the most important:
 
@@ -27,7 +27,7 @@ Here’s an example of the URL for an app called Example for the user meichen3@i
 
 ##### Prepare the Text Input Field
 
-AutoFill on iOS and macOS offer to fill verification codes automatically in text fields where you set the content type of the field to a one-time code type. In SwiftUI, set the content type to [`oneTimeCode`](https://developer.apple.com/documentation/UIKit/UITextContentType/oneTimeCode) with the [`textContentType(_:)`](https://developer.apple.com/documentation/SwiftUI/View/textContentType(_:)-ufdv) view modifier. In UIKit, set [`textContentType`](https://developer.apple.com/documentation/UIKit/UITextInputTraits/textContentType) to [`oneTimeCode`](https://developer.apple.com/documentation/UIKit/UITextContentType/oneTimeCode). In AppKit, set [`contentType`](https://developer.apple.com/documentation/AppKit/NSTextContent/contentType) to [`oneTimeCode`](https://developer.apple.com/documentation/AppKit/NSTextContentType/oneTimeCode). For web-based text fields, set the HTML attribute on the input element to `autocomplete=one-time-code`.
+AutoFill on iOS and macOS offer to fill verification codes automatically in text fields where you set the content type of the field to a one-time code type. In SwiftUI, set the content type to [`oneTimeCode`](https://developer.apple.com/documentation/uikit/uitextcontenttype/onetimecode) with the [`textContentType(_:)`](https://developer.apple.com/documentation/swiftui/view/textcontenttype(_:)-ufdv) view modifier. In UIKit, set [`textContentType`](https://developer.apple.com/documentation/uikit/uitextinputtraits/textcontenttype) to [`oneTimeCode`](https://developer.apple.com/documentation/uikit/uitextcontenttype/onetimecode). In AppKit, set [`contentType`](https://developer.apple.com/documentation/appkit/nstextcontent/contenttype) to [`oneTimeCode`](https://developer.apple.com/documentation/appkit/nstextcontenttype/onetimecode). For web-based text fields, set the HTML attribute on the input element to `autocomplete=one-time-code`.
 
 ## See Also
 
@@ -41,7 +41,7 @@ AutoFill on iOS and macOS offer to fill verification codes automatically in text
   Extend your web browser app to handle web authentication requests from other apps.
 - [class ASWebAuthenticationSessionWebBrowserSessionManager](aswebauthenticationsessionwebbrowsersessionmanager.md)
   A session manager that mediates sharing data between an app and a web browser.
-- [ASWebAuthenticationSessionWebBrowserSupportCapabilities](../BundleResources/Information-Property-List/ASWebAuthenticationSessionWebBrowserSupportCapabilities.md)
+- [ASWebAuthenticationSessionWebBrowserSupportCapabilities](../bundleresources/information-property-list/aswebauthenticationsessionwebbrowsersupportcapabilities.md)
   A collection of keys that a browser app uses to declare its ability to handle authentication requests from other apps.
 
 

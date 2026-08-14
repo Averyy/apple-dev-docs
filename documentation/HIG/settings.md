@@ -13,12 +13,12 @@ framework: HIG
 
 People expect apps and games to just work, but they also appreciate having ways to customize the experience to fit their needs.
 
-![A sketch of a gear, suggesting configuration. The image is overlaid with rectangular and circular grid lines and is tinted orange to subtly reflect the orange in the original six-color Apple logo.](https://docs-assets.developer.apple.com/published/554cce3cf44640dce126d5f03adca6cd/patterns-settings-intro~dark%402x.png)
+![A sketch of a gear, suggesting configuration. The image is overlaid with rectangular and circular grid lines and is tinted orange to subtly reflect the orange in the original six-color Apple logo.](/images/com.apple.HIG/patterns-settings-intro~dark@2x.png)
 On all Apple platforms, the system-provided Settings app lets people adjust things like the overall appearance of the system, network connections, account details, accessibility requirements, and language and region settings. On some platforms, the system-provided Settings app can also include settings for specific apps and games, often letting people adjust whether the app or game can access location information, use device features like microphone or camera, and integrate with system features like notifications, Siri, or Search.
 When necessary, you can provide a custom settings area within your app or game to offer general settings that affect your overall experience, like interface style or game-saving behavior. If you need to offer settings that affect only a specific task, you can provide these options within the task itself, so people don’t have to leave the experience to customize it.
 
 ## Best practices
-**Aim to provide default settings that give the best experience to the largest number of people.** For example, you can automatically maximize performance for the device your game is running on instead of asking players to make this choice after your game launches (for developer guidance, see [Improving your game’s graphics performance and settings](../Metal/improving-your-games-graphics-performance-and-settings.md)). When you choose appropriate default settings, people may not have to make any adjustments before they can start enjoying your app or game.
+**Aim to provide default settings that give the best experience to the largest number of people.** For example, you can automatically maximize performance for the device your game is running on instead of asking players to make this choice after your game launches (for developer guidance, see [Improving your game’s graphics performance and settings](../metal/improving-your-games-graphics-performance-and-settings.md)). When you choose appropriate default settings, people may not have to make any adjustments before they can start enjoying your app or game.
 **Minimize the number of settings you offer.** Although people appreciate having control over an app or game, too many settings can make the experience feel less approachable, while also making it hard to find a particular setting.
 **Make settings available in ways people expect.** For example, when a physical keyboard is connected, people often use the standard Command-Comma (,) keyboard shortcut to open an app’s settings, whereas in a game, players often use the Esc (Escape) key.
 **Avoid using settings to ask for setup information you can get in other ways.** For example, a game can automatically detect a connected controller or accessory instead of asking the player to identify it; an app can detect whether people are currently using Dark Mode.
@@ -55,9 +55,9 @@ In watchOS, apps and games don’t add custom settings to the system-provided Se
 [Onboarding](onboarding.md)
 
 #### Developer documentation
-[Settings](../SwiftUI/Settings.md) — SwiftUI
-[UserDefaults](../Foundation/UserDefaults.md) — Foundation
-[Preference Panes](../PreferencePanes.md)
+[Settings](../swiftui/settings.md) — SwiftUI
+[UserDefaults](../foundation/userdefaults.md) — Foundation
+[Preference Panes](../preferencepanes.md)
 
 ## Change log
 | Date | Changes |

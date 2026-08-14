@@ -21,7 +21,7 @@ class AVAudioUnitGenerator
 
 #### Overview
 
-A generator represents an [`AudioUnit`](https://developer.apple.com/documentation/AudioToolbox/AudioUnit) of type `kAudioUnitType_Generator` or `kAudioUnitType_RemoteGenerator`. A generator has no audio input, but produces audio output. An example is a tone generator.
+A generator represents an [`AudioUnit`](https://developer.apple.com/documentation/audiotoolbox/audiounit) of type `kAudioUnitType_Generator` or `kAudioUnitType_RemoteGenerator`. A generator has no audio input, but produces audio output. An example is a tone generator.
 
 ## Topics
 
@@ -40,14 +40,14 @@ A generator represents an [`AudioUnit`](https://developer.apple.com/documentatio
 - [AVAudio3DMixing](avaudio3dmixing.md)
 - [AVAudioMixing](avaudiomixing.md)
 - [AVAudioStereoMixing](avaudiostereomixing.md)
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 
 ---

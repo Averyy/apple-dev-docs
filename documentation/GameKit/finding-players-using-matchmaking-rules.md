@@ -8,7 +8,7 @@ Create a more customized and optimized gaming experience by using matchmaking ru
 
 Matchmaking rules can improve the quality of matches, reduce wait times, and increase player retention by offering a more engaging and fair gaming experience. You create rules that customize the matchmaking criteria using your game-specific properties, such as rules that match players by skill level, game mode, geolocation, and language. You can also create rules that gradually loosen the matchmaking criteria over time to find matches more quickly.
 
-Matchmaking rules contain compound expressions that Game Center applies to groups of match requests from players of your game. You write expressions using a JSON query language referencing game properties that you submit with the match request. You design the rules around the features of your game, group them into rule sets, and assign the rule sets to queues using the [`App Store Connect API`](https://developer.apple.com/documentation/AppStoreConnectAPI).
+Matchmaking rules contain compound expressions that Game Center applies to groups of match requests from players of your game. You write expressions using a JSON query language referencing game properties that you submit with the match request. You design the rules around the features of your game, group them into rule sets, and assign the rule sets to queues using the [`App Store Connect API`](https://developer.apple.com/documentation/appstoreconnectapi).
 
 In your game code, you configure a match request to use matchmaking rules by setting its queue and game-specific properties. Then submit the match request using familiar GameKit APIs, and Game Center uses the matchmaking rules to find the best matches.
 
@@ -20,7 +20,7 @@ First decide on a format for the reference name that uniquely identifies rule se
 
 Then decide on the minimum and maximum number of players allowed to join the matches. A valid match is any number of players between the minimum and maximum range, but Game Center assumes that more players provide a better experience, so looks for the maximum number of players first. The rule set’s `minPlayers` and `maxPlayers` fields constrain the [`GKMatchRequest`](gkmatchrequest.md) object’s [`minPlayers`](gkmatchrequest/minplayers.md) and [`maxPlayers`](gkmatchrequest/maxplayers.md) properties that you set in the code when you submit the match request.
 
-Next, pass a [`GameCenterMatchmakingRuleSetCreateRequest.Data.Attributes`](https://developer.apple.com/documentation/AppStoreConnectAPI/GameCenterMatchmakingRuleSetCreateRequest/Data-data.dictionary/Attributes-data.dictionary) object — that contains the `referenceName`, `minPlayers`, and `maxPlayers` fields — to the [`Create a Rule Set`](https://developer.apple.com/documentation/AppStoreConnectAPI/POST-v1-gameCenterMatchmakingRuleSets) endpoint.
+Next, pass a [`GameCenterMatchmakingRuleSetCreateRequest.Data.Attributes`](https://developer.apple.com/documentation/appstoreconnectapi/gamecentermatchmakingrulesetcreaterequest/data-data.dictionary/attributes-data.dictionary) object — that contains the `referenceName`, `minPlayers`, and `maxPlayers` fields — to the [`Create a Rule Set`](https://developer.apple.com/documentation/appstoreconnectapi/post-v1-gamecentermatchmakingrulesets) endpoint.
 
 ```json
 POST /v1/gameCenterMatchmakingRuleSets
@@ -38,7 +38,7 @@ POST /v1/gameCenterMatchmakingRuleSets
 }
 ```
 
-Retain the `id` field of the [`GameCenterMatchmakingRuleSet`](https://developer.apple.com/documentation/AppStoreConnectAPI/GameCenterMatchmakingRuleSet) object that this endpoint returns; you need it to later add rules to this set.
+Retain the `id` field of the [`GameCenterMatchmakingRuleSet`](https://developer.apple.com/documentation/appstoreconnectapi/gamecentermatchmakingruleset) object that this endpoint returns; you need it to later add rules to this set.
 
 ```json
 {
@@ -57,7 +57,7 @@ Retain the `id` field of the [`GameCenterMatchmakingRuleSet`](https://developer.
 
 ##### Add Matchmaking Rules to the Rule Sets
 
-You add a rule to the rule set by passing the rule type, an expression, and a rule set, along with other settings, to the [`Create a Rule`](https://developer.apple.com/documentation/AppStoreConnectAPI/POST-v1-gameCenterMatchmakingRules) endpoint.
+You add a rule to the rule set by passing the rule type, an expression, and a rule set, along with other settings, to the [`Create a Rule`](https://developer.apple.com/documentation/appstoreconnectapi/post-v1-gamecentermatchmakingrules) endpoint.
 
 ```json
 POST /v1/gameCenterMatchmakingRules
@@ -84,17 +84,17 @@ POST /v1/gameCenterMatchmakingRules
 
 In the `attributes` field, set the `type` field to either `COMPATIBLE`, `DISTANCE`, `MATCH`, or `TEAM`. Set the `description` and `referenceName` fields to strings that make sense for your game.
 
-In the `relationships` field, set the `gameCenterRuleSet` field to the rule set that you want to add this rule to. Pass the `id` for the rule set in the [`GameCenterMatchmakingQueueCreateRequest.Data.Relationships.RuleSet.Data`](https://developer.apple.com/documentation/AppStoreConnectAPI/GameCenterMatchmakingQueueCreateRequest/Data-data.dictionary/Relationships-data.dictionary/RuleSet-data.dictionary/Data-data.dictionary) object.
+In the `relationships` field, set the `gameCenterRuleSet` field to the rule set that you want to add this rule to. Pass the `id` for the rule set in the [`GameCenterMatchmakingQueueCreateRequest.Data.Relationships.RuleSet.Data`](https://developer.apple.com/documentation/appstoreconnectapi/gamecentermatchmakingqueuecreaterequest/data-data.dictionary/relationships-data.dictionary/ruleset-data.dictionary/data-data.dictionary) object.
 
 Next write an expression for the rule that Game Center applies to two or more matches depending on the type.
 
 ##### Write Rich Expressions Using a Json Query Language
 
-In the [`GameCenterMatchmakingRuleCreateRequest.Data.Attributes`](https://developer.apple.com/documentation/AppStoreConnectAPI/GameCenterMatchmakingRuleCreateRequest/Data-data.dictionary/Attributes-data.dictionary) object, set the `expression` field to an expression that returns either a Boolean or numeric value.
+In the [`GameCenterMatchmakingRuleCreateRequest.Data.Attributes`](https://developer.apple.com/documentation/appstoreconnectapi/gamecentermatchmakingrulecreaterequest/data-data.dictionary/attributes-data.dictionary) object, set the `expression` field to an expression that returns either a Boolean or numeric value.
 
 An expression is a [`JMESPath`](https://developer.apple.comhttps://jmespath.org) formatted string with Game Center matchmaking function additions. Game Center uses the expression as a query on a set of requests, depending on the type of rule and stage of the matchmaking algorithm, to find the most compatible players. The algorithm applies compatible rules first, distance rules next, followed by match and team rules.
 
-If you set the `type` field to `COMPATIBLE`, the `requests` array in the expression contains two match requests. Use `requests[0]` to refer to the first one and `requests[1]` for the second one. For example, write an expression that returns [`true`](https://developer.apple.com/documentation/Swift/true) if the theme game settings are the same.
+If you set the `type` field to `COMPATIBLE`, the `requests` array in the expression contains two match requests. Use `requests[0]` to refer to the first one and `requests[1]` for the second one. For example, write an expression that returns [`true`](https://developer.apple.com/documentation/swift/true) if the theme game settings are the same.
 
 ```other
 requests[0].properties.theme == requests[1].properties.theme
@@ -102,13 +102,13 @@ requests[0].properties.theme == requests[1].properties.theme
 
 To loosen the matchmaking criteria over time, set the type to `MATCH` and use either the `agedAsSteppedValue()` or `agedValues()` function in an expression. These functions return different stepped values as the age of the requests in the queue increase.
 
-For  more information on these functions, see [`Getting value based on age`](https://developer.apple.com/documentation/AppStoreConnectAPI/getting-value-based-on-age) and [`Getting value based on age using an array`](https://developer.apple.com/documentation/AppStoreConnectAPI/getting-value-based-on-age-using-an-array). For more information on the different types of rules and when Game Center applies the rules in the algorithm, see [`Expressions`](https://developer.apple.com/documentation/AppStoreConnectAPI/expressions) in App Store Connect API.
+For  more information on these functions, see [`Getting value based on age`](https://developer.apple.com/documentation/appstoreconnectapi/getting-value-based-on-age) and [`Getting value based on age using an array`](https://developer.apple.com/documentation/appstoreconnectapi/getting-value-based-on-age-using-an-array). For more information on the different types of rules and when Game Center applies the rules in the algorithm, see [`Expressions`](https://developer.apple.com/documentation/appstoreconnectapi/expressions) in App Store Connect API.
 
 ##### Configure a Queue for the Match Requests
 
 You associate each rule set with a match request queue. Then Game Center applies the rules in the rule set to all active match requests in that queue.
 
-Pass a reference name for the queue and a rule set to the [`Create a Queue`](https://developer.apple.com/documentation/AppStoreConnectAPI/POST-v1-gameCenterMatchmakingQueues) endpoint. Set the `referenceName` field of the [`GameCenterMatchmakingQueueCreateRequest.Data.Attributes`](https://developer.apple.com/documentation/AppStoreConnectAPI/GameCenterMatchmakingQueueCreateRequest/Data-data.dictionary/Attributes-data.dictionary) object to a unique name in your organization, such as a string with a reverse-domain name prefix that is similar to your rule set reference names. Pass the `id` for the rule set in the [`GameCenterMatchmakingQueueCreateRequest.Data.Relationships.RuleSet.Data`](https://developer.apple.com/documentation/AppStoreConnectAPI/GameCenterMatchmakingQueueCreateRequest/Data-data.dictionary/Relationships-data.dictionary/RuleSet-data.dictionary/Data-data.dictionary) object.
+Pass a reference name for the queue and a rule set to the [`Create a Queue`](https://developer.apple.com/documentation/appstoreconnectapi/post-v1-gamecentermatchmakingqueues) endpoint. Set the `referenceName` field of the [`GameCenterMatchmakingQueueCreateRequest.Data.Attributes`](https://developer.apple.com/documentation/appstoreconnectapi/gamecentermatchmakingqueuecreaterequest/data-data.dictionary/attributes-data.dictionary) object to a unique name in your organization, such as a string with a reverse-domain name prefix that is similar to your rule set reference names. Pass the `id` for the rule set in the [`GameCenterMatchmakingQueueCreateRequest.Data.Relationships.RuleSet.Data`](https://developer.apple.com/documentation/appstoreconnectapi/gamecentermatchmakingqueuecreaterequest/data-data.dictionary/relationships-data.dictionary/ruleset-data.dictionary/data-data.dictionary) object.
 
 ```json
 POST /v1/gameCenterMatchmakingQueues
@@ -141,7 +141,7 @@ In your code, create a [`GKMatchRequest`](gkmatchrequest.md) object and set the 
 let request = GKMatchRequest()
 ```
 
-To use matchmaking rules, set the [`queueName`](gkmatchrequest/queuename.md) property to the reference name of the queue that you previously created using the [`Create a Queue`](https://developer.apple.com/documentation/AppStoreConnectAPI/POST-v1-gameCenterMatchmakingQueues) endpoint.
+To use matchmaking rules, set the [`queueName`](gkmatchrequest/queuename.md) property to the reference name of the queue that you previously created using the [`Create a Queue`](https://developer.apple.com/documentation/appstoreconnectapi/post-v1-gamecentermatchmakingqueues) endpoint.
 
 ```swift
 // Set the matchmaking rules queue name.

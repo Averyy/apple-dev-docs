@@ -57,8 +57,8 @@ A [`CGImageMetadata`](cgimagemetadata.md) object stores the metadata associated 
 ### Inherited By
 - [CGMutableImageMetadata](cgmutableimagemetadata.md)
 ### Conforms To
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
 
 ## See Also
 

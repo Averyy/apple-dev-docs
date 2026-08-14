@@ -16,7 +16,7 @@ let IKImageBrowserNSImageRepresentationType: String
 
 #### Discussion
 
-An [`NSImage`](https://developer.apple.com/documentation/AppKit/NSImage)  object.
+An [`NSImage`](https://developer.apple.com/documentation/appkit/nsimage)  object.
 
 ## See Also
 

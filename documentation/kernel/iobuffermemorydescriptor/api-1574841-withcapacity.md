@@ -40,7 +40,7 @@ static OSPtr<IOBufferMemoryDescriptor> withCapacity(vm_size_t capacity, IODirect
   Creates a buffer memory descriptor and fills it with the specified bytes.
 - [+ withCopy](iobuffermemorydescriptor/3074961-withcopy.md)
   Creates a memory buffer with memory descriptor for that buffer.
-- [- free](../driverkit/iobuffermemorydescriptor/free.md)
+- [- free](iobuffermemorydescriptor/3180456-free.md)
   Performs any final cleanup for the memory buffer descriptor object.
 
 

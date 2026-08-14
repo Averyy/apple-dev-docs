@@ -29,7 +29,7 @@ This function calculates the sums of the first `N` elements of `A` and `B`, mult
     D[n] = (A[n] + B[n]) * C[n];
 ```
 
-![A diagram showing the operation of this function. There are four rows. The top row represents the input vectors, A and B, with three boxes of each. The second row represents the operation that adds A and B, as well as the input vector C, with three boxes of each. The third row represents the multiplication operation as three boxes.  The bottom row represents the output vector D as three boxes. The diagram has connecting lines from the input vectors to the operations, and from the operations to the output vectors.  ](https://docs-assets.developer.apple.com/published/4a4a758d19374e37f2895f6e002839af/media-4336964%402x.png)
+![A diagram showing the operation of this function. There are four rows. The top row represents the input vectors, A and B, with three boxes of each. The second row represents the operation that adds A and B, as well as the input vector C, with three boxes of each. The third row represents the multiplication operation as three boxes.  The bottom row represents the output vector D as three boxes. The diagram has connecting lines from the input vectors to the operations, and from the operations to the output vectors.  ](/images/com.apple.accelerate/media-4336964@2x.png)
 
 The following code shows an example of using this function:
 

@@ -19,7 +19,7 @@ class let touchBarQuickLookTemplateName: String
 
 #### Discussion
 
-![Template image for Quick Look](https://docs-assets.developer.apple.com/published/4e7e8e3a8e028fc1fc7abd27e4aa1985/media-2793521%402x.png)
+![Template image for Quick Look](/images/com.apple.appkit/media-2793521@2x.png)
 
 Touch Bar template images are exclusively for use in [`NSTouchBarItem`](nstouchbaritem.md) objects and not in onscreen windows.
 

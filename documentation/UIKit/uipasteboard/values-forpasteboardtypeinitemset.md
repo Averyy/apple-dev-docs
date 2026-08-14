@@ -19,11 +19,11 @@ func values(forPasteboardType pasteboardType: String, inItemSet itemSet: IndexSe
 
 #### Return Value
 
-An array of objects that have the type indicated by `pasteboardType`; or—if the pasteboard type is custom or unknown—an array of [`NSData`](https://developer.apple.com/documentation/Foundation/NSData) objects.
+An array of objects that have the type indicated by `pasteboardType`; or—if the pasteboard type is custom or unknown—an array of [`NSData`](https://developer.apple.com/documentation/foundation/nsdata) objects.
 
 #### Discussion
 
-Returned objects are of one of the following classes, depending on the pasteboard item’s representation type: [`NSString`](https://developer.apple.com/documentation/Foundation/NSString), [`NSArray`](https://developer.apple.com/documentation/Foundation/NSArray), [`NSDictionary`](https://developer.apple.com/documentation/Foundation/NSDictionary), [`NSDate`](https://developer.apple.com/documentation/Foundation/NSDate), [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber), [`NSURL`](https://developer.apple.com/documentation/Foundation/NSURL), or [`UIImage`](uiimage.md).
+Returned objects are of one of the following classes, depending on the pasteboard item’s representation type: [`NSString`](https://developer.apple.com/documentation/foundation/nsstring), [`NSArray`](https://developer.apple.com/documentation/foundation/nsarray), [`NSDictionary`](https://developer.apple.com/documentation/foundation/nsdictionary), [`NSDate`](https://developer.apple.com/documentation/foundation/nsdate), [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber), [`NSURL`](https://developer.apple.com/documentation/foundation/nsurl), or [`UIImage`](uiimage.md).
 
 ## Parameters
 

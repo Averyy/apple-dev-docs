@@ -12,14 +12,14 @@ Apps on watchOS primarily run in the foreground to limit the impact on system re
 
 When the system launches your app in the background, you can:
 
-- Handle background notifications from local or remote notifications with a [`UNUserNotificationCenterDelegate`](https://developer.apple.com/documentation/UserNotifications/UNUserNotificationCenterDelegate) delegate. For more information, see [`Handling notifications and notification-related actions`](https://developer.apple.com/documentation/UserNotifications/handling-notifications-and-notification-related-actions).
-- Receive push notifications to update your app’s complications with a [`PKPushRegistryDelegate`](https://developer.apple.com/documentation/PushKit/PKPushRegistryDelegate) delegate. For more information, see [`PushKit`](https://developer.apple.com/documentation/PushKit).
+- Handle background notifications from local or remote notifications with a [`UNUserNotificationCenterDelegate`](https://developer.apple.com/documentation/usernotifications/unusernotificationcenterdelegate) delegate. For more information, see [`Handling notifications and notification-related actions`](https://developer.apple.com/documentation/usernotifications/handling-notifications-and-notification-related-actions).
+- Receive push notifications to update your app’s complications with a [`PKPushRegistryDelegate`](https://developer.apple.com/documentation/pushkit/pkpushregistrydelegate) delegate. For more information, see [`PushKit`](https://developer.apple.com/documentation/pushkit).
 
 ##### Schedule and Handle Background Refresh Tasks
 
 A watchOS app uses a *background refresh task* to perform work in the background. If your app requires background operations, use one of the following techniques to respond to the task:
 
-- Add a [`backgroundTask(_:action:)`](https://developer.apple.com/documentation/SwiftUI/Scene/backgroundTask(_:action:)) modifier to respond to the background task in your SwiftUI scene.
+- Add a [`backgroundTask(_:action:)`](https://developer.apple.com/documentation/swiftui/scene/backgroundtask(_:action:)) modifier to respond to the background task in your SwiftUI scene.
 - Implement your app delegate’s [`handle(_:)`](wkapplicationdelegate/handle(_:)-4vdjo.md) method to receive and respond to the task. You need to call the task’s [`setTaskCompletedWithSnapshot(_:)`](wkrefreshbackgroundtask/settaskcompletedwithsnapshot(_:).md) method to indicate that you’re done.
 
 In both cases, the system launches your app and gives it a few seconds of background execution time to perform the task. Complete the background task as quickly as possible. For more information, see [`Using background tasks`](using-background-tasks.md).
@@ -28,9 +28,9 @@ In both cases, the system launches your app and gives it a few seconds of backgr
 
 Apps that support workouts, audio playback, or location updates can continue to run in the background until the current session ends. Your app must enable the appropriate background mode in your project’s capabilities, and then start the session while your app is running in the foreground.
 
-- Use an [`HKWorkoutSession`](https://developer.apple.com/documentation/HealthKit/HKWorkoutSession) object to start and stop workouts. For more information, see [`Running workout sessions`](https://developer.apple.com/documentation/HealthKit/running-workout-sessions).
-- Use the [`AVAudioSession`](https://developer.apple.com/documentation/AVFAudio/AVAudioSession) class to play extended audio files in the background. For more information, see [`Playing Background Audio`](playing-background-audio.md).
-- Use a [`CLLocationManager`](https://developer.apple.com/documentation/CoreLocation/CLLocationManager) object to start a continuous background location session. For more information, see [`allowsBackgroundLocationUpdates`](https://developer.apple.com/documentation/CoreLocation/CLLocationManager/allowsBackgroundLocationUpdates).
+- Use an [`HKWorkoutSession`](https://developer.apple.com/documentation/healthkit/hkworkoutsession) object to start and stop workouts. For more information, see [`Running workout sessions`](https://developer.apple.com/documentation/healthkit/running-workout-sessions).
+- Use the [`AVAudioSession`](https://developer.apple.com/documentation/avfaudio/avaudiosession) class to play extended audio files in the background. For more information, see [`Playing Background Audio`](playing-background-audio.md).
+- Use a [`CLLocationManager`](https://developer.apple.com/documentation/corelocation/cllocationmanager) object to start a continuous background location session. For more information, see [`allowsBackgroundLocationUpdates`](https://developer.apple.com/documentation/corelocation/cllocationmanager/allowsbackgroundlocationupdates).
 
 ##### Set Up Extended Runtime Sessions
 
@@ -73,9 +73,9 @@ For more information, see [`Using extended runtime sessions`](using-extended-run
   Enable the background mode for audio, location updates, remote notifications, or workouts.
 - [Playing Background Audio](playing-background-audio.md)
   Enable background audio in your app to provide a seamless playback experience.
-- [WKBackgroundModes](../BundleResources/Information-Property-List/WKBackgroundModes.md)
+- [WKBackgroundModes](../bundleresources/information-property-list/wkbackgroundmodes.md)
   The services a watchOS app provides that require it to continue running in the background.
-- [UIBackgroundModes](../BundleResources/Information-Property-List/UIBackgroundModes.md)
+- [UIBackgroundModes](../bundleresources/information-property-list/uibackgroundmodes.md)
   Services provided by an app that require it to run in the background.
 
 ## See Also

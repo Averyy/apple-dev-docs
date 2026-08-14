@@ -16,7 +16,7 @@ class LAAuthenticationView
 
 #### Overview
 
-In the view that you use to manage authentication, add a local authentication view as a subview and provide it with an [`LAContext`](https://developer.apple.com/documentation/LocalAuthentication/LAContext) instance. For example, you can do this in the [`loadView()`](https://developer.apple.com/documentation/AppKit/NSViewController/loadView()) method of your view controller:
+In the view that you use to manage authentication, add a local authentication view as a subview and provide it with an [`LAContext`](https://developer.apple.com/documentation/localauthentication/lacontext) instance. For example, you can do this in the [`loadView()`](https://developer.apple.com/documentation/appkit/nsviewcontroller/loadview()) method of your view controller:
 
 ```swift
 func loadView() {
@@ -30,7 +30,7 @@ func loadView() {
 }
 ```
 
-When the view appears, call the context’s [`evaluatePolicy(_:localizedReason:reply:)`](https://developer.apple.com/documentation/LocalAuthentication/LAContext/evaluatePolicy(_:localizedReason:reply:)) method to initiate the authentication:
+When the view appears, call the context’s [`evaluatePolicy(_:localizedReason:reply:)`](https://developer.apple.com/documentation/localauthentication/lacontext/evaluatepolicy(_:localizedreason:reply:)) method to initiate the authentication:
 
 ```swift
 override func viewDidAppear() {
@@ -45,17 +45,17 @@ override func viewDidAppear() {
 }
 ```
 
-The local authentication view displays an icon that depends on the type of authentication you request, and the types of authentication that the system supports. For example, for a device that supports Touch ID, if you request the [`deviceOwnerAuthenticationWithBiometricsOrWatch`](https://developer.apple.com/documentation/LocalAuthentication/LAPolicy/deviceOwnerAuthenticationWithBiometricsOrWatch) policy, like in the example above, the view displays the familiar finger print icon:
+The local authentication view displays an icon that depends on the type of authentication you request, and the types of authentication that the system supports. For example, for a device that supports Touch ID, if you request the [`deviceOwnerAuthenticationWithBiometricsOrWatch`](https://developer.apple.com/documentation/localauthentication/lapolicy/deviceownerauthenticationwithbiometricsorwatch) policy, like in the example above, the view displays the familiar finger print icon:
 
-![A screenshot of a circular icon with a pattern that resembles a finger print.](https://docs-assets.developer.apple.com/published/63abc31f750ffd3e74f794a1a8a9e37c/laauthenticationview-1%402x.png)
+![A screenshot of a circular icon with a pattern that resembles a finger print.](/images/com.apple.Local-Authentication-Embedded-UI/laauthenticationview-1@2x.png)
 
-In the case above, if the user has a connected Apple Watch, that authentication mechanism works as well. If you limit the authentication to the [`deviceOwnerAuthenticationWithWatch`](https://developer.apple.com/documentation/LocalAuthentication/LAPolicy/deviceOwnerAuthenticationWithWatch) policy, the icon shows an Apple Watch in profile:
+In the case above, if the user has a connected Apple Watch, that authentication mechanism works as well. If you limit the authentication to the [`deviceOwnerAuthenticationWithWatch`](https://developer.apple.com/documentation/localauthentication/lapolicy/deviceownerauthenticationwithwatch) policy, the icon shows an Apple Watch in profile:
 
-![A screenshot of a circular icon containing the profile of an Apple Watch.](https://docs-assets.developer.apple.com/published/27733d7dd339bc1a9956c15a7d5f16b7/laauthenticationview-2%402x.png)
+![A screenshot of a circular icon containing the profile of an Apple Watch.](/images/com.apple.Local-Authentication-Embedded-UI/laauthenticationview-2@2x.png)
 
 You can include other content around this icon that suits your app. The system also displays a message on the Touch Bar or on the user’s Apple Watch, if appropriate. When the evaluation succeeds, the icon transitions into a checkmark:
 
-![A screenshot of a circular icon with a blue checkmark inside.](https://docs-assets.developer.apple.com/published/8172fa3530a97505e520e30b6d4e1845/laauthenticationview-3%402x.png)
+![A screenshot of a circular icon with a blue checkmark inside.](/images/com.apple.Local-Authentication-Embedded-UI/laauthenticationview-3@2x.png)
 
 If you call the evaluation without first attaching it to a local authentication view, the system shows a standard authentication alert instead.
 
@@ -75,24 +75,24 @@ If you call the evaluation without first attaching it to a local authentication 
 ## Relationships
 
 ### Inherits From
-- [NSView](../AppKit/NSView.md)
+- [NSView](../appkit/nsview.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSAccessibilityElementProtocol](../AppKit/NSAccessibilityElementProtocol.md)
-- [NSAccessibilityProtocol](../AppKit/NSAccessibilityProtocol.md)
-- [NSAnimatablePropertyContainer](../AppKit/NSAnimatablePropertyContainer.md)
-- [NSAppearanceCustomization](../AppKit/NSAppearanceCustomization.md)
-- [NSCoding](../Foundation/NSCoding.md)
-- [NSDraggingDestination](../AppKit/NSDraggingDestination.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [NSStandardKeyBindingResponding](../AppKit/NSStandardKeyBindingResponding.md)
-- [NSTouchBarProvider](../AppKit/NSTouchBarProvider.md)
-- [NSUserActivityRestoring](../AppKit/NSUserActivityRestoring.md)
-- [NSUserInterfaceItemIdentification](../AppKit/NSUserInterfaceItemIdentification.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSAccessibilityElementProtocol](../appkit/nsaccessibilityelementprotocol.md)
+- [NSAccessibilityProtocol](../appkit/nsaccessibilityprotocol.md)
+- [NSAnimatablePropertyContainer](../appkit/nsanimatablepropertycontainer.md)
+- [NSAppearanceCustomization](../appkit/nsappearancecustomization.md)
+- [NSCoding](../foundation/nscoding.md)
+- [NSDraggingDestination](../appkit/nsdraggingdestination.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSStandardKeyBindingResponding](../appkit/nsstandardkeybindingresponding.md)
+- [NSTouchBarProvider](../appkit/nstouchbarprovider.md)
+- [NSUserActivityRestoring](../appkit/nsuseractivityrestoring.md)
+- [NSUserInterfaceItemIdentification](../appkit/nsuserinterfaceitemidentification.md)
 
 
 ---

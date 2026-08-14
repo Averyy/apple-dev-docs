@@ -16,7 +16,7 @@ static let fullScreenModeAllScreens: NSView.FullScreenModeOptionKey
 
 #### Discussion
 
-The corresponding value is an instance of [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) containing a Boolean value.
+The corresponding value is an instance of [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) containing a Boolean value.
 
 ## See Also
 

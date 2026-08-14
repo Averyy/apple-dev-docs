@@ -60,7 +60,7 @@ MPRemoteCommandCenter *commandCenter = [MPRemoteCommandCenter sharedCommandCente
 }];
 ```
 
-If you explicitly don’t want to enable a given command, fetch the command object and set its enabled property to [`false`](https://developer.apple.com/documentation/Swift/false). Disabling a remote command lets the system know that it shouldn’t display any related UI for that command when your app is the Now Playing app.
+If you explicitly don’t want to enable a given command, fetch the command object and set its enabled property to [`false`](https://developer.apple.com/documentation/swift/false). Disabling a remote command lets the system know that it shouldn’t display any related UI for that command when your app is the Now Playing app.
 
 The framework defines many subclasses to handle specific kinds of commands. Sometimes, these subclasses let you specify other information related to the command. For example, feedback commands let you specify a localized string that describes the meaning of the feedback. When supporting a particular command, be sure to look up the specific class used to handle those events.
 
@@ -84,7 +84,7 @@ The framework defines many subclasses to handle specific kinds of commands. Some
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Inherited By
 - [MPChangePlaybackPositionCommand](mpchangeplaybackpositioncommand.md)
 - [MPChangePlaybackRateCommand](mpchangeplaybackratecommand.md)
@@ -94,12 +94,12 @@ The framework defines many subclasses to handle specific kinds of commands. Some
 - [MPRatingCommand](mpratingcommand.md)
 - [MPSkipIntervalCommand](mpskipintervalcommand.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

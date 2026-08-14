@@ -16,7 +16,7 @@ An extension other apps use to access files and folders managed by your app and 
 
 If your app focuses on providing and syncing user documents from remote storage, you can implement a File Provider extension to give users access to those documents when they’re using other apps. If you just need to share local documents, see [`Share files locally`](https://developer.apple.com/documentation/fileprovider#Share-files-locally) below.
 
-![A diagram that depicts the interaction between an app and your server facilitated by a File Provider extension. The app communicates with the document browser, which requests data to the File Provider extension. The File Provider extension syncs updates with the remote server.](https://docs-assets.developer.apple.com/published/c49c1b9fc90a37cd06b9a7b6f73912d9/media-4032695%402x.png)
+![A diagram that depicts the interaction between an app and your server facilitated by a File Provider extension. The app communicates with the document browser, which requests data to the File Provider extension. The File Provider extension syncs updates with the remote server.](/images/com.apple.fileprovider/media-4032695@2x.png)
 
 The framework has two different starting points for building your File Provider extension.
 
@@ -33,12 +33,12 @@ You don’t need a File Provider extension to allow access to documents that you
 
 In iOS, to give other apps access to the files in your `Documents` directory, set the following keys in your app’s Info tab or its `Info.plist` file. For document browser-based apps, set the [`UISupportsDocumentBrowser`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/iPhoneOSKeys.html#//apple_ref/doc/uid/TP40009252-SW37) key. For all other apps, set both the [`UIFileSharingEnabled`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/iPhoneOSKeys.html#//apple_ref/doc/uid/TP40009252-SW20) and [`LSSupportsOpeningDocumentsInPlace`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/LaunchServicesKeys.html#//apple_ref/doc/plist/info/LSSupportsOpeningDocumentsInPlace) keys.
 
-After you set these keys, other apps can open and edit the contents of your `Documents` directory in place. Your files also appear in both the Files app and the document browser. For more information, see the [`UIDocumentBrowserViewController`](https://developer.apple.com/documentation/UIKit/UIDocumentBrowserViewController) class.
+After you set these keys, other apps can open and edit the contents of your `Documents` directory in place. Your files also appear in both the Files app and the document browser. For more information, see the [`UIDocumentBrowserViewController`](https://developer.apple.com/documentation/uikit/uidocumentbrowserviewcontroller) class.
 
 ## Topics
 
 ### Essentials
-- [File Provider updates](../Updates/FileProvider.md)
+- [File Provider updates](../updates/fileprovider.md)
   Learn about important changes to File Provider.
 ### Extension types
 - [Replicated File Provider extension](replicated-file-provider-extension.md)

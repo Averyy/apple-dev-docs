@@ -33,7 +33,7 @@ The callback function will be called when the monitored record type changes or w
 - `theService`: CFNetService for which the callback is being called.
 - `typeInfo`: Type of record that changed. For possible values, see [`CFNetServiceMonitorType`](cfnetservicemonitortype.md).
 - `rdata`: Contents of the record that changed.
-- `error`: Pointer to [`CFStreamError`](https://developer.apple.com/documentation/CoreFoundation/CFStreamError) structure whose `error` field contains an error code if an error occurred.
+- `error`: Pointer to [`CFStreamError`](https://developer.apple.com/documentation/corefoundation/cfstreamerror) structure whose `error` field contains an error code if an error occurred.
 - `info`: Arbitrary pointer to the user-defined data that was specified in the `info` field of the `CFNetServiceClientContext` structure when the monitor was created by [`CFNetServiceMonitorCreate(_:_:_:_:)`](cfnetservicemonitorcreate(_:_:_:_:).md).
 
 ## See Also

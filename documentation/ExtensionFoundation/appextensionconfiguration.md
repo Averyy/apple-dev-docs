@@ -29,7 +29,7 @@ An interface you use to configure the XPC connection in your app extension.
 
 Adopt this protocol in a custom type, and use that type to finalize the XPC connection to the host app. The host app tries to create an XPC connection to your app extension shortly after launching it. The system directs that connection request to the code in your configuration object. Use your code to provide the host with the information it needs to communicate with your app extension.
 
-This protocol supports app extensions that don’t offer any custom UI. If your app extension provides custom UI, instead use the  [`AppExtensionSceneConfiguration`](https://developer.apple.com/documentation/ExtensionKit/AppExtensionSceneConfiguration) type from [`ExtensionKit`](https://developer.apple.com/documentation/ExtensionKit).
+This protocol supports app extensions that don’t offer any custom UI. If your app extension provides custom UI, instead use the  [`AppExtensionSceneConfiguration`](https://developer.apple.com/documentation/extensionkit/appextensionsceneconfiguration) type from [`ExtensionKit`](https://developer.apple.com/documentation/extensionkit).
 
 ## Topics
 
@@ -40,8 +40,8 @@ This protocol supports app extensions that don’t offer any custom UI. If your 
 ## Relationships
 
 ### Inherits From
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 ### Conforming Types
 - [ConnectionHandler](connectionhandler.md)
 

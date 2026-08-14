@@ -10,7 +10,7 @@ Use hand-tracking anchors to display a visual representation of hand transforms 
 
 #### Overview
 
-This sample demonstrates tracking hand transforms in visionOS with the [`HandTrackingProvider`](https://developer.apple.com/documentation/ARKit/HandTrackingProvider) class, a type within [`ARKit`](https://developer.apple.com/documentation/ARKit). As the following video shows, the app displays a series of white spheres that affix themselves to each anchor point on a person’s hands and remain attached as the hands move:
+This sample demonstrates tracking hand transforms in visionOS with the [`HandTrackingProvider`](https://developer.apple.com/documentation/arkit/handtrackingprovider) class, a type within [`ARKit`](https://developer.apple.com/documentation/arkit). As the following video shows, the app displays a series of white spheres that affix themselves to each anchor point on a person’s hands and remain attached as the hands move:
 
 The app achieves this effect by:
 
@@ -20,7 +20,7 @@ The app achieves this effect by:
 
 ##### Define the Hand Tracking Anchors
 
-[`HandSkeleton.JointName`](https://developer.apple.com/documentation/ARKit/HandSkeleton/JointName) contains a total of 26 hand-tracking anchors for each hand. To identify these anchors, the sample creates a series of `Finger` and `Bone` enumerations:
+[`HandSkeleton.JointName`](https://developer.apple.com/documentation/arkit/handskeleton/jointname) contains a total of 26 hand-tracking anchors for each hand. To identify these anchors, the sample creates a series of `Finger` and `Bone` enumerations:
 
 ```swift
 enum Finger: Int, CaseIterable {
@@ -84,7 +84,7 @@ struct HandTrackingComponent: Component {
 }
 ```
 
-The sample implements a custom system that tracks a person’s hands with a [`HandTrackingProvider`](https://developer.apple.com/documentation/ARKit/HandTrackingProvider) and stores them in the `latestLeftHand` and `latestRightHand` instances:
+The sample implements a custom system that tracks a person’s hands with a [`HandTrackingProvider`](https://developer.apple.com/documentation/arkit/handtrackingprovider) and stores them in the `latestLeftHand` and `latestRightHand` instances:
 
 ```swift
 struct HandTrackingSystem: System {
@@ -112,7 +112,7 @@ On initialization, the `HandTrackingSystem` starts a task that calls the `runSes
 
 > 💡 **Tip**: If you want to later cancel `runSession()`, keep a reference to the `Task` that encapsulates it.
 
-The `runSession()` method starts an [`ARKitSession`](https://developer.apple.com/documentation/ARKit/ARKitSession) with the [`HandTrackingProvider`](https://developer.apple.com/documentation/ARKit/HandTrackingProvider):
+The `runSession()` method starts an [`ARKitSession`](https://developer.apple.com/documentation/arkit/arkitsession) with the [`HandTrackingProvider`](https://developer.apple.com/documentation/arkit/handtrackingprovider):
 
 ```swift
 func runSession() {
@@ -172,11 +172,11 @@ func addJoints(to handEntity: Entity, handComponent: inout HandTrackingComponent
 }
 ```
 
-The [`System`](https://developer.apple.com/documentation/RealityKit/System) protocol has an [`update(context:)`](https://developer.apple.com/documentation/RealityKit/System/update(context:)) method that the app calls for each scene update, to update its hand entities.
+The [`System`](https://developer.apple.com/documentation/realitykit/system) protocol has an [`update(context:)`](https://developer.apple.com/documentation/realitykit/system/update(context:)) method that the app calls for each scene update, to update its hand entities.
 
-> **Note**: The [`update(context:)`](https://developer.apple.com/documentation/RealityKit/System/update(context:)) instance method is required to create a custom system.
+> **Note**: The [`update(context:)`](https://developer.apple.com/documentation/realitykit/system/update(context:)) instance method is required to create a custom system.
 
-The app finds the hand entities for each scene update with an [`EntityQuery`](https://developer.apple.com/documentation/RealityKit/EntityQuery) instance that retrieves entities with a hand-tracking component.
+The app finds the hand entities for each scene update with an [`EntityQuery`](https://developer.apple.com/documentation/realitykit/entityquery) instance that retrieves entities with a hand-tracking component.
 
 ```swift
 struct HandTrackingSystem: System {

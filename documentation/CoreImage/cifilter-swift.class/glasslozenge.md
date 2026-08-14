@@ -30,10 +30,10 @@ This method applies the glass lozenge filter to an image. This effect distorts a
 The absolute threshold filter uses the following properties:
 
 - **`inputImage`**: An image with the type [`CIImage`](ciimage.md).
-- **`radius`**: A `float` representing the radius of the lozenge distortion as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
-- **`refraction`**: A `float` representing the refraction of the glass as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
-- **`inputPoint1`**: A [`CGPoint`](https://developer.apple.com/documentation/CoreFoundation/CGPoint) representing the x and y positions that define the center of the circle at the first end of the lozenge.
-- **`inputPoint2`**: A [`CGPoint`](https://developer.apple.com/documentation/CoreFoundation/CGPoint) representing the x and y positions that define the center of the circle at the second end of the lozenge.
+- **`radius`**: A `float` representing the radius of the lozenge distortion as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
+- **`refraction`**: A `float` representing the refraction of the glass as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
+- **`inputPoint1`**: A [`CGPoint`](https://developer.apple.com/documentation/corefoundation/cgpoint) representing the x and y positions that define the center of the circle at the first end of the lozenge.
+- **`inputPoint2`**: A [`CGPoint`](https://developer.apple.com/documentation/corefoundation/cgpoint) representing the x and y positions that define the center of the circle at the second end of the lozenge.
 
 The following code creates a filter that results in a large glass lozenge distorting the image:
 
@@ -48,7 +48,7 @@ func glassLozenge(inputImage: CIImage) -> CIImage {
 }
 ```
 
-![Two images next to each other. The left image contains a photograph of three hydrangea flowers with leaves in the background. In the right image, the glass lozenge filter has been applied. It appears as if the glass pill shape has been placed on top of the image.](https://docs-assets.developer.apple.com/published/d51913b583599c768538cad7c75283d4/media-4407280%402x.png)
+![Two images next to each other. The left image contains a photograph of three hydrangea flowers with leaves in the background. In the right image, the glass lozenge filter has been applied. It appears as if the glass pill shape has been placed on top of the image.](/images/com.apple.coreimage/media-4407280@2x.png)
 
 ## See Also
 

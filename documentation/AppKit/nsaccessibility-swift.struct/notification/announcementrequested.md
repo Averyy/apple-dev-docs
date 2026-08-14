@@ -41,7 +41,7 @@ NSAccessibilityPostNotificationWithUserInfo(NSApp, NSAccessibilityAnnouncementRe
 });
 ```
 
-If you need more control over how your announcements are pronounced, such as including punctuation or setting the spoken language, you can use [`NSAttributedString`](https://developer.apple.com/documentation/Foundation/NSAttributedString). For a list of available string attributes, see [`NSAttributedString.Key`](https://developer.apple.com/documentation/Foundation/NSAttributedString/Key).
+If you need more control over how your announcements are pronounced, such as including punctuation or setting the spoken language, you can use [`NSAttributedString`](https://developer.apple.com/documentation/foundation/nsattributedstring). For a list of available string attributes, see [`NSAttributedString.Key`](https://developer.apple.com/documentation/foundation/nsattributedstring/key).
 
 **Swift**:
 

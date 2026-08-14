@@ -16,9 +16,9 @@ Identify the most visually pleasing frames in a video by using the image-aesthet
 
 Using the [`Vision`](Vision.md) framework, you can process images and videos frame by frame, enabling image-analysis requests through [`VisionRequest`](visionrequest.md). The sample demonstrates how to process video input to identify the three frames with the highest aesthetic scores. By leveraging this capability, you can automatically select the best frames for creating promotional materials or for highlighting short films. The following image shows a preview of the sample:
 
-![A screen recording of a macOS app that demonstrates selecting a video file to generate the best thumbnails.](https://docs-assets.developer.apple.com/published/864613acf2af54ee865a04b0174615ea/sample-thumbnail-generator-1-main-view.png)
+![A screen recording of a macOS app that demonstrates selecting a video file to generate the best thumbnails.](/images/Vision/sample-thumbnail-generator-1-main-view.png)
 
-The sample uses a [`VideoProcessor`](videoprocessor.md) to convert the video into a stream of frames, which [`CalculateImageAestheticsScoresRequest`](calculateimageaestheticsscoresrequest.md) analyzes to rate each frame with an overall aesthetic score. To avoid selecting similar thumbnails, the [`GenerateImageFeaturePrintRequest`](generateimagefeatureprintrequest.md) compares the image similarity. Finally, [`AVFoundation`](https://developer.apple.com/documentation/AVFoundation) extracts the images from the selected frames and presents them as thumbnails.
+The sample uses a [`VideoProcessor`](videoprocessor.md) to convert the video into a stream of frames, which [`CalculateImageAestheticsScoresRequest`](calculateimageaestheticsscoresrequest.md) analyzes to rate each frame with an overall aesthetic score. To avoid selecting similar thumbnails, the [`GenerateImageFeaturePrintRequest`](generateimagefeatureprintrequest.md) compares the image similarity. Finally, [`AVFoundation`](https://developer.apple.com/documentation/avfoundation) extracts the images from the selected frames and presents them as thumbnails.
 
 ##### Set Up the Representation of Frames and Thumbnails
 
@@ -37,7 +37,7 @@ struct Frame {
 }
 ```
 
-To present the results of each frame, the sample creates a `Thumbnail` class that conforms to the [`Identifiable`](https://developer.apple.com/documentation/Swift/Identifiable) protocol. This ensures that the class has a unique identity for [`ForEach`](https://developer.apple.com/documentation/SwiftUI/ForEach) to display the results. This class accepts a `CGImage` to store the image of the frame, and a `Frame` to establish a connection between the frame and the thumbnail:
+To present the results of each frame, the sample creates a `Thumbnail` class that conforms to the [`Identifiable`](https://developer.apple.com/documentation/swift/identifiable) protocol. This ensures that the class has a unique identity for [`ForEach`](https://developer.apple.com/documentation/swiftui/foreach) to display the results. This class accepts a `CGImage` to store the image of the frame, and a `Frame` to establish a connection between the frame and the thumbnail:
 
 ```swift
 class Thumbnail: Identifiable {

@@ -29,7 +29,7 @@ This function calculates the division of the first `N` elements of input vectors
     C[n] = A[n] / B[n];
 ```
 
-![A diagram showing the operation of this function. There are three rows. The top row represents the input vectors, A and B, with three boxes of each. The middle row represents the operation as three boxes with division signs. The bottom row represents the output vector C as three boxes. The diagram has connecting lines from the input vectors to the operation, and from the operation to the output vectors.](https://docs-assets.developer.apple.com/published/d1e83c4f0c951b49402b99e2581eb228/media-4336921%402x.png)
+![A diagram showing the operation of this function. There are three rows. The top row represents the input vectors, A and B, with three boxes of each. The middle row represents the operation as three boxes with division signs. The bottom row represents the output vector C as three boxes. The diagram has connecting lines from the input vectors to the operation, and from the operation to the output vectors.](/images/com.apple.accelerate/media-4336921@2x.png)
 
 The following code shows an example of using this function:
 

@@ -12,7 +12,7 @@ RealityKit provides a physics engine optimized to simulate a wide range of objec
 
 Set up most RealityKit scenes — those without very tiny objects — so that you’ve parented all entities to a single anchor entity that acts as both the root of the visible scene and the origin of the physics simulation. With this setup, you can rotate and move the anchor in the scene without affecting the physics simulation because RealityKit applies anchor transforms after calculating the physics simulation.
 
-![An illustration of a standard RealityKit scene hierarchy where the anchor entity is used as both the scene root and the physics origin.](https://docs-assets.developer.apple.com/published/94eaeaf085a0f27d4e5883095d873c55/handling-different-sized-objects-in-physics-simulations-1%402x.png)
+![An illustration of a standard RealityKit scene hierarchy where the anchor entity is used as both the scene root and the physics origin.](/images/com.apple.RealityKit/handling-different-sized-objects-in-physics-simulations-1@2x.png)
 
 When using this type of hierarchy, you can move, rotate, and scale objects after placing them in the [`ARView`](arview.md), and everything functions correctly, even if you make some objects smaller than a cubic centimeter after placing them in your scene.
 
@@ -20,7 +20,7 @@ When using this type of hierarchy, you can move, rotate, and scale objects after
 
 Scenes that are authored with tiny objects, however, may not simulate optimally. To compensate, set up those scenes with a hierarchy that separates the scene root from the physics origin so you can change the scale of the physics origin independently of the scene.
 
-![An example hierarchy for scenes with tiny objects that shows the AnchorEntity with two empty entities as children. These entities function as the scene root and physics origin.](https://docs-assets.developer.apple.com/published/b6af7b1abc5c04fa53175c44952a1219/handling-different-sized-objects-in-physics-simulations-2%402x.png)
+![An example hierarchy for scenes with tiny objects that shows the AnchorEntity with two empty entities as children. These entities function as the scene root and physics origin.](/images/com.apple.RealityKit/handling-different-sized-objects-in-physics-simulations-2@2x.png)
 
 To set up a scene like this, instead of using the [`AnchorEntity`](anchorentity.md) as both the scene root and the physics origin, add two empty entities as children of the anchor before adding any entities or a Reality Composer scene. One of the two entities functions as the scene root and the other acts as the physics origin. The following code shows how to set up a hierarchy like this:
 

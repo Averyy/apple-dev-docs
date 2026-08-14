@@ -21,7 +21,7 @@ var kAudioFormatProperty_ChannelLayoutSimpleName: AudioFormatPropertyID { get }
 
 #### Discussion
 
-A simplified name for channel layout. Compared to the value of the [`kAudioFormatProperty_ChannelLayoutName`](kaudioformatproperty_channellayoutname.md) property, the name in this property omits the channel labels. The specifier is an [`AudioChannelLayout`](https://developer.apple.com/documentation/CoreAudioTypes/AudioChannelLayout) struct containing the layout description. The value is a [`CFString`](https://developer.apple.com/documentation/CoreFoundation/CFString) object. The caller is responsible for releasing the returned string.
+A simplified name for channel layout. Compared to the value of the [`kAudioFormatProperty_ChannelLayoutName`](kaudioformatproperty_channellayoutname.md) property, the name in this property omits the channel labels. The specifier is an [`AudioChannelLayout`](https://developer.apple.com/documentation/coreaudiotypes/audiochannellayout) struct containing the layout description. The value is a [`CFString`](https://developer.apple.com/documentation/corefoundation/cfstring) object. The caller is responsible for releasing the returned string.
 
 ## See Also
 

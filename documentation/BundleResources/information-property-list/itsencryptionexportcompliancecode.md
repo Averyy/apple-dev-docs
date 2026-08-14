@@ -16,7 +16,7 @@ The export compliance code provided by App Store Connect for apps that require i
 
 Include this key in your app’s [`Information Property List`](information-property-list.md) file if you set the [`ITSAppUsesNonExemptEncryption`](information-property-list/itsappusesnonexemptencryption.md) key’s value to `YES`. Set the value for this key to the code that Apple sends you after successfully reviewing export compliance documentation that you provide through App Store Connect.
 
-For additional information, see [`Complying with Encryption Export Regulations`](https://developer.apple.com/documentation/Security/complying-with-encryption-export-regulations).
+For additional information, see [`Complying with Encryption Export Regulations`](https://developer.apple.com/documentation/security/complying-with-encryption-export-regulations).
 
 ## See Also
 

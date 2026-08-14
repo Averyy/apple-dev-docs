@@ -33,7 +33,7 @@ You use [`MLWritable`](mlwritable.md) to save any [`MLModel`](mlmodel.md) instan
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

@@ -22,7 +22,7 @@ var pointOfView: SCNNode? { get set }
 
 #### Discussion
 
-Use a [`SCNNode`](https://developer.apple.com/documentation/SceneKit/SCNNode) object with an [`SCNCamera`](https://developer.apple.com/documentation/SceneKit/SCNCamera) instance assigned to its [`camera`](https://developer.apple.com/documentation/SceneKit/SCNNode/camera) property to view a scene. This SceneKit node provides the position and direction of a virtual camera, and the camera object provides rendering parameters such as field of view and focus. The direction of view is along the negative z-axis of the SceneKit node’s local coordinate space.
+Use a [`SCNNode`](https://developer.apple.com/documentation/scenekit/scnnode) object with an [`SCNCamera`](https://developer.apple.com/documentation/scenekit/scncamera) instance assigned to its [`camera`](https://developer.apple.com/documentation/scenekit/scnnode/camera) property to view a scene. This SceneKit node provides the position and direction of a virtual camera, and the camera object provides rendering parameters such as field of view and focus. The direction of view is along the negative z-axis of the SceneKit node’s local coordinate space.
 
 ## See Also
 

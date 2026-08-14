@@ -8,13 +8,13 @@ Identify issues within your frame capture by examining pipeline statistics.
 
 The Pipeline Statistics viewer displays each shader stage in your pipeline state, the amount of time it took to complete, and the GPU activities it performed during that time.
 
-![A screenshot of the Pipeline Statistics viewer showing statistics for each shader and timing comparison across commands using the pipeline state.](https://docs-assets.developer.apple.com/published/d42b35a393e4f0397e85ee14ad025126/gputools-metal-debugger-psv-overview%402x.png)
+![A screenshot of the Pipeline Statistics viewer showing statistics for each shader and timing comparison across commands using the pipeline state.](/images/com.apple.Xcode/gputools-metal-debugger-psv-overview@2x.png)
 
 ##### Interpret the Gpu Activities
 
 Various GPU activities appear with bar charts for compiler statistics and runtime profiling statistics.
 
-![A screenshot of the statistics for a shader. The top portion shows the timing by operations, and the bottom portion shows the number of instructions by operations.](https://docs-assets.developer.apple.com/published/aa185426f0e7bd6cce4350582f5296d5/gputools-metal-debugger-psv-pipeline-statistics%402x.png)
+![A screenshot of the statistics for a shader. The top portion shows the timing by operations, and the bottom portion shows the number of instructions by operations.](/images/com.apple.Xcode/gputools-metal-debugger-psv-pipeline-statistics@2x.png)
 
 | GPU activity | Explanation and recommendations |
 | --- | --- |
@@ -31,7 +31,7 @@ Various GPU activities appear with bar charts for compiler statistics and runtim
 
 The bottom portion of the Pipeline Statistics viewer displays the GPU time in the Total column for each command in the pass so you can compare their respective elapsed times.
 
-![A screenshot of the timing comparison across commands using the pipeline state.](https://docs-assets.developer.apple.com/published/cfac835c6168984c2d4970b9d9aa5f08/gputools-metal-debugger-psv-commands%402x.png)
+![A screenshot of the timing comparison across commands using the pipeline state.](/images/com.apple.Xcode/gputools-metal-debugger-psv-commands@2x.png)
 
 ## See Also
 

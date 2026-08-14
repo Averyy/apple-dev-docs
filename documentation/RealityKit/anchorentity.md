@@ -40,13 +40,13 @@ AnchorEntity(.plane(.horizontal,
 
 See [`Creating an anchor`](anchorentity#Creating-an-anchor.md) for more information about the different types of anchors available when using Reality Composer Pro.
 
-![A diagram showing the components present in the anchor entity. It contains](https://docs-assets.developer.apple.com/published/e78311258ee5161ce72fbe286f53f45f/AnchorEntity-1%402x.png)
+![A diagram showing the components present in the anchor entity. It contains](/images/com.apple.RealityKit/AnchorEntity-1@2x.png)
 
 Add anchor entities directly to your scene’s [`anchors`](scene/anchors.md) collection, or anywhere else in the scene hierarchy by adding them to the [`children`](hashierarchy/children.md) collection of another entity in your scene. Because `AnchorEntity` is a subclass of [`Entity`](entity.md), you can make an anchor entity a subentity of any other entity. RealityKit might move anchor entities as the scene updates, so the location and rotation of the anchor entity can change relative to its container entity, even if your code never modifies its [`transformMatrix(relativeTo:)`](hastransform/transformmatrix(relativeto:).md) property.
 
 Some anchor entities might not show up in your scene at all if RealityKit fails to detect an appropriate place for them. For example, an anchor entity with an `image` target doesn’t show up in the scene until RealityKit detects the specified image in the real world.
 
-![A block diagram showing how anchor entities attach to a scene, and how they](https://docs-assets.developer.apple.com/published/49a94f8af177d4ae0e15f0fa011c760a/AnchorEntity-2%402x.png)
+![A block diagram showing how anchor entities attach to a scene, and how they](/images/com.apple.RealityKit/AnchorEntity-2@2x.png)
 
 You can have multiple anchors in a RealityKit scene. For example, one anchor can place a toy car on a horizontal surface, like a table, and another can tie an informative text bubble to an image in the same scene.
 
@@ -84,21 +84,21 @@ An entity and its descendants can participate in the physics simulation at the r
 ### Inherits From
 - [Entity](entity.md)
 ### Conforms To
-- [CoordinateSpace3D](../Spatial/CoordinateSpace3D.md)
-- [CoordinateSpace3DFloat](../Spatial/CoordinateSpace3DFloat.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
+- [CoordinateSpace3D](../spatial/coordinatespace3d.md)
+- [CoordinateSpace3DFloat](../spatial/coordinatespace3dfloat.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [Equatable](../swift/equatable.md)
 - [EventSource](eventsource.md)
 - [HasAnchoring](hasanchoring.md)
 - [HasHierarchy](hashierarchy.md)
 - [HasSynchronization](hassynchronization.md)
 - [HasTransform](hastransform.md)
-- [Hashable](../Swift/Hashable.md)
-- [Identifiable](../Swift/Identifiable.md)
-- [Observable](../Observation/Observable.md)
+- [Hashable](../swift/hashable.md)
+- [Identifiable](../swift/identifiable.md)
+- [Observable](../observation/observable.md)
 - [RealityCoordinateSpace](realitycoordinatespace.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

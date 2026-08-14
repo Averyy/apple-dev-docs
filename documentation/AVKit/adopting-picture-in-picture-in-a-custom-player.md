@@ -10,7 +10,7 @@ Add PiP playback to your custom player by using the AVKit framework’s [`AVPict
 
 ##### Configure Audio Session and Background Modes
 
-To participate with PiP in iOS and tvOS, customize your app’s audio playback capabilities by configuring its audio session and background modes. For more information, see [`Configuring your app for media playback`](https://developer.apple.com/documentation/AVFoundation/configuring-your-app-for-media-playback).
+To participate with PiP in iOS and tvOS, customize your app’s audio playback capabilities by configuring its audio session and background modes. For more information, see [`Configuring your app for media playback`](https://developer.apple.com/documentation/avfoundation/configuring-your-app-for-media-playback).
 
 ##### Update Your Custom Player User Interface
 
@@ -32,7 +32,7 @@ override func viewDidLoad() {
 }
 ```
 
-Use key-value observing (KVO) on the controller’s [`canStopPictureInPicture`](avpictureinpicturecontroller/canstoppictureinpicture.md) property to display the appropriate affordances and provide the correct behavior in your playback UI. If `false`, display a start PiP affordance. If `true`, your app stops your custom playback UI and displays UI affordances to swap if you’re creating a tvOS app. For more information about KVO, see [`Using Key-Value Observing in Swift`](https://developer.apple.com/documentation/Swift/using-key-value-observing-in-swift).
+Use key-value observing (KVO) on the controller’s [`canStopPictureInPicture`](avpictureinpicturecontroller/canstoppictureinpicture.md) property to display the appropriate affordances and provide the correct behavior in your playback UI. If `false`, display a start PiP affordance. If `true`, your app stops your custom playback UI and displays UI affordances to swap if you’re creating a tvOS app. For more information about KVO, see [`Using Key-Value Observing in Swift`](https://developer.apple.com/documentation/swift/using-key-value-observing-in-swift).
 
 ##### Create the Pip Controller
 
@@ -61,7 +61,7 @@ options: [.initial, .new]) { [weak self] _, change in
 }
 ```
 
-This example creates a new [`AVPictureInPictureController`](avpictureinpicturecontroller.md) instance, passing it a reference to the [`AVPlayerLayer`](https://developer.apple.com/documentation/AVFoundation/AVPlayerLayer) that presents the video content. The system supports displaying content from an `AVPlayerLayer` or [`AVSampleBufferDisplayLayer`](https://developer.apple.com/documentation/AVFoundation/AVSampleBufferDisplayLayer) in a PiP window.
+This example creates a new [`AVPictureInPictureController`](avpictureinpicturecontroller.md) instance, passing it a reference to the [`AVPlayerLayer`](https://developer.apple.com/documentation/avfoundation/avplayerlayer) that presents the video content. The system supports displaying content from an `AVPlayerLayer` or [`AVSampleBufferDisplayLayer`](https://developer.apple.com/documentation/avfoundation/avsamplebufferdisplaylayer) in a PiP window.
 
 For PiP functionality to work, maintain a strong reference to the controller object.
 
@@ -71,9 +71,9 @@ To participate in PiP life-cycle events, your code should adopt the [`AVPictureI
 
 ##### Publish the Now Playing State
 
-On tvOS, [`MPNowPlayingSession`](https://developer.apple.com/documentation/MediaPlayer/MPNowPlayingSession) ties your [`AVPlayer`](https://developer.apple.com/documentation/AVFoundation/AVPlayer) instances to a session. Your app can have many playing sessions, and in the case of PiP, your player must be tied to a session. You can have a Now Playing session for your PiP content and one for your full-screen content. When you update a session, the system ignores updates from the default [`MPNowPlayingInfoCenter`](https://developer.apple.com/documentation/MediaPlayer/MPNowPlayingInfoCenter), so migrate away from `MPNowPlayingInfoCenter.default()` and switch to [`MPNowPlayingSession`](https://developer.apple.com/documentation/MediaPlayer/MPNowPlayingSession) across your whole app.
+On tvOS, [`MPNowPlayingSession`](https://developer.apple.com/documentation/mediaplayer/mpnowplayingsession) ties your [`AVPlayer`](https://developer.apple.com/documentation/avfoundation/avplayer) instances to a session. Your app can have many playing sessions, and in the case of PiP, your player must be tied to a session. You can have a Now Playing session for your PiP content and one for your full-screen content. When you update a session, the system ignores updates from the default [`MPNowPlayingInfoCenter`](https://developer.apple.com/documentation/mediaplayer/mpnowplayinginfocenter), so migrate away from `MPNowPlayingInfoCenter.default()` and switch to [`MPNowPlayingSession`](https://developer.apple.com/documentation/mediaplayer/mpnowplayingsession) across your whole app.
 
-The system determines which Now Playing information to display, so publish your information even if the UI isn’t displaying your session — the system might display your session at any moment. For more information about Now Playing metadata, see the Now Playing Metadata Properties topic group at [`MPNowPlayingInfoCenter`](https://developer.apple.com/documentation/MediaPlayer/MPNowPlayingInfoCenter).
+The system determines which Now Playing information to display, so publish your information even if the UI isn’t displaying your session — the system might display your session at any moment. For more information about Now Playing metadata, see the Now Playing Metadata Properties topic group at [`MPNowPlayingInfoCenter`](https://developer.apple.com/documentation/mediaplayer/mpnowplayinginfocenter).
 
 ```swift
 func publishNowPlayingMetadata() {

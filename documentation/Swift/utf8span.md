@@ -70,7 +70,7 @@ struct UTF8Span
 
 ### Conforms To
 - [BitwiseCopyable](bitwisecopyable.md)
-- [ContiguousBytes](../Foundation/ContiguousBytes.md)
+- [ContiguousBytes](../foundation/contiguousbytes.md)
 
 ## See Also
 

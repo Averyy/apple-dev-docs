@@ -24,7 +24,7 @@ Returns the result of comparing the two documents.
 
 #### Discussion
 
-The system calls this method during a find session to determine which document’s ranges to highlight next when a user taps the “next” or “previous” button. Return [`ComparisonResult.orderedAscending`](https://developer.apple.com/documentation/Foundation/ComparisonResult/orderedAscending) if the text ranges found in the `fromDocument` come before those found in the `toDocument` in your view. Otherwise, return [`ComparisonResult.orderedDescending`](https://developer.apple.com/documentation/Foundation/ComparisonResult/orderedDescending).
+The system calls this method during a find session to determine which document’s ranges to highlight next when a user taps the “next” or “previous” button. Return [`ComparisonResult.orderedAscending`](https://developer.apple.com/documentation/foundation/comparisonresult/orderedascending) if the text ranges found in the `fromDocument` come before those found in the `toDocument` in your view. Otherwise, return [`ComparisonResult.orderedDescending`](https://developer.apple.com/documentation/foundation/comparisonresult/ordereddescending).
 
 The system only calls this method if you provide document identifiers to the session’s result aggregator.
 

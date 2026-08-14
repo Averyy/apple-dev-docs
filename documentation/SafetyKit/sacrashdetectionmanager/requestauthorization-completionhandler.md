@@ -22,9 +22,9 @@ func requestAuthorization() async throws -> SAAuthorizationStatus
 
 > ❗ **Important**:  You can call this method from synchronous code using a completion handler, as shown on this page, or you can call it as an asynchronous method that has the following declaration: ```swift
 func requestAuthorization() async throws -> SAAuthorizationStatus
-``` For information about concurrency and asynchronous code in Swift, see [`Calling Objective-C APIs Asynchronously`](https://developer.apple.com/documentation/Swift/calling-objective-c-apis-asynchronously).
+``` For information about concurrency and asynchronous code in Swift, see [`Calling Objective-C APIs Asynchronously`](https://developer.apple.com/documentation/swift/calling-objective-c-apis-asynchronously).
 
-This method requests a person to authorize your app to receive Crash Detection events. Before requesting authorization, verify that your app already has authorization by verifying that [`authorizationStatus`](sacrashdetectionmanager/authorizationstatus.md) is [`true`](https://developer.apple.com/documentation/Swift/true).
+This method requests a person to authorize your app to receive Crash Detection events. Before requesting authorization, verify that your app already has authorization by verifying that [`authorizationStatus`](sacrashdetectionmanager/authorizationstatus.md) is [`true`](https://developer.apple.com/documentation/swift/true).
 
 ## Parameters
 

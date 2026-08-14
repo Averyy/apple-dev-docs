@@ -31,7 +31,7 @@ struct Placement
 ## Relationships
 
 ### Conforms To
-- [RawRepresentable](../Swift/RawRepresentable.md)
+- [RawRepresentable](../swift/rawrepresentable.md)
 - [SubscriptionStoreControlPlacement](subscriptionstorecontrolplacement.md)
 
 

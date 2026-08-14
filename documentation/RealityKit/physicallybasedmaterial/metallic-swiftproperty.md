@@ -27,9 +27,9 @@ var metallic: PhysicallyBasedMaterial.Metallic { get set }
 
 The `metallic` property represents the reflectiveness of an entity. Use this property to specify whether the entity displays metallic qualities and reflects the surrounding environment, or displays dielectric qualities and doesn’t reflect the environment.
 
-![An illustration showing two spheres rendered in RealityKit. The sphere](https://docs-assets.developer.apple.com/published/905cfc9b323ae0c410a550342e2dc378/PhysicallyBasedMaterial-metallic-swift-property-1%402x.png)
+![An illustration showing two spheres rendered in RealityKit. The sphere](/images/com.apple.RealityKit/PhysicallyBasedMaterial-metallic-swift-property-1@2x.png)
 
-Specify this property using a [`Float`](https://developer.apple.com/documentation/Swift/Float) to represent a uniform reflectiveness for the entire entity. You an also use a UV-mapped grayscale image to represent the reflectiveness of different parts of the entity. When using an image, black pixels represent areas that are dielectric, while white pixels represents areas that are completely metallic and reflective.
+Specify this property using a [`Float`](https://developer.apple.com/documentation/swift/float) to represent a uniform reflectiveness for the entire entity. You an also use a UV-mapped grayscale image to represent the reflectiveness of different parts of the entity. When using an image, black pixels represent areas that are dielectric, while white pixels represents areas that are completely metallic and reflective.
 
 If you initialize this property with a color image, rather than a grayscale image, RealityKit only uses the intensity of the image’s red channel.
 

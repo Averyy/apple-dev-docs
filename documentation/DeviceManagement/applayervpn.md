@@ -235,7 +235,7 @@ This profile defines per-app VPN behavior and applies only to VPN services of ty
 
 ## Properties
 
-- `AssociatedDomains` ([string]): An array with entries that must each specify a domain that triggers this VPN. The domains must also be part of the `apple-app-site-association` file, as described in [`Supporting associated domains`](https://developer.apple.com/documentation/Xcode/supporting-associated-domains). Available: iOS 14+ | iPadOS 14+ | macOS 11+ | visionOS 1.1+ | watchOS 10+
+- `AssociatedDomains` ([string]): An array with entries that must each specify a domain that triggers this VPN. The domains must also be part of the `apple-app-site-association` file, as described in [`Supporting associated domains`](https://developer.apple.com/documentation/xcode/supporting-associated-domains). Available: iOS 14+ | iPadOS 14+ | macOS 11+ | visionOS 1.1+ | watchOS 10+
 - `CalendarDomains` ([string]): An array with entries that must each specify a domain that triggers this VPN connection in Calendar. Each entry is in the format `www.apple.com`. This property is deprecated in iOS 13.4 and later; use the `VPNUUID` property of the [`CalDAV`](caldav.md) payload instead. Available: iOS 13+ | iPadOS 13+ | macOS 10.15+
 Deprecated: iOS 13.4+ | iPadOS 13.4+
 - `CellularSliceUUID` (string): A string representing the data network name (DNN) or app category identifying a Cellular Slice. The device forces the VPN tunnel to use the specified Cellular Slice. Available: iOS 18+ | iPadOS 18+ | watchOS 10+

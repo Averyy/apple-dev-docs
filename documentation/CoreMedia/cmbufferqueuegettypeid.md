@@ -26,7 +26,7 @@ CFTypeID of `CMBufferQueue` objects.
 
 #### Discussion
 
-You can check if a `CFTypeRef` object is actually a `CMBufferQueue` by comparing [`CFGetTypeID(_:)`](https://developer.apple.com/documentation/CoreFoundation/CFGetTypeID(_:))(object) with [`CMBufferQueueGetTypeID()`](cmbufferqueuegettypeid().md)().
+You can check if a `CFTypeRef` object is actually a `CMBufferQueue` by comparing [`CFGetTypeID(_:)`](https://developer.apple.com/documentation/corefoundation/cfgettypeid(_:))(object) with [`CMBufferQueueGetTypeID()`](cmbufferqueuegettypeid().md)().
 
 
 ---

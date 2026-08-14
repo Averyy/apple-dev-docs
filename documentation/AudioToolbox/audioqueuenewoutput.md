@@ -29,7 +29,7 @@ A result code. See Result Codes.
 - `inCallbackProc`: A callback function to use with the playback audio queue. The audio queue invokes the callback when the audio queue has finished acquiring a buffer. See [`AudioQueueOutputCallback`](audioqueueoutputcallback.md).
 - `inUserData`: A custom data structure for use with the callback function.
 - `inCallbackRunLoop`: The event loop on which the callback function pointed to by the `inCallbackProc` parameter is to be called. If you specify `NULL`, the callback is invoked on one of the audio queue’s internal threads.
-- `inCallbackRunLoopMode`: The run loop mode in which to invoke the callback function specified in the `inCallbackProc` parameter. Typically, you pass `kCFRunLoopCommonModes` or use `NULL`, which is equivalent. You can choose to create your own thread with your own run loops. For more information on run loops, see Run Loops and [`CFRunLoop`](https://developer.apple.com/documentation/CoreFoundation/CFRunLoop).
+- `inCallbackRunLoopMode`: The run loop mode in which to invoke the callback function specified in the `inCallbackProc` parameter. Typically, you pass `kCFRunLoopCommonModes` or use `NULL`, which is equivalent. You can choose to create your own thread with your own run loops. For more information on run loops, see Run Loops and [`CFRunLoop`](https://developer.apple.com/documentation/corefoundation/cfrunloop).
 - `inFlags`: Reserved for future use. Must be `0`.
 - `outAQ`: On output, the newly created playback audio queue object.
 

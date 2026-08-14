@@ -23,7 +23,7 @@ static var landscapeRight: PreviewTrait<Preview.ViewTraits> { get }
 
 #### Discussion
 
-This is the same as [`landscapeRight`](https://developer.apple.com/documentation/SwiftUI/InterfaceOrientation/landscapeRight).
+This is the same as [`landscapeRight`](https://developer.apple.com/documentation/swiftui/interfaceorientation/landscaperight).
 
 ## See Also
 

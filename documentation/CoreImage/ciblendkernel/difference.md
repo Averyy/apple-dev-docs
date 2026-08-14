@@ -21,7 +21,7 @@ class var difference: CIBlendKernel { get }
 
 #### Discussion
 
-![The result of using the difference blend kernel (background image is top left, foreground image is bottom left)](https://docs-assets.developer.apple.com/published/fda1b546a320cd65554bf49fc08f4b03/media-2926863%402x.png)
+![The result of using the difference blend kernel (background image is top left, foreground image is bottom left)](/images/com.apple.coreimage/media-2926863@2x.png)
 
 ## See Also
 

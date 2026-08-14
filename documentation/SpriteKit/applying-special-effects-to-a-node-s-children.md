@@ -10,7 +10,7 @@ In the example image below, the effect node’s children are two sprites that pr
 
 > ❗ **Important**:  Any Core Image filter that you use must be able to produce a single output image from a single input image.
 
-![None](https://docs-assets.developer.apple.com/published/3d38d07c6cf154b78e4a8e1ef1270a5c/media-3111373%402x.png)
+![None](/images/com.apple.spritekit/media-3111373@2x.png)
 
 Hereʼs how the scene generates this lighting effect:
 

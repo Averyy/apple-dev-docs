@@ -74,22 +74,22 @@ The `ABAddressBook` class is “toll-free bridged” with its procedural C opaqu
 - [Errors](1529225-errors.md)
   Errors codes returned by the Address Book Framework.
 ### Notifications
-- [static let abDatabaseChanged: NSNotification.Name](../Foundation/NSNotification/Name-swift.struct/abDatabaseChanged.md)
+- [static let abDatabaseChanged: NSNotification.Name](../foundation/nsnotification/name-swift.struct/abdatabasechanged.md)
   Posted when this process has changed the Address Book database.
-- [static let abDatabaseChangedExternally: NSNotification.Name](../Foundation/NSNotification/Name-swift.struct/abDatabaseChangedExternally.md)
+- [static let abDatabaseChangedExternally: NSNotification.Name](../foundation/nsnotification/name-swift.struct/abdatabasechangedexternally.md)
   Posted when a process other than the current one has changed the Address Book database.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 
 ---

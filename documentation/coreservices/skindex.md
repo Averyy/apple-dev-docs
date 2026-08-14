@@ -23,7 +23,7 @@ To create a new disk-based Search Kit index object, use [`SKIndexCreateWithURL(_
 
 ##### 1681550
 
-You cannot use [`CFMakeCollectable`](https://developer.apple.com/documentation/corefoundation/1521163-cfmakecollectable) with SKIndex objects. In a garbage-collected environment, you must use [`SKIndexClose(_:)`](1442401-skindexclose.md) to dispose of an SKIndex object.
+You cannot use [`CFMakeCollectable`](https://developer.apple.com/documentation/corefoundation/cfmakecollectable) with SKIndex objects. In a garbage-collected environment, you must use [`SKIndexClose(_:)`](1442401-skindexclose.md) to dispose of an SKIndex object.
 
 
 ---

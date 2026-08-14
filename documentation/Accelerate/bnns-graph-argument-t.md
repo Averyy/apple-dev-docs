@@ -38,7 +38,7 @@ Exactly one of descriptor or data_ptr should be set based on the configuration s
 ## Relationships
 
 ### Conforms To
-- [Sendable](../Swift/Sendable.md)
+- [Sendable](../swift/sendable.md)
 
 ## See Also
 

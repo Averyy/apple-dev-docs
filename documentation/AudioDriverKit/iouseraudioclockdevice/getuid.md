@@ -16,7 +16,7 @@ OSSharedPtr<OSString> GetUID();
 
 #### Return Value
 
-A pointer to an [`OSString`](https://developer.apple.com/documentation/DriverKit/OSString) containing the UID.
+A pointer to an [`OSString`](https://developer.apple.com/documentation/driverkit/osstring) containing the UID.
 
 #### Discussion
 

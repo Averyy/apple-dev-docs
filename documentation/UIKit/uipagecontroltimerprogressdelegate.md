@@ -27,7 +27,7 @@ protocol UIPageControlTimerProgressDelegate : UIPageControlProgressDelegate
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 - [UIPageControlProgressDelegate](uipagecontrolprogressdelegate.md)
 
 ## See Also

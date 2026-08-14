@@ -38,7 +38,7 @@ typealias CFProxyAutoConfigurationResultCallback = (UnsafeMutableRawPointer, CFA
 - [func CFNetworkCopySystemProxySettings() -> Unmanaged<CFDictionary>?](cfnetworkcopysystemproxysettings().md)
   Returns a CFDictionary containing the current systemwide internet proxy settings.
 - [Property Keys](property-keys.md)
-  Keys for calls to property get/set functions such as [`CFReadStreamSetProperty(_:_:_:)`](https://developer.apple.com/documentation/CoreFoundation/CFReadStreamSetProperty(_:_:_:)) and [`CFReadStreamCopyProperty(_:_:)`](https://developer.apple.com/documentation/CoreFoundation/CFReadStreamCopyProperty(_:_:)).
+  Keys for calls to property get/set functions such as [`CFReadStreamSetProperty(_:_:_:)`](https://developer.apple.com/documentation/corefoundation/cfreadstreamsetproperty(_:_:_:)) and [`CFReadStreamCopyProperty(_:_:)`](https://developer.apple.com/documentation/corefoundation/cfreadstreamcopyproperty(_:_:)).
 - [Proxy Types](proxy-types.md)
   Constants that specify the type of proxy.
 - [Global Proxy Settings Constants](global-proxy-settings-constants.md)

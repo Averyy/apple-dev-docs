@@ -19,11 +19,11 @@ static let message: UIActivity.ActivityType
 
 #### Discussion
 
-When using this service, you can provide [`NSString`](https://developer.apple.com/documentation/Foundation/NSString) and [`NSAttributedString`](https://developer.apple.com/documentation/Foundation/NSAttributedString) objects as data for the activity items. You may also specify [`NSURL`](https://developer.apple.com/documentation/Foundation/NSURL) objects whose contents use the `sms` scheme.
+When using this service, you can provide [`NSString`](https://developer.apple.com/documentation/foundation/nsstring) and [`NSAttributedString`](https://developer.apple.com/documentation/foundation/nsattributedstring) objects as data for the activity items. You may also specify [`NSURL`](https://developer.apple.com/documentation/foundation/nsurl) objects whose contents use the `sms` scheme.
 
-If the device has MMS or FaceTime enabled, you can provide [`UIImage`](uiimage.md), and [`NSURL`](https://developer.apple.com/documentation/Foundation/NSURL) objects as data for the activity items.
+If the device has MMS or FaceTime enabled, you can provide [`UIImage`](uiimage.md), and [`NSURL`](https://developer.apple.com/documentation/foundation/nsurl) objects as data for the activity items.
 
-To specify an [`NSData`](https://developer.apple.com/documentation/Foundation/NSData) object, you must implement the [`UIActivityItemSource`](uiactivityitemsource.md) protocol, return the data object in [`activityViewController(_:itemForActivityType:)`](uiactivityitemsource/activityviewcontroller(_:itemforactivitytype:).md), and return the data object’s UTI in [`activityViewController(_:dataTypeIdentifierForActivityType:)`](uiactivityitemsource/activityviewcontroller(_:datatypeidentifierforactivitytype:).md).
+To specify an [`NSData`](https://developer.apple.com/documentation/foundation/nsdata) object, you must implement the [`UIActivityItemSource`](uiactivityitemsource.md) protocol, return the data object in [`activityViewController(_:itemForActivityType:)`](uiactivityitemsource/activityviewcontroller(_:itemforactivitytype:).md), and return the data object’s UTI in [`activityViewController(_:dataTypeIdentifierForActivityType:)`](uiactivityitemsource/activityviewcontroller(_:datatypeidentifierforactivitytype:).md).
 
 ## See Also
 

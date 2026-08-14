@@ -22,7 +22,7 @@ let kCGImagePropertyAPNGDelayTime: CFString
 
 #### Discussion
 
-The value of this key is a [`CFNumber`](https://developer.apple.com/documentation/CoreFoundation/CFNumber) with a floating-point value. The value of this key is never less than 50 millseconds, and the system adjusts values less than that amount to 50 milliseconds, as needed. See [`kCGImagePropertyAPNGUnclampedDelayTime`](kcgimagepropertyapngunclampeddelaytime.md).
+The value of this key is a [`CFNumber`](https://developer.apple.com/documentation/corefoundation/cfnumber) with a floating-point value. The value of this key is never less than 50 millseconds, and the system adjusts values less than that amount to 50 milliseconds, as needed. See [`kCGImagePropertyAPNGUnclampedDelayTime`](kcgimagepropertyapngunclampeddelaytime.md).
 
 ## See Also
 

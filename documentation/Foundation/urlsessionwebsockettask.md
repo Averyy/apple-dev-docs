@@ -30,7 +30,7 @@ You send data with [`send(_:completionHandler:)`](urlsessionwebsockettask/send(_
 
 [`URLSessionWebSocketTask`](urlsessionwebsockettask.md) supports redirection and authentication like other types of tasks do, using the methods in [`URLSessionTaskDelegate`](urlsessiontaskdelegate.md). The WebSocket task calls the redirection and authentication delegate methods prior to completing the handshake. The WebSocket task also supports cookies, by storing cookies to the session configuration’s [`httpCookieStorage`](urlsessionconfiguration/httpcookiestorage.md), and attaches cookies to outgoing HTTP handshake requests.
 
-> **Note**:  watchOS supports [`URLSessionWebSocketTask`](urlsessionwebsockettask.md) for specific use cases. For more details, see [`TN3135: Low-level networking on watchOS`](https://developer.apple.com/documentation/Technotes/tn3135-low-level-networking-on-watchOS).
+> **Note**:  watchOS supports [`URLSessionWebSocketTask`](urlsessionwebsockettask.md) for specific use cases. For more details, see [`TN3135: Low-level networking on watchOS`](https://developer.apple.com/documentation/technotes/tn3135-low-level-networking-on-watchos).
 
 ## Topics
 
@@ -64,16 +64,16 @@ You send data with [`send(_:completionHandler:)`](urlsessionwebsockettask/send(_
 ### Inherits From
 - [URLSessionTask](urlsessiontask.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
 - [NSCopying](nscopying.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 - [ProgressReporting](progressreporting.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

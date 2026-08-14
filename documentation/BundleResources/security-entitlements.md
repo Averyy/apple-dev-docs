@@ -116,11 +116,11 @@ Key-value pairs that grant an executable access to secure resources, or enable h
 
 ## See Also
 
-- [App Sandbox](../Security/app-sandbox.md)
+- [App Sandbox](../security/app-sandbox.md)
   Restrict access to system resources and user data in macOS apps to contain damage if an app becomes compromised.
-- [Hardened Runtime](../Security/hardened-runtime.md)
+- [Hardened Runtime](../security/hardened-runtime.md)
   Manage security protections and resource access for your macOS apps.
-- [Enabling enhanced security for your app](../Xcode/enabling-enhanced-security-for-your-app.md)
+- [Enabling enhanced security for your app](../xcode/enabling-enhanced-security-for-your-app.md)
   Detect out-of-bounds memory access, use of freed memory, and other potential vulnerabilities.
 
 

@@ -21,7 +21,7 @@ let kCIInputTimeKey: String
 
 #### Discussion
 
-A key for z scalar value ([`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber)) that specifies a time.
+A key for z scalar value ([`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber)) that specifies a time.
 
 ## See Also
 

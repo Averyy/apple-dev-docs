@@ -7,7 +7,7 @@ An atom that uses one byte per sample as a bit field that describes dependency i
 
 #### Overview
 
-See [`Sample dependency flags atom ('sdtp')`](sample_dependency_flags_atom.md).
+See [`Sample dependency flags atom`](sample_dependency_flags_atom.md).
 
 ## See Also
 

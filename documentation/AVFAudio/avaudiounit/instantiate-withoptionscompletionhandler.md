@@ -21,7 +21,7 @@ class func instantiate(with audioComponentDescription: AudioComponentDescription
 
 #### Discussion
 
-You must create components with flags that include [`requiresAsyncInstantiation`](https://developer.apple.com/documentation/AudioToolbox/AudioComponentFlags/requiresAsyncInstantiation) asynchronously through this method if they’re for use with [`AVAudioEngine`](avaudioengine.md).
+You must create components with flags that include [`requiresAsyncInstantiation`](https://developer.apple.com/documentation/audiotoolbox/audiocomponentflags/requiresasyncinstantiation) asynchronously through this method if they’re for use with [`AVAudioEngine`](avaudioengine.md).
 
 The [`AVAudioUnit`](avaudiounit.md) instance is usually a subclass that the method selects according to the components type. For example, [`AVAudioUnitEffect`](avaudiouniteffect.md), [`AVAudioUnitGenerator`](avaudiounitgenerator.md), [`AVAudioUnitMIDIInstrument`](avaudiounitmidiinstrument.md), or [`AVAudioUnitTimeEffect`](avaudiounittimeeffect.md).
 

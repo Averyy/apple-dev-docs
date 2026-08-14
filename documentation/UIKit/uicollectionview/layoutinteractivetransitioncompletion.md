@@ -23,7 +23,7 @@ typealias LayoutInteractiveTransitionCompletion = (Bool, Bool) -> Void
 This completion block takes the following parameters:
 
 - **completed**: A Boolean indicating whether the animations ran to completion.
-- **finish**: A Boolean indicating whether the transition finished or was canceled. This parameter is [`true`](https://developer.apple.com/documentation/Swift/true) if the transition ran to completion and the new layout is installed. It is [`false`](https://developer.apple.com/documentation/Swift/false) if the user canceled the transition and the old layout is installed.
+- **finish**: A Boolean indicating whether the transition finished or was canceled. This parameter is [`true`](https://developer.apple.com/documentation/swift/true) if the transition ran to completion and the new layout is installed. It is [`false`](https://developer.apple.com/documentation/swift/false) if the user canceled the transition and the old layout is installed.
 
 ## See Also
 

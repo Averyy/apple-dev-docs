@@ -7,11 +7,11 @@ Use arrays, dictionaries, sets, and specialized collections to store and iterate
 ## Topics
 
 ### Basic Collections
-- [struct Array](../Swift/Array.md)
+- [struct Array](../swift/array.md)
   An ordered, random-access collection.
-- [struct Dictionary](../Swift/Dictionary.md)
+- [struct Dictionary](../swift/dictionary.md)
   A collection whose elements are key-value pairs.
-- [struct Set](../Swift/Set.md)
+- [struct Set](../swift/set.md)
   An unordered collection of unique elements.
 ### Indexes
 - [struct IndexPath](indexpath.md)

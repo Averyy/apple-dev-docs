@@ -28,7 +28,7 @@ case continuedWithExternalPurchaseToken(token: String)
 
 When your app calls [`presentNoticeSheet()`](externalpurchase/presentnoticesheet().md) and it results in this value: [`ExternalPurchase.NoticeResult.continuedWithExternalPurchaseToken(token:)`](externalpurchase/noticeresult/continuedwithexternalpurchasetoken(token:).md), your app can proceed to present external purchases.
 
-> ❗ **Important**:  Record and use the token to report the customer’s external purchases to Apple. For more information, see [`External Purchase Server API`](https://developer.apple.com/documentation/ExternalPurchaseServerAPI).
+> ❗ **Important**:  Record and use the token to report the customer’s external purchases to Apple. For more information, see [`External Purchase Server API`](https://developer.apple.com/documentation/externalpurchaseserverapi).
 
 ``
 

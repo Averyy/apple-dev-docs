@@ -33,10 +33,10 @@ The [`applyRestrictedSandbox(revision:)`](restrictedsandboxappliable/applyrestri
 ## Relationships
 
 ### Conforms To
-- [CaseIterable](../Swift/CaseIterable.md)
-- [Comparable](../Swift/Comparable.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
+- [CaseIterable](../swift/caseiterable.md)
+- [Comparable](../swift/comparable.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
 
 ## See Also
 

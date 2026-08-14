@@ -20,7 +20,7 @@ If your app delegate returns `NSTerminateLater` from its [`applicationShouldTerm
 
 ## Parameters
 
-- `shouldTerminate`: Specify [`true`](https://developer.apple.com/documentation/Swift/true) if you want the app to terminate; otherwise, specify [`false`](https://developer.apple.com/documentation/Swift/false).
+- `shouldTerminate`: Specify [`true`](https://developer.apple.com/documentation/swift/true) if you want the app to terminate; otherwise, specify [`false`](https://developer.apple.com/documentation/swift/false).
 
 ## See Also
 

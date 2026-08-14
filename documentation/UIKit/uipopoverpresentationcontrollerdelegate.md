@@ -40,7 +40,7 @@ After defining an object that adopts this protocol, assign that object to the [`
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 - [UIAdaptivePresentationControllerDelegate](uiadaptivepresentationcontrollerdelegate.md)
 
 ## See Also

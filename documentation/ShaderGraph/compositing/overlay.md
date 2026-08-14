@@ -34,11 +34,11 @@ The `Overlay` node has one of two effects:
 
 Below is an example of a simple node graph that uses the `Overlay` node to blend two images together into a single material:
 
-![None](https://docs-assets.developer.apple.com/published/7ceec91d585b58948afa1611c167fc34/OverlayGraph.png)
+![None](/images/ShaderGraph-Docs/OverlayGraph.png)
 
 Below are two images and their resulting blended texture applied to a cube:
 
-![None](https://docs-assets.developer.apple.com/published/e2d08d8613e4333f8d28526d6c713847/OverlayMaterial2.png)
+![None](/images/ShaderGraph-Docs/OverlayMaterial2.png)
 
 ## See Also
 

@@ -19,7 +19,7 @@ static let MPVolumeViewWirelessRoutesAvailableDidChange: NSNotification.Name
 
 #### Discussion
 
-The system posts this notification when the [`areWirelessRoutesAvailable`](https://developer.apple.com/documentation/MediaPlayer/MPVolumeView/areWirelessRoutesAvailable) property changes.
+The system posts this notification when the [`areWirelessRoutesAvailable`](https://developer.apple.com/documentation/mediaplayer/mpvolumeview/arewirelessroutesavailable) property changes.
 
 ## See Also
 

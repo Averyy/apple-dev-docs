@@ -18,7 +18,7 @@ Touch Canvas illustrates responsive handling of Apple Pencil and touch input, fo
 
 You can use the force of a touch applied by a finger on 3D Touch-enabled devices or from the tip of Apple Pencil to create effects in your app. For example, the force of a touch can change the width of a line on a canvas.
 
-![Diagram of how the sample project visualizes force for line width](https://docs-assets.developer.apple.com/published/c4427107f89e767566ae3f8fa5de8c26/force%402x.png)
+![Diagram of how the sample project visualizes force for line width](/images/com.apple.uikit/force@2x.png)
 
 The current force is reported by the [`force`](uitouch/force.md) property of [`UITouch`](uitouch.md).
 
@@ -44,7 +44,7 @@ context.setLineWidth(point.magnitude)
 
 Touch Canvas contains a visualization of the altitude and azimuth for Apple Pencil as you draw on the screen when the *Debug* mode is enabled.  This visualization is a diagram which continuously updates based on Apple Pencil’s motion.
 
-![Diagram of how the sample project visualizes Apple Pencil's altitude and azimuth](https://docs-assets.developer.apple.com/published/1e2dab6bc1b272990b169850a701abf9/azimuth-altitude%402x.png)
+![Diagram of how the sample project visualizes Apple Pencil's altitude and azimuth](/images/com.apple.uikit/azimuth-altitude@2x.png)
 
 Apple Pencil reports its altitude as an angle relative to the device surface through the [`altitudeAngle`](uitouch/altitudeangle.md) property on `UITouch`.
 

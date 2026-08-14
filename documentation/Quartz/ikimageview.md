@@ -16,16 +16,16 @@ class IKImageView
 
 #### Overview
 
-The `IKImageView` class provides an efficient way to display images in a view while at the same time supporting a number of image editing operations such as rotating, zooming, and cropping. If possible, image rendering uses hardware acceleration to achieve optimal performance. The `IKImageView` class is implemented as a subclass of [`NSView`](https://developer.apple.com/documentation/AppKit/NSView). Similar to [`NSImageView`](https://developer.apple.com/documentation/AppKit/NSImageView), the `IKImageView` class is used to display a single image.
+The `IKImageView` class provides an efficient way to display images in a view while at the same time supporting a number of image editing operations such as rotating, zooming, and cropping. If possible, image rendering uses hardware acceleration to achieve optimal performance. The `IKImageView` class is implemented as a subclass of [`NSView`](https://developer.apple.com/documentation/appkit/nsview). Similar to [`NSImageView`](https://developer.apple.com/documentation/appkit/nsimageview), the `IKImageView` class is used to display a single image.
 
 You can provide an images for the view in any of these formats:
 
-- File reference ([`NSURL`](https://developer.apple.com/documentation/Foundation/NSURL), [`CFURL`](https://developer.apple.com/documentation/CoreFoundation/CFURL), or a path)
-- [`CGImageSource`](https://developer.apple.com/documentation/ImageIO/CGImageSource)
-- Data ([`NSData`](https://developer.apple.com/documentation/Foundation/NSData) or [`CFData`](https://developer.apple.com/documentation/CoreFoundation/CFData))
-- Image ([`CGImage`](https://developer.apple.com/documentation/CoreGraphics/CGImage) or [`CIImage`](https://developer.apple.com/documentation/CoreImage/CIImage))
+- File reference ([`NSURL`](https://developer.apple.com/documentation/foundation/nsurl), [`CFURL`](https://developer.apple.com/documentation/corefoundation/cfurl), or a path)
+- [`CGImageSource`](https://developer.apple.com/documentation/imageio/cgimagesource)
+- Data ([`NSData`](https://developer.apple.com/documentation/foundation/nsdata) or [`CFData`](https://developer.apple.com/documentation/corefoundation/cfdata))
+- Image ([`CGImage`](https://developer.apple.com/documentation/coregraphics/cgimage) or [`CIImage`](https://developer.apple.com/documentation/coreimage/ciimage))
 
-Providing a file reference is the preferred way to set the the image for a view because in addition to the actual image data, `IKImageView` also handles the image metadata embedded in the file. The image view automatically fetches the metadata from a file reference, whereas for the other sources (except for a [`CGImageSource`](https://developer.apple.com/documentation/ImageIO/CGImageSource) source), it cannot. For images set from other sources, you need to set the metadata separately.
+Providing a file reference is the preferred way to set the the image for a view because in addition to the actual image data, `IKImageView` also handles the image metadata embedded in the file. The image view automatically fetches the metadata from a file reference, whereas for the other sources (except for a [`CGImageSource`](https://developer.apple.com/documentation/imageio/cgimagesource) source), it cannot. For images set from other sources, you need to set the metadata separately.
 
 `IKImageView` supports multi-frame images (TIFF, GIF, and so forth) and animated images.
 
@@ -122,26 +122,26 @@ Providing a file reference is the preferred way to set the the image for a view 
 ## Relationships
 
 ### Inherits From
-- [NSView](../AppKit/NSView.md)
+- [NSView](../appkit/nsview.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSAccessibilityElementProtocol](../AppKit/NSAccessibilityElementProtocol.md)
-- [NSAccessibilityProtocol](../AppKit/NSAccessibilityProtocol.md)
-- [NSAnimatablePropertyContainer](../AppKit/NSAnimatablePropertyContainer.md)
-- [NSAppearanceCustomization](../AppKit/NSAppearanceCustomization.md)
-- [NSCoding](../Foundation/NSCoding.md)
-- [NSDraggingDestination](../AppKit/NSDraggingDestination.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [NSStandardKeyBindingResponding](../AppKit/NSStandardKeyBindingResponding.md)
-- [NSTouchBarProvider](../AppKit/NSTouchBarProvider.md)
-- [NSUserActivityRestoring](../AppKit/NSUserActivityRestoring.md)
-- [NSUserInterfaceItemIdentification](../AppKit/NSUserInterfaceItemIdentification.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSAccessibilityElementProtocol](../appkit/nsaccessibilityelementprotocol.md)
+- [NSAccessibilityProtocol](../appkit/nsaccessibilityprotocol.md)
+- [NSAnimatablePropertyContainer](../appkit/nsanimatablepropertycontainer.md)
+- [NSAppearanceCustomization](../appkit/nsappearancecustomization.md)
+- [NSCoding](../foundation/nscoding.md)
+- [NSDraggingDestination](../appkit/nsdraggingdestination.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSStandardKeyBindingResponding](../appkit/nsstandardkeybindingresponding.md)
+- [NSTouchBarProvider](../appkit/nstouchbarprovider.md)
+- [NSUserActivityRestoring](../appkit/nsuseractivityrestoring.md)
+- [NSUserInterfaceItemIdentification](../appkit/nsuserinterfaceitemidentification.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

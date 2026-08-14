@@ -30,7 +30,7 @@ Create a [`Logger`](logger.md) structure and use it to log messages about your a
 
 When you create a [`Logger`](logger.md) structure, assign an optional subsystem and category string to add context to all messages you log. A subsystem corresponds to a large functional area of your app, and a category corresponds to a specific area within a particular subsystem. When diagnosing problems, use those strings to filter out unrelated messages.
 
-To log a message, call the method that represents the appropriate log level for that message. To create the message, use a Swift string. Strings may contain interpolated values, such as signed and unsigned integers, floating-point and double values, Booleans, other strings, Objective-C objects, and types that conform to the [`CustomStringConvertible`](https://developer.apple.com/documentation/Swift/CustomStringConvertible) protocol. You can also include metatypes such as `Int.self`.
+To log a message, call the method that represents the appropriate log level for that message. To create the message, use a Swift string. Strings may contain interpolated values, such as signed and unsigned integers, floating-point and double values, Booleans, other strings, Objective-C objects, and types that conform to the [`CustomStringConvertible`](https://developer.apple.com/documentation/swift/customstringconvertible) protocol. You can also include metatypes such as `Int.self`.
 
 ```swift
 let logger = Logger()
@@ -92,8 +92,8 @@ logger.log("Ordered smoothie \(smoothieName, privacy: .public)")  // Visible
 ## Relationships
 
 ### Conforms To
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

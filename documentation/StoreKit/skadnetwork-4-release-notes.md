@@ -24,7 +24,7 @@ You can lock a conversion during a conversion window to receive the postback soo
 
 - Coarse conversion values. The conversion value that you send can include both a fine-grained value and a coarse-grained value. For information about coarse conversion values, see [`SKAdNetwork.CoarseConversionValue`](skadnetwork/coarseconversionvalue.md). You provide the fine and coarse conversion values in the new methods [`updatePostbackConversionValue(_:coarseValue:completionHandler:)`](skadnetwork/updatepostbackconversionvalue(_:coarsevalue:completionhandler:).md) and [`updatePostbackConversionValue(_:coarseValue:lockWindow:completionHandler:)`](skadnetwork/updatepostbackconversionvalue(_:coarsevalue:lockwindow:completionhandler:).md).
 - Hierarchical source identifiers. Ad networks can now provide hierarchical source identifiers when they sign an ad, which replaces and expands on campaign identifiers. The source identifer is a four-digit integer, which you indicate in [`sourceIdentifier`](skadimpression/sourceidentifier.md) for view-through ads and in [`SKStoreProductParameterAdNetworkSourceIdentifier`](skstoreproductparameteradnetworksourceidentifier.md) for StoreKit-rendered ads. Winning postbacks contain two, three, or four digits of the source identifier, depending on the ad impression’s privacy threshold tier.
-- Attributed ads on the web. [`SKAdNetwork for Web Ads`](https://developer.apple.com/documentation/SKAdNetworkforWebAds) supports attributed ads that you initiate on Safari web pages.
+- Attributed ads on the web. [`SKAdNetwork for Web Ads`](https://developer.apple.com/documentation/skadnetworkforwebads) supports attributed ads that you initiate on Safari web pages.
 
 ## See Also
 

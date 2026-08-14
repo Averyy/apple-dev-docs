@@ -14,11 +14,11 @@ You can review these reports if you have any of these API key roles:
 - `SALES_AND_REPORTS`
 - `FINANCE`
 
-> **Note**: If you share an API key for your developer account with a third party for analyzing or processing your reports, select the SALES_AND_REPORTS role when generating a new key. This role can access to [`Download sales and trends reports`](https://developer.apple.com/documentation/AppStoreConnectAPI/GET-v1-salesReports) but can’t access [`Download finance reports`](https://developer.apple.com/documentation/AppStoreConnectAPI/GET-v1-financeReports) endpoint.
+> **Note**: If you share an API key for your developer account with a third party for analyzing or processing your reports, select the SALES_AND_REPORTS role when generating a new key. This role can access to [`Download sales and trends reports`](https://developer.apple.com/documentation/appstoreconnectapi/get-v1-salesreports) but can’t access [`Download finance reports`](https://developer.apple.com/documentation/appstoreconnectapi/get-v1-financereports) endpoint.
 
 ##### Download and Process Reports
 
-To start receiving reports, use the [`Request Reports`](https://developer.apple.com/documentation/AppStoreConnectAPI/POST-v1-analyticsReportRequests) endpoint in the App Store Connect API. To learn more, see [`Downloading Analytics Reports`](https://developer.apple.com/documentation/AppStoreConnectAPI/downloading-analytics-reports). After you create your request, use [`Read Report Request Information`](https://developer.apple.com/documentation/AppStoreConnectAPI/GET-v1-analyticsReportRequests-_id_) to poll the list of report instances to check whether new instances are downloadable. Apple does not generate reports until you create a valid Analytics Report Request.
+To start receiving reports, use the [`Request Reports`](https://developer.apple.com/documentation/appstoreconnectapi/post-v1-analyticsreportrequests) endpoint in the App Store Connect API. To learn more, see [`Downloading Analytics Reports`](https://developer.apple.com/documentation/appstoreconnectapi/downloading-analytics-reports). After you create your request, use [`Read Report Request Information`](https://developer.apple.com/documentation/appstoreconnectapi/get-v1-analyticsreportrequests-_id_) to poll the list of report instances to check whether new instances are downloadable. Apple does not generate reports until you create a valid Analytics Report Request.
 
 Each report *instance* represents a new set of data. Each instance can consist of multiple *segments*, which are physical partitions of one instance, so you need to download all segments for a given instance to get the complete set of data.
 

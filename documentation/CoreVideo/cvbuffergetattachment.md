@@ -27,8 +27,8 @@ The specified attachment, if it exists.
 ## Parameters
 
 - `buffer`: The buffer whose attachment you want to retrieve.
-- `key`: A string that identifies the attachment, which can be of any [`CFTypeRef`](https://developer.apple.com/documentation/CoreFoundation/CFTypeRef). See [`CVBuffer Attachment Keys`](cvbuffer-attachment-keys.md) and [`Image Buffer Attachment Keys`](image-buffer-attachment-keys.md) for predefined values.
-- `attachmentMode`: On output, this value points to the mode of the attachment. See [`CVAttachmentMode`](cvattachmentmode.md) for possible values. This value is [`nil`](https://developer.apple.com/documentation/ObjectiveC/nil-227m0) if the buffer doesn’t define an attachment mode.
+- `key`: A string that identifies the attachment, which can be of any [`CFTypeRef`](https://developer.apple.com/documentation/corefoundation/cftyperef). See [`CVBuffer Attachment Keys`](cvbuffer-attachment-keys.md) and [`Image Buffer Attachment Keys`](image-buffer-attachment-keys.md) for predefined values.
+- `attachmentMode`: On output, this value points to the mode of the attachment. See [`CVAttachmentMode`](cvattachmentmode.md) for possible values. This value is [`nil`](https://developer.apple.com/documentation/objectivec/nil-227m0) if the buffer doesn’t define an attachment mode.
 
 ## See Also
 

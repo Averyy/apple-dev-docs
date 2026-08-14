@@ -22,7 +22,7 @@ let kSecReturnAttributes: CFString
 
 #### Discussion
 
-The corresponding value is of type [`CFBoolean`](https://developer.apple.com/documentation/CoreFoundation/CFBoolean). A value of [`kCFBooleanTrue`](https://developer.apple.com/documentation/CoreFoundation/kCFBooleanTrue) indicates that a dictionary of the (unencrypted) attributes of an item should be returned in the form of a [`CFDictionary`](https://developer.apple.com/documentation/CoreFoundation/CFDictionary) using the keys and values defined in [`Item attribute keys and values`](item-attribute-keys-and-values.md).
+The corresponding value is of type [`CFBoolean`](https://developer.apple.com/documentation/corefoundation/cfboolean). A value of [`kCFBooleanTrue`](https://developer.apple.com/documentation/corefoundation/kcfbooleantrue) indicates that a dictionary of the (unencrypted) attributes of an item should be returned in the form of a [`CFDictionary`](https://developer.apple.com/documentation/corefoundation/cfdictionary) using the keys and values defined in [`Item attribute keys and values`](item-attribute-keys-and-values.md).
 
 
 ---

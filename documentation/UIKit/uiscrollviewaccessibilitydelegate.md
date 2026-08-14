@@ -30,7 +30,7 @@ protocol UIScrollViewAccessibilityDelegate : UIScrollViewDelegate
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 - [UIScrollViewDelegate](uiscrollviewdelegate.md)
 
 ## See Also

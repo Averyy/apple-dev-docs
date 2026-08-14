@@ -55,7 +55,7 @@ To render seats using RealityKit, conform to the [`EntityTableSeat`](entitytable
 ## Relationships
 
 ### Inherits From
-- [Identifiable](../Swift/Identifiable.md)
+- [Identifiable](../swift/identifiable.md)
 ### Inherited By
 - [EntityTableSeat](entitytableseat.md)
 

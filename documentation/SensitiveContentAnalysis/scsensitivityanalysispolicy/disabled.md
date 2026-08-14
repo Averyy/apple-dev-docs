@@ -26,7 +26,7 @@ case disabled
 
 If this value is [`analysisPolicy`](scsensitivityanalyzer/analysispolicy.md), the framework doesn’t detect sensitive content. The system disables sensitive content analysis under any of the following conditions:
 
-- The app lacks the necessary [`com.apple.developer.sensitivecontentanalysis.client`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.sensitivecontentanalysis.client) entitlement.
+- The app lacks the necessary [`com.apple.developer.sensitivecontentanalysis.client`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.sensitivecontentanalysis.client) entitlement.
 - Neither the Sensitive Content Warning user preference nor the Communication Safety parental control in Screen Time are active.
 - The person disables the Sensitive Content Warnings toggle in your app’s Settings.
 

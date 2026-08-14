@@ -26,7 +26,7 @@ The parsed integer value.
 
 #### Discussion
 
-Use this method to repeatedly parse decimal strings with the same [`Decimal.ParseStrategy`](decimal/parsestrategy.md). To parse a single decimal string, use the initializers inherited from [`Decimal`](decimal.md) that take a [`String`](https://developer.apple.com/documentation/Swift/String) and a [`Decimal.FormatStyle`](decimal/formatstyle.md) as parameters.
+Use this method to repeatedly parse decimal strings with the same [`Decimal.ParseStrategy`](decimal/parsestrategy.md). To parse a single decimal string, use the initializers inherited from [`Decimal`](decimal.md) that take a [`String`](https://developer.apple.com/documentation/swift/string) and a [`Decimal.FormatStyle`](decimal/formatstyle.md) as parameters.
 
 This method throws an error if the parse strategy can’t parse the provided string.
 

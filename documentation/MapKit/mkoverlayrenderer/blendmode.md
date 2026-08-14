@@ -20,7 +20,7 @@ var blendMode: CGBlendMode { get set }
 
 #### Discussion
 
-Choose the blend mode from one of the possible [`CGBlendMode`](https://developer.apple.com/documentation/CoreGraphics/CGBlendMode) enumerations.
+Choose the blend mode from one of the possible [`CGBlendMode`](https://developer.apple.com/documentation/coregraphics/cgblendmode) enumerations.
 
 ## See Also
 

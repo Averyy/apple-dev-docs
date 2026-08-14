@@ -58,7 +58,7 @@ For an example on using `UIWindowSceneDelegate` in your app, see [`Supporting mu
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 - [UISceneDelegate](uiscenedelegate.md)
 
 ## See Also

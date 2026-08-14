@@ -144,8 +144,8 @@ struct IntentParameterContext<Value> where Value : _IntentValue, Value : Sendabl
 
 ### Conforms To
 - [AnyIntentValue](anyintentvalue.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

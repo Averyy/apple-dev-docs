@@ -20,11 +20,11 @@ func validate(_ impression: SKAdImpression, publicKey: String) throws
 
 The cryptographic key pair you use for testing may be a different key pair than you use in production. For testing, use keys from the same key pair to sign the ad impression for testing and call [`validate(_:publicKey:)`](skadtestsession/validate(_:publickey:).md).
 
-For more information about signing ad impressions, see [`Signing and providing ads`](https://developer.apple.com/documentation/StoreKit/signing-and-providing-ads).
+For more information about signing ad impressions, see [`Signing and providing ads`](https://developer.apple.com/documentation/storekit/signing-and-providing-ads).
 
 ## Parameters
 
-- `impression`: An [`SKAdImpression`](https://developer.apple.com/documentation/StoreKit/SKAdImpression) instance, representing your ad impression.
+- `impression`: An [`SKAdImpression`](https://developer.apple.com/documentation/storekit/skadimpression) instance, representing your ad impression.
 - `publicKey`: The public key of the elliptic curve cryptographic key pair you used to generate the signature for the ad impression.
 
 ## See Also

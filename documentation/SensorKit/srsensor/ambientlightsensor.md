@@ -20,7 +20,7 @@ static let ambientLightSensor: SRSensor
 
 The [`sample`](srfetchresult/sample.md) type for this sensor is [`SRAmbientLightSample`](srambientlightsample.md).
 
-You need to provide a reason to record ambient light by adding the [`SRSensorUsageAmbientLightSensor`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSSensorKitUsageDetail/SRSensorUsageAmbientLightSensor) dictionary to the [`NSSensorKitUsageDetail`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSSensorKitUsageDetail) key in the information property list.
+You need to provide a reason to record ambient light by adding the [`SRSensorUsageAmbientLightSensor`](https://developer.apple.com/documentation/bundleresources/information-property-list/nssensorkitusagedetail/srsensorusageambientlightsensor) dictionary to the [`NSSensorKitUsageDetail`](https://developer.apple.com/documentation/bundleresources/information-property-list/nssensorkitusagedetail) key in the information property list.
 
 ## See Also
 

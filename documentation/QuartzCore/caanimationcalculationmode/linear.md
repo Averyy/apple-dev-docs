@@ -34,7 +34,7 @@ keyframeAnimation.values = [310, 60, 120, 60, 310]
 
 A layer animated with the keyframe animation created by the code above and with linearly interpolated horizontal movement would describe a path similar to the following figure.
 
-![Tracing the path of an animation using linearly interpolated keyframes](https://docs-assets.developer.apple.com/published/0c5d43aa12ef1a5f2a1deb521dc2f0c1/media-2776788%402x.png)
+![Tracing the path of an animation using linearly interpolated keyframes](/images/com.apple.quartzcore/media-2776788@2x.png)
 
 ## See Also
 

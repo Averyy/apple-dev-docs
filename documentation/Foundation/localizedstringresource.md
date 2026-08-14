@@ -24,9 +24,9 @@ struct LocalizedStringResource
 
 Use [`LocalizedStringResource`](localizedstringresource.md) to provide localizable strings with lookups you defer to a later time.
 
-When you create a localized string or a localized attributed string with an initializer that takes [`String.LocalizationValue`](https://developer.apple.com/documentation/Swift/String/LocalizationValue), those initializers lookup the localized string immediately. If you want to perform the lookup at a later time, use this [`LocalizedStringResource`](localizedstringresource.md) type to refer to the localizable strings. Then, when you need to perform localization, create a [`String`](https://developer.apple.com/documentation/Swift/String) or [`AttributedString`](attributedstring.md) from an initializer that takes a [`LocalizedStringResource`](localizedstringresource.md) parameter, such as:
+When you create a localized string or a localized attributed string with an initializer that takes [`String.LocalizationValue`](https://developer.apple.com/documentation/swift/string/localizationvalue), those initializers lookup the localized string immediately. If you want to perform the lookup at a later time, use this [`LocalizedStringResource`](localizedstringresource.md) type to refer to the localizable strings. Then, when you need to perform localization, create a [`String`](https://developer.apple.com/documentation/swift/string) or [`AttributedString`](attributedstring.md) from an initializer that takes a [`LocalizedStringResource`](localizedstringresource.md) parameter, such as:
 
-- [`String`](https://developer.apple.com/documentation/Swift/String): [`init(localized:)`](https://developer.apple.com/documentation/Swift/String/init(localized:)) or [`init(localized:options:)`](https://developer.apple.com/documentation/Swift/String/init(localized:options:)).
+- [`String`](https://developer.apple.com/documentation/swift/string): [`init(localized:)`](https://developer.apple.com/documentation/swift/string/init(localized:)) or [`init(localized:options:)`](https://developer.apple.com/documentation/swift/string/init(localized:options:)).
 - [`AttributedString`](attributedstring.md): [`init(localized:)`](attributedstring/init(localized:).md), [`init(localized:including:)`](attributedstring/init(localized:including:)-2xebo.md), or [`init(localized:including:)`](attributedstring/init(localized:including:)-15xc5.md).
 
 This approach allows you to provide localizable strings to an entirely separate process, which may use a different locale. For example, consider an app with a data model type called `UserAction` that uses [`LocalizedStringResource`](localizedstringresource.md) rather than strings for its `title` and `description` properties.
@@ -68,7 +68,7 @@ func performActionOutOfProcess(title: LocalizedStringResource,
 }
 ```
 
-The [`App Intents`](https://developer.apple.com/documentation/AppIntents) framework uses [`LocalizedStringResource`](localizedstringresource.md) to perform a late resolution of localized strings. This allows the Siri UI to potentially use different localization preferences than the app providing the intent.
+The [`App Intents`](https://developer.apple.com/documentation/appintents) framework uses [`LocalizedStringResource`](localizedstringresource.md) to perform a late resolution of localized strings. This allows the Siri UI to potentially use different localization preferences than the app providing the intent.
 
 ## Topics
 
@@ -105,15 +105,15 @@ The [`App Intents`](https://developer.apple.com/documentation/AppIntents) framew
 
 ### Conforms To
 - [CustomLocalizedStringResourceConvertible](customlocalizedstringresourceconvertible.md)
-- [Decodable](../Swift/Decodable.md)
-- [Encodable](../Swift/Encodable.md)
-- [Equatable](../Swift/Equatable.md)
-- [ExpressibleByExtendedGraphemeClusterLiteral](../Swift/ExpressibleByExtendedGraphemeClusterLiteral.md)
-- [ExpressibleByStringInterpolation](../Swift/ExpressibleByStringInterpolation.md)
-- [ExpressibleByStringLiteral](../Swift/ExpressibleByStringLiteral.md)
-- [ExpressibleByUnicodeScalarLiteral](../Swift/ExpressibleByUnicodeScalarLiteral.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Decodable](../swift/decodable.md)
+- [Encodable](../swift/encodable.md)
+- [Equatable](../swift/equatable.md)
+- [ExpressibleByExtendedGraphemeClusterLiteral](../swift/expressiblebyextendedgraphemeclusterliteral.md)
+- [ExpressibleByStringInterpolation](../swift/expressiblebystringinterpolation.md)
+- [ExpressibleByStringLiteral](../swift/expressiblebystringliteral.md)
+- [ExpressibleByUnicodeScalarLiteral](../swift/expressiblebyunicodescalarliteral.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

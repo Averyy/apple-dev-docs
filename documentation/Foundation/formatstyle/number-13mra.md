@@ -22,7 +22,7 @@ static var number: IntegerFormatStyle<UInt32> { get }
 
 #### Discussion
 
-Use this type property when the call point allows the use of [`IntegerFormatStyle`](integerformatstyle.md). You typically do this when calling the `formatted` methods of types that conform to [`BinaryInteger`](https://developer.apple.com/documentation/Swift/BinaryInteger).
+Use this type property when the call point allows the use of [`IntegerFormatStyle`](integerformatstyle.md). You typically do this when calling the `formatted` methods of types that conform to [`BinaryInteger`](https://developer.apple.com/documentation/swift/binaryinteger).
 
 ## See Also
 

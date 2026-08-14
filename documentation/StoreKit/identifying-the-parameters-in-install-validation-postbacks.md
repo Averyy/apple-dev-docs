@@ -18,7 +18,7 @@ The following list describes all the possible parameters you may get in a postba
 
 Note: The `source-app-id` only appears in the postback if providing the parameter meets Apple’s privacy threshold.
 
-- **`source-domain`**: Version 4 and later, for web ads only. For more information, see [`SKAdNetwork for Web Ads`](https://developer.apple.com/documentation/SKAdNetworkforWebAds).
+- **`source-domain`**: Version 4 and later, for web ads only. For more information, see [`SKAdNetwork for Web Ads`](https://developer.apple.com/documentation/skadnetworkforwebads).
 - **`conversion-value`**: Version 2 and later. An unsigned 6-bit value that the installed app sets by calling a method to update the conversion value, such as [`updatePostbackConversionValue(_:coarseValue:lockWindow:completionHandler:)`](skadnetwork/updatepostbackconversionvalue(_:coarsevalue:lockwindow:completionhandler:).md). The `conversion-value` only appears in the postback if the installed app provides it, and if providing the parameter meets Apple’s privacy threshold.
 
 Note: The signature doesn’t include the `conversion-value`. Postbacks may contain either `conversion-value` or `coarse-conversion-value`, not both.

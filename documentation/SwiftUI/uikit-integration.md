@@ -8,20 +8,20 @@ Add UIKit views to your SwiftUI app, or use SwiftUI views in your UIKit app.
 
 Integrate SwiftUI with your app’s existing content using hosting controllers to add SwiftUI views into UIKit interfaces. A hosting controller wraps a set of SwiftUI views in a form that you can then add to your storyboard-based app.
 
-![None](https://docs-assets.developer.apple.com/published/74ee52cce15bcc5332715296b5d568d9/uikit-integration-hero%402x.png)
+![None](/images/com.apple.SwiftUI/uikit-integration-hero@2x.png)
 
 You can also add UIKit views and view controllers to your SwiftUI interfaces. A representable object wraps the designated view or view controller, and facilitates communication between the wrapped object and your SwiftUI views.
 
 For design guidance, see the following sections in the Human Interface Guidelines:
 
-- [`Designing for iOS`](https://developer.apple.com/design/Human-Interface-Guidelines/designing-for-ios)
-- [`Designing for iPadOS`](https://developer.apple.com/design/Human-Interface-Guidelines/designing-for-ipados)
-- [`Designing for tvOS`](https://developer.apple.com/design/Human-Interface-Guidelines/designing-for-tvos)
+- [`Designing for iOS`](https://developer.apple.com/design/human-interface-guidelines/designing-for-ios)
+- [`Designing for iPadOS`](https://developer.apple.com/design/human-interface-guidelines/designing-for-ipados)
+- [`Designing for tvOS`](https://developer.apple.com/design/human-interface-guidelines/designing-for-tvos)
 
 ## Topics
 
 ### Displaying SwiftUI views in UIKit
-- [Using SwiftUI with UIKit](../UIKit/using-swiftui-with-uikit.md)
+- [Using SwiftUI with UIKit](../uikit/using-swiftui-with-uikit.md)
   Learn how to incorporate SwiftUI views into a UIKit app.
 - [Unifying your app’s animations](unifying-your-app-s-animations.md)
   Create a consistent UI animation experience across SwiftUI, UIKit, and AppKit.

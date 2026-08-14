@@ -21,9 +21,9 @@ var kAudioFileGlobalInfo_FileTypeName: AudioFilePropertyID { get }
 
 #### Discussion
 
-A [`CFString`](https://developer.apple.com/documentation/CoreFoundation/CFString) object containing the name for the file type.
+A [`CFString`](https://developer.apple.com/documentation/corefoundation/cfstring) object containing the name for the file type.
 
-If you access this property, your app is responsible for releasing the [`CFString`](https://developer.apple.com/documentation/CoreFoundation/CFString) object.
+If you access this property, your app is responsible for releasing the [`CFString`](https://developer.apple.com/documentation/corefoundation/cfstring) object.
 
 When accessing this property, provide a pointer, in the `inSpecifier` parameter, to an audio file type ID containing a file type.
 

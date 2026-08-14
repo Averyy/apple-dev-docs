@@ -8,21 +8,21 @@ Avoid unnecessary work in your Metal app by understanding the relationships betw
 
 The Dependencies viewer provides a graphical representation of the structure of your GPU trace and allows you to see the relationships between resources and the encoders that access them. It also highlights the manual synchronizations you use between encoders, and indicates any unnecessary work by showing you all the unused resources in your frame.
 
-![A screenshot of the Dependencies viewer, which includes a dependency graph view, a sidebar, and a control bar.](https://docs-assets.developer.apple.com/published/9792256b993e2819ad485ff530e40b9d/gputools-metal-debugger-dv-overview%402x.png)
+![A screenshot of the Dependencies viewer, which includes a dependency graph view, a sidebar, and a control bar.](/images/com.apple.Xcode/gputools-metal-debugger-dv-overview@2x.png)
 
 ##### Inspect the Graph at Different Levels of Detail
 
 At the highest level, the Dependencies viewer shows the overall structure of your frame. At this level, you can see the graph of command encoders inside command buffers. You can also see all of the passes in your frame. Each pass includes a thumbnail preview of its work, as well as the number of resources that it consumed or produced. At this level, you can see whether data is flowing and whether there’s synchronization between passes.
 
-![A screenshot of the Metal debugger’s Dependencies viewer showing the dependency graph with a low level of detail.](https://docs-assets.developer.apple.com/published/4764d72159e10ae6fbcf431ce96ac97d/gputools-metal-debugger-dv-lod-low%402x.png)
+![A screenshot of the Metal debugger’s Dependencies viewer showing the dependency graph with a low level of detail.](/images/com.apple.Xcode/gputools-metal-debugger-dv-lod-low@2x.png)
 
 As you zoom in to the next level, the Dependencies viewer expands the resources for each pass. Additionally, each resource can have icons above and below it that indicate the consuming and producing actions. For attachments in a render pass, the icons refer to the load and store actions. Otherwise, they refer to general resource read-and-write operations. At this level, you can also view which resources are introducing data flow or synchronization between passes.
 
-![A screenshot of the Metal debugger’s Dependencies viewer showing the dependency graph with a medium level of detail.](https://docs-assets.developer.apple.com/published/48408c4be87ba4cc4eee729d4a9b6e9d/gputools-metal-debugger-dv-lod-mid%402x.png)
+![A screenshot of the Metal debugger’s Dependencies viewer showing the dependency graph with a medium level of detail.](/images/com.apple.Xcode/gputools-metal-debugger-dv-lod-mid@2x.png)
 
 As you zoom in more, the Dependencies viewer shows larger thumbnails and metadata for the resources.
 
-![A screenshot of the Metal debugger’s Dependencies viewer showing the dependency graph with a high level of detail.](https://docs-assets.developer.apple.com/published/49049b73095e136bdd9de6722645206a/gputools-metal-debugger-dv-lod-high%402x.png)
+![A screenshot of the Metal debugger’s Dependencies viewer showing the dependency graph with a high level of detail.](/images/com.apple.Xcode/gputools-metal-debugger-dv-lod-high@2x.png)
 
 ##### View a Resources Consuming and Producing Actions
 
@@ -30,7 +30,7 @@ The consuming and producing actions above and below a resource help you understa
 
 For textures in a render pass, the actions refer to the load and store actions for each attachment.
 
-For a multisample render pass, the store action may affect the storing for both the multisample and the resolve textures. With [`MTLStoreAction.storeAndMultisampleResolve`](https://developer.apple.com/documentation/Metal/MTLStoreAction/storeAndMultisampleResolve), the multisample texture shows a store action and the resolve texture shows a store action. With [`MTLStoreAction.multisampleResolve`](https://developer.apple.com/documentation/Metal/MTLStoreAction/multisampleResolve), the multisample texture shows a don’t-care action and the resolve texture shows a store action.
+For a multisample render pass, the store action may affect the storing for both the multisample and the resolve textures. With [`MTLStoreAction.storeAndMultisampleResolve`](https://developer.apple.com/documentation/metal/mtlstoreaction/storeandmultisampleresolve), the multisample texture shows a store action and the resolve texture shows a store action. With [`MTLStoreAction.multisampleResolve`](https://developer.apple.com/documentation/metal/mtlstoreaction/multisampleresolve), the multisample texture shows a don’t-care action and the resolve texture shows a store action.
 
 Otherwise, the Dependencies viewer annotates the actions with generic read-and-write operations.
 
@@ -57,7 +57,7 @@ You can use the Dependencies viewer to choose different modes for visualization,
 
 To maintain a compact graph, the Dependencies viewer attempts to keep a few interesting resources visible on the graph and hide the rest in a pile under each pass. Clicking the pile opens a popover of the resources.
 
-![A screenshot of the Resources popover at a pass in the Dependencies viewer.](https://docs-assets.developer.apple.com/published/40b0ab325d2c90ada3a97cc0734c37b1/gputools-metal-debugger-dv-popover%402x.png)
+![A screenshot of the Resources popover at a pass in the Dependencies viewer.](/images/com.apple.Xcode/gputools-metal-debugger-dv-popover@2x.png)
 
 You can click the button to the right of each resource to pin or unpin it.
 
@@ -78,7 +78,7 @@ When you select a resource, the Dependencies viewer highlights any related resou
 
 Click the Insights button in the bottom right corner to open a popover of recommendations in the Dependencies viewer.
 
-![A screenshot of the Insights popover in the Dependencies viewer.](https://docs-assets.developer.apple.com/published/a1153313baa692a1e418b19fa7234605/gputools-metal-debugger-dv-insights%402x.png)
+![A screenshot of the Insights popover in the Dependencies viewer.](/images/com.apple.Xcode/gputools-metal-debugger-dv-insights@2x.png)
 
 ##### Limit Your Scope with Filters
 

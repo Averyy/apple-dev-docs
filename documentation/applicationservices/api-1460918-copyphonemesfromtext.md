@@ -30,7 +30,7 @@ The data the `CopyPhonemesFromText` function stores in the `phonemes` parameter 
 
 - `chan`: A speech channel whose associated synthesizer and properties are to be used in the conversion process.
 - `text`: The text from which to extract phonemic data.
-- `phonemes`: On return, a   object that contains the extracted phonemic data. The caller is responsible for releasing this object.
+- `phonemes`: On return, a `CFString` object that contains the extracted phonemic data. The caller is responsible for releasing this object.
 
 
 ---

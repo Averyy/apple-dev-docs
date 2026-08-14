@@ -21,9 +21,9 @@ var isBlendingEnabled: Bool { get set }
 
 #### Discussion
 
-The default value is [`false`](https://developer.apple.com/documentation/Swift/false), meaning blending is disabled and pixel values are unaffected by blending. Disabled blending is effectively the same as the `MTLBlendOperationAdd` blend operation with a source blend factor of `1.0` and a destination blend factor of `0.0` for both RGB and alpha.
+The default value is [`false`](https://developer.apple.com/documentation/swift/false), meaning blending is disabled and pixel values are unaffected by blending. Disabled blending is effectively the same as the `MTLBlendOperationAdd` blend operation with a source blend factor of `1.0` and a destination blend factor of `0.0` for both RGB and alpha.
 
-If the value is [`true`](https://developer.apple.com/documentation/Swift/true), blending is enabled and the blend descriptor property values are used to determine how source and destination color values are combined.
+If the value is [`true`](https://developer.apple.com/documentation/swift/true), blending is enabled and the blend descriptor property values are used to determine how source and destination color values are combined.
 
 ## See Also
 

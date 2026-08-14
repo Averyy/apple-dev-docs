@@ -21,7 +21,7 @@ enum IOType
 
 #### Overview
 
-Starting in iOS 10, apps that use [`AVCaptureSession`](https://developer.apple.com/documentation/AVFoundation/AVCaptureSession) on iPad and iPhone devices, and support taking Live Photos, have nonaggregated audio I/O unless the app opts out by setting its I/O type to [`AVAudioSession.IOType.aggregated`](avaudiosession/iotype/aggregated.md). With nonaggregated audio I/O, the system uses separate threads to service audio I/O for input and output directions.
+Starting in iOS 10, apps that use [`AVCaptureSession`](https://developer.apple.com/documentation/avfoundation/avcapturesession) on iPad and iPhone devices, and support taking Live Photos, have nonaggregated audio I/O unless the app opts out by setting its I/O type to [`AVAudioSession.IOType.aggregated`](avaudiosession/iotype/aggregated.md). With nonaggregated audio I/O, the system uses separate threads to service audio I/O for input and output directions.
 
 In cases with nonaggregated I/O, the sample rate and I/O buffer duration properties map to the output audio device. In this scenario, the input and output audio hardware may be running at different sample rates and with different I/O buffer durations. If any of the following are true about your app, set the I/O type to [`AVAudioSession.IOType.aggregated`](avaudiosession/iotype/aggregated.md):
 
@@ -29,7 +29,7 @@ In cases with nonaggregated I/O, the sample rate and I/O buffer duration propert
 - It requires that input and output audio have the same sample rate or I/O buffer duration.
 - It requires the ability to set a preferred sample rate or I/O buffer duration for audio input.
 
-Apps that don’t use [`AVCaptureSession`](https://developer.apple.com/documentation/AVFoundation/AVCaptureSession), but do use the [`playAndRecord`](avaudiosession/category-swift.struct/playandrecord.md) category, continue to have aggregated audio I/O, as in previous versions of iOS.
+Apps that don’t use [`AVCaptureSession`](https://developer.apple.com/documentation/avfoundation/avcapturesession), but do use the [`playAndRecord`](avaudiosession/category-swift.struct/playandrecord.md) category, continue to have aggregated audio I/O, as in previous versions of iOS.
 
 ## Topics
 
@@ -44,12 +44,12 @@ Apps that don’t use [`AVCaptureSession`](https://developer.apple.com/documenta
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../Swift/BitwiseCopyable.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [RawRepresentable](../Swift/RawRepresentable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [BitwiseCopyable](../swift/bitwisecopyable.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [RawRepresentable](../swift/rawrepresentable.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

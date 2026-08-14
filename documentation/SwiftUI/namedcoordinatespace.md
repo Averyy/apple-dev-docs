@@ -28,7 +28,7 @@ Use the `coordinateSpace(_:)` modifier to assign a name to the local coordinate 
 
 ### Conforms To
 - [CoordinateSpaceProtocol](coordinatespaceprotocol.md)
-- [Equatable](../Swift/Equatable.md)
+- [Equatable](../swift/equatable.md)
 
 ## See Also
 

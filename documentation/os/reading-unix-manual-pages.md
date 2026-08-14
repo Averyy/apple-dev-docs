@@ -12,7 +12,7 @@ The UNIX online manual, known as the *man pages*, documents low-level UNIX comma
 
 Type `man` and the name of a tool or API whose documentation you want to access, and press Return.
 
-![Two Terminal windows, the first showing the command to enter and the second showing the result.](https://docs-assets.developer.apple.com/published/602374384e61f1b28c8ac34c1806b57b/media-3087691%402x.png)
+![Two Terminal windows, the first showing the command to enter and the second showing the result.](/images/com.apple.os/media-3087691@2x.png)
 
 Because the man page is larger than the window, Terminal displays only the first part of the page. Press Space to display subsequent parts, or press Q to exit the `man` tool.
 

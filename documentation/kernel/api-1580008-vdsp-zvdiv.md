@@ -22,12 +22,12 @@ This function divides the first `N` elements of `A` by corresponding elements of
 
 ## Parameters
 
-- `__B`: Single-precision complex input vector. Note that   comes before  !
-- `__IB`: Stride for  .
+- `__B`: Single-precision complex input vector. Note that `B` comes before `A`!
+- `__IB`: Stride for `B`.
 - `__A`: Single-precision complex input vector.
-- `__IA`: Stride for  .
+- `__IA`: Stride for `A`.
 - `__C`: Single-precision complex output vector.
-- `__IC`: Stride for  .
+- `__IC`: Stride for `C`.
 - `__N`: The number of elements to process.
 
 

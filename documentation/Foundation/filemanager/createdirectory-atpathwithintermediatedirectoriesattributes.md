@@ -33,7 +33,7 @@ If you specify `nil` for the `attributes` parameter, this method uses a default 
 ## Parameters
 
 - `path`: A path string identifying the directory to create. You may specify a full path or a path that is relative to the current working directory. This parameter must not be `nil`.
-- `createIntermediates`: If [`true`](https://developer.apple.com/documentation/Swift/true), this method creates any nonexistent parent directories as part of creating the directory in `path`. If [`false`](https://developer.apple.com/documentation/Swift/false), this method fails if any of the intermediate parent directories does not exist. This method also fails if any of the intermediate path elements corresponds to a file and not a directory.
+- `createIntermediates`: If [`true`](https://developer.apple.com/documentation/swift/true), this method creates any nonexistent parent directories as part of creating the directory in `path`. If [`false`](https://developer.apple.com/documentation/swift/false), this method fails if any of the intermediate parent directories does not exist. This method also fails if any of the intermediate path elements corresponds to a file and not a directory.
 - `attributes`: The file attributes for the new directory and any newly created intermediate directories. You can set the owner and group numbers, file permissions, and modification date. If you specify `nil` for this parameter or omit a particular value, one or more default values are used as described in the discussion. For a list of keys you can include in this dictionary, see Supporting Types. Some of the keys, such as [`hfsCreatorCode`](fileattributekey/hfscreatorcode.md) and [`hfsTypeCode`](fileattributekey/hfstypecode.md), do not apply to directories.
 
 ## See Also

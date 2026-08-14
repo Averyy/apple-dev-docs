@@ -20,7 +20,7 @@ static let wristTemperature: SRSensor
 
 The [`sample`](srfetchresult/sample.md) type for this sensor is [`SRWristTemperature`](srwristtemperature.md).
 
-You need to provide a reason to record wrist temperatures by adding the [`SRSensorUsageWristTemperature`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSSensorKitUsageDetail/SRSensorUsageWristTemperature) dictionary to the [`NSSensorKitUsageDetail`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSSensorKitUsageDetail) key in the information property list.
+You need to provide a reason to record wrist temperatures by adding the [`SRSensorUsageWristTemperature`](https://developer.apple.com/documentation/bundleresources/information-property-list/nssensorkitusagedetail/srsensorusagewristtemperature) dictionary to the [`NSSensorKitUsageDetail`](https://developer.apple.com/documentation/bundleresources/information-property-list/nssensorkitusagedetail) key in the information property list.
 
 ## See Also
 

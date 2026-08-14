@@ -28,7 +28,7 @@ A reference to a framesetter object if the call is successful; otherwise, `NULL`
 
 Use the framesetter object to create and fill text frames with the [`CTFramesetterCreateFrame(_:_:_:_:)`](ctframesettercreateframe(_:_:_:_:).md) call.
 
-> **Note**:  By default, the text system doesn’t typeset text that requires an unreasonable amount of effort. To create a framesetter that supports typesetting text regardless of the amount of effort necessary, create a [`CTTypesetter`](cttypesetter.md) with the [`kCTTypesetterOptionAllowUnboundedLayout`](kcttypesetteroptionallowunboundedlayout.md) option set to [`kCFBooleanTrue`](https://developer.apple.com/documentation/CoreFoundation/kCFBooleanTrue), then use [`CTFramesetterCreateWithTypesetter(_:)`](ctframesettercreatewithtypesetter(_:).md) instead.
+> **Note**:  By default, the text system doesn’t typeset text that requires an unreasonable amount of effort. To create a framesetter that supports typesetting text regardless of the amount of effort necessary, create a [`CTTypesetter`](cttypesetter.md) with the [`kCTTypesetterOptionAllowUnboundedLayout`](kcttypesetteroptionallowunboundedlayout.md) option set to [`kCFBooleanTrue`](https://developer.apple.com/documentation/corefoundation/kcfbooleantrue), then use [`CTFramesetterCreateWithTypesetter(_:)`](ctframesettercreatewithtypesetter(_:).md) instead.
 
 ## Parameters
 

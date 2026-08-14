@@ -25,7 +25,7 @@ A new predicate-based rule object.
 
 #### Discussion
 
-Rules based on [`NSPredicate`](https://developer.apple.com/documentation/Foundation/NSPredicate) objects typically test information in the [`state`](gkrulesystem/state.md) dictionary of the rule system evaluating the rule. For example, the following code creates a rule you might use to determine whether an enemy character in a game behaves aggressively.
+Rules based on [`NSPredicate`](https://developer.apple.com/documentation/foundation/nspredicate) objects typically test information in the [`state`](gkrulesystem/state.md) dictionary of the rule system evaluating the rule. For example, the following code creates a rule you might use to determine whether an enemy character in a game behaves aggressively.
 
 **Swift**:
 

@@ -43,14 +43,14 @@ Simple and straightforward sign-up and sign-in flows reduce the burden on the us
   Build a fluid sign-in experience for your tvOS apps using AuthenticationServices.
 - [struct SignInWithAppleButton](signinwithapplebutton.md)
   A SwiftUI view that creates the Sign in with Apple button for display.
-- [Sign in with Apple Entitlement](../BundleResources/Entitlements/com.apple.developer.applesignin.md)
+- [Sign in with Apple Entitlement](../bundleresources/entitlements/com.apple.developer.applesignin.md)
   An entitlement that lets your app use Sign in with Apple.
 - [class ASAuthorizationAppleIDProvider](asauthorizationappleidprovider.md)
   A mechanism for generating requests to authenticate users based on their Apple ID.
 - [class ASAuthorizationAppleIDCredential](asauthorizationappleidcredential.md)
   A credential that results from a successful Apple ID authentication.
 ### Passwords
-- [Password AutoFill](../Security/password-autofill.md)
+- [Password AutoFill](../security/password-autofill.md)
   Streamline your app’s login and onboarding procedures.
 - [class ASAuthorizationPasswordProvider](asauthorizationpasswordprovider.md)
   A mechanism for generating requests to perform keychain credential sharing.
@@ -80,12 +80,12 @@ Simple and straightforward sign-up and sign-in flows reduce the burden on the us
   Extend your web browser app to handle web authentication requests from other apps.
 - [class ASWebAuthenticationSessionWebBrowserSessionManager](aswebauthenticationsessionwebbrowsersessionmanager.md)
   A session manager that mediates sharing data between an app and a web browser.
-- [ASWebAuthenticationSessionWebBrowserSupportCapabilities](../BundleResources/Information-Property-List/ASWebAuthenticationSessionWebBrowserSupportCapabilities.md)
+- [ASWebAuthenticationSessionWebBrowserSupportCapabilities](../bundleresources/information-property-list/aswebauthenticationsessionwebbrowsersupportcapabilities.md)
   A collection of keys that a browser app uses to declare its ability to handle authentication requests from other apps.
 ### AutoFill credentials
 - [Providing one-time passcodes to AutoFill](providing-one-time-passcodes-to-autofill.md)
   Help people efficiently perform multifactor authentication.
-- [AutoFill Credential Provider Entitlement](../BundleResources/Entitlements/com.apple.developer.authentication-services.autofill-credential-provider.md)
+- [AutoFill Credential Provider Entitlement](../bundleresources/entitlements/com.apple.developer.authentication-services.autofill-credential-provider.md)
   A Boolean value that indicates whether the app may, with user permission, provide user names and passwords for AutoFill in Safari and other apps.
 - [class ASCredentialProviderViewController](ascredentialproviderviewcontroller.md)
   A view controller that a credential manager app uses to extend AutoFill.

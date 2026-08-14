@@ -27,7 +27,7 @@ func SecAccessControlCreateWithFlags(_ allocator: CFAllocator?, _ protection: CF
 
 #### Return Value
 
-The newly created access control object. In Objective-C, free this item with [`CFRelease`](https://developer.apple.com/documentation/CoreFoundation/CFRelease) when you are done with it.
+The newly created access control object. In Objective-C, free this item with [`CFRelease`](https://developer.apple.com/documentation/corefoundation/cfrelease) when you are done with it.
 
 #### Discussion
 
@@ -37,7 +37,7 @@ Accessing keychain items or performing operations on keys that are protected by 
 
 ## Parameters
 
-- `allocator`: The allocator to use to allocate memory for the new [`SecAccessControl`](secaccesscontrol.md) object. Pass `NULL` or [`kCFAllocatorDefault`](https://developer.apple.com/documentation/CoreFoundation/kCFAllocatorDefault) to allocate memory for the new allocator using the default allocator.
+- `allocator`: The allocator to use to allocate memory for the new [`SecAccessControl`](secaccesscontrol.md) object. Pass `NULL` or [`kCFAllocatorDefault`](https://developer.apple.com/documentation/corefoundation/kcfallocatordefault) to allocate memory for the new allocator using the default allocator.
 - `protection`: Protection class to be used for the item. Use one of the values that go with the [`kSecAttrAccessible`](ksecattraccessible.md) attribute key, namely those listed in [`Accessibility Values`](item-attribute-keys-and-values#Accessibility-Values.md).
 - `flags`: Flags specifying the allowed operations for the item. See [`SecAccessControlCreateFlags`](secaccesscontrolcreateflags.md).
 - `error`: On return, if an error occurred, the reference pointed at by this parameter refers to an error object that indicates the reason for failure. The caller is responsible for releasing the error object. Pass `NULL` for this parameter to ignore the error.

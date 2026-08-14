@@ -16,7 +16,7 @@ var heightAnchor: NSLayoutDimension { get }
 
 #### Discussion
 
-Use this anchor to create constraints with the layout guide’s height. You can combine this anchor only with other [`NSLayoutDimension`](https://developer.apple.com/documentation/UIKit/NSLayoutDimension) anchors. For more information, see [`NSLayoutAnchor`](https://developer.apple.com/documentation/UIKit/NSLayoutAnchor).
+Use this anchor to create constraints with the layout guide’s height. You can combine this anchor only with other [`NSLayoutDimension`](https://developer.apple.com/documentation/uikit/nslayoutdimension) anchors. For more information, see [`NSLayoutAnchor`](https://developer.apple.com/documentation/uikit/nslayoutanchor).
 
 ## See Also
 

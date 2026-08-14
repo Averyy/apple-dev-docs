@@ -10,11 +10,11 @@ Show common user interface elements from Apple TV in your native app.
 
 #### Overview
 
-When you build an app for tvOS with [`UIKit`](https://developer.apple.com/documentation/UIKit), you can use [`TVUIKit`](TVUIKit.md) to refine the display of your content for a TV environment. Use the [`TV Services`](https://developer.apple.com/documentation/TVServices) framework to provide deeper integration between your app and Apple TV.
+When you build an app for tvOS with [`UIKit`](https://developer.apple.com/documentation/uikit), you can use [`TVUIKit`](TVUIKit.md) to refine the display of your content for a TV environment. Use the [`TV Services`](https://developer.apple.com/documentation/tvservices) framework to provide deeper integration between your app and Apple TV.
 
 For more information about combining Apple technologies to build a great Apple TV experience, see [`Planning your tvOS app`](https://developer.apple.comhttps://developer.apple.com/tvos/planning/#build-the-data-structures-youll-use-in-your-app).
 
-![A figure containing a hexagonal UIKit framework icon, an arrow pointing to the right, a hexagon with the label TVUIKit, an arrow pointing to the right, and a TV screen. The TV screen shows a centered image of a palm tree, with other images partially visible on either side of the palm tree.](https://docs-assets.developer.apple.com/published/0ac9f4c161a4bb424a89960bc2d42e7a/media-4133629%402x.png)
+![A figure containing a hexagonal UIKit framework icon, an arrow pointing to the right, a hexagon with the label TVUIKit, an arrow pointing to the right, and a TV screen. The TV screen shows a centered image of a palm tree, with other images partially visible on either side of the palm tree.](/images/com.apple.tvuikit/media-4133629@2x.png)
 
 ## Topics
 

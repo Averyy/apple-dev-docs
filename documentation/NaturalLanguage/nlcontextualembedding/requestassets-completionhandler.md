@@ -28,7 +28,7 @@ You can call this method from synchronous code using a completion handler, as sh
 func requestAssets() async throws -> NLContextualEmbedding.AssetsResult
 ```
 
-For information about concurrency and asynchronous code in Swift, see [`Calling Objective-C APIs Asynchronously`](https://developer.apple.com/documentation/Swift/calling-objective-c-apis-asynchronously).
+For information about concurrency and asynchronous code in Swift, see [`Calling Objective-C APIs Asynchronously`](https://developer.apple.com/documentation/swift/calling-objective-c-apis-asynchronously).
 
 #### Discussion
 

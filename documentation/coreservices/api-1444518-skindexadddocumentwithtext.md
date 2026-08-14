@@ -36,10 +36,10 @@ In OS X v10.3, some functions do not provide expected results unless you follow 
 
 ## Parameters
 
-- `inIndex`: The index to which you are adding the document URL object ( ) .
-- `inDocument`: The document URL ( ) object to add.
-- `inDocumentText`: The document text. Can be  .
-- `inCanReplace`: A Boolean value specifying whether Search Kit will overwrite a document’s index entry ( , indicated by   or  ), or retain the entry if it exists ( , indicated by   or  ).
+- `inIndex`: The index to which you are adding the document URL object ([`SKDocument`](skdocument.md)) .
+- `inDocument`: The document URL ([`SKDocument`](skdocument.md)) object to add.
+- `inDocumentText`: The document text. Can be `NULL`.
+- `inCanReplace`: A Boolean value specifying whether Search Kit will overwrite a document’s index entry (`true`, indicated by `1` or `kCFBooleanTrue`), or retain the entry if it exists (`false`, indicated by `0` or `kCFBoolenFalse`).
 
 ## See Also
 

@@ -24,7 +24,7 @@ class CGImageDestination
 
 A [`CGImageDestination`](cgimagedestination.md) object provides an abstract interface for saving image data. Use an image destination to represent a single image, or multiple images packaged together. For example, you might create an image that also contains a thumbnail. You can also use the image destination to add metadata to your images.
 
-An image destination outputs data to a URL, a `CFData` object, or a [`CGDataConsumer`](https://developer.apple.com/documentation/CoreGraphics/CGDataConsumer) object, which you specify at creation time. After you create the image destination, add the image data and properties. When you are done, call [`CGImageDestinationFinalize(_:)`](cgimagedestinationfinalize(_:).md) to finalize the image data and write it to the output location.
+An image destination outputs data to a URL, a `CFData` object, or a [`CGDataConsumer`](https://developer.apple.com/documentation/coregraphics/cgdataconsumer) object, which you specify at creation time. After you create the image destination, add the image data and properties. When you are done, call [`CGImageDestinationFinalize(_:)`](cgimagedestinationfinalize(_:).md) to finalize the image data and write it to the output location.
 
 For more information, see [`Image I/O Programming Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/GraphicsImaging/Conceptual/ImageIOGuide/imageio_intro/ikpg_intro.html#//apple_ref/doc/uid/TP40005462).
 
@@ -84,8 +84,8 @@ For more information, see [`Image I/O Programming Guide`](https://developer.appl
 ## Relationships
 
 ### Conforms To
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
 
 ## See Also
 

@@ -38,7 +38,7 @@ Display the system print panels and manage the printing process.
 - [class UIPrinterDestination](uiprinterdestination.md)
   A description of a single printer.
 ### Keyboard shortcut
-- [UIApplicationSupportsPrintCommand](../BundleResources/Information-Property-List/UIApplicationSupportsPrintCommand.md)
+- [UIApplicationSupportsPrintCommand](../bundleresources/information-property-list/uiapplicationsupportsprintcommand.md)
   A Boolean value that indicates whether the app supports the Command-P keyboard shortcut.
 
 ## See Also

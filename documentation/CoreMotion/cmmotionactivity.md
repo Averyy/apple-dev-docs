@@ -22,7 +22,7 @@ class CMMotionActivity
 
 On devices that support motion, you can use a [`CMMotionActivityManager`](cmmotionactivitymanager.md) or [`CMHeadphoneActivityManager`](cmheadphoneactivitymanager.md) object to request updates when the current type of motion changes. When a change occurs, the update information is packaged into a [`CMMotionActivity`](cmmotionactivity.md) object and sent to your app.
 
-The motion-related properties of this class aren’t mutually exclusive. In other words, it’s possible for more than one of the motion-related properties to contain the value [`true`](https://developer.apple.com/documentation/Swift/true). For example, if the user was driving in a car and the car stopped at a red light, the update event associated with that change in motion would have both the [`automotive`](cmmotionactivity/automotive.md) and [`stationary`](cmmotionactivity/stationary.md) properties set to [`true`](https://developer.apple.com/documentation/Swift/true). It’s also possible for all of the properties to be set to [`false`](https://developer.apple.com/documentation/Swift/false) when the device is in motion but the movement doesn’t correlate to walking, running, cycling, or automotive travel.
+The motion-related properties of this class aren’t mutually exclusive. In other words, it’s possible for more than one of the motion-related properties to contain the value [`true`](https://developer.apple.com/documentation/swift/true). For example, if the user was driving in a car and the car stopped at a red light, the update event associated with that change in motion would have both the [`automotive`](cmmotionactivity/automotive.md) and [`stationary`](cmmotionactivity/stationary.md) properties set to [`true`](https://developer.apple.com/documentation/swift/true). It’s also possible for all of the properties to be set to [`false`](https://developer.apple.com/documentation/swift/false) when the device is in motion but the movement doesn’t correlate to walking, running, cycling, or automotive travel.
 
 You don’t create instances of this class yourself. The [`CMMotionActivityManager`](cmmotionactivitymanager.md) object creates them and sends them to the handler block you registered. For more information about how to initiate the delivery of motion activity updates to your app, see [`CMMotionActivityManager`](cmmotionactivitymanager.md).
 
@@ -54,15 +54,15 @@ You don’t create instances of this class yourself. The [`CMMotionActivityManag
 ### Inherits From
 - [CMLogItem](cmlogitem.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCoding](../Foundation/NSCoding.md)
-- [NSCopying](../Foundation/NSCopying.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [NSSecureCoding](../Foundation/NSSecureCoding.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCoding](../foundation/nscoding.md)
+- [NSCopying](../foundation/nscopying.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSSecureCoding](../foundation/nssecurecoding.md)
 
 ## See Also
 

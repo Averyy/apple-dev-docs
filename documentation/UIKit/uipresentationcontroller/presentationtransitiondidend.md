@@ -20,13 +20,13 @@ func presentationTransitionDidEnd(_ completed: Bool)
 
 #### Discussion
 
-The default implementation of this method does nothing. Subclasses can override this method and use it to perform any required cleanup. For example, if the completed parameter is [`false`](https://developer.apple.com/documentation/Swift/false), you would use this method to remove your presentation’s custom views from the view hierarchy.
+The default implementation of this method does nothing. Subclasses can override this method and use it to perform any required cleanup. For example, if the completed parameter is [`false`](https://developer.apple.com/documentation/swift/false), you would use this method to remove your presentation’s custom views from the view hierarchy.
 
 For an example of how to implement this method, see [`Add custom views to a presentation`](uipresentationcontroller#Add-custom-views-to-a-presentation.md).
 
 ## Parameters
 
-- `completed`: [`true`](https://developer.apple.com/documentation/Swift/true) if the animations completed and the presented view controller is now visible or [`false`](https://developer.apple.com/documentation/Swift/false) if the animations were canceled and the presenting view controller is still visible.
+- `completed`: [`true`](https://developer.apple.com/documentation/swift/true) if the animations completed and the presented view controller is now visible or [`false`](https://developer.apple.com/documentation/swift/false) if the animations were canceled and the presenting view controller is still visible.
 
 ## See Also
 

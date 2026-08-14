@@ -51,12 +51,12 @@ print(c)
 
 ## Parameters
 
-- `__B`: The single-precision real input vector  . 
-- `__IB`: The stride for input vector  .
-- `__A`: The single-precision real input vector  . 
-- `__IA`: The stride for input vector  . 
+- `__B`: The single-precision real input vector `B`. 
+- `__IB`: The stride for input vector `B`.
+- `__A`: The single-precision real input vector `A`. 
+- `__IA`: The stride for input vector `A`. 
 - `__C`: The single-precision real output vector. 
-- `__IC`: The stride for output vector  . 
+- `__IC`: The stride for output vector `C`. 
 - `__N`: Number of elements to subtract.
 
 ## See Also

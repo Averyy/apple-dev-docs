@@ -19,7 +19,7 @@ var allowsActions: Bool { get set }
 
 #### Discussion
 
-By default the value of this property is [`true`](https://developer.apple.com/documentation/Swift/true).
+By default the value of this property is [`true`](https://developer.apple.com/documentation/swift/true).
 
 ## See Also
 

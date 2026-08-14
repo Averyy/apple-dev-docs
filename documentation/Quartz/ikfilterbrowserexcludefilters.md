@@ -16,7 +16,7 @@ let IKFilterBrowserExcludeFilters: String
 
 #### Discussion
 
-The associated value is an [`NSArray`](https://developer.apple.com/documentation/Foundation/NSArray) object that lists the filters that you do *not* want to display in the filter browser.
+The associated value is an [`NSArray`](https://developer.apple.com/documentation/foundation/nsarray) object that lists the filters that you do *not* want to display in the filter browser.
 
 ## See Also
 

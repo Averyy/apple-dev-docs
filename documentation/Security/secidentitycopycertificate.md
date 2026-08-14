@@ -37,7 +37,7 @@ For a certificate in a keychain, you can cast the `SecCertificateRef` data type 
 ## Parameters
 
 - `identityRef`: The identity object for the identity whose certificate you wish to retrieve.
-- `certificateRef`: On return, points to the certificate object associated with the specified identity. In Objective-C, call the [`CFRelease`](https://developer.apple.com/documentation/CoreFoundation/CFRelease) function to release this object when you are finished with it.
+- `certificateRef`: On return, points to the certificate object associated with the specified identity. In Objective-C, call the [`CFRelease`](https://developer.apple.com/documentation/corefoundation/cfrelease) function to release this object when you are finished with it.
 
 
 ---

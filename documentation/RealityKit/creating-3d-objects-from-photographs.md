@@ -37,7 +37,7 @@ guard let session = try PhotogrammetrySession(input: inputFolderUrl) else {
 
 ##### Listen for Updates and Begin Creation
 
-RealityKit uses an [`AsyncSequence`](https://developer.apple.com/documentation/Swift/AsyncSequence) of [`PhotogrammetrySession.Output`](photogrammetrysession/output.md) objects to deliver status updates about the object-creation process in the background. To update your app’s UI or to take other actions as a result of these status updates, create an `async` task and use a `for`-`try`-`await` loop on [`outputs`](photogrammetrysession/outputs-swift.property.md).
+RealityKit uses an [`AsyncSequence`](https://developer.apple.com/documentation/swift/asyncsequence) of [`PhotogrammetrySession.Output`](photogrammetrysession/output.md) objects to deliver status updates about the object-creation process in the background. To update your app’s UI or to take other actions as a result of these status updates, create an `async` task and use a `for`-`try`-`await` loop on [`outputs`](photogrammetrysession/outputs-swift.property.md).
 
 ```swift
 let waiter = async {

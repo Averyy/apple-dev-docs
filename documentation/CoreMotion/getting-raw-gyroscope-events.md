@@ -8,7 +8,7 @@ Retrieve data from the onboard gyroscopes.
 
 A gyroscope measures the rate at which a device rotates around a spatial axis. Many iOS devices have a three-axis gyroscope, which delivers rotation values in each of the three axes shown in the next illustration. Rotation values are measured in radians per second around the given axis. Rotation values may be positive or negative depending on the direction of rotation.
 
-![Gyroscopes measure the rotation rate around the x, y, and z axes](https://docs-assets.developer.apple.com/published/cd1feafe8399d86e120bf5f723a12459/media-2904021%402x.png)
+![Gyroscopes measure the rotation rate around the x, y, and z axes](/images/com.apple.coremotion/media-2904021@2x.png)
 
 You access the raw gyroscope data using the classes of the Core Motion framework. Specifically, the [`CMMotionManager`](cmmotionmanager.md) class provides the interfaces for enabling the gyroscope hardware. When enabling the hardware, choose the interfaces that are best suited for your app. You can pull the gyroscope data only when you need it, or you can ask the framework to push updates to your app at regular intervals. Each technique involves different configuration steps and has a different use case.
 
@@ -22,7 +22,7 @@ For information about the coordinate axes of different device types, see [`CMMot
 
 Gyroscope data might be unavailable for a variety of reasons, so verify that the data is available before you try to obtain it. Check the value of the [`isGyroAvailable`](cmmotionmanager/isgyroavailable.md) property of `CMMotionManager` and make sure it’s `true`. If it’s `false`, starting updates doesn’t deliver any data to your app.
 
-> ❗ **Important**:  In visionOS, gyroscope data is available only when your app has an open immersive space. For more information, see [`ImmersiveSpace`](https://developer.apple.com/documentation/SwiftUI/ImmersiveSpace).
+> ❗ **Important**:  In visionOS, gyroscope data is available only when your app has an open immersive space. For more information, see [`ImmersiveSpace`](https://developer.apple.com/documentation/swiftui/immersivespace).
 
 ##### Get Gyroscope Data Only When You Need It
 

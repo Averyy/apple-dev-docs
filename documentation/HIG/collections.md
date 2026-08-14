@@ -11,7 +11,7 @@ framework: HIG
 
 A collection manages an ordered set of content and presents it in a customizable and highly visual layout.
 
-![A stylized representation of eight image icons, separated into two rows of four. The image is tinted red to subtly reflect the red in the original six-color Apple logo.](https://docs-assets.developer.apple.com/published/e5f3e73381ccffd60042ceeae8a5c025/components-collection-view-intro~dark%402x.png)
+![A stylized representation of eight image icons, separated into two rows of four. The image is tinted red to subtly reflect the red in the original six-color Apple logo.](/images/com.apple.HIG/components-collection-view-intro~dark@2x.png)
 Generally speaking, collections are ideal for showing image-based content.
 
 ## Best practices
@@ -35,8 +35,8 @@ Generally speaking, collections are ideal for showing image-based content.
 [Layout](layout.md)
 
 #### Developer documentation
-[UICollectionView](../UIKit/UICollectionView.md) — UIKit
-[NSCollectionView](../AppKit/NSCollectionView.md) — AppKit
+[UICollectionView](../uikit/uicollectionview.md) — UIKit
+[NSCollectionView](../appkit/nscollectionview.md) — AppKit
 
 
 

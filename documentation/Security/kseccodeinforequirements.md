@@ -17,7 +17,7 @@ let kSecCodeInfoRequirements: CFString
 
 #### Discussion
 
-The value is a [`CFString`](https://developer.apple.com/documentation/CoreFoundation/CFString) object. If there is an explicit designated requirement, then it’s included in this text string.
+The value is a [`CFString`](https://developer.apple.com/documentation/corefoundation/cfstring) object. If there is an explicit designated requirement, then it’s included in this text string.
 
 Specify the [`kSecCSRequirementInformation`](kseccsrequirementinformation.md) flag when calling the [`SecCodeCopySigningInformation(_:_:_:)`](seccodecopysigninginformation(_:_:_:).md) function to get this information.
 

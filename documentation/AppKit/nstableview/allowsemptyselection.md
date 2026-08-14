@@ -16,7 +16,7 @@ var allowsEmptySelection: Bool { get set }
 
 #### Discussion
 
-The default is [`true`](https://developer.apple.com/documentation/Swift/true), which allows the user to select zero columns or rows.
+The default is [`true`](https://developer.apple.com/documentation/swift/true), which allows the user to select zero columns or rows.
 
 ## See Also
 

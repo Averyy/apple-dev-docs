@@ -18,7 +18,7 @@ final class CLKComplicationTemplateGraphicRectangularStandardBodyView<Label> whe
 
 This template belongs to the [`CLKComplicationFamily.graphicRectangular`](clkcomplicationfamily/graphicrectangular.md) family.  shows the layout of the complication and where it appears on the clock face.
 
-![A diagram showing the layout of the complication that calls out the content produced by the header label and text providers.](https://docs-assets.developer.apple.com/published/a136876f538eec43e828b1dc80cde268/media-3667290%402x.png)
+![A diagram showing the layout of the complication that calls out the content produced by the header label and text providers.](/images/com.apple.clockkit/media-3667290@2x.png)
 
 The following table lists the dimensions of the image you use in this template.
 
@@ -49,13 +49,13 @@ The following table lists the dimensions of the image you use in this template.
 ### Inherits From
 - [CLKComplicationTemplate](clkcomplicationtemplate.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCopying](../Foundation/NSCopying.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCopying](../foundation/nscopying.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

@@ -27,14 +27,14 @@
 - [init(isIncluded: (Product) -> Bool, header: () -> Header, footer: () -> Footer)](subscriptionoptionsection/init(isincluded:header:footer:).md)
 ### Choosing a subscription option group style
 - [func subscriptionStoreOptionGroupStyle(some SubscriptionOptionGroupStyle) -> some View
-](../SwiftUI/View/subscriptionStoreOptionGroupStyle(_:).md)
+](../swiftui/view/subscriptionstoreoptiongroupstyle(_:).md)
   Sets the style subscription store views within this view use to display groups of subscription options.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 - [StoreContent](storecontent.md)
 
 ## See Also

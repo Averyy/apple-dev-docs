@@ -19,7 +19,7 @@ class TranslationSession
 
 #### Overview
 
-This class provides a flexible way for you to translate one or more lines of text at a time. There are two ways in which you can initialize a `TranslationSession`. One way you can obtain an instance of this class is by adding a `.translationTask()` to a SwiftUI view within your app. You can either add a [`translationTask(_:action:)`](https://developer.apple.com/documentation/SwiftUI/View/translationTask(_:action:)) or a [`translationTask(source:target:action:)`](https://developer.apple.com/documentation/SwiftUI/View/translationTask(source:target:action:)) function to the SwiftUI view containing the content you want to translate, like a [`Text`](https://developer.apple.com/documentation/SwiftUI/Text) view. After adding the task, the function passes you an instance of a translation session in its `action` closure. With this instance, you can use one or more of the translate functions to translate a single string or multiple strings of text.
+This class provides a flexible way for you to translate one or more lines of text at a time. There are two ways in which you can initialize a `TranslationSession`. One way you can obtain an instance of this class is by adding a `.translationTask()` to a SwiftUI view within your app. You can either add a [`translationTask(_:action:)`](https://developer.apple.com/documentation/swiftui/view/translationtask(_:action:)) or a [`translationTask(source:target:action:)`](https://developer.apple.com/documentation/swiftui/view/translationtask(source:target:action:)) function to the SwiftUI view containing the content you want to translate, like a [`Text`](https://developer.apple.com/documentation/swiftui/text) view. After adding the task, the function passes you an instance of a translation session in its `action` closure. With this instance, you can use one or more of the translate functions to translate a single string or multiple strings of text.
 
 Another way for contexts where there’s no UI, you can directly initialize the TranslationSession using [`init(installedSource:target:)`](translationsession/init(installedsource:target:).md) to translate between languages. This initializer requires that you specify which source language you use and throws an error if the languages aren’t already installed on the person’s device.
 
@@ -103,13 +103,13 @@ struct TranslationExample: View {
 - [Translating text within your app](translating-text-within-your-app.md)
   Display simple system translations and create custom translation experiences.
 - [func translationPresentation(isPresented: Binding<Bool>, text: String, attachmentAnchor: PopoverAttachmentAnchor, arrowEdge: Edge, replacementAction: ((String) -> Void)?) -> some View
-](../SwiftUI/View/translationPresentation(isPresented:text:attachmentAnchor:arrowEdge:replacementAction:).md)
+](../swiftui/view/translationpresentation(ispresented:text:attachmentanchor:arrowedge:replacementaction:).md)
   Presents a translation popover when a given condition is true.
 - [func translationTask(TranslationSession.Configuration?, action: (TranslationSession) async -> Void) -> some View
-](../SwiftUI/View/translationTask(_:action:).md)
+](../swiftui/view/translationtask(_:action:).md)
   Adds a task to perform before this view appears or when the translation configuration changes.
 - [func translationTask(source: Locale.Language?, target: Locale.Language?, action: (TranslationSession) async -> Void) -> some View
-](../SwiftUI/View/translationTask(source:target:action:).md)
+](../swiftui/view/translationtask(source:target:action:).md)
   Adds a task to perform before this view appears or when the specified source or target languages change.
 
 

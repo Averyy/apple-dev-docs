@@ -17,7 +17,7 @@ func save(_ sender: Any?)
 
 #### Discussion
 
-This method has no effect if [`appliesImmediately`](nsuserdefaultscontroller/appliesimmediately.md) returns [`true`](https://developer.apple.com/documentation/Swift/true).
+This method has no effect if [`appliesImmediately`](nsuserdefaultscontroller/appliesimmediately.md) returns [`true`](https://developer.apple.com/documentation/swift/true).
 
 ## See Also
 

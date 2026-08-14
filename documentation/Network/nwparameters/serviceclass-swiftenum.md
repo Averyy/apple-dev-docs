@@ -24,7 +24,7 @@ enum ServiceClass
 
 Use `ServiceClass` to tell the system and compatible networks how to handle your outgoing packets on Wi-Fi, Ethernet, or cellular. You describe whether your traffic favors low latency or high throughput. It prioritizes data packets transmitted on an underlying transport according to the throughput and latency characteristics of the use case. `ServiceClass` doesn’t necessarily affect the priority of packets received from a data transport, which may be set by the network. The default [`NWParameters.ServiceClass.bestEffort`](nwparameters/serviceclass-swift.enum/besteffort.md) category should be used when their isn’t a specific need or test results that indicates another service class would be helpful.
 
-For more information on using `ServiceClass` with Wi-Fi Aware, refer to [`WAAccessCategory`](https://developer.apple.com/documentation/WiFiAware/WAAccessCategory).
+For more information on using `ServiceClass` with Wi-Fi Aware, refer to [`WAAccessCategory`](https://developer.apple.com/documentation/wifiaware/waaccesscategory).
 
 ## Topics
 
@@ -45,10 +45,10 @@ For more information on using `ServiceClass` with Wi-Fi Aware, refer to [`WAAcce
 ## Relationships
 
 ### Conforms To
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

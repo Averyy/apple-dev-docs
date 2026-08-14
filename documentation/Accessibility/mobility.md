@@ -8,7 +8,7 @@ A person with reduced mobility may have difficulty holding a device or tapping t
 
 People who have trouble with dexterity, limb differences, or reduced mobility can use Apple’s mobility accessibility features to modify their touch interactions, create custom gestures, and control their devices in the ways that work best for them. Design and develop your app to support mobility accessibility features and provide a great experience for people who rely on these features.
 
-![An illustration that shows a person in a bedroom with a window, light fixture, bed, nightstand with an alarm clock, and a wheelchair. The person is waking up in the morning, sitting up on the bed, and using an iPhone.](https://docs-assets.developer.apple.com/published/264ff21f624f931448ffc0be6f804b9f/accessibility-scene-mobility%402x.png)
+![An illustration that shows a person in a bedroom with a window, light fixture, bed, nightstand with an alarm clock, and a wheelchair. The person is waking up in the morning, sitting up on the bed, and using an iPhone.](/images/com.apple.Accessibility/accessibility-scene-mobility@2x.png)
 
 ##### Related Videos
 

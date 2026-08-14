@@ -52,7 +52,7 @@ IOUserVideoObject should not be subclassed or allocated directly.
 ## Relationships
 
 ### Inherits From
-- [OSObject](../DriverKit/OSObject.md)
+- [OSObject](../driverkit/osobject.md)
 ### Inherited By
 - [IOUserVideoBox](iouservideobox.md)
 - [IOUserVideoBuffer](iouservideobuffer.md)

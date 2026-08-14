@@ -42,7 +42,7 @@ TextField("TouchBar Demo", text: $placeholder)
 
 > **Note**: Multiple visible bars may each specify a principal view, but the system only honors one of them.
 
-![A Touch Bar view showing one element designated as the principal view](https://docs-assets.developer.apple.com/published/ebd3f9fdec8875dcd3bb0da49e893ee7/SwiftUI-touchBarItemPrincipal%402x.png)
+![A Touch Bar view showing one element designated as the principal view](/images/com.apple.SwiftUI/SwiftUI-touchBarItemPrincipal@2x.png)
 
 ## Parameters
 

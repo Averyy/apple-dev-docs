@@ -37,16 +37,18 @@ The basic process by which `UCKeyTranslate` uses the `'uchr'` resource to transl
 
 ## Parameters
 
-- `keyLayoutPtr`: A pointer to the first element in a resource of type  . Pass a pointer to the   resource that you wish the   function to use when converting the virtual key code to a Unicode character. The resource handle associated with this pointer need not be locked, since the   function does not move memory. 
+- `keyLayoutPtr`: A pointer to the first element in a resource of type `'uchr'`. Pass a pointer to the `'uchr'` resource that you wish the `UCKeyTranslate` function to use when converting the virtual key code to a Unicode character. The resource handle associated with this pointer need not be locked, since the `UCKeyTranslate` function does not move memory. 
 - `virtualKeyCode`: An unsigned 16-bit integer. Pass a value specifying the virtual key code that is to be translated. For ADB keyboards, virtual key codes are in the range from 0 to 127. 
-- `keyAction`: An unsigned 16-bit integer. Pass a value specifying the current key action. See   for descriptions of possible values.
-- `modifierKeyState`: An unsigned 32-bit integer. Pass a bit mask indicating the current state of various modifier keys. You can obtain this value from the modifiers field of the event record as follows:
-- `keyboardType`: An unsigned 32-bit integer. Pass a value specifying the physical keyboard type (that is, the keyboard shape shown by Key Caps). You can call the function   for this value. 
-- `keyTranslateOptions`: A bit mask of options for controlling the   function. See   and   for descriptions of possible values. 
-- `deadKeyState`: A pointer to an unsigned 32-bit value, initialized to zero. The   function uses this value to store private information about the current dead key state.
-- `maxStringLength`: A value of type  . Pass the number of 16-bit Unicode characters that are contained in the buffer passed in the   parameter. This may be a value of up to 255, although it would be rare to get more than 4 characters. 
-- `actualStringLength`: A pointer to a value of type  . On return this value contains the actual number of Unicode characters placed into the buffer passed in the   parameter.
-- `unicodeString`: An array of values of type  . Pass a pointer to the buffer whose sized is specified in the   parameter. On return, the buffer contains a string of Unicode characters resulting from the virtual key code being handled. The number of characters in this string is less than or equal to the value specified in the   parameter. 
+- `keyAction`: An unsigned 16-bit integer. Pass a value specifying the current key action. See [`Key Actions`](carbon_core/unicode_utilities/1390619-key_actions.md) for descriptions of possible values.
+- `modifierKeyState`: An unsigned 32-bit integer. Pass a bit mask indicating the current state of various modifier keys. You can obtain this value from the modifiers field of the event record as follows: ```occ
+modifierKeyState = ((EventRecord.modifiers) >> 8) & 0xFF;
+```
+- `keyboardType`: An unsigned 32-bit integer. Pass a value specifying the physical keyboard type (that is, the keyboard shape shown by Key Caps). You can call the function `LMGetKbdType` for this value. 
+- `keyTranslateOptions`: A bit mask of options for controlling the `UCKeyTranslate` function. See [`Key Translation Options Flag`](carbon_core/unicode_utilities/1390507-key_translation_options_flag.md) and [`Key Translation Options Mask`](carbon_core/unicode_utilities/1390568-key_translation_options_mask.md) for descriptions of possible values. 
+- `deadKeyState`: A pointer to an unsigned 32-bit value, initialized to zero. The `UCKeyTranslate` function uses this value to store private information about the current dead key state.
+- `maxStringLength`: A value of type `UniCharCount`. Pass the number of 16-bit Unicode characters that are contained in the buffer passed in the `unicodeString` parameter. This may be a value of up to 255, although it would be rare to get more than 4 characters. 
+- `actualStringLength`: A pointer to a value of type `UniCharCount`. On return this value contains the actual number of Unicode characters placed into the buffer passed in the `unicodeString` parameter.
+- `unicodeString`: An array of values of type `UniChar`. Pass a pointer to the buffer whose sized is specified in the `maxStringLength` parameter. On return, the buffer contains a string of Unicode characters resulting from the virtual key code being handled. The number of characters in this string is less than or equal to the value specified in the `maxStringLength` parameter. 
 
 
 ---

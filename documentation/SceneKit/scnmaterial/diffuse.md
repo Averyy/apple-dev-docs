@@ -26,7 +26,7 @@ Diffuse shading describes the amount and color of light reflected equally in all
 
 By default, the diffuse property’s [`contents`](scnmaterialproperty/contents.md) object is a white color. The figure below shows the effect of setting the diffuse property’s contents to a texture image on a material whose other properties have default contents.
 
-![None](https://docs-assets.developer.apple.com/published/b7a936bf5d5f082a105095b158193541/media-2934160%402x.png)
+![None](/images/com.apple.scenekit/media-2934160@2x.png)
 
 The material’s [`lightingModel`](scnmaterial/lightingmodel-swift.property.md) property determines the formula SceneKit uses to combine its diffuse color and other visual properties with lights and other contents in a scene to produce the final color for each rendered pixel in the rendered scene. For details, see `Lighting Models`.
 

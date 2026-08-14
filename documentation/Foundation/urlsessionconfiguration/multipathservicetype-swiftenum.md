@@ -38,12 +38,12 @@ enum MultipathServiceType
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../Swift/BitwiseCopyable.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [RawRepresentable](../Swift/RawRepresentable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [BitwiseCopyable](../swift/bitwisecopyable.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [RawRepresentable](../swift/rawrepresentable.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 
@@ -51,7 +51,7 @@ enum MultipathServiceType
   Use the available radios in iOS devices to improve your app’s network reliability and performance.
 - [var multipathServiceType: URLSessionConfiguration.MultipathServiceType](urlsessionconfiguration/multipathservicetype-swift.property.md)
   A service type that specifies the Multipath TCP connection policy for transmitting data over Wi-Fi and cellular interfaces.
-- [Multipath Entitlement](../BundleResources/Entitlements/com.apple.developer.networking.multipath.md)
+- [Multipath Entitlement](../bundleresources/entitlements/com.apple.developer.networking.multipath.md)
   A Boolean value indicating whether your app may use Multipath protocols to seamlessly transition between Wi-Fi and cellular networks.
 
 

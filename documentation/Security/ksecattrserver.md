@@ -26,7 +26,7 @@ let kSecAttrServer: CFString
 
 #### Discussion
 
-The corresponding value is of type [`CFString`](https://developer.apple.com/documentation/CoreFoundation/CFString) and contains the server’s domain name or IP address. Items of class [`kSecClassInternetPassword`](ksecclassinternetpassword.md) have this attribute.
+The corresponding value is of type [`CFString`](https://developer.apple.com/documentation/corefoundation/cfstring) and contains the server’s domain name or IP address. Items of class [`kSecClassInternetPassword`](ksecclassinternetpassword.md) have this attribute.
 
 
 ---

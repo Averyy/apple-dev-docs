@@ -39,7 +39,7 @@ struct ImageRow: View {
 
 The image below shows the contents of a nested vertical stack aligning at the center of the stack. The child elements within the vertical stacks, such as the titles beneath each image, don’t align with each other.
 
-![Two stacks that each contain an image and a title beneath the image, vertically centered. The left stack contains an image in portrait mode with the title Bell Peppers beneath it. The right stack contains an image in landscape mode with the title Chili Peppers beneath it, and an additional caption that says Higher levels of capsicum.](https://docs-assets.developer.apple.com/published/480aa709dbda4c45359cc8f30eee7c53/Aligning-Views-Across-Stacks-1%402x.png)
+![Two stacks that each contain an image and a title beneath the image, vertically centered. The left stack contains an image in portrait mode with the title Bell Peppers beneath it. The right stack contains an image in landscape mode with the title Chili Peppers beneath it, and an additional caption that says Higher levels of capsicum.](/images/com.apple.SwiftUI/Aligning-Views-Across-Stacks-1@2x.png)
 
 ##### Define a Custom Alignment
 
@@ -96,7 +96,7 @@ struct RowOfAlignedImages: View {
 
 The two vertical stacks now align on the bottoms of the stacks, using the default from your specification for the custom guide.
 
-![Two stacks that each contain an image and a title beneath the image, aligned on the bottoms of the stacks. The left stack contains an image in portrait mode with the title Bell Peppers beneath it. The right stack contains an image in landscape mode with the title Chili Peppers beneath it, and an additional caption that says Higher levels of capsicum.](https://docs-assets.developer.apple.com/published/7483e9c5eac752e7bad0acb112e35b23/Aligning-Views-Across-Stacks-2%402x.png)
+![Two stacks that each contain an image and a title beneath the image, aligned on the bottoms of the stacks. The left stack contains an image in portrait mode with the title Bell Peppers beneath it. The right stack contains an image in landscape mode with the title Chili Peppers beneath it, and an additional caption that says Higher levels of capsicum.](/images/com.apple.SwiftUI/Aligning-Views-Across-Stacks-2@2x.png)
 
 When you define an alignment on a stack, it projects through enclosed child views. Within the nested [`VStack`](vstack.md) instances, apply [`alignmentGuide(_:computeValue:)`](view/alignmentguide(_:computevalue:).md) to the views to align, using your custom guide for the [`HStack`](hstack.md).
 
@@ -136,7 +136,7 @@ struct RowOfAlignedImages: View {
 
 The closure from the alignment guide modifier returns [`firstTextBaseline`](verticalalignment/firsttextbaseline.md), which aligns the baselines of the titles with the alignment guide `imageTitleAlignmentGuide`.
 
-![Two stacks that each contain an image and a title beneath the image, aligned by the titles. The left stack contains an image in portrait mode with the title Bell Peppers beneath it. The right stack contains an image in landscape mode with the title Chili Peppers beneath it, and an additional caption that says Higher levels of capsicum.](https://docs-assets.developer.apple.com/published/bc9dec8437221c95639947fbb0fb0073/Aligning-Views-Across-Stacks-3%402x.png)
+![Two stacks that each contain an image and a title beneath the image, aligned by the titles. The left stack contains an image in portrait mode with the title Bell Peppers beneath it. The right stack contains an image in landscape mode with the title Chili Peppers beneath it, and an additional caption that says Higher levels of capsicum.](/images/com.apple.SwiftUI/Aligning-Views-Across-Stacks-3@2x.png)
 
 ## See Also
 

@@ -40,7 +40,7 @@ If your app returns `true` to [`captureView(shouldPresent:error:)`](roomcapturev
 ## Relationships
 
 ### Inherits From
-- [NSCoding](../Foundation/NSCoding.md)
+- [NSCoding](../foundation/nscoding.md)
 
 ## See Also
 

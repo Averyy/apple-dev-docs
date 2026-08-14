@@ -56,13 +56,13 @@ class Queue
 ### Inherited By
 - [ApplicationMusicPlayer.Queue](applicationmusicplayer/queue-swift.class.md)
 ### Conforms To
-- [Copyable](../Swift/Copyable.md)
-- [Equatable](../Swift/Equatable.md)
-- [Escapable](../Swift/Escapable.md)
-- [ExpressibleByArrayLiteral](../Swift/ExpressibleByArrayLiteral.md)
-- [Hashable](../Swift/Hashable.md)
-- [Observable](../Observation/Observable.md)
-- [ObservableObject](../Combine/ObservableObject.md)
+- [Copyable](../swift/copyable.md)
+- [Equatable](../swift/equatable.md)
+- [Escapable](../swift/escapable.md)
+- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
+- [Hashable](../swift/hashable.md)
+- [Observable](../observation/observable.md)
+- [ObservableObject](../combine/observableobject.md)
 
 
 ---

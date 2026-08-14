@@ -19,7 +19,7 @@ func reportPushToTalkMessage(userInfo: [AnyHashable : Any] = [:])
 
 ## Parameters
 
-- `userInfo`: A dictionary of custom information associated with the push-to -talk message, such as the active remote participant. The containing app’s [`PTChannelManagerDelegate`](https://developer.apple.com/documentation/PushToTalk/PTChannelManagerDelegate) receives this dictionary if the user has joined a push-to-talk channel.
+- `userInfo`: A dictionary of custom information associated with the push-to -talk message, such as the active remote participant. The containing app’s [`PTChannelManagerDelegate`](https://developer.apple.com/documentation/pushtotalk/ptchannelmanagerdelegate) receives this dictionary if the user has joined a push-to-talk channel.
 
 ## See Also
 

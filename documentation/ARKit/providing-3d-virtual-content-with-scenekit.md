@@ -39,7 +39,7 @@ func renderer(_ renderer: SCNSceneRenderer, didAdd node: SCNNode, for anchor: AR
 
 ##### Follow Best Practices for Designing 3d Assets
 
-- Use the SceneKit physically based lighting model for materials for a more realistic appearance. (See the [`SCNMaterial`](https://developer.apple.com/documentation/SceneKit/SCNMaterial) class and the [`Badger: Advanced Rendering in SceneKit`](https://developer.apple.comhttps://developer.apple.com/library/archive/samplecode/Badger/Introduction/Intro.html#//apple_ref/doc/uid/TP40017309) sample code project.)
+- Use the SceneKit physically based lighting model for materials for a more realistic appearance. (See the [`SCNMaterial`](https://developer.apple.com/documentation/scenekit/scnmaterial) class and the [`Badger: Advanced Rendering in SceneKit`](https://developer.apple.comhttps://developer.apple.com/library/archive/samplecode/Badger/Introduction/Intro.html#//apple_ref/doc/uid/TP40017309) sample code project.)
 - Bake ambient occlusion shading so that objects appear properly lit in a wide variety of scene lighting conditions.
 - If you create a virtual object that you intend to place on a real-world flat surface in AR, include a transparent plane with a soft shadow texture below the object in your 3D asset.
 

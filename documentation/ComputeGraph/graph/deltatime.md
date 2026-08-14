@@ -23,7 +23,7 @@ The delta time in seconds
 
 Delta time represents the duration between the current frame and the previous frame, allowing for frame-rate independent animations and simulations.
 
-> **Note**: ![Graph](https://docs-assets.developer.apple.com/published/753517c57a92e8206e328b47e3bb8871/graph__deltaTime.svg)
+> **Note**: ![Graph](/images/com.apple.computegraph/graph__deltaTime.svg)
 
 
 ---

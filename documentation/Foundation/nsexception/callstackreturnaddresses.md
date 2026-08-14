@@ -22,7 +22,7 @@ var callStackReturnAddresses: [NSNumber] { get }
 
 #### Discussion
 
-An array of [`NSNumber`](nsnumber.md) objects encapsulating [`NSUInteger`](https://developer.apple.com/documentation/ObjectiveC/NSUInteger) values. Each value is a call frame return address. The array of stack frames starts at the point at which the exception was first raised, with the first items being the most recent stack frames.
+An array of [`NSNumber`](nsnumber.md) objects encapsulating [`NSUInteger`](https://developer.apple.com/documentation/objectivec/nsuinteger) values. Each value is a call frame return address. The array of stack frames starts at the point at which the exception was first raised, with the first items being the most recent stack frames.
 
 `NSException` subclasses posing as the `NSException` class or subclasses or other API elements that interfere with the exception-raising mechanism may not get this information.
 

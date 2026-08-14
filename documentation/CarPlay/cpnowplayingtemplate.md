@@ -19,7 +19,7 @@ class CPNowPlayingTemplate
 
 #### Overview
 
-The Now Playing template displays information from [`MPNowPlayingInfoCenter`](https://developer.apple.com/documentation/MediaPlayer/MPNowPlayingInfoCenter) and [`MPNowPlayingSession`](https://developer.apple.com/documentation/MediaPlayer/MPNowPlayingSession). Instead of instantiating your own Now Playing template, CarPlay provides a shared instance that you configure. The template displays a series of playback control buttons, as well as information about the current album and artist, and what’s coming up next.
+The Now Playing template displays information from [`MPNowPlayingInfoCenter`](https://developer.apple.com/documentation/mediaplayer/mpnowplayinginfocenter) and [`MPNowPlayingSession`](https://developer.apple.com/documentation/mediaplayer/mpnowplayingsession). Instead of instantiating your own Now Playing template, CarPlay provides a shared instance that you configure. The template displays a series of playback control buttons, as well as information about the current album and artist, and what’s coming up next.
 
 When enabling your Now Playing template’s Album-Artist and Up Next buttons, you must create an object that implements the [`CPNowPlayingTemplateObserver`](cpnowplayingtemplateobserver.md) protocol and register it as an observer by calling the template’s [`add(_:)`](cpnowplayingtemplate/add(_:).md) method.
 
@@ -78,16 +78,16 @@ When CarPlay presents Now Playing information for your app, it uses the shared i
 ### Inherits From
 - [CPTemplate](cptemplate.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCoding](../Foundation/NSCoding.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [NSSecureCoding](../Foundation/NSSecureCoding.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCoding](../foundation/nscoding.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

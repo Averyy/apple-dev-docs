@@ -28,7 +28,7 @@ You can use this function to find the available sheet sizes (and the imageable a
 
 - `printSession`: The current printing session.
 - `printer`: The printer whose list of page sizes you want to enumerate.
-- `pageFormatList`: A pointer to your   variable. On return, the variable refers to a Core Foundation array that contains the page format ( ) objects associated with the specified printer. You are responsible for releasing the array. Each page format object describes a paper size available for the specified printer. If the function fails, then on return the array is  .
+- `pageFormatList`: A pointer to your [`CFArray`](https://developer.apple.com/documentation/corefoundation/cfarray) variable. On return, the variable refers to a Core Foundation array that contains the page format (`PMPageFormat`) objects associated with the specified printer. You are responsible for releasing the array. Each page format object describes a paper size available for the specified printer. If the function fails, then on return the array is `NULL`.
 
 ## See Also
 

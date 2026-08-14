@@ -19,7 +19,7 @@ static let localOnly: UIPasteboard.OptionsKey
 
 #### Description
 
-The value is expressed as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) type.
+The value is expressed as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) type.
 
 ## See Also
 

@@ -24,13 +24,13 @@ func perform(_ aSelector: Selector, on thr: Thread, with arg: Any?, waitUntilDon
 
 You can use this method to deliver messages to other threads in your application. The message in this case is a method of the current object that you want to execute on the target thread.
 
-This method queues the message on the run loop of the target thread using the default run loop modes—that is, the modes associated with the [`common`](https://developer.apple.com/documentation/Foundation/RunLoop/Mode/common) constant. As part of its normal run loop processing, the target thread dequeues the message (assuming it is running in one of the default run loop modes) and invokes the desired method.
+This method queues the message on the run loop of the target thread using the default run loop modes—that is, the modes associated with the [`common`](https://developer.apple.com/documentation/foundation/runloop/mode/common) constant. As part of its normal run loop processing, the target thread dequeues the message (assuming it is running in one of the default run loop modes) and invokes the desired method.
 
 You cannot cancel messages queued using this method. If you want the option of canceling a message on the current thread, you must use either the [`perform(_:with:afterDelay:)`](nsobject-swift.class/perform(_:with:afterdelay:).md) or [`perform(_:with:afterDelay:inModes:)`](nsobject-swift.class/perform(_:with:afterdelay:inmodes:).md) method.
 
 ##### Special Considerations
 
-This method registers with the runloop of its current context, and depends on that runloop being run on a regular basis to perform correctly. One common context where you might call this method and end up registering with a runloop that is not automatically run on a regular basis is when being invoked by a dispatch queue. If you need this type of functionality when running on a dispatch queue, you should use [`dispatch_after`](https://developer.apple.com/documentation/Dispatch/dispatch_after) and related methods to get the behavior you want.
+This method registers with the runloop of its current context, and depends on that runloop being run on a regular basis to perform correctly. One common context where you might call this method and end up registering with a runloop that is not automatically run on a regular basis is when being invoked by a dispatch queue. If you need this type of functionality when running on a dispatch queue, you should use [`dispatch_after`](https://developer.apple.com/documentation/dispatch/dispatch_after) and related methods to get the behavior you want.
 
 ## Parameters
 

@@ -24,9 +24,9 @@ You can call this routine any number of times to build up the data contents of t
 
 ## Parameters
 
-- `ref`: An   containing the stream data.
+- `ref`: An [`AEStreamRef`](aestreamref.md) containing the stream data.
 - `data`: A pointer to the block of memory containing the descriptor data. This routine copies the memory block immediately, so you do not need to retain it for the benefit of this routine.
-- `length`: The number of bytes pointed to by the   parameter.
+- `length`: The number of bytes pointed to by the `data` parameter.
 
 ## See Also
 

@@ -21,7 +21,7 @@ var supportedChannelLayoutTags: [NSNumber]? { get }
 
 #### Discussion
 
-The array contains [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) objects representing [`AudioChannelLayoutTag`](https://developer.apple.com/documentation/CoreAudioTypes/AudioChannelLayoutTag) values.
+The array contains [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) objects representing [`AudioChannelLayoutTag`](https://developer.apple.com/documentation/coreaudiotypes/audiochannellayouttag) values.
 
 ## See Also
 

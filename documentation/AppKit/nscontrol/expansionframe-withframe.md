@@ -16,7 +16,7 @@ func expansionFrame(withFrame contentFrame: NSRect) -> NSRect
 
 #### Return Value
 
-The frame in which the tool tip should be displayed, or [`NSZeroRect`](https://developer.apple.com/documentation/Foundation/NSZeroRect) by default.
+The frame in which the tool tip should be displayed, or [`NSZeroRect`](https://developer.apple.com/documentation/foundation/nszerorect) by default.
 
 #### Discussion
 

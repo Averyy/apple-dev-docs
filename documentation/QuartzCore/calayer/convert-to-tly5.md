@@ -44,7 +44,7 @@ yellowLayer.transform = CATransform3DMakeScale(0.5, 0.5, 1)
 
 The following figure shows the two layers and an overlaid rectangle with a frame of `(50, 50, 200, 200)` in the red layer’s coordinate system.
 
-![Layers with different coordinate systems](https://docs-assets.developer.apple.com/published/04558faab052c26b463625dbc8c7cc46/media-2850323%402x.png)
+![Layers with different coordinate systems](/images/com.apple.quartzcore/media-2850323@2x.png)
 
 The following code shows how you can find the coordinates of that rectangle in the yellow layer’s coordinate system.
 

@@ -36,7 +36,7 @@ In macOS, you can also create app groups or add apps to existing app groups usin
 
 You don’t need to register app groups that use this format on the Apple Developer website.
 
-Apps within an app group share access to a group container. For more information about container creation, location, and deletion, see [`containerURL(forSecurityApplicationGroupIdentifier:)`](https://developer.apple.com/documentation/Foundation/FileManager/containerURL(forSecurityApplicationGroupIdentifier:)).
+Apps within an app group share access to a group container. For more information about container creation, location, and deletion, see [`containerURL(forSecurityApplicationGroupIdentifier:)`](https://developer.apple.com/documentation/foundation/filemanager/containerurl(forsecurityapplicationgroupidentifier:)).
 
 Apps within a group can communicate with other members in the group using IPC mechanisms including Mach IPC, XPC, POSIX semaphores and shared memory, and UNIX domain sockets. In macOS, use app groups to enable IPC communication between two sandboxed apps, or between a sandboxed app and a nonsandboxed app. You use the app group identifier in the service identifier for your IPC mechanism, so keep these restrictions in mind when creating your app group identifier:
 
@@ -47,7 +47,7 @@ Apps within a group can communicate with other members in the group using IPC me
 | POSIX shared memory | The service identifer has the format `<group identifier>/<unique name>`. The maximum length of the service identifier is `PSHMNAMLEN` characters. |
 | UNIX domain sockets | The path to the socket needs to be in your app group container, and the name of the socket is limited to `SOCK_MAXADDRLEN` characters, which includes two bytes that are reserved for `sun_len` and `sun_family`. |
 
-App groups that you register in your Apple Developer profile also act as keychain access groups. For more information about the relationship between app groups and keychain access groups, see [`Sharing access to keychain items among a collection of apps`](https://developer.apple.com/documentation/Security/sharing-access-to-keychain-items-among-a-collection-of-apps).
+App groups that you register in your Apple Developer profile also act as keychain access groups. For more information about the relationship between app groups and keychain access groups, see [`Sharing access to keychain items among a collection of apps`](https://developer.apple.com/documentation/security/sharing-access-to-keychain-items-among-a-collection-of-apps).
 
 To add this entitlement to your app, enable the App Groups capability in Xcode, and add the groups your app belongs to.
 

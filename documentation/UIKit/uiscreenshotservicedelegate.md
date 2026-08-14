@@ -31,7 +31,7 @@ When the user captures a screenshot of your app’s windows, UIKit calls the met
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

@@ -141,17 +141,17 @@ Another way that apps consume too many threads is by creating too many private c
 - [DispatchConcurrentQueue](dispatchconcurrentqueue.md)
 - [OS_dispatch_queue_global](os_dispatch_queue_global-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [Copyable](../Swift/Copyable.md)
-- [Equatable](../Swift/Equatable.md)
-- [Escapable](../Swift/Escapable.md)
-- [Executor](../Swift/Executor.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [Scheduler](../Combine/Scheduler.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
-- [TaskExecutor](../Swift/TaskExecutor.md)
+- [CVarArg](../swift/cvararg.md)
+- [Copyable](../swift/copyable.md)
+- [Equatable](../swift/equatable.md)
+- [Escapable](../swift/escapable.md)
+- [Executor](../swift/executor.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [Scheduler](../combine/scheduler.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
+- [TaskExecutor](../swift/taskexecutor.md)
 
 ## See Also
 

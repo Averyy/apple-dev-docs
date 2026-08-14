@@ -45,7 +45,7 @@ Read the [`boundingBox`](scnboundingvolume/boundingbox.md) or [`boundingSphere`]
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 ### Conforming Types
 - [SCNBox](scnbox.md)
 - [SCNCapsule](scncapsule.md)

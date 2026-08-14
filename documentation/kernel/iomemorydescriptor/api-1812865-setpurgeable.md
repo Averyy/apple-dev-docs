@@ -23,8 +23,8 @@ Buffers may be allocated with the ability to have their purgeable status changed
 
 ## Parameters
 
-- `newState`: kIOMemoryPurgeableEmpty - make the memory volatile, and discard any pages allocated to it.
-- `oldState`: kIOMemoryPurgeableEmpty - the memory was volatile and has been discarded by the VM system.
+- `newState`: - the desired new purgeable state of the memory: kIOMemoryPurgeableKeepCurrent - make no changes to the memory's purgeable state. kIOMemoryPurgeableVolatile - make the memory volatile - the memory may be reclaimed by the VM system without saving its contents to backing store. kIOMemoryPurgeableNonVolatile - make the memory nonvolatile - the memory is treated as with usual allocations and must be saved to backing store if paged. kIOMemoryPurgeableEmpty - make the memory volatile, and discard any pages allocated to it.
+- `oldState`: - if non-NULL, the previous purgeable state of the memory is returned here: kIOMemoryPurgeableNonVolatile - the memory was nonvolatile. kIOMemoryPurgeableVolatile - the memory was volatile but its content has not been discarded by the VM system. kIOMemoryPurgeableEmpty - the memory was volatile and has been discarded by the VM system.
 
 ## See Also
 

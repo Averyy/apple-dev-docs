@@ -22,7 +22,7 @@ case double(Double)
 
 ## Parameters
 
-- `double`: The attribute value, as a [`Double`](https://developer.apple.com/documentation/Swift/Double).
+- `double`: The attribute value, as a [`Double`](https://developer.apple.com/documentation/swift/double).
 
 ## See Also
 

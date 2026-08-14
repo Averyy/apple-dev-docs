@@ -19,7 +19,7 @@ func writeContents(_ contents: Any, to url: URL, for saveOperation: UIDocument.S
 
 #### Discussion
 
-This method is called by the [`writeContents(_:andAttributes:safelyTo:for:)`](uidocument/writecontents(_:andattributes:safelyto:for:).md) to write the actual file data. It is passed the contents object returned from your [`contents(forType:)`](uidocument/contents(fortype:).md) implementation. The default implementation of this method supports [`NSData`](https://developer.apple.com/documentation/Foundation/NSData) or [`FileWrapper`](https://developer.apple.com/documentation/Foundation/FileWrapper) contents by asking the contents object to save itself to the corresponding URL.
+This method is called by the [`writeContents(_:andAttributes:safelyTo:for:)`](uidocument/writecontents(_:andattributes:safelyto:for:).md) to write the actual file data. It is passed the contents object returned from your [`contents(forType:)`](uidocument/contents(fortype:).md) implementation. The default implementation of this method supports [`NSData`](https://developer.apple.com/documentation/foundation/nsdata) or [`FileWrapper`](https://developer.apple.com/documentation/foundation/filewrapper) contents by asking the contents object to save itself to the corresponding URL.
 
 If you override this method, you may choose to return a different type of data from [`contents(forType:)`](uidocument/contents(fortype:).md) or you may choose to not override [`contents(forType:)`](uidocument/contents(fortype:).md) and generate the writable data directly within this method. If you override this method, you should not invoke the superclass implementation.
 
@@ -27,7 +27,7 @@ If you override this method, you may choose to return a different type of data f
 
 ## Parameters
 
-- `contents`: The document data to write to disk. Typically, the data is encapsulated by an [`NSData`](https://developer.apple.com/documentation/Foundation/NSData) object (if a flat file) or an [`FileWrapper`](https://developer.apple.com/documentation/Foundation/FileWrapper) object (if a file package). If the object encapsulating the document data is of some other type, you should override this method or [`writeContents(_:andAttributes:safelyTo:for:)`](uidocument/writecontents(_:andattributes:safelyto:for:).md) to perform the actual writing of the data.
+- `contents`: The document data to write to disk. Typically, the data is encapsulated by an [`NSData`](https://developer.apple.com/documentation/foundation/nsdata) object (if a flat file) or an [`FileWrapper`](https://developer.apple.com/documentation/foundation/filewrapper) object (if a file package). If the object encapsulating the document data is of some other type, you should override this method or [`writeContents(_:andAttributes:safelyTo:for:)`](uidocument/writecontents(_:andattributes:safelyto:for:).md) to perform the actual writing of the data.
 - `url`: A file URL specifying the location of the document file in the application sandbox.
 - `saveOperation`: A constant that indicates whether the document file is being written the first time or whether it is being overwritten. See [`UIDocument.SaveOperation`](uidocument/saveoperation.md) for details.
 - `originalContentsURL`: A file URL specifying the previous location of the document file (if not `nil`).

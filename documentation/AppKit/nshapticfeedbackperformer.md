@@ -36,7 +36,7 @@ To provide the user with haptic feedback while using a Force Touch trackpad, cal
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

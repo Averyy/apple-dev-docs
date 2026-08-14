@@ -40,7 +40,7 @@ The test environment creates an [`SKTestTransaction`](sktesttransaction.md) inst
 
 You can manage the transactions in the test environment. To get a list of all transactions in the test environment, call [`allTransactions()`](sktestsession/alltransactions().md). To delete a single transaction, call [`deleteTransaction(identifier:)`](sktestsession/deletetransaction(identifier:).md). To delete all the transactions, call [`clearTransactions()`](sktestsession/cleartransactions().md).
 
-Before automating a test session with `SKTestSession`, you must create a StoreKit configuration file. For more information, see [`Setting up StoreKit Testing in Xcode`](https://developer.apple.com/documentation/Xcode/setting-up-storekit-testing-in-xcode) and [`init(configurationFileNamed:)`](sktestsession/init(configurationfilenamed:).md). Set [`disableDialogs`](sktestsession/disabledialogs.md) to `true` to run tests without showing test environment UI.
+Before automating a test session with `SKTestSession`, you must create a StoreKit configuration file. For more information, see [`Setting up StoreKit Testing in Xcode`](https://developer.apple.com/documentation/xcode/setting-up-storekit-testing-in-xcode) and [`init(configurationFileNamed:)`](sktestsession/init(configurationfilenamed:).md). Set [`disableDialogs`](sktestsession/disabledialogs.md) to `true` to run tests without showing test environment UI.
 
 ## Topics
 
@@ -124,20 +124,20 @@ Before automating a test session with `SKTestSession`, you must create a StoreKi
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 
-- [Setting up StoreKit Testing in Xcode](../Xcode/setting-up-storekit-testing-in-xcode.md)
+- [Setting up StoreKit Testing in Xcode](../xcode/setting-up-storekit-testing-in-xcode.md)
   Prepare your test environment to test in-app purchases with data you configure locally.
 - [class SKTestTransaction](sktesttransaction.md)
   A transaction that occurs in the testing environment.

@@ -38,8 +38,8 @@ Thread-safe since Mac OS version 10.2.
 
 ## Parameters
 
-- `inURL`: A Core Foundation URL reference designating the item to open; see the   in the Core Foundation Reference Documentation for a description of the   data type.
-- `outLaunchedURL`: Despite the absence of the word   in its name, this function retains the URL reference object on your behalf; you are responsible for releasing this object.
+- `inURL`: A Core Foundation URL reference designating the item to open; see the *CFURL Reference* in the Core Foundation Reference Documentation for a description of the `CFURLRef` data type.
+- `outLaunchedURL`: A pointer to a Core Foundation URL reference that, on return, will identify the app launched. Pass `NULL` if this information is unimportant.  Despite the absence of the word `Copy` in its name, this function retains the URL reference object on your behalf; you are responsible for releasing this object.
 
 ## See Also
 

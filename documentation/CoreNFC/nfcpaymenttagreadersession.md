@@ -20,10 +20,10 @@ class NFCPaymentTagReaderSession
 
 This subclass of [`NFCTagReaderSession`](nfctagreadersession.md) adds support for payment tags, when someone uses your app in certain regions. To support payment tags in your app, intialize this class with a [`NFCTagReaderSessionDelegate`](nfctagreadersessiondelegate-2joku.md). The delegate receives an object that conforms to the [`NFCISO7816Tag`](nfciso7816tag.md) protocol when the [`NFCTagReaderSession`](nfctagreadersession.md) detects an ISO 7816-compatible tag. For the delegate to receive the tag object, your app must include:
 
-- The [`Near Field Communication Tag Reader Session Formats Entitlement`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.nfc.readersession.formats)
-- A list of supported application identifiers in the [`ISO7816 application identifiers for NFC Tag Reader Session`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.nfc.readersession.iso7816.select-identifiers) information property list key
+- The [`Near Field Communication Tag Reader Session Formats Entitlement`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.nfc.readersession.formats)
+- A list of supported application identifiers in the [`ISO7816 application identifiers for NFC Tag Reader Session`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.nfc.readersession.iso7816.select-identifiers) information property list key
 
-When the session discovers an ISO 7816-compatible tag, the session performs a `SELECT` command for each application identifier provided in [`ISO7816 application identifiers for NFC Tag Reader Session`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.nfc.readersession.iso7816.select-identifiers). The `SELECT` command searches for the identifiers in the order in which they appear in the array. The session calls the [`tagReaderSession:didDetectTags:`](nfctagreadersessiondelegate-5gxiw/tagreadersession:diddetecttags:.md) delegate method after the first successful `SELECT` command. The [`initialSelectedAID`](nfciso7816tag/initialselectedaid.md) property of the found tag contains the selected identifier.
+When the session discovers an ISO 7816-compatible tag, the session performs a `SELECT` command for each application identifier provided in [`ISO7816 application identifiers for NFC Tag Reader Session`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.nfc.readersession.iso7816.select-identifiers). The `SELECT` command searches for the identifiers in the order in which they appear in the array. The session calls the [`tagReaderSession:didDetectTags:`](nfctagreadersessiondelegate-5gxiw/tagreadersession:diddetecttags:.md) delegate method after the first successful `SELECT` command. The [`initialSelectedAID`](nfciso7816tag/initialselectedaid.md) property of the found tag contains the selected identifier.
 
 The tag must be available to the reader session, so it can read and write data to the tag. Use the [`isAvailable`](nfctag-swift.enum/isavailable.md) property to check the tag’s availability. To connect to an available tag, call the superclass’s [`connect(to:completionHandler:)`](nfctagreadersession/connect(to:completionhandler:).md) method.
 
@@ -44,13 +44,13 @@ The system only supports one active [`NFCReaderSession`](nfcreadersession-swift.
 ### Inherits From
 - [NFCTagReaderSession](nfctagreadersession.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
 - [NFCReaderSessionProtocol](nfcreadersessionprotocol.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 
@@ -64,7 +64,7 @@ The system only supports one active [`NFCReaderSession`](nfcreadersession-swift.
   The abstract base class that represents a reader session for detecting NFC tags.
 - [protocol NFCReaderSessionProtocol](nfcreadersessionprotocol.md)
   A general interface for interacting with a reader session.
-- [Near Field Communication Tag Reader Session Formats Entitlement](../BundleResources/Entitlements/com.apple.developer.nfc.readersession.formats.md)
+- [Near Field Communication Tag Reader Session Formats Entitlement](../bundleresources/entitlements/com.apple.developer.nfc.readersession.formats.md)
   The Near Field Communication data formats an app can read.
 
 

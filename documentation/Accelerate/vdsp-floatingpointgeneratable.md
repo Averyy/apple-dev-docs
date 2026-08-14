@@ -23,17 +23,17 @@ protocol vDSP_FloatingPointGeneratable : BinaryFloatingPoint
 ## Relationships
 
 ### Inherits From
-- [AdditiveArithmetic](../Swift/AdditiveArithmetic.md)
-- [BinaryFloatingPoint](../Swift/BinaryFloatingPoint.md)
-- [Comparable](../Swift/Comparable.md)
-- [Equatable](../Swift/Equatable.md)
-- [ExpressibleByFloatLiteral](../Swift/ExpressibleByFloatLiteral.md)
-- [ExpressibleByIntegerLiteral](../Swift/ExpressibleByIntegerLiteral.md)
-- [FloatingPoint](../Swift/FloatingPoint.md)
-- [Hashable](../Swift/Hashable.md)
-- [Numeric](../Swift/Numeric.md)
-- [SignedNumeric](../Swift/SignedNumeric.md)
-- [Strideable](../Swift/Strideable.md)
+- [AdditiveArithmetic](../swift/additivearithmetic.md)
+- [BinaryFloatingPoint](../swift/binaryfloatingpoint.md)
+- [Comparable](../swift/comparable.md)
+- [Equatable](../swift/equatable.md)
+- [ExpressibleByFloatLiteral](../swift/expressiblebyfloatliteral.md)
+- [ExpressibleByIntegerLiteral](../swift/expressiblebyintegerliteral.md)
+- [FloatingPoint](../swift/floatingpoint.md)
+- [Hashable](../swift/hashable.md)
+- [Numeric](../swift/numeric.md)
+- [SignedNumeric](../swift/signednumeric.md)
+- [Strideable](../swift/strideable.md)
 
 
 ---

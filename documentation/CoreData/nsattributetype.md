@@ -30,19 +30,19 @@ Core Data supports the following attribute types, which differentiate between bi
 
 | **Attribute Type** | **Type** | **Scalar type** | **Scalar by default?** |
 | --- | --- | --- | --- |
-| Integer 16 | [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) | [`int16_t`](https://developer.apple.com/documentation/kernel/int16_t) | yes |
-| Integer 32 | [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) | [`int32_t`](https://developer.apple.com/documentation/kernel/int32_t) | yes |
-| Integer 64 | [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) | [`int64_t`](https://developer.apple.com/documentation/kernel/int64_t) | yes |
-| Double | [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) | `double` | yes |
-| Float | [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) | `float` | yes |
-| Boolean | [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) | [`BOOL`](https://developer.apple.com/documentation/ObjectiveC/BOOL) | yes |
-| Date | [`NSDate`](https://developer.apple.com/documentation/Foundation/NSDate) | [`TimeInterval`](https://developer.apple.com/documentation/Foundation/TimeInterval) | no |
-| Decimal | [`NSDecimalNumber`](https://developer.apple.com/documentation/Foundation/NSDecimalNumber) | [`NSDecimalNumber`](https://developer.apple.com/documentation/Foundation/NSDecimalNumber) | no |
-| UUID | [`NSUUID`](https://developer.apple.com/documentation/Foundation/NSUUID) | [`NSUUID`](https://developer.apple.com/documentation/Foundation/NSUUID) | no |
-| URI | [`NSURL`](https://developer.apple.com/documentation/Foundation/NSURL) | — | — |
-| String | [`NSString`](https://developer.apple.com/documentation/Foundation/NSString) | — | — |
-| Binary data | [`NSData`](https://developer.apple.com/documentation/Foundation/NSData) | — | — |
-| Transformable | [`NSObject`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class) | — | — |
+| Integer 16 | [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) | [`int16_t`](https://developer.apple.com/documentation/kernel/int16_t) | yes |
+| Integer 32 | [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) | [`int32_t`](https://developer.apple.com/documentation/kernel/int32_t) | yes |
+| Integer 64 | [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) | [`int64_t`](https://developer.apple.com/documentation/kernel/int64_t) | yes |
+| Double | [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) | `double` | yes |
+| Float | [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) | `float` | yes |
+| Boolean | [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) | [`BOOL`](https://developer.apple.com/documentation/objectivec/bool) | yes |
+| Date | [`NSDate`](https://developer.apple.com/documentation/foundation/nsdate) | [`TimeInterval`](https://developer.apple.com/documentation/foundation/timeinterval) | no |
+| Decimal | [`NSDecimalNumber`](https://developer.apple.com/documentation/foundation/nsdecimalnumber) | [`NSDecimalNumber`](https://developer.apple.com/documentation/foundation/nsdecimalnumber) | no |
+| UUID | [`NSUUID`](https://developer.apple.com/documentation/foundation/nsuuid) | [`NSUUID`](https://developer.apple.com/documentation/foundation/nsuuid) | no |
+| URI | [`NSURL`](https://developer.apple.com/documentation/foundation/nsurl) | — | — |
+| String | [`NSString`](https://developer.apple.com/documentation/foundation/nsstring) | — | — |
+| Binary data | [`NSData`](https://developer.apple.com/documentation/foundation/nsdata) | — | — |
+| Transformable | [`NSObject`](https://developer.apple.com/documentation/objectivec/nsobject-swift.class) | — | — |
 | Composite | — | — | — |
 | Undefined | — | — | — |
 
@@ -89,12 +89,12 @@ Core Data supports the following attribute types, which differentiate between bi
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../Swift/BitwiseCopyable.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [RawRepresentable](../Swift/RawRepresentable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [BitwiseCopyable](../swift/bitwisecopyable.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [RawRepresentable](../swift/rawrepresentable.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

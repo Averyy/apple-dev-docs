@@ -58,8 +58,8 @@ HKCategorySample *categorySample =
 
 - `type`: The category type for this sample. For a complete list, see [`HKCategoryTypeIdentifier`](hkcategorytypeidentifier.md).
 - `value`: The value for this sample. This value must come from the appropriate category value enumeration. Each category type uses its own enumeration. For more information, see [`HKCategoryTypeIdentifier`](hkcategorytypeidentifier.md).
-- `startDate`: The start date for the sample. This must be equal to or earlier than the end date; otherwise, this method throws an exception ([`invalidArgumentException`](https://developer.apple.com/documentation/Foundation/NSExceptionName/invalidArgumentException)).
-- `endDate`: The end date for the sample. This must be equal to or later than the start date; otherwise, this method throws an exception ([`invalidArgumentException`](https://developer.apple.com/documentation/Foundation/NSExceptionName/invalidArgumentException)).
+- `startDate`: The start date for the sample. This must be equal to or earlier than the end date; otherwise, this method throws an exception ([`invalidArgumentException`](https://developer.apple.com/documentation/foundation/nsexceptionname/invalidargumentexception)).
+- `endDate`: The end date for the sample. This must be equal to or later than the start date; otherwise, this method throws an exception ([`invalidArgumentException`](https://developer.apple.com/documentation/foundation/nsexceptionname/invalidargumentexception)).
 
 ## See Also
 

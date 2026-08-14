@@ -23,7 +23,7 @@ A pseudo-random 4D half-precision vector with components in the range [0.0, 1.0]
 
 This function generates a random 4D vector where each component is independently generated in the range [0.0, 1.0] using half-precision floating-point format and sequential seed values (seed, seed+1, seed+2, seed+3). The seed is not modified, allowing for reproducible random number generation.
 
-> **Note**: ![Graph](https://docs-assets.developer.apple.com/published/198367c4927f02dd87b1e0959020dcc6/random__half4_01_using.svg)
+> **Note**: ![Graph](/images/com.apple.computegraph/random__half4_01_using.svg)
 
 ## Parameters
 

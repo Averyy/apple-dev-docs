@@ -16,7 +16,7 @@ class AAUSBAccessory
 
 #### Discussion
 
-A USB accessory can either be obtained from the [`usbAccessoryDidConnect(_:)`](aausbaccessorylistener/usbaccessorydidconnect(_:).md) method, or instantiated from an [`XPC`](https://developer.apple.com/documentation/XPC) representation that describes an existing USB accessory.
+A USB accessory can either be obtained from the [`usbAccessoryDidConnect(_:)`](aausbaccessorylistener/usbaccessorydidconnect(_:).md) method, or instantiated from an [`XPC`](https://developer.apple.com/documentation/xpc) representation that describes an existing USB accessory.
 
 ## Topics
 
@@ -49,18 +49,18 @@ A USB accessory can either be obtained from the [`usbAccessoryDidConnect(_:)`](a
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCoding](../Foundation/NSCoding.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [NSSecureCoding](../Foundation/NSSecureCoding.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCoding](../foundation/nscoding.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

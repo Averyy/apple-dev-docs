@@ -27,7 +27,7 @@ static var defaultQuery: Self.DefaultQuery { get }
 
 #### Discussion
 
-You can create a query that uses identifier, name and more. For additional information, see [`Query`](https://developer.apple.com/documentation/SwiftData/Query).
+You can create a query that uses identifier, name and more. For additional information, see [`Query`](https://developer.apple.com/documentation/swiftdata/query).
 
 ## See Also
 

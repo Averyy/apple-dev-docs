@@ -20,7 +20,7 @@ var unobscuredContentRect: CGRect { get }
 
 #### Discussion
 
-Return a [`CGRect`](https://developer.apple.com/documentation/CoreFoundation/CGRect) instance configured in the coordinate space of [`textInputView`](betextinput/textinputview.md).
+Return a [`CGRect`](https://developer.apple.com/documentation/corefoundation/cgrect) instance configured in the coordinate space of [`textInputView`](betextinput/textinputview.md).
 
 ## See Also
 

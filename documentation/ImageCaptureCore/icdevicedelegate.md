@@ -48,7 +48,7 @@ Unless otherwise noted, all completion blocks execute on the calling thread.
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 ### Inherited By
 - [ICCameraDeviceDelegate](iccameradevicedelegate.md)
 - [ICScannerDeviceDelegate](icscannerdevicedelegate.md)

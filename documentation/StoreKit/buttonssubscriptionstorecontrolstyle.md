@@ -33,8 +33,8 @@ A subscription store control style that displays a subscribe button for each sub
 ## Relationships
 
 ### Conforms To
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 - [SubscriptionStoreControlStyle](subscriptionstorecontrolstyle.md)
 
 ## See Also

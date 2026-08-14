@@ -21,7 +21,7 @@ var currentPoint: CGPoint { get }
 
 #### Discussion
 
-The value in this property represents the starting point for new line and curve segments. If the path is currently empty, this property contains the value [`CGPointZero`](https://developer.apple.com/documentation/CoreGraphics/CGPointZero).
+The value in this property represents the starting point for new line and curve segments. If the path is currently empty, this property contains the value [`CGPointZero`](https://developer.apple.com/documentation/coregraphics/cgpointzero).
 
 ## See Also
 

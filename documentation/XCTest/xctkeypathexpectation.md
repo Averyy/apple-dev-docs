@@ -49,18 +49,18 @@ Use an instance of this class to asynchronously wait for changes to a property y
 ### Inherits From
 - [XCTestExpectation](xctestexpectation.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 
-- [Using Key-Value Observing in Swift](../Swift/using-key-value-observing-in-swift.md)
+- [Using Key-Value Observing in Swift](../swift/using-key-value-observing-in-swift.md)
   Notify objects about changes to the properties of other objects.
 - [class XCTKVOExpectation](xctkvoexpectation.md)
   An expectation that a specific key-value observing (KVO) condition fulfills.

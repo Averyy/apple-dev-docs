@@ -19,12 +19,12 @@ Take the following steps to support universal links:
 1. Create a two-way association between your app and your website and specify the URLs that your app handles, as described in [`Supporting associated domains`](supporting-associated-domains.md).
 2. Update your app delegate to respond to the user activity object the system provides when a universal link routes to your app, as described in [`Supporting universal links in your app`](supporting-universal-links-in-your-app.md).
 
-With universal links, users open your app when they click links to your website within their browser app and [`WKWebView`](https://developer.apple.com/documentation/WebKit/WKWebView), and when they click links that result in a call to:
+With universal links, users open your app when they click links to your website within their browser app and [`WKWebView`](https://developer.apple.com/documentation/webkit/wkwebview), and when they click links that result in a call to:
 
-- [`open(_:options:completionHandler:)`](https://developer.apple.com/documentation/UIKit/UIApplication/open(_:options:completionHandler:)) in iOS and tvOS
-- [`openSystemURL(_:)`](https://developer.apple.com/documentation/WatchKit/WKExtension/openSystemURL(_:)) in watchOS
-- [`open(_:withApplicationAt:configuration:completionHandler:)`](https://developer.apple.com/documentation/AppKit/NSWorkspace/open(_:withApplicationAt:configuration:completionHandler:)) in macOS
-- [`openURL`](https://developer.apple.com/documentation/SwiftUI/EnvironmentValues/openURL) in SwiftUI
+- [`open(_:options:completionHandler:)`](https://developer.apple.com/documentation/uikit/uiapplication/open(_:options:completionhandler:)) in iOS and tvOS
+- [`openSystemURL(_:)`](https://developer.apple.com/documentation/watchkit/wkextension/opensystemurl(_:)) in watchOS
+- [`open(_:withApplicationAt:configuration:completionHandler:)`](https://developer.apple.com/documentation/appkit/nsworkspace/open(_:withapplicationat:configuration:completionhandler:)) in macOS
+- [`openURL`](https://developer.apple.com/documentation/swiftui/environmentvalues/openurl) in SwiftUI
 
 > **Note**: If your app uses one of the above methods to open a universal link to your website, the link won’t open in your app.
 
@@ -43,10 +43,10 @@ https://myphotoapp.example.com/albums?albumname=wedding&index=17
 
 Other apps craft URLs based on your domain, path, and parameters and ask your app to open them by calling:
 
-- The [`open(_:options:completionHandler:)`](https://developer.apple.com/documentation/UIKit/UIApplication/open(_:options:completionHandler:)) method of [`UIApplication`](https://developer.apple.com/documentation/UIKit/UIApplication) in iOS and tvOS
-- The [`openSystemURL(_:)`](https://developer.apple.com/documentation/WatchKit/WKExtension/openSystemURL(_:)) method of [`WKExtension`](https://developer.apple.com/documentation/WatchKit/WKExtension) in watchOS
-- The [`open(_:withApplicationAt:configuration:completionHandler:)`](https://developer.apple.com/documentation/AppKit/NSWorkspace/open(_:withApplicationAt:configuration:completionHandler:)) method of [`NSWorkspace`](https://developer.apple.com/documentation/AppKit/NSWorkspace) in macOS
-- The [`openURL`](https://developer.apple.com/documentation/SwiftUI/EnvironmentValues/openURL) environment value in SwiftUI
+- The [`open(_:options:completionHandler:)`](https://developer.apple.com/documentation/uikit/uiapplication/open(_:options:completionhandler:)) method of [`UIApplication`](https://developer.apple.com/documentation/uikit/uiapplication) in iOS and tvOS
+- The [`openSystemURL(_:)`](https://developer.apple.com/documentation/watchkit/wkextension/opensystemurl(_:)) method of [`WKExtension`](https://developer.apple.com/documentation/watchkit/wkextension) in watchOS
+- The [`open(_:withApplicationAt:configuration:completionHandler:)`](https://developer.apple.com/documentation/appkit/nsworkspace/open(_:withapplicationat:configuration:completionhandler:)) method of [`NSWorkspace`](https://developer.apple.com/documentation/appkit/nsworkspace) in macOS
+- The [`openURL`](https://developer.apple.com/documentation/swiftui/environmentvalues/openurl) environment value in SwiftUI
 
 The calling app can ask the system to inform it when your app opens the URL.
 

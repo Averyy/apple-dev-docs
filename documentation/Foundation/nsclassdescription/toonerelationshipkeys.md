@@ -23,7 +23,7 @@ An array of `NSString` objects containing the names of the to-one relationship p
 
 To-one relationship properties are single objects.
 
-If you have an instance of the class the receiver describes, you can use the `NSObject` instance method [`toOneRelationshipKeys`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class/toOneRelationshipKeys) instead.
+If you have an instance of the class the receiver describes, you can use the `NSObject` instance method [`toOneRelationshipKeys`](https://developer.apple.com/documentation/objectivec/nsobject-swift.class/toonerelationshipkeys) instead.
 
 ## See Also
 

@@ -26,7 +26,7 @@ You should not assume that the completion handler will be called on a specific t
 ## Parameters
 
 - `connection`: The connection from which to capture the image.
-- `handler`: A block to invoke after the image has been captured. The block parameters are as follows: - **imageDataSampleBuffer**: The data that was captured. The buffer attachments may contain metadata appropriate to the image data format. For example, a buffer containing JPEG data may carry a [`kCGImagePropertyExifDictionary`](https://developer.apple.com/documentation/ImageIO/kCGImagePropertyExifDictionary) as an attachment. See ImageIO/CGImageProperties.h for a list of keys and value types. - **error**: If the request could not be completed, an `NSError` object that describes the problem; otherwise `nil`.
+- `handler`: A block to invoke after the image has been captured. The block parameters are as follows: - **imageDataSampleBuffer**: The data that was captured. The buffer attachments may contain metadata appropriate to the image data format. For example, a buffer containing JPEG data may carry a [`kCGImagePropertyExifDictionary`](https://developer.apple.com/documentation/imageio/kcgimagepropertyexifdictionary) as an attachment. See ImageIO/CGImageProperties.h for a list of keys and value types. - **error**: If the request could not be completed, an `NSError` object that describes the problem; otherwise `nil`.
 
 ## See Also
 

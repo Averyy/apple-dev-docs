@@ -23,7 +23,7 @@ The transformed 3D direction vector.
 
 Multiplies the vector by the matrix with a `w` component of `0.0`, so only rotation and scale are applied. This is appropriate for normals, tangents, and other direction vectors that should not be affected by the matrix’s translational component.
 
-> **Note**: ![Graph](https://docs-assets.developer.apple.com/published/a0961fc84ad0bbe519078eecc812da50/matrix4x4h__transformDirection.svg)
+> **Note**: ![Graph](/images/com.apple.computegraph/matrix4x4h__transformDirection.svg)
 
 ## Parameters
 

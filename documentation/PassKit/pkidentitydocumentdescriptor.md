@@ -44,7 +44,7 @@ A descriptor object describes the type of document that your app can request or 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 ### Conforming Types
 - [PKIdentityAnyOfDescriptor](pkidentityanyofdescriptor.md)
 - [PKIdentityDriversLicenseDescriptor](pkidentitydriverslicensedescriptor.md)

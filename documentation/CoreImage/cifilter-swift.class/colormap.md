@@ -43,7 +43,7 @@ func colorMap(inputImage: CIImage, gradientImage: CIImage) -> CIImage {
 }
 ```
 
-![One photograph on the left above a gradient image, and a second photograph on the right. The photograph on the top left shows a single flower photographed closeup, in focus, with good light and no effects. The image below is a gradient image displaying a gradual color shift from lime green to orange. The photo on the right shows the same pink flower picture with a color map filter applied. The photograph displays the colors of the gradient photo, with the brightness and contrast of the flower photo.](https://docs-assets.developer.apple.com/published/2e049dab1dd7489ec876eb32fd82cff5/media-3558775%402x.png)
+![One photograph on the left above a gradient image, and a second photograph on the right. The photograph on the top left shows a single flower photographed closeup, in focus, with good light and no effects. The image below is a gradient image displaying a gradual color shift from lime green to orange. The photo on the right shows the same pink flower picture with a color map filter applied. The photograph displays the colors of the gradient photo, with the brightness and contrast of the flower photo.](/images/com.apple.coreimage/media-3558775@2x.png)
 
 ## See Also
 

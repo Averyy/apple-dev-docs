@@ -54,7 +54,7 @@ This function allocates memory for its own use. You must call the [`vDSP_biquadm
 
 ## Parameters
 
-- `__Coefficients`: The input array that contains the double-precision filter coefficients. The number of elements in the coefficients array must be  .
+- `__Coefficients`: The input array that contains the double-precision filter coefficients. The number of elements in the coefficients array must be `5 * __M * __N`.
 - `__M`: The number of sections in the biquad filter.
 - `__N  `: The number of input-output channels.
 

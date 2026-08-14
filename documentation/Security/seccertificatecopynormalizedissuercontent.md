@@ -16,7 +16,7 @@ func SecCertificateCopyNormalizedIssuerContent(_ certificate: SecCertificate, _ 
 
 #### Return Value
 
-A data object containing a DER-encoded X.509 distinguished name suitable for use with [`SecItemCopyMatching(_:_:)`](secitemcopymatching(_:_:).md). Returns `NULL` if an error occurred. In Objective-C, free the object with a call to the [`CFRelease`](https://developer.apple.com/documentation/CoreFoundation/CFRelease) function when you are done with it.
+A data object containing a DER-encoded X.509 distinguished name suitable for use with [`SecItemCopyMatching(_:_:)`](secitemcopymatching(_:_:).md). Returns `NULL` if an error occurred. In Objective-C, free the object with a call to the [`CFRelease`](https://developer.apple.com/documentation/corefoundation/cfrelease) function when you are done with it.
 
 #### Discussion
 
@@ -25,7 +25,7 @@ To obtain a copy of the issuer’s distinguished name in a format suitable for d
 ## Parameters
 
 - `certificate`: The certificate from which the issuer’s distinguished name should be copied.
-- `error`: A pointer to a [`CFError`](https://developer.apple.com/documentation/CoreFoundation/CFError) variable where an error object is stored upon failure. If not `NULL`, the caller is responsible for checking this variable and releasing the resulting object if it exists.
+- `error`: A pointer to a [`CFError`](https://developer.apple.com/documentation/corefoundation/cferror) variable where an error object is stored upon failure. If not `NULL`, the caller is responsible for checking this variable and releasing the resulting object if it exists.
 
 
 ---

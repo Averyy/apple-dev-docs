@@ -7,7 +7,6 @@ Fallback URL to use when unable to perform operation.
 
 **Availability**:
 - iOS 26.0+
-- iPadOS 26.0+
 
 ## Declaration
 

@@ -24,8 +24,8 @@ Thread safe starting in OS X v10.2.
 
 ## Parameters
 
-- `theAEDescList`: A pointer to the descriptor list containing the descriptor to delete. See  .
-- `index`: A one-based positive integer indicating the position of the descriptor to delete.   returns an error if you pass zero, a negative number, or a value that is out of range.
+- `theAEDescList`: A pointer to the descriptor list containing the descriptor to delete. See [`AEDescList`](aedesclist.md).
+- `index`: A one-based positive integer indicating the position of the descriptor to delete. `AEDeleteItem` returns an error if you pass zero, a negative number, or a value that is out of range.
 
 ## See Also
 

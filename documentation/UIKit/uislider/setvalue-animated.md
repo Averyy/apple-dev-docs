@@ -24,7 +24,7 @@ If you specify a value that is beyond the minimum or maximum values, the slider 
 ## Parameters
 
 - `value`: The new value to assign to the [`value`](uislider/value.md) property
-- `animated`: Specify [`true`](https://developer.apple.com/documentation/Swift/true) to animate the change in value; otherwise, specify [`false`](https://developer.apple.com/documentation/Swift/false) to update the slider’s appearance immediately. Animations are performed asynchronously and do not block the calling thread.
+- `animated`: Specify [`true`](https://developer.apple.com/documentation/swift/true) to animate the change in value; otherwise, specify [`false`](https://developer.apple.com/documentation/swift/false) to update the slider’s appearance immediately. Animations are performed asynchronously and do not block the calling thread.
 
 ## See Also
 

@@ -85,8 +85,8 @@ Avoid registering data with the `UTType.data` content type. Instead, choose a co
 ## Relationships
 
 ### Conforms To
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 - [TransferRepresentation](transferrepresentation.md)
 
 ## See Also

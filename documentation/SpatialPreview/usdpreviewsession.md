@@ -21,7 +21,7 @@ final class USDPreviewSession
 
 #### Overview
 
-To create a `USDPreviewSession`, initialize one with a [`USDStage`](https://developer.apple.com/documentation/USDKit/USDStage) from [`USDKit`](https://developer.apple.com/documentation/USDKit):
+To create a `USDPreviewSession`, initialize one with a [`USDStage`](https://developer.apple.com/documentation/usdkit/usdstage) from [`USDKit`](https://developer.apple.com/documentation/usdkit):
 
 ```swift
 let observer = ConnectedSpatialEndpointObserver()
@@ -34,7 +34,7 @@ let endpoint = try await observer.endpoint
 try await session.start(endpoint: endpoint)
 ```
 
-After [`start(endpoint:parameters:viewerOptions:)`](usdpreviewsession/start(endpoint:parameters:vieweroptions:).md) returns, the session’s `state` transitions to [`SpatialPreviewSessionState.connected`](spatialpreviewsessionstate/connected.md) and the device starts loading the USD content. Then use [`USDKit`](https://developer.apple.com/documentation/USDKit) to make edits to the [`USDStage`](https://developer.apple.com/documentation/USDKit/USDStage) to update the content. Changes on visionOS are automatically synchronized back to [`USDKit`](https://developer.apple.com/documentation/USDKit) in your macOS app.
+After [`start(endpoint:parameters:viewerOptions:)`](usdpreviewsession/start(endpoint:parameters:vieweroptions:).md) returns, the session’s `state` transitions to [`SpatialPreviewSessionState.connected`](spatialpreviewsessionstate/connected.md) and the device starts loading the USD content. Then use [`USDKit`](https://developer.apple.com/documentation/usdkit) to make edits to the [`USDStage`](https://developer.apple.com/documentation/usdkit/usdstage) to update the content. Changes on visionOS are automatically synchronized back to [`USDKit`](https://developer.apple.com/documentation/usdkit) in your macOS app.
 
 ## Topics
 
@@ -70,11 +70,11 @@ After [`start(endpoint:parameters:viewerOptions:)`](usdpreviewsession/start(endp
 ## Relationships
 
 ### Conforms To
-- [Copyable](../Swift/Copyable.md)
-- [Escapable](../Swift/Escapable.md)
-- [Observable](../Observation/Observable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Copyable](../swift/copyable.md)
+- [Escapable](../swift/escapable.md)
+- [Observable](../observation/observable.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 - [SpatialPreviewSession](spatialpreviewsession.md)
 
 ## See Also

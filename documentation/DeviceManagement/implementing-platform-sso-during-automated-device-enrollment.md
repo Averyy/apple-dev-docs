@@ -27,7 +27,7 @@ The complete set of steps for the Platform SSO during enrollment flow are:
 5. The device posts another `MACHINEINFO` request and includes the authorization token. If authorization is successful, the device management service returns the enrollment profile.
 6. The device enrolls and creates a local user account based on information from the identity provider.
 
-![A diagram showing the 6 steps to use Platform SSO during Automated Device Enrollment](https://docs-assets.developer.apple.com/published/82aacf25315f1c7ab2ab77ba1fd5848c/implementing-platform-sso-during-automated-device-enrollment%402x.png)
+![A diagram showing the 6 steps to use Platform SSO during Automated Device Enrollment](/images/com.apple.devicemanagement/implementing-platform-sso-during-automated-device-enrollment@2x.png)
 
 The following sections describe the details of each step.
 
@@ -148,9 +148,9 @@ If the Platform SSO extension requires it, combine the following payloads in the
 
 #### Authenticate the User
 
-In step 4, the device creates an [`ASWebAuthenticationSession`](https://developer.apple.com/documentation/AuthenticationServices/ASWebAuthenticationSession) using `AuthURL` and a callback scheme that is set to `apple-remotemanagement-user-login`. This starts an authentication flow with the organization’s identity provider.
+In step 4, the device creates an [`ASWebAuthenticationSession`](https://developer.apple.com/documentation/authenticationservices/aswebauthenticationsession) using `AuthURL` and a callback scheme that is set to `apple-remotemanagement-user-login`. This starts an authentication flow with the organization’s identity provider.
 
-The [`ASWebAuthenticationSession`](https://developer.apple.com/documentation/AuthenticationServices/ASWebAuthenticationSession) performs an HTTPS GET request for the `AuthURL` and presents the resulting HTML data to the user in a web view for sign-in. The sign-in page can contain a form with text entry fields for a user ID and password, OK and Cancel buttons, optional terms and conditions, optional branding, and so on.
+The [`ASWebAuthenticationSession`](https://developer.apple.com/documentation/authenticationservices/aswebauthenticationsession) performs an HTTPS GET request for the `AuthURL` and presents the resulting HTML data to the user in a web view for sign-in. The sign-in page can contain a form with text entry fields for a user ID and password, OK and Cancel buttons, optional terms and conditions, optional branding, and so on.
 
 The user can opt to cancel out of the web view at any time, which terminates the authentication flow and the enrollment.
 
@@ -172,7 +172,7 @@ Content-Length: 17643
 </html>
 ```
 
-The [`ASWebAuthenticationSession`](https://developer.apple.com/documentation/AuthenticationServices/ASWebAuthenticationSession) web flow completes when the device management service returns an HTTP `308` permanent redirect response to the device, with a `Location` header that the service sets to a URL with a scheme of `apple-remotemanagement-user-login` (the authentication session callback URL scheme). The service sets the network location component of the URL to `authentication-results`.
+The [`ASWebAuthenticationSession`](https://developer.apple.com/documentation/authenticationservices/aswebauthenticationsession) web flow completes when the device management service returns an HTTP `308` permanent redirect response to the device, with a `Location` header that the service sets to a URL with a scheme of `apple-remotemanagement-user-login` (the authentication session callback URL scheme). The service sets the network location component of the URL to `authentication-results`.
 
 It includes an `access-token` query item in the URL and sets its value to the identity provider authorization token. The identity provider controls the format of the authorization token, so the device treats it as an opaque token.
 

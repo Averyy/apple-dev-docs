@@ -56,7 +56,7 @@ Create dynamic materials without Metal.
 ## Topics
 
 ### Shader Graph fundamentals
-- [Reality Composer Pro](../RealityComposerPro/RealityComposerPro.md)
+- [Reality Composer Pro](../realitycomposerpro/realitycomposerpro.md)
   Build, design, and orchestrate 3D content for your RealityKit apps.
 - [protocol Material](material.md)
   A type that describes the material aspects of a mesh, like color and texture.
@@ -104,14 +104,14 @@ Create dynamic materials without Metal.
 
 ### Conforms To
 - [Material](material.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 
-- [Implementing adjustable material](../visionOS/implementing-adjustable-material-in-visionos.md)
+- [Implementing adjustable material](../visionos/implementing-adjustable-material-in-visionos.md)
   Update the adjustable parameters of a 3D model in visionOS.
-- [Displaying a stereoscopic image](../visionOS/displaying-a-stereoscopic-image-in-visionos.md)
+- [Displaying a stereoscopic image](../visionos/displaying-a-stereoscopic-image-in-visionos.md)
   Build a stereoscopic image by applying textures to the left and right eye in a shader graph material.
 - [ShaderGraphMaterial.FaceCulling](shadergraphmaterial/faceculling-swift.typealias.md)
   An alias for the cull mode object that’s appropriate for this material class.

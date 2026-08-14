@@ -27,7 +27,7 @@ At launch time, the application object retrieves the restoration class and uses 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 ### Conforming Types
 - [NSDocumentController](nsdocumentcontroller.md)
 

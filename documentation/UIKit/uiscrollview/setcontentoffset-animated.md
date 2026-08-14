@@ -21,7 +21,7 @@ func setContentOffset(_ contentOffset: CGPoint, animated: Bool)
 ## Parameters
 
 - `contentOffset`: A point (expressed in points) that’s offset from the content view’s origin.
-- `animated`: [`true`](https://developer.apple.com/documentation/Swift/true) to animate the transition at a constant velocity to the new offset, [`false`](https://developer.apple.com/documentation/Swift/false) to make the transition immediate.
+- `animated`: [`true`](https://developer.apple.com/documentation/swift/true) to animate the transition at a constant velocity to the new offset, [`false`](https://developer.apple.com/documentation/swift/false) to make the transition immediate.
 
 ## See Also
 

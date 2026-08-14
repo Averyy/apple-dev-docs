@@ -21,11 +21,11 @@ var isUITextureComposited: Bool { get set }
 
 #### Discussion
 
-Set this property to [`true`](https://developer.apple.com/documentation/Swift/true) when property [`uiTexture`](mtlfxframeinterpolatorbase/uitexture.md) contains a precomposition of any custom UI image on top of the color image.
+Set this property to [`true`](https://developer.apple.com/documentation/swift/true) when property [`uiTexture`](mtlfxframeinterpolatorbase/uitexture.md) contains a precomposition of any custom UI image on top of the color image.
 
 When you enable this property, the frame interpolator decomposites the color image [`colorTexture`](mtlfxframeinterpolatorbase/colortexture.md) references from the UI [`uiTexture`](mtlfxframeinterpolatorbase/uitexture.md) references before compositing the UI on to the [`outputTexture`](mtlfxframeinterpolatorbase/outputtexture.md).
 
-This property’s default value is [`false`](https://developer.apple.com/documentation/Swift/false).
+This property’s default value is [`false`](https://developer.apple.com/documentation/swift/false).
 
 
 ---

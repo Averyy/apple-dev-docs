@@ -21,7 +21,7 @@ var isDepthReversed: Bool { get set }
 
 #### Discussion
 
-This property’s default value is [`true`](https://developer.apple.com/documentation/Swift/true).
+This property’s default value is [`true`](https://developer.apple.com/documentation/swift/true).
 
 
 ---

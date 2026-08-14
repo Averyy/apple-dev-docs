@@ -21,7 +21,7 @@ static let symbolic: UIFontDescriptor.TraitKey
 
 #### Discussion
 
-Use this key with a trait dictionary to get the symbolic traits value as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) object.
+Use this key with a trait dictionary to get the symbolic traits value as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) object.
 
 ## See Also
 

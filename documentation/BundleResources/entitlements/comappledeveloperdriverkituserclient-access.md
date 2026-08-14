@@ -14,7 +14,7 @@ An array of strings that represent macOS driver extensions that may communicate 
 
 #### Discussion
 
-Add this entitlement to your app that opens the [`IOUserClient`](https://developer.apple.com/documentation/DriverKit/IOUserClient). Set its value to an array of bundle IDs of driver extensions that you want to use with DriverKit. If you have only one bundle ID, you can use either a single string or a one-element array.
+Add this entitlement to your app that opens the [`IOUserClient`](https://developer.apple.com/documentation/driverkit/iouserclient). Set its value to an array of bundle IDs of driver extensions that you want to use with DriverKit. If you have only one bundle ID, you can use either a single string or a one-element array.
 
 On iPadOS, use the [`Communicates with Drivers`](entitlements/com.apple.developer.driverkit.communicates-with-drivers.md) entitlement instead.
 

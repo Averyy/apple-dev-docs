@@ -6,7 +6,7 @@ Learn about important changes in SiriKit.
 
 #### Overview
 
-Browse notable changes in [`SiriKit`](https://developer.apple.com/documentation/SiriKit).
+Browse notable changes in [`SiriKit`](https://developer.apple.com/documentation/sirikit).
 
 #### June 2024
 

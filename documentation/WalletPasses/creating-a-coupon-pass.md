@@ -8,7 +8,7 @@ Construct a digital pass for discounts and special offers.
 
 Use coupon passes for coupons, special offers, and other discounts. Setting the coupon pass style provides data that Wallet displays automatically, such as business information, offer expiration date, terms and conditions, store locations, and other helpful information.
 
-![An illustration showing a mock coupon pass for a food truck with a strip image.](https://docs-assets.developer.apple.com/published/09d4b8e7097062a4b614a0da94c5d000/coupon%402x.png)
+![An illustration showing a mock coupon pass for a food truck with a strip image.](/images/com.apple.walletpasses/coupon@2x.png)
 
 #### Create Your Pass Type Identifier
 
@@ -40,7 +40,7 @@ The following example shows a partial pass with top-level keys for a coupon pass
 
 The pass style controls how Wallet lays out the pass fields and which images it shows on someone’s device. The following image shows a layout and placement of fields for the coupon pass style.
 
-![An illustration showing a coupon pass layout with the pass fields for each section of the pass.](https://docs-assets.developer.apple.com/published/52ddae96bb78f680b7f634d2e269d1c4/pass-fields-layout-coupon%402x.png)
+![An illustration showing a coupon pass layout with the pass fields for each section of the pass.](/images/com.apple.walletpasses/pass-fields-layout-coupon@2x.png)
 
 The pass style determines the maximum number of pass fields that can appear on the front of a pass. A coupon can have up to three header fields, a single primary field, and up to four secondary and auxiliary fields combined. The text length in each pass field determines how many fields appear on the front of the pass. If text is too long, Wallet won’t display all of it. Space on the front of the pass is limited as well. You can use the primary pass field for a strip image that creates a banner across the pass, or for important business information. Use the secondary and auxiliary fields for information like expiration dates, store locations, and contact information.
 
@@ -127,7 +127,7 @@ For design guidance about coupon passes, see Human Interface Guidelines > Wallet
 
 If the pass doesn’t display and add to Wallet, check the logs for a description of what went wrong. If you’re using Simulator to debug, you can drag your `.pkpass` file into the Simulator, then use the Console app on your Mac to view the Simulator device logs.
 
-When testing on a device, errors are logged to the device’s console, which you can view from the Xcode organizer window. You can filter the logs by using your pass type ID or serial number to limit the device log output to a specific pass instance. See [`Acquiring crash reports and diagnostic logs`](https://developer.apple.com/documentation/Xcode/acquiring-crash-reports-and-diagnostic-logs#Access-device-console-logs) for information on accessing a device’s console log, as well as downloading and installing the Wallet profile.
+When testing on a device, errors are logged to the device’s console, which you can view from the Xcode organizer window. You can filter the logs by using your pass type ID or serial number to limit the device log output to a specific pass instance. See [`Acquiring crash reports and diagnostic logs`](https://developer.apple.com/documentation/xcode/acquiring-crash-reports-and-diagnostic-logs) for information on accessing a device’s console log, as well as downloading and installing the Wallet profile.
 
 Common errors include malformed JSON files, misspelled keys or values, pass type identifiers that don’t match your certificate, and signatures that omit the Apple Worldwide Developer Relations Intermediate Certificate. For more information on common issues with pass creation, see [`Common Problems`](building-a-pass#Common-Problems.md).
 

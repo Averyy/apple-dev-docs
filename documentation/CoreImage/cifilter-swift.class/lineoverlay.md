@@ -30,11 +30,11 @@ This method applies the line overlay filter to an image. The effect creats a ske
 The line overlay filter uses the following properties:
 
 - **`inputImage`**: An image with the type [`CIImage`](ciimage.md).
-- **`nrNoiseLevel`**: A `float` representing the desired level of noise as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
-- **`nrSharpness`**: A `float` representing the desired level of sharpness as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
-- **`edgeIntensity`**: A `float` representing the Sobel gradient information for edge tracing as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
-- **`threshold`**: A `float` representing the threshold of edge visibilty as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
-- **`contrast`**: A `float` representing the desired contrast as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+- **`nrNoiseLevel`**: A `float` representing the desired level of noise as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
+- **`nrSharpness`**: A `float` representing the desired level of sharpness as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
+- **`edgeIntensity`**: A `float` representing the Sobel gradient information for edge tracing as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
+- **`threshold`**: A `float` representing the threshold of edge visibilty as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
+- **`contrast`**: A `float` representing the desired contrast as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
 
 The following code creates a filter that results in a monochrome image with lines outlining the edges of objects:
 
@@ -51,7 +51,7 @@ func lineOverlay(inputImage: CIImage) -> CIImage {
 }
 ```
 
-![Two pictures of a pink flower surrounded by foliage. The photo on the left shows a single flower photographed close up, in focus, with good light and no effects. In the photo on the right, the line overlay filter is applied, resulting in a monochrome image with the edges of objects outlined in black.](https://docs-assets.developer.apple.com/published/9cb4c50cc5617b43f44000076aea76b0/media-3600001%402x.png)
+![Two pictures of a pink flower surrounded by foliage. The photo on the left shows a single flower photographed close up, in focus, with good light and no effects. In the photo on the right, the line overlay filter is applied, resulting in a monochrome image with the edges of objects outlined in black.](/images/com.apple.coreimage/media-3600001@2x.png)
 
 ## See Also
 

@@ -10,7 +10,7 @@ To make requests to the Apple Music API, you need to authorize yourself as a tru
 
 There are two paths to generate developer tokens:
 
-- If you’re developing an app for Apple platforms (iOS, tvOS, watchOS or macOS), the recommended way to integrate with Apple Music is to use [`MusicKit`](https://developer.apple.com/documentation/MusicKit) for Swift, following the steps provided in [`Using Automatic Developer Token Generation for Apple Music API`](https://developer.apple.com/documentation/MusicKit/Using-Automatic-Token-Generation-for-Apple-Music-API).
+- If you’re developing an app for Apple platforms (iOS, tvOS, watchOS or macOS), the recommended way to integrate with Apple Music is to use [`MusicKit`](https://developer.apple.com/documentation/musickit) for Swift, following the steps provided in [`Using Automatic Developer Token Generation for Apple Music API`](https://developer.apple.com/documentation/musickit/using-automatic-token-generation-for-apple-music-api).
 - Follow the directions below to create and manage developer tokens for other platforms.
 
 ##### Create a Developer Token

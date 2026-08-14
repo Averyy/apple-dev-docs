@@ -19,7 +19,7 @@ class let statusBarFrameUserInfoKey: String
 
 #### Discussion
 
-The key’s value is an [`NSValue`](https://developer.apple.com/documentation/Foundation/NSValue) object that encapsulates a [`CGRect`](https://developer.apple.com/documentation/CoreFoundation/CGRect) structure expressing the location and size of the new status bar frame. This key is used with [`didChangeStatusBarFrameNotification`](uiapplication/didchangestatusbarframenotification.md) and [`willChangeStatusBarFrameNotification`](uiapplication/willchangestatusbarframenotification.md) notifications.
+The key’s value is an [`NSValue`](https://developer.apple.com/documentation/foundation/nsvalue) object that encapsulates a [`CGRect`](https://developer.apple.com/documentation/corefoundation/cgrect) structure expressing the location and size of the new status bar frame. This key is used with [`didChangeStatusBarFrameNotification`](uiapplication/didchangestatusbarframenotification.md) and [`willChangeStatusBarFrameNotification`](uiapplication/willchangestatusbarframenotification.md) notifications.
 
 ## See Also
 

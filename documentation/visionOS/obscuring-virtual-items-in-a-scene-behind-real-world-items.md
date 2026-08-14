@@ -10,11 +10,11 @@ Increase the realism of an immersive experience by adding entities with invisibl
 
 #### Overview
 
-You can create layered effects using an [`OcclusionMaterial`](https://developer.apple.com/documentation/RealityKit/OcclusionMaterial), which is an invisible material that hides objects that render behind it. This sample project demonstrates how to hide entities behind real-world objects with [`ARKit`](https://developer.apple.com/documentation/ARKit) by gathering live data about a person’s surroundings and applyng the `OcclusionMaterial` to them.
+You can create layered effects using an [`OcclusionMaterial`](https://developer.apple.com/documentation/realitykit/occlusionmaterial), which is an invisible material that hides objects that render behind it. This sample project demonstrates how to hide entities behind real-world objects with [`ARKit`](https://developer.apple.com/documentation/arkit) by gathering live data about a person’s surroundings and applyng the `OcclusionMaterial` to them.
 
 ##### Capture the Anchors From the Scene
 
-The sample uses the `MeshAnchorGenerator` class to retrieve anchor information from [`SceneReconstructionProvider`](https://developer.apple.com/documentation/ARKit/SceneReconstructionProvider). In the following code snippet, the generator takes in the root entity from the reality view to perform actions on the entities and create a dictionary to store the collection of anchors:
+The sample uses the `MeshAnchorGenerator` class to retrieve anchor information from [`SceneReconstructionProvider`](https://developer.apple.com/documentation/arkit/scenereconstructionprovider). In the following code snippet, the generator takes in the root entity from the reality view to perform actions on the entities and create a dictionary to store the collection of anchors:
 
 ```swift
 import SwiftUI
@@ -36,7 +36,7 @@ class MeshAnchorGenerator {
 }
 ```
 
-The `run(_:)` method processes all anchor updates asynchronously from the [`SceneReconstructionProvider`](https://developer.apple.com/documentation/ARKit/SceneReconstructionProvider). When an anchor detects either an `.added` or an `.updated` event, it creates a new entity if one isn’t already present, and it updates its mesh, material, and transform properties:
+The `run(_:)` method processes all anchor updates asynchronously from the [`SceneReconstructionProvider`](https://developer.apple.com/documentation/arkit/scenereconstructionprovider). When an anchor detects either an `.added` or an `.updated` event, it creates a new entity if one isn’t already present, and it updates its mesh, material, and transform properties:
 
 ```swift
 @MainActor
@@ -100,7 +100,7 @@ func run(_ sceneRec: SceneReconstructionProvider) async {
 
 ##### Start Scene Reconstruction
 
-To track the anchors, the app starts an ARKit session. It uses `runSession(_:)` to initiate the [`ARKitSession`](https://developer.apple.com/documentation/ARKit/ARKitSession) with [`SceneReconstructionProvider`](https://developer.apple.com/documentation/ARKit/SceneReconstructionProvider), to perform scene reconstruction:
+To track the anchors, the app starts an ARKit session. It uses `runSession(_:)` to initiate the [`ARKitSession`](https://developer.apple.com/documentation/arkit/arkitsession) with [`SceneReconstructionProvider`](https://developer.apple.com/documentation/arkit/scenereconstructionprovider), to perform scene reconstruction:
 
 ```swift
 import RealityKit
@@ -219,7 +219,7 @@ struct WorldOcclusionView: View {
 }
 ```
 
-Finally, the app creates a chair model and sets the chair to accept user input with [`InputTargetComponent`](https://developer.apple.com/documentation/RealityKit/InputTargetComponent). Then it sets the chair with `TargetModelComponent`, enabling the chair to work with `translationGesture`. The app then adds the chair model to the reality view.
+Finally, the app creates a chair model and sets the chair to accept user input with [`InputTargetComponent`](https://developer.apple.com/documentation/realitykit/inputtargetcomponent). Then it sets the chair with `TargetModelComponent`, enabling the chair to work with `translationGesture`. The app then adds the chair model to the reality view.
 
 ## See Also
 

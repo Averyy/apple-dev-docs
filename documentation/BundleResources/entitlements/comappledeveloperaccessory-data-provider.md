@@ -15,11 +15,11 @@ An entitlement that enables your app extension to receive data for an accessory.
 
 #### Discussion
 
-If your app implements [`AccessoryDataProvider`](https://developer.apple.com/documentation/AccessoryTransportExtension/AccessoryDataProvider) in an app extension, the framework requires the extension to have this entitlement with a value of `true` in its signature.
+If your app implements [`AccessoryDataProvider`](https://developer.apple.com/documentation/accessorytransportextension/accessorydataprovider) in an app extension, the framework requires the extension to have this entitlement with a value of `true` in its signature.
 
-For more information, see [`Receiving iOS notifications on an accessory`](https://developer.apple.com/documentation/AccessoryTransportExtension/receiving-ios-notifications-on-an-accessory).
+For more information, see [`Receiving iOS notifications on an accessory`](https://developer.apple.com/documentation/accessorytransportextension/receiving-ios-notifications-on-an-accessory).
 
-For information on adding entitlements to your app, see [`Adding capabilities to your app`](https://developer.apple.com/documentation/Xcode/adding-capabilities-to-your-app).
+For information on adding entitlements to your app, see [`Adding capabilities to your app`](https://developer.apple.com/documentation/xcode/adding-capabilities-to-your-app).
 
 ## See Also
 

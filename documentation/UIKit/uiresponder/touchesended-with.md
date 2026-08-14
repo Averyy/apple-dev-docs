@@ -47,7 +47,7 @@ If you override this method without calling super (a common use pattern), you mu
 
 ## Parameters
 
-- `touches`: A set of [`UITouch`](uitouch.md) instances that represent the touches for the ending phase of the event represented by `event`. For touches in a view, this set contains only one touch by default. To receive multiple touches, you must set the view’s [`isMultipleTouchEnabled`](uiview/ismultipletouchenabled.md) property to [`true`](https://developer.apple.com/documentation/Swift/true).
+- `touches`: A set of [`UITouch`](uitouch.md) instances that represent the touches for the ending phase of the event represented by `event`. For touches in a view, this set contains only one touch by default. To receive multiple touches, you must set the view’s [`isMultipleTouchEnabled`](uiview/ismultipletouchenabled.md) property to [`true`](https://developer.apple.com/documentation/swift/true).
 - `event`: The event to which the touches belong.
 
 ## See Also

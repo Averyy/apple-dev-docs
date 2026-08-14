@@ -41,7 +41,7 @@ func photoEffectTonal(inputImage: CIImage ) -> CIImage {
 }
 ```
 
-![Two pictures of a pink flower surrounded by foliage. The photo on the left shows a single flower photographed close-up, in focus, with good light and no effects. In the photo on the right, a photo effect tonal filter is applied, transforming the colors in the image to monochrome.](https://docs-assets.developer.apple.com/published/79da51d3aab1b67fb68ef70c87b56195/media-3545036%402x.png)
+![Two pictures of a pink flower surrounded by foliage. The photo on the left shows a single flower photographed close-up, in focus, with good light and no effects. In the photo on the right, a photo effect tonal filter is applied, transforming the colors in the image to monochrome.](/images/com.apple.coreimage/media-3545036@2x.png)
 
 ## See Also
 

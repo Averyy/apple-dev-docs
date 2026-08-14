@@ -21,7 +21,7 @@ struct Contact
 
 #### Overview
 
-To subscribe to a collision event, import Combine, create a property of type [`Cancellable`](https://developer.apple.com/documentation/Combine/Cancellable) so that you maintain a reference to the subscription, then call [`subscribe(to:on:_:)`](scene/subscribe(to:on:_:).md) or [`subscribe(to:on:componentType:_:)`](scene/subscribe(to:on:componenttype:_:).md) and provide a closure.
+To subscribe to a collision event, import Combine, create a property of type [`Cancellable`](https://developer.apple.com/documentation/combine/cancellable) so that you maintain a reference to the subscription, then call [`subscribe(to:on:_:)`](scene/subscribe(to:on:_:).md) or [`subscribe(to:on:componentType:_:)`](scene/subscribe(to:on:componenttype:_:).md) and provide a closure.
 
 The closure is passed an `RealityKit/Scene/Event` object that contains information relevant to the type of event you subscribed to.
 
@@ -54,7 +54,7 @@ Here’s an example of subscribing to the collision begain event and retrieving 
  }
 ```
 
-You can also create a function to respond to the event rather than a closure by using [`sink(receiveCompletion:receiveValue:)`](https://developer.apple.com/documentation/Combine/Publisher/sink(receiveCompletion:receiveValue:)). Here’s an example of using a function to respond to a collision event:
+You can also create a function to respond to the event rather than a closure by using [`sink(receiveCompletion:receiveValue:)`](https://developer.apple.com/documentation/combine/publisher/sink(receivecompletion:receivevalue:)). Here’s an example of using a function to respond to a collision event:
 
 ```swift
 import AppKit
@@ -101,8 +101,8 @@ class GameViewController: NSViewController {
 ## Relationships
 
 ### Conforms To
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

@@ -21,7 +21,7 @@ After the attachment object calls this method, the NBD client is in a nonfunctio
 ## Parameters
 
 - `attachment`: The attachment object calling the delegate method.
-- `error`: An [`NSError`](https://developer.apple.com/documentation/Foundation/NSError) that describes the nonrecoverable error.
+- `error`: An [`NSError`](https://developer.apple.com/documentation/foundation/nserror) that describes the nonrecoverable error.
 
 ## See Also
 

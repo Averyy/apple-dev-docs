@@ -35,8 +35,8 @@ A subscription store control style that displays subscription plans as a paged p
 ## Relationships
 
 ### Conforms To
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 - [SubscriptionStoreControlStyle](subscriptionstorecontrolstyle.md)
 
 ## See Also

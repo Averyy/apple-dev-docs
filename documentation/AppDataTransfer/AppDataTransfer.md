@@ -19,11 +19,11 @@ To access the data, you need to acquire an access token with the `data-transfer-
 
 > **Note**: If you’ve previously requested access to App Store information using the `appstore-user-profile` scope along with older scope names, the system accepts these scopes and automatically approves them for both EU and UK scopes. You don’t need to make a new token request.
 
-For more information, see [`Request an authorization`](https://developer.apple.com/documentation/AccountOrganizationalDataSharing/Request-an-authorization).
+For more information, see [`Request an authorization`](https://developer.apple.com/documentation/accountorganizationaldatasharing/request-an-authorization).
 
 To get permission for your App ID or Services ID to request these scopes, follow the instructions at [`Account & Organizational Data Sharing`](https://developer.apple.comhttps://developer.apple.com/help/account/share-account-data/share-account-and-organizational-data/).
 
-> **Note**:  This API returns app-related data about users in the EU and UK. If you are a third party authorized by a user, you may request access to the [`Account Data Transfer`](https://developer.apple.com/documentation/AccountDataTransfer) API to enable the portability of relevant user data from Apple on behalf of your users. If you have any questions about the data made available in this API, including about how Apple applies privacy measures to protect user privacy and complies with legal obligations, contact Apple through Feedback Assistant by selecting the following option: Developer Tools & Resources > Data Portability > App Data Transfer API [`Learn more`](https://developer.apple.comhttps://support.apple.com/guide/feedback-assistant/welcome/mac) about how to use Feedback Assistant.
+> **Note**:  This API returns app-related data about users in the EU and UK. If you are a third party authorized by a user, you may request access to the [`Account Data Transfer`](https://developer.apple.com/documentation/accountdatatransfer) API to enable the portability of relevant user data from Apple on behalf of your users. If you have any questions about the data made available in this API, including about how Apple applies privacy measures to protect user privacy and complies with legal obligations, contact Apple through Feedback Assistant by selecting the following option: Developer Tools & Resources > Data Portability > App Data Transfer API [`Learn more`](https://developer.apple.comhttps://support.apple.com/guide/feedback-assistant/welcome/mac) about how to use Feedback Assistant.
 
 ##### Set Required Http Headers
 

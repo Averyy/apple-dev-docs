@@ -21,7 +21,7 @@ class UIActivityIndicatorView
 
 #### Overview
 
-You control when an activity indicator animates by calling the [`startAnimating()`](uiactivityindicatorview/startanimating().md) and [`stopAnimating()`](uiactivityindicatorview/stopanimating().md) methods. To automatically hide the activity indicator when animation stops, set the [`hidesWhenStopped`](uiactivityindicatorview/hideswhenstopped.md) property to [`true`](https://developer.apple.com/documentation/Swift/true).
+You control when an activity indicator animates by calling the [`startAnimating()`](uiactivityindicatorview/startanimating().md) and [`stopAnimating()`](uiactivityindicatorview/stopanimating().md) methods. To automatically hide the activity indicator when animation stops, set the [`hidesWhenStopped`](uiactivityindicatorview/hideswhenstopped.md) property to [`true`](https://developer.apple.com/documentation/swift/true).
 
 You can set the color of the activity indicator by using the [`color`](uiactivityindicatorview/color.md) property.
 
@@ -59,19 +59,19 @@ You can set the color of the activity indicator by using the [`color`](uiactivit
 ### Inherits From
 - [UIView](uiview.md)
 ### Conforms To
-- [CALayerDelegate](../QuartzCore/CALayerDelegate.md)
-- [CLBodyIdentifiable](../CoreLocation/CLBodyIdentifiable.md)
-- [CMBodyIdentifiable](../CoreMotion/CMBodyIdentifiable.md)
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCoding](../Foundation/NSCoding.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [NSTouchBarProvider](../AppKit/NSTouchBarProvider.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [CALayerDelegate](../quartzcore/calayerdelegate.md)
+- [CLBodyIdentifiable](../corelocation/clbodyidentifiable.md)
+- [CMBodyIdentifiable](../coremotion/cmbodyidentifiable.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCoding](../foundation/nscoding.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSTouchBarProvider](../appkit/nstouchbarprovider.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 - [UIAccessibilityIdentification](uiaccessibilityidentification.md)
 - [UIActivityItemsConfigurationProviding](uiactivityitemsconfigurationproviding.md)
 - [UIAppearance](uiappearance.md)

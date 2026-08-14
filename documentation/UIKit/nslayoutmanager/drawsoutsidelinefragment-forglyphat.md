@@ -20,7 +20,7 @@ func drawsOutsideLineFragment(forGlyphAt glyphIndex: Int) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/Swift/true) if the glyph at `glyphIndex` exceeds the bounds of the line fragment where it’s laid out, [`false`](https://developer.apple.com/documentation/Swift/false) otherwise.
+[`true`](https://developer.apple.com/documentation/swift/true) if the glyph at `glyphIndex` exceeds the bounds of the line fragment where it’s laid out, [`false`](https://developer.apple.com/documentation/swift/false) otherwise.
 
 #### Discussion
 
@@ -28,7 +28,7 @@ Exceeding bounds can happen when text is set at a fixed line height. For example
 
 This method causes glyph generation and layout for the line fragment containing the specified glyph, or if noncontiguous layout is not enabled, up to and including that line fragment.
 
-Glyphs that draw outside their line fragment rectangles aren’t considered when calculating enclosing rectangles with the [`rectArray(forCharacterRange:withinSelectedCharacterRange:in:rectCount:)`](https://developer.apple.com/documentation/AppKit/NSLayoutManager/rectArray(forCharacterRange:withinSelectedCharacterRange:in:rectCount:)) and [`rectArray(forGlyphRange:withinSelectedGlyphRange:in:rectCount:)`](https://developer.apple.com/documentation/AppKit/NSLayoutManager/rectArray(forGlyphRange:withinSelectedGlyphRange:in:rectCount:)) methods. They are, however, considered by [`boundingRect(forGlyphRange:in:)`](nslayoutmanager/boundingrect(forglyphrange:in:).md).
+Glyphs that draw outside their line fragment rectangles aren’t considered when calculating enclosing rectangles with the [`rectArray(forCharacterRange:withinSelectedCharacterRange:in:rectCount:)`](https://developer.apple.com/documentation/appkit/nslayoutmanager/rectarray(forcharacterrange:withinselectedcharacterrange:in:rectcount:)) and [`rectArray(forGlyphRange:withinSelectedGlyphRange:in:rectCount:)`](https://developer.apple.com/documentation/appkit/nslayoutmanager/rectarray(forglyphrange:withinselectedglyphrange:in:rectcount:)) methods. They are, however, considered by [`boundingRect(forGlyphRange:in:)`](nslayoutmanager/boundingrect(forglyphrange:in:).md).
 
 ## Parameters
 

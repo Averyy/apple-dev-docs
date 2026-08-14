@@ -6,7 +6,7 @@ Design complication templates using SwiftUI views.
 
 #### Overview
 
-ClockKit provides SwiftUI versions of the other graphic templates. These templates use a [`View`](https://developer.apple.com/documentation/SwiftUI/View) instance to draw some or all of the complication’s content. However, the following templates are particularly useful when drawing the complication with SwiftUI:
+ClockKit provides SwiftUI versions of the other graphic templates. These templates use a [`View`](https://developer.apple.com/documentation/swiftui/view) instance to draw some or all of the complication’s content. However, the following templates are particularly useful when drawing the complication with SwiftUI:
 
 - [`CLKComplicationTemplateGraphicCircularView`](clkcomplicationtemplategraphiccircularview.md)
 - [`CLKComplicationTemplateGraphicRectangularFullView`](clkcomplicationtemplategraphicrectangularfullview.md)
@@ -73,7 +73,7 @@ These templates use a single SwiftUI view to fill the entire complication, provi
   An abstract class that defines the base behavior for all templates.
 - [enum CLKComplicationFamily](clkcomplicationfamily.md)
   Constants indicating the template groups.
-- [CLKComplicationSupportedFamilies](../BundleResources/Information-Property-List/CLKComplicationSupportedFamilies.md)
+- [CLKComplicationSupportedFamilies](../bundleresources/information-property-list/clkcomplicationsupportedfamilies.md)
   The complication families for which the app can provide data.
 
 

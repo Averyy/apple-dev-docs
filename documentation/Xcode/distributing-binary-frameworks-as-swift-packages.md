@@ -25,9 +25,9 @@ To learn more about creating an XCFramework bundle, see [`Creating a multiplatfo
 
 First, follow the process to create a new Swift package as described in [`Creating a standalone Swift package with Xcode`](creating-a-standalone-swift-package-with-xcode.md). Next, declare a *binary target* in your package manifest and make it part of a product, just like a target that contains source files. Ensure that the name of the binary target in the package manifest matches the artifact’s module name.
 
-To declare a remote, or *URL-based*, binary target, use [`binaryTarget(name:path:)`](https://developer.apple.com/documentation/PackageDescription/Target/binaryTarget(name:path:)). To create the required [`checksum`](https://developer.apple.com/documentation/PackageDescription/Target/checksum), open the Terminal app, navigate to the root of the package, and run `swift package compute-checksum path/to/MyFramework.zip`. Xcode uses the checksum to verify that the hosted archive file matches the archive you declare in the manifest file. When developers add the package as a binary dependency to their project, and the remote archive’s checksum doesn’t match the checksum in the package manifest, Xcode displays an error.
+To declare a remote, or *URL-based*, binary target, use [`binaryTarget(name:path:)`](https://developer.apple.com/documentation/packagedescription/target/binarytarget(name:path:)). To create the required [`checksum`](https://developer.apple.com/documentation/packagedescription/target/checksum), open the Terminal app, navigate to the root of the package, and run `swift package compute-checksum path/to/MyFramework.zip`. Xcode uses the checksum to verify that the hosted archive file matches the archive you declare in the manifest file. When developers add the package as a binary dependency to their project, and the remote archive’s checksum doesn’t match the checksum in the package manifest, Xcode displays an error.
 
-To declare a local, or *path-based*, binary target, use [`package(name:path:)`](https://developer.apple.com/documentation/PackageDescription/Package/Dependency/package(name:path:)) and don’t generate a checksum. Instead, include the `.xcframework` bundle in the package’s Git repository.
+To declare a local, or *path-based*, binary target, use [`package(name:path:)`](https://developer.apple.com/documentation/packagedescription/package/dependency/package(name:path:)) and don’t generate a checksum. Instead, include the `.xcframework` bundle in the package’s Git repository.
 
 The following package manifest for the MyLibrary package declares a library product that includes two binary targets: `SomeRemoteBinaryPackage`, a remote, URL-based binary target; and `SomeLocalBinaryPackage`, a local, path-based binary target.
 
@@ -83,7 +83,7 @@ let package = Package(
   Add your published Swift package as a local package to your app’s project and develop the package and the app in tandem.
 - [Organizing your code with local packages](organizing-your-code-with-local-packages.md)
   Simplify maintenance, promote modularity, and encourage reuse by organizing your app’s code into local Swift packages.
-- [PackageDescription](../PackageDescription/PackageDescription.md)
+- [PackageDescription](../packagedescription/packagedescription.md)
   Create reusable code, organize it in a lightweight way, and share it across your projects and with other developers.
 
 

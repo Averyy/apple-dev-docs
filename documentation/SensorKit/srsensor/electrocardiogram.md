@@ -20,7 +20,7 @@ static let electrocardiogram: SRSensor
 
 The sample for this sensor is an array of [`SRElectrocardiogramSample`](srelectrocardiogramsample.md) objects.
 
-You need to provide a reason to record electrocardiogram (ECG) data by adding the `SRSensorUsageECG` dictionary to the [`NSSensorKitUsageDetail`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSSensorKitUsageDetail) key in the information property list.
+You need to provide a reason to record electrocardiogram (ECG) data by adding the `SRSensorUsageECG` dictionary to the [`NSSensorKitUsageDetail`](https://developer.apple.com/documentation/bundleresources/information-property-list/nssensorkitusagedetail) key in the information property list.
 
 You also need to add the `ecg` key to the `com.apple.developer.sensorkit.reader.allow` entitlement, as in:
 

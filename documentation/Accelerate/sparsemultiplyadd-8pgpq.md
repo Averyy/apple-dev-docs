@@ -24,7 +24,7 @@ func SparseMultiplyAdd(_ A: SparseMatrix_Float, _ X: DenseMatrix_Float, _ Y: Den
 
 Use this function to multiply a sparse matrix by a dense matrix and accumulate the result. The following equation is an example of a matrix-matrix multiplication where the first matrix is sparse:
 
-![A mathematical formula that describes the matrix multiplication, Y plus-equals A X. A four-by-two matrix added to a four-by-four matrix multiplied by a four-by-two matrix equals a four-by-two matrix.](https://docs-assets.developer.apple.com/published/e029142a5f614d3389db33aca356c7f8/media-3703077%402x.png)
+![A mathematical formula that describes the matrix multiplication, Y plus-equals A X. A four-by-two matrix added to a four-by-four matrix multiplied by a four-by-two matrix equals a four-by-two matrix.](/images/com.apple.accelerate/media-3703077@2x.png)
 
 Call [`SparseMultiplyAdd(_:_:_:_:)`](sparsemultiplyadd(_:_:_:_:)-86gfz.md) to calculate the result.
 

@@ -36,7 +36,7 @@ To adjust the boundary calculations in [`sizeThatFits(_:)`](uiview/sizethatfits(
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 ### Conforming Types
 - [UILabel](uilabel.md)
 - [UISearchTextField](uisearchtextfield.md)

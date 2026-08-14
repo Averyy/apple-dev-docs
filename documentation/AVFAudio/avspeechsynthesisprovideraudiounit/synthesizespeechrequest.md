@@ -21,7 +21,7 @@ func synthesizeSpeechRequest(_ speechRequest: AVSpeechSynthesisProviderRequest)
 
 #### Discussion
 
-When the synthesizer finishes generating audio buffers for the speech request, use [`AUInternalRenderBlock`](https://developer.apple.com/documentation/AudioToolbox/AUInternalRenderBlock) to report [`offlineUnitRenderAction_Complete`](https://developer.apple.com/documentation/AudioToolbox/AudioUnitRenderActionFlags/offlineUnitRenderAction_Complete).
+When the synthesizer finishes generating audio buffers for the speech request, use [`AUInternalRenderBlock`](https://developer.apple.com/documentation/audiotoolbox/auinternalrenderblock) to report [`offlineUnitRenderAction_Complete`](https://developer.apple.com/documentation/audiotoolbox/audiounitrenderactionflags/offlineunitrenderaction_complete).
 
 ## Parameters
 

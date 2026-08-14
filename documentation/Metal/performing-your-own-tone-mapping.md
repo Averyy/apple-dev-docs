@@ -6,7 +6,7 @@ Apply your own tone mapping to get the exact behavior you want.
 
 #### Overview
 
-To perform your own EDR tone mapping, create a Metal layer, give it an extended linear color space, and set its [`wantsExtendedDynamicRangeContent`](https://developer.apple.com/documentation/QuartzCore/CAMetalLayer/wantsExtendedDynamicRangeContent) property to [`true`](https://developer.apple.com/documentation/Swift/true). For example, the code below creates a Metal layer with an extended color space that linearly maps pixel values to luminance values:
+To perform your own EDR tone mapping, create a Metal layer, give it an extended linear color space, and set its [`wantsExtendedDynamicRangeContent`](https://developer.apple.com/documentation/quartzcore/cametallayer/wantsextendeddynamicrangecontent) property to [`true`](https://developer.apple.com/documentation/swift/true). For example, the code below creates a Metal layer with an extended color space that linearly maps pixel values to luminance values:
 
 ```objective-c
 CAMetalLayer *metalLayer = [CAMetalLayer new];
@@ -27,9 +27,9 @@ On Macs that support EDR, a `1.0` value for a pixel corresponds to the maximum s
 
 ##### Map Your Content to the Available Range
 
-The actual upper bound on displayable values may vary from moment to moment. To determine the current upper bound, read the [`NSScreen`](https://developer.apple.com/documentation/AppKit/NSScreen) object’s [`maximumExtendedDynamicRangeColorComponentValue`](https://developer.apple.com/documentation/AppKit/NSScreen/maximumExtendedDynamicRangeColorComponentValue) property. Note that even on a display that supports EDR, the current maximum might be 1.0, if the display is set to the maximum possible brightness.
+The actual upper bound on displayable values may vary from moment to moment. To determine the current upper bound, read the [`NSScreen`](https://developer.apple.com/documentation/appkit/nsscreen) object’s [`maximumExtendedDynamicRangeColorComponentValue`](https://developer.apple.com/documentation/appkit/nsscreen/maximumextendeddynamicrangecolorcomponentvalue) property. Note that even on a display that supports EDR, the current maximum might be 1.0, if the display is set to the maximum possible brightness.
 
-The following code reads the [`maximumExtendedDynamicRangeColorComponentValue`](https://developer.apple.com/documentation/AppKit/NSScreen/maximumExtendedDynamicRangeColorComponentValue) property as part of the work it does to process a frame. When rendering the frame, map all values to be between `0` and the current maximum value. If you specify values above this value, the system clamps the value to be no higher than the current maximum value.
+The following code reads the [`maximumExtendedDynamicRangeColorComponentValue`](https://developer.apple.com/documentation/appkit/nsscreen/maximumextendeddynamicrangecolorcomponentvalue) property as part of the work it does to process a frame. When rendering the frame, map all values to be between `0` and the current maximum value. If you specify values above this value, the system clamps the value to be no higher than the current maximum value.
 
 ```objective-c
 id<MTLDrawable> drawable = metalLayer.nextDrawable;
@@ -38,7 +38,7 @@ float maxEDR = screen.maximumExtendedDynamicRangeColorComponentValue;
 // <encode Metal commands to process the frame.
 ```
 
-Register for the [`didChangeScreenParametersNotification`](https://developer.apple.com/documentation/AppKit/NSApplication/didChangeScreenParametersNotification) notification to be informed when the current maximum value changes for a display. Also, note that a user may move the content to a different display.
+Register for the [`didChangeScreenParametersNotification`](https://developer.apple.com/documentation/appkit/nsapplication/didchangescreenparametersnotification) notification to be informed when the current maximum value changes for a display. Also, note that a user may move the content to a different display.
 
 If you have content that exceeds the current capabilities of the display, decide how you want to present that to the user. For example, you might tone map the content into the available range (adapting the content each time you render a frame), or you might notify the user that some of the content is beyond the capability of the display. When users increase the brightness, they typically expect midtones to increase and highlights to be compressed to fit into the range of the display.
 

@@ -24,7 +24,7 @@ optional func tableView(_ tableView: UITableView, willSelectRowAt indexPath: Ind
 
 #### Return Value
 
-An index path that confirms or alters the selected row. Return an [`IndexPath`](https://developer.apple.com/documentation/Foundation/IndexPath) (Swift) or [`NSIndexPath`](https://developer.apple.com/documentation/Foundation/NSIndexPath) (Objective-C) other than `indexPath` if you want another cell to be selected. Return `nil` if you don’t want the row selected.
+An index path that confirms or alters the selected row. Return an [`IndexPath`](https://developer.apple.com/documentation/foundation/indexpath) (Swift) or [`NSIndexPath`](https://developer.apple.com/documentation/foundation/nsindexpath) (Objective-C) other than `indexPath` if you want another cell to be selected. Return `nil` if you don’t want the row selected.
 
 #### Discussion
 

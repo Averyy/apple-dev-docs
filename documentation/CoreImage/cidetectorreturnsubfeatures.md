@@ -21,7 +21,7 @@ let CIDetectorReturnSubFeatures: String
 
 #### Discussion
 
-The value of this key is an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) object with a Boolean value. Use this option with the [`CIDetectorTypeText`](cidetectortypetext.md) detector type to choose whether to detect only regions likely to contain text (`false`, the default) or to also identify sub-regions likely to contain individual characters of text (`true`).
+The value of this key is an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) object with a Boolean value. Use this option with the [`CIDetectorTypeText`](cidetectortypetext.md) detector type to choose whether to detect only regions likely to contain text (`false`, the default) or to also identify sub-regions likely to contain individual characters of text (`true`).
 
 ## See Also
 

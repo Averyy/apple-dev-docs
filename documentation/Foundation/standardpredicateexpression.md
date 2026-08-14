@@ -27,11 +27,11 @@ Don’t declare new types that conform to the `StandardPredicateExpression` prot
 ## Relationships
 
 ### Inherits From
-- [Decodable](../Swift/Decodable.md)
-- [Encodable](../Swift/Encodable.md)
+- [Decodable](../swift/decodable.md)
+- [Encodable](../swift/encodable.md)
 - [PredicateExpression](predicateexpression.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 ### Conforming Types
 - [PredicateExpressions.Arithmetic](predicateexpressions/arithmetic.md)
 - [PredicateExpressions.ClosedRange](predicateexpressions/closedrange.md)

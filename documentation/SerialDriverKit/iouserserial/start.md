@@ -16,11 +16,11 @@ virtual kern_return_t Start(IOService *provider);
 
 #### Return Value
 
-[`kIOReturnSuccess`](https://developer.apple.com/documentation/DriverKit/kIOReturnSuccess) on success, or another value if an error occurs. See [`Error Codes`](https://developer.apple.com/documentation/DriverKit/error-codes).
+[`kIOReturnSuccess`](https://developer.apple.com/documentation/driverkit/kioreturnsuccess) on success, or another value if an error occurs. See [`Error Codes`](https://developer.apple.com/documentation/driverkit/error-codes).
 
 #### Discussion
 
-After successfully matching the specified `provider` to your driver’s service, the system instantiates your service object and calls this method. Use this method to perform any additional configuration of your driver, and then call the [`RegisterService`](https://developer.apple.com/documentation/DriverKit/IOService/RegisterService) method to let the system know that your service is running. For example, you might use this method to store a reference to the specified provider object for later use. Always call `super` early in your implementation of this method.
+After successfully matching the specified `provider` to your driver’s service, the system instantiates your service object and calls this method. Use this method to perform any additional configuration of your driver, and then call the [`RegisterService`](https://developer.apple.com/documentation/driverkit/ioservice/registerservice) method to let the system know that your service is running. For example, you might use this method to store a reference to the specified provider object for later use. Always call `super` early in your implementation of this method.
 
 You don’t need to open a communications channel to your device in this method. The system calls your service’s [`HwActivate`](iouserserial/hwactivate.md) method separately to activate your hardware.
 

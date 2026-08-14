@@ -20,7 +20,7 @@ virtual IOReturn getAggressiveness(
 ## Parameters
 
 - `type`: The aggressiveness factor to query.
-- `currentLevel`: Upon successful return, contains the value of aggressiveness factor  .
+- `currentLevel`: Upon successful return, contains the value of aggressiveness factor `type`.
 
 ## See Also
 

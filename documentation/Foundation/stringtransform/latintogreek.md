@@ -26,7 +26,7 @@ This transformation is reversible.
 
 For example, the string “Ellēnikó alphábēto‎” transliterates to “Ελληνικό αλφάβητο”.
 
-This is equivalent to [`kCFStringTransformLatinGreek`](https://developer.apple.com/documentation/CoreFoundation/kCFStringTransformLatinGreek).
+This is equivalent to [`kCFStringTransformLatinGreek`](https://developer.apple.com/documentation/corefoundation/kcfstringtransformlatingreek).
 
 ## See Also
 

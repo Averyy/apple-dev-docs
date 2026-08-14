@@ -16,7 +16,7 @@ class ItemCollection<D = any>
 
 #### Overview
 
-The [`importGeoJSON(data, callback)`](mapkit/importgeojson.md) method returns item collections. Don’t instantiate them directly.
+The [`importGeoJSON()`](mapkit/importgeojson.md) method returns item collections. Don’t instantiate them directly.
 
 ## Topics
 

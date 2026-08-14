@@ -36,7 +36,7 @@ Anchors identify the position of items in your augmented reality session. Use an
 - [class ARReferenceObject](arreferenceobject.md)
   The description of a 3D object that you want ARKit to detect in the physical environment.
 ### Object Tracking
-- [Using a reference object with ARKit in iOS](../visionOS/using-a-reference-object-with-arkit-in-ios.md)
+- [Using a reference object with ARKit in iOS](../visionos/using-a-reference-object-with-arkit-in-ios.md)
   Track a real-world object in your iOS app by using a reference-object file.
 ### Body Position Tracking
 - [Capturing Body Motion in 3D](capturing-body-motion-in-3d.md)
@@ -63,7 +63,7 @@ Anchors identify the position of items in your augmented reality session. Use an
 - [class ARParticipantAnchor](arparticipantanchor.md)
   An anchor for another user in multiuser augmented reality experiences.
 ### App Clip Codes
-- [Interacting with App Clip Codes in AR](../AppClip/interacting-with-app-clip-codes-in-ar.md)
+- [Interacting with App Clip Codes in AR](../appclip/interacting-with-app-clip-codes-in-ar.md)
   Display content and provide services in an AR experience with App Clip Codes.
 - [class ARAppClipCodeAnchor](arappclipcodeanchor.md)
   An anchor that tracks the position and orientation of an App Clip Code in the physical environment.
@@ -88,7 +88,7 @@ Anchors identify the position of items in your augmented reality session. Use an
   Determine the camera position and lighting for the current session, and apply effects, such as occlusion, to elements of the environment.
 - [Data Management](data-management.md)
   Obtain detailed information about skeletal and face geometry, and saved world data.
-- [Creating USD files for Apple devices](../USD/creating-usd-files-for-apple-devices.md)
+- [Creating USD files for Apple devices](../usd/creating-usd-files-for-apple-devices.md)
   Generate 3D assets that render as expected.
 
 

@@ -14,7 +14,7 @@ Access the assets in a user’s media library.
 
 Use the Assets Library framework to access the pictures and videos managed by the Photos application.
 
-> ❗ **Important**:  The Assets Library framework is deprecated as of iOS 9.0. Instead, use the [`PhotoKit`](https://developer.apple.com/documentation/PhotoKit) framework, which in iOS 8.0 and later provides more features and better performance for working with a user’s photo library.
+> ❗ **Important**:  The Assets Library framework is deprecated as of iOS 9.0. Instead, use the [`PhotoKit`](https://developer.apple.com/documentation/photokit) framework, which in iOS 8.0 and later provides more features and better performance for working with a user’s photo library.
 
 ## Topics
 

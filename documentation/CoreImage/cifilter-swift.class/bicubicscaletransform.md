@@ -30,9 +30,9 @@ This method applies the bicubic scale transform filter to an image. The effect p
 The bicubic scale transform filter uses the following properties:
 
 - **`inputImage`**: An image with the type [`CIImage`](ciimage.md).
-- **`aspectRatio`**: A `float` representing the aspect ratio as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
-- **`parameterB`**: A `float` representing the value of B used for cubic resampling as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
-- **`parameterC`**: A `float` representing the value of C used for cubic resampling as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+- **`aspectRatio`**: A `float` representing the aspect ratio as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
+- **`parameterB`**: A `float` representing the value of B used for cubic resampling as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
+- **`parameterC`**: A `float` representing the value of C used for cubic resampling as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
 
 The following code creates a filter that results in the image becoming square:
 
@@ -47,7 +47,7 @@ func bicubicScale(inputImage: CIImage) -> CIImage {
 }
 ```
 
-![Two photographs of a large building on the corner of an intersection. The building has small windows and is made of a brick structure. The photo on the left has no modifications to size or color. In the photo on the right, a bicubic scale transform filter is applied, resulting in a square image.](https://docs-assets.developer.apple.com/published/f16ce1fe17c3c42f0fd7ed3209dc27e0/media-3582224%402x.png)
+![Two photographs of a large building on the corner of an intersection. The building has small windows and is made of a brick structure. The photo on the left has no modifications to size or color. In the photo on the right, a bicubic scale transform filter is applied, resulting in a square image.](/images/com.apple.coreimage/media-3582224@2x.png)
 
 ## See Also
 

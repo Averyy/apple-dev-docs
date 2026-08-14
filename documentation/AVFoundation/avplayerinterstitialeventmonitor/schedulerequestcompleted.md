@@ -34,9 +34,9 @@ struct ScheduleRequestCompleted
 ## Relationships
 
 ### Conforms To
-- [NotificationCenter.AsyncMessage](../Foundation/NotificationCenter/AsyncMessage.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [NotificationCenter.AsyncMessage](../foundation/notificationcenter/asyncmessage.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 
 ---

@@ -26,15 +26,15 @@ By default, the system sets an automatic scroll edge effect style to provide a v
 
 **Hard**:
 
-![A partial image of a list scrolling behind a bottom toolbar on iPhone. The area where the toolbar overlaps the list content is nearly opaque, with a defined, straight horizontal line at the top.](https://docs-assets.developer.apple.com/published/233eca852dd9072e380bf0a300a19803/ScrollEdgeEffectStyle-2%402x.png)
+![A partial image of a list scrolling behind a bottom toolbar on iPhone. The area where the toolbar overlaps the list content is nearly opaque, with a defined, straight horizontal line at the top.](/images/com.apple.SwiftUI/ScrollEdgeEffectStyle-2@2x.png)
 
 **Soft**:
 
-![A partial image of a list scrolling behind a bottom toolbar on iPhone. The area where the toolbar overlaps the list is translucent and blurry and gets progressively more opaque from the top to the bottom.](https://docs-assets.developer.apple.com/published/ce6a289e80029e13b1747a9b04087530/ScrollEdgeEffectStyle-1%402x.png)
+![A partial image of a list scrolling behind a bottom toolbar on iPhone. The area where the toolbar overlaps the list is translucent and blurry and gets progressively more opaque from the top to the bottom.](/images/com.apple.SwiftUI/ScrollEdgeEffectStyle-1@2x.png)
 
 **None**:
 
-![A partial image of a list scrolling behind a bottom toolbar on iPhone. The area where the toolbar overlaps the list is transparent.](https://docs-assets.developer.apple.com/published/ebbd1937d2768b8c0ee06b7c59ff2797/ScrollEdgeEffectStyle-3%402x.png)
+![A partial image of a list scrolling behind a bottom toolbar on iPhone. The area where the toolbar overlaps the list is transparent.](/images/com.apple.SwiftUI/ScrollEdgeEffectStyle-3@2x.png)
 
 Specify a `ScrollEdgeEffectStyle` for a scroll view using [`scrollEdgeEffectStyle(_:for:)`](view/scrolledgeeffectstyle(_:for:).md) when the automatic style the system applies isn’t appropriate for your content and controls. Apply [`scrollEdgeEffectHidden(_:for:)`](view/scrolledgeeffecthidden(_:for:).md) to a scroll view to remove the scroll edge effect entirely for an edge you specify.
 
@@ -51,10 +51,10 @@ Specify a `ScrollEdgeEffectStyle` for a scroll view using [`scrollEdgeEffectStyl
 ## Relationships
 
 ### Conforms To
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

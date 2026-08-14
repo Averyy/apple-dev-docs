@@ -44,9 +44,9 @@ NetworkListener(for: .wifiAware( .connecting(to:service,  from:.selected(devices
 ## Relationships
 
 ### Conforms To
-- [ListenerProvider](../Network/ListenerProvider.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [ListenerProvider](../network/listenerprovider.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

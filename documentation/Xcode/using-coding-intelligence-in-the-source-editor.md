@@ -18,7 +18,7 @@ To display the coding tools popover in the source editor, perform one of these a
 - Select some code and click the coding assistant button that appears in the source editor gutter.
 - Press Command-Option-0 from anywhere in the source editor with or without selecting code.
 
-![A screenshot that shows the Project navigator in the sidebar and the source editor on the right with a code snippet selected and the Show Coding Tools popover displayed with the Explain button.](https://docs-assets.developer.apple.com/published/5f778223b10e7333ba6931d5d9bdde88/coding-assistant-show-coding-tools%402x.png)
+![A screenshot that shows the Project navigator in the sidebar and the source editor on the right with a code snippet selected and the Show Coding Tools popover displayed with the Explain button.](/images/com.apple.Xcode/coding-assistant-show-coding-tools@2x.png)
 
 Enter your prompt in the message text field in the coding tools popover or click one of the buttons, such as Explain, Generate a Preview, or Generate a Playground, depending on the context.
 
@@ -28,13 +28,13 @@ Playgrounds and previews let you experiment with new code without modifying your
 
 To add a playground macro to your project, open the coding tools popover and click Generate a Playground:
 
-![A screenshot that shows the Project navigator in the sidebar and the source editor on the right with a class selected and the Show Coding Tools popover displayed with the Generate a Playground button.](https://docs-assets.developer.apple.com/published/3a984e718e69e2478df8b0280776a854/coding-assistant-generate-playground%402x.png)
+![A screenshot that shows the Project navigator in the sidebar and the source editor on the right with a class selected and the Show Coding Tools popover displayed with the Generate a Playground button.](/images/com.apple.Xcode/coding-assistant-generate-playground@2x.png)
 
 If you use an agent, Xcode starts a new conversation with a playground prompt, shows the response in the transcript, and displays the generated playground code in the artifacts pane. To see the code in the source editor, double-click the filename in the artifacts pane. To run the playground in the canvas, click Show Canvas in the toolbar if necessary.
 
 If you use a chat model, Xcode shows the code changes directly in the source editor and runs the playground in the canvas.
 
-![A screenshot that shows the Project navigator in the sidebar, a file opened in the source editor with the playground code generated, and the playground run in the canvas on the right.](https://docs-assets.developer.apple.com/published/697b9b63ef5b55e6b03e1d1a69fc0204/coding-assistant-run-playground%402x.png)
+![A screenshot that shows the Project navigator in the sidebar, a file opened in the source editor with the playground code generated, and the playground run in the canvas on the right.](/images/com.apple.Xcode/coding-assistant-run-playground@2x.png)
 
 Similarly, with an interface file in the source editor, open the coding tools popover and click Generate a Preview. Xcode adds the generated preview code to your file and renders the preview in the artifacts pane or the canvas.
 
@@ -48,7 +48,7 @@ In the source editor, select a symbol that needs documentation comments, open th
 
 For example, if you select a class, Xcode adds documentation for the class and for its properties and methods, including method parameters. For an agent, Xcode shows the prompt in the transcript and the changes to the file in the artifacts pane. For a chat model, Xcode shows the documentation comments directly in the source editor.
 
-![A screenshot of the Project navigator on the left, a file open in the source editor with generated DocC style comments above the structure name.](https://docs-assets.developer.apple.com/published/37fec66247407cd342b24a37084af9a8/coding-assistant-generate-docs%402x.png)
+![A screenshot of the Project navigator on the left, a file open in the source editor with generated DocC style comments above the structure name.](/images/com.apple.Xcode/coding-assistant-generate-docs@2x.png)
 
 To view your documentation in Xcode’s Developer Documentation window, choose Product > Build Documentation.
 
@@ -60,7 +60,7 @@ The source editor highlights any issues with a red or yellow underline and prese
 
 For an agent, Xcode shows the details for the fix in the transcript and shows the changes in the artifacts pane. For a chat model, Xcode makes the code changes directly in the source editor.
 
-![A screenshot that shows the Project navigator on the left, a file open in the source editor on the right, and a Fix-it dialog with an error message and a Generate button.](https://docs-assets.developer.apple.com/published/4d7ee5e07e8c784a3d9a26eeaa36ddc9/coding-assistant-generate-fix-it%402x.png)
+![A screenshot that shows the Project navigator on the left, a file open in the source editor on the right, and a Fix-it dialog with an error message and a Generate button.](/images/com.apple.Xcode/coding-assistant-generate-fix-it@2x.png)
 
 ## See Also
 

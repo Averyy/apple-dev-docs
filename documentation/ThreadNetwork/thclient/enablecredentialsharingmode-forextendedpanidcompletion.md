@@ -30,7 +30,7 @@ func enableCredentialSharingMode(forExtendedPANID extendedPANID: Data, completio
 
 // Async form (throws on failure):
 func enableCredentialSharingMode(forExtendedPANID extendedPANID: Data) async throws
-``` For information about concurrency and asynchronous code in Swift, see [`Calling Objective-C APIs Asynchronously`](https://developer.apple.com/documentation/Swift/calling-objective-c-apis-asynchronously).
+``` For information about concurrency and asynchronous code in Swift, see [`Calling Objective-C APIs Asynchronously`](https://developer.apple.com/documentation/swift/calling-objective-c-apis-asynchronously).
 
 ## Parameters
 

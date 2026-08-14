@@ -23,7 +23,7 @@ class GKGaussianDistribution
 
 > ❗ **Important**:  The randomization services provided in GameplayKit are suitable for reliably creating deterministic, pseudorandom gameplay mechanics, but are not cryptographically robust. For cryptography, obfuscation, or cipher uses, use the Security framework, described in [`Cryptographic Services Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Security/Conceptual/cryptoservices/Introduction/Introduction.html#//apple_ref/doc/uid/TP40011172).
 
-![None](https://docs-assets.developer.apple.com/published/e1590e1293678bcc5374644c27caba72/media-2133123%402x.png)
+![None](/images/com.apple.gameplaykit/media-2133123@2x.png)
 
 In a Gaussian distribution, random samplings are most likely to result in a value near the center of the distribution, and have reduced probability of producing higher or lower values. To generate random numbers with a Gaussian distribution, use the methods defined by its superclass [`GKRandomDistribution`](gkrandomdistribution.md).
 
@@ -73,13 +73,13 @@ For more information on choosing and using randomizers in GameplayKit, read [`Ra
 ### Inherits From
 - [GKRandomDistribution](gkrandomdistribution.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
 - [GKRandom](gkrandom.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

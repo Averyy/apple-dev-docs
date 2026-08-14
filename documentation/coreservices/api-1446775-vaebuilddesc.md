@@ -26,10 +26,10 @@ This function and related “AEBuild” routines provide a very simple translati
 
 ## Parameters
 
-- `dst`: A pointer to a descriptor where the resulting descriptor should be stored. See  .
-- `error`: A pointer to an   structure where additional information about any errors that occur will be saved. This is an optional parameter and you can pass   if this information is not required. See  .
-- `src`: An   format string describing the descriptor to be created.
-- `args`: A reference to a previously defined, variable argument parameter list to use with the descriptor-string. The file   defines macros for declaring and using the   data type.
+- `dst`: A pointer to a descriptor where the resulting descriptor should be stored. See [`AEDesc`](aedesc.md).
+- `error`: A pointer to an `AEBuildError` structure where additional information about any errors that occur will be saved. This is an optional parameter and you can pass `NULL` if this information is not required. See [`AEBuildError`](aebuilderror.md).
+- `src`: An `AEBuild` format string describing the descriptor to be created.
+- `args`: A reference to a previously defined, variable argument parameter list to use with the descriptor-string. The file `<stdarg.h>` defines macros for declaring and using the `va_list` data type.
 
 ## See Also
 

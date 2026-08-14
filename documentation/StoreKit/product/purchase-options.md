@@ -35,9 +35,9 @@ Returns a [`Product.PurchaseResult`](product/purchaseresult.md).
 
 StoreKit provides several APIs you can use to enable customers to initiate a purchase. Before using [`purchase(options:)`](product/purchase(options:).md) consider the following APIs and choose the one that best suits your app’s implementation:
 
-- Use [`PurchaseAction`](purchaseaction.md) for apps that use [`SwiftUI`](https://developer.apple.com/documentation/SwiftUI) on any platform, including multi-scene apps for visionOS.
-- Use [`purchase(confirmIn:options:)`](product/purchase(confirmin:options:)-6dj6y.md) for apps that use [`UIKit`](https://developer.apple.com/documentation/UIKit).
-- Use [`purchase(confirmIn:options:)`](product/purchase(confirmin:options:)-8eai6.md) for apps that run on macOS and use [`AppKit`](https://developer.apple.com/documentation/AppKit).
+- Use [`PurchaseAction`](purchaseaction.md) for apps that use [`SwiftUI`](https://developer.apple.com/documentation/swiftui) on any platform, including multi-scene apps for visionOS.
+- Use [`purchase(confirmIn:options:)`](product/purchase(confirmin:options:)-6dj6y.md) for apps that use [`UIKit`](https://developer.apple.com/documentation/uikit).
+- Use [`purchase(confirmIn:options:)`](product/purchase(confirmin:options:)-8eai6.md) for apps that run on macOS and use [`AppKit`](https://developer.apple.com/documentation/appkit).
 - Use [`purchase(options:)`](product/purchase(options:).md) for apps that runs on watchOS.
 
 > ❗ **Important**:  If you use StoreKit views such as [`ProductView`](productview.md), [`StoreView`](storeview.md), or [`SubscriptionStoreView`](subscriptionstoreview.md) you don’t need to call any other API to initiate a purchase. StoreKit manages the purchase action automatically, including presenting the purchase confirmation UI. For more information, see [`StoreKit views`](storekit-views.md).

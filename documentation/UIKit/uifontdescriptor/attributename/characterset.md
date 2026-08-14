@@ -21,7 +21,7 @@ static let characterSet: UIFontDescriptor.AttributeName
 
 #### Discussion
 
-The value is an [`NSCharacterSet`](https://developer.apple.com/documentation/Foundation/NSCharacterSet) instance that represents the set of Unicode characters that the font covers. The font supplies the default value.
+The value is an [`NSCharacterSet`](https://developer.apple.com/documentation/foundation/nscharacterset) instance that represents the set of Unicode characters that the font covers. The font supplies the default value.
 
 ## See Also
 

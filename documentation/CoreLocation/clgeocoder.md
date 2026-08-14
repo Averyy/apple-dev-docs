@@ -44,7 +44,7 @@ Apps must be conscious of how they use geocoding. Geocoding requests are rate-li
 
 The computer or device must have access to the network in order for the geocoder object to return detailed placemark information. Although, the geocoder stores enough information locally to report the localized country or region name and ISO country code for many locations. If this information isn’t available for a specific location, the geocoder may still report an error to your completion block.
 
-You can use geocoder objects either in conjunction with, or independent of, the classes of the [`MapKit`](https://developer.apple.com/documentation/MapKit) framework.
+You can use geocoder objects either in conjunction with, or independent of, the classes of the [`MapKit`](https://developer.apple.com/documentation/mapkit) framework.
 
 ## Topics
 
@@ -79,14 +79,14 @@ You can use geocoder objects either in conjunction with, or independent of, the 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

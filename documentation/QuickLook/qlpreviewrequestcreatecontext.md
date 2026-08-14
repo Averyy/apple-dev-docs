@@ -24,7 +24,7 @@ You can directly draw your preview data in the graphics-context object created b
 
 Quick Look provides three types of graphics contexts for drawing previews: bitmap, single-page vector-based, and multi-page vector-based (for PDF previews). You use this function to acquire a context for bitmap and single-page vector drawing; the `isBitmap` parameter is used to distinguish between them. For multi-page contexts, use the [`QLPreviewRequestCreatePDFContext(_:_:_:_:)`](qlpreviewrequestcreatepdfcontext(_:_:_:_:).md) function.
 
-If you prefer to work in Objective-C code, you can convert the created [`CGContext`](https://developer.apple.com/documentation/CoreGraphics/CGContext) to a [`NSGraphicsContext`](https://developer.apple.com/documentation/AppKit/NSGraphicsContext) object using [`init(graphicsPort:flipped:)`](https://developer.apple.com/documentation/AppKit/NSGraphicsContext/init(graphicsPort:flipped:)).
+If you prefer to work in Objective-C code, you can convert the created [`CGContext`](https://developer.apple.com/documentation/coregraphics/cgcontext) to a [`NSGraphicsContext`](https://developer.apple.com/documentation/appkit/nsgraphicscontext) object using [`init(graphicsPort:flipped:)`](https://developer.apple.com/documentation/appkit/nsgraphicscontext/init(graphicsport:flipped:)).
 
 ##### Special Considerations
 

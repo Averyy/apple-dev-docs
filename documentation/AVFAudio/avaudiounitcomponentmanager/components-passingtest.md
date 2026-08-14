@@ -25,12 +25,12 @@ An array of audio components that pass the test.
 
 #### Discussion
 
-For each audio component the manager finds, the system calls the block method. If the block returns [`true`](https://developer.apple.com/documentation/Swift/true), the method adds `AVAudioComponent` instance to the array.
+For each audio component the manager finds, the system calls the block method. If the block returns [`true`](https://developer.apple.com/documentation/swift/true), the method adds `AVAudioComponent` instance to the array.
 
 ## Parameters
 
 - `testHandler`: The block to apply to the audio unit components. The block takes two parameters. - **comp**: A block to test.
-- **stop**: A reference to a Boolean value. To stop further processing of the search, the block sets the value to [`true`](https://developer.apple.com/documentation/Swift/true). The stop argument is an out-only argument. Only set this Boolean to [`true`](https://developer.apple.com/documentation/Swift/true) within the block. The block returns a Boolean value that indicates whether `comp` passes the test. Returning [`true`](https://developer.apple.com/documentation/Swift/true) stops further processing of the audio components.
+- **stop**: A reference to a Boolean value. To stop further processing of the search, the block sets the value to [`true`](https://developer.apple.com/documentation/swift/true). The stop argument is an out-only argument. Only set this Boolean to [`true`](https://developer.apple.com/documentation/swift/true) within the block. The block returns a Boolean value that indicates whether `comp` passes the test. Returning [`true`](https://developer.apple.com/documentation/swift/true) stops further processing of the audio components.
 
 ## See Also
 

@@ -22,9 +22,9 @@ struct CoreMLFeatureValueObservation
 
 #### Overview
 
-This type of observation results from performing a [`CoreMLRequest`](coremlrequest.md) image analysis with a [`Core ML`](https://developer.apple.com/documentation/CoreML) model whose role is prediction rather than classification or image-to-image processing.
+This type of observation results from performing a [`CoreMLRequest`](coremlrequest.md) image analysis with a [`Core ML`](https://developer.apple.com/documentation/coreml) model whose role is prediction rather than classification or image-to-image processing.
 
-The framework infers that an [`MLModel`](https://developer.apple.com/documentation/CoreML/MLModel) object is a predictor model if that model predicts multiple features. You can tell that a model predicts multiple features when its [`modelDescription`](https://developer.apple.com/documentation/CoreML/MLModel/modelDescription) object has a `nil` value for its [`predictedFeatureName`](https://developer.apple.com/documentation/CoreML/MLModelDescription/predictedFeatureName) property, or when it inserts its output in an [`outputDescriptionsByName`](https://developer.apple.com/documentation/CoreML/MLModelDescription/outputDescriptionsByName) dictionary.
+The framework infers that an [`MLModel`](https://developer.apple.com/documentation/coreml/mlmodel) object is a predictor model if that model predicts multiple features. You can tell that a model predicts multiple features when its [`modelDescription`](https://developer.apple.com/documentation/coreml/mlmodel/modeldescription) object has a `nil` value for its [`predictedFeatureName`](https://developer.apple.com/documentation/coreml/mlmodeldescription/predictedfeaturename) property, or when it inserts its output in an [`outputDescriptionsByName`](https://developer.apple.com/documentation/coreml/mlmodeldescription/outputdescriptionsbyname) dictionary.
 
 The confidence for these observations is always `1.0`.
 
@@ -45,15 +45,15 @@ The confidence for these observations is always `1.0`.
 ## Relationships
 
 ### Conforms To
-- [Copyable](../Swift/Copyable.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Decodable](../Swift/Decodable.md)
-- [Encodable](../Swift/Encodable.md)
-- [Equatable](../Swift/Equatable.md)
-- [Escapable](../Swift/Escapable.md)
-- [Hashable](../Swift/Hashable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Copyable](../swift/copyable.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Decodable](../swift/decodable.md)
+- [Encodable](../swift/encodable.md)
+- [Equatable](../swift/equatable.md)
+- [Escapable](../swift/escapable.md)
+- [Hashable](../swift/hashable.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 - [VisionObservation](visionobservation.md)
 
 ## See Also

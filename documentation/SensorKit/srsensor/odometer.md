@@ -18,9 +18,9 @@ static let odometer: SRSensor
 
 #### Discussion
 
-The [`sample`](srfetchresult/sample.md) type for this sensor is [`CMOdometerData`](https://developer.apple.com/documentation/CoreMotion/CMOdometerData).
+The [`sample`](srfetchresult/sample.md) type for this sensor is [`CMOdometerData`](https://developer.apple.com/documentation/coremotion/cmodometerdata).
 
-You need to provide a reason to record the user’s odometer by adding the [`SRSensorUsageOdometer`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSSensorKitUsageDetail/SRSensorUsageOdometer) dictionary to the [`NSSensorKitUsageDetail`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSSensorKitUsageDetail) key in the information property list.
+You need to provide a reason to record the user’s odometer by adding the [`SRSensorUsageOdometer`](https://developer.apple.com/documentation/bundleresources/information-property-list/nssensorkitusagedetail/srsensorusageodometer) dictionary to the [`NSSensorKitUsageDetail`](https://developer.apple.com/documentation/bundleresources/information-property-list/nssensorkitusagedetail) key in the information property list.
 
 ## See Also
 

@@ -43,7 +43,7 @@ func maximumCompositing(inputImage: CIImage, backgroundImage: CIImage) -> CIImag
 }
 ```
 
-![The image on the top left shows a beach with multiple palm trees and a rainbow arching across the blue sky.  The image below is a gradient image displaying a gradual color shift from purple to a dark orange. The image on the right shows the output from applying a maximum compositing filter. The result displays a darker image with the colors from both images.](https://docs-assets.developer.apple.com/published/26d75f0a4bd011875c3889ea932f478f/media-3546413%402x.png)
+![The image on the top left shows a beach with multiple palm trees and a rainbow arching across the blue sky.  The image below is a gradient image displaying a gradual color shift from purple to a dark orange. The image on the right shows the output from applying a maximum compositing filter. The result displays a darker image with the colors from both images.](/images/com.apple.coreimage/media-3546413@2x.png)
 
 ## See Also
 

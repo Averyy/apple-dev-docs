@@ -23,9 +23,9 @@ Use this array to define the different slice types your app’s entitled to. For
 
 Also set one of the following properties, depending on your app’s networking implementation:
 
-- Set [`serviceClass`](https://developer.apple.com/documentation/Network/NWParameters/serviceClass-swift.property) when using the Networking framework.
-- Set [`networkServiceType`](https://developer.apple.com/documentation/Foundation/URLSessionConfiguration/networkServiceType) when using [`URLSessionConfiguration`](https://developer.apple.com/documentation/Foundation/URLSessionConfiguration).
-- Set [`networkServiceType`](https://developer.apple.com/documentation/Foundation/URLRequest/networkServiceType-swift.property) when using [`URLRequest`](https://developer.apple.com/documentation/Foundation/URLRequest).
+- Set [`serviceClass`](https://developer.apple.com/documentation/network/nwparameters/serviceclass-swift.property) when using the Networking framework.
+- Set [`networkServiceType`](https://developer.apple.com/documentation/foundation/urlsessionconfiguration/networkservicetype) when using [`URLSessionConfiguration`](https://developer.apple.com/documentation/foundation/urlsessionconfiguration).
+- Set [`networkServiceType`](https://developer.apple.com/documentation/foundation/urlrequest/networkservicetype-swift.property) when using [`URLRequest`](https://developer.apple.com/documentation/foundation/urlrequest).
 
 If your app uses sockets, set this entitlement to `defaultslice-1`. With sockets, all your app traffic uses a slice defined by the carrier to accept all traffic categories. You should still set the [`5G Network Slicing App Category`](entitlements/com.apple.developer.networking.slicing.appcategory.md) entitlement.
 

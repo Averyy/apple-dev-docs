@@ -22,7 +22,7 @@ struct SubscriptionStorePolicyKind
 
 #### Overview
 
-To set the destination of a policy button in a [`SubscriptionStoreView`](subscriptionstoreview.md), use [`subscriptionStorePolicyDestination(url:for:)`](https://developer.apple.com/documentation/SwiftUI/View/subscriptionStorePolicyDestination(url:for:)) or [`subscriptionStorePolicyDestination(for:destination:)`](https://developer.apple.com/documentation/SwiftUI/View/subscriptionStorePolicyDestination(for:destination:)).
+To set the destination of a policy button in a [`SubscriptionStoreView`](subscriptionstoreview.md), use [`subscriptionStorePolicyDestination(url:for:)`](https://developer.apple.com/documentation/swiftui/view/subscriptionstorepolicydestination(url:for:)) or [`subscriptionStorePolicyDestination(for:destination:)`](https://developer.apple.com/documentation/swiftui/view/subscriptionstorepolicydestination(for:destination:)).
 
 ## Topics
 
@@ -35,22 +35,22 @@ To set the destination of a policy button in a [`SubscriptionStoreView`](subscri
 ## Relationships
 
 ### Conforms To
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
 
 ## See Also
 
 - [func subscriptionStorePolicyDestination(for: SubscriptionStorePolicyKind, destination: () -> some View) -> some View
-](../SwiftUI/View/subscriptionStorePolicyDestination(for:destination:).md)
+](../swiftui/view/subscriptionstorepolicydestination(for:destination:).md)
   Configures a view as the destination for a policy button action in subscription store views.
 - [func subscriptionStorePolicyDestination(url: URL, for: SubscriptionStorePolicyKind) -> some View
-](../SwiftUI/View/subscriptionStorePolicyDestination(url:for:).md)
+](../swiftui/view/subscriptionstorepolicydestination(url:for:).md)
   Configures a URL as the destination for a policy button action in subscription store views.
 - [func subscriptionStorePolicyForegroundStyle(some ShapeStyle) -> some View
-](../SwiftUI/View/subscriptionStorePolicyForegroundStyle(_:).md)
+](../swiftui/view/subscriptionstorepolicyforegroundstyle(_:).md)
   Sets the style for the terms of service and privacy policy buttons within a subscription store view.
 - [func subscriptionStorePolicyForegroundStyle(some ShapeStyle, some ShapeStyle) -> some View
-](../SwiftUI/View/subscriptionStorePolicyForegroundStyle(_:_:).md)
+](../swiftui/view/subscriptionstorepolicyforegroundstyle(_:_:).md)
   Sets the primary and secondary style for the terms of service and privacy policy buttons within a subscription store view.
 
 

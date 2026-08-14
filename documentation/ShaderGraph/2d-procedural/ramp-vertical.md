@@ -25,11 +25,11 @@ A top-to-bottom linear value ramp (gradient) generator.
 
 This node uses interpolation to create a vertical ramp or gradient from two values. Any point within the output ramp is a mix of the two values. A given point is more similar to the value that its vertical position is closer to. Below is a an example of a simple node graph that uses `Ramp Vertical` to create a color gradient:
 
-![None](https://docs-assets.developer.apple.com/published/fe4213c8fa2452496e89ae10982502ab/RampVerticalGraph.png)
+![None](/images/ShaderGraph-Docs/RampVerticalGraph.png)
 
 The image below shows the resulting texture, along with the color values on either side:
 
-![None](https://docs-assets.developer.apple.com/published/03252167c26d5947d2711bff9736ac34/RampVerticalMaterial.png)
+![None](/images/ShaderGraph-Docs/RampVerticalMaterial.png)
 
 ## See Also
 

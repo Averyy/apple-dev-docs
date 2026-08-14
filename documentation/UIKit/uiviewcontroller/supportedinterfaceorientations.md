@@ -21,7 +21,7 @@ var supportedInterfaceOrientations: UIInterfaceOrientationMask { get }
 
 This property returns a bit mask that specifies which orientations the view controller supports. For more information, see [`UIInterfaceOrientationMask`](uiinterfaceorientationmask.md).
 
-When the device orientation changes, the system calls this method on the root view controller or the topmost modal view controller that fills the window. If the view controller supports the new orientation, the system rotates the window and the view controller. The system only calls this method if the view controller’s [`shouldAutorotate`](uiviewcontroller/shouldautorotate.md) method returns [`true`](https://developer.apple.com/documentation/Swift/true).
+When the device orientation changes, the system calls this method on the root view controller or the topmost modal view controller that fills the window. If the view controller supports the new orientation, the system rotates the window and the view controller. The system only calls this method if the view controller’s [`shouldAutorotate`](uiviewcontroller/shouldautorotate.md) method returns [`true`](https://developer.apple.com/documentation/swift/true).
 
 Override this method to declare which orientations the view controller supports. The default value is [`all`](uiinterfaceorientationmask/all.md) for the iPad idiom and [`allButUpsideDown`](uiinterfaceorientationmask/allbutupsidedown.md) for the iPhone idiom. The value you return must not be 0.
 

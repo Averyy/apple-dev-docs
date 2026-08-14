@@ -31,7 +31,7 @@ init(configuration: ReadConfiguration) throws {
 }
 ```
 
-The above example assumes that you define `Model` to contain the document’s data, that `Model` conforms to the [`Codable`](https://developer.apple.com/documentation/Swift/Codable) protocol, and that you store a `model` property of that type inside your document.
+The above example assumes that you define `Model` to contain the document’s data, that `Model` conforms to the [`Codable`](https://developer.apple.com/documentation/swift/codable) protocol, and that you store a `model` property of that type inside your document.
 
 > **Note**: SwiftUI calls this method on a background thread. Don’t make user interface changes from that thread.
 

@@ -26,7 +26,7 @@ You don’t normally subclass `NSUniqueIDSpecifier`.
 The evaluation of `NSUniqueIDSpecifier` objects follows these steps until the specified object is found:
 
 1. If the container implements a method whose selector matches the relevant `valueIn<Key>WithUniqueID:` pattern established by scripting key-value coding, the method is invoked. This method can potentially be very fast, and it may be relatively easy to implement.
-2. As is the case when evaluating any script object specifier, the container of the specified object is given a chance to evaluate the object specifier. If the container class implements the [`indicesOfObjects(byEvaluatingObjectSpecifier:)`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class/indicesOfObjects(byEvaluatingObjectSpecifier:)) method, the method is invoked. This method can potentially be very fast, but it is relatively difficult to implement.
+2. As is the case when evaluating any script object specifier, the container of the specified object is given a chance to evaluate the object specifier. If the container class implements the [`indicesOfObjects(byEvaluatingObjectSpecifier:)`](https://developer.apple.com/documentation/objectivec/nsobject-swift.class/indicesofobjects(byevaluatingobjectspecifier:)) method, the method is invoked. This method can potentially be very fast, but it is relatively difficult to implement.
 3. An [`NSWhoseSpecifier`](nswhosespecifier.md) object that specifies the first object whose relevant `'ID  '` attribute matches the ID is synthesized and evaluated. The `NSWhoseSpecifier` object must search through all of the keyed elements in the container, looking for a match. The search is potentially very slow.
 
 ## Topics
@@ -45,15 +45,15 @@ The evaluation of `NSUniqueIDSpecifier` objects follows these steps until the sp
 ### Inherits From
 - [NSScriptObjectSpecifier](nsscriptobjectspecifier.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
 - [NSCoding](nscoding.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

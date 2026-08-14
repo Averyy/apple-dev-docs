@@ -30,7 +30,7 @@ Although the [`NSAccessibilityOutline`](nsaccessibilityoutline.md) protocol does
 - [NSAccessibilityElementProtocol](nsaccessibilityelementprotocol.md)
 - [NSAccessibilityGroup](nsaccessibilitygroup.md)
 - [NSAccessibilityTable](nsaccessibilitytable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 ### Conforming Types
 - [NSOutlineView](nsoutlineview.md)
 

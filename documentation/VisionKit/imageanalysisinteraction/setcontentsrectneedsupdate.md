@@ -24,9 +24,9 @@ final func setContentsRectNeedsUpdate()
 
 #### Discussion
 
-The framework ignores calls to this method when your app adds the interaction to a [`UIImageView`](https://developer.apple.com/documentation/UIKit/UIImageView), which calculates the [`contentsRect`](imageanalysisinteraction/contentsrect.md) based on the image view’s [`UIView.ContentMode`](https://developer.apple.com/documentation/UIKit/UIView/ContentMode-swift.enum).
+The framework ignores calls to this method when your app adds the interaction to a [`UIImageView`](https://developer.apple.com/documentation/uikit/uiimageview), which calculates the [`contentsRect`](imageanalysisinteraction/contentsrect.md) based on the image view’s [`UIView.ContentMode`](https://developer.apple.com/documentation/uikit/uiview/contentmode-swift.enum).
 
-When the view that contains the image isn’t an instance of [`UIImageView`](https://developer.apple.com/documentation/UIKit/UIImageView), call this method when the layout changes. The interaction then invokes the delegate’s [`contentsRect(for:)`](imageanalysisinteractiondelegate/contentsrect(for:).md) callback, which provides the updated content area to the system.
+When the view that contains the image isn’t an instance of [`UIImageView`](https://developer.apple.com/documentation/uikit/uiimageview), call this method when the layout changes. The interaction then invokes the delegate’s [`contentsRect(for:)`](imageanalysisinteractiondelegate/contentsrect(for:).md) callback, which provides the updated content area to the system.
 
 ## See Also
 

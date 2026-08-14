@@ -19,7 +19,7 @@ Interface identifier of the previously created interface.
 
 If no interface identifier is passed to the `vmnet` function, a new MAC address is generated and a interface identifier is associated to it. This identifier is passed back to the client in the `interface_param` dictionary. To re-use a previously generated MAC address, the interface identifier associated with the MAC address needs to be passed to the `vmnet` function in the `interface_desc` parameter.
 
-The value specified for this key should be of type [`XPC_TYPE_UUID`](https://developer.apple.com/documentation/XPC/XPC_TYPE_UUID-swift.var).
+The value specified for this key should be of type [`XPC_TYPE_UUID`](https://developer.apple.com/documentation/xpc/xpc_type_uuid-swift.var).
 
 > ❗ **Important**: Specifying a value for `vmnet_interface_id_key` does not guarantee the return of MAC address associated with the identifier. In cases where the MAC address associated with the id cannot be granted, an error is returned to the caller.
 

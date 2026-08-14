@@ -33,7 +33,7 @@ HStack {
 .symbolVariant(.fill)
 ```
 
-![A screenshot of two heart symbols. The first is filled while the](https://docs-assets.developer.apple.com/published/0071b4dbd1f82a57559c954e321a4709/SymbolVariants-none-1%402x.png)
+![A screenshot of two heart symbols. The first is filled while the](/images/com.apple.SwiftUI/SymbolVariants-none-1@2x.png)
 
 ## See Also
 

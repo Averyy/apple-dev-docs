@@ -16,7 +16,7 @@ class func setDefaultPlaceholder(_ placeholder: Any?, for marker: Any?, with bin
 
 #### Discussion
 
-The `marker` can be `nil` or one of the constants described in [`Selection Markers`](https://developer.apple.com/documentation/AppKit/selection-markers).
+The `marker` can be `nil` or one of the constants described in [`Selection Markers`](https://developer.apple.com/documentation/appkit/selection-markers).
 
 ## See Also
 

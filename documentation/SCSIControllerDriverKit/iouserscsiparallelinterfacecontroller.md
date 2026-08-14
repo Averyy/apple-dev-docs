@@ -20,7 +20,7 @@ Implement your driver by subclassing this class and overriding all pure virtual 
 
 ##### Specifying the Drivers Personality Information
 
-When you subclass `IOUserSCSIParallelInterfaceController`, update the [`IOKitPersonalities`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/IOKitPersonalities) key of your driver extension’s `Info.plist` file with information to match your driver to appropriate hardware. For this class, always include the keys and values in the following table:
+When you subclass `IOUserSCSIParallelInterfaceController`, update the [`IOKitPersonalities`](https://developer.apple.com/documentation/bundleresources/information-property-list/iokitpersonalities) key of your driver extension’s `Info.plist` file with information to match your driver to appropriate hardware. For this class, always include the keys and values in the following table:
 
 | Key | Value |
 | --- | --- |
@@ -33,13 +33,13 @@ When you subclass `IOUserSCSIParallelInterfaceController`, update the [`IOKitPer
 
 IOUserSCSIParallelInterfaceController supports the following power capabilities:
 
-- [`kIOServicePowerCapabilityOff`](https://developer.apple.com/documentation/DriverKit/kIOServicePowerCapabilityOff)
-- [`kIOServicePowerCapabilityOn`](https://developer.apple.com/documentation/DriverKit/kIOServicePowerCapabilityOn)
+- [`kIOServicePowerCapabilityOff`](https://developer.apple.com/documentation/driverkit/kioservicepowercapabilityoff)
+- [`kIOServicePowerCapabilityOn`](https://developer.apple.com/documentation/driverkit/kioservicepowercapabilityon)
 - [`kIOServicePowerCapabilityPause`](kioservicepowercapabilitypause.md)
 
-Implement the [`SetPowerState`](https://developer.apple.com/documentation/DriverKit/IOService/SetPowerState) method in your service object and use it to put your driver in a safe state for the new power setting. Call `super` either as the last step in your implementation, or when the dext is ready to acknowledge the power state transition.
+Implement the [`SetPowerState`](https://developer.apple.com/documentation/driverkit/ioservice/setpowerstate) method in your service object and use it to put your driver in a safe state for the new power setting. Call `super` either as the last step in your implementation, or when the dext is ready to acknowledge the power state transition.
 
-The following code example implements [`SetPowerState`](https://developer.apple.com/documentation/DriverKit/IOService/SetPowerState) by performing a check to see if the new state is [`kIOServicePowerCapabilityOn`](https://developer.apple.com/documentation/DriverKit/kIOServicePowerCapabilityOn). If it is, the implementation calls a private `IssueHardReset()` method.
+The following code example implements [`SetPowerState`](https://developer.apple.com/documentation/driverkit/ioservice/setpowerstate) by performing a check to see if the new state is [`kIOServicePowerCapabilityOn`](https://developer.apple.com/documentation/driverkit/kioservicepowercapabilityon). If it is, the implementation calls a private `IssueHardReset()` method.
 
 ```objc
 kern_return_t
@@ -155,7 +155,7 @@ The hypothetical driver in this example still needs to acknowledge the power sta
 ## Relationships
 
 ### Inherits From
-- [IOService](../DriverKit/IOService.md)
+- [IOService](../driverkit/ioservice.md)
 
 
 ---

@@ -16,7 +16,7 @@ var contentSize: CGSize { get set }
 
 #### Discussion
 
-Use this property to explicitly set the size of the content view. If [`frame`](https://developer.apple.com/documentation/UIKit/UIView/frame) is explicitly set, it takes precedence over `contentSize`.
+Use this property to explicitly set the size of the content view. If [`frame`](https://developer.apple.com/documentation/uikit/uiview/frame) is explicitly set, it takes precedence over `contentSize`.
 
 ## See Also
 

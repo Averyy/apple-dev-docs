@@ -21,7 +21,7 @@ let HMCharacteristicMetadataFormatTLV8: String
 
 #### Discussion
 
-The value is an [`NSData`](https://developer.apple.com/documentation/Foundation/NSData) object containing a set of one or more TLV8’s, which are packed type-length-value items with an 8-bit type, 8-bit length, and N-byte value.
+The value is an [`NSData`](https://developer.apple.com/documentation/foundation/nsdata) object containing a set of one or more TLV8’s, which are packed type-length-value items with an 8-bit type, 8-bit length, and N-byte value.
 
 ## See Also
 

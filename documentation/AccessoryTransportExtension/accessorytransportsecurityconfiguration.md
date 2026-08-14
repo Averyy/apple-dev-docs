@@ -23,9 +23,9 @@ The [`AccessoryTransportSecurity`](accessorytransportsecurity.md) protocol uses 
 ## Relationships
 
 ### Inherits From
-- [AppExtensionConfiguration](../ExtensionFoundation/AppExtensionConfiguration.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [AppExtensionConfiguration](../extensionfoundation/appextensionconfiguration.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 
@@ -37,7 +37,7 @@ The [`AccessoryTransportSecurity`](accessorytransportsecurity.md) protocol uses 
   A protocol that configures and manages communication between the extension and the system.
 - [protocol AccessoryTransportSecurity](accessorytransportsecurity.md)
   A protocol for an extension that handles cryptographic key exchange with your accessory.
-- [Accessory Notifications](../AccessoryNotifications/AccessoryNotifications.md)
+- [Accessory Notifications](../accessorynotifications/accessorynotifications.md)
   Receive forwarded iOS system notifications on an accessory that you develop.
 
 

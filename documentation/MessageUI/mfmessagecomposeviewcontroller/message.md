@@ -19,11 +19,11 @@ var message: MSMessage? { get set }
 
 #### Discussion
 
-If your app has an iMessage app extension, you can display your iMessage app within the message compose view, just as you would in the Messages app. To display your iMessage app, create and assign an [`MSMessage`](https://developer.apple.com/documentation/Messages/MSMessage) object to this property.
+If your app has an iMessage app extension, you can display your iMessage app within the message compose view, just as you would in the Messages app. To display your iMessage app, create and assign an [`MSMessage`](https://developer.apple.com/documentation/messages/msmessage) object to this property.
 
 By default, this property is set to `nil`.
 
-For more information on creating iMessage apps, see [`Messages`](https://developer.apple.com/documentation/Messages).
+For more information on creating iMessage apps, see [`Messages`](https://developer.apple.com/documentation/messages).
 
 ## See Also
 

@@ -8,7 +8,7 @@ Displays information about a single media item and its components.
 
 Use the `compilationTemplate` element to display information about one product that is made up of several distinct pieces; for example, an album and all of the songs that it contains. The header area on the left side of the screen contains general product information. Directly underneath the header area are several section areas that group like types of information; for example, one section can contain all of the songs on the album. The related content on the right side of the screen contains any images associated with the product and buttons that the user can use to interact with the product, such as Play and Buy buttons. The following figure shows the basic layout for a `compilationTemplate` page. The theme for the compilation template defaults to the system preference.
 
-![Layout diagram showing header and section areas on the left side and related content on the right.](https://docs-assets.developer.apple.com/published/c5690aa8089a1839847213800543d7eb/compilationtemplate-1%402x.png)
+![Layout diagram showing header and section areas on the left side and related content on the right.](/images/com.apple.TVML/compilationtemplate-1@2x.png)
 
 ##### Main Elements
 
@@ -123,7 +123,7 @@ The following listing shows the TVML for a `compilationTemplate` example. The ex
 
 The following figure shows the output for the above example:
 
-![Screenshot showing a sample album listing. Title and song list are on the left side and cover art and buttons are on the right.](https://docs-assets.developer.apple.com/published/48d9da8a0d17eee6ed41534b91400b88/compilationtemplate-2%402x.png)
+![Screenshot showing a sample album listing. Title and song list are on the left side and cover art and buttons are on the right.](/images/com.apple.TVML/compilationtemplate-2@2x.png)
 
 ## Topics
 

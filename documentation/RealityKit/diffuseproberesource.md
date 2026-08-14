@@ -37,8 +37,8 @@ Each probe stores first-order (L0 + L1) spherical harmonics: 4 coefficients per 
 
 ### Conforms To
 - [Resource](resource.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

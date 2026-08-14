@@ -16,7 +16,7 @@ let QCPlugInAttributeNameKey: String
 
 #### Discussion
 
-The associated value is an [`NSString`](https://developer.apple.com/documentation/Foundation/NSString) object.
+The associated value is an [`NSString`](https://developer.apple.com/documentation/foundation/nsstring) object.
 
 ## See Also
 

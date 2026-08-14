@@ -13,10 +13,10 @@ framework: HIG
 
 A pop-up button displays a menu of mutually exclusive options.
 
-![A stylized representation of a pop-up button displaying a set of options. The image is tinted red to subtly reflect the red in the original six-color Apple logo.](https://docs-assets.developer.apple.com/published/a02f34fe793c97f85fc15937c3ee5621/components-pop-up-button-intro~dark%402x.png)
+![A stylized representation of a pop-up button displaying a set of options. The image is tinted red to subtly reflect the red in the original six-color Apple logo.](/images/com.apple.HIG/components-pop-up-button-intro~dark@2x.png)
 After people choose an item from a pop-up button’s menu, the menu closes, and the button can update its content to indicate the current selection.
-![A screenshot of Calendar on iPhone, with a new calendar event open for editing. The editing screen contains controls for setting the details of the event, including its start and end dates, travel time, repeat interval, calendar, invitees, alert options, and attachments.](https://docs-assets.developer.apple.com/published/e8cbf469b646640d2d9425a0d87f4a92/pop-up-button-closed~dark%402x.png)
-![A screenshot of Calendar on iPhone, with a new calendar event open for editing. A pop-up button menu emerges from the Repeat button, with options for choosing a repeat interval from a list of preset options, or creating a custom one.](https://docs-assets.developer.apple.com/published/f4eef28736cf879b0a4c0fa580da8e4b/pop-up-button-open~dark%402x.png)
+![A screenshot of Calendar on iPhone, with a new calendar event open for editing. The editing screen contains controls for setting the details of the event, including its start and end dates, travel time, repeat interval, calendar, invitees, alert options, and attachments.](/images/com.apple.HIG/pop-up-button-closed~dark@2x.png)
+![A screenshot of Calendar on iPhone, with a new calendar event open for editing. A pop-up button menu emerges from the Repeat button, with options for choosing a repeat interval from a list of preset options, or creating a custom one.](/images/com.apple.HIG/pop-up-button-open~dark@2x.png)
 
 ## Best practices
 **Use a pop-up button to present a flat list of mutually exclusive options or states.** A pop-up button helps people make a choice that affects their content or the surrounding view. Use a [pull-down button](https://developer.apple.com/design/human-interface-guidelines/pull-down-buttons) instead if you need to:
@@ -42,9 +42,9 @@ After people choose an item from a pop-up button’s menu, the menu closes, and 
 [Menus](menus.md)
 
 #### Developer documentation
-[MenuPickerStyle](../SwiftUI/MenuPickerStyle.md)  — SwiftUI
-[changesSelectionAsPrimaryAction](../UIKit/UIButton/changesSelectionAsPrimaryAction.md) — UIKit
-[NSPopUpButton](../AppKit/NSPopUpButton.md) — AppKit
+[MenuPickerStyle](../swiftui/menupickerstyle.md)  — SwiftUI
+[changesSelectionAsPrimaryAction](../uikit/uibutton/changesselectionasprimaryaction.md) — UIKit
+[NSPopUpButton](../appkit/nspopupbutton.md) — AppKit
 
 ## Change log
 | Date | Changes |

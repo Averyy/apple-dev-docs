@@ -17,7 +17,7 @@ Display a calendar date and provide controls for editing the date value.
 
 ## See Also
 
-- [Responding to control-based events using target-action](../UIKit/responding-to-control-based-events-using-target-action.md)
+- [Responding to control-based events using target-action](../uikit/responding-to-control-based-events-using-target-action.md)
   Handle user input by connecting buttons, sliders, and other controls to your app’s code using the target-action design pattern.
 - [class NSButton](nsbutton.md)
   A control that defines an area on the screen that a user clicks to trigger an action.

@@ -28,7 +28,7 @@ As an example use, you can create an image from a portion of your scene and save
 
 1. Use the [`texture(from:)`](skview/texture(from:).md) method to render the scene’s contents to a texture.
 2. Call [`cgImage()`](sktexture/cgimage().md) on the result.
-3. Use [`CGImageDestination`](https://developer.apple.com/documentation/ImageIO/CGImageDestination) to write the `CGImage` out to disk.
+3. Use [`CGImageDestination`](https://developer.apple.com/documentation/imageio/cgimagedestination) to write the `CGImage` out to disk.
 
 
 ---

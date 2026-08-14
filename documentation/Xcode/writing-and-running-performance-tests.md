@@ -10,25 +10,25 @@ People perceive responsiveness and efficiency as positive contributions to an ap
 
 ##### Create a Test Target
 
-Performance tests use the same [`XCTest`](https://developer.apple.com/documentation/XCTest) framework to validate code behavior. Create a test target in your Xcode project that you can add behavior and performance tests to. To learn how to add a new target to your project, see [`Configuring a new target in your project`](configuring-a-new-target-in-your-project.md).
+Performance tests use the same [`XCTest`](https://developer.apple.com/documentation/xctest) framework to validate code behavior. Create a test target in your Xcode project that you can add behavior and performance tests to. To learn how to add a new target to your project, see [`Configuring a new target in your project`](configuring-a-new-target-in-your-project.md).
 
 ##### Add a Test Case Class and Performance Test Methods
 
-You organize performance tests into test case classes, which are subclasses of [`XCTestCase`](https://developer.apple.com/documentation/XCTest/XCTestCase). For information on creating test case classes and test methods, see [`Defining Test Cases and Test Methods`](https://developer.apple.com/documentation/XCTest/defining-test-cases-and-test-methods).
+You organize performance tests into test case classes, which are subclasses of [`XCTestCase`](https://developer.apple.com/documentation/xctest/xctestcase). For information on creating test case classes and test methods, see [`Defining Test Cases and Test Methods`](https://developer.apple.com/documentation/xctest/defining-test-cases-and-test-methods).
 
 A performance test method is a method on a test case class with a name that starts with `test`, no arguments, and no return value. The performance test calls one of the following methods to instruct XCTest to record metrics on your code’s performance:
 
-- **[`measure(_:)`](https://developer.apple.com/documentation/XCTest/XCTestCase/measure(_:))**: Records the default performance metrics for the duration of execution of the block argument, using the default measure options.
-- **[`measureMetrics(_:automaticallyStartMeasuring:for:)`](https://developer.apple.com/documentation/XCTest/XCTestCase/measureMetrics(_:automaticallyStartMeasuring:for:))**: Records the specified performance metrics, either for the duration of execution of the block argument, or, if you pass `false` for the `automaticallyStartMeasuring` parameter, between calls to [`startMeasuring()`](https://developer.apple.com/documentation/XCTest/XCTestCase/startMeasuring()) and [`stopMeasuring()`](https://developer.apple.com/documentation/XCTest/XCTestCase/stopMeasuring()) within the block argument.
-- **[`measure(metrics:block:)`](https://developer.apple.com/documentation/XCTest/XCTestCase/measure(metrics:block:))**: Records the specified metrics for the duration of execution of the block argument, using the default measure options.
-- **[`measure(metrics:options:block:)`](https://developer.apple.com/documentation/XCTest/XCTestCase/measure(metrics:options:block:))**: Records the specified metrics, either for the duration of execution of the block argument or between calls to [`startMeasuring()`](https://developer.apple.com/documentation/XCTest/XCTestCase/startMeasuring()) and [`stopMeasuring()`](https://developer.apple.com/documentation/XCTest/XCTestCase/stopMeasuring()) within the block argument, depending on the specified measure options.
-- **[`measure(options:block:)`](https://developer.apple.com/documentation/XCTest/XCTestCase/measure(options:block:))**: Records the default metrics, either for the duration of execution of the block argument or between calls to [`startMeasuring()`](https://developer.apple.com/documentation/XCTest/XCTestCase/startMeasuring()) and [`stopMeasuring()`](https://developer.apple.com/documentation/XCTest/XCTestCase/stopMeasuring()) within the block argument, depending on the specified measure options.
+- **[`measure(_:)`](https://developer.apple.com/documentation/xctest/xctestcase/measure(_:))**: Records the default performance metrics for the duration of execution of the block argument, using the default measure options.
+- **[`measureMetrics(_:automaticallyStartMeasuring:for:)`](https://developer.apple.com/documentation/xctest/xctestcase/measuremetrics(_:automaticallystartmeasuring:for:))**: Records the specified performance metrics, either for the duration of execution of the block argument, or, if you pass `false` for the `automaticallyStartMeasuring` parameter, between calls to [`startMeasuring()`](https://developer.apple.com/documentation/xctest/xctestcase/startmeasuring()) and [`stopMeasuring()`](https://developer.apple.com/documentation/xctest/xctestcase/stopmeasuring()) within the block argument.
+- **[`measure(metrics:block:)`](https://developer.apple.com/documentation/xctest/xctestcase/measure(metrics:block:))**: Records the specified metrics for the duration of execution of the block argument, using the default measure options.
+- **[`measure(metrics:options:block:)`](https://developer.apple.com/documentation/xctest/xctestcase/measure(metrics:options:block:))**: Records the specified metrics, either for the duration of execution of the block argument or between calls to [`startMeasuring()`](https://developer.apple.com/documentation/xctest/xctestcase/startmeasuring()) and [`stopMeasuring()`](https://developer.apple.com/documentation/xctest/xctestcase/stopmeasuring()) within the block argument, depending on the specified measure options.
+- **[`measure(options:block:)`](https://developer.apple.com/documentation/xctest/xctestcase/measure(options:block:))**: Records the default metrics, either for the duration of execution of the block argument or between calls to [`startMeasuring()`](https://developer.apple.com/documentation/xctest/xctestcase/startmeasuring()) and [`stopMeasuring()`](https://developer.apple.com/documentation/xctest/xctestcase/stopmeasuring()) within the block argument, depending on the specified measure options.
 
 ##### Determine the Performance Metrics to Record
 
-The default behavior for [`measure(_:)`](https://developer.apple.com/documentation/XCTest/XCTestCase/measure(_:)) and [`measure(options:block:)`](https://developer.apple.com/documentation/XCTest/XCTestCase/measure(options:block:)) is to record the time spent in the measured code, in seconds. Change the default set of metrics collected by performance test methods in a test case class by overriding [`defaultPerformanceMetrics`](https://developer.apple.com/documentation/XCTest/XCTestCase/defaultPerformanceMetrics) and [`defaultMetrics`](https://developer.apple.com/documentation/XCTest/XCTestCase/defaultMetrics). Use a different measurement function from the list above to record different metrics in a specific test.
+The default behavior for [`measure(_:)`](https://developer.apple.com/documentation/xctest/xctestcase/measure(_:)) and [`measure(options:block:)`](https://developer.apple.com/documentation/xctest/xctestcase/measure(options:block:)) is to record the time spent in the measured code, in seconds. Change the default set of metrics collected by performance test methods in a test case class by overriding [`defaultPerformanceMetrics`](https://developer.apple.com/documentation/xctest/xctestcase/defaultperformancemetrics) and [`defaultMetrics`](https://developer.apple.com/documentation/xctest/xctestcase/defaultmetrics). Use a different measurement function from the list above to record different metrics in a specific test.
 
-For information on the available metrics and on implementing your own metrics, see [`XCTMetric`](https://developer.apple.com/documentation/XCTest/XCTMetric).
+For information on the available metrics and on implementing your own metrics, see [`XCTMetric`](https://developer.apple.com/documentation/xctest/xctmetric).
 
 ##### Configure Your Scheme and Test Plan for Accurate Performance Measurements
 
@@ -42,12 +42,12 @@ Run your performance tests in the same way that you run tests to verify code beh
 
 | Performance measurement status icon | Description |
 | --- | --- |
-| ![A gray-filled rounded diamond-shaped icon that contains a checkmark.](https://docs-assets.developer.apple.com/published/0419cbd83dc3329cf41ba12285d0b28c/check-gray%402x.png) | A gray icon with a checkmark indicates that the recorded metrics were compared with the baseline value. |
-| ![A gray-filled rounded diamond-shaped icon that contains a dot.](https://docs-assets.developer.apple.com/published/9d3b9995998afb2edbf4b33ceb32a7a8/dot-gray%402x.png) | A gray icon with a dot indicates that no baseline value was recorded for XCTest to compare the recorded metrics against. |
+| ![A gray-filled rounded diamond-shaped icon that contains a checkmark.](/images/com.apple.Xcode/check-gray@2x.png) | A gray icon with a checkmark indicates that the recorded metrics were compared with the baseline value. |
+| ![A gray-filled rounded diamond-shaped icon that contains a dot.](/images/com.apple.Xcode/dot-gray@2x.png) | A gray icon with a dot indicates that no baseline value was recorded for XCTest to compare the recorded metrics against. |
 
 Click the performance measurement outcome icon to view a graph of the most recent values for the metrics recorded in the test, along with the average (mean) value for each metric recorded, as shown in the figure below.
 
-![A screenshot of the performance report overlay in Xcode. A graph shows the most recent values for the metrics gathered, and the average value, baseline value, and accepted maximum standard deviation are reported.](https://docs-assets.developer.apple.com/published/02845637cecf45c9156f839889c9b930/performance-tests-1%402x.png)
+![A screenshot of the performance report overlay in Xcode. A graph shows the most recent values for the metrics gathered, and the average value, baseline value, and accepted maximum standard deviation are reported.](/images/com.apple.Xcode/performance-tests-1@2x.png)
 
 ##### Set a Baseline and Tolerance
 

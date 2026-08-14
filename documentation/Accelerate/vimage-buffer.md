@@ -46,7 +46,7 @@ vImageBuffer_Init(&buffer,
 
 Although the code defines a buffer with 10 bytes per row, to maximize performance, [`vImageBuffer_Init(_:_:_:_:_:)`](vimagebuffer_init(_:_:_:_:_:).md) initializes a buffer with 16 bytes per row:
 
-![A diagram that shows the visible pixels and the padding of a vImage buffer.](https://docs-assets.developer.apple.com/published/28556585f1059b162e1423b669798cbe/media-4052499%402x.png)
+![A diagram that shows the visible pixels and the padding of a vImage buffer.](/images/com.apple.accelerate/media-4052499@2x.png)
 
 If you provide your own buffer storage, call [`preferredAlignmentAndRowBytes(width:height:bitsPerPixel:)`](vimage_buffer/preferredalignmentandrowbytes(width:height:bitsperpixel:).md) to get the row stride that ensures your buffer achieves the best performance.
 
@@ -114,7 +114,7 @@ let buffer = vImage_Buffer(data: data,
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../Swift/BitwiseCopyable.md)
+- [BitwiseCopyable](../swift/bitwisecopyable.md)
 
 ## See Also
 

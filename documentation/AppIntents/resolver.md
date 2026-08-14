@@ -41,10 +41,10 @@ protocol Resolver : Hashable, Sendable
 ## Relationships
 
 ### Inherits From
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 ### Inherited By
 - [RangeCheckingResolver](rangecheckingresolver.md)
 ### Conforming Types

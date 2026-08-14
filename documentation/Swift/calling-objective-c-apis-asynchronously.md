@@ -12,7 +12,7 @@ For information about asynchronous functions, see [`Concurrency`](https://develo
 
 ##### Understand How Swift Imports Completion Handlers
 
-Swift imports Objective-C methods that take a completion handler as two related Swift methods: a method that takes a closure, and an asynchronous method that doesn’t take a closure. For example, consider the [`present(completion:)`](https://developer.apple.com/documentation/PassKit/PKPaymentAuthorizationController/present(completion:)) method from PassKit. In Objective-C, it’s declared like this:
+Swift imports Objective-C methods that take a completion handler as two related Swift methods: a method that takes a closure, and an asynchronous method that doesn’t take a closure. For example, consider the [`present(completion:)`](https://developer.apple.com/documentation/passkit/pkpaymentauthorizationcontroller/present(completion:)) method from PassKit. In Objective-C, it’s declared like this:
 
 ```occ
 - (void)presentWithCompletion:(void (^)(BOOL success))completion;
@@ -28,7 +28,7 @@ func present() async -> Bool
 
 The first version, `present(completion:)`, has a return type of `Void` and takes a completion handler. The second version, `present()`, returns a Boolean value and is an asynchronous method.
 
-Methods whose completion handlers populate a [`NSError`](https://developer.apple.com/documentation/Foundation/NSError) pointer parameter also become throwing methods in Swift, as described in [`About Imported Cocoa Error Parameters`](about-imported-cocoa-error-parameters.md). The `NSError` parameter on an asynchronous throwing method must also be nullable, which indicates that the parameter is used only to communicate an error. For example, consider the [`write(_:timeout:completionHandler:)`](https://developer.apple.com/documentation/Foundation/URLSessionStreamTask/write(_:timeout:completionHandler:)) method from [`URLSessionStreamTask`](https://developer.apple.com/documentation/Foundation/URLSessionStreamTask). In Objective-C, it’s declared like this:
+Methods whose completion handlers populate a [`NSError`](https://developer.apple.com/documentation/foundation/nserror) pointer parameter also become throwing methods in Swift, as described in [`About Imported Cocoa Error Parameters`](about-imported-cocoa-error-parameters.md). The `NSError` parameter on an asynchronous throwing method must also be nullable, which indicates that the parameter is used only to communicate an error. For example, consider the [`write(_:timeout:completionHandler:)`](https://developer.apple.com/documentation/foundation/urlsessionstreamtask/write(_:timeout:completionhandler:)) method from [`URLSessionStreamTask`](https://developer.apple.com/documentation/foundation/urlsessionstreamtask). In Objective-C, it’s declared like this:
 
 ```occ
 - (void)writeData:(NSData *)data
@@ -48,7 +48,7 @@ func write(
 func write(_ data: Data, timeout: TimeInterval) async throws
 ```
 
-Methods whose completion handlers take multiple arguments become methods that return a tuple. For example, the [`sign(_:using:completion:)`](https://developer.apple.com/documentation/PassKit/PKPassLibrary/sign(_:using:completion:)) method from PassKit is declared like this in Objective-C:
+Methods whose completion handlers take multiple arguments become methods that return a tuple. For example, the [`sign(_:using:completion:)`](https://developer.apple.com/documentation/passkit/pkpasslibrary/sign(_:using:completion:)) method from PassKit is declared like this in Objective-C:
 
 ```occ
 - (void)signData:(NSData *)signData 

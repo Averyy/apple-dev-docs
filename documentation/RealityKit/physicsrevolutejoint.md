@@ -37,7 +37,7 @@ struct PhysicsRevoluteJoint
 ## Relationships
 
 ### Conforms To
-- [Equatable](../Swift/Equatable.md)
+- [Equatable](../swift/equatable.md)
 - [PhysicsJoint](physicsjoint.md)
 
 ## See Also

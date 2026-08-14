@@ -21,7 +21,7 @@ var failTransactionsEnabled: Bool { get set }
 
 #### Discussion
 
-The default value is `false`. Set this value to `true` when you want to test your app’s response to [`SKPaymentTransaction`](https://developer.apple.com/documentation/StoreKit/SKPaymentTransaction) transactions that fail. Attempted transactions in the payment queue show the [`SKPaymentTransactionState.failed`](https://developer.apple.com/documentation/StoreKit/SKPaymentTransactionState/failed) state, with the error code that you set in [`failureError`](sktestsession/failureerror.md).
+The default value is `false`. Set this value to `true` when you want to test your app’s response to [`SKPaymentTransaction`](https://developer.apple.com/documentation/storekit/skpaymenttransaction) transactions that fail. Attempted transactions in the payment queue show the [`SKPaymentTransactionState.failed`](https://developer.apple.com/documentation/storekit/skpaymenttransactionstate/failed) state, with the error code that you set in [`failureError`](sktestsession/failureerror.md).
 
 Changing this property overrides its setting in the StoreKit configuration file for this test session. Call [`resetToDefaultState()`](sktestsession/resettodefaultstate().md) to revert all settings to those in the configuration file.
 

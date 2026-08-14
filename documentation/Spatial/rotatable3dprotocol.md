@@ -38,9 +38,9 @@ protocol Rotatable3DProtocol<Scalar> : SpatialTypeProtocol
 ## Relationships
 
 ### Inherits From
-- [Decodable](../Swift/Decodable.md)
-- [Encodable](../Swift/Encodable.md)
-- [Equatable](../Swift/Equatable.md)
+- [Decodable](../swift/decodable.md)
+- [Encodable](../swift/encodable.md)
+- [Equatable](../swift/equatable.md)
 - [SpatialTypeProtocol](spatialtypeprotocol.md)
 ### Inherited By
 - [Primitive3DProtocol](primitive3dprotocol.md)

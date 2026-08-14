@@ -20,7 +20,7 @@ ClockKit further divides graphic templates into five different families:
 
 Each family appears in a different location on the supported watch face. For example, the corner templates can be used in all four corners of the Infographic or Solar Dial watch faces. While the circular templates appear in the center of the Infographic watch face, and along the bottom of the Infographic Modular face.
 
-The graphic families also provide templates that support SwiftUI. These templates use a [`View`](https://developer.apple.com/documentation/SwiftUI/View) instance to draw some or all of the complication’s content. Every graphic template that takes a [`CLKImageProvider`](clkimageprovider.md) parameter has a variant that takes a [`View`](https://developer.apple.com/documentation/SwiftUI/View) instead.
+The graphic families also provide templates that support SwiftUI. These templates use a [`View`](https://developer.apple.com/documentation/swiftui/view) instance to draw some or all of the complication’s content. Every graphic template that takes a [`CLKImageProvider`](clkimageprovider.md) parameter has a variant that takes a [`View`](https://developer.apple.com/documentation/swiftui/view) instead.
 
 The [`CLKComplicationTemplateGraphicRectangularFullView`](clkcomplicationtemplategraphicrectangularfullview.md), [`CLKComplicationTemplateGraphicCircularView`](clkcomplicationtemplategraphiccircularview.md), and [`CLKComplicationTemplateGraphicExtraLargeCircularView`](clkcomplicationtemplategraphicextralargecircularview.md) provide the most flexibility. In these templates, the SwiftUI view fills the entire complication—giving you a blank canvas that you can use to create your content. For more information, see [`Building complications with SwiftUI`](building-complications-with-swiftui.md).
 
@@ -73,7 +73,7 @@ For more information, see [`Exploring Tinted Graphic Complications`](https://dev
   An abstract class that defines the base behavior for all templates.
 - [enum CLKComplicationFamily](clkcomplicationfamily.md)
   Constants indicating the template groups.
-- [CLKComplicationSupportedFamilies](../BundleResources/Information-Property-List/CLKComplicationSupportedFamilies.md)
+- [CLKComplicationSupportedFamilies](../bundleresources/information-property-list/clkcomplicationsupportedfamilies.md)
   The complication families for which the app can provide data.
 
 

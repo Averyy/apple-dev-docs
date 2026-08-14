@@ -17,7 +17,7 @@ final func connect(endpoint: FoveatedStreamingSession.Endpoint = .systemDiscover
 
 #### Discussion
 
-> **Note**: A [`FoveatedStreamingSession.DisconnectReason`](foveatedstreamingsession/disconnectreason.md) error if a disconnection occurs.  Or, a [`CancellationError`](https://developer.apple.com/documentation/Swift/CancellationError) if the task is cancelled.
+> **Note**: A [`FoveatedStreamingSession.DisconnectReason`](foveatedstreamingsession/disconnectreason.md) error if a disconnection occurs.  Or, a [`CancellationError`](https://developer.apple.com/documentation/swift/cancellationerror) if the task is cancelled.
 
 You can establish a streaming connection in a variety of ways:
 

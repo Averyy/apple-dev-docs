@@ -26,7 +26,7 @@ var isEligibleForSearch: Bool { get set }
 
 #### Discussion
 
-If you aren’t yet using App Intents and want to add your user activity objects to the Spotlight indexes, set the value in this property to `true`. When this property is `true` and the user activity object is current, Spotlight indexes the activity so it can appear in search results. Set this property to `false` if you are already indexing [`AppEntity`](https://developer.apple.com/documentation/AppIntents/AppEntity) types or don’t want Spotlight to include someone’s activity-related information in search results. The default value of this property is `false`.
+If you aren’t yet using App Intents and want to add your user activity objects to the Spotlight indexes, set the value in this property to `true`. When this property is `true` and the user activity object is current, Spotlight indexes the activity so it can appear in search results. Set this property to `false` if you are already indexing [`AppEntity`](https://developer.apple.com/documentation/appintents/appentity) types or don’t want Spotlight to include someone’s activity-related information in search results. The default value of this property is `false`.
 
 Add an activity object to the search index if it contains information a person might reasonably search for later. For example, a restaurant finder app might index activity objects for each restaurant the person views. Subsequent searches for restaurants using Spotlight can then include the restaurants from your activity objects in the results. Index activity objects only to reflect the content that people touch in your app, not as a substitute for indexing your app’s content using Spotlight.
 

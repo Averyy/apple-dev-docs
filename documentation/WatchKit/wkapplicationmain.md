@@ -26,11 +26,11 @@ This function instantiates the application object and the specified delegate (if
 
 - `argc`: The count of arguments in `argv`. This is usually the corresponding parameter to `main`.
 - `argv`: A variable list of arguments. This is usually the corresponding parameter to `main`.
-- `applicationDelegateClassName`: The name of the app delegate’s class. This class must subclass [`NSObject`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class) and adopt the [`WKApplicationDelegate`](wkapplicationdelegate.md) protocol.
+- `applicationDelegateClassName`: The name of the app delegate’s class. This class must subclass [`NSObject`](https://developer.apple.com/documentation/objectivec/nsobject-swift.class) and adopt the [`WKApplicationDelegate`](wkapplicationdelegate.md) protocol.
 
 ## See Also
 
-- [Setting up a watchOS project](../watchOS-Apps/setting-up-a-watchos-project.md)
+- [Setting up a watchOS project](../watchos-apps/setting-up-a-watchos-project.md)
   Create a new watchOS project or add a watch target to an existing iOS project.
 - [class WKApplication](wkapplication.md)
   The centralized point of control and coordination for apps with a single watchOS app target.
@@ -42,7 +42,7 @@ This function instantiates the application object and the specified delegate (if
   A collection of methods that manages the app-level behavior of a WatchKit extension.
 - [class WKInterfaceDevice](wkinterfacedevice.md)
   An object that provides information about the user’s Apple Watch.
-- [WKPrefersNetworkUponForeground](../BundleResources/Information-Property-List/WKPrefersNetworkUponForeground.md)
+- [WKPrefersNetworkUponForeground](../bundleresources/information-property-list/wkprefersnetworkuponforeground.md)
   A Boolean value that indicates whether an app requires network access on launch.
 
 

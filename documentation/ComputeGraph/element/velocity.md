@@ -23,7 +23,7 @@ The velocity as a 3D vector
 
 Use this function to read the element’s velocity vector, which indicates its direction and speed of motion.
 
-> **Note**: ![Graph](https://docs-assets.developer.apple.com/published/982e520534112dc88add14557fc81ba0/element__velocity.svg)
+> **Note**: ![Graph](/images/com.apple.computegraph/element__velocity.svg)
 
 
 ---

@@ -19,7 +19,7 @@ var shouldShowFileExtensions: Bool { get set }
 
 #### Discussion
 
-The default value is [`false`](https://developer.apple.com/documentation/Swift/false).
+The default value is [`false`](https://developer.apple.com/documentation/swift/false).
 
 > **Note**:  This property has no effect in Mac apps built with Mac Catalyst.
 

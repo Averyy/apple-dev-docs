@@ -38,9 +38,9 @@ struct PKAddSecureElementPassError
   Error codes for problems that occur when you add a secure element passes.
 ### Getting error information
 - [static var errorDomain: String](pkaddsecureelementpasserror/errordomain.md)
-- [var errorCode: Int](../Foundation/CustomNSError/errorCode-2opgi.md)
+- [var errorCode: Int](../foundation/customnserror/errorcode-2opgi.md)
   The error code within the given domain.
-- [var errorUserInfo: [String : Any]](../Foundation/CustomNSError/errorUserInfo-1aas5.md)
+- [var errorUserInfo: [String : Any]](../foundation/customnserror/erroruserinfo-1aas5.md)
   The default user-info dictionary.
 - [let PKAddSecureElementPassErrorDomain: String](pkaddsecureelementpasserrordomain.md)
   The error domain for errors that occur when adding a secure pass.
@@ -51,12 +51,12 @@ struct PKAddSecureElementPassError
 ## Relationships
 
 ### Conforms To
-- [CustomNSError](../Foundation/CustomNSError.md)
-- [Equatable](../Swift/Equatable.md)
-- [Error](../Swift/Error.md)
-- [Hashable](../Swift/Hashable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [CustomNSError](../foundation/customnserror.md)
+- [Equatable](../swift/equatable.md)
+- [Error](../swift/error.md)
+- [Hashable](../swift/hashable.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

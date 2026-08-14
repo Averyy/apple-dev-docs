@@ -12,10 +12,10 @@ Music Haptics is an accessibility feature that allows a person to indicate that 
 
 To support Music Haptics in your app:
 
-- Add the [`MusicHapticsSupported`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/MusicHapticsSupported) key to your app’s `Info.plist` and set its value to `YES`.
+- Add the [`MusicHapticsSupported`](https://developer.apple.com/documentation/bundleresources/information-property-list/musichapticssupported) key to your app’s `Info.plist` and set its value to `YES`.
 - Check whether Music Haptics is on using [`isActive`](mamusichapticsmanager/isactive.md) on the [`shared`](mamusichapticsmanager/shared.md) instance of [`MAMusicHapticsManager`](mamusichapticsmanager.md).
 - Register for the [`activeStatusDidChangeNotification`](mamusichapticsmanager/activestatusdidchangenotification.md) notification to listen for changes in the Music Haptics setting.
-- Supply a known song’s International Standard Recording Code (ISRC) as part of the [`nowPlayingInfo`](https://developer.apple.com/documentation/MediaPlayer/MPNowPlayingInfoCenter/nowPlayingInfo) dictionary of [`MPNowPlayingInfoCenter`](https://developer.apple.com/documentation/MediaPlayer/MPNowPlayingInfoCenter), using the key [`MPNowPlayingInfoPropertyInternationalStandardRecordingCode`](https://developer.apple.com/documentation/MediaPlayer/MPNowPlayingInfoPropertyInternationalStandardRecordingCode). For more information about becoming the Now Playing app, refer to [`Becoming a now playable app`](https://developer.apple.com/documentation/MediaPlayer/becoming-a-now-playable-app).
+- Supply a known song’s International Standard Recording Code (ISRC) as part of the [`nowPlayingInfo`](https://developer.apple.com/documentation/mediaplayer/mpnowplayinginfocenter/nowplayinginfo) dictionary of [`MPNowPlayingInfoCenter`](https://developer.apple.com/documentation/mediaplayer/mpnowplayinginfocenter), using the key [`MPNowPlayingInfoPropertyInternationalStandardRecordingCode`](https://developer.apple.com/documentation/mediaplayer/mpnowplayinginfopropertyinternationalstandardrecordingcode). For more information about becoming the Now Playing app, refer to [`Becoming a now playable app`](https://developer.apple.com/documentation/mediaplayer/becoming-a-now-playable-app).
 
 ##### Indicate Haptic Playback Status
 

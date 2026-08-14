@@ -26,7 +26,7 @@ let kSecAttrKeySizeInBits: CFString
 
 #### Discussion
 
-The corresponding value is of type [`CFNumber`](https://developer.apple.com/documentation/CoreFoundation/CFNumber) and indicates the total number of bits in this cryptographic key.
+The corresponding value is of type [`CFNumber`](https://developer.apple.com/documentation/corefoundation/cfnumber) and indicates the total number of bits in this cryptographic key.
 
 
 ---

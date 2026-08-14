@@ -8,7 +8,7 @@ Configure input devices, output media, preview views, and basic settings before 
 
 An [`AVCaptureSession`](avcapturesession.md) is the basis for all media capture in iOS and macOS. It manages your app’s exclusive access to the OS capture infrastructure and capture devices, as well as the flow of data from input devices to media outputs. How you configure connections between inputs and outputs defines the capabilities of your capture session. For example, the diagram below shows a capture session that can capture both photos and movies and provides a camera preview, using the iPhone back camera and microphone.
 
-![Block diagram of detailed capture session architecture example: separate AVCaptureDeviceInput objects for camera and microphone connect, through AVCaptureConnection objects managed by AVCaptureSession, to AVCapturePhotoOutput, AVCaptureMovieFileOutput, and AVCaptureVideoPreviewLayer.](https://docs-assets.developer.apple.com/published/e23e8340d74e845fe9cb1ab651f54073/media-2970419%402x.png)
+![Block diagram of detailed capture session architecture example: separate AVCaptureDeviceInput objects for camera and microphone connect, through AVCaptureConnection objects managed by AVCaptureSession, to AVCapturePhotoOutput, AVCaptureMovieFileOutput, and AVCaptureVideoPreviewLayer.](/images/com.apple.avfoundation/media-2970419@2x.png)
 
 ##### Connect Inputs and Outputs to the Session
 
@@ -50,7 +50,7 @@ A session can have multiple inputs and outputs. For example:
 
 It’s important to let the user see input from the camera before choosing to snap a photo or start video recording, as in the viewfinder of a traditional camera. You can provide such a preview by connecting an [`AVCaptureVideoPreviewLayer`](avcapturevideopreviewlayer.md) to your capture session, which displays a live video feed from the camera whenever the session is running.
 
-[`AVCaptureVideoPreviewLayer`](avcapturevideopreviewlayer.md) is a Core Animation layer, so you can display and style it in your interface as you would any other [`CALayer`](https://developer.apple.com/documentation/QuartzCore/CALayer) subclass. The simplest way to add a preview layer to a UIKit app is to define a [`UIView`](https://developer.apple.com/documentation/UIKit/UIView) subclass whose [`layerClass`](https://developer.apple.com/documentation/UIKit/UIView/layerClass) is [`AVCaptureVideoPreviewLayer`](avcapturevideopreviewlayer.md), as shown below.
+[`AVCaptureVideoPreviewLayer`](avcapturevideopreviewlayer.md) is a Core Animation layer, so you can display and style it in your interface as you would any other [`CALayer`](https://developer.apple.com/documentation/quartzcore/calayer) subclass. The simplest way to add a preview layer to a UIKit app is to define a [`UIView`](https://developer.apple.com/documentation/uikit/uiview) subclass whose [`layerClass`](https://developer.apple.com/documentation/uikit/uiview/layerclass) is [`AVCaptureVideoPreviewLayer`](avcapturevideopreviewlayer.md), as shown below.
 
 ```swift
 class PreviewView: UIView {
@@ -83,7 +83,7 @@ With other capture outputs, you first start the session running, then use the ca
 
 ## See Also
 
-- [Accessing the camera while multitasking on iPad](../AVKit/accessing-the-camera-while-multitasking-on-ipad.md)
+- [Accessing the camera while multitasking on iPad](../avkit/accessing-the-camera-while-multitasking-on-ipad.md)
   Operate the camera in Split View, Slide Over, Picture in Picture, and Stage Manager modes.
 - [AVCam: Building a camera app](avcam-building-a-camera-app.md)
   Capture photos and record video using the front and rear iPhone and iPad cameras.

@@ -28,7 +28,7 @@ Thread safe starting in OS X v10.2.
 
 ## Parameters
 
-- `theAEDesc`: A pointer to the descriptor to be flattened. See  .
+- `theAEDesc`: A pointer to the descriptor to be flattened. See [`AEDesc`](aedesc.md).
 
 ## See Also
 

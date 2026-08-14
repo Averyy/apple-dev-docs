@@ -54,7 +54,7 @@ for (index, lineDashPattern) in lineDashPatterns.enumerated() {
 
 The following figure shows three shape layers created with the code above. The top solid line has a `nil` [`lineDashPattern`](cashapelayer/linedashpattern.md), the middle has `[2,3]` and the bottom has `[10,5,5,5]`.
 
-![The effects of different line dash patterns](https://docs-assets.developer.apple.com/published/293471c30f19bccfb3bcfebe7a87871d/media-2825198%402x.png)
+![The effects of different line dash patterns](/images/com.apple.quartzcore/media-2825198@2x.png)
 
 ## See Also
 

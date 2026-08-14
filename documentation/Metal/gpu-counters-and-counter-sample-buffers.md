@@ -73,9 +73,9 @@ If you’re sampling data from a timestamp counter set ([`timestamp`](mtlcommonc
   Prototype and test your Metal apps in Simulator.
 - [Improving your game’s graphics performance and settings](improving-your-games-graphics-performance-and-settings.md)
   Fix performance glitches and develop default settings for smooth experiences on Apple platforms using the powerful suite of Metal development tools.
-- [Metal debugger](../Xcode/Metal-debugger.md)
+- [Metal debugger](../xcode/metal-debugger.md)
   Debug and profile your Metal workload with a GPU trace.
-- [Metal developer workflows](../Xcode/Metal-developer-workflows.md)
+- [Metal developer workflows](../xcode/metal-developer-workflows.md)
   Locate and fix issues related to your app’s use of the Metal API and GPU functions.
 - [Metal debugging types](metal-debugging-types.md)
   Create capture managers and capture scopes, and review a GPU device’s log after it runs a command buffer.

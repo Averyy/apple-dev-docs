@@ -24,7 +24,7 @@ static let mandarinToLatin: StringTransform
 
 For example, the string “hàn zì” transliterates to “汉字”.
 
-This is equivalent to [`kCFStringTransformMandarinLatin`](https://developer.apple.com/documentation/CoreFoundation/kCFStringTransformMandarinLatin).
+This is equivalent to [`kCFStringTransformMandarinLatin`](https://developer.apple.com/documentation/corefoundation/kcfstringtransformmandarinlatin).
 
 ## See Also
 

@@ -23,7 +23,7 @@ do {
 ...  
 ```
 
-If the device supports alternative browser engines, you can offer the person a download link to an alternative distribution of your app that uses the alternative browser engine. For more information about alternative distribution, see [`Distributing your app on an alternative app marketplace`](https://developer.apple.com/documentation/marketplacekit/distributing-your-app-on-an-alternative-marketplace). For more information about developing or embedding alternative browser engines, see [`BrowserEngineKit`](https://developer.apple.com/documentation/BrowserEngineKit).
+If the device supports alternative browser engines, you can offer the person a download link to an alternative distribution of your app that uses the alternative browser engine. For more information about alternative distribution, see [`Distributing your app on an alternative app marketplace`](https://developer.apple.com/documentation/marketplacekit/distributing-your-app-on-an-alternative-marketplace). For more information about developing or embedding alternative browser engines, see [`BrowserEngineKit`](https://developer.apple.com/documentation/browserenginekit).
 
 ## Topics
 

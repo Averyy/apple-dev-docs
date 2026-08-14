@@ -22,7 +22,7 @@ Subclasses can override this method and use it to restore the document-related i
 
 > **Note**:  If the user’s computer is configured to close all windows when an app quits, the system automatically removes any preserved state as part of that process. As a result, the system doesn’t call `restoreState(with:)` the next time your app launches.
 
-For information about using a coder object to read data from an archive, see [`Encoding and Decoding Custom Types`](https://developer.apple.com/documentation/Foundation/encoding-and-decoding-custom-types).
+For information about using a coder object to read data from an archive, see [`Encoding and Decoding Custom Types`](https://developer.apple.com/documentation/foundation/encoding-and-decoding-custom-types).
 
 ## Parameters
 

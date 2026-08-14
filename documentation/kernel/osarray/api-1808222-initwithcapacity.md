@@ -20,7 +20,7 @@ virtual bool initWithCapacity(
 
 Not for general use. Use the static instance creation method withCapacity instead.
 
-`capacity` must be nonzero. The new array will grow as needed to accommodate more objects (`CFMutableArray`, for which the initial capacity is a hard limit).
+`capacity` must be nonzero. The new array will grow as needed to accommodate more objects (*unlike*[`CFMutableArray`](https://developer.apple.com/documentation/corefoundation/cfmutablearray), for which the initial capacity is a hard limit).
 
 ## Parameters
 

@@ -20,7 +20,7 @@ string externalPurchaseId
 
 #### Discussion
 
-Decode an external purchase token to get its [`externalPurchaseId`](externalpurchaseid.md). For more information, see [`Receiving and decoding external purchase tokens`](https://developer.apple.com/documentation/StoreKit/receiving-and-decoding-external-purchase-tokens).
+Decode an external purchase token to get its [`externalPurchaseId`](externalpurchaseid.md). For more information, see [`Receiving and decoding external purchase tokens`](https://developer.apple.com/documentation/storekit/receiving-and-decoding-external-purchase-tokens).
 
 ## See Also
 

@@ -23,12 +23,12 @@ final func render(rasterizationScale: CGFloat = 1, renderer: (CGSize, (CGContext
 
 #### Discussion
 
-Use this method to rasterize the renderer’s content to a [`CGContext`](https://developer.apple.com/documentation/CoreGraphics/CGContext) you provide. The `renderer` closure receives two parameters: the current size of the view, and a function that renders the view to your `CGContext`. Implement the closure to provide a suitable `CGContext`, then invoke the function to render the content to that context.
+Use this method to rasterize the renderer’s content to a [`CGContext`](https://developer.apple.com/documentation/coregraphics/cgcontext) you provide. The `renderer` closure receives two parameters: the current size of the view, and a function that renders the view to your `CGContext`. Implement the closure to provide a suitable `CGContext`, then invoke the function to render the content to that context.
 
 ## Parameters
 
 - `rasterizationScale`: The scale factor for converting user interface points to pixels when rasterizing parts of the view that can’t be represented as native Core Graphics drawing commands.
-- `renderer`: The closure that sets up the Core Graphics context and renders the view. This closure receives two parameters: the size of the view and a function that you invoke in the closure to render the view at the reported size. This function takes a [`CGContext`](https://developer.apple.com/documentation/CoreGraphics/CGContext) parameter, and assumes a bottom-left coordinate space origin.
+- `renderer`: The closure that sets up the Core Graphics context and renders the view. This closure receives two parameters: the size of the view and a function that you invoke in the closure to render the view at the reported size. This function takes a [`CGContext`](https://developer.apple.com/documentation/coregraphics/cgcontext) parameter, and assumes a bottom-left coordinate space origin.
 
 ## See Also
 

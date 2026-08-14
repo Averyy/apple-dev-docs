@@ -86,7 +86,7 @@ if let applePayButton = button {
 }
 ```
 
-The watchOS app adds the button to the storyboard as an instance of [`WKInterfacePaymentButton`](https://developer.apple.com/documentation/WatchKit/WKInterfacePaymentButton).
+The watchOS app adds the button to the storyboard as an instance of [`WKInterfacePaymentButton`](https://developer.apple.com/documentation/watchkit/wkinterfacepaymentbutton).
 
 ##### Define the Shipping Methods
 

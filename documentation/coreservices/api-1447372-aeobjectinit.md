@@ -26,7 +26,7 @@ You should call the `AEObjectInit` function to initialize the Apple Event Manage
 
 ##### 1770197
 
-To make these functions available to your application with version 1.01 and earlier versions of the Apple Event Manager, you must also link the Apple Event Object Support Library with your application when you build it. For more information, see the Version Notes section for the AppleScript Gestalt Selector described in  and the function [`AERemoveSpecialHandler(_:_:_:)`](1447960-aeremovespecialhandler.md).
+To make these functions available to your application with version 1.01 and earlier versions of the Apple Event Manager, you must also link the Apple Event Object Support Library with your application when you build it. For more information, see the Version Notes section for the AppleScript Gestalt Selector described in *Inside macOS: Gestalt Manager Reference* and the function [`AERemoveSpecialHandler(_:_:_:)`](1447960-aeremovespecialhandler.md).
 
 ## See Also
 

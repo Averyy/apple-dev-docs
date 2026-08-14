@@ -32,8 +32,8 @@ struct DefaultHistoryUpdate<Model> where Model : PersistentModel
 
 ### Conforms To
 - [HistoryUpdate](historyupdate.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

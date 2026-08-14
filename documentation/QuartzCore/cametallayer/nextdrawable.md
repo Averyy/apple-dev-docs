@@ -21,7 +21,7 @@ func nextDrawable() -> (any CAMetalDrawable)?
 
 #### Return Value
 
-A Metal drawable. Use the drawable’s [`texture`](cametaldrawable/texture.md) property to configure a [`MTLRenderPipelineColorAttachmentDescriptor`](https://developer.apple.com/documentation/Metal/MTLRenderPipelineColorAttachmentDescriptor) object for rendering to the layer.
+A Metal drawable. Use the drawable’s [`texture`](cametaldrawable/texture.md) property to configure a [`MTLRenderPipelineColorAttachmentDescriptor`](https://developer.apple.com/documentation/metal/mtlrenderpipelinecolorattachmentdescriptor) object for rendering to the layer.
 
 #### Discussion
 

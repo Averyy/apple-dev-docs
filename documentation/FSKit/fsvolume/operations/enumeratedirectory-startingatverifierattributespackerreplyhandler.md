@@ -22,7 +22,7 @@ This method uses the [`packEntry(name:itemType:itemID:nextCookie:attributes:)`](
 1. Enumeration starts with a call to `enumerateDirectory` using the initial next-cookie and verifier values [`initial`](fsdirectorycookie/initial.md) and [`initial`](fsdirectoryverifier/initial.md), respectively.
 2. The implementation uses `packer` to pack the initial set of directory entries. Packing also sets a `nextCookie` to use on the next call.
 3. The implementation replies with a new verifier value, a nonzero value that reflects the directory’s current version.
-4. On the next call the implementation packs the next set of entries, starting with the item indicated by `cookie`. If `cookie` doesn’t resolve to a valid directory entry, complete the request with an error of domain [`NSPOSIXErrorDomain`](https://developer.apple.com/documentation/Foundation/NSPOSIXErrorDomain) and code [`FSError.Code.invalidDirectoryCookie`](fserror/code/invaliddirectorycookie.md).
+4. On the next call the implementation packs the next set of entries, starting with the item indicated by `cookie`. If `cookie` doesn’t resolve to a valid directory entry, complete the request with an error of domain [`NSPOSIXErrorDomain`](https://developer.apple.com/documentation/foundation/nsposixerrordomain) and code [`FSError.Code.invalidDirectoryCookie`](fserror/code/invaliddirectorycookie.md).
 
 When packing, make sure to use acceptable directory entry names and unambiguous input to all file operations that take names without additional normalization, such as`lookupName`.
 

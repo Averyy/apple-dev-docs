@@ -26,7 +26,7 @@ By default, the value is `[]` (Swift) or `0` (Objective-C) and all testing modes
 myDomain.testingModes = [.alwaysEnabled, .interactive]
 ```
 
-> ❗ **Important**:  You must add the [`com.apple.developer.fileprovider.testing-mode`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.fileprovider.testing-mode) entitlement to your target before assigning a non-empty value to this property. You can only use this entitlement during testing and development. If you add it to your app or extension, you must remove it before you submit your app to TestFlight or the Mac App Store.
+> ❗ **Important**:  You must add the [`com.apple.developer.fileprovider.testing-mode`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.fileprovider.testing-mode) entitlement to your target before assigning a non-empty value to this property. You can only use this entitlement during testing and development. If you add it to your app or extension, you must remove it before you submit your app to TestFlight or the Mac App Store.
 
 The system registers the domain’s testing mode when you add the domain by calling [`add(_:completionHandler:)`](nsfileprovidermanager/add(_:completionhandler:).md). You can’t change the test mode after you add the domain.
 

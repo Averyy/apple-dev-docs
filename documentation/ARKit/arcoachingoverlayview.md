@@ -22,11 +22,11 @@ This view offers your users a standardized onboarding routine. You can configure
 
 These illustrations show overlay views with horizontal- and vertical-plane goals, indicating that the user should begin moving the device:
 
-![Illustration showing two overlay views. The view at the left shows a horizontal plane, and the view at the right shows a vertical plane. Both views indicate that the user should begin moving the device.](https://docs-assets.developer.apple.com/published/95e9c9b94a8387be085262b139dfc029/media-3403212%402x.png)
+![Illustration showing two overlay views. The view at the left shows a horizontal plane, and the view at the right shows a vertical plane. Both views indicate that the user should begin moving the device.](/images/com.apple.arkit/media-3403212@2x.png)
 
 These illustrations show overlay views indicating that the user should continue moving the phone or change the speed with which they move it:
 
-![Illustration showing two overlay views. The view at the left indicates that the device is moving and the user should continue moving it. The view at the right indicates that the device is moving too fast and the user should move it more slowly.](https://docs-assets.developer.apple.com/published/bcfcb498fb67e55f75f226cd04a0fbeb/media-3403211%402x.png)
+![Illustration showing two overlay views. The view at the left indicates that the device is moving and the user should continue moving it. The view at the right indicates that the device is moving too fast and the user should move it more slowly.](/images/com.apple.arkit/media-3403211@2x.png)
 
 When you start your app, the coaching overlay asks the user to move the device in ways that help ARKit establish tracking. When you choose a specific goal like finding a plane, the view tailors its instructions accordingly. After the coaching overlay determines the goal has been met and no further coaching is required, it hides from the user’s view.
 
@@ -40,11 +40,11 @@ By default, [`activatesAutomatically`](arcoachingoverlayview/activatesautomatica
 
 If relocalization is enabled (see [`sessionShouldAttemptRelocalization(_:)`](arsessionobserver/sessionshouldattemptrelocalization(_:).md)), ARKit attempts to restore your session if any interruptions degrade your app’s tracking state. In this event, the coaching overlay presents itself and gives the user instructions to assist ARKit with relocalizing.
 
-![User instruction to return to the user’s previous location so ARKit can restore the session. ](https://docs-assets.developer.apple.com/published/3b7170e8a2334f3c3bee0ad82f7ba5e3/media-3394488%402x.png)
+![User instruction to return to the user’s previous location so ARKit can restore the session. ](/images/com.apple.arkit/media-3394488@2x.png)
 
 During this time, the coaching overlay includes a button that lets the user indicate they’d like to start over rather than restore the session.
 
-![Button that enables the user to indicate they’d like to start over rather than restore the session.](https://docs-assets.developer.apple.com/published/ee357831490678aa747f7bcb084d2133/media-3394474%402x.png)
+![Button that enables the user to indicate they’d like to start over rather than restore the session.](/images/com.apple.arkit/media-3394474@2x.png)
 
 ARKit notifies you when the user presses Start Over by calling your delegate’s [`coachingOverlayViewDidRequestSessionReset(_:)`](arcoachingoverlayviewdelegate/coachingoverlayviewdidrequestsessionreset(_:).md) function. Implement this callback if your app requires any custom actions to restart the AR experience.
 
@@ -93,42 +93,42 @@ For more information about relocalization, see [`Managing Session Life Cycle and
 ## Relationships
 
 ### Inherits From
-- [UIView](../UIKit/UIView.md)
+- [UIView](../uikit/uiview.md)
 ### Conforms To
-- [CALayerDelegate](../QuartzCore/CALayerDelegate.md)
-- [CLBodyIdentifiable](../CoreLocation/CLBodyIdentifiable.md)
-- [CMBodyIdentifiable](../CoreMotion/CMBodyIdentifiable.md)
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCoding](../Foundation/NSCoding.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
-- [UIAccessibilityIdentification](../UIKit/UIAccessibilityIdentification.md)
-- [UIActivityItemsConfigurationProviding](../UIKit/UIActivityItemsConfigurationProviding.md)
-- [UIAppearance](../UIKit/UIAppearance.md)
-- [UIAppearanceContainer](../UIKit/UIAppearanceContainer.md)
-- [UICoordinateSpace](../UIKit/UICoordinateSpace.md)
-- [UIDynamicItem](../UIKit/UIDynamicItem.md)
-- [UIFocusEnvironment](../UIKit/UIFocusEnvironment.md)
-- [UIFocusItem](../UIKit/UIFocusItem.md)
-- [UIFocusItemContainer](../UIKit/UIFocusItemContainer.md)
-- [UILargeContentViewerItem](../UIKit/UILargeContentViewerItem.md)
-- [UIPasteConfigurationSupporting](../UIKit/UIPasteConfigurationSupporting.md)
-- [UIPopoverPresentationControllerSourceItem](../UIKit/UIPopoverPresentationControllerSourceItem.md)
-- [UIResponderStandardEditActions](../UIKit/UIResponderStandardEditActions.md)
-- [UITraitChangeObservable](../UIKit/UITraitChangeObservable-67e94.md)
-- [UITraitEnvironment](../UIKit/UITraitEnvironment.md)
-- [UIUserActivityRestoring](../UIKit/UIUserActivityRestoring.md)
+- [CALayerDelegate](../quartzcore/calayerdelegate.md)
+- [CLBodyIdentifiable](../corelocation/clbodyidentifiable.md)
+- [CMBodyIdentifiable](../coremotion/cmbodyidentifiable.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCoding](../foundation/nscoding.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
+- [UIAccessibilityIdentification](../uikit/uiaccessibilityidentification.md)
+- [UIActivityItemsConfigurationProviding](../uikit/uiactivityitemsconfigurationproviding.md)
+- [UIAppearance](../uikit/uiappearance.md)
+- [UIAppearanceContainer](../uikit/uiappearancecontainer.md)
+- [UICoordinateSpace](../uikit/uicoordinatespace.md)
+- [UIDynamicItem](../uikit/uidynamicitem.md)
+- [UIFocusEnvironment](../uikit/uifocusenvironment.md)
+- [UIFocusItem](../uikit/uifocusitem.md)
+- [UIFocusItemContainer](../uikit/uifocusitemcontainer.md)
+- [UILargeContentViewerItem](../uikit/uilargecontentvieweritem.md)
+- [UIPasteConfigurationSupporting](../uikit/uipasteconfigurationsupporting.md)
+- [UIPopoverPresentationControllerSourceItem](../uikit/uipopoverpresentationcontrollersourceitem.md)
+- [UIResponderStandardEditActions](../uikit/uiresponderstandardeditactions.md)
+- [UITraitChangeObservable](../uikit/uitraitchangeobservable-67e94.md)
+- [UITraitEnvironment](../uikit/uitraitenvironment.md)
+- [UIUserActivityRestoring](../uikit/uiuseractivityrestoring.md)
 
 ## See Also
 
-- [struct RealityView](../RealityKit/RealityView.md)
+- [struct RealityView](../realitykit/realityview.md)
   A view that contains RealityKit content.
-- [class ARView](../RealityKit/ARView.md)
+- [class ARView](../realitykit/arview.md)
   A view that enables you to display an AR experience with RealityKit.
 - [class ARSCNView](arscnview.md)
   A view that blends virtual 3D content from SceneKit into your augmented reality experience.

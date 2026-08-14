@@ -21,8 +21,6 @@ WeatherKit provides timely weather information including current conditions, min
 ## Topics
 
 ### Fundamentals
-- [Fetching weather forecasts with WeatherKit](fetching_weather_forecasts_with_weatherkit.md)
-  Request and display weather data for destination airports in a flight-planning app.
 - [struct Weather](weather.md)
   A model representing the aggregate weather data the caller requests.
 - [class WeatherService](weatherservice.md)

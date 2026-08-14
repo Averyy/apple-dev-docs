@@ -41,8 +41,8 @@ Xcode lets you configure information about your date interface object in your st
 | Attribute | Description |
 | --- | --- |
 | Format | A selector for choosing between standard and custom formats. For standard formats, you use the Date and Time attributes to configure the information you want to display. Changing the value of this attribute to Custom lets you configure the date exactly the way you want based on the format options described in [`Data Formatting Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/DataFormatting/DataFormatting.html#//apple_ref/doc/uid/10000029i). |
-| Date | The date information to display. The date options correspond to the values of the [`DateFormatter.Style`](https://developer.apple.com/documentation/Foundation/DateFormatter/Style) type. |
-| Time | The time information to display. The time options correspond to the values of the [`DateFormatter.Style`](https://developer.apple.com/documentation/Foundation/DateFormatter/Style) type. |
+| Date | The date information to display. The date options correspond to the values of the [`DateFormatter.Style`](https://developer.apple.com/documentation/foundation/dateformatter/style) type. |
+| Time | The time information to display. The time options correspond to the values of the [`DateFormatter.Style`](https://developer.apple.com/documentation/foundation/dateformatter/style) type. |
 | Preview | A preview of what the date and time will look like. |
 
 A date object is a custom label whose text you cannot set directly. However, you can customize the appearance of the date object as you would customize a label using the Attributes inspector in Xcode. For information about the label attributes you can configure, see [`WKInterfaceLabel`](wkinterfacelabel.md).
@@ -62,12 +62,12 @@ A date object is a custom label whose text you cannot set directly. However, you
 ### Inherits From
 - [WKInterfaceObject](wkinterfaceobject.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

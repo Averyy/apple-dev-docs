@@ -16,7 +16,7 @@ string environment
 
 #### Discussion
 
-You receive notifications in the sandbox environment when you opt in to receive notifications in the sandbox environment and test your app in the sandbox environment. TestFlight also uses the sandbox environment to send notifications. To opt in to receive notifications, see [`Enter a URL for App Store Server Notifications`](https://developer.apple.comhttps://help.apple.com/app-store-connect/#/dev0067a330b). For more information about testing, see [`Testing at all stages of development with Xcode and the sandbox`](https://developer.apple.com/documentation/StoreKit/testing-at-all-stages-of-development-with-xcode-and-the-sandbox), and [`Beta Testing Made Simple with TestFlight`](https://developer.apple.comhttps://developer.apple.com/testflight/).
+You receive notifications in the sandbox environment when you opt in to receive notifications in the sandbox environment and test your app in the sandbox environment. TestFlight also uses the sandbox environment to send notifications. To opt in to receive notifications, see [`Enter a URL for App Store Server Notifications`](https://developer.apple.comhttps://help.apple.com/app-store-connect/#/dev0067a330b). For more information about testing, see [`Testing at all stages of development with Xcode and the sandbox`](https://developer.apple.com/documentation/storekit/testing-at-all-stages-of-development-with-xcode-and-the-sandbox), and [`Beta Testing Made Simple with TestFlight`](https://developer.apple.comhttps://developer.apple.com/testflight/).
 
 ## See Also
 

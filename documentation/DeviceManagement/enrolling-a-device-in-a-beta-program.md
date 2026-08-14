@@ -14,7 +14,7 @@ Follow these steps to retrieve beta tokens from the AppleSeed for IT program usi
 
 1. An administrator in Apple School Manager or Apple Business enrolls in the [`AppleSeed for IT`](https://developer.apple.comhttps://beta.apple.com/for-it) program.
 2. The AppleSeed for IT service creates organization-specific beta program enrollment tokens.
-3. A device management service requests available beta program tokens using the `https://mdmenrollment.apple.com/os-beta-enrollment/tokens` endpoint. ![The device management service retrieves the beta tokens from the AppleSeed for IT program](https://docs-assets.developer.apple.com/published/0774d2d632b35a7a7d667d3a95ff42cf/enrolling-a-device-in-a-beta-program01%402x.png)
+3. A device management service requests available beta program tokens using the `https://mdmenrollment.apple.com/os-beta-enrollment/tokens` endpoint. ![The device management service retrieves the beta tokens from the AppleSeed for IT program](/images/com.apple.devicemanagement/enrolling-a-device-in-a-beta-program01@2x.png)
 
 Similar to other service endpoints available at `mdmenrollment.apple.com`, device management services authenticate using OAuth.
 
@@ -48,7 +48,7 @@ The `token` is unique for each organization and you can’t reuse it across diff
 
 After a device enrolls in device management, a device management service can offer, enroll, or unenroll supervised iPad, iPhone, and Mac devices from beta programs using the `Beta` dictionary in the [`SoftwareUpdateSettings`](softwareupdatesettings.md) declaration. On unsupervised devices, you can only use the `OfferPrograms` array to let users manually enroll in beta programs that the organization subscribes to.
 
-![The device management service applies a software update settings declaration to enroll a device in a beta program](https://docs-assets.developer.apple.com/published/435437ad7b670520f859b4a7424ccf0d/enrolling-a-device-in-a-beta-program02%402x.png)
+![The device management service applies a software update settings declaration to enroll a device in a beta program](/images/com.apple.devicemanagement/enrolling-a-device-in-a-beta-program02@2x.png)
 
 The dictionaries used in the `OfferPrograms` and `RequireProgram` keys must contain the following keys:
 

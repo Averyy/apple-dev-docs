@@ -32,9 +32,9 @@ The protocols specific to import and export operations extend this type, such as
 ## Relationships
 
 ### Inherits From
-- [AppExtension](../ExtensionFoundation/AppExtension.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [AppExtension](../extensionfoundation/appextension.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 ### Inherited By
 - [ResourcesExporting](resourcesexporting.md)
 - [ResourcesExportingWithOptions](resourcesexportingwithoptions.md)
@@ -42,7 +42,7 @@ The protocols specific to import and export operations extend this type, such as
 
 ## See Also
 
-- [com.apple.developer.app-migration.data-container-access](../BundleResources/Entitlements/com.apple.developer.app-migration.data-container-access.md)
+- [com.apple.developer.app-migration.data-container-access](../bundleresources/entitlements/com.apple.developer.app-migration.data-container-access.md)
   An entitlement required for app extensions to perform a one-time transfer of on-device data to or from another platform.
 
 

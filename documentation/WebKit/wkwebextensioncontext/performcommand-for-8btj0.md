@@ -20,7 +20,7 @@ Returns `YES` if a command corresponding to the event was found and performed, `
 
 #### Discussion
 
-This method checks for a command corresponding to the provided event and performs it, if available. The app should use this method to perform any extension commands at an appropriate time in the app’s event handling, like in [`sendEvent(_:)`](https://developer.apple.com/documentation/AppKit/NSApplication/sendEvent(_:)) of  [`NSApplication`](https://developer.apple.com/documentation/AppKit/NSApplication) or  [`sendEvent(_:)`](https://developer.apple.com/documentation/AppKit/NSWindow/sendEvent(_:)) of  [`NSWindow`](https://developer.apple.com/documentation/AppKit/NSWindow) subclasses.
+This method checks for a command corresponding to the provided event and performs it, if available. The app should use this method to perform any extension commands at an appropriate time in the app’s event handling, like in [`sendEvent(_:)`](https://developer.apple.com/documentation/appkit/nsapplication/sendevent(_:)) of  [`NSApplication`](https://developer.apple.com/documentation/appkit/nsapplication) or  [`sendEvent(_:)`](https://developer.apple.com/documentation/appkit/nswindow/sendevent(_:)) of  [`NSWindow`](https://developer.apple.com/documentation/appkit/nswindow) subclasses.
 
 ## Parameters
 

@@ -21,11 +21,11 @@ var kAudioUnitProperty_ClassInfo: AudioUnitPropertyID { get }
 
 #### Discussion
 
-A read/write [`CFDictionary`](https://developer.apple.com/documentation/CoreFoundation/CFDictionary) object valid on the audio unit global scope. A macOS audio unit that supports the part scope may, in addition, support presets on that scope that apply to individual parts.
+A read/write [`CFDictionary`](https://developer.apple.com/documentation/corefoundation/cfdictionary) object valid on the audio unit global scope. A macOS audio unit that supports the part scope may, in addition, support presets on that scope that apply to individual parts.
 
-When assigning a class information dictionary to an audio unit with the [`AudioUnitSetProperty(_:_:_:_:_:_:)`](audiounitsetproperty(_:_:_:_:_:_:).md) function, you own the reference to the dictionary and are responsible for later releasing it by calling the [`CFRelease`](https://developer.apple.com/documentation/CoreFoundation/CFRelease) function.
+When assigning a class information dictionary to an audio unit with the [`AudioUnitSetProperty(_:_:_:_:_:_:)`](audiounitsetproperty(_:_:_:_:_:_:).md) function, you own the reference to the dictionary and are responsible for later releasing it by calling the [`CFRelease`](https://developer.apple.com/documentation/corefoundation/cfrelease) function.
 
-When obtaining a class information dictionary from an audio unit with the [`AudioUnitGetProperty(_:_:_:_:_:_:)`](audiounitgetproperty(_:_:_:_:_:_:).md) function, you also own the reference to the dictionary and are responsible for later releasing it by calling the [`CFRelease`](https://developer.apple.com/documentation/CoreFoundation/CFRelease) function.
+When obtaining a class information dictionary from an audio unit with the [`AudioUnitGetProperty(_:_:_:_:_:_:)`](audiounitgetproperty(_:_:_:_:_:_:).md) function, you also own the reference to the dictionary and are responsible for later releasing it by calling the [`CFRelease`](https://developer.apple.com/documentation/corefoundation/cfrelease) function.
 
 ## See Also
 

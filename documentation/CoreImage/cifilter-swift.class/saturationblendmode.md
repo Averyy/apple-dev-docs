@@ -43,7 +43,7 @@ func saturationBlendMode(inputImage: CIImage, backgroundImage: CIImage) -> CIIma
 }
 ```
 
-![The image on the top left shows a beach with multiple palm trees and a rainbow arching across the blue sky.  The image below is a gradient image displaying a gradual color shift from purple to a dark orange. The image on the right shows the output from applying a saturation-blend mode filter. The result displays a gray beach with not much visible detail and only the colors from the gradient photo visible.](https://docs-assets.developer.apple.com/published/714ca45e3700dec0fffcad8ad45cbd39/media-3546404%402x.png)
+![The image on the top left shows a beach with multiple palm trees and a rainbow arching across the blue sky.  The image below is a gradient image displaying a gradual color shift from purple to a dark orange. The image on the right shows the output from applying a saturation-blend mode filter. The result displays a gray beach with not much visible detail and only the colors from the gradient photo visible.](/images/com.apple.coreimage/media-3546404@2x.png)
 
 ## See Also
 

@@ -19,7 +19,7 @@ void output::setUV3(float4 value)
 
 This function assigns a custom UV coordinate to the third texture coordinate channel of the output mesh. If the mesh doesn’t already have a UV3 channel, it will be created. This enables multi-texturing and advanced shader effects.
 
-> **Note**: ![Graph](https://docs-assets.developer.apple.com/published/dc15f4ea8ed7dbebea493703d5a3c2fe/output__setUV3.svg)
+> **Note**: ![Graph](/images/com.apple.computegraph/output__setUV3.svg)
 
 > **Note**: Reads and writes to output attribute `float4 uv3`
 

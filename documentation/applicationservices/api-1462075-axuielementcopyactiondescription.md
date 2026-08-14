@@ -18,6 +18,12 @@ func AXUIElementCopyActionDescription(_ element: AXUIElement, _ action: CFString
 
 If unsuccessful, `AXUIElementCopyActionDescription` may return one of the following error codes, among others:
 
+- **`kAXErrorActionUnsupported`**: The specified AXUIElementRef does not support the specified action (you will also receive this error if you pass in the system-wide accessibility object).
+- **`kAXErrorIllegalArgument`**: One or more of the arguments is an illegal value.
+- **`kAXErrorInvalidUIElement`**: The AXUIElementRef is invalid.
+- **`kAXErrorCannotComplete`**: The function cannot complete because messaging has failed in some way.
+- **`kAXErrorNotImplemented`**: The process does not fully support the accessibility API.
+
 ## Parameters
 
 - `element`: The AXUIElementRef representing the accessibility object.

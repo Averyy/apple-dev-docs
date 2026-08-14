@@ -7,7 +7,7 @@ An atom that maps from a time in a movie to a time in a media, and ultimately to
 
 #### Overview
 
-See [`Edit list atom ('elst')`](edit_list_atom.md).
+See [`Edit list atom`](edit_list_atom.md).
 
 ## See Also
 

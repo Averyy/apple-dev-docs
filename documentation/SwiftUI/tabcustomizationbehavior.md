@@ -37,7 +37,7 @@ Use this type in conjunction with the [`customizationBehavior(_:for:)`](tabconte
 ## Relationships
 
 ### Conforms To
-- [Equatable](../Swift/Equatable.md)
+- [Equatable](../swift/equatable.md)
 
 ## See Also
 

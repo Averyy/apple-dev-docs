@@ -22,7 +22,7 @@ typealias Failure = Error
 
 #### Discussion
 
-This publisher produces the Swift [`Error`](https://developer.apple.com/documentation/Swift/Error) type.
+This publisher produces the Swift [`Error`](https://developer.apple.com/documentation/swift/error) type.
 
 ## See Also
 

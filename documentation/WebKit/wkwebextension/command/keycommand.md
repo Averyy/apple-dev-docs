@@ -20,9 +20,9 @@ var keyCommand: UIKeyCommand? { get }
 
 #### Discussion
 
-Provides a [`UIKeyCommand`](https://developer.apple.com/documentation/UIKit/UIKeyCommand) instance representing the web extension command, ready for integration in the app.
+Provides a [`UIKeyCommand`](https://developer.apple.com/documentation/uikit/uikeycommand) instance representing the web extension command, ready for integration in the app.
 
-The property is `nil` if no shortcut is defined. Otherwise, the key command is fully configured with the necessary input key and modifier flags to perform the associated command upon activation. It can be included in a view controller or other responder’s [`keyCommands`](https://developer.apple.com/documentation/UIKit/UIResponder/keyCommands) property, enabling keyboard activation and discoverability of the web extension command.
+The property is `nil` if no shortcut is defined. Otherwise, the key command is fully configured with the necessary input key and modifier flags to perform the associated command upon activation. It can be included in a view controller or other responder’s [`keyCommands`](https://developer.apple.com/documentation/uikit/uiresponder/keycommands) property, enabling keyboard activation and discoverability of the web extension command.
 
 
 ---

@@ -21,9 +21,9 @@ var usesSceneTimeBase: Bool { get set }
 
 #### Discussion
 
-If the value of this property is [`true`](https://developer.apple.com/documentation/Swift/true), animation timing is governed by the currentTime property of the view, layer, or custom renderer responsible for drawing the scene. The default value is [`false`](https://developer.apple.com/documentation/Swift/false).
+If the value of this property is [`true`](https://developer.apple.com/documentation/swift/true), animation timing is governed by the currentTime property of the view, layer, or custom renderer responsible for drawing the scene. The default value is [`false`](https://developer.apple.com/documentation/swift/false).
 
-To attach animations to SceneKit objects, see [`SCNAnimatable`](https://developer.apple.com/documentation/SceneKit/SCNAnimatable).
+To attach animations to SceneKit objects, see [`SCNAnimatable`](https://developer.apple.com/documentation/scenekit/scnanimatable).
 
 
 ---

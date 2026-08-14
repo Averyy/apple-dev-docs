@@ -16,7 +16,7 @@ static let rate: NSSpeechSynthesizer.SpeechPropertyKey
 
 #### Discussion
 
-An [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) object that specifies the synthesizer’s speaking rate. The range of supported rates is not predefined by the [`NSSpeechSynthesizer`](nsspeechsynthesizer.md) class; each speech synthesizer provides its own range of speech rates. Average human speech occurs at a rate of 180 to 220 words per minute.
+An [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) object that specifies the synthesizer’s speaking rate. The range of supported rates is not predefined by the [`NSSpeechSynthesizer`](nsspeechsynthesizer.md) class; each speech synthesizer provides its own range of speech rates. Average human speech occurs at a rate of 180 to 220 words per minute.
 
 This property is used with [`setObject(_:forProperty:)`](nsspeechsynthesizer/setobject(_:forproperty:).md) and [`object(forProperty:)`](nsspeechsynthesizer/object(forproperty:).md).
 

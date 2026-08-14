@@ -18,7 +18,7 @@ string offerIdentifier
 
 The `offerIdentifier` is a string that you provide in App Store Connect when you set up an offer. All offer types ([`offerType`](offertype.md)) have offer identifiers, except for introductory offers.
 
-For more information on offer codes, see [`Supporting offer codes in your app`](https://developer.apple.com/documentation/StoreKit/supporting-offer-codes-in-your-app). For more information on promotional offers, see [`Set up promotional offers for auto-renewable subscriptions`](https://developer.apple.comhttps://help.apple.com/app-store-connect/#/dev16dfca448).
+For more information on offer codes, see [`Supporting offer codes in your app`](https://developer.apple.com/documentation/storekit/supporting-offer-codes-in-your-app). For more information on promotional offers, see [`Set up promotional offers for auto-renewable subscriptions`](https://developer.apple.comhttps://help.apple.com/app-store-connect/#/dev16dfca448).
 
 ## See Also
 

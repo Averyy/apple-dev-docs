@@ -16,7 +16,7 @@ static let allPages: NSPrintInfo.AttributeKey
 
 #### Discussion
 
-If [`true`](https://developer.apple.com/documentation/Swift/true), includes all pages in output.
+If [`true`](https://developer.apple.com/documentation/swift/true), includes all pages in output.
 
 ## See Also
 

@@ -18,7 +18,7 @@ class TCTouchController
 
 #### Overview
 
-The controller exposes controls through a [`GCController`](https://developer.apple.com/documentation/GameController/GCController) instance, and enables seamless integration with the [`Game Controller`](https://developer.apple.com/documentation/GameController) framework.
+The controller exposes controls through a [`GCController`](https://developer.apple.com/documentation/gamecontroller/gccontroller) instance, and enables seamless integration with the [`Game Controller`](https://developer.apple.com/documentation/gamecontroller) framework.
 
 This class manages the lifecycle of touch controls, handles user interaction, renders the controls using Metal, and provides a `GCController` instance that reflects the state of the on-screen controls.
 
@@ -118,14 +118,14 @@ This class manages the lifecycle of touch controls, handles user interaction, re
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 
 ---

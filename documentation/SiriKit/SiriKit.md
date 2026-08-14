@@ -15,17 +15,17 @@ Empower users to interact with their devices through voice, intelligent suggesti
 
 #### Overview
 
-> **Note**: SiriKit, Intents, and IntentsUI frameworks continue to provide legacy support for Shortcuts actions, widget configuration, and most existing Siri interactions. To implement modern support for these features and integrate your app with Apple Intelligence and Siri AI, use the [`App Intents`](https://developer.apple.com/documentation/AppIntents) framework.
+> **Note**: SiriKit, Intents, and IntentsUI frameworks continue to provide legacy support for Shortcuts actions, widget configuration, and most existing Siri interactions. To implement modern support for these features and integrate your app with Apple Intelligence and Siri AI, use the [`App Intents`](https://developer.apple.com/documentation/appintents) framework.
 
 For SiriKit, use the standard intents that the system provides to empower actions users already ask Siri to do, such as playing music or sending a text message. You can also offer your app’s unique capabilities throughout the system by designing custom intents. For more details about defining custom intents, see [`Adding User Interactivity with Siri Shortcuts and the Shortcuts App`](adding-user-interactivity-with-siri-shortcuts-and-the-shortcuts-app.md).
 
-![A collection of devices, including a MacBook Air, an iPhone, an Apple Watch, and a HomePod mini. The devices display user interactions that SiriKit enables. On the MacBook Air, the Shortcuts app is open with a collection of shortcuts in the All Shortcuts section. The iPhone displays a Siri Suggestion with the Maps icon. The Apple Watch displays the Siri animation and the words “What can I help you with?”](https://docs-assets.developer.apple.com/published/06419e94cd4dfe4473c92e9964f7377f/media-3849683%402x.png)
+![A collection of devices, including a MacBook Air, an iPhone, an Apple Watch, and a HomePod mini. The devices display user interactions that SiriKit enables. On the MacBook Air, the Shortcuts app is open with a collection of shortcuts in the All Shortcuts section. The iPhone displays a Siri Suggestion with the Maps icon. The Apple Watch displays the Siri animation and the words “What can I help you with?”](/images/com.apple.sirikit/media-3849683@2x.png)
 
 You can process intents directly in your app, or in an Intents app extension. For guidance on setting up an app extension and sharing information between your app and extension, see [`Structuring Your Code to Support App Extensions`](structuring-your-code-to-support-app-extensions.md).
 
 To display branding or other customized content in Siri and Maps after you fulfill a person’s request, create a custom view controller in an IntentsUI app extension. See [`Creating an Intents UI Extension`](creating-an-intents-ui-extension.md) for more details.
 
-> ❗ **Important**:  With a person’s permission, an installed health research app that uses [`SensorKit`](https://developer.apple.com/documentation/SensorKit) entitlements may collect Face Metrics data while your SiriKit app is in use. To prevent SensorKit from collecting Face Metrics data while your app is in use, you can set the [`SRResearchDataGeneration`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/SRResearchDataGeneration) information property list key to `NO`.
+> ❗ **Important**:  With a person’s permission, an installed health research app that uses [`SensorKit`](https://developer.apple.com/documentation/sensorkit) entitlements may collect Face Metrics data while your SiriKit app is in use. To prevent SensorKit from collecting Face Metrics data while your app is in use, you can set the [`SRResearchDataGeneration`](https://developer.apple.com/documentation/bundleresources/information-property-list/srresearchdatageneration) information property list key to `NO`.
 
 ## Topics
 

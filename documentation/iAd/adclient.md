@@ -25,7 +25,7 @@ To use this class, fetch the shared client object, `shared()`. Then call its `re
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 
 ## See Also
 

@@ -22,13 +22,13 @@ var particleImage: Any? { get set }
 
 #### Discussion
 
-Texture images help to determine visual effect rendered by the particle system. The [`particleColor`](scnparticlesystem/particlecolor.md) property colorizes the image before rendering. You may specify an image using an [`NSImage`](https://developer.apple.com/documentation/AppKit/NSImage) (in macOS) or [`UIImage`](https://developer.apple.com/documentation/UIKit/UIImage) (in iOS) instance, or an [`NSString`](https://developer.apple.com/documentation/Foundation/NSString) or [`NSURL`](https://developer.apple.com/documentation/Foundation/NSURL) instance containing the path or URL to an image file.
+Texture images help to determine visual effect rendered by the particle system. The [`particleColor`](scnparticlesystem/particlecolor.md) property colorizes the image before rendering. You may specify an image using an [`NSImage`](https://developer.apple.com/documentation/appkit/nsimage) (in macOS) or [`UIImage`](https://developer.apple.com/documentation/uikit/uiimage) (in iOS) instance, or an [`NSString`](https://developer.apple.com/documentation/foundation/nsstring) or [`NSURL`](https://developer.apple.com/documentation/foundation/nsurl) instance containing the path or URL to an image file.
 
 If the value is `nil` (the default), SceneKit renders each particle as a small white square (colorized by the [`particleColor`](scnparticlesystem/particlecolor.md) property).
 
 To specify a sequence of frames for animating each particle, arrange the frames as a grid in a single image, as shown in [`Figure 1`](scnparticlesystem/1524153-particleimage#1965925.md), then use the properties listed in Animating Particle Images to identify frames in the grid and set the speed and style of the animation.
 
-![None](https://docs-assets.developer.apple.com/published/fac5a79830660a448a39b7b503f41e60/media-1965925%402x.png)
+![None](/images/com.apple.scenekit/media-1965925@2x.png)
 
 You can also create particles that appear reflective by assigning an array of images to this property. SceneKit treats the six images in the array as a cube map and renders each particle as a solid-color, reflective sphere. The particle system’s [`fresnelExponent`](scnparticlesystem/fresnelexponent.md) property controls each sphere’s reflectivity. For details on cube map textures, see [`SCNMaterialProperty`](scnmaterialproperty.md).
 

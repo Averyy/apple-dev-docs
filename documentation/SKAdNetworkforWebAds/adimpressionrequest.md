@@ -29,7 +29,7 @@ The device generates the [`AdImpressionRequest`](adimpressionrequest.md) and sen
 - `source_domain` (string) *(required)*: The effective top-level domain and one more preceding path component (eTLD+1) representation of the ad network that seeks ad attribution.
 - `source_engagement_type` (string) *(required)*: A key that describes the type of user action that leads to the ad impression. The value is `"click_to_App_Store"`.
 - `source_nonce` (string) *(required)*: A Base64URL-encoded string representation of a UUID. This value is the same value the ad network provides as the `attributionSourceNonce` in the attributable ad link.
-- `version` (string) *(required)*: The SKAdNetwork version of `"4.0"` or later. See [`SKAdNetwork release notes`](https://developer.apple.com/documentation/StoreKit/skadnetwork-release-notes) for version information.
+- `version` (string) *(required)*: The SKAdNetwork version of `"4.0"` or later. See [`SKAdNetwork release notes`](https://developer.apple.com/documentation/storekit/skadnetwork-release-notes) for version information.
 
 ## See Also
 

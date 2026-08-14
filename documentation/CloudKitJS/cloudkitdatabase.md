@@ -30,13 +30,13 @@ Read access to the public database doesn’t require that the user sign in. Your
 
 The asynchronous methods in this class return a `Promise` object that resolves when the operation completes or is rejected due to an error. For a description of the `Promise` class returned by these methods, go to [`Mozilla Developer Network: Promise`](https://developer.apple.comhttps://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise).
 
-This class is similar to the [`CKDatabase`](https://developer.apple.com/documentation/CloudKit/CKDatabase) class in the CloudKit framework.
+This class is similar to the [`CKDatabase`](https://developer.apple.com/documentation/cloudkit/ckdatabase) class in the CloudKit framework.
 
 ##### Creating Your Schema
 
 Before you can access records, you must create a schema from your native app using just-in-time schema (see [`Creating a Database Schema by Saving Records`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/DataManagement/Conceptual/CloudKitQuickStart/CreatingaSchemabySavingRecords/CreatingaSchemabySavingRecords.html#//apple_ref/doc/uid/TP40014987-CH3)) or using CloudKit Dashboard (see [`Using CloudKit Dashboard to Manage Databases`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/DataManagement/Conceptual/CloudKitQuickStart/EditingSchemesUsingCloudKitDashboard/EditingSchemesUsingCloudKitDashboard.html#//apple_ref/doc/uid/TP40014987-CH5)). Use CloudKit Dashboard to verify that the record types and fields appear in your app’s containers before you test your JavaScript code.
 
-![None](https://docs-assets.developer.apple.com/published/0b25b802e8e3f81ba6af903b14cfe23e/media-2556286%402x.png)
+![None](/images/com.apple.cloudkitjs/media-2556286@2x.png)
 
 ## Topics
 

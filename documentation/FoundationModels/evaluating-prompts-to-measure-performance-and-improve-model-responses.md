@@ -125,7 +125,7 @@ Your evaluation suite catches these trade-offs and lets you refine the approach 
 
 ## See Also
 
-- [Evaluating language model responses](../Evaluations/evaluating-language-model-responses.md)
+- [Evaluating language model responses](../evaluations/evaluating-language-model-responses.md)
   Build an evaluation that runs your intelligence-powered feature against samples and scores each response.
 - [Analyzing the runtime performance of your Foundation Models app](analyzing-the-runtime-performance-of-your-foundation-models-app.md)
   Measure how prompts, responses, and tool calls affect token consumption and response times in Instruments.

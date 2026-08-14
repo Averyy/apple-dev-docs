@@ -64,7 +64,7 @@ Text("Downtown Bus")
     .borderedCaption()
 ```
 
-![A screenshot showing the image of a bus with a caption reading](https://docs-assets.developer.apple.com/published/dc0170d83bbfb353e45ad5d2e90f7fe6/SwiftUI-View-ViewModifier%402x.png)
+![A screenshot showing the image of a bus with a caption reading](/images/com.apple.SwiftUI/SwiftUI-View-ViewModifier@2x.png)
 
 ## Parameters
 

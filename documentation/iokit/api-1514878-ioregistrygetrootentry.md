@@ -28,7 +28,7 @@ This method provides an accessor to the root of the registry for the machine. Th
 
 ## Parameters
 
-- `masterPort`: The primary port obtained from  . Pass   to look up the default primary port.
+- `masterPort`: The primary port obtained from [`IOMasterPort(_:_:)`](1514652-iomasterport.md). Pass [`kIOMasterPortDefault`](kiomasterportdefault.md) to look up the default primary port.
 
 ## See Also
 

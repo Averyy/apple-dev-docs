@@ -16,7 +16,7 @@ static let orderedByRow: NSAccessibility.Attribute
 
 #### Discussion
 
-The value is an `NSNumber` as `boolValue`. A value of [`true`](https://developer.apple.com/documentation/Swift/true) indicates row major order, and [`false`](https://developer.apple.com/documentation/Swift/false) indicates column major order.
+The value is an `NSNumber` as `boolValue`. A value of [`true`](https://developer.apple.com/documentation/swift/true) indicates row major order, and [`false`](https://developer.apple.com/documentation/swift/false) indicates column major order.
 
 ## See Also
 

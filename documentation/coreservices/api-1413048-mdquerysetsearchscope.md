@@ -19,7 +19,7 @@ func MDQuerySetSearchScope(_ query: MDQuery!, _ scopeDirectories: CFArray!, _ sc
 ## Parameters
 
 - `query`: The query object to modify.
-- `scopeDirectories`: A CFArray of CFStringRef or CFURLRef objects which specify where to search. For convenience the  ,   and   constants may also be included in the array.
+- `scopeDirectories`: A CFArray of CFStringRef or CFURLRef objects which specify where to search. For convenience the `kMDQueryScopeHome`, `kMDQueryScopeComputer` and `kMDQueryScopeNetwork` constants may also be included in the array.
 - `scopeOptions`: Additional options for modifying the search. Currently you must pass 0.
 
 ## See Also

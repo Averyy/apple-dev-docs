@@ -20,7 +20,7 @@ class CKAllowedSharingOptions
 
 #### Overview
 
-Register an instance of this class with an [`NSItemProvider`](https://developer.apple.com/documentation/Foundation/NSItemProvider) or when preparing a [`CKShareTransferRepresentation.ExportedShare`](cksharetransferrepresentation/exportedshare.md) before your app invokes the share sheet. The share sheet uses the registered `CKAllowedSharingOptions` object to let the user choose between the allowed options when sharing.
+Register an instance of this class with an [`NSItemProvider`](https://developer.apple.com/documentation/foundation/nsitemprovider) or when preparing a [`CKShareTransferRepresentation.ExportedShare`](cksharetransferrepresentation/exportedshare.md) before your app invokes the share sheet. The share sheet uses the registered `CKAllowedSharingOptions` object to let the user choose between the allowed options when sharing.
 
 ## Topics
 
@@ -50,25 +50,25 @@ Register an instance of this class with an [`NSItemProvider`](https://developer.
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCoding](../Foundation/NSCoding.md)
-- [NSCopying](../Foundation/NSCopying.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [NSSecureCoding](../Foundation/NSSecureCoding.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCoding](../foundation/nscoding.md)
+- [NSCopying](../foundation/nscopying.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 
 - [Sharing CloudKit Data with Other iCloud Users](sharing-cloudkit-data-with-other-icloud-users.md)
   Create and share private CloudKit data with other users by implementing the sharing UI.
-- [Sharing Core Data objects between iCloud users](../CoreData/sharing-core-data-objects-between-icloud-users.md)
+- [Sharing Core Data objects between iCloud users](../coredata/sharing-core-data-objects-between-icloud-users.md)
   Use Core Data and CloudKit to synchronize data between devices of an iCloud user and share data between different iCloud users.
 - [class CKShare](ckshare.md)
   A specialized record type that manages a collection of shared records.
@@ -76,9 +76,9 @@ Register an instance of this class with an [`NSItemProvider`](https://developer.
   A transfer representation the system uses to share an item.
 - [class CKSystemSharingUIObserver](cksystemsharinguiobserver.md)
   An object the system uses to monitor changes in sharing.
-- [class UICloudSharingController](../UIKit/UICloudSharingController.md)
+- [class UICloudSharingController](../uikit/uicloudsharingcontroller.md)
   A view controller that presents standard screens for adding and removing people from a CloudKit share record.
-- [CKSharingSupported](../BundleResources/Information-Property-List/CKSharingSupported.md)
+- [CKSharingSupported](../bundleresources/information-property-list/cksharingsupported.md)
   A Boolean value that indicates your app supports CloudKit Sharing.
 
 

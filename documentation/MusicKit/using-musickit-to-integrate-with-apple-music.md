@@ -22,7 +22,7 @@ Before you run the sample code project in Xcode, perform the following steps:
 
 1. In the Project navigator, select the project and click the *Signing & Capabilities* tab.
 2. Select your developer team from the *Team* menu.
-3. Choose a new bundle identifier for the `MusicAlbums` target, and enter it in the Bundle Identifier field. The bundle identifier within the project has an associated App ID, so you need a unique identifier to create your own App ID. Use a reverse-DNS format for your identifier, as [`Preparing your app for distribution`](https://developer.apple.com/documentation/Xcode/preparing-your-app-for-distribution) describes.
+3. Choose a new bundle identifier for the `MusicAlbums` target, and enter it in the Bundle Identifier field. The bundle identifier within the project has an associated App ID, so you need a unique identifier to create your own App ID. Use a reverse-DNS format for your identifier, as [`Preparing your app for distribution`](https://developer.apple.com/documentation/xcode/preparing-your-app-for-distribution) describes.
 4. In Safari, visit the [`Certificates, Identifiers, and Profiles`](https://developer.apple.comhttps://developer.apple.com/account/resources) section of the developer web site.
 5. Select *Identifiers* and click the Add button to create a new App ID for `MusicAlbums`. Follow the steps until you reach the *Register an App ID* page.
 6. For the Bundle ID, select *Explicit*, and enter the bundle identifier from step 2.
@@ -35,7 +35,7 @@ After creating your App ID, your Xcode project needs no additional configuration
 
 - [Using Automatic Developer Token Generation for Apple Music API](using-automatic-token-generation-for-apple-music-api.md)
   Enable your app’s integration with the MusicKit App Service in the developer portal.
-- [NSAppleMusicUsageDescription](../BundleResources/Information-Property-List/NSAppleMusicUsageDescription.md)
+- [NSAppleMusicUsageDescription](../bundleresources/information-property-list/nsapplemusicusagedescription.md)
   A message that tells people why the app is requesting access to their media library.
 
 

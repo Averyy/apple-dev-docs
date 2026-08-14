@@ -20,7 +20,7 @@ struct BEAccessibilityContainerType
 
 #### Overview
 
-Choose a value from this enumeration and set it as an element’s [`browserAccessibilityContainerType`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class/browserAccessibilityContainerType) to indicate the element’s container.
+Choose a value from this enumeration and set it as an element’s [`browserAccessibilityContainerType`](https://developer.apple.com/documentation/objectivec/nsobject-swift.class/browseraccessibilitycontainertype) to indicate the element’s container.
 
 For example, set [`table`](beaccessibilitycontainertype/table.md) as the `browserAccessibilityContainerType` for an element within a table cell.
 
@@ -59,14 +59,14 @@ For example, set [`table`](beaccessibilitycontainertype/table.md) as the `browse
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../Swift/BitwiseCopyable.md)
-- [Equatable](../Swift/Equatable.md)
-- [ExpressibleByArrayLiteral](../Swift/ExpressibleByArrayLiteral.md)
-- [OptionSet](../Swift/OptionSet.md)
-- [RawRepresentable](../Swift/RawRepresentable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
-- [SetAlgebra](../Swift/SetAlgebra.md)
+- [BitwiseCopyable](../swift/bitwisecopyable.md)
+- [Equatable](../swift/equatable.md)
+- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
+- [OptionSet](../swift/optionset.md)
+- [RawRepresentable](../swift/rawrepresentable.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
+- [SetAlgebra](../swift/setalgebra.md)
 
 ## See Also
 

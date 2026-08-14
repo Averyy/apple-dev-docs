@@ -29,7 +29,7 @@ This method generates an Aztec code as an image. The Aztec barcode code is a low
 
 The Aztec code generator filter uses the following properties:
 
-- **`message`**: The data to be encoded as an Aztec code. An [`NSData`](https://developer.apple.com/documentation/Foundation/NSData) object whose display name is Message.
+- **`message`**: The data to be encoded as an Aztec code. An [`NSData`](https://developer.apple.com/documentation/foundation/nsdata) object whose display name is Message.
 - **`correctionLevel`**: A `float` representing the percentage of redundancy to add to the message data. A higher correction level allows the barcode to be correctly read even when partially damaged.
 - **`layers`**: A `float` representing the number of concentric squares encoding the barcode data. When the value is zero, Core Image automatically determines the appropriate number of layers to encode the message data at the specified correction level.
 - **`compactStyle`**: A `float` determining the use of compact or full-size Aztec barcode format. The compact format can store up to 44 bytes of message data in up to 4 layers. The full-size format can store up to 1914 bytes of message data in up to 32 layers. Leave unset, or set to 0 for automatic.
@@ -47,7 +47,7 @@ func aztecCode(inputMessage: String) -> CIImage {
 }
 ```
 
-![An image of a black and white Aztec code made of small squares representing the encoded data of: Filter an image, generate a barcode, what else can CoreImage do?](https://docs-assets.developer.apple.com/published/6f1907aac5428aec7329e0bced291d47/media-3546310%402x.png)
+![An image of a black and white Aztec code made of small squares representing the encoded data of: Filter an image, generate a barcode, what else can CoreImage do?](/images/com.apple.coreimage/media-3546310@2x.png)
 
 ## See Also
 

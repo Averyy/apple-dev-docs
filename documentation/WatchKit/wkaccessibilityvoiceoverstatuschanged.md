@@ -16,7 +16,7 @@ let WKAccessibilityVoiceOverStatusChanged: String
 
 #### Discussion
 
-Use this notification to customize your application’s user interface for VoiceOver users. You can also use the [`isVoiceOverRunning`](https://developer.apple.com/documentation/UIKit/UIAccessibility/isVoiceOverRunning) function to determine whether VoiceOver is currently running.
+Use this notification to customize your application’s user interface for VoiceOver users. You can also use the [`isVoiceOverRunning`](https://developer.apple.com/documentation/uikit/uiaccessibility/isvoiceoverrunning) function to determine whether VoiceOver is currently running.
 
 Observe this notification using the default notification center. This notification doesn’t include a parameter.
 

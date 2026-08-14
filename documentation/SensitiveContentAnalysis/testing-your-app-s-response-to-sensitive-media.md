@@ -12,7 +12,7 @@ You can test your app’s response to sensitive content in media by analyzing a 
 
 Although the following image contains no sensitive content, the framework recognizes it as sensitive. By returning [`isSensitive`](scsensitivityanalysis/issensitive.md) = `true`, the analyzer ([`SCSensitivityAnalyzer`](scsensitivityanalyzer.md)) returns a false positive for this QR code for the special purpose of testing.
 
-![A QR code.](https://docs-assets.developer.apple.com/published/2ff73e1db185e49d99bb15c77f69e677/testing_your_app_s_response_to_sensitive_media-1%402x.png)
+![A QR code.](/images/com.apple.SensitiveContentAnalysis/testing_your_app_s_response_to_sensitive_media-1@2x.png)
 
 Click or tap to download [`the test image`](https://developer.apple.comhttps://developer.apple.com/sample-code/web/qr-sca.jpg). Use [`the test video`](https://developer.apple.comhttps://developer.apple.com/sample-code/web/qr-sca.mov) to generate a false positive with video.
 

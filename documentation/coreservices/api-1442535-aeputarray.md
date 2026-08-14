@@ -28,11 +28,11 @@ Thread safe starting in OS X v10.2.
 
 ## Parameters
 
-- `theAEDescList`: See  .
-- `arrayType`: The Apple event array type to create. Pass a value specified by one of the constants described in  . See  .
-- `arrayPtr`: A pointer to a buffer, local variable, or other storage location, created and disposed of by your application, that contains the array to put into the descriptor list. See  .
-- `itemType`: For arrays of type  ,  , or  , the descriptor type of the array items to create. Use one of the constants described in  , such as  . You don’t need to specify an item type for arrays of type   or   because the data is already stored in descriptors which contain a descriptor type. See  .
-- `itemSize`: For arrays of type   or  , the size (in bytes) of the array items to create. You don’t need to specify an item size for arrays of type  ,  , or   because their descriptors (though not the data they point to) have a known size. 
+- `theAEDescList`: A pointer to the descriptor list to put the Apple event array into. If there are any descriptors already in the descriptor list, they are replaced. If the array type is `kAEKeyDescArray`, `theAEDescList` must point to an Apple event record; otherwise, it can point to either a descriptor list or an Apple event record. If you pass a pointer to a factored descriptor list, created by calling the [`AECreateList(_:_:_:_:)`](1448643-aecreatelist.md) function, each array item in the array pointed to by the `arrayPtr` parameter must include the data that is common to all the descriptors in the list. The Apple Event Manager automatically isolates the common data you specified in the call to `AECreateList`. A factored descriptor list is described in the Discussion section. See [`AEDescList`](aedesclist.md).
+- `arrayType`: The Apple event array type to create. Pass a value specified by one of the constants described in [`Data Array Constants`](apple_events/1542848-data_array_constants.md). See [`AEArrayType`](aearraytype.md).
+- `arrayPtr`: A pointer to a buffer, local variable, or other storage location, created and disposed of by your application, that contains the array to put into the descriptor list. See [`AEArrayData`](aearraydata.md).
+- `itemType`: For arrays of type `kAEDataArray`, `kAEPackedArray`, or `kAEHandleArray`, the descriptor type of the array items to create. Use one of the constants described in [`Descriptor Type Constants`](apple_events/1542788-descriptor_type_constants.md), such as `typeLongInteger`. You don’t need to specify an item type for arrays of type `kAEDescArray` or `kAEKeyDescArray` because the data is already stored in descriptors which contain a descriptor type. See [`DescType`](desctype.md).
+- `itemSize`: For arrays of type `kAEDataArray` or `kAEPackedArray`, the size (in bytes) of the array items to create. You don’t need to specify an item size for arrays of type `kAEDescArray`, `kAEKeyDescArray`, or `kAEHandleArray` because their descriptors (though not the data they point to) have a known size. 
 - `itemCount`: The number of elements in the array.
 
 ## See Also

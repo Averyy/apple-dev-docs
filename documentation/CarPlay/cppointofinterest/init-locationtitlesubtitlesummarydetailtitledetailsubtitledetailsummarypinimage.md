@@ -20,7 +20,7 @@ convenience init(location: MKMapItem, title: String, subtitle: String?, summary:
 
 [`CPPointOfInterestTemplate`](cppointofinteresttemplate.md) displays selectable instances of `CPPointOfInterest` as annotations on the template’s map, and as items in a scrollable picker that the template overlays on the map. When the user selects a point of interest, the template displays a detail card that contains secondary information and optional actions the user can perform.
 
-If you use a custom `pinImage`, provide an image that is display-ready. If necessary, provide light and dark variants using an asset catalog, or use an instance of [`UIImageAsset`](https://developer.apple.com/documentation/UIKit/UIImageAsset) and register an image for each interface style. To properly size your image, use the display scale of the vehicle’s primary screen from your interface controller’s [`carTraitCollection`](cpinterfacecontroller/cartraitcollection.md) property.
+If you use a custom `pinImage`, provide an image that is display-ready. If necessary, provide light and dark variants using an asset catalog, or use an instance of [`UIImageAsset`](https://developer.apple.com/documentation/uikit/uiimageasset) and register an image for each interface style. To properly size your image, use the display scale of the vehicle’s primary screen from your interface controller’s [`carTraitCollection`](cpinterfacecontroller/cartraitcollection.md) property.
 
 CarPlay doesn’t support animated images. If you provide an animated image, CarPlay uses only the first image in the animation sequence.
 

@@ -22,7 +22,7 @@ let kCGImageDestinationOrientation: CFString
 
 #### Discussion
 
-The value of this key must be a [`CFNumber`](https://developer.apple.com/documentation/CoreFoundation/CFNumber), and the number must be an integer in the range `1`–`8`. For more information about the meaning of each number, see the orientation field in the EXIF specification.
+The value of this key must be a [`CFNumber`](https://developer.apple.com/documentation/corefoundation/cfnumber), and the number must be an integer in the range `1`–`8`. For more information about the meaning of each number, see the orientation field in the EXIF specification.
 
 This option is mutually exclusive with [`kCGImageDestinationMetadata`](kcgimagedestinationmetadata.md).
 

@@ -12,7 +12,7 @@ Xcode 10.1 includes SDKs for iOS 12.1, watchOS 5.1, macOS 10.14.1, and tvOS 12.1
 
 ###### New Features
 
-- Support for arm64e (Preview)To try the developer preview of arm64e, select your iOS app target in the Project Editor, find its Architectures build setting, select the Other… option, and add arm64e to the list of architectures. For more information, see [`Preparing your app to work with pointer authentication`](https://developer.apple.com/documentation/Security/preparing-your-app-to-work-with-pointer-authentication). The App Store and TestFlight don’t accept submissions containing arm64e. Xcode will remove arm64e content from your app when you distribute from the Organizer window. (42296212)
+- Support for arm64e (Preview)To try the developer preview of arm64e, select your iOS app target in the Project Editor, find its Architectures build setting, select the Other… option, and add arm64e to the list of architectures. For more information, see [`Preparing your app to work with pointer authentication`](https://developer.apple.com/documentation/security/preparing-your-app-to-work-with-pointer-authentication). The App Store and TestFlight don’t accept submissions containing arm64e. Xcode will remove arm64e content from your app when you distribute from the Organizer window. (42296212)
 
 ###### Resolved Issues
 
@@ -63,7 +63,7 @@ Xcode 10.1 includes SDKs for iOS 12.1, watchOS 5.1, macOS 10.14.1, and tvOS 12.1
 
 ###### Resolved Issues
 
-- Fixed an issue with Auto Layout incorrectly reporting issues when constraining views to [`UIScrollView`](https://developer.apple.com/documentation/UIKit/UIScrollView) subviews. (44457610)
+- Fixed an issue with Auto Layout incorrectly reporting issues when constraining views to [`UIScrollView`](https://developer.apple.com/documentation/uikit/uiscrollview) subviews. (44457610)
 - Improved canvas performance when switching between iPhone XS, iPhone XS Max, and iPhone XR with the device bar. (44605631)
 - Fixed an issue that caused the layout of watch content in the Preview assistant editor to not match the Device Bar selection. (42563683)
 - `@IBDesignable` views now build using the new build system when it’s enabled. (31433718)
@@ -105,7 +105,7 @@ someObject.someNonmutatingProperty = temp
 - Playgrounds in Xcode no longer log messages about fields whose types fail to demangle at runtime. (44642942)
 - Compilation now consistently reports the errors responsible for any failures. For example, previously, a message like “Command CompileSwiftSources failed with a nonzero exit code” could occur without an accompanying failure reason. (43033749, 44362180)
 - Long file paths containing white space no longer cause build failures. (44142091)
-- The [`Bundle`](https://developer.apple.com/documentation/Foundation/Bundle) class’s [`init(for:)`](https://developer.apple.com/documentation/Foundation/Bundle/init(for:)) initializer now works consistently with Swift classes, including when not running on the latest operating system versions. (44489216)
+- The [`Bundle`](https://developer.apple.com/documentation/foundation/bundle) class’s [`init(for:)`](https://developer.apple.com/documentation/foundation/bundle/init(for:)) initializer now works consistently with Swift classes, including when not running on the latest operating system versions. (44489216)
 - A `let` property of a generic class that has function type as an argument can now be passed successfully to another function or method. (41056468) ```swift
 class A<B> {
     let function: (B) -> B
@@ -136,7 +136,7 @@ f([NSObject.self, NSString.self])
 
 ###### Resolved Issues
 
-- The [`FixedWidthInteger`](https://developer.apple.com/documentation/Swift/FixedWidthInteger) protocol’s `unsafeAdding(_:)`, `unsafeSubtracting(_:)`, `unsafeDivided(by:)`, and `unsafeMultiplied(by:)` methods are now deprecated and will be removed in a future release.These methods produce undefined behavior in overflow conditions. In the case of arithmetic operations, use a combination of an assert and either the [`addingReportingOverflow(_:)`](https://developer.apple.com/documentation/Swift/FixedWidthInteger/addingReportingOverflow(_:)) method or the `&+` operator, both of which have well-defined results in cases of overflow. (43688685)
+- The [`FixedWidthInteger`](https://developer.apple.com/documentation/swift/fixedwidthinteger) protocol’s `unsafeAdding(_:)`, `unsafeSubtracting(_:)`, `unsafeDivided(by:)`, and `unsafeMultiplied(by:)` methods are now deprecated and will be removed in a future release.These methods produce undefined behavior in overflow conditions. In the case of arithmetic operations, use a combination of an assert and either the [`addingReportingOverflow(_:)`](https://developer.apple.com/documentation/swift/fixedwidthinteger/addingreportingoverflow(_:)) method or the `&+` operator, both of which have well-defined results in cases of overflow. (43688685)
 
 ##### Source Control
 
@@ -155,8 +155,8 @@ f([NSObject.self, NSString.self])
 - UI tests in projects using the legacy build system now run on iPhone XS and iPhone XS Max. (44777186)
 - If a UI test target app crashes during testing in Simulator, it’s now correctly reported as a test failure instead of either being incorrectly considered a successful test or displaying a failure message about “Application state unknown”. (44765263)
 - Xcode 10.1 beta 2 and later support UI testing with devices running beta versions of iOS 12. (43796360)
-- Fixed an issue where the [`testBundleDidFinish(_:)`](https://developer.apple.com/documentation/XCTest/XCTestObservation/testBundleDidFinish(_:)) method wouldn’t be called on an observer added to the shared [`XCTestObservationCenter`](https://developer.apple.com/documentation/XCTest/XCTestObservationCenter) instance if the observer was added at any point after testing had already started. (For example, after the [`testBundleWillStart(_:)`](https://developer.apple.com/documentation/XCTest/XCTestObservation/testBundleWillStart(_:)) method had been called on all the currently registered observers). (44340337)
-- The [`XCUIElement`](https://developer.apple.com/documentation/XCTest/XCUIElement) class’s [`click()`](https://developer.apple.com/documentation/XCTest/XCUIElement/click()) and [`hover()`](https://developer.apple.com/documentation/XCTest/XCUIElement/hover()) methods now automatically scroll menus when the receiver is a menu item or subview of a menu item. (43510448)
+- Fixed an issue where the [`testBundleDidFinish(_:)`](https://developer.apple.com/documentation/xctest/xctestobservation/testbundledidfinish(_:)) method wouldn’t be called on an observer added to the shared [`XCTestObservationCenter`](https://developer.apple.com/documentation/xctest/xctestobservationcenter) instance if the observer was added at any point after testing had already started. (For example, after the [`testBundleWillStart(_:)`](https://developer.apple.com/documentation/xctest/xctestobservation/testbundlewillstart(_:)) method had been called on all the currently registered observers). (44340337)
+- The [`XCUIElement`](https://developer.apple.com/documentation/xcuiautomation/xcuielement) class’s [`click()`](https://developer.apple.com/documentation/xcuiautomation/xcuielement/click()) and [`hover()`](https://developer.apple.com/documentation/xcuiautomation/xcuielement/hover()) methods now automatically scroll menus when the receiver is a menu item or subview of a menu item. (43510448)
 
 ## See Also
 

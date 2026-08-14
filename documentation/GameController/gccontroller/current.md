@@ -25,9 +25,9 @@ Use this property for a single-player game when you don’t need to distinguish 
 
 ## See Also
 
-- [static let GCControllerDidBecomeCurrent: NSNotification.Name](../Foundation/NSNotification/Name-swift.struct/GCControllerDidBecomeCurrent.md)
+- [static let GCControllerDidBecomeCurrent: NSNotification.Name](../foundation/nsnotification/name-swift.struct/gccontrollerdidbecomecurrent.md)
   A notification that posts when a controller becomes the current controller.
-- [static let GCControllerDidStopBeingCurrent: NSNotification.Name](../Foundation/NSNotification/Name-swift.struct/GCControllerDidStopBeingCurrent.md)
+- [static let GCControllerDidStopBeingCurrent: NSNotification.Name](../foundation/nsnotification/name-swift.struct/gccontrollerdidstopbeingcurrent.md)
   A notification that posts when a controller stops being the current controller.
 
 

@@ -7,17 +7,17 @@ Keys or values for the size of the input parameter controls for a filter view.
 ## Topics
 
 ### Constants
-- [let IKUISizeFlavor: String](../Quartz/IKUISizeFlavor.md)
-  A key for the size of the controls in a filter view. The associated value  can be  [`IKUISizeMini`](doc://com.apple.quartz/documentation/Quartz/IKUISizeMini), [`IKUISizeSmall`](doc://com.apple.quartz/documentation/Quartz/IKUISizeSmall), or  [`IKUISizeRegular`](doc://com.apple.quartz/documentation/Quartz/IKUISizeRegular).
-- [let IKUISizeMini: String](../Quartz/IKUISizeMini.md)
+- [let IKUISizeFlavor: String](../quartz/ikuisizeflavor.md)
+  A key for the size of the controls in a filter view. The associated value  can be  [`IKUISizeMini`](https://developer.apple.com/documentation/quartz/ikuisizemini), [`IKUISizeSmall`](https://developer.apple.com/documentation/quartz/ikuisizesmall), or  [`IKUISizeRegular`](https://developer.apple.com/documentation/quartz/ikuisizeregular).
+- [let IKUISizeMini: String](../quartz/ikuisizemini.md)
   A very small control.
-- [let IKUISizeSmall: String](../Quartz/IKUISizeSmall.md)
+- [let IKUISizeSmall: String](../quartz/ikuisizesmall.md)
   A small control.
-- [let IKUISizeRegular: String](../Quartz/IKUISizeRegular.md)
+- [let IKUISizeRegular: String](../quartz/ikuisizeregular.md)
   A standard size control.
-- [let IKUImaxSize: String](../Quartz/IKUImaxSize.md)
+- [let IKUImaxSize: String](../quartz/ikuimaxsize.md)
   The maximum size of a filter view.
-- [let IKUIFlavorAllowFallback: String](../Quartz/IKUIFlavorAllowFallback.md)
+- [let IKUIFlavorAllowFallback: String](../quartz/ikuiflavorallowfallback.md)
   Substitute controls of another size. The associated value is a Boolean value. If the filter cannot provide a view for the requested size and a fallback is allowed, the filter can use controls of a different size.
 
 ## See Also

@@ -18,7 +18,7 @@ var sourceIdentifier: String? { get }
 
 #### Discussion
 
-The source identifier in a winning postback may contain two, three, or all four digits of the [`sourceIdentifier`](https://developer.apple.com/documentation/StoreKit/SKAdImpression/sourceIdentifier) in the corresponding ad impression. For more information about the value you may get in the postback, see [`Receiving postbacks in multiple conversion windows`](https://developer.apple.com/documentation/StoreKit/receiving-postbacks-in-multiple-conversion-windows).
+The source identifier in a winning postback may contain two, three, or all four digits of the [`sourceIdentifier`](https://developer.apple.com/documentation/storekit/skadimpression/sourceidentifier) in the corresponding ad impression. For more information about the value you may get in the postback, see [`Receiving postbacks in multiple conversion windows`](https://developer.apple.com/documentation/storekit/receiving-postbacks-in-multiple-conversion-windows).
 
 ## See Also
 

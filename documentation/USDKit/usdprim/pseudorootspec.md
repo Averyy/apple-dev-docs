@@ -34,9 +34,9 @@ The pseudo-root is a special spec that’s automatically created by every layer.
 ## Relationships
 
 ### Conforms To
-- [Copyable](../Swift/Copyable.md)
-- [Equatable](../Swift/Equatable.md)
-- [Escapable](../Swift/Escapable.md)
+- [Copyable](../swift/copyable.md)
+- [Equatable](../swift/equatable.md)
+- [Escapable](../swift/escapable.md)
 - [USDLayer.Spec.FieldCollection](usdlayer/spec/fieldcollection.md)
 - [USDLayer.Spec.MetadataCollection](usdlayer/spec/metadatacollection.md)
 

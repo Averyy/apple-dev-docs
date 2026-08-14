@@ -19,7 +19,7 @@ class let touchBarGetInfoTemplateName: String
 
 #### Discussion
 
-![Template image for get info](https://docs-assets.developer.apple.com/published/62d2cdc6e3f006b0d3eeb24f06723bb2/media-2793524%402x.png)
+![Template image for get info](/images/com.apple.appkit/media-2793524@2x.png)
 
 Touch Bar template images are exclusively for use in [`NSTouchBarItem`](nstouchbaritem.md) objects and not in onscreen windows.
 

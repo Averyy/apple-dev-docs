@@ -7,7 +7,7 @@ Create custom controllers to play and synchronize the timing of sample buffer st
 ## Topics
 
 ### Sample buffer generation
-- [Playing custom audio with your own player](../AVFAudio/playing-custom-audio-with-your-own-player.md)
+- [Playing custom audio with your own player](../avfaudio/playing-custom-audio-with-your-own-player.md)
   Construct an audio player to play your custom audio data, and optionally take advantage of the advanced features of AirPlay 2.
 - [class AVSampleBufferRequest](avsamplebufferrequest.md)
   An object that describes a sample buffer creation request.

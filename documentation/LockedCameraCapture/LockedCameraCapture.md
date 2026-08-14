@@ -14,7 +14,7 @@ Capture content with your app’s camera experience when the device is locked.
 
 Use the LockedCameraCapture framework to create an extension that allows people to launch your app’s camera experience and capture content quickly when the device is locked. This extension makes your camera experience accessible to people from Control Center, the Lock Screen, or the Action button.
 
-![A conceptual image that shows a control with a camera icon on the Lock Screen on iPhone, in Control Center on iPhone, and being performed with the Action button on iPhone 15 Pro.](https://docs-assets.developer.apple.com/published/92356c4d536464fbcc88d5a37400d82a/locked-camera-capture-overview%402x.png)
+![A conceptual image that shows a control with a camera icon on the Lock Screen on iPhone, in Control Center on iPhone, and being performed with the Action button on iPhone 15 Pro.](/images/com.apple.LockedCameraCapture/locked-camera-capture-overview@2x.png)
 
 ## Topics
 

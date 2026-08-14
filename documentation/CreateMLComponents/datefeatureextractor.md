@@ -21,7 +21,7 @@ struct DateFeatureExtractor<Scalar> where Scalar : BinaryFloatingPoint
 
 #### Overview
 
-This transformer takes a [`Date`](https://developer.apple.com/documentation/Foundation/Date) and extracts floating-point feature values according to the features parameter. Every feature value is roughly between -0.5 and 0.5. All date calculations are based on a [`Calendar`](https://developer.apple.com/documentation/Foundation/Calendar), which defaults to [`current`](https://developer.apple.com/documentation/Foundation/Calendar/current).
+This transformer takes a [`Date`](https://developer.apple.com/documentation/foundation/date) and extracts floating-point feature values according to the features parameter. Every feature value is roughly between -0.5 and 0.5. All date calculations are based on a [`Calendar`](https://developer.apple.com/documentation/foundation/calendar), which defaults to [`current`](https://developer.apple.com/documentation/foundation/calendar/current).
 
 ## Topics
 
@@ -40,12 +40,12 @@ This transformer takes a [`Date`](https://developer.apple.com/documentation/Foun
 ## Relationships
 
 ### Conforms To
-- [Copyable](../Swift/Copyable.md)
-- [Decodable](../Swift/Decodable.md)
-- [Encodable](../Swift/Encodable.md)
-- [Escapable](../Swift/Escapable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Copyable](../swift/copyable.md)
+- [Decodable](../swift/decodable.md)
+- [Encodable](../swift/encodable.md)
+- [Escapable](../swift/escapable.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 - [Transformer](transformer.md)
 
 ## See Also

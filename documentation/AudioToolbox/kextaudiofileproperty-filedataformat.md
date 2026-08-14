@@ -21,7 +21,7 @@ var kExtAudioFileProperty_FileDataFormat: ExtAudioFilePropertyID { get }
 
 #### Discussion
 
-A file’s data format. Value is a read-only [`AudioStreamBasicDescription`](https://developer.apple.com/documentation/CoreAudioTypes/AudioStreamBasicDescription) struct.
+A file’s data format. Value is a read-only [`AudioStreamBasicDescription`](https://developer.apple.com/documentation/coreaudiotypes/audiostreambasicdescription) struct.
 
 ## See Also
 

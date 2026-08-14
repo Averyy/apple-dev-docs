@@ -21,7 +21,7 @@ func scrollToNearestSelectedRow(at scrollPosition: UITableView.ScrollPosition, a
 ## Parameters
 
 - `scrollPosition`: A constant that identifies a relative position in the table view (top, middle, bottom) for the row when scrolling concludes. See [`UITableView.ScrollPosition`](uitableview/scrollposition.md) for a descriptions of valid constants.
-- `animated`: [`true`](https://developer.apple.com/documentation/Swift/true) if you want to animate the change in position; [`false`](https://developer.apple.com/documentation/Swift/false) if it should be immediate.
+- `animated`: [`true`](https://developer.apple.com/documentation/swift/true) if you want to animate the change in position; [`false`](https://developer.apple.com/documentation/swift/false) if it should be immediate.
 
 ## See Also
 

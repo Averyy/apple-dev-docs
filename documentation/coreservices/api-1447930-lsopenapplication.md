@@ -30,8 +30,8 @@ Thread-safe since OS X v10.4.
 
 ## Parameters
 
-- `inAppParams`: A   structure specifying the application to launch and its launch parameters. This parameter cannot be  .
-- `outPSN`: On input, a pointer to a value of type   that, on return, contains the process serial number (PSN) of the application specified by  , or   if you don’t want to receive the PSN.
+- `inAppParams`: A [`LSApplicationParameters`](lsapplicationparameters.md) structure specifying the application to launch and its launch parameters. This parameter cannot be `NULL`.
+- `outPSN`: On input, a pointer to a value of type `ProcessSerialNumber` that, on return, contains the process serial number (PSN) of the application specified by `inAppParams`, or `NULL` if you don’t want to receive the PSN.
 
 ## See Also
 

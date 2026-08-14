@@ -36,7 +36,7 @@ See [`NSTextFinder`](nstextfinder.md) for more information.
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 ### Conforming Types
 - [NSScrollView](nsscrollview.md)
 

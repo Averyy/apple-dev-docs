@@ -16,7 +16,7 @@ struct VZError
 
 #### Overview
 
-The domain for these errors is [`VZErrorDomain`](vzerrordomain.md). When an error originates in a different component, the [`NSError`](https://developer.apple.com/documentation/Foundation/NSError) object contains the domain of that component.
+The domain for these errors is [`VZErrorDomain`](vzerrordomain.md). When an error originates in a different component, the [`NSError`](https://developer.apple.com/documentation/foundation/nserror) object contains the domain of that component.
 
 ## Topics
 
@@ -85,12 +85,12 @@ The domain for these errors is [`VZErrorDomain`](vzerrordomain.md). When an erro
 ## Relationships
 
 ### Conforms To
-- [CustomNSError](../Foundation/CustomNSError.md)
-- [Equatable](../Swift/Equatable.md)
-- [Error](../Swift/Error.md)
-- [Hashable](../Swift/Hashable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [CustomNSError](../foundation/customnserror.md)
+- [Equatable](../swift/equatable.md)
+- [Error](../swift/error.md)
+- [Hashable](../swift/hashable.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

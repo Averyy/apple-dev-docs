@@ -117,7 +117,7 @@ Use the [`scene`](scnscenerenderer/scene.md) property of the view, layer, or ren
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 ### Conforming Types
 - [SCNLayer](scnlayer.md)
 - [SCNRenderer](scnrenderer.md)

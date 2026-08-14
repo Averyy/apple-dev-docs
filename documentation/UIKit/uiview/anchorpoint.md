@@ -20,7 +20,7 @@ var anchorPoint: CGPoint { get set }
 
 #### Discussion
 
-You specify the value for this property using the unit coordinate space, where (`0`, `0`) is the bottom-left corner of the view’s [`bounds`](https://developer.apple.com/documentation/QuartzCore/CALayer/bounds) rectangle, and (`1`, `1`) is the top-right corner. The default value of this property is (`0.5`, `0.5`), which represents the center of the view’s [`bounds`](https://developer.apple.com/documentation/QuartzCore/CALayer/bounds) rectangle.
+You specify the value for this property using the unit coordinate space, where (`0`, `0`) is the bottom-left corner of the view’s [`bounds`](https://developer.apple.com/documentation/quartzcore/calayer/bounds) rectangle, and (`1`, `1`) is the top-right corner. The default value of this property is (`0.5`, `0.5`), which represents the center of the view’s [`bounds`](https://developer.apple.com/documentation/quartzcore/calayer/bounds) rectangle.
 
 All geometric manipulations to the view occur about the specified point. For example, applying a rotation transform to a view with the default anchor point causes the view to rotate around its center. Changing the anchor point to a different location causes the view to rotate around that new point.
 

@@ -28,7 +28,7 @@ class HKWorkoutRoute
 
 When creating a workout route, you do not instantiate the [`HKWorkoutRoute`](hkworkoutroute.md) objects directly. Instead, create a [`HKWorkoutRouteBuilder`](hkworkoutroutebuilder.md) object, and provide it with location data throughout the workout. After the workout ends, call the route builder’s  [`finishRoute(with:metadata:completion:)`](hkworkoutroutebuilder/finishroute(with:metadata:completion:).md) method to create the route. For detailed instructions, see [`Creating a workout route`](creating-a-workout-route.md).
 
-The route’s location data is stored as an array of [`CLLocation`](https://developer.apple.com/documentation/CoreLocation/CLLocation) objects. Because the route may contain a large number of location objects, use a [`HKWorkoutRouteQuery`](hkworkoutroutequery.md) object to asynchronously read the location data from the HealthKit store in batches. For more information, see [`Reading route data`](reading-route-data.md).
+The route’s location data is stored as an array of [`CLLocation`](https://developer.apple.com/documentation/corelocation/cllocation) objects. Because the route may contain a large number of location objects, use a [`HKWorkoutRouteQuery`](hkworkoutroutequery.md) object to asynchronously read the location data from the HealthKit store in batches. For more information, see [`Reading route data`](reading-route-data.md).
 
 ##### Using Workout Routes
 
@@ -39,16 +39,16 @@ As with many HealthKit classes, don’t subclass the [`HKWorkoutRoute`](hkworkou
 ### Inherits From
 - [HKSeriesSample](hkseriessample.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCoding](../Foundation/NSCoding.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [NSSecureCoding](../Foundation/NSSecureCoding.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCoding](../foundation/nscoding.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

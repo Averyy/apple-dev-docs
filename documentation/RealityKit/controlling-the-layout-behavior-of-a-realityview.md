@@ -8,11 +8,11 @@ Choose a strategy for sizing frames and centering 3D content.
 
 When you use [`Model3D`](model3d.md) to display a 3D model, the view automatically sizes its frame to fit the visible content, and centers that content within the frame. When your project outgrows [`Model3D`](model3d.md) and you switch to [`RealityView`](realityview.md) for more control over your entities, you lose that automatic sizing and centering behavior. By default, a [`RealityView`](realityview.md) takes up as much space as SwiftUI offers, and doesn’t adjust the position of its content.
 
-The [`realityViewLayoutBehavior(_:)`](https://developer.apple.com/documentation/SwiftUI/View/realityViewLayoutBehavior(_:)) modifier gives you control over how a [`RealityView`](realityview.md) sizes its frame and positions its content. You apply the modifier to your [`RealityView`](realityview.md) and pass in a [`RealityViewLayoutOption`](realityviewlayoutoption.md) value that specifies the behavior you want. Choose from three options: [`fixedSize`](realityviewlayoutoption/fixedsize.md) to match the behavior of [`Model3D`](model3d.md), [`centered`](realityviewlayoutoption/centered.md) to center content within a flexible frame, or [`flexible`](realityviewlayoutoption/flexible.md) to keep the default behavior.
+The [`realityViewLayoutBehavior(_:)`](https://developer.apple.com/documentation/swiftui/view/realityviewlayoutbehavior(_:)) modifier gives you control over how a [`RealityView`](realityview.md) sizes its frame and positions its content. You apply the modifier to your [`RealityView`](realityview.md) and pass in a [`RealityViewLayoutOption`](realityviewlayoutoption.md) value that specifies the behavior you want. Choose from three options: [`fixedSize`](realityviewlayoutoption/fixedsize.md) to match the behavior of [`Model3D`](model3d.md), [`centered`](realityviewlayoutoption/centered.md) to center content within a flexible frame, or [`flexible`](realityviewlayoutoption/flexible.md) to keep the default behavior.
 
 #### Size the Frame to Fit the Content
 
-The most common use of [`realityViewLayoutBehavior(_:)`](https://developer.apple.com/documentation/SwiftUI/View/realityViewLayoutBehavior(_:)) is to make a [`RealityView`](realityview.md) behave like [`Model3D`](model3d.md). Apply the modifier with [`fixedSize`](realityviewlayoutoption/fixedsize.md) to set the frame of the [`RealityView`](realityview.md) equal to the visual bounds of its entity content and center that content within the frame.
+The most common use of [`realityViewLayoutBehavior(_:)`](https://developer.apple.com/documentation/swiftui/view/realityviewlayoutbehavior(_:)) is to make a [`RealityView`](realityview.md) behave like [`Model3D`](model3d.md). Apply the modifier with [`fixedSize`](realityviewlayoutoption/fixedsize.md) to set the frame of the [`RealityView`](realityview.md) equal to the visual bounds of its entity content and center that content within the frame.
 
 ```swift
 RealityView { content in
@@ -51,7 +51,7 @@ With [`centered`](realityviewlayoutoption/centered.md), each [`RealityView`](rea
 
 #### Understand the Performance Tradeoff
 
-The [`realityViewLayoutBehavior(_:)`](https://developer.apple.com/documentation/SwiftUI/View/realityViewLayoutBehavior(_:)) modifier calls [`visualBounds(recursive:relativeTo:excludeInactive:)`](hastransform/visualbounds(recursive:relativeto:excludeinactive:).md) to measure the content after the `make` closure runs. This call has a performance cost, so the modifier computes the layout only once — after `make` completes. It doesn’t recompute the layout when the `update` closure runs. The layout also doesn’t account for any entities you add to the [`RealityView`](realityview.md) during an `update` call.
+The [`realityViewLayoutBehavior(_:)`](https://developer.apple.com/documentation/swiftui/view/realityviewlayoutbehavior(_:)) modifier calls [`visualBounds(recursive:relativeTo:excludeInactive:)`](hastransform/visualbounds(recursive:relativeto:excludeinactive:).md) to measure the content after the `make` closure runs. This call has a performance cost, so the modifier computes the layout only once — after `make` completes. It doesn’t recompute the layout when the `update` closure runs. The layout also doesn’t account for any entities you add to the [`RealityView`](realityview.md) during an `update` call.
 
 If you need the layout to account for all of your content, add your entities in the `make` closure rather than deferring them to `update`.
 

@@ -25,11 +25,11 @@ You must specify the characteristics of your [`UIApplicationShortcutItem`](uiapp
 
 ##### Register an Array of Dynamic Quick Actions with Your App
 
-To register an array of Home Screen dynamic quick actions, set the value of your shared app object’s [`shortcutItems`](uiapplication/shortcutitems.md) property with an [`NSArray`](https://developer.apple.com/documentation/Foundation/NSArray) instance containing your defined dynamic Home Screen quick actions.
+To register an array of Home Screen dynamic quick actions, set the value of your shared app object’s [`shortcutItems`](uiapplication/shortcutitems.md) property with an [`NSArray`](https://developer.apple.com/documentation/foundation/nsarray) instance containing your defined dynamic Home Screen quick actions.
 
 ##### Change Your Apps Dynamic Quick Actions
 
-To change your app’s Home Screen dynamic quick actions, replace your app object’s [`shortcutItems`](uiapplication/shortcutitems.md) array by setting a new value for the property. As a convenience for working with registered quick actions, this class has a mutable subclass, [`UIMutableApplicationShortcutItem`](uimutableapplicationshortcutitem.md). The following code snippet illustrates one way to use the [`mutableCopy()`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class/mutableCopy()) method, along with mutable quick actions, to change the title of a dynamic Home Screen quick action:
+To change your app’s Home Screen dynamic quick actions, replace your app object’s [`shortcutItems`](uiapplication/shortcutitems.md) array by setting a new value for the property. As a convenience for working with registered quick actions, this class has a mutable subclass, [`UIMutableApplicationShortcutItem`](uimutableapplicationshortcutitem.md). The following code snippet illustrates one way to use the [`mutableCopy()`](https://developer.apple.com/documentation/objectivec/nsobject-swift.class/mutablecopy()) method, along with mutable quick actions, to change the title of a dynamic Home Screen quick action:
 
 **Swift**:
 
@@ -102,18 +102,18 @@ If a user installs an update for your app but hasn’t yet launched the update, 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Inherited By
 - [UIMutableApplicationShortcutItem](uimutableapplicationshortcutitem.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCopying](../Foundation/NSCopying.md)
-- [NSMutableCopying](../Foundation/NSMutableCopying.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCopying](../foundation/nscopying.md)
+- [NSMutableCopying](../foundation/nsmutablecopying.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

@@ -16,11 +16,11 @@ func setDisplayTrust(_ display: Bool)
 
 #### Discussion
 
-Certificate trust settings are not displayed by default. To show the certificate’s trust settings, you must explicitly set the display value to [`true`](https://developer.apple.com/documentation/Swift/true). with either this method or the [`setEditableTrust(_:)`](sfcertificateview/seteditabletrust(_:).md) method.
+Certificate trust settings are not displayed by default. To show the certificate’s trust settings, you must explicitly set the display value to [`true`](https://developer.apple.com/documentation/swift/true). with either this method or the [`setEditableTrust(_:)`](sfcertificateview/seteditabletrust(_:).md) method.
 
 ## Parameters
 
-- `display`: Pass [`true`](https://developer.apple.com/documentation/Swift/true) to display the trust settings, or [`false`](https://developer.apple.com/documentation/Swift/false) to hide them.
+- `display`: Pass [`true`](https://developer.apple.com/documentation/swift/true) to display the trust settings, or [`false`](https://developer.apple.com/documentation/swift/false) to hide them.
 
 ## See Also
 

@@ -31,7 +31,7 @@ Use [`CVPixelBufferRelease`](cvpixelbufferrelease.md) to release ownership of th
 
 ## Parameters
 
-- `allocator`: The allocator to use for creating the buffer pool. Pass [`kCFAllocatorDefault`](https://developer.apple.com/documentation/CoreFoundation/kCFAllocatorDefault) for the `allocator` parameter to use the default allocator. See [`Predefined Allocators`](https://developer.apple.com/documentation/CoreFoundation/predefined-allocators) for additional values you can use.
+- `allocator`: The allocator to use for creating the buffer pool. Pass [`kCFAllocatorDefault`](https://developer.apple.com/documentation/corefoundation/kcfallocatordefault) for the `allocator` parameter to use the default allocator. See [`Predefined Allocators`](https://developer.apple.com/documentation/corefoundation/predefined-allocators) for additional values you can use.
 - `surface`: The IOSurface to use in the pixel buffer.
 - `pixelBufferAttributes`: An optional dictionary that contains the attributes for the pixel buffer. See [`Pixel Buffer Attribute Keys`](pixel-buffer-attribute-keys.md) for possible values.
 - `pixelBufferOut`: On output, the newly created pixel buffer.

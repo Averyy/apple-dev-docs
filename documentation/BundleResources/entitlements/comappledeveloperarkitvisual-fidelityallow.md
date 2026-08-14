@@ -18,7 +18,7 @@ A Boolean value that indicates whether your app can monitor visual fidelity.
 
 Visual fidelity monitoring is part of enterprise APIs for visionOS, a collection of APIs that unlock capabilities for enterprise customers.
 
-To use the Visual Fidelity API, you need to apply for the entitlement. For more information, including how to apply for this entitlement, see [`Building spatial experiences for business apps with enterprise APIs for visionOS`](https://developer.apple.com/documentation/visionOS/building-spatial-experiences-for-business-apps-with-enterprise-apis).
+To use the Visual Fidelity API, you need to apply for the entitlement. For more information, including how to apply for this entitlement, see [`Building spatial experiences for business apps with enterprise APIs for visionOS`](https://developer.apple.com/documentation/visionos/building-spatial-experiences-for-business-apps-with-enterprise-apis).
 
 ## See Also
 

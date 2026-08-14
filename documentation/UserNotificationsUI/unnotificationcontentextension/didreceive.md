@@ -26,7 +26,7 @@ func didReceive(_ notification: UNNotification)
 
 #### Discussion
 
-In your implementation of this method, use the contents of `notification` to configure your view controller. This method may be called multiple times while your view controller is visible. Specifically, it is called again when a new notification arrives whose [`threadIdentifier`](https://developer.apple.com/documentation/UserNotifications/UNNotificationContent/threadIdentifier) value matches the thread identifier of the notification already being displayed. The method is called on the main thread of your notification content app extension.
+In your implementation of this method, use the contents of `notification` to configure your view controller. This method may be called multiple times while your view controller is visible. Specifically, it is called again when a new notification arrives whose [`threadIdentifier`](https://developer.apple.com/documentation/usernotifications/unnotificationcontent/threadidentifier) value matches the thread identifier of the notification already being displayed. The method is called on the main thread of your notification content app extension.
 
 If you want to accommodate new content in your interface, you can change the height of your view controller’s view. Change only the height; width values are ignored. You can then add subviews to fill the additional space with your content.
 

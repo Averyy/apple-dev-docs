@@ -22,7 +22,7 @@ class var beta2: MLParameterKey { get }
 
 #### Discussion
 
-The value type for the [`beta2`](mlparameterkey/beta2.md) key is a [`Double`](https://developer.apple.com/documentation/Swift/Double).
+The value type for the [`beta2`](mlparameterkey/beta2.md) key is a [`Double`](https://developer.apple.com/documentation/swift/double).
 
 ## See Also
 

@@ -15,11 +15,11 @@ Respond to push notifications related to your app’s complications, file provid
 
 #### Overview
 
-The PushKit framework supports specialized notifications for updating your watchOS complications, responding to file provider changes, and receiving incoming Voice-over-IP (VoIP) calls. PushKit notifications differ from the ones you handle with the [`User Notifications`](https://developer.apple.com/documentation/UserNotifications) framework. Instead of displaying an alert, badging your app’s icon, or playing a sound, PushKit notifications wake up or launch your app and give it time to respond. Both PushKit and User Notifications use the Apple Push Notification service (APNs) to deliver push notifications to user devices.
+The PushKit framework supports specialized notifications for updating your watchOS complications, responding to file provider changes, and receiving incoming Voice-over-IP (VoIP) calls. PushKit notifications differ from the ones you handle with the [`User Notifications`](https://developer.apple.com/documentation/usernotifications) framework. Instead of displaying an alert, badging your app’s icon, or playing a sound, PushKit notifications wake up or launch your app and give it time to respond. Both PushKit and User Notifications use the Apple Push Notification service (APNs) to deliver push notifications to user devices.
 
 To receive PushKit notifications, your app creates a [`PKPushRegistry`](pkpushregistry.md) object and uses it to configure the notification types it supports. When registration is successful, PushKit delivers a unique data token to your app that contains the identity of the current device and the push type. Forward that token along to the server, and include it in any notifications you send to the user. APNs uses the token to deliver the correct type of notification to the user’s device.
 
-For information about how to configure your server to work with APNs, see [`Setting up a remote notification server`](https://developer.apple.com/documentation/UserNotifications/setting-up-a-remote-notification-server).
+For information about how to configure your server to work with APNs, see [`Setting up a remote notification server`](https://developer.apple.com/documentation/usernotifications/setting-up-a-remote-notification-server).
 
 > **Note**: PushKit doesn’t support some special use cases in which access to Apple Push Notification service (APNs) isn’t possible. For information about when you might need to support these cases, see [`iOS 10 and the Legacy VoIP Architecture`](https://developer.apple.comhttps://developer.apple.com/library/archive/qa/qa1938/_index.html#//apple_ref/doc/uid/DTS40017564).
 

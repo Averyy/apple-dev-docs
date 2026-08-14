@@ -16,20 +16,20 @@ func runModal(for trust: SecTrust!, message: String!) -> Int
 
 #### Discussion
 
-This method returns [`NSOKButton`](https://developer.apple.com/documentation/AppKit/NSOKButton) if the default button is clicked, or [`NSCancelButton`](https://developer.apple.com/documentation/AppKit/NSCancelButton) if the alternate button is clicked.
+This method returns [`NSOKButton`](https://developer.apple.com/documentation/appkit/nsokbutton) if the default button is clicked, or [`NSCancelButton`](https://developer.apple.com/documentation/appkit/nscancelbutton) if the alternate button is clicked.
 
 The user can use this panel to edit trust decisions for the specified certificate or for any of the certificates in the certificate chain. The trust settings are saved when the user clicks the default button. Call `SecTrustGetUserTrust` to obtain the user’s trust settings.
 
-Note that changing the user trust settings does not affect the results of a trust evaluation. Therefore, the trust evaluation shown in the panel (such as “This certificate is not yet valid”) does not change, nor does the result of a call to [`SecTrustGetResult`](https://developer.apple.com/documentation/Security/SecTrustGetResult). It is up to your application to determine how to handle the user’s trust decision.
+Note that changing the user trust settings does not affect the results of a trust evaluation. Therefore, the trust evaluation shown in the panel (such as “This certificate is not yet valid”) does not change, nor does the result of a call to [`SecTrustGetResult`](https://developer.apple.com/documentation/security/sectrustgetresult). It is up to your application to determine how to handle the user’s trust decision.
 
 ## Parameters
 
-- `trust`: A trust management object. Use the [`SecTrustCreateWithCertificates(_:_:_:)`](https://developer.apple.com/documentation/Security/SecTrustCreateWithCertificates(_:_:_:)) function (in Security/SecTrust.h) to create the trust management object.
+- `trust`: A trust management object. Use the [`SecTrustCreateWithCertificates(_:_:_:)`](https://developer.apple.com/documentation/security/sectrustcreatewithcertificates(_:_:_:)) function (in Security/SecTrust.h) to create the trust management object.
 - `message`: A message string to display in the panel.
 
 ## See Also
 
-- [func SecTrustCreateWithCertificates(CFTypeRef, CFTypeRef?, UnsafeMutablePointer<SecTrust?>) -> OSStatus](../Security/SecTrustCreateWithCertificates(_:_:_:).md)
+- [func SecTrustCreateWithCertificates(CFTypeRef, CFTypeRef?, UnsafeMutablePointer<SecTrust?>) -> OSStatus](../security/sectrustcreatewithcertificates(_:_:_:).md)
   Creates a trust management object based on certificates and policies.
 - [func beginSheet(for: NSWindow!, modalDelegate: Any!, didEnd: Selector!, contextInfo: UnsafeMutableRawPointer!, trust: SecTrust!, message: String!)](sfcertificatetrustpanel/beginsheet(for:modaldelegate:didend:contextinfo:trust:message:).md)
   Displays a modal sheet that shows the results of a certificate trust evaluation and that allows the user to edit trust settings.

@@ -19,7 +19,7 @@ class let touchBarHistoryTemplateName: String
 
 #### Discussion
 
-![Template image for history](https://docs-assets.developer.apple.com/published/8f70d6de52e5e1b13a004240578a82d0/media-2793509%402x.png)
+![Template image for history](/images/com.apple.appkit/media-2793509@2x.png)
 
 Touch Bar template images are exclusively for use in [`NSTouchBarItem`](nstouchbaritem.md) objects and not in onscreen windows.
 

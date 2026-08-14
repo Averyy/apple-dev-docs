@@ -22,7 +22,7 @@ Localize each variant for display to the user, and make sure the array has at le
 
 > **Note**:  If you provide both [`instructionVariants`](cpmaneuver/instructionvariants.md) and [`attributedInstructionVariants`](cpmaneuver/attributedinstructionvariants.md), the system displays instructions from the attributed instruction variants array.
 
-The attributed strings in the array can have only a single attribute—an [`NSTextAttachment`](https://developer.apple.com/documentation/UIKit/NSTextAttachment). CarPlay removes all other attributes.
+The attributed strings in the array can have only a single attribute—an [`NSTextAttachment`](https://developer.apple.com/documentation/uikit/nstextattachment). CarPlay removes all other attributes.
 
 Using a text attachment attribute, you can add an image to a maneuver instruction as the example below shows. The maximum text attachment image size is 64 x 16 points.
 

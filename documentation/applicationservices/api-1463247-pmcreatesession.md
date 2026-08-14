@@ -24,7 +24,7 @@ This function allocates memory for a new printing session object in your applica
 
 ## Parameters
 
-- `printSession`: A pointer to your   variable. On return, the variable refers to a new printing session object. You are responsible for releasing the printing session object with the function  .
+- `printSession`: A pointer to your [`PMPrintSession`](pmprintsession.md) variable. On return, the variable refers to a new printing session object. You are responsible for releasing the printing session object with the function [`PMRelease(_:)`](1461402-pmrelease.md).
 
 
 ---

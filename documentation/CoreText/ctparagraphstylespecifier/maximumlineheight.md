@@ -22,7 +22,7 @@ case maximumLineHeight
 
 #### Discussion
 
-Glyphs and graphics exceeding this height overlap neighboring lines. A maximum height of `0` implies no line height limit. This value is always nonnegative. Type: [`CGFloat`](https://developer.apple.com/documentation/CoreFoundation/CGFloat-swift.struct). Default value: `0.0`. Affects: [`CTFramesetter`](ctframesetter.md).
+Glyphs and graphics exceeding this height overlap neighboring lines. A maximum height of `0` implies no line height limit. This value is always nonnegative. Type: [`CGFloat`](https://developer.apple.com/documentation/corefoundation/cgfloat-swift.struct). Default value: `0.0`. Affects: [`CTFramesetter`](ctframesetter.md).
 
 ## See Also
 

@@ -23,7 +23,7 @@ func addQuadCurve(to endPoint: CGPoint, controlPoint: CGPoint)
 
 This method appends a quadratic Bézier curve from the current point to the end point specified by the `endPoint` parameter. The relationships between the current point, control point, and end point are what defines the actual curve. The following image shows some examples of quadratic curves and the approximate curve shape based on some sample points. The exact curvature of the segment involves a complex mathematical relationship between the points and is well documented online.
 
-![None](https://docs-assets.developer.apple.com/published/a44987bfb6a4516273a636cbbca7e5d8/media-1965858.jpg)
+![None](/images/com.apple.uikit/media-1965858.jpg)
 
 You must set the path’s current point (using the [`move(to:)`](uibezierpath/move(to:).md) method or through the previous creation of a line or curve segment) before you call this method. If the path is empty, this method does nothing. After adding the curve segment, this method updates the current point to the value in `point`.
 

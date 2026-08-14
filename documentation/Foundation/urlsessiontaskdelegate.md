@@ -75,9 +75,9 @@ You use this protocol in one of two ways, depending on how you use a [`URLSessio
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 - [URLSessionDelegate](urlsessiondelegate.md)
 ### Inherited By
 - [URLSessionDataDelegate](urlsessiondatadelegate.md)

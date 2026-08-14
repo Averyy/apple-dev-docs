@@ -20,7 +20,7 @@ struct ElectricHVACLoadEvent
 
 Submit events representing electricity consumption to provide insights about electricity usage and your managed devices’ adherence to [`ElectricityGuidance`](electricityguidance.md). These events are data points recorded at specific points in time for a given [`EnergyVenue`](energyvenue.md) that allow the venue to determine when the device used electricity and the electricity’s cleanliness based on historical guidance. The framework can also determine relative cost using the rate plan at the energy venue, if available.
 
-After you submit load events to report the electricity consumption of HVAC devices, you can request insights through [`ElectricityInsightQuery`](electricityinsightquery.md). When you adopt the [`EnergyKit LoadEvents Entitlement`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.energykit.loadevents-experience), the Home app displays your device’s energy usage with the device name you provide.
+After you submit load events to report the electricity consumption of HVAC devices, you can request insights through [`ElectricityInsightQuery`](electricityinsightquery.md). When you adopt the [`EnergyKit LoadEvents Entitlement`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.energykit.loadevents-experience), the Home app displays your device’s energy usage with the device name you provide.
 
 > ❗ **Important**: The system stores and syncs the energy data that you provide through load events with end-to-end encryption through the entire process, ensuring the data isn’t accessible to anyone, even Apple. For more information, see [`EnergyKit data security`](https://developer.apple.comhttps://support.apple.com/guide/security/secd0a47c14c).
 
@@ -67,12 +67,12 @@ Idle devices between heating or cooling cycles don’t generate events. The devi
 ## Relationships
 
 ### Conforms To
-- [Decodable](../Swift/Decodable.md)
+- [Decodable](../swift/decodable.md)
 - [ElectricalLoadEventProtocol](electricalloadeventprotocol.md)
-- [Encodable](../Swift/Encodable.md)
-- [Identifiable](../Swift/Identifiable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Encodable](../swift/encodable.md)
+- [Identifiable](../swift/identifiable.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 
 ---

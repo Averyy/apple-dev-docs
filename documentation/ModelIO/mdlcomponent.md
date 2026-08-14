@@ -52,7 +52,7 @@ To add your own object features, first define a protocol that extends the [`MDLC
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 ### Inherited By
 - [MDLObjectContainerComponent](mdlobjectcontainercomponent.md)
 - [MDLTransformComponent](mdltransformcomponent.md)

@@ -31,7 +31,7 @@ To add custom activities to the activity view, implement your [`UIDocumentBrowse
 
 Your delegate object receives an array of URLs for the currently selected items. You can store and use these URLs in your [`UIActivity`](uiactivity.md) subclass.
 
-For design guidance, see Human Interface Guidelines >  [`Collaboration and sharing`](https://developer.apple.com/design/Human-Interface-Guidelines/collaboration-and-sharing).
+For design guidance, see Human Interface Guidelines >  [`Collaboration and sharing`](https://developer.apple.com/design/human-interface-guidelines/collaboration-and-sharing).
 
 ##### Add Bar Button Items
 

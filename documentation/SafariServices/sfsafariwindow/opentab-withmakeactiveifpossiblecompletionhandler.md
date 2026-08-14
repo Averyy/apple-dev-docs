@@ -18,14 +18,14 @@ func openTab(with url: URL, makeActiveIfPossible activateTab: Bool) async -> SFS
 
 > ❗ **Important**:  You can call this method from synchronous code using a completion handler, as shown on this page, or you can call it as an asynchronous method that has the following declaration: ```swift
 func openTab(with url: URL, makeActiveIfPossible activateTab: Bool) async -> SFSafariTab?
-``` For information about concurrency and asynchronous code in Swift, see [`Calling Objective-C APIs Asynchronously`](https://developer.apple.com/documentation/Swift/calling-objective-c-apis-asynchronously).
+``` For information about concurrency and asynchronous code in Swift, see [`Calling Objective-C APIs Asynchronously`](https://developer.apple.com/documentation/swift/calling-objective-c-apis-asynchronously).
 
 If the extension cannot access the URL, no tab is opened.
 
 ## Parameters
 
 - `url`: The URL to navigate to.
-- `activateTab`: [`true`](https://developer.apple.com/documentation/Swift/true) to make the tab active; otherwise [`false`](https://developer.apple.com/documentation/Swift/false).
+- `activateTab`: [`true`](https://developer.apple.com/documentation/swift/true) to make the tab active; otherwise [`false`](https://developer.apple.com/documentation/swift/false).
 - `completionHandler`: A block called after the tab is opened.
 
 ## See Also

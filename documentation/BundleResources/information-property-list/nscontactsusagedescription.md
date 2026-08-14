@@ -21,7 +21,7 @@ A message that tells people why the app is requesting access to their contacts.
 
 ## See Also
 
-- [Accessing the contact store](../Contacts/accessing-the-contact-store.md)
+- [Accessing the contact store](../contacts/accessing-the-contact-store.md)
   Request permission from the person to read and write their contact data.
 
 

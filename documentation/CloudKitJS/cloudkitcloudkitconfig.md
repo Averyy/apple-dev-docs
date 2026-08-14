@@ -26,7 +26,7 @@ The table describes the `services` properties.
 | `logger` | An object with methods `info`, `log`, `warn`, and `error`. You can set this to `window.console`. |
 | `fetch` | A function compatible with `window.fetch`. |
 | `Promise` | An object used for deferred and asynchronous computations. To learn more, go to [`Mozilla Developer Network: Promise`](https://developer.apple.comhttps://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise). |
-| `authTokenStore` | An object with these two methods: ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) `putToken(containerIdentifier:String, authToken:String) -> void;` ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) `getToken(containerIdentifier:String) -> String;` |
+| `authTokenStore` | An object with these two methods: ![None](/images/com.apple.cloudkitjs/spacer.png) `putToken(containerIdentifier:String, authToken:String) -> void;` ![None](/images/com.apple.cloudkitjs/spacer.png) `getToken(containerIdentifier:String) -> String;` |
 
 ## Topics
 

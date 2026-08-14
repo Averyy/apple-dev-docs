@@ -26,7 +26,7 @@ This request receives a merchant-specific payment token, if the payment network 
 
 Use a `PKDeferredPaymentRequest` object to provide the user with payment details and a way to manage payment methods for a deferred payment. You can optionally display a billing agreement and set up merchant token life cycle notifications for the request.
 
-For more information about the merchant token life cycle notifications, see [`Apple Pay Merchant Token Management API`](https://developer.apple.com/documentation/MerchantTokenNotificationServices).
+For more information about the merchant token life cycle notifications, see [`Apple Pay Merchant Token Management API`](https://developer.apple.com/documentation/merchanttokennotificationservices).
 
 ## Topics
 
@@ -56,14 +56,14 @@ For more information about the merchant token life cycle notifications, see [`Ap
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

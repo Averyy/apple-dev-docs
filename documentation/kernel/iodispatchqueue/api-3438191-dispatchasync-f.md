@@ -26,12 +26,12 @@ This method schedules the function for execution on the queue and returns immedi
 
 ## See Also
 
-- [IODispatchBlock](../driverkit/iodispatchblock.md)
-  A block to execute on a dispatch queue.
-- [IODispatchFunction](../driverkit/iodispatchfunction.md)
-  A C-style function to execute on a dispatch queue.
 - [- DispatchAsync](iodispatchqueue/3438190-dispatchasync.md)
   Schedule a block for asynchronous execution on the current queue.
+- [IODispatchBlock](../driverkit/iodispatchblock.md)
+  A block to execute on a dispatch queue. 
+- [IODispatchFunction](../driverkit/iodispatchfunction.md)
+  A C-style function to execute on a dispatch queue.
 
 
 ---

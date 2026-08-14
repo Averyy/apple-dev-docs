@@ -41,7 +41,7 @@ To render the table surface using RealityKit, conform to the [`EntityTabletop`](
 ## Relationships
 
 ### Inherits From
-- [Identifiable](../Swift/Identifiable.md)
+- [Identifiable](../swift/identifiable.md)
 ### Inherited By
 - [EntityTabletop](entitytabletop.md)
 

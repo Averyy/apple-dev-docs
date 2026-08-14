@@ -18,7 +18,7 @@ case graphicExtraLarge
 
 The following figure shows the size and location of the graphic rectangular complication.
 
-![Diagram showing the size and position of a graphic extra large complication.](https://docs-assets.developer.apple.com/published/c6ff466a49d7b5db89d3b67b4e08c45a/media-3667212%402x.png)
+![Diagram showing the size and position of a graphic extra large complication.](/images/com.apple.clockkit/media-3667212@2x.png)
 
 The [`CLKComplicationFamily.graphicExtraLarge`](clkcomplicationfamily/graphicextralarge.md) family is for 40 mm and 44 mm Apple Watches only. When available, the system prefers the [`CLKComplicationFamily.graphicExtraLarge`](clkcomplicationfamily/graphicextralarge.md) family over the [`CLKComplicationFamily.extraLarge`](clkcomplicationfamily/extralarge.md).
 

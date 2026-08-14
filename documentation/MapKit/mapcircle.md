@@ -54,8 +54,8 @@ Use this view to create circular overlays in the closure you provide to the `con
 ## Relationships
 
 ### Conforms To
-- [Copyable](../Swift/Copyable.md)
-- [Escapable](../Swift/Escapable.md)
+- [Copyable](../swift/copyable.md)
+- [Escapable](../swift/escapable.md)
 - [MapContent](mapcontent.md)
 
 ## See Also

@@ -19,12 +19,12 @@ func setItems(_ items: [UIBarButtonItem]?, animated: Bool)
 
 #### Discussion
 
-If `animated` is [`true`](https://developer.apple.com/documentation/Swift/true), the changes are dissolved or the reordering is animated—for example, removed items fade out and new items fade in. This method also adjusts the spacing between items.
+If `animated` is [`true`](https://developer.apple.com/documentation/swift/true), the changes are dissolved or the reordering is animated—for example, removed items fade out and new items fade in. This method also adjusts the spacing between items.
 
 ## Parameters
 
 - `items`: The items to display on the toolbar.
-- `animated`: A Boolean value if set to [`true`](https://developer.apple.com/documentation/Swift/true) animates the transition to the items; otherwise, does not.
+- `animated`: A Boolean value if set to [`true`](https://developer.apple.com/documentation/swift/true) animates the transition to the items; otherwise, does not.
 
 ## See Also
 

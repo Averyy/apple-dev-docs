@@ -40,7 +40,7 @@ Use one of these values with the [`preferredSurroundingsEffect(_:)`](view/prefer
 ## Relationships
 
 ### Conforms To
-- [Equatable](../Swift/Equatable.md)
+- [Equatable](../swift/equatable.md)
 
 ## See Also
 

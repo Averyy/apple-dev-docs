@@ -19,7 +19,7 @@ class let touchBarTextCenterAlignTemplateName: String
 
 #### Discussion
 
-![Template image for center text](https://docs-assets.developer.apple.com/published/884e523faf6d6aa040d86a282baf0b4c/media-2825136%402x.png)
+![Template image for center text](/images/com.apple.appkit/media-2825136@2x.png)
 
 Touch Bar template images are exclusively for use in [`NSTouchBarItem`](nstouchbaritem.md) objects and not in onscreen windows.
 

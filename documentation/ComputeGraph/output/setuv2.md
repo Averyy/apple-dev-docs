@@ -19,7 +19,7 @@ void output::setUV2(float4 value)
 
 This function assigns a custom UV coordinate to the second texture coordinate channel of the output mesh. If the mesh doesn’t already have a UV2 channel, it will be created. This enables multi-texturing and advanced shader effects.
 
-> **Note**: ![Graph](https://docs-assets.developer.apple.com/published/c6097ff6ff35be33d68dc3f5da4923e0/output__setUV2.svg)
+> **Note**: ![Graph](/images/com.apple.computegraph/output__setUV2.svg)
 
 > **Note**: Reads and writes to output attribute `float4 uv2`
 

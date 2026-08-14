@@ -7,7 +7,6 @@ Creates a custom reaction instance with the message identifier and content.
 
 **Availability**:
 - iOS 27.0+ (Beta)
-- iPadOS 27.0+ (Beta)
 
 ## Declaration
 

@@ -19,7 +19,7 @@ static let postToFlickr: UIActivity.ActivityType
 
 #### Discussion
 
-When using this service, you can provide [`UIImage`](uiimage.md) and [`NSURL`](https://developer.apple.com/documentation/Foundation/NSURL) objects whose contents use the file scheme and point to an image. You can also use [`NSData`](https://developer.apple.com/documentation/Foundation/NSData) objects whose contents are image data as data for the activity items.
+When using this service, you can provide [`UIImage`](uiimage.md) and [`NSURL`](https://developer.apple.com/documentation/foundation/nsurl) objects whose contents use the file scheme and point to an image. You can also use [`NSData`](https://developer.apple.com/documentation/foundation/nsdata) objects whose contents are image data as data for the activity items.
 
 ## See Also
 

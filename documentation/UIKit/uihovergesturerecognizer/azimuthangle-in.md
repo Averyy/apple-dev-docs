@@ -19,7 +19,7 @@ func azimuthAngle(in view: UIView?) -> CGFloat
 
 #### Return Value
 
-A [`CGFloat`](https://developer.apple.com/documentation/CoreFoundation/CGFloat-swift.struct) that represents the azimuth angle of the hovering pointing device.
+A [`CGFloat`](https://developer.apple.com/documentation/corefoundation/cgfloat-swift.struct) that represents the azimuth angle of the hovering pointing device.
 
 #### Discussion
 

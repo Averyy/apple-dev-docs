@@ -20,7 +20,7 @@ enum Payload
 
 #### Overview
 
-The [`SearchPipelineData`](searchpipelinedata.md) type uses this type to wrap the data you provide and store it for handoff to the next stage. The type is `@unchecked Sendable` because [`CSSearchableItem`](cssearchableitem.md) does not support the [`Sendable`](https://developer.apple.com/documentation/Swift/Sendable) protocol. Treat the data you store in this type as immutable.
+The [`SearchPipelineData`](searchpipelinedata.md) type uses this type to wrap the data you provide and store it for handoff to the next stage. The type is `@unchecked Sendable` because [`CSSearchableItem`](cssearchableitem.md) does not support the [`Sendable`](https://developer.apple.com/documentation/swift/sendable) protocol. Treat the data you store in this type as immutable.
 
 ## Topics
 
@@ -43,8 +43,8 @@ The [`SearchPipelineData`](searchpipelinedata.md) type uses this type to wrap th
 ## Relationships
 
 ### Conforms To
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

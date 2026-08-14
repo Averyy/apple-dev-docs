@@ -11,7 +11,7 @@ framework: HIG
 
 An image well is an editable version of an image view.
 
-![A stylized representation of an image well. The image is tinted red to subtly reflect the red in the original six-color Apple logo.](https://docs-assets.developer.apple.com/published/b482d6c2de79190be6890c210644df1e/components-image-well-intro~dark%402x.png)
+![A stylized representation of an image well. The image is tinted red to subtly reflect the red in the original six-color Apple logo.](/images/com.apple.HIG/components-image-well-intro~dark@2x.png)
 After selecting an image well, people can copy and paste its image or delete it. People can also drag a new image into an image well without selecting it first.
 
 ## Best practices
@@ -28,7 +28,7 @@ For related guidance, see [Image views](image-views.md).
 [Image views](image-views.md)
 
 #### Developer documentation
-[NSImageView](../AppKit/NSImageView.md) — AppKit
+[NSImageView](../appkit/nsimageview.md) — AppKit
 
 
 

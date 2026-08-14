@@ -24,13 +24,13 @@ struct MLShapedArray<Scalar> where Scalar : MLShapedArrayScalar
 
 A shaped array is a multidimensional array type that’s the Swift counterpart to [`MLMultiArray`](mlmultiarray.md). [`MLShapedArray`](mlshapedarray.md) is one of the underlying types of `MLFeatureValue` that stores scalar values. You can convert a shaped array to an [`MLMultiArray`](mlmultiarray.md) with its [`init(_:)`](mlmultiarray/init(_:)-wk41.md) initializer, and convert back to a shaped array with its [`init(_:)`](mlshapedarray/init(_:).md) initializer. All elements in an [`MLShapedArray`](mlshapedarray.md) are of the same type, and that type must conform to [`MLShapedArrayScalar`](mlshapedarrayscalar.md):
 
-- [`Int32`](https://developer.apple.com/documentation/Swift/Int32)
-- [`Float`](https://developer.apple.com/documentation/Swift/Float)
-- [`Double`](https://developer.apple.com/documentation/Swift/Double)
+- [`Int32`](https://developer.apple.com/documentation/swift/int32)
+- [`Float`](https://developer.apple.com/documentation/swift/float)
+- [`Double`](https://developer.apple.com/documentation/swift/double)
 
 Each dimension in a shaped array is typically significant or meaningful. For example, a model could have an input that accepts images as a three-dimensional array of pixels, C x H x W. The first dimension, *C*,_ _represents the number of color channels, and the second and third dimensions, *H* and *W*, represent the image’s height and width, respectively. The number of dimensions and size of each dimension define the shaped array’s *shape*.
 
-> **Note**:  Some models use a one-dimensional multiarray for an input or output. This type of shaped array is conceptually identical to a conventional [`Array`](https://developer.apple.com/documentation/Swift/Array).
+> **Note**:  Some models use a one-dimensional multiarray for an input or output. This type of shaped array is conceptually identical to a conventional [`Array`](https://developer.apple.com/documentation/swift/array).
 
 A shaped array’s [`shape`](mlmultiarray/shape.md) property is an integer array in which each element defines the size of the corresponding dimension. To inspect the shape and constraints of a model’s multiarray input or output feature:
 
@@ -94,21 +94,21 @@ A shaped array’s [`shape`](mlmultiarray/shape.md) property is an integer array
 ## Relationships
 
 ### Conforms To
-- [BidirectionalCollection](../Swift/BidirectionalCollection.md)
-- [Collection](../Swift/Collection.md)
-- [Copyable](../Swift/Copyable.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Decodable](../Swift/Decodable.md)
-- [Encodable](../Swift/Encodable.md)
-- [Equatable](../Swift/Equatable.md)
-- [Escapable](../Swift/Escapable.md)
-- [ExpressibleByArrayLiteral](../Swift/ExpressibleByArrayLiteral.md)
+- [BidirectionalCollection](../swift/bidirectionalcollection.md)
+- [Collection](../swift/collection.md)
+- [Copyable](../swift/copyable.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Decodable](../swift/decodable.md)
+- [Encodable](../swift/encodable.md)
+- [Equatable](../swift/equatable.md)
+- [Escapable](../swift/escapable.md)
+- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
 - [MLShapedArrayProtocol](mlshapedarrayprotocol.md)
-- [MutableCollection](../Swift/MutableCollection.md)
-- [RandomAccessCollection](../Swift/RandomAccessCollection.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
-- [Sequence](../Swift/Sequence.md)
+- [MutableCollection](../swift/mutablecollection.md)
+- [RandomAccessCollection](../swift/randomaccesscollection.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sequence](../swift/sequence.md)
 
 ## See Also
 

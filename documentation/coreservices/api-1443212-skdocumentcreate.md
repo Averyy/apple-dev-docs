@@ -20,13 +20,13 @@ The new document URL object, or `NULL` on failure.
 
 #### Discussion
 
-The new document URL object’s parent can be `NULL`, but you must specify either a scheme or a parent. When your application no longer needs the document URL object, dispose of it by calling [`CFRelease`](https://developer.apple.com/documentation/corefoundation/1521153-cfrelease).
+The new document URL object’s parent can be `NULL`, but you must specify either a scheme or a parent. When your application no longer needs the document URL object, dispose of it by calling [`CFRelease`](https://developer.apple.com/documentation/corefoundation/cfrelease).
 
 ## Parameters
 
-- `inScheme`: The scheme to use—analogous to the scheme of a URL. Only documents referenced with the “ ” scheme can be read by the   function. The scheme can be anything you like if you use the   function. The scheme can be  , in which case it will be set to be the same scheme as the document URL object’s parent. For more information on schemes, see  .
-- `inParent`: The document URL object one step up in the document hierarchy. Can be  .
-- `inName`: The name of the document that you’re creating a document URL object for. For the “ ” scheme, it is the name of the file or the container, not its path. The path can be constructed by following parent links. The maximum length for a document name is 256 bytes.
+- `inScheme`: The scheme to use—analogous to the scheme of a URL. Only documents referenced with the “`file`” scheme can be read by the [`SKIndexAddDocument(_:_:_:_:)`](1444897-skindexadddocument.md) function. The scheme can be anything you like if you use the [`SKIndexAddDocumentWithText(_:_:_:_:)`](1444518-skindexadddocumentwithtext.md) function. The scheme can be `NULL`, in which case it will be set to be the same scheme as the document URL object’s parent. For more information on schemes, see [`http://www.iana.org/assignments/uri-schemes.html`](https://developer.apple.comhttp://www.iana.org/assignments/uri-schemes.html).
+- `inParent`: The document URL object one step up in the document hierarchy. Can be `NULL`.
+- `inName`: The name of the document that you’re creating a document URL object for. For the “`file`” scheme, it is the name of the file or the container, not its path. The path can be constructed by following parent links. The maximum length for a document name is 256 bytes.
 
 ## See Also
 

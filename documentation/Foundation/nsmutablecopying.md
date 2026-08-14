@@ -24,7 +24,7 @@ protocol NSMutableCopying
 
 The [`NSMutableCopying`](nsmutablecopying.md) protocol declares a method for providing mutable copies of an object. Only classes that define an “immutable vs. mutable” distinction should adopt this protocol. Classes that don’t define such a distinction should adopt [`NSCopying`](nscopying.md) instead.
 
-[`NSMutableCopying`](nsmutablecopying.md) declares one method, [`mutableCopy(with:)`](nsmutablecopying/mutablecopy(with:).md), but mutable copying is commonly invoked with the convenience method [`mutableCopy()`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class/mutableCopy()). The [`mutableCopy()`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class/mutableCopy()) method is defined for all NSObjects and simply invokes [`mutableCopy(with:)`](nsmutablecopying/mutablecopy(with:).md) with the default zone.
+[`NSMutableCopying`](nsmutablecopying.md) declares one method, [`mutableCopy(with:)`](nsmutablecopying/mutablecopy(with:).md), but mutable copying is commonly invoked with the convenience method [`mutableCopy()`](https://developer.apple.com/documentation/objectivec/nsobject-swift.class/mutablecopy()). The [`mutableCopy()`](https://developer.apple.com/documentation/objectivec/nsobject-swift.class/mutablecopy()) method is defined for all NSObjects and simply invokes [`mutableCopy(with:)`](nsmutablecopying/mutablecopy(with:).md) with the default zone.
 
 If a subclass inherits [`NSMutableCopying`](nsmutablecopying.md) from its superclass and declares additional instance variables, the subclass has to override [`mutableCopy(with:)`](nsmutablecopying/mutablecopy(with:).md) to properly handle its own instance variables, invoking the superclass’s implementation first.
 

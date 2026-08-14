@@ -25,7 +25,7 @@ This method dynamically registers the supplied [`AUAudioUnit`](auaudiounit.md) s
 
 - The [`init(componentDescription:)`](auaudiounit/init(componentdescription:).md) method.
 - The [`init(componentDescription:options:)`](auaudiounit/init(componentdescription:options:).md) method.
-- The [`AVAudioUnit`](https://developer.apple.com/documentation/AVFAudio/AVAudioUnit) [`instantiate(with:options:completionHandler:)`](https://developer.apple.com/documentation/AVFAudio/AVAudioUnit/instantiate(with:options:completionHandler:)) method.
+- The [`AVAudioUnit`](https://developer.apple.com/documentation/avfaudio/avaudiounit) [`instantiate(with:options:completionHandler:)`](https://developer.apple.com/documentation/avfaudio/avaudiounit/instantiate(with:options:completionhandler:)) method.
 - The [`AudioComponentInstanceNew(_:_:)`](audiocomponentinstancenew(_:_:).md) function.
 
 ## Parameters

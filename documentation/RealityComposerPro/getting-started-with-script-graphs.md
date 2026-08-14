@@ -16,14 +16,14 @@ Script Graphs use entry points — such as **On Initialize**, **On Update**, **O
 
 Before working with Script Graphs, review the graph editor basics in [`Working with the Graph Editor`](realitycomposerpro-essentials-grapheditoroverview.md).
 
-> 💡 **Tip**: Script Graphs, like the rest of Reality Composer Pro, target RealityKit. You don’t need Swift experience, but familiarity with the RealityKit Entity Component System helps. For more information, see [`RealityKit`](https://developer.apple.com/documentation/RealityKit).
+> 💡 **Tip**: Script Graphs, like the rest of Reality Composer Pro, target RealityKit. You don’t need Swift experience, but familiarity with the RealityKit Entity Component System helps. For more information, see [`RealityKit`](https://developer.apple.com/documentation/realitykit).
 
 The following screenshot shows a simple Script Graph.
 
 - **Blue (Flow) connecting lines** between the nodes On Update and Set Relative Transform carry execution flow between nodes.
 - **Gray (Data) connecting lines** pass values and compute results between nodes.
 
-![A screenshot of the Script Graph Editor showing the On Update node connected to the Set Relative Transform node. A blue line carries the execution flow between them; gray lines carry data values.](https://docs-assets.developer.apple.com/published/eaa6868a511e01296d7a36e0ec2d8922/ScriptGraph%402x.png)
+![A screenshot of the Script Graph Editor showing the On Update node connected to the Set Relative Transform node. A blue line carries the execution flow between them; gray lines carry data values.](/images/RealityComposerPro/ScriptGraph@2x.png)
 
 #### Choose How to Attach a Script Graph to an Entity
 

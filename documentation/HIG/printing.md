@@ -11,7 +11,7 @@ framework: HIG
 
 An iOS, iPadOS, macOS, or visionOS app can integrate system-provided print functionality when it makes sense, presenting custom printer- and document-specific options if necessary.
 
-![A sketch of a printer, suggesting printing. The image is overlaid with rectangular and circular grid lines and is tinted orange to subtly reflect the orange in the original six-color Apple logo.](https://docs-assets.developer.apple.com/published/d3e0d511e2ec9f549a821f51c33d92f3/patterns-printing-intro~dark%402x.png)
+![A sketch of a printer, suggesting printing. The image is overlaid with rectangular and circular grid lines and is tinted orange to subtly reflect the orange in the original six-color Apple logo.](/images/com.apple.HIG/patterns-printing-intro~dark@2x.png)
 
 ## Best practices
 **Make printing discoverable.** Help people find your print action by placing it in standard system locations. For example, include a Print item in your macOS app’s File menu; in your iOS or iPadOS app, add a toolbar button that opens an [action sheet](https://developer.apple.com/design/human-interface-guidelines/action-sheets). If your macOS app has a toolbar, you might want to put a Print button there, too, but consider making it an optional button that people can add when they customize the toolbar.
@@ -36,8 +36,8 @@ An iOS, iPadOS, macOS, or visionOS app can integrate system-provided print funct
 [File menu](the-menu-bar.md#File-menu)
 
 #### Developer documentation
-[UIPrintInteractionController](../UIKit/UIPrintInteractionController.md) — UIKit
-[NSDocument](../AppKit/NSDocument.md) — AppKit
+[UIPrintInteractionController](../uikit/uiprintinteractioncontroller.md) — UIKit
+[NSDocument](../appkit/nsdocument.md) — AppKit
 
 
 

@@ -20,7 +20,7 @@ func makeTemporalScaler(device: any MTLDevice) -> (any MTLFXTemporalScaler)?
 
 ## Parameters
 
-- `device`: An [`MTLDevice`](https://developer.apple.com/documentation/Metal/MTLDevice) instance that represents the GPU that applies the temporal scaling effect.
+- `device`: An [`MTLDevice`](https://developer.apple.com/documentation/metal/mtldevice) instance that represents the GPU that applies the temporal scaling effect.
 
 
 ---

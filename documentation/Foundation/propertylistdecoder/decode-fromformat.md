@@ -22,7 +22,7 @@ func decode<T>(_ type: T.Type, from data: Data, format: inout PropertyListDecode
 
 #### Discussion
 
-If the data is not a valid property list, this method throws the [`DecodingError.dataCorrupted(_:)`](https://developer.apple.com/documentation/Swift/DecodingError/dataCorrupted(_:)) error. If a value within the property list fails to decode, this method throws the corresponding error.
+If the data is not a valid property list, this method throws the [`DecodingError.dataCorrupted(_:)`](https://developer.apple.com/documentation/swift/decodingerror/datacorrupted(_:)) error. If a value within the property list fails to decode, this method throws the corresponding error.
 
 ## See Also
 

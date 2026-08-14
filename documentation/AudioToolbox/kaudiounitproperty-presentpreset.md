@@ -21,11 +21,11 @@ var kAudioUnitProperty_PresentPreset: AudioUnitPropertyID { get }
 
 #### Discussion
 
-A read/write [`AUPreset`](aupreset.md) data structure valid on the audio unit global scope, The `presetName` field in the struct is of type [`CFString`](https://developer.apple.com/documentation/CoreFoundation/CFString) and follows Core Foundation memory semantics.
+A read/write [`AUPreset`](aupreset.md) data structure valid on the audio unit global scope, The `presetName` field in the struct is of type [`CFString`](https://developer.apple.com/documentation/corefoundation/cfstring) and follows Core Foundation memory semantics.
 
-When setting the active factory preset on an audio unit with the [`AudioUnitSetProperty(_:_:_:_:_:_:)`](audiounitsetproperty(_:_:_:_:_:_:).md) function, you own the reference to the preset name and are responsible for later releasing it by calling the [`CFRelease`](https://developer.apple.com/documentation/CoreFoundation/CFRelease) function.
+When setting the active factory preset on an audio unit with the [`AudioUnitSetProperty(_:_:_:_:_:_:)`](audiounitsetproperty(_:_:_:_:_:_:).md) function, you own the reference to the preset name and are responsible for later releasing it by calling the [`CFRelease`](https://developer.apple.com/documentation/corefoundation/cfrelease) function.
 
-When obtaining the active factory preset from an audio unit with the [`AudioUnitGetProperty(_:_:_:_:_:_:)`](audiounitgetproperty(_:_:_:_:_:_:).md) function, you also own the reference to the preset name and are responsible for later releasing it by calling the [`CFRelease`](https://developer.apple.com/documentation/CoreFoundation/CFRelease) function.
+When obtaining the active factory preset from an audio unit with the [`AudioUnitGetProperty(_:_:_:_:_:_:)`](audiounitgetproperty(_:_:_:_:_:_:).md) function, you also own the reference to the preset name and are responsible for later releasing it by calling the [`CFRelease`](https://developer.apple.com/documentation/corefoundation/cfrelease) function.
 
 ## See Also
 

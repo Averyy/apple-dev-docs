@@ -25,13 +25,13 @@ func revealDocument(at url: URL, importIfNeeded: Bool) async throws -> URL
 
 Call this method to display a document in the document browser.
 
-If `importIfNeeded` is [`true`](https://developer.apple.com/documentation/Swift/true), the document browser calls its delegate’s [`documentBrowser(_:didImportDocumentAt:toDestinationURL:)`](uidocumentbrowserviewcontrollerdelegate/documentbrowser(_:didimportdocumentat:todestinationurl:).md) method (or its [`documentBrowser(_:failedToImportDocumentAt:error:)`](uidocumentbrowserviewcontrollerdelegate/documentbrowser(_:failedtoimportdocumentat:error:).md) method, if an error occurred) before calling the completion handler.
+If `importIfNeeded` is [`true`](https://developer.apple.com/documentation/swift/true), the document browser calls its delegate’s [`documentBrowser(_:didImportDocumentAt:toDestinationURL:)`](uidocumentbrowserviewcontrollerdelegate/documentbrowser(_:didimportdocumentat:todestinationurl:).md) method (or its [`documentBrowser(_:failedToImportDocumentAt:error:)`](uidocumentbrowserviewcontrollerdelegate/documentbrowser(_:failedtoimportdocumentat:error:).md) method, if an error occurred) before calling the completion handler.
 
 ## Parameters
 
 - `url`: The URL of the document to reveal.
 - `importIfNeeded`: A Boolean value that determines whether the document browser should import the document.
-- `completion`: A completion block with the following parameters: - **url**: The new URL of an imported document. Set to `nil` if `shouldImport` is [`false`](https://developer.apple.com/documentation/Swift/false), or if an error occurs.
+- `completion`: A completion block with the following parameters: - **url**: The new URL of an imported document. Set to `nil` if `shouldImport` is [`false`](https://developer.apple.com/documentation/swift/false), or if an error occurs.
 - **error**: If an error occurs, this parameter contains the error information; otherwise, set to `nil`.
 
 ## See Also

@@ -22,7 +22,7 @@ optional func download(_ download: WKDownload, respondTo challenge: URLAuthentic
 
 Determine how to respond to the authentication challenge in this method. Then invoke `completionHandler` with a disposition that describes how to respond to the authorization challenge, and optional credentials.
 
-If you don’t implement this method, the web view responds to the challenge with [`URLSession.AuthChallengeDisposition.rejectProtectionSpace`](https://developer.apple.com/documentation/Foundation/URLSession/AuthChallengeDisposition/rejectProtectionSpace).
+If you don’t implement this method, the web view responds to the challenge with [`URLSession.AuthChallengeDisposition.rejectProtectionSpace`](https://developer.apple.com/documentation/foundation/urlsession/authchallengedisposition/rejectprotectionspace).
 
 ## Parameters
 

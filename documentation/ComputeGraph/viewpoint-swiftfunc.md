@@ -19,7 +19,7 @@ Viewpoint viewpoint()
 
 Depending on context, this may include direction, position, or both values. On visionOS, a `ParticleViewpoint` component needs to be added to the scene to automatically provide this value.
 
-> **Note**: ![Graph](https://docs-assets.developer.apple.com/published/cdd7d98ff4f620e378ad4026a7f938c8/viewpoint.svg)
+> **Note**: ![Graph](/images/com.apple.computegraph/viewpoint.svg)
 
 > **Note**: Reads from shared uniform Viewpoint
 

@@ -39,7 +39,7 @@ protocol UIDragDropSession : NSObjectProtocol
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 ### Inherited By
 - [UIDragSession](uidragsession.md)
 - [UIDropSession](uidropsession.md)

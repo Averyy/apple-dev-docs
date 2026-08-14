@@ -41,7 +41,7 @@ func linearTosRGB(inputImage: CIImage) -> CIImage {
 }
 ```
 
-![Two versions of a photograph side by side. The photo on the left shows a small bunch of flowers photographed close up, in focus, with good light and no effects. In the photo on the right, a linear to sRGB tone curve filter is applied, resulting in a brighter image with less contrast.](https://docs-assets.developer.apple.com/published/e908adb6e0ae0a589871d898bcadbfe8/media-3545000%402x.png)
+![Two versions of a photograph side by side. The photo on the left shows a small bunch of flowers photographed close up, in focus, with good light and no effects. In the photo on the right, a linear to sRGB tone curve filter is applied, resulting in a brighter image with less contrast.](/images/com.apple.coreimage/media-3545000@2x.png)
 
 ## See Also
 

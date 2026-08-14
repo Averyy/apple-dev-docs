@@ -28,7 +28,7 @@ CFArray’s two primitive functions [`CFArrayGetCount(_:)`](cfarraygetcount(_:).
 
 A number of CFArray functions allow you to operate over a range of values in an array, for example [`CFArrayApplyFunction(_:_:_:_:)`](cfarrayapplyfunction(_:_:_:_:).md) lets you apply a function to values in an array, and [`CFArrayBSearchValues(_:_:_:_:_:)`](cfarraybsearchvalues(_:_:_:_:_:).md) searches an array for the value that matches its parameter. Recall that a range is defined as `{start, length}`, therefore to operate over the entire array the range you supply should be `{0, N}` (where `N` is the count of the array).
 
-CFArray is “toll-free bridged” with its Cocoa Foundation counterpart, [`NSArray`](https://developer.apple.com/documentation/Foundation/NSArray). This means that the Core Foundation type is interchangeable in function or method calls with the bridged Foundation object. Therefore, in a method where you see an `NSArray *` parameter, you can pass in a `CFArrayRef`, and in a function where you see a `CFArrayRef` parameter, you can pass in an NSArray instance. This also applies to concrete subclasses of NSArray. See [`Toll-Free Bridged Types`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFDesignConcepts/Articles/tollFreeBridgedTypes.html#//apple_ref/doc/uid/TP40010677) for more information on toll-free bridging.
+CFArray is “toll-free bridged” with its Cocoa Foundation counterpart, [`NSArray`](https://developer.apple.com/documentation/foundation/nsarray). This means that the Core Foundation type is interchangeable in function or method calls with the bridged Foundation object. Therefore, in a method where you see an `NSArray *` parameter, you can pass in a `CFArrayRef`, and in a function where you see a `CFArrayRef` parameter, you can pass in an NSArray instance. This also applies to concrete subclasses of NSArray. See [`Toll-Free Bridged Types`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFDesignConcepts/Articles/tollFreeBridgedTypes.html#//apple_ref/doc/uid/TP40010677) for more information on toll-free bridging.
 
 ## Topics
 
@@ -83,8 +83,8 @@ CFArray is “toll-free bridged” with its Cocoa Foundation counterpart, [`NSAr
 ### Inherited By
 - [CFMutableArray](cfmutablearray.md)
 ### Conforms To
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
 
 ## See Also
 

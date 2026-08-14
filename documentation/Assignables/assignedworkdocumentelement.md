@@ -21,8 +21,8 @@ protocol AssignedWorkDocumentElement : DocumentElement
 
 ### Inherits From
 - [DocumentElement](documentelement.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
 ### Conforming Types
 - [AssignedWorkDocument.Page](assignedworkdocument/page.md)
 - [AssignedWorkDocument.ScoreAnnotation](assignedworkdocument/scoreannotation.md)

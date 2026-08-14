@@ -27,7 +27,7 @@ You should not look for the constant `kPMPrintAllPages`. That constant is used o
 ## Parameters
 
 - `printSettings`: The print settings object whose last page number you want to obtain.
-- `last`: A pointer to your   variable. On return, the variable contains the page number of the last page to print.
+- `last`: A pointer to your `UInt32` variable. On return, the variable contains the page number of the last page to print.
 
 ## See Also
 

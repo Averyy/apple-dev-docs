@@ -21,7 +21,7 @@ final var outputPixelFormatType: OSType { get set }
 
 #### Discussion
 
-The default is [`kCVPixelFormatType_TwoComponent32Float`](https://developer.apple.com/documentation/CoreVideo/kCVPixelFormatType_TwoComponent32Float).
+The default is [`kCVPixelFormatType_TwoComponent32Float`](https://developer.apple.com/documentation/corevideo/kcvpixelformattype_twocomponent32float).
 
 ## See Also
 

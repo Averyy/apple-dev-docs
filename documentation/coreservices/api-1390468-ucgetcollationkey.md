@@ -34,12 +34,12 @@ This function can move memory.
 
 ## Parameters
 
-- `collatorRef`: A valid reference to a collator object;   is not allowed. You can use the function   to obtain a collator reference. 
-- `textPtr`: A pointer to the Unicode string (a   array) for which to generate a collation key. 
-- `textLength`: The total count of Unicode characters in the string referenced by the   parameter. 
-- `maxKeySize`: An   value specifying the length of the   array passed in the   parameter. This dimension should typically be at least  , as the byte length of a collation key is typically more than 16 times the number of Unicode characters in the string. 
-- `actualKeySize`: On return, the actual length of the   array returned in the   parameter.
-- `collationKey`: An array of   values. On return, the array contains the new collation key. The collation key consists of a sequence of primary weights for all of the collation text elements in the string, followed by a separator and a sequence of secondary weights for all of the text elements in the string, and so on for several levels of significance. The separator is usually 0; however, 1 is used as the separator at the boundary between levels that are significant and levels that are insignificant for the options you supply in the collator object. 
+- `collatorRef`: A valid reference to a collator object; `NULL` is not allowed. You can use the function [`UCCreateCollator(_:_:_:_:)`](1390403-uccreatecollator.md) to obtain a collator reference. 
+- `textPtr`: A pointer to the Unicode string (a `UniChar` array) for which to generate a collation key. 
+- `textLength`: The total count of Unicode characters in the string referenced by the `textPtr` parameter. 
+- `maxKeySize`: An `ItemCount` value specifying the length of the `UCCollationValue` array passed in the `collationKey` parameter. This dimension should typically be at least `5*textLength`, as the byte length of a collation key is typically more than 16 times the number of Unicode characters in the string. 
+- `actualKeySize`: On return, the actual length of the `UCCollationValue` array returned in the `collationKey` parameter.
+- `collationKey`: An array of `UCCollationValue` values. On return, the array contains the new collation key. The collation key consists of a sequence of primary weights for all of the collation text elements in the string, followed by a separator and a sequence of secondary weights for all of the text elements in the string, and so on for several levels of significance. The separator is usually 0; however, 1 is used as the separator at the boundary between levels that are significant and levels that are insignificant for the options you supply in the collator object. 
 
 ## See Also
 

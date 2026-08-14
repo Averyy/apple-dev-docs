@@ -21,7 +21,7 @@ let kCIInputBrightnessKey: String
 
 #### Discussion
 
-A key for a scalar value ([`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber)) that specifies a brightness level.
+A key for a scalar value ([`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber)) that specifies a brightness level.
 
 ## See Also
 

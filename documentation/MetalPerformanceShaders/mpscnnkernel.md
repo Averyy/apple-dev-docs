@@ -25,7 +25,7 @@ An [`MPSCNNKernel`](mpscnnkernel.md) object consumes one [`MPSImage`](mpsimage.m
 
 The region overwritten in the destination image is described by the [`clipRect`](mpscnnkernel/cliprect.md) property.  The top left corner of the region consumed (ignoring adjustments for filter size—for example, convolution filter size) is given by the [`offset`](mpscnnkernel/offset.md) property. The size of the region consumed is a function of the size of the [`clipRect`](mpscnnkernel/cliprect.md) property and any subsampling caused by pixel strides at work (for example, [`strideInPixelsX`](mpscnnkernel/strideinpixelsx.md)/[`strideInPixelsY`](mpscnnkernel/strideinpixelsy.md) in the [`MPSCNNPooling`](mpscnnpooling.md) class).  Wherever the [`offset`](mpscnnkernel/offset.md) and [`clipRect`](mpscnnkernel/cliprect.md) properties would cause an `{x,y}` pixel address not in the image to be read, the [`edgeMode`](mpscnnkernel/edgemode.md) property is used to determine what value to read there.
 
-The `z` or `depth` component of the [`offset`](mpscnnkernel/offset.md), [`origin`](https://developer.apple.com/documentation/Metal/MTLRegion/origin) and [`size`](mpsregion/size.md) properties indexes which images to use.
+The `z` or `depth` component of the [`offset`](mpscnnkernel/offset.md), [`origin`](https://developer.apple.com/documentation/metal/mtlregion/origin) and [`size`](mpsregion/size.md) properties indexes which images to use.
 
 - If the [`MPSImage`](mpsimage.md) object contains only a single image, then these values should be `offset.z = 0`, `clipRect.origin.z = 0`, and `clipRect.size.depth = 1`.
 - If the [`MPSImage`](mpsimage.md) object contains multiple images, then the value of `clipRect.size.depth` determines the number of images to process. Both the source and destination [`MPSImage`](mpsimage.md) objects must have at least this many images. The value of `offset.z` refers to the starting image index of the source. Thus, the value of `offset.z + clipRect.size.depth` must be `<=source.numberOfImages`. Similarly, the value of `clipRect.origin.z` determines the starting image index of the destination. Thus, the value of `clipRect.origin.z + clipRect.size.depth` must be `<=destination.numberOfImages`.
@@ -47,7 +47,7 @@ The [`destinationFeatureChannelOffset`](mpscnnkernel/destinationfeaturechannelof
   A signed coordinate with x, y, and z components.
 - [var clipRect: MTLRegion](mpscnnkernel/cliprect.md)
   An optional clip rectangle to use when writing data. Only the pixels in the clip rectangle will be overwritten.
-- [struct MTLRegion](../Metal/MTLRegion.md)
+- [struct MTLRegion](../metal/mtlregion.md)
   The bounds for a subset of an instance’s elements.
 - [var destinationFeatureChannelOffset: Int](mpscnnkernel/destinationfeaturechanneloffset.md)
   The number of channels in the destination image to skip before writing output data.
@@ -124,15 +124,15 @@ The [`destinationFeatureChannelOffset`](mpscnnkernel/destinationfeaturechannelof
 - [MPSNNSlice](mpsnnslice.md)
 - [MPSRNNImageInferenceLayer](mpsrnnimageinferencelayer.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCoding](../Foundation/NSCoding.md)
-- [NSCopying](../Foundation/NSCopying.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [NSSecureCoding](../Foundation/NSSecureCoding.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCoding](../foundation/nscoding.md)
+- [NSCopying](../foundation/nscopying.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSSecureCoding](../foundation/nssecurecoding.md)
 
 ## See Also
 

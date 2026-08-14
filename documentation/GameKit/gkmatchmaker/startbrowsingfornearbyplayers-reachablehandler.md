@@ -25,7 +25,7 @@ Use this method only when you are implementing programmatic matchmaking. After e
 ## Parameters
 
 - `reachableHandler`: A block to call when the reachability for a player changes. The block takes the following parameters: - ***playerID***: The player identifier for the player whose reachability status has changed.
-- ***reachable***: [`true`](https://developer.apple.com/documentation/Swift/true) if GameKit discovers a new player locally, [`false`](https://developer.apple.com/documentation/Swift/false) if a previously discovered player disappears.
+- ***reachable***: [`true`](https://developer.apple.com/documentation/swift/true) if GameKit discovers a new player locally, [`false`](https://developer.apple.com/documentation/swift/false) if a previously discovered player disappears.
 
 ## See Also
 

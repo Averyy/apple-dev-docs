@@ -25,7 +25,7 @@ mutating func update(bufferPointer: UnsafeRawBufferPointer)
 
 Call this method one or more times to provide data to the hash function in blocks. After providing the last block of data, call the [`finalize()`](hashfunction/finalize().md) method to get the computed digest. Don’t call the update method again after finalizing the hash function.
 
-> **Note**: Typically, it’s safer to use an instance of [`Data`](https://developer.apple.com/documentation/Foundation/Data), or some other type that conforms to the [`DataProtocol`](https://developer.apple.com/documentation/Foundation/DataProtocol), to hold your data. When possible, use the [`update(data:)`](hashfunction/update(data:).md) method instead.
+> **Note**: Typically, it’s safer to use an instance of [`Data`](https://developer.apple.com/documentation/foundation/data), or some other type that conforms to the [`DataProtocol`](https://developer.apple.com/documentation/foundation/dataprotocol), to hold your data. When possible, use the [`update(data:)`](hashfunction/update(data:).md) method instead.
 
 ## Parameters
 

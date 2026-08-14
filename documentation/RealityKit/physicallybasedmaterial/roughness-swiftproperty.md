@@ -27,9 +27,9 @@ var roughness: PhysicallyBasedMaterial.Roughness { get set }
 
 The `roughness` property represents how much the surface of the entity scatters light it reflects. A material with a high roughness has a matte appearance, while one with a low roughness has a shiny appearance.
 
-![An illustration showing three spheres with different amounts of](https://docs-assets.developer.apple.com/published/6dccdd9884a6e12444a9f61c265d8644/PhysicallyBasedMaterial-roughness-swift-property-1%402x.png)
+![An illustration showing three spheres with different amounts of](/images/com.apple.RealityKit/PhysicallyBasedMaterial-roughness-swift-property-1@2x.png)
 
-Specify this property using a [`Float`](https://developer.apple.com/documentation/Swift/Float) to represent a uniform `roughness` for the entire entity, or a UV-mapped grayscale image that uses shades of gray to represent the roughness of different parts of the entity. When using an image, black pixels represent areas that have a low roughness and appear shiny, while white represents areas that have a high roughness and display a matte finish.
+Specify this property using a [`Float`](https://developer.apple.com/documentation/swift/float) to represent a uniform `roughness` for the entire entity, or a UV-mapped grayscale image that uses shades of gray to represent the roughness of different parts of the entity. When using an image, black pixels represent areas that have a low roughness and appear shiny, while white represents areas that have a high roughness and display a matte finish.
 
 If you initialize this property with a color image rather than a grayscale image, RealityKit only uses the intensity of the image’s red channel.
 

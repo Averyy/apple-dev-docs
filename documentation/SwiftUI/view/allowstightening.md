@@ -47,7 +47,7 @@ VStack {
 }
 ```
 
-![A screenshot showing the effect of enabling text tightening in a](https://docs-assets.developer.apple.com/published/7875ef8b31de58ae8d8efc6485da09b0/SwiftUI-view-allowsTightening%402x.png)
+![A screenshot showing the effect of enabling text tightening in a](/images/com.apple.SwiftUI/SwiftUI-view-allowsTightening@2x.png)
 
 ## Parameters
 

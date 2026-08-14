@@ -7,7 +7,7 @@ An atom that defines the media’s control information, including graphics mode 
 
 #### Overview
 
-See [`Base media info atom ('gmin')`](base_media_info_atom.md).
+See [`Base media info atom`](base_media_info_atom.md).
 
 ## See Also
 

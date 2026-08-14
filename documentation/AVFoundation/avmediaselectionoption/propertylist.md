@@ -26,7 +26,7 @@ A serializable property list that you can use to obtain an instance of [`AVMedia
 
 #### Discussion
 
-You can serialize the returned property list using [`PropertyListSerialization`](https://developer.apple.com/documentation/Foundation/PropertyListSerialization).
+You can serialize the returned property list using [`PropertyListSerialization`](https://developer.apple.com/documentation/foundation/propertylistserialization).
 
 
 ---

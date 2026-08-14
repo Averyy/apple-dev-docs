@@ -8,7 +8,7 @@ Make your app’s actions and content available to the rest of the system using 
 
 People use apps to view and interact with their content, but they can also interact with that content in other ways. Someone might use Siri while driving to perform actions using your app, like sending a message or creating a note. When Spotlight displays your content in search results, the person can tap that result to launch your app to display the content there. Widgets can display your content from the Home Screen, Lock Screen and other places, and even let people interact with that content. All of these features rely your app supporting the App Intents framework, which provides the infrastructure to make your content available from outside your app. Make the adoption of this framework a core feature of every app you create.
 
-![An illustration that shows how intents represent actions and entities represent content that an app makes available to Apple Intelligence to enable system experiences like Siri, Spotlight, or Shortcuts.](https://docs-assets.developer.apple.com/published/ab7f47190ba6e04fa129bfb72cb642b8/getting-started-with-the-app-intents-framework%402x.png)
+![An illustration that shows how intents represent actions and entities represent content that an app makes available to Apple Intelligence to enable system experiences like Siri, Spotlight, or Shortcuts.](/images/com.apple.AppIntents/getting-started-with-the-app-intents-framework@2x.png)
 
 With the App Intents framework, your code remains the source of truth and you use the framework’s protocols and other types to make your content available to the system. You can integrate support for app intents into your existing types or create entirely separate types. You decide which of your app’s actions and data types you want to make available, and typically focus on types that people recognize. For example, a travel app might expose data objects for travel destinations and actions to display or navigate to a specific destination.
 
@@ -20,7 +20,7 @@ As you design your app, identify actions that people might want to perform from 
 
 You can define custom app intents for any actions that are unique to your app, but build app intents for common actions from the built-in [`App schema domains`](app-schema-domains.md) whenever possible. The App Intents framework offers predefined app intents for actions that are common to multiple apps. For example, you might use these domains if you create a music or email app. When you type the [`AppIntent(schema:)`](appintent(schema:).md) macro in your source file and specify a schema from one of the domains, Xcode code completion generates the initial code for your app intent, including any expected parameters. These templates simplify the creation of your code and help your app work seamlessly with Apple Intelligence and Siri.
 
-![A flow diagram that shows input flowing into an app intent’s perform method and the method’s output.](https://docs-assets.developer.apple.com/published/23a505e82503bfc6f1a0148037260f98/getting-started-with-the-app-intents-framework-2%402x.png)
+![A flow diagram that shows input flowing into an app intent’s perform method and the method’s output.](/images/com.apple.AppIntents/getting-started-with-the-app-intents-framework-2@2x.png)
 
 Whether you define a custom app intent or use one of the predefined schemas, the [`AppIntent`](appintent.md) protocol defines the common behaviors for all app intents. Use this protocol, or one of several [`App intent types`](app-intent-types.md) as the starting point for your app intent type. Extend the features of your type by adding support for any of the other protocols the framework offers. Each app intent you create needs to have the following minimum set of behaviors:
 
@@ -35,7 +35,7 @@ For more information about defining and implementing app intents for your app, s
 
 Every app uses data objects to manage key information and the app creates and manages those objects at runtime. A fitness app might create a data object for each workout session, and track the workout duration and effort in that object. An email or messaging app might use data objects to track the contents of a message or its recipients. A web browser might use data objects to manage visible tabs or someone’s personal bookmarks. An *app entity* is a lightweight version of one of your data objects, and the system uses the app entities you create as a gateway to your app’s data.
 
-![An illustration that shows how app entities move between your app, Siri, and other apps.](https://docs-assets.developer.apple.com/published/764f24f34832fec77407534eafd51ebb/getting-started-with-the-app-intents-framework-3%402x.png)
+![An illustration that shows how app entities move between your app, Siri, and other apps.](/images/com.apple.AppIntents/getting-started-with-the-app-intents-framework-3@2x.png)
 
 App entities provide access to your app’s data, but your actual data objects remain the source of truth. You typically create entities for only a subset of your app’s actual data, focusing on the types that people see and manipulate from your interface. The app entity type you create using the [`AppEntity`](appentity.md) protocol then reflects your app’s data. If your app’s data objects are lightweight, you might update them to support this protocol directly. However, the more common approach is to define custom entity types that refer to your app’s existing types, and use them to provide access to your data.
 
@@ -48,7 +48,7 @@ Define custom app entities for any data types that are unique to your app, but b
 
 Query objects help the system find your app entities at runtime. For each of your app entities, you provide query objects to search for one with a specific identifier or matching a specific value. System features like Siri use your queries to try and resolve conversational requests automatically. For example, if a request involves a document with a specific name, Siri uses your query to search for a document entity with that name.
 
-> ❗ **Important**: Make your app entity types transferable to support exchanging them with other processes. For more information about adding transferable support, see the [`Core Transferable`](https://developer.apple.com/documentation/CoreTransferable) framework.
+> ❗ **Important**: Make your app entity types transferable to support exchanging them with other processes. For more information about adding transferable support, see the [`Core Transferable`](https://developer.apple.com/documentation/coretransferable) framework.
 
 ##### Wrap Finite Lists of Options in App Enums
 
@@ -57,8 +57,8 @@ Many apps use enumerations or static types to define constants with special mean
 An app enum’s main job is to provide descriptive information about its options, which the system uses to present those options in system interfaces. For example, it might display those descriptions as possible options for resolving an app intent parameter. When defining an app enum, make sure your type adheres to the following rules:
 
 - The type inherits from the [`AppEnum`](appenum.md) type.
-- Its storage type is [`String`](https://developer.apple.com/documentation/Swift/String).
-- The type also conforms to the [`RawRepresentable`](https://developer.apple.com/documentation/Swift/RawRepresentable) protocol.
+- Its storage type is [`String`](https://developer.apple.com/documentation/swift/string).
+- The type also conforms to the [`RawRepresentable`](https://developer.apple.com/documentation/swift/rawrepresentable) protocol.
 
 For more information about how to create app enums, see [`App enums`](app-enums.md).
 
@@ -108,7 +108,7 @@ The app intents, app entities, and app enums you create provide the foundational
 
 ## See Also
 
-- [App Intents updates](../Updates/AppIntents.md)
+- [App Intents updates](../updates/appintents.md)
   Learn about important changes in App Intents.
 
 

@@ -14,7 +14,7 @@ Coordinate and control compatible smart home accessories.
 
 #### Overview
 
-Matter is a smart home connectivity standard that gives your app the ability to control devices from a wide variety of manufacturers and across platforms. Adopt this framework in your app to add compatible devices to your ecosystem, then use [`Matter`](https://developer.apple.com/documentation/Matter) to commission and control them.
+Matter is a smart home connectivity standard that gives your app the ability to control devices from a wide variety of manufacturers and across platforms. Adopt this framework in your app to add compatible devices to your ecosystem, then use [`Matter`](https://developer.apple.com/documentation/matter) to commission and control them.
 
 > ❗ **Important**: Calls to this framework return errors to Mac apps built with Mac Catalyst.
 

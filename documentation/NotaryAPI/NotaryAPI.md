@@ -17,7 +17,7 @@ Notarization gives people confidence that your Developer ID-signed macOS softwa
 - Retrieve a log file that provides details about a submission.
 - Get a list of your team’s previous submissions.
 
-To learn how notarization works, see [`Notarizing macOS software before distribution`](https://developer.apple.com/documentation/Security/notarizing-macos-software-before-distribution). For details about using the notary service REST API to upload your software, see [`Submitting software for notarization over the web`](submitting-software-for-notarization-over-the-web.md).
+To learn how notarization works, see [`Notarizing macOS software before distribution`](https://developer.apple.com/documentation/security/notarizing-macos-software-before-distribution). For details about using the notary service REST API to upload your software, see [`Submitting software for notarization over the web`](submitting-software-for-notarization-over-the-web.md).
 
 ## Topics
 

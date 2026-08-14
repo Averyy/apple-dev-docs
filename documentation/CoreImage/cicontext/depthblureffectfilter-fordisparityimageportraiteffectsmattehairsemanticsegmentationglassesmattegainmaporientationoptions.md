@@ -37,7 +37,7 @@ The receiver context is used to render the image in order to get the facial land
 ## See Also
 
 - [struct CIImageOption](ciimageoption.md)
-- [Configuring camera capture to collect a Portrait Effects matte](../AVFoundation/configuring-camera-capture-to-collect-a-portrait-effects-matte.md)
+- [Configuring camera capture to collect a Portrait Effects matte](../avfoundation/configuring-camera-capture-to-collect-a-portrait-effects-matte.md)
   Prepare your app to capture a portrait effects matte when taking photos.
 - [func depthBlurEffectFilter(for: CIImage, disparityImage: CIImage, portraitEffectsMatte: CIImage?, hairSemanticSegmentation: CIImage?, orientation: CGImagePropertyOrientation, options: [AnyHashable : Any]?) -> CIFilter?](cicontext/depthblureffectfilter(for:disparityimage:portraiteffectsmatte:hairsemanticsegmentation:orientation:options:).md)
   Create a [`CIFilter`](cifilter-swift.class.md) instance for the supplied image data that can be used to apply a depth blur effect created with the supplied auxiliary images.

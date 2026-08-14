@@ -22,7 +22,7 @@ let kCVImageBufferCGColorSpaceKey: CFString
 
 #### Discussion
 
-The color space value is of type [`CGColorSpace`](https://developer.apple.com/documentation/CoreGraphics/CGColorSpace).
+The color space value is of type [`CGColorSpace`](https://developer.apple.com/documentation/coregraphics/cgcolorspace).
 
 ## See Also
 

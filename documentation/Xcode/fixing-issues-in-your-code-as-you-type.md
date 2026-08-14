@@ -14,7 +14,7 @@ When you begin typing the name of a symbol in the source editor, Xcode displays 
 
 Press the Up Arrow and Down Arrow keys to navigate through the list of possible completions. Alternatively, you can click an item in the list to select it. Xcode displays a description of the selected item below the list.
 
-![An Xcode screenshot of the Project navigator on the left and the source editor on the right showing the completion list with a symbol selected and a description of it below.](https://docs-assets.developer.apple.com/published/1ea9b42ad35ff3923b3b954b42f05416/auto-complete%402x.png)
+![An Xcode screenshot of the Project navigator on the left and the source editor on the right showing the completion list with a symbol selected and a description of it below.](/images/com.apple.Xcode/auto-complete@2x.png)
 
 For initializers with multiple signatures, click the disclosure triangle on the right to see the variations below.
 
@@ -51,7 +51,7 @@ As you enter code in the source editor, Xcode checks the syntax and offers fixes
 
 Xcode highlights issues with a red or yellow underline and presents an issue summary and icon. Clicking the icon displays more information about the issue and, in many cases, provides a fix that you can apply.
 
-![An Xcode screenshot showing the Issues navigator on the left and the source editor on the right with more information about three issues.](https://docs-assets.developer.apple.com/published/08b7176c0b276a59f08d4836e5f83173/fix-it-correction%402x.png)
+![An Xcode screenshot showing the Issues navigator on the left and the source editor on the right with more information about three issues.](/images/com.apple.Xcode/fix-it-correction@2x.png)
 
 To apply a fix for an issue:
 

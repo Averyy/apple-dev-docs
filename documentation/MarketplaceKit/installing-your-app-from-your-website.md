@@ -16,11 +16,11 @@ When someone taps a button mapped to the URL, the system makes several requests 
 
 MarketplaceKit supports authentication through the the OAuth 2.0 specification [`IETF RFC 6749`](https://developer.apple.comhttps://datatracker.ietf.org/doc/html/rfc6749). If your website requires someone to be signed-in before they can download an app, or to have made a purchase, include an authentication token in the   [`MarketplaceKitURIScheme`](marketplacekiturischeme.md) URL to begin the authorization process.
 
-After your server authorizes the device, the system requests a license for the app. Your server uses [`App License Delivery SDK`](https://developer.apple.com/documentation/AppLicenseDeliverySDK) in conjunction with the encryption and signing assets that Apple provides to implement *digital rights management* by issuing a dynamic license for each installation of an app.
+After your server authorizes the device, the system requests a license for the app. Your server uses [`App License Delivery SDK`](https://developer.apple.com/documentation/applicensedeliverysdk) in conjunction with the encryption and signing assets that Apple provides to implement *digital rights management* by issuing a dynamic license for each installation of an app.
 
 After the device receives a license, the system requests the app data from your web server’s `restore` endpoint to install the app.
 
-![A diagram that shows the flow of installing your app from your website. When a person taps download from their device on your webpage, your webpage retrieves an authentication token from your App web server’s token endpoint, then your app webpage issues an installation request to the device. Next, the device provides the authentication token to the token endpoint and receives back an access token. Then the device requests an app license from the marketplacekit endpoints, after receiving the license, the device issues a restore request to the marketplacekit endpoints and downloads and installs the app.](https://docs-assets.developer.apple.com/published/0b00b345858c33429762d00be6b1488e/installing-your-app-from-your-website-1%402x.png)
+![A diagram that shows the flow of installing your app from your website. When a person taps download from their device on your webpage, your webpage retrieves an authentication token from your App web server’s token endpoint, then your app webpage issues an installation request to the device. Next, the device provides the authentication token to the token endpoint and receives back an access token. Then the device requests an app license from the marketplacekit endpoints, after receiving the license, the device issues a restore request to the marketplacekit endpoints and downloads and installs the app.](/images/com.apple.MarketplaceKit/installing-your-app-from-your-website-1@2x.png)
 
 #### Authenticate the Page Visitor
 
@@ -51,7 +51,7 @@ At this URL, host a JSON file with the following configuration:
 }
 ```
 
-> ❗ **Important**: Host the file using `https://` with a valid certificate. Don’t use redirects. For more information, see [`Supporting associated domains`](https://developer.apple.com/documentation/Xcode/supporting-associated-domains).
+> ❗ **Important**: Host the file using `https://` with a valid certificate. Don’t use redirects. For more information, see [`Supporting associated domains`](https://developer.apple.com/documentation/xcode/supporting-associated-domains).
 
 The system sends the token from your download URL in a POST to your `token_endpoint` in the format of described in [`RFC 8693 section 2.3`](https://developer.apple.comhttps://www.rfc-editor.org/rfc/rfc8693.html#name-example-token-exchange), for example:
 
@@ -77,7 +77,7 @@ The fields in the POST body are:
 | `subject_token` | The `token` in the [`MarketplaceKitURIScheme`](marketplacekiturischeme.md) request. |
 | `subject_token_type` | The subject token type, `ietf:params:oauth:token-type:access_token`. |
 
-> ❗ **Important**: `client_id` isn’t a stable way to identify a customer or track the number of simultaneous installs of an app for an account. To identify the customer, use the `token` parameter in the [`MarketplaceKitURIScheme`](marketplacekiturischeme.md) instead. To track installation counts for an app, see [`Licensing alternative distribution apps`](https://developer.apple.com/documentation/applicensedeliverysdk/licensing-alternative-distribution-apps#Track-the-number-of-simultaneous-app-installs-for-an-account).
+> ❗ **Important**: `client_id` isn’t a stable way to identify a customer or track the number of simultaneous installs of an app for an account. To identify the customer, use the `token` parameter in the [`MarketplaceKitURIScheme`](marketplacekiturischeme.md) instead. To track installation counts for an app, see [`Licensing alternative distribution apps`](https://developer.apple.com/documentation/applicensedeliverysdk/licensing-alternative-distribution-apps).
 
 Your token endpoint responds to the request with an access token and, optionally, a refresh token. Here’s an example response:
 
@@ -108,7 +108,7 @@ When the system makes subsequent calls to your web server for app licenses, app 
 
 #### Retrieve a License for the App From Your Web Server
 
-If your website doesn’t require authentication or the device is already successfully authorized to act on behalf of the page visitor, the system requests an app license from your web server. To process license requests, your web server implements an endpoint that serves generated licenses by using [`App License Delivery SDK`](https://developer.apple.com/documentation/AppLicenseDeliverySDK).
+If your website doesn’t require authentication or the device is already successfully authorized to act on behalf of the page visitor, the system requests an app license from your web server. To process license requests, your web server implements an endpoint that serves generated licenses by using [`App License Delivery SDK`](https://developer.apple.com/documentation/applicensedeliverysdk).
 
 #### Serve a Restore Request
 

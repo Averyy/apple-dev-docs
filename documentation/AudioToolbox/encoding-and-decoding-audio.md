@@ -16,7 +16,7 @@ The sample also explores how to set up data structures that describe audio forma
 
 ##### Create Input and Output Descriptions
 
-Whether it’s encoding or decoding audio, the sample uses the structure [`AudioStreamBasicDescription`](https://developer.apple.com/documentation/CoreAudioTypes/AudioStreamBasicDescription) to describe  the input and output audio data formats. When encoding audio, the sample checks whether the input audio is in PCM format. If the input is not PCM, the sample fails because a single audio converter instance can’t transcode (decode one non-PCM format and encode to another non-PCM format).
+Whether it’s encoding or decoding audio, the sample uses the structure [`AudioStreamBasicDescription`](https://developer.apple.com/documentation/coreaudiotypes/audiostreambasicdescription) to describe  the input and output audio data formats. When encoding audio, the sample checks whether the input audio is in PCM format. If the input is not PCM, the sample fails because a single audio converter instance can’t transcode (decode one non-PCM format and encode to another non-PCM format).
 
 ```c++
 // Open the input file and get its data format.

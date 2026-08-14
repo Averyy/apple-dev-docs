@@ -32,10 +32,10 @@ There are many different kinds of field nodes that can be created, each with dif
 When the scene simulates physics effects, a field node applies its effect to a physics body so long as the following are true:
 
 - The field node is in the scene’s node tree.
-- The field node’s [`isEnabled`](skfieldnode/isenabled.md) property is [`true`](https://developer.apple.com/documentation/Swift/true).
+- The field node’s [`isEnabled`](skfieldnode/isenabled.md) property is [`true`](https://developer.apple.com/documentation/swift/true).
 - The physics body is attached to a node that is in the scene’s node tree.
 - The physics body is located inside the field node’s region (see [`region`](skfieldnode/region.md)).
-- The physics body is not located inside the region of another field node whose [`isExclusive`](skfieldnode/isexclusive.md) property is set to [`true`](https://developer.apple.com/documentation/Swift/true).
+- The physics body is not located inside the region of another field node whose [`isExclusive`](skfieldnode/isexclusive.md) property is set to [`true`](https://developer.apple.com/documentation/swift/true).
 - A logical AND operation between the field node’s [`categoryBitMask`](skfieldnode/categorybitmask.md) property and the physics body’s [`fieldBitMask`](skphysicsbody/fieldbitmask.md) property results in a nonzero value.
 
 > 💡 **Tip**:  While it is useful to know that SpriteKit measures items in the International System of Units, the precise numbers are not that important. It doesn’t matter much whether your rocket ship weights 1 kilogram or 1,000,000 kilograms, as long as the mass is consistent with other physics values used in the game. Often, proportions are more important than the actual values being used.
@@ -103,28 +103,28 @@ When the scene simulates physics effects, a field node applies its effect to a p
 ### Inherits From
 - [SKNode](sknode.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCoding](../Foundation/NSCoding.md)
-- [NSCopying](../Foundation/NSCopying.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [NSSecureCoding](../Foundation/NSSecureCoding.md)
-- [NSStandardKeyBindingResponding](../AppKit/NSStandardKeyBindingResponding.md)
-- [NSTouchBarProvider](../AppKit/NSTouchBarProvider.md)
-- [NSUserActivityRestoring](../AppKit/NSUserActivityRestoring.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
-- [UIActivityItemsConfigurationProviding](../UIKit/UIActivityItemsConfigurationProviding.md)
-- [UICoordinateSpace](../UIKit/UICoordinateSpace.md)
-- [UIFocusEnvironment](../UIKit/UIFocusEnvironment.md)
-- [UIFocusItem](../UIKit/UIFocusItem.md)
-- [UIFocusItemContainer](../UIKit/UIFocusItemContainer.md)
-- [UIPasteConfigurationSupporting](../UIKit/UIPasteConfigurationSupporting.md)
-- [UIResponderStandardEditActions](../UIKit/UIResponderStandardEditActions.md)
-- [UIUserActivityRestoring](../UIKit/UIUserActivityRestoring.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCoding](../foundation/nscoding.md)
+- [NSCopying](../foundation/nscopying.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [NSStandardKeyBindingResponding](../appkit/nsstandardkeybindingresponding.md)
+- [NSTouchBarProvider](../appkit/nstouchbarprovider.md)
+- [NSUserActivityRestoring](../appkit/nsuseractivityrestoring.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
+- [UIActivityItemsConfigurationProviding](../uikit/uiactivityitemsconfigurationproviding.md)
+- [UICoordinateSpace](../uikit/uicoordinatespace.md)
+- [UIFocusEnvironment](../uikit/uifocusenvironment.md)
+- [UIFocusItem](../uikit/uifocusitem.md)
+- [UIFocusItemContainer](../uikit/uifocusitemcontainer.md)
+- [UIPasteConfigurationSupporting](../uikit/uipasteconfigurationsupporting.md)
+- [UIResponderStandardEditActions](../uikit/uiresponderstandardeditactions.md)
+- [UIUserActivityRestoring](../uikit/uiuseractivityrestoring.md)
 
 ## See Also
 

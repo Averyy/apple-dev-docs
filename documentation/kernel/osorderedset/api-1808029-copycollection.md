@@ -22,7 +22,7 @@ The receiving ordered set, and any collections it contains, recursively, are cop
 
 ## Parameters
 
-- `cycleDict`: A dictionary of all of the collections that have been copied so far, which is used to track circular references. To start the copy at the top level, pass  .
+- `cycleDict`: A dictionary of all of the collections that have been copied so far, which is used to track circular references. To start the copy at the top level, pass `NULL`.
 
 ## See Also
 

@@ -52,7 +52,7 @@ ClockKit calls your data source methods on your watchOS app’s main thread.
 - [class CLKComplicationWidgetMigrationConfiguration](clkcomplicationwidgetmigrationconfiguration.md)
   An abstract class that specifies WidgetKit complications.
 ### Setting information property keys
-- [CLKComplicationPrincipalClass](../BundleResources/Information-Property-List/CLKComplicationPrincipalClass.md)
+- [CLKComplicationPrincipalClass](../bundleresources/information-property-list/clkcomplicationprincipalclass.md)
   The name of the class that implements the complication data source protocol.
 ### Deprecated methods
 - [let CLKLaunchedTimelineEntryDateKey: String](clklaunchedtimelineentrydatekey.md)
@@ -101,11 +101,11 @@ ClockKit calls your data source methods on your watchOS app’s main thread.
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 
-- [Migrating ClockKit complications to WidgetKit](../WidgetKit/Converting-A-ClockKit-App.md)
+- [Migrating ClockKit complications to WidgetKit](../widgetkit/converting-a-clockkit-app.md)
   Leverage WidgetKit’s API to create watchOS complications using SwiftUI.
 - [let CLKDefaultComplicationIdentifier: String](clkdefaultcomplicationidentifier.md)
   An identifier representing a default complication.

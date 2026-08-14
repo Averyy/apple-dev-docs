@@ -19,7 +19,7 @@ init(rawValue: String)
 
 - [init?(VNRecognizedPointKey)](arskeleton/jointname/init(_:).md)
   Returns a joint name that corresponds to a key point defined in a human body pose.
-- [struct VNRecognizedPointKey](../Vision/VNRecognizedPointKey.md)
+- [struct VNRecognizedPointKey](../vision/vnrecognizedpointkey.md)
   The data type for all recognized point keys.
 
 

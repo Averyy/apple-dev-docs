@@ -26,7 +26,7 @@ A publisher that repeatedly emits the current date on the given interval.
 
 #### Discussion
 
-The return type, [`Timer.TimerPublisher`](timer/timerpublisher.md), conforms to [`ConnectablePublisher`](https://developer.apple.com/documentation/Combine/ConnectablePublisher), which means you must explicitly connect to the [`Timer`](timer.md) publisher to begin publishing events. You can do this with a call to [`connect()`](https://developer.apple.com/documentation/Combine/ConnectablePublisher/connect()), or by using [`autoconnect()`](https://developer.apple.com/documentation/Combine/ConnectablePublisher/autoconnect()) to automatically connect when a subscriber attaches, as shown here:
+The return type, [`Timer.TimerPublisher`](timer/timerpublisher.md), conforms to [`ConnectablePublisher`](https://developer.apple.com/documentation/combine/connectablepublisher), which means you must explicitly connect to the [`Timer`](timer.md) publisher to begin publishing events. You can do this with a call to [`connect()`](https://developer.apple.com/documentation/combine/connectablepublisher/connect()), or by using [`autoconnect()`](https://developer.apple.com/documentation/combine/connectablepublisher/autoconnect()) to automatically connect when a subscriber attaches, as shown here:
 
 ```swift
 cancellable = Timer.publish(every: 1, on: .main, in: .common)

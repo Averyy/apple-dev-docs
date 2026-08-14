@@ -17,11 +17,11 @@ There are a wide range of common situations where you may want to use shared web
 
 Typically, when an app needs to log in to a remote service, you start by checking for the user’s credentials in the iOS keychain. If you have current credentials for the user, you can log them in directly. If not, prompt the users for their user name and password, and then try to log them in. You will also want to save their credentials after the login is successful. This workflow is shown in [`Figure 1`](shared_web_credentials/managing_shared_credentials#1965823.md).
 
-![None](https://docs-assets.developer.apple.com/published/98e039bdd2ff903d76dfa39a97206085/media-1965823%402x.png)
+![None](/images/com.apple.security/media-1965823@2x.png)
 
 When using shared web credentials, you add two steps to this procedure. As before, you start by checking if the user’s credentials are stored in the keychain. If you cannot find the user’s credentials, you check for shared web credentials. If you still cannot find any credentials, or if the user declines to use the shared credentials, you must prompt the user for her name and password. Try to log the user in, and if the login is successful, save the credentials to both the keychain and the shared web credentials. This ensures that the user has access to the credentials in Safari as well as within your app. This workflow is shown in [`Figure 2`](shared_web_credentials/managing_shared_credentials#1965824.md).
 
-![None](https://docs-assets.developer.apple.com/published/7f06e56b3e179a5878e829b668edf416/media-1965824%402x.png)
+![None](/images/com.apple.security/media-1965824@2x.png)
 
 > **Note**:  Even if the system finds a match in the shared web credentials, the user can still decline to use those credentials. This will cause the check for shared web credentials to fail. Therefore, you must always have a fallback that prompts the user for their name and password.
 

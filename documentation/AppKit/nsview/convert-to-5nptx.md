@@ -16,7 +16,7 @@ func convert(_ size: NSSize, to view: NSView?) -> NSSize
 
 #### Return Value
 
-The converted size, as an [`NSSize`](https://developer.apple.com/documentation/Foundation/NSSize) structure.
+The converted size, as an [`NSSize`](https://developer.apple.com/documentation/foundation/nssize) structure.
 
 #### Discussion
 

@@ -14,7 +14,7 @@ Display content and provide services in an AR experience with App Clip Codes.
 
 The sample app Seed Shop provides gardeners with previews of fully grown plants. At the nursery, Seed Shop identifies the plant from an App Clip Code on a seed packet, and displays the adult plant in 3D. With the help of AR, the buyer can see, for example, the real height of a typical Mammoth sunflower by inspecting the virtual plant at scale, relative to real objects in the camera feed.
 
-![Illustration of a device pointed at a virtual plant. A seed packet rests on a real-world table, and the virtual plant rises up from the seed packaging.](https://docs-assets.developer.apple.com/published/a84e45007956af76a6cbdd179ce9efe7/hero-image%402x.png)
+![Illustration of a device pointed at a virtual plant. A seed packet rests on a real-world table, and the virtual plant rises up from the seed packaging.](/images/com.apple.appclip/hero-image@2x.png)
 
 When a user with a device running iOS & iPad OS 14.3 or later scans the seed packet’s App Clip Code with their camera or Code Scanner, the sample project’s App Clip provides a virtual image of the plant.
 
@@ -40,7 +40,7 @@ The App Clip Codes in Seed Shop display on a package of seeds. Add this [`image 
 
 ##### Ensure Device Support and Run a Session
 
-In [`viewDidLoad`](https://developer.apple.comx-source-tag://ViewDidLoad), the sample app calls [`supportsAppClipCodeTracking`](https://developer.apple.com/documentation/ARKit/ARWorldTrackingConfiguration/supportsAppClipCodeTracking) to check if the device contains the Apple Neural Engine (ANE), which App Clip Code tracking requires.
+In [`viewDidLoad`](https://developer.apple.comx-source-tag://ViewDidLoad), the sample app calls [`supportsAppClipCodeTracking`](https://developer.apple.com/documentation/arkit/arworldtrackingconfiguration/supportsappclipcodetracking) to check if the device contains the Apple Neural Engine (ANE), which App Clip Code tracking requires.
 
 ```swift
 guard ARWorldTrackingConfiguration.supportsAppClipCodeTracking else {
@@ -48,7 +48,7 @@ guard ARWorldTrackingConfiguration.supportsAppClipCodeTracking else {
     return
 ```
 
-To search the environment for physical codes, the sample sets [`appClipCodeTrackingEnabled`](https://developer.apple.com/documentation/ARKit/ARWorldTrackingConfiguration/appClipCodeTrackingEnabled) to `true` before running the session.
+To search the environment for physical codes, the sample sets [`appClipCodeTrackingEnabled`](https://developer.apple.com/documentation/arkit/arworldtrackingconfiguration/appclipcodetrackingenabled) to `true` before running the session.
 
 ```swift
 newConfiguration.appClipCodeTrackingEnabled = true
@@ -59,7 +59,7 @@ arView.session.run(newConfiguration)
 
 When the user points the device at an App Clip Code using the camera or Code Scanner, the system launches its associated App Clip, or if present, the full app.
 
-In the AR experience, the sample code checks the [`NSUserActivity`](https://developer.apple.com/documentation/Foundation/NSUserActivity) invocation URL to identify the App Clip Code that invoked the app or App Clip.
+In the AR experience, the sample code checks the [`NSUserActivity`](https://developer.apple.com/documentation/foundation/nsuseractivity) invocation URL to identify the App Clip Code that invoked the app or App Clip.
 
 ```swift
 func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
@@ -72,7 +72,7 @@ The source of the URL depends on how the App Clip launched:
 - The invocation URL is the `_XCAppClipURL` scheme environment variable when Xcode launches the app or App Clip. For more information, see [`Debug your App Clip`](testing-the-launch-experience-of-your-app-clip#Debug-your-App-Clip.md).
 - The invocation URL is the invoking App Clip Code’s URL when the system launches the app or App Clip in the device’s camera feed or through the Code Scanner.
 
-There may be multiple App Clip Codes visible in the camera feed that share the same [`url`](https://developer.apple.com/documentation/ARKit/ARAppClipCodeAnchor/url); for more information, see [`ARAppClipCodeAnchor`](https://developer.apple.com/documentation/ARKit/ARAppClipCodeAnchor).
+There may be multiple App Clip Codes visible in the camera feed that share the same [`url`](https://developer.apple.com/documentation/arkit/arappclipcodeanchor/url); for more information, see [`ARAppClipCodeAnchor`](https://developer.apple.com/documentation/arkit/arappclipcodeanchor).
 
 If an app interacts with a single App Clip Code, the app can limit its interaction with App Clip Codes that encode the invocation URL. For simplicity, the sample allows the user to scan any associated App Clip Code. However, because the sample app downloads custom assets over the web per App Clip Code, the sample app begins downloading assets for the invocation URL immediately, in anticipation that ARKit will recognize the invoking App Clip Code in the camera feed.
 
@@ -103,7 +103,7 @@ For more on local experiences, see [`Test App Clip invocations with a local expe
 
 ##### Set Up an App Clip Experience in App Store Connect
 
-At runtime, the system checks the App Clip registry in App Store Connect to ensure an App Clip associates to an App Clip Code before allowing the app access to the App Clip Code URL. For more information, see [`url`](https://developer.apple.com/documentation/ARKit/ARAppClipCodeAnchor/url).
+At runtime, the system checks the App Clip registry in App Store Connect to ensure an App Clip associates to an App Clip Code before allowing the app access to the App Clip Code URL. For more information, see [`url`](https://developer.apple.com/documentation/arkit/arappclipcodeanchor/url).
 
 To decode App Clip Code URLs, Seed Shop sets up an App Clip experience in App Store Connect, and defines the App Clip experience URL of `https://developer.apple.com`. The value of the App Clip experience URL maps to a server that’s unique and depends on the development team. For more information, see [`Set up an App Clip experience`](https://developer.apple.comhttps://help.apple.com/app-store-connect/#/dev5b665db74).
 
@@ -113,13 +113,13 @@ The app generates App Clip Codes that associate to the App Clip experience in Ap
 https://developer.apple.com/sunfl
 ```
 
-When testers view App Clip Codes to launch the App Clip or decode [`ARAppClipCodeAnchor`](https://developer.apple.com/documentation/ARKit/ARAppClipCodeAnchor) URLs in an AR experience, the framework refers to the device’s local experience. Otherwise, the system displays the App Clip card in the device camera, and allows [`ARAppClipCodeAnchor`](https://developer.apple.com/documentation/ARKit/ARAppClipCodeAnchor) URL decoding, only for App Clip experience URLs of app-review approved App Clips. For more information, see [`Test an App Clip Experience`](https://developer.apple.comhttps://help.apple.com/app-store-connect/#/devbc57e2ec6).
+When testers view App Clip Codes to launch the App Clip or decode [`ARAppClipCodeAnchor`](https://developer.apple.com/documentation/arkit/arappclipcodeanchor) URLs in an AR experience, the framework refers to the device’s local experience. Otherwise, the system displays the App Clip card in the device camera, and allows [`ARAppClipCodeAnchor`](https://developer.apple.com/documentation/arkit/arappclipcodeanchor) URL decoding, only for App Clip experience URLs of app-review approved App Clips. For more information, see [`Test an App Clip Experience`](https://developer.apple.comhttps://help.apple.com/app-store-connect/#/devbc57e2ec6).
 
-> ❗ **Important**: During testing in the TestFlight app, the three experience URLs in App Store Connect’s TestFlight area change the invocation URL the system passes into the App Clip, but they don’t affect [`ARAppClipCodeAnchor`](https://developer.apple.com/documentation/ARKit/ARAppClipCodeAnchor) URL decoding.
+> ❗ **Important**: During testing in the TestFlight app, the three experience URLs in App Store Connect’s TestFlight area change the invocation URL the system passes into the App Clip, but they don’t affect [`ARAppClipCodeAnchor`](https://developer.apple.com/documentation/arkit/arappclipcodeanchor) URL decoding.
 
 ##### Configure the Server and Targets for App Site Association
 
-App Store Connect allows an app to define a particular App Clip experience URL if the server hosting the URL’s domain approves of it via Apple App Site Association. In addition, the framework performs an equivalent runtime check before allowing the App Clip or parent app to decode [`ARAppClipCodeAnchor`](https://developer.apple.com/documentation/ARKit/ARAppClipCodeAnchor) URLs that are within the App Clip experience’s domain. This check occurs for local and App Store Connect experiences. To express approval, the server provides the App Clip’s and parent app’s fully qualified application identifiers in an Apple App Site Association (AASA) file’s `appclips` node.
+App Store Connect allows an app to define a particular App Clip experience URL if the server hosting the URL’s domain approves of it via Apple App Site Association. In addition, the framework performs an equivalent runtime check before allowing the App Clip or parent app to decode [`ARAppClipCodeAnchor`](https://developer.apple.com/documentation/arkit/arappclipcodeanchor) URLs that are within the App Clip experience’s domain. This check occurs for local and App Store Connect experiences. To express approval, the server provides the App Clip’s and parent app’s fully qualified application identifiers in an Apple App Site Association (AASA) file’s `appclips` node.
 
 ```json
 "appclips": {
@@ -145,7 +145,7 @@ For more on configuring AASA for App Clips, see [`Associating your App Clip with
 
 ##### Recognize an App Clip Code and Decode the Url
 
-When ARKit recognizes an App Clip Code in the camera feed, it instantiates an [`ARAppClipCodeAnchor`](https://developer.apple.com/documentation/ARKit/ARAppClipCodeAnchor) and passes it to the [`session(_:didAdd:)`](https://developer.apple.com/documentation/ARKit/ARSessionDelegate/session(_:didAdd:)) callback. Since the user succeeded in scanning a code, the sample app hides the instructional text.
+When ARKit recognizes an App Clip Code in the camera feed, it instantiates an [`ARAppClipCodeAnchor`](https://developer.apple.com/documentation/arkit/arappclipcodeanchor) and passes it to the [`session(_:didAdd:)`](https://developer.apple.com/documentation/arkit/arsessiondelegate/session(_:didadd:)) callback. Since the user succeeded in scanning a code, the sample app hides the instructional text.
 
 ```swift
 func session(_ session: ARSession, didAdd anchors: [ARAnchor]) {
@@ -155,7 +155,7 @@ func session(_ session: ARSession, didAdd anchors: [ARAnchor]) {
             appClipCodeCoachingOverlay.setCoachingViewHidden(true)
 ```
 
-Access the anchor’s URL for context-specific information about the recognized App Clip Code. The URL is `nil` until the anchor’s [`urlDecodingState`](https://developer.apple.com/documentation/ARKit/ARAppClipCodeAnchor/urlDecodingState-swift.property) is [`ARAppClipCodeAnchor.URLDecodingState.decoded`](https://developer.apple.com/documentation/ARKit/ARAppClipCodeAnchor/URLDecodingState-swift.enum/decoded). To check for decoding state changes, the sample app monitors the [`session(_:didUpdate:)`](https://developer.apple.com/documentation/ARKit/ARSessionDelegate/session(_:didUpdate:)-3qtt8) callback.
+Access the anchor’s URL for context-specific information about the recognized App Clip Code. The URL is `nil` until the anchor’s [`urlDecodingState`](https://developer.apple.com/documentation/arkit/arappclipcodeanchor/urldecodingstate-swift.property) is [`ARAppClipCodeAnchor.URLDecodingState.decoded`](https://developer.apple.com/documentation/arkit/arappclipcodeanchor/urldecodingstate-swift.enum/decoded). To check for decoding state changes, the sample app monitors the [`session(_:didUpdate:)`](https://developer.apple.com/documentation/arkit/arsessiondelegate/session(_:didupdate:)-3qtt8) callback.
 
 ```swift
 func session(_ session: ARSession, didUpdate anchors: [ARAnchor]) {
@@ -176,7 +176,7 @@ If Seed Shop fails to decode the URL, the sample project uses a test URL.
 var testAppClipCodeURL = URL(string: "https://developer.apple.com/sunfl")!
 ```
 
-For more on URL decoding failure, see [`ARAppClipCodeAnchor.URLDecodingState.failed`](https://developer.apple.com/documentation/ARKit/ARAppClipCodeAnchor/URLDecodingState-swift.enum/failed).
+For more on URL decoding failure, see [`ARAppClipCodeAnchor.URLDecodingState.failed`](https://developer.apple.com/documentation/arkit/arappclipcodeanchor/urldecodingstate-swift.enum/failed).
 
 > **Note**: The sample project bundles seed packaging material that displays App Clip Codes, but an app might situate App Clip Codes differently. For detailed guidance on displaying App Clip Codes in the environment, see [`App Clip Code Human Interface Guidelines`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/app-clips/overview/app-clip-codes/).
 
@@ -218,14 +218,14 @@ let imageURLFor: [String: URL] = [
 ]
 ```
 
-ARKit estimates the 3D position and orientation of each [`ARAppClipCodeAnchor`](https://developer.apple.com/documentation/ARKit/ARAppClipCodeAnchor), but [`ARImageAnchor`](https://developer.apple.com/documentation/ARKit/ARImageAnchor) serves as a better platform on which to place virtual content for several reasons:
+ARKit estimates the 3D position and orientation of each [`ARAppClipCodeAnchor`](https://developer.apple.com/documentation/arkit/arappclipcodeanchor), but [`ARImageAnchor`](https://developer.apple.com/documentation/arkit/arimageanchor) serves as a better platform on which to place virtual content for several reasons:
 
 - Small physical size impacts ARKit’s tracking accuracy, and App Clip Codes typically run small on product packaging or in an advertisement.
 - ARKit manages the removal of App Clip Code anchors from the session whereas the app controls whether to remove an image anchor. As a result, the image anchor is less likely to go away.
 
-> ❗ **Important**: An app may require another content anchoring technique, such as placing virtual content instantly after retrieving a position on a nearby horizontal or vertical plane. To ray cast on horizontal planes, see [`Placing objects and handling 3D interaction`](https://developer.apple.com/documentation/ARKit/placing-objects-and-handling-3d-interaction).
+> ❗ **Important**: An app may require another content anchoring technique, such as placing virtual content instantly after retrieving a position on a nearby horizontal or vertical plane. To ray cast on horizontal planes, see [`Placing objects and handling 3D interaction`](https://developer.apple.com/documentation/arkit/placing-objects-and-handling-3d-interaction).
 
-To search the environment for the product’s packaging image, the sample downloads the image that the mapping URL references and then creates an [`ARReferenceImage`](https://developer.apple.com/documentation/ARKit/ARReferenceImage).
+To search the environment for the product’s packaging image, the sample downloads the image that the mapping URL references and then creates an [`ARReferenceImage`](https://developer.apple.com/documentation/arkit/arreferenceimage).
 
 ```swift
 func process(imageURL: URL, productKey: String, initializeImageAnchor: Bool) {
@@ -249,15 +249,15 @@ func process(imageURL: URL, productKey: String, initializeImageAnchor: Bool) {
                     )
 ```
 
-For more information about image tracking, see [`Tracking and altering images`](https://developer.apple.com/documentation/ARKit/tracking-and-altering-images).
+For more information about image tracking, see [`Tracking and altering images`](https://developer.apple.com/documentation/arkit/tracking-and-altering-images).
 
 ##### Display the 3d Asset
 
 When the user pans the device from the scanned App Clip Code to its downloaded packaging image, ARKit identifies the seed packet’s real-world location and displays the full-grown plant on top.
 
-![An image of a printed seed packet on a real-world desk. The app displays a 3D model of a fully grown sunflower plant centered on the seed packet.](https://docs-assets.developer.apple.com/published/10c9d82bcda438bacdde5caebeda851f/display-virtual-content%402x.png)
+![An image of a printed seed packet on a real-world desk. The app displays a 3D model of a fully grown sunflower plant centered on the seed packet.](/images/com.apple.appclip/display-virtual-content@2x.png)
 
-When ARKit recognizes the packaging image, the session creates an image anchor and passes it into the [`session(_:didAdd:)`](https://developer.apple.com/documentation/ARKit/ARSessionDelegate/session(_:didAdd:)) callback. The app displays the virtual product on top of the image by calling its `present(_:on)` function.
+When ARKit recognizes the packaging image, the session creates an image anchor and passes it into the [`session(_:didAdd:)`](https://developer.apple.com/documentation/arkit/arsessiondelegate/session(_:didadd:)) callback. The app displays the virtual product on top of the image by calling its `present(_:on)` function.
 
 ```swift
 if let imageAnchorForModel = self?.imageAnchorFor[productKey], let self = self {

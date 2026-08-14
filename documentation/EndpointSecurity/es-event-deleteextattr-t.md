@@ -34,7 +34,7 @@ See the `removxattr(2)` man page for information on deleting extended attributes
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../Swift/BitwiseCopyable.md)
+- [BitwiseCopyable](../swift/bitwisecopyable.md)
 
 ## See Also
 

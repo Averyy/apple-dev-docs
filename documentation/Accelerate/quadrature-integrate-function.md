@@ -35,7 +35,7 @@ Describes a real function Y=F(X). Since most of the integration time is spent ev
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../Swift/BitwiseCopyable.md)
+- [BitwiseCopyable](../swift/bitwisecopyable.md)
 
 ## See Also
 

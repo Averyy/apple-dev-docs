@@ -39,7 +39,7 @@ Create a new schedule using `DateComponents` that allows your app to monitor the
 ## Relationships
 
 ### Conforms To
-- [Equatable](../Swift/Equatable.md)
+- [Equatable](../swift/equatable.md)
 
 ## See Also
 

@@ -51,8 +51,8 @@ When you access or modify EXIF or IPTC properties, the metadata functions automa
 ### Inherits From
 - [CGImageMetadata](cgimagemetadata.md)
 ### Conforms To
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
 
 ## See Also
 

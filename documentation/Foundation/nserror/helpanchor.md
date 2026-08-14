@@ -24,7 +24,7 @@ var helpAnchor: String? { get }
 
 The object in the user info dictionary for the key [`NSHelpAnchorErrorKey`](nshelpanchorerrorkey.md). If the user info dictionary doesn’t contain a value for [`NSHelpAnchorErrorKey`](nshelpanchorerrorkey.md), this property is `nil`.
 
-If this property is non-`nil` for an error being presented by [`init(error:)`](https://developer.apple.com/documentation/AppKit/NSAlert/init(error:)), the alert panel will include a help anchor button that can display this string.
+If this property is non-`nil` for an error being presented by [`init(error:)`](https://developer.apple.com/documentation/appkit/nsalert/init(error:)), the alert panel will include a help anchor button that can display this string.
 
 
 ---

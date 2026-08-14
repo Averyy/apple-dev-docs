@@ -20,7 +20,7 @@ let SKStoreProductParameterProductIdentifier: String
 
 #### Discussion
 
-The value for this key is an instance of [`NSString`](https://developer.apple.com/documentation/Foundation/NSString).
+The value for this key is an instance of [`NSString`](https://developer.apple.com/documentation/foundation/nsstring).
 
 When your app uses an [`SKStoreProductViewController`](skstoreproductviewcontroller.md) to render an app page for another app, you can optionally choose to highlight an in-app purchase by displaying it at the top of the store page.  Set  [`SKStoreProductParameterProductIdentifier`](skstoreproductparameterproductidentifier.md) to the identifier of the product you want displayed at the top of the page.
 

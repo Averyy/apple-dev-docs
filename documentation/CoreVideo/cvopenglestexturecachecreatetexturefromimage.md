@@ -41,10 +41,10 @@ CVOpenGLESTextureCacheCreateTextureFromImage(kCFAllocatorDefault, textureCache, 
 
 ## Parameters
 
-- `allocator`: The [`CFAllocator`](https://developer.apple.com/documentation/CoreFoundation/CFAllocator) to use for allocating the texture object. This parameter can be `NULL`.
+- `allocator`: The [`CFAllocator`](https://developer.apple.com/documentation/corefoundation/cfallocator) to use for allocating the texture object. This parameter can be `NULL`.
 - `textureCache`: The texture cache object that will manage the texture.
 - `sourceImage`: The [`CVImageBuffer`](cvimagebuffer.md) that you want to create a texture from.
-- `textureAttributes`: A [`CFDictionary`](https://developer.apple.com/documentation/CoreFoundation/CFDictionary) containing the attributes to be used for creating the [`CVOpenGLESTexture`](cvopenglestexture.md) objects. This parameter can be `NULL`.
+- `textureAttributes`: A [`CFDictionary`](https://developer.apple.com/documentation/corefoundation/cfdictionary) containing the attributes to be used for creating the [`CVOpenGLESTexture`](cvopenglestexture.md) objects. This parameter can be `NULL`.
 - `target`: The target texture. `GL_TEXTURE_2D` and `GL_RENDERBUFFER` are the only targets currently supported.
 - `internalFormat`: The number of color components in the texture. Examples are `GL_RGBA`, `GL_LUMINANCE`, `GL_RGBA8_OES`, `GL_RED`, and `GL_RG`.
 - `width`: The width of the texture image.

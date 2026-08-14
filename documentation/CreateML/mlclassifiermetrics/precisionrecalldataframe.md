@@ -27,11 +27,11 @@ Precision describes how effective the model was at applying a label only when ap
 
 Recall describes how effective the model was at finding all the relevant examples of a category (few false negatives).
 
-![None](https://docs-assets.developer.apple.com/published/7855eb855befe83b05e51d97fbcc6a95/MLClassifierMetrics-precisionRecall-1%402x.png)
+![None](/images/com.apple.createml/MLClassifierMetrics-precisionRecall-1@2x.png)
 
 The figure below shows how each example contributes to the precision and recall percentages for the category “Elephant”.
 
-![A table of actual and predicted labels for the Elephant category.](https://docs-assets.developer.apple.com/published/d2e3bf7a61ae75d3205a71b3d78cee9d/MLClassifierMetrics-precisionRecall-2%402x.png)
+![A table of actual and predicted labels for the Elephant category.](/images/com.apple.createml/MLClassifierMetrics-precisionRecall-2@2x.png)
 
 “Elephant” appears as the true or correct label only once, but it’s predicted twice. This second prediction is an error in precision. Precision and recall can give you a much better idea of how your model is making mistakes than [`classificationError`](mlclassifiermetrics/classificationerror.md).
 

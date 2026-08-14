@@ -19,7 +19,7 @@ let AVAudioSessionMicrophoneInjectionIsAvailableKey: String
 
 #### Discussion
 
-The associated value is an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) that represents a Boolean value.
+The associated value is an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) that represents a Boolean value.
 
 
 ---

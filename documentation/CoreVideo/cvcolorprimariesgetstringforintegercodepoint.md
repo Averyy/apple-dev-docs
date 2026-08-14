@@ -22,7 +22,7 @@ func CVColorPrimariesGetStringForIntegerCodePoint(_ colorPrimariesCodePoint: Int
 
 #### Return Value
 
-The color primaries string corresponding to the code point (See [`Image Buffer Color Primaries Constants`](image-buffer-color-primaries-constants.md) for possible values.), or [`nil`](https://developer.apple.com/documentation/ObjectiveC/nil-227m0) if the code point is `2` (unknown) or the system doesn’t recognize it.
+The color primaries string corresponding to the code point (See [`Image Buffer Color Primaries Constants`](image-buffer-color-primaries-constants.md) for possible values.), or [`nil`](https://developer.apple.com/documentation/objectivec/nil-227m0) if the code point is `2` (unknown) or the system doesn’t recognize it.
 
 ## Parameters
 

@@ -24,7 +24,7 @@ static let bottomTrailing: Alignment
 
 This alignment combines the [`trailing`](horizontalalignment/trailing.md) horizontal guide and the [`bottom`](verticalalignment/bottom.md) vertical guide:
 
-![A square that’s divided into four equal quadrants. The upper-](https://docs-assets.developer.apple.com/published/277ee1b53291067887a227a374c7175e/Alignment-bottomTrailing-1-iOS%402x.png)
+![A square that’s divided into four equal quadrants. The upper-](/images/com.apple.SwiftUI/Alignment-bottomTrailing-1-iOS@2x.png)
 
 ## See Also
 

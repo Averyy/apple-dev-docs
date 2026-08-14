@@ -63,7 +63,7 @@ For more information about how to use the `systemextensionsctl` tool, see the ma
   A type that facilitates activation and deactivation of system extensions.
 - [class OSSystemExtensionRequest](ossystemextensionrequest.md)
   A request to activate or deactivate a system extension.
-- [System Extension Redistributable Entitlement](../BundleResources/Entitlements/com.apple.developer.system-extension.redistributable.md)
+- [System Extension Redistributable Entitlement](../bundleresources/entitlements/com.apple.developer.system-extension.redistributable.md)
   A Boolean value that indicates whether other development teams may distribute a system extension you create.
 
 

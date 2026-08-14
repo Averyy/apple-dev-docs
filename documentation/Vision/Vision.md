@@ -17,7 +17,7 @@ The Vision framework provides pretrained machine learning models for computer vi
 - Classifying images for categorization and search
 - Measuring image quality and comparing visual similarity
 
-![A dog isolated from its background through subject lifting.](https://docs-assets.developer.apple.com/published/7a482b51ae9cc0814c51158c23fa5a4f/vision-framework-subject-lifting%402x.png)
+![A dog isolated from its background through subject lifting.](/images/Vision/vision-framework-subject-lifting@2x.png)
 
 All Vision analysis tasks follow the same steps: create a request, perform it on an image or video frame, and read the resulting observations. For example, to detect text in an image, you create a request for the type of analysis you want to perform. Each request conforms to the [`VisionRequest`](visionrequest.md) protocol.
 

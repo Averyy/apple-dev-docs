@@ -11,12 +11,12 @@ framework: HIG
 
 Near-field communication (NFC) allows devices within a few centimeters of each other to exchange information wirelessly.
 
-![A sketch of progressively larger curved lines extending toward the right, suggesting near-field communication. The image is overlaid with rectangular and circular grid lines and is tinted blue to subtly reflect the blue in the original six-color Apple logo.](https://docs-assets.developer.apple.com/published/b33f071e6d009dfcb5abb2bb38ee1f04/technologies-nfc-intro~dark%402x.png)
+![A sketch of progressively larger curved lines extending toward the right, suggesting near-field communication. The image is overlaid with rectangular and circular grid lines and is tinted blue to subtly reflect the blue in the original six-color Apple logo.](/images/com.apple.HIG/technologies-nfc-intro~dark@2x.png)
 iOS apps running on supported devices can use NFC scanning to read data from electronic tags attached to real-world objects. For example, a person can scan a toy to connect it with a video game, a shopper can scan an in-store sign to access coupons, or a retail employee can scan products to track inventory.
 
 ## In-app tag reading
 An app can support single- or multiple-object scanning when the app is active, and display a scanning sheet whenever people are about to scan something.
-![An illustration of a scanning sheet on iPhone, which includes the text Ready to Scan and Hold your device near the NFC tag, and a Cancel button.](https://docs-assets.developer.apple.com/published/46c69f9b08f12f015d34702af072c4c3/nfc-ready-to-scan~dark%402x.png)
+![An illustration of a scanning sheet on iPhone, which includes the text Ready to Scan and Hold your device near the NFC tag, and a Cancel button.](/images/com.apple.HIG/nfc-ready-to-scan~dark@2x.png)
 **Don’t encourage people to make contact with physical objects.** To scan a tag, an iOS device must simply be within close proximity of the tag. It doesn’t need to actually touch the tag. Use terms like *scan* and *hold near* instead of *tap* and *touch* when asking people to scan objects.
 **Use approachable terminology.** Near-field communication may be unfamiliar to some people. To make it approachable, avoid referring to technical, developer-oriented terms like *NFC*, *Core NFC*, *Near-field communication*, and *tag*. Instead, use friendly, conversational terms that most people will understand.
 | Use | Don’t use |
@@ -32,7 +32,7 @@ An app can support single- or multiple-object scanning when the app is active, a
 
 ## Background tag reading
 Background tag reading lets people scan tags quickly any time, without needing to first open your app and initiate scanning. On devices that support background tag reading, the system automatically looks for nearby compatible tags whenever the screen is illuminated. After detecting and matching a tag with an app, the system shows a notification that the people can tap to send the tag data to the app for processing. Note that background reading isn’t available when an NFC scanning sheet is visible, Wallet or Apple Pay are in use, cameras are in use, the device is in Airplane Mode, and the device is locked after a restart.
-![An illustration of a notification banner above the Home screen on iPhone, which offers an opportunity to open a specific app to process NFC tag data detected nearby.](https://docs-assets.developer.apple.com/published/3465fa8844b78f2d94dff97b6ef7644e/nfc-background~dark%402x.png)
+![An illustration of a notification banner above the Home screen on iPhone, which offers an opportunity to open a specific app to process NFC tag data detected nearby.](/images/com.apple.HIG/nfc-background~dark@2x.png)
 **Support both background and in-app tag reading.** Your app must still provide an in-app way to scan tags, for people with devices that don’t support background tag reading.
 
 ## Platform considerations
@@ -41,7 +41,7 @@ Background tag reading lets people scan tags quickly any time, without needing t
 ## Resources
 
 #### Developer documentation
-[Core NFC](../CoreNFC.md)
+[Core NFC](../corenfc.md)
 
 
 

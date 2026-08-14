@@ -31,7 +31,7 @@ Calling this method doesn’t cause any scrolling to the deselected row.
 ## Parameters
 
 - `indexPath`: An index path identifying a row in the table view.
-- `animated`: [`true`](https://developer.apple.com/documentation/Swift/true) if you want to animate the deselection, and [`false`](https://developer.apple.com/documentation/Swift/false) if the change should be immediate.
+- `animated`: [`true`](https://developer.apple.com/documentation/swift/true) if you want to animate the deselection, and [`false`](https://developer.apple.com/documentation/swift/false) if the change should be immediate.
 
 ## See Also
 

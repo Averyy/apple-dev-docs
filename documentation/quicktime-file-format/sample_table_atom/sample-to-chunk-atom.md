@@ -7,7 +7,7 @@ An atom that stores chunk information for the samples in a media.
 
 #### Overview
 
-See [`Sample-to-chunk atom ('stsc')`](sample-to-chunk_atom.md).
+See [`Sample-to-chunk atom`](sample-to-chunk_atom.md).
 
 ## See Also
 

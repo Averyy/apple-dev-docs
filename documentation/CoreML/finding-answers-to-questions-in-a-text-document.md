@@ -16,7 +16,7 @@ This sample app leverages the BERT model to find the answer to a user’s questi
 
 The BERT model does not generate new sentences to answer a given question. It finds the passage in a document that’s most likely to answer the question.
 
-![Flow diagram showing the information being processed through the BERT model.](https://docs-assets.developer.apple.com/published/b7aacadda5a94abbff3cb26265b6dc77/bert-overview%402x.png)
+![Flow diagram showing the information being processed through the BERT model.](/images/com.apple.coreml/bert-overview@2x.png)
 
 The sample leverages the BERT model by:
 
@@ -43,9 +43,9 @@ The first step to using the BERT model is to import its vocabulary. The sample c
 
 The BERT model requires you to convert each word into one or more token IDs. Before you can use the vocabulary dictionary to find those IDs, you must divide the document’s text and the question’s text into word tokens.
 
-![Flow diagram showing the conversion of raw strings into tokens.](https://docs-assets.developer.apple.com/published/cd606e6ce0035a82e16167360219f1ee/bert-word-tokens%402x.png)
+![Flow diagram showing the conversion of raw strings into tokens.](/images/com.apple.coreml/bert-word-tokens@2x.png)
 
-The sample does this by using an [`NLTagger`](https://developer.apple.com/documentation/NaturalLanguage/NLTagger), which breaks up a string into word tokens, each of which is a substring of the original.
+The sample does this by using an [`NLTagger`](https://developer.apple.com/documentation/naturallanguage/nltagger), which breaks up a string into word tokens, each of which is a substring of the original.
 
 ```swift
 // Store the tokenized substrings into an array.
@@ -67,7 +67,7 @@ tagger.enumerateTags(in: rawString.startIndex..<rawString.endIndex,
 return wordTokens
 ```
 
-The sample app leverages the tagger to split each string into tokens by using its [`enumerateTags(in:unit:scheme:options:using:)`](https://developer.apple.com/documentation/NaturalLanguage/NLTagger/enumerateTags(in:unit:scheme:options:using:)) method with the [`tokenType`](https://developer.apple.com/documentation/NaturalLanguage/NLTagScheme/tokenType) tagging scheme and the [`NLTokenUnit.word`](https://developer.apple.com/documentation/NaturalLanguage/NLTokenUnit/word) token unit.
+The sample app leverages the tagger to split each string into tokens by using its [`enumerateTags(in:unit:scheme:options:using:)`](https://developer.apple.com/documentation/naturallanguage/nltagger/enumeratetags(in:unit:scheme:options:using:)) method with the [`tokenType`](https://developer.apple.com/documentation/naturallanguage/nltagscheme/tokentype) tagging scheme and the [`NLTokenUnit.word`](https://developer.apple.com/documentation/naturallanguage/nltokenunit/word) token unit.
 
 ##### Convert Word or Wordpiece Tokens Into Their Ids
 
@@ -83,7 +83,7 @@ Secondary wordpieces, such as *har* and *gic*, each appear in the vocabulary wit
 
 Continuing the example, the method converts document text into the word and wordpiece token IDs shown in the following figure.
 
-![Flow diagram showing the conversion of tokens to token IDs.](https://docs-assets.developer.apple.com/published/4bf9eec284bedc09cec6b1b898d716dd/bert-word-token-ids%402x.png)
+![Flow diagram showing the conversion of tokens to token IDs.](/images/com.apple.coreml/bert-word-token-ids@2x.png)
 
 ##### Prepare the Model Input
 
@@ -134,7 +134,7 @@ wordTypes += Array(repeating: 0, count: tokenTypePadding)
 
 Continuing the example, the sample arranges the two input arrays with the values shown in the figure below.
 
-![Layout diagram showing the arrangement of the two input arrays for the BERT model, as vertical columns, alongside a third reference column.](https://docs-assets.developer.apple.com/published/bcb3d8e69c92837f01a68a48a4ae326e/bert-inputs%402x.png)
+![Layout diagram showing the arrangement of the two input arrays for the BERT model, as vertical columns, alongside a third reference column.](/images/com.apple.coreml/bert-inputs@2x.png)
 
 Next, the sample creates an [`MLMultiArray`](mlmultiarray.md) for each input and copies the contents from the arrays, which it uses to create a `BERTQAFP16Input` feature provider.
 
@@ -173,7 +173,7 @@ guard let prediction = try? bertModel.prediction(input: modelInput) else {
 
 You locate the answer to the question by analyzing the output from the BERT model. The model produces two outputs, `startLogits` and `endLogits`. Each *logit* is a raw confidence score of where the BERT model predicts the beginning and the end of an answer is.
 
-![Layout diagram showing the arrangement of the two output arrays from the BERT model shown as vertical columns.](https://docs-assets.developer.apple.com/published/3433d10e1e20a7caf2edf3989c5aebe3/bert-logits%402x.png)
+![Layout diagram showing the arrangement of the two output arrays from the BERT model shown as vertical columns.](/images/com.apple.coreml/bert-logits@2x.png)
 
 In this example, the best start and end logits are `6.08` and `7.53` for the tokens `"the"` and `"fox"`, respectively. The sample finds the indices of the highest-value starting and ending logits by:
 

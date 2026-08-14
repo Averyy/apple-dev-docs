@@ -22,7 +22,7 @@ init(shape: [NSNumber], dataType: MLMultiArrayDataType) throws
 
 #### Discussion
 
-This method allocates a contiguous region of memory for the multiarray’s shape. You must set the contents of memory. The multiarray frees the memory in its deinitializer (Swift) or [`dealloc`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class/dealloc) method (Objective-C).
+This method allocates a contiguous region of memory for the multiarray’s shape. You must set the contents of memory. The multiarray frees the memory in its deinitializer (Swift) or [`dealloc`](https://developer.apple.com/documentation/objectivec/nsobject-swift.class/dealloc) method (Objective-C).
 
 The following code creates a 3 x 3 multiarray and sets its contents to the value 3.14159.
 

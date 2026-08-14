@@ -58,8 +58,8 @@ Displays the person’s current location using the system styled user location i
 
 ### Conforms To
 - [MapContent](mapcontent.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

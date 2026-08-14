@@ -25,7 +25,7 @@ Hosts can observe a bus property across all busses by using KVO on a bus array o
 
 This version 3 class is bridged to the version 2 `kAudioUnitProperty_ElementCount` API.
 
-> **Note**:  You could add listeners to individual busses, but that means you have to observe bus count changes and add or remove listeners in response. Furthermore, the [`addObserver(_:toObjectsAt:forKeyPath:options:context:)`](https://developer.apple.com/documentation/Foundation/NSArray/addObserver(_:toObjectsAt:forKeyPath:options:context:)) method is problematic; it does not let the individual objects override the observation request, and so a bus which is proxying a bus in an extension process does not get the message.
+> **Note**:  You could add listeners to individual busses, but that means you have to observe bus count changes and add or remove listeners in response. Furthermore, the [`addObserver(_:toObjectsAt:forKeyPath:options:context:)`](https://developer.apple.com/documentation/foundation/nsarray/addobserver(_:toobjectsat:forkeypath:options:context:)) method is problematic; it does not let the individual objects override the observation request, and so a bus which is proxying a bus in an extension process does not get the message.
 
 ## Topics
 
@@ -58,21 +58,21 @@ This version 3 class is bridged to the version 2 `kAudioUnitProperty_ElementCoun
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSFastEnumeration](../Foundation/NSFastEnumeration.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSFastEnumeration](../foundation/nsfastenumeration.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 
-- [Creating an audio unit extension](../AVFAudio/creating-an-audio-unit-extension.md)
+- [Creating an audio unit extension](../avfaudio/creating-an-audio-unit-extension.md)
   Build an extension by using an Xcode template.
-- [Creating custom audio effects](../AVFAudio/creating-custom-audio-effects.md)
+- [Creating custom audio effects](../avfaudio/creating-custom-audio-effects.md)
   Add custom audio-effect processing to apps like Logic Pro X and GarageBand by creating Audio Unit (AU) plug-ins.
 - [Incorporating Audio Effects and Instruments](incorporating-audio-effects-and-instruments.md)
   Add custom audio processing and MIDI instruments to your app by hosting Audio Unit (AU) plug-ins.

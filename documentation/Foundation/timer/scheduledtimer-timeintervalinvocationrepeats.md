@@ -32,7 +32,7 @@ After `ti` seconds have elapsed, the timer fires, invoking `invocation`.
 
 - `ti`: The number of seconds between firings of the timer. If `ti` is less than or equal to `0.0`, this method chooses the nonnegative value of `0.0001` seconds instead.
 - `invocation`: The invocation to use when the timer fires. The invocation object maintains a strong reference to its arguments until the timer is invalidated.
-- `yesOrNo`: If [`true`](https://developer.apple.com/documentation/Swift/true), the timer will repeatedly reschedule itself until invalidated. If [`false`](https://developer.apple.com/documentation/Swift/false), the timer will be invalidated after it fires.
+- `yesOrNo`: If [`true`](https://developer.apple.com/documentation/swift/true), the timer will repeatedly reschedule itself until invalidated. If [`false`](https://developer.apple.com/documentation/swift/false), the timer will be invalidated after it fires.
 
 ## See Also
 

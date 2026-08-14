@@ -65,20 +65,20 @@ By default, a text recognition request first locates all possible glyphs or char
 ### Inherits From
 - [VNImageBasedRequest](vnimagebasedrequest.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCopying](../Foundation/NSCopying.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCopying](../foundation/nscopying.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 - [VNRequestProgressProviding](vnrequestprogressproviding.md)
 
 ## See Also
 
 - [Recognizing Text in Images](recognizing-text-in-images.md)
   Add text-recognition features to your app using the Vision framework.
-- [Structuring recognized text on a document](../VisionKit/structuring-recognized-text-on-a-document.md)
+- [Structuring recognized text on a document](../visionkit/structuring-recognized-text-on-a-document.md)
   Detect, recognize, and structure text on a business card or receipt using Vision and VisionKit.
 - [Extracting phone numbers from text in images](extracting-phone-numbers-from-text-in-images.md)
   Analyze and filter phone numbers from text in live capture by using Vision.

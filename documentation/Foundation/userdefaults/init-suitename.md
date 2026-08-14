@@ -24,7 +24,7 @@ init?(suiteName suitename: String?)
 
 Use this method to create a defaults object that reads settings from the custom domain you specify. For example, you might use this method to access settings you share among multiple apps or between your app and an app extension. The returned object writes settings to the domain you specified. Every instance of ``UserDefaults shares the contents of the argument and registration domains.
 
-The `suiteName` parameter matches the domain parameter of the corresponding CFPreferences APIs, except when translating between Foundation and Core Foundation constants. The following example shows two equivalent statements. For more details, see [`Preferences Utilities`](https://developer.apple.com/documentation/CoreFoundation/preferences-utilities).
+The `suiteName` parameter matches the domain parameter of the corresponding CFPreferences APIs, except when translating between Foundation and Core Foundation constants. The following example shows two equivalent statements. For more details, see [`Preferences Utilities`](https://developer.apple.com/documentation/corefoundation/preferences-utilities).
 
 Equivalent statements using NSUserDefaults and CFPreferences APIs
 
@@ -44,7 +44,7 @@ id preferencesValue = CFPreferencesCopyAppValue(@"someKey", @"someDomain");
 // userDefaultsValue and preferencesValue are equal
 ```
 
-In macOS, specify another app’s bundle identifier to search that app’s settings. You can’t search another app’s settings if either app runs in an [`App Sandbox`](https://developer.apple.com/documentation/Security/app-sandbox) and you don’t have the proper entitlements.
+In macOS, specify another app’s bundle identifier to search that app’s settings. You can’t search another app’s settings if either app runs in an [`App Sandbox`](https://developer.apple.com/documentation/security/app-sandbox) and you don’t have the proper entitlements.
 
 ## Parameters
 

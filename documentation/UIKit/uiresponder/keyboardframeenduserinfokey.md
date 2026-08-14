@@ -20,7 +20,7 @@ class let keyboardFrameEndUserInfoKey: String
 
 #### Discussion
 
-The value for this key is an [`NSValue`](https://developer.apple.com/documentation/Foundation/NSValue) object that contains a [`CGRect`](https://developer.apple.com/documentation/CoreFoundation/CGRect) for identifying the frame rectangle of the keyboard (in the screen’s coordinate space) after animating the keyboard. The frame rectangle reflects the current orientation of the device.
+The value for this key is an [`NSValue`](https://developer.apple.com/documentation/foundation/nsvalue) object that contains a [`CGRect`](https://developer.apple.com/documentation/corefoundation/cgrect) for identifying the frame rectangle of the keyboard (in the screen’s coordinate space) after animating the keyboard. The frame rectangle reflects the current orientation of the device.
 
 > ❗ **Important**:  Instead of using this key to track the keyboard’s frame, consider using [`UIKeyboardLayoutGuide`](uikeyboardlayoutguide.md), which allows you to respond dynamically to keyboard movement in your app. For more information, see [`Adjusting your layout with keyboard layout guide`](adjusting-your-layout-with-keyboard-layout-guide.md).
 

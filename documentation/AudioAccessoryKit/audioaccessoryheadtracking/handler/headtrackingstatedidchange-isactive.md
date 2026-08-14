@@ -8,7 +8,6 @@ Called when the user-facing Head Tracking state for this accessory changes (e.g.
 
 **Availability**:
 - iOS 27.0+ (Beta)
-- iPadOS 27.0+ (Beta)
 
 ## Declaration
 

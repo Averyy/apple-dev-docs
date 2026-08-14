@@ -19,7 +19,7 @@ void module::addPosition(float3 offset)
 
 Use this function to translate an element relative to its current location by applying a position offset.
 
-> **Note**: ![Graph](https://docs-assets.developer.apple.com/published/1e12fe2b1152d90327f63def56ba0a2b/module__addPosition.svg)
+> **Note**: ![Graph](/images/com.apple.computegraph/module__addPosition.svg)
 
 ## Parameters
 

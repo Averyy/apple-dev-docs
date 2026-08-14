@@ -22,7 +22,7 @@ static let exposure: MLImageClassifier.ImageAugmentationOptions
 
 Use this option to tell the image classifier to augment your training data set by creating darker or lighter versions of the original images.
 
-![Diagram showing how the original image results in four variants with different exposures.](https://docs-assets.developer.apple.com/published/8b1f4ef9233c9991c7650c245d186dda/MLImageClassifier-ImageAugmentationOptions-exposure-1%402x.png)
+![Diagram showing how the original image results in four variants with different exposures.](/images/com.apple.createml/MLImageClassifier-ImageAugmentationOptions-exposure-1@2x.png)
 
 The classifier creates four new images with random exposure variations for each original.
 

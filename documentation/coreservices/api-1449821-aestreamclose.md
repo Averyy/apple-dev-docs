@@ -28,8 +28,8 @@ Specifying `NULL` for the `desc` parameter causes `AEStreamClose` to discard the
 
 ## Parameters
 
-- `ref`: An  containing the stream data.
-- `desc`: A pointer to a descriptor for receiving a the stream data, or   if you want to discard the data. See  .
+- `ref`: An [`AEStreamRef`](aestreamref.md)containing the stream data.
+- `desc`: A pointer to a descriptor for receiving a the stream data, or `NULL` if you want to discard the data. See [`AEDesc`](aedesc.md).
 
 ## See Also
 

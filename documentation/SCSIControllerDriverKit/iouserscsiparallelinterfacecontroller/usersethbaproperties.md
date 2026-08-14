@@ -16,7 +16,7 @@ virtual kern_return_t UserSetHBAProperties(OSDictionary *properties);
 
 #### Return Value
 
-A value that indicates the result of setting the properties. [`kIOReturnSuccess`](https://developer.apple.com/documentation/DriverKit/kIOReturnSuccess) indicates success. For error definitions, see [`IOKit Constants`](https://developer.apple.com/documentation/iokit/iokit_constants).
+A value that indicates the result of setting the properties. [`kIOReturnSuccess`](https://developer.apple.com/documentation/driverkit/kioreturnsuccess) indicates success. For error definitions, see [`IOKit Constants`](https://developer.apple.com/documentation/iokit/iokit_constants).
 
 #### Discussion
 
@@ -36,7 +36,7 @@ Your driver extension calls this method to set properties on the HBA. The `prope
 - [`kIOPropertyFibreChannelALPAKey`](https://developer.apple.com/documentation/kernel/kiopropertyfibrechannelalpakey)
 - [`kIOPropertySASAddressKey`](https://developer.apple.com/documentation/kernel/kiopropertysasaddresskey)
 
-The value of each property should be a pointer to a valid [`OSString`](https://developer.apple.com/documentation/DriverKit/OSString) object that represents the value for the property. The value must be of the proper type and size for the specified key.
+The value of each property should be a pointer to a valid [`OSString`](https://developer.apple.com/documentation/driverkit/osstring) object that represents the value for the property. The value must be of the proper type and size for the specified key.
 
 ## Parameters
 

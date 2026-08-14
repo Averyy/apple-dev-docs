@@ -21,7 +21,7 @@ var vertexDescriptor: MDLVertexDescriptor { get }
 
 #### Discussion
 
-This is a convenience property. The [`MTKMesh`](mtkmesh.md) class does not use this descriptor, but your application may use this object to determine rendering state or create a [`MTLVertexDescriptor`](https://developer.apple.com/documentation/Metal/MTLVertexDescriptor) object to build a [`MTLRenderPipelineState`](https://developer.apple.com/documentation/Metal/MTLRenderPipelineState) object capable of interpreting the data in [`vertexBuffers`](mtkmesh/vertexbuffers.md).
+This is a convenience property. The [`MTKMesh`](mtkmesh.md) class does not use this descriptor, but your application may use this object to determine rendering state or create a [`MTLVertexDescriptor`](https://developer.apple.com/documentation/metal/mtlvertexdescriptor) object to build a [`MTLRenderPipelineState`](https://developer.apple.com/documentation/metal/mtlrenderpipelinestate) object capable of interpreting the data in [`vertexBuffers`](mtkmesh/vertexbuffers.md).
 
 ## See Also
 

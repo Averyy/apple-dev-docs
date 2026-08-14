@@ -57,7 +57,7 @@ struct Contrast: View {
 }
 ```
 
-![Demonstration of the effect of contrast on a view applying contrast](https://docs-assets.developer.apple.com/published/1fdbfa6f52e07cc1909e7fe4ce1da070/SwiftUI-View-contrast%402x.png)
+![Demonstration of the effect of contrast on a view applying contrast](/images/com.apple.SwiftUI/SwiftUI-View-contrast@2x.png)
 
 ## Parameters
 

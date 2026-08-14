@@ -8,7 +8,7 @@ Displays important information to the user.
 
 Use the `alertTemplate` element to display important information, such as a message telling the user to perform an action before continuing. At a minimum, provide a description of the alert and a button so the user can take any required actions. The following figure shows the basic layout for an `alertTemplate` page. The theme for the alert template defaults to the system preference.
 
-![Layout diagram showing title and description areas at the top, and a button area followed by a text area below.](https://docs-assets.developer.apple.com/published/0d680fb326cadffca7e6694e5bb86beb/alerttemplate-1%402x.png)
+![Layout diagram showing title and description areas at the top, and a button area followed by a text area below.](/images/com.apple.TVML/alerttemplate-1@2x.png)
 
 ##### Main Elements
 
@@ -57,7 +57,7 @@ The following listing shows the TVML for an `alertTemplate` example:
 
 The following figure shows the output for the above example:
 
-![Screenshot prompting the user to update the Apple TV. Two buttons below the prompt allow the user to accept or cancel the update.](https://docs-assets.developer.apple.com/published/6290f7ee1979bec25272f5e113c8d556/alerttemplate-2%402x.png)
+![Screenshot prompting the user to update the Apple TV. Two buttons below the prompt allow the user to accept or cancel the update.](/images/com.apple.TVML/alerttemplate-2@2x.png)
 
 ## Topics
 

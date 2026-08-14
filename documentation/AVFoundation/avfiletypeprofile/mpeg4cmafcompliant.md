@@ -22,7 +22,7 @@ static let mpeg4CMAFCompliant: AVFileTypeProfile
 
 #### Discussion
 
-To learn more about CMAF, see [`About the Common Media Application Format with HTTP Live Streaming (HLS)`](https://developer.apple.com/documentation/HTTP-Live-Streaming/about-the-common-media-application-format-with-http-live-streaming-hls).
+To learn more about CMAF, see [`About the Common Media Application Format with HTTP Live Streaming (HLS)`](https://developer.apple.com/documentation/http-live-streaming/about-the-common-media-application-format-with-http-live-streaming-hls).
 
 ## See Also
 

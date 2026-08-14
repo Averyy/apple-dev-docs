@@ -30,7 +30,7 @@ Use a `FetchRequest` property wrapper to declare a [`FetchedResults`](fetchedres
 private var quakes: FetchedResults<Quake> // Define Quake in your model.
 ```
 
-Alternatively, when you need more flexibility, you can initialize the request with a configured [`NSFetchRequest`](https://developer.apple.com/documentation/CoreData/NSFetchRequest) instance:
+Alternatively, when you need more flexibility, you can initialize the request with a configured [`NSFetchRequest`](https://developer.apple.com/documentation/coredata/nsfetchrequest) instance:
 
 ```swift
 @FetchRequest(fetchRequest: request)
@@ -39,7 +39,7 @@ private var quakes: FetchedResults<Quake>
 
 Always declare properties that have a fetch request wrapper as private. This lets the compiler help you avoid accidentally setting the property from the memberwise initializer of the enclosing view.
 
-The fetch request and its results use the managed object context stored in the environment, which you can access using the [`managedObjectContext`](environmentvalues/managedobjectcontext.md) environment value. To support user interface activity, you typically rely on the [`viewContext`](https://developer.apple.com/documentation/CoreData/NSPersistentContainer/viewContext) property of a shared [`NSPersistentContainer`](https://developer.apple.com/documentation/CoreData/NSPersistentContainer) instance. For example, you can set a context on your top level content view using a shared container that you define as part of your model:
+The fetch request and its results use the managed object context stored in the environment, which you can access using the [`managedObjectContext`](environmentvalues/managedobjectcontext.md) environment value. To support user interface activity, you typically rely on the [`viewContext`](https://developer.apple.com/documentation/coredata/nspersistentcontainer/viewcontext) property of a shared [`NSPersistentContainer`](https://developer.apple.com/documentation/coredata/nspersistentcontainer) instance. For example, you can set a context on your top level content view using a shared container that you define as part of your model:
 
 ```swift
 ContentView()
@@ -78,11 +78,11 @@ When you need to dynamically change the predicate or sort descriptors, access th
 ## Relationships
 
 ### Conforms To
-- [Copyable](../Swift/Copyable.md)
+- [Copyable](../swift/copyable.md)
 - [DynamicProperty](dynamicproperty.md)
-- [Escapable](../Swift/Escapable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Escapable](../swift/escapable.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

@@ -28,8 +28,8 @@ If you add an [`HKWorkoutActivity`](hkworkoutactivity.md) object that doesn’t 
 ## Parameters
 
 - `workoutActivity`: The workout activity to add.
-- `completion`: A callback handler that the system calls after adding the workout activity. The system calls the callback handler on an anonymous background queue. The callback handler takes the following parameters: - **success**: Contains [`true`](https://developer.apple.com/documentation/Swift/true) if the builder successfully added the activity.
-- **error**: If the `success` parameter is [`false`](https://developer.apple.com/documentation/Swift/false), this parameter contains information about the error; otherwise, it’s `nil`.
+- `completion`: A callback handler that the system calls after adding the workout activity. The system calls the callback handler on an anonymous background queue. The callback handler takes the following parameters: - **success**: Contains [`true`](https://developer.apple.com/documentation/swift/true) if the builder successfully added the activity.
+- **error**: If the `success` parameter is [`false`](https://developer.apple.com/documentation/swift/false), this parameter contains information about the error; otherwise, it’s `nil`.
 
 ## See Also
 

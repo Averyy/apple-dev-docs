@@ -22,7 +22,7 @@ var auAudioUnit: AUAudioUnit { get }
 
 #### Discussion
 
-This provides an [`AUAudioUnit`](https://developer.apple.com/documentation/AudioToolbox/AUAudioUnit) that either wraps or underlies the implementation’s audio unit, depending on how the app packages the audio unit. Apps interact with this to control custom properties, select presets, and change parameters.
+This provides an [`AUAudioUnit`](https://developer.apple.com/documentation/audiotoolbox/auaudiounit) that either wraps or underlies the implementation’s audio unit, depending on how the app packages the audio unit. Apps interact with this to control custom properties, select presets, and change parameters.
 
 Don’t perform operations directly on the audio unit that may conflict with the engine’s state, which includes changing the initialization state, stream formats, channel layouts, or connections to other audio units.
 

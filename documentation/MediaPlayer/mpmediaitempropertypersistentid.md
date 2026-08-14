@@ -22,7 +22,7 @@ let MPMediaItemPropertyPersistentID: String
 
 #### Discussion
 
-The corresponding value is an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) object that contains a [`MPMediaEntityPersistentID`](mpmediaentitypersistentid.md). The value of the `MPMediaItemPropertyPersistentID` identifier persists across application launches and across syncs that do not change the sync status of the media item. The value is not guaranteed to persist across a sync/unsync/sync cycle.
+The corresponding value is an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) object that contains a [`MPMediaEntityPersistentID`](mpmediaentitypersistentid.md). The value of the `MPMediaItemPropertyPersistentID` identifier persists across application launches and across syncs that do not change the sync status of the media item. The value is not guaranteed to persist across a sync/unsync/sync cycle.
 
 Can be used to build a media property predicate as described in [`MPMediaPropertyPredicate`](mpmediapropertypredicate.md).
 

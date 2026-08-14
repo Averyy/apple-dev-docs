@@ -36,7 +36,7 @@ if let television = try? await ModelEntity(named: "tv_retro") {
 
 | [`ModelDebugOptionsComponent.VisualizationMode.none`](modeldebugoptionscomponent/visualizationmode-swift.enum/none.md) | `tangent` |
 | --- | --- |
-| ![A screenshot of a virtual TV in a visionOS app. The TV is an old-fashioned television displaying a multicolored test pattern. It is drawn with shadows and highlights to appear as realistic as possible.](https://docs-assets.developer.apple.com/published/a57e508a6549f1c8cce08e79ea6b7ec5/ModelDebugOptionsComponent-VisualizationMode-enum-none.jpg) | ![A screenshot of a virtual TV in a visionOS app. The TV is using a tangent visualization, appearing in shades of yellows, purple, pinks and blues, which is a graphical representation of the calculated surface tangent vector at each point on the TV’s surface.](https://docs-assets.developer.apple.com/published/1760f202426ca54a29cad82b8fbb089f/ModelDebugOptionsComponent-VisualizationMode-enum-tangent.jpg) |
+| ![A screenshot of a virtual TV in a visionOS app. The TV is an old-fashioned television displaying a multicolored test pattern. It is drawn with shadows and highlights to appear as realistic as possible.](/images/com.apple.RealityKit/ModelDebugOptionsComponent-VisualizationMode-enum-none.jpg) | ![A screenshot of a virtual TV in a visionOS app. The TV is using a tangent visualization, appearing in shades of yellows, purple, pinks and blues, which is a graphical representation of the calculated surface tangent vector at each point on the TV’s surface.](/images/com.apple.RealityKit/ModelDebugOptionsComponent-VisualizationMode-enum-tangent.jpg) |
 
 ## See Also
 

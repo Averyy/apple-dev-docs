@@ -63,8 +63,8 @@ If you want to loop an animation, call the resource’s [`repeat(count:)`](anima
 
 ### Conforms To
 - [Resource](resource.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

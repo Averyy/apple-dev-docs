@@ -14,7 +14,7 @@ CKTool JS gives you access to features provided in the CloudKit Console API, fac
 
 With this library, you can:
 
-- Apply a CloudKit schema file to Sandbox databases (for more information about CloudKit schema files, see [`Integrating a Text-Based Schema into Your Workflow`](https://developer.apple.com/documentation/CloudKit/integrating-a-text-based-schema-into-your-workflow)).
+- Apply a CloudKit schema file to Sandbox databases (for more information about CloudKit schema files, see [`Integrating a Text-Based Schema into Your Workflow`](https://developer.apple.com/documentation/cloudkit/integrating-a-text-based-schema-into-your-workflow)).
 - Populate databases with test data.
 - Reset Sandbox databases to the production configuration.
 - Write scripts for your integration tests to incorporate.

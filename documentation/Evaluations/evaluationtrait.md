@@ -31,11 +31,11 @@ The result is accessible via [`EvaluationContext`](evaluationcontext.md).
 ## Relationships
 
 ### Conforms To
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
-- [TestScoping](../Testing/TestScoping.md)
-- [TestTrait](../Testing/TestTrait.md)
-- [Trait](../Testing/Trait.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
+- [TestScoping](../testing/testscoping.md)
+- [TestTrait](../testing/testtrait.md)
+- [Trait](../testing/trait.md)
 
 ## See Also
 

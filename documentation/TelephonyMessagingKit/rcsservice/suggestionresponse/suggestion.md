@@ -7,7 +7,6 @@ Suggestion for which to send the response.
 
 **Availability**:
 - iOS 26.0+
-- iPadOS 26.0+
 
 ## Declaration
 

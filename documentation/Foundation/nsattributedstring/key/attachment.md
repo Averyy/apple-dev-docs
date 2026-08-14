@@ -22,7 +22,7 @@ static let attachment: NSAttributedString.Key
 
 #### Discussion
 
-The value of this attribute is an [`NSTextAttachment`](https://developer.apple.com/documentation/AppKit/NSTextAttachment) object. The default value of this property is `nil`, indicating no attachment.
+The value of this attribute is an [`NSTextAttachment`](https://developer.apple.com/documentation/appkit/nstextattachment) object. The default value of this property is `nil`, indicating no attachment.
 
 ## See Also
 

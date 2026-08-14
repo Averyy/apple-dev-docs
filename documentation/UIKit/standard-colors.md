@@ -8,7 +8,7 @@ Define standard color objects for specific shades, such as red, blue, green, bla
 
 Use the standard color objects when you want to use a specific color shade in your UI. To view swatches of these colors, see [`System Colors`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/ios/visual-design/color/#system-colors).
 
-The system color objects adapt automatically to Dark Mode changes when you use the provided [`UIColor`](uicolor.md) object, but the fixed-shade colors don’t adapt. If you retrieve the color values, either directly or using another type such as [`CGColor`](https://developer.apple.com/documentation/CoreGraphics/CGColor), you must handle Dark Mode changes yourself. For more information about supporting Dark Mode, see [`Supporting Dark Mode in your interface`](supporting-dark-mode-in-your-interface.md).
+The system color objects adapt automatically to Dark Mode changes when you use the provided [`UIColor`](uicolor.md) object, but the fixed-shade colors don’t adapt. If you retrieve the color values, either directly or using another type such as [`CGColor`](https://developer.apple.com/documentation/coregraphics/cgcolor), you must handle Dark Mode changes yourself. For more information about supporting Dark Mode, see [`Supporting Dark Mode in your interface`](supporting-dark-mode-in-your-interface.md).
 
 ## Topics
 

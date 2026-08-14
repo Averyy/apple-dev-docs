@@ -38,7 +38,7 @@ A `RenderContext` is required for apps to render using the progressive immersion
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../Swift/BitwiseCopyable.md)
+- [BitwiseCopyable](../swift/bitwisecopyable.md)
 
 ## See Also
 

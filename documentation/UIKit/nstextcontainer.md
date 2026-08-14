@@ -38,7 +38,7 @@ You can access instances of the [`NSTextContainer`](nstextcontainer.md), [`NSLay
   The [`NSTextLayoutManager`](nstextlayoutmanager.md) owning the text container.
 - [func replaceLayoutManager(NSLayoutManager)](nstextcontainer/replacelayoutmanager(_:).md)
   Replaces the layout manager for the group of text system objects that contains the text container.
-- [var textView: NSTextView?](../AppKit/NSTextContainer/textView.md)
+- [var textView: NSTextView?](../appkit/nstextcontainer/textview.md)
   The text container’s text view.
 ### Defining the container shape
 - [var size: CGSize](nstextcontainer/size.md)
@@ -61,28 +61,28 @@ You can access instances of the [`NSTextContainer`](nstextcontainer.md), [`NSLay
 - [var isSimpleRectangularTextContainer: Bool](nstextcontainer/issimplerectangulartextcontainer.md)
   A Boolean that indicates whether the text container’s region is a rectangle with no holes or gaps, and whose edges are parallel to the text view’s coordinate system axes.
 ### Deprecated
-- [convenience init(containerSize: NSSize)](../AppKit/NSTextContainer/init(containerSize:).md)
+- [convenience init(containerSize: NSSize)](../appkit/nstextcontainer/init(containersize:).md)
   Initializes a text container with a specified bounding rectangle.
-- [func lineFragmentRect(forProposedRect: NSRect, sweepDirection: NSLineSweepDirection, movementDirection: NSLineMovementDirection, remaining: NSRectPointer?) -> NSRect](../AppKit/NSTextContainer/lineFragmentRect(forProposedRect:sweepDirection:movementDirection:remaining:).md)
+- [func lineFragmentRect(forProposedRect: NSRect, sweepDirection: NSLineSweepDirection, movementDirection: NSLineMovementDirection, remaining: NSRectPointer?) -> NSRect](../appkit/nstextcontainer/linefragmentrect(forproposedrect:sweepdirection:movementdirection:remaining:).md)
   Calculates and returns the longest rectangle available in the proposed rectangle for displaying text.
-- [func contains(NSPoint) -> Bool](../AppKit/NSTextContainer/contains(_:).md)
+- [func contains(NSPoint) -> Bool](../appkit/nstextcontainer/contains(_:).md)
   Queries whether a point lies within the text container’s region or on the region’s edge—not simply within its bounding rectangle.
-- [var containerSize: NSSize](../AppKit/NSTextContainer/containerSize.md)
+- [var containerSize: NSSize](../appkit/nstextcontainer/containersize.md)
   The size of the text container’s bounding rectangle.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCoding](../Foundation/NSCoding.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [NSSecureCoding](../Foundation/NSSecureCoding.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCoding](../foundation/nscoding.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSSecureCoding](../foundation/nssecurecoding.md)
 - [NSTextLayoutOrientationProvider](nstextlayoutorientationprovider.md)
 
 ## See Also

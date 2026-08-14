@@ -6,7 +6,7 @@ Receive controller and stylus input to interact with content in your augmented r
 
 #### Overview
 
-The Game Controller framework provides the ability to discover spatial game controllers and stylus, allows you to connect, read button or thumbstick inputs, and play haptics. After you connect to a device, you use [`RealityKit`](https://developer.apple.com/documentation/RealityKit) or [`ARKit`](https://developer.apple.com/documentation/ARKit) to combine tracking data with input from the device.
+The Game Controller framework provides the ability to discover spatial game controllers and stylus, allows you to connect, read button or thumbstick inputs, and play haptics. After you connect to a device, you use [`RealityKit`](https://developer.apple.com/documentation/realitykit) or [`ARKit`](https://developer.apple.com/documentation/arkit) to combine tracking data with input from the device.
 
 #### Configure Your Project
 
@@ -22,7 +22,7 @@ To begin developing with spatial game controllers, you need to configure your Xc
 
 #### Discover a Controller or Stylus
 
-The system can notify your app when a spatial game controller connects or disconnects by listening for [`GCControllerDidConnect`](https://developer.apple.com/documentation/Foundation/NSNotification/Name-swift.struct/GCControllerDidConnect) and [`GCControllerDidDisconnect`](https://developer.apple.com/documentation/Foundation/NSNotification/Name-swift.struct/GCControllerDidDisconnect). A notification that includes information as to whether the controller provides spatial input:
+The system can notify your app when a spatial game controller connects or disconnects by listening for [`GCControllerDidConnect`](https://developer.apple.com/documentation/foundation/nsnotification/name-swift.struct/gccontrollerdidconnect) and [`GCControllerDidDisconnect`](https://developer.apple.com/documentation/foundation/nsnotification/name-swift.struct/gccontrollerdiddisconnect). A notification that includes information as to whether the controller provides spatial input:
 
 ```swift
 NotificationCenter.default.addObserver(
@@ -44,7 +44,7 @@ More than one controller can connect to a device at a time. You can use the conn
 
 To get notifications for styli, use [`GCStylusDidConnectNotification`](gcstylusdidconnectnotification.md) and [`GCStylusDidDisconnectNotification`](gcstylusdiddisconnectnotification.md). These notifications provide a [`GCStylus`](gcstylus.md), and you can get a list of all currently connected styli by querying [`styli`](gcstylus/styli.md).
 
-> **Note**: Use [`GCControllerDidConnect`](https://developer.apple.com/documentation/Foundation/NSNotification/Name-swift.struct/GCControllerDidConnect) and [`GCStylusDidConnectNotification`](gcstylusdidconnectnotification.md) when your app launches to get the initial connection state. Checking for controllers and styli isn’t synchronous and may return an empty list even with an accessory in a connected state.
+> **Note**: Use [`GCControllerDidConnect`](https://developer.apple.com/documentation/foundation/nsnotification/name-swift.struct/gccontrollerdidconnect) and [`GCStylusDidConnectNotification`](gcstylusdidconnectnotification.md) when your app launches to get the initial connection state. Checking for controllers and styli isn’t synchronous and may return an empty list even with an accessory in a connected state.
 
 #### Handle Input Mapping
 
@@ -68,13 +68,13 @@ input.buttons[.stylusPrimaryButton] // Primary side button
 input.buttons[.stylusSecondaryButton] // Secondary side button
 ```
 
-For information on polling for input and receiving callbacks, see [`Handling input events`](handling-input-events.md). For more information on how to play haptics, see [`Playing Haptics on Game Controllers`](https://developer.apple.com/documentation/CoreHaptics/playing-haptics-on-game-controllers).
+For information on polling for input and receiving callbacks, see [`Handling input events`](handling-input-events.md). For more information on how to play haptics, see [`Playing Haptics on Game Controllers`](https://developer.apple.com/documentation/corehaptics/playing-haptics-on-game-controllers).
 
 #### Track Spatial Position with Realitykit Anchor Entities
 
-In [`RealityKit`](https://developer.apple.com/documentation/RealityKit), an [`AnchorEntity`](https://developer.apple.com/documentation/RealityKit/AnchorEntity) provides a way to tether virtual content to physical locations or objects in your real work space. For example, an image in your environment, your hands, or a spatial game controller. On visionOS, accessory anchoring works in immersive and shared spaces.
+In [`RealityKit`](https://developer.apple.com/documentation/realitykit), an [`AnchorEntity`](https://developer.apple.com/documentation/realitykit/anchorentity) provides a way to tether virtual content to physical locations or objects in your real work space. For example, an image in your environment, your hands, or a spatial game controller. On visionOS, accessory anchoring works in immersive and shared spaces.
 
-Use [`AnchoringComponent.AccessoryAnchoringSource`](https://developer.apple.com/documentation/RealityKit/AnchoringComponent/AccessoryAnchoringSource) with a [`GCController`](gccontroller.md) or [`GCStylus`](gcstylus.md) to anchor virtual content onto the accessory. Each controller and stylus accessory has a list of possible locations you can anchor to, and depends on the accessory you use. You can anchor virtual content to a location on the accessory by specifying a [`name`](https://developer.apple.com/documentation/RealityKit/AnchoringComponent/AccessoryLocation/name) from a list of possible [`accessoryLocations`](https://developer.apple.com/documentation/RealityKit/AnchoringComponent/AccessoryAnchoringSource/accessoryLocations).
+Use [`AnchoringComponent.AccessoryAnchoringSource`](https://developer.apple.com/documentation/realitykit/anchoringcomponent/accessoryanchoringsource) with a [`GCController`](gccontroller.md) or [`GCStylus`](gcstylus.md) to anchor virtual content onto the accessory. Each controller and stylus accessory has a list of possible locations you can anchor to, and depends on the accessory you use. You can anchor virtual content to a location on the accessory by specifying a [`name`](https://developer.apple.com/documentation/realitykit/anchoringcomponent/accessorylocation/name) from a list of possible [`accessoryLocations`](https://developer.apple.com/documentation/realitykit/anchoringcomponent/accessoryanchoringsource/accessorylocations).
 
 ```swift
 let device = // A connected controller or stylus.
@@ -91,9 +91,9 @@ guard let source = try await AnchoringComponent.AccessoryAnchoringSource(device:
 }
 ```
 
-For apps that don’t depend on high location accuracy, use the [`predicted`](https://developer.apple.com/documentation/RealityKit/AnchoringComponent/TrackingMode-swift.struct/predicted) tracking mode. If you need higher location accuracy — at the cost of higher latency — use [`continuous`](https://developer.apple.com/documentation/RealityKit/AnchoringComponent/TrackingMode-swift.struct/continuous) tracking mode.
+For apps that don’t depend on high location accuracy, use the [`predicted`](https://developer.apple.com/documentation/realitykit/anchoringcomponent/trackingmode-swift.struct/predicted) tracking mode. If you need higher location accuracy — at the cost of higher latency — use [`continuous`](https://developer.apple.com/documentation/realitykit/anchoringcomponent/trackingmode-swift.struct/continuous) tracking mode.
 
-Before using [`SpatialTrackingSession`](https://developer.apple.com/documentation/RealityKit/SpatialTrackingSession) to get the transforms of a spatial game controller, your app needs request permission to track an accessory. Set [`NSAccessoryTrackingUsageDescription`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSAccessoryTrackingUsageDescription) in your app’s `Info.plist` file that explains how your app intends to use tracking information.
+Before using [`SpatialTrackingSession`](https://developer.apple.com/documentation/realitykit/spatialtrackingsession) to get the transforms of a spatial game controller, your app needs request permission to track an accessory. Set [`NSAccessoryTrackingUsageDescription`](https://developer.apple.com/documentation/bundleresources/information-property-list/nsaccessorytrackingusagedescription) in your app’s `Info.plist` file that explains how your app intends to use tracking information.
 
 ```swift
 // Configure a spatial tracking session.
@@ -105,7 +105,7 @@ await session.run(configuration)
 let aimTransform = aimEntity.transformMatrix(relativeTo: nil)
 ```
 
-If you use [`ARKit`](https://developer.apple.com/documentation/ARKit), tracking works similarly to the object and image tracking APIs. For more information about tracking accessories, see [`Tracking accessories in volumetric windows`](https://developer.apple.com/documentation/ARKit/tracking-accessories-in-volumetric-windows).
+If you use [`ARKit`](https://developer.apple.com/documentation/arkit), tracking works similarly to the object and image tracking APIs. For more information about tracking accessories, see [`Tracking accessories in volumetric windows`](https://developer.apple.com/documentation/arkit/tracking-accessories-in-volumetric-windows).
 
 ## See Also
 

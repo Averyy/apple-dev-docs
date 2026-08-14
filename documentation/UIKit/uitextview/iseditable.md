@@ -19,7 +19,7 @@ var isEditable: Bool { get set }
 
 #### Discussion
 
-The default value of this property is [`true`](https://developer.apple.com/documentation/Swift/true).
+The default value of this property is [`true`](https://developer.apple.com/documentation/swift/true).
 
 ## See Also
 

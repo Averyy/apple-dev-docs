@@ -18,13 +18,13 @@ Develop device drivers that run in user space.
 
 #### Overview
 
-The DriverKit framework defines the fundamental behaviors for device drivers in macOS and iPadOS. The C++ classes of this framework define your driver’s basic structure, and provide support for handling events and allocating memory. This framework also supports appropriate types for examining the numbers, strings, and other types of data in your driver’s I/O registry entry. Other frameworks, such as [`USBDriverKit`](https://developer.apple.com/documentation/USBDriverKit), [`HIDDriverKit`](https://developer.apple.com/documentation/HIDDriverKit), [`NetworkingDriverKit`](https://developer.apple.com/documentation/NetworkingDriverKit), [`PCIDriverKit`](https://developer.apple.com/documentation/PCIDriverKit), [`SerialDriverKit`](https://developer.apple.com/documentation/SerialDriverKit), and [`AudioDriverKit`](https://developer.apple.com/documentation/AudioDriverKit), provide the specific behaviors you need to support different types of devices.
+The DriverKit framework defines the fundamental behaviors for device drivers in macOS and iPadOS. The C++ classes of this framework define your driver’s basic structure, and provide support for handling events and allocating memory. This framework also supports appropriate types for examining the numbers, strings, and other types of data in your driver’s I/O registry entry. Other frameworks, such as [`USBDriverKit`](https://developer.apple.com/documentation/usbdriverkit), [`HIDDriverKit`](https://developer.apple.com/documentation/hiddriverkit), [`NetworkingDriverKit`](https://developer.apple.com/documentation/networkingdriverkit), [`PCIDriverKit`](https://developer.apple.com/documentation/pcidriverkit), [`SerialDriverKit`](https://developer.apple.com/documentation/serialdriverkit), and [`AudioDriverKit`](https://developer.apple.com/documentation/audiodriverkit), provide the specific behaviors you need to support different types of devices.
 
 The drivers you build with DriverKit run in user space, rather than as kernel extensions, which improves system stability and security. You create your driver as an app extension and deliver it inside your existing app.
 
-In macOS, use the [`System Extensions`](https://developer.apple.com/documentation/SystemExtensions) framework to install and upgrade your driver. In iPadOS, the system automatically discovers and upgrades drivers along with their host apps.
+In macOS, use the [`System Extensions`](https://developer.apple.com/documentation/systemextensions) framework to install and upgrade your driver. In iPadOS, the system automatically discovers and upgrades drivers along with their host apps.
 
-> **Note**:  The base DriverKit framework is available in macOS for Apple silicon and Intel-based Mac computers, and in iPadOS for devices with an M-series chip. The availability of family frameworks like [`USBDriverKit`](https://developer.apple.com/documentation/USBDriverKit) and [`AudioDriverKit`](https://developer.apple.com/documentation/AudioDriverKit) varies by platform.
+> **Note**:  The base DriverKit framework is available in macOS for Apple silicon and Intel-based Mac computers, and in iPadOS for devices with an M-series chip. The availability of family frameworks like [`USBDriverKit`](https://developer.apple.com/documentation/usbdriverkit) and [`AudioDriverKit`](https://developer.apple.com/documentation/audiodriverkit) varies by platform.
 
 ## Topics
 
@@ -36,15 +36,15 @@ In macOS, use the [`System Extensions`](https://developer.apple.com/documentatio
 ### Entitlements
 - [Requesting Entitlements for DriverKit Development](requesting-entitlements-for-driverkit-development.md)
   Request the entitlement for DriverKit development, and request other entitlements your driver needs to interact with specific devices and interfaces.
-- [com.apple.developer.driverkit](../BundleResources/Entitlements/com.apple.developer.driverkit.md)
+- [com.apple.developer.driverkit](../bundleresources/entitlements/com.apple.developer.driverkit.md)
   A Boolean value that indicates whether your extension has permission to run as a user-space driver.
-- [com.apple.developer.driverkit.userclient-access](../BundleResources/Entitlements/com.apple.developer.driverkit.userclient-access.md)
+- [com.apple.developer.driverkit.userclient-access](../bundleresources/entitlements/com.apple.developer.driverkit.userclient-access.md)
   An array of strings that represent macOS driver extensions that may communicate with other DriverKit services.
-- [com.apple.developer.driverkit.allow-any-userclient-access](../BundleResources/Entitlements/com.apple.developer.driverkit.allow-any-userclient-access.md)
+- [com.apple.developer.driverkit.allow-any-userclient-access](../bundleresources/entitlements/com.apple.developer.driverkit.allow-any-userclient-access.md)
   A Boolean value that determines whether a macOS driver accepts user client connections from any application.
-- [Communicates with Drivers](../BundleResources/Entitlements/com.apple.developer.driverkit.communicates-with-drivers.md)
+- [Communicates with Drivers](../bundleresources/entitlements/com.apple.developer.driverkit.communicates-with-drivers.md)
   A Boolean value that indicates whether an iPadOS app can communicate with drivers.
-- [DriverKit Allow Third Party User Clients](../BundleResources/Entitlements/com.apple.developer.driverkit.allow-third-party-userclients.md)
+- [DriverKit Allow Third Party User Clients](../bundleresources/entitlements/com.apple.developer.driverkit.allow-third-party-userclients.md)
   A Boolean value that indicates whether an iPadOS driver accepts calls from third-party user clients.
 ### Samples
 - [DriverKit sample code](driverkit-sample-code.md)
@@ -108,7 +108,7 @@ In macOS, use the [`System Extensions`](https://developer.apple.com/documentatio
   A connection to another service that the system manages.
 - [IOUserServer](iouserserver.md)
   A system-managed service.
-- [com.apple.developer.driverkit.userclient-access](../BundleResources/Entitlements/com.apple.developer.driverkit.userclient-access.md)
+- [com.apple.developer.driverkit.userclient-access](../bundleresources/entitlements/com.apple.developer.driverkit.userclient-access.md)
   An array of strings that represent macOS driver extensions that may communicate with other DriverKit services.
 - [Communicating between a DriverKit extension and a client app](communicating-between-a-driverkit-extension-and-a-client-app.md)
   Send and receive different kinds of data securely by validating inputs and asynchronously by storing and using a callback.

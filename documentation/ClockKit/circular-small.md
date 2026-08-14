@@ -8,7 +8,7 @@ Display small, circular content in the corners of the Color watch face.
 
 Circular small templates display a small image or a few characters of text in the corners of the Color watch face.
 
-![Examples of the circular small templates. From left to right they are stack text, ring image, stack image, simple text, simple image, and ring text.](https://docs-assets.developer.apple.com/published/5d4d85d3cfd8e416e13d84dbd6da319f/media-2878965%402x.png)
+![Examples of the circular small templates. From left to right they are stack text, ring image, stack image, simple text, simple image, and ring text.](/images/com.apple.clockkit/media-2878965@2x.png)
 
 ## Topics
 
@@ -49,7 +49,7 @@ Circular small templates display a small image or a few characters of text in th
   An abstract class that defines the base behavior for all templates.
 - [enum CLKComplicationFamily](clkcomplicationfamily.md)
   Constants indicating the template groups.
-- [CLKComplicationSupportedFamilies](../BundleResources/Information-Property-List/CLKComplicationSupportedFamilies.md)
+- [CLKComplicationSupportedFamilies](../bundleresources/information-property-list/clkcomplicationsupportedfamilies.md)
   The complication families for which the app can provide data.
 
 

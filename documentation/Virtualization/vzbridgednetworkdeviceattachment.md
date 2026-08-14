@@ -18,7 +18,7 @@ class VZBridgedNetworkDeviceAttachment
 
 A [`VZBridgedNetworkDeviceAttachment`](vzbridgednetworkdeviceattachment.md) object represents a physical interface on the host computer. Use this object when configuring a network interface for your virtual machine. A bridged network device sends and receives packets on the same physical interface as the host computer, but does so using a different network layer.
 
-> ❗ **Important**:  To use this attachment, your app must have the [`com.apple.vm.networking`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.vm.networking) entitlement. If it doesn’t, the use of this attachment point results in an invalid [`VZVirtualMachineConfiguration`](vzvirtualmachineconfiguration.md) object.
+> ❗ **Important**:  To use this attachment, your app must have the [`com.apple.vm.networking`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.vm.networking) entitlement. If it doesn’t, the use of this attachment point results in an invalid [`VZVirtualMachineConfiguration`](vzvirtualmachineconfiguration.md) object.
 
 To configure a network device with a bridged network interface:
 
@@ -41,12 +41,12 @@ To configure a network device with a bridged network interface:
 ### Inherits From
 - [VZNetworkDeviceAttachment](vznetworkdeviceattachment.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

@@ -26,7 +26,7 @@ To use the entitlement, request it from Apple. The steps to request the entitlem
 
 You also need to include the [`Embedded Browser Engine Association Entitlement`](entitlements/com.apple.developer.embedded-web-browser-engine.engine-association.md) entitlement to specify whether you own the embedded alternative browser engine.
 
-For more information, see [`Creating browser extensions in Xcode`](https://developer.apple.com/documentation/BrowserEngineKit/creating-browser-extensions-in-xcode).
+For more information, see [`Creating browser extensions in Xcode`](https://developer.apple.com/documentation/browserenginekit/creating-browser-extensions-in-xcode).
 
 ## See Also
 

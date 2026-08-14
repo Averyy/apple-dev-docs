@@ -7,7 +7,7 @@ An atom that identifies the location of each chunk of data in the media’s data
 
 #### Overview
 
-See [`Chunk offset atom ('stco')`](chunk_offset_atom.md).
+See [`Chunk offset atom`](chunk_offset_atom.md).
 
 ## See Also
 

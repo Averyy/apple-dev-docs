@@ -124,11 +124,11 @@ After you verify the issuer signature and device signature, you can use the sign
 
 ## See Also
 
-- [Pass Type IDs Entitlement](../BundleResources/Entitlements/com.apple.developer.pass-type-identifiers.md)
+- [Pass Type IDs Entitlement](../bundleresources/entitlements/com.apple.developer.pass-type-identifiers.md)
   A list of identifiers that specify pass types that your app can access in Wallet.
-- [Merchant IDs Entitlement](../BundleResources/Entitlements/com.apple.developer.in-app-payments.md)
+- [Merchant IDs Entitlement](../bundleresources/entitlements/com.apple.developer.in-app-payments.md)
   A list of merchant IDs your app uses for Apple Pay support.
-- [com.apple.developer.in-app-identity-presentment](../BundleResources/Entitlements/com.apple.developer.in-app-identity-presentment.md)
+- [com.apple.developer.in-app-identity-presentment](../bundleresources/entitlements/com.apple.developer.in-app-identity-presentment.md)
   An entitlement that verifies age or identity.
 - [Requesting identity data from a Wallet pass](requesting-identity-data-from-a-wallet-pass.md)
   Initiate a request for identity information by prompting a user for permission and decrypting a response payload.

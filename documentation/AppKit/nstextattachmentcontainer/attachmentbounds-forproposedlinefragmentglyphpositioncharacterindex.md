@@ -17,7 +17,7 @@ func attachmentBounds(for textContainer: NSTextContainer?, proposedLineFragment 
 
 #### Return Value
 
-The [`bounds`](nstextattachment/bounds.md) rectangle of the text attachment if not [`CGRectZero`](https://developer.apple.com/documentation/CoreGraphics/CGRectZero); otherwise, the rectangle of the [`size`](https://developer.apple.com/documentation/UIKit/UIImage/size) property of the attachment’s [`image`](nstextattachment/image.md) property.
+The [`bounds`](nstextattachment/bounds.md) rectangle of the text attachment if not [`CGRectZero`](https://developer.apple.com/documentation/coregraphics/cgrectzero); otherwise, the rectangle of the [`size`](https://developer.apple.com/documentation/uikit/uiimage/size) property of the attachment’s [`image`](nstextattachment/image.md) property.
 
 #### Discussion
 

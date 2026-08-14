@@ -12,8 +12,8 @@ A user can have multiple external displays connected directly to a Mac or to an 
 
 Register for the following notifications so the system can notify your app about specific display changes:
 
-- **[`didChangeScreenNotification`](https://developer.apple.com/documentation/AppKit/NSWindow/didChangeScreenNotification)**: The system posts this notification when any window, including the window containing your view, moves to a different display.
-- **[`didChangeScreenParametersNotification`](https://developer.apple.com/documentation/AppKit/NSApplication/didChangeScreenParametersNotification)**: The system posts this notification when the Mac system’s display configuration changes; for example, when the user connects or disconnects an external display from the system. Another example is when the GPU driving the display changes, such as when system has automatic graphics switching enabled and switches between the discrete and integrated GPUs to drive the display.
+- **[`didChangeScreenNotification`](https://developer.apple.com/documentation/appkit/nswindow/didchangescreennotification)**: The system posts this notification when any window, including the window containing your view, moves to a different display.
+- **[`didChangeScreenParametersNotification`](https://developer.apple.com/documentation/appkit/nsapplication/didchangescreenparametersnotification)**: The system posts this notification when the Mac system’s display configuration changes; for example, when the user connects or disconnects an external display from the system. Another example is when the GPU driving the display changes, such as when system has automatic graphics switching enabled and switches between the discrete and integrated GPUs to drive the display.
 
 When the system posts a display change notification, you can decide if you should get and use a new device.
 
@@ -59,11 +59,11 @@ func registerForDisplayChangeNotifications() {
 }
 ```
 
-To deregister from the previous notifications, call the [`removeObserver(_:name:object:)`](https://developer.apple.com/documentation/Foundation/NotificationCenter/removeObserver(_:name:object:)) method.
+To deregister from the previous notifications, call the [`removeObserver(_:name:object:)`](https://developer.apple.com/documentation/foundation/notificationcenter/removeobserver(_:name:object:)) method.
 
 ##### Identify the Device That Drives Your Views Display
 
-Get the [`CGDirectDisplayID`](https://developer.apple.com/documentation/CoreGraphics/CGDirectDisplayID) value for the display in which your view currently appears. Then call the [`CGDirectDisplayCopyCurrentMetalDevice(_:)`](https://developer.apple.com/documentation/CoreGraphics/CGDirectDisplayCopyCurrentMetalDevice(_:)) function to get the device that drives that display.
+Get the [`CGDirectDisplayID`](https://developer.apple.com/documentation/coregraphics/cgdirectdisplayid) value for the display in which your view currently appears. Then call the [`CGDirectDisplayCopyCurrentMetalDevice(_:)`](https://developer.apple.com/documentation/coregraphics/cgdirectdisplaycopycurrentmetaldevice(_:)) function to get the device that drives that display.
 
 **Swift**:
 
@@ -90,7 +90,7 @@ id <MTLDevice>     displayDevice  = CGDirectDisplayCopyCurrentMetalDevice(viewDi
   Returns an array of all the Metal GPU devices in the system and registers a notification handler that Metal calls when the device list changes.
 - [func MTLRemoveDeviceObserver(any NSObjectProtocol)](mtlremovedeviceobserver(_:).md)
   Removes a registered observer of device notifications.
-- [func CGDirectDisplayCopyCurrentMetalDevice(CGDirectDisplayID) -> (any MTLDevice)?](../CoreGraphics/CGDirectDisplayCopyCurrentMetalDevice(_:).md)
+- [func CGDirectDisplayCopyCurrentMetalDevice(CGDirectDisplayID) -> (any MTLDevice)?](../coregraphics/cgdirectdisplaycopycurrentmetaldevice(_:).md)
   Returns the GPU device instance that’s currently driving a display.
 - [typealias MTLDeviceNotificationHandler](mtldevicenotificationhandler.md)
   A Swift closure or an Objective-C block that Metal calls when the system adds or removes a GPU device.

@@ -20,7 +20,7 @@ var isDragging: Bool { get }
 
 #### Discussion
 
-The value held by this property might require some time or distance of scrolling before it returns [`true`](https://developer.apple.com/documentation/Swift/true).
+The value held by this property might require some time or distance of scrolling before it returns [`true`](https://developer.apple.com/documentation/swift/true).
 
 ## See Also
 

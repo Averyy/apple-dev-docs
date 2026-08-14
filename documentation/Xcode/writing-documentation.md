@@ -12,7 +12,7 @@ DocC syntax — called documentation markup — is a custom variant of Markdown 
 
 For a deeper understanding of DocC and guidance on its usage, please consult the DocC documentation available at [`DocC Swift.org`](https://developer.apple.comhttps://www.swift.org/documentation/docc).
 
-![On the left, a diagram shows a blocked-out example of a compiled tutorial and Markdown. In the middle, a diagram shows a blocked-out example of Markdown. On the right, a diagram shows a blocked-out example of compiled developer documentation.](https://docs-assets.developer.apple.com/published/b57355472f696f01d98eab4dcf2cd195/docc-hero%402x.png)
+![On the left, a diagram shows a blocked-out example of a compiled tutorial and Markdown. In the middle, a diagram shows a blocked-out example of Markdown. On the right, a diagram shows a blocked-out example of compiled developer documentation.](/images/com.apple.Xcode/docc-hero@2x.png)
 
 ## Topics
 

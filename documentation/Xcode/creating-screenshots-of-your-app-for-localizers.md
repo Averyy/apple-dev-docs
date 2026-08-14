@@ -24,7 +24,7 @@ Add a configuration for each localization to your test plan. In the Project navi
 
 Edit the configuration file for the localization test. Under Localization, set the Application Language and Application Region settings to the corresponding language and region for the localization. Under UI Testing, switch Localization Screenshots from Off to On.
 
-![Screenshot of the project editor with a test plan selected in the navigator and a configuration called Right-to-Left selected in the detail area, showing the location of the Application Language and Application Region under Localization.](https://docs-assets.developer.apple.com/published/1539767c41a46cd1bd0afbb817c4c0a8/creating-screenshots-of-your-app-for-localizers-1%402x.png)
+![Screenshot of the project editor with a test plan selected in the navigator and a configuration called Right-to-Left selected in the detail area, showing the location of the Application Language and Application Region under Localization.](/images/com.apple.Xcode/creating-screenshots-of-your-app-for-localizers-1@2x.png)
 
 ##### Run Tests to Generate Screenshots
 

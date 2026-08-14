@@ -19,7 +19,7 @@ class let touchBarDeleteTemplateName: String
 
 #### Discussion
 
-![Template image for delete](https://docs-assets.developer.apple.com/published/782c62e68a8710473ff880ff0fcc5d7c/media-2793517%402x.png)
+![Template image for delete](/images/com.apple.appkit/media-2793517@2x.png)
 
 Touch Bar template images are exclusively for use in [`NSTouchBarItem`](nstouchbaritem.md) objects and not in onscreen windows.
 

@@ -342,12 +342,12 @@ See Table 7.7 in the [`Metal Shading Language Specification`](https://developer.
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../Swift/BitwiseCopyable.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [RawRepresentable](../Swift/RawRepresentable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [BitwiseCopyable](../swift/bitwisecopyable.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [RawRepresentable](../swift/rawrepresentable.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 
@@ -360,7 +360,7 @@ See Table 7.7 in the [`Metal Shading Language Specification`](https://developer.
 - [enum MTLTextureCompressionType](mtltexturecompressiontype.md)
 - [class MTLTextureDescriptor](mtltexturedescriptor.md)
   An instance that you use to configure new Metal texture instances.
-- [class MTKTextureLoader](../MetalKit/MTKTextureLoader.md)
+- [class MTKTextureLoader](../metalkit/mtktextureloader.md)
   An object that creates textures from existing data in common image formats.
 - [class MTLSharedTextureHandle](mtlsharedtexturehandle.md)
   A texture handle that can be shared across process address space boundaries.

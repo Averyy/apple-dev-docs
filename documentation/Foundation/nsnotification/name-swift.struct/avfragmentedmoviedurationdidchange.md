@@ -21,7 +21,7 @@ static let AVFragmentedMovieDurationDidChange: NSNotification.Name
 
 #### Discussion
 
-The system posts this notification only for changes that occur after a movie’s duration property reaches a [`AVKeyValueStatus.loaded`](https://developer.apple.com/documentation/AVFoundation/AVKeyValueStatus/loaded) status.
+The system posts this notification only for changes that occur after a movie’s duration property reaches a [`AVKeyValueStatus.loaded`](https://developer.apple.com/documentation/avfoundation/avkeyvaluestatus/loaded) status.
 
 ## See Also
 
@@ -41,19 +41,19 @@ The system posts this notification only for changes that occur after a movie’s
   A notification the system posts when the track associations for an asset track change.
 - [static let AVAssetWasDefragmented: NSNotification.Name](nsnotification/name-swift.struct/avassetwasdefragmented.md)
   A notification the system posts when a fragmented asset minder observes that the system defragments the asset on disk.
-- [class let subjectAreaDidChangeNotification: NSNotification.Name](../AVFoundation/AVCaptureDevice/subjectAreaDidChangeNotification.md)
+- [class let subjectAreaDidChangeNotification: NSNotification.Name](../avfoundation/avcapturedevice/subjectareadidchangenotification.md)
   A notification the system posts when a capture device detects a substantial change to the video subject area.
-- [class let wasConnectedNotification: NSNotification.Name](../AVFoundation/AVCaptureDevice/wasConnectedNotification.md)
+- [class let wasConnectedNotification: NSNotification.Name](../avfoundation/avcapturedevice/wasconnectednotification.md)
   A notification the system posts when a new capture device becomes available.
-- [class let wasDisconnectedNotification: NSNotification.Name](../AVFoundation/AVCaptureDevice/wasDisconnectedNotification.md)
+- [class let wasDisconnectedNotification: NSNotification.Name](../avfoundation/avcapturedevice/wasdisconnectednotification.md)
   A notification the system posts when an existing device becomes unavailable.
-- [class let formatDescriptionDidChangeNotification: NSNotification.Name](../AVFoundation/AVCaptureInput/Port/formatDescriptionDidChangeNotification.md)
+- [class let formatDescriptionDidChangeNotification: NSNotification.Name](../avfoundation/avcaptureinput/port/formatdescriptiondidchangenotification.md)
   A notification the system posts when the capture input port’s format description changes.
-- [class let didStartRunningNotification: NSNotification.Name](../AVFoundation/AVCaptureSession/didStartRunningNotification.md)
+- [class let didStartRunningNotification: NSNotification.Name](../avfoundation/avcapturesession/didstartrunningnotification.md)
   A notification the system posts when a capture session starts.
-- [class let didStopRunningNotification: NSNotification.Name](../AVFoundation/AVCaptureSession/didStopRunningNotification.md)
+- [class let didStopRunningNotification: NSNotification.Name](../avfoundation/avcapturesession/didstoprunningnotification.md)
   A notification the system posts when a capture session stops.
-- [class let interruptionEndedNotification: NSNotification.Name](../AVFoundation/AVCaptureSession/interruptionEndedNotification.md)
+- [class let interruptionEndedNotification: NSNotification.Name](../avfoundation/avcapturesession/interruptionendednotification.md)
   A notification the system posts when an interruption to a capture session finishes.
 
 

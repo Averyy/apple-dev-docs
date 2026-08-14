@@ -190,7 +190,7 @@ Most digital content creation tools offer good support for USD, so the best choi
 
 You can invoke `scntool` by typing `xcrun scntool` into a terminal window:
 
-![A terminal window displaying the scntool help output.](https://docs-assets.developer.apple.com/published/cf69f2395e478b702925af05ff526fb0/terminal-xcrun-scntool.png)
+![A terminal window displaying the scntool help output.](/images/com.apple.RealityKit/terminal-xcrun-scntool.png)
 
 To convert an SCN asset to USDZ, you can use:
 
@@ -210,7 +210,7 @@ The RealityKit version of the sample demonstrates how to leverage visionOS-speci
 
 Portrait mode provides a grounded experience where users can still see their physical surroundings while engaging with immersive content, perfect for games like platformers.
 
-Pyro Panda uses the new portrait aspect ratio for immersive spaces by first declaring a [`ProgressiveImmersionStyle`](https://developer.apple.com/documentation/SwiftUI/ProgressiveImmersionStyle) with the aspect ratio [`portrait`](https://developer.apple.com/documentation/SwiftUI/ProgressiveImmersionAspectRatio/portrait):
+Pyro Panda uses the new portrait aspect ratio for immersive spaces by first declaring a [`ProgressiveImmersionStyle`](https://developer.apple.com/documentation/swiftui/progressiveimmersionstyle) with the aspect ratio [`portrait`](https://developer.apple.com/documentation/swiftui/progressiveimmersionaspectratio/portrait):
 
 ```swift
 var immersionStyle: ProgressiveImmersionStyle {
@@ -265,15 +265,15 @@ This approach ensures your RealityKit application performs well across all suppo
 
 - [Creating a Spaceship game](creating-a-spaceship-game.md)
   Build an immersive game using RealityKit audio, simulation, and rendering features.
-- [BOT-anist](../visionOS/BOT-anist.md)
+- [BOT-anist](../visionos/bot-anist.md)
   Build a multiplatform app that uses windows, volumes, and animations to create a robot botanist’s greenhouse.
 - [Rendering a windowed game in stereo](rendering-a-windowed-game-in-stereo.md)
   Bring an iOS or iPadOS game to visionOS and enhance it.
-- [Happy Beam](../visionOS/happybeam.md)
+- [Happy Beam](../visionos/happybeam.md)
   Leverage a Full Space to create a fun game using ARKit.
-- [Swift Splash](../visionOS/swift-splash.md)
+- [Swift Splash](../visionos/swift-splash.md)
   Use RealityKit to create an interactive ride in visionOS.
-- [Destination Video](../visionOS/destination-video.md)
+- [Destination Video](../visionos/destination-video.md)
   Leverage SwiftUI to build an immersive media experience in a multiplatform app.
 - [Creating a game with scene understanding](creating-a-game-with-scene-understanding.md)
   Create AR games and experiences that interact with real-world objects on LiDAR-equipped iOS devices.

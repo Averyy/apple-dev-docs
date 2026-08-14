@@ -26,7 +26,7 @@ You must call this function between the creation and release of a printing sessi
 
 - `printSession`: The printing session that provides a context for the print job.
 - `printSettings`: The print settings object for the print job whose destination format you want to obtain.
-- `destFormatP`: If an error occurs, the variable is set to  . If the function executes without error  and the variable is set to  , the print job is set to use the default destination format.
+- `destFormatP`: A pointer to your [`CFString`](https://developer.apple.com/documentation/corefoundation/cfstring) variable. On return, the variable refers to a Core Foundation string that contains the destination format for the print job. You are responsible for releasing the string. Currently, there are two possible values: `kPMDocumentFormatPDF` or `kPMDocumentFormatPostScript`. If an error occurs, the variable is set to `NULL`. If the function executes without error  and the variable is set to `NULL`, the print job is set to use the default destination format.
 
 ## See Also
 

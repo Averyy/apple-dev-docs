@@ -58,7 +58,7 @@ class func openMenu() -> UIMenu {
 }
 ```
 
-Notice that the `UIKeyCommand` title is a localized string using the [`NSLocalizedString`](https://developer.apple.com/documentation/Foundation/NSLocalizedString) function, which can display the menu name in multiple languages.
+Notice that the `UIKeyCommand` title is a localized string using the [`NSLocalizedString`](https://developer.apple.com/documentation/foundation/nslocalizedstring) function, which can display the menu name in multiple languages.
 
 This sample inserts the Open command into the middle of the menu bar’s File menu:
 

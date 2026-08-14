@@ -18,13 +18,13 @@ class SFAuthorizationView
 
 The lock appears locked when the user must be authorized and appears open when the user has been authorized. The closed and open lock icons of the authorization view are shown in the following figure.
 
-![Authorization view lock icon](https://docs-assets.developer.apple.com/published/153dfdaab793afc67f163364d0c7cf69/media-1965610.gif)
+![Authorization view lock icon](/images/com.apple.securityinterface/media-1965610.gif)
 
 When you add an authorization view as a custom view to a window or dialog box, you must initialize it before it displays correctly. To initialize the view, use the [`setString(_:)`](sfauthorizationview/setstring(_:).md) method to create a default rights structure (containing a prompt string) or the [`setAuthorizationRights(_:)`](sfauthorizationview/setauthorizationrights(_:).md) method to specify a rights structure. You must also either specify automatic updates ([`setAutoupdate(_:)`](sfauthorizationview/setautoupdate(_:).md) or [`setAutoupdate(_:interval:)`](sfauthorizationview/setautoupdate(_:interval:).md)) or perform a manual update ([`updateStatus(_:)`](sfauthorizationview/updatestatus(_:).md)) to set the lock icon to its initial state.
 
 You can implement delegate methods that are invoked when the authorization view changes state. You can optionally implement the delegate methods to obtain the state of the authorization object when you are using an authorization view.
 
-When the user clicks a locked authorization view icon, the Security Server displays an authentication dialog (to request a user name and password, for example). When the user provides the requested credentials, the lock icon unlocks and the user is considered preauthorized to perform the functions specified by the authorization rights structure. You can call the [`updateStatus(_:)`](sfauthorizationview/updatestatus(_:).md) method to determine whether the user has been preauthorized: this method returns [`true`](https://developer.apple.com/documentation/Swift/true) if the view is in the unlocked state, otherwise [`false`](https://developer.apple.com/documentation/Swift/false). Before committing changes or performing actions that require authorization, you should check the user’s authorization again, even if they are preauthorized.
+When the user clicks a locked authorization view icon, the Security Server displays an authentication dialog (to request a user name and password, for example). When the user provides the requested credentials, the lock icon unlocks and the user is considered preauthorized to perform the functions specified by the authorization rights structure. You can call the [`updateStatus(_:)`](sfauthorizationview/updatestatus(_:).md) method to determine whether the user has been preauthorized: this method returns [`true`](https://developer.apple.com/documentation/swift/true) if the view is in the unlocked state, otherwise [`false`](https://developer.apple.com/documentation/swift/false). Before committing changes or performing actions that require authorization, you should check the user’s authorization again, even if they are preauthorized.
 
 The default behavior of this view is to preauthorize rights; if this is not possible it unlocks and waits for authorization to be checked when explicitly required.
 
@@ -59,24 +59,24 @@ The default behavior of this view is to preauthorize rights; if this is not poss
 - [func authorizationState() -> SFAuthorizationViewState](sfauthorizationview/authorizationstate.md)
   Returns the current state of the authorization view.
 - [func isEnabled() -> Bool](sfauthorizationview/isenabled.md)
-  Indicates whether the authorization view is enabled ([`true`](https://developer.apple.com/documentation/Swift/true)) or disabled ([`false`](https://developer.apple.com/documentation/Swift/false)).
+  Indicates whether the authorization view is enabled ([`true`](https://developer.apple.com/documentation/swift/true)) or disabled ([`false`](https://developer.apple.com/documentation/swift/false)).
 ### Setting the authorization state
 - [func authorize(Any!) -> Bool](sfauthorizationview/authorize(_:).md)
   Attempts to unlock the lock icon in the view.
 - [func deauthorize(Any!) -> Bool](sfauthorizationview/deauthorize(_:).md)
   Sets the authorization state to unauthorized and locks the lock icon in the view.
 ### Delegate methods
-- [func authorizationViewShouldDeauthorize(SFAuthorizationView!) -> Bool](../ObjectiveC/NSObject-swift.class/authorizationViewShouldDeauthorize(_:).md)
+- [func authorizationViewShouldDeauthorize(SFAuthorizationView!) -> Bool](../objectivec/nsobject-swift.class/authorizationviewshoulddeauthorize(_:).md)
   Sent to the delegate when a user clicks the open lock icon.
-- [func authorizationViewCreatedAuthorization(SFAuthorizationView!)](../ObjectiveC/NSObject-swift.class/authorizationViewCreatedAuthorization(_:).md)
+- [func authorizationViewCreatedAuthorization(SFAuthorizationView!)](../objectivec/nsobject-swift.class/authorizationviewcreatedauthorization(_:).md)
   Sent to the delegate to indicate the authorization object has been created or changed.
-- [func authorizationViewDidAuthorize(SFAuthorizationView!)](../ObjectiveC/NSObject-swift.class/authorizationViewDidAuthorize(_:).md)
+- [func authorizationViewDidAuthorize(SFAuthorizationView!)](../objectivec/nsobject-swift.class/authorizationviewdidauthorize(_:).md)
   Sent to the delegate to indicate the user was authorized and the authorization view was changed to unlocked.
-- [func authorizationViewDidDeauthorize(SFAuthorizationView!)](../ObjectiveC/NSObject-swift.class/authorizationViewDidDeauthorize(_:).md)
+- [func authorizationViewDidDeauthorize(SFAuthorizationView!)](../objectivec/nsobject-swift.class/authorizationviewdiddeauthorize(_:).md)
   Sent to the delegate to indicate the user was deauthorized and the authorization view was changed to locked.
-- [func authorizationViewDidHide(SFAuthorizationView!)](../ObjectiveC/NSObject-swift.class/authorizationViewDidHide(_:).md)
+- [func authorizationViewDidHide(SFAuthorizationView!)](../objectivec/nsobject-swift.class/authorizationviewdidhide(_:).md)
   Sent to the delegate to indicate that the view’s visibility has changed.
-- [func authorizationViewReleasedAuthorization(SFAuthorizationView!)](../ObjectiveC/NSObject-swift.class/authorizationViewReleasedAuthorization(_:).md)
+- [func authorizationViewReleasedAuthorization(SFAuthorizationView!)](../objectivec/nsobject-swift.class/authorizationviewreleasedauthorization(_:).md)
   Sent to the delegate to indicate that deauthorization is about to occur.
 ### Constants
 - [struct SFAuthorizationViewState](sfauthorizationviewstate.md)
@@ -85,26 +85,26 @@ The default behavior of this view is to preauthorize rights; if this is not poss
 ## Relationships
 
 ### Inherits From
-- [NSView](../AppKit/NSView.md)
+- [NSView](../appkit/nsview.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSAccessibilityElementProtocol](../AppKit/NSAccessibilityElementProtocol.md)
-- [NSAccessibilityProtocol](../AppKit/NSAccessibilityProtocol.md)
-- [NSAnimatablePropertyContainer](../AppKit/NSAnimatablePropertyContainer.md)
-- [NSAppearanceCustomization](../AppKit/NSAppearanceCustomization.md)
-- [NSCoding](../Foundation/NSCoding.md)
-- [NSDraggingDestination](../AppKit/NSDraggingDestination.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [NSStandardKeyBindingResponding](../AppKit/NSStandardKeyBindingResponding.md)
-- [NSTouchBarProvider](../AppKit/NSTouchBarProvider.md)
-- [NSUserActivityRestoring](../AppKit/NSUserActivityRestoring.md)
-- [NSUserInterfaceItemIdentification](../AppKit/NSUserInterfaceItemIdentification.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSAccessibilityElementProtocol](../appkit/nsaccessibilityelementprotocol.md)
+- [NSAccessibilityProtocol](../appkit/nsaccessibilityprotocol.md)
+- [NSAnimatablePropertyContainer](../appkit/nsanimatablepropertycontainer.md)
+- [NSAppearanceCustomization](../appkit/nsappearancecustomization.md)
+- [NSCoding](../foundation/nscoding.md)
+- [NSDraggingDestination](../appkit/nsdraggingdestination.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSStandardKeyBindingResponding](../appkit/nsstandardkeybindingresponding.md)
+- [NSTouchBarProvider](../appkit/nstouchbarprovider.md)
+- [NSUserActivityRestoring](../appkit/nsuseractivityrestoring.md)
+- [NSUserInterfaceItemIdentification](../appkit/nsuserinterfaceitemidentification.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

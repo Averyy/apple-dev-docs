@@ -16,7 +16,7 @@ static let credits: NSApplication.AboutPanelOptionKey
 
 #### Discussion
 
-The value of this key is an [`NSAttributedString`](https://developer.apple.com/documentation/Foundation/NSAttributedString) displayed in the info area of the panel. If not specified, AppKit then looks for a file named “Credits.html”, “Credits.rtf”, and “Credits.rtfd”, in that order, in the bundle returned by the [`Bundle`](https://developer.apple.com/documentation/Foundation/Bundle) class method main. The first file found is used. If none is found, the info area is left blank.
+The value of this key is an [`NSAttributedString`](https://developer.apple.com/documentation/foundation/nsattributedstring) displayed in the info area of the panel. If not specified, AppKit then looks for a file named “Credits.html”, “Credits.rtf”, and “Credits.rtfd”, in that order, in the bundle returned by the [`Bundle`](https://developer.apple.com/documentation/foundation/bundle) class method main. The first file found is used. If none is found, the info area is left blank.
 
 ## See Also
 

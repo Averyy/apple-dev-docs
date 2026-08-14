@@ -32,7 +32,7 @@ optional func matchmakerViewController(_ viewController: GKMatchmakerViewControl
 
 When all the players accept their invitations to a match, GameKit invokes this method in the app instances for all players in the match, including the local player who initiates the match. This method needs to dismiss the view controller and start the game. Use the match object passed to this method to get the players and communicate between them during the game.
 
-Although this method appears optional in the protocol, if you set the view controller’s delegate for a peer-to-peer match, GameKit expects the delegate to implement this method. If the view controller’s [`isHosted`](gkmatchmakerviewcontroller/ishosted.md) property is [`true`](https://developer.apple.com/documentation/Swift/true), GameKit instead invokes the [`matchmakerViewController(_:didFindHostedPlayers:)`](gkmatchmakerviewcontrollerdelegate/matchmakerviewcontroller(_:didfindhostedplayers:).md) method.
+Although this method appears optional in the protocol, if you set the view controller’s delegate for a peer-to-peer match, GameKit expects the delegate to implement this method. If the view controller’s [`isHosted`](gkmatchmakerviewcontroller/ishosted.md) property is [`true`](https://developer.apple.com/documentation/swift/true), GameKit instead invokes the [`matchmakerViewController(_:didFindHostedPlayers:)`](gkmatchmakerviewcontrollerdelegate/matchmakerviewcontroller(_:didfindhostedplayers:).md) method.
 
 ## Parameters
 

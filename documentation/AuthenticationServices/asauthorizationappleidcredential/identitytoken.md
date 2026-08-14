@@ -22,7 +22,7 @@ var identityToken: Data? { get }
 
 #### Discussion
 
-The system encodes the object as a string using [`NSUTF8StringEncoding`](https://developer.apple.com/documentation/Foundation/NSUTF8StringEncoding).
+The system encodes the object as a string using [`NSUTF8StringEncoding`](https://developer.apple.com/documentation/foundation/nsutf8stringencoding).
 
 ## See Also
 

@@ -42,7 +42,7 @@ For typical room-sized portals where the box should enclose the portal surface, 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../Swift/Equatable.md)
+- [Equatable](../swift/equatable.md)
 
 
 ---

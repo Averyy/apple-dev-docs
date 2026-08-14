@@ -30,7 +30,7 @@ This method is a designated initializer for `NSSet`.
 
 ## Parameters
 
-- `objects`: A C array of objects to add to the new set. If the same object appears more than once in `objects`, it is added only once to the returned set. Each object receives a [`retain`](https://developer.apple.com/documentation/ObjectiveC/NSObject-c.protocol/retain) message as it is added to the set.
+- `objects`: A C array of objects to add to the new set. If the same object appears more than once in `objects`, it is added only once to the returned set. Each object receives a [`retain`](https://developer.apple.com/documentation/objectivec/nsobject-c.protocol/retain) message as it is added to the set.
 - `cnt`: The number of objects from `objects` to add to the new set.
 
 ## See Also

@@ -24,7 +24,7 @@ When the arranged views don’t fill the stack view, it pads the spacing between
 
 The following image shows an example of a horizontal stack view that uses the [`UIStackView.Distribution.equalSpacing`](uistackview/distribution-swift.enum/equalspacing.md) distribution.
 
-![A horizontal stack view with four arranged subviews. The stack view spaces the arranged views equally so that they fill the available space along the stack view’s axis.](https://docs-assets.developer.apple.com/published/04510fb208768aac2e839ee8c17db595/media-2557450%402x.png)
+![A horizontal stack view with four arranged subviews. The stack view spaces the arranged views equally so that they fill the available space along the stack view’s axis.](/images/com.apple.uikit/media-2557450@2x.png)
 
 ## See Also
 

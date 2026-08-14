@@ -16,7 +16,7 @@ var collectionJoinBehavior: UISceneCollectionJoinBehavior { get set }
 
 #### Discussion
 
-A scene collection is a group of scenes that display together. In apps built with Mac Catalyst, you use this behavior to add windows to an [`NSWindowTabGroup`](https://developer.apple.com/documentation/AppKit/NSWindowTabGroup).
+A scene collection is a group of scenes that display together. In apps built with Mac Catalyst, you use this behavior to add windows to an [`NSWindowTabGroup`](https://developer.apple.com/documentation/appkit/nswindowtabgroup).
 
 ## See Also
 

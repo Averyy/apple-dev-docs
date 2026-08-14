@@ -21,7 +21,7 @@ Depending on the session configuration, ARKit may automatically add anchors to a
 
 You can provide visual content for the anchor by adding child nodes.
 
-Alternatively, you can implement the [`view(_:nodeFor:)`](arskviewdelegate/view(_:nodefor:).md) method to create your own node (or instance of an [`SKNode`](https://developer.apple.com/documentation/SpriteKit/SKNode) subclass) for an anchor.
+Alternatively, you can implement the [`view(_:nodeFor:)`](arskviewdelegate/view(_:nodefor:).md) method to create your own node (or instance of an [`SKNode`](https://developer.apple.com/documentation/spritekit/sknode) subclass) for an anchor.
 
 ## Parameters
 

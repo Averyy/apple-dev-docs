@@ -8,7 +8,7 @@ Define views and assemble them into a view hierarchy.
 
 SwiftUI offers a declarative approach to user interface design. With a traditional imperative approach, the burden is on your controller code not only to instantiate, lay out, and configure views, but also to continually make updates as conditions change. In contrast, with a declarative approach, you create a lightweight description of your user interface by declaring views in a hierarchy that mirrors the desired layout of your interface. SwiftUI then manages drawing and updating these views in response to events like user input or state changes.
 
-![A side-by-side illustration of a block diagram of a view hierarchy and the corresponding render of that hierarchy on an iPhone. The hierarchy is composed of a vertical stack containing two text views, the first of which has a font modifier that applies a title font. In the rendered output, the first text view appears larger than the second, because it uses the default body font.](https://docs-assets.developer.apple.com/published/990181b0d572a3894c9cc0981739876c/Declaring-a-Custom-View-1%402x.png)
+![A side-by-side illustration of a block diagram of a view hierarchy and the corresponding render of that hierarchy on an iPhone. The hierarchy is composed of a vertical stack containing two text views, the first of which has a font modifier that applies a title font. In the rendered output, the first text view appears larger than the second, because it uses the default body font.](/images/com.apple.SwiftUI/Declaring-a-Custom-View-1@2x.png)
 
 SwiftUI provides tools for defining and configuring the views in your user interface. You compose custom views out of built-in views that SwiftUI provides, plus other composite views that you’ve already defined. You configure these views with view modifiers and connect them to your data model. You then place your custom views within your app’s view hierarchy.
 
@@ -50,7 +50,7 @@ struct MyView: View {
 }
 ```
 
-![A screenshot of a rendered text view showing the text Hello World in a body font.](https://docs-assets.developer.apple.com/published/857ddcbf66bea0c40c9b59faf3891f9e/Declaring-a-Custom-View-2%402x.png)
+![A screenshot of a rendered text view showing the text Hello World in a body font.](/images/com.apple.SwiftUI/Declaring-a-Custom-View-2@2x.png)
 
 In addition to views for specific kinds of content, controls, and indicators, like [`Text`](text.md), [`Toggle`](toggle.md), and [`ProgressView`](progressview.md), SwiftUI also provides built-in views that you can use to arrange other views. For example, you can vertically stack two [`Text`](text.md) views using a [`VStack`](vstack.md):
 
@@ -65,7 +65,7 @@ struct MyView: View {
 }
 ```
 
-![A screenshot of two rendered text views, one above the other, showing the text Hello World above the text Glad to meet you. Both are rendered in a body font.](https://docs-assets.developer.apple.com/published/3bfd77241e87754d919ebe0ebfde8ba1/Declaring-a-Custom-View-3%402x.png)
+![A screenshot of two rendered text views, one above the other, showing the text Hello World above the text Glad to meet you. Both are rendered in a body font.](/images/com.apple.SwiftUI/Declaring-a-Custom-View-3@2x.png)
 
 Views that take multiple input child views, like the stack in the example above, typically do so using a closure marked with the [`ViewBuilder`](viewbuilder.md) attribute. This enables a multiple-statement closure that doesn’t require additional syntax at the call site. You only need to list the input views in succession.
 
@@ -89,7 +89,7 @@ struct MyView: View {
 }
 ```
 
-![A screenshot of two rendered text views, one above the other, showing the text Hello World above the text Glad to meet you. The upper text appears in a larger title font, while the lower text uses a smaller body font.](https://docs-assets.developer.apple.com/published/891e4a7caf561ea1f9e89aa97ca149b9/Declaring-a-Custom-View-4%402x.png)
+![A screenshot of two rendered text views, one above the other, showing the text Hello World above the text Glad to meet you. The upper text appears in a larger title font, while the lower text uses a smaller body font.](/images/com.apple.SwiftUI/Declaring-a-Custom-View-4@2x.png)
 
 For more information about how view modifiers work, and how to use them on your views, see [`Configuring views`](configuring-views.md).
 

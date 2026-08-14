@@ -19,7 +19,7 @@ void module::setAlpha(half alpha)
 
 Use this function to control the transparency of an element without modifying its RGB color components.
 
-> **Note**: ![Graph](https://docs-assets.developer.apple.com/published/d0cb84221e688878472c20c275561357/module__setAlpha.svg)
+> **Note**: ![Graph](/images/com.apple.computegraph/module__setAlpha.svg)
 
 ## Parameters
 

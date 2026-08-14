@@ -31,8 +31,8 @@ Each JavaScript value also has an association (indirectly via the [`context`](js
 
 When you use the [`JSValue`](jsvalue.md) methods for creating, reading, and converting JavaScript values, JavaScriptCore automatically converts native values to JavaScript values and vice versa, using the rules below.
 
-- [`NSDictionary`](https://developer.apple.com/documentation/Foundation/NSDictionary) objects or Swift dictionaries and the keys they contain become JavaScript objects with matching named properties and vice versa. JavaScriptCore recursively copies and converts the values for keys.
-- [`NSArray`](https://developer.apple.com/documentation/Foundation/NSArray) objects or Swift arrays become JavaScript arrays and vice versa, with elements that JavaScriptCore recursively copies and converts.
+- [`NSDictionary`](https://developer.apple.com/documentation/foundation/nsdictionary) objects or Swift dictionaries and the keys they contain become JavaScript objects with matching named properties and vice versa. JavaScriptCore recursively copies and converts the values for keys.
+- [`NSArray`](https://developer.apple.com/documentation/foundation/nsarray) objects or Swift arrays become JavaScript arrays and vice versa, with elements that JavaScriptCore recursively copies and converts.
 - Objective-C blocks (or Swift closures with the `@convention(block)` attribute) become JavaScript `Function` objects, with parameter and return types that JavaScriptCore converts using the same rules as values. Converting a JavaScript function with a backing from a native block or method returns that block or method; all other JavaScript functions convert as empty dictionaries.
 - For all other native object types (and class types or metatypes), JavaScriptCore creates a JavaScript wrapper object with a constructor prototype chain that reflects the native class hierarchy. By default, the JavaScript wrapper for a native object doesn’t make that object’s properties and methods available in JavaScript. To choose properties and methods for export to JavaScript, see [`JSExport`](jsexport.md).
 
@@ -41,15 +41,15 @@ When you convert an object, method, or block, JavaScriptCore implicitly converts
 | Objective-C (and Swift) types | JavaScript types | Notes |
 | --- | --- | --- |
 | `nil` | `undefined` |  |
-| [`NSNull`](https://developer.apple.com/documentation/Foundation/NSNull) | `null` |  |
-| [`NSString`](https://developer.apple.com/documentation/Foundation/NSString) (Swift [`String`](https://developer.apple.com/documentation/Swift/String)) | `String` |  |
-| [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) and primitive numeric types | `Number`, `Boolean` | Conversion is consistent with the following methods: ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) [`init(int32:in:)`](jsvalue/init(int32:in:).md) / [`toInt32()`](jsvalue/toint32().md) for signed integer types ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) [`init(uInt32:in:)`](jsvalue/init(uint32:in:).md) / [`toUInt32()`](jsvalue/touint32().md) for unsigned integer types ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) [`init(bool:in:)`](jsvalue/init(bool:in:).md) / [`toBool()`](jsvalue/tobool().md) for Boolean types ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) [`init(double:in:)`](jsvalue/init(double:in:).md) / [`toBool()`](jsvalue/tobool().md) for all other numeric types |
-| [`NSDictionary`](https://developer.apple.com/documentation/Foundation/NSDictionary) (Swift [`Dictionary`](https://developer.apple.com/documentation/Swift/Dictionary)) | `Object` | Recursive conversion. |
-| [`NSArray`](https://developer.apple.com/documentation/Foundation/NSArray) (Swift [`Array`](https://developer.apple.com/documentation/Swift/Array)) | `Array` | Recursive conversion. |
-| [`NSDate`](https://developer.apple.com/documentation/Foundation/NSDate) | `Date` |  |
-| Objective-C or Swift object ([`objc_object`](https://developer.apple.com/documentation/ObjectiveC/objc_object) or [`AnyObject`](https://developer.apple.com/documentation/Swift/AnyObject)) ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) Objective-C or Swift class ([`Class`](https://developer.apple.com/documentation/ObjectiveC/Class) or [`AnyClass`](https://developer.apple.com/documentation/Swift/AnyClass)) | `Object` | Converts with [`init(object:in:)`](jsvalue/init(object:in:).md) / [`toObject()`](jsvalue/toobject().md). |
-| Structure types: ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) [`NSRange`](https://developer.apple.com/documentation/Foundation/NSRange-c.struct), [`CGRect`](https://developer.apple.com/documentation/CoreFoundation/CGRect), [`CGPoint`](https://developer.apple.com/documentation/CoreFoundation/CGPoint), [`CGSize`](https://developer.apple.com/documentation/CoreFoundation/CGSize) | `Object` | There isn’t support for other structure types. |
-| Objective-C block (Swift closure) | `Function` | Convert explicitly with [`init(object:in:)`](jsvalue/init(object:in:).md) / [`toObject()`](jsvalue/toobject().md). ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) JavaScript functions don’t convert to native blocks/closures unless they already have a backing from a native block/closure. |
+| [`NSNull`](https://developer.apple.com/documentation/foundation/nsnull) | `null` |  |
+| [`NSString`](https://developer.apple.com/documentation/foundation/nsstring) (Swift [`String`](https://developer.apple.com/documentation/swift/string)) | `String` |  |
+| [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) and primitive numeric types | `Number`, `Boolean` | Conversion is consistent with the following methods: ![None](/images/com.apple.javascriptcore/spacer.png) [`init(int32:in:)`](jsvalue/init(int32:in:).md) / [`toInt32()`](jsvalue/toint32().md) for signed integer types ![None](/images/com.apple.javascriptcore/spacer.png) [`init(uInt32:in:)`](jsvalue/init(uint32:in:).md) / [`toUInt32()`](jsvalue/touint32().md) for unsigned integer types ![None](/images/com.apple.javascriptcore/spacer.png) [`init(bool:in:)`](jsvalue/init(bool:in:).md) / [`toBool()`](jsvalue/tobool().md) for Boolean types ![None](/images/com.apple.javascriptcore/spacer.png) [`init(double:in:)`](jsvalue/init(double:in:).md) / [`toBool()`](jsvalue/tobool().md) for all other numeric types |
+| [`NSDictionary`](https://developer.apple.com/documentation/foundation/nsdictionary) (Swift [`Dictionary`](https://developer.apple.com/documentation/swift/dictionary)) | `Object` | Recursive conversion. |
+| [`NSArray`](https://developer.apple.com/documentation/foundation/nsarray) (Swift [`Array`](https://developer.apple.com/documentation/swift/array)) | `Array` | Recursive conversion. |
+| [`NSDate`](https://developer.apple.com/documentation/foundation/nsdate) | `Date` |  |
+| Objective-C or Swift object ([`objc_object`](https://developer.apple.com/documentation/objectivec/objc_object) or [`AnyObject`](https://developer.apple.com/documentation/swift/anyobject)) ![None](/images/com.apple.javascriptcore/spacer.png) Objective-C or Swift class ([`Class`](https://developer.apple.com/documentation/objectivec/class) or [`AnyClass`](https://developer.apple.com/documentation/swift/anyclass)) | `Object` | Converts with [`init(object:in:)`](jsvalue/init(object:in:).md) / [`toObject()`](jsvalue/toobject().md). |
+| Structure types: ![None](/images/com.apple.javascriptcore/spacer.png) [`NSRange`](https://developer.apple.com/documentation/foundation/nsrange-c.struct), [`CGRect`](https://developer.apple.com/documentation/corefoundation/cgrect), [`CGPoint`](https://developer.apple.com/documentation/corefoundation/cgpoint), [`CGSize`](https://developer.apple.com/documentation/corefoundation/cgsize) | `Object` | There isn’t support for other structure types. |
+| Objective-C block (Swift closure) | `Function` | Convert explicitly with [`init(object:in:)`](jsvalue/init(object:in:).md) / [`toObject()`](jsvalue/toobject().md). ![None](/images/com.apple.javascriptcore/spacer.png) JavaScript functions don’t convert to native blocks/closures unless they already have a backing from a native block/closure. |
 
 ## Topics
 
@@ -106,7 +106,7 @@ When you convert an object, method, or block, JavaScriptCore implicitly converts
 - [func toUInt32() -> UInt32](jsvalue/touint32.md)
   Converts the JavaScript value to a native unsigned integer value.
 - [func toNumber() -> NSNumber!](jsvalue/tonumber.md)
-  Converts the JavaScript value to a [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) object.
+  Converts the JavaScript value to a [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) object.
 - [func toString() -> String!](jsvalue/tostring.md)
   Converts the JavaScript value to a native string.
 - [func toDate() -> Date!](jsvalue/todate.md)
@@ -237,14 +237,14 @@ When you convert an object, method, or block, JavaScriptCore implicitly converts
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

@@ -27,7 +27,7 @@ The locale ID for the French localization is `fr`, and `fr-feed.json` contains F
 
 Unlike feeds that aren’t localized, localized feeds download the supplemental JSON object as an extra step to determine locale information before downloading your feed’s content. As a result, you need to use the URL for the supplemental JSON object when sharing your subscription.
 
-![A diagram showing the relationship between the feed URL, the feed JSON, and the intermediate locale JSON that’s only required for localized feeds.](https://docs-assets.developer.apple.com/published/3538c391b8329912ee4ebe05754c6d6f/localizing-a-subscription-feed-1%402x.png)
+![A diagram showing the relationship between the feed URL, the feed JSON, and the intermediate locale JSON that’s only required for localized feeds.](/images/com.apple.Swift-Playgrounds/localizing-a-subscription-feed-1@2x.png)
 
 ## See Also
 

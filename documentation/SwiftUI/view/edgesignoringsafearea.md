@@ -42,7 +42,7 @@ VStack {
 .border(Color.gray)
 ```
 
-![A screenshot showing a view whose bounds exceed the safe area of the screen.](https://docs-assets.developer.apple.com/published/063af0f9315232e85f7d3f7a6ab17971/SwiftUI-View-edgesIgnoringSafeArea%402x.png)
+![A screenshot showing a view whose bounds exceed the safe area of the screen.](/images/com.apple.SwiftUI/SwiftUI-View-edgesIgnoringSafeArea@2x.png)
 
 Depending on the surrounding view hierarchy, SwiftUI may not honor an `edgesIgnoringSafeArea(_:)` request. This can happen, for example, if the view is inside a container that respects the screen’s safe area. In that case you may need to apply `edgesIgnoringSafeArea(_:)` to the container instead.
 

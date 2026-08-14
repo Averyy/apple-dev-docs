@@ -11,7 +11,7 @@ framework: HIG
 
 A stepper is a two-segment control that people use to increase or decrease an incremental value.
 
-![A stylized representation of a stepper control. The image is tinted red to subtly reflect the red in the original six-color Apple logo.](https://docs-assets.developer.apple.com/published/c4abe9e9c78bf5a9d45dcec763728ae5/components-stepper-intro~dark%402x.png)
+![A stylized representation of a stepper control. The image is tinted red to subtly reflect the red in the original six-color Apple logo.](/images/com.apple.HIG/components-stepper-intro~dark@2x.png)
 A stepper sits next to a field that displays its current value, because the stepper itself doesn’t display a value.
 
 ## Best practices
@@ -31,8 +31,8 @@ A stepper sits next to a field that displays its current value, because the step
 [Text fields](text-fields.md)
 
 #### Developer documentation
-[UIStepper](../UIKit/UIStepper.md) — UIKit
-[NSStepper](../AppKit/NSStepper.md) — AppKit
+[UIStepper](../uikit/uistepper.md) — UIKit
+[NSStepper](../appkit/nsstepper.md) — AppKit
 
 
 

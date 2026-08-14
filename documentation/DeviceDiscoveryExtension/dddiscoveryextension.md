@@ -22,7 +22,7 @@ protocol DDDiscoveryExtension : AppExtension
 
 Your extension adopts this protocol as the primary entry and exit points for device discovery.
 
-The system calls your extension’s [`startDiscovery(session:)`](dddiscoveryextension/startdiscovery(session:).md) when [`AVRoutePickerView`](https://developer.apple.com/documentation/AVKit/AVRoutePickerView) displays so your extension can include a specific third-party device in the picker. When the picker UI dismisses or the user selects a device, the system calls your extension’s [`stopDiscovery(session:)`](dddiscoveryextension/stopdiscovery(session:).md) implementation to instruct it to perform any cleanup.
+The system calls your extension’s [`startDiscovery(session:)`](dddiscoveryextension/startdiscovery(session:).md) when [`AVRoutePickerView`](https://developer.apple.com/documentation/avkit/avroutepickerview) displays so your extension can include a specific third-party device in the picker. When the picker UI dismisses or the user selects a device, the system calls your extension’s [`stopDiscovery(session:)`](dddiscoveryextension/stopdiscovery(session:).md) implementation to instruct it to perform any cleanup.
 
 ## Topics
 
@@ -38,7 +38,7 @@ The system calls your extension’s [`startDiscovery(session:)`](dddiscoveryexte
 ## Relationships
 
 ### Inherits From
-- [AppExtension](../ExtensionFoundation/AppExtension.md)
+- [AppExtension](../extensionfoundation/appextension.md)
 
 ## See Also
 

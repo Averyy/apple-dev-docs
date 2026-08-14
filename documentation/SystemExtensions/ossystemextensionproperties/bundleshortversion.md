@@ -19,7 +19,7 @@ var bundleShortVersion: String { get }
 
 #### Discussion
 
-This is the [`CFBundleShortVersionString`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/CFBundleShortVersionString) of the extension bundle.
+This is the [`CFBundleShortVersionString`](https://developer.apple.com/documentation/bundleresources/information-property-list/cfbundleshortversionstring) of the extension bundle.
 
 ## See Also
 

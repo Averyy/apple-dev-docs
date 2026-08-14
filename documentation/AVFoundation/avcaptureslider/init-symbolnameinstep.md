@@ -28,7 +28,7 @@ Use discrete sliders when your use case supports selecting stepped values within
 - `localizedTitle`: A localized title that describes the slider’s action.
 - `symbolName`: A symbol name from the SF Symbols library.
 - `range`: A bounded range of floating point values.
-- `step`: The distance between each valid value. This specified value must be greater than `0` or the system throws an [`invalidArgumentException`](https://developer.apple.com/documentation/Foundation/NSExceptionName/invalidArgumentException).
+- `step`: The distance between each valid value. This specified value must be greater than `0` or the system throws an [`invalidArgumentException`](https://developer.apple.com/documentation/foundation/nsexceptionname/invalidargumentexception).
 
 ## See Also
 

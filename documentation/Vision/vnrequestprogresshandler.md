@@ -21,7 +21,7 @@ Vision may populate the [`results`](vnrequest/results.md) array in the request w
 
 - `request`: The completed Vision request. The results of the request, if no error occurred, reside in the [`results`](vnrequest/results.md) array of the request.
 - `fractionCompleted`: The fraction of the request that is completed, reported between `0.0` and `1.0`. If the [`indeterminate`](vnrequestprogressproviding/indeterminate.md) property is set, this value is undefined.
-- `error`: The error that caused the request to fail, or [`nil`](https://developer.apple.com/documentation/ObjectiveC/nil-227m0) if the request completed successfully.
+- `error`: The error that caused the request to fail, or [`nil`](https://developer.apple.com/documentation/objectivec/nil-227m0) if the request completed successfully.
 
 ## See Also
 

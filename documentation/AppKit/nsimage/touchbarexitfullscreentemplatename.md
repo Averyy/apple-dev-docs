@@ -19,7 +19,7 @@ class let touchBarExitFullScreenTemplateName: String
 
 #### Discussion
 
-![Template image for exit full screen](https://docs-assets.developer.apple.com/published/ffe40bf3ba87964248aaf290eebafec8/media-2825111%402x.png)
+![Template image for exit full screen](/images/com.apple.appkit/media-2825111@2x.png)
 
 Touch Bar template images are exclusively for use in [`NSTouchBarItem`](nstouchbaritem.md) objects and not in onscreen windows.
 

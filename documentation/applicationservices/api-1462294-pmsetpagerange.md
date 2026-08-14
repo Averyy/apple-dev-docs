@@ -32,7 +32,7 @@ If you call this function after initiating a print job, the change is ignored fo
 
 - `printSettings`: The print settings object whose page range you want to set.
 - `minPage`: The minimum page number allowed. This value appears as the default in the From field of the Print dialog. 
-- `maxPage`: The maximum page number allowed. This value appears as the default in the To field of the Print dialog. Pass the constant   to allow the user to print the entire document. If the first page is set to 1, then passing   as the maximum page number causes the All button to be selected.
+- `maxPage`: The maximum page number allowed. This value appears as the default in the To field of the Print dialog. Pass the constant `kPMPrintAllPages` to allow the user to print the entire document. If the first page is set to 1, then passing `kPMPrintAllPages` as the maximum page number causes the All button to be selected.
 
 ## See Also
 

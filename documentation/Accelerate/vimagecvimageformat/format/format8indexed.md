@@ -22,7 +22,7 @@ case format8Indexed
 
 #### Discussion
 
-This pixel format supports color spaces that are either [`CGColorSpaceModel.monochrome`](https://developer.apple.com/documentation/CoreGraphics/CGColorSpaceModel/monochrome) or [`CGColorSpaceModel.indexed`](https://developer.apple.com/documentation/CoreGraphics/CGColorSpaceModel/indexed).
+This pixel format supports color spaces that are either [`CGColorSpaceModel.monochrome`](https://developer.apple.com/documentation/coregraphics/cgcolorspacemodel/monochrome) or [`CGColorSpaceModel.indexed`](https://developer.apple.com/documentation/coregraphics/cgcolorspacemodel/indexed).
 
 ## See Also
 

@@ -74,7 +74,7 @@ In this case, determining the exact vertex and index capacities of the mesh is s
 
 See [`Creating a plane with low-level mesh`](creating-a-plane-with-low-level-mesh.md) for more information on how the sample creates this mesh, including how it fills the mesh’s vertex and index buffers with data, like in the following image:
 
-![A screenshot of a flat plane mesh floating in a volume in a living room scene. The plane appears light gray in color.](https://docs-assets.developer.apple.com/published/fc5bccc455ef9a0d26e5a71a3b76deb0/generating-interactive-geometry-5.jpg)
+![A screenshot of a flat plane mesh floating in a volume in a living room scene. The plane appears light gray in color.](/images/com.apple.RealityKit/generating-interactive-geometry-5.jpg)
 
 #### Create a Compute Shader Dispatch System
 
@@ -314,7 +314,7 @@ struct MeshParams {
 };
 ```
 
-These parameters are suitable for updating the vertices of the plane low-level mesh on the GPU, but you can define parameters that conform to your custom mesh and vertex format. Declare this structure in an MSL header file so that you can send it to the GPU (see [`Passing Structured Data to a Metal Compute Function`](passing-structured-data-to-a-metal-compute-function#Import-the-struct-in-a-bridging-header.md)).
+These parameters are suitable for updating the vertices of the plane low-level mesh on the GPU, but you can define parameters that conform to your custom mesh and vertex format. Declare this structure in an MSL header file so that you can send it to the GPU (see [`Passing Structured Data to a Metal Compute Function`](passing-structured-data-to-a-metal-compute-function.md)).
 
 Next, the sample updates the position and normal of each vertex in the low-level mesh with a compute shader function that reads this information from the height map low-level texture:
 
@@ -431,7 +431,7 @@ The following video shows a `HeightMapMeshEntity` displaying the mesh its `Heigh
 
 The sample allows the mesh to respond to a person’s interactions by passing interaction data to the GPU, which uses it to modify the height map, which in turn updates the vertices of the mesh.
 
-To start, the sample captures the person’s interaction position and state with a [`DragGesture`](https://developer.apple.com/documentation/SwiftUI/DragGesture), passing that information to `HeightMapMesh`:
+To start, the sample captures the person’s interaction position and state with a [`DragGesture`](https://developer.apple.com/documentation/swiftui/draggesture), passing that information to `HeightMapMesh`:
 
 ```swift
 .gesture(
@@ -547,9 +547,9 @@ The app uses a similar technique to allow the person to edit the terrain height 
 
 ## See Also
 
-- [Hello World](../visionOS/World.md)
+- [Hello World](../visionos/world.md)
   Use windows, volumes, and immersive spaces to teach people about the Earth.
-- [Enabling video reflections in an immersive environment](../visionOS/enabling-video-reflections-in-an-immersive-environment.md)
+- [Enabling video reflections in an immersive environment](../visionos/enabling-video-reflections-in-an-immersive-environment.md)
   Create a more immersive experience by adding video reflections in a custom environment.
 - [Creating a spatial drawing app with RealityKit](creating-a-spatial-drawing-app-with-realitykit.md)
   Use low-level mesh and texture APIs to achieve fast updates to a person’s brush strokes by integrating RealityKit with ARKit and SwiftUI.

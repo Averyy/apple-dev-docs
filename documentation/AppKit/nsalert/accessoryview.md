@@ -39,7 +39,7 @@ alert.accessoryView = accessory;
 [alert release];
 ```
 
-![None](https://docs-assets.developer.apple.com/published/a66bc4535988ee27489e23008187dfb6/media-1965585%402x.png)
+![None](/images/com.apple.appkit/media-1965585@2x.png)
 
 ## See Also
 

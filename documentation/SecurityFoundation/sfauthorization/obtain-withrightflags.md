@@ -16,13 +16,13 @@ func obtain(withRight rightName: AuthorizationString!, flags: AuthorizationFlags
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/Swift/true) if operation completes successfully.
+[`true`](https://developer.apple.com/documentation/swift/true) if operation completes successfully.
 
 #### Discussion
 
 Use this method to authorize or preauthorize a single right.
 
-> **Note**: In Swift, this method returns `Void` and is marked with the `throws` keyword to indicate that it throws an error in cases of failure. You call this method in a `try` expression and handle any errors in the `catch` clauses of a `do` statement, as described in [`Error Handling`](https://developer.apple.comhttps://docs.swift.org/swift-book/LanguageGuide/ErrorHandling.html) in [`The Swift Programming Language`](https://developer.apple.comhttps://docs.swift.org/swift-book/) and [`About Imported Cocoa Error Parameters`](https://developer.apple.com/documentation/Swift/about-imported-cocoa-error-parameters).
+> **Note**: In Swift, this method returns `Void` and is marked with the `throws` keyword to indicate that it throws an error in cases of failure. You call this method in a `try` expression and handle any errors in the `catch` clauses of a `do` statement, as described in [`Error Handling`](https://developer.apple.comhttps://docs.swift.org/swift-book/LanguageGuide/ErrorHandling.html) in [`The Swift Programming Language`](https://developer.apple.comhttps://docs.swift.org/swift-book/) and [`About Imported Cocoa Error Parameters`](https://developer.apple.com/documentation/swift/about-imported-cocoa-error-parameters).
 
 ## Parameters
 

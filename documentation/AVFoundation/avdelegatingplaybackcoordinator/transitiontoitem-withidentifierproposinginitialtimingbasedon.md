@@ -22,7 +22,7 @@ func transitionToItem(withIdentifier itemIdentifier: String?, proposingInitialTi
 ## Parameters
 
 - `itemIdentifier`: The identifier for the new current item, which is `nil` if there isn’t anything to play.
-- `snapshotTimebase`: A time base that communicates the initial playback state of the new item. If you specify `nil`, the coordinator assumes that the player pauses at [`zero`](https://developer.apple.com/documentation/CoreMedia/CMTime/zero). You can retrieve an appropriate time base to pass for this value from AVFoundation playback objects like [`AVSampleBufferRenderSynchronizer`](avsamplebufferrendersynchronizer.md). You can also create one manually using the [`CMTimebaseCreateWithSourceClock(allocator:sourceClock:timebaseOut:)`](https://developer.apple.com/documentation/CoreMedia/CMTimebaseCreateWithSourceClock(allocator:sourceClock:timebaseOut:)) function.
+- `snapshotTimebase`: A time base that communicates the initial playback state of the new item. If you specify `nil`, the coordinator assumes that the player pauses at [`zero`](https://developer.apple.com/documentation/coremedia/cmtime/zero). You can retrieve an appropriate time base to pass for this value from AVFoundation playback objects like [`AVSampleBufferRenderSynchronizer`](avsamplebufferrendersynchronizer.md). You can also create one manually using the [`CMTimebaseCreateWithSourceClock(allocator:sourceClock:timebaseOut:)`](https://developer.apple.com/documentation/coremedia/cmtimebasecreatewithsourceclock(allocator:sourceclock:timebaseout:)) function.
 
 ## See Also
 

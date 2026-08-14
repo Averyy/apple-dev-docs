@@ -18,7 +18,7 @@ optional func webView(_ sender: WebView!, mouseDidMoveOverElement elementInforma
 
 - `sender`: The web view that sent the message.
 - `elementInformation`: A dictionary that describes the element under the mouse, or `nil`. See “Constants” in [`WebView`](webview-swift.class.md) for information about the key-value pairs in this dictionary.
-- `modifierFlags`: An integer bit field that indicates the modifier keys in effect during the event. See “Modifier Flags” in [`NSEvent`](https://developer.apple.com/documentation/AppKit/NSEvent) for information about possible modifiers. Note that this parameter was changed from an `unsigned int` to an `NSUInteger` in OS X v10.5.
+- `modifierFlags`: An integer bit field that indicates the modifier keys in effect during the event. See “Modifier Flags” in [`NSEvent`](https://developer.apple.com/documentation/appkit/nsevent) for information about possible modifiers. Note that this parameter was changed from an `unsigned int` to an `NSUInteger` in OS X v10.5.
 
 ## See Also
 

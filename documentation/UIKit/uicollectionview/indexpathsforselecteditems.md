@@ -20,7 +20,7 @@ var indexPathsForSelectedItems: [IndexPath]? { get }
 
 #### Discussion
 
-The value of this property is an array of [`NSIndexPath`](https://developer.apple.com/documentation/Foundation/NSIndexPath) objects, each of which corresponds to a single selected item. If there are no selected items, the value of this property is `nil`.
+The value of this property is an array of [`NSIndexPath`](https://developer.apple.com/documentation/foundation/nsindexpath) objects, each of which corresponds to a single selected item. If there are no selected items, the value of this property is `nil`.
 
 ## See Also
 

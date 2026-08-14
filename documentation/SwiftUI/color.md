@@ -37,7 +37,7 @@ let skyBlue = Color(red: 0.4627, green: 0.8392, blue: 1.0)
 let lemonYellow = Color(hue: 0.1639, saturation: 1, brightness: 1)
 let steelGray = Color(white: 0.4745)
 ```
-- Create a color instance from another color, like a [`UIColor`](https://developer.apple.com/documentation/UIKit/UIColor) or an [`NSColor`](https://developer.apple.com/documentation/AppKit/NSColor): ```swift
+- Create a color instance from another color, like a [`UIColor`](https://developer.apple.com/documentation/uikit/uicolor) or an [`NSColor`](https://developer.apple.com/documentation/appkit/nscolor): ```swift
 #if os(iOS)
 let linkColor = Color(uiColor: .link)
 #elseif os(macOS)
@@ -46,14 +46,14 @@ let linkColor = Color(nsColor: .linkColor)
 ```
 - Use one of a palette of predefined colors, like [`black`](shapestyle/black.md), [`green`](shapestyle/green.md), and [`purple`](shapestyle/purple.md).
 
-Some view modifiers can take a color as an argument. For example, [`foregroundStyle(_:)`](view/foregroundstyle(_:).md) uses the color you provide to set the foreground color for view elements, like text or [`SF Symbols`](https://developer.apple.com/design/Human-Interface-Guidelines/sf-symbols):
+Some view modifiers can take a color as an argument. For example, [`foregroundStyle(_:)`](view/foregroundstyle(_:).md) uses the color you provide to set the foreground color for view elements, like text or [`SF Symbols`](https://developer.apple.com/design/human-interface-guidelines/sf-symbols):
 
 ```swift
 Image(systemName: "leaf.fill")
     .foregroundStyle(Color.green)
 ```
 
-![A screenshot of a green leaf.](https://docs-assets.developer.apple.com/published/37c0a9c2c6246f3ca18bf7f74bed4d04/Color-1%402x.png)
+![A screenshot of a green leaf.](/images/com.apple.SwiftUI/Color-1@2x.png)
 
 Because SwiftUI treats colors as [`View`](view.md) instances, you can also directly add them to a view hierarchy. For example, you can layer a rectangle beneath a sun image using colors defined above:
 
@@ -68,7 +68,7 @@ ZStack {
 
 A color used as a view expands to fill all the space it’s given, as defined by the frame of the enclosing [`ZStack`](zstack.md) in the above example:
 
-![A screenshot of a yellow sun on a blue background.](https://docs-assets.developer.apple.com/published/36855a93cc9257f1b96547cfd6087c28/Color-2%402x.png)
+![A screenshot of a yellow sun on a blue background.](/images/com.apple.SwiftUI/Color-2@2x.png)
 
 SwiftUI only resolves a color to a concrete value just before using it in a given environment. This enables a context-dependent appearance for system defined colors, or those that you load from an Asset Catalog. For example, a color can have distinct light and dark variants that the system chooses from at render time.
 
@@ -171,15 +171,15 @@ SwiftUI only resolves a color to a concrete value just before using it in a give
 ## Relationships
 
 ### Conforms To
-- [Copyable](../Swift/Copyable.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Escapable](../Swift/Escapable.md)
-- [Hashable](../Swift/Hashable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Copyable](../swift/copyable.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Escapable](../swift/escapable.md)
+- [Hashable](../swift/hashable.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 - [ShapeStyle](shapestyle.md)
-- [Transferable](../CoreTransferable/Transferable.md)
+- [Transferable](../coretransferable/transferable.md)
 - [View](view.md)
 
 ## See Also

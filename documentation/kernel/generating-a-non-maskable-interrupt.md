@@ -42,9 +42,9 @@ sudo nvram -d boot-args
 
 - [Implementing drivers, system extensions, and kexts](implementing_drivers_system_extensions_and_kexts.md)
   Create drivers and system extensions to communicate with hardware and provide low-level services, and only use kernel extensions for a few tasks. 
-- [Installing a custom kernel extension](../apple-silicon/installing-a-custom-kernel-extension.md)
+- [Installing a Custom Kernel Extension](../apple-silicon/installing-a-custom-kernel-extension.md)
   Install kernel extensions using a custom installer package, and help users understand the installation process.
-- [Debugging a custom kernel extension](../apple-silicon/debugging-a-custom-kernel-extension.md)
+- [Debugging a Custom Kernel Extension](../apple-silicon/debugging-a-custom-kernel-extension.md)
   Configure your system to enable the debugging of custom kernel extensions from a second Mac.
 
 

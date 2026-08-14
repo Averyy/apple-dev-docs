@@ -22,7 +22,7 @@ func fetchActivity(for url: URL) async throws -> CLSActivity
 
 > ❗ **Important**:  You can call this method from synchronous code using a completion handler, as shown on this page, or you can call it as an asynchronous method that has the following declaration: ```swift
 func fetchActivity(for url: URL) async throws -> CLSActivity
-``` For information about concurrency and asynchronous code in Swift, see [`Calling Objective-C APIs Asynchronously`](https://developer.apple.com/documentation/Swift/calling-objective-c-apis-asynchronously).
+``` For information about concurrency and asynchronous code in Swift, see [`Calling Objective-C APIs Asynchronously`](https://developer.apple.com/documentation/swift/calling-objective-c-apis-asynchronously).
 
 Use this method to get a [`CLSActivity`](clsactivity.md) instance for a task that’s associated with a particular document, as specified by its file URL. If the activity doesn’t exist, ClassKit creates one for you. You can use the activity instance provided in the completion handler to start recording progress:
 
@@ -67,7 +67,7 @@ CLSDataStore.shared.fetchActivity(for: url) { currentActivity, error in
 
 As the example above shows, always call the [`stop()`](clsactivity/stop().md) method last, after setting progress or adding activity items.
 
-To determine the file permissions of a document attached to an assignment in the Schoolwork app, open the file with [`UIApplication.OpenURLOptionsKey`](https://developer.apple.com/documentation/UIKit/UIApplication/OpenURLOptionsKey) set to true. You then check the URL resource key [`ubiquitousSharedItemCurrentUserPermissionsKey`](https://developer.apple.com/documentation/Foundation/URLResourceKey/ubiquitousSharedItemCurrentUserPermissionsKey). The resource key value, [`URLUbiquitousSharedItemPermissions`](https://developer.apple.com/documentation/Foundation/URLUbiquitousSharedItemPermissions), indicates whether the file has read and write or read-only permissions.
+To determine the file permissions of a document attached to an assignment in the Schoolwork app, open the file with [`UIApplication.OpenURLOptionsKey`](https://developer.apple.com/documentation/uikit/uiapplication/openurloptionskey) set to true. You then check the URL resource key [`ubiquitousSharedItemCurrentUserPermissionsKey`](https://developer.apple.com/documentation/foundation/urlresourcekey/ubiquitousshareditemcurrentuserpermissionskey). The resource key value, [`URLUbiquitousSharedItemPermissions`](https://developer.apple.com/documentation/foundation/urlubiquitousshareditempermissions), indicates whether the file has read and write or read-only permissions.
 
 Use these permissions to determine whether your UI needs to be editable or view only.
 

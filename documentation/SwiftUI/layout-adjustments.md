@@ -8,9 +8,9 @@ Make fine adjustments to alignment, spacing, padding, and other layout parameter
 
 Layout containers like stacks and grids provide a great starting point for arranging views in your app’s user interface. When you need to make fine adjustments, use layout view modifiers. You can adjust or constrain the size, position, and alignment of a view. You can also add padding around a view, and indicate how the view interacts with system-defined safe areas.
 
-![None](https://docs-assets.developer.apple.com/published/44eb8b59b2583dbb9feab193d65420ee/layout-adjustments-hero%402x.png)
+![None](/images/com.apple.SwiftUI/layout-adjustments-hero@2x.png)
 
-To get started with a basic layout, see [`Layout fundamentals`](layout-fundamentals.md). For design guidance, see [`Layout`](https://developer.apple.com/design/Human-Interface-Guidelines/layout) in the Human Interface Guidelines.
+To get started with a basic layout, see [`Layout fundamentals`](layout-fundamentals.md). For design guidance, see [`Layout`](https://developer.apple.com/design/human-interface-guidelines/layout) in the Human Interface Guidelines.
 
 ## Topics
 

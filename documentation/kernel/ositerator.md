@@ -18,7 +18,7 @@ class OSIterator : OSObject
 
 OSIterator is the abstract superclass for all Libkern C++ object iterators. It defines the basic interface for iterating and resetting. See OSCollection and OSCollectionIterator for more information.
 
-With very few exceptions in the I/O Kit, all Libkern-based C++ classes, functions, and macros are  to use in a primary interrupt context. Consult the I/O Kit documentation related to primary interrupts for more information.
+With very few exceptions in the I/O Kit, all Libkern-based C++ classes, functions, and macros are **unsafe** to use in a primary interrupt context. Consult the I/O Kit documentation related to primary interrupts for more information.
 
 OSIterator provides no concurrency protection.
 

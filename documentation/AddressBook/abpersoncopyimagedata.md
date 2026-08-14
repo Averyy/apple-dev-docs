@@ -23,7 +23,7 @@ The data representing an image of `person`. You are responsible for releasing th
 
 #### Discussion
 
-The returned data is in a QuickTime-compatible format. To create an image from it, use the NSImage method [`init(data:)`](https://developer.apple.com/documentation/AppKit/NSImage/init(data:)).
+The returned data is in a QuickTime-compatible format. To create an image from it, use the NSImage method [`init(data:)`](https://developer.apple.com/documentation/appkit/nsimage/init(data:)).
 
 ## Parameters
 

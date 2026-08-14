@@ -16,7 +16,7 @@ init()
 
 #### Discussion
 
-Using this initializer is equivalent to calling [`init(displayID:)`](avcapturescreeninput/init(displayid:).md) with the result of the [`CGMainDisplayID()`](https://developer.apple.com/documentation/CoreGraphics/CGMainDisplayID()) function.
+Using this initializer is equivalent to calling [`init(displayID:)`](avcapturescreeninput/init(displayid:).md) with the result of the [`CGMainDisplayID()`](https://developer.apple.com/documentation/coregraphics/cgmaindisplayid()) function.
 
 ## See Also
 

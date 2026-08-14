@@ -16,7 +16,7 @@ interface GeocoderLookupOptions
 
 #### Overview
 
-Configure [`GeocoderLookupOptions`](geocoderlookupoptions.md) when performing a [`lookup(place, options)`](geocoder/lookup.md) to constrain geocoder results to a specific area or return results in a specific language.
+Configure [`GeocoderLookupOptions`](geocoderlookupoptions.md) when performing a [`lookup()`](geocoder/lookup.md) to constrain geocoder results to a specific area or return results in a specific language.
 
 ## Topics
 

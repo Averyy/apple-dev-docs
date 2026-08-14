@@ -6,13 +6,13 @@ Exchange discovery tokens over the local network.
 
 #### Overview
 
-To start an interaction session with a nearby device, an app checks for nearby peer devices. When the app finds a peer, it creates an [`NISession`](nisession.md) and sends the session’s [`discoveryToken`](nisession/discoverytoken.md) to the peer using the network technology on which they have agreed. An app can use [`Multipeer Connectivity`](https://developer.apple.com/documentation/MultipeerConnectivity) to find nearby peers and exchange discovery tokens over the local network.
+To start an interaction session with a nearby device, an app checks for nearby peer devices. When the app finds a peer, it creates an [`NISession`](nisession.md) and sends the session’s [`discoveryToken`](nisession/discoverytoken.md) to the peer using the network technology on which they have agreed. An app can use [`Multipeer Connectivity`](https://developer.apple.com/documentation/multipeerconnectivity) to find nearby peers and exchange discovery tokens over the local network.
 
 For an example app that find peer devices using Multipeer Connectivity, see [`Implementing interactions between users in close proximity`](implementing-interactions-between-users-in-close-proximity.md).
 
 ##### Add Bonjour Services Plist Keys
 
-To use the local network on iOS and iPadOS 14, your app requires the [`NSBonjourServices`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSBonjourServices) key present in its `Info.plist`. The value of the key adheres to the following convention, including `.tcp` and `.udp` extensions.
+To use the local network on iOS and iPadOS 14, your app requires the [`NSBonjourServices`](https://developer.apple.com/documentation/bundleresources/information-property-list/nsbonjourservices) key present in its `Info.plist`. The value of the key adheres to the following convention, including `.tcp` and `.udp` extensions.
 
 ```swift
 <key>NSBonjourServices</key>
@@ -26,11 +26,11 @@ In addition, the system prompts users to grant the app explicit permission to us
 
 ##### Check for a Nearby Peer
 
-To broadcast a device’s ability to communicate through Multipeer Connectivity, your app creates an [`MCNearbyServiceAdvertiser`](https://developer.apple.com/documentation/MultipeerConnectivity/MCNearbyServiceAdvertiser). The app creates an [`MCNearbyServiceBrowser`](https://developer.apple.com/documentation/MultipeerConnectivity/MCNearbyServiceBrowser) to find other devices advertising with the same technology. When the browser finds another device, it calls [`browser(_:foundPeer:withDiscoveryInfo:)`](https://developer.apple.com/documentation/MultipeerConnectivity/MCNearbyServiceBrowserDelegate/browser(_:foundPeer:withDiscoveryInfo:)) and invites the peer to exchange tokens by calling [`invitePeer(_:to:withContext:timeout:)`](https://developer.apple.com/documentation/MultipeerConnectivity/MCNearbyServiceBrowser/invitePeer(_:to:withContext:timeout:)).
+To broadcast a device’s ability to communicate through Multipeer Connectivity, your app creates an [`MCNearbyServiceAdvertiser`](https://developer.apple.com/documentation/multipeerconnectivity/mcnearbyserviceadvertiser). The app creates an [`MCNearbyServiceBrowser`](https://developer.apple.com/documentation/multipeerconnectivity/mcnearbyservicebrowser) to find other devices advertising with the same technology. When the browser finds another device, it calls [`browser(_:foundPeer:withDiscoveryInfo:)`](https://developer.apple.com/documentation/multipeerconnectivity/mcnearbyservicebrowserdelegate/browser(_:foundpeer:withdiscoveryinfo:)) and invites the peer to exchange tokens by calling [`invitePeer(_:to:withContext:timeout:)`](https://developer.apple.com/documentation/multipeerconnectivity/mcnearbyservicebrowser/invitepeer(_:to:withcontext:timeout:)).
 
-After the other device receives the invitation, [`MCNearbyServiceAdvertiser`](https://developer.apple.com/documentation/MultipeerConnectivity/MCNearbyServiceAdvertiser) calls [`advertiser(_:didReceiveInvitationFromPeer:withContext:invitationHandler:)`](https://developer.apple.com/documentation/MultipeerConnectivity/MCNearbyServiceAdvertiserDelegate/advertiser(_:didReceiveInvitationFromPeer:withContext:invitationHandler:)), in which the apps can begin sharing their discovery tokens.
+After the other device receives the invitation, [`MCNearbyServiceAdvertiser`](https://developer.apple.com/documentation/multipeerconnectivity/mcnearbyserviceadvertiser) calls [`advertiser(_:didReceiveInvitationFromPeer:withContext:invitationHandler:)`](https://developer.apple.com/documentation/multipeerconnectivity/mcnearbyserviceadvertiserdelegate/advertiser(_:didreceiveinvitationfrompeer:withcontext:invitationhandler:)), in which the apps can begin sharing their discovery tokens.
 
-> ❗ **Important**:  This process invites any nearby device to interact, but depending on the level of security an app requires, the app can more precisely control broadcasting, invitation, and acceptance behavior. For more information, see [`Multipeer Connectivity`](https://developer.apple.com/documentation/MultipeerConnectivity).
+> ❗ **Important**:  This process invites any nearby device to interact, but depending on the level of security an app requires, the app can more precisely control broadcasting, invitation, and acceptance behavior. For more information, see [`Multipeer Connectivity`](https://developer.apple.com/documentation/multipeerconnectivity).
 
 ##### Exchange Discovery Tokens
 

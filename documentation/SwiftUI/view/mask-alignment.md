@@ -36,7 +36,7 @@ Image(systemName: "envelope.badge.fill")
     }
 ```
 
-![A screenshot of a view masked by a rectangle with 10%](https://docs-assets.developer.apple.com/published/eb80d49199cb4ce05352313feb4e29e5/SwiftUI-View-mask%402x.png)
+![A screenshot of a view masked by a rectangle with 10%](/images/com.apple.SwiftUI/SwiftUI-View-mask@2x.png)
 
 ## Parameters
 

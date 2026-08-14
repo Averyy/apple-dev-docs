@@ -18,6 +18,13 @@ func AXUIElementCopyParameterizedAttributeValue(_ element: AXUIElement, _ parame
 
 If unsuccessful, `AXUIElementCopyParameterizedAttributeValue` may return one of the following error codes, among others:
 
+- **`kAXErrorAttributeUnsupported` or `kAXErrorParameterizedAttributeUnsupported`**: The specified AXUIElementRef does not support the specified parameterized attribute.
+- **`kAXErrorNoValue`**: The specified parameterized attribute does not have a value.
+- **`kAXErrorIllegalArgument`**: One or more of the arguments is an illegal value.
+- **`kAXErrorInvalidUIElement`**: The AXUIElementRef is invalid.
+- **`kAXErrorCannotComplete`**: The function cannot complete because messaging has failed in some way.
+- **`kAXErrorNotImplemented`**: The process does not fully support the accessibility API.
+
 ## Parameters
 
 - `element`: The AXUIElementRef representing the accessibility object.

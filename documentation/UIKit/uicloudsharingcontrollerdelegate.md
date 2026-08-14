@@ -23,7 +23,7 @@ protocol UICloudSharingControllerDelegate : NSObjectProtocol
 Implement an object that conforms to the [`UICloudSharingControllerDelegate`](uicloudsharingcontrollerdelegate.md) protocol when you want to:
 
 - Configure a [`UICloudSharingController`](uicloudsharingcontroller.md) instance.
-- Receive notifications from a [`UICloudSharingController`](uicloudsharingcontroller.md) instance as it attempts to save or remove the [`CKShare`](https://developer.apple.com/documentation/CloudKit/CKShare) record based on user interactions on the Invitation and People screens.
+- Receive notifications from a [`UICloudSharingController`](uicloudsharingcontroller.md) instance as it attempts to save or remove the [`CKShare`](https://developer.apple.com/documentation/cloudkit/ckshare) record based on user interactions on the Invitation and People screens.
 
 ## Topics
 
@@ -45,7 +45,7 @@ Implement an object that conforms to the [`UICloudSharingControllerDelegate`](ui
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

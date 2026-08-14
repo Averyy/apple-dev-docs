@@ -62,7 +62,7 @@ For more information about promoting in-app purchases, see [`Supporting promoted
 ## Relationships
 
 ### Conforms To
-- [Equatable](../Swift/Equatable.md)
+- [Equatable](../swift/equatable.md)
 
 ## See Also
 

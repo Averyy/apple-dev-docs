@@ -30,9 +30,9 @@ The [`NEAppProxyProvider`](neappproxyprovider.md) class provides access to flows
 
 ##### Dns Handling
 
-In addition to flows of raw network data from applications, the App Proxy Provider also receives flows of DNS queries in the form of [`NEAppProxyUDPFlow`](neappproxyudpflow.md) objects. DNS query flows are received only for applications that use low-level DNS resolution APIs such as [`DNSServiceGetAddrInfo(_:_:_:_:_:_:_:)`](https://developer.apple.com/documentation/dnssd/DNSServiceGetAddrInfo(_:_:_:_:_:_:_:))(). The App Proxy Provider can specify the DNS resolver configuration that will be used by these applications using the [`setTunnelNetworkSettings(_:completionHandler:)`](netunnelprovider/settunnelnetworksettings(_:completionhandler:).md) method.
+In addition to flows of raw network data from applications, the App Proxy Provider also receives flows of DNS queries in the form of [`NEAppProxyUDPFlow`](neappproxyudpflow.md) objects. DNS query flows are received only for applications that use low-level DNS resolution APIs such as [`DNSServiceGetAddrInfo(_:_:_:_:_:_:_:)`](https://developer.apple.com/documentation/dnssd/dnsservicegetaddrinfo(_:_:_:_:_:_:_:))(). The App Proxy Provider can specify the DNS resolver configuration that will be used by these applications using the [`setTunnelNetworkSettings(_:completionHandler:)`](netunnelprovider/settunnelnetworksettings(_:completionhandler:).md) method.
 
-Applications that use higher-level networking APIs such as [`URLSession`](https://developer.apple.com/documentation/Foundation/URLSession) and [`NSURLConnection`](https://developer.apple.com/documentation/Foundation/NSURLConnection) do not generate DNS queries. Instead the destination hostname for the connection is included in the endpoint information of the [`NEAppProxyFlow`](neappproxyflow.md) object.
+Applications that use higher-level networking APIs such as [`URLSession`](https://developer.apple.com/documentation/foundation/urlsession) and [`NSURLConnection`](https://developer.apple.com/documentation/foundation/nsurlconnection) do not generate DNS queries. Instead the destination hostname for the connection is included in the endpoint information of the [`NEAppProxyFlow`](neappproxyflow.md) object.
 
 ##### Creating an App Proxy Provider Extension
 
@@ -92,12 +92,12 @@ In order to create a App Proxy Provider extension, you must create a subclass of
 ### Inherited By
 - [NETransparentProxyProvider](netransparentproxyprovider.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

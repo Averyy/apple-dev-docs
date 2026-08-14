@@ -29,7 +29,7 @@ This method applies a Gaussian blur filter to an image. The effect targets the p
 
 The Gaussian blur filter uses the following properties:
 
-- **`radius`**: A `float` representing the area of effect as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+- **`radius`**: A `float` representing the area of effect as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
 - **`inputImage`**: A [`CIImage`](ciimage.md) representing the input image to apply the filter to.
 
 The following code creates a filter that adds a heavy blur to the input image:
@@ -44,7 +44,7 @@ The following code creates a filter that adds a heavy blur to the input image:
     }
 ```
 
-![Two photographs of a beach at sunset with multiple palm trees. A Gaussian blur filter has been applied to the photo on the right. It is smaller than the one on the left, and has an intense blur effect that makes the entire image very hazy.](https://docs-assets.developer.apple.com/published/fe256c3d1ce5f5a4201cd9ccc3c6165b/media-3544963%402x.png)
+![Two photographs of a beach at sunset with multiple palm trees. A Gaussian blur filter has been applied to the photo on the right. It is smaller than the one on the left, and has an intense blur effect that makes the entire image very hazy.](/images/com.apple.coreimage/media-3544963@2x.png)
 
 ## See Also
 

@@ -18,7 +18,7 @@ func callAsFunction(updateDescription: String) async throws
 
 #### Discussion
 
-Call this method when you need to inform people about significant changes to your app that require their acknowledgment and consent before proceeding. For a code example, refer to [`showSignificantUpdateAcknowledgment`](https://developer.apple.com/documentation/SwiftUI/EnvironmentValues/showSignificantUpdateAcknowledgment).
+Call this method when you need to inform people about significant changes to your app that require their acknowledgment and consent before proceeding. For a code example, refer to [`showSignificantUpdateAcknowledgment`](https://developer.apple.com/documentation/swiftui/environmentvalues/showsignificantupdateacknowledgment).
 
 > **Note**:  An error if the request fails.
 

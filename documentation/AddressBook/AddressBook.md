@@ -15,7 +15,7 @@ Access the centralized database for storing users’ contacts.
 
 The Address Book is a centralized database containing contacts and their personal information. Users enter personal information about themselves and their friends only once, instead of entering it repeatedly whenever the information is used. Apps that support the AddressBook framework share this contact information with other apps, including Apple’s Mail and Messages.
 
-> ❗ **Important**:  Do not use the AddressBook framework in macOS 10.11 and later. Use the APIs defined in the [`Contacts`](https://developer.apple.com/documentation/Contacts) framework instead.
+> ❗ **Important**:  Do not use the AddressBook framework in macOS 10.11 and later. Use the APIs defined in the [`Contacts`](https://developer.apple.com/documentation/contacts) framework instead.
 
 ## Topics
 

@@ -16,7 +16,7 @@ func readSelection(from pboard: NSPasteboard) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/Swift/true) if the data was successfully read, [`false`](https://developer.apple.com/documentation/Swift/false) otherwise.
+[`true`](https://developer.apple.com/documentation/swift/true) if the data was successfully read, [`false`](https://developer.apple.com/documentation/swift/false) otherwise.
 
 #### Discussion
 

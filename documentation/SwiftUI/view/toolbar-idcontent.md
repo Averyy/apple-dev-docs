@@ -82,7 +82,7 @@ struct ToolsEditorView: View {
 }
 ```
 
-![A window showing the macOS toolbar customization](https://docs-assets.developer.apple.com/published/a76937b9ea7c379deb618ef3b0171731/SwiftUI-View-Styling-ToolbarCustomization%402x.png)
+![A window showing the macOS toolbar customization](/images/com.apple.SwiftUI/SwiftUI-View-Styling-ToolbarCustomization@2x.png)
 
 > **Note**: Only [`secondaryAction`](toolbaritemplacement/secondaryaction.md) items support customization in iPadOS. Other items follow the normal placement rules and can’t be customized by the user.
 
@@ -105,7 +105,7 @@ struct ToolbarContent_macOSApp: App {
 
 When you add the toolbar commands, the system adds a menu item to your app’s main menu to provide toolbar customization support. This is in addition to the ability to Control-click on the toolbar to open the toolbar customization editor.
 
-![A screenshot of the toolbar editor support for the macOS view](https://docs-assets.developer.apple.com/published/f4f32b6b9ca013e73051ecf080d5f18a/SwiftUI-View-Styling-ToolbarCustomizationMenu%402x.png)
+![A screenshot of the toolbar editor support for the macOS view](/images/com.apple.SwiftUI/SwiftUI-View-Styling-ToolbarCustomizationMenu@2x.png)
 
 ## Parameters
 

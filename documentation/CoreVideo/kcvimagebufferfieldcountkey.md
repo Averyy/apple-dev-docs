@@ -22,7 +22,7 @@ let kCVImageBufferFieldCountKey: CFString
 
 #### Discussion
 
-The field count value is of type [`CFNumber`](https://developer.apple.com/documentation/CoreFoundation/CFNumber).
+The field count value is of type [`CFNumber`](https://developer.apple.com/documentation/corefoundation/cfnumber).
 
 ## See Also
 

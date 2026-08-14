@@ -22,9 +22,9 @@ If the App Store server doesn’t receive a success response from your server af
 
 ##### Recover From Server Outages
 
-If your server misses notifications due to an outage, you can always get up-to-date transaction information by calling [`App Store Server API`](https://developer.apple.com/documentation/AppStoreServerAPI) endpoints including [`Get Transaction History`](https://developer.apple.com/documentation/AppStoreServerAPI/Get-Transaction-History) and [`Get All Subscription Statuses`](https://developer.apple.com/documentation/AppStoreServerAPI/Get-All-Subscription-Statuses).
+If your server misses notifications due to an outage, you can always get up-to-date transaction information by calling [`App Store Server API`](https://developer.apple.com/documentation/appstoreserverapi) endpoints including [`Get Transaction History`](https://developer.apple.com/documentation/appstoreserverapi/get-transaction-history) and [`Get All Subscription Statuses`](https://developer.apple.com/documentation/appstoreserverapi/get-all-subscription-statuses).
 
-If you use version 2 notifications ([`App Store Server Notifications V2`](app-store-server-notifications-v2.md)), you can recover missed notifications by calling [`Get Notification History`](https://developer.apple.com/documentation/AppStoreServerAPI/Get-Notification-History). You can also test whether your server is receiving and responding to version 2 notifications correctly by calling the [`Request a Test Notification`](https://developer.apple.com/documentation/AppStoreServerAPI/Request-a-Test-Notification) endpoint.
+If you use version 2 notifications ([`App Store Server Notifications V2`](app-store-server-notifications-v2.md)), you can recover missed notifications by calling [`Get Notification History`](https://developer.apple.com/documentation/appstoreserverapi/get-notification-history). You can also test whether your server is receiving and responding to version 2 notifications correctly by calling the [`Request a Test Notification`](https://developer.apple.com/documentation/appstoreserverapi/request-a-test-notification) endpoint.
 
 ## See Also
 

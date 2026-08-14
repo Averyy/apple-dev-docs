@@ -20,9 +20,9 @@ static let bluetoothPeripherals: UIApplication.LaunchOptionsKey
 
 #### Discussion
 
-The presence of this key indicates that the app previously had one or more [`CBPeripheralManager`](https://developer.apple.com/documentation/CoreBluetooth/CBPeripheralManager) objects and was relaunched by the Bluetooth system to continue actions associated with those objects. The value of this key is an [`NSArray`](https://developer.apple.com/documentation/Foundation/NSArray) object containing one or more [`NSString`](https://developer.apple.com/documentation/Foundation/NSString) objects.
+The presence of this key indicates that the app previously had one or more [`CBPeripheralManager`](https://developer.apple.com/documentation/corebluetooth/cbperipheralmanager) objects and was relaunched by the Bluetooth system to continue actions associated with those objects. The value of this key is an [`NSArray`](https://developer.apple.com/documentation/foundation/nsarray) object containing one or more [`NSString`](https://developer.apple.com/documentation/foundation/nsstring) objects.
 
-Each string in the array represents the restoration identifier for a peripheral manager object. This is the same string you assigned to the [`CBPeripheralManagerOptionRestoreIdentifierKey`](https://developer.apple.com/documentation/CoreBluetooth/CBPeripheralManagerOptionRestoreIdentifierKey) key when you initialized the peripheral manager object previously. The system provides the restoration identifiers only for peripheral managers that had published or advertised services.
+Each string in the array represents the restoration identifier for a peripheral manager object. This is the same string you assigned to the [`CBPeripheralManagerOptionRestoreIdentifierKey`](https://developer.apple.com/documentation/corebluetooth/cbperipheralmanageroptionrestoreidentifierkey) key when you initialized the peripheral manager object previously. The system provides the restoration identifiers only for peripheral managers that had published or advertised services.
 
 ## See Also
 

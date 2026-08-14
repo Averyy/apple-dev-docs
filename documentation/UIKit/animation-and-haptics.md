@@ -11,9 +11,9 @@ Provide feedback to users using view-based animations and haptics.
   Create animations by changing the properties of a view.
 - [View controller transitions](view-controller-transitions.md)
   Define custom transitions from one view controller to another.
-- [Unifying your app’s animations](../SwiftUI/Unifying-your-app-s-animations.md)
+- [Unifying your app’s animations](../swiftui/unifying-your-app-s-animations.md)
   Create a consistent UI animation experience across SwiftUI, UIKit, and AppKit.
-- [Optimizing iPhone and iPad apps to support ProMotion displays](../QuartzCore/optimizing-iphone-and-ipad-apps-to-support-promotion-displays.md)
+- [Optimizing iPhone and iPad apps to support ProMotion displays](../quartzcore/optimizing-iphone-and-ipad-apps-to-support-promotion-displays.md)
   Improve your app’s visual appearance and save power by requesting preferred refresh rates and synchronizing your animations with the system.
 ### Physics-based animations
 - [UIKit Dynamics](uikit-dynamics.md)
@@ -22,7 +22,7 @@ Provide feedback to users using view-based animations and haptics.
 - [Motion effects](motion-effects.md)
   Add subtle motion to views to provide a 3D appearance.
 ### Haptic feedback
-- [Playing haptic feedback in your app](../ApplePencil/playing-haptic-feedback-in-your-app.md)
+- [Playing haptic feedback in your app](../applepencil/playing-haptic-feedback-in-your-app.md)
   Provide tactile feedback when people perform certain actions in your app.
 - [class UIFeedbackGenerator](uifeedbackgenerator.md)
   The abstract superclass for all feedback generators.

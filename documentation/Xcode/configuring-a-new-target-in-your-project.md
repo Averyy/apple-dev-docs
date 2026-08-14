@@ -10,7 +10,7 @@ A target specifies a product to build, such as an app, framework, app extension,
 
 When you create a new project from a template, Xcode adds one or more targets to the project automatically. To view the targets in a project, select the project in the Project navigator, and the list of targets appears in the sidebar of the project editor on the right. For example, the multiplatform app template with tests contains separate targets for the app and the tests.
 
-![A screenshot of the Xcode project window with the project selected in the Project navigator, the app target selected in the sidebar of the project editor, and the General pane on the right.](https://docs-assets.developer.apple.com/published/04ee97f6359e9ce1650d825476201465/build-targets%402x.png)
+![A screenshot of the Xcode project window with the project selected in the Project navigator, the app target selected in the sidebar of the project editor, and the General pane on the right.](/images/com.apple.Xcode/build-targets@2x.png)
 
 The editor area displays the current project and target information. To view general information about a target, click the General tab in the toolbar of the project editor. To view signing assets and capabilities you add to a target, click the Signing & Capabilities tab.
 
@@ -29,7 +29,7 @@ To add a new target:
 5. In the dialog, enter a name for the target and choose other settings, such as the programming language.
 6. Click Finish.
 
-![A screenshot of the Xcode template sheet showing the available templates for a multiplatform target.](https://docs-assets.developer.apple.com/published/31fb5f25baae727b93e278d1eff02707/build-target-templates%402x.png)
+![A screenshot of the Xcode template sheet showing the available templates for a multiplatform target.](/images/com.apple.Xcode/build-target-templates@2x.png)
 
 You can embed some types of targets directly into the bundle of an existing app. This option simplifies the setup process for frameworks, app extensions, and other products that you plan to ship inside your app. When you embed a target, Xcode configures the necessary project settings to build the target and copy it into your app. Xcode also creates the necessary dependencies to ensure that the targets build in the proper order.
 
@@ -39,11 +39,11 @@ Use file templates to help you get started quickly developing your app.
 
 To create new files and embed them directly into an existing target, choose File > New > File from Template. Then choose a platform, choose a template, and click Next in the dialog that appears. Alternatively, choose File > New > Empty File.
 
-![A screenshot of the Xcode new file template sheet showing the iOS platform and Swift File template selected.](https://docs-assets.developer.apple.com/published/301b60128860a4b4b0aaaa2f44880adf/build-target-new-file-templates%402x.png)
+![A screenshot of the Xcode new file template sheet showing the iOS platform and Swift File template selected.](/images/com.apple.Xcode/build-target-new-file-templates@2x.png)
 
 To assign an existing file to a new target, select the file in the Project navigator and change the target membership attributes in the File inspector. Under Target Membership, click the Add button (+). In the Choose Targets dialog, select the targets you want to add the file to and click Save.
 
-![A screenshot of the Choose Targets dialog showing the targets list.](https://docs-assets.developer.apple.com/published/815bcd621c2f491a6af1896c741a036d/build-target-membership-settings%402x.png)
+![A screenshot of the Choose Targets dialog showing the targets list.](/images/com.apple.Xcode/build-target-membership-settings@2x.png)
 
 For more information about how to add files to a project, see [`Managing files and folders in your Xcode project`](managing-files-and-folders-in-your-xcode-project.md).
 
@@ -55,7 +55,7 @@ For example, Xcode must build a custom framework before it builds an app that li
 
 To view and add dependencies, select a target in the sidebar and click the Build Phases tab in the toolbar of the project editor. The targets that Xcode must successfully build before it builds the current target appear under Target Dependencies. Xcode can build multiple dependent targets simultaneously if there are no interdependencies between those targets.
 
-![A screenshot of the Xcode project editor with a target selected in the sidebar and the Build Phases tab selected with the Target Dependencies settings revealed.](https://docs-assets.developer.apple.com/published/e4d59340523f1a0f4f31b1a30d31ee1f/build-phase-settings-dependencies%402x.png)
+![A screenshot of the Xcode project editor with a target selected in the sidebar and the Build Phases tab selected with the Target Dependencies settings revealed.](/images/com.apple.Xcode/build-phase-settings-dependencies@2x.png)
 
 When there’s a relationship between targets that Xcode can’t easily detect, add dependencies manually. While Xcode can add dependencies automatically when you select the Find Implicit Dependencies build scheme option, it can’t detect all dependencies. For example, Xcode can’t detect when a target relies on data files built by a custom script in another target. If you don’t specify a required dependency, Xcode might report errors or build the targets incorrectly.
 

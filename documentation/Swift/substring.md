@@ -143,7 +143,7 @@ You can call this generic function with an instance of either `String` or `Subst
 ## Relationships
 
 ### Conforms To
-- [Attachable](../Testing/Attachable.md)
+- [Attachable](../testing/attachable.md)
 - [BidirectionalCollection](bidirectionalcollection.md)
 - [Collection](collection.md)
 - [Comparable](comparable.md)
@@ -151,7 +151,7 @@ You can call this generic function with an instance of either `String` or `Subst
 - [CustomDebugStringConvertible](customdebugstringconvertible.md)
 - [CustomReflectable](customreflectable.md)
 - [CustomStringConvertible](customstringconvertible.md)
-- [CustomTestStringConvertible](../Testing/CustomTestStringConvertible.md)
+- [CustomTestStringConvertible](../testing/customteststringconvertible.md)
 - [Equatable](equatable.md)
 - [Escapable](escapable.md)
 - [ExpressibleByExtendedGraphemeClusterLiteral](expressiblebyextendedgraphemeclusterliteral.md)

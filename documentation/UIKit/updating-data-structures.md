@@ -29,7 +29,7 @@ struct bar {
 
 When this code is compiled with a 32-bit compiler, the field `bar` begins 12 bytes from the start of the structure. When the same code is compiled with a 64-bit compiler, the field `bar` begins 16 bytes from the start of the structure. Four bytes of padding are added after `foo2` so that `bar` is aligned to an 8-byte boundary.
 
-![Alignment between 32-bit and 64-bit representations of the same structure.](https://docs-assets.developer.apple.com/published/9a3a801f885b898f629d35054e0f73fe/media-3109112%402x.png)
+![Alignment between 32-bit and 64-bit representations of the same structure.](/images/com.apple.uikit/media-3109112@2x.png)
 
 If you’re defining a new data structure, organize the elements with the largest alignment values first and the smallest values last. This organization eliminates the need for most padding bytes. If you’re working with an existing structure that includes misaligned 64-bit integers, you can use a pragma to force the proper alignment. The following code shows the same data structure, but here it’s forced to use the 32-bit alignment rules.
 
@@ -109,7 +109,7 @@ In the LLVM compiler, enumerated types can define the size of the enumeration, s
 
 The `NSInteger` type is used throughout the system for declaring numeric types. It’s a 32-bit integer in the 32-bit runtime and a 64-bit integer in the 64-bit runtime. Never make the assumption that an `NSInteger` type is the same size as an `int` type. Here are a few cases in your code to look for:
 
-- Converting to or from an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) object.
+- Converting to or from an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) object.
 - Encoding and decoding data using the [`NSCoder`](https://developer.apple.comhttps://developer.apple.com/library/archive/releasenotes/MacOSX/WhatsNewInOSX/Articles/MacOSX10_11.html#//apple_ref/doc/uid/TP40016227-SW42) class. In particular, if you encode an `NSInteger` on a 64-bit device and later decode it on a 32-bit device, the decode method throws an exception if the value exceeds the range of a 32-bit integer. You may want to use an explicit integer type instead.
 - Working with constants defined in the framework as `NSInteger`. Of particular note is the `NSNotFound` constant. In the 64-bit runtime, its value is larger than the maximum range of an `int` type, so truncating its value often causes errors in your app.
 

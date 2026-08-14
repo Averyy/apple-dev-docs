@@ -22,7 +22,7 @@ When the value changes, [`didChangeScreenParametersNotification`](nsapplication/
 
 ## See Also
 
-- [var wantsExtendedDynamicRangeContent: Bool](../QuartzCore/CAMetalLayer/wantsExtendedDynamicRangeContent.md)
+- [var wantsExtendedDynamicRangeContent: Bool](../quartzcore/cametallayer/wantsextendeddynamicrangecontent.md)
   Enables extended dynamic range values onscreen.
 - [var maximumPotentialExtendedDynamicRangeColorComponentValue: CGFloat](nsscreen/maximumpotentialextendeddynamicrangecolorcomponentvalue.md)
   The maximum possible color component value for the screen when it’s in extended dynamic range (EDR) mode.

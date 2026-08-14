@@ -26,7 +26,7 @@ struct DynamicIslandExpandedRegionVerticalPlacement
 ## Relationships
 
 ### Conforms To
-- [Equatable](../Swift/Equatable.md)
+- [Equatable](../swift/equatable.md)
 
 ## See Also
 
@@ -35,7 +35,7 @@ struct DynamicIslandExpandedRegionVerticalPlacement
 - [struct DynamicIslandExpandedRegionPosition](dynamicislandexpandedregionposition.md)
   View positions of an expanded Live Activity that appears in the Dynamic Island.
 - [func dynamicIsland(verticalPlacement: DynamicIslandExpandedRegionVerticalPlacement) -> some View
-](../SwiftUI/View/dynamicIsland(verticalPlacement:).md)
+](../swiftui/view/dynamicisland(verticalplacement:).md)
   Specifies the vertical placement for a view of an expanded Live Activity that appears in the Dynamic Island.
 - [struct DynamicIslandExpandedContent](dynamicislandexpandedcontent.md)
   A view that describes the expanded presentation of a Live Activity that appears in the Dynamic Island.

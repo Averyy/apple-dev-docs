@@ -25,7 +25,7 @@ An object to use as a placeholder for the actual data.
 
 #### Discussion
 
-This method returns an object that can be used as a placeholder for the real data. Placeholder objects don’t have to contain any real data but should be configured as closely as possible to the actual data object you intend to provide. In general the actual value should match in type but it’s possible to return a different type of data for [`activityViewController(_:itemForActivityType:)`](uiactivityitemsource/activityviewcontroller(_:itemforactivitytype:).md). It should be one that the activity can handle otherwise you may get an activity with empty content. For example, the placeholder could be a [`UIImage`](uiimage.md) object but the actual value could be an [`NSData`](https://developer.apple.com/documentation/Foundation/NSData) object with PDF information.
+This method returns an object that can be used as a placeholder for the real data. Placeholder objects don’t have to contain any real data but should be configured as closely as possible to the actual data object you intend to provide. In general the actual value should match in type but it’s possible to return a different type of data for [`activityViewController(_:itemForActivityType:)`](uiactivityitemsource/activityviewcontroller(_:itemforactivitytype:).md). It should be one that the activity can handle otherwise you may get an activity with empty content. For example, the placeholder could be a [`UIImage`](uiimage.md) object but the actual value could be an [`NSData`](https://developer.apple.com/documentation/foundation/nsdata) object with PDF information.
 
 ## Parameters
 

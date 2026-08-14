@@ -21,7 +21,7 @@ static let GCMouseDidStopBeingCurrent: NSNotification.Name
 
 #### Discussion
 
-The notification object is a [`GCMouse`](https://developer.apple.com/documentation/GameController/GCMouse) object that represents the previous current mouse. For example, if you set any of the mouse input change handlers, unset them when you receive this notification.
+The notification object is a [`GCMouse`](https://developer.apple.com/documentation/gamecontroller/gcmouse) object that represents the previous current mouse. For example, if you set any of the mouse input change handlers, unset them when you receive this notification.
 
 The system posts this notification on the main actor.
 

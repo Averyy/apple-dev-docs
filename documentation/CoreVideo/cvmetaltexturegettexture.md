@@ -21,7 +21,7 @@ func CVMetalTextureGetTexture(_ image: CVMetalTexture) -> (any MTLTexture)?
 
 #### Return Value
 
-The [`MTLTexture`](https://developer.apple.com/documentation/Metal/MTLTexture) object corresponding to the image buffer.
+The [`MTLTexture`](https://developer.apple.com/documentation/metal/mtltexture) object corresponding to the image buffer.
 
 ## Parameters
 

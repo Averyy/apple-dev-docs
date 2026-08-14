@@ -16,12 +16,12 @@ optional func webView(_ sender: WebView!, setResizable resizable: Bool)
 
 #### Discussion
 
-By default, this method sets the window containing a web view to be resizable. If you display multiple web views in a window then your user interface delegate should implement this method to handle this special case. If you do not implement this method, the `NSWindow` method [`showsResizeIndicator`](https://developer.apple.com/documentation/AppKit/NSWindow/showsResizeIndicator) is sent to the window that contains  `sender`.
+By default, this method sets the window containing a web view to be resizable. If you display multiple web views in a window then your user interface delegate should implement this method to handle this special case. If you do not implement this method, the `NSWindow` method [`showsResizeIndicator`](https://developer.apple.com/documentation/appkit/nswindow/showsresizeindicator) is sent to the window that contains  `sender`.
 
 ## Parameters
 
 - `sender`: The web view that sent the message.
-- `resizable`: If [`true`](https://developer.apple.com/documentation/Swift/true), the web view’s window can be resized; if [`false`](https://developer.apple.com/documentation/Swift/false), the window is not resizable.
+- `resizable`: If [`true`](https://developer.apple.com/documentation/swift/true), the web view’s window can be resized; if [`false`](https://developer.apple.com/documentation/swift/false), the window is not resizable.
 
 ## See Also
 

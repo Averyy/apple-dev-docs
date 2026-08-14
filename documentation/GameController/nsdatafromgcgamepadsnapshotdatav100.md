@@ -21,7 +21,7 @@ func NSDataFromGCGamepadSnapShotDataV100(_ snapshotData: UnsafeMutablePointer<GC
 
 #### Return Value
 
-A new [`NSData`](https://developer.apple.com/documentation/Foundation/NSData) object that contains the snapshot data, or `nil` if an error occurred.
+A new [`NSData`](https://developer.apple.com/documentation/foundation/nsdata) object that contains the snapshot data, or `nil` if an error occurred.
 
 #### Discussion
 

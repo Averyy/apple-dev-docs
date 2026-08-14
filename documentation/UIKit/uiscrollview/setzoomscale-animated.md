@@ -25,7 +25,7 @@ The new scale value should be between the [`minimumZoomScale`](uiscrollview/mini
 ## Parameters
 
 - `scale`: The new value to scale the content to.
-- `animated`: [`true`](https://developer.apple.com/documentation/Swift/true) to animate the transition to the new scale, [`false`](https://developer.apple.com/documentation/Swift/false) to make the transition immediate.
+- `animated`: [`true`](https://developer.apple.com/documentation/swift/true) to animate the transition to the new scale, [`false`](https://developer.apple.com/documentation/swift/false) to make the transition immediate.
 
 ## See Also
 

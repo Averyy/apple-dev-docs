@@ -20,7 +20,7 @@ The current spell checking language, as a string.
 
 #### Discussion
 
-The result string specifies the language using the language and regional designations described in [`NSLocale`](https://developer.apple.com/documentation/Foundation/NSLocale).
+The result string specifies the language using the language and regional designations described in [`NSLocale`](https://developer.apple.com/documentation/foundation/nslocale).
 
 ## See Also
 

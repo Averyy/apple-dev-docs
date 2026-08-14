@@ -10,7 +10,7 @@ Enhance your visionOS app by adding an immersive space using RealityKit.
 
 #### Overview
 
-This sample code project demonstrates how to create an [`ImmersiveSpace`](https://developer.apple.com/documentation/SwiftUI/ImmersiveSpace) in visionOS, showcasing a collection of rocks orbiting around a person, like the scene in the following video:
+This sample code project demonstrates how to create an [`ImmersiveSpace`](https://developer.apple.com/documentation/swiftui/immersivespace) in visionOS, showcasing a collection of rocks orbiting around a person, like the scene in the following video:
 
 The `TurnTableSystem` runs the core functionality to manage the rotational dynamics of entities through the `TurnTableComponent`, which defines the speed and rotation axis. The `Entity` class extends with a method to populate the immersive space with 3D rock entities and then apply a random transformation to create a halo effect. The `ImmersiveView` integrates these features and showcases the potential of SwiftUI and RealityKit to build an exciting augmented reality experience.
 
@@ -77,7 +77,7 @@ struct TurnTableSystem: System {
 
 ##### Extend the Entity Class
 
-The sample extends the [`Entity`](https://developer.apple.com/documentation/RealityKit/Entity) class to load a file as a model component and apply the model for the halo effect.
+The sample extends the [`Entity`](https://developer.apple.com/documentation/realitykit/entity) class to load a file as a model component and apply the model for the halo effect.
 
 ```swift
 import RealityKit
@@ -218,7 +218,7 @@ struct Immersion: App {
 }
 ```
 
-The sample’s main view uses the [`openImmersiveSpace`](https://developer.apple.com/documentation/SwiftUI/EnvironmentValues/openImmersiveSpace) instance property to call the immersive space that the `Immersion` app structure defines.
+The sample’s main view uses the [`openImmersiveSpace`](https://developer.apple.com/documentation/swiftui/environmentvalues/openimmersivespace) instance property to call the immersive space that the `Immersion` app structure defines.
 
 ```swift
 import SwiftUI

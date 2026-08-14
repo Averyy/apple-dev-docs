@@ -20,7 +20,7 @@ Initializes the connection handler with a closure that accepts an XPC session.
 
 #### Discussion
 
-Use this initializer if your app extension communicates with the host app using types from the [`XPC`](https://developer.apple.com/documentation/XPC) framework.
+Use this initializer if your app extension communicates with the host app using types from the [`XPC`](https://developer.apple.com/documentation/xpc) framework.
 
 ## See Also
 

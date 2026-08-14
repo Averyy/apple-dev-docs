@@ -22,7 +22,7 @@ To create a JWT to communicate with the the Enterprise Program API, use the foll
 
 | Header Field | Value |
 | --- | --- |
-| `alg` - Encryption Algorithm | `ES256` ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) All JWTs for the Enterprise Program API must be signed with ES256 encryption. |
+| `alg` - Encryption Algorithm | `ES256` ![None](/images/com.apple.devpubs.enterprise-api/spacer.png) All JWTs for the Enterprise Program API must be signed with ES256 encryption. |
 | `kid` - Key Identifier | Your private key ID from the Enterprise Program API, for example, `2X9R4HXF34` |
 | `typ` - Token Type | `JWT` |
 

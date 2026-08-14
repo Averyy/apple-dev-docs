@@ -23,7 +23,7 @@ func present(_ scene: SCNScene, with transition: SKTransition, incomingPointOfVi
 
 #### Discussion
 
-Use this method to change the scene displayed in a SceneKit view (or other renderer) with an animated transition. For details on transition styles, see [`SKTransition`](https://developer.apple.com/documentation/SpriteKit/SKTransition).
+Use this method to change the scene displayed in a SceneKit view (or other renderer) with an animated transition. For details on transition styles, see [`SKTransition`](https://developer.apple.com/documentation/spritekit/sktransition).
 
 ## Parameters
 

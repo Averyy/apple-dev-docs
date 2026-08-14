@@ -22,7 +22,7 @@ static let undefinedKeyException: NSExceptionName
 
 #### Discussion
 
-`userInfo` keys are described in [`NSUndefinedKeyException userInfo Keys`](https://developer.apple.com/documentation/ObjectiveC/nsundefinedkeyexception-userinfo-keys).
+`userInfo` keys are described in [`NSUndefinedKeyException userInfo Keys`](https://developer.apple.com/documentation/objectivec/nsundefinedkeyexception-userinfo-keys).
 
 ## See Also
 

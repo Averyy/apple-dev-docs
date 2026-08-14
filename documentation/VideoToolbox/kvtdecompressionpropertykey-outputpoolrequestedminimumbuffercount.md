@@ -21,11 +21,11 @@ let kVTDecompressionPropertyKey_OutputPoolRequestedMinimumBufferCount: CFString
 
 #### Discussion
 
-This property effectively requests that the [`kCVPixelBufferPoolMinimumBufferCountKey`](https://developer.apple.com/documentation/CoreVideo/kCVPixelBufferPoolMinimumBufferCountKey) key be used for the creation of the output [`CVPixelBufferPool`](https://developer.apple.com/documentation/CoreVideo/CVPixelBufferPool-77o).
+This property effectively requests that the [`kCVPixelBufferPoolMinimumBufferCountKey`](https://developer.apple.com/documentation/corevideo/kcvpixelbufferpoolminimumbuffercountkey) key be used for the creation of the output [`CVPixelBufferPool`](https://developer.apple.com/documentation/corevideo/cvpixelbufferpool-77o).
 
-For general playback cases, standard [`CVPixelBufferPool`](https://developer.apple.com/documentation/CoreVideo/CVPixelBufferPool-77o) age-out behavior is sufficient, and this property isn’t necessary.  Use this property only in unusual playback scenarios where a peak pool level is known, and the potential memory overhead is an acceptable tradeoff to avoid possible buffer reallocation. Setting this property to `NULL` or passing in the value `0` clears this setting and removes the minimum buffer count.
+For general playback cases, standard [`CVPixelBufferPool`](https://developer.apple.com/documentation/corevideo/cvpixelbufferpool-77o) age-out behavior is sufficient, and this property isn’t necessary.  Use this property only in unusual playback scenarios where a peak pool level is known, and the potential memory overhead is an acceptable tradeoff to avoid possible buffer reallocation. Setting this property to `NULL` or passing in the value `0` clears this setting and removes the minimum buffer count.
 
-Setting this property while a decompression session is in use results in the creation of a new [`CVPixelBufferPool`](https://developer.apple.com/documentation/CoreVideo/CVPixelBufferPool-77o). Setting this property causes new buffers to be allocated, and existing buffers to be deallocated when they are released.
+Setting this property while a decompression session is in use results in the creation of a new [`CVPixelBufferPool`](https://developer.apple.com/documentation/corevideo/cvpixelbufferpool-77o). Setting this property causes new buffers to be allocated, and existing buffers to be deallocated when they are released.
 
 ## See Also
 

@@ -38,8 +38,8 @@ protocol KEMOneTimePrivateKey : Sendable, ~Copyable
 ## Relationships
 
 ### Inherits From
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 ### Conforming Types
 - [MLKEM1024.OneTimePrivateKey](mlkem1024/onetimeprivatekey.md)
 - [MLKEM768.OneTimePrivateKey](mlkem768/onetimeprivatekey.md)

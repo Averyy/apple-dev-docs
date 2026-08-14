@@ -23,7 +23,7 @@ static var portrait: PreviewTrait<Preview.ViewTraits> { get }
 
 #### Discussion
 
-This is the same as [`portrait`](https://developer.apple.com/documentation/SwiftUI/InterfaceOrientation/portrait) and is the default orientation if you don’t specify one.
+This is the same as [`portrait`](https://developer.apple.com/documentation/swiftui/interfaceorientation/portrait) and is the default orientation if you don’t specify one.
 
 ## See Also
 

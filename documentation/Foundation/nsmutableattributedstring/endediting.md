@@ -24,11 +24,11 @@ func endEditing()
 
 Override this method in a subclass to consolidate changes made since a previous call to [`beginEditing()`](nsmutableattributedstring/beginediting().md). When you call this method, the string notifies observers of the changes.
 
-The default implementation of this method does nothing. Subclasses such as [`NSTextStorage`](https://developer.apple.com/documentation/AppKit/NSTextStorage) override this method and use it to tell the layout manager to update the text layout.
+The default implementation of this method does nothing. Subclasses such as [`NSTextStorage`](https://developer.apple.com/documentation/appkit/nstextstorage) override this method and use it to tell the layout manager to update the text layout.
 
 ## See Also
 
-- [func processEditing()](../AppKit/NSTextStorage/processEditing.md)
+- [func processEditing()](../appkit/nstextstorage/processediting.md)
   Cleans up changes to the text storage object and notifies its delegate and layout managers of changes.
 - [func beginEditing()](nsmutableattributedstring/beginediting.md)
   Begins the buffering of changes to the string’s characters and attributes.

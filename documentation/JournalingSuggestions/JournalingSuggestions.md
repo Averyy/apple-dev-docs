@@ -15,9 +15,9 @@ Journaling Suggestions provides a visual picker interface for iPhone apps. The p
 
 If your app facilitates personal writing, display the picker to provide people with ideas for their creative content. When someone chooses a suggestion from the picker, the system makes high-level details about the event available to your app. For example, a journaling app uses the details to display the beginning of a new journal entry about the selected suggestion.
 
-![A figure that features two iPhone device frames in an app workflow progressing from left to right. The frame at left depicts several photos, including one of a flower, in a thumbnail view under text that reads Highlights from Photo Memories. A callout below reads Suggestions picker. The frame at right depicts a detailed version of the flower thumbnail below user-defined text that reads Coastal Hike.  Bars below the image represent a person’s writing above a callout that reads Journal entry.](https://docs-assets.developer.apple.com/published/530b2d27b0c6228b6f43b3f09e63e861/JournalingSuggestions%402x.png)
+![A figure that features two iPhone device frames in an app workflow progressing from left to right. The frame at left depicts several photos, including one of a flower, in a thumbnail view under text that reads Highlights from Photo Memories. A callout below reads Suggestions picker. The frame at right depicts a detailed version of the flower thumbnail below user-defined text that reads Coastal Hike.  Bars below the image represent a person’s writing above a callout that reads Journal entry.](/images/com.apple.JournalingSuggestions/JournalingSuggestions@2x.png)
 
-To incorporate a suggestions picker ([`JournalingSuggestionsPicker`](journalingsuggestionspicker.md)) in your app, declare it using [`SwiftUI`](https://developer.apple.com/documentation/SwiftUI), and choose the text for a button that presents the picker.
+To incorporate a suggestions picker ([`JournalingSuggestionsPicker`](journalingsuggestionspicker.md)) in your app, declare it using [`SwiftUI`](https://developer.apple.com/documentation/swiftui), and choose the text for a button that presents the picker.
 
 For the picker to appear, your app needs a special entitlement in your app’s code signature. You don’t need to ask for additional authorization because your app can’t access the details for a suggestion until after a person chooses to share them by making a selection in the picker.
 
@@ -26,11 +26,11 @@ For the picker to appear, your app needs a special entitlement in your app’s c
 ## Topics
 
 ### Essentials
-- [Journaling Suggestions updates](../Updates/JournalingSuggestions.md)
+- [Journaling Suggestions updates](../updates/journalingsuggestions.md)
   Learn about important changes in Journaling Suggestions.
 - [Presenting the suggestions picker and processing a selection](presenting-the-suggestions-picker-and-processing-a-selection.md)
   Display the journaling suggestions picker and process a suggestion that someone chooses.
-- [com.apple.developer.journal.allow](../BundleResources/Entitlements/com.apple.developer.journal.allow.md)
+- [com.apple.developer.journal.allow](../bundleresources/entitlements/com.apple.developer.journal.allow.md)
   An entitlement that enables an app to present the journaling suggestions picker.
 ### Implementation
 - [struct JournalingSuggestionsPicker](journalingsuggestionspicker.md)

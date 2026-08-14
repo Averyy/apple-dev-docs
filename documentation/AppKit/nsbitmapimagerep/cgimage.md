@@ -16,7 +16,7 @@ var cgImage: CGImage? { get }
 
 #### Discussion
 
-The autoreleased [`CGImage`](https://developer.apple.com/documentation/CoreGraphics/CGImage) opaque type in this property has pixel dimensions that are identical to those of the bitmap image rep object. If an existing [`CGImage`](https://developer.apple.com/documentation/CoreGraphics/CGImage) opaque type is not available, accessing this property creates a new one. If you change the bitmap image rep’s contents later, accessing this property again might return a different [`CGImage`](https://developer.apple.com/documentation/CoreGraphics/CGImage) opaque type.
+The autoreleased [`CGImage`](https://developer.apple.com/documentation/coregraphics/cgimage) opaque type in this property has pixel dimensions that are identical to those of the bitmap image rep object. If an existing [`CGImage`](https://developer.apple.com/documentation/coregraphics/cgimage) opaque type is not available, accessing this property creates a new one. If you change the bitmap image rep’s contents later, accessing this property again might return a different [`CGImage`](https://developer.apple.com/documentation/coregraphics/cgimage) opaque type.
 
 ## See Also
 

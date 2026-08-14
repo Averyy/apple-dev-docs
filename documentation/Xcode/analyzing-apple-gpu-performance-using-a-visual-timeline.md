@@ -10,7 +10,7 @@ Locate performance issues using the Performance timeline.
 
 Apple GPUs run vertex, fragment, and compute tasks in parallel whenever possible. To explore the parallel nature of Apple GPUs, the Performance timeline helps you visualize the various passes and stages running simultaneously.
 
-![A screenshot of the Performance timeline, showing the Vertex, Fragment, Compute, and Counters tracks. A render pass is selected and the sidebar displays its detailed information.](https://docs-assets.developer.apple.com/published/0c68d41eacfe7d23f49a088caad5268f/gputools-metal-debugger-gt-overview%402x.png)
+![A screenshot of the Performance timeline, showing the Vertex, Fragment, Compute, and Counters tracks. A render pass is selected and the sidebar displays its detailed information.](/images/com.apple.Xcode/gputools-metal-debugger-gt-overview@2x.png)
 
 For information on using the Performance timeline to optimize your Metal workload and profiling your workload in different GPU execution modes, see [`Optimizing GPU performance`](optimizing-gpu-performance.md).
 
@@ -38,13 +38,13 @@ Similarly, clicking any element in the Performance timeline selects it and displ
 - **Load and store action**: Selecting a load or store action shows metadata from the relevant render pass.
 - **Shader**: Selecting a shader shows its statistics, such as compiler statistics and runtime shader instruction costs. In addition, the compiler statistics section includes the Max Theoretical Occupancy of the shader. For more information on occupancy, see [`Finding your Metal app’s GPU occupancy`](finding-your-metal-apps-gpu-occupancy.md).
 
-![A screenshot of the Performance timeline that highlights the Max Theoretical Occupancy line in the runtime shader instruction costs section in the sidebar, which shows 100 percent.](https://docs-assets.developer.apple.com/published/45f59ed20fac1c788bd5419d04afdfff/gputools-metal-debugger-gt-max-theoretical-occupancy%402x.png)
+![A screenshot of the Performance timeline that highlights the Max Theoretical Occupancy line in the runtime shader instruction costs section in the sidebar, which shows 100 percent.](/images/com.apple.Xcode/gputools-metal-debugger-gt-max-theoretical-occupancy@2x.png)
 
 ##### Limit Your Scope with Filters
 
 Adjust the track-filtering criteria with the filter field at the bottom of the GPU timeline or Counters timeline. You can type filter terms into the field, and the GPU timeline or Counters timeline shows tracks with names that match those terms. For example, you can simplify the Counters timeline to only show limiter counters by adding “limiter” to the filter field.
 
-![A screenshot of the Performance timeline that highlights the Counters tracks. The filter includes the word limiter, and the Counters timeline shows only the limiter counters.](https://docs-assets.developer.apple.com/published/0410cc52aa2fda5eb69249e92e4de8b1/gputools-metal-debugger-gt-filter%402x.png)
+![A screenshot of the Performance timeline that highlights the Counters tracks. The filter includes the word limiter, and the Counters timeline shows only the limiter counters.](/images/com.apple.Xcode/gputools-metal-debugger-gt-filter@2x.png)
 
 For any filter term, you can click it and choose to include or exclude tracks that match that term.
 

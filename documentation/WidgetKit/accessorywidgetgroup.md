@@ -67,7 +67,7 @@ You can change the shape with which the content views are masked using the `.acc
 ## Relationships
 
 ### Conforms To
-- [View](../SwiftUI/View.md)
+- [View](../swiftui/view.md)
 
 ## See Also
 

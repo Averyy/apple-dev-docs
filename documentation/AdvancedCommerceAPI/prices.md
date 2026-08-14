@@ -20,7 +20,7 @@ For price point information by currency, see [`App Store Pricing Update`](https:
 
 ##### Determine the Currency at Runtime
 
-To determine the currency to use at runtime, check the device’s App Store storefront. For a list of currencies that the App Store supports for each storefront, see [`Financial reports regions and currencies`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/reference/financial-report-regions-and-currencies). For information about getting the current storefront in the app, see the [`current`](https://developer.apple.com/documentation/StoreKit/Storefront/current) property of [`Storefront`](https://developer.apple.com/documentation/StoreKit/Storefront). For more information on currency, see [`currency`](currency.md).
+To determine the currency to use at runtime, check the device’s App Store storefront. For a list of currencies that the App Store supports for each storefront, see [`Financial reports regions and currencies`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/reference/financial-report-regions-and-currencies). For information about getting the current storefront in the app, see the [`current`](https://developer.apple.com/documentation/storekit/storefront/current) property of [`Storefront`](https://developer.apple.com/documentation/storekit/storefront). For more information on currency, see [`currency`](currency.md).
 
 ##### Provide Prices in Milliunit Format in Api Calls
 

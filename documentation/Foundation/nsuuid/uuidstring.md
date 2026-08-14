@@ -24,7 +24,7 @@ var uuidString: String { get }
 
 A string containing a formatted UUID for example `E621E1F8-C36C-495A-93FC-0C247A3E6E5F`.
 
-Use this property when you need a string representation of the `NSUUID` object—for example, to compare with a [`CFUUID`](https://developer.apple.com/documentation/CoreFoundation/CFUUID) object.
+Use this property when you need a string representation of the `NSUUID` object—for example, to compare with a [`CFUUID`](https://developer.apple.com/documentation/corefoundation/cfuuid) object.
 
 ## See Also
 

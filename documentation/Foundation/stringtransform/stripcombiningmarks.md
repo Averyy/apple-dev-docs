@@ -22,7 +22,7 @@ static let stripCombiningMarks: StringTransform
 
 #### Discussion
 
-This is equivalent to [`kCFStringTransformStripCombiningMarks`](https://developer.apple.com/documentation/CoreFoundation/kCFStringTransformStripCombiningMarks).
+This is equivalent to [`kCFStringTransformStripCombiningMarks`](https://developer.apple.com/documentation/corefoundation/kcfstringtransformstripcombiningmarks).
 
 ## See Also
 

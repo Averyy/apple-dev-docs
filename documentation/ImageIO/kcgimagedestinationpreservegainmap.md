@@ -22,7 +22,7 @@ let kCGImageDestinationPreserveGainMap: CFString
 
 #### Discussion
 
-The value of this key must be a [`CFBoolean`](https://developer.apple.com/documentation/CoreFoundation/CFBoolean) value. The default value is [`kCFBooleanFalse`](https://developer.apple.com/documentation/CoreFoundation/kCFBooleanFalse). If you scale the destination image using the [`kCGImageDestinationImageMaxPixelSize`](kcgimagedestinationimagemaxpixelsize.md) key, the destination also scales the gain map.
+The value of this key must be a [`CFBoolean`](https://developer.apple.com/documentation/corefoundation/cfboolean) value. The default value is [`kCFBooleanFalse`](https://developer.apple.com/documentation/corefoundation/kcfbooleanfalse). If you scale the destination image using the [`kCGImageDestinationImageMaxPixelSize`](kcgimagedestinationimagemaxpixelsize.md) key, the destination also scales the gain map.
 
 ## See Also
 

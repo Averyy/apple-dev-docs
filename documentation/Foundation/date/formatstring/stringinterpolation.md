@@ -47,9 +47,9 @@ struct StringInterpolation
 ## Relationships
 
 ### Conforms To
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
-- [StringInterpolationProtocol](../Swift/StringInterpolationProtocol.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
+- [StringInterpolationProtocol](../swift/stringinterpolationprotocol.md)
 
 
 ---

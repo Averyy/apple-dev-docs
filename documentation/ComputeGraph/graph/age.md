@@ -23,7 +23,7 @@ The age of the graph in seconds
 
 The age represents the total elapsed time since the graph was created or reset. This value continuously increases and is useful for time-based animations and effects.
 
-> **Note**: ![Graph](https://docs-assets.developer.apple.com/published/010d2af2b94d7fd8d8af28c0a606ae99/graph__age.svg)
+> **Note**: ![Graph](/images/com.apple.computegraph/graph__age.svg)
 
 
 ---

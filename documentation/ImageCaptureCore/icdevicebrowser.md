@@ -57,20 +57,20 @@ class ICDeviceBrowser
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 
-- [Photos Library Entitlement](../BundleResources/Entitlements/com.apple.security.personal-information.photos-library.md)
+- [Photos Library Entitlement](../bundleresources/entitlements/com.apple.security.personal-information.photos-library.md)
   A Boolean value that indicates whether the app has read-write access to the user’s Photos library.
-- [NSCameraUsageDescription](../BundleResources/Information-Property-List/NSCameraUsageDescription.md)
+- [NSCameraUsageDescription](../bundleresources/information-property-list/nscamerausagedescription.md)
   A message that tells people why the app is requesting access to the device’s camera.
 
 

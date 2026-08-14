@@ -26,7 +26,7 @@ A new array containing the keys corresponding to all occurrences of `anObject` i
 
 #### Discussion
 
-Each object in the dictionary is sent an [`isEqual(_:)`](https://developer.apple.com/documentation/ObjectiveC/NSObjectProtocol/isEqual(_:)) message to determine if it’s equal to `anObject`.
+Each object in the dictionary is sent an [`isEqual(_:)`](https://developer.apple.com/documentation/objectivec/nsobjectprotocol/isequal(_:)) message to determine if it’s equal to `anObject`.
 
 ## Parameters
 

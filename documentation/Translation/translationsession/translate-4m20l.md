@@ -40,7 +40,7 @@ This function throws an `Error` if:
 - You already cancelled the session
 - Something goes wrong during translation
 
-If a person dismisses the progress view while the languages download, the system throws a [`userCancelled`](https://developer.apple.com/documentation/Foundation/CocoaError/Code/userCancelled) error, and the languages continue to download in the background.
+If a person dismisses the progress view while the languages download, the system throws a [`userCancelled`](https://developer.apple.com/documentation/foundation/cocoaerror/code/usercancelled) error, and the languages continue to download in the background.
 
 > **Note**: This function call can take several minutes while languages download.
 

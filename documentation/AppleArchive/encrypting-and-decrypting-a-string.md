@@ -10,11 +10,11 @@ Encrypt the contents of a string and save the result to the file system, then de
 
 #### Overview
 
-This sample code project implements the Apple Encrypted Archive library to compress and encrypt the contents of a [`String`](https://developer.apple.com/documentation/Swift/String) structure using a [`SymmetricKey`](https://developer.apple.com/documentation/CryptoKit/SymmetricKey). The sample saves the encrypted string to the user’s temporary directory and then calls a second function that decrypts the contents of the file and recreates the string.
+This sample code project implements the Apple Encrypted Archive library to compress and encrypt the contents of a [`String`](https://developer.apple.com/documentation/swift/string) structure using a [`SymmetricKey`](https://developer.apple.com/documentation/cryptokit/symmetrickey). The sample saves the encrypted string to the user’s temporary directory and then calls a second function that decrypts the contents of the file and recreates the string.
 
 ##### Generate a Symmetric Key
 
-The sample imports the [`Apple CryptoKit`](https://developer.apple.com/documentation/CryptoKit) framework to create the symmetric cryptographic key.
+The sample imports the [`Apple CryptoKit`](https://developer.apple.com/documentation/cryptokit) framework to create the symmetric cryptographic key.
 
 ```swift
 let key = SymmetricKey(size: SymmetricKeySize.bits256)
@@ -34,7 +34,7 @@ try context.setSymmetricKey(key)
 
 ##### Open the Destination File Stream
 
-The destination file stream writes the encrypted file to the file system. In this case, the file stream’s mode is [`writeOnly`](https://developer.apple.com/documentation/System/FileDescriptor/AccessMode/writeOnly).  The options specify that the stream creates the file if it doesn’t exist, and if the file does exist, it should be truncated to zero bytes before the stream performs any operations.
+The destination file stream writes the encrypted file to the file system. In this case, the file stream’s mode is [`writeOnly`](https://developer.apple.com/documentation/system/filedescriptor/accessmode/writeonly).  The options specify that the stream creates the file if it doesn’t exist, and if the file does exist, it should be truncated to zero bytes before the stream performs any operations.
 
 ```swift
 guard let destinationFileStream = ArchiveByteStream.fileStream(
@@ -207,7 +207,7 @@ try decodeStream.readBlob(key: ArchiveHeader.FieldKey("DAT"),
 
 ##### Initialize a String From the Raw Buffer Pointer
 
-The sample creates a string from the raw buffer pointer by creating a typed pointer that’s bound to [`CChar`](https://developer.apple.com/documentation/Swift/CChar), and calls [`init(cString:)`](https://developer.apple.com/documentation/Swift/String/init(cString:)-2p84k) to initialize the new string.
+The sample creates a string from the raw buffer pointer by creating a typed pointer that’s bound to [`CChar`](https://developer.apple.com/documentation/swift/cchar), and calls [`init(cString:)`](https://developer.apple.com/documentation/swift/string/init(cstring:)-2p84k) to initialize the new string.
 
 ```swift
 let typedPtr = rawBufferPtr.bindMemory(to: CChar.self)

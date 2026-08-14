@@ -17,7 +17,7 @@ A dictionary that includes keys for the specific information your app collects.
 
 When your app attempts to read sensor information for the first time on a user’s device, the system presents a sheet that describes the information your app collects. You specify which information by defining an `Info.plist` key in this dictionary for each sensor your app uses, such as [`SRSensorUsageAmbientLightSensor`](information-property-list/nssensorkitusagedetail/srsensorusageambientlightsensor.md). Users approve or deny your app’s ability to read private sensor information based on the description you provide for these properties.
 
-For more information, see [`Configuring your project for sensor reading`](https://developer.apple.com/documentation/SensorKit/configuring-your-project-for-sensor-reading).
+For more information, see [`Configuring your project for sensor reading`](https://developer.apple.com/documentation/sensorkit/configuring-your-project-for-sensor-reading).
 
 ## Topics
 

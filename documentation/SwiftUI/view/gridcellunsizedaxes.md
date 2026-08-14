@@ -45,7 +45,7 @@ Grid {
 
 The text and images all have ideal widths for their content. However, because a divider takes as much space as its parent offers, the grid fills the width of the display, expanding all the other cells to match:
 
-![A screenshot of items arranged in a grid. The upper-left](https://docs-assets.developer.apple.com/published/9d53482162b4c1faf9ae7a965e68dde7/View-gridCellUnsizedAxes-1-iOS%402x.png)
+![A screenshot of items arranged in a grid. The upper-left](/images/com.apple.SwiftUI/View-gridCellUnsizedAxes-1-iOS@2x.png)
 
 You can prevent the grid from giving the divider more width than the other cells require by adding the modifier with the [`Axis.horizontal`](axis/horizontal.md) parameter:
 
@@ -56,7 +56,7 @@ Divider()
 
 This restores the grid to the width that it would have without the divider:
 
-![A screenshot of items arranged in a grid. The upper-left](https://docs-assets.developer.apple.com/published/c84de76b8879483c74c13957261c3438/View-gridCellUnsizedAxes-2-iOS%402x.png)
+![A screenshot of items arranged in a grid. The upper-left](/images/com.apple.SwiftUI/View-gridCellUnsizedAxes-2-iOS@2x.png)
 
 ## Parameters
 

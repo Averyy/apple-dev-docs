@@ -6,7 +6,7 @@ Manage App Clip experiences for testers in TestFlight.
 
 #### Overview
 
-The `betaAppClipInvocations` resource represents an App Clip experience you make available to testers in TestFlight. Use it to read beta App Clip experience information and to create, update, and delete App Clip experiences for testers. For more information on testing App Clip invocations, see [`Testing the launch experience of your App Clip`](https://developer.apple.com/documentation/AppClip/testing-the-launch-experience-of-your-app-clip).
+The `betaAppClipInvocations` resource represents an App Clip experience you make available to testers in TestFlight. Use it to read beta App Clip experience information and to create, update, and delete App Clip experiences for testers. For more information on testing App Clip invocations, see [`Testing the launch experience of your App Clip`](https://developer.apple.com/documentation/appclip/testing-the-launch-experience-of-your-app-clip).
 
 ## Topics
 

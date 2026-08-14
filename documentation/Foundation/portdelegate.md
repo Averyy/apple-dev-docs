@@ -33,7 +33,7 @@ The [`PortDelegate`](portdelegate.md) protocol defines the optional methods impl
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 ### Inherited By
 - [NSMachPortDelegate](nsmachportdelegate.md)
 

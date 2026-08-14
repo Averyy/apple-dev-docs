@@ -27,11 +27,11 @@ An object that is the result of the message.
 
 #### Discussion
 
-This method is the same as [`perform(_:)`](nsobjectprotocol/perform(_:).md) except that you can supply an argument for `aSelector`. `aSelector` should identify a method that takes a single argument of type id. For methods with other argument types and return values, use [`NSInvocation`](https://developer.apple.com/documentation/Foundation/NSInvocation).
+This method is the same as [`perform(_:)`](nsobjectprotocol/perform(_:).md) except that you can supply an argument for `aSelector`. `aSelector` should identify a method that takes a single argument of type id. For methods with other argument types and return values, use [`NSInvocation`](https://developer.apple.com/documentation/foundation/nsinvocation).
 
 ## Parameters
 
-- `aSelector`: A selector identifying the message to send. If `aSelector` is `NULL`, an [`invalidArgumentException`](https://developer.apple.com/documentation/Foundation/NSExceptionName/invalidArgumentException) is raised.
+- `aSelector`: A selector identifying the message to send. If `aSelector` is `NULL`, an [`invalidArgumentException`](https://developer.apple.com/documentation/foundation/nsexceptionname/invalidargumentexception) is raised.
 - `object`: An object that is the sole argument of the message.
 
 ## See Also

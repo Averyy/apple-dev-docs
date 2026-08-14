@@ -19,7 +19,7 @@ let SKStoreProductParameterCampaignToken: String
 
 #### Discussion
 
-The value for this key is an instance of [`NSString`](https://developer.apple.com/documentation/Foundation/NSString), containing any 40-byte string.
+The value for this key is an instance of [`NSString`](https://developer.apple.com/documentation/foundation/nsstring), containing any 40-byte string.
 
 This token allows you to track the effectiveness of your Affiliate Program link and your App Analytics campaign.
 

@@ -31,7 +31,7 @@ The system determines the exact hyphenation logic dynamically by examining the l
   The strategies that the text system may use to break lines while laying out the paragraph.
 - [var hyphenationFactor: Float](nsmutableparagraphstyle/hyphenationfactor.md)
   The paragraph’s threshold for hyphenation.
-- [var tighteningFactorForTruncation: Float](../AppKit/NSMutableParagraphStyle/tighteningFactorForTruncation.md)
+- [var tighteningFactorForTruncation: Float](../appkit/nsmutableparagraphstyle/tighteningfactorfortruncation.md)
   The threshold for using tightening as an alternative to truncation.
 - [var allowsDefaultTighteningForTruncation: Bool](nsmutableparagraphstyle/allowsdefaulttighteningfortruncation.md)
   A Boolean value that indicates whether the system tightens intercharacter spacing before truncating text.

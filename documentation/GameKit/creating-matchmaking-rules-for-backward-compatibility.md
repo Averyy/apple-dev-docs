@@ -12,7 +12,7 @@ For more information on creating queues, rule sets, and rules, see [`Finding pla
 
 ##### Add Classic Match Requests to a Queue
 
-Game Center adds classic match requests that don’t specify a queue name to a default classic matchmaking queue, excluding the requests from matching with players running versions that use rules. To include classic match requests in a queue, set the `classicMatchmakingBundleIds` field to the bundle IDs of the versions you want to include when you create the queue using the [`Create a Queue`](https://developer.apple.com/documentation/AppStoreConnectAPI/POST-v1-gameCenterMatchmakingQueues) endpoint.
+Game Center adds classic match requests that don’t specify a queue name to a default classic matchmaking queue, excluding the requests from matching with players running versions that use rules. To include classic match requests in a queue, set the `classicMatchmakingBundleIds` field to the bundle IDs of the versions you want to include when you create the queue using the [`Create a Queue`](https://developer.apple.com/documentation/appstoreconnectapi/post-v1-gamecentermatchmakingqueues) endpoint.
 
 ```json
 POST /v1/gameCenterMatchmakingQueues
@@ -41,7 +41,7 @@ If you create a Game Center group in App Store Connect to share leaderboards, ac
 
 If you set the player group property of match requests in classic matchmaking versions, add a compatible rule to the rule set and queue that matches requests by player group.
 
-When you add classic match requests to a queue with the [`playerGroup`](gkmatchrequest/playergroup.md) property set, those requests contain a `playerGroup` property in the `properties` array. Add a rule with a Boolean expression that compares the `playerGroup` properties of two requests using the [`Create a Rule`](https://developer.apple.com/documentation/AppStoreConnectAPI/POST-v1-gameCenterMatchmakingRules) endpoint.
+When you add classic match requests to a queue with the [`playerGroup`](gkmatchrequest/playergroup.md) property set, those requests contain a `playerGroup` property in the `properties` array. Add a rule with a Boolean expression that compares the `playerGroup` properties of two requests using the [`Create a Rule`](https://developer.apple.com/documentation/appstoreconnectapi/post-v1-gamecentermatchmakingrules) endpoint.
 
 ```json
 POST /v1/gameCenterMatchmakingRules
@@ -94,7 +94,7 @@ To understand this and other complex expressions before adding them to rules, us
 | `requests[].properties.[ skill, `50`]` | `[ [ 49, 50 ], [ null, 50 ] ]` |
 | `requests[].properties.[ skill, `50`][*].not_null(@) | [*][0]` |
 
-Add the expression that produces the desired results to a rule using the [`Create a Rule`](https://developer.apple.com/documentation/AppStoreConnectAPI/POST-v1-gameCenterMatchmakingRules) endpoint. For example, replace the Boolean expression above that uses the `diff()` function to compare player skill properties with one that provides a default value for the `skill` property (see [`Create a match rule containing the expression`](finding-players-with-similar-skill-levels#Create-a-match-rule-containing-the-expression.md)).
+Add the expression that produces the desired results to a rule using the [`Create a Rule`](https://developer.apple.com/documentation/appstoreconnectapi/post-v1-gamecentermatchmakingrules) endpoint. For example, replace the Boolean expression above that uses the `diff()` function to compare player skill properties with one that provides a default value for the `skill` property (see [`Create a match rule containing the expression`](finding-players-with-similar-skill-levels#Create-a-match-rule-containing-the-expression.md)).
 
 ```json
 diff(requests[].properties.[ skill, `50`][*].not_null(@) | [*][0]) <= agedValues(avg(requests[].secondsInQueue), `20`, [ `40`, `100` ], [ `10`, `20` ])
@@ -102,7 +102,7 @@ diff(requests[].properties.[ skill, `50`][*].not_null(@) | [*][0]) <= agedValues
 
 ##### Create Jmespath Playground Sample Match Requests
 
-Sample match requests that you create for testing expressions in the JMESPath playground are similar to those you pass to the [`Test a Rule Set`](https://developer.apple.com/documentation/AppStoreConnectAPI/POST-v1-gameCenterMatchmakingRuleSetTests) endpoint. Pass the same attribute and relationship properties except without the enclosing Game Center data structures.
+Sample match requests that you create for testing expressions in the JMESPath playground are similar to those you pass to the [`Test a Rule Set`](https://developer.apple.com/documentation/appstoreconnectapi/post-v1-gamecentermatchmakingrulesettests) endpoint. Pass the same attribute and relationship properties except without the enclosing Game Center data structures.
 
 For example, create sample requests where one player has a skill level of `49` and another player has no `skill` property value. For examples of match requests that you pass to the testing APIs, see [`Testing matchmaking rules`](testing-matchmaking-rules.md).
 

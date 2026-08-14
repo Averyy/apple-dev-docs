@@ -44,7 +44,7 @@ struct DropUntilOutput<Upstream, Other> where Upstream : Publisher, Other : Publ
 ## Relationships
 
 ### Conforms To
-- [Equatable](../Swift/Equatable.md)
+- [Equatable](../swift/equatable.md)
 - [Publisher](publisher.md)
 
 ## See Also

@@ -19,9 +19,9 @@ The following sections describe the first three steps in detail. For more inform
 
 Before you can use HealthKit, you must enable the HealthKit capabilities for your app. In Xcode, select the project and add the HealthKit capability. Only select the Clinical Health Records checkbox if your app needs to access the user’s clinical records. App Review may reject apps that enable the Clinical Health Records capability if the app doesn’t actually use the health record data. For more information, see [`Accessing Health Records`](accessing-health-records.md).
 
-![A screenshot of Xcode’s Signing & Capabilities tab showing the HealthKit capabilities. The Clinical Health Records and Background Delivery checkboxes aren’t selected.](https://docs-assets.developer.apple.com/published/7ab4327eb865cf362390b74b0cf8692c/media-3874041%402x.png)
+![A screenshot of Xcode’s Signing & Capabilities tab showing the HealthKit capabilities. The Clinical Health Records and Background Delivery checkboxes aren’t selected.](/images/com.apple.healthkit/media-3874041@2x.png)
 
-For a detailed discussion about enabling capabilities, see [`Configuring HealthKit access`](https://developer.apple.com/documentation/Xcode/configuring-healthkit-access).
+For a detailed discussion about enabling capabilities, see [`Configuring HealthKit access`](https://developer.apple.com/documentation/xcode/configuring-healthkit-access).
 
 When you enable the HealthKit capabilities on an iOS app, Xcode adds HealthKit to the list of required device capabilities, which prevents users from purchasing or installing the app on devices that don’t support HealthKit.
 
@@ -29,7 +29,7 @@ If HealthKit isn’t required for the correct operation of your app, delete the 
 
 > **Note**:  The `healthkit` entry isn’t used by watchOS apps.
 
-For more information on required device capabilities, see the [`UIRequiredDeviceCapabilities`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/UIRequiredDeviceCapabilities).
+For more information on required device capabilities, see the [`UIRequiredDeviceCapabilities`](https://developer.apple.com/documentation/bundleresources/information-property-list/uirequireddevicecapabilities).
 
 ##### Ensure Healthkits Availability
 
@@ -56,18 +56,18 @@ You need only a single HealthKit store per app. These are long-lived objects; yo
 ## Topics
 
 ### Entitlements
-- [HealthKit Entitlement](../BundleResources/Entitlements/com.apple.developer.healthkit.md)
+- [HealthKit Entitlement](../bundleresources/entitlements/com.apple.developer.healthkit.md)
   A Boolean value that indicates whether the app may request user authorization to access health and activity data that appears in the Health app.
-- [HealthKit Capabilities Entitlement](../BundleResources/Entitlements/com.apple.developer.healthkit.access.md)
+- [HealthKit Capabilities Entitlement](../bundleresources/entitlements/com.apple.developer.healthkit.access.md)
   Health data types that require additional permission.
 ### Information property list keys
-- [NSHealthUpdateUsageDescription](../BundleResources/Information-Property-List/NSHealthUpdateUsageDescription.md)
+- [NSHealthUpdateUsageDescription](../bundleresources/information-property-list/nshealthupdateusagedescription.md)
   A message to the user that explains why the app requested permission to save samples to the HealthKit store.
-- [NSHealthShareUsageDescription](../BundleResources/Information-Property-List/NSHealthShareUsageDescription.md)
+- [NSHealthShareUsageDescription](../bundleresources/information-property-list/nshealthshareusagedescription.md)
   A message that explains to people why the app requests permission to read samples from the HealthKit store.
-- [NSHealthRequiredReadAuthorizationTypeIdentifiers](../BundleResources/Information-Property-List/NSHealthRequiredReadAuthorizationTypeIdentifiers.md)
+- [NSHealthRequiredReadAuthorizationTypeIdentifiers](../bundleresources/information-property-list/nshealthrequiredreadauthorizationtypeidentifiers.md)
   The clinical record data types that your app must get permission to read.
-- [NSHealthClinicalHealthRecordsShareUsageDescription](../BundleResources/Information-Property-List/NSHealthClinicalHealthRecordsShareUsageDescription.md)
+- [NSHealthClinicalHealthRecordsShareUsageDescription](../bundleresources/information-property-list/nshealthclinicalhealthrecordsshareusagedescription.md)
   A message to the user that explains why the app requested permission to read clinical records.
 
 ## See Also
@@ -78,7 +78,7 @@ You need only a single HealthKit store per app. These are long-lived objects; yo
   Request permission to read and share data in your app.
 - [Protecting user privacy](protecting-user-privacy.md)
   Respect and safeguard your user’s privacy.
-- [HealthKit updates](../Updates/HealthKit.md)
+- [HealthKit updates](../updates/healthkit.md)
   Learn about important changes to HealthKit.
 - [HealthKitUI](../healthkitui/healthkitui.md)
   Display user interface that enables a person to view and interact with their health data.

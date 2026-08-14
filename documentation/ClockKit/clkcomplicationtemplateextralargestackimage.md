@@ -18,18 +18,18 @@ class CLKComplicationTemplateExtraLargeStackImage
 
 This template belongs to the [`CLKComplicationFamily.extraLarge`](clkcomplicationfamily/extralarge.md) family.
 
-![A diagram showing the layout of the extra large stack image complication. The diagram shows an image positioned above a short line of text.](https://docs-assets.developer.apple.com/published/26ec341b082dc58d671c01dad213be63/media-2880768%402x.png)
+![A diagram showing the layout of the extra large stack image complication. The diagram shows an image positioned above a short line of text.](/images/com.apple.clockkit/media-2880768@2x.png)
 
 The following table lists the dimensions of the image you use in this template. All dimensions are in pixels. All images must be specified as `@2x` images for display on Apple Watch, so the point-based dimensions are half the listed size.
 
 | Apple Watch Size | Width | Height |
 | --- | --- | --- |
-| 38 mm | 156 pixels maximum ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) (You may specify images with a smaller width.) | 84 pixels |
-| 40 mm | 174 pixels maximum ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) (You may specify images with a smaller width.) | 90 pixels |
-| 41 mm | 192 pixels maximum ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) (You may specify images with a smaller width.) | 95 pixels |
-| 42 mm | 174 pixels maximum ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) (You may specify images with a smaller width.) | 90 pixels |
-| 44 mm | 192 pixels maximum ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) (You may specify images with a smaller width.) | 102 pixels |
-| 45 mm | 207 pixels ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) (You may specify images with a smaller width.) | 107 pixels |
+| 38 mm | 156 pixels maximum ![None](/images/com.apple.clockkit/spacer.png) (You may specify images with a smaller width.) | 84 pixels |
+| 40 mm | 174 pixels maximum ![None](/images/com.apple.clockkit/spacer.png) (You may specify images with a smaller width.) | 90 pixels |
+| 41 mm | 192 pixels maximum ![None](/images/com.apple.clockkit/spacer.png) (You may specify images with a smaller width.) | 95 pixels |
+| 42 mm | 174 pixels maximum ![None](/images/com.apple.clockkit/spacer.png) (You may specify images with a smaller width.) | 90 pixels |
+| 44 mm | 192 pixels maximum ![None](/images/com.apple.clockkit/spacer.png) (You may specify images with a smaller width.) | 102 pixels |
+| 45 mm | 207 pixels ![None](/images/com.apple.clockkit/spacer.png) (You may specify images with a smaller width.) | 107 pixels |
 
 Instead of providing multiple images with different resolutions, you can provide a single, scaleable PDF asset. For more information, see `Manage Assets`.
 
@@ -51,13 +51,13 @@ Instead of providing multiple images with different resolutions, you can provide
 ### Inherits From
 - [CLKComplicationTemplate](clkcomplicationtemplate.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCopying](../Foundation/NSCopying.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCopying](../foundation/nscopying.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

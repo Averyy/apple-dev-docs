@@ -17,7 +17,7 @@ Use object tracking to provide virtual interactions with objects in a person’s
 
 To add object tracking to your app, start with a physical object’s 3D model, train a machine learning model in Create ML with that 3D model to obtain a reference object file, then use the resulting reference object file to track the physical object. The reference object file has a `.referenceobject` file extension, specifically for object tracking in iOS or visionOS.
 
-![A flow diagram of four items with arrows between them. From left to right, the images are an illustration of a globe; the Create ML app icon; a grouping of the RealityKit icon, the ARKit icon, and the Reality Composer Pro icon; and an illustration of a globe within a bounding box.](https://docs-assets.developer.apple.com/published/c744bc815682f39888c01eadb57ca074/workflow%402x.png)
+![A flow diagram of four items with arrows between them. From left to right, the images are an illustration of a globe; the Create ML app icon; a grouping of the RealityKit icon, the ARKit icon, and the Reality Composer Pro icon; and an illustration of a globe within a bounding box.](/images/com.apple.visionOS/workflow@2x.png)
 
 Implementing object tracking requires either an iPhone with iOS 27 or later, or an Apple Vision Pro with visionOS 2 or later. The machine learning training in Create ML requires a Mac with Apple silicon and macOS 15 or later. Reference object files trained with macOS 27 and Xcode 27 or later require iOS 27 or visionOS 27 and later.
 
@@ -27,7 +27,7 @@ For object tracking to work best in your app, make sure your object is *rigid*. 
 
 By default, object tracking delivers pose updates at a lower frequency and consumes less power. This works well for stationary objects, or cases where virtual content doesn’t need to match the object’s exact position on every frame.
 
-For moving or handheld objects, like surgical instruments or power tools, set [`highFrameRateTrackingEnabled`](https://developer.apple.com/documentation/ARKit/ReferenceObject/Configuration/highFrameRateTrackingEnabled) when you create the object tracking session in visionOS, or assign the object to [`trackingObjects`](https://developer.apple.com/documentation/ARKit/ARWorldTrackingConfiguration/trackingObjects) in iOS. This gives you a precise pose update on every frame. For best results, train your reference object in extended mode. For more information, see [`Train a machine learning model with the 3D model asset in Create ML`](https://developer.apple.com#Train-a-machine-learning-model-with-the-3D-model-asset-in-Create-ML) later in this article.
+For moving or handheld objects, like surgical instruments or power tools, set [`highFrameRateTrackingEnabled`](https://developer.apple.com/documentation/arkit/referenceobject/configuration/highframeratetrackingenabled) when you create the object tracking session in visionOS, or assign the object to [`trackingObjects`](https://developer.apple.com/documentation/arkit/arworldtrackingconfiguration/trackingobjects) in iOS. This gives you a precise pose update on every frame. For best results, train your reference object in extended mode. For more information, see [`Train a machine learning model with the 3D model asset in Create ML`](https://developer.apple.com#Train-a-machine-learning-model-with-the-3D-model-asset-in-Create-ML) later in this article.
 
 #### Obtain a 3d Model of Your Object
 
@@ -59,11 +59,11 @@ The following are the steps to train a model in the Create ML app:
 
 The 3D viewport is an interactive space where you can view your 3D model asset from different angles. After it appears in the viewport, check the appearance of the 3D model asset and confirm that it matches the absolute dimensions of your real-world object. Also make sure that the dimensions of the 3D model asset at the bottom right of the viewport match the actual dimensions of your object. If the scale doesn’t match, one option is to use Reality Composer Pro to rescale the 3D model and then add the adjusted USDZ file to Create ML.
 
-![A Create ML screenshot of a flashlight in the 3D viewport with the Object dimensions displaying at the bottom right.](https://docs-assets.developer.apple.com/published/f925e803014948a94eea6712d2ce657e/importing%402x.png)
+![A Create ML screenshot of a flashlight in the 3D viewport with the Object dimensions displaying at the bottom right.](/images/com.apple.visionOS/importing@2x.png)
 
 The next step is to select the best viewing angle for your real-world object. Consider how people view and interact with the object in your app, and decide which angle you need for tracking it. The “Viewing angles” setting appears below the 3D viewport, and has three viewing angles you can use: All Angles, Upright, or Front.
 
-![A Create ML screenshot of the 3D viewport showing the Viewing angles options. The All Angles option is highlighted.](https://docs-assets.developer.apple.com/published/a8476105ea8d8bd34d68b077fc313ea6/viewing-angles%402x.png)
+![A Create ML screenshot of the 3D viewport showing the Viewing angles options. The All Angles option is highlighted.](/images/com.apple.visionOS/viewing-angles@2x.png)
 
 - **All Angles**: Includes views from every angle. It works best for tracking handheld objects that people move in different orientations, such as a power drill that a person holds while securing an object.
 - **Upright**: Tracks objects that stand upright on a surface, such as a microscope that sits on a counter and stays in the same position as people interact with it. This option disables tracking from the bottom viewing angle.
@@ -78,15 +78,15 @@ After selecting a viewing angle, choose a training mode. Create ML offers two tr
 
 > **Note**: If you plan to track the object using high frame rate tracking, training with extended mode is recommended.
 
-![A Create ML screenshot of the training mode picker with the Extended mode option selected.](https://docs-assets.developer.apple.com/published/ee1e09e4265b21ccbe70d1f9c486f3a8/training-model-selection%402x.png)
+![A Create ML screenshot of the training mode picker with the Extended mode option selected.](/images/com.apple.visionOS/training-model-selection@2x.png)
 
 If there’s an object in a person’s surroundings that’s similar to the object you want to track, the object-tracking feature might recognize and track it instead of your object. To prevent this from happening, add the similar object as a negative example when training the machine learning model with your reference object. Below the 3D viewport, choose More Options > Objects to avoid. Use this section to add USDZ samples of similar items to ensure the machine learning model doesn’t identify them as the object you want to track.
 
-![A Create ML screenshot of the Objects to avoid settings.](https://docs-assets.developer.apple.com/published/2a78bf93fca8c3385c5b29f9787e39bf/objects-to-avoid%402x.png)
+![A Create ML screenshot of the Objects to avoid settings.](/images/com.apple.visionOS/objects-to-avoid@2x.png)
 
 Create ML supports training multiple machine learning models in the same object-tracking project. In the Model Sources section in the left pane, you can click the Add button (+) to add more 3D model assets to your Create ML project. Use this feature to track multiple objects in your app at the same time.
 
-![A Create ML screenshot of the Model Sources section in the left pane.](https://docs-assets.developer.apple.com/published/722d2bf2eb337f46f15da3aeffc87b60/adding-objects%403x.png)
+![A Create ML screenshot of the Model Sources section in the left pane.](/images/com.apple.visionOS/adding-objects@3x.png)
 
 After inspecting your 3D model asset and configuring the training settings, click Train to begin the training process. A progress bar indicates the amount of time until the machine learning training is complete. The machine learning training can take a few hours, depending on the configuration of your Mac. A more advanced processor and additional RAM significantly improve the training time.
 
@@ -134,7 +134,7 @@ The reference object file contains the machine learning model you trained, packa
 
 Use the Reference Object Compiler in Xcode to remove the USDZ data from the reference object file during the build process. Select your project in Xcode, click the Build Settings tab, and enable the Strip USDZ Files from Reference Object option. This setting contains the `REFERENCEOBJECT_STRIP_USDZ` build option. The default setting of the option is `No`, so Xcode copies any reference object files you add to the project as-is unless you change the setting.
 
-![An Xcode screenshot of the Build Settings pane showing the Remove USDZ files from Reference Object option enabled.](https://docs-assets.developer.apple.com/published/8fdc28da6c093a234be75a3079c5119f/stripping-usd%402x.png)
+![An Xcode screenshot of the Build Settings pane showing the Remove USDZ files from Reference Object option enabled.](/images/com.apple.visionOS/stripping-usd@2x.png)
 
 #### Integrate the Reference Object File Into Your App
 
@@ -158,7 +158,7 @@ For more information about object tracking, watch the WWDC24 session, [`Explore 
 
 ## See Also
 
-- [Reality Composer Pro](../RealityComposerPro/RealityComposerPro.md)
+- [Reality Composer Pro](../realitycomposerpro/realitycomposerpro.md)
   Build, design, and orchestrate 3D content for your RealityKit apps.
 - [Chaparral Village: Building an immersive visionOS adventure game](chaparral-village-building-an-immersive-visionos-adventure-game.md)
   Create an adventure game using SwiftUI, RealityKit, and Reality Composer Pro 3.
@@ -176,7 +176,7 @@ For more information about object tracking, watch the WWDC24 session, [`Explore 
   Add a deeper level of immersion to media playback in your app with RealityKit and Reality Composer Pro.
 - [Enabling video reflections in an immersive environment](enabling-video-reflections-in-an-immersive-environment.md)
   Create a more immersive experience by adding video reflections in a custom environment.
-- [Combining 2D and 3D views in an immersive app](../RealityKit/combining-2d-and-3d-views-in-an-immersive-app.md)
+- [Combining 2D and 3D views in an immersive app](../realitykit/combining-2d-and-3d-views-in-an-immersive-app.md)
   Use attachments to place 2D content relative to 3D content in your visionOS app.
 - [Understanding the modular architecture of RealityKit](understanding-the-realitykit-modular-architecture.md)
   Learn how everything fits together in RealityKit.

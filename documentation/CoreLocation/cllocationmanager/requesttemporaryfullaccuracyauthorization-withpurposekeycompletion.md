@@ -24,7 +24,7 @@ func requestTemporaryFullAccuracyAuthorization(withPurposeKey purposeKey: String
 
 > ❗ **Important**:  You can call this method from synchronous code using a completion handler, as shown on this page, or you can call it as an asynchronous method that has the following declaration: ```swift
 func requestTemporaryFullAccuracyAuthorization(withPurposeKey purposeKey: String) async throws
-``` For information about concurrency and asynchronous code in Swift, see [`Calling Objective-C APIs Asynchronously`](https://developer.apple.com/documentation/Swift/calling-objective-c-apis-asynchronously).
+``` For information about concurrency and asynchronous code in Swift, see [`Calling Objective-C APIs Asynchronously`](https://developer.apple.com/documentation/swift/calling-objective-c-apis-asynchronously).
 
 After the user gives permission for your app to use location data with full accuracy, your app can access that data in the foreground or in the background, until its permission automatically expires. Expiration is postponed while your app is actively in use. For example, expiration is postponed while your app in the foreground, and while a Continuous Background Location session is active with the background location indicator enabled. This approach to expiration allows apps to provide experiences that require full accuracy, such as fitness and navigation apps, even if the user doesn’t grant persistent access for full accuracy.
 
@@ -40,7 +40,7 @@ If the closure is called with an error, log the error for debugging purposes, an
 
 ## Parameters
 
-- `purposeKey`: A key in the [`NSLocationTemporaryUsageDescriptionDictionary`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSLocationTemporaryUsageDescriptionDictionary) dictionary of the app’s `Info.plist` file.  The value for this key is an app-provided string that describes the reason for accessing location data with full accuracy.  To localize a usage description, add an entry to your `InfoPlist.strings` file with the same key you provide for this parameter.
+- `purposeKey`: A key in the [`NSLocationTemporaryUsageDescriptionDictionary`](https://developer.apple.com/documentation/bundleresources/information-property-list/nslocationtemporaryusagedescriptiondictionary) dictionary of the app’s `Info.plist` file.  The value for this key is an app-provided string that describes the reason for accessing location data with full accuracy.  To localize a usage description, add an entry to your `InfoPlist.strings` file with the same key you provide for this parameter.
 - `completion`: A closure to execute after authorization status changes. This closure takes a single `error` parameter, which is `nil` if the prompt was displayed to the user, or an error object describing why the prompt couldn’t be displayed.
 
 ## See Also
@@ -55,9 +55,9 @@ If the closure is called with an error, log the error for debugging purposes, an
   The current authorization status for the app.
 - [enum CLAuthorizationStatus](clauthorizationstatus.md)
   Constants that indicate the app’s authorization to use location services.
-- [NSLocationDefaultAccuracyReduced](../BundleResources/Information-Property-List/NSLocationDefaultAccuracyReduced.md)
+- [NSLocationDefaultAccuracyReduced](../bundleresources/information-property-list/nslocationdefaultaccuracyreduced.md)
   A Boolean value that indicates whether the app requests reduced location accuracy by default.
-- [NSLocationAlwaysAndWhenInUseUsageDescription](../BundleResources/Information-Property-List/NSLocationAlwaysAndWhenInUseUsageDescription.md)
+- [NSLocationAlwaysAndWhenInUseUsageDescription](../bundleresources/information-property-list/nslocationalwaysandwheninuseusagedescription.md)
   A message that tells people why the app is requesting access to their location information at all times.
 
 

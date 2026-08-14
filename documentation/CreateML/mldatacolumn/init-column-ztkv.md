@@ -37,7 +37,7 @@ print(stringsColumn) // Prints ["1", "2.718", "3.14", "4.2", "5.1"]
 
 ## Parameters
 
-- `column`: An [`MLDataColumn`](mldatacolumn.md) of elements convertible to [`String`](https://developer.apple.com/documentation/Swift/String).
+- `column`: An [`MLDataColumn`](mldatacolumn.md) of elements convertible to [`String`](https://developer.apple.com/documentation/swift/string).
 
 ## See Also
 

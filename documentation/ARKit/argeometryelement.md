@@ -23,7 +23,7 @@ To demonstrate, an [`ARMeshGeometry`](armeshgeometry.md) instance with two trian
 
 - `faces` [`count`](argeometryelement/count.md) `= 2`
 - `faces` [`indexCountPerPrimitive`](argeometryelement/indexcountperprimitive.md) `= 3` (because [`primitiveType`](argeometryelement/primitivetype.md) is [`ARGeometryPrimitiveType.triangle`](argeometryprimitivetype/triangle.md))
-- `faces` [`bytesPerIndex`](argeometryelement/bytesperindex.md) `= 4` (because vertex indices are the type [`UInt32`](https://developer.apple.com/documentation/Swift/UInt32))
+- `faces` [`bytesPerIndex`](argeometryelement/bytesperindex.md) `= 4` (because vertex indices are the type [`UInt32`](https://developer.apple.com/documentation/swift/uint32))
 - The buffer’s total size in bytes `=` [`count`](argeometryelement/count.md) `*` [`indexCountPerPrimitive`](argeometryelement/indexcountperprimitive.md) `*` [`bytesPerIndex`](argeometryelement/bytesperindex.md) (which in this case, is `2 * 3 * 4 = 24` bytes)
 
 ## Topics
@@ -50,18 +50,18 @@ To demonstrate, an [`ARMeshGeometry`](armeshgeometry.md) instance with two trian
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCoding](../Foundation/NSCoding.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [NSSecureCoding](../Foundation/NSSecureCoding.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCoding](../foundation/nscoding.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

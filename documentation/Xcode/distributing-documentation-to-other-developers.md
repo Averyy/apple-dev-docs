@@ -28,7 +28,7 @@ To export a documentation archive from Xcode’s documentation viewer:
 2. Click the More button and choose the Export menu item. Alternatively, invoke the context menu on the documentation catalog item to access the Export menu.
 3. Select a location for the documentation archive, and click Export.
 
-![A screenshot of the Xcode documentation viewer that shows a context menu with the Export menu item in a selected state.](https://docs-assets.developer.apple.com/published/9d3e272f4b845ad6f3f1e062acacd3b3/distributing-documentation-to-other-developers-1%402x.png)
+![A screenshot of the Xcode documentation viewer that shows a context menu with the Export menu item in a selected state.](/images/com.apple.Xcode/distributing-documentation-to-other-developers-1@2x.png)
 
 The documentation archive that Xcode exports uses a `.doccarchive` file extension.
 
@@ -52,7 +52,7 @@ find ~/Desktop/SlothCreatorBuild -type d -name '*.doccarchive`
 
 Because a documentation archive is a self-contained bundle, you can easily share it with other developers. For example, you can send it by email just like a regular document, include it with a binary distribution of your product, or make it downloadable from a website. When the recipient opens the documentation archive, Xcode adds it to the Imported Documentation section of the documentation viewer.
 
-![A screenshot of the Xcode documentation viewer that shows a documentation archive for a SlothCreator project in a selected state in the Imported Documentation section.](https://docs-assets.developer.apple.com/published/6be1f1854054fa26972a5aaf4b509773/distributing-documentation-to-other-developers-2%402x.png)
+![A screenshot of the Xcode documentation viewer that shows a documentation archive for a SlothCreator project in a selected state in the Imported Documentation section.](/images/com.apple.Xcode/distributing-documentation-to-other-developers-2@2x.png)
 
 To remove an imported documentation archive, hold the pointer over the item to display the More button, and then choose Remove.
 

@@ -20,7 +20,7 @@ A SpriteKit texture that holds the rendered image.
 
 #### Discussion
 
-The `node` being rendered does not need to appear in the interface’s presented scene. The new texture is created with a size equal to the rectangle returned by the `node`’s [`calculateAccumulatedFrame()`](https://developer.apple.com/documentation/SpriteKit/SKNode/calculateAccumulatedFrame()) method. If the `node` is not a scene node, it is rendered with a clear background color (`[SKColor clearColor]`).
+The `node` being rendered does not need to appear in the interface’s presented scene. The new texture is created with a size equal to the rectangle returned by the `node`’s [`calculateAccumulatedFrame()`](https://developer.apple.com/documentation/spritekit/sknode/calculateaccumulatedframe()) method. If the `node` is not a scene node, it is rendered with a clear background color (`[SKColor clearColor]`).
 
 ## Parameters
 

@@ -17,7 +17,7 @@ A message that tells people why your app requests access to a person’s focus s
 
 #### Discussion
 
-Add this key before you use [`INFocusStatusCenter`](https://developer.apple.com/documentation/Intents/INFocusStatusCenter) to discover a person’s focus status.
+Add this key before you use [`INFocusStatusCenter`](https://developer.apple.com/documentation/intents/infocusstatuscenter) to discover a person’s focus status.
 
 ## See Also
 

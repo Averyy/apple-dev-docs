@@ -32,8 +32,8 @@ protocol HPKEKEMPrivateKeyGeneration : HPKEKEMPrivateKey
 ### Inherits From
 - [HPKEKEMPrivateKey](hpkekemprivatekey.md)
 - [KEMPrivateKey](kemprivatekey.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 ### Conforming Types
 - [XWingMLKEM768X25519.PrivateKey](xwingmlkem768x25519/privatekey.md)
 

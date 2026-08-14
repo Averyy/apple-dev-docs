@@ -73,7 +73,7 @@ let value = traitCollection.isContainedInSettings
 
 Set optional properties of [`UITraitDefinition`](uitraitdefinition-3572h.md) to give your trait additional system capabilities and improve debugging:
 
-- **[`affectsColorAppearance`](uitraitdefinition-3572h/affectscolorappearance.md)**: Set this to [`true`](https://developer.apple.com/documentation/Swift/true) when you use your custom trait to implement custom dynamic colors.
+- **[`affectsColorAppearance`](uitraitdefinition-3572h/affectscolorappearance.md)**: Set this to [`true`](https://developer.apple.com/documentation/swift/true) when you use your custom trait to implement custom dynamic colors.
 - **[`name`](uitraitdefinition-3572h/name.md)**: Set this to a string value to identify your custom trait in the debugger.
 - **[`identifier`](uitraitdefinition-3572h/identifier.md)**: Set this to a string value to uniquely identify your custom trait, which makes it eligible for additional features such as encoding. Use reverse DNS format to make your identifier globally unique in your app.
 

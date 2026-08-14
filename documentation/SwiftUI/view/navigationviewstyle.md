@@ -25,7 +25,7 @@ func navigationViewStyle<S>(_ style: S) -> some View where S : NavigationViewSty
 
 Use this modifier to change the appearance and behavior of navigation views. For example, by default, navigation views appear with multiple columns in wider environments, like iPad in landscape orientation:
 
-![A screenshot of an iPad in landscape orientation mode showing a](https://docs-assets.developer.apple.com/published/6ea0c512dea9061acb17a64140b660e6/View-navigationViewStyle-1%402x.png)
+![A screenshot of an iPad in landscape orientation mode showing a](/images/com.apple.SwiftUI/View-navigationViewStyle-1@2x.png)
 
 You can apply the [`stack`](navigationviewstyle/stack.md) style to force single-column stack navigation in these environments:
 
@@ -43,7 +43,7 @@ NavigationView {
 .navigationViewStyle(.stack)
 ```
 
-![A screenshot of an iPad in landscape orientation mode showing a single column containing the list Purple, Pink, and Orange.](https://docs-assets.developer.apple.com/published/5df851308e1be644de4f133b0780d285/View-navigationViewStyle-2%402x.png)
+![A screenshot of an iPad in landscape orientation mode showing a single column containing the list Purple, Pink, and Orange.](/images/com.apple.SwiftUI/View-navigationViewStyle-2@2x.png)
 
 ## See Also
 

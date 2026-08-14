@@ -22,9 +22,9 @@ let kCGImageSourceShouldAllowFloat: CFString
 
 #### Discussion
 
-The value of this key is a [`CFBoolean`](https://developer.apple.com/documentation/CoreFoundation/CFBoolean). The default value is [`kCFBooleanFalse`](https://developer.apple.com/documentation/CoreFoundation/kCFBooleanFalse), which tells the image source not to use floating-point values.
+The value of this key is a [`CFBoolean`](https://developer.apple.com/documentation/corefoundation/cfboolean). The default value is [`kCFBooleanFalse`](https://developer.apple.com/documentation/corefoundation/kcfbooleanfalse), which tells the image source not to use floating-point values.
 
-If the image format supports floating-point values, this key tells the image source to format [`CGImage`](https://developer.apple.com/documentation/CoreGraphics/CGImage) types using those values. The use of extended-range floating-point values may require additional processing to render in a pleasing manner.
+If the image format supports floating-point values, this key tells the image source to format [`CGImage`](https://developer.apple.com/documentation/coregraphics/cgimage) types using those values. The use of extended-range floating-point values may require additional processing to render in a pleasing manner.
 
 ## See Also
 

@@ -25,7 +25,7 @@ The figure below shows a face geometry (see [`ARSCNFaceGeometry`](arscnfacegeome
 2. Setting only the [`jawOpen`](arfaceanchor/blendshapelocation/jawopen.md) coefficient to `1.0`, while keeping all other coefficient values (including [`mouthClose`](arfaceanchor/blendshapelocation/mouthclose.md)) at `0.0`
 3. Setting both the [`jawOpen`](arfaceanchor/blendshapelocation/jawopen.md) and [`mouthClose`](arfaceanchor/blendshapelocation/mouthclose.md) coefficients to `1.0`, while keeping all other coefficient values at `0.0`
 
-![None](https://docs-assets.developer.apple.com/published/6c619637abe04b4af93ba25b4f13a950/media-2930045%402x.png)
+![None](/images/com.apple.arkit/media-2930045@2x.png)
 
 ## See Also
 

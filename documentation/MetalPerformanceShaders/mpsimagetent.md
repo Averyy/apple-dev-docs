@@ -23,7 +23,7 @@ class MPSImageTent
 
 The kernel elements of the filter form a tent shape with increasing sides, for example:
 
-![None](https://docs-assets.developer.apple.com/published/bd0e20af4a43a00dcc34a4da5e09ddfe/media-2556918%402x.png)
+![None](/images/com.apple.metalperformanceshaders/media-2556918@2x.png)
 
 Like a box filter, this arrangement allows for much faster algorithms, especially for larger blur radii but with a more pleasing appearance.
 
@@ -36,15 +36,15 @@ The tent blur is a separable filter and the Metal Performance Shaders framework 
 ### Inherits From
 - [MPSImageBox](mpsimagebox.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCoding](../Foundation/NSCoding.md)
-- [NSCopying](../Foundation/NSCopying.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [NSSecureCoding](../Foundation/NSSecureCoding.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCoding](../foundation/nscoding.md)
+- [NSCopying](../foundation/nscopying.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSSecureCoding](../foundation/nssecurecoding.md)
 
 ## See Also
 

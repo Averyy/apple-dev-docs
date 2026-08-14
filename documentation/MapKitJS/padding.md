@@ -18,7 +18,7 @@ class Padding implements PaddingData
 
 Use padding to define edge insets on the map. MapKit JS then uses these insets when it positions items on the map, such as the map controls or annotations. For example, if you want to add your own control on top of the map and ensure that the map doesn’t position annotations underneath it, you can add padding to the map and then position your control within the padded area.
 
-You can use a [`Padding`](padding.md) object when setting the map’s [`padding`](map/padding.md) property or as an option of [`showItems(items, options)`](map/showitems.md). Positive values add padding to the inside edges of the map. MapKit JS clips negative values to `0`.
+You can use a [`Padding`](padding.md) object when setting the map’s [`padding`](map/padding.md) property or as an option of [`showItems()`](map/showitems.md). Positive values add padding to the inside edges of the map. MapKit JS clips negative values to `0`.
 
 ## Topics
 

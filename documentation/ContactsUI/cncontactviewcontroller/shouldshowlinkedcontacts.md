@@ -19,7 +19,7 @@ var shouldShowLinkedContacts: Bool { get set }
 
 #### Discussion
 
-By default, the value of this property is [`false`](https://developer.apple.com/documentation/Swift/false).
+By default, the value of this property is [`false`](https://developer.apple.com/documentation/swift/false).
 
 ## See Also
 

@@ -28,7 +28,7 @@ struct StringInterpolation
 ## Relationships
 
 ### Conforms To
-- [StringInterpolationProtocol](../Swift/StringInterpolationProtocol.md)
+- [StringInterpolationProtocol](../swift/stringinterpolationprotocol.md)
 
 
 ---

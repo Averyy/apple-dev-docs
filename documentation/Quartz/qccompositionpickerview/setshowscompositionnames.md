@@ -16,7 +16,7 @@ func setShowsCompositionNames(_ flag: Bool)
 
 ## Parameters
 
-- `flag`: [`true`](https://developer.apple.com/documentation/Swift/true) specifies to show compositions name. The default value is [`false`](https://developer.apple.com/documentation/Swift/false).
+- `flag`: [`true`](https://developer.apple.com/documentation/swift/true) specifies to show compositions name. The default value is [`false`](https://developer.apple.com/documentation/swift/false).
 
 ## See Also
 

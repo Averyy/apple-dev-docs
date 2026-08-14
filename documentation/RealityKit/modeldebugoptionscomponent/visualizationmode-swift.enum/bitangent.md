@@ -36,7 +36,7 @@ if let television = try? await ModelEntity(named: "tv_retro") {
 
 | [`ModelDebugOptionsComponent.VisualizationMode.none`](modeldebugoptionscomponent/visualizationmode-swift.enum/none.md) | `bitangent` |
 | --- | --- |
-| ![A screenshot of a virtual TV in a visionOS app. The TV is an old-fashioned television displaying a multicolored test pattern. It is drawn with shadows and highlights to appear as realistic as possible.](https://docs-assets.developer.apple.com/published/a57e508a6549f1c8cce08e79ea6b7ec5/ModelDebugOptionsComponent-VisualizationMode-enum-none.jpg) | ![A screenshot of a virtual TV in a visionOS app. The TV is using a bitangent visualization, appearing in shades of yellows, purple, pinks and blues, which is a graphical representation of the calculated surface tangent vector at each point on the TV’s surface.](https://docs-assets.developer.apple.com/published/316d3a7086694b7bb3565570f54bd46d/ModelDebugOptionsComponent-VisualizationMode-enum-bitangent.jpg) |
+| ![A screenshot of a virtual TV in a visionOS app. The TV is an old-fashioned television displaying a multicolored test pattern. It is drawn with shadows and highlights to appear as realistic as possible.](/images/com.apple.RealityKit/ModelDebugOptionsComponent-VisualizationMode-enum-none.jpg) | ![A screenshot of a virtual TV in a visionOS app. The TV is using a bitangent visualization, appearing in shades of yellows, purple, pinks and blues, which is a graphical representation of the calculated surface tangent vector at each point on the TV’s surface.](/images/com.apple.RealityKit/ModelDebugOptionsComponent-VisualizationMode-enum-bitangent.jpg) |
 
 ## See Also
 

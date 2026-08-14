@@ -6,7 +6,7 @@ Constants that represent the available font panel mode masks.
 
 #### Overview
 
-The [`validModesForFontPanel:`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class/validModesForFontPanel:) method returns these constants.
+The [`validModesForFontPanel:`](https://developer.apple.com/documentation/objectivec/nsobject-swift.class/validmodesforfontpanel:) method returns these constants.
 
 ## Topics
 

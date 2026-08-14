@@ -19,7 +19,7 @@ Manage the interaction between an app extension and its hosting app.
   An item provider for conveying data or a file between processes during drag-and-drop or copy-and-paste activities, or from a host app to an app extension.
 - [class NSExtensionItem](nsextensionitem.md)
   An immutable collection of values representing different aspects of an item for an extension to act upon.
-- [Add Functionality to Finder with Action Extensions](../AppKit/add-functionality-to-finder-with-action-extensions.md)
+- [Add Functionality to Finder with Action Extensions](../appkit/add-functionality-to-finder-with-action-extensions.md)
   Implement Action Extensions to provide quick access to commonly used features of your app.
 ### Host App Interaction
 - [class NSUserActivity](nsuseractivity.md)

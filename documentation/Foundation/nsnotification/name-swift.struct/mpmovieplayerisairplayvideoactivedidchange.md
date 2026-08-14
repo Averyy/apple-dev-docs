@@ -19,7 +19,7 @@ static let MPMoviePlayerIsAirPlayVideoActiveDidChange: NSNotification.Name
 
 #### Discussion
 
-To find out whether AirPlay playback started or stopped, query the [`isAirPlayVideoActive`](https://developer.apple.com/documentation/MediaPlayer/MPMoviePlayerController/isAirPlayVideoActive) property. The movie player whose state has changed is available as the object associated with the notification.
+To find out whether AirPlay playback started or stopped, query the [`isAirPlayVideoActive`](https://developer.apple.com/documentation/mediaplayer/mpmovieplayercontroller/isairplayvideoactive) property. The movie player whose state has changed is available as the object associated with the notification.
 
 ## See Also
 

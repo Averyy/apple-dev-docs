@@ -22,7 +22,7 @@ func setValue(_ value: NSObject?, forPragmaNamed name: String)
 
 #### Discussion
 
-Pragma options are for SQLite stores only. All pragma values must be specified as [`NSString`](https://developer.apple.com/documentation/Foundation/NSString)objects. The `fullfsync` and `synchronous` pragmas control the tradeoff between write performance (write to disk speed and cache utilization) and durability (data loss/corruption sensitivity to power interruption). For more information on pragma settings, see [`http://sqlite.org/pragma.html`](https://developer.apple.comhttp://sqlite.org/pragma.html).
+Pragma options are for SQLite stores only. All pragma values must be specified as [`NSString`](https://developer.apple.com/documentation/foundation/nsstring)objects. The `fullfsync` and `synchronous` pragmas control the tradeoff between write performance (write to disk speed and cache utilization) and durability (data loss/corruption sensitivity to power interruption). For more information on pragma settings, see [`http://sqlite.org/pragma.html`](https://developer.apple.comhttp://sqlite.org/pragma.html).
 
 ## Parameters
 

@@ -22,7 +22,7 @@ var useCommandChaining: Bool { get set }
 
 #### Discussion
 
-By default, this property is set to [`true`](https://developer.apple.com/documentation/Swift/true) when the Smart Card ATR announces that command chaining is supported.
+By default, this property is set to [`true`](https://developer.apple.com/documentation/swift/true) when the Smart Card ATR announces that command chaining is supported.
 
 ## See Also
 

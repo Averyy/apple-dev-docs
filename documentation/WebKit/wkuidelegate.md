@@ -47,7 +47,7 @@ Web view user interface delegates implement this protocol to control the opening
 - [class WKOpenPanelParameters](wkopenpanelparameters.md)
   The configuration details of a file upload control in your web content.
 ### Displaying a contextual menu
-- [Adding context menus in your app](../UIKit/adding-context-menus-in-your-app.md)
+- [Adding context menus in your app](../uikit/adding-context-menus-in-your-app.md)
   Provide quick access to useful actions by adding context menus to your iOS app.
 - [func webView(WKWebView, contextMenuConfigurationForElement: WKContextMenuElementInfo, completionHandler: (UIContextMenuConfiguration?) -> Void)](wkuidelegate/webview(_:contextmenuconfigurationforelement:completionhandler:).md)
   Tells the delegate that a contextual menu interaction began.
@@ -57,7 +57,7 @@ Web view user interface delegates implement this protocol to control the opening
   Tells the delegate that the web view is about to present the contextual menu for the specified element.
 - [func webView(WKWebView, contextMenuDidEndForElement: WKContextMenuElementInfo)](wkuidelegate/webview(_:contextmenudidendforelement:).md)
   Tells the delegate that the web view dismissed the contextual menu for the specified element.
-- [class UIContextMenuConfiguration](../UIKit/UIContextMenuConfiguration.md)
+- [class UIContextMenuConfiguration](../uikit/uicontextmenuconfiguration.md)
   An object containing the configuration details for the contextual menu.
 ### Displaying an edit menu
 - [func webView(WKWebView, willDismissEditMenuWithAnimator: any UIEditMenuInteractionAnimating)](wkuidelegate/webview(_:willdismisseditmenuwithanimator:).md)
@@ -83,7 +83,7 @@ Web view user interface delegates implement this protocol to control the opening
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

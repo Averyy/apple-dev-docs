@@ -19,7 +19,7 @@ var activityFamily: ActivityFamily { get set }
 
 A Live Activity you initiate on one device can also appear on a remote device that renders the Live Activity in a different family size. As a result, it renders for a specific family, depending on both the device and the location in which it appears. For example, when rendering on the iOS or iPadOS Lock Screen, the current family is doc://com.apple.comdumentation/documentation/WidgetKit/ActivityFamily/medium.
 
-Use [`supplementalActivityFamilies(_:)`](WidgetConfiguration/supplementalActivityFamilies(_:).md) to opt in and allow your Live Activity to render with additional families.
+Use [`supplementalActivityFamilies(_:)`](widgetconfiguration/supplementalactivityfamilies(_:).md) to opt in and allow your Live Activity to render with additional families.
 
 ## See Also
 

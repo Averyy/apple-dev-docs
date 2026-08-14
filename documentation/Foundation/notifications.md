@@ -7,7 +7,7 @@ Design patterns for broadcasting information and for subscribing to broadcasts.
 ## Topics
 
 ### Key-Value Observing
-- [NSKeyValueObserving](../ObjectiveC/nskeyvalueobserving.md)
+- [NSKeyValueObserving](../objectivec/nskeyvalueobserving.md)
   An informal protocol that objects adopt to be notified of changes to the specified properties of other objects.
 ### Notifications
 - [struct Notification](notification.md)

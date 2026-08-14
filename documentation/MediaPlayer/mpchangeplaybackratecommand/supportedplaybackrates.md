@@ -22,7 +22,7 @@ var supportedPlaybackRates: [NSNumber] { get set }
 
 #### Discussion
 
-Contains an array of [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) objects. Each object is of type `float` and designates a supported playback rate. For example, a value of `2.0` would indicate the media item plays at double speed. Negative values are not supported.
+Contains an array of [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) objects. Each object is of type `float` and designates a supported playback rate. For example, a value of `2.0` would indicate the media item plays at double speed. Negative values are not supported.
 
 
 ---

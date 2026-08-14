@@ -24,7 +24,7 @@ var fetchShareParticipantsResultBlock: ((Result<Void, any Error>) -> Void)? { ge
 
 This property is a closure that returns no value and has the following parameter:
 
-- A [`Result`](https://developer.apple.com/documentation/Swift/Result) that contains either: - A successful `Result`, or
+- A [`Result`](https://developer.apple.com/documentation/swift/result) that contains either: - A successful `Result`, or
 - An error that contains information about a problem encountered generating the share participants.
 
 The fetch operation executes this closure only once. The closure executes before the operation’s completion closure. The closure executes serially with respect to the other closures of the operation.

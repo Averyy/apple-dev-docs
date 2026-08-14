@@ -36,7 +36,7 @@ The framework provides information to the extension through the two observable p
 ## Relationships
 
 ### Inherits From
-- [Observable](../Observation/Observable.md)
+- [Observable](../observation/observable.md)
 
 ## See Also
 

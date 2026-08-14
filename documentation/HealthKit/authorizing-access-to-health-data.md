@@ -12,7 +12,7 @@ As part of the privacy protections, your app doesn’t know whether someone gran
 
 Additionally, to protect the privacy of Apple Vision Pro owner data, in a Guest User session, the guest can view previously authorized data, but can’t access unauthorized data or change the authorizations.
 
-> ❗ **Important**:  In iOS 17.2 and later, the Journal app encourages people to reflect on their day-to-day experiences, including physical accomplishments, workouts, emotions, and moods. If your app saves data to HealthKit, high-level summaries of that data can appear as suggestions in the Journal app, or in other apps that use the [`Journaling Suggestions`](https://developer.apple.com/documentation/JournalingSuggestions) framework.
+> ❗ **Important**:  In iOS 17.2 and later, the Journal app encourages people to reflect on their day-to-day experiences, including physical accomplishments, workouts, emotions, and moods. If your app saves data to HealthKit, high-level summaries of that data can appear as suggestions in the Journal app, or in other apps that use the [`Journaling Suggestions`](https://developer.apple.com/documentation/journalingsuggestions) framework.
 
 Requesting permission to read and share data is only one part of protecting personal privacy. For more information, see [`Protecting user privacy`](protecting-user-privacy.md).
 
@@ -20,9 +20,9 @@ Requesting permission to read and share data is only one part of protecting pers
 
 Before you can request authorization to read or save HealthKit data, you need to add the HealthKit capability to your app. You also need to provide custom messages for the Health permissions sheet.
 
-Xcode requires separate custom messages for reading and writing HealthKit data. Set the [`NSHealthShareUsageDescription`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSHealthShareUsageDescription) key to customize the message for reading data and the [`NSHealthUpdateUsageDescription`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSHealthUpdateUsageDescription) key to customize the message for writing data.
+Xcode requires separate custom messages for reading and writing HealthKit data. Set the [`NSHealthShareUsageDescription`](https://developer.apple.com/documentation/bundleresources/information-property-list/nshealthshareusagedescription) key to customize the message for reading data and the [`NSHealthUpdateUsageDescription`](https://developer.apple.com/documentation/bundleresources/information-property-list/nshealthupdateusagedescription) key to customize the message for writing data.
 
-For projects created using Xcode 13 or later, set these keys in the Target Properties list on the app’s Info tab. For projects created with Xcode 12 or earlier, set these keys in the app’s information property list. For more information, see [`Information Property List`](https://developer.apple.com/documentation/BundleResources/Information-Property-List).
+For projects created using Xcode 13 or later, set these keys in the Target Properties list on the app’s Info tab. For projects created with Xcode 12 or earlier, set these keys in the app’s information property list. For more information, see [`Information Property List`](https://developer.apple.com/documentation/bundleresources/information-property-list).
 
 Finally, check that Health data is available on the current device by calling [`isHealthDataAvailable()`](hkhealthstore/ishealthdataavailable().md) before calling any other HealthKit methods. For more information, see [`Setting up HealthKit`](setting-up-healthkit.md).
 
@@ -61,7 +61,7 @@ do {
 }
 ```
 
-To request access from SwiftUI, use the [`healthDataAccessRequest(store:shareTypes:readTypes:trigger:completion:)`](https://developer.apple.com/documentation/SwiftUI/View/healthDataAccessRequest(store:shareTypes:readTypes:trigger:completion:)) modifier, like this:
+To request access from SwiftUI, use the [`healthDataAccessRequest(store:shareTypes:readTypes:trigger:completion:)`](https://developer.apple.com/documentation/swiftui/view/healthdataaccessrequest(store:sharetypes:readtypes:trigger:completion:)) modifier, like this:
 
 ```swift
 import SwiftUI
@@ -108,17 +108,17 @@ struct MyView: View {
 }
 ```
 
-> ❗ **Important**:  The [`healthDataAccessRequest(store:shareTypes:readTypes:trigger:completion:)`](https://developer.apple.com/documentation/SwiftUI/View/healthDataAccessRequest(store:shareTypes:readTypes:trigger:completion:)) modifier is only available if you import both SwiftUI and HealthKitUI.
+> ❗ **Important**:  The [`healthDataAccessRequest(store:shareTypes:readTypes:trigger:completion:)`](https://developer.apple.com/documentation/swiftui/view/healthdataaccessrequest(store:sharetypes:readtypes:trigger:completion:)) modifier is only available if you import both SwiftUI and HealthKitUI.
 
 When your app requests permission, the system displays an authorization sheet. HealthKit organizes data types into categories, such as Activity, Heart, and Nutrition, for easy access management by group. People can also toggle individual read and share permissions within each category.
 
-![A screenshot of the health data categories permissions UI.](https://docs-assets.developer.apple.com/published/6cd99ce1db2a9f4806514768d6bc023b/authorizing-access-to-health-data-1%402x.png)
+![A screenshot of the health data categories permissions UI.](/images/com.apple.healthkit/authorizing-access-to-health-data-1@2x.png)
 
 > 💡 **Tip**: For guidance on best practices when requesting permission, see [`Human Interface Guidelines > HealthKit > Privacy protection`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/healthkit#Privacy-protection).
 
 After people review data type access, a second screen prompts them to choose how much historical data to grant your app, either a recent limited window or their full history.
 
-![A screenshot of the access window permissions UI.](https://docs-assets.developer.apple.com/published/e079122ec7830b992cb148af9bbf923b/authorizing-access-to-health-data-2%402x.png)
+![A screenshot of the access window permissions UI.](/images/com.apple.healthkit/authorizing-access-to-health-data-2@2x.png)
 
 > ❗ **Important**:  A person can change the permissions for your app at any time using either the Settings or Health app. After prompting for HealthKit authorization, your app appears in the Health app’s Sources tab, even if the person didn’t allow permission to read and share data.
 
@@ -160,7 +160,7 @@ A Guest User session has the following effects on HealthKit:
 - The system obscures Health data in the Privacy and Security and Health Data panels in Settings.
 - Any attempts to save data or otherwise mutate data in the HealthKit store fails with an [`HKError.Code.errorNotPermissibleForGuestUserMode`](hkerror/code/errornotpermissibleforguestusermode.md) error (or [`HKError.Code.errorHealthDataRestricted`](hkerror/code/errorhealthdatarestricted.md) on apps running in iOS 17).
 
-> ❗ **Important**:  An app’s permissions don’t change when an app runs in a Guest User session. Therefore, [`authorizationStatus(for:)`](hkhealthstore/authorizationstatus(for:).md) returns [`true`](https://developer.apple.com/documentation/Swift/true) if the owner previously granted authorization to write the data, even though the app can’t write it during a Guest User session.
+> ❗ **Important**:  An app’s permissions don’t change when an app runs in a Guest User session. Therefore, [`authorizationStatus(for:)`](hkhealthstore/authorizationstatus(for:).md) returns [`true`](https://developer.apple.com/documentation/swift/true) if the owner previously granted authorization to write the data, even though the app can’t write it during a Guest User session.
 
 The system doesn’t display the authorization sheet during a Guest User session, so any attempt to request authorization for HealthKit data types during a Guest User session fails silently.
 
@@ -168,7 +168,7 @@ If your app receives an [`HKError.Code.errorNotPermissibleForGuestUserMode`](hke
 
 #### Specify Required Clinical Record Types
 
-If your app requires access to specific clinical record data to function properly, specify the required clinical record types in your app’s information property list using the [`NSHealthRequiredReadAuthorizationTypeIdentifiers`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSHealthRequiredReadAuthorizationTypeIdentifiers) key. This key defines the data types that your app needs to have permission to read. Set the value to an array of strings containing the type identifiers for your required types. For a list of type identifiers, see [`HKClinicalTypeIdentifier`](hkclinicaltypeidentifier.md).
+If your app requires access to specific clinical record data to function properly, specify the required clinical record types in your app’s information property list using the [`NSHealthRequiredReadAuthorizationTypeIdentifiers`](https://developer.apple.com/documentation/bundleresources/information-property-list/nshealthrequiredreadauthorizationtypeidentifiers) key. This key defines the data types that your app needs to have permission to read. Set the value to an array of strings containing the type identifiers for your required types. For a list of type identifiers, see [`HKClinicalTypeIdentifier`](hkclinicaltypeidentifier.md).
 
 To protect personal privacy, specify three or more required clinical record types. If a person denies authorization to any of the types, authorization fails with an [`HKError.Code.errorRequiredAuthorizationDenied`](hkerror/code/errorrequiredauthorizationdenied.md) error; the system doesn’t tell your app which record types the person denied access to.
 
@@ -180,7 +180,7 @@ To protect personal privacy, specify three or more required clinical record type
   Set up and configure your HealthKit store.
 - [Protecting user privacy](protecting-user-privacy.md)
   Respect and safeguard your user’s privacy.
-- [HealthKit updates](../Updates/HealthKit.md)
+- [HealthKit updates](../updates/healthkit.md)
   Learn about important changes to HealthKit.
 - [HealthKitUI](../healthkitui/healthkitui.md)
   Display user interface that enables a person to view and interact with their health data.

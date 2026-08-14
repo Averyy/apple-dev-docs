@@ -34,7 +34,7 @@ To take a photo, you create and configure a [`AVCapturePhotoSettings`](avcapture
 
 A [`AVCapturePhotoSettings`](avcapturephotosettings.md) instance can include any combination of settings, regardless of whether that combination is valid for a given capture session. When you initiate a capture by passing a photo settings object to the [`capturePhoto(with:delegate:)`](avcapturephotooutput/capturephoto(with:delegate:).md) method, the photo capture output validates your settings to ensure deterministic behavior. For example, the [`flashMode`](avcapturephotosettings/flashmode.md) setting must specify a value that’s present in the photo output’s [`supportedFlashModes`](avcapturephotooutput/supportedflashmodes-4u69s.md) array. For detailed validation rules, see each property description below.
 
-> ❗ **Important**:  You can’t reuse a [`AVCapturePhotoSettings`](avcapturephotosettings.md) instance for multiple captures. Calling the [`capturePhoto(with:delegate:)`](avcapturephotooutput/capturephoto(with:delegate:).md) method throws an exception ([`invalidArgumentException`](https://developer.apple.com/documentation/Foundation/NSExceptionName/invalidArgumentException)) if the `settings` object’s [`uniqueID`](avcapturephotosettings/uniqueid.md) value matches that of any previously used settings object. To reuse a specific combination of settings, use the [`init(from:)`](avcapturephotosettings/init(from:).md) initializer to create a new, unique [`AVCapturePhotoSettings`](avcapturephotosettings.md) instance from an existing photo settings object.
+> ❗ **Important**:  You can’t reuse a [`AVCapturePhotoSettings`](avcapturephotosettings.md) instance for multiple captures. Calling the [`capturePhoto(with:delegate:)`](avcapturephotooutput/capturephoto(with:delegate:).md) method throws an exception ([`invalidArgumentException`](https://developer.apple.com/documentation/foundation/nsexceptionname/invalidargumentexception)) if the `settings` object’s [`uniqueID`](avcapturephotosettings/uniqueid.md) value matches that of any previously used settings object. To reuse a specific combination of settings, use the [`init(from:)`](avcapturephotosettings/init(from:).md) initializer to create a new, unique [`AVCapturePhotoSettings`](avcapturephotosettings.md) instance from an existing photo settings object.
 
 ## Topics
 
@@ -141,17 +141,17 @@ A [`AVCapturePhotoSettings`](avcapturephotosettings.md) instance can include any
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Inherited By
 - [AVCapturePhotoBracketSettings](avcapturephotobracketsettings.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCopying](../Foundation/NSCopying.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCopying](../foundation/nscopying.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

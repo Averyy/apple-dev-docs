@@ -266,13 +266,13 @@ To override the normal limits, create an analyzer with a [`SpeechAnalyzer.Option
 ## Relationships
 
 ### Conforms To
-- [Actor](../Swift/Actor.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Actor](../swift/actor.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 
-- [Speech updates](../Updates/Speech.md)
+- [Speech updates](../updates/speech.md)
   Learn about important changes to Speech.
 - [Recognizing speech in live audio](recognizing-speech-in-live-audio.md)
   Perform speech recognition and transcription on audio captured from the microphone of an iOS device.

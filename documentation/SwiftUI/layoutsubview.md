@@ -52,7 +52,7 @@ You can read custom layout values associated with a subview by using the propert
 ## Relationships
 
 ### Conforms To
-- [Equatable](../Swift/Equatable.md)
+- [Equatable](../swift/equatable.md)
 
 ## See Also
 

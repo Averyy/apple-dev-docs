@@ -58,7 +58,7 @@ struct ConfirmFileImport: View {
 }
 ```
 
-![A screenshot showing an action sheet populated using a custom data source that describes a file and file format.](https://docs-assets.developer.apple.com/published/35838d033dd88b4204215cb25ade5087/SwiftUI-View-ActionSheetItemContent%402x.png)
+![A screenshot showing an action sheet populated using a custom data source that describes a file and file format.](/images/com.apple.SwiftUI/SwiftUI-View-ActionSheetItemContent@2x.png)
 
 ## Parameters
 

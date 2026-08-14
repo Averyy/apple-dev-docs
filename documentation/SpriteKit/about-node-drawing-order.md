@@ -11,7 +11,7 @@ The standard behavior for scene rendering follows a simple pair of rules (as sho
 - A parent draws its content before rendering its children.
 - Children are rendered in the order in which they appear in the child array.
 
-![Diagram showing that parent nodes are drawn before children](https://docs-assets.developer.apple.com/published/59b992e6a12c59338161ee35becdb9d6/media-2985165%402x.png)
+![Diagram showing that parent nodes are drawn before children](/images/com.apple.spritekit/media-2985165@2x.png)
 
 In the figure above, the helicopter body and its components are all children of the `sky` node. So the scene renders its content as follows:
 
@@ -31,13 +31,13 @@ When you take `zPosition` into account, here is how the node tree is rendered:
 
 ##### Sibling Order Performance
 
-SpriteKit uses a deterministic rendering order based on the height nodes and their positions in the node tree. But, because the rendering order is so deterministic, SpriteKit may be unable to apply some rendering optimizations that it might otherwise apply. For example, it might be better if SpriteKit could gather all of the nodes that share the same texture and drawing mode and draw them with a single drawing pass. To enable these sorts of optimizations, you set the view’s [`ignoresSiblingOrder`](skview/ignoressiblingorder.md) property to [`true`](https://developer.apple.com/documentation/Swift/true).
+SpriteKit uses a deterministic rendering order based on the height nodes and their positions in the node tree. But, because the rendering order is so deterministic, SpriteKit may be unable to apply some rendering optimizations that it might otherwise apply. For example, it might be better if SpriteKit could gather all of the nodes that share the same texture and drawing mode and draw them with a single drawing pass. To enable these sorts of optimizations, you set the view’s [`ignoresSiblingOrder`](skview/ignoressiblingorder.md) property to [`true`](https://developer.apple.com/documentation/swift/true).
 
 When you ignore sibling order, SpriteKit uses the graphics hardware to render the nodes so that they appear sorted by `zPosition`. It sorts nodes into a drawing order that reduces the number of draw calls needed to render the scene. But with this optimized drawing order, you cannot predict the rendering order for nodes that share the same height. The rendering order may change each time a new frame is rendered. In many cases, the drawing order of these nodes is not important. For example, if the nodes are at the same height but do not overlap on screen, they can be drawn in any order.
 
 The figure below shows an example of a tree that uses `zPosition` to determine the rendering order. In this example, the body of the helicopter is at a height of 100, and its children are rendered relative to its height. The two rotor nodes share the same height but do not overlap.
 
-![Figure illustrating how depth-only rendering can improve performance](https://docs-assets.developer.apple.com/published/accfb2c789ccdf5490d1fe3358bcc5e4/media-3044936%402x.png)
+![Figure illustrating how depth-only rendering can improve performance](/images/com.apple.spritekit/media-3044936@2x.png)
 
 ##### Interleaved Child Nodes From Different Parents
 
@@ -86,7 +86,7 @@ addNodesTo(scene: scene,
 
 The figure below shows the resulting scene.
 
-![Interleaved node hierarchies using zPosition](https://docs-assets.developer.apple.com/published/b6b84ee1687ac7fcbba2b173c06f846d/media-3044935%402x.png)
+![Interleaved node hierarchies using zPosition](/images/com.apple.spritekit/media-3044935@2x.png)
 
 Because `zPosition` is additive across parent-child node relationships, you can use both tree order and `zPositions` to determine your scene’s rendering order. When rendering a complex scene, you should disable the sorting behavior and use the `zPositions` of nodes to create a deterministic scene order.
 

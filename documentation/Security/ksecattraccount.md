@@ -27,7 +27,7 @@ let kSecAttrAccount: CFString
 
 #### Discussion
 
-The corresponding value is of type [`CFString`](https://developer.apple.com/documentation/CoreFoundation/CFString) and contains an account name. Items of class [`kSecClassGenericPassword`](ksecclassgenericpassword.md) and [`kSecClassInternetPassword`](ksecclassinternetpassword.md) have this attribute.
+The corresponding value is of type [`CFString`](https://developer.apple.com/documentation/corefoundation/cfstring) and contains an account name. Items of class [`kSecClassGenericPassword`](ksecclassgenericpassword.md) and [`kSecClassInternetPassword`](ksecclassinternetpassword.md) have this attribute.
 
 
 ---

@@ -33,7 +33,7 @@ The system can cancel an app intent for the following reasons:
 - The app intent didn’t report progress and exceeded its 30-second runtime limit.
 - Someone monitoring the progress of the app intent in Siri, Live Activities, or Shortcuts chose to cancel the task.
 
-Swift provides the standard [`withTaskCancellationHandler(handler:operation:)`](https://developer.apple.com/documentation/Swift/withTaskCancellationHandler(handler:operation:)) function for tasks to handle cancellation. You can use that function in your app intent’s [`perform()`](appintent/perform().md) method to perform any cleanup tasks if you don’t need to know the reason cancellation occurred. If you want to know the reason for cancellation, use the [`withIntentCancellationHandler(operation:onCancel:isolation:)`](cancellableintent/withintentcancellationhandler(operation:oncancel:isolation:).md) method that this protocol offers instead. When cancellation occurs, stop your app intent’s current task, release any allocated memory or resources, save intermediate state as needed, and write out any relevant diagnostic information related to the cancellation.
+Swift provides the standard [`withTaskCancellationHandler(handler:operation:)`](https://developer.apple.com/documentation/swift/withtaskcancellationhandler(handler:operation:)) function for tasks to handle cancellation. You can use that function in your app intent’s [`perform()`](appintent/perform().md) method to perform any cleanup tasks if you don’t need to know the reason cancellation occurred. If you want to know the reason for cancellation, use the [`withIntentCancellationHandler(operation:onCancel:isolation:)`](cancellableintent/withintentcancellationhandler(operation:oncancel:isolation:).md) method that this protocol offers instead. When cancellation occurs, stop your app intent’s current task, release any allocated memory or resources, save intermediate state as needed, and write out any relevant diagnostic information related to the cancellation.
 
 The following example shows a payment-processing app intent and the basic code it uses to perform its task. The app intent’s [`perform()`](appintent/perform().md) method calls the [`withIntentCancellationHandler(operation:onCancel:isolation:)`](cancellableintent/withintentcancellationhandler(operation:oncancel:isolation:).md) method to process the payment and handle cancellation if it occurs. The cancellation handler performs different tasks based on whether the someone canceled the operation deliberately or the system timed out.
 
@@ -125,8 +125,8 @@ struct ProcessPaymentIntent: AppIntent, ProgressReportingIntent, CancellableInte
 ### Inherits From
 - [AppIntent](appintent.md)
 - [PersistentlyIdentifiable](persistentlyidentifiable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

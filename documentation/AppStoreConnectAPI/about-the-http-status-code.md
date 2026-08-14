@@ -23,7 +23,7 @@ The following table lists the HTTP status codes and the reasons why App Store Co
 | 403 | Forbidden | The request is not allowed. This can happen if your API key is revoked, your token is incorrectly formatted, or if the requested operation is not allowed. |
 | 404 | Not Found | The request cannot be fulfilled because the resource does not exist. |
 | 405 | Method Not Allowed | The request cannot be accepted because the HTTP method is not appropriate for the given URI. |
-| 406 | Not Acceptable | The request cannot be accepted because the `Accept` header requires a media type the API does not support. ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) The response in this case is in plain text, not JSON. |
+| 406 | Not Acceptable | The request cannot be accepted because the `Accept` header requires a media type the API does not support. ![None](/images/com.apple.appstoreconnectapi/spacer.png) The response in this case is in plain text, not JSON. |
 | 409 | Conflict | The request cannot be accepted because the JSON data you have provided conflicts with rules enforced by the API. |
 | 410 | Gone | The request cannot be fulfilled because the requested resource, which is known to have previously existed, no longer exists. Usually this case results in a 404 status code, but when knowledge that a resource previously existed is important, the API returns a 410. This happens, for instance, if you request a user invitation after the user accepted the invitation. |
 | 415 | Unsupported Media Type | The request cannot be accepted because the media type of the request entity is not a format the API understands. Make sure the `Content-Type` header in the request is `application/json`. |

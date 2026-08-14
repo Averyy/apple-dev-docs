@@ -8,7 +8,7 @@ Insert, delete, and manipulate text by using a proxy to a text input view.
 
 Custom keyboards execute in a separate process that doesn’t have direct access to the text a user is editing. A proxy object, [`UITextDocumentProxy`](uitextdocumentproxy.md), provides access to the input text view. Through the text document proxy you can insert or delete text, manipulate the insertion point, and access additional textual context around the insertion point.
 
-![Diagram showing the relationship of a custom keyboard extension process to the text input object. In the keyboard extension process the input view controller uses the text document proxy to insert a string into the text input view.](https://docs-assets.developer.apple.com/published/5d24d830be3383436ad7ed079165abfc/media-3570308%402x.png)
+![Diagram showing the relationship of a custom keyboard extension process to the text input object. In the keyboard extension process the input view controller uses the text document proxy to insert a string into the text input view.](/images/com.apple.uikit/media-3570308@2x.png)
 
 ##### Insert and Delete Text
 
@@ -70,10 +70,10 @@ let selectedText = textDocumentProxy.selectedText ?? ""
 let fullText = "\(precedingText)\(selectedText)\(followingText)"
 ```
 
-Use [`CFStringTokenizer`](https://developer.apple.com/documentation/CoreFoundation/CFStringTokenizer) to better understand the context by breaking the surrounding text (or combined text) into words, paragraphs, or sentences. This information enables you to implement autocapitalization.
+Use [`CFStringTokenizer`](https://developer.apple.com/documentation/corefoundation/cfstringtokenizer) to better understand the context by breaking the surrounding text (or combined text) into words, paragraphs, or sentences. This information enables you to implement autocapitalization.
 
 1. Call [`documentContextBeforeInput`](uitextdocumentproxy/documentcontextbeforeinput.md) to get the text preceding the insertion point.
-2. Use [`CFStringTokenizer`](https://developer.apple.com/documentation/CoreFoundation/CFStringTokenizer) to locate the beginning of the current word.
+2. Use [`CFStringTokenizer`](https://developer.apple.com/documentation/corefoundation/cfstringtokenizer) to locate the beginning of the current word.
 3. Move the insertion point after the first character of the word.
 4. Call [`deleteBackward()`](uikeyinput/deletebackward().md).
 5. Call [`insertText(_:)`](uikeyinput/inserttext(_:).md) and pass the appropriate capitalized letter.
@@ -105,7 +105,7 @@ textDocumentProxy.setMarkedText(text, selectedRange: range)
 
 The above would display the text as:
 
-![Screenshot showing text showing marked text. The beginning of the word is marked to indicate that it’s being autocompleted, and the end of the word is selected to indicate that subsequent keystrokes will replace that portion of the text.](https://docs-assets.developer.apple.com/published/2b0de0baa7f34b710e5edbc57971968a/media-3570318%402x.png)
+![Screenshot showing text showing marked text. The beginning of the word is marked to indicate that it’s being autocompleted, and the end of the word is selected to indicate that subsequent keystrokes will replace that portion of the text.](/images/com.apple.uikit/media-3570318@2x.png)
 
 As the user continues to type, you can update the marked text with subsequent calls to [`setMarkedText(_:selectedRange:)`](uitextdocumentproxy/setmarkedtext(_:selectedrange:).md).
 

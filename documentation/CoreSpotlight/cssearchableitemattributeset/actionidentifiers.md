@@ -19,9 +19,9 @@ var actionIdentifiers: [String] { get set }
 
 #### Discussion
 
-The identifiers correspond to the [`CoreSpotlightActionIdentifier`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/CoreSpotlightActions/CoreSpotlightActionIdentifier) values you specify in the [`CoreSpotlightActions`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/CoreSpotlightActions) key of the app’s `Info.plist` file.
+The identifiers correspond to the [`CoreSpotlightActionIdentifier`](https://developer.apple.com/documentation/bundleresources/information-property-list/corespotlightactions/corespotlightactionidentifier) values you specify in the [`CoreSpotlightActions`](https://developer.apple.com/documentation/bundleresources/information-property-list/corespotlightactions) key of the app’s `Info.plist` file.
 
-When the user selects a custom action on an indexed item, the system launches your app and invokes [`application(_:continue:restorationHandler:)`](https://developer.apple.com/documentation/UIKit/UIApplicationDelegate/application(_:continue:restorationHandler:)). The `userInfo` dictionary of the specified [`NSUserActivity`](https://developer.apple.com/documentation/Foundation/NSUserActivity) includes the corresponding `Info.plist` entry using the key [`CSActionIdentifier`](csactionidentifier.md).
+When the user selects a custom action on an indexed item, the system launches your app and invokes [`application(_:continue:restorationHandler:)`](https://developer.apple.com/documentation/uikit/uiapplicationdelegate/application(_:continue:restorationhandler:)). The `userInfo` dictionary of the specified [`NSUserActivity`](https://developer.apple.com/documentation/foundation/nsuseractivity) includes the corresponding `Info.plist` entry using the key [`CSActionIdentifier`](csactionidentifier.md).
 
 ## See Also
 

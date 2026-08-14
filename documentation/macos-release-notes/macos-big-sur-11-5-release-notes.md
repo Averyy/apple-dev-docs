@@ -6,7 +6,7 @@ Update your apps to use new features, and test your apps against API changes.
 
 #### Overview
 
-To develop apps for macOS Big Sur 11.5, build your apps against the macOS 11.3 SDK or later. The SDK comes bundled with Xcode 12.5.1, available from the Mac App Store. For information on the compatibility requirements for Xcode 12.5.1, see [`Xcode 12.5.1 Release Notes`](https://developer.apple.com/documentation/Xcode-Release-Notes/xcode-12_5_1-release-notes).
+To develop apps for macOS Big Sur 11.5, build your apps against the macOS 11.3 SDK or later. The SDK comes bundled with Xcode 12.5.1, available from the Mac App Store. For information on the compatibility requirements for Xcode 12.5.1, see [`Xcode 12.5.1 Release Notes`](https://developer.apple.com/documentation/xcode-release-notes/xcode-12_5_1-release-notes).
 
 ##### Swiftui
 

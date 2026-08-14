@@ -44,10 +44,10 @@ struct SkeletalPoseSet
 ## Relationships
 
 ### Conforms To
-- [Collection](../Swift/Collection.md)
-- [Copyable](../Swift/Copyable.md)
-- [Escapable](../Swift/Escapable.md)
-- [Sequence](../Swift/Sequence.md)
+- [Collection](../swift/collection.md)
+- [Copyable](../swift/copyable.md)
+- [Escapable](../swift/escapable.md)
+- [Sequence](../swift/sequence.md)
 
 ## See Also
 

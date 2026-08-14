@@ -33,7 +33,7 @@ The data source of a [`UIPickerView`](uipickerview.md) object must adopt this pr
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

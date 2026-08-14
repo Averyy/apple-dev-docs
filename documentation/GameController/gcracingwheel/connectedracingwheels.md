@@ -17,9 +17,9 @@ class var connectedRacingWheels: Set<GCRacingWheel> { get }
 
 ## See Also
 
-- [static let GCRacingWheelDidConnect: NSNotification.Name](../Foundation/NSNotification/Name-swift.struct/GCRacingWheelDidConnect.md)
+- [static let GCRacingWheelDidConnect: NSNotification.Name](../foundation/nsnotification/name-swift.struct/gcracingwheeldidconnect.md)
   A notification that posts after a racing wheel controller connects to the device.
-- [static let GCRacingWheelDidDisconnect: NSNotification.Name](../Foundation/NSNotification/Name-swift.struct/GCRacingWheelDidDisconnect.md)
+- [static let GCRacingWheelDidDisconnect: NSNotification.Name](../foundation/nsnotification/name-swift.struct/gcracingwheeldiddisconnect.md)
   A notification that posts after a racing wheel controller disconnects from the device.
 
 

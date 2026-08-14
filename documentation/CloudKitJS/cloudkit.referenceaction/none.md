@@ -16,7 +16,7 @@ const String NONE;
 
 #### Discussion
 
-See [`CKRecord.ReferenceAction`](https://developer.apple.com/documentation/CloudKit/CKRecord/ReferenceAction) in CloudKit Framework Reference.
+See [`CKRecord.ReferenceAction`](https://developer.apple.com/documentation/cloudkit/ckrecord/referenceaction) in CloudKit Framework Reference.
 
 ## See Also
 

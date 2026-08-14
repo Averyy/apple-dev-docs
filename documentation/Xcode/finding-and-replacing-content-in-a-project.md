@@ -10,7 +10,7 @@ Xcode offers sophisticated search and replace capabilities in the Find navigator
 
 To display the Find navigator, click the magnifying glass icon in the navigator area of your project.
 
-![Perform advanced searches using the Find navigator.](https://docs-assets.developer.apple.com/published/6c5ce8aa8d50cf3d3c1a7f4f3d1ee027/find-navigator-overview%402x.png)
+![Perform advanced searches using the Find navigator.](/images/com.apple.Xcode/find-navigator-overview@2x.png)
 
 ##### Find Text Strings
 
@@ -59,7 +59,7 @@ When you execute a search, Xcode searches all files in your project by default. 
 - Click a project or group to restrict searches to the designated part of your Xcode project.
 - Create a custom scope to restrict searches to files in specific locations or files with a specific name, path, extension, type, or source-control status.
 
-![Create a custom scope in the Find navigator to limit where Xcode searches.](https://docs-assets.developer.apple.com/published/214ec1c6561b93f6b768c9a98174ee4c/find-scope-search%402x.png)
+![Create a custom scope in the Find navigator to limit where Xcode searches.](/images/com.apple.Xcode/find-scope-search@2x.png)
 
 ##### Refine Searches to Match Predefined Pattern Strings
 
@@ -67,15 +67,15 @@ Pattern tokens help you match strings that contain variable content. For example
 
 To add a pattern to your search string, click the magnifying glass in the search field and choose Insert Pattern from the pop-up menu.
 
-![Insert a pattern in the search field of the Find navigator.](https://docs-assets.developer.apple.com/published/8fe20fb0a7b58fede042ce50ab83e7cc/find-insert-pattern%402x.png)
+![Insert a pattern in the search field of the Find navigator.](/images/com.apple.Xcode/find-insert-pattern@2x.png)
 
 Select the pattern you want from the pop-up menu to add it to your search field. Xcode defines pattern tokens for white space, URLs, hexadecimal digits, and other specific character sets. Include one or more tokens plus literal text to perform complex pattern matching.
 
-![Select search patterns from the pop-up menu to add them to the search field of the Find navigator.](https://docs-assets.developer.apple.com/published/c89d561cfbf4e8657898de8c495ca41f/find-pattern-menu%402x.png)
+![Select search patterns from the pop-up menu to add them to the search field of the Find navigator.](/images/com.apple.Xcode/find-pattern-menu@2x.png)
 
 ##### Find or Replace Using a Regular Expression
 
-Regular expressions let you define your own custom pattern strings to use during matches. The [`NSRegularExpression`](https://developer.apple.com/documentation/Foundation/NSRegularExpression) class in the Foundation framework defines the syntax that you use for Xcode regular expressions.
+Regular expressions let you define your own custom pattern strings to use during matches. The [`NSRegularExpression`](https://developer.apple.com/documentation/foundation/nsregularexpression) class in the Foundation framework defines the syntax that you use for Xcode regular expressions.
 
 To find or replace text using a regular expression:
 
@@ -85,7 +85,7 @@ To find or replace text using a regular expression:
 4. Select a case-sensitivity option from the pop-up menu.
 5. Press Return.
 
-![Search using a regular expression to more precisely match specific patterns.](https://docs-assets.developer.apple.com/published/f0837dede7b64a2c6c8bbf2c8e1e6550/find-regular-expression%402x.png)
+![Search using a regular expression to more precisely match specific patterns.](/images/com.apple.Xcode/find-regular-expression@2x.png)
 
 ## See Also
 

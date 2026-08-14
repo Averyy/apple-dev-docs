@@ -24,7 +24,7 @@ The returned object retains the `CGEventRef` object (`cgEvent`) until it (the Ob
 
 ## Parameters
 
-- `cgEvent`: A [`CGEvent`](https://developer.apple.com/documentation/CoreGraphics/CGEvent) opaque type that represents an event.
+- `cgEvent`: A [`CGEvent`](https://developer.apple.com/documentation/coregraphics/cgevent) opaque type that represents an event.
 
 ## See Also
 

@@ -27,7 +27,7 @@ A new data table.
 
 Use this Boolean column–based subscript to create a new table by masking a subset of the table rows.
 
-![A table of book titles and genres such as “Hamlet” and “Drama” on the](https://docs-assets.developer.apple.com/published/77efab88ddfc6edd3497ca0c3cd9ab26/MLDataTable-subscript%28_%3A%29-3opgl-1%402x.png)
+![A table of book titles and genres such as “Hamlet” and “Drama” on the](/images/com.apple.createml/MLDataTable-subscript(_:)-3opgl-1@2x.png)
 
 For example, to filter the values in a data table as shown above, begin by creating a table with the original data.
 

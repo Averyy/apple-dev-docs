@@ -29,7 +29,7 @@ Query notifications are posted within the context of the same thread which execu
 ## Parameters
 
 - `query`: The query to execute.
-- `optionFlags`: A bitwise OR of the   to be used by the query.
+- `optionFlags`: A bitwise OR of the `MDQueryOptionFlags` to be used by the query.
 
 ## See Also
 

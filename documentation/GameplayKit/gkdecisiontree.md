@@ -35,7 +35,7 @@ When you use the [`GKDecisionTree`](gkdecisiontree.md) class, attributes and act
 
 [`Figure 1`](gkdecisiontree#1965709.md) illustrates a possible tree structure based on the above example attributes, branches, and actions.
 
-![None](https://docs-assets.developer.apple.com/published/830b9b95793f8ae2657e979f69f65b17/media-1965709%402x.png)
+![None](/images/com.apple.gameplaykit/media-1965709@2x.png)
 
 ##### Creating a Decision Tree
 
@@ -45,7 +45,7 @@ In a *manually defined decision tree*, you define each attribute to be tested (o
 
 In a *learned decision tree*, you provide a set of attributes (or questions); a body of example items, each of which represents a set of attribute values (or answers to questions); and the final action to be taken for each example. The [`GKDecisionTree`](gkdecisiontree.md) class then automatically infers a decision tree structure that, when presented with a set of attribute values matching or similar to one of your examples, predicts the corresponding action. To create a learned decision tree, use the [`init(examples:actions:attributes:)`](gkdecisiontree/init(examples:actions:attributes:).md) initializer. The following table shows sample input for a learned decision tree (based on the same hypothetical game shown in [`Figure 1`](gkdecisiontree#1965709.md)).
 
-| Opponent Type ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) (“Type?” attribute) | Opponent Health ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) (“HP?” attribute) | Can Use Special Move ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) (“Special?” attribute) | Move to Use ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) (Action) |
+| Opponent Type ![None](/images/com.apple.gameplaykit/spacer.png) (“Type?” attribute) | Opponent Health ![None](/images/com.apple.gameplaykit/spacer.png) (“HP?” attribute) | Can Use Special Move ![None](/images/com.apple.gameplaykit/spacer.png) (“Special?” attribute) | Move to Use ![None](/images/com.apple.gameplaykit/spacer.png) (Action) |
 | --- | --- | --- | --- |
 | Electric | 10 | Yes | Psychic Strike |
 | Electric | 30 | No | Pound |
@@ -55,7 +55,7 @@ In a *learned decision tree*, you provide a set of attributes (or questions); a 
 | Water | 10 | No | Pound |
 | Water | 40 | No | Tackle |
 
-After creating either kind of decision tree, you can use the inherited [`description`](https://developer.apple.com/documentation/ObjectiveC/NSObjectProtocol/description) property to examine its structure.
+After creating either kind of decision tree, you can use the inherited [`description`](https://developer.apple.com/documentation/objectivec/nsobjectprotocol/description) property to examine its structure.
 
 ##### Making Decisions
 
@@ -112,16 +112,16 @@ NSString *action = [myDecisionTree findActionForAnswers:answers];
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCoding](../Foundation/NSCoding.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [NSSecureCoding](../Foundation/NSSecureCoding.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCoding](../foundation/nscoding.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSSecureCoding](../foundation/nssecurecoding.md)
 
 ## See Also
 

@@ -16,7 +16,7 @@ Enable drag-and-drop interactions in lists, tables and custom views.
 
 This sample code project demonstrates how a SwiftUI view can act as a drag source or drop destination.
 
-To enable drag interactions, add the [`draggable(_:)`](view/draggable(_:).md) modifier to a view to send or receive [`Transferable`](https://developer.apple.com/documentation/CoreTransferable/Transferable) items within an app, among a collection of your own apps, or between your apps and others that support the import or export of a specified data format. To handle dropped content, use the [`dropDestination(for:action:isTargeted:)`](view/dropdestination(for:action:istargeted:).md) modifier to receive the expected dropped item.
+To enable drag interactions, add the [`draggable(_:)`](view/draggable(_:).md) modifier to a view to send or receive [`Transferable`](https://developer.apple.com/documentation/coretransferable/transferable) items within an app, among a collection of your own apps, or between your apps and others that support the import or export of a specified data format. To handle dropped content, use the [`dropDestination(for:action:isTargeted:)`](view/dropdestination(for:action:istargeted:).md) modifier to receive the expected dropped item.
 
 In the sample app, people can drag a contact from a list of contacts and drop it into another app; such as Contacts, Notes, or Messages. Additionally, people can drag and drop new contacts from other apps, like Contacts or Notes, into the sample app.
 
@@ -43,7 +43,7 @@ List {
 
 When someone drags a contact from a list of contacts, the app uses the [`draggable(_:preview:)`](view/draggable(_:preview:).md) modifier to define a custom preview for the dragged item.
 
-To learn more about adopting the draggable API to provide items for drag operations, see [`Making a view into a drag source`](Making-a-view-into-a-drag-source.md).
+To learn more about adopting the draggable API to provide items for drag operations, see [`Making a view into a drag source`](making-a-view-into-a-drag-source.md).
 
 ##### Enable Drop Interactions
 
@@ -79,13 +79,13 @@ static var transferRepresentation: some TransferRepresentation {
 }
 ```
 
-If the app receives an item with a custom [`Uniform Type Identifiers`](https://developer.apple.com/documentation/UniformTypeIdentifiers), for example `com.example.contact`, it uses the [`CodableRepresentation`](https://developer.apple.com/documentation/CoreTransferable/CodableRepresentation) to represent the `Contact` data structure.
+If the app receives an item with a custom [`Uniform Type Identifiers`](https://developer.apple.com/documentation/uniformtypeidentifiers), for example `com.example.contact`, it uses the [`CodableRepresentation`](https://developer.apple.com/documentation/coretransferable/codablerepresentation) to represent the `Contact` data structure.
 
 `com.example.contact` declared by the sample app conforms to public.contact. To ensure the operating system understands how to handle the content type, it should conform to either `UTType.data`, `UTType.package`, or one of the types that inherit from these two.
 
-[`ProxyRepresentation`](https://developer.apple.com/documentation/CoreTransferable/ProxyRepresentation) serves as an alternative representation that allows people to drag and drop a contact into any text editor that doesn’t support `com.example.contact` or [`vCard`](https://developer.apple.com/documentation/UniformTypeIdentifiers/UTType-swift.struct/vCard) content but works with text formats. In this case, the app exports the `phoneNumber` as a string. When someone drops a string on the [`List`](list.md) or [`Table`](table.md), the sample app uses the `ProxyRepresentation` to convert that string into a `Contact` object.
+[`ProxyRepresentation`](https://developer.apple.com/documentation/coretransferable/proxyrepresentation) serves as an alternative representation that allows people to drag and drop a contact into any text editor that doesn’t support `com.example.contact` or [`vCard`](https://developer.apple.com/documentation/uniformtypeidentifiers/uttype-swift.struct/vcard) content but works with text formats. In this case, the app exports the `phoneNumber` as a string. When someone drops a string on the [`List`](list.md) or [`Table`](table.md), the sample app uses the `ProxyRepresentation` to convert that string into a `Contact` object.
 
-Finally, [`DataRepresentation`](https://developer.apple.com/documentation/CoreTransferable/DataRepresentation) creates a binary representation of the `Contact` object and constructs the value for the receiver that supports the `vCard` content type.
+Finally, [`DataRepresentation`](https://developer.apple.com/documentation/coretransferable/datarepresentation) creates a binary representation of the `Contact` object and constructs the value for the receiver that supports the `vCard` content type.
 
 When someone drops the contact on the `Table` or `List`, the completion handler inserts the dropped contact into the collection of contacts at the drop location. If the drop doesn’t specify an index, the completion handler adds the dropped contact to the end of the collection.
 

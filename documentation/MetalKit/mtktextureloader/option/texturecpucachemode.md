@@ -21,9 +21,9 @@ static let textureCPUCacheMode: MTKTextureLoader.Option
 
 #### Discussion
 
-The value for this key is an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) object containing a [`MTLCPUCacheMode`](https://developer.apple.com/documentation/Metal/MTLCPUCacheMode) value.
+The value for this key is an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) object containing a [`MTLCPUCacheMode`](https://developer.apple.com/documentation/metal/mtlcpucachemode) value.
 
-If this key is not specified, the default value is the value associated with [`MTLCPUCacheMode.defaultCache`](https://developer.apple.com/documentation/Metal/MTLCPUCacheMode/defaultCache).
+If this key is not specified, the default value is the value associated with [`MTLCPUCacheMode.defaultCache`](https://developer.apple.com/documentation/metal/mtlcpucachemode/defaultcache).
 
 ## See Also
 

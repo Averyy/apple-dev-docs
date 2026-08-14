@@ -16,7 +16,7 @@ let IKImageBrowserPDFPageRepresentationType: String
 
 #### Discussion
 
-A [`PDFPage`](https://developer.apple.com/documentation/PDFKit/PDFPage) instance or a [`CGPDFPage`](https://developer.apple.com/documentation/CoreGraphics/CGPDFPage).
+A [`PDFPage`](https://developer.apple.com/documentation/pdfkit/pdfpage) instance or a [`CGPDFPage`](https://developer.apple.com/documentation/coregraphics/cgpdfpage).
 
 ## See Also
 

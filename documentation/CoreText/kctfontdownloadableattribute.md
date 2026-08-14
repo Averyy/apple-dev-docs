@@ -22,7 +22,7 @@ let kCTFontDownloadableAttribute: CFString
 
 #### Discussion
 
-The value associated with this key is a [`CFBoolean`](https://developer.apple.com/documentation/CoreFoundation/CFBoolean).  If it is [`kCFBooleanTrue`](https://developer.apple.com/documentation/CoreFoundation/kCFBooleanTrue), Core Text attempts to download a font if necessary when matching a descriptor.
+The value associated with this key is a [`CFBoolean`](https://developer.apple.com/documentation/corefoundation/cfboolean).  If it is [`kCFBooleanTrue`](https://developer.apple.com/documentation/corefoundation/kcfbooleantrue), Core Text attempts to download a font if necessary when matching a descriptor.
 
 ## See Also
 

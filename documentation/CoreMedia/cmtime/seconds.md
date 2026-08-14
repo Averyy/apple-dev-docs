@@ -22,7 +22,7 @@ var seconds: Double { get }
 
 #### Discussion
 
-If the time is [`invalid`](cmsampletiminginfo/invalid.md) or [`indefinite`](cmtimeflags/indefinite.md), the value equals [`nan`](https://developer.apple.com/documentation/Swift/Double/nan).
+If the time is [`invalid`](cmsampletiminginfo/invalid.md) or [`indefinite`](cmtimeflags/indefinite.md), the value equals [`nan`](https://developer.apple.com/documentation/swift/double/nan).
 
 ## See Also
 

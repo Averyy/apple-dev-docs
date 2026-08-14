@@ -12,14 +12,14 @@ Create a hike planning app using SwiftUI and RealityKit.
 
 Canyon Crosser is a volumetric app that allows people to plan a hike through a historic trail in Grand Canyon National Park. As hiking in the desert revolves around temperature, the app allows people to see the predicted temperatures and plan rest stops and departure time accordingly.
 
-Canyon Crosser shows off a number of [`RealityKit`](https://developer.apple.com/documentation/RealityKit) and visionOS features, including spatial layout, RealityKit and [`SwiftUI`](https://developer.apple.com/documentation/SwiftUI) interoperability, and dynamic bounds extensions for volumes.
+Canyon Crosser shows off a number of [`RealityKit`](https://developer.apple.com/documentation/realitykit) and visionOS features, including spatial layout, RealityKit and [`SwiftUI`](https://developer.apple.com/documentation/swiftui) interoperability, and dynamic bounds extensions for volumes.
 
 Canyon Crosser uses RealityKit to present 3D models and SwiftUI to present standard user interface elements like buttons and pickers. The app uses Reality Composer Pro to manage the models and lighting effects.
 
 Canyon Crosser demonstrates the use of several visionOS APIs:
 
 - **Spatial Layout** — Demonstrates techniques for positioning 2D and 3D content in a volume.
-- **Framework Interoperability** — Illustrates how to add SwiftUI views to entities in a [`RealityView`](https://developer.apple.com/documentation/RealityKit/RealityView).
+- **Framework Interoperability** — Illustrates how to add SwiftUI views to entities in a [`RealityView`](https://developer.apple.com/documentation/realitykit/realityview).
 - **Observable Entities** — Shows how to dynamically update and observe changes on RealityKit entities.
 - **Dynamic Bounds Restriction** — Shows how to render content outside the bounds of the volumetric window.
 
@@ -27,15 +27,15 @@ Canyon Crosser demonstrates the use of several visionOS APIs:
 
 After launching Canyon Crosser, the app displays a volumetric window featuring a carousel of landmarks. This carousel allows people to select a virtual hiking destination. While all landmarks are tappable in this example, they currently all lead to the Grand Canyon experience.
 
-Canyon Crosser takes advantage of spatial layout to implement the carousel by using a combination of depth layouts and 3D rotations. To position the landmark models and the carousel base at the bottom of the volume, it uses a [`VStackLayout`](https://developer.apple.com/documentation/SwiftUI/VStackLayout) with a depth alignment of `.center` and a [`Spacer`](https://developer.apple.com/documentation/SwiftUI/Spacer).
+Canyon Crosser takes advantage of spatial layout to implement the carousel by using a combination of depth layouts and 3D rotations. To position the landmark models and the carousel base at the bottom of the volume, it uses a [`VStackLayout`](https://developer.apple.com/documentation/swiftui/vstacklayout) with a depth alignment of `.center` and a [`Spacer`](https://developer.apple.com/documentation/swiftui/spacer).
 
-The app uses a custom [`Layout`](https://developer.apple.com/documentation/SwiftUI/Layout) implementation, named `RadialLayout`, to arrange the individual landmark items in a circle. To present the carousel horizontally, the entire `RadialLayout` is rotated 90 degrees around the x-axis using
+The app uses a custom [`Layout`](https://developer.apple.com/documentation/swiftui/layout) implementation, named `RadialLayout`, to arrange the individual landmark items in a circle. To present the carousel horizontally, the entire `RadialLayout` is rotated 90 degrees around the x-axis using
 
 ```swift
 .rotation3DLayout(Rotation3D(angle: .degrees(90), axis: .x)))
 ```
 
-Because the models initially load upright, they counter-rotate with [`rotation3DLayout(_:)`](https://developer.apple.com/documentation/SwiftUI/View/rotation3DLayout(_:)) by -90 degrees to compensate.
+Because the models initially load upright, they counter-rotate with [`rotation3DLayout(_:)`](https://developer.apple.com/documentation/swiftui/view/rotation3dlayout(_:)) by -90 degrees to compensate.
 
 Canyon Crosser uses the following to create the carousel:
 
@@ -86,7 +86,7 @@ VStackLayout(spacing: 20).depthAlignment(.front) {
 
 #### Present Swiftui Views From a Volume
 
-After selecting a landmark, three named trailhead markers appear for the Grand Canyon. The trailhead names appear above the marker at the top of the trail. Each trailhead has a sub-entity that has a [`ViewAttachmentComponent`](https://developer.apple.com/documentation/RealityKit/ViewAttachmentComponent). The `ViewAttachmentComponent` attaches SwiftUI views to entities.
+After selecting a landmark, three named trailhead markers appear for the Grand Canyon. The trailhead names appear above the marker at the top of the trail. Each trailhead has a sub-entity that has a [`ViewAttachmentComponent`](https://developer.apple.com/documentation/realitykit/viewattachmentcomponent). The `ViewAttachmentComponent` attaches SwiftUI views to entities.
 
 It often makes sense to present views directly from an entity. However, sometimes it may be better to offset the presentation of views from the presenting entity. Canyon Crosser uses a descendant entity to present the view from the desired location:
 
@@ -116,9 +116,9 @@ let trailheadNamePositioningEntity = addBillboardingPositioningEntity(
 trailheadNamePositioningEntity.scale = 1.0 / trailheadEntity.scale(relativeTo: nil)
 ```
 
-![A screenshot that shows the Grand Canyon and the three trailhead signs. Each trail has a view attachment with a Text view that displays the name of the trail. The three trails are: Bright Angle Trail Hike, Trail of Time Hike, and Mather Point Hike.](https://docs-assets.developer.apple.com/published/51f3ca8e4e319d2fba007eae87b77db0/HikeAttachments%402x.png)
+![A screenshot that shows the Grand Canyon and the three trailhead signs. Each trail has a view attachment with a Text view that displays the name of the trail. The three trails are: Bright Angle Trail Hike, Trail of Time Hike, and Mather Point Hike.](/images/com.apple.visionOS/HikeAttachments@2x.png)
 
-Use [`PresentationComponent`](https://developer.apple.com/documentation/RealityKit/PresentationComponent) to present a SwiftUI view as a popover. The component has an `isPresented` property that controls the popover’s visibility. The popover presents modally, similar to popovers on other platforms.
+Use [`PresentationComponent`](https://developer.apple.com/documentation/realitykit/presentationcomponent) to present a SwiftUI view as a popover. The component has an `isPresented` property that controls the popover’s visibility. The popover presents modally, similar to popovers on other platforms.
 
 ```swift
 var trailHeadPopover = PresentationComponent(
@@ -134,7 +134,7 @@ let trailheadPopoverPositioningEntity = addBillboardingPositioningEntity(
 )
 ```
 
-![A screenshot that shows the Grand Canyon and the Bright Angle Trail selected. There is a popover showing a photo of the trail and a description of the hiking trail.](https://docs-assets.developer.apple.com/published/3f40ea66e10ecc349aa8d3cef0365c6a/HikePopover%402x.png)
+![A screenshot that shows the Grand Canyon and the Bright Angle Trail selected. There is a popover showing a photo of the trail and a description of the hiking trail.](/images/com.apple.visionOS/HikePopover@2x.png)
 
 > **Note**: There’s no need to apply an inverse scale to this entity because popovers use the dynamic scaling built into visionOS.
 
@@ -142,7 +142,7 @@ Choosing “Hike This Trail” activates the UI to allow people to interact with
 
 #### Use Observable Entities and Components for Dynamic Updates
 
-SwiftUI views can react to changes in components attached to an [`Observable`](https://developer.apple.com/documentation/Observation/Observable) entity to drive dynamic updates throughout the app.
+SwiftUI views can react to changes in components attached to an [`Observable`](https://developer.apple.com/documentation/observation/observable) entity to drive dynamic updates throughout the app.
 
 > **Note**: For a comprehensive introduction to observable entities, watch [`Better together: SwiftUI and RealityKit`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2025/274).
 
@@ -189,15 +189,15 @@ The getter uses the `observable` property on the entity so any reference to this
 
 > ❗ **Important**: Modifying any variable within an observable component causes the entire component to update. Carefully consider the scope of your components to optimize performance. Also avoid observing and modifying the same variable within a component in the same view to prevent infinite loops.
 
-The best places to modify observable properties are in a custom system, a gesture closure, or the `make: ` closure of your [`RealityView`](https://developer.apple.com/documentation/RealityKit/RealityView). Avoid modifying observable properties in view bodies or the `update: ` closure. The `make: ` closure of a RealityView differs from the `update: ` closure in that it doesn’t create a dependency when you access an observable property and doesn’t re-run on changes to the property.
+The best places to modify observable properties are in a custom system, a gesture closure, or the `make: ` closure of your [`RealityView`](https://developer.apple.com/documentation/realitykit/realityview). Avoid modifying observable properties in view bodies or the `update: ` closure. The `make: ` closure of a RealityView differs from the `update: ` closure in that it doesn’t create a dependency when you access an observable property and doesn’t re-run on changes to the property.
 
 #### Request Additional Margins for Drawing Beyond the Volumes Bounds
 
-Use the [`preferredWindowClippingMargins(_:_:)`](https://developer.apple.com/documentation/SwiftUI/View/preferredWindowClippingMargins(_:_:)) view modifier to request additional margins for drawing beyond the bounds of the window. This modifies the system behavior allowing you to display content that extends beyond the volume’s bounds.
+Use the [`preferredWindowClippingMargins(_:_:)`](https://developer.apple.com/documentation/swiftui/view/preferredwindowclippingmargins(_:_:)) view modifier to request additional margins for drawing beyond the bounds of the window. This modifies the system behavior allowing you to display content that extends beyond the volume’s bounds.
 
-![A screenshot that shows the clouds extending outside of the bounds of the Grand Canyon.](https://docs-assets.developer.apple.com/published/920144e73957d1b2159e6405ad13cd04/Clouds%402x.png)
+![A screenshot that shows the clouds extending outside of the bounds of the Grand Canyon.](/images/com.apple.visionOS/Clouds@2x.png)
 
-Canyon Crosser uses this API to request additional space at the leading and trailing edges to draw the clouds as they come into the volume. To read the value of the window clipping margins, use the [`windowClippingMargins`](https://developer.apple.com/documentation/SwiftUI/EnvironmentValues/windowClippingMargins) environment variable. Monitor for changes of this environment value to update the app as needed:
+Canyon Crosser uses this API to request additional space at the leading and trailing edges to draw the clouds as they come into the volume. To read the value of the window clipping margins, use the [`windowClippingMargins`](https://developer.apple.com/documentation/swiftui/environmentvalues/windowclippingmargins) environment variable. Monitor for changes of this environment value to update the app as needed:
 
 ```swift
 .onChange(of: windowClippingMargins) { _, newValue in

@@ -52,7 +52,7 @@ In addition to the methods described in this protocol, an `NSURLConnection` dele
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 - [NSURLConnectionDelegate](nsurlconnectiondelegate.md)
 
 ## See Also

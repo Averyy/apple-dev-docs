@@ -31,7 +31,7 @@ Because streams cannot be reset, read streams created this way cannot be enabled
 
 If the Content-Length header is set in `requestHeaders`, it is assumed that the length is correct and that `requestBody` will report end-of-stream after precisely Content-Length bytes have been read from it. If the Content-Length header is not set, the chunked transfer-encoding will be added to `requestHeaders`, and bytes read from `requestBody` will be transmitted chunked. The body of `requestHeaders` is ignored.
 
-After creating the read stream, you can call [`CFReadStreamGetError(_:)`](https://developer.apple.com/documentation/CoreFoundation/CFReadStreamGetError(_:)) at any time to check the status of the stream. You may want to call `CFHTTPReadStreamSetProxy` to set the name and port number for a proxy. To serialize the request and send it, call [`CFReadStreamOpen(_:)`](https://developer.apple.com/documentation/CoreFoundation/CFReadStreamOpen(_:)).
+After creating the read stream, you can call [`CFReadStreamGetError(_:)`](https://developer.apple.com/documentation/corefoundation/cfreadstreamgeterror(_:)) at any time to check the status of the stream. You may want to call `CFHTTPReadStreamSetProxy` to set the name and port number for a proxy. To serialize the request and send it, call [`CFReadStreamOpen(_:)`](https://developer.apple.com/documentation/corefoundation/cfreadstreamopen(_:)).
 
 ## Parameters
 
@@ -53,7 +53,7 @@ After creating the read stream, you can call [`CFReadStreamGetError(_:)`](https:
 - [let kCFStreamPropertyHTTPProxyPort: CFString](kcfstreampropertyhttpproxyport.md)
 - [let kCFStreamPropertyHTTPRequestBytesWrittenCount: CFString](kcfstreampropertyhttprequestbyteswrittencount.md)
 - [let kCFStreamPropertyHTTPResponseHeader: CFString](kcfstreampropertyhttpresponseheader.md)
-  HTTP Response Header property. When copied by [`CFReadStreamCopyProperty(_:_:)`](https://developer.apple.com/documentation/CoreFoundation/CFReadStreamCopyProperty(_:_:)), the header of an HTTP response message is returned.
+  HTTP Response Header property. When copied by [`CFReadStreamCopyProperty(_:_:)`](https://developer.apple.com/documentation/corefoundation/cfreadstreamcopyproperty(_:_:)), the header of an HTTP response message is returned.
 - [let kCFStreamPropertyHTTPSProxyHost: CFString](kcfstreampropertyhttpsproxyhost.md)
 - [let kCFStreamPropertyHTTPSProxyPort: CFString](kcfstreampropertyhttpsproxyport.md)
 - [let kCFStreamPropertyHTTPShouldAutoredirect: CFString](kcfstreampropertyhttpshouldautoredirect.md)

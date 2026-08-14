@@ -36,7 +36,7 @@ To configure an icon and tooltip for the compose session handler’s view contro
 <dict>
 ```
 
-Include an icon in your extension’s bundle using the name you specify for [`MEComposeIcon`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSExtension/NSExtensionAttributes/MEComposeSession/MEComposeIcon).
+Include an icon in your extension’s bundle using the name you specify for [`MEComposeIcon`](https://developer.apple.com/documentation/bundleresources/information-property-list/nsextension/nsextensionattributes/mecomposesession/mecomposeicon).
 
 > 💡 **Tip**:  Include the icon in an asset catalog in your extension’s bundle, and include both light and dark variants.
 

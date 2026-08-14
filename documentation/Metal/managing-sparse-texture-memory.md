@@ -10,7 +10,7 @@ When you create a texture, by default, Metal allocates memory to hold the textur
 
 To use sparse textures, allocate a sparse heap from which to allocate memory, and then create sparse textures from this heap. Initially, a texture has no storage. To add storage to a region inside the texture, ask the GPU to map memory from the heap for that region. A *sparse tile* is a memory allocation (as opposed to memory tiles a GPU uses for tile-based rendering). Sparse tiles are conceptually similar to virtual memory pages. When you don’t need a region to have storage, you can unmap its sparse tile and recover that memory.
 
-![A figure showing a single sparse heap and two sparse textures. Each texture has a few regions mapped to sparse tiles on the heap.](https://docs-assets.developer.apple.com/published/2463ddd14ea55eb4285774acb6f90d69/managing-sparse-texture-memory-1%402x.png)
+![A figure showing a single sparse heap and two sparse textures. Each texture has a few regions mapped to sparse tiles on the heap.](/images/com.apple.metal/managing-sparse-texture-memory-1@2x.png)
 
 Because sparse textures work closely with texture mipmaps, you should be familiar with mipmaps before using sparse textures. For more information, see [`Improving texture sampling quality and performance with mipmaps`](improving-texture-sampling-quality-and-performance-with-mipmaps.md).
 

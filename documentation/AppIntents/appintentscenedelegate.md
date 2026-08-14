@@ -40,8 +40,8 @@ func scene(_ scene: UIScene, willPerformAppIntent appIntent: any AppIntent) {
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [UISceneDelegate](../UIKit/UISceneDelegate.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [UISceneDelegate](../uikit/uiscenedelegate.md)
 
 ## See Also
 

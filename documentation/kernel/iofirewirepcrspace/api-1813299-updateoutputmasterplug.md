@@ -15,8 +15,8 @@ virtual IOReturn updateOutputMasterPlug(
 
 ## Parameters
 
-- `oldVal`: Value returned by  .
-- `newVal`: new value to store in plug if it’s current value is  .
+- `oldVal`: Value returned by [`readOutputMasterPlug`](iofirewirepcrspace/1556234-readoutputmasterplug.md).
+- `newVal`: new value to store in plug if it’s current value is `oldVal`.
 
 ## See Also
 

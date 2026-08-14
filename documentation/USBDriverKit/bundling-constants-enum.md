@@ -12,8 +12,8 @@ Constants associated with bulk I/O transfers.
 
 ## See Also
 
-- [CreateMemoryDescriptorRing](IOUSBHostPipe/CreateMemoryDescriptorRing.md)
-- [SetMemoryDescriptor](IOUSBHostPipe/SetMemoryDescriptor.md)
+- [CreateMemoryDescriptorRing](iousbhostpipe/creatememorydescriptorring.md)
+- [SetMemoryDescriptor](iousbhostpipe/setmemorydescriptor.md)
 - [AsyncIOBundled](iousbhostpipe/asynciobundled.md)
   Enqueues a contiguous group of requests from the descriptor ring.
 - [CompleteAsyncIOBundled](iousbhostpipe/completeasynciobundled.md)

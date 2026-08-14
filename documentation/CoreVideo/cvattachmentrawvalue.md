@@ -38,8 +38,8 @@ This type encapsulates a raw attachment value and provides dictionary-like acces
 ## Relationships
 
 ### Conforms To
-- [Equatable](../Swift/Equatable.md)
-- [ExpressibleByDictionaryLiteral](../Swift/ExpressibleByDictionaryLiteral.md)
+- [Equatable](../swift/equatable.md)
+- [ExpressibleByDictionaryLiteral](../swift/expressiblebydictionaryliteral.md)
 
 ## See Also
 

@@ -10,7 +10,7 @@ When you perform color space conversions or other color transformations, it can 
 
 An example of a multidimensional lookup table is a 3D lookup table that converts RGB colors to the CMYK color model that’s commonly used in printing. As the following image illustrates, an RGB to CMYK multidimensional lookup table is a cube that represents the RGB color space, with axes for red, green, and blue. Each point in that cube corresponds to a unique RGB color that contains the corresponding CMYK value.
 
-![A computer-generated image of a cube that is built from eight smaller cubes on each axis. The smaller cube at the main cube’s origin is black. The smaller cubes along the x axis transition to red, the smaller cubes along the y axis transition to green, and the smaller cubes along the z axis transition to blue. Arrows point to two smaller cubes. The small cyan cube at the RGB position 0, 1, 1 represents the CMYK color 1, 0, 0, 0. The small red cube at the RGB position 1, 0, 0 represents the CMYK color 0, 1, 1, 0.](https://docs-assets.developer.apple.com/published/ab99d6f2b4c4ec76e9ba68f365d6bcf0/media-3707469%402x.png)
+![A computer-generated image of a cube that is built from eight smaller cubes on each axis. The smaller cube at the main cube’s origin is black. The smaller cubes along the x axis transition to red, the smaller cubes along the y axis transition to green, and the smaller cubes along the z axis transition to blue. Arrows point to two smaller cubes. The small cyan cube at the RGB position 0, 1, 1 represents the CMYK color 1, 0, 0, 0. The small red cube at the RGB position 1, 0, 0 represents the CMYK color 0, 1, 1, 0.](/images/com.apple.accelerate/media-3707469@2x.png)
 
 Each dimension of the RGB cube in the image above contains eight entries — that is, there are 8³ or 512 source samples, which appear as small cubes. Each sample contains four values that represent the CMYK values for the corresponding RGB color. For example, the sample for pure red (RGB `[1, 0, 0]`) contains the CMYK values `[0, 1, 1, 0]`, and the sample for cyan (RGB `[0, 1, 1]`) contains the CMYK values `[1, 0, 0, 0]`.
 
@@ -32,7 +32,7 @@ You can set the vImage multidimensional lookup table functions to linearly inter
 
 ##### Create the Table Data
 
-Supply the lookup table as a contiguous array of samples that define the lookup table values. The following code iterates over red, green, and blue values and creates an RGB [`CGColor`](https://developer.apple.com/documentation/CoreGraphics/CGColor) instance for each permutation. The code converts the RGB color instance to the CMYK color space and populates the lookup table with the cyan, magenta, yellow, and black components.
+Supply the lookup table as a contiguous array of samples that define the lookup table values. The following code iterates over red, green, and blue values and creates an RGB [`CGColor`](https://developer.apple.com/documentation/coregraphics/cgcolor) instance for each permutation. The code converts the RGB color instance to the CMYK color space and populates the lookup table with the cyan, magenta, yellow, and black components.
 
 ```swift
 let tableData = [UInt16](unsafeUninitializedCapacity: lookupTableElementCount) {
@@ -163,7 +163,7 @@ if error != kvImageNoError {
 
 On return, the four destination planar buffers contain the cyan, magenta, yellow, and black channels of the original RGB source image, as the following image shows:
 
-![Five images of flowers. The first image is a color photograph of a bunch of flowers. The other four are grayscale images of the cyan, magenta, yellow, and black components of the color photograph converted to CMYK.](https://docs-assets.developer.apple.com/published/7ee251b29f6425006b190ff71572513f/media-3707470%402x.png)
+![Five images of flowers. The first image is a color photograph of a bunch of flowers. The other four are grayscale images of the cyan, magenta, yellow, and black components of the color photograph converted to CMYK.](/images/com.apple.accelerate/media-3707470@2x.png)
 
 ##### Apply Multidimensional Lookup Tables to Pixel Buffers
 

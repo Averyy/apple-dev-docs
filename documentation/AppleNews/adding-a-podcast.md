@@ -13,7 +13,7 @@ By using the podcast component, you can add a link to a podcast without using ex
 - Create a podcast component.
 - Change the podcast orientation.
 
-![A screenshot of an Apple News article with a podcast on iPad.](https://docs-assets.developer.apple.com/published/850e8a5a83815fd545a5fc29646c63ad/media-3966391%402x.png)
+![A screenshot of an Apple News article with a podcast on iPad.](/images/com.apple.applenews/media-3966391@2x.png)
 
 ##### Add a Podcast in Your Article
 

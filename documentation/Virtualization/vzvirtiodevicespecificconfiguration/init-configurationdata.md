@@ -16,7 +16,7 @@ init(configurationData: Data)
 
 ## Parameters
 
-- `configurationData`: The device-specific configuration that you provide serialized into an [`NSData`](https://developer.apple.com/documentation/Foundation/NSData) object.
+- `configurationData`: The device-specific configuration that you provide serialized into an [`NSData`](https://developer.apple.com/documentation/foundation/nsdata) object.
 
 
 ---

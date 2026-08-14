@@ -29,7 +29,7 @@ Label("Fill Square", systemImage: "star")
     .symbolVariant(.fill.square)
 ```
 
-![A screenshot of a label that shows a star in a filled square](https://docs-assets.developer.apple.com/published/591d44c3cb28ab6dd1362093cff5fbd7/SymbolVariants-square-2%402x.png)
+![A screenshot of a label that shows a star in a filled square](/images/com.apple.SwiftUI/SymbolVariants-square-2@2x.png)
 
 ## See Also
 

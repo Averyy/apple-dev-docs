@@ -48,7 +48,7 @@ If you include an `authorizationRequest` dictionary in the federation pre-authen
 
 Web-based authentication assumes that the identity provider is a nonpublic client for OAuth and uses the following flow:
 
-![Diagram of the seven-step Platform SSO web-based authentication flow between the user, Platform SSO, and the identity provider (including its authorization endpoint).](https://docs-assets.developer.apple.com/published/56926a9c4f6960a8f3cbac915f473f94/psso-web-based-auth%402x.png)
+![Diagram of the seven-step Platform SSO web-based authentication flow between the user, Platform SSO, and the identity provider (including its authorization endpoint).](/images/com.apple.authenticationservices/psso-web-based-auth@2x.png)
 
 **Step 1**: The user starts the web-based authentication login flow.
 

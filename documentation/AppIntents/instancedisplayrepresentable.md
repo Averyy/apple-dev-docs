@@ -34,7 +34,7 @@ protocol InstanceDisplayRepresentable : CustomLocalizedStringResourceConvertible
 ## Relationships
 
 ### Inherits From
-- [CustomLocalizedStringResourceConvertible](../Foundation/CustomLocalizedStringResourceConvertible.md)
+- [CustomLocalizedStringResourceConvertible](../foundation/customlocalizedstringresourceconvertible.md)
 ### Inherited By
 - [AppEntity](appentity.md)
 - [AssistantEntity](assistantentity.md)

@@ -54,9 +54,9 @@ For example, the following code shows a slice operation that selects dimensions 
 
 ### Conforms To
 - [BNNSGraph.Builder.SliceIndex](bnnsgraph/builder/sliceindex.md)
-- [Equatable](../Swift/Equatable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Equatable](../swift/equatable.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 
 ---

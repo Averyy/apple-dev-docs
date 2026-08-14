@@ -32,7 +32,7 @@ A [`URLSessionStreamTask`](urlsessionstreamtask.md) object performs asynchronous
 
 When working with APIs that accept [`Stream`](stream.md) objects, you can create [`InputStream`](inputstream.md) and [`OutputStream`](outputstream.md) objects from an [`URLSessionStreamTask`](urlsessionstreamtask.md) object by calling the [`captureStreams()`](urlsessionstreamtask/capturestreams().md) method.
 
-> **Note**:  watchOS supports [`URLSessionStreamTask`](urlsessionstreamtask.md) for specific use cases. For more details, see [`TN3135: Low-level networking on watchOS`](https://developer.apple.com/documentation/Technotes/tn3135-low-level-networking-on-watchOS).
+> **Note**:  watchOS supports [`URLSessionStreamTask`](urlsessionstreamtask.md) for specific use cases. For more details, see [`TN3135: Low-level networking on watchOS`](https://developer.apple.com/documentation/technotes/tn3135-low-level-networking-on-watchos).
 
 ## Topics
 
@@ -64,16 +64,16 @@ When working with APIs that accept [`Stream`](stream.md) objects, you can create
 ### Inherits From
 - [URLSessionTask](urlsessiontask.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
 - [NSCopying](nscopying.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 - [ProgressReporting](progressreporting.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

@@ -19,7 +19,7 @@ class let touchBarAlarmTemplateName: String
 
 #### Discussion
 
-![Template image for alarm](https://docs-assets.developer.apple.com/published/d4865add1049022a4473bf45df436ab9/media-2793513%402x.png)
+![Template image for alarm](/images/com.apple.appkit/media-2793513@2x.png)
 
 Touch Bar template images are exclusively for use in [`NSTouchBarItem`](nstouchbaritem.md) objects and not in onscreen windows.
 

@@ -30,7 +30,7 @@ Calculating the intersection of date intervals is a commutative and associative 
 
 The following figure illustrates five `NSDateInterval` objects plotted on an arbitrary time axis. Each date interval spans its [`duration`](nsdateinterval/duration.md) from left to right, from its [`startDate`](nsdateinterval/startdate.md) to its [`endDate`](nsdateinterval/enddate.md).
 
-![None](https://docs-assets.developer.apple.com/published/f85a09eb2c779e75f6979bf07902e8e3/media-2556958%402x.png)
+![None](/images/com.apple.foundation/media-2556958@2x.png)
 
 The date intervals labeled **A** and **B** do not intersect, because the [`startDate`](nsdateinterval/startdate.md) of **B** occurs later than the [`endDate`](nsdateinterval/enddate.md) of **A**.
 

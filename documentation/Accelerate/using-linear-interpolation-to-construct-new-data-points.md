@@ -8,7 +8,7 @@ Fill the gaps in arrays of numerical data using linear interpolation.
 
 Linear interpolation is a method of calculating intermediate data between known values by conceptually drawing a straight line between two adjacent known values. An interpolated value is any point along that line. You use linear interpolation to, for example, draw graphs or animate between keyframes. The following figure shows an example interpolated value between two points:
 
-![An illustration containing two points joined by a straight line. The first point is at the bottom left of the illustration and the second point is at the top right of the illustration. A point on the line represents an interpolated value.](https://docs-assets.developer.apple.com/published/e5d40e6d782fb5fd618590f925934e0a/media-3122762%402x.png)
+![An illustration containing two points joined by a straight line. The first point is at the bottom left of the illustration and the second point is at the top right of the illustration. A point on the line represents an interpolated value.](/images/com.apple.accelerate/media-3122762@2x.png)
 
 vDSP provides the following functions to linearly interpolate between the elements in an array:
 
@@ -31,7 +31,7 @@ Each array consists of 10 elements. A pair of corresponding elements in the two 
 - Elements in the `values` array denote the vertical position.
 - Elements in the `indices` array denote the horizontal position.
 
-![A scatter chart showing a plot of the data points as small circles formed by the corresponding elements in vectors values and indices. ](https://docs-assets.developer.apple.com/published/a658658d3fc93c24761ba8a51c79f234/media-3122542%402x.png)
+![A scatter chart showing a plot of the data points as small circles formed by the corresponding elements in vectors values and indices. ](/images/com.apple.accelerate/media-3122542@2x.png)
 
 ##### Define the Constant That Represents the Number of Elements
 
@@ -52,7 +52,7 @@ let result = vDSP.linearInterpolate(values: values,
 
 On return, `result` contains the interpolated values. The following graph shows the values in `result` as a line between the known values that the `values` and `indices` arrays describe:
 
-![A line graph showing the known values as small circles joined together by a series of lines that represent the interpolation result.](https://docs-assets.developer.apple.com/published/f63663a39c97078fc7191f42f69a0e52/media-3122764%402x.png)
+![A line graph showing the known values as small circles joined together by a series of lines that represent the interpolation result.](/images/com.apple.accelerate/media-3122764@2x.png)
 
 ##### Interpolate with Fine Control
 
@@ -86,7 +86,7 @@ On return, `control` contains the following:
 
 The following figure shows a visualization of the values in `control`, with small circles indicating each integer index:
 
-![A line graph showing the linear ramp result as a line from the bottom left to the top right and a series of ten small circles along the line’s length that represent the known values.](https://docs-assets.developer.apple.com/published/4e51407e907ca6096167ee55c36a20d6/media-3122765%402x.png)
+![A line graph showing the linear ramp result as a line from the bottom left to the top right and a series of ten small circles along the line’s length that represent the known values.](/images/com.apple.accelerate/media-3122765@2x.png)
 
 The following code passes the control values to [`linearInterpolate(elementsOf:using:)`](vdsp/linearinterpolate(elementsof:using:)-49r3c.md) to calculate the interpolated values:
 
@@ -97,7 +97,7 @@ let result = vDSP.linearInterpolate(elementsOf: values,
 
 On return, `result` contains the interpolated values. The graph below shows the values in `result` as a line between the known values that the `values` and `indices` arrays describe:
 
-![A line graph showing the known values as small circles joined together by a series of lines that represent the interpolation result.](https://docs-assets.developer.apple.com/published/f63663a39c97078fc7191f42f69a0e52/media-3122535%402x.png)
+![A line graph showing the known values as small circles joined together by a series of lines that represent the interpolation result.](/images/com.apple.accelerate/media-3122535@2x.png)
 
 The result of [`linearInterpolate(elementsOf:using:)`](vdsp/linearinterpolate(elementsof:using:)-49r3c.md) is equal to the result of [`linearInterpolate(values:atIndices:)`](vdsp/linearinterpolate(values:atindices:)-5mbnu.md).
 
@@ -116,11 +116,11 @@ let control: [Float] = (0 ... count).map {
 
 The following graph shows a visualization of the values in `control`, with small circles indicating each integer index:
 
-![A line graph showing the smoothed ramp result as a line from the bottom left to the top right. The line flattens near the circles that indicate the index positions.](https://docs-assets.developer.apple.com/published/daffca770b58e0483c3146b920a85869/media-3122763%402x.png)
+![A line graph showing the smoothed ramp result as a line from the bottom left to the top right. The line flattens near the circles that indicate the index positions.](/images/com.apple.accelerate/media-3122763@2x.png)
 
 Using the same call to  [`linearInterpolate(elementsOf:using:)`](vdsp/linearinterpolate(elementsof:using:)-49r3c.md) as above, the result, as shown below, shows a smoother transition between the known values.
 
-![A line graph showing the known values as small circles joined together by a series of smoothly curved lines that represent the interpolation result. ](https://docs-assets.developer.apple.com/published/8128c0584c0f2e51ec4374c046989fb6/media-3122543%402x.png)
+![A line graph showing the known values as small circles joined together by a series of smoothly curved lines that represent the interpolation result. ](/images/com.apple.accelerate/media-3122543@2x.png)
 
 ## See Also
 

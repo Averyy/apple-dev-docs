@@ -98,16 +98,16 @@ Wi-Fi Aware may throw a [`WAError`](waerror.md) to indicate when an underlying i
 ## Relationships
 
 ### Conforms To
-- [Decodable](../Swift/Decodable.md)
-- [Encodable](../Swift/Encodable.md)
-- [Error](../Swift/Error.md)
-- [LocalizedError](../Foundation/LocalizedError.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Decodable](../swift/decodable.md)
+- [Encodable](../swift/encodable.md)
+- [Error](../swift/error.md)
+- [LocalizedError](../foundation/localizederror.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 
-- [enum NWError](../Network/NWError.md)
+- [enum NWError](../network/nwerror.md)
   The errors returned by objects in the Network framework.
 
 

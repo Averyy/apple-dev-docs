@@ -18,7 +18,7 @@ func disconnect(reason localizedReason: String, options: NSFileProviderManager.D
 
 > ❗ **Important**:  You can call this method from synchronous code using a completion handler, as shown on this page, or you can call it as an asynchronous method that has the following declaration: ```swift
 func disconnect(reason localizedReason: String, options: NSFileProviderManager.DisconnectionOptions = []) async throws
-``` For information about concurrency and asynchronous code in Swift, see [`Calling Objective-C APIs Asynchronously`](https://developer.apple.com/documentation/Swift/calling-objective-c-apis-asynchronously).
+``` For information about concurrency and asynchronous code in Swift, see [`Calling Objective-C APIs Asynchronously`](https://developer.apple.com/documentation/swift/calling-objective-c-apis-asynchronously).
 
 Call this method to disconnect the domain from the extension. While the domain is disconnected, the user can continue to browse its content, but the extension no longer receives updates about changes.
 

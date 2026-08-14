@@ -15,7 +15,7 @@ The `IntentPhrases` key contains sample phrases that a user might speak to initi
 
 Xcode helps you add example phrases to your vocabulary file. When you create a property list file with the name `AppIntentVocabulary.plist`, Xcode knows that the file should contain custom vocabulary, and it makes only the relevant keys available in the property list editor. The figure below shows an example of a global vocabulary file in Xcode that contains sample phrases for starting a workout.
 
-![Editing the sample phrases in Xcode](https://docs-assets.developer.apple.com/published/303fae81fa5dd2c525b5d0ecd208314c/media-2910039%402x.png)
+![Editing the sample phrases in Xcode](/images/com.apple.sirikit/media-2910039@2x.png)
 
 ## See Also
 

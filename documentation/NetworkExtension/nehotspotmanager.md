@@ -36,7 +36,7 @@ When the device initially joins a network, the hotspot helper enters the *evalua
 
 In the authenticating state, your [`NEHotspotAuthenticationProvider`](nehotspotauthenticationprovider.md) receives the [`NEHotspotHelperCommandType.authenticate`](nehotspothelpercommandtype/authenticate.md) command. At this point, the provider performs any network processing needed to make the network available for general network traffic. If authentication is successful, your provider calls [`createResponse(_:)`](nehotspothelpercommand/createresponse(_:).md) on the command to create a [`NEHotspotHelperResult.success`](nehotspothelperresult/success.md) response and returns it.
 
-While in the authenticating state, if your authentication provider determines that it needs interaction from the person using the device, create an alert with [`UNUserNotificationCenter`](https://developer.apple.com/documentation/UserNotifications/UNUserNotificationCenter), and respond to the command with an [`NEHotspotHelperResult.uiRequired`](nehotspothelperresult/uirequired.md) response. This transitions the state machine to a *Presenting UI* state, and the provider receives a command of type [`NEHotspotHelperCommandType.presentUI`](nehotspothelpercommandtype/presentui.md). The extension runs in the background in this state until the app collects the needed information from the person. After the app uses the information to complete the authentication, return a success response to enter the authenticated state.
+While in the authenticating state, if your authentication provider determines that it needs interaction from the person using the device, create an alert with [`UNUserNotificationCenter`](https://developer.apple.com/documentation/usernotifications/unusernotificationcenter), and respond to the command with an [`NEHotspotHelperResult.uiRequired`](nehotspothelperresult/uirequired.md) response. This transitions the state machine to a *Presenting UI* state, and the provider receives a command of type [`NEHotspotHelperCommandType.presentUI`](nehotspothelpercommandtype/presentui.md). The extension runs in the background in this state until the app collects the needed information from the person. After the app uses the information to complete the authentication, return a success response to enter the authenticated state.
 
 After a successful authentication, the network enters a *maintaining* state when the network is joined again. In this state, the provider periodically receives the [`NEHotspotHelperCommandType.maintain`](nehotspothelpercommandtype/maintain.md) command. To process this command, determine if the network remains able to carry general network traffic, and return success if this is the case. If not, and the network again requires authentication, return an [`NEHotspotHelperResult.authenticationRequired`](nehotspothelperresult/authenticationrequired.md) result.
 
@@ -72,8 +72,8 @@ After a successful authentication, the network enters a *maintaining* state when
 ## Relationships
 
 ### Conforms To
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

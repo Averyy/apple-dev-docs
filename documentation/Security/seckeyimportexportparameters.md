@@ -44,7 +44,7 @@ PKCS12 is an abbreviation for Public-Key Cryptography Standard # 12. This standa
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../Swift/BitwiseCopyable.md)
+- [BitwiseCopyable](../swift/bitwisecopyable.md)
 
 
 ---

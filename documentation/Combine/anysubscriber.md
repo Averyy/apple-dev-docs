@@ -39,9 +39,9 @@ Use an [`AnySubscriber`](anysubscriber.md) to wrap an existing subscriber whose 
 
 ### Conforms To
 - [CustomCombineIdentifierConvertible](customcombineidentifierconvertible.md)
-- [CustomPlaygroundDisplayConvertible](../Swift/CustomPlaygroundDisplayConvertible.md)
-- [CustomReflectable](../Swift/CustomReflectable.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [CustomPlaygroundDisplayConvertible](../swift/customplaygrounddisplayconvertible.md)
+- [CustomReflectable](../swift/customreflectable.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
 - [Subscriber](subscriber.md)
 
 ## See Also

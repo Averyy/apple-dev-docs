@@ -26,7 +26,7 @@ A promise that resolves with a [`DirectionsResponse`](directionsresponse.md) on 
 
 #### Discussion
 
-Call the [`route(request, callback)`](directions/route1.md) method to get directions.
+Call the [`route()`](directions/route1.md) method to get directions.
 
 MapKit JS returns directions asynchronously via a callback function. This callback function is invoked with two arguments, `error` on failure and `data` on success.
 

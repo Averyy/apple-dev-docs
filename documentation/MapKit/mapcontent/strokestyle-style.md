@@ -23,7 +23,7 @@ Applies the given stroke style to drawn map overlays.
 
 #### Return Value
 
-Returns [`MapContent`](mapcontent.md) with overlays drawn with the [`StrokeStyle`](https://developer.apple.com/documentation/SwiftUI/StrokeStyle) you specified.
+Returns [`MapContent`](mapcontent.md) with overlays drawn with the [`StrokeStyle`](https://developer.apple.com/documentation/swiftui/strokestyle) you specified.
 
 ## Parameters
 

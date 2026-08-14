@@ -21,7 +21,7 @@ You should not call this method directly.
 
 ## Parameters
 
-- `value`: The data the receiver should be set to. It can be an [`NSString`](https://developer.apple.com/documentation/Foundation/NSString), [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber), [`NSArray`](https://developer.apple.com/documentation/Foundation/NSArray), `SBObject`, or any other type of object supported by the Scripting Bridge framework.
+- `value`: The data the receiver should be set to. It can be an [`NSString`](https://developer.apple.com/documentation/foundation/nsstring), [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber), [`NSArray`](https://developer.apple.com/documentation/foundation/nsarray), `SBObject`, or any other type of object supported by the Scripting Bridge framework.
 
 
 ---

@@ -21,7 +21,7 @@ final class WebPage
 
 #### Overview
 
-A [`WebPage`](webpage.md) is an [`Observable`](https://developer.apple.com/documentation/Observation/Observable) type, which you use to access various properties of web content and track changes to them. Use [`WebPage`](webpage.md) to interact with web content, like evaluating JavaScript or converting the page to PDF data. The following example shows you how you can combine these capabilities to get specific metadata from an ephemeral page with a custom user agent:
+A [`WebPage`](webpage.md) is an [`Observable`](https://developer.apple.com/documentation/observation/observable) type, which you use to access various properties of web content and track changes to them. Use [`WebPage`](webpage.md) to interact with web content, like evaluating JavaScript or converting the page to PDF data. The following example shows you how you can combine these capabilities to get specific metadata from an ephemeral page with a custom user agent:
 
 ```swift
 func fetchMetadata(for url: URL) async throws -> (title: String, description: String) {
@@ -220,12 +220,12 @@ Use [`WebPage`](webpage.md) to programmatically navigate to various types of res
 ## Relationships
 
 ### Conforms To
-- [Copyable](../Swift/Copyable.md)
-- [Escapable](../Swift/Escapable.md)
-- [Observable](../Observation/Observable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
-- [Transferable](../CoreTransferable/Transferable.md)
+- [Copyable](../swift/copyable.md)
+- [Escapable](../swift/escapable.md)
+- [Observable](../observation/observable.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
+- [Transferable](../coretransferable/transferable.md)
 
 ## See Also
 

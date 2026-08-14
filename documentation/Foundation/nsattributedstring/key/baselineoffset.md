@@ -24,11 +24,11 @@ static let baselineOffset: NSAttributedString.Key
 
 The value of this attribute is an [`NSNumber`](nsnumber.md) object containing a floating point value indicating the character’s offset from the baseline, in points. The default value is `0`.
 
-> ❗ **Important**:  This attribute is different from [`kCTBaselineOffsetAttributeName`](https://developer.apple.com/documentation/CoreText/kCTBaselineOffsetAttributeName); you need to use [`kCTBaselineOffsetAttributeName`](https://developer.apple.com/documentation/CoreText/kCTBaselineOffsetAttributeName) if you are writing code for [`Core Text`](https://developer.apple.com/documentation/CoreText).
+> ❗ **Important**:  This attribute is different from [`kCTBaselineOffsetAttributeName`](https://developer.apple.com/documentation/coretext/kctbaselineoffsetattributename); you need to use [`kCTBaselineOffsetAttributeName`](https://developer.apple.com/documentation/coretext/kctbaselineoffsetattributename) if you are writing code for [`Core Text`](https://developer.apple.com/documentation/coretext).
 
 ## See Also
 
-- [let kCTBaselineOffsetAttributeName: CFString](../CoreText/kCTBaselineOffsetAttributeName.md)
+- [let kCTBaselineOffsetAttributeName: CFString](../coretext/kctbaselineoffsetattributename.md)
   Vertical offset for text position.
 - [static let backgroundColor: NSAttributedString.Key](nsattributedstring/key/backgroundcolor.md)
   The color of the background behind the text.

@@ -39,7 +39,7 @@ Text("Purple border inside the view bounds.")
     .border(Color.purple, width: 4)
 ```
 
-![A screenshot showing the text Purple border inside the view bounds.](https://docs-assets.developer.apple.com/published/bbfa1b5948bba764b28577b4339f2155/View-border-1%402x.png)
+![A screenshot showing the text Purple border inside the view bounds.](/images/com.apple.SwiftUI/View-border-1@2x.png)
 
 To place a border around the outside of this view, apply padding of the same width before adding the border:
 
@@ -49,7 +49,7 @@ Text("Purple border outside the view bounds.")
     .border(Color.purple, width: 4)
 ```
 
-![A screenshot showing the text Purple border outside the view bounds.](https://docs-assets.developer.apple.com/published/4c8091d3872d2d209592ace9b523b9d7/View-border-2%402x.png)
+![A screenshot showing the text Purple border outside the view bounds.](/images/com.apple.SwiftUI/View-border-2@2x.png)
 
 ## Parameters
 

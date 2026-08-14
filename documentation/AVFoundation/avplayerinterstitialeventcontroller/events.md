@@ -32,7 +32,7 @@ Changing the value of this property doesn’t impact currently playing interstit
 
 If you schedule interstitial events with dates that coincide either with the date of another scheduled interstitial event, or with a date range in the primary content’s timeline that the resumption offset of another scheduled interstitial event omits, the primary content remains suspended until all coinciding interstitial events complete. The system orders their playback according to their position in the array. The effective resumption offset is the sum of the resumption offsets of the coinciding events.
 
-> **Note**:  Summing a numeric [`CMTime`](https://developer.apple.com/documentation/CoreMedia/CMTime) and an [`indefinite`](https://developer.apple.com/documentation/CoreMedia/CMTime/indefinite) time results in an [`indefinite`](https://developer.apple.com/documentation/CoreMedia/CMTime/indefinite) value.
+> **Note**:  Summing a numeric [`CMTime`](https://developer.apple.com/documentation/coremedia/cmtime) and an [`indefinite`](https://developer.apple.com/documentation/coremedia/cmtime/indefinite) time results in an [`indefinite`](https://developer.apple.com/documentation/coremedia/cmtime/indefinite) value.
 
 ## See Also
 

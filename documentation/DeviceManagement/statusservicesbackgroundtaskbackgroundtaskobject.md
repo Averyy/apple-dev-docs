@@ -27,7 +27,7 @@ object StatusServicesBackgroundTaskBackgroundTaskObject
 - `identifier` (string) *(required)*: The background task UUID which the system uses as the primary key.
 - `launchd` (StatusServicesBackgroundTaskBackgroundTask_LaunchdObject): Details about a `launchd`-based background task, which is only present when the type is `daemon` or `agent`.
 - `path` (string) *(required)*: For an `agent` or `daemon`, the path to the `launchd` `plist` file. For other types, the path to the app or the document.
-- `state` (string) *(required)*: The [`SMAppService.Status`](https://developer.apple.com/documentation/ServiceManagement/SMAppService/Status-swift.enum) enumeration.
+- `state` (string) *(required)*: The [`SMAppService.Status`](https://developer.apple.com/documentation/servicemanagement/smappservice/status-swift.enum) enumeration.
 - `type` (string) *(required)*: The daemon, agent, or SFL login item type.
 - `uid` (integer) *(required)*: The numeric user identifier of the owner of the background task.
 

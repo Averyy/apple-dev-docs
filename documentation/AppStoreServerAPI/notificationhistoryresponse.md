@@ -20,7 +20,7 @@ object NotificationHistoryResponse
 
 #### Discussion
 
-The [`Get Notification History`](get-notification-history.md) endpoint returns this response. Notification history records contain the notifications that the App Store server attempted to send to your server’s [`App Store Server Notifications V2`](https://developer.apple.com/documentation/AppStoreServerNotifications/App-Store-Server-Notifications-V2) endpoint.
+The [`Get Notification History`](get-notification-history.md) endpoint returns this response. Notification history records contain the notifications that the App Store server attempted to send to your server’s [`App Store Server Notifications V2`](https://developer.apple.com/documentation/appstoreservernotifications/app-store-server-notifications-v2) endpoint.
 
 The notification history response contains a maximum of 20 notification history records per response. If the history has more than 20 records, the [`hasMore`](notificationhistoryresponse/hasmore.md) value is `true`. Call [`Get Notification History`](get-notification-history.md) again with `paginationToken` in the query to receive the next page of responses. When the App Store has no more records to send, the `hasMore` value is `false`.
 

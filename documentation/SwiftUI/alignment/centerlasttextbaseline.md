@@ -25,7 +25,7 @@ static var centerLastTextBaseline: Alignment { get }
 
 This alignment combines the [`center`](horizontalalignment/center.md) horizontal guide and the [`lastTextBaseline`](verticalalignment/lasttextbaseline.md) vertical guide:
 
-![A square that’s divided into four equal quadrants. The upper-](https://docs-assets.developer.apple.com/published/721a60b87f43a3e8cd5342720b6b0770/Alignment-centerLastTextBaseline-1-iOS%402x.png)
+![A square that’s divided into four equal quadrants. The upper-](/images/com.apple.SwiftUI/Alignment-centerLastTextBaseline-1-iOS@2x.png)
 
 ## See Also
 

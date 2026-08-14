@@ -8,7 +8,7 @@ Respond to notifications about customer refunds for consumable, non-consumable, 
 
 The App Store server sends near real-time notifications when customers receive refunds for in-app purchases. If you offer content across multiple platforms, for example gems or coins for games, and you update player account balances on your server, receiving refund notifications is important. Respond to refund notifications by interpreting and handling the refund information, and informing customers in the app of any actions you take as a result of the refund.
 
-To enable notifications, see [`Enabling App Store Server Notifications`](enabling-app-store-server-notifications.md) and [`App Store Server Notifications`](https://developer.apple.com/documentation/AppStoreServerNotifications).
+To enable notifications, see [`Enabling App Store Server Notifications`](enabling-app-store-server-notifications.md) and [`App Store Server Notifications`](https://developer.apple.com/documentation/appstoreservernotifications).
 
 ##### Receive Notifications of Customer Refunds for One Time Purchases
 
@@ -27,7 +27,7 @@ Your server is responsible for parsing and interpreting all notifications from t
 - Find the most recent transaction for the `product_id i`n the `unified_receipt.latest_receipt_info` by checking the `purchase_date` to select the most recent transaction.
 - The date when App Store issued the refund is in the `cancellation_date_ms` field for the transaction.
 
-For more information about the response, see [`App Store Server Notifications`](https://developer.apple.com/documentation/AppStoreServerNotifications).
+For more information about the response, see [`App Store Server Notifications`](https://developer.apple.com/documentation/appstoreservernotifications).
 
 You’re responsible to store, monitor, and take appropriate action for each refunded transaction when you receive a `REFUND` notification. For example, you might build your own in-game currency-rebalancing logic that handles refunded transactions by linking a notification to a player account or session.
 
@@ -37,7 +37,7 @@ Inform customers by presenting contextual messaging in the app for any actions y
 
 Reduce refund abuse and identify repeated refunded purchases by mapping `REFUND` notifications to the player accounts on your server. Monitor and analyze your data to identify suspicious refund activity.
 
-If you offer content across multiple platforms, keep the balances for user accounts up to date on your server. Use [`App Store Server Notifications`](https://developer.apple.com/documentation/AppStoreServerNotifications) to get near real-time status updates for the transactions that affect your customers.
+If you offer content across multiple platforms, keep the balances for user accounts up to date on your server. Use [`App Store Server Notifications`](https://developer.apple.com/documentation/appstoreservernotifications) to get near real-time status updates for the transactions that affect your customers.
 
 ## See Also
 

@@ -40,9 +40,9 @@ final class Sink<Input, Failure> where Failure : Error
 ### Conforms To
 - [Cancellable](cancellable.md)
 - [CustomCombineIdentifierConvertible](customcombineidentifierconvertible.md)
-- [CustomPlaygroundDisplayConvertible](../Swift/CustomPlaygroundDisplayConvertible.md)
-- [CustomReflectable](../Swift/CustomReflectable.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [CustomPlaygroundDisplayConvertible](../swift/customplaygrounddisplayconvertible.md)
+- [CustomReflectable](../swift/customreflectable.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
 - [Subscriber](subscriber.md)
 
 ## See Also

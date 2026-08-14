@@ -22,7 +22,7 @@ The AE framework does not force a connection to the window server. This allows d
 
 ##### 1770164
 
-You can check for version and feature availabilityinformation by using the Apple Event Manager selectors defined inthe Gestalt Manager. For more information see . 
+You can check for version and feature availabilityinformation by using the Apple Event Manager selectors defined inthe Gestalt Manager. For more information see *Inside macOS: Gestalt Manager Reference*. 
 
 ## Topics
 

@@ -23,7 +23,7 @@ class func notifyOfDataReady(for sbuf: CMSampleBuffer) async throws
 ## Parameters
 
 - `sbuf`: The `CMSampleBufferRef`.
-- `completionHandler`: A completion block that is called when data is ready for the sample buffer or an error occurs. The `dataReady` argument is [`true`](https://developer.apple.com/documentation/Swift/true) if data is read for the sample buffer. If an error occurs, the `error` argument contains the `NSError` object.
+- `completionHandler`: A completion block that is called when data is ready for the sample buffer or an error occurs. The `dataReady` argument is [`true`](https://developer.apple.com/documentation/swift/true) if data is read for the sample buffer. If an error occurs, the `error` argument contains the `NSError` object.
 
 
 ---

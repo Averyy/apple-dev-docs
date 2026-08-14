@@ -44,7 +44,7 @@ struct FavoriteBackyardTip: Tip {
 
 For a tip to be valid, you need to set its `title`. To control when a tip displays, pass instances of [`Rule`](tip/rule.md) and [`Option`](tip/option.md) into the [`rules`](tip/rules.md) and [`options`](tip/options.md) properties of the tip.
 
-After you define your tip’s content, display it in either a [`TipView`](tipview.md) or a [`popoverTip(_:arrowEdge:action:)`](https://developer.apple.com/documentation/SwiftUI/View/popoverTip(_:arrowEdge:action:)).
+After you define your tip’s content, display it in either a [`TipView`](tipview.md) or a [`popoverTip(_:arrowEdge:action:)`](https://developer.apple.com/documentation/swiftui/view/popovertip(_:arrowedge:action:)).
 
 ## Topics
 
@@ -102,9 +102,9 @@ After you define your tip’s content, display it in either a [`TipView`](tipvie
 ## Relationships
 
 ### Inherits From
-- [Identifiable](../Swift/Identifiable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Identifiable](../swift/identifiable.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 ### Conforming Types
 - [AnyTip](anytip.md)
 

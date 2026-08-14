@@ -18,7 +18,7 @@ class CLKComplicationTemplateGraphicCornerGaugeText
 
 This template belongs to the [`CLKComplicationFamily.graphicCorner`](clkcomplicationfamily/graphiccorner.md) family.  shows the layout of the image and where the template might appear on the clock face.
 
-![Diagram showing the layout of the outer text and a gauge with leading and trailing text.](https://docs-assets.developer.apple.com/published/eaf2f5c597a0944670d5a0d631487f84/media-3030691%402x.png)
+![Diagram showing the layout of the outer text and a gauge with leading and trailing text.](/images/com.apple.clockkit/media-3030691@2x.png)
 
 The system always displays the outer text as white. The gauge’s text can be multicolored.
 
@@ -44,13 +44,13 @@ The system always displays the outer text as white. The gauge’s text can be mu
 ### Inherits From
 - [CLKComplicationTemplate](clkcomplicationtemplate.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCopying](../Foundation/NSCopying.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCopying](../foundation/nscopying.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

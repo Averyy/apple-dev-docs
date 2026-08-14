@@ -22,8 +22,8 @@ If the [`trackingMode`](nssegmentedcell/trackingmode.md) property of the segment
 
 ## Parameters
 
-- `selected`: [`true`](https://developer.apple.com/documentation/Swift/true) if you want to select the segment; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
-- `segment`: The index of the segment whose selection state you want to set. This method raises an exception ([`rangeException`](https://developer.apple.com/documentation/Foundation/NSExceptionName/rangeException)) if the index is out of bounds.
+- `selected`: [`true`](https://developer.apple.com/documentation/swift/true) if you want to select the segment; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+- `segment`: The index of the segment whose selection state you want to set. This method raises an exception ([`rangeException`](https://developer.apple.com/documentation/foundation/nsexceptionname/rangeexception)) if the index is out of bounds.
 
 ## See Also
 

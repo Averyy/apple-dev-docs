@@ -50,8 +50,8 @@ struct PreprocessingEstimator<Preprocessor, Estimator> where Preprocessor : Tran
 
 ### Conforms To
 - [Estimator](estimator.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

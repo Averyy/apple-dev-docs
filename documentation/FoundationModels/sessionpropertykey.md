@@ -30,7 +30,7 @@ protocol SessionPropertyKey : SendableMetatype
 ## Relationships
 
 ### Inherits From
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

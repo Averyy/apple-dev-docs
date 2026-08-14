@@ -74,7 +74,7 @@ When you execute commands on the GPU, those commands can only affect memory allo
 
 ### Inherits From
 - [MTLAllocation](mtlallocation.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 ### Inherited By
 - [MTLAccelerationStructure](mtlaccelerationstructure.md)
 - [MTLBuffer](mtlbuffer.md)

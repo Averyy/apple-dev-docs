@@ -23,24 +23,24 @@ The following table shows and describes the system cursors, and indicates the cl
 
 | Cursor | Description |
 | --- | --- |
-| ![arrow cursor](https://docs-assets.developer.apple.com/published/f5571bd2498dc6e9eff8f3279ff44d17/media-2555572%402x.png) | The arrow cursor ([`arrow`](nscursor/arrow.md)) |
-| ![I-beam cursor](https://docs-assets.developer.apple.com/published/f4788c1bd99f401c0418cd180815c699/media-2555577%402x.png) | The I-beam cursor for indicating insertion points ([`iBeam`](nscursor/ibeam.md)) |
-| ![cross-hair cursor](https://docs-assets.developer.apple.com/published/431226755082dd535f4f58efd8ea3b84/media-2555579%402x.png) | The cross-hair cursor ([`crosshair`](nscursor/crosshair.md)) |
-| ![closed-hand cursor](https://docs-assets.developer.apple.com/published/c7130b0e393dbd35279cba83b5691030/media-2555583%402x.png) | The closed-hand cursor ([`closedHand`](nscursor/closedhand.md)) |
-| ![open-hand cursor](https://docs-assets.developer.apple.com/published/0ce031acfefb1716cb08f75f937c3356/media-2555589%402x.png) | The open-hand cursor ([`openHand`](nscursor/openhand.md)) |
-| ![pointing hand cursor](https://docs-assets.developer.apple.com/published/9925dce0ba11e526114196b82d29b3fb/media-2555596%402x.png) | The pointing-hand cursor ([`pointingHand`](nscursor/pointinghand.md)) |
-| ![resize-left cursor](https://docs-assets.developer.apple.com/published/b3a4afd6c54285fe09e84c1512410595/media-2555601%402x.png) | The resize-left cursor ([`resizeLeft`](nscursor/resizeleft.md)) |
-| ![resize-right cursor](https://docs-assets.developer.apple.com/published/c58a0e9fc1f26da597f22f22bb9bcedd/media-2555605%402x.png) | The resize-right cursor ([`resizeRight`](nscursor/resizeright.md)) |
-| ![resize-left-and-right cursor](https://docs-assets.developer.apple.com/published/8c3cce19c90056e4cacadb9ab8eb68a0/media-2555610%402x.png) | The resize-left-and-right cursor ([`resizeLeftRight`](nscursor/resizeleftright.md)) |
-| ![resize-up cursor](https://docs-assets.developer.apple.com/published/4be1d56a99fc6a8db1290e4572015d31/media-2555619%402x.png) | The resize-up cursor ([`resizeUp`](nscursor/resizeup.md)) |
-| ![resize-down cursor](https://docs-assets.developer.apple.com/published/190389a3c980efc8995d8a147e1d9c96/media-2555626%402x.png) | The resize-down cursor ([`resizeDown`](nscursor/resizedown.md)) |
-| ![resize-up-and-down cursor](https://docs-assets.developer.apple.com/published/0fb307eaa6ee6a028d3b31c4ceed9ee9/media-2555629%402x.png) | The resize-up-and-down cursor ([`resizeUpDown`](nscursor/resizeupdown.md)) |
-| ![disappearing item cursor](https://docs-assets.developer.apple.com/published/f42a29763b234d05b677eb7b0650e463/media-2555632%402x.png) | The disappearing item cursor ([`disappearingItem`](nscursor/disappearingitem.md)) |
-| ![disappearing item cursor](https://docs-assets.developer.apple.com/published/d5d3477930b200b78572b916906d9fdc/media-2555638%402x.png) | The I-Beam text cursor for vertical layout ([`iBeamCursorForVerticalLayout`](nscursor/ibeamcursorforverticallayout.md)). |
-| ![None](https://docs-assets.developer.apple.com/published/4a3179b5bcb997a39c6c7f665e3efc06/media-2555643%402x.png) | The not allowed cursor ([`operationNotAllowed`](nscursor/operationnotallowed.md)). |
-| ![None](https://docs-assets.developer.apple.com/published/e8b26cc0d5f1ac1ee3fff76364451816/media-2555647%402x.png) | The drag link cursor ([`dragLink`](nscursor/draglink.md)). |
-| ![None](https://docs-assets.developer.apple.com/published/257116379198465aa14194a6301dc130/media-2555652%402x.png) | The drag copy cursor ([`dragCopy`](nscursor/dragcopy.md)). |
-| ![None](https://docs-assets.developer.apple.com/published/2a1dff1bf1637a6868e2ba322f2726f2/media-2555658%402x.png) | The contextual menu cursor ([`contextualMenu`](nscursor/contextualmenu.md)). |
+| ![arrow cursor](/images/com.apple.appkit/media-2555572@2x.png) | The arrow cursor ([`arrow`](nscursor/arrow.md)) |
+| ![I-beam cursor](/images/com.apple.appkit/media-2555577@2x.png) | The I-beam cursor for indicating insertion points ([`iBeam`](nscursor/ibeam.md)) |
+| ![cross-hair cursor](/images/com.apple.appkit/media-2555579@2x.png) | The cross-hair cursor ([`crosshair`](nscursor/crosshair.md)) |
+| ![closed-hand cursor](/images/com.apple.appkit/media-2555583@2x.png) | The closed-hand cursor ([`closedHand`](nscursor/closedhand.md)) |
+| ![open-hand cursor](/images/com.apple.appkit/media-2555589@2x.png) | The open-hand cursor ([`openHand`](nscursor/openhand.md)) |
+| ![pointing hand cursor](/images/com.apple.appkit/media-2555596@2x.png) | The pointing-hand cursor ([`pointingHand`](nscursor/pointinghand.md)) |
+| ![resize-left cursor](/images/com.apple.appkit/media-2555601@2x.png) | The resize-left cursor ([`resizeLeft`](nscursor/resizeleft.md)) |
+| ![resize-right cursor](/images/com.apple.appkit/media-2555605@2x.png) | The resize-right cursor ([`resizeRight`](nscursor/resizeright.md)) |
+| ![resize-left-and-right cursor](/images/com.apple.appkit/media-2555610@2x.png) | The resize-left-and-right cursor ([`resizeLeftRight`](nscursor/resizeleftright.md)) |
+| ![resize-up cursor](/images/com.apple.appkit/media-2555619@2x.png) | The resize-up cursor ([`resizeUp`](nscursor/resizeup.md)) |
+| ![resize-down cursor](/images/com.apple.appkit/media-2555626@2x.png) | The resize-down cursor ([`resizeDown`](nscursor/resizedown.md)) |
+| ![resize-up-and-down cursor](/images/com.apple.appkit/media-2555629@2x.png) | The resize-up-and-down cursor ([`resizeUpDown`](nscursor/resizeupdown.md)) |
+| ![disappearing item cursor](/images/com.apple.appkit/media-2555632@2x.png) | The disappearing item cursor ([`disappearingItem`](nscursor/disappearingitem.md)) |
+| ![disappearing item cursor](/images/com.apple.appkit/media-2555638@2x.png) | The I-Beam text cursor for vertical layout ([`iBeamCursorForVerticalLayout`](nscursor/ibeamcursorforverticallayout.md)). |
+| ![None](/images/com.apple.appkit/media-2555643@2x.png) | The not allowed cursor ([`operationNotAllowed`](nscursor/operationnotallowed.md)). |
+| ![None](/images/com.apple.appkit/media-2555647@2x.png) | The drag link cursor ([`dragLink`](nscursor/draglink.md)). |
+| ![None](/images/com.apple.appkit/media-2555652@2x.png) | The drag copy cursor ([`dragCopy`](nscursor/dragcopy.md)). |
+| ![None](/images/com.apple.appkit/media-2555658@2x.png) | The contextual menu cursor ([`contextualMenu`](nscursor/contextualmenu.md)). |
 
 In macOS 10.3 and later, cursor size is no longer limited to 16 by 16 pixels.
 
@@ -178,18 +178,18 @@ There are corresponding cursor `hide` and `unhide` calls, thus the cursor will b
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [Copyable](../Swift/Copyable.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Escapable](../Swift/Escapable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCoding](../Foundation/NSCoding.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [NSSecureCoding](../Foundation/NSSecureCoding.md)
+- [CVarArg](../swift/cvararg.md)
+- [Copyable](../swift/copyable.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Escapable](../swift/escapable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCoding](../foundation/nscoding.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSSecureCoding](../foundation/nssecurecoding.md)
 
 ## See Also
 

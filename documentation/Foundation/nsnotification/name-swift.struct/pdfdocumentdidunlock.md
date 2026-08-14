@@ -21,7 +21,7 @@ static let PDFDocumentDidUnlock: NSNotification.Name
 
 #### Discussion
 
-The document posts this notification after receiving a [`unlock(withPassword:)`](https://developer.apple.com/documentation/PDFKit/PDFDocument/unlock(withPassword:)) message.
+The document posts this notification after receiving a [`unlock(withPassword:)`](https://developer.apple.com/documentation/pdfkit/pdfdocument/unlock(withpassword:)) message.
 
 The notification object is the `PDFDocument` object itself.
 

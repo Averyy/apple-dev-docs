@@ -17,7 +17,7 @@ var hdrImage: CGImage? { get set }
 
 #### Discussion
 
-The output [`CGImage`](https://developer.apple.com/documentation/CoreGraphics/CGImage) uses the extended sRGB color space.
+The output [`CGImage`](https://developer.apple.com/documentation/coregraphics/cgimage) uses the extended sRGB color space.
 
 
 ---

@@ -30,7 +30,7 @@ This method applies the color threshold filter to an image. The filter compares 
 The color threshold filter uses the following properties:
 
 - **`inputImage`**: An image with the type [`CIImage`](ciimage.md).
-- **`threshold`**: A `float` representing the threshold of color values as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+- **`threshold`**: A `float` representing the threshold of color values as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
 
 The following code creates a filter that results in an image where each color component is either 1 or 0.
 
@@ -43,7 +43,7 @@ func colorThreshold(inputImage: CIImage) -> CIImage {
 }
 ```
 
-![Two images arranged horizontally. The left image contains a photograph of three hydrangea flowers with dark leaves in the background. The image on the right shows the result of applying the color threshold filter. The dark leaves have been replaced by black and the colors in the flowers are now fully saturated or white.](https://docs-assets.developer.apple.com/published/cccc0f4752267119458b0aeb81cb8187/media-4331780%402x.png)
+![Two images arranged horizontally. The left image contains a photograph of three hydrangea flowers with dark leaves in the background. The image on the right shows the result of applying the color threshold filter. The dark leaves have been replaced by black and the colors in the flowers are now fully saturated or white.](/images/com.apple.coreimage/media-4331780@2x.png)
 
 ## See Also
 

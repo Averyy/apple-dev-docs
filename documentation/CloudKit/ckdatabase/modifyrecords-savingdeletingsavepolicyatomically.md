@@ -24,12 +24,12 @@ func modifyRecords(saving recordsToSave: [CKRecord], deleting recordIDsToDelete:
 
 A tuple with the following named elements:
 
-- **`saveResults`**: A dictionary of saved records. The dictionary uses the identifiers of the records you specify in `recordsToSave` as its keys. The value of each key is a [`Result`](https://developer.apple.com/documentation/Swift/Result) that contains either the corresponding modified record (as it appears on the server), or an error that describes why CloudKit can’t modify that record.
-- **`deleteResults`**: A dictionary of deleted records. The dictionary uses the identifiers you specify in `recordIDsToDelete` as its keys. The value of each key is a [`Result`](https://developer.apple.com/documentation/Swift/Result) that contains either [`Void`](https://developer.apple.com/documentation/Swift/Void) to indicate a successful deletion, or an error that describes why CloudKit can’t delete that record.
+- **`saveResults`**: A dictionary of saved records. The dictionary uses the identifiers of the records you specify in `recordsToSave` as its keys. The value of each key is a [`Result`](https://developer.apple.com/documentation/swift/result) that contains either the corresponding modified record (as it appears on the server), or an error that describes why CloudKit can’t modify that record.
+- **`deleteResults`**: A dictionary of deleted records. The dictionary uses the identifiers you specify in `recordIDsToDelete` as its keys. The value of each key is a [`Result`](https://developer.apple.com/documentation/swift/result) that contains either [`Void`](https://developer.apple.com/documentation/swift/void) to indicate a successful deletion, or an error that describes why CloudKit can’t delete that record.
 
 #### Discussion
 
-Deleting records may cause additional deletions if other records in the database reference the deleted records. CloudKit doesn’t provide the identifiers of any additional records it deletes. This method throws an error if the request fails, such as when the network is unavailable or the device doesn’t have an active iCloud account, or when `atomically` is [`true`](https://developer.apple.com/documentation/Swift/true) and one or more of the specified changes fail; otherwise, the returned tuple includes any individual record errors.
+Deleting records may cause additional deletions if other records in the database reference the deleted records. CloudKit doesn’t provide the identifiers of any additional records it deletes. This method throws an error if the request fails, such as when the network is unavailable or the device doesn’t have an active iCloud account, or when `atomically` is [`true`](https://developer.apple.com/documentation/swift/true) and one or more of the specified changes fail; otherwise, the returned tuple includes any individual record errors.
 
 For information on a more configurable way to modify records, see [`CKModifyRecordsOperation`](ckmodifyrecordsoperation.md).
 
@@ -38,7 +38,7 @@ For information on a more configurable way to modify records, see [`CKModifyReco
 - `recordsToSave`: The records to save.
 - `recordIDsToDelete`: The identifiers of the records to permanently delete.
 - `savePolicy`: The policy to use when modifying existing records. For possible values, see [`CKModifyRecordsOperation.RecordSavePolicy`](ckmodifyrecordsoperation/recordsavepolicy.md).
-- `atomically`: If [`true`](https://developer.apple.com/documentation/Swift/true), the entire operation fails if CloudKit can’t modify one or more of the specified records; otherwise, CloudKit reports individual failures in the returned tuple. Atomic changes are only applicable in record zones that have the [`atomic`](ckrecordzone/capabilities-swift.struct/atomic.md) capability.
+- `atomically`: If [`true`](https://developer.apple.com/documentation/swift/true), the entire operation fails if CloudKit can’t modify one or more of the specified records; otherwise, CloudKit reports individual failures in the returned tuple. Atomic changes are only applicable in record zones that have the [`atomic`](ckrecordzone/capabilities-swift.struct/atomic.md) capability.
 
 ## See Also
 

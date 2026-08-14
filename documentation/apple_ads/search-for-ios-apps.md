@@ -14,7 +14,7 @@ Use this endpoint to search for iOS apps that you can promote in a campaign. You
 
 An app search returns your `adamId`, which you can use in [`Create a Campaign`](create-a-campaign.md) in addition to the `AppDownloaderCriteria` in the [`TargetingDimensions`](targetingdimensions.md) payload. You can apply targeting dimensions to ad groups using [`Create an Ad Group`](create-an-ad-group.md) or [`Update an Ad Group`](update-an-ad-group.md) endpoints.
 
-![Search for iOS apps workflow. The first box on the left in the flow diagram is the get call URL. The second box is the AppDownloaderCriteria targeting dimension. The third box in the flow diagram specifies to create or update an ad group.](https://docs-assets.developer.apple.com/published/b06241f90357f928e68361bbf3a80703/media-4452999%402x.png)
+![Search for iOS apps workflow. The first box on the left in the flow diagram is the get call URL. The second box is the AppDownloaderCriteria targeting dimension. The third box in the flow diagram specifies to create or update an ad group.](/images/com.apple.appleads/media-4452999@2x.png)
 
 ##### Payload Example Search for Ios Apps
 

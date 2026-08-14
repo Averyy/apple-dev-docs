@@ -22,7 +22,7 @@ init(url: URL, format: AVAudioFormat) throws
 
 #### Return Value
 
-A new audio recorder, or [`nil`](https://developer.apple.com/documentation/ObjectiveC/nil-227m0) if an error occurred.
+A new audio recorder, or [`nil`](https://developer.apple.com/documentation/objectivec/nil-227m0) if an error occurred.
 
 ## Parameters
 

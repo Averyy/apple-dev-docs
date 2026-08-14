@@ -31,11 +31,11 @@ The swipe transition filter uses the following properties:
 
 - **`inputImage`**: The starting image with the type [`CIImage`](ciimage.md).
 - **`targetImage`**: The ending image with the type [`CIImage`](ciimage.md).
-- **`extent`**: A [`CGRect`](https://developer.apple.com/documentation/CoreFoundation/CGRect) representing the size of the rounded rectangle.
-- **`time`**: A `float` representing the parametric time of the transition from start (at time 0) to end (at time 1) as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
-- **angle**: A `float` representing the angle of the motion of the swipe as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
-- **width**: A `float` representing the width of the swipe effect as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
-- **opacity**: A `float` representing the transparency of the swipe as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+- **`extent`**: A [`CGRect`](https://developer.apple.com/documentation/corefoundation/cgrect) representing the size of the rounded rectangle.
+- **`time`**: A `float` representing the parametric time of the transition from start (at time 0) to end (at time 1) as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
+- **angle**: A `float` representing the angle of the motion of the swipe as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
+- **width**: A `float` representing the width of the swipe effect as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
+- **opacity**: A `float` representing the transparency of the swipe as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
 
 The following code creates a filter that transitions from the input image to the target image with a gradual fade from left to right.
 
@@ -53,7 +53,7 @@ func swipe(inputImage: CIImage, targetImage: CIImage) -> CIImage {
 }
 ```
 
-![Three photographs. In the photo on the left, there are multiple small purple flowers photographed close up with good lighting, and the background has a slight blur. In the photograph on the right is a tall building with two trees directly in front of the building. In the center photograph, a swipe transition filter is applied, resulting in a still photo of the moving transition. The left photograph is overlaid on the photo on the right with a slow fade from the left of the flower photo, revealing the city building photograph under it.](https://docs-assets.developer.apple.com/published/8e1514955c4016952827294deb940344/media-3616424%402x.png)
+![Three photographs. In the photo on the left, there are multiple small purple flowers photographed close up with good lighting, and the background has a slight blur. In the photograph on the right is a tall building with two trees directly in front of the building. In the center photograph, a swipe transition filter is applied, resulting in a still photo of the moving transition. The left photograph is overlaid on the photo on the right with a slow fade from the left of the flower photo, revealing the city building photograph under it.](/images/com.apple.coreimage/media-3616424@2x.png)
 
 ## See Also
 

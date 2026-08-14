@@ -22,7 +22,7 @@ func recordZones(for ids: [CKRecordZone.ID]) async throws -> [CKRecordZone.ID : 
 
 #### Return Value
 
-A dictionary that contains the fetched record zones. The dictionary uses the specified record zone identifiers as its keys. The value of each key is a [`Result`](https://developer.apple.com/documentation/Swift/Result) that contains either the corresponding fetched record zone, or an error that describes why CloudKit can’t provide that record zone.
+A dictionary that contains the fetched record zones. The dictionary uses the specified record zone identifiers as its keys. The value of each key is a [`Result`](https://developer.apple.com/documentation/swift/result) that contains either the corresponding fetched record zone, or an error that describes why CloudKit can’t provide that record zone.
 
 #### Discussion
 

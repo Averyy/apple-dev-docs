@@ -12,7 +12,7 @@ With Xcode 13 or later, you can generate a separate symbol file for each Metal l
 - Debug that same Metal library at a later time by loading its companion symbol file in Xcode.
 - Avoid building each library twice — once for release and then again for debugging.
 
-See [`Debugging the shaders within a draw command or compute dispatch`](https://developer.apple.com/documentation/Xcode/Debugging-the-shaders-within-a-draw-command-or-compute-dispatch) to learn how to debug your Metal shaders.
+See [`Debugging the shaders within a draw command or compute dispatch`](https://developer.apple.com/documentation/xcode/debugging-the-shaders-within-a-draw-command-or-compute-dispatch) to learn how to debug your Metal shaders.
 
 ##### Generate a Symbol File with a Single Command
 
@@ -70,15 +70,15 @@ The `-remove-source` option modifies the Metal library file by removing its embe
 
 As you debug a shader, Xcode automatically presents a prompt when it doesn’t have access to a shader library’s source code.
 
-![A screenshot of a Metal debugger dialog that Xcode shows when the debugger doesn’t have shader sources. The dialog has two buttons, ‘Import Sources’ and ‘OK’.](https://docs-assets.developer.apple.com/published/d7206fa0645dbc0a8f325b70455daa67/generating-and-loading-a-metal-library-symbol-file-1%402x.png)
+![A screenshot of a Metal debugger dialog that Xcode shows when the debugger doesn’t have shader sources. The dialog has two buttons, ‘Import Sources’ and ‘OK’.](/images/com.apple.metal/generating-and-loading-a-metal-library-symbol-file-1@2x.png)
 
 Click the Import Sources button and select the shader’s companion symbol file.
 
-![A screenshot of an Import dialog from the Metal debugger that shows an empty list of search paths in the upper half, and one Metal library in the lower half. The library shows ‘No source’ in its ‘Debug Info’ column.](https://docs-assets.developer.apple.com/published/63d2ecd8bd74debb3f9af7e6ee8c336f/generating-and-loading-a-metal-library-symbol-file-2%402x.png)
+![A screenshot of an Import dialog from the Metal debugger that shows an empty list of search paths in the upper half, and one Metal library in the lower half. The library shows ‘No source’ in its ‘Debug Info’ column.](/images/com.apple.metal/generating-and-loading-a-metal-library-symbol-file-2@2x.png)
 
 Add your shader library’s companion symbol file by clicking the Add button (+) and locating the file. Select a directory to tell Xcode to find all companion symbol files that match any Metal libraries in the current Metal debugging capture. The dialog reflects each library’s symbol file in a list as you add them.
 
-![A screenshot of an Import dialog from the Metal debugger that shows one entry in its list of search paths in the upper half, and one Metal library in the lower half. The library shows ‘default dot metal l-i-b s-y-m’ in its ‘Debug Info’ column.](https://docs-assets.developer.apple.com/published/47c36dbda3c6f19e6e32eb26a510c2f8/generating-and-loading-a-metal-library-symbol-file-3%402x.png)
+![A screenshot of an Import dialog from the Metal debugger that shows one entry in its list of search paths in the upper half, and one Metal library in the lower half. The library shows ‘default dot metal l-i-b s-y-m’ in its ‘Debug Info’ column.](/images/com.apple.metal/generating-and-loading-a-metal-library-symbol-file-3@2x.png)
 
 Click Done when you finish adding your companion symbol files. Xcode imports the shader source and profiling information from each companion symbol file for the Metal library it represents.
 

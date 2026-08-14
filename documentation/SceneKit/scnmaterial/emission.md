@@ -28,7 +28,7 @@ By default, the emissive property’s [`contents`](scnmaterialproperty/contents.
 
 The figure below shows a material (with a texture for its [`diffuse`](scnmaterial/diffuse.md) property) before and after providing an emissive map image.
 
-![None](https://docs-assets.developer.apple.com/published/24977252ee2eb3caa547493793cdc33e/media-2934165%402x.png)
+![None](/images/com.apple.scenekit/media-2934165@2x.png)
 
 ## See Also
 

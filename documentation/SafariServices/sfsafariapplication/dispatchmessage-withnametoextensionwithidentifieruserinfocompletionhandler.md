@@ -22,7 +22,7 @@ class func dispatchMessage(withName messageName: String, toExtensionWithIdentifi
 
 > ❗ **Important**:  You can call this method from synchronous code using a completion handler, as shown on this page, or you can call it as an asynchronous method that has the following declaration: ```swift
 class func dispatchMessage(withName messageName: String, toExtensionWithIdentifier identifier: String, userInfo: [String : Any]? = nil) async throws
-``` For information about concurrency and asynchronous code in Swift, see [`Calling Objective-C APIs Asynchronously`](https://developer.apple.com/documentation/Swift/calling-objective-c-apis-asynchronously).
+``` For information about concurrency and asynchronous code in Swift, see [`Calling Objective-C APIs Asynchronously`](https://developer.apple.com/documentation/swift/calling-objective-c-apis-asynchronously).
 
 This method may be called only from the app that contains your Safari app extension. If your extension is disabled, nothing happens. If it is enabled, the message is delivered to your app extension. If necessary, this call ensures that Safari is launched and that your extension is running before delivering the message.
 

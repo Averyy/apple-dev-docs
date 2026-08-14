@@ -35,9 +35,9 @@ The testing library throws instances of this type when the `#require()` macro re
 ## Relationships
 
 ### Conforms To
-- [Error](../Swift/Error.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Error](../swift/error.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

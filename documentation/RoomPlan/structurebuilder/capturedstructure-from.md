@@ -30,12 +30,12 @@ Each captured room in the argument array represents the post-processed result of
 
 There are two ways to ensure the captured rooms share compatible world space. You continue a single AR session by:
 
-- Passing the same [`ARSession`](https://developer.apple.com/documentation/ARKit/ARSession) instance to the [`RoomCaptureSession`](roomcapturesession.md) objects that each produce a captured room. Be sure to pause the `ARSession` by calling [`stop(pauseARSession:)`](roomcapturesession/stop(pausearsession:).md) with an argument of `false` before handing it to a subsequent room-capture session.
-- Loading a previously saved [`ARWorldMap`](https://developer.apple.com/documentation/ARKit/ARWorldMap) to create an `ARSession` in compatible world space with previous scans.
+- Passing the same [`ARSession`](https://developer.apple.com/documentation/arkit/arsession) instance to the [`RoomCaptureSession`](roomcapturesession.md) objects that each produce a captured room. Be sure to pause the `ARSession` by calling [`stop(pauseARSession:)`](roomcapturesession/stop(pausearsession:).md) with an argument of `false` before handing it to a subsequent room-capture session.
+- Loading a previously saved [`ARWorldMap`](https://developer.apple.com/documentation/arkit/arworldmap) to create an `ARSession` in compatible world space with previous scans.
 
-> **Note**: After loading a previously saved `ARWorldMap`, wait for [`ARCamera.TrackingState`](https://developer.apple.com/documentation/ARKit/ARCamera/TrackingState-swift.enum) to change from `relocalizing` to `normal`. For this change to take effect, the system needs to observe through the camera some portion of the recently scanned area. To guide the user accordingly, you can present a UI that instructs the user to return to the previous room before beginning the next room-capture session.
+> **Note**: After loading a previously saved `ARWorldMap`, wait for [`ARCamera.TrackingState`](https://developer.apple.com/documentation/arkit/arcamera/trackingstate-swift.enum) to change from `relocalizing` to `normal`. For this change to take effect, the system needs to observe through the camera some portion of the recently scanned area. To guide the user accordingly, you can present a UI that instructs the user to return to the previous room before beginning the next room-capture session.
 
-For information about saving and loading world maps to restore an [`ARSession`](https://developer.apple.com/documentation/ARKit/ARSession), see [`Saving and loading world data`](https://developer.apple.com/documentation/ARKit/saving-and-loading-world-data).
+For information about saving and loading world maps to restore an [`ARSession`](https://developer.apple.com/documentation/arkit/arsession), see [`Saving and loading world data`](https://developer.apple.com/documentation/arkit/saving-and-loading-world-data).
 
 ## Parameters
 

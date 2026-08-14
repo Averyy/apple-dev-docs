@@ -8,7 +8,7 @@ Displays groups of products.
 
 Use the `stackTemplate` element to display, for example, displaying different genres of movies. Each group of products is displayed directly underneath the previous group. Products can be displayed in different ways using `carousel`, `grid`, and `shelf` elements. The following figure shows the basic layout for a `stackTemplate` page. The theme for the stack template defaults to the system preference.
 
-![Layout diagram showing a banner area at the top of the screen, and a collection list area containing two shelf areas directly below.](https://docs-assets.developer.apple.com/published/0557616c56247b507d9851899127cbcb/stacktemplate-1%402x.png)
+![Layout diagram showing a banner area at the top of the screen, and a collection list area containing two shelf areas directly below.](/images/com.apple.TVML/stacktemplate-1@2x.png)
 
 ##### Main Elements
 
@@ -91,7 +91,7 @@ The following listing shows the TVML for a `stackTemplate` example:
 
 The following figure shows the output for the above example:
 
-![Screenshot showing two shelves of movie posters.](https://docs-assets.developer.apple.com/published/130cfc10bfca9e7e88f56d8a5be39b4f/stacktemplate-2%402x.png)
+![Screenshot showing two shelves of movie posters.](/images/com.apple.TVML/stacktemplate-2@2x.png)
 
 You can also customize the stack template’s background content. To do so, embed a `mediaContent `element in a `background `element, as shown in this example:
 

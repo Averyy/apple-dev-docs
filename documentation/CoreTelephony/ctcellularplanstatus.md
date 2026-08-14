@@ -22,15 +22,15 @@ This class provides UPI device validation or cellular plan availability checking
 
 #### Perform Upi Device Validation
 
-To check if the Integrated Circuit Card Identifier (ICCID) on a device is associated with a given token, use the [`setUPIVerificationCodeSendCompletion(_:)`](https://developer.apple.com/documentation/MessageUI/MFMessageComposeViewController/setUPIVerificationCodeSendCompletion(_:)) method to configure an instance of a view for Unified Payments Interface (UPI) device validation. When the person sends an SMS, the framework creates a token and maps it to the  [`MFMessageComposeViewController`](https://developer.apple.com/documentation/MessageUI/MFMessageComposeViewController) instance’s associated ICCID. Use this token to determine if changes exist to the underlying ICCID.
+To check if the Integrated Circuit Card Identifier (ICCID) on a device is associated with a given token, use the [`setUPIVerificationCodeSendCompletion(_:)`](https://developer.apple.com/documentation/messageui/mfmessagecomposeviewcontroller/setupiverificationcodesendcompletion(_:)) method to configure an instance of a view for Unified Payments Interface (UPI) device validation. When the person sends an SMS, the framework creates a token and maps it to the  [`MFMessageComposeViewController`](https://developer.apple.com/documentation/messageui/mfmessagecomposeviewcontroller) instance’s associated ICCID. Use this token to determine if changes exist to the underlying ICCID.
 
 Call [`getTokenWithCompletion(_:)`](ctcellularplanstatus/gettokenwithcompletion(_:).md) to retrieve the token. Your app has 30 seconds from sending the SMS before the framework drops the token. If the SMS fails, the framework revokes the token.
 
 Use [`checkValidity(ofToken:completionHandler:)`](ctcellularplanstatus/checkvalidity(oftoken:completionhandler:).md) to check the status of the token. The method returns `true` if the ICCID is present and turned on.
 
-For more information on configuring an instance for UPI device validation, see [`setUPIVerificationCodeSendCompletion(_:)`](https://developer.apple.com/documentation/MessageUI/MFMessageComposeViewController/setUPIVerificationCodeSendCompletion(_:)).
+For more information on configuring an instance for UPI device validation, see [`setUPIVerificationCodeSendCompletion(_:)`](https://developer.apple.com/documentation/messageui/mfmessagecomposeviewcontroller/setupiverificationcodesendcompletion(_:)).
 
-> ❗ **Important**:  To use UPI device validation, your app needs the [`com.apple.developer.upi-device-validation`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.upi-device-validation) entitlement.
+> ❗ **Important**:  To use UPI device validation, your app needs the [`com.apple.developer.upi-device-validation`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.upi-device-validation) entitlement.
 
 ##### Check Cellular Plan Continuity
 
@@ -70,14 +70,14 @@ After the person answers the permission prompt once, your app can query [`getAut
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 
 ---

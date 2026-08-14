@@ -25,7 +25,7 @@ The [`MPSCNNBinaryConvolution`](mpscnnbinaryconvolution.md) optionally first bin
 
 The output is computed as follows:
 
-![out[i, x, y, c] = ( sum_{dx,dy,f} in[i,x+dx, y+dy, f] x B[c,dx,dy,f] ) * scale[c] * beta[i,x,y] + bias[c]](https://docs-assets.developer.apple.com/published/fa6f18b853e498fed427aa065c8d760a/media-2903520%402x.png)
+![out[i, x, y, c] = ( sum_{dx,dy,f} in[i,x+dx, y+dy, f] x B[c,dx,dy,f] ) * scale[c] * beta[i,x,y] + bias[c]](/images/com.apple.metalperformanceshaders/media-2903520@2x.png)
 
 where the *sum over* *dx,dy* is over the spatial filter kernel window defined by [`kernelWidth`](mpscnnconvolutiondescriptor/kernelwidth.md) and [`kernelHeight`](mpscnnconvolutiondescriptor/kernelheight.md), *sum over* *f* is over the input feature channel indices within group, *B* contains the binary weights, interpreted as `{-1, 1}` or `{0, 1}` and *scale[c]* is the `outputScaleTerms` array and bias is the `outputBiasTerms` array. Above *i* is the image index in batch the sum over input channels *f* runs through the group indices. The convolution operator ⊗ is defined by [`MPSCNNBinaryConvolutionType`](mpscnnbinaryconvolutiontype.md) passed in at initialization time of the filter:
 
@@ -60,11 +60,11 @@ The input data can be pre-offset and scaled by providing the `inputBiasTerms` an
 
 The parameter `beta` above is an optional image which is used to compute scaling factors for each spatial position and image index. For the XNOR-Net based networks this is computed as follows:
 
-![beta[i,x,y] = sum_{dx,dy} A[i, x+dx, y+dy] / (kx * ky)](https://docs-assets.developer.apple.com/published/7c88c8a5d7337f19cdb26200251d4d2a/media-2903518%402x.png)
+![beta[i,x,y] = sum_{dx,dy} A[i, x+dx, y+dy] / (kx * ky)](/images/com.apple.metalperformanceshaders/media-2903518@2x.png)
 
 where *(dx,dy)* are summed over the convolution filter window.
 
-![[ -kx/2, (kx-1)/2], [ -ky/2, (ky-1)/2 ] and A[i,x,y] = sum_{c} abs( in[i,x,y,c] ) / Nc](https://docs-assets.developer.apple.com/published/92d4718a271b1cb5ab619aa0388a04bc/media-2903519%402x.png)
+![[ -kx/2, (kx-1)/2], [ -ky/2, (ky-1)/2 ] and A[i,x,y] = sum_{c} abs( in[i,x,y,c] ) / Nc](/images/com.apple.metalperformanceshaders/media-2903519@2x.png)
 
 where *in* is the original input image (in full precision) and *Nc* is the number of input channels in the input image. Parameter `beta` is not passed as input and to enable beta-scaling the user can provide [`MPSCNNBinaryConvolutionFlags.useBetaScaling`](mpscnnbinaryconvolutionflags/usebetascaling.md) in the flags parameter in the initialization functions.
 
@@ -97,15 +97,15 @@ Finally the normal activation neuron is applied and the result is written to the
 ### Inherited By
 - [MPSCNNBinaryFullyConnected](mpscnnbinaryfullyconnected.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCoding](../Foundation/NSCoding.md)
-- [NSCopying](../Foundation/NSCopying.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [NSSecureCoding](../Foundation/NSSecureCoding.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCoding](../foundation/nscoding.md)
+- [NSCopying](../foundation/nscopying.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSSecureCoding](../foundation/nssecurecoding.md)
 
 ## See Also
 

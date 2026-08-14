@@ -12,7 +12,7 @@ Listen for and respond to a user’s preference changes in your Mac app built wi
 
 #### Overview
 
-With [`Combine`](https://developer.apple.com/documentation/Combine), your app can listen for changes a user makes to the app’s Preferences window, and respond to those changes. The sample app provides a Preferences window with one setting: background color. When the user selects a color, the background of the main view changes to match their selection.
+With [`Combine`](https://developer.apple.com/documentation/combine), your app can listen for changes a user makes to the app’s Preferences window, and respond to those changes. The sample app provides a Preferences window with one setting: background color. When the user selects a color, the background of the main view changes to match their selection.
 
 This sample code project shows how to:
 
@@ -31,7 +31,7 @@ The Settings bundle for the sample app has a preference specifier for setting th
 
 ##### Register Default Preference Values
 
-When the user changes preferences in the Preferences window, the window saves them to the application domain of the user defaults system. To store and retrieve the preference values within the app, the sample app uses [`UserDefaults`](https://developer.apple.com/documentation/Foundation/UserDefaults). However, when the sample app launches for the first time, the preference values don’t exist in the user defaults system. If the app tries retrieving a value, [`UserDefaults`](https://developer.apple.com/documentation/Foundation/UserDefaults) returns `nil`.
+When the user changes preferences in the Preferences window, the window saves them to the application domain of the user defaults system. To store and retrieve the preference values within the app, the sample app uses [`UserDefaults`](https://developer.apple.com/documentation/foundation/userdefaults). However, when the sample app launches for the first time, the preference values don’t exist in the user defaults system. If the app tries retrieving a value, [`UserDefaults`](https://developer.apple.com/documentation/foundation/userdefaults) returns `nil`.
 
 To ensure that the app always retrieves a non-`nil` value, the sample app registers the default preference values with the registration domain. However, this domain doesn’t persist these values between app launches, so the sample app registers the default values each time the user launches the app.
 
@@ -92,7 +92,7 @@ func parse(_ preferenceSpecifiers: [NSDictionary]) -> [String: Any] {
 
 ##### Retrieve Preference Values
 
-After registering the default values with the registration domain, the app can retrieve a preference value without the possibility of encountering an unavailable value. To simplify access to the background color preference value, the sample app extends [`UserDefaults`](https://developer.apple.com/documentation/Foundation/UserDefaults) to include properties for each preference value.
+After registering the default values with the registration domain, the app can retrieve a preference value without the possibility of encountering an unavailable value. To simplify access to the background color preference value, the sample app extends [`UserDefaults`](https://developer.apple.com/documentation/foundation/userdefaults) to include properties for each preference value.
 
 ```swift
 extension UserDefaults {

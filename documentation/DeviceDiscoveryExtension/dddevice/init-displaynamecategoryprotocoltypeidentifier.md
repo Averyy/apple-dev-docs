@@ -20,7 +20,7 @@ init(displayName: String, category: DDDevice.Category, protocolType: UTType, ide
 
 #### Discussion
 
-As an example `identifier` for Bluetooth devices, your extension can use the device’s local name (see [`CBAdvertisementDataLocalNameKey`](https://developer.apple.com/documentation/CoreBluetooth/CBAdvertisementDataLocalNameKey)).
+As an example `identifier` for Bluetooth devices, your extension can use the device’s local name (see [`CBAdvertisementDataLocalNameKey`](https://developer.apple.com/documentation/corebluetooth/cbadvertisementdatalocalnamekey)).
 
 ## Parameters
 

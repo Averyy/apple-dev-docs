@@ -19,7 +19,7 @@ func updateChangeCount(_ change: UIDocument.ChangeKind)
 
 #### Discussion
 
-Calling this method can affect the value returned by [`hasUnsavedChanges`](uidocument/hasunsavedchanges.md). You shouldn’t need to call method this if you access an [`UndoManager`](https://developer.apple.com/documentation/Foundation/UndoManager) object from the [`undoManager`](uidocument/undomanager.md) property (or assign a custom one to it) and register changes with the undo manager.
+Calling this method can affect the value returned by [`hasUnsavedChanges`](uidocument/hasunsavedchanges.md). You shouldn’t need to call method this if you access an [`UndoManager`](https://developer.apple.com/documentation/foundation/undomanager) object from the [`undoManager`](uidocument/undomanager.md) property (or assign a custom one to it) and register changes with the undo manager.
 
 ## Parameters
 

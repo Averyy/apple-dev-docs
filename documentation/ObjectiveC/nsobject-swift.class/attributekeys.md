@@ -17,7 +17,7 @@ var attributeKeys: [String] { get }
 
 #### Discussion
 
-`NSObject`’s implementation of `attributeKeys` simply calls `[[self classDescription] attributeKeys]`. To make use of the default implementation, you must therefore implement and register a suitable class description—see [`NSClassDescription`](https://developer.apple.com/documentation/Foundation/NSClassDescription).
+`NSObject`’s implementation of `attributeKeys` simply calls `[[self classDescription] attributeKeys]`. To make use of the default implementation, you must therefore implement and register a suitable class description—see [`NSClassDescription`](https://developer.apple.com/documentation/foundation/nsclassdescription).
 
 ## See Also
 

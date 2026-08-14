@@ -31,7 +31,7 @@ The number of text fields present in an alert is dependent on the style of the a
 | [`UIAlertViewStyle.plainTextInput`](uialertviewstyle/plaintextinput.md) | A single text field at index `0`. |
 | [`UIAlertViewStyle.loginAndPasswordInput`](uialertviewstyle/loginandpasswordinput.md) | The login field is at index `0`. The password field is at index `1`. |
 
-If your application attempts to retrieve a text field with an index that is out of bounds, the alert raises an [`rangeException`](https://developer.apple.com/documentation/Foundation/NSExceptionName/rangeException).
+If your application attempts to retrieve a text field with an index that is out of bounds, the alert raises an [`rangeException`](https://developer.apple.com/documentation/foundation/nsexceptionname/rangeexception).
 
 ## Parameters
 

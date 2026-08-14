@@ -85,7 +85,7 @@ Profile {
 
 Instead of writing an all-encompassing profile, break up the problem into multiple domain-specific profiles. A [`LanguageModelSession.DynamicProfile`](languagemodelsession/dynamicprofile.md) orchestrates the transitions between your profiles by using conditionals and nesting. When the active profile changes, the session adopts the new model and generation options on the next model request. The following diagram illustrates a dynamic profile managing three profiles, each with their own model configuration and conditional instructions:
 
-![A diagram that illustrates a dynamic profile that manages three profiles. There](https://docs-assets.developer.apple.com/published/2be58f2539b63b598108e060ec47dca9/composing-dynamic-sessions-with-instructions-and-profiles-dynamic-profile%402x.png)
+![A diagram that illustrates a dynamic profile that manages three profiles. There](/images/com.apple.foundationmodels/composing-dynamic-sessions-with-instructions-and-profiles-dynamic-profile@2x.png)
 
 A [`LanguageModelSession.DynamicProfileBuilder`](languagemodelsession/dynamicprofilebuilder.md) enforces a hard constraint at compile time so exactly one [`LanguageModelSession.Profile`](languagemodelsession/profile.md) is active at a time. Instead of using parallel `if` blocks, use expressions so the compiler verifies the constraint:
 

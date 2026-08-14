@@ -26,9 +26,9 @@ struct DatePicker<Label> where Label : View
 
 #### Overview
 
-Use a `DatePicker` when you want to provide a view that allows the user to select a calendar date, and optionally a time. The view binds to a [`Date`](https://developer.apple.com/documentation/Foundation/Date) instance.
+Use a `DatePicker` when you want to provide a view that allows the user to select a calendar date, and optionally a time. The view binds to a [`Date`](https://developer.apple.com/documentation/foundation/date) instance.
 
-The following example creates a basic `DatePicker`, which appears on iOS as text representing the date. This example limits the display to only the calendar date, not the time. When the user taps or clicks the text, a calendar view animates in, from which the user can select a date. When the user dismisses the calendar view, the view updates the bound [`Date`](https://developer.apple.com/documentation/Foundation/Date).
+The following example creates a basic `DatePicker`, which appears on iOS as text representing the date. This example limits the display to only the calendar date, not the time. When the user taps or clicks the text, a calendar view animates in, from which the user can select a date. When the user dismisses the calendar view, the view updates the bound [`Date`](https://developer.apple.com/documentation/foundation/date).
 
 ```swift
 @State private var date = Date()
@@ -42,7 +42,7 @@ var body: some View {
 }
 ```
 
-![An iOS date picker, consisting of a label that says Start Date, and a](https://docs-assets.developer.apple.com/published/ed0862721b31a474967e7049f9543333/SwiftUI-DatePicker-basic%402x.png)
+![An iOS date picker, consisting of a label that says Start Date, and a](/images/com.apple.SwiftUI/SwiftUI-DatePicker-basic@2x.png)
 
 For cases where adding a subtitle to the label is desired, use a view builder that creates multiple `Text` views where the first text represents the title and the second text represents the subtitle:
 
@@ -80,7 +80,7 @@ var body: some View {
 }
 ```
 
-![A SwiftUI standard date picker on iOS, with the label Start Date, and](https://docs-assets.developer.apple.com/published/811b3c52683f9dd68a1b3851be4a16f9/SwiftUI-DatePicker-selectFromRange%402x.png)
+![A SwiftUI standard date picker on iOS, with the label Start Date, and](/images/com.apple.SwiftUI/SwiftUI-DatePicker-selectFromRange@2x.png)
 
 ##### Styling Date Pickers
 
@@ -99,7 +99,7 @@ var body: some View {
 }
 ```
 
-![A SwiftUI date picker using the graphical style, with the label Start Date](https://docs-assets.developer.apple.com/published/1f0eadb9ff4b7e560414a63daf82ff2a/SwiftUI-DatePicker-graphicalStyle%402x.png)
+![A SwiftUI date picker using the graphical style, with the label Start Date](/images/com.apple.SwiftUI/SwiftUI-DatePicker-graphicalStyle@2x.png)
 
 ## Topics
 

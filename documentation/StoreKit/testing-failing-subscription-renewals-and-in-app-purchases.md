@@ -10,7 +10,7 @@ Payments can fail unexpectedly at any stage of the billing cycle, such as when a
 
 In sandbox testing, you can simulate billing issues that cause In-App Purchases to fail, and auto-renewable subscriptions not to renew. You can also enable Billing Grace Period for the sandbox environment. Use these sandbox features to test how your app handles auto-renewable subscriptions with billing issues that do or don’t recover.
 
-The sandbox environment sends [`App Store Server Notifications`](https://developer.apple.com/documentation/AppStoreServerNotifications) as you perform tests. For more information, see [`Enabling App Store Server Notifications`](https://developer.apple.com/documentation/AppStoreServerNotifications/enabling-app-store-server-notifications).
+The sandbox environment sends [`App Store Server Notifications`](https://developer.apple.com/documentation/appstoreservernotifications) as you perform tests. For more information, see [`Enabling App Store Server Notifications`](https://developer.apple.com/documentation/appstoreservernotifications/enabling-app-store-server-notifications).
 
 The sandbox environment renews auto-renewable subscriptions up to 12 times. For more information about renewal rates in the sandbox environment, see [`Edit subscription renewal speed`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/test-in-app-purchases/manage-sandbox-apple-id-settings#edit-subscription-renewal-speed).
 

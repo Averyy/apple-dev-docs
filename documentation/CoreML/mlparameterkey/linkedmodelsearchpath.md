@@ -22,7 +22,7 @@ class var linkedModelSearchPath: MLParameterKey { get }
 
 #### Discussion
 
-The value type for the [`linkedModelSearchPath`](mlparameterkey/linkedmodelsearchpath.md) key is a [`String`](https://developer.apple.com/documentation/Swift/String).
+The value type for the [`linkedModelSearchPath`](mlparameterkey/linkedmodelsearchpath.md) key is a [`String`](https://developer.apple.com/documentation/swift/string).
 
 ## See Also
 

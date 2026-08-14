@@ -26,7 +26,7 @@ An OSData object created with shared external data cannot append bytes, but you 
 ## Parameters
 
 - `bytes`: The buffer of data to represent.
-- `numBytes`: The length of  .
+- `numBytes`: The length of `bytes`.
 
 ## See Also
 

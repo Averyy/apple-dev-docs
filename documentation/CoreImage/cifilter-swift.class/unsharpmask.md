@@ -30,8 +30,8 @@ This method applies the unsharp mask filter to an image. The effect increases th
 The unsharp mask filter uses the following properties:
 
 - **`inputImage`**: An image with the type [`CIImage`](ciimage.md).
-- **`radius`**: A `float` representing the area of effect as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
-- **`intensity`**: A `float` representing the desired strength of the effect as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+- **`radius`**: A `float` representing the area of effect as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
+- **`intensity`**: A `float` representing the desired strength of the effect as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
 
 The following code creates a filter that results in the objects within the image becoming darker:
 
@@ -45,7 +45,7 @@ func unsharp (inputImage: CIImage) -> CIImage? {
 }
 ```
 
-![Two photographs of a downtown sidewalk with trees, a blue square highlighting the end of the sidewalk with a bike lane and street sign displayed. The photo on the left has no modifications to color. In the photo on the right a unsharp mask filter has been applied resulting in darker color on the tree leafs and street signs. ](https://docs-assets.developer.apple.com/published/21b01f157bee42930decfbbfa083c699/media-3595819%402x.png)
+![Two photographs of a downtown sidewalk with trees, a blue square highlighting the end of the sidewalk with a bike lane and street sign displayed. The photo on the left has no modifications to color. In the photo on the right a unsharp mask filter has been applied resulting in darker color on the tree leafs and street signs. ](/images/com.apple.coreimage/media-3595819@2x.png)
 
 ## See Also
 

@@ -10,7 +10,7 @@ The **Develop** menu is home to the tools available to design and develop web co
 
 > **Note**: If you haven’t already enabled features for web developers in Safari, follow the instruction for [`Enabling features for web developers`](enabling-developer-features.md). Once enabled, the **Develop** menu will be shown in the menu bar for Safari.
 
-![Develop menu open, with an iPad attached showing three inspectable items for the iPad, a webpage, a Home Screen web app, and a service worker.](https://docs-assets.developer.apple.com/published/8f94ecb74ec50470120bfb2bf877196c/DevelopMenu%402x.png)
+![Develop menu open, with an iPad attached showing three inspectable items for the iPad, a webpage, a Home Screen web app, and a service worker.](/images/com.apple.safari.developer-tools/DevelopMenu@2x.png)
 
 #### Open Page with
 

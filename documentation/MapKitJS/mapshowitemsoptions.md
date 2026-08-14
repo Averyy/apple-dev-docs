@@ -16,7 +16,7 @@ interface MapShowItemsOptions
 
 #### Overview
 
-Use these options when calling [`showItems(items, options)`](map/showitems.md).
+Use these options when calling [`showItems()`](map/showitems.md).
 
 ## Topics
 

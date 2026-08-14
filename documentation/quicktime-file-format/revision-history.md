@@ -34,18 +34,18 @@ Changes to the QuickTime File Format.
 
 ###### Added
 
-- Added [`Track exclude from autoselection atom ('txas')`](track_exclude_from_autoselection_atom.md).
+- Added [`Track exclude from autoselection atom`](track_exclude_from_autoselection_atom.md).
 - Added `clcp`, `fall`, `folw`, and `forc` to [`Track reference type atom`](track_reference_type_atom.md).
-- Added [`Text media information atom ('text')`](text_media_information_atom.md), [`Closed captioning media`](closed_captioning_media.md), and [`Subtitle media`](subtitle_media.md).
+- Added [`Text media information atom`](text_media_information_atom.md), [`Closed captioning media`](closed_captioning_media.md), and [`Subtitle media`](subtitle_media.md).
 - Added [`Preparing sound and subtitle alternate groups for use with Apple devices`](preparing_sound_and_subtitle_alternate_groups_for_use_with_apple_devices.md).
 
 ###### Updated
 
 - In [`User data atoms`](user_data_atoms.md), expanded the description of `'tnam'` and added `'tagc'` with related section Media Characteristic Tags.
 - Explained alternate groups in [`Alternate group`](track_header_atom/alternate_group.md).
-- Corrected structure of `gmhd` and `gmin` in [`Base media information atom ('minf')`](base_media_information_atom.md).
-- General Structure of a Sample Description in [`Sample description atom ('stsd')`](sample_description_atom.md) includes emphasized importance of data size due to occasional terminating zeroes.
-- [`Timecode media information atom ('tcmi')`](timecode_media_information_atom.md) now documents the reserved integer after the text size.
+- Corrected structure of `gmhd` and `gmin` in [`Base media information atom`](base_media_information_atom.md).
+- General Structure of a Sample Description in [`Sample description atom`](sample_description_atom.md) includes emphasized importance of data size due to occasional terminating zeroes.
+- [`Timecode media information atom`](timecode_media_information_atom.md) now documents the reserved integer after the text size.
 - “Audio track” changed to “sound track” for consistency.
 
 ###### Deprecated
@@ -56,20 +56,20 @@ Changes to the QuickTime File Format.
 
 ###### Added
 
-- The sound sample description v2 format along with the definition of two new sound sample description extensions, see [`Sound sample description version 2 ('stsd')`](sound_sample_description_version_2.md).
-- New atoms for the display of track aperture in different modes, see [`Track aperture mode dimensions atom ('tapt')`](track_aperture_mode_dimensions_atom.md).
+- The sound sample description v2 format along with the definition of two new sound sample description extensions, see [`Sound sample description version 2`](sound_sample_description_version_2.md).
+- New atoms for the display of track aperture in different modes, see [`Track aperture mode dimensions atom`](track_aperture_mode_dimensions_atom.md).
 - New sample atoms for handling out-of-order movie samples, see [`Sample atoms`](sample_atoms.md).
 - [`Audio priming-handling encoder delay in AAC`](appendix_g_audio_priming_handling_encoder_delay_in_aac.md), which treats how to handle temporal positioning of AAC audio data explicitly.
 
 ###### Updated
 
-- The Macintosh language codes table has been updated with current language names, see [`Language code values`](language_code_values.md) and the related [`Extended language tag atom ('elng')`](extended_language_tag_atom.md) defined.
+- The Macintosh language codes table has been updated with current language names, see [`Language code values`](language_code_values.md) and the related [`Extended language tag atom`](extended_language_tag_atom.md) defined.
 
 ##### 2010 08 03
 
 ###### Updated
 
-- Corrected the order of fields described in the [`Metadata handler atom ('hdlr')`](metadata_handler_atom.md) structure.
+- Corrected the order of fields described in the [`Metadata handler atom`](metadata_handler_atom.md) structure.
 
 ##### 2010 05 03
 
@@ -83,13 +83,13 @@ Changes to the QuickTime File Format.
 
 - First public release of complete, updated *QuickTime File Format Specification* with information about atoms and atom types.
 - Added licensing information and disclaimer for developers.
-- A QuickTime file may now contain a file type compatibility atom. See [`File type compatibility atom ('ftyp')`](file_type_compatibility_atom.md).
-- A movie atom may now contain a movie profile atom. See [`Movie profile atom ('prfl')`](movie_profile_atom.md).
-- A track atom may now contain a track profile atom. See [`Track profile atom ('prfl')`](track_profile_atom.md).
-- Video sample descriptions may now contain a pixel aspect ratio atom for non-square pixels. See [`Pixel aspect ratio ('pasp')`](pixel_aspect_ratio.md) (`'pasp'`).
-- Video sample descriptions may now also contain a color parameter atom. See [`Color parameter atom ('colr')`](color_parameter_atom.md) (`'colr'`).
-- Video sample descriptions may now a clean aperture atom. See [`Clean aperture ('clap')`](clean_aperture.md) (`'clap'`).
-- MPEG-4 video and audio sample descriptions may now contain elementary stream descriptor atoms. See [`MPEG-4 elementary stream descriptor atom ('esds')`](mpeg-4_elementary_stream_descriptor_atom.md) (`'esds'`) and [`MPEG-4 elementary stream descriptor atom  ('esds')`](mpeg-4_elementary_sound_stream_descriptor_atom.md) (`'esds'`).
+- A QuickTime file may now contain a file type compatibility atom. See [`File type compatibility atom`](file_type_compatibility_atom.md).
+- A movie atom may now contain a movie profile atom. See [`Movie profile atom`](movie_profile_atom.md).
+- A track atom may now contain a track profile atom. See [`Track profile atom`](track_profile_atom.md).
+- Video sample descriptions may now contain a pixel aspect ratio atom for non-square pixels. See [`Pixel aspect ratio`](pixel_aspect_ratio.md) (`'pasp'`).
+- Video sample descriptions may now also contain a color parameter atom. See [`Color parameter atom`](color_parameter_atom.md) (`'colr'`).
+- Video sample descriptions may now a clean aperture atom. See [`Clean aperture`](clean_aperture.md) (`'clap'`).
+- MPEG-4 video and audio sample descriptions may now contain elementary stream descriptor atoms. See [`MPEG-4 elementary stream descriptor atom`](mpeg-4_elementary_stream_descriptor_atom.md) (`'esds'`) and [`MPEG-4 elementary stream descriptor atom  ('esds')`](mpeg-4_elementary_sound_stream_descriptor_atom.md) (`'esds'`).
 
 ###### Updated
 

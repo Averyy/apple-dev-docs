@@ -30,8 +30,8 @@ When requesting timelines for a widget, WidgetKit passes the [`TimelineProvider`
 
 If your widget uses assets that take time to generate or depend on the specific environment they’re rendered in, you can use the environment variants to generate those assets in advance. Some of the common environment properties to consider include:
 
-- [`colorScheme`](https://developer.apple.com/documentation/SwiftUI/EnvironmentValues/colorScheme), where you use different assets for light and dark schemes.
-- [`displayScale`](https://developer.apple.com/documentation/SwiftUI/EnvironmentValues/displayScale), where your widget might appear in both @1x and @2x displays on macOS devices.
+- [`colorScheme`](https://developer.apple.com/documentation/swiftui/environmentvalues/colorscheme), where you use different assets for light and dark schemes.
+- [`displayScale`](https://developer.apple.com/documentation/swiftui/environmentvalues/displayscale), where your widget might appear in both @1x and @2x displays on macOS devices.
 
 To be responsive when the environment changes, WidgetKit may render the widget’s view in advance. For example, WidgetKit renders both light and dark versions of the widget so that if the color scheme changes, the correct version is immediately available.
 

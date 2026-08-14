@@ -30,12 +30,12 @@ Icon badging is the only notification type supported for non-running application
 
 The `userInfo` dictionary may also have custom data defined by the provider according to the JSON schema. The properties for custom data should be specified at the same level as the `aps` dictionary. However, custom-defined properties should not be used for mass data transport because there is a strict size limit per notification (256 bytes) and delivery is not guaranteed.
 
-If you implement [`applicationDidFinishLaunching(_:)`](nsapplicationdelegate/applicationdidfinishlaunching(_:).md) and a push notification for the application has recently arrived, this method is not invoked for that push notification. In this case, you can access the JSON data in the [`userInfo`](https://developer.apple.com/documentation/Foundation/NSNotification/userInfo) dictionary of the passed-in [`NSNotification`](https://developer.apple.com/documentation/Foundation/NSNotification) object.
+If you implement [`applicationDidFinishLaunching(_:)`](nsapplicationdelegate/applicationdidfinishlaunching(_:).md) and a push notification for the application has recently arrived, this method is not invoked for that push notification. In this case, you can access the JSON data in the [`userInfo`](https://developer.apple.com/documentation/foundation/nsnotification/userinfo) dictionary of the passed-in [`NSNotification`](https://developer.apple.com/documentation/foundation/nsnotification) object.
 
 ## Parameters
 
 - `application`: The application that received the remote notification.
-- `userInfo`: A dictionary that contains information related to the remote notification, specifically a badge number for the application icon, a notification identifier, and possibly custom data. The provider originates it as a JSON-defined dictionary that AppKit converts to an [`NSDictionary`](https://developer.apple.com/documentation/Foundation/NSDictionary) object; the dictionary may contain only property-list objects plus [`NSNull`](https://developer.apple.com/documentation/Foundation/NSNull).
+- `userInfo`: A dictionary that contains information related to the remote notification, specifically a badge number for the application icon, a notification identifier, and possibly custom data. The provider originates it as a JSON-defined dictionary that AppKit converts to an [`NSDictionary`](https://developer.apple.com/documentation/foundation/nsdictionary) object; the dictionary may contain only property-list objects plus [`NSNull`](https://developer.apple.com/documentation/foundation/nsnull).
 
 ## See Also
 

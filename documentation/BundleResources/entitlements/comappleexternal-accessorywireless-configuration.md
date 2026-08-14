@@ -21,7 +21,7 @@ To add this entitlement to your app, enable the Wireless Accessory Configuration
 
 ## See Also
 
-- [External Accessory](../ExternalAccessory/ExternalAccessory.md)
+- [External Accessory](../externalaccessory/externalaccessory.md)
   Communicate with accessories that connect to a device with the Apple Lightning connector, or with Bluetooth wireless technology.
 - [Access Wi-Fi Information Entitlement](entitlements/com.apple.developer.networking.wifi-info.md)
   A Boolean value indicating whether your app can access information about the connected Wi-Fi network.

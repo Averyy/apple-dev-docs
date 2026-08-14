@@ -47,7 +47,7 @@ Instances of this class are thread safe.
 - [var connectedDate: Date?](nevpnconnection/connecteddate.md)
   The date and time when the connection status changed to `NEVPNStatusConnected`.
 ### Notifications
-- [static let NEVPNStatusDidChange: NSNotification.Name](../Foundation/NSNotification/Name-swift.struct/NEVPNStatusDidChange.md)
+- [static let NEVPNStatusDidChange: NSNotification.Name](../foundation/nsnotification/name-swift.struct/nevpnstatusdidchange.md)
   Posted when the status of the VPN connection changes.
 ### Handling errors
 - [func fetchLastDisconnectError(completionHandler: ((any Error)?) -> Void)](nevpnconnection/fetchlastdisconnecterror(completionhandler:).md)
@@ -60,16 +60,16 @@ Instances of this class are thread safe.
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Inherited By
 - [NETunnelProviderSession](netunnelprovidersession.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

@@ -20,7 +20,7 @@ Add gesture recognizers for [`UIPress.PressType.pageDown`](uipress/presstype/pag
 
 In an electronic program guide, select the item above the current one in response to [`UIPress.PressType.upArrow`](uipress/presstype/uparrow.md), and display the previous screen of items in response to [`UIPress.PressType.pageUp`](uipress/presstype/pageup.md). While your content plays, change the channel when your app receives [`UIPress.PressType.pageUp`](uipress/presstype/pageup.md) or [`UIPress.PressType.pageDown`](uipress/presstype/pagedown.md).
 
-For more details on browsing multichannel content, see [`Providing Channel Navigation`](https://developer.apple.com/documentation/TVServices/providing-channel-navigation).
+For more details on browsing multichannel content, see [`Providing Channel Navigation`](https://developer.apple.com/documentation/tvservices/providing-channel-navigation).
 
 ## See Also
 

@@ -19,7 +19,7 @@ class let touchBarColorPickerFontName: String
 
 #### Discussion
 
-![Template image for color picker for fonts](https://docs-assets.developer.apple.com/published/ebdbfa56af4c3d354be9b66d211d1324/media-2793477%402x.png)
+![Template image for color picker for fonts](/images/com.apple.appkit/media-2793477@2x.png)
 
 Touch Bar template images are exclusively for use in [`NSTouchBarItem`](nstouchbaritem.md) objects and not in onscreen windows.
 

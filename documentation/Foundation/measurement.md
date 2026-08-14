@@ -88,22 +88,22 @@ Measurements support a large set of operators, including `+`, `-`, `*`, `/`, and
 ## Relationships
 
 ### Conforms To
-- [Comparable](../Swift/Comparable.md)
-- [Copyable](../Swift/Copyable.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomReflectable](../Swift/CustomReflectable.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Decodable](../Swift/Decodable.md)
-- [ElectricityInsightMeasure](../EnergyKit/ElectricityInsightMeasure.md)
-- [Encodable](../Swift/Encodable.md)
-- [Equatable](../Swift/Equatable.md)
-- [Escapable](../Swift/Escapable.md)
-- [Hashable](../Swift/Hashable.md)
-- [IntentValueConvertible](../AppIntents/IntentValueConvertible.md)
-- [IntentValueExpressing](../AppIntents/IntentValueExpressing.md)
+- [Comparable](../swift/comparable.md)
+- [Copyable](../swift/copyable.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomReflectable](../swift/customreflectable.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Decodable](../swift/decodable.md)
+- [ElectricityInsightMeasure](../energykit/electricityinsightmeasure.md)
+- [Encodable](../swift/encodable.md)
+- [Equatable](../swift/equatable.md)
+- [Escapable](../swift/escapable.md)
+- [Hashable](../swift/hashable.md)
+- [IntentValueConvertible](../appintents/intentvalueconvertible.md)
+- [IntentValueExpressing](../appintents/intentvalueexpressing.md)
 - [ReferenceConvertible](referenceconvertible.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

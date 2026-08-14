@@ -22,7 +22,7 @@ func perform(_ requests: [VNRequest], on image: CGImage) throws
 ## Parameters
 
 - `requests`: An array of [`VNRequest`](vnrequest.md) requests to perform.
-- `image`: The input [`CGImage`](https://developer.apple.com/documentation/CoreGraphics/CGImage) on which to perform the request.
+- `image`: The input [`CGImage`](https://developer.apple.com/documentation/coregraphics/cgimage) on which to perform the request.
 
 ## See Also
 

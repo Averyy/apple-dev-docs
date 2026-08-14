@@ -6,7 +6,7 @@ Learn about the available third-party network debugging tools.
 
 #### Overview
 
-iOS and macOS have built-in network debugging tools (see [`Analyzing HTTP traffic with Instruments`](https://developer.apple.com/documentation/Foundation/analyzing-http-traffic-with-instruments) and [`Choosing a Network Debugging Tool`](choosing-a-network-debugging-tool.md)), but you may also want to take advantage of the third-party tools discussed here.
+iOS and macOS have built-in network debugging tools (see [`Analyzing HTTP traffic with Instruments`](https://developer.apple.com/documentation/foundation/analyzing-http-traffic-with-instruments) and [`Choosing a Network Debugging Tool`](choosing-a-network-debugging-tool.md)), but you may also want to take advantage of the third-party tools discussed here.
 
 > ❗ **Important**:  Information about products not manufactured by Apple is provided without recommendation or endorsement. Apple assumes no responsibility with regard to the selection, performance, or use of third-party products. [`Contact the vendor`](https://developer.apple.comhttps://support.apple.com/en-us/HT201777) for additional information. Other company and product names may be trademarks of their respective owners.
 

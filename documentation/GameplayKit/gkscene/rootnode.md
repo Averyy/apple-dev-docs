@@ -21,7 +21,7 @@ var rootNode: (any GKSceneRootNodeType)? { get set }
 
 #### Discussion
 
-The [`GKSceneRootNodeType`](gkscenerootnodetype.md) protocol is an indirect type for game scene classes that the [`GKScene`](gkscene.md) class can load. [`SKScene`](https://developer.apple.com/documentation/SpriteKit/SKScene) is the only class currently supported for loading with the [`GKScene`](gkscene.md) class.
+The [`GKSceneRootNodeType`](gkscenerootnodetype.md) protocol is an indirect type for game scene classes that the [`GKScene`](gkscene.md) class can load. [`SKScene`](https://developer.apple.com/documentation/spritekit/skscene) is the only class currently supported for loading with the [`GKScene`](gkscene.md) class.
 
 
 ---

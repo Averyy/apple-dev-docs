@@ -25,8 +25,8 @@ An action that starts an In-App Purchase.
 
 StoreKit provides several APIs you can use to enable customers to initiate a purchase. Choose the API that suits your app’s implementation, specifically:
 
-- Use `PurchaseAction` for apps that use [`SwiftUI`](https://developer.apple.com/documentation/SwiftUI), including multi-scene apps for visionOS.
-- Use [`purchase(confirmIn:options:)`](product/purchase(confirmin:options:)-3bivf.md) for apps that use [`UIKit`](https://developer.apple.com/documentation/UIKit).
+- Use `PurchaseAction` for apps that use [`SwiftUI`](https://developer.apple.com/documentation/swiftui), including multi-scene apps for visionOS.
+- Use [`purchase(confirmIn:options:)`](product/purchase(confirmin:options:)-3bivf.md) for apps that use [`UIKit`](https://developer.apple.com/documentation/uikit).
 - Use [`purchase(options:)`](product/purchase(options:).md) if your app runs on watchOS or macOS.
 
 > ❗ **Important**:  If you use StoreKit views such as [`ProductView`](productview.md), [`StoreView`](storeview.md), or [`SubscriptionStoreView`](subscriptionstoreview.md) you don’t need to call any other API to initiate a purchase. StoreKit manages the purchase action automatically, including presenting the purchase confirmation UI. For more information, see [`StoreKit views`](storekit-views.md).
@@ -35,7 +35,7 @@ StoreKit provides several APIs you can use to enable customers to initiate a pur
 
 Use `PurchaseAction` instead of [`purchase(options:)`](product/purchase(options:).md) for SwiftUI implementations, including multi-scene apps for visionOS. Call the instance to start an in-app purchase.
 
-To use this API, read the `PurchaseAction` environment value to get an instance of the structure for a given [`Environment`](https://developer.apple.com/documentation/SwiftUI/Environment). You call the instance directly because it defines a [`callAsFunction(_:options:)`](purchaseaction/callasfunction(_:options:).md) method that Swift calls when you call the instance.
+To use this API, read the `PurchaseAction` environment value to get an instance of the structure for a given [`Environment`](https://developer.apple.com/documentation/swiftui/environment). You call the instance directly because it defines a [`callAsFunction(_:options:)`](purchaseaction/callasfunction(_:options:).md) method that Swift calls when you call the instance.
 
 When you initiate an in-app purchase, the system presents UI for the customer to confirm the purchase details. The purchase action you get from the environment automatically includes the UI context. It presents the confirmation UI in proximity to the scene in which the view displays.
 
@@ -77,8 +77,8 @@ Note that the second line in the code example can omit the type name, as follows
 ## Relationships
 
 ### Conforms To
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

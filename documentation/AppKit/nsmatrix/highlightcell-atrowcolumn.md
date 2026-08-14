@@ -16,7 +16,7 @@ func highlightCell(_ flag: Bool, atRow row: Int, column col: Int)
 
 ## Parameters
 
-- `flag`: [`true`](https://developer.apple.com/documentation/Swift/true) to highlight the cell; [`false`](https://developer.apple.com/documentation/Swift/false) to unhighlight the cell.
+- `flag`: [`true`](https://developer.apple.com/documentation/swift/true) to highlight the cell; [`false`](https://developer.apple.com/documentation/swift/false) to unhighlight the cell.
 - `row`: The row containing the cell.
 - `col`: The column containing the cell.
 

@@ -31,11 +31,11 @@ If the transcriber is configured to send volatile results, each phrase is sent o
 - [var text: AttributedString](speechtranscriber/result/text.md)
   The most likely interpretation of the audio in this range.
 ### Working with transcriptions
-- [AttributeScopes.SpeechAttributes.TimeRangeAttribute](../Foundation/AttributeScopes/SpeechAttributes/TimeRangeAttribute.md)
+- [AttributeScopes.SpeechAttributes.TimeRangeAttribute](../foundation/attributescopes/speechattributes/timerangeattribute.md)
   The time range in the source audio corresponding to the associated transcription text.
-- [AttributeScopes.SpeechAttributes.ConfidenceAttribute](../Foundation/AttributeScopes/SpeechAttributes/ConfidenceAttribute.md)
+- [AttributeScopes.SpeechAttributes.ConfidenceAttribute](../foundation/attributescopes/speechattributes/confidenceattribute.md)
   A confidence level (0–1) of the associated transcription text.
-- [func rangeOfAudioTimeRangeAttributes(intersecting: CMTimeRange) -> Range<AttributedString.Index>?](../Foundation/AttributedString/rangeOfAudioTimeRangeAttributes(intersecting:).md)
+- [func rangeOfAudioTimeRangeAttributes(intersecting: CMTimeRange) -> Range<AttributedString.Index>?](../foundation/attributedstring/rangeofaudiotimerangeattributes(intersecting:).md)
   Returns the range of the attributed string that is within the given time range.
 ### Getting audio range
 - [var range: CMTimeRange](speechmoduleresult/range.md)
@@ -49,11 +49,11 @@ If the transcriber is configured to send volatile results, each phrase is sent o
 ## Relationships
 
 ### Conforms To
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 - [SpeechModuleResult](speechmoduleresult.md)
 
 ## See Also

@@ -46,7 +46,7 @@ struct Table: EntityTabletop {
 ## Relationships
 
 ### Inherits From
-- [Identifiable](../Swift/Identifiable.md)
+- [Identifiable](../swift/identifiable.md)
 - [Tabletop](tabletop.md)
 
 ## See Also

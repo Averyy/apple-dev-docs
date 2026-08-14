@@ -38,6 +38,7 @@ Get the administrators for subscriptions that your organization manages.
 
 ### Response
 - [object GetSubscriptionAdminsResponse](getsubscriptionadminsresponse.md)
+  The response that contains the requested subscription administrators.
 - [object ErrorResponse](errorresponse.md)
   The response that contains the error that occurs.
 ### Content Metadata
@@ -56,6 +57,10 @@ Get the administrators for subscriptions that your organization manages.
 
 ## See Also
 
+- [Enable Subscriptions](enable-subscriptions.md)
+  Declare that your device management service supports subscription management.
+- [Disable Subscriptions](disable-subscriptions.md)
+  Declare that your device management service doesn’t support subscription management.
 - [Get Subscriptions](get-subscriptions.md)
   Get the subscriptions that your organization manages.
 - [Get Subscription Assignments](get-subscription-assignments.md)

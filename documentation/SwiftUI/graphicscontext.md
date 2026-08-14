@@ -36,7 +36,7 @@ Canvas { context, size in
 
 The example above draws an ellipse that just fits inside a canvas that’s constrained to 300 points wide and 200 points tall:
 
-![A screenshot of a view that shows a green ellipse.](https://docs-assets.developer.apple.com/published/d7362dca562c6e165da941bc85ce0ff7/GraphicsContext-1%402x.png)
+![A screenshot of a view that shows a green ellipse.](/images/com.apple.SwiftUI/GraphicsContext-1@2x.png)
 
 In addition to outlining or filling paths, you can draw images, text, and SwiftUI views. You can also use the context to perform many common graphical operations, like adding masks, applying filters and transforms, and setting a blend mode. For example you can add a mask using the [`clip(to:style:options:)`](graphicscontext/clip(to:style:options:).md) method:
 
@@ -50,7 +50,7 @@ context.fill(
 
 The rectangular mask hides all but one quadrant of the ellipse:
 
-![A screenshot of a view that shows the upper left quarter of a green](https://docs-assets.developer.apple.com/published/dffe890532ee24aa3b6ec04abdab4ca2/GraphicsContext-2%402x.png)
+![A screenshot of a view that shows the upper left quarter of a green](/images/com.apple.SwiftUI/GraphicsContext-2@2x.png)
 
 The order of operations matters. Changes that you make to the state of the context, like adding a mask or a filter, apply to later drawing operations. If you reverse the fill and clip operations in the example above, so that the fill comes first, the mask doesn’t affect the ellipse.
 
@@ -74,7 +74,7 @@ context.fill(
 
 The mask doesn’t clip the rectangle because the mask isn’t part of the main context. However, both contexts draw into the same view because you created one context as a copy of the other:
 
-![A screenshot of a view that shows the upper left quarter of a green](https://docs-assets.developer.apple.com/published/44b9540bfd44ed50b730bc8dff67b39b/GraphicsContext-3%402x.png)
+![A screenshot of a view that shows the upper left quarter of a green](/images/com.apple.SwiftUI/GraphicsContext-3@2x.png)
 
 The context has access to an [`EnvironmentValues`](environmentvalues.md) instance called [`environment`](graphicscontext/environment.md) that’s initially copied from the environment of its enclosing view. SwiftUI uses environment values — like the display resolution and color scheme — to resolve types like [`Image`](image.md) and [`Color`](color.md) that appear in the context. You can also access values stored in the environment for your own purposes.
 

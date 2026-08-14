@@ -8,7 +8,7 @@ Retrieve data from the onboard accelerometers.
 
 An accelerometer measures changes in velocity along one axis. All iOS devices have a three-axis accelerometer, which delivers acceleration values in each of the three axes shown in the next illustration. The values reported by the accelerometers are measured in increments of the gravitational acceleration, with the value `1.0` representing an acceleration of 9.8 meters per second (per second) in the given direction. Acceleration values may be positive or negative depending on the direction of the acceleration.
 
-![Accelerometers measure changes in velocity along the x, y, and z axes](https://docs-assets.developer.apple.com/published/92a6d07674e95cb45de48f62e3247fdd/media-2904020%402x.png)
+![Accelerometers measure changes in velocity along the x, y, and z axes](/images/com.apple.coremotion/media-2904020@2x.png)
 
 You access the raw accelerometer data using the classes of the Core Motion framework. Specifically, the [`CMMotionManager`](cmmotionmanager.md) class provides the interfaces for enabling the accelerometer hardware. When enabling the hardware, choose the interfaces that are best suited for your app. You can pull the accelerometer data only when you need it, or you can ask the framework to push updates to your app at regular intervals. Each technique involves different configuration steps and has a different use case.
 
@@ -20,7 +20,7 @@ For information about the coordinate axes of different device types, see [`CMMot
 
 Accelerometer data might be unavailable for a variety of reasons, so verify that the data is available before you try to obtain it. Check the value of the [`isAccelerometerAvailable`](cmmotionmanager/isaccelerometeravailable.md) property of `CMMotionManager` and make sure it’s `true`. If it’s `false`, starting updates doesn’t deliver any data to your app.
 
-> ❗ **Important**:  In visionOS, accelerometer data is available only when your app has an open immersive space. For more information, see [`ImmersiveSpace`](https://developer.apple.com/documentation/SwiftUI/ImmersiveSpace).
+> ❗ **Important**:  In visionOS, accelerometer data is available only when your app has an open immersive space. For more information, see [`ImmersiveSpace`](https://developer.apple.com/documentation/swiftui/immersivespace).
 
 ##### Get Accelerometer Data Only When You Need It
 

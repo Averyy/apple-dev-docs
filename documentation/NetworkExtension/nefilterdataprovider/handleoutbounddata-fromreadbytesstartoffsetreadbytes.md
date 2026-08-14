@@ -30,7 +30,7 @@ An [`NEFilterDataVerdict`](nefilterdataverdict.md) indicating how the system sho
 
 - `flow`: An [`NEFilterFlow`](nefilterflow.md) object containing information about the flow.
 - `offset`: An unsigned integer containing the offset of the data stored in `readBytes`. This offset is measured from the beginning of the flow’s outbound data.
-- `readBytes`: An [`NSData`](https://developer.apple.com/documentation/Foundation/NSData) object containing the data to be filtered.
+- `readBytes`: An [`NSData`](https://developer.apple.com/documentation/foundation/nsdata) object containing the data to be filtered.
 
 ## See Also
 

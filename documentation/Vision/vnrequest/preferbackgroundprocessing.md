@@ -21,7 +21,7 @@ var preferBackgroundProcessing: Bool { get set }
 
 #### Discussion
 
-If set to [`true`](https://developer.apple.com/documentation/Swift/true), this property reduces the request’s memory footprint, processing footprint, and CPU/GPU contention at the potential cost of longer execution time.
+If set to [`true`](https://developer.apple.com/documentation/swift/true), this property reduces the request’s memory footprint, processing footprint, and CPU/GPU contention at the potential cost of longer execution time.
 
 Setting this value can help ensure that Vision processing doesn’t block UI updates and other rendering on the main thread.
 

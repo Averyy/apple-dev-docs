@@ -34,8 +34,8 @@ See [`animationOverrideWeight`](ikcomponent/constraint/animationoverrideweight.m
 ## Relationships
 
 ### Conforms To
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
 
 
 ---

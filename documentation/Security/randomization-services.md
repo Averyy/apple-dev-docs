@@ -10,7 +10,7 @@ Many security operations rely on randomization to avoid reproducibility. This is
 
 But the strength of such a password depends on the quality of the randomization. True randomization is not possible in a deterministic system, such as one where software instructions from a bounded set are executed according to well-defined rules. But even “good” randomization (in a statistical sense) is difficult to produce under these conditions. If an attacker can infer patterns in insufficiently randomized data, your system becomes compromised. Use randomization services to generate a cryptographically secure set of random numbers.
 
-![Diagram showing random number generation.](https://docs-assets.developer.apple.com/published/32623e7b9e864d13451c7d411afe7de1/media-2903623%402x.png)
+![Diagram showing random number generation.](/images/com.apple.security/media-2903623@2x.png)
 
 ## Topics
 

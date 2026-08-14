@@ -18,7 +18,7 @@ optional func panel(_ sender: Any, willExpand expanding: Bool)
 ## Parameters
 
 - `sender`: The panel that is about to expand or collapse.
-- `expanding`: [`true`](https://developer.apple.com/documentation/Swift/true) specifies that the panel is expanding; [`false`](https://developer.apple.com/documentation/Swift/false) specifies that it is collapsing.
+- `expanding`: [`true`](https://developer.apple.com/documentation/swift/true) specifies that the panel is expanding; [`false`](https://developer.apple.com/documentation/swift/false) specifies that it is collapsing.
 
 ## See Also
 

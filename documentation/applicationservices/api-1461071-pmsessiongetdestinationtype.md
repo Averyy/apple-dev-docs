@@ -28,7 +28,11 @@ All of the destination types are stored in the print settings object except for 
 
 - `printSession`: The printing session that provides a context for the print job. This must be the same printing session used for the Print dialog. The printing session contains the preview setting, which can override the destination type in the print settings.
 - `printSettings`: The print settings for the print job whose destination you want to obtain.
-- `destTypeP`: See   for a complete description of the destination type constants.
+- `destTypeP`: A pointer to your `PMDestinationType` variable. On return, the variable contains the destination type for the specified print job. Possible values include: - `kPMDestinationPrinter` (output to a printer)
+- `kPMDestinationFile` (output to a file)
+- `kPMDestinationFax` (output to a fax)
+- `kPMDestinationPreview` (output to print preview)
+- `kPMDestinationProcessPDF` (output to a PDF workflow option) See [`PMDestinationType`](pmdestinationtype.md) for a complete description of the destination type constants.
 
 ## See Also
 

@@ -24,7 +24,7 @@ object JWSTransactionDecodedPayload
 
 ## Properties
 
-- `appAccountToken` (appAccountToken): A UUID you create at the time of purchase that associates the transaction with a customer on your own service. If your app doesn’t provide an `appAccountToken`, this field is omitted. For more information, see [`appAccountToken(_:)`](https://developer.apple.com/documentation/StoreKit/Product/PurchaseOption/appAccountToken(_:)).
+- `appAccountToken` (appAccountToken): A UUID you create at the time of purchase that associates the transaction with a customer on your own service. If your app doesn’t provide an `appAccountToken`, this field is omitted. For more information, see [`appAccountToken(_:)`](https://developer.apple.com/documentation/storekit/product/purchaseoption/appaccounttoken(_:)).
 - `appTransactionId` (appTransactionId): The unique identifier of the app download transaction.
 - `bundleId` (bundleId): The bundle identifier of the app.
 - `currency` (currency): The three-letter ISO 4217 currency code associated with the `price` parameter. This value is present only if `price` is present.
@@ -38,7 +38,7 @@ object JWSTransactionDecodedPayload
 - `offerType` (offerType): A value that represents the promotional offer type.
 - `originalPurchaseDate` (originalPurchaseDate): The UNIX time, in milliseconds, that represents the purchase date of the original transaction identifier.
 - `originalTransactionId` (originalTransactionId): The transaction identifier of the original purchase.
-- `price` (price): An integer value that represents the price multiplied by 1000 of the in-app purchase or subscription offer you configured in App Store Connect and that the system records at the time of the purchase. For more information, see [`price`](https://developer.apple.com/documentation/AppStoreServerNotifications/price). The `currency` parameter indicates the currency of this price.
+- `price` (price): An integer value that represents the price multiplied by 1000 of the in-app purchase or subscription offer you configured in App Store Connect and that the system records at the time of the purchase. For more information, see [`price`](https://developer.apple.com/documentation/appstoreservernotifications/price). The `currency` parameter indicates the currency of this price.
 - `productId` (productId): The unique identifier of the product.
 - `purchaseDate` (purchaseDate): The UNIX time, in milliseconds, that the App Store charged the customer’s account for a purchase, restored product, subscription, or subscription renewal after a lapse.
 - `quantity` (quantity): The number of consumable products the customer purchased.

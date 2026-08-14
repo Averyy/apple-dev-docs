@@ -16,7 +16,7 @@ class DiskImage
 
 #### Overview
 
-To use a disk image as storage for virtual machine, use this object with the Virtualization API method [`init(diskImage:cachingMode:synchronizationMode:)`](https://developer.apple.com/documentation/Virtualization/VZDiskImageStorageDeviceAttachment/init(diskImage:cachingMode:synchronizationMode:)). In addition, it contains properties that describe the disk image and operations to manipulate it.
+To use a disk image as storage for virtual machine, use this object with the Virtualization API method [`init(diskImage:cachingMode:synchronizationMode:)`](https://developer.apple.com/documentation/virtualization/vzdiskimagestoragedeviceattachment/init(diskimage:cachingmode:synchronizationmode:)). In addition, it contains properties that describe the disk image and operations to manipulate it.
 
 An image can either be standalone or part of a stack. For more information on stacked disk image, see [`StackedImage`](stackedimage.md).
 

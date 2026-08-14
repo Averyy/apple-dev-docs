@@ -18,7 +18,7 @@ var mobileCountryCode: String? { get }
 
 #### Discussion
 
-A read-only [`NSString`](https://developer.apple.com/documentation/Foundation/NSString) object that contains the numeric mobile country code for the user’s cellular service provider. MCCs are defined by ITU-T Recommendation E.212, “List of Mobile Country or Geographical Area Codes”. Typing this property as an [`NSString`](https://developer.apple.com/documentation/Foundation/NSString) object, rather than a number type, preserves leading zeroes in MCCs.
+A read-only [`NSString`](https://developer.apple.com/documentation/foundation/nsstring) object that contains the numeric mobile country code for the user’s cellular service provider. MCCs are defined by ITU-T Recommendation E.212, “List of Mobile Country or Geographical Area Codes”. Typing this property as an [`NSString`](https://developer.apple.com/documentation/foundation/nsstring) object, rather than a number type, preserves leading zeroes in MCCs.
 
 The value for this property is `nil` if any of the following apply:
 

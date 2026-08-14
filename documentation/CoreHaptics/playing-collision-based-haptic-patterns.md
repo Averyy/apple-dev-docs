@@ -35,7 +35,7 @@ See [`Preparing your app to play haptics`](preparing-your-app-to-play-haptics.md
 
 ##### Define the Objects in Uikit Dynamics
 
-Express the walls as boundaries in a [`UICollisionBehavior`](https://developer.apple.com/documentation/UIKit/UICollisionBehavior) with the sphere.
+Express the walls as boundaries in a [`UICollisionBehavior`](https://developer.apple.com/documentation/uikit/uicollisionbehavior) with the sphere.
 
 ```swift
 wallCollisions = UICollisionBehavior(items: [sphereView])
@@ -70,7 +70,7 @@ wallCollisions.addBoundary(withIdentifier: NSString("bottomWall"),
                            to: lowerLeft)
 ```
 
-Each bounce against the wall is a dynamic item behavior, which lets you tweak the elasticity to match the haptic effect. An animator of class [`UIDynamicAnimator`](https://developer.apple.com/documentation/UIKit/UIDynamicAnimator) ties together all of these dynamic objects with gravity.
+Each bounce against the wall is a dynamic item behavior, which lets you tweak the elasticity to match the haptic effect. An animator of class [`UIDynamicAnimator`](https://developer.apple.com/documentation/uikit/uidynamicanimator) ties together all of these dynamic objects with gravity.
 
 ```swift
 animator = UIDynamicAnimator(referenceView: view)
@@ -106,7 +106,7 @@ manager.startDeviceMotionUpdates(to: motionQueue) { deviceMotion, error in
 
 ##### Play Variable Haptic Patterns on Collision
 
-When the sphere collides with a wall, the dynamics framework sends a callback to its delegate. `ViewController` implements this delegate, [`UICollisionBehaviorDelegate`](https://developer.apple.com/documentation/UIKit/UICollisionBehaviorDelegate), to respond to collisions.
+When the sphere collides with a wall, the dynamics framework sends a callback to its delegate. `ViewController` implements this delegate, [`UICollisionBehaviorDelegate`](https://developer.apple.com/documentation/uikit/uicollisionbehaviordelegate), to respond to collisions.
 
 To vary the haptic at the point of collision, check the sphere’s velocity and map it to a normalized (0 to 1) intensity and sharpness value, as follows:
 

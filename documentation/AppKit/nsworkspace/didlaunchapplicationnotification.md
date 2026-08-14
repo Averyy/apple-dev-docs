@@ -18,7 +18,7 @@ class let didLaunchApplicationNotification: NSNotification.Name
 
 The notification object is the shared `NSWorkspace` instance. The `userInfo` dictionary contains the [`applicationUserInfoKey`](nsworkspace/applicationuserinfokey.md) key with a corresponding instance of [`NSRunningApplication`](nsrunningapplication.md) that represents the affected app.
 
-The system doesn’t post this notification for background apps or for apps that have the [`LSUIElement`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/LSUIElement) key in their `Info.plist` file. If you want to know when all apps (including background apps) launch or terminate, use key-value observing to monitor the value that returns from the [`runningApplications`](nsworkspace/runningapplications.md) method.
+The system doesn’t post this notification for background apps or for apps that have the [`LSUIElement`](https://developer.apple.com/documentation/bundleresources/information-property-list/lsuielement) key in their `Info.plist` file. If you want to know when all apps (including background apps) launch or terminate, use key-value observing to monitor the value that returns from the [`runningApplications`](nsworkspace/runningapplications.md) method.
 
 > ❗ **Important**:  To receive this notification, use [`notificationCenter`](nsworkspace/notificationcenter.md) to register for it. If you use a different notification center to register, you won’t receive the notification.
 

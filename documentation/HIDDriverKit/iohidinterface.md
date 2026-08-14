@@ -19,7 +19,7 @@ class IOHIDInterface;
 
 An `IOHIDInterface` object represents a specific interface of the HID device. Typically, you don’t create `IOHIDInterface` objects directly. Instead, you specify that your driver relies on an `IOHIDInterface` as its provider, and the system creates the interface object for you during the matching process.
 
-To use a HID interface object directly, call [`Open`](iohidinterface/open.md) to create a new session between the interface and your custom driver. When calling that method, you specify an [`OSAction`](https://developer.apple.com/documentation/DriverKit/OSAction) object to execute each time a new report is ready to process. When a new report arrives, the `IOHIDInterface` object parses the device’s report data, puts the data into a set of [`IOHIDElement`](iohidelement.md) objects, and notifies your action object. Use your action object’s [`ReportAvailable`](iohidinterface/reportavailable.md) method to parse the element objects and dispatch events.
+To use a HID interface object directly, call [`Open`](iohidinterface/open.md) to create a new session between the interface and your custom driver. When calling that method, you specify an [`OSAction`](https://developer.apple.com/documentation/driverkit/osaction) object to execute each time a new report is ready to process. When a new report arrives, the `IOHIDInterface` object parses the device’s report data, puts the data into a set of [`IOHIDElement`](iohidelement.md) objects, and notifies your action object. Use your action object’s [`ReportAvailable`](iohidinterface/reportavailable.md) method to parse the element objects and dispatch events.
 
 ## Topics
 
@@ -52,11 +52,11 @@ To use a HID interface object directly, call [`Open`](iohidinterface/open.md) to
 ## Relationships
 
 ### Inherits From
-- [IOService](../DriverKit/IOService.md)
+- [IOService](../driverkit/ioservice.md)
 
 ## See Also
 
-- [com.apple.developer.driverkit.family.hid.device](../BundleResources/Entitlements/com.apple.developer.driverkit.family.hid.device.md)
+- [com.apple.developer.driverkit.family.hid.device](../bundleresources/entitlements/com.apple.developer.driverkit.family.hid.device.md)
   A Boolean value that indicates whether the driver provides a HID-related service to the system.
 - [IOUserUSBHostHIDDevice](iouserusbhosthiddevice.md)
   A provider object for USB devices that support HID interactions.

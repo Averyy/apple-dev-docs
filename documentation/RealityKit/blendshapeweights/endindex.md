@@ -21,7 +21,7 @@ var endIndex: BlendShapeWeights.Index { get }
 
 #### Discussion
 
-For more more on the sequence’s final index, see [`endIndex`](https://developer.apple.com/documentation/Swift/Array/endIndex).
+For more more on the sequence’s final index, see [`endIndex`](https://developer.apple.com/documentation/swift/array/endindex).
 
 
 ---

@@ -66,7 +66,7 @@ entity.components.set(instancesComponent)
 entity.position = [0, 0, -1]
 ```
 
-![A screenshot of ten robots placed around a circle.](https://docs-assets.developer.apple.com/published/b304a9ca60c5f1d74a82d684491a64ee/robot-instancing.jpg)
+![A screenshot of ten robots placed around a circle.](/images/com.apple.RealityKit/robot-instancing.jpg)
 
 ## Topics
 

@@ -17,7 +17,7 @@ class NSSpellServer
 
 #### Overview
 
-A **service provider** is an application that declares its availability in a standard way, so that any other applications that wish to use it can do so. If you build a spelling checker that makes use of the [`NSSpellServer`](nsspellserver.md) class and list it as an available service, then users of any application that makes use of [`NSSpellChecker`](https://developer.apple.com/documentation/AppKit/NSSpellChecker) or includes a Services menu will see your spelling checker as one of the available dictionaries.
+A **service provider** is an application that declares its availability in a standard way, so that any other applications that wish to use it can do so. If you build a spelling checker that makes use of the [`NSSpellServer`](nsspellserver.md) class and list it as an available service, then users of any application that makes use of [`NSSpellChecker`](https://developer.apple.com/documentation/appkit/nsspellchecker) or includes a Services menu will see your spelling checker as one of the available dictionaries.
 
 ## Topics
 
@@ -34,19 +34,19 @@ A **service provider** is an application that declares its availability in a sta
   Indicates whether a given word is in the user’s list of learned words or the document’s list of words to ignore.
 ### Constants
 - [Grammatical-Analysis Details](grammatical-analysis-details.md)
-  These constants are used as the keys in the outDetails dictionaries returned by [`NSSpellServer`](nsspellserver.md) and [`checkGrammar(of:startingAt:language:wrap:inSpellDocumentWithTag:details:)`](https://developer.apple.com/documentation/AppKit/NSSpellChecker/checkGrammar(of:startingAt:language:wrap:inSpellDocumentWithTag:details:)) ([`NSSpellChecker`](https://developer.apple.com/documentation/AppKit/NSSpellChecker)).
+  These constants are used as the keys in the outDetails dictionaries returned by [`NSSpellServer`](nsspellserver.md) and [`checkGrammar(of:startingAt:language:wrap:inSpellDocumentWithTag:details:)`](https://developer.apple.com/documentation/appkit/nsspellchecker/checkgrammar(of:startingat:language:wrap:inspelldocumentwithtag:details:)) ([`NSSpellChecker`](https://developer.apple.com/documentation/appkit/nsspellchecker)).
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

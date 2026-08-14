@@ -8,7 +8,7 @@ Write your Metal pipeline states to a binary archive at app runtime, and build b
 
 When building your shaders at runtime, Metal uses pipeline state descriptors in addition to the Metal intermediate representation (IR) it compiles from your shader functions. To build binary archives for distribution, the compiler needs some information about your app’s Metal pipelines, and a way to interpret them. When serializing a binary archive to device storage from your app, Metal includes a pipeline configuration script with it. The Metal translator is the part of the compiler that reads these configurations, and enables GPU-specific compilation for platforms other than the host GPU. Invoke the translator with the `metal-tt` command in Terminal or from a build script.
 
-![A block flow diagram of the workflow for creating Metal binary archives. At the upper left, the process starts with a shader.msl source file that flows to the metal command-line tool and the resulting Metal IR library, shader.metallib. At the bottom middle, an independent workflow shows two boxes labeled Extract from app and Author with text editor. These combine to a final configuration script named HASH.mtlp-json. At the right, the Metal IR library and Metal config boxes flow together into the metal-tt command-line tool and produce the final product of a binary archive named shader.binary.metallib.](https://docs-assets.developer.apple.com/published/0065e6ab5b2e70cc642d7b5ed869ccb9/creating-binary-archives-from-device-built-pipeline-state-objects-1%402x.png)
+![A block flow diagram of the workflow for creating Metal binary archives. At the upper left, the process starts with a shader.msl source file that flows to the metal command-line tool and the resulting Metal IR library, shader.metallib. At the bottom middle, an independent workflow shows two boxes labeled Extract from app and Author with text editor. These combine to a final configuration script named HASH.mtlp-json. At the right, the Metal IR library and Metal config boxes flow together into the metal-tt command-line tool and produce the final product of a binary archive named shader.binary.metallib.](/images/com.apple.metal/creating-binary-archives-from-device-built-pipeline-state-objects-1@2x.png)
 
 This article explains how to serialize an [`MTLBinaryArchive`](mtlbinaryarchive.md) instance, extract the binary archive from an app you deploy to a device in Xcode, and provide it to the Metal translator to create GPU binaries for your project. You can use the code examples in this article with the app and shaders from the [`Drawing a triangle with Metal 4`](drawing-a-triangle-with-metal-4.md) sample. Another common approach is to create a small command-line tool that loads and compiles your shaders to an initial binary archive in macOS, which you can integrate as part your app’s build scripts.
 
@@ -86,7 +86,7 @@ fn serializeBinary(archive: MTLBinaryArchive, name: String) throws {
 }
 ```
 
-> **Note**:  In macOS, store resources outside your application bundle and within an appropriate directory. Storing runtime-created resources inside an application bundle can cause code-signing and verification errors when rebuilding. For more information on how to discover and diagnose these issues, see [`Testing a release build`](https://developer.apple.com/documentation/Xcode/testing-a-release-build).
+> **Note**:  In macOS, store resources outside your application bundle and within an appropriate directory. Storing runtime-created resources inside an application bundle can cause code-signing and verification errors when rebuilding. For more information on how to discover and diagnose these issues, see [`Testing a release build`](https://developer.apple.com/documentation/xcode/testing-a-release-build).
 
 Run your app on a device to create a Metal binary archive at the URL in your code.
 
@@ -103,7 +103,7 @@ For archived binaries you produce on another type of device, retrieve them as fo
 5. In Finder, navigate to the container’s saved location, Control-click it, and select Show Package Contents to open it.
 6. Copy the binary archive located at `AppData/Library/Application Support/${LIBRARY_NAME}.binary.metallib` to another directory.
 
-![A screenshot of the Devices and Simulators window in Xcode, showing a connected iPhone 15. In the pane on the right, HelloTriangle is selected in the Installed Apps section. At the bottom of the pane, the Download Container option is highlighted in the More menu.](https://docs-assets.developer.apple.com/published/fe3fd19459211b9f8e4219383661db28/creating-binary-archives-from-device-built-pipeline-state-objects-2%402x.png)
+![A screenshot of the Devices and Simulators window in Xcode, showing a connected iPhone 15. In the pane on the right, HelloTriangle is selected in the Installed Apps section. At the bottom of the pane, the Download Container option is highlighted in the More menu.](/images/com.apple.metal/creating-binary-archives-from-device-built-pipeline-state-objects-2@2x.png)
 
 Use `metal-lipo -archs` to inspect a binary archive and display the compiled GPU architectures. For example, a MacBook M1 Pro produces an `applegpu_g13g` binary archive.
 
@@ -162,7 +162,7 @@ applegpu_g12p applegpu_g13p applegpu_g13g applegpu_g14p applegpu_g14g applegpu_g
 
 ##### Add Your Compiled Binary Archive to Your App
 
-To use this newly created Metal binary archive, you need to add it to your Xcode project’s bundle resources. Add the `precompiled.binary.metallib` archive to your project’s Copy Bundle Resources build phase. For instructions, see [`Customizing the build phases of a target`](https://developer.apple.com/documentation/Xcode/customizing-the-build-phases-of-a-target).
+To use this newly created Metal binary archive, you need to add it to your Xcode project’s bundle resources. Add the `precompiled.binary.metallib` archive to your project’s Copy Bundle Resources build phase. For instructions, see [`Customizing the build phases of a target`](https://developer.apple.com/documentation/xcode/customizing-the-build-phases-of-a-target).
 
 For Metal to take advantage of precompiled binaries, load them with [`makeBinaryArchive(descriptor:)`](mtldevice/makebinaryarchive(descriptor:).md) and provide an [`MTLBinaryArchiveDescriptor`](mtlbinaryarchivedescriptor.md) with a [`url`](mtlbinaryarchivedescriptor/url.md) pointing to the binary archive. Then add them to a pipeline descriptor instance’s [`binaryArchives`](mtlrenderpipelinedescriptor/binaryarchives.md) property.
 

@@ -21,7 +21,7 @@ func update(deltaTime seconds: TimeInterval)
 
 #### Discussion
 
-Typically, you call this method in response to a per-frame game loop method such as [`update(_:)`](https://developer.apple.com/documentation/SpriteKit/SKScene/update(_:)) (SpriteKit) or [`renderer(_:updateAtTime:)`](https://developer.apple.com/documentation/SceneKit/SCNSceneRendererDelegate/renderer(_:updateAtTime:)) (SceneKit). GameplayKit then forwards to the [`update(deltaTime:)`](gkcomponent/update(deltatime:).md) method of all [`GKComponent`](gkcomponent.md) subclass objects managed by the component system, allowing you to execute per-frame logic for each component instance in a deterministic order.
+Typically, you call this method in response to a per-frame game loop method such as [`update(_:)`](https://developer.apple.com/documentation/spritekit/skscene/update(_:)) (SpriteKit) or [`renderer(_:updateAtTime:)`](https://developer.apple.com/documentation/scenekit/scnscenerendererdelegate/renderer(_:updateattime:)) (SceneKit). GameplayKit then forwards to the [`update(deltaTime:)`](gkcomponent/update(deltatime:).md) method of all [`GKComponent`](gkcomponent.md) subclass objects managed by the component system, allowing you to execute per-frame logic for each component instance in a deterministic order.
 
 ## Parameters
 

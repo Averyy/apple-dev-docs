@@ -34,7 +34,7 @@ To create a distribution-signed app using the Xcode app:
 5. Choose the appropriate distribution method. For example, to create a notarized app that you send directly to your customers, choose Direct Distribution.
 6. Click Distribute.
 
-> **Note**: If the button says Distribute Content rather than Distribute App, your archive has multiple items in its `Products` directory.  To avoid copying a target’s product into the `Products` directory, set the Skip Install (`SKIP_INSTALL`) build setting for that target. Do this for every target that has output embedded in your app. For more information, see [`TN3110: Resolving generic Xcode archive issue`](https://developer.apple.com/documentation/Technotes/tn3110-resolving-generic-xcode-archive-issue).
+> **Note**: If the button says Distribute Content rather than Distribute App, your archive has multiple items in its `Products` directory.  To avoid copying a target’s product into the `Products` directory, set the Skip Install (`SKIP_INSTALL`) build setting for that target. Do this for every target that has output embedded in your app. For more information, see [`TN3110: Resolving generic Xcode archive issue`](https://developer.apple.com/documentation/technotes/tn3110-resolving-generic-xcode-archive-issue).
 
 For more information about Xcode archives and the Archives organizer, see [`Distributing your app for beta testing and releases`](distributing-your-app-for-beta-testing-and-releases.md).
 
@@ -88,7 +88,7 @@ The `Products` directory contains two items: the daemon itself (`Daemon`) and th
 % ditto "DaemonWithApp.xcarchive/Products/Applications/ConfigApp.app" "to-be-signed/ConfigApp.app" 
 ```
 
-> ❗ **Important**: When you copy code, use `ditto` rather than `cp` because `ditto` preserves symlinks, which are critical to the structure of Mac frameworks. For more information on this structure, see [`Placing content in a bundle`](https://developer.apple.com/documentation/BundleResources/placing-content-in-a-bundle). Symlinks are also useful when dealing with nonstandard code structures.  For more details, see [`Embedding nonstandard code structures in a bundle`](embedding-nonstandard-code-structures-in-a-bundle.md).
+> ❗ **Important**: When you copy code, use `ditto` rather than `cp` because `ditto` preserves symlinks, which are critical to the structure of Mac frameworks. For more information on this structure, see [`Placing content in a bundle`](https://developer.apple.com/documentation/bundleresources/placing-content-in-a-bundle). Symlinks are also useful when dealing with nonstandard code structures.  For more details, see [`Embedding nonstandard code structures in a bundle`](embedding-nonstandard-code-structures-in-a-bundle.md).
 
 #### Identify the Code to Sign
 
@@ -137,7 +137,7 @@ The app and daemon are independent, so you can sign them in either order.
 
 #### Configure Your Entitlements
 
-A code signature can include *entitlements* — key-value pairs that grant an executable permission to use a service or technology. When macOS runs a process, it grants that process the entitlements that its executable’s code signature claims. For more information, see [`Entitlements`](https://developer.apple.com/documentation/BundleResources/Entitlements).
+A code signature can include *entitlements* — key-value pairs that grant an executable permission to use a service or technology. When macOS runs a process, it grants that process the entitlements that its executable’s code signature claims. For more information, see [`Entitlements`](https://developer.apple.com/documentation/bundleresources/entitlements).
 
 > ❗ **Important**: Don’t apply entitlements to library code.  It doesn’t do anything useful and can prevent your code from running.
 
@@ -145,7 +145,7 @@ You apply entitlements to a main executable. If your main executable needs entit
 
 If you build your product with Xcode, you might be able to use the `.entitlements` file that Xcode manages in your source code.  If not, create the `.entitlements` file yourself.
 
-> ❗ **Important**: The entitlements file needs to be a property list in the standard XML format with LF line endings, no comments, and no byte-order mark (BOM).  If you’re not sure if your file conforms to these requirements, use `plutil` to convert it to the standard format.  For specific instructions, see [`Resolving common notarization issues`](https://developer.apple.com/documentation/Security/resolving-common-notarization-issues#3561456).
+> ❗ **Important**: The entitlements file needs to be a property list in the standard XML format with LF line endings, no comments, and no byte-order mark (BOM).  If you’re not sure if your file conforms to these requirements, use `plutil` to convert it to the standard format.  For specific instructions, see [`Resolving common notarization issues`](https://developer.apple.com/documentation/security/resolving-common-notarization-issues).
 
 If you have a development-signed version of your program, you can print its entitlements using the `codesign` command-line tool, and use that information as the basis for your entitlements property list file as the following example shows:
 
@@ -169,18 +169,18 @@ If you have a development-signed version of your program, you can print its enti
 
 If you use the entitlements from a development-signed version of your program to create the entitlements property list file for your distribution-signed code, consider the following changes to the entitlements:
 
-- Change the value of [`APS Environment (macOS) Entitlement`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.aps-environment) from `development` to `production`.
-- The `com.apple.security.get-task-allow` entitlement allows the debugger to attach to your program, so you rarely apply it to a distribution-signed program. For more information, see [`Resolving common notarization issues`](https://developer.apple.com/documentation/Security/resolving-common-notarization-issues#3087731).
+- Change the value of [`APS Environment (macOS) Entitlement`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.aps-environment) from `development` to `production`.
+- The `com.apple.security.get-task-allow` entitlement allows the debugger to attach to your program, so you rarely apply it to a distribution-signed program. For more information, see [`Resolving common notarization issues`](https://developer.apple.com/documentation/security/resolving-common-notarization-issues).
 
-For any other entitlement, see the documentation for that specific entitlement in [`Entitlements`](https://developer.apple.com/documentation/BundleResources/Entitlements).
+For any other entitlement, see the documentation for that specific entitlement in [`Entitlements`](https://developer.apple.com/documentation/bundleresources/entitlements).
 
 #### Configure Your Designated Requirements
 
-A code signature includes a designated requirement (DR) that macOS uses to identify the code.  For example, macOS uses the DR to track access to privacy-protected resources like the microphone.  For more information, see [`TN3127: Inside Code Signing: Requirements`](https://developer.apple.com/documentation/Technotes/tn3127-inside-code-signing-requirements).
+A code signature includes a designated requirement (DR) that macOS uses to identify the code.  For example, macOS uses the DR to track access to privacy-protected resources like the microphone.  For more information, see [`TN3127: Inside Code Signing: Requirements`](https://developer.apple.com/documentation/technotes/tn3127-inside-code-signing-requirements).
 
 When you sign code with the `codesign` tool, it applies a default DR.  The default DR works well for most products, with one notable exception: The default DR for a Mac App Store app and a Developer ID-signed app are not mutually compatible.  If you distribute two variants of your app, one on the Mac App Store and one that you distribute directly using Developer ID signing, then, by default, those variants don’t share access to privacy-protected resources.
 
-To share access to privacy-protected resources across variants, sign the variants with mutually compatible DRs.  For advice on how to craft these DRs, see [`TN3127: Inside Code Signing: Requirements`](https://developer.apple.com/documentation/Technotes/tn3127-inside-code-signing-requirements).
+To share access to privacy-protected resources across variants, sign the variants with mutually compatible DRs.  For advice on how to craft these DRs, see [`TN3127: Inside Code Signing: Requirements`](https://developer.apple.com/documentation/technotes/tn3127-inside-code-signing-requirements).
 
 If you decide to use a custom DR, save it to a requirements file.  Mutually compatible DRs include a code-signing identifier.  If your product has multiple code items, copy this requirements file for each code item and update the code-signing identifier to match that of the code.
 
@@ -192,13 +192,13 @@ macOS allows programs to claim certain entitlements without such authorization. 
 
 - `com.apple.security.get-task-allow`
 - `com.apple.security.application-groups`
-- Entitlements that enable and configure the [`App Sandbox`](https://developer.apple.com/documentation/Security/app-sandbox)
-- Entitlements that configure the [`Hardened Runtime`](https://developer.apple.com/documentation/Security/hardened-runtime)
+- Entitlements that enable and configure the [`App Sandbox`](https://developer.apple.com/documentation/security/app-sandbox)
+- Entitlements that configure the [`Hardened Runtime`](https://developer.apple.com/documentation/security/hardened-runtime)
 
 If your program claims a restricted entitlement, include a distribution provisioning profile to authorize that claim as follows:
 
 1. Create the profile on the developer website. For more information, see [`Developer Account Help`](https://developer.apple.comhttps://developer.apple.com/help/account/). Make sure to choose a profile type that matches your distribution channel (Mac App Store or Developer ID).
-2. Copy that profile into your program’s bundle. For more information, see [`Placing content in a bundle`](https://developer.apple.com/documentation/BundleResources/placing-content-in-a-bundle).
+2. Copy that profile into your program’s bundle. For more information, see [`Placing content in a bundle`](https://developer.apple.com/documentation/bundleresources/placing-content-in-a-bundle).
 
 If your product includes a nonbundled executable that uses a restricted entitlement, package that executable in an app-like structure.  For more information, see [`Signing a daemon with a restricted entitlement`](signing-a-daemon-with-a-restricted-entitlement.md).
 
@@ -264,7 +264,7 @@ If you’re signing a main executable that needs entitlements, add the `--entitl
 
 If you’re signing for Developer ID distribution, add the `--timestamp` option to include a secure timestamp.
 
-If you’re signing a main executable for Developer ID distribution, add the `-o runtime` option to enable the Hardened Runtime.  For more information about the Hardened Runtime, see [`Hardened Runtime`](https://developer.apple.com/documentation/Security/hardened-runtime).
+If you’re signing a main executable for Developer ID distribution, add the `-o runtime` option to enable the Hardened Runtime.  For more information about the Hardened Runtime, see [`Hardened Runtime`](https://developer.apple.com/documentation/security/hardened-runtime).
 
 If you’re signing nonbundled code, add the `-i <BundleID>` option to set the code-signing identifier, where `<BundleID>` is the bundle ID the code would have if it had a bundle ID.  For example, for an app with a  bundle ID of `com.example.flying-animals` that has a nested command-line tool called `pig-jato`, you can use `com.example.flying-animals.pig-jato` as the bundle ID for the command-line tool.
 
@@ -294,19 +294,19 @@ to-be-signed/Daemon: replacing existing signature
 Don’t pass the `--deep` option to `codesign` when you sign code.  This option is helpful in some specific circumstances (for example, in verifying a code signature), but it causes the following problems when signing a complex product:
 
 - The `--deep` option applies the same code-signing options to every code item that it signs. For example, if you have an app with an embedded command-line tool, where the app and the tool need different entitlements, `codesign --deep` applies the same entitlements to both.
-- `codesign` only signs nested code when you use the `--deep` option if that code is in particular locations in the top-level bundle. If you put code in a place where `codesign` expects to find data, `codesign --deep` doesn’t sign it. For information on the correct organization of nested code within a bundle, see [`Placing content in a bundle`](https://developer.apple.com/documentation/BundleResources/placing-content-in-a-bundle).
+- `codesign` only signs nested code when you use the `--deep` option if that code is in particular locations in the top-level bundle. If you put code in a place where `codesign` expects to find data, `codesign --deep` doesn’t sign it. For information on the correct organization of nested code within a bundle, see [`Placing content in a bundle`](https://developer.apple.com/documentation/bundleresources/placing-content-in-a-bundle).
 
 ## See Also
 
 - [Using the latest code signature format](using-the-latest-code-signature-format.md)
   Update legacy app code signatures so your app runs on current OS releases.
-- [Notarizing macOS software before distribution](../Security/notarizing-macos-software-before-distribution.md)
+- [Notarizing macOS software before distribution](../security/notarizing-macos-software-before-distribution.md)
   Give users even more confidence in your macOS software by submitting it to Apple for notarization.
 - [Signing a daemon with a restricted entitlement](signing-a-daemon-with-a-restricted-entitlement.md)
   Wrap a daemon in an app-like structure to use an entitlement thatʼs authorized by a provisioning profile.
 - [Synchronizing code signing identities with your developer account](sharing-your-teams-signing-certificates.md)
   Ensure you and other team members can sign your organization’s code and installer packages in Xcode.
-- [TN3125: Inside Code Signing: Provisioning Profiles](../Technotes/tn3125-inside-code-signing-provisioning-profiles.md)
+- [TN3125: Inside Code Signing: Provisioning Profiles](../technotes/tn3125-inside-code-signing-provisioning-profiles.md)
   Learn how provisioning profiles enable third-party code to run on Apple platforms.
 
 

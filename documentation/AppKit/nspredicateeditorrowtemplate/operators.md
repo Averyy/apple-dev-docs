@@ -16,7 +16,7 @@ var operators: [NSNumber]? { get }
 
 #### Return Value
 
-The array of [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) objects specifying the comparison predicate operators. See [`NSComparisonPredicate.Operator`](https://developer.apple.com/documentation/Foundation/NSComparisonPredicate/Operator) for possible values.
+The array of [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) objects specifying the comparison predicate operators. See [`NSComparisonPredicate.Operator`](https://developer.apple.com/documentation/foundation/nscomparisonpredicate/operator) for possible values.
 
 ## See Also
 

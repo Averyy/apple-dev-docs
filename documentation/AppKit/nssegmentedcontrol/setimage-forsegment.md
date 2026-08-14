@@ -17,7 +17,7 @@ func setImage(_ image: NSImage?, forSegment segment: Int)
 ## Parameters
 
 - `image`: The image to apply to the segment or `nil` if you want to clear the existing image. Images are not scaled to fit inside a segment. If the image is larger than the available space, it is clipped.
-- `segment`: The index of the segment whose image you want to set. This method raises an exception ([`rangeException`](https://developer.apple.com/documentation/Foundation/NSExceptionName/rangeException)) if the index is out of bounds.
+- `segment`: The index of the segment whose image you want to set. This method raises an exception ([`rangeException`](https://developer.apple.com/documentation/foundation/nsexceptionname/rangeexception)) if the index is out of bounds.
 
 ## See Also
 

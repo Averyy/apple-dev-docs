@@ -29,11 +29,11 @@ A blend operation that lightens areas that are darker than white.
 
 The `Screen` node inverts the color values of both the foreground and background and multiplies those values together. Then the node inverts the colors again, as represented by the equation: `1 - (1 - F)(1 - B)`. The resulting visual effect is always equally bright or brighter than the original textures. Below is an example of a simple node graph that uses the `Screen` node to blend two images together into a single material:
 
-![None](https://docs-assets.developer.apple.com/published/28a0a55b18ecac5972bd5ed2e21eebeb/ScreenGraph.png)
+![None](/images/ShaderGraph-Docs/ScreenGraph.png)
 
 Below are two images and their resulting blended texture applied to a cube:
 
-![None](https://docs-assets.developer.apple.com/published/5a84eb39e40779bc1d9fb68d07252bf4/ScreenMaterial3.png)
+![None](/images/ShaderGraph-Docs/ScreenMaterial3.png)
 
 ## See Also
 

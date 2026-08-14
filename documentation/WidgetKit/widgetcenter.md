@@ -40,7 +40,7 @@ struct WidgetInfo {
 }
 ```
 
-The `kind` string matches the parameter you use when creating the widget’s [`StaticConfiguration`](staticconfiguration.md) or [`IntentConfiguration`](intentconfiguration.md). The `family` property matches one of the options specified in the [`supportedFamilies(_:)`](https://developer.apple.com/documentation/SwiftUI/WidgetConfiguration/supportedFamilies(_:)) property of the widget’s configuration. If your widget is based on [`IntentConfiguration`](intentconfiguration.md), the `configuration` property provides the custom intent containing the user-customized values for each individual widget.
+The `kind` string matches the parameter you use when creating the widget’s [`StaticConfiguration`](staticconfiguration.md) or [`IntentConfiguration`](intentconfiguration.md). The `family` property matches one of the options specified in the [`supportedFamilies(_:)`](https://developer.apple.com/documentation/swiftui/widgetconfiguration/supportedfamilies(_:)) property of the widget’s configuration. If your widget is based on [`IntentConfiguration`](intentconfiguration.md), the `configuration` property provides the custom intent containing the user-customized values for each individual widget.
 
 ##### Requesting a Reload of Your Widgets Timeline
 

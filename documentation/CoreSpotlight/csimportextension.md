@@ -42,7 +42,7 @@ class NoteImporter: CSImportExtension {
 
 > ❗ **Important**:  Core Spotlight indexes files in batches and may call [`update(_:forFileAt:)`](csimportextension/update(_:forfileat:).md) simultaneously on multiple queues with different values of `contentURL`.
 
-To specify the file types your app supports, set the value of [`CSSupportedContentTypes`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSExtension/NSExtensionAttributes/CSSupportedContentTypes) in your extension’s `Info.plist` file to an array of file type identifiers. For more information about file type identifiers, see [`Uniform Type Identifiers`](https://developer.apple.com/documentation/UniformTypeIdentifiers). The app in the previous example configures the extension’s `Info.plist` as follows:
+To specify the file types your app supports, set the value of [`CSSupportedContentTypes`](https://developer.apple.com/documentation/bundleresources/information-property-list/nsextension/nsextensionattributes/cssupportedcontenttypes) in your extension’s `Info.plist` file to an array of file type identifiers. For more information about file type identifiers, see [`Uniform Type Identifiers`](https://developer.apple.com/documentation/uniformtypeidentifiers). The app in the previous example configures the extension’s `Info.plist` as follows:
 
 ```swift
 <key>NSExtension</key>
@@ -71,15 +71,15 @@ To specify the file types your app supports, set the value of [`CSSupportedConte
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSExtensionRequestHandling](../Foundation/NSExtensionRequestHandling.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSExtensionRequestHandling](../foundation/nsextensionrequesthandling.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

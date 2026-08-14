@@ -16,7 +16,7 @@ class var main: NSStoryboard? { get }
 
 #### Discussion
 
-The name of the main storyboard is stored in the [`NSMainStoryboardFile`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSMainStoryboardFile) key of the app’s `Info.plist` file.
+The name of the main storyboard is stored in the [`NSMainStoryboardFile`](https://developer.apple.com/documentation/bundleresources/information-property-list/nsmainstoryboardfile) key of the app’s `Info.plist` file.
 
 ## See Also
 

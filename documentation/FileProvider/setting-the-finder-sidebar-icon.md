@@ -6,11 +6,11 @@ Specify a standard or custom symbol as a sidebar icon.
 
 #### Overview
 
-To set the sidebar icon for your File Provider extension, set the [`CFBundleSymbolName`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/CFBundleIcons/CFBundlePrimaryIcon/CFBundleSymbolName) key in the File Provider extension’s `Info.plist` file. The key takes the name of one of the SF Symbols. For the complete list of available symbols, see [`SF Symbols 3`](https://developer.apple.comhttps://developer.apple.com/sf-symbols/).
+To set the sidebar icon for your File Provider extension, set the [`CFBundleSymbolName`](https://developer.apple.com/documentation/bundleresources/information-property-list/cfbundleicons/cfbundleprimaryicon/cfbundlesymbolname) key in the File Provider extension’s `Info.plist` file. The key takes the name of one of the SF Symbols. For the complete list of available symbols, see [`SF Symbols 3`](https://developer.apple.comhttps://developer.apple.com/sf-symbols/).
 
 This image shows setting the sidebar icon to the `cloud.bolt.fill` symbol in the Plist editor.
 
-![A screenshot of the File Provider extension’s Info.plist file. The Plist editor shows an Icon file (iOS 5) key that contains a Primary Icon key, which also contains the SF Symbol name key. ](https://docs-assets.developer.apple.com/published/bb6b976038df19008cb0692faf373041/media-3908721%402x.png)
+![A screenshot of the File Provider extension’s Info.plist file. The Plist editor shows an Icon file (iOS 5) key that contains a Primary Icon key, which also contains the SF Symbol name key. ](/images/com.apple.fileprovider/media-3908721@2x.png)
 
 Alternatively, you can open the `Info.plist` file as source code and edit the XML directly.
 
@@ -42,7 +42,7 @@ Alternatively, you can open the `Info.plist` file as source code and edit the XM
 </plist>
 ```
 
-To create a custom symbol for your app, see [`Creating custom symbol images for your app`](https://developer.apple.com/documentation/UIKit/creating-custom-symbol-images-for-your-app). To see a sample code project that uses a custom symbol, see [`Synchronizing files using file provider extensions`](synchronizing-files-using-file-provider-extensions.md).
+To create a custom symbol for your app, see [`Creating custom symbol images for your app`](https://developer.apple.com/documentation/uikit/creating-custom-symbol-images-for-your-app). To see a sample code project that uses a custom symbol, see [`Synchronizing files using file provider extensions`](synchronizing-files-using-file-provider-extensions.md).
 
 ## See Also
 

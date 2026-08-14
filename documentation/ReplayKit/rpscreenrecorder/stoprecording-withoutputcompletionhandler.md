@@ -23,12 +23,12 @@ func stopRecording(withOutput url: URL) async throws
 
 > ❗ **Important**:  You can call this method from synchronous code using a completion handler, as shown on this page, or you can call it as an asynchronous method that has the following declaration: ```swift
 func stopRecording(withOutput url: URL) async throws
-``` For information about concurrency and asynchronous code in Swift, see [`Calling Objective-C APIs Asynchronously`](https://developer.apple.com/documentation/Swift/calling-objective-c-apis-asynchronously).
+``` For information about concurrency and asynchronous code in Swift, see [`Calling Objective-C APIs Asynchronously`](https://developer.apple.com/documentation/swift/calling-objective-c-apis-asynchronously).
 
 ## Parameters
 
 - `url`: The output URL.
-- `completionHandler`: The completion handler the system calls when the movie is written to the specified output URL. If an error occured, the system passes the completion handler an [`NSError`](https://developer.apple.com/documentation/Foundation/NSError) that indicates the reason the operation failed.
+- `completionHandler`: The completion handler the system calls when the movie is written to the specified output URL. If an error occured, the system passes the completion handler an [`NSError`](https://developer.apple.com/documentation/foundation/nserror) that indicates the reason the operation failed.
 
 ## See Also
 

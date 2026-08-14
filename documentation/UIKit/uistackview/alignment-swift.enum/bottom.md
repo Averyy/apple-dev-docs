@@ -24,7 +24,7 @@ This value is equivalent to the [`UIStackView.Alignment.trailing`](uistackview/a
 
 The following image shows an example of a horizontal stack view that uses the [`bottom`](uistackview/alignment-swift.enum/bottom.md) alignment.
 
-![A horizontal stack view with four arranged subviews. The stack view aligns the subviews to its bottom edge.](https://docs-assets.developer.apple.com/published/0505475c2d01ea10063871e92e2995ec/media-2557475%402x.png)
+![A horizontal stack view with four arranged subviews. The stack view aligns the subviews to its bottom edge.](/images/com.apple.uikit/media-2557475@2x.png)
 
 ## See Also
 

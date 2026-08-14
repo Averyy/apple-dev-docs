@@ -16,7 +16,7 @@ func indexPathsToInsertForDecorationView(ofKind elementKind: NSCollectionView.De
 
 #### Return Value
 
-The set of [`NSIndexPath`](https://developer.apple.com/documentation/Foundation/NSIndexPath) objects representing the decoration views to insert, or an empty array if you do not want to insert any decoration views.
+The set of [`NSIndexPath`](https://developer.apple.com/documentation/foundation/nsindexpath) objects representing the decoration views to insert, or an empty array if you do not want to insert any decoration views.
 
 #### Discussion
 

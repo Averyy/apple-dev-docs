@@ -14,7 +14,7 @@ A Boolean value that indicates whether the app loads arbitrary plug-ins or frame
 
 #### Discussion
 
-The [`Hardened Runtime`](https://developer.apple.com/documentation/Security/hardened-runtime) enables library validation by default. This security-hardening feature prevents a program from loading frameworks, plug-ins, or libraries unless they’re either signed by Apple or signed with the same Team ID as the main executable. The macOS dynamic linker (`dyld`) provides a detailed error message when the system prevents code from loading due to library validation. Use the [`Disable Library Validation Entitlement`](entitlements/com.apple.security.cs.disable-library-validation.md) if your program loads plug-ins that are signed by other third-party developers.
+The [`Hardened Runtime`](https://developer.apple.com/documentation/security/hardened-runtime) enables library validation by default. This security-hardening feature prevents a program from loading frameworks, plug-ins, or libraries unless they’re either signed by Apple or signed with the same Team ID as the main executable. The macOS dynamic linker (`dyld`) provides a detailed error message when the system prevents code from loading due to library validation. Use the [`Disable Library Validation Entitlement`](entitlements/com.apple.security.cs.disable-library-validation.md) if your program loads plug-ins that are signed by other third-party developers.
 
 To add this entitlement to your app, first enable the Hardened Runtime capability in Xcode, and then under Runtime Exceptions, select Disable Library Validation.
 

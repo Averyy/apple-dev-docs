@@ -28,12 +28,12 @@ A contextual clue the system uses to determine the relevance of a widget in the 
 
 To indicate relevance based on a fitness condition, request permission to access HealthKit data:
 
-- The [`workoutActive`](relevantcontext/fitnesscondition/workoutactive.md) condition requires usage of [`HKWorkoutType`](https://developer.apple.com/documentation/HealthKit/HKWorkoutType)
-- The [`activityRingsIncomplete`](relevantcontext/fitnesscondition/activityringsincomplete.md) condition requires usage of [`appleExerciseTime`](https://developer.apple.com/documentation/HealthKit/HKQuantityTypeIdentifier/appleExerciseTime), [`appleMoveTime`](https://developer.apple.com/documentation/HealthKit/HKQuantityTypeIdentifier/appleMoveTime), and [`appleStandTime`](https://developer.apple.com/documentation/HealthKit/HKQuantityTypeIdentifier/appleStandTime).
+- The [`workoutActive`](relevantcontext/fitnesscondition/workoutactive.md) condition requires usage of [`HKWorkoutType`](https://developer.apple.com/documentation/healthkit/hkworkouttype)
+- The [`activityRingsIncomplete`](relevantcontext/fitnesscondition/activityringsincomplete.md) condition requires usage of [`appleExerciseTime`](https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier/appleexercisetime), [`appleMoveTime`](https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier/applemovetime), and [`appleStandTime`](https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier/applestandtime).
 
-If contextual fitness information isn’t available to the system, fitness clues to signal relevance don’t have an effect. For more information about requesting HealthKit permissions, refer to [`Authorizing access to health data`](https://developer.apple.com/documentation/HealthKit/authorizing-access-to-health-data).
+If contextual fitness information isn’t available to the system, fitness clues to signal relevance don’t have an effect. For more information about requesting HealthKit permissions, refer to [`Authorizing access to health data`](https://developer.apple.com/documentation/healthkit/authorizing-access-to-health-data).
 
-> **Note**: Smart Stacks are available in iOS, iPadOS, and watchOS. However, functionality provided by RelevanceKit API is only available in watchOS. Calling its API on other platforms doesn’t have any effect. For more information, refer to [`Increasing the visibility of widgets in Smart Stacks`](https://developer.apple.com/documentation/WidgetKit/Widget-Suggestions-In-Smart-Stacks).
+> **Note**: Smart Stacks are available in iOS, iPadOS, and watchOS. However, functionality provided by RelevanceKit API is only available in watchOS. Calling its API on other platforms doesn’t have any effect. For more information, refer to [`Increasing the visibility of widgets in Smart Stacks`](https://developer.apple.com/documentation/widgetkit/widget-suggestions-in-smart-stacks).
 
 ## Parameters
 

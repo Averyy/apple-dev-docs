@@ -8,7 +8,7 @@ Discover features and best practices for building rear-camera AR experiences.
 
 The basic requirement for any AR experience—and the defining feature of ARKit—is the ability to create and track a correspondence between the real-world space the user inhabits and a virtual space where you can model visual content. When your app displays that content together with a live camera image, the user experiences augmented reality: the illusion that your virtual content is part of the real world.
 
-![Illustration of an iPhone running an app that displays an AR experience using the rear camera. The physical environment is depicted as a living room with a couch, on which, the app displays a virtual character.](https://docs-assets.developer.apple.com/published/06a229139b82f0be0d378e910a318a8b/media-2909114%402x.png)
+![Illustration of an iPhone running an app that displays an AR experience using the rear camera. The physical environment is depicted as a living room with a couch, on which, the app displays a virtual character.](/images/com.apple.arkit/media-2909114@2x.png)
 
 In all AR experiences, ARKit uses world and camera coordinate systems following a right-handed convention: the y-axis points upward, and (when relevant) the z-axis points toward the viewer and the x-axis points toward the viewer’s right.
 

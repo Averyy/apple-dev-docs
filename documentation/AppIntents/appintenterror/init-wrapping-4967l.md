@@ -22,7 +22,7 @@ init(wrapping error: some CustomLocalizedStringResourceConvertible & Error)
 
 #### Discussion
 
-Conform your custom `Error` to [`CustomLocalizedStringResourceConvertible`](https://developer.apple.com/documentation/Foundation/CustomLocalizedStringResourceConvertible) to provide a localized description of the error.
+Conform your custom `Error` to [`CustomLocalizedStringResourceConvertible`](https://developer.apple.com/documentation/foundation/customlocalizedstringresourceconvertible) to provide a localized description of the error.
 
 The system calls this initializer for errors thrown from [`perform()`](appintent/perform().md) that conform to `CustomLocalizedStringResourceConvertible`.
 

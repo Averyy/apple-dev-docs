@@ -21,7 +21,7 @@ static let baselineExposure: CIRAWFilterOption
 
 #### Discussion
 
-A key for an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) object containing a float that expresses the amount of baseline exposure applied to an image.
+A key for an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) object containing a float that expresses the amount of baseline exposure applied to an image.
 
 #### Discussion
 

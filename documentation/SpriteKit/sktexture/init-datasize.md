@@ -28,7 +28,7 @@ A new texture object.
 
 The image data is copied before control is returned to your game.
 
-Creating textures from raw pixel data is useful if you have a CPU based routine for creating imagery. The following Swift code shows how you can use [`init(data:size:)`](sktexture/init(data:size:).md) to create a texture containing random colors and a solid alpha. The `bytes` array is populated by iterating over the total number of pixels and adding four [`UInt8`](https://developer.apple.com/documentation/Swift/UInt8) values for the red, green, blue, and alpha channels.
+Creating textures from raw pixel data is useful if you have a CPU based routine for creating imagery. The following Swift code shows how you can use [`init(data:size:)`](sktexture/init(data:size:).md) to create a texture containing random colors and a solid alpha. The `bytes` array is populated by iterating over the total number of pixels and adding four [`UInt8`](https://developer.apple.com/documentation/swift/uint8) values for the red, green, blue, and alpha channels.
 
 ```swift
 let width = 128

@@ -75,7 +75,7 @@ print(Array(outputData))
 
 On return, the output descriptor contains a single value that is the square root of the sum of squares of each element in the tensor:
 
-![A diagram that depicts a 3D tensor as four 2D planes along the channel axis. Each plane is two elements high and three elements wide. The compute norm operation calculates a single value for the norm of the entire tensor.](https://docs-assets.developer.apple.com/published/a829c34d4b4f4071bbaf72b10112a033/media-3761084%402x.png)
+![A diagram that depicts a 3D tensor as four 2D planes along the channel axis. Each plane is two elements high and three elements wide. The compute norm operation calculates a single value for the norm of the entire tensor.](/images/com.apple.accelerate/media-3761084@2x.png)
 
 Specify an `axis_flags` of `0b100` to compute the norm along the second axis. In this case, the destination should be a matrix with a size that matches the zeroth and first dimensions of the source tensor:
 
@@ -104,7 +104,7 @@ print(Array(outputData))
 
 On return, the output descriptor contains six values that are the norms of the slices along the second axis of the input tensor:
 
-![A diagram that depicts a 3D tensor as four 2D planes along the channel axis. Each plane is two elements high and three elements wide. The compute norm operation calculates separate norms for the six 4-element vectors along the channel axis.](https://docs-assets.developer.apple.com/published/be33dde19816c79781bdf5340a21e1a1/media-3761079%402x.png)
+![A diagram that depicts a 3D tensor as four 2D planes along the channel axis. Each plane is two elements high and three elements wide. The compute norm operation calculates separate norms for the six 4-element vectors along the channel axis.](/images/com.apple.accelerate/media-3761079@2x.png)
 
 To compute the norm along more that one dimension, define the destination tensor with a size of the dimensions you’re not calculating over. For example, the following code defines an `axis_flags` with a value of `0b101` to compute the norm of dimensions zero and two:
 
@@ -131,7 +131,7 @@ print(Array(outputData))
 
 On return, the output descriptor contains two values that are the norms of the top and bottom slices of the input tensor:
 
-![A diagram that depicts a 3D tensor as four 2D planes along the channel axis. Each plane is two elements high and three elements wide. The compute norm operation calculates separate norms for the pair of three-by-four matrices defined by the channel axis and the width axis.](https://docs-assets.developer.apple.com/published/2c2a41e95612a64cab4fadb97d45b77d/media-3761082%402x.png)
+![A diagram that depicts a 3D tensor as four 2D planes along the channel axis. Each plane is two elements high and three elements wide. The compute norm operation calculates separate norms for the pair of three-by-four matrices defined by the channel axis and the width axis.](/images/com.apple.accelerate/media-3761082@2x.png)
 
 ## Parameters
 

@@ -166,7 +166,7 @@ Because floating-point types such as `Float` and `Double` are their own `Stride`
 ## Relationships
 
 ### Conforms To
-- [BNNSGraph.Builder.SliceIndex](../Accelerate/BNNSGraph/Builder/SliceIndex.md)
+- [BNNSGraph.Builder.SliceIndex](../accelerate/bnnsgraph/builder/sliceindex.md)
 - [BidirectionalCollection](bidirectionalcollection.md)
 - [Collection](collection.md)
 - [ConvertibleToBytes](convertibletobytes.md)
@@ -174,15 +174,15 @@ Because floating-point types such as `Float` and `Double` are their own `Stride`
 - [CustomDebugStringConvertible](customdebugstringconvertible.md)
 - [CustomReflectable](customreflectable.md)
 - [CustomStringConvertible](customstringconvertible.md)
-- [CustomTestStringConvertible](../Testing/CustomTestStringConvertible.md)
+- [CustomTestStringConvertible](../testing/customteststringconvertible.md)
 - [Decodable](decodable.md)
 - [Encodable](encodable.md)
 - [Equatable](equatable.md)
 - [Escapable](escapable.md)
 - [Hashable](hashable.md)
-- [MLShapedArrayRangeExpression](../CoreML/MLShapedArrayRangeExpression.md)
-- [MLTensorRangeExpression](../CoreML/MLTensorRangeExpression.md)
-- [NDArray.RangeExpression](../CoreAI/NDArray/RangeExpression.md)
+- [MLShapedArrayRangeExpression](../coreml/mlshapedarrayrangeexpression.md)
+- [MLTensorRangeExpression](../coreml/mltensorrangeexpression.md)
+- [NDArray.RangeExpression](../coreai/ndarray/rangeexpression.md)
 - [RandomAccessCollection](randomaccesscollection.md)
 - [RangeExpression](rangeexpression.md)
 - [Sendable](sendable.md)

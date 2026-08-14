@@ -10,7 +10,7 @@ Separating sensitive calculations, such as handling data from untrusted sources,
 
 ##### Define the Extension Point in Your App
 
-Add the `EX_ENABLE_EXTENSION_POINT_GENERATION` user-defined build setting with the value `YES` to your app target’s build setting. In your app’s source code, create an extension to [`AppExtensionPoint`](https://developer.apple.com/documentation/ExtensionFoundation/AppExtensionPoint) that defines your app’s extension point. Give the extension point the [`AppExtensionPoint.Name`](https://developer.apple.com/documentation/ExtensionFoundation/AppExtensionPoint/Name) of your choosing, and the [`AppExtensionPoint.EnhancedSecurity`](https://developer.apple.com/documentation/ExtensionFoundation/AppExtensionPoint/EnhancedSecurity) attribute to tell the system to run your extension in the Enhanced Security runtime:
+Add the `EX_ENABLE_EXTENSION_POINT_GENERATION` user-defined build setting with the value `YES` to your app target’s build setting. In your app’s source code, create an extension to [`AppExtensionPoint`](https://developer.apple.com/documentation/extensionfoundation/appextensionpoint) that defines your app’s extension point. Give the extension point the [`AppExtensionPoint.Name`](https://developer.apple.com/documentation/extensionfoundation/appextensionpoint/name) of your choosing, and the [`AppExtensionPoint.EnhancedSecurity`](https://developer.apple.com/documentation/extensionfoundation/appextensionpoint/enhancedsecurity) attribute to tell the system to run your extension in the Enhanced Security runtime:
 
 ```swift
 import ExtensionFoundation
@@ -33,7 +33,7 @@ Follow these steps to create the extension:
 3. In the Xcode Project navigator, delete the extension target’s `Info.plist` file.
 4. In the target build settings editor, delete the `INFOPLIST_FILE` build setting for the extension target.
 
-Edit the main source file for the extension, so that the [`AppExtensionPoint.Identifier`](https://developer.apple.com/documentation/ExtensionFoundation/AppExtensionPoint/Identifier) for the extension point it binds to has your app’s bundle ID as the host identifier, and the name you gave the extension point in the previous section:
+Edit the main source file for the extension, so that the [`AppExtensionPoint.Identifier`](https://developer.apple.com/documentation/extensionfoundation/appextensionpoint/identifier) for the extension point it binds to has your app’s bundle ID as the host identifier, and the name you gave the extension point in the previous section:
 
 ```swift
 import ExtensionFoundation
@@ -51,7 +51,7 @@ Write the code to implement your extension’s behavior. The system runs your ex
 
 ##### Discover and Launch the Extension
 
-In your app, create an [`AppExtensionPoint.Monitor`](https://developer.apple.com/documentation/ExtensionFoundation/AppExtensionPoint/Monitor) to discover the Enhanced Security extension:
+In your app, create an [`AppExtensionPoint.Monitor`](https://developer.apple.com/documentation/extensionfoundation/appextensionpoint/monitor) to discover the Enhanced Security extension:
 
 ```swift
 let monitor = try await AppExtensionPoint.Monitor(appExtensionPoint: AppExtensionPoint.exampleExtension)
@@ -60,7 +60,7 @@ guard let identity = monitor.identities.first else {
 } 
 ```
 
-The `identity` represents the bundle for the Enhanced Security extension you created in the previous section. Create an [`AppExtensionProcess`](https://developer.apple.com/documentation/ExtensionFoundation/AppExtensionProcess) with that bundle to launch the extension:
+The `identity` represents the bundle for the Enhanced Security extension you created in the previous section. Create an [`AppExtensionProcess`](https://developer.apple.com/documentation/extensionfoundation/appextensionprocess) with that bundle to launch the extension:
 
 ```swift
 do {
@@ -76,9 +76,9 @@ catch let error {
 
 ##### Communicate Between the App and the Extension
 
-Use [`XPCSession`](https://developer.apple.com/documentation/XPC/XPCSession) to handle communication between your app and its Enhanced Security extension. For more information, see [`Creating XPC services`](https://developer.apple.com/documentation/XPC/creating-xpc-services).
+Use [`XPCSession`](https://developer.apple.com/documentation/xpc/xpcsession) to handle communication between your app and its Enhanced Security extension. For more information, see [`Creating XPC services`](https://developer.apple.com/documentation/xpc/creating-xpc-services).
 
-Define structures that conform to [`Codable`](https://developer.apple.com/documentation/Swift/Codable) in code you share between the app and extension, and create instances of those structures to send over XPC using the session you create:
+Define structures that conform to [`Codable`](https://developer.apple.com/documentation/swift/codable) in code you share between the app and extension, and create instances of those structures to send over XPC using the session you create:
 
 ```swift
 struct Message: Identifiable, Codable {
@@ -91,7 +91,7 @@ struct Message: Identifiable, Codable {
 }
 ```
 
-Call [`makeXPCSession()`](https://developer.apple.com/documentation/ExtensionFoundation/AppExtensionProcess/makeXPCSession()) in your app to create an `XPCSession` you use to send messages to the extension:
+Call [`makeXPCSession()`](https://developer.apple.com/documentation/extensionfoundation/appextensionprocess/makexpcsession()) in your app to create an `XPCSession` you use to send messages to the extension:
 
 ```swift
 do {
@@ -128,7 +128,7 @@ let response = try await withCheckedThrowingContinuation { continuation in
 // Interpret the response from the extension.
 ```
 
-In the extension, create a [`ConnectionHandler`](https://developer.apple.com/documentation/ExtensionFoundation/ConnectionHandler) to accept incoming connections from the app. Call the [`init(onSessionRequest:)`](https://developer.apple.com/documentation/ExtensionFoundation/ConnectionHandler/init(onSessionRequest:)) initializer, and use the closure to accept the XPC connection and create a session.
+In the extension, create a [`ConnectionHandler`](https://developer.apple.com/documentation/extensionfoundation/connectionhandler) to accept incoming connections from the app. Call the [`init(onSessionRequest:)`](https://developer.apple.com/documentation/extensionfoundation/connectionhandler/init(onsessionrequest:)) initializer, and use the closure to accept the XPC connection and create a session.
 
 ```swift
 extension ExampleExtension {

@@ -23,7 +23,7 @@ When you no longer need the texture, call [`unbindTextureRepresentation(fromCGLC
 
 - `cgl_ctx`: The CGL context to render to.)
 - `unit`: The texture unit to bind to (such as, `GL_TEXTURE0`)
-- `flag`: To apply a texture matrix to scale coordinates (from `[0, pixels]` to `[0,1]`) and flip them vertically (if necessary), pass [`true`](https://developer.apple.com/documentation/Swift/true).
+- `flag`: To apply a texture matrix to scale coordinates (from `[0, pixels]` to `[0,1]`) and flip them vertically (if necessary), pass [`true`](https://developer.apple.com/documentation/swift/true).
 
 ## See Also
 

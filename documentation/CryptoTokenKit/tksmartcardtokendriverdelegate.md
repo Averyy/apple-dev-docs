@@ -29,7 +29,7 @@ protocol TKSmartCardTokenDriverDelegate : TKTokenDriverDelegate
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 - [TKTokenDriverDelegate](tktokendriverdelegate.md)
 
 

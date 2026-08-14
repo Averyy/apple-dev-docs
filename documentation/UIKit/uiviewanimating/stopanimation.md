@@ -23,11 +23,11 @@ func stopAnimation(_ withoutFinishing: Bool)
 
 Call this method when you want to end the animations at their current position. This method removes all of the associated animations from the execution stack and sets the values of any animatable properties to their current values. This method also updates the state of the animator object based on the value of the `withoutFinishing` parameter.
 
-If you specify [`false`](https://developer.apple.com/documentation/Swift/false) for the `withoutFinishing` parameter, you can subsequently call the [`finishAnimation(at:)`](uiviewanimating/finishanimation(at:).md) method to perform the animator’s final actions. For example, a [`UIViewPropertyAnimator`](uiviewpropertyanimator.md) object executes its completion blocks when you call this method. You do not have to call the [`finishAnimation(at:)`](uiviewanimating/finishanimation(at:).md) method right away, or at all, and you can perform other animations before calling that method.
+If you specify [`false`](https://developer.apple.com/documentation/swift/false) for the `withoutFinishing` parameter, you can subsequently call the [`finishAnimation(at:)`](uiviewanimating/finishanimation(at:).md) method to perform the animator’s final actions. For example, a [`UIViewPropertyAnimator`](uiviewpropertyanimator.md) object executes its completion blocks when you call this method. You do not have to call the [`finishAnimation(at:)`](uiviewanimating/finishanimation(at:).md) method right away, or at all, and you can perform other animations before calling that method.
 
 ## Parameters
 
-- `withoutFinishing`: A Boolean indicating whether any final actions should be performed. Specify [`true`](https://developer.apple.com/documentation/Swift/true) to clear any animations and move the animator directly to the [`UIViewAnimatingState.inactive`](uiviewanimatingstate/inactive.md) state without performing any final actions. Specify [`false`](https://developer.apple.com/documentation/Swift/false) to put the animator into the [`UIViewAnimatingState.stopped`](uiviewanimatingstate/stopped.md) state.
+- `withoutFinishing`: A Boolean indicating whether any final actions should be performed. Specify [`true`](https://developer.apple.com/documentation/swift/true) to clear any animations and move the animator directly to the [`UIViewAnimatingState.inactive`](uiviewanimatingstate/inactive.md) state without performing any final actions. Specify [`false`](https://developer.apple.com/documentation/swift/false) to put the animator into the [`UIViewAnimatingState.stopped`](uiviewanimatingstate/stopped.md) state.
 
 ## See Also
 

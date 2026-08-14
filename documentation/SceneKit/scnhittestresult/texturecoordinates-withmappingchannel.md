@@ -22,7 +22,7 @@ func textureCoordinates(withMappingChannel channel: Int) -> CGPoint
 
 #### Return Value
 
-The texture coordinates at the point of intersection, or [`CGPointZero`](https://developer.apple.com/documentation/CoreGraphics/CGPointZero) if the geometry does not have a texture coordinate source for the specified channel.
+The texture coordinates at the point of intersection, or [`CGPointZero`](https://developer.apple.com/documentation/coregraphics/cgpointzero) if the geometry does not have a texture coordinate source for the specified channel.
 
 #### Discussion
 

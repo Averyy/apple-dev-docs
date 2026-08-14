@@ -31,7 +31,7 @@ func confirm(startWorkout intent: INStartWorkoutIntent,
 }
 ```
 
-Providing a custom [`NSUserActivity`](https://developer.apple.com/documentation/Foundation/NSUserActivity) object with your response during confirmation is recommended but not required. If SiriKit needs to launch your app for any reason, it passes the provided activity object to your app. Your app can use any information in the object to take further actions. For example, you might include custom data in the user activity object that your app can then use to configure its interface.
+Providing a custom [`NSUserActivity`](https://developer.apple.com/documentation/foundation/nsuseractivity) object with your response during confirmation is recommended but not required. If SiriKit needs to launch your app for any reason, it passes the provided activity object to your app. Your app can use any information in the object to take further actions. For example, you might include custom data in the user activity object that your app can then use to configure its interface.
 
 ## See Also
 

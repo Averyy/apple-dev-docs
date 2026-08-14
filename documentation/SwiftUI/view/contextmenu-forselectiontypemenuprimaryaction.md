@@ -61,7 +61,7 @@ struct ContextMenuItemExample: View {
 }
 ```
 
-The above example assumes that the `Item` type conforms to the [`Identifiable`](https://developer.apple.com/documentation/Swift/Identifiable) protocol, and relies on the associated `ID` type for both selection and context menu presentation.
+The above example assumes that the `Item` type conforms to the [`Identifiable`](https://developer.apple.com/documentation/swift/identifiable) protocol, and relies on the associated `ID` type for both selection and context menu presentation.
 
 If you add the modifier to a view hierarchy that doesn’t have a container that supports selection, the context menu never activates. To add a context menu that doesn’t depend on selection behavior, use [`contextMenu(menuItems:)`](view/contextmenu(menuitems:).md). To add a context menu to a specific row in a table, use [`contextMenu(menuItems:)`](tablerowcontent/contextmenu(menuitems:).md).
 

@@ -38,7 +38,7 @@ let activeEvent = ElectricVehicleStatusEvent(
 )
 ```
 
-If your app adopts the [`EnergyKit LoadEvents Entitlement`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.energykit.loadevents-experience), include the load event’s session identifier to correlate the active status with energy consumption data for a specific charging session in the Home app.
+If your app adopts the [`EnergyKit LoadEvents Entitlement`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.energykit.loadevents-experience), include the load event’s session identifier to correlate the active status with energy consumption data for a specific charging session in the Home app.
 
 ## See Also
 

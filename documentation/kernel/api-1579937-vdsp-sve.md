@@ -49,7 +49,7 @@ print(String(format: "sum %.4f", c))
 ## Parameters
 
 - `__A`: Single-precision real input vector.
-- `__I`: Stride for  .
+- `__I`: Stride for `A`.
 - `__C`: Single-precision real output scalar.
 - `__N`: The number of elements to process.
 

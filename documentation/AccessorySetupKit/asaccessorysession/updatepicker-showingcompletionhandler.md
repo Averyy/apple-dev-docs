@@ -26,7 +26,7 @@ You use this method when your picker uses the [`filterDiscoveryResults`](aspicke
 ## Parameters
 
 - `displayItems`: The app-filtered accessories to show in the picker.
-- `completionHandler`: A block or closure that executes after the updatePicker operation completes. The completion handler receives an [`NSError`](https://developer.apple.com/documentation/Foundation/NSError) instance if the operation encounters an error.
+- `completionHandler`: A block or closure that executes after the updatePicker operation completes. The completion handler receives an [`NSError`](https://developer.apple.com/documentation/foundation/nserror) instance if the operation encounters an error.
 
 
 ---

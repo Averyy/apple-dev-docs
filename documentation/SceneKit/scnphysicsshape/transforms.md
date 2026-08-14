@@ -22,7 +22,7 @@ var transforms: [NSValue]? { get }
 
 #### Discussion
 
-You provide this array of [`NSValue`](https://developer.apple.com/documentation/Foundation/NSValue) objects, each containing an [`SCNMatrix4`](scnmatrix4-swift.struct.md) value, in the [`init(shapes:transforms:)`](scnphysicsshape/init(shapes:transforms:).md) method to create a compound shape. Use this array along with the [`sourceObject`](scnphysicsshape/sourceobject.md) property to recover the information that was used to create the shape.
+You provide this array of [`NSValue`](https://developer.apple.com/documentation/foundation/nsvalue) objects, each containing an [`SCNMatrix4`](scnmatrix4-swift.struct.md) value, in the [`init(shapes:transforms:)`](scnphysicsshape/init(shapes:transforms:).md) method to create a compound shape. Use this array along with the [`sourceObject`](scnphysicsshape/sourceobject.md) property to recover the information that was used to create the shape.
 
 If the shape was created with the [`init(geometry:options:)`](scnphysicsshape/init(geometry:options:).md) or [`init(node:options:)`](scnphysicsshape/init(node:options:).md) method, this property’s value is `nil`.
 

@@ -12,7 +12,7 @@ Train a simple neural network digit classifier.
 
 #### Overview
 
-The sample code describes how to write a neural network using [`MPSGraph`](MPSGraph.md) and how to train the network to recognize a digit in an image. The sample trains a network for 300 iterations on a batch size of 40 images. You’ll see how to set up training of weights and biases using data sources, including how to initialize and update weights. You’ll also see how to validate the network using a test dataset.
+The sample code describes how to write a neural network using [`MPSGraph`](mpsgraph.md) and how to train the network to recognize a digit in an image. The sample trains a network for 300 iterations on a batch size of 40 images. You’ll see how to set up training of weights and biases using data sources, including how to initialize and update weights. You’ll also see how to validate the network using a test dataset.
 
 > **Note**: This sample code project is associated with WWDC 2020 session [`10677: Build customized ML models with the Metal Performance Shaders Graph`](https://developer.apple.comhttps://developer.apple.com/wwdc20/10677/).
 

@@ -70,7 +70,7 @@ CLSDataStore.shared.mainAppContext.descendant(matchingIdentifierPath: identifier
 }
 ```
 
-Another app that presents content in a scroll view might define progress as the current position relative to the bottom of the view, to be updated in the [`scrollViewDidScroll(_:)`](https://developer.apple.com/documentation/UIKit/UIScrollViewDelegate/scrollViewDidScroll(_:)) callback of the [`UIScrollViewDelegate`](https://developer.apple.com/documentation/UIKit/UIScrollViewDelegate) protocol:
+Another app that presents content in a scroll view might define progress as the current position relative to the bottom of the view, to be updated in the [`scrollViewDidScroll(_:)`](https://developer.apple.com/documentation/uikit/uiscrollviewdelegate/scrollviewdidscroll(_:)) callback of the [`UIScrollViewDelegate`](https://developer.apple.com/documentation/uikit/uiscrollviewdelegate) protocol:
 
 ```swift
 let position = scrollView.contentOffset.y + scrollView.frame.size.height
@@ -78,7 +78,7 @@ let total = scrollView.contentSize.height
 let progress = Double(max(0, min(1, position / total)))
 ```
 
-You can call the data store’s [`save(completion:)`](clsdatastore/save(completion:).md) method every time you add a progress update to ensure your changes are reported to the teacher. And for certain long-running activities with infrequent updates, this might make sense. But for performance reasons, in most cases it’s best to wait until the activity ends, after which you save all the updates in one shot. This is particularly true if you generate frequent progress updates, as you might from the [`scrollViewDidScroll(_:)`](https://developer.apple.com/documentation/UIKit/UIScrollViewDelegate/scrollViewDidScroll(_:)) method.
+You can call the data store’s [`save(completion:)`](clsdatastore/save(completion:).md) method every time you add a progress update to ensure your changes are reported to the teacher. And for certain long-running activities with infrequent updates, this might make sense. But for performance reasons, in most cases it’s best to wait until the activity ends, after which you save all the updates in one shot. This is particularly true if you generate frequent progress updates, as you might from the [`scrollViewDidScroll(_:)`](https://developer.apple.com/documentation/uikit/uiscrollviewdelegate/scrollviewdidscroll(_:)) method.
 
 ##### Stop an Activity When the Person Ends the Attempt
 

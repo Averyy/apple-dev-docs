@@ -22,7 +22,7 @@ The default value of this property is `NULL`.
 
 Name properties are always displayed.
 
-The properties are specified using an array of [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) objects representing [`ABPropertyID`](https://developer.apple.com/documentation/AddressBook/ABPropertyID) values.
+The properties are specified using an array of [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) objects representing [`ABPropertyID`](https://developer.apple.com/documentation/addressbook/abpropertyid) values.
 
 To have the receiver display a single property for [`displayedPerson`](abpersonviewcontroller/displayedperson.md), such as telephone number, set `displayedProperties` to an array with a single value, such as `kABPersonPhoneProperty`.
 

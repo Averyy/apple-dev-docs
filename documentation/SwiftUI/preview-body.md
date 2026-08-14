@@ -51,7 +51,7 @@ If you include more than one preview in a source file, the canvas provides contr
 
 Inside the preview, you can provide different inputs, model data, and other infrastructure that the view needs for normal operation. For example, you can present a custom view as the sidebar inside a [`NavigationSplitView`](navigationsplitview.md) if that’s how your app uses the view.
 
-Other preview macros provide different customization options. For example, if you need to modify the appearance of a preview using one or more [`PreviewTrait`](https://developer.apple.com/documentation/DeveloperToolsSupport/PreviewTrait), instances, use the [`Preview(_:traits:_:body:)`](preview(_:traits:_:body:).md) macro.
+Other preview macros provide different customization options. For example, if you need to modify the appearance of a preview using one or more [`PreviewTrait`](https://developer.apple.com/documentation/developertoolssupport/previewtrait), instances, use the [`Preview(_:traits:_:body:)`](preview(_:traits:_:body:).md) macro.
 
 ## Parameters
 

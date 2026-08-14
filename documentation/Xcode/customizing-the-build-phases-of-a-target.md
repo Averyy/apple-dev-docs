@@ -14,7 +14,7 @@ Xcode configures the initial build phases for each target at creation time, but 
 
 To view the build phases for a target, select the target and navigate to the Build Phases tab, as shown in the following figure. To add a new build phase, click the Add button (+) and select an appropriate build phase from the pop-up menu. Xcode disables any menu options that aren’t valid. For example, Xcode disables the Compile Sources build phase if your target already contains a build phase of that type.
 
-![A figure that shows the build phases associated with a target.](https://docs-assets.developer.apple.com/published/2f0001d8c395d742c2d1420e82ce719a/build-phase-editor%402x.png)
+![A figure that shows the build phases associated with a target.](/images/com.apple.Xcode/build-phase-editor@2x.png)
 
 Xcode supports the following build phases:
 
@@ -39,7 +39,7 @@ Most targets include a Link Binary with Libraries build phase, which resolves yo
 - For multiplatform targets, use the Filters control to specify which platforms to support.
 - Specify whether a library is required or optional. This option reflects legacy link options for some frameworks. Do not change this setting in modern projects.
 
-![A figure that shows the configuration options for a library in the link build phase.](https://docs-assets.developer.apple.com/published/51e6e02cc3bd4e9f03b952ca606177c7/build-link-options%402x.png)
+![A figure that shows the configuration options for a library in the link build phase.](/images/com.apple.Xcode/build-link-options@2x.png)
 
 Xcode automatically links your Swift code against Apple frameworks and libraries, so you don’t need to include them in this build phase. For C, C++, and Objective-C code, Xcode links against Apple frameworks and libraries only when the `CLANG_MODULES_AUTOLINK` build setting is enabled, which it is by default. Add any add third-party libraries or custom libraries from your own project to this build phase.
 
@@ -59,7 +59,7 @@ When Xcode copies files to the built product, the Headers build phase usually do
 
 To copy custom resources or data files into a bundle, add a Copy Files or Copy Bundle Resources build phase to your target. Xcode uses a Copy Bundle Resources build phase to copy storyboards and asset catalogs to the appropriate directory for resources, which differs by platform. Xcode also uses instances of the Copy Files build phase to embed frameworks, app extensions, app clips, and other content inside your bundle. You use these build phases to copy other project files into a bundle. For example, you might copy templates for new documents into your app’s bundle.
 
-![A figure that shows the Copy Bundle Resources and Copy Files build phases for a target.](https://docs-assets.developer.apple.com/published/8484d6cea58a1181baeb7e2985e597c5/build-copy-files-phase%402x.png)
+![A figure that shows the Copy Bundle Resources and Copy Files build phases for a target.](/images/com.apple.Xcode/build-copy-files-phase@2x.png)
 
 The Copy Bundle Resources build phase places files in the bundle’s designated resource directory. The Copy Files build phase supports the following destination directories:
 
@@ -80,7 +80,7 @@ For each build phase, you can supply a subpath string to copy files to a specifi
 
 > **Note**: The Copy Files build phase supports signing any resources you place in the bundle. Typically, you use this option when copying built products such as app extensions to your bundle.
 
-For details on the location of platform-specific bundle directories, see [`Placing content in a bundle`](https://developer.apple.com/documentation/BundleResources/placing-content-in-a-bundle)
+For details on the location of platform-specific bundle directories, see [`Placing content in a bundle`](https://developer.apple.com/documentation/bundleresources/placing-content-in-a-bundle)
 
 ## See Also
 

@@ -23,7 +23,7 @@ A pseudo-random single-precision float in the range [0.0, 1.0].
 
 This function generates a random value in the range [0.0, 1.0] using single-precision floating-point format and the provided seed. The seed is not modified, allowing for reproducible random number generation.
 
-> **Note**: ![Graph](https://docs-assets.developer.apple.com/published/b21b827f570ccdf02cce761fed453015/random__float_01_using.svg)
+> **Note**: ![Graph](/images/com.apple.computegraph/random__float_01_using.svg)
 
 ## Parameters
 

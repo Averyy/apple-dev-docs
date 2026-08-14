@@ -33,7 +33,7 @@ Synchronous load operations block the thread on which you call them. To maintain
 _ = try! await Entity(named: "MyEntity")   // From the app's main bundle.
 ```
 
-Call the asynchronous version of these initializers by prefacing the call with the await keyword from asynchronous methods or from inside of a [`Task`](https://developer.apple.com/documentation/Swift/Task) These overloads give you access to the full set of features [`Concurrency`](https://developer.apple.com/documentation/Swift/concurrency) provides.
+Call the asynchronous version of these initializers by prefacing the call with the await keyword from asynchronous methods or from inside of a [`Task`](https://developer.apple.com/documentation/swift/task) These overloads give you access to the full set of features [`Concurrency`](https://developer.apple.com/documentation/swift/concurrency) provides.
 
 ##### Load an Anchor Entity
 
@@ -57,13 +57,13 @@ To load a model or body-tracked entity with internal structure that you don’t 
 
 ## See Also
 
-- [Generating procedural textures](../visionOS/generating-procedural-textures-in-visionos.md)
+- [Generating procedural textures](../visionos/generating-procedural-textures-in-visionos.md)
   Display a 3D model that generates procedural textures in a reality view.
 - [protocol Resource](resource.md)
   A shared resource you use to configure a component, like a material, mesh, or texture.
 - [Stored entities](stored-entities.md)
   Manage entities that you store as assets on disk.
-- [Creating USD files for Apple devices](../USD/creating-usd-files-for-apple-devices.md)
+- [Creating USD files for Apple devices](../usd/creating-usd-files-for-apple-devices.md)
   Generate 3D assets that render as expected.
 - [convenience init(contentsOf: URL, withName: String?) async throws](entity/init(contentsof:withname:).md)
   Creates an entity by asynchronously loading it from a file URL.

@@ -22,18 +22,18 @@ Key-value pairs that grant an executable permission to use a service or technolo
 
 An *entitlement* is a right or privilege that grants particular capabilities to an executable. For example, an app needs the [`HomeKit Entitlement`](entitlements/com.apple.developer.homekit.md) — along with explicit user consent — to access a user’s home automation network. An app stores its entitlements as key-value pairs embedded in the code signature of its binary executable.
 
-You configure entitlements for your app by declaring capabilities for a target in Xcode; see [`Capabilities`](https://developer.apple.com/documentation/Xcode/capabilities). Xcode records capabilities that you add in a property list file with the `.entitlements` extension. When code signing your app, Xcode combines the entitlements file, information from your developer account, and other project information to apply a final set of entitlements to your app.
+You configure entitlements for your app by declaring capabilities for a target in Xcode; see [`Capabilities`](https://developer.apple.com/documentation/xcode/capabilities). Xcode records capabilities that you add in a property list file with the `.entitlements` extension. When code signing your app, Xcode combines the entitlements file, information from your developer account, and other project information to apply a final set of entitlements to your app.
 
-You typically let Xcode manage the entitlements file for you. For information on manually editing the file, see [`Editing property list files`](https://developer.apple.com/documentation/Xcode/editing-property-list-files).
+You typically let Xcode manage the entitlements file for you. For information on manually editing the file, see [`Editing property list files`](https://developer.apple.com/documentation/xcode/editing-property-list-files).
 
 ## Topics
 
 ### Essentials
-- [Adding capabilities to your app](../Xcode/adding-capabilities-to-your-app.md)
+- [Adding capabilities to your app](../xcode/adding-capabilities-to-your-app.md)
   Configure your target to include and customize capabilities that provide access to Apple’s app services.
 - [Diagnosing Issues with Entitlements](diagnosing-issues-with-entitlements.md)
   Verify your app’s entitlements at every stage of development to track down errors during distribution.
-- [Signing a daemon with a restricted entitlement](../Xcode/signing-a-daemon-with-a-restricted-entitlement.md)
+- [Signing a daemon with a restricted entitlement](../xcode/signing-a-daemon-with-a-restricted-entitlement.md)
   Wrap a daemon in an app-like structure to use an entitlement thatʼs authorized by a provisioning profile.
 ### Accessibility
 - [com.apple.developer.accessibility.merchant-api-control](entitlements/com.apple.developer.accessibility.merchant-api-control.md)
@@ -327,11 +327,11 @@ You typically let Xcode manage the entitlements file for you. For information on
 ### Security
 - [Security entitlements](security-entitlements.md)
   Key-value pairs that grant an executable access to secure resources, or enable hardening checks.
-- [App Sandbox](../Security/app-sandbox.md)
+- [App Sandbox](../security/app-sandbox.md)
   Restrict access to system resources and user data in macOS apps to contain damage if an app becomes compromised.
-- [Hardened Runtime](../Security/hardened-runtime.md)
+- [Hardened Runtime](../security/hardened-runtime.md)
   Manage security protections and resource access for your macOS apps.
-- [Enabling enhanced security for your app](../Xcode/enabling-enhanced-security-for-your-app.md)
+- [Enabling enhanced security for your app](../xcode/enabling-enhanced-security-for-your-app.md)
   Detect out-of-bounds memory access, use of freed memory, and other potential vulnerabilities.
 ### Sensitive Content Analysis
 - [com.apple.developer.sensitivecontentanalysis.client](entitlements/com.apple.developer.sensitivecontentanalysis.client.md)

@@ -21,7 +21,7 @@ Returns an instance of class IOBufferMemoryDescriptor to be released by the call
 ## Parameters
 
 - `inTask`: The task the buffer will be allocated in.
-- `options`: kIOMapWriteCombineCache - allocate memory with writecombined cache setting.
+- `options`: Options for the allocation: kIODirectionOut, kIODirectionIn - set the direction of the I/O transfer. kIOMemoryPhysicallyContiguous - pass to request memory be physically contiguous. This option is heavily discouraged. The request may fail if memory is fragmented, may cause large amounts of paging activity, and may take a very long time to execute. kIOMemoryPageable - pass to request memory be non-wired - the default for kernel allocated memory is wired. kIOMemoryPurgeable - pass to request memory that may later have its purgeable state set with IOMemoryDescriptor::setPurgeable. Only supported for kIOMemoryPageable allocations. kIOMemoryKernelUserShared - pass to request memory that will be mapped into both the kernel and client applications. kIOMapInhibitCache - allocate memory with inhibited cache setting. kIOMapWriteThruCache - allocate memory with writethru cache setting. kIOMapCopybackCache - allocate memory with copyback cache setting. kIOMapWriteCombineCache - allocate memory with writecombined cache setting.
 - `sourceMap`: The memory map to copy from.
 - `source`: The address at which to start copying.
 - `size`: The number of bytes to copy.
@@ -46,7 +46,7 @@ Returns an instance of class IOBufferMemoryDescriptor to be released by the call
   Creates a buffer memory descriptor and fills it with the specified bytes.
 - [+ withCapacity](iobuffermemorydescriptor/1574841-withcapacity.md)
   Creates a buffer memory descriptor and allocates enough bytes to meet the specified capacity.
-- [- free](../driverkit/iobuffermemorydescriptor/free.md)
+- [- free](iobuffermemorydescriptor/3180456-free.md)
   Performs any final cleanup for the memory buffer descriptor object.
 
 

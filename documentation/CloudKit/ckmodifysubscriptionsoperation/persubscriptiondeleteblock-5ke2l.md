@@ -25,7 +25,7 @@ var perSubscriptionDeleteBlock: ((CKSubscription.ID, Result<Void, any Error>) ->
 This property is a closure that returns no value and has the following parameters:
 
 - The ID of the subscription that CloudKit deletes.
-- A [`Result`](https://developer.apple.com/documentation/Swift/Result) that contains either - A successful `Result`
+- A [`Result`](https://developer.apple.com/documentation/swift/result) that contains either - A successful `Result`
 - An error that provides information about a failure deleting the subscription.
 
 The closure executes once for each subscription in the [`subscriptionIDsToDelete`](ckmodifysubscriptionsoperation/subscriptionidstodelete-3534e.md) property. Each time the closure executes, it executes serially with respect to the other subscription completion blocks of the operation.

@@ -30,9 +30,9 @@ This method applies the eight-fold reflected tile filter to an image. The effect
 The eight-fold reflected tile filter uses the following properties:
 
 - **`inputImage`**: An image with the type [`CIImage`](ciimage.md).
-- **`center`**: A set of coordinates marking the center of the image as a [`CGPoint`](https://developer.apple.com/documentation/CoreFoundation/CGPoint).
-- **`angle`**: A `float` representing the direction of distortion, in radians as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
-- **`width`**: A `float` representing the set width of each tile as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+- **`center`**: A set of coordinates marking the center of the image as a [`CGPoint`](https://developer.apple.com/documentation/corefoundation/cgpoint).
+- **`angle`**: A `float` representing the direction of distortion, in radians as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
+- **`width`**: A `float` representing the set width of each tile as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
 
 The following code creates a filter that results in small symmetrical repeated tiles:
 
@@ -47,7 +47,7 @@ func eightFoldReflected(inputImage: CIImage) -> CIImage {
 }
 ```
 
-![A bouquet of multiple colorful flowers photographed up close with good lighting and focus. In the photo on the right, an eight-fold reflected tile filter is applied resulting in a square pattern that is repeated throughout the image.](https://docs-assets.developer.apple.com/published/fb912ed7cc05459e4928c9e8957991af/media-4333630%402x.png)
+![A bouquet of multiple colorful flowers photographed up close with good lighting and focus. In the photo on the right, an eight-fold reflected tile filter is applied resulting in a square pattern that is repeated throughout the image.](/images/com.apple.coreimage/media-4333630@2x.png)
 
 ## See Also
 

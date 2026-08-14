@@ -30,7 +30,7 @@ class App {
 
 In this model, each state is represented by a case with a matching name. The `loggedIn` and `sessionExpired` cases include the user as an associated value, while the `unregistered` case doesn’t include an associated value. When you update your app’s state, there’s a single variable, `state`, to modify, no matter what the transition.
 
-![A diagram showing the states of the app: unregistered, logged in, and session expired.](https://docs-assets.developer.apple.com/published/f4dd92990c10e691a9993182c9616287/maintaining-state-in-your-apps-1%402x.png)
+![A diagram showing the states of the app: unregistered, logged in, and session expired.](/images/com.apple.Swift/maintaining-state-in-your-apps-1@2x.png)
 
 ##### Dont Spread State Across Multiple Variables
 

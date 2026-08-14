@@ -50,7 +50,7 @@ orderButton.bezelStyle = NSBezelStyleAccessoryBar;
 [orderButton setButtonType:NSButtonTypePushOnPushOff];
 ```
 
-![A screenshot of a label, and two accessory bar buttons that display side-by-side. The label on the left says sort by. The buttons that follow on the right side say search rank and page order.](https://docs-assets.developer.apple.com/published/2b28d4da50ab26b6830f3428ceb3c898/media-4307818%402x.png)
+![A screenshot of a label, and two accessory bar buttons that display side-by-side. The label on the left says sort by. The buttons that follow on the right side say search rank and page order.](/images/com.apple.appkit/media-4307818@2x.png)
 
 For design guidance, see [`Human Interface Guidelines > Buttons`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/buttons).
 

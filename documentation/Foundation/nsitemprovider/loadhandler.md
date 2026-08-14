@@ -30,7 +30,7 @@ Use this block when registering a type-specific coercion handler with the [`regi
 
 When a client calls the [`loadItem(forTypeIdentifier:options:completionHandler:)`](nsitemprovider/loaditem(fortypeidentifier:options:completionhandler:).md) method and requests the appropriate type, the item provider executes your block. In your implementation, create an object of the expected type and execute the block in the `completionHandler` parameter, passing the newly created object as the first parameter of that block. If there is an error, pass `nil` for the object and provide an appropriate [`NSError`](nserror.md) object explaining what happened.
 
-This type of block is also used for generating preview images. In the case of a preview image, the `expectedValueClass` is always a [`NSData`](nsdata.md), [`NSURL`](nsurl.md), [`UIImage`](https://developer.apple.com/documentation/UIKit/UIImage) (in iOS), or [`NSImage`](https://developer.apple.com/documentation/AppKit/NSImage) (in macOS) class.
+This type of block is also used for generating preview images. In the case of a preview image, the `expectedValueClass` is always a [`NSData`](nsdata.md), [`NSURL`](nsurl.md), [`UIImage`](https://developer.apple.com/documentation/uikit/uiimage) (in iOS), or [`NSImage`](https://developer.apple.com/documentation/appkit/nsimage) (in macOS) class.
 
 ## See Also
 

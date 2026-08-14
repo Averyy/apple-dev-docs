@@ -20,7 +20,7 @@ let kCGPDFXInfo: CFString
 
 #### Discussion
 
-A human-readable text string containing additional information or comments about the intended target device or production condition. This key is required if the value of [`kCGPDFXOutputConditionIdentifier`](kcgpdfxoutputconditionidentifier.md) does not specify a standard production condition. It is optional otherwise. If present, the value of this key must be a [`CFString`](https://developer.apple.com/documentation/CoreFoundation/CFString) object.
+A human-readable text string containing additional information or comments about the intended target device or production condition. This key is required if the value of [`kCGPDFXOutputConditionIdentifier`](kcgpdfxoutputconditionidentifier.md) does not specify a standard production condition. It is optional otherwise. If present, the value of this key must be a [`CFString`](https://developer.apple.com/documentation/corefoundation/cfstring) object.
 
 ## See Also
 

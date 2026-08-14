@@ -47,7 +47,7 @@ let result = vDSP.linearInterpolate(vectorA, vectorB,
 
 The following figure visualizes the two source vectors: the blue lines at the top and bottom, and the interpolation result: the red line in the center:
 
-![Graphic illustrating two sine waves and a third vector that’s the linear interpolation between them.](https://docs-assets.developer.apple.com/published/80d7655938ef049813f9ca5edd8e745e/media-3521345%402x.png)
+![Graphic illustrating two sine waves and a third vector that’s the linear interpolation between them.](/images/com.apple.accelerate/media-3521345@2x.png)
 
 ## See Also
 

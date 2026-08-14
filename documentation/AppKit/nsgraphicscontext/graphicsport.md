@@ -16,7 +16,7 @@ var graphicsPort: UnsafeMutableRawPointer { get }
 
 #### Discussion
 
-In macOS, this is the Core Graphics context, a [`CGContext`](https://developer.apple.com/documentation/CoreGraphics/CGContext) object (opaque type).
+In macOS, this is the Core Graphics context, a [`CGContext`](https://developer.apple.com/documentation/coregraphics/cgcontext) object (opaque type).
 
 ## See Also
 

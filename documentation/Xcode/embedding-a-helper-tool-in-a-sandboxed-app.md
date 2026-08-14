@@ -61,7 +61,7 @@ Now switch back to the app (`AppWithTool`) scheme.
 
 In the Build Phases tab of the app target editor, add the ToolX target to the Dependencies build phase. This ensures that Xcode builds the tool target before building the app target.
 
-Add a new Copy Files build phase. Double-click the build phase name and change it to `Embed Helper Tools` (the exact name doesn’t matter, but it’s best to pick a descriptive one). Set the Destination popup to Executables.  This places the helper tool in your app’s `Contents/MacOS` directory, one of the locations recommended by [`Placing content in a bundle`](https://developer.apple.com/documentation/BundleResources/placing-content-in-a-bundle).
+Add a new Copy Files build phase. Double-click the build phase name and change it to `Embed Helper Tools` (the exact name doesn’t matter, but it’s best to pick a descriptive one). Set the Destination popup to Executables.  This places the helper tool in your app’s `Contents/MacOS` directory, one of the locations recommended by [`Placing content in a bundle`](https://developer.apple.com/documentation/bundleresources/placing-content-in-a-bundle).
 
 Add the `ToolX` executable to that build phase, making sure Code Sign On Copy is checked.
 
@@ -214,13 +214,13 @@ To validate your work, follow the process described in [`Build and validate`](em
 
 ## See Also
 
-- [Managing your app’s information property list values](../BundleResources/managing-your-app-s-information-property-list.md)
+- [Managing your app’s information property list values](../bundleresources/managing-your-app-s-information-property-list.md)
   Customize the information property list values for your app using Xcode.
 - [Adding package dependencies to your app](adding-package-dependencies-to-your-app.md)
   Integrate package dependencies to share code between projects, or leverage code from other developers.
-- [Creating a Mac version of your iPad app](../UIKit/creating-a-mac-version-of-your-ipad-app.md)
+- [Creating a Mac version of your iPad app](../uikit/creating-a-mac-version-of-your-ipad-app.md)
   Bring your iPad app to macOS with Mac Catalyst.
-- [Setting up a watchOS project](../watchOS-Apps/setting-up-a-watchos-project.md)
+- [Setting up a watchOS project](../watchos-apps/setting-up-a-watchos-project.md)
   Create a new watchOS project or add a watch target to an existing iOS project.
 
 

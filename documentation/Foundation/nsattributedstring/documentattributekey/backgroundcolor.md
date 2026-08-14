@@ -22,7 +22,7 @@ static let backgroundColor: NSAttributedString.DocumentAttributeKey
 
 #### Discussion
 
-The value of this attribute is an [`NSColor`](https://developer.apple.com/documentation/AppKit/NSColor) object representing the document-wide page background color.
+The value of this attribute is an [`NSColor`](https://developer.apple.com/documentation/appkit/nscolor) object representing the document-wide page background color.
 
 The string constant in macOS 10.3 and earlier is `@"BackgroundColor"`.
 

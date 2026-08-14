@@ -20,7 +20,7 @@ var showsVolumeSlider: Bool { get set }
 
 #### Discussion
 
-The volume slider is visible by default. To hide the volume slider, set this property’s value to [`false`](https://developer.apple.com/documentation/Swift/false).
+The volume slider is visible by default. To hide the volume slider, set this property’s value to [`false`](https://developer.apple.com/documentation/swift/false).
 
 
 ---

@@ -10,7 +10,7 @@ You set the number of columns you want in your design using the `layout` propert
 
 Layout columns are numbered from left to right starting with 0. You use this column system to figure out the positioning for all the components in your article and then, in your `article.json` file, you use a [`ComponentLayout`](https://developer.apple.com/documentation/applenewsformat/componentlayout) object to specify the position settings.
 
-![Screenshot of an article with a caption and pull quote on iPad.](https://docs-assets.developer.apple.com/published/6365cc60f22e609306f1af40c4461e0e/media-4087463%402x.png)
+![Screenshot of an article with a caption and pull quote on iPad.](/images/com.apple.applenews/media-4087463@2x.png)
 
 ##### Specify Positions for Components
 
@@ -109,7 +109,7 @@ If you previously used the `ignoreDocumentMargin` property, you must update your
 
 The following figure shows an `image` object with `ignoreViewportPadding` set to `true`.
 
-![Screenshot showing the image object spanning the entire iPad screen.](https://docs-assets.developer.apple.com/published/904ee2fef2ec65b013fc0decfdeed4a3/media-4099659%402x.png)
+![Screenshot showing the image object spanning the entire iPad screen.](/images/com.apple.applenews/media-4099659@2x.png)
 
 To make the image object span only the document width plus margin, set `ignoreDocumentMargin` to `true` and `ignoreViewportPadding` to `false`.
 

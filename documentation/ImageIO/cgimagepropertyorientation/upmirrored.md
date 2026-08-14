@@ -26,7 +26,7 @@ The (x,y) pixel coordinates of the origin point (0,0) represent the rightmost co
 
 If an image is encoded with this orientation, then displayed by software unaware of orientation metadata, the image appears horizontally mirrored.
 
-![To correct an image with upMirrored orientation for display, flip it horizontally.](https://docs-assets.developer.apple.com/published/3b93501e18e409bc3d6f779ae1e59673/media-2948289%402x.png)
+![To correct an image with upMirrored orientation for display, flip it horizontally.](/images/com.apple.imageio/media-2948289@2x.png)
 
 ## See Also
 

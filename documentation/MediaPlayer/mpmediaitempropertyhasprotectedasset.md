@@ -22,7 +22,7 @@ let MPMediaItemPropertyHasProtectedAsset: String
 
 #### Discussion
 
-This value is an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) object that represents a `BOOL` data type.
+This value is an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) object that represents a `BOOL` data type.
 
 ## See Also
 

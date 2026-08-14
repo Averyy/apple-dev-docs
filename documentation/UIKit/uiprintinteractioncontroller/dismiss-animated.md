@@ -23,7 +23,7 @@ You should dismiss the printing options when they are presented in a sheet or an
 
 ## Parameters
 
-- `animated`: [`true`](https://developer.apple.com/documentation/Swift/true) to animate the dismissal, otherwise [`false`](https://developer.apple.com/documentation/Swift/false).
+- `animated`: [`true`](https://developer.apple.com/documentation/swift/true) to animate the dismissal, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
 
 ## See Also
 

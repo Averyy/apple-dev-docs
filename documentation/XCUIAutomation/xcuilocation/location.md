@@ -24,7 +24,7 @@ var location: CLLocation { get }
 
 #### Discussion
 
-Use this property to access the underlying [`CLLocation`](https://developer.apple.com/documentation/CoreLocation/CLLocation) this object wraps.
+Use this property to access the underlying [`CLLocation`](https://developer.apple.com/documentation/corelocation/cllocation) this object wraps.
 
 ## See Also
 

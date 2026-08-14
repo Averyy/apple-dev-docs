@@ -20,7 +20,7 @@ void removeItem(
 
 ## Parameters
 
-- `key`: A   object containing the key being searched for.
+- `key`: A `String` object containing the key being searched for.
 
 ## See Also
 

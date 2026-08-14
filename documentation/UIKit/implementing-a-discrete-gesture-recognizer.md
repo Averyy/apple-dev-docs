@@ -10,7 +10,7 @@ A gesture recognizer remains in the [`UIGestureRecognizer.State.possible`](uiges
 
 The following image shows a checkmark gesture, which is created by tracing one finger down and to the right and then back up and to the right. Because the gesture follows a specific path, it makes sense to use a discrete gesture recognizer.
 
-![A diagram demonstrating a user performing a checkmark gesture.](https://docs-assets.developer.apple.com/published/48b6fb3bf7411300723929167ccc50b6/implementing-a-discrete-gesture-recognizer-1%402x.png)
+![A diagram demonstrating a user performing a checkmark gesture.](/images/com.apple.uikit/implementing-a-discrete-gesture-recognizer-1@2x.png)
 
 ##### Defining the Conditions for Success
 

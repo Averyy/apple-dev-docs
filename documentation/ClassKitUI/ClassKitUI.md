@@ -11,7 +11,7 @@ ClassKit UI helps students manage their assigned documents within your app. When
 
 The framework provides views for both submitting assigned documents and displaying submission information like status and due dates. Each view automatically fetches assigned document data from ClassKit and updates when the submission status changes. You can customize the submission process with [`closures`](https://developer.apple.comhttps://docs.swift.org/swift-book/documentation/the-swift-programming-language/closures/) that execute before and after submissions. For example, when a student tries to submit a document for an assignment, your app can verify that the document is ready to submit. And after submitting the document, your app can display an alert to let them know their submission was successful.
 
-To use ClassKit UI, add the [`ClassKit Environment Entitlement`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.ClassKit-environment) entitlement in your app, which enables ClassKit integration.
+To use ClassKit UI, add the [`ClassKit Environment Entitlement`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.classkit-environment) entitlement in your app, which enables ClassKit integration.
 
 ## Topics
 

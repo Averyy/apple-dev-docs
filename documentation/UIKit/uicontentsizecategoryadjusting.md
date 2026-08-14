@@ -28,7 +28,7 @@ protocol UIContentSizeCategoryAdjusting : NSObjectProtocol
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 ### Conforming Types
 - [UILabel](uilabel.md)
 - [UISearchTextField](uisearchtextfield.md)

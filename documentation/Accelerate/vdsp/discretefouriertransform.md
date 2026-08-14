@@ -41,7 +41,7 @@ let interleavedDFT = try? vDSP.DiscreteFourierTransform(previous: nil,
 let interleavedOutput = interleavedDFT?.transform(input: interleavedInput)
 ```
 
-To create a [`vDSP.DiscreteFourierTransform`](vdsp/discretefouriertransform.md) instance to work with split-complex data, pass either [`Float`](https://developer.apple.com/documentation/Swift/Float) or [`Double`](https://developer.apple.com/documentation/Swift/Double) to [`init(previous:count:direction:transformType:ofType:)`](vdsp/discretefouriertransform/init(previous:count:direction:transformtype:oftype:).md). Split-complex data stores the real and imaginary parts of each complex value in separate arrays. The following code shows how to perform forward complex-to-complex DFT on the split-complex single-precision values in the `splitComplexRealInput` and `splitComplexImaginaryInput` arrays:
+To create a [`vDSP.DiscreteFourierTransform`](vdsp/discretefouriertransform.md) instance to work with split-complex data, pass either [`Float`](https://developer.apple.com/documentation/swift/float) or [`Double`](https://developer.apple.com/documentation/swift/double) to [`init(previous:count:direction:transformType:ofType:)`](vdsp/discretefouriertransform/init(previous:count:direction:transformtype:oftype:).md). Split-complex data stores the real and imaginary parts of each complex value in separate arrays. The following code shows how to perform forward complex-to-complex DFT on the split-complex single-precision values in the `splitComplexRealInput` and `splitComplexImaginaryInput` arrays:
 
 ```swift
 var splitComplexRealInput: [Float] = [ ... ]

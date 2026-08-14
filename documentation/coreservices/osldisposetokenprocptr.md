@@ -42,7 +42,7 @@ After you are finished with your token disposal callback function, you can dispo
 
 ## Parameters
 
-- `unneededToken`: A pointer to the token to dispose of. (Token is defined in  .) On successful return, your function must set this to the null descriptor. See  .
+- `unneededToken`: A pointer to the token to dispose of. (Token is defined in [`AEDisposeToken(_:)`](1446783-aedisposetoken.md).) On successful return, your function must set this to the null descriptor. See [`AEDesc`](aedesc.md).
 
 ## See Also
 

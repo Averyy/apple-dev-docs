@@ -33,8 +33,8 @@ The default in-app subscription store control style that resolves its appearance
 ## Relationships
 
 ### Conforms To
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 - [SubscriptionStoreControlStyle](subscriptionstorecontrolstyle.md)
 
 ## See Also

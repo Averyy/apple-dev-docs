@@ -6,7 +6,7 @@ Update your apps to use new features, and test your apps against API changes.
 
 #### Overview
 
-The watchOS 9.1 SDK provides support to develop watchOS apps for Apple Watch devices running watchOS 9.2. The SDK comes bundled with Xcode 14.2, available from the Mac App Store. For information on the compatibility requirements for Xcode 14.2, see [`Xcode 14.2 Release Notes`](https://developer.apple.com/documentation/Xcode-Release-Notes/xcode-14_2-release-notes).
+The watchOS 9.1 SDK provides support to develop watchOS apps for Apple Watch devices running watchOS 9.2. The SDK comes bundled with Xcode 14.2, available from the Mac App Store. For information on the compatibility requirements for Xcode 14.2, see [`Xcode 14.2 Release Notes`](https://developer.apple.com/documentation/xcode-release-notes/xcode-14_2-release-notes).
 
 ##### Swiftui
 

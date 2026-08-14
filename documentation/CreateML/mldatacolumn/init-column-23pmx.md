@@ -39,7 +39,7 @@ print(doubleArrayColumn) // Prints [[1.0, 2.0, 3.0], [4.0, 5.0, 6.0]]
 
 ## Parameters
 
-- `column`: An [`MLDataColumn`](mldatacolumn.md) of elements convertible to an [`Array`](https://developer.apple.com/documentation/Swift/Array) of [`Double`](https://developer.apple.com/documentation/Swift/Double).
+- `column`: An [`MLDataColumn`](mldatacolumn.md) of elements convertible to an [`Array`](https://developer.apple.com/documentation/swift/array) of [`Double`](https://developer.apple.com/documentation/swift/double).
 
 ## See Also
 

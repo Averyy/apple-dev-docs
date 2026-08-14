@@ -16,7 +16,7 @@ struct VZVirtualMachineViewAdaptor
 
 #### Discussion
 
-`VZVirtualMachineViewAdaptor` enables Swift 6 strict concurrency when using [`VZVirtualMachineView`](vzvirtualmachineview.md). Since [`VZVirtualMachine`](vzvirtualmachine.md) operates on a specific dispatch queue and is not [`Sendable`](https://developer.apple.com/documentation/Swift/Sendable), assigning it directly to [`virtualMachine`](vzvirtualmachineview/virtualmachine.md) would be a compiler error when crossing isolation boundaries. The adaptor holds a strong reference to the virtual machine, allowing you to  safely copy it  across actor boundaries.
+`VZVirtualMachineViewAdaptor` enables Swift 6 strict concurrency when using [`VZVirtualMachineView`](vzvirtualmachineview.md). Since [`VZVirtualMachine`](vzvirtualmachine.md) operates on a specific dispatch queue and is not [`Sendable`](https://developer.apple.com/documentation/swift/sendable), assigning it directly to [`virtualMachine`](vzvirtualmachineview/virtualmachine.md) would be a compiler error when crossing isolation boundaries. The adaptor holds a strong reference to the virtual machine, allowing you to  safely copy it  across actor boundaries.
 
 The following example demonstrates how to create and run a `VZVirtualMachineViewAdaptor` from the main actor.
 
@@ -40,8 +40,8 @@ The following example demonstrates how to create and run a `VZVirtualMachineView
 ## Relationships
 
 ### Conforms To
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

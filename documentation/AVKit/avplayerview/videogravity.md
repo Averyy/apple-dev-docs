@@ -18,11 +18,11 @@ var videoGravity: AVLayerVideoGravity { get set }
 
 The video gravity determines how the player view scales or stretches the video content within the player view’s bounds. The player view supports the following video gravity values:
 
-- [`resizeAspect`](https://developer.apple.com/documentation/AVFoundation/AVLayerVideoGravity/resizeAspect)
-- [`resizeAspectFill`](https://developer.apple.com/documentation/AVFoundation/AVLayerVideoGravity/resizeAspectFill)
-- [`resize`](https://developer.apple.com/documentation/AVFoundation/AVLayerVideoGravity/resize)
+- [`resizeAspect`](https://developer.apple.com/documentation/avfoundation/avlayervideogravity/resizeaspect)
+- [`resizeAspectFill`](https://developer.apple.com/documentation/avfoundation/avlayervideogravity/resizeaspectfill)
+- [`resize`](https://developer.apple.com/documentation/avfoundation/avlayervideogravity/resize)
 
-The default value is [`resizeAspect`](https://developer.apple.com/documentation/AVFoundation/AVLayerVideoGravity/resizeAspect).
+The default value is [`resizeAspect`](https://developer.apple.com/documentation/avfoundation/avlayervideogravity/resizeaspect).
 
 This property is animatable.
 

@@ -27,13 +27,13 @@ To submit match requests without presenting an interface using automatch, see [`
 
 Then create a compatible rule that finds players who have the same party code.
 
-In a compatible rule, the `requests` array in the expression contains two match requests to compare. Write an expression that returns [`true`](https://developer.apple.com/documentation/Swift/true) if the party code for the two requests is the same.
+In a compatible rule, the `requests` array in the expression contains two match requests to compare. Write an expression that returns [`true`](https://developer.apple.com/documentation/swift/true) if the party code for the two requests is the same.
 
 ```json
 requests[0].properties.partyCode == requests[1].properties.partyCode
 ```
 
-Create the party code rule using the [`Create a Rule Set`](https://developer.apple.com/documentation/AppStoreConnectAPI/POST-v1-gameCenterMatchmakingRuleSets) endpoint. In the `attributes` field, set the rule’s `type` field to `COMPATIBLE` and pass the party code expression. Set the `description` and `referenceName` fields to strings that make sense for your game. In the `relationships` field, pass the `id` for the rule set in the [`GameCenterMatchmakingQueueCreateRequest.Data.Relationships.RuleSet.Data`](https://developer.apple.com/documentation/AppStoreConnectAPI/GameCenterMatchmakingQueueCreateRequest/Data-data.dictionary/Relationships-data.dictionary/RuleSet-data.dictionary/Data-data.dictionary) object.
+Create the party code rule using the [`Create a Rule Set`](https://developer.apple.com/documentation/appstoreconnectapi/post-v1-gamecentermatchmakingrulesets) endpoint. In the `attributes` field, set the rule’s `type` field to `COMPATIBLE` and pass the party code expression. Set the `description` and `referenceName` fields to strings that make sense for your game. In the `relationships` field, pass the `id` for the rule set in the [`GameCenterMatchmakingQueueCreateRequest.Data.Relationships.RuleSet.Data`](https://developer.apple.com/documentation/appstoreconnectapi/gamecentermatchmakingqueuecreaterequest/data-data.dictionary/relationships-data.dictionary/ruleset-data.dictionary/data-data.dictionary) object.
 
 ```json
 POST /v1/gameCenterMatchmakingRules

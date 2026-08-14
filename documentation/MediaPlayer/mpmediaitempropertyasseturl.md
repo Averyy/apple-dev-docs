@@ -22,7 +22,7 @@ let MPMediaItemPropertyAssetURL: String
 
 #### Discussion
 
-This value is an [`NSURL`](https://developer.apple.com/documentation/Foundation/NSURL) object. The URL has the custom scheme of `ipod-library`. For example, a URL might look like this:
+This value is an [`NSURL`](https://developer.apple.com/documentation/foundation/nsurl) object. The URL has the custom scheme of `ipod-library`. For example, a URL might look like this:
 
 **Swift**:
 

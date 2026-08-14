@@ -23,11 +23,11 @@ case left
 
 If an image is encoded with this orientation, then displayed by software unaware of orientation metadata, the image appears to be rotated 90° clockwise. (That is, to present the image in its intended orientation, you must rotate 90° counter-clockwise.)
 
-![To correct an image with left orientation for display, rotate it 90° counterclockwise.](https://docs-assets.developer.apple.com/published/a33bb23b55f1eb490a0abf2b86b81f66/media-2948305%402x.png)
+![To correct an image with left orientation for display, rotate it 90° counterclockwise.](/images/com.apple.uikit/media-2948305@2x.png)
 
 ## See Also
 
-- [CGImagePropertyOrientation.left](../ImageIO/CGImagePropertyOrientation/left.md)
+- [CGImagePropertyOrientation.left](../imageio/cgimagepropertyorientation/left.md)
   The encoded image data is rotated 90° clockwise from the image’s intended display orientation.
 - [UIImage.Orientation.up](uiimage/orientation/up.md)
   The original pixel data matches the image’s intended display orientation.

@@ -22,7 +22,7 @@ let kCVImageBufferDisplayMaskRectangle_RectangleLeftKey: CFString
 
 #### Discussion
 
-The left offset value is a [`CFNumber`](https://developer.apple.com/documentation/CoreFoundation/CFNumber) of an unsigned 16-bit integer that’s less than the reference raster width value.
+The left offset value is a [`CFNumber`](https://developer.apple.com/documentation/corefoundation/cfnumber) of an unsigned 16-bit integer that’s less than the reference raster width value.
 
 ## See Also
 

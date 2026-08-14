@@ -48,7 +48,7 @@ VStack {
 }
 ```
 
-![Applying a font to a single text view or a view container](https://docs-assets.developer.apple.com/published/96bbeed6b182bf19c533efcca8a5fcaa/SwiftUI-view-font%402x.png)
+![Applying a font to a single text view or a view container](/images/com.apple.SwiftUI/SwiftUI-view-font@2x.png)
 
 ## Parameters
 

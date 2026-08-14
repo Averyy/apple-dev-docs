@@ -21,7 +21,7 @@ init(parameterID: UInt32, scope: UInt32, element: UInt32, value: Float)
 
 #### Discussion
 
-For more information about the parameters, see [`AudioUnitParameterID`](https://developer.apple.com/documentation/AudioToolbox/AudioUnitParameterID), [`AudioUnitScope`](https://developer.apple.com/documentation/AudioToolbox/AudioUnitScope), and [`AudioUnitElement`](https://developer.apple.com/documentation/AudioToolbox/AudioUnitElement). The valid range of values depend on the parameter you set.
+For more information about the parameters, see [`AudioUnitParameterID`](https://developer.apple.com/documentation/audiotoolbox/audiounitparameterid), [`AudioUnitScope`](https://developer.apple.com/documentation/audiotoolbox/audiounitscope), and [`AudioUnitElement`](https://developer.apple.com/documentation/audiotoolbox/audiounitelement). The valid range of values depend on the parameter you set.
 
 ## Parameters
 

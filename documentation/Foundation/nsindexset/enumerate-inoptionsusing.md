@@ -29,7 +29,7 @@ This method executes synchronously.
 - `range`: The range to enumerate.
 - `opts`: A bitmask that specifies the options for the enumeration (whether it should be performed concurrently and whether it should be performed in reverse order). See [`NSEnumerationOptions`](nsenumerationoptions.md) for the supported values.
 - `block`: The Block to apply to elements in the set. The Block takes two arguments: - **idx**: The index of the object.
-- **stop**: A reference to a Boolean value. The block can set the value to [`true`](https://developer.apple.com/documentation/Swift/true) to stop further processing of the set. The `stop` argument is an out-only argument. You should only ever set this Boolean to YES within the Block.
+- **stop**: A reference to a Boolean value. The block can set the value to [`true`](https://developer.apple.com/documentation/swift/true) to stop further processing of the set. The `stop` argument is an out-only argument. You should only ever set this Boolean to YES within the Block.
 
 ## See Also
 

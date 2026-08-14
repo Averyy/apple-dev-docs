@@ -34,7 +34,7 @@ The following code shows how to create a basic animation object using default in
 
 A layer animated with the animation created by the code above and with linearly interpolated horizontal movement would describe a path similar to the following figure.
 
-![Path taken using default timing function](https://docs-assets.developer.apple.com/published/6d2d45f802f21dfcfe8293fa2a57596f/media-2776820%402x.png)
+![Path taken using default timing function](/images/com.apple.quartzcore/media-2776820@2x.png)
 
 ## See Also
 

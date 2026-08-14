@@ -12,7 +12,7 @@ Add orders to Apple Wallet.
 
 #### Overview
 
-The `FinanceKitUI` framework contains a standardized UI that interacts securely with [`FinanceKit`](https://developer.apple.com/documentation/FinanceKit) and the [`FinanceStore`](https://developer.apple.com/documentation/FinanceKit/FinanceStore) to support the addition of orders to a person’s Apple Wallet.
+The `FinanceKitUI` framework contains a standardized UI that interacts securely with [`FinanceKit`](https://developer.apple.com/documentation/financekit) and the [`FinanceStore`](https://developer.apple.com/documentation/financekit/financestore) to support the addition of orders to a person’s Apple Wallet.
 
 `FinanceKitUI` provides an `AddOrderToWalletButton` for SwiftUI. Add this button to your UI when you want to allow someone to add an order to their Apple Wallet. The button’s style options are consistent with the standard Apple Pay and Wallet design language, giving users a sense of familiarity and trust when they interact with it.
 

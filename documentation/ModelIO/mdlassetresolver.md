@@ -26,7 +26,7 @@ protocol MDLAssetResolver : NSObjectProtocol
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 ### Conforming Types
 - [MDLBundleAssetResolver](mdlbundleassetresolver.md)
 - [MDLPathAssetResolver](mdlpathassetresolver.md)

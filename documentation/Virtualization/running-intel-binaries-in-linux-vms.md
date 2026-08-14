@@ -12,7 +12,7 @@ In macOS 13 and later on Mac computers with Apple silicon chips, the Virtualizat
 
 ##### Test for Rosetta on Macos 26 and Earlier
 
-> **Note**:  Starting in macOS 27, support for Intel binary translation for Linux apps is included in macOS. Testing for [`availability`](VZLinuxRosettaDirectoryShare/availability.md) starting in macOS 27 always returns [`VZLinuxRosettaAvailability.installed`](VZLinuxRosettaAvailability/installed.md)  and [`installRosetta(completionHandler:)`](VZLinuxRosettaDirectoryShare/installRosetta(completionHandler:).md) always returns immediately.
+> **Note**:  Starting in macOS 27, support for Intel binary translation for Linux apps is included in macOS. Testing for [`availability`](vzlinuxrosettadirectoryshare/availability.md) starting in macOS 27 always returns [`VZLinuxRosettaAvailability.installed`](vzlinuxrosettaavailability/installed.md)  and [`installRosetta(completionHandler:)`](vzlinuxrosettadirectoryshare/installrosetta(completionhandler:).md) always returns immediately.
 
 Before trying to install, run, or activate Rosetta, your app should check to ensure that the capability is available in the version of macOS running on the host computer. The [`availability`](vzlinuxrosettadirectoryshare/availability.md) class method returns a value from the [`VZLinuxRosettaAvailability`](vzlinuxrosettaavailability.md) enumeration that describes whether the current host supports Rosetta or if the capability is already installed on the host Mac. The example below shows the process for checking for Rosetta availability:
 

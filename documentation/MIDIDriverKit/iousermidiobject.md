@@ -36,7 +36,7 @@ class IOUserMIDIObject;
 ## Relationships
 
 ### Inherits From
-- [OSObject](../DriverKit/OSObject.md)
+- [OSObject](../driverkit/osobject.md)
 ### Inherited By
 - [IOUserMIDIDevice](iousermididevice.md)
 - [IOUserMIDIEndpoint](iousermidiendpoint.md)

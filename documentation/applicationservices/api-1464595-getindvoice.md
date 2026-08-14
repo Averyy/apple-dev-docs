@@ -28,7 +28,7 @@ If you specify an index value beyond the number of availablevoices, the `GetIndV
 
 ## Parameters
 
-- `index`: The index of the voice for which to obtain a voice specification structure. This number must range from   to the total number of voices, as returned by the   function. 
+- `index`: The index of the voice for which to obtain a voice specification structure. This number must range from `1` to the total number of voices, as returned by the `CountVoices` function. 
 - `voice`: A pointer to the voice specification structure whose fields are to be filled in. 
 
 ## See Also

@@ -10,11 +10,16 @@ See the Overview section above for header-level documentation.
 
 Assistive applications use the functions defined in this header file to communicate with and control accessible applications running in macOS.
 
-Each accessible user interface element in an application is represented by an AXUIElementRef, which is a CFTypeRef. AXUIElementRefs (like all CFTypeRefs) can be used with all the Core Foundation polymorphic functions, such as [`CFRetain`](https://developer.apple.com/documentation/corefoundation/1521269-cfretain), [`CFRelease`](https://developer.apple.com/documentation/corefoundation/1521153-cfrelease), and [`CFEqual(_:_:)`](https://developer.apple.com/documentation/corefoundation/cfequal(_:_:)).
+Each accessible user interface element in an application is represented by an AXUIElementRef, which is a CFTypeRef. AXUIElementRefs (like all CFTypeRefs) can be used with all the Core Foundation polymorphic functions, such as [`CFRetain`](https://developer.apple.com/documentation/corefoundation/cfretain), [`CFRelease`](https://developer.apple.com/documentation/corefoundation/cfrelease), and [`CFEqual(_:_:)`](https://developer.apple.com/documentation/corefoundation/cfequal(_:_:)).
 
 All functions defined in this header file return `kAXErrorSuccess` on success. If there is some sort of system memory failure, such as the failure to allocate an object, all functions can return `kAXErrorFailure`. In the unlikely event that some process does not fully support the accessibility API, a function can return `kAXErrorNotImplemented`.
 
 In addition, some functions can return the following error codes:
+
+- **`kAXErrorInvalidUIElement`**: The passed-in AXUIElementRef is invalid. All functions that include an AXUIElementRef parameter can return this error code.
+- **`kAXErrorIllegalArgument`**: At least one of the arguments is illegal (for example, NIL passed in for a pointer).
+- **`kAXErrorCannotComplete`**: There is a problem with messaging (such as when messaging to the server fails or when the accessible application is unresponsive or waiting for user input). All functions that perform messaging can return this error code.
+- **`kAXErrorAPIDisabled`**: The accessibility API is disabled. All functions that perform messaging can return this error code.
 
 For more information on the definition and use of accessibility objects and in macOS accessibility support in general, see [`Accessibility Programming Guide for OS X`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Accessibility/Conceptual/AccessibilityMacOSX/index.html#//apple_ref/doc/uid/TP40001078).
 

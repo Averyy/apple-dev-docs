@@ -26,7 +26,7 @@ A `QLPreviewController` can display previews for many common file types, includi
 - Rich text format, or RTF, documents
 - PDF files
 - Images
-- Text files with a uniform type identifier that conforms to the `public.text` type. To learn more, see [`Uniform Type Identifiers`](https://developer.apple.com/documentation/UniformTypeIdentifiers).
+- Text files with a uniform type identifier that conforms to the `public.text` type. To learn more, see [`Uniform Type Identifiers`](https://developer.apple.com/documentation/uniformtypeidentifiers).
 - Comma-separated values, or CSV, files
 - 3D models in the USDZ format with both standalone and AR views for viewing the model
 
@@ -40,11 +40,11 @@ For details on providing items to a preview controller, see [`QLPreviewControlle
 
 ##### Presenting a Preview Controller
 
-You can present a `QLPreviewController` modally by calling [`present(_:animated:completion:)`](https://developer.apple.com/documentation/UIKit/UIViewController/present(_:animated:completion:)) from a presenting [`UIViewController`](https://developer.apple.com/documentation/UIKit/UIViewController), or you can push it into view using a [`UINavigationController`](https://developer.apple.com/documentation/UIKit/UINavigationController). The preview includes a title that the system derives from the last path component of the item URL. You can override it by implementing a [`previewItemTitle`](qlpreviewitem/previewitemtitle.md) accessor for the preview item.
+You can present a `QLPreviewController` modally by calling [`present(_:animated:completion:)`](https://developer.apple.com/documentation/uikit/uiviewcontroller/present(_:animated:completion:)) from a presenting [`UIViewController`](https://developer.apple.com/documentation/uikit/uiviewcontroller), or you can push it into view using a [`UINavigationController`](https://developer.apple.com/documentation/uikit/uinavigationcontroller). The preview includes a title that the system derives from the last path component of the item URL. You can override it by implementing a [`previewItemTitle`](qlpreviewitem/previewitemtitle.md) accessor for the preview item.
 
 ##### Previewing Items in Mac Apps Built with Mac Catalyst
 
-For Mac apps built with Mac Catalyst, presenting a `QLPreviewController` displays the preview in a [`QLPreviewPanel`](https://developer.apple.com/documentation/QuickLookUI/QLPreviewPanel) and dims the previously active window. However, unlike on iOS devices, where displaying a preview hides the presenting view controller, the previously visible window’s content remains visible in Mac apps built with Mac Catalyst. Be sure the content is appropriate to display while the `QLPreviewPanel` is visible.
+For Mac apps built with Mac Catalyst, presenting a `QLPreviewController` displays the preview in a [`QLPreviewPanel`](https://developer.apple.com/documentation/quicklookui/qlpreviewpanel) and dims the previously active window. However, unlike on iOS devices, where displaying a preview hides the presenting view controller, the previously visible window’s content remains visible in Mac apps built with Mac Catalyst. Be sure the content is appropriate to display while the `QLPreviewPanel` is visible.
 
 In addition, the system doesn’t display a live preview if you embed the `QLPreviewController` in another view controller. Instead, it displays a thumbnail that matches the size of the preview controller’s view.
 
@@ -74,31 +74,31 @@ In addition, the system doesn’t display a live preview if you embed the `QLPre
 ## Relationships
 
 ### Inherits From
-- [UIViewController](../UIKit/UIViewController.md)
+- [UIViewController](../uikit/uiviewcontroller.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCoding](../Foundation/NSCoding.md)
-- [NSExtensionRequestHandling](../Foundation/NSExtensionRequestHandling.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [NSTouchBarProvider](../AppKit/NSTouchBarProvider.md)
-- [UIActivityItemsConfigurationProviding](../UIKit/UIActivityItemsConfigurationProviding.md)
-- [UIAppearanceContainer](../UIKit/UIAppearanceContainer.md)
-- [UIContentContainer](../UIKit/UIContentContainer.md)
-- [UIFocusEnvironment](../UIKit/UIFocusEnvironment.md)
-- [UIPasteConfigurationSupporting](../UIKit/UIPasteConfigurationSupporting.md)
-- [UIResponderStandardEditActions](../UIKit/UIResponderStandardEditActions.md)
-- [UIStateRestoring](../UIKit/UIStateRestoring.md)
-- [UITraitChangeObservable](../UIKit/UITraitChangeObservable-67e94.md)
-- [UITraitEnvironment](../UIKit/UITraitEnvironment.md)
-- [UIUserActivityRestoring](../UIKit/UIUserActivityRestoring.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCoding](../foundation/nscoding.md)
+- [NSExtensionRequestHandling](../foundation/nsextensionrequesthandling.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSTouchBarProvider](../appkit/nstouchbarprovider.md)
+- [UIActivityItemsConfigurationProviding](../uikit/uiactivityitemsconfigurationproviding.md)
+- [UIAppearanceContainer](../uikit/uiappearancecontainer.md)
+- [UIContentContainer](../uikit/uicontentcontainer.md)
+- [UIFocusEnvironment](../uikit/uifocusenvironment.md)
+- [UIPasteConfigurationSupporting](../uikit/uipasteconfigurationsupporting.md)
+- [UIResponderStandardEditActions](../uikit/uiresponderstandardeditactions.md)
+- [UIStateRestoring](../uikit/uistaterestoring.md)
+- [UITraitChangeObservable](../uikit/uitraitchangeobservable-67e94.md)
+- [UITraitEnvironment](../uikit/uitraitenvironment.md)
+- [UIUserActivityRestoring](../uikit/uiuseractivityrestoring.md)
 
 ## See Also
 
-- [protocol QLPreviewItem](../QuickLookUI/QLPreviewItem.md)
+- [protocol QLPreviewItem](../quicklookui/qlpreviewitem.md)
   A protocol that defines a set of properties you implement to make a preview of your application’s content.
 - [class QLPreviewSceneActivationConfiguration](qlpreviewsceneactivationconfiguration.md)
   A scene configuration to preview items at the specified URLs.

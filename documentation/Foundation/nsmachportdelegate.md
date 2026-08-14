@@ -33,7 +33,7 @@ Delegates of [`NSMachPort`](nsmachport.md) objects optionally adopt this protoco
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 - [PortDelegate](portdelegate.md)
 
 ## See Also

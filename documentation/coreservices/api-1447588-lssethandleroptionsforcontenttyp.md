@@ -26,7 +26,7 @@ Thread-safe since OS X v10.4.
 ## Parameters
 
 - `inContentType`: The content type for which the handler options are to be set. The content type is a uniform type identifier (UTI).
-- `inOptions`: The handler options to set. For possible values, see  .
+- `inOptions`: The handler options to set. For possible values, see [`LSHandlerOptions`](lshandleroptions.md).
 
 ## See Also
 

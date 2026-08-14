@@ -27,7 +27,7 @@ A view that runs the specified action asynchronously before the view appears, or
 
 #### Discussion
 
-This method behaves like `View/task(priority:_:)`, except that it also cancels and recreates the task when a specified value changes. To detect a change, the modifier tests whether a new value for the `id` parameter equals the previous value. For this to work, the value’s type must conform to the [`Equatable`](https://developer.apple.com/documentation/Swift/Equatable) protocol.
+This method behaves like `View/task(priority:_:)`, except that it also cancels and recreates the task when a specified value changes. To detect a change, the modifier tests whether a new value for the `id` parameter equals the previous value. For this to work, the value’s type must conform to the [`Equatable`](https://developer.apple.com/documentation/swift/equatable) protocol.
 
 For example, if you define an equatable `Server` type that posts custom notifications whenever its state changes — for example, from *signed out* to *signed in* — you can use the task modifier to update the contents of a [`Text`](text.md) view to reflect the state of the currently selected server:
 
@@ -46,7 +46,7 @@ Text(status ?? "Signed Out")
     }
 ```
 
-This example uses the [`notifications(named:object:)`](https://developer.apple.com/documentation/Foundation/NotificationCenter/notifications(named:object:)) method to create an asynchronous sequence of notifications, given by an [`AsyncSequence`](https://developer.apple.com/documentation/Swift/AsyncSequence) instance. The example then maps the notification sequence to a sequence of strings that correspond to values stored with each notification.
+This example uses the [`notifications(named:object:)`](https://developer.apple.com/documentation/foundation/notificationcenter/notifications(named:object:)) method to create an asynchronous sequence of notifications, given by an [`AsyncSequence`](https://developer.apple.com/documentation/swift/asyncsequence) instance. The example then maps the notification sequence to a sequence of strings that correspond to values stored with each notification.
 
 Elsewhere, the server defines a custom `didUpdateStatus` notification:
 
@@ -74,9 +74,9 @@ The task is created by `Task.immediate`. Its action begins execution synchronous
 
 ## Parameters
 
-- `id`: The value to observe for changes. The value must conform to the [`Equatable`](https://developer.apple.com/documentation/Swift/Equatable) protocol.
+- `id`: The value to observe for changes. The value must conform to the [`Equatable`](https://developer.apple.com/documentation/swift/equatable) protocol.
 - `name`: Human readable name for the task. A name will be generated if this argument is `nil`. This value is a no-op prior to iOS 26.4, macOS 26.4, watchOS 26.4, tvOS 26.4, and visionOS 26.4.
-- `priority`: The task priority to use when creating the asynchronous task. The default priority is [`userInitiated`](https://developer.apple.com/documentation/Swift/TaskPriority/userInitiated).
+- `priority`: The task priority to use when creating the asynchronous task. The default priority is [`userInitiated`](https://developer.apple.com/documentation/swift/taskpriority/userinitiated).
 - `file`: File name used in default task name. SwiftUI uses the callsite of .task by default. This value is a no-op prior to iOS 26.4, macOS 26.4, watchOS 26.4, tvOS 26.4, and visionOS 26.4.
 - `line`: Line number used in default task name. SwiftUI uses the callsite of .task by default. This value is a no-op prior to iOS 26.4, macOS 26.4, watchOS 26.4, tvOS 26.4, and visionOS 26.4.
 - `action`: A closure that SwiftUI calls as an asynchronous task before the view appears. SwiftUI can automatically cancel the task after the view disappears before the action completes. If the `id` value changes, SwiftUI cancels and restarts the task.

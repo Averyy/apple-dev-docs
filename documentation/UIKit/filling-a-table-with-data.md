@@ -10,7 +10,7 @@ Table views are data-driven elements of your interface. You provide your app’s
 
 Table views organize your data into rows and sections. Rows display individual data items, and sections group related rows together. Sections aren’t required, but they’re a good way to organize data that’s already hierarchical. For example, the Contacts app displays the name of each contact in a row, and groups rows into sections based on the first letter of the person’s last name.
 
-![Illustration showing the Contacts app. Sections in the main table of the Contacts app correspond to letters of the alphabet. Rows correspond to individual contacts.](https://docs-assets.developer.apple.com/published/716ef5e53d97bc3630380a6c3a5a7c51/filling-a-table-with-data-1%402x.png)
+![Illustration showing the Contacts app. Sections in the main table of the Contacts app correspond to letters of the alphabet. Rows correspond to individual contacts.](/images/com.apple.uikit/filling-a-table-with-data-1@2x.png)
 
 ##### Provide the Numbers of Rows and Sections
 
@@ -47,7 +47,7 @@ When you add a table view to your app’s interface, it includes one prototype c
 
 The following illustration shows a table with two prototype cells, each of which uses one of the standard cell styles.
 
-![Illustration showing a table with two prototype cells in the Xcode storyboard editor.](https://docs-assets.developer.apple.com/published/af11edfd0856ca8bff5973faec0d1652/filling-a-table-with-data-2%402x.png)
+![Illustration showing a table with two prototype cells in the Xcode storyboard editor.](/images/com.apple.uikit/filling-a-table-with-data-2@2x.png)
 
 In your storyboard file, perform the following actions for each prototype cell:
 

@@ -41,7 +41,7 @@ HStack {
 
 The third circle takes up space, because it’s still present, but SwiftUI doesn’t draw it onscreen.
 
-![A row of circles with the letters A, B, and D, with a gap where](https://docs-assets.developer.apple.com/published/d79a92c97a4a28746e19c2b6af8be481/SwiftUI-View-hidden-1%402x.png)
+![A row of circles with the letters A, B, and D, with a gap where](/images/com.apple.SwiftUI/SwiftUI-View-hidden-1@2x.png)
 
 If you want to conditionally include a view in the view hierarchy, use an `if` statement instead:
 
@@ -61,7 +61,7 @@ VStack {
 
 Depending on the current value of the `isHidden` state variable in the example above, controlled by the [`Toggle`](toggle.md) instance, SwiftUI draws the circle or completely omits it from the layout.
 
-![Two side by side groups of items, each composed of a toggle beneath](https://docs-assets.developer.apple.com/published/8866e42876ae9fb1eaf66d61c87cabb0/SwiftUI-View-hidden-2%402x.png)
+![Two side by side groups of items, each composed of a toggle beneath](/images/com.apple.SwiftUI/SwiftUI-View-hidden-2@2x.png)
 
 ## See Also
 

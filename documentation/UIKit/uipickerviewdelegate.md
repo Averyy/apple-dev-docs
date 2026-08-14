@@ -47,7 +47,7 @@ See [`UIPickerView`](uipickerview.md) for a discussion of components, rows, row 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 ### Inherited By
 - [UIPickerViewAccessibilityDelegate](uipickerviewaccessibilitydelegate.md)
 

@@ -44,7 +44,7 @@ protocol GCDirectionPadElement : GCPhysicalInputElement
 
 ### Inherits From
 - [GCPhysicalInputElement](gcphysicalinputelement.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

@@ -182,25 +182,25 @@ If your layout object supports more fine-grained invalidation than the [`NSColle
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Inherited By
 - [NSCollectionViewCompositionalLayout](nscollectionviewcompositionallayout.md)
 - [NSCollectionViewFlowLayout](nscollectionviewflowlayout.md)
 - [NSCollectionViewGridLayout](nscollectionviewgridlayout.md)
 - [NSCollectionViewTransitionLayout](nscollectionviewtransitionlayout.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCoding](../Foundation/NSCoding.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [Sendable](../Swift/Sendable.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCoding](../foundation/nscoding.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [Sendable](../swift/sendable.md)
 
 ## See Also
 
-- [Implementing modern collection views](../UIKit/implementing-modern-collection-views.md)
+- [Implementing modern collection views](../uikit/implementing-modern-collection-views.md)
   Bring compositional layouts to your app and simplify updating your user interface with diffable data sources.
 - [class NSCollectionViewFlowLayout](nscollectionviewflowlayout.md)
   A layout that organizes items into a flexible and configurable arrangement.

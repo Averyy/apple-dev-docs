@@ -27,8 +27,8 @@ When your app intent encounters an error during execution, throw an `AppIntentEr
 You can create an `AppIntentError` in several ways:
 
 - **Predefined errors**: Use values from [`AppIntentError.PermissionRequired`](appintenterror/permissionrequired.md), [`AppIntentError.UserActionRequired`](appintenterror/useractionrequired.md), or [`AppIntentError.Unrecoverable`](appintenterror/unrecoverable.md) for common failure scenarios that the system already knows how to handle.
-- **Wrapping a custom error**: If your error type conforms to [`CustomLocalizedStringResourceConvertible`](https://developer.apple.com/documentation/Foundation/CustomLocalizedStringResourceConvertible), pass it to `init(wrapping:)` to provide a localized description.
-- **Description string**: Create an error with a localized description directly from a [`LocalizedStringResource`](https://developer.apple.com/documentation/Foundation/LocalizedStringResource) and pass it to [`init(description:)`](appintenterror/init(description:).md).
+- **Wrapping a custom error**: If your error type conforms to [`CustomLocalizedStringResourceConvertible`](https://developer.apple.com/documentation/foundation/customlocalizedstringresourceconvertible), pass it to `init(wrapping:)` to provide a localized description.
+- **Description string**: Create an error with a localized description directly from a [`LocalizedStringResource`](https://developer.apple.com/documentation/foundation/localizedstringresource) and pass it to [`init(description:)`](appintenterror/init(description:).md).
 
 The recommended approach for most apps is to define an error enumeration that conforms to `CustomLocalizedStringResourceConvertible` and throw it from your intent's `AppIntent/perform()`` method. The framework automatically wraps conforming errors into an `AppIntentError` with the localized description you provide.
 
@@ -58,14 +58,14 @@ The recommended approach for most apps is to define an error enumeration that co
 ## Relationships
 
 ### Conforms To
-- [Copyable](../Swift/Copyable.md)
-- [CustomLocalizedStringResourceConvertible](../Foundation/CustomLocalizedStringResourceConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Error](../Swift/Error.md)
-- [Escapable](../Swift/Escapable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Copyable](../swift/copyable.md)
+- [CustomLocalizedStringResourceConvertible](../foundation/customlocalizedstringresourceconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Error](../swift/error.md)
+- [Escapable](../swift/escapable.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

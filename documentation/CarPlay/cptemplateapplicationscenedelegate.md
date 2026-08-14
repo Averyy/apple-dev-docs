@@ -25,7 +25,7 @@ protocol CPTemplateApplicationSceneDelegate : UISceneDelegate
 
 This protocol defines methods that CarPlay calls when the scene connects and disconnects, as well as methods for responding to certain user actions. Use your implementation to provide the appropriate behavior for when these events occur. For example, creating and setting your root template when CarPlay launches your app and connects its scene.
 
-You don’t create instances of your scene delegate directly. Instead, you specify the name of the class as part of the CarPlay scene configuration you add to your `Info.plist` file—see the example below—or that you return from your app delegate’s [`application(_:configurationForConnecting:options:)`](https://developer.apple.com/documentation/UIKit/UIApplicationDelegate/application(_:configurationForConnecting:options:))  method.
+You don’t create instances of your scene delegate directly. Instead, you specify the name of the class as part of the CarPlay scene configuration you add to your `Info.plist` file—see the example below—or that you return from your app delegate’s [`application(_:configurationForConnecting:options:)`](https://developer.apple.com/documentation/uikit/uiapplicationdelegate/application(_:configurationforconnecting:options:))  method.
 
 ```plist
 <key>CPTemplateApplicationSceneSessionRoleApplication</key>
@@ -64,8 +64,8 @@ You don’t create instances of your scene delegate directly. Instead, you speci
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [UISceneDelegate](../UIKit/UISceneDelegate.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [UISceneDelegate](../uikit/uiscenedelegate.md)
 
 ## See Also
 

@@ -70,25 +70,25 @@ Set these traits to tell an assistive app how an accessibility element behaves o
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../Swift/BitwiseCopyable.md)
-- [Copyable](../Swift/Copyable.md)
-- [Equatable](../Swift/Equatable.md)
-- [Escapable](../Swift/Escapable.md)
-- [ExpressibleByArrayLiteral](../Swift/ExpressibleByArrayLiteral.md)
-- [Hashable](../Swift/Hashable.md)
-- [OptionSet](../Swift/OptionSet.md)
-- [RawRepresentable](../Swift/RawRepresentable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
-- [SetAlgebra](../Swift/SetAlgebra.md)
+- [BitwiseCopyable](../swift/bitwisecopyable.md)
+- [Copyable](../swift/copyable.md)
+- [Equatable](../swift/equatable.md)
+- [Escapable](../swift/escapable.md)
+- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
+- [Hashable](../swift/hashable.md)
+- [OptionSet](../swift/optionset.md)
+- [RawRepresentable](../swift/rawrepresentable.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
+- [SetAlgebra](../swift/setalgebra.md)
 
 ## See Also
 
-- [var isAccessibilityElement: Bool](../ObjectiveC/NSObject-swift.class/isAccessibilityElement.md)
-- [var accessibilityLabel: String?](../ObjectiveC/NSObject-swift.class/accessibilityLabel.md)
-- [var accessibilityValue: String?](../ObjectiveC/NSObject-swift.class/accessibilityValue.md)
-- [var accessibilityHint: String?](../ObjectiveC/NSObject-swift.class/accessibilityHint.md)
-- [var accessibilityTraits: UIAccessibilityTraits](../ObjectiveC/NSObject-swift.class/accessibilityTraits.md)
+- [var isAccessibilityElement: Bool](../objectivec/nsobject-swift.class/isaccessibilityelement.md)
+- [var accessibilityLabel: String?](../objectivec/nsobject-swift.class/accessibilitylabel.md)
+- [var accessibilityValue: String?](../objectivec/nsobject-swift.class/accessibilityvalue.md)
+- [var accessibilityHint: String?](../objectivec/nsobject-swift.class/accessibilityhint.md)
+- [var accessibilityTraits: UIAccessibilityTraits](../objectivec/nsobject-swift.class/accessibilitytraits.md)
 
 
 ---

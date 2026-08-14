@@ -22,7 +22,7 @@ static let angle: SCNParticleSystem.ParticleProperty
 
 #### Discussion
 
-This property’s value is a floating-point scalar (an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) object for particle property controllers, or a single `float` value for particle event or modifier blocks).
+This property’s value is a floating-point scalar (an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) object for particle property controllers, or a single `float` value for particle event or modifier blocks).
 
 The particle system’s [`particleAngle`](scnparticlesystem/particleangle.md) and [`particleAngleVariation`](scnparticlesystem/particleanglevariation.md) properties determine the initial rotation for each particle. The [`rotationAxis`](scnparticlesystem/particleproperty/rotationaxis.md) property defines the particle’s rotation axis.
 

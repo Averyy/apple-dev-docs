@@ -27,7 +27,7 @@ A new, transformed depth data object.
 
 When applying simple 90-degree rotation or mirroring edits to media containing depth data, you may use this method to create a derivative copy of the depth in which the specified orientation is applied to both the underlying pixel map data and the camera calibration data. This method throws an exception if you pass an unrecognized `exifOrientation` value.
 
-A depth data object does not contain orientation metadata; this method assumes the data is in the default [`CGImagePropertyOrientation.up`](https://developer.apple.com/documentation/ImageIO/CGImagePropertyOrientation/up) orientation and applies the transformation necessary to produce the orientation you specify.
+A depth data object does not contain orientation metadata; this method assumes the data is in the default [`CGImagePropertyOrientation.up`](https://developer.apple.com/documentation/imageio/cgimagepropertyorientation/up) orientation and applies the transformation necessary to produce the orientation you specify.
 
 ## Parameters
 

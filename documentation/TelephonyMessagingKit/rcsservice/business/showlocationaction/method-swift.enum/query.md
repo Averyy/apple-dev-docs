@@ -7,7 +7,6 @@ Search for location(s) by query.
 
 **Availability**:
 - iOS 26.0+
-- iPadOS 26.0+
 
 ## Declaration
 
@@ -23,7 +22,7 @@ Search is based on user’s current location. Examples: “restaurants”, “GS
 
 - [RCSService.Business.ShowLocationAction.Method.coordinates(_:)](rcsservice/business/showlocationaction/method-swift.enum/coordinates(_:).md)
   Search for location using coordinates.
-- [struct CLLocationCoordinate2D](../CoreLocation/CLLocationCoordinate2D.md)
+- [struct CLLocationCoordinate2D](../corelocation/cllocationcoordinate2d.md)
   The latitude and longitude associated with a location, specified using the WGS 84 reference frame.
 
 

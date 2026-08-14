@@ -16,7 +16,7 @@ static let ctm: NSImageRep.HintKey
 
 #### Discussion
 
-The value for this key is an [`NSAffineTransform`](https://developer.apple.com/documentation/Foundation/NSAffineTransform).
+The value for this key is an [`NSAffineTransform`](https://developer.apple.com/documentation/foundation/nsaffinetransform).
 
 ## See Also
 

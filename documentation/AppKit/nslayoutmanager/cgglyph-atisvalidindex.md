@@ -16,7 +16,7 @@ func cgGlyph(at glyphIndex: Int, isValidIndex: UnsafeMutablePointer<ObjCBool>?) 
 
 #### Return Value
 
-The glyph at the specified index or [`kCGFontIndexInvalid`](https://developer.apple.com/documentation/CoreGraphics/kCGFontIndexInvalid) if the index is out of range.
+The glyph at the specified index or [`kCGFontIndexInvalid`](https://developer.apple.com/documentation/coregraphics/kcgfontindexinvalid) if the index is out of range.
 
 #### Discussion
 
@@ -25,7 +25,7 @@ If noncontiguous layout is disabled, calling this method generates all glyphs up
 ## Parameters
 
 - `glyphIndex`: The index of the glyph that you want.
-- `isValidIndex`: An optional Boolean variable. On return, the variable is set to [`true`](https://developer.apple.com/documentation/Swift/true) if the glyph index is valid or [`false`](https://developer.apple.com/documentation/Swift/false) if it is not.
+- `isValidIndex`: An optional Boolean variable. On return, the variable is set to [`true`](https://developer.apple.com/documentation/swift/true) if the glyph index is valid or [`false`](https://developer.apple.com/documentation/swift/false) if it is not.
 
 ## See Also
 

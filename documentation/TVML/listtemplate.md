@@ -8,7 +8,7 @@ Displays a list of items along one side of a page and the corresponding image on
 
 Use the `listTemplate` element to display a list of items; for example, a list of the user’s favorite movies. Whereas you use the catalog template to display categories of a product (action movies, comedies, favorite movies), you use the list template to display actual contents of one category, such as a list of the user’s favorite movies. The items are listed on the right side of the screen with like items grouped together in a section. A title providing a brief description of the items is contained in a header area directly above the listed items. When an item is selected, information about the item is displayed on the left side of the screen. The following figure shows the basic layout for a `listTemplate` page. The theme for the list template defaults to the system preference.
 
-![Layout diagram showing a banner area at the top, header and section areas on the right, and a related content area on the left.](https://docs-assets.developer.apple.com/published/78e33d9dce40fd1682e15869baef0fc5/listtemplate-1%402x.png)
+![Layout diagram showing a banner area at the top, header and section areas on the right, and a related content area on the left.](/images/com.apple.TVML/listtemplate-1@2x.png)
 
 ##### Main Elements
 
@@ -97,7 +97,7 @@ The following listing shows the TVML for a `listTemplate` example. An image and 
 
 The following figure shows the output for the above example:
 
-![Screenshot showing an example of a movie collection. A list of movies is on the right and an image of the selected movie is on the left.](https://docs-assets.developer.apple.com/published/23e1a38fac4fd450c81cb525b885fb6b/listtemplate-2%402x.png)
+![Screenshot showing an example of a movie collection. A list of movies is on the right and an image of the selected movie is on the left.](/images/com.apple.TVML/listtemplate-2@2x.png)
 
 ## Topics
 

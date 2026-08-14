@@ -54,7 +54,7 @@ struct StepperView: View {
 
 }
 
-![A view displaying a stepper that uses a text view for stepper’s title and that changes the background color of its view when incremented or decremented. The view selects the new background color from a predefined array of colors using the stepper’s value as the index.](https://docs-assets.developer.apple.com/published/454b319c800c954fe79070014aaa7d83/SwiftUI-Stepper-increment-decrement-closures%402x.png)
+![A view displaying a stepper that uses a text view for stepper’s title and that changes the background color of its view when incremented or decremented. The view selects the new background color from a predefined array of colors using the stepper’s value as the index.](/images/com.apple.SwiftUI/SwiftUI-Stepper-increment-decrement-closures@2x.png)
 
 ## Parameters
 

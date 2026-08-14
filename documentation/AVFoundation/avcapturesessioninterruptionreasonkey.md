@@ -20,7 +20,7 @@ let AVCaptureSessionInterruptionReasonKey: String
 
 #### Discussion
 
-The value for this key is an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) object containing a [`AVCaptureSession.InterruptionReason`](avcapturesession/interruptionreason.md) value.
+The value for this key is an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) object containing a [`AVCaptureSession.InterruptionReason`](avcapturesession/interruptionreason.md) value.
 
 ## See Also
 

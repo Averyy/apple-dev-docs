@@ -29,7 +29,7 @@ try await match.sendExchange(to: participants, data: data!, localizableMessageKe
 
 In the exchange data, provide enough game-specific information for recipients to decide whether to accept or decline the request.
 
-To localize the message, add the key you pass and a placeholder translation to a `.strings` file in your project (for example, the default `Localizable.strings` file). For more information about adapting your game for different languages and regions, see [`Localization`](https://developer.apple.com/documentation/Xcode/localization).
+To localize the message, add the key you pass and a placeholder translation to a `.strings` file in your project (for example, the default `Localizable.strings` file). For more information about adapting your game for different languages and regions, see [`Localization`](https://developer.apple.com/documentation/xcode/localization).
 
 ##### Respond to Exchange Requests
 
@@ -89,7 +89,7 @@ To update the gameplay interface and display the message when a participant canc
   Exchange request information that participants send in a turn-based match.
 - [class GKTurnBasedExchangeReply](gkturnbasedexchangereply.md)
   Details about a recipient’s response to an exchange request.
-- [GKGameCenterBadgingDisabled](../BundleResources/Information-Property-List/GKGameCenterBadgingDisabled.md)
+- [GKGameCenterBadgingDisabled](../bundleresources/information-property-list/gkgamecenterbadgingdisabled.md)
   A Boolean value indicating whether GameKit can add badges to a turn-based game icon.
 
 

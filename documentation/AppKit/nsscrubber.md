@@ -122,8 +122,8 @@ To specify a scrubber’s touch-interaction model, set values for the following,
 
 **Selection style.** Decide whether you want item selection to take place only upon a deliberate selection gesture, or continuously during horizontal finger movement on the scrubber.
 
-- For deliberate selection, specify a value of [`false`](https://developer.apple.com/documentation/Swift/false) for the scrubber’s [`isContinuous`](nsscrubber/iscontinuous.md) property (this is the default value). In *free* (scrolling) mode, the user must then tap an item to highlight and select it. In *fixed* (non-scrolling) mode, ending interaction with the scrubber, by lifting the finger, selects the most-recently highlighted item. However, if there is already a highlighted item before interaction starts, and the user resumes interacting with the (fixed mode) scrubber on that item, selection changes continuously, tracking the user’s finger — even though the [`isContinuous`](nsscrubber/iscontinuous.md) property value is [`false`](https://developer.apple.com/documentation/Swift/false).
-- For continuous selection, specify a value of [`true`](https://developer.apple.com/documentation/Swift/true) for the [`isContinuous`](nsscrubber/iscontinuous.md) property. Item selection behavior then depends on the [`mode`](nsscrubber/mode-swift.property.md) and [`itemAlignment`](nsscrubber/itemalignment.md) property values, as described in [`Position-based scrubber item selection`](nsscrubber#Position-based-scrubber-item-selection.md).
+- For deliberate selection, specify a value of [`false`](https://developer.apple.com/documentation/swift/false) for the scrubber’s [`isContinuous`](nsscrubber/iscontinuous.md) property (this is the default value). In *free* (scrolling) mode, the user must then tap an item to highlight and select it. In *fixed* (non-scrolling) mode, ending interaction with the scrubber, by lifting the finger, selects the most-recently highlighted item. However, if there is already a highlighted item before interaction starts, and the user resumes interacting with the (fixed mode) scrubber on that item, selection changes continuously, tracking the user’s finger — even though the [`isContinuous`](nsscrubber/iscontinuous.md) property value is [`false`](https://developer.apple.com/documentation/swift/false).
+- For continuous selection, specify a value of [`true`](https://developer.apple.com/documentation/swift/true) for the [`isContinuous`](nsscrubber/iscontinuous.md) property. Item selection behavior then depends on the [`mode`](nsscrubber/mode-swift.property.md) and [`itemAlignment`](nsscrubber/itemalignment.md) property values, as described in [`Position-based scrubber item selection`](nsscrubber#Position-based-scrubber-item-selection.md).
 
 **Item alignment.** The setting in the scrubber’s [`itemAlignment`](nsscrubber/itemalignment.md) property affects two things: 1) item highlighting and selection, and 2) the resting position of scrubber items after manual or automatic scrolling. Available values for this property are [`NSScrubber.Alignment.leading`](nsscrubber/alignment/leading.md), [`NSScrubber.Alignment.center`](nsscrubber/alignment/center.md), [`NSScrubber.Alignment.trailing`](nsscrubber/alignment/trailing.md), and [`NSScrubber.Alignment.none`](nsscrubber/alignment/none.md). See the [`NSScrubber.Alignment`](nsscrubber/alignment.md) enumeration for details on how these constants work.
 
@@ -185,7 +185,7 @@ You can specify layout life cycle in terms of the conditions under which a layou
 - [`shouldInvalidateLayoutForHighlightChange`](nsscrubberlayout/shouldinvalidatelayoutforhighlightchange.md)
 - [`shouldInvalidateLayoutForChange(fromVisibleRect:toVisibleRect:)`](nsscrubberlayout/shouldinvalidatelayoutforchange(fromvisiblerect:tovisiblerect:).md)
 
-For example, if you design a scrubber’s layout characteristics to depend on which of its items is selected by the user, return a value of [`true`](https://developer.apple.com/documentation/Swift/true) from the scrubber’s [`shouldInvalidateLayoutForSelectionChange`](nsscrubberlayout/shouldinvalidatelayoutforselectionchange.md) method.A *layout attributes* object is an instance of the [`NSScrubberLayoutAttributes`](nsscrubberlayoutattributes.md) class, which you configure to describe the view for a single item. The class offers the following built-in attributes for you to work with:
+For example, if you design a scrubber’s layout characteristics to depend on which of its items is selected by the user, return a value of [`true`](https://developer.apple.com/documentation/swift/true) from the scrubber’s [`shouldInvalidateLayoutForSelectionChange`](nsscrubberlayout/shouldinvalidatelayoutforselectionchange.md) method.A *layout attributes* object is an instance of the [`NSScrubberLayoutAttributes`](nsscrubberlayoutattributes.md) class, which you configure to describe the view for a single item. The class offers the following built-in attributes for you to work with:
 
 - [`itemIndex`](nsscrubberlayoutattributes/itemindex.md) — The item’s index position within the scrubber
 - [`frame`](nsscrubberlayoutattributes/frame.md) — The item’s frame rectangle
@@ -300,24 +300,24 @@ When choosing between a scrubber and a scroll view, use a scrubber unless the am
 ### Inherits From
 - [NSView](nsview.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
 - [NSAccessibilityElementProtocol](nsaccessibilityelementprotocol.md)
 - [NSAccessibilityProtocol](nsaccessibilityprotocol.md)
 - [NSAnimatablePropertyContainer](nsanimatablepropertycontainer.md)
 - [NSAppearanceCustomization](nsappearancecustomization.md)
-- [NSCoding](../Foundation/NSCoding.md)
+- [NSCoding](../foundation/nscoding.md)
 - [NSDraggingDestination](nsdraggingdestination.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 - [NSStandardKeyBindingResponding](nsstandardkeybindingresponding.md)
 - [NSTouchBarProvider](nstouchbarprovider.md)
 - [NSUserActivityRestoring](nsuseractivityrestoring.md)
 - [NSUserInterfaceItemIdentification](nsuserinterfaceitemidentification.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

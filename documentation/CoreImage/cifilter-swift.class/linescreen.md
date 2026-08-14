@@ -30,10 +30,10 @@ This method applies a line screen filter to an image. The effect generates a mon
 The line screen filter uses the following properties:
 
 - **`inputImage`**: An image with the type [`CIImage`](ciimage.md).
-- **`center`**: A set of coordinates marking the center of the image as a [`CGPoint`](https://developer.apple.com/documentation/CoreFoundation/CGPoint).
-- **`angle`**: A `float` representing the angle of the pattern as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
-- **`width`**: A `float` representing the distance between lines in the pattern as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
-- **`sharpness`**: A `float` representing the sharpness of the pattern as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+- **`center`**: A set of coordinates marking the center of the image as a [`CGPoint`](https://developer.apple.com/documentation/corefoundation/cgpoint).
+- **`angle`**: A `float` representing the angle of the pattern as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
+- **`width`**: A `float` representing the distance between lines in the pattern as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
+- **`sharpness`**: A `float` representing the sharpness of the pattern as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
 
 The following code creates a filter that creates a monochrome image containing small lines of detail on a black background:
 
@@ -49,7 +49,7 @@ func line(inputImage: CIImage) -> CIImage {
 }
 ```
 
-![Two photographs of a wooden barrel of green artichokes. The artichokes are crisp with good lighting. The photo one the left has no modifications to color or detail. In the photo on the right, a line screen filter is applied, resulting in a lighter, monochrome image with an overlay of lines, creating the detail of the image.](https://docs-assets.developer.apple.com/published/b2c9cf6cee60b0c0f5f8d6b9f5fb3e4a/media-3595915%402x.png)
+![Two photographs of a wooden barrel of green artichokes. The artichokes are crisp with good lighting. The photo one the left has no modifications to color or detail. In the photo on the right, a line screen filter is applied, resulting in a lighter, monochrome image with an overlay of lines, creating the detail of the image.](/images/com.apple.coreimage/media-3595915@2x.png)
 
 ## See Also
 

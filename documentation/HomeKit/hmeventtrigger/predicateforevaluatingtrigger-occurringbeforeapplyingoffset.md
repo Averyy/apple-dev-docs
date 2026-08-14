@@ -26,7 +26,7 @@ A predicate object that represents a condition to evaluate before executing the 
 ## Parameters
 
 - `significantEvent`: The significant event to compare against. Valid values for this parameter are `HMSignificantEventSunrise` and `HMSignificantEventSunset`.
-- `offset`: An offset from the time of the significant event. To specify an offset before a significant event, the properties of the [`NSDateComponents`](https://developer.apple.com/documentation/Foundation/NSDateComponents) object must be negative values. For example, to specify 30 minutes before sunset, set the [`minute`](https://developer.apple.com/documentation/Foundation/NSDateComponents/minute) property to `-30`.
+- `offset`: An offset from the time of the significant event. To specify an offset before a significant event, the properties of the [`NSDateComponents`](https://developer.apple.com/documentation/foundation/nsdatecomponents) object must be negative values. For example, to specify 30 minutes before sunset, set the [`minute`](https://developer.apple.com/documentation/foundation/nsdatecomponents/minute) property to `-30`.
 
 ## See Also
 

@@ -23,11 +23,11 @@ case leftMirrored
 
 If an image is encoded with this orientation, then displayed by software unaware of orientation metadata, the image appears to be horizontally mirrored, then rotated 90° counter-clockwise. (That is, to present the image in its intended orientation, you can rotate it 90° clockwise, then flip horizontally.)
 
-![To correct an image with leftMirrored orientation for display, rotate it 90° clockwise then flip it horizontally.](https://docs-assets.developer.apple.com/published/ed7462784881f7d23e39b968a2ecefff/media-2948307%402x.png)
+![To correct an image with leftMirrored orientation for display, rotate it 90° clockwise then flip it horizontally.](/images/com.apple.uikit/media-2948307@2x.png)
 
 ## See Also
 
-- [CGImagePropertyOrientation.leftMirrored](../ImageIO/CGImagePropertyOrientation/leftMirrored.md)
+- [CGImagePropertyOrientation.leftMirrored](../imageio/cgimagepropertyorientation/leftmirrored.md)
   The encoded image data is horizontally flipped and rotated 90° counter-clockwise from the image’s intended display orientation.
 - [UIImage.Orientation.up](uiimage/orientation/up.md)
   The original pixel data matches the image’s intended display orientation.

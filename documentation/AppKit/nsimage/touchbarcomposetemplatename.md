@@ -19,7 +19,7 @@ class let touchBarComposeTemplateName: String
 
 #### Discussion
 
-![Template image for compose](https://docs-assets.developer.apple.com/published/6e23a58e023bbbedb9be456f3e972a9f/media-2793505%402x.png)
+![Template image for compose](/images/com.apple.appkit/media-2793505@2x.png)
 
 Touch Bar template images are exclusively for use in [`NSTouchBarItem`](nstouchbaritem.md) objects and not in onscreen windows.
 

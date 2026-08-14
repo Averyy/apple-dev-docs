@@ -12,9 +12,9 @@ Adopting ClassKit allows your app to participate in a virtual classroom that spa
 
 To gain access to the virtual classroom environment, enable the ClassKit capability for your app in Xcode.
 
-![Screenshot showing the ClassKit capability enabled in Xcode.](https://docs-assets.developer.apple.com/published/885993173db889f00c58ec1d7a60f602/media-2977078%402x.png)
+![Screenshot showing the ClassKit capability enabled in Xcode.](/images/com.apple.classkit/media-2977078@2x.png)
 
-When you enable the ClassKit capability, Xcode automatically adds the [`ClassKit Environment Entitlement`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.ClassKit-environment) to your entitlements file. It also adds the corresponding feature to your App ID. See [`Add a Capability`](https://developer.apple.comhttps://help.apple.com/xcode/mac/current/#/dev88ff319e7) in Xcode help for more information about enabling capabilities.
+When you enable the ClassKit capability, Xcode automatically adds the [`ClassKit Environment Entitlement`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.classkit-environment) to your entitlements file. It also adds the corresponding feature to your App ID. See [`Add a Capability`](https://developer.apple.comhttps://help.apple.com/xcode/mac/current/#/dev88ff319e7) in Xcode help for more information about enabling capabilities.
 
 ##### Install the Schoolwork App on Your Devices
 
@@ -41,7 +41,7 @@ When you distribute your ClassKit enabled app through the App Store, it runs in 
 
 ## See Also
 
-- [ClassKit Environment Entitlement](../BundleResources/Entitlements/com.apple.developer.ClassKit-environment.md)
+- [ClassKit Environment Entitlement](../bundleresources/entitlements/com.apple.developer.classkit-environment.md)
   The ClassKit development or production environment for an education app that works with the Schoolwork app.
 - [Incorporating ClassKit into an Educational App](incorporating-classkit-into-an-educational-app.md)
   Walk through the process of setting up assignments and recording student progress.

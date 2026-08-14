@@ -19,7 +19,7 @@ class let touchBarOpenInBrowserTemplateName: String
 
 #### Discussion
 
-![Template image for open in browser](https://docs-assets.developer.apple.com/published/5e851147a08f1412f27228597bfb8033/media-2825125%402x.png)
+![Template image for open in browser](/images/com.apple.appkit/media-2825125@2x.png)
 
 Touch Bar template images are exclusively for use in [`NSTouchBarItem`](nstouchbaritem.md) objects and not in onscreen windows.
 

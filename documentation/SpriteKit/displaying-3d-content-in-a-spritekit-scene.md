@@ -6,7 +6,7 @@ Draw SceneKit content in a SpriteKit scene by using a 3D node.
 
 #### Overview
 
-SceneKit content rendered in SpriteKit is automatically assigned a camera and, because [`autoenablesDefaultLighting`](sk3dnode/autoenablesdefaultlighting.md) defaults to [`true`](https://developer.apple.com/documentation/Swift/true), lights. That means you require very little code to add simple 3D primitives to your scene. The following code shows how to create a simple scene containing a torus and display it in a SpriteKit scene.
+SceneKit content rendered in SpriteKit is automatically assigned a camera and, because [`autoenablesDefaultLighting`](sk3dnode/autoenablesdefaultlighting.md) defaults to [`true`](https://developer.apple.com/documentation/swift/true), lights. That means you require very little code to add simple 3D primitives to your scene. The following code shows how to create a simple scene containing a torus and display it in a SpriteKit scene.
 
 ```swift
 let scnScene: SCNScene = {
@@ -25,7 +25,7 @@ node.scnScene = scnScene
 
 After node is added to a [`SKScene`](skscene.md), the 3D torus is visible:
 
-![SceneKit torus rendered in SpriteKit](https://docs-assets.developer.apple.com/published/317f4df1aa400a790e6776d1d28e9c09/media-2975459%402x.png)
+![SceneKit torus rendered in SpriteKit](/images/com.apple.spritekit/media-2975459@2x.png)
 
 ##### Control How Your Content Is Rendered
 
@@ -65,7 +65,7 @@ scene.enumerateChildNodes(withName: "3dnode") {
 
 The following image shows how this code gives the impression of perspective inside SpriteKit:
 
-![Top down perspective using SK3DNode](https://docs-assets.developer.apple.com/published/b9fb40b0a88164563095d4445fe3e8b9/media-3111362%402x.png)
+![Top down perspective using SK3DNode](/images/com.apple.spritekit/media-3111362@2x.png)
 
 
 ---

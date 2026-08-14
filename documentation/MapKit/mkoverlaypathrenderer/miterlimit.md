@@ -21,7 +21,7 @@ var miterLimit: CGFloat { get set }
 
 #### Discussion
 
-The miter limit helps you avoid spikes in paths that use the [`CGLineJoin.miter`](https://developer.apple.com/documentation/CoreGraphics/CGLineJoin/miter) join style. If the ratio of the miter length to the line thickness — the diagonal length of the miter join — exceeds the miter limit, the renderer converts the joint to a bevel join. The default miter limit is `10`, which results in the conversion of miters with an angle at the joint of less than `11` degrees.
+The miter limit helps you avoid spikes in paths that use the [`CGLineJoin.miter`](https://developer.apple.com/documentation/coregraphics/cglinejoin/miter) join style. If the ratio of the miter length to the line thickness — the diagonal length of the miter join — exceeds the miter limit, the renderer converts the joint to a bevel join. The default miter limit is `10`, which results in the conversion of miters with an angle at the joint of less than `11` degrees.
 
 ## See Also
 

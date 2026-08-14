@@ -21,7 +21,7 @@ The entitlement required for an executable to opt in to enhanced security protec
 
 The default value for this entitlement is the `*` wildcard.
 
-Xcode adds this entitlement to your app or extension when you add the Enhanced Security capability. Set this value to `2` or greater to turn on guard objects automatically. To turn off guard objects, add the [`com.apple.security.hardened-process.no-guard-objects`](entitlements/com.apple.security.hardened-process.no-guard-objects.md) entitlement. For more information, see [`Enabling enhanced security for your app`](https://developer.apple.com/documentation/Xcode/enabling-enhanced-security-for-your-app).
+Xcode adds this entitlement to your app or extension when you add the Enhanced Security capability. Set this value to `2` or greater to turn on guard objects automatically. To turn off guard objects, add the [`com.apple.security.hardened-process.no-guard-objects`](entitlements/com.apple.security.hardened-process.no-guard-objects.md) entitlement. For more information, see [`Enabling enhanced security for your app`](https://developer.apple.com/documentation/xcode/enabling-enhanced-security-for-your-app).
 
 > **Note**: This entitlement requires the following entitlement: - [`com.apple.security.hardened-process`](entitlements/com.apple.security.hardened-process.md)
 

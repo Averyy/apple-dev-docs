@@ -17,7 +17,7 @@ A dictionary with information about the receipt for the specified package.
 
 ## Parameters
 
-- `packageID`: String specifying a package identifier. For example,  .
+- `packageID`: String specifying a package identifier. For example, `com.apple.TextEdit.pkg`.
 
 
 ---

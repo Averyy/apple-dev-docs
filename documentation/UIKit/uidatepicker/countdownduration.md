@@ -19,7 +19,7 @@ var countDownDuration: TimeInterval { get set }
 
 #### Discussion
 
-Use this property to get and set the currently selected value when the date picker’s mode property is set to [`UIDatePicker.Mode.countDownTimer`](uidatepicker/mode/countdowntimer.md). This property is of type [`TimeInterval`](https://developer.apple.com/documentation/Foundation/TimeInterval) and therefore is measured in seconds, although the date picker displays only hours and minutes. If the mode of the date picker is not [`UIDatePicker.Mode.countDownTimer`](uidatepicker/mode/countdowntimer.md), this value is undefined; refer instead to the [`date`](uidatepicker/date.md) property. The default value is 0.0 and the maximum value is 23:59 (86,340 seconds).
+Use this property to get and set the currently selected value when the date picker’s mode property is set to [`UIDatePicker.Mode.countDownTimer`](uidatepicker/mode/countdowntimer.md). This property is of type [`TimeInterval`](https://developer.apple.com/documentation/foundation/timeinterval) and therefore is measured in seconds, although the date picker displays only hours and minutes. If the mode of the date picker is not [`UIDatePicker.Mode.countDownTimer`](uidatepicker/mode/countdowntimer.md), this value is undefined; refer instead to the [`date`](uidatepicker/date.md) property. The default value is 0.0 and the maximum value is 23:59 (86,340 seconds).
 
 ## See Also
 

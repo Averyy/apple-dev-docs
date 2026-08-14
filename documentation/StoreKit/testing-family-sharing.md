@@ -24,7 +24,7 @@ You can set the sharing status for each member of the Sandbox Test Family indivi
 - *Sharing* indicates the family member shares their in-app purchases with the Sandbox Test Family, and gets access to in-app purchases shared by family members.
 - *Not Sharing* indicates the family member isn’t sharing, and doesn’t get access to family-shared purchases. Changing the setting to Not Sharing revokes any family-shared purchases they have access to. In the test environment, turning off sharing is the equivalent of a family member leaving the group.
 
-![The settings page titled Family Sharing. The top of the page has a label that reads Sandbox Family Members. A list box lists five Sandbox Apple Accounts that comprise the Sandbox Test Family. Each Apple Account has a label underneath that reads Sharing. A link below the list is labeled Stop Sharing Purchases. ](https://docs-assets.developer.apple.com/published/08ba8ae02734a6799040e16023c5eeeb/media-4312484%402x.png)
+![The settings page titled Family Sharing. The top of the page has a label that reads Sandbox Family Members. A list box lists five Sandbox Apple Accounts that comprise the Sandbox Test Family. Each Apple Account has a label underneath that reads Sharing. A link below the list is labeled Stop Sharing Purchases. ](/images/com.apple.storekit/media-4312484@2x.png)
 
 Modify the sharing status on the Family Sharing page in iOS by following these steps:
 
@@ -47,7 +47,7 @@ To test family members gaining access to a shared purchase:
 2. In your app, purchase a shareable product.
 3. Open your app on a device signed in with the Sandbox Apple Account of another test family member.
 4. Verify that your app receives a transaction for the shared purchase and unlocks the content for the family member. Note that the transaction has a [`familyShared`](transaction/ownershiptype-swift.struct/familyshared.md) ownership type.
-5. When sharing auto-renewable subscriptions, if you have [`App Store Server Notifications V2`](https://developer.apple.com/documentation/AppStoreServerNotifications/App-Store-Server-Notifications-V2) enabled in the sandbox environment, your server receives a notification for each test family member that has sharing enabled. For more information, see the `SUBSCRIBED` [`notificationType`](https://developer.apple.com/documentation/AppStoreServerNotifications/notificationType).
+5. When sharing auto-renewable subscriptions, if you have [`App Store Server Notifications V2`](https://developer.apple.com/documentation/appstoreservernotifications/app-store-server-notifications-v2) enabled in the sandbox environment, your server receives a notification for each test family member that has sharing enabled. For more information, see the `SUBSCRIBED` [`notificationType`](https://developer.apple.com/documentation/appstoreservernotifications/notificationtype).
 
 ##### Test Revoked Access to Shared in App Purchases
 
@@ -57,7 +57,7 @@ To test a family member losing access to shared purchases:
 2. In Account Settings > Family Sharing, select a test family member that is receiving access to a shared in-app purchase.
 3. Select Stop Sharing Purchases, and Stop Sharing to confirm.
 4. The test family member loses accesses to shared purchases. Open your app using their Sandbox Apple Account and confirm that your app receives an updated transaction that includes a [`revocationDate`](transaction/revocationdate.md) and [`revocationReason`](transaction/revocationreason-swift.property.md).
-5. If you have [`App Store Server Notifications V2`](https://developer.apple.com/documentation/AppStoreServerNotifications/App-Store-Server-Notifications-V2) enabled in the sandbox environment, your server receives a `REVOKE` [`notificationType`](https://developer.apple.com/documentation/AppStoreServerNotifications/notificationType) for the test family member that has sharing disabled.
+5. If you have [`App Store Server Notifications V2`](https://developer.apple.com/documentation/appstoreservernotifications/app-store-server-notifications-v2) enabled in the sandbox environment, your server receives a `REVOKE` [`notificationType`](https://developer.apple.com/documentation/appstoreservernotifications/notificationtype) for the test family member that has sharing disabled.
 
 Note that you can also change the sharing status using App Store Connect instead of Account Settings in iOS.
 

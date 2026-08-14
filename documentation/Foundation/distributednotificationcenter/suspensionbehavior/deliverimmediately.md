@@ -15,7 +15,7 @@ case deliverImmediately
 
 #### Discussion
 
-The server delivers notifications matching this registration irrespective of whether [`suspended`](distributednotificationcenter/suspended.md) with an argument of [`true`](https://developer.apple.com/documentation/Swift/true) has been called. When a notification with this suspension behavior is matched, it has the effect of first flushing any queued notifications. The effect is as if [`suspended`](distributednotificationcenter/suspended.md) with an argument of [`false`](https://developer.apple.com/documentation/Swift/false) were first called if the application is suspended, followed by the notification in question being delivered, followed by a transition back to the previous suspended or unsuspended state.
+The server delivers notifications matching this registration irrespective of whether [`suspended`](distributednotificationcenter/suspended.md) with an argument of [`true`](https://developer.apple.com/documentation/swift/true) has been called. When a notification with this suspension behavior is matched, it has the effect of first flushing any queued notifications. The effect is as if [`suspended`](distributednotificationcenter/suspended.md) with an argument of [`false`](https://developer.apple.com/documentation/swift/false) were first called if the application is suspended, followed by the notification in question being delivered, followed by a transition back to the previous suspended or unsuspended state.
 
 ## See Also
 

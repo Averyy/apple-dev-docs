@@ -34,7 +34,7 @@ See the `getxattr(2)` man page for information on getting extended attributes.
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../Swift/BitwiseCopyable.md)
+- [BitwiseCopyable](../swift/bitwisecopyable.md)
 
 ## See Also
 

@@ -12,7 +12,7 @@ You use a player to manage the playback and timing of a media asset, for example
 
 You create an instance of [`AVPlayerItem`](avplayeritem.md) to play a media asset. A player item manages the timing and presentation state of an asset played by the player. A player item also contains player item tracks that correspond to the tracks in the asset. You direct the output of a player to a specialized Core Animation layer, a player layer, or a synchronized layer.
 
-> ❗ **Important**:  You must call the [`VTRegisterProfessionalVideoWorkflowVideoDecoders()`](https://developer.apple.com/documentation/VideoToolbox/VTRegisterProfessionalVideoWorkflowVideoDecoders()) function if your app requires Afterburner accelerated playback and decoding of ProRes and ProRes RAW video files.
+> ❗ **Important**:  You must call the [`VTRegisterProfessionalVideoWorkflowVideoDecoders()`](https://developer.apple.com/documentation/videotoolbox/vtregisterprofessionalvideoworkflowvideodecoders()) function if your app requires Afterburner accelerated playback and decoding of ProRes and ProRes RAW video files.
 
 ## Topics
 
@@ -37,7 +37,7 @@ You create an instance of [`AVPlayerItem`](avplayeritem.md) to play a media asse
 - [class AVPlayerLooper](avplayerlooper.md)
   An object that loops media content using a queue player.
 ### SharePlay
-- [Destination Video](../visionOS/destination-video.md)
+- [Destination Video](../visionos/destination-video.md)
   Leverage SwiftUI to build an immersive media experience in a multiplatform app.
 - [Supporting coordinated media playback](supporting-coordinated-media-playback.md)
   Create synchronized media experiences that enable users to watch and listen across devices.

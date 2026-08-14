@@ -41,8 +41,8 @@ struct TransformerToEstimatorAdaptor<Transformer> where Transformer : Transforme
 
 ### Conforms To
 - [Estimator](estimator.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

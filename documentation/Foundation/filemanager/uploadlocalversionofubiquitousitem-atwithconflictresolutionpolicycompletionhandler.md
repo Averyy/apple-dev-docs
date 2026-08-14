@@ -22,9 +22,9 @@ func uploadLocalVersionOfUbiquitousItem(at url: URL, withConflictResolutionPolic
 
 Once your app pauses a sync for an item, call this method every time your document is in a stable state. This action keeps the server version as up-to-date as possible.
 
-If the server has a newer version than the one to which the app made changes, uploading fails with [`NSFileWriteUnknownError`](nsfilewriteunknownerror-c.enum.case.md), with an underlying error of [`localVersionConflictingWithServer`](https://developer.apple.com/documentation/FileProvider/NSFileProviderError/localVersionConflictingWithServer). In this case, call [`fetchLatestRemoteVersionOfItem(at:completionHandler:)`](filemanager/fetchlatestremoteversionofitem(at:completionhandler:).md), rebase local changes on top of that version, and retry the upload.
+If the server has a newer version than the one to which the app made changes, uploading fails with [`NSFileWriteUnknownError`](nsfilewriteunknownerror-c.enum.case.md), with an underlying error of [`localVersionConflictingWithServer`](https://developer.apple.com/documentation/fileprovider/nsfileprovidererror/localversionconflictingwithserver). In this case, call [`fetchLatestRemoteVersionOfItem(at:completionHandler:)`](filemanager/fetchlatestremoteversionofitem(at:completionhandler:).md), rebase local changes on top of that version, and retry the upload.
 
-If the device isn’t connected to the network, the call may fail with [`NSFileWriteUnknownError`](nsfilewriteunknownerror-c.enum.case.md), with the underlying error of [`serverUnreachable`](https://developer.apple.com/documentation/FileProvider/NSFileProviderError/serverUnreachable).
+If the device isn’t connected to the network, the call may fail with [`NSFileWriteUnknownError`](nsfilewriteunknownerror-c.enum.case.md), with the underlying error of [`serverUnreachable`](https://developer.apple.com/documentation/fileprovider/nsfileprovidererror/serverunreachable).
 
 ## Parameters
 

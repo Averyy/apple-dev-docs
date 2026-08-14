@@ -69,12 +69,12 @@ For more information on managing the context window size, see [`Managing the con
 ## Relationships
 
 ### Conforms To
-- [Copyable](../Swift/Copyable.md)
+- [Copyable](../swift/copyable.md)
 - [DynamicInstructions](dynamicinstructions.md)
-- [Escapable](../Swift/Escapable.md)
+- [Escapable](../swift/escapable.md)
 - [InstructionsRepresentable](instructionsrepresentable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

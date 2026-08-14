@@ -23,7 +23,7 @@ let kVTPixelTransferPropertyKey_DestinationTransferFunction: CFString
 
 Specifying this value may lead to performance degradation, as a color matching operation may need to be performed between the source and the destination.
 
-See [`kCMFormatDescriptionExtension_TransferFunction`](https://developer.apple.com/documentation/CoreMedia/kCMFormatDescriptionExtension_TransferFunction-swift.var) in `CMFormatDescription.h` for possible values.
+See [`kCMFormatDescriptionExtension_TransferFunction`](https://developer.apple.com/documentation/coremedia/kcmformatdescriptionextension_transferfunction-swift.var) in `CMFormatDescription.h` for possible values.
 
 ## See Also
 

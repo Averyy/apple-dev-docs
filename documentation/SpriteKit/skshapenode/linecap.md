@@ -22,7 +22,7 @@ var lineCap: CGLineCap { get set }
 
 #### Discussion
 
-The default value is [`CGLineCap.butt`](https://developer.apple.com/documentation/CoreGraphics/CGLineCap/butt). See [`CGLineCap`](https://developer.apple.com/documentation/CoreGraphics/CGLineCap).
+The default value is [`CGLineCap.butt`](https://developer.apple.com/documentation/coregraphics/cglinecap/butt). See [`CGLineCap`](https://developer.apple.com/documentation/coregraphics/cglinecap).
 
 ## See Also
 

@@ -7,7 +7,7 @@ An image description structure associated with this matte data.
 
 #### Overview
 
-The image description contains detailed information that governs how the matte data is used. See [`Video sample description ('stsd')`](video_sample_description.md) for more information about image descriptions.
+The image description contains detailed information that governs how the matte data is used. See [`Video sample description`](video_sample_description.md) for more information about image descriptions.
 
 ## See Also
 

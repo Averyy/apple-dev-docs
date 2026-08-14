@@ -24,8 +24,8 @@ The caller is responsible for releasing this array.
 
 ## Parameters
 
-- `inBundleIdentifier`: The bundle identifier of interest, such as "com.apple.finder". Must not be  .
-- `outError`: On failure, set to a   describing the problem. If you aren't interested in this information, pass  . The caller is responsible for releasing this object.
+- `inBundleIdentifier`: The bundle identifier of interest, such as "com.apple.finder". Must not be `NULL`.
+- `outError`: On failure, set to a `CFError` describing the problem. If you aren't interested in this information, pass `NULL`. The caller is responsible for releasing this object.
 
 ## See Also
 

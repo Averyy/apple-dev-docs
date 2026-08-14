@@ -16,7 +16,7 @@ var widthAnchor: NSLayoutDimension { get }
 
 #### Discussion
 
-Use this anchor to create constraints with the view’s width. You can only combine this anchor with other [`NSLayoutDimension`](https://developer.apple.com/documentation/UIKit/NSLayoutDimension) anchors. For more information, see [`NSLayoutAnchor`](https://developer.apple.com/documentation/UIKit/NSLayoutAnchor).
+Use this anchor to create constraints with the view’s width. You can only combine this anchor with other [`NSLayoutDimension`](https://developer.apple.com/documentation/uikit/nslayoutdimension) anchors. For more information, see [`NSLayoutAnchor`](https://developer.apple.com/documentation/uikit/nslayoutanchor).
 
 ## See Also
 

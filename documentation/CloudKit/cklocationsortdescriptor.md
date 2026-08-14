@@ -22,7 +22,7 @@ class CKLocationSortDescriptor
 
 #### Overview
 
-You can add a location sort descriptor to your queries when searching for records. At creation time, you must provide the sort descriptor with a key that has a [`CLLocation`](https://developer.apple.com/documentation/CoreLocation/CLLocation) object as its value. The sort descriptor uses the value of that key to perform the sort.
+You can add a location sort descriptor to your queries when searching for records. At creation time, you must provide the sort descriptor with a key that has a [`CLLocation`](https://developer.apple.com/documentation/corelocation/cllocation) object as its value. The sort descriptor uses the value of that key to perform the sort.
 
 CloudKit computes distance by drawing a direct line between the two locations that follows the curvature of the Earth. Distances don’t account for altitude changes between the two locations.
 
@@ -42,19 +42,19 @@ CloudKit computes distance by drawing a direct line between the two locations th
 ## Relationships
 
 ### Inherits From
-- [NSSortDescriptor](../Foundation/NSSortDescriptor.md)
+- [NSSortDescriptor](../foundation/nssortdescriptor.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCoding](../Foundation/NSCoding.md)
-- [NSCopying](../Foundation/NSCopying.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [NSSecureCoding](../Foundation/NSSecureCoding.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCoding](../foundation/nscoding.md)
+- [NSCopying](../foundation/nscopying.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

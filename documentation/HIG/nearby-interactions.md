@@ -13,9 +13,9 @@ framework: HIG
 
 Nearby interactions support on-device experiences that integrate the presence of people and objects in the nearby environment.
 
-![A sketch of curved lines beside a circular area containing a smaller circle, suggesting audio approaching a person in a room from a specific direction. The image is overlaid with rectangular and circular grid lines and is tinted purple to subtly reflect the purple in the original six-color Apple logo.](https://docs-assets.developer.apple.com/published/eadee49eac296cb53a58af21eb649219/inputs-nearby-interactions-intro~dark%402x.png)
+![A sketch of curved lines beside a circular area containing a smaller circle, suggesting audio approaching a person in a room from a specific direction. The image is overlaid with rectangular and circular grid lines and is tinted purple to subtly reflect the purple in the original six-color Apple logo.](/images/com.apple.HIG/inputs-nearby-interactions-intro~dark@2x.png)
 A great nearby interaction feels intuitive and natural to people, because it builds on their innate awareness of the world around them. For example, a person playing music on their iPhone can continue listening on their HomePod mini when they bring the devices close together, simply by transferring the audio output from their iPhone to the HomePod mini.
-Nearby interactions are available on devices that support Ultra Wideband technology (to learn more, see [Ultra Wideband availability](https://support.apple.com/en-us/HT212274)), and rely on the [Nearby Interaction](../NearbyInteraction.md) framework. Before participating in nearby interaction experiences, people grant permission for their device to interact while they’re using your app. The Nearby Interaction APIs help you preserve people’s privacy by relying on randomly generated device identifiers that last only as long as the interaction session your app initiates.
+Nearby interactions are available on devices that support Ultra Wideband technology (to learn more, see [Ultra Wideband availability](https://support.apple.com/en-us/HT212274)), and rely on the [Nearby Interaction](../nearbyinteraction.md) framework. Before participating in nearby interaction experiences, people grant permission for their device to interact while they’re using your app. The Nearby Interaction APIs help you preserve people’s privacy by relying on randomly generated device identifiers that last only as long as the interaction session your app initiates.
 
 ## Best practices
 **Consider a task from the perspective of the physical world to find inspiration for a nearby interaction.** For example, although people can easily use your app’s UI to transfer a song from their iPhone to their HomePod mini, initiating the transfer by bringing the devices close together makes the task feel rooted in the physical world. Discovering the physical actions that inform the concept of a task can help you create an engaging experience that makes performing it feel easy and natural.
@@ -45,7 +45,7 @@ On Apple Watch, Nearby Interaction APIs provide a peer device’s distance. Also
 [Feedback](feedback.md)
 
 #### Developer documentation
-[Nearby Interaction](../NearbyInteraction.md)
+[Nearby Interaction](../nearbyinteraction.md)
 
 #### Videos
 - [Design for spatial interaction](https://developer.apple.com/videos/play/wwdc2021/10245) - Discover the principles for creating intuitive physical interactions between two or more devices, as demonstrated by Apple designers who worked on features for iPhone, HomePod mini, and AirTag. Explore how you can apply these patterns to your own app when designing features for Apple platforms, and help people using your app interact more directly with their surroundings.

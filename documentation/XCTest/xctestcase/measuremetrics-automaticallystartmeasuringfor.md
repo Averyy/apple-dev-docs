@@ -17,14 +17,14 @@ Call this method from within a test method to measure the performance of a block
 
 Performance measurement must be started and stopped exactly once within the block. As a result:
 
-- If `automaticallyStartMeasuring` is [`true`](https://developer.apple.com/documentation/Swift/true) and [`startMeasuring()`](xctestcase/startmeasuring().md) is called inside the block, the test will fail.
-- If `automaticallyStartMeasuring` is [`false`](https://developer.apple.com/documentation/Swift/false), [`startMeasuring()`](xctestcase/startmeasuring().md) must be called once and only once before the end of the block, or the test will fail.
+- If `automaticallyStartMeasuring` is [`true`](https://developer.apple.com/documentation/swift/true) and [`startMeasuring()`](xctestcase/startmeasuring().md) is called inside the block, the test will fail.
+- If `automaticallyStartMeasuring` is [`false`](https://developer.apple.com/documentation/swift/false), [`startMeasuring()`](xctestcase/startmeasuring().md) must be called once and only once before the end of the block, or the test will fail.
 - If [`stopMeasuring()`](xctestcase/stopmeasuring().md) is called multiple times during the block the test will fail.
 
 ## Parameters
 
 - `metrics`: An array of performance metrics to measure. Each metric is measured across calls to the block. Pass [`wallClockTime`](xctperformancemetric/wallclocktime.md) to measure the number of seconds taken to execute the  block of code.
-- `automaticallyStartMeasuring`: If [`false`](https://developer.apple.com/documentation/Swift/false), measurements will not be taken until [`startMeasuring()`](xctestcase/startmeasuring().md) is called inside the block.
+- `automaticallyStartMeasuring`: If [`false`](https://developer.apple.com/documentation/swift/false), measurements will not be taken until [`startMeasuring()`](xctestcase/startmeasuring().md) is called inside the block.
 - `block`: A block whose performance is measured.
 
 ## See Also

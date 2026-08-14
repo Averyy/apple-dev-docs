@@ -25,7 +25,7 @@ class HKWorkoutRouteQuery
 
 #### Overview
 
-Use a workout route query to access the location data associated with an [`HKWorkoutRoute`](hkworkoutroute.md). Because a route sample can include a large number of [`CLLocation`](https://developer.apple.com/documentation/CoreLocation/CLLocation) objects, the query asynchronously returns the locations in batches. For detailed instructions, see `Reading Route Data`.
+Use a workout route query to access the location data associated with an [`HKWorkoutRoute`](hkworkoutroute.md). Because a route sample can include a large number of [`CLLocation`](https://developer.apple.com/documentation/corelocation/cllocation) objects, the query asynchronously returns the locations in batches. For detailed instructions, see `Reading Route Data`.
 
 ## Topics
 
@@ -40,14 +40,14 @@ Use a workout route query to access the location data associated with an [`HKWor
 ### Inherits From
 - [HKQuery](hkquery.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

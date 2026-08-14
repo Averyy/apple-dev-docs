@@ -39,7 +39,7 @@ Text("Rounded Corners")
     .cornerRadius(25)
 ```
 
-![A screenshot of a rectangle with rounded corners bounding a text](https://docs-assets.developer.apple.com/published/93dbf20ad2c8de571000a7dffdb1bea8/SwiftUI-View-cornerRadius%402x.png)
+![A screenshot of a rectangle with rounded corners bounding a text](/images/com.apple.SwiftUI/SwiftUI-View-cornerRadius@2x.png)
 
 ## Parameters
 

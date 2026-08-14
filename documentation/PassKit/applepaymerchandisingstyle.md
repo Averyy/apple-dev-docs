@@ -30,8 +30,8 @@ struct ApplePayMerchandisingStyle
 ## Relationships
 
 ### Conforms To
-- [Equatable](../Swift/Equatable.md)
-- [RawRepresentable](../Swift/RawRepresentable.md)
+- [Equatable](../swift/equatable.md)
+- [RawRepresentable](../swift/rawrepresentable.md)
 
 
 ---

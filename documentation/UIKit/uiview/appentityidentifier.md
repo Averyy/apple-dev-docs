@@ -25,7 +25,7 @@ Associate your view with one app entity to make it discoverable by Apple Intelli
 
 To clear the association with the app entity, set `appEntityIdentifier` to `nil`.
 
-For more information, refer to doc:providing-contextual-cues-to-Apple-Intelligence-and-Siri and [`App Intents`](https://developer.apple.com/documentation/AppIntents).
+For more information, refer to doc:providing-contextual-cues-to-Apple-Intelligence-and-Siri and [`App Intents`](https://developer.apple.com/documentation/appintents).
 
 
 ---

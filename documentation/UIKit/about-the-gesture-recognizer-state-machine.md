@@ -18,7 +18,7 @@ When implementing a custom gesture recognizer, you must update its state machine
 
 When implementing a discrete gesture recognizer, you change the [`state`](uigesturerecognizer/state-swift.property.md) property to one of two possible values: [`UIGestureRecognizer.State.ended`](uigesturerecognizer/state-swift.enum/ended.md) or [`UIGestureRecognizer.State.failed`](uigesturerecognizer/state-swift.enum/failed.md). The following image shows the state diagram for these transitions. When incoming events successfully match your gesture, change the state to [`UIGestureRecognizer.State.ended`](uigesturerecognizer/state-swift.enum/ended.md). When events do not match your intended gesture, change the state to [`UIGestureRecognizer.State.failed`](uigesturerecognizer/state-swift.enum/failed.md) as soon as you detect the failure.
 
-![The states of a discrete gesture.](https://docs-assets.developer.apple.com/published/9727ff45763a2d8025ecdb5a2bf93dc4/media-3004409%402x.png)
+![The states of a discrete gesture.](/images/com.apple.uikit/media-3004409@2x.png)
 
 When your gesture recognizer transitions to the [`UIGestureRecognizer.State.ended`](uigesturerecognizer/state-swift.enum/ended.md) state, UIKit calls the action methods of any associated target objects. UIKit does not call any action methods when the gesture recognizer transitions to the [`UIGestureRecognizer.State.failed`](uigesturerecognizer/state-swift.enum/failed.md) state.
 
@@ -32,7 +32,7 @@ The following image shows the state diagram for a continuous gesture recognizer.
 2. Subsequent events move the gesture recognizer to the [`UIGestureRecognizer.State.changed`](uigesturerecognizer/state-swift.enum/changed.md) or [`UIGestureRecognizer.State.cancelled`](uigesturerecognizer/state-swift.enum/cancelled.md) state.
 3. A final event moves the gesture recognizer to the [`UIGestureRecognizer.State.ended`](uigesturerecognizer/state-swift.enum/ended.md) state.
 
-![The states of a continuous gesture.](https://docs-assets.developer.apple.com/published/86d0d5900211f1645a04880a66ddbc28/media-3004408%402x.png)
+![The states of a continuous gesture.](/images/com.apple.uikit/media-3004408@2x.png)
 
 When your gesture recognizer is in the [`UIGestureRecognizer.State.possible`](uigesturerecognizer/state-swift.enum/possible.md) state, if the initial event sequence does not match your gesture, move your gesture recognizer to the [`UIGestureRecognizer.State.failed`](uigesturerecognizer/state-swift.enum/failed.md) state immediately. UIKit normally permits only one gesture recognizer at a time to notify its client. Moving your custom gesture recognizer to the failed state gives other gesture recognizers an opportunity to handle their gestures.
 

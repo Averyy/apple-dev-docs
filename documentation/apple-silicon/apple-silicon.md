@@ -8,7 +8,7 @@ Get the resources you need to create software for Macs with Apple silicon.
 
 Build apps, libraries, frameworks, plug-ins, and other executable code that run natively on Apple silicon. When you build executables on top of Apple frameworks and technologies, the only significant step you might need to take is to recompile your code for the `arm64` architecture. If you rely on hardware-specific details or make assumptions about low-level features, modify your code as needed to support Apple silicon.
 
-![The Apple silicon logo.](https://docs-assets.developer.apple.com/published/c8a3ae874a4134e5c1c4ade829fb478d/apple-silicon-1%402x.png)
+![The Apple silicon logo.](/images/com.apple.Apple-Silicon/apple-silicon-1@2x.png)
 
 Getting the best performance on Apple silicon sometimes requires making adjustments to the way you use hardware resources. Minimize your dependence on the hardware by using higher-level technologies whenever possible. For example, use Grand Central Dispatch instead of creating and managing threads yourself. Test your changes on Apple silicon to verify that your code behaves optimally.
 

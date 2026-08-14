@@ -38,7 +38,7 @@ Core Image ignores the texture filtering and wrap modes (`GL_TEXTURE_FILTER` and
 - `name`: An OpenGL texture. Because [`CIImage`](ciimage.md) objects are immutable, the texture  must remain unchanged for the life of the image object. See the discussion for more information.
 - `size`: The dimensions of the texture.
 - `flipped`: `true` to have Core Image flip the coordinates of the texture vertically to convert between OpenGL and Core Image coordinate systems.
-- `colorSpace`: The color space that the image is defined in. This must be a Quartz color space ([`CGColorSpace`](https://developer.apple.com/documentation/CoreGraphics/CGColorSpace)). If the `colorSpace` value is `nil`, the image is not color matched. Pass `nil` for images that don’t contain color data (such as elevation maps, normal vector maps, and sampled function tables).
+- `colorSpace`: The color space that the image is defined in. This must be a Quartz color space ([`CGColorSpace`](https://developer.apple.com/documentation/coregraphics/cgcolorspace)). If the `colorSpace` value is `nil`, the image is not color matched. Pass `nil` for images that don’t contain color data (such as elevation maps, normal vector maps, and sampled function tables).
 
 ## See Also
 

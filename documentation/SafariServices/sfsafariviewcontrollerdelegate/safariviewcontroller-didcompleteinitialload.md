@@ -23,7 +23,7 @@ This method is invoked when [`SFSafariViewController`](sfsafariviewcontroller.md
 ## Parameters
 
 - `controller`: The view controller.
-- `didLoadSuccessfully`: [`true`](https://developer.apple.com/documentation/Swift/true) if loading completed successfully; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
+- `didLoadSuccessfully`: [`true`](https://developer.apple.com/documentation/swift/true) if loading completed successfully; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
 
 ## See Also
 

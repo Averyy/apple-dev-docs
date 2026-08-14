@@ -35,7 +35,7 @@ Chart(data) {
 }
 ```
 
-![Vertical rule chart with y-axis showing the month in the year 2020 starting with January and ending with December, and with x-axis showing a pollen source: Trees, Grass, and Weeds. There are 4 rules. 2 for Trees 1 starting in January and going until the end of September and 1 spanning December, 1 for Grass starting in March and going until the end of August, and 1 for Weeds starting in April and going until the end of November.](https://docs-assets.developer.apple.com/published/8d9e636deb922381874946adc7aaaae3/LineSegmentMarkSwift.LineSegmentMarkVerticalLineSegmentChart%402x.png)
+![Vertical rule chart with y-axis showing the month in the year 2020 starting with January and ending with December, and with x-axis showing a pollen source: Trees, Grass, and Weeds. There are 4 rules. 2 for Trees 1 starting in January and going until the end of September and 1 spanning December, 1 for Grass starting in March and going until the end of August, and 1 for Weeds starting in April and going until the end of November.](/images/com.apple.Charts/LineSegmentMarkSwift.LineSegmentMarkVerticalLineSegmentChart@2x.png)
 
 See [`RuleMark`](rulemark.md) for the setup of the structure that contains the `startDate`, `endDate`, and `source` properties.
 

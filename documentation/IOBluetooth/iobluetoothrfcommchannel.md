@@ -68,15 +68,15 @@ An RFCOMM channel object can be obtained by opening an RFCOMM channel in a devic
 ### Inherits From
 - [IOBluetoothObject](iobluetoothobject.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCopying](../Foundation/NSCopying.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [PortDelegate](../Foundation/PortDelegate.md)
-- [StreamDelegate](../Foundation/StreamDelegate.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCopying](../foundation/nscopying.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [PortDelegate](../foundation/portdelegate.md)
+- [StreamDelegate](../foundation/streamdelegate.md)
 
 ## See Also
 

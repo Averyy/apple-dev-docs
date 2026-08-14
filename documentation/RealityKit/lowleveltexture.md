@@ -28,9 +28,9 @@ class LowLevelTexture
 
 Use `LowLevelTexture` when you want to bring your own texture data to RealityKit, or update your data frequently. You update the data on the GPU with Metal compute shaders. This is ideal for bringing your own textures to RealityKit as-is, or when you intend to update your data frequently.
 
-> **Note**: For a simpler alternative, consider creating your [`TextureResource`](textureresource.md) from a [`CGImage`](https://developer.apple.com/documentation/CoreGraphics/CGImage) with `TextureResource/init(image:withName:options:)-4qz9s`, `TextureResource/texture2DArray(slices:named:options:)-50g10`, `TextureResource/cube(slices:named:options:)-57yj1`, or `TextureResource/texture3D(slices:named:options:)-6pude`.
+> **Note**: For a simpler alternative, consider creating your [`TextureResource`](textureresource.md) from a [`CGImage`](https://developer.apple.com/documentation/coregraphics/cgimage) with `TextureResource/init(image:withName:options:)-4qz9s`, `TextureResource/texture2DArray(slices:named:options:)-50g10`, `TextureResource/cube(slices:named:options:)-57yj1`, or `TextureResource/texture3D(slices:named:options:)-6pude`.
 
-Express your texture by creating a [`LowLevelTexture.Descriptor`](lowleveltexture/descriptor-swift.struct.md) that describes how the data is laid out, along with the size of the texture.  This descriptor is similar to [`MTLTextureDescriptor`](https://developer.apple.com/documentation/Metal/MTLTextureDescriptor).
+Express your texture by creating a [`LowLevelTexture.Descriptor`](lowleveltexture/descriptor-swift.struct.md) that describes how the data is laid out, along with the size of the texture.  This descriptor is similar to [`MTLTextureDescriptor`](https://developer.apple.com/documentation/metal/mtltexturedescriptor).
 
 To use `LowLevelTexture`, first configure the descriptor with the desired characteristics of your texture.
 
@@ -154,7 +154,7 @@ func textureEntity(device: MTLDevice) throws -> Entity {
 }
 ```
 
-![A screenshot of a circle.  The color of the circle is a linear gradient; the top is light blue and the bottom is close to white.](https://docs-assets.developer.apple.com/published/4e518125eb1798957de0f8855cab1a35/lowleveltexture-circle-unlit.png)
+![A screenshot of a circle.  The color of the circle is a linear gradient; the top is light blue and the bottom is close to white.](/images/com.apple.RealityKit/lowleveltexture-circle-unlit.png)
 
 The [`TextureResource`](textureresource.md) retains a reference to the `LowLevelTexture`, and presents changes made to the `LowLevelTexture` when the renderer updates.
 
@@ -184,8 +184,8 @@ The [`TextureResource`](textureresource.md) retains a reference to the `LowLevel
 ## Relationships
 
 ### Conforms To
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

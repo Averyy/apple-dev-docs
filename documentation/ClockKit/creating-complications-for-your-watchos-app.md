@@ -8,7 +8,7 @@ Set up and implement complications for your watchOS app.
 
 Complications are small interface elements that users place on the clock face.
 
-![An image of an Infographic Modular watch face with the complications highlighted. The face uses graphic circular templates for the Weather, Breathe, Air Quality Index, and Workout apps. It uses a graphic large image template for the Heart Rate app.](https://docs-assets.developer.apple.com/published/e8681f07a11801363b1601f240bc5ccc/media-3598123%402x.png)
+![An image of an Infographic Modular watch face with the complications highlighted. The face uses graphic circular templates for the Weather, Breathe, Air Quality Index, and Workout apps. It uses a graphic large image template for the Heart Rate app.](/images/com.apple.clockkit/media-3598123@2x.png)
 
 Having your complication on an active watch face gives you the opportunity to provide useful data whenever the user glances at their watch. Users can also interact with your app by tapping on the complication and launching your app. The system also provides apps with active complications larger budgets for background refresh tasks. You can use these tasks to keep the content of your watchOS app and your complications up to date and accurate.
 

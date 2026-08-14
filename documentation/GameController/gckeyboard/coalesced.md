@@ -25,9 +25,9 @@ Get the keyboard input values from the keyboard’s [`keyboardInput`](gckeyboard
 
 ## See Also
 
-- [static let GCKeyboardDidConnect: NSNotification.Name](../Foundation/NSNotification/Name-swift.struct/GCKeyboardDidConnect.md)
+- [static let GCKeyboardDidConnect: NSNotification.Name](../foundation/nsnotification/name-swift.struct/gckeyboarddidconnect.md)
   A notification that posts after a keyboard connects to the device.
-- [static let GCKeyboardDidDisconnect: NSNotification.Name](../Foundation/NSNotification/Name-swift.struct/GCKeyboardDidDisconnect.md)
+- [static let GCKeyboardDidDisconnect: NSNotification.Name](../foundation/nsnotification/name-swift.struct/gckeyboarddiddisconnect.md)
   A notification that posts after a single keyboard, or the last of multiple keyboards, disconnects from the device.
 
 

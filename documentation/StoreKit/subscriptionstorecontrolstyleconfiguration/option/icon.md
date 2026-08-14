@@ -22,7 +22,7 @@ var icon: SubscriptionStoreControlStyleConfiguration.Icon? { get }
 
 #### Discussion
 
-Use this property to access the icon you configure for a subscription option using the [`subscriptionStoreControlIcon(icon:)`](https://developer.apple.com/documentation/SwiftUI/View/subscriptionStoreControlIcon(icon:)) view modifier.
+Use this property to access the icon you configure for a subscription option using the [`subscriptionStoreControlIcon(icon:)`](https://developer.apple.com/documentation/swiftui/view/subscriptionstorecontrolicon(icon:)) view modifier.
 
 
 ---

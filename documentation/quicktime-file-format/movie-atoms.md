@@ -12,23 +12,23 @@ The movie atom is essentially a container of other atoms. These atoms, taken tog
 
 The following figures provide a conceptual view of the organization of a simple, one-track QuickTime movie. Each nested box in the illustration represents an atom that belongs to its parent atom. The figure does not show the data regions of any of the atoms. These areas are described in the sections that follow.
 
-![A diagram that shows the structure of a movie atom.](https://docs-assets.developer.apple.com/published/5a9a7a25f304fa2ed2a801f0f17aed31/movie-atom%402x.png)
+![A diagram that shows the structure of a movie atom.](/images/com.apple.qtff/movie-atom@2x.png)
 
 The movie atom contains a track atom, which contains other atoms as detailed in the following figure:
 
-![A diagram that shows the structure of a track atom.](https://docs-assets.developer.apple.com/published/c477b2af441537e88c18d1a36428bf13/track-atom%402x.png)
+![A diagram that shows the structure of a track atom.](/images/com.apple.qtff/track-atom@2x.png)
 
 The track atom in turn contains a media atom as shown in the following figure:
 
-![A diagram that shows the structure of a media atom.](https://docs-assets.developer.apple.com/published/8d01dece682063d8e1561c59943e03b6/media-atom%402x.png)
+![A diagram that shows the structure of a media atom.](/images/com.apple.qtff/media-atom@2x.png)
 
 The media atom contains a video media information atom as shown in the following figure:
 
-![A diagram that shows the structure of a video media information atom.](https://docs-assets.developer.apple.com/published/d0e9d190ceed983d788adf9ea05b6b6b/video-media-information-atom%402x.png)
+![A diagram that shows the structure of a video media information atom.](/images/com.apple.qtff/video-media-information-atom@2x.png)
 
 The video media information atom contains a sample table atom as follows:
 
-![A diagram that shows the structure of a sample table atom.](https://docs-assets.developer.apple.com/published/eb6e2f6e3917061f6c12f70e79dfe293/sample-table-atom%402x.png)
+![A diagram that shows the structure of a sample table atom.](/images/com.apple.qtff/sample-table-atom@2x.png)
 
 Note that the figures show the organization of a standard movie atom. It is possible to compress the movie metadata using a lossless compression algorithm. In such cases, the movie atom contains only a single child atom—the compressed movie atom (`'cmov'`). When this child atom is uncompressed, its contents conform to the structure shown in the following illustration. For details, see [`Compressed movie resources`](compressed_movie_resources.md).
 

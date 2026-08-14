@@ -26,7 +26,7 @@ Handle a person tapping your ad content by calling the app impression’s handle
 
 If the system can validate that  person tapped, it attempts to either launch one of the installed marketplaces to show the product page to install the advertised app, or it performs a reengagement if someone already has the advertised app installed, and opens it directly.
 
-This API requires that you place a [`UIEventAttributionView`](https://developer.apple.com/documentation/UIKit/UIEventAttributionView) on top of your ad content before calling `handleTap()`, as the following example shows:
+This API requires that you place a [`UIEventAttributionView`](https://developer.apple.com/documentation/uikit/uieventattributionview) on top of your ad content before calling `handleTap()`, as the following example shows:
 
 ```swift
    func handleAdTapped(impression: AppImpression) async {

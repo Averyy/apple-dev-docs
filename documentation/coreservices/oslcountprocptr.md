@@ -40,9 +40,9 @@ After you are finished with your object counting callback function, you can disp
 
 ## Parameters
 
-- `desiredType`: The object class of the Apple event objects to be counted. See  .
-- `containerClass`: The object class of the container for the Apple event objects to be counted. See  .
-- `container`: A pointer to a token that identifies the container for the Apple event objects to be counted. (Token is defined in  . See  .
+- `desiredType`: The object class of the Apple event objects to be counted. See [`DescType`](desctype.md).
+- `containerClass`: The object class of the container for the Apple event objects to be counted. See [`DescType`](desctype.md).
+- `container`: A pointer to a token that identifies the container for the Apple event objects to be counted. (Token is defined in [`AEDisposeToken(_:)`](1446783-aedisposetoken.md). See [`AEDesc`](aedesc.md).
 - `result`: A pointer to a variable where your object-counting function stores the number of Apple objects of the specified class in the specified container.
 
 ## See Also

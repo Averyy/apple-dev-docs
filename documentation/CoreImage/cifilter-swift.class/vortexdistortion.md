@@ -30,9 +30,9 @@ This method applies the vortex distortion filter to an image. This effect distor
 The vortex distortion filter uses the following properties:
 
 - **`inputImage`**: An image with the type [`CIImage`](ciimage.md).
-- **`angle`**: A `float` representing the angle of the vortex, in radians, as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
-- **`center`**: A set of coordinates marking the center of the image as a [`CGPoint`](https://developer.apple.com/documentation/CoreFoundation/CGPoint).
-- **`radius`**: A `float` representing the amount of pixels the filter uses to create the distortion as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+- **`angle`**: A `float` representing the angle of the vortex, in radians, as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
+- **`center`**: A set of coordinates marking the center of the image as a [`CGPoint`](https://developer.apple.com/documentation/corefoundation/cgpoint).
+- **`radius`**: A `float` representing the amount of pixels the filter uses to create the distortion as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
 
 The following code creates a filter that results in a small vortex effect:
 
@@ -47,7 +47,7 @@ func vortexDistort(inputImage: CIImage) -> CIImage {
 }
 ```
 
-![Two images next to each other. The image on the left contains a black-and-white checkerboard pattern. The image on the right has the vortex distortion filter applied. The center of the image appears to be tightly twisted with the amount of twist decreasing very quickly towards the edge of the image.](https://docs-assets.developer.apple.com/published/932220d9af42464e22c6af5e828fddc4/media-4407301%402x.png)
+![Two images next to each other. The image on the left contains a black-and-white checkerboard pattern. The image on the right has the vortex distortion filter applied. The center of the image appears to be tightly twisted with the amount of twist decreasing very quickly towards the edge of the image.](/images/com.apple.coreimage/media-4407301@2x.png)
 
 ## See Also
 

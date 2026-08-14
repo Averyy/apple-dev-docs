@@ -31,7 +31,7 @@ The HTTP POST method includes the following parameters:
 - **`grant_type`**: The type of grant requested. Set to `client_credentials` as there are no user credentials. Access the migration endpoint using the client application’s credentials.
 - **`scope`**: The scope of the migration. Set to `user.migration` in order to exchange the identifier.
 - **`client_id`**: The identifier (App ID or Services ID) for the transferred app. The identifier must not include your Team ID, to help mitigate the possibility of exposing sensitive data to the end user.
-- **`client_secret`**: The client secret of the recipient team, represented as a JSON Web Token (JWT). The JWT payload should contain a `sub` claim that matches the transferred app’s bundle ID or associated Services ID. For more information on generating a client secret, see [`Creating a client secret`](https://developer.apple.com/documentation/AccountOrganizationalDataSharing/creating-a-client-secret).
+- **`client_secret`**: The client secret of the recipient team, represented as a JSON Web Token (JWT). The JWT payload should contain a `sub` claim that matches the transferred app’s bundle ID or associated Services ID. For more information on generating a client secret, see [`Creating a client secret`](https://developer.apple.com/documentation/accountorganizationaldatasharing/creating-a-client-secret).
 
 Expect an HTTP POST response similar to the following example.
 
@@ -68,7 +68,7 @@ The HTTP POST method includes the following parameters:
 
 - **`transfer_sub`**: The transfer identifier that you obtained from the sending team.
 - **`client_id`**: The identifier (App ID or Services ID) for the transferred app. The identifier must not include your Team ID, to help mitigate the possibility of exposing sensitive data to the end user.
-- **`client_secret`**: The client secret of the recipient team, represented as a JSON Web Token (JWT). The JWT payload should contain a `sub` claim that matches the transferred app’s bundle ID or associated Services ID. For more information on generating a client secret, see [`Creating a client secret`](https://developer.apple.com/documentation/AccountOrganizationalDataSharing/creating-a-client-secret).
+- **`client_secret`**: The client secret of the recipient team, represented as a JSON Web Token (JWT). The JWT payload should contain a `sub` claim that matches the transferred app’s bundle ID or associated Services ID. For more information on generating a client secret, see [`Creating a client secret`](https://developer.apple.com/documentation/accountorganizationaldatasharing/creating-a-client-secret).
 
 Expect an HTTP POST response similar to the following example.
 
@@ -103,9 +103,9 @@ If the sending team ungrouped their apps, coordinate with the team to regroup th
 
 ##### Confirm the Transferred Credential State
 
-Your transferred application starts receiving [`ASAuthorizationAppleIDProvider.CredentialState.transferred`](https://developer.apple.com/documentation/AuthenticationServices/ASAuthorizationAppleIDProvider/CredentialState/transferred) when you call [`getCredentialState(forUserID:completion:)`](https://developer.apple.com/documentation/AuthenticationServices/ASAuthorizationAppleIDProvider/getCredentialState(forUserID:completion:)). This status indicates that the user identifier currently in use is the one associated with the delivering team.
+Your transferred application starts receiving [`ASAuthorizationAppleIDProvider.CredentialState.transferred`](https://developer.apple.com/documentation/authenticationservices/asauthorizationappleidprovider/credentialstate/transferred) when you call [`getCredentialState(forUserID:completion:)`](https://developer.apple.com/documentation/authenticationservices/asauthorizationappleidprovider/getcredentialstate(foruserid:completion:)). This status indicates that the user identifier currently in use is the one associated with the delivering team.
 
-The following code silently performs a new authorization in the background, and delivers the new user identifier to the [`ASAuthorizationControllerDelegate`](https://developer.apple.com/documentation/AuthenticationServices/ASAuthorizationControllerDelegate) delegate object. It doesn’t involve any user interaction.
+The following code silently performs a new authorization in the background, and delivers the new user identifier to the [`ASAuthorizationControllerDelegate`](https://developer.apple.com/documentation/authenticationservices/asauthorizationcontrollerdelegate) delegate object. It doesn’t involve any user interaction.
 
 ```swift
 let request = ASAuthorizationAppleIDProvider().createRequest()
@@ -120,7 +120,7 @@ controller.presentationContextProvider = self
 controller.performRequests()
 ```
 
-Upon receiving [`ASAuthorizationAppleIDProvider.CredentialState.transferred`](https://developer.apple.com/documentation/AuthenticationServices/ASAuthorizationAppleIDProvider/CredentialState/transferred), you can consider the current session approved.
+Upon receiving [`ASAuthorizationAppleIDProvider.CredentialState.transferred`](https://developer.apple.com/documentation/authenticationservices/asauthorizationappleidprovider/credentialstate/transferred), you can consider the current session approved.
 
 ## See Also
 

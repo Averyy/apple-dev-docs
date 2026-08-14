@@ -12,7 +12,7 @@ As you add more resources to your project, you can also add them to your localiz
 
 In the Project navigator, select the resource. Then in the inspector, under Localization, click Localize. In the dialog that appears, choose the localizations to add to the resource from the pop-up menu, and click Localize.
 
-![Screenshot of the project editor with an image file resource selected and the Localize button visible in the lower right-hand corner.](https://docs-assets.developer.apple.com/published/6fba471644f2c90709cd93c29bf907b3/adding-resources-to-localizations-1%402x.png)
+![Screenshot of the project editor with an image file resource selected and the Localize button visible in the lower right-hand corner.](/images/com.apple.Xcode/adding-resources-to-localizations-1@2x.png)
 
 In the inspector, under Localization, you can also select or deselect localizations for the resource. If you select multiple localizations, the resource becomes a group in the Project navigator localization-specific versions of the file.
 

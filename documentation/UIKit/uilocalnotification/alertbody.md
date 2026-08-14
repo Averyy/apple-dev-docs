@@ -19,7 +19,7 @@ var alertBody: String? { get set }
 
 #### Discussion
 
-Assign a string or, preferably, a localized-string key (using [`NSLocalizedString`](https://developer.apple.com/documentation/Foundation/NSLocalizedString)) as the value of the message. If the value of this property is non-`nil`, an alert is displayed. The default value is `nil` (no alert). Printf style escape characters are stripped from the string prior to display; to include a percent symbol (%) in the message, use two percent symbols (%%).
+Assign a string or, preferably, a localized-string key (using [`NSLocalizedString`](https://developer.apple.com/documentation/foundation/nslocalizedstring)) as the value of the message. If the value of this property is non-`nil`, an alert is displayed. The default value is `nil` (no alert). Printf style escape characters are stripped from the string prior to display; to include a percent symbol (%) in the message, use two percent symbols (%%).
 
 ## See Also
 

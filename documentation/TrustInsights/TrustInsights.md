@@ -26,7 +26,7 @@ There are five principal action areas — kinds of transactions people might eng
 
 #### Enable Your Xcode Project to Adopt the Trust Insights Framework
 
-The Trust Insights framework requires that your app’s Xcode project enables the `com.apple.developer.trustinsights.base` entitlement. For information on how to add this entitlement to your Xcode project, see [`Trust Insights`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.trustinsights.base).
+The Trust Insights framework requires that your app’s Xcode project enables the `com.apple.developer.trustinsights.base` entitlement. For information on how to add this entitlement to your Xcode project, see [`Trust Insights`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.trustinsights.base).
 
 #### Understand the Components of Trust Evaluation Request
 

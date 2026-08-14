@@ -77,7 +77,7 @@ UNUserNotificationCenter* center = [UNUserNotificationCenter currentNotification
 
 ##### Localizing the Alert Strings
 
-Localize the strings you display in a notification alert for the current user. Although you can use the [`NSLocalizedString`](https://developer.apple.com/documentation/Foundation/NSLocalizedString) macros to load strings from your app’s resource files, a better option is to specify your string using the [`localizedUserNotificationString(forKey:arguments:)`](https://developer.apple.com/documentation/Foundation/NSString/localizedUserNotificationString(forKey:arguments:)) method of [`NSString`](https://developer.apple.com/documentation/Foundation/NSString). The [`localizedUserNotificationString(forKey:arguments:)`](https://developer.apple.com/documentation/Foundation/NSString/localizedUserNotificationString(forKey:arguments:)) method delays the loading of the localized string until the system delivers the notification. If the user changes the language setting before the system delivers a notification, the system updates the alert text to the user’s current language instead of the language in use when the system scheduled the notification.
+Localize the strings you display in a notification alert for the current user. Although you can use the [`NSLocalizedString`](https://developer.apple.com/documentation/foundation/nslocalizedstring) macros to load strings from your app’s resource files, a better option is to specify your string using the [`localizedUserNotificationString(forKey:arguments:)`](https://developer.apple.com/documentation/foundation/nsstring/localizedusernotificationstring(forkey:arguments:)) method of [`NSString`](https://developer.apple.com/documentation/foundation/nsstring). The [`localizedUserNotificationString(forKey:arguments:)`](https://developer.apple.com/documentation/foundation/nsstring/localizedusernotificationstring(forkey:arguments:)) method delays the loading of the localized string until the system delivers the notification. If the user changes the language setting before the system delivers a notification, the system updates the alert text to the user’s current language instead of the language in use when the system scheduled the notification.
 
 ## Topics
 
@@ -128,16 +128,16 @@ Localize the strings you display in a notification alert for the current user. A
 ### Inherits From
 - [UNNotificationContent](unnotificationcontent.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCoding](../Foundation/NSCoding.md)
-- [NSCopying](../Foundation/NSCopying.md)
-- [NSMutableCopying](../Foundation/NSMutableCopying.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [NSSecureCoding](../Foundation/NSSecureCoding.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCoding](../foundation/nscoding.md)
+- [NSCopying](../foundation/nscopying.md)
+- [NSMutableCopying](../foundation/nsmutablecopying.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSSecureCoding](../foundation/nssecurecoding.md)
 
 ## See Also
 

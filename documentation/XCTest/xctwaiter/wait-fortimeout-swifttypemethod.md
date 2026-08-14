@@ -19,7 +19,7 @@ A value describing the outcome of waiting for `expectations`.
 
 Expectations can only appear in the array once. The test discards the waiter when the wait completes.
 
-In Objective-C code, you might use an expectation to wait on a call to an interface that uses a completion handler to return a result. From Swift code, consider calling `withCheckedContinuation(function:_:)` to use [`Concurrency`](https://developer.apple.com/documentation/Swift/concurrency) instead of an expectation to wait on the result of a completion handler.
+In Objective-C code, you might use an expectation to wait on a call to an interface that uses a completion handler to return a result. From Swift code, consider calling `withCheckedContinuation(function:_:)` to use [`Concurrency`](https://developer.apple.com/documentation/swift/concurrency) instead of an expectation to wait on the result of a completion handler.
 
 ## Parameters
 

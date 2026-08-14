@@ -22,7 +22,7 @@ let kCGImagePropertyProfileName: CFString
 
 #### Discussion
 
-The value of this key is a [`CFString`](https://developer.apple.com/documentation/CoreFoundation/CFString).
+The value of this key is a [`CFString`](https://developer.apple.com/documentation/corefoundation/cfstring).
 
 ## See Also
 

@@ -69,23 +69,23 @@ Buffers inherently support the [`MTLResource`](mtlresource.md) protocol’s prop
   An interface you can use to encode argument data into an argument buffer.
 - [var MTLAttributeStrideStatic: Int](mtlattributestridestatic.md)
 ### Model I/O interoperability
-- [class MTKMesh](../MetalKit/MTKMesh.md)
+- [class MTKMesh](../metalkit/mtkmesh.md)
   A container for the vertex data of a Model I/O mesh, suitable for use in a Metal app.
-- [class MTKMeshBuffer](../MetalKit/MTKMeshBuffer.md)
+- [class MTKMeshBuffer](../metalkit/mtkmeshbuffer.md)
   A buffer that backs the vertex data of a Model I/O mesh, suitable for use in a Metal app.
-- [class MTKMeshBufferAllocator](../MetalKit/MTKMeshBufferAllocator.md)
+- [class MTKMeshBufferAllocator](../metalkit/mtkmeshbufferallocator.md)
   An interface for allocating a MetalKit buffer that backs the vertex data of a Model I/O mesh, suitable for use in a Metal app.
-- [class MTKSubmesh](../MetalKit/MTKSubmesh.md)
+- [class MTKSubmesh](../metalkit/mtksubmesh.md)
   A container for the index data of a Model I/O submesh, suitable for use in a Metal app.
-- [struct MTKModelError](../MetalKit/MTKModelError.md)
+- [struct MTKModelError](../metalkit/mtkmodelerror.md)
   Constants used to declare Model Errors.
-- [func MTKMetalVertexFormatFromModelIO(MDLVertexFormat) -> MTLVertexFormat](../MetalKit/MTKMetalVertexFormatFromModelIO(_:).md)
+- [func MTKMetalVertexFormatFromModelIO(MDLVertexFormat) -> MTLVertexFormat](../metalkit/mtkmetalvertexformatfrommodelio(_:).md)
   Returns a converted Metal vertex format.
-- [func MTKModelIOVertexFormatFromMetal(MTLVertexFormat) -> MDLVertexFormat](../MetalKit/MTKModelIOVertexFormatFromMetal(_:).md)
+- [func MTKModelIOVertexFormatFromMetal(MTLVertexFormat) -> MDLVertexFormat](../metalkit/mtkmodeliovertexformatfrommetal(_:).md)
   Returns a converted Model I/O vertex format.
-- [func MTKMetalVertexDescriptorFromModelIO(MDLVertexDescriptor) -> MTLVertexDescriptor?](../MetalKit/MTKMetalVertexDescriptorFromModelIO(_:).md)
+- [func MTKMetalVertexDescriptorFromModelIO(MDLVertexDescriptor) -> MTLVertexDescriptor?](../metalkit/mtkmetalvertexdescriptorfrommodelio(_:).md)
   Returns a partially converted Metal vertex descriptor.
-- [func MTKModelIOVertexDescriptorFromMetal(MTLVertexDescriptor) -> MDLVertexDescriptor](../MetalKit/MTKModelIOVertexDescriptorFromMetal(_:).md)
+- [func MTKModelIOVertexDescriptorFromMetal(MTLVertexDescriptor) -> MDLVertexDescriptor](../metalkit/mtkmodeliovertexdescriptorfrommetal(_:).md)
   Returns a partially converted Model I/O vertex descriptor.
 
 ## See Also

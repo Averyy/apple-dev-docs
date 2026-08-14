@@ -36,12 +36,12 @@ This type is suitable for use as the `animatableData` property of types that do 
 ## Relationships
 
 ### Conforms To
-- [AdditiveArithmetic](../Swift/AdditiveArithmetic.md)
-- [BitwiseCopyable](../Swift/BitwiseCopyable.md)
-- [Copyable](../Swift/Copyable.md)
-- [Equatable](../Swift/Equatable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [AdditiveArithmetic](../swift/additivearithmetic.md)
+- [BitwiseCopyable](../swift/bitwisecopyable.md)
+- [Copyable](../swift/copyable.md)
+- [Equatable](../swift/equatable.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 - [VectorArithmetic](vectorarithmetic.md)
 
 ## See Also

@@ -25,9 +25,9 @@ To improve the results, consider the following strategies when including an imag
 
 #### Include Images in Your Request
 
-The framework supports several image types to include in your prompts, like [`CGImage`](https://developer.apple.com/documentation/CoreGraphics/CGImage), [`CIImage`](https://developer.apple.com/documentation/CoreImage/CIImage), [`CVPixelBuffer`](https://developer.apple.com/documentation/CoreVideo/CVPixelBuffer), and image URLs.
+The framework supports several image types to include in your prompts, like [`CGImage`](https://developer.apple.com/documentation/coregraphics/cgimage), [`CIImage`](https://developer.apple.com/documentation/coreimage/ciimage), [`CVPixelBuffer`](https://developer.apple.com/documentation/corevideo/cvpixelbuffer), and image URLs.
 
-Use a URL whenever your image comes from a file and verify that it points to an actual image. The framework infers whether a URL represents an image based on its [`UTType`](https://developer.apple.com/documentation/UniformTypeIdentifiers/UTType-swift.struct). If your app captures images or processes video streams, use [`CVPixelBuffer`](https://developer.apple.com/documentation/CoreVideo/CVPixelBuffer).
+Use a URL whenever your image comes from a file and verify that it points to an actual image. The framework infers whether a URL represents an image based on its [`UTType`](https://developer.apple.com/documentation/uniformtypeidentifiers/uttype-swift.struct). If your app captures images or processes video streams, use [`CVPixelBuffer`](https://developer.apple.com/documentation/corevideo/cvpixelbuffer).
 
 > ❗ **Important**: The framework performs the necessary scaling and color conversions before passing an image to the model, so you don’t need to scale or convert images to different formats.
 
@@ -85,7 +85,7 @@ For more information on guided generation, see [`Generating Swift data structure
 
 #### Use Built in Image Analysis Tools
 
-The [`Vision`](https://developer.apple.com/documentation/Vision) framework provides optical character recognition (OCR) and barcode tools that you can add to a session in the Foundation Models framework. Use [`BarcodeReaderTool`](https://developer.apple.com/documentation/Vision/BarcodeReaderTool) to detect barcodes and interpret their encoded content, and [`OCRTool`](https://developer.apple.com/documentation/Vision/OCRTool) to extract text from images.
+The [`Vision`](https://developer.apple.com/documentation/vision) framework provides optical character recognition (OCR) and barcode tools that you can add to a session in the Foundation Models framework. Use [`BarcodeReaderTool`](https://developer.apple.com/documentation/vision/barcodereadertool) to detect barcodes and interpret their encoded content, and [`OCRTool`](https://developer.apple.com/documentation/vision/ocrtool) to extract text from images.
 
 When you use tools, provide an [`label(_:)`](attachment/label(_:).md) to help the model identify a specific attachment. The following shows how to prompt the model to get information about an image that contains a barcode:
 
@@ -123,7 +123,7 @@ struct Arguments {
 }
 ```
 
-When the model calls your tool, the [`call(arguments:)`](tool/call(arguments:).md) method receives a reference you use to access the image. For example, to create a tool that uses the [`Vision`](https://developer.apple.com/documentation/Vision) framework to get classification details:
+When the model calls your tool, the [`call(arguments:)`](tool/call(arguments:).md) method receives a reference you use to access the image. For example, to create a tool that uses the [`Vision`](https://developer.apple.com/documentation/vision) framework to get classification details:
 
 ```swift
 func call(arguments: Arguments) async throws -> String {

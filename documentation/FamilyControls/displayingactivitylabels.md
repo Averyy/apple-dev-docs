@@ -6,9 +6,9 @@ Provide users with a read-only, visual representation of an application, categor
 
 #### Overview
 
-To display an application, category, or web domain, choose an [`ApplicationToken`](https://developer.apple.com/documentation/ManagedSettings/ApplicationToken), [`ActivityCategoryToken`](https://developer.apple.com/documentation/ManagedSettings/ActivityCategoryToken), or [`WebDomainToken`](https://developer.apple.com/documentation/ManagedSettings/WebDomainToken) that represents an item selected by the user. For example, you can access these tokens from the [`FamilyActivitySelection`](familyactivityselection.md) bound to a [`FamilyActivityPicker`](familyactivitypicker.md) view.
+To display an application, category, or web domain, choose an [`ApplicationToken`](https://developer.apple.com/documentation/managedsettings/applicationtoken), [`ActivityCategoryToken`](https://developer.apple.com/documentation/managedsettings/activitycategorytoken), or [`WebDomainToken`](https://developer.apple.com/documentation/managedsettings/webdomaintoken) that represents an item selected by the user. For example, you can access these tokens from the [`FamilyActivitySelection`](familyactivityselection.md) bound to a [`FamilyActivityPicker`](familyactivitypicker.md) view.
 
-Use one of these tokens to create a [`Label`](https://developer.apple.com/documentation/SwiftUI/Label) instance by passing the token to its initializer. Display the activity item like any SwiftUI view.
+Use one of these tokens to create a [`Label`](https://developer.apple.com/documentation/swiftui/label) instance by passing the token to its initializer. Display the activity item like any SwiftUI view.
 
 ```swift
 struct ExampleView: View {

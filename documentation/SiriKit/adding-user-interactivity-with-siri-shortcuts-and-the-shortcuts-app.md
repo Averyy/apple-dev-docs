@@ -16,7 +16,7 @@ When the user invokes your shortcut with their voice, Siri starts a dialog to co
 
 Choose File > New > File to add a new SiriKit Intent Definition File to your Xcode project. Make sure that you select your app target.
 
-![None](https://docs-assets.developer.apple.com/published/2569277e723fdaf737190b51498de419/media-3238886%402x.png)
+![None](/images/com.apple.sirikit/media-3238886@2x.png)
 
 ##### Define Your Intents
 
@@ -31,7 +31,7 @@ Create the new intent and define what the intent does.
 
 The figure below shows a custom intent named OrderSoup with the category, title, and description set.
 
-![None](https://docs-assets.developer.apple.com/published/a24eebfae91981f566fdcfddde39bb07/media-3238908%402x.png)
+![None](/images/com.apple.sirikit/media-3238908@2x.png)
 
 > **Note**:  Xcode automatically creates the following response codes for a custom intent: `unspecified`, `ready`, `continueInApp`, `inProgress`, `success`, `failure`, and `failureRequiringAppLaunch`.
 
@@ -41,7 +41,7 @@ Before you can use the intent, you need to define the intent’s parameters such
 
 By default, Xcode selects the User-facing checkbox. This controls whether the parameter is configurable in the Shortcuts app and resolvable at runtime in both Siri and the Shortcuts app.
 
-![None](https://docs-assets.developer.apple.com/published/68400f332b6711f5d8dc25c3370327f5/media-3238911%402x.png)
+![None](/images/com.apple.sirikit/media-3238911@2x.png)
 
 ##### Add Parameter Metadata and Siri Dialog Data
 
@@ -49,7 +49,7 @@ Siri can prompt users to complete shortcuts that require additional input based 
 
 You can also customize the Siri dialog for each parameter resolution result. Enter the phrase you want Siri to say to the app user in the Prompt field.
 
-![None](https://docs-assets.developer.apple.com/published/9861f78b8535e70c8aeb38ba72f63c98/media-3238997%402x.png)
+![None](/images/com.apple.sirikit/media-3238997@2x.png)
 
 ##### Establish Relationships Between Parameters
 
@@ -62,7 +62,7 @@ Use relationships between parameters to determine whether certain parameters sho
 
 The following example shows the `storeLocation` parameter has a child relationship to the `orderType` parent parameter. The `orderType` parameter is an enum with two values, `pickup` and `delivery`. When the user tells Siri they will pick up their order, the `storeLocation` value is automatically used.
 
-![None](https://docs-assets.developer.apple.com/published/56ddf4e8ed4661e9d8702dc0d9dd3d61/media-3239038%402x.png)
+![None](/images/com.apple.sirikit/media-3239038@2x.png)
 
 ##### Define User Configurable Shortcuts
 
@@ -73,7 +73,7 @@ User-configurable shortcuts are shortcuts that the user can configure in the Sho
 
 The following example shows a Shortcut that supports the `soup`, `orderType`, and `deliveryLocation` parameters. The summary contains the `soup` and `orderType` parameters with the `deliveryLocation` in the More Options section.
 
-![None](https://docs-assets.developer.apple.com/published/3dc2e5fb0a8875d055a5ec11eed93e27/media-3239041%402x.png)
+![None](/images/com.apple.sirikit/media-3239041@2x.png)
 
 ##### Set Intent Responses and Outputs
 
@@ -83,7 +83,7 @@ The voice-only dialog is spoken instead of the printed dialog in circumstances w
 
 The following example shows the response for a successful order. It provides the total amount, the user’s order, and the estimated wait time.
 
-![None](https://docs-assets.developer.apple.com/published/014bf50e96cc9e4d9257af52c286bc80/media-3239050%402x.png)
+![None](/images/com.apple.sirikit/media-3239050@2x.png)
 
 ## See Also
 

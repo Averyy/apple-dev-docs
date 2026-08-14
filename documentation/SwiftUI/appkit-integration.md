@@ -8,11 +8,11 @@ Add AppKit views to your SwiftUI app, or use SwiftUI views in your AppKit app.
 
 Integrate SwiftUI with your app’s existing content using hosting controllers to add SwiftUI views into AppKit interfaces. A hosting controller wraps a set of SwiftUI views in a form that you can then add to your storyboard-based app.
 
-![None](https://docs-assets.developer.apple.com/published/afddaf77e2520d7c1a298575a9bbf6d5/appkit-integration-hero%402x.png)
+![None](/images/com.apple.SwiftUI/appkit-integration-hero@2x.png)
 
 You can also add AppKit views and view controllers to your SwiftUI interfaces. A representable object wraps the designated view or view controller, and facilitates communication between the wrapped object and your SwiftUI views.
 
-For design guidance, see [`Designing for macOS`](https://developer.apple.com/design/Human-Interface-Guidelines/designing-for-macos) in the Human Interface Guidelines.
+For design guidance, see [`Designing for macOS`](https://developer.apple.com/design/human-interface-guidelines/designing-for-macos) in the Human Interface Guidelines.
 
 ## Topics
 

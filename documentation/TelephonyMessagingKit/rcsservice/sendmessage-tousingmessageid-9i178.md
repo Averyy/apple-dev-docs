@@ -7,7 +7,6 @@ Sends a composing indicator message to a specified destination.
 
 **Availability**:
 - iOS 26.0+
-- iPadOS 26.0+
 
 ## Declaration
 

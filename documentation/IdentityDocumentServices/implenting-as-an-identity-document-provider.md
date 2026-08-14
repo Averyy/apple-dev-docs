@@ -12,7 +12,7 @@ Integrating the identity document provider requires two steps: registering your 
 
 #### Add the Entitlement
 
-Before your app can provide identity documents, you must add the [`Digital Credentials API - Mobile Document Provider`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.identity-document-services.document-provider.mobile-document-types) entitlement to your app.
+Before your app can provide identity documents, you must add the [`Digital Credentials API - Mobile Document Provider`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.identity-document-services.document-provider.mobile-document-types) entitlement to your app.
 
 The API enables you to provide mobile documents (mdocs), defined in the ISO/IEC 18013-5 standard. Your app must specify which types of mobile documents it intends to provide in the entitlement. To maximize interoperability, your app needs to follow the appropriate standard that defines the namespaces and elements for a given mobile document type.
 

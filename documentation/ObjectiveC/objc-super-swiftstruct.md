@@ -42,7 +42,7 @@ The compiler generates an `objc_super` data structure when it encounters the `su
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../Swift/BitwiseCopyable.md)
+- [BitwiseCopyable](../swift/bitwisecopyable.md)
 
 ## See Also
 

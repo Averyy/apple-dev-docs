@@ -23,8 +23,8 @@ typealias ArrayCallback = ([any MTLTexture], (any Error)?) -> Void
 
 The block parameters are defined as follows:
 
-- **textures**: An array of [`MTLTexture`](https://developer.apple.com/documentation/Metal/MTLTexture) objects whose order corresponds to the requested textures. If an error occurs when loading a texture, an [`NSNull`](https://developer.apple.com/documentation/Foundation/NSNull) object occupies its place in the array.
-- **error**: If all texture loading operations were successful, this value is `nil`; otherwise, this parameter holds an [`NSError`](https://developer.apple.com/documentation/Foundation/NSError) object that describes the first problem that occurred. (Which element in the input array the error corresponds to is undefined.)
+- **textures**: An array of [`MTLTexture`](https://developer.apple.com/documentation/metal/mtltexture) objects whose order corresponds to the requested textures. If an error occurs when loading a texture, an [`NSNull`](https://developer.apple.com/documentation/foundation/nsnull) object occupies its place in the array.
+- **error**: If all texture loading operations were successful, this value is `nil`; otherwise, this parameter holds an [`NSError`](https://developer.apple.com/documentation/foundation/nserror) object that describes the first problem that occurred. (Which element in the input array the error corresponds to is undefined.)
 
 ## See Also
 

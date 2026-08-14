@@ -55,7 +55,7 @@ session.begin()
 
 The method returns immediately, and the session starts disabling system features. After achieving the desired state, the session calls its delegate’s [`assessmentSessionDidBegin(_:)`](aeassessmentsessiondelegate/assessmentsessiondidbegin(_:).md) method. Only after receiving this callback is it safe to begin your assessment. Be sure to keep a strong reference to the session as long as you want it to remain active. If the system deallocates an active session, the session automatically ends.
 
-> ❗ **Important**:  Prior to macOS 12.1, a DNS lookup that your app initiates during a session might fail. Be sure your app resolves all required domain names before beginning a session so that the system can cache the results. You can do this by using [`URLSession`](https://developer.apple.com/documentation/Foundation/URLSession) to send a `HEAD` request to each domain name that your app needs to access.
+> ❗ **Important**:  Prior to macOS 12.1, a DNS lookup that your app initiates during a session might fail. Be sure your app resolves all required domain names before beginning a session so that the system can cache the results. You can do this by using [`URLSession`](https://developer.apple.com/documentation/foundation/urlsession) to send a `HEAD` request to each domain name that your app needs to access.
 
 After completing an assessment and hiding all sensitive information, call the session’s [`end()`](aeassessmentsession/end().md) method:
 
@@ -127,14 +127,14 @@ func assessmentSession(_ session: AEAssessmentSession, wasInterruptedWithError e
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

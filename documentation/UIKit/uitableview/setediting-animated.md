@@ -20,12 +20,12 @@ func setEditing(_ editing: Bool, animated: Bool)
 
 #### Discussion
 
-When you call this method with the value of `editing` set to [`true`](https://developer.apple.com/documentation/Swift/true), the table view goes into editing mode by calling [`setEditing(_:animated:)`](uitableviewcell/setediting(_:animated:).md) on each visible `UITableViewCell` object. Calling this method with `editing` set to [`false`](https://developer.apple.com/documentation/Swift/false) turns off editing mode. In editing mode, the cells of the table might show an insertion or deletion control on the left side of each cell and a reordering control on the right side, depending on how the cell is configured. (See [`UITableViewCell`](uitableviewcell.md) for details.) The data source of the table view can selectively exclude cells from editing mode by implementing [`tableView(_:canEditRowAt:)`](uitableviewdatasource/tableview(_:caneditrowat:).md).
+When you call this method with the value of `editing` set to [`true`](https://developer.apple.com/documentation/swift/true), the table view goes into editing mode by calling [`setEditing(_:animated:)`](uitableviewcell/setediting(_:animated:).md) on each visible `UITableViewCell` object. Calling this method with `editing` set to [`false`](https://developer.apple.com/documentation/swift/false) turns off editing mode. In editing mode, the cells of the table might show an insertion or deletion control on the left side of each cell and a reordering control on the right side, depending on how the cell is configured. (See [`UITableViewCell`](uitableviewcell.md) for details.) The data source of the table view can selectively exclude cells from editing mode by implementing [`tableView(_:canEditRowAt:)`](uitableviewdatasource/tableview(_:caneditrowat:).md).
 
 ## Parameters
 
-- `editing`: [`true`](https://developer.apple.com/documentation/Swift/true) to enter editing mode; [`false`](https://developer.apple.com/documentation/Swift/false) to leave it. The default value is [`false`](https://developer.apple.com/documentation/Swift/false).
-- `animated`: [`true`](https://developer.apple.com/documentation/Swift/true) to animate the transition to editing mode; [`false`](https://developer.apple.com/documentation/Swift/false) to make the transition immediate.
+- `editing`: [`true`](https://developer.apple.com/documentation/swift/true) to enter editing mode; [`false`](https://developer.apple.com/documentation/swift/false) to leave it. The default value is [`false`](https://developer.apple.com/documentation/swift/false).
+- `animated`: [`true`](https://developer.apple.com/documentation/swift/true) to animate the transition to editing mode; [`false`](https://developer.apple.com/documentation/swift/false) to make the transition immediate.
 
 ## See Also
 

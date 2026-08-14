@@ -22,7 +22,7 @@ var preferredTransform: CGAffineTransform { get }
 
 #### Discussion
 
-The system retrieves the transform from the [`AVAssetTrack`](avassettrack.md) that provides the media data. If the source track doesn’t specify a transform, the value of this property is [`CGAffineTransformIdentity`](https://developer.apple.com/documentation/CoreGraphics/CGAffineTransformIdentity).
+The system retrieves the transform from the [`AVAssetTrack`](avassettrack.md) that provides the media data. If the source track doesn’t specify a transform, the value of this property is [`CGAffineTransformIdentity`](https://developer.apple.com/documentation/coregraphics/cgaffinetransformidentity).
 
 ## See Also
 

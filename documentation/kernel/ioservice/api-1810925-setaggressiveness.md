@@ -23,7 +23,7 @@ Implement `setAggressiveness` to receive a notification when an "aggressiveness 
 
 ## Parameters
 
-- `type`: The aggressiveness factor type, such as  ,  ,  , and  . (Aggressiveness factors are defined in  .)
+- `type`: The aggressiveness factor type, such as `kPMMinutesToDim`, `kPMMinutesToSpinDown`, `kPMMinutesToSleep`, and `kPMPowerSource`. (Aggressiveness factors are defined in `pwr_mgt/IOPM.h`.)
 - `newLevel`: The aggressiveness factor's new value.
 
 ## See Also

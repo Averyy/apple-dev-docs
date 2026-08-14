@@ -49,7 +49,7 @@ NSFileHandle *fileHandle = [NSFileHandle fileHandleForReadingAtPath:@"/dev/rdisk
     }
 ```
 
-By default, only the `root` user can access the disk file handle. Running virtual machines as `root` isn’t recommended. The best practice is to open the file in a separate process that has `root` privileges, then pass the open file descriptor using XPC or a Unix socket to a non-`root` process running Virtualization. For more information about Unix sockets, see [`Streams, Sockets, and Ports`](https://developer.apple.com/documentation/Foundation/streams-sockets-and-ports); for more information on XPC services, see the [`XPC`](https://developer.apple.com/documentation/XPC) framework documentation.
+By default, only the `root` user can access the disk file handle. Running virtual machines as `root` isn’t recommended. The best practice is to open the file in a separate process that has `root` privileges, then pass the open file descriptor using XPC or a Unix socket to a non-`root` process running Virtualization. For more information about Unix sockets, see [`Streams, Sockets, and Ports`](https://developer.apple.com/documentation/foundation/streams-sockets-and-ports); for more information on XPC services, see the [`XPC`](https://developer.apple.com/documentation/xpc) framework documentation.
 
 > ❗ **Important**:  You can’t use this method of privilege escalation in apps distributed on the Mac App Store.
 
@@ -71,12 +71,12 @@ By default, only the `root` user can access the disk file handle. Running virtua
 ### Inherits From
 - [VZStorageDeviceAttachment](vzstoragedeviceattachment.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

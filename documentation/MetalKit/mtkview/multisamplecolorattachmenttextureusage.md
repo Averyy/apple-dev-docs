@@ -21,7 +21,7 @@ var multisampleColorAttachmentTextureUsage: MTLTextureUsage { get set }
 
 #### Discussion
 
-The default value is [`renderTarget`](https://developer.apple.com/documentation/Metal/MTLTextureUsage/renderTarget).
+The default value is [`renderTarget`](https://developer.apple.com/documentation/metal/mtltextureusage/rendertarget).
 
 ## See Also
 

@@ -54,8 +54,8 @@ You retrieve existing metadata tags from an [`CGImageMetadata`](cgimagemetadata.
 ## Relationships
 
 ### Conforms To
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
 
 ## See Also
 

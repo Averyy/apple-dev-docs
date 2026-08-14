@@ -44,7 +44,7 @@ struct Concatenate<Prefix, Suffix> where Prefix : Publisher, Suffix : Publisher,
 ## Relationships
 
 ### Conforms To
-- [Equatable](../Swift/Equatable.md)
+- [Equatable](../swift/equatable.md)
 - [Publisher](publisher.md)
 
 ## See Also

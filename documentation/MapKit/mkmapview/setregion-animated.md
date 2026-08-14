@@ -28,7 +28,7 @@ When setting a new region, the map may adjust the value in the `region` paramete
 ## Parameters
 
 - `region`: The new region to display in the map view.
-- `animated`: Specify [`true`](https://developer.apple.com/documentation/Swift/true) if you want the map view to animate the transition to the new region, or [`false`](https://developer.apple.com/documentation/Swift/false) if you want the map to center on the specified region immediately.
+- `animated`: Specify [`true`](https://developer.apple.com/documentation/swift/true) if you want the map view to animate the transition to the new region, or [`false`](https://developer.apple.com/documentation/swift/false) if you want the map to center on the specified region immediately.
 
 ## See Also
 

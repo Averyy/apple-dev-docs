@@ -25,7 +25,7 @@ Calling this method can take a significantly long time (up to 30 seconds), so af
 
 ## Parameters
 
-- `completionHandler`: The block to execute with the results. This block has no return value and takes the following parameter: - **available**: [`true`](https://developer.apple.com/documentation/Swift/true) if the printer was available and its information was retrieved or [`false`](https://developer.apple.com/documentation/Swift/false) if the printer could not be found or was unavailable.
+- `completionHandler`: The block to execute with the results. This block has no return value and takes the following parameter: - **available**: [`true`](https://developer.apple.com/documentation/swift/true) if the printer was available and its information was retrieved or [`false`](https://developer.apple.com/documentation/swift/false) if the printer could not be found or was unavailable.
 
 
 ---

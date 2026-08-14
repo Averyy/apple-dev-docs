@@ -21,7 +21,7 @@ var depthData: AVDepthData? { get }
 
 #### Discussion
 
-Returns an [`AVDepthData`](https://developer.apple.com/documentation/AVFoundation/AVDepthData) if the [`CIImage`](ciimage.md) was created with [`imageWithData:`](ciimage/imagewithdata:.md) or [`imageWithContentsOfURL:`](ciimage/imagewithcontentsofurl:.md) and one of the options [`auxiliaryDepth`](ciimageoption/auxiliarydepth.md) or [`auxiliaryDisparity`](ciimageoption/auxiliarydisparity.md), otherwise [`nil`](https://developer.apple.com/documentation/ObjectiveC/nil-227m0).
+Returns an [`AVDepthData`](https://developer.apple.com/documentation/avfoundation/avdepthdata) if the [`CIImage`](ciimage.md) was created with [`imageWithData:`](ciimage/imagewithdata:.md) or [`imageWithContentsOfURL:`](ciimage/imagewithcontentsofurl:.md) and one of the options [`auxiliaryDepth`](ciimageoption/auxiliarydepth.md) or [`auxiliaryDisparity`](ciimageoption/auxiliarydisparity.md), otherwise [`nil`](https://developer.apple.com/documentation/objectivec/nil-227m0).
 
 ## See Also
 

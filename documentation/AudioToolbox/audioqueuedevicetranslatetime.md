@@ -25,7 +25,7 @@ A result code. See Result Codes.
 
 #### Discussion
 
-The device must be running for this function to provide a result. For an explanation of the various time base representations for an audio hardware device, see [`AudioTimeStamp`](https://developer.apple.com/documentation/CoreAudioTypes/AudioTimeStamp) in [`Core Audio Data Types`](https://developer.apple.com/documentation/CoreAudio/core-audio-data-types).
+The device must be running for this function to provide a result. For an explanation of the various time base representations for an audio hardware device, see [`AudioTimeStamp`](https://developer.apple.com/documentation/coreaudiotypes/audiotimestamp) in [`Core Audio Data Types`](https://developer.apple.com/documentation/coreaudio/core-audio-data-types).
 
 ## Parameters
 

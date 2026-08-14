@@ -15,7 +15,7 @@ Notifies the App Store server that your system has finished processing the custo
 
 #### Discussion
 
-If you manage entitlement logic on your server, your server can call `Finish Transaction` after it finishes providing the customer with the new content. If you call [`finish()`](https://developer.apple.com/documentation/StoreKit/Transaction/finish()) in your app, there’s no need to call the `Finish Transaction` endpoint from your server.
+If you manage entitlement logic on your server, your server can call `Finish Transaction` after it finishes providing the customer with the new content. If you call [`finish()`](https://developer.apple.com/documentation/storekit/transaction/finish()) in your app, there’s no need to call the `Finish Transaction` endpoint from your server.
 
 ## Endpoint
 

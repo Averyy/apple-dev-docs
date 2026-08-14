@@ -13,24 +13,24 @@ Construct and manage a graphical, event-driven user interface for your macOS app
 
 AppKit contains the objects you need to build the user interface for a macOS app. In addition to drawing windows, buttons, panels, and text fields, it handles all the event management and interaction between your app, people, and macOS.
 
-![An image of the Landmarks sample app on Mac showing the Mount Fuji landmark.](https://docs-assets.developer.apple.com/published/2c10ab3eda6d0a6287de306b0c8678c2/landmarks-app-article-hero%402x.png)
+![An image of the Landmarks sample app on Mac showing the Mount Fuji landmark.](/images/com.apple.appkit/landmarks-app-article-hero@2x.png)
 
 Aside from drawing and managing interactions, AppKit handles printing, animating, as well as creating documents with large amounts of data efficiently. The framework also contains built-in support for localization and accessibility to ensure that your app reaches as many people as possible.
 
-AppKit also works with [`SwiftUI`](https://developer.apple.com/documentation/SwiftUI), so you can implement parts of your AppKit app in SwiftUI or mix interface elements between the two frameworks. For example, you can place AppKit views and view controllers inside SwiftUI views, and vice versa.
+AppKit also works with [`SwiftUI`](https://developer.apple.com/documentation/swiftui), so you can implement parts of your AppKit app in SwiftUI or mix interface elements between the two frameworks. For example, you can place AppKit views and view controllers inside SwiftUI views, and vice versa.
 
-> **Note**:  For information about bringing your iPad app to Mac, see [`Mac Catalyst`](https://developer.apple.com/documentation/UIKit/mac-catalyst). To build an iOS app, you can use SwiftUI to create an app that works across all of Apple’s platforms, or use [`UIKit`](https://developer.apple.com/documentation/UIKit) to create an app for iOS only.
+> **Note**:  For information about bringing your iPad app to Mac, see [`Mac Catalyst`](https://developer.apple.com/documentation/uikit/mac-catalyst). To build an iOS app, you can use SwiftUI to create an app that works across all of Apple’s platforms, or use [`UIKit`](https://developer.apple.com/documentation/uikit) to create an app for iOS only.
 
 ## Topics
 
 ### Essentials
-- [Adopting Liquid Glass](../TechnologyOverviews/adopting-liquid-glass.md)
+- [Adopting Liquid Glass](../technologyoverviews/adopting-liquid-glass.md)
   Find out how to bring the new material to your app.
-- [AppKit updates](../Updates/AppKit.md)
+- [AppKit updates](../updates/appkit.md)
   Learn about important changes to AppKit.
-- [Protecting the User’s Privacy](../UIKit/protecting-the-user-s-privacy.md)
+- [Protecting the User’s Privacy](../uikit/protecting-the-user-s-privacy.md)
   Secure personal data, and respect user preferences for how data is used.
-- [Porting your macOS apps to Apple silicon](../Apple-Silicon/porting-your-macos-apps-to-apple-silicon.md)
+- [Porting your macOS apps to Apple silicon](../apple-silicon/porting-your-macos-apps-to-apple-silicon.md)
   Create a version of your macOS app that runs on both Apple silicon and Intel-based Mac computers.
 ### App Structure
 - [App and Environment](app-and-environment.md)

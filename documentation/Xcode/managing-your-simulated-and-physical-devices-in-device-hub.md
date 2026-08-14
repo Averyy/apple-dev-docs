@@ -12,7 +12,7 @@ To open Device Hub from Xcode without running your app, choose Manage Devices…
 
 In the Device Hub sidebar, only the simulators that you add here or that you previously chose as run destinations in Xcode appear. Similarly, only the physical devices that you pair with your Mac appear. To view the available simulated or physical devices separately, choose Simulators or Physical Devices from the filter pop-up menu at the top of the sidebar.
 
-![A screenshot of the Device Hub expanded window showing simulated and physical devices in the sidebar with the filter menu displaying, an Apple TV device in the canvas in the middle, and the settings inspector on the right.](https://docs-assets.developer.apple.com/published/ad09fe916b6112cea196855027e2643e/device-hub-manage-devices%402x.png)
+![A screenshot of the Device Hub expanded window showing simulated and physical devices in the sidebar with the filter menu displaying, an Apple TV device in the canvas in the middle, and the settings inspector on the right.](/images/com.apple.Xcode/device-hub-manage-devices@2x.png)
 
 To see the status of a device, select it in the sidebar and any issues appear in the canvas on the right. If you’re currently running an app on the device or you started a simulated device, the device screen appears instead. To explore more information about a device in the inspector, click the Info button in the far right of the toolbar.
 
@@ -24,7 +24,7 @@ You can add simulators for specific platforms and operating system versions that
 
 To add a simulator with a specific configuration, click the Add Device button (+) at the top of the sidebar and choose a device under Simulators from the pop-up menu. In the dialog, optionally enter a name for the simulator, choose the operating system version and model, and click Create. The simulator appears under Available in the sidebar.
 
-![A screenshot of dialog that appears when you choose a simulator from the Add Device pop-up menu.](https://docs-assets.developer.apple.com/published/420b8204df3b54c0eba829bf0b7ab1b4/add-additional-simulators%402x.png)
+![A screenshot of dialog that appears when you choose a simulator from the Add Device pop-up menu.](/images/com.apple.Xcode/add-additional-simulators@2x.png)
 
 To remove a simulator from Device Hub, Control-click it in the sidebar and choose Remove.
 
@@ -45,7 +45,7 @@ For tvOS and visionOS devices, make sure that your Wi-Fi network has IPv6 enable
 
 If a dialog appears on your Mac asking you to allow it to find devices, click Allow. In the Device Hub sheet, select the device that it discovers and click Next. In the next sheet, enter the PIN that appears on your device.
 
-![A screenshot of the sheet that appears when you wirelessly pair a physical device with Apple TV selected and the device-specific instructions below.](https://docs-assets.developer.apple.com/published/d5bdec29bf4db130f921873e778289f5/wirelessly-pair-device%402x.png)
+![A screenshot of the sheet that appears when you wirelessly pair a physical device with Apple TV selected and the device-specific instructions below.](/images/com.apple.Xcode/wirelessly-pair-device@2x.png)
 
 When the Trust This Computer dialog appears on the device, tap Trust. For an Apple Watch connected to an iPhone, tap Trust on both the iPhone and the Apple Watch. If you accidentally dismiss the trust dialog, or the device doesn’t immediately appear in Device Hub after you tap Trust, try restarting the device.
 

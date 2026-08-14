@@ -27,7 +27,7 @@ Connect the iPhone to your Mac over USB-C. The first time you run this sample ap
 
 ##### Set Up the Camera
 
-The sample app performs the request on a photo from a physical device. To enable use of the camera, the sample uses [`AVFoundation`](https://developer.apple.com/documentation/AVFoundation) to create a custom camera interface. Tapping the Take a Photo button on the initial view presents the camera and calls the `setup` method. This is where the camera work begins in the sample.
+The sample app performs the request on a photo from a physical device. To enable use of the camera, the sample uses [`AVFoundation`](https://developer.apple.com/documentation/avfoundation) to create a custom camera interface. Tapping the Take a Photo button on the initial view presents the camera and calls the `setup` method. This is where the camera work begins in the sample.
 
 ```swift
 CameraPreview(camera: $camera)
@@ -48,7 +48,7 @@ CameraPreview(camera: $camera)
     }
 ```
 
-For more information on how to integrate the camera, see [`Setting up a capture session`](https://developer.apple.com/documentation/AVFoundation/setting-up-a-capture-session) and [`Capturing still and Live Photos`](https://developer.apple.com/documentation/AVFoundation/capturing-still-and-live-photos).
+For more information on how to integrate the camera, see [`Setting up a capture session`](https://developer.apple.com/documentation/avfoundation/setting-up-a-capture-session) and [`Capturing still and Live Photos`](https://developer.apple.com/documentation/avfoundation/capturing-still-and-live-photos).
 
 ##### Customize the Request
 
@@ -56,7 +56,7 @@ The Vision framework provides the ability to customize the way it handles text r
 
 The two text-recognition paths are: fast and accurate. The fast path is similar to a traditional OCR approach, and the accurate path uses a neural network that’s similar to how humans read text. By default, the request uses the accurate path, so the system sets the [`recognitionLevel`](recognizetextrequest/recognitionlevel-swift.property.md) property to `accurate`.
 
-Depending on the recognition level and language correction settings, the available recognition languages change. To dynamically generate a list of available languages to choose from, the app uses the [`supportedRecognitionLanguages`](recognizetextrequest/supportedrecognitionlanguages.md) method. The app sets the recognition languages with an array of [`Locale.Language`](https://developer.apple.com/documentation/Foundation/Locale/Language-swift.struct) objects, and prioritizes the first element.
+Depending on the recognition level and language correction settings, the available recognition languages change. To dynamically generate a list of available languages to choose from, the app uses the [`supportedRecognitionLanguages`](recognizetextrequest/supportedrecognitionlanguages.md) method. The app sets the recognition languages with an array of [`Locale.Language`](https://developer.apple.com/documentation/foundation/locale/language-swift.struct) objects, and prioritizes the first element.
 
 ```swift
 func updateRequestSettings() {
@@ -102,7 +102,7 @@ class OCR {
 }
 ```
 
-Initially, the app performs the request once when it captures an image. If the app detects any changes to the request settings (for example, the recognition level), it performs the request again. The Vision framework’s perform method is asynchronous, so the system wraps the method in a [`Task`](https://developer.apple.com/documentation/Swift/Task) block.
+Initially, the app performs the request once when it captures an image. If the app detects any changes to the request settings (for example, the recognition level), it performs the request again. The Vision framework’s perform method is asynchronous, so the system wraps the method in a [`Task`](https://developer.apple.com/documentation/swift/task) block.
 
 ```swift
 .onChange(of: settingChanges, initial: true) {
@@ -115,7 +115,7 @@ Initially, the app performs the request once when it captures an image. If the a
 
 ##### Create and Display Bounding Boxes
 
-This sample provides a custom implementation to display red bounding boxes where an observation occurs. An observation contains the location and the dimensions of the [`boundingBox`](boundingboxproviding/boundingbox.md) in the form of a [`NormalizedRect`](normalizedrect.md). To create a bounding box, the app first converts the `NormalizedRect` to a [`CGRect`](https://developer.apple.com/documentation/CoreFoundation/CGRect), and then returns a [`Path`](https://developer.apple.com/documentation/SwiftUI/Path) to draw the rectangle.
+This sample provides a custom implementation to display red bounding boxes where an observation occurs. An observation contains the location and the dimensions of the [`boundingBox`](boundingboxproviding/boundingbox.md) in the form of a [`NormalizedRect`](normalizedrect.md). To create a bounding box, the app first converts the `NormalizedRect` to a [`CGRect`](https://developer.apple.com/documentation/corefoundation/cgrect), and then returns a [`Path`](https://developer.apple.com/documentation/swiftui/path) to draw the rectangle.
 
 ```swift
 struct Box: Shape {
@@ -132,7 +132,7 @@ struct Box: Shape {
 }
 ```
 
-To display the bounding boxes, the app uses the [`overlay(alignment:content:)`](https://developer.apple.com/documentation/SwiftUI/View/overlay(alignment:content:)) method on the image, and creates a bounding box for each of the observations.
+To display the bounding boxes, the app uses the [`overlay(alignment:content:)`](https://developer.apple.com/documentation/swiftui/view/overlay(alignment:content:)) method on the image, and creates a bounding box for each of the observations.
 
 ```swift
 .overlay {

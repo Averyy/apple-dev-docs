@@ -16,7 +16,7 @@ var presentationOptions: NSApplication.PresentationOptions { get set }
 
 #### Discussion
 
-This value contains a bitwise OR of the constants listed in [`NSApplication.PresentationOptions`](nsapplication/presentationoptions-swift.struct.md). Trying to set the property to an invalid combination of option flags raises an [`invalidArgumentException`](https://developer.apple.com/documentation/Foundation/NSExceptionName/invalidArgumentException) exception. See the constants for a description of the valid combinations.
+This value contains a bitwise OR of the constants listed in [`NSApplication.PresentationOptions`](nsapplication/presentationoptions-swift.struct.md). Trying to set the property to an invalid combination of option flags raises an [`invalidArgumentException`](https://developer.apple.com/documentation/foundation/nsexceptionname/invalidargumentexception) exception. See the constants for a description of the valid combinations.
 
 ## See Also
 

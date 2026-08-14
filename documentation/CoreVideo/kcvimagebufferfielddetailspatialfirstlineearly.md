@@ -22,7 +22,7 @@ let kCVImageBufferFieldDetailSpatialFirstLineEarly: CFString
 
 #### Discussion
 
-The spatial first line early detail field value is of type [`CFString`](https://developer.apple.com/documentation/CoreFoundation/CFString). The image buffer contains interleaved fields. The first line of image data corresponds to the first top, odd-numbered, field.
+The spatial first line early detail field value is of type [`CFString`](https://developer.apple.com/documentation/corefoundation/cfstring). The image buffer contains interleaved fields. The first line of image data corresponds to the first top, odd-numbered, field.
 
 ## See Also
 

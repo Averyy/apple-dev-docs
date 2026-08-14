@@ -14,7 +14,7 @@ Implement a lightweight view for Metal rendering that’s customized to your app
 
 #### Overview
 
-While MetalKit’s [`MTKView`](https://developer.apple.com/documentation/MetalKit/MTKView) provides significant functionality, allowing you to quickly get started writing Metal code, sometimes you want more control over how your Metal content is rendered. This sample app demonstrates how to create a simple Metal view derived directly from an [`NSView`](https://developer.apple.com/documentation/AppKit/NSView) or [`UIView`](https://developer.apple.com/documentation/UIKit/UIView). It uses a [`CAMetalLayer`](https://developer.apple.com/documentation/QuartzCore/CAMetalLayer) object to hold the view’s contents.
+While MetalKit’s [`MTKView`](https://developer.apple.com/documentation/metalkit/mtkview) provides significant functionality, allowing you to quickly get started writing Metal code, sometimes you want more control over how your Metal content is rendered. This sample app demonstrates how to create a simple Metal view derived directly from an [`NSView`](https://developer.apple.com/documentation/appkit/nsview) or [`UIView`](https://developer.apple.com/documentation/uikit/uiview). It uses a [`CAMetalLayer`](https://developer.apple.com/documentation/quartzcore/cametallayer) object to hold the view’s contents.
 
 ##### Configure the Sample Code Project
 
@@ -49,7 +49,7 @@ This sample provides a number of options you can enable when building the app, s
 
 ##### Configure the View with a Metal Layer
 
-For Metal to render to the view, the view needs to be backed by a [`CAMetalLayer`](https://developer.apple.com/documentation/QuartzCore/CAMetalLayer).
+For Metal to render to the view, the view needs to be backed by a [`CAMetalLayer`](https://developer.apple.com/documentation/quartzcore/cametallayer).
 
 All views in UIKit are layer backed. To indicate the type of layer backing, the view implements the `layerClass` class method.  To indicate that your view should be backed by a `CAMetalLayer`, you need to return the `CAMetalLayer` class type.
 
@@ -86,7 +86,7 @@ _drawableRenderDescriptor.colorAttachments[0].storeAction = MTLStoreActionStore;
 _drawableRenderDescriptor.colorAttachments[0].clearColor = MTLClearColorMake(0, 1, 1, 1);
 ```
 
-You also need to set the texture that the render pass renders into. Each time the app renders a frame, the renderer obtains a [`CAMetalDrawable`](https://developer.apple.com/documentation/QuartzCore/CAMetalDrawable) from the Metal layer. The drawable provides a texture for Core Animation to present onscreen. The renderer updates the render pass descriptor to render to this texture:
+You also need to set the texture that the render pass renders into. Each time the app renders a frame, the renderer obtains a [`CAMetalDrawable`](https://developer.apple.com/documentation/quartzcore/cametaldrawable) from the Metal layer. The drawable provides a texture for Core Animation to present onscreen. The renderer updates the render pass descriptor to render to this texture:
 
 ```objective-c
 id<CAMetalDrawable> currentDrawable = [metalLayer nextDrawable];
@@ -106,7 +106,7 @@ The rest of the rendering code is similar to that found in other Metal samples. 
 
 To animate the view, the sample sets up a display link. The display link calls the view at the specified interval, synchronizing updates to the display’s refresh interval. The view calls the renderer object to render a new frame of animation.
 
-`AAPLUIView` creates a [`CADisplayLink`](https://developer.apple.com/documentation/QuartzCore/CADisplayLink) in the `setupCADisplayLinkForScreen` method. Because you need to know which screen the window is on before creating the display link, you call this method when UIKit calls your view’s [`didMoveToWindow()`](https://developer.apple.com/documentation/UIKit/UIView/didMoveToWindow()) method. UIKit calls this method the first time the view is added to a window and when the view is moved to another screen. The code below stops the render loop and initializes a new display link.
+`AAPLUIView` creates a [`CADisplayLink`](https://developer.apple.com/documentation/quartzcore/cadisplaylink) in the `setupCADisplayLinkForScreen` method. Because you need to know which screen the window is on before creating the display link, you call this method when UIKit calls your view’s [`didMoveToWindow()`](https://developer.apple.com/documentation/uikit/uiview/didmovetowindow()) method. UIKit calls this method the first time the view is added to a window and when the view is moved to another screen. The code below stops the render loop and initializes a new display link.
 
 ```objective-c
 - (void)setupCADisplayLinkForScreen:(UIScreen*)screen
@@ -121,7 +121,7 @@ To animate the view, the sample sets up a display link. The display link calls t
 }
 ```
 
-`AAPLNSView` uses a [`CVDisplayLink`](https://developer.apple.com/documentation/CoreVideo/cvdisplaylink-k0k) instead of a `CADisplayLink` because `CADisplayLink` is not available on macOS. `CVDisplayLink` and `CADisplayLink` API look different, but, in principle, have the same goal, which is to allow callbacks in sync with the display. `AAPLNSView` creates a `CVDisplayLink` in the `setupCVDisplayLinkForScreen` method.  The `setupCVDisplayLinkForScreen` method is called from [`viewDidMoveToWindow()`](https://developer.apple.com/documentation/AppKit/NSView/viewDidMoveToWindow()), which AppKit calls immediately after loading the view. If the view is moved to another screen, AppKit also calls `viewDidMoveToWindow`, and like the previous code for UIKit, the AppKit view needs to recreate the display link for the new screen.
+`AAPLNSView` uses a [`CVDisplayLink`](https://developer.apple.com/documentation/corevideo/cvdisplaylink-k0k) instead of a `CADisplayLink` because `CADisplayLink` is not available on macOS. `CVDisplayLink` and `CADisplayLink` API look different, but, in principle, have the same goal, which is to allow callbacks in sync with the display. `AAPLNSView` creates a `CVDisplayLink` in the `setupCVDisplayLinkForScreen` method.  The `setupCVDisplayLinkForScreen` method is called from [`viewDidMoveToWindow()`](https://developer.apple.com/documentation/appkit/nsview/viewdidmovetowindow()), which AppKit calls immediately after loading the view. If the view is moved to another screen, AppKit also calls `viewDidMoveToWindow`, and like the previous code for UIKit, the AppKit view needs to recreate the display link for the new screen.
 
 ```objective-c
 - (BOOL)setupCVDisplayLinkForScreen:(NSScreen*)screen

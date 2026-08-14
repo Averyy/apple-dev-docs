@@ -31,7 +31,7 @@ As you move the *thumb* of a slider, it passes its updated value to any actions 
 
 The following image shows the terms used to describe the constituent parts of a [`UISlider`](uislider.md) object in a left-to-right configuration.
 
-![Example slider object.](https://docs-assets.developer.apple.com/published/697482ef987ca5611fd201862aa90b1e/media-2555491%402x.png)
+![Example slider object.](/images/com.apple.uikit/media-2555491@2x.png)
 
 To add a slider to your interface:
 
@@ -44,7 +44,7 @@ To add a slider to your interface:
 
 Sliders use the target-action design pattern to notify your app when the user moves the slider. To be notified when the slider’s value changes, register your action method with the [`valueChanged`](uicontrol/event/valuechanged.md) event. At runtime, the slider calls your method in response to the user changing the slider’s value.
 
-By default, the slider sends value-changed events continuously as the user moves the slider’s thumb control. Setting the [`isContinuous`](uislider/iscontinuous.md) property to [`false`](https://developer.apple.com/documentation/Swift/false) causes the slider to send an event only when the user releases the slider’s thumb control, setting the final value.
+By default, the slider sends value-changed events continuously as the user moves the slider’s thumb control. Setting the [`isContinuous`](uislider/iscontinuous.md) property to [`false`](https://developer.apple.com/documentation/swift/false) causes the slider to send an event only when the user releases the slider’s thumb control, setting the final value.
 
 You connect a slider to your action method by using the [`addTarget(_:action:for:)`](uicontrol/addtarget(_:action:for:).md) method or by creating a connection in Interface Builder. The signature of an action method takes one of three forms, as shown in the following code. Choose the form that provides the information that you need to respond to the value change in the slider.
 
@@ -105,19 +105,19 @@ Use Auto Layout to specify the position and width of a slider. The intrinsic hei
 
 The most common way to customize the slider’s appearance is to provide custom minimum and maximum value images. These images sit at either end of the slider control and indicate which value that end of the slider represents. Set the values of the [`minimumValueImage`](uislider/minimumvalueimage.md) and [`maximumValueImage`](uislider/maximumvalueimage.md) properties to appropriate [`UIImage`](uiimage.md) objects to display images at the ends of the slider. The following image shows a slider configured with minimum and maximum images that imply volume adjustment.
 
-![Image of a slider with minimum and maximum images.](https://docs-assets.developer.apple.com/published/9c342329a09b857d4e45ec2cabee3951/media-2555496%402x.png)
+![Image of a slider with minimum and maximum images.](/images/com.apple.uikit/media-2555496@2x.png)
 
 > **Note**: Sliders respond to user interaction with dynamic effects and appearance. If you set custom tint colors for the track or thumb, the slider maintains this behavior. If you use images to customize the appearance of the track, then the slider doesn’t apply the dynamic effects or alter the appearance.
 
 To set custom tint colors for both the track and the thumb of a slider, use the [`minimumTrackTintColor`](uislider/minimumtracktintcolor.md), [`maximumTrackTintColor`](uislider/maximumtracktintcolor.md), and [`thumbTintColor`](uislider/thumbtintcolor.md) properties, as shown in the following image.
 
-![Image of a slider with custom tint colors.](https://docs-assets.developer.apple.com/published/2a9e07e4096750c145d5673c3c1840a1/media-2555498%402x.png)
+![Image of a slider with custom tint colors.](/images/com.apple.uikit/media-2555498@2x.png)
 
 By default, the minimum track tint color defers to the tint color of the slider control.
 
 To completely change the appearance of the slider, you can specify images for the thumb and the track. Provide images for each of the control states (normal, highlighted, and so on) with the [`setMinimumTrackImage(_:for:)`](uislider/setminimumtrackimage(_:for:).md), [`setMaximumTrackImage(_:for:)`](uislider/setmaximumtrackimage(_:for:).md), and [`setThumbImage(_:for:)`](uislider/setthumbimage(_:for:).md) methods. Set the [`capInsets`](uiimage/capinsets.md) property for the track images to facilitate horizontal stretching. To access the images used in the current control state, use the [`currentMinimumTrackImage`](uislider/currentminimumtrackimage.md), [`currentMaximumTrackImage`](uislider/currentmaximumtrackimage.md), and [`currentThumbImage`](uislider/currentthumbimage.md) properties, as shown in the following image.
 
-![Image of a slider with custom track and thumb images.](https://docs-assets.developer.apple.com/published/63d9b43d57b05ccbcff8d4b365668b63/media-2555497%402x.png)
+![Image of a slider with custom track and thumb images.](/images/com.apple.uikit/media-2555497@2x.png)
 
 ##### Provide Localized Strings
 
@@ -210,19 +210,19 @@ For more information about making iOS controls accessible, see the accessibility
 ### Inherits From
 - [UIControl](uicontrol.md)
 ### Conforms To
-- [CALayerDelegate](../QuartzCore/CALayerDelegate.md)
-- [CLBodyIdentifiable](../CoreLocation/CLBodyIdentifiable.md)
-- [CMBodyIdentifiable](../CoreMotion/CMBodyIdentifiable.md)
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCoding](../Foundation/NSCoding.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [NSTouchBarProvider](../AppKit/NSTouchBarProvider.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [CALayerDelegate](../quartzcore/calayerdelegate.md)
+- [CLBodyIdentifiable](../corelocation/clbodyidentifiable.md)
+- [CMBodyIdentifiable](../coremotion/cmbodyidentifiable.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCoding](../foundation/nscoding.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSTouchBarProvider](../appkit/nstouchbarprovider.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 - [UIAccessibilityIdentification](uiaccessibilityidentification.md)
 - [UIActivityItemsConfigurationProviding](uiactivityitemsconfigurationproviding.md)
 - [UIAppearance](uiappearance.md)

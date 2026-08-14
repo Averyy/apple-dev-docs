@@ -23,7 +23,7 @@ func geocodeAddressString(_ addressString: String, in region: CLRegion?) async t
 
 > ❗ **Important**:  You can call this method from synchronous code using a completion handler, as shown on this page, or you can call it as an asynchronous method that has the following declaration: ```swift
 func geocodeAddressString(_ addressString: String, in region: CLRegion?) async throws -> [CLPlacemark]
-``` For information about concurrency and asynchronous code in Swift, see [`Calling Objective-C APIs Asynchronously`](https://developer.apple.com/documentation/Swift/calling-objective-c-apis-asynchronously).
+``` For information about concurrency and asynchronous code in Swift, see [`Calling Objective-C APIs Asynchronously`](https://developer.apple.com/documentation/swift/calling-objective-c-apis-asynchronously).
 
 This method submits the specified location data to the geocoding server asynchronously and returns. Your completion handler block will be executed on the main thread.
 

@@ -20,7 +20,7 @@ static let onWristState: SRSensor
 
 The [`sample`](srfetchresult/sample.md) type for this sensor is [`SRWristDetection`](srwristdetection.md)
 
-You need to provide a reason to detect the watch position by adding the [`SRSensorUsageWristDetection`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSSensorKitUsageDetail/SRSensorUsageWristDetection) dictionary to the [`NSSensorKitUsageDetail`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSSensorKitUsageDetail) key in the information property list.
+You need to provide a reason to detect the watch position by adding the [`SRSensorUsageWristDetection`](https://developer.apple.com/documentation/bundleresources/information-property-list/nssensorkitusagedetail/srsensorusagewristdetection) dictionary to the [`NSSensorKitUsageDetail`](https://developer.apple.com/documentation/bundleresources/information-property-list/nssensorkitusagedetail) key in the information property list.
 
 ## See Also
 

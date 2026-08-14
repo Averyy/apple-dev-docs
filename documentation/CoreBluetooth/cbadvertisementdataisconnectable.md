@@ -22,7 +22,7 @@ let CBAdvertisementDataIsConnectable: String
 
 #### Discussion
 
-The value for this key is an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) object. You can use this value to determine whether your app can currently connect to a peripheral.
+The value for this key is an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) object. You can use this value to determine whether your app can currently connect to a peripheral.
 
 ## See Also
 

@@ -28,9 +28,9 @@ This delegate method replaces `application:printFiles:`, which is now deprecated
 ## Parameters
 
 - `application`: The application object that is handling the printing.
-- `fileNames`: An array of [`NSString`](https://developer.apple.com/documentation/Foundation/NSString) objects, each of which contains the name of a file to print.
+- `fileNames`: An array of [`NSString`](https://developer.apple.com/documentation/foundation/nsstring) objects, each of which contains the name of a file to print.
 - `printSettings`: A dictionary containing `NSPrintInfo`-compatible print job attributes.
-- `showPrintPanels`: A Boolean that specifies whether the print panel should be displayed for each file printed. Print progress indicators will be presented even if this value is [`false`](https://developer.apple.com/documentation/Swift/false).
+- `showPrintPanels`: A Boolean that specifies whether the print panel should be displayed for each file printed. Print progress indicators will be presented even if this value is [`false`](https://developer.apple.com/documentation/swift/false).
 
 ## See Also
 

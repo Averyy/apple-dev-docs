@@ -21,7 +21,7 @@ var sslCipherSuites: Set<NSNumber>? { get set }
 
 #### Discussion
 
-Values for cipher suites are defined in `<Security/CipherSuite.h>`. These values should be wrapped as [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) objects in a set. If this property is set to `nil`, the default cipher suites will be used.
+Values for cipher suites are defined in `<Security/CipherSuite.h>`. These values should be wrapped as [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) objects in a set. If this property is set to `nil`, the default cipher suites will be used.
 
 ## See Also
 

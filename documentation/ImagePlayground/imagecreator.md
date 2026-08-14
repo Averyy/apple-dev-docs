@@ -22,7 +22,7 @@ final class ImageCreator
 
 Use an `ImageCreator` object to generate images programmatically from your app on devices that support the capability. You provide a description of the image content, as a text string or as a combination of text and images. The system’s generative models use that information to generate one or more images and return them to your code.
 
-Create an `ImageCreator` object and use its [`images(for:style:limit:)`](imagecreator/images(for:style:limit:).md) method to start the image generation process. Image generation occurs asynchronously, delivering results back to your code using an [`AsyncSequence`](https://developer.apple.com/documentation/Swift/AsyncSequence) object.
+Create an `ImageCreator` object and use its [`images(for:style:limit:)`](imagecreator/images(for:style:limit:).md) method to start the image generation process. Image generation occurs asynchronously, delivering results back to your code using an [`AsyncSequence`](https://developer.apple.com/documentation/swift/asyncsequence) object.
 
 ## Topics
 
@@ -47,8 +47,8 @@ Create an `ImageCreator` object and use its [`images(for:style:limit:)`](imagecr
 ## Relationships
 
 ### Conforms To
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 
 ---

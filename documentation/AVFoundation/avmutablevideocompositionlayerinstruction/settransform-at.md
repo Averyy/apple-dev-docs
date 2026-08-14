@@ -21,7 +21,7 @@ func setTransform(_ transform: CGAffineTransform, at time: CMTime)
 
 #### Discussion
 
-Sets a fixed transform to apply from the specified time until the next time at which a transform is set. This is the same as setting a flat ramp for that time range. Before the first specified time for which a transform is set, the affine transform is held constant at the value of [`CGAffineTransformIdentity`](https://developer.apple.com/documentation/CoreGraphics/CGAffineTransformIdentity); after the last time for which a transform is set, the affine transform is held constant at that last value.
+Sets a fixed transform to apply from the specified time until the next time at which a transform is set. This is the same as setting a flat ramp for that time range. Before the first specified time for which a transform is set, the affine transform is held constant at the value of [`CGAffineTransformIdentity`](https://developer.apple.com/documentation/coregraphics/cgaffinetransformidentity); after the last time for which a transform is set, the affine transform is held constant at that last value.
 
 ## Parameters
 

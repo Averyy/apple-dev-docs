@@ -30,11 +30,11 @@ This method applies the keystone correction vertical. The effect performs vertic
 The keystone vertical filter uses the following properties:
 
 - **`inputImage`**: An image with the type [`CIImage`](ciimage.md).
-- **`topLeft`**: A [`CGPoint`](https://developer.apple.com/documentation/CoreFoundation/CGPoint) in the input image mapped to the top-left corner of the output image.
-- **`topRight`**: A [`CGPoint`](https://developer.apple.com/documentation/CoreFoundation/CGPoint) in the input image mapped to the top-right corner of the output image.
-- **`bottomLeft`**: A [`CGPoint`](https://developer.apple.com/documentation/CoreFoundation/CGPoint) in the input image mapped to the bottom-left corner of the output image.
-- **`bottomRight`**: A [`CGPoint`](https://developer.apple.com/documentation/CoreFoundation/CGPoint) in the input image mapped to the bottom-right corner of the output image.
-- **`focalLength`**: A `float` representing the simulated focal length as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+- **`topLeft`**: A [`CGPoint`](https://developer.apple.com/documentation/corefoundation/cgpoint) in the input image mapped to the top-left corner of the output image.
+- **`topRight`**: A [`CGPoint`](https://developer.apple.com/documentation/corefoundation/cgpoint) in the input image mapped to the top-right corner of the output image.
+- **`bottomLeft`**: A [`CGPoint`](https://developer.apple.com/documentation/corefoundation/cgpoint) in the input image mapped to the bottom-left corner of the output image.
+- **`bottomRight`**: A [`CGPoint`](https://developer.apple.com/documentation/corefoundation/cgpoint) in the input image mapped to the bottom-right corner of the output image.
+- **`focalLength`**: A `float` representing the simulated focal length as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
 
 The following code creates a filter that distorts the image:
 
@@ -51,7 +51,7 @@ func keystoneCorrectionVertical(inputImage: CIImage) -> CIImage {
 }
 ```
 
-![Two photographs of a large building on the corner of an intersection. The building has small windows and is made of a brick structure. The photo on the left has no modifications to size or color. In the photo on the right, a keystone correction vertical filter is applied, distorting the rectangular image to appear slanted with the bottom-left corner of the photo raised.](https://docs-assets.developer.apple.com/published/5adec7e11d4b2dde2b6a88e022370867/media-3582222%402x.png)
+![Two photographs of a large building on the corner of an intersection. The building has small windows and is made of a brick structure. The photo on the left has no modifications to size or color. In the photo on the right, a keystone correction vertical filter is applied, distorting the rectangular image to appear slanted with the bottom-left corner of the photo raised.](/images/com.apple.coreimage/media-3582222@2x.png)
 
 ## See Also
 

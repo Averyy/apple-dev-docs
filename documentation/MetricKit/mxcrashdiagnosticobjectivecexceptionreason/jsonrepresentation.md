@@ -20,7 +20,7 @@ func jsonRepresentation() -> Data
 
 #### Return Value
 
-An [`NSData`](https://developer.apple.com/documentation/Foundation/NSData) object containing the JSON representation of the metrics in the payload.
+An [`NSData`](https://developer.apple.com/documentation/foundation/nsdata) object containing the JSON representation of the metrics in the payload.
 
 ## See Also
 

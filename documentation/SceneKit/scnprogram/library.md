@@ -26,7 +26,7 @@ If this property’s value is nil (the default), SceneKit loads shader functions
 
 ## See Also
 
-- [func makeDefaultLibrary() -> (any MTLLibrary)?](../Metal/MTLDevice/makeDefaultLibrary.md)
+- [func makeDefaultLibrary() -> (any MTLLibrary)?](../metal/mtldevice/makedefaultlibrary.md)
   Creates a Metal library instance that contains the functions from your app’s default Metal library.
 - [var vertexFunctionName: String?](scnprogram/vertexfunctionname.md)
   The name of the vertex shader function to load from a Metal shader library.

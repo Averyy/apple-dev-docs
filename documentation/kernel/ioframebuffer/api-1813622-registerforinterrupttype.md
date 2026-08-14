@@ -26,7 +26,7 @@ The IOFramebuffer class will call its subclasses to set callbacks to be called o
 
 ## Parameters
 
-- `interruptType`: kIOFBVBLInterruptType Specifying a vertical blanking interrupt. kIOFBConnectInterruptType Specify the display connection should be resensed.
+- `interruptType`: One of these constants: kIOFBVBLInterruptType Specifying a vertical blanking interrupt. kIOFBConnectInterruptType Specify the display connection should be resensed.
 - `proc`: C callback to be called by the driver when the specified event occurs.
 - `target`: Target parameter for the callback proc.
 - `ref`: Ref parameter for the callback proc.

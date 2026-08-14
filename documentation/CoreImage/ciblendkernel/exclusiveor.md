@@ -21,7 +21,7 @@ class var exclusiveOr: CIBlendKernel { get }
 
 #### Discussion
 
-![The result of using the exclusive or blend kernel (background image is top left, foreground image is bottom left)](https://docs-assets.developer.apple.com/published/ff95f6cecde4306464b00a64823f0023/media-2926866%402x.png)
+![The result of using the exclusive or blend kernel (background image is top left, foreground image is bottom left)](/images/com.apple.coreimage/media-2926866@2x.png)
 
 ## See Also
 

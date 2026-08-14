@@ -26,7 +26,7 @@ Few views should need to save state information. Most views should just be confi
 
 Your implementation of this method can encode other restorable view and view controller objects that it needs to reference. Encoding a restorable view or view controller writes that object’s restoration identifier to the coder. (That identifier is used during the decode process to locate the new version of the object.) If the view or view controller defines its own version of this method, that method is also called at some point so that the object can encode its own state.
 
-Apart from views and view controllers, other objects follow the normal serialization process and must adopt the [`NSCoding`](https://developer.apple.com/documentation/Foundation/NSCoding) protocol before they can be encoded. Encoding such objects embeds the object’s contents in the archive directly. During the decode process, a new object is created and initialized with the data from the archive.
+Apart from views and view controllers, other objects follow the normal serialization process and must adopt the [`NSCoding`](https://developer.apple.com/documentation/foundation/nscoding) protocol before they can be encoded. Encoding such objects embeds the object’s contents in the archive directly. During the decode process, a new object is created and initialized with the data from the archive.
 
 It is recommended that you call `super` at some point during your implementation to give parent classes an opportunity to save their state information.
 

@@ -52,7 +52,7 @@ The pending set only contains items that are already known to the File Provider 
 
 ### Inherits From
 - [NSFileProviderEnumerator](nsfileproviderenumerator.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

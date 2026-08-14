@@ -17,7 +17,7 @@ var drawableRenderContextSupportedStencilFormats: [MTLPixelFormat] { get }
 
 #### Discussion
 
-The pixel formats in this property tell you which [`MTLPixelFormat`](https://developer.apple.com/documentation/Metal/MTLPixelFormat) pixel arrangements and characteristics the layer supports for its stencil textures with the `RenderContext`.
+The pixel formats in this property tell you which [`MTLPixelFormat`](https://developer.apple.com/documentation/metal/mtlpixelformat) pixel arrangements and characteristics the layer supports for its stencil textures with the `RenderContext`.
 
 > **Note**: Pixel formats are further detailed in [`Metal Feature Set Tables`](https://developer.apple.comhttps://developer.apple.com/metal/Metal-Feature-Set-Tables.pdf).
 

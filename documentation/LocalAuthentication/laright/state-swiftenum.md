@@ -20,7 +20,7 @@ enum State
 
 #### Overview
 
-You can use key-value observation and the [`Combine`](https://developer.apple.com/documentation/Combine) framework to observe the authorization state of an [`LARight`](laright.md) instance:
+You can use key-value observation and the [`Combine`](https://developer.apple.com/documentation/combine) framework to observe the authorization state of an [`LARight`](laright.md) instance:
 
 ```swift
 let right = LARight()
@@ -50,12 +50,12 @@ try await right.authorize(localizedReason: "Access sandcastle competition design
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../Swift/BitwiseCopyable.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [RawRepresentable](../Swift/RawRepresentable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [BitwiseCopyable](../swift/bitwisecopyable.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [RawRepresentable](../swift/rawrepresentable.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

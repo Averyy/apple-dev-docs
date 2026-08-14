@@ -18,7 +18,7 @@ case bestEffort
 
 #### Discussion
 
-This Wi-Fi access category is the default for packets transmitted by a `NetworkConnection`, as well as if you set `serviceClass = .bestEffort` with [`NWParameters`](https://developer.apple.com/documentation/Network/NWParameters). Use this category for bulk transfers that are visible to a person using your app.
+This Wi-Fi access category is the default for packets transmitted by a `NetworkConnection`, as well as if you set `serviceClass = .bestEffort` with [`NWParameters`](https://developer.apple.com/documentation/network/nwparameters). Use this category for bulk transfers that are visible to a person using your app.
 
 For more information, refer to [`NWParameters.ServiceClass.bestEffort`](https://developer.apple.comhttps://developer.apple.com/documentation/network/nwparameters/serviceclass-swift.enum/besteffort)
 

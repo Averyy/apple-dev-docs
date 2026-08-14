@@ -25,8 +25,8 @@ You must call this function between the creation and release of a printing sessi
 ## Parameters
 
 - `printSession`: The printing session that provides a context for the print job. The printer associated with this session is queried for the MIME types it supports.
-- `destType`: A destination type that specifies the destination for which you want to obtain valid destination formats. See   for a list of the possible destination types a print job can have.
-- `documentFormatP`: A pointer to your   variable. On return, the variable refers to a Core Foundation array that contains a list of destination formats that can be generated for the current print destination. See   for a list of some of the output formats that can be returned.
+- `destType`: A destination type that specifies the destination for which you want to obtain valid destination formats. See [`PMDestinationType`](pmdestinationtype.md) for a list of the possible destination types a print job can have.
+- `documentFormatP`: A pointer to your [`CFArray`](https://developer.apple.com/documentation/corefoundation/cfarray) variable. On return, the variable refers to a Core Foundation array that contains a list of destination formats that can be generated for the current print destination. See [`Document Format Strings`](core_printing/document_format_strings.md) for a list of some of the output formats that can be returned.
 
 ## See Also
 

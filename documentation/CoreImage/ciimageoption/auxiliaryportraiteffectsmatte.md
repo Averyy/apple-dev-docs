@@ -21,7 +21,7 @@ static let auxiliaryPortraitEffectsMatte: CIImageOption
 
 #### Discussion
 
-The value of this key is an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) containing a Boolean `true` or `false`.
+The value of this key is an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) containing a Boolean `true` or `false`.
 
 ## See Also
 

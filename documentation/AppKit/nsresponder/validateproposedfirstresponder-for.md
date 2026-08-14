@@ -16,7 +16,7 @@ func validateProposedFirstResponder(_ responder: NSResponder, for event: NSEvent
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/Swift/true) if the control should become first responder, otherwise [`false`](https://developer.apple.com/documentation/Swift/false).
+[`true`](https://developer.apple.com/documentation/swift/true) if the control should become first responder, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
 
 #### Discussion
 
@@ -24,7 +24,7 @@ Some controls, such as `NSTextField`, should only become first responder when th
 
 The [`NSTableView`](nstableview.md), [`NSOutlineView`](nsoutlineview.md), and [`NSBrowser`](nsbrowser.md) classes implement this to allow first responder status only if the responder is a view in a selected row. It also delays the first responder assignment if a `doubleAction` may be invoked.
 
-The default implementation returns [`true`](https://developer.apple.com/documentation/Swift/true) when there is no [`nextResponder`](nsresponder/nextresponder.md) set, otherwise, it is forwarded up the responder chain.
+The default implementation returns [`true`](https://developer.apple.com/documentation/swift/true) when there is no [`nextResponder`](nsresponder/nextresponder.md) set, otherwise, it is forwarded up the responder chain.
 
 ## Parameters
 

@@ -37,7 +37,7 @@ For information about how to display the share sheet and configure your delegate
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 ### Inherited By
 - [NSSharingServicePickerToolbarItemDelegate](nssharingservicepickertoolbaritemdelegate.md)
 - [NSSharingServicePickerTouchBarItemDelegate](nssharingservicepickertouchbaritemdelegate.md)

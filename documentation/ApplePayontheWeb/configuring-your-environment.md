@@ -20,7 +20,7 @@ Follow the instructions in [`Configure Apple Pay on the Web`](https://developer.
 
 While your merchant ID never expires, the payment processing certificate, merchant identity certificate, and domain verification do expire. See [`Maintaining Your Environment`](maintaining-your-environment.md) for more information.
 
-> 💡 **Tip**:  You can use the same merchant ID and payment processing certificate in iOS and watchOS apps. If you’re developing apps, enable Apple Pay in Xcode as a last step. See [`Setting up Apple Pay`](https://developer.apple.com/documentation/PassKit/setting-up-apple-pay) for more information.
+> 💡 **Tip**:  You can use the same merchant ID and payment processing certificate in iOS and watchOS apps. If you’re developing apps, enable Apple Pay in Xcode as a last step. See [`Setting up Apple Pay`](https://developer.apple.com/documentation/passkit/setting-up-apple-pay) for more information.
 
 ##### Register and Verify Your Domain
 

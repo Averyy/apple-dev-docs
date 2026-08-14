@@ -31,10 +31,10 @@ The persistent cookie storage returned by [`shared`](httpcookiestorage/shared.md
 - iOS — Each app and app extension has a unique data container, meaning  they have separate cookie stores. You can obtain a common cookie storage by using the [`sharedCookieStorage(forGroupContainerIdentifier:)`](httpcookiestorage/sharedcookiestorage(forgroupcontaineridentifier:).md) method.
 - macOS (non-sandboxed) — As of macOS 10.11, each app has its own cookie storage. Prior to macOS 10.11, a common cookie store is shared among the user’s apps.
 - macOS (sandboxed) — Same as iOS.
-- [`UIWebView`](https://developer.apple.com/documentation/UIKit/UIWebView) — `UIWebView` instances within an app inherit the parent app’s shared cookie storage.
-- [`WKWebView`](https://developer.apple.com/documentation/WebKit/WKWebView) — Each `WKWebView` instance has its own cookie storage. See the [`WKHTTPCookieStore`](https://developer.apple.com/documentation/WebKit/WKHTTPCookieStore) class for more information.
+- [`UIWebView`](https://developer.apple.com/documentation/uikit/uiwebview) — `UIWebView` instances within an app inherit the parent app’s shared cookie storage.
+- [`WKWebView`](https://developer.apple.com/documentation/webkit/wkwebview) — Each `WKWebView` instance has its own cookie storage. See the [`WKHTTPCookieStore`](https://developer.apple.com/documentation/webkit/wkhttpcookiestore) class for more information.
 
-Session cookies (where the cookie object’s [`isSessionOnly`](httpcookie/issessiononly.md) property is [`true`](https://developer.apple.com/documentation/Swift/true)) are local to a single process and are not shared.
+Session cookies (where the cookie object’s [`isSessionOnly`](httpcookie/issessiononly.md) property is [`true`](https://developer.apple.com/documentation/swift/true)) are local to a single process and are not shared.
 
 > **Note**:  In cases where a cookie storage is shared between processes, changes made to the cookie accept policy affect all currently running apps using the cookie storage.
 
@@ -90,16 +90,16 @@ When overriding methods of this class, be aware that methods that take a `task` 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

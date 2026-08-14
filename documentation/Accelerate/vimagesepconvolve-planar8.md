@@ -30,7 +30,7 @@ A separable convolution applies two separate 1D filters along the rows and colum
 
 An example of separable convolution is the edge-detection Sobel filter, for approximating the image gradient. The Sobel filter is the outer product of the averaging filter, `[1, 2, 1]`, and the differentiation filter, `[-1, 0, 1]`. For the image x-derivative, this results in the general 2D filter:
 
-![Matrix multiplication that describes the column matrix that contains the values one, two, one multiplied by the row matrix that contains the values minus one, zero, one. The result is a square matrix that contains the values minus one, zero, one, minus two, zero, two, minus one, zero, one.](https://docs-assets.developer.apple.com/published/18367b3770d94be478838f64f110f9cf/media-3591847%402x.png)
+![Matrix multiplication that describes the column matrix that contains the values one, two, one multiplied by the row matrix that contains the values minus one, zero, one. The result is a square matrix that contains the values minus one, zero, one, minus two, zero, two, minus one, zero, one.](/images/com.apple.accelerate/media-3591847@2x.png)
 
 Note that the differentiation filter produces a result that contains, on average, half of the destination values having a negative value. Add a bias of 128 to allow the operation to represent values in the range `-1...1` as unsigned 8-bit integer destination pixels. For example, the operation represents a result of -1 as 0 in the destination, and represents a result of 1 as 255 in the destination.
 
@@ -58,7 +58,7 @@ let error = vImageSepConvolve_Planar8(&planarSourceBuffer,
 
 The following image shows two photographs, with the original image on the left, and the image after applying the Sobel filter on the right:
 
-![An image of some buildings before and after applying an edge detection filter.](https://docs-assets.developer.apple.com/published/b83b33b843707ee00971f9e18fccb9ed/media-3591853%402x.png)
+![An image of some buildings before and after applying an edge detection filter.](/images/com.apple.accelerate/media-3591853@2x.png)
 
 ##### Optimize Performance with Temporary Buffers
 

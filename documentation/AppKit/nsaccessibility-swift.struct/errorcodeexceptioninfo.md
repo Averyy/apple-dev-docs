@@ -16,7 +16,7 @@ static let ErrorCodeExceptionInfo: String
 
 #### Discussion
 
-This key will appear in an exception’s dictionary. Its value will be an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+This key will appear in an exception’s dictionary. Its value will be an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
 
 
 ---

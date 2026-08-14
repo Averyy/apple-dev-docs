@@ -31,7 +31,7 @@ A class that adopts this protocol is responsible for both presenting and dismiss
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 
 ---

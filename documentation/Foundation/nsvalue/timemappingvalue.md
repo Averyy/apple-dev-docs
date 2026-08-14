@@ -22,7 +22,7 @@ var timeMappingValue: CMTimeMapping { get }
 
 ## See Also
 
-- [struct CMTimeMapping](../CoreMedia/CMTimeMapping.md)
+- [struct CMTimeMapping](../coremedia/cmtimemapping.md)
   A structure that maps a segment of a source time range to a target time range.
 - [init(CMTime: CMTime)](nsvalue/init(cmtime:).md)
   Creates a new value object containing the specified CoreMedia time structure.

@@ -29,7 +29,7 @@ This filter creates an outline of a rounded rectangle.
 
 The filter takes the following properties:
 
-- **`extent`**: A [`CGRect`](https://developer.apple.com/documentation/CoreFoundation/CGRect) containing the position and size of the rectangle.
+- **`extent`**: A [`CGRect`](https://developer.apple.com/documentation/corefoundation/cgrect) containing the position and size of the rectangle.
 - **`width`**: The width of the stroke to draw.
 - **`radius`**: The corner radius.
 
@@ -46,7 +46,7 @@ func roundedRectangleStroke() -> CIImage {
 }
 ```
 
-![An image containing an outlined rectangle with rounded corners.](https://docs-assets.developer.apple.com/published/eaedcc8a9a527ae533a63c7e5e6f5084/media-4407287%402x.png)
+![An image containing an outlined rectangle with rounded corners.](/images/com.apple.coreimage/media-4407287@2x.png)
 
 ## See Also
 

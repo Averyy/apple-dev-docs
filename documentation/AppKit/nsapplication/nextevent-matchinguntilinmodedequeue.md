@@ -32,9 +32,9 @@ You can specify one of the run loop modes defined by AppKit or a custom run loop
 ## Parameters
 
 - `mask`: Contains one or more flags indicating the types of events to return. The constants section of the [`NSEvent`](nsevent.md) class defines the constants you can add together to create this mask. The [`discardEvents(matching:before:)`](nsapplication/discardevents(matching:before:).md) method also lists several of these constants.
-- `expiration`: The expiration date for the current event request. Specifying nil for this parameter is equivalent to returning a date object using the [`distantPast`](https://developer.apple.com/documentation/Foundation/NSDate/distantPast) method.
+- `expiration`: The expiration date for the current event request. Specifying nil for this parameter is equivalent to returning a date object using the [`distantPast`](https://developer.apple.com/documentation/foundation/nsdate/distantpast) method.
 - `mode`: The run loop mode in which to run while looking for events. The mode you specify also determines which timers and run-loop observers may fire while the app waits for the event.
-- `deqFlag`: Specify [`true`](https://developer.apple.com/documentation/Swift/true) if you want the event removed from the queue.
+- `deqFlag`: Specify [`true`](https://developer.apple.com/documentation/swift/true) if you want the event removed from the queue.
 
 ## See Also
 

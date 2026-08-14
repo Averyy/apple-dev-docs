@@ -22,7 +22,7 @@ let MPNowPlayingInfoPropertyElapsedPlaybackTime: String
 
 #### Discussion
 
-Value is an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) object configured as a `double`. Elapsed time is automatically calculated, by the system, from the previously provided elapsed time and the playback rate. It isn’t necessary to update this property frequently.
+Value is an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) object configured as a `double`. Elapsed time is automatically calculated, by the system, from the previously provided elapsed time and the playback rate. It isn’t necessary to update this property frequently.
 
 ## See Also
 

@@ -22,7 +22,7 @@ let MPMediaItemPropertyAlbumTitle: String
 
 #### Discussion
 
-This value property contains the album title, such as “Live On Mars”, as opposed to the title of an individual song on the album, such as “Crater Dance (radio edit)” (which you specify using the [`MPMediaItemPropertyTitle`](mpmediaitempropertytitle.md) property). Value is an [`NSString`](https://developer.apple.com/documentation/Foundation/NSString) object.
+This value property contains the album title, such as “Live On Mars”, as opposed to the title of an individual song on the album, such as “Crater Dance (radio edit)” (which you specify using the [`MPMediaItemPropertyTitle`](mpmediaitempropertytitle.md) property). Value is an [`NSString`](https://developer.apple.com/documentation/foundation/nsstring) object.
 
 Can be used to build a media property predicate as described in [`MPMediaPropertyPredicate`](mpmediapropertypredicate.md).
 

@@ -25,7 +25,7 @@ The [`NSTextTab`](nstexttab.md) objects, sorted by location, define the tab stop
 
 ## See Also
 
-- [NSParagraphStyle.TextTabType](../AppKit/NSParagraphStyle/TextTabType.md)
+- [NSParagraphStyle.TextTabType](../appkit/nsparagraphstyle/texttabtype.md)
   Constants that specify the type of tab stop.
 - [var defaultTabInterval: CGFloat](nsparagraphstyle/defaulttabinterval.md)
   The documentwide default tab interval.

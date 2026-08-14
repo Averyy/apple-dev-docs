@@ -56,7 +56,7 @@ This protocol defines optional methods common to the [`ARSessionDelegate`](arses
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 ### Inherited By
 - [ARSCNViewDelegate](arscnviewdelegate.md)
 - [ARSKViewDelegate](arskviewdelegate.md)

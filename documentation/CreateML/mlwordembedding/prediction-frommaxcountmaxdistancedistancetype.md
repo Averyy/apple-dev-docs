@@ -20,7 +20,7 @@ An array of neighboring strings and their distances to the input string.
 
 #### Discussion
 
-The distance values are calculated with a formula determined by [`NLDistanceType`](https://developer.apple.com/documentation/NaturalLanguage/NLDistanceType), such as [`NLDistanceType.cosine`](https://developer.apple.com/documentation/NaturalLanguage/NLDistanceType/cosine).
+The distance values are calculated with a formula determined by [`NLDistanceType`](https://developer.apple.com/documentation/naturallanguage/nldistancetype), such as [`NLDistanceType.cosine`](https://developer.apple.com/documentation/naturallanguage/nldistancetype/cosine).
 
 ## Parameters
 
@@ -33,7 +33,7 @@ The distance values are calculated with a formula determined by [`NLDistanceType
 
 - [func distance(between: String, and: String, distanceType: NLDistanceType) -> Double](mlwordembedding/distance(between:and:distancetype:).md)
   Calculates the distance between two strings in the vocabulary space.
-- [enum NLDistanceType](../NaturalLanguage/NLDistanceType.md)
+- [enum NLDistanceType](../naturallanguage/nldistancetype.md)
   The means of calculating a distance between two locations in a text embedding.
 - [func contains(String) -> Bool](mlwordembedding/contains(_:).md)
   Returns a Boolean value indicating whether the vocabulary contains the given string.

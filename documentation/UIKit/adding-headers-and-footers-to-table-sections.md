@@ -8,7 +8,7 @@ Differentiate groups of rows visually by adding header and footer views to your 
 
 Use header and footer views as visual markers for the beginning and end of sections. Header and footer views are optional, and you can customize them as much or as little as you want.
 
-![Illustration showing how headers and footers group together the rows of a table.](https://docs-assets.developer.apple.com/published/173f629dbeaa114642f4e228d9039f4a/media-3162087%402x.png)
+![Illustration showing how headers and footers group together the rows of a table.](/images/com.apple.uikit/media-3162087@2x.png)
 
 To create a basic header or footer with a text label, override the [`tableView(_:titleForHeaderInSection:)`](uitableviewdatasource/tableview(_:titleforheaderinsection:).md) or [`tableView(_:titleForFooterInSection:)`](uitableviewdatasource/tableview(_:titleforfooterinsection:).md) method of your table’s data source object. The table view creates a standard header or footer for you and inserts it into the table at the specified location.
 
@@ -109,7 +109,7 @@ override func tableView(_ tableView: UITableView,
 
 The following image shows the resulting headers.
 
-![Illustration showing custom headers. The custom headers contain an image and string explaining the contents of each section.](https://docs-assets.developer.apple.com/published/4c535042500d0efd03471a318c5dc05f/media-3148907%402x.png)
+![Illustration showing custom headers. The custom headers contain an image and string explaining the contents of each section.](/images/com.apple.uikit/media-3148907@2x.png)
 
 ##### Change the Height of Headers and Footers
 

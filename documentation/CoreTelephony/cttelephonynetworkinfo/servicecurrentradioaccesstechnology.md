@@ -18,7 +18,7 @@ var serviceCurrentRadioAccessTechnology: [String : String]? { get }
 
 #### Discussion
 
-The keys for the [`serviceCurrentRadioAccessTechnology`](cttelephonynetworkinfo/servicecurrentradioaccesstechnology.md) dictionary are [`NSString`](https://developer.apple.com/documentation/Foundation/NSString) objects, each of which represents a service. The entry associated with a key is `nil` if the service is not registered on any network.
+The keys for the [`serviceCurrentRadioAccessTechnology`](cttelephonynetworkinfo/servicecurrentradioaccesstechnology.md) dictionary are [`NSString`](https://developer.apple.com/documentation/foundation/nsstring) objects, each of which represents a service. The entry associated with a key is `nil` if the service is not registered on any network.
 
 Although the actual value of a key isn’t important, you can also use it to get the carrier information associated with the service. To do so, pass the key to the [`serviceSubscriberCellularProviders`](cttelephonynetworkinfo/servicesubscribercellularproviders.md) dictionary.
 

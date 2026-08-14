@@ -16,7 +16,7 @@ struct NSBindingName
 
 #### Discussion
 
-The following values are used to specify a binding to [`bind(_:to:withKeyPath:options:)`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class/bind(_:to:withKeyPath:options:)), [`infoForBinding(_:)`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class/infoForBinding(_:)), [`unbind(_:)`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class/unbind(_:)) and [`valueClassForBinding(_:)`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class/valueClassForBinding(_:)). See [`Cocoa Bindings Reference`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Reference/CocoaBindingsRef/CocoaBindingsRef.html#//apple_ref/doc/uid/10000189i) for more information.
+The following values are used to specify a binding to [`bind(_:to:withKeyPath:options:)`](https://developer.apple.com/documentation/objectivec/nsobject-swift.class/bind(_:to:withkeypath:options:)), [`infoForBinding(_:)`](https://developer.apple.com/documentation/objectivec/nsobject-swift.class/infoforbinding(_:)), [`unbind(_:)`](https://developer.apple.com/documentation/objectivec/nsobject-swift.class/unbind(_:)) and [`valueClassForBinding(_:)`](https://developer.apple.com/documentation/objectivec/nsobject-swift.class/valueclassforbinding(_:)). See [`Cocoa Bindings Reference`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Reference/CocoaBindingsRef/CocoaBindingsRef.html#//apple_ref/doc/uid/10000189i) for more information.
 
 ## Topics
 
@@ -186,11 +186,11 @@ The following values are used to specify a binding to [`bind(_:to:withKeyPath:op
 ## Relationships
 
 ### Conforms To
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [RawRepresentable](../Swift/RawRepresentable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [RawRepresentable](../swift/rawrepresentable.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 
@@ -202,7 +202,7 @@ The following values are used to specify a binding to [`bind(_:to:withKeyPath:op
 - [struct NSBindingInfoKey](nsbindinginfokey.md)
 - [func NSIsControllerMarker(Any?) -> Bool](nsiscontrollermarker(_:).md)
   Tests whether a given object is special marker object used for indicating the state of a selection in relation to a key.
-- [NSKeyValueBindingCreation](../ObjectiveC/nskeyvaluebindingcreation.md)
+- [NSKeyValueBindingCreation](../objectivec/nskeyvaluebindingcreation.md)
   A set of methods that you can use to create and remove bindings between view objects and controllers, or between controllers and model objects.
 - [Binding dictionary keys](binding-dictionary-keys.md)
   These constants define keys in the binding information dictionary.

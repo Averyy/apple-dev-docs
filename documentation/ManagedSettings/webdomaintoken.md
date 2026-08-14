@@ -18,7 +18,7 @@ typealias WebDomainToken = Token<WebDomain>
 
 #### Discussion
 
-Managed Settings uses representations of web domains to preserve user privacy and control. Use a token to represent a web domain without revealing what domain the token represents. [`FamilyActivitySelection`](https://developer.apple.com/documentation/FamilyControls/FamilyActivitySelection) provides tokens that devices within the same Family Sharing group can use to identify applications.
+Managed Settings uses representations of web domains to preserve user privacy and control. Use a token to represent a web domain without revealing what domain the token represents. [`FamilyActivitySelection`](https://developer.apple.com/documentation/familycontrols/familyactivityselection) provides tokens that devices within the same Family Sharing group can use to identify applications.
 
 ## See Also
 

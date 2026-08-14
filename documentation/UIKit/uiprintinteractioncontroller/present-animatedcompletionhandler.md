@@ -19,13 +19,13 @@ func present(animated: Bool, completionHandler completion: UIPrintInteractionCon
 
 #### Discussion
 
-It is valid to call this method for applications on iPhone and iPod touch devices. Calling this method on an iPad with `animated` set to [`true`](https://developer.apple.com/documentation/Swift/true) causes the printing options view to animate from the window frame.
+It is valid to call this method for applications on iPhone and iPod touch devices. Calling this method on an iPad with `animated` set to [`true`](https://developer.apple.com/documentation/swift/true) causes the printing options view to animate from the window frame.
 
 If you call this method when the printing options are already displayed, `UIPrintInteractionController` hides the printing-options sheet. You must call the method again to display the options.
 
 ## Parameters
 
-- `animated`: [`true`](https://developer.apple.com/documentation/Swift/true) to animate the display of the sheet, [`false`](https://developer.apple.com/documentation/Swift/false) to display the sheet immediately.
+- `animated`: [`true`](https://developer.apple.com/documentation/swift/true) to animate the display of the sheet, [`false`](https://developer.apple.com/documentation/swift/false) to display the sheet immediately.
 - `completion`: A block of type [`UIPrintInteractionController.CompletionHandler`](uiprintinteractioncontroller/completionhandler.md) that you implement to handle the conclusion of the print job (for instance, to reset state) and to handle any errors encountered in printing.
 
 ## See Also

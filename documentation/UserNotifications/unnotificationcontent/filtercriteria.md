@@ -21,7 +21,7 @@ var filterCriteria: String? { get }
 
 #### Discussion
 
-For more information, see [`SetFocusFilterIntent`](https://developer.apple.com/documentation/AppIntents/SetFocusFilterIntent).
+For more information, see [`SetFocusFilterIntent`](https://developer.apple.com/documentation/appintents/setfocusfilterintent).
 
 ## See Also
 

@@ -29,7 +29,7 @@ Label("Circle Slash", systemImage: "flag")
     .symbolVariant(.circle.slash)
 ```
 
-![A screenshot of a label that shows a flag in a circle with a](https://docs-assets.developer.apple.com/published/1c6f71949288c728089e2dd937cb61dd/SymbolVariants-slash-2%402x.png)
+![A screenshot of a label that shows a flag in a circle with a](/images/com.apple.SwiftUI/SymbolVariants-slash-2@2x.png)
 
 ## See Also
 

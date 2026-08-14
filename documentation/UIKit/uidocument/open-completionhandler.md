@@ -21,11 +21,11 @@ func open() async -> Bool
 
 Call this method to begin the sequence of method calls that opens and reads a document asynchronously. The method obtains the file-system location of the document from the [`fileURL`](uidocument/fileurl.md) property. After the open operation concludes, the code in `completionHandler` is executed.
 
-You can override this method if you want custom document-opening behavior, but if you do it’s recommended that you call the superclass implementation first (`super`). If you don’t call `super`, you should use the [`NSFileCoordinator`](https://developer.apple.com/documentation/Foundation/NSFileCoordinator) class to implement coordinated reading. The default implementation calls [`performAsynchronousFileAccess(_:)`](uidocument/performasynchronousfileaccess(_:).md) to schedule the document-reading work for execution on a background queue and then, from the dispatched block, performs file coordination. The queued task then calls [`read(from:)`](uidocument/read(from:).md).
+You can override this method if you want custom document-opening behavior, but if you do it’s recommended that you call the superclass implementation first (`super`). If you don’t call `super`, you should use the [`NSFileCoordinator`](https://developer.apple.com/documentation/foundation/nsfilecoordinator) class to implement coordinated reading. The default implementation calls [`performAsynchronousFileAccess(_:)`](uidocument/performasynchronousfileaccess(_:).md) to schedule the document-reading work for execution on a background queue and then, from the dispatched block, performs file coordination. The queued task then calls [`read(from:)`](uidocument/read(from:).md).
 
 ## Parameters
 
-- `completionHandler`: A block with code to execute after the open operation concludes. The block returns no value and has one parameter: - **`success`**: [`true`](https://developer.apple.com/documentation/Swift/true) if the open operation succeeds, otherwise [`false`](https://developer.apple.com/documentation/Swift/false). The block is invoked on the main queue.
+- `completionHandler`: A block with code to execute after the open operation concludes. The block returns no value and has one parameter: - **`success`**: [`true`](https://developer.apple.com/documentation/swift/true) if the open operation succeeds, otherwise [`false`](https://developer.apple.com/documentation/swift/false). The block is invoked on the main queue.
 
 ## See Also
 

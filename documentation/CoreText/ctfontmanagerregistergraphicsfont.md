@@ -26,7 +26,7 @@ func CTFontManagerRegisterGraphicsFont(_ font: CGFont, _ error: UnsafeMutablePoi
 
 #### Discussion
 
-Registered fonts are discoverable through font descriptor matching. Any attempt to register a font that is either already registered or contains the same Postscript of an already registered font will fail. This behavior is useful for fonts that may be embedded in documents or constructed in memory. A graphics font is obtained by calling [`init(_:)`](https://developer.apple.com/documentation/CoreGraphics/CGFont/init(_:)-9aour). Fonts that are backed by files should be registered using [`CTFontManagerRegisterFontsForURL(_:_:_:)`](ctfontmanagerregisterfontsforurl(_:_:_:).md).
+Registered fonts are discoverable through font descriptor matching. Any attempt to register a font that is either already registered or contains the same Postscript of an already registered font will fail. This behavior is useful for fonts that may be embedded in documents or constructed in memory. A graphics font is obtained by calling [`init(_:)`](https://developer.apple.com/documentation/coregraphics/cgfont/init(_:)-9aour). Fonts that are backed by files should be registered using [`CTFontManagerRegisterFontsForURL(_:_:_:)`](ctfontmanagerregisterfontsforurl(_:_:_:).md).
 
 ## Parameters
 

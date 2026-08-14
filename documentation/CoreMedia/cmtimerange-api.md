@@ -15,11 +15,11 @@ The system represents a `CMTimeRange` as a non-opaque, mutable structure by usin
 CMTimeRangeContainsTime(range, CMTimeRangeGetEnd(range))
 ```
 
-Convert `CMTimeRanges` to and from `CFDictionaries` (see [`CFDictionary`](https://developer.apple.com/documentation/CoreFoundation/CFDictionary)) using [`CMTimeRangeCopyAsDictionary(_:allocator:)`](cmtimerangecopyasdictionary(_:allocator:).md) and [`CMTimeRangeMakeFromDictionary(_:)`](cmtimerangemakefromdictionary(_:).md) to use in annotations and various Core Foundation containers.
+Convert `CMTimeRanges` to and from `CFDictionaries` (see [`CFDictionary`](https://developer.apple.com/documentation/corefoundation/cfdictionary)) using [`CMTimeRangeCopyAsDictionary(_:allocator:)`](cmtimerangecopyasdictionary(_:allocator:).md) and [`CMTimeRangeMakeFromDictionary(_:)`](cmtimerangemakefromdictionary(_:).md) to use in annotations and various Core Foundation containers.
 
 The epoch in a `CMTime` that represents a duration must be `0`, and the value must be nonnegative. The epoch in a `CMTime` that represents a timestamp can be nonzero, but functions (such as [`CMTimeRangeGetUnion(_:otherRange:)`](cmtimerangegetunion(_:otherrange:).md)) can only perform operations on ranges whose start fields have the same epoch. `CMTimeRanges` can’t span different epochs.
 
-For information about additional functions for managing dates and times, see [`Time Utilities`](https://developer.apple.com/documentation/CoreFoundation/time-utilities).
+For information about additional functions for managing dates and times, see [`Time Utilities`](https://developer.apple.com/documentation/corefoundation/time-utilities).
 
 ## Topics
 

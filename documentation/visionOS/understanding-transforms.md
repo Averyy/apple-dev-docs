@@ -6,17 +6,17 @@ Learn how to use Transforms to move, scale, and rotate entities in RealityKit.
 
 #### Overview
 
-RealityKit [`Entity`](https://developer.apple.com/documentation/RealityKit/Entity) objects exist in a tree, and each entity can have any number of subentities. (The entities themselves can standalone, or can be in a single container.) Every entity in the tree stores its own transform component. The transform contains the `translation`, `scale`, and `orientation` relative to its container entity. The *root* of each tree is an entity without a container entity.
+RealityKit [`Entity`](https://developer.apple.com/documentation/realitykit/entity) objects exist in a tree, and each entity can have any number of subentities. (The entities themselves can standalone, or can be in a single container.) Every entity in the tree stores its own transform component. The transform contains the `translation`, `scale`, and `orientation` relative to its container entity. The *root* of each tree is an entity without a container entity.
 
 Each entity exists in its own coordinate system that defines the origin and orientation of the three ordinal directions (the x, y, and z axes). The coordinate system is relative to its container coordinate system and is defined by its transform.
 
 #### Arrange Entities with Transforms
 
-A root entity has no parent entity. Its location in the scene is either controlled by SwiftUI or placed via a [`SpatialTrackingSession`](https://developer.apple.com/documentation/RealityKit/SpatialTrackingSession). SwiftUI provides a root entity for the volume defined by the `RealityView`. The root entity defines the root coordinate system.
+A root entity has no parent entity. Its location in the scene is either controlled by SwiftUI or placed via a [`SpatialTrackingSession`](https://developer.apple.com/documentation/realitykit/spatialtrackingsession). SwiftUI provides a root entity for the volume defined by the `RealityView`. The root entity defines the root coordinate system.
 
-> **Note**: In addition to a spatial tracking session, apps can use an [`ARSession`](https://developer.apple.com/documentation/ARKit/ARSession) with any number of data providers. The available list can be found in the type [`DataProvider`](https://developer.apple.com/documentation/ARKit/DataProvider), and a full list of anchor types is found in [`AnchoringComponent.Target`](https://developer.apple.com/documentation/RealityKit/AnchoringComponent/Target-swift.enum).
+> **Note**: In addition to a spatial tracking session, apps can use an [`ARSession`](https://developer.apple.com/documentation/arkit/arsession) with any number of data providers. The available list can be found in the type [`DataProvider`](https://developer.apple.com/documentation/arkit/dataprovider), and a full list of anchor types is found in [`AnchoringComponent.Target`](https://developer.apple.com/documentation/realitykit/anchoringcomponent/target-swift.enum).
 
-Each entity added to the tree adds a new coordinate system defined by its [`transform`](https://developer.apple.com/documentation/RealityKit/HasTransform/transform) and is relative to its container entity. Each of the coordinate systems relate to each other by the hierarchy of entities and their transforms. For example a hierarchy of entities built with this code:
+Each entity added to the tree adds a new coordinate system defined by its [`transform`](https://developer.apple.com/documentation/realitykit/hastransform/transform) and is relative to its container entity. Each of the coordinate systems relate to each other by the hierarchy of entities and their transforms. For example a hierarchy of entities built with this code:
 
 ```swift
 RealityView { content in
@@ -35,17 +35,17 @@ RealityView { content in
 
 This reality view has three entities `B`, `A`, and the root entity. These three entities form a tree, with one root entity at the center of the reality view’s volume. Entity A is a subentity of the root, and B is a subentity of A.
 
-![Three rectangles connected via lines. The top one is labeled Root, the second one is slightly below and to the right, is labeled A. The third one is slightly below and to the right and is labeled B.](https://docs-assets.developer.apple.com/published/1efd2539d57715259feee9134862188d/entity-hierarchy%402x.png)
+![Three rectangles connected via lines. The top one is labeled Root, the second one is slightly below and to the right, is labeled A. The third one is slightly below and to the right and is labeled B.](/images/com.apple.visionOS/entity-hierarchy@2x.png)
 
 The reality view provides the root entity, which is located at the center of a volumetric window or near the floor in an immersive space. Use the [`add(_:Entity)`](https://developer.apple.comhttps://developer.apple.com/documentation/realitykit/realityviewcontentprotocol/add(_:))  method on the `content` supplied by the reality view to add entities as subentites of that root entity. The coordinate system defined by `B` is `0.1` units along the `x-axis` of the coordinate system defined by `A`. The coordinate system defined by `A` is `0.05` units along the `x-axis` defined by the root. With three entities there are three coordinate systems.
 
-![Three rectangles arranged horizontally. Each rectangle has a line extending out the bottom side. There is another line that connects all the lines across their bottom extent. The left rectangle is labeled Root, the middle rectangle is labeled A, the right rectangle is labeled B. There are two labels with the distance between the respective rectangles. The distance between Root and A is 0.05 units, the distance between A and B is 0.10 units.](https://docs-assets.developer.apple.com/published/f2f47dee78e0e2b1e60649805aceb720/reality-view%402x.png)
+![Three rectangles arranged horizontally. Each rectangle has a line extending out the bottom side. There is another line that connects all the lines across their bottom extent. The left rectangle is labeled Root, the middle rectangle is labeled A, the right rectangle is labeled B. There are two labels with the distance between the respective rectangles. The distance between Root and A is 0.05 units, the distance between A and B is 0.10 units.](/images/com.apple.visionOS/reality-view@2x.png)
 
 In this example there are two cubes. Each cube has eight corners, and each corner is `0.025` units away from the origin. The cubes appear in different locations in the scene because the system applies the `transform` to each corner of the cubes moving them from the local coordinate system (also called *model space*) to the world coordinate system. For example, the top, right, forward corner of the cube is at `{0.025, 0.025, 0.025}` in `model space`. The entity is translated by `{0.05, 0.0, 0.0}` The top-right-forward corner is then at `{0.075, 0.025, 0.025}`.
 
 #### Build a Simple Entity to Experiment with
 
-To be visible, an entity must have a [`MeshDescriptor`](https://developer.apple.com/documentation/RealityKit/MeshDescriptor) and a [`Material`](https://developer.apple.com/documentation/RealityKit/Material). A `MeshDescriptor` contains the description of a mesh. In this case, the mesh contains all of the vertices and how they connect into triangles. A Material specifies the color and appearance of the entity.
+To be visible, an entity must have a [`MeshDescriptor`](https://developer.apple.com/documentation/realitykit/meshdescriptor) and a [`Material`](https://developer.apple.com/documentation/realitykit/material). A `MeshDescriptor` contains the description of a mesh. In this case, the mesh contains all of the vertices and how they connect into triangles. A Material specifies the color and appearance of the entity.
 
 The previous example used [`generateBox(size:)`](https://developer.apple.comhttps://developer.apple.com/documentation/realitykit/meshresource/generatebox(size:cornerradius:)-2ovma) to generate the mesh. This convenience obscures what the transform does. The remaining examples use a mesh built from scratch.
 
@@ -98,7 +98,7 @@ func createCube() -> ModelEntity? {
 }
 ```
 
-> **Note**: For more information about constructing meshes, see [`MeshDescriptor`](https://developer.apple.com/documentation/RealityKit/MeshDescriptor). When you set the `transform` on an entity, the system transforms the mesh vertices to the new coordinate system.
+> **Note**: For more information about constructing meshes, see [`MeshDescriptor`](https://developer.apple.com/documentation/realitykit/meshdescriptor). When you set the `transform` on an entity, the system transforms the mesh vertices to the new coordinate system.
 
 #### Add the Cube Entity to a Reality View
 
@@ -116,7 +116,7 @@ The cube entity appears at the center of the volume, the origin of the volume’
 
 #### Move the Cube with a Transform
 
-To move the cube use the [`Transform`](https://developer.apple.com/documentation/RealityKit/Transform) component with the `translation` argument:
+To move the cube use the [`Transform`](https://developer.apple.com/documentation/realitykit/transform) component with the `translation` argument:
 
 ```swift
     cube.transform = Transform(translation: SIMD3<Float>(0.1, 0.0, 0.0))
@@ -126,11 +126,11 @@ Applying this `Transform` to the cube moves all eight vertices in the `x` direct
 
 The system moves the entity from its ‘model space’ origin to the location in world space. To achieve that effect, RealityKit performs some linear algebra behind the scenes to ‘transform’ the points into world space. The left matrix is the `Transform` converted to a matrix. The right vertex is the list of vertices. Here is the full multiplication for the transform and the first vertex.
 
-![A matrix multiplication. The left hand side is a four by four matrix. The first column is 1.0, 0.0, 0.0, 0.0. The second column is 0.0, 1.0, 0.0, 0.0. The third column is 0.0, 0.0, 1.0, 0.0. The fourth column is where the the translation is found. It's values are 0.1, 0.0, 0.0, 1.0. The right-most matrix is a four by one matrix, its only column has values 0.05, 0.05, negative 0.05, 1.0. Between the matrices is the multiplication operator.](https://docs-assets.developer.apple.com/published/fc953074dca39d86777887cc8f4d1f64/TranslationMatrixMultiplication%402x.png)
+![A matrix multiplication. The left hand side is a four by four matrix. The first column is 1.0, 0.0, 0.0, 0.0. The second column is 0.0, 1.0, 0.0, 0.0. The third column is 0.0, 0.0, 1.0, 0.0. The fourth column is where the the translation is found. It's values are 0.1, 0.0, 0.0, 1.0. The right-most matrix is a four by one matrix, its only column has values 0.05, 0.05, negative 0.05, 1.0. Between the matrices is the multiplication operator.](/images/com.apple.visionOS/TranslationMatrixMultiplication@2x.png)
 
 The left matrix is a direct representation of the `Transform` you made earlier and applied to the `cube`. The right matrix is the first vertex from the cube represented by a vector with `1.0` in the last position. Performing that multiplication (the [`dot(_:_:)`](https://developer.apple.com/documentation/simd/dot(_:_:)-4gb9g) product of each row of the matrix with the vertex) yields:
 
-![A four by one matrix, values in the single column are 0.15, 0.05, negative 0.05 and 1.0.](https://docs-assets.developer.apple.com/published/d8a340b6393e6446f73fc66bafd14a79/TranslationMatrixMultiplicationResult%402x.png)
+![A four by one matrix, values in the single column are 0.15, 0.05, negative 0.05 and 1.0.](/images/com.apple.visionOS/TranslationMatrixMultiplicationResult@2x.png)
 
 The net effect is that the new vertices have `0.1` added to their `x` component. This approach generalizes to all other forms of transformation that you use to manipulate entities in RealityKit:
 
@@ -144,11 +144,11 @@ To scale an entity use the `transform` property. To apply a uniform scale of 2 t
 
 That yields a matrix multiplication that looks like this:
 
-![A matrix multiplication. The left hand side is a four by four matrix. The first column is 2.0, 0.0, 0.0, 0.0. The second column is 0.0, 2.0, 0.0, 0.0, the third column is 0.0, 0.0, 2.0, 0.0. The fourth column is 0.0, 0.0, 0.0, 1.0. The right most matrix is a four by one matrix, its only column has values negative 0.05, 0.05, 0.05, 1.0. Between the matrices is the multiplication operator.](https://docs-assets.developer.apple.com/published/435a83d6d9df2cf5a074390e0536b637/ScaleMatrixMultiplication%402x.png)
+![A matrix multiplication. The left hand side is a four by four matrix. The first column is 2.0, 0.0, 0.0, 0.0. The second column is 0.0, 2.0, 0.0, 0.0, the third column is 0.0, 0.0, 2.0, 0.0. The fourth column is 0.0, 0.0, 0.0, 1.0. The right most matrix is a four by one matrix, its only column has values negative 0.05, 0.05, 0.05, 1.0. Between the matrices is the multiplication operator.](/images/com.apple.visionOS/ScaleMatrixMultiplication@2x.png)
 
 After the multiplication yields a transformed vertex like this:
 
-![A four by one matrix, values in the single column are negative 0.1, 0.1, 0.1 and 1.0.](https://docs-assets.developer.apple.com/published/ddd408abcb92785b4c4ab8b2772121fb/ScaleMatrixMultiplicationResult%402x.png)
+![A four by one matrix, values in the single column are negative 0.1, 0.1, 0.1 and 1.0.](/images/com.apple.visionOS/ScaleMatrixMultiplicationResult@2x.png)
 
 After multiplying all of the vertices by the scale matrix, the cube is twice as large in each direction (`0.2` versus `0.1`):
 
@@ -162,7 +162,7 @@ These two operations combine into a single operation with the `Transform` type l
 
 That transform yields a matrix multiplication for all the vertices, laid out as column vectors. The multiplication looks like this:
 
-![A matrix multiplication with three matrices. The left most matrix is the translation matrix. The first column is 1.0, 0.0, 0.0, 0.0. The second column is 0.0, 1.0, 0.0, 0.0. The third column is 0.0, 0.0, 0.0, 1.0, 0.0. The fourth column is 0.1, 0.0, 0.0, 1.0. The next matrix is the scale matrix. The first column is 2.0, 0.0, 0.0, 0.0. The second column is 0.0, 2.0, 0.0, 0.0. The third column is 0.0, 0.0, 2.0, 0.0. The fourth column is 0.0, 0.0, 0.0, 1.0. The third matrix is a four by eight matrix, each column is one vertex in the cube. The first column is 0.05, 0.05, negative 0.05, 1.0. The second column is negative 0.05, 0.05, negative 0.05, 1.0. The third column is negative 0.05, 0.05, 0.05, 1.0. The fourth column is 0.05, 0.05, 0.05, 1.0. The fifth column is 0.05, negative 0.05, negative 0.05, 1.0. The sixth column is negative 0.05, negative 0.05, negative 0.05, 1.0. The seventh column is negative 0.05, negative 0.05, 0.05, 1.0. The eighth column is 0.05, negative 0.05, 0.05, 1.0.](https://docs-assets.developer.apple.com/published/ed43af8502027def04bfc48497846561/CombinedMatrixMultiplication%402x.png)
+![A matrix multiplication with three matrices. The left most matrix is the translation matrix. The first column is 1.0, 0.0, 0.0, 0.0. The second column is 0.0, 1.0, 0.0, 0.0. The third column is 0.0, 0.0, 0.0, 1.0, 0.0. The fourth column is 0.1, 0.0, 0.0, 1.0. The next matrix is the scale matrix. The first column is 2.0, 0.0, 0.0, 0.0. The second column is 0.0, 2.0, 0.0, 0.0. The third column is 0.0, 0.0, 2.0, 0.0. The fourth column is 0.0, 0.0, 0.0, 1.0. The third matrix is a four by eight matrix, each column is one vertex in the cube. The first column is 0.05, 0.05, negative 0.05, 1.0. The second column is negative 0.05, 0.05, negative 0.05, 1.0. The third column is negative 0.05, 0.05, 0.05, 1.0. The fourth column is 0.05, 0.05, 0.05, 1.0. The fifth column is 0.05, negative 0.05, negative 0.05, 1.0. The sixth column is negative 0.05, negative 0.05, negative 0.05, 1.0. The seventh column is negative 0.05, negative 0.05, 0.05, 1.0. The eighth column is 0.05, negative 0.05, 0.05, 1.0.](/images/com.apple.visionOS/CombinedMatrixMultiplication@2x.png)
 
 The order is important: scale first then translate.
 
@@ -170,13 +170,13 @@ The order is important: scale first then translate.
 
 Multiplying these two transformation matrices in the order shown above yields this result:
 
-![A matrix multiplication with three matrices. The left most matrix is the translation matrix. The first column is 1.0, 0.0, 0.0, 0.0. The second column is 0.0, 1.0, 0.0, 0.0. The third column is 0.0, 0.0, 1.0, 0.0. The fourth column is 0.1, 0.0, 0.0, 1.0. The next matrix is the scale matrix. The first column is 2.0, 0.0, 0.0, 0.0. The second column is 0.0, 2.0, 0.0, 0.0. The third column is 0.0, 0.0, 2.0, 0.0. The fourth column is 0.0, 0.0, 0.0, 1.0. The third matrix is the result of multiplying the two matrices. The first column is 2.0, 0.0, 0.0, 0.0. The second column is 0.0, 2.0, 0.0, 0.0. The third column is 0.0, 0.0, 2.0, 0.0. The fourth column is 0.1, 0.0, 0.0, 1.0.](https://docs-assets.developer.apple.com/published/3b2172f15566e6659b01e3b7cca14c5f/Combination1MatrixMultiplication%402x.png)
+![A matrix multiplication with three matrices. The left most matrix is the translation matrix. The first column is 1.0, 0.0, 0.0, 0.0. The second column is 0.0, 1.0, 0.0, 0.0. The third column is 0.0, 0.0, 1.0, 0.0. The fourth column is 0.1, 0.0, 0.0, 1.0. The next matrix is the scale matrix. The first column is 2.0, 0.0, 0.0, 0.0. The second column is 0.0, 2.0, 0.0, 0.0. The third column is 0.0, 0.0, 2.0, 0.0. The fourth column is 0.0, 0.0, 0.0, 1.0. The third matrix is the result of multiplying the two matrices. The first column is 2.0, 0.0, 0.0, 0.0. The second column is 0.0, 2.0, 0.0, 0.0. The third column is 0.0, 0.0, 2.0, 0.0. The fourth column is 0.1, 0.0, 0.0, 1.0.](/images/com.apple.visionOS/Combination1MatrixMultiplication@2x.png)
 
 The result scales the model by `2` uniformly and translates the model by `0.1` in the `x` direction:
 
 Switching that order yields a different matrix:
 
-![A matrix multiplication with three matrices. The left matrix is the scale matrix. The first column is 2.0, 0.0, 0.0, 0.0. The second column is 0.0, 2.0, 0.0, 0.0. The third column is 0.0, 0.0, 2.0, 0.0. The fourth column is 0.0, 0.0, 0.0, 1.0. The center matrix is the translation matrix. The first column is 1.0, 0.0, 0.0, 0.0. The second column is 0.0, 1.0, 0.0, 0.0. The third column is 0.0, 0.0, 1.0, 0.0. The fourth column is 0.1, 0.0, 0.0, 1.0. The third matrix is the result of multiplying the two matrices. The first column is 2.0, 0.0, 0.0, 0.0. The second column is 0.0, 2.0, 0.0, 0.0. The third column is 0.0, 0.0, 2.0, 0.0. The fourth column is 0.2, 0.0, 0.0, 1.0.](https://docs-assets.developer.apple.com/published/85271982654e6e01e5d9af80fd288486/Combination2MatrixMultiplication%402x.png)
+![A matrix multiplication with three matrices. The left matrix is the scale matrix. The first column is 2.0, 0.0, 0.0, 0.0. The second column is 0.0, 2.0, 0.0, 0.0. The third column is 0.0, 0.0, 2.0, 0.0. The fourth column is 0.0, 0.0, 0.0, 1.0. The center matrix is the translation matrix. The first column is 1.0, 0.0, 0.0, 0.0. The second column is 0.0, 1.0, 0.0, 0.0. The third column is 0.0, 0.0, 1.0, 0.0. The fourth column is 0.1, 0.0, 0.0, 1.0. The third matrix is the result of multiplying the two matrices. The first column is 2.0, 0.0, 0.0, 0.0. The second column is 0.0, 2.0, 0.0, 0.0. The third column is 0.0, 0.0, 2.0, 0.0. The fourth column is 0.2, 0.0, 0.0, 1.0.](/images/com.apple.visionOS/Combination2MatrixMultiplication@2x.png)
 
 This resulting matrix yields a similar uniform scale of `2`, but the translation is scaled by `2` as well. The net result of this matrix is to scale the model uniformly by `2` and move it in the positive `x` direction by `0.2`:
 
@@ -184,11 +184,11 @@ This resulting matrix yields a similar uniform scale of `2`, but the translation
 
 Multiply the `scale` matrix by the `translation` matrix to get the combined `transform` matrix. RealityKit then applies the combined matrix to the vertices:
 
-![A matrix multiplication with two matrices. The left matrix is the combined scale and translation matrix. The first column is 2.0, 0.0, 0.0, 0.0. The second column is 0.0, 2.0, 0.0, 0.0. The third column is 0.0, 0.0, 1.0, 0.0. The fourth column is 0.1, 0.0, 0.0, 1.0. The right matrix is a four by eight matrix, each column is one vertex in the cube. The first column is 0.05, 0.05, negative 0.05, 1.0. The second column is negative 0.05, 0.05, negative 0.05, 1.0. The third column is negative 0.05, 0.05, 0.05, 1.0. The fourth column is 0.05, 0.05, 0.05, 1.0. The fifth column is 0.05, negative 0.05, negative 0.05, 1.0. The sixth column is negative 0.05, negative 0.05, negative 0.05, 1.0. The seventh column is negative 0.05, negative 0.05, 0.05, 1.0. The eighth column is 0.05, negative 0.05, 0.05, 1.0.](https://docs-assets.developer.apple.com/published/e3285a5105676030f95444f1a167af84/FullCombinedMatrixMultiplication%402x.png)
+![A matrix multiplication with two matrices. The left matrix is the combined scale and translation matrix. The first column is 2.0, 0.0, 0.0, 0.0. The second column is 0.0, 2.0, 0.0, 0.0. The third column is 0.0, 0.0, 1.0, 0.0. The fourth column is 0.1, 0.0, 0.0, 1.0. The right matrix is a four by eight matrix, each column is one vertex in the cube. The first column is 0.05, 0.05, negative 0.05, 1.0. The second column is negative 0.05, 0.05, negative 0.05, 1.0. The third column is negative 0.05, 0.05, 0.05, 1.0. The fourth column is 0.05, 0.05, 0.05, 1.0. The fifth column is 0.05, negative 0.05, negative 0.05, 1.0. The sixth column is negative 0.05, negative 0.05, negative 0.05, 1.0. The seventh column is negative 0.05, negative 0.05, 0.05, 1.0. The eighth column is 0.05, negative 0.05, 0.05, 1.0.](/images/com.apple.visionOS/FullCombinedMatrixMultiplication@2x.png)
 
 Which yields a matrix like this:
 
-![The result of the scale and translation transformation matrix multiplied into the vertices matrix. A four by eight matrix, each column is one vertex in the transformed cube. The first column is 0.2, 0.1, negative 0.1, 1.0. The second column is 0.0, 0.1, negative 0.1, 1.0. The third column is 0.0, 0.1, 0.1, 1.0. The fourth column is 0.2, 0.1, 0.1, 1.0. The fifth column is 0.0, negative 0.1, negative 0.1, 1.0. The sixth column is 0.0, negative 0.1, negative 0.1, 1.0. The seventh column is 0.0, negative 0.1, 0.1, 1.0. The eighth column is 0.2, negative 0.1, 0.1, 1.0.](https://docs-assets.developer.apple.com/published/f992ca1c45cd0266c8ed111fe571d344/FullCombinedMatrixMultiplicationResult%402x.png)
+![The result of the scale and translation transformation matrix multiplied into the vertices matrix. A four by eight matrix, each column is one vertex in the transformed cube. The first column is 0.2, 0.1, negative 0.1, 1.0. The second column is 0.0, 0.1, negative 0.1, 1.0. The third column is 0.0, 0.1, 0.1, 1.0. The fourth column is 0.2, 0.1, 0.1, 1.0. The fifth column is 0.0, negative 0.1, negative 0.1, 1.0. The sixth column is 0.0, negative 0.1, negative 0.1, 1.0. The seventh column is 0.0, negative 0.1, 0.1, 1.0. The eighth column is 0.2, negative 0.1, 0.1, 1.0.](/images/com.apple.visionOS/FullCombinedMatrixMultiplicationResult@2x.png)
 
 The scaled and translated vertices yield a cube that is twice as large in each direction and moved `0.1` units to the right.
 
@@ -219,7 +219,7 @@ That code performs a rotation that looks like this:
 
 Applying this transformation matrix to the full set of vertices yields this new set of transformed vertices:
 
-![Vertices of the cube rotated around the axis pointing at the top right front corner. The matrix is four by eight, each column is one vertex of the transformed cube. The fourth column is 0.05, 0.05, 0.05, 1.0. The sixth column is negative 0.05, negative 0.05, negative 0.05, 1.0. These two columns have the same value as the untransformed vertices because they lie on the axis of rotation.](https://docs-assets.developer.apple.com/published/4f867fd9f33aa416e399c82af356acae/FullRotationVerticesResult%402x.png)
+![Vertices of the cube rotated around the axis pointing at the top right front corner. The matrix is four by eight, each column is one vertex of the transformed cube. The fourth column is 0.05, 0.05, 0.05, 1.0. The sixth column is negative 0.05, negative 0.05, negative 0.05, 1.0. These two columns have the same value as the untransformed vertices because they lie on the axis of rotation.](/images/com.apple.visionOS/FullRotationVerticesResult@2x.png)
 
 Notice that the fourth and sixth vertex didn’t change. The axis of rotation goes through those two vertices so nothing changes on that axis.
 
@@ -238,7 +238,7 @@ The order of these transforms is `translation` followed by `rotation` then `scal
 
 ## See Also
 
-- [Reality Composer Pro](../RealityComposerPro/RealityComposerPro.md)
+- [Reality Composer Pro](../realitycomposerpro/realitycomposerpro.md)
   Build, design, and orchestrate 3D content for your RealityKit apps.
 - [Chaparral Village: Building an immersive visionOS adventure game](chaparral-village-building-an-immersive-visionos-adventure-game.md)
   Create an adventure game using SwiftUI, RealityKit, and Reality Composer Pro 3.
@@ -256,7 +256,7 @@ The order of these transforms is `translation` followed by `rotation` then `scal
   Add a deeper level of immersion to media playback in your app with RealityKit and Reality Composer Pro.
 - [Enabling video reflections in an immersive environment](enabling-video-reflections-in-an-immersive-environment.md)
   Create a more immersive experience by adding video reflections in a custom environment.
-- [Combining 2D and 3D views in an immersive app](../RealityKit/combining-2d-and-3d-views-in-an-immersive-app.md)
+- [Combining 2D and 3D views in an immersive app](../realitykit/combining-2d-and-3d-views-in-an-immersive-app.md)
   Use attachments to place 2D content relative to 3D content in your visionOS app.
 - [Understanding the modular architecture of RealityKit](understanding-the-realitykit-modular-architecture.md)
   Learn how everything fits together in RealityKit.

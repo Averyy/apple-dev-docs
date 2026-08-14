@@ -22,7 +22,7 @@ static let causesPageTurn: UIAccessibilityTraits
 
 #### Discussion
 
-Use this trait to characterize an accessibility element that represents a page of content within a set of pages, such as a view that represents a page in a book. When VoiceOver finishes reading the content in the current page, it calls [`accessibilityScroll(_:)`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class/accessibilityScroll(_:)) with [`UIAccessibilityScrollDirection.next`](uiaccessibilityscrolldirection/next.md) to scroll to the next content page. If VoiceOver detects that the new content doesn’t differ from the previous content, it stops scrolling.
+Use this trait to characterize an accessibility element that represents a page of content within a set of pages, such as a view that represents a page in a book. When VoiceOver finishes reading the content in the current page, it calls [`accessibilityScroll(_:)`](https://developer.apple.com/documentation/objectivec/nsobject-swift.class/accessibilityscroll(_:)) with [`UIAccessibilityScrollDirection.next`](uiaccessibilityscrolldirection/next.md) to scroll to the next content page. If VoiceOver detects that the new content doesn’t differ from the previous content, it stops scrolling.
 
 ## See Also
 

@@ -8,7 +8,7 @@ Select viewports and their corresponding scissor rectangles in your vertex shade
 
 A viewport defines a subsection of the render targets that you want a drawing command to render into. Using viewport selection, you provide multiple viewports for a drawing command, and dynamically choose one of these viewports for each primitive rendered by the drawing command. Viewport selection makes it easier to consolidate rendering to multiple viewports into fewer drawing commands. For example, you might use viewport selection when rendering stereo imagery or other images whose content is rendered to multiple parts of the render target.
 
-![A block diagram that shows a render pipeline whose final destination is a single target with multiple viewports.](https://docs-assets.developer.apple.com/published/c028ba3b6b343c64f8f0ff8c12debc4c/rendering-to-multiple-viewports-in-a-draw-command-1%402x.png)
+![A block diagram that shows a render pipeline whose final destination is a single target with multiple viewports.](/images/com.apple.metal/rendering-to-multiple-viewports-in-a-draw-command-1@2x.png)
 
 ##### Check the Device Object for Support for Multiple Viewports
 

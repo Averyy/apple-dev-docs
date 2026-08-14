@@ -68,7 +68,7 @@ Exception Subtype: KERN_INVALID_ADDRESS at 0x00006f126c1a9aa0 -> 0x000000126c1a9
 
 An invalid memory access, where high-order bits are erroneously set, can look like a pointer authentication failure, even if the cause is due to a memory corruption problem in the app.
 
-See [`Preparing your app to work with pointer authentication`](https://developer.apple.com/documentation/Security/preparing-your-app-to-work-with-pointer-authentication) for more information about pointer authentication.
+See [`Preparing your app to work with pointer authentication`](https://developer.apple.com/documentation/security/preparing-your-app-to-work-with-pointer-authentication) for more information about pointer authentication.
 
 ##### Use Vm Region Info to Locate the Memory in Your Apps Address Space
 
@@ -108,8 +108,8 @@ See [`Interpreting vmmap’s Output`](https://developer.apple.comhttps://develop
 
 Consult the crashed thread’s backtrace for clues on where the memory access issue is occurring. Some types of memory access issues, such as dereferencing a `NULL` pointer, are easy to identify when looking at the backtrace and comparing it to the source code. Other memory access issues are identified by the stack frame at the top of the crashed thread’s backtrace:
 
-- If [`objc_msgSend`](https://developer.apple.com/documentation/ObjectiveC/objc_msgSend), `objc_retain`, or `objc_release` is at the top of the backtrace, the crash is due to a zombie object. See [`Investigating crashes for zombie objects`](investigating-crashes-for-zombie-objects.md).
-- If `gpus_ReturnNotPermittedKillClient` is at the top of the backtrace, the operating system terminated the process because it attempted to do rendering with OpenGL ES while in the background. To resolve a crash with this symbol in the backtrace, migrate your OpenGL ES code to Metal. See [`Migrating OpenGL code to Metal`](https://developer.apple.com/documentation/Metal/migrating-opengl-code-to-metal).
+- If [`objc_msgSend`](https://developer.apple.com/documentation/objectivec/objc_msgsend), `objc_retain`, or `objc_release` is at the top of the backtrace, the crash is due to a zombie object. See [`Investigating crashes for zombie objects`](investigating-crashes-for-zombie-objects.md).
+- If `gpus_ReturnNotPermittedKillClient` is at the top of the backtrace, the operating system terminated the process because it attempted to do rendering with OpenGL ES while in the background. To resolve a crash with this symbol in the backtrace, migrate your OpenGL ES code to Metal. See [`Migrating OpenGL code to Metal`](https://developer.apple.com/documentation/metal/migrating-opengl-code-to-metal).
 
 In other cases, the cause of a memory access issue isn’t present in the backtrace. *Memory corruption* occurs when a memory location is unexpectedly modified. After this modification, another part of your app may crash when it tries to use that memory location. The backtrace shows the code accessing the modified memory, but not the code that unexpectedly modified the memory. The unexpected modification may have occurred a long time before the crash, so the source of the issue isn’t visible in the backtrace. If you have numerous crash reports with signs of a memory access issue, but with different backtraces, you may have a memory corruption issue. The information in [`Investigate the crash with Xcode`](investigating-memory-access-crashes#Investigate-the-crash-with-Xcode.md) can help identify the source of the memory corruption.
 
@@ -173,7 +173,7 @@ The link register contains `0x00000001021063c4`, which is an instruction address
 -[ViewController loadData] (in MyCoolApp) (ViewController.m:38)
 ```
 
-[`Symbolicate the crash report with the command line`](adding-identifiable-symbol-names-to-a-crash-report#Symbolicate-the-crash-report-with-the-command-line.md) discusses how to use the `atos` command line tool in more detail.
+[`Symbolicate the crash report using a command-line tool`](adding-identifiable-symbol-names-to-a-crash-report#Symbolicate-the-crash-report-using-a-command-line-tool.md) discusses how to use the `atos` command line tool in more detail.
 
 ## See Also
 

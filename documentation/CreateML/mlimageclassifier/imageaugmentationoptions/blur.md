@@ -22,7 +22,7 @@ static let blur: MLImageClassifier.ImageAugmentationOptions
 
 Use this option to tell the image classifier to augment your training data set by creating blurred versions of the original images.
 
-![Diagram showing how the original image results in four blurred variants.](https://docs-assets.developer.apple.com/published/8e69adbdfeeaa69d4b2ff7479e4e3330/MLImageClassifier-ImageAugmentationOptions-blur-1%402x.png)
+![Diagram showing how the original image results in four blurred variants.](/images/com.apple.createml/MLImageClassifier-ImageAugmentationOptions-blur-1@2x.png)
 
 The classifier creates four new images with random amounts of blur for each original.
 

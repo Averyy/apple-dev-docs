@@ -42,7 +42,7 @@ The delegate of an `AVCaptureFileOutput` object must adopt the `AVCaptureFileOut
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

@@ -40,8 +40,8 @@ When using a radial gradient as a shape style, you can also use [`radialGradient
 ## Relationships
 
 ### Conforms To
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 - [ShapeStyle](shapestyle.md)
 - [View](view.md)
 

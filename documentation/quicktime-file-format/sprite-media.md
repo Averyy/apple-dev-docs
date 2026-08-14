@@ -12,7 +12,7 @@ It has a media type of `'sprt'`.
 
 #### Sprite Sample Description
 
-The sprite sample description uses the standard sample description header, as described in [`Sample description atom ('stsd')`](sample_description_atom.md).
+The sprite sample description uses the standard sample description header, as described in [`Sample description atom`](sample_description_atom.md).
 
 The data format field in the sample description is always set to `'sprt'`. The sprite media handler adds no additional fields to the sample description.
 

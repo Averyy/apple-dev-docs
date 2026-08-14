@@ -24,7 +24,7 @@ To search for records of a record type:
 6. Click the Query Records button, and view the results.
 7. Expand a record’s disclosure triangle to view its details.
 
-![A screenshot showing a container’s records on the data management page of the CloudKit Database app.](https://docs-assets.developer.apple.com/published/3f11d7dc8b0410179939c7dd119ca714/media-3699103%402x.png)
+![A screenshot showing a container’s records on the data management page of the CloudKit Database app.](/images/com.apple.cloudkit/media-3699103@2x.png)
 
 > **Note**:  If you get the error, `“Field recordName is not marked queryable,”` see the [`Enable querying for your record type`](inspecting-and-editing-an-icloud-container-s-schema#Enable-querying-for-your-record-type.md) section of [`Inspecting and Editing an iCloud Container’s Schema`](inspecting-and-editing-an-icloud-container-s-schema.md).
 
@@ -40,7 +40,7 @@ To create a new record:
 4. Select the database, type, and zone you’re creating a record for.
 5. Enter values in the Fields area, and click Save.
 
-![A screenshot showing a container’s data management page in the CloudKit Database app. The screenshot highlights the Add options and the New Record dialog.](https://docs-assets.developer.apple.com/published/9187af3774f0dccfff699842894206c7/media-3699105%402x.png)
+![A screenshot showing a container’s data management page in the CloudKit Database app. The screenshot highlights the Add options and the New Record dialog.](/images/com.apple.cloudkit/media-3699105@2x.png)
 
 ##### Modify or Delete a Record
 
@@ -58,7 +58,7 @@ To modify or delete an existing record:
 8. To edit a record, enter new values in the text fields and click Save.
 9. To delete a record, click the Delete button. Then, in the dialog that appears, click Delete to confirm the deletion.
 
-![A screenshot showing a container’s data management page in the CloudKit Dashboard app. The screenshot highlights the Records menu item in the Data section on the left, as well as the Record Details dialog on the right.](https://docs-assets.developer.apple.com/published/7365e8400ffaea22b9db498d50e302e8/media-3699098%402x.png)
+![A screenshot showing a container’s data management page in the CloudKit Dashboard app. The screenshot highlights the Records menu item in the Data section on the left, as well as the Record Details dialog on the right.](/images/com.apple.cloudkit/media-3699098@2x.png)
 
 ## See Also
 

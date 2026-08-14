@@ -25,7 +25,7 @@ The native Boolean value.
 
 #### Discussion
 
-This method uses JavaScript type coercion to convert the value to a JavaScript Boolean value, then returns the native representation of the result. Thus, this method can return [`true`](https://developer.apple.com/documentation/Swift/true) even when the [`isBoolean`](jsvalue/isboolean.md) property does not.
+This method uses JavaScript type coercion to convert the value to a JavaScript Boolean value, then returns the native representation of the result. Thus, this method can return [`true`](https://developer.apple.com/documentation/swift/true) even when the [`isBoolean`](jsvalue/isboolean.md) property does not.
 
 ## See Also
 
@@ -40,7 +40,7 @@ This method uses JavaScript type coercion to convert the value to a JavaScript B
 - [func toUInt32() -> UInt32](jsvalue/touint32.md)
   Converts the JavaScript value to a native unsigned integer value.
 - [func toNumber() -> NSNumber!](jsvalue/tonumber.md)
-  Converts the JavaScript value to a [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) object.
+  Converts the JavaScript value to a [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) object.
 - [func toString() -> String!](jsvalue/tostring.md)
   Converts the JavaScript value to a native string.
 - [func toDate() -> Date!](jsvalue/todate.md)

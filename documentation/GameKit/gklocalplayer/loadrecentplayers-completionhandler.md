@@ -35,7 +35,7 @@ func loadRecentPlayers() async throws -> [GKPlayer]
   Loads the local player’s friends list if the local player and their friends grant access.
 - [func loadFriends(identifiedBy: [String], completionHandler: ([GKPlayer]?, (any Error)?) -> Void)](gklocalplayer/loadfriends(identifiedby:completionhandler:).md)
   Loads the player’s friends list, scoped by the identifiers, if the player and their friends grant access.
-- [NSGKFriendListUsageDescription](../BundleResources/Information-Property-List/NSGKFriendListUsageDescription.md)
+- [NSGKFriendListUsageDescription](../bundleresources/information-property-list/nsgkfriendlistusagedescription.md)
   A message that tells people why the app needs access to their Game Center friends list.
 - [func loadChallengableFriends(completionHandler: (([GKPlayer]?, (any Error)?) -> Void)?)](gklocalplayer/loadchallengablefriends(completionhandler:).md)
   Loads players to whom the local player can issue a challenge.

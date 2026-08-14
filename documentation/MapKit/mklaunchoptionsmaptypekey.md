@@ -20,7 +20,7 @@ let MKLaunchOptionsMapTypeKey: String
 
 #### Discussion
 
-The value of this key is an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) object whose value is an integer corresponding to an [`MKMapType`](mkmaptype.md) value.
+The value of this key is an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) object whose value is an integer corresponding to an [`MKMapType`](mkmaptype.md) value.
 
 ## See Also
 

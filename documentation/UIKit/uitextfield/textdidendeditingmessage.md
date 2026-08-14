@@ -27,8 +27,8 @@ struct TextDidEndEditingMessage
 ## Relationships
 
 ### Conforms To
-- [NotificationCenter.MainActorMessage](../Foundation/NotificationCenter/MainActorMessage.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [NotificationCenter.MainActorMessage](../foundation/notificationcenter/mainactormessage.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 
 ---

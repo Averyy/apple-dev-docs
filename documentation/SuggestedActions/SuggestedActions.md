@@ -22,12 +22,12 @@ By default, the `SuggestedActionsView` doesn’t take up space or affect your la
 - Adding an entry in Reminders
 - Opening a location in Maps
 
-> **Note**: To use the Suggested Actions framework, add the [`Suggested Actions`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.suggested-actions) entitlement to your app target.
+> **Note**: To use the Suggested Actions framework, add the [`Suggested Actions`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.suggested-actions) entitlement to your app target.
 
 ## Topics
 
 ### Essentials
-- [Suggested Actions](../BundleResources/Entitlements/com.apple.developer.suggested-actions.md)
+- [Suggested Actions](../bundleresources/entitlements/com.apple.developer.suggested-actions.md)
   A Boolean value that indicates whether a messaging app displays suggested actions for a message.
 ### Suggested actions for messages
 - [struct SuggestedActionsView](suggestedactionsview.md)

@@ -22,7 +22,7 @@ var transform: CGAffineTransform { get set }
 
 Use this property to scale or rotate the view’s frame rectangle within its superview’s coordinate system. (To change the position of the view, modify the [`center`](uiview/center.md) property instead.) The default value of this property is `CGAffineTransformIdentity`.
 
-Transformations occur relative to the view’s anchor point. By default, the anchor point is equal to the center point of the frame rectangle. To change the anchor point, modify the [`anchorPoint`](https://developer.apple.com/documentation/QuartzCore/CALayer/anchorPoint) property of the view’s underlying [`CALayer`](https://developer.apple.com/documentation/QuartzCore/CALayer) object.
+Transformations occur relative to the view’s anchor point. By default, the anchor point is equal to the center point of the frame rectangle. To change the anchor point, modify the [`anchorPoint`](https://developer.apple.com/documentation/quartzcore/calayer/anchorpoint) property of the view’s underlying [`CALayer`](https://developer.apple.com/documentation/quartzcore/calayer) object.
 
 Changes to this property can be animated.
 

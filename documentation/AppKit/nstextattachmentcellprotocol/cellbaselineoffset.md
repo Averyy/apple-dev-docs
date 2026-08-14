@@ -22,7 +22,7 @@ The image should be drawn so its lower-left corner lies on this point.
 
 ## See Also
 
-- [var icon: NSImage?](../Foundation/FileWrapper/icon.md)
+- [var icon: NSImage?](../foundation/filewrapper/icon.md)
   The icon that represents the file wrapper.
 - [func cellSize() -> NSSize](nstextattachmentcellprotocol/cellsize.md)
   Returns the size of the attachment’s icon.

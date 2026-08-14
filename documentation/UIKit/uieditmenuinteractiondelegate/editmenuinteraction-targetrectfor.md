@@ -19,11 +19,11 @@ optional func editMenuInteraction(_ interaction: UIEditMenuInteraction, targetRe
 
 #### Return Value
 
-Returns a rectangle relative to the edit menu interaction’s view. Return [`CGRectNull`](https://developer.apple.com/documentation/CoreGraphics/CGRectNull) to use the default rectangle.
+Returns a rectangle relative to the edit menu interaction’s view. Return [`CGRectNull`](https://developer.apple.com/documentation/coregraphics/cgrectnull) to use the default rectangle.
 
 #### Discussion
 
-UIKit calls this method when the interaction begins or requires an update for the position of the menu when calling [`updateVisibleMenuPosition(animated:)`](uieditmenuinteraction/updatevisiblemenuposition(animated:).md). The menu displays around the target rectangle you provide, space permitting, with the menu pointing in the direction the configuration specifies. When not implemented, the default is an empty rectangle centered at configuration.sourcePoint. Return [`CGRectNull`](https://developer.apple.com/documentation/CoreGraphics/CGRectNull) to use the default rect.
+UIKit calls this method when the interaction begins or requires an update for the position of the menu when calling [`updateVisibleMenuPosition(animated:)`](uieditmenuinteraction/updatevisiblemenuposition(animated:).md). The menu displays around the target rectangle you provide, space permitting, with the menu pointing in the direction the configuration specifies. When not implemented, the default is an empty rectangle centered at configuration.sourcePoint. Return [`CGRectNull`](https://developer.apple.com/documentation/coregraphics/cgrectnull) to use the default rect.
 
 The following example provides the frame of the subview as the target rectangle for the interaction.
 

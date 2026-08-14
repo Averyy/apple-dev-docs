@@ -6,11 +6,11 @@ Use Swift Observation and automatic tracking to update your views in response to
 
 #### Overview
 
-Swift [`Observation`](https://developer.apple.com/documentation/Observation) provides the [`Observable`](https://developer.apple.com/documentation/Observation/Observable) macro to mark your models for automatic change tracking. When you combine `Observable` models with AppKit, the system automatically watches for property changes and updates your views. You don’t need to manually invalidate anything — AppKit handles it for you.
+Swift [`Observation`](https://developer.apple.com/documentation/observation) provides the [`Observable`](https://developer.apple.com/documentation/observation/observable) macro to mark your models for automatic change tracking. When you combine `Observable` models with AppKit, the system automatically watches for property changes and updates your views. You don’t need to manually invalidate anything — AppKit handles it for you.
 
 AppKit provides methods in several objects where automatic observation tracking happens. In a view subclass, [`updateConstraints()`](nsview/updateconstraints().md), [`layout()`](nsview/layout().md), and [`draw(_:)`](nsview/draw(_:).md) are examples of methods that automatically track any `Observable` properties you read, and AppKit updates your views when those properties change.
 
-> **Note**: In macOS 15, the system doesn’t enable automatic observation tracking by default. To enable it, add the [`NSObservationTrackingEnabled`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSObservationTrackingEnabled) key to your app’s information property list and set the key’s value to [`true`](https://developer.apple.com/documentation/Swift/true).
+> **Note**: In macOS 15, the system doesn’t enable automatic observation tracking by default. To enable it, add the [`NSObservationTrackingEnabled`](https://developer.apple.com/documentation/bundleresources/information-property-list/nsobservationtrackingenabled) key to your app’s information property list and set the key’s value to [`true`](https://developer.apple.com/documentation/swift/true).
 
 ##### Update View Properties Automatically
 

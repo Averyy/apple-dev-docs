@@ -19,7 +19,7 @@ mutating func invalidate()
 
 #### Discussion
 
-Call this method when you want to translate new content using the same source and target languages. When you do, it causes the [`translationTask(_:action:)`](https://developer.apple.com/documentation/SwiftUI/View/translationTask(_:action:)) function to call its `action` closure and translate the content again.
+Call this method when you want to translate new content using the same source and target languages. When you do, it causes the [`translationTask(_:action:)`](https://developer.apple.com/documentation/swiftui/view/translationtask(_:action:)) function to call its `action` closure and translate the content again.
 
 
 ---

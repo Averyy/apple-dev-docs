@@ -19,7 +19,7 @@ case task
 
 #### Discussion
 
-![None](https://docs-assets.developer.apple.com/published/c9b98cf2cf8f8edfb0ababa96883b625/media-2934531%402x.png)
+![None](/images/com.apple.uikit/media-2934531@2x.png)
 
 ## See Also
 

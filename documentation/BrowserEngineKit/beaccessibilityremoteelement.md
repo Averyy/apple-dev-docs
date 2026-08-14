@@ -20,9 +20,9 @@ class BEAccessibilityRemoteElement
 
 If a peripheral process in your browser app (such as a web content process or extension process) provides Accessibility elements, you can use this class to connect the Accessibility element hierarchies across the two processes so that assistive technologies such as VoiceOver, Switch Control, and Voice Control can interact with both hierarchies.
 
-Create an instance of this class in the peripheral process and pass in the same identifier you use to create a [`BEAccessibilityRemoteHostElement`](beaccessibilityremotehostelement.md) instance on the main process. Add elements to the [`accessibilityElements`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class/accessibilityElements) method return value of the instance of this class to enable assistive technologies to simultaneously access both Accessibility element hierarchies.
+Create an instance of this class in the peripheral process and pass in the same identifier you use to create a [`BEAccessibilityRemoteHostElement`](beaccessibilityremotehostelement.md) instance on the main process. Add elements to the [`accessibilityElements`](https://developer.apple.com/documentation/objectivec/nsobject-swift.class/accessibilityelements) method return value of the instance of this class to enable assistive technologies to simultaneously access both Accessibility element hierarchies.
 
-> **Note**: Unlike [`BEAccessibilityRemoteHostElement`](beaccessibilityremotehostelement.md), you don’t add an instance of this class to the [`accessibilityElements`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class/accessibilityElements) method return value for a member of your view hierarchy.
+> **Note**: Unlike [`BEAccessibilityRemoteHostElement`](beaccessibilityremotehostelement.md), you don’t add an instance of this class to the [`accessibilityElements`](https://developer.apple.com/documentation/objectivec/nsobject-swift.class/accessibilityelements) method return value for a member of your view hierarchy.
 
 ## Topics
 
@@ -33,14 +33,14 @@ Create an instance of this class in the peripheral process and pass in the same 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

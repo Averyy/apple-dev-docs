@@ -20,7 +20,7 @@ init?(coder: NSCoder)
 
 ## Parameters
 
-- `coder`: A coder that subclasses [`NSCoder`](https://developer.apple.com/documentation/Foundation/NSCoder).
+- `coder`: A coder that subclasses [`NSCoder`](https://developer.apple.com/documentation/foundation/nscoder).
 
 ## See Also
 

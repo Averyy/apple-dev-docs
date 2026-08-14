@@ -33,7 +33,7 @@ let currencyValues = ["$100.11", "$1,000.22", "$10,000.33", "€100.44"]
 let parsedValues = currencyValues.map { try? usCurrencyStrategy.parse($0) } // [Optional(100.11), Optional(1000.22), Optional(10000.33), nil]
 ```
 
-You don’t need to instantiate a parse strategy variable to parse a single string. Instead, use the [`init(_:format:lenient:)`](decimal/init(_:format:lenient:)-3u6o6.md) initializer, which takes a source [`String`](https://developer.apple.com/documentation/Swift/String) and a `format` parameter to parse the string according to the provided [`Decimal.FormatStyle`](decimal/formatstyle.md). The following example parses a string that represents a currency value in US dollars.
+You don’t need to instantiate a parse strategy variable to parse a single string. Instead, use the [`init(_:format:lenient:)`](decimal/init(_:format:lenient:)-3u6o6.md) initializer, which takes a source [`String`](https://developer.apple.com/documentation/swift/string) and a `format` parameter to parse the string according to the provided [`Decimal.FormatStyle`](decimal/formatstyle.md). The following example parses a string that represents a currency value in US dollars.
 
 ```swift
 let formattedUSDollars = "$1,234.56"
@@ -66,13 +66,13 @@ Decimal also has an [`init(_:strategy:)`](decimal/init(_:strategy:).md) initiali
 ## Relationships
 
 ### Conforms To
-- [Decodable](../Swift/Decodable.md)
-- [Encodable](../Swift/Encodable.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
+- [Decodable](../swift/decodable.md)
+- [Encodable](../swift/encodable.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
 - [ParseStrategy](parsestrategy.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

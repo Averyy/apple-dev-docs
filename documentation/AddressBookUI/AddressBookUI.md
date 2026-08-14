@@ -14,7 +14,7 @@ Access users’ contacts and display them in a graphical interface.
 
 The AddressBookUI framework provides controllers that facilitate displaying, editing, selecting, and creating records in the Address Book database.
 
-> ❗ **Important**:  Do not use the AddressBookUI framework in iOS 9 and later. Use the APIs defined in the [`Contacts UI`](https://developer.apple.com/documentation/ContactsUI) framework instead.
+> ❗ **Important**:  Do not use the AddressBookUI framework in iOS 9 and later. Use the APIs defined in the [`Contacts UI`](https://developer.apple.com/documentation/contactsui) framework instead.
 
 ## Topics
 

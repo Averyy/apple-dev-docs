@@ -6,7 +6,7 @@ Enable your node to respond to user input, like touches or mouse clicks.
 
 #### Overview
 
-`SKNode` subclasses [`UIResponder`](https://developer.apple.com/documentation/UIKit/UIResponder) in iOS and tvOS, and [`NSResponder`](https://developer.apple.com/documentation/AppKit/NSResponder) in macOS, allowing nodes to respond to user interaction events such as touches and mouse movements.
+`SKNode` subclasses [`UIResponder`](https://developer.apple.com/documentation/uikit/uiresponder) in iOS and tvOS, and [`NSResponder`](https://developer.apple.com/documentation/appkit/nsresponder) in macOS, allowing nodes to respond to user interaction events such as touches and mouse movements.
 
 There are two strategies you can adopt when supporting user interaction.
 
@@ -45,7 +45,7 @@ class TouchScene: SKScene {
 
 > **Note**:  Alternatively, you could override [`sceneDidLoad()`](skscene/scenedidload().md) and set [`isUserInteractionEnabled`](sknode/isuserinteractionenabled.md) to `true` in your implementation.
 
-The overridden [`touchesBegan(_:with:)`](https://developer.apple.com/documentation/UIKit/UIResponder/touchesBegan(_:with:)) method shows two techniques to find the nodes that have been touched. [`nodes(at:)`](sknode/nodes(at:).md) returns an array of all of the sprites and [`atPoint(_:)`](sknode/atpoint(_:).md) returns the top-most touched node.
+The overridden [`touchesBegan(_:with:)`](https://developer.apple.com/documentation/uikit/uiresponder/touchesbegan(_:with:)) method shows two techniques to find the nodes that have been touched. [`nodes(at:)`](sknode/nodes(at:).md) returns an array of all of the sprites and [`atPoint(_:)`](sknode/atpoint(_:).md) returns the top-most touched node.
 
 In this example, the child nodes should have [`isUserInteractionEnabled`](sknode/isuserinteractionenabled.md) set to `false`. The parent scene is responsible for responding to user interactions.
 
@@ -100,7 +100,7 @@ class TouchSpriteNode: SKSpriteNode {
 
 ##### Handle User Interaction on Hidden Nodes By Using Alpha
 
-Translucent nodes–those with an [`alpha`](sknode/alpha.md) of less than `1` but greater than `0`–still receive user interactions. You can set a node’s `alpha` to [`leastNonzeroMagnitude`](https://developer.apple.com/documentation/Swift/Float/leastNonzeroMagnitude) to make it effectively transparent and yet still respond to touches or mouse movements, although giving it a color of `clear` has the same effect.
+Translucent nodes–those with an [`alpha`](sknode/alpha.md) of less than `1` but greater than `0`–still receive user interactions. You can set a node’s `alpha` to [`leastNonzeroMagnitude`](https://developer.apple.com/documentation/swift/float/leastnonzeromagnitude) to make it effectively transparent and yet still respond to touches or mouse movements, although giving it a color of `clear` has the same effect.
 
 ##### Review the Bounds of Node User Interaction
 
@@ -150,9 +150,9 @@ class TouchCompositeNode: SKNode {
 
 ```
 
-If you were to add an instance of `TouchCompositeNode` to an [`SKScene`](skscene.md) with no other nodes behind it, all touches inside its [`calculateAccumulatedFrame()`](sknode/calculateaccumulatedframe().md) would be reported. The figure below shows the accumulated frame of `TouchCompositeNode`. Any user events within the dashed line will call [`touchesBegan(_:with:)`](https://developer.apple.com/documentation/UIKit/UIResponder/touchesBegan(_:with:)).
+If you were to add an instance of `TouchCompositeNode` to an [`SKScene`](skscene.md) with no other nodes behind it, all touches inside its [`calculateAccumulatedFrame()`](sknode/calculateaccumulatedframe().md) would be reported. The figure below shows the accumulated frame of `TouchCompositeNode`. Any user events within the dashed line will call [`touchesBegan(_:with:)`](https://developer.apple.com/documentation/uikit/uiresponder/touchesbegan(_:with:)).
 
-![Diagram showing how user events can be reported inside a node’s accumulated frame](https://docs-assets.developer.apple.com/published/f7a9d0b701f60604c0d9eb65e1a59f62/media-2985136%402x.png)
+![Diagram showing how user events can be reported inside a node’s accumulated frame](/images/com.apple.spritekit/media-2985136@2x.png)
 
 However, if you were to place an instance of `TouchCompositeNode` above another node using, for example, the code in Listing 5, only touches on its child nodes would be reported.
 
@@ -170,9 +170,9 @@ scene.addChild(backgroundNode)
 scene.addChild(composite)
 ```
 
-In this case, only touches or mouse events over the red spots shown in the figure below will call [`touchesBegan(_:with:)`](https://developer.apple.com/documentation/UIKit/UIResponder/touchesBegan(_:with:)).
+In this case, only touches or mouse events over the red spots shown in the figure below will call [`touchesBegan(_:with:)`](https://developer.apple.com/documentation/uikit/uiresponder/touchesbegan(_:with:)).
 
-![Diagram showing how events are reported over a node’s non-transparent content. ](https://docs-assets.developer.apple.com/published/547d4cb2fb694ec4ab99d0f5fa0ff546/media-2985152%402x.png)
+![Diagram showing how events are reported over a node’s non-transparent content. ](/images/com.apple.spritekit/media-2985152@2x.png)
 
 > ❗ **Important**:  Nodes that have user interaction disabled will block touch and mouse events on nodes behind them where they overlap.
 

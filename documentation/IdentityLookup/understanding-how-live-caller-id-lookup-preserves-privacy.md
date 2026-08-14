@@ -8,7 +8,7 @@ Use Live Caller ID Lookup to protect user privacy by hiding the client’s IP ad
 
 The Live Caller ID Lookup feature allows you to check incoming calls against your server for known spam numbers while preserving user privacy. When someone’s device receives a phone call, the system communicates with your back-end server to retrieve caller ID and blocking information, and then displays that information on the incoming call screen and in the device’s recent calls.
 
-![An image of the system to server request for Live Caller ID Lookup.](https://docs-assets.developer.apple.com/published/ec94a72fb258baf1948a87eb222c5e8d/media-4467264%402x.png)
+![An image of the system to server request for Live Caller ID Lookup.](/images/com.apple.identitylookup/media-4467264@2x.png)
 
 Apple’s implementation of Live Caller ID Lookup upholds user privacy while providing useful information. It does this by:
 
@@ -20,7 +20,7 @@ Apple’s implementation of Live Caller ID Lookup upholds user privacy while pro
 
 Live Caller ID Lookup hides identifiable information using Apple’s Oblivious HTTP.
 
-![An architecture diagram demonstrating Oblivious HTTP.](https://docs-assets.developer.apple.com/published/c60ac67f4d64828be73d31ed9f86d006/media-4468074%402x.png)
+![An architecture diagram demonstrating Oblivious HTTP.](/images/com.apple.identitylookup/media-4468074@2x.png)
 
 The Oblivious HTTP routes requests through two relays hosted by different parties. The first relay removes the client’s IP address from the incoming request and can’t see the destination address. A third-party provider hosts the second relay. This removes the IP address before it reaches the server.
 

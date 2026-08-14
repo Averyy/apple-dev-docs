@@ -69,9 +69,9 @@ struct StructToolbarItemGroupView: View {
 }
 ```
 
-![A window showing a font size selector, and toggles for bold, italic.](https://docs-assets.developer.apple.com/published/b7e3a3c785ffaf50a0cf94db31a14341/SwiftUI-View-Styling-ToolbarContent%402x.png)
+![A window showing a font size selector, and toggles for bold, italic.](/images/com.apple.SwiftUI/SwiftUI-View-Styling-ToolbarContent@2x.png)
 
-Although it’s not mandatory, wrapping a related group of toolbar items together in a [`ToolbarItemGroup`](toolbaritemgroup.md) provides a one-to-one mapping between controls and toolbar items which results in the correct layout and spacing on each platform. For design guidance on toolbars, see [`Toolbars`](https://developer.apple.com/design/Human-Interface-Guidelines/toolbars) in the Human Interface Guidelines.
+Although it’s not mandatory, wrapping a related group of toolbar items together in a [`ToolbarItemGroup`](toolbaritemgroup.md) provides a one-to-one mapping between controls and toolbar items which results in the correct layout and spacing on each platform. For design guidance on toolbars, see [`Toolbars`](https://developer.apple.com/design/human-interface-guidelines/toolbars) in the Human Interface Guidelines.
 
 ## Parameters
 

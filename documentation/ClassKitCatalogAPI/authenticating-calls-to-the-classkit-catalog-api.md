@@ -12,7 +12,7 @@ You authenticate the calls you make to the ClassKit Catalog API by including a c
 
 Sign in to the Apple Developer web site, and navigate to the “Certificates, IDs, & Profiles” page. Choose Keys in the sidebar, and then click the plus (+) button to add a new key. Name the key, and enable it for use with ClassKit Catalog. Complete the registration and download the private key.
 
-![Screenshot of the Apple Developer website showing the form for adding a new cryptographic key.](https://docs-assets.developer.apple.com/published/ff35702215033cc574b718cdd5d24a2d/media-3675465%402x.png)
+![Screenshot of the Apple Developer website showing the form for adding a new cryptographic key.](/images/com.apple.classkitcatalogapi/media-3675465@2x.png)
 
 You can download the private key only once. Apple doesn’t keep a copy of your key, so you can’t retrieve the key again. If you lose your key, you’ll need to revoke the key and create a new one. Similarly, if your private key is ever compromised, you’ll need to revoke the original key and create a new one.
 

@@ -21,19 +21,19 @@ var pixelFormat: MTLPixelFormat { get set }
 
 #### Discussion
 
-The default value is [`MTLPixelFormat.bgra8Unorm`](https://developer.apple.com/documentation/Metal/MTLPixelFormat/bgra8Unorm).
+The default value is [`MTLPixelFormat.bgra8Unorm`](https://developer.apple.com/documentation/metal/mtlpixelformat/bgra8unorm).
 
 You must use one of the following formats:
 
-- [`MTLPixelFormat.bgra8Unorm`](https://developer.apple.com/documentation/Metal/MTLPixelFormat/bgra8Unorm)
-- [`MTLPixelFormat.bgra8Unorm_srgb`](https://developer.apple.com/documentation/Metal/MTLPixelFormat/bgra8Unorm_srgb)
-- [`MTLPixelFormat.rgba16Float`](https://developer.apple.com/documentation/Metal/MTLPixelFormat/rgba16Float)
-- [`MTLPixelFormat.rgb10a2Unorm`](https://developer.apple.com/documentation/Metal/MTLPixelFormat/rgb10a2Unorm)
-- [`MTLPixelFormat.bgr10a2Unorm`](https://developer.apple.com/documentation/Metal/MTLPixelFormat/bgr10a2Unorm)
-- [`MTLPixelFormat.bgra10_xr`](https://developer.apple.com/documentation/Metal/MTLPixelFormat/bgra10_xr)
-- [`MTLPixelFormat.bgra10_xr_srgb`](https://developer.apple.com/documentation/Metal/MTLPixelFormat/bgra10_xr_srgb)
-- [`MTLPixelFormat.bgr10_xr`](https://developer.apple.com/documentation/Metal/MTLPixelFormat/bgr10_xr)
-- [`MTLPixelFormat.bgr10_xr_srgb`](https://developer.apple.com/documentation/Metal/MTLPixelFormat/bgr10_xr_srgb)
+- [`MTLPixelFormat.bgra8Unorm`](https://developer.apple.com/documentation/metal/mtlpixelformat/bgra8unorm)
+- [`MTLPixelFormat.bgra8Unorm_srgb`](https://developer.apple.com/documentation/metal/mtlpixelformat/bgra8unorm_srgb)
+- [`MTLPixelFormat.rgba16Float`](https://developer.apple.com/documentation/metal/mtlpixelformat/rgba16float)
+- [`MTLPixelFormat.rgb10a2Unorm`](https://developer.apple.com/documentation/metal/mtlpixelformat/rgb10a2unorm)
+- [`MTLPixelFormat.bgr10a2Unorm`](https://developer.apple.com/documentation/metal/mtlpixelformat/bgr10a2unorm)
+- [`MTLPixelFormat.bgra10_xr`](https://developer.apple.com/documentation/metal/mtlpixelformat/bgra10_xr)
+- [`MTLPixelFormat.bgra10_xr_srgb`](https://developer.apple.com/documentation/metal/mtlpixelformat/bgra10_xr_srgb)
+- [`MTLPixelFormat.bgr10_xr`](https://developer.apple.com/documentation/metal/mtlpixelformat/bgr10_xr)
+- [`MTLPixelFormat.bgr10_xr_srgb`](https://developer.apple.com/documentation/metal/mtlpixelformat/bgr10_xr_srgb)
 
 ## See Also
 

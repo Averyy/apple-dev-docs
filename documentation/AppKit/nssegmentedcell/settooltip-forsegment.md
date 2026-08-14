@@ -21,7 +21,7 @@ Tooltips are currently not displayed.
 ## Parameters
 
 - `toolTip`: The text of the tooltip you want to display for the segment.
-- `segment`: The index of the segment whose tooltip you want to set. This method raises an exception ([`rangeException`](https://developer.apple.com/documentation/Foundation/NSExceptionName/rangeException)) if the index is out of bounds.
+- `segment`: The index of the segment whose tooltip you want to set. This method raises an exception ([`rangeException`](https://developer.apple.com/documentation/foundation/nsexceptionname/rangeexception)) if the index is out of bounds.
 
 ## See Also
 

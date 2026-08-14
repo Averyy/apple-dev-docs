@@ -8,11 +8,11 @@ Present important information to a person or prompt them about an important choi
 
 Display an alert or action sheet when your app requires additional information or acknowledgment from a person. Alerts and action sheets interrupt your app’s normal flow to display a message to the person. The following image shows an alert, which the person dismisses by selecting one of the listed options.
 
-![An alert with a title that says 'A Short Title is Best', a message that says 'A message needs to be a short, complete sentence.', and has buttons for OK and Cancel.](https://docs-assets.developer.apple.com/published/1c688fcfd28582b45d9ae21668e5f617/getting-the-user-s-attention-with-alerts-and-action-sheets-1%402x.png)
+![An alert with a title that says 'A Short Title is Best', a message that says 'A message needs to be a short, complete sentence.', and has buttons for OK and Cancel.](/images/com.apple.uikit/getting-the-user-s-attention-with-alerts-and-action-sheets-1@2x.png)
 
 The following image shows an action sheet. A person dismisses an action sheet by selecting one of the listed options, or by tapping outside an action sheet.
 
-![An action sheet shows with a message that says 'A message needs to be a short, complete sentence.', and has a button for Confirm.](https://docs-assets.developer.apple.com/published/38460444831a172cb1a2d7283ddc3903/getting-the-user-s-attention-with-alerts-and-action-sheets-2%402x.png)
+![An action sheet shows with a message that says 'A message needs to be a short, complete sentence.', and has a button for Confirm.](/images/com.apple.uikit/getting-the-user-s-attention-with-alerts-and-action-sheets-2@2x.png)
 
 > ❗ **Important**:  Alerts and action sheets are interruptions to someone’s current task, so use them sparingly and only when absolutely needed. For detailed guidance on when to use them, see “Action sheets” and “Alerts” in [`Human Interface Guidelines`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/presentation).
 
@@ -75,7 +75,7 @@ Display an action sheet inside a popover on both iPhone and iPad. To display you
 }
 ```
 
-Configure the popover presentation controller’s [`sourceItem`](uipopoverpresentationcontroller/sourceitem.md) to anchor the popover to a [`UIBarButtonItem`](uibarbuttonitem.md) or [`NSToolbarItem`](https://developer.apple.com/documentation/AppKit/NSToolbarItem). When a person taps the button, the popover animates from and replaces the specified item until they select an action item or dismiss the popover.
+Configure the popover presentation controller’s [`sourceItem`](uipopoverpresentationcontroller/sourceitem.md) to anchor the popover to a [`UIBarButtonItem`](uibarbuttonitem.md) or [`NSToolbarItem`](https://developer.apple.com/documentation/appkit/nstoolbaritem). When a person taps the button, the popover animates from and replaces the specified item until they select an action item or dismiss the popover.
 
 Alternatively, specify the anchor location for the popover using the [`sourceView`](uipopoverpresentationcontroller/sourceview.md) and [`sourceRect`](uipopoverpresentationcontroller/sourcerect.md) properties.
 

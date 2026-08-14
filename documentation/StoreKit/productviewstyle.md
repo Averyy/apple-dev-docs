@@ -23,7 +23,7 @@ A type that specifies the appearance and interaction of In-App Purchase products
 
 #### Overview
 
-To configure the in-app purchase product style for a view hierarchy, use the [`productViewStyle(_:)`](https://developer.apple.com/documentation/SwiftUI/View/productViewStyle(_:)) modifier.
+To configure the in-app purchase product style for a view hierarchy, use the [`productViewStyle(_:)`](https://developer.apple.com/documentation/swiftui/view/productviewstyle(_:)) modifier.
 
 To create a custom style, declare a type that conforms to the `ProductViewStyle` protocol. Implement the [`makeBody(configuration:)`](productviewstyle/makebody(configuration:).md) method to return a view that composes the elements of the configuration that the system provides to your method. The following code example shows how to create a custom product view style:
 
@@ -84,10 +84,10 @@ ProductView(id: "com.example.product")
 ## See Also
 
 - [func productViewStyle(some ProductViewStyle) -> some View
-](../SwiftUI/View/productViewStyle(_:).md)
+](../swiftui/view/productviewstyle(_:).md)
   Sets the style for In-App Purchase product views within a view.
 - [func productIconBorder() -> some View
-](../SwiftUI/View/productIconBorder.md)
+](../swiftui/view/producticonborder.md)
   Adds a standard border to an in-app purchase product’s icon .
 - [struct ProductViewStyleConfiguration](productviewstyleconfiguration.md)
   The properties of an In-App Purchase product for use by custom product view styles.

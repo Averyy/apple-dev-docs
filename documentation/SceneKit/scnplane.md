@@ -22,11 +22,11 @@ class SCNPlane
 
 #### Overview
 
-![None](https://docs-assets.developer.apple.com/published/728b1f058100192814f51b3b907e28e7/media-2929811%402x.png)
+![None](/images/com.apple.scenekit/media-2929811@2x.png)
 
 A plane defines a flat surface in the x- and y-axis dimensions of its local coordinate space according to its [`width`](scnplane/width.md) and [`height`](scnplane/height.md) properties. To orient a plane differently, adjust the [`transform`](scnnode/transform.md) property of the node containing the plane geometry. You can create a rounded rectangular plane using the [`cornerRadius`](scnplane/cornerradius.md) property.
 
-The surface is one-sided. Its surface normal vectors point in the positive z-axis direction of its local coordinate space, so it is only visible from that direction by default. To render both sides of a plane, either set the [`isDoubleSided`](scnmaterial/isdoublesided.md) property of its material to [`true`](https://developer.apple.com/documentation/Swift/true) or create two plane geometries and orient them back to back.
+The surface is one-sided. Its surface normal vectors point in the positive z-axis direction of its local coordinate space, so it is only visible from that direction by default. To render both sides of a plane, either set the [`isDoubleSided`](scnmaterial/isdoublesided.md) property of its material to [`true`](https://developer.apple.com/documentation/swift/true) or create two plane geometries and orient them back to back.
 
 Control the level of detail with the [`widthSegmentCount`](scnplane/widthsegmentcount.md), [`heightSegmentCount`](scnplane/heightsegmentcount.md), and [`cornerSegmentCount`](scnplane/cornersegmentcount.md) properties. A higher segment count produces more vertices, which can improve rendering quality for certain lighting models or custom shader effects, but at a cost to rendering performance.
 
@@ -56,15 +56,15 @@ Control the level of detail with the [`widthSegmentCount`](scnplane/widthsegment
 ### Inherits From
 - [SCNGeometry](scngeometry.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCoding](../Foundation/NSCoding.md)
-- [NSCopying](../Foundation/NSCopying.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [NSSecureCoding](../Foundation/NSSecureCoding.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCoding](../foundation/nscoding.md)
+- [NSCopying](../foundation/nscopying.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSSecureCoding](../foundation/nssecurecoding.md)
 - [SCNAnimatable](scnanimatable.md)
 - [SCNBoundingVolume](scnboundingvolume.md)
 - [SCNShadable](scnshadable.md)

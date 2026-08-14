@@ -23,7 +23,7 @@ struct PointOfInterestCategories
 ## Topics
 
 ### Creating point of interest categories
-- [init(arrayLiteral: Self.ArrayLiteralElement...)](../Swift/ExpressibleByArrayLiteral/init(arrayLiteral:).md)
+- [init(arrayLiteral: Self.ArrayLiteralElement...)](../swift/expressiblebyarrayliteral/init(arrayliteral:).md)
   Creates an instance initialized with the given elements.
 ### Categories to include or exclude
 - [static var all: PointOfInterestCategories](pointofinterestcategories/all.md)
@@ -40,15 +40,15 @@ struct PointOfInterestCategories
 - [static func including(MKPointOfInterestCategory...) -> PointOfInterestCategories](pointofinterestcategories/including(_:)-6flda.md)
   Show only points of interest belonging to certain categories from the provided list.
 ### Type aliases
-- [associatedtype ArrayLiteralElement](../Swift/ExpressibleByArrayLiteral/ArrayLiteralElement.md)
+- [associatedtype ArrayLiteralElement](../swift/expressiblebyarrayliteral/arrayliteralelement.md)
   The type of the elements of an array literal.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../Swift/Copyable.md)
-- [Escapable](../Swift/Escapable.md)
-- [ExpressibleByArrayLiteral](../Swift/ExpressibleByArrayLiteral.md)
+- [Copyable](../swift/copyable.md)
+- [Escapable](../swift/escapable.md)
+- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
 
 
 ---

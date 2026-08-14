@@ -8,7 +8,7 @@ Encourage friendly competition by adding challenges to your game.
 
 Challenges encourage your players to invite their friends into your game for friendly competitions in score-based rounds. Players see your challenges promoted throughout the Games app and other places around the OS as suggestions for enjoying their games with friends. They can invite their Game Center friends and anyone from their contacts, see scores appear in real-time, receive notifications at key moments until the game crowns a winner, and have a rematch. GameKit builds challenges on top of leaderboards, turning single-player game activities into a social experience players can share with their friends.
 
-![An illustration that shows a variety of challenges.](https://docs-assets.developer.apple.com/published/e8ebdccc7074c6f311f3f61f57e7d6a6/creating-engaging-challenges-from-leaderboards-hero%402x.png)
+![An illustration that shows a variety of challenges.](/images/com.apple.gamekit/creating-engaging-challenges-from-leaderboards-hero@2x.png)
 
 To adopt challenges, you just need an active Game Center leaderboard. When you associate a leaderboard with a challenge, for players participating in the challenge, the system automatically submits the same scores submitted for that leaderboard.
 
@@ -20,7 +20,7 @@ Configure challenges in Xcode before accessing them in your code. When you’re 
 
 When you configure a challenge, you specify details like the leaderboard with which to associate it and whether it’s repeatable. You also configure localization details for the challenge, like the display name.
 
-![A screenshot of the GameKit configuration in Xcode. The configuration includes a classic leaderboard named ](https://docs-assets.developer.apple.com/published/efaca639de76082ecb53dd8591830fde/xcode-challenge-fastest-clear-time%402x.png)
+![A screenshot of the GameKit configuration in Xcode. The configuration includes a classic leaderboard named ](/images/com.apple.gamekit/xcode-challenge-fastest-clear-time@2x.png)
 
 If you make changes to your game, like adding a new leaderboard or adding a deep link using activities, you can configure a minimum version for a challenge. When you do, the Games app prompts a person to upgrade to the appropriate version of your game to participate in the challenge. For more information, see the “Set challenges minimum version” section in [`Manage Challenges`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/configure-game-center/manage-challenges).
 
@@ -114,7 +114,7 @@ When a player wants to engage with a challenge that you associate with an activi
   Understand what gameplay works well when configuring challenges in your game.
 - [class GKChallengeDefinition](gkchallengedefinition.md)
   An object that represents the static metadata you define for the challenge.
-- [GKShowChallengeBanners](../BundleResources/Information-Property-List/GKShowChallengeBanners.md)
+- [GKShowChallengeBanners](../bundleresources/information-property-list/gkshowchallengebanners.md)
   A Boolean value that indicates whether GameKit can display challenge banners in a game.
 
 

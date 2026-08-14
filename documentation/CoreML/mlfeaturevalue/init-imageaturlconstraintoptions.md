@@ -22,9 +22,9 @@ convenience init(imageAtURL url: URL, constraint: MLImageConstraint, options: [M
 
 ## Parameters
 
-- `url`: A [`URL`](https://developer.apple.com/documentation/Foundation/URL) (Swift) or [`NSURL`](https://developer.apple.com/documentation/Foundation/NSURL) (Objective-C) to an image.
+- `url`: A [`URL`](https://developer.apple.com/documentation/foundation/url) (Swift) or [`NSURL`](https://developer.apple.com/documentation/foundation/nsurl) (Objective-C) to an image.
 - `constraint`: An [`MLImageConstraint`](mlimageconstraint.md) instance.
-- `options`: A dictionary of [`VNImageCropAndScaleOption`](https://developer.apple.com/documentation/Vision/VNImageCropAndScaleOption) values, each keyed by [`MLFeatureValue.ImageOption`](mlfeaturevalue/imageoption.md).
+- `options`: A dictionary of [`VNImageCropAndScaleOption`](https://developer.apple.com/documentation/vision/vnimagecropandscaleoption) values, each keyed by [`MLFeatureValue.ImageOption`](mlfeaturevalue/imageoption.md).
 
 ## See Also
 

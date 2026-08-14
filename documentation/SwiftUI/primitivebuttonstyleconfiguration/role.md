@@ -50,7 +50,7 @@ VStack(spacing: 20) {
 .buttonStyle(MyButtonStyle())
 ```
 
-![A screenshot of three buttons stacked vertically. The first says](https://docs-assets.developer.apple.com/published/fc5f574e801c90d4bf376b38c19a601d/PrimitiveButtonStyleConfiguration-role-1%402x.png)
+![A screenshot of three buttons stacked vertically. The first says](/images/com.apple.SwiftUI/PrimitiveButtonStyleConfiguration-role-1@2x.png)
 
 
 ---

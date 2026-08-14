@@ -26,7 +26,7 @@ A newly initialized audio node.
 
 ## Parameters
 
-- `node`: An [`AVAudioNode`](https://developer.apple.com/documentation/AVFAudio/AVAudioNode) object that holds an [`AVAudioEngine`](https://developer.apple.com/documentation/AVFAudio/AVAudioEngine) sound graph from a single sound source or URL.
+- `node`: An [`AVAudioNode`](https://developer.apple.com/documentation/avfaudio/avaudionode) object that holds an [`AVAudioEngine`](https://developer.apple.com/documentation/avfaudio/avaudioengine) sound graph from a single sound source or URL.
 
 ## See Also
 

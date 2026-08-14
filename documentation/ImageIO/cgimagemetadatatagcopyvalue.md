@@ -22,7 +22,7 @@ func CGImageMetadataTagCopyValue(_ tag: CGImageMetadataTag) -> CFTypeRef?
 
 #### Return Value
 
-A copy of the tag’s value. Possible return types are [`CFString`](https://developer.apple.com/documentation/CoreFoundation/CFString), [`CFNumber`](https://developer.apple.com/documentation/CoreFoundation/CFNumber), [`CFBoolean`](https://developer.apple.com/documentation/CoreFoundation/CFBoolean), [`CFArray`](https://developer.apple.com/documentation/CoreFoundation/CFArray), and [`CFDictionary`](https://developer.apple.com/documentation/CoreFoundation/CFDictionary).
+A copy of the tag’s value. Possible return types are [`CFString`](https://developer.apple.com/documentation/corefoundation/cfstring), [`CFNumber`](https://developer.apple.com/documentation/corefoundation/cfnumber), [`CFBoolean`](https://developer.apple.com/documentation/corefoundation/cfboolean), [`CFArray`](https://developer.apple.com/documentation/corefoundation/cfarray), and [`CFDictionary`](https://developer.apple.com/documentation/corefoundation/cfdictionary).
 
 #### Discussion
 

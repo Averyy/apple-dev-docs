@@ -39,8 +39,8 @@ Subscribe to this event to learn when the framework throttles splat rendering. I
 
 ### Conforms To
 - [Event](event.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 
 ---

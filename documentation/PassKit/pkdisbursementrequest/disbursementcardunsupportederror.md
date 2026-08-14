@@ -20,7 +20,7 @@ class func disbursementCardUnsupportedError() -> any Error
 
 #### Return Value
 
-An [`NSError`](https://developer.apple.com/documentation/Foundation/NSError) that describes the error condition.
+An [`NSError`](https://developer.apple.com/documentation/foundation/nserror) that describes the error condition.
 
 ## See Also
 

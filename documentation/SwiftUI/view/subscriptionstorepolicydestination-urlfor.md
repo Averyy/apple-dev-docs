@@ -24,7 +24,7 @@ func subscriptionStorePolicyDestination(url: URL, for button: SubscriptionStoreP
 
 You can also set a view as the destination using [`subscriptionStorePolicyDestination(for:destination:)`](view/subscriptionstorepolicydestination(for:destination:).md). If you do not set a destination, or pass `nil` for `url`, the system will use the automatic behavior. Check the documentation for the value you provide for `button` to understand the automatic behavior.
 
-By default, the subscription store shows the terms of service & privacy policy buttons if you set a destination for at least one policy. The policy that is not explicitly set will use the automatic behavior. You can override this behavior using the [`storeButton(_:for:)`](view/storebutton(_:for:).md) modifier, with [`policies`](https://developer.apple.com/documentation/StoreKit/StoreButtonKind/policies) as the second parameter.
+By default, the subscription store shows the terms of service & privacy policy buttons if you set a destination for at least one policy. The policy that is not explicitly set will use the automatic behavior. You can override this behavior using the [`storeButton(_:for:)`](view/storebutton(_:for:).md) modifier, with [`policies`](https://developer.apple.com/documentation/storekit/storebuttonkind/policies) as the second parameter.
 
 ## Parameters
 

@@ -23,7 +23,7 @@ class GCDeviceHaptics
 
 Use this class to create a haptic engine with a specified locality. Any patterns you send to that engine play on the specified actuators.
 
-> ❗ **Important**:  The [`supportsHaptics`](https://developer.apple.com/documentation/CoreHaptics/CHHapticDeviceCapability/supportsHaptics) property of the engine that returns from the [`createEngine(withLocality:)`](gcdevicehaptics/createengine(withlocality:).md) method applies to the device, not the game controller. Use the [`supportedLocalities`](gcdevicehaptics/supportedlocalities.md) method in this class to determine whether a game controller supports haptics.
+> ❗ **Important**:  The [`supportsHaptics`](https://developer.apple.com/documentation/corehaptics/chhapticdevicecapability/supportshaptics) property of the engine that returns from the [`createEngine(withLocality:)`](gcdevicehaptics/createengine(withlocality:).md) method applies to the device, not the game controller. Use the [`supportedLocalities`](gcdevicehaptics/supportedlocalities.md) method in this class to determine whether a game controller supports haptics.
 
 ## Topics
 
@@ -41,14 +41,14 @@ Use this class to create a haptic engine with a specified locality. Any patterns
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

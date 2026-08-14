@@ -34,10 +34,10 @@ This method is mostly for use by subclasses which want to analyze the existing b
   Establishes a binding between a given property of the receiver and the property of a given object specified by a given key path.
 - [func optionDescriptionsForBinding(NSBindingName) -> [NSAttributeDescription]](nsobject-swift.class/optiondescriptionsforbinding(_:).md)
   Returns an array describing the options for the specified binding.
-- [struct NSBindingInfoKey](../AppKit/NSBindingInfoKey.md)
+- [struct NSBindingInfoKey](../appkit/nsbindinginfokey.md)
 - [func unbind(NSBindingName)](nsobject-swift.class/unbind(_:).md)
   Removes a given binding between the receiver and a controller.
-- [func NSIsControllerMarker(Any?) -> Bool](../AppKit/NSIsControllerMarker(_:).md)
+- [func NSIsControllerMarker(Any?) -> Bool](../appkit/nsiscontrollermarker(_:).md)
   Tests whether a given object is special marker object used for indicating the state of a selection in relation to a key.
 
 

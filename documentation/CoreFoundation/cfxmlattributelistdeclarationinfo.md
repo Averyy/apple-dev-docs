@@ -32,7 +32,7 @@ A pointer to this structure is included in the CFXMLNode object passed to your a
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../Swift/BitwiseCopyable.md)
+- [BitwiseCopyable](../swift/bitwisecopyable.md)
 
 ## See Also
 

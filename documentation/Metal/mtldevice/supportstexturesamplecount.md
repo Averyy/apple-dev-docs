@@ -31,7 +31,7 @@ The number of points the GPU can sample a texture varies by device:
 | Sample count | Devices |
 | --- | --- |
 | 1 | All devices |
-| 2 | All iOS devices ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) All tvOS devices ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) Some macOS devices |
+| 2 | All iOS devices ![None](/images/com.apple.metal/spacer.png) All tvOS devices ![None](/images/com.apple.metal/spacer.png) Some macOS devices |
 | 4 | All devices |
 | 8 | Some macOS devices |
 
@@ -41,7 +41,7 @@ Consider a GPU device’s limitations for sample count by checking [`MTLTexture`
 - [`MTLRenderPipelineDescriptor`](mtlrenderpipelinedescriptor.md)`.`[`rasterSampleCount`](mtlrenderpipelinedescriptor/rastersamplecount.md)
 - [`MTLTileRenderPipelineDescriptor`](mtltilerenderpipelinedescriptor.md)`.`[`rasterSampleCount`](mtltilerenderpipelinedescriptor/rastersamplecount.md)
 - [`MTLMeshRenderPipelineDescriptor`](mtlmeshrenderpipelinedescriptor.md)`.`[`rasterSampleCount`](mtlmeshrenderpipelinedescriptor/rastersamplecount.md)
-- [`MTKView`](https://developer.apple.com/documentation/MetalKit/MTKView)`.`[`sampleCount`](https://developer.apple.com/documentation/MetalKit/MTKView/sampleCount)
+- [`MTKView`](https://developer.apple.com/documentation/metalkit/mtkview)`.`[`sampleCount`](https://developer.apple.com/documentation/metalkit/mtkview/samplecount)
 
 ## Parameters
 

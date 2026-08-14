@@ -28,13 +28,13 @@ A new affine transformation matrix.
 
 This function creates a `CGAffineTransform` structure, which you can use (and reuse, if you want) to rotate a coordinate system. The matrix takes the following form:
 
-![A 3 by 3 matrix.](https://docs-assets.developer.apple.com/published/208a3d614f01846a4816496780b1a1fb/media-1966725%402x.png)
+![A 3 by 3 matrix.](/images/com.apple.coregraphics/media-1966725@2x.png)
 
 The actual direction of rotation is dependent on the coordinate system orientation of the target platform, which is different in iOS and macOS. Because the third column is always `(0,0,1)`, the `CGAffineTransform` data structure returned by this function contains values for only the first two columns.
 
 These are the resulting equations used to apply the rotation to a point (x, y):
 
-![Rotation equations.](https://docs-assets.developer.apple.com/published/6aee9efda1c1ac989f5c0fceb3b21a44/media-1966730%402x.png)
+![Rotation equations.](/images/com.apple.coregraphics/media-1966730@2x.png)
 
 If you want only to rotate an object to be drawn, it is not necessary to construct an affine transform to do so. The most direct way to rotate your drawing is by calling the function [`rotate(by:)`](cgcontext/rotate(by:).md).
 

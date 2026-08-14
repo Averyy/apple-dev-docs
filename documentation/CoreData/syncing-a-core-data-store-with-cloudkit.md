@@ -20,21 +20,21 @@ Generally, you can expect data to synchronize a local change within about a minu
 
 When the user makes a change on one device, Core Data uploads the change to CloudKit before sending it to the user’s other devices.
 
-![Flow diagram showing the upload portion of a record’s lifecycle.](https://docs-assets.developer.apple.com/published/56f77daeb6d38916bc9aa82eeb802b46/media-3230553%402x.png)
+![Flow diagram showing the upload portion of a record’s lifecycle.](/images/com.apple.coredata/media-3230553@2x.png)
 
-First, the user creates, updates, or deletes a managed object, such as adding a post or editing a tag. When its managed object context saves changes to the store, Core Data creates a background task for the system to convert the [`NSManagedObject`](nsmanagedobject.md) to a [`CKRecord`](https://developer.apple.com/documentation/CloudKit/CKRecord). The system executes the task, creating the record and uploading it to CloudKit.
+First, the user creates, updates, or deletes a managed object, such as adding a post or editing a tag. When its managed object context saves changes to the store, Core Data creates a background task for the system to convert the [`NSManagedObject`](nsmanagedobject.md) to a [`CKRecord`](https://developer.apple.com/documentation/cloudkit/ckrecord). The system executes the task, creating the record and uploading it to CloudKit.
 
-For more information about background tasks, see [`UIApplication`](https://developer.apple.com/documentation/UIKit/UIApplication).
+For more information about background tasks, see [`UIApplication`](https://developer.apple.com/documentation/uikit/uiapplication).
 
 ##### Download Cloudkit Changes Into Core Data
 
 After CloudKit receives a change and saves it to the CloudKit store, it notifies the user’s other devices about the change.
 
-![Flow diagram showing the download portion of a record’s lifecycle.](https://docs-assets.developer.apple.com/published/f1a19f2b401d26c9dffa0a1b72edbf5a/media-3230554%402x.png)
+![Flow diagram showing the download portion of a record’s lifecycle.](/images/com.apple.coredata/media-3230554@2x.png)
 
 First, CloudKit periodically sends push notifications to other devices on a user’s account. Then, on each device, the system creates a background task to download all of the changed records since the last fetch and converts them into instances of [`NSManagedObject`](nsmanagedobject.md). Finally, Core Data saves these managed objects into the local store.
 
-For more information about push notifications, see [`User Notifications`](https://developer.apple.com/documentation/UserNotifications).
+For more information about push notifications, see [`User Notifications`](https://developer.apple.com/documentation/usernotifications).
 
 ##### Isolate the Current View From Store Changes
 
@@ -68,7 +68,7 @@ Most errors, like those that result from a network failure or a user not being s
 
 Choose Product > Scheme > Edit Scheme. Select an action such as Run, and select the Arguments tab. Pass the `com.apple.CoreData.CloudKitDebug` user default setting with a debug level value as an argument to the application.
 
-![Screenshot showing passing the -com.apple.CoreData.CloudKitDebug 3 user default setting as a launch argument in the scheme editor.](https://docs-assets.developer.apple.com/published/82f0ac367f1ff31887c307ca788610b9/media-3221950%402x.png)
+![Screenshot showing passing the -com.apple.CoreData.CloudKitDebug 3 user default setting as a launch argument in the scheme editor.](/images/com.apple.coredata/media-3221950@2x.png)
 
 Higher argument values produce more information; start at `1` and increase if you need more detail. For more information about handling errors, see [`Troubleshooting Core Data`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/CoreData/TroubleshootingCoreData.html#//apple_ref/doc/uid/TP40001075-CH26).
 

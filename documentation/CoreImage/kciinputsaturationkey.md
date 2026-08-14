@@ -21,7 +21,7 @@ let kCIInputSaturationKey: String
 
 #### Discussion
 
-A key for a scalar value ([`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber)) that specifies the amount to adjust the saturation.
+A key for a scalar value ([`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber)) that specifies the amount to adjust the saturation.
 
 ## See Also
 

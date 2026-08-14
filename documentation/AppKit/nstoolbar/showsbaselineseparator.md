@@ -16,7 +16,7 @@ var showsBaselineSeparator: Bool { get set }
 
 #### Discussion
 
-If the value of this property is [`true`](https://developer.apple.com/documentation/Swift/true), the toolbar shows the separator between the toolbar and the main window contents. If the value is [`false`](https://developer.apple.com/documentation/Swift/false), the toolbar doesn’t show the separator. The default value is [`false`](https://developer.apple.com/documentation/Swift/false).
+If the value of this property is [`true`](https://developer.apple.com/documentation/swift/true), the toolbar shows the separator between the toolbar and the main window contents. If the value is [`false`](https://developer.apple.com/documentation/swift/false), the toolbar doesn’t show the separator. The default value is [`false`](https://developer.apple.com/documentation/swift/false).
 
 ## See Also
 

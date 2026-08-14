@@ -34,7 +34,7 @@ Chart(data) {
 }
 ```
 
-![Vertical bar chart with y-axis showing start and end time. It has 5 bars, Task 1 range 0 to 5, range 10 to 20, range 25 to 40, range 45 to 65, and range 70-95.](https://docs-assets.developer.apple.com/published/eb30e9ab77f971d57cc83c2abd6f7a59/BarMarkSwift.BarMarkVertical1DIntervalBarChart%402x.png)
+![Vertical bar chart with y-axis showing start and end time. It has 5 bars, Task 1 range 0 to 5, range 10 to 20, range 25 to 40, range 45 to 65, and range 70-95.](/images/com.apple.Charts/BarMarkSwift.BarMarkVertical1DIntervalBarChart@2x.png)
 
 ## Parameters
 

@@ -22,7 +22,7 @@ class NLModel
 
 #### Overview
 
-With [`Natural Language`](NaturalLanguage.md), you can create text classifier ([`MLTextClassifier`](https://developer.apple.com/documentation/CreateML/MLTextClassifier)) or word tagger ([`MLWordTagger`](https://developer.apple.com/documentation/CreateML/MLWordTagger)) models. Use [`NLModel`](nlmodel.md) to integrate those models into your app. This integration ensures that your tokenization and tagger configurations are identical when you train your model and use it in your app.
+With [`Natural Language`](NaturalLanguage.md), you can create text classifier ([`MLTextClassifier`](https://developer.apple.com/documentation/createml/mltextclassifier)) or word tagger ([`MLWordTagger`](https://developer.apple.com/documentation/createml/mlwordtagger)) models. Use [`NLModel`](nlmodel.md) to integrate those models into your app. This integration ensures that your tokenization and tagger configurations are identical when you train your model and use it in your app.
 
 If you create a text classifier as described in doc:creating-a-text-classifier-model, you can integrate that model into your app and use it to make predictions like this:
 
@@ -97,9 +97,9 @@ do {
 - [class NLModelConfiguration](nlmodelconfiguration.md)
   The configuration parameters of a natural language model.
 ### Related Documentation
-- [struct MLTextClassifier](../CreateML/MLTextClassifier.md)
+- [struct MLTextClassifier](../createml/mltextclassifier.md)
   A model you train to classify natural language text.
-- [struct MLWordTagger](../CreateML/MLWordTagger.md)
+- [struct MLWordTagger](../createml/mlwordtagger.md)
   A word-tagging model you train to classify natural language text at the word level.
 ### Initializers
 - [convenience init(MLModel: MLModel) throws](nlmodel/init(mlmodel:)-4o6g8.md)
@@ -108,20 +108,20 @@ do {
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 
-- [Creating a text classifier model](../CreateML/creating-a-text-classifier-model.md)
+- [Creating a text classifier model](../createml/creating-a-text-classifier-model.md)
   Train a machine learning model to classify natural language text.
-- [Creating a word tagger model](../CreateML/creating-a-word-tagger-model.md)
+- [Creating a word tagger model](../createml/creating-a-word-tagger-model.md)
   Train a machine learning model to tag individual words in natural language text.
 
 

@@ -28,16 +28,16 @@ class DispatchWorkloop
 ## Relationships
 
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [Equatable](../Swift/Equatable.md)
-- [Executor](../Swift/Executor.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [Scheduler](../Combine/Scheduler.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
-- [SerialExecutor](../Swift/SerialExecutor.md)
-- [TaskExecutor](../Swift/TaskExecutor.md)
+- [CVarArg](../swift/cvararg.md)
+- [Equatable](../swift/equatable.md)
+- [Executor](../swift/executor.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [Scheduler](../combine/scheduler.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
+- [SerialExecutor](../swift/serialexecutor.md)
+- [TaskExecutor](../swift/taskexecutor.md)
 
 
 ---

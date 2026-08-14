@@ -25,7 +25,7 @@ A Metal vertex format value.
 
 #### Discussion
 
-This function returns [`MTLVertexFormat.invalid`](https://developer.apple.com/documentation/Metal/MTLVertexFormat/invalid) if no matching [`MTLVertexFormat`](https://developer.apple.com/documentation/Metal/MTLVertexFormat) exists.
+This function returns [`MTLVertexFormat.invalid`](https://developer.apple.com/documentation/metal/mtlvertexformat/invalid) if no matching [`MTLVertexFormat`](https://developer.apple.com/documentation/metal/mtlvertexformat) exists.
 
 ## Parameters
 

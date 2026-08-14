@@ -37,7 +37,7 @@ Image("dot_green")
     .renderingMode(.template)
 ```
 
-![Two identically-sized circle images. The circle on top is green](https://docs-assets.developer.apple.com/published/872acc0f721844ccecf8b13d2f22f1dc/SwiftUI-Image-TemplateRenderingMode-dots%402x.png)
+![Two identically-sized circle images. The circle on top is green](/images/com.apple.SwiftUI/SwiftUI-Image-TemplateRenderingMode-dots@2x.png)
 
 You also use `renderingMode` to produce multicolored system graphics from the SF Symbols set. Use the [`Image.TemplateRenderingMode.original`](image/templaterenderingmode/original.md) mode to apply a foreground color to all parts of the symbol except those that have a distinct color in the graphic. The following example shows three uses of the `person.crop.circle.badge.plus` symbol to achieve different effects:
 
@@ -58,7 +58,7 @@ HStack {
 .font(.largeTitle)
 ```
 
-![A horizontal layout of three versions of the same symbol: a person](https://docs-assets.developer.apple.com/published/ce7605ee83e40c9ce039e5b38fe90be0/SwiftUI-Image-TemplateRenderingMode-sfsymbols%402x.png)
+![A horizontal layout of three versions of the same symbol: a person](/images/com.apple.SwiftUI/SwiftUI-Image-TemplateRenderingMode-sfsymbols@2x.png)
 
 Use the SF Symbols app to find system images that offer the multicolor feature. Keep in mind that some multicolor symbols use both the foreground and accent colors.
 

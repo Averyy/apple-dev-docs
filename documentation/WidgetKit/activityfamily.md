@@ -21,9 +21,9 @@ Live Activities support one or more sizes, giving you the flexibility to configu
 
 A Live Activity initiated on one device can be sent to a remote device that renders the Live Activity at a different family size. For example, if your Live Activity is running on an iOS or iPadOS device, it natively renders with an [`ActivityFamily.medium`](activityfamily/medium.md) family. If you want to opt in to customize the rendering for a Live Activity for the watchOS Smart Stack, use the [`ActivityFamily.small`](activityfamily/small.md) family modifier.
 
-When you define your Live Activity’s configuration, specify the sizes your Live Activity supports using the [`supplementalActivityFamilies(_:)`](https://developer.apple.com/documentation/SwiftUI/WidgetConfiguration/supplementalActivityFamilies(_:)) property modifier.
+When you define your Live Activity’s configuration, specify the sizes your Live Activity supports using the [`supplementalActivityFamilies(_:)`](https://developer.apple.com/documentation/swiftui/widgetconfiguration/supplementalactivityfamilies(_:)) property modifier.
 
-When you render the content of the Live Activity, use [`activityFamily`](https://developer.apple.com/documentation/SwiftUI/EnvironmentValues/activityFamily) to read the current family and lay out your content appropriately. The code below uses [`supplementalActivityFamilies(_:)`](https://developer.apple.com/documentation/SwiftUI/WidgetConfiguration/supplementalActivityFamilies(_:)) to specify the size of the Live Activity for devices on iOS and watchOS.
+When you render the content of the Live Activity, use [`activityFamily`](https://developer.apple.com/documentation/swiftui/environmentvalues/activityfamily) to read the current family and lay out your content appropriately. The code below uses [`supplementalActivityFamilies(_:)`](https://developer.apple.com/documentation/swiftui/widgetconfiguration/supplementalactivityfamilies(_:)) to specify the size of the Live Activity for devices on iOS and watchOS.
 
 ```swift
 // A RideSharingActivity that supports the watchOS Smart Stack and the iOS Lock Screen.
@@ -63,20 +63,20 @@ struct RideSharingActivity: Widget {
 ## Relationships
 
 ### Conforms To
-- [Copyable](../Swift/Copyable.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Decodable](../Swift/Decodable.md)
-- [Encodable](../Swift/Encodable.md)
-- [Equatable](../Swift/Equatable.md)
-- [Escapable](../Swift/Escapable.md)
-- [Hashable](../Swift/Hashable.md)
-- [RawRepresentable](../Swift/RawRepresentable.md)
+- [Copyable](../swift/copyable.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Decodable](../swift/decodable.md)
+- [Encodable](../swift/encodable.md)
+- [Equatable](../swift/equatable.md)
+- [Escapable](../swift/escapable.md)
+- [Hashable](../swift/hashable.md)
+- [RawRepresentable](../swift/rawrepresentable.md)
 
 ## See Also
 
-- [Displaying live data with Live Activities](../ActivityKit/displaying-live-data-with-live-activities.md)
+- [Displaying live data with Live Activities](../activitykit/displaying-live-data-with-live-activities.md)
   Display up-to-date data and offer quick interactions in the Dynamic Island, on the Lock Screen, in CarPlay, and on a paired Mac or Apple Watch.
-- [ActivityKit](../ActivityKit/ActivityKit.md)
+- [ActivityKit](../activitykit/activitykit.md)
   Share live updates from your app as Live Activities on iPhone, iPad, Apple Watch, and the Mac.
 - [Creating a widget extension](creating-a-widget-extension.md)
   Display your app’s content in a convenient, informative widget on various devices.

@@ -20,8 +20,8 @@ enum : unsigned int {
 ### Constants
 - [kREPORT_CAPACITY_16_DataSize](1638044-anonymous/kreport_capacity_16_datasize.md)
 - [kREPORT_CAPACITY_DataSize](1638044-anonymous/kreport_capacity_datasize.md)
-- [kREPORT_CAPACITY_16_DataSize](../driverkit/1638044-anonymous/kreport_capacity_16_datasize.md)
-- [kREPORT_CAPACITY_DataSize](../driverkit/1638044-anonymous/kreport_capacity_datasize.md)
+- [kREPORT_CAPACITY_16_DataSize](../driverkit/kreport_capacity_16_datasize.md)
+- [kREPORT_CAPACITY_DataSize](../driverkit/kreport_capacity_datasize.md)
 
 
 ---

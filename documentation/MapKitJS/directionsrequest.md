@@ -16,7 +16,7 @@ interface DirectionsRequest
 
 #### Overview
 
-Provide a `DirectionsRequest` object to the [`route(request)`](directions/route.md) method to get directions between two points. You must provide [`origin`](directionsrequest/origin.md) and [`destination`](directionsrequest/destination.md).
+Provide a `DirectionsRequest` object to the [`route()`](directions/route.md) method to get directions between two points. You must provide [`origin`](directionsrequest/origin.md) and [`destination`](directionsrequest/destination.md).
 
 ```javascript
 const myDirections = new mapkit.Directions();

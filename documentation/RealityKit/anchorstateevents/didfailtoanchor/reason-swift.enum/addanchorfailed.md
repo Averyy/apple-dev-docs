@@ -21,7 +21,7 @@ case addAnchorFailed
 
 #### Discussion
 
-See [`WorldTrackingProvider.Error`](https://developer.apple.com/documentation/ARKit/WorldTrackingProvider/Error)
+See [`WorldTrackingProvider.Error`](https://developer.apple.com/documentation/arkit/worldtrackingprovider/error)
 
 
 ---

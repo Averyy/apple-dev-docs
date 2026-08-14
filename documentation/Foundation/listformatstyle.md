@@ -22,11 +22,11 @@ struct ListFormatStyle<Style, Base> where Style : FormatStyle, Base : Sequence, 
 
 #### Overview
 
-A list format style creates human readable text from a [`Sequence`](https://developer.apple.com/documentation/Swift/Sequence) of values. Customize the formatting behavior of the list using the [`width`](listformatstyle/width-swift.property.md), [`listType`](listformatstyle/listtype-swift.property.md), and [`locale`](listformatstyle/locale.md) properties. The system automatically caches unique configurations of [`ListFormatStyle`](listformatstyle.md) to enhance performance.
+A list format style creates human readable text from a [`Sequence`](https://developer.apple.com/documentation/swift/sequence) of values. Customize the formatting behavior of the list using the [`width`](listformatstyle/width-swift.property.md), [`listType`](listformatstyle/listtype-swift.property.md), and [`locale`](listformatstyle/locale.md) properties. The system automatically caches unique configurations of [`ListFormatStyle`](listformatstyle.md) to enhance performance.
 
-Use either [`formatted()`](https://developer.apple.com/documentation/Swift/Sequence/formatted()) or [`formatted(_:)`](https://developer.apple.com/documentation/Swift/Sequence/formatted(_:)), both instance methods of [`Sequence`](https://developer.apple.com/documentation/Swift/Sequence), to create a string representation of the items.
+Use either [`formatted()`](https://developer.apple.com/documentation/swift/sequence/formatted()) or [`formatted(_:)`](https://developer.apple.com/documentation/swift/sequence/formatted(_:)), both instance methods of [`Sequence`](https://developer.apple.com/documentation/swift/sequence), to create a string representation of the items.
 
-The [`formatted()`](https://developer.apple.com/documentation/Swift/Sequence/formatted()) method applies the default list format style to a sequence of strings. For example:
+The [`formatted()`](https://developer.apple.com/documentation/swift/sequence/formatted()) method applies the default list format style to a sequence of strings. For example:
 
 ```swift
 ["Kristin", "Paul", "Ana", "Bill"].formatted()
@@ -38,7 +38,7 @@ You can customize a list’s `type` and `width` properties.
 - The [`listType`](listformatstyle/listtype-swift.property.md) property specifies the semantics of the list.
 - The [`width`](listformatstyle/width-swift.property.md) property determines the size of the returned string.
 
-The [`formatted(_:)`](https://developer.apple.com/documentation/Swift/Sequence/formatted(_:)) method to applies a custom list format style. You can use the static factory method [`list(type:width:)`](formatstyle/list(type:width:).md) to create a custom list format style as a parameter to the method.
+The [`formatted(_:)`](https://developer.apple.com/documentation/swift/sequence/formatted(_:)) method to applies a custom list format style. You can use the static factory method [`list(type:width:)`](formatstyle/list(type:width:).md) to create a custom list format style as a parameter to the method.
 
 This example formats a sequence with a [`ListFormatStyle.ListType.and`](listformatstyle/listtype-swift.enum/and.md) list type and [`ListFormatStyle.Width.short`](listformatstyle/width-swift.enum/short.md) width:
 
@@ -98,13 +98,13 @@ stride(from: 89.0, through: 95.0, by: 2.0).formatted(percentStyle)
 ## Relationships
 
 ### Conforms To
-- [Decodable](../Swift/Decodable.md)
-- [Encodable](../Swift/Encodable.md)
-- [Equatable](../Swift/Equatable.md)
+- [Decodable](../swift/decodable.md)
+- [Encodable](../swift/encodable.md)
+- [Equatable](../swift/equatable.md)
 - [FormatStyle](formatstyle.md)
-- [Hashable](../Swift/Hashable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Hashable](../swift/hashable.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

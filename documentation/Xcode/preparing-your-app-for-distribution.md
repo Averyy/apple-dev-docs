@@ -12,13 +12,13 @@ For additional information to enter in App Store Connect, see [`Required, locali
 
 ##### Set the Bundle Id
 
-When you create your Xcode project from a template, the bundle ID ([`CFBundleIdentifier`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/CFBundleIdentifier)), which uniquely identifies your app throughout the system, defaults to the organization ID appended to the app name that you enter in reverse-DNS format—for example, the bundle ID becomes `com.example.mycompany.HelloWorld`.
+When you create your Xcode project from a template, the bundle ID ([`CFBundleIdentifier`](https://developer.apple.com/documentation/bundleresources/information-property-list/cfbundleidentifier)), which uniquely identifies your app throughout the system, defaults to the organization ID appended to the app name that you enter in reverse-DNS format—for example, the bundle ID becomes `com.example.mycompany.HelloWorld`.
 
 If your organization ID is unique across all developers and your app name is unique within your organization, your default bundle ID should also be unique. For example, use your organization’s domain name as the organization ID to ensure that the bundle ID is unique.
 
 To distribute your app through TestFlight and the App Store, you [`Create an app record`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/create-an-app-record/add-a-new-app) in App Store Connect and enter a bundle ID that matches the one in your project. Add the bundle ID to your project in the project editor:
 
-![Screenshot showing the Signing section of the Signing & Capabilities pane expanded to reveal the “Automatically manage signing” checkbox above a pop-up menu for selecting your Team and text fields for entering your Bundle Identifier. There are sections below these controls for entering platform-specific settings which are currently collapsed. The image shows where you choose a target.](https://docs-assets.developer.apple.com/published/7ca1104158f695dc569a6959caef7ff5/preparing-your-app-for-distribution-1%402x.png)
+![Screenshot showing the Signing section of the Signing & Capabilities pane expanded to reveal the “Automatically manage signing” checkbox above a pop-up menu for selecting your Team and text fields for entering your Bundle Identifier. There are sections below these controls for entering platform-specific settings which are currently collapsed. The image shows where you choose a target.](/images/com.apple.Xcode/preparing-your-app-for-distribution-1@2x.png)
 
 1. Choose the target.
 2. Click the Signing & Capabilities pane.
@@ -48,7 +48,7 @@ In the project editor, select the Signing & Capabilities pane and choose a team 
 
 Indicate which devices and platforms your app supports. In the project editor:
 
-![Screenshot showing the Supported Destinations and Identity sections of General pane expanded. The Supported Destinations section includes a table with an Add button (+) and Remove button (-). The Identity section includes an App Category pop-up menu above text fields for Display Name, Bundle Identifier, Version and Build. The image shows where you choose a target.](https://docs-assets.developer.apple.com/published/e7f4a82d6044e3ddeb33328ce40a10ec/preparing-your-app-for-distribution-2%402x.png)
+![Screenshot showing the Supported Destinations and Identity sections of General pane expanded. The Supported Destinations section includes a table with an Add button (+) and Remove button (-). The Identity section includes an App Category pop-up menu above text fields for Display Name, Bundle Identifier, Version and Build. The image shows where you choose a target.](/images/com.apple.Xcode/preparing-your-app-for-distribution-2@2x.png)
 
 1. Choose the target.
 2. Select the General pane.
@@ -70,7 +70,7 @@ For guidance with choosing the most accurate and effective categories, see [`Cho
 
 ##### Set the Version Number and Build String
 
-The version number ([`CFBundleShortVersionString`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/CFBundleShortVersionString)) and build string ([`CFBundleVersion`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/CFBundleVersion)) uniquely identify the build of your app throughout the system. The version number appears in the App Store. For apps distributed through TestFlight or the App Store, the Xcode Organizer displays crashes and field reports for each build of an app version. For macOS apps, the version number and build string can also appear in the About window, see [`credits`](https://developer.apple.com/documentation/AppKit/NSApplication/AboutPanelOptionKey/credits). The version number and build string are expected to be in the format [Major].[Minor].[Patch] where *Patch* is a maintenance release, as in 10.14.1. Both keys are required by the App Store. For macOS apps, you must increment the build string before you distribute a new build.
+The version number ([`CFBundleShortVersionString`](https://developer.apple.com/documentation/bundleresources/information-property-list/cfbundleshortversionstring)) and build string ([`CFBundleVersion`](https://developer.apple.com/documentation/bundleresources/information-property-list/cfbundleversion)) uniquely identify the build of your app throughout the system. The version number appears in the App Store. For apps distributed through TestFlight or the App Store, the Xcode Organizer displays crashes and field reports for each build of an app version. For macOS apps, the version number and build string can also appear in the About window, see [`credits`](https://developer.apple.com/documentation/appkit/nsapplication/aboutpaneloptionkey/credits). The version number and build string are expected to be in the format [Major].[Minor].[Patch] where *Patch* is a maintenance release, as in 10.14.1. Both keys are required by the App Store. For macOS apps, you must increment the build string before you distribute a new build.
 
 Increment the version number when you create a new version of your app. For more information, see [`Create a new app version`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/update-your-app/create-a-new-version) in App Store Connect.
 
@@ -84,13 +84,13 @@ If you use a Custom distribution method and disable the “Manage version and bu
 
 For iOS and iPadOS apps, choose the device orientations your app supports.
 
-![Screenshot showing the Deployment Info section of the General pane expanded to reveal checkboxes to configure the orientations you app supports and a link to configure support for multiple windows.](https://docs-assets.developer.apple.com/published/8c6c3a8a70d1b91850f72db42a3d4972/preparing-your-app-for-distribution-3%402x.png)
+![Screenshot showing the Deployment Info section of the General pane expanded to reveal checkboxes to configure the orientations you app supports and a link to configure support for multiple windows.](/images/com.apple.Xcode/preparing-your-app-for-distribution-3@2x.png)
 
-To configure your app to support multiple windows, click the arrow next to Supports multiple windows. For details, see [`Specifying the scenes your app supports`](https://developer.apple.com/documentation/UIKit/specifying-the-scenes-your-app-supports), and for sample code, see [`Supporting multiple windows on iPad`](https://developer.apple.com/documentation/UIKit/supporting-multiple-windows-on-ipad).
+To configure your app to support multiple windows, click the arrow next to Supports multiple windows. For details, see [`Specifying the scenes your app supports`](https://developer.apple.com/documentation/uikit/specifying-the-scenes-your-app-supports), and for sample code, see [`Supporting multiple windows on iPad`](https://developer.apple.com/documentation/uikit/supporting-multiple-windows-on-ipad).
 
 ##### Add an App Icon and App Store Icon
 
-Add an icon to represent your app in various locations on a device and on the App Store. You can use either a single multilayer Icon Composer file that supports [`Liquid Glass`](https://developer.apple.com/documentation/TechnologyOverviews/liquid-glass) or an icon asset catalog to represent your icon. If you use an asset catalog, the system applies a Liquid Glass effect to the icon for you.
+Add an icon to represent your app in various locations on a device and on the App Store. You can use either a single multilayer Icon Composer file that supports [`Liquid Glass`](https://developer.apple.com/documentation/technologyoverviews/liquid-glass) or an icon asset catalog to represent your icon. If you use an asset catalog, the system applies a Liquid Glass effect to the icon for you.
 
 To use an Icon Composer file, see [`Creating your app icon using Icon Composer`](creating-your-app-icon-using-icon-composer.md), and to use an asset catalog, see [`Configuring your app icon using an asset catalog`](configuring-your-app-icon.md).
 
@@ -108,27 +108,27 @@ For information about designing a launch screen, read [`Launching`](https://deve
 
 The first time your app attempts to access a protected resource, the system prompts for permission. It then generates a dialog that includes the name of your app and a *usage description* that you provide. For example, the usage description for accessing location data might be “Your location is used to provide turn-by-turn directions to your destination.” If you grant permission, the system remembers and doesn’t prompt again for that resource. If you deny permission, the access to that resource and any further attempts fail.
 
-You must provide usage descriptions in the [`Information Property List`](https://developer.apple.com/documentation/BundleResources/Information-Property-List) for all protected resources your app accesses, such as a person‘s location, calendar, reminders, and contacts. Also provide usage descriptions for accessories, such as the camera and microphone.
+You must provide usage descriptions in the [`Information Property List`](https://developer.apple.com/documentation/bundleresources/information-property-list) for all protected resources your app accesses, such as a person‘s location, calendar, reminders, and contacts. Also provide usage descriptions for accessories, such as the camera and microphone.
 
-To learn more, see [`Requesting access to protected resources`](https://developer.apple.com/documentation/UIKit/requesting-access-to-protected-resources).
+To learn more, see [`Requesting access to protected resources`](https://developer.apple.com/documentation/uikit/requesting-access-to-protected-resources).
 
 ##### Configure App Sandbox and Hardened Runtime Macos
 
 If you distribute your macOS app through the App Store, you must [`enable App Sandbox`](https://developer.apple.comhttps://help.apple.com/xcode/mac/current/#/devbd04af149). If you notarize your macOS app to distribute it outside of the App Store, you must [`enable hardened runtime`](https://developer.apple.comhttps://help.apple.com/xcode/mac/current/#/devf87a2ac8f) and, optionally, can also enable App Sandbox.
 
-To learn more about hardened runtime, see [`Hardened Runtime`](https://developer.apple.com/documentation/Security/hardened-runtime). For information about notarization, see [`Notarizing macOS software before distribution`](https://developer.apple.com/documentation/Security/notarizing-macos-software-before-distribution).
+To learn more about hardened runtime, see [`Hardened Runtime`](https://developer.apple.com/documentation/security/hardened-runtime). For information about notarization, see [`Notarizing macOS software before distribution`](https://developer.apple.com/documentation/security/notarizing-macos-software-before-distribution).
 
 ##### Set the Copyright Key Macos
 
-For macOS apps, [`set the copyright key`](https://developer.apple.comhttps://help.apple.com/xcode/mac/current/#/dev2ec588bbf) ([`NSHumanReadableCopyright`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSHumanReadableCopyright)) in the information property list before you upload your app to App Store Connect.
+For macOS apps, [`set the copyright key`](https://developer.apple.comhttps://help.apple.com/xcode/mac/current/#/dev2ec588bbf) ([`NSHumanReadableCopyright`](https://developer.apple.com/documentation/bundleresources/information-property-list/nshumanreadablecopyright)) in the information property list before you upload your app to App Store Connect.
 
-In macOS, if you don’t pass a copyright string explicitly to the [`orderFrontStandardAboutPanel(_:)`](https://developer.apple.com/documentation/AppKit/NSApplication/orderFrontStandardAboutPanel(_:)) method that displays the About window, a localized version of the copyright key is displayed in the About window instead. For example, if you set the copyright key to `@2002-2019 My Company`, it appears at the bottom of the About window. You can localize the information property list for each language that you support.
+In macOS, if you don’t pass a copyright string explicitly to the [`orderFrontStandardAboutPanel(_:)`](https://developer.apple.com/documentation/appkit/nsapplication/orderfrontstandardaboutpanel(_:)) method that displays the About window, a localized version of the copyright key is displayed in the About window instead. For example, if you set the copyright key to `@2002-2019 My Company`, it appears at the bottom of the About window. You can localize the information property list for each language that you support.
 
 ##### Add Export Compliance Information
 
-If you distribute your app outside the United States or Canada, your app is subject to U.S. export laws. If your app uses encryption, it is subject to U.S. export compliance requirements. You can bypass the questions that App Store Connect asks you every time you submit your app for review by providing export compliance information in the [`Information Property List`](https://developer.apple.com/documentation/BundleResources/Information-Property-List).
+If you distribute your app outside the United States or Canada, your app is subject to U.S. export laws. If your app uses encryption, it is subject to U.S. export compliance requirements. You can bypass the questions that App Store Connect asks you every time you submit your app for review by providing export compliance information in the [`Information Property List`](https://developer.apple.com/documentation/bundleresources/information-property-list).
 
-To learn more, see [`Complying with Encryption Export Regulations`](https://developer.apple.com/documentation/Security/complying-with-encryption-export-regulations).
+To learn more, see [`Complying with Encryption Export Regulations`](https://developer.apple.com/documentation/security/complying-with-encryption-export-regulations).
 
 ## See Also
 

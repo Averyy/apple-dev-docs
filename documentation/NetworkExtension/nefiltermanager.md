@@ -30,7 +30,7 @@ The filter configuration is stored in the Network Extension preferences which ar
 
 ##### Profile Configuration
 
-Filter configurations are created using configuration profiles. See [`WebContentFilter`](https://developer.apple.com/documentation/DeviceManagement/WebContentFilter) for more information. To specify that a filter configuration created via a profile payload is associated with a particular app (and therefore allow the app to use `NEFilterManager` to manage the configuration), the app’s bundle identifier must be set as the value of the `PluginBundleID` field in the profile payload.
+Filter configurations are created using configuration profiles. See [`WebContentFilter`](https://developer.apple.com/documentation/devicemanagement/webcontentfilter) for more information. To specify that a filter configuration created via a profile payload is associated with a particular app (and therefore allow the app to use `NEFilterManager` to manage the configuration), the app’s bundle identifier must be set as the value of the `PluginBundleID` field in the profile payload.
 
 ##### Filter Provider Extensions
 
@@ -65,7 +65,7 @@ Apps that use `NEFilterManager` are required to contain two Filter Provider exte
 - [enum NEFilterManagerError](nefiltermanagererror.md)
   Error codes specific to filter managers.
 ### Notifications
-- [static let NEFilterConfigurationDidChange: NSNotification.Name](../Foundation/NSNotification/Name-swift.struct/NEFilterConfigurationDidChange.md)
+- [static let NEFilterConfigurationDidChange: NSNotification.Name](../foundation/nsnotification/name-swift.struct/nefilterconfigurationdidchange.md)
   Posted after the filter configuration stored in the Network Extension preferences changes.
 ### Instance Properties
 - [var disableEncryptedDNSSettings: Bool](nefiltermanager/disableencrypteddnssettings.md)
@@ -73,14 +73,14 @@ Apps that use `NEFilterManager` are required to contain two Filter Provider exte
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

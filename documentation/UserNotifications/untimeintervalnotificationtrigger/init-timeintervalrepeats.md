@@ -31,7 +31,7 @@ If you specify `true` for the `repeats` parameter, you must explicitly remove th
 ## Parameters
 
 - `timeInterval`: The time (in seconds) that must elapse from the current time before the trigger fires. This value must be greater than zero.
-- `repeats`: Specify [`false`](https://developer.apple.com/documentation/Swift/false) to deliver the notification one time. Specify [`true`](https://developer.apple.com/documentation/Swift/true) to reschedule the notification request each time the system delivers the notification. If this parameter is [`true`](https://developer.apple.com/documentation/Swift/true), the value in the `timeInterval` parameter must be 60 seconds or greater.
+- `repeats`: Specify [`false`](https://developer.apple.com/documentation/swift/false) to deliver the notification one time. Specify [`true`](https://developer.apple.com/documentation/swift/true) to reschedule the notification request each time the system delivers the notification. If this parameter is [`true`](https://developer.apple.com/documentation/swift/true), the value in the `timeInterval` parameter must be 60 seconds or greater.
 
 
 ---

@@ -10,7 +10,7 @@ SKAdNetwork supports several ways for ad networks to provide ads:
 
 - StoreKit-rendered ads, where StoreKit displays an App Store product page as the ad impression
 - View-through ads, where the ad network presents an ad in any format and reports the ad impression using the SKAdNetwork API
-- Attributable web ads, where the ad network presents an ad on a Safari web page using the [`SKAdNetwork for Web Ads`](https://developer.apple.com/documentation/SKAdNetworkforWebAds) API
+- Attributable web ads, where the ad network presents an ad on a Safari web page using the [`SKAdNetwork for Web Ads`](https://developer.apple.com/documentation/skadnetworkforwebads) API
 
 To differentiate StoreKit-rendered ads from view-through ads, SKAdNetwork defines a `fidelity-type` parameter, which you include in the ad signature, and receive in the install-validation postback. Use a `fidelity-type` value of `1` for StoreKit-rendered ads and attributable web ads, and `0` for view-through ads. The following table compares the ad presentation options:
 
@@ -46,7 +46,7 @@ Follow these steps to provide a view-through ad:
 
 ##### Provide an Attributable Web Ad
 
-Ad networks can sign attributable ads that websites can display in Safari. For more information, see [`SKAdNetwork for Web Ads`](https://developer.apple.com/documentation/SKAdNetworkforWebAds).
+Ad networks can sign attributable ads that websites can display in Safari. For more information, see [`SKAdNetwork for Web Ads`](https://developer.apple.com/documentation/skadnetworkforwebads).
 
 ## See Also
 

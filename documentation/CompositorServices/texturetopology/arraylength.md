@@ -17,7 +17,7 @@ var arrayLength: UInt64 { get }
 
 #### Discussion
 
-Array-based texture types such as [`MTLTextureType.type2DArray`](https://developer.apple.com/documentation/Metal/MTLTextureType/type2DArray) manage one or more images of the same size. The array length represents the number of separate images the texture manages. Other array types store only one image.
+Array-based texture types such as [`MTLTextureType.type2DArray`](https://developer.apple.com/documentation/metal/mtltexturetype/type2darray) manage one or more images of the same size. The array length represents the number of separate images the texture manages. Other array types store only one image.
 
 ## See Also
 

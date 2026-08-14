@@ -14,7 +14,7 @@ When you import models from USDZ files, RealityKit automatically creates one or 
 
 PBR materials use three core properties to define an object’s fundamental appearance: [`baseColor`](physicallybasedmaterial/basecolor-swift.property.md), [`roughness`](physicallybasedmaterial/roughness-swift.property.md), and [`metallic`](physicallybasedmaterial/metallic-swift.property.md). The [`baseColor`](physicallybasedmaterial/basecolor-swift.property.md) property defines the underlying color of the entity as it would look under soft, bright, neutral lighting with no shadows or highlights. The `roughness` property is a measure of how the surface of the entity scatters the light that it reflects. A material with a low `roughness` looks shiny, while one with a high `roughness` has a matte appearance. The `metallic` property defines how the material reflects the environment around the entity. The figure below illustrates the visual effects of changing the [`metallic`](physicallybasedmaterial/metallic-swift.property.md) and [`roughness`](physicallybasedmaterial/roughness-swift.property.md) values of a [`PhysicallyBasedMaterial`](physicallybasedmaterial.md) while keeping its [`baseColor`](physicallybasedmaterial/basecolor-swift.property.md) unchanged.
 
-![An illustration showing a matrix of spheres rendered with a physically based material. Each sphere has a different roughness and metallic value to demonstrate the impact of changing these attributes.](https://docs-assets.developer.apple.com/published/ff798fb7c11104058e658b0ec4144e6d/applying-realistic-material-and-lighting-effects-to-entities-1%402x.png)
+![An illustration showing a matrix of spheres rendered with a physically based material. Each sphere has a different roughness and metallic value to demonstrate the impact of changing these attributes.](/images/com.apple.RealityKit/applying-realistic-material-and-lighting-effects-to-entities-1@2x.png)
 
 This example demonstrates how to create a PBR material that uses a color and a single `roughness` and `metallic` value for the entire material:
 
@@ -105,7 +105,7 @@ You can change the behavior of an alpha map to function as a *mask* rather than 
 
 RealityKit automatically draws *specular highlights* for physically based materials using the values of various properties, primarily [`roughness`](physicallybasedmaterial/roughness-swift.property.md) and [`metallic`](physicallybasedmaterial/metallic-swift.property.md). Specular highlights are bright spots of reflected light that appear on shiny objects.
 
-![An illustration showing a sphere and a cube with rounded corners. Both have a shiny surface and a small white spot labeled “specular highlights” where they reflect the scene’s light source.](https://docs-assets.developer.apple.com/published/0b83dd2d5721a30ef708e7bf6420620b/applying-realistic-material-and-lighting-effects-to-entities-2%402x.png)
+![An illustration showing a sphere and a cube with rounded corners. Both have a shiny surface and a small white spot labeled “specular highlights” where they reflect the scene’s light source.](/images/com.apple.RealityKit/applying-realistic-material-and-lighting-effects-to-entities-2@2x.png)
 
 While many real-world objects can be accurately and realistically simulated with just the core PBR properties, you can create additional realistic effects by augmenting the specular highlights.
 
@@ -132,7 +132,7 @@ if let specularResource = try? TextureResource.load(named: "entity_specular") {
 
 You can also use specular highlights to simulate subtle reflections like the ones that occur on some types of fabric. Create these types of effects with the [`sheen`](physicallybasedmaterial/sheen.md) property, as illustrated in the following figure.
 
-![An illustration of two spheres. The one on the right has very subtle, soft specular highlight and is labeled “With Sheen”. The one on the right has no specular highlights and is labeled “Without Sheen”.](https://docs-assets.developer.apple.com/published/359c94162d7f5fc848064f68f22585d1/applying-realistic-material-and-lighting-effects-to-entities-3%402x.png)
+![An illustration of two spheres. The one on the right has very subtle, soft specular highlight and is labeled “With Sheen”. The one on the right has no specular highlights and is labeled “Without Sheen”.](/images/com.apple.RealityKit/applying-realistic-material-and-lighting-effects-to-entities-3@2x.png)
 
 This example shows how to specify [`sheen`](physicallybasedmaterial/sheen.md) using a single value for the entire material:
 
@@ -160,7 +160,7 @@ if let sheenResource = try? TextureResource.load(named: "entity_sheen") {
 
 By default, PBR materials are *isotropic*; in other words, an entity that uses a [`PhysicallyBasedMaterial`](physicallybasedmaterial.md) reflects light uniformly in all directions, mimicking the behavior of most real-world objects. Some objects, including those with many small parallel striations such as vinyl records, CDs, or straight hair, reflect light more in some directions than others, resulting in stretched or oblong specular highlights called *anisotropic* highlights.
 
-![An illustration showing 11 metallic spheres in a horizontal row. The left-most sphere is isotropic. The spheres represent increasing anisotropy from left to right, with the sphere furthest to the right displaying a long, stretched highlight.](https://docs-assets.developer.apple.com/published/2eecb2feb22234ad8501e669131a2d52/applying-realistic-material-and-lighting-effects-to-entities-4%402x.png)
+![An illustration showing 11 metallic spheres in a horizontal row. The left-most sphere is isotropic. The spheres represent increasing anisotropy from left to right, with the sphere furthest to the right displaying a long, stretched highlight.](/images/com.apple.RealityKit/applying-realistic-material-and-lighting-effects-to-entities-4@2x.png)
 
 In RealityKit, you adjust anisotropy using two parameters: [`anisotropyLevel`](physicallybasedmaterial/anisotropylevel-swift.property.md) and [`anisotropyAngle`](physicallybasedmaterial/anisotropyangle-swift.property.md). To control the amount of anisotropy, use [`anisotropyLevel`](physicallybasedmaterial/anisotropylevel-swift.property.md). Specifying a value of `0.0` results in an entirely isotropic appearance, while nonzero values up to `1.0` simulate the appearance of increasingly anisotropic objects. Change the angle of anisotropy to affect the direction in which the specular highlights stretch with [`anisotropyAngle`](physicallybasedmaterial/anisotropyangle-swift.property.md), which also takes a value between `0.0 `and `1.0.` `A` value of `0.0` means a rotation of 0° and a value of `1.0` indicates a rotation of 360°. To determine the [`anisotropyAngle`](physicallybasedmaterial/anisotropyangle-swift.property.md) value to use, divide the desired angle in degrees by `360.0` or the desired angle in radians by pi times 2.
 
@@ -205,7 +205,7 @@ if let anisoAngleResource = try? TextureResource.load(named: "entity_aniso_angle
 
 - [Rendering high-fidelity characters](rendering-high-fidelity-characters.md)
   Configure material and lighting properties to avoid flat, dull skin and static hair on your characters.
-- [Generating procedural textures](../visionOS/generating-procedural-textures-in-visionos.md)
+- [Generating procedural textures](../visionos/generating-procedural-textures-in-visionos.md)
   Display a 3D model that generates procedural textures in a reality view.
 - [struct PhysicallyBasedMaterial](physicallybasedmaterial.md)
   A material that simulates the appearance of real-world objects.

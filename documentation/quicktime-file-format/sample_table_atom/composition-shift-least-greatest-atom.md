@@ -7,7 +7,7 @@ An atom that summarizes the calculated minimum and maximum offsets between decod
 
 #### Overview
 
-See [`Composition shift least greatest atom ('cslg')`](composition_shift_least_greatest_atom.md).
+See [`Composition shift least greatest atom`](composition_shift_least_greatest_atom.md).
 
 ## See Also
 

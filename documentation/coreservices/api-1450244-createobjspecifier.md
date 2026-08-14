@@ -20,12 +20,12 @@ A result code. See [`Result Codes`](https://developer.apple.com/documentation/ap
 
 ## Parameters
 
-- `desiredClass`: The object class of the desired Apple event objects. See  .
-- `theContainer`: A pointer to a descriptor that describes the container for the requested object, usually in the form of another object specifier. See  .
+- `desiredClass`: The object class of the desired Apple event objects. See [`DescType`](desctype.md).
+- `theContainer`: A pointer to a descriptor that describes the container for the requested object, usually in the form of another object specifier. See [`AEDesc`](aedesc.md).
 - `keyForm`: The key form for the object specifier.
 - `keyData`: A pointer to a descriptor that supplies the key data for the object specifier.
-- `disposeInputs`: A Boolean value. Pass ( ) if the function should dispose of the descriptors for the   and   parameters or ( ) if your application will. A value of   may be more efficient for some applications because it allows them to reuse descriptors.
-- `objSpecifier`: On successful return, a pointer to the object specifier created by the   function. If the function returns successfully, your application should call the   function to dispose of this descriptor after it has finished using it.
+- `disposeInputs`: A Boolean value. Pass (`TRUE`) if the function should dispose of the descriptors for the `theContainer` and `keyData` parameters or (`FALSE`) if your application will. A value of `FALSE` may be more efficient for some applications because it allows them to reuse descriptors.
+- `objSpecifier`: On successful return, a pointer to the object specifier created by the `CreateObjSpecifier` function. If the function returns successfully, your application should call the [`AEDisposeDesc(_:)`](1444208-aedisposedesc.md) function to dispose of this descriptor after it has finished using it.
 
 ## See Also
 

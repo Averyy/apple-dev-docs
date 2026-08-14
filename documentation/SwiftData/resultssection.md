@@ -51,12 +51,12 @@ ForEach(items) { section in
 ## Relationships
 
 ### Conforms To
-- [BidirectionalCollection](../Swift/BidirectionalCollection.md)
-- [Collection](../Swift/Collection.md)
-- [Equatable](../Swift/Equatable.md)
-- [Identifiable](../Swift/Identifiable.md)
-- [RandomAccessCollection](../Swift/RandomAccessCollection.md)
-- [Sequence](../Swift/Sequence.md)
+- [BidirectionalCollection](../swift/bidirectionalcollection.md)
+- [Collection](../swift/collection.md)
+- [Equatable](../swift/equatable.md)
+- [Identifiable](../swift/identifiable.md)
+- [RandomAccessCollection](../swift/randomaccesscollection.md)
+- [Sequence](../swift/sequence.md)
 
 
 ---

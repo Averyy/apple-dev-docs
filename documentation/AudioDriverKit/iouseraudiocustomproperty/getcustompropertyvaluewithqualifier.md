@@ -16,7 +16,7 @@ virtual kern_return_t GetCustomPropertyValueWithQualifier(OSObject *in_qualifier
 
 #### Return Value
 
-[`kIOReturnSuccess`](https://developer.apple.com/documentation/DriverKit/kIOReturnSuccess) on success, or another value if an error occurs. For a list of error codes, see [`Error Codes`](https://developer.apple.com/documentation/DriverKit/error-codes).
+[`kIOReturnSuccess`](https://developer.apple.com/documentation/driverkit/kioreturnsuccess) on success, or another value if an error occurs. For a list of error codes, see [`Error Codes`](https://developer.apple.com/documentation/driverkit/error-codes).
 
 #### Discussion
 
@@ -26,8 +26,8 @@ The base class returns the custom property value set on the object without looki
 
 ## Parameters
 
-- `in_qualifier_data`: The property qualifier, as an [`OSObject`](https://developer.apple.com/documentation/DriverKit/OSObject). The caller retains and releases this object. This value is `NULL` if the qualifier data type is `CustomPropertyDataTypeNone`.
-- `out_data`: On output, the property value, as an [`OSObject`](https://developer.apple.com/documentation/DriverKit/OSObject). The caller retains and releases this object.
+- `in_qualifier_data`: The property qualifier, as an [`OSObject`](https://developer.apple.com/documentation/driverkit/osobject). The caller retains and releases this object. This value is `NULL` if the qualifier data type is `CustomPropertyDataTypeNone`.
+- `out_data`: On output, the property value, as an [`OSObject`](https://developer.apple.com/documentation/driverkit/osobject). The caller retains and releases this object.
 
 ## See Also
 

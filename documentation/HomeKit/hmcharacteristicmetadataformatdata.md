@@ -21,7 +21,7 @@ let HMCharacteristicMetadataFormatData: String
 
 #### Discussion
 
-The value is an [`NSData`](https://developer.apple.com/documentation/Foundation/NSData) object containing bytes of data.
+The value is an [`NSData`](https://developer.apple.com/documentation/foundation/nsdata) object containing bytes of data.
 
 ## See Also
 

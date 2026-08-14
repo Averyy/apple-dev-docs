@@ -16,7 +16,7 @@ static let destroyOperation: NSWorkspace.FileOperationName
 
 #### Discussion
 
-Behaves the same as  [`removeItem(at:)`](https://developer.apple.com/documentation/Foundation/FileManager/removeItem(at:)).
+Behaves the same as  [`removeItem(at:)`](https://developer.apple.com/documentation/foundation/filemanager/removeitem(at:)).
 
 ## See Also
 

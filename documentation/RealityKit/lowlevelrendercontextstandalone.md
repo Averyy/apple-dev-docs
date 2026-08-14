@@ -45,8 +45,8 @@ final class LowLevelRenderContextStandalone
 ## Relationships
 
 ### Conforms To
-- [Copyable](../Swift/Copyable.md)
-- [Escapable](../Swift/Escapable.md)
+- [Copyable](../swift/copyable.md)
+- [Escapable](../swift/escapable.md)
 - [LowLevelRenderContext](lowlevelrendercontext.md)
 - [LowLevelRenderContextLighting](lowlevelrendercontextlighting.md)
 - [LowLevelRenderContextShaderGraph](lowlevelrendercontextshadergraph.md)

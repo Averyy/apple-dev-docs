@@ -10,11 +10,11 @@ An Animation Graph is a visual, node-based description of how a character animat
 
 For the fundamentals of building an Animation Graph — node categories, State Machines, Tags, and Transition Conditions — see [`Working with the Animation Graph`](working-with-the-animation-graph.md).
 
-![Screenshot of an Animation Graph in Reality Composer Pro.](https://docs-assets.developer.apple.com/published/e80f5c10efe80278499296ab67168cf9/AnimationGraph3%402x.png)
+![Screenshot of an Animation Graph in Reality Composer Pro.](/images/RealityComposerPro/AnimationGraph3@2x.png)
 
 Two features extend a graph beyond its own boundaries. Tags let a state machine’s states announce their playback status. States can be entering, looping, or exiting, so both the graph itself and outside systems can react. Inputs expose graph parameters, such as a speed value or a jump trigger, that something outside the graph can set. That “outside” system is typically a [`Getting started with Script Graphs`](getting-started-with-script-graphs.md), Reality Composer Pro’s event-driven runtime scripting surface: it reacts to gameplay events like a collision, then reads a Tag or drives an Input to change what the character’s Animation Graph does next.
 
-This article builds a small locomotion graph — an Idle, Walk, and Run state machine blended by speed — assigns it to a character, previews it from three different surfaces in the editor, and wires a Script Graph that reads and drives its state. It also covers [`AnimationGraphComponent`](https://developer.apple.com/documentation/RealityKit/AnimationGraphComponent), the public RealityKit struct that attaches the compiled graph to an entity and exposes its runtime state to Swift.
+This article builds a small locomotion graph — an Idle, Walk, and Run state machine blended by speed — assigns it to a character, previews it from three different surfaces in the editor, and wires a Script Graph that reads and drives its state. It also covers [`AnimationGraphComponent`](https://developer.apple.com/documentation/realitykit/animationgraphcomponent), the public RealityKit struct that attaches the compiled graph to an entity and exposes its runtime state to Swift.
 
 #### Create an Animation Graph
 
@@ -28,13 +28,13 @@ Every Animation Graph node belongs to one of five categories: Source, Control Fl
 
 Add two Animation Clip nodes from the Source category and point them at your character’s Walk and Run clips. On their own, these nodes only output a single clip’s pose.
 
-![Screenshot of a Reality Composer Pro Animation Graph with Walk, Run, and Idle nodes connected to a State Machine node.](https://docs-assets.developer.apple.com/published/59bfd4acfa96a4795fc6a641a6f12896/AnimationGraph6%402x.png)
+![Screenshot of a Reality Composer Pro Animation Graph with Walk, Run, and Idle nodes connected to a State Machine node.](/images/RealityComposerPro/AnimationGraph6@2x.png)
 
 #### Blend Sources By Speed
 
 To blend between the Walk and Run clips based on speed, add a Blend 1D node from the Modifier category and connect both clip outputs into it. Blend 1D opens an embedded Blend Space view, a small grid editor where you arrange animation samples along a single parameter axis. Place the Walk sample near the low end of the axis and the Run sample near the high end; the node needs at least two samples to blend anything, and you can add, remove, rename, or reposition samples at any time.
 
-![Screenshot of Reality Composer Pro Animation Graph nodes and the Blend definition parameters shown in the Inspector.](https://docs-assets.developer.apple.com/published/322296528c5bde64fc810e734ee8776c/AnimationGraphNodes%402x.png)
+![Screenshot of Reality Composer Pro Animation Graph nodes and the Blend definition parameters shown in the Inspector.](/images/RealityComposerPro/AnimationGraphNodes@2x.png)
 
 To drive that axis at runtime rather than hardcoding a value, add a graph-level Input of type Float named “Speed,” then connect it to the Blend 1D node’s blend parameter. As the Speed input rises from 0 to its maximum, the node crossfades smoothly from the Walk sample to the Run sample.
 
@@ -44,7 +44,7 @@ To drive that axis at runtime rather than hardcoding a value, add a graph-level 
 
 A Blend 1D node handles blending within a single locomotion pose, but a character also needs to switch between distinct behaviors — standing still versus moving. Add a State Machine node from the Control Flow category to handle that branching. Inside it, create three States: Idle, Walk, and Run, and rename each one to match. Idle sources a standing-still Animation Clip directly; Walk and Run can both route through the Blend 1D node you built in the previous section, since that node already blends between exactly those two clips.
 
-![Screenshot of the Reality Composer Pro Animation State Machine Node.](https://docs-assets.developer.apple.com/published/2a703d622b1e05d7db9855c200957750/AnimationGraphStateMachine%402x.png)
+![Screenshot of the Reality Composer Pro Animation State Machine Node.](/images/RealityComposerPro/AnimationGraphStateMachine@2x.png)
 
 Connect Idle to Walk, and Walk to Run, with Transitions — connect Conduits between them if you want to share transition conditions across more than one pair of states. Each Transition carries one or more Transition Conditions; Animation Graph supports several condition types, but this graph only needs Float. Give the Idle-to-Walk transition a Float condition that fires once the Speed input crosses a small threshold above zero, and give Walk-to-Run a higher threshold on the same input, so the character’s state advances in step with the same value driving the blend.
 
@@ -54,7 +54,7 @@ With the state machine wired, connect its output to a Final Pose node from the O
 
 A state machine’s states can carry Tags, which announce when a state reaches a particular point in its playback lifecycle. Select the Run state and add an Internal Tag named “IsSprinting,” then set its logic mode to OnEnter so the tag reports active as soon as the character enters the Run state. Other logic modes are available for detecting a state’s full duration, its exit moment, or each loop iteration; this graph only needs to know the instant Run begins, so OnEnter is the right choice here.
 
-![Screenshot of Reality Composer Pro Animation State Node expanded with State Tags shown in the Inspector.](https://docs-assets.developer.apple.com/published/cd7c08eb123c77fca63ee5590bf8fb21/AnimationGraphStateTags%402x.png)
+![Screenshot of Reality Composer Pro Animation State Node expanded with State Tags shown in the Inspector.](/images/RealityComposerPro/AnimationGraphStateTags@2x.png)
 
 Every tag placed anywhere in the graph also appears in the graph-level Tags panel, listing each tag’s Name, Type, and current Status. You can check a tag two ways: from inside the state machine, using a Tag-type Transition Condition to branch on whether another state’s tag is active, or from outside the graph entirely, by reading the tag’s status from Swift or a Script Graph. That second path is the hook this article uses later to bridge into Script Graph and Swift — keep it distinct from Script Graph’s own Events, which is a different mechanism in a different graph type; the Drive the graph from a Script Graph section covers it separately.
 
@@ -78,13 +78,13 @@ Reality Composer Pro links `RealityKitScripting` automatically; a plain RealityK
 
 A Script Graph typically begins with a node from its Events category — reacting to a Collision event or an Input event, for example — and then reaches into the character entity’s components to read or change state. The Component category supplies that bridge. Get Component retrieves the entity’s Animation Graph component. Set Component writes changes back to it. Has Component checks whether the component exists before you try to use it.
 
-![Screenshot of the Animation Graph Get Component Node with AnimationGraph specified for the Component Type.](https://docs-assets.developer.apple.com/published/d9dcfa90c476258caaa8c01d45a241ac/AnimationGraphGetComponent%402x.png)
+![Screenshot of the Animation Graph Get Component Node with AnimationGraph specified for the Component Type.](/images/RealityComposerPro/AnimationGraphGetComponent@2x.png)
 
 For this locomotion graph, wire a Script Graph that starts from a Collision event, uses Get Component to reach the entity’s Animation Graph component, and then either reads whether the “IsSprinting” Tag is currently active or sets the “Jump” Trigger input you’d expose alongside Speed, depending on what the collision represents.
 
 #### Observe Graph State From Swift
 
-RealityKit exposes the compiled graph’s runtime state to Swift through [`AnimationGraphComponent`](https://developer.apple.com/documentation/RealityKit/AnimationGraphComponent), the same component the Add Component menu and Script Graph’s Get Component node work with. Attach it with [`init(graph:)`](https://developer.apple.com/documentation/RealityKit/AnimationGraphComponent/init(graph:)), or read it back from an entity that already has one:
+RealityKit exposes the compiled graph’s runtime state to Swift through [`AnimationGraphComponent`](https://developer.apple.com/documentation/realitykit/animationgraphcomponent), the same component the Add Component menu and Script Graph’s Get Component node work with. Attach it with [`init(graph:)`](https://developer.apple.com/documentation/realitykit/animationgraphcomponent/init(graph:)), or read it back from an entity that already has one:
 
 ```swift
 if let animationGraph = character.components[AnimationGraphComponent.self] {
@@ -95,14 +95,14 @@ if let animationGraph = character.components[AnimationGraphComponent.self] {
 }
 ```
 
-[`activeTags`](https://developer.apple.com/documentation/RealityKit/AnimationGraphComponent/activeTags) reports every Tag that fires or is active during the graph’s most recent evaluation tick — including the “IsSprinting” Tag from earlier — and [`activeStateMachineNodes`](https://developer.apple.com/documentation/RealityKit/AnimationGraphComponent/activeStateMachineNodes) reports each State Machine node’s current and previous state IDs for debugging. Both are read-only views onto the graph’s last tick; changing what a character animates still requires editing the graph itself or driving its Inputs and Tags from the editor or a Script Graph.
+[`activeTags`](https://developer.apple.com/documentation/realitykit/animationgraphcomponent/activetags) reports every Tag that fires or is active during the graph’s most recent evaluation tick — including the “IsSprinting” Tag from earlier — and [`activeStateMachineNodes`](https://developer.apple.com/documentation/realitykit/animationgraphcomponent/activestatemachinenodes) reports each State Machine node’s current and previous state IDs for debugging. Both are read-only views onto the graph’s last tick; changing what a character animates still requires editing the graph itself or driving its Inputs and Tags from the editor or a Script Graph.
 
 If your app also plays animation clips directly, independent of an Animation Graph, RealityKit provides a separate, simpler surface for that:
 
-- [`AnimationLibraryComponent`](https://developer.apple.com/documentation/RealityKit/AnimationLibraryComponent) holds an entity’s named animation resources
-- [`playAnimation(_:transitionDuration:startsPaused:)`](https://developer.apple.com/documentation/RealityKit/Entity/playAnimation(_:transitionDuration:startsPaused:)) plays one and returns an [`AnimationPlaybackController`](https://developer.apple.com/documentation/RealityKit/AnimationPlaybackController) for playback control
-- [`AnimationEvents`](https://developer.apple.com/documentation/RealityKit/AnimationEvents) reports playback notifications through Combine
-- [`BindTarget`](https://developer.apple.com/documentation/RealityKit/BindTarget) identifies a specific animatable property such as [`BindTarget.jointTransforms`](https://developer.apple.com/documentation/RealityKit/BindTarget/jointTransforms) or [`BindTarget.parameter(_:)`](https://developer.apple.com/documentation/RealityKit/BindTarget/parameter(_:)). These APIs act on individual animation clips. RealityKit’s documentation doesn’t specify how they behave if you combine them with an Animation Graph’s state machine, Tags, or Inputs on the same entity, so test that combination before relying on it.
+- [`AnimationLibraryComponent`](https://developer.apple.com/documentation/realitykit/animationlibrarycomponent) holds an entity’s named animation resources
+- [`playAnimation(_:transitionDuration:startsPaused:)`](https://developer.apple.com/documentation/realitykit/entity/playanimation(_:transitionduration:startspaused:)) plays one and returns an [`AnimationPlaybackController`](https://developer.apple.com/documentation/realitykit/animationplaybackcontroller) for playback control
+- [`AnimationEvents`](https://developer.apple.com/documentation/realitykit/animationevents) reports playback notifications through Combine
+- [`BindTarget`](https://developer.apple.com/documentation/realitykit/bindtarget) identifies a specific animatable property such as [`BindTarget.jointTransforms`](https://developer.apple.com/documentation/realitykit/bindtarget/jointtransforms) or [`BindTarget.parameter(_:)`](https://developer.apple.com/documentation/realitykit/bindtarget/parameter(_:)). These APIs act on individual animation clips. RealityKit’s documentation doesn’t specify how they behave if you combine them with an Animation Graph’s state machine, Tags, or Inputs on the same entity, so test that combination before relying on it.
 
 ## See Also
 

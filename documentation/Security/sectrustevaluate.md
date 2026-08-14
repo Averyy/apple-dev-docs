@@ -52,7 +52,7 @@ As a rule, you should handle the various return values as follows:
 
 - [`SecTrustResultType.unspecified`](sectrustresulttype/unspecified.md)—Evaluation successfully reached an (implicitly trusted) anchor certificate without any evaluation failures, but never encountered any explicitly stated user-trust preference. This is the most common return value.
 
-Most apps should, by default, trust the chain. If you ask the user what to do, in macOS, you should use the [`SFCertificateTrustPanel`](https://developer.apple.com/documentation/SecurityInterface/SFCertificateTrustPanel) class in the [`Security Interface`](https://developer.apple.com/documentation/SecurityInterface).
+Most apps should, by default, trust the chain. If you ask the user what to do, in macOS, you should use the [`SFCertificateTrustPanel`](https://developer.apple.com/documentation/securityinterface/sfcertificatetrustpanel) class in the [`Security Interface`](https://developer.apple.com/documentation/securityinterface).
 
 - [`SecTrustResultType.proceed`](sectrustresulttype/proceed.md)—The user explicitly chose to trust a certificate in the chain (usually by clicking a button in a certificate trust panel).
 
@@ -64,7 +64,7 @@ Your app should *not* trust the chain.
 
 - [`SecTrustResultType.confirm`](sectrustresulttype/confirm.md)—The user previously chose to always ask for permission before accepting one of the certificates in the chain. This return value is no longer used, but may occur in older versions of macOS.
 
-Either ask the user what to do or reject the certificate. If you ask the user what to do, in macOS, you should use the [`SFCertificateTrustPanel`](https://developer.apple.com/documentation/SecurityInterface/SFCertificateTrustPanel) class in the [`Security Interface`](https://developer.apple.com/documentation/SecurityInterface).
+Either ask the user what to do or reject the certificate. If you ask the user what to do, in macOS, you should use the [`SFCertificateTrustPanel`](https://developer.apple.com/documentation/securityinterface/sfcertificatetrustpanel) class in the [`Security Interface`](https://developer.apple.com/documentation/securityinterface).
 
 - [`SecTrustResultType.recoverableTrustFailure`](sectrustresulttype/recoverabletrustfailure.md)—This means that you should not trust the chain as-is, but that the chain could be trusted with some minor change to the evaluation context, such as ignoring expired certificates or adding an additional anchor to the set of trusted anchors.
 
@@ -78,7 +78,7 @@ Then, as appropriate, you can call one or more of the `SecTrustSet...` functions
 
 When you think you have corrected the problem, call `SecTrustEvaluate` again. Each time you call `SecTrustEvaluate`, it discards the results of any previous evaluation and replaces them with the new results.
 
-If the trust failure was caused by an untrusted root certificate and your app asks the user what to do, you should use the [`SFCertificateTrustPanel`](https://developer.apple.com/documentation/SecurityInterface/SFCertificateTrustPanel) class in the [`Security Interface`](https://developer.apple.com/documentation/SecurityInterface).
+If the trust failure was caused by an untrusted root certificate and your app asks the user what to do, you should use the [`SFCertificateTrustPanel`](https://developer.apple.com/documentation/securityinterface/sfcertificatetrustpanel) class in the [`Security Interface`](https://developer.apple.com/documentation/securityinterface).
 
 - [`SecTrustResultType.fatalTrustFailure`](sectrustresulttype/fataltrustfailure.md)—Evaluation failed because a certificate in the chain is defective. This usually represents a fundamental defect in the certificate data, such as an invalid encoding for a critical `subjectAltName` extension, an unsupported critical extension, or some other critical portion of the certificate that could not be successfully interpreted. Changing parameter values and calling `SecTrustEvaluate` again is unlikely to result in a successful reevaluation unless you provide different certificates.
 - [`SecTrustResultType.otherError`](sectrustresulttype/othererror.md)—Evaluation failed for some other reason. This can be caused by either a revoked certificate or by OS-level errors that are unrelated to the certificates themselves.
@@ -87,7 +87,7 @@ If the trust failure was caused by an untrusted root certificate and your app as
 
 It is not safe to call this function concurrently with any other function that uses the same trust management object, or to re-enter this function for the same trust management object.
 
-Because this function might look on the network for certificates in the certificate chain, the function might block while attempting network access. You should never call it from your main thread; call it only from within a function running on a dispatch queue or on a separate thread. Alternatively, in macOS, you can use [`SecTrustEvaluateAsync(_:_:_:)`](sectrustevaluateasync(_:_:_:).md) from your main thread. In iOS, you can do the same thing using [`dispatch_once`](https://developer.apple.com/documentation/Dispatch/dispatch_once-c.func).
+Because this function might look on the network for certificates in the certificate chain, the function might block while attempting network access. You should never call it from your main thread; call it only from within a function running on a dispatch queue or on a separate thread. Alternatively, in macOS, you can use [`SecTrustEvaluateAsync(_:_:_:)`](sectrustevaluateasync(_:_:_:).md) from your main thread. In iOS, you can do the same thing using [`dispatch_once`](https://developer.apple.com/documentation/dispatch/dispatch_once-c.func).
 
 ## Parameters
 

@@ -29,7 +29,7 @@ This function calculates the element-wise division of scalar value `A` and vecto
     C[n] = A / B[n];
 ```
 
-![A diagram showing the operation of this function. There are three rows. The top row represents the scalar value A with one box, and the input vector B with three boxes. The middle row represents the operation as three boxes with division signs. The bottom row represents the output vector C as three boxes. The diagram has connecting lines from the input vectors to the operation, and from the operation to the output vector. ](https://docs-assets.developer.apple.com/published/de2d14d4b3697b21f34309aea77cecc1/media-4337221%402x.png)
+![A diagram showing the operation of this function. There are three rows. The top row represents the scalar value A with one box, and the input vector B with three boxes. The middle row represents the operation as three boxes with division signs. The bottom row represents the output vector C as three boxes. The diagram has connecting lines from the input vectors to the operation, and from the operation to the output vector. ](/images/com.apple.accelerate/media-4337221@2x.png)
 
 The following code shows an example of using this function:
 

@@ -37,7 +37,7 @@ struct Part
 ## Relationships
 
 ### Conforms To
-- [Identifiable](../Swift/Identifiable.md)
+- [Identifiable](../swift/identifiable.md)
 - [MeshBufferContainer](meshbuffercontainer.md)
 
 ## See Also

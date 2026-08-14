@@ -23,9 +23,9 @@ class GKSpheresNoiseSource
 
 All noise sources generate infinite 3D fields of noise values, but this fact is especially relevant to sphere noise: by transforming a noise object in 3D, you can sample the noise in ways that “slice” through the spheres. Use this technique (combined with other noise sources and noise processing operations) to create effects such as wood-grain textures.
 
-![None](https://docs-assets.developer.apple.com/published/328d0cd4c96f27d02fadc08f7b83c1ce/media-2556373%402x.png)
+![None](/images/com.apple.gameplaykit/media-2556373@2x.png)
 
-Like all [`GKNoiseSource`](gknoisesource.md) subclasses, a sphere noise source represents a noise generation algorithm and its parameters. To make use of a noise source, first create [`GKNoise`](gknoise.md) object from it (and optionally apply operations to that noise object or combine it with other noise objects). Then create a [`GKNoiseMap`](gknoisemap.md) object from your noise object, generating a concrete field of values that you can sample from directly or visualize using the [`SKTexture`](https://developer.apple.com/documentation/SpriteKit/SKTexture) or `SKTileMap` class.
+Like all [`GKNoiseSource`](gknoisesource.md) subclasses, a sphere noise source represents a noise generation algorithm and its parameters. To make use of a noise source, first create [`GKNoise`](gknoise.md) object from it (and optionally apply operations to that noise object or combine it with other noise objects). Then create a [`GKNoiseMap`](gknoisemap.md) object from your noise object, generating a concrete field of values that you can sample from directly or visualize using the [`SKTexture`](https://developer.apple.com/documentation/spritekit/sktexture) or `SKTileMap` class.
 
 ## Topics
 
@@ -43,12 +43,12 @@ Like all [`GKNoiseSource`](gknoisesource.md) subclasses, a sphere noise source r
 ### Inherits From
 - [GKNoiseSource](gknoisesource.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

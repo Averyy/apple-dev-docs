@@ -61,7 +61,7 @@ var body: some View {
 }
 ```
 
-![Horizontal rule chart with x-axis showing the month in the year 2020 starting with January and ending with December, and with y-axis showing a pollen source: Trees, Grass, and Weeds. There are 4 rules. 2 for Trees 1 starting in January and going until the end of September and 1 spanning December, 1 for Grass starting in March and going until the end of August, and 1 for Weeds starting in April and going until the end of November.](https://docs-assets.developer.apple.com/published/5491601771c8ae97361331c393b3642b/LineSegmentMarkSwift.LineSegmentMarkHorizontalLineSegmentChart%402x.png)
+![Horizontal rule chart with x-axis showing the month in the year 2020 starting with January and ending with December, and with y-axis showing a pollen source: Trees, Grass, and Weeds. There are 4 rules. 2 for Trees 1 starting in January and going until the end of September and 1 spanning December, 1 for Grass starting in March and going until the end of August, and 1 for Weeds starting in April and going until the end of November.](/images/com.apple.Charts/LineSegmentMarkSwift.LineSegmentMarkHorizontalLineSegmentChart@2x.png)
 
 ##### Annotate a Chart with Rule Mark
 
@@ -93,7 +93,7 @@ var body: some View {
 }
 ```
 
-![Vertical bar chart with x-axis showing department categories Production, Marketing, Finance, and R&D, and with y-axis ranging from 0 to 15000. There are 3 bars: Production 15000, Marketing 8000, Finance 10000. A rule mark at 9000 shows the break even threshold.](https://docs-assets.developer.apple.com/published/7e451f6fe310c4757a2b567b44b30323/LineSegmentMarkSwift.LineSegmentMarkBarChartWithHorizontalLineSegmentMark%402x.png)
+![Vertical bar chart with x-axis showing department categories Production, Marketing, Finance, and R&D, and with y-axis ranging from 0 to 15000. There are 3 bars: Production 15000, Marketing 8000, Finance 10000. A rule mark at 9000 shows the break even threshold.](/images/com.apple.Charts/LineSegmentMarkSwift.LineSegmentMarkBarChartWithHorizontalLineSegmentMark@2x.png)
 
 ##### Rulemark in Chart3d
 
@@ -156,10 +156,10 @@ Chart3D {
 ### Conforms To
 - [Chart3DContent](chart3dcontent.md)
 - [ChartContent](chartcontent.md)
-- [Copyable](../Swift/Copyable.md)
-- [Escapable](../Swift/Escapable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Copyable](../swift/copyable.md)
+- [Escapable](../swift/escapable.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

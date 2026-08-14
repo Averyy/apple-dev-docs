@@ -22,7 +22,7 @@ let MPMediaItemPropertyIsCompilation: String
 
 #### Discussion
 
-This property corresponds to the “Part of a compilation” checkbox in the Info tab of the Get Info dialog in iTunes. Its associated value is an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) object representing a Boolean value.
+This property corresponds to the “Part of a compilation” checkbox in the Info tab of the Get Info dialog in iTunes. Its associated value is an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) object representing a Boolean value.
 
 ## See Also
 

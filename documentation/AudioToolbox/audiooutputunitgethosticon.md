@@ -20,7 +20,7 @@ func AudioOutputUnitGetHostIcon(_ au: AudioUnit, _ desiredPointSize: Float) -> U
 
 #### Discussion
 
-The [`UIImage`](https://developer.apple.com/documentation/UIKit/UIImage) of the host app’s icon.
+The [`UIImage`](https://developer.apple.com/documentation/uikit/uiimage) of the host app’s icon.
 
 ## See Also
 

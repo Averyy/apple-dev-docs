@@ -25,7 +25,7 @@ Diffable data sources use *snapshots* to provide data for collection views and t
 
 The data in a snapshot is made up of the sections and items you want to display, in the order that you determine. You configure what to display by adding, deleting, or moving the sections and items.
 
-> ❗ **Important**:  Each of your sections and items must have unique identifiers that conform to the [`Hashable`](https://developer.apple.com/documentation/Swift/Hashable) protocol. Use `struct` or `enum` Swift value types for your identifiers, including built-in types such as `Int`, `String`, or `UUID`. If you use a Swift `class` for your identifiers, your `class` must be a subclass of `NSObject`.
+> ❗ **Important**:  Each of your sections and items must have unique identifiers that conform to the [`Hashable`](https://developer.apple.com/documentation/swift/hashable) protocol. Use `struct` or `enum` Swift value types for your identifiers, including built-in types such as `Int`, `String`, or `UUID`. If you use a Swift `class` for your identifiers, your `class` must be a subclass of `NSObject`.
 
 To display data in a view using a snapshot:
 
@@ -55,7 +55,7 @@ For more information, see the diffable data source types:
 
 - [`UICollectionViewDiffableDataSource`](uicollectionviewdiffabledatasource-9tqpa.md)
 - [`UITableViewDiffableDataSource`](uitableviewdiffabledatasource-2euir.md)
-- [`NSCollectionViewDiffableDataSource`](https://developer.apple.com/documentation/AppKit/NSCollectionViewDiffableDataSource-axww)
+- [`NSCollectionViewDiffableDataSource`](https://developer.apple.com/documentation/appkit/nscollectionviewdiffabledatasource-axww)
 
 ##### Bridging
 
@@ -139,10 +139,10 @@ let snapshot = snapshotReference as NSDiffableDataSourceSnapshot<Int, UUID>
 ## Relationships
 
 ### Conforms To
-- [Copyable](../Swift/Copyable.md)
-- [Escapable](../Swift/Escapable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Copyable](../swift/copyable.md)
+- [Escapable](../swift/escapable.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

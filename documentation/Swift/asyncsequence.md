@@ -144,15 +144,15 @@ for await s in stream {
 ### Adapting Textual Sequences
 - [var characters: AsyncCharacterSequence<Self>](asyncsequence/characters.md)
   A non-blocking sequence of `Characters` created by decoding the elements of `self` as UTF8.
-- [struct AsyncCharacterSequence](../Foundation/AsyncCharacterSequence.md)
+- [struct AsyncCharacterSequence](../foundation/asynccharactersequence.md)
   An asynchronous sequence of characters.
 - [var unicodeScalars: AsyncUnicodeScalarSequence<Self>](asyncsequence/unicodescalars.md)
   A non-blocking sequence of `UnicodeScalars` created by decoding the elements of `self` as UTF8.
-- [struct AsyncUnicodeScalarSequence](../Foundation/AsyncUnicodeScalarSequence.md)
+- [struct AsyncUnicodeScalarSequence](../foundation/asyncunicodescalarsequence.md)
   An asychronous sequence of Unicode scalar values.
 - [var lines: AsyncLineSequence<Self>](asyncsequence/lines.md)
   A non-blocking sequence of newline-separated `Strings` created by decoding the elements of `self` as UTF8.
-- [struct AsyncLineSequence](../Foundation/AsyncLineSequence.md)
+- [struct AsyncLineSequence](../foundation/asynclinesequence.md)
   An asynchronous sequence of lines of text.
 ### Associated Types
 - [associatedtype Failure = any Error](asyncsequence/failure.md)

@@ -22,7 +22,7 @@ let kCGPDFXOutputIntentSubtype: CFString
 
 #### Discussion
 
-The value of this key must be a [`CFString`](https://developer.apple.com/documentation/CoreFoundation/CFString) object equal to `"GTS_PDFX"`; otherwise, the dictionary is ignored.
+The value of this key must be a [`CFString`](https://developer.apple.com/documentation/corefoundation/cfstring) object equal to `"GTS_PDFX"`; otherwise, the dictionary is ignored.
 
 ## See Also
 

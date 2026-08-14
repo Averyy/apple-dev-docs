@@ -20,7 +20,7 @@ An array of the names of files (not full paths) that the receiver promises to cr
 
 #### Discussion
 
-This method is invoked when the drop has been accepted by the destination and the destination, in the case of another Cocoa application, invokes the NSDraggingInfo method [`namesOfPromisedFilesDropped(atDestination:)`](https://developer.apple.com/documentation/AppKit/NSDraggingInfo/namesOfPromisedFilesDropped(atDestination:)). For long operations, you can cache `dropDestination` and defer the creation of the files until the `draggedImage:endedAt:operation:` method to avoid blocking the destination application.
+This method is invoked when the drop has been accepted by the destination and the destination, in the case of another Cocoa application, invokes the NSDraggingInfo method [`namesOfPromisedFilesDropped(atDestination:)`](https://developer.apple.com/documentation/appkit/nsdragginginfo/namesofpromisedfilesdropped(atdestination:)). For long operations, you can cache `dropDestination` and defer the creation of the files until the `draggedImage:endedAt:operation:` method to avoid blocking the destination application.
 
 ## Parameters
 

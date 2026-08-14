@@ -18,7 +18,7 @@ class TCSwitch
 
 #### Overview
 
-This is mirrored by a [`GCControllerButtonInput`](https://developer.apple.com/documentation/GameController/GCControllerButtonInput) on the associated [`GCController`](https://developer.apple.com/documentation/GameController/GCController).
+This is mirrored by a [`GCControllerButtonInput`](https://developer.apple.com/documentation/gamecontroller/gccontrollerbuttoninput) on the associated [`GCController`](https://developer.apple.com/documentation/gamecontroller/gccontroller).
 
 ## Topics
 
@@ -40,14 +40,14 @@ This is mirrored by a [`GCControllerButtonInput`](https://developer.apple.com/do
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 - [TCControl](tccontrol.md)
 - [TCControlLayout](tccontrollayout.md)
 

@@ -14,7 +14,7 @@ A Boolean that indicates whether the app supports additional header fields in re
 
 #### Discussion
 
-Set the corresponding value to `YES` to indicate that your browser uses the [`additionalHeaderFields`](https://developer.apple.com/documentation/AuthenticationServices/ASWebAuthenticationSessionRequest/additionalHeaderFields) property of an [`ASWebAuthenticationSessionRequest`](https://developer.apple.com/documentation/AuthenticationServices/ASWebAuthenticationSessionRequest).
+Set the corresponding value to `YES` to indicate that your browser uses the [`additionalHeaderFields`](https://developer.apple.com/documentation/authenticationservices/aswebauthenticationsessionrequest/additionalheaderfields) property of an [`ASWebAuthenticationSessionRequest`](https://developer.apple.com/documentation/authenticationservices/aswebauthenticationsessionrequest).
 
 > ❗ **Important**: If the system doesn’t find this key in the default browser app’s `Info.plist`, it sends the request to Safari instead.
 

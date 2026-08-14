@@ -6,17 +6,17 @@ Migrate an existing app to adopt URL-based document reading and writing with Swi
 
 #### Overview
 
-If you have an existing document-based app, you can adopt the [`Document`](Document.md) protocol to take advantage of direct URL access, Swift concurrency integration, and modern observation. The [`Document`](Document.md) protocol separates reading and writing into dedicated types, which gives you more control over file I/O and enables partial reads and writes for complex document formats.
+If you have an existing document-based app, you can adopt the [`Document`](document.md) protocol to take advantage of direct URL access, Swift concurrency integration, and modern observation. The [`Document`](document.md) protocol separates reading and writing into dedicated types, which gives you more control over file I/O and enables partial reads and writes for complex document formats.
 
 In releases before iOS 27, iPadOS 27, macOS 27, and visionOS 27, you create a document type by conforming to either `FileDocument` or `ReferenceFileDocument`. In these and later releases, you can either conform to the `Document` protocol or to the `ReadableDocument` and `WritableDocument` protocols, depending on what your app does. Although `FileDocument` and `ReferenceFileDocument` remain available, they’re no longer supported for new document types.
 
 The following table highlights the differences between these three protocols to help you choose the right migration path:
 
-|  | [`FileDocument`](FileDocument.md) | [`ReferenceFileDocument`](ReferenceFileDocument.md) | [`Document`](Document.md) |
+|  | [`FileDocument`](filedocument.md) | [`ReferenceFileDocument`](referencefiledocument.md) | [`Document`](document.md) |
 | --- | --- | --- | --- |
 | Type | Value (`struct`) | Reference (`class`) | Reference (`class`) |
-| Reading | [`init(configuration:)`](FileDocument/init(configuration:).md) | [`init(configuration:)`](ReferenceFileDocument/init(configuration:).md) | [`reader(configuration:)`](ReadableDocument/reader(configuration:).md) + [`apply(snapshot:previous:)`](ReadableDocument/apply(snapshot:previous:).md) |
-| Writing | [`fileWrapper(configuration:)`](FileDocument/fileWrapper(configuration:).md) | [`fileWrapper(snapshot:configuration:)`](ReferenceFileDocument/fileWrapper(snapshot:configuration:).md) | [`writer(configuration:)`](WritableDocument/writer(configuration:).md) + [`snapshot(contentType:)`](WritableDocument/snapshot(contentType:).md) |
+| Reading | [`init(configuration:)`](filedocument/init(configuration:).md) | [`init(configuration:)`](referencefiledocument/init(configuration:).md) | [`reader(configuration:)`](readabledocument/reader(configuration:).md) + [`apply(snapshot:previous:)`](readabledocument/apply(snapshot:previous:).md) |
+| Writing | [`fileWrapper(configuration:)`](filedocument/filewrapper(configuration:).md) | [`fileWrapper(snapshot:configuration:)`](referencefiledocument/filewrapper(snapshot:configuration:).md) | [`writer(configuration:)`](writabledocument/writer(configuration:).md) + [`snapshot(contentType:)`](writabledocument/snapshot(contenttype:).md) |
 | Reading and writing execution | Synchronous | Synchronous | `async`/`sending` with explicit actor boundaries |
 | File access | [`FileWrapper`](https://developer.apple.comhttps://developer.apple.com/documentation/foundation/filewrapper) only | [`FileWrapper`](https://developer.apple.comhttps://developer.apple.com/documentation/foundation/filewrapper) only | URL or [`FileWrapper`](https://developer.apple.comhttps://developer.apple.com/documentation/foundation/filewrapper) |
 | Undo | Automatic (value semantics) | Manual ([`UndoManager`](https://developer.apple.comhttps://developer.apple.com/documentation/foundation/undomanager)) | Manual ([`UndoManager`](https://developer.apple.comhttps://developer.apple.com/documentation/foundation/undomanager)) |
@@ -28,50 +28,50 @@ Depending on which deprecated protocol your app uses, select the appropriate tab
 
 **FileDocument**:
 
-1. **Convert from a structure to an [`@Observable`](https://developer.apple.comhttps://developer.apple.com/documentation/observation/observable) class.** A document type that conforms to [`FileDocument`](FileDocument.md) is typically a value type. The [`Document`](Document.md) protocol requires a reference type. Replace your structure with a `final class` annotated with [`@Observable`](https://developer.apple.comhttps://developer.apple.com/documentation/observation/observable).
-2. **Separate reading logic into a [`DocumentReader`](DocumentReader.md).** For reading, use [`FileWrapperDocumentReader`](FileWrapperDocumentReader.md) and provide a closure that converts a [`FileWrapper`](https://developer.apple.comhttps://developer.apple.com/documentation/foundation/filewrapper) into a snapshot value.
-3. **Implement [`apply(snapshot:previous:)`](ReadableDocument/apply(snapshot:previous:).md).** Use this method to update your document’s properties when a new snapshot arrives from the reader.
-4. **Separate writing logic into a [`DocumentWriter`](DocumentWriter.md).** For writing, use [`FileWrapperDocumentWriter`](FileWrapperDocumentWriter.md) and provide a closure that converts a snapshot into a [`FileWrapper`](https://developer.apple.comhttps://developer.apple.com/documentation/foundation/filewrapper).
-5. **Implement [`snapshot(contentType:)`](WritableDocument/snapshot(contentType:).md).** Add this method to capture your document’s current state on the main actor. Mark it `async throws` and return a `sending` value.
-6. **Add undo registration.** With [`FileDocument`](FileDocument.md), SwiftUI manages undo automatically through value semantics and [`Binding`](https://developer.apple.comhttps://developer.apple.com/documentation/swiftui/binding). With the [`Document`](Document.md) protocol, you register undo actions yourself using an [`UndoManager`](https://developer.apple.comhttps://developer.apple.com/documentation/foundation/undomanager). The undo manager from the environment in your content view is already connected to the document.
-7. **Update your [`DocumentGroup`](DocumentGroup.md) initializer.** Replace `DocumentGroup(newDocument:)` with the closure-based initializer that receives [`URLDocumentConfiguration`](URLDocumentConfiguration.md) and [`DocumentCreationContext`](DocumentCreationContext.md).
+1. **Convert from a structure to an [`@Observable`](https://developer.apple.comhttps://developer.apple.com/documentation/observation/observable) class.** A document type that conforms to [`FileDocument`](filedocument.md) is typically a value type. The [`Document`](document.md) protocol requires a reference type. Replace your structure with a `final class` annotated with [`@Observable`](https://developer.apple.comhttps://developer.apple.com/documentation/observation/observable).
+2. **Separate reading logic into a [`DocumentReader`](documentreader.md).** For reading, use [`FileWrapperDocumentReader`](filewrapperdocumentreader.md) and provide a closure that converts a [`FileWrapper`](https://developer.apple.comhttps://developer.apple.com/documentation/foundation/filewrapper) into a snapshot value.
+3. **Implement [`apply(snapshot:previous:)`](readabledocument/apply(snapshot:previous:).md).** Use this method to update your document’s properties when a new snapshot arrives from the reader.
+4. **Separate writing logic into a [`DocumentWriter`](documentwriter.md).** For writing, use [`FileWrapperDocumentWriter`](filewrapperdocumentwriter.md) and provide a closure that converts a snapshot into a [`FileWrapper`](https://developer.apple.comhttps://developer.apple.com/documentation/foundation/filewrapper).
+5. **Implement [`snapshot(contentType:)`](writabledocument/snapshot(contenttype:).md).** Add this method to capture your document’s current state on the main actor. Mark it `async throws` and return a `sending` value.
+6. **Add undo registration.** With [`FileDocument`](filedocument.md), SwiftUI manages undo automatically through value semantics and [`Binding`](https://developer.apple.comhttps://developer.apple.com/documentation/swiftui/binding). With the [`Document`](document.md) protocol, you register undo actions yourself using an [`UndoManager`](https://developer.apple.comhttps://developer.apple.com/documentation/foundation/undomanager). The undo manager from the environment in your content view is already connected to the document.
+7. **Update your [`DocumentGroup`](documentgroup.md) initializer.** Replace `DocumentGroup(newDocument:)` with the closure-based initializer that receives [`URLDocumentConfiguration`](urldocumentconfiguration.md) and [`DocumentCreationContext`](documentcreationcontext.md).
 8. **Update your content view.** Replace `@Binding var document: MyDocument` with a direct reference to your observable class, and use [`@Bindable`](https://developer.apple.comhttps://developer.apple.com/documentation/swiftui/bindable) for creating bindings.
 
 **ReferenceFileDocument**:
 
-1. **Mark your document [`@Observable`](https://developer.apple.comhttps://developer.apple.com/documentation/observation/observable).** The [`ReferenceFileDocument`](ReferenceFileDocument.md) protocol predates the Observation framework. Add the [`@Observable`](https://developer.apple.comhttps://developer.apple.com/documentation/observation/observable) macro and remove any [`ObservableObject`](https://developer.apple.comhttps://developer.apple.com/documentation/combine/observableobject) conformance and [`@Published`](https://developer.apple.comhttps://developer.apple.com/documentation/combine/published) property wrappers.
-2. **Separate reading logic into a [`DocumentReader`](DocumentReader.md).** For reading, use [`FileWrapperDocumentReader`](FileWrapperDocumentReader.md) and provide a closure that converts a [`FileWrapper`](https://developer.apple.comhttps://developer.apple.com/documentation/foundation/filewrapper) into a snapshot value.
-3. **Implement [`apply(snapshot:previous:)`](ReadableDocument/apply(snapshot:previous:).md).** Use this method to update your document’s properties when a new snapshot arrives from the reader.
-4. **Separate writing logic into a [`DocumentWriter`](DocumentWriter.md).** For writing, use [`FileWrapperDocumentWriter`](FileWrapperDocumentWriter.md) and provide a closure that converts a snapshot into a [`FileWrapper`](https://developer.apple.comhttps://developer.apple.com/documentation/foundation/filewrapper).
-5. **Implement [`snapshot(contentType:)`](WritableDocument/snapshot(contentType:).md).** Update the method to add `async throws` and `sending` to the return type to enable safe transfer across concurrency boundaries.
-6. **Update your [`DocumentGroup`](DocumentGroup.md) initializer.** Replace the type-based initializer with the closure-based one that receives [`URLDocumentConfiguration`](URLDocumentConfiguration.md) and [`DocumentCreationContext`](DocumentCreationContext.md).
+1. **Mark your document [`@Observable`](https://developer.apple.comhttps://developer.apple.com/documentation/observation/observable).** The [`ReferenceFileDocument`](referencefiledocument.md) protocol predates the Observation framework. Add the [`@Observable`](https://developer.apple.comhttps://developer.apple.com/documentation/observation/observable) macro and remove any [`ObservableObject`](https://developer.apple.comhttps://developer.apple.com/documentation/combine/observableobject) conformance and [`@Published`](https://developer.apple.comhttps://developer.apple.com/documentation/combine/published) property wrappers.
+2. **Separate reading logic into a [`DocumentReader`](documentreader.md).** For reading, use [`FileWrapperDocumentReader`](filewrapperdocumentreader.md) and provide a closure that converts a [`FileWrapper`](https://developer.apple.comhttps://developer.apple.com/documentation/foundation/filewrapper) into a snapshot value.
+3. **Implement [`apply(snapshot:previous:)`](readabledocument/apply(snapshot:previous:).md).** Use this method to update your document’s properties when a new snapshot arrives from the reader.
+4. **Separate writing logic into a [`DocumentWriter`](documentwriter.md).** For writing, use [`FileWrapperDocumentWriter`](filewrapperdocumentwriter.md) and provide a closure that converts a snapshot into a [`FileWrapper`](https://developer.apple.comhttps://developer.apple.com/documentation/foundation/filewrapper).
+5. **Implement [`snapshot(contentType:)`](writabledocument/snapshot(contenttype:).md).** Update the method to add `async throws` and `sending` to the return type to enable safe transfer across concurrency boundaries.
+6. **Update your [`DocumentGroup`](documentgroup.md) initializer.** Replace the type-based initializer with the closure-based one that receives [`URLDocumentConfiguration`](urldocumentconfiguration.md) and [`DocumentCreationContext`](documentcreationcontext.md).
 7. **Audit undo registration.** Undo registration is conceptually the same, but verify that your undo actions work correctly after the changes.
 
-If your existing document-based app uses [`FileDocument`](FileDocument.md) or [`ReferenceFileDocument`](ReferenceFileDocument.md), the following table shows how concepts map to the [`Document`](Document.md) protocol:
+If your existing document-based app uses [`FileDocument`](filedocument.md) or [`ReferenceFileDocument`](referencefiledocument.md), the following table shows how concepts map to the [`Document`](document.md) protocol:
 
 **FileDocument**:
 
 | Before | After |
 | --- | --- |
-| [`FileDocument`](FileDocument.md) | [`Document`](Document.md) |
+| [`FileDocument`](filedocument.md) | [`Document`](document.md) |
 | `struct` (value type) | [`@Observable`](https://developer.apple.comhttps://developer.apple.com/documentation/observation/observable) `final class` (reference type) |
-| [`init(configuration:)`](FileDocument/init(configuration:).md) | Separate [`DocumentReader`](DocumentReader.md) |
-| [`fileWrapper(configuration:)`](FileDocument/fileWrapper(configuration:).md) | Separate [`DocumentWriter`](DocumentWriter.md) |
-| Implicit snapshot (value semantics) | Explicit [`snapshot(contentType:)`](WritableDocument/snapshot(contentType:).md) method |
+| [`init(configuration:)`](filedocument/init(configuration:).md) | Separate [`DocumentReader`](documentreader.md) |
+| [`fileWrapper(configuration:)`](filedocument/filewrapper(configuration:).md) | Separate [`DocumentWriter`](documentwriter.md) |
+| Implicit snapshot (value semantics) | Explicit [`snapshot(contentType:)`](writabledocument/snapshot(contenttype:).md) method |
 | Automatic undo via [`Binding`](https://developer.apple.comhttps://developer.apple.com/documentation/swiftui/binding) | Manual undo registration with [`UndoManager`](https://developer.apple.comhttps://developer.apple.com/documentation/foundation/undomanager) |
-| `DocumentGroup(newDocument:)` | [`DocumentGroup`](DocumentGroup.md) initializer |
+| `DocumentGroup(newDocument:)` | [`DocumentGroup`](documentgroup.md) initializer |
 
 **ReferenceFileDocument**:
 
 | Before | After |
 | --- | --- |
-| [`ReferenceFileDocument`](ReferenceFileDocument.md) | [`Document`](Document.md) |
-| [`init(configuration:)`](ReferenceFileDocument/init(configuration:).md) | Separate [`DocumentReader`](DocumentReader.md) |
-| [`fileWrapper(snapshot:configuration:)`](ReferenceFileDocument/fileWrapper(snapshot:configuration:).md) | Separate [`DocumentWriter`](DocumentWriter.md) |
-| [`FileWrapper`](https://developer.apple.comhttps://developer.apple.com/documentation/foundation/filewrapper) only | [`FileWrapper`](https://developer.apple.comhttps://developer.apple.com/documentation/foundation/filewrapper) and URL access through [`DocumentReader`](DocumentReader.md) and [`DocumentWriter`](DocumentWriter.md) |
-| Single `Snapshot` type on [`ReferenceFileDocument`](ReferenceFileDocument.md) | Separate `Snapshot` types on [`DocumentWriter`](DocumentWriter.md) and [`DocumentReader`](DocumentReader.md) |
+| [`ReferenceFileDocument`](referencefiledocument.md) | [`Document`](document.md) |
+| [`init(configuration:)`](referencefiledocument/init(configuration:).md) | Separate [`DocumentReader`](documentreader.md) |
+| [`fileWrapper(snapshot:configuration:)`](referencefiledocument/filewrapper(snapshot:configuration:).md) | Separate [`DocumentWriter`](documentwriter.md) |
+| [`FileWrapper`](https://developer.apple.comhttps://developer.apple.com/documentation/foundation/filewrapper) only | [`FileWrapper`](https://developer.apple.comhttps://developer.apple.com/documentation/foundation/filewrapper) and URL access through [`DocumentReader`](documentreader.md) and [`DocumentWriter`](documentwriter.md) |
+| Single `Snapshot` type on [`ReferenceFileDocument`](referencefiledocument.md) | Separate `Snapshot` types on [`DocumentWriter`](documentwriter.md) and [`DocumentReader`](documentreader.md) |
 
-The following example shows a complete text document before and after migrating from [`FileDocument`](FileDocument.md):
+The following example shows a complete text document before and after migrating from [`FileDocument`](filedocument.md):
 
 **Before**:
 
@@ -173,9 +173,9 @@ struct TextDocumentView: View {
 }
 ```
 
-The key structural change is the shift from value to reference semantics. With [`FileDocument`](FileDocument.md), SwiftUI tracks mutations through the [`Binding`](https://developer.apple.comhttps://developer.apple.com/documentation/swiftui/binding) to the structure and manages undo automatically. With [`Document`](Document.md), you use [`@Observable`](https://developer.apple.comhttps://developer.apple.com/documentation/observation/observable) for change tracking and register undo actions explicitly — but gain async I/O, URL-based file access, and clear separation between state capture and serialization.
+The key structural change is the shift from value to reference semantics. With [`FileDocument`](filedocument.md), SwiftUI tracks mutations through the [`Binding`](https://developer.apple.comhttps://developer.apple.com/documentation/swiftui/binding) to the structure and manages undo automatically. With [`Document`](document.md), you use [`@Observable`](https://developer.apple.comhttps://developer.apple.com/documentation/observation/observable) for change tracking and register undo actions explicitly — but gain async I/O, URL-based file access, and clear separation between state capture and serialization.
 
-The following example shows a complete text document before and after migrating from [`ReferenceFileDocument`](ReferenceFileDocument.md):
+The following example shows a complete text document before and after migrating from [`ReferenceFileDocument`](referencefiledocument.md):
 
 **Before**:
 

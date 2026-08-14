@@ -14,7 +14,7 @@ Change the browser’s appearance by setting the [`browserUserInterfaceStyle`](u
 
 ##### Create Document Thumbnails or Icons
 
-The system automatically provides thumbnails or icons for supported document types. If your app uses a custom or third-party document type, you can create a Thumbnail extension for that type. For more information, see [`QLThumbnailProvider`](https://developer.apple.com/documentation/QuickLookThumbnailing/QLThumbnailProvider).
+The system automatically provides thumbnails or icons for supported document types. If your app uses a custom or third-party document type, you can create a Thumbnail extension for that type. For more information, see [`QLThumbnailProvider`](https://developer.apple.com/documentation/quicklookthumbnailing/qlthumbnailprovider).
 
 If you don’t provide a Thumbnail extension, the system can create a document icon based on your app icon. To enable automatic icon creation, go to the Project navigator, choose the target, click Info, and then do the following:
 
@@ -35,7 +35,7 @@ Your app’s icon only appears in the Files app or document browser when all of 
 
 The system automatically provides previews for supported document types. If your app uses a custom or third-party document type, you can create a Preview extension for that type.
 
-For more information, see [`Quick Look`](https://developer.apple.com/documentation/Quartz/quick-look).
+For more information, see [`Quick Look`](https://developer.apple.com/documentation/quartz/quick-look).
 
 ##### Modify the Browsers Behavior
 
@@ -47,9 +47,9 @@ You can control the following behaviors:
 
 ###### Set Allowed Document Types
 
-You set the list of allowed document types when you create the browser. Pass an array of Uniform Type Identifier strings to the [`UIDocumentBrowserViewController`](uidocumentbrowserviewcontroller.md) class’s [`init(forOpeningFilesWithContentTypes:)`](uidocumentbrowserviewcontroller/init(foropeningfileswithcontenttypes:).md) method. If you pass `nil`, the browser uses the document types specified by the [`CFBundleDocumentTypes`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/CFBundleDocumentTypes) key in the app’s `Info.plist` file.
+You set the list of allowed document types when you create the browser. Pass an array of Uniform Type Identifier strings to the [`UIDocumentBrowserViewController`](uidocumentbrowserviewcontroller.md) class’s [`init(forOpeningFilesWithContentTypes:)`](uidocumentbrowserviewcontroller/init(foropeningfileswithcontenttypes:).md) method. If you pass `nil`, the browser uses the document types specified by the [`CFBundleDocumentTypes`](https://developer.apple.com/documentation/bundleresources/information-property-list/cfbundledocumenttypes) key in the app’s `Info.plist` file.
 
-For detailed instructions on setting the [`CFBundleDocumentTypes`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/CFBundleDocumentTypes) key, see [`Set the supported document types`](setting-up-a-document-browser-app#Set-the-supported-document-types.md).
+For detailed instructions on setting the [`CFBundleDocumentTypes`](https://developer.apple.com/documentation/bundleresources/information-property-list/cfbundledocumenttypes) key, see [`Set the supported document types`](setting-up-a-document-browser-app#Set-the-supported-document-types.md).
 
 The following example programmatically creates a document browser for `.txt` files:
 
@@ -59,13 +59,13 @@ let browser = UIDocumentBrowserViewController(forOpeningFilesWithContentTypes: [
 
 ###### Enable Multiple Document Selection
 
-By default, users can select only one item at a time. To enable multiple document selection, set the document browser’s [`allowsPickingMultipleItems`](uidocumentbrowserviewcontroller/allowspickingmultipleitems.md) property to [`true`](https://developer.apple.com/documentation/Swift/true).
+By default, users can select only one item at a time. To enable multiple document selection, set the document browser’s [`allowsPickingMultipleItems`](uidocumentbrowserviewcontroller/allowspickingmultipleitems.md) property to [`true`](https://developer.apple.com/documentation/swift/true).
 
 ###### Enable New Document Creation
 
 To let users create new documents, you must do the following:
 
-- Set the browser’s [`allowsDocumentCreation`](uidocumentbrowserviewcontroller/allowsdocumentcreation.md) property to [`true`](https://developer.apple.com/documentation/Swift/true) (the default value).
+- Set the browser’s [`allowsDocumentCreation`](uidocumentbrowserviewcontroller/allowsdocumentcreation.md) property to [`true`](https://developer.apple.com/documentation/swift/true) (the default value).
 - Implement the [`UIDocumentBrowserViewControllerDelegate`](uidocumentbrowserviewcontrollerdelegate.md) object’s [`documentBrowser(_:didRequestDocumentCreationWithHandler:)`](uidocumentbrowserviewcontrollerdelegate/documentbrowser(_:didrequestdocumentcreationwithhandler:).md) method.
 
 After these steps are completed, the system automatically includes an Add button (+) in the document browser’s navigation bar.

@@ -49,7 +49,7 @@ TextField("TouchBar Demo", text: $placeholder)
 }
 ```
 
-![A view showing the configuration of the Touch Bar with required and](https://docs-assets.developer.apple.com/published/39aa265ad81c120e7f2f5130bfcb3d08/SwiftUI-touchBarItemPresence%402x.png)
+![A view showing the configuration of the Touch Bar with required and](/images/com.apple.SwiftUI/SwiftUI-touchBarItemPresence@2x.png)
 
 ## Parameters
 

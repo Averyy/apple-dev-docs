@@ -16,7 +16,7 @@ var automaticallyIdentifiesLanguages: Bool { get set }
 
 ## Parameters
 
-- `flag`: [`true`](https://developer.apple.com/documentation/Swift/true) if languages should be automatically identified, otherwise [`false`](https://developer.apple.com/documentation/Swift/false).
+- `flag`: [`true`](https://developer.apple.com/documentation/swift/true) if languages should be automatically identified, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
 
 ## See Also
 

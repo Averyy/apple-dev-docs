@@ -22,27 +22,27 @@ class MTKView
 
 #### Overview
 
-The [`MTKView`](mtkview.md) class provides a default implementation of a Metal-aware view that you can use to render graphics using Metal and display them onscreen. When asked, the view provides a [`MTLRenderPassDescriptor`](https://developer.apple.com/documentation/Metal/MTLRenderPassDescriptor) object that points at a texture for you to render new contents into. Optionally, an [`MTKView`](mtkview.md) can create depth and stencil textures for you and any intermediate textures needed for antialiasing. The view uses a [`CAMetalLayer`](https://developer.apple.com/documentation/QuartzCore/CAMetalLayer) to manage the Metal drawable objects.
+The [`MTKView`](mtkview.md) class provides a default implementation of a Metal-aware view that you can use to render graphics using Metal and display them onscreen. When asked, the view provides a [`MTLRenderPassDescriptor`](https://developer.apple.com/documentation/metal/mtlrenderpassdescriptor) object that points at a texture for you to render new contents into. Optionally, an [`MTKView`](mtkview.md) can create depth and stencil textures for you and any intermediate textures needed for antialiasing. The view uses a [`CAMetalLayer`](https://developer.apple.com/documentation/quartzcore/cametallayer) to manage the Metal drawable objects.
 
-The view requires a [`MTLDevice`](https://developer.apple.com/documentation/Metal/MTLDevice) object to manage the Metal objects it creates for you. You must set the [`device`](mtkview/device.md) property and, optionally, modify the view’s drawable properties before drawing.
+The view requires a [`MTLDevice`](https://developer.apple.com/documentation/metal/mtldevice) object to manage the Metal objects it creates for you. You must set the [`device`](mtkview/device.md) property and, optionally, modify the view’s drawable properties before drawing.
 
 ##### Configuring the Drawing Behavior
 
 The MTKView class supports three drawing modes:
 
-- Timed updates: The view redraws its contents based on an internal timer. In this case, which is the default behavior, both [`isPaused`](mtkview/ispaused.md) and [`enableSetNeedsDisplay`](mtkview/enablesetneedsdisplay.md) are set to [`false`](https://developer.apple.com/documentation/Swift/false). Use this mode for games and other animated content that’s regularly updated.
-- Draw notifications: The view redraws itself when something invalidates its contents, usually because of a call to [`setNeedsDisplay()`](https://developer.apple.com/documentation/UIKit/UIView/setNeedsDisplay()) or some other view-related behavior. In this case, set [`isPaused`](mtkview/ispaused.md) and [`enableSetNeedsDisplay`](mtkview/enablesetneedsdisplay.md) to [`true`](https://developer.apple.com/documentation/Swift/true). Use this mode for apps with a more traditional workflow, where updates happen when data changes, but not on a regular timed interval.
-- Explicit drawing: The view redraws its contents only when you explicitly call the [`draw()`](mtkview/draw().md) method. In this case, set [`isPaused`](mtkview/ispaused.md) to [`true`](https://developer.apple.com/documentation/Swift/true) and [`enableSetNeedsDisplay`](mtkview/enablesetneedsdisplay.md) to [`false`](https://developer.apple.com/documentation/Swift/false). Use this mode to create your own custom workflow.
+- Timed updates: The view redraws its contents based on an internal timer. In this case, which is the default behavior, both [`isPaused`](mtkview/ispaused.md) and [`enableSetNeedsDisplay`](mtkview/enablesetneedsdisplay.md) are set to [`false`](https://developer.apple.com/documentation/swift/false). Use this mode for games and other animated content that’s regularly updated.
+- Draw notifications: The view redraws itself when something invalidates its contents, usually because of a call to [`setNeedsDisplay()`](https://developer.apple.com/documentation/uikit/uiview/setneedsdisplay()) or some other view-related behavior. In this case, set [`isPaused`](mtkview/ispaused.md) and [`enableSetNeedsDisplay`](mtkview/enablesetneedsdisplay.md) to [`true`](https://developer.apple.com/documentation/swift/true). Use this mode for apps with a more traditional workflow, where updates happen when data changes, but not on a regular timed interval.
+- Explicit drawing: The view redraws its contents only when you explicitly call the [`draw()`](mtkview/draw().md) method. In this case, set [`isPaused`](mtkview/ispaused.md) to [`true`](https://developer.apple.com/documentation/swift/true) and [`enableSetNeedsDisplay`](mtkview/enablesetneedsdisplay.md) to [`false`](https://developer.apple.com/documentation/swift/false). Use this mode to create your own custom workflow.
 
 ##### Drawing the Views Contents
 
-Regardless of drawing mode, when the view needs to update its contents, it calls the [`draw(_:)`](https://developer.apple.com/documentation/AppKit/NSView/draw(_:)) method when that method has been overridden by a subclass, or [`draw(in:)`](mtkviewdelegate/draw(in:).md) on the view’s delegate if the subclass doesn’t override it. You should either subclass [`MTKView`](mtkview.md) or provide a delegate, but not both.
+Regardless of drawing mode, when the view needs to update its contents, it calls the [`draw(_:)`](https://developer.apple.com/documentation/appkit/nsview/draw(_:)) method when that method has been overridden by a subclass, or [`draw(in:)`](mtkviewdelegate/draw(in:).md) on the view’s delegate if the subclass doesn’t override it. You should either subclass [`MTKView`](mtkview.md) or provide a delegate, but not both.
 
 In your drawing method, you obtain a render pass descriptor from the view, render into it, and then present the associated drawable.
 
 ##### Obtaining a Drawable From a Metalkit View
 
-Each [`MTKView`](mtkview.md) is backed by a [`CAMetalLayer`](https://developer.apple.com/documentation/QuartzCore/CAMetalLayer). In your renderer, implement the [`MTKViewDelegate`](mtkviewdelegate.md) protocol to interact with a MetalKit view. Call the MetalKit view’s [`currentRenderPassDescriptor`](mtkview/currentrenderpassdescriptor.md) property to obtain a render pass descriptor configured for the current frame:
+Each [`MTKView`](mtkview.md) is backed by a [`CAMetalLayer`](https://developer.apple.com/documentation/quartzcore/cametallayer). In your renderer, implement the [`MTKViewDelegate`](mtkviewdelegate.md) protocol to interact with a MetalKit view. Call the MetalKit view’s [`currentRenderPassDescriptor`](mtkview/currentrenderpassdescriptor.md) property to obtain a render pass descriptor configured for the current frame:
 
 **Swift**:
 
@@ -63,13 +63,13 @@ if let onscreenDescriptor = view.currentRenderPassDescriptor
 MTLRenderPassDescriptor* onscreenDescriptor = view.currentRenderPassDescriptor;
 ```
 
-When you read this property, Core Animation implicitly obtains a drawable for the current frame and stores it in the [`currentDrawable`](mtkview/currentdrawable.md) property. It then configures a render pass descriptor to draw into that drawable, including any depth, stencil, and antialiasing textures as necessary. The view configures this render pass using the default store and load actions. You can adjust the descriptor further before using it to create a [`MTLRenderCommandEncoder`](https://developer.apple.com/documentation/Metal/MTLRenderCommandEncoder).
+When you read this property, Core Animation implicitly obtains a drawable for the current frame and stores it in the [`currentDrawable`](mtkview/currentdrawable.md) property. It then configures a render pass descriptor to draw into that drawable, including any depth, stencil, and antialiasing textures as necessary. The view configures this render pass using the default store and load actions. You can adjust the descriptor further before using it to create a [`MTLRenderCommandEncoder`](https://developer.apple.com/documentation/metal/mtlrendercommandencoder).
 
 Obtain drawables as late as possible; preferably, immediately before encoding your onscreen render pass.
 
 ##### Registering the Drawables Presentation
 
-After rendering the contents, you must present the drawable to update the view’s contents. The most convenient way to present the content is to call the [`present(_:)`](https://developer.apple.com/documentation/Metal/MTLCommandBuffer/present(_:)) method on the command buffer. Then, call the [`commit()`](https://developer.apple.com/documentation/Metal/MTLCommandBuffer/commit()) method to submit the command buffer to a GPU:
+After rendering the contents, you must present the drawable to update the view’s contents. The most convenient way to present the content is to call the [`present(_:)`](https://developer.apple.com/documentation/metal/mtlcommandbuffer/present(_:)) method on the command buffer. Then, call the [`commit()`](https://developer.apple.com/documentation/metal/mtlcommandbuffer/commit()) method to submit the command buffer to a GPU:
 
 **Swift**:
 
@@ -120,7 +120,7 @@ if(onscreenDescriptor != nil) {
 
 When a command queue schedules a command buffer for execution, the drawable tracks all render or write requests on itself in that command buffer. The operating system doesn’t present the drawable onscreen until the commands have finished executing. By asking the command buffer to present the drawable, you guarantee that presentation happens after the command queue has scheduled this command buffer. Don’t wait for the command buffer to finish executing before registering the drawable’s presentation.
 
-> 💡 **Tip**:  For better performance, only retrieve the render pass descriptor when you’re ready to render the contents, and hold onto it and the related drawable object as little as possible. Release it as soon as you finish with it. For more information, see [`CAMetalLayer`](https://developer.apple.com/documentation/QuartzCore/CAMetalLayer#Keeping-References-to-Drawables).
+> 💡 **Tip**:  For better performance, only retrieve the render pass descriptor when you’re ready to render the contents, and hold onto it and the related drawable object as little as possible. Release it as soon as you finish with it. For more information, see [`CAMetalLayer`](https://developer.apple.com/documentation/quartzcore/cametallayer).
 
 ## Topics
 
@@ -183,7 +183,7 @@ When a command queue schedules a command buffer for execution, the drawable trac
 - [var isPaused: Bool](mtkview/ispaused.md)
   A Boolean value that indicates whether the draw loop is paused.
 - [var enableSetNeedsDisplay: Bool](mtkview/enablesetneedsdisplay.md)
-  A Boolean value that indicates whether the view responds to [`setNeedsDisplay()`](https://developer.apple.com/documentation/UIKit/UIView/setNeedsDisplay()).
+  A Boolean value that indicates whether the view responds to [`setNeedsDisplay()`](https://developer.apple.com/documentation/uikit/uiview/setneedsdisplay()).
 - [func draw()](mtkview/draw.md)
   Redraws the view’s contents immediately.
 - [var presentsWithTransaction: Bool](mtkview/presentswithtransaction.md)
@@ -198,44 +198,44 @@ When a command queue schedules a command buffer for execution, the drawable trac
 ## Relationships
 
 ### Inherits From
-- [NSView](../AppKit/NSView.md)
-- [UIView](../UIKit/UIView.md)
+- [NSView](../appkit/nsview.md)
+- [UIView](../uikit/uiview.md)
 ### Conforms To
-- [CALayerDelegate](../QuartzCore/CALayerDelegate.md)
-- [CLBodyIdentifiable](../CoreLocation/CLBodyIdentifiable.md)
-- [CMBodyIdentifiable](../CoreMotion/CMBodyIdentifiable.md)
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSAccessibilityElementProtocol](../AppKit/NSAccessibilityElementProtocol.md)
-- [NSAccessibilityProtocol](../AppKit/NSAccessibilityProtocol.md)
-- [NSAnimatablePropertyContainer](../AppKit/NSAnimatablePropertyContainer.md)
-- [NSAppearanceCustomization](../AppKit/NSAppearanceCustomization.md)
-- [NSCoding](../Foundation/NSCoding.md)
-- [NSDraggingDestination](../AppKit/NSDraggingDestination.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [NSStandardKeyBindingResponding](../AppKit/NSStandardKeyBindingResponding.md)
-- [NSTouchBarProvider](../AppKit/NSTouchBarProvider.md)
-- [NSUserActivityRestoring](../AppKit/NSUserActivityRestoring.md)
-- [NSUserInterfaceItemIdentification](../AppKit/NSUserInterfaceItemIdentification.md)
-- [UIAccessibilityIdentification](../UIKit/UIAccessibilityIdentification.md)
-- [UIActivityItemsConfigurationProviding](../UIKit/UIActivityItemsConfigurationProviding.md)
-- [UIAppearance](../UIKit/UIAppearance.md)
-- [UIAppearanceContainer](../UIKit/UIAppearanceContainer.md)
-- [UICoordinateSpace](../UIKit/UICoordinateSpace.md)
-- [UIDynamicItem](../UIKit/UIDynamicItem.md)
-- [UIFocusEnvironment](../UIKit/UIFocusEnvironment.md)
-- [UIFocusItem](../UIKit/UIFocusItem.md)
-- [UIFocusItemContainer](../UIKit/UIFocusItemContainer.md)
-- [UILargeContentViewerItem](../UIKit/UILargeContentViewerItem.md)
-- [UIPasteConfigurationSupporting](../UIKit/UIPasteConfigurationSupporting.md)
-- [UIPopoverPresentationControllerSourceItem](../UIKit/UIPopoverPresentationControllerSourceItem.md)
-- [UIResponderStandardEditActions](../UIKit/UIResponderStandardEditActions.md)
-- [UITraitChangeObservable](../UIKit/UITraitChangeObservable-67e94.md)
-- [UITraitEnvironment](../UIKit/UITraitEnvironment.md)
-- [UIUserActivityRestoring](../UIKit/UIUserActivityRestoring.md)
+- [CALayerDelegate](../quartzcore/calayerdelegate.md)
+- [CLBodyIdentifiable](../corelocation/clbodyidentifiable.md)
+- [CMBodyIdentifiable](../coremotion/cmbodyidentifiable.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSAccessibilityElementProtocol](../appkit/nsaccessibilityelementprotocol.md)
+- [NSAccessibilityProtocol](../appkit/nsaccessibilityprotocol.md)
+- [NSAnimatablePropertyContainer](../appkit/nsanimatablepropertycontainer.md)
+- [NSAppearanceCustomization](../appkit/nsappearancecustomization.md)
+- [NSCoding](../foundation/nscoding.md)
+- [NSDraggingDestination](../appkit/nsdraggingdestination.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSStandardKeyBindingResponding](../appkit/nsstandardkeybindingresponding.md)
+- [NSTouchBarProvider](../appkit/nstouchbarprovider.md)
+- [NSUserActivityRestoring](../appkit/nsuseractivityrestoring.md)
+- [NSUserInterfaceItemIdentification](../appkit/nsuserinterfaceitemidentification.md)
+- [UIAccessibilityIdentification](../uikit/uiaccessibilityidentification.md)
+- [UIActivityItemsConfigurationProviding](../uikit/uiactivityitemsconfigurationproviding.md)
+- [UIAppearance](../uikit/uiappearance.md)
+- [UIAppearanceContainer](../uikit/uiappearancecontainer.md)
+- [UICoordinateSpace](../uikit/uicoordinatespace.md)
+- [UIDynamicItem](../uikit/uidynamicitem.md)
+- [UIFocusEnvironment](../uikit/uifocusenvironment.md)
+- [UIFocusItem](../uikit/uifocusitem.md)
+- [UIFocusItemContainer](../uikit/uifocusitemcontainer.md)
+- [UILargeContentViewerItem](../uikit/uilargecontentvieweritem.md)
+- [UIPasteConfigurationSupporting](../uikit/uipasteconfigurationsupporting.md)
+- [UIPopoverPresentationControllerSourceItem](../uikit/uipopoverpresentationcontrollersourceitem.md)
+- [UIResponderStandardEditActions](../uikit/uiresponderstandardeditactions.md)
+- [UITraitChangeObservable](../uikit/uitraitchangeobservable-67e94.md)
+- [UITraitEnvironment](../uikit/uitraitenvironment.md)
+- [UIUserActivityRestoring](../uikit/uiuseractivityrestoring.md)
 
 ## See Also
 

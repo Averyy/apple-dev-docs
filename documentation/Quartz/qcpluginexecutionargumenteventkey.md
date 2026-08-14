@@ -16,7 +16,7 @@ let QCPlugInExecutionArgumentEventKey: String
 
 #### Discussion
 
-The current [`NSEvent`](https://developer.apple.com/documentation/AppKit/NSEvent) if available.
+The current [`NSEvent`](https://developer.apple.com/documentation/appkit/nsevent) if available.
 
 ## See Also
 

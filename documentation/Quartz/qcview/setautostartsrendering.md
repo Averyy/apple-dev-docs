@@ -16,7 +16,7 @@ func setAutostartsRendering(_ flag: Bool)
 
 ## Parameters
 
-- `flag`: Pass [`true`](https://developer.apple.com/documentation/Swift/true) to enable autostart mode; [`false`](https://developer.apple.com/documentation/Swift/false) otherwise.
+- `flag`: Pass [`true`](https://developer.apple.com/documentation/swift/true) to enable autostart mode; [`false`](https://developer.apple.com/documentation/swift/false) otherwise.
 
 ## See Also
 

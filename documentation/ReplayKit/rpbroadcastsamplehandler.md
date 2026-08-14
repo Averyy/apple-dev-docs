@@ -21,7 +21,7 @@ class RPBroadcastSampleHandler
 
 #### Overview
 
-To handle [`CMSampleBuffer`](https://developer.apple.com/documentation/CoreMedia/CMSampleBuffer) objects as captured by ReplayKit, you subclass `RPBroadcastSampleHandler`. You enable this mode of handling by setting `RPBroadcastProcessMode` in the extension’s `Info.plist` file to `RPBroadcastProcessModeSampleBuffer`.
+To handle [`CMSampleBuffer`](https://developer.apple.com/documentation/coremedia/cmsamplebuffer) objects as captured by ReplayKit, you subclass `RPBroadcastSampleHandler`. You enable this mode of handling by setting `RPBroadcastProcessMode` in the extension’s `Info.plist` file to `RPBroadcastProcessModeSampleBuffer`.
 
 In your subclass, implement the [`processSampleBuffer(_:with:)`](rpbroadcastsamplehandler/processsamplebuffer(_:with:).md) method to handle video and audio buffers, as well as the [`broadcastStarted(withSetupInfo:)`](rpbroadcastsamplehandler/broadcaststarted(withsetupinfo:).md), [`broadcastFinished()`](rpbroadcastsamplehandler/broadcastfinished().md), [`broadcastPaused()`](rpbroadcastsamplehandler/broadcastpaused().md), and [`broadcastResumed()`](rpbroadcastsamplehandler/broadcastresumed().md) methods to handle starting and stopping the broadcast.
 
@@ -54,13 +54,13 @@ ReplayKit invokes methods in your `RPBroadcastSampleHandler` subclass in a seria
 ### Inherits From
 - [RPBroadcastHandler](rpbroadcasthandler.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSExtensionRequestHandling](../Foundation/NSExtensionRequestHandling.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSExtensionRequestHandling](../foundation/nsextensionrequesthandling.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

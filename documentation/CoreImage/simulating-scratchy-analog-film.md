@@ -8,7 +8,7 @@ Degrade the quality of an image to make it look like dated, analog film.
 
 The [`sepiaTone()`](cifilter-swift.class/sepiatone().md) filter changes the tint of an image to a reddish-brownish hue resembling old analog photographs. You can enhance the effect by applying random specks and scratches.
 
-![Compositing scratchy analog film by compositing results from CIFilter objects](https://docs-assets.developer.apple.com/published/dc7ad8bd835b76a7a4439a1d5f7f95dd/media-2959650%402x.png)
+![Compositing scratchy analog film by compositing results from CIFilter objects](/images/com.apple.coreimage/media-2959650@2x.png)
 
 The following steps leverage built-in Core Image filters to tint and texture an image to look as if it were analog film:
 
@@ -32,7 +32,7 @@ CIImage *sepiaCIImage = sepiaFilter.outputImage;
 
 You can use the output of the [`randomGenerator()`](cifilter-swift.class/randomgenerator().md) filter to generate images containing random noise. Even though the noise pattern isn’t customizable in size, you can extend and crop it to fit the image.
 
-> **Note**:  The image output from [`randomGenerator()`](cifilter-swift.class/randomgenerator().md) is always the same; even if you reseed your random number generator, the image output from this filter is always the same 512x512 pattern. However, it’s suitable for giving the appearance of randomness. For truly random noise generation, see [`GameplayKit`](https://developer.apple.com/documentation/GameplayKit).
+> **Note**:  The image output from [`randomGenerator()`](cifilter-swift.class/randomgenerator().md) is always the same; even if you reseed your random number generator, the image output from this filter is always the same 512x512 pattern. However, it’s suitable for giving the appearance of randomness. For truly random noise generation, see [`GameplayKit`](https://developer.apple.com/documentation/gameplaykit).
 
 The filter takes no inputs.
 
@@ -59,7 +59,7 @@ CIImage *whiteSpecks = whiteningFilter.outputImage;
 
 The `whiteSpecks` resulting from this filter have the appearance of spotty grain when viewed as an image.
 
-![Image of white dots on a transaprent background, used to simulate grain on an old photo](https://docs-assets.developer.apple.com/published/ff51df9843bef2a67a612e62a804220c/media-2960179%402x.png)
+![Image of white dots on a transaprent background, used to simulate grain on an old photo](/images/com.apple.coreimage/media-2960179@2x.png)
 
 Create the grainy image by compositing the whitened noise as input over the sepia-toned source image using the [`sourceOverCompositing()`](cifilter-swift.class/sourceovercompositing().md) filter.
 
@@ -74,7 +74,7 @@ CIImage *speckledImage = speckCompositor.outputImage;
 
 The process for applying random-looking scratches is the same as the technique used in the white grain: color the output of the [`randomGenerator()`](cifilter-swift.class/randomgenerator().md) filter.
 
-To make the speckle resemble scratches, scale the random noise output vertically by applying a scaling [`CGAffineTransform`](https://developer.apple.com/documentation/CoreFoundation/CGAffineTransform).
+To make the speckle resemble scratches, scale the random noise output vertically by applying a scaling [`CGAffineTransform`](https://developer.apple.com/documentation/corefoundation/cgaffinetransform).
 
 ```swift
 CGAffineTransform verticalScale = CGAffineTransformMakeScale(1.5, 25);
@@ -106,7 +106,7 @@ CIImage *darkScratches = grayscaleFilter.outputImage;
 
 The grayscale filter produces random lines that resemble dark scratches.
 
-![Image of black lines on a white background, used to simulate scratches on an old photo](https://docs-assets.developer.apple.com/published/2871bb09f511273da58c7ccd382417c8/media-2960180%402x.png)
+![Image of black lines on a white background, used to simulate scratches on an old photo](/images/com.apple.coreimage/media-2960180@2x.png)
 
 ##### Composite the Specks and Scratches to the Sepia Image
 
@@ -127,7 +127,7 @@ CIImage* finalImage = [oldFilmImage imageByCroppingToRect:inputImage.extent];
 
 The cropped image represents the final result: a sepia-toned image with simulated grain and scratches composited to give it an analog film appearance.
 
-![Sepia-toned image of fruit augmented with speckle grain and dark scratches.](https://docs-assets.developer.apple.com/published/2870c1b20386d99816f59eae94ee9bfb/media-2959656%402x.png)
+![Sepia-toned image of fruit augmented with speckle grain and dark scratches.](/images/com.apple.coreimage/media-2959656@2x.png)
 
 ## See Also
 

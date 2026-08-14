@@ -17,7 +17,7 @@ class WKInterfaceController
 
 #### Overview
 
-An interface controller serves the same purpose as a [`UIViewController`](https://developer.apple.com/documentation/UIKit/UIViewController) object in a UIKit app, except that it doesn’t manage any actual views. It runs in your WatchKit extension and remotely manages the behavior associated with an interface controller in your Watch app’s storyboard file. You subclass [`WKInterfaceController`](wkinterfacecontroller.md) and use its methods to configure the elements of your storyboard scene and to respond to interactions with those elements.
+An interface controller serves the same purpose as a [`UIViewController`](https://developer.apple.com/documentation/uikit/uiviewcontroller) object in a UIKit app, except that it doesn’t manage any actual views. It runs in your WatchKit extension and remotely manages the behavior associated with an interface controller in your Watch app’s storyboard file. You subclass [`WKInterfaceController`](wkinterfacecontroller.md) and use its methods to configure the elements of your storyboard scene and to respond to interactions with those elements.
 
 Your interface controller code runs locally on the user’s Apple Watch but is separate from the interface that it manages. When you change the value of an interface object in your code, the system forwards the needed information to your Watch app, which makes the corresponding changes onscreen.
 
@@ -51,7 +51,7 @@ Xcode lets you configure information about your interface controller in your sto
 | Full Screen | A Boolean value that determines whether SpriteKit or SceneKit content can use the full screen. The system hides the status bar but displays the time in the upper-right corner with a gradient behind it, making the time clearly visible against the scene. |
 | Fixed to screen edges | A Boolean value that indicates whether the contents ignore the safe area and minimum layout margins. When you enable this option, the system turns off scrolling, and allows built-in controls and containers to fill content to the screen edges. |
 | Background | The background image displayed behind the scene’s content. The image specified in your storyboard scrolls with your interface controller’s content. |
-| Mode | The content mode for the background image. This mode defines how the background image scales or fills the screen and behaves in the same way as the constants for the [`UIView.ContentMode`](https://developer.apple.com/documentation/UIKit/UIView/ContentMode-swift.enum) type. |
+| Mode | The content mode for the background image. This mode defines how the background image scales or fills the screen and behaves in the same way as the constants for the [`UIView.ContentMode`](https://developer.apple.com/documentation/uikit/uiview/contentmode-swift.enum) type. |
 | Animate | A Boolean value indicating whether an animated background image starts running its animation automatically after being loaded. Set this option to `Yes` if you want the animation to start automatically; set it to `No` if you prefer to start the animation programmatically. |
 | Color | The background color to be displayed behind the scene’s content. |
 | Insets | The amount of space (in points) to insert between the edges of the interface controller and its content. Select Custom to specify different values for the top, bottom, left, and right edges. |
@@ -223,17 +223,17 @@ Override any methods of the class needed to configure your interface and get it 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Inherited By
 - [WKUserNotificationInterfaceController](wkusernotificationinterfacecontroller.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [Sendable](../Swift/Sendable.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [Sendable](../swift/sendable.md)
 
 ## See Also
 

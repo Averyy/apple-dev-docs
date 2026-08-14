@@ -17,7 +17,7 @@ Throughout a collaborative session, ARKit periodically provides data for you to 
 
 This sample app allows multiple users to view a common horizontal surface and place blocks on top of the surface, with a unique color for each user.
 
-![Screenshot of virtual blocks placed in the environment by two different users.](https://docs-assets.developer.apple.com/published/1d8d887a077a99a0f6110d5274285f26/collaboration-annotated.jpg)
+![Screenshot of virtual blocks placed in the environment by two different users.](/images/com.apple.arkit/collaboration-annotated.jpg)
 
 Although this sample draws its graphics using RealityKit, it doesn’t use RealityKit’s mechanism for over-the-network entity synchronization. Instead, it uses RealityKit as a renderer only as necessary to demonstrate ARKit’s collaborative session.
 
@@ -42,7 +42,7 @@ arView.session.run(configuration!)
 
 #### Gather Collaboration Data
 
-When collaboration is enabled, ARKit periodically invokes [`session(_:didOutputCollaborationData:)`](arsessionobserver/session(_:didoutputcollaborationdata:).md), which provides collaboration data that you can share with nearby users. You are responsible for sending collaboration data over the network, including choosing the network framework and implementing the code. The data you send is a serialized version of the [`ARSession.CollaborationData`](arsession/collaborationdata.md) object provided by your session. Before you send collaboration data over the network, first serialize it using [[`NSKeyedArchiver`](https://developer.apple.com/documentation/Foundation/NSKeyedArchiver).
+When collaboration is enabled, ARKit periodically invokes [`session(_:didOutputCollaborationData:)`](arsessionobserver/session(_:didoutputcollaborationdata:).md), which provides collaboration data that you can share with nearby users. You are responsible for sending collaboration data over the network, including choosing the network framework and implementing the code. The data you send is a serialized version of the [`ARSession.CollaborationData`](arsession/collaborationdata.md) object provided by your session. Before you send collaboration data over the network, first serialize it using [[`NSKeyedArchiver`](https://developer.apple.com/documentation/foundation/nskeyedarchiver).
 
 ```swift
 func session(_ session: ARSession, didOutputCollaborationData data: ARSession.CollaborationData) {
@@ -63,7 +63,7 @@ It’s safe to ignore the collaboration data if no peers have joined the session
 
 #### Send Collaboration Data to Others
 
-You choose the network protocol with which to share collaboration data. This sample app sends collaboration data using [`Multipeer Connectivity`](https://developer.apple.com/documentation/MultipeerConnectivity).
+You choose the network protocol with which to share collaboration data. This sample app sends collaboration data using [`Multipeer Connectivity`](https://developer.apple.com/documentation/multipeerconnectivity).
 
 ```swift
 func sendToPeers(_ data: Data, reliably: Bool, peers: [MCPeerID]) {
@@ -134,7 +134,7 @@ arView.scene.addAnchor(anchorEntity)
 
 The multicolored coordinate system shown in the following illustration represents the real-world pose of a peer user. ARKit periodically refreshes participant anchors to reflect any updates in the real-world location and orientation of the user it tracks. This process is a part of the collaboration data your app shares and uses to update its session.
 
-![Screenshot of virtual content that represents the real-world position and pose of a peer user.](https://docs-assets.developer.apple.com/published/9bfa6bd384ecf724484baaacfa880049/participant-annotated.jpg)
+![Screenshot of virtual content that represents the real-world position and pose of a peer user.](/images/com.apple.arkit/participant-annotated.jpg)
 
 #### Check an Anchors Owner
 
@@ -183,7 +183,7 @@ anchorEntity.addChild(coloredCube)
 arView.scene.addAnchor(anchorEntity)
 ```
 
-![Screenshot of virtual content placed by the user.](https://docs-assets.developer.apple.com/published/c612eda3b645c5bc727798a83d8af603/place-a-block.jpg)
+![Screenshot of virtual content placed by the user.](/images/com.apple.arkit/place-a-block.jpg)
 
 The sample app uses common ARKit techniques to place virtual objects. For more information about mapping screen touches to real-world locations, see [`Detecting Images in an AR Experience`](detecting-images-in-an-ar-experience.md).
 

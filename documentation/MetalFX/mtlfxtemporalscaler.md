@@ -32,7 +32,7 @@ Upscale a rendering by following these steps for every render pass:
 1. Set the temporal scaler’s `MTLFXTemporalScaler/colorTexture` property to the input texture.
 2. Set the scaler’s `MTLFXTemporalScaler/inputContentWidth` and `MTLFXTemporalScaler/inputContentHeight` properties.
 3. Set the scaler’s `MTLFXTemporalScaler/outputTexture` property to your destination texture.
-4. Encode the upscale commands to an [`MTLCommandBuffer`](https://developer.apple.com/documentation/Metal/MTLCommandBuffer) by calling the temporal scaler’s [`encode(commandBuffer:)`](mtlfxtemporalscaler/encode(commandbuffer:).md) method.
+4. Encode the upscale commands to an [`MTLCommandBuffer`](https://developer.apple.com/documentation/metal/mtlcommandbuffer) by calling the temporal scaler’s [`encode(commandBuffer:)`](mtlfxtemporalscaler/encode(commandbuffer:).md) method.
 
 ## Topics
 
@@ -45,7 +45,7 @@ Upscale a rendering by following these steps for every render pass:
 ### Inherits From
 - [MTLFXFrameInterpolatableScaler](mtlfxframeinterpolatablescaler.md)
 - [MTLFXTemporalScalerBase](mtlfxtemporalscalerbase.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

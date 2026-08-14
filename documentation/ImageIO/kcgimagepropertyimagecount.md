@@ -22,7 +22,7 @@ let kCGImagePropertyImageCount: CFString
 
 #### Discussion
 
-The value of this property is a [`CFNumber`](https://developer.apple.com/documentation/CoreFoundation/CFNumber).
+The value of this property is a [`CFNumber`](https://developer.apple.com/documentation/corefoundation/cfnumber).
 
 ## See Also
 

@@ -22,7 +22,7 @@ class SCNIKConstraint
 
 #### Overview
 
-![None](https://docs-assets.developer.apple.com/published/f14b291f2a571339e348a8f37f83105e/media-2929777%402x.png)
+![None](/images/com.apple.scenekit/media-2929777@2x.png)
 
 *Inverse kinematics (IK)* is an iterative process that finds positions for the joints connecting a chain of rigid bodies in order to move the body at the end of that chain as close as possible to a desired point in space. For example, a chain of bodies might model a robot arm, and the node at the end of the chain—called an *end effector*—might model the hand or tool at the end of the arm. To create IK-based behavior in a SceneKit app or game, follow these steps:
 
@@ -57,15 +57,15 @@ class SCNIKConstraint
 ### Inherits From
 - [SCNConstraint](scnconstraint.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCoding](../Foundation/NSCoding.md)
-- [NSCopying](../Foundation/NSCopying.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [NSSecureCoding](../Foundation/NSSecureCoding.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCoding](../foundation/nscoding.md)
+- [NSCopying](../foundation/nscopying.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSSecureCoding](../foundation/nssecurecoding.md)
 - [SCNAnimatable](scnanimatable.md)
 
 

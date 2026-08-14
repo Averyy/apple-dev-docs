@@ -21,7 +21,7 @@ class func supportsMetal4FX(_ device: any MTLDevice) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/Swift/true) if the device supports spatial scaling with Metal 4, [`false`](https://developer.apple.com/documentation/Swift/false) otherwise.
+[`true`](https://developer.apple.com/documentation/swift/true) if the device supports spatial scaling with Metal 4, [`false`](https://developer.apple.com/documentation/swift/false) otherwise.
 
 ## Parameters
 

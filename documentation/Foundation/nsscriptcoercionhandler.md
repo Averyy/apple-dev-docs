@@ -33,22 +33,22 @@ A shared instance of this class coerces (converts) object values to objects of a
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 
 - [NSComparisonMethods](nscomparisonmethods.md)
   A collection of default comparison methods useful for performing specifier tests.
-- [NSScriptingComparisonMethods](../ObjectiveC/nsscriptingcomparisonmethods.md)
+- [NSScriptingComparisonMethods](../objectivec/nsscriptingcomparisonmethods.md)
   A collection of methods useful for comparing script objects.
-- [NSScriptKeyValueCoding](../ObjectiveC/nsscriptkeyvaluecoding.md)
+- [NSScriptKeyValueCoding](../objectivec/nsscriptkeyvaluecoding.md)
   A collection of methods that provide additional capabilities for working with key-value coding.
 - [NSScriptObjectSpecifiers](nsscriptobjectspecifiers.md)
   A collection of methods providing additional object specifier functionality.

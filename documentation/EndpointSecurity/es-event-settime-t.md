@@ -33,8 +33,8 @@ Even if an Endpoint Security client responds to an [`ES_EVENT_TYPE_AUTH_SETTIME`
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../Swift/BitwiseCopyable.md)
-- [Sendable](../Swift/Sendable.md)
+- [BitwiseCopyable](../swift/bitwisecopyable.md)
+- [Sendable](../swift/sendable.md)
 
 
 ---

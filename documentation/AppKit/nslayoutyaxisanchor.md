@@ -49,7 +49,7 @@ For more information on using layout anchors, see [`NSLayoutAnchor`](nslayoutanc
   Returns a constraint that defines the minimum distance by which the current anchor is positioned below the specified anchor.
 - [func constraint(lessThanOrEqualToSystemSpacingBelow: NSLayoutYAxisAnchor, multiplier: CGFloat) -> NSLayoutConstraint](nslayoutyaxisanchor/constraint(lessthanorequaltosystemspacingbelow:multiplier:).md)
   Returns a constraint that defines the maximum distance by which the current anchor is positioned below the specified anchor.
-- [Creating self-sizing table view cells](../UIKit/creating-self-sizing-table-view-cells.md)
+- [Creating self-sizing table view cells](../uikit/creating-self-sizing-table-view-cells.md)
   Create table view cells that support Dynamic Type and use system spacing constraints to adjust the spacing surrounding text labels.
 ### Creating a layout dimension
 - [func anchorWithOffset(to: NSLayoutYAxisAnchor) -> NSLayoutDimension](nslayoutyaxisanchor/anchorwithoffset(to:).md)
@@ -60,16 +60,16 @@ For more information on using layout anchors, see [`NSLayoutAnchor`](nslayoutanc
 ### Inherits From
 - [NSLayoutAnchor](nslayoutanchor.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCoding](../Foundation/NSCoding.md)
-- [NSCopying](../Foundation/NSCopying.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCoding](../foundation/nscoding.md)
+- [NSCopying](../foundation/nscopying.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

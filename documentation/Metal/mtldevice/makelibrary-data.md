@@ -26,7 +26,7 @@ A new [`MTLLibrary`](mtllibrary.md) instance if the method completes successfull
 
 #### Discussion
 
-In Swift, you can also use the [`makeLibrary(data:)`](mtldevice/makelibrary(data:)-7khmh.md) default implementation, which has a [`DispatchData`](https://developer.apple.com/documentation/Dispatch/DispatchData) parameter.
+In Swift, you can also use the [`makeLibrary(data:)`](mtldevice/makelibrary(data:)-7khmh.md) default implementation, which has a [`DispatchData`](https://developer.apple.com/documentation/dispatch/dispatchdata) parameter.
 
 Use either method if your application manages its own archiving system for libraries — for example, if your app uses a single file that contains several libraries.
 

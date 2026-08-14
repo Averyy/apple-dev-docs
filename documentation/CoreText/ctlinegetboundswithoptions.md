@@ -22,7 +22,7 @@ func CTLineGetBoundsWithOptions(_ line: CTLine, _ options: CTLineBoundsOptions) 
 
 #### Return Value
 
-The bounds of the line as specified by the type and options, such that the coordinate origin is coincident with the line origin and the rect origin is at the bottom left. If the line is invalid, this function will return [`CGRectNull`](https://developer.apple.com/documentation/CoreGraphics/CGRectNull).
+The bounds of the line as specified by the type and options, such that the coordinate origin is coincident with the line origin and the rect origin is at the bottom left. If the line is invalid, this function will return [`CGRectNull`](https://developer.apple.com/documentation/coregraphics/cgrectnull).
 
 ## Parameters
 

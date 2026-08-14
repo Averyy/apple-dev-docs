@@ -24,11 +24,11 @@ Multiplies a mask to all channels of the input.
 
 Below is an example of a simple node graph that uses the Inside node to apply a mask to a brick texture:
 
-![None](https://docs-assets.developer.apple.com/published/ddd60aabdacdc1bd721a5ddb67b271c7/InsideGraph.png)
+![None](/images/ShaderGraph-Docs/InsideGraph.png)
 
 Below, the resulting texture applies to a cube.
 
-![None](https://docs-assets.developer.apple.com/published/2855885be1ac1bb941d84e14a9c96c1c/InsideMaterial3.png)
+![None](/images/ShaderGraph-Docs/InsideMaterial3.png)
 
 ## See Also
 

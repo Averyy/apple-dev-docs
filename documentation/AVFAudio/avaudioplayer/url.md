@@ -22,7 +22,7 @@ var url: URL? { get }
 
 #### Discussion
 
-This property is [`nil`](https://developer.apple.com/documentation/ObjectiveC/nil-227m0) if you don’t create the player with a URL.
+This property is [`nil`](https://developer.apple.com/documentation/objectivec/nil-227m0) if you don’t create the player with a URL.
 
 ## See Also
 

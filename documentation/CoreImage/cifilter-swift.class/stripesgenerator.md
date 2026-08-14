@@ -32,8 +32,8 @@ The stripes generator filter uses the following properties:
 - **`center`**: A [`CIVector`](civector.md) representing the center of the image.
 - **`color0`**: A [`CIColor`](cicolor.md) representing the stripes color.
 - **`color1`**: A [`CIColor`](cicolor.md) representing the background color.
-- **`width`**: A `float` representing the width of the lines as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
-- **`sharpness`**: A `float` representing the sharpness of the lines as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+- **`width`**: A `float` representing the width of the lines as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
+- **`sharpness`**: A `float` representing the sharpness of the lines as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
 
 The following code creates a filter that generates a black and white vertical striped image:
 
@@ -49,7 +49,7 @@ func stripes() -> CIImage {
 }
 ```
 
-![A series of vertical black and white lines repeating the entire image.](https://docs-assets.developer.apple.com/published/4f05a4eaa35ef6d0f46eb68ecbeabc38/media-3590971%402x.png)
+![A series of vertical black and white lines repeating the entire image.](/images/com.apple.coreimage/media-3590971@2x.png)
 
 ## See Also
 

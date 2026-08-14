@@ -8,7 +8,7 @@ Construct a digital pass for store loyalty and gift cards.
 
 Use store card passes for discount, gift, and store loyalty cards. Setting the store card pass style provides data that Wallet displays automatically, such as store points, rewards balance, terms and conditions, and other helpful information.
 
-![An image of a mock coffee shop store card with a strip image background.](https://docs-assets.developer.apple.com/published/b9ccc124ee517cb4ae3bbe7dab00ef3e/store-card%402x.png)
+![An image of a mock coffee shop store card with a strip image background.](/images/com.apple.walletpasses/store-card@2x.png)
 
 #### Create Your Pass Type Identifier
 
@@ -40,7 +40,7 @@ The following example shows a partial store card pass with top-level keys.
 
 The pass style controls how Wallet lays out the pass fields and which images it shows on someone’s device. The following image shows options for the layout and placement of fields for the store card pass style. Typically, your store identifies an account someone has with your company, which can be used to make payments or receive discounts. When the account carries a balance, show the current balance on the pass.
 
-![An illustration showing a store card pass layout option with combined secondary and auxiliary sections and a rectangular barcode.](https://docs-assets.developer.apple.com/published/d961d8a2137f4feb9fcfff957450a623/pass-fields-layout-store-card%402x.png)
+![An illustration showing a store card pass layout option with combined secondary and auxiliary sections and a rectangular barcode.](/images/com.apple.walletpasses/pass-fields-layout-store-card@2x.png)
 
 The pass style determines the maximum number of pass fields that can appear on the front of a pass. A store card pass can display logo and strip images and a barcode, and it can have up to four secondary and auxiliary fields, all displayed on one row. The text length in each pass field determines how many fields appear on the front of the pass. If the text is too long, Wallet won’t display all of it.
 
@@ -127,7 +127,7 @@ For design guidance about store cards, see Human Interface Guidelines > Wallet >
 
 If the pass doesn’t display and add to Wallet, check the logs for a description of what went wrong. If you’re using Simulator to debug, you can drag your `.pkpass` file into the Simulator, then use the Console app on your Mac to view the Simulator device logs.
 
-When testing on a device, errors are logged to the device’s console, which you can view from the Xcode organizer window. You can filter the logs by using your pass type ID or serial number to limit the device log output to a specific pass instance. See [`Acquiring crash reports and diagnostic logs`](https://developer.apple.com/documentation/Xcode/acquiring-crash-reports-and-diagnostic-logs#Access-device-console-logs) for information on accessing a device’s console log, as well as downloading and installing the Wallet profile.
+When testing on a device, errors are logged to the device’s console, which you can view from the Xcode organizer window. You can filter the logs by using your pass type ID or serial number to limit the device log output to a specific pass instance. See [`Acquiring crash reports and diagnostic logs`](https://developer.apple.com/documentation/xcode/acquiring-crash-reports-and-diagnostic-logs) for information on accessing a device’s console log, as well as downloading and installing the Wallet profile.
 
 Common errors include malformed JSON files, misspelled keys or values, pass type identifiers that don’t match your certificate, and signatures that omit the Apple Worldwide Developer Relations Intermediate Certificate. For more information on common issues with pass creation, see [`Common Problems`](building-a-pass#Common-Problems.md).
 

@@ -18,7 +18,7 @@ var rating: NSNumber? { get }
 
 #### Discussion
 
-This property is an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) that contains a value in the range of 0 to [`maximumRating`](cpinformationratingitem/maximumrating.md). The value is an increment of 0.5.
+This property is an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) that contains a value in the range of 0 to [`maximumRating`](cpinformationratingitem/maximumrating.md). The value is an increment of 0.5.
 
 ## See Also
 

@@ -32,7 +32,7 @@ Before calling this method:
 
 Use the instance only once; after you call this method, discard the instance.
 
-> **Note**: This method synchronizes changes committed in [`CATransaction`](https://developer.apple.com/documentation/QuartzCore/CATransaction) objects that affect the added views and layer hierarchies; it doesn’t commit the transactions. Call [`commit()`](https://developer.apple.com/documentation/QuartzCore/CATransaction/commit()) on each relevant transaction.
+> **Note**: This method synchronizes changes committed in [`CATransaction`](https://developer.apple.com/documentation/quartzcore/catransaction) objects that affect the added views and layer hierarchies; it doesn’t commit the transactions. Call [`commit()`](https://developer.apple.com/documentation/quartzcore/catransaction/commit()) on each relevant transaction.
 
 ## See Also
 

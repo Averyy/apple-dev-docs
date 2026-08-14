@@ -22,7 +22,7 @@ An entitlement that permits an app to receive critical alert notifications.
 
 #### Discussion
 
-If your app has this entitlement, then it can request [`criticalAlert`](https://developer.apple.com/documentation/UserNotifications/UNAuthorizationOptions/criticalAlert) authorization to receive push notifications that cause the system to play a sound even when the app is locked, muted, or a person uses Do Not Disturb focus. Your app can specify a custom sound and volume for critical alerts.
+If your app has this entitlement, then it can request [`criticalAlert`](https://developer.apple.com/documentation/usernotifications/unauthorizationoptions/criticalalert) authorization to receive push notifications that cause the system to play a sound even when the app is locked, muted, or a person uses Do Not Disturb focus. Your app can specify a custom sound and volume for critical alerts.
 
 To request this entitlement for your app, [`fill out the request form`](https://developer.apple.comhttps://developer.apple.com/contact/request/notifications-critical-alerts-entitlement/).
 

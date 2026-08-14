@@ -27,12 +27,12 @@ func accessibilityScroll(_ direction: UIAccessibilityScrollDirection) -> Bool
 
 Implement this method if a view in the view hierarchy supports a scroll by page action.
 
-- If the scrolling action succeeds for the specified direction, return [`YES`](yes.md) and post the [`pageScrolled`](https://developer.apple.com/documentation/UIKit/UIAccessibility/Notification/pageScrolled) notification.
+- If the scrolling action succeeds for the specified direction, return [`YES`](yes.md) and post the [`pageScrolled`](https://developer.apple.com/documentation/uikit/uiaccessibility/notification/pagescrolled) notification.
 - If the scrolling action fails, `accessibilityScroll:` is called on a parent view in the hierarchy.
 
 ## Parameters
 
-- `direction`: A constant that specifies the direction of the scrolling action. See [`UIAccessibilityScrollDirection`](https://developer.apple.com/documentation/UIKit/UIAccessibilityScrollDirection) for descriptions of valid constants.
+- `direction`: A constant that specifies the direction of the scrolling action. See [`UIAccessibilityScrollDirection`](https://developer.apple.com/documentation/uikit/uiaccessibilityscrolldirection) for descriptions of valid constants.
 
 ## See Also
 

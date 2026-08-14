@@ -16,7 +16,7 @@ let IKSlideshowScreen: String
 
 #### Discussion
 
-The associated value is an [`NSScreen`](https://developer.apple.com/documentation/AppKit/NSScreen) object. By default [`main`](https://developer.apple.com/documentation/AppKit/NSScreen/main) is used.
+The associated value is an [`NSScreen`](https://developer.apple.com/documentation/appkit/nsscreen) object. By default [`main`](https://developer.apple.com/documentation/appkit/nsscreen/main) is used.
 
 ## See Also
 

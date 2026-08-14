@@ -6,7 +6,7 @@ Render a portion of the node tree into a new texture.
 
 #### Overview
 
-You can create a texture from some portion of on-screen content with [`texture(from:)`](skview/texture(from:).md), or its variation, [`texture(from:crop:)`](skview/texture(from:crop:).md). Both of these functions are available for scenes rendered by [`SKView`](skview.md) or [`WKInterfaceSKScene`](https://developer.apple.com/documentation/WatchKit/WKInterfaceSKScene).
+You can create a texture from some portion of on-screen content with [`texture(from:)`](skview/texture(from:).md), or its variation, [`texture(from:crop:)`](skview/texture(from:crop:).md). Both of these functions are available for scenes rendered by [`SKView`](skview.md) or [`WKInterfaceSKScene`](https://developer.apple.com/documentation/watchkit/wkinterfaceskscene).
 
 There are a couple reasons you might want to do this, for example:
 

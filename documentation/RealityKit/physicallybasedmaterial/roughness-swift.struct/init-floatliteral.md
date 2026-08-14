@@ -23,7 +23,7 @@ init(floatLiteral value: Float)
 
 The `roughness` property represents how much the surface of the entity scatters light it reflects. A material with a high roughness has a matte appearance, while one with a low roughness has a shiny appearance.
 
-![An illustration showing three spheres with different amounts of](https://docs-assets.developer.apple.com/published/6dccdd9884a6e12444a9f61c265d8644/PhysicallyBasedMaterial-Roughness-swift-struct-init%28floatLiteral%3A%29-1%402x.png)
+![An illustration showing three spheres with different amounts of](/images/com.apple.RealityKit/PhysicallyBasedMaterial-Roughness-swift-struct-init(floatLiteral:)-1@2x.png)
 
 Use this initializer to create an object to specify the amount of roughness using a single value that applies to the entire material.
 

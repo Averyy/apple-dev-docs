@@ -31,7 +31,7 @@ func consumer() {
 
 ###### Solution
 
-Use [`Dispatch`](https://developer.apple.com/documentation/Dispatch) APIs to coordinate access to `message` across multiple threads.
+Use [`Dispatch`](https://developer.apple.com/documentation/dispatch) APIs to coordinate access to `message` across multiple threads.
 
 ## See Also
 

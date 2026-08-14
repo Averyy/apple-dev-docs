@@ -20,7 +20,7 @@ static let faceMetrics: SRSensor
 
 The [`sample`](srfetchresult/sample.md) type for this sensor is [`SRFaceMetrics`](srfacemetrics.md).
 
-You need to provide a reason to record face metrics by adding the [`SRSensorUsageFacialMetrics`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSSensorKitUsageDetail/SRSensorUsageFacialMetrics) dictionary to the [`NSSensorKitUsageDetail`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSSensorKitUsageDetail) key in the information property list.
+You need to provide a reason to record face metrics by adding the [`SRSensorUsageFacialMetrics`](https://developer.apple.com/documentation/bundleresources/information-property-list/nssensorkitusagedetail/srsensorusagefacialmetrics) dictionary to the [`NSSensorKitUsageDetail`](https://developer.apple.com/documentation/bundleresources/information-property-list/nssensorkitusagedetail) key in the information property list.
 
 ## See Also
 

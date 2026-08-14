@@ -15,7 +15,7 @@ Make gameplay more lively with AI generated dialog and encounters personalized t
 
 This sample code project demonstrates the Foundation Models framework and its ability to generate dynamic content for a game. Instead of using the same dialog script for customer encounters, the app dynamically generates dialog so that each time a player talks to a character, they can have a different conversation.
 
-![At the top-right of the image, a barista at the coffee shop is standing behind](https://docs-assets.developer.apple.com/published/3987b10dbf459c675bc37eae04fb2dfb/overview-game-content-view%402x.png)
+![At the top-right of the image, a barista at the coffee shop is standing behind](/images/com.apple.foundationmodels/overview-game-content-view@2x.png)
 
 The game combines several framework capabilities — like guided generation and tool calling — to create dynamic, personalized gameplay experiences. You interact with both scripted characters, like the head barista, and procedurally generated customers, each with unique personalities, appearances, and coffee orders. As you serve customers, you can engage in conversations, take custom coffee orders, and receive feedback on your brewing skills — all powered by an on-device foundation model.
 
@@ -120,7 +120,7 @@ let npc = try await session.respond(
 ).content
 ```
 
-Each generated NPC includes a `GenerableImage` that creates a visual representation of the character by using [`Image Playground`](https://developer.apple.com/documentation/ImagePlayground). The image generation avoids human-like appearances, focusing instead on fantastical creatures, animals, and objects that fit the dream realm aesthetic. The `GenerableImage` class shows how to use [`GenerationSchema`](generationschema.md) to describe the properties and guides of the object. This allows for creating dynamic schemas when all of the details of the generable type isn’t known until runtime.
+Each generated NPC includes a `GenerableImage` that creates a visual representation of the character by using [`Image Playground`](https://developer.apple.com/documentation/imageplayground). The image generation avoids human-like appearances, focusing instead on fantastical creatures, animals, and objects that fit the dream realm aesthetic. The `GenerableImage` class shows how to use [`GenerationSchema`](generationschema.md) to describe the properties and guides of the object. This allows for creating dynamic schemas when all of the details of the generable type isn’t known until runtime.
 
 #### Use a Language Model to Judge in Game Creations
 
@@ -155,7 +155,7 @@ The model then compares the player’s creation against the customer’s origina
 
 For customers that the sample generates, provide the dialog engine with custom tools, like `CalendarTool` to create more personalized interactions. This allows characters to reference the player’s on-device information, making conversations feel more natural and connected to the player’s actual life.
 
-The `CalendarTool` integrates with [`EventKit`](https://developer.apple.com/documentation/EventKit) to access the player’s calendar events, and allows characters to reference real upcoming events that involve the customer’s name if they are an attendee:
+The `CalendarTool` integrates with [`EventKit`](https://developer.apple.com/documentation/eventkit) to access the player’s calendar events, and allows characters to reference real upcoming events that involve the customer’s name if they are an attendee:
 
 ```swift
 if let customer = character as? GeneratedCustomer {

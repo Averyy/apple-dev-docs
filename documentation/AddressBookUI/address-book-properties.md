@@ -8,47 +8,47 @@ These constants can be used in predicates for selecting people or properties. A 
 
 ### Constants
 - [let ABPersonNamePrefixProperty: String](abpersonnameprefixproperty.md)
-  The name prefix. Value is an [`NSString`](https://developer.apple.com/documentation/Foundation/NSString) object.
+  The name prefix. Value is an [`NSString`](https://developer.apple.com/documentation/foundation/nsstring) object.
 - [let ABPersonGivenNameProperty: String](abpersongivennameproperty.md)
-  The person’s given name. Value is an [`NSString`](https://developer.apple.com/documentation/Foundation/NSString) object.
+  The person’s given name. Value is an [`NSString`](https://developer.apple.com/documentation/foundation/nsstring) object.
 - [let ABPersonMiddleNameProperty: String](abpersonmiddlenameproperty.md)
-  The person’s middle name. Value is an [`NSString`](https://developer.apple.com/documentation/Foundation/NSString) object.
+  The person’s middle name. Value is an [`NSString`](https://developer.apple.com/documentation/foundation/nsstring) object.
 - [let ABPersonFamilyNameProperty: String](abpersonfamilynameproperty.md)
-  The person’s family name. Value is an [`NSString`](https://developer.apple.com/documentation/Foundation/NSString) object.
+  The person’s family name. Value is an [`NSString`](https://developer.apple.com/documentation/foundation/nsstring) object.
 - [let ABPersonNameSuffixProperty: String](abpersonnamesuffixproperty.md)
-  The name suffix. Value is an [`NSString`](https://developer.apple.com/documentation/Foundation/NSString) object.
+  The name suffix. Value is an [`NSString`](https://developer.apple.com/documentation/foundation/nsstring) object.
 - [let ABPersonPreviousFamilyNameProperty: String](abpersonpreviousfamilynameproperty.md)
-  The person’s previous family name. Value is an [`NSString`](https://developer.apple.com/documentation/Foundation/NSString) object.
+  The person’s previous family name. Value is an [`NSString`](https://developer.apple.com/documentation/foundation/nsstring) object.
 - [let ABPersonNicknameProperty: String](abpersonnicknameproperty.md)
-  The person’s nickname. Value is an [`NSString`](https://developer.apple.com/documentation/Foundation/NSString) object.
+  The person’s nickname. Value is an [`NSString`](https://developer.apple.com/documentation/foundation/nsstring) object.
 - [let ABPersonPhoneticGivenNameProperty: String](abpersonphoneticgivennameproperty.md)
-  The person’s phonetic given name. Value is an [`NSString`](https://developer.apple.com/documentation/Foundation/NSString) object.
+  The person’s phonetic given name. Value is an [`NSString`](https://developer.apple.com/documentation/foundation/nsstring) object.
 - [let ABPersonPhoneticMiddleNameProperty: String](abpersonphoneticmiddlenameproperty.md)
-  The person’s phonetic middle name. Value is an [`NSString`](https://developer.apple.com/documentation/Foundation/NSString) object.
+  The person’s phonetic middle name. Value is an [`NSString`](https://developer.apple.com/documentation/foundation/nsstring) object.
 - [let ABPersonPhoneticFamilyNameProperty: String](abpersonphoneticfamilynameproperty.md)
-  The person’s phonetic family name. Value is an [`NSString`](https://developer.apple.com/documentation/Foundation/NSString) object.
+  The person’s phonetic family name. Value is an [`NSString`](https://developer.apple.com/documentation/foundation/nsstring) object.
 - [let ABPersonOrganizationNameProperty: String](abpersonorganizationnameproperty.md)
-  The person’s organization name. Value is an [`NSString`](https://developer.apple.com/documentation/Foundation/NSString) object.
+  The person’s organization name. Value is an [`NSString`](https://developer.apple.com/documentation/foundation/nsstring) object.
 - [let ABPersonDepartmentNameProperty: String](abpersondepartmentnameproperty.md)
-  The person’s department name. Value is an [`NSString`](https://developer.apple.com/documentation/Foundation/NSString) object.
+  The person’s department name. Value is an [`NSString`](https://developer.apple.com/documentation/foundation/nsstring) object.
 - [let ABPersonJobTitleProperty: String](abpersonjobtitleproperty.md)
-  The person’s job title. Value is an [`NSString`](https://developer.apple.com/documentation/Foundation/NSString) object.
+  The person’s job title. Value is an [`NSString`](https://developer.apple.com/documentation/foundation/nsstring) object.
 - [let ABPersonBirthdayProperty: String](abpersonbirthdayproperty.md)
-  The person’s birthday. Value is an [`NSDateComponents`](https://developer.apple.com/documentation/Foundation/NSDateComponents) object.
+  The person’s birthday. Value is an [`NSDateComponents`](https://developer.apple.com/documentation/foundation/nsdatecomponents) object.
 - [let ABPersonNoteProperty: String](abpersonnoteproperty.md)
-  The note for the person. Value is an [`NSString`](https://developer.apple.com/documentation/Foundation/NSString) object.
+  The note for the person. Value is an [`NSString`](https://developer.apple.com/documentation/foundation/nsstring) object.
 - [let ABPersonPhoneNumbersProperty: String](abpersonphonenumbersproperty.md)
   The person’s phone numbers. Value is an array of labeled values with phone number values.
 - [let ABPersonEmailAddressesProperty: String](abpersonemailaddressesproperty.md)
-  The person’s email address. Value is an array of labeled values with [`NSString`](https://developer.apple.com/documentation/Foundation/NSString) values.
+  The person’s email address. Value is an array of labeled values with [`NSString`](https://developer.apple.com/documentation/foundation/nsstring) values.
 - [let ABPersonUrlAddressesProperty: String](abpersonurladdressesproperty.md)
-  The person’s URL addresses. Value is an array of labeled values with [`NSString`](https://developer.apple.com/documentation/Foundation/NSString) values.
+  The person’s URL addresses. Value is an array of labeled values with [`NSString`](https://developer.apple.com/documentation/foundation/nsstring) values.
 - [let ABPersonDatesProperty: String](abpersondatesproperty.md)
-  The person’s date. Value is an array of labeled values with [`NSDateComponents`](https://developer.apple.com/documentation/Foundation/NSDateComponents) values.
+  The person’s date. Value is an array of labeled values with [`NSDateComponents`](https://developer.apple.com/documentation/foundation/nsdatecomponents) values.
 - [let ABPersonInstantMessageAddressesProperty: String](abpersoninstantmessageaddressesproperty.md)
   The name prefix. Value is an array of labeled values with instant message address values. An instant message address has a “username” property and a “service” property.
 - [let ABPersonRelatedNamesProperty: String](abpersonrelatednamesproperty.md)
-  The person’s related names. Value is an array of labeled values with [`NSString`](https://developer.apple.com/documentation/Foundation/NSString) values.
+  The person’s related names. Value is an array of labeled values with [`NSString`](https://developer.apple.com/documentation/foundation/nsstring) values.
 - [let ABPersonSocialProfilesProperty: String](abpersonsocialprofilesproperty.md)
   The person’s social profiles. Value is an array of labeled values with social profile values. A social profile has a “username” property and a “service” property.
 - [let ABPersonPostalAddressesProperty: String](abpersonpostaladdressesproperty.md)

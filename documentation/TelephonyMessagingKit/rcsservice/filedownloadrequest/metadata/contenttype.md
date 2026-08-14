@@ -7,7 +7,6 @@ The content type provided by the content server.
 
 **Availability**:
 - iOS 26.0+
-- iPadOS 26.0+
 
 ## Declaration
 

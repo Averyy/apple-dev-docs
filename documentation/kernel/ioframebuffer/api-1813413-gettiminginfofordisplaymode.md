@@ -24,7 +24,7 @@ IOFramebuffer subclasses should implement this method to return timing informati
 ## Parameters
 
 - `displayMode`: A display mode ID representing the mode to examine.
-- `info`: The IODetailedTimingInformationV2 structure is documented in IOGraphicsTypes.h
+- `info`: The driver returns the information for the display mode in this structure. If the mode has an Apple defined constant, such as timingVESA_1024x768_75hz, it should be returned in the appleTimingID field. Otherwise the field should be set to timingInvalid. If the driver is able to supply detailed timing information, it should return it in the detailedInfo.v2 field of the structure, otherwise the driver should clear the kIODetailedTimingValid flag from the flags field. The IODetailedTimingInformationV2 structure is documented in IOGraphicsTypes.h
 
 ## See Also
 

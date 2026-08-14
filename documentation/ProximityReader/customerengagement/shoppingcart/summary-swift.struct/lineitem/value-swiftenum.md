@@ -3,7 +3,7 @@
 **Framework**: ProximityReader  
 **Kind**: enum
 
-A value that holds either a [`String`](https://developer.apple.com/documentation/Swift/String) or `[`Decimal`](https://developer.apple.com/documentation/Foundation/Decimal) amount for a summary line item.
+A value that holds either a [`String`](https://developer.apple.com/documentation/swift/string) or `[`Decimal`](https://developer.apple.com/documentation/foundation/decimal) amount for a summary line item.
 
 **Availability**:
 - iOS 27.0+ (Beta)
@@ -25,10 +25,10 @@ enum Value
 ## Relationships
 
 ### Conforms To
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 
 ---

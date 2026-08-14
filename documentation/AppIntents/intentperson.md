@@ -67,19 +67,19 @@ struct IntentPerson
 ## Relationships
 
 ### Conforms To
-- [Copyable](../Swift/Copyable.md)
-- [CustomLocalizedStringResourceConvertible](../Foundation/CustomLocalizedStringResourceConvertible.md)
-- [Decodable](../Swift/Decodable.md)
+- [Copyable](../swift/copyable.md)
+- [CustomLocalizedStringResourceConvertible](../foundation/customlocalizedstringresourceconvertible.md)
+- [Decodable](../swift/decodable.md)
 - [DisplayRepresentable](displayrepresentable.md)
-- [Encodable](../Swift/Encodable.md)
-- [Equatable](../Swift/Equatable.md)
-- [Escapable](../Swift/Escapable.md)
+- [Encodable](../swift/encodable.md)
+- [Equatable](../swift/equatable.md)
+- [Escapable](../swift/escapable.md)
 - [InstanceDisplayRepresentable](instancedisplayrepresentable.md)
 - [IntentValueConvertible](intentvalueconvertible.md)
 - [IntentValueExpressing](intentvalueexpressing.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
-- [Transferable](../CoreTransferable/Transferable.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
+- [Transferable](../coretransferable/transferable.md)
 - [TypeDisplayRepresentable](typedisplayrepresentable.md)
 
 

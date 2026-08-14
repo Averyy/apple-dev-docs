@@ -22,7 +22,7 @@ let MPNowPlayingInfoPropertyChapterNumber: String
 
 #### Discussion
 
-Value is an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) object configured as an [`NSUInteger`](https://developer.apple.com/documentation/ObjectiveC/NSUInteger). Chapter numbering uses zero-based indexing. For example, to display the first chapter in the Now Playing item as “Chapter 1,” set the chapter number to `0`.
+Value is an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) object configured as an [`NSUInteger`](https://developer.apple.com/documentation/objectivec/nsuinteger). Chapter numbering uses zero-based indexing. For example, to display the first chapter in the Now Playing item as “Chapter 1,” set the chapter number to `0`.
 
 ## See Also
 

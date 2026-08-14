@@ -16,7 +16,7 @@ A Boolean value that indicates whether the app captures USB devices and uses the
 
 #### Discussion
 
-The entitlement is required to use the [`IOUSBHost`](https://developer.apple.com/documentation/IOUSBHost) APIs for USB device capture.
+The entitlement is required to use the [`IOUSBHost`](https://developer.apple.com/documentation/iousbhost) APIs for USB device capture.
 
 ## See Also
 

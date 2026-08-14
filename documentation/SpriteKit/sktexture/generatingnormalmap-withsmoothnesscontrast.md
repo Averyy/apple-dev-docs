@@ -32,7 +32,7 @@ You can create normal maps in two different ways. First, you can take an existin
 
 The image below shows two sprite nodes both with the same texture. The node on the right has a normal map from the same noise texture generated using the [`generatingNormalMap()`](sktexture/generatingnormalmap().md) method.
 
-![Comparison of sprites with and without normal mapping](https://docs-assets.developer.apple.com/published/fb984f97fc198fed309be79f120384d7/media-3020490%402x.png)
+![Comparison of sprites with and without normal mapping](/images/com.apple.spritekit/media-3020490@2x.png)
 
 ## Parameters
 

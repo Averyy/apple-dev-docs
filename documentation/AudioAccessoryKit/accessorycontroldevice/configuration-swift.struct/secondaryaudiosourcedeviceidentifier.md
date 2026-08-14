@@ -7,7 +7,6 @@ The Bluetooth address of the device providing the secondary source of audio.
 
 **Availability**:
 - iOS 26.4+
-- iPadOS 26.4+
 
 ## Declaration
 

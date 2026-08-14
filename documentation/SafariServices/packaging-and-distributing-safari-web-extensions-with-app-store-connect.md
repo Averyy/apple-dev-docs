@@ -32,7 +32,7 @@ Follow these steps:
 
 For more information about creating an app record, see [`Add a new app`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/create-an-app-record/add-a-new-app/).
 
-![A screenshot of the App Store Connect website.](https://docs-assets.developer.apple.com/published/fc563af0095eb318cfe82c01f2a2cb83/safari-web-extension-packager-create-app-record.png)
+![A screenshot of the App Store Connect website.](/images/com.apple.safariservices/safari-web-extension-packager-create-app-record.png)
 
 ##### Package the Extension Files
 
@@ -40,13 +40,13 @@ After creating an app record, navigate to the Xcode Cloud tab. Under Safari Web 
 
 Select and upload your extension files. The Safari Web Extension Package assembles the app for your extension. You need to upload the full contents of your extension, including the manifest and all related resources.
 
-You can see the status of the packaging process on the Builds page. You can upload multiple builds at once. When packaging is complete, distribute your extension to beta testers using TestFlight. For more information on using TestFlight, see [`Distributing your app for beta testing and releases`](https://developer.apple.com/documentation/Xcode/distributing-your-app-for-beta-testing-and-releases)
+You can see the status of the packaging process on the Builds page. You can upload multiple builds at once. When packaging is complete, distribute your extension to beta testers using TestFlight. For more information on using TestFlight, see [`Distributing your app for beta testing and releases`](https://developer.apple.com/documentation/xcode/distributing-your-app-for-beta-testing-and-releases)
 
 Review any reported exceptions, and see [`Assessing your Safari web extension’s browser compatibility`](assessing-your-safari-web-extension-s-browser-compatibility.md) for details on how to resolve them.
 
 > **Note**: The compute time needed to package web extensions is deducted from the 25 hours per month of Xcode Cloud included in your Apple Developer Program membership.
 
-![A screenshot of the Safari web extension packager tool. The Upload Web Extension screen is open for someone to upload their web extension resources zip file.](https://docs-assets.developer.apple.com/published/a04fcb3e822c928eac0dab6f4ffa0fee/safari-web-extension-packager-upload-extension-files.png)
+![A screenshot of the Safari web extension packager tool. The Upload Web Extension screen is open for someone to upload their web extension resources zip file.](/images/com.apple.safariservices/safari-web-extension-packager-upload-extension-files.png)
 
 ##### Distribute to Beta Testers with Testflight
 
@@ -54,7 +54,7 @@ Use TestFlight to distribute beta builds of your app and extension, manage beta 
 
 For more information, see [`TestFlight overview`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/test-a-beta-version/testflight-overview).
 
-![A screenshot of the TestFlight tab in App Store Connect. Available builds of the app and testing status are viewable.](https://docs-assets.developer.apple.com/published/efb290f03b28efa0991708256ea28d62/safari-web-extension-packager-testflight.png)
+![A screenshot of the TestFlight tab in App Store Connect. Available builds of the app and testing status are viewable.](/images/com.apple.safariservices/safari-web-extension-packager-testflight.png)
 
 ##### Distribute on the App Store
 

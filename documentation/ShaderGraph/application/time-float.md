@@ -19,7 +19,7 @@ The current time in seconds.
 
 The `Time` node outputs a float that represents the current time in seconds. When applied or connected to other nodes, this value changes constantly, allowing for dynamic materials. Below is an example of a simple node graph that causes an image texture to scroll in real time:
 
-![None](https://docs-assets.developer.apple.com/published/cff64c2ca64dd8e94442e51f2b648d9f/TimeGraph.png)
+![None](/images/ShaderGraph-Docs/TimeGraph.png)
 
 Adding Time to the incoming texture coordinates horizontal component causes the texture to “scroll” along the horizontal plane. Below, the resulting texture applies to a cube:
 

@@ -54,15 +54,15 @@ A [`CXProviderConfiguration`](cxproviderconfiguration.md) object controls the na
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCopying](../Foundation/NSCopying.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCopying](../foundation/nscopying.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 
@@ -76,7 +76,7 @@ A [`CXProviderConfiguration`](cxproviderconfiguration.md) object controls the na
   Use the CallKit framework to integrate native VoIP calling.
 - [Preparing your app to be the default calling app](preparing-your-app-to-be-the-default-calling-app.md)
   Configure your CallKit or LiveCommunicationKit app so people can set it as the default calling app on their device.
-- [CallKit updates](../Updates/CallKit.md)
+- [CallKit updates](../updates/callkit.md)
   Learn about important changes to CallKit.
 
 

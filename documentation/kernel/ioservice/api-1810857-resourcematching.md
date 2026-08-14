@@ -23,8 +23,8 @@ IOService maintains a resource service IOResources that allows objects to be pub
 
 ## Parameters
 
-- `name`: The resource name, as an OSString (which includes OSSymbol). Resource matching is successful when an object by that name has been published with the   method.
-- `table`: If zero,   creates a matching dictionary and returns a reference to it, otherwise the matching properties are added to the specified dictionary.
+- `name`: The resource name, as an OSString (which includes OSSymbol). Resource matching is successful when an object by that name has been published with the `publishResource` method.
+- `table`: If zero, `resourceMatching` creates a matching dictionary and returns a reference to it, otherwise the matching properties are added to the specified dictionary.
 
 ## See Also
 

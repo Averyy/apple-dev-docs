@@ -23,7 +23,7 @@ Use [`enableBackgroundDelivery(for:frequency:)`](financestore/enablebackgroundde
 ## Relationships
 
 ### Inherits From
-- [AppExtension](../ExtensionFoundation/AppExtension.md)
+- [AppExtension](../extensionfoundation/appextension.md)
 - [BackgroundDeliveryExtensionProviding](backgrounddeliveryextensionproviding.md)
 
 

@@ -28,7 +28,7 @@ struct Quadrant: View {
 }
 ```
 
-![A figure of a square with hair-line crosshairs that divide the box into four equal sections. A small circle is at the apex of the crosshairs.](https://docs-assets.developer.apple.com/published/22950a39af33d4b43d60f0cdde156663/Making-Fine-Adjustments-to-a-View-s-Position-1%402x.png)
+![A figure of a square with hair-line crosshairs that divide the box into four equal sections. A small circle is at the apex of the crosshairs.](/images/com.apple.SwiftUI/Making-Fine-Adjustments-to-a-View-s-Position-1@2x.png)
 
 For more detail on composing views with stacks, see [`Building layouts with stack views`](building-layouts-with-stack-views.md).
 
@@ -40,7 +40,7 @@ In SwiftUI, the view’s coordinate space uses `x` to represent a horizontal dir
 
 The following diagram shows the coordinates in the left-to-right layout direction against a rectangle, with the origin at the top, leading corner:
 
-![A drawing of an opaque box that represents a coordinate rectangle. The left, bottom corner of the rectangle is labeled leading and the right, bottom corner is labeled trailing. The bottom of the rectangle is labeled x for the x coordinate. The left top of the rectangle is labeled top, and the left bottom is labeled bottom. The right side of the rectangle is labeled y to represent the y coordinate.](https://docs-assets.developer.apple.com/published/a25cbda09cc44b82e5148ca30dee63d8/Making-Fine-Adjustments-to-a-View-s-Position-2%402x.png)
+![A drawing of an opaque box that represents a coordinate rectangle. The left, bottom corner of the rectangle is labeled leading and the right, bottom corner is labeled trailing. The bottom of the rectangle is labeled x for the x coordinate. The left top of the rectangle is labeled top, and the left bottom is labeled bottom. The right side of the rectangle is labeled y to represent the y coordinate.](/images/com.apple.SwiftUI/Making-Fine-Adjustments-to-a-View-s-Position-2@2x.png)
 
 The following example shifts the circle `40` points from the center, up and toward the trailing edge:
 
@@ -59,7 +59,7 @@ struct Quadrant: View {
 }
 ```
 
-![A figure of a square with hairline crosshairs that divide the box into four equal sections. A small circle is offset from the apex of the crosshairs, 40 points up and 40 points toward the trailing edge of the box.](https://docs-assets.developer.apple.com/published/471219ec8ed3b93a21779a40f70a3ea6/Making-Fine-Adjustments-to-a-View-s-Position-3%402x.png)
+![A figure of a square with hairline crosshairs that divide the box into four equal sections. A small circle is offset from the apex of the crosshairs, 40 points up and 40 points toward the trailing edge of the box.](/images/com.apple.SwiftUI/Making-Fine-Adjustments-to-a-View-s-Position-3@2x.png)
 
 ##### Position View Content Explicitly
 
@@ -80,7 +80,7 @@ struct Quadrant: View {
 }
 ```
 
-![A figure of a square with hairline crosshairs that divide the box into four equal sections. A small circle is positioned to the right of the apex of the crosshairs, 80 points down from the top of the box and 144 points toward the trailing edge, measured from the origin coordinates of the square’s view.](https://docs-assets.developer.apple.com/published/83d74feecadc7fc02d50a2c627ee5974/Making-Fine-Adjustments-to-a-View-s-Position-4%402x.png)
+![A figure of a square with hairline crosshairs that divide the box into four equal sections. A small circle is positioned to the right of the apex of the crosshairs, 80 points down from the top of the box and 144 points toward the trailing edge, measured from the origin coordinates of the square’s view.](/images/com.apple.SwiftUI/Making-Fine-Adjustments-to-a-View-s-Position-4@2x.png)
 
 ## See Also
 

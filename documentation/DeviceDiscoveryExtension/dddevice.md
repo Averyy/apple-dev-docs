@@ -20,9 +20,9 @@ class DDDevice
 
 #### Overview
 
-The extension creates an instance of this class for a discovered device of interest and passes it to the system for display in the device picker UI ([`AVRoutePickerView`](https://developer.apple.com/documentation/AVKit/AVRoutePickerView)).
+The extension creates an instance of this class for a discovered device of interest and passes it to the system for display in the device picker UI ([`AVRoutePickerView`](https://developer.apple.com/documentation/avkit/avroutepickerview)).
 
-The extension discovers devices through either Core Bluetooth or the local network (that is, using [`Bonjour`](https://developer.apple.com/documentation/Foundation/bonjour)).
+The extension discovers devices through either Core Bluetooth or the local network (that is, using [`Bonjour`](https://developer.apple.com/documentation/foundation/bonjour)).
 
 For device discovery extensions of third-party media receivers, an instance of this class corresponds to the media receiver of interest.
 
@@ -89,14 +89,14 @@ The extension reports the status of discovered devices to the system using the [
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

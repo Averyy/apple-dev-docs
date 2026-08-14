@@ -24,7 +24,7 @@ protocol FinancialConnectionUIExtension : AppExtension, FinancialConnectionUIExt
 ## Relationships
 
 ### Inherits From
-- [AppExtension](../ExtensionFoundation/AppExtension.md)
+- [AppExtension](../extensionfoundation/appextension.md)
 - [FinancialConnectionUIExtensionProviding](financialconnectionuiextensionproviding.md)
 
 

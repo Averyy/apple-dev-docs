@@ -21,7 +21,7 @@ var normalizedCoordinates: Bool { get set }
 
 #### Discussion
 
-If [`true`](https://developer.apple.com/documentation/Swift/true), texture coordinates are from `0.0` to `1.0`. If [`false`](https://developer.apple.com/documentation/Swift/false), texture coordinates are from `0` to `width` for horizontal coordinates and `0` to `height` for vertical coordinates. The default value is [`true`](https://developer.apple.com/documentation/Swift/true).
+If [`true`](https://developer.apple.com/documentation/swift/true), texture coordinates are from `0.0` to `1.0`. If [`false`](https://developer.apple.com/documentation/swift/false), texture coordinates are from `0` to `width` for horizontal coordinates and `0` to `height` for vertical coordinates. The default value is [`true`](https://developer.apple.com/documentation/swift/true).
 
 Non-normalized texture coordinates should only be used with 1D and 2D textures with the following conditions; otherwise, the results of sampling are undefined.
 

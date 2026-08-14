@@ -36,7 +36,7 @@ The `DevicesSequence` produces an asynchronous sequence of [`WAPairedDevice.Devi
 ## Relationships
 
 ### Conforms To
-- [AsyncSequence](../Swift/AsyncSequence.md)
+- [AsyncSequence](../swift/asyncsequence.md)
 
 ## See Also
 

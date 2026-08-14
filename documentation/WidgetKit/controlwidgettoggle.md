@@ -43,7 +43,7 @@ Toggles are controls that have two states, “off” and “on”.
 ## Relationships
 
 ### Conforms To
-- [ControlWidgetTemplate](../SwiftUI/ControlWidgetTemplate.md)
+- [ControlWidgetTemplate](../swiftui/controlwidgettemplate.md)
 
 ## See Also
 

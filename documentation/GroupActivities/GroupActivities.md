@@ -24,12 +24,12 @@ This framework leverages the FaceTime infrastructure to synchronize your app’s
 ## Topics
 
 ### Essentials
-- [com.apple.developer.group-session](../BundleResources/Entitlements/com.apple.developer.group-session.md)
+- [com.apple.developer.group-session](../bundleresources/entitlements/com.apple.developer.group-session.md)
   A Boolean value that indicates whether the app may implement shared group experiences.
 ### Activity definition
 - [Defining your app’s SharePlay activities](defining-your-apps-shareplay-activities.md)
   Configure your app’s SharePlay support and define the activities that people can perform from your app.
-- [Supporting coordinated media playback](../AVFoundation/supporting-coordinated-media-playback.md)
+- [Supporting coordinated media playback](../avfoundation/supporting-coordinated-media-playback.md)
   Create synchronized media experiences that enable users to watch and listen across devices.
 - [protocol GroupActivity](groupactivity.md)
   A type that can advertise your app’s activities to other participants.
@@ -62,14 +62,14 @@ This framework leverages the FaceTime infrastructure to synchronize your app’s
   Create shared experiences for people wearing Vision Pro in the same room and those on FaceTime.
 - [Adding spatial Persona support to an activity](adding-spatial-persona-support-to-an-activity.md)
   Update your SharePlay activities to support spatial Personas and the shared context when running in visionOS.
-- [Implementing SharePlay for immersive spaces in visionOS](../visionOS/implementing-shareplay-for-immersive-spaces-in-visionos.md)
+- [Implementing SharePlay for immersive spaces in visionOS](../visionos/implementing-shareplay-for-immersive-spaces-in-visionos.md)
   Enable collaborative spatial experiences by using SharePlay to synchronize 3D content among participants.
 - [class SystemCoordinator](systemcoordinator.md)
   A type you use to coordinate your interface’s behavior when an active SharePlay session supports spatial placement of content.
 - [SystemCoordinator.ParticipantState](systemcoordinator/participantstate.md)
   A structure that tells you whether a participant supports a shared simulation space for the current activity.
 - [func groupActivityAssociation(GroupActivityAssociationKind?) -> some View
-](../SwiftUI/View/groupActivityAssociation(_:).md)
+](../swiftui/view/groupactivityassociation(_:).md)
   Specifies how a view should be associated with the current SharePlay group activity.
 - [class GroupActivityAssociationInteraction](groupactivityassociationinteraction.md)
   An interaction configures a view’s association with the current SharePlay group activity.

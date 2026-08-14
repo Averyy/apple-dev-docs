@@ -21,7 +21,7 @@ var birthday: DateComponents? { get set }
 
 #### Discussion
 
-A Gregorian birthday can be displayed using this property, whose values are the relevant properties of an [`NSDateComponents`](https://developer.apple.com/documentation/Foundation/NSDateComponents) object. Day and month are required for this property, and year is optional. Calendar can be `nil` or Gregorian. All other date components are invalid.
+A Gregorian birthday can be displayed using this property, whose values are the relevant properties of an [`NSDateComponents`](https://developer.apple.com/documentation/foundation/nsdatecomponents) object. Day and month are required for this property, and year is optional. Calendar can be `nil` or Gregorian. All other date components are invalid.
 
 ## See Also
 

@@ -24,7 +24,7 @@ enum DataDetector
 
 ### Methods that scan strings for known content types
 - [func dataDetectorMatches(DataDetector.MatchType, options: DataDetector.Options) -> some AsyncSequence<DataDetector.Match, Never>
-](../Swift/StringProtocol/dataDetectorMatches(_:options:).md)
+](../swift/stringprotocol/datadetectormatches(_:options:).md)
   Searches for known data types in a string or a substring.
 ### Structures
 - [DataDetector.Match](datadetector/match.md)

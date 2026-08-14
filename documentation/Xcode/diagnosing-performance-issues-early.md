@@ -14,11 +14,11 @@ The Thread Performance Checker tool detects priority inversions and non-UI work 
 
 The Thread Performance Checker tool surfaces issues in the Issue navigator and the source editor. Read the diagnostic message carefully.
 
-![A screenshot of a Priority Inversion issue text in the source editor.](https://docs-assets.developer.apple.com/published/cebd1e73a23e69cd03ffee45e99e962f/diagnosing-performance-issues-early-1%402x.png)
+![A screenshot of a Priority Inversion issue text in the source editor.](/images/com.apple.Xcode/diagnosing-performance-issues-early-1@2x.png)
 
 To understand the issue in depth, expand the backtrace of the issue in the Issue navigator.
 
-![A screenshot of the expanded backdtrace in the Issue navigator.](https://docs-assets.developer.apple.com/published/c26fbff407d8e560d6d2c51d61a62e11/diagnosing-performance-issues-early-2%402x.png)
+![A screenshot of the expanded backdtrace in the Issue navigator.](/images/com.apple.Xcode/diagnosing-performance-issues-early-2@2x.png)
 
 Click Generate in the description of an issue to generate a fix using intelligence in Xcode. For more information, see [`Writing code with intelligence in Xcode`](writing-code-with-intelligence-in-xcode.md).
 
@@ -26,12 +26,12 @@ The issues surfaced point to code in your project that can cause hangs. Hangs oc
 
 ##### Diagnose and Resolve Priority Inversions
 
-If you use concurrency primitives, such as [`dispatch_semaphore_wait`](https://developer.apple.com/documentation/Dispatch/dispatch_semaphore_wait) and [`dispatch_group_wait`](https://developer.apple.com/documentation/Dispatch/dispatch_group_wait), in your code or invoke APIs that use them, your app is susceptible to priority inversions if there is a mismatch in the quality-of-service (QoS) class of the dispatch queues your app uses. When you use these primitives, the system can’t automatically propagate priority from the higher-priority thread to the lower-priority thread. You can take these precautions to avoid priority inversions in your code:
+If you use concurrency primitives, such as [`dispatch_semaphore_wait`](https://developer.apple.com/documentation/dispatch/dispatch_semaphore_wait) and [`dispatch_group_wait`](https://developer.apple.com/documentation/dispatch/dispatch_group_wait), in your code or invoke APIs that use them, your app is susceptible to priority inversions if there is a mismatch in the quality-of-service (QoS) class of the dispatch queues your app uses. When you use these primitives, the system can’t automatically propagate priority from the higher-priority thread to the lower-priority thread. You can take these precautions to avoid priority inversions in your code:
 
 - Don’t use `dispatch_semaphore_wait` and `dispatch_group_wait` to emulate synchronous behavior when calling an asynchronous internal method or API. Remove the code if the underlying functionality is unnecessary.
-- Ensure that the QoS of the waiting thread is the same as or lower than the QoS of the signaling thread when a synchronous variant isn’t available. Explicitly classify the QoS of the work when you create a [`Dispatch Queue`](https://developer.apple.com/documentation/Dispatch/dispatch-queue) or an [`OperationQueue`](https://developer.apple.com/documentation/Foundation/OperationQueue).
+- Ensure that the QoS of the waiting thread is the same as or lower than the QoS of the signaling thread when a synchronous variant isn’t available. Explicitly classify the QoS of the work when you create a [`Dispatch Queue`](https://developer.apple.com/documentation/dispatch/dispatch-queue) or an [`OperationQueue`](https://developer.apple.com/documentation/foundation/operationqueue).
 
-The code in `initiateBackgroundWork` below explicitly creates a dispatch queue with background QoS. `doBackgroundWorkAsync` signals the completion of the background work it does asynchronously at background QoS. After the background work completes, it updates the UI label on the main thread at [`userInteractive`](https://developer.apple.com/documentation/Dispatch/DispatchQoS/userInteractive) QoS.
+The code in `initiateBackgroundWork` below explicitly creates a dispatch queue with background QoS. `doBackgroundWorkAsync` signals the completion of the background work it does asynchronously at background QoS. After the background work completes, it updates the UI label on the main thread at [`userInteractive`](https://developer.apple.com/documentation/dispatch/dispatchqos/userinteractive) QoS.
 
 ```swift
 func initiateBackgroundWork() {
@@ -59,15 +59,15 @@ To learn more about priority inversions and QoS, see [`Modernizing Grand Central
 
 ##### Diagnose and Eliminate Non Ui Work on the Main Thread
 
-Long-running synchronous I/O and networking on the main thread can make your app unresponsive. For example, to perform real-time capture, you instantiate an [`AVCaptureSession`](https://developer.apple.com/documentation/AVFoundation/AVCaptureSession) object and add appropriate inputs and outputs. Invoking the [`startRunning()`](https://developer.apple.com/documentation/AVFoundation/AVCaptureSession/startRunning()) method of an `AVCaptureSession` object on the main thread of your app can lead to hangs. You can take these precautions to avoid non-UI work on the main thread:
+Long-running synchronous I/O and networking on the main thread can make your app unresponsive. For example, to perform real-time capture, you instantiate an [`AVCaptureSession`](https://developer.apple.com/documentation/avfoundation/avcapturesession) object and add appropriate inputs and outputs. Invoking the [`startRunning()`](https://developer.apple.com/documentation/avfoundation/avcapturesession/startrunning()) method of an `AVCaptureSession` object on the main thread of your app can lead to hangs. You can take these precautions to avoid non-UI work on the main thread:
 
 - Don’t synchronously read from or write to files and I/O devices on the main thread. Instead, do the work on a separate serial dispatch queue, and notify the completion of I/O by enqueuing a block onto the main queue.
 - Use the asynchronous variant of an API that performs I/O to do that work off the main thread.
-- Don’t perform synchronous networking on the main thread of your app. Instead, use an asynchronous networking API, such as [`URLSession`](https://developer.apple.com/documentation/Foundation/URLSession).
+- Don’t perform synchronous networking on the main thread of your app. Instead, use an asynchronous networking API, such as [`URLSession`](https://developer.apple.com/documentation/foundation/urlsession).
 
 ##### Detect Runtime Issues in Tests
 
-Xcode detects runtime issues in tests you write using [`Swift Testing`](https://developer.apple.com/documentation/Testing) or [`XCTest`](https://developer.apple.com/documentation/XCTest), including UI tests that use [`XCUIAutomation`](https://developer.apple.com/documentation/XCUIAutomation) to automatically control your app’s UI.
+Xcode detects runtime issues in tests you write using [`Swift Testing`](https://developer.apple.com/documentation/testing) or [`XCTest`](https://developer.apple.com/documentation/xctest), including UI tests that use [`XCUIAutomation`](https://developer.apple.com/documentation/xcuiautomation) to automatically control your app’s UI.
 
 By default, Xcode reports runtime issues in your tests as warnings. To fail tests when runtime issues occur, follow these steps:
 
@@ -75,13 +75,13 @@ By default, Xcode reports runtime issues in your tests as warnings. To fail test
 2. Switch to the Configurations pane in the Test Plan editor.
 3. Change the configuration values in the Runtime API Checking section to On (as Failure). You can set each value separately, for example, to report main thread issues as failures so you can work on resolving those without also causing failures from other runtime issues.
 
-![A screenshot of the Test Plan editor, highlighting the Main Thread Checker setting.](https://docs-assets.developer.apple.com/published/2279a56eb63793188b00aea42e70b7f9/diagnosing-performance-issues-early-5%402x.png)
+![A screenshot of the Test Plan editor, highlighting the Main Thread Checker setting.](/images/com.apple.Xcode/diagnosing-performance-issues-early-5@2x.png)
 
 To turn runtime issues back into warnings, change the configuration values to On (as Warnings). For more information on configuring test plans, see [`Improving code assessment by organizing tests into test plans`](organizing-tests-to-improve-feedback.md).
 
 If you configure Xcode to report runtime issues in tests as warnings, Xcode shows the issues in a Runtime Warnings section in the Test Report, in the Test navigator, and in the Issues navigator.
 
-![A screenshot of the Test Report showing a runtime issue that Xcode detected during a test.](https://docs-assets.developer.apple.com/published/630eeabf08b3e4870829c0206027de09/diagnosing-performance-issues-early-4%402x.png)
+![A screenshot of the Test Report showing a runtime issue that Xcode detected during a test.](/images/com.apple.Xcode/diagnosing-performance-issues-early-4@2x.png)
 
 ##### Follow Profiling Guidance with the Thread Performance Checker Tool
 
@@ -92,7 +92,7 @@ Xcode enables the Thread Performance Checker tool by default for the Run action.
 
 For higher confidence in your profiling results, disable the Thread Performance Checker tool. Choose Product > Scheme > Edit Scheme to display the scheme editor. Select the Run schemes, navigate to the Diagnostics section, and unselect the Thread Performance Checker tool checkbox.
 
-![A screenshot of the Scheme Editor with the Thread Performance Checker checkbox selected.](https://docs-assets.developer.apple.com/published/982a500a5193deb7fde595751b084213/diagnosing-performance-issues-early-3%402x.png)
+![A screenshot of the Scheme Editor with the Thread Performance Checker checkbox selected.](/images/com.apple.Xcode/diagnosing-performance-issues-early-3@2x.png)
 
 In addition to the Thread Performance Checker tool, always test your code using a comprehensive set of performance tests. For more information about testing your code, see [`Testing`](testing.md).
 

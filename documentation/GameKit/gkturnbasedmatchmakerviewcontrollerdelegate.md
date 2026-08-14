@@ -43,7 +43,7 @@ To receive notifications when a player cancels turn-based matchmaking or an erro
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

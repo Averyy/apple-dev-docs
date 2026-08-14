@@ -6,7 +6,7 @@ Create a signature to validate a promotional offer using your private key.
 
 #### Overview
 
-Before you can create a signature on your server, you need to complete the one-time setup to generate a private key in App Store Connect, as [`Setting up promotional offers`](setting-up-promotional-offers.md) describes. Always use a secure connection when sending data, including the signature, between your app and server. For more information on ensuring your data’s security, see [`Preventing Insecure Network Connections`](https://developer.apple.com/documentation/Security/preventing-insecure-network-connections).
+Before you can create a signature on your server, you need to complete the one-time setup to generate a private key in App Store Connect, as [`Setting up promotional offers`](setting-up-promotional-offers.md) describes. Always use a secure connection when sending data, including the signature, between your app and server. For more information on ensuring your data’s security, see [`Preventing Insecure Network Connections`](https://developer.apple.com/documentation/security/preventing-insecure-network-connections).
 
 To create the signature, you use parameters that identify the product and the offer, parameters your server generates, and your private key. To generate the signature, you combine the required parameters, then sign and encode the resulting string.
 

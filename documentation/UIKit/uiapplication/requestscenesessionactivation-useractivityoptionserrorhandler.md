@@ -20,14 +20,14 @@ func requestSceneSessionActivation(_ sceneSession: UISceneSession?, userActivity
 
 #### Discussion
 
-Call this method when you want the system to display one of your app’s scenes. For example, you might call this method to dispatch work to the scene in the form of an [`NSUserActivity`](https://developer.apple.com/documentation/Foundation/NSUserActivity) object. When activating an existing session whose scene is no longer in memory, the system creates a new scene and connects it to your app. Similarly, specifying `nil` for the `sceneSession` parameter causes the system to create a new scene and corresponding session.
+Call this method when you want the system to display one of your app’s scenes. For example, you might call this method to dispatch work to the scene in the form of an [`NSUserActivity`](https://developer.apple.com/documentation/foundation/nsuseractivity) object. When activating an existing session whose scene is no longer in memory, the system creates a new scene and connects it to your app. Similarly, specifying `nil` for the `sceneSession` parameter causes the system to create a new scene and corresponding session.
 
 ## Parameters
 
 - `sceneSession`: The session whose scene you want to activate. Specify `nil` when you want the system to create a new scene for your app.
 - `userActivity`: A user activity object to dispatch to the session’s scene. Use this object to communicate details about a task you want the scene to perform.
 - `options`: Information for the system to use when creating or activating the scene. For information about how to create this object, see [`UIScene.ActivationRequestOptions`](uiscene/activationrequestoptions.md).
-- `errorHandler`: An error handler block to execute if a problem occurs. The method doesn’t execute this block when it successfully activates the scene. This block has no return value and has the following parameter: - **error**: The [`NSError`](https://developer.apple.com/documentation/Foundation/NSError) object describing the problem that occurred.
+- `errorHandler`: An error handler block to execute if a problem occurs. The method doesn’t execute this block when it successfully activates the scene. This block has no return value and has the following parameter: - **error**: The [`NSError`](https://developer.apple.com/documentation/foundation/nserror) object describing the problem that occurred.
 
 ## See Also
 

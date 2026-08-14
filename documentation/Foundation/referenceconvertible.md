@@ -34,10 +34,10 @@ All `ReferenceConvertible` types are hashable, equatable, and provide descriptio
 ## Relationships
 
 ### Inherits From
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
 ### Conforming Types
 - [AffineTransform](affinetransform.md)
 - [Calendar](calendar.md)

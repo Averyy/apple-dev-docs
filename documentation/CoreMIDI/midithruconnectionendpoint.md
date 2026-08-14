@@ -38,8 +38,8 @@ Set the endpoint’s [`uniqueID`](midithruconnectionendpoint/uniqueid.md) to 0 i
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../Swift/BitwiseCopyable.md)
-- [Sendable](../Swift/Sendable.md)
+- [BitwiseCopyable](../swift/bitwisecopyable.md)
+- [Sendable](../swift/sendable.md)
 
 ## See Also
 

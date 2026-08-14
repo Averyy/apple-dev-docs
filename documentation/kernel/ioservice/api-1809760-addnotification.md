@@ -27,7 +27,7 @@ IOService will deliver notifications of changes in state of an IOService object 
 
 ## Parameters
 
-- `type`:  Delivered after an IOService object has been terminated, during its finalize stage.
+- `type`: An OSSymbol identifying the type of notification and IOService state: ` gIOPublishNotification` Delivered when an IOService object is registered. ` gIOFirstPublishNotification` Delivered when an IOService object is registered, but only once per IOService instance. Some IOService objects may be reregistered when their state is changed. ` gIOMatchedNotification` Delivered when an IOService object has been matched with all client drivers, and they have been probed and started. ` gIOFirstMatchNotification` Delivered when an IOService object has been matched with all client drivers, but only once per IOService instance. Some IOService objects may be reregistered when their state is changed. ` gIOTerminatedNotification` Delivered after an IOService object has been terminated, during its finalize stage.
 - `matching`: A matching dictionary to restrict notifications to only matching IOService objects. The dictionary will be released when the notification is removed, consuming the passed-in reference.
 - `handler`: A C function callback to deliver notifications.
 - `target`: An instance reference for the callback's use.

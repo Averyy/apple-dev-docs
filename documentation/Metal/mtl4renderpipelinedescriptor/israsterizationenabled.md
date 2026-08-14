@@ -21,7 +21,7 @@ var isRasterizationEnabled: Bool { get set }
 
 #### Discussion
 
-By default, this value is [`true`](https://developer.apple.com/documentation/Swift/true), specifying that this pipeline rasterizes primitives. Set this property to [`false`](https://developer.apple.com/documentation/Swift/false) when you don’t provide a fragment shader function via function [`fragmentFunctionDescriptor`](mtl4renderpipelinedescriptor/fragmentfunctiondescriptor.md).
+By default, this value is [`true`](https://developer.apple.com/documentation/swift/true), specifying that this pipeline rasterizes primitives. Set this property to [`false`](https://developer.apple.com/documentation/swift/false) when you don’t provide a fragment shader function via function [`fragmentFunctionDescriptor`](mtl4renderpipelinedescriptor/fragmentfunctiondescriptor.md).
 
 
 ---

@@ -49,12 +49,12 @@ struct CuttableExample: View {
 
 When someone selects “owl” and issues a Cut command, the `action` closure removes the selected item from the list and returns it. In response, SwiftUI moves it to the Clipboard. If you want to copy the item without removing it, use the [`copyable(_:)`](view/copyable(_:).md) modifier instead.
 
-> **Note**: To enable people to cut using a custom action — like from a context menu item — rather than using the system Cut command, update the Clipboard directly using an [`NSPasteboard`](https://developer.apple.com/documentation/AppKit/NSPasteboard) or a [`UIPasteboard`](https://developer.apple.com/documentation/UIKit/UIPasteboard) instance.
+> **Note**: To enable people to cut using a custom action — like from a context menu item — rather than using the system Cut command, update the Clipboard directly using an [`NSPasteboard`](https://developer.apple.com/documentation/appkit/nspasteboard) or a [`UIPasteboard`](https://developer.apple.com/documentation/uikit/uipasteboard) instance.
 
 ## Parameters
 
 - `payloadType`: The type of items to cut.
-- `action`: A closure that you implement to delete the selected items from the collection, and return them for addition to the Clipboard. The items must conform to the [`Transferable`](https://developer.apple.com/documentation/CoreTransferable/Transferable) protocol.
+- `action`: A closure that you implement to delete the selected items from the collection, and return them for addition to the Clipboard. The items must conform to the [`Transferable`](https://developer.apple.com/documentation/coretransferable/transferable) protocol.
 
 ## See Also
 

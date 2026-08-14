@@ -23,7 +23,7 @@ var filters: [Any]? { get set }
 
 The filters you add to this property affect the content of the layer, including its border, filled background and sublayers. The default value of this property is `nil`.
 
-Changing the inputs of the [`CIFilter`](https://developer.apple.com/documentation/CoreImage/CIFilter-swift.class) object directly after it is attached to the layer causes undefined behavior. It is possible to modify filter parameters after attaching them to the layer but you must use the layer’s [`setValue(_:forKeyPath:)`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class/setValue(_:forKeyPath:)) method to do so. In addition, you must assign a name to the filter so that you can identify it in the array. For example, to change the `inputRadius` parameter of the filter, you could use code similar to the following:
+Changing the inputs of the [`CIFilter`](https://developer.apple.com/documentation/coreimage/cifilter-swift.class) object directly after it is attached to the layer causes undefined behavior. It is possible to modify filter parameters after attaching them to the layer but you must use the layer’s [`setValue(_:forKeyPath:)`](https://developer.apple.com/documentation/objectivec/nsobject-swift.class/setvalue(_:forkeypath:)) method to do so. In addition, you must assign a name to the filter so that you can identify it in the array. For example, to change the `inputRadius` parameter of the filter, you could use code similar to the following:
 
 **Swift**:
 
@@ -73,7 +73,7 @@ view.layer?.addSublayer(textLayer)
 
 The following figure shows the result: a pointillist effect is added to the text.
 
-![Text layer with applied filter](https://docs-assets.developer.apple.com/published/e0b77332976c5f5fd5d62f93b0772935/media-2851431%402x.png)
+![Text layer with applied filter](/images/com.apple.quartzcore/media-2851431@2x.png)
 
 ##### Special Considerations
 

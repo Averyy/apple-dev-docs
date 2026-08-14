@@ -12,7 +12,7 @@ Display simple system translations and create custom translation experiences.
 
 #### Overview
 
-With the Translation framework, you can offer in-app translations from one language to another. To display simple system translations in your app, use the [`translationPresentation(isPresented:text:attachmentAnchor:arrowEdge:replacementAction:)`](https://developer.apple.com/documentation/SwiftUI/View/translationPresentation(isPresented:text:attachmentAnchor:arrowEdge:replacementAction:)) translation overlay.
+With the Translation framework, you can offer in-app translations from one language to another. To display simple system translations in your app, use the [`translationPresentation(isPresented:text:attachmentAnchor:arrowEdge:replacementAction:)`](https://developer.apple.com/documentation/swiftui/view/translationpresentation(ispresented:text:attachmentanchor:arrowedge:replacementaction:)) translation overlay.
 
 For a more customizable translation experience, use the [`TranslationSession`](translationsession.md) object and its associated translation methods. With the customizable translation APIs, the framework asks a person for permission to download the language translation models, if necessary. You can translate strings efficiently, while checking for language availability before offering a translation.
 
@@ -46,7 +46,7 @@ To run the sample code on a physical iOS device:
 
 #### Translate Text with the Simple Translation Overlay
 
-The *Translate Text* demo shows how to offer a translation using the system UI. The code example below indicates what happens when a person clicks the Translate button in that demo. First, the sample defines a variable to control when the system UI appears using a [`State`](https://developer.apple.com/documentation/SwiftUI/State) property wrapper. Then it defines a variable representing the text to translate. Finally, it passes the `State` property wrapper that controls when the system UI displays along with the text to translate to the [`translationPresentation(isPresented:text:attachmentAnchor:arrowEdge:replacementAction:)`](https://developer.apple.com/documentation/SwiftUI/View/translationPresentation(isPresented:text:attachmentAnchor:arrowEdge:replacementAction:)) function that attaches to the view containing the text to translate.
+The *Translate Text* demo shows how to offer a translation using the system UI. The code example below indicates what happens when a person clicks the Translate button in that demo. First, the sample defines a variable to control when the system UI appears using a [`State`](https://developer.apple.com/documentation/swiftui/state) property wrapper. Then it defines a variable representing the text to translate. Finally, it passes the `State` property wrapper that controls when the system UI displays along with the text to translate to the [`translationPresentation(isPresented:text:attachmentAnchor:arrowEdge:replacementAction:)`](https://developer.apple.com/documentation/swiftui/view/translationpresentation(ispresented:text:attachmentanchor:arrowedge:replacementaction:)) function that attaches to the view containing the text to translate.
 
 ```swift
 struct ViewTranslationView: View {
@@ -83,7 +83,7 @@ The *Replace Text* demo also uses the system UI, and replaces the original text 
 
 For more control over the translation experience, you can create your own in-app translation experiences using the [`TranslationSession`](translationsession.md) object, along with its associated translation functions.
 
-The *Single String* demo shows how to translate a single string of text and update a view. Its code example below defines a `State` property wrapper for the [`TranslationSession.Configuration`](translationsession/configuration.md) object in the view offering the translation, and passes it to a [`translationTask(_:action:)`](https://developer.apple.com/documentation/SwiftUI/View/translationTask(_:action:)) function. Then it uses the `session` instance the task returns to call [`translate(_:)`](translationsession/translate(_:)-4m20l.md) and passes in the string of text to translate. Finally, it updates the view using the [`targetText`](translationsession/response/targettext.md) property from the response.
+The *Single String* demo shows how to translate a single string of text and update a view. Its code example below defines a `State` property wrapper for the [`TranslationSession.Configuration`](translationsession/configuration.md) object in the view offering the translation, and passes it to a [`translationTask(_:action:)`](https://developer.apple.com/documentation/swiftui/view/translationtask(_:action:)) function. Then it uses the `session` instance the task returns to call [`translate(_:)`](translationsession/translate(_:)-4m20l.md) and passes in the string of text to translate. Finally, it updates the view using the [`targetText`](translationsession/response/targettext.md) property from the response.
 
 ```swift
 struct SingleStringView: View {
@@ -136,7 +136,7 @@ This pattern of defining a configuration as a `State` property wrapper and inval
 
 To translate multiple strings between the same languages, it’s most efficient to use one of the batch translation functions of [`TranslationSession`](translationsession.md). You can translate a batch of strings and get the results all at once, or you can receive them incrementally as they arrive.
 
-The *Batch All at Once* demo uses a view model to keep the UI clean and uncluttered. Its code example defines a `State` property wrapper for a [`TranslationSession.Configuration`](translationsession/configuration.md) object in the view offering the translation, and attaches the [`translationTask(_:action:)`](https://developer.apple.com/documentation/SwiftUI/View/translationTask(_:action:)) function to the view that contains the text to translate. Using the `session` instance from the task, it calls the [`translations(from:)`](translationsession/translations(from:).md) function in the view model. The view model maps all of the strings to translate in an array of type [`TranslationSession.Request`](translationsession/request.md), and sets the [`sourceText`](translationsession/request/sourcetext.md) property of the request to the string to translate. The sample then calls [`translations(from:)`](translationsession/translations(from:).md) on the session object and passes in the array of requests to translate. Finally, it maps each response object that returns to the corresponding index in the original array of text.
+The *Batch All at Once* demo uses a view model to keep the UI clean and uncluttered. Its code example defines a `State` property wrapper for a [`TranslationSession.Configuration`](translationsession/configuration.md) object in the view offering the translation, and attaches the [`translationTask(_:action:)`](https://developer.apple.com/documentation/swiftui/view/translationtask(_:action:)) function to the view that contains the text to translate. Using the `session` instance from the task, it calls the [`translations(from:)`](translationsession/translations(from:).md) function in the view model. The view model maps all of the strings to translate in an array of type [`TranslationSession.Request`](translationsession/request.md), and sets the [`sourceText`](translationsession/request/sourcetext.md) property of the request to the string to translate. The sample then calls [`translations(from:)`](translationsession/translations(from:).md) on the session object and passes in the array of requests to translate. Finally, it maps each response object that returns to the corresponding index in the original array of text.
 
 **View**:
 
@@ -317,13 +317,13 @@ For testing, you can delete locally downloaded models in macOS by choosing Syste
 ## See Also
 
 - [func translationPresentation(isPresented: Binding<Bool>, text: String, attachmentAnchor: PopoverAttachmentAnchor, arrowEdge: Edge, replacementAction: ((String) -> Void)?) -> some View
-](../SwiftUI/View/translationPresentation(isPresented:text:attachmentAnchor:arrowEdge:replacementAction:).md)
+](../swiftui/view/translationpresentation(ispresented:text:attachmentanchor:arrowedge:replacementaction:).md)
   Presents a translation popover when a given condition is true.
 - [func translationTask(TranslationSession.Configuration?, action: (TranslationSession) async -> Void) -> some View
-](../SwiftUI/View/translationTask(_:action:).md)
+](../swiftui/view/translationtask(_:action:).md)
   Adds a task to perform before this view appears or when the translation configuration changes.
 - [func translationTask(source: Locale.Language?, target: Locale.Language?, action: (TranslationSession) async -> Void) -> some View
-](../SwiftUI/View/translationTask(source:target:action:).md)
+](../swiftui/view/translationtask(source:target:action:).md)
   Adds a task to perform before this view appears or when the specified source or target languages change.
 - [class TranslationSession](translationsession.md)
   A class that performs translations between a pair of languages.

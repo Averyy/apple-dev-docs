@@ -13,7 +13,7 @@ framework: HIG
 
 An image view displays a single image — or in some cases, an animated sequence of images — on a transparent or opaque background.
 
-![A stylized representation of a photo. The image is tinted red to subtly reflect the red in the original six-color Apple logo.](https://docs-assets.developer.apple.com/published/9b7bd4cdf8b0902c9432643236c14fec/components-image-view-intro~dark%402x.png)
+![A stylized representation of a photo. The image is tinted red to subtly reflect the red in the original six-color Apple logo.](/images/com.apple.HIG/components-image-view-intro~dark@2x.png)
 Within an image view, you can stretch, scale, size to fit, or pin the image to a specific location. Image views are typically not interactive.
 
 ## Best practices
@@ -36,11 +36,11 @@ An image view can contain rich image data in various formats, like PNG, JPEG, an
 Many tvOS images combine multiple layers with transparency to create a feeling of depth. For guidance, see [Layered images](images.md#Layered-images).
 
 ### visionOS
-Windows in visionOS apps and games can use image views to display 2D and stereoscopic images, as well as spatial photos. If your app uses RealityKit, you can also display images of any type outside of image views next to 3D content, or generate a spatial scene from an existing 2D image. For design guidance, see [visionOS](images.md#visionOS); for developer guidance, see [ImagePresentationComponent](../RealityKit/ImagePresentationComponent.md).
+Windows in visionOS apps and games can use image views to display 2D and stereoscopic images, as well as spatial photos. If your app uses RealityKit, you can also display images of any type outside of image views next to 3D content, or generate a spatial scene from an existing 2D image. For design guidance, see [visionOS](images.md#visionOS); for developer guidance, see [ImagePresentationComponent](../realitykit/imagepresentationcomponent.md).
 For guidance on presenting other 3D content in a window or volume, see [visionOS](windows.md#visionOS).
 
 ### watchOS
-**Use SwiftUI to create animations when possible.** Alternatively, you can use WatchKit to animate a sequence of images within an image element if necessary. For developer guidance, see [WKImageAnimatable](../WatchKit/WKImageAnimatable.md).
+**Use SwiftUI to create animations when possible.** Alternatively, you can use WatchKit to animate a sequence of images within an image element if necessary. For developer guidance, see [WKImageAnimatable](../watchkit/wkimageanimatable.md).
 
 ## Resources
 
@@ -51,9 +51,9 @@ For guidance on presenting other 3D content in a window or volume, see [visionOS
 [SF Symbols](sf-symbols.md)
 
 #### Developer documentation
-[Image](../SwiftUI/Image.md) — SwiftUI
-[UIImageView](../UIKit/UIImageView.md) — UIKit
-[NSImageView](../AppKit/NSImageView.md) — AppKit
+[Image](../swiftui/image.md) — SwiftUI
+[UIImageView](../uikit/uiimageview.md) — UIKit
+[NSImageView](../appkit/nsimageview.md) — AppKit
 
 #### Videos
 - [Support HDR images in your app](https://developer.apple.com/videos/play/wwdc2023/10181) - Learn how to identify, load, display, and create High Dynamic Range (HDR) still images in your app. Explore common HDR concepts and find out about the latest updates to the ISO specification. Learn how to identify and display HDR images with SwiftUI and UIKit, create them from ProRAW and RAW captures, and display them in CALayers. We’ll also take you through CoreGraphics support for ISO HDR and share best practices for HDR adoption.

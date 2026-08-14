@@ -16,7 +16,7 @@ You use an inline editable area to let learners edit a small region of code. For
 
 You add an inline editable area by using the special comment expression:
 
-![A diagram showing “/](https://docs-assets.developer.apple.com/published/a28fd46bb1114ace63b637c31e204c6b/specifying-editable-regions-in-a-playground-page-1%402x.png)
+![A diagram showing “/](/images/com.apple.Swift-Playgrounds/specifying-editable-regions-in-a-playground-page-1@2x.png)
 
 The *placeholder text* is text that’s displayed until the learner starts editing and adds their own code. The *content* is text that represents the default value for the Swift code until the value is edited.
 
@@ -31,13 +31,13 @@ for i in 1 ... /*#-editable-code number*/1/*#-end-editable-code*/ {
 
 When displayed on a playground page, the code from the example above is displayed with the placeholder text in a tappable button that activates editing.
 
-![A screenshot showing the rendered version of the code listing above. ](https://docs-assets.developer.apple.com/published/2c19eb5382306077600467b0df026edf/specifying-editable-regions-in-a-playground-page-2%402x.png)
+![A screenshot showing the rendered version of the code listing above. ](/images/com.apple.Swift-Playgrounds/specifying-editable-regions-in-a-playground-page-2@2x.png)
 
 ##### Mark Multiline Editable Areas
 
 You use the same special comment syntax to mark editable areas that span multiple lines.
 
-![None](https://docs-assets.developer.apple.com/published/1fe225e19fb38fb8b5681d1be6b1c6fd/specifying-editable-regions-in-a-playground-page-3%402x.png)
+![None](/images/com.apple.Swift-Playgrounds/specifying-editable-regions-in-a-playground-page-3@2x.png)
 
 The content you write inside multiline editable areas must be indented to the same level as the surrounding code.
 
@@ -45,9 +45,9 @@ The content you write inside multiline editable areas must be indented to the sa
 
 You can add placeholder tokens to editable areas. Placeholder tokens are rendered as selectable labels and can contain spaces and special characters. You can include the name of any Swift type in a placeholder token to restrict the type of values entered in the editable area.
 
-![Diagram showing placeholder token syntax. The first line shows “<#”, followed by placeholder text, terminated with “#>”. The second like shows “<#T##”, followed by placeholder text, followed by “##”, followed by the type name placeholder, terminated with “#>”. ](https://docs-assets.developer.apple.com/published/d997569d0924f06a8395c824b875150c/specifying-editable-regions-in-a-playground-page-4%402x.png)
+![Diagram showing placeholder token syntax. The first line shows “<#”, followed by placeholder text, terminated with “#>”. The second like shows “<#T##”, followed by placeholder text, followed by “##”, followed by the type name placeholder, terminated with “#>”. ](/images/com.apple.Swift-Playgrounds/specifying-editable-regions-in-a-playground-page-4@2x.png)
 
-Selecting a placeholder on a playground page shows the shortcut bar. Selecting a placeholder with a defined type shows a type-specific popover, if one exists. For example, if a typed placeholder specifies an [`Int`](https://developer.apple.com/documentation/Swift/Int); selecting the placeholder opens the number-entry popover.
+Selecting a placeholder on a playground page shows the shortcut bar. Selecting a placeholder with a defined type shows a type-specific popover, if one exists. For example, if a typed placeholder specifies an [`Int`](https://developer.apple.com/documentation/swift/int); selecting the placeholder opens the number-entry popover.
 
 The following shows variable declarations with untyped and typed placeholders tokens.
 

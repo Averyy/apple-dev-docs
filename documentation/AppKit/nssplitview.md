@@ -18,7 +18,7 @@ class NSSplitView
 
 A split view manages the dividers and orientation for a split view controller ([`NSSplitViewController`](nssplitviewcontroller.md)). By default, dividers have a horizontal orientation so that the split view arranges its panes vertically from top to bottom.
 
-Divider indices are zero-based. If the [`isVertical`](nssplitview/isvertical.md) property is [`false`](https://developer.apple.com/documentation/Swift/false), which is the default value, the top divider has an index of `0`. If [`isVertical`](nssplitview/isvertical.md) is [`true`](https://developer.apple.com/documentation/Swift/true), the leading divider has an index of `0`.
+Divider indices are zero-based. If the [`isVertical`](nssplitview/isvertical.md) property is [`false`](https://developer.apple.com/documentation/swift/false), which is the default value, the top divider has an index of `0`. If [`isVertical`](nssplitview/isvertical.md) is [`true`](https://developer.apple.com/documentation/swift/true), the leading divider has an index of `0`.
 
 ## Topics
 
@@ -87,24 +87,24 @@ Divider indices are zero-based. If the [`isVertical`](nssplitview/isvertical.md)
 ### Inherits From
 - [NSView](nsview.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
 - [NSAccessibilityElementProtocol](nsaccessibilityelementprotocol.md)
 - [NSAccessibilityProtocol](nsaccessibilityprotocol.md)
 - [NSAnimatablePropertyContainer](nsanimatablepropertycontainer.md)
 - [NSAppearanceCustomization](nsappearancecustomization.md)
-- [NSCoding](../Foundation/NSCoding.md)
+- [NSCoding](../foundation/nscoding.md)
 - [NSDraggingDestination](nsdraggingdestination.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 - [NSStandardKeyBindingResponding](nsstandardkeybindingresponding.md)
 - [NSTouchBarProvider](nstouchbarprovider.md)
 - [NSUserActivityRestoring](nsuseractivityrestoring.md)
 - [NSUserInterfaceItemIdentification](nsuserinterfaceitemidentification.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

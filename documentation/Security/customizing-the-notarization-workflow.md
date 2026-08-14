@@ -18,7 +18,7 @@ The easiest way to notarize your app is through the Xcode user interface, as des
 
 To prepare an app for notarization, you must export the app from Xcode. Using Xcode, you can export your archived app by clicking Distribute App in the Organizer window. But in a scripted build environment, you use the `xcodebuild` utility to perform the export. Because export directly follows archiving, the archive’s post-action script is a convenient place to perform the export from. You can edit the post-action from the scheme editor in Xcode.
 
-![Screenshot of Xcode’s scheme editor showing an example of a post-actions script for the Archive action.](https://docs-assets.developer.apple.com/published/7e61f03a09147103ef19a7ab9a244b17/media-3563043%402x.png)
+![Screenshot of Xcode’s scheme editor showing an example of a post-actions script for the Archive action.](/images/com.apple.security/media-3563043@2x.png)
 
 The script begins by exporting the archive with `xcodebuild`:
 
@@ -29,7 +29,7 @@ EXPORT_PATH="$TEMP_DIR/Export"
 
 You tell `xcodebuild` which archive to export using an environment variable automatically defined by Xcode, and provide a location for the output by defining the `EXPORT_PATH` variable. Use the `exportOptionsPlist` option to indicate an options property list that configures the export operation. You typically obtain this file by exporting from Xcode just once. The export options file appears alongside the app in the export directory:
 
-![Getting the ExportOptions.plist file from Xcode.](https://docs-assets.developer.apple.com/published/3732da73e3aa8a3537890a336b3d3f63/media-3088613%402x.png)
+![Getting the ExportOptions.plist file from Xcode.](/images/com.apple.security/media-3088613@2x.png)
 
 Alternatively, you can create a custom export options property list file with a text or property list editor.
 
@@ -102,7 +102,7 @@ Save the `id` value to use later when checking the status of your request. For m
 % xcrun notarytool --help
 ```
 
-> **Note**:  To avoid a dependency on Xcode for interacting with the notary service, you can use the [`Notary API`](https://developer.apple.com/documentation/NotaryAPI) described in [`Submitting software for notarization over the web`](https://developer.apple.com/documentation/NotaryAPI/submitting-software-for-notarization-over-the-web).
+> **Note**:  To avoid a dependency on Xcode for interacting with the notary service, you can use the [`Notary API`](https://developer.apple.com/documentation/notaryapi) described in [`Submitting software for notarization over the web`](https://developer.apple.com/documentation/notaryapi/submitting-software-for-notarization-over-the-web).
 
 ##### Check the Status of Your Request
 
@@ -172,7 +172,7 @@ To incorporate notarization into a custom workflow, your build server needs acce
 
 The `notarytool` tool uses Amazon S3 Transfer Acceleration by default, which connects to `notary-submissions-prod.s3-accelerate.amazonaws.com`. Use the `no-s3-acceleration` flag during submission to use the `notary-submissions-prod.s3.us-west-2.amazonaws.com` endpoint instead. You can find the range of Internet Protocol (IP) addresses used by Amazon S3 in the documentation on [`https://aws.amazon.com`](https://developer.apple.comhttps://aws.amazon.com).
 
-In addition, `stapler` uses [`CloudKit`](https://developer.apple.com/documentation/CloudKit) to download tickets, which requires access to the following IP address ranges, all on port 443:
+In addition, `stapler` uses [`CloudKit`](https://developer.apple.com/documentation/cloudkit) to download tickets, which requires access to the following IP address ranges, all on port 443:
 
 ```console
 17.36.196.0/22
@@ -219,7 +219,7 @@ For large uploads, try to exclude non-executable data from notarization. For exa
 
 ## See Also
 
-- [Notary API](../NotaryAPI/NotaryAPI.md)
+- [Notary API](../notaryapi/notaryapi.md)
   Submit your macOS software for notarization through a web interface.
 
 

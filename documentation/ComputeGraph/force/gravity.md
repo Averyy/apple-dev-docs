@@ -17,7 +17,7 @@ void force::gravity(float gravity)
 
 #### Discussion
 
-> **Note**: ![Graph](https://docs-assets.developer.apple.com/published/40ba896903ec91c1cd8943e5cca5fe8e/force__gravity.svg)
+> **Note**: ![Graph](/images/com.apple.computegraph/force__gravity.svg)
 
 ## Parameters
 

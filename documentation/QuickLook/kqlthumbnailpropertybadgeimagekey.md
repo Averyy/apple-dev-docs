@@ -16,7 +16,7 @@ let kQLThumbnailPropertyBadgeImageKey: CFString!
 
 #### Discussion
 
-The associated value for this key is a [`CGImage`](https://developer.apple.com/documentation/CoreGraphics/CGImage).
+The associated value for this key is a [`CGImage`](https://developer.apple.com/documentation/coregraphics/cgimage).
 
 ## See Also
 

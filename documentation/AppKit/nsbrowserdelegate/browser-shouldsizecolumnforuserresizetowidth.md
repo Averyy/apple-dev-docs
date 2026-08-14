@@ -27,7 +27,7 @@ This method applies only to browsers with resize type [`NSBrowser.ColumnResizing
 
 - `browser`: The browser.
 - `columnIndex`: The index of the column to size.
-- `forUserResize`: Currently, this is always set to [`false`](https://developer.apple.com/documentation/Swift/false).
+- `forUserResize`: Currently, this is always set to [`false`](https://developer.apple.com/documentation/swift/false).
 - `suggestedWidth`: The suggested width for the column.
 
 ## See Also

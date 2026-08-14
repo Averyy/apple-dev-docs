@@ -21,7 +21,7 @@ static let GCKeyboardDidDisconnect: NSNotification.Name
 
 #### Discussion
 
-The notification object is a [`GCKeyboard`](https://developer.apple.com/documentation/GameController/GCKeyboard) object that represents one or more keyboards. If the user connects multiple keyboards, the framework posts this notification only after the last keyboard disconnects from the device.
+The notification object is a [`GCKeyboard`](https://developer.apple.com/documentation/gamecontroller/gckeyboard) object that represents one or more keyboards. If the user connects multiple keyboards, the framework posts this notification only after the last keyboard disconnects from the device.
 
 The system posts this notification on the main actor.
 

@@ -20,7 +20,7 @@ Call this method to pause a Vm that’s in the [`VZVirtualMachine.State.running`
 
 ## Parameters
 
-- `completionHandler`: The block to call with the results of the pause attempt. This block has no return value and has one [`NSError`](https://developer.apple.com/documentation/Foundation/NSError) object as its parameter: - **result**: A result type that contains an error object when the VM fails to pause.
+- `completionHandler`: The block to call with the results of the pause attempt. This block has no return value and has one [`NSError`](https://developer.apple.com/documentation/foundation/nserror) object as its parameter: - **result**: A result type that contains an error object when the VM fails to pause.
 
 ## See Also
 

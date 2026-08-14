@@ -23,7 +23,7 @@ struct Attributed
 
 #### Overview
 
-Apply the [`Duration.TimeFormatStyle.Attributed`](duration/timeformatstyle/attributed-swift.struct.md) property to a configured [`Duration.TimeFormatStyle`](duration/timeformatstyle.md) to produce an instance of this style. You can then format a duration with this style to create a formatted [`AttributedString`](https://developer.apple.com/documentation/Foundation/AttributedString). The formatted attributed string contains instances of [`AttributeScopes.FoundationAttributes.DateFieldAttribute`](https://developer.apple.com/documentation/Foundation/AttributeScopes/FoundationAttributes/DateFieldAttribute) for runs with formatted durations.
+Apply the [`Duration.TimeFormatStyle.Attributed`](duration/timeformatstyle/attributed-swift.struct.md) property to a configured [`Duration.TimeFormatStyle`](duration/timeformatstyle.md) to produce an instance of this style. You can then format a duration with this style to create a formatted [`AttributedString`](https://developer.apple.com/documentation/foundation/attributedstring). The formatted attributed string contains instances of [`AttributeScopes.FoundationAttributes.DateFieldAttribute`](https://developer.apple.com/documentation/foundation/attributescopes/foundationattributes/datefieldattribute) for runs with formatted durations.
 
 The following example formats a duration as an attributed string:
 
@@ -64,11 +64,11 @@ The resulting `attributedDuration`, representing the string `1:10:32` contains t
 ### Conforms To
 - [Copyable](copyable.md)
 - [Decodable](decodable.md)
-- [DiscreteFormatStyle](../Foundation/DiscreteFormatStyle.md)
+- [DiscreteFormatStyle](../foundation/discreteformatstyle.md)
 - [Encodable](encodable.md)
 - [Equatable](equatable.md)
 - [Escapable](escapable.md)
-- [FormatStyle](../Foundation/FormatStyle.md)
+- [FormatStyle](../foundation/formatstyle.md)
 - [Hashable](hashable.md)
 - [Sendable](sendable.md)
 - [SendableMetatype](sendablemetatype.md)

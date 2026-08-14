@@ -19,7 +19,7 @@ var recognizedItems: AsyncStream<[RecognizedItem]> { get }
 
 #### Discussion
 
-You can use this property instead of the [`DataScannerViewControllerDelegate`](datascannerviewcontrollerdelegate.md) protocol methods to track the recognized items in real time. To get the changes between arrays, use the [`difference(from:)`](https://developer.apple.com/documentation/Swift/Array/difference(from:)) method. For more information on asynchronous streams, see [`Concurrency`](https://developer.apple.com/documentation/Swift/concurrency).
+You can use this property instead of the [`DataScannerViewControllerDelegate`](datascannerviewcontrollerdelegate.md) protocol methods to track the recognized items in real time. To get the changes between arrays, use the [`difference(from:)`](https://developer.apple.com/documentation/swift/array/difference(from:)) method. For more information on asynchronous streams, see [`Concurrency`](https://developer.apple.com/documentation/swift/concurrency).
 
 Text items in this array appear in the reading order of the language and region.
 

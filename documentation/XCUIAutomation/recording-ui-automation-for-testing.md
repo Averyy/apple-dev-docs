@@ -10,13 +10,13 @@ When you write UI tests with XCUIAutomation, you use [`XCUIElementQuery`](xcuiel
 
 ##### Create a Test Class and Test Method
 
-In the UI automation test target for your app, create a class that subclasses [`XCTestCase`](https://developer.apple.com/documentation/XCTest/XCTestCase). Then add a test method with no parameters, and a name that begins with the word `test`. For more information on test methods, see [`Defining Test Cases and Test Methods`](https://developer.apple.com/documentation/XCTest/defining-test-cases-and-test-methods).
+In the UI automation test target for your app, create a class that subclasses [`XCTestCase`](https://developer.apple.com/documentation/xctest/xctestcase). Then add a test method with no parameters, and a name that begins with the word `test`. For more information on test methods, see [`Defining Test Cases and Test Methods`](https://developer.apple.com/documentation/xctest/defining-test-cases-and-test-methods).
 
 ##### Record Your Interaction with Your App
 
 Click in the test method body at the line where you want to record your test’s interactions with your app, and click the record button (red dot) at the edge of the editor.
 
-![A screenshot of Xcode, showing the Record UI Test button in the editor sidebar.](https://docs-assets.developer.apple.com/published/d8c62fe86140904441270665c719e976/recording-ui-automation-xcode%402x.png)
+![A screenshot of Xcode, showing the Record UI Test button in the editor sidebar.](/images/com.apple.xcuiautomation/recording-ui-automation-xcode@2x.png)
 
 Xcode asks if you want to start recording a UI test. Click Yes.
 
@@ -36,7 +36,7 @@ To commit your choice of element query, double-click the entry in the disclosure
 
 ##### Verify the State of Your App
 
-In your test method, after the interactions that Xcode recorded, add assertions to verify that your app’s UI is in the expected state following the interactions. Use element queries to find UI elements, and assertion macros from [`XCTest`](https://developer.apple.com/documentation/XCTest) to assert that the elements have the expected properties.
+In your test method, after the interactions that Xcode recorded, add assertions to verify that your app’s UI is in the expected state following the interactions. Use element queries to find UI elements, and assertion macros from [`XCTest`](https://developer.apple.com/documentation/xctest) to assert that the elements have the expected properties.
 
 > **Note**:  A test method that doesn’t contain any assertions passes if it runs to completion without throwing any errors. Use this to test that recorded interactions in your app are still possible in updated versions, and that the app doesn’t crash when you interact with it.
 

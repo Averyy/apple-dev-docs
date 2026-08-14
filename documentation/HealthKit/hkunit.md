@@ -29,7 +29,7 @@ The unit class supports most standard SI units (meters, seconds, and grams), SI 
 
 You use units when working with HealthKit quantities. Quantities store both the value (as a `double` data type) and its corresponding unit. You can then request the value from the quantity in any compatible units. For more information on working with quantities, see [`HKQuantity`](hkquantity.md).
 
-> **Note**: Number formatters that use units (for example, [`EnergyFormatter`](https://developer.apple.com/documentation/Foundation/EnergyFormatter), [`LengthFormatter`](https://developer.apple.com/documentation/Foundation/LengthFormatter), and [`MassFormatter`](https://developer.apple.com/documentation/Foundation/MassFormatter)) use a custom enumeration to specify their units. For example, the [`EnergyFormatter`](https://developer.apple.com/documentation/Foundation/EnergyFormatter) class uses the [`EnergyFormatter.Unit`](https://developer.apple.com/documentation/Foundation/EnergyFormatter/Unit) enum. The [`HKUnit`](hkunit.md) class provides several methods to translate between the formatter enumerations and the HealthKit units. For more information, see Working with formatter units.
+> **Note**: Number formatters that use units (for example, [`EnergyFormatter`](https://developer.apple.com/documentation/foundation/energyformatter), [`LengthFormatter`](https://developer.apple.com/documentation/foundation/lengthformatter), and [`MassFormatter`](https://developer.apple.com/documentation/foundation/massformatter)) use a custom enumeration to specify their units. For example, the [`EnergyFormatter`](https://developer.apple.com/documentation/foundation/energyformatter) class uses the [`EnergyFormatter.Unit`](https://developer.apple.com/documentation/foundation/energyformatter/unit) enum. The [`HKUnit`](hkunit.md) class provides several methods to translate between the formatter enumerations and the HealthKit units. For more information, see Working with formatter units.
 
 ##### Using Units
 
@@ -225,19 +225,19 @@ Additionally, the unit class uses a single unit instance to represent all copies
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCoding](../Foundation/NSCoding.md)
-- [NSCopying](../Foundation/NSCopying.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [NSSecureCoding](../Foundation/NSSecureCoding.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCoding](../foundation/nscoding.md)
+- [NSCopying](../foundation/nscopying.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

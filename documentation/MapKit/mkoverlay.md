@@ -44,7 +44,7 @@ If you add an overlay to a map view as an annotation, instead of adding it as an
 
 ### Inherits From
 - [MKAnnotation](mkannotation.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 ### Conforming Types
 - [MKCircle](mkcircle.md)
 - [MKGeodesicPolyline](mkgeodesicpolyline.md)

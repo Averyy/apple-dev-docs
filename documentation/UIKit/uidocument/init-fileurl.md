@@ -27,7 +27,7 @@ After you create a document object and no file exists for it yet, you should nex
 
 ## Parameters
 
-- `url`: A file URL identifying the location in the application sandbox where document data is to be written. Passing in `nil` or an empty URL results in the throwing of an [`invalidArgumentException`](https://developer.apple.com/documentation/Foundation/NSExceptionName/invalidArgumentException).
+- `url`: A file URL identifying the location in the application sandbox where document data is to be written. Passing in `nil` or an empty URL results in the throwing of an [`invalidArgumentException`](https://developer.apple.com/documentation/foundation/nsexceptionname/invalidargumentexception).
 
 ## See Also
 

@@ -18,7 +18,9 @@ class OSCollection : OSObject
 
 OSCollection is the abstract superclass for all Libkern C++ object collections. It defines the necessary interfaces for managing storage space and iterating through an arbitrary collection (see the OSIterator and OSCollectionIterator classes). It is up to concrete subclasses to define their specific content management functions.
 
-With very few exceptions in the I/O Kit, all Libkern-based C++ classes, functions, and macros are  to use in a primary interrupt context. Consult the I/O Kit documentation related to primary interrupts for more information.
+**Use Restrictions**
+
+With very few exceptions in the I/O Kit, all Libkern-based C++ classes, functions, and macros are **unsafe** to use in a primary interrupt context. Consult the I/O Kit documentation related to primary interrupts for more information.
 
 OSCollection provides no concurrency protection; it's up to the usage context to provide any protection necessary. Some portions of the I/O Kit, such as IORegistryEntry, handle synchronization via defined member functions for setting properties.
 
@@ -53,11 +55,11 @@ OSCollection provides no concurrency protection; it's up to the usage context to
 - [_OSCollectionFlags](oscollection/oscollectionflags.md)
 ### Instance Methods
 - [- copyCollection](oscollection/1569367-copycollection.md)
-- [- ensureCapacity](../driverkit/oscollection/ensurecapacity.md)
-- [- flushCollection](../driverkit/oscollection/flushcollection.md)
-- [- getCapacity](../driverkit/oscollection/getcapacity.md)
+- [- ensureCapacity](oscollection/3438145-ensurecapacity.md)
+- [- flushCollection](oscollection/3438146-flushcollection.md)
+- [- getCapacity](oscollection/3438147-getcapacity.md)
 - [- getCapacityIncrement](oscollection/1569369-getcapacityincrement.md)
-- [- getCount](../driverkit/oscollection/getcount.md)
+- [- getCount](oscollection/3438148-getcount.md)
 - [- getMetaClass](oscollection/1569378-getmetaclass.md)
 - [- getNextObjectForIterator](oscollection/1569375-getnextobjectforiterator.md)
 - [- haveUpdated](oscollection/1569376-haveupdated.md)

@@ -21,7 +21,7 @@ let MKLaunchOptionsMapSpanKey: String
 
 #### Discussion
 
-The value of this key is an [`NSValue`](https://developer.apple.com/documentation/Foundation/NSValue) object that contains an encoded [`MKCoordinateSpan`](mkcoordinatespan.md) structure.
+The value of this key is an [`NSValue`](https://developer.apple.com/documentation/foundation/nsvalue) object that contains an encoded [`MKCoordinateSpan`](mkcoordinatespan.md) structure.
 
 ## See Also
 

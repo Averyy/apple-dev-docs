@@ -506,6 +506,7 @@
 - [priority_queue_remove](3553537-priority_queue_remove.md)
 - [proc_find_audit_token](4540848-proc_find_audit_token.md)
 - [proc_find_ident](3585209-proc_find_ident.md)
+- [proc_ident](4540849-proc_ident.md)
 - [proc_is_alien](3656597-proc_is_alien.md)
 - [proc_is_exotic](3656598-proc_is_exotic.md)
 - [proc_is_simulated](3755467-proc_is_simulated.md)
@@ -726,7 +727,7 @@
 - [uuid_unparse](1470620-uuid_unparse.md)
 - [uuid_unparse_lower](1470622-uuid_unparse_lower.md)
 - [uuid_unparse_upper](1470618-uuid_unparse_upper.md)
-- [vA128Shift(_:_:)](../accelerate/va128shift(_:_:).md)
+- [vA128Shift](1411110-va128shift.md)
   128-bit arithmetic (signed) shift.
 - [vDSP_biquadm](1579994-vdsp_biquadm.md)
   Applies a single-precision multichannel biquad IIR filter.
@@ -809,31 +810,31 @@
   Complex vector copy; single precision.
 - [vDSP_zvmul](1579954-vdsp_zvmul.md)
   Multiplies two complex vectors, optionally conjugating one of them; single precision.
-- [vLL128Shift(_:_:)](../accelerate/vll128shift(_:_:).md)
+- [vLL128Shift](1411104-vll128shift.md)
   128-bit logical left shift.
-- [vLR128Shift(_:_:)](../accelerate/vlr128shift(_:_:).md)
+- [vLR128Shift](1411111-vlr128shift.md)
   128-bit logical right shift.
-- [vS128Add(_:_:)](../accelerate/vs128add(_:_:).md)
+- [vS128Add](1411115-vs128add.md)
   Signed 128-bit addition (modular arithmetic).
-- [vS128AddS(_:_:)](../accelerate/vs128adds(_:_:).md)
+- [vS128AddS](1411120-vs128adds.md)
   Signed 128-bit addition with saturation (clipping).
-- [vS128Sub(_:_:)](../accelerate/vs128sub(_:_:).md)
+- [vS128Sub](1411118-vs128sub.md)
   Signed 128-bit subtraction (modular arithmetic).
-- [vS128SubS(_:_:)](../accelerate/vs128subs(_:_:).md)
+- [vS128SubS](1411116-vs128subs.md)
   Signed 128-bit subtraction with saturation (clipping).
-- [vS64FullMulOdd(_:_:)](../accelerate/vs64fullmulodd(_:_:).md)
+- [vS64FullMulOdd](1411122-vs64fullmulodd.md)
   Signed 64-bit multiplication; results are twice as wide as multiplicands, odd-numbered elements of multiplicand vectors are used.  Note the big-endian convention: the leftmost element is element 0.
-- [vS64SubS(_:_:)](../accelerate/vs64subs(_:_:).md)
+- [vS64SubS](1411100-vs64subs.md)
   Signed 64-bit subtraction with saturation (clipping).
-- [vU128Add(_:_:)](../accelerate/vu128add(_:_:).md)
+- [vU128Add](1411106-vu128add.md)
   Unsigned 128-bit addition (modular arithmetic).
-- [vU128AddS(_:_:)](../accelerate/vu128adds(_:_:).md)
+- [vU128AddS](1411102-vu128adds.md)
   Unsigned 128-bit addition with saturation (clipping).
-- [vU128Sub(_:_:)](../accelerate/vu128sub(_:_:).md)
+- [vU128Sub](1411108-vu128sub.md)
   Unsigned 128-bit subtraction (modular arithmetic).
-- [vU128SubS(_:_:)](../accelerate/vu128subs(_:_:).md)
+- [vU128SubS](1411113-vu128subs.md)
   Unsigned 128-bit subtraction with saturation (clipping).
-- [vU64FullMulOdd(_:_:)](../accelerate/vu64fullmulodd(_:_:).md)
+- [vU64FullMulOdd](1411109-vu64fullmulodd.md)
   Unsigned 64-bit multiplication; results are twice as wide as multiplicands, odd-numbered elements of multiplicand vectors are used.  Note the big-endian convention: the leftmost element is element 0.
 - [vcount](1562377-vcount.md)
   Count total references to a given file, disregarding "kusecount" (event listener, as with O_EVTONLY) references.

@@ -21,7 +21,7 @@ typealias ACAccountStoreRequestAccessCompletionHandler = (Bool, (any Error)?) ->
 
 The completion handler parameters are:
 
-- **`granted`**: A Boolean value indicating whether access is granted. [`true`](https://developer.apple.com/documentation/Swift/true) if access is granted; otherwise [`false`](https://developer.apple.com/documentation/Swift/false).
+- **`granted`**: A Boolean value indicating whether access is granted. [`true`](https://developer.apple.com/documentation/swift/true) if access is granted; otherwise [`false`](https://developer.apple.com/documentation/swift/false).
 - **`error`**: An error, if one occurred.
 
 ## See Also

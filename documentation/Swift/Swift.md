@@ -42,7 +42,7 @@ Swift is developed in the open. To learn more about the open source Swift projec
 ## Topics
 
 ### Essentials
-- [Swift updates](../Updates/Swift.md)
+- [Swift updates](../updates/swift.md)
   Learn about important changes to Swift.
 - [Adopting strict concurrency in Swift 6 apps](adoptingswift6.md)
   Enable strict concurrency checking to find data races at compile time.

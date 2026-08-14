@@ -25,8 +25,8 @@ This count may change over time if the query allows live-updates.
 ## Parameters
 
 - `query`: The query.
-- `name`: The attribute name to return the result count of. If the attribute is not one of those requested in the   parameter, the behavior is undefined.
-- `value`: The attribute value for which to return the number of results with that value. This parameter may be  , in which case the number of results that do not contain the specified attribute is returned.
+- `name`: The attribute name to return the result count of. If the attribute is not one of those requested in the `valueListAttrs` parameter, the behavior is undefined.
+- `value`: The attribute value for which to return the number of results with that value. This parameter may be `NULL`, in which case the number of results that do not contain the specified attribute is returned.
 
 ## See Also
 

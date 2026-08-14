@@ -22,7 +22,7 @@ let kCGImagePropertyHEICSFrameInfoArray: CFString
 
 #### Discussion
 
-The value of this property is a [`CFArray`](https://developer.apple.com/documentation/CoreFoundation/CFArray). Each [`CFDictionary`](https://developer.apple.com/documentation/CoreFoundation/CFDictionary) in the array contains timing information about an image in the sequence.
+The value of this property is a [`CFArray`](https://developer.apple.com/documentation/corefoundation/cfarray). Each [`CFDictionary`](https://developer.apple.com/documentation/corefoundation/cfdictionary) in the array contains timing information about an image in the sequence.
 
 ## See Also
 

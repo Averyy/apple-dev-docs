@@ -16,9 +16,9 @@ let NSUserActivityDocumentURLKey: String
 
 #### Discussion
 
-You use this key in the [`userInfo`](https://developer.apple.com/documentation/Foundation/NSUserActivity/userInfo) dictionary of an [`NSUserActivity`](https://developer.apple.com/documentation/Foundation/NSUserActivity) object. Its value is the URL of the document associated with the user activity.
+You use this key in the [`userInfo`](https://developer.apple.com/documentation/foundation/nsuseractivity/userinfo) dictionary of an [`NSUserActivity`](https://developer.apple.com/documentation/foundation/nsuseractivity) object. Its value is the URL of the document associated with the user activity.
 
-When the `NSUbiquitousDocumentUserActivityType` key is present in a [`CFBundleDocumentTypes`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/CFBundleDocumentTypes) entry, AppKit automatically creates an [`NSUserActivity`](https://developer.apple.com/documentation/Foundation/NSUserActivity) object for documents in iCloud, using the given activity type.
+When the `NSUbiquitousDocumentUserActivityType` key is present in a [`CFBundleDocumentTypes`](https://developer.apple.com/documentation/bundleresources/information-property-list/cfbundledocumenttypes) entry, AppKit automatically creates an [`NSUserActivity`](https://developer.apple.com/documentation/foundation/nsuseractivity) object for documents in iCloud, using the given activity type.
 
 ## See Also
 

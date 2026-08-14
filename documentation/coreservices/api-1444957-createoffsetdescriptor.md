@@ -21,7 +21,7 @@ A result code. See [`Result Codes`](https://developer.apple.com/documentation/ap
 ## Parameters
 
 - `theOffset`: A positive integer that specifies the offset from the beginning of the container (the first element has an offset of 1), or a negative integer that specifies the offset from the end (the last element has an offset of –1).
-- `theDescriptor`: A pointer to a descriptor. On successful return, the offset descriptor created by  . On error, returns a null descriptor. Your application must dispose of the descriptor after it has finished using it. See  .
+- `theDescriptor`: A pointer to a descriptor. On successful return, the offset descriptor created by `CreateOffsetDescriptor`. On error, returns a null descriptor. Your application must dispose of the descriptor after it has finished using it. See [`AEDesc`](aedesc.md).
 
 ## See Also
 

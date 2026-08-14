@@ -81,7 +81,7 @@ id <MTLBlitCommandEncoder> blitEncoder = [commandBuffer blitCommandEncoder];
 [commandBuffer commit];
 ```
 
-To optimize a drawable from an [`MTKView`](https://developer.apple.com/documentation/MetalKit/MTKView) for GPU access, set the view’s [`framebufferOnly`](https://developer.apple.com/documentation/MetalKit/MTKView/framebufferOnly) property to [`true`](https://developer.apple.com/documentation/Swift/true). This property configures the texture exclusively as a render target and displayable resource.
+To optimize a drawable from an [`MTKView`](https://developer.apple.com/documentation/metalkit/mtkview) for GPU access, set the view’s [`framebufferOnly`](https://developer.apple.com/documentation/metalkit/mtkview/framebufferonly) property to [`true`](https://developer.apple.com/documentation/swift/true). This property configures the texture exclusively as a render target and displayable resource.
 
 ##### Optimize Texture Data for Cpu Access
 
@@ -167,7 +167,7 @@ For guidance, see [`Optimize texture data for GPU access`](optimizing-texture-da
 
 In some cases, your texture data may benefit from opting out of optimization for GPU access, for example, when optimization regresses your app’s performance (particularly for render target read-backs on the CPU).
 
-First, create a texture descriptor and set its [`allowGPUOptimizedContents`](mtltexturedescriptor/allowgpuoptimizedcontents.md) property to [`false`](https://developer.apple.com/documentation/Swift/false).
+First, create a texture descriptor and set its [`allowGPUOptimizedContents`](mtltexturedescriptor/allowgpuoptimizedcontents.md) property to [`false`](https://developer.apple.com/documentation/swift/false).
 
 **Swift**:
 
@@ -244,7 +244,7 @@ id <MTLTexture> texture = [device newTextureWithDescriptor:textureDescriptor];
 - [enum MTLTextureCompressionType](mtltexturecompressiontype.md)
 - [class MTLTextureDescriptor](mtltexturedescriptor.md)
   An instance that you use to configure new Metal texture instances.
-- [class MTKTextureLoader](../MetalKit/MTKTextureLoader.md)
+- [class MTKTextureLoader](../metalkit/mtktextureloader.md)
   An object that creates textures from existing data in common image formats.
 - [class MTLSharedTextureHandle](mtlsharedtexturehandle.md)
   A texture handle that can be shared across process address space boundaries.

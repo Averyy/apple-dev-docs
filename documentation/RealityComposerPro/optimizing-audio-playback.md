@@ -8,13 +8,13 @@ Balance audio quality against CPU, memory, and power cost when configuring playb
 
 Reality Composer Pro makes it easy to drop a sound into a scene, but the defaults behind that convenience carry real performance costs. Whether an asset streams or preloads, which playback component it uses, and the property values left at their defaults all affect CPU load, memory footprint, and power consumption — costs that aren’t obvious from the Inspector alone. Left unexamined, a scene can end up spending its audio budget on the wrong tradeoffs: high memory use for sounds that didn’t need it, ongoing decode work on the audio thread for assets that could have preloaded once, or full spatialization cost for sounds that only needed a fixed stereo mix.
 
-![A screenshot of a Reality Composer Pro Scene with an audio asset opened in the Inspector.](https://docs-assets.developer.apple.com/published/38442e94ea52826322c532b9a28bd750/AudioVillageAtmosphere%402x.png)
+![A screenshot of a Reality Composer Pro Scene with an audio asset opened in the Inspector.](/images/RealityComposerPro/AudioVillageAtmosphere@2x.png)
 
 This article covers the tradeoffs that matter most as a scene grows: memory versus compute when choosing how an asset loads, spatialization cost versus realism when choosing a playback component and tuning its properties, and organizational choices — like grouping related assets and sounds — that pay off as the number of audio sources increases. It assumes familiarity with Reality Composer Pro’s audio components and asset workflow. For that background, see [`Adding audio components in Reality Composer Pro`](introduction-to-reality-composer-pro-audio.md).
 
 #### Choose a Loading Strategy for Each Audio Asset
 
-Every audio asset in a scene loads using one of two strategies, set through [`AudioFileResource.LoadingStrategy`](https://developer.apple.com/documentation/RealityKit/AudioFileResource/LoadingStrategy-swift.enum): [`AudioFileResource.LoadingStrategy.preload`](https://developer.apple.com/documentation/RealityKit/AudioFileResource/LoadingStrategy-swift.enum/preload) decodes the entire asset into memory up front, and [`AudioFileResource.LoadingStrategy.stream`](https://developer.apple.com/documentation/RealityKit/AudioFileResource/LoadingStrategy-swift.enum/stream) decodes it incrementally from disk during playback. In Reality Composer Pro, this is the **Should Stream** toggle in the audio file Inspector — see [`Adding audio components in Reality Composer Pro`](introduction-to-reality-composer-pro-audio.md) for where to find that control.
+Every audio asset in a scene loads using one of two strategies, set through [`AudioFileResource.LoadingStrategy`](https://developer.apple.com/documentation/realitykit/audiofileresource/loadingstrategy-swift.enum): [`AudioFileResource.LoadingStrategy.preload`](https://developer.apple.com/documentation/realitykit/audiofileresource/loadingstrategy-swift.enum/preload) decodes the entire asset into memory up front, and [`AudioFileResource.LoadingStrategy.stream`](https://developer.apple.com/documentation/realitykit/audiofileresource/loadingstrategy-swift.enum/stream) decodes it incrementally from disk during playback. In Reality Composer Pro, this is the **Should Stream** toggle in the audio file Inspector — see [`Adding audio components in Reality Composer Pro`](introduction-to-reality-composer-pro-audio.md) for where to find that control.
 
 Match the strategy to how the asset behaves in the scene:
 
@@ -33,7 +33,7 @@ Ranked from most to least expensive:
 - **Ambient Audio** costs less to render than Spatial Audio: it still applies orientation, but without Spatial Audio’s distance attenuation or reverb send.
 - **Channel Audio** is the cheapest: it plays straight to output channels with none of Spatial Audio’s positional, distance, or reverb processing.
 
-[`SpatialAudioComponent`](https://developer.apple.com/documentation/RealityKit/SpatialAudioComponent) is the component Reality Composer Pro applies automatically when an entity emits audio and no component is explicitly specified. That means a scene where you never explicitly configure a playback component for your audio-emitting entities pays the highest per-voice cost across the board, without anyone having chosen it.
+[`SpatialAudioComponent`](https://developer.apple.com/documentation/realitykit/spatialaudiocomponent) is the component Reality Composer Pro applies automatically when an entity emits audio and no component is explicitly specified. That means a scene where you never explicitly configure a playback component for your audio-emitting entities pays the highest per-voice cost across the board, without anyone having chosen it.
 
 Choose deliberately instead of relying on the default:
 
@@ -41,13 +41,13 @@ Choose deliberately instead of relying on the default:
 - Use Ambient Audio for orientation-only soundscapes, such as field recordings, where distance falloff doesn’t matter.
 - Reserve Spatial Audio for sounds that genuinely need position tracking and distance falloff.
 
-![A screenshot of Reality Composer Pro Scene with Ambient Audio properties displayed in the Inspector.](https://docs-assets.developer.apple.com/published/f988a95c135fcc6c220418f6ad2b9a23/AudioVillageAmbientAudio2%402x.png)
+![A screenshot of Reality Composer Pro Scene with Ambient Audio properties displayed in the Inspector.](/images/RealityComposerPro/AudioVillageAmbientAudio2@2x.png)
 
 #### Tune Spatial Audio Properties for Cost and Realism
 
-[`SpatialAudioComponent`](https://developer.apple.com/documentation/RealityKit/SpatialAudioComponent) exposes several properties for shaping how a spatialized sound behaves, including [`gain`](https://developer.apple.com/documentation/RealityKit/SpatialAudioComponent/gain), [`directLevel`](https://developer.apple.com/documentation/RealityKit/SpatialAudioComponent/directLevel), and [`reverbLevel`](https://developer.apple.com/documentation/RealityKit/SpatialAudioComponent/reverbLevel), all relative decibel values in the range `[-Decibel.infinity, Decibel.zero]`.
+[`SpatialAudioComponent`](https://developer.apple.com/documentation/realitykit/spatialaudiocomponent) exposes several properties for shaping how a spatialized sound behaves, including [`gain`](https://developer.apple.com/documentation/realitykit/spatialaudiocomponent/gain), [`directLevel`](https://developer.apple.com/documentation/realitykit/spatialaudiocomponent/directlevel), and [`reverbLevel`](https://developer.apple.com/documentation/realitykit/spatialaudiocomponent/reverblevel), all relative decibel values in the range `[-Decibel.infinity, Decibel.zero]`.
 
-![A screenshot of Reality Composer Pro Spatial Audio Component settings in the Inspector.](https://docs-assets.developer.apple.com/published/4bfc0f5c3a3390eaa96dbf3f5bf40115/AudioSpatialAudioComponentExample%402x.png)
+![A screenshot of Reality Composer Pro Spatial Audio Component settings in the Inspector.](/images/RealityComposerPro/AudioSpatialAudioComponentExample@2x.png)
 
 - `gain` sets the overall output level of the sound.
 - `directLevel` sets the level of the direct, unreverberated signal that reaches the listener.
@@ -55,8 +55,8 @@ Choose deliberately instead of relying on the default:
 
 Two more properties shape the sound’s directional and distance behavior:
 
-- [`directivity`](https://developer.apple.com/documentation/RealityKit/SpatialAudioComponent/directivity) (`Audio.Directivity`) controls how sound radiates from the source. The `.beam(focus:)` case models a parametric, frequency-dependent radiation pattern, where `focus` sets the beam’s width.
-- [`distanceAttenuation`](https://developer.apple.com/documentation/RealityKit/SpatialAudioComponent/distanceAttenuation) (`Audio.DistanceAttenuation`) controls how level falls off with distance, using either `.rolloff(factor:)` for a custom falloff curve or `.default`.
+- [`directivity`](https://developer.apple.com/documentation/realitykit/spatialaudiocomponent/directivity) (`Audio.Directivity`) controls how sound radiates from the source. The `.beam(focus:)` case models a parametric, frequency-dependent radiation pattern, where `focus` sets the beam’s width.
+- [`distanceAttenuation`](https://developer.apple.com/documentation/realitykit/spatialaudiocomponent/distanceattenuation) (`Audio.DistanceAttenuation`) controls how level falls off with distance, using either `.rolloff(factor:)` for a custom falloff curve or `.default`.
 
 Treat `directivity` and `distanceAttenuation` as realism and quality controls, not cost controls. A narrow beam or a custom rolloff factor changes how a sound behaves, but it doesn’t reduce the work the engine does to compute it. Of the four properties described here, `reverbLevel` is the only one that reduces engine workload when tuned down.
 
@@ -64,21 +64,21 @@ Treat `directivity` and `distanceAttenuation` as realism and quality controls, n
 
 #### Author Mono Source Material for Spatial Audio
 
-Spatial audio sources are single-channel only. Regardless of how many channels a source asset has, [`SpatialAudioComponent`](https://developer.apple.com/documentation/RealityKit/SpatialAudioComponent) mixes it down to mono before spatializing it.
+Spatial audio sources are single-channel only. Regardless of how many channels a source asset has, [`SpatialAudioComponent`](https://developer.apple.com/documentation/realitykit/spatialaudiocomponent) mixes it down to mono before spatializing it.
 
 Because that mixdown happens automatically, it’s tempting to import stereo or multichannel assets and let the engine handle it. Author and export source assets as mono directly instead. This avoids phase-cancellation artifacts that can appear when a stereo file collapses to one channel, and it keeps source files smaller on disk — which also reduces the memory cost of preloading, as described in [`Choose a loading strategy for each audio asset`](optimizing-audio-playback#Choose-a-loading-strategy-for-each-audio-asset.md).
 
 #### Manage the Reverb Budget Across a Scene
 
-Within a given ARView or RealityView, only one [`ReverbComponent`](https://developer.apple.com/documentation/RealityKit/ReverbComponent) can be active at a time on macOS and iOS; see [`Adding audio components in Reality Composer Pro`](introduction-to-reality-composer-pro-audio.md) for how to add one and choose a preset. Because reverb is a shared, scene-wide system rather than something each sound carries independently, `reverbLevel` — covered in [`Tune spatial audio properties for cost and realism`](optimizing-audio-playback#Tune-spatial-audio-properties-for-cost-and-realism.md) — is the lever that controls each sound’s contribution to that shared cost.
+Within a given ARView or RealityView, only one [`ReverbComponent`](https://developer.apple.com/documentation/realitykit/reverbcomponent) can be active at a time on macOS and iOS; see [`Adding audio components in Reality Composer Pro`](introduction-to-reality-composer-pro-audio.md) for how to add one and choose a preset. Because reverb is a shared, scene-wide system rather than something each sound carries independently, `reverbLevel` — covered in [`Tune spatial audio properties for cost and realism`](optimizing-audio-playback#Tune-spatial-audio-properties-for-cost-and-realism.md) — is the lever that controls each sound’s contribution to that shared cost.
 
 > **Note**: On visionOS, `ReverbComponent` is only active while your app has a progressive or full immersive space open. In Shared Space or a mixed immersion style, RealityKit uses real-environment acoustics simulation instead and ignores `ReverbComponent` entirely. If you tune `reverbLevel` or `directLevel` expecting your reverb preset to shape the sound, verify your app’s immersion style — the preset has no effect outside an immersive space.
 
 #### Avoid Unnecessary Power Cost From Preparing Audio Early
 
-[`prepareAudio(_:)`](https://developer.apple.com/documentation/RealityKit/Entity/prepareAudio(_:)) gets an audio resource ready to play, but that readiness isn’t free. As its documentation states: “As soon as the system prepares an audio resource, the audio engine begins tracking the position of the entity and allocates rendering resources, which incurs a power cost.” The guidance that follows is direct: “For optimal system resource usage, avoid preparing sounds before they are needed.”
+[`prepareAudio(_:)`](https://developer.apple.com/documentation/realitykit/entity/prepareaudio(_:)) gets an audio resource ready to play, but that readiness isn’t free. As its documentation states: “As soon as the system prepares an audio resource, the audio engine begins tracking the position of the entity and allocates rendering resources, which incurs a power cost.” The guidance that follows is direct: “For optimal system resource usage, avoid preparing sounds before they are needed.”
 
-[`playAudio(_:)`](https://developer.apple.com/documentation/RealityKit/Entity/playAudio(_:)) calls `prepareAudio(_:)` internally before it calls `play()`, so the same power cost applies the instant you call `playAudio(_:)` — there’s no way to play a sound without first paying the preparation cost.
+[`playAudio(_:)`](https://developer.apple.com/documentation/realitykit/entity/playaudio(_:)) calls `prepareAudio(_:)` internally before it calls `play()`, so the same power cost applies the instant you call `playAudio(_:)` — there’s no way to play a sound without first paying the preparation cost.
 
 Two practices compound this cost if you’re not careful:
 
@@ -89,7 +89,7 @@ That second point rules out an intuitive-but-wrong optimization: preparing audio
 
 #### Control Playback at Runtime Instead of Restarting It
 
-Once a sound is playing, use [`AudioPlaybackController`](https://developer.apple.com/documentation/RealityKit/AudioPlaybackController) to change its behavior rather than stopping and re-triggering `playAudio(_:)`. Starting playback returns an [`AudioPlaybackController`](https://developer.apple.com/documentation/RealityKit/AudioPlaybackController), which exposes:
+Once a sound is playing, use [`AudioPlaybackController`](https://developer.apple.com/documentation/realitykit/audioplaybackcontroller) to change its behavior rather than stopping and re-triggering `playAudio(_:)`. Starting playback returns an [`AudioPlaybackController`](https://developer.apple.com/documentation/realitykit/audioplaybackcontroller), which exposes:
 
 - `fade(to:duration:)`, `speed`, `reverbSendLevel`, `seek(to:)`, and `play(at:)` to adjust a playing sound in place, without paying the tracking and rendering allocation cost of stopping it and preparing a new playback instance.
 - `stop()`, `pause()`, and `isPlaying` to control and query playback state — checking `isPlaying` before playing again is what lets you avoid the redundant-instance cost described next.
@@ -102,7 +102,7 @@ Audio File Groups and Audio Mix Groups solve two different organizational proble
 
 An **Audio File Group** bundles a set of sound variations — different footstep sounds, different bird calls — into a single referenceable group, and Reality Composer Pro selects a random file from that group at runtime. Grouping variations this way means you don’t need to author and reference several near-identical assets individually, which keeps both your project structure and your asset memory footprint smaller than duplicating similar sounds one by one.
 
-An **Audio Mix Group** centralizes runtime volume and speed control for a related set of sounds — all sound effects, for example — behind a single slider. At the code level, `mixGroupName` on [`AudioFileResource.Configuration`](https://developer.apple.com/documentation/RealityKit/AudioFileResource/Configuration-swift.struct) assigns a resource to a mix group. Routing related sounds through a mix group means your app manages one control surface for the group instead of holding a separate `AudioPlaybackController` reference for every sound it needs to adjust together.
+An **Audio Mix Group** centralizes runtime volume and speed control for a related set of sounds — all sound effects, for example — behind a single slider. At the code level, `mixGroupName` on [`AudioFileResource.Configuration`](https://developer.apple.com/documentation/realitykit/audiofileresource/configuration-swift.struct) assigns a resource to a mix group. Routing related sounds through a mix group means your app manages one control surface for the group instead of holding a separate `AudioPlaybackController` reference for every sound it needs to adjust together.
 
 ## See Also
 

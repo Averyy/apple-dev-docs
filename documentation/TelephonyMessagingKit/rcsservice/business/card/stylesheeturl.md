@@ -7,7 +7,6 @@ A URL to a CSS for the rendering of the card.
 
 **Availability**:
 - iOS 26.0+
-- iPadOS 26.0+
 
 ## Declaration
 

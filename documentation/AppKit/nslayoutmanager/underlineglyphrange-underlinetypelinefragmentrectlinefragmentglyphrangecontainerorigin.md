@@ -21,7 +21,7 @@ This method determines which glyphs actually need to be underlined based on `und
 ## Parameters
 
 - `glyphRange`: A range of glyphs, which must belong to a single line fragment rectangle (as returned by [`lineFragmentRect(forGlyphAt:effectiveRange:)`](nslayoutmanager/linefragmentrect(forglyphat:effectiverange:).md)).
-- `underlineVal`: The style of underlining to draw. This value is a mask derived from the value for [`underlineStyle`](https://developer.apple.com/documentation/Foundation/NSAttributedString/Key/underlineStyle)—for example, `(NSUnderlinePatternDash | NSUnderlineStyleThick | NSUnderlineByWordMask)`. Subclasses can define custom underlining styles.
+- `underlineVal`: The style of underlining to draw. This value is a mask derived from the value for [`underlineStyle`](https://developer.apple.com/documentation/foundation/nsattributedstring/key/underlinestyle)—for example, `(NSUnderlinePatternDash | NSUnderlineStyleThick | NSUnderlineByWordMask)`. Subclasses can define custom underlining styles.
 - `lineRect`: The line fragment rectangle containing the glyphs to draw underlining for.
 - `lineGlyphRange`: The range of all glyphs within that line fragment rectangle.
 - `containerOrigin`: The origin of the line fragment rectangle’s `NSTextContainer` in its `NSTextView`.

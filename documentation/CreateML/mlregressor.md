@@ -24,9 +24,9 @@ Use an [`MLRegressor`](mlregressor.md) to estimate continuous values like price,
 
 A regressor differs from a classifier because it can predict output values not seen during the training process. By contrast, a classifier can only classify input into the categories you provide in the training data.
 
-For example, when estimating housing prices on Mars, a regressor can interpolate between the examples to estimate prices not seen during training. The figure below shows a linear regressor for Mars real-estate prices similar to the [`Integrating a Core ML Model into Your App`](https://developer.apple.com/documentation/CoreML/integrating-a-core-ml-model-into-your-app) sample.
+For example, when estimating housing prices on Mars, a regressor can interpolate between the examples to estimate prices not seen during training. The figure below shows a linear regressor for Mars real-estate prices similar to the [`Integrating a Core ML Model into Your App`](https://developer.apple.com/documentation/coreml/integrating-a-core-ml-model-into-your-app) sample.
 
-![A graph showing housing prices for mars with a linear regressor used to create a continuous estimation between](https://docs-assets.developer.apple.com/published/03ef437b3bfd8a33d85264d85eeb2de4/MLRegressor-1%402x.png)
+![A graph showing housing prices for mars with a linear regressor used to create a continuous estimation between](/images/com.apple.createml/MLRegressor-1@2x.png)
 
 In this case, there are no data points with three solar panels, but the regressor can make an informed prediction about the housing price.
 
@@ -90,13 +90,13 @@ When you create an [`MLRegressor`](mlregressor.md), Create ML inspects your data
 ## Relationships
 
 ### Conforms To
-- [Copyable](../Swift/Copyable.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomPlaygroundDisplayConvertible](../Swift/CustomPlaygroundDisplayConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Escapable](../Swift/Escapable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Copyable](../swift/copyable.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomPlaygroundDisplayConvertible](../swift/customplaygrounddisplayconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Escapable](../swift/escapable.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

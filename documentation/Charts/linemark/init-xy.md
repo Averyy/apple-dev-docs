@@ -34,7 +34,7 @@ Chart(sunshineData) {
 }
 ```
 
-![Line chart with date on x-axis and hours of sunshine on y-axis. One line showing 12 points representing hours of sunshine in a month 1 74, 2 99, 3 154, 4 201, 5 247, 6 234, 7 304, 8 248, 9 197, 10 122, 11 77, 12 62.](https://docs-assets.developer.apple.com/published/f5d223bb9ca48efff7a8b1d5772443a5/LineMarkSwift.LineMarkLineChart%402x.png)
+![Line chart with date on x-axis and hours of sunshine on y-axis. One line showing 12 points representing hours of sunshine in a month 1 74, 2 99, 3 154, 4 201, 5 247, 6 234, 7 304, 8 248, 9 197, 10 122, 11 77, 12 62.](/images/com.apple.Charts/LineMarkSwift.LineMarkLineChart@2x.png)
 
 ## Parameters
 

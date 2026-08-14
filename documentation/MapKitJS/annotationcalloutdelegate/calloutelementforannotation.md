@@ -20,7 +20,7 @@ This method returns a DOM element to use as the callout element in place of the 
 
 #### Discussion
 
-If you don’t prevent the callout from appearing, MapKit JS calls this method on the annotation’s callout delegate (if the delegate is an object and its [`calloutElementForAnnotation(annotation)`](annotationcalloutdelegate/calloutelementforannotation.md) property is a function) with the annotation as a parameter.
+If you don’t prevent the callout from appearing, MapKit JS calls this method on the annotation’s callout delegate (if the delegate is an object and its [`calloutElementForAnnotation()`](annotationcalloutdelegate/calloutelementforannotation.md) property is a function) with the annotation as a parameter.
 
 ## Parameters
 

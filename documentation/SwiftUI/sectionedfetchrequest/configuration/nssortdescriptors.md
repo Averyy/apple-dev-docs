@@ -22,7 +22,7 @@ var nsSortDescriptors: [NSSortDescriptor]
 
 #### Discussion
 
-Set this configuration value to cause a [`SectionedFetchRequest`](sectionedfetchrequest.md) to execute a fetch with a new collection of [`NSSortDescriptor`](https://developer.apple.com/documentation/Foundation/NSSortDescriptor) instances. If you want to use [`SortDescriptor`](https://developer.apple.com/documentation/Foundation/SortDescriptor) instances, set [`sortDescriptors`](sectionedfetchrequest/configuration/sortdescriptors.md) instead. Use care to coordinate section and sort updates, as described in [`SectionedFetchRequest.Configuration`](sectionedfetchrequest/configuration.md).
+Set this configuration value to cause a [`SectionedFetchRequest`](sectionedfetchrequest.md) to execute a fetch with a new collection of [`NSSortDescriptor`](https://developer.apple.com/documentation/foundation/nssortdescriptor) instances. If you want to use [`SortDescriptor`](https://developer.apple.com/documentation/foundation/sortdescriptor) instances, set [`sortDescriptors`](sectionedfetchrequest/configuration/sortdescriptors.md) instead. Use care to coordinate section and sort updates, as described in [`SectionedFetchRequest.Configuration`](sectionedfetchrequest/configuration.md).
 
 Access this value for a given request by using the [`nsSortDescriptors`](sectionedfetchresults/nssortdescriptors.md) property on the associated [`SectionedFetchResults`](sectionedfetchresults.md) instance, either directly or with a [`Binding`](binding.md).
 

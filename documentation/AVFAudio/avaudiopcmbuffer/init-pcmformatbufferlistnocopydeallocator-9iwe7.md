@@ -26,7 +26,7 @@ A new [`AVAudioPCMBuffer`](avaudiopcmbuffer.md) instance, or `nil` if it’s not
 
 #### Discussion
 
-Use the deallocator parameter to define your own deallocation behavior for the audio buffer list’s underlying memory. The buffer list sent to the deallocator is identical to the one you specify, in term of buffer count and each buffer’s [`mData`](https://developer.apple.com/documentation/CoreAudioTypes/AudioBuffer/mData) and [`mDataByteSize`](https://developer.apple.com/documentation/CoreAudioTypes/AudioBuffer/mDataByteSize) members.
+Use the deallocator parameter to define your own deallocation behavior for the audio buffer list’s underlying memory. The buffer list sent to the deallocator is identical to the one you specify, in term of buffer count and each buffer’s [`mData`](https://developer.apple.com/documentation/coreaudiotypes/audiobuffer/mdata) and [`mDataByteSize`](https://developer.apple.com/documentation/coreaudiotypes/audiobuffer/mdatabytesize) members.
 
 The method returns `nil` due to the following reasons:
 
@@ -34,7 +34,7 @@ The method returns `nil` due to the following reasons:
 - The buffer you specify has zero number of buffers.
 - The buffer list’s pointer to the buffer of audio data is in a `nil` state.
 - Each of the buffer’s data byte size aren’t equal, or if any of the buffers’ data byte size is zero.
-- There’s a mismatch between the format’s number of buffers and the buffer list’s size (1 if interleaved, [`mChannelsPerFrame`](https://developer.apple.com/documentation/CoreAudioTypes/AudioStreamBasicDescription/mChannelsPerFrame) if deinterleaved).
+- There’s a mismatch between the format’s number of buffers and the buffer list’s size (1 if interleaved, [`mChannelsPerFrame`](https://developer.apple.com/documentation/coreaudiotypes/audiostreambasicdescription/mchannelsperframe) if deinterleaved).
 
 ## Parameters
 

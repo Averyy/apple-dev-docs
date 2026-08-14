@@ -38,13 +38,13 @@ Use this value with the [`kAudioFormatProperty_FormatList`](kaudioformatproperty
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../Swift/BitwiseCopyable.md)
+- [BitwiseCopyable](../swift/bitwisecopyable.md)
 
 ## See Also
 
 - [struct AudioBalanceFade](audiobalancefade.md)
   Describes audio left/right balance and front/back fade values.
-- [struct AudioFormatListItem](../CoreAudioTypes/AudioFormatListItem.md)
+- [struct AudioFormatListItem](../coreaudiotypes/audioformatlistitem.md)
 - [struct AudioPanningInfo](audiopanninginfo.md)
   Audio panning information.
 - [struct ExtendedAudioFormatInfo](extendedaudioformatinfo.md)

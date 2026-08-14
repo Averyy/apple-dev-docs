@@ -38,7 +38,7 @@ The entity with `AnchoringComponent` is inactive when created. RealityKit anchor
 
 Similarly, RealityKit unanchors the entity if the target disappears or no longer meets the target requirements.
 
-For more information about anchors, see [`ARKit`](https://developer.apple.com/documentation/ARKit).
+For more information about anchors, see [`ARKit`](https://developer.apple.com/documentation/arkit).
 
 ## Topics
 
@@ -76,7 +76,7 @@ For more information about anchors, see [`ARKit`](https://developer.apple.com/do
 
 ### Conforms To
 - [Component](component.md)
-- [Equatable](../Swift/Equatable.md)
+- [Equatable](../swift/equatable.md)
 
 ## See Also
 

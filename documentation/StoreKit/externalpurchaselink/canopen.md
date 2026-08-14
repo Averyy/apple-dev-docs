@@ -22,7 +22,7 @@ static var canOpen: Bool { get async }
 
 #### Discussion
 
-Use this method if your app configures the [`SKExternalPurchaseLink`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/SKExternalPurchaseLink) property list key.
+Use this method if your app configures the [`SKExternalPurchaseLink`](https://developer.apple.com/documentation/bundleresources/information-property-list/skexternalpurchaselink) property list key.
 
 Check this property, as shown below, to determine whether your app can successfully call [`open()`](externalpurchaselink/open().md).
 
@@ -30,13 +30,13 @@ Check this property, as shown below, to determine whether your app can successfu
 await ExternalPurchaseLink.canOpen
 ```
 
-If the result is `true`, configure any user-interface controls that enable people to open the external purchase link. You configure that link in the [`SKExternalPurchaseLink`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/SKExternalPurchaseLink) property list key in the `Info.plist` file. There’s no need to call [`canOpen`](externalpurchaselink/canopen.md) again, unless the App Store storefront changes. For more information about the App Store storefront, see [`Storefront`](storefront.md).
+If the result is `true`, configure any user-interface controls that enable people to open the external purchase link. You configure that link in the [`SKExternalPurchaseLink`](https://developer.apple.com/documentation/bundleresources/information-property-list/skexternalpurchaselink) property list key in the `Info.plist` file. There’s no need to call [`canOpen`](externalpurchaselink/canopen.md) again, unless the App Store storefront changes. For more information about the App Store storefront, see [`Storefront`](storefront.md).
 
 This property is `true` if all the following conditions are met:
 
 - The current App Store storefront allows external purchase and the person is eligible to make external purchases.
-- Your app configures the [`com.apple.developer.storekit.custom-purchase-link.allowed-regions`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.storekit.custom-purchase-link.allowed-regions) or [`com.apple.developer.storekit.external-purchase-link`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.storekit.external-purchase-link) entitlement.
-- Your app configures a link for the current App Store storefront in [`SKExternalPurchaseLink`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/SKExternalPurchaseLink).
+- Your app configures the [`com.apple.developer.storekit.custom-purchase-link.allowed-regions`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.storekit.custom-purchase-link.allowed-regions) or [`com.apple.developer.storekit.external-purchase-link`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.storekit.external-purchase-link) entitlement.
+- Your app configures a link for the current App Store storefront in [`SKExternalPurchaseLink`](https://developer.apple.com/documentation/bundleresources/information-property-list/skexternalpurchaselink).
 
 Otherwise, this property is `false`.
 
@@ -44,7 +44,7 @@ When this property is `false`, check [`canMakePayments`](appstore/canmakepayment
 
 ## See Also
 
-- [SKExternalPurchaseLink](../BundleResources/Information-Property-List/SKExternalPurchaseLink.md)
+- [SKExternalPurchaseLink](../bundleresources/information-property-list/skexternalpurchaselink.md)
   A dictionary that contains URLs to websites where people using your app can make external purchases for supported regions.
 - [static func open() async throws](externalpurchaselink/open.md)
   Presents a continuation sheet that enables people to choose whether your app shows its link for external purchases.

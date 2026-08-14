@@ -8,7 +8,7 @@ Learn to write apps, repurpose sample code, create, and share learning experienc
 
 [`Swift Playgrounds`](https://developer.apple.comhttps://www.apple.com/swift/playgrounds/) provides a unique environment for developers to explore, tinker, and learn how to code and build apps. For those new to coding, Swift Playgrounds offers a way for you to explore what’s possible with the Swift programming language, SwiftUI, and the APIs (frameworks) you’ll use to build apps for Apple platforms — iOS, iPadOS, and macOS. For experienced coders, app playgrounds enable you to write SwiftUI apps and submit them to the App Store — directly from Swift Playgrounds on your iPad or Mac. As an educator, you can leverage Swift Playgrounds to create step-by-step guided playground books that encourage learners to examine, understand, and interact with code.
 
-![The completed Keep Going with Apps app playground in Swift Playgrounds. There are three vertical views in the app. The left column is the Project Navigator, which lists the Code files where the ContentView file is selected. The code from the ContentView file is shown in the center view. The right view shows the My Creatures App content view Preview, with a Make the Creatures Dance navigation link and gorilla, peacock, and Squid creature list items.](https://docs-assets.developer.apple.com/published/2092d209292d6a909b8e3053dbaa37f5/keep-going-with-apps%402x.png)
+![The completed Keep Going with Apps app playground in Swift Playgrounds. There are three vertical views in the app. The left column is the Project Navigator, which lists the Code files where the ContentView file is selected. The code from the ContentView file is shown in the center view. The right view shows the My Creatures App content view Preview, with a Make the Creatures Dance navigation link and gorilla, peacock, and Squid creature list items.](/images/com.apple.Swift-Playgrounds/keep-going-with-apps@2x.png)
 
 The following articles will help you build and refine your app playgrounds as you’re ready to take the next step. They contain tips and techniques to help you make the most of your app or book in Swift Playgrounds. Learn how to add functionality to your app from the content provided in Swift Playgrounds or from another developer entirely by adding a Swift Package. Find out how to take advantage of the preview system, app capabilities, and debugging with the console. As you complete app playgrounds or playground books, share them with a subscription and inspire a whole new generation of Swift coders.
 
@@ -26,7 +26,7 @@ The following articles will help you build and refine your app playgrounds as yo
 - [Importing sample content into user app playgrounds](using-content-in-user-projects.md)
   Learn how to bring sample code into your app playground.
 ### Sample apps
-- [Exploring SwiftUI Sample Apps](https://developer.apple.com/tutorials/Sample-Apps)
+- [Exploring SwiftUI Sample Apps](https://developer.apple.com/tutorials/sample-apps)
 ### Playground books
 - [Playground Books](playground-books.md)
   Create interactive Playground Book based learning experiences for the Swift Playgrounds app.

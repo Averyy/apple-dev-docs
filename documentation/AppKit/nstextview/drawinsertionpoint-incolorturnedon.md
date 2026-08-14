@@ -22,7 +22,7 @@ The focus must be locked on the receiver when this method is invoked. You should
 
 - `rect`: The rectangle in which to draw the insertion point.
 - `color`: The color with which to draw the insertion point.
-- `flag`: [`true`](https://developer.apple.com/documentation/Swift/true) to draw the insertion point, [`false`](https://developer.apple.com/documentation/Swift/false) to erase it.
+- `flag`: [`true`](https://developer.apple.com/documentation/swift/true) to draw the insertion point, [`false`](https://developer.apple.com/documentation/swift/false) to erase it.
 
 ## See Also
 

@@ -34,7 +34,7 @@ protocol GCPhysicalInputElement : NSObjectProtocol
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 ### Inherited By
 - [GCAxisElement](gcaxiselement.md)
 - [GCButtonElement](gcbuttonelement.md)

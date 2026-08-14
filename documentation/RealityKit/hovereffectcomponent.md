@@ -209,7 +209,7 @@ entity.components.set(hoverComponent)
 
 This shader graph represents a red and blue effect that interpolates between each color using a sine wave.
 
-![A screenshot of an app window with a shader graph visible. The shader graph represents a red and blue effect that interpolates between each color using a sine wave. On the bottom right is a purple cube representing the effect halfway between red and blue.](https://docs-assets.developer.apple.com/published/87a01f2abcf75f901637dca380b007c7/hovereffectcomponent-shader-graph.jpg)
+![A screenshot of an app window with a shader graph visible. The shader graph represents a red and blue effect that interpolates between each color using a sine wave. On the bottom right is a purple cube representing the effect halfway between red and blue.](/images/com.apple.RealityKit/hovereffectcomponent-shader-graph.jpg)
 
 Hovering over the entity displays the following effect.
 

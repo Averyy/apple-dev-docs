@@ -52,6 +52,10 @@ Disassociate subscriptions from client user IDs.
 
 ## See Also
 
+- [Enable Subscriptions](enable-subscriptions.md)
+  Declare that your device management service supports subscription management.
+- [Disable Subscriptions](disable-subscriptions.md)
+  Declare that your device management service doesn’t support subscription management.
 - [Get Subscriptions](get-subscriptions.md)
   Get the subscriptions that your organization manages.
 - [Get Subscription Assignments](get-subscription-assignments.md)

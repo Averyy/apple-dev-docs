@@ -21,7 +21,7 @@ The content view controller associated with the specified row, if one exists. Re
 ## Parameters
 
 - `row`: The row in the list.
-- `makeIfNecesary`: Specify [`true`](https://developer.apple.com/documentation/Swift/true) to create a new content view controller if none exists or [`false`](https://developer.apple.com/documentation/Swift/false) to reuse an existing row.
+- `makeIfNecesary`: Specify [`true`](https://developer.apple.com/documentation/swift/true) to create a new content view controller if none exists or [`false`](https://developer.apple.com/documentation/swift/false) to reuse an existing row.
 
 ## See Also
 

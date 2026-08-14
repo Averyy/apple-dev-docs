@@ -22,7 +22,7 @@ class UICloudSharingController
 
 CloudKit Sharing provides real-time collaboration between one or more people using your app. A user takes certain steps to make collaboration possible, from inviting people to participate in the collaboration to setting restrictions on what participants can do. To provide these steps to a user, you must make changes to your app. With [`UICloudSharingController`](uicloudsharingcontroller.md), the changes require minimum effort.
 
-The [`UICloudSharingController`](uicloudsharingcontroller.md) view controller class provides screens, presented within your app, for managing the people, permissions, and access rights associated with a [`CKShare`](https://developer.apple.com/documentation/CloudKit/CKShare) record. The controller, along with a few lines of your own code, facilitates the setup and management of online sharing between users, making it possible for a user to:
+The [`UICloudSharingController`](uicloudsharingcontroller.md) view controller class provides screens, presented within your app, for managing the people, permissions, and access rights associated with a [`CKShare`](https://developer.apple.com/documentation/cloudkit/ckshare) record. The controller, along with a few lines of your own code, facilitates the setup and management of online sharing between users, making it possible for a user to:
 
 - Invite people to view or collaborate on a shared record
 - Set the access rights determining who can access the shared record (only people invited or anyone with the share link)
@@ -31,17 +31,17 @@ The [`UICloudSharingController`](uicloudsharingcontroller.md) view controller cl
 - Stop participating (if the user is a participant)
 - Stop sharing with all participants (if the user is the owner of the shared record)
 
-The controller provides these different actions to the user based on the user’s role. If the user is the individual sharing the record (where the record is an instance of [`CKRecord`](https://developer.apple.com/documentation/CloudKit/CKRecord) representing the data to share), then the user is called the *owner*. A user who has access to the shared record and isn’t the owner is known as a *participant*. There’s no need for you to specify the user’s role. The controller determines the role automatically.
+The controller provides these different actions to the user based on the user’s role. If the user is the individual sharing the record (where the record is an instance of [`CKRecord`](https://developer.apple.com/documentation/cloudkit/ckrecord) representing the data to share), then the user is called the *owner*. A user who has access to the shared record and isn’t the owner is known as a *participant*. There’s no need for you to specify the user’s role. The controller determines the role automatically.
 
 ##### Inviting Participants to a New Share
 
-The user who owns the data, represented as a [`CKRecord`](https://developer.apple.com/documentation/CloudKit/CKRecord), can invite others to view or collaborate on changes to the data. To invite participants, the owner sends the share link to the other people. To provide this capability in your app, create an instance of [`UICloudSharingController`](uicloudsharingcontroller.md) using the [`init(preparationHandler:)`](uicloudsharingcontroller/init(preparationhandler:).md) initializer method. You use this initializer method only when the owner isn’t already sharing the record.
+The user who owns the data, represented as a [`CKRecord`](https://developer.apple.com/documentation/cloudkit/ckrecord), can invite others to view or collaborate on changes to the data. To invite participants, the owner sends the share link to the other people. To provide this capability in your app, create an instance of [`UICloudSharingController`](uicloudsharingcontroller.md) using the [`init(preparationHandler:)`](uicloudsharingcontroller/init(preparationhandler:).md) initializer method. You use this initializer method only when the owner isn’t already sharing the record.
 
 After creating the controller, you present it. The controller displays the Invitation screen. Using this screen, the owner can add participants and set restrictions on the shared record. Once done, the owner sends the share link to the participants.
 
-However, before the owner can send the share link, CloudKit must generate the link. This link generation happens when saving a new [`CKShare`](https://developer.apple.com/documentation/CloudKit/CKShare) record, but when do you save it? You save the share record in the `preparationHandler:`.
+However, before the owner can send the share link, CloudKit must generate the link. This link generation happens when saving a new [`CKShare`](https://developer.apple.com/documentation/cloudkit/ckshare) record, but when do you save it? You save the share record in the `preparationHandler:`.
 
-After the owner’s selections are complete, the controller invokes the preparation handler provided in the initializer call. In the handler, you create a new [`CKShare`](https://developer.apple.com/documentation/CloudKit/CKShare) instance, initializing it with the [`CKRecord`](https://developer.apple.com/documentation/CloudKit/CKRecord) instance that represents the data to share. (This record is called the “root record.”) Next, you save the share and root records using [`CKModifyRecordsOperation`](https://developer.apple.com/documentation/CloudKit/CKModifyRecordsOperation). Finally, you return the shared record to the controller or return an error if the save failed. See the following code for an example of this in action.
+After the owner’s selections are complete, the controller invokes the preparation handler provided in the initializer call. In the handler, you create a new [`CKShare`](https://developer.apple.com/documentation/cloudkit/ckshare) instance, initializing it with the [`CKRecord`](https://developer.apple.com/documentation/cloudkit/ckrecord) instance that represents the data to share. (This record is called the “root record.”) Next, you save the share and root records using [`CKModifyRecordsOperation`](https://developer.apple.com/documentation/cloudkit/ckmodifyrecordsoperation). Finally, you return the shared record to the controller or return an error if the save failed. See the following code for an example of this in action.
 
 **Swift**:
 
@@ -244,17 +244,17 @@ You can also show or hide the permission and access options presented to the use
 ### Inherits From
 - [UIViewController](uiviewcontroller.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCoding](../Foundation/NSCoding.md)
-- [NSExtensionRequestHandling](../Foundation/NSExtensionRequestHandling.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [NSTouchBarProvider](../AppKit/NSTouchBarProvider.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCoding](../foundation/nscoding.md)
+- [NSExtensionRequestHandling](../foundation/nsextensionrequesthandling.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSTouchBarProvider](../appkit/nstouchbarprovider.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 - [UIActivityItemsConfigurationProviding](uiactivityitemsconfigurationproviding.md)
 - [UIAppearanceContainer](uiappearancecontainer.md)
 - [UIContentContainer](uicontentcontainer.md)

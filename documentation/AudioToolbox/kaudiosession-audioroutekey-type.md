@@ -17,7 +17,7 @@ let kAudioSession_AudioRouteKey_Type: CFString!
 
 #### Discussion
 
-A [`CFString`](https://developer.apple.com/documentation/CoreFoundation/CFString) object that serves as the one key for an audio routes input or output dictionary, whose value specifies an input source or output destination.
+A [`CFString`](https://developer.apple.com/documentation/corefoundation/cfstring) object that serves as the one key for an audio routes input or output dictionary, whose value specifies an input source or output destination.
 
 ## See Also
 

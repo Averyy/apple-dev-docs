@@ -25,8 +25,8 @@ You can use this function to locate the PostScript printer description (PPD) fil
 ## Parameters
 
 - `printer`: The printer whose description file you want to obtain.
-- `descriptionType`: A constant that specifies the desired printer description file type. Currently, you must pass the constant  .
-- `fileURL`: A pointer to your   variable. On return, the variable refers to a Core Foundation URL that specifies the location of the file that contains a description of the specified printer. You are responsible for releasing the URL. If an error occurs, the variable is set to  .
+- `descriptionType`: A constant that specifies the desired printer description file type. Currently, you must pass the constant `kPMPPDDescriptionType`.
+- `fileURL`: A pointer to your [`CFURL`](https://developer.apple.com/documentation/corefoundation/cfurl) variable. On return, the variable refers to a Core Foundation URL that specifies the location of the file that contains a description of the specified printer. You are responsible for releasing the URL. If an error occurs, the variable is set to `NULL`.
 
 ## See Also
 

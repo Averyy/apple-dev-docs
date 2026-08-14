@@ -33,7 +33,7 @@ The `PlayerViewController` class has an outlet to the `CompositionDebugView` obj
 @IBOutlet weak var compositionDebugView: CompositionDebugView!
 ```
 
-The `PlayerViewController` creates a player item to display the composition in the upper portion of the screen using an [`AVPlayerViewController`](https://developer.apple.com/documentation/AVKit/AVPlayerViewController) that presents a native user interface to control playback. It creates this player item from the composition, video composition, and audio mix that the `SimpleEditor` creates from the video files in the project.
+The `PlayerViewController` creates a player item to display the composition in the upper portion of the screen using an [`AVPlayerViewController`](https://developer.apple.com/documentation/avkit/avplayerviewcontroller) that presents a native user interface to control playback. It creates this player item from the composition, video composition, and audio mix that the `SimpleEditor` creates from the video files in the project.
 
 ```swift
 // Create a player item from the simple editor composition.

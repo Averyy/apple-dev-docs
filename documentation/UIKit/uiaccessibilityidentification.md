@@ -20,7 +20,7 @@ protocol UIAccessibilityIdentification : NSObjectProtocol
 
 #### Overview
 
-You can use the identifiers you define in UI Automation scripts because the value of [`accessibilityIdentifier`](https://developer.apple.com/documentation/AppKit/NSAccessibility-c.protocol/accessibilityIdentifier) corresponds to the return value of the name method of `UIAElement`.
+You can use the identifiers you define in UI Automation scripts because the value of [`accessibilityIdentifier`](https://developer.apple.com/documentation/appkit/nsaccessibility-c.protocol/accessibilityidentifier) corresponds to the return value of the name method of `UIAElement`.
 
 ## Topics
 
@@ -31,7 +31,7 @@ You can use the identifiers you define in UI Automation scripts because the valu
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 ### Conforming Types
 - [UIAccessibilityElement](uiaccessibilityelement.md)
 - [UIAction](uiaction.md)
@@ -98,7 +98,7 @@ You can use the identifiers you define in UI Automation scripts because the valu
 
 ## See Also
 
-- [UIAccessibilityFocus](../ObjectiveC/uiaccessibilityfocus.md)
+- [UIAccessibilityFocus](../objectivec/uiaccessibilityfocus.md)
   An informal protocol that provides a way to determine whether an assistive app, such as VoiceOver, has focus on an accessible element.
 - [protocol UIAccessibilityReadingContent](uiaccessibilityreadingcontent.md)
   Methods to implement for an object that represents content that users read, such as a book or an article.

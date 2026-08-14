@@ -76,7 +76,7 @@ func dragItems(for indexPath: IndexPath) -> [UIDragItem] {
 
 To consume data from a drop session in a table view, you implement three delegate methods.
 
-First, your app can refuse the drag items based on their class, the state of your app, or other requirements. This project’s implementation allows a user to drop only instances of the [`NSString`](https://developer.apple.com/documentation/Foundation/NSString) class. Here is the model-agnostic portion of this code:
+First, your app can refuse the drag items based on their class, the state of your app, or other requirements. This project’s implementation allows a user to drop only instances of the [`NSString`](https://developer.apple.com/documentation/foundation/nsstring) class. Here is the model-agnostic portion of this code:
 
 ```swift
 func tableView(_ tableView: UITableView, canHandle session: UIDropSession) -> Bool {

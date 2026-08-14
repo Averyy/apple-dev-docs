@@ -24,7 +24,7 @@ struct SCNMatrix4
 
 SceneKit uses matrices to represent coordinate space transformations, which in turn can represent the combined position, rotation or orientation, and scale of an object in three-dimensional space.
 
-> ❗ **Important**:  In macOS, the fields in this structure are [`CGFloat`](https://developer.apple.com/documentation/CoreFoundation/CGFloat-swift.struct) values. In iOS, tvOS, and watchOS, these fields are [`Float`](https://developer.apple.com/documentation/Swift/Float) values.
+> ❗ **Important**:  In macOS, the fields in this structure are [`CGFloat`](https://developer.apple.com/documentation/corefoundation/cgfloat-swift.struct) values. In iOS, tvOS, and watchOS, these fields are [`Float`](https://developer.apple.com/documentation/swift/float) values.
 
 ## Topics
 
@@ -38,9 +38,9 @@ SceneKit uses matrices to represent coordinate space transformations, which in t
 ### Creating Matrices from Elements
 - [init()](scnmatrix4-swift.struct/init.md)
 - [init(double4x4)](scnmatrix4-swift.struct/init(_:)-bqz6.md)
-- [init(double4x4)](../QuartzCore/CATransform3D/init(_:)-6euzs.md)
+- [init(double4x4)](../quartzcore/catransform3d/init(_:)-6euzs.md)
 - [init(float4x4)](scnmatrix4-swift.struct/init(_:)-98ce8.md)
-- [init(float4x4)](../QuartzCore/CATransform3D/init(_:)-6awvy.md)
+- [init(float4x4)](../quartzcore/catransform3d/init(_:)-6awvy.md)
 - [init(m11: Float, m12: Float, m13: Float, m14: Float, m21: Float, m22: Float, m23: Float, m24: Float, m31: Float, m32: Float, m33: Float, m34: Float, m41: Float, m42: Float, m43: Float, m44: Float)](scnmatrix4-swift.struct/init(m11:m12:m13:m14:m21:m22:m23:m24:m31:m32:m33:m34:m41:m42:m43:m44:).md)
 ### Performing Matrix Operations
 - [func SCNMatrix4Translate(SCNMatrix4, Float, Float, Float) -> SCNMatrix4](scnmatrix4translate(_:_:_:_:).md)
@@ -87,10 +87,10 @@ SceneKit uses matrices to represent coordinate space transformations, which in t
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../Swift/BitwiseCopyable.md)
-- [Copyable](../Swift/Copyable.md)
-- [Escapable](../Swift/Escapable.md)
-- [Sendable](../Swift/Sendable.md)
+- [BitwiseCopyable](../swift/bitwisecopyable.md)
+- [Copyable](../swift/copyable.md)
+- [Escapable](../swift/escapable.md)
+- [Sendable](../swift/sendable.md)
 
 ## See Also
 

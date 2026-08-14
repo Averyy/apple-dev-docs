@@ -29,7 +29,7 @@ Label("Fill Circle", systemImage: "bolt")
     .symbolVariant(.fill.circle)
 ```
 
-![A screenshot of a label that shows a bolt in a filled circle](https://docs-assets.developer.apple.com/published/d867d29d80f41d3901708b97ef22d158/SymbolVariants-circle-2%402x.png)
+![A screenshot of a label that shows a bolt in a filled circle](/images/com.apple.SwiftUI/SymbolVariants-circle-2@2x.png)
 
 ## See Also
 

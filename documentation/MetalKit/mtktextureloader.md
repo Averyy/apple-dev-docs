@@ -25,7 +25,7 @@ Use the [`MTKTextureLoader`](mtktextureloader.md) class to create a Metal textur
 
 This class supports common file formats, like PNG, JPEG, and TIFF. It also loads image data from KTX and PVR files, asset catalogs, Core Graphics images, and other sources. It infers the output texture format and pixel format from the image data.
 
-You create textures synchronously or asynchronously using [`MTKTextureLoader`](mtktextureloader.md) methods that return [`MTLTexture`](https://developer.apple.com/documentation/Metal/MTLTexture) instances. Pass options to these methods that customize the image-loading and texture-creation process.
+You create textures synchronously or asynchronously using [`MTKTextureLoader`](mtktextureloader.md) methods that return [`MTLTexture`](https://developer.apple.com/documentation/metal/mtltexture) instances. Pass options to these methods that customize the image-loading and texture-creation process.
 
 First create an [`MTKTextureLoader`](mtktextureloader.md) instance, passing the device that it uses to create textures. Then use one of the texture loader’s methods to create a texture. The code example below synchronously creates a texture from data at a URL, using the default options:
 
@@ -57,7 +57,7 @@ func loadTextureUsingMetalKit(url: URL, device: MTLDevice) throws -> MTLTexture 
 }
 ```
 
-If you use custom data formats, or change the image data at runtime, use [`MTLTexture`](https://developer.apple.com/documentation/Metal/MTLTexture) methods instead. For more information, see [`Creating and sampling textures`](https://developer.apple.com/documentation/Metal/creating-and-sampling-textures).
+If you use custom data formats, or change the image data at runtime, use [`MTLTexture`](https://developer.apple.com/documentation/metal/mtltexture) methods instead. For more information, see [`Creating and sampling textures`](https://developer.apple.com/documentation/metal/creating-and-sampling-textures).
 
 ## Topics
 
@@ -118,14 +118,14 @@ If you use custom data formats, or change the image data at runtime, use [`MTLTe
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 
 ---

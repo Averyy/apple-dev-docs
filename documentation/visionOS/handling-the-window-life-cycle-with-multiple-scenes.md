@@ -12,13 +12,13 @@ Track scene state across different window types.
 
 This sample code project demonstrates managing the life cycle of multiple scene types. In visionOS, a person can close any scene of your application at any time. For applications that support multiple scenes, provide an affordance for the person to reopen the desired scene. This sample includes the following scenes:
 
-- A [`Window`](https://developer.apple.com/documentation/SwiftUI/Window) for quickly opening different sphere volumes
-- A [`WindowGroup`](https://developer.apple.com/documentation/SwiftUI/WindowGroup) for viewing sphere details and opening volumes
-- A volumetric [`WindowGroup`](https://developer.apple.com/documentation/SwiftUI/WindowGroup) for displaying the spheres
+- A [`Window`](https://developer.apple.com/documentation/swiftui/window) for quickly opening different sphere volumes
+- A [`WindowGroup`](https://developer.apple.com/documentation/swiftui/windowgroup) for viewing sphere details and opening volumes
+- A volumetric [`WindowGroup`](https://developer.apple.com/documentation/swiftui/windowgroup) for displaying the spheres
 
 #### Manage the Scene Life Cycle
 
-In visionOS, calling [`onAppear(perform:)`](https://developer.apple.com/documentation/SwiftUI/View/onAppear(perform:)) on the root view of a scene updates state when that scene opens. Similarly, the [`onDisappear(perform:)`](https://developer.apple.com/documentation/SwiftUI/View/onDisappear(perform:)) method updates the state when the system eliminates that scene. When a person closes a window in visionOS, the system backgrounds that scene. When another nonimmersive scene of the application is open, the system also immediately eliminates the backgrounded scene. The last closed nonimmersive scene enters the [`ScenePhase.background`](https://developer.apple.com/documentation/SwiftUI/ScenePhase/background) phase but doesn’t immediately receive the [`onDisappear(perform:)`](https://developer.apple.com/documentation/SwiftUI/View/onDisappear(perform:)) callback. When a person reopens the application, the system launches the backgrounded scene. For more details on launch behavior, see [`Customize window launch behavior`](adopting-best-practices-for-scene-restoration#Customize-window-launch-behavior.md).
+In visionOS, calling [`onAppear(perform:)`](https://developer.apple.com/documentation/swiftui/view/onappear(perform:)) on the root view of a scene updates state when that scene opens. Similarly, the [`onDisappear(perform:)`](https://developer.apple.com/documentation/swiftui/view/ondisappear(perform:)) method updates the state when the system eliminates that scene. When a person closes a window in visionOS, the system backgrounds that scene. When another nonimmersive scene of the application is open, the system also immediately eliminates the backgrounded scene. The last closed nonimmersive scene enters the [`ScenePhase.background`](https://developer.apple.com/documentation/swiftui/scenephase/background) phase but doesn’t immediately receive the [`onDisappear(perform:)`](https://developer.apple.com/documentation/swiftui/view/ondisappear(perform:)) callback. When a person reopens the application, the system launches the backgrounded scene. For more details on launch behavior, see [`Customize window launch behavior`](adopting-best-practices-for-scene-restoration#Customize-window-launch-behavior.md).
 
 The sample creates a `WindowState` enumeration to save the window state and updates it when the life cycle of the scene changes:
 
@@ -79,9 +79,9 @@ The view life cycle callbacks update this dictionary, which is used to determine
 
 The sphere launcher window shows each sphere option and a button to open the volume for that sphere.
 
-![The window that contains the sphere launcher which has a button to open a volume for each provided color.](https://docs-assets.developer.apple.com/published/dc4973e0817489c47cc72ce5699f9646/sample-scenes-01-sphere-launcher-image.png)
+![The window that contains the sphere launcher which has a button to open a volume for each provided color.](/images/com.apple.visionOS/sample-scenes-01-sphere-launcher-image.png)
 
-The `WindowStateButton` uses the `sphereVolumeStates` on the `AppModel` to display either the close or open button, which calls [`dismissWindow`](https://developer.apple.com/documentation/SwiftUI/EnvironmentValues/dismissWindow) or [`openWindow`](https://developer.apple.com/documentation/SwiftUI/EnvironmentValues/openWindow), respectively.
+The `WindowStateButton` uses the `sphereVolumeStates` on the `AppModel` to display either the close or open button, which calls [`dismissWindow`](https://developer.apple.com/documentation/swiftui/environmentvalues/dismisswindow) or [`openWindow`](https://developer.apple.com/documentation/swiftui/environmentvalues/openwindow), respectively.
 
 ```swift
 if case .open = appModel.sphereVolumeStates[sphere.id] {
@@ -93,11 +93,11 @@ if case .open = appModel.sphereVolumeStates[sphere.id] {
 
 #### Restore Scene State Across Launches
 
-Scene restoration is an important part of a seamless experience in visionOS. People expect content to persist where they place it. After restarting their device, they expect to pick up where they left off. This sample uses [`SceneStorage`](https://developer.apple.com/documentation/SwiftUI/SceneStorage) to restore the sphere size in `SphereVolume` and to restore the navigation location in the `SphereNavigationStack`.
+Scene restoration is an important part of a seamless experience in visionOS. People expect content to persist where they place it. After restarting their device, they expect to pick up where they left off. This sample uses [`SceneStorage`](https://developer.apple.com/documentation/swiftui/scenestorage) to restore the sphere size in `SphereVolume` and to restore the navigation location in the `SphereNavigationStack`.
 
 > **Note**: For more details on creating persistent and contextually relevant spatial experiences, see [`Adopting best practices for persistent UI`](adopting-best-practices-for-scene-restoration.md).
 
-The volumetric windows start with an initial state of `enlarge` set to `false`. The app stores this value using [`SceneStorage`](https://developer.apple.com/documentation/SwiftUI/SceneStorage) so when a person returns to this view, scene restoration restores it:
+The volumetric windows start with an initial state of `enlarge` set to `false`. The app stores this value using [`SceneStorage`](https://developer.apple.com/documentation/swiftui/scenestorage) so when a person returns to this view, scene restoration restores it:
 
 ```swift
 /// The scene state for the enlarged Boolean value, which is tied to the specific scene session
@@ -105,9 +105,9 @@ The volumetric windows start with an initial state of `enlarge` set to `false`. 
 @SceneStorage("enlarge") var enlarge: Bool = false
 ```
 
-As both `SphereVolume` and the `ControlsView` exist within the same scene, they can access the underlying value through [`SceneStorage`](https://developer.apple.com/documentation/SwiftUI/SceneStorage) rather than using a [`Binding`](https://developer.apple.com/documentation/SwiftUI/Binding).
+As both `SphereVolume` and the `ControlsView` exist within the same scene, they can access the underlying value through [`SceneStorage`](https://developer.apple.com/documentation/swiftui/scenestorage) rather than using a [`Binding`](https://developer.apple.com/documentation/swiftui/binding).
 
-The sample app stores the selected sphere using [`SceneStorage`](https://developer.apple.com/documentation/SwiftUI/SceneStorage) for each [`WindowGroup`](https://developer.apple.com/documentation/SwiftUI/WindowGroup) so when the system restores the scene, it also restores the selected detail screen.
+The sample app stores the selected sphere using [`SceneStorage`](https://developer.apple.com/documentation/swiftui/scenestorage) for each [`WindowGroup`](https://developer.apple.com/documentation/swiftui/windowgroup) so when the system restores the scene, it also restores the selected detail screen.
 
 ```swift
 /// The scene state for the sphere detail-navigation destination.
@@ -116,11 +116,11 @@ The sample app stores the selected sphere using [`SceneStorage`](https://develop
 
 #### Manage Multiple Window Instances
 
-When the main window is a [`WindowGroup`](https://developer.apple.com/documentation/SwiftUI/WindowGroup), there are additional considerations because multiple instances of this window can be open at one time. The sample app uses [`openWindow`](https://developer.apple.com/documentation/SwiftUI/EnvironmentValues/openWindow) to create a new scene with the default value of `UUID()`, allowing a person to have multiple windows for this scene ID.
+When the main window is a [`WindowGroup`](https://developer.apple.com/documentation/swiftui/windowgroup), there are additional considerations because multiple instances of this window can be open at one time. The sample app uses [`openWindow`](https://developer.apple.com/documentation/swiftui/environmentvalues/openwindow) to create a new scene with the default value of `UUID()`, allowing a person to have multiple windows for this scene ID.
 
-![Three windows of the same scene ID, showing different navigation destinations in each.](https://docs-assets.developer.apple.com/published/3fb8589f44a5539b6139d7b92aa894e7/sample-scenes-01-multiple-navigation-windows.png)
+![Three windows of the same scene ID, showing different navigation destinations in each.](/images/com.apple.visionOS/sample-scenes-01-multiple-navigation-windows.png)
 
-It uses [`dismissWindow`](https://developer.apple.com/documentation/SwiftUI/EnvironmentValues/dismissWindow) with an ID but without specifying a value, which dismisses all instances of that scene. The sample code provides an affordance to open a new `SphereNavigationStack` when there are no longer any active navigation windows.
+It uses [`dismissWindow`](https://developer.apple.com/documentation/swiftui/environmentvalues/dismisswindow) with an ID but without specifying a value, which dismisses all instances of that scene. The sample code provides an affordance to open a new `SphereNavigationStack` when there are no longer any active navigation windows.
 
 ```swift
 if !appModel.navigationWindowScenes.anySceneViewActive {

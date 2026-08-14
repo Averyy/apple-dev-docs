@@ -18,7 +18,7 @@ func contentCaptureProtected(_ isActive: Bool = true) -> some CompositorContent
 
 #### Discussion
 
-The `contentCaptureProtected` modifier requires the [`App-Protected Content`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.protected-content) entitlement. For more information on how to apply for this entitlement, see [`Building spatial experiences for business apps with enterprise APIs for visionOS`](https://developer.apple.com/documentation/visionOS/building-spatial-experiences-for-business-apps-with-enterprise-apis).
+The `contentCaptureProtected` modifier requires the [`App-Protected Content`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.protected-content) entitlement. For more information on how to apply for this entitlement, see [`Building spatial experiences for business apps with enterprise APIs for visionOS`](https://developer.apple.com/documentation/visionos/building-spatial-experiences-for-business-apps-with-enterprise-apis).
 
 On visionOS, the system redacts the entire screen when a view marked with this modifier is present on screen, scene capture is active, and the app has the App Protected Content entitlement.
 

@@ -30,7 +30,7 @@ A QuickTime movie file typically contains one or more movie data atoms, which co
 
 The following figure shows the essential atom types in a QuickTime movie file within which other atoms are stored. In addition, the file may contain free space atoms, preview atoms, and other atoms not enumerated in this file format specification. Unknown atom types should be ignored.
 
-![The structure of a QuickTime movie file.](https://docs-assets.developer.apple.com/published/72054fb3cc6f4cd8bffcd14d1797cb7d/quicktime-movie-file-structure%402x.png)
+![The structure of a QuickTime movie file.](/images/com.apple.qtff/quicktime-movie-file-structure@2x.png)
 
 The following table lists the basic atom types.
 

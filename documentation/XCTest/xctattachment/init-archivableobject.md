@@ -17,7 +17,7 @@ Creates an attachment with a [`uniformTypeIdentifier`](xctattachment/uniformtype
 
 ## Parameters
 
-- `object`: An encodable object that conforms to [`NSSecureCoding`](https://developer.apple.com/documentation/Foundation/NSSecureCoding).
+- `object`: An encodable object that conforms to [`NSSecureCoding`](https://developer.apple.com/documentation/foundation/nssecurecoding).
 
 ## See Also
 

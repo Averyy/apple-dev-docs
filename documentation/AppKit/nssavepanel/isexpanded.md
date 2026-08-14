@@ -16,7 +16,7 @@ var isExpanded: Bool { get }
 
 #### Discussion
 
-The value of this property is [`true`](https://developer.apple.com/documentation/Swift/true) if the panel is expanded; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
+The value of this property is [`true`](https://developer.apple.com/documentation/swift/true) if the panel is expanded; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
 
 ## See Also
 

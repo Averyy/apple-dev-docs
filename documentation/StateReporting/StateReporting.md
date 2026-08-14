@@ -16,7 +16,7 @@ Communicate your app’s state to the system to improve diagnostic actionability
 
 #### Overview
 
-StateReporting lets you define named domains and emit structured state transitions from your app. [`MetricKit`](https://developer.apple.com/documentation/MetricKit) surfaces state context in both state-aggregated and interval-level metric entries. Instruments displays transitions in the Points of Interest instrument so you can cross-reference app state against other profiling data.
+StateReporting lets you define named domains and emit structured state transitions from your app. [`MetricKit`](https://developer.apple.com/documentation/metrickit) surfaces state context in both state-aggregated and interval-level metric entries. Instruments displays transitions in the Points of Interest instrument so you can cross-reference app state against other profiling data.
 
 Each domain holds up to one active state at a time, and you can combine states across domains. For example, your game can track its graphics configuration in one domain and its game mode in another, so you can compare performance across every state combination.
 

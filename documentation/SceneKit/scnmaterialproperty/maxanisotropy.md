@@ -26,7 +26,7 @@ Anisotropic filtering is a process that increases the quality of texture renderi
 
 For example, the image on the left in the figure below uses no anisotropic filtering, resulting in rendering artifacts as the checkerboard pattern recedes into the distance. The other images use higher [`maxAnisotropy`](scnmaterialproperty/maxanisotropy.md) values, reducing rendering artifacts. Anisotropic filtering requires mipmaps, so this property only takes effect if the value of the [`mipFilter`](scnmaterialproperty/mipfilter.md) property is not [`SCNFilterMode.none`](scnfiltermode/none.md).
 
-![None](https://docs-assets.developer.apple.com/published/8fc5eb20217d242fe7b3f882a919fee0/media-2929776%402x.png)
+![None](/images/com.apple.scenekit/media-2929776@2x.png)
 
 SceneKit automatically increases or decreases anisotropy for each rendered pixel as needed to maximize rendering quality, up to the limit specified by this property. The maximum anisotropy level used when rendering is dependent on the graphics hardware in use. Set this property’s value to the `MAXFLOAT` constant (the default) to use the highest anisotropy level supported by the GPU. A [`maxAnisotropy`](scnmaterialproperty/maxanisotropy.md) value of `1.0` or lower disables anisotropic filtering.
 

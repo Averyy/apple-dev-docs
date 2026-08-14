@@ -7,7 +7,6 @@ Ask the user to enable sending displayed notifications.
 
 **Availability**:
 - iOS 26.0+
-- iPadOS 26.0+
 
 ## Declaration
 

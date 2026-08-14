@@ -22,7 +22,7 @@ func CMMetadataDataTypeRegistryDataTypeIsRegistered(_ dataType: CFString) -> Boo
 
 #### Return Value
 
-[`kCFBooleanTrue`](https://developer.apple.com/documentation/CoreFoundation/kCFBooleanTrue) if the data type has been registered; [`kCFBooleanFalse`](https://developer.apple.com/documentation/CoreFoundation/kCFBooleanFalse) otherwise.
+[`kCFBooleanTrue`](https://developer.apple.com/documentation/corefoundation/kcfbooleantrue) if the data type has been registered; [`kCFBooleanFalse`](https://developer.apple.com/documentation/corefoundation/kcfbooleanfalse) otherwise.
 
 ## Parameters
 

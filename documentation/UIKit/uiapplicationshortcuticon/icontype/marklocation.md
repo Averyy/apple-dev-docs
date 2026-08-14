@@ -19,7 +19,7 @@ case markLocation
 
 #### Discussion
 
-![None](https://docs-assets.developer.apple.com/published/0198dd7d5b36b359d16ba61372c67d1b/media-2934519%402x.png)
+![None](/images/com.apple.uikit/media-2934519@2x.png)
 
 ## See Also
 

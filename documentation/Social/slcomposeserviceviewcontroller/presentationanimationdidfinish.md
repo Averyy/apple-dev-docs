@@ -19,7 +19,7 @@ func presentationAnimationDidFinish()
 
 #### Discussion
 
-Implement this method to avoid performing lengthy work during initialization or the iOS view controller methods [`viewWillAppear(_:)`](https://developer.apple.com/documentation/UIKit/UIViewController/viewWillAppear(_:)) and [`viewDidAppear(_:)`](https://developer.apple.com/documentation/UIKit/UIViewController/viewDidAppear(_:)).
+Implement this method to avoid performing lengthy work during initialization or the iOS view controller methods [`viewWillAppear(_:)`](https://developer.apple.com/documentation/uikit/uiviewcontroller/viewwillappear(_:)) and [`viewDidAppear(_:)`](https://developer.apple.com/documentation/uikit/uiviewcontroller/viewdidappear(_:)).
 
 ## See Also
 

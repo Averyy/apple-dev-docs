@@ -53,7 +53,7 @@ The [`AccessoryTransportAppExtension`](accessorytransportappextension.md) protoc
 ## Relationships
 
 ### Conforms To
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
 
 ## See Also
 
@@ -61,7 +61,7 @@ The [`AccessoryTransportAppExtension`](accessorytransportappextension.md) protoc
   A protocol for an extension that transmits data to an accessory you develop.
 - [protocol AccessoryTransportExtensionConfiguration](accessorytransportextensionconfiguration.md)
   An interface that enables you to configure and manage communication between your extension and the system.
-- [Wi-Fi Infrastructure](../WiFiInfrastructure/WiFiInfrastructure.md)
+- [Wi-Fi Infrastructure](../wifiinfrastructure/wifiinfrastructure.md)
   Share Wi-Fi network credentials securely between devices and connected accessories.
 
 

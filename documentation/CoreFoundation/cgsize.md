@@ -43,7 +43,7 @@ A [`CGSize`](cgsize.md) structure is sometimes used to represent a distance vect
 - [var customPlaygroundQuickLook: PlaygroundQuickLook](cgsize/customplaygroundquicklook.md)
   A custom playground Quick Look for this instance.
 ### Comparing Sizes
-- [func CGSizeEqualToSize(CGSize, CGSize) -> Bool](../CoreGraphics/CGSizeEqualToSize(_:_:).md)
+- [func CGSizeEqualToSize(CGSize, CGSize) -> Bool](../coregraphics/cgsizeequaltosize(_:_:).md)
   Returns whether two sizes are equal.
 ### Initializers
 - [init(CVImageSize)](cgsize/init(_:).md)
@@ -59,19 +59,19 @@ A [`CGSize`](cgsize.md) structure is sometimes used to represent a distance vect
 ## Relationships
 
 ### Conforms To
-- [Animatable](../SwiftUI/Animatable.md)
-- [BitwiseCopyable](../Swift/BitwiseCopyable.md)
-- [CVAttachmentValueRepresentable](../CoreVideo/CVAttachmentValueRepresentable.md)
-- [Copyable](../Swift/Copyable.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomReflectable](../Swift/CustomReflectable.md)
-- [Decodable](../Swift/Decodable.md)
-- [Encodable](../Swift/Encodable.md)
-- [Equatable](../Swift/Equatable.md)
-- [Escapable](../Swift/Escapable.md)
-- [Hashable](../Swift/Hashable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Animatable](../swiftui/animatable.md)
+- [BitwiseCopyable](../swift/bitwisecopyable.md)
+- [CVAttachmentValueRepresentable](../corevideo/cvattachmentvaluerepresentable.md)
+- [Copyable](../swift/copyable.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomReflectable](../swift/customreflectable.md)
+- [Decodable](../swift/decodable.md)
+- [Encodable](../swift/encodable.md)
+- [Equatable](../swift/equatable.md)
+- [Escapable](../swift/escapable.md)
+- [Hashable](../swift/hashable.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

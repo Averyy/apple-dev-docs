@@ -78,7 +78,7 @@ While many Apple frameworks provide built-in accessibility support, the Accessib
 - [let AXFeatureOverrideSessionErrorDomain: String](axfeatureoverridesessionerrordomain.md)
 - [struct AXFeatureOverrideSessionError](axfeatureoverridesessionerror-swift.struct.md)
 - [AXFeatureOverrideSessionError.Code](axfeatureoverridesessionerror-swift.struct/code.md)
-- [com.apple.developer.accessibility.merchant-api-control](../BundleResources/Entitlements/com.apple.developer.accessibility.merchant-api-control.md)
+- [com.apple.developer.accessibility.merchant-api-control](../bundleresources/entitlements/com.apple.developer.accessibility.merchant-api-control.md)
 ### Deprecated
 - [func AXAnimatedImagesEnabled() -> Bool](axanimatedimagesenabled().md)
   Returns a Boolean value that indicates whether the system setting for Animated Images is on.

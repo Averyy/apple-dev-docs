@@ -28,7 +28,7 @@ A publisher that publishes the minimum value received from the upstream publishe
 
 Use [`min(by:)`](publisher/min(by:).md) to determine the minimum value in the stream of elements from an upstream publisher using a comparison operation you specify.
 
-This operator is useful when the value received from the upstream publisher isn’t [`Comparable`](https://developer.apple.com/documentation/Swift/Comparable).
+This operator is useful when the value received from the upstream publisher isn’t [`Comparable`](https://developer.apple.com/documentation/swift/comparable).
 
 In the example below an array publishes enumeration elements representing playing card ranks. The [`min(by:)`](publisher/min(by:).md) operator compares the current and next elements using the `rawValue` property of each enumeration value in the user supplied closure and prints the minimum value found after publishing all of the elements.
 

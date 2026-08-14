@@ -37,7 +37,7 @@ For more information about the `SFSafariViewController` class, see [`SFSafariVie
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

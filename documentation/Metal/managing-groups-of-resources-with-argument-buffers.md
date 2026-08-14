@@ -34,13 +34,13 @@ Metal apps, particularly games, typically contain multiple 3D objects, each asso
 
 Metal apps set individual resources as arguments by calling [`MTLRenderCommandEncoder`](mtlrendercommandencoder.md) methods, such as [`setVertexBuffer(_:offset:index:)`](mtlrendercommandencoder/setvertexbuffer(_:offset:index:).md) or [`setFragmentTexture(_:index:)`](mtlrendercommandencoder/setfragmenttexture(_:index:).md) for each resource.
 
-![A layout diagram entitled “Encoded Comments” that depicts textures, samplers, buffers, and constants as individual arguments for different draw calls.](https://docs-assets.developer.apple.com/published/b63caa7401215aa56ce569f915eefa8e/argument-buffers-1-IndividualArguments%402x.png)
+![A layout diagram entitled “Encoded Comments” that depicts textures, samplers, buffers, and constants as individual arguments for different draw calls.](/images/com.apple.metal/argument-buffers-1-IndividualArguments@2x.png)
 
 Commands that set individual resources can become numerous and expensive, especially for large apps or games. Instead, the sample app groups related resources into an argument buffer and then sets that entire buffer as a single argument to a graphics function. This approach greatly reduces CPU overhead and still provides individual GPU access to the resources.
 
 `MTLBuffer` objects represent the argument buffers in the sample code. The sample code sets the objects as arguments by calling [`MTLRenderCommandEncoder`](mtlrendercommandencoder.md) methods, such as [`setVertexBuffer(_:offset:index:)`](mtlrendercommandencoder/setvertexbuffer(_:offset:index:).md) or [`setFragmentBuffer(_:offset:index:)`](mtlrendercommandencoder/setfragmentbuffer(_:offset:index:).md) for each argument buffer.
 
-![A layout diagram entitled “Encoded commands” that depicts encoded textures, samplers, buffers, and constants encoded as grouped arguments within an argument buffer, which is set as an individual argument for different draw calls.](https://docs-assets.developer.apple.com/published/1831f4a86f632ed4de32a920eaea7284/argument-buffers-2-ArgumentBuffers%402x.png)
+![A layout diagram entitled “Encoded commands” that depicts encoded textures, samplers, buffers, and constants encoded as grouped arguments within an argument buffer, which is set as an individual argument for different draw calls.](/images/com.apple.metal/argument-buffers-2-ArgumentBuffers@2x.png)
 
 > **Note**: To access individual resources in an argument buffer, the sample code calls the `useResource:usage:` method for each resource that it uses. Additional information is available in the “Enable the GPU memory of resources in the argument buffer” section below.
 

@@ -21,11 +21,11 @@ func dictionaryRepresentation(forAuxiliaryDataType outAuxDataType: Autoreleasing
 
 #### Discussion
 
-When using `CGImageDestination` functions to write depth data (along with image data) to a HEIF, JPEG, or DNG file, you can use this method to obtain a dictionary of primitive depth map information, then use the [`CGImageDestinationAddAuxiliaryDataInfo(_:_:_:)`](https://developer.apple.com/documentation/ImageIO/CGImageDestinationAddAuxiliaryDataInfo(_:_:_:)) function to embed that data into the output file.
+When using `CGImageDestination` functions to write depth data (along with image data) to a HEIF, JPEG, or DNG file, you can use this method to obtain a dictionary of primitive depth map information, then use the [`CGImageDestinationAddAuxiliaryDataInfo(_:_:_:)`](https://developer.apple.com/documentation/imageio/cgimagedestinationaddauxiliarydatainfo(_:_:_:)) function to embed that data into the output file.
 
 ## Parameters
 
-- `outAuxDataType`: On output, either [`kCGImageAuxiliaryDataTypeDisparity`](https://developer.apple.com/documentation/ImageIO/kCGImageAuxiliaryDataTypeDisparity) or [`kCGImageAuxiliaryDataTypeDepth`](https://developer.apple.com/documentation/ImageIO/kCGImageAuxiliaryDataTypeDepth), depending on the depth data’s type.
+- `outAuxDataType`: On output, either [`kCGImageAuxiliaryDataTypeDisparity`](https://developer.apple.com/documentation/imageio/kcgimageauxiliarydatatypedisparity) or [`kCGImageAuxiliaryDataTypeDepth`](https://developer.apple.com/documentation/imageio/kcgimageauxiliarydatatypedepth), depending on the depth data’s type.
 
 ## See Also
 

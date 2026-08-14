@@ -27,7 +27,7 @@ SceneKit uses four-component vectors to represent multiple kinds of data:
 - Axis-angle rotation or torque. The `x`, `y`, and `z` fields contain the normalized x-, y-, and z-components of the rotation axis, and the `w` field contains the rotation angle, in radians, or torque magnitude, in newton-meters.
 - Color value (or range). The `x`, `y`, `z`, and `w` fields contain the red, green, blue, and alpha components of the color, or the width of the color variation range in each component.
 
-> ❗ **Important**:  In macOS, the `x`, `y`, `z` and `w` fields in this structure are [`CGFloat`](https://developer.apple.com/documentation/CoreFoundation/CGFloat-swift.struct) values. In iOS, tvOS, and watchOS, these fields are `float` values.
+> ❗ **Important**:  In macOS, the `x`, `y`, `z` and `w` fields in this structure are [`CGFloat`](https://developer.apple.com/documentation/corefoundation/cgfloat-swift.struct) values. In iOS, tvOS, and watchOS, these fields are `float` values.
 
 ## Topics
 
@@ -68,10 +68,10 @@ SceneKit uses four-component vectors to represent multiple kinds of data:
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../Swift/BitwiseCopyable.md)
-- [Copyable](../Swift/Copyable.md)
-- [Escapable](../Swift/Escapable.md)
-- [Sendable](../Swift/Sendable.md)
+- [BitwiseCopyable](../swift/bitwisecopyable.md)
+- [Copyable](../swift/copyable.md)
+- [Escapable](../swift/escapable.md)
+- [Sendable](../swift/sendable.md)
 
 ## See Also
 

@@ -24,7 +24,7 @@ IOFramebuffer subclasses may implement this method to allow arbitrary attribute/
 
 ## Parameters
 
-- `attribute`: kIOCapturedAttribute If the device supports hotplugging displays, it should disable the generation of hot plug interrupts when the attribute kIOCapturedAttribute is set to true.
+- `attribute`: Defines the attribute to be set. Some defined attributes are: kIOCapturedAttribute If the device supports hotplugging displays, it should disable the generation of hot plug interrupts when the attribute kIOCapturedAttribute is set to true.
 - `value`: The new value for the attribute.
 
 ## See Also

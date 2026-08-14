@@ -8,11 +8,11 @@ Compress a single file and store the result on the file system.
 
 In this article, you’ll learn how to use AppleArchive to compress a single-source file, and write the compressed data to a file.
 
-The code below compresses a file named `myFile.pdf` using the [`Algorithm.lzfse`](https://developer.apple.com/documentation/Compression/Algorithm/lzfse) algorithm, and stores the result in a file named `myFile.pdf.lzfse`.
+The code below compresses a file named `myFile.pdf` using the [`Algorithm.lzfse`](https://developer.apple.com/documentation/compression/algorithm/lzfse) algorithm, and stores the result in a file named `myFile.pdf.lzfse`.
 
 ##### Create the File Stream to Read the Source File
 
-The [`ArchiveByteStream`](https://developer.apple.com/documentation/AppleArchive/ArchiveByteStream) class provides static factory methods that create streams for different functions. In this case, use [`fileStream(path:mode:options:permissions:)`](https://developer.apple.com/documentation/AppleArchive/ArchiveByteStream/fileStream(path:mode:options:permissions:)) to create a byte stream that reads the source file:
+The [`ArchiveByteStream`](https://developer.apple.com/documentation/applearchive/archivebytestream) class provides static factory methods that create streams for different functions. In this case, use [`fileStream(path:mode:options:permissions:)`](https://developer.apple.com/documentation/applearchive/archivebytestream/filestream(path:mode:options:permissions:)) to create a byte stream that reads the source file:
 
 ```swift
 let sourceFilePath = FilePath(NSTemporaryDirectory() + "myFile.pdf")
@@ -31,7 +31,7 @@ defer {
 
 ##### Create the File Stream to Write the Compressed File
 
-You also use [`fileStream(path:mode:options:permissions:)`](https://developer.apple.com/documentation/AppleArchive/ArchiveByteStream/fileStream(path:mode:options:permissions:)) to create the file stream that writes the compressed file to the file system. In this case, use the [`writeOnly`](https://developer.apple.com/documentation/System/FileDescriptor/AccessMode/writeOnly) mode:
+You also use [`fileStream(path:mode:options:permissions:)`](https://developer.apple.com/documentation/applearchive/archivebytestream/filestream(path:mode:options:permissions:)) to create the file stream that writes the compressed file to the file system. In this case, use the [`writeOnly`](https://developer.apple.com/documentation/system/filedescriptor/accessmode/writeonly) mode:
 
 ```swift
 let archiveFilePath = FilePath(NSTemporaryDirectory() + "myFile.pdf.lzfse")
@@ -50,7 +50,7 @@ defer {
 
 ##### Create the Compression Stream
 
-Create the compression stream, and specify the compression algorithm as [`lzfse`](https://developer.apple.com/documentation/AppleArchive/ArchiveCompression/lzfse). Specify the file-writing stream as the stream that receives the compressed data:
+Create the compression stream, and specify the compression algorithm as [`lzfse`](https://developer.apple.com/documentation/applearchive/archivecompression/lzfse). Specify the file-writing stream as the stream that receives the compressed data:
 
 ```swift
 guard let compressStream = ArchiveByteStream.compressionStream(
@@ -65,7 +65,7 @@ defer {
 
 ##### Compress the Source File
 
-Finally, call [`process(readingFrom:writingTo:)`](https://developer.apple.com/documentation/AppleArchive/ArchiveByteStream/process(readingFrom:writingTo:)) to send the output of the file-reading stream to the compression stream. In turn, the compression stream sends its output to the file-writing stream:
+Finally, call [`process(readingFrom:writingTo:)`](https://developer.apple.com/documentation/applearchive/archivebytestream/process(readingfrom:writingto:)) to send the output of the file-reading stream to the compression stream. In turn, the compression stream sends its output to the file-writing stream:
 
 ```swift
 do {
@@ -76,7 +76,7 @@ do {
 }
 ```
 
-On return, `myFile.pdf.lzfse` exists in [`NSTemporaryDirectory()`](https://developer.apple.com/documentation/Foundation/NSTemporaryDirectory()) and contains the compressed contents of `myFile.pdf`.
+On return, `myFile.pdf.lzfse` exists in [`NSTemporaryDirectory()`](https://developer.apple.com/documentation/foundation/nstemporarydirectory()) and contains the compressed contents of `myFile.pdf`.
 
 ## See Also
 

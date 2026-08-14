@@ -27,7 +27,7 @@ Like other non-bitmap image rep types, drawing is cached as appropriate for the 
 ## Parameters
 
 - `size`: The size of the image.
-- `drawingHandlerShouldBeCalledWithFlippedContext`: [`true`](https://developer.apple.com/documentation/Swift/true) if the drawing handler should be called with a flipped graphics context; otherwise [`false`](https://developer.apple.com/documentation/Swift/false).
+- `drawingHandlerShouldBeCalledWithFlippedContext`: [`true`](https://developer.apple.com/documentation/swift/true) if the drawing handler should be called with a flipped graphics context; otherwise [`false`](https://developer.apple.com/documentation/swift/false).
 - `drawingHandler`: A block that draws the image representation content in the provided graphics context. The block may be invoked whenever and on whatever thread the image itself is drawn on. Care should be taken to ensure that all state accessed within the drawingHandler block is done so in a thread safe manner. This Block replaces the [`lockFocus()`](nsimage/lockfocus().md) and [`unlockFocus()`](nsimage/unlockfocus().md) technique of creating drawing content. The block is invoked at draw time, the drawing can be adjusted to suit the destination’s pixel density, color space, and other properties.
 
 ## See Also

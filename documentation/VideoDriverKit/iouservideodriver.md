@@ -75,7 +75,7 @@ The host is in control of IO. It tells the drivers’s IOUserVideoDevice when to
 ## Relationships
 
 ### Inherits From
-- [IOService](../DriverKit/IOService.md)
+- [IOService](../driverkit/ioservice.md)
 
 ## See Also
 

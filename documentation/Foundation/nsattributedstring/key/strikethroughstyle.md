@@ -22,7 +22,7 @@ static let strikethroughStyle: NSAttributedString.Key
 
 #### Discussion
 
-The value of this attribute is an [`NSNumber`](nsnumber.md) object containing an integer. This value indicates whether the text has a line through it and corresponds to one of the constants described in [`NSUnderlineStyle`](https://developer.apple.com/documentation/UIKit/NSUnderlineStyle). The default value for this attribute is [`NSUnderlineStyleNone`](https://developer.apple.com/documentation/UIKit/NSUnderlineStyle/NSUnderlineStyleNone).
+The value of this attribute is an [`NSNumber`](nsnumber.md) object containing an integer. This value indicates whether the text has a line through it and corresponds to one of the constants described in [`NSUnderlineStyle`](https://developer.apple.com/documentation/uikit/nsunderlinestyle). The default value for this attribute is [`NSUnderlineStyleNone`](https://developer.apple.com/documentation/uikit/nsunderlinestyle/nsunderlinestylenone).
 
 ## See Also
 

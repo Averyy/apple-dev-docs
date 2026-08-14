@@ -10,7 +10,7 @@ When the runtime detects real-world landmarks such as surfaces, images, and face
 
 Use this schema to attach prims to anchors that the runtime can recognize and track in the physical environment. When you assign the prim an anchor type, the runtime places the prim on the first anchor of that type that it sees in the AR experience.
 
-> **Note**:  When a RealityKit app loads an anchored prim with `loadAnchor(named:in:)`, RealityKit instantiates an [`AnchorEntity`](https://developer.apple.com/documentation/RealityKit/AnchorEntity) with the [`AnchoringComponent.Target`](https://developer.apple.com/documentation/RealityKit/AnchoringComponent/Target-swift.enum) set to the anchor type specified by the prim, such as a plane, image, or face.
+> **Note**:  When a RealityKit app loads an anchored prim with `loadAnchor(named:in:)`, RealityKit instantiates an [`AnchorEntity`](https://developer.apple.com/documentation/realitykit/anchorentity) with the [`AnchoringComponent.Target`](https://developer.apple.com/documentation/realitykit/anchoringcomponent/target-swift.enum) set to the anchor type specified by the prim, such as a plane, image, or face.
 
 ##### Place a Prim on a Surface Image or Face
 
@@ -70,7 +70,7 @@ def Cube "FaceAnchoredCube" (
   Generate 3D assets that render as expected.
 - [Validating feature support for USD files](validating-usd-files.md)
   Ensure that the renderer that displays your USD assets supports its features.
-- [Previewing a Model with AR Quick Look](../ARKit/previewing-a-model-with-ar-quick-look.md)
+- [Previewing a Model with AR Quick Look](../arkit/previewing-a-model-with-ar-quick-look.md)
   Display a model or scene that the user can move, scale, and share with others.
 
 

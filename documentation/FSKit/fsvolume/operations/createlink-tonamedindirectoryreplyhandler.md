@@ -17,7 +17,7 @@ func createLink(to item: FSItem, named name: FSFileName, inDirectory directory: 
 
 #### Discussion
 
-If creating the link fails, complete the request with an error with a domain of [`NSPOSIXErrorDomain`](https://developer.apple.com/documentation/Foundation/NSPOSIXErrorDomain) and the following error codes:
+If creating the link fails, complete the request with an error with a domain of [`NSPOSIXErrorDomain`](https://developer.apple.com/documentation/foundation/nsposixerrordomain) and the following error codes:
 
 - `EEXIST` if there’s already an item named `name` in the directory.
 - `EMLINK` if creating the link would exceed the maximum number of hard links supported on `item`.

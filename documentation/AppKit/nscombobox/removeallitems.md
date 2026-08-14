@@ -16,7 +16,7 @@ func removeAllItems()
 
 #### Discussion
 
-This method logs a warning if the [`usesDataSource`](nscombobox/usesdatasource.md) property is [`true`](https://developer.apple.com/documentation/Swift/true).
+This method logs a warning if the [`usesDataSource`](nscombobox/usesdatasource.md) property is [`true`](https://developer.apple.com/documentation/swift/true).
 
 ## See Also
 

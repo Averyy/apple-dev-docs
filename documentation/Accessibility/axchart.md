@@ -41,7 +41,7 @@ Adopt the [`AXChart`](axchart.md) protocol on your chart’s view model, and set
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

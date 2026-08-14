@@ -7,7 +7,6 @@ Group chat’s subject was updated.
 
 **Availability**:
 - iOS 26.0+
-- iPadOS 26.0+
 
 ## Declaration
 

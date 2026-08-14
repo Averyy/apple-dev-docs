@@ -22,12 +22,12 @@ convenience init(CGImage cgImage: CGImage, orientation: CGImagePropertyOrientati
 
 ## Parameters
 
-- `cgImage`: A [`CGImage`](https://developer.apple.com/documentation/CoreGraphics/CGImage) instance.
-- `orientation`: A [`CGImagePropertyOrientation`](https://developer.apple.com/documentation/ImageIO/CGImagePropertyOrientation) instance.
+- `cgImage`: A [`CGImage`](https://developer.apple.com/documentation/coregraphics/cgimage) instance.
+- `orientation`: A [`CGImagePropertyOrientation`](https://developer.apple.com/documentation/imageio/cgimagepropertyorientation) instance.
 - `pixelsWide`: The image’s width in pixels.
 - `pixelsHigh`: The image’s height in pixels.
-- `pixelFormatType`: The image’s pixel format (see [`Pixel Format Identifiers`](https://developer.apple.com/documentation/CoreVideo/pixel-format-identifiers)).
-- `options`: A dictionary of [`VNImageCropAndScaleOption`](https://developer.apple.com/documentation/Vision/VNImageCropAndScaleOption) values, each keyed by [`MLFeatureValue.ImageOption`](mlfeaturevalue/imageoption.md).
+- `pixelFormatType`: The image’s pixel format (see [`Pixel Format Identifiers`](https://developer.apple.com/documentation/corevideo/pixel-format-identifiers)).
+- `options`: A dictionary of [`VNImageCropAndScaleOption`](https://developer.apple.com/documentation/vision/vnimagecropandscaleoption) values, each keyed by [`MLFeatureValue.ImageOption`](mlfeaturevalue/imageoption.md).
 
 ## See Also
 

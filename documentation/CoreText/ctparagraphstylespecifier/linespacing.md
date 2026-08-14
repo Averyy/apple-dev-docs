@@ -19,7 +19,7 @@ case lineSpacing
 
 #### Discussion
 
-Instead, use [`CTParagraphStyleSpecifier.maximumLineSpacing`](ctparagraphstylespecifier/maximumlinespacing.md), [`CTParagraphStyleSpecifier.minimumLineSpacing`](ctparagraphstylespecifier/minimumlinespacing.md), and [`CTParagraphStyleSpecifier.lineSpacingAdjustment`](ctparagraphstylespecifier/linespacingadjustment.md) to control space between lines. This value is always nonnegative. Type: [`CGFloat`](https://developer.apple.com/documentation/CoreFoundation/CGFloat-swift.struct). Default value: `0.0`. Affects: [`CTFramesetter`](ctframesetter.md).
+Instead, use [`CTParagraphStyleSpecifier.maximumLineSpacing`](ctparagraphstylespecifier/maximumlinespacing.md), [`CTParagraphStyleSpecifier.minimumLineSpacing`](ctparagraphstylespecifier/minimumlinespacing.md), and [`CTParagraphStyleSpecifier.lineSpacingAdjustment`](ctparagraphstylespecifier/linespacingadjustment.md) to control space between lines. This value is always nonnegative. Type: [`CGFloat`](https://developer.apple.com/documentation/corefoundation/cgfloat-swift.struct). Default value: `0.0`. Affects: [`CTFramesetter`](ctframesetter.md).
 
 ## See Also
 

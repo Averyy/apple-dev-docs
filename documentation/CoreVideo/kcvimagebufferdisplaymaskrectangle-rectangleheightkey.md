@@ -22,7 +22,7 @@ let kCVImageBufferDisplayMaskRectangle_RectangleHeightKey: CFString
 
 #### Discussion
 
-The height value is a [`CFNumber`](https://developer.apple.com/documentation/CoreFoundation/CFNumber) of an unsigned 16-bit integer.
+The height value is a [`CFNumber`](https://developer.apple.com/documentation/corefoundation/cfnumber) of an unsigned 16-bit integer.
 
 ## See Also
 

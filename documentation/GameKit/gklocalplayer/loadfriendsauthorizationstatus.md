@@ -27,7 +27,7 @@ func loadFriendsAuthorizationStatus() async throws -> GKFriendsAuthorizationStat
 ## Parameters
 
 - `completionHandler`: The block that GameKit calls when it completes the request. The block receives the following parameters: - **`authorizationStatus`**: A status that indicates if the player authorized or denied your game access to their friends list.
-- **`error`**: Describes an error if it occurs, or `nil` if the operation completes. An error occurs if you don’t add the [`NSGKFriendListUsageDescription`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSGKFriendListUsageDescription) key to the information property list file.
+- **`error`**: Describes an error if it occurs, or `nil` if the operation completes. An error occurs if you don’t add the [`NSGKFriendListUsageDescription`](https://developer.apple.com/documentation/bundleresources/information-property-list/nsgkfriendlistusagedescription) key to the information property list file.
 
 ## See Also
 
@@ -37,7 +37,7 @@ func loadFriendsAuthorizationStatus() async throws -> GKFriendsAuthorizationStat
   Loads the local player’s friends list if the local player and their friends grant access.
 - [func loadFriends(identifiedBy: [String], completionHandler: ([GKPlayer]?, (any Error)?) -> Void)](gklocalplayer/loadfriends(identifiedby:completionhandler:).md)
   Loads the player’s friends list, scoped by the identifiers, if the player and their friends grant access.
-- [NSGKFriendListUsageDescription](../BundleResources/Information-Property-List/NSGKFriendListUsageDescription.md)
+- [NSGKFriendListUsageDescription](../bundleresources/information-property-list/nsgkfriendlistusagedescription.md)
   A message that tells people why the app needs access to their Game Center friends list.
 - [func loadChallengableFriends(completionHandler: (([GKPlayer]?, (any Error)?) -> Void)?)](gklocalplayer/loadchallengablefriends(completionhandler:).md)
   Loads players to whom the local player can issue a challenge.

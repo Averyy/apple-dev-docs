@@ -37,7 +37,7 @@ There are zero degrees of rotational or linear freedom between the two pins.
 ## Relationships
 
 ### Conforms To
-- [Equatable](../Swift/Equatable.md)
+- [Equatable](../swift/equatable.md)
 - [PhysicsJoint](physicsjoint.md)
 
 ## See Also

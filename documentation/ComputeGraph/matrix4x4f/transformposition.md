@@ -23,7 +23,7 @@ The transformed 3D position.
 
 Multiplies the position by the matrix with a `w` component of `1.0`, so rotation, scale, and translation are all applied. This is appropriate for points in space that should be fully transformed by the matrix.
 
-> **Note**: ![Graph](https://docs-assets.developer.apple.com/published/3933582f32a04ca6a5b36b18de7ac80f/matrix4x4f__transformPosition.svg)
+> **Note**: ![Graph](/images/com.apple.computegraph/matrix4x4f__transformPosition.svg)
 
 ## Parameters
 

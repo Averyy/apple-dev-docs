@@ -18,18 +18,18 @@ class CLKComplicationTemplateModularLargeStandardBody
 
 This template belongs to the [`CLKComplicationFamily.modularLarge`](clkcomplicationfamily/modularlarge.md) family.
 
-![A diagram showing the layout of the modular large standard body complication. The diagram shows the header row, two lines of text, and an optional header image.](https://docs-assets.developer.apple.com/published/73935aa50a5db3e135d5a61cae9efb08/media-2933747%402x.png)
+![A diagram showing the layout of the modular large standard body complication. The diagram shows the header row, two lines of text, and an optional header image.](/images/com.apple.clockkit/media-2933747@2x.png)
 
 The following table lists the dimensions of the image you use in this template. All dimensions are in pixels. All images must be specified as `@2x` images for display on Apple Watch, so the point-based dimensions are half the listed size. The width of the image must be between the specified minimum and maximum (inclusive).
 
 | Apple Watch Size | Width | Height |
 | --- | --- | --- |
-| 38 mm | 22 pixels minimum ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) 64 pixels maximum | 22 pixels |
-| 40 mm | 24 pixels minimum ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) 74 pixels maximum | 24 pixels |
-| 41 mm | 25 pixels minimum ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) 78 pixels maximum | 25 pixels |
-| 42 mm | 24 pixels minimum ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) 74 pixels maximum | 24 pixels |
-| 44 mm | 28 pixels minimum ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) 84 pixels maximum | 28 pixels |
-| 45 mm | 29 pixels minimum ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) 88 pixels maximum | 29 pixels |
+| 38 mm | 22 pixels minimum ![None](/images/com.apple.clockkit/spacer.png) 64 pixels maximum | 22 pixels |
+| 40 mm | 24 pixels minimum ![None](/images/com.apple.clockkit/spacer.png) 74 pixels maximum | 24 pixels |
+| 41 mm | 25 pixels minimum ![None](/images/com.apple.clockkit/spacer.png) 78 pixels maximum | 25 pixels |
+| 42 mm | 24 pixels minimum ![None](/images/com.apple.clockkit/spacer.png) 74 pixels maximum | 24 pixels |
+| 44 mm | 28 pixels minimum ![None](/images/com.apple.clockkit/spacer.png) 84 pixels maximum | 28 pixels |
+| 45 mm | 29 pixels minimum ![None](/images/com.apple.clockkit/spacer.png) 88 pixels maximum | 29 pixels |
 
 Instead of providing multiple images with different resolutions, you can provide a single, scaleable PDF asset. For more information, see `Manage Assets`.
 
@@ -59,13 +59,13 @@ Instead of providing multiple images with different resolutions, you can provide
 ### Inherits From
 - [CLKComplicationTemplate](clkcomplicationtemplate.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCopying](../Foundation/NSCopying.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCopying](../foundation/nscopying.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

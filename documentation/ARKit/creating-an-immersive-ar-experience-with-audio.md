@@ -25,7 +25,7 @@ Before you can use audio, you need to set up a session and place the object from
 
 #### Add 3d Audio to the Scene
 
-To play audio from a given position in 3D space, create an [`SCNAudioSource`](https://developer.apple.com/documentation/SceneKit/SCNAudioSource) from an audio file. This sample loads the file from the bundle in `viewDidLoad`:
+To play audio from a given position in 3D space, create an [`SCNAudioSource`](https://developer.apple.com/documentation/scenekit/scnaudiosource) from an audio file. This sample loads the file from the bundle in `viewDidLoad`:
 
 ```swift
 // As an environmental sound layer, audio should play indefinitely
@@ -43,7 +43,7 @@ audioSource.loops = true
 audioSource.load()
 ```
 
-When you’re ready to play the sound, create an [`SCNAudioPlayer`](https://developer.apple.com/documentation/SceneKit/SCNAudioPlayer), passing it the audio source:
+When you’re ready to play the sound, create an [`SCNAudioPlayer`](https://developer.apple.com/documentation/scenekit/scnaudioplayer), passing it the audio source:
 
 ```swift
 // Create a player from the source and add it to `objectNode`

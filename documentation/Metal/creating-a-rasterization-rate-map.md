@@ -10,7 +10,7 @@ A rasterization rate map specifies the size of the final render target in logica
 
 To create a rate map, you create and configure a rate map descriptor for it and ask the device instance to create it. You then keep the rate map around for as long as you need it for your render targets.
 
-For example, if you’re rendering for display to the screen, set the [`screenSize`](mtlrasterizationratemapdescriptor/screensize.md) property of the rate map descriptor to the [`drawableSize`](https://developer.apple.com/documentation/QuartzCore/CAMetalLayer/drawableSize) property of the destination [`CAMetalLayer`](https://developer.apple.com/documentation/QuartzCore/CAMetalLayer) instance.
+For example, if you’re rendering for display to the screen, set the [`screenSize`](mtlrasterizationratemapdescriptor/screensize.md) property of the rate map descriptor to the [`drawableSize`](https://developer.apple.com/documentation/quartzcore/cametallayer/drawablesize) property of the destination [`CAMetalLayer`](https://developer.apple.com/documentation/quartzcore/cametallayer) instance.
 
 **Swift**:
 

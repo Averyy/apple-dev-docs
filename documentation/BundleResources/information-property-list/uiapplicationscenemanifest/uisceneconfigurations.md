@@ -29,13 +29,13 @@ For visionOS apps, it also supports:
 - [`UISceneSessionRoleImmersiveSpaceApplication`](information-property-list/uiapplicationscenemanifest/uisceneconfigurations/uiscenesessionroleimmersivespaceapplication.md)
 - [`CPSceneSessionRoleImmersiveSpaceApplication`](information-property-list/uiapplicationscenemanifest/uisceneconfigurations/cpscenesessionroleimmersivespaceapplication.md)
 
-For applications with [`CarPlay`](https://developer.apple.com/documentation/CarPlay) capabilities, it also supports these additional keys:
+For applications with [`CarPlay`](https://developer.apple.com/documentation/carplay) capabilities, it also supports these additional keys:
 
 - [`CPTemplateApplicationSceneSessionRoleApplication`](information-property-list/uiapplicationscenemanifest/uisceneconfigurations/cptemplateapplicationscenesessionroleapplication.md)
 - [`CPTemplateApplicationDashboardSceneSessionRoleApplication`](information-property-list/uiapplicationscenemanifest/uisceneconfigurations/cptemplateapplicationdashboardscenesessionroleapplication.md)
 - [`CPTemplateApplicationInstrumentClusterSceneSessionRoleApplication`](information-property-list/uiapplicationscenemanifest/uisceneconfigurations/cptemplateapplicationinstrumentclusterscenesessionroleapplication.md)
 
-> **Note**:  If you don’t include this key in your `Info.plist` file, you must implement the [`application(_:configurationForConnecting:options:)`](https://developer.apple.com/documentation/UIKit/UIApplicationDelegate/application(_:configurationForConnecting:options:)) method in your app delegate.
+> **Note**:  If you don’t include this key in your `Info.plist` file, you must implement the [`application(_:configurationForConnecting:options:)`](https://developer.apple.com/documentation/uikit/uiapplicationdelegate/application(_:configurationforconnecting:options:)) method in your app delegate.
 
 ## Topics
 

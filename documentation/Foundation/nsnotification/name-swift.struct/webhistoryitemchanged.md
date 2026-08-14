@@ -20,7 +20,7 @@ This notification does not contain a `userInfo` dictionary.
 
 ## See Also
 
-- [var alternateTitle: String!](../WebKit/WebHistoryItem/alternateTitle.md)
+- [var alternateTitle: String!](../webkit/webhistoryitem/alternatetitle.md)
   An alternate title that may be used in place of the receiver’s page title.
 - [static let WebHistoryAllItemsRemoved: NSNotification.Name](nsnotification/name-swift.struct/webhistoryallitemsremoved.md)
   Posted when all history items have been removed from the web history.

@@ -18,7 +18,7 @@ class Iterator
 ## Relationships
 
 ### Conforms To
-- [AsyncIteratorProtocol](../Swift/AsyncIteratorProtocol.md)
+- [AsyncIteratorProtocol](../swift/asynciteratorprotocol.md)
 
 
 ---

@@ -20,7 +20,7 @@ var canBecomeKey: Bool { get }
 
 #### Discussion
 
-The default value is [`true`](https://developer.apple.com/documentation/Swift/true). To indicate that the window can’t become the key window, override [`canBecomeKey`](uiwindow/canbecomekey.md) and return [`false`](https://developer.apple.com/documentation/Swift/false).
+The default value is [`true`](https://developer.apple.com/documentation/swift/true). To indicate that the window can’t become the key window, override [`canBecomeKey`](uiwindow/canbecomekey.md) and return [`false`](https://developer.apple.com/documentation/swift/false).
 
 ## See Also
 

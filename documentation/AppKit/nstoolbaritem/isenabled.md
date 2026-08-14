@@ -19,7 +19,7 @@ var isEnabled: Bool { get set }
 
 #### Discussion
 
-If the value of this property is [`true`](https://developer.apple.com/documentation/Swift/true), the item is enabled. If the [`autovalidates`](nstoolbaritem/autovalidates.md) property is true, changing the value of this property has no effect. Instead, the validation process enables and disables the toolbar item as appropriate.
+If the value of this property is [`true`](https://developer.apple.com/documentation/swift/true), the item is enabled. If the [`autovalidates`](nstoolbaritem/autovalidates.md) property is true, changing the value of this property has no effect. Instead, the validation process enables and disables the toolbar item as appropriate.
 
 ## See Also
 

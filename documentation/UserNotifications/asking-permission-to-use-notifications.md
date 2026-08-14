@@ -8,7 +8,7 @@ Request permission to display alerts, play sounds, or badge the app’s icon in 
 
 Local and remote notifications get a person’s attention by displaying an alert, playing sounds, or badging your app’s icon. These interactions occur when your app isn’t running or is in the background. They let people know that your app has relevant information for them to view. Because a person might consider notification-based interactions disruptive, you must obtain permission to use them.
 
-![A screenshot showing the system prompting a person to allow or disallow the use of alerts, sounds, and badges when the app sends notifications.](https://docs-assets.developer.apple.com/published/09fe7bfb520668466145ef245b3c0a50/media-3559454%402x.png)
+![A screenshot showing the system prompting a person to allow or disallow the use of alerts, sounds, and badges when the app sends notifications.](/images/com.apple.usernotifications/media-3559454@2x.png)
 
 ##### Explicitly Request Authorization in Context
 
@@ -38,7 +38,7 @@ Use provisional authorization to send notifications on a trial basis. People can
 
 The system delivers provisional notifications quietly — they don’t interrupt the person with a sound or banner, or appear on the lock screen. Instead, they only appear in the notification center’s history. These notifications also include buttons that prompt the person to keep or turn off the notification.
 
-![A screenshot of a provisional notification in the notification center, with buttons to keep or turn off the notification.](https://docs-assets.developer.apple.com/published/7ab9098dfb8cdbc554b7da2b7c7d3097/media-3544497%402x.png)
+![A screenshot of a provisional notification in the notification center, with buttons to keep or turn off the notification.](/images/com.apple.usernotifications/media-3544497@2x.png)
 
 If a person presses the Keep button, the system prompts them to choose between two options: Deliver Immediately or Deliver in Scheduled Summary. Deliver Immediately delivers future notifications quietly. The system authorizes your app to send notifications, but it doesn’t give your app permission to show alerts, play sounds, or badge the app icon. Your notification only appears in the notification center history unless they change their notification settings. Deliver in Scheduled Summary only appears if the person has Scheduled Summary toggled On in Settings.
 
@@ -89,7 +89,7 @@ You might want to configure your notification with alert, sound, and badge infor
 
 ## See Also
 
-- [User Notifications updates](../Updates/UserNotifications.md)
+- [User Notifications updates](../updates/usernotifications.md)
   Learn about important changes in User Notifications.
 
 

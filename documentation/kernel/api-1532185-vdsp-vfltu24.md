@@ -28,9 +28,9 @@ This function performs the following operation:
 ## Parameters
 
 - `__A`: The 24-bit integer input vector. 
-- `__IA`: The stride for input vector  . 
+- `__IA`: The stride for input vector `A`. 
 - `__C`: The single-precision floating-point output vector. 
-- `__IC`: The stride for output vector  . 
+- `__IC`: The stride for output vector `C`. 
 - `__N`: The number of values to convert.
 
 ## See Also

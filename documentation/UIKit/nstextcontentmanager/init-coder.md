@@ -20,7 +20,7 @@ init?(coder: NSCoder)
 
 ## Parameters
 
-- `coder`: An unachiver that conforms to the [`NSCoder`](https://developer.apple.com/documentation/Foundation/NSCoder) class.
+- `coder`: An unachiver that conforms to the [`NSCoder`](https://developer.apple.com/documentation/foundation/nscoder) class.
 
 ## See Also
 

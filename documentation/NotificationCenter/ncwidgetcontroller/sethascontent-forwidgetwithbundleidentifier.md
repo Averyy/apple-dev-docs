@@ -23,7 +23,7 @@ Both a widget and its containing app can use this method to specify whether the 
 
 ## Parameters
 
-- `flag`: Indicates whether the widget has content to display. Default value is [`true`](https://developer.apple.com/documentation/Swift/true).
+- `flag`: Indicates whether the widget has content to display. Default value is [`true`](https://developer.apple.com/documentation/swift/true).
 - `bundleID`: The bundle identifier of the widget.
 
 

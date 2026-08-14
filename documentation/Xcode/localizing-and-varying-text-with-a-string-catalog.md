@@ -8,7 +8,7 @@ Use string catalogs to manage localizable strings, add languages, translate text
 
 Your app delivers the best experience when it runs well in a person’s locale and displays content in their native language. Supporting multiple languages and regions is more than translating text. It includes handling plurals for nouns and units, as well as displaying the right form of text on specific devices.
 
-![None](https://docs-assets.developer.apple.com/published/ca1cd2ff0166df7b3fb34dee9d839e39/localizing-and-varying-text-with-a-string-catalog-0-hero%402x.png)
+![None](/images/com.apple.Xcode/localizing-and-varying-text-with-a-string-catalog-0-hero@2x.png)
 
 Use string catalogs to manage your localizable strings in one place using a visual editor in Xcode. Take advantage of the localization tasks that Xcode performs for you, such as extracting the localizable strings from your app, generating comments and translations, and adding plural variants for each language.
 

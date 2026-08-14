@@ -24,7 +24,7 @@ For use with the [`kAudioSessionCategory_RecordAudio`](kaudiosessioncategory_rec
 
 Using this mode may result in the system providing appropriate audio signal processing.
 
-This mode is equivalent to the [`videoRecording`](https://developer.apple.com/documentation/AVFAudio/AVAudioSession/Mode-swift.struct/videoRecording) mode provided in the AVFoundation framework.
+This mode is equivalent to the [`videoRecording`](https://developer.apple.com/documentation/avfaudio/avaudiosession/mode-swift.struct/videorecording) mode provided in the AVFoundation framework.
 
 ## See Also
 

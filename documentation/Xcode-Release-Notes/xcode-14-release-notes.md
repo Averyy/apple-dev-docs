@@ -60,7 +60,7 @@ Xcode 14 includes Swift 5.7 and SDKs for iOS 16, iPadOS 16, tvOS 16, watchOS 9, 
 - Simplify an app icon with a single 1024x1024 image that is automatically resized for its target. Choose the Single Size option in the app icon’s Attributes inspector in the asset catalog. You can still override individual sizes with the All Sizes option. (18475136) (FB5503050)
 - You can now paste copied images from the Finder directly into the asset catalog outline. (58980721)
 - You can now double-click an image slot to show the open file panel and choose a replacement asset. (81365822)
-- You can specify the default rendering mode for custom symbols in an Asset Catalog. Set the Render As attribute to automatic, template, multicolor, or hierarchical. The system then uses the default rendering mode for the symbol, unless you explicitly override it. For more information on custom symbols, see [`Creating custom symbol images for your app`](https://developer.apple.com/documentation/UIKit/creating-custom-symbol-images-for-your-app). (84513859)
+- You can specify the default rendering mode for custom symbols in an Asset Catalog. Set the Render As attribute to automatic, template, multicolor, or hierarchical. The system then uses the default rendering mode for the symbol, unless you explicitly override it. For more information on custom symbols, see [`Creating custom symbol images for your app`](https://developer.apple.com/documentation/uikit/creating-custom-symbol-images-for-your-app). (84513859)
 
 ###### Resolved Issues
 

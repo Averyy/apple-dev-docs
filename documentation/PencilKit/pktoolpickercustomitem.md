@@ -21,7 +21,7 @@ class PKToolPickerCustomItem
 
 A custom tool item represents a tool that isn’t one of the system tools. You configure details about a custom tool item yourself using [`PKToolPickerCustomItem.Configuration`](pktoolpickercustomitem/configuration-swift.struct.md), including providing custom images to draw the body of the tool.
 
-The following code shows how to create a tool picker with a custom tool item. This basic implementation of [`imageProvider`](pktoolpickercustomitem/configuration-swift.struct/imageprovider.md) retrieves an image for the tool body from an asset catalog. A full app might use a more advanced drawing implementation for the image provider, such as using [`UIGraphicsImageRenderer`](https://developer.apple.com/documentation/UIKit/UIGraphicsImageRenderer).
+The following code shows how to create a tool picker with a custom tool item. This basic implementation of [`imageProvider`](pktoolpickercustomitem/configuration-swift.struct/imageprovider.md) retrieves an image for the tool body from an asset catalog. A full app might use a more advanced drawing implementation for the image provider, such as using [`UIGraphicsImageRenderer`](https://developer.apple.com/documentation/uikit/uigraphicsimagerenderer).
 
 ```swift
 // Create a configuration for a custom tool item.
@@ -76,13 +76,13 @@ For a more complete example of creating a custom tool item, see [`Configuring th
 ### Inherits From
 - [PKToolPickerItem](pktoolpickeritem.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCopying](../Foundation/NSCopying.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCopying](../foundation/nscopying.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

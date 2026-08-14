@@ -25,7 +25,7 @@ This function is typically used to obtain the name of the computer that hosts a 
 ## Parameters
 
 - `printer`: The printer whose print queue host name you want to obtain.
-- `hostNameP`: A pointer to your   variable. On return, the variable refers to a Core Foundation string containing the name of the specified printer’s server. You are responsible for releasing the string.
+- `hostNameP`: A pointer to your [`CFString`](https://developer.apple.com/documentation/corefoundation/cfstring) variable. On return, the variable refers to a Core Foundation string containing the name of the specified printer’s server. You are responsible for releasing the string.
 
 ## See Also
 

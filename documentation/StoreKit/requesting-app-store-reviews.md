@@ -31,7 +31,7 @@ In addition, the app and its use meets the following conditions before displayin
 - The person successfully completes the three-step process at least four times. This number is arbitrary and developers can choose something that fits well with how many times someone is likely to complete a process in their apps.
 - A person must pause on the Process Completed scene for a few seconds. This requirement limits the possibility of the prompt interrupting them before they move to a different task in the app.
 
-To present a review request, the app reads the [`requestReview`](https://developer.apple.com/documentation/SwiftUI/EnvironmentValues/requestReview) environment value to get an instance of `RequestReviewAction` and calls it as a function:
+To present a review request, the app reads the [`requestReview`](https://developer.apple.com/documentation/swiftui/environmentvalues/requestreview) environment value to get an instance of `RequestReviewAction` and calls it as a function:
 
 ```swift
 @Environment(\.requestReview) private var requestReview
@@ -66,7 +66,7 @@ if processCompletedCount >= 4, currentAppVersion != lastVersionPromptedForReview
 }
 ```
 
-In the following code, the app stores the usage data that delays the review request in [`AppStorage`](https://developer.apple.com/documentation/SwiftUI/AppStorage):
+In the following code, the app stores the usage data that delays the review request in [`AppStorage`](https://developer.apple.com/documentation/swiftui/appstorage):
 
 ```swift
 /// An identifier for the three-step process the person completes before this app chooses to request a review.

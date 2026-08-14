@@ -19,7 +19,7 @@ Book Tracker is a SwiftUI app for cataloging books and the reviews you write abo
 - Descriptive tags from a freeform review, so you can browse and filter your library
 - Natural-language search assistant that answers questions about your collection by calling tools
 
-![A side-by-side view of the Book Tracker app. The library screen shows a grid of book covers, and the book details screen shows generated tags above a written review.](https://docs-assets.developer.apple.com/published/5ba789c7a75098218bf7034b096f6bc8/library-and-details%402x.png)
+![A side-by-side view of the Book Tracker app. The library screen shows a grid of book covers, and the book details screen shows generated tags above a written review.](/images/com.apple.evaluations/library-and-details@2x.png)
 
 This sample evaluates both of Book Tracker’s intelligent features. It builds a complete evaluation for the book-tagging feature, then assesses the app’s synthetic data generation, model-as-judge calibration, and tool-call evaluation:
 
@@ -35,19 +35,19 @@ For more information about the concepts behind this workflow, see [`Designing ef
 
 The diagram below shows the evaluation pipeline that this sample builds. A dataset of reviews flows through the book-tagging feature, both code-based evaluators and a model as judge score the generated tags, and the combined results produce a pass-or-fail report. The model as judge is calibrated to match a human expert’s scores.
 
-![A flowchart of the sample’s evaluation pipeline. A dataset of reviews and expected tags feeds the book-tagging feature, which produces generated tags. The tags flow in parallel to code-based evaluators and to a model as judge, whose results combine in a metrics aggregator that produces a pass-or-fail report. A dashed loop calibrates the model as judge against expert scores.](https://docs-assets.developer.apple.com/published/5786f2cf1648296152e120a82c2a0799/flowchart%402x.png)
+![A flowchart of the sample’s evaluation pipeline. A dataset of reviews and expected tags feeds the book-tagging feature, which produces generated tags. The tags flow in parallel to code-based evaluators and to a model as judge, whose results combine in a metrics aggregator that produces a pass-or-fail report. A dashed loop calibrates the model as judge against expert scores.](/images/com.apple.evaluations/flowchart@2x.png)
 
 #### Configure the Sample Code Project
 
 Before you run the sample code project:
 
 1. Open the sample with the latest version of Xcode.
-2. Set the developer team for the project target to let Xcode automatically manage the provisioning profile. For more information, see [`Preparing your app for distribution`](https://developer.apple.com/documentation/Xcode/preparing-your-app-for-distribution#Set-the-bundle-ID) and [`Preparing your app for distribution`](https://developer.apple.com/documentation/Xcode/preparing-your-app-for-distribution#Assign-the-project-to-a-team).
+2. Set the developer team for the project target to let Xcode automatically manage the provisioning profile. For more information, see [`Preparing your app for distribution`](https://developer.apple.com/documentation/xcode/preparing-your-app-for-distribution) and [`Preparing your app for distribution`](https://developer.apple.com/documentation/xcode/preparing-your-app-for-distribution).
 3. Run the sample on a device or simulator that supports Apple Intelligence and the Foundation Models framework.
 
 #### Generate Tags for a Review
 
-The descriptive-tag feature is in `BookTaggingService`. It asks the on-device model to turn a reader’s review into a small set of descriptive tags. The output type is a [`Generable`](https://developer.apple.com/documentation/FoundationModels/Generable) struct, and a [`Guide(description:_:)`](https://developer.apple.com/documentation/FoundationModels/Guide(description:_:)) constrains the model to generate between three and eight tags:
+The descriptive-tag feature is in `BookTaggingService`. It asks the on-device model to turn a reader’s review into a small set of descriptive tags. The output type is a [`Generable`](https://developer.apple.com/documentation/foundationmodels/generable) struct, and a [`Guide(description:_:)`](https://developer.apple.com/documentation/foundationmodels/guide(description:_:)) constrains the model to generate between three and eight tags:
 
 ```swift
 @Generable
@@ -57,7 +57,7 @@ struct BookTags: Codable, Equatable {
 }
 ```
 
-The service builds a [`LanguageModelSession`](https://developer.apple.com/documentation/FoundationModels/LanguageModelSession) from a fixed set of instructions, running the on-device [`SystemLanguageModel`](https://developer.apple.com/documentation/FoundationModels/SystemLanguageModel), and asks for the structured output:
+The service builds a [`LanguageModelSession`](https://developer.apple.com/documentation/foundationmodels/languagemodelsession) from a fixed set of instructions, running the on-device [`SystemLanguageModel`](https://developer.apple.com/documentation/foundationmodels/systemlanguagemodel), and asks for the structured output:
 
 ```swift
 static func generateTags(for review: String) async throws -> BookTags {
@@ -309,11 +309,11 @@ func evaluateBookTagging() async throws {
 
 In the sample’s evaluation, the threshold for the `tagCount` metric requires at least 80 percent of the runs to produce a valid tag count. An intelligence feature that can’t reliably return the right number of tags fails. Xcode records the results and presents them in detail:
 
-![The Xcode test report summary for the Book Tracker tag evaluation. Metric cards report the code-based heuristics, including Has Genre Tag Ratio, Tag Count Ratio, and the tag-total average, variance, and standard deviation, alongside the model-as-judge Relevance and Usefulness averages.](https://docs-assets.developer.apple.com/published/1ab40fa4c1831ec10fdcb43816ee5450/heuristics-and-quality-metric-groups%402x.png)
+![The Xcode test report summary for the Book Tracker tag evaluation. Metric cards report the code-based heuristics, including Has Genre Tag Ratio, Tag Count Ratio, and the tag-total average, variance, and standard deviation, alongside the model-as-judge Relevance and Usefulness averages.](/images/com.apple.evaluations/heuristics-and-quality-metric-groups@2x.png)
 
 #### Scale Coverage with Synthetic Data
 
-A small dataset can demonstrate that the intelligence-powered feature of generating descriptive tags works as expected on familiar titles, but it’s not large enough to produce statistically valid results. In the sample, the `BookSampleGenerator` command-line tool expands the curated set toward a target of 100 samples with a [`SampleGenerator`](samplegenerator.md). It seeds generation with the curated books and rejects any sample that breaks the rules. For this offline step, it uses the more powerful [`PrivateCloudComputeLanguageModel`](https://developer.apple.com/documentation/FoundationModels/PrivateCloudComputeLanguageModel) instead of the on-device model.
+A small dataset can demonstrate that the intelligence-powered feature of generating descriptive tags works as expected on familiar titles, but it’s not large enough to produce statistically valid results. In the sample, the `BookSampleGenerator` command-line tool expands the curated set toward a target of 100 samples with a [`SampleGenerator`](samplegenerator.md). It seeds generation with the curated books and rejects any sample that breaks the rules. For this offline step, it uses the more powerful [`PrivateCloudComputeLanguageModel`](https://developer.apple.com/documentation/foundationmodels/privatecloudcomputelanguagemodel) instead of the on-device model.
 
 ```swift
 let generator = SampleGenerator<ModelSample<BookTags>>(
@@ -434,7 +434,7 @@ aggregator.group("Relevance") { group in
 #expect(result.aggregateValue(.custom(label: "Usefulness Alignment Score")) > 0.6)
 ```
 
-![The Xcode test report showing the Judge Calibration test failing. The Relevance Alignment Score is -0.037, well below the required 0.6, so the assertion fails and the judge isn’t yet calibrated against the expert.](https://docs-assets.developer.apple.com/published/5eef145ca22b1880b577af987e8c2b35/alignment-fail%402x.png)
+![The Xcode test report showing the Judge Calibration test failing. The Relevance Alignment Score is -0.037, well below the required 0.6, so the assertion fails and the judge isn’t yet calibrated against the expert.](/images/com.apple.evaluations/alignment-fail@2x.png)
 
 In the sample, the test requires a Cohen’s kappa above 0.6 on both the relevance and usefulness dimensions. If the test fails, the next step is to revise the model-as-judge’s instructions, often by adding a worked example that covers the disagreement, and run again until the model as judge aligns with human scoring.
 
@@ -446,7 +446,7 @@ The intelligence-powered search assistant feature answers a person’s question 
 - In what order
 - With what arguments
 
-In the sample, `SearchToolEvaluations` registers the app’s three real [`Tool`](https://developer.apple.com/documentation/FoundationModels/Tool) implementations and captures the model’s tool calls through the session’s [`StructuredTranscript`](structuredtranscript.md):
+In the sample, `SearchToolEvaluations` registers the app’s three real [`Tool`](https://developer.apple.com/documentation/foundationmodels/tool) implementations and captures the model’s tool calls through the session’s [`StructuredTranscript`](structuredtranscript.md):
 
 ```swift
 func subject(from sample: ModelSample<BookResults>) async throws -> ModelSubject<BookResults> {
@@ -505,7 +505,7 @@ For the full set of argument matchers and trajectory options, see [`Evaluating t
 
 This evaluation checks which tools the assistant calls, in what order, and with what arguments. It doesn’t score the quality of the answers the assistant produces from those tool results. A production app also evaluates the generated answers, scoring them for qualities like relevance and groundedness with the same code-based and model-as-judge techniques this sample applies to tags.
 
-![The Xcode test report for the search-tool evaluation. An All Passed column marks each prompt with a pass or fail, and a Percentage Passed column reports the share of expected tool calls each prompt matched, with All Passed Ratio and Percentage Passed Average summarized above.](https://docs-assets.developer.apple.com/published/7cb581883267bbb911dbb0229be67df1/search-tools-per-sample%402x.png)
+![The Xcode test report for the search-tool evaluation. An All Passed column marks each prompt with a pass or fail, and a Percentage Passed column reports the share of expected tool calls each prompt matched, with All Passed Ratio and Percentage Passed Average summarized above.](/images/com.apple.evaluations/search-tools-per-sample@2x.png)
 
 Both of Book Tracker’s intelligent features now have a measurable quality check: the sample scores tags with code and a calibrated model as judge, and it measures search against expected tool trajectories. Every change to a prompt, a model, or a tool runs against those evaluations, tracking statistics and failing the test suite when quality regresses. This systematic evaluation turns subjective impressions into evidence you can act on, and makes each round of improvement verifiable before release.
 

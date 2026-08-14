@@ -22,7 +22,7 @@ case minimumLineHeight
 
 #### Discussion
 
-This value is always nonnegative. Type: [`CGFloat`](https://developer.apple.com/documentation/CoreFoundation/CGFloat-swift.struct). Default value: `0.0`. Affects: [`CTFramesetter`](ctframesetter.md).
+This value is always nonnegative. Type: [`CGFloat`](https://developer.apple.com/documentation/corefoundation/cgfloat-swift.struct). Default value: `0.0`. Affects: [`CTFramesetter`](ctframesetter.md).
 
 ## See Also
 

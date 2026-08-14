@@ -6,12 +6,12 @@ Learn about important changes to FSKit.
 
 #### Overview
 
-Browse notable changes in [`FSKit`](https://developer.apple.com/documentation/FSKit).
+Browse notable changes in [`FSKit`](https://developer.apple.com/documentation/fskit).
 
 #### June 2026
 
-- Update your [`FSVolume`](https://developer.apple.com/documentation/FSKit/FSVolume) implementations to adopt [`FSVolume.Handler`](https://developer.apple.com/documentation/FSKit/FSVolume/Handler) and the related “handler” protocols, which replace the now-deprecated [`FSVolume.Operations`](https://developer.apple.com/documentation/FSKit/FSVolume/Operations) and other “operations” protocols. The “Handler” protocols provide richer [`FSVolumeHandlerResult`](https://developer.apple.com/documentation/FSKit/FSVolumeHandlerResult) subtypes to pass back to the framework after each call completes. Some calls also provide an [`FSContext`](https://developer.apple.com/documentation/FSKit/FSContext) parameter which contains user and group identifiers. You can use these to restrict access to your filesystem to known callers.
-- Improve performance with kernel data caching, by conforming to the [`FSVolume.DataCacheHandler`](https://developer.apple.com/documentation/FSKit/FSVolume/DataCacheHandler) protocol.
+- Update your [`FSVolume`](https://developer.apple.com/documentation/fskit/fsvolume) implementations to adopt [`FSVolume.Handler`](https://developer.apple.com/documentation/fskit/fsvolume/handler) and the related “handler” protocols, which replace the now-deprecated [`FSVolume.Operations`](https://developer.apple.com/documentation/fskit/fsvolume/operations) and other “operations” protocols. The “Handler” protocols provide richer [`FSVolumeHandlerResult`](https://developer.apple.com/documentation/fskit/fsvolumehandlerresult) subtypes to pass back to the framework after each call completes. Some calls also provide an [`FSContext`](https://developer.apple.com/documentation/fskit/fscontext) parameter which contains user and group identifiers. You can use these to restrict access to your filesystem to known callers.
+- Improve performance with kernel data caching, by conforming to the [`FSVolume.DataCacheHandler`](https://developer.apple.com/documentation/fskit/fsvolume/datacachehandler) protocol.
 
 ## See Also
 

@@ -14,7 +14,7 @@ The per-domain limit of concurrent calls that a file provider extension can make
 
 #### Discussion
 
-Use this value to set the limit of concurrent calls to methods like [`fetchContents(for:version:request:completionHandler:)`](https://developer.apple.com/documentation/FileProvider/NSFileProviderReplicatedExtension/fetchContents(for:version:request:completionHandler:)). Set the value for this key to an integer in the range `1` to `128`.
+Use this value to set the limit of concurrent calls to methods like [`fetchContents(for:version:request:completionHandler:)`](https://developer.apple.com/documentation/fileprovider/nsfileproviderreplicatedextension/fetchcontents(for:version:request:completionhandler:)). Set the value for this key to an integer in the range `1` to `128`.
 
 ## See Also
 

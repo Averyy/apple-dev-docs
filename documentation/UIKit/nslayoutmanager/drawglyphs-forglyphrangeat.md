@@ -33,7 +33,7 @@ Performs glyph generation and layout if needed.
 
 ## See Also
 
-- [var textContainerOrigin: NSPoint](../AppKit/NSTextView/textContainerOrigin.md)
+- [var textContainerOrigin: NSPoint](../appkit/nstextview/textcontainerorigin.md)
   The origin of the receiver’s text container.
 - [func glyphRange(for: NSTextContainer) -> NSRange](nslayoutmanager/glyphrange(for:).md)
   Returns the range of glyphs lying within the specified text container.

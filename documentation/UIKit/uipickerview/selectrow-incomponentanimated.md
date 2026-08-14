@@ -21,7 +21,7 @@ func selectRow(_ row: Int, inComponent component: Int, animated: Bool)
 
 - `row`: A zero-indexed number identifying a row of `component`.
 - `component`: A zero-indexed number identifying a component of the picker view.
-- `animated`: [`true`](https://developer.apple.com/documentation/Swift/true) to animate the selection by spinning the wheel (component) to the new value; if you specify [`false`](https://developer.apple.com/documentation/Swift/false), the new selection is shown immediately.
+- `animated`: [`true`](https://developer.apple.com/documentation/swift/true) to animate the selection by spinning the wheel (component) to the new value; if you specify [`false`](https://developer.apple.com/documentation/swift/false), the new selection is shown immediately.
 
 ## See Also
 

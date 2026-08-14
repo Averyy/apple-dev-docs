@@ -33,11 +33,11 @@ Annotating images in an object detector teaches your model what objects it’s t
 
 Here is a training data image:
 
-![A picture of a croissant on a breakfast table.](https://docs-assets.developer.apple.com/published/46c42d0543a634784b3727dde375217a/building-an-object-detector-data-source-4%402x.png)
+![A picture of a croissant on a breakfast table.](/images/com.apple.createml/building-an-object-detector-data-source-4@2x.png)
 
 Here is an illustration of how a bounding box on a training data image is structured:
 
-![A picture of a waffle on a breakfast table. This particular annotation has the origin in the top left.](https://docs-assets.developer.apple.com/published/9e554515229714e84c8f9efdfce9d309/building-an-object-detector-data-source-5%402x.png)
+![A picture of a waffle on a breakfast table. This particular annotation has the origin in the top left.](/images/com.apple.createml/building-an-object-detector-data-source-5@2x.png)
 
 One way to structure your annotations is with a JSON annotation file, structured like this:
 
@@ -174,11 +174,11 @@ For more detail, see [`MLObjectDetector.AnnotationType`](mlobjectdetector/annota
 
 The simplest way to structure your data is using the `directoryWithImagesAndJsonAnnotation` case. Take the collected images and exactly one JSON annotation file, and put them all in a single folder.
 
-![Flow diagram of an annotated images data-source file arrangement. The parent folder contains images and one annotation file.](https://docs-assets.developer.apple.com/published/a327e0401c9603058611ad3668f318e6/building-an-object-detector-data-source-1%402x.png)
+![Flow diagram of an annotated images data-source file arrangement. The parent folder contains images and one annotation file.](/images/com.apple.createml/building-an-object-detector-data-source-1@2x.png)
 
 Use this folder to train an object detector. The Create ML App uses this case, and you can drag a folder into a training well to train an object detector.
 
-![Screenshot of Create ML App showing a folder dragged into the training well for Object Detection.](https://docs-assets.developer.apple.com/published/00aae46d22966c3c16840b9f7da115ac/building-an-object-detector-data-source-7%402x.png)
+![Screenshot of Create ML App showing a folder dragged into the training well for Object Detection.](/images/com.apple.createml/building-an-object-detector-data-source-7@2x.png)
 
 After you train a model in the Create ML app, you can generate bounding boxes from the trained model in the Preview tab.
 
@@ -186,7 +186,7 @@ After you train a model in the Create ML app, you can generate bounding boxes fr
 
 The `DataSource` case `directoryWithImages` is similar to `directoryWithImagesAndJsonAnnotation`, except you don’t need to nest the JSON annotation file in the folder with the images. Instead, you call it by reference from any specified URL.
 
-![Flow diagram of an annotated images data-source file arrangement. The parent folder contains images with one annotation file separately.](https://docs-assets.developer.apple.com/published/38848ccaa70c2284484c7a3a78487979/building-an-object-detector-data-source-2%402x.png)
+![Flow diagram of an annotated images data-source file arrangement. The parent folder contains images with one annotation file separately.](/images/com.apple.createml/building-an-object-detector-data-source-2@2x.png)
 
 ##### Build a Data Source From a Data Frame
 
@@ -195,7 +195,7 @@ In the case `frame`, you call an object detector from a single `DataFrame`. Rath
 - `imageColumn`: contains image file locations
 - `annotationColumn`: contains the annotations for that particular image, using the same JSON structure defined above.
 
-![Overview of an DataFrame structured for an Object Detector Annotation, with one column with image filenames and a 2nd with annotations.](https://docs-assets.developer.apple.com/published/c4006baa765fa154de69f53f6f51727f/building-an-object-detector-data-source-3%402x.png)
+![Overview of an DataFrame structured for an Object Detector Annotation, with one column with image filenames and a 2nd with annotations.](/images/com.apple.createml/building-an-object-detector-data-source-3@2x.png)
 
 
 ---

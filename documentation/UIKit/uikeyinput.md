@@ -40,7 +40,7 @@ Adopt this protocol in a subclass of [`UIResponder`](uiresponder.md) to support 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 - [UITextInputTraits](uitextinputtraits.md)
 ### Inherited By
 - [UITextDocumentProxy](uitextdocumentproxy.md)

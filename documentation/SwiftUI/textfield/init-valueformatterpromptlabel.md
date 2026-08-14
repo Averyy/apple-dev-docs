@@ -23,11 +23,11 @@ init<V>(value: Binding<V>, formatter: Formatter, prompt: Text? = nil, @ContentBu
 
 #### Discussion
 
-Use this initializer to create a text field that binds to a bound optional value, using a [`Formatter`](https://developer.apple.com/documentation/Foundation/Formatter) to convert to and from this type. Changes to the bound value update the string displayed by the text field. Editing the text field updates the bound value, as long as the formatter can parse the text. If the format style can’t parse the input, the bound value remains unchanged.
+Use this initializer to create a text field that binds to a bound optional value, using a [`Formatter`](https://developer.apple.com/documentation/foundation/formatter) to convert to and from this type. Changes to the bound value update the string displayed by the text field. Editing the text field updates the bound value, as long as the formatter can parse the text. If the format style can’t parse the input, the bound value remains unchanged.
 
 Use the [`onSubmit(of:_:)`](view/onsubmit(of:_:).md) modifier to invoke an action whenever the user submits this text field.
 
-The following example uses a [`Double`](https://developer.apple.com/documentation/Swift/Double) as the bound value, and a [`NumberFormatter`](https://developer.apple.com/documentation/Foundation/NumberFormatter) instance to convert to and from a string representation. The formatter uses the [`NumberFormatter.Style.decimal`](https://developer.apple.com/documentation/Foundation/NumberFormatter/Style/decimal) style, to allow entering a fractional part. As the user types, the bound value updates, which in turn updates three [`Text`](text.md) views that use different format styles. If the user enters text that doesn’t represent a valid `Double`, the bound value doesn’t update.
+The following example uses a [`Double`](https://developer.apple.com/documentation/swift/double) as the bound value, and a [`NumberFormatter`](https://developer.apple.com/documentation/foundation/numberformatter) instance to convert to and from a string representation. The formatter uses the [`NumberFormatter.Style.decimal`](https://developer.apple.com/documentation/foundation/numberformatter/style/decimal) style, to allow entering a fractional part. As the user types, the bound value updates, which in turn updates three [`Text`](text.md) views that use different format styles. If the user enters text that doesn’t represent a valid `Double`, the bound value doesn’t update.
 
 ```swift
 @State private var myDouble: Double = 0.673

@@ -210,7 +210,7 @@ When the user chooses dictation input on a supported device, the system automati
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 - [UIKeyInput](uikeyinput.md)
 - [UITextInputTraits](uitextinputtraits.md)
 ### Inherited By

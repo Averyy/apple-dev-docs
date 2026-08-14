@@ -30,7 +30,7 @@ Any object not already assigned to a store is assigned based on the same rules C
 
 This method results in a transaction with the underlying store which changes the file’s modification date.
 
-In macOS, this results an additional consideration if you invoke this method on the managed object context associated with an instance of [`NSPersistentDocument`](https://developer.apple.com/documentation/AppKit/NSPersistentDocument). Instances of `NSDocument` need to know that they are in sync with the underlying content. To avoid problems, after invoking this method you must therefore update the document’s modification date (using [`fileModificationDate`](https://developer.apple.com/documentation/AppKit/NSDocument/fileModificationDate)).
+In macOS, this results an additional consideration if you invoke this method on the managed object context associated with an instance of [`NSPersistentDocument`](https://developer.apple.com/documentation/appkit/nspersistentdocument). Instances of `NSDocument` need to know that they are in sync with the underlying content. To avoid problems, after invoking this method you must therefore update the document’s modification date (using [`fileModificationDate`](https://developer.apple.com/documentation/appkit/nsdocument/filemodificationdate)).
 
 ## Parameters
 

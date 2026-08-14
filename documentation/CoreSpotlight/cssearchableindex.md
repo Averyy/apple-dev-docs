@@ -25,13 +25,13 @@ class CSSearchableIndex
 
 #### Overview
 
-A `CSSearchableIndex` object manages an on-device index for your app’s searchable content. To make your app’s content searchable, create one or more [`CSSearchableItem`](cssearchableitem.md) objects for your content and add those items to the index. If your app defines [`AppEntity`](https://developer.apple.com/documentation/AppIntents/AppEntity) types, you can also index those types directly or associate them with your [`CSSearchableItem`](cssearchableitem.md) objects. When you execute a query, Core Spotlight searches your indexes for the requested information and returns the results to your code.
+A `CSSearchableIndex` object manages an on-device index for your app’s searchable content. To make your app’s content searchable, create one or more [`CSSearchableItem`](cssearchableitem.md) objects for your content and add those items to the index. If your app defines [`AppEntity`](https://developer.apple.com/documentation/appintents/appentity) types, you can also index those types directly or associate them with your [`CSSearchableItem`](cssearchableitem.md) objects. When you execute a query, Core Spotlight searches your indexes for the requested information and returns the results to your code.
 
 Create custom `CSSearchableIndex` objects in your production code to store your app’s content, instead of using the default index. Custom indexes support data protection, which allows you to encrypt your data and protect it from unauthorized access. Custom indexes also support batch operations, which allow you to index large amounts of data more efficiently and with less risk. For example, you can add custom state information to each batch operation to make it easier to restart the indexing process if your app or app extension crashes. Use the default index only during testing or prototyping of your features.
 
 Modify a `CSSearchableIndex` object from only one thread or task at a time, and modify it only from your signed app or app extension. It’s a programming error to access a custom index from multiple threads simultaneously or from an unsigned bundle. When performing batch updates on an index, start each new batch operation only after calling the [`endBatch(withClientState:completionHandler:)`](cssearchableindex/endbatch(withclientstate:completionhandler:).md) or [`endIndexBatch(expectedClientState:newClientState:completionHandler:)`](cssearchableindex/endindexbatch(expectedclientstate:newclientstate:completionhandler:).md) method of the previous batch operation.
 
-> **Note**: If your app creates [`NSUserActivity`](https://developer.apple.com/documentation/Foundation/NSUserActivity) objects, set the [`isEligibleForSearch`](https://developer.apple.com/documentation/Foundation/NSUserActivity/isEligibleForSearch) property of those objects to `true` if you want them to appear in search results.
+> **Note**: If your app creates [`NSUserActivity`](https://developer.apple.com/documentation/foundation/nsuseractivity) objects, set the [`isEligibleForSearch`](https://developer.apple.com/documentation/foundation/nsuseractivity/iseligibleforsearch) property of those objects to `true` if you want them to appear in search results.
 
 ## Topics
 
@@ -84,14 +84,14 @@ Modify a `CSSearchableIndex` object from only one thread or task at a time, and 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

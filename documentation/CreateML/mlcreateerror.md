@@ -59,15 +59,15 @@ enum MLCreateError
 ## Relationships
 
 ### Conforms To
-- [Copyable](../Swift/Copyable.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomNSError](../Foundation/CustomNSError.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Error](../Swift/Error.md)
-- [Escapable](../Swift/Escapable.md)
-- [LocalizedError](../Foundation/LocalizedError.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Copyable](../swift/copyable.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomNSError](../foundation/customnserror.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Error](../swift/error.md)
+- [Escapable](../swift/escapable.md)
+- [LocalizedError](../foundation/localizederror.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

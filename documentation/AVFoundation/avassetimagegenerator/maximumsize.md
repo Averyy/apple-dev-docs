@@ -25,7 +25,7 @@ var maximumSize: CGSize { get set }
 
 #### Discussion
 
-The default value is [`zero`](https://developer.apple.com/documentation/CoreFoundation/CGSize/zero), which generates images at the asset’s unscaled dimensions.
+The default value is [`zero`](https://developer.apple.com/documentation/corefoundation/cgsize/zero), which generates images at the asset’s unscaled dimensions.
 
 Setting a size scales images to fit their defined bounding boxes. You define the aspect ratio of the scaled image by setting a value for the [`apertureMode`](avassetimagegenerator/aperturemode-swift.property.md) property.
 

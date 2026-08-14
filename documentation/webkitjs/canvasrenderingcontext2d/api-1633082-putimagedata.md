@@ -33,13 +33,13 @@ All x and y parameter values are in CSS pixels—they are unaffected by scaling,
 
 ## Parameters
 
-- `imageData`: An   object, containing a pixel array.
+- `imageData`: An `imageData` object, containing a pixel array.
 - `x`: The x-coordinate of the section of the canvas on which to render the image data.
 - `y`: The x-coordinate of the section of the canvas on which to render the image data.
-- `dx`: The x-coordinate of the left edge of the region of the   pixel array to render.
-- `dy`: The y-coordinate of the top of the region of the   pixel array to render.
-- `dw`: The width of the region of the   pixel array to render.
-- `dh`: The height of the region of the   pixel array to render.
+- `dx`: The x-coordinate of the left edge of the region of the `imageData` pixel array to render.
+- `dy`: The y-coordinate of the top of the region of the `imageData` pixel array to render.
+- `dw`: The width of the region of the `imageData` pixel array to render.
+- `dh`: The height of the region of the `imageData` pixel array to render.
 
 ## See Also
 

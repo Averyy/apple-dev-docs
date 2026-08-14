@@ -49,7 +49,7 @@ For more information on using layout anchors, see [`NSLayoutAnchor`](nslayoutanc
   Returns a constraint that defines the minimum amount by which the current anchor trails the specified anchor.
 - [func constraint(lessThanOrEqualToSystemSpacingAfter: NSLayoutXAxisAnchor, multiplier: CGFloat) -> NSLayoutConstraint](nslayoutxaxisanchor/constraint(lessthanorequaltosystemspacingafter:multiplier:).md)
   Returns a constraint that defines the maximum amount by which the current anchor trails the specified anchor.
-- [Creating self-sizing table view cells](../UIKit/creating-self-sizing-table-view-cells.md)
+- [Creating self-sizing table view cells](../uikit/creating-self-sizing-table-view-cells.md)
   Create table view cells that support Dynamic Type and use system spacing constraints to adjust the spacing surrounding text labels.
 ### Creating a layout dimension
 - [func anchorWithOffset(to: NSLayoutXAxisAnchor) -> NSLayoutDimension](nslayoutxaxisanchor/anchorwithoffset(to:).md)
@@ -60,16 +60,16 @@ For more information on using layout anchors, see [`NSLayoutAnchor`](nslayoutanc
 ### Inherits From
 - [NSLayoutAnchor](nslayoutanchor.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCoding](../Foundation/NSCoding.md)
-- [NSCopying](../Foundation/NSCopying.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCoding](../foundation/nscoding.md)
+- [NSCopying](../foundation/nscopying.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

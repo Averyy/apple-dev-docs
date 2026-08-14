@@ -16,7 +16,7 @@ var automaticAcceptanceInterval: TimeInterval { get set }
 
 #### Discussion
 
-The content proposal displays a countdown timer to reflect this value. Set this value to [`nan`](https://developer.apple.com/documentation/Swift/Double/nan) to disable the default, which is automatic acceptance.
+The content proposal displays a countdown timer to reflect this value. Set this value to [`nan`](https://developer.apple.com/documentation/swift/double/nan) to disable the default, which is automatic acceptance.
 
 ## See Also
 

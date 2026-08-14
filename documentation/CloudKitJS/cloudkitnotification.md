@@ -16,7 +16,7 @@ interface CloudKit.Notification
 
 #### Overview
 
-This class is similar to the [`CKNotification`](https://developer.apple.com/documentation/CloudKit/CKNotification) class in the CloudKit framework.
+This class is similar to the [`CKNotification`](https://developer.apple.com/documentation/cloudkit/cknotification) class in the CloudKit framework.
 
 ## Topics
 

@@ -16,7 +16,7 @@ func register(_ itemClass: AnyClass?, forItemWithIdentifier identifier: NSUserIn
 
 #### Discussion
 
-Use this method to register the classes that represent items in your collection view. When you request an item using the [`makeItem(withIdentifier:for:)`](nscollectionview/makeitem(withidentifier:for:).md) method, the collection view recycles an existing item with the same `identifier` or creates a new one by instantiating your class and calling the [`init()`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class/init()) method of the resulting object.
+Use this method to register the classes that represent items in your collection view. When you request an item using the [`makeItem(withIdentifier:for:)`](nscollectionview/makeitem(withidentifier:for:).md) method, the collection view recycles an existing item with the same `identifier` or creates a new one by instantiating your class and calling the [`init()`](https://developer.apple.com/documentation/objectivec/nsobject-swift.class/init()) method of the resulting object.
 
 Because items are recycled to improve performance, it is recommended that your custom classes conform to the [`NSCollectionViewElement`](nscollectionviewelement.md) protocol. You can use the methods of that protocol to prepare your classes for reuse.
 

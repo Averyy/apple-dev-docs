@@ -20,11 +20,11 @@ static let userActivityDictionary: UIApplication.LaunchOptionsKey
 
 #### Discussion
 
-The value of this key is an [`NSDictionary`](https://developer.apple.com/documentation/Foundation/NSDictionary) object containing the key [`userActivityType`](uiapplication/launchoptionskey/useractivitytype.md), whose value is an [`NSString`](https://developer.apple.com/documentation/Foundation/NSString) object identifying the activity type.
+The value of this key is an [`NSDictionary`](https://developer.apple.com/documentation/foundation/nsdictionary) object containing the key [`userActivityType`](uiapplication/launchoptionskey/useractivitytype.md), whose value is an [`NSString`](https://developer.apple.com/documentation/foundation/nsstring) object identifying the activity type.
 
 ## See Also
 
-- [class NSUserActivity](../Foundation/NSUserActivity.md)
+- [class NSUserActivity](../foundation/nsuseractivity.md)
   A representation of the state of your app at a moment in time.
 - [static let bluetoothCentrals: UIApplication.LaunchOptionsKey](uiapplication/launchoptionskey/bluetoothcentrals.md)
   A key indicating that the app was relaunched to handle Bluetooth-related events.

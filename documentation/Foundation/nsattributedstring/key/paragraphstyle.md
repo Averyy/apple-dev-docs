@@ -22,7 +22,7 @@ static let paragraphStyle: NSAttributedString.Key
 
 #### Discussion
 
-The value of this attribute is an [`NSParagraphStyle`](https://developer.apple.com/documentation/AppKit/NSParagraphStyle) object. Use this attribute to apply multiple attributes to a range of text. If you do not specify this attribute, the string uses the default paragraph attributes, as returned by the [`default`](https://developer.apple.com/documentation/AppKit/NSParagraphStyle/default) method of [`NSParagraphStyle`](https://developer.apple.com/documentation/AppKit/NSParagraphStyle).
+The value of this attribute is an [`NSParagraphStyle`](https://developer.apple.com/documentation/appkit/nsparagraphstyle) object. Use this attribute to apply multiple attributes to a range of text. If you do not specify this attribute, the string uses the default paragraph attributes, as returned by the [`default`](https://developer.apple.com/documentation/appkit/nsparagraphstyle/default) method of [`NSParagraphStyle`](https://developer.apple.com/documentation/appkit/nsparagraphstyle).
 
 ## See Also
 

@@ -124,7 +124,7 @@ logger.log("Ordered smoothie \(smoothieName, privacy: .public)")  // Visible!
 ## Relationships
 
 ### Conforms To
-- [StringInterpolationProtocol](../Swift/StringInterpolationProtocol.md)
+- [StringInterpolationProtocol](../swift/stringinterpolationprotocol.md)
 
 ## See Also
 

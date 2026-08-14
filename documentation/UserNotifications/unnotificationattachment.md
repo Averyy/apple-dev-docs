@@ -35,9 +35,9 @@ Table 1. Supported attachment file types
 
 | Attachment | Supported file types | Maximum size |
 | --- | --- | --- |
-| Audio | `kUTTypeAudioInterchangeFileFormat` ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) `kUTTypeWaveformAudio` ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) `kUTTypeMP3` ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) `kUTTypeMPEG4Audio` | 5 MB |
-| Image | `kUTTypeJPEG` ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) `kUTTypeGIF` ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) `kUTTypePNG` | 10 MB |
-| Movie | `kUTTypeMPEG` ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) `kUTTypeMPEG2Video` ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) `kUTTypeMPEG4` ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) `kUTTypeAVIMovie` | 50 MB |
+| Audio | `kUTTypeAudioInterchangeFileFormat` ![None](/images/com.apple.usernotifications/spacer.png) `kUTTypeWaveformAudio` ![None](/images/com.apple.usernotifications/spacer.png) `kUTTypeMP3` ![None](/images/com.apple.usernotifications/spacer.png) `kUTTypeMPEG4Audio` | 5 MB |
+| Image | `kUTTypeJPEG` ![None](/images/com.apple.usernotifications/spacer.png) `kUTTypeGIF` ![None](/images/com.apple.usernotifications/spacer.png) `kUTTypePNG` | 10 MB |
+| Movie | `kUTTypeMPEG` ![None](/images/com.apple.usernotifications/spacer.png) `kUTTypeMPEG2Video` ![None](/images/com.apple.usernotifications/spacer.png) `kUTTypeMPEG4` ![None](/images/com.apple.usernotifications/spacer.png) `kUTTypeAVIMovie` | 50 MB |
 
 When creating an attachment, you can specify optional details about how to present the thumbnail image for the image or movie. Use the [`UNNotificationAttachmentOptionsThumbnailClippingRectKey`](unnotificationattachmentoptionsthumbnailclippingrectkey.md) option to use only the specified portion of an image as a thumbnail. For animated images and movies, use the [`UNNotificationAttachmentOptionsThumbnailTimeKey`](unnotificationattachmentoptionsthumbnailtimekey.md) option to select which frame to use for the thumbnail image.
 
@@ -70,17 +70,17 @@ The system limits the amount of storage space allocated for attachments for each
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCoding](../Foundation/NSCoding.md)
-- [NSCopying](../Foundation/NSCopying.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [NSSecureCoding](../Foundation/NSSecureCoding.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCoding](../foundation/nscoding.md)
+- [NSCopying](../foundation/nscopying.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSSecureCoding](../foundation/nssecurecoding.md)
 
 ## See Also
 

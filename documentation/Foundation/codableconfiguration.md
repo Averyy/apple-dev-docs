@@ -23,11 +23,11 @@ struct CodableConfiguration<T, ConfigurationProvider> where T : DecodableWithCon
 
 #### Overview
 
-[`CodableConfiguration`](codableconfiguration.md) allows you to create [`Codable`](https://developer.apple.com/documentation/Swift/Codable) types whose members don’t all conform to [`Codable`](https://developer.apple.com/documentation/Swift/Codable). For types that can’t support encoding and decoding by themselves but could become encodable and decodable with some statically-defined information, use the `@CodableConfiguration` wrapper. This lets you assign a configuration provider — a type that conforms to both [`EncodingConfigurationProviding`](encodingconfigurationproviding.md) and [`DecodingConfigurationProviding`](decodingconfigurationproviding.md) — to supply this data.
+[`CodableConfiguration`](codableconfiguration.md) allows you to create [`Codable`](https://developer.apple.com/documentation/swift/codable) types whose members don’t all conform to [`Codable`](https://developer.apple.com/documentation/swift/codable). For types that can’t support encoding and decoding by themselves but could become encodable and decodable with some statically-defined information, use the `@CodableConfiguration` wrapper. This lets you assign a configuration provider — a type that conforms to both [`EncodingConfigurationProviding`](encodingconfigurationproviding.md) and [`DecodingConfigurationProviding`](decodingconfigurationproviding.md) — to supply this data.
 
 Limiting the [`CodableConfiguration`](codableconfiguration.md) to statically-defined information protects clients from loading unexpected data, similar to the protection provided by [`NSSecureCoding`](nssecurecoding.md).
 
-In the following example, the `Message` type uses `@CodableConfiguration` for an [`AttributedString`](attributedstring.md) property called `content`. While [`AttributedString`](attributedstring.md) does conform to [`Codable`](https://developer.apple.com/documentation/Swift/Codable), it can only encode its known attributes — those declared by the platform SDK — as part of this conformance. By adding a [`CodableConfiguration`](codableconfiguration.md) for the custom `MyAttributes` type, `Message` uses [`encode(to:configuration:)`](encodablewithconfiguration/encode(to:configuration:).md) when encoding `content`, which preserves the custom attributes.
+In the following example, the `Message` type uses `@CodableConfiguration` for an [`AttributedString`](attributedstring.md) property called `content`. While [`AttributedString`](attributedstring.md) does conform to [`Codable`](https://developer.apple.com/documentation/swift/codable), it can only encode its known attributes — those declared by the platform SDK — as part of this conformance. By adding a [`CodableConfiguration`](codableconfiguration.md) for the custom `MyAttributes` type, `Message` uses [`encode(to:configuration:)`](encodablewithconfiguration/encode(to:configuration:).md) when encoding `content`, which preserves the custom attributes.
 
 ```swift
 struct Message: Codable {
@@ -53,12 +53,12 @@ struct Message: Codable {
 ## Relationships
 
 ### Conforms To
-- [Decodable](../Swift/Decodable.md)
-- [Encodable](../Swift/Encodable.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Decodable](../swift/decodable.md)
+- [Encodable](../swift/encodable.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

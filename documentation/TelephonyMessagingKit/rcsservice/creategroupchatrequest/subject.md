@@ -7,7 +7,6 @@ Subject to be used for group chat.
 
 **Availability**:
 - iOS 26.0+
-- iPadOS 26.0+
 
 ## Declaration
 

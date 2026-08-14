@@ -12,10 +12,10 @@ Only ads from ad networks that have an entry in the app’s `Info.plist` file ar
 
 1. Select `Info.plist` in the Project navigator in Xcode.
 2. Click the Add button (+) beside a key in the property list editor and press Return.
-3. Type the key name [`SKAdNetworkItems`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/SKAdNetworkItems).
+3. Type the key name [`SKAdNetworkItems`](https://developer.apple.com/documentation/bundleresources/information-property-list/skadnetworkitems).
 4. Choose Array from the pop-up menu in the Type column.
 
-Create an array that contains one dictionary for each allowed ad network, using the single key [`SKAdNetworkIdentifier`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/SKAdNetworkItems/SKAdNetworkIdentifier). The string value for the key is the ad network ID.
+Create an array that contains one dictionary for each allowed ad network, using the single key [`SKAdNetworkIdentifier`](https://developer.apple.com/documentation/bundleresources/information-property-list/skadnetworkitems/skadnetworkidentifier). The string value for the key is the ad network ID.
 
 > ❗ **Important**:  Lowercase the ad network ID string; otherwise, the system doesn’t recognize it as valid.
 
@@ -42,9 +42,9 @@ For more information about property lists, see [`Edit property lists`](https://d
   Use the install-validation APIs for your ad campaigns after registering your ad network with Apple.
 - [Configuring an advertised app](configuring-an-advertised-app.md)
   Prepare an advertised app to participate in ad campaigns.
-- [SKAdNetworkItems](../BundleResources/Information-Property-List/SKAdNetworkItems.md)
+- [SKAdNetworkItems](../bundleresources/information-property-list/skadnetworkitems.md)
   An array of dictionaries containing a list of ad network IDs.
-- [NSAdvertisingAttributionReportEndpoint](../BundleResources/Information-Property-List/NSAdvertisingAttributionReportEndpoint.md)
+- [NSAdvertisingAttributionReportEndpoint](../bundleresources/information-property-list/nsadvertisingattributionreportendpoint.md)
   The URL where Private Click Measurement and SKAdNetwork send attribution information.
 
 

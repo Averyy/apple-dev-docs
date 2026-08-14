@@ -24,7 +24,7 @@ A fully populated array of [`AVMetadataItem`](avmetadataitem.md) objects compati
 
 #### Discussion
 
-The value of this property is an array of [`AVMetadataItem`](avmetadataitem.md) objects representing the collection of top-level metadata to be written in each output file. This array is suitable to use as the [`metadata`](avassetwriter/metadata.md) property before you have called [`startWriting()`](avassetwriter/startwriting().md). For more details see [`startWriting()`](AVAssetWriter/startWriting().md).
+The value of this property is an array of [`AVMetadataItem`](avmetadataitem.md) objects representing the collection of top-level metadata to be written in each output file. This array is suitable to use as the [`metadata`](avassetwriter/metadata.md) property before you have called [`startWriting()`](avassetwriter/startwriting().md). For more details see [`startWriting()`](avassetwriter/startwriting().md).
 
 The `videoCodecType` string you provide must be present in [`availableVideoCodecTypesForAssetWriter(writingTo:)`](avcapturevideodataoutput/availablevideocodectypesforassetwriter(writingto:).md) array, or an `NSInvalidArgumentException` is thrown.
 
@@ -35,7 +35,7 @@ For clients writing files using a ProRes Raw codec type, white balance must be l
 ## Parameters
 
 - `videoCodecType`: The desired [`AVVideoCodecKey`](avvideocodeckey.md) to be used for compression (see [`Video settings`](video-settings.md)).
-- `outputFileType`: Specifies the UTI of the file type to be written (see [`AVFileType`](AVFileType.md)).
+- `outputFileType`: Specifies the UTI of the file type to be written (see [`AVFileType`](avfiletype.md)).
 
 ## See Also
 

@@ -7,7 +7,6 @@ Send and receive standards-based messages over cellular networks.
 
 **Availability**:
 - iOS 26.0+
-- iPadOS 26.0+
 
 #### Overview
 
@@ -19,7 +18,7 @@ Each service provides an asynchronous sequence for notifications of incoming mes
 
 ##### Default Carrier Messaging Apps
 
-To have access to the TelephonyMessageKit API you must add the [`Default Carrier Messaging App`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.carrier-messaging-app) entitlement to your app. This functionality will be enabled in your app only when the user selects your app to be the default carrier messaging app.
+To have access to the TelephonyMessageKit API you must add the [`Default Carrier Messaging App`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.carrier-messaging-app) entitlement to your app. This functionality will be enabled in your app only when the user selects your app to be the default carrier messaging app.
 
 > ❗ **Important**: You may develop and test TelephonyMessagingKit apps on devices in all regions by using an Apple-provided provisioning profile. People using your app must have an account registered in the European Union (EU), and their device must be located within the EU.
 
@@ -30,7 +29,7 @@ To have access to the TelephonyMessageKit API you must add the [`Default Carrier
   Use TelephonyMessagingKit to send and receive SMS, MMS, and RCS messages.
 - [class TelephonyMessagingSession](telephonymessagingsession.md)
   An object that coordinates interaction with the TelephonyMessagingKit framework.
-- [Default Carrier Messaging App](../BundleResources/Entitlements/com.apple.developer.carrier-messaging-app.md)
+- [Default Carrier Messaging App](../bundleresources/entitlements/com.apple.developer.carrier-messaging-app.md)
   A Boolean value that indicates whether the app can use the TelephonyMessagingKit framework to serve as the default carrier messaging app.
 ### Supporting types
 - [struct RCSFileTransferMetadata](rcsfiletransfermetadata.md)

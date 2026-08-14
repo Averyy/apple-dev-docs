@@ -14,7 +14,7 @@ Select media assets by using a Photos picker view that SwiftUI provides.
 
 #### Overview
 
-This sample shows how to use the SwiftUI Photos picker to browse and select a photo from your photo library. The app displays an interface that allows you to fill in customer profile details, and includes a button to select a photo from the Photos library. The sample explores how to retrieve a SwiftUI image by using [`Transferable`](https://developer.apple.com/documentation/CoreTransferable/Transferable) — a new SwiftUI protocol you use to move data.
+This sample shows how to use the SwiftUI Photos picker to browse and select a photo from your photo library. The app displays an interface that allows you to fill in customer profile details, and includes a button to select a photo from the Photos library. The sample explores how to retrieve a SwiftUI image by using [`Transferable`](https://developer.apple.com/documentation/coretransferable/transferable) — a new SwiftUI protocol you use to move data.
 
 > **Note**: This sample code project is associated with WWDC22 session [`10023: What’s new in the Photos picker`](https://developer.apple.comhttps://developer.apple.com/wwdc22/10023).
 
@@ -45,7 +45,7 @@ CircularProfileImage(imageState: viewModel.imageState)
 
 ##### Load an Image From the Selection
 
-The sample contains an [`PhotosPickerItem`](https://developer.apple.com/documentation/PhotosUI/PhotosPickerItem) that contains the selection. The selection only contains a placeholder object. Some large files may take a long time to download, so the sample shows an inline loading indicator instead of an indicator that blocks execution.
+The sample contains an [`PhotosPickerItem`](https://developer.apple.com/documentation/photosui/photospickeritem) that contains the selection. The selection only contains a placeholder object. Some large files may take a long time to download, so the sample shows an inline loading indicator instead of an indicator that blocks execution.
 
 ```swift
 @Published var imageSelection: PhotosPickerItem? = nil {
@@ -60,7 +60,7 @@ The sample contains an [`PhotosPickerItem`](https://developer.apple.com/document
 }
 ```
 
-To load the asset data, [`PhotosPickerItem`](https://developer.apple.com/documentation/photosui/photospickeritem) adopts [`Transferable`](https://developer.apple.com/documentation/CoreTransferable/Transferable). The sample attempts to retrieve the SwiftUI [`Image`](https://developer.apple.com/documentation/SwiftUI/Image) from the item. A failure can occur when the system attempts to retrieve the data. For example, if the picker tries to download data from iCloud Photos without a network connection.
+To load the asset data, [`PhotosPickerItem`](https://developer.apple.com/documentation/photosui/photospickeritem) adopts [`Transferable`](https://developer.apple.com/documentation/coretransferable/transferable). The sample attempts to retrieve the SwiftUI [`Image`](https://developer.apple.com/documentation/swiftui/image) from the item. A failure can occur when the system attempts to retrieve the data. For example, if the picker tries to download data from iCloud Photos without a network connection.
 
 ```swift
 private func loadTransferable(from imageSelection: PhotosPickerItem) -> Progress {
@@ -83,7 +83,7 @@ private func loadTransferable(from imageSelection: PhotosPickerItem) -> Progress
 }
 ```
 
-In advanced data transfer cases, an app can control the type of data to load by defining a custom model object that conforms to the `Transferable` protocol. The sample creates a model `ProfileImage` to handle loading a [`DataRepresentation`](https://developer.apple.com/documentation/CoreTransferable/DataRepresentation) of an image, and converts it to a `UIImage` or `NSImage`.
+In advanced data transfer cases, an app can control the type of data to load by defining a custom model object that conforms to the `Transferable` protocol. The sample creates a model `ProfileImage` to handle loading a [`DataRepresentation`](https://developer.apple.com/documentation/coretransferable/datarepresentation) of an image, and converts it to a `UIImage` or `NSImage`.
 
 ```swift
 struct ProfileImage: Transferable {
@@ -111,7 +111,7 @@ struct ProfileImage: Transferable {
 }
 ```
 
-When handling many items at the same time, or large assets, use [`FileRepresentation`](https://developer.apple.com/documentation/CoreTransferable/FileRepresentation) to load assets as files and reduce memory usage. When loading assets as files, copy them to an app directory and remove them when they’re no longer needed.
+When handling many items at the same time, or large assets, use [`FileRepresentation`](https://developer.apple.com/documentation/coretransferable/filerepresentation) to load assets as files and reduce memory usage. When loading assets as files, copy them to an app directory and remove them when they’re no longer needed.
 
 ## See Also
 

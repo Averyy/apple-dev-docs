@@ -20,7 +20,7 @@ var name: String? { get }
 
 #### Discussion
 
-UIKit sets this property’s initial value using the [`UISceneConfigurationName`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/UIApplicationSceneManifest/UISceneConfigurations/UIWindowSceneSessionRoleApplication/UISceneConfigurationName) key from the appropriate scene in your app’s `Info.plist` file. You also specify this value when you create a new scene-configuration object.
+UIKit sets this property’s initial value using the [`UISceneConfigurationName`](https://developer.apple.com/documentation/bundleresources/information-property-list/uiapplicationscenemanifest/uisceneconfigurations/uiwindowscenesessionroleapplication/uisceneconfigurationname) key from the appropriate scene in your app’s `Info.plist` file. You also specify this value when you create a new scene-configuration object.
 
 ## See Also
 

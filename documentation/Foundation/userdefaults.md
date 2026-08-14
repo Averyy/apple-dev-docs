@@ -34,17 +34,17 @@ A `UserDefaults` object provides access to the defaults system, which is a persi
 
 To access the defaults system, obtain a `UserDefaults` object and call its methods to read and write values. The [`standard`](userdefaults/standard.md) object is a shared object you use to read and write your app’s standard settings. You can also create unique `UserDefaults` objects to manage specific sets of settings. For example, you can create a `UserDefaults` object that reads and writes settings your app shares with an app extension. Don’t subclass `UserDefaults`.
 
-Each item you store in a defaults object consists of a key-value pair, where each key is a string that you use to locate the item and each value is a data object. The defaults database supports the same value types found in property list files, including types like [`Int`](https://developer.apple.com/documentation/Swift/Int), [`Float`](https://developer.apple.com/documentation/Swift/Float), [`Double`](https://developer.apple.com/documentation/Swift/Double), [`Bool`](https://developer.apple.com/documentation/Swift/Bool), [`String`](https://developer.apple.com/documentation/Swift/String), [`URL`](url.md), [`NSNumber`](NSNumber.md), [`Date`](date.md), [`Array`](https://developer.apple.com/documentation/Swift/Array), and [`Dictionary`](https://developer.apple.com/documentation/Swift/Dictionary). To include other types of objects in the defaults database, archive them to a [`Data`](data.md) object first and store that object instead. Prefer simple types over custom objects whenever possible.
+Each item you store in a defaults object consists of a key-value pair, where each key is a string that you use to locate the item and each value is a data object. The defaults database supports the same value types found in property list files, including types like [`Int`](https://developer.apple.com/documentation/swift/int), [`Float`](https://developer.apple.com/documentation/swift/float), [`Double`](https://developer.apple.com/documentation/swift/double), [`Bool`](https://developer.apple.com/documentation/swift/bool), [`String`](https://developer.apple.com/documentation/swift/string), [`URL`](url.md), [`NSNumber`](nsnumber.md), [`Date`](date.md), [`Array`](https://developer.apple.com/documentation/swift/array), and [`Dictionary`](https://developer.apple.com/documentation/swift/dictionary). To include other types of objects in the defaults database, archive them to a [`Data`](data.md) object first and store that object instead. Prefer simple types over custom objects whenever possible.
 
 With the exception of managed devices in educational institutions, the system stores defaults locally on the current device. When you write values to a `UserDefaults` object, the object updates its in-memory version of that information right away, and writes the value to disk asynchronously.  When someone backs up their device, the system includes any persistent defaults databases in the backup data. Because the data is device-specific, you don’t use the defaults system to share data between devices. To share data between someone’s devices, use the [`NSUbiquitousKeyValueStore`](nsubiquitouskeyvaluestore.md) instead.
 
 > ⚠️ **Warning**: Don’t access the files of the defaults database directly from the file system. Modifying one of the underlying files directly may cause data loss, a delay in changes being available, or an app crash. In macOS, use the `defaults` command-line utility to safely view or modify the defaults database outside of your app.
 
-While your app is running, the defaults system generates notifications to let you know when values change. To observe changes to individual settings, add a [`Using Key-Value Observing in Swift`](https://developer.apple.com/documentation/Swift/using-key-value-observing-in-swift) to your `UserDefaults` object, using key names to build the path to the setting you want. To observe changes for all settings, register for a [`UserDefaults.DidChangeMessage`](userdefaults/didchangemessage.md) or [`didChangeNotification`](userdefaults/didchangenotification.md) with your `UserDefaults` object.
+While your app is running, the defaults system generates notifications to let you know when values change. To observe changes to individual settings, add a [`Using Key-Value Observing in Swift`](https://developer.apple.com/documentation/swift/using-key-value-observing-in-swift) to your `UserDefaults` object, using key names to build the path to the setting you want. To observe changes for all settings, register for a [`UserDefaults.DidChangeMessage`](userdefaults/didchangemessage.md) or [`didChangeNotification`](userdefaults/didchangenotification.md) with your `UserDefaults` object.
 
 The `UserDefaults` type is thread-safe, and you can use the same object in multiple threads or tasks simultaneously.
 
-> ❗ **Important**: This API has the potential of being misused to access device signals to try to identify the device or user, also known as fingerprinting. Regardless of whether a user gives your app permission to track, fingerprinting is not allowed. When you use this API in your app or third-party SDK (an SDK not provided by Apple), declare your usage and the reason for using the API in your app or third-party SDK’s `PrivacyInfo.xcprivacy` file. For more information, including the list of valid reasons for using the API, see [`Describing use of required reason API`](https://developer.apple.com/documentation/BundleResources/describing-use-of-required-reason-api).
+> ❗ **Important**: This API has the potential of being misused to access device signals to try to identify the device or user, also known as fingerprinting. Regardless of whether a user gives your app permission to track, fingerprinting is not allowed. When you use this API in your app or third-party SDK (an SDK not provided by Apple), declare your usage and the reason for using the API in your app or third-party SDK’s `PrivacyInfo.xcprivacy` file. For more information, including the list of valid reasons for using the API, see [`Describing use of required reason API`](https://developer.apple.com/documentation/bundleresources/describing-use-of-required-reason-api).
 
 ##### Domains and Settings Search Paths
 
@@ -55,12 +55,12 @@ When you request the value of a setting, the `UserDefaults` object searches its 
 | Domain | Type | Description |
 | --- | --- | --- |
 | Managed | persistent | This domain contains settings that an administrator provided for a managed device. The system saves these values persistently on the current device. |
-| [`argumentDomain`](UserDefaults/argumentDomain.md) | volatile | This domain contains the settings you specified when launching your app from the command-line or Xcode. These keys represent temporary overrides of settings, and the system discards them after the app quits. |
+| [`argumentDomain`](userdefaults/argumentdomain.md) | volatile | This domain contains the settings you specified when launching your app from the command-line or Xcode. These keys represent temporary overrides of settings, and the system discards them after the app quits. |
 | Educational managed | persistent | For managed devices in an educational institution, this domain contains any settings saved to the iCloud key-value store for that institution. The system saves these settings persistently on a server, not on the device. |
 | App | persistent | This domain contains the settings your app saves, either programmatically or using its settings UI. Each `UserDefaults` object writes settings to this group, associating them with the app itself or the app group you used to initialize the object. The system saves these settings persistently on the current device. |
 | Suite | persistent | This domain contains custom settings from an app group or other app you specify at runtime. This domain is absent by default, but you can add a suite using the [`addSuite(named:)`](userdefaults/addsuite(named:).md) method. The system saves these settings persistently on the current device. |
-| [`globalDomain`](UserDefaults/globalDomain.md) | persistent | This domain contains keys present for all apps on the system. The system provides the keys for this domain, and apps can’t write to it. The system saves these settings persistently on the current device. |
-| [`registrationDomain`](UserDefaults/registrationDomain.md) | volatile | This domain contains system-provided default values and the default values you register for your app at launch time. Registering a set of default values prevents your code from receiving `nil` values when requesting a setting. The system discards these values when your app quits, so you must register them each time your app launches. |
+| [`globalDomain`](userdefaults/globaldomain.md) | persistent | This domain contains keys present for all apps on the system. The system provides the keys for this domain, and apps can’t write to it. The system saves these settings persistently on the current device. |
+| [`registrationDomain`](userdefaults/registrationdomain.md) | volatile | This domain contains system-provided default values and the default values you register for your app at launch time. Registering a set of default values prevents your code from receiving `nil` values when requesting a setting. The system discards these values when your app quits, so you must register them each time your app launches. |
 
 The system stores data for most persistent domains on the current device, and doesn’t share that data with other devices. To share settings among all of a person’s devices, save them using an [`NSUbiquitousKeyValueStore`](nsubiquitouskeyvaluestore.md) object instead.
 
@@ -70,7 +70,7 @@ If your app supports managed environments, an administrator might configure any 
 
 An app running on a managed device can use [`NSUbiquitousKeyValueStore`](nsubiquitouskeyvaluestore.md) to share small amounts of data with the person’s other devices. Use this store for data that your app can safely share with other instances of itself. For example, a textbook app might save the current page number so that the person can continue reading from the same place on any of their devices.
 
-For more details about managing devices, see [`Device Management`](https://developer.apple.com/documentation/DeviceManagement).
+For more details about managing devices, see [`Device Management`](https://developer.apple.com/documentation/devicemanagement).
 
 ##### Sandbox Considerations
 
@@ -81,7 +81,7 @@ A sandboxed app cannot access or modify the settings of another app or process, 
 
 If you use the [`addSuite(named:)`](userdefaults/addsuite(named:).md) method to add the identifier for an unrelated app, the method doesn’t give you access to the other app’s settings. Instead, the system writes changes to your app’s settings, not to the third-party app’s settings.
 
-> ❗ **Important**: An app that accesses settings in a suite must also have the [`App Groups Entitlement`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.security.application-groups).
+> ❗ **Important**: An app that accesses settings in a suite must also have the [`App Groups Entitlement`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.security.application-groups).
 
 ## Topics
 
@@ -198,14 +198,14 @@ If you use the [`addSuite(named:)`](userdefaults/addsuite(named:).md) method to 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

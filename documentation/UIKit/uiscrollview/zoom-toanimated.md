@@ -25,7 +25,7 @@ This method zooms so that the content view becomes the area defined by `rect`, a
 ## Parameters
 
 - `rect`: A rectangle defining an area of the content view. The rectangle should be in the coordinate space of the view returned by [`viewForZooming(in:)`](uiscrollviewdelegate/viewforzooming(in:).md).
-- `animated`: [`true`](https://developer.apple.com/documentation/Swift/true) if the scrolling should be animated, [`false`](https://developer.apple.com/documentation/Swift/false) if it should be immediate.
+- `animated`: [`true`](https://developer.apple.com/documentation/swift/true) if the scrolling should be animated, [`false`](https://developer.apple.com/documentation/swift/false) if it should be immediate.
 
 ## See Also
 

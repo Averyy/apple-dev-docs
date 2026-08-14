@@ -10,7 +10,7 @@ On supported iPhone models, people can run custom actions quickly using the Acti
 
 On supported Apple Watch models, people can start a workout or dive session using the device’s Action button. This button is also configurable in Settings, and supports app intents that support the [`StartWorkoutIntent`](startworkoutintent.md) or [`StartDiveIntent`](startdiveintent.md) protocol.
 
-For more information about how to create App Shortcuts, see [`App Shortcuts`](app-shortcuts.md). For design guidance related to the Action button, see [`Action button`](https://developer.apple.com/design/Human-Interface-Guidelines/action-button).
+For more information about how to create App Shortcuts, see [`App Shortcuts`](app-shortcuts.md). For design guidance related to the Action button, see [`Action button`](https://developer.apple.com/design/human-interface-guidelines/action-button).
 
 ## Topics
 

@@ -14,7 +14,7 @@ This sample code project uses the vImage piecewise gamma function to adjust the 
 
 You can use a piecewise gamma function to apply either a linear or an exponential response curve to pixels in an image based on their value.
 
-This app displays a sample image and uses a [`SwiftUI`](https://developer.apple.comhttps://developer.apple.com/xcode/swiftui/) [`Picker`](https://developer.apple.com/documentation/SwiftUI/Picker) control to apply different preset linear (labeled L1 to L4) and exponential (labeled E1 to E3) response curves. This sample code project demonstrates how different response curves affect an image by changing its brightness and contrast.
+This app displays a sample image and uses a [`SwiftUI`](https://developer.apple.comhttps://developer.apple.com/xcode/swiftui/) [`Picker`](https://developer.apple.com/documentation/swiftui/picker) control to apply different preset linear (labeled L1 to L4) and exponential (labeled E1 to E3) response curves. This sample code project demonstrates how different response curves affect an image by changing its brightness and contrast.
 
 ##### Define Response Curve Presets
 
@@ -30,7 +30,7 @@ struct ResponseCurvePreset: Hashable, Identifiable {
 }
 ```
 
-The `presets` array contains sample presets that apply different adjustments to the sample image. When the user changes the selected value of the [`Picker`](https://developer.apple.com/documentation/SwiftUI/Picker) control, the app passes the appropriate `preset` structure to the `getGammaCorrectedImage(preset:source:destination:imageFormat:)` function. This function applies the adjustment to the image and returns the result.
+The `presets` array contains sample presets that apply different adjustments to the sample image. When the user changes the selected value of the [`Picker`](https://developer.apple.com/documentation/swiftui/picker) control, the app passes the appropriate `preset` structure to the `getGammaCorrectedImage(preset:source:destination:imageFormat:)` function. This function applies the adjustment to the image and returns the result.
 
 ##### Define the Adjustment Parameters
 
@@ -124,7 +124,7 @@ ResponseCurvePreset(id: "L1",
                     gamma: 0),
 ```
 
-![On the left, a graph showing the equality between input and output values. On the right, an unaffected photograph with exponential adjustment applied.](https://docs-assets.developer.apple.com/published/38a483dfb46bb905a21adf313a89baae/E1_L1_2x.png)
+![On the left, a graph showing the equality between input and output values. On the right, an unaffected photograph with exponential adjustment applied.](/images/com.apple.accelerate/E1_L1_2x.png)
 
 The `L2` preset returns a washed-out image where blacks transform to grays. When the input value is `0`, the output value is `0.5`.
 
@@ -136,7 +136,7 @@ ResponseCurvePreset(id: "L2",
                     gamma: 0),
 ```
 
-![On the left, a graph showing the linear relationship between input and output values. On the right, a washed-out version of the original photograph with linear adjustment applied.](https://docs-assets.developer.apple.com/published/dd183cbecdfc94a61c79b049137233d6/L2_2x.png)
+![On the left, a graph showing the linear relationship between input and output values. On the right, a washed-out version of the original photograph with linear adjustment applied.](/images/com.apple.accelerate/L2_2x.png)
 
 The `L3` preset returns an image with a lot of contrast. When the input value is less than one-third, the output value is `0`; when the input value is greater than two-thirds, the output value is `1`. The preset transforms input values between one-third and two-thirds to the range `0 - 1`.
 
@@ -148,7 +148,7 @@ ResponseCurvePreset(id: "L3",
                     gamma: 0),
 ```
 
-![On the left, a graph showing the linear relationship between input and output values. On the right, a high-contrast version of the original photograph with linear adjustment applied.](https://docs-assets.developer.apple.com/published/1159a998bc12e76b5ac976f4fccf8d09/L3_2x.png)
+![On the left, a graph showing the linear relationship between input and output values. On the right, a high-contrast version of the original photograph with linear adjustment applied.](/images/com.apple.accelerate/L3_2x.png)
 
 The `L4` preset returns a negative version of the image. When the input value is `1`, the output value is `0`; when the input value is `0`, the output value is `1`.
 
@@ -160,7 +160,7 @@ ResponseCurvePreset(id: "L4",
                     gamma: 0),
 ```
 
-![On the left, a graph showing the linear relationship between input and output values. On the right, a negative version of the original photograph with linear adjustment applied.](https://docs-assets.developer.apple.com/published/62b14410123180f4225361e3ea942312/L4_2x.png)
+![On the left, a graph showing the linear relationship between input and output values. On the right, a negative version of the original photograph with linear adjustment applied.](/images/com.apple.accelerate/L4_2x.png)
 
 ##### Apply Exponential Adjustment
 
@@ -183,7 +183,7 @@ ResponseCurvePreset(id: "E1",
                     gamma: 1),
 ```
 
-![On the left, a graph showing the equality between input and output values. On the right, an unaffected photograph with exponential adjustment applied.](https://docs-assets.developer.apple.com/published/38a483dfb46bb905a21adf313a89baae/E1_L1_2x.png)
+![On the left, a graph showing the equality between input and output values. On the right, an unaffected photograph with exponential adjustment applied.](/images/com.apple.accelerate/E1_L1_2x.png)
 
 The `E2` preset has an overall darkening effect.
 
@@ -195,7 +195,7 @@ ResponseCurvePreset(id: "E2",
                     gamma: 2.2),
 ```
 
-![On the left, a graph showing the nonlinear relationship between input and output values. On the right, a darkened version of the original photograph with exponential adjustment applied.](https://docs-assets.developer.apple.com/published/a88ce9f1b2a803a7a4c7be8c8ca8c6f1/E2_2x.png)
+![On the left, a graph showing the nonlinear relationship between input and output values. On the right, a darkened version of the original photograph with exponential adjustment applied.](/images/com.apple.accelerate/E2_2x.png)
 
 The `E3` preset has an overall lightening effect.
 
@@ -207,7 +207,7 @@ ResponseCurvePreset(id: "E3",
                     gamma: 1 / 2.2)
 ```
 
-![On the left, a graph showing the nonlinear relationship between input and output values. On the right, a lightened version of the original photograph with exponential adjustment applied.](https://docs-assets.developer.apple.com/published/b47e11c8b15aad975aebdda5475ad642/E3_2x.png)
+![On the left, a graph showing the nonlinear relationship between input and output values. On the right, a lightened version of the original photograph with exponential adjustment applied.](/images/com.apple.accelerate/E3_2x.png)
 
 ##### Correct Gamma Before Applying Operations
 

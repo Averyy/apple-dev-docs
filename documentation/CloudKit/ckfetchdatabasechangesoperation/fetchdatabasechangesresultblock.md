@@ -24,8 +24,8 @@ var fetchDatabaseChangesResultBlock: ((Result<(serverChangeToken: CKServerChange
 
 The closure has no return value and takes the following parameter:
 
-- A [`Result`](https://developer.apple.com/documentation/Swift/Result) that contains either: - A successful `Result` of - The change token to store and use in subsequent instances of [`CKFetchDatabaseChangesOperation`](ckfetchdatabasechangesoperation.md).
-- A Boolean that indicates whether this is the final database change. If [`fetchAllChanges`](ckfetchdatabasechangesoperation/fetchallchanges.md) is [`false`](https://developer.apple.com/documentation/Swift/false), it’s the app’s responsibility to create additional instances of [`CKFetchDatabaseChangesOperation`](ckfetchdatabasechangesoperation.md) to fetch further changes.
+- A [`Result`](https://developer.apple.com/documentation/swift/result) that contains either: - A successful `Result` of - The change token to store and use in subsequent instances of [`CKFetchDatabaseChangesOperation`](ckfetchdatabasechangesoperation.md).
+- A Boolean that indicates whether this is the final database change. If [`fetchAllChanges`](ckfetchdatabasechangesoperation/fetchallchanges.md) is [`false`](https://developer.apple.com/documentation/swift/false), it’s the app’s responsibility to create additional instances of [`CKFetchDatabaseChangesOperation`](ckfetchdatabasechangesoperation.md) to fetch further changes.
 - An error that contains information about a problem encountered retrieving the database changes.
 
 This closure executes only once, and represents your final opportunity to process the results. The closure executes serially with respect to the other closures of the operation.

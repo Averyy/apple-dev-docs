@@ -27,7 +27,7 @@ This method must be called on the main thread.
 
 ## Parameters
 
-- `completed`: Specify [`true`](https://developer.apple.com/documentation/Swift/true) if the service executed to completion or [`false`](https://developer.apple.com/documentation/Swift/false) if the service was canceled or didn’t finish because of an error.
+- `completed`: Specify [`true`](https://developer.apple.com/documentation/swift/true) if the service executed to completion or [`false`](https://developer.apple.com/documentation/swift/false) if the service was canceled or didn’t finish because of an error.
 
 ## See Also
 

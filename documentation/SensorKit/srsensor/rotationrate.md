@@ -18,9 +18,9 @@ static let rotationRate: SRSensor
 
 #### Discussion
 
-The [`sample`](srfetchresult/sample.md) type for this sensor is [[`CMRecordedRotationRateData`](https://developer.apple.com/documentation/CoreMotion/CMRecordedRotationRateData)].
+The [`sample`](srfetchresult/sample.md) type for this sensor is [[`CMRecordedRotationRateData`](https://developer.apple.com/documentation/coremotion/cmrecordedrotationratedata)].
 
-You need to provide a reason to record rotation rate data by adding the [`SRSensorUsageMotion`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSSensorKitUsageDetail/SRSensorUsageMotion) dictionary to the [`NSSensorKitUsageDetail`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSSensorKitUsageDetail) key in the information property list.
+You need to provide a reason to record rotation rate data by adding the [`SRSensorUsageMotion`](https://developer.apple.com/documentation/bundleresources/information-property-list/nssensorkitusagedetail/srsensorusagemotion) dictionary to the [`NSSensorKitUsageDetail`](https://developer.apple.com/documentation/bundleresources/information-property-list/nssensorkitusagedetail) key in the information property list.
 
 ## See Also
 

@@ -16,7 +16,7 @@ var applicationURL: URL { get }
 
 #### Discussion
 
-The URL represents a location on the file system. You can retrieve additional information about this app using [`resourceValues(forKeys:)`](https://developer.apple.com/documentation/Foundation/NSURL/resourceValues(forKeys:)).
+The URL represents a location on the file system. You can retrieve additional information about this app using [`resourceValues(forKeys:)`](https://developer.apple.com/documentation/foundation/nsurl/resourcevalues(forkeys:)).
 
 ## See Also
 

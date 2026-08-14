@@ -66,7 +66,7 @@ An iPhone running iOS 9.3 or later may pair with more than one Apple Watch runni
 
 [`Figure 1`](wcsession#1965795.md) shows the sequence of events that happen when the user switches from one Apple Watch to another. When automatic switching is enabled, only one Apple Watch at a time actually communicates with the iOS app. The Watch app on each watch stays in the active state, but the iOS app moves to the inactive and deactivated states during a switch. Moving to the inactive state gives the session a small amount of time to deliver any data that has already been received. As soon as that data is delivered, the session moves to the deactivated state. At that point, the iOS app must call the [`activate()`](wcsession/activate().md) method again to connect to the newly active watch, which in this example is now the second Apple Watch.
 
-![None](https://docs-assets.developer.apple.com/published/e844953b02347a3418fbdd7543cf0e5b/media-1965795%402x.png)
+![None](/images/com.apple.watchconnectivity/media-1965795@2x.png)
 
 Your iOS app can use the [`watchDirectoryURL`](wcsession/watchdirectoryurl.md) property to store data that is specific to only one instance of your Watch app running on a particular Apple Watch. In most cases, the data you display in each instance of your Watch app is the same. However, you might use this directory to store configuration data, preferences, or other data files that your iOS app needs to interact properly with your Watch app. If you do, use the activation and deactivation process to update your iOS app.
 
@@ -77,7 +77,7 @@ For more information about handling session activation and deactivation, see [`W
 You may initiate data transfers to a counterpart app only when the [`activationState`](wcsession/activationstate.md) property is set to [`WCSessionActivationState.activated`](wcsessionactivationstate/activated.md). The iOS app should ensure the Watch app is installed before trying to initiate transfers. You initiate transfers in any of the following ways:
 
 - Use the [`updateApplicationContext(_:)`](wcsession/updateapplicationcontext(_:).md) method to communicate recent state information to the counterpart. When the counterpart wakes, it can use this information to update its own state. For example, an iOS app that supports Background App Refresh can use part of its background execution time to update the corresponding Watch app. This method overwrites the previous data dictionary, so use this method when your app needs only the most recent data values.
-- Use the [`sendMessage(_:replyHandler:errorHandler:)`](wcsession/sendmessage(_:replyhandler:errorhandler:).md) or [`sendMessageData(_:replyHandler:errorHandler:)`](wcsession/sendmessagedata(_:replyhandler:errorhandler:).md) method to transfer data to a reachable counterpart. These methods are intended for immediate communication between your iOS app and WatchKit extension. The [`isReachable`](wcsession/isreachable.md) property must currently be [`true`](https://developer.apple.com/documentation/Swift/true) for these methods to succeed.
+- Use the [`sendMessage(_:replyHandler:errorHandler:)`](wcsession/sendmessage(_:replyhandler:errorhandler:).md) or [`sendMessageData(_:replyHandler:errorHandler:)`](wcsession/sendmessagedata(_:replyhandler:errorhandler:).md) method to transfer data to a reachable counterpart. These methods are intended for immediate communication between your iOS app and WatchKit extension. The [`isReachable`](wcsession/isreachable.md) property must currently be [`true`](https://developer.apple.com/documentation/swift/true) for these methods to succeed.
 - Use the [`transferUserInfo(_:)`](wcsession/transferuserinfo(_:).md) method to transfer a dictionary of data in the background. The dictionaries you send are queued for delivery to the counterpart and transfers continue when the current app is suspended or terminated.
 - Use the [`transferFile(_:metadata:)`](wcsession/transferfile(_:metadata:).md) method to transfer files in the background. Use this method in cases where you want to send more than a dictionary of values. For example, use this method to send images or file-based documents.
 - In iOS, use the [`transferCurrentComplicationUserInfo(_:)`](wcsession/transfercurrentcomplicationuserinfo(_:).md) method to send data related to your Watch app’s complication. Use of this method counts against your complication’s time budget.
@@ -162,14 +162,14 @@ Be prepared to handle errors and provide a graceful fallback when data cannot be
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

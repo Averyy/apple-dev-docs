@@ -35,11 +35,11 @@ All destination parameter values are in the canvas’s current coordinate system
 
 ## Parameters
 
-- `image`: An image object (an  ,  , or   element).
+- `image`: An image object (an `img`, `canvas`, or `video` element).
 - `x`: The x-coordinate of the left edge of the destination for the drawing, in pixels from the left edge of the canvas coordinate system.
 - `y`: The y-coordinate of the top of the destination for the drawing, in pixels from the top of the canvas coordinate system.
 - `ow`: The width of the drawn image. This parameter is optional; if omitted, the native width of the image is used. If present, the image is scaled to this width.
-- `oh`: The height of the drawn image. This parameter is dependent on the   parameter—if   is supplied,   must also be supplied; if   is omitted,   must be omitted. If omitted, the native height of the image is used. If present, the image is scaled to this height.
+- `oh`: The height of the drawn image. This parameter is dependent on the `ow` parameter—if `ow` is supplied, `oh` must also be supplied; if `ow` is omitted, `oh` must be omitted. If omitted, the native height of the image is used. If present, the image is scaled to this height.
 - `sx`: The x-coordinate of the left edge of the region of the image to draw, in pixels from the left edge of the image.
 - `sy`: The y-coordinate of the top of the region of the image to draw, in pixels from the top of the image.
 - `sw`: The width of the region of the image to draw.

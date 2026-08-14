@@ -101,9 +101,9 @@ inputPixelBufferAdaptor.append(pixelBuffer, withPresentationTime: presentationTi
 
 ##### Get Your Medias Color Space Information
 
-You access the low-level details about an asset’s video track media using [`CMFormatDescription`](https://developer.apple.com/documentation/CoreMedia/CMFormatDescription). A `CMFormatDescriptionRef` object describes the media of a particular type (audio, video, and so on). You get the format descriptions for the asset track’s media sample references using the [`AVAssetTrack`](avassettrack.md) [`formatDescriptions`](avassettrack/formatdescriptions.md) property. Look in the format description for the [`kCVImageBufferColorPrimariesKey`](https://developer.apple.com/documentation/CoreVideo/kCVImageBufferColorPrimariesKey) extension key that defines the color properties of the media. The `CMFormatDescription.h` header defines the color primary key values.
+You access the low-level details about an asset’s video track media using [`CMFormatDescription`](https://developer.apple.com/documentation/coremedia/cmformatdescription). A `CMFormatDescriptionRef` object describes the media of a particular type (audio, video, and so on). You get the format descriptions for the asset track’s media sample references using the [`AVAssetTrack`](avassettrack.md) [`formatDescriptions`](avassettrack/formatdescriptions.md) property. Look in the format description for the [`kCVImageBufferColorPrimariesKey`](https://developer.apple.com/documentation/corevideo/kcvimagebuffercolorprimarieskey) extension key that defines the color properties of the media. The `CMFormatDescription.h` header defines the color primary key values.
 
-Here’s an example that checks for the [`kCMFormatDescriptionColorPrimaries_ITU_R_709_2`](https://developer.apple.com/documentation/CoreMedia/kCMFormatDescriptionColorPrimaries_ITU_R_709_2-swift.var) color primary key value in the [`kCVImageBufferColorPrimariesKey`](https://developer.apple.com/documentation/CoreVideo/kCVImageBufferColorPrimariesKey) extension:
+Here’s an example that checks for the [`kCMFormatDescriptionColorPrimaries_ITU_R_709_2`](https://developer.apple.com/documentation/coremedia/kcmformatdescriptioncolorprimaries_itu_r_709_2-swift.var) color primary key value in the [`kCVImageBufferColorPrimariesKey`](https://developer.apple.com/documentation/corevideo/kcvimagebuffercolorprimarieskey) extension:
 
 ```swift
 let assetTracks = try await asset.loadTracks(withMediaType: .video)
@@ -133,11 +133,11 @@ for assetTrack in assetTracks {
 
 You can use the Show Movie Inspector command in the macOS QuickTime Player app to view the color space information for the video media in a file. Open the file in the app and choose Window > Show Movie Inspector. The Inspector window displays the color information and other details about the video media.
 
-![Screenshot of the Inspector window in the QuickTime Player app with an arrow pointing to the Format information for a video.](https://docs-assets.developer.apple.com/published/3261f51c939e390582b6e41a42c31347/media-3677441%402x.png)
+![Screenshot of the Inspector window in the QuickTime Player app with an arrow pointing to the Format information for a video.](/images/com.apple.avfoundation/media-3677441@2x.png)
 
 The Finder Get Info command also shows the color information for the video media in a file. Select a file in the Finder and choose File > Get Info. The More Info section contains the color profile information.
 
-![Screenshot of Finder’s Info window with an arrow pointing to the “Color profile” information in the More Info section.](https://docs-assets.developer.apple.com/published/d4571b376ea128cd17adc171c513e038/media-3677442%402x.png)
+![Screenshot of Finder’s Info window with an arrow pointing to the “Color profile” information in the More Info section.](/images/com.apple.avfoundation/media-3677442@2x.png)
 
 ##### Detect Wide Color Tags in Your Media
 
@@ -185,7 +185,7 @@ class MyCustomVideoCompositor : AVVideoCompositing {
   Show a specific area of a video by using timed display mask rectangle metadata.
 - [Writing fragmented MPEG-4 files for HTTP Live Streaming](writing-fragmented-mpeg-4-files-for-http-live-streaming.md)
   Create an HTTP Live Streaming presentation by turning a movie file into a sequence of fragmented MPEG-4 files.
-- [Creating spatial photos and videos with spatial metadata](../ImageIO/Creating-spatial-photos-and-videos-with-spatial-metadata.md)
+- [Creating spatial photos and videos with spatial metadata](../imageio/creating-spatial-photos-and-videos-with-spatial-metadata.md)
   Add spatial metadata to stereo photos and videos to create spatial media for viewing on Apple Vision Pro.
 - [Evaluating an app’s video color](evaluating-an-app-s-video-color.md)
   Check color reproduction for a video in your app by using test patterns, video test equipment, and light-measurement instruments.

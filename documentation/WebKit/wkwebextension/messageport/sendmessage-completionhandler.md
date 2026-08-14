@@ -20,7 +20,7 @@ func sendMessage(_ message: Any?) async throws
 
 #### Discussion
 
-> **Note**: The message must be JSON-serializable according to [`JSONSerialization`](https://developer.apple.com/documentation/Foundation/JSONSerialization).
+> **Note**: The message must be JSON-serializable according to [`JSONSerialization`](https://developer.apple.com/documentation/foundation/jsonserialization).
 
 ## Parameters
 

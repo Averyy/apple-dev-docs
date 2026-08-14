@@ -15,19 +15,19 @@ Your app can create new samples and add them to the HealthKit store. Although al
 
 Each [`HKSample`](hksample.md) subclass has its own convenience methods for instantiating sample objects, which modify the steps described in the list above.
 
-![An illustration showing how a quality sample relates to its identifier, type, and quantity.](https://docs-assets.developer.apple.com/published/4eca8a6c5bfd4d688c10ba510d59385c/media-2943340%402x.png)
+![An illustration showing how a quality sample relates to its identifier, type, and quantity.](/images/com.apple.healthkit/media-2943340@2x.png)
 
 For quantity samples, create an instance of the [`HKQuantity`](hkquantity.md) class. The quantity’s units must correspond to the allowable units described in the type identifier’s documentation. For example, the [`height`](hkquantitytypeidentifier/height.md) documentation states that it uses length units. Therefore, your quantity must use centimeters, meters, feet, inches, or another compatible unit. For more information, see [`HKQuantitySample`](hkquantitysample.md).
 
-![An illustration showing how a category sample relates to its identifier, type, and value.](https://docs-assets.developer.apple.com/published/ff590914b31e464e30b64cf30413ee43/media-2943344%402x.png)
+![An illustration showing how a category sample relates to its identifier, type, and value.](/images/com.apple.healthkit/media-2943344@2x.png)
 
 For category samples, the sample’s value must correspond to the enum described in the type identifier’s documentation. For example, the [`sleepAnalysis`](hkcategorytypeidentifier/sleepanalysis.md) documentation states that it uses the [`HKCategoryValueSleepAnalysis`](hkcategoryvaluesleepanalysis.md) enum. Therefore, you must pass a value from this enum when creating this sample. For more information, see [`HKCategorySample`](hkcategorysample.md).
 
-![An illustration showing how a correlation sample relates to its identifier, type, and contained objects.](https://docs-assets.developer.apple.com/published/d4efeeeba2c6d6eb376574444efdab63/media-2943342%402x.png)
+![An illustration showing how a correlation sample relates to its identifier, type, and contained objects.](/images/com.apple.healthkit/media-2943342@2x.png)
 
 For correlations, you must first create all the sample objects that the correlation will contain. The correlation’s type identifier describes both the type and the number of objects that can be contained. Don’t save the contained objects into the HealthKit store. They’re stored as part of the correlation. For more information, see [`HKCorrelation`](hkcorrelation.md).
 
-> ❗ **Important**:  In iOS 17.2 and later, the Journal app encourages people to reflect on their day-to-day experiences, including physical accomplishments, workouts, and emotions and moods. If your app saves data to HealthKit, high-level summaries of that data can appear as suggestions in the Journal app, or in other apps that use the [`Journaling Suggestions`](https://developer.apple.com/documentation/JournalingSuggestions) framework.
+> ❗ **Important**:  In iOS 17.2 and later, the Journal app encourages people to reflect on their day-to-day experiences, including physical accomplishments, workouts, and emotions and moods. If your app saves data to HealthKit, high-level summaries of that data can appear as suggestions in the Journal app, or in other apps that use the [`Journaling Suggestions`](https://developer.apple.com/documentation/journalingsuggestions) framework.
 
 ##### Balance Performance and Details
 

@@ -16,7 +16,7 @@ var profileIndex: Int16 { get set }
 
 #### Discussion
 
-This value maps to the [`kCMHEVCTemporalLevelInfoKey_ProfileIndex`](https://developer.apple.com/documentation/CoreMedia/kCMHEVCTemporalLevelInfoKey_ProfileIndex) sample buffer attachment, and is `-1` if this information isn’t available.
+This value maps to the [`kCMHEVCTemporalLevelInfoKey_ProfileIndex`](https://developer.apple.com/documentation/coremedia/kcmhevctemporallevelinfokey_profileindex) sample buffer attachment, and is `-1` if this information isn’t available.
 
 ## See Also
 

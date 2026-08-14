@@ -28,7 +28,7 @@ dictionary ApplePayRecurringPaymentRequest {
 
 Use an [`ApplePayRecurringPaymentRequest`](applepayrecurringpaymentrequest.md) object to provide the user with payment details and a way to manage payment methods for a recurring payment. You can optionally display a billing agreement and set up merchant token life-cycle notifications for the request.
 
-For more information about the merchant token life-cycle notifications, see [`Apple Pay Merchant Token Management API`](https://developer.apple.com/documentation/MerchantTokenNotificationServices).
+For more information about the merchant token life-cycle notifications, see [`Apple Pay Merchant Token Management API`](https://developer.apple.com/documentation/merchanttokennotificationservices).
 
 ## Topics
 

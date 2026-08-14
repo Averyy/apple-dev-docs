@@ -25,8 +25,8 @@ protocol HPKEDiffieHellmanPrivateKey : DiffieHellmanKeyAgreement where Self.Publ
 
 ### Inherits From
 - [DiffieHellmanKeyAgreement](diffiehellmankeyagreement.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 ### Inherited By
 - [HPKEDiffieHellmanPrivateKeyGeneration](hpkediffiehellmanprivatekeygeneration.md)
 ### Conforming Types

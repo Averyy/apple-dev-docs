@@ -47,8 +47,8 @@ Don’t instantiate this type directly, use one of its concrete insight types, s
 ## Relationships
 
 ### Inherits From
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 ### Conforming Types
 - [IsLikelyBeingCoachedInsight](islikelybeingcoachedinsight.md)
 

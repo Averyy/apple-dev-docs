@@ -20,7 +20,7 @@ When the filter browser session ends, `didEndSelector` is invoked on the modeles
 
 `- (void)openPanelDidEnd:(NSOpenPanel *)panel returnCode:(int)returnCode  contextInfo:(void  *)contextInfo`
 
-The `returnCode` value passed to the selector is set to [`NSOKButton`](https://developer.apple.com/documentation/AppKit/NSOKButton) if the user validates, or to [`NSCancelButton`](https://developer.apple.com/documentation/AppKit/NSCancelButton) if the user cancels.
+The `returnCode` value passed to the selector is set to [`NSOKButton`](https://developer.apple.com/documentation/appkit/nsokbutton) if the user validates, or to [`NSCancelButton`](https://developer.apple.com/documentation/appkit/nscancelbutton) if the user cancels.
 
 ## Parameters
 

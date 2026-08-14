@@ -21,7 +21,7 @@ class func uiOffset(for string: String) -> UIOffset
 
 #### Return Value
 
-An edge insets data structure. If the string is not well-formed, the function returns [`zero`](https://developer.apple.com/documentation/UIKit/UIOffset/zero).
+An edge insets data structure. If the string is not well-formed, the function returns [`zero`](https://developer.apple.com/documentation/uikit/uioffset/zero).
 
 #### Discussion
 

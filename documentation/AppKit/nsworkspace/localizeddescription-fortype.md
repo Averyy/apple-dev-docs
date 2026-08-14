@@ -16,7 +16,7 @@ func localizedDescription(forType typeName: String) -> String?
 
 #### Return Value
 
-An [`NSString`](https://developer.apple.com/documentation/Foundation/NSString) containing the localized description of `typeName`. You may display this string to the user.
+An [`NSString`](https://developer.apple.com/documentation/foundation/nsstring) containing the localized description of `typeName`. You may display this string to the user.
 
 #### Discussion
 

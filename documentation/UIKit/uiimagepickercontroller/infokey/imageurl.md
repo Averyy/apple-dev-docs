@@ -19,7 +19,7 @@ static let imageURL: UIImagePickerController.InfoKey
 
 #### Discussion
 
-The value of this key is a [`NSURL`](https://developer.apple.com/documentation/Foundation/NSURL) that you can use to retrieve the image file. The image in this file matches the image found in the [`originalImage`](uiimagepickercontroller/infokey/originalimage.md) key of the dictionary.
+The value of this key is a [`NSURL`](https://developer.apple.com/documentation/foundation/nsurl) that you can use to retrieve the image file. The image in this file matches the image found in the [`originalImage`](uiimagepickercontroller/infokey/originalimage.md) key of the dictionary.
 
 ## See Also
 

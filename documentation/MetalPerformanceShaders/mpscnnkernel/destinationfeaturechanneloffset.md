@@ -39,7 +39,7 @@ For example, if a convolution filter outputs 32 channels, and the destination im
   A signed coordinate with x, y, and z components.
 - [var clipRect: MTLRegion](mpscnnkernel/cliprect.md)
   An optional clip rectangle to use when writing data. Only the pixels in the clip rectangle will be overwritten.
-- [struct MTLRegion](../Metal/MTLRegion.md)
+- [struct MTLRegion](../metal/mtlregion.md)
   The bounds for a subset of an instance’s elements.
 - [var edgeMode: MPSImageEdgeMode](mpscnnkernel/edgemode.md)
   The edge mode to use when texture reads stray off the edge of an image.

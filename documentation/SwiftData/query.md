@@ -92,9 +92,9 @@ A type that fetches models using the specified criteria, and manages those model
 ## Relationships
 
 ### Conforms To
-- [DynamicProperty](../SwiftUI/DynamicProperty.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [DynamicProperty](../swiftui/dynamicproperty.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

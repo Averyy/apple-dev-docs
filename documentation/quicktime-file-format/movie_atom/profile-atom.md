@@ -7,7 +7,7 @@ An atom that summarizes the features and complexity of a movie.
 
 #### Overview
 
-For more information, see [`Movie profile atom ('prfl')`](movie_profile_atom.md).
+For more information, see [`Movie profile atom`](movie_profile_atom.md).
 
 ## See Also
 

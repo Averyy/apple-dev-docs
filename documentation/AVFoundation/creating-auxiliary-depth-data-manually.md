@@ -19,23 +19,23 @@ The supported pixel formats for disparity or depth images are:
 - `kCVPixelFormatType_DepthFloat16 = 'hdep'`: An IEEE754-2008 binary16 (half float), describing the depth (distance to an object) in meters
 - `kCVPixelFormatType_DepthFloat32 = 'fdep'`: An IEEE754-2008 binary32 float, describing the depth (distance to an object) in meters
 
-Load the grayscale image into a [`CVPixelBuffer`](https://developer.apple.com/documentation/CoreVideo/cvpixelbuffer-q2e). Load its base address, attained via [`CVPixelBufferLockBaseAddress(_:_:)`](https://developer.apple.com/documentation/CoreVideo/CVPixelBufferLockBaseAddress(_:_:)), as data ([`CFData`](https://developer.apple.com/documentation/CoreFoundation/CFData)) and pass it as the [`kCGImageAuxiliaryDataInfoData`](https://developer.apple.com/documentation/ImageIO/kCGImageAuxiliaryDataInfoData) value into a dictionary ([`CFDictionary`](https://developer.apple.com/documentation/CoreFoundation/CFDictionary)).
+Load the grayscale image into a [`CVPixelBuffer`](https://developer.apple.com/documentation/corevideo/cvpixelbuffer-q2e). Load its base address, attained via [`CVPixelBufferLockBaseAddress(_:_:)`](https://developer.apple.com/documentation/corevideo/cvpixelbufferlockbaseaddress(_:_:)), as data ([`CFData`](https://developer.apple.com/documentation/corefoundation/cfdata)) and pass it as the [`kCGImageAuxiliaryDataInfoData`](https://developer.apple.com/documentation/imageio/kcgimageauxiliarydatainfodata) value into a dictionary ([`CFDictionary`](https://developer.apple.com/documentation/corefoundation/cfdictionary)).
 
 ##### Parse Metadata Dictionaries
 
-The format of the dictionary is documented in `CGImageSource.h`. Access this dictionary with [`CGImageSourceCopyAuxiliaryDataInfoAtIndex(_:_:_:)`](https://developer.apple.com/documentation/ImageIO/CGImageSourceCopyAuxiliaryDataInfoAtIndex(_:_:_:)). The dictionary supports JPEG, HEIF, and DNG images. The [`CFDictionary`](https://developer.apple.com/documentation/CoreFoundation/CFDictionary) contains auxiliary data in the following format:
+The format of the dictionary is documented in `CGImageSource.h`. Access this dictionary with [`CGImageSourceCopyAuxiliaryDataInfoAtIndex(_:_:_:)`](https://developer.apple.com/documentation/imageio/cgimagesourcecopyauxiliarydatainfoatindex(_:_:_:)). The dictionary supports JPEG, HEIF, and DNG images. The [`CFDictionary`](https://developer.apple.com/documentation/corefoundation/cfdictionary) contains auxiliary data in the following format:
 
-- [`kCGImageAuxiliaryDataInfoData`](https://developer.apple.com/documentation/ImageIO/kCGImageAuxiliaryDataInfoData) → Depth data ([`CFData`](https://developer.apple.com/documentation/CoreFoundation/CFData))
-- [`kCGImageAuxiliaryDataInfoDataDescription`](https://developer.apple.com/documentation/ImageIO/kCGImageAuxiliaryDataInfoDataDescription) → Depth data description ([`CFDictionary`](https://developer.apple.com/documentation/CoreFoundation/CFDictionary): See below for more details.)
-- [`kCGImageAuxiliaryDataInfoMetadata`](https://developer.apple.com/documentation/ImageIO/kCGImageAuxiliaryDataInfoMetadata) → Optional metadata ([`CGImageMetadata`](https://developer.apple.com/documentation/ImageIO/CGImageMetadata))
+- [`kCGImageAuxiliaryDataInfoData`](https://developer.apple.com/documentation/imageio/kcgimageauxiliarydatainfodata) → Depth data ([`CFData`](https://developer.apple.com/documentation/corefoundation/cfdata))
+- [`kCGImageAuxiliaryDataInfoDataDescription`](https://developer.apple.com/documentation/imageio/kcgimageauxiliarydatainfodatadescription) → Depth data description ([`CFDictionary`](https://developer.apple.com/documentation/corefoundation/cfdictionary): See below for more details.)
+- [`kCGImageAuxiliaryDataInfoMetadata`](https://developer.apple.com/documentation/imageio/kcgimageauxiliarydatainfometadata) → Optional metadata ([`CGImageMetadata`](https://developer.apple.com/documentation/imageio/cgimagemetadata))
 
-[`CGImageSourceCopyAuxiliaryDataInfoAtIndex(_:_:_:)`](https://developer.apple.com/documentation/ImageIO/CGImageSourceCopyAuxiliaryDataInfoAtIndex(_:_:_:)) returns `nil` if the image doesn’t contain `auxiliaryImageDataType` data.
+[`CGImageSourceCopyAuxiliaryDataInfoAtIndex(_:_:_:)`](https://developer.apple.com/documentation/imageio/cgimagesourcecopyauxiliarydatainfoatindex(_:_:_:)) returns `nil` if the image doesn’t contain `auxiliaryImageDataType` data.
 
-The value for key [`kCGImageAuxiliaryDataInfoDataDescription`](https://developer.apple.com/documentation/ImageIO/kCGImageAuxiliaryDataInfoDataDescription) is a [`CFDictionary`](https://developer.apple.com/documentation/CoreFoundation/CFDictionary) that you populate to tell the image system how to interpret the depth map. It can contain the following depth data parameters:
+The value for key [`kCGImageAuxiliaryDataInfoDataDescription`](https://developer.apple.com/documentation/imageio/kcgimageauxiliarydatainfodatadescription) is a [`CFDictionary`](https://developer.apple.com/documentation/corefoundation/cfdictionary) that you populate to tell the image system how to interpret the depth map. It can contain the following depth data parameters:
 
-- [`kCGImagePropertyPixelFormat`](https://developer.apple.com/documentation/ImageIO/kCGImagePropertyPixelFormat) → One of the Core Video `CVPixelBuffer.h` depth or disparity formats
-- [`kCGImagePropertyWidth`](https://developer.apple.com/documentation/ImageIO/kCGImagePropertyWidth) and [`kCGImagePropertyHeight`](https://developer.apple.com/documentation/ImageIO/kCGImagePropertyHeight) → Pixel dimensions
-- [`kCGImagePropertyBytesPerRow`](https://developer.apple.com/documentation/ImageIO/kCGImagePropertyBytesPerRow) → The number of bytes per row in the depth map
+- [`kCGImagePropertyPixelFormat`](https://developer.apple.com/documentation/imageio/kcgimagepropertypixelformat) → One of the Core Video `CVPixelBuffer.h` depth or disparity formats
+- [`kCGImagePropertyWidth`](https://developer.apple.com/documentation/imageio/kcgimagepropertywidth) and [`kCGImagePropertyHeight`](https://developer.apple.com/documentation/imageio/kcgimagepropertyheight) → Pixel dimensions
+- [`kCGImagePropertyBytesPerRow`](https://developer.apple.com/documentation/imageio/kcgimagepropertybytesperrow) → The number of bytes per row in the depth map
 
 ##### Attach Your Custom Depth Map to an Image
 
@@ -43,7 +43,7 @@ Attach the depth or disparity dictionary to an image as follows:
 
 1. Create [`AVDepthData`](avdepthdata.md) with [`init(fromDictionaryRepresentation:)`](avdepthdata/init(fromdictionaryrepresentation:).md), passing in the depth or disparity dictionary.
 2. Create the image destination.
-3. Create the image, using helper methods from [`Image I/O`](https://developer.apple.com/documentation/ImageIO).
+3. Create the image, using helper methods from [`Image I/O`](https://developer.apple.com/documentation/imageio).
 
 ```swift
 // Add an image to the destination.

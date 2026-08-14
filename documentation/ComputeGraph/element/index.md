@@ -23,7 +23,7 @@ The zero-based index of the element
 
 Use this function to get the element’s position in the element buffer, which can be useful for creating unique variations or patterns.
 
-> **Note**: ![Graph](https://docs-assets.developer.apple.com/published/d2a9c0f5ff28d89f6028679e26a5be47/element__index.svg)
+> **Note**: ![Graph](/images/com.apple.computegraph/element__index.svg)
 
 
 ---

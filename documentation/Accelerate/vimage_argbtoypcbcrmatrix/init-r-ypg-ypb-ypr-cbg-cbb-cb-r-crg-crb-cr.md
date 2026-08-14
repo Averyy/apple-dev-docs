@@ -24,7 +24,7 @@ init(R_Yp: Float, G_Yp: Float, B_Yp: Float, R_Cb: Float, G_Cb: Float, B_Cb_R_Cr:
 
 The 3 x 3 matrix is given by:
 
-![None](https://docs-assets.developer.apple.com/published/cd4c896355cac49fedbe25a83dcb644c/media-2941901%402x.png)
+![None](/images/com.apple.accelerate/media-2941901@2x.png)
 
 ## Parameters
 

@@ -25,7 +25,7 @@ A valid [`MPSMatrix`](mpsmatrix.md) object or `nil`, if failure.
 
 #### Discussion
 
-The dimensions and stride of the matrix are specified by the [`MPSMatrixDescriptor`](mpsmatrixdescriptor.md) object. The size of the provided [`MTLBuffer`](https://developer.apple.com/documentation/Metal/MTLBuffer) object must be large enough to store the following amount of bytes:
+The dimensions and stride of the matrix are specified by the [`MPSMatrixDescriptor`](mpsmatrixdescriptor.md) object. The size of the provided [`MTLBuffer`](https://developer.apple.com/documentation/metal/mtlbuffer) object must be large enough to store the following amount of bytes:
 
 `(descriptor.rows-1) * descriptor.rowBytes + descriptor.columns * (element size)`
 

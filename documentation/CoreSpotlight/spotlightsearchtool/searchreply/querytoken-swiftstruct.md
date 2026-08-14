@@ -20,15 +20,15 @@ struct QueryToken
 
 #### Overview
 
-When processing a request, a model might call the Spotlight search tool multiple times to retrieve results. Each time the model calls the Spotlight search tool’s [`call(arguments:)`](https://developer.apple.com/documentation/FoundationModels/Tool/call(arguments:)) method, the tool generates a new `QueryToken` to track that request. When delivering results to your app, the tool includes this token in the [`SpotlightSearchTool.SearchReply`](spotlightsearchtool/searchreply.md) structures it delivers. Use the token to associate that data with a specific query.
+When processing a request, a model might call the Spotlight search tool multiple times to retrieve results. Each time the model calls the Spotlight search tool’s [`call(arguments:)`](https://developer.apple.com/documentation/foundationmodels/tool/call(arguments:)) method, the tool generates a new `QueryToken` to track that request. When delivering results to your app, the tool includes this token in the [`SpotlightSearchTool.SearchReply`](spotlightsearchtool/searchreply.md) structures it delivers. Use the token to associate that data with a specific query.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

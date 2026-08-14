@@ -24,7 +24,7 @@ A promise that resolves when the search completes.
 
 #### Discussion
 
-The [`search(query, callback, options)`](search/search1.md) method returns a set of locations that matches a user-entered query or a [`SearchAutocompleteResult`](searchautocompleteresult.md).
+The [`search()`](search/search1.md) method returns a set of locations that matches a user-entered query or a [`SearchAutocompleteResult`](searchautocompleteresult.md).
 
 MapKit JS invokes the `callback` function on failure and success with two arguments, `error` and `data`. If you cancel the request before you receive a response, the system doesn’t call this function. The callback can also be a delegate object.
 

@@ -53,10 +53,10 @@ protocol DataProtocol : RandomAccessCollection where Self.Element == UInt8, Self
 ## Relationships
 
 ### Inherits From
-- [BidirectionalCollection](../Swift/BidirectionalCollection.md)
-- [Collection](../Swift/Collection.md)
-- [RandomAccessCollection](../Swift/RandomAccessCollection.md)
-- [Sequence](../Swift/Sequence.md)
+- [BidirectionalCollection](../swift/bidirectionalcollection.md)
+- [Collection](../swift/collection.md)
+- [RandomAccessCollection](../swift/randomaccesscollection.md)
+- [Sequence](../swift/sequence.md)
 ### Inherited By
 - [MutableDataProtocol](mutabledataprotocol.md)
 ### Conforming Types

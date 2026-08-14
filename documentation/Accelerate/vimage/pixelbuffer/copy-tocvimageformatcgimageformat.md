@@ -24,7 +24,7 @@ func copy(to cvPixelBuffer: CVPixelBuffer, cvImageFormat: vImageCVImageFormat, c
 
 The destination Core Video pixel buffer must be nonplanar and be the same size as the source buffer.
 
-The following code shows how to incorporate a vImage pixel buffer into a [`CIImageProcessorKernel`](https://developer.apple.com/documentation/CoreImage/CIImageProcessorKernel) instance. The code calls [`copy(to:cvImageFormat:cgImageFormat:)`](vimage/pixelbuffer/copy(to:cvimageformat:cgimageformat:).md) to write the result of a contast stretch operation to the processor kernel’s output.
+The following code shows how to incorporate a vImage pixel buffer into a [`CIImageProcessorKernel`](https://developer.apple.com/documentation/coreimage/ciimageprocessorkernel) instance. The code calls [`copy(to:cvImageFormat:cgImageFormat:)`](vimage/pixelbuffer/copy(to:cvimageformat:cgimageformat:).md) to write the result of a contast stretch operation to the processor kernel’s output.
 
 ```swift
 class ContrastStretchImageProcessorKernel: CIImageProcessorKernel {

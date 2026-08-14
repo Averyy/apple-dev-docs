@@ -7,7 +7,6 @@ The contextual information provided by a business for a specific Welcome Message
 
 **Availability**:
 - iOS 27.0+ (Beta)
-- iPadOS 27.0+ (Beta)
 
 ## Declaration
 

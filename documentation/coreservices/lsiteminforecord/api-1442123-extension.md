@@ -3,7 +3,7 @@
 **Framework**: Core Services  
 **Kind**: structp
 
-A Core Foundation string object specifying theitem’s filename extension; see the  inthe Core Foundation Reference Documentation for a description ofthe `CFStringRef` datatype.
+A Core Foundation string object specifying theitem’s filename extension; see the *CFString Reference* inthe Core Foundation Reference Documentation for a description ofthe `CFStringRef` datatype.
 
 **Availability**:
 - Mac Catalyst 13.0+ - Deprecated in 13.1

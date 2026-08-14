@@ -100,7 +100,7 @@ func urlSession(_ session: URLSession,
 }
 ```
 
-> 💡 **Tip**:  If the only UI update you need to perform during the download is to update a [`UIProgressView`](https://developer.apple.com/documentation/UIKit/UIProgressView), then use the task’s [`progress`](urlsessiontask/progress.md) property instead of performing your own progress calculations. This property is an instance of [`Progress`](progress.md) that you can assign to the [`UIProgressView`](https://developer.apple.com/documentation/UIKit/UIProgressView) property [`observedProgress`](https://developer.apple.com/documentation/UIKit/UIProgressView/observedProgress) when you create the task to get automatic updating of the progress view.
+> 💡 **Tip**:  If the only UI update you need to perform during the download is to update a [`UIProgressView`](https://developer.apple.com/documentation/uikit/uiprogressview), then use the task’s [`progress`](urlsessiontask/progress.md) property instead of performing your own progress calculations. This property is an instance of [`Progress`](progress.md) that you can assign to the [`UIProgressView`](https://developer.apple.com/documentation/uikit/uiprogressview) property [`observedProgress`](https://developer.apple.com/documentation/uikit/uiprogressview/observedprogress) when you create the task to get automatic updating of the progress view.
 
 ##### Handle Download Completion or Errors in Your Delegate
 

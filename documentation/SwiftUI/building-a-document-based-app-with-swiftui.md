@@ -21,7 +21,7 @@ With this sample app, people can create, save, and open checklist documents on i
 
 The app uses SwiftUI’s [`DocumentGroup`](documentgroup.md) scene and [`Document`](document.md) protocol to open, save, and manage checklist files, and registers its own custom document type so the system knows to open checklist files with this app.
 
-![A screenshot displaying the document launch experience on iPad with a robot and plant accessory to the left and right of the title view, respectively.](https://docs-assets.developer.apple.com/published/899cca2b456665f78cdf421d91212654/writing-app-ipad%402x.png)
+![A screenshot displaying the document launch experience on iPad with a robot and plant accessory to the left and right of the title view, respectively.](/images/com.apple.SwiftUI/writing-app-ipad@2x.png)
 
 > **Note**: This sample targets the [`Document`](document.md) protocol described in [`Creating a document-based app`](creating-a-document-based-app.md) and [`Updating your document-based app`](updating-your-document-based-app.md).
 
@@ -35,7 +35,7 @@ To build and run this sample on your device, select your development team for th
 
 #### Create the Data Model
 
-This sample has a data model that defines a checklist as a collection of items. Each item has a title and a Boolean value that tracks whether someone checked it off. `ChecklistItem` and `Checklist` conform to [`Codable`](https://developer.apple.com/documentation/Swift/Codable) for serialization, and to [`Identifiable`](https://developer.apple.com/documentation/Swift/Identifiable) for unique identification during enumeration. `ChecklistItem` also conforms to [`Equatable`](https://developer.apple.com/documentation/Swift/Equatable) so SwiftUI can detect when an item’s content changes, as shown here:
+This sample has a data model that defines a checklist as a collection of items. Each item has a title and a Boolean value that tracks whether someone checked it off. `ChecklistItem` and `Checklist` conform to [`Codable`](https://developer.apple.com/documentation/swift/codable) for serialization, and to [`Identifiable`](https://developer.apple.com/documentation/swift/identifiable) for unique identification during enumeration. `ChecklistItem` also conforms to [`Equatable`](https://developer.apple.com/documentation/swift/equatable) so SwiftUI can detect when an item’s content changes, as shown here:
 
 ```swift
 struct ChecklistItem: Identifiable, Codable, Equatable {
@@ -87,13 +87,13 @@ Because [`DocumentGroupLaunchScene`](documentgrouplaunchscene.md) isn’t availa
 
 #### Adopt the Document Protocol
 
-The `ChecklistDocument` class adopts the [`Document`](document.md) protocol to read and write checklists from and to files. Because [`Document`](document.md) requires a reference type, `ChecklistDocument` is a `final class` marked with [`Observable()`](https://developer.apple.com/documentation/Observation/Observable()), rather than a structure. The [`readableContentTypes`](readabledocument/readablecontenttypes.md) property defines the types that the sample can read, specifically, the `.checklistDocument` type, like this:
+The `ChecklistDocument` class adopts the [`Document`](document.md) protocol to read and write checklists from and to files. Because [`Document`](document.md) requires a reference type, `ChecklistDocument` is a `final class` marked with [`Observable()`](https://developer.apple.com/documentation/observation/observable()), rather than a structure. The [`readableContentTypes`](readabledocument/readablecontenttypes.md) property defines the types that the sample can read, specifically, the `.checklistDocument` type, like this:
 
 ```swift
 static let readableContentTypes: [UTType] = [.checklistDocument]
 ```
 
-The sample reads a checklist from a file using a [`DocumentReader`](documentreader.md) that its [`reader(configuration:)`](readabledocument/reader(configuration:).md) method returns. This sample uses [`FileWrapperDocumentReader`](filewrapperdocumentreader.md) with a closure that decodes a file wrapper’s contents using a [`JSONDecoder`](https://developer.apple.com/documentation/Foundation/JSONDecoder), as shown here:
+The sample reads a checklist from a file using a [`DocumentReader`](documentreader.md) that its [`reader(configuration:)`](readabledocument/reader(configuration:).md) method returns. This sample uses [`FileWrapperDocumentReader`](filewrapperdocumentreader.md) with a closure that decodes a file wrapper’s contents using a [`JSONDecoder`](https://developer.apple.com/documentation/foundation/jsondecoder), as shown here:
 
 ```swift
 func reader(configuration: sending ReadConfiguration) -> sending FileWrapperDocumentReader<Checklist> {
@@ -124,7 +124,7 @@ func snapshot(contentType: UTType) async throws -> sending Checklist {
 }
 ```
 
-Conversely, the [`writer(configuration:)`](writabledocument/writer(configuration:).md) method returns a [`DocumentWriter`](documentwriter.md) that encodes the snapshot and writes it to disk. This sample uses [`FileWrapperDocumentWriter`](filewrapperdocumentwriter.md) with a closure that serializes the snapshot into a file wrapper using a [`JSONEncoder`](https://developer.apple.com/documentation/Foundation/JSONEncoder) instance, like this:
+Conversely, the [`writer(configuration:)`](writabledocument/writer(configuration:).md) method returns a [`DocumentWriter`](documentwriter.md) that encodes the snapshot and writes it to disk. This sample uses [`FileWrapperDocumentWriter`](filewrapperdocumentwriter.md) with a closure that serializes the snapshot into a file wrapper using a [`JSONEncoder`](https://developer.apple.com/documentation/foundation/jsonencoder) instance, like this:
 
 ```swift
 func writer(configuration: sending WriteConfiguration) -> sending FileWrapperDocumentWriter<Checklist> {
@@ -137,7 +137,7 @@ func writer(configuration: sending WriteConfiguration) -> sending FileWrapperDoc
 
 #### Register Undo and Redo Actions
 
-With the [`Document`](document.md) protocol, undo management is mandatory to enable autosave. Read the active [`UndoManager`](https://developer.apple.com/documentation/Foundation/UndoManager) from the environment and update the document through methods that register an undo action. Calling the same method again from the undo closure also registers the redo action, so most operations only need one method, as shown here:
+With the [`Document`](document.md) protocol, undo management is mandatory to enable autosave. Read the active [`UndoManager`](https://developer.apple.com/documentation/foundation/undomanager) from the environment and update the document through methods that register an undo action. Calling the same method again from the undo closure also registers the redo action, so most operations only need one method, as shown here:
 
 ```swift
 @MainActor
@@ -152,7 +152,7 @@ func toggleItem(_ item: Binding<ChecklistItem>, undoManager: UndoManager? = nil)
 
 #### Export a Custom Document Type
 
-The app defines and exports a custom content type for the documents it creates. It declares this custom type in the project’s [`Information Property List`](https://developer.apple.com/documentation/BundleResources/Information-Property-List) file under the [`UTExportedTypeDeclarations`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/UTExportedTypeDeclarations) key. This sample uses `com.example.checklist` as the identifier in the information property list file, as the following code demonstrates:
+The app defines and exports a custom content type for the documents it creates. It declares this custom type in the project’s [`Information Property List`](https://developer.apple.com/documentation/bundleresources/information-property-list) file under the [`UTExportedTypeDeclarations`](https://developer.apple.com/documentation/bundleresources/information-property-list/utexportedtypedeclarations) key. This sample uses `com.example.checklist` as the identifier in the information property list file, as the following code demonstrates:
 
 ```swift
 <key>CFBundleDocumentTypes</key>
@@ -203,7 +203,7 @@ extension UTType {
 }
 ```
 
-Specify a file extension for every custom format you declare to make sure the operating system opens files with the given extension using your app. For more information about custom file and data types, see [`Defining file and data types for your app`](https://developer.apple.com/documentation/UniformTypeIdentifiers/defining-file-and-data-types-for-your-app).
+Specify a file extension for every custom format you declare to make sure the operating system opens files with the given extension using your app. For more information about custom file and data types, see [`Defining file and data types for your app`](https://developer.apple.com/documentation/uniformtypeidentifiers/defining-file-and-data-types-for-your-app).
 
 ###### Related Samples
 

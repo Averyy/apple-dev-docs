@@ -17,7 +17,7 @@ virtual void handleReport(uint64_t timestamp, uint8_t *report, uint32_t reportLe
 
 #### Discussion
 
-Implement a custom version of this method and use the [`TYPE`](https://developer.apple.com/documentation/DriverKit/TYPE) macro to let the system know that your method conforms to this prototype.
+Implement a custom version of this method and use the [`TYPE`](https://developer.apple.com/documentation/driverkit/type) macro to let the system know that your method conforms to this prototype.
 
 In your custom implementation of this method, use the report data to gather the information you need to dispatch an appropriate event to the system. To simplify the parsing of the report data, use the [`getElements`](iouserhideventservice/getelements.md) method to populate a set of [`IOHIDElement`](iohidelement.md) objects with data from the report. You can then iterate over the elements to collect the data you need. Compare the report ID of each element to the value in the `reportID` parameter to determine which elements contain updated data. Dispatch events to the system using the methods of the [`IOHIDEventService`](iohideventservice.md) class, some of which this class overrides.
 

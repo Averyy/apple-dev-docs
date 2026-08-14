@@ -38,7 +38,7 @@ let deepSleepSample  = HKCategorySample(type: sleepSampleType,
 
 Each sleep analysis sample can have only one value. To track both the amount of time a person spends in bed and the quality and quantity of their sleep, use samples with overlapping times.
 
-![An illustration showing the in-bed sample and the overlapping awake, REM, core and deep sleep samples.](https://docs-assets.developer.apple.com/published/9d8f3608cc6f723dbcd923546c79061e/media-4110084%402x.png)
+![An illustration showing the in-bed sample and the overlapping awake, REM, core and deep sleep samples.](/images/com.apple.healthkit/media-4110084@2x.png)
 
 One set of samples tracks the amount of time the user spent in bed. Then, you can partition the in-bed time into a more-detailed set of samples. These detailed samples show when the user was awake, in core sleep, in deep sleep, or in rapid eye movement (REM) sleep. The detailed samples overlap the in-bed sample, but they don’t overlap each other.
 
@@ -74,15 +74,15 @@ By comparing the start and end times of these samples, apps can calculate second
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../Swift/BitwiseCopyable.md)
-- [Copyable](../Swift/Copyable.md)
-- [Equatable](../Swift/Equatable.md)
-- [Escapable](../Swift/Escapable.md)
+- [BitwiseCopyable](../swift/bitwisecopyable.md)
+- [Copyable](../swift/copyable.md)
+- [Equatable](../swift/equatable.md)
+- [Escapable](../swift/escapable.md)
 - [HKCategoryValuePredicateProviding](hkcategoryvaluepredicateproviding.md)
-- [Hashable](../Swift/Hashable.md)
-- [RawRepresentable](../Swift/RawRepresentable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Hashable](../swift/hashable.md)
+- [RawRepresentable](../swift/rawrepresentable.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

@@ -16,7 +16,7 @@ func runModal(for settings: UnsafeMutablePointer<SecKeychainSettings>!, keychain
 
 #### Discussion
 
-The method result indicates which button the user clicks: [`NSOKButton`](https://developer.apple.com/documentation/AppKit/NSOKButton) or [`NSCancelButton`](https://developer.apple.com/documentation/AppKit/NSCancelButton) .
+The method result indicates which button the user clicks: [`NSOKButton`](https://developer.apple.com/documentation/appkit/nsokbutton) or [`NSCancelButton`](https://developer.apple.com/documentation/appkit/nscancelbutton) .
 
 If the user attempts to chanage the settings of a locked keychain, the unlock authorization dialog appears.
 

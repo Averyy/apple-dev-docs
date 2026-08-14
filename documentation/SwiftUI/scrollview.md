@@ -45,7 +45,7 @@ var body: some View {
 }
 ```
 
-![A scroll view with a series of vertically arranged rows, reading](https://docs-assets.developer.apple.com/published/0eab3cad2c7924af68ccb8d604044ce1/SwiftUI-ScrollView-rows-with-indicator%402x.png)
+![A scroll view with a series of vertically arranged rows, reading](/images/com.apple.SwiftUI/SwiftUI-ScrollView-rows-with-indicator@2x.png)
 
 ##### Controlling Scroll Position
 

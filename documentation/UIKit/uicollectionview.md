@@ -31,7 +31,7 @@ When you add a collection view to your user interface, your app’s main job is 
 
 Data in the collection view is organized into individual items, which you can group into sections for presentation. An item is the smallest unit of data you want to present. For example, in a photos app, an item might be a single image. The collection view presents items onscreen using a cell, which is an instance of the [`UICollectionViewCell`](uicollectionviewcell.md) class that your data source configures and provides.
 
-![A collection view using the flow layout.](https://docs-assets.developer.apple.com/published/6b21b5041dface01efa4373940c4c7b7/uicollectionview-1%402x.png)
+![A collection view using the flow layout.](/images/com.apple.uikit/uicollectionview-1@2x.png)
 
 In addition to its cells, a collection view can present data using other types of views. These supplementary views can be, for example, section headers and footers that are separate from the individual cells but still convey information. Support for supplementary views is optional and defined by the collection view’s layout object, which is also responsible for defining the placement of those views.
 
@@ -77,7 +77,7 @@ To begin the interactive repositioning of an item, call the [`beginInteractiveMo
 
 During user interactions, the collection view invalidates its layout dynamically to reflect the current position of the item. If you do nothing, the default layout behavior repositions the items for you, but you can customize the layout animations if you want. When interactions finish, the collection view updates its data source object with the new location of the item.
 
-The [`UICollectionViewController`](uicollectionviewcontroller.md) class provides a default gesture recognizer that you can use to rearrange items in its managed collection view. To install this gesture recognizer, set the [`installsStandardGestureForInteractiveMovement`](uicollectionviewcontroller/installsstandardgestureforinteractivemovement.md) property of the collection view controller to [`true`](https://developer.apple.com/documentation/Swift/true).
+The [`UICollectionViewController`](uicollectionviewcontroller.md) class provides a default gesture recognizer that you can use to rearrange items in its managed collection view. To install this gesture recognizer, set the [`installsStandardGestureForInteractiveMovement`](uicollectionviewcontroller/installsstandardgestureforinteractivemovement.md) property of the collection view controller to [`true`](https://developer.apple.com/documentation/swift/true).
 
 ##### Interface Builder Attributes
 
@@ -86,7 +86,7 @@ The following table lists the attributes that you configure for collection views
 | Attribute | Description |
 | --- | --- |
 | Items | The number of prototype cells. This property controls the specified number of prototype cells for you to configure in your storyboard. Collection views must always have at least one cell and may have multiple cells for displaying different types of content or for displaying the same content in different ways. |
-| Layout | The layout object to use. Use this control to select between the [`UICollectionViewFlowLayout`](uicollectionviewflowlayout.md) object and a custom layout object that you define. ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) When the flow layout is selected, you can also configure the scrolling direction for the collection view’s content and whether the flow layout has header and footer views. Enabling header and footer views adds reusable views to your storyboard that you can configure with your header and footer content. You can also create those views programmatically. ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) When a custom layout is selected, you must specify the [`UICollectionViewLayout`](uicollectionviewlayout.md) subclass to use. |
+| Layout | The layout object to use. Use this control to select between the [`UICollectionViewFlowLayout`](uicollectionviewflowlayout.md) object and a custom layout object that you define. ![None](/images/com.apple.uikit/spacer.png) When the flow layout is selected, you can also configure the scrolling direction for the collection view’s content and whether the flow layout has header and footer views. Enabling header and footer views adds reusable views to your storyboard that you can configure with your header and footer content. You can also create those views programmatically. ![None](/images/com.apple.uikit/spacer.png) When a custom layout is selected, you must specify the [`UICollectionViewLayout`](uicollectionviewlayout.md) subclass to use. |
 
 When the Flow layout is selected, the Size inspector for the collection view contains additional attributes for configuring flow layout metrics. Use those attributes to configure the size of your cells, the size of headers and footers, the minimum spacing between cells, and any margins around each section of cells. For more information about the meaning of the flow layout metrics, see [`UICollectionViewFlowLayout`](uicollectionviewflowlayout.md).
 
@@ -315,21 +315,21 @@ For general information about making your interface accessible, see [`Accessibil
 ### Inherits From
 - [UIScrollView](uiscrollview.md)
 ### Conforms To
-- [CALayerDelegate](../QuartzCore/CALayerDelegate.md)
-- [CLBodyIdentifiable](../CoreLocation/CLBodyIdentifiable.md)
-- [CMBodyIdentifiable](../CoreMotion/CMBodyIdentifiable.md)
-- [CVarArg](../Swift/CVarArg.md)
-- [Copyable](../Swift/Copyable.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Escapable](../Swift/Escapable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCoding](../Foundation/NSCoding.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [NSTouchBarProvider](../AppKit/NSTouchBarProvider.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [CALayerDelegate](../quartzcore/calayerdelegate.md)
+- [CLBodyIdentifiable](../corelocation/clbodyidentifiable.md)
+- [CMBodyIdentifiable](../coremotion/cmbodyidentifiable.md)
+- [CVarArg](../swift/cvararg.md)
+- [Copyable](../swift/copyable.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Escapable](../swift/escapable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCoding](../foundation/nscoding.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSTouchBarProvider](../appkit/nstouchbarprovider.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 - [UIAccessibilityIdentification](uiaccessibilityidentification.md)
 - [UIActivityItemsConfigurationProviding](uiactivityitemsconfigurationproviding.md)
 - [UIAppearance](uiappearance.md)

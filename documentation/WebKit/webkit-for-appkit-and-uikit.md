@@ -50,7 +50,7 @@ Present a [`WKWebView`](wkwebview.md) object from your custom view hierarchies a
   A protocol for loading resources with URL schemes that WebKit doesn’t handle.
 - [protocol WKURLSchemeTask](wkurlschemetask.md)
   An interface that WebKit uses to request custom resources from your app.
-- [static let readAccessURL: NSAttributedString.DocumentReadingOptionKey](../Foundation/NSAttributedString/DocumentReadingOptionKey/readAccessURL.md)
+- [static let readAccessURL: NSAttributedString.DocumentReadingOptionKey](../foundation/nsattributedstring/documentreadingoptionkey/readaccessurl.md)
   The local files WebKit can access when loading content.
 ### Navigation
 - [protocol WKNavigationDelegate](wknavigationdelegate.md)

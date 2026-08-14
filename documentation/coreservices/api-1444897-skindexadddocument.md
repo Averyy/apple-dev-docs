@@ -38,10 +38,10 @@ In the current implementation of Search Kit, some functions do not provide expec
 
 ## Parameters
 
-- `inIndex`: The index to which you are adding the document URL object ( ).
-- `inDocument`: The document URL object (of type  ) , containing a file-based document’s location information, to add to the index. You can release the document URL object immediately after adding it to the index.
-- `inMIMETypeHint`: Specify a MIME type hint to help Spotlight determine which of its metadata importers to use when Search Kit is indexing a file-based document. Search Kit uses filename extensions and type/creator codes in attempting to determine file types when indexing files. See  . You can circumvent Search Kit’s file type determination process, or override it, by using a MIME type hint.
-- `inCanReplace`: A Boolean value specifying whether Search Kit will overwrite a document’s index entry ( , indicated by   or  ), or retain the entry if it exists ( , indicated by   or  ).
+- `inIndex`: The index to which you are adding the document URL object ([`SKDocument`](skdocument.md)).
+- `inDocument`: The document URL object (of type [`SKDocument`](skdocument.md)) , containing a file-based document’s location information, to add to the index. You can release the document URL object immediately after adding it to the index.
+- `inMIMETypeHint`: The MIME type hint for the specified file-based document. Can be `NULL`. In Search Kit, common MIME type hints include `text/plain`, `text/rtf`, `text/html`, `text/pdf`, and `application/msword`. Specify a MIME type hint to help Spotlight determine which of its metadata importers to use when Search Kit is indexing a file-based document. Search Kit uses filename extensions and type/creator codes in attempting to determine file types when indexing files. See [`SKLoadDefaultExtractorPlugIns()`](1447859-skloaddefaultextractorplugins.md). You can circumvent Search Kit’s file type determination process, or override it, by using a MIME type hint.
+- `inCanReplace`: A Boolean value specifying whether Search Kit will overwrite a document’s index entry (`true`, indicated by `1` or `kCFBooleanTrue`), or retain the entry if it exists (`false`, indicated by `0` or `kCFBoolenFalse`).
 
 ## See Also
 

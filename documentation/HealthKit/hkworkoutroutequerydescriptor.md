@@ -21,7 +21,7 @@ struct HKWorkoutRouteQueryDescriptor
 
 #### Overview
 
-Use [`HKWorkoutRouteQueryDescriptor`](hkworkoutroutequerydescriptor.md) to access the individual [`CLLocation`](https://developer.apple.com/documentation/CoreLocation/CLLocation) objects stored in an [`HKWorkoutRoute`](hkworkoutroute.md) sample. To read the individual locations, create a workout route query descriptor using the desired route, and then call the descriptor’s [`results(for:)`](hkworkoutroutequerydescriptor/results(for:).md) method.
+Use [`HKWorkoutRouteQueryDescriptor`](hkworkoutroutequerydescriptor.md) to access the individual [`CLLocation`](https://developer.apple.com/documentation/corelocation/cllocation) objects stored in an [`HKWorkoutRoute`](hkworkoutroute.md) sample. To read the individual locations, create a workout route query descriptor using the desired route, and then call the descriptor’s [`results(for:)`](hkworkoutroutequerydescriptor/results(for:).md) method.
 
 ```swift
 // Create the descriptor.
@@ -39,7 +39,7 @@ for try await location in locations {
 }
 ```
 
-While this method returns an [`AsyncSequence`](https://developer.apple.com/documentation/Swift/AsyncSequence), unlike the long-running queries, this sequence has a finite size. Iterating over the sequence asynchronously returns the route’s locations, automatically terminating after you receive all the locations.
+While this method returns an [`AsyncSequence`](https://developer.apple.com/documentation/swift/asyncsequence), unlike the long-running queries, this sequence has a finite size. Iterating over the sequence asynchronously returns the route’s locations, automatically terminating after you receive all the locations.
 
 ## Topics
 
@@ -60,8 +60,8 @@ While this method returns an [`AsyncSequence`](https://developer.apple.com/docum
 ## Relationships
 
 ### Conforms To
-- [Copyable](../Swift/Copyable.md)
-- [Escapable](../Swift/Escapable.md)
+- [Copyable](../swift/copyable.md)
+- [Escapable](../swift/escapable.md)
 - [HKAsyncSequenceQuery](hkasyncsequencequery.md)
 
 ## See Also

@@ -21,7 +21,7 @@ var kAudioFileStreamProperty_DataFormat: AudioFileStreamPropertyID { get }
 
 #### Discussion
 
-An `AudioStreamBasicDescription` structure describing the format of the audio data in the stream. For more information on audio stream basic descriptions, see [`Core Audio Data Types`](https://developer.apple.com/documentation/CoreAudio/core-audio-data-types).
+An `AudioStreamBasicDescription` structure describing the format of the audio data in the stream. For more information on audio stream basic descriptions, see [`Core Audio Data Types`](https://developer.apple.com/documentation/coreaudio/core-audio-data-types).
 
 ## See Also
 

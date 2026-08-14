@@ -18,7 +18,7 @@ var currentNavigationAlert: CPNavigationAlert? { get }
 
 #### Discussion
 
-If a navigation alert isn’t visible, the property returns [`nil`](https://developer.apple.com/documentation/ObjectiveC/nil-227m0).
+If a navigation alert isn’t visible, the property returns [`nil`](https://developer.apple.com/documentation/objectivec/nil-227m0).
 
 ## See Also
 

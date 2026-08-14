@@ -42,10 +42,10 @@ Double complex data are stored as ordered pairs of double-precision floating-poi
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../Swift/BitwiseCopyable.md)
-- [Copyable](../Swift/Copyable.md)
-- [Escapable](../Swift/Escapable.md)
-- [Sendable](../Swift/Sendable.md)
+- [BitwiseCopyable](../swift/bitwisecopyable.md)
+- [Copyable](../swift/copyable.md)
+- [Escapable](../swift/escapable.md)
+- [Sendable](../swift/sendable.md)
 - [vDSP_DiscreteFourierTransformable](vdsp_discretefouriertransformable.md)
 
 ## See Also

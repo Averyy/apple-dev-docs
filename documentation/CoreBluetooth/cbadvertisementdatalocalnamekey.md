@@ -22,7 +22,7 @@ let CBAdvertisementDataLocalNameKey: String
 
 #### Discussion
 
-The value associated with this key is an [`NSString`](https://developer.apple.com/documentation/Foundation/NSString).
+The value associated with this key is an [`NSString`](https://developer.apple.com/documentation/foundation/nsstring).
 
 ## See Also
 

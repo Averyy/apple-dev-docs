@@ -62,9 +62,9 @@ func urlSession(_ session: URLSession, assetDownloadTask: AVAssetDownloadTask, d
 
 - `session`: The session the asset download task is on.
 - `assetDownloadTask`: The download task that loaded a new time range.
-- `timeRange`: A [`CMTimeRange`](https://developer.apple.com/documentation/CoreMedia/CMTimeRange) value that indicates the time range the task loaded since the last call to this method.
-- `loadedTimeRanges`: An array of [`CMTimeRange`](https://developer.apple.com/documentation/CoreMedia/CMTimeRange) values that indicate the time ranges the task has downloaded so far.
-- `timeRangeExpectedToLoad`: A [`CMTimeRange`](https://developer.apple.com/documentation/CoreMedia/CMTimeRange) value that indicates the expected duration of the downloaded asset.
+- `timeRange`: A [`CMTimeRange`](https://developer.apple.com/documentation/coremedia/cmtimerange) value that indicates the time range the task loaded since the last call to this method.
+- `loadedTimeRanges`: An array of [`CMTimeRange`](https://developer.apple.com/documentation/coremedia/cmtimerange) values that indicate the time ranges the task has downloaded so far.
+- `timeRangeExpectedToLoad`: A [`CMTimeRange`](https://developer.apple.com/documentation/coremedia/cmtimerange) value that indicates the expected duration of the downloaded asset.
 
 ## See Also
 

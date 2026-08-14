@@ -16,13 +16,13 @@ You can shape the output of an audio signal, such as by boosting or cutting the 
 
 The image below shows an example of a magnitude response curve that boosts low frequencies:
 
-![A screenshot of a line chart that represents the magnitude response curve of a peaking EQ filter.](https://docs-assets.developer.apple.com/published/665237f208ae924997047d07fb1ae875/vDSP_Audio_Unit.png)
+![A screenshot of a line chart that represents the magnitude response curve of a peaking EQ filter.](/images/com.apple.accelerate/vDSP_Audio_Unit.png)
 
 This sample code project is a peaking EQ filter implemented with a vDSP biquadratic filter that’s delivered as an audio unit extension. You can use the code in this project as the basis for writing audio units that use the [`vDSP`](vdsp.md) library.
 
 This project is based on the Audio Unit Extension App Xcode template and uses the *Effect* audio unit type. This type of audio unit accepts an audio input and produces an audio output. The template provides an audio pass-through effect with a signal parameter to adjust the gain of the audio that passes through the audio unit.
 
-For more information about creating audio unit extensions, see [`Creating an audio unit extension`](https://developer.apple.com/documentation/AVFAudio/creating-an-audio-unit-extension).
+For more information about creating audio unit extensions, see [`Creating an audio unit extension`](https://developer.apple.com/documentation/avfaudio/creating-an-audio-unit-extension).
 
 ##### Add a New Parameter Address
 

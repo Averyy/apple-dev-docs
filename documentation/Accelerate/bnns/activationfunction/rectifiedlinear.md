@@ -30,7 +30,7 @@ This constant defines an activation function that returns values using the follo
 
 The following illustrates the output that the activation function generates from inputs in the range `-10...10`:
 
-![Graph that shows input values for the activation function on horizontal axis and its output values on vertical axis. ](https://docs-assets.developer.apple.com/published/ac09c4df1ca2b7594664399eac737778/media-3654632%402x.png)
+![Graph that shows input values for the activation function on horizontal axis and its output values on vertical axis. ](/images/com.apple.accelerate/media-3654632@2x.png)
 
 ## See Also
 

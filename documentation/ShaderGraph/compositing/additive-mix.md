@@ -29,11 +29,11 @@ B + F
 
 The `Additive Mix` node combines two inputs and uses the `Mix` input to determine the weight of the foreground in the blend, represented by the equation `B + F`. Higher values closer to `1` intensify the effect of the mix, while lower values closer to `0` dim the effect. Below is an example of a node graph that uses the `Additive Mix` node to blend two images together into a single material:
 
-![None](https://docs-assets.developer.apple.com/published/795f41ac899dbe8062aa2c8326b12153/AdditiveMixGraph.png)
+![None](/images/ShaderGraph-Docs/AdditiveMixGraph.png)
 
 Below are two images and their resulting blended texture applied to a cube:
 
-![None](https://docs-assets.developer.apple.com/published/1ce8d8ad8c57d334565a0b00269c0ed0/AdditiveMixMaterial.png)
+![None](/images/ShaderGraph-Docs/AdditiveMixMaterial.png)
 
 ## See Also
 

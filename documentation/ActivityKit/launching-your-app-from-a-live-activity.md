@@ -10,16 +10,16 @@ People can tap a Live Activity to launch your app. To let them view more content
 
 ##### Respond to the Systems Default Launch Behavior
 
-If you don’t explicitly provide a deep link into your app, the system opens your app and passes an [`NSUserActivity`](https://developer.apple.com/documentation/Foundation/NSUserActivity) to [`onContinueUserActivity(_:perform:)`](https://developer.apple.com/documentation/SwiftUI/View/onContinueUserActivity(_:perform:)), [`application(_:continue:restorationHandler:)`](https://developer.apple.com/documentation/UIKit/UIApplicationDelegate/application(_:continue:restorationHandler:)), or [`application(_:continue:restorationHandler:)`](https://developer.apple.com/documentation/AppKit/NSApplicationDelegate/application(_:continue:restorationHandler:)). Implement the appropriate callback and check whether the `NSUserActivity` object’s [`activityType`](https://developer.apple.com/documentation/Foundation/NSUserActivity/activityType) is [`NSUserActivityTypeLiveActivity`](https://developer.apple.com/documentation/WidgetKit/NSUserActivityTypeLiveActivity). Then, add code to open a screen in your app that fits the context of the active Live Activity.
+If you don’t explicitly provide a deep link into your app, the system opens your app and passes an [`NSUserActivity`](https://developer.apple.com/documentation/foundation/nsuseractivity) to [`onContinueUserActivity(_:perform:)`](https://developer.apple.com/documentation/swiftui/view/oncontinueuseractivity(_:perform:)), [`application(_:continue:restorationHandler:)`](https://developer.apple.com/documentation/uikit/uiapplicationdelegate/application(_:continue:restorationhandler:)), or [`application(_:continue:restorationHandler:)`](https://developer.apple.com/documentation/appkit/nsapplicationdelegate/application(_:continue:restorationhandler:)). Implement the appropriate callback and check whether the `NSUserActivity` object’s [`activityType`](https://developer.apple.com/documentation/foundation/nsuseractivity/activitytype) is [`NSUserActivityTypeLiveActivity`](https://developer.apple.com/documentation/widgetkit/nsuseractivitytypeliveactivity). Then, add code to open a screen in your app that fits the context of the active Live Activity.
 
-> ❗ **Important**: In CarPlay, tapping your Live Activity only launches your app if it supports CarPlay. For more information about adding CarPlay support to your app, refer to [`CarPlay`](https://developer.apple.com/documentation/CarPlay).
+> ❗ **Important**: In CarPlay, tapping your Live Activity only launches your app if it supports CarPlay. For more information about adding CarPlay support to your app, refer to [`CarPlay`](https://developer.apple.com/documentation/carplay).
 
 ##### Add Deep Links to Your App
 
 With deep links, you specify an URL that directly launches a specific scene in your app, and choose different scenes for each Live Activity presentation:
 
-- To create a deep link into your app from the Lock Screen, compact leading, compact trailing, and minimal presentations, use [`widgetURL(_:)`](https://developer.apple.com/documentation/WidgetKit/DynamicIsland/widgetURL(_:)). When the compact leading and trailing presentations are visible, make sure both link to the same screen in your app.
-- To create a deep link into your app from the extended presentation, use `widgetURL(_:)`  or SwiftUI’s [`Link`](https://developer.apple.com/documentation/SwiftUI/Link).
+- To create a deep link into your app from the Lock Screen, compact leading, compact trailing, and minimal presentations, use [`widgetURL(_:)`](https://developer.apple.com/documentation/widgetkit/dynamicisland/widgeturl(_:)). When the compact leading and trailing presentations are visible, make sure both link to the same screen in your app.
+- To create a deep link into your app from the extended presentation, use `widgetURL(_:)`  or SwiftUI’s [`Link`](https://developer.apple.com/documentation/swiftui/link).
 
 ##### Configure How Your Live Activity Launches Your App in Watchos
 

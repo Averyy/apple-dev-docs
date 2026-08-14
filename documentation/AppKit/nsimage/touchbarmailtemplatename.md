@@ -19,7 +19,7 @@ class let touchBarMailTemplateName: String
 
 #### Discussion
 
-![Template image for mail](https://docs-assets.developer.apple.com/published/37ad2199b723c70e69600d916dfce3af/media-2793534%402x.png)
+![Template image for mail](/images/com.apple.appkit/media-2793534@2x.png)
 
 Touch Bar template images are exclusively for use in [`NSTouchBarItem`](nstouchbaritem.md) objects and not in onscreen windows.
 

@@ -19,7 +19,7 @@ var captureDeviceType: AVCaptureDevice.DeviceType { get }
 
 To specify a particular video format, select from your configuration’s [`supportedVideoFormats`](arconfiguration/supportedvideoformats.md) and set the desired format to the configuration’s [`videoFormat`](arconfiguration/videoformat-swift.property.md) property.
 
-For example, to specify the ultra-wide camera in a face-tracking session, search the supported video formats for the [`builtInUltraWideCamera`](https://developer.apple.com/documentation/AVFoundation/AVCaptureDevice/DeviceType-swift.struct/builtInUltraWideCamera) capture device.
+For example, to specify the ultra-wide camera in a face-tracking session, search the supported video formats for the [`builtInUltraWideCamera`](https://developer.apple.com/documentation/avfoundation/avcapturedevice/devicetype-swift.struct/builtinultrawidecamera) capture device.
 
 ```swift
 let config = ARFaceTrackingConfiguration()
@@ -38,7 +38,7 @@ session.run(config)
 
 - [var captureDevicePosition: AVCaptureDevice.Position](arconfiguration/videoformat-swift.class/capturedeviceposition.md)
   The position of the capture device.
-- [AVCaptureDevice.Position](../AVFoundation/AVCaptureDevice/Position-swift.enum.md)
+- [AVCaptureDevice.Position](../avfoundation/avcapturedevice/position-swift.enum.md)
   Constants that indicate the physical position of a capture device.
 
 

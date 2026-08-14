@@ -20,7 +20,7 @@ One of the image scaling constants. For a list of possible values, see [`NSImage
 
 ## Parameters
 
-- `segment`: The index of the segment whose enabled state you want to get. This method raises an exception ([`rangeException`](https://developer.apple.com/documentation/Foundation/NSExceptionName/rangeException)) if the index is out of bounds.
+- `segment`: The index of the segment whose enabled state you want to get. This method raises an exception ([`rangeException`](https://developer.apple.com/documentation/foundation/nsexceptionname/rangeexception)) if the index is out of bounds.
 
 ## See Also
 

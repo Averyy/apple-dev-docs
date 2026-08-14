@@ -16,7 +16,7 @@ class func setMenuBarVisible(_ visible: Bool)
 
 ## Parameters
 
-- `visible`: [`true`](https://developer.apple.com/documentation/Swift/true) if the menu bar should be visible and selectable, otherwise [`false`](https://developer.apple.com/documentation/Swift/false).
+- `visible`: [`true`](https://developer.apple.com/documentation/swift/true) if the menu bar should be visible and selectable, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
 
 ## See Also
 

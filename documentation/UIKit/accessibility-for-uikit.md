@@ -6,7 +6,7 @@ Make your UIKit apps accessible to everyone who uses iOS and tvOS.
 
 #### Overview
 
-Making your app accessible means making it usable by everyone. By designing your app with accessibility in mind, you make it possible for everyone to enjoy your app. For more information, see [`Accessibility`](https://developer.apple.com/documentation/Accessibility).
+Making your app accessible means making it usable by everyone. By designing your app with accessibility in mind, you make it possible for everyone to enjoy your app. For more information, see [`Accessibility`](https://developer.apple.com/documentation/accessibility).
 
 UIKit controls and views come with built-in accessibility, providing an accessible user experience by default. Typically, you don’t need to do extra work to enable the standard accessibility features.
 
@@ -14,7 +14,7 @@ In some cases, you might want to modify the default values to better represent y
 
 If your app contains custom user interface elements that don’t inherit from [`UIView`](uiview.md) or one of the other UIKit classes with built-in accessibility, make those elements accessible by subclassing [`UIAccessibilityElement`](uiaccessibilityelement.md).
 
-If you build your app with SwiftUI, see [`Accessibility modifiers`](https://developer.apple.com/documentation/SwiftUI/View-Accessibility).
+If you build your app with SwiftUI, see [`Accessibility modifiers`](https://developer.apple.com/documentation/swiftui/view-accessibility).
 
 ## Topics
 
@@ -26,7 +26,7 @@ If you build your app with SwiftUI, see [`Accessibility modifiers`](https://deve
 - [Supporting VoiceOver in your app](supporting-voiceover-in-your-app.md)
   Add VoiceOver support to make your iOS app more accessible to users who are blind or have low vision.
 ### Behaviors
-- [UIAccessibilityFocus](../ObjectiveC/uiaccessibilityfocus.md)
+- [UIAccessibilityFocus](../objectivec/uiaccessibilityfocus.md)
   An informal protocol that provides a way to determine whether an assistive app, such as VoiceOver, has focus on an accessible element.
 - [protocol UIAccessibilityIdentification](uiaccessibilityidentification.md)
   Methods that associate a unique identifier with elements in your user interface.
@@ -44,13 +44,13 @@ If you build your app with SwiftUI, see [`Accessibility modifiers`](https://deve
 - [UIAccessibility.GuidedAccessError.Code](uiaccessibility/guidedaccesserror/code.md)
   Error codes for Guided Access.
 ### Actions
-- [UIAccessibilityAction](../ObjectiveC/uiaccessibilityaction.md)
+- [UIAccessibilityAction](../objectivec/uiaccessibilityaction.md)
   A set of methods that accessibility elements can use to support specific actions.
 - [class UIAccessibilityCustomAction](uiaccessibilitycustomaction.md)
   A custom action to perform on an accessible object.
 - [UIAccessibilityCustomAction.Handler](uiaccessibilitycustomaction/handler.md)
   A closure type that defines a handler to perform for an action.
-- [Delivering an exceptional accessibility experience](../Accessibility/delivering_an_exceptional_accessibility_experience.md)
+- [Delivering an exceptional accessibility experience](../accessibility/delivering_an_exceptional_accessibility_experience.md)
   Make improvements to your app’s interaction model to support assistive technologies such as VoiceOver.
 ### Elements
 - [class UIAccessibilityElement](uiaccessibilityelement.md)

@@ -18,7 +18,7 @@ var displayedProperties: [NSNumber]? { get set }
 
 #### Discussion
 
-Objects in the array are instances of [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) that represent [`ABPropertyID`](https://developer.apple.com/documentation/AddressBook/ABPropertyID) values.
+Objects in the array are instances of [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) that represent [`ABPropertyID`](https://developer.apple.com/documentation/addressbook/abpropertyid) values.
 
 The name property is always displayed if available.
 

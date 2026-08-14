@@ -56,7 +56,7 @@ var body: some View {
 
 The system may interpret the order of items as they appear in the `buttons` array to accommodate platform conventions. In this example, the Cancel button is the first member of the array, but the action sheet puts it in its standard position at the bottom of the sheet.
 
-![An action sheet with the title Resume Workout Recording in bold text and the message Choose a destination for workout data in smaller text. Below the text, three buttons: a destructive Overwrite Current Workout button in red, a default-styled Overwrite Current Workout button, and a Cancel button, farther below and set off in its own button group.](https://docs-assets.developer.apple.com/published/a3c92b06211f235c3d45d5ded73eaa12/SwiftUI-ActionSheet-cancel-and-destructive%402x.png)
+![An action sheet with the title Resume Workout Recording in bold text and the message Choose a destination for workout data in smaller text. Below the text, three buttons: a destructive Overwrite Current Workout button in red, a default-styled Overwrite Current Workout button, and a Cancel button, farther below and set off in its own button group.](/images/com.apple.SwiftUI/SwiftUI-ActionSheet-cancel-and-destructive@2x.png)
 
 ## Topics
 

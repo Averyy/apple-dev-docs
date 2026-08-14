@@ -25,7 +25,7 @@ var objectID: TKToken.ObjectID { get }
 - [var label: String?](tktokenkeychainitem/label.md)
   The user-visible label for the keychain item.
 - [var constraints: [NSNumber : Any]?](tktokenkeychainitem/constraints.md)
-  Access constraints for the keychain item, keyed by [`TKTokenOperation`](tktokenoperation.md) values wrapped in [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) objects.
+  Access constraints for the keychain item, keyed by [`TKTokenOperation`](tktokenoperation.md) values wrapped in [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) objects.
 
 
 ---

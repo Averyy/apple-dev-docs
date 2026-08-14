@@ -18,7 +18,7 @@ class CLKComplicationTemplateGraphicCornerStackText
 
 This template belongs to the [`CLKComplicationFamily.graphicCorner`](clkcomplicationfamily/graphiccorner.md) family.  shows the layout of the image and where the template might appear on the clock face.
 
-![Diagram showing the layout of the outer and inner text.](https://docs-assets.developer.apple.com/published/e4f82129b55b2d9a2d4d7e333dec8b0e/media-3030692%402x.png)
+![Diagram showing the layout of the outer and inner text.](/images/com.apple.clockkit/media-3030692@2x.png)
 
 The system always displays the outer text as white. The inner text can be multicolored.
 
@@ -38,13 +38,13 @@ The system always displays the outer text as white. The inner text can be multic
 ### Inherits From
 - [CLKComplicationTemplate](clkcomplicationtemplate.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCopying](../Foundation/NSCopying.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCopying](../foundation/nscopying.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

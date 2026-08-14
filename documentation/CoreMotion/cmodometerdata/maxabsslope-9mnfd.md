@@ -21,7 +21,7 @@ var maxAbsSlope: Double? { get }
 
 #### Discussion
 
-If the maximum absolute slope is invalid due to low GPS accuracy, this property is [`nil`](https://developer.apple.com/documentation/ObjectiveC/nil-227m0).
+If the maximum absolute slope is invalid due to low GPS accuracy, this property is [`nil`](https://developer.apple.com/documentation/objectivec/nil-227m0).
 
 ## See Also
 

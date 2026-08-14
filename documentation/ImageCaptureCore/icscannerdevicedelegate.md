@@ -36,7 +36,7 @@ protocol ICScannerDeviceDelegate : ICDeviceDelegate
 
 ### Inherits From
 - [ICDeviceDelegate](icdevicedelegate.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

@@ -54,7 +54,7 @@ srcBuffer.withUnsafeBufferPointer { src in
 
 ## Parameters
 
-- `body`: A closure with an [`UnsafeBufferPointer`](https://developer.apple.com/documentation/Swift/UnsafeBufferPointer) parameter that points to the contiguous storage for the pixel buffer.
+- `body`: A closure with an [`UnsafeBufferPointer`](https://developer.apple.com/documentation/swift/unsafebufferpointer) parameter that points to the contiguous storage for the pixel buffer.
 
 
 ---

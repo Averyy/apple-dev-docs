@@ -28,8 +28,8 @@ protocol MapSelectable : Hashable
 ## Relationships
 
 ### Inherits From
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
 ### Conforming Types
 - [MapSelection](mapselection.md)
 

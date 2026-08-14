@@ -7,7 +7,6 @@ The individual parts of the MMS message.
 
 **Availability**:
 - iOS 26.0+
-- iPadOS 26.0+
 
 ## Declaration
 

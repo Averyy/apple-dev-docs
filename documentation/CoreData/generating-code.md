@@ -81,7 +81,7 @@ To select a code generation option:
 1. Select an entity from the Entities list.
 2. In the Data Model inspector, below Class, the Codegen pop-up menu offers three options: Manual/None, Class Definition, and Category/Extension.
 
-![A screenshot of the Data Model inspector showing the attributes of the Quake entity and the possible Codegen options.](https://docs-assets.developer.apple.com/published/00f96906a1cfaa0ed2ea5472c9b7c9c5/media-3839162%402x.png)
+![A screenshot of the Data Model inspector showing the attributes of the Quake entity and the possible Codegen options.](/images/com.apple.coredata/media-3839162@2x.png)
 
 The sections that follow describe circumstances for choosing each option.
 
@@ -107,7 +107,7 @@ To generate the class file initially, do the following:
 
 You can now see and edit the class file in your project source list.
 
-![A screenshot showing the file that Xcode generates in the Project navigator.](https://docs-assets.developer.apple.com/published/d96f504d070eadbb154c3c83a1956b59/media-3839163%402x.png)
+![A screenshot showing the file that Xcode generates in the Project navigator.](/images/com.apple.coredata/media-3839163@2x.png)
 
 ###### Manage Both Files Manually
 
@@ -122,7 +122,7 @@ To generate the class and properties files initially:
 
 You can now see and edit both the class and properties files in your project source list.
 
-![A screenshot showing the two files that Xcode generates in the Project navigator.](https://docs-assets.developer.apple.com/published/b094b1679caed0947ffc49892d36fde3/media-3839164%402x.png)
+![A screenshot showing the two files that Xcode generates in the Project navigator.](/images/com.apple.coredata/media-3839164@2x.png)
 
 > **Note**:  To regenerate class and properties files at any time, choose Editor > Create NSManagedObject Subclass. Be aware that the new files overwrite any existing files at the target location.
 

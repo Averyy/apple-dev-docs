@@ -6,14 +6,14 @@ A legacy, informal protocol that Apple doesn’t recommend for active use.
 
 #### Overview
 
-The `NSAccessibility` informal protocol defines an old, key-based API. For the most part, Apple doesn’t recommend using this API. Use the method-based API in [`NSAccessibilityProtocol`](nsaccessibilityprotocol.md) instead. However, there are a few methods and properties that are still relevant. You can combine the [`accessibilityHitTest(_:)`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class/accessibilityHitTest(_:)) method, and the [`accessibilityFocusedUIElement`](nsaccessibilitylayoutarea/accessibilityfocuseduielement.md) and [`accessibilityNotifiesWhenDestroyed`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class/accessibilityNotifiesWhenDestroyed) properties with the new [`NSAccessibilityProtocol`](nsaccessibilityprotocol.md) protocol.
+The `NSAccessibility` informal protocol defines an old, key-based API. For the most part, Apple doesn’t recommend using this API. Use the method-based API in [`NSAccessibilityProtocol`](nsaccessibilityprotocol.md) instead. However, there are a few methods and properties that are still relevant. You can combine the [`accessibilityHitTest(_:)`](https://developer.apple.com/documentation/objectivec/nsobject-swift.class/accessibilityhittest(_:)) method, and the [`accessibilityFocusedUIElement`](nsaccessibilitylayoutarea/accessibilityfocuseduielement.md) and [`accessibilityNotifiesWhenDestroyed`](https://developer.apple.com/documentation/objectivec/nsobject-swift.class/accessibilitynotifieswhendestroyed) properties with the new [`NSAccessibilityProtocol`](nsaccessibilityprotocol.md) protocol.
 
 ## Topics
 
 ### Available Methods and Properties
-- [var accessibilityFocusedUIElement: Any?](../ObjectiveC/NSObject-swift.class/accessibilityFocusedUIElement.md)
-- [func accessibilityHitTest(NSPoint) -> Any?](../ObjectiveC/NSObject-swift.class/accessibilityHitTest(_:).md)
-- [var accessibilityNotifiesWhenDestroyed: Bool](../ObjectiveC/NSObject-swift.class/accessibilityNotifiesWhenDestroyed.md)
+- [var accessibilityFocusedUIElement: Any?](../objectivec/nsobject-swift.class/accessibilityfocuseduielement.md)
+- [func accessibilityHitTest(NSPoint) -> Any?](../objectivec/nsobject-swift.class/accessibilityhittest(_:).md)
+- [var accessibilityNotifiesWhenDestroyed: Bool](../objectivec/nsobject-swift.class/accessibilitynotifieswhendestroyed.md)
   A Boolean value that indicates whether a custom accessibility object sends a notification when its corresponding UI element is destroyed.
 ### Constants
 - [Standard Attributes](standard-attributes.md)
@@ -67,33 +67,33 @@ The `NSAccessibility` informal protocol defines an old, key-based API. For the m
 - [Actions](actions.md)
   Standard actions that accessibility objects can perform.
 ### Deprecated
-- [func accessibilityActionDescription(NSAccessibility.Action) -> String?](../ObjectiveC/NSObject-swift.class/accessibilityActionDescription(_:).md)
+- [func accessibilityActionDescription(NSAccessibility.Action) -> String?](../objectivec/nsobject-swift.class/accessibilityactiondescription(_:).md)
   Returns a localized description of the specified action.
-- [func accessibilityActionNames() -> [NSAccessibility.Action]](../ObjectiveC/NSObject-swift.class/accessibilityActionNames.md)
+- [func accessibilityActionNames() -> [NSAccessibility.Action]](../objectivec/nsobject-swift.class/accessibilityactionnames.md)
   Returns an array of action names supported by the accessibility element.
-- [func accessibilityArrayAttributeCount(NSAccessibility.Attribute) -> Int](../ObjectiveC/NSObject-swift.class/accessibilityArrayAttributeCount(_:).md)
+- [func accessibilityArrayAttributeCount(NSAccessibility.Attribute) -> Int](../objectivec/nsobject-swift.class/accessibilityarrayattributecount(_:).md)
   Returns the count of the specified accessibility array attribute.
-- [func accessibilityArrayAttributeValues(NSAccessibility.Attribute, index: Int, maxCount: Int) -> [Any]](../ObjectiveC/NSObject-swift.class/accessibilityArrayAttributeValues(_:index:maxCount:).md)
+- [func accessibilityArrayAttributeValues(NSAccessibility.Attribute, index: Int, maxCount: Int) -> [Any]](../objectivec/nsobject-swift.class/accessibilityarrayattributevalues(_:index:maxcount:).md)
   Returns a subarray of values of an accessibility array attribute.
-- [func accessibilityAttributeNames() -> [NSAccessibility.Attribute]](../ObjectiveC/NSObject-swift.class/accessibilityAttributeNames.md)
+- [func accessibilityAttributeNames() -> [NSAccessibility.Attribute]](../objectivec/nsobject-swift.class/accessibilityattributenames.md)
   Returns an array of attribute names supported by the receiver.
-- [func accessibilityAttributeValue(NSAccessibility.Attribute) -> Any?](../ObjectiveC/NSObject-swift.class/accessibilityAttributeValue(_:).md)
+- [func accessibilityAttributeValue(NSAccessibility.Attribute) -> Any?](../objectivec/nsobject-swift.class/accessibilityattributevalue(_:).md)
   Returns the value of the specified attribute in the receiver.
-- [func accessibilityAttributeValue(NSAccessibility.ParameterizedAttribute, forParameter: Any?) -> Any?](../ObjectiveC/NSObject-swift.class/accessibilityAttributeValue(_:forParameter:).md)
+- [func accessibilityAttributeValue(NSAccessibility.ParameterizedAttribute, forParameter: Any?) -> Any?](../objectivec/nsobject-swift.class/accessibilityattributevalue(_:forparameter:).md)
   Returns the value of the receiver’s parameterized attribute corresponding to the specified attribute name and parameter.
-- [func accessibilityIndex(ofChild: Any) -> Int](../ObjectiveC/NSObject-swift.class/accessibilityIndex(ofChild:).md)
+- [func accessibilityIndex(ofChild: Any) -> Int](../objectivec/nsobject-swift.class/accessibilityindex(ofchild:).md)
   Returns the index of the specified accessibility child in the parent.
-- [func accessibilityIsAttributeSettable(NSAccessibility.Attribute) -> Bool](../ObjectiveC/NSObject-swift.class/accessibilityIsAttributeSettable(_:).md)
+- [func accessibilityIsAttributeSettable(NSAccessibility.Attribute) -> Bool](../objectivec/nsobject-swift.class/accessibilityisattributesettable(_:).md)
   Returns a Boolean value that indicates whether the value for the specified attribute in the receiver can be set.
-- [func accessibilityIsIgnored() -> Bool](../ObjectiveC/NSObject-swift.class/accessibilityIsIgnored.md)
+- [func accessibilityIsIgnored() -> Bool](../objectivec/nsobject-swift.class/accessibilityisignored.md)
   Returns a Boolean value indicating whether the receiver should be ignored in the parent-child accessibility hierarchy.
-- [func accessibilityParameterizedAttributeNames() -> [NSAccessibility.ParameterizedAttribute]](../ObjectiveC/NSObject-swift.class/accessibilityParameterizedAttributeNames.md)
+- [func accessibilityParameterizedAttributeNames() -> [NSAccessibility.ParameterizedAttribute]](../objectivec/nsobject-swift.class/accessibilityparameterizedattributenames.md)
   Returns a list of parameterized attribute names supported by the receiver.
-- [func accessibilityPerformAction(NSAccessibility.Action)](../ObjectiveC/NSObject-swift.class/accessibilityPerformAction(_:).md)
+- [func accessibilityPerformAction(NSAccessibility.Action)](../objectivec/nsobject-swift.class/accessibilityperformaction(_:).md)
   Performs the action associated with the specified action.
-- [func accessibilitySetOverrideValue(Any?, forAttribute: NSAccessibility.Attribute) -> Bool](../ObjectiveC/NSObject-swift.class/accessibilitySetOverrideValue(_:forAttribute:).md)
+- [func accessibilitySetOverrideValue(Any?, forAttribute: NSAccessibility.Attribute) -> Bool](../objectivec/nsobject-swift.class/accessibilitysetoverridevalue(_:forattribute:).md)
   Overrides the specified attribute in the receiver or adds it if it does not exist, and sets its value to the specified value.
-- [func accessibilitySetValue(Any?, forAttribute: NSAccessibility.Attribute)](../ObjectiveC/NSObject-swift.class/accessibilitySetValue(_:forAttribute:).md)
+- [func accessibilitySetValue(Any?, forAttribute: NSAccessibility.Attribute)](../objectivec/nsobject-swift.class/accessibilitysetvalue(_:forattribute:).md)
   Sets the value of the specified attribute in the receiver to the specified value.
 
 ## See Also

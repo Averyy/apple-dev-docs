@@ -7,7 +7,7 @@ An atom that specifies the characteristics of an entire QuickTime movie.
 
 #### Overview
 
-For more information, see [`Movie header atom ('mvhd')`](movie_header_atom.md).
+For more information, see [`Movie header atom`](movie_header_atom.md).
 
 ## See Also
 

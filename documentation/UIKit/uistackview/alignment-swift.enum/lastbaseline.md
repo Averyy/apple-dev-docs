@@ -22,7 +22,7 @@ case lastBaseline
 
 The following image shows an example of a horizontal stack view that uses the [`UIStackView.Alignment.lastBaseline`](uistackview/alignment-swift.enum/lastbaseline.md) alignment.
 
-![A horizontal stack view with three text-based subviews. The stack view aligns the subviews according to their last baseline.](https://docs-assets.developer.apple.com/published/17ca974a10a720d699167fb56968c065/media-2557478%402x.png)
+![A horizontal stack view with three text-based subviews. The stack view aligns the subviews according to their last baseline.](/images/com.apple.uikit/media-2557478@2x.png)
 
 ## See Also
 

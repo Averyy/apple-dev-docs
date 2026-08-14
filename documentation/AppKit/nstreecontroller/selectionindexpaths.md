@@ -16,7 +16,7 @@ var selectionIndexPaths: [IndexPath] { get }
 
 #### Discussion
 
-This property contains an array containing [`NSIndexPath`](https://developer.apple.com/documentation/Foundation/NSIndexPath) objects for each of the selected objects in the tree controller’s content. This property is observable using key-value observing.
+This property contains an array containing [`NSIndexPath`](https://developer.apple.com/documentation/foundation/nsindexpath) objects for each of the selected objects in the tree controller’s content. This property is observable using key-value observing.
 
 ## See Also
 

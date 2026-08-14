@@ -31,21 +31,21 @@ enum Code
 - [AAAttributionError.Code.platformNotSupported](aaattributionerror/code/platformnotsupported.md)
   The server is unable to provide a token because of an unsupported operating system.
 ### Getting information about error codes
-- [var localizedDescription: String](../Swift/Error/localizedDescription.md)
+- [var localizedDescription: String](../swift/error/localizeddescription.md)
   Retrieve the localized description for this error.
 ### Comparing errors
-- [func != ((), ()) -> Bool](../Swift/!=(_:_:)-18co7.md)
+- [func != ((), ()) -> Bool](../swift/!=(_:_:)-18co7.md)
   Returns a Boolean value indicating whether any corresponding components of the two tuples are not equal.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../Swift/BitwiseCopyable.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [RawRepresentable](../Swift/RawRepresentable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [BitwiseCopyable](../swift/bitwisecopyable.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [RawRepresentable](../swift/rawrepresentable.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

@@ -24,9 +24,9 @@ Thread safe starting in OS X v10.2.
 
 ## Parameters
 
-- `theAppleEvent`: A pointer to the Apple event to add an attribute to. See the   data type.
-- `theAEKeyword`: See  .
-- `typeCode`: The descriptor type for the attribute to add. For a list of AppleScript’s predefined descriptor types, see  . See  .
+- `theAppleEvent`: A pointer to the Apple event to add an attribute to. See the [`AppleEvent`](appleevent.md) data type.
+- `theAEKeyword`: The keyword for the attribute to add. If the Apple event already includes an attribute with this keyword, the attribute is replaced. Some keyword constants are described in [`Keyword Attribute Constants`](apple_events/1542920-keyword_attribute_constants.md). See [`AEKeyword`](aekeyword.md).
+- `typeCode`: The descriptor type for the attribute to add. For a list of AppleScript’s predefined descriptor types, see [`Descriptor Type Constants`](apple_events/1542788-descriptor_type_constants.md). See [`DescType`](desctype.md).
 - `dataPtr`: A pointer to the data for the attribute to add.
 - `dataSize`: The length, in bytes, of the data for the attribute to add.
 

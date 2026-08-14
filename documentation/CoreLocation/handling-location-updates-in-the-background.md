@@ -21,7 +21,7 @@ If you need background location updates for an iOS, iPadOS, or watchOS app, upda
 
 The background mode capability lets the system know whether your app uses background updates. To add this capability, navigate to the Signing & Capabilities tab of your app target and enable the Location updates option. When you enable this capability, Xcode updates your app’s `Info.plist` file with the keys needed to indicate your app supports background updates.
 
-![The capabilities pane in Xcode shows the Background Modes capability with the Location updates option selected.](https://docs-assets.developer.apple.com/published/c0f8aa3e82bfe5772ba30b60f500dfe6/media-4061646%402x.png)
+![The capabilities pane in Xcode shows the Background Modes capability with the Location updates option selected.](/images/com.apple.corelocation/media-4061646@2x.png)
 
 ##### Receive Location Updates in the Background
 

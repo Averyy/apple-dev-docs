@@ -27,7 +27,7 @@ For example, configure a workflow to perform the build, test, and archive action
 
 A good practice to follow when using Xcode Cloud is to create a set of workflows with each performing different actions. For example, you could have one workflow for building and testing actions whenever there’s a change to a branch or pull request, and you could have a second workflow that performs build, test, analyze, and archive actions whenever you merge code into your `main` branch.
 
-![An illustration that shows the different steps Xcode Cloud performs as part of an action.](https://docs-assets.developer.apple.com/published/0afec4810e2050809f0c42ba211c2a3f/Configuring-Your-Xcode-Cloud-Workflow-s-Actions-1%402x.png)
+![An illustration that shows the different steps Xcode Cloud performs as part of an action.](/images/com.apple.Xcode/Configuring-Your-Xcode-Cloud-Workflow-s-Actions-1@2x.png)
 
 When Xcode Cloud performs an action, it:
 
@@ -46,7 +46,7 @@ To add an action to a workflow, first open or create a workflow in Xcode or in t
 
 The following screenshot shows Xcode’s Edit Workflow sheet for a workflow that performs all four available actions:
 
-![A screenshot of Xcode’s Edit Workflow sheet for a workflow that performs all four available actions.](https://docs-assets.developer.apple.com/published/55b95c6caf84cce6829eaae92d8fb8e8/Configuring-Your-Xcode-Cloud-Workflow-s-Actions-2%402x.png)
+![A screenshot of Xcode’s Edit Workflow sheet for a workflow that performs all four available actions.](/images/com.apple.Xcode/Configuring-Your-Xcode-Cloud-Workflow-s-Actions-2@2x.png)
 
 ##### Add a Build Action
 
@@ -61,7 +61,7 @@ To configure a workflow’s build action to a workflow:
 
 The following screenshot shows an Xcode Cloud workflow for the [`Fruta app`](https://developer.apple.comhttps://developer.apple.com/documentation/swiftui/fruta_building_a_feature-rich_app_with_swiftui). It includes two build actions: one action builds the iOS app, and the other action builds the macOS app:
 
-![A screenshot that shows a workflow in Xcode with two build actions: one build action for the macOS app and one build action for the iOS app.](https://docs-assets.developer.apple.com/published/da28e12048d60f6e72c45475abf22e30/Configuring-Your-Xcode-Cloud-Workflow-s-Actions-3%402x.png)
+![A screenshot that shows a workflow in Xcode with two build actions: one build action for the macOS app and one build action for the iOS app.](/images/com.apple.Xcode/Configuring-Your-Xcode-Cloud-Workflow-s-Actions-3@2x.png)
 
 When Xcode Cloud performs a build action, it accesses your source code and runs the `xcodebuild build` command to create the build product. Upon completion, Xcode Cloud makes the following artifacts available: the build product, build logs, and the result bundle.
 
@@ -85,7 +85,7 @@ To add a test action to a workflow:
 
 The following screenshot shows an Xcode Cloud workflow for the [`Fruta app`](https://developer.apple.comhttps://developer.apple.com/documentation/swiftui/fruta_building_a_feature-rich_app_with_swiftui). It includes two test actions: one action tests the iOS app, and the other action tests the macOS app.
 
-![A screenshot that shows a workflow in Xcode with two test actions: a test action for the iOS app and another test action for the macOS app.](https://docs-assets.developer.apple.com/published/0a4d155813ece3cbc70d8f2e4a216021/Configuring-Your-Xcode-Cloud-Workflow-s-Actions-4%402x.png)
+![A screenshot that shows a workflow in Xcode with two test actions: a test action for the iOS app and another test action for the macOS app.](/images/com.apple.Xcode/Configuring-Your-Xcode-Cloud-Workflow-s-Actions-4@2x.png)
 
 A test action runs in two separate phases: In the first phase, Xcode Cloud accesses your source code and creates test products using the `xcodebuild build-for-testing` command. In the second phase, Xcode Cloud uses the test products it creates in the first phase to run your tests using the `xcodebuild test-without-building` command.
 

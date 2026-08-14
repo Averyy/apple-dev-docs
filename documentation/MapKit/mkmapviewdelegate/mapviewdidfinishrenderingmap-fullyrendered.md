@@ -21,12 +21,12 @@ optional func mapViewDidFinishRenderingMap(_ mapView: MKMapView, fullyRendered: 
 
 #### Discussion
 
-This method lets you know when the map view finishes rendering all of the currently visible tiles to the best of its ability. The map view calls this method regardless of whether the view renders all tiles successfully. If there are errors loading one or more tiles that prevent the map view from rendering them, MapKit sets the `fullyRendered` parameter to [`false`](https://developer.apple.com/documentation/Swift/false).
+This method lets you know when the map view finishes rendering all of the currently visible tiles to the best of its ability. The map view calls this method regardless of whether the view renders all tiles successfully. If there are errors loading one or more tiles that prevent the map view from rendering them, MapKit sets the `fullyRendered` parameter to [`false`](https://developer.apple.com/documentation/swift/false).
 
 ## Parameters
 
 - `mapView`: The map view rendering its tiles.
-- `fullyRendered`: This parameter is [`true`](https://developer.apple.com/documentation/Swift/true) if the map view is able to render all tiles completely, or [`false`](https://developer.apple.com/documentation/Swift/false) if errors prevent the map view from rendering all tiles.
+- `fullyRendered`: This parameter is [`true`](https://developer.apple.com/documentation/swift/true) if the map view is able to render all tiles completely, or [`false`](https://developer.apple.com/documentation/swift/false) if errors prevent the map view from rendering all tiles.
 
 ## See Also
 

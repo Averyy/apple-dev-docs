@@ -16,7 +16,7 @@ func setMirroring(_ b: Bool)
 
 ## Parameters
 
-- `b`: The default setting is [`true`](https://developer.apple.com/documentation/Swift/true).
+- `b`: The default setting is [`true`](https://developer.apple.com/documentation/swift/true).
 
 ## See Also
 

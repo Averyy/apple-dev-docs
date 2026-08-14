@@ -20,7 +20,7 @@ var preferredFrameRateRange: CAFrameRateRange { get set }
 
 #### Discussion
 
-By default, the value of this property is [`default`](https://developer.apple.com/documentation/QuartzCore/CAFrameRateRange/default), which doesn’t request any specific frame rate range.
+By default, the value of this property is [`default`](https://developer.apple.com/documentation/quartzcore/caframeraterange/default), which doesn’t request any specific frame rate range.
 
 ## See Also
 

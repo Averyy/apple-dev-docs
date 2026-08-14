@@ -16,7 +16,7 @@ func indexPathsToDeleteForSupplementaryView(ofKind elementKind: NSCollectionView
 
 #### Return Value
 
-The set of [`NSIndexPath`](https://developer.apple.com/documentation/Foundation/NSIndexPath) objects representing the supplementary views to remove, or an empty array if you do not want to remove any supplementary views.
+The set of [`NSIndexPath`](https://developer.apple.com/documentation/foundation/nsindexpath) objects representing the supplementary views to remove, or an empty array if you do not want to remove any supplementary views.
 
 #### Discussion
 

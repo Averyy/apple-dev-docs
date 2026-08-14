@@ -16,7 +16,7 @@ var hasConfigureSheet: Bool { get }
 
 #### Discussion
 
-If you provide a configuration sheet in your bundle, override this method and return [`true`](https://developer.apple.com/documentation/Swift/true).
+If you provide a configuration sheet in your bundle, override this method and return [`true`](https://developer.apple.com/documentation/swift/true).
 
 ## See Also
 

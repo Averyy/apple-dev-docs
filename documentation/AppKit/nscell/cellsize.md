@@ -16,7 +16,7 @@ var cellSize: NSSize { get }
 
 #### Discussion
 
-This property contains the smallest cell size (in points) required to draw its contents. If the cell is not a text or image cell, the cell size is set to (`10000`, `10000`). If an image cell does not yet have an associated image, the cell size is [`NSZeroSize`](https://developer.apple.com/documentation/Foundation/NSZeroSize).This method takes into account of the size of the image or text in the cell along with any margin areas required by the cell’s border, if any.
+This property contains the smallest cell size (in points) required to draw its contents. If the cell is not a text or image cell, the cell size is set to (`10000`, `10000`). If an image cell does not yet have an associated image, the cell size is [`NSZeroSize`](https://developer.apple.com/documentation/foundation/nszerosize).This method takes into account of the size of the image or text in the cell along with any margin areas required by the cell’s border, if any.
 
 ## See Also
 

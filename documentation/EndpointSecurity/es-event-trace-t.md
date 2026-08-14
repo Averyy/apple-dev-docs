@@ -32,7 +32,7 @@ Endpoint Security may generate this event multiple times for a single trace atte
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../Swift/BitwiseCopyable.md)
+- [BitwiseCopyable](../swift/bitwisecopyable.md)
 
 ## See Also
 

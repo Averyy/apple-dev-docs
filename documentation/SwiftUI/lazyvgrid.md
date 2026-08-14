@@ -56,7 +56,7 @@ struct VerticalSmileys: View {
 
 For each row in the grid, the first column shows a Unicode code point from the “Smileys” group, and the second shows its corresponding emoji:
 
-![A screenshot of a colunb of hexadecimal numbers to the left of a column](https://docs-assets.developer.apple.com/published/fe2b80b65b59918ba760ae0b7c36e15c/LazyVGrid-1-iOS%402x.png)
+![A screenshot of a colunb of hexadecimal numbers to the left of a column](/images/com.apple.SwiftUI/LazyVGrid-1-iOS@2x.png)
 
 You can achieve a similar layout using a [`Grid`](grid.md) container. Unlike a lazy grid, which creates child views only when SwiftUI needs to display them, a regular grid creates all of its child views right away. This enables the grid to provide better support for cell spacing and alignment. Only use a lazy grid if profiling your app shows that a [`Grid`](grid.md) view performs poorly because it tries to load too many views at once.
 

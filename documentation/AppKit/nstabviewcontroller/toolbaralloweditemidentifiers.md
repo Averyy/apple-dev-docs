@@ -17,7 +17,7 @@ func toolbarAllowedItemIdentifiers(_ toolbar: NSToolbar) -> [NSToolbarItem.Ident
 
 #### Return Value
 
-An array of [`NSString`](https://developer.apple.com/documentation/Foundation/NSString) objects, each of which contains an identifier for an available toolbar item. The array must contain all of the items returned by the [`toolbarDefaultItemIdentifiers(_:)`](nstabviewcontroller/toolbardefaultitemidentifiers(_:).md) method.
+An array of [`NSString`](https://developer.apple.com/documentation/foundation/nsstring) objects, each of which contains an identifier for an available toolbar item. The array must contain all of the items returned by the [`toolbarDefaultItemIdentifiers(_:)`](nstabviewcontroller/toolbardefaultitemidentifiers(_:).md) method.
 
 #### Discussion
 

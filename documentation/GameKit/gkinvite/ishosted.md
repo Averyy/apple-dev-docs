@@ -25,7 +25,7 @@ var isHosted: Bool { get }
 
 #### Discussion
 
-If the value of this property is [`true`](https://developer.apple.com/documentation/Swift/true), you host the game on your own servers. If the value is [`false`](https://developer.apple.com/documentation/Swift/false), Game Center hosts the peer-to-peer match on its servers. The default value is [`false`](https://developer.apple.com/documentation/Swift/false).
+If the value of this property is [`true`](https://developer.apple.com/documentation/swift/true), you host the game on your own servers. If the value is [`false`](https://developer.apple.com/documentation/swift/false), Game Center hosts the peer-to-peer match on its servers. The default value is [`false`](https://developer.apple.com/documentation/swift/false).
 
 ## See Also
 

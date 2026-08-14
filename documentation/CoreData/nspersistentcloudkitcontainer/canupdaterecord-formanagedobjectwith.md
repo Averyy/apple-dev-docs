@@ -22,17 +22,17 @@ func canUpdateRecord(forManagedObjectWith objectID: NSManagedObjectID) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/Swift/true) if the user can modify the CloudKit record; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
+[`true`](https://developer.apple.com/documentation/swift/true) if the user can modify the CloudKit record; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
 
 #### Discussion
 
-This method returns [`true`](https://developer.apple.com/documentation/Swift/true) if [`canModifyManagedObjects(in:)`](nspersistentcloudkitcontainer/canmodifymanagedobjects(in:).md) returns [`true`](https://developer.apple.com/documentation/Swift/true) and any of the following conditions are true:
+This method returns [`true`](https://developer.apple.com/documentation/swift/true) if [`canModifyManagedObjects(in:)`](nspersistentcloudkitcontainer/canmodifymanagedobjects(in:).md) returns [`true`](https://developer.apple.com/documentation/swift/true) and any of the following conditions are true:
 
 - `objectID` is a temporary object identifier.
 - The persistent store that contains the managed object isn’t using CloudKit.
 - The persistent store manages the user’s private database.
 - The persistent store manages the public database, and the user owns the underlying record or Core Data has yet to save the managed object to iCloud.
-- The persistent store manages the shared database, and the user has the necessary permissions to update the managed object’s underlying record. For more information, see [`CKShare.ParticipantPermission`](https://developer.apple.com/documentation/CloudKit/CKShare/ParticipantPermission).
+- The persistent store manages the shared database, and the user has the necessary permissions to update the managed object’s underlying record. For more information, see [`CKShare.ParticipantPermission`](https://developer.apple.com/documentation/cloudkit/ckshare/participantpermission).
 
 ## Parameters
 

@@ -22,7 +22,7 @@ case stereoPassThrough
 
 #### Discussion
 
-This takes mono and stereo input and passes it to channels 1 and 2 without localization. If the input and output `AudioChannelLayout` differ, mixing happens according to the [`kAudioFormatProperty_MatrixMixMap`](https://developer.apple.com/documentation/AudioToolbox/kAudioFormatProperty_MatrixMixMap) property of the layouts.
+This takes mono and stereo input and passes it to channels 1 and 2 without localization. If the input and output `AudioChannelLayout` differ, mixing happens according to the [`kAudioFormatProperty_MatrixMixMap`](https://developer.apple.com/documentation/audiotoolbox/kaudioformatproperty_matrixmixmap) property of the layouts.
 
 ## See Also
 

@@ -66,10 +66,10 @@ Use a  unique [`id`](photogrammetrysample/id.md) for each [`PhotogrammetrySessio
 ## Relationships
 
 ### Conforms To
-- [Copyable](../Swift/Copyable.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Escapable](../Swift/Escapable.md)
-- [Identifiable](../Swift/Identifiable.md)
+- [Copyable](../swift/copyable.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Escapable](../swift/escapable.md)
+- [Identifiable](../swift/identifiable.md)
 
 ## See Also
 

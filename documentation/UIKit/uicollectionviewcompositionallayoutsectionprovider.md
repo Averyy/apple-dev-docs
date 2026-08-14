@@ -125,7 +125,7 @@ return layout;
 
 UIKit supports automatic trait tracking inside this closure for traits from the `traitCollection` of the `layoutEnvironment` parameter. For more information, see [`Automatic trait tracking`](automatic-trait-tracking.md).
 
-In iOS 27 and later, UIKit supports automatic observation tracking inside this closure when reading properties on objects that use the [`Observable`](https://developer.apple.com/documentation/Observation/Observable) macro. For more information, see [`Automatic observation tracking`](automatic-observation-tracking.md).
+In iOS 27 and later, UIKit supports automatic observation tracking inside this closure when reading properties on objects that use the [`Observable`](https://developer.apple.com/documentation/observation/observable) macro. For more information, see [`Automatic observation tracking`](automatic-observation-tracking.md).
 
 ## See Also
 

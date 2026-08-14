@@ -18,20 +18,20 @@ This sample shows how to build an immersive video playback experience for vision
 
 When it comes to providing immersive video playback on visionOS, there are a few different approaches you can take:
 
-- [`AVKit`](https://developer.apple.com/documentation/AVKit) provides a superior video playback experience in visionOS. With AVKit, you can present an interface that’s consistent with other apps on the system, as it requires the least effort to adopt. For more information on using AVKit in visionOS, see [`Adopting the system player interface in visionOS`](https://developer.apple.com/documentation/AVKit/adopting-the-system-player-interface-in-visionos).
-- [`RealityKit`](https://developer.apple.com/documentation/RealityKit) enables immersive video playback with [`VideoPlayerComponent`](https://developer.apple.com/documentation/RealityKit/VideoPlayerComponent). RealityKit manages changes in immersive viewing mode to preserve motion comfort, but it requires a little more effort to customize playback controls for your experience.
+- [`AVKit`](https://developer.apple.com/documentation/avkit) provides a superior video playback experience in visionOS. With AVKit, you can present an interface that’s consistent with other apps on the system, as it requires the least effort to adopt. For more information on using AVKit in visionOS, see [`Adopting the system player interface in visionOS`](https://developer.apple.com/documentation/avkit/adopting-the-system-player-interface-in-visionos).
+- [`RealityKit`](https://developer.apple.com/documentation/realitykit) enables immersive video playback with [`VideoPlayerComponent`](https://developer.apple.com/documentation/realitykit/videoplayercomponent). RealityKit manages changes in immersive viewing mode to preserve motion comfort, but it requires a little more effort to customize playback controls for your experience.
 
-If you’re already using RealityKit in your app, [`VideoPlayerComponent`](https://developer.apple.com/documentation/RealityKit/VideoPlayerComponent) may be suitable, particularly if your video content is relatively short. In that case, it may not be necessary to offer controls for skipping, or to transition between full immersion and portal window viewing. For design guidance, see Human Interface Guidelines > [`Playing video`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/playing-video#visionOS).
+If you’re already using RealityKit in your app, [`VideoPlayerComponent`](https://developer.apple.com/documentation/realitykit/videoplayercomponent) may be suitable, particularly if your video content is relatively short. In that case, it may not be necessary to offer controls for skipping, or to transition between full immersion and portal window viewing. For design guidance, see Human Interface Guidelines > [`Playing video`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/playing-video#visionOS).
 
 #### Configure Video Player to Play Immersive Media
 
-[`VideoPlayerComponent`](https://developer.apple.com/documentation/RealityKit/VideoPlayerComponent) relies on three pairs of properties to play immersive media. For each pair, one property is used for mutation, and another for introspection.
+[`VideoPlayerComponent`](https://developer.apple.com/documentation/realitykit/videoplayercomponent) relies on three pairs of properties to play immersive media. For each pair, one property is used for mutation, and another for introspection.
 
 | Mutation | Introspection |
 | --- | --- |
-| [`desiredImmersiveViewingMode`](https://developer.apple.com/documentation/RealityKit/VideoPlayerComponent/desiredImmersiveViewingMode) | [`immersiveViewingMode`](https://developer.apple.com/documentation/RealityKit/VideoPlayerComponent/immersiveViewingMode-swift.property) |
-| [`desiredSpatialVideoMode`](https://developer.apple.com/documentation/RealityKit/VideoPlayerComponent/desiredSpatialVideoMode) | [`spatialVideoMode`](https://developer.apple.com/documentation/RealityKit/VideoPlayerComponent/spatialVideoMode-swift.property) |
-| [`desiredViewingMode`](https://developer.apple.com/documentation/RealityKit/VideoPlayerComponent/desiredViewingMode) | [`viewingMode`](https://developer.apple.com/documentation/RealityKit/VideoPlayerComponent/viewingMode) |
+| [`desiredImmersiveViewingMode`](https://developer.apple.com/documentation/realitykit/videoplayercomponent/desiredimmersiveviewingmode) | [`immersiveViewingMode`](https://developer.apple.com/documentation/realitykit/videoplayercomponent/immersiveviewingmode-swift.property) |
+| [`desiredSpatialVideoMode`](https://developer.apple.com/documentation/realitykit/videoplayercomponent/desiredspatialvideomode) | [`spatialVideoMode`](https://developer.apple.com/documentation/realitykit/videoplayercomponent/spatialvideomode-swift.property) |
+| [`desiredViewingMode`](https://developer.apple.com/documentation/realitykit/videoplayercomponent/desiredviewingmode) | [`viewingMode`](https://developer.apple.com/documentation/realitykit/videoplayercomponent/viewingmode) |
 
 The following code configures a video player to present spatial video within a portal window:
 
@@ -49,18 +49,18 @@ Here, the app uses `desiredImmersiveViewingMode` to render the content as a port
 
 #### Size Video for the Shared Space
 
-When presented in an immersive space, [`VideoPlayerComponent`](https://developer.apple.com/documentation/RealityKit/VideoPlayerComponent) automatically manages projection of the video content. In a window, however, additional considerations are necessary to achieve best results.
+When presented in an immersive space, [`VideoPlayerComponent`](https://developer.apple.com/documentation/realitykit/videoplayercomponent) automatically manages projection of the video content. In a window, however, additional considerations are necessary to achieve best results.
 
-Because portal-based presentations prefer a 16:9 aspect ratio, the sample uses [`aspectRatio(_:contentMode:)`](https://developer.apple.com/documentation/SwiftUI/View/aspectRatio(_:contentMode:)):
+Because portal-based presentations prefer a 16:9 aspect ratio, the sample uses [`aspectRatio(_:contentMode:)`](https://developer.apple.com/documentation/swiftui/view/aspectratio(_:contentmode:)):
 
 ```swift
 VideoPlayerView(videoModel: selection)
     .aspectRatio(CGSize(width: 16, height: 9), contentMode: .fit)
 ```
 
-The sample uses the [`Entity`](https://developer.apple.com/documentation/RealityKit/Entity) that contains the `VideoPlayerComponent` to scale the player to fit within the default scene size. When correctly configured, the spatial video has feathered edges with rounded corners.
+The sample uses the [`Entity`](https://developer.apple.com/documentation/realitykit/entity) that contains the `VideoPlayerComponent` to scale the player to fit within the default scene size. When correctly configured, the spatial video has feathered edges with rounded corners.
 
-The sample uses a [`GeometryReader3D`](https://developer.apple.com/documentation/SwiftUI/GeometryReader3D) to determine the scene size. It then calls `scaleToFit(_:proxy:content:)` from both the `make` and `update` closures of the root [`RealityView`](https://developer.apple.com/documentation/RealityKit/RealityView), which ensures that the video properly resizes with the content window.
+The sample uses a [`GeometryReader3D`](https://developer.apple.com/documentation/swiftui/geometryreader3d) to determine the scene size. It then calls `scaleToFit(_:proxy:content:)` from both the `make` and `update` closures of the root [`RealityView`](https://developer.apple.com/documentation/realitykit/realityview), which ensures that the video properly resizes with the content window.
 
 ```swift
 GeometryReader3D { geometry in
@@ -73,7 +73,7 @@ GeometryReader3D { geometry in
     }
 ```
 
-The `scaleToFit(_:proxy:content:)` scales the [`playerScreenSize`](https://developer.apple.com/documentation/RealityKit/VideoPlayerComponent/playerScreenSize) to fit the size of the containing scene.
+The `scaleToFit(_:proxy:content:)` scales the [`playerScreenSize`](https://developer.apple.com/documentation/realitykit/videoplayercomponent/playerscreensize) to fit the size of the containing scene.
 
 ```swift
 func scaleToFit(_ entity: Entity, proxy: GeometryProxy3D, content: RealityViewContent) {
@@ -105,7 +105,7 @@ For playback in the *Shared Space*, [`ornaments`](https://developer.apple.comhtt
 }
 ```
 
-The *Full Space* presentation uses the same `TransportView`, but it’s incorporated through composition instead. It is added to an outer type, `ImmersiveControlsView`, which is then placed within a [`ViewAttachmentComponent`](https://developer.apple.com/documentation/RealityKit/ViewAttachmentComponent) for use in a [`RealityView`](https://developer.apple.com/documentation/RealityKit/RealityView):
+The *Full Space* presentation uses the same `TransportView`, but it’s incorporated through composition instead. It is added to an outer type, `ImmersiveControlsView`, which is then placed within a [`ViewAttachmentComponent`](https://developer.apple.com/documentation/realitykit/viewattachmentcomponent) for use in a [`RealityView`](https://developer.apple.com/documentation/realitykit/realityview):
 
 ```swift
 private func updateImmersiveControls(with mitigation: VideoPlayerComponent.VideoComfortMitigation? = nil) {
@@ -120,7 +120,7 @@ private func updateImmersiveControls(with mitigation: VideoPlayerComponent.Video
 
 Because scenes with high motion can lead to motion discomfort, be mindful of motion comfort when presenting media immersively. Two key considerations include: configuring the immersive space properly, and responding to video comfort mitigation events in a timely fashion.
 
-When presenting your content in an [`ImmersiveSpace`](https://developer.apple.com/documentation/SwiftUI/ImmersiveSpace), use a progressive [`ImmersionStyle`](https://developer.apple.com/documentation/SwiftUI/ImmersionStyle) so that a person can turn the Digital Crown to adjust the amount of visible passthrough video:
+When presenting your content in an [`ImmersiveSpace`](https://developer.apple.com/documentation/swiftui/immersivespace), use a progressive [`ImmersionStyle`](https://developer.apple.com/documentation/swiftui/immersionstyle) so that a person can turn the Digital Crown to adjust the amount of visible passthrough video:
 
 ```swift
 PlayerImmersiveSpace(sceneIdentifier: Self.sceneID)
@@ -130,7 +130,7 @@ PlayerImmersiveSpace(sceneIdentifier: Self.sceneID)
     )
 ```
 
-The [`VideoPlayerEvents.VideoComfortMitigationDidOccur`](https://developer.apple.com/documentation/RealityKit/VideoPlayerEvents/VideoComfortMitigationDidOccur) event includes a single property, [`comfortMitigation`](https://developer.apple.com/documentation/RealityKit/VideoPlayerEvents/VideoComfortMitigationDidOccur/comfortMitigation). This event indicates that the system detected high motion and took steps to preserve motion comfort based on the person’s preference. The following shows how the sample app subscribes to this event:
+The [`VideoPlayerEvents.VideoComfortMitigationDidOccur`](https://developer.apple.com/documentation/realitykit/videoplayerevents/videocomfortmitigationdidoccur) event includes a single property, [`comfortMitigation`](https://developer.apple.com/documentation/realitykit/videoplayerevents/videocomfortmitigationdidoccur/comfortmitigation). This event indicates that the system detected high motion and took steps to preserve motion comfort based on the person’s preference. The following shows how the sample app subscribes to this event:
 
 ```swift
 _ = content.subscribe(
@@ -150,19 +150,19 @@ The sample uses this event to advise the person that system mitigation took plac
   Leverage SwiftUI to build an immersive media experience in a multiplatform app.
 - [Displaying video from connected devices](displaying-video-from-connected-devices.md)
   Show video from devices connected with the Developer Strap in your visionOS app.
-- [Rendering stereoscopic video with RealityKit](../RealityKit/rendering-stereoscopic-video-with-realitykit.md)
+- [Rendering stereoscopic video with RealityKit](../realitykit/rendering-stereoscopic-video-with-realitykit.md)
   Render stereoscopic video in visionOS with RealityKit.
-- [Creating a multiview video playback experience in visionOS](../AVKit/creating-a-multiview-video-playback-experience-in-visionos.md)
+- [Creating a multiview video playback experience in visionOS](../avkit/creating-a-multiview-video-playback-experience-in-visionos.md)
   Build an interface that plays multiple videos simultaneously and handles transitions to different experience types gracefully.
-- [Configuring your app for media playback](../AVFoundation/configuring-your-app-for-media-playback.md)
+- [Configuring your app for media playback](../avfoundation/configuring-your-app-for-media-playback.md)
   Configure apps to enable standard media playback behavior.
-- [Adopting the system player interface in visionOS](../AVKit/adopting-the-system-player-interface-in-visionos.md)
+- [Adopting the system player interface in visionOS](../avkit/adopting-the-system-player-interface-in-visionos.md)
   Provide an optimized viewing experience for watching 3D video content.
-- [Controlling the transport behavior of a player](../AVFoundation/controlling-the-transport-behavior-of-a-player.md)
+- [Controlling the transport behavior of a player](../avfoundation/controlling-the-transport-behavior-of-a-player.md)
   Play, pause, and seek through a media presentation.
-- [Monitoring playback progress in your app](../AVFoundation/monitoring-playback-progress-in-your-app.md)
+- [Monitoring playback progress in your app](../avfoundation/monitoring-playback-progress-in-your-app.md)
   Observe the playback of a media asset to update your app’s user-interface state.
-- [Trimming and exporting media in visionOS](../AVKit/trimming-and-exporting-media-in-visionos.md)
+- [Trimming and exporting media in visionOS](../avkit/trimming-and-exporting-media-in-visionos.md)
   Display standard controls in your app to edit the timeline of the currently playing media.
 
 

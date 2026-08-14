@@ -25,7 +25,7 @@ Add a glossary by placing a property list containing the terms and definitions a
 
 The top-level key in a glossary’s property list is a dictionary named `Terms`. Inside that dictionary, nest a single dictionary for each term you want to define. The key for each nested dictionary is the name of the term you’re defining.
 
-![A screen shot showing several terms defined inside the property list editor in Xcode.](https://docs-assets.developer.apple.com/published/be85d4ba0951638e976e6a427712c484/adding-a-glossary-to-a-playground-book-1%402x.png)
+![A screen shot showing several terms defined inside the property list editor in Xcode.](/images/com.apple.Swift-Playgrounds/adding-a-glossary-to-a-playground-book-1@2x.png)
 
 ##### Add Detail Keys to a Terms Definition
 
@@ -37,7 +37,7 @@ The dictionary you use to define a term has three parts. Each part requires a sp
 
 The following image shows the parts of a glossary as they appear in Swift Playgrounds.
 
-![A screenshot of the glossary in Swift Playgrounds. Three parts are highlighted: the term, the definition, and the first-use link.](https://docs-assets.developer.apple.com/published/466f4aba7651840a9b8e4fa2ea51cd1f/adding-a-glossary-to-a-playground-book-2%402x.png)
+![A screenshot of the glossary in Swift Playgrounds. Three parts are highlighted: the term, the definition, and the first-use link.](/images/com.apple.Swift-Playgrounds/adding-a-glossary-to-a-playground-book-2@2x.png)
 
 ##### Add Links to the Terms in Your Prose
 
@@ -55,7 +55,7 @@ order in the code below.
 
 When you tap the rendered link on a page, a popover appears with the definition of the term.
 
-![Screenshot showing the term definition popover for the tapped word “bug” in Swift Playgrounds.](https://docs-assets.developer.apple.com/published/db989e275b9a0a87fb23670a930192f1/adding-a-glossary-to-a-playground-book-3%402x.png)
+![Screenshot showing the term definition popover for the tapped word “bug” in Swift Playgrounds.](/images/com.apple.Swift-Playgrounds/adding-a-glossary-to-a-playground-book-3@2x.png)
 
 ## See Also
 

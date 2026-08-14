@@ -29,8 +29,8 @@ This method applies the zoom blur filter to an image. This effect mimics the zoo
 
 The zoom blur filter uses the following properties:
 
-- **`amount`**: A `float` representing the zoom-in amount as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
-- **`center`**: A set of coordinates marking the center of the image as a [`CGPoint`](https://developer.apple.com/documentation/CoreFoundation/CGPoint).
+- **`amount`**: A `float` representing the zoom-in amount as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
+- **`center`**: A set of coordinates marking the center of the image as a [`CGPoint`](https://developer.apple.com/documentation/corefoundation/cgpoint).
 - **`inputImage`**: A [`CIImage`](ciimage.md) representing the input image to apply the filter to.
 
 The following code creates a filter that adds a zoom blur to the input image:
@@ -46,7 +46,7 @@ The following code creates a filter that adds a zoom blur to the input image:
     }
 ```
 
-![Two photographs of a beach at sunset with multiple palm trees. The photo on the left is clear and crisp. In photo on the right, a zoom blur filter has been applied resulting in a distorted and fuzzy image.](https://docs-assets.developer.apple.com/published/778dded0e09c49a62b4d88af457e50dd/media-3544962%402x.png)
+![Two photographs of a beach at sunset with multiple palm trees. The photo on the left is clear and crisp. In photo on the right, a zoom blur filter has been applied resulting in a distorted and fuzzy image.](/images/com.apple.coreimage/media-3544962@2x.png)
 
 ## See Also
 

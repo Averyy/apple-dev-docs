@@ -8,7 +8,7 @@ Use direct methods to solve systems of equations where the coefficient matrix is
 
 Direct methods offer high-precision solving with a simple API when compared to iterative methods. The code example below uses sparse Cholesky factorization to solve the following equation:
 
-![A mathematical equation that consists of a four-by-four sparse matrix multiplied by a four-element vector of unknown values equals a four-element vector of known values.](https://docs-assets.developer.apple.com/published/2c13eba9c0f47ff54e7774d087efc9f1/media-2904628%402x.png)
+![A mathematical equation that consists of a four-by-four sparse matrix multiplied by a four-element vector of unknown values equals a four-element vector of known values.](/images/com.apple.accelerate/media-2904628@2x.png)
 
 In the equation above, *A* refers to the four-by-four coefficient matrix and *b* to the right-hand-side vector. The code in this article solves the equation *Ax = b* by finding *x*.
 

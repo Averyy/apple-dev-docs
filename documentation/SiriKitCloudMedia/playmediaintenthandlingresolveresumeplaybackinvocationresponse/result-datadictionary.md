@@ -16,7 +16,7 @@ object PlayMediaIntentHandlingResolveResumePlaybackInvocationResponse.Result
 
 ## Properties
 
-- `resolutionResult` (BooleanResolutionResult) *(required)*: [`true`](https://developer.apple.com/documentation/Swift/true) to resume the current playback queue, or [`false`](https://developer.apple.com/documentation/Swift/false) to start a new playback queue.
+- `resolutionResult` (BooleanResolutionResult) *(required)*: [`true`](https://developer.apple.com/documentation/swift/true) to resume the current playback queue, or [`false`](https://developer.apple.com/documentation/swift/false) to start a new playback queue.
 
 
 ---

@@ -62,9 +62,9 @@ The content closure defines the template that WidgetKit needs to render the cont
 ## Relationships
 
 ### Conforms To
-- [ControlWidgetConfiguration](../SwiftUI/ControlWidgetConfiguration.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [ControlWidgetConfiguration](../swiftui/controlwidgetconfiguration.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

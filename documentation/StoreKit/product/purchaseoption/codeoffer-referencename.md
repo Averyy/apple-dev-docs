@@ -21,9 +21,9 @@ static func codeOffer(referenceName: String) -> Product.PurchaseOption
 
 #### Discussion
 
-Use this purchase option when you test your app in Xcode using [`StoreKit Test`](https://developer.apple.com/documentation/StoreKitTest) and call [`buyProduct(identifier:options:)`](https://developer.apple.com/documentation/StoreKitTest/SKTestSession/buyProduct(identifier:options:)).
+Use this purchase option when you test your app in Xcode using [`StoreKit Test`](https://developer.apple.com/documentation/storekittest) and call [`buyProduct(identifier:options:)`](https://developer.apple.com/documentation/storekittest/sktestsession/buyproduct(identifier:options:)).
 
-Set up the offer codes to use in this call in your StoreKit configuration file. For more information, see [`Setting up StoreKit Testing in Xcode`](https://developer.apple.com/documentation/Xcode/setting-up-storekit-testing-in-xcode).
+Set up the offer codes to use in this call in your StoreKit configuration file. For more information, see [`Setting up StoreKit Testing in Xcode`](https://developer.apple.com/documentation/xcode/setting-up-storekit-testing-in-xcode).
 
 When you apply this option, the purchase transaction simulates a customer redeeming an offer code and includes the offer code you specify.
 

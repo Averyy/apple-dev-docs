@@ -25,7 +25,7 @@ An image object representing the result of the color matching operation, or `nil
 
 ## Parameters
 
-- `colorSpace`: The color space to be converted to. This color space must conform to the [`CGColorSpaceModel.rgb`](https://developer.apple.com/documentation/CoreGraphics/CGColorSpaceModel/rgb) color space model.
+- `colorSpace`: The color space to be converted to. This color space must conform to the [`CGColorSpaceModel.rgb`](https://developer.apple.com/documentation/coregraphics/cgcolorspacemodel/rgb) color space model.
 
 ## See Also
 

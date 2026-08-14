@@ -19,7 +19,7 @@ static var cannotSynchronize: NSFileProviderError.Code { get }
 
 #### Discussion
 
-If a specific item caused the error, the system sets the [`NSFileProviderErrorItemKey`](nsfileprovidererroritemkey.md) key to the item’s identifier, and it sets the [`NSUnderlyingErrorKey`](https://developer.apple.com/documentation/Foundation/NSUnderlyingErrorKey) key to the error encountered by the item.
+If a specific item caused the error, the system sets the [`NSFileProviderErrorItemKey`](nsfileprovidererroritemkey.md) key to the item’s identifier, and it sets the [`NSUnderlyingErrorKey`](https://developer.apple.com/documentation/foundation/nsunderlyingerrorkey) key to the error encountered by the item.
 
 ## See Also
 

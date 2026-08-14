@@ -54,7 +54,7 @@ chessPiecePointSource.transform = chessPiecePose
 
 ##### Originate Sound From a Geometric Area
 
-For spatial sounds, the framework requires a 3D position from which the sound originates. To emanate sound from an area larger than a point, for example, the full length of an electric fence in a game, describe the region by configuring a [`PHASEShape`](phaseshape.md) object. The following code models a fence by using a [`Model I/O`](https://developer.apple.com/documentation/ModelIO) plane:
+For spatial sounds, the framework requires a 3D position from which the sound originates. To emanate sound from an area larger than a point, for example, the full length of an electric fence in a game, describe the region by configuring a [`PHASEShape`](phaseshape.md) object. The following code models a fence by using a [`Model I/O`](https://developer.apple.com/documentation/modelio) plane:
 
 ```swift
 let fenceMesh = MDLMesh(
@@ -93,7 +93,7 @@ catch { print ("Failed to add child object to the scene.") }
 
 The framework lowers the volume of a sound source when an obstacle blocks its path to the listener. The result creates a realistic effect in cases where, for example, the player takes cover behind a gallery pillar, which reduces the volume of commotion from the other side of the room.
 
-To define an obstacle, create a [`PHASEOccluder`](phaseoccluder.md) with a shape and position that matches the pillar’s visual counterpart. The following code defines an occluder’s geometric shape using [`Model I/O`](https://developer.apple.com/documentation/ModelIO):
+To define an obstacle, create a [`PHASEOccluder`](phaseoccluder.md) with a shape and position that matches the pillar’s visual counterpart. The following code defines an occluder’s geometric shape using [`Model I/O`](https://developer.apple.com/documentation/modelio):
 
 ```swift
 defaultOccluderSize: Float = 1.0
@@ -282,7 +282,7 @@ Because `electricBuzzingSamplerNode` and `shufflingSamplerNode` have no children
 
 - [Personalizing spatial audio in your app](personalizing-spatial-audio-in-your-app.md)
   Enhance the realism of spatial audio output by tracking a person’s head movement and accounting for their personal spatial audio profile.
-- [PHASE updates](../Updates/PHASE.md)
+- [PHASE updates](../updates/phase.md)
   Learn about important changes to PHASE.
 
 

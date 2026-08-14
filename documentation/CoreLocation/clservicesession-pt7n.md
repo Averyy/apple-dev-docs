@@ -27,13 +27,13 @@ final class CLServiceSession
 
 #### Discussion
 
-A `CLServiceSession` object represents your app’s current goal for location authorization (for example [`CLServiceSession.AuthorizationRequirement.always`](CLServiceSession-pt7n/AuthorizationRequirement/always.md)), if any. Use a `CLServiceSession` object to declaratively tell Core Location what your app needs for authorization related to a specific workflow that your app provides.
+A `CLServiceSession` object represents your app’s current goal for location authorization (for example [`CLServiceSession.AuthorizationRequirement.always`](clservicesession-pt7n/authorizationrequirement/always.md)), if any. Use a `CLServiceSession` object to declaratively tell Core Location what your app needs for authorization related to a specific workflow that your app provides.
 
 The `CLServiceSession` object requests a person’s authorization to meet those requirements if possible, including automatically re-asking as needed after temporary authorization lapses due to time your app spends in the background.
 
 You can create and hold different session objects to request different kinds of authorization for each workflow; each of these represents an *Explicit Service Session* relevant to that workflow. Each object provides diagnostics that your app can observe to understand how its authorization state may differ from the goal it expressed.
 
-Don’t instantiate `CLServiceSession` objects directly; instead, create an instance that specifies a particular authorization mode, or authorization mode and accuracy requirements by using [`init(authorization:)`](CLServiceSession-pt7n/init(authorization:).md) or [`init(authorization:fullAccuracyPurposeKey:)`](CLServiceSession-pt7n/init(authorization:fullAccuracyPurposeKey:).md), respectively.
+Don’t instantiate `CLServiceSession` objects directly; instead, create an instance that specifies a particular authorization mode, or authorization mode and accuracy requirements by using [`init(authorization:)`](clservicesession-pt7n/init(authorization:).md) or [`init(authorization:fullAccuracyPurposeKey:)`](clservicesession-pt7n/init(authorization:fullaccuracypurposekey:).md), respectively.
 
 ## Topics
 
@@ -59,8 +59,8 @@ Don’t instantiate `CLServiceSession` objects directly; instead, create an inst
 ## Relationships
 
 ### Conforms To
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

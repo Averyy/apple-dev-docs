@@ -26,9 +26,9 @@ This routine must be called only as part of an Apple event record definition. Yo
 
 ## Parameters
 
-- `ref`: An   containing the stream data.
-- `key`: The   associated with the new descriptor being added to the stream. See  .
-- `newType`: A type code for the new   being added to the stream. See  .
+- `ref`: An [`AEStreamRef`](aestreamref.md) containing the stream data.
+- `key`: The `AEKeyword` associated with the new descriptor being added to the stream. See [`AEKeyword`](aekeyword.md).
+- `newType`: A type code for the new `AEDesc` being added to the stream. See [`DescType`](desctype.md).
 
 ## See Also
 

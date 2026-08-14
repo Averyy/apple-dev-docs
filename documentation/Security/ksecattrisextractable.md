@@ -22,7 +22,7 @@ let kSecAttrIsExtractable: CFString
 
 #### Discussion
 
-The corresponding value is of type [`CFBoolean`](https://developer.apple.com/documentation/CoreFoundation/CFBoolean) and indicates whether the item can be exported from its keychain. Items of class [`kSecClassKey`](ksecclasskey.md) have this attribute.
+The corresponding value is of type [`CFBoolean`](https://developer.apple.com/documentation/corefoundation/cfboolean) and indicates whether the item can be exported from its keychain. Items of class [`kSecClassKey`](ksecclasskey.md) have this attribute.
 
 
 ---

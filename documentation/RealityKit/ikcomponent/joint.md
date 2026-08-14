@@ -38,7 +38,7 @@ The settings this object exposes are the runtime editable values of a solver joi
 ## Relationships
 
 ### Conforms To
-- [Identifiable](../Swift/Identifiable.md)
+- [Identifiable](../swift/identifiable.md)
 
 ## See Also
 

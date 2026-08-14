@@ -12,7 +12,7 @@ The default theme for a product bundle template is `dark` when you specify a bac
 
 The following figure shows the basic layout for a `productBundleTemplate` page.
 
-![Layout diagram showing a stack area on the left side of the screen and a banner area on the right. A shelf area is at the bottom of the screen. A second shelf area is shown as being off the bottom of the screen.](https://docs-assets.developer.apple.com/published/496aeccc0d1d24bc57ba53f2c5a85394/productbundletemplate-1%402x.png)
+![Layout diagram showing a stack area on the left side of the screen and a banner area on the right. A shelf area is at the bottom of the screen. A second shelf area is shown as being off the bottom of the screen.](/images/com.apple.TVML/productbundletemplate-1@2x.png)
 
 ##### Main Elements
 
@@ -241,9 +241,9 @@ The following listing shows the TVML for a `productBundleTemplate` example.
 
 The following figures show the two pages created using the above example. The first figure shows what appears immediately onscreen, while the second figure shows what the user sees after navigating down the screen.
 
-![Screenshot showing a sample product bundle. An image of the series is on the right and a description on the left. A row of episodes is at the bottom of the screen.](https://docs-assets.developer.apple.com/published/a87d53220b151c74479f488b288bca91/productbundletemplate-2%402x.png)
+![Screenshot showing a sample product bundle. An image of the series is on the right and a description on the left. A row of episodes is at the bottom of the screen.](/images/com.apple.TVML/productbundletemplate-2@2x.png)
 
-![Screenshot showing the second page of the product bundle. The top row contains reviews and ratings, the middle row contains actor informations, and the bottom row contains general information about the product bundle.](https://docs-assets.developer.apple.com/published/9fd91fc210c5591bc04dc3fb2d172641/productbundletemplate-3%402x.png)
+![Screenshot showing the second page of the product bundle. The top row contains reviews and ratings, the middle row contains actor informations, and the bottom row contains general information about the product bundle.](/images/com.apple.TVML/productbundletemplate-3@2x.png)
 
 ## Topics
 

@@ -18,15 +18,15 @@ To add the font files to your Xcode project:
 2. Drag your fonts from a Finder window into your project. This copies the fonts to your project.
 3. Select the font or folder with the fonts, and verify that the files show their target membership checked for your app’s targets.
 
-![A screenshot of Xcode showing the Info plist file with the fonts added to the selected app. The screenshot shows the target membership check boxes selected for macOS and iOS targets in the file inspector](https://docs-assets.developer.apple.com/published/bada63b7739c3d71ab78b610e91f1a90/Applying-Custom-Fonts-to-Text-1%402x.png)
+![A screenshot of Xcode showing the Info plist file with the fonts added to the selected app. The screenshot shows the target membership check boxes selected for macOS and iOS targets in the file inspector](/images/com.apple.SwiftUI/Applying-Custom-Fonts-to-Text-1@2x.png)
 
 ##### Identify the Font Files to Include in the App Bundle
 
-For iOS, watchOS, tvOS, or Mac Catalyst targets, add the [`UIAppFonts`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/UIAppFonts) key to your app’s `Info.plist` file. For the key’s value, provide an array of strings containing the relative paths to any added font files. For a macOS app target, use the [`ATSApplicationFontsPath`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/ATSApplicationFontsPath) key in your target’s `Info.plist` file, and provide the name of the folder that holds the fonts as the value for that key.
+For iOS, watchOS, tvOS, or Mac Catalyst targets, add the [`UIAppFonts`](https://developer.apple.com/documentation/bundleresources/information-property-list/uiappfonts) key to your app’s `Info.plist` file. For the key’s value, provide an array of strings containing the relative paths to any added font files. For a macOS app target, use the [`ATSApplicationFontsPath`](https://developer.apple.com/documentation/bundleresources/information-property-list/atsapplicationfontspath) key in your target’s `Info.plist` file, and provide the name of the folder that holds the fonts as the value for that key.
 
 In the following example, the font file is inside the `project_fonts` directory, so you use `project_fonts/MyFont.ttf` as the string value in the `Info.plist` file.
 
-![A screenshot of Xcode showing the Info plist file with the key Fonts provided by the app as an array that contains a single entry of project_fonts/MyFont.ttf](https://docs-assets.developer.apple.com/published/e2948092d14fe6c6e65ca4e17042bd47/Applying-Custom-Fonts-to-Text-2%402x.png)
+![A screenshot of Xcode showing the Info plist file with the key Fonts provided by the app as an array that contains a single entry of project_fonts/MyFont.ttf](/images/com.apple.SwiftUI/Applying-Custom-Fonts-to-Text-2@2x.png)
 
 ##### Apply a Font Supporting Dynamic Sizing
 
@@ -48,7 +48,7 @@ Text("Hello, world!")
 
 SwiftUI doesn’t synthesize bold or italic styling for fonts. If the font supports weighted or italic variants, you can customize the typography of the text view by styling the font using the [`weight(_:)`](font/weight(_:).md) or [`italic()`](font/italic().md) modifiers.
 
-For design guidance on choosing fonts to enhance your app on your target platform, see [`Typography`](https://developer.apple.com/design/Human-Interface-Guidelines/typography) in the Human Interface Guidelines.
+For design guidance on choosing fonts to enhance your app on your target platform, see [`Typography`](https://developer.apple.com/design/human-interface-guidelines/typography) in the Human Interface Guidelines.
 
 ##### Scale Padding Using Scaled Metric
 
@@ -77,7 +77,7 @@ struct ContentView_Previews: PreviewProvider {
 
 The preview shows the following image without any accessibility settings turned on:
 
-![The text the quick brown fox jumps over the lazy dog in two lines with a blue border around it.](https://docs-assets.developer.apple.com/published/8b3145aa514ece67af46743e7c41c63a/Applying-Custom-Fonts-to-Text-3%402x.png)
+![The text the quick brown fox jumps over the lazy dog in two lines with a blue border around it.](/images/com.apple.SwiftUI/Applying-Custom-Fonts-to-Text-3@2x.png)
 
 Use the [`environment(_:_:)`](view/environment(_:_:).md) modifier to set the Dynamic Type size on the preview to [`DynamicTypeSize.accessibility2`](dynamictypesize/accessibility2.md):
 
@@ -92,7 +92,7 @@ struct ContentView_Previews: PreviewProvider {
 
 The preview then shows the following image that reflects the increased accessibility size and the scaled padding:
 
-![The text the quick brown fox jumps over the lazy dog in three lines with a blue border around it with larger whitespace between the blue border and text content.](https://docs-assets.developer.apple.com/published/edf5f88499adc59db582bbeb5192fc0b/Applying-Custom-Fonts-to-Text-4%402x.png)
+![The text the quick brown fox jumps over the lazy dog in three lines with a blue border around it with larger whitespace between the blue border and text content.](/images/com.apple.SwiftUI/Applying-Custom-Fonts-to-Text-4@2x.png)
 
 ## See Also
 

@@ -20,7 +20,7 @@ class AVCaptureReactionEffectState
 
 #### Overview
 
-Obtain an instance of this class by querying a capture device’s [`reactionEffectsInProgress`](avcapturedevice/reactioneffectsinprogress.md) property. The system adds new entries to this array when you call [`performEffect(for:)`](avcapturedevice/performeffect(for:).md) or by gesture detection in the capture stream when the value of [`reactionEffectGesturesEnabled`](avcapturedevice/reactioneffectgesturesenabled.md) is [`true`](https://developer.apple.com/documentation/Swift/true).
+Obtain an instance of this class by querying a capture device’s [`reactionEffectsInProgress`](avcapturedevice/reactioneffectsinprogress.md) property. The system adds new entries to this array when you call [`performEffect(for:)`](avcapturedevice/performeffect(for:).md) or by gesture detection in the capture stream when the value of [`reactionEffectGesturesEnabled`](avcapturedevice/reactioneffectgesturesenabled.md) is [`true`](https://developer.apple.com/documentation/swift/true).
 
 The system renders the effect before providing frames to your app, and these status objects let you know when it performs the effect.
 
@@ -39,14 +39,14 @@ The system renders the effect before providing frames to your app, and these sta
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

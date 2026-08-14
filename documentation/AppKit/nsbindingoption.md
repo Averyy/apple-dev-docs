@@ -14,9 +14,9 @@ struct NSBindingOption
 
 #### Discussion
 
-Values that are used as keys in the options dictionary passed to the [`bind(_:to:withKeyPath:options:)`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class/bind(_:to:withKeyPath:options:)) method.
+Values that are used as keys in the options dictionary passed to the [`bind(_:to:withKeyPath:options:)`](https://developer.apple.com/documentation/objectivec/nsobject-swift.class/bind(_:to:withkeypath:options:)) method.
 
-These keys are also used in the dictionary returned as the [`options`](nsbindinginfokey/options.md) value of [`infoForBinding(_:)`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class/infoForBinding(_:)). For more information, see [`Cocoa Bindings`](cocoa-bindings.md).
+These keys are also used in the dictionary returned as the [`options`](nsbindinginfokey/options.md) value of [`infoForBinding(_:)`](https://developer.apple.com/documentation/objectivec/nsobject-swift.class/infoforbinding(_:)). For more information, see [`Cocoa Bindings`](cocoa-bindings.md).
 
 ## Topics
 
@@ -79,11 +79,11 @@ These keys are also used in the dictionary returned as the [`options`](nsbinding
 ## Relationships
 
 ### Conforms To
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [RawRepresentable](../Swift/RawRepresentable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [RawRepresentable](../swift/rawrepresentable.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 
@@ -96,7 +96,7 @@ These keys are also used in the dictionary returned as the [`options`](nsbinding
 - [struct NSBindingInfoKey](nsbindinginfokey.md)
 - [func NSIsControllerMarker(Any?) -> Bool](nsiscontrollermarker(_:).md)
   Tests whether a given object is special marker object used for indicating the state of a selection in relation to a key.
-- [NSKeyValueBindingCreation](../ObjectiveC/nskeyvaluebindingcreation.md)
+- [NSKeyValueBindingCreation](../objectivec/nskeyvaluebindingcreation.md)
   A set of methods that you can use to create and remove bindings between view objects and controllers, or between controllers and model objects.
 - [Binding dictionary keys](binding-dictionary-keys.md)
   These constants define keys in the binding information dictionary.

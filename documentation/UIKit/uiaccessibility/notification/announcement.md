@@ -22,7 +22,7 @@ static let announcement: UIAccessibility.Notification
 
 #### Discussion
 
-This notification includes a parameter that is an [`NSString`](https://developer.apple.com/documentation/Foundation/NSString) object that contains the announcement. An assistive app outputs the announcement string in the parameter.
+This notification includes a parameter that is an [`NSString`](https://developer.apple.com/documentation/foundation/nsstring) object that contains the announcement. An assistive app outputs the announcement string in the parameter.
 
 Use this notification to provide accessibility information about events that don’t update the app’s UI, or that update the UI only briefly.
 

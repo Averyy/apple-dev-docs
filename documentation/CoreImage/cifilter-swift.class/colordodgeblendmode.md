@@ -43,7 +43,7 @@ func colorDodgeBlendMode(inputImage: CIImage, backgroundImage: CIImage) -> CIIma
 }
 ```
 
-![The image on the top left shows a beach with multiple palm trees and a rainbow arching across the blue sky.  The image below is a gradient image displaying a gradual color shift from purple to a dark orange. The image on the right shows the output from applying the color dodge blend mode filter. This results in colors from both images with the brightness of the original beach image.](https://docs-assets.developer.apple.com/published/575af3aae41202604fe04d23b82e50f7/media-3546418%402x.png)
+![The image on the top left shows a beach with multiple palm trees and a rainbow arching across the blue sky.  The image below is a gradient image displaying a gradual color shift from purple to a dark orange. The image on the right shows the output from applying the color dodge blend mode filter. This results in colors from both images with the brightness of the original beach image.](/images/com.apple.coreimage/media-3546418@2x.png)
 
 ## See Also
 

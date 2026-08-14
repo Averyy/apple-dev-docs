@@ -16,7 +16,7 @@ let IKImageBrowserCellsHighlightedTitleAttributesKey: String
 
 #### Discussion
 
-The associated value is an [`NSDictionary`](https://developer.apple.com/documentation/Foundation/NSDictionary) object.
+The associated value is an [`NSDictionary`](https://developer.apple.com/documentation/foundation/nsdictionary) object.
 
 ## See Also
 

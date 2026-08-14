@@ -21,7 +21,7 @@ protocol WidgetConfigurationIntent : AppIntent
 
 #### Overview
 
-The parameters of the intent define the configuration options for your widget. The system uses the intent’s title and description for the display name and description of the widget if those values aren’t set explicitly on the [`AppIntentConfiguration`](https://developer.apple.com/documentation/WidgetKit/AppIntentConfiguration).
+The parameters of the intent define the configuration options for your widget. The system uses the intent’s title and description for the display name and description of the widget if those values aren’t set explicitly on the [`AppIntentConfiguration`](https://developer.apple.com/documentation/widgetkit/appintentconfiguration).
 
 ```swift
 import AppIntents
@@ -82,7 +82,7 @@ struct FavoriteSoup: WidgetConfigurationIntent {
 }
 ```
 
-When using this protocol, you don’t need to provide an implementation for [`perform()`](appintent/perform().md). You can, however, still implement `perform()` to use the same implementation for both widget configuration and as an actionable intent. For more information, refer to the [`Emoji Rangers: Supporting Live Activities, interactivity, and animations`](https://developer.apple.com/documentation/WidgetKit/emoji-rangers-supporting-live-activities-interactivity-and-animations) sample code project’s `EmojiRangerSelection` structure and [`AppIntentTimelineProvider`](https://developer.apple.com/documentation/WidgetKit/AppIntentTimelineProvider).
+When using this protocol, you don’t need to provide an implementation for [`perform()`](appintent/perform().md). You can, however, still implement `perform()` to use the same implementation for both widget configuration and as an actionable intent. For more information, refer to the [`Emoji Rangers: Supporting Live Activities, interactivity, and animations`](https://developer.apple.com/documentation/widgetkit/emoji-rangers-supporting-live-activities-interactivity-and-animations) sample code project’s `EmojiRangerSelection` structure and [`AppIntentTimelineProvider`](https://developer.apple.com/documentation/widgetkit/appintenttimelineprovider).
 
 ## Topics
 
@@ -96,16 +96,16 @@ When using this protocol, you don’t need to provide an implementation for [`pe
 ### Inherits From
 - [AppIntent](appintent.md)
 - [PersistentlyIdentifiable](persistentlyidentifiable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 
-- [Increasing the visibility of widgets in Smart Stacks](../WidgetKit/Widget-Suggestions-In-Smart-Stacks.md)
+- [Increasing the visibility of widgets in Smart Stacks](../widgetkit/widget-suggestions-in-smart-stacks.md)
   Provide contextual information and donate intents to the system to make sure your widget appears prominently in Smart Stacks.
-- [Migrating widgets from SiriKit Intents to App Intents](../WidgetKit/Migrating-from-SiriKit-Intents-to-App-Intents.md)
+- [Migrating widgets from SiriKit Intents to App Intents](../widgetkit/migrating-from-sirikit-intents-to-app-intents.md)
   Configure your widgets for backward compatibility.
-- [WidgetKit](../WidgetKit/WidgetKit.md)
+- [WidgetKit](../widgetkit/widgetkit.md)
   Extend the reach of your app by creating widgets, watch complications, Live Activities, and controls.
 
 

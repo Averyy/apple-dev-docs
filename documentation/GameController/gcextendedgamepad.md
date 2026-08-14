@@ -35,7 +35,7 @@ The extended gamepad controller profile represents a physical or virtual control
 - Optional Home and Options buttons
 - A Menu button
 
-![An illustration of an extended gamepad controller with callouts for the buttons and controls.](https://docs-assets.developer.apple.com/published/74601dd72896727165a38539cc713b0a/media-3850406%402x.png)
+![An illustration of an extended gamepad controller with callouts for the buttons and controls.](/images/com.apple.gamecontroller/media-3850406@2x.png)
 
 If a [`GCController`](gccontroller.md) object supports this type of profile, get the input values of the elements from the controller’s [`extendedGamepad`](gccontroller/extendedgamepad.md) property or use the profile’s [`valueChangedHandler`](gcextendedgamepad/valuechangedhandler.md) method to receive a callback when the input values change. Alternatively, use the [`saveSnapshot()`](gcextendedgamepad/savesnapshot().md) method to capture the input values at a moment in time.
 
@@ -107,12 +107,12 @@ If the controller’s [`extendedGamepad`](gccontroller/extendedgamepad.md) prope
 - [GCExtendedGamepadSnapshot](gcextendedgamepadsnapshot.md)
 - [GCXboxGamepad](gcxboxgamepad.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

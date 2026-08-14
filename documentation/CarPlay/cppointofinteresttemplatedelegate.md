@@ -33,7 +33,7 @@ You use the `CPPointOfInterestTemplateDelegate` protocol to respond to a Point o
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

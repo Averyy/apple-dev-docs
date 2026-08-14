@@ -6,9 +6,9 @@ Use code that’s structured in a nonstandard way while avoiding code signing an
 
 #### Overview
 
-All apps — and many non-app software products on the Mac, like plug-ins — are packaged in a bundle structure.  When creating a bundle, place content in the correct location.  Placing content in a nonstandard location can cause code signing and distribution problems.  For more on this, see [`Placing content in a bundle`](https://developer.apple.com/documentation/BundleResources/placing-content-in-a-bundle).
+All apps — and many non-app software products on the Mac, like plug-ins — are packaged in a bundle structure.  When creating a bundle, place content in the correct location.  Placing content in a nonstandard location can cause code signing and distribution problems.  For more on this, see [`Placing content in a bundle`](https://developer.apple.com/documentation/bundleresources/placing-content-in-a-bundle).
 
-In some cases you need to work with nonstandard code structures, that is, code whose structure doesn’t match the standard bundle structure for your platform.  For example, you might be building a Mac app and want to embed an open source language runtime in it.  If the on-disk layout of this runtime doesn’t follow the rules in [`Placing content in a bundle`](https://developer.apple.com/documentation/BundleResources/placing-content-in-a-bundle), you run the risk of code signing and distribution problems.
+In some cases you need to work with nonstandard code structures, that is, code whose structure doesn’t match the standard bundle structure for your platform.  For example, you might be building a Mac app and want to embed an open source language runtime in it.  If the on-disk layout of this runtime doesn’t follow the rules in [`Placing content in a bundle`](https://developer.apple.com/documentation/bundleresources/placing-content-in-a-bundle), you run the risk of code signing and distribution problems.
 
 The best way to resolve this conundrum is to rebuild the code to match your target platform’s bundle structure.  However, this isn’t always feasible:
 
@@ -167,7 +167,7 @@ The final result is a code structure where all the dynamic library dependencies 
 
 ##### Place Content in the Correct Location Within the Bundle
 
-Once you’ve confirmed that the code uses rpath-relative paths, it’s time to embed it in your bundle.  Imagine you’re building an app called MacWaffleVarnish.  The rules in [`Placing content in a bundle`](https://developer.apple.com/documentation/BundleResources/placing-content-in-a-bundle) require this structure:
+Once you’ve confirmed that the code uses rpath-relative paths, it’s time to embed it in your bundle.  Imagine you’re building an app called MacWaffleVarnish.  The rules in [`Placing content in a bundle`](https://developer.apple.com/documentation/bundleresources/placing-content-in-a-bundle) require this structure:
 
 ```None
 MacWaffleVarnish.app/
@@ -242,9 +242,9 @@ In most cases, however, it’s easier and better to rewrite everything to use rp
 
 ## See Also
 
-- [Placing content in a bundle](../BundleResources/placing-content-in-a-bundle.md)
+- [Placing content in a bundle](../bundleresources/placing-content-in-a-bundle.md)
   Place bundle content in the correct location based on its type.
-- [Managing your app’s information property list values](../BundleResources/managing-your-app-s-information-property-list.md)
+- [Managing your app’s information property list values](../bundleresources/managing-your-app-s-information-property-list.md)
   Customize the information property list values for your app using Xcode.
 - [Editing property list files](editing-property-list-files.md)
   Add, remove, and change keys and values in a structured file.

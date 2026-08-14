@@ -16,7 +16,7 @@ Download the SiriKit Cloud Media [`OpenAPI Specification`](https://developer.ap
 
 ##### Configure the Users Homepod
 
-Authorize HomePod speakers to contact your media service by adopting [`Media Setup`](https://developer.apple.com/documentation/MediaSetup) in your iOS app and vending tokens from an OAuth service. After the user enables your service for devices in their home, they can manage access in the Home app.
+Authorize HomePod speakers to contact your media service by adopting [`Media Setup`](https://developer.apple.com/documentation/mediasetup) in your iOS app and vending tokens from an OAuth service. After the user enables your service for devices in their home, they can manage access in the Home app.
 
 Provide a HomePod speaker with details about sending requests to your service by implementing the configuration endpoint. Include paths and required headers for the endpoints you support. See  [`Configure Your Service Endpoints`](configuration-resource.md) for more information.
 

@@ -15,11 +15,11 @@ Maximize CPU to GPU parallelization by generating render commands on the GPU.
 
 This sample app demonstrates how to use *indirect command buffers* (ICB) to issue rendering instructions from the GPU. When you have a rendering algorithm that runs in a compute kernel, use ICBs to generate draw calls based on your algorithm’s results. The sample app uses a compute kernel to remove invisible objects submitted for rendering, and generates draw commands only for the objects currently visible in the scene.
 
-![Flow chart of an algorithm and its dependent rendering instructions executing on the GPU. At left, a body representing the CPU dispatches the algorithm to the GPU via compute kernel. A line flows from the left body to another body, at center representing the GPU, which executes the compute kernel and generates its dependent rendering commands using an ICB. A line flows from the center body to a body at right, also representing the GPU, which executes the rendering commands.](https://docs-assets.developer.apple.com/published/28f04960640b40e69469ea9294b3cd5f/icbs-with-gpu-encoding-1-GpuDrivenPipeline.png)
+![Flow chart of an algorithm and its dependent rendering instructions executing on the GPU. At left, a body representing the CPU dispatches the algorithm to the GPU via compute kernel. A line flows from the left body to another body, at center representing the GPU, which executes the compute kernel and generates its dependent rendering commands using an ICB. A line flows from the center body to a body at right, also representing the GPU, which executes the rendering commands.](/images/com.apple.metal/icbs-with-gpu-encoding-1-GpuDrivenPipeline.png)
 
 Without ICBs, you can’t submit rendering commands on the GPU. Instead, the CPU waits for your compute kernel’s results before generating the render commands. Then, the GPU waits for the rendering commands to make it across the CPU to GPU bridge. The following diagram shows how this creates a slower round trip:
 
-![Flow chart of an algorithm being parallelized on the GPU with the CPU waiting on its results.](https://docs-assets.developer.apple.com/published/98a58b36c689a56c07a8588158bc6b88/icbs-with-gpu-encoding-2-CpuRoundTrip.png)
+![Flow chart of an algorithm being parallelized on the GPU with the CPU waiting on its results.](/images/com.apple.metal/icbs-with-gpu-encoding-2-CpuRoundTrip.png)
 
 The sample code project, [`Encoding indirect command buffers on the CPU`](encoding-indirect-command-buffers-on-the-cpu.md) introduces ICBs by creating a single ICB to reuse its commands every frame. While the former sample saved expensive command-encoding time by reusing commands, this sample uses ICBs to effect a GPU-driven rendering pipeline.
 

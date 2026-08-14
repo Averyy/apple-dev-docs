@@ -8,11 +8,11 @@ Train a machine learning model to classify natural language text.
 
 A text classifier is a machine learning model that’s been trained to recognize patterns in natural language text, like the sentiment expressed by a sentence.
 
-![Diagram showing how a text string maps to a label.](https://docs-assets.developer.apple.com/published/8b58fe67739dc2f7f3bb472ed54312b3/creating-a-text-classifer-model-1%402x.png)
+![Diagram showing how a text string maps to a label.](/images/com.apple.createml/creating-a-text-classifer-model-1@2x.png)
 
 You train a text classifier by showing it lots of examples of text you’ve already labeled—for example, movie reviews that you’ve already labeled as positive, negative, or neutral.
 
-![Diagram showing how you train a text classifier with Create ML using training data.](https://docs-assets.developer.apple.com/published/928f87b97f9f6bea77d959ecc545107a/creating-a-text-classifer-model-2%402x.png)
+![Diagram showing how you train a text classifier with Create ML using training data.](/images/com.apple.createml/creating-a-text-classifer-model-2@2x.png)
 
 ##### Import Your Data
 
@@ -36,7 +36,7 @@ As an example, consider a JSON file containing movie reviews that you’ve categ
 ]
 ```
 
-In a macOS playground, create a data frame using the [`TabularData`](https://developer.apple.com/documentation/TabularData) framework.
+In a macOS playground, create a data frame using the [`TabularData`](https://developer.apple.com/documentation/tabulardata) framework.
 
 ```swift
 import TabularData
@@ -48,7 +48,7 @@ The resulting data frame has two columns, named *text* and *label*, derived from
 
 ##### Prepare Your Data for Training and Evaluation
 
-The data you use to train your model needs to be different from the data you use to evaluate your model. Use the [`stratifiedSplit(on:by:randomSeed:)`](https://developer.apple.com/documentation/TabularData/DataFrameProtocol/stratifiedSplit(on:by:randomSeed:)-9iauf) method to split your data into two data frames, one for training and the other for testing. The training data frame contains the majority of your data, and the testing data frame contains the remaining 20 percent.
+The data you use to train your model needs to be different from the data you use to evaluate your model. Use the [`stratifiedSplit(on:by:randomSeed:)`](https://developer.apple.com/documentation/tabulardata/dataframeprotocol/stratifiedsplit(on:by:randomseed:)-9iauf) method to split your data into two data frames, one for training and the other for testing. The training data frame contains the majority of your data, and the testing data frame contains the remaining 20 percent.
 
 ```swift
 let (trainingData, testingData) = data.stratifiedSplit(on: "text", by: 0.8)
@@ -133,7 +133,7 @@ Specify the file name using the `fileURLWithPath:` parameter, in the above code,
 
 With your app open in Xcode, drag the `SentimentClassifier.mlmodel` file into the navigation pane. Xcode compiles the model and generates a `SentimentClassifier` class for use in your app. Select the `SentimentClassifier.mlmodel` file in Xcode to view additional information about the model.
 
-Create an [`NLModel`](https://developer.apple.com/documentation/NaturalLanguage/NLModel) in the Natural Language framework from the `SentimentClassifier` to ensure that the tokenization is consistent between training and deployment. Then use [`predictedLabel(for:)`](https://developer.apple.com/documentation/NaturalLanguage/NLModel/predictedLabel(for:)) to generate predictions on new text inputs.
+Create an [`NLModel`](https://developer.apple.com/documentation/naturallanguage/nlmodel) in the Natural Language framework from the `SentimentClassifier` to ensure that the tokenization is consistent between training and deployment. Then use [`predictedLabel(for:)`](https://developer.apple.com/documentation/naturallanguage/nlmodel/predictedlabel(for:)) to generate predictions on new text inputs.
 
 ```swift
 import NaturalLanguage

@@ -20,7 +20,7 @@ The method returns a Boolean value, where a value of `false` prevents the callou
 
 #### Discussion
 
-When the user selects an annotation, MapKit JS calls this method on the annotation’s callout delegate (if the delegate is an object and its [`calloutShouldAppearForAnnotation(annotation)`](annotationcalloutdelegate/calloutshouldappearforannotation.md) property is a function) with the annotation as a parameter.
+When the user selects an annotation, MapKit JS calls this method on the annotation’s callout delegate (if the delegate is an object and its [`calloutShouldAppearForAnnotation()`](annotationcalloutdelegate/calloutshouldappearforannotation.md) property is a function) with the annotation as a parameter.
 
 ## Parameters
 

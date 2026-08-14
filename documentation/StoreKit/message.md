@@ -38,7 +38,7 @@ StoreKit presents message sheets only if a message is still relevant. For exampl
 
 If you want to defer or suppress App Store messages, set up the message listener in your app when your app launches.
 
-To control when a message may display, call [`display(in:)`](message/display(in:).md) or [`DisplayMessageAction`](displaymessageaction.md) when your app’s ready to have StoreKit present the message. If your app doesn’t call either of these APIs after it listens for messages, it suppresses the messages. The following example is for apps that use [`UIKit`](https://developer.apple.com/documentation/UIKit):
+To control when a message may display, call [`display(in:)`](message/display(in:).md) or [`DisplayMessageAction`](displaymessageaction.md) when your app’s ready to have StoreKit present the message. If your app doesn’t call either of these APIs after it listens for messages, it suppresses the messages. The following example is for apps that use [`UIKit`](https://developer.apple.com/documentation/uikit):
 
 ```swift
 // Listen for App Store messages.
@@ -73,10 +73,10 @@ For a code example that uses SwiftUI, see [`DisplayMessageAction`](displaymessag
 ## Relationships
 
 ### Conforms To
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

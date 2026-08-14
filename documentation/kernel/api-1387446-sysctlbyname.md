@@ -41,11 +41,11 @@ int64_t cacheLineSize() {
 
 ## Parameters
 
-- `name`: The ASCII name of the requested attribute. To obtain a list of attribute names for the current system, run   from Terminal. 
-- `oldp`: Specify   if you don’t want to get the attribute’s value. For example, set this parameter to   and specify a valid parameter in   to get the size of the data. 
-- `oldlenp`: Specify   if you don’t want to get the attribute’s value. 
-- `newp`: A process must have the root-level privileges to set system information.
-- `newlen`: A variable that contains the size of the buffer in the   parameter, in bytes. Specify   if you don’t want to set the attribute’s value.
+- `name`: The ASCII name of the requested attribute. To obtain a list of attribute names for the current system, run `sysctl -a` from Terminal. 
+- `oldp`: A pointer to a buffer that receives the requested data. Specify the size of this buffer using the `oldlenp` parameter. The function copies the requested data into this buffer as space allows. If the buffer is too small to hold all the data, the function updates the `oldlenp` parameter with the required size. Specify `NULL` if you don’t want to get the attribute’s value. For example, set this parameter to `NULL` and specify a valid parameter in `oldlenp` to get the size of the data. 
+- `oldlenp`: A variable that contains the number of bytes in the buffer in the `oldp` parameter. If the amount of data is greater than the value in this parameter, the function updates this parameter to the required size and returns `ENOMEM`. (The function doesn’t modify the value if it’s larger than or equal to the amount of available data). Specify `NULL` if you don’t want to get the attribute’s value. 
+- `newp`: A pointer to a buffer that contains new data to assign to the attribute. The function copies the data from this buffer to the attribute. You must specify the size of this buffer using the `newlen` parameter. Specify `NULL` if you don’t want to set the attribute’s value. A process must have the root-level privileges to set system information.
+- `newlen`: A variable that contains the size of the buffer in the `newp` parameter, in bytes. Specify `0` if you don’t want to set the attribute’s value.
 
 ## Topics
 

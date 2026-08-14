@@ -17,7 +17,7 @@ For example, if the sprite node’s base size is 32 x 32 pixels and it has an [`
 
 When a sprite node’s frame is larger than its texture, the texture is stretched to cover its frame. Normally, the texture is stretched uniformly across the frame, as shown in the following figure.
 
-![A texture is stretched to cover the sprite’s frame](https://docs-assets.developer.apple.com/published/596d5f07d0cc6639848ddf4e620079d7/media-2983064%402x.png)
+![A texture is stretched to cover the sprite’s frame](/images/com.apple.spritekit/media-2983064@2x.png)
 
 However, sometimes you want to use sprite nodes to build user interface elements, such as buttons or health indicators. Often, these elements contain fixed-size elements, such as end caps, that should not be stretched. In this case, use a portion of the texture without stretching, and then stretch the remaining part of the texture over the rest of the frame.
 
@@ -30,7 +30,7 @@ The sprite’s [`centerRect`](skspritenode/centerrect.md) property, which is spe
 
 The following figure shows a close-up view of a texture you might use to draw a user interface button. The complete texture is 28 x 28 pixels. The corner pieces are each 12 x 12 pixels and the center is 4 x 4 pixels.
 
-![A stretchable button texture](https://docs-assets.developer.apple.com/published/78e21216dc794a904298a7a7d04ad735/media-2983059%402x.png)
+![A stretchable button texture](/images/com.apple.spritekit/media-2983059@2x.png)
 
 The following code shows how this button sprite would be initialized. The [`centerRect`](skspritenode/centerrect.md) property is computed based on the design of the texture.
 
@@ -53,7 +53,7 @@ button.centerRect = CGRectMake(12.0/28.0, 12.0/28.0, 4.0/28.0, 4.0/28.0);
 
 The following figure shows that the corners remain the same, even when the button is drawn at different sizes.
 
-![Applying the button texture to buttons of different sizes](https://docs-assets.developer.apple.com/published/e3c8818cc34dee110c82affc7ee83e55/media-2983056%402x.png)
+![Applying the button texture to buttons of different sizes](/images/com.apple.spritekit/media-2983056@2x.png)
 
 ## See Also
 

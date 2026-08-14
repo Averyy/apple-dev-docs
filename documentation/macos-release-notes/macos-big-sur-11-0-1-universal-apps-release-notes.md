@@ -6,7 +6,7 @@ Update your apps to support Macs with Apple silicon.
 
 #### Overview
 
-The macOS 11 Universal Apps beta SDK aids in the creation of Universal Mac apps that run on both Apple silicon and Intel-based Mac computers running macOS Big Sur 11. The SDK comes bundled with Xcode 12.2, available from the Mac App Store. For information on the compatibility requirements for Xcode 12.2, see [`Xcode 12.2 Release Notes`](https://developer.apple.com/documentation/Xcode-Release-Notes/xcode-12_2-release-notes).
+The macOS 11 Universal Apps beta SDK aids in the creation of Universal Mac apps that run on both Apple silicon and Intel-based Mac computers running macOS Big Sur 11. The SDK comes bundled with Xcode 12.2, available from the Mac App Store. For information on the compatibility requirements for Xcode 12.2, see [`Xcode 12.2 Release Notes`](https://developer.apple.com/documentation/xcode-release-notes/xcode-12_2-release-notes).
 
 This page is specific to the Developer Transition Kit. For additional macOS 11 changes, see [`macOS Big Sur 11.0.1 Release Notes`](macos-big-sur-11_0_1-release-notes.md).
 

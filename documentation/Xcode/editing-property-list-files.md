@@ -6,11 +6,11 @@ Add, remove, and change keys and values in a structured file.
 
 #### Overview
 
-You use property list files to provide the system with structured data about your apps and other code bundles. For example, every bundle contains an Xcode-managed [`Information Property List`](https://developer.apple.com/documentation/BundleResources/Information-Property-List) that describes the bundle to the system. Additionally, many apps contain property lists that describe their [`Entitlements`](https://developer.apple.com/documentation/BundleResources/Entitlements), and [`Privacy manifest files`](https://developer.apple.com/documentation/BundleResources/privacy-manifest-files) that describe the data they collect and how they use certain APIs.
+You use property list files to provide the system with structured data about your apps and other code bundles. For example, every bundle contains an Xcode-managed [`Information Property List`](https://developer.apple.com/documentation/bundleresources/information-property-list) that describes the bundle to the system. Additionally, many apps contain property lists that describe their [`Entitlements`](https://developer.apple.com/documentation/bundleresources/entitlements), and [`Privacy manifest files`](https://developer.apple.com/documentation/bundleresources/privacy-manifest-files) that describe the data they collect and how they use certain APIs.
 
-By default, Xcode generates your bundle’s information property list file from values in your project’s build settings, which you manage using the Info pane in the project editor, and you don’t need to edit the file directly. If you need to, you can supply a file that you edit manually. For more information, see [`Managing your app’s information property list values`](https://developer.apple.com/documentation/BundleResources/managing-your-app-s-information-property-list).
+By default, Xcode generates your bundle’s information property list file from values in your project’s build settings, which you manage using the Info pane in the project editor, and you don’t need to edit the file directly. If you need to, you can supply a file that you edit manually. For more information, see [`Managing your app’s information property list values`](https://developer.apple.com/documentation/bundleresources/managing-your-app-s-information-property-list).
 
-Similarly, Xcode manages your app or extension’s [`Entitlements`](https://developer.apple.com/documentation/BundleResources/Entitlements) file, based on [`Capabilities`](capabilities.md) you add to your target using the Signing & Capabilities pane in the target editor, and you typically don’t need to edit the entitlements property list file directly. For more information, see [`Adding capabilities to your app`](adding-capabilities-to-your-app.md).
+Similarly, Xcode manages your app or extension’s [`Entitlements`](https://developer.apple.com/documentation/bundleresources/entitlements) file, based on [`Capabilities`](capabilities.md) you add to your target using the Signing & Capabilities pane in the target editor, and you typically don’t need to edit the entitlements property list file directly. For more information, see [`Adding capabilities to your app`](adding-capabilities-to-your-app.md).
 
 When you manually create a property list file, use the Xcode property list editor to update the file’s content while ensuring that the structure is valid.
 
@@ -23,7 +23,7 @@ To create a property list file in Xcode, follow these steps:
 3. Click Next.
 4. Enter a name for the file, and click Create.
 
-To create a privacy manifest file, select the App Privacy template from the Resource group instead. For more information, see [`Privacy manifest files`](https://developer.apple.com/documentation/BundleResources/privacy-manifest-files#Create-a-privacy-manifest).
+To create a privacy manifest file, select the App Privacy template from the Resource group instead. For more information, see [`Privacy manifest files`](https://developer.apple.com/documentation/bundleresources/privacy-manifest-files).
 
 ##### Add a Property to the File
 
@@ -31,7 +31,7 @@ To add a property to a property list file, open the file in the Xcode editor, ho
 
 You can also add an entry at any level of the property list file by hovering over an existing entry and clicking on the Add button that appears.
 
-![A screenshot of Xcode adding a key to a dictionary in a property list file.](https://docs-assets.developer.apple.com/published/115cda3e3af9d20ac184d8316cbb5031/editing-property-list-files-1%402x.png)
+![A screenshot of Xcode adding a key to a dictionary in a property list file.](/images/com.apple.Xcode/editing-property-list-files-1@2x.png)
 
 If the existing entry’s value has a primitive type — for example, a string, number, or Boolean — then Xcode creates the new entry as a key at the same level in the file’s structure as the existing entry, or as a new element in the same array if the existing entry is an element in an array.
 
@@ -53,9 +53,9 @@ By default, Xcode shows readable representations of keys and values in common pr
 
 ## See Also
 
-- [Placing content in a bundle](../BundleResources/placing-content-in-a-bundle.md)
+- [Placing content in a bundle](../bundleresources/placing-content-in-a-bundle.md)
   Place bundle content in the correct location based on its type.
-- [Managing your app’s information property list values](../BundleResources/managing-your-app-s-information-property-list.md)
+- [Managing your app’s information property list values](../bundleresources/managing-your-app-s-information-property-list.md)
   Customize the information property list values for your app using Xcode.
 - [Embedding nonstandard code structures in a bundle](embedding-nonstandard-code-structures-in-a-bundle.md)
   Use code that’s structured in a nonstandard way while avoiding code signing and distribution problems.

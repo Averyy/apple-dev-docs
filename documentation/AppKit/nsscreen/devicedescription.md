@@ -18,7 +18,7 @@ var deviceDescription: [NSDeviceDescriptionKey : Any] { get }
 
 This is a dictionary containing the attributes of the receiver’s screen. For the list of keys you can use to retrieve values from the returned dictionary, see `Display Device—Descriptions`.
 
-In addition to the display device constants described in [`NSWindow`](nswindow.md), you can also retrieve the [`CGDirectDisplayID`](https://developer.apple.com/documentation/CoreGraphics/CGDirectDisplayID) value associated with the screen from this dictionary. To access this value, specify the Objective-C string `@"NSScreenNumber"` as the key when requesting the item from the dictionary. The value associated with this key is an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) object containing the display ID value. This string is only valid when used as a key for the dictionary returned by this method.
+In addition to the display device constants described in [`NSWindow`](nswindow.md), you can also retrieve the [`CGDirectDisplayID`](https://developer.apple.com/documentation/coregraphics/cgdirectdisplayid) value associated with the screen from this dictionary. To access this value, specify the Objective-C string `@"NSScreenNumber"` as the key when requesting the item from the dictionary. The value associated with this key is an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) object containing the display ID value. This string is only valid when used as a key for the dictionary returned by this method.
 
 ## See Also
 

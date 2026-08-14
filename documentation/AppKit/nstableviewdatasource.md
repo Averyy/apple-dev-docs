@@ -65,7 +65,7 @@ For more information, see [`Cocoa Bindings`](cocoa-bindings.md).
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 ### Conforming Types
 - [NSTableViewDiffableDataSource](nstableviewdiffabledatasource-c5gl.md)
 - [NSTableViewDiffableDataSourceReference](nstableviewdiffabledatasourcereference.md)

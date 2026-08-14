@@ -27,11 +27,11 @@ Returns the items array that you pass.
 
 #### Discussion
 
-The method [`showItems(items, options)`](map/showitems.md) adjusts the map’s [`region`](map/region.md) to bring all of the specified items — annotations and overlays — into view. The system only adds items if they’re not already on the map.
+The method [`showItems()`](map/showitems.md) adjusts the map’s [`region`](map/region.md) to bring all of the specified items — annotations and overlays — into view. The system only adds items if they’re not already on the map.
 
-The map’s adjusted region covers the smallest longitudinal span possible. For example, passing an array that consists of two annotations for the cities Tokyo and Los Angeles, and a polyline that represents the flight path between them, to [`showItems(items, options)`](map/showitems.md) updates the region to cover the Pacific Ocean.
+The map’s adjusted region covers the smallest longitudinal span possible. For example, passing an array that consists of two annotations for the cities Tokyo and Los Angeles, and a polyline that represents the flight path between them, to [`showItems()`](map/showitems.md) updates the region to cover the Pacific Ocean.
 
-The [`showItems(items, options)`](map/showitems.md) method factors in the size of the specified annotations when updating the map’s region so the entirety of the annotations are visible. Similarly, it ensures that the map shows an overlay with thick lines in its entirety. In some cases, it’s possible that the map can’t show all items at once, or the actual padding doesn’t match the requested padding. This happens if:
+The [`showItems()`](map/showitems.md) method factors in the size of the specified annotations when updating the map’s region so the entirety of the annotations are visible. Similarly, it ensures that the map shows an overlay with thick lines in its entirety. In some cases, it’s possible that the map can’t show all items at once, or the actual padding doesn’t match the requested padding. This happens if:
 
 - One or more items falls outside of the visible map region, even at the minimum zoom level.
 - The zoom level, which determines the amount of padding, snaps to a level that has a different amount of padding than you request.

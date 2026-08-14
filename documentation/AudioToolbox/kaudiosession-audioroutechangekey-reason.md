@@ -20,11 +20,11 @@ var kAudioSession_AudioRouteChangeKey_Reason: String { get }
 
 #### Discussion
 
-Value is a [`CFNumber`](https://developer.apple.com/documentation/CoreFoundation/CFNumber) object that identifies the reason for the audio route change. See [`Audio Route Change Reasons`](1618380-audio-route-change-reasons.md).
+Value is a [`CFNumber`](https://developer.apple.com/documentation/corefoundation/cfnumber) object that identifies the reason for the audio route change. See [`Audio Route Change Reasons`](1618380-audio-route-change-reasons.md).
 
 #### Discussion
 
-> **Note**:  It is typically more convenient to instead use the [`CFString`](https://developer.apple.com/documentation/CoreFoundation/CFString) version of this constant, [`kAudioSession_RouteChangeKey_Reason`](kaudiosession_routechangekey_reason.md).
+> **Note**:  It is typically more convenient to instead use the [`CFString`](https://developer.apple.com/documentation/corefoundation/cfstring) version of this constant, [`kAudioSession_RouteChangeKey_Reason`](kaudiosession_routechangekey_reason.md).
 
 
 ---

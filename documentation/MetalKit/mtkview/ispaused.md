@@ -21,16 +21,16 @@ var isPaused: Bool { get set }
 
 #### Discussion
 
-If the value is [`false`](https://developer.apple.com/documentation/Swift/false), the view periodically redraws the contents, at a frame rate set by the value of [`preferredFramesPerSecond`](mtkview/preferredframespersecond.md).
+If the value is [`false`](https://developer.apple.com/documentation/swift/false), the view periodically redraws the contents, at a frame rate set by the value of [`preferredFramesPerSecond`](mtkview/preferredframespersecond.md).
 
-The default value is [`false`](https://developer.apple.com/documentation/Swift/false).
+The default value is [`false`](https://developer.apple.com/documentation/swift/false).
 
 ## See Also
 
 - [var preferredFramesPerSecond: Int](mtkview/preferredframespersecond.md)
   The rate at which the view redraws its contents.
 - [var enableSetNeedsDisplay: Bool](mtkview/enablesetneedsdisplay.md)
-  A Boolean value that indicates whether the view responds to [`setNeedsDisplay()`](https://developer.apple.com/documentation/UIKit/UIView/setNeedsDisplay()).
+  A Boolean value that indicates whether the view responds to [`setNeedsDisplay()`](https://developer.apple.com/documentation/uikit/uiview/setneedsdisplay()).
 - [func draw()](mtkview/draw.md)
   Redraws the view’s contents immediately.
 - [var presentsWithTransaction: Bool](mtkview/presentswithtransaction.md)

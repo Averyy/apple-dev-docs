@@ -16,7 +16,7 @@ func NSIsControllerMarker(_ object: Any?) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/Swift/true) if the object is one of the designated controller markers or [`false`](https://developer.apple.com/documentation/Swift/false) if it is not.
+[`true`](https://developer.apple.com/documentation/swift/true) if the object is one of the designated controller markers or [`false`](https://developer.apple.com/documentation/swift/false) if it is not.
 
 #### Discussion
 
@@ -38,7 +38,7 @@ See the `NSKeyValueBinding.h` header file for further details.
   Values that specify a binding for certain methods.
 - [struct NSBindingOption](nsbindingoption.md)
 - [struct NSBindingInfoKey](nsbindinginfokey.md)
-- [NSKeyValueBindingCreation](../ObjectiveC/nskeyvaluebindingcreation.md)
+- [NSKeyValueBindingCreation](../objectivec/nskeyvaluebindingcreation.md)
   A set of methods that you can use to create and remove bindings between view objects and controllers, or between controllers and model objects.
 - [Binding dictionary keys](binding-dictionary-keys.md)
   These constants define keys in the binding information dictionary.

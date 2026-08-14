@@ -33,8 +33,8 @@ This method generates a linear-gradient image. The effect creates a gradient tha
 
 The linear-gradient filter uses the following properties:
 
-- **`point0`**: A [`CGPoint`](https://developer.apple.com/documentation/CoreFoundation/CGPoint) representing the starting position of the gradient.
-- **`point1`**: A [`CGPoint`](https://developer.apple.com/documentation/CoreFoundation/CGPoint) representing the ending position of the gradient.
+- **`point0`**: A [`CGPoint`](https://developer.apple.com/documentation/corefoundation/cgpoint) representing the starting position of the gradient.
+- **`point1`**: A [`CGPoint`](https://developer.apple.com/documentation/corefoundation/cgpoint) representing the ending position of the gradient.
 - **`color0`**: A [`CIColor`](cicolor.md) representing the first color to use in the gradient.
 - **`color1`**: A [`CIColor`](cicolor.md) representing the second color to use the gradient.
 
@@ -51,7 +51,7 @@ func linear() -> CIImage {
 }
 ```
 
-![An image that gradually changes in color from yellow in the top left corner to light blue in the bottom right corner.](https://docs-assets.developer.apple.com/published/155a7d8d488e90f4d2f7a4a99d67f1ec/media-3558797%402x.png)
+![An image that gradually changes in color from yellow in the top left corner to light blue in the bottom right corner.](/images/com.apple.coreimage/media-3558797@2x.png)
 
 ## See Also
 

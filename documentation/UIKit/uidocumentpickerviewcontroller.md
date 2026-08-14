@@ -33,10 +33,10 @@ Use a document picker view controller to select a document to open or export, an
 
 Both the open and export operations grant access to documents outside your app’s sandbox. This access gives users an unprecedented amount of flexibility when working with their documents. However, it also adds a layer of complexity to your file handling. External documents have the following additional requirements:
 
-- The open and move operations provide security-scoped URLs for all external documents. Call the [`startAccessingSecurityScopedResource()`](https://developer.apple.com/documentation/Foundation/NSURL/startAccessingSecurityScopedResource()) method to access or bookmark these documents, and the [`stopAccessingSecurityScopedResource()`](https://developer.apple.com/documentation/Foundation/NSURL/stopAccessingSecurityScopedResource()) method to release them. If you’re using a `UIDocument` subclass to manage your document, it automatically manages the security-scoped URL for you.
-- Always use file coordinators (see [`NSFileCoordinator`](https://developer.apple.com/documentation/Foundation/NSFileCoordinator)) to read and write to external documents.
-- Always use a file presenter (see [`NSFilePresenter`](https://developer.apple.com/documentation/Foundation/NSFilePresenter)) when displaying the contents of an external document.
-- Don’t save URLs that the open and move operations provide. You can, however, save a bookmark to these URLs after calling [`startAccessingSecurityScopedResource()`](https://developer.apple.com/documentation/Foundation/NSURL/startAccessingSecurityScopedResource()) to ensure you have access. Call the [`bookmarkData(options:includingResourceValuesForKeys:relativeTo:)`](https://developer.apple.com/documentation/Foundation/NSURL/bookmarkData(options:includingResourceValuesForKeys:relativeTo:)) method and pass in the [`withSecurityScope`](https://developer.apple.com/documentation/Foundation/NSURL/BookmarkCreationOptions/withSecurityScope) option, creating a bookmark that contains a security-scoped URL.
+- The open and move operations provide security-scoped URLs for all external documents. Call the [`startAccessingSecurityScopedResource()`](https://developer.apple.com/documentation/foundation/nsurl/startaccessingsecurityscopedresource()) method to access or bookmark these documents, and the [`stopAccessingSecurityScopedResource()`](https://developer.apple.com/documentation/foundation/nsurl/stopaccessingsecurityscopedresource()) method to release them. If you’re using a `UIDocument` subclass to manage your document, it automatically manages the security-scoped URL for you.
+- Always use file coordinators (see [`NSFileCoordinator`](https://developer.apple.com/documentation/foundation/nsfilecoordinator)) to read and write to external documents.
+- Always use a file presenter (see [`NSFilePresenter`](https://developer.apple.com/documentation/foundation/nsfilepresenter)) when displaying the contents of an external document.
+- Don’t save URLs that the open and move operations provide. You can, however, save a bookmark to these URLs after calling [`startAccessingSecurityScopedResource()`](https://developer.apple.com/documentation/foundation/nsurl/startaccessingsecurityscopedresource()) to ensure you have access. Call the [`bookmarkData(options:includingResourceValuesForKeys:relativeTo:)`](https://developer.apple.com/documentation/foundation/nsurl/bookmarkdata(options:includingresourcevaluesforkeys:relativeto:)) method and pass in the [`withSecurityScope`](https://developer.apple.com/documentation/foundation/nsurl/bookmarkcreationoptions/withsecurityscope) option, creating a bookmark that contains a security-scoped URL.
 
 For more information about working with external documents, see [`Providing access to directories`](providing-access-to-directories.md) and [`Adding a document browser to your app`](adding-a-document-browser-to-your-app.md).
 
@@ -88,17 +88,17 @@ For more information about working with external documents, see [`Providing acce
 ### Inherits From
 - [UIViewController](uiviewcontroller.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCoding](../Foundation/NSCoding.md)
-- [NSExtensionRequestHandling](../Foundation/NSExtensionRequestHandling.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [NSTouchBarProvider](../AppKit/NSTouchBarProvider.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCoding](../foundation/nscoding.md)
+- [NSExtensionRequestHandling](../foundation/nsextensionrequesthandling.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSTouchBarProvider](../appkit/nstouchbarprovider.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 - [UIActivityItemsConfigurationProviding](uiactivityitemsconfigurationproviding.md)
 - [UIAppearanceContainer](uiappearancecontainer.md)
 - [UIContentContainer](uicontentcontainer.md)

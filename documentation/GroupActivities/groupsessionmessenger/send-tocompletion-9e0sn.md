@@ -26,7 +26,7 @@ Use this method to send data that you package into a custom class or structure. 
 ## Parameters
 
 - `participants`: The recipients of the message. The default value of this parameter is the set of all active participants in the session. Use the [`Participants.only(_:)`](participants/only(_:)-swift.enum.case.md) option to specify a subset of participants.
-- `completion`: The handler block to call with the results of the delivery attempt. The handler has no return value and takes a single [`Error`](https://developer.apple.com/documentation/Swift/Error) parameter. The value of this parameter is `nil` if delivery succeeds; otherwise, it contains an appropriate error object.
+- `completion`: The handler block to call with the results of the delivery attempt. The handler has no return value and takes a single [`Error`](https://developer.apple.com/documentation/swift/error) parameter. The value of this parameter is `nil` if delivery succeeds; otherwise, it contains an appropriate error object.
 
 ## See Also
 

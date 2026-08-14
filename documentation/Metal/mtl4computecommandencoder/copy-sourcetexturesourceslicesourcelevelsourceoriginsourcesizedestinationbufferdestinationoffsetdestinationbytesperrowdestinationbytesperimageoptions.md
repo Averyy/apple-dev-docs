@@ -21,7 +21,7 @@ func copy(sourceTexture: any MTLTexture, sourceSlice: Int, sourceLevel: Int, sou
 
 ## Parameters
 
-- `sourceTexture`: An [`MTLTexture`](mtltexture.md) texture that the command copies data from. To read the source texture contents, you need to set its [`isFramebufferOnly`](mtltexture/isframebufferonly.md) property to [`false`](https://developer.apple.com/documentation/Swift/false) prior to drawing into it.
+- `sourceTexture`: An [`MTLTexture`](mtltexture.md) texture that the command copies data from. To read the source texture contents, you need to set its [`isFramebufferOnly`](mtltexture/isframebufferonly.md) property to [`false`](https://developer.apple.com/documentation/swift/false) prior to drawing into it.
 - `sourceSlice`: A slice within `sourceTexture` the command uses as a starting point to copy data from. Set this to `0` if `sourceTexture` isn’t a texture array or a cube texture.
 - `sourceLevel`: A mipmap level within `sourceTexture`.
 - `sourceOrigin`: An [`MTLOrigin`](mtlorigin.md) instance that represents a location within `sourceTexture` that the command begins copying data from. Assign `0` to each dimension that’s not relevant to `sourceTexture`.

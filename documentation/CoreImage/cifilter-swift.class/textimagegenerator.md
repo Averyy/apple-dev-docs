@@ -31,8 +31,8 @@ The text image generator filter uses the following properties:
 
 - **`text`**: The `string` to render. The string can contain non-ASCII characters.
 - **`fontName`**: A `string` representing the name of the font to be used to generate the image.
-- **`fontSize`**: A `float` representing the size of the font as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
-- **`scaleFactor`**: A `float` representing the scale of the font for the generated text as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+- **`fontSize`**: A `float` representing the size of the font as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
+- **`scaleFactor`**: A `float` representing the scale of the font for the generated text as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
 
 The following code creates a filter that generates a string of text as a grayscale image:
 
@@ -47,7 +47,7 @@ func textImage(inputText: String) -> CIImage {
 }
 ```
 
-![An image with the text Hello World! in black and a hand wave emoticon in gray.](https://docs-assets.developer.apple.com/published/6c5365a54c0a0655883f08fb58a25a73/media-3546321%402x.png)
+![An image with the text Hello World! in black and a hand wave emoticon in gray.](/images/com.apple.coreimage/media-3546321@2x.png)
 
 ## See Also
 

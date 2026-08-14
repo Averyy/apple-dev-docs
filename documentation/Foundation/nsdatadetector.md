@@ -26,7 +26,7 @@ Find dates, addresses, links, phone numbers, and transit information in natural 
 
 `NSDataDetector` returns the results of matching content in [`NSTextCheckingResult`](nstextcheckingresult.md) objects. The [`NSTextCheckingResult`](nstextcheckingresult.md) objects that `NSDataDetector` returns are different from those that [`NSRegularExpression`](nsregularexpression.md) returns. The results are one of the data detector’s types and contain the corresponding properties. For example, results of type [`date`](nstextcheckingresult/checkingtype/date.md) have a [`date`](nstextcheckingresult/date.md), [`timeZone`](nstextcheckingresult/timezone.md), and [`duration`](nstextcheckingresult/duration.md); and results of type [`link`](nstextcheckingresult/checkingtype/link.md) have a [`url`](nstextcheckingresult/url.md).
 
-> ❗ **Important**:  Don’t use `NSDataDetector` to validate data. `NSDataDetector` discards potential matches in case of uncertainty. Use a class specific to the type of data for validation instead. For example, attempt to instantiate a [`URL`](url.md) object using [`init(string:)`](url/init(string:).md) to validate a URL string. A valid URL string returns an instance of [`URL`](url.md), while an invalid URL string returns [`nil`](https://developer.apple.com/documentation/ObjectiveC/nil-227m0).
+> ❗ **Important**:  Don’t use `NSDataDetector` to validate data. `NSDataDetector` discards potential matches in case of uncertainty. Use a class specific to the type of data for validation instead. For example, attempt to instantiate a [`URL`](url.md) object using [`init(string:)`](url/init(string:).md) to validate a URL string. A valid URL string returns an instance of [`URL`](url.md), while an invalid URL string returns [`nil`](https://developer.apple.com/documentation/objectivec/nil-227m0).
 
 ##### Examples
 
@@ -102,17 +102,17 @@ The `NSRegularExpression` block object enumerator is the most general and flexib
 ### Inherits From
 - [NSRegularExpression](nsregularexpression.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
 - [NSCoding](nscoding.md)
 - [NSCopying](nscopying.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 - [NSSecureCoding](nssecurecoding.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

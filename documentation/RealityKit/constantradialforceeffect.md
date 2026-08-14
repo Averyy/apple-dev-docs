@@ -42,8 +42,8 @@ This force’s magnitude is constant and does not depend on objects’ distances
 ## Relationships
 
 ### Conforms To
-- [Decodable](../Swift/Decodable.md)
-- [Encodable](../Swift/Encodable.md)
+- [Decodable](../swift/decodable.md)
+- [Encodable](../swift/encodable.md)
 - [ForceEffectProtocol](forceeffectprotocol.md)
 
 ## See Also

@@ -18,7 +18,7 @@ After user registration completes, macOS sends the key request. However, macOS c
 
 The following flowchart provides a high-level overview of the key request flow:
 
-![A flowchart shows a Device icon and Identity provider icon at the top of a looping process that starts with requesting and receiving a server nonce value and then JSON Object Signing and Encryption (JOSE) key request, followed by decrypting and validating the key response, saving the key and key context, and binding the key to the user account. ](https://docs-assets.developer.apple.com/published/4cb86b9083b10065750ae5b107991c14/media-4294341%402x.png)
+![A flowchart shows a Device icon and Identity provider icon at the top of a looping process that starts with requesting and receiving a server nonce value and then JSON Object Signing and Encryption (JOSE) key request, followed by decrypting and validating the key response, saving the key and key context, and binding the key to the user account. ](/images/com.apple.authenticationservices/media-4294341@2x.png)
 
 The request is a JSON Object Signing and Encryption object (JOSE) that’s formatted per RFC 7519 and signed with the `DeviceSigningKey` and `ES256` per RFC 7515.
 
@@ -158,7 +158,7 @@ The system uses the key exchange request when using the keys to decrypt data. Ty
 
 The following graph provides a high-level overview of the key exchange flow:
 
-![A flowchart shows a Device icon, Token extension icon, and Identity provider icon at the top of a looping process that starts with obtaining a certificate with the user public key and performing Diffie-Hellman (DH) key exchange, followed by decrypting data and obtaining a server nonce to exchange the key and return it to the device.](https://docs-assets.developer.apple.com/published/0787a3d10079c1d6229796291e5d5fdd/media-4294343%402x.png)
+![A flowchart shows a Device icon, Token extension icon, and Identity provider icon at the top of a looping process that starts with obtaining a certificate with the user public key and performing Diffie-Hellman (DH) key exchange, followed by decrypting data and obtaining a server nonce to exchange the key and return it to the device.](/images/com.apple.authenticationservices/media-4294343@2x.png)
 
 The key exchange request is a JOSE that’s formatted per RFC 7519 and signed with the `DeviceSigningKey` and `ES256` per RFC 7515.
 

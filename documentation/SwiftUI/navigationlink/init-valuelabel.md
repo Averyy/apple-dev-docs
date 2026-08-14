@@ -35,7 +35,7 @@ When someone activates the navigation link that this initializer creates, SwiftU
 - If there’s no matching modifier, but the link appears in a [`List`](list.md) with selection inside a leading column of a navigation split view, the link updates the selection, which might affect the appearance of a trailing view. For an example of this, see [`NavigationLink`](navigationlink.md).
 - In other cases, the link doesn’t do anything.
 
-Because this initializer takes a value that conforms to the [`Codable`](https://developer.apple.com/documentation/Swift/Codable) protocol, you ensure that a [`NavigationPath`](navigationpath.md) that includes this link can produce a non-`nil` value for its [`codable`](navigationpath/codable.md) property. This helps to make the path serializable.
+Because this initializer takes a value that conforms to the [`Codable`](https://developer.apple.com/documentation/swift/codable) protocol, you ensure that a [`NavigationPath`](navigationpath.md) that includes this link can produce a non-`nil` value for its [`codable`](navigationpath/codable.md) property. This helps to make the path serializable.
 
 ## Parameters
 

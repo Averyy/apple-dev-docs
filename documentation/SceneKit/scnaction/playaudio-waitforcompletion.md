@@ -33,7 +33,7 @@ This action is not reversible; the reverse of this action is the same action.
 ## Parameters
 
 - `source`: The audio source to play.
-- `wait`: If [`true`](https://developer.apple.com/documentation/Swift/true), the duration of this action is the same as the length of the audio playback. If [`false`](https://developer.apple.com/documentation/Swift/false), the action is considered to have completed immediately.
+- `wait`: If [`true`](https://developer.apple.com/documentation/swift/true), the duration of this action is the same as the length of the audio playback. If [`false`](https://developer.apple.com/documentation/swift/false), the action is considered to have completed immediately.
 
 
 ---

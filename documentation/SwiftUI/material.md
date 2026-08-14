@@ -35,11 +35,11 @@ ZStack {
 
 In the example above, the [`ZStack`](zstack.md) layers a [`Label`](label.md) on top of the color [`teal`](shapestyle/teal.md). The background modifier inserts the regular material below the label, blurring the part of the background that the label — including its padding — covers:
 
-![A screenshot of a label on a teal background, where the area behind](https://docs-assets.developer.apple.com/published/ec52cb3477c1a5d9010255e4b9a0471c/Material-1%402x.png)
+![A screenshot of a label on a teal background, where the area behind](/images/com.apple.SwiftUI/Material-1@2x.png)
 
 A material isn’t a view, but adding a material is like inserting a translucent layer between the modified view and its background:
 
-![An illustration that shows a background layer below a material layer,](https://docs-assets.developer.apple.com/published/ed7c89d0a28ecc2dc6fde740b26d8c16/Material-2%402x.png)
+![An illustration that shows a background layer below a material layer,](/images/com.apple.SwiftUI/Material-2@2x.png)
 
 The blurring effect provided by the material isn’t simple opacity. Instead, it uses a platform-specific blending that produces an effect that resembles heavily frosted glass. You can see this more easily with a complex background, like an image:
 
@@ -54,11 +54,11 @@ ZStack {
 }
 ```
 
-![A screenshot of a label on an image background, where the area behind](https://docs-assets.developer.apple.com/published/258a1d722beb2f0f3fcea8da8e586d81/Material-3%402x.png)
+![A screenshot of a label on an image background, where the area behind](/images/com.apple.SwiftUI/Material-3@2x.png)
 
 For physical materials, the degree to which the background colors pass through depends on the thickness. The effect also varies with light and dark appearance:
 
-![An array of labels on a teal background. The first column, labeled light](https://docs-assets.developer.apple.com/published/1968a1a6b1ac0e4648274c39838f0cfc/Material-4%402x.png)
+![An array of labels on a teal background. The first column, labeled light](/images/com.apple.SwiftUI/Material-4@2x.png)
 
 If you need a material to have a particular shape, you can use the [`background(_:in:fillStyle:)`](view/background(_:in:fillstyle:).md) modifier. For example, you can create a material with rounded corners:
 
@@ -71,7 +71,7 @@ ZStack {
 }
 ```
 
-![A screenshot of a label on a teal background, where the area behind](https://docs-assets.developer.apple.com/published/cc2fb03f54a0c65238963b18f70d2cfb/Material-5%402x.png)
+![A screenshot of a label on a teal background, where the area behind](/images/com.apple.SwiftUI/Material-5@2x.png)
 
 When you add a material, foreground elements exhibit vibrancy, a context-specific blend of the foreground and background colors that improves contrast. However using [`foregroundStyle(_:)`](view/foregroundstyle(_:).md) to set a custom foreground style — excluding the hierarchical styles, like [`secondary`](shapestyle/secondary-swift.type.property.md) — disables vibrancy.
 
@@ -99,10 +99,10 @@ When you add a material, foreground elements exhibit vibrancy, a context-specifi
 ## Relationships
 
 ### Conforms To
-- [Copyable](../Swift/Copyable.md)
-- [Escapable](../Swift/Escapable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Copyable](../swift/copyable.md)
+- [Escapable](../swift/escapable.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 - [ShapeStyle](shapestyle.md)
 
 ## See Also

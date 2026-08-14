@@ -50,8 +50,8 @@ let response = try await session.respond(to: "Tell me a joke!")
 ## Relationships
 
 ### Inherits From
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 ### Conforming Types
 - [PrivateCloudComputeLanguageModel](privatecloudcomputelanguagemodel.md)
 - [SystemLanguageModel](systemlanguagemodel.md)

@@ -10,9 +10,9 @@ Develop drivers for video capture and playback devices.
 
 #### Overview
 
-The VideoDriverKit framework supports the development of DriverKit-based video extensions that communicate with [`Core Media`](https://developer.apple.com/documentation/CoreMedia). VideoDriverKit handles all of the necessary user client communication between CoreMedia and the driver extension, which eliminates the need to use `IOVideoFamily` kexts and [`Device Abstraction Layer (DAL) Plug-Ins`](https://developer.apple.com/documentation/CoreMediaIO/device-abstraction-layer-dal-plug-ins).
+The VideoDriverKit framework supports the development of DriverKit-based video extensions that communicate with [`Core Media`](https://developer.apple.com/documentation/coremedia). VideoDriverKit handles all of the necessary user client communication between CoreMedia and the driver extension, which eliminates the need to use `IOVideoFamily` kexts and [`Device Abstraction Layer (DAL) Plug-Ins`](https://developer.apple.com/documentation/coremediaio/device-abstraction-layer-dal-plug-ins).
 
-Develop your driver by subclassing [`IOUserVideoDriver`](iouservideodriver.md). Then use the [`System Extensions`](https://developer.apple.com/documentation/SystemExtensions) framework to install and upgrade your driver.
+Develop your driver by subclassing [`IOUserVideoDriver`](iouservideodriver.md). Then use the [`System Extensions`](https://developer.apple.com/documentation/systemextensions) framework to install and upgrade your driver.
 
 > **Note**: VideoDriverKit is available on macOS.
 

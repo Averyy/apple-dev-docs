@@ -26,7 +26,7 @@ The observation — or list of observations — the request produces.
 
 ## Parameters
 
-- `image`: The input [`CIImage`](https://developer.apple.com/documentation/CoreImage/CIImage) on which to perform the request.
+- `image`: The input [`CIImage`](https://developer.apple.com/documentation/coreimage/ciimage) on which to perform the request.
 - `orientation`: The orientation of the input image. Default is `nil`.
 
 ## See Also

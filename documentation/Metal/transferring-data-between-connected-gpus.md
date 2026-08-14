@@ -87,7 +87,7 @@ To copy data between members of a peer group, make a *remote view* on the second
 
 ##### Create a Remote View of a Resource
 
-To create a remote view of a resource, the device instance you make the resource view on needs to share the same [`peerGroupID`](mtldevice/peergroupid.md) as the device instance that created the resource. In addition, the resource needs to use the [`MTLStorageMode.private`](mtlstoragemode/private.md) storage mode or be backed by an [`IOSurface`](https://developer.apple.com/documentation/IOSurface/IOSurface).
+To create a remote view of a resource, the device instance you make the resource view on needs to share the same [`peerGroupID`](mtldevice/peergroupid.md) as the device instance that created the resource. In addition, the resource needs to use the [`MTLStorageMode.private`](mtlstoragemode/private.md) storage mode or be backed by an [`IOSurface`](https://developer.apple.com/documentation/iosurface/iosurface).
 
 To create a buffer view, call the [`makeRemoteBufferView(_:)`](mtlbuffer/makeremotebufferview(_:).md) method:
 
@@ -151,7 +151,7 @@ id<MTLBlitCommandEncoder> blitEncoder = [commandBuffer blitCommandEncoder];
 
 As shown in the following illustration, there are three resource instances: the original resource that contains the data, a remote view that references the data, and a resource that receives the data.
 
-![A figure showing two devices. The source buffer or texture is created by the first device. The second device has a remote view of the source texture and a destination texture.](https://docs-assets.developer.apple.com/published/9bd44e5a93a5da65ff277553c3c99ad1/transferring-data-between-connected-gpus-1%402x.png)
+![A figure showing two devices. The source buffer or texture is created by the first device. The second device has a remote view of the source texture and a destination texture.](/images/com.apple.metal/transferring-data-between-connected-gpus-1@2x.png)
 
 ##### Synchronize Access to Resources
 

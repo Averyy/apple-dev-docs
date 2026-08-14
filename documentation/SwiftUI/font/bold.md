@@ -22,7 +22,7 @@ func bold(_ isActive: Bool) -> Font
 
 #### Discussion
 
-For fonts created from text styles, passing `true` could mean applying emphasized styling, which does not necessarily mean the bold weight specifically, so this modifier is not to be confused with [`weight(_:)`](Font/weight(_:).md).
+For fonts created from text styles, passing `true` could mean applying emphasized styling, which does not necessarily mean the bold weight specifically, so this modifier is not to be confused with [`weight(_:)`](font/weight(_:).md).
 
 For example:
 
@@ -30,13 +30,13 @@ For example:
 Font.body.bold(true)
 ```
 
-will most likely get you the emphasized version of body text style, which is often in [`semibold`](Font/Weight/semibold.md) weight. While
+will most likely get you the emphasized version of body text style, which is often in [`semibold`](font/weight/semibold.md) weight. While
 
 ```swift
 Font.body.weight(.bold)
 ```
 
-will specifically get you the body text style font in the [`bold`](Font/Weight/bold.md) weight.
+will specifically get you the body text style font in the [`bold`](font/weight/bold.md) weight.
 
 Using:
 

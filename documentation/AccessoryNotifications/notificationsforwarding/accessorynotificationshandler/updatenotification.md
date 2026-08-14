@@ -8,7 +8,6 @@ Updates a notification with new content.
 
 **Availability**:
 - iOS 26.5+
-- iPadOS 26.5+
 
 ## Declaration
 

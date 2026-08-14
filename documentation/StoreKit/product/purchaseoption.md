@@ -22,7 +22,7 @@ struct PurchaseOption
 
 #### Overview
 
-Associate purchase options with an in-app purchase when you call the methods to initiate a purchase, such as [`purchase(options:)`](product/purchase(options:).md) or [`purchase(confirmIn:options:)`](product/purchase(confirmin:options:)-6dj6y.md). Use the testing-specific options with [`StoreKit Test`](https://developer.apple.com/documentation/StoreKitTest) or in the sandbox testing environment.
+Associate purchase options with an in-app purchase when you call the methods to initiate a purchase, such as [`purchase(options:)`](product/purchase(options:).md) or [`purchase(confirmIn:options:)`](product/purchase(confirmin:options:)-6dj6y.md). Use the testing-specific options with [`StoreKit Test`](https://developer.apple.com/documentation/storekittest) or in the sandbox testing environment.
 
 Purchase options enable you to provide additional information for the purchase, such as an app account token, promotional offer, win back offer, and quantity. You can also use purchase options to indicate how the transaction behaves if the storefront changes, and to indicate whether the transaction is eligible for an introductory offer.
 
@@ -32,7 +32,7 @@ Purchase options enable you to provide additional information for the purchase, 
 
 In the sandbox testing environment, use [`simulatesAskToBuyInSandbox(_:)`](product/purchaseoption/simulatesasktobuyinsandbox(_:).md) to test Ask To Buy scenarios.
 
-In the Xcode testing environment with [`StoreKit Test`](https://developer.apple.com/documentation/StoreKitTest), use the following testing-specific purchase options when you call [`buyProduct(identifier:options:)`](https://developer.apple.com/documentation/StoreKitTest/SKTestSession/buyProduct(identifier:options:)):
+In the Xcode testing environment with [`StoreKit Test`](https://developer.apple.com/documentation/storekittest), use the following testing-specific purchase options when you call [`buyProduct(identifier:options:)`](https://developer.apple.com/documentation/storekittest/sktestsession/buyproduct(identifier:options:)):
 
 - Use [`codeOffer(referenceName:)`](product/purchaseoption/codeoffer(referencename:).md) and [`promotionalOffer(id:)`](product/purchaseoption/promotionaloffer(id:).md) to simulate customers redeeming the offers.
 - Use [`purchaseDate(_:renewalBehavior:)`](product/purchaseoption/purchasedate(_:renewalbehavior:).md) to control the transaction date and subscription renewal behavior.
@@ -84,13 +84,13 @@ In the Xcode testing environment with [`StoreKit Test`](https://developer.apple.
 ## Relationships
 
 ### Conforms To
-- [Copyable](../Swift/Copyable.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Escapable](../Swift/Escapable.md)
-- [Hashable](../Swift/Hashable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Copyable](../swift/copyable.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Escapable](../swift/escapable.md)
+- [Hashable](../swift/hashable.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

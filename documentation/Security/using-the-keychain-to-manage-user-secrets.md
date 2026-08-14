@@ -10,7 +10,7 @@ Apps often need access to sensitive user data such as passwords, but keeping the
 
 Keychain services helps solve this problem by providing easy access to encrypted storage. Your app uses the keychain, along with minimal user interaction, to provide a good user experience. For example, consider a process like the one depicted in Figure 1 for storing an Internet password.
 
-![A flow diagram that depicts a process for using a keychain item when possible to authenticate against a server, and prompting the user when the keychain item is not found or is out of date.](https://docs-assets.developer.apple.com/published/6e130349e0acca782d2d0c7dbcb81660/media-2928527%402x.png)
+![A flow diagram that depicts a process for using a keychain item when possible to authenticate against a server, and prompting the user when the keychain item is not found or is out of date.](/images/com.apple.security/media-2928527@2x.png)
 
 ##### Involve the User When Needed
 

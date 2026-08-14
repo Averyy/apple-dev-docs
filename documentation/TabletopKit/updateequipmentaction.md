@@ -35,7 +35,7 @@ To create an update equipment action, use the [`updateEquipment(_:state:context:
 ## Relationships
 
 ### Conforms To
-- [Equatable](../Swift/Equatable.md)
+- [Equatable](../swift/equatable.md)
 - [TabletopAction](tabletopaction.md)
 
 ## See Also

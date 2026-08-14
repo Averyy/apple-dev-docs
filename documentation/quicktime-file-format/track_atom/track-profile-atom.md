@@ -7,7 +7,7 @@ A child atom of movie atoms or track atoms.
 
 #### Overview
 
-See [`Movie profile atom ('prfl')`](movie_profile_atom.md).
+See [`Movie profile atom`](movie_profile_atom.md).
 
 ## See Also
 

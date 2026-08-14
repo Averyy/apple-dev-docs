@@ -26,20 +26,20 @@ The project contains two targets:
 
 To run the sample code project, you first need to build and run `NetworkingDriverKitSampleApp`, which installs the dexts.
 
-Start by choosing new bundle IDs for the app and driver. The bundle IDs included with the project are already associated with specific App IDs, so you need unique identifiers to create your own App IDs. Use a reverse-DNS format for your identifier (for more information, see [`Preparing your app for distribution`](https://developer.apple.com/documentation/Xcode/preparing-your-app-for-distribution)). Then, in `DriverLoadingViewModel.swift`, edit the definition of `dextIdentifier` to use the string you chose for your driver’s bundle ID.
+Start by choosing new bundle IDs for the app and driver. The bundle IDs included with the project are already associated with specific App IDs, so you need unique identifiers to create your own App IDs. Use a reverse-DNS format for your identifier (for more information, see [`Preparing your app for distribution`](https://developer.apple.com/documentation/xcode/preparing-your-app-for-distribution)). Then, in `DriverLoadingViewModel.swift`, edit the definition of `dextIdentifier` to use the string you chose for your driver’s bundle ID.
 
 The installer and driver both need specific entitlements to run. For `NetworkingDriverKitSampleApp`, request the following entitlements:
 
-- [`System Extension Entitlement`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.system-extension.install)
-- [`App Sandbox Entitlement`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.security.app-sandbox)
-- [`com.apple.security.files.user-selected.read-only`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.security.files.user-selected.read-only)
+- [`System Extension Entitlement`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.system-extension.install)
+- [`App Sandbox Entitlement`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.security.app-sandbox)
+- [`com.apple.security.files.user-selected.read-only`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.security.files.user-selected.read-only)
 
 For the `NetworkingDriverKitSample` target, request the following:
 
-- [`com.apple.developer.driverkit`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.driverkit)
-- [`com.apple.developer.driverkit.family.networking`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.driverkit.family.networking)
+- [`com.apple.developer.driverkit`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.driverkit)
+- [`com.apple.developer.driverkit.family.networking`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.driverkit.family.networking)
 
-For more information on requesting entitlements, see [`Requesting Entitlements for DriverKit Development`](https://developer.apple.com/documentation/DriverKit/requesting-entitlements-for-driverkit-development).
+For more information on requesting entitlements, see [`Requesting Entitlements for DriverKit Development`](https://developer.apple.com/documentation/driverkit/requesting-entitlements-for-driverkit-development).
 
 Next, log in to your Apple Developer account and navigate to the [`Identifiers`](https://developer.apple.comhttps://developer.apple.com/account/resources/identifiers/list) list in the Certificates, IDs & Profiles section. From here, create new App IDs for `NetworkingDriverKitSampleApp` and `NetworkingDriverKitSample`.
 
@@ -58,13 +58,13 @@ Repeat these same steps to create a profile for `NetworkingDriverKitSample`, wit
 Back in Xcode, do the following:
 
 1. In the Project navigator’s Signing & Capabilities tab, disable “Automatically manage signing,” so that you can manually assign the provisioning profile. For each target, enter the unique bundle ID you chose earlier in the Bundle Identifier field, and use the Provisioning Profile popup to select the profile you downloaded in the previous two steps.
-2. If you want to run `NetworkingDriverKitSampleApp` directly from Xcode, enter dext development mode with the Terminal command `systemextensionsctl developer on` (for more information, see [`Debugging and testing system extensions`](https://developer.apple.com/documentation/DriverKit/debugging-and-testing-system-extensions)). Alternately, you can drag the built `DriverKitSample.app` from the build directory into the `/Applications` directory and run it from there.
+2. If you want to run `NetworkingDriverKitSampleApp` directly from Xcode, enter dext development mode with the Terminal command `systemextensionsctl developer on` (for more information, see [`Debugging and testing system extensions`](https://developer.apple.com/documentation/driverkit/debugging-and-testing-system-extensions)). Alternately, you can drag the built `DriverKitSample.app` from the build directory into the `/Applications` directory and run it from there.
 
 ##### Use the System Extensions Framework to Install the Driver Extension
 
 The `NetworkingDriverKitSampleApp` target declares `NetworkingDriverKitSample` as a dependency, so building the app target builds the dext and its installer together. When it’s running, `NetworkingDriverKitSampleApp` shows a single window with an Install Dext button.
 
-The app uses the [`System Extensions`](https://developer.apple.com/documentation/SystemExtensions) framework to install and activate the dext. For more information, see [`Installing System Extensions and Drivers`](https://developer.apple.com/documentation/SystemExtensions/installing-system-extensions-and-drivers).
+The app uses the [`System Extensions`](https://developer.apple.com/documentation/systemextensions) framework to install and activate the dext. For more information, see [`Installing System Extensions and Drivers`](https://developer.apple.com/documentation/systemextensions/installing-system-extensions-and-drivers).
 
 ```swift
 let request = OSSystemExtensionRequest
@@ -97,12 +97,12 @@ You can also inspect its entry in the I/O Registry with the Terminal command `io
 
 At startup, NetworkingDriverKit calls the following methods on a driver as part of its lifecycle:
 
-- [`init`](https://developer.apple.com/documentation/NetworkingDriverKit/IOUserNetworkEthernet/init) — The object initializer, which a driver uses to allocate and initialize its instance variables.
-- [`Start`](https://developer.apple.com/documentation/DriverKit/IOService/Start) — The message that indicates NetworkingDriverKit matched a provider for the driver. Drivers use this method to reset hardware and pepare it for operation.
-- [`SetPowerState`](https://developer.apple.com/documentation/DriverKit/IOService/SetPowerState) — An indication that the provider’s power state is changing. Drivers can use the first call to the method for setup, but typically do so in `Start()`. Instead, use this callback to get into and out of a safe state given the power setting.
-- [`SetInterfaceEnable`](https://developer.apple.com/documentation/NetworkingDriverKit/IOUserNetworkEthernet/SetInterfaceEnable-3v24g) — This call enables or disables the Ethernet service. A hardware driver uses this callback to bring the hardware up or down based on the Boolean `isEnable` parameter.
+- [`init`](https://developer.apple.com/documentation/networkingdriverkit/iousernetworkethernet/init) — The object initializer, which a driver uses to allocate and initialize its instance variables.
+- [`Start`](https://developer.apple.com/documentation/driverkit/ioservice/start) — The message that indicates NetworkingDriverKit matched a provider for the driver. Drivers use this method to reset hardware and pepare it for operation.
+- [`SetPowerState`](https://developer.apple.com/documentation/driverkit/ioservice/setpowerstate) — An indication that the provider’s power state is changing. Drivers can use the first call to the method for setup, but typically do so in `Start()`. Instead, use this callback to get into and out of a safe state given the power setting.
+- [`SetInterfaceEnable`](https://developer.apple.com/documentation/networkingdriverkit/iousernetworkethernet/setinterfaceenable-3v24g) — This call enables or disables the Ethernet service. A hardware driver uses this callback to bring the hardware up or down based on the Boolean `isEnable` parameter.
 
-The sample driver does its setup work in the [`Start`](https://developer.apple.com/documentation/DriverKit/IOService/Start) method. The driver uses this opportunity to set up queues to ensure that calls to and from NetworkingDriverKit are thread-safe. First, the sample creates a primary dispatch queue, which it calls `Default`.
+The sample driver does its setup work in the [`Start`](https://developer.apple.com/documentation/driverkit/ioservice/start) method. The driver uses this opportunity to set up queues to ensure that calls to and from NetworkingDriverKit are thread-safe. First, the sample creates a primary dispatch queue, which it calls `Default`.
 
 ```other
 ret = CopyDispatchQueue("Default", &ivars->dsQueue);
@@ -186,11 +186,11 @@ if (ret != kIOReturnSuccess)
 
 ##### Receive Packets in an Action Callback
 
-When the timer fires, it calls the sample’s `ReceiveTimer` callback. For the purposes of the sample project, this creates a fake ICMP request packet that it can submit to the receive-completion queue. For each packet dequeued from the [`IOUserNetworkRxSubmissionQueue`](https://developer.apple.com/documentation/NetworkingDriverKit/IOUserNetworkRxSubmissionQueue), this method performs the following steps:
+When the timer fires, it calls the sample’s `ReceiveTimer` callback. For the purposes of the sample project, this creates a fake ICMP request packet that it can submit to the receive-completion queue. For each packet dequeued from the [`IOUserNetworkRxSubmissionQueue`](https://developer.apple.com/documentation/networkingdriverkit/iousernetworkrxsubmissionqueue), this method performs the following steps:
 
 - Copies in a block of static data called `echoRequest`
 - Sets the packet’s data offset, data length, and link header length
-- Enqueues the packet in the [`IOUserNetworkRxCompletionQueue`](https://developer.apple.com/documentation/NetworkingDriverKit/IOUserNetworkRxCompletionQueue)
+- Enqueues the packet in the [`IOUserNetworkRxCompletionQueue`](https://developer.apple.com/documentation/networkingdriverkit/iousernetworkrxcompletionqueue)
 - Deallocates the packet
 - Resets the timer for the next simulated receive-packets event
 
@@ -245,7 +245,7 @@ if (ret != kIOReturnSuccess) {
 
 ##### Transmit Packets in an Action Callback
 
-The `Start` method created the action `TxPacketAvailable` to handle callbacks when the networking stack places packets on the transmit-submssion queue. Like the packet-receive handler, this method dequeues available packets, this time from the [`IOUserNetworkTxSubmissionQueue`](https://developer.apple.com/documentation/NetworkingDriverKit/IOUserNetworkTxSubmissionQueue), and loops over them. For the purposes of the sample, this method implementation just logs the data address, data offset, and link header length of each packet, and enqueues it in the [`IOUserNetworkTxCompletionQueue`](https://developer.apple.com/documentation/NetworkingDriverKit/IOUserNetworkTxCompletionQueue).
+The `Start` method created the action `TxPacketAvailable` to handle callbacks when the networking stack places packets on the transmit-submssion queue. Like the packet-receive handler, this method dequeues available packets, this time from the [`IOUserNetworkTxSubmissionQueue`](https://developer.apple.com/documentation/networkingdriverkit/iousernetworktxsubmissionqueue), and loops over them. For the purposes of the sample, this method implementation just logs the data address, data offset, and link header length of each packet, and enqueues it in the [`IOUserNetworkTxCompletionQueue`](https://developer.apple.com/documentation/networkingdriverkit/iousernetworktxcompletionqueue).
 
 ```other
 dequeueCount = ivars->txsQueue->DequeuePackets(packets, 8);
@@ -288,7 +288,7 @@ After authorization – via password, Touch ID, or an equivalent – the driver 
 
 ## See Also
 
-- [DriverKit sample code](../DriverKit/driverkit-sample-code.md)
+- [DriverKit sample code](../driverkit/driverkit-sample-code.md)
   Explore projects that demonstrate how to write macOS device drivers with the DriverKit family of frameworks.
 
 

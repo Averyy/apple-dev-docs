@@ -26,11 +26,11 @@ Simulating the interaction of lights with a material requires information about 
 
 Alternatively, you can use a texture image as a *normal map* that describes the orientation of a surface for each pixel in the texture. When SceneKit uses an image, it treats the R, G, and B components of each as the X, Y, and Z components of a surface normal vector. Because a normal map texture can store much more detailed surface information than a geometry, you can use a material’s normal property to simulate rough surfaces such as stone or add embossed or engraved designs to an otherwise smooth surface.
 
-By default, the normal property’s [`contents`](scnmaterialproperty/contents.md) object is a white color. Setting the normal property’s contents to any solid color disables normal mapping, causing SceneKit to shade the material using only the surface normal information provided by its geometry. Setting the normal property’s contents to an image or other texture-mapped content enables normal mapping, which also automatically sets the material’s [`isLitPerPixel`](scnmaterial/islitperpixel.md) property to [`true`](https://developer.apple.com/documentation/Swift/true).
+By default, the normal property’s [`contents`](scnmaterialproperty/contents.md) object is a white color. Setting the normal property’s contents to any solid color disables normal mapping, causing SceneKit to shade the material using only the surface normal information provided by its geometry. Setting the normal property’s contents to an image or other texture-mapped content enables normal mapping, which also automatically sets the material’s [`isLitPerPixel`](scnmaterial/islitperpixel.md) property to [`true`](https://developer.apple.com/documentation/swift/true).
 
 The figure below shows the effect of setting the normal property’s contents to a texture image on a material whose other properties have default contents.
 
-![None](https://docs-assets.developer.apple.com/published/f0a221ea6f2bdb4b225d7d5f089b4fc8/media-2934163%402x.png)
+![None](/images/com.apple.scenekit/media-2934163@2x.png)
 
 The material’s [`lightingModel`](scnmaterial/lightingmodel-swift.property.md) property determines the formula SceneKit uses to combine its surface normals and other visual properties with lights and other contents in a scene to produce the final color for each rendered pixel in the rendered scene. For details, see `Lighting Models`.
 

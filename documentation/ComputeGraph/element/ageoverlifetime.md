@@ -23,7 +23,7 @@ A normalized value representing age divided by lifetime
 
 Use this function to get a value between 0.0 (just created) and 1.0 (end of life), which is ideal for interpolating properties over the element’s lifetime.
 
-> **Note**: ![Graph](https://docs-assets.developer.apple.com/published/3e911934fec89dca62b330fb3faa729a/element__ageOverLifetime.svg)
+> **Note**: ![Graph](/images/com.apple.computegraph/element__ageOverLifetime.svg)
 
 
 ---

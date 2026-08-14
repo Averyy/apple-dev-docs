@@ -23,7 +23,7 @@ By default, Xcode preconfigures new projects to use scenes with the [`windowAppl
 
 Register a scene accessory to present noninteractive content on the connected display that supplements the interactive content your app presents on the built-in screen. For example, a game might show its content on a connected display and show game controls on the built-in screen.
 
-![An iPhone displays game controls while the game graphics are displayed on a connected television.](https://docs-assets.developer.apple.com/published/a228f29381d8cfc1afe87d40970ba29d/media-4030189%402x.png)
+![An iPhone displays game controls while the game graphics are displayed on a connected television.](/images/com.apple.uikit/media-4030189@2x.png)
 
 For more information, see [`Specifying the scenes your app supports`](specifying-the-scenes-your-app-supports.md).
 

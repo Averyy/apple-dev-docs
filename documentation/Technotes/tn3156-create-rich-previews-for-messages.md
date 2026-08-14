@@ -8,11 +8,11 @@ Learn best practices for creating rich text and image previews for display in th
 
 The Messages app on iOS and macOS by default shows inline previews for links as gray bubbles with the page title, domain, and small icon belonging to the linked web page:
 
-![Example Domain](https://docs-assets.developer.apple.com/published/57a6a5d89a59325b0cecb96289d8a822/tn3156_examplecom%402x.png)
+![Example Domain](/images/com.apple.technotes/tn3156_examplecom@2x.png)
 
 You can display images and meaningful captions in these link previews by adding [`Open Graph`](https://developer.apple.comhttps://ogp.me) metadata on your website pages. Here’s an example link preview for `https://www.apple.com/iphone`, which includes an image and title:
 
-![IPhone Photo](https://docs-assets.developer.apple.com/published/9d1f113fb82a880d1f82b444a3b79e2a/tn3156_iphoneapplecom%402x.png)
+![IPhone Photo](/images/com.apple.technotes/tn3156_iphoneapplecom@2x.png)
 
 This appearance results from the following `meta` tags on the webpage:
 

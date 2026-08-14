@@ -25,7 +25,7 @@ Use WidgetKit to create widgets and watch complications that elevate a small amo
   Offer Live Activities, controls, animate data updates, and add interactivity to widgets.
 - [Preparing widgets for additional platforms, contexts, and appearances](preparing-widgets-for-additional-contexts-and-appearances.md)
   Create widgets that support additional platforms and adapt to their context.
-- [protocol Widget](../SwiftUI/Widget.md)
+- [protocol Widget](../swiftui/widget.md)
   The configuration and content of a widget to display on the Home screen or in Notification Center.
 - [enum WidgetFamily](widgetfamily.md)
   Values that define the widget’s size and shape.
@@ -99,12 +99,12 @@ Use WidgetKit to create widgets and watch complications that elevate a small amo
 - [Updating your widgets for visionOS](updating-your-widgets-for-visionos.md)
   Choose widget styles specific to visionOS, support recessed and elevated appearances, and add proximity awareness to your widget.
 - [func widgetTexture(WidgetTexture) -> some WidgetConfiguration
-](../SwiftUI/WidgetConfiguration/widgetTexture(_:).md)
+](../swiftui/widgetconfiguration/widgettexture(_:).md)
   Specifies the widget texture for this widget.
 - [struct WidgetTexture](widgettexture.md)
   Values that define the texture of the widget’s coating layer.
 - [func supportedMountingStyles([WidgetMountingStyle]) -> some WidgetConfiguration
-](../SwiftUI/WidgetConfiguration/supportedMountingStyles(_:).md)
+](../swiftui/widgetconfiguration/supportedmountingstyles(_:).md)
   Specifies the mounting style for this widget.
 - [struct WidgetMountingStyle](widgetmountingstyle.md)
   Values that define the widget’s supported mounting style.

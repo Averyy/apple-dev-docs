@@ -12,7 +12,7 @@ Choose and implement the appropriate Calendar access level in your app.
 
 #### Overview
 
-Prior to iOS 17, your app needs to include the [`NSCalendarsUsageDescription`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSCalendarsUsageDescription) key in its `Info.plist` and request authorization from the user before it can access the user’s calendar data. `NSCalendarsUsageDescription` indicates how your app intends to use calendar data. If the user approves the request, the app gets full access to all events on all the user’s calendars, including the ones the app didn’t create. If the user denies the request, the app gets no access to the user’s data.
+Prior to iOS 17, your app needs to include the [`NSCalendarsUsageDescription`](https://developer.apple.com/documentation/bundleresources/information-property-list/nscalendarsusagedescription) key in its `Info.plist` and request authorization from the user before it can access the user’s calendar data. `NSCalendarsUsageDescription` indicates how your app intends to use calendar data. If the user approves the request, the app gets full access to all events on all the user’s calendars, including the ones the app didn’t create. If the user denies the request, the app gets no access to the user’s data.
 
 Starting in iOS 17, your app should only request the specific level of access it requires to complete its calendar data tasks. The iOS 17 SDK introduces new calendar usage description strings, the ability to add events to Calendar without prompting the user for access, and a new write-only access. See [`Accessing the event store`](accessing-the-event-store.md) for details.
 
@@ -31,13 +31,13 @@ Before you run the sample code project in Xcode:
 
 ##### Save Events Without Prompting the User for Access
 
-In iOS 17, your app can add events to Calendar without prompting the user for access using [`EKEventEditViewController`](https://developer.apple.com/documentation/EventKitUI/EKEventEditViewController). If the purpose of your app is to create, configure, and present calendar events in an editor UI, consider saving events to Calendar without prompting the user for authorization in your app following these steps:
+In iOS 17, your app can add events to Calendar without prompting the user for access using [`EKEventEditViewController`](https://developer.apple.com/documentation/eventkitui/ekeventeditviewcontroller). If the purpose of your app is to create, configure, and present calendar events in an editor UI, consider saving events to Calendar without prompting the user for authorization in your app following these steps:
 
 - Build your app with Xcode 15 and link against the iOS 17 SDK.
-- If your app includes [`NSCalendarsUsageDescription`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSCalendarsUsageDescription), remove this key.
+- If your app includes [`NSCalendarsUsageDescription`](https://developer.apple.com/documentation/bundleresources/information-property-list/nscalendarsusagedescription), remove this key.
 - If your app requests permission using [`requestAccess(to:completion:)`](https://developer.apple.comhttps://developer.apple.com/documentation/eventkit/ekeventstore/requestaccess) or `requestAccess(to:)`, remove these instance methods from your source code.
 
-The `DropInLessons` app writes data to Calendar without performing any other operations on the user’s events. Because its workflow doesn’t interact with the user’s calendar data, the app isn’t required to include any calendar usage strings or prompt the user for access. [`EKEventStore`](EKEventStore.md) allows apps to request permission from the user, and read and write data to Calendar. `DropInLessons` creates an instance of the event store, `store`.
+The `DropInLessons` app writes data to Calendar without performing any other operations on the user’s events. Because its workflow doesn’t interact with the user’s calendar data, the app isn’t required to include any calendar usage strings or prompt the user for access. [`EKEventStore`](ekeventstore.md) allows apps to request permission from the user, and read and write data to Calendar. `DropInLessons` creates an instance of the event store, `store`.
 
 ```swift
 @State private var store = EKEventStore()
@@ -69,11 +69,11 @@ func eventEditViewController(_ controller: EKEventEditViewController, didComplet
 }
 ```
 
-Because the calendar edits happen out of process, inspecting the properties of the dismissed `controller`, such as [`event`](https://developer.apple.com/documentation/EventKitUI/EKEventEditViewController/event), to determine what the user added to Calendar doesn’t return any useful information. The app isn’t aware of the changes, which naturally means it can’t see them.
+Because the calendar edits happen out of process, inspecting the properties of the dismissed `controller`, such as [`event`](https://developer.apple.com/documentation/eventkitui/ekeventeditviewcontroller/event), to determine what the user added to Calendar doesn’t return any useful information. The app isn’t aware of the changes, which naturally means it can’t see them.
 
 ##### Request Write Only Access
 
-In iOS 17, an app with write-only access can create and save events to Calendar, display events using [`EKEventEditViewController`](https://developer.apple.com/documentation/EventKitUI/EKEventEditViewController), and allow the user to select another calendar using [`EKCalendarChooser`](https://developer.apple.com/documentation/EventKitUI/EKCalendarChooser). If your app needs to write data directly, consider implementing write-only access in your app following these steps:
+In iOS 17, an app with write-only access can create and save events to Calendar, display events using [`EKEventEditViewController`](https://developer.apple.com/documentation/eventkitui/ekeventeditviewcontroller), and allow the user to select another calendar using [`EKCalendarChooser`](https://developer.apple.com/documentation/eventkitui/ekcalendarchooser). If your app needs to write data directly, consider implementing write-only access in your app following these steps:
 
 - Build your app with Xcode 15 and link against the iOS 17 SDK.
 - Add the `NSCalendarsWriteOnlyAccessUsageDescription` key to the `Info.plist` file of the target building your app.
@@ -81,7 +81,7 @@ In iOS 17, an app with write-only access can create and save events to Calendar,
 
 > **Note**: `EKEventEditViewController` and `EKCalendarChooser` require write-only or full access. `EKEventEditViewController` doesn’t require any user permission.
 
-`RepeatingLessons` displays a list of recurring lessons and a “Select calendar” button in the toolbar. The app offers the lessons on specific dates and times and doesn’t fetch any events from the user’s calendars. `RepeatingLessons` can’t let the user or the system make any changes to these events. Because of these reasons, the app requires write-only access so it can control the date and time of every event added to Calendar. When the user selects a lesson, then taps the booking button, the app first checks whether it has authorization to access the user’s calendar data. If the authorization status is [`EKAuthorizationStatus.notDetermined`](EKAuthorizationStatus/notDetermined.md), the app uses an instance of [`EKEventStore`](EKEventStore.md), `eventStore`, to prompt the user for write-only access.
+`RepeatingLessons` displays a list of recurring lessons and a “Select calendar” button in the toolbar. The app offers the lessons on specific dates and times and doesn’t fetch any events from the user’s calendars. `RepeatingLessons` can’t let the user or the system make any changes to these events. Because of these reasons, the app requires write-only access so it can control the date and time of every event added to Calendar. When the user selects a lesson, then taps the booking button, the app first checks whether it has authorization to access the user’s calendar data. If the authorization status is [`EKAuthorizationStatus.notDetermined`](ekauthorizationstatus/notdetermined.md), the app uses an instance of [`EKEventStore`](ekeventstore.md), `eventStore`, to prompt the user for write-only access.
 
 ```swift
 return try await eventStore.requestWriteOnlyAccessToEvents()
@@ -93,7 +93,7 @@ return try await eventStore.requestWriteOnlyAccessToEvents()
 try self.eventStore.save(newEvent, span: .futureEvents)
 ```
 
-The “Select calendar” button in the toolbar allows the user to choose another calendar to save the recurring events using `EKCalendarChooser`. The app turns off the button by default. The app turns it on when the user grants write-only or full access to the app. When the user taps the button, `RepeatingLessons` presents a calendar chooser with an instance of [`EKCalendar`](EKCalendar.md), `calendar`, which keeps track of calendars the user chooses in the view controller.
+The “Select calendar” button in the toolbar allows the user to choose another calendar to save the recurring events using `EKCalendarChooser`. The app turns off the button by default. The app turns it on when the user grants write-only or full access to the app. When the user taps the button, `RepeatingLessons` presents a calendar chooser with an instance of [`EKCalendar`](ekcalendar.md), `calendar`, which keeps track of calendars the user chooses in the view controller.
 
 ```swift
 .sheet(isPresented: $showCalendarChooser) {
@@ -101,7 +101,7 @@ The “Select calendar” button in the toolbar allows the user to choose anothe
 }
 ```
 
-The [`EKCalendarChooserDisplayStyle`](https://developer.apple.com/documentation/EventKitUI/EKCalendarChooserDisplayStyle) property of `EKCalendarChooser` specifies whether to display writable calendars only or all calendars. In write-only access apps, the calendar chooser ignores the value of the `displayStyle` setting and this setting always behaves as if it’s set to [`EKCalendarChooserDisplayStyle.writableCalendarsOnly`](https://developer.apple.com/documentation/EventKitUI/EKCalendarChooserDisplayStyle/writableCalendarsOnly). As a result, the app only allows the user to select a single writable calendar from the list presented in the calendar chooser.
+The [`EKCalendarChooserDisplayStyle`](https://developer.apple.com/documentation/eventkitui/ekcalendarchooserdisplaystyle) property of `EKCalendarChooser` specifies whether to display writable calendars only or all calendars. In write-only access apps, the calendar chooser ignores the value of the `displayStyle` setting and this setting always behaves as if it’s set to [`EKCalendarChooserDisplayStyle.writableCalendarsOnly`](https://developer.apple.com/documentation/eventkitui/ekcalendarchooserdisplaystyle/writablecalendarsonly). As a result, the app only allows the user to select a single writable calendar from the list presented in the calendar chooser.
 
 ```swift
 // Initializes a calendar chooser that allows the user to select a single calendar from a list of writable calendars only.
@@ -111,7 +111,7 @@ let calendarChooser = EKCalendarChooser(selectionStyle: .single,
                                         eventStore: storeManager.store)
 ```
 
-The app sets the [`selectedCalendars`](https://developer.apple.com/documentation/EventKitUI/EKCalendarChooser/selectedCalendars) property of `EKCalendarChooser` to `calendar`, which is empty when the user hasn’t selected a calendar.
+The app sets the [`selectedCalendars`](https://developer.apple.com/documentation/eventkitui/ekcalendarchooser/selectedcalendars) property of `EKCalendarChooser` to `calendar`, which is empty when the user hasn’t selected a calendar.
 
 ```swift
 /*
@@ -140,7 +140,7 @@ If the user chooses a calendar from the view controller, `RepeatingLessons` adds
 
 ##### Request Full Access
 
-In iOS 17, an app with full access can create, edit, save, delete, and fetch all events on all the user’s calendars. Additionally, the app can display events using [`EKEventViewController`](https://developer.apple.com/documentation/EventKitUI/EKEventViewController) and allow the user to select another calendar using [`EKCalendarChooser`](https://developer.apple.com/documentation/EventKitUI/EKCalendarChooser). Implement full access if your app needs to read and write data to Calendar. If your app only needs to write data directly to Calendar, implement write-only access instead. If your app only uses EventKit APIs to create and set up events, consider saving events to Calendar without prompting the user for authorization.
+In iOS 17, an app with full access can create, edit, save, delete, and fetch all events on all the user’s calendars. Additionally, the app can display events using [`EKEventViewController`](https://developer.apple.com/documentation/eventkitui/ekeventviewcontroller) and allow the user to select another calendar using [`EKCalendarChooser`](https://developer.apple.com/documentation/eventkitui/ekcalendarchooser). Implement full access if your app needs to read and write data to Calendar. If your app only needs to write data directly to Calendar, implement write-only access instead. If your app only uses EventKit APIs to create and set up events, consider saving events to Calendar without prompting the user for authorization.
 
 To implement full access in your app, follow these steps:
 
@@ -165,7 +165,7 @@ Then, the app checks whether it’s authorized to access the user’s calendar d
 let status = EKEventStore.authorizationStatus(for: .event)
 ```
 
-If the authorization status is [`EKAuthorizationStatus.notDetermined`](EKAuthorizationStatus/notDetermined.md), the app uses an instance of [`EKEventStore`](EKEventStore.md), `eventStore`, to prompt the user for full access.
+If the authorization status is [`EKAuthorizationStatus.notDetermined`](ekauthorizationstatus/notdetermined.md), the app uses an instance of [`EKEventStore`](ekeventstore.md), `eventStore`, to prompt the user for full access.
 
 ```swift
 return try await eventStore.requestFullAccessToEvents()
@@ -210,9 +210,9 @@ eventStore.reset()
 
 If you build your app with Xcode 15, link it against the iOS 17 SDK, and need to run it on systems earlier than iOS 17:
 
-- Add [`NSCalendarsUsageDescription`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSCalendarsUsageDescription) to the `Info.plist` file of the target building your app. If your app that’s linked on iOS 10 through iOS 16 doesn’t include `NSCalendarsUsageDescription`, your app crashes.
+- Add [`NSCalendarsUsageDescription`](https://developer.apple.com/documentation/bundleresources/information-property-list/nscalendarsusagedescription) to the `Info.plist` file of the target building your app. If your app that’s linked on iOS 10 through iOS 16 doesn’t include `NSCalendarsUsageDescription`, your app crashes.
 - To request access to events, use [`requestAccess(to:completion:)`](ekeventstore/requestaccess(to:completion:).md) or `requestAccess(to: .event)`.
-- To determine whether your app is authorized to access the user’s calendar data, confirm that [`authorizationStatus(for:)`](https://developer.apple.comhttps://developer.apple.com/documentation/eventkit/ekeventstore/authorizationstatus) is set to [`EKAuthorizationStatus`](EKAuthorizationStatus.md).
+- To determine whether your app is authorized to access the user’s calendar data, confirm that [`authorizationStatus(for:)`](https://developer.apple.comhttps://developer.apple.com/documentation/eventkit/ekeventstore/authorizationstatus) is set to [`EKAuthorizationStatus`](ekauthorizationstatus.md).
 
 > **Note**: The new request methods are unavailable on systems earlier than iOS 17, which may cause your app to crash when running on these versions. Check that these methods are available in the iOS version that you wish to run your app on before calling them in your app. See [`Declaration Attributes`](https://developer.apple.comhttps://docs.swift.org/swift-book/documentation/the-swift-programming-language) for details.
 
@@ -225,7 +225,7 @@ return try await eventStore.requestAccess(to: .event)
 
 > ❗ **Important**: In iOS 17, calling `requestAccess(to: .event)` or `requestAccess(to:completion:)` doesn’t prompt the user for access and throws an error.
 
-`MonthlyEvents` and `RepeatingLessons` confirm that they have an [`EKAuthorizationStatus`](EKAuthorizationStatus.md) authorization status.
+`MonthlyEvents` and `RepeatingLessons` confirm that they have an [`EKAuthorizationStatus`](ekauthorizationstatus.md) authorization status.
 
 ```swift
 // Fall back on earlier versions.

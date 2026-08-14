@@ -24,7 +24,7 @@ protocol UNUserNotificationCenterDelegate : NSObjectProtocol
 
 Use the methods of the [`UNUserNotificationCenterDelegate`](unusernotificationcenterdelegate.md) protocol to handle user-selected actions from notifications, and to process notifications that arrive when your app is running in the foreground. After implementing these methods in an object, assign that object to the [`delegate`](unusernotificationcenter/delegate.md) property of the shared [`UNUserNotificationCenter`](unusernotificationcenter.md) object. The user notification center object calls the methods of your delegate at appropriate times.
 
-> ❗ **Important**:  You must assign your delegate object to the [`UNUserNotificationCenter`](unusernotificationcenter.md) object before your app finishes launching. For example, in an iOS app, you must assign it in the [`application(_:willFinishLaunchingWithOptions:)`](https://developer.apple.com/documentation/UIKit/UIApplicationDelegate/application(_:willFinishLaunchingWithOptions:)) or [`application(_:didFinishLaunchingWithOptions:)`](https://developer.apple.com/documentation/UIKit/UIApplicationDelegate/application(_:didFinishLaunchingWithOptions:)) method of your app delegate. Assigning a delegate after the system calls these methods might cause you to miss incoming notifications.
+> ❗ **Important**:  You must assign your delegate object to the [`UNUserNotificationCenter`](unusernotificationcenter.md) object before your app finishes launching. For example, in an iOS app, you must assign it in the [`application(_:willFinishLaunchingWithOptions:)`](https://developer.apple.com/documentation/uikit/uiapplicationdelegate/application(_:willfinishlaunchingwithoptions:)) or [`application(_:didFinishLaunchingWithOptions:)`](https://developer.apple.com/documentation/uikit/uiapplicationdelegate/application(_:didfinishlaunchingwithoptions:)) method of your app delegate. Assigning a delegate after the system calls these methods might cause you to miss incoming notifications.
 
 For information about the shared user notification center object, see [`UNUserNotificationCenter`](unusernotificationcenter.md).
 
@@ -48,7 +48,7 @@ For information about the shared user notification center object, see [`UNUserNo
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

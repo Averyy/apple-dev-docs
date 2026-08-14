@@ -40,18 +40,18 @@ struct Stride
 ## Relationships
 
 ### Conforms To
-- [AdditiveArithmetic](../Swift/AdditiveArithmetic.md)
-- [Comparable](../Swift/Comparable.md)
-- [Decodable](../Swift/Decodable.md)
-- [Encodable](../Swift/Encodable.md)
-- [Equatable](../Swift/Equatable.md)
-- [ExpressibleByFloatLiteral](../Swift/ExpressibleByFloatLiteral.md)
-- [ExpressibleByIntegerLiteral](../Swift/ExpressibleByIntegerLiteral.md)
-- [Numeric](../Swift/Numeric.md)
-- [SchedulerTimeIntervalConvertible](../Combine/SchedulerTimeIntervalConvertible.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
-- [SignedNumeric](../Swift/SignedNumeric.md)
+- [AdditiveArithmetic](../swift/additivearithmetic.md)
+- [Comparable](../swift/comparable.md)
+- [Decodable](../swift/decodable.md)
+- [Encodable](../swift/encodable.md)
+- [Equatable](../swift/equatable.md)
+- [ExpressibleByFloatLiteral](../swift/expressiblebyfloatliteral.md)
+- [ExpressibleByIntegerLiteral](../swift/expressiblebyintegerliteral.md)
+- [Numeric](../swift/numeric.md)
+- [SchedulerTimeIntervalConvertible](../combine/schedulertimeintervalconvertible.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
+- [SignedNumeric](../swift/signednumeric.md)
 
 ## See Also
 

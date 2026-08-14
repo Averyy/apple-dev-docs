@@ -14,7 +14,7 @@ Create, distribute, and update passes for the Wallet app.
 
 *Passes* are digital representations of information that previously might have been distributed on paper, plastic, or some other physical item. Passes enable people to take action, including board a flight, attend an event, or redeem a coupon. Use the Wallet Passes framework to create dynamic, interactive passes that stay up-to-date and provide people with relevant information.
 
-![An illustration showing three different passes. One pass is an annual pass for an art museum, the center pass shows an event pass for a soccer event, and the pass on the right is an airline boarding pass for a flight.](https://docs-assets.developer.apple.com/published/f17b9619dfa604cb5f33a58cf1114b7a/wallet-passes-overview%402x.png)
+![An illustration showing three different passes. One pass is an annual pass for an art museum, the center pass shows an event pass for a soccer event, and the pass on the right is an airline boarding pass for a flight.](/images/com.apple.walletpasses/wallet-passes-overview@2x.png)
 
 With this framework you can:
 

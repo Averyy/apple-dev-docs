@@ -43,7 +43,7 @@ func differenceBlendMode(inputImage: CIImage, backgroundImage: CIImage) -> CIIma
 }
 ```
 
-![The image on the top left shows a beach with multiple palm trees and a rainbow arching across the blue sky.  The image below is a gradient image displaying a gradual color shift from purple to a dark orange. The image on the right shows the output from applying a difference-blend mode filter. This displays colors from both images with the clarity and brightness from the beach rainbow image.](https://docs-assets.developer.apple.com/published/b8ad8666e41c9d807777fb0511420cc7/media-3546397%402x.png)
+![The image on the top left shows a beach with multiple palm trees and a rainbow arching across the blue sky.  The image below is a gradient image displaying a gradual color shift from purple to a dark orange. The image on the right shows the output from applying a difference-blend mode filter. This displays colors from both images with the clarity and brightness from the beach rainbow image.](/images/com.apple.coreimage/media-3546397@2x.png)
 
 ## See Also
 

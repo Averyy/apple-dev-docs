@@ -26,11 +26,11 @@ This method is analogous to the Apple Event Manager routine [`AEPutParamPtr(_:_:
 
 ## Parameters
 
-- `ref`: An   containing the stream data.
-- `key`: The   associated with the new descriptor being added to the stream. See  .
-- `newType`: A type code for the new   being added to the stream. See  .
+- `ref`: An [`AEStreamRef`](aestreamref.md) containing the stream data.
+- `key`: The `AEKeyword` associated with the new descriptor being added to the stream. See [`AEKeyword`](aekeyword.md).
+- `newType`: A type code for the new `AEDesc` being added to the stream. See [`DescType`](desctype.md).
 - `data`: A pointer to the block of memory containing the descriptor data. This routine copies the memory block immediately, so you do not need to retain it for the benefit of this routine.
-- `length`: The number of bytes pointed to by the   parameter.
+- `length`: The number of bytes pointed to by the `data` parameter.
 
 ## See Also
 

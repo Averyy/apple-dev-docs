@@ -26,11 +26,11 @@ var formatDescriptions: [Any] { get }
 
 #### Discussion
 
-The array contains [`CMFormatDescription`](https://developer.apple.com/documentation/CoreMedia/CMFormatDescription) objects that indicate the format of media samples the track references.
+The array contains [`CMFormatDescription`](https://developer.apple.com/documentation/coremedia/cmformatdescription) objects that indicate the format of media samples the track references.
 
 Asset tracks typically present uniform media (for example, media that uses the same encoding settings) and contain a single format description. However, in some cases, an asset track may contain multiple format descriptions. For example, an H.264-encoded video track may have some segments that use the Main profile and others that use the High profile. Also, an individual [`AVCompositionTrack`](avcompositiontrack.md), which subclasses [`AVAssetTrack`](avassettrack.md), may contain audio or video segments using different codecs.
 
-You can use [`CMFormatDescription`](https://developer.apple.com/documentation/CoreMedia/CMFormatDescription) to access low-level details about the media the track references. For example, you can retrieve the details of track’s media type and subtype as the code below shows:
+You can use [`CMFormatDescription`](https://developer.apple.com/documentation/coremedia/cmformatdescription) to access low-level details about the media the track references. For example, you can retrieve the details of track’s media type and subtype as the code below shows:
 
 ```swift
 extension AVAssetTrack {

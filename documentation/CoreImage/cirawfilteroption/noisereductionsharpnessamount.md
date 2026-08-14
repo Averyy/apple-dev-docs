@@ -21,7 +21,7 @@ static let noiseReductionSharpnessAmount: CIRAWFilterOption
 
 #### Discussion
 
-The value for this key is a [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) object containing a value between `0.0` and `1.0`.
+The value for this key is a [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) object containing a value between `0.0` and `1.0`.
 
 ## See Also
 

@@ -22,7 +22,7 @@ To turn developer mode off, open Terminal and run the same tool with `developer 
 
 System Integrity Protection (SIP) in macOS prevents unauthorized code from running on your system. Xcode doesn’t notarize apps or system extensions during the normal development cycle, so disabling SIP bypasses the notarization checks that the system normally performs, and allows you to debug your code more quickly.
 
-For information on how to disable SIP, see [`Disabling and Enabling System Integrity Protection`](https://developer.apple.com/documentation/Security/disabling-and-enabling-system-integrity-protection).
+For information on how to disable SIP, see [`Disabling and Enabling System Integrity Protection`](https://developer.apple.com/documentation/security/disabling-and-enabling-system-integrity-protection).
 
 ##### Attach the Debugger to Your System Extension
 
@@ -40,7 +40,7 @@ Driver extensions (dexts) often coordinate with kernel extensions (kexts) to per
 
 1. Reboot your Mac with Apple silicon into Recovery mode.
 2. Set the security level to Medium.
-3. Disable System Integrity Protection, as descrbed in [`Disabling and Enabling System Integrity Protection`](https://developer.apple.com/documentation/Security/disabling-and-enabling-system-integrity-protection).
+3. Disable System Integrity Protection, as descrbed in [`Disabling and Enabling System Integrity Protection`](https://developer.apple.com/documentation/security/disabling-and-enabling-system-integrity-protection).
 4. Reboot back to macOS.
 5. Add the `-arm64e_preview_abi` boot arg to your system.
 

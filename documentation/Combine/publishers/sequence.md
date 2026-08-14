@@ -47,7 +47,7 @@ When the publisher exhausts the elements in the sequence, the next request cause
 ## Relationships
 
 ### Conforms To
-- [Equatable](../Swift/Equatable.md)
+- [Equatable](../swift/equatable.md)
 - [Publisher](publisher.md)
 
 ## See Also

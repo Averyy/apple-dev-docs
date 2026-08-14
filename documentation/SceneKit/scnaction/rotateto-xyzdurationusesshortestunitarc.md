@@ -36,7 +36,7 @@ This action is not reversible; the reverse of this action has the same duration 
 - `yAngle`: The amount to rotate the node counterclockwise around the y-axis of its local coordinate space, in radians.
 - `zAngle`: The amount to rotate the node counterclockwise around the z-axis of its local coordinate space, in radians.
 - `duration`: The duration, in seconds, of the animation.
-- `shortestUnitArc`: If [`false`](https://developer.apple.com/documentation/Swift/false) (the default), the animation interpolates each component of the node’s rotation between its current value and the new value. If [`true`](https://developer.apple.com/documentation/Swift/true), the animation makes the most direct rotation possible from the node’s current orientation to the new orientation.
+- `shortestUnitArc`: If [`false`](https://developer.apple.com/documentation/swift/false) (the default), the animation interpolates each component of the node’s rotation between its current value and the new value. If [`true`](https://developer.apple.com/documentation/swift/true), the animation makes the most direct rotation possible from the node’s current orientation to the new orientation.
 
 ## See Also
 

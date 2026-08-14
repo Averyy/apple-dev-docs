@@ -22,7 +22,7 @@ let kCGImageSourceShouldCacheImmediately: CFString
 
 #### Discussion
 
-The value of this key is a [`CFBoolean`](https://developer.apple.com/documentation/CoreFoundation/CFBoolean). The default value is [`kCFBooleanFalse`](https://developer.apple.com/documentation/CoreFoundation/kCFBooleanFalse), which causes decoding and caching to happen only when you render the image.
+The value of this key is a [`CFBoolean`](https://developer.apple.com/documentation/corefoundation/cfboolean). The default value is [`kCFBooleanFalse`](https://developer.apple.com/documentation/corefoundation/kcfbooleanfalse), which causes decoding and caching to happen only when you render the image.
 
 Include this key in the options dictionary you pass to the functions [`CGImageSourceCopyPropertiesAtIndex(_:_:_:)`](cgimagesourcecopypropertiesatindex(_:_:_:).md) and [`CGImageSourceCreateImageAtIndex(_:_:_:)`](cgimagesourcecreateimageatindex(_:_:_:).md).
 

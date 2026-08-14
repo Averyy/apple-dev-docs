@@ -16,7 +16,7 @@ var itemTitles: [String] { get }
 
 #### Discussion
 
-This property contains an array of [`NSString`](https://developer.apple.com/documentation/Foundation/NSString) objects, each of which contains the title of an item in the menu. The order of the titles in this array matches the order of the items in the menu. If the menu contains separator items, the array contains an empty string for each separator item.
+This property contains an array of [`NSString`](https://developer.apple.com/documentation/foundation/nsstring) objects, each of which contains the title of an item in the menu. The order of the titles in this array matches the order of the items in the menu. If the menu contains separator items, the array contains an empty string for each separator item.
 
 ## See Also
 

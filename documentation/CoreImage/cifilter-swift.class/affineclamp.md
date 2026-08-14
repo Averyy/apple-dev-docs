@@ -30,7 +30,7 @@ This method applies the affine clamp filter to an image. This effect performs si
 The affine clamp filter uses the following properties:
 
 - **`inputImage`**: An image with the type [`CIImage`](ciimage.md).
-- **`transform`**: A [`CGAffineTransform`](https://developer.apple.com/documentation/CoreFoundation/CGAffineTransform) to constrain to the image.
+- **`transform`**: A [`CGAffineTransform`](https://developer.apple.com/documentation/corefoundation/cgaffinetransform) to constrain to the image.
 
 The following code creates a filter that produces a cropped image with colored edges to fill the rest of the image:
 
@@ -43,7 +43,7 @@ func affineClamp(inputImage: CIImage) -> CIImage {
 }
 ```
 
-![Two photographs of a bouquet of multiple colorful flowers. The photo on the left is up close with good lighting and focus. In the photo on the right, an affine clamp filter is applied, resulting in the edges of the image colors stretching to the edge of the photo.](https://docs-assets.developer.apple.com/published/03ddcecfe2c0da965c6781a0b50c97f7/media-3624745%402x.png)
+![Two photographs of a bouquet of multiple colorful flowers. The photo on the left is up close with good lighting and focus. In the photo on the right, an affine clamp filter is applied, resulting in the edges of the image colors stretching to the edge of the photo.](/images/com.apple.coreimage/media-3624745@2x.png)
 
 ## See Also
 

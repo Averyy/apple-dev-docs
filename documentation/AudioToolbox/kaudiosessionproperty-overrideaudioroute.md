@@ -20,7 +20,7 @@ var kAudioSessionProperty_OverrideAudioRoute: Int { get }
 
 #### Discussion
 
-A write-only `UInt32` value. Can be set with one of two values: [`kAudioSessionOverrideAudioRoute_None`](kaudiosessionoverrideaudioroute_none.md), which specifies that you want to use the typical audio route; and [`kAudioSessionOverrideAudioRoute_Speaker`](kaudiosessionoverrideaudioroute_speaker.md), when sends output audio to the built-in speaker. This property can be used only with the [`kAudioSessionCategory_PlayAndRecord`](kaudiosessioncategory_playandrecord.md) (or the equivalent [`playAndRecord`](https://developer.apple.com/documentation/AVFAudio/AVAudioSession/Category-swift.struct/playAndRecord)) category.
+A write-only `UInt32` value. Can be set with one of two values: [`kAudioSessionOverrideAudioRoute_None`](kaudiosessionoverrideaudioroute_none.md), which specifies that you want to use the typical audio route; and [`kAudioSessionOverrideAudioRoute_Speaker`](kaudiosessionoverrideaudioroute_speaker.md), when sends output audio to the built-in speaker. This property can be used only with the [`kAudioSessionCategory_PlayAndRecord`](kaudiosessioncategory_playandrecord.md) (or the equivalent [`playAndRecord`](https://developer.apple.com/documentation/avfaudio/avaudiosession/category-swift.struct/playandrecord)) category.
 
 If a headset is plugged in at the time you set this property’s value to [`kAudioSessionOverrideAudioRoute_Speaker`](kaudiosessionoverrideaudioroute_speaker.md), the system changes the audio routing for input as well as for output: input comes from the built-in microphone; output goes to the built-in speaker.
 

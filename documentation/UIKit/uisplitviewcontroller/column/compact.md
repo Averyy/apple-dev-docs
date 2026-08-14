@@ -20,7 +20,7 @@ case compact
 
 #### Discussion
 
-If a view controller is set for this column, that view controller is shown when [`isCollapsed`](uisplitviewcontroller/iscollapsed.md) is [`true`](https://developer.apple.com/documentation/Swift/true).
+If a view controller is set for this column, that view controller is shown when [`isCollapsed`](uisplitviewcontroller/iscollapsed.md) is [`true`](https://developer.apple.com/documentation/swift/true).
 
 ## See Also
 

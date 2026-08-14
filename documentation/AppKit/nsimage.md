@@ -25,7 +25,7 @@ The  class serves many purposes, providing support for the following tasks:
 
 - Loading images stored on disk or at a specified URL.
 - Drawing images into a view or graphics context.
-- Providing the contents of a [`CALayer`](https://developer.apple.com/documentation/QuartzCore/CALayer) object.
+- Providing the contents of a [`CALayer`](https://developer.apple.com/documentation/quartzcore/calayer) object.
 - Creating new images based on a series of captured drawing commands.
 - Producing versions of the image in a different format.
 
@@ -33,9 +33,9 @@ The `NSImage` class itself is capable of managing image data in a variety of for
 
 ##### Using Images with Core Animation Layers
 
-Although you can assign an `NSImage` object directly to the [`contents`](https://developer.apple.com/documentation/QuartzCore/CALayer/contents) property of a [`CALayer`](https://developer.apple.com/documentation/QuartzCore/CALayer) object, doing so may not always yield the best results. Instead of using your image object, you can use the [`layerContents(forContentsScale:)`](nsimage/layercontents(forcontentsscale:).md) method to obtain an object that you can use for your layer’s contents. The image created by that method serves as the contents of a layer, which also supports all of the layer’s gravity modes. By contrast, the `NSImage` class supports only the [`resize`](https://developer.apple.com/documentation/QuartzCore/CALayerContentsGravity/resize), [`resizeAspect`](https://developer.apple.com/documentation/QuartzCore/CALayerContentsGravity/resizeAspect), and [`resizeAspectFill`](https://developer.apple.com/documentation/QuartzCore/CALayerContentsGravity/resizeAspectFill) modes.
+Although you can assign an `NSImage` object directly to the [`contents`](https://developer.apple.com/documentation/quartzcore/calayer/contents) property of a [`CALayer`](https://developer.apple.com/documentation/quartzcore/calayer) object, doing so may not always yield the best results. Instead of using your image object, you can use the [`layerContents(forContentsScale:)`](nsimage/layercontents(forcontentsscale:).md) method to obtain an object that you can use for your layer’s contents. The image created by that method serves as the contents of a layer, which also supports all of the layer’s gravity modes. By contrast, the `NSImage` class supports only the [`resize`](https://developer.apple.com/documentation/quartzcore/calayercontentsgravity/resize), [`resizeAspect`](https://developer.apple.com/documentation/quartzcore/calayercontentsgravity/resizeaspect), and [`resizeAspectFill`](https://developer.apple.com/documentation/quartzcore/calayercontentsgravity/resizeaspectfill) modes.
 
-Before calling the [`layerContents(forContentsScale:)`](nsimage/layercontents(forcontentsscale:).md) method, use the [`recommendedLayerContentsScale(_:)`](nsimage/recommendedlayercontentsscale(_:).md) method to get the recommended scale factor for the resulting image. The code listing below shows a typical example that uses the scale factor of a window’s backing store as the desired scale factor. From that scale factor, the code gets the scale factor for the specified image object and creates an object that you assign to the layer. You might use this code for images that fit the layer bounds precisely or for which you rely on the [`contentsGravity`](https://developer.apple.com/documentation/QuartzCore/CALayer/contentsGravity) property of the layer to position or scale the image.
+Before calling the [`layerContents(forContentsScale:)`](nsimage/layercontents(forcontentsscale:).md) method, use the [`recommendedLayerContentsScale(_:)`](nsimage/recommendedlayercontentsscale(_:).md) method to get the recommended scale factor for the resulting image. The code listing below shows a typical example that uses the scale factor of a window’s backing store as the desired scale factor. From that scale factor, the code gets the scale factor for the specified image object and creates an object that you assign to the layer. You might use this code for images that fit the layer bounds precisely or for which you rely on the [`contentsGravity`](https://developer.apple.com/documentation/quartzcore/calayer/contentsgravity) property of the layer to position or scale the image.
 
 Listing 1. Assigning an image to a layer
 
@@ -54,7 +54,7 @@ static void updateLayerWithImageInWindow1(NSImage *image, CALayer *layer, NSWind
 ## Topics
 
 ### Creating Images by Name
-- [Configuring and displaying symbol images in your UI](../UIKit/configuring-and-displaying-symbol-images-in-your-ui.md)
+- [Configuring and displaying symbol images in your UI](../uikit/configuring-and-displaying-symbol-images-in-your-ui.md)
   Create scalable images that integrate with your app’s text, and adjust the appearance of those images dynamically.
 - [init?(named: NSImage.Name)](nsimage/init(named:).md)
   Returns the image object associated with the specified name.
@@ -228,35 +228,35 @@ static void updateLayerWithImageInWindow1(NSImage *image, CALayer *layer, NSWind
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [AttachableAsImage](../Testing/AttachableAsImage.md)
-- [CVarArg](../Swift/CVarArg.md)
-- [Copyable](../Swift/Copyable.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Escapable](../Swift/Escapable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCoding](../Foundation/NSCoding.md)
-- [NSCopying](../Foundation/NSCopying.md)
-- [NSItemProviderReading](../Foundation/NSItemProviderReading.md)
-- [NSItemProviderWriting](../Foundation/NSItemProviderWriting.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [AttachableAsImage](../testing/attachableasimage.md)
+- [CVarArg](../swift/cvararg.md)
+- [Copyable](../swift/copyable.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Escapable](../swift/escapable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCoding](../foundation/nscoding.md)
+- [NSCopying](../foundation/nscopying.md)
+- [NSItemProviderReading](../foundation/nsitemproviderreading.md)
+- [NSItemProviderWriting](../foundation/nsitemproviderwriting.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 - [NSPasteboardReading](nspasteboardreading.md)
 - [NSPasteboardWriting](nspasteboardwriting.md)
-- [NSSecureCoding](../Foundation/NSSecureCoding.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
-- [Transferable](../CoreTransferable/Transferable.md)
+- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
+- [Transferable](../coretransferable/transferable.md)
 
 ## See Also
 
-- [Providing images for different appearances](../UIKit/providing-images-for-different-appearances.md)
+- [Providing images for different appearances](../uikit/providing-images-for-different-appearances.md)
   Supply image resources appropriate for light and dark appearances and for high-contrast environments.
 - [Supporting Continuity Camera in Your Mac App](supporting-continuity-camera-in-your-mac-app.md)
   Incorporate scanned documents and pictures from a user’s iPhone, iPad, or iPod touch into your Mac app using Continuity Camera.
-- [Supporting HDR images in your app](../UIKit/supporting-hdr-images-in-your-app.md)
+- [Supporting HDR images in your app](../uikit/supporting-hdr-images-in-your-app.md)
   ​ Load, display, edit, and save HDR images using SwiftUI and Core Image. ​
 - [Applying Apple HDR effect to your photos](applying-apple-hdr-effect-to-your-photos.md)
   You can decode and apply Apple’s HDR gain map to your own images.

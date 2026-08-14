@@ -21,7 +21,7 @@ class AVAssetReaderSampleReferenceOutput
 
 #### Overview
 
-Apps can extract information about the location of samples in a track — the file URL and offset — by adding an instance of this class to an asset reader. Read the [`kCMSampleBufferAttachmentKey_SampleReferenceURL`](https://developer.apple.com/documentation/CoreMedia/kCMSampleBufferAttachmentKey_SampleReferenceURL) and [`kCMSampleBufferAttachmentKey_SampleReferenceByteOffset`](https://developer.apple.com/documentation/CoreMedia/kCMSampleBufferAttachmentKey_SampleReferenceByteOffset) attachments on the extracted sample buffers to get the location of the sample data.
+Apps can extract information about the location of samples in a track — the file URL and offset — by adding an instance of this class to an asset reader. Read the [`kCMSampleBufferAttachmentKey_SampleReferenceURL`](https://developer.apple.com/documentation/coremedia/kcmsamplebufferattachmentkey_samplereferenceurl) and [`kCMSampleBufferAttachmentKey_SampleReferenceByteOffset`](https://developer.apple.com/documentation/coremedia/kcmsamplebufferattachmentkey_samplereferencebyteoffset) attachments on the extracted sample buffers to get the location of the sample data.
 
 You can also append sample buffers that you extract using this class to an [`AVAssetWriterInput`](avassetwriterinput.md) instance to create movie tracks that aren’t self-contained and reference data in the original file instead. To write tracks that aren’t self-contained, use instances of [`AVAssetWriter`](avassetwriter.md) that you configure to write files of type [`mov`](avfiletype/mov.md).
 
@@ -41,14 +41,14 @@ Because this output doesn’t return sample data, it ignores the value of the [`
 ### Inherits From
 - [AVAssetReaderOutput](avassetreaderoutput.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

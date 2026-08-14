@@ -20,7 +20,7 @@ This method is invoked automatically whenever the insertion point needs to be mo
 
 ## Parameters
 
-- `restartFlag`: [`true`](https://developer.apple.com/documentation/Swift/true) to restart the blinking cursor timer, [`false`](https://developer.apple.com/documentation/Swift/false) otherwise.
+- `restartFlag`: [`true`](https://developer.apple.com/documentation/swift/true) to restart the blinking cursor timer, [`false`](https://developer.apple.com/documentation/swift/false) otherwise.
 
 ## See Also
 

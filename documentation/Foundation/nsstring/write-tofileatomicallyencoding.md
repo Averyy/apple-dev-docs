@@ -24,7 +24,7 @@ func write(toFile path: String, atomically useAuxiliaryFile: Bool, encoding enc:
 
 This method overwrites any existing file at `path`.
 
-This method stores the specified encoding with the file in an extended attribute under the name `com.apple.TextEncoding`. The value contains the IANA name for the encoding and the [`CFStringEncoding`](https://developer.apple.com/documentation/CoreFoundation/CFStringEncoding) value for the encoding, separated by a semicolon. The `CFStringEncoding` value is written as an ASCII string containing an unsigned 32-bit decimal integer and is not terminated by a null character. One or both of these values may be missing. Examples of the value written include the following:
+This method stores the specified encoding with the file in an extended attribute under the name `com.apple.TextEncoding`. The value contains the IANA name for the encoding and the [`CFStringEncoding`](https://developer.apple.com/documentation/corefoundation/cfstringencoding) value for the encoding, separated by a semicolon. The `CFStringEncoding` value is written as an ASCII string containing an unsigned 32-bit decimal integer and is not terminated by a null character. One or both of these values may be missing. Examples of the value written include the following:
 
 - `MACINTOSH;0`
 - `UTF-8;134217984`
@@ -40,7 +40,7 @@ The methods [`init(contentsOfFile:usedEncoding:)`](nsstring/init(contentsoffile:
 ## Parameters
 
 - `path`: The file to which to write the receiver. If `path` contains a tilde (`~`) character, you must expand it with [`expandingTildeInPath`](nsstring/expandingtildeinpath.md) before invoking this method.
-- `useAuxiliaryFile`: If [`true`](https://developer.apple.com/documentation/Swift/true), the receiver is written to an auxiliary file, and then the auxiliary file is renamed to `path`. If [`false`](https://developer.apple.com/documentation/Swift/false), the receiver is written directly to `path`. The [`true`](https://developer.apple.com/documentation/Swift/true) option guarantees that `path`, if it exists at all, won’t be corrupted even if the system should crash during writing.
+- `useAuxiliaryFile`: If [`true`](https://developer.apple.com/documentation/swift/true), the receiver is written to an auxiliary file, and then the auxiliary file is renamed to `path`. If [`false`](https://developer.apple.com/documentation/swift/false), the receiver is written directly to `path`. The [`true`](https://developer.apple.com/documentation/swift/true) option guarantees that `path`, if it exists at all, won’t be corrupted even if the system should crash during writing.
 - `enc`: The encoding to use for the output. For possible values, see [`NSStringEncoding`](nsstringencoding.md).
 
 ## See Also

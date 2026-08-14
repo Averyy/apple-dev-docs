@@ -28,9 +28,9 @@ class SKAudioNode
 
 A [`SKAudioNode`](skaudionode.md) object is used to add an audio to a scene. The sounds are played automatically using AVFoundation, and the node can optionally add 3D spatial audio effects to the audio when it is played.
 
-The currently presented [`SKScene`](skscene.md) object mixes the audio from nodes in the scene based on parameters defined in the [`AVAudio3DMixing`](https://developer.apple.com/documentation/AVFAudio/AVAudio3DMixing) protocol. A scene’s [`audioEngine`](skscene/audioengine.md) property allows overall control of volume and playback.
+The currently presented [`SKScene`](skscene.md) object mixes the audio from nodes in the scene based on parameters defined in the [`AVAudio3DMixing`](https://developer.apple.com/documentation/avfaudio/avaudio3dmixing) protocol. A scene’s [`audioEngine`](skscene/audioengine.md) property allows overall control of volume and playback.
 
-By default, [`SKAudioNode`](skaudionode.md) objects are positional, i.e. their [`isPositional`](skaudionode/ispositional.md) property is set to [`true`](https://developer.apple.com/documentation/Swift/true). If you add an audio node to a scene with a [`listener`](skscene/listener.md) set, SpriteKit will set the stereo balance and the volume based on the relative positions of the two nodes.
+By default, [`SKAudioNode`](skaudionode.md) objects are positional, i.e. their [`isPositional`](skaudionode/ispositional.md) property is set to [`true`](https://developer.apple.com/documentation/swift/true). If you add an audio node to a scene with a [`listener`](skscene/listener.md) set, SpriteKit will set the stereo balance and the volume based on the relative positions of the two nodes.
 
 You can explicitly set the volume or stereo balance to an audio node by running actions on it.
 
@@ -72,28 +72,28 @@ To learn more about audio actions, see Controlling the Audio of a Node in [`Acti
 ### Inherits From
 - [SKNode](sknode.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCoding](../Foundation/NSCoding.md)
-- [NSCopying](../Foundation/NSCopying.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [NSSecureCoding](../Foundation/NSSecureCoding.md)
-- [NSStandardKeyBindingResponding](../AppKit/NSStandardKeyBindingResponding.md)
-- [NSTouchBarProvider](../AppKit/NSTouchBarProvider.md)
-- [NSUserActivityRestoring](../AppKit/NSUserActivityRestoring.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
-- [UIActivityItemsConfigurationProviding](../UIKit/UIActivityItemsConfigurationProviding.md)
-- [UICoordinateSpace](../UIKit/UICoordinateSpace.md)
-- [UIFocusEnvironment](../UIKit/UIFocusEnvironment.md)
-- [UIFocusItem](../UIKit/UIFocusItem.md)
-- [UIFocusItemContainer](../UIKit/UIFocusItemContainer.md)
-- [UIPasteConfigurationSupporting](../UIKit/UIPasteConfigurationSupporting.md)
-- [UIResponderStandardEditActions](../UIKit/UIResponderStandardEditActions.md)
-- [UIUserActivityRestoring](../UIKit/UIUserActivityRestoring.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCoding](../foundation/nscoding.md)
+- [NSCopying](../foundation/nscopying.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [NSStandardKeyBindingResponding](../appkit/nsstandardkeybindingresponding.md)
+- [NSTouchBarProvider](../appkit/nstouchbarprovider.md)
+- [NSUserActivityRestoring](../appkit/nsuseractivityrestoring.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
+- [UIActivityItemsConfigurationProviding](../uikit/uiactivityitemsconfigurationproviding.md)
+- [UICoordinateSpace](../uikit/uicoordinatespace.md)
+- [UIFocusEnvironment](../uikit/uifocusenvironment.md)
+- [UIFocusItem](../uikit/uifocusitem.md)
+- [UIFocusItemContainer](../uikit/uifocusitemcontainer.md)
+- [UIPasteConfigurationSupporting](../uikit/uipasteconfigurationsupporting.md)
+- [UIResponderStandardEditActions](../uikit/uiresponderstandardeditactions.md)
+- [UIUserActivityRestoring](../uikit/uiuseractivityrestoring.md)
 
 ## See Also
 

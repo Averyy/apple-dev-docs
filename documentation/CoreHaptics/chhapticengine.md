@@ -28,7 +28,7 @@ class CHHapticEngine
 
 If you want your app to play custom haptics, you need to create a haptic engine. The haptic engine establishes the connection between your app and the underlying device hardware. Even though you can define a haptic pattern without an engine, you need the engine to play that pattern.
 
-![A dictionary defines a pattern, from which the haptic engine creates a pattern player for playing the haptic.](https://docs-assets.developer.apple.com/published/66a613deacd96bc7ac01d5a15e3eae73/media-3242669%402x.png)
+![A dictionary defines a pattern, from which the haptic engine creates a pattern player for playing the haptic.](/images/com.apple.corehaptics/media-3242669@2x.png)
 
 Even though your app makes a request through the haptic engine, the operating system could still override the request with system services, like haptics from system notifications.
 
@@ -161,19 +161,19 @@ Although it’s possible to create content—[`CHHapticPattern`](chhapticpattern
 - [init(andReturnError: ()) throws](chhapticengine/init(andreturnerror:).md)
 ### Instance Properties
 - [var intendedSpatialExperience: any SpatialAudioExperience](chhapticengine/intendedspatialexperience-55ca0.md)
-  The CHHapticEngine’s intended [`SpatialAudioExperience`](https://developer.apple.com/documentation/AudioToolbox/SpatialAudioExperience).
+  The CHHapticEngine’s intended [`SpatialAudioExperience`](https://developer.apple.com/documentation/audiotoolbox/spatialaudioexperience).
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

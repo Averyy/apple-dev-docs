@@ -22,7 +22,7 @@ struct KeyValueObservingPublisher<Subject, Value> where Subject : NSObject
 
 #### Overview
 
-Use this publisher to integrate a property that’s compliant with key-value observing into a Combine publishing chain. You can create a publisher of this type with the [`NSObject`](nsobject-swift.class.md) instance method `publisher(for:options:)`, passing in the key path and a set of [`NSKeyValueObservingOptions`](https://developer.apple.com/documentation/Foundation/NSKeyValueObservingOptions).
+Use this publisher to integrate a property that’s compliant with key-value observing into a Combine publishing chain. You can create a publisher of this type with the [`NSObject`](nsobject-swift.class.md) instance method `publisher(for:options:)`, passing in the key path and a set of [`NSKeyValueObservingOptions`](https://developer.apple.com/documentation/foundation/nskeyvalueobservingoptions).
 
 ## Topics
 
@@ -43,10 +43,10 @@ Use this publisher to integrate a property that’s compliant with key-value obs
 ## Relationships
 
 ### Conforms To
-- [Copyable](../Swift/Copyable.md)
-- [Equatable](../Swift/Equatable.md)
-- [Escapable](../Swift/Escapable.md)
-- [Publisher](../Combine/Publisher.md)
+- [Copyable](../swift/copyable.md)
+- [Equatable](../swift/equatable.md)
+- [Escapable](../swift/escapable.md)
+- [Publisher](../combine/publisher.md)
 
 
 ---

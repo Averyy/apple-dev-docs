@@ -6,7 +6,7 @@ Provide a way for people to find, connect to, and control your media device by a
 
 #### Overview
 
-A media device extension brings TVs, speakers, and streaming devices into systems’s media device picker, the picker that opens when someone taps an [`AVRoutePickerView`](https://developer.apple.com/documentation/AVKit/AVRoutePickerView) in an app. Your extension implements a media sharing protocol that handles discovery, connection, and playback for these devices.
+A media device extension brings TVs, speakers, and streaming devices into systems’s media device picker, the picker that opens when someone taps an [`AVRoutePickerView`](https://developer.apple.com/documentation/avkit/avroutepickerview) in an app. Your extension implements a media sharing protocol that handles discovery, connection, and playback for these devices.
 
 When a person opens the media device picker, the system launches your extension and asks it discover available devices. Your extension scans for nearby devices and reports each one to the system, so they appear in the picker.
 
@@ -14,15 +14,15 @@ When the person selects a device, the system calls [`activateDevice(_:session:fo
 
 > ❗ **Important**: Only maintain connections to devices the system has activated. Don’t make persistent connections that extend beyond the purpose of discovery before the system notifies you that the person has made a selection and activated a device.
 
-When the device is active, your extension is ready to receive media. Media apps that support your protocol use [`AVSystemRoute`](https://developer.apple.com/documentation/AVSystemRouting/AVSystemRoute-5s2um) to start playback on the device. If your extension conforms to [`RealtimeSampleHandling`](realtimesamplehandling.md), the system also routes real-time audio or video samples to it.
+When the device is active, your extension is ready to receive media. Media apps that support your protocol use [`AVSystemRoute`](https://developer.apple.com/documentation/avsystemrouting/avsystemroute-5s2um) to start playback on the device. If your extension conforms to [`RealtimeSampleHandling`](realtimesamplehandling.md), the system also routes real-time audio or video samples to it.
 
-Your extension works with [`AVSystemRouting`](https://developer.apple.com/documentation/AVSystemRouting), the framework media apps use to observe routes and control playback. Apps observe route changes through [`AVSystemRouteController`](https://developer.apple.com/documentation/AVSystemRouting/AVSystemRouteController-18ns8) and control playback through [`AVSystemRoute`](https://developer.apple.com/documentation/AVSystemRouting/AVSystemRoute-5s2um). Your extension handles the protocol-specific communication with the hardware.
+Your extension works with [`AVSystemRouting`](https://developer.apple.com/documentation/avsystemrouting), the framework media apps use to observe routes and control playback. Apps observe route changes through [`AVSystemRouteController`](https://developer.apple.com/documentation/avsystemrouting/avsystemroutecontroller-18ns8) and control playback through [`AVSystemRoute`](https://developer.apple.com/documentation/avsystemrouting/avsystemroute-5s2um). Your extension handles the protocol-specific communication with the hardware.
 
 #### Create and Configure the Extension Target
 
 In Xcode, choose File > New > Target, select Generic Extension. Xcode adds the new extension to your project.
 
-Both the extension and its container app require the [`com.apple.developer.media-device-extension`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.media-device-extension) entitlement set to Media Sharing Protocol ID that uniquely names your protocol:
+Both the extension and its container app require the [`com.apple.developer.media-device-extension`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.media-device-extension) entitlement set to Media Sharing Protocol ID that uniquely names your protocol:
 
 ```xml
 <key>com.apple.developer.media-device-extension</key>
@@ -336,8 +336,8 @@ Ensure your extension class conforms to [`RealtimeSampleHandling`](realtimesampl
 
 To capture the samples themselves, use the appropriate system framework:
 
-- For audio, use [`AudioDriverKit`](https://developer.apple.com/documentation/AudioDriverKit/AudioDriverKit) to receive system audio, then [`Audio Toolbox`](https://developer.apple.com/documentation/AudioToolbox) to encode it.
-- For video, use [`ScreenCaptureKit`](https://developer.apple.com/documentation/ScreenCaptureKit) to receive system video, then [`Video Toolbox`](https://developer.apple.com/documentation/VideoToolbox) to encode it.
+- For audio, use [`AudioDriverKit`](https://developer.apple.com/documentation/audiodriverkit/audiodriverkit) to receive system audio, then [`Audio Toolbox`](https://developer.apple.com/documentation/audiotoolbox) to encode it.
+- For video, use [`ScreenCaptureKit`](https://developer.apple.com/documentation/screencapturekit) to receive system video, then [`Video Toolbox`](https://developer.apple.com/documentation/videotoolbox) to encode it.
 
 ```swift
 @main
@@ -392,7 +392,7 @@ func isDeviceMuted(_ device: MediaOutputDevice) -> Bool {
 
 ## See Also
 
-- [Routing media to third-party devices](../AVSystemRouting/routing-media-to-third-party-devices.md)
+- [Routing media to third-party devices](../avsystemrouting/routing-media-to-third-party-devices.md)
   Respond to routing events and control playback on a TV, speaker, or other media device.
 - [protocol MediaDeviceExtension](mediadeviceextension.md)
   A protocol that defines the requirements of a media device extension that discovers, activates, and plays media on a remote device.

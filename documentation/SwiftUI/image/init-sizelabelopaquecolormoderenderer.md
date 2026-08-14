@@ -40,7 +40,7 @@ let image = Image(size: mySize) { context in
 }
 ```
 
-![An ellipse with a gradient that blends from yellow at the upper-](https://docs-assets.developer.apple.com/published/0c7d3728c4b4e45be13673be65c95a0d/Image-2%402x.png)
+![An ellipse with a gradient that blends from yellow at the upper-](/images/com.apple.SwiftUI/Image-2@2x.png)
 
 ## Parameters
 

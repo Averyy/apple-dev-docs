@@ -21,7 +21,7 @@ class var lighterColor: CIBlendKernel { get }
 
 #### Discussion
 
-![The result of using the lighter color blend kernel (background image is top left, foreground image is bottom left)](https://docs-assets.developer.apple.com/published/48639ca4efd0b33d2e3c430dd546fc41/media-2926870%402x.png)
+![The result of using the lighter color blend kernel (background image is top left, foreground image is bottom left)](/images/com.apple.coreimage/media-2926870@2x.png)
 
 ## See Also
 

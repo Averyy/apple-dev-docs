@@ -10,7 +10,7 @@ The system groups related notifications together in the Notification Center. You
 
 ##### Set the Thread Identifier
 
-The system automatically groups notifications with the same category and thread ID as they arrive. For local notifications, set the content’s [`threadIdentifier`](https://developer.apple.com/documentation/UserNotifications/UNMutableNotificationContent/threadIdentifier) property. For remote notifications, use the `thread-id` key.
+The system automatically groups notifications with the same category and thread ID as they arrive. For local notifications, set the content’s [`threadIdentifier`](https://developer.apple.com/documentation/usernotifications/unmutablenotificationcontent/threadidentifier) property. For remote notifications, use the `thread-id` key.
 
 ```swift
 let myPOICategory = "NearbyPlaceOfInterestCategoryIdentifier"
@@ -31,7 +31,7 @@ let request = UNNotificationRequest(identifier: myPOICategory,
 
 ##### Display Groups in Custom Interfaces
 
-Additionally, if you provide a custom long-look interface, it can respond to grouped notifications, displaying content from multiple notifications within a single interface. If a custom notification interface is on screen and a new notification with a matching category and thread ID arrives, the system calls your notification controller’s [`didReceive(_:)`](https://developer.apple.com/documentation/WatchKit/WKUserNotificationInterfaceController/didReceive(_:)) method again. Your implementation must be prepared to append the incoming content to the existing interface. For example, if your custom interface displays the content in a table view, you can add a new row for the incoming content.
+Additionally, if you provide a custom long-look interface, it can respond to grouped notifications, displaying content from multiple notifications within a single interface. If a custom notification interface is on screen and a new notification with a matching category and thread ID arrives, the system calls your notification controller’s [`didReceive(_:)`](https://developer.apple.com/documentation/watchkit/wkusernotificationinterfacecontroller/didreceive(_:)) method again. Your implementation must be prepared to append the incoming content to the existing interface. For example, if your custom interface displays the content in a table view, you can add a new row for the incoming content.
 
 ## See Also
 

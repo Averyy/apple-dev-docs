@@ -26,7 +26,7 @@ A new navigation object you use to track the loading progress of the request.
 
 Use this method to navigate to a webpage that you loaded or created yourself. For example, you might use this method to load HTML content that your app generates programmatically.
 
-This method sets the source of this load request for app activity data to [`NSURLRequest.Attribution.developer`](https://developer.apple.com/documentation/Foundation/NSURLRequest/Attribution-swift.enum/developer).
+This method sets the source of this load request for app activity data to [`NSURLRequest.Attribution.developer`](https://developer.apple.com/documentation/foundation/nsurlrequest/attribution-swift.enum/developer).
 
 ## Parameters
 

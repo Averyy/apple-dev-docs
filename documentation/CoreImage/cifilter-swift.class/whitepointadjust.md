@@ -43,7 +43,7 @@ func whitePoint(inputImage: CIImage) -> CIImage {
 }
 ```
 
-![Two versions of a photograph side by side. The photo on the left shows a small bunch of flowers photographed close up, in focus, with good light and no effects. In the photo on the right, a white point adjust filter is applied, resulting in a pink hue added to the entire image.](https://docs-assets.developer.apple.com/published/ae08a9d52f59be43e7c900861b0c25d8/media-3545004%402x.png)
+![Two versions of a photograph side by side. The photo on the left shows a small bunch of flowers photographed close up, in focus, with good light and no effects. In the photo on the right, a white point adjust filter is applied, resulting in a pink hue added to the entire image.](/images/com.apple.coreimage/media-3545004@2x.png)
 
 ## See Also
 

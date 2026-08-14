@@ -28,7 +28,7 @@ static let heartRate: HKQuantityTypeIdentifier
 
 These samples use count/time units (described in [`HKUnit`](hkunit.md)) and measure discrete values (described in [`HKQuantityAggregationStyle`](hkquantityaggregationstyle.md)). Sample data may be condensed and/or coalesced by HealthKit. For more information, see [`Accessing condensed workout samples`](accessing-condensed-workout-samples.md).
 
-Heart rate samples may include motion context information, which is stored as metadata using the [`HKMetadataKeyHeartRateMotionContext`](hkmetadatakeyheartratemotioncontext.md) key. The value of this key is an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) object that contains a [`HKHeartRateMotionContext`](hkheartratemotioncontext.md) value.
+Heart rate samples may include motion context information, which is stored as metadata using the [`HKMetadataKeyHeartRateMotionContext`](hkmetadatakeyheartratemotioncontext.md) key. The value of this key is an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) object that contains a [`HKHeartRateMotionContext`](hkheartratemotioncontext.md) value.
 
 The motion context gives additional information about the user’s activity level when the heart rate sample was taken. Apple Watch uses the following guidelines when setting the motion context:
 

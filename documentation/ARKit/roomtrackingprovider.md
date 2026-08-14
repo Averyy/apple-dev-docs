@@ -39,10 +39,10 @@ final class RoomTrackingProvider
 ## Relationships
 
 ### Conforms To
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
 - [DataProvider](dataprovider.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 
@@ -50,7 +50,7 @@ final class RoomTrackingProvider
   The representation of a room ARKit is currently tracking.
 - [enum SurfaceClassification](surfaceclassification.md)
   A value describing the classification of a surface.
-- [Building local experiences with room tracking](../visionOS/building-local-experiences-with-room-tracking.md)
+- [Building local experiences with room tracking](../visionos/building-local-experiences-with-room-tracking.md)
   Use room tracking in visionOS to provide custom interactions with physical spaces.
 
 

@@ -25,7 +25,7 @@ A promise that resolves with a [`Place`](place.md) on success, or rejects with a
 
 #### Discussion
 
-For information about Places, see [`Identifying unique locations with Place IDs`](https://developer.apple.com/documentation/MapKit/identifying-unique-locations-with-place-ids).
+For information about Places, see [`Identifying unique locations with Place IDs`](https://developer.apple.com/documentation/mapkit/identifying-unique-locations-with-place-ids).
 
 Pass an `AbortSignal` from an `AbortController` to the [`signal`](placelookupoptions/signal.md) option to allow the controller to cancel a pending request. When the controller aborts, the promise it returns rejects with a `DOMException` whose `name` is `"AbortError"`.
 

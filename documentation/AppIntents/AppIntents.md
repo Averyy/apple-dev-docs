@@ -18,7 +18,7 @@ Make content and actions discoverable by Apple Intelligence and support system e
 
 Make your app’s actions and data available outside your app using the App Intents framework. Every app has code to perform specific actions, such as playing music or displaying photos. Apps also have data, such as songs or photos, that people might want to use outside your app.
 
-![A hero image of an App Intents framework icon.](https://docs-assets.developer.apple.com/published/4c11e7619eec4482c4c0d9fdb7676e38/app-intents-hero%402x.png)
+![A hero image of an App Intents framework icon.](/images/com.apple.AppIntents/app-intents-hero@2x.png)
 
 With App Intents, you express your app’s actions and data in a structured way that makes them discoverable by Apple Intelligence and provides deeper integration with system features people use frequently. For example:
 
@@ -26,19 +26,19 @@ With App Intents, you express your app’s actions and data in a structured way 
 - Spotlight helps people navigate to your data directly from search results.
 - The Shortcuts app helps people configure workflows that include your app’s actions.
 - People can configure Apple Pencil or the Action button on iPhone to perform your app’s actions when pressed.
-- [`WidgetKit`](https://developer.apple.com/documentation/WidgetKit), [`Controls`](https://developer.apple.com/documentation/WidgetKit/Controls-Collection), and [`ActivityKit`](https://developer.apple.com/documentation/ActivityKit) can use your app’s actions to perform relevant tasks.
+- [`WidgetKit`](https://developer.apple.com/documentation/widgetkit), [`Controls`](https://developer.apple.com/documentation/widgetkit/controls-collection), and [`ActivityKit`](https://developer.apple.com/documentation/activitykit) can use your app’s actions to perform relevant tasks.
 - You can define custom Focus modes, and respond to Focus changes.
 
 Use this framework to declare the actions your app performs as one or more *app intents*. You can also create *app entities* and *app enums* to make your app’s key data types available to the system. For example, a music app might define entities for the songs and albums it manages, and define an app intent to play them. During compilation, the compiler generates information that Apple Intelligence, Siri, and other system features need to discover and use your intents, entities, and app enum types.
 
-For design guidance on how to implement features that involve [`Widgets`](https://developer.apple.com/design/Human-Interface-Guidelines/widgets), [`Controls`](https://developer.apple.com/design/Human-Interface-Guidelines/controls), [`App Shortcuts`](https://developer.apple.com/design/Human-Interface-Guidelines/app-shortcuts), [`Siri`](https://developer.apple.com/design/Human-Interface-Guidelines/siri), or the [`Action button`](https://developer.apple.com/design/Human-Interface-Guidelines/action-button), see [`Human Interface Guidelines`](https://developer.apple.com/design/human-interface-guidelines).
+For design guidance on how to implement features that involve [`Widgets`](https://developer.apple.com/design/human-interface-guidelines/widgets), [`Controls`](https://developer.apple.com/design/human-interface-guidelines/controls), [`App Shortcuts`](https://developer.apple.com/design/human-interface-guidelines/app-shortcuts), [`Siri`](https://developer.apple.com/design/human-interface-guidelines/siri), or the [`Action button`](https://developer.apple.com/design/human-interface-guidelines/action-button), see [`Human Interface Guidelines`](https://developer.apple.com/design/human-interface-guidelines).
 
 ## Topics
 
 ### Essentials
 - [Getting started with the App Intents framework](getting-started-with-the-app-intents-framework.md)
   Make your app’s actions and content available to the rest of the system using the App Intents framework.
-- [App Intents updates](../Updates/AppIntents.md)
+- [App Intents updates](../updates/appintents.md)
   Learn about important changes in App Intents.
 ### App-specific content
 - [App intents](app-intents.md)
@@ -76,9 +76,9 @@ For design guidance on how to implement features that involve [`Widgets`](https:
 - [Visual intelligence](visual-intelligence.md)
   Match images to your app’s content and report the results to the Visual Intelligence framework using an app intent.
 ### Testing
-- [Testing your App Intents code](../AppIntentsTesting/testing-your-app-intents-code.md)
+- [Testing your App Intents code](../appintentstesting/testing-your-app-intents-code.md)
   Evaluate intents, entities, and queries, and verify your integration with system features like Spotlight and Siri.
-- [App Intents Testing](../AppIntentsTesting/AppIntentsTesting.md)
+- [App Intents Testing](../appintentstesting/appintentstesting.md)
   Test your app intents, entities, queries, and integration with system features like Siri or Spotlight.
 ### Errors
 - [struct AppIntentError](appintenterror.md)

@@ -23,7 +23,7 @@ A property wrapper type that subscribes to an observable object and invalidates 
 
 #### Overview
 
-Add the `@ObservedObject` attribute to a parameter of a SwiftUI [`View`](view.md) when the input is an [`ObservableObject`](https://developer.apple.com/documentation/Combine/ObservableObject) and you want the view to update when the object’s published properties change. You typically do this to pass a [`StateObject`](stateobject.md) into a subview.
+Add the `@ObservedObject` attribute to a parameter of a SwiftUI [`View`](view.md) when the input is an [`ObservableObject`](https://developer.apple.com/documentation/combine/observableobject) and you want the view to update when the object’s published properties change. You typically do this to pass a [`StateObject`](stateobject.md) into a subview.
 
 The following example defines a data model as an observable object, instantiates the model in a view as a state object, and then passes the instance to a subview as an observed object:
 
@@ -55,7 +55,7 @@ When any published property of the observable object changes, SwiftUI updates an
 
 Don’t specify a default or initial value for the observed object. Use the attribute only for a property that acts as an input for a view, as in the above example.
 
-> **Note**: Don’t wrap objects conforming to the [`Observable`](https://developer.apple.com/documentation/Observation/Observable) protocol with `@ObservedObject`. SwiftUI automatically tracks dependencies to `Observable` objects used within body and updates dependent views when their data changes. Attempting to wrap an `Observable` object with `@ObservedObject` may cause a compiler error, because it requires that its wrapped object to conform to the [`ObservableObject`](https://developer.apple.com/documentation/Combine/ObservableObject) protocol. If the view needs a binding to a property of an `Observable` object in its body, wrap the object with the [`Bindable`](bindable.md) property wrapper instead; for example, `@Bindable var model: DataModel`. For more information, see [`Managing model data in your app`](managing-model-data-in-your-app.md).
+> **Note**: Don’t wrap objects conforming to the [`Observable`](https://developer.apple.com/documentation/observation/observable) protocol with `@ObservedObject`. SwiftUI automatically tracks dependencies to `Observable` objects used within body and updates dependent views when their data changes. Attempting to wrap an `Observable` object with `@ObservedObject` may cause a compiler error, because it requires that its wrapped object to conform to the [`ObservableObject`](https://developer.apple.com/documentation/combine/observableobject) protocol. If the view needs a binding to a property of an `Observable` object in its body, wrap the object with the [`Bindable`](bindable.md) property wrapper instead; for example, `@Bindable var model: DataModel`. For more information, see [`Managing model data in your app`](managing-model-data-in-your-app.md).
 
 ## Topics
 
@@ -76,8 +76,8 @@ Don’t specify a default or initial value for the observed object. Use the attr
 
 ### Conforms To
 - [DynamicProperty](dynamicproperty.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 
@@ -85,13 +85,13 @@ Don’t specify a default or initial value for the observed object. Use the attr
   Create connections between your app’s data model and views.
 - [Migrating from the Observable Object protocol to the Observable macro](migrating-from-the-observable-object-protocol-to-the-observable-macro.md)
   Update your existing app to leverage the benefits of Observation in Swift.
-- [macro Observable()](../Observation/Observable().md)
+- [macro Observable()](../observation/observable().md)
   Defines and implements conformance of the Observable protocol.
 - [Monitoring data changes in your app](monitoring-model-data-changes-in-your-app.md)
   Show changes to data in your app’s user interface by using observable objects.
 - [struct StateObject](stateobject.md)
   A property wrapper type that instantiates an observable object.
-- [protocol ObservableObject](../Combine/ObservableObject.md)
+- [protocol ObservableObject](../combine/observableobject.md)
   A type of object with a publisher that emits before the object has changed.
 
 

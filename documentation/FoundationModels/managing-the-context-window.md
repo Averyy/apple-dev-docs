@@ -20,11 +20,11 @@ The context window defines the maximum number of tokens the model can process in
 
 The following diagram shows the context window filling over a number of turns of a conversation. In a later turn, the context window is nearly full with the accumulated content from the previous turns, and eventually appears with a dashed red border to indicate that the session exceeded the content size:
 
-![A diagram showing how the context window fills over a number of turns of a conversation.](https://docs-assets.developer.apple.com/published/b3927221fd77e599afe1ca352a04766c/managing-the-context-window-context-window%402x.png)
+![A diagram showing how the context window fills over a number of turns of a conversation.](/images/com.apple.foundationmodels/managing-the-context-window-context-window@2x.png)
 
 After reaching the context size, the session can no longer process additional requests and throws an [`LanguageModelError.contextSizeExceeded(_:)`](languagemodelerror/contextsizeexceeded(_:).md) error. When this happens, trim the session history or create a new session to get a fresh context window. Use [`init(model:tools:transcript:)`](languagemodelsession/init(model:tools:transcript:).md) and include any state from the original session that’s necessary for the request, then retry:
 
-![A diagram showing a new session with a fresh context window. The session](https://docs-assets.developer.apple.com/published/4303e33af4b252d3387f0b64161b6375/managing-the-context-window-new-context-window%402x.png)
+![A diagram showing a new session with a fresh context window. The session](/images/com.apple.foundationmodels/managing-the-context-window-new-context-window@2x.png)
 
 #### Profile Token Usage in Xcode
 
@@ -35,7 +35,7 @@ Before optimizing your token usage, it’s important to understand how your inte
 3. Click the Record button and interact with your app’s AI features.
 4. Observe the token count as your app interacts with the model.
 
-![A screenshot of Instruments displaying the Foundation Models instrument track](https://docs-assets.developer.apple.com/published/7b0fffd5593cdb6f4c121f03a4cf776e/analyzing-the-runtime-performance-of-your-foundation-models-app-record-analysis%402x.png)
+![A screenshot of Instruments displaying the Foundation Models instrument track](/images/com.apple.foundationmodels/analyzing-the-runtime-performance-of-your-foundation-models-app-record-analysis@2x.png)
 
 The instrument shows you exactly how many tokens each interaction uses for your app’s input and output tokens the model generates. It provides a detailed breakdown of your session requests, prompts, responses, and tool calls to help you identify opportunities for optimization, like:
 

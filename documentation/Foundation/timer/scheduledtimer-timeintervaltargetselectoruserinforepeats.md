@@ -36,7 +36,7 @@ After `ti` seconds have elapsed, the timer fires, sending the message `aSelector
 - (void)timerFireMethod:(NSTimer *)timer
 ```
 - `userInfo`: The user info for the timer. The timer maintains a strong reference to this object until it (the timer) is invalidated. This parameter may be `nil`.
-- `yesOrNo`: If [`true`](https://developer.apple.com/documentation/Swift/true), the timer will repeatedly reschedule itself until invalidated. If [`false`](https://developer.apple.com/documentation/Swift/false), the timer will be invalidated after it fires.
+- `yesOrNo`: If [`true`](https://developer.apple.com/documentation/swift/true), the timer will repeatedly reschedule itself until invalidated. If [`false`](https://developer.apple.com/documentation/swift/false), the timer will be invalidated after it fires.
 
 ## See Also
 

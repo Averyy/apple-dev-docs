@@ -27,12 +27,12 @@ By default, SceneKit lazily loads resources onto the GPU for rendering. This app
 
 SceneKit prepares all content associated with the objects you provide. If you provide an [`SCNMaterial`](scnmaterial.md) object, SceneKit loads any texture images assigned to its material properties. If you provide an [`SCNGeometry`](scngeometry.md) object, SceneKit loads all materials attached to the geometry, as well as its vertex data. If you provide an [`SCNNode`](scnnode.md) or [`SCNScene`](scnscene.md) object, SceneKit loads all geometries and materials associated with the node and all its child nodes, or with the entire node hierarchy of the scene.
 
-You can observe the progress of this operation with the [`Progress`](https://developer.apple.com/documentation/Foundation/Progress) class. For details, see [`Progress`](https://developer.apple.com/documentation/Foundation/Progress).
+You can observe the progress of this operation with the [`Progress`](https://developer.apple.com/documentation/foundation/progress) class. For details, see [`Progress`](https://developer.apple.com/documentation/foundation/progress).
 
 ## Parameters
 
 - `objects`: An array of containing one or more [`SCNScene`](scnscene.md), [`SCNNode`](scnnode.md), [`SCNGeometry`](scngeometry.md), or [`SCNMaterial`](scnmaterial.md) instances.
-- `completionHandler`: A block that SceneKit calls when object preparation fails or completes. The block takes the following parameter: - **success**: [`true`](https://developer.apple.com/documentation/Swift/true) if all content was successfully prepared for rendering; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
+- `completionHandler`: A block that SceneKit calls when object preparation fails or completes. The block takes the following parameter: - **success**: [`true`](https://developer.apple.com/documentation/swift/true) if all content was successfully prepared for rendering; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
 
 ## See Also
 

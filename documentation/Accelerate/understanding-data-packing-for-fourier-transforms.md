@@ -42,7 +42,7 @@ signal.withUnsafeBytes { signalPtr in
 
 On return, `complexReals` contains the values `[0.0, 2.0, 4.0, 6.0]`, and `complexImaginaries` contains the values `[1.0, 3.0, 5.0, 7.0]`. The diagram below illustrates how [`vDSP_ctoz`](vdsp_ctoz.md) converts the real values to the even-odd split configuration:
 
-![Diagram showing an array of eight real elements converted to an array of four split-complex elements. The conversion stores the split-complex elements across an array of real parts and an array of complex parts.](https://docs-assets.developer.apple.com/published/56b9ca73fdb8c0441be5bf51032eec73/media-3705864%402x.png)
+![Diagram showing an array of eight real elements converted to an array of four split-complex elements. The conversion stores the split-complex elements across an array of real parts and an array of complex parts.](/images/com.apple.accelerate/media-3705864@2x.png)
 
 ##### Create a Composite Sine Wave
 
@@ -86,7 +86,7 @@ static func makeCompositeSineWave(from frequencyAmplitudePairs: [(f: Float,
 
 The following figure visualizes the values of a 1024-element array that `makeCompositeSineWave()` returns with the frequency-amplitude pairs `[(f: 2, a: 1.5), (f: 8, a: 1.0)]:`
 
-![Illustration of a composite sine wave.](https://docs-assets.developer.apple.com/published/8024c03dca26a46202bfb72113285798/media-3696650%402x.png)
+![Illustration of a composite sine wave.](/images/com.apple.accelerate/media-3696650@2x.png)
 
 ##### Perform Fourier Transform on 1d Real Data in Split Complex Format
 
@@ -169,11 +169,11 @@ The result of a forward Fourier transform on `n` real values is `n` complex valu
 
 vDSP exploits the zeros in the DC and Nyquist elements and the symmetry of the complex conjugates. The Fourier transform routines represent the frequency-domain data in `n/2` complex values. They achieve this by placing the real Nyquist component in the imaginary part of the DC element and omitting the complex conjugates:
 
-![Diagram showing the result of a forward Fourier transform before and after data packing.](https://docs-assets.developer.apple.com/published/92c1707daf705c382a7a51992b21887e/media-3705871%402x.png)
+![Diagram showing the result of a forward Fourier transform before and after data packing.](/images/com.apple.accelerate/media-3705871@2x.png)
 
 The following figure illustrates the frequency-domain result from performing a forward transform on the signal data that contains the four composite sine waves:
 
-![Stacked diagram showing a composite sine wave before and after forward Fourier transform. The time-domain sine wave is illustrated as a line, and the frequency-domain representation is illustrated as two arrays that form the split-complex values.](https://docs-assets.developer.apple.com/published/f07398e16619dbdf14520fbc671b5ac7/media-3705868%402x.png)
+![Stacked diagram showing a composite sine wave before and after forward Fourier transform. The time-domain sine wave is illustrated as a line, and the frequency-domain representation is illustrated as two arrays that form the split-complex values.](/images/com.apple.accelerate/media-3705868@2x.png)
 
 The indices of the nonzero elements in the frequency-domain data are the sine wave frequencies in the original time-domain signal: `1` , `5`, `10`, and `15`.
 
@@ -212,13 +212,13 @@ var complexReals = [Float](unsafeUninitializedCapacity: count) {
 
 On return, `complexReals` contains the values `[0.0, 2.0, 4.0, 6.0]`, and `complexImaginaries` contains the values [`1.0, 3.0, 5.0, 7.0]`. The following diagram illustrates how `vDSP_ctoz(_:_:_:_:_:)` converts the interleaved values to the even-odd split configuration:
 
-![Diagram showing an array of four interleaved-complex elements converted to an array of four split-complex elements. The conversion stores the split-complex elements across an array of real parts and an array of complex parts.](https://docs-assets.developer.apple.com/published/dba3e512f635264c9f4426e49292d1e6/media-3705866%402x.png)
+![Diagram showing an array of four interleaved-complex elements converted to an array of four split-complex elements. The conversion stores the split-complex elements across an array of real parts and an array of complex parts.](/images/com.apple.accelerate/media-3705866@2x.png)
 
 ##### Perform Fourier Transform on 1d Complex Data
 
 The following figure shows a representation of time-domain complex data. The real part and imaginary part contain distinct composite sine waves:
 
-![Three stacked images of a complex signal. The top and middle images show the signal from the top view and side view respectively and render as composite sine waves. The bottom view show the signal in 3D and renders the signal as a distorted helix.](https://docs-assets.developer.apple.com/published/dd314cdab2808660fbaedd32955458aa/media-3704699%402x.png)
+![Three stacked images of a complex signal. The top and middle images show the signal from the top view and side view respectively and render as composite sine waves. The bottom view show the signal in 3D and renders the signal as a distorted helix.](/images/com.apple.accelerate/media-3704699@2x.png)
 
 Use [`vDSP_DFT_zop_CreateSetup`](vdsp_dft_zop_createsetup.md) to create a DFT object for a complex transform, or call [`vDSP_fft_zip`](vdsp_fft_zip.md) to perform a complex FFT in place. The following code creates a complex signal and performs a forward DFT:
 
@@ -260,13 +260,13 @@ The indices of the nonzero magnitudes indicate the component frequencies `3`, `4
 
 The following figure shows the layout of the frequency-domain data. The DC and Nyquist components contain real and imaginary parts. The elements `0` to `n/2 -1` contain the positive-frequency values, and the elements `n/2 +` 1 to `n - 1` contain the negative-frequency values.
 
-![Stacked diagram showing a complex signal before and after forward Fourier transform. The time-domain signal is illustrated as two line graphs, and the frequency-domain representation is illustrated as two arrays that store the split-complex values.](https://docs-assets.developer.apple.com/published/d1de92ceb2441d035badb8875a4f6163/media-3705870%402x.png)
+![Stacked diagram showing a complex signal before and after forward Fourier transform. The time-domain signal is illustrated as two line graphs, and the frequency-domain representation is illustrated as two arrays that store the split-complex values.](/images/com.apple.accelerate/media-3705870@2x.png)
 
 ##### Perform Fourier Transform on 2d Real Data
 
 vDSP provides routines you can use to compute the FFT of 2D real data such as single-channel images. The following figure shows the original, spatial-domain representations of grids of dots with their frequency-domain counterparts:
 
-![Two pairs of images that show image data before and after forward Fourier transform. The first pair of images shows a grid of 32 times 32 dots for the spatial-domain representation that corresponds to a single star-like highlight in the top-left of the frequency-domain representation. The second pair of images shows a grid of 128 times 128 dots for the spatial-domain representation that corresponds to a single star-like highlight in the center of the frequency-domain representation ](https://docs-assets.developer.apple.com/published/05abc1f99f2a41221d663bbfc9166bc1/media-3705867%402x.png)
+![Two pairs of images that show image data before and after forward Fourier transform. The first pair of images shows a grid of 32 times 32 dots for the spatial-domain representation that corresponds to a single star-like highlight in the top-left of the frequency-domain representation. The second pair of images shows a grid of 128 times 128 dots for the spatial-domain representation that corresponds to a single star-like highlight in the center of the frequency-domain representation ](/images/com.apple.accelerate/media-3705867@2x.png)
 
 Use [`vDSP_ctoz`](vdsp_ctoz.md) to convert real spatial-domain values like pixel intensities to complex values. The real part of each complex value contains the even pixel values, and the imaginary part of each complex value contains the odd pixel values. The following code defines the width and height of the matrix of complex values for a 512 x 512 real matrix:
 
@@ -319,7 +319,7 @@ imageData.withUnsafeBytes { imageDataPtr in
 
 The 2D FFT operates on real data by first transforming each row. This transform generates real values — the DC and Nyquist component of each row — in the first two elements of each row. The second pass of the transform computes the FFT for each column. The first two columns contain real values, and vDSP uses the real transform routines. Subsequent columns contain complex values, and vDSP uses the complex transform routines:
 
-![Flow diagram showing a matrix of 8 times 8 real pixels forward Fourier transformed with eight horizontal passes. The intermediate result is forward Fourier transformed with two vertical real passes and six vertical complex passes.](https://docs-assets.developer.apple.com/published/fc9a55cfc0a7a4b3c6ba6ba74f91bcce/media-3705869%402x.png)
+![Flow diagram showing a matrix of 8 times 8 real pixels forward Fourier transformed with eight horizontal passes. The intermediate result is forward Fourier transformed with two vertical real passes and six vertical complex passes.](/images/com.apple.accelerate/media-3705869@2x.png)
 
 Because the complex elements `n/2 +` 1 to `n - 1` contain the negative-frequency values, for tasks such as visualizing the frequency-domain representation of 2D real data, you may be able to discard the bottom `n/2` rows.
 
@@ -327,7 +327,7 @@ Because the complex elements `n/2 +` 1 to `n - 1` contain the negative-frequency
 
 vDSP provides functions for performing Fourier transforms on 2D complex data, such as two-channel images. The following image shows the spatial-domain representation of 2D complex data with low-frequency data in the red and green channels, and high-frequency data in the blue channel. The frequency-domain representation shows the magnitude of the complex values:
 
-![Pair of images that shows image data before and after forward Fourier transform. The spatial-domain image contains a matrix 16 times 16 yellow dots and a matrix of 64 times 64 blue dots. The frequency-domain representation contains two star-like highlights.](https://docs-assets.developer.apple.com/published/8dce3cb78d5e878ab45ac877ab0c194f/media-3696140%402x.png)
+![Pair of images that shows image data before and after forward Fourier transform. The spatial-domain image contains a matrix 16 times 16 yellow dots and a matrix of 64 times 64 blue dots. The frequency-domain representation contains two star-like highlights.](/images/com.apple.accelerate/media-3696140@2x.png)
 
 Use [`vDSP_fft2d_zip`](vdsp_fft2d_zip.md) to perform a complex FFT on 2D complex data:
 
@@ -367,7 +367,7 @@ complexReals.withUnsafeMutableBufferPointer { realPtr in
 
 On return, `complexReals` and `complexImaginaries` contain the frequency-domain representation of the complex data. Because both the horizontal pass and the vertical pass are complex FFTs, the right `n/2` columns and the bottom `n/2` rows contain the negative frequencies:
 
-![Image of the frequency-domain representation of the matrix 16 times 16 yellow dots and a matrix of 64 times 64 blue dots. The top-left quadrant represents the positive frequencies and contains two star-like highlights. The other three quadrants represent negative frequencies and are grayed out.](https://docs-assets.developer.apple.com/published/a439499da53212ee750e3e60771c37c7/media-3696221%402x.png)
+![Image of the frequency-domain representation of the matrix 16 times 16 yellow dots and a matrix of 64 times 64 blue dots. The top-left quadrant represents the positive frequencies and contains two star-like highlights. The other three quadrants represent negative frequencies and are grayed out.](/images/com.apple.accelerate/media-3696221@2x.png)
 
 ##### Scale Time and Frequency Domain Data
 

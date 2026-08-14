@@ -96,7 +96,7 @@ The code above results in a response like the following:
 
 You can identify assets by the unique pair of store identifier and quality properties in `RequestAsset`. Assets in the [`GetAssetsResponse`](getassetsresponse.md) have additional fields regarding quantity and assignability in [`ResponseAsset`](responseasset.md). For pagination response fields, see [`Using paginated endpoints`](using-paginated-endpoints.md).
 
-Free apps and books will allow for unlimited assignment by default, however organizations may decide to use their existing fixed inventory on an organization unit basis. Use the `unlimited` query parameter to filter for unlimited assets. When set to `true`, the response includes a separate `unlimitedAssets` array containing [`UnlimitedResponseAsset`](unlimitedresponseasset.md) objects with unlimited licenses. When set to `false`, the response excludes unlimited assets. If the `unlimited` parameter is omitted, any unlimited free assets in the location return with a `totalCount` value of `2147483647`, the maximum integer value.
+Free apps and books will allow for unlimited assignment by default, however organizations may decide to use their existing fixed inventory on an organizational unit basis. Use the `unlimited` query parameter to filter for unlimited assets. When set to `true`, the response includes a separate `unlimitedAssets` array containing [`UnlimitedResponseAsset`](unlimitedresponseasset.md) objects with unlimited licenses. When set to `false`, the response excludes unlimited assets. If the `unlimited` parameter is omitted, any unlimited free assets in the organizational unit return with a `totalCount` value of `2147483647`, the maximum integer value.
 
 The Get Assets endpoint supports several additional query parameters for filtering results:
 
@@ -399,7 +399,7 @@ For device management services that subscribe to `ASSET_MANAGEMENT` notification
 - [Managing subscriptions](managing-subscriptions.md)
   Administer auto-renewable subscription seats for your organization.
 - [Managing users](managing-users.md)
-  Register and manage users for your organization’s managed location.
+  Register and manage users for your organization’s managed organizational unit.
 - [Setting up and assigning content](setting-up-and-assigning-content.md)
   Distribute purchased licenses to managed users through your device management service.
 

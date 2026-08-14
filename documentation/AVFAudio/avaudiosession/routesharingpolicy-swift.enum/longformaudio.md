@@ -21,7 +21,7 @@ case longFormAudio
 
 #### Discussion
 
-Apps that play long-form audio, such as music or audio books, can use this policy to play to the same output as the built-in Music and Podcast apps. Long-form audio apps should also use the [`Media Player`](https://developer.apple.com/documentation/MediaPlayer) framework to add support for remote control events and to provide Now Playing information.
+Apps that play long-form audio, such as music or audio books, can use this policy to play to the same output as the built-in Music and Podcast apps. Long-form audio apps should also use the [`Media Player`](https://developer.apple.com/documentation/mediaplayer) framework to add support for remote control events and to provide Now Playing information.
 
 Apps running in watchOS that use this policy are able to play audio in the background, as long as the audio session can activate an eligible audio route. These apps must activate their audio session using the [`activate(options:completionHandler:)`](avaudiosession/activate(options:completionhandler:).md) method. This ensures that the user has the opportunity to pick an appropriate audio route when the audio session can’t select one automatically.
 

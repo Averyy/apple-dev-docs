@@ -23,7 +23,7 @@ struct Canvas<Symbols> where Symbols : View
 
 #### Overview
 
-Use a canvas to draw rich and dynamic 2D graphics inside a SwiftUI view. The canvas passes a [`GraphicsContext`](graphicscontext.md) to the closure that you use to perform immediate mode drawing operations. The canvas also passes a [`CGSize`](https://developer.apple.com/documentation/CoreFoundation/CGSize) value that you can use to customize what you draw. For example, you can use the context’s [`stroke(_:with:lineWidth:)`](graphicscontext/stroke(_:with:linewidth:).md) command to draw a [`Path`](path.md) instance:
+Use a canvas to draw rich and dynamic 2D graphics inside a SwiftUI view. The canvas passes a [`GraphicsContext`](graphicscontext.md) to the closure that you use to perform immediate mode drawing operations. The canvas also passes a [`CGSize`](https://developer.apple.com/documentation/corefoundation/cgsize) value that you can use to customize what you draw. For example, you can use the context’s [`stroke(_:with:lineWidth:)`](graphicscontext/stroke(_:with:linewidth:).md) command to draw a [`Path`](path.md) instance:
 
 ```swift
 Canvas { context, size in
@@ -38,7 +38,7 @@ Canvas { context, size in
 
 The example above draws the outline of an ellipse that exactly inscribes a canvas with a blue border:
 
-![A screenshot of a canvas view that shows the green outline of an](https://docs-assets.developer.apple.com/published/da33312de456cfbf0dfa4f0f517083c8/Canvas-1%402x.png)
+![A screenshot of a canvas view that shows the green outline of an](/images/com.apple.SwiftUI/Canvas-1@2x.png)
 
 In addition to outlined and filled paths, you can draw images, text, and complete SwiftUI views. To draw views, use the [`init(opaque:colorMode:rendersAsynchronously:renderer:symbols:)`](canvas/init(opaque:colormode:rendersasynchronously:renderer:symbols:).md) method to supply views that you can reference from inside the renderer. You can also add masks, apply filters, perform transforms, control blending, and more. For information about how to draw, see [`GraphicsContext`](graphicscontext.md).
 
@@ -68,8 +68,8 @@ A canvas doesn’t offer interactivity or accessibility for individual elements,
 ## Relationships
 
 ### Conforms To
-- [Copyable](../Swift/Copyable.md)
-- [Escapable](../Swift/Escapable.md)
+- [Copyable](../swift/copyable.md)
+- [Escapable](../swift/escapable.md)
 - [View](view.md)
 
 ## See Also

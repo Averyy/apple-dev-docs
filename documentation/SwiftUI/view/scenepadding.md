@@ -27,7 +27,7 @@ A view that’s padded on specified edges by a scene-appropriate amount.
 
 #### Discussion
 
-Use this modifier to add a scene-appropriate amount of padding to a view. Specify either a single edge value from [`Edge.Set`](edge/set.md), or an [`OptionSet`](https://developer.apple.com/documentation/Swift/OptionSet) that describes the edges to pad.
+Use this modifier to add a scene-appropriate amount of padding to a view. Specify either a single edge value from [`Edge.Set`](edge/set.md), or an [`OptionSet`](https://developer.apple.com/documentation/swift/optionset) that describes the edges to pad.
 
 In macOS, use scene padding to produce the recommended spacing around the root view of a window. In watchOS, use scene padding to align elements of your user interface with top level elements, like the title of a navigation view. For example, compare the effects of different kinds of padding on text views presented inside a [`NavigationView`](navigationview.md) in watchOS:
 
@@ -48,7 +48,7 @@ VStack(alignment: .leading, spacing: 10) {
 
 The text with scene padding automatically aligns with the title, unlike the text that uses the default padding or the text without padding:
 
-![A watchOS screenshot with the title Hello World and a back button](https://docs-assets.developer.apple.com/published/e40f288e48faa506338094961752349f/View-scenePadding-1-watchOS%402x.png)
+![A watchOS screenshot with the title Hello World and a back button](/images/com.apple.SwiftUI/View-scenePadding-1-watchOS@2x.png)
 
 Scene padding in watchOS also ensures that your content avoids the curved edges of a device like Apple Watch Series 7. In other platforms, scene padding produces the same default padding that you get from the [`padding(_:_:)`](view/padding(_:_:).md) modifier.
 

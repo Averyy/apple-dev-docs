@@ -20,7 +20,7 @@ class let keyboardAnimationDurationUserInfoKey: String
 
 #### Discussion
 
-The value for this key is an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) object containing a `double` that represents the duration of the keyboard animation in seconds. You can use this value to match the animation of the keyboard in your own animations.
+The value for this key is an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) object containing a `double` that represents the duration of the keyboard animation in seconds. You can use this value to match the animation of the keyboard in your own animations.
 
 For an example of how to match the keyboard’s animation, see [`keyboardAnimationCurveUserInfoKey`](uiresponder/keyboardanimationcurveuserinfokey.md).
 

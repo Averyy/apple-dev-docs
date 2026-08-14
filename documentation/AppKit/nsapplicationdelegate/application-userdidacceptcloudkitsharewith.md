@@ -17,12 +17,12 @@ optional func application(_ application: NSApplication, userDidAcceptCloudKitSha
 
 #### Discussion
 
-Use the provided metadata to begin sharing the specified content with the current user. For more information, see [`CloudKit`](https://developer.apple.com/documentation/CloudKit).
+Use the provided metadata to begin sharing the specified content with the current user. For more information, see [`CloudKit`](https://developer.apple.com/documentation/cloudkit).
 
 ## Parameters
 
 - `application`: The shared app object.
-- `metadata`: The metadata associated with the invitation. Use the URL of the metadata’s [`CKShare`](https://developer.apple.com/documentation/CloudKit/CKShare) object and the [`containerIdentifier`](https://developer.apple.com/documentation/CloudKit/CKShare/Metadata/containerIdentifier) property to schedule a [`CKAcceptSharesOperation`](https://developer.apple.com/documentation/CloudKit/CKAcceptSharesOperation) object.
+- `metadata`: The metadata associated with the invitation. Use the URL of the metadata’s [`CKShare`](https://developer.apple.com/documentation/cloudkit/ckshare) object and the [`containerIdentifier`](https://developer.apple.com/documentation/cloudkit/ckshare/metadata/containeridentifier) property to schedule a [`CKAcceptSharesOperation`](https://developer.apple.com/documentation/cloudkit/ckacceptsharesoperation) object.
 
 
 ---

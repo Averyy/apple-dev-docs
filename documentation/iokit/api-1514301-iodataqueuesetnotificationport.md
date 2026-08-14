@@ -24,7 +24,7 @@ Returns kIOReturnSuccess on success. Returns kIOReturnBadArgument if either data
 
 #### Discussion
 
-This message is sent when data is added to an empty queue. It is to notify another user process that new data has become available. 
+This message is sent when data is added to an empty queue. It is to notify another user process that new data has become available. **Please note that using this method without mapped memory create from an IOSharedDataQueue will result in undefined behavior. **
 
 ## Parameters
 

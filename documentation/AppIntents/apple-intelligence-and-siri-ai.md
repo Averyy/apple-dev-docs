@@ -10,7 +10,7 @@ Apple Intelligence combines language models with your app’s actions and conten
 
 **Index entities to make them available in Spotlight.** Apple Intelligence uses the semantic search capabilities of Spotlight to find your app’s content, even when someone describes it vaguely.
 
-**Choose transferable types.** Conforming your [`AppEntity`](appentity.md) to [`Transferable`](https://developer.apple.com/documentation/CoreTransferable/Transferable) or types from the App Intents framework enables the system to move content across apps so people can perform tasks across apps with Siri AI.
+**Choose transferable types.** Conforming your [`AppEntity`](appentity.md) to [`Transferable`](https://developer.apple.com/documentation/coretransferable/transferable) or types from the App Intents framework enables the system to move content across apps so people can perform tasks across apps with Siri AI.
 
 **Adopt schemas.** Schemas define the structure of your app intents, app entities, and app enums. Schemas act as a contract between your app and the system; Apple Intelligence uses them to identify, query, and understand actions and content. Siri AI uses the schemas to match actions and content to phrases people say in everyday conversation.
 

@@ -47,7 +47,7 @@ struct WritingOptions
 - [static var atomicWrite: NSData.WritingOptions](nsdata/writingoptions/atomicwrite.md)
   An option that attempts to write data to an auxiliary file first and then exchange the files.
 ### Entitlements
-- [Data Protection Entitlement](../BundleResources/Entitlements/com.apple.developer.default-data-protection.md)
+- [Data Protection Entitlement](../bundleresources/entitlements/com.apple.developer.default-data-protection.md)
   The level of data protection for sensitive user data when an app accesses it on a device.
 ### Instance Methods
 - [func contains(Data.WritingOptions) -> Bool](nsdata/writingoptions/contains(_:).md)
@@ -61,14 +61,14 @@ struct WritingOptions
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../Swift/BitwiseCopyable.md)
-- [Equatable](../Swift/Equatable.md)
-- [ExpressibleByArrayLiteral](../Swift/ExpressibleByArrayLiteral.md)
-- [OptionSet](../Swift/OptionSet.md)
-- [RawRepresentable](../Swift/RawRepresentable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
-- [SetAlgebra](../Swift/SetAlgebra.md)
+- [BitwiseCopyable](../swift/bitwisecopyable.md)
+- [Equatable](../swift/equatable.md)
+- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
+- [OptionSet](../swift/optionset.md)
+- [RawRepresentable](../swift/rawrepresentable.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
+- [SetAlgebra](../swift/setalgebra.md)
 
 ## See Also
 

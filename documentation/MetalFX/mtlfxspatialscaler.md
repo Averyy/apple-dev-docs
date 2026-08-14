@@ -33,7 +33,7 @@ Upscale a rendering by following these steps for every render pass:
 1. Set the spatial scaler’s `MTLFXSpatialScaler/colorTexture` property to the input texture.
 2. Set the scaler’s `MTLFXSpatialScaler/inputContentWidth` and `MTLFXSpatialScaler/inputContentHeight` properties.
 3. Set the scaler’s `MTLFXSpatialScaler/outputTexture` property to your destination texture.
-4. Encode the upscale commands to an [`MTLCommandBuffer`](https://developer.apple.com/documentation/Metal/MTLCommandBuffer) by calling the spatial scaler’s [`encode(commandBuffer:)`](mtlfxspatialscaler/encode(commandbuffer:).md) method.
+4. Encode the upscale commands to an [`MTLCommandBuffer`](https://developer.apple.com/documentation/metal/mtlcommandbuffer) by calling the spatial scaler’s [`encode(commandBuffer:)`](mtlfxspatialscaler/encode(commandbuffer:).md) method.
 
 ## Topics
 
@@ -45,7 +45,7 @@ Upscale a rendering by following these steps for every render pass:
 
 ### Inherits From
 - [MTLFXSpatialScalerBase](mtlfxspatialscalerbase.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

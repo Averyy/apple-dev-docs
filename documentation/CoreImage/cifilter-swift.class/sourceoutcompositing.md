@@ -43,7 +43,7 @@ func sourceOutCompositing(inputImage: CIImage, backgroundImage: CIImage) -> CIIm
 }
 ```
 
-![The image on the top left shows a beach with multiple palm trees and a rainbow arching across the blue sky.  The image below is a gradient image displaying a gradual color shift from purple to a dark orange. The image on the right shows the output from applying a source-out compositing filter. The filter removes the overlapping area of the beach image from the gradient image, leaving only the top corner of the gradient image.](https://docs-assets.developer.apple.com/published/12eca8bb9047a812577f7e7e45a56f6b/media-3546394%402x.png)
+![The image on the top left shows a beach with multiple palm trees and a rainbow arching across the blue sky.  The image below is a gradient image displaying a gradual color shift from purple to a dark orange. The image on the right shows the output from applying a source-out compositing filter. The filter removes the overlapping area of the beach image from the gradient image, leaving only the top corner of the gradient image.](/images/com.apple.coreimage/media-3546394@2x.png)
 
 ## See Also
 

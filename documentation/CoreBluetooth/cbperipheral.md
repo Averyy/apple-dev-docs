@@ -22,7 +22,7 @@ class CBPeripheral
 
 #### Overview
 
-The [`CBPeripheral`](cbperipheral.md) class represents remote peripheral devices that your app discovers with a central manager (an instance of [`CBCentralManager`](cbcentralmanager.md)). Peripherals use universally unique identifiers (UUIDs), represented by [`NSUUID`](https://developer.apple.com/documentation/Foundation/NSUUID) objects, to identify themselves. Peripherals may contain one or more services or provide useful information about their connected signal strength.
+The [`CBPeripheral`](cbperipheral.md) class represents remote peripheral devices that your app discovers with a central manager (an instance of [`CBCentralManager`](cbcentralmanager.md)). Peripherals use universally unique identifiers (UUIDs), represented by [`NSUUID`](https://developer.apple.com/documentation/foundation/nsuuid) objects, to identify themselves. Peripherals may contain one or more services or provide useful information about their connected signal strength.
 
 You use this class to discover, explore, and interact with the services available on a remote peripheral that supports Bluetooth low energy. A service encapsulates the way part of the device behaves. For example, one service of a heart rate monitor may be to expose heart rate data from a sensor. Services themselves contain of characteristics or included services (references to other services). Characteristics provide further details about a peripheral’s service. For example, the heart rate service may contain multiple characteristics. One characteristic could describe the intended body location of the device’s heart rate sensor, and another characteristic could transmit the heart rate measurement data. Finally, characteristics contain any number of descriptors that provide more information about the characteristic’s value, such as a human-readable description and a way to format the value.
 
@@ -93,13 +93,13 @@ You use this class to discover, explore, and interact with the services availabl
 ### Inherits From
 - [CBPeer](cbpeer.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCopying](../Foundation/NSCopying.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCopying](../foundation/nscopying.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

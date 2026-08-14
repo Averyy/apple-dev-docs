@@ -23,7 +23,7 @@ case labeledKeypointsDataFrame(DataFrame, sessionIdColumn: String = __Defaults.s
 - `dataFrame `: A data frame that contains the hand-joint locations and annotations for a set of hand actions.
 - `sessionIdColumn`: The name of the column in the data frame that contains the session identifiers.
 - `labelColumn`: The name of the column in the data frame that contains the hand action label names.
-- `featureColumn`: The name of the column in the data frame that contains the hand-joint location data. Each entry in the column must be a [`ShapedData`](https://developer.apple.com/documentation/TabularData/ShapedData) instance that contains three dimensions: - The first dimension has a size of one.
+- `featureColumn`: The name of the column in the data frame that contains the hand-joint location data. Each entry in the column must be a [`ShapedData`](https://developer.apple.com/documentation/tabulardata/shapeddata) instance that contains three dimensions: - The first dimension has a size of one.
 - The second dimension has three channels: the x-coordinate, the y-coordinate, and the confidence value, respectively.
 - The third dimension has 21 channels, one for each hand joint.
 

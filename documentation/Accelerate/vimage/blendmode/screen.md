@@ -24,7 +24,7 @@ case screen
 
 The following image shows the result of compositing using the screen blend mode:
 
-![Graphic showing the screen blend mode composite operation.](https://docs-assets.developer.apple.com/published/2fd6a53808292a212809da13ad8b8786/media-3958277%402x.png)
+![Graphic showing the screen blend mode composite operation.](/images/com.apple.accelerate/media-3958277@2x.png)
 
 The bottom-right quadrant in the result is identical to the corresponding quadrant in the bottom layer because the operation multiplies each bottom-layer pixel value by `1.0`. For example, if the source pixel value is `0.5`, the destination pixel value is `0.5`:
 

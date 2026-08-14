@@ -26,7 +26,7 @@ You create a mutable array object using either the [`CFArrayCreateMutable(_:_:_:
 
 CFMutableArray provides several functions for changing the contents of an array, for example the [`CFArrayAppendValue(_:_:)`](cfarrayappendvalue(_:_:).md) and [`CFArrayInsertValueAtIndex(_:_:_:)`](cfarrayinsertvalueatindex(_:_:_:).md) functions add values to an array and [`CFArrayRemoveValueAtIndex(_:_:)`](cfarrayremovevalueatindex(_:_:).md) removes values from an array. You can also reorder the contents of an array using [`CFArrayExchangeValuesAtIndices(_:_:_:)`](cfarrayexchangevaluesatindices(_:_:_:).md) and [`CFArraySortValues(_:_:_:_:)`](cfarraysortvalues(_:_:_:_:).md).
 
-CFMutableArray is “toll-free bridged” with its Cocoa Foundation counterpart, [`NSMutableArray`](https://developer.apple.com/documentation/Foundation/NSMutableArray). This means that the Core Foundation type is interchangeable in function or method calls with the bridged Foundation object. Therefore, in a method where you see an `NSMutableArray *` parameter, you can pass in a `CFMutableArrayRef`, and in a function where you see a `CFMutableArrayRef` parameter, you can pass in an NSMutableArray instance. This fact also applies to concrete subclasses of NSMutableArray. See [`Toll-Free Bridged Types`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFDesignConcepts/Articles/tollFreeBridgedTypes.html#//apple_ref/doc/uid/TP40010677) for more information on toll-free bridging.
+CFMutableArray is “toll-free bridged” with its Cocoa Foundation counterpart, [`NSMutableArray`](https://developer.apple.com/documentation/foundation/nsmutablearray). This means that the Core Foundation type is interchangeable in function or method calls with the bridged Foundation object. Therefore, in a method where you see an `NSMutableArray *` parameter, you can pass in a `CFMutableArrayRef`, and in a function where you see a `CFMutableArrayRef` parameter, you can pass in an NSMutableArray instance. This fact also applies to concrete subclasses of NSMutableArray. See [`Toll-Free Bridged Types`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFDesignConcepts/Articles/tollFreeBridgedTypes.html#//apple_ref/doc/uid/TP40010677) for more information on toll-free bridging.
 
 ## Topics
 
@@ -59,8 +59,8 @@ CFMutableArray is “toll-free bridged” with its Cocoa Foundation counterpart,
 ### Inherits From
 - [CFArray](cfarray.md)
 ### Conforms To
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
 
 ## See Also
 

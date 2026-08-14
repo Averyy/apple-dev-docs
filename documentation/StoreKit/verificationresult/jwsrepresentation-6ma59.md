@@ -24,7 +24,7 @@ var jwsRepresentation: String { get }
 
 Use this JSON Web Signature (JWS) value to perform your own JWS verification on your server or on the device.
 
-To verify the [`jwsRepresentation`](verificationresult/jwsrepresentation-6ma59.md) on your server, consider using the App Store Server Library function `verifyAndDecodeAppTransaction`, available in each language the library supports. For more information, see [`Simplifying your implementation by using the App Store Server Library`](https://developer.apple.com/documentation/AppStoreServerAPI/simplifying-your-implementation-by-using-the-app-store-server-library).
+To verify the [`jwsRepresentation`](verificationresult/jwsrepresentation-6ma59.md) on your server, consider using the App Store Server Library function `verifyAndDecodeAppTransaction`, available in each language the library supports. For more information, see [`Simplifying your implementation by using the App Store Server Library`](https://developer.apple.com/documentation/appstoreserverapi/simplifying-your-implementation-by-using-the-app-store-server-library).
 
 The [`jwsRepresentation`](verificationresult/jwsrepresentation-6ma59.md)’s decoded payload contains the fields `deviceVerification` and `deviceVerificationNonce`. Use these fields on the device to verify that the JWS information belongs to the device. For more information, see [`deviceVerificationID`](appstore/deviceverificationid.md).
 

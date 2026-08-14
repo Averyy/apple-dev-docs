@@ -29,8 +29,8 @@ An `AnyAttachmentContent` allows changing the type of attachment used in a given
 
 ### Conforms To
 - [AttachmentContent](attachmentcontent.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

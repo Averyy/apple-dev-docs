@@ -37,7 +37,7 @@ Your app can respond to the various outcome events from an [`AVContinuityDeviceP
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

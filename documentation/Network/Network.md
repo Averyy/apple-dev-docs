@@ -21,9 +21,9 @@ Create network connections to send and receive data using transport and security
 
 #### Overview
 
-Use this framework when you need direct access to protocols like TLS, TCP, and UDP for your custom application protocols. Continue to use [`URLSession`](https://developer.apple.com/documentation/Foundation/URLSession), which is built upon this framework, for loading HTTP- and URL-based resources. For in-depth advice on where to start with networking, see [`TN3151: Choosing the right networking API`](https://developer.apple.com/documentation/Technotes/tn3151-choosing-the-right-networking-api).
+Use this framework when you need direct access to protocols like TLS, TCP, and UDP for your custom application protocols. Continue to use [`URLSession`](https://developer.apple.com/documentation/foundation/urlsession), which is built upon this framework, for loading HTTP- and URL-based resources. For in-depth advice on where to start with networking, see [`TN3151: Choosing the right networking API`](https://developer.apple.com/documentation/technotes/tn3151-choosing-the-right-networking-api).
 
-> **Note**:  watchOS supports Network framework for specific use cases. For more details, see [`TN3135: Low-level networking on watchOS`](https://developer.apple.com/documentation/Technotes/tn3135-low-level-networking-on-watchOS).
+> **Note**:  watchOS supports Network framework for specific use cases. For more details, see [`TN3135: Low-level networking on watchOS`](https://developer.apple.com/documentation/technotes/tn3135-low-level-networking-on-watchos).
 
 ## Topics
 
@@ -46,7 +46,7 @@ Use this framework when you need direct access to protocols like TLS, TCP, and U
 ### Network Protocols
 - [Building a custom peer-to-peer protocol](building-a-custom-peer-to-peer-protocol.md)
   Use networking frameworks to create a custom protocol for playing a game across iOS, iPadOS, watchOS, and tvOS devices.
-- [Connecting iPadOS and visionOS apps over the local network](../visionOS/connecting-ipados-and-visionos-apps-over-the-local-network.md)
+- [Connecting iPadOS and visionOS apps over the local network](../visionos/connecting-ipados-and-visionos-apps-over-the-local-network.md)
   Build an iPadOS companion app to control your visionOS app.
 - [class NWProtocolTCP](nwprotocoltcp.md)
   A network protocol for connections that use the Transmission Control Protocol.

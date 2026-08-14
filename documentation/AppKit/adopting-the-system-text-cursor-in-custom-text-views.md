@@ -60,7 +60,7 @@ textCursor.effectsViewInserter = { view in
 
 Your custom text view is responsible for updating the position of the text cursor when a person inputs text, but the system provides the appropriate animated effect. For example, the following image shows the system animation effect that applies to the text cursor during dictation.
 
-![Screenshot of text that says “The quick brown fox jumps over the” with the text cursor at the end of the text. The text cursor shows a blue glowing effect that trails through the text behind it, gradually dimming in opacity as it reaches the word “over.”](https://docs-assets.developer.apple.com/published/9e3cf9b424c226b3116f31f758c76a8d/media-4213258%402x.png)
+![Screenshot of text that says “The quick brown fox jumps over the” with the text cursor at the end of the text. The text cursor shows a blue glowing effect that trails through the text behind it, gradually dimming in opacity as it reaches the word “over.”](/images/com.apple.appkit/media-4213258@2x.png)
 
 As a person types or inserts text during dictation, update the [`frame`](nsview/frame.md) of the [`NSTextInsertionIndicator`](nstextinsertionindicator.md) view. The view automatically changes its appearance in response to that movement, matching the system UI for the corresponding type of input (typing or dictation).
 
@@ -68,11 +68,11 @@ As a person types or inserts text during dictation, update the [`frame`](nsview/
 
 The system text cursor displays accessories that indicate state, such as current input source language, dictation, and Caps Lock. For example, the following image shows the text cursor with the dictation indicator and the current input language set to English.
 
-![Screenshot of text that says “The quick brown fox jumps over the” with the text cursor at the end of the text. The text cursor shows a dictation indicator accessory and a language indicator accessory that reads EN to represent the English language.](https://docs-assets.developer.apple.com/published/cb559fac35d45dd0f5304fa3db3cdf2e/media-4277103%402x.png)
+![Screenshot of text that says “The quick brown fox jumps over the” with the text cursor at the end of the text. The text cursor shows a dictation indicator accessory and a language indicator accessory that reads EN to represent the English language.](/images/com.apple.appkit/media-4277103@2x.png)
 
 When a person changes the input language, the accessory expands to show the language selection UI in the language switcher accessory.
 
-![Screenshot of the text cursor in a text input field. The text cursor shows the language switcher accessory with three possible input languages: English, Russian, Arabic, and Japanese.](https://docs-assets.developer.apple.com/published/ffaaab086b99f0c1cc7f2c001045e760/media-4277104%402x.png)
+![Screenshot of the text cursor in a text input field. The text cursor shows the language switcher accessory with three possible input languages: English, Russian, Arabic, and Japanese.](/images/com.apple.appkit/media-4277104@2x.png)
 
 [`NSTextInsertionIndicator`](nstextinsertionindicator.md) draws these accessories automatically, but you can specify where in relation to the text cursor to draw them. In your custom text view, you can override the placement of these accessories by specifying [`preferredTextAccessoryPlacement()`](nstextinputclient/preferredtextaccessoryplacement().md) in your implementation of [`NSTextInputClient`](nstextinputclient.md). When the system renders the text cursor in your custom view, it uses the return value of this method to determine where to draw the accessories.
 
@@ -80,7 +80,7 @@ When a person changes the input language, the accessory expands to show the lang
 
 The system text cursor shows a dictation indicator accessory during an active dictation session. When a person scrolls the text cursor offscreen during dictation, the system also draws a scroll-away indicator to indicate the position of the cursor. For example, the following image shows a scroll-away indicator that points downwards, indicating that the text cursor is out of view below.
 
-![Screenshot of text in a text input field with an active dictation session. A scroll-away indicator points downwards, indicating that the text cursor is out of view below.](https://docs-assets.developer.apple.com/published/a115c25ef1f35d3210de878287a3418b/media-4277102%402x.png)
+![Screenshot of text in a text input field with an active dictation session. A scroll-away indicator points downwards, indicating that the text cursor is out of view below.](/images/com.apple.appkit/media-4277102@2x.png)
 
 For the system to show the scroll-away indicator on a custom text view, you need to complete the following steps:
 
@@ -98,7 +98,7 @@ func didBecomeInactive() {
 }
 ```
 
-If you implement custom text UI in a UIKit app, see [`Adopting system selection UI in custom text views`](https://developer.apple.com/documentation/UIKit/adopting-system-selection-ui-in-custom-text-views).
+If you implement custom text UI in a UIKit app, see [`Adopting system selection UI in custom text views`](https://developer.apple.com/documentation/uikit/adopting-system-selection-ui-in-custom-text-views).
 
 > **Note**:  Session 10058: [`What’s new with text and text interactions`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2023/10058/)
 

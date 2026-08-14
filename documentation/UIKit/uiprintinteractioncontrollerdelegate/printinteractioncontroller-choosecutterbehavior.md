@@ -28,7 +28,7 @@ Some roll-fed printers support different options for cutting the paper. If you i
 ## Parameters
 
 - `printInteractionController`: The shared instance of [`UIPrintInteractionController`](uiprintinteractioncontroller.md) that is managing the print job.
-- `availableBehaviors`: An array of [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) objects identifying the printer’s available cutter behaviors. Each number corresponds to one of the constants defined in [`UIPrinter.CutterBehavior`](uiprinter/cutterbehavior.md).
+- `availableBehaviors`: An array of [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) objects identifying the printer’s available cutter behaviors. Each number corresponds to one of the constants defined in [`UIPrinter.CutterBehavior`](uiprinter/cutterbehavior.md).
 
 ## See Also
 

@@ -22,7 +22,7 @@ let MPMediaItemPropertyLastPlayedDate: String
 
 #### Discussion
 
-Value is an [`NSDate`](https://developer.apple.com/documentation/Foundation/NSDate) object.
+Value is an [`NSDate`](https://developer.apple.com/documentation/foundation/nsdate) object.
 
 ## See Also
 

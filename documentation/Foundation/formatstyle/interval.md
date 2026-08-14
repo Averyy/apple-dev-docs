@@ -22,7 +22,7 @@ static var interval: Date.IntervalFormatStyle { get }
 
 #### Discussion
 
-Use this type property when the call point allows the use of [`Date.IntervalFormatStyle`](date/intervalformatstyle.md). You typically do this when calling the [`formatted(_:)`](https://developer.apple.com/documentation/Swift/Range/formatted(_:)) method of a `Range<Date>`.
+Use this type property when the call point allows the use of [`Date.IntervalFormatStyle`](date/intervalformatstyle.md). You typically do this when calling the [`formatted(_:)`](https://developer.apple.com/documentation/swift/range/formatted(_:)) method of a `Range<Date>`.
 
 The folllowing example uses [`interval`](formatstyle/interval.md) to create a date interval string with specific styling of the day, month, and weekday components, omitting the year and time.
 

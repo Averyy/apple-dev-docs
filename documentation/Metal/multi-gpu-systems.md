@@ -8,15 +8,15 @@ Locate and work with internal and external GPUs and their displays, video memory
 
 Your app can submit work to any or all of the GPUs of a system that supports multiple GPUs. For example, every Mac notebook, such as a MacBook Pro, has an internal GPU, but some have two.
 
-![A system diagram that shows two built-in GPUs within a MacBook Pro.](https://docs-assets.developer.apple.com/published/b022119842cf3a4a9bc64718e4ac3a20/assessing-multi-gpu-and-multi-display-setups-on-an-intel-based-mac-3%402x.png)
+![A system diagram that shows two built-in GPUs within a MacBook Pro.](/images/com.apple.metal/assessing-multi-gpu-and-multi-display-setups-on-an-intel-based-mac-3@2x.png)
 
 A Mac may have a Thunderbolt connection to an external GPU and its displays.
 
-![A system diagram that shows an external GPU that connects a MacBook Pro to an external display.](https://docs-assets.developer.apple.com/published/b22a3f95645c4220377c91079b7fb6c5/assessing-multi-gpu-and-multi-display-setups-on-an-intel-based-mac-6%402x.png)
+![A system diagram that shows an external GPU that connects a MacBook Pro to an external display.](/images/com.apple.metal/assessing-multi-gpu-and-multi-display-setups-on-an-intel-based-mac-6@2x.png)
 
 Some systems may have even more complicated arrangements of internal and multiple external GPUs and displays.
 
-![A system diagram that shows an iMac Pro connected to an external display, an external GPU, and another external GPU that’s also connected to two additional external displays.](https://docs-assets.developer.apple.com/published/b505af846a78d0167e779ce702fb7d61/assessing-multi-gpu-and-multi-display-setups-on-an-intel-based-mac-7%402x.png)
+![A system diagram that shows an iMac Pro connected to an external display, an external GPU, and another external GPU that’s also connected to two additional external displays.](/images/com.apple.metal/assessing-multi-gpu-and-multi-display-setups-on-an-intel-based-mac-7@2x.png)
 
 For more information about Mac configurations with GPUs and displays, see [`Assessing multi-GPU and multidisplay setups on an Intel-based Mac`](assessing-multi-gpu-and-multi-display-setups-on-an-intel-based-mac.md).
 
@@ -46,7 +46,7 @@ For more information about external GPU configurations, see [`Use an external gr
   Returns an array of all the Metal GPU devices in the system and registers a notification handler that Metal calls when the device list changes.
 - [func MTLRemoveDeviceObserver(any NSObjectProtocol)](mtlremovedeviceobserver(_:).md)
   Removes a registered observer of device notifications.
-- [func CGDirectDisplayCopyCurrentMetalDevice(CGDirectDisplayID) -> (any MTLDevice)?](../CoreGraphics/CGDirectDisplayCopyCurrentMetalDevice(_:).md)
+- [func CGDirectDisplayCopyCurrentMetalDevice(CGDirectDisplayID) -> (any MTLDevice)?](../coregraphics/cgdirectdisplaycopycurrentmetaldevice(_:).md)
   Returns the GPU device instance that’s currently driving a display.
 - [typealias MTLDeviceNotificationHandler](mtldevicenotificationhandler.md)
   A Swift closure or an Objective-C block that Metal calls when the system adds or removes a GPU device.

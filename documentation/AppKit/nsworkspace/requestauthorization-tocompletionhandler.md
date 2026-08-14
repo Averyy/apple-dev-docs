@@ -19,7 +19,7 @@ func requestAuthorization(to type: NSWorkspace.AuthorizationType) async throws -
 ## Parameters
 
 - `type`: The type of file operation to perform.
-- `completionHandler`: The completion handler to call when the authorization request is completed. The completion handler takes two parameters: - **authorization**: The authorization granted for this app. Use it when creating a new [`FileManager`](https://developer.apple.com/documentation/Foundation/FileManager) with [`init(authorization:)`](https://developer.apple.com/documentation/Foundation/FileManager/init(authorization:)).
+- `completionHandler`: The completion handler to call when the authorization request is completed. The completion handler takes two parameters: - **authorization**: The authorization granted for this app. Use it when creating a new [`FileManager`](https://developer.apple.com/documentation/foundation/filemanager) with [`init(authorization:)`](https://developer.apple.com/documentation/foundation/filemanager/init(authorization:)).
 - **error**: `nil` if the app is authorized; otherwise, a pointer to the authorization error.
 
 ## See Also

@@ -3,7 +3,7 @@
 **Framework**: Contacts UI  
 **Kind**: property
 
-The [`CNContact`](https://developer.apple.com/documentation/Contacts/CNContact) property keys to display in the contact detail card.
+The [`CNContact`](https://developer.apple.com/documentation/contacts/cncontact) property keys to display in the contact detail card.
 
 **Availability**:
 - iOS 9.0+

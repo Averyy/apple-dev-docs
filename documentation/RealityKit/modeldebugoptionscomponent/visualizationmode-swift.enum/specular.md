@@ -38,7 +38,7 @@ if let television = try? await ModelEntity(named: "tv_retro") {
 
 | [`ModelDebugOptionsComponent.VisualizationMode.none`](modeldebugoptionscomponent/visualizationmode-swift.enum/none.md) | `specular` |
 | --- | --- |
-| ![A screenshot of a virtual TV in a visionOS app. The TV is an old-fashioned television displaying a multicolored test pattern. It is drawn with shadows and highlights to appear as realistic as possible.](https://docs-assets.developer.apple.com/published/a57e508a6549f1c8cce08e79ea6b7ec5/ModelDebugOptionsComponent-VisualizationMode-enum-none.jpg) | ![A screenshot of a virtual TV in a visionOS app. The TV is using a specular visualization, appearing in gray, which is a graphical representation of the TV’s specular values.](https://docs-assets.developer.apple.com/published/ffbfd8a39835705d7a0a1e18749ff998/ModelDebugOptionsComponent-VisualizationMode-enum-specular.jpg) |
+| ![A screenshot of a virtual TV in a visionOS app. The TV is an old-fashioned television displaying a multicolored test pattern. It is drawn with shadows and highlights to appear as realistic as possible.](/images/com.apple.RealityKit/ModelDebugOptionsComponent-VisualizationMode-enum-none.jpg) | ![A screenshot of a virtual TV in a visionOS app. The TV is using a specular visualization, appearing in gray, which is a graphical representation of the TV’s specular values.](/images/com.apple.RealityKit/ModelDebugOptionsComponent-VisualizationMode-enum-specular.jpg) |
 
 ## See Also
 

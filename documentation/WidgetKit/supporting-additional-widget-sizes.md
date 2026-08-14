@@ -6,9 +6,9 @@ Offer widgets in additional contexts by adding support for various widget sizes.
 
 #### Overview
 
-After you add a widget extension to your app and create your first widget, add code to declare additional widgets your app supports using the [`supportedFamilies(_:)`](https://developer.apple.com/documentation/SwiftUI/WidgetConfiguration/supportedFamilies(_:)) property modifier. The sizes you use depend on the devices your app supports. If your app supports more than one platform, make sure to conditionally declare supported widget families.
+After you add a widget extension to your app and create your first widget, add code to declare additional widgets your app supports using the [`supportedFamilies(_:)`](https://developer.apple.com/documentation/swiftui/widgetconfiguration/supportedfamilies(_:)) property modifier. The sizes you use depend on the devices your app supports. If your app supports more than one platform, make sure to conditionally declare supported widget families.
 
-The following example from the [`Emoji Rangers: Supporting Live Activities, interactivity, and animations`](emoji-rangers-supporting-live-activities-interactivity-and-animations.md) sample code project shows how you declare several widgets sizes in your [`Widget`](https://developer.apple.com/documentation/SwiftUI/Widget) implementation. The app supports accessory widgets in both watchOS and iOS and [`WidgetFamily.systemSmall`](widgetfamily/systemsmall.md) and [`WidgetFamily.systemMedium`](widgetfamily/systemmedium.md) widgets in iOS. Note the usage of the `#if os(watchOS)` macro to make sure you declare the correct supported widget families for each platform.
+The following example from the [`Emoji Rangers: Supporting Live Activities, interactivity, and animations`](emoji-rangers-supporting-live-activities-interactivity-and-animations.md) sample code project shows how you declare several widgets sizes in your [`Widget`](https://developer.apple.com/documentation/swiftui/widget) implementation. The app supports accessory widgets in both watchOS and iOS and [`WidgetFamily.systemSmall`](widgetfamily/systemsmall.md) and [`WidgetFamily.systemMedium`](widgetfamily/systemmedium.md) widgets in iOS. Note the usage of the `#if os(watchOS)` macro to make sure you declare the correct supported widget families for each platform.
 
 ```swift
 public var body: some WidgetConfiguration {
@@ -28,9 +28,9 @@ public var body: some WidgetConfiguration {
 
 ##### Update Swiftui Views to Support Additional Sizes
 
-After you’ve declared support for additional widget sizes in your [`Widget`](https://developer.apple.com/documentation/SwiftUI/Widget), update the views of your widget to support the additional family sizes. In your view code:
+After you’ve declared support for additional widget sizes in your [`Widget`](https://developer.apple.com/documentation/swiftui/widget), update the views of your widget to support the additional family sizes. In your view code:
 
-1. Use the [`widgetFamily`](https://developer.apple.com/documentation/SwiftUI/EnvironmentValues/widgetFamily) environment variable to detect different widget families.
+1. Use the [`widgetFamily`](https://developer.apple.com/documentation/swiftui/environmentvalues/widgetfamily) environment variable to detect different widget families.
 2. Construct the view for each size and include code to handle appearances like vibrant and Dark Mode, as applicable. To learn more, see [`Preparing widgets for additional platforms, contexts, and appearances`](preparing-widgets-for-additional-contexts-and-appearances.md).
 
 The following example shows an abbreviated code snippet from the [`Emoji Rangers: Supporting Live Activities, interactivity, and animations`](emoji-rangers-supporting-live-activities-interactivity-and-animations.md) sample code project. It conditionally returns the right SwiftUI view for each widget family.

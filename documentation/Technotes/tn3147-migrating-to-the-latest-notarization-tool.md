@@ -19,7 +19,7 @@ To migrate your workflows to `notarytool`:
 
 You can use `altool` and `notarytool` in parallel.  Feel free to leave your current notarization workflow in place while you experiment with `notarytool`.  Then, when you’re happy with the new workflow, cut over to `notarytool`.  Just make sure you do this before the above-mentioned deadline.
 
-If you’re not migrating from `altool`—that is, you’re setting up notarization for the first time—ignore this technote and instead start with [`Notarizing macOS software before distribution`](https://developer.apple.com/documentation/Security/notarizing-macos-software-before-distribution) and then move on to [`Customizing the notarization workflow`](https://developer.apple.com/documentation/Security/customizing-the-notarization-workflow).  Or, if you want to notarize from a non-Apple platform, see [`Notary API`](https://developer.apple.comhttps://developer.apple.com/documentation/notaryapi).
+If you’re not migrating from `altool`—that is, you’re setting up notarization for the first time—ignore this technote and instead start with [`Notarizing macOS software before distribution`](https://developer.apple.com/documentation/security/notarizing-macos-software-before-distribution) and then move on to [`Customizing the notarization workflow`](https://developer.apple.com/documentation/security/customizing-the-notarization-workflow).  Or, if you want to notarize from a non-Apple platform, see [`Notary API`](https://developer.apple.comhttps://developer.apple.com/documentation/notaryapi).
 
 #### Get the New Tool
 

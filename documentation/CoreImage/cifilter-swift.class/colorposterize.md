@@ -30,7 +30,7 @@ This method applies the color posterize filter to an image. The effect remaps re
 The color posterize filter uses the following properties:
 
 - **`inputImage`**: An image with the type [`CIImage`](ciimage.md).
-- **levels**: A `float` representing the brightness level as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+- **levels**: A `float` representing the brightness level as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
 
 The following code creates a filter that flattens the colors in the input image:
 
@@ -43,7 +43,7 @@ func colorPosterize(inputImage: CIImage) -> CIImage {
 }
 ```
 
-![Two pictures of a pink flower surrounded by foliage. The photo on the left shows a single flower photographed close-up, in focus, with good light and no effects. In the photo on the right, a color posterize filter is applied, resulting in the image having less color variation.](https://docs-assets.developer.apple.com/published/39be8ca534504185ee1958ed9bb3733a/media-3545025%402x.png)
+![Two pictures of a pink flower surrounded by foliage. The photo on the left shows a single flower photographed close-up, in focus, with good light and no effects. In the photo on the right, a color posterize filter is applied, resulting in the image having less color variation.](/images/com.apple.coreimage/media-3545025@2x.png)
 
 ## See Also
 

@@ -8,7 +8,7 @@ Display large, easy-to-read content on the X-Large watch face.
 
 These templates are larger versions of the [`Circular complication templates`](circular-complication-templates.md).
 
-![Examples of the graphic extra-large complications. In order, they are the closed-gauge image, open-gauge image, circular image, open-gauge range, and closed-gauge text complications.](https://docs-assets.developer.apple.com/published/982e5cab3fb0c1228a8b4b7450c4461f/media-3905617%402x.png)
+![Examples of the graphic extra-large complications. In order, they are the closed-gauge image, open-gauge image, circular image, open-gauge range, and closed-gauge text complications.](/images/com.apple.clockkit/media-3905617@2x.png)
 
 If your app supports both the [`CLKComplicationFamily.extraLarge`](clkcomplicationfamily/extralarge.md) and [`CLKComplicationFamily.graphicExtraLarge`](clkcomplicationfamily/graphicextralarge.md) families, ClockKit prefers the graphic extra large templates on Apple Watch series 4 or later.
 

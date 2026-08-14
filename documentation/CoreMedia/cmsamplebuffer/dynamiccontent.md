@@ -34,8 +34,8 @@ enum DynamicContent
 ### Conforms To
 - [CMSampleBuffer.Content](cmsamplebuffer/content.md)
 - [CMSampleBuffer.MultiSampleContent](cmsamplebuffer/multisamplecontent.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 
 ---

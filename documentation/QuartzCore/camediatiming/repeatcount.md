@@ -24,7 +24,7 @@ var repeatCount: Float { get set }
 
 May be fractional. If the `repeatCount` is 0, it is ignored. Defaults to 0. If both [`repeatDuration`](camediatiming/repeatduration.md) and [`repeatCount`](camediatiming/repeatcount.md) are specified the behavior is undefined.
 
-Setting this property to [`greatestFiniteMagnitude`](https://developer.apple.com/documentation/Swift/Float/greatestFiniteMagnitude) will cause the animation to repeat forever.
+Setting this property to [`greatestFiniteMagnitude`](https://developer.apple.com/documentation/swift/float/greatestfinitemagnitude) will cause the animation to repeat forever.
 
 ## See Also
 

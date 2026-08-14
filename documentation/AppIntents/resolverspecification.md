@@ -32,11 +32,11 @@ Don’t use a [`ResolverSpecification`](resolverspecification.md) type directly 
 ## Relationships
 
 ### Inherits From
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
-- [Sequence](../Swift/Sequence.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sequence](../swift/sequence.md)
 ### Conforming Types
 - [EmptyResolverSpecification](emptyresolverspecification.md)
 - [ResolverSpecificationBuilder.Specification](resolverspecificationbuilder/specification.md)

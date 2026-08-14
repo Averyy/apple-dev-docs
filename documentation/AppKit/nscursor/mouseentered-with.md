@@ -16,7 +16,7 @@ func mouseEntered(with event: NSEvent)
 
 #### Discussion
 
-If used after [`setOnMouseEntered(_:)`](nscursor/setonmouseentered(_:).md) has been called with an argument of [`true`](https://developer.apple.com/documentation/Swift/true), [`mouseEntered(with:)`](nscursor/mouseentered(with:).md) can make the receiver the current cursor.
+If used after [`setOnMouseEntered(_:)`](nscursor/setonmouseentered(_:).md) has been called with an argument of [`true`](https://developer.apple.com/documentation/swift/true), [`mouseEntered(with:)`](nscursor/mouseentered(with:).md) can make the receiver the current cursor.
 
 In your programs, you won’t invoke [`mouseEntered(with:)`](nscursor/mouseentered(with:).md) explicitly. It’s only included in the class interface so you can override it.
 

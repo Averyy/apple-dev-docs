@@ -24,7 +24,7 @@ static var naturalSize: AVAsyncProperty<Root, CGSize> { get }
 
 Use the [`load(_:isolation:)`](avasynchronouskeyvalueloading/load(_:isolation:).md) method to retrieve the property value.
 
-For visual tracks, like video or subtitle tracks, this property value is the natural size of the media. For nonvisual tracks, like audio or chapter tracks, the value is [`zero`](https://developer.apple.com/documentation/CoreFoundation/CGSize/zero).
+For visual tracks, like video or subtitle tracks, this property value is the natural size of the media. For nonvisual tracks, like audio or chapter tracks, the value is [`zero`](https://developer.apple.com/documentation/corefoundation/cgsize/zero).
 
 ## See Also
 

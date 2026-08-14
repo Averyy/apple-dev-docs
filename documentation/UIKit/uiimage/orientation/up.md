@@ -23,11 +23,11 @@ case up
 
 If an image is encoded with this orientation, then displayed by software unaware of orientation metadata, the image appears correctly “right side up”. That is, this orientation is an identity value.
 
-![An image in up orientation can be presented for display without rotating or flipping.](https://docs-assets.developer.apple.com/published/08b6857053beb92301df7ceb36ab8175/media-2948308%402x.png)
+![An image in up orientation can be presented for display without rotating or flipping.](/images/com.apple.uikit/media-2948308@2x.png)
 
 ## See Also
 
-- [CGImagePropertyOrientation.up](../ImageIO/CGImagePropertyOrientation/up.md)
+- [CGImagePropertyOrientation.up](../imageio/cgimagepropertyorientation/up.md)
   The encoded image data matches the image’s intended display orientation.
 - [UIImage.Orientation.down](uiimage/orientation/down.md)
   The image has been rotated 180° from the orientation of its original pixel data.

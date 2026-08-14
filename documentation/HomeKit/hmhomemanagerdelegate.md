@@ -50,7 +50,7 @@ To be alerted about changes made within a particular home, adopt the [`HMHomeDel
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

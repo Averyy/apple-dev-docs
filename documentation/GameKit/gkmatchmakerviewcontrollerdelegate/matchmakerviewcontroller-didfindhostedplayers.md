@@ -27,7 +27,7 @@ optional func matchmakerViewController(_ viewController: GKMatchmakerViewControl
 
 When all the players accept their invitations to a match, GameKit invokes this method in the app instances for all players in the game, including the local player who initiates the invitations. This method needs to dismiss the view controller and start the game. Your game needs to connect the players to your own server and then use that server to relay messages between the players.
 
-Although this method appears optional in the protocol, if you set the view controller’s delegate for a hosted match, GameKit expects the delegate to implement this method. If the view controller’s [`isHosted`](gkmatchmakerviewcontroller/ishosted.md) property is [`false`](https://developer.apple.com/documentation/Swift/false), GameKit instead invokes the [`matchmakerViewController(_:didFind:)`](gkmatchmakerviewcontrollerdelegate/matchmakerviewcontroller(_:didfind:).md) method.
+Although this method appears optional in the protocol, if you set the view controller’s delegate for a hosted match, GameKit expects the delegate to implement this method. If the view controller’s [`isHosted`](gkmatchmakerviewcontroller/ishosted.md) property is [`false`](https://developer.apple.com/documentation/swift/false), GameKit instead invokes the [`matchmakerViewController(_:didFind:)`](gkmatchmakerviewcontrollerdelegate/matchmakerviewcontroller(_:didfind:).md) method.
 
 ## Parameters
 

@@ -10,9 +10,9 @@ With the In-App Purchase API, you can offer customers the opportunity to purchas
 
 The StoreKit framework connects to the App Store on your app’s behalf to prompt for, and securely process, payments. The framework then notifies your app, making the transactions for In-App Purchases available to your app on all of the customer’s devices. For each transaction that represents a current purchase, your app delivers the purchased products. To validate purchases, you can verify transactions on your server, or rely on StoreKit’s verification.
 
-![A diagram of the interactions between StoreKit, your app, the App Store, and your server that occur during a transaction.](https://docs-assets.developer.apple.com/published/3cddba76b6de9f552b4afc2d69fd0799/media-4447232%402x.png)
+![A diagram of the interactions between StoreKit, your app, the App Store, and your server that occur during a transaction.](/images/com.apple.storekit/media-4447232@2x.png)
 
-The App Store can also communicate with your server. It notifies your server of transactions and auto-renewable subscription events through [`App Store Server Notifications`](https://developer.apple.com/documentation/AppStoreServerNotifications), and provides the same transaction information, and more, through the [`App Store Server API`](https://developer.apple.com/documentation/AppStoreServerAPI).
+The App Store can also communicate with your server. It notifies your server of transactions and auto-renewable subscription events through [`App Store Server Notifications`](https://developer.apple.com/documentation/appstoreservernotifications), and provides the same transaction information, and more, through the [`App Store Server API`](https://developer.apple.com/documentation/appstoreserverapi).
 
 To learn how adding In-App Purchases fits in an overall app development workflow for the App Store, see [`App Store Pathway`](https://developer.apple.comhttps://developer.apple.com/app-store/pathway/). For an overview of In-App Purchases and its features, including its configuration, testing capabilities, marketing for your products, and more, see [`Simple and safe In-App Purchases`](https://developer.apple.comhttps://developer.apple.com/in-app-purchase/). For an overview on subscriptions, including creating subscription groups, Family Sharing, and more, see [`Auto-renewable subscriptions`](https://developer.apple.comhttps://developer.apple.com/app-store/subscriptions/).
 
@@ -20,7 +20,7 @@ To learn how adding In-App Purchases fits in an overall app development workflow
 
 To use the In-App Purchase API, you first need to configure the products that your app merchandises.
 
-- In the early stages of development, you can configure the products in the StoreKit configuration file in Xcode, and test your code without any dependency on App Store Connect. For more information, see [`Setting up StoreKit Testing in Xcode`](https://developer.apple.com/documentation/Xcode/setting-up-storekit-testing-in-xcode).
+- In the early stages of development, you can configure the products in the StoreKit configuration file in Xcode, and test your code without any dependency on App Store Connect. For more information, see [`Setting up StoreKit Testing in Xcode`](https://developer.apple.com/documentation/xcode/setting-up-storekit-testing-in-xcode).
 - When you’re ready for sandbox testing and production, configure the products in App Store Connect. You can add or remove products and refine or reconfigure existing products as you develop your app. For more information, see [`Configure In-App Purchase settings`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/configure-in-app-purchase-settings/overview-for-configuring-in-app-purchases).
 
 You can also offer apps and In-App Purchases that run on multiple platforms as a single purchase. For more information on universal purchase, see [`Add platforms`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/create-an-app-record/add-platforms/).

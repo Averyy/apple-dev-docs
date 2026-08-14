@@ -21,7 +21,7 @@ func getTransformRamp(for time: CMTime, start startTransform: UnsafeMutablePoint
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/Swift/true) if values are returned successfully, otherwise [`false`](https://developer.apple.com/documentation/Swift/false). [`false`](https://developer.apple.com/documentation/Swift/false) is returned if `time` is beyond the duration of the last transform ramp that has been set.
+[`true`](https://developer.apple.com/documentation/swift/true) if values are returned successfully, otherwise [`false`](https://developer.apple.com/documentation/swift/false). [`false`](https://developer.apple.com/documentation/swift/false) is returned if `time` is beyond the duration of the last transform ramp that has been set.
 
 ## Parameters
 

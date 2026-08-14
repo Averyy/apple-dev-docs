@@ -21,7 +21,7 @@ static let scaleFactor: CIRAWFilterOption
 
 #### Discussion
 
-The associated value is a floating-point value packaged as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) object that specifies the desired scale factor at which the image will be drawn. Setting this value can greatly improve the drawing performance. A value of `1` is the identity. In some cases, if you change the scale factor and enable draft mode, performance can decrease. See [`allowDraftMode`](cirawfilteroption/allowdraftmode.md).
+The associated value is a floating-point value packaged as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) object that specifies the desired scale factor at which the image will be drawn. Setting this value can greatly improve the drawing performance. A value of `1` is the identity. In some cases, if you change the scale factor and enable draft mode, performance can decrease. See [`allowDraftMode`](cirawfilteroption/allowdraftmode.md).
 
 ## See Also
 

@@ -22,7 +22,7 @@ let CBUUIDServerCharacteristicConfigurationString: String
 
 #### Discussion
 
-The corresponding value for this descriptor is an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) object.
+The corresponding value for this descriptor is an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) object.
 
 ## See Also
 

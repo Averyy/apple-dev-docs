@@ -48,7 +48,7 @@ Because the transition coordinator is in effect only during a transition, UIKit 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 - [UIViewControllerTransitionCoordinatorContext](uiviewcontrollertransitioncoordinatorcontext.md)
 
 ## See Also

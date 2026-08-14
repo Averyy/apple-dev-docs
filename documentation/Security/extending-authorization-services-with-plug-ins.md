@@ -6,7 +6,7 @@ Modify the system’s authorization policy with custom code.
 
 #### Overview
 
-> ❗ **Important**:  To authenticate the person using your app prior to providing access to resources within the app, use [`Local Authentication`](https://developer.apple.com/documentation/LocalAuthentication) instead of creating an authorization plug-in. Use authorization plug-ins to extend or change system policies.
+> ❗ **Important**:  To authenticate the person using your app prior to providing access to resources within the app, use [`Local Authentication`](https://developer.apple.com/documentation/localauthentication) instead of creating an authorization plug-in. Use authorization plug-ins to extend or change system policies.
 
 The macOS Security Server’s authorization engine consults its authorization policy database to determine which authorization mechanisms to use when evaluating whether to grant particular rights for the person using the Mac. You can customize this process by creating an authorization plug-in, a code bundle that provides one or more authorization mechanisms. Each authorization mechanism performs a single step in an authorization process.
 
@@ -29,7 +29,7 @@ Context data is information that can be useful to an application, such as a user
 
 When you set context data, tag the data with a flag that specifies whether the Security Server should return the data to the authorization client upon request (by using the [`AuthorizationCopyInfo(_:_:_:)`](authorizationcopyinfo(_:_:_:).md) function), or whether it’s restricted to the mechanisms involved in the authorization.
 
-> ❗ **Important**:  If your plug-in displays a window before somebody logs into a Mac, ensure you set the [`canBecomeVisibleWithoutLogin`](https://developer.apple.com/documentation/AppKit/NSWindow/canBecomeVisibleWithoutLogin) property of your [`NSWindow`](https://developer.apple.com/documentation/AppKit/NSWindow) instance to [`true`](https://developer.apple.com/documentation/Swift/true). For more details, see [`AuthorizationPluginCreate`](authorizationplugincreate.md).
+> ❗ **Important**:  If your plug-in displays a window before somebody logs into a Mac, ensure you set the [`canBecomeVisibleWithoutLogin`](https://developer.apple.com/documentation/appkit/nswindow/canbecomevisiblewithoutlogin) property of your [`NSWindow`](https://developer.apple.com/documentation/appkit/nswindow) instance to [`true`](https://developer.apple.com/documentation/swift/true). For more details, see [`AuthorizationPluginCreate`](authorizationplugincreate.md).
 
 ##### Register the Authorization Plug in
 

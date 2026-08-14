@@ -16,19 +16,19 @@ For some attribute types, you can also choose whether to use a scalar type to re
 
 Add an attribute as indicated in the screenshot and the steps that follow:
 
-![A screenshot of Xcode’s Data Model editor, highlighting the Attributes list in the middle, the Data Model inspector on the right, and the Add Attribute button in the toolbar at the bottom.](https://docs-assets.developer.apple.com/published/3d036ecc8efdd847459c86adbd950698/media-3842668%402x.png)
+![A screenshot of Xcode’s Data Model editor, highlighting the Attributes list in the middle, the Data Model inspector on the right, and the Add Attribute button in the toolbar at the bottom.](/images/com.apple.coredata/media-3842668@2x.png)
 
 1. With an entity selected, click Add Attribute at the bottom of the editor area. A new attribute with the placeholder name `attribute`, of type `Undefined`, appears in the Attributes list.
 2. In the Attributes list, double-click the newly added attribute, and rename it.
 3. In the Attributes list, as shown in the second screenshot, click `Undefined` and choose the attribute’s data type from the Type pop-up menu.
 
-![A screenshot showing the available data types for an attribute.](https://docs-assets.developer.apple.com/published/4cef780cefbb4daf270e60cce1acbf78/media-3839159%402x.png)
+![A screenshot showing the available data types for an attribute.](/images/com.apple.coredata/media-3839159@2x.png)
 
 ##### Configure Attributes
 
 Use the data model inspector (choose View > Inspectors > Show Data Model Inspector) to configure attributes.
 
-![Three screenshots of the Data Model inspector showing how the options vary depending on the attribute’s data type. The left screenshot displays the options for the Float data type, the middle screenshot displays the options for the Date data type, and the screenshot on the right displays the options for the String data type.](https://docs-assets.developer.apple.com/published/c04b3916473aadf8071c9ef469a804d5/media-3842666%402x.png)
+![Three screenshots of the Data Model inspector showing how the options vary depending on the attribute’s data type. The left screenshot displays the options for the Float data type, the middle screenshot displays the options for the Date data type, and the screenshot on the right displays the options for the String data type.](/images/com.apple.coredata/media-3842666@2x.png)
 
 - **Attribute Type**: The attribute’s data type. This field reflects the selection made in the Attributes list’s Type pop-up menu.
 
@@ -44,14 +44,14 @@ Core Data optionals aren’t the same as Swift optionals. You can use a Swift op
 
 Supplying a default value, in combination with making the type non-optional, can provide performance benefits.
 
-- **Use Scalar Type**: Optionally, for some types, choose between scalar and nonscalar representations during code generation. For a `Double`, selecting the Use Scalar checkbox produces a [`Double`](https://developer.apple.com/documentation/Swift/Double), while leaving it unselected produces an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+- **Use Scalar Type**: Optionally, for some types, choose between scalar and nonscalar representations during code generation. For a `Double`, selecting the Use Scalar checkbox produces a [`Double`](https://developer.apple.com/documentation/swift/double), while leaving it unselected produces an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
 
 For the full list of types, including scalar variants, see [`NSAttributeType`](nsattributetype.md).
 
 - **Validation**: Optionally, set validation rules, such as the minimum and maximum values for a numeric type, or regular expressions requirements for strings. The data model inspector shows validation options specific to the selected attribute’s type.
 - **Index in Spotlight**: Adds the field to the Spotlight index for instances created from this entity.
 
-For more information, see [`Core Spotlight`](https://developer.apple.com/documentation/CoreSpotlight).
+For more information, see [`Core Spotlight`](https://developer.apple.com/documentation/corespotlight).
 
 - **Preserve After Deletion**: Includes the attribute in this entity’s tombstone. When persistent history tracking is enabled and a context deletes a managed object, Core Data records an identifying marker, known as its tombstone, in the relevant transaction.
 - **User Info**: A dictionary in which you can store any application-specific information related to the attribute.

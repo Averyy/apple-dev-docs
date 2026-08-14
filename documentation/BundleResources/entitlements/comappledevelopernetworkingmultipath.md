@@ -22,9 +22,9 @@ To add this entitlement to your app, enable the Multipath capability in Xcode.
 
 ## See Also
 
-- [Improving network reliability using Multipath TCP](../Foundation/improving-network-reliability-using-multipath-tcp.md)
+- [Improving network reliability using Multipath TCP](../foundation/improving-network-reliability-using-multipath-tcp.md)
   Use the available radios in iOS devices to improve your app’s network reliability and performance.
-- [var multipathServiceType: URLSessionConfiguration.MultipathServiceType](../Foundation/URLSessionConfiguration/multipathServiceType-swift.property.md)
+- [var multipathServiceType: URLSessionConfiguration.MultipathServiceType](../foundation/urlsessionconfiguration/multipathservicetype-swift.property.md)
   A service type that specifies the Multipath TCP connection policy for transmitting data over Wi-Fi and cellular interfaces.
 - [Access Wi-Fi Information Entitlement](entitlements/com.apple.developer.networking.wifi-info.md)
   A Boolean value indicating whether your app can access information about the connected Wi-Fi network.

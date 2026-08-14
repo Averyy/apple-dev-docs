@@ -20,9 +20,11 @@ OSArray is a container for Libkern C++ objects (those derived from OSMetaClassBa
 
 You must generally cast retrieved objects from [`OSObject`](osobject.md) to the desired class using OSDynamicCast. This macro returns the object cast to the desired class, or `NULL` if the object isn't derived from that class.
 
-As with all Libkern collection classes, OSArray retains objects added to it, and releases objects removed from it (or replaced). An OSArray also grows as necessary to accommodate new objects,  Core Foundation collections (it does not, however, shrink).
+As with all Libkern collection classes, OSArray retains objects added to it, and releases objects removed from it (or replaced). An OSArray also grows as necessary to accommodate new objects, *unlike* Core Foundation collections (it does not, however, shrink).
 
-With very few exceptions in the I/O Kit, all Libkern-based C++ classes, functions, and macros are  to use in a primary interrupt context. Consult the I/O Kit documentation related to primary interrupts for more information.
+**Use Restrictions**
+
+With very few exceptions in the I/O Kit, all Libkern-based C++ classes, functions, and macros are **unsafe** to use in a primary interrupt context. Consult the I/O Kit documentation related to primary interrupts for more information.
 
 OSArray provides no concurrency protection; it's up to the usage context to provide any protection necessary. Some portions of the I/O Kit, such as IORegistryEntry, handle synchronization via defined member functions for setting properties.
 
@@ -81,56 +83,56 @@ OSArray provides no concurrency protection; it's up to the usage context to prov
   Creates and initializes an OSArray populated with objects provided.
 ### Instance Methods
 - [- copyCollection](osarray/1448234-copycollection.md)
-- [- ensureCapacity](../driverkit/osarray/ensurecapacity.md)
+- [- ensureCapacity](osarray/3180809-ensurecapacity.md)
   Allocates capacity for members in array.
-- [- flushCollection](../driverkit/osarray/flushcollection.md)
+- [- flushCollection](osarray/3180810-flushcollection.md)
   Removes and drops references to all members of array.
-- [- free](../driverkit/osarray/free.md)
-- [- getCapacity](../driverkit/osarray/getcapacity.md)
+- [- free](osarray/3180811-free.md)
+- [- getCapacity](osarray/3180812-getcapacity.md)
   Returns count of currently allocated capacity for members in array.
 - [- getCapacityIncrement](osarray/1448240-getcapacityincrement.md)
-- [- getCount](../driverkit/osarray/getcount.md)
+- [- getCount](osarray/3180813-getcount.md)
   Returns count of members in array.
-- [- getLastObject](../driverkit/osarray/getlastobject.md)
+- [- getLastObject](osarray/3180814-getlastobject.md)
   Returns the last member of the array.
 - [- getMetaClass](osarray/1448214-getmetaclass.md)
-- [- getNextIndexOfObject](../driverkit/osarray/getnextindexofobject.md)
+- [- getNextIndexOfObject](osarray/3180815-getnextindexofobject.md)
   Searches the array for an object.
 - [- getNextObjectForIterator](osarray/1448224-getnextobjectforiterator.md)
-- [- getObject](../driverkit/osarray/getobject.md)
+- [- getObject](osarray/3180816-getobject.md)
   Returns a member of the array.
 - [- initIterator](osarray/1448201-inititerator.md)
 - [- initWithArray](osarray/1448198-initwitharray.md)
 - [- initWithCapacity](osarray/1448218-initwithcapacity.md)
 - [- initWithObjects](osarray/1448254-initwithobjects.md)
-- [- isEqualTo](../driverkit/osarray/isequalto-5w7om.md)
+- [- isEqualTo](osarray/3180817-isequalto.md)
   Compares all members of two arrays with isEqualTo().
-- [- isEqualTo](../driverkit/osarray/isequalto-93qxy.md)
+- [- isEqualTo](osarray/3433839-isequalto.md)
   Compares the array with an OSObject
 - [- iteratorSize](osarray/1448229-iteratorsize.md)
-- [- merge](../driverkit/osarray/merge.md)
+- [- merge](osarray/3180819-merge.md)
   Appends all members of an array to this array.
-- [- removeObject](../driverkit/osarray/removeobject.md)
+- [- removeObject](osarray/3180820-removeobject.md)
   Removes a current member of the array.
-- [- replaceObject](../driverkit/osarray/replaceobject.md)
+- [- replaceObject](osarray/3180821-replaceobject.md)
   Removes a current member of the array and replaces it with another object.
 - [- replaceObject](osarray/3567165-replaceobject.md)
 - [- serialize](osarray/1448205-serialize.md)
 - [- setCapacityIncrement](osarray/1448250-setcapacityincrement.md)
-- [- setObject](../driverkit/osarray/setobject-3bore.md)
+- [- setObject](osarray/3180822-setobject.md)
   Appends an object as the last member of the array.
-- [- setObject](../driverkit/osarray/setobject-4ys3x.md)
+- [- setObject](osarray/3433840-setobject.md)
   Sets an object as the member of the array at a given index.
 - [- setObject](osarray/3567166-setobject.md)
 - [- setObject](osarray/3567167-setobject.md)
 - [- setOptions](osarray/1448245-setoptions.md)
   Recursively sets option bits in an array and all child collections.
 ### Type Methods
-- [+ withArray](../driverkit/osarray/witharray.md)
+- [+ withArray](osarray/3180823-witharray.md)
   Allocates an OSArray object with given members and preallocated capacity.
-- [+ withCapacity](../driverkit/osarray/withcapacity.md)
+- [+ withCapacity](osarray/3180824-withcapacity.md)
   Allocates an OSArray object with preallocated capacity.
-- [+ withObjects](../driverkit/osarray/withobjects.md)
+- [+ withObjects](osarray/3180825-withobjects.md)
   Allocates an OSArray object with given members and preallocated capacity.
 
 ## Relationships

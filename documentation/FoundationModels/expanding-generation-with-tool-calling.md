@@ -12,7 +12,7 @@ You can create tools that enable the model to:
 
 - Query entries from your app’s database and reference them in its answer.
 - Perform actions within your app, like adjusting the difficulty in a game or making a web request to get additional information.
-- Integrate with other frameworks, like [`Contacts`](https://developer.apple.com/documentation/Contacts) or [`HealthKit`](https://developer.apple.com/documentation/HealthKit), that use existing privacy and security mechanisms.
+- Integrate with other frameworks, like [`Contacts`](https://developer.apple.com/documentation/contacts) or [`HealthKit`](https://developer.apple.com/documentation/healthkit), that use existing privacy and security mechanisms.
 
 #### Create a Custom Tool for Your Task
 
@@ -20,7 +20,7 @@ When you prompt the model with a question or make a request, the model decides w
 
 Before creating a tool, it’s helpful to understand the pattern the framework follows when using the tool you provide. The framework processes a request in six phases that the following diagram shows:
 
-![A flow diagram with two columns, App and Model. In the App column, a prompt](https://docs-assets.developer.apple.com/published/2a96b030693b9bb50c17a707bae25ba4/expanding-generation-with-tool-calling-sequence%402x.png)
+![A flow diagram with two columns, App and Model. In the App column, a prompt](/images/com.apple.foundationmodels/expanding-generation-with-tool-calling-sequence@2x.png)
 
 A tool conforms to [`Tool`](tool.md) and contains the arguments that the tool accepts, and a method that the model calls when it wants to use the tool. You can call [`call(arguments:)`](tool/call(arguments:).md) concurrently with itself or with other tools. The following example shows a tool that accepts a search term and a number of recipes to retrieve:
 
@@ -202,7 +202,7 @@ Profile {
 
 #### Inspect the Call Graph
 
-A session contains an observable [`transcript`](languagemodelsession/transcript.md) property that allows you to track when, and how many times, the model calls your tools. A transcript also provides the ability to construct a representation of the call graph for debugging purposes and pairs well with [`SwiftUI`](https://developer.apple.com/documentation/SwiftUI) to visualize session history.
+A session contains an observable [`transcript`](languagemodelsession/transcript.md) property that allows you to track when, and how many times, the model calls your tools. A transcript also provides the ability to construct a representation of the call graph for debugging purposes and pairs well with [`SwiftUI`](https://developer.apple.com/documentation/swiftui) to visualize session history.
 
 ```swift
 struct MyHistoryView: View {

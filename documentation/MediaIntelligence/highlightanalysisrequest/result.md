@@ -38,8 +38,8 @@ This type describes the highlights and engagement levels the framework finds in 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 - [VideoAnalyzer.Result](videoanalyzer/result.md)
 
 

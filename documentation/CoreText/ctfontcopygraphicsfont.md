@@ -22,7 +22,7 @@ func CTFontCopyGraphicsFont(_ font: CTFont, _ attributes: UnsafeMutablePointer<U
 
 #### Return Value
 
-A [`CGFont`](https://developer.apple.com/documentation/CoreGraphics/CGFont) object for the given font reference.
+A [`CGFont`](https://developer.apple.com/documentation/coregraphics/cgfont) object for the given font reference.
 
 ## Parameters
 

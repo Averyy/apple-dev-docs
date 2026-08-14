@@ -23,7 +23,7 @@ The 3D position of the rendered output in the graph’s local coordinate system.
 
 This function retrieves the 3D position where the particle will be rendered, which may differ from the particle node’s actual position if output transformations have been applied.
 
-> **Note**: ![Graph](https://docs-assets.developer.apple.com/published/2f3c4e2a21d75a156cdd0a6e0d34587b/output__outputPosition.svg)
+> **Note**: ![Graph](/images/com.apple.computegraph/output__outputPosition.svg)
 
 
 ---

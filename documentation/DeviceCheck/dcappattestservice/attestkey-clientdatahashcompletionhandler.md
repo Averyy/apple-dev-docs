@@ -30,9 +30,9 @@ func attestKey(_ keyId: String, clientDataHash: Data) async throws -> Data
 
 > **Note**: You can call this method from synchronous code using a completion handler, as shown on this page, or you can call it as an asynchronous method that has the following declaration: ```swift
 func attestKey(_ keyId: String, clientDataHash: Data) async throws -> Data
-``` For information about concurrency and asynchronous code in Swift, see [`Calling Objective-C APIs Asynchronously`](https://developer.apple.com/documentation/Swift/calling-objective-c-apis-asynchronously).
+``` For information about concurrency and asynchronous code in Swift, see [`Calling Objective-C APIs Asynchronously`](https://developer.apple.com/documentation/swift/calling-objective-c-apis-asynchronously).
 
-This method asks Apple to attest to the validity of a key that you previously generated with a call to the [`generateKey(completionHandler:)`](dcappattestservice/generatekey(completionhandler:).md) method. Provide the method with both the key identifier and a computed hash of a data block that includes a one-time challenge from your server to prevent replay attacks. For example, you can use CryptoKit to create a [`SHA256`](https://developer.apple.com/documentation/CryptoKit/SHA256) hash of challenge data:
+This method asks Apple to attest to the validity of a key that you previously generated with a call to the [`generateKey(completionHandler:)`](dcappattestservice/generatekey(completionhandler:).md) method. Provide the method with both the key identifier and a computed hash of a data block that includes a one-time challenge from your server to prevent replay attacks. For example, you can use CryptoKit to create a [`SHA256`](https://developer.apple.com/documentation/cryptokit/sha256) hash of challenge data:
 
 ```swift
 import CryptoKit let hash = Data(SHA256.hash(data: challenge)) // A

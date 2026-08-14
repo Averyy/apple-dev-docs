@@ -19,7 +19,7 @@ func presentOpenInMenu(from rect: CGRect, in view: UIView, animated: Bool) -> Bo
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/Swift/true) if this method was able to display the menu or [`false`](https://developer.apple.com/documentation/Swift/false) if it was not.
+[`true`](https://developer.apple.com/documentation/swift/true) if this method was able to display the menu or [`false`](https://developer.apple.com/documentation/swift/false) if it was not.
 
 #### Discussion
 
@@ -33,7 +33,7 @@ This method displays the options menu asynchronously. The document interaction c
 
 - `rect`: The location (in the coordinate system of `view`) at which to anchor the menu.
 - `view`: The view from which to display the menu.
-- `animated`: Specify [`true`](https://developer.apple.com/documentation/Swift/true) to animate the appearance of the menu or [`false`](https://developer.apple.com/documentation/Swift/false) to display it immediately.
+- `animated`: Specify [`true`](https://developer.apple.com/documentation/swift/true) to animate the appearance of the menu or [`false`](https://developer.apple.com/documentation/swift/false) to display it immediately.
 
 ## See Also
 

@@ -32,7 +32,7 @@ The function uses the following calculation to perform the conversion:
 result = (sample_16U * 4096 + 32767) / 65535;
 ```
 
-The conversion maps source pixels with a value of `0` to `0`, and maps source pixels with a value of [`max`](https://developer.apple.com/documentation/Swift/UInt16/max) to `4096`.
+The conversion maps source pixels with a value of `0` to `0`, and maps source pixels with a value of [`max`](https://developer.apple.com/documentation/swift/uint16/max) to `4096`.
 
 ## Parameters
 

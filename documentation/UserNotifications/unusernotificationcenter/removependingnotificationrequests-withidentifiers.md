@@ -31,7 +31,7 @@ center.removePendingNotificationRequests(withIdentifiers: ["com.example.mynotifi
 
 ## Parameters
 
-- `identifiers`: An array of [`NSString`](https://developer.apple.com/documentation/Foundation/NSString) objects, each of which contains the [`identifier`](unnotificationrequest/identifier.md) of an active [`UNNotificationRequest`](unnotificationrequest.md) object. If the identifier belongs to a non repeating request, and the trigger condition for that request has already been met, this method ignores the identifier.
+- `identifiers`: An array of [`NSString`](https://developer.apple.com/documentation/foundation/nsstring) objects, each of which contains the [`identifier`](unnotificationrequest/identifier.md) of an active [`UNNotificationRequest`](unnotificationrequest.md) object. If the identifier belongs to a non repeating request, and the trigger condition for that request has already been met, this method ignores the identifier.
 
 ## See Also
 

@@ -49,12 +49,12 @@ enum Attribute
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../Swift/BitwiseCopyable.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [RawRepresentable](../Swift/RawRepresentable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [BitwiseCopyable](../swift/bitwisecopyable.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [RawRepresentable](../swift/rawrepresentable.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 
@@ -64,7 +64,7 @@ enum Attribute
   A bit mask that specifies both a part of an interface element to align and a direction for the alignment between two interface elements.
 - [NSLayoutConstraint.Orientation](nslayoutconstraint/orientation.md)
   The layout constraint orientation, either horizontal or vertical, that the constraint uses to enforce layout between objects.
-- [struct NSEdgeInsets](../Foundation/NSEdgeInsets.md)
+- [struct NSEdgeInsets](../foundation/nsedgeinsets.md)
   A description of the distance between the edges of two rectangles.
 
 

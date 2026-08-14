@@ -18,7 +18,7 @@ case invalidSourceDomain
 
 #### Discussion
 
-For more information about formatting source domains, see the `source_domain` property of [`AdImpressionResponse`](https://developer.apple.com/documentation/SKAdNetworkforWebAds/AdImpressionResponse).
+For more information about formatting source domains, see the `source_domain` property of [`AdImpressionResponse`](https://developer.apple.com/documentation/skadnetworkforwebads/adimpressionresponse).
 
 ## See Also
 

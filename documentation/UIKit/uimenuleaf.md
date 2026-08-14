@@ -57,7 +57,7 @@ protocol UIMenuLeaf : NSObjectProtocol
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 ### Conforming Types
 - [UIAction](uiaction.md)
 - [UICommand](uicommand.md)

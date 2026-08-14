@@ -14,7 +14,7 @@ Identify and address issues in your app using the Xcode debugger, Xcode Organize
   Inspect your running app to investigate issues in the appearance and placement of the content it displays.
 - [Diagnosing memory, thread, and crash issues early](diagnosing-memory-thread-and-crash-issues-early.md)
   Identify runtime crashes and undefined behaviors in your app during testing using Xcode’s sanitizer tools.
-- [Analyzing HTTP traffic with Instruments](../Foundation/analyzing-http-traffic-with-instruments.md)
+- [Analyzing HTTP traffic with Instruments](../foundation/analyzing-http-traffic-with-instruments.md)
   Measure HTTP-based network performance and usage of your apps.
 - [Detecting when your app contacts domains that may be profiling users](detecting-when-your-app-contacts-domains-that-may-be-profiling-users.md)
   Use Instruments to assess whether your app or its third-party SDKs connect to domains that may profile users.
@@ -34,7 +34,7 @@ Identify and address issues in your app using the Xcode debugger, Xcode Organize
 - [Diagnosing issues using crash reports and device logs](diagnosing-issues-using-crash-reports-and-device-logs.md)
   Use crash reports and device logs to debug app issues.
 ### Entitlements
-- [Diagnosing Issues with Entitlements](../BundleResources/diagnosing-issues-with-entitlements.md)
+- [Diagnosing Issues with Entitlements](../bundleresources/diagnosing-issues-with-entitlements.md)
   Verify your app’s entitlements at every stage of development to track down errors during distribution.
 
 ## See Also

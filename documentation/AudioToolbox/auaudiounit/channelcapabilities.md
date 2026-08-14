@@ -21,7 +21,7 @@ var channelCapabilities: [NSNumber]? { get }
 
 #### Discussion
 
-Array elements are [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) values containing integers.
+Array elements are [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) values containing integers.
 
 The array index alternates between input and output counts, in ascending order of input/output channels—for example: [0] = first input count, [1] = first output count, [2] = second input count, [3] = second output count, etc.
 
@@ -35,12 +35,12 @@ The table below shows a sample selection of valid input and output channel combi
 
 | Array Index | Integer Value | Meaning |
 | --- | --- | --- |
-| [0] ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) [1] | -1 ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) -1 | First input/output count. ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) Any number of input and output channels, requiring that the numbers match. This is the default case. |
-| [2] ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) [3] | -1 ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) -2 | Second input/output count. ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) Any number of input and output channels, without requiring that the numbers match. |
-| [4] ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) [5] | 2 ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) 6 | Third input/output count. ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) Exactly two input channels, exactly six output channels. |
-| [6] ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) [7] | -1 ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) 2 | Fourth input/output count. ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) Any number of input channels, exactly two output channels. |
-| [8] ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) [9] | 0 ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) 1 | Fifth input/output count. ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) No input channels, exactly one output channel. |
-| [10] ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) [11] | -4 ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) -8 | Sixth input/output count. ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) Up to four input channels, up to eight output channels. |
+| [0] ![None](/images/com.apple.audiotoolbox/spacer.png) [1] | -1 ![None](/images/com.apple.audiotoolbox/spacer.png) -1 | First input/output count. ![None](/images/com.apple.audiotoolbox/spacer.png) Any number of input and output channels, requiring that the numbers match. This is the default case. |
+| [2] ![None](/images/com.apple.audiotoolbox/spacer.png) [3] | -1 ![None](/images/com.apple.audiotoolbox/spacer.png) -2 | Second input/output count. ![None](/images/com.apple.audiotoolbox/spacer.png) Any number of input and output channels, without requiring that the numbers match. |
+| [4] ![None](/images/com.apple.audiotoolbox/spacer.png) [5] | 2 ![None](/images/com.apple.audiotoolbox/spacer.png) 6 | Third input/output count. ![None](/images/com.apple.audiotoolbox/spacer.png) Exactly two input channels, exactly six output channels. |
+| [6] ![None](/images/com.apple.audiotoolbox/spacer.png) [7] | -1 ![None](/images/com.apple.audiotoolbox/spacer.png) 2 | Fourth input/output count. ![None](/images/com.apple.audiotoolbox/spacer.png) Any number of input channels, exactly two output channels. |
+| [8] ![None](/images/com.apple.audiotoolbox/spacer.png) [9] | 0 ![None](/images/com.apple.audiotoolbox/spacer.png) 1 | Fifth input/output count. ![None](/images/com.apple.audiotoolbox/spacer.png) No input channels, exactly one output channel. |
+| [10] ![None](/images/com.apple.audiotoolbox/spacer.png) [11] | -4 ![None](/images/com.apple.audiotoolbox/spacer.png) -8 | Sixth input/output count. ![None](/images/com.apple.audiotoolbox/spacer.png) Up to four input channels, up to eight output channels. |
 
 This version 3 property is bridged to the version 2 `kAudioUnitProperty_SupportedNumChannels` API.
 

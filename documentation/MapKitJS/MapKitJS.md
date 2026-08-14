@@ -10,9 +10,9 @@ Embed interactive Apple Maps on your website, annotate points of interest, and p
 
 #### Overview
 
-Use this JavaScript API to embed interactive maps directly into your webpages or apps across different platforms and operating systems, including iOS and Android. Like [`MapKit`](https://developer.apple.com/documentation/MapKit) for native apps, you can also add annotations and overlays to the map to call out points of interest or user destinations.
+Use this JavaScript API to embed interactive maps directly into your webpages or apps across different platforms and operating systems, including iOS and Android. Like [`MapKit`](https://developer.apple.com/documentation/mapkit) for native apps, you can also add annotations and overlays to the map to call out points of interest or user destinations.
 
-![An image of a web browser window displaying a map of the San Francisco area.](https://docs-assets.developer.apple.com/published/27b2f7733680864db2dbf377a384d0c1/MapKitJS-01%402x.png)
+![An image of a web browser window displaying a map of the San Francisco area.](/images/com.apple.mapkitjs/MapKitJS-01@2x.png)
 
 MapKit JS also provides interactive views for place details, and Look Around imagery.
 
@@ -39,9 +39,9 @@ MapKit JS requires authorization through a Maps token for initialization and som
 
 ## See Also
 
-- [MapKit](../MapKit/MapKit.md)
+- [MapKit](../mapkit/mapkit.md)
   Display map or satellite imagery within your app, call out points of interest, and determine placemark information for map coordinates.
-- [Apple Maps Server API](../AppleMapsServerAPI/AppleMapsServerAPI.md)
+- [Apple Maps Server API](../applemapsserverapi/applemapsserverapi.md)
   Reduce API calls and conserve device power by streamlining your app’s georelated searches.
 
 

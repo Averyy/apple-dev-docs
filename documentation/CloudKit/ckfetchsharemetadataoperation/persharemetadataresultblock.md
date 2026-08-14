@@ -25,7 +25,7 @@ var perShareMetadataResultBlock: ((URL, Result<CKShare.Metadata, any Error>) -> 
 The closure returns no value and takes the following parameters:
 
 - The share’s URL.
-- A [`Result`](https://developer.apple.com/documentation/Swift/Result) that contains either: - The share metadata, or
+- A [`Result`](https://developer.apple.com/documentation/swift/result) that contains either: - The share metadata, or
 - An error that contains information about a problem encountered fetching the share metadata.
 
 The operation executes this closure once for each URL in the [`shareURLs`](ckfetchsharemetadataoperation/shareurls.md) property. Each time the closure executes, it executes serially with respect to the other closures of the operation.

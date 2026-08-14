@@ -20,7 +20,7 @@ class SACrashDetectionManager
 
 #### Overview
 
-Use this class to determine Crash Detection availabilty on iPhone, detect authorization status, and register for Crash Detection events. Not all iPhones support Crash Detection, so verify that [`isAvailable`](sacrashdetectionmanager/isavailable.md) returns [`true`](https://developer.apple.com/documentation/Swift/true).
+Use this class to determine Crash Detection availabilty on iPhone, detect authorization status, and register for Crash Detection events. Not all iPhones support Crash Detection, so verify that [`isAvailable`](sacrashdetectionmanager/isavailable.md) returns [`true`](https://developer.apple.com/documentation/swift/true).
 
 Check the value of [`authorizationStatus`](sacrashdetectionmanager/authorizationstatus.md) to determine if the person designates this app on their iPhone to receive Crash Detection events. If the value is not [`SAAuthorizationStatus.authorized`](saauthorizationstatus/authorized.md), set [`delegate`](sacrashdetectionmanager/delegate.md) and call [`requestAuthorization(completionHandler:)`](sacrashdetectionmanager/requestauthorization(completionhandler:).md) to request authorization.
 
@@ -42,14 +42,14 @@ After your app has authorization to receive Crash Detection events, adopt [`SACr
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

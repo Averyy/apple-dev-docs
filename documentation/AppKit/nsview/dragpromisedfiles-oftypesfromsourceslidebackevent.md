@@ -16,7 +16,7 @@ func dragPromisedFiles(ofTypes typeArray: [String], from rect: NSRect, source so
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/Swift/true) if the drag operation is initiated successfully, [`false`](https://developer.apple.com/documentation/Swift/false) otherwise.
+[`true`](https://developer.apple.com/documentation/swift/true) if the drag operation is initiated successfully, [`false`](https://developer.apple.com/documentation/swift/false) otherwise.
 
 #### Discussion
 
@@ -28,10 +28,10 @@ See [`Drag and Drop`](drag-and-drop.md) for more information on dragging operati
 
 ## Parameters
 
-- `typeArray`: An array of file types being promised. The array elements can consist of file extensions and HFS types encoded with the [`NSFileTypeForHFSTypeCode(_:)`](https://developer.apple.com/documentation/Foundation/NSFileTypeForHFSTypeCode(_:)) function. If promising a directory of files, only include the top directory in the array.
+- `typeArray`: An array of file types being promised. The array elements can consist of file extensions and HFS types encoded with the [`NSFileTypeForHFSTypeCode(_:)`](https://developer.apple.com/documentation/foundation/nsfiletypeforhfstypecode(_:)) function. If promising a directory of files, only include the top directory in the array.
 - `rect`: A rectangle that describes the position of the icon in the view’s coordinate system.
 - `sourceObject`: An object that serves as the controller of the dragging operation. It must conform to the [`NSDraggingSource`](nsdraggingsource.md) protocol, and is typically the view itself or its [`NSWindow`](nswindow.md) object.
-- `flag`: A Boolean that indicates whether the icon being dragged should slide back to its position in the view if the file isn’t accepted. The icon slides back to `aRect` if `slideBack` is [`true`](https://developer.apple.com/documentation/Swift/true), the promised files are not accepted by the dragging destination, and the user has not disabled icon animation; otherwise it simply disappears.
+- `flag`: A Boolean that indicates whether the icon being dragged should slide back to its position in the view if the file isn’t accepted. The icon slides back to `aRect` if `slideBack` is [`true`](https://developer.apple.com/documentation/swift/true), the promised files are not accepted by the dragging destination, and the user has not disabled icon animation; otherwise it simply disappears.
 - `event`: The mouse-down event object from which to initiate the drag operation. In particular, its mouse location is used for the offset of the icon being dragged.
 
 ## See Also

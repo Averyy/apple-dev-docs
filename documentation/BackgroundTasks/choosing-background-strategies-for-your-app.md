@@ -16,13 +16,13 @@ Select one or more methods for your app based on how you schedule activity in th
 
 ##### Continue Foreground Work in the Background
 
-The system may place apps in the background at any time. If your app performs critical work that must continue while it runs in the background, use [`beginBackgroundTask(withName:expirationHandler:)`](https://developer.apple.com/documentation/UIKit/UIApplication/beginBackgroundTask(withName:expirationHandler:)) to alert the system. Consider this approach if your app needs to finish sending a message or complete saving a file.
+The system may place apps in the background at any time. If your app performs critical work that must continue while it runs in the background, use [`beginBackgroundTask(withName:expirationHandler:)`](https://developer.apple.com/documentation/uikit/uiapplication/beginbackgroundtask(withname:expirationhandler:)) to alert the system. Consider this approach if your app needs to finish sending a message or complete saving a file.
 
 The system grants your app a limited amount of time to perform its work once it enters the background. Don’t exceed this time, and use the expiration handler to cover the case where the time has depleted to cancel or defer the work.
 
-Once your work completes, call [`endBackgroundTask(_:)`](https://developer.apple.com/documentation/UIKit/UIApplication/endBackgroundTask(_:)) before the time limit expires so that your app suspends properly. The system terminates your app if you fail to call this method.
+Once your work completes, call [`endBackgroundTask(_:)`](https://developer.apple.com/documentation/uikit/uiapplication/endbackgroundtask(_:)) before the time limit expires so that your app suspends properly. The system terminates your app if you fail to call this method.
 
-If the task is one that takes some time, such as downloading or uploading files, use [`URLSession`](https://developer.apple.com/documentation/Foundation/URLSession). See [`Downloading files in the background`](https://developer.apple.com/documentation/Foundation/downloading-files-in-the-background) for more information.
+If the task is one that takes some time, such as downloading or uploading files, use [`URLSession`](https://developer.apple.com/documentation/foundation/urlsession). See [`Downloading files in the background`](https://developer.apple.com/documentation/foundation/downloading-files-in-the-background) for more information.
 
 ##### Defer Intensive Work
 
@@ -46,17 +46,17 @@ Background pushes silently wake your app in the background. They don’t display
 
 When sending a background push, set `content-available`: to `1` without `alert`, `sound`, or `badge`. The system decides when to launch the app to download the content. To ensure your app launches, set `apns-priority `to `5`, and `apns-push-type` to `background`.
 
-Once the system delivers the remote notification with [`application(_:didReceiveRemoteNotification:fetchCompletionHandler:)`](https://developer.apple.com/documentation/UIKit/UIApplicationDelegate/application(_:didReceiveRemoteNotification:fetchCompletionHandler:)), your app has up to 30 seconds to complete its work. After your app performs the work, call the passed completion handler as soon as possible to conserve power. If you send background pushes more frequently than three times per hour, the system imposes rate limitations. See [`Pushing background updates to your App`](https://developer.apple.com/documentation/UserNotifications/pushing-background-updates-to-your-app) for more information.
+Once the system delivers the remote notification with [`application(_:didReceiveRemoteNotification:fetchCompletionHandler:)`](https://developer.apple.com/documentation/uikit/uiapplicationdelegate/application(_:didreceiveremotenotification:fetchcompletionhandler:)), your app has up to 30 seconds to complete its work. After your app performs the work, call the passed completion handler as soon as possible to conserve power. If you send background pushes more frequently than three times per hour, the system imposes rate limitations. See [`Pushing background updates to your App`](https://developer.apple.com/documentation/usernotifications/pushing-background-updates-to-your-app) for more information.
 
 ##### Request Background Time and Notify the User
 
-If your app needs to perform a task in the background and show a notification to the user, use a Notification Service Extension. For example, an email app might need to notify a user after downloading a new email. Subclass [`UNNotificationServiceExtension`](https://developer.apple.com/documentation/UserNotifications/UNNotificationServiceExtension) and bundle the system extension with your app. Upon receiving a push notification, your service extension wakes up and obtains background runtime through [`didReceive(_:withContentHandler:)`](https://developer.apple.com/documentation/UserNotifications/UNNotificationServiceExtension/didReceive(_:withContentHandler:)).
+If your app needs to perform a task in the background and show a notification to the user, use a Notification Service Extension. For example, an email app might need to notify a user after downloading a new email. Subclass [`UNNotificationServiceExtension`](https://developer.apple.com/documentation/usernotifications/unnotificationserviceextension) and bundle the system extension with your app. Upon receiving a push notification, your service extension wakes up and obtains background runtime through [`didReceive(_:withContentHandler:)`](https://developer.apple.com/documentation/usernotifications/unnotificationserviceextension/didreceive(_:withcontenthandler:)).
 
 When your extension completes its work, it must call the content handler with the content you want to deliver to the user. Your extension has a limited amount of time to modify the content and execute the `contentHandler` block.
 
 ## See Also
 
-- [Using background tasks to update your app](../UIKit/using-background-tasks-to-update-your-app.md)
+- [Using background tasks to update your app](../uikit/using-background-tasks-to-update-your-app.md)
   Configure your app to perform tasks in the background to make efficient use of processing time and power.
 - [Refreshing and Maintaining Your App Using Background Tasks](refreshing-and-maintaining-your-app-using-background-tasks.md)
   Use scheduled background tasks for refreshing your app content and for performing maintenance.

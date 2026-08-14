@@ -20,7 +20,7 @@ class var beforeLowLatencyCATransactionCommit: UIUpdateActionPhase { get }
 
 #### Discussion
 
-This phase runs before [`flush()`](https://developer.apple.com/documentation/QuartzCore/CATransaction/flush()) for a low-latency event.
+This phase runs before [`flush()`](https://developer.apple.com/documentation/quartzcore/catransaction/flush()) for a low-latency event.
 
 This phase is off by default. You can request it to run by setting [`wantsLowLatencyEventDispatch`](uiupdatelink/wantslowlatencyeventdispatch.md) to `true`.
 

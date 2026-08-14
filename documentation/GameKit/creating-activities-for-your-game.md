@@ -8,7 +8,7 @@ Use activities to surface game content to players and encourage them to connect 
 
 Players discover and engage with games — along with connecting with friends and other players — through Game Center. Game activities present players with challenges in your game, like collecting pieces of a puzzle. They offer a way to keep people engaged with your game, and with each other. By regularly adding new activities — like finding parts of a map and piecing them together to find buried treasure — you encourage people to explore your game, or play as a team to accomplish a goal.
 
-![An illustration that shows a game activity that loads a daily crossword.](https://docs-assets.developer.apple.com/published/9e3be3a2b0dc68f4b9b84788242a7e83/creating-activities-for-your-game-hero%402x.png)
+![An illustration that shows a game activity that loads a daily crossword.](/images/com.apple.gamekit/creating-activities-for-your-game-hero@2x.png)
 
 Activities provide a way to link players directly to your content. By describing your gameplay with activities, you can link the player to that part of your game when they engage with the activity. For example, when a player wants to complete your daily puzzle, you can send the player directly to that part of your game.
 
@@ -20,7 +20,7 @@ Configure activities in Xcode before accessing them in your code and testing loc
 
 For each activity you configure, you specify details like how many players it supports, and what achievement, leaderboard, or challenge to associate the activity with.
 
-![A screenshot of the GameKit configuration in Xcode. The configuration includes a recurring leaderboard named ](https://docs-assets.developer.apple.com/published/4dc1402c1688d18ebb95e5d70e56f56d/xcode-game-activity-coin-rush%402x.png)
+![A screenshot of the GameKit configuration in Xcode. The configuration includes a recurring leaderboard named ](/images/com.apple.gamekit/xcode-game-activity-coin-rush@2x.png)
 
 The capabilities you choose for an activity depends on the design of your game. For multiplayer activities, configure whether it supports party codes — a way players invite each other to activities. You also specify the number of players the activity supports. A challenge supports up to 16 players.
 
@@ -30,7 +30,7 @@ When you configure your activity, you can provide an optional collection of prop
 
 Use the Game Progress Manager to test your activities on your local device before you push the configuration update to App Store Connect. After selecting a resource that you associate with an activity, you can open a deep link to verify the behavior of your activity.
 
-![A screenshot showing the Game Progress Manager with a leaderboard selected. The leaderboard is associated with a game activity that’s shown as a Deep Link. Click on the link to test the behavior of the link with your game.](https://docs-assets.developer.apple.com/published/c6d27e13f0af445cda4b087e5cb55d71/xcode-progress-manager-deep-link%402x.png)
+![A screenshot showing the Game Progress Manager with a leaderboard selected. The leaderboard is associated with a game activity that’s shown as a Deep Link. Click on the link to test the behavior of the link with your game.](/images/com.apple.gamekit/xcode-progress-manager-deep-link@2x.png)
 
 For design guidance on game activities, see Human Interface Guidelines > Technologies > [`Game Center`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/game-center). To learn more about the information you enter in App Store Connect, see [`Game Activities properties`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/reference/game-activities).
 
@@ -105,7 +105,7 @@ Support older operating systems and other platforms by adding a [`fallbackURL`](
 - **`activityIdentifier`**: The value you specify in your activity definition.
 - **`partyCode`**: A party code you use for matchmaking.
 
-To learn more about universal links, see [`Supporting universal links in your app`](https://developer.apple.com/documentation/Xcode/supporting-universal-links-in-your-app).
+To learn more about universal links, see [`Supporting universal links in your app`](https://developer.apple.com/documentation/xcode/supporting-universal-links-in-your-app).
 
 #### Start a Game Activity Life Cycle
 

@@ -26,7 +26,7 @@ protocol MTLFXFrameInterpolator : MTLFXFrameInterpolatorBase
 
 ### Inherits From
 - [MTLFXFrameInterpolatorBase](mtlfxframeinterpolatorbase.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 
 ---

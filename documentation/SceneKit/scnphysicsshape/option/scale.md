@@ -22,7 +22,7 @@ static let scale: SCNPhysicsShape.Option
 
 #### Discussion
 
-The value for this key is an [`NSValue`](https://developer.apple.com/documentation/Foundation/NSValue) object containing an [`SCNVector3`](scnvector3.md) structure, whose components describe the scale factor in each of the x-, y- and z-axis directions. The default value is the vector `{1.0, 1.0, 1.0}`, specifying no change of scale.
+The value for this key is an [`NSValue`](https://developer.apple.com/documentation/foundation/nsvalue) object containing an [`SCNVector3`](scnvector3.md) structure, whose components describe the scale factor in each of the x-, y- and z-axis directions. The default value is the vector `{1.0, 1.0, 1.0}`, specifying no change of scale.
 
 SceneKit’s physics simulation ignores the [`scale`](scnnode/scale.md) property of nodes containing physics bodies when simulating collisions. Instead, use this option to provide a scale factor when creating custom physics shapes. (If you create a physics body for a node without specifying a custom shape, SceneKit uses the node’s [`scale`](scnnode/scale.md) property to infer this scale factor at creation time.)
 

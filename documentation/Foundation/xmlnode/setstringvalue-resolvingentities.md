@@ -22,7 +22,7 @@ User-defined entities not declared in the DTD remain in their unresolved form. T
 ## Parameters
 
 - `string`: A string to assign as the value of the receiver.
-- `resolve`: [`true`](https://developer.apple.com/documentation/Swift/true) to resolve character references, predefined entities, and user-defined entities as declared in the associated DTD; [`false`](https://developer.apple.com/documentation/Swift/false) otherwise. Namespace and processing-instruction nodes have their entities resolved even if `resolve` is [`false`](https://developer.apple.com/documentation/Swift/false).
+- `resolve`: [`true`](https://developer.apple.com/documentation/swift/true) to resolve character references, predefined entities, and user-defined entities as declared in the associated DTD; [`false`](https://developer.apple.com/documentation/swift/false) otherwise. Namespace and processing-instruction nodes have their entities resolved even if `resolve` is [`false`](https://developer.apple.com/documentation/swift/false).
 
 ## See Also
 

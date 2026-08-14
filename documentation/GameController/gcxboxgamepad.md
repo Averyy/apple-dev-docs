@@ -23,7 +23,7 @@ class GCXboxGamepad
 
 The Xbox controller profile is similar to an extended game pad ([`GCExtendedGamepad`](gcextendedgamepad.md)), but has four paddle button elements.
 
-![An illustration of an Xbox controller with callouts for the four paddle buttons.](https://docs-assets.developer.apple.com/published/3ccf0bede2983f79a0c53d026b50ebc8/media-3830808%402x.png)
+![An illustration of an Xbox controller with callouts for the four paddle buttons.](/images/com.apple.gamecontroller/media-3830808@2x.png)
 
 ## Topics
 
@@ -47,12 +47,12 @@ The Xbox controller profile is similar to an extended game pad ([`GCExtendedGame
 ### Inherits From
 - [GCExtendedGamepad](gcextendedgamepad.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

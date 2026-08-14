@@ -21,9 +21,9 @@ class UNLocationNotificationTrigger
 
 Create a [`UNLocationNotificationTrigger`](unlocationnotificationtrigger.md) object when you want to schedule the delivery of a local notification when the device enters or leaves a specific geographic region. The system limits the number of location-based triggers that it schedules at the same time.
 
-> ❗ **Important**:  Before scheduling any notifications using this trigger, your app must have authorization to use Core Location and must have when-in-use permissions. (Because the system actually monitors the regions, you don’t need to request always permissions for your app). For information about how to request authorization, see [`Requesting authorization to use location services`](https://developer.apple.com/documentation/CoreLocation/requesting-authorization-to-use-location-services).
+> ❗ **Important**:  Before scheduling any notifications using this trigger, your app must have authorization to use Core Location and must have when-in-use permissions. (Because the system actually monitors the regions, you don’t need to request always permissions for your app). For information about how to request authorization, see [`Requesting authorization to use location services`](https://developer.apple.com/documentation/corelocation/requesting-authorization-to-use-location-services).
 
-When configuring the region, use the [`notifyOnEntry`](https://developer.apple.com/documentation/CoreLocation/CLRegion/notifyOnEntry) and [`notifyOnExit`](https://developer.apple.com/documentation/CoreLocation/CLRegion/notifyOnExit) properties to specify whether you want the system to deliver notifications on entry, on exit, or both. Listing 1 shows the creation of a trigger that fires only once when the user’s device enters a circular region with a 2-kilometer radius.
+When configuring the region, use the [`notifyOnEntry`](https://developer.apple.com/documentation/corelocation/clregion/notifyonentry) and [`notifyOnExit`](https://developer.apple.com/documentation/corelocation/clregion/notifyonexit) properties to specify whether you want the system to deliver notifications on entry, on exit, or both. Listing 1 shows the creation of a trigger that fires only once when the user’s device enters a circular region with a 2-kilometer radius.
 
 Listing 1. Creating a location-based trigger
 
@@ -51,7 +51,7 @@ UNLocationNotificationTrigger* trigger = [UNLocationNotificationTrigger
                  triggerWithRegion:region repeats:NO];
 ```
 
-The system doesn’t immediately trigger region-based notifications when the edge of the boundary is crossed. The system applies heuristics to ensure that the boundary crossing represents a deliberate event and isn’t the result of spurious location data. For more information about the heuristics, see [`Monitoring the user’s proximity to geographic regions`](https://developer.apple.com/documentation/CoreLocation/monitoring-the-user-s-proximity-to-geographic-regions).
+The system doesn’t immediately trigger region-based notifications when the edge of the boundary is crossed. The system applies heuristics to ensure that the boundary crossing represents a deliberate event and isn’t the result of spurious location data. For more information about the heuristics, see [`Monitoring the user’s proximity to geographic regions`](https://developer.apple.com/documentation/corelocation/monitoring-the-user-s-proximity-to-geographic-regions).
 
 ## Topics
 
@@ -67,15 +67,15 @@ The system doesn’t immediately trigger region-based notifications when the edg
 ### Inherits From
 - [UNNotificationTrigger](unnotificationtrigger.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCoding](../Foundation/NSCoding.md)
-- [NSCopying](../Foundation/NSCopying.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [NSSecureCoding](../Foundation/NSSecureCoding.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCoding](../foundation/nscoding.md)
+- [NSCopying](../foundation/nscopying.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSSecureCoding](../foundation/nssecurecoding.md)
 
 ## See Also
 

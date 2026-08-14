@@ -35,10 +35,10 @@ or (n = 2; n < N+2; ++n)
 ## Parameters
 
 - `__A`: The single-precision real input vector.
-- `__IA`: The stride for input vector  .
+- `__IA`: The stride for input vector `A`.
 - `__B`: Five single-precision input filter coefficients, with a stride of one.
 - `__C`: The single-precision real output vector.
-- `__IC`: The stride for output vector  .
+- `__IC`: The stride for output vector `C`.
 - `__N`: The number of new output elements to produce.
 
 

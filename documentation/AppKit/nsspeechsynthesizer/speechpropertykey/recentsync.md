@@ -16,7 +16,7 @@ static let recentSync: NSSpeechSynthesizer.SpeechPropertyKey
 
 #### Discussion
 
-An [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) object that specifies the most recently encountered synchronization command. This property works with [`setObject(_:forProperty:)`](nsspeechsynthesizer/setobject(_:forproperty:).md).
+An [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) object that specifies the most recently encountered synchronization command. This property works with [`setObject(_:forProperty:)`](nsspeechsynthesizer/setobject(_:forproperty:).md).
 
 ## See Also
 

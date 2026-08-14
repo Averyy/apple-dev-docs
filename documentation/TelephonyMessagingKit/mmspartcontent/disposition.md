@@ -7,7 +7,6 @@ The disposition of the MMS part, indicating whether the part renders inline or a
 
 **Availability**:
 - iOS 26.0+
-- iPadOS 26.0+
 
 ## Declaration
 
@@ -27,7 +26,7 @@ var disposition: MMSPartContent.MMSDispositionType
   A unique identifier for the part.
 - [var contentType: UTType?](mmspartcontent/contenttype.md)
   The content type of the part, as a Uniform Type Identifier.
-- [struct UTType](../UniformTypeIdentifiers/UTType-swift.struct.md)
+- [struct UTType](../uniformtypeidentifiers/uttype-swift.struct.md)
   A structure that represents a type of data to load, send, or receive.
 
 

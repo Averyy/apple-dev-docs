@@ -43,12 +43,12 @@ struct BlockRegion
 ## Relationships
 
 ### Conforms To
-- [BidirectionalCollection](../Swift/BidirectionalCollection.md)
-- [Collection](../Swift/Collection.md)
-- [ContiguousBytes](../Foundation/ContiguousBytes.md)
-- [DataProtocol](../Foundation/DataProtocol.md)
-- [RandomAccessCollection](../Swift/RandomAccessCollection.md)
-- [Sequence](../Swift/Sequence.md)
+- [BidirectionalCollection](../swift/bidirectionalcollection.md)
+- [Collection](../swift/collection.md)
+- [ContiguousBytes](../foundation/contiguousbytes.md)
+- [DataProtocol](../foundation/dataprotocol.md)
+- [RandomAccessCollection](../swift/randomaccesscollection.md)
+- [Sequence](../swift/sequence.md)
 
 
 ---

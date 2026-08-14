@@ -22,7 +22,7 @@ case fillProportionally
 
 The following image shows an example of a horizontal stack view that uses the [`UIStackView.Distribution.fillProportionally`](uistackview/distribution-swift.enum/fillproportionally.md) distribution.
 
-![A horizontal stack view with four arranged subviews. The stack view resizes the width of the arranged views so that they fill the available space along the stack view’s axis, with the views varying in size.](https://docs-assets.developer.apple.com/published/556a89349bbaf33d5677b22d6ec262ac/media-2557449%402x.png)
+![A horizontal stack view with four arranged subviews. The stack view resizes the width of the arranged views so that they fill the available space along the stack view’s axis, with the views varying in size.](/images/com.apple.uikit/media-2557449@2x.png)
 
 ## See Also
 

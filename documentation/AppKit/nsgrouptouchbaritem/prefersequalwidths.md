@@ -19,9 +19,9 @@ var prefersEqualWidths: Bool { get set }
 
 #### Discussion
 
-When [`true`](https://developer.apple.com/documentation/Swift/true), items in the [`groupTouchBar`](nsgrouptouchbaritem/grouptouchbar.md) are sized to have equal widths when possible.
+When [`true`](https://developer.apple.com/documentation/swift/true), items in the [`groupTouchBar`](nsgrouptouchbaritem/grouptouchbar.md) are sized to have equal widths when possible.
 
-The default value is [`false`](https://developer.apple.com/documentation/Swift/false).
+The default value is [`false`](https://developer.apple.com/documentation/swift/false).
 
 ## See Also
 

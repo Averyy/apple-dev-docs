@@ -10,11 +10,11 @@ Use an audio engine with a mixer node to connect to the microphone and convert t
 
 ##### Add a Microphone Use Description
 
-The microphone is a protected resource and requires permission from the user. Your app must provide a description of the intended use by adding a `Privacy - Microphone Usage Description` key to App Info. For more information on accessing protected resources, see [`Requesting access to protected resources`](https://developer.apple.com/documentation/UIKit/requesting-access-to-protected-resources).
+The microphone is a protected resource and requires permission from the user. Your app must provide a description of the intended use by adding a `Privacy - Microphone Usage Description` key to App Info. For more information on accessing protected resources, see [`Requesting access to protected resources`](https://developer.apple.com/documentation/uikit/requesting-access-to-protected-resources).
 
 ##### Configure an Audio Mixer and Install a Tap
 
-Access the microphone using [`AVAudioEngine`](https://developer.apple.com/documentation/AVFAudio/AVAudioEngine) and an [`AVAudioMixerNode`](https://developer.apple.com/documentation/AVFAudio/AVAudioMixerNode) to convert the sound into one that’s compatible with ShazamKit.
+Access the microphone using [`AVAudioEngine`](https://developer.apple.com/documentation/avfaudio/avaudioengine) and an [`AVAudioMixerNode`](https://developer.apple.com/documentation/avfaudio/avaudiomixernode) to convert the sound into one that’s compatible with ShazamKit.
 
 Start by adding properties to your matcher class for the audio engine and mixer node. Then add a property for the active ShazamKit session.
 
@@ -83,7 +83,7 @@ func startListening() throws {
 }
 ```
 
-The category uses [`AVAudioRoutingArbiter.Category.playAndRecord`](https://developer.apple.com/documentation/AVFAudio/AVAudioRoutingArbiter/Category/playAndRecord) because the input of the mixer records the mic and the output plays the result. The tap captures the audio buffers from the output of the mixer.
+The category uses [`AVAudioRoutingArbiter.Category.playAndRecord`](https://developer.apple.com/documentation/avfaudio/avaudioroutingarbiter/category/playandrecord) because the input of the mixer records the mic and the output plays the result. The tap captures the audio buffers from the output of the mixer.
 
 Add another function to stop listening to the microphone. Call this function when you no longer need information about the matched item, such as the [`predictedCurrentMatchOffset`](shmatchedmediaitem/predictedcurrentmatchoffset.md). Also call this function when there’s a value for error in [`session(_:didNotFindMatchFor:error:)`](shsessiondelegate/session(_:didnotfindmatchfor:error:).md).
 
@@ -97,7 +97,7 @@ func stopListening() {
 
 ```
 
-You can also [`pause()`](https://developer.apple.com/documentation/AVFoundation/AVPlayer/pause()) the engine instead of stopping it.
+You can also [`pause()`](https://developer.apple.com/documentation/avfoundation/avplayer/pause()) the engine instead of stopping it.
 
 ##### Check for a Match in a Catalog
 

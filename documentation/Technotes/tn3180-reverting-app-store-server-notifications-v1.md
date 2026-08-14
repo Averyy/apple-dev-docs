@@ -8,19 +8,19 @@ Migrate from version 2 to version 1 of App Store Server Notifications using the 
 
 When you enable your server to receive App Store Server Notifications, you configure your settings in App Store Connect. You select the version of App Store Server Notifications you want to receive, and provide your server URL, as described in [`Enter server URLs for App Store Server Notifications`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/configure-in-app-purchase-settings/enter-server-urls-for-app-store-server-notifications).
 
-> **Note**: The [`App Store Server Notifications V1`](https://developer.apple.com/documentation/AppStoreServerNotifications/App-Store-Server-Notifications-V1) endpoint and version 1 notifications are deprecated. Implement the [`App Store Server Notifications V2`](https://developer.apple.com/documentation/AppStoreServerNotifications/App-Store-Server-Notifications-V2) endpoint on your server to receive version 2 notifications instead.
+> **Note**: The [`App Store Server Notifications V1`](https://developer.apple.com/documentation/appstoreservernotifications/app-store-server-notifications-v1) endpoint and version 1 notifications are deprecated. Implement the [`App Store Server Notifications V2`](https://developer.apple.com/documentation/appstoreservernotifications/app-store-server-notifications-v2) endpoint on your server to receive version 2 notifications instead.
 
-In the unusual case that you need to revert from version 2 to version 1 of App Store Server Notifications, use the [`Modify an app`](https://developer.apple.com/documentation/AppStoreConnectAPI/PATCH-v1-apps-_id_) endpoint.
+In the unusual case that you need to revert from version 2 to version 1 of App Store Server Notifications, use the [`Modify an app`](https://developer.apple.com/documentation/appstoreconnectapi/patch-v1-apps-_id_) endpoint.
 
 #### Create the App Modification Request
 
-The Modify an App endpoint updates app information including the URL and version you use for App Store Notifications. To use this endpoint, create a object that includes the `id`, `type`, and `attributes` properties detailed in [`AppUpdateRequest.Data`](https://developer.apple.com/documentation/AppStoreConnectAPI/AppUpdateRequest/Data-data.dictionary).
+The Modify an App endpoint updates app information including the URL and version you use for App Store Notifications. To use this endpoint, create a object that includes the `id`, `type`, and `attributes` properties detailed in [`AppUpdateRequest.Data`](https://developer.apple.com/documentation/appstoreconnectapi/appupdaterequest/data-data.dictionary).
 
 To revert to version 1 of App Store Server Notifications, add the following attributes to the request body of the endpoint:
 
 | Attribute | Value |
 | --- | --- |
-| `subscriptionStatusUrl` | Your server’s [`App Store Server Notifications V1`](https://developer.apple.com/documentation/AppStoreServerNotifications/App-Store-Server-Notifications-V1) endpoint URL. |
+| `subscriptionStatusUrl` | Your server’s [`App Store Server Notifications V1`](https://developer.apple.com/documentation/appstoreservernotifications/app-store-server-notifications-v1) endpoint URL. |
 | `subscriptionStatusUrlVersion` | `V1` to indicate you’re using version 1 of App Store Server Notifications. |
 
 The following code shows an example of a modification request that changes only the app’s App Store Server Notifications URL and version:
@@ -256,7 +256,7 @@ To change your server’s URL for receiving App Store Server Notifications in th
 
 | Attribute | Value |
 | --- | --- |
-| `subscriptionStatusUrlForSandbox` | Your server’s [`App Store Server Notifications V1`](https://developer.apple.com/documentation/AppStoreServerNotifications/App-Store-Server-Notifications-V1) endpoint URL for the sandbox environment. |
+| `subscriptionStatusUrlForSandbox` | Your server’s [`App Store Server Notifications V1`](https://developer.apple.com/documentation/appstoreservernotifications/app-store-server-notifications-v1) endpoint URL for the sandbox environment. |
 | `subscriptionStatusUrlVersionForSandbox` | `V1` to indicate you’re using version 1 of App Store Server Notifications in the sandbox environment. |
 
 #### Revision History

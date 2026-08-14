@@ -30,9 +30,9 @@ This method applies the twirl distortion filter to an image. This effect distort
 The twirl distortion filter uses the following properties:
 
 - **`inputImage`**: An image with the type [`CIImage`](ciimage.md).
-- **`radius`**: A `float` representing the amount of pixels the filter uses to create the distortion as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
-- **`center`**: A set of coordinates marking the center of the image as a [`CGPoint`](https://developer.apple.com/documentation/CoreFoundation/CGPoint).
-- **`angle`**: A `float` representing the angle of the twirl, in radians, as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+- **`radius`**: A `float` representing the amount of pixels the filter uses to create the distortion as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
+- **`center`**: A set of coordinates marking the center of the image as a [`CGPoint`](https://developer.apple.com/documentation/corefoundation/cgpoint).
+- **`angle`**: A `float` representing the angle of the twirl, in radians, as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
 
 The following code creates a filter that results in the center of the image becoming twirled:
 
@@ -47,7 +47,7 @@ func twirlDistort(inputImage: CIImage) -> CIImage {
 }
 ```
 
-![Two images next to each other. The image on the left contains a black-and-white checkerboard pattern. The image on the right has the twirl distortion filter applied. The image appears to be twisted from the center with the twist decreasing towards the edges of the image.](https://docs-assets.developer.apple.com/published/5bd995289128b790ba27dedd432a24f6/media-4407322%402x.png)
+![Two images next to each other. The image on the left contains a black-and-white checkerboard pattern. The image on the right has the twirl distortion filter applied. The image appears to be twisted from the center with the twist decreasing towards the edges of the image.](/images/com.apple.coreimage/media-4407322@2x.png)
 
 ## See Also
 

@@ -146,7 +146,6 @@ If a task for a submitted service request fails while processing in the backgrou
 | `9815` | The registered user isn’t assigned the requested `adamId`. | `400` |
 | `9816` | This request exceeds the maximum subscriptions limit. Change the request to stay within the specified limit. | `400` |
 | `9817` | The user is already assigned to this subscription through group membership. | `400` |
-| ` |  |  |
 
 #### Review Asynchronous Error Codes
 

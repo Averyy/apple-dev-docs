@@ -29,7 +29,7 @@ class UIPrintInteractionController
 - [`printFormatter`](uiprintinteractioncontroller/printformatter.md) takes a print formatter, an object that knows how to lay out content of a certain type.
 - [`printPageRenderer`](uiprintinteractioncontroller/printpagerenderer.md) takes a page renderer, a custom object that draws the content for printing.
 
-If the [`showsPageRange`](uiprintinteractioncontroller/showspagerange.md) property is [`true`](https://developer.apple.com/documentation/Swift/true), the number of pages is more than 1, and you assign an object to any of these properties except for the [`printingItems`](uiprintinteractioncontroller/printingitems.md) property, the printing options include a control that allows users to select a page range.
+If the [`showsPageRange`](uiprintinteractioncontroller/showspagerange.md) property is [`true`](https://developer.apple.com/documentation/swift/true), the number of pages is more than 1, and you assign an object to any of these properties except for the [`printingItems`](uiprintinteractioncontroller/printingitems.md) property, the printing options include a control that allows users to select a page range.
 
 When users tap a print button on the app’s user interface, a controller object of the app should respond to the action message by obtaining the shared instance of [`UIPrintInteractionController`](uiprintinteractioncontroller.md) and preparing it for the print job. When the app calls one of the `present...` methods (for example, [`present(animated:completionHandler:)`](uiprintinteractioncontroller/present(animated:completionhandler:).md)), [`UIPrintInteractionController`](uiprintinteractioncontroller.md) displays a view containing printing options. This interface is simple, allowing users to select a printer, specify the number of copies and possibly a range of pages, and choose single-sided or double-sided printing (if the printer supports duplex printing). When users make their selections and tap Print, the print job begins.
 
@@ -101,15 +101,15 @@ For design guidance, see [`Human Interface Guidelines`](https://developer.apple.
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [Sendable](../Swift/Sendable.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [Sendable](../swift/sendable.md)
 
 ## See Also
 

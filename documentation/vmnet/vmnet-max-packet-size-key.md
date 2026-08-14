@@ -19,7 +19,7 @@ let vmnet_max_packet_size_key: UnsafePointer<CChar>
 
 This also defines the minimum size of the packet an app needs to be pass to the `vmnet` function for a successful read.
 
-The value for this key is of type [`XPC_TYPE_UINT64`](https://developer.apple.com/documentation/XPC/XPC_TYPE_UINT64-swift.var).
+The value for this key is of type [`XPC_TYPE_UINT64`](https://developer.apple.com/documentation/xpc/xpc_type_uint64-swift.var).
 
 ## See Also
 

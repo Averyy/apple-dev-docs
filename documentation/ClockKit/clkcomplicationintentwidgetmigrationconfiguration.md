@@ -16,9 +16,9 @@ class CLKComplicationIntentWidgetMigrationConfiguration
 
 #### Overview
 
-These configuration objects use an [`INIntent`](https://developer.apple.com/documentation/Intents/INIntent) object to provide dynamic configuration information. Use intent-based complications when your app customizes the list of complications available in the complication picker based on the state of your app. For example, if you provide temperature complications for the top cities in the user’s favorites list, use an [`INIntent`](https://developer.apple.com/documentation/Intents/INIntent) object to describe each city.
+These configuration objects use an [`INIntent`](https://developer.apple.com/documentation/intents/inintent) object to provide dynamic configuration information. Use intent-based complications when your app customizes the list of complications available in the complication picker based on the state of your app. For example, if you provide temperature complications for the top cities in the user’s favorites list, use an [`INIntent`](https://developer.apple.com/documentation/intents/inintent) object to describe each city.
 
-For more information, see [`Migrating ClockKit complications to WidgetKit`](https://developer.apple.com/documentation/WidgetKit/Converting-A-ClockKit-App).
+For more information, see [`Migrating ClockKit complications to WidgetKit`](https://developer.apple.com/documentation/widgetkit/converting-a-clockkit-app).
 
 ## Topics
 
@@ -40,13 +40,13 @@ For more information, see [`Migrating ClockKit complications to WidgetKit`](http
 ### Inherits From
 - [CLKComplicationWidgetMigrationConfiguration](clkcomplicationwidgetmigrationconfiguration.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCopying](../Foundation/NSCopying.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCopying](../foundation/nscopying.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

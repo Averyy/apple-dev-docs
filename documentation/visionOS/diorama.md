@@ -22,17 +22,17 @@ Diorama demonstrates many of RealityKit and Reality Composer Pro’s features. I
 
 Diorama uses custom assets instead of the available library assets. To use custom assets in your own Reality Composer Pro scenes, import them into your project in one of three ways: by dragging them to Reality Composer Pro’s project browser, using File > Import from the File menu, or copying the assets into the `.rkassets` bundle inside your project’s Swift package.
 
-![A screenshot that shows Reality Composer Pro with multiple scenes open. At the top of the window are several tabs, one for each open scene. The project browser is showing a selection of assets including sound files, images, and 3D models.](https://docs-assets.developer.apple.com/published/e31f4da3e3aadabb15f50ace406f6b81/rcpro-assets%402x.png)
+![A screenshot that shows Reality Composer Pro with multiple scenes open. At the top of the window are several tabs, one for each open scene. The project browser is showing a selection of assets including sound files, images, and 3D models.](/images/com.apple.visionOS/rcpro-assets@2x.png)
 
 > **Note**: Although you can still load USDZ files and other assets directly in visionOS, RealityKit compiles assets in your Reality Composer Pro project into a binary format that loads considerably faster than loading from individual files.
 
 ##### Create Scenes Containing the Apps Entities
 
-A single Reality Composer Pro project can have multiple scenes. A *scene* is an entity hierarchy stored in the project as a `.usda` file that you can load and display in a [`RealityView`](https://developer.apple.com/documentation/RealityKit/RealityView). You can use Reality Composer’s scenes to build an entire RealityKit scene, or to store reusable entity hierarchies that you can use as building block for composing scenes at runtime — the approach Diorama uses. You can add as many different scenes to your project as you need by selecting File > New > Scene, or pressing ⌘N.
+A single Reality Composer Pro project can have multiple scenes. A *scene* is an entity hierarchy stored in the project as a `.usda` file that you can load and display in a [`RealityView`](https://developer.apple.com/documentation/realitykit/realityview). You can use Reality Composer’s scenes to build an entire RealityKit scene, or to store reusable entity hierarchies that you can use as building block for composing scenes at runtime — the approach Diorama uses. You can add as many different scenes to your project as you need by selecting File > New > Scene, or pressing ⌘N.
 
 At the top of the Reality Composer Pro window, there’s a separate tab for every scene that’s currently open. To open a scene, double-click the scene’s `.usda` file in the project browser. To edit a scene, select its tab, and make changes using the hierarchy viewer, the 3D view, and the inspector.
 
-![A screenshot showing Reality Composer Pro with multiple scenes open. At the top of the window are several tabs, one for each open scene.](https://docs-assets.developer.apple.com/published/7b08ca4b0e489767d821e0ae7b79d895/rcpro-scene-tabs%402x.png)
+![A screenshot showing Reality Composer Pro with multiple scenes open. At the top of the window are several tabs, one for each open scene.](/images/com.apple.visionOS/rcpro-scene-tabs@2x.png)
 
 ##### Add Assets to Your Scenes
 
@@ -54,14 +54,14 @@ In Reality Composer Pro, a *transform* is an empty entity that marks a point in 
 
 ##### Load a Scene at Runtime
 
-To load a Reality Composer Pro scene, use [`load(named:in:)`](https://developer.apple.com/documentation/RealityKit/Entity/load(named:in:)), passing the name of the scene you want to load and the project’s bundle. Reality Composer Pro Swift packages define a constant that provides ready access to its bundle. The constant is the name of the Reality Composer Pro project with “Bundle” appended to the end. In this case, the project is called `RealityKitContent`, so the constant is called `RealityKitContentBundle`. Here’s how Diorama loads the map table in the [`RealityView`](https://developer.apple.com/documentation/RealityKit/RealityView) initializer:
+To load a Reality Composer Pro scene, use [`load(named:in:)`](https://developer.apple.com/documentation/realitykit/entity/load(named:in:)), passing the name of the scene you want to load and the project’s bundle. Reality Composer Pro Swift packages define a constant that provides ready access to its bundle. The constant is the name of the Reality Composer Pro project with “Bundle” appended to the end. In this case, the project is called `RealityKitContent`, so the constant is called `RealityKitContentBundle`. Here’s how Diorama loads the map table in the [`RealityView`](https://developer.apple.com/documentation/realitykit/realityview) initializer:
 
 ```swift
 let entity = try await Entity.load(named: "DioramaAssembled", 
                                    in: RealityKitContent.RealityKitContentBundle)
 ```
 
-The [`load(named:in:)`](https://developer.apple.com/documentation/RealityKit/Entity/load(named:in:)) function is asynchronous when called from an asynchronous context. Because the content closure of the [`RealityView`](https://developer.apple.com/documentation/RealityKit/RealityView) initializer is asynchronous, it automatically uses the `async` version to load the scene.  Note that when using it asynchronously, you must call it using the `await` keyword.
+The [`load(named:in:)`](https://developer.apple.com/documentation/realitykit/entity/load(named:in:)) function is asynchronous when called from an asynchronous context. Because the content closure of the [`RealityView`](https://developer.apple.com/documentation/realitykit/realityview) initializer is asynchronous, it automatically uses the `async` version to load the scene.  Note that when using it asynchronously, you must call it using the `await` keyword.
 
 ##### Create the Floating View
 
@@ -71,7 +71,7 @@ Diorama adds a `PointOfInterestComponent` to a transform to display details abou
 static let markersQuery = EntityQuery(where: .has(PointOfInterestComponent.self))
 ```
 
-In the [`RealityView`](https://developer.apple.com/documentation/RealityKit/RealityView) initializer, Diorama queries to retrieve the points of interest entities and passes them to a function called `createLearnMoreView(for:)`, which creates the view and saves it for display when it’s tapped.
+In the [`RealityView`](https://developer.apple.com/documentation/realitykit/realityview) initializer, Diorama queries to retrieve the points of interest entities and passes them to a function called `createLearnMoreView(for:)`, which creates the view and saves it for display when it’s tapped.
 
 ```swift
 subscriptions.append(content.subscribe(to: ComponentEvents.DidAdd.self, componentType: PointOfInterestComponent.self, { event in
@@ -111,7 +111,7 @@ attachmentsProvider.attachments[tag] = AnyView(view)
 
 ##### Display Point of Interest Attachments
 
-Assigning a view to an attachment provider doesn’t actually display that view in the scene. The initializer for [`RealityView`](https://developer.apple.com/documentation/RealityKit/RealityView) has an optional view builder called `attachments` that’s used to specify the attachments.
+Assigning a view to an attachment provider doesn’t actually display that view in the scene. The initializer for [`RealityView`](https://developer.apple.com/documentation/realitykit/realityview) has an optional view builder called `attachments` that’s used to specify the attachments.
 
 ```swift
 ForEach(attachmentsProvider.sortedTagViewPairs, id: \.tag) { pair in
@@ -138,7 +138,7 @@ viewModel.rootEntity?.scene?.performQuery(Self.runtimeQuery).forEach { entity in
 
 ##### Create Custom Materials with Shader Graph
 
-To switch between the two different topographical maps, Diorama shows a slider that morphs the map between the two locations. To accomplish this, and to draw elevation lines on the map, the `FlatTerrain` entity in the `DioramaAssembled` scene uses a *Shader Graph material*. Shader Graph is a node-based material editor that’s built into Reality Composer Pro. Shader Graph gives you the ability to create dynamic materials that you can change at runtime. Prior to Reality Composer Pro, the only way to implement a dynamic material like this was to create a [`CustomMaterial`](https://developer.apple.com/documentation/RealityKit/CustomMaterial) and write Metal shaders to implement the necessary logic.
+To switch between the two different topographical maps, Diorama shows a slider that morphs the map between the two locations. To accomplish this, and to draw elevation lines on the map, the `FlatTerrain` entity in the `DioramaAssembled` scene uses a *Shader Graph material*. Shader Graph is a node-based material editor that’s built into Reality Composer Pro. Shader Graph gives you the ability to create dynamic materials that you can change at runtime. Prior to Reality Composer Pro, the only way to implement a dynamic material like this was to create a [`CustomMaterial`](https://developer.apple.com/documentation/realitykit/custommaterial) and write Metal shaders to implement the necessary logic.
 
 Diorama’s `DynamicTerrainMaterialEnhanced` does two things. It draws contour lines on the map based on height data stored in displacement map images, and it also offsets the vertices of the flat disk based on the same data. By interpolating between two different height maps, the app achieves a smooth transition between the two different sets of height data.
 
@@ -150,7 +150,7 @@ To change the map, `DynamicTerrainMaterialEnhanced` has a promoted input called 
 
 > ❗ **Important**: Shader Graph material parameters are case-sensitive. If the capitalization is wrong, your code won’t actually update the material.
 
-The app sets the value of the input parameter in a function called `handleMaterial()` that the slider’s `.onChanged` closure calls. That function retrieves the [`ShaderGraphMaterial`](https://developer.apple.com/documentation/RealityKit/ShaderGraphMaterial) from the terrain entity and calls [`setParameter(name:value:)`](https://developer.apple.com/documentation/RealityKit/ShaderGraphMaterial/setParameter(name:value:)) on it.
+The app sets the value of the input parameter in a function called `handleMaterial()` that the slider’s `.onChanged` closure calls. That function retrieves the [`ShaderGraphMaterial`](https://developer.apple.com/documentation/realitykit/shadergraphmaterial) from the terrain entity and calls [`setParameter(name:value:)`](https://developer.apple.com/documentation/realitykit/shadergraphmaterial/setparameter(name:value:)) on it.
 
 ```swift
 private func handleMaterial() {

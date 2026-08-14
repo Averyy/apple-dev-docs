@@ -113,7 +113,7 @@ A `NULL` callback specifies that the default object callback substitutes, except
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../Swift/BitwiseCopyable.md)
+- [BitwiseCopyable](../swift/bitwisecopyable.md)
 
 ## See Also
 

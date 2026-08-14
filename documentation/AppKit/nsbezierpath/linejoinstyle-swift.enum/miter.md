@@ -18,7 +18,7 @@ case miter
 
 Here is an example of the appearance of this style:
 
-![Diagram that shows the miter line join style.](https://docs-assets.developer.apple.com/published/24a8040812f1885bb21312a7ca550f6c/media-3670930%402x.png)
+![Diagram that shows the miter line join style.](/images/com.apple.appkit/media-3670930@2x.png)
 
 ## See Also
 

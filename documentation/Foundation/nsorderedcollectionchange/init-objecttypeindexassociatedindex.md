@@ -31,7 +31,7 @@ NSOrderedCollectionDifference *diff = [[NSOrderedCollectionDifference alloc] ini
 ]];
 ```
 
-A move pair can have a different `object` in its removal and insertion changes, which can imply that the change represents moving and changing or replacing an element. Diffs that [`controller(_:didChangeContentWith:)`](https://developer.apple.com/documentation/CoreData/NSFetchedResultsControllerDelegate/controller(_:didChangeContentWith:)-5ullb) passes to delegates of [`NSFetchedResultsController`](https://developer.apple.com/documentation/CoreData/NSFetchedResultsController) communicate that an object changed even when its position in the results is unaffected.
+A move pair can have a different `object` in its removal and insertion changes, which can imply that the change represents moving and changing or replacing an element. Diffs that [`controller(_:didChangeContentWith:)`](https://developer.apple.com/documentation/coredata/nsfetchedresultscontrollerdelegate/controller(_:didchangecontentwith:)-5ullb) passes to delegates of [`NSFetchedResultsController`](https://developer.apple.com/documentation/coredata/nsfetchedresultscontroller) communicate that an object changed even when its position in the results is unaffected.
 
 > **Note**:  Don’t ignore a move when the indexes of its changes are the same. The calculated difference from `@[@”A”, @”B”, @”C”]` to `@[@”C”, @”B”]` may legitimately produce a diff where the change removes the object at index 0 and the object at index 1 moves to index 1. Ignoring the move produces the incorrect result `@[@”B”, @”C”]`.
 

@@ -25,8 +25,8 @@ This function, together with the function `PMPrintSettingsSetValue`, makes it po
 ## Parameters
 
 - `printSettings`: The print settings object you want to access.
-- `key`: A string constant that specifies the key for the desired setting. Some keys are currently defined in  ; other keys are user-defined.
-- `value`: A pointer to your Core Foundation variable. On return, the variable refers to a Core Foundation object that corresponds to the specified key. If no corresponding object exists, the variable is set to  .
+- `key`: A string constant that specifies the key for the desired setting. Some keys are currently defined in `PMTicket.h`; other keys are user-defined.
+- `value`: A pointer to your Core Foundation variable. On return, the variable refers to a Core Foundation object that corresponds to the specified key. If no corresponding object exists, the variable is set to `NULL`.
 
 ## See Also
 

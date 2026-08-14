@@ -7,7 +7,6 @@ Creates an MMS part with the provided values.
 
 **Availability**:
 - iOS 26.0+
-- iPadOS 26.0+
 
 ## Declaration
 
@@ -18,7 +17,7 @@ init(data: Data, contentType: UTType?, contentID: String, disposition: MMSPartCo
 ## Parameters
 
 - `data`: The raw data of the MMS part.
-- `contentType`: The content type of the MMS part, as a [`UTType`](https://developer.apple.com/documentation/UniformTypeIdentifiers/UTType-swift.struct).
+- `contentType`: The content type of the MMS part, as a [`UTType`](https://developer.apple.com/documentation/uniformtypeidentifiers/uttype-swift.struct).
 - `contentID`: The identifier of the MMS part.
 - `disposition`: The disposition of the MMS part, indicating whether the part renders inline or as an attachment.
 - `fileName`: The file name of the MMS part.

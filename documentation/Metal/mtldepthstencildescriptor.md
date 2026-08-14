@@ -23,7 +23,7 @@ class MTLDepthStencilDescriptor
 
 An [`MTLDepthStencilDescriptor`](mtldepthstencildescriptor.md) instance is used to define a specific configuration of the depth and stencil stages of a rendering pipeline. To create an [`MTLDepthStencilDescriptor`](mtldepthstencildescriptor.md) instance, use standard allocation and initialization techniques.
 
-To enable writing the depth value to a depth attachment, set the depthWriteEnabled property to [`true`](https://developer.apple.com/documentation/Swift/true).
+To enable writing the depth value to a depth attachment, set the depthWriteEnabled property to [`true`](https://developer.apple.com/documentation/swift/true).
 
 The depthCompareFunction property specifies how the depth test is performed. If a fragment’s depth value fails the depth test, the fragment is discarded. [`MTLCompareFunction.less`](mtlcomparefunction/less.md) is a commonly used value for [`depthCompareFunction`](mtldepthstencildescriptor/depthcomparefunction.md), because fragment values that are farther away from the viewer than the pixel depth value (a previously written fragment) fail the depth test and are considered occluded by the earlier depth value.
 
@@ -48,15 +48,15 @@ The [`frontFaceStencil`](mtldepthstencildescriptor/frontfacestencil.md) and [`ba
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCopying](../Foundation/NSCopying.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCopying](../foundation/nscopying.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

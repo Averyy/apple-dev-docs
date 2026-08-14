@@ -8,7 +8,7 @@ Connect to out-of-process audio units using the Xcode debugger.
 
 Beginning with macOS 11, the system loads audio units into a separate process that depends on the architecture or host preference. This increases stability and security by isolating audio units from their host app, and allows loading x86 audio units into an Apple silicon host app.
 
-Attaching to system processes requires disabling system integrity protection in macOS before debugging. For more information, see [`Disabling and Enabling System Integrity Protection`](https://developer.apple.com/documentation/Security/disabling-and-enabling-system-integrity-protection).
+Attaching to system processes requires disabling system integrity protection in macOS before debugging. For more information, see [`Disabling and Enabling System Integrity Protection`](https://developer.apple.com/documentation/security/disabling-and-enabling-system-integrity-protection).
 
 ##### Attach to the Hosting Service
 
@@ -35,9 +35,9 @@ Debugging is generally a seamless process, but if you encounter issues, consider
 
 ## See Also
 
-- [Creating an audio unit extension](../AVFAudio/creating-an-audio-unit-extension.md)
+- [Creating an audio unit extension](../avfaudio/creating-an-audio-unit-extension.md)
   Build an extension by using an Xcode template.
-- [Creating custom audio effects](../AVFAudio/creating-custom-audio-effects.md)
+- [Creating custom audio effects](../avfaudio/creating-custom-audio-effects.md)
   Add custom audio-effect processing to apps like Logic Pro X and GarageBand by creating Audio Unit (AU) plug-ins.
 - [Incorporating Audio Effects and Instruments](incorporating-audio-effects-and-instruments.md)
   Add custom audio processing and MIDI instruments to your app by hosting Audio Unit (AU) plug-ins.

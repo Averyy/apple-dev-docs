@@ -20,7 +20,7 @@ var invalidatedSupplementaryIndexPaths: [String : [IndexPath]]? { get }
 
 #### Discussion
 
-The keys in this dictionary are the element kind strings of the invalid supplementary views. The value for each key is an array of [`NSIndexPath`](https://developer.apple.com/documentation/Foundation/NSIndexPath) objects indicating which specific supplementary views have layout changes.
+The keys in this dictionary are the element kind strings of the invalid supplementary views. The value for each key is an array of [`NSIndexPath`](https://developer.apple.com/documentation/foundation/nsindexpath) objects indicating which specific supplementary views have layout changes.
 
 ## See Also
 

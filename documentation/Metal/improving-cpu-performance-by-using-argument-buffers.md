@@ -91,7 +91,7 @@ Use the [`argumentBuffersSupport`](mtldevice/argumentbufferssupport.md) property
 
 **Common Tier 1 and Tier 2 Limits**
 
-On iOS and tvOS, the maximum number of unique samplers per app is `96`, and for macOS, `1024` or greater, depending on the device and OS version.` `These limits are only applicable to samplers that have their [`supportArgumentBuffers`](mtlsamplerdescriptor/supportargumentbuffers.md) property set to [`true`](https://developer.apple.com/documentation/Swift/true). Use the [`MTLDevice`](mtldevice.md)`.`[`maxArgumentBufferSamplerCount`](mtldevice/maxargumentbuffersamplercount.md) property to get the exact maximum number of unique samplers per app for a device.
+On iOS and tvOS, the maximum number of unique samplers per app is `96`, and for macOS, `1024` or greater, depending on the device and OS version.` `These limits are only applicable to samplers that have their [`supportArgumentBuffers`](mtlsamplerdescriptor/supportargumentbuffers.md) property set to [`true`](https://developer.apple.com/documentation/swift/true). Use the [`MTLDevice`](mtldevice.md)`.`[`maxArgumentBufferSamplerCount`](mtldevice/maxargumentbuffersamplercount.md) property to get the exact maximum number of unique samplers per app for a device.
 
 Metal considers an [`MTLSamplerState`](mtlsamplerstate.md) instance unique if the configuration of its originating [`MTLSamplerDescriptor`](mtlsamplerdescriptor.md) properties is unique. For example, if two samplers have equal [`minFilter`](mtlsamplerdescriptor/minfilter.md) values but different [`magFilter`](mtlsamplerdescriptor/magfilter.md) values, Metal considers them different instances.
 

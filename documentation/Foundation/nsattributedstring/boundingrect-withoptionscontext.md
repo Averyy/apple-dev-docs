@@ -32,12 +32,12 @@ In iOS 7 and later, this method returns fractional sizes (in the `size` componen
 
 ##### Special Considerations
 
-To calculate the bounding rectangle, this method uses the baseline origin by default, so it behaves as a single line. To render the string in multiple lines, specify [`usesLineFragmentOrigin`](https://developer.apple.com/documentation/UIKit/NSStringDrawingOptions/usesLineFragmentOrigin) in `options`.
+To calculate the bounding rectangle, this method uses the baseline origin by default, so it behaves as a single line. To render the string in multiple lines, specify [`usesLineFragmentOrigin`](https://developer.apple.com/documentation/uikit/nsstringdrawingoptions/useslinefragmentorigin) in `options`.
 
 ## Parameters
 
 - `size`: The width and height constraints to apply when computing the string’s bounding rectangle.
-- `options`: Additional drawing options to apply to the string during rendering. For a list of possible values, see [`NSStringDrawingOptions`](https://developer.apple.com/documentation/UIKit/NSStringDrawingOptions).
+- `options`: Additional drawing options to apply to the string during rendering. For a list of possible values, see [`NSStringDrawingOptions`](https://developer.apple.com/documentation/uikit/nsstringdrawingoptions).
 - `context`: A context object with information about how to adjust the font tracking and scaling information. On return, the specified object contains information about the actual values used to render the string. This parameter may be `nil`.
 
 ## See Also

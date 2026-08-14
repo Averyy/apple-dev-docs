@@ -20,7 +20,7 @@ init(id: Int, image: CVPixelBuffer)
 ## Parameters
 
 - `id`: A unique identifier for the sample.  This `id` *must* be in the domain [0, 2147483647].
-- `image`: The image data in one of the following formats: - [`kCVPixelFormatType_32BGRA`](https://developer.apple.com/documentation/CoreVideo/kCVPixelFormatType_32BGRA) - [`kCVPixelFormatType_32ARGB`](https://developer.apple.com/documentation/CoreVideo/kCVPixelFormatType_32ARGB)
+- `image`: The image data in one of the following formats: - [`kCVPixelFormatType_32BGRA`](https://developer.apple.com/documentation/corevideo/kcvpixelformattype_32bgra) - [`kCVPixelFormatType_32ARGB`](https://developer.apple.com/documentation/corevideo/kcvpixelformattype_32argb)
 
 
 ---

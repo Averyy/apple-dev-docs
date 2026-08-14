@@ -42,7 +42,7 @@ The following table lists the encoding information to use when creating media fi
 
 | Media type | Recommended encoding |
 | --- | --- |
-| Video assets | Video codec: H.264 High Profile ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) Bit rate: 160 kpbs at up to 30 fps ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) Full screen resolution: 208 x 260 in portrait orientation ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) 16:9 resolution: 320 x 180 in landscape orientation ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) Audio bit rate: 32 kpbs stereo |
+| Video assets | Video codec: H.264 High Profile ![None](/images/com.apple.watchkit/spacer.png) Bit rate: 160 kpbs at up to 30 fps ![None](/images/com.apple.watchkit/spacer.png) Full screen resolution: 208 x 260 in portrait orientation ![None](/images/com.apple.watchkit/spacer.png) 16:9 resolution: 320 x 180 in landscape orientation ![None](/images/com.apple.watchkit/spacer.png) Audio bit rate: 32 kpbs stereo |
 | Audio-only assets | Bit rate: 32 kbps stereo |
 
 ##### Interface Builder Configuration Options
@@ -74,12 +74,12 @@ Xcode lets you configure information about your movie interface object in your s
 ### Inherits From
 - [WKInterfaceObject](wkinterfaceobject.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

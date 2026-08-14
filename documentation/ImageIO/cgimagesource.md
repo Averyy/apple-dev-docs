@@ -24,7 +24,7 @@ class CGImageSource
 
 Use a [`CGImageSource`](cgimagesource.md) type to read data efficiently for most image file formats. The image source object manages the data buffers needed to load the image data and performs any operations on that data to turn it into a usable image. For example, it decompresses data stored in a compressed format. You can also use an image source to fetch or create thumbnail images and access metadata stored with the image.
 
-Create an image source object from a [`CFURL`](https://developer.apple.com/documentation/CoreFoundation/CFURL), [`CFData`](https://developer.apple.com/documentation/CoreFoundation/CFData), or [`CGDataProvider`](https://developer.apple.com/documentation/CoreGraphics/CGDataProvider) data type. The image source object reads data from the specified type and extracts the image information for you.
+Create an image source object from a [`CFURL`](https://developer.apple.com/documentation/corefoundation/cfurl), [`CFData`](https://developer.apple.com/documentation/corefoundation/cfdata), or [`CGDataProvider`](https://developer.apple.com/documentation/coregraphics/cgdataprovider) data type. The image source object reads data from the specified type and extracts the image information for you.
 
 For more information, see [`Image I/O Programming Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/GraphicsImaging/Conceptual/ImageIOGuide/imageio_intro/ikpg_intro.html#//apple_ref/doc/uid/TP40005462).
 
@@ -96,8 +96,8 @@ For more information, see [`Image I/O Programming Guide`](https://developer.appl
 ## Relationships
 
 ### Conforms To
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
 
 ## See Also
 

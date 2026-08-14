@@ -12,7 +12,7 @@ You can test approving and declining Ask to Buy purchases in the Xcode testing e
 
 ##### Perform Basic Setup
 
-Before you can begin testing in Xcode, complete the steps in [`Setting up StoreKit Testing in Xcode`](https://developer.apple.com/documentation/Xcode/setting-up-storekit-testing-in-xcode), to create a StoreKit configuration file and enable StoreKit testing in Xcode.
+Before you can begin testing in Xcode, complete the steps in [`Setting up StoreKit Testing in Xcode`](https://developer.apple.com/documentation/xcode/setting-up-storekit-testing-in-xcode), to create a StoreKit configuration file and enable StoreKit testing in Xcode.
 
 ##### Enable Ask to Buy for Testing
 
@@ -42,7 +42,7 @@ To test declining a purchase, run your app in the Xcode environment and follow t
 4. Control-click the transaction and select Decline.
 5. In the Xcode StoreKit transaction manager, verify that the state is now Ask to Buy Declined. Your app doesn’t receive a transaction because you declined Ask to Buy.
 
-For more information about using the transaction manager, see [`Testing in-app purchases with StoreKit transaction manager in Xcode`](https://developer.apple.com/documentation/Xcode/testing-in-app-purchases-with-storeKit-transaction-manager-in-code).
+For more information about using the transaction manager, see [`Testing in-app purchases with StoreKit transaction manager in Xcode`](https://developer.apple.com/documentation/xcode/testing-in-app-purchases-with-storekit-transaction-manager-in-code).
 
 ##### Reset or Rerun the Test
 

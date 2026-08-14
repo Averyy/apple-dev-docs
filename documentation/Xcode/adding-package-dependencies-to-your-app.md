@@ -14,11 +14,11 @@ Xcode comes with built-in support for source control accounts and makes it easy 
 
 To add a package dependency to your Xcode project, select File > Add Package Dependency and enter its source control repository URL. You can also navigate to your target’s General pane, and in the “Frameworks, Libraries, and Embedded Content” section, click the + button, select Add Other, and choose Add Package Dependency.
 
-![Screenshot showing the dialogue for adding content to the “Frameworks, Libraries, and Embedded Content” with Add Package Dependency… selected.](https://docs-assets.developer.apple.com/published/9e53f203a6a4c3e6fcc05ab6a52ad4bc/adding-package-dependencies-to-your-app-1%402x.png)
+![Screenshot showing the dialogue for adding content to the “Frameworks, Libraries, and Embedded Content” with Add Package Dependency… selected.](/images/com.apple.Xcode/adding-package-dependencies-to-your-app-1@2x.png)
 
 Instead of adding a source control repository URL, you can search for a package on [`GitHub`](https://developer.apple.comhttps://github.com) or [`GitHub Enterprise`](https://developer.apple.comhttps://github.com/enterprise). Add your GitHub or GitHub Enterprise account in Xcode’s settings, and a list of package repositories appears as you type. The following screenshot shows a list of repositories for the search term `ExamplePackage` for a user who added their Git provider in Xcode’s settings.
 
-![Screenshot showing the dialogue to add a package dependency. The user has entered ExamplePackage in the search field.](https://docs-assets.developer.apple.com/published/5912b3a4fb5c25545fe107028c8be837/adding-package-dependencies-to-your-app-2%402x.png)
+![Screenshot showing the dialogue to add a package dependency. The user has entered ExamplePackage in the search field.](/images/com.apple.Xcode/adding-package-dependencies-to-your-app-2@2x.png)
 
 If you’ve added a source control account in Xcode’s settings and you haven’t yet entered a search term, the list contains package repositories from:
 
@@ -87,7 +87,7 @@ You can’t edit the content of your package dependencies directly. If you want 
 
 ##### Coordinate Package Versions Across Your Team
 
-When collaborating on a project, make sure everyone uses the same version of a package dependency. When you add a package dependency to a project, Xcode creates the `Package.resolved` file. It lists the specific Git commits to which each package dependency resolves and the [`checksum`](https://developer.apple.com/documentation/PackageDescription/Target/checksum) of each binary dependency. Commit this file in Git to ensure that everyone is using the same version of a package dependency.
+When collaborating on a project, make sure everyone uses the same version of a package dependency. When you add a package dependency to a project, Xcode creates the `Package.resolved` file. It lists the specific Git commits to which each package dependency resolves and the [`checksum`](https://developer.apple.com/documentation/packagedescription/target/checksum) of each binary dependency. Commit this file in Git to ensure that everyone is using the same version of a package dependency.
 
 > 💡 **Tip**: You can find the `Package.resolved` file inside your .`xcodeproj` directory at *[appName]*`.xcodeproj/project.workspace/xcshareddata/swiftpm/Package.resolved`.
 
@@ -99,15 +99,15 @@ To remove a package dependency from your Xcode project:
 2. Select the package from the list of package dependencies.
 3. Click the - button from the bottom of the list and click Remove to confirm.
 
-![Screenshot showing the confirmation dialogue that appears when removing a package dependency.](https://docs-assets.developer.apple.com/published/02b97a57423502e8cfac9b1a5dcf6193/adding-package-dependencies-to-your-app-3%402x.png)
+![Screenshot showing the confirmation dialogue that appears when removing a package dependency.](/images/com.apple.Xcode/adding-package-dependencies-to-your-app-3@2x.png)
 
 ## See Also
 
-- [Managing your app’s information property list values](../BundleResources/managing-your-app-s-information-property-list.md)
+- [Managing your app’s information property list values](../bundleresources/managing-your-app-s-information-property-list.md)
   Customize the information property list values for your app using Xcode.
-- [Creating a Mac version of your iPad app](../UIKit/creating-a-mac-version-of-your-ipad-app.md)
+- [Creating a Mac version of your iPad app](../uikit/creating-a-mac-version-of-your-ipad-app.md)
   Bring your iPad app to macOS with Mac Catalyst.
-- [Setting up a watchOS project](../watchOS-Apps/setting-up-a-watchos-project.md)
+- [Setting up a watchOS project](../watchos-apps/setting-up-a-watchos-project.md)
   Create a new watchOS project or add a watch target to an existing iOS project.
 - [Embedding a command-line tool in a sandboxed app](embedding-a-helper-tool-in-a-sandboxed-app.md)
   Add a command-line tool to a sandboxed app’s Xcode project so the resulting app can run it as a helper tool.

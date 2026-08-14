@@ -21,11 +21,11 @@ class func energyFormatterUnit(from unit: HKUnit) -> EnergyFormatter.Unit
 
 #### Return Value
 
-An energy formatter unit value. For a list of possible energy formatter unit values, see [`EnergyFormatter.Unit`](https://developer.apple.com/documentation/Foundation/EnergyFormatter/Unit).
+An energy formatter unit value. For a list of possible energy formatter unit values, see [`EnergyFormatter.Unit`](https://developer.apple.com/documentation/foundation/energyformatter/unit).
 
 ## Parameters
 
-- `unit`: A valid HealthKit unit object. If the unit is not an energy-type unit, this method throws an exception ([`invalidArgumentException`](https://developer.apple.com/documentation/Foundation/NSExceptionName/invalidArgumentException)).
+- `unit`: A valid HealthKit unit object. If the unit is not an energy-type unit, this method throws an exception ([`invalidArgumentException`](https://developer.apple.com/documentation/foundation/nsexceptionname/invalidargumentexception)).
 
 ## See Also
 

@@ -26,7 +26,7 @@ An initialized web view, or `nil` if the view couldn’t be initialized.
 
 This method is the designated initializer for the class. Use this method to create a web view that requires custom configuration. For example, use it when you need to specify custom cookies or content filters for the web content.
 
-To create a web view with default configuration values, call the inherited [`init(frame:)`](https://developer.apple.com/documentation/UIKit/UIView/init(frame:)) method.
+To create a web view with default configuration values, call the inherited [`init(frame:)`](https://developer.apple.com/documentation/uikit/uiview/init(frame:)) method.
 
 ## Parameters
 

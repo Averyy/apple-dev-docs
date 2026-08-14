@@ -20,7 +20,7 @@ func contentOffsetForSegment(at segment: Int) -> CGSize
 
 #### Return Value
 
-The offset (as a [`CGSize`](https://developer.apple.com/documentation/CoreFoundation/CGSize) structure) from the origin of the segment at which to draw the segment’s content.
+The offset (as a [`CGSize`](https://developer.apple.com/documentation/corefoundation/cgsize) structure) from the origin of the segment at which to draw the segment’s content.
 
 ## Parameters
 

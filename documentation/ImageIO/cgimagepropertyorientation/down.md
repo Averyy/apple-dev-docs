@@ -26,7 +26,7 @@ The (x,y) pixel coordinates of the origin point (0,0) represent the rightmost co
 
 If an image is encoded with this orientation, then displayed by software unaware of orientation metadata, the image appears rotated 180°.
 
-![To correct an image with down orientation for display, rotate it 180°.](https://docs-assets.developer.apple.com/published/1530f2c9454d2a3fb9e99de9bee4fe01/media-2948290%402x.png)
+![To correct an image with down orientation for display, rotate it 180°.](/images/com.apple.imageio/media-2948290@2x.png)
 
 ## See Also
 

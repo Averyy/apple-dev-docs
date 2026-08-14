@@ -23,9 +23,9 @@ Because this sample app uses ARKit hand tracking on visionOS, drawing features a
 
 ## See Also
 
-- [Hello World](../visionOS/World.md)
+- [Hello World](../visionos/world.md)
   Use windows, volumes, and immersive spaces to teach people about the Earth.
-- [Enabling video reflections in an immersive environment](../visionOS/enabling-video-reflections-in-an-immersive-environment.md)
+- [Enabling video reflections in an immersive environment](../visionos/enabling-video-reflections-in-an-immersive-environment.md)
   Create a more immersive experience by adding video reflections in a custom environment.
 - [Generating interactive geometry with RealityKit](generating-interactive-geometry-with-realitykit.md)
   Create an interactive mesh with low-level mesh and low-level texture.

@@ -55,7 +55,7 @@ You indicate which immersive space to open by providing one of the following:
 
 The call is asynchronous and returns after presenting the space or if an error occurs. You can check for errors by inspecting the call’s return value, which is of type [`OpenImmersiveSpaceAction.Result`](openimmersivespaceaction/result.md). For example, the call returns an error if you already have an immersive space open, because the system enables only one space to be open at a time.
 
-If you provide a value when you open the space, the scene’s trailing closure receives a binding to the value that you provide. For best performance, use lightweight data for the presentation value. For structured model values that conform to [`Identifiable`](https://developer.apple.com/documentation/Swift/Identifiable), the value’s identifier makes a good presentation value, like the `planet.ID` value in the above code.
+If you provide a value when you open the space, the scene’s trailing closure receives a binding to the value that you provide. For best performance, use lightweight data for the presentation value. For structured model values that conform to [`Identifiable`](https://developer.apple.com/documentation/swift/identifiable), the value’s identifier makes a good presentation value, like the `planet.ID` value in the above code.
 
 ## See Also
 

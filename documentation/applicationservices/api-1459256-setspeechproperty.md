@@ -28,7 +28,7 @@ See [`Speech-Channel Properties`](speech_synthesis_manager/speech-channel_proper
 
 - `chan`: The speech channel whose property to set.
 - `property`: The speech-channel property to set to the specified value.
-- `object`: The value to which the specified speech-channel property should be set. For some properties, this value can be  .
+- `object`: The value to which the specified speech-channel property should be set. For some properties, this value can be `NULL`.
 
 ## See Also
 

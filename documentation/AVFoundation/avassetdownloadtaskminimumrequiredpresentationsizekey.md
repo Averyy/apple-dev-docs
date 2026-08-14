@@ -20,7 +20,7 @@ let AVAssetDownloadTaskMinimumRequiredPresentationSizeKey: String
 
 #### Discussion
 
-By default, a download task selects the variant with the largest media presentation size. To download a variant of a particular size, provide a [`CGSize`](https://developer.apple.com/documentation/CoreFoundation/CGSize) value for this key.
+By default, a download task selects the variant with the largest media presentation size. To download a variant of a particular size, provide a [`CGSize`](https://developer.apple.com/documentation/corefoundation/cgsize) value for this key.
 
 ## See Also
 

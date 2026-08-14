@@ -52,7 +52,7 @@ See also NSAppleScript Additions Reference in the Application Kit framework, whi
   Executes an Apple event in the context of the receiver, as a means of allowing the application to invoke a handler in the script.
 ### Constants
 - [Error Dictionary Keys](error-dictionary-keys.md)
-  If the result of [`init(contentsOf:error:)`](nsapplescript/init(contentsof:error:).md), [`compileAndReturnError(_:)`](nsapplescript/compileandreturnerror(_:).md), [`executeAndReturnError(_:)`](nsapplescript/executeandreturnerror(_:).md), or [`executeAppleEvent(_:error:)`](nsapplescript/executeappleevent(_:error:).md), signals failure (`nil`, [`false`](https://developer.apple.com/documentation/Swift/false), `nil`, or `nil`, respectively), a pointer to an autoreleased dictionary is put at the location pointed to by the error parameter. The error info dictionary may contain entries that use any combination of the following keys, including no entries at all.
+  If the result of [`init(contentsOf:error:)`](nsapplescript/init(contentsof:error:).md), [`compileAndReturnError(_:)`](nsapplescript/compileandreturnerror(_:).md), [`executeAndReturnError(_:)`](nsapplescript/executeandreturnerror(_:).md), or [`executeAppleEvent(_:error:)`](nsapplescript/executeappleevent(_:error:).md), signals failure (`nil`, [`false`](https://developer.apple.com/documentation/swift/false), `nil`, or `nil`, respectively), a pointer to an autoreleased dictionary is put at the location pointed to by the error parameter. The error info dictionary may contain entries that use any combination of the following keys, including no entries at all.
 ### Instance Properties
 - [var richTextSource: NSAttributedString?](nsapplescript/richtextsource.md)
   Returns the syntax-highlighted source code of the receiver if the receiver has been compiled and its source code is available.
@@ -62,15 +62,15 @@ See also NSAppleScript Additions Reference in the Application Kit framework, whi
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
 - [NSCopying](nscopying.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 
 ---

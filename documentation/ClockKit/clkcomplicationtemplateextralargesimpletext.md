@@ -18,7 +18,7 @@ class CLKComplicationTemplateExtraLargeSimpleText
 
 This template belongs to the [`CLKComplicationFamily.extraLarge`](clkcomplicationfamily/extralarge.md) family.
 
-![A diagram showing the layout of the extra large text complication. The diagram shows a small amount of text.](https://docs-assets.developer.apple.com/published/41b9024d6d7fe7c26ff2c2509832a978/media-2880722%402x.png)
+![A diagram showing the layout of the extra large text complication. The diagram shows a small amount of text.](/images/com.apple.clockkit/media-2880722@2x.png)
 
 ## Topics
 
@@ -34,13 +34,13 @@ This template belongs to the [`CLKComplicationFamily.extraLarge`](clkcomplicatio
 ### Inherits From
 - [CLKComplicationTemplate](clkcomplicationtemplate.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCopying](../Foundation/NSCopying.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCopying](../foundation/nscopying.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

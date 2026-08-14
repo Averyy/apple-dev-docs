@@ -32,8 +32,8 @@ CGPoint positionInScene = [node.scene convertPoint:node.position fromNode:node.p
 
 One situation where you need to perform coordinate conversions is when you perform event handling. Mouse and touch events need to be converted from window coordinates to view coordinates, and from there into the scene. To simplify the code you need to write, SpriteKit adds a few convenience methods:
 
-- In iOS, use the [`location(in:)`](https://developer.apple.com/documentation/UIKit/UITouch/location(in:)-44h4k) and [`previousLocation(in:)`](https://developer.apple.com/documentation/UIKit/UITouch/previousLocation(in:)-ea29) on [`UITouch`](https://developer.apple.com/documentation/UIKit/UITouch) objects to convert a touch location into a node’s coordinate system.
-- In macOS, use the [`location(in:)`](https://developer.apple.com/documentation/AppKit/NSEvent/location(in:)) method on [`NSEvent`](https://developer.apple.com/documentation/AppKit/NSEvent) objects to convert a mouse event into a node’s coordinate system.
+- In iOS, use the [`location(in:)`](https://developer.apple.com/documentation/uikit/uitouch/location(in:)-44h4k) and [`previousLocation(in:)`](https://developer.apple.com/documentation/uikit/uitouch/previouslocation(in:)-ea29) on [`UITouch`](https://developer.apple.com/documentation/uikit/uitouch) objects to convert a touch location into a node’s coordinate system.
+- In macOS, use the [`location(in:)`](https://developer.apple.com/documentation/appkit/nsevent/location(in:)) method on [`NSEvent`](https://developer.apple.com/documentation/appkit/nsevent) objects to convert a mouse event into a node’s coordinate system.
 
 ## See Also
 

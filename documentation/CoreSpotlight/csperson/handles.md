@@ -20,7 +20,7 @@ var handles: [String] { get }
 
 #### Discussion
 
-Contact handles can include phone numbers, email addresses, and URLs. For additional contact handles, see Metadata Keys in [`CNContact`](https://developer.apple.com/documentation/Contacts/CNContact).
+Contact handles can include phone numbers, email addresses, and URLs. For additional contact handles, see Metadata Keys in [`CNContact`](https://developer.apple.com/documentation/contacts/cncontact).
 
 ## See Also
 

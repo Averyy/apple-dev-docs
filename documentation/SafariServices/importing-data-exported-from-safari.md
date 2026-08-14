@@ -123,7 +123,7 @@ The `marketplace_lookup` object contains these keys:
 - **`macos_extension_bundle_identifier`**: A string that, if present, is the bundle identifier of the Safari extension on macOS corresponding with this Safari extension on iOS.
 - **`macos_app_bundle_identifier`**: A string that, if present, is the bundle identifier of the macOS app corresponding with the iOS app that hosts this Safari extension.
 
-For more information on bundle identifiers, see [`CFBundleIdentifier`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/CFBundleIdentifier).
+For more information on bundle identifiers, see [`CFBundleIdentifier`](https://developer.apple.com/documentation/bundleresources/information-property-list/cfbundleidentifier).
 
 ## See Also
 

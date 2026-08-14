@@ -20,7 +20,7 @@ static let userActivityType: UIApplication.LaunchOptionsKey
 
 #### Discussion
 
-This key is used in the subdictionary which is the value of [`shortcutItem`](uiapplication/launchoptionskey/shortcutitem.md). The value of this key is an [`NSString`](https://developer.apple.com/documentation/Foundation/NSString) object identifying the activity type.
+This key is used in the subdictionary which is the value of [`shortcutItem`](uiapplication/launchoptionskey/shortcutitem.md). The value of this key is an [`NSString`](https://developer.apple.com/documentation/foundation/nsstring) object identifying the activity type.
 
 ## See Also
 

@@ -31,7 +31,7 @@ Metal uses the values `[0,0,0,1]` as the bottom row of the `4x4` matrix.
 ## Relationships
 
 ### Conforms To
-- [Sendable](../Swift/Sendable.md)
+- [Sendable](../swift/sendable.md)
 
 ## See Also
 

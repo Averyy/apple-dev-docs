@@ -21,9 +21,9 @@ let kVTCompressionPropertyKey_RealTime: CFString
 
 #### Discussion
 
-For offline compression, clients may set this property to [`kCFBooleanFalse`](https://developer.apple.com/documentation/CoreFoundation/kCFBooleanFalse), which indicates that it is OK for the video encoder to work slower than real time in order to produce a better result.
+For offline compression, clients may set this property to [`kCFBooleanFalse`](https://developer.apple.com/documentation/corefoundation/kcfbooleanfalse), which indicates that it is OK for the video encoder to work slower than real time in order to produce a better result.
 
-For real-time compression, clients may set this property to [`kCFBooleanTrue`](https://developer.apple.com/documentation/CoreFoundation/kCFBooleanTrue) to recommend that encoding stay timely.
+For real-time compression, clients may set this property to [`kCFBooleanTrue`](https://developer.apple.com/documentation/corefoundation/kcfbooleantrue) to recommend that encoding stay timely.
 
 By default, this property is `NULL`, indicating unknown.
 

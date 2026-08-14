@@ -19,7 +19,7 @@ func setRootTemplate(_ rootTemplate: CPTemplate, animated: Bool)
 ## Parameters
 
 - `rootTemplate`: The root template. Replaces the current [`rootTemplate`](cpinterfacecontroller/roottemplate.md), if one exists.
-- `animated`: Set to [`true`](https://developer.apple.com/documentation/Swift/true) to animate the presentation of the root template; ignored if there isn’t a current [`rootTemplate`](cpinterfacecontroller/roottemplate.md).
+- `animated`: Set to [`true`](https://developer.apple.com/documentation/swift/true) to animate the presentation of the root template; ignored if there isn’t a current [`rootTemplate`](cpinterfacecontroller/roottemplate.md).
 
 ## See Also
 

@@ -23,7 +23,7 @@ let kVTPixelTransferPropertyKey_DestinationICCProfile: CFString
 
 Specifying this value may lead to performance degradation, as a color matching operation may need to be performed between the source and the destination.
 
-See [`kCMFormatDescriptionExtension_ICCProfile`](https://developer.apple.com/documentation/CoreMedia/kCMFormatDescriptionExtension_ICCProfile) in `CMFormatDescription.h` for possible values.
+See [`kCMFormatDescriptionExtension_ICCProfile`](https://developer.apple.com/documentation/coremedia/kcmformatdescriptionextension_iccprofile) in `CMFormatDescription.h` for possible values.
 
 ## See Also
 

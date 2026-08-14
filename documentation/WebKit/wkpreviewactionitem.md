@@ -26,8 +26,8 @@ protocol WKPreviewActionItem : UIPreviewActionItem
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [UIPreviewActionItem](../UIKit/UIPreviewActionItem.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [UIPreviewActionItem](../uikit/uipreviewactionitem.md)
 
 ## See Also
 

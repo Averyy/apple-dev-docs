@@ -21,7 +21,7 @@ class var luminosity: CIBlendKernel { get }
 
 #### Discussion
 
-![The result of using the luminosity blend kernel (background image is top left, foreground image is bottom left)](https://docs-assets.developer.apple.com/published/1aeeb82cff8d3961d5d53c5bb1f7e2d9/media-2926875%402x.png)
+![The result of using the luminosity blend kernel (background image is top left, foreground image is bottom left)](/images/com.apple.coreimage/media-2926875@2x.png)
 
 ## See Also
 

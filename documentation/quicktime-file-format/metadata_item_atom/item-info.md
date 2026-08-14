@@ -7,7 +7,7 @@ An optional item information atom.
 
 #### Overview
 
-See [`Item information atom ('itif')`](item_information_atom.md).
+See [`Item information atom`](item_information_atom.md).
 
 ## See Also
 

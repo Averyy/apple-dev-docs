@@ -30,7 +30,7 @@ protocol CPSelectableListItem : CPListTemplateItem
 
 ### Inherits From
 - [CPListTemplateItem](cplisttemplateitem.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 ### Conforming Types
 - [CPListImageRowItem](cplistimagerowitem.md)
 - [CPListItem](cplistitem.md)

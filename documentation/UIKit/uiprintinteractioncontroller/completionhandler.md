@@ -23,7 +23,7 @@ You implement this block as the final argument of [`present(animated:completionH
 
 - **`printInteractionController`**: The shared instance of `UIPrintInteractionController` that is managing the print job.
 - **`completed`**: A Boolean value that indicates whether the print job completed successfully.
-- **`error`**: An instance of the [`NSError`](https://developer.apple.com/documentation/Foundation/NSError) that contains information about the printing error. The printing domain is [`UIPrintErrorDomain`](uiprinterrordomain.md). The printing error codes are described in `UIKit Printing Error Codes`. If the print job completes successfully, this parameter is `nil`.
+- **`error`**: An instance of the [`NSError`](https://developer.apple.com/documentation/foundation/nserror) that contains information about the printing error. The printing domain is [`UIPrintErrorDomain`](uiprinterrordomain.md). The printing error codes are described in `UIKit Printing Error Codes`. If the print job completes successfully, this parameter is `nil`.
 
 ## See Also
 

@@ -28,7 +28,7 @@ If the training accuracy of your model is low, it’s an indication that your cu
 
 Try adjusting the training parameters. When working with image data, double the maximum number of iterations in the `MLImageClassifierBuilder` playground UI (the default value is 10).
 
-![Screenshot showing the maximum number of iterations set to 20 in the MLImageClassifierBuilder playground UI.](https://docs-assets.developer.apple.com/published/d5d3381985df49dadf5207e31a918ee5/improving-your-model-s-accuracy-1%402x.png)
+![Screenshot showing the maximum number of iterations set to 20 in the MLImageClassifierBuilder playground UI.](/images/com.apple.createml/improving-your-model-s-accuracy-1@2x.png)
 
 For natural language data, try a different underlying algorithm (see [`MLTextClassifier.ModelAlgorithmType`](mltextclassifier/modelalgorithmtype.md)). For more general tasks, use a different underlying model than the type determined by [`MLClassifier`](mlclassifier.md) (see *Supporting Classifier Types*) or [`MLRegressor`](mlregressor.md) (see *Supporting Regressor Types*).
 
@@ -36,7 +36,7 @@ For natural language data, try a different underlying algorithm (see [`MLTextCla
 
 If your model’s accuracy on the validation set is low or fluctuates between low and high each time you train the model, you need more data. You can generate more input data from the examples you already collected, a technique known as *data augmentation*. For image data, you can combine operations like cropping, rotation, blurring, and exposure adjustment to make one image into many examples.
 
-![A figure showing a single image of an elephant becoming many images by applying augmentations such as crop, rotate, blur, and expose to the image.](https://docs-assets.developer.apple.com/published/8ebb9a01db59e838cba566133acf4ffe/improving-your-model-s-accuracy-2%402x.png)
+![A figure showing a single image of an elephant becoming many images by applying augmentations such as crop, rotate, blur, and expose to the image.](/images/com.apple.createml/improving-your-model-s-accuracy-2@2x.png)
 
 It’s also possible for you to have lots of data and validation accuracy that is still significantly lower than your training accuracy. In this case, your model is _overfitting, _meaning that it’s learning too many specific details about your training set that don’t generally apply to other examples. In this case, you need to reduce the number of training iterations to prevent the model from learning too much about your training data.
 

@@ -23,7 +23,7 @@ let CBConnectPeripheralOptionEnableTransportBridgingKey: String
 
 This option tells the system to connect non-GATT profiles on classic Bluetooth devices, if there is a low energy GATT connection to the same device.
 
-The value associated with this key is an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) as a Boolean value. A `true` value instructs the system to bring up classic transport profiles when a low energy transport peripheral connects. A `false` value tells the system not to use the profiles.
+The value associated with this key is an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) as a Boolean value. A `true` value instructs the system to bring up classic transport profiles when a low energy transport peripheral connects. A `false` value tells the system not to use the profiles.
 
 ## See Also
 

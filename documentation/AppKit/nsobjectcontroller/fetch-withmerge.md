@@ -23,7 +23,7 @@ This method performs a number of actions that you cannot reproduce. To customize
 ## Parameters
 
 - `fetchRequest`: The fetch request to use for the fetch. Pass `nil` to use the default fetch request.
-- `merge`: If [`true`](https://developer.apple.com/documentation/Swift/true), the receiver merges the existing content with the fetch result, otherwise the receiver replaces the entire content with the fetch result.
+- `merge`: If [`true`](https://developer.apple.com/documentation/swift/true), the receiver merges the existing content with the fetch result, otherwise the receiver replaces the entire content with the fetch result.
 
 ## See Also
 

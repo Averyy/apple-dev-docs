@@ -39,7 +39,7 @@ You do not create instances of this class yourself. For each placeholder cell th
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 - [UIDragAnimating](uidraganimating.md)
 
 ## See Also

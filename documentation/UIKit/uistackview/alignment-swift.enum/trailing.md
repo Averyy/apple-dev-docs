@@ -24,7 +24,7 @@ This value is equivalent to the [`bottom`](uistackview/alignment-swift.enum/bott
 
 The following image shows an example of a vertical stack view that uses the [`UIStackView.Alignment.trailing`](uistackview/alignment-swift.enum/trailing.md) alignment.
 
-![A vertical stack view with four arranged subviews. The stack view aligns the subviews to its trailing edge.](https://docs-assets.developer.apple.com/published/cc8465de0ddd5d5f23b18b6ea76fdacc/media-2557472%402x.png)
+![A vertical stack view with four arranged subviews. The stack view aligns the subviews to its trailing edge.](/images/com.apple.uikit/media-2557472@2x.png)
 
 ## See Also
 

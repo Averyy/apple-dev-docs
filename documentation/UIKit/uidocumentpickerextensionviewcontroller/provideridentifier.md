@@ -21,7 +21,7 @@ var providerIdentifier: String { get }
 
 Both the Document Picker View Controller extension and the File Provider extension should pass this identifier to their file coordinator’s `setPurposeIdentifier:` method. This approach helps coordinate the read and write operations between the two extensions, preventing possible deadlocks.
 
-This property holds the value returned by calling the File Provider extension’s [`providerIdentifier`](https://developer.apple.com/documentation/FileProvider/NSFileProviderExtension/providerIdentifier) method.
+This property holds the value returned by calling the File Provider extension’s [`providerIdentifier`](https://developer.apple.com/documentation/fileprovider/nsfileproviderextension/provideridentifier) method.
 
 ## See Also
 

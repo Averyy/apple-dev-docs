@@ -17,7 +17,7 @@ Play, record, and process audio; configure your app’s system audio behavior.
 ## Topics
 
 ### Essentials
-- [AVFAudio updates](../Updates/AVFAudio.md)
+- [AVFAudio updates](../updates/avfaudio.md)
   Learn about important changes to AVFAudio.
 ### System audio
 - [Handling audio interruptions](handling-audio-interruptions.md)

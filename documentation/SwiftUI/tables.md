@@ -8,11 +8,11 @@ Display selectable, sortable data arranged in rows and columns.
 
 Use a table to display multiple values across a collection of elements. Each element in the collection appears in a different row of the table, while each value for a given element appears in a different column. Narrow displays may adapt to show only the first column of the table.
 
-![None](https://docs-assets.developer.apple.com/published/a784f68f4e1b73d07143c7d57ae3f586/tables-hero%402x.png)
+![None](/images/com.apple.SwiftUI/tables-hero@2x.png)
 
 When you create a table, you provide a collection of elements, and then tell the table how to find the needed value for each column. In simple cases, SwiftUI infers the element for each row, but you can also specify the row elements explicitly in more complex scenarios. With a small amount of additional configuration, you can also make the items in the table selectable, and the columns sortable.
 
-Like a [`List`](list.md), a table includes implicit vertical scrolling that you can configure using the view modifiers described in [`Scroll views`](scroll-views.md). For design guidance, see [`Lists and tables`](https://developer.apple.com/design/Human-Interface-Guidelines/lists-and-tables) in the Human Interface Guidelines.
+Like a [`List`](list.md), a table includes implicit vertical scrolling that you can configure using the view modifiers described in [`Scroll views`](scroll-views.md). For design guidance, see [`Lists and tables`](https://developer.apple.com/design/human-interface-guidelines/lists-and-tables) in the Human Interface Guidelines.
 
 ## Topics
 

@@ -22,7 +22,7 @@ var iosurfacePlane: Int { get }
 
 #### Discussion
 
-The plane number applies to the [`iosurfacePlane`](mtltexture/iosurfaceplane.md) property when it isn’t `nil`. The property’s value defaults to `0` for textures that don’t come from an [`IOSurface`](https://developer.apple.com/documentation/IOSurface/IOSurface) instance.
+The plane number applies to the [`iosurfacePlane`](mtltexture/iosurfaceplane.md) property when it isn’t `nil`. The property’s value defaults to `0` for textures that don’t come from an [`IOSurface`](https://developer.apple.com/documentation/iosurface/iosurface) instance.
 
 ## See Also
 

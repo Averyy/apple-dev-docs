@@ -18,6 +18,12 @@ func AXUIElementPerformAction(_ element: AXUIElement, _ action: CFString) -> AXE
 
 If unsuccessful, `AXUIElementPerformAction` may return one of the following error codes, among others:
 
+- **`kAXErrorActionUnsupported`**: The specified AXUIElementRef does not support the specified action (you will also receive this error if you pass in the system-wide accessibility object).
+- **`kAXErrorIllegalArgument`**: One or more of the arguments is an illegal value.
+- **`kAXErrorInvalidUIElement`**: The AXUIElementRef is invalid.
+- **`kAXErrorCannotComplete`**: The function cannot complete because messaging has failed in some way or the application has not yet responded.
+- **`kAXErrorNotImplemented`**: The process does not fully support the accessibility API.
+
 #### Discussion
 
 It is possible to receive the `kAXErrorCannotComplete` error code from this function because accessible applications often need to perform some sort of modal processing inside their action callbacks and they may not return within the timeout value set by the accessibility API. This does not necessarily mean that the function has failed, however. If appropriate, your assistive application can try to call this function again. Also, you may be able to increase the timeout value (see [`AXUIElementSetMessagingTimeout(_:_:)`](1459345-axuielementsetmessagingtimeout.md)).

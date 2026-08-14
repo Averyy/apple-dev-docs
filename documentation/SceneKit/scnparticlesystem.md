@@ -40,9 +40,9 @@ In addition, you can also use the following features to add dynamic behaviors to
 
 - Animations and property controllers. Like many SceneKit objects, the [`SCNParticleSystem`](scnparticlesystem.md) class conforms to the [`SCNAnimatable`](scnanimatable.md) protocol, so you can implicitly or explicitly animate changes to its properties. (For general background on animation, see [`Animating SceneKit Content`](animating-scenekit-content.md).) When you animate changes to a particle system’s properties, these changes affect all particles in the system simultaneously.
 
-To apply animations independently for individual particles, use an [`SCNParticlePropertyController`](scnparticlepropertycontroller.md) object, which associates a [`CAAnimation`](https://developer.apple.com/documentation/QuartzCore/CAAnimation) object with a particle system property. With a property controller, you can use features of the Core Animation framework to create time-varying effects that apply to each particle in the system. Typically a Core Animation object varies a property with respect to time, but with a property controller you can also create animations that vary a property based on other input values, such as a particle’s distance from its initial location.
+To apply animations independently for individual particles, use an [`SCNParticlePropertyController`](scnparticlepropertycontroller.md) object, which associates a [`CAAnimation`](https://developer.apple.com/documentation/quartzcore/caanimation) object with a particle system property. With a property controller, you can use features of the Core Animation framework to create time-varying effects that apply to each particle in the system. Typically a Core Animation object varies a property with respect to time, but with a property controller you can also create animations that vary a property based on other input values, such as a particle’s distance from its initial location.
 
-For example, consider a [`CAKeyframeAnimation`](https://developer.apple.com/documentation/QuartzCore/CAKeyframeAnimation) object that animates a series of colors from white to yellow to red, and a particle system that simulates a flame. If you attach this animation to a particle system’s [`particleColor`](scnparticlesystem/particlecolor.md) property, the resulting flame effect has a single color at any given moment, but that color changes over time. If you instead attach a property controller for the [`color`](scnparticlesystem/particleproperty/color.md) property, the flame varies in color from its base to its tip—each particle starts out white, then fades to yellow and red as it rises.
+For example, consider a [`CAKeyframeAnimation`](https://developer.apple.com/documentation/quartzcore/cakeyframeanimation) object that animates a series of colors from white to yellow to red, and a particle system that simulates a flame. If you attach this animation to a particle system’s [`particleColor`](scnparticlesystem/particlecolor.md) property, the resulting flame effect has a single color at any given moment, but that color changes over time. If you instead attach a property controller for the [`color`](scnparticlesystem/particleproperty/color.md) property, the flame varies in color from its base to its tip—each particle starts out white, then fades to yellow and red as it rises.
 
 - Spawned particle systems. When you assign another [`SCNParticleSystem`](scnparticlesystem.md) instance to one of the properties listed in Spawning Additional Particle Systems, SceneKit adds more particle systems to the scene based on the behavior of the original particle system. For example, if you have a particle system that simulates falling rain, you can use the [`systemSpawnedOnCollision`](scnparticlesystem/systemspawnedoncollision.md) property to add splashes where each raindrop strikes a surface.
 - Event handlers and particle modifiers. Because they specify behavior declaratively, animations, property controllers, and spawned systems provide easy configuration and high performance for most dynamic behaviors. To create behaviors not possible with these features, you can register event handler or particle modifier blocks that work directly with the bulk particle data SceneKit uses to animate a particle system.
@@ -233,7 +233,7 @@ To load a particle system from a file you created with Xcode, use the [`init(nam
 - [typealias SCNParticleModifierBlock](scnparticlemodifierblock.md)
   The signature for blocks called by SceneKit to modify particle properties on each frame of simulation, used by the [`addModifier(forProperties:at:modifier:)`](scnparticlesystem/addmodifier(forproperties:at:modifier:).md) method.
 ### Sample Code
-- [Building a document browser app for custom file formats](../UIKit/building-a-document-browser-app-for-custom-file-formats.md)
+- [Building a document browser app for custom file formats](../uikit/building-a-document-browser-app-for-custom-file-formats.md)
   Implement a custom document file format to manage user interactions with files on different cloud storage providers.
 ### Initializers
 - [init?(coder: NSCoder)](scnparticlesystem/init(coder:).md)
@@ -246,17 +246,17 @@ To load a particle system from a file you created with Xcode, use the [`init(nam
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCoding](../Foundation/NSCoding.md)
-- [NSCopying](../Foundation/NSCopying.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [NSSecureCoding](../Foundation/NSSecureCoding.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCoding](../foundation/nscoding.md)
+- [NSCopying](../foundation/nscopying.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSSecureCoding](../foundation/nssecurecoding.md)
 - [SCNAnimatable](scnanimatable.md)
 
 ## See Also

@@ -19,7 +19,7 @@ protocol WKExtensionDelegate : NSObjectProtocol
 
 Implement the delegate’s methods to respond to your app’s life-cycle events, such as the activation and deactivation of your app. You can also implement delegate methods to respond to background tasks, Siri intents, workout sessions, or Handoff activity from another devices.
 
-WatchKit creates your delegate object automatically by instantiating the class assigned to the [`WKExtensionDelegateClassName`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/WKExtensionDelegateClassName) key in your WatchKit extension’s `Info.plist` file. By default, this class is named ExtensionDelegate. The system then assigns the delegate object to the [`delegate`](wkextension/delegate.md) property of the shared [`WKExtension`](wkextension.md) object.
+WatchKit creates your delegate object automatically by instantiating the class assigned to the [`WKExtensionDelegateClassName`](https://developer.apple.com/documentation/bundleresources/information-property-list/wkextensiondelegateclassname) key in your WatchKit extension’s `Info.plist` file. By default, this class is named ExtensionDelegate. The system then assigns the delegate object to the [`delegate`](wkextension/delegate.md) property of the shared [`WKExtension`](wkextension.md) object.
 
 ## Topics
 
@@ -89,11 +89,11 @@ WatchKit creates your delegate object automatically by instantiating the class a
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 
-- [Setting up a watchOS project](../watchOS-Apps/setting-up-a-watchos-project.md)
+- [Setting up a watchOS project](../watchos-apps/setting-up-a-watchos-project.md)
   Create a new watchOS project or add a watch target to an existing iOS project.
 - [class WKApplication](wkapplication.md)
   The centralized point of control and coordination for apps with a single watchOS app target.
@@ -105,7 +105,7 @@ WatchKit creates your delegate object automatically by instantiating the class a
   Creates the application object and the application delegate, and sets up the app’s event cycle.
 - [class WKInterfaceDevice](wkinterfacedevice.md)
   An object that provides information about the user’s Apple Watch.
-- [WKPrefersNetworkUponForeground](../BundleResources/Information-Property-List/WKPrefersNetworkUponForeground.md)
+- [WKPrefersNetworkUponForeground](../bundleresources/information-property-list/wkprefersnetworkuponforeground.md)
   A Boolean value that indicates whether an app requires network access on launch.
 
 

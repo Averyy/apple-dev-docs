@@ -27,7 +27,7 @@ This method first sets the new time and then the new rendering rate. A `rate` va
 ## Parameters
 
 - `rate`: The new timebase rate. This value must be greater than or equal to `0.0`.
-- `time`: The new timebase time. This value must be greater than or equal to [`zero`](https://developer.apple.com/documentation/CoreMedia/CMTime/zero), or [`invalid`](https://developer.apple.com/documentation/CoreMedia/CMTime/invalid).
+- `time`: The new timebase time. This value must be greater than or equal to [`zero`](https://developer.apple.com/documentation/coremedia/cmtime/zero), or [`invalid`](https://developer.apple.com/documentation/coremedia/cmtime/invalid).
 
 ## See Also
 

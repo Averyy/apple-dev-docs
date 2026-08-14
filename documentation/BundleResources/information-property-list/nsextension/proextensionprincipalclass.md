@@ -17,10 +17,10 @@ The name of the class with the principal implementation of your extension.
 
 The Compressor app instantiates the class specified in the `ProExtensionPrincipalClass` key to convert source files to the output format your extension supports. Customize your extension code by adopting the following protocols in the implementation of this class:
 
-- [`CompressorExtensionSettings`](https://developer.apple.com/documentation/professional_video_applications/CompressorExtensionSettings)
-- [`CompressorExtensionColorSpaces`](https://developer.apple.com/documentation/professional_video_applications/CompressorExtensionColorSpaces)
-- [`CompressorExtensionSettingsOptional`](https://developer.apple.com/documentation/professional_video_applications/CompressorExtensionSettingsOptional)
-- [`CompressorExtensionEncoder`](https://developer.apple.com/documentation/professional_video_applications/CompressorExtensionEncoder)
+- [`CompressorExtensionSettings`](https://developer.apple.com/documentation/professional_video_applications/compressorextensionsettings)
+- [`CompressorExtensionColorSpaces`](https://developer.apple.com/documentation/professional_video_applications/compressorextensioncolorspaces)
+- [`CompressorExtensionSettingsOptional`](https://developer.apple.com/documentation/professional_video_applications/compressorextensionsettingsoptional)
+- [`CompressorExtensionEncoder`](https://developer.apple.com/documentation/professional_video_applications/compressorextensionencoder)
 
 ## See Also
 

@@ -22,11 +22,11 @@ func CVImageBufferGetCleanRect(_ imageBuffer: CVImageBuffer) -> CGRect
 
 #### Return Value
 
-A [`CGRect`](https://developer.apple.com/documentation/CoreFoundation/CGRect) structure returning the nominal display size of the image buffer. The size is zero if you pass a value for the image buffer that isn’t a [`CVImageBuffer`](cvimagebuffer.md) type.
+A [`CGRect`](https://developer.apple.com/documentation/corefoundation/cgrect) structure returning the nominal display size of the image buffer. The size is zero if you pass a value for the image buffer that isn’t a [`CVImageBuffer`](cvimagebuffer.md) type.
 
 #### Discussion
 
-The clean aperture size is smaller than the full size of the image. For example, for an NTSC DV frame, this function returns a [`CGRect`](https://developer.apple.com/documentation/CoreFoundation/CGRect) structure with an origin of `(8,0)` and a size of 704 x 480.
+The clean aperture size is smaller than the full size of the image. For example, for an NTSC DV frame, this function returns a [`CGRect`](https://developer.apple.com/documentation/corefoundation/cgrect) structure with an origin of `(8,0)` and a size of 704 x 480.
 
 > **Note**:  The origin of this rectangle is always in the lower-left corner. This is the same coordinate system as that used by Quartz and Core Image.
 

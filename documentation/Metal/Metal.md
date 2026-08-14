@@ -22,9 +22,9 @@ The Metal framework gives your app direct access to a device’s graphics proces
 - Scientific research apps that analyze and process large datasets
 - Fully immersive visionOS apps
 
-Metal works hand-in-hand with other frameworks that supplement its capability. For example, [`MetalFX`](https://developer.apple.com/documentation/MetalFX) upscales your renderings in less time than rendering them natively, and [`MetalKit`](https://developer.apple.com/documentation/MetalKit) simplifies the tasks that display your Metal content onscreen. The [`Metal Performance Shaders`](https://developer.apple.com/documentation/MetalPerformanceShaders) framework provides a large library of optimized compute and rendering shaders that take advantage of each GPU’s unique hardware. In visionOS, create fully immersive stereoscopic content with the help of the [`Compositor Services`](https://developer.apple.com/documentation/CompositorServices) framework.
+Metal works hand-in-hand with other frameworks that supplement its capability. For example, [`MetalFX`](https://developer.apple.com/documentation/metalfx) upscales your renderings in less time than rendering them natively, and [`MetalKit`](https://developer.apple.com/documentation/metalkit) simplifies the tasks that display your Metal content onscreen. The [`Metal Performance Shaders`](https://developer.apple.com/documentation/metalperformanceshaders) framework provides a large library of optimized compute and rendering shaders that take advantage of each GPU’s unique hardware. In visionOS, create fully immersive stereoscopic content with the help of the [`Compositor Services`](https://developer.apple.com/documentation/compositorservices) framework.
 
-Many high-level Apple frameworks leverage the performance of Metal, including [`RealityKit`](https://developer.apple.com/documentation/RealityKit), [`SpriteKit`](https://developer.apple.com/documentation/SpriteKit), and [`Core Image`](https://developer.apple.com/documentation/CoreImage). These high-level frameworks implement the GPU programming details for you. However, you can typically get better performance by writing your own custom Metal and shader code. See the [`Metal Shading Language Specification`](https://developer.apple.comhttps://developer.apple.com/metal/Metal-Shading-Language-Specification.pdf) for shader implementation details.
+Many high-level Apple frameworks leverage the performance of Metal, including [`RealityKit`](https://developer.apple.com/documentation/realitykit), [`SpriteKit`](https://developer.apple.com/documentation/spritekit), and [`Core Image`](https://developer.apple.com/documentation/coreimage). These high-level frameworks implement the GPU programming details for you. However, you can typically get better performance by writing your own custom Metal and shader code. See the [`Metal Shading Language Specification`](https://developer.apple.comhttps://developer.apple.com/metal/Metal-Shading-Language-Specification.pdf) for shader implementation details.
 
 ## Topics
 
@@ -100,16 +100,16 @@ Many high-level Apple frameworks leverage the performance of Metal, including [`
   Prototype and test your Metal apps in Simulator.
 - [Improving your game’s graphics performance and settings](improving-your-games-graphics-performance-and-settings.md)
   Fix performance glitches and develop default settings for smooth experiences on Apple platforms using the powerful suite of Metal development tools.
-- [Metal debugger](../Xcode/Metal-debugger.md)
+- [Metal debugger](../xcode/metal-debugger.md)
   Debug and profile your Metal workload with a GPU trace.
-- [Metal developer workflows](../Xcode/Metal-developer-workflows.md)
+- [Metal developer workflows](../xcode/metal-developer-workflows.md)
   Locate and fix issues related to your app’s use of the Metal API and GPU functions.
 - [GPU counters and counter sample buffers](gpu-counters-and-counter-sample-buffers.md)
   Retrieve runtime data from a GPU device by sampling one or more of its counters.
 - [Metal debugging types](metal-debugging-types.md)
   Create capture managers and capture scopes, and review a GPU device’s log after it runs a command buffer.
 ### Apple silicon
-- [Porting your Metal code to Apple silicon](../Apple-Silicon/porting-your-metal-code-to-apple-silicon.md)
+- [Porting your Metal code to Apple silicon](../apple-silicon/porting-your-metal-code-to-apple-silicon.md)
   Create a version of your Metal app that runs on both Apple silicon and Intel-based Mac computers.
 - [Tailor your apps for Apple GPUs and tile-based deferred rendering](tailor-your-apps-for-apple-gpus-and-tile-based-deferred-rendering.md)
   Learn about characteristic Apple GPU features, including imageblocks, tile shaders, and raster order groups.

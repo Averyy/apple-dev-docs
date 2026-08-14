@@ -8,7 +8,7 @@ Help users discover your App Clip by using an NFC-integrated or scan-only App Cl
 
 An App Clip Code is immediately recognizable to users and lets them know an App Clip is available. The App Clip Code offers a fast and secure launch experience for your App Clip that users trust.
 
-![Illustration of two App Clip Codes that use the badge design: On the left, a white-on-blue App Clip Code with an embedded NFC tag. On the right, a scan-only, white-on-black App Clip Code.](https://docs-assets.developer.apple.com/published/d128732b4333996b712930a76efbaf5c/media-3706497%402x.png)
+![Illustration of two App Clip Codes that use the badge design: On the left, a white-on-blue App Clip Code with an embedded NFC tag. On the right, a scan-only, white-on-black App Clip Code.](/images/com.apple.appclip/media-3706497@2x.png)
 
 The visual design of an App Clip Code encodes your App Clip’s *invocation URL*. Optionally, you can embed an NFC tag that also encodes the invocation URL. An App Clip Code with an embedded NFC tag is called an *NFC-integrated* App Clip Code, while a code without an NFC tag is called a *scan-only* App Clip Code.
 

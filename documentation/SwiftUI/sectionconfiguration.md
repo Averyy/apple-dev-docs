@@ -66,7 +66,7 @@ Here, we want to create one view for `PinboardSectionsLayout` to place per secti
 ## Relationships
 
 ### Conforms To
-- [Identifiable](../Swift/Identifiable.md)
+- [Identifiable](../swift/identifiable.md)
 
 ## See Also
 

@@ -19,13 +19,13 @@ A SwiftUI button that you use to add to the set of contacts someone shares with 
 
 #### Overview
 
-When someone’s using your app, they can choose to give the app full access to their contacts or to a subset of contacts. They choose this subset of contacts the first time your app requests access with [`requestAccess(for:completionHandler:)`](https://developer.apple.com/documentation/Contacts/CNContactStore/requestAccess(for:completionHandler:)), and can update them in the Settings app. You use this button to prompt them to authorize additional contacts for your app to use while operating under limited-access authorization.
+When someone’s using your app, they can choose to give the app full access to their contacts or to a subset of contacts. They choose this subset of contacts the first time your app requests access with [`requestAccess(for:completionHandler:)`](https://developer.apple.com/documentation/contacts/cncontactstore/requestaccess(for:completionhandler:)), and can update them in the Settings app. You use this button to prompt them to authorize additional contacts for your app to use while operating under limited-access authorization.
 
-Use this button in addition to a search UI in your app, such as a text field. Initialize the button with a query string from your search UI, along with email addresses and phone numbers to ignore. If a single contact matches, the button shows that contact’s name and image, and tapping the button grants your app access to that contact. If multiple contacts match, tapping the button navigates to another view where the person can choose which contacts to allow. The button updates its display as the query string changes; using a query string bound to a SwiftUI [`TextField`](https://developer.apple.com/documentation/SwiftUI/TextField) allows the button to update its display of matches in real time as the person types.
+Use this button in addition to a search UI in your app, such as a text field. Initialize the button with a query string from your search UI, along with email addresses and phone numbers to ignore. If a single contact matches, the button shows that contact’s name and image, and tapping the button grants your app access to that contact. If multiple contacts match, tapping the button navigates to another view where the person can choose which contacts to allow. The button updates its display as the query string changes; using a query string bound to a SwiftUI [`TextField`](https://developer.apple.com/documentation/swiftui/textfield) allows the button to update its display of matches in real time as the person types.
 
-> **Note**: This button is only useful when your app has limited or no access to contacts. To see what level of access your app has to a person’s contacts, call [`authorizationStatus(for:)`](https://developer.apple.com/documentation/Contacts/CNContactStore/authorizationStatus(for:)). If the returned value is [`CNAuthorizationStatus.limited`](https://developer.apple.com/documentation/Contacts/CNAuthorizationStatus/limited), the button updates itself to show partial or single matches based on the query string. If the authorization status is  [`CNAuthorizationStatus.denied`](https://developer.apple.com/documentation/Contacts/CNAuthorizationStatus/denied), the button shows a prompt to allow access to contacts. If the authorization status is [`CNAuthorizationStatus.authorized`](https://developer.apple.com/documentation/Contacts/CNAuthorizationStatus/authorized), the button doesn’t appear at all.
+> **Note**: This button is only useful when your app has limited or no access to contacts. To see what level of access your app has to a person’s contacts, call [`authorizationStatus(for:)`](https://developer.apple.com/documentation/contacts/cncontactstore/authorizationstatus(for:)). If the returned value is [`CNAuthorizationStatus.limited`](https://developer.apple.com/documentation/contacts/cnauthorizationstatus/limited), the button updates itself to show partial or single matches based on the query string. If the authorization status is  [`CNAuthorizationStatus.denied`](https://developer.apple.com/documentation/contacts/cnauthorizationstatus/denied), the button shows a prompt to allow access to contacts. If the authorization status is [`CNAuthorizationStatus.authorized`](https://developer.apple.com/documentation/contacts/cnauthorizationstatus/authorized), the button doesn’t appear at all.
 
-To show a picker of all contacts and allow someone to add them to your app, without presenting your own search UI, use [`contactAccessPicker(isPresented:completionHandler:)`](https://developer.apple.com/documentation/SwiftUI/View/contactAccessPicker(isPresented:completionHandler:)).
+To show a picker of all contacts and allow someone to add them to your app, without presenting your own search UI, use [`contactAccessPicker(isPresented:completionHandler:)`](https://developer.apple.com/documentation/swiftui/view/contactaccesspicker(ispresented:completionhandler:)).
 
 ## Topics
 
@@ -42,9 +42,9 @@ To show a picker of all contacts and allow someone to add them to your app, with
 ## Relationships
 
 ### Conforms To
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
-- [View](../SwiftUI/View.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
+- [View](../swiftui/view.md)
 
 
 ---

@@ -21,7 +21,7 @@ var startingToken: Data? { get set }
 
 #### Discussion
 
-Specify [`nil`](https://developer.apple.com/documentation/ObjectiveC/nil-227m0) to receive a [`CNChangeHistoryDropEverythingEvent`](cnchangehistorydropeverythingevent.md), followed by an add event for every contact and group in the Contacts database.
+Specify [`nil`](https://developer.apple.com/documentation/objectivec/nil-227m0) to receive a [`CNChangeHistoryDropEverythingEvent`](cnchangehistorydropeverythingevent.md), followed by an add event for every contact and group in the Contacts database.
 
 Save the [`currentHistoryToken`](cnfetchresult/currenthistorytoken.md) from a successful fetch result in your app, then specify it here to receive changes after that point in history.
 

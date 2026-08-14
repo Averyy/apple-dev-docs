@@ -20,7 +20,7 @@ var startItemID: String? { get set }
 
 #### Discussion
 
-When this property isn’t set, the value is [`nil`](https://developer.apple.com/documentation/ObjectiveC/nil-227m0) and the first item in the queue is the first item to play.
+When this property isn’t set, the value is [`nil`](https://developer.apple.com/documentation/objectivec/nil-227m0) and the first item in the queue is the first item to play.
 
 ## See Also
 

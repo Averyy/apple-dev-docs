@@ -18,7 +18,7 @@ optional func sound(_ sound: NSSound, didFinishPlaying flag: Bool)
 ## Parameters
 
 - `sound`: The `NSSound` that has completed playback of its sound data.
-- `flag`: [`true`](https://developer.apple.com/documentation/Swift/true) when playback was successful; [`false`](https://developer.apple.com/documentation/Swift/false) otherwise.
+- `flag`: [`true`](https://developer.apple.com/documentation/swift/true) when playback was successful; [`false`](https://developer.apple.com/documentation/swift/false) otherwise.
 
 ## See Also
 

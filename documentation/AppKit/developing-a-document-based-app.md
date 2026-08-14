@@ -16,7 +16,7 @@ In the Cocoa document architecture, your document is represented by a custom sub
 
 Because a document-based app handles multiple documents that are open at the same time, it uses [`NSDocumentController`](nsdocumentcontroller.md) to manage them. Cocoa provides most of the infrastructure for managing your documents. With file coordination, version management, and conflict resolution among other documents, it provides the easiest path to using iCloud.
 
-![Cocoa document architecture diagram showing the relationships between NSDocumentController and its list of NSDocument objects, and between NSDocument and its NSWindowController.](https://docs-assets.developer.apple.com/published/091174066bde587c3b6954d1ab290902/documentbasedapp-diagram1%402x.png)
+![Cocoa document architecture diagram showing the relationships between NSDocumentController and its list of NSDocument objects, and between NSDocument and its NSWindowController.](/images/com.apple.appkit/documentbasedapp-diagram1@2x.png)
 
 ##### Declare the Document Type
 
@@ -102,7 +102,7 @@ As a result, the `NSTextView` containing the plain text is bound to the document
 
 `representedObject.contentString`
 
-![Cocoa document architecture diagram showing how text view data is synced with the data model object through its view controller’s representedObject.](https://docs-assets.developer.apple.com/published/4214157cfa8878403b1f09489234f939/documentbasedapp-diagram2%402x.png)
+![Cocoa document architecture diagram showing how text view data is synced with the data model object through its view controller’s representedObject.](/images/com.apple.appkit/documentbasedapp-diagram2@2x.png)
 
 ##### Read the Document Content
 

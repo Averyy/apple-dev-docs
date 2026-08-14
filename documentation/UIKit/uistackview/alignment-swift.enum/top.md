@@ -24,7 +24,7 @@ This value is equivalent to the [`UIStackView.Alignment.leading`](uistackview/al
 
 The following image shows an example of a horizontal stack view that uses the [`top`](uistackview/alignment-swift.enum/top.md) alignment.
 
-![A horizontal stack view with four arranged subviews. The stack view aligns the subviews to its top edge.](https://docs-assets.developer.apple.com/published/ac8be4305f320bb371d4f5981fdc2cfb/media-2557465%402x.png)
+![A horizontal stack view with four arranged subviews. The stack view aligns the subviews to its top edge.](/images/com.apple.uikit/media-2557465@2x.png)
 
 ## See Also
 

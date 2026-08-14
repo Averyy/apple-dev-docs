@@ -51,7 +51,7 @@ endEffector.constraints = [ positionConstraint ]
 
 In its default position, the code above creates a node tree that looks like this (the shoulder is at the top, in blue, and the end effector is at the bottom, in yellow).
 
-![Robot arm in rest position](https://docs-assets.developer.apple.com/published/86e297e57299a35e91f0b5a014674380/media-3020290%402x.png)
+![Robot arm in rest position](/images/com.apple.spritekit/media-3020290@2x.png)
 
 ##### Run the Solver
 
@@ -67,7 +67,7 @@ endEffector.run(reachAction)
 
 Given a location to the left of and slightly below the shoulder, the action finishes with the node tree looking like the following:
 
-![Robot arm after IK solve](https://docs-assets.developer.apple.com/published/cd7c1b63663a73d4433280f6eed724c3/media-3020292%402x.png)
+![Robot arm after IK solve](/images/com.apple.spritekit/media-3020292@2x.png)
 
 ## See Also
 

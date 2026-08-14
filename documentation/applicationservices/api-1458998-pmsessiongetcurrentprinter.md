@@ -25,7 +25,7 @@ You must call this function between the creation and release of a printing sessi
 ## Parameters
 
 - `printSession`: The printing session whose printer you want to obtain.
-- `currentPrinter`: A pointer to your   variable. On return, the variable refers to the printer associated with the specified printing session. The printer object is valid as long as the printing session is valid or the current printer hasn’t changed. You should not release this object without first retaining it.
+- `currentPrinter`: A pointer to your [`PMPrinter`](pmprinter.md) variable. On return, the variable refers to the printer associated with the specified printing session. The printer object is valid as long as the printing session is valid or the current printer hasn’t changed. You should not release this object without first retaining it.
 
 ## See Also
 

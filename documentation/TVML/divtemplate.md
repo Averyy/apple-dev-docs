@@ -8,7 +8,7 @@ Provides the ability to create pages that don’t conform to a layout defined by
 
 There is no built-in layout for contained elements. The `divTemplate` element creates a view where the elements it contains are arranged using the `tv-align` and `tv-position` styles. Containing elements are centered by default. The following figure shows the positions inside of the `divTemplate` element. The `divTemplate` element should only be used when you can’t use another template to achieve the look you want. The theme for the div template defaults to the system preference.
 
-![Layout diagram showing the positions other elements can be placed in.](https://docs-assets.developer.apple.com/published/8ab94a6903cb538652ca1484db33c75a/divtemplate-1%402x.png)
+![Layout diagram showing the positions other elements can be placed in.](/images/com.apple.TVML/divtemplate-1@2x.png)
 
 Elements contained in the same position are arranged from the top of the cell to the bottom, in the same order in which they are specified in the `divTemplate` element. You can specify a `<background><img /></background>` that displays a background image inside of the `divTemplate`. The background image is top-aligned and is fitted to the size of the `divTemplate` while keeping the image’s original aspect ratio. Text wrapping inside of the `divTemplate` only occurs in the `header`, `center`, and `footer` positions.
 

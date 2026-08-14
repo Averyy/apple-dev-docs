@@ -19,7 +19,7 @@ static let phAsset: UIImagePickerController.InfoKey
 
 #### Discussion
 
-The value of this key is a [`PHAsset`](https://developer.apple.com/documentation/Photos/PHAsset) object.
+The value of this key is a [`PHAsset`](https://developer.apple.com/documentation/photos/phasset) object.
 
 ## See Also
 

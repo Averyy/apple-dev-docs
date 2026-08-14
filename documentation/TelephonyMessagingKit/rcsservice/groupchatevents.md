@@ -7,7 +7,6 @@ Returns an asynchronous sequence of incoming group chat notifications produced b
 
 **Availability**:
 - iOS 26.0+
-- iPadOS 26.0+
 
 ## Declaration
 

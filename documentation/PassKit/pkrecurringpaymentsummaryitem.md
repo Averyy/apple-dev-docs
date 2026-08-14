@@ -50,7 +50,7 @@ dateComponent.month = 5
 recurringPayment.endDate = Calendar.current.date(byAdding: dateComponent, Date())
 ```
 
-The payment interval is a combination of the [`intervalUnit`](pkrecurringpaymentsummaryitem/intervalunit.md) and the [`intervalCount`](pkrecurringpaymentsummaryitem/intervalcount.md). For example, if you set the [`intervalUnit`](pkrecurringpaymentsummaryitem/intervalunit.md) to .[`month`](https://developer.apple.com/documentation/CoreFoundation/CFCalendarUnit/month) and [`intervalCount`](pkrecurringpaymentsummaryitem/intervalcount.md) to `3`, then the payment interval is three months.
+The payment interval is a combination of the [`intervalUnit`](pkrecurringpaymentsummaryitem/intervalunit.md) and the [`intervalCount`](pkrecurringpaymentsummaryitem/intervalcount.md). For example, if you set the [`intervalUnit`](pkrecurringpaymentsummaryitem/intervalunit.md) to .[`month`](https://developer.apple.com/documentation/corefoundation/cfcalendarunit/month) and [`intervalCount`](pkrecurringpaymentsummaryitem/intervalcount.md) to `3`, then the payment interval is three months.
 
 ## Topics
 
@@ -70,12 +70,12 @@ The payment interval is a combination of the [`intervalUnit`](pkrecurringpayment
 ### Inherits From
 - [PKPaymentSummaryItem](pkpaymentsummaryitem.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

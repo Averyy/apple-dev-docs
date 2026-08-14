@@ -50,8 +50,8 @@ These methods let you observe time changes either periodically or by boundary, r
 
 [`AVPlayer`](avplayer.md) and [`AVPlayerItem`](avplayeritem.md) are nonvisual objects, meaning that on their own they’re unable to present an asset’s video onscreen. There are two primary approaches you use to present your video content onscreen:
 
-- **AVKit:** The best way to present your video content is with the AVKit framework’s [`AVPlayerViewController`](https://developer.apple.com/documentation/AVKit/AVPlayerViewController) class in iOS and tvOS, or the [`AVPlayerView`](https://developer.apple.com/documentation/AVKit/AVPlayerView) class in macOS. These classes present the video content, along with playback controls and other media features giving you a full-featured playback experience.
-- **AVPlayerLayer:** When building a custom interface for your player, use [`AVPlayerLayer`](avplayerlayer.md). You can set this layer a view’s backing layer or add it directly to the layer hierarchy. Unlike [`AVPlayerView`](https://developer.apple.com/documentation/AVKit/AVPlayerView) and [`AVPlayerViewController`](https://developer.apple.com/documentation/AVKit/AVPlayerViewController), a player layer doesn’t present any playback controls—it only presents the visual content onscreen. It’s up to you to build the playback transport controls to play, pause, and seek through the media.
+- **AVKit:** The best way to present your video content is with the AVKit framework’s [`AVPlayerViewController`](https://developer.apple.com/documentation/avkit/avplayerviewcontroller) class in iOS and tvOS, or the [`AVPlayerView`](https://developer.apple.com/documentation/avkit/avplayerview) class in macOS. These classes present the video content, along with playback controls and other media features giving you a full-featured playback experience.
+- **AVPlayerLayer:** When building a custom interface for your player, use [`AVPlayerLayer`](avplayerlayer.md). You can set this layer a view’s backing layer or add it directly to the layer hierarchy. Unlike [`AVPlayerView`](https://developer.apple.com/documentation/avkit/avplayerview) and [`AVPlayerViewController`](https://developer.apple.com/documentation/avkit/avplayerviewcontroller), a player layer doesn’t present any playback controls—it only presents the visual content onscreen. It’s up to you to build the playback transport controls to play, pause, and seek through the media.
 
 Alongside the visual content presented with AVKit or [`AVPlayerLayer`](avplayerlayer.md), you can also present animated content synchronized with the player’s timing using [`AVSynchronizedLayer`](avsynchronizedlayer.md). Use a synchronized layer pass along player timing to its layer subtree. You can use [`AVSynchronizedLayer`](avsynchronizedlayer.md) to build custom effects in Core Animation, such as animated lower thirds or video transitions, and have them play in sync with the timing of the player’s current [`AVPlayerItem`](avplayeritem.md).
 
@@ -237,21 +237,21 @@ Alongside the visual content presented with AVKit or [`AVPlayerLayer`](avplayerl
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Inherited By
 - [AVQueuePlayer](avqueueplayer.md)
 ### Conforms To
-- [AVRoutingPlaybackParticipant](../AVRouting/AVRoutingPlaybackParticipant.md)
-- [CVarArg](../Swift/CVarArg.md)
-- [Copyable](../Swift/Copyable.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Escapable](../Swift/Escapable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [Observable](../Observation/Observable.md)
-- [Sendable](../Swift/Sendable.md)
+- [AVRoutingPlaybackParticipant](../avrouting/avroutingplaybackparticipant.md)
+- [CVarArg](../swift/cvararg.md)
+- [Copyable](../swift/copyable.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Escapable](../swift/escapable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [Observable](../observation/observable.md)
+- [Sendable](../swift/sendable.md)
 
 ## See Also
 

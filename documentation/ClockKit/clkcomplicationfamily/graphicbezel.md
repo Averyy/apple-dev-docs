@@ -18,7 +18,7 @@ case graphicBezel
 
 The following figure shows the size and location of the graphic bezel complication.
 
-![Diagram showing the size and position of a graphic bezel complication.](https://docs-assets.developer.apple.com/published/e01a9b62a7001d16e0ce206b2c37bbb0/media-3030699%402x.png)
+![Diagram showing the size and position of a graphic bezel complication.](/images/com.apple.clockkit/media-3030699@2x.png)
 
 ## See Also
 

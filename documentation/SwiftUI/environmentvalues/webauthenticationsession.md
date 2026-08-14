@@ -64,9 +64,9 @@ The above example looks for a token stored as a query parameter. The specific pa
 
 ## See Also
 
-- [struct LocalAuthenticationView](../LocalAuthentication/LocalAuthenticationView.md)
+- [struct LocalAuthenticationView](../localauthentication/localauthenticationview.md)
   A SwiftUI view that displays an authentication interface.
-- [struct SignInWithAppleButton](../AuthenticationServices/SignInWithAppleButton.md)
+- [struct SignInWithAppleButton](../authenticationservices/signinwithapplebutton.md)
   A SwiftUI view that creates the Sign in with Apple button for display.
 - [func signInWithAppleButtonStyle(SignInWithAppleButton.Style) -> some View](view/signinwithapplebuttonstyle(_:).md)
   Sets the style used for displaying the control (see `SignInWithAppleButton.Style`).

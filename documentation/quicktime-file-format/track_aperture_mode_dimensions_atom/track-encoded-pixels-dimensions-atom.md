@@ -7,7 +7,7 @@ An atom that carries the pixel dimensions of the track’s encoded pixels.
 
 #### Overview
 
-See [`Track encoded pixels dimensions atom ('enof')`](track_encoded_pixels_dimensions_atom.md).
+See [`Track encoded pixels dimensions atom`](track_encoded_pixels_dimensions_atom.md).
 
 ## See Also
 

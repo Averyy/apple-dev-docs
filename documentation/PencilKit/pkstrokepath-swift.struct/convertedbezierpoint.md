@@ -41,6 +41,17 @@ struct ConvertedBezierPoint
 - [class PKConvertedBezierPointReference](pkconvertedbezierpointreference.md)
   An object that provides information about a B-spline control point converted from a Bézier path.
 
+## See Also
+
+- [init()](pkstrokepath-swift.struct/init.md)
+  Creates an empty stroke path.
+- [init<T>(controlPoints: T, creationDate: Date)](pkstrokepath-swift.struct/init(controlpoints:creationdate:).md)
+  Creates a stroke path with the cubic B-spline control points and a date that you specify.
+- [init<T>(controlPoints: T, creationDate: Date, id: UUID)](pkstrokepath-swift.struct/init(controlpoints:creationdate:id:).md)
+  Creates a stroke path with the specified cubic B-spline control points and a unique identifier.
+- [init(bezierPath: CGPath, creationDate: Date, pointProvider: (PKStrokePath.ConvertedBezierPoint) -> PKStrokePoint)](pkstrokepath-swift.struct/init(bezierpath:creationdate:pointprovider:).md)
+  Creates a stroke path recreating the specified Bézier path as a cubic uniform B-Spline.
+
 
 ---
 

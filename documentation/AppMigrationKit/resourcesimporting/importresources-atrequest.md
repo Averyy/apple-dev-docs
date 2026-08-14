@@ -20,7 +20,7 @@ func importResources(at url: URL, request: ResourcesImportRequest) async throws
 
 Implement this method in your app extension to import files to your app from the source device. You can accomplish this task by moving all files from the directory indicated by `url` to an appropriate location for your app, such as the documents directory.
 
-> ❗ **Important**: AppMigrationKit coerces any error thrown from this method into an [`NSError`](https://developer.apple.com/documentation/Foundation/NSError) instance. The framework persists this error so it can provide it to your app on its first launch. If your error can’t convert to an `NSError`, AppMigrationKit provides a generic error to the app instead.
+> ❗ **Important**: AppMigrationKit coerces any error thrown from this method into an [`NSError`](https://developer.apple.com/documentation/foundation/nserror) instance. The framework persists this error so it can provide it to your app on its first launch. If your error can’t convert to an `NSError`, AppMigrationKit provides a generic error to the app instead.
 
 ## Parameters
 

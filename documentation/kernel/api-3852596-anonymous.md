@@ -19,17 +19,17 @@ enum : unsigned int {
 
 ### Constants
 - [kIOMemoryDirectionIn](3852596-anonymous/kiomemorydirectionin.md)
-- [kIOMemoryDirectionIn](../driverkit/3852596-anonymous/kiomemorydirectionin.md)
+- [kIOMemoryDirectionIn](../driverkit/kiomemorydirectionin.md)
   A buffer from which the current process reads. 
 - [kIOMemoryDirectionInOut](3852596-anonymous/kiomemorydirectioninout.md)
-- [kIOMemoryDirectionInOut](../driverkit/3852596-anonymous/kiomemorydirectioninout.md)
+- [kIOMemoryDirectionInOut](../driverkit/kiomemorydirectioninout.md)
   A buffer that the current process reads and writes. 
 - [kIOMemoryDirectionNone](3852596-anonymous/kiomemorydirectionnone.md)
 - [kIOMemoryDirectionOut](3852596-anonymous/kiomemorydirectionout.md)
-- [kIOMemoryDirectionOut](../driverkit/3852596-anonymous/kiomemorydirectionout.md)
+- [kIOMemoryDirectionOut](../driverkit/kiomemorydirectionout.md)
   A buffer to which the current process writes.  
 - [kIOMemoryDirectionOutIn](3852596-anonymous/kiomemorydirectionoutin.md)
-- [kIOMemoryDirectionOutIn](../driverkit/3852596-anonymous/kiomemorydirectionoutin.md)
+- [kIOMemoryDirectionOutIn](../driverkit/kiomemorydirectionoutin.md)
   A buffer that the current process writes and reads.
 - [kIOMemoryDisableCopyOnWrite](3852596-anonymous/kiomemorydisablecopyonwrite.md)
 

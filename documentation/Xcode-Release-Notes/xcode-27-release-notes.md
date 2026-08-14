@@ -28,7 +28,6 @@ See [`Xcode Support`](https://developer.apple.comhttps://developer.apple.com/sup
 
 - Coding Intelligence agents can now verify watchOS apps, including rotating and pressing the Digital Crown, and pressing the side and Action buttons (Apple Watch Ultra).  (181147968)
 - Xcode 27 Beta 5 adds a preview of a new MCP server experience that runs without requiring an open Xcode workspace. This new experience also allows you to grant code-signed agents permission to use projects within a directory tree for extended periods of time without being asked for additional permissions. You can turn this experience on by using `sudo xcrun mcp-server enable`. Check its state afterward with `xcrun mcp-server status`. Developers running agents in unattended environments can approve all permissions upfront with `sudo xcrun mcp-server enable --unsafe-always-allow-all-agents`. This is not a recommended configuration for at-desk use. In this early preview, some aspects of the `xcrun mcp-server` command line utility may not work in all configurations, and some settings or permissions may occasionally require relaunching Xcode or rebooting your machine to apply.  (181836944)
-- Coding Intelligence agents can now verify tvOS apps, navigating with the Siri Remote to move focus, select, and go Home, and entering text into focused fields.  (183317784)
 
 ###### Known Issues
 

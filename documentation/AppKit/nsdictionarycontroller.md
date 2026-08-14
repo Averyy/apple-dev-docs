@@ -18,7 +18,7 @@ class NSDictionaryController
 
 [`NSDictionaryController`](nsdictionarycontroller.md) transforms the contents of a dictionary into an array of key-value pairs that can be bound to user interface items such as the columns of an [`NSTableView`](nstableview.md).
 
-The content of an [`NSDictionaryController`](nsdictionarycontroller.md) instance is specified using the inherited method [`content`](nsobjectcontroller/content.md) or by binding an [`NSDictionary`](https://developer.apple.com/documentation/Foundation/NSDictionary) instance to the [`contentDictionary`](nsbindingname/contentdictionary.md) binding. New key/value pairs inserted into the dictionary are created using the [`newObject()`](nsdictionarycontroller/newobject().md) method. The initial key name is set to the string returned by [`initialKey`](nsdictionarycontroller/initialkey.md) . The initial key name is copied to the newly inserted object, while the object returned by [`initialValue`](nsdictionarycontroller/initialvalue.md) is simply retained. As new items are inserted the controller enumerates the initial key name, resulting in key names such as “key”, “key1”, “key2”, and so on. This behavior can be customized by overriding [`newObject()`](nsdictionarycontroller/newobject().md).
+The content of an [`NSDictionaryController`](nsdictionarycontroller.md) instance is specified using the inherited method [`content`](nsobjectcontroller/content.md) or by binding an [`NSDictionary`](https://developer.apple.com/documentation/foundation/nsdictionary) instance to the [`contentDictionary`](nsbindingname/contentdictionary.md) binding. New key/value pairs inserted into the dictionary are created using the [`newObject()`](nsdictionarycontroller/newobject().md) method. The initial key name is set to the string returned by [`initialKey`](nsdictionarycontroller/initialkey.md) . The initial key name is copied to the newly inserted object, while the object returned by [`initialValue`](nsdictionarycontroller/initialvalue.md) is simply retained. As new items are inserted the controller enumerates the initial key name, resulting in key names such as “key”, “key1”, “key2”, and so on. This behavior can be customized by overriding [`newObject()`](nsdictionarycontroller/newobject().md).
 
 An [`NSDictionaryController`](nsdictionarycontroller.md) instance can be configured to exclude specified keys in a dictionary from being returned by [`arrangedObjects`](nsarraycontroller/arrangedobjects.md) using the [`excludedKeys`](nsdictionarycontroller/excludedkeys.md) property. Similarly, you can specify an array of key names that are always included in the arranged objects, even if they are not present in the content dictionary, using the [`includedKeys`](nsdictionarycontroller/includedkeys.md) property.
 
@@ -30,7 +30,7 @@ The [`arrangedObjects`](nsarraycontroller/arrangedobjects.md) method returns an 
 
 [`NSDictionaryController`](nsdictionarycontroller.md) overrides [`arrangedObjects`](nsarraycontroller/arrangedobjects.md) to return an array of objects that implement the [`NSDictionaryControllerKeyValuePair`](nsdictionarycontrollerkeyvaluepair.md) informal protocol. For more information, see [`NSDictionaryControllerKeyValuePair`](nsdictionarycontrollerkeyvaluepair.md).
 
-The constants listed below are used to specify a binding to [`bind(_:to:withKeyPath:options:)`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class/bind(_:to:withKeyPath:options:)), [`infoForBinding(_:)`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class/infoForBinding(_:)), [`unbind(_:)`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class/unbind(_:)), and [`valueClassForBinding(_:)`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class/valueClassForBinding(_:)). For more information, see [`Cocoa Bindings`](cocoa-bindings.md).
+The constants listed below are used to specify a binding to [`bind(_:to:withKeyPath:options:)`](https://developer.apple.com/documentation/objectivec/nsobject-swift.class/bind(_:to:withkeypath:options:)), [`infoForBinding(_:)`](https://developer.apple.com/documentation/objectivec/nsobject-swift.class/infoforbinding(_:)), [`unbind(_:)`](https://developer.apple.com/documentation/objectivec/nsobject-swift.class/unbind(_:)), and [`valueClassForBinding(_:)`](https://developer.apple.com/documentation/objectivec/nsobject-swift.class/valueclassforbinding(_:)). For more information, see [`Cocoa Bindings`](cocoa-bindings.md).
 
 - [`contentDictionary`](nsbindingname/contentdictionary.md)
 - [`includedKeys`](nsbindingname/includedkeys.md)
@@ -68,17 +68,17 @@ The constants listed below are used to specify a binding to [`bind(_:to:withKeyP
 ### Inherits From
 - [NSArrayController](nsarraycontroller.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCoding](../Foundation/NSCoding.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCoding](../foundation/nscoding.md)
 - [NSEditor](nseditor.md)
 - [NSEditorRegistration](nseditorregistration.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 
@@ -90,7 +90,7 @@ The constants listed below are used to specify a binding to [`bind(_:to:withKeyP
 - [struct NSBindingInfoKey](nsbindinginfokey.md)
 - [func NSIsControllerMarker(Any?) -> Bool](nsiscontrollermarker(_:).md)
   Tests whether a given object is special marker object used for indicating the state of a selection in relation to a key.
-- [NSKeyValueBindingCreation](../ObjectiveC/nskeyvaluebindingcreation.md)
+- [NSKeyValueBindingCreation](../objectivec/nskeyvaluebindingcreation.md)
   A set of methods that you can use to create and remove bindings between view objects and controllers, or between controllers and model objects.
 - [Binding dictionary keys](binding-dictionary-keys.md)
   These constants define keys in the binding information dictionary.

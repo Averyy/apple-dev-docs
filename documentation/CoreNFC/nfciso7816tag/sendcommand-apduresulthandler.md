@@ -18,15 +18,15 @@ func sendCommand(apdu: NFCISO7816APDU, resultHandler: @escaping (Result<NFCISO78
 
 #### Discussion
 
-When you send a `SELECT` command with a [`p1Parameter`](nfciso7816apdu/p1parameter.md) value of `0x04`, your app must support one of the applications listed in the [`ISO7816 application identifiers for NFC Tag Reader Session`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.nfc.readersession.iso7816.select-identifiers) property list key. Otherwise, the `resultHandler` receives an [`NFCReaderError.Code.readerErrorSecurityViolation`](nfcreadererror-swift.struct/code/readererrorsecurityviolation.md) error.
+When you send a `SELECT` command with a [`p1Parameter`](nfciso7816apdu/p1parameter.md) value of `0x04`, your app must support one of the applications listed in the [`ISO7816 application identifiers for NFC Tag Reader Session`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.nfc.readersession.iso7816.select-identifiers) property list key. Otherwise, the `resultHandler` receives an [`NFCReaderError.Code.readerErrorSecurityViolation`](nfcreadererror-swift.struct/code/readererrorsecurityviolation.md) error.
 
 The session calls `resultHandler` on the dispatch queue that you provided when creating the [`NFCTagReaderSession`](nfctagreadersession.md) object.
 
 ## Parameters
 
 - `apdu`: An application protocol data unit to send to the tag.
-- `resultHandler`: A handler that the reader session invokes after the operation completes. The handler receives a [`Result`](https://developer.apple.com/documentation/Swift/Result) with the cases: - **`success`**: A instance of [`NFCISO7816ResponseAPDU`](nfciso7816responseapdu.md) containing the response from the tag.
-- **`failure`**: An [`Error`](https://developer.apple.com/documentation/Swift/Error) object indicating that a communication issue with the tag occurred.
+- `resultHandler`: A handler that the reader session invokes after the operation completes. The handler receives a [`Result`](https://developer.apple.com/documentation/swift/result) with the cases: - **`success`**: A instance of [`NFCISO7816ResponseAPDU`](nfciso7816responseapdu.md) containing the response from the tag.
+- **`failure`**: An [`Error`](https://developer.apple.com/documentation/swift/error) object indicating that a communication issue with the tag occurred.
 
 ## See Also
 

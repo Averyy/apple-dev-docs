@@ -22,7 +22,7 @@ let MPNowPlayingInfoPropertyPlaybackQueueCount: String
 
 #### Discussion
 
-Value is an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) object configured as an [`NSUInteger`](https://developer.apple.com/documentation/ObjectiveC/NSUInteger).
+Value is an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) object configured as an [`NSUInteger`](https://developer.apple.com/documentation/objectivec/nsuinteger).
 
 ## See Also
 

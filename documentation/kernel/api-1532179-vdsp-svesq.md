@@ -52,11 +52,11 @@ print(String(format: "sum %.4f", sum),
 
 ## Parameters
 
-- `__A`: The single-precision real input vector  .  
-- `__IA`: The stride for input vector  . 
-- `__Sum`: On return, the single-precision scalar sum of the elements of  .
-- `__SumOfSquares`: On return, the single-precision scalar sum of the squares of the elements of  .
-- `__N`: Number of elements in  .
+- `__A`: The single-precision real input vector `A`.  
+- `__IA`: The stride for input vector `A`. 
+- `__Sum`: On return, the single-precision scalar sum of the elements of `A`.
+- `__SumOfSquares`: On return, the single-precision scalar sum of the squares of the elements of `A`.
+- `__N`: Number of elements in `A`.
 
 ## See Also
 

@@ -25,7 +25,7 @@ In iOS 4.0, you may want to call this method whenever your application moves to 
 ## Parameters
 
 - `buttonIndex`: The index of the button that was clicked. Button indices start at `0`.
-- `animated`: Specify [`true`](https://developer.apple.com/documentation/Swift/true) to animate the dismissal of the action sheet or [`false`](https://developer.apple.com/documentation/Swift/false) to remove the action sheet without an animation.
+- `animated`: Specify [`true`](https://developer.apple.com/documentation/swift/true) to animate the dismissal of the action sheet or [`false`](https://developer.apple.com/documentation/swift/false) to remove the action sheet without an animation.
 
 
 ---

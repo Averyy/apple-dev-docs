@@ -252,13 +252,13 @@ Use the following JSON schema to validate your chapter data.
 
 Use QuickTime Player to quickly test your HLS streams with chapter data. QuickTime Player will display a chapter pop-up control (with images, if you have them). In QuickTime Player, use File > Open Location or ⌘L to open a URL. QuickTime Player displays your chapters in the order they appear in the JSON file, without sorting or rearranging them.
 
-[`AVAsset`](https://developer.apple.com/documentation/AVFoundation/AVAsset) contains details of how to access chapter data. The methods described return an array of [`AVTimedMetadataGroup`](https://developer.apple.com/documentation/AVFoundation/AVTimedMetadataGroup) objects, one object for each chapter. The order of the groups matches the order of the JSON file.
+[`AVAsset`](https://developer.apple.com/documentation/avfoundation/avasset) contains details of how to access chapter data. The methods described return an array of [`AVTimedMetadataGroup`](https://developer.apple.com/documentation/avfoundation/avtimedmetadatagroup) objects, one object for each chapter. The order of the groups matches the order of the JSON file.
 
-Each `AVTimedMetadataGroup` object has a start time, end time, and a list of [`AVMetadataItem`](https://developer.apple.com/documentation/AVFoundation/AVMetadataItem). Every item from the titles, images, and metadata arrays in the JSON is in the list of metadata items.
+Each `AVTimedMetadataGroup` object has a start time, end time, and a list of [`AVMetadataItem`](https://developer.apple.com/documentation/avfoundation/avmetadataitem). Every item from the titles, images, and metadata arrays in the JSON is in the list of metadata items.
 
 Images have an `extraAttributes` dictionary. This dictionary contains a key `“iTunesImageResolution”` whose value is a dictionary that contains the `pixel-width`,  `pixel-height`, and `image-category` from the JSON entry.
 
-The metadata item keys are placed in the key space [`quickTimeMetadata`](https://developer.apple.com/documentation/AVFoundation/AVMetadataKeySpace/quickTimeMetadata). This key space defines its key values to be expressed as reverse-DNS strings. This allows you to define your own keys in a well-established way that avoids collisions.
+The metadata item keys are placed in the key space [`quickTimeMetadata`](https://developer.apple.com/documentation/avfoundation/avmetadatakeyspace/quicktimemetadata). This key space defines its key values to be expressed as reverse-DNS strings. This allows you to define your own keys in a well-established way that avoids collisions.
 
 ## See Also
 

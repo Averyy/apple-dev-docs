@@ -25,15 +25,15 @@ A [`CIRenderDestination`](cirenderdestination.md) object for rendering to a Meta
 
 #### Discussion
 
-The destination’s [`colorSpace`](cirenderdestination/colorspace.md) property will default to a [`CGColorSpace`](https://developer.apple.com/documentation/CoreGraphics/CGColorSpace) created with [`sRGB`](https://developer.apple.com/documentation/CoreGraphics/CGColorSpace/sRGB), [`extendedSRGB`](https://developer.apple.com/documentation/CoreGraphics/CGColorSpace/extendedSRGB), or [`genericGrayGamma2_2`](https://developer.apple.com/documentation/CoreGraphics/CGColorSpace/genericGrayGamma2_2).
+The destination’s [`colorSpace`](cirenderdestination/colorspace.md) property will default to a [`CGColorSpace`](https://developer.apple.com/documentation/coregraphics/cgcolorspace) created with [`sRGB`](https://developer.apple.com/documentation/coregraphics/cgcolorspace/srgb), [`extendedSRGB`](https://developer.apple.com/documentation/coregraphics/cgcolorspace/extendedsrgb), or [`genericGrayGamma2_2`](https://developer.apple.com/documentation/coregraphics/cgcolorspace/genericgraygamma2_2).
 
 ## Parameters
 
-- `width`: Width of the [`MTLTexture`](https://developer.apple.com/documentation/Metal/MTLTexture) that will be returned by block.
-- `height`: Height of the [`MTLTexture`](https://developer.apple.com/documentation/Metal/MTLTexture) that will be returned by block.
-- `pixelFormat`: Pixel format of the [`MTLTexture`](https://developer.apple.com/documentation/Metal/MTLTexture) that will be returned by block.
-- `commandBuffer`: An optional [`MTLCommandBuffer`](https://developer.apple.com/documentation/Metal/MTLCommandBuffer) used for rendering to the [`MTLTexture`](https://developer.apple.com/documentation/Metal/MTLTexture).
-- `block`: [`MTLTexture`](https://developer.apple.com/documentation/Metal/MTLTexture)-rendering provider block to be called lazily when the destination is rendered to.  The block must return a texture of [`MTLTextureType`](https://developer.apple.com/documentation/Metal/MTLTextureType) of [`MTLTextureType.type2D`](https://developer.apple.com/documentation/Metal/MTLTextureType/type2D).
+- `width`: Width of the [`MTLTexture`](https://developer.apple.com/documentation/metal/mtltexture) that will be returned by block.
+- `height`: Height of the [`MTLTexture`](https://developer.apple.com/documentation/metal/mtltexture) that will be returned by block.
+- `pixelFormat`: Pixel format of the [`MTLTexture`](https://developer.apple.com/documentation/metal/mtltexture) that will be returned by block.
+- `commandBuffer`: An optional [`MTLCommandBuffer`](https://developer.apple.com/documentation/metal/mtlcommandbuffer) used for rendering to the [`MTLTexture`](https://developer.apple.com/documentation/metal/mtltexture).
+- `block`: [`MTLTexture`](https://developer.apple.com/documentation/metal/mtltexture)-rendering provider block to be called lazily when the destination is rendered to.  The block must return a texture of [`MTLTextureType`](https://developer.apple.com/documentation/metal/mtltexturetype) of [`MTLTextureType.type2D`](https://developer.apple.com/documentation/metal/mtltexturetype/type2d).
 
 ## See Also
 

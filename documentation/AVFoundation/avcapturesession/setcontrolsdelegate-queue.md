@@ -29,7 +29,7 @@ People interact with capture controls by performing specific gestures to enable 
 ## Parameters
 
 - `controlsDelegate`: An object that adopts the controls delegate protocol.
-- `controlsDelegateCallbackQueue`: A serial dispatch queue on which to call the delegate methods. You must specify a serial queue to ensure callbacks occur in order. This argument must not be `nil` unless the `controlsDelegate` argument is also `nil;` otherwise, the system throws an [`invalidArgumentException`](https://developer.apple.com/documentation/Foundation/NSExceptionName/invalidArgumentException).
+- `controlsDelegateCallbackQueue`: A serial dispatch queue on which to call the delegate methods. You must specify a serial queue to ensure callbacks occur in order. This argument must not be `nil` unless the `controlsDelegate` argument is also `nil;` otherwise, the system throws an [`invalidArgumentException`](https://developer.apple.com/documentation/foundation/nsexceptionname/invalidargumentexception).
 
 ## See Also
 

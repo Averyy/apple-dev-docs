@@ -23,7 +23,7 @@ let kIOSurfacePlaneOffset: CFString
 
 If not specified then IOSurface will lay out each plane sequentially based on the previous plane’s allocation size.
 
-This value is stored as a [`CFNumber`](https://developer.apple.com/documentation/CoreFoundation/CFNumber).
+This value is stored as a [`CFNumber`](https://developer.apple.com/documentation/corefoundation/cfnumber).
 
 ## See Also
 

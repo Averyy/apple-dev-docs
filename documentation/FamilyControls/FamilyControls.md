@@ -14,9 +14,9 @@ Authorize your app to provide parental controls on a device.
 
 To authorize your parental controls app, use a shared [`AuthorizationCenter`](authorizationcenter.md) instance. You can authorize parental controls on any device.
 
-![A figure labeled allow activity. It shows an arrow from a Family Sharing logo](https://docs-assets.developer.apple.com/published/e21e1d0eba4c9be965970c6eb2fabd82/family-controls-overview%402x.png)
+![A figure labeled allow activity. It shows an arrow from a Family Sharing logo](/images/com.apple.FamilyControls/family-controls-overview@2x.png)
 
-> ❗ **Important**: You must add the Family Controls capability to your app before you call the [`requestAuthorization(for:)`](authorizationcenter/requestauthorization(for:).md) or [`revokeAuthorization(completionHandler:)`](authorizationcenter/revokeauthorization(completionhandler:).md) methods. This capability adds the [`Family Controls`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.family-controls) entitlement to your app. Before submitting your app to the App Store, you must [`request permission`](https://developer.apple.comhttps://developer.apple.com/contact/request/family-controls-distribution) to use the entitlement. For more information, see [`Adding capabilities to your app`](https://developer.apple.com/documentation/Xcode/adding-capabilities-to-your-app).
+> ❗ **Important**: You must add the Family Controls capability to your app before you call the [`requestAuthorization(for:)`](authorizationcenter/requestauthorization(for:).md) or [`revokeAuthorization(completionHandler:)`](authorizationcenter/revokeauthorization(completionhandler:).md) methods. This capability adds the [`Family Controls`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.family-controls) entitlement to your app. Before submitting your app to the App Store, you must [`request permission`](https://developer.apple.comhttps://developer.apple.com/contact/request/family-controls-distribution) to use the entitlement. For more information, see [`Adding capabilities to your app`](https://developer.apple.com/documentation/xcode/adding-capabilities-to-your-app).
 
 Authorizing parental controls for a child requires approval from a parent or guardian in the same Family Sharing group. The system displays an authentication sheet on the child’s device, and the parent or guardian approves or denies the authorization request. The system sends the result to your app’s `AuthorizationCenter`.
 
@@ -33,7 +33,7 @@ In a compatible iPad or iPhone app running in visionOS, authorization attempts a
   The center for requesting authorization to provide parental controls.
 - [enum AuthorizationStatus](authorizationstatus.md)
   The status of your app’s authorization to provide parental controls.
-- [Family Controls](../BundleResources/Entitlements/com.apple.developer.family-controls.md)
+- [Family Controls](../bundleresources/entitlements/com.apple.developer.family-controls.md)
   A Boolean value that indicates whether the app can request or revoke authorization to provide parental controls.
 - [Requesting the Family Controls entitlement](requesting-the-family-controls-entitlement.md)
   Register your app and its Screen Time API app extensions to use Family Controls.

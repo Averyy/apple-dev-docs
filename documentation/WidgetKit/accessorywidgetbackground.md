@@ -27,7 +27,7 @@ An adaptive background view that provides a standard appearance based on the the
 
 #### Overview
 
-Use this view to provide a standardized background for your accessory widgets. Place the view in a [`ZStack`](https://developer.apple.com/documentation/SwiftUI/ZStack) behind your widget’s content.
+Use this view to provide a standardized background for your accessory widgets. Place the view in a [`ZStack`](https://developer.apple.com/documentation/swiftui/zstack) behind your widget’s content.
 
 ```Swift
 ZStack {
@@ -53,9 +53,9 @@ The system only displays this view inside a [`WidgetFamily.accessoryCircular`](w
 ## Relationships
 
 ### Conforms To
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
-- [View](../SwiftUI/View.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
+- [View](../swiftui/view.md)
 
 ## See Also
 

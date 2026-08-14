@@ -6,23 +6,23 @@ Manage tickets, boarding passes, payment cards and other passes in the Wallet ap
 
 #### Overview
 
-To access your pass using PassKit, add the Wallet capability to your app. Use the API in Wallet to access and manage different types of passes, including identity passes, payment passes, and digital car keys. You can choose to access all of the passes signed with your developer team identifier, or access a subset of pass types. For information on adding capabilities to your app, see [`Adding capabilities to your app`](https://developer.apple.com/documentation/Xcode/adding-capabilities-to-your-app). For information on signing a pass, see [`Wallet Passes`](https://developer.apple.com/documentation/WalletPasses).
+To access your pass using PassKit, add the Wallet capability to your app. Use the API in Wallet to access and manage different types of passes, including identity passes, payment passes, and digital car keys. You can choose to access all of the passes signed with your developer team identifier, or access a subset of pass types. For information on adding capabilities to your app, see [`Adding capabilities to your app`](https://developer.apple.com/documentation/xcode/adding-capabilities-to-your-app). For information on signing a pass, see [`Wallet Passes`](https://developer.apple.com/documentation/walletpasses).
 
 ## Topics
 
 ### Essentials
-- [Pass Type IDs Entitlement](../BundleResources/Entitlements/com.apple.developer.pass-type-identifiers.md)
+- [Pass Type IDs Entitlement](../bundleresources/entitlements/com.apple.developer.pass-type-identifiers.md)
   A list of identifiers that specify pass types that your app can access in Wallet.
-- [Merchant IDs Entitlement](../BundleResources/Entitlements/com.apple.developer.in-app-payments.md)
+- [Merchant IDs Entitlement](../bundleresources/entitlements/com.apple.developer.in-app-payments.md)
   A list of merchant IDs your app uses for Apple Pay support.
-- [com.apple.developer.in-app-identity-presentment](../BundleResources/Entitlements/com.apple.developer.in-app-identity-presentment.md)
+- [com.apple.developer.in-app-identity-presentment](../bundleresources/entitlements/com.apple.developer.in-app-identity-presentment.md)
   An entitlement that verifies age or identity.
 - [Requesting identity data from a Wallet pass](requesting-identity-data-from-a-wallet-pass.md)
   Initiate a request for identity information by prompting a user for permission and decrypting a response payload.
 - [Verifying Wallet identity requests](verifying-wallet-identity-requests.md)
   Decrypt and verify an in-app presentment request on your server.
 ### Wallet Passes
-- [Wallet Passes](../WalletPasses/WalletPasses.md)
+- [Wallet Passes](../walletpasses/walletpasses.md)
   Create, distribute, and update passes for the Wallet app.
 ### Common data types
 - [class PKObject](pkobject.md)

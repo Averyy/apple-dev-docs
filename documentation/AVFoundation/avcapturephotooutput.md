@@ -45,7 +45,7 @@ Enabling certain photo features (Live Photo capture and high resolution capture)
 
 Using a photo capture output adds other requirements to your [`AVCaptureSession`](avcapturesession.md) object:
 
-- A capture session can’t support both Live Photo capture and movie file output. If your capture session includes an [`AVCaptureMovieFileOutput`](avcapturemoviefileoutput.md) object, the [`isLivePhotoCaptureSupported`](avcapturephotooutput/islivephotocapturesupported.md) property becomes [`false`](https://developer.apple.com/documentation/Swift/false). (As an alternative, you can use the [`AVCaptureVideoDataOutput`](avcapturevideodataoutput.md) class to output video buffers at the same resolution as a simultaneous Live Photo capture).
+- A capture session can’t support both Live Photo capture and movie file output. If your capture session includes an [`AVCaptureMovieFileOutput`](avcapturemoviefileoutput.md) object, the [`isLivePhotoCaptureSupported`](avcapturephotooutput/islivephotocapturesupported.md) property becomes [`false`](https://developer.apple.com/documentation/swift/false). (As an alternative, you can use the [`AVCaptureVideoDataOutput`](avcapturevideodataoutput.md) class to output video buffers at the same resolution as a simultaneous Live Photo capture).
 - A capture session can’t contain both an [`AVCapturePhotoOutput`](avcapturephotooutput.md) object and an [`AVCaptureStillImageOutput`](avcapturestillimageoutput.md) object. The [`AVCapturePhotoOutput`](avcapturephotooutput.md) class includes all functionality of (and deprecates) the [`AVCaptureStillImageOutput`](avcapturestillimageoutput.md) class.
 
 The [`AVCapturePhotoOutput`](avcapturephotooutput.md) class implicitly supports wide-gamut color photography. If the source [`AVCaptureDevice`](avcapturedevice.md) object’s [`activeColorSpace`](avcapturedevice/activecolorspace.md) value is [`AVCaptureColorSpace.P3_D65`](avcapturecolorspace/p3_d65.md), the capture output produces photos with wide color information (unless your [`AVCapturePhotoSettings`](avcapturephotosettings.md) object specifies an output format that doesn’t support wide color).
@@ -202,12 +202,12 @@ The [`AVCapturePhotoOutput`](avcapturephotooutput.md) class implicitly supports 
 ### Inherits From
 - [AVCaptureOutput](avcaptureoutput.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 
@@ -217,7 +217,7 @@ The [`AVCapturePhotoOutput`](avcapturephotooutput.md) class implicitly supports 
   Configure and capture single or multiple still images, Live Photos, and other forms of photography.
 - [Capturing photos in RAW and Apple ProRAW formats](capturing-photos-in-raw-and-apple-proraw-formats.md)
   Support professional photography workflows by enabling minimally processed image capture in your camera app.
-- [Supporting Continuity Camera in Your Mac App](../AppKit/supporting-continuity-camera-in-your-mac-app.md)
+- [Supporting Continuity Camera in Your Mac App](../appkit/supporting-continuity-camera-in-your-mac-app.md)
   Incorporate scanned documents and pictures from a user’s iPhone, iPad, or iPod touch into your Mac app using Continuity Camera.
 - [class AVCapturePhoto](avcapturephoto.md)
   A container for image data from a photo capture output.

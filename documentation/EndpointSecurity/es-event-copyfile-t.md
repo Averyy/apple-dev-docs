@@ -42,7 +42,7 @@ Be aware that the `copyfile` system call isn’t the same thing as the `copyfile
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../Swift/BitwiseCopyable.md)
+- [BitwiseCopyable](../swift/bitwisecopyable.md)
 
 ## See Also
 

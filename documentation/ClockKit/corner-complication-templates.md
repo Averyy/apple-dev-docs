@@ -8,11 +8,11 @@ Display graphically rich data in the watch face’s corner.
 
 The graphic corner templates display gauges, images, and text in the watch face’s corner.
 
-![An illustration of templates in all four corners, including curved text and gauges.](https://docs-assets.developer.apple.com/published/a3fc0c9a1809a1b45c41fb829bf2d2b8/media-3744078%402x.png)
+![An illustration of templates in all four corners, including curved text and gauges.](/images/com.apple.clockkit/media-3744078@2x.png)
 
 The tinted versions of the templates are shown below:
 
-![An illustration that shows tinted versions of templates in all four corners, including curved text and gauges.](https://docs-assets.developer.apple.com/published/dbcfaf72752adf846c0346f47536bd88/media-3744091%402x.png)
+![An illustration that shows tinted versions of templates in all four corners, including curved text and gauges.](/images/com.apple.clockkit/media-3744091@2x.png)
 
 ## Topics
 

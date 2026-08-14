@@ -16,9 +16,9 @@ class IOUserNetworkEthernet;
 
 #### Overview
 
-Subclass `IOUserNetworkEthernet` and override the methods you need to implement your driver’s behavior. Your subclass manages your driver’s overall life cycle, and facilitates communication between the hardware and the rest of the system. Use the [`Start`](https://developer.apple.com/documentation/DriverKit/IOService/Start) method to establish a link to your hardware and to create the data structures needed to manage incoming and outgoing data packets. Use the [`Stop`](https://developer.apple.com/documentation/DriverKit/IOService/Stop) method to clean up the data structures you create in your [`Start`](https://developer.apple.com/documentation/DriverKit/IOService/Start) method.
+Subclass `IOUserNetworkEthernet` and override the methods you need to implement your driver’s behavior. Your subclass manages your driver’s overall life cycle, and facilitates communication between the hardware and the rest of the system. Use the [`Start`](https://developer.apple.com/documentation/driverkit/ioservice/start) method to establish a link to your hardware and to create the data structures needed to manage incoming and outgoing data packets. Use the [`Stop`](https://developer.apple.com/documentation/driverkit/ioservice/stop) method to clean up the data structures you create in your [`Start`](https://developer.apple.com/documentation/driverkit/ioservice/start) method.
 
-Override other methods of this class, and of the [`IOService`](https://developer.apple.com/documentation/DriverKit/IOService) parent class, as needed to enable your interface and implement other network-related behaviors. For example, you might want to override the inherited [`setPowerState`](https://developer.apple.com/documentation/kernel/ioservice/1532866-setpowerstate) method to respond to power-level changes.
+Override other methods of this class, and of the [`IOService`](https://developer.apple.com/documentation/driverkit/ioservice) parent class, as needed to enable your interface and implement other network-related behaviors. For example, you might want to override the inherited [`setPowerState`](https://developer.apple.com/documentation/kernel/ioservice/1532866-setpowerstate) method to respond to power-level changes.
 
 ##### Specify the Drivers Personality Information
 
@@ -27,9 +27,9 @@ When you subclass `IOUserNetworkEthernet`, update the `IOKitPersonalities` key o
 | Key | Discussion |
 | --- | --- |
 | `IOClass` | The value [`IOUserNetworkEthernet`](iousernetworkethernet.md). |
-| `IOProviderClass` | The provider class information. For USB-based network interfaces, specify [`IOUSBHostInterface`](https://developer.apple.com/documentation/USBDriverKit/IOUSBHostInterface). |
+| `IOProviderClass` | The provider class information. For USB-based network interfaces, specify [`IOUSBHostInterface`](https://developer.apple.com/documentation/usbdriverkit/iousbhostinterface). |
 | `IOUserClass` | The name of your custom subclass. |
-| [`CFBundleIdentifier`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/CFBundleIdentifier) | The bundle identifier of your driver. |
+| [`CFBundleIdentifier`](https://developer.apple.com/documentation/bundleresources/information-property-list/cfbundleidentifier) | The bundle identifier of your driver. |
 | `CFBundleIdentifierKernel` | The value `com.apple.iokit.IOSkywalkFamily`. |
 
 You may add other keys to assist with the matching process. For example, you might include the `bInterfaceClass`, `bInterfaceProtocol`, and `bInterfaceSubClass` keys to match against specific USB device attributes. The USB specification defines which keys to include when matching your driver to a USB device. For information about the specific key combinations, see *Universal Serial Bus Common Class Specification* at [`https://www.usb.org`](https://developer.apple.comhttps://www.usb.org).
@@ -133,7 +133,7 @@ You may add other keys to assist with the matching process. For example, you mig
 ## Relationships
 
 ### Inherits From
-- [IOService](../DriverKit/IOService.md)
+- [IOService](../driverkit/ioservice.md)
 
 
 ---

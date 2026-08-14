@@ -22,7 +22,7 @@ This method is not supported. Use [`localizedStringWithFormat`](system/1812327-l
 ## Parameters
 
 - `stringKey`: A string that identifies the desired localized string.
-- `args...`: Arguments that replace placeholders ( ) in the formatted localized string.
+- `args...`: Arguments that replace placeholders (`%@`) in the formatted localized string.
 
 ## See Also
 

@@ -24,7 +24,7 @@ This method is the entry point for inserting text typed by the user and is gener
 
 ## Parameters
 
-- `insertString`: The string to insert. `aString` can be either an [`NSString`](https://developer.apple.com/documentation/Foundation/NSString) object or an [`NSAttributedString`](https://developer.apple.com/documentation/Foundation/NSAttributedString) object.
+- `insertString`: The string to insert. `aString` can be either an [`NSString`](https://developer.apple.com/documentation/foundation/nsstring) object or an [`NSAttributedString`](https://developer.apple.com/documentation/foundation/nsattributedstring) object.
 
 ## See Also
 

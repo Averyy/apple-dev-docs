@@ -19,7 +19,7 @@ class UIWebView
 
 #### Overview
 
-> **Note**:  In apps that run in iOS 8 and later, use the [`WKWebView`](https://developer.apple.com/documentation/WebKit/WKWebView) class instead of using [`UIWebView`](uiwebview.md). Additionally, consider setting the [`WKPreferences`](https://developer.apple.com/documentation/WebKit/WKPreferences) property [`javaScriptEnabled`](https://developer.apple.com/documentation/WebKit/WKPreferences/javaScriptEnabled) to [`false`](https://developer.apple.com/documentation/Swift/false) if you render files that aren’t supposed to run JavaScript.
+> **Note**:  In apps that run in iOS 8 and later, use the [`WKWebView`](https://developer.apple.com/documentation/webkit/wkwebview) class instead of using [`UIWebView`](uiwebview.md). Additionally, consider setting the [`WKPreferences`](https://developer.apple.com/documentation/webkit/wkpreferences) property [`javaScriptEnabled`](https://developer.apple.com/documentation/webkit/wkpreferences/javascriptenabled) to [`false`](https://developer.apple.com/documentation/swift/false) if you render files that aren’t supposed to run JavaScript.
 
 > ❗ **Important**:  An iOS app linked on or after iOS 10.0 must include in its `Info.plist` file the usage description keys for the types of data it needs to access or it will crash. To access a user’s photo data specifically, it must include [`NSPhotoLibraryUsageDescription`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CocoaKeys.html#//apple_ref/doc/uid/TP40009251-SW17) and [`NSCameraUsageDescription`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CocoaKeys.html#//apple_ref/doc/uid/TP40009251-SW24).
 
@@ -54,7 +54,7 @@ The [`UIWebView`](uiwebview.md) class shouldn’t be subclassed.
 ## Topics
 
 ### Essentials
-- [Replacing UIWebView in your app](../WebKit/replacing-uiwebview-in-your-app.md)
+- [Replacing UIWebView in your app](../webkit/replacing-uiwebview-in-your-app.md)
   Find a suitable alternative to handle your app’s web content.
 ### Responding to web view changes
 - [var delegate: (any UIWebViewDelegate)?](uiwebview/delegate.md)
@@ -136,18 +136,18 @@ The [`UIWebView`](uiwebview.md) class shouldn’t be subclassed.
 ### Inherits From
 - [UIView](uiview.md)
 ### Conforms To
-- [CALayerDelegate](../QuartzCore/CALayerDelegate.md)
-- [CLBodyIdentifiable](../CoreLocation/CLBodyIdentifiable.md)
-- [CMBodyIdentifiable](../CoreMotion/CMBodyIdentifiable.md)
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCoding](../Foundation/NSCoding.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [CALayerDelegate](../quartzcore/calayerdelegate.md)
+- [CLBodyIdentifiable](../corelocation/clbodyidentifiable.md)
+- [CMBodyIdentifiable](../coremotion/cmbodyidentifiable.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCoding](../foundation/nscoding.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 - [UIAccessibilityIdentification](uiaccessibilityidentification.md)
 - [UIActivityItemsConfigurationProviding](uiactivityitemsconfigurationproviding.md)
 - [UIAppearance](uiappearance.md)

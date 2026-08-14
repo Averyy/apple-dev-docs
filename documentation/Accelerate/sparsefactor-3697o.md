@@ -30,7 +30,7 @@ Use this function to calculate the symbolic factorization of a sparse matrix’s
 
 The following figure shows two systems of equations where the coefficient matrix is sparse:
 
-![A mathematical equation that has two stacked sets of three simultaneous equations on the left. Each equation has three unknowns. The same sets of simultaneous equations appear on the right as two matrix equations, A x equals B. Each matrix equation consists of a three-by-three matrix multiplied by a three-element column matrix that equals a three-element column matrix.](https://docs-assets.developer.apple.com/published/7183115249663e3ee5beedf41262d86d/media-3703904%402x.png)
+![A mathematical equation that has two stacked sets of three simultaneous equations on the left. Each equation has three unknowns. The same sets of simultaneous equations appear on the right as two matrix equations, A x equals B. Each matrix equation consists of a three-by-three matrix multiplied by a three-element column matrix that equals a three-element column matrix.](/images/com.apple.accelerate/media-3703904@2x.png)
 
 The following code solves these two systems by creating a symbolic factorization that’s common to both coefficient matrices. Note that the two coefficient matrices contain different numeric values with different precisions.
 

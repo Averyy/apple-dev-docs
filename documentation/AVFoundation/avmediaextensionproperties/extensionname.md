@@ -16,7 +16,7 @@ var extensionName: String { get }
 
 #### Discussion
 
-This value corresponds to the extension’s [`CFBundleDisplayName`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/CFBundleDisplayName).
+This value corresponds to the extension’s [`CFBundleDisplayName`](https://developer.apple.com/documentation/bundleresources/information-property-list/cfbundledisplayname).
 
 ## See Also
 

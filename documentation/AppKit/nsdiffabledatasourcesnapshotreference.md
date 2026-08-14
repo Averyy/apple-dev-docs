@@ -66,8 +66,8 @@ NSDiffableDataSourceSnapshot<NSNumber *, NSUUID *> *snapshot = [[NSDiffableDataS
 
 For more information, see the diffable data source types:
 
-- [`UICollectionViewDiffableDataSource`](https://developer.apple.com/documentation/UIKit/UICollectionViewDiffableDataSource-9tqpa)
-- [`UITableViewDiffableDataSource`](https://developer.apple.com/documentation/UIKit/UITableViewDiffableDataSource-2euir)
+- [`UICollectionViewDiffableDataSource`](https://developer.apple.com/documentation/uikit/uicollectionviewdiffabledatasource-9tqpa)
+- [`UITableViewDiffableDataSource`](https://developer.apple.com/documentation/uikit/uitableviewdiffabledatasource-2euir)
 - [`NSCollectionViewDiffableDataSourceReference`](nscollectionviewdiffabledatasourcereference.md)
 
 ##### Bridging
@@ -141,15 +141,15 @@ let snapshot = snapshotReference as NSDiffableDataSourceSnapshot<Int, UUID>
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCopying](../Foundation/NSCopying.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCopying](../foundation/nscopying.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 
 ---

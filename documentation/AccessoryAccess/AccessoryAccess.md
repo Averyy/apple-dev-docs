@@ -10,7 +10,7 @@ Manage access to connected USB accessories.
 
 #### Discussion
 
-The AccessoryAccess framework provides access to connected USB devices that use the [`IOUSBHost`](https://developer.apple.com/documentation/IOUSBHost) framework, allowing clients to express interest through one or more registered accessory listeners.
+The AccessoryAccess framework provides access to connected USB devices that use the [`IOUSBHost`](https://developer.apple.com/documentation/iousbhost) framework, allowing clients to express interest through one or more registered accessory listeners.
 
 ## Topics
 

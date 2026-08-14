@@ -28,7 +28,7 @@ Some destination types define a specific kind of destination location for a prin
 
 - `printSession`: The printing session that provides a context for the print job.
 - `printSettings`: The print settings for the print job whose destination location you want to obtain.
-- `destLocationP`: A pointer to your   variable. On return, the variable refers to a Core Foundation URL that specifies the destination location of the print job. You are responsible for releasing the URL. If   is returned and the function executes without error (result code is  ), the print job uses the default destination location for the current destination type. If an error occurs, the variable is set to  . 
+- `destLocationP`: A pointer to your [`CFURL`](https://developer.apple.com/documentation/corefoundation/cfurl) variable. On return, the variable refers to a Core Foundation URL that specifies the destination location of the print job. You are responsible for releasing the URL. If `NULL` is returned and the function executes without error (result code is `noErr`), the print job uses the default destination location for the current destination type. If an error occurs, the variable is set to `NULL`. 
 
 ## See Also
 

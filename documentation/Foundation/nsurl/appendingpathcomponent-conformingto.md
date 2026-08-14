@@ -28,13 +28,13 @@ A new URL with the partial name and the type’s preferred extension appended.
 
 Use this method when you want to mix partial input from a user or other source, and need to produce a complete filename suitable for that input. For example, if you download a file from the internet and know its MIME type, you can use this method to ensure the URL has the correct filename extension where you save the file.
 
-If `partialName` already has a path extension, and that path extension is valid for file system objects of type `contentType`, the function doesn’t add an extension before appending it to the URL. For example, if the inputs are `puppy.jpg` and [`image`](https://developer.apple.com/documentation/UniformTypeIdentifiers/UTType-swift.struct/image), respectively, the function returns a URL with an appended path component of `puppy.jpg`. However, if the inputs are `puppy.jpg` and [`plainText`](https://developer.apple.com/documentation/UniformTypeIdentifiers/UTType-swift.struct/plainText), respectively, the function returns a URL with an appended path component of `puppy.jpg.txt`. If you want to replace any existing path extension, use the [`deletePathExtension()`](url/deletepathextension().md) method first.
+If `partialName` already has a path extension, and that path extension is valid for file system objects of type `contentType`, the function doesn’t add an extension before appending it to the URL. For example, if the inputs are `puppy.jpg` and [`image`](https://developer.apple.com/documentation/uniformtypeidentifiers/uttype-swift.struct/image), respectively, the function returns a URL with an appended path component of `puppy.jpg`. However, if the inputs are `puppy.jpg` and [`plainText`](https://developer.apple.com/documentation/uniformtypeidentifiers/uttype-swift.struct/plaintext), respectively, the function returns a URL with an appended path component of `puppy.jpg.txt`. If you want to replace any existing path extension, use the [`deletePathExtension()`](url/deletepathextension().md) method first.
 
 If the function can’t append the path component, it returns an unchanged URL.
 
-> **Note**:  The modified URL has a directory path if `contentType` conforms to [`directory`](https://developer.apple.com/documentation/UniformTypeIdentifiers/UTType-swift.struct/directory).
+> **Note**:  The modified URL has a directory path if `contentType` conforms to [`directory`](https://developer.apple.com/documentation/uniformtypeidentifiers/uttype-swift.struct/directory).
 
-For more information about types, see [`Uniform Type Identifiers`](https://developer.apple.com/documentation/UniformTypeIdentifiers).
+For more information about types, see [`Uniform Type Identifiers`](https://developer.apple.com/documentation/uniformtypeidentifiers).
 
 ## Parameters
 

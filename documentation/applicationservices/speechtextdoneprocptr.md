@@ -30,8 +30,8 @@ If your text-done callback function does not change the valuesof the `nextBuf` a
 
 - `chan`: The speech channel that has finished processing input text.
 - `refCon`: The reference constant associated with the speech channel. 
-- `nextBuf`: On return, a pointer to the next buffer of text to process or   if your application has no additional text to be spoken. This parameter is mostly for internal use by the Speech Synthesis Manager. 
-- `byteLen`: On return, a pointer to the number of bytes of the text buffer pointed to by the   parameter. 
+- `nextBuf`: On return, a pointer to the next buffer of text to process or `NULL` if your application has no additional text to be spoken. This parameter is mostly for internal use by the Speech Synthesis Manager. 
+- `byteLen`: On return, a pointer to the number of bytes of the text buffer pointed to by the `nextBuf` parameter. 
 - `controlFlags`: On return, a pointer to the control flags to be used in generating the next buffer of text.
 
 ## See Also

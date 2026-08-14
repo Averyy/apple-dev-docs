@@ -23,7 +23,7 @@ The zero-based index of the current output element.
 
 This function provides the zero-based index of the output element within the current output range, useful for per-element computations and indexing operations. If sorting is active, this corresponds to the post-sorting ordering.
 
-> **Note**: ![Graph](https://docs-assets.developer.apple.com/published/626df9bd64141a722fb48fd6e0895b14/output__outputIndex.svg)
+> **Note**: ![Graph](/images/com.apple.computegraph/output__outputIndex.svg)
 
 
 ---

@@ -26,14 +26,14 @@ The sample runs in one of two modes, depending on how many GPUs are available to
 
 **Simulation with a single Metal device.** When only one Metal device is available, the sample executes the simulation and renders the intermediate results serially. The compute simulation and the graphics rendering are performed on the same thread by the same device.
 
-![A flowchart that shows the simulation with a single device on the main thread. The sample simulates a new frame, and if the simulation is complete, the sample renders all simulation data. Otherwise, if the simulation isn’t complete, the sample renders a subset of the simulation data and repeats the process.](https://docs-assets.developer.apple.com/published/61492c1c60f708912c1f36cb388a1796/1-single-device-executation.png)
+![A flowchart that shows the simulation with a single device on the main thread. The sample simulates a new frame, and if the simulation is complete, the sample renders all simulation data. Otherwise, if the simulation isn’t complete, the sample renders a subset of the simulation data and repeats the process.](/images/com.apple.metal/1-single-device-executation.png)
 
 **Simulation with multiple Metal devices.** When multiple Metal devices are available, the sample spawns a second thread to separate the compute processing and graphics rendering work between two GPUs. The threads run concurrently and repeatedly, sharing data as follows:
 
 - The simulation thread produces and transfers intermediate results to system memory.
 - The render thread—the main thread—consumes and renders intermediate results from system memory. (All graphics rendering occurs on the main thread.)
 
-![A flowchart that shows the simulation with two Metal devices, one on the simulation thread and the other on the render thread. On the simulation thread, the sample simulates a new frame, and if the simulation is complete, the sample transfers all simulation data to system memory. Otherwise, if the simulation isn’t complete, the sample transfers a subset of the simulation data to system memory and repeats the process. On the render thread, the sample creates a buffer with the latest simulation data available in system memory, then renders the simulation data in the buffer, and finally repeats the process.](https://docs-assets.developer.apple.com/published/ae88bbf6e567e13477a82d670696f9d0/2-multi-device-executation.png)
+![A flowchart that shows the simulation with two Metal devices, one on the simulation thread and the other on the render thread. On the simulation thread, the sample simulates a new frame, and if the simulation is complete, the sample transfers all simulation data to system memory. Otherwise, if the simulation isn’t complete, the sample transfers a subset of the simulation data to system memory and repeats the process. On the render thread, the sample creates a buffer with the latest simulation data available in system memory, then renders the simulation data in the buffer, and finally repeats the process.](/images/com.apple.metal/2-multi-device-executation.png)
 
 The threads don’t wait on each other; they work independently at different rates. The simulation thread runs as fast as possible and the render thread runs as fast as the display’s frame rate.
 
@@ -58,13 +58,13 @@ This sample uses two separate classes to encode Metal commands: `AAPLSimulation`
 
 When the sample runs on a single device, the view controller executes the simulation and renderer work serially. For each frame, they both encode commands to the same [`MTLCommandBuffer`](mtlcommandbuffer.md) and they both share the positions of the N-body particles via the same [`MTLBuffer`](mtlbuffer.md).
 
-![A flowchart that shows the simulation with a single Metal buffer on the main thread. The simulation produces data and transfers it to a MTLBuffer. The renderer then draws the data in the MTLBuffer. Finally, the process repeats itself.](https://docs-assets.developer.apple.com/published/239dfde287be75deb3e951a6b772b82d/3-single-device-buffer.png)
+![A flowchart that shows the simulation with a single Metal buffer on the main thread. The simulation produces data and transfers it to a MTLBuffer. The renderer then draws the data in the MTLBuffer. Finally, the process repeats itself.](/images/com.apple.metal/3-single-device-buffer.png)
 
 When the sample runs on multiple devices, the view controller assigns the simulation work to one device and the renderer work to another. The simulation executes repeatedly in a loop on a separate simulation thread. For each iteration, it updates the positions of the N-body particles and blits this data to a new [`MTLBuffer`](mtlbuffer.md) backed by system memory. The sample passes this system memory backing to the view controller, which then passes it along to the renderer. The renderer executes repeatedly in a loop on the main thread. For each iteration, it creates a new [`MTLBuffer`](mtlbuffer.md), backed by the same system memory populated by the simulation thread, and renders the N-body particles based on the latest available position data.
 
 > **Note**: An [`MTLBuffer`](mtlbuffer.md) can’t be directly transferred between different devices; its data needs to be transferred via system memory.
 
-![A flowchart that shows the simulation with two Metal buffers, one on the simulation GPU and the other on the renderer GPU, both backed by the same CPU system memory. On the simulation thread, the simulation produces data and blits it to a new MTLBuffer backed by system memory, then repeats the process. On the render thread, the renderer creates a new MTLBuffer from the same system memory backing and draws the data, then repeats the process.](https://docs-assets.developer.apple.com/published/18c1da1a7bf62179fe106b3b1eaf7585/4-multi-device-buffer.png)
+![A flowchart that shows the simulation with two Metal buffers, one on the simulation GPU and the other on the renderer GPU, both backed by the same CPU system memory. On the simulation thread, the simulation produces data and blits it to a new MTLBuffer backed by system memory, then repeats the process. On the render thread, the renderer creates a new MTLBuffer from the same system memory backing and draws the data, then repeats the process.](/images/com.apple.metal/4-multi-device-buffer.png)
 
 ##### Allocate System Memory for a Buffer
 

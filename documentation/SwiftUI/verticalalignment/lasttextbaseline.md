@@ -24,7 +24,7 @@ static let lastTextBaseline: VerticalAlignment
 
 Use this guide to align with the baseline of the bottom-most text in a view. The guide aligns with the bottom of a view that contains no text.
 
-![A box that contains the text, Last Text Baseline.](https://docs-assets.developer.apple.com/published/f5faacd72c9610f5feadce01aa0a1c5a/VerticalAlignment-lastTextBaseline-1-iOS%402x.png)
+![A box that contains the text, Last Text Baseline.](/images/com.apple.SwiftUI/VerticalAlignment-lastTextBaseline-1-iOS@2x.png)
 
 The following code generates the image above using an [`HStack`](hstack.md):
 

@@ -22,7 +22,7 @@ let kCVImageBufferFieldDetailKey: CFString
 
 #### Discussion
 
-The field detail value is of type [`CFString`](https://developer.apple.com/documentation/CoreFoundation/CFString). See [`Image Buffer Field Detail Constants`](image-buffer-field-detail-constants.md) for more information.
+The field detail value is of type [`CFString`](https://developer.apple.com/documentation/corefoundation/cfstring). See [`Image Buffer Field Detail Constants`](image-buffer-field-detail-constants.md) for more information.
 
 ## See Also
 

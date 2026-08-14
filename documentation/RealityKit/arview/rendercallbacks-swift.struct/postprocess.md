@@ -48,7 +48,7 @@ To stop RealityKit from calling your function, assign `nil`:
 arView.renderCallbacks.postProcess = nil
 ```
 
-If your app turns postprocessing on and off frequently, another option for disabling postprocess effects is to keep your callback registered, but use an [`MTLBlitCommandEncoder`](https://developer.apple.com/documentation/Metal/MTLBlitCommandEncoder) to encode the unmodified frame directly to the output texture whenever postprocess effects aren’t active.
+If your app turns postprocessing on and off frequently, another option for disabling postprocess effects is to keep your callback registered, but use an [`MTLBlitCommandEncoder`](https://developer.apple.com/documentation/metal/mtlblitcommandencoder) to encode the unmodified frame directly to the output texture whenever postprocess effects aren’t active.
 
 ```swift
 func myPostProcessCallback(context:ARView.PostProcessContext) {

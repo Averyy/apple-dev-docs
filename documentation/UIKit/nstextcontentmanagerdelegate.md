@@ -30,7 +30,7 @@ protocol NSTextContentManagerDelegate : NSObjectProtocol
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 ### Inherited By
 - [NSTextContentStorageDelegate](nstextcontentstoragedelegate.md)
 

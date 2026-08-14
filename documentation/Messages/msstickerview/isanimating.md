@@ -18,7 +18,7 @@ func isAnimating() -> Bool
 
 #### Return Value
 
-Returns [`true`](https://developer.apple.com/documentation/Swift/true) if the sticker is animating; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
+Returns [`true`](https://developer.apple.com/documentation/swift/true) if the sticker is animating; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
 
 ## See Also
 

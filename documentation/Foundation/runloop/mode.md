@@ -22,7 +22,7 @@ struct Mode
 
 #### Discussion
 
-[`NSApplication`](https://developer.apple.com/documentation/AppKit/NSApplication) defines additional run loop modes, including the following:
+[`NSApplication`](https://developer.apple.com/documentation/appkit/nsapplication) defines additional run loop modes, including the following:
 
 - [`modalPanel`](runloop/mode/modalpanel.md)
 - [`eventTracking`](runloop/mode/eventtracking.md)
@@ -49,11 +49,11 @@ struct Mode
 ## Relationships
 
 ### Conforms To
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [RawRepresentable](../Swift/RawRepresentable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [RawRepresentable](../swift/rawrepresentable.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

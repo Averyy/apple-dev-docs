@@ -32,10 +32,10 @@ If the framework identifies details about an [`CapturedRoom.Object`](capturedroo
 ## Relationships
 
 ### Inherits From
-- [CaseIterable](../Swift/CaseIterable.md)
-- [RawRepresentable](../Swift/RawRepresentable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [CaseIterable](../swift/caseiterable.md)
+- [RawRepresentable](../swift/rawrepresentable.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 ### Conforming Types
 - [ChairArmType](chairarmtype.md)
 - [ChairBackType](chairbacktype.md)

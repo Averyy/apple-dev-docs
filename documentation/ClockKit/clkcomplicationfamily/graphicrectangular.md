@@ -18,7 +18,7 @@ case graphicRectangular
 
 The following figure shows the size and location of the graphic rectangular complication.
 
-![Diagram showing the size and position of a graphic rectangular complication.](https://docs-assets.developer.apple.com/published/bfe23e881aa4b12a6577bf6f7137a235/media-3030700%402x.png)
+![Diagram showing the size and position of a graphic rectangular complication.](/images/com.apple.clockkit/media-3030700@2x.png)
 
 ## See Also
 

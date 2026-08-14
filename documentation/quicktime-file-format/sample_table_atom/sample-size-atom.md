@@ -7,7 +7,7 @@ An atom you use to specify the size of each sample in the media.
 
 #### Overview
 
-See [`Sample size atom ('stsz')`](sample_size_atom.md).
+See [`Sample size atom`](sample_size_atom.md).
 
 ## See Also
 

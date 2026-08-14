@@ -45,9 +45,9 @@ Supports subscripting by index, element’s identifier or element’s name.
 ## Relationships
 
 ### Conforms To
-- [Collection](../Swift/Collection.md)
-- [ExpressibleByArrayLiteral](../Swift/ExpressibleByArrayLiteral.md)
-- [Sequence](../Swift/Sequence.md)
+- [Collection](../swift/collection.md)
+- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
+- [Sequence](../swift/sequence.md)
 
 ## See Also
 

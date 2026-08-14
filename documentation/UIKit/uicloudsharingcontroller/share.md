@@ -19,7 +19,7 @@ var share: CKShare? { get }
 
 #### Discussion
 
-This property provides a reference to the [`CKShare`](https://developer.apple.com/documentation/CloudKit/CKShare) record used by [`UICloudSharingController`](uicloudsharingcontroller.md). The property is `nil` if the controller doesn’t have a share record. This can happen when the controller is initialized with the [`init(preparationHandler:)`](uicloudsharingcontroller/init(preparationhandler:).md) method and the preparation handler hasn’t yet been called.
+This property provides a reference to the [`CKShare`](https://developer.apple.com/documentation/cloudkit/ckshare) record used by [`UICloudSharingController`](uicloudsharingcontroller.md). The property is `nil` if the controller doesn’t have a share record. This can happen when the controller is initialized with the [`init(preparationHandler:)`](uicloudsharingcontroller/init(preparationhandler:).md) method and the preparation handler hasn’t yet been called.
 
 
 ---

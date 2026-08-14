@@ -24,7 +24,7 @@ mutating func appendInterpolation<Subject>(_ subject: Subject, formatter: Format
 
 Don’t call this method directly; it’s used by the compiler when interpreting string interpolations.
 
-The following example shows how to use a [`Measurement`](https://developer.apple.com/documentation/Foundation/Measurement) value and a [`MeasurementFormatter`](https://developer.apple.com/documentation/Foundation/MeasurementFormatter) to create a [`LocalizedStringKey`](localizedstringkey.md) that uses the formatter style [`Formatter.UnitStyle.long`](https://developer.apple.com/documentation/Foundation/Formatter/UnitStyle/long) when generating the measurement’s string representation. Rather than calling `appendInterpolation(_:formatter)` directly, the code gets the formatting behavior implicitly by using the `\()` string interpolation syntax.
+The following example shows how to use a [`Measurement`](https://developer.apple.com/documentation/foundation/measurement) value and a [`MeasurementFormatter`](https://developer.apple.com/documentation/foundation/measurementformatter) to create a [`LocalizedStringKey`](localizedstringkey.md) that uses the formatter style [`Formatter.UnitStyle.long`](https://developer.apple.com/documentation/foundation/formatter/unitstyle/long) when generating the measurement’s string representation. Rather than calling `appendInterpolation(_:formatter)` directly, the code gets the formatting behavior implicitly by using the `\()` string interpolation syntax.
 
 ```swift
 let siResistance = Measurement(value: 640, unit: UnitElectricResistance.ohms)
@@ -36,7 +36,7 @@ let text1 = Text(key) // Text contains "Resistance: 640 ohms"
 
 ## Parameters
 
-- `subject`: An [`NSObject`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class) to append.
+- `subject`: An [`NSObject`](https://developer.apple.com/documentation/objectivec/nsobject-swift.class) to append.
 - `formatter`: A formatter to convert `subject` to a string representation.
 
 ## See Also

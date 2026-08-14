@@ -19,7 +19,7 @@ convenience init(installedSource source: Locale.Language, target: Locale.Languag
 
 #### Discussion
 
-If one or both of the languages aren’t installed on the device already, attempting to translate will throw errors. In order to get the person’s permission to download languages that aren’t already installed, translate using a `TranslationSession` provided by [`translationTask(_:action:)`](https://developer.apple.com/documentation/SwiftUI/View/translationTask(_:action:)) or [`translationTask(source:target:action:)`](https://developer.apple.com/documentation/SwiftUI/View/translationTask(source:target:action:)) .
+If one or both of the languages aren’t installed on the device already, attempting to translate will throw errors. In order to get the person’s permission to download languages that aren’t already installed, translate using a `TranslationSession` provided by [`translationTask(_:action:)`](https://developer.apple.com/documentation/swiftui/view/translationtask(_:action:)) or [`translationTask(source:target:action:)`](https://developer.apple.com/documentation/swiftui/view/translationtask(source:target:action:)) .
 
 > **Note**: If you created `TranslationSession` using [`init(installedSource:target:)`](translationsession/init(installedsource:target:).md),  you don’t need a `.translationTask()`, however, you will need a `sourceLanguage` .
 

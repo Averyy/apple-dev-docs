@@ -24,7 +24,7 @@ var textEncodingName: String? { get }
 
 If no text encoding was provided by the protocol, this property’s value is `nil`.
 
-You can convert this string to a `CFStringEncoding` value by calling [`CFStringConvertIANACharSetNameToEncoding(_:)`](https://developer.apple.com/documentation/CoreFoundation/CFStringConvertIANACharSetNameToEncoding(_:)). You can subsequently convert that value to an `NSStringEncoding` value by calling [`CFStringConvertEncodingToNSStringEncoding(_:)`](https://developer.apple.com/documentation/CoreFoundation/CFStringConvertEncodingToNSStringEncoding(_:)).
+You can convert this string to a `CFStringEncoding` value by calling [`CFStringConvertIANACharSetNameToEncoding(_:)`](https://developer.apple.com/documentation/corefoundation/cfstringconvertianacharsetnametoencoding(_:)). You can subsequently convert that value to an `NSStringEncoding` value by calling [`CFStringConvertEncodingToNSStringEncoding(_:)`](https://developer.apple.com/documentation/corefoundation/cfstringconvertencodingtonsstringencoding(_:)).
 
 ## See Also
 

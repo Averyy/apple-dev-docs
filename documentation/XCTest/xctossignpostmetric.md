@@ -21,7 +21,7 @@ class XCTOSSignpostMetric
 
 #### Overview
 
-This metric captures the time that elapses between the [`begin`](https://developer.apple.com/documentation/os/OSSignpostType/begin) and [`end`](https://developer.apple.com/documentation/os/OSSignpostType/end) events for a specific named [`os_signpost(_:dso:log:name:signpostID:)`](https://developer.apple.com/documentation/os/os_signpost(_:dso:log:name:signpostID:)-2oz8u) region. It doesn’t record any results when there isn’t a matching pair of `begin` and `end` events.
+This metric captures the time that elapses between the [`begin`](https://developer.apple.com/documentation/os/ossignposttype/begin) and [`end`](https://developer.apple.com/documentation/os/ossignposttype/end) events for a specific named [`os_signpost(_:dso:log:name:signpostID:)`](https://developer.apple.com/documentation/os/os_signpost(_:dso:log:name:signpostid:)-2oz8u) region. It doesn’t record any results when there isn’t a matching pair of `begin` and `end` events.
 
 ## Topics
 
@@ -47,15 +47,15 @@ This metric captures the time that elapses between the [`begin`](https://develop
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCopying](../Foundation/NSCopying.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCopying](../foundation/nscopying.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 - [XCTMetric](xctmetric.md)
 
 ## See Also

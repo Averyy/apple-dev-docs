@@ -16,7 +16,7 @@ static let includeDisabledFontsOption: NSFontCollectionMatchingOptionKey
 
 #### Discussion
 
-[`true`](https://developer.apple.com/documentation/Swift/true) indicates they should be included. When unspecified, CoreText assumes [`false`](https://developer.apple.com/documentation/Swift/false). This option is intended only for font management applications. This option will make descriptor matching slower.
+[`true`](https://developer.apple.com/documentation/swift/true) indicates they should be included. When unspecified, CoreText assumes [`false`](https://developer.apple.com/documentation/swift/false). This option is intended only for font management applications. This option will make descriptor matching slower.
 
 ## See Also
 

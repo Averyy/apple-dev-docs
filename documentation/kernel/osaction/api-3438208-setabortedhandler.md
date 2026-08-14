@@ -17,7 +17,7 @@ kern_return_t SetAbortedHandler(OSActionAbortedHandler handler);
 
 #### Return_value
 
-[`kIOReturnSuccess`](https://developer.apple.com/documentation/driverkit/kioreturnsuccess) on success, or another value if an error occurs. See `Error Codes`. 
+[`kIOReturnSuccess`](https://developer.apple.com/documentation/driverkit/kioreturnsuccess) on success, or another value if an error occurs. See [`Error Codes`](https://developer.apple.com/documentation/driverkit/error-codes). 
 
 #### Discussion
 
@@ -25,7 +25,7 @@ The system calls your handler when no other objects reference the action object.
 
 ## Parameters
 
-- `handler`: A handler block for the system to call. Specify   to remove the handler block from your action object.
+- `handler`: A handler block for the system to call. Specify `NULL` to remove the handler block from your action object.
 
 ## See Also
 

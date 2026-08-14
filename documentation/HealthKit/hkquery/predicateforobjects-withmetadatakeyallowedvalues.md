@@ -25,7 +25,7 @@ A predicate that matches objects based on the provided metadata key and an array
 
 #### Discussion
 
-Use this convenience method to create a predicate that matches objects based on their metadata. When this predicate is evaluated, it gets the metadata’s value for the provided key. Then the predicate checks that value against the `allowedValues` array. If the array contains a matching value, the predicate returns [`true`](https://developer.apple.com/documentation/Swift/true); otherwise, it returns [`false`](https://developer.apple.com/documentation/Swift/false).
+Use this convenience method to create a predicate that matches objects based on their metadata. When this predicate is evaluated, it gets the metadata’s value for the provided key. Then the predicate checks that value against the `allowedValues` array. If the array contains a matching value, the predicate returns [`true`](https://developer.apple.com/documentation/swift/true); otherwise, it returns [`false`](https://developer.apple.com/documentation/swift/false).
 
 The following sample uses both the convenience method and a predicate format string to create equivalent predicates.
 
@@ -58,7 +58,7 @@ NSPredicate *explicitMetadataValues =
 ## Parameters
 
 - `key`: The metadata key for the value to be matched. For a list of preset keys, see Metadata Keys. You may also search using custom keys.
-- `allowedValues`: An array of valid values. These values must be [`NSString`](https://developer.apple.com/documentation/Foundation/NSString), [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber), or [`NSDate`](https://developer.apple.com/documentation/Foundation/NSDate) instances.
+- `allowedValues`: An array of valid values. These values must be [`NSString`](https://developer.apple.com/documentation/foundation/nsstring), [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber), or [`NSDate`](https://developer.apple.com/documentation/foundation/nsdate) instances.
 
 ## See Also
 

@@ -22,7 +22,7 @@ let kSecAttrPath: CFString
 
 #### Discussion
 
-The corresponding value is of type [`CFString`](https://developer.apple.com/documentation/CoreFoundation/CFString) and represents a path, typically the path component of the URL. Items of class [`kSecClassInternetPassword`](ksecclassinternetpassword.md) have this attribute.
+The corresponding value is of type [`CFString`](https://developer.apple.com/documentation/corefoundation/cfstring) and represents a path, typically the path component of the URL. Items of class [`kSecClassInternetPassword`](ksecclassinternetpassword.md) have this attribute.
 
 
 ---

@@ -22,18 +22,18 @@ func data(using encoding: UInt, allowLossyConversion lossy: Bool) -> Data?
 
 #### Return Value
 
-An `NSData` object containing a representation of the receiver encoded using `encoding`. Returns `nil` if `flag` is [`false`](https://developer.apple.com/documentation/Swift/false) and the receiver can’t be converted without losing some information (such as accents or case).
+An `NSData` object containing a representation of the receiver encoded using `encoding`. Returns `nil` if `flag` is [`false`](https://developer.apple.com/documentation/swift/false) and the receiver can’t be converted without losing some information (such as accents or case).
 
 #### Discussion
 
-If `flag` is [`true`](https://developer.apple.com/documentation/Swift/true) and the receiver can’t be converted without losing some information, some characters may be removed or altered in conversion. For example, in converting a character from `NSUnicodeStringEncoding` to `NSASCIIStringEncoding`, the character ‘Á’ becomes ‘A’, losing the accent.
+If `flag` is [`true`](https://developer.apple.com/documentation/swift/true) and the receiver can’t be converted without losing some information, some characters may be removed or altered in conversion. For example, in converting a character from `NSUnicodeStringEncoding` to `NSASCIIStringEncoding`, the character ‘Á’ becomes ‘A’, losing the accent.
 
 This method creates an external representation (with a byte order marker, if necessary, to indicate endianness) to ensure that the resulting `NSData` object can be written out to a file safely. The result of this method, when lossless conversion is made, is the default “plain text” format for encoding and is the recommended way to save or transmit a string object.
 
 ## Parameters
 
 - `encoding`: A string encoding. For possible values, see [`NSStringEncoding`](nsstringencoding.md).
-- `lossy`: If [`true`](https://developer.apple.com/documentation/Swift/true), then allows characters to be removed or altered in conversion.
+- `lossy`: If [`true`](https://developer.apple.com/documentation/swift/true), then allows characters to be removed or altered in conversion.
 
 ## See Also
 

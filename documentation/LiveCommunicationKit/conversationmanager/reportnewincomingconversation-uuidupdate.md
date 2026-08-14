@@ -20,7 +20,7 @@ final func reportNewIncomingConversation(uuid: UUID, update: Conversation.Update
 
 ## Parameters
 
-- `uuid`: The [`UUID`](https://developer.apple.com/documentation/Foundation/UUID) used to identify the created conversation.
+- `uuid`: The [`UUID`](https://developer.apple.com/documentation/foundation/uuid) used to identify the created conversation.
 - `update`: Optional fields to configure the initial state of the conversation.
 
 ## See Also

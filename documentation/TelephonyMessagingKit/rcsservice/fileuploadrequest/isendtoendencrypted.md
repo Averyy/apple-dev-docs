@@ -7,7 +7,6 @@ A Boolean value indicating whether this request should be end-to-end encrypted. 
 
 **Availability**:
 - iOS 26.5+
-- iPadOS 26.5+
 
 ## Declaration
 

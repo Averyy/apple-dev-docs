@@ -26,7 +26,7 @@ The primary offset along the baseline for `charIndex`, or `0.0` if the line does
 
 #### Discussion
 
-This function returns the graphical offset or offsets corresponding to a string index, suitable for movement between adjacent lines or for drawing a custom caret. For moving between adjacent lines, the primary offset can be adjusted for any relative indentation of the two lines; a [`CGPoint`](https://developer.apple.com/documentation/CoreFoundation/CGPoint) constructed with the adjusted offset for its `x` value and `0.0` for its `y` value is suitable for passing to [`CTLineGetStringIndexForPosition(_:_:)`](ctlinegetstringindexforposition(_:_:).md). For drawing a custom caret, the returned primary offset corresponds to the portion of the caret that represents the visual insertion location for a character whose direction matches the line’s writing direction.
+This function returns the graphical offset or offsets corresponding to a string index, suitable for movement between adjacent lines or for drawing a custom caret. For moving between adjacent lines, the primary offset can be adjusted for any relative indentation of the two lines; a [`CGPoint`](https://developer.apple.com/documentation/corefoundation/cgpoint) constructed with the adjusted offset for its `x` value and `0.0` for its `y` value is suitable for passing to [`CTLineGetStringIndexForPosition(_:_:)`](ctlinegetstringindexforposition(_:_:).md). For drawing a custom caret, the returned primary offset corresponds to the portion of the caret that represents the visual insertion location for a character whose direction matches the line’s writing direction.
 
 ## Parameters
 

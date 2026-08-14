@@ -26,8 +26,8 @@ This function can fail if the specified printer cannot handle the file’s MIME 
 
 - `printer`: The destination printer.
 - `settings`: The print settings for the print job.
-- `format`: The physical page size and orientation with which the document should be printed. This parameter can be  .
-- `mimeType`: The MIME type of the data to be printed. If this parameter is  , the MIME type will be determined automatically. You can obtain a list of the MIME types supported by a given printer using the function  .
+- `format`: The physical page size and orientation with which the document should be printed. This parameter can be `NULL`.
+- `mimeType`: The MIME type of the data to be printed. If this parameter is `NULL`, the MIME type will be determined automatically. You can obtain a list of the MIME types supported by a given printer using the function [`PMPrinterGetMimeTypes(_:_:_:)`](1460125-pmprintergetmimetypes.md).
 - `fileURL`: The URL of the file that supplies the print data.
 
 ## See Also

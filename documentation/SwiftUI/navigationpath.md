@@ -33,7 +33,7 @@ When a stack displays views that rely on only one kind of data, you can use a st
 
 ##### Serialize the Path
 
-When the values you present on the navigation stack conform to the [`Codable`](https://developer.apple.com/documentation/Swift/Codable) protocol, you can use the path’s [`codable`](navigationpath/codable.md) property to get a serializable representation of the path. Use that representation to save and restore the contents of the stack. For example, you can define an [`ObservableObject`](https://developer.apple.com/documentation/Combine/ObservableObject) that handles serializing and deserializing the path:
+When the values you present on the navigation stack conform to the [`Codable`](https://developer.apple.com/documentation/swift/codable) protocol, you can use the path’s [`codable`](navigationpath/codable.md) property to get a serializable representation of the path. Use that representation to save and restore the contents of the stack. For example, you can define an [`ObservableObject`](https://developer.apple.com/documentation/combine/observableobject) that handles serializing and deserializing the path:
 
 ```swift
 class MyModelObject: ObservableObject {
@@ -118,7 +118,7 @@ var body: some View {
 ## Relationships
 
 ### Conforms To
-- [Equatable](../Swift/Equatable.md)
+- [Equatable](../swift/equatable.md)
 
 ## See Also
 

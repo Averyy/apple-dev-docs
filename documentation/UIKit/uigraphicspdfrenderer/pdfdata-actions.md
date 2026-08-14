@@ -20,11 +20,11 @@ func pdfData(actions: (UIGraphicsPDFRendererContext) -> Void) -> Data
 
 #### Return Value
 
-A [`Data`](https://developer.apple.com/documentation/Foundation/Data) object that contains the encoded PDF.
+A [`Data`](https://developer.apple.com/documentation/foundation/data) object that contains the encoded PDF.
 
 #### Discussion
 
-You provide a set of drawing instructions as the block argument to this method, and the method returns the resulting PDF encoded in a [`Data`](https://developer.apple.com/documentation/Foundation/Data) object.
+You provide a set of drawing instructions as the block argument to this method, and the method returns the resulting PDF encoded in a [`Data`](https://developer.apple.com/documentation/foundation/data) object.
 
 You can call this method repeatedly to create multiple PDFs, each of which has identical dimensions and format.
 

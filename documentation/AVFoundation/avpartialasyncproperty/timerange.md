@@ -24,7 +24,7 @@ static var timeRange: AVAsyncProperty<Root, CMTimeRange> { get }
 
 Use the [`load(_:isolation:)`](avasynchronouskeyvalueloading/load(_:isolation:).md) method to retrieve the property value.
 
-If the start of the time range is greater than [`zero`](https://developer.apple.com/documentation/CoreMedia/CMTime/zero), the track doesn’t initially have media data to present. This condition may occur when the media delays an audio track to align the start of audio with a specific video frame. You can test for this as the example below shows:
+If the start of the time range is greater than [`zero`](https://developer.apple.com/documentation/coremedia/cmtime/zero), the track doesn’t initially have media data to present. This condition may occur when the media delays an audio track to align the start of audio with a specific video frame. You can test for this as the example below shows:
 
 ```swift
 if track.timeRange.start > .zero {

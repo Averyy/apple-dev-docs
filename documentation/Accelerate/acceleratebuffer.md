@@ -22,7 +22,7 @@ protocol AccelerateBuffer<Element>
 
 #### Overview
 
-If you implement your own type that conforms to [`AccelerateBuffer`](acceleratebuffer.md) and uses the default implementation of [`withUnsafeBufferPointer(_:)`](acceleratebuffer/withunsafebufferpointer(_:).md), your type needs to return a nonnil result from [`withContiguousStorageIfAvailable(_:)`](https://developer.apple.com/documentation/Swift/Sequence/withContiguousStorageIfAvailable(_:)).
+If you implement your own type that conforms to [`AccelerateBuffer`](acceleratebuffer.md) and uses the default implementation of [`withUnsafeBufferPointer(_:)`](acceleratebuffer/withunsafebufferpointer(_:).md), your type needs to return a nonnil result from [`withContiguousStorageIfAvailable(_:)`](https://developer.apple.com/documentation/swift/sequence/withcontiguousstorageifavailable(_:)).
 
 ## Topics
 

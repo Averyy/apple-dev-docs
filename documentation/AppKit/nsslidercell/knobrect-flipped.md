@@ -24,7 +24,7 @@ The knob rectangle depends on where in the slider the knob belongs—that is, it
 
 ## Parameters
 
-- `flipped`: [`true`](https://developer.apple.com/documentation/Swift/true) if the coordinate system of the associated `NSSlider` or `NSMatrix` is flipped; otherwise [`false`](https://developer.apple.com/documentation/Swift/false). You can determine whether this is the case by sending the `NSView` message [`isFlipped`](nsview/isflipped.md) message to the `NSMatrix` or `NSSlider`.
+- `flipped`: [`true`](https://developer.apple.com/documentation/swift/true) if the coordinate system of the associated `NSSlider` or `NSMatrix` is flipped; otherwise [`false`](https://developer.apple.com/documentation/swift/false). You can determine whether this is the case by sending the `NSView` message [`isFlipped`](nsview/isflipped.md) message to the `NSMatrix` or `NSSlider`.
 
 ## See Also
 

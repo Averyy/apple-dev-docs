@@ -22,30 +22,30 @@ class WKWatchConnectivityRefreshBackgroundTask
 
 Don’t subclass or create instances of this class. Instead, when this background watch connectivity task is triggered, the system launches your app in the background, instantiates a [`WKWatchConnectivityRefreshBackgroundTask`](wkwatchconnectivityrefreshbackgroundtask.md) object, and passes the task object to your app delegate’s [`handle(_:)`](wkapplicationdelegate/handle(_:)-4vdjo.md) method.
 
-> **Note**:  In watchOS 9 and later, SwiftUI Background tasks are the preferred way to handle background tasks and interactions. For more information, [`backgroundTask(_:action:)`](https://developer.apple.com/documentation/SwiftUI/Scene/backgroundTask(_:action:)).
+> **Note**:  In watchOS 9 and later, SwiftUI Background tasks are the preferred way to handle background tasks and interactions. For more information, [`backgroundTask(_:action:)`](https://developer.apple.com/documentation/swiftui/scene/backgroundtask(_:action:)).
 
-Background watch connectivity tasks are triggered whenever the paired device sends data using one of the following [`WCSession`](https://developer.apple.com/documentation/WatchConnectivity/WCSession) methods:
+Background watch connectivity tasks are triggered whenever the paired device sends data using one of the following [`WCSession`](https://developer.apple.com/documentation/watchconnectivity/wcsession) methods:
 
-- [`updateApplicationContext(_:)`](https://developer.apple.com/documentation/WatchConnectivity/WCSession/updateApplicationContext(_:))
-- [`transferUserInfo(_:)`](https://developer.apple.com/documentation/WatchConnectivity/WCSession/transferUserInfo(_:))
-- [`transferCurrentComplicationUserInfo(_:)`](https://developer.apple.com/documentation/WatchConnectivity/WCSession/transferCurrentComplicationUserInfo(_:))
-- [`transferFile(_:metadata:)`](https://developer.apple.com/documentation/WatchConnectivity/WCSession/transferFile(_:metadata:))
+- [`updateApplicationContext(_:)`](https://developer.apple.com/documentation/watchconnectivity/wcsession/updateapplicationcontext(_:))
+- [`transferUserInfo(_:)`](https://developer.apple.com/documentation/watchconnectivity/wcsession/transferuserinfo(_:))
+- [`transferCurrentComplicationUserInfo(_:)`](https://developer.apple.com/documentation/watchconnectivity/wcsession/transfercurrentcomplicationuserinfo(_:))
+- [`transferFile(_:metadata:)`](https://developer.apple.com/documentation/watchconnectivity/wcsession/transferfile(_:metadata:))
 
-The background watch connectivity task informs you that your app is given background time. You must use your [`WCSessionDelegate`](https://developer.apple.com/documentation/WatchConnectivity/WCSessionDelegate) methods to receive this data. Because of the asynchronous nature of these tasks, defer calling your tasks’s [`setTaskCompleted()`](wkrefreshbackgroundtask/settaskcompleted().md) method until after you’ve activated your session and received all the pending data. Use the [`hasContentPending`](https://developer.apple.com/documentation/WatchConnectivity/WCSession/hasContentPending) property to determine whether you still have any pending data.
+The background watch connectivity task informs you that your app is given background time. You must use your [`WCSessionDelegate`](https://developer.apple.com/documentation/watchconnectivity/wcsessiondelegate) methods to receive this data. Because of the asynchronous nature of these tasks, defer calling your tasks’s [`setTaskCompleted()`](wkrefreshbackgroundtask/settaskcompleted().md) method until after you’ve activated your session and received all the pending data. Use the [`hasContentPending`](https://developer.apple.com/documentation/watchconnectivity/wcsession/hascontentpending) property to determine whether you still have any pending data.
 
 ## Relationships
 
 ### Inherits From
 - [WKRefreshBackgroundTask](wkrefreshbackgroundtask.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

@@ -21,7 +21,7 @@ var outputPixelFormat: OSType { get set }
 
 #### Discussion
 
-The valid values are [`kCVPixelFormatType_TwoComponent32Float`](https://developer.apple.com/documentation/CoreVideo/kCVPixelFormatType_TwoComponent32Float) and [`kCVPixelFormatType_TwoComponent16Half`](https://developer.apple.com/documentation/CoreVideo/kCVPixelFormatType_TwoComponent16Half). The default value is [`kCVPixelFormatType_TwoComponent32Float`](https://developer.apple.com/documentation/CoreVideo/kCVPixelFormatType_TwoComponent32Float).
+The valid values are [`kCVPixelFormatType_TwoComponent32Float`](https://developer.apple.com/documentation/corevideo/kcvpixelformattype_twocomponent32float) and [`kCVPixelFormatType_TwoComponent16Half`](https://developer.apple.com/documentation/corevideo/kcvpixelformattype_twocomponent16half). The default value is [`kCVPixelFormatType_TwoComponent32Float`](https://developer.apple.com/documentation/corevideo/kcvpixelformattype_twocomponent32float).
 
 ## See Also
 

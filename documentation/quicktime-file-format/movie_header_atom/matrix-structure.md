@@ -11,7 +11,7 @@ A matrix shows how to map points from one coordinate space into another. See [`M
 
 For a matrix in the following format:
 
-![A mathematical matrix with three rows and three columns. The top row contains the values a, b, and u. The middle row contains the values c, d, and v. The bottom row contains the values x, y, and w.](https://docs-assets.developer.apple.com/published/a592804690d97c48b180e61e28905fa3/matrix-structure%402x.png)
+![A mathematical matrix with three rows and three columns. The top row contains the values a, b, and u. The middle row contains the values c, d, and v. The bottom row contains the values x, y, and w.](/images/com.apple.qtff/matrix-structure@2x.png)
 
 Specify the matrix elements in the following sequence: `a`, `b`, `u`, `c`, `d`, `v`, `x`, `y`, `w`.
 

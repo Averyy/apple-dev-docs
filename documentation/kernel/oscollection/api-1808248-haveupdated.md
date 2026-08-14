@@ -13,7 +13,7 @@ void haveUpdated();
 
 #### Overview
 
-Subclasses call this function  making any change to their contents (not after, as the name implies). Update tracking is used for collection iterators, and to enforce certain protections in the IORegistry.
+Subclasses call this function *before* making any change to their contents (not after, as the name implies). Update tracking is used for collection iterators, and to enforce certain protections in the IORegistry.
 
 ## See Also
 

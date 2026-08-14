@@ -38,9 +38,9 @@ If you expect to initialize the OSL and disable it several times, you should cal
 
 ## Parameters
 
-- `functionClass`: The keyword for the special handler to remove. Pass one of the constants described in  . See  .
-- `handler`: A universal procedure pointer to the special handler to remove. Although the   parameter is sufficient to identify the handler to remove, you can identify the handler explicitly as a safeguard. If you pass   for this parameter, the Apple Event Manager relies solely on the function class to identify the handler. See  .
-- `isSysHandler`: Specifies the special handler dispatch table to remove the handler from. Pass   to remove the handler from the system special handler dispatch table or   to remove the handler from your application’s special handler dispatch table. Use of the system special handler dispatch table is not recommended.
+- `functionClass`: The keyword for the special handler to remove. Pass one of the constants described in [`Special Handler Callback Constants`](apple_events/1572726-special_handler_callback_constan.md). See [`AEKeyword`](aekeyword.md).
+- `handler`: A universal procedure pointer to the special handler to remove. Although the `functionClass` parameter is sufficient to identify the handler to remove, you can identify the handler explicitly as a safeguard. If you pass `NULL` for this parameter, the Apple Event Manager relies solely on the function class to identify the handler. See [`AEEventHandlerUPP`](aeeventhandlerupp.md).
+- `isSysHandler`: Specifies the special handler dispatch table to remove the handler from. Pass `TRUE` to remove the handler from the system special handler dispatch table or `FALSE` to remove the handler from your application’s special handler dispatch table. Use of the system special handler dispatch table is not recommended.
 
 ## See Also
 

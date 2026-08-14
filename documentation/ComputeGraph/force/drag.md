@@ -21,7 +21,7 @@ This function simulates air resistance or fluid drag by reducing the element’s
 
 The drag force is calculated as: `velocity -= velocity * min(1.0, deltaTime * linearDragFactor)`
 
-> **Note**: ![Graph](https://docs-assets.developer.apple.com/published/46808cad6bf650178ab11557ad26d5ce/force__drag.svg)
+> **Note**: ![Graph](/images/com.apple.computegraph/force__drag.svg)
 
 > **Note**: Reads and writes to element state `float3 velocity`
 

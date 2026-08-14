@@ -27,7 +27,7 @@ A message that tells people why the app is requesting access to read and write t
   A message that tells people why the app is requesting access to read and write their calendar data.
 - [NSCalendarsWriteOnlyAccessUsageDescription](information-property-list/nscalendarswriteonlyaccessusagedescription.md)
   A message that tells people why the app is requesting access to create calendar events.
-- [Accessing the event store](../EventKit/accessing-the-event-store.md)
+- [Accessing the event store](../eventkit/accessing-the-event-store.md)
   Request access to a person’s calendar data through the event store.
 
 

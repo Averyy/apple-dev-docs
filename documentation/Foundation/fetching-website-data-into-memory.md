@@ -18,7 +18,7 @@ Once you have a session, you create a data task with one of the `dataTask()` met
 
 The simplest way to fetch data is to create a data task that uses a completion handler. With this arrangement, the task delivers the server’s response, data, and possibly errors to a completion handler block that you provide.  shows the relationship between a session and a task, and how results are delivered to the completion handler.
 
-![Figure showing a URL Session creating a URL Session Data Task. The task then sends the original request, retrieved data, or an error to the completion handler.](https://docs-assets.developer.apple.com/published/f72e1228818d684018a52c23000f322b/media-4332611%402x.png)
+![Figure showing a URL Session creating a URL Session Data Task. The task then sends the original request, retrieved data, or an error to the completion handler.](/images/com.apple.foundation/media-4332611@2x.png)
 
 To create a data task that uses a completion handler, call the [`dataTask(with:)`](urlsession/datatask(with:)-10dy7.md) method of `URLSession`. Your completion handler needs to do three things:
 
@@ -62,13 +62,13 @@ func startLoad() {
 
 For a greater level of access to the task’s activity as it proceeds, when creating the data task, you can set a delegate on the session, rather than providing a completion handler.  shows this arrangement.
 
-![Figure showing a URLSession creating a URLSessionDataTask. The session calls back to the delegate with progress updates, retrieved data, authentication challenges, and other events.](https://docs-assets.developer.apple.com/published/0c1059a51359f7d0cb68b8feba1785f7/media-4332610%402x.png)
+![Figure showing a URLSession creating a URLSessionDataTask. The session calls back to the delegate with progress updates, retrieved data, authentication challenges, and other events.](/images/com.apple.foundation/media-4332610@2x.png)
 
 With this approach, portions of the data are provided to the [`urlSession(_:dataTask:didReceive:)`](urlsessiondatadelegate/urlsession(_:datatask:didreceive:).md) method of [`URLSessionDataDelegate`](urlsessiondatadelegate.md) as they arrive, until the transfer finishes or fails with an error. The delegate also receives other kinds of events as the transfer proceeds.
 
 You need to create your own `URLSession` instance when using the delegate approach, rather than using the `URLSession` class’s simple `shared` instance. Creating a new session allows you to set your own class as the session’s delegate, as shown in the following example.
 
-Declare that your class implements one or more of the delegate protocols ([`URLSessionDelegate`](urlsessiondelegate.md), [`URLSessionTaskDelegate`](urlsessiontaskdelegate.md), [`URLSessionDataDelegate`](urlsessiondatadelegate.md), and [`URLSessionDownloadDelegate`](urlsessiondownloaddelegate.md)). Then create the URL session instance with the initializer [`init(configuration:delegate:delegateQueue:)`](urlsession/init(configuration:delegate:delegatequeue:).md). You can customize the configuration instance used with this initializer. For example, it’s a good idea to set [`waitsForConnectivity`](urlsessionconfiguration/waitsforconnectivity.md) to [`true`](https://developer.apple.com/documentation/Swift/true). That way, the session waits for suitable connectivity, rather than failing immediately if the required connectivity is unavailable.
+Declare that your class implements one or more of the delegate protocols ([`URLSessionDelegate`](urlsessiondelegate.md), [`URLSessionTaskDelegate`](urlsessiontaskdelegate.md), [`URLSessionDataDelegate`](urlsessiondatadelegate.md), and [`URLSessionDownloadDelegate`](urlsessiondownloaddelegate.md)). Then create the URL session instance with the initializer [`init(configuration:delegate:delegateQueue:)`](urlsession/init(configuration:delegate:delegatequeue:).md). You can customize the configuration instance used with this initializer. For example, it’s a good idea to set [`waitsForConnectivity`](urlsessionconfiguration/waitsforconnectivity.md) to [`true`](https://developer.apple.com/documentation/swift/true). That way, the session waits for suitable connectivity, rather than failing immediately if the required connectivity is unavailable.
 
 Creating a URLSession that uses a delegate
 

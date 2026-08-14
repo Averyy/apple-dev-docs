@@ -42,7 +42,7 @@ For more information, see [`countByEnumerating(with:objects:count:)`](nsfastenum
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../Swift/BitwiseCopyable.md)
+- [BitwiseCopyable](../swift/bitwisecopyable.md)
 
 
 ---

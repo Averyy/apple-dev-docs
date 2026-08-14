@@ -21,7 +21,7 @@ class func cgPoint(for string: String) -> CGPoint
 
 #### Return Value
 
-A Core Graphics structure that represents a point. If the string is not well-formed, the function returns [`CGPointZero`](https://developer.apple.com/documentation/CoreGraphics/CGPointZero).
+A Core Graphics structure that represents a point. If the string is not well-formed, the function returns [`CGPointZero`](https://developer.apple.com/documentation/coregraphics/cgpointzero).
 
 #### Discussion
 

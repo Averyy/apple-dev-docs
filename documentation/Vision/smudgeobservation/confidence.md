@@ -22,7 +22,7 @@ let confidence: Float
 
 #### Discussion
 
-The framework normalizes this value to `[0, 1]`, where `1` represents the most confident. When results come from a [`CoreMLRequest`](coremlrequest.md), the relevant [`Core ML`](https://developer.apple.com/documentation/CoreML) models forward the confidence values.
+The framework normalizes this value to `[0, 1]`, where `1` represents the most confident. When results come from a [`CoreMLRequest`](coremlrequest.md), the relevant [`Core ML`](https://developer.apple.com/documentation/coreml) models forward the confidence values.
 
 ## See Also
 

@@ -21,7 +21,7 @@ Adding a menu to a segment allows the segment to be used as a pop-up button. If 
 ## Parameters
 
 - `menu`: The menu you want to add to the segment or `nil` to clear the current menu.
-- `segment`: The index of the segment whose menu you want to set. This method raises an exception ([`rangeException`](https://developer.apple.com/documentation/Foundation/NSExceptionName/rangeException)) if the index is out of bounds.
+- `segment`: The index of the segment whose menu you want to set. This method raises an exception ([`rangeException`](https://developer.apple.com/documentation/foundation/nsexceptionname/rangeexception)) if the index is out of bounds.
 
 ## See Also
 

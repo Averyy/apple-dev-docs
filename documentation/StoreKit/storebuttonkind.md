@@ -22,7 +22,7 @@ struct StoreButtonKind
 
 #### Overview
 
-Use the [`storeButton(_:for:)`](https://developer.apple.com/documentation/SwiftUI/View/storeButton(_:for:)) modifier on a view to set the visibility of the buttons.
+Use the [`storeButton(_:for:)`](https://developer.apple.com/documentation/swiftui/view/storebutton(_:for:)) modifier on a view to set the visibility of the buttons.
 
 ## Topics
 
@@ -42,10 +42,10 @@ Use the [`storeButton(_:for:)`](https://developer.apple.com/documentation/SwiftU
 ## See Also
 
 - [func storeButton(Visibility, for: StoreButtonKind...) -> some View
-](../SwiftUI/View/storeButton(_:for:).md)
+](../swiftui/view/storebutton(_:for:).md)
   Specifies the visibility of auxiliary buttons that store view and subscription store view instances may use.
 - [func subscriptionStoreSignInAction((() -> ())?) -> some View
-](../SwiftUI/View/subscriptionStoreSignInAction(_:).md)
+](../swiftui/view/subscriptionstoresigninaction(_:).md)
   Adds an action to perform when a person uses the sign-in button on a subscription store view within a view.
 - [struct SubscriptionOfferViewButtonKind](subscriptionofferviewbuttonkind.md)
 

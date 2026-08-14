@@ -8,7 +8,7 @@ Provides the ability to gather information from the user.
 
 Use the `formTemplate` element to gather information from the user; for example, requiring a password to access your app. The banner area can contain an image and a description of your product. The user enters text in the text field directly below the banner using the automatically generated keyboard. Use the footer area to contain any user interaction buttons. The following figure shows the basic layout for a `formTemplate` page. The theme for the form template defaults to the system preference.
 
-![Layout diagram showing a banner area containing an image and description at the top, a text field followed by a keyboard below, and a footer area at the bottom.](https://docs-assets.developer.apple.com/published/d621d3a6bfc16a1c7eee6103b8d11b51/formtemplate-1%402x.png)
+![Layout diagram showing a banner area containing an image and description at the top, a text field followed by a keyboard below, and a footer area at the bottom.](/images/com.apple.TVML/formtemplate-1@2x.png)
 
 ##### Form Template
 
@@ -60,7 +60,7 @@ The following listing shows the TVML for a `formTemplate` example. The interacti
 
 The following figure shows the output for the above example:
 
-![Screenshot showing a product image and a prompt for the user’s email address. A keyboard is displayed for email entry.](https://docs-assets.developer.apple.com/published/d3b7fe4b6132d785e0d64812b3bf45c3/formtemplate-2%402x.png)
+![Screenshot showing a product image and a prompt for the user’s email address. A keyboard is displayed for email entry.](/images/com.apple.TVML/formtemplate-2@2x.png)
 
 ## Topics
 

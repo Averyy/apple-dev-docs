@@ -19,7 +19,7 @@ static let MPMovieSourceTypeAvailable: NSNotification.Name
 
 #### Discussion
 
-To retrieve the source type of the movie, access the movie player’s [`movieSourceType`](https://developer.apple.com/documentation/MediaPlayer/MPMoviePlayerController/movieSourceType) property. The movie player whose state has changed is available as the object associated with the notification.
+To retrieve the source type of the movie, access the movie player’s [`movieSourceType`](https://developer.apple.com/documentation/mediaplayer/mpmovieplayercontroller/moviesourcetype) property. The movie player whose state has changed is available as the object associated with the notification.
 
 ## See Also
 

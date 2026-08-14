@@ -8,7 +8,7 @@ Share one or more records with other iCloud users.
 
 CloudKit users can share records in their private databases with other iCloud users, which enables collaboration between the people using your app. The user that initiates sharing, the owner, handles all aspects of the collaboration, from inviting people to participate to restricting what actions the participants can perform.
 
-![A diagram that shows the owner of a private database using iCloud to share records with two participants. The owner’s private database stores the records, which CloudKit makes available to each participant in their shared database.](https://docs-assets.developer.apple.com/published/c20e124d54f7123e04eb675844c16793/media-3761001%402x.png)
+![A diagram that shows the owner of a private database using iCloud to share records with two participants. The owner’s private database stores the records, which CloudKit makes available to each participant in their shared database.](/images/com.apple.cloudkit/media-3761001@2x.png)
 
 CloudKit allows you to share both record zones and record hierarchies. If you want to share an unbounded collection of records that don’t have natural parent-child relationships, share their containing record zone. However, if you want to share only a specific set of related records, define an explicit record hierarchy and share that instead.
 
@@ -26,11 +26,11 @@ After you create the share, save it using [`CKModifyRecordsOperation`](ckmodifyr
 
 ##### Invite Participants
 
-After saving the share, CloudKit assigns it a stable share URL. Use this URL to invite other users to participate. In iOS, [`UICloudSharingController`](https://developer.apple.com/documentation/UIKit/UICloudSharingController) provides a consistent and familiar experience for managing a share’s participants and their permissions, and for distributing the share URL. Use [`NSItemProvider`](https://developer.apple.com/documentation/Foundation/NSItemProvider) and [`NSSharingService`](https://developer.apple.com/documentation/AppKit/NSSharingService) in macOS (with the [`cloudSharing`](https://developer.apple.com/documentation/AppKit/NSSharingService/Name/cloudSharing) service name) to achieve similar functionality. Only invited participants can join a private share. Anyone with the share URL can join a public share. For more information, see [`publicPermission`](ckshare/publicpermission.md).
+After saving the share, CloudKit assigns it a stable share URL. Use this URL to invite other users to participate. In iOS, [`UICloudSharingController`](https://developer.apple.com/documentation/uikit/uicloudsharingcontroller) provides a consistent and familiar experience for managing a share’s participants and their permissions, and for distributing the share URL. Use [`NSItemProvider`](https://developer.apple.com/documentation/foundation/nsitemprovider) and [`NSSharingService`](https://developer.apple.com/documentation/appkit/nssharingservice) in macOS (with the [`cloudSharing`](https://developer.apple.com/documentation/appkit/nssharingservice/name/cloudsharing) service name) to achieve similar functionality. Only invited participants can join a private share. Anyone with the share URL can join a public share. For more information, see [`publicPermission`](ckshare/publicpermission.md).
 
 When an invited user taps or clicks the share URL, CloudKit verifies they have an active iCloud account, which must match their participant details. After successful verification, the system launches your app. CloudKit provides share metadata to your app’s scene delegate or app delegate. The method the system calls varies by platform and app configuration. For more information, see [`CKShare.Metadata`](ckshare/metadata.md).
 
-> ❗ **Important**:  To enable the system to launch your app when the user taps or clicks the share URL, add the `CKSharingSupported` key to the app’s `Info.plist` file. For more information, see [`CKSharingSupported`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/CKSharingSupported).
+> ❗ **Important**:  To enable the system to launch your app when the user taps or clicks the share URL, add the `CKSharingSupported` key to the app’s `Info.plist` file. For more information, see [`CKSharingSupported`](https://developer.apple.com/documentation/bundleresources/information-property-list/cksharingsupported).
 
 ##### Manage Share Participation
 
@@ -38,11 +38,11 @@ After receiving the share metadata from CloudKit, use [`CKAcceptSharesOperation`
 
 Create a database subscription in the user’s shared database the first time they launch your app. Then, when they confirm participation in a share, iCloud notifies your app, on all of the user’s devices, of any changes to the shared records. For more information, see [`CKDatabaseSubscription`](ckdatabasesubscription.md).
 
-To stop sharing, the share’s owner must delete the share or, for shared hierarchies, the root record. If a participant wants to leave the share, delete the share record from their shared database. Use [`UICloudSharingController`](https://developer.apple.com/documentation/UIKit/UICloudSharingController) or [`NSSharingService`](https://developer.apple.com/documentation/AppKit/NSSharingService) to allow a participant to stop participating. Or remove them from the share using the [`removeParticipant(_:)`](ckshare/removeparticipant(_:).md) method, and then save the updated share to iCloud.
+To stop sharing, the share’s owner must delete the share or, for shared hierarchies, the root record. If a participant wants to leave the share, delete the share record from their shared database. Use [`UICloudSharingController`](https://developer.apple.com/documentation/uikit/uicloudsharingcontroller) or [`NSSharingService`](https://developer.apple.com/documentation/appkit/nssharingservice) to allow a participant to stop participating. Or remove them from the share using the [`removeParticipant(_:)`](ckshare/removeparticipant(_:).md) method, and then save the updated share to iCloud.
 
 ##### Customize the Sharing Experience
 
-You can use the framework’s share-related operations to implement behavior similar to that of [`UICloudSharingController`](https://developer.apple.com/documentation/UIKit/UICloudSharingController) and [`NSSharingService`](https://developer.apple.com/documentation/AppKit/NSSharingService) to build a custom sharing experience by following these steps:
+You can use the framework’s share-related operations to implement behavior similar to that of [`UICloudSharingController`](https://developer.apple.com/documentation/uikit/uicloudsharingcontroller) and [`NSSharingService`](https://developer.apple.com/documentation/appkit/nssharingservice) to build a custom sharing experience by following these steps:
 
 1. Use [`CKFetchShareParticipantsOperation`](ckfetchshareparticipantsoperation.md) to generate participants and add them to the share using [`addParticipant(_:)`](ckshare/addparticipant(_:).md). Your app presents a list of potential participants to the user. You can also allow the owner to add participants by entering a participant’s email address or phone number.
 2. Save the share to iCloud.
@@ -58,7 +58,7 @@ For public shares, you can skip the first step. Accepting a public share’s met
 ### Collaboration
 - [Sharing CloudKit Data with Other iCloud Users](sharing-cloudkit-data-with-other-icloud-users.md)
   Create and share private CloudKit data with other users by implementing the sharing UI.
-- [Sharing Core Data objects between iCloud users](../CoreData/sharing-core-data-objects-between-icloud-users.md)
+- [Sharing Core Data objects between iCloud users](../coredata/sharing-core-data-objects-between-icloud-users.md)
   Use Core Data and CloudKit to synchronize data between devices of an iCloud user and share data between different iCloud users.
 - [class CKShare](ckshare.md)
   A specialized record type that manages a collection of shared records.
@@ -68,9 +68,9 @@ For public shares, you can skip the first step. Accepting a public share’s met
   An object that controls participant access and permission options.
 - [class CKSystemSharingUIObserver](cksystemsharinguiobserver.md)
   An object the system uses to monitor changes in sharing.
-- [class UICloudSharingController](../UIKit/UICloudSharingController.md)
+- [class UICloudSharingController](../uikit/uicloudsharingcontroller.md)
   A view controller that presents standard screens for adding and removing people from a CloudKit share record.
-- [CKSharingSupported](../BundleResources/Information-Property-List/CKSharingSupported.md)
+- [CKSharingSupported](../bundleresources/information-property-list/cksharingsupported.md)
   A Boolean value that indicates your app supports CloudKit Sharing.
 ### Share Requests
 - [class CKFetchShareMetadataOperation](ckfetchsharemetadataoperation.md)

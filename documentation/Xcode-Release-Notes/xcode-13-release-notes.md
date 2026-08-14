@@ -18,7 +18,7 @@ Xcode 13 includes SDKs for iOS 15, iPadOS 15, tvOS 15, watchOS 8, and macOS Big 
 
 - Xcode 13 includes native support for [`concurrency programming with Swift`](https://developer.apple.comhttps://docs.swift.org/swift-book/LanguageGuide/Concurrency.html), support for continuous integration and delivery with [`Xcode Cloud`](https://developer.apple.comhttps://developer.apple.com/xcode-cloud/), integrated support for Git pull requests, the ability to create and view documentation in Swift frameworks using DocC, Vim keybinding support, Swift package collections, and more. For details, see [`What’s Included In Xcode`](https://developer.apple.comhttps://developer.apple.com/xcode/whats-new/). (78887232)
 
-- You can now use `cktool` on the command line to interact with your [`CloudKit`](https://developer.apple.com/documentation/CloudKit) database schema and records. For a list of available commands, run `man cktool` or `xcrun cktool --help`. (68114031)
+- You can now use `cktool` on the command line to interact with your [`CloudKit`](https://developer.apple.com/documentation/cloudkit) database schema and records. For a list of available commands, run `man cktool` or `xcrun cktool --help`. (68114031)
 - You can now use `TextureConverter` on the command line to compress textures to all Metal compressed texture formats. For a list of available commands, run `xcrun TextureConverter --help`. (70481436)
 - The Xcode 13’s XIP archive is now approximately 15% smaller for the same content. You can expand the archive using Archive Utility, or with `xip` on the command line. *Note*: Other methods of expanding the archive may produce a broken Xcode app. (78714333)
 
@@ -138,7 +138,7 @@ HEADER_SEARCH_PATHS = $(SRCROOT)/include \
 
 ###### New Features
 
-- Xcode can generate documentation from comments in your Swift code, as well as accompanying articles. (57148915, 57446055, 57447632, 74951110) Use the “Build Documentation” command to generate documentation from your Swift frameworks and packages. Build on the command-line using the `xcodebuild docbuild` command. For more information on building documentation, see [`Documenting apps, frameworks, and packages`](https://developer.apple.com/documentation/Xcode/documenting-apps-frameworks-and-packages). View built documentation in the documentation window, and export using the DocC Archive format. Xcode can open and read DocC Archive packages. For more information, see [`Distributing documentation to other developers`](https://developer.apple.com/documentation/Xcode/distributing-documentation-to-other-developers).
+- Xcode can generate documentation from comments in your Swift code, as well as accompanying articles. (57148915, 57446055, 57447632, 74951110) Use the “Build Documentation” command to generate documentation from your Swift frameworks and packages. Build on the command-line using the `xcodebuild docbuild` command. For more information on building documentation, see [`Documenting apps, frameworks, and packages`](https://developer.apple.com/documentation/xcode/documenting-apps-frameworks-and-packages). View built documentation in the documentation window, and export using the DocC Archive format. Xcode can open and read DocC Archive packages. For more information, see [`Distributing documentation to other developers`](https://developer.apple.com/documentation/xcode/distributing-documentation-to-other-developers).
 - Code completion provides suggestions when you write your project’s documentation. It provides suggestions both when writing documentation comments in source files, and when writing markup files inside the `.docc` catalog. (57447419)
 - Quick Help now uses DocC to present project documentation and renders links to your project’s documentation in the documentation window. (71913824)
 
@@ -176,8 +176,8 @@ HEADER_SEARCH_PATHS = $(SRCROOT)/include \
 - The Run Information view now appears in the activity view area in the Instruments toolbar. (65694190)
 - The CPU Counters template is now more reliable and has better performance. Instruments 13 no longer supports Counters traces recorded with older versions of Instruments. (65812748)
 - The `leaks` command has three new modes:  `-referenceTree`, `-autoreleasePools`, and `-debug`. Consult `man leaks` for more details. (68724178)
-- The Network template now includes a new Instrument for capturing and analyzing HTTP traffic. This Instrument works on all Apple platforms and shows: - HTTP traffic at the [`CFNetwork`](https://developer.apple.com/documentation/CFNetwork) layer for debuggable processes, including out-of-process background traffic
-- Detailed durations for each [`URLSessionTask`](https://developer.apple.com/documentation/Foundation/URLSessionTask), its underlying HTTP transactions, and transaction states
+- The Network template now includes a new Instrument for capturing and analyzing HTTP traffic. This Instrument works on all Apple platforms and shows: - HTTP traffic at the [`CFNetwork`](https://developer.apple.com/documentation/cfnetwork) layer for debuggable processes, including out-of-process background traffic
+- Detailed durations for each [`URLSessionTask`](https://developer.apple.com/documentation/foundation/urlsessiontask), its underlying HTTP transactions, and transaction states
 - Backtraces for `URLSessionTasks` to show where tasks start in code
 - Headers and bodies of HTTP requests and responses
 - Traffic sent over VPN, via Proxies, and using certificate pinning You can export this HTTP data to an HTTP Archive via `xctrace` using the new `--har` export flag. (71444535)
@@ -204,7 +204,7 @@ HEADER_SEARCH_PATHS = $(SRCROOT)/include \
 ###### New Features
 
 - You can now manually reorder Storyboard scenes in the outline view. (10103709)
-- Storyboards and XIBs for macOS compile using UINibEncoder to reduce file sizes and improve runtime performance. When deploying an App before macOS 10.13, Xcode generates a backward compatible nib for the older OSes. You can opt out of this behavior by applying the `IBC_COMPILER_USE_NIBKEYEDARCHIVER_FOR_MACOS=YES` and `IBSC_COMPILER_USE_NIBKEYEDARCHIVER_FOR_MACOS=YES` user defined overrides in the project’s build setting. (31889616) UINibEncoded nibs are stricter about enforcing the return of self from an [`init(coder:)`](https://developer.apple.com/documentation/Foundation/NSNotification/init(coder:)) implementation on custom classes. Returning a nonsafe pointer from `initWithCoder:` is unsafe and can lead to dangling pointer references. macOS 12 emits a descriptive warning when this occurs during runtime nib loading. Older macOS versions emit “This coder requires that replaced objects be returned from initWithCoder:”. If necessary, you can bypass the strictness warning by applying the user defined overrides described above.
+- Storyboards and XIBs for macOS compile using UINibEncoder to reduce file sizes and improve runtime performance. When deploying an App before macOS 10.13, Xcode generates a backward compatible nib for the older OSes. You can opt out of this behavior by applying the `IBC_COMPILER_USE_NIBKEYEDARCHIVER_FOR_MACOS=YES` and `IBSC_COMPILER_USE_NIBKEYEDARCHIVER_FOR_MACOS=YES` user defined overrides in the project’s build setting. (31889616) UINibEncoded nibs are stricter about enforcing the return of self from an [`init(coder:)`](https://developer.apple.com/documentation/foundation/nsnotification/init(coder:)) implementation on custom classes. Returning a nonsafe pointer from `initWithCoder:` is unsafe and can lead to dangling pointer references. macOS 12 emits a descriptive warning when this occurs during runtime nib loading. Older macOS versions emit “This coder requires that replaced objects be returned from initWithCoder:”. If necessary, you can bypass the strictness warning by applying the user defined overrides described above.
 - You can now select and navigate outline view groups, such as “Constraints,” using the keyboard. Selecting a group is equivalent to selecting all of the items contained in the group. (46607897)
 - Interface Builder has a redesigned canvas bottom bar with popovers for changing devices and layout, and toggles for changing device appearance and orientation. (68288315)
 - Added support for the `changesSelectionAsPrimaryAction` property on `UIButton` and `UIBarButtonItem`. Use this, along with setting a menu and enabling `showsMenuAsPrimaryAction` to create a Pop-Up button. (69890483)
@@ -244,7 +244,7 @@ HEADER_SEARCH_PATHS = $(SRCROOT)/include \
 - Improved the Interface Builder inspector’s loading performance. (76425091)
 - A font property inspector is now available for the UIButton system configuration styles. (76573915)
 - Optional number properties in the inspector no longer have checkboxes to clear values. Instead, a value can be cleared by selecting the value and pressing the delete key. (77109701)
-- Fixed a runtime crash issue that occurred when using [`MKMapView`](https://developer.apple.com/documentation/MapKit/MKMapView) in nibs that ran in macOS 10.15 and earlier. (78522530)
+- Fixed a runtime crash issue that occurred when using [`MKMapView`](https://developer.apple.com/documentation/mapkit/mkmapview) in nibs that ran in macOS 10.15 and earlier. (78522530)
 - Xcode no longer resets `NSCollectionViewGridLayout.maximumNumberOfRows` and `NSCollectionViewGridLayout.maximumNumberOfColumns` to `0` during document unarchiving. (80157777) (FB9262860)
 
 ##### Linking
@@ -331,7 +331,7 @@ HEADER_SEARCH_PATHS = $(SRCROOT)/include \
 - Historical data in the Xcode Organizer now shows up to 16 of an app’s latest versions for each metric chart, providing the performance trend of an app over a larger window of time. (64382966)
 - Now when you view a metric, the inspector shows your app’s release date information. (64995828)
 - Qualitative Insights for Disk Write Reports in the Xcode Organizer show new information called Insights in the inspector. These insights include optimizations to help reduce the Disk Writes in the app. (66926840)
-- Smart Insights are now available in the Xcode Organizer to help you discover your app’s power and performance regressions faster than before. For more information, see [`Analyzing the performance of your shipping app`](https://developer.apple.com/documentation/Xcode/analyzing-the-performance-of-your-shipping-app#Read-Data-for-Smart-Insights). (71420981)
+- Smart Insights are now available in the Xcode Organizer to help you discover your app’s power and performance regressions faster than before. For more information, see [`Analyzing the performance of your shipping app`](https://developer.apple.com/documentation/xcode/analyzing-the-performance-of-your-shipping-app). (71420981)
 
 ##### Playgrounds
 
@@ -377,12 +377,12 @@ HEADER_SEARCH_PATHS = $(SRCROOT)/include \
 
 ###### New Features
 
-- `xcodebuild` now supports the use of App Store Connect API keys for authentication with the Apple Developer website. This enables the use of automatic signing via `xcodebuild` in headless environments, such as build machines and continuous integration setups. To use API keys with `xcodebuild`, create an API key on [`App Store Connect`](https://developer.apple.comhttps://appstoreconnect.apple.com/access/api) and pass the key along with its identifier and your team’s issuer identifier to `xcodebuild` using the new parameters `authenticationKeyPath`, `authenticationKeyID`, and `authenticationKeyIssuerID`, respectively. When creating a key, you can assign it a role to control its permissions for performing automatic signing tasks. To learn more about creating and managing keys, see [`Creating API Keys for App Store Connect API`](https://developer.apple.com/documentation/AppStoreConnectAPI/creating-api-keys-for-app-store-connect-api). (51444716)
+- `xcodebuild` now supports the use of App Store Connect API keys for authentication with the Apple Developer website. This enables the use of automatic signing via `xcodebuild` in headless environments, such as build machines and continuous integration setups. To use API keys with `xcodebuild`, create an API key on [`App Store Connect`](https://developer.apple.comhttps://appstoreconnect.apple.com/access/api) and pass the key along with its identifier and your team’s issuer identifier to `xcodebuild` using the new parameters `authenticationKeyPath`, `authenticationKeyID`, and `authenticationKeyIssuerID`, respectively. When creating a key, you can assign it a role to control its permissions for performing automatic signing tasks. To learn more about creating and managing keys, see [`Creating API Keys for App Store Connect API`](https://developer.apple.com/documentation/appstoreconnectapi/creating-api-keys-for-app-store-connect-api). (51444716)
 - Xcode now offers to create an app record the first time you upload a new app to App Store Connect. Before creating the app record, you can configure the name, primary language, and SKU for your app directly within Xcode’s distribution assistant. (57572562) (FB7476283)
 - When uploading an app to App Store Connect, the distribution assistant in Xcode detects whether your app has a valid build number (`CFBundleVersion`). If your app has an invalid number (like one that was used previously, or precedes your current build number), the distribution assistant provides an option to automatically increment it to a valid number. In addition, the distribution assistant ensures that the build numbers of all embedded content in your app (such as app extensions, App Clips, or watchOS apps) are in sync with your app. Note that this doesn’t modify your source code or your archive; Xcode updates the build number in a staged copy of your app before packaging and uploading it to App Store Connect. (59826409)
 - Automatic signing in the Xcode distribution assistant now supports cloud signing. With cloud signing, Xcode distribution signs your app using signing certificates created and managed on Apple servers, requiring no setup on your local Mac other than signing in to Xcode with your Apple ID. Cloud signing is available when signing for App Store Connect, Ad Hoc, Enterprise, or Developer ID distribution. Cloud signing certificates are stored securely on Apple servers; you can’t transmit or store the private key on your Mac. Similar to standard distribution signing certificates, cloud signing certificates are accessible only to members of your development team with the Admin role (or Account Holder for Developer ID). Use App Store Connect (Users and Access) to set permissions for users with other roles. You don’t need to save or share cloud signing certificates with other developers on your team, as any team member with the necessary permissions can sign them for distribution with cloud signing. If you already have a valid distribution signing certificate and matching provisioning profiles installed on your Mac, Xcode uses those and signs locally rather than using cloud signing. Additionally, cloud signing isn’t available when using manual distribution signing. (70706409)
 - Xcode 13 supports provisioning apps for TestFlight on Mac. For your macOS app to be eligible for TestFlight, it must include provisioning profiles. When you upload your Mac app to App Store Connect and use automatic signing in the distribution assistant, the assistant automatically includes the provisioning profiles in your app. If you use manual distribution signing, create provisioning profiles on the Apple Developer website and then select them in the manual distribution signing section of the distribution assistant. (72824383)
-- You may now use `notarytool` on the command line to interact with the Apple notary service. For a full description see the manual page with `man notarytool` or view available commands with `xcrun notarytool --help`. For more information about custom notarization workflows, see [`Customizing the notarization workflow`](https://developer.apple.com/documentation/Security/customizing-the-notarization-workflow). (78516542)
+- You may now use `notarytool` on the command line to interact with the Apple notary service. For a full description see the manual page with `man notarytool` or view available commands with `xcrun notarytool --help`. For more information about custom notarization workflows, see [`Customizing the notarization workflow`](https://developer.apple.com/documentation/security/customizing-the-notarization-workflow). (78516542)
 
 ###### Resolved Issues
 
@@ -402,7 +402,7 @@ HEADER_SEARCH_PATHS = $(SRCROOT)/include \
 ###### Known Issues
 
 - Shazam Catalog recognition doesn’t work in simulated devices. (77564423) **Workaround**: Use a physical device.
-- [`MusicKit`](https://developer.apple.com/documentation/MusicKit) functionality, such as loading content with music requests, doesn’t work in simulated devices. (78559381) **Workaround**: Test your app’s MusicKit functionality on a physical device.
+- [`MusicKit`](https://developer.apple.com/documentation/musickit) functionality, such as loading content with music requests, doesn’t work in simulated devices. (78559381) **Workaround**: Test your app’s MusicKit functionality on a physical device.
 - Simulated iPhone mini devices might incorrectly render partial screen updates resulting in visual glitches. (82423740) (FB9569039) **Workaround**: Use a non-mini simulated device.
 - Some content may disappear or visual artifacts may appear when the content updates in Always On mode in simulated watchOS devices. (82732227) **Workaround**: Test on device to confirm Always On behavior.
 
@@ -464,7 +464,7 @@ HEADER_SEARCH_PATHS = $(SRCROOT)/include \
 
 ###### New Features
 
-- StoreKit Testing in Xcode supports comprehensive testing of in-app purchases built using StoreKit’s new modern Swift-based APIs. For more information about StoreKit 2, see [`StoreKit`](https://developer.apple.com/documentation/StoreKit). (69846798)
+- StoreKit Testing in Xcode supports comprehensive testing of in-app purchases built using StoreKit’s new modern Swift-based APIs. For more information about StoreKit 2, see [`StoreKit`](https://developer.apple.com/documentation/storekit). (69846798)
 
 ##### Swift
 
@@ -472,7 +472,7 @@ HEADER_SEARCH_PATHS = $(SRCROOT)/include \
 
 - Swift now natively supports concurrency programming using async/await and actors. For more information, see [`What’s new in Swift`](https://developer.apple.comhttps://developer.apple.com/wwdc21/10192), [`Meet async/await in Swift`](https://developer.apple.comhttps://developer.apple.com/wwdc21/10132), and [`Explore structured concurrency in Swift`](https://developer.apple.comhttps://developer.apple.com/wwdc21/10134). ([`SE-0296`](https://developer.apple.comhttps://github.com/apple/swift-evolution/blob/main/proposals/0296-async-await.md), [`SE-0306`](https://developer.apple.comhttps://github.com/apple/swift-evolution/blob/main/proposals/0306-actors.md), 21398040, 78028712, 78029422)
 
-- Functions and properties that should only be accessed from the main thread can be placed on the main actor by annotating them with the @[`MainActor`](https://developer.apple.com/documentation/Swift/MainActor) attribute. When calling a main-actor function, the call must come from a context that is itself on the main actor, or the call must be asynchronous. (70101562) For example: ```swift
+- Functions and properties that should only be accessed from the main thread can be placed on the main actor by annotating them with the @[`MainActor`](https://developer.apple.com/documentation/swift/mainactor) attribute. When calling a main-actor function, the call must come from a context that is itself on the main actor, or the call must be asynchronous. (70101562) For example: ```swift
 @MainActor func f() { }
 
 @MainActor func g() {
@@ -721,7 +721,7 @@ struct Box<T> {
   static func makeBox() -> Self<Int> {}
 }
 ```
-- Apps that contain Swift code referencing [`featureIdentifier`](https://developer.apple.com/documentation/UIKit/UIFontDescriptor/FeatureKey/featureIdentifier) or [`typeIdentifier`](https://developer.apple.com/documentation/UIKit/UIFontDescriptor/FeatureKey/typeIdentifier) now launch in earlier OS releases. (79090498)
+- Apps that contain Swift code referencing [`featureIdentifier`](https://developer.apple.com/documentation/uikit/uifontdescriptor/featurekey/featureidentifier) or [`typeIdentifier`](https://developer.apple.com/documentation/uikit/uifontdescriptor/featurekey/typeidentifier) now launch in earlier OS releases. (79090498)
 - The Swift standard library no longer provides a nonfunctional default implementation of the `subscript(bounds: Range<Index>)` accessor for `Collection` implementors whose `SubSequence` isn’t `Slice`. Define your code’s `subscript(bounds: Range<Index>) -> SubSequence`, or use `Slice` as your `Collection`’s  `SubSequence`. ([`SR-14848`](https://developer.apple.comhttps://bugs.swift.org/browse/SR-14848), 79891982)
 - The compiler used to erroneously accept `@available` annotations on enum cases with associated values that were newer than the deployment target. (80238318) For example: ```swift
 @available(macOS 12, *)
@@ -752,7 +752,7 @@ func h(actor: MyActor) async {
 ###### Known Issues
 
 - Swift Concurrency requires a deployment target of macOS 12, iOS 15, tvOS 15, and watchOS 8 or newer. (70738378)
-- Swift libraries may fail to build for iOS targets that use armv7. (74120874) **Workaround**: Increase the platform dependency of the package to [`v12`](https://developer.apple.com/documentation/PackageDescription/SupportedPlatform/IOSVersion/v12) or later.
+- Swift libraries may fail to build for iOS targets that use armv7. (74120874) **Workaround**: Increase the platform dependency of the package to [`v12`](https://developer.apple.com/documentation/packagedescription/supportedplatform/iosversion/v12) or later.
 - `os_activity` APIs don’t track activity in Swift `async` code, and may produce incomplete information about that activity. (76080222)
 - Swift tasks won’t have their priority escalated in response to awaiting on their handles. (76127624)
 - The Swift compiler might crash when declaring an extension of a generic struct, enum, or class if the type has a `where` clause with a same-type requirement, and the extension has a `where` clause that constrains a generic parameter to a concrete type. (79570734)
@@ -833,7 +833,7 @@ linkerSettings: [.linkedFramework("XCTest")]
 - Performance XCTests now support measuring CPU usage (`XCTCPUMetric`), disk writes (`XCTStorageMetric`), and memory usage (`XCTMemoryMetric`) for application launches. (61112495)
 - `xcodebuild` has a new option `-enablePerformanceTestsDiagnostics YES` that collects diagnostics for Performance XCTests. The option collects a ktrace file for non-`XCTMemoryMetrics`, and a series of memory graphs for `XCTMemoryMetrics`. `xcodebuild` attaches diagnostics to the generated `xcresult` bundle. Note that memory graph collection isn’t available in simulated devices. (64495534)
 - Test timeouts are now enabled by default in all newly-created test plans. Test plans created by converting a scheme require manually enabling test timeouts to preserve the existing behavior. (64861872)
-- [`XCUIAutomation`](https://developer.apple.com/documentation/XCUIAutomation) now support using the `swipeUp`, `swipeDown`, `swipeLeft`, and `swipeRight` family of methods in macOS. (65229961)
+- [`XCUIAutomation`](https://developer.apple.com/documentation/xcuiautomation) now support using the `swipeUp`, `swipeDown`, `swipeLeft`, and `swipeRight` family of methods in macOS. (65229961)
 - Performance tests now support collecting glitch metrics when using the `XCTOSSignpostMetric` for an animation `os_signpost` interval in macOS. (69345790)
 - XCTest now supports test repetition. (69470788, 71428753, 72078437) There are three test repetition modes. Up Until Maximum Repetitions repeats a test up to the specified maximum regardless of the status. Until Failure repeats a test until it fails. Retry on Failure retries a test until it succeeds. Enable test repetition in your test plan, `xcodebuild`, or by running your test from the test diamond by Control-clicking and selecting Run *<testName>* Repeatedly to bring up the test repetition dialog. When using `xcodebuild`, pass `-test-iterations` with a number to run a test a fixed number of times, or combine it with `-retry-tests-on-failure` or `-run-tests-until-failure` to use one of the other stopping conditions. For example, to run your test with repetition from the command line, start with the base `xcodebuild` command to run your test, and add the flags `-test-iterations` set to 100 and `-run-tests-until-failure`: ```shell
 xcodebuild test -project MyProject.xcodeproj -scheme MyProject -destination 'platform=iOS Simulator,name=iPhone 12,OS=15.0' -test-iterations 100 -run-tests-until-failure

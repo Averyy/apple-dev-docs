@@ -23,7 +23,7 @@ var lineCap: CAShapeLayerLineCap { get set }
 
 The line cap style specifies the shape of the endpoints of an open path when stroked. The supported values are described in [`Line Cap Values`](line-cap-values.md). The following figure shows the appearance of the available line cap styles.
 
-![None](https://docs-assets.developer.apple.com/published/5639a2a1fdd14a26edcf53a53ca3d86a/media-1965770.gif)
+![None](/images/com.apple.quartzcore/media-1965770.gif)
 
 The default is [`butt`](cashapelayerlinecap/butt.md).
 

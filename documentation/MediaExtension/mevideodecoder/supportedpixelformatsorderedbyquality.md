@@ -16,7 +16,7 @@ optional var supportedPixelFormatsOrderedByQuality: [NSNumber] { get }
 
 #### Discussion
 
-This array contains [`CMPixelFormatType`](https://developer.apple.com/documentation/CoreMedia/CMPixelFormatType) values, ordered by quality from best to worst. The system queries this property on the extension when [`Video Toolbox`](https://developer.apple.com/documentation/VideoToolbox) queries the [`kVTDecompressionPropertyKey_SupportedPixelFormatsOrderedByQuality`](https://developer.apple.com/documentation/VideoToolbox/kVTDecompressionPropertyKey_SupportedPixelFormatsOrderedByQuality) on the hosting [`VTDecompressionSession`](https://developer.apple.com/documentation/VideoToolbox/VTDecompressionSession).
+This array contains [`CMPixelFormatType`](https://developer.apple.com/documentation/coremedia/cmpixelformattype) values, ordered by quality from best to worst. The system queries this property on the extension when [`Video Toolbox`](https://developer.apple.com/documentation/videotoolbox) queries the [`kVTDecompressionPropertyKey_SupportedPixelFormatsOrderedByQuality`](https://developer.apple.com/documentation/videotoolbox/kvtdecompressionpropertykey_supportedpixelformatsorderedbyquality) on the hosting [`VTDecompressionSession`](https://developer.apple.com/documentation/videotoolbox/vtdecompressionsession).
 
 ## See Also
 

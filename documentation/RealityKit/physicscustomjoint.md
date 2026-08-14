@@ -65,7 +65,7 @@ If `pin0` is in a fixed location for the example above, this joint allows `pin1`
 ## Relationships
 
 ### Conforms To
-- [Equatable](../Swift/Equatable.md)
+- [Equatable](../swift/equatable.md)
 - [PhysicsJoint](physicsjoint.md)
 
 ## See Also

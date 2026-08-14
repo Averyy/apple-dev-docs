@@ -10,7 +10,7 @@ During initial development of your app, you create your schema and add records f
 
 As you continue to develop your app, you can add record types and fields to the development environment. To prevent conflicts, you can’t delete record types or fields that are already in production. Every time you deploy the development schema, its additive changes merge into the production schema. For testing purposes, your app in development can access either the development or the production environment.
 
-![A diagram showing a development workflow for iterating a schema in the development environment before deploying it to the production environment.](https://docs-assets.developer.apple.com/published/125907201ea106ea204b12da247d319c/media-3562414%402x.png)
+![A diagram showing a development workflow for iterating a schema in the development environment before deploying it to the production environment.](/images/com.apple.cloudkit/media-3562414@2x.png)
 
 ##### Reset the Development Environment
 
@@ -24,7 +24,7 @@ To reset the development environment to the current state of production:
 4. On the left of the screen, select Reset Environment.
 5. In the dialog that appears, read the warning, select the checkbox, and click Reset.
 
-![A screenshot showing the details of a selected container in the CloudKit Database app. The screenshot highlights the Reset Environment menu item on the left.](https://docs-assets.developer.apple.com/published/39744312eb9d5a9e4b2cb40a1d84d9a3/media-3699106%402x.png)
+![A screenshot showing the details of a selected container in the CloudKit Database app. The screenshot highlights the Reset Environment menu item on the left.](/images/com.apple.cloudkit/media-3699106@2x.png)
 
 ##### Deploy the Development Schema
 
@@ -40,7 +40,7 @@ To deploy the development schema to production:
 4. On the left, select Deploy Schema Changes.
 5. Review the pending deployment changes and click Deploy.
 
-![A screenshot showing the details of a selected container in the CloudKit Database app. The screenshot highlights the Deploy Schema Changes menu item on the left.](https://docs-assets.developer.apple.com/published/1b7c0751f347b1886d15c760f3725967/media-3699097%402x.png)
+![A screenshot showing the details of a selected container in the CloudKit Database app. The screenshot highlights the Deploy Schema Changes menu item on the left.](/images/com.apple.cloudkit/media-3699097@2x.png)
 
 ## See Also
 

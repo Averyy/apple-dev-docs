@@ -16,7 +16,7 @@ static let textAlternatives: NSAttributedString.Key
 
 #### Discussion
 
-The value of this attribute is an [`NSTextAlternatives`](https://developer.apple.com/documentation/AppKit/NSTextAlternatives) object representing alternatives for a string that may be presented to the user.
+The value of this attribute is an [`NSTextAlternatives`](https://developer.apple.com/documentation/appkit/nstextalternatives) object representing alternatives for a string that may be presented to the user.
 
 ## See Also
 

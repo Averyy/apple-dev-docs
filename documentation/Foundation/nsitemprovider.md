@@ -34,7 +34,7 @@ DispatchQueue.main.async {
 
 ##### App Extension Support
 
-An app extension typically encounters item providers when examining the [`attachments`](nsextensionitem/attachments.md) property of an [`NSExtensionItem`](nsextensionitem.md) object. During that examination, the extension can use the [`hasItemConformingToTypeIdentifier(_:)`](nsitemprovider/hasitemconformingtotypeidentifier(_:).md) method to look for data that it recognizes. Item providers use [`Uniform Type Identifiers`](https://developer.apple.com/documentation/UniformTypeIdentifiers) values to identify the data they contain. After finding a type of data that your extension can use, it calls the [`loadItem(forTypeIdentifier:options:completionHandler:)`](nsitemprovider/loaditem(fortypeidentifier:options:completionhandler:).md) method to load the actual data, which is delivered to the provided completion handler.
+An app extension typically encounters item providers when examining the [`attachments`](nsextensionitem/attachments.md) property of an [`NSExtensionItem`](nsextensionitem.md) object. During that examination, the extension can use the [`hasItemConformingToTypeIdentifier(_:)`](nsitemprovider/hasitemconformingtotypeidentifier(_:).md) method to look for data that it recognizes. Item providers use [`Uniform Type Identifiers`](https://developer.apple.com/documentation/uniformtypeidentifiers) values to identify the data they contain. After finding a type of data that your extension can use, it calls the [`loadItem(forTypeIdentifier:options:completionHandler:)`](nsitemprovider/loaditem(fortypeidentifier:options:completionhandler:).md) method to load the actual data, which is delivered to the provided completion handler.
 
 You can create item providers to vend data to another process. An extension that modifies an original data item can create a new `NSItemProvider` object to send back to the host app. When creating data items, you specify your data object and the type of that object. You can optionally use the [`previewImageHandler`](nsitemprovider/previewimagehandler.md) property to generate a preview image for your data.
 
@@ -175,21 +175,21 @@ A single item provider may use custom blocks to provide its data in many differe
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
 - [NSCopying](nscopying.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 
 - [class NSExtensionItem](nsextensionitem.md)
   An immutable collection of values representing different aspects of an item for an extension to act upon.
-- [Add Functionality to Finder with Action Extensions](../AppKit/add-functionality-to-finder-with-action-extensions.md)
+- [Add Functionality to Finder with Action Extensions](../appkit/add-functionality-to-finder-with-action-extensions.md)
   Implement Action Extensions to provide quick access to commonly used features of your app.
 
 

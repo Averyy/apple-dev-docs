@@ -22,7 +22,7 @@ var defaultLanguageOption: MPNowPlayingInfoLanguageOption? { get }
 
 #### Discussion
 
-The value of this property is [`nil`](https://developer.apple.com/documentation/ObjectiveC/nil-227m0) when there’s no default language option.
+The value of this property is [`nil`](https://developer.apple.com/documentation/objectivec/nil-227m0) when there’s no default language option.
 
 ## See Also
 

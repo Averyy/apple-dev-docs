@@ -38,7 +38,7 @@ Use this method to perform the web presentment transaction after calling `perfor
 
 ## Parameters
 
-- `data`: The APDU as a [`Data`](https://developer.apple.com/documentation/Foundation/Data) instance.
+- `data`: The APDU as a [`Data`](https://developer.apple.com/documentation/foundation/data) instance.
 
 ## See Also
 

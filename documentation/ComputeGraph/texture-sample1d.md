@@ -15,7 +15,7 @@ float4 texture_sample1d(void texture, float u)
 
 #### Discussion
 
-> **Note**: ![Graph](https://docs-assets.developer.apple.com/published/2c7bd8f23df7a87ce6682f63e2f3beaa/texture_sample1d.svg)
+> **Note**: ![Graph](/images/com.apple.computegraph/texture_sample1d.svg)
 
 
 ---

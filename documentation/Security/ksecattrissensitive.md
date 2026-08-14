@@ -22,7 +22,7 @@ let kSecAttrIsSensitive: CFString
 
 #### Discussion
 
-The corresponding value is of type [`CFBoolean`](https://developer.apple.com/documentation/CoreFoundation/CFBoolean). When set to [`kCFBooleanTrue`](https://developer.apple.com/documentation/CoreFoundation/kCFBooleanTrue), the item can only be exported in an encrypted format. Items of class [`kSecClassKey`](ksecclasskey.md) have this attribute.
+The corresponding value is of type [`CFBoolean`](https://developer.apple.com/documentation/corefoundation/cfboolean). When set to [`kCFBooleanTrue`](https://developer.apple.com/documentation/corefoundation/kcfbooleantrue), the item can only be exported in an encrypted format. Items of class [`kSecClassKey`](ksecclasskey.md) have this attribute.
 
 
 ---

@@ -25,8 +25,8 @@ The `CopySpeechProperty` function is the Core Foundation-based equivalent of the
 ## Parameters
 
 - `chan`: The speech channel with which the specified property is associated.
-- `property`: A speech-channel property about which information is being requested. See   for information on the properties you can specify.
-- `object`: On return, a pointer to a Core Foundation object that holds the value of the specified property. The type of the object depends on the specific property passed in. For some properties, the value of   can be  . When the returned object is a   object, you can use   functions, such as  , to retrieve the values associated with the keys that are associated with the specified property.
+- `property`: A speech-channel property about which information is being requested. See [`Speech-Channel Properties`](speech_synthesis_manager/speech-channel_properties.md) for information on the properties you can specify.
+- `object`: On return, a pointer to a Core Foundation object that holds the value of the specified property. The type of the object depends on the specific property passed in. For some properties, the value of `object` can be `NULL`. When the returned object is a `CFDictionary` object, you can use `CFDictionary` functions, such as [`CFDictionaryGetValue(_:_:)`](https://developer.apple.com/documentation/corefoundation/cfdictionarygetvalue(_:_:)), to retrieve the values associated with the keys that are associated with the specified property.
 
 ## See Also
 

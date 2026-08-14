@@ -20,7 +20,7 @@ You can edit the details of a new event or an event you previously fetched from 
 - The alarms associated with the event with the [`alarms`](ekcalendaritem/alarms.md) property (see “[`Setting an alarm`](setting-an-alarm.md)” for more details).
 - The event’s recurrence rule, if it is a repeating event, with the `recurrenceRules` property (see “[`Creating a recurring event`](creating-a-recurring-event.md)” for more details).
 
-> **Note**:  In iOS, you have the option of letting users modify event data with the event view controllers provided in the EventKit UI framework. For information on how to use these event view controllers, see [`EventKit UI`](https://developer.apple.com/documentation/EventKitUI).
+> **Note**:  In iOS, you have the option of letting users modify event data with the event view controllers provided in the EventKit UI framework. For information on how to use these event view controllers, see [`EventKit UI`](https://developer.apple.com/documentation/eventkitui).
 
 ###### Save and Delete Events
 

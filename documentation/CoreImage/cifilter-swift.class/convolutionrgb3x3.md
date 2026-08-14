@@ -52,7 +52,7 @@ func convolutionRGB3X3(inputImage: CIImage) -> CIImage {
 }
 ```
 
-![Two images arranged horizontally. The left image is of a modern building with horizontal concrete beams and large tinted windows. The right image shows the result of applying the convolution RGB 3 x 3 filter with a kernel that sharpens the image. Edges and fine detail in the image are emphasized.](https://docs-assets.developer.apple.com/published/3822396c355353c595422bd0a53e4d95/media-4407321%402x.png)
+![Two images arranged horizontally. The left image is of a modern building with horizontal concrete beams and large tinted windows. The right image shows the result of applying the convolution RGB 3 x 3 filter with a kernel that sharpens the image. Edges and fine detail in the image are emphasized.](/images/com.apple.coreimage/media-4407321@2x.png)
 
 ## See Also
 

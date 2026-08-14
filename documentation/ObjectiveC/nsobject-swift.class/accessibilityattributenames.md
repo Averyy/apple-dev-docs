@@ -20,7 +20,7 @@ An array containing the attributes supported by the receiver.
 
 #### Discussion
 
-User interface classes must implement this method. Subclasses should invoke the superclass’s implementation, if it exists, and append additional attributes or remove unsupported attributes. See  [`NSAccessibility`](https://developer.apple.com/documentation/AppKit/nsaccessibility) constants for lists of attribute names.
+User interface classes must implement this method. Subclasses should invoke the superclass’s implementation, if it exists, and append additional attributes or remove unsupported attributes. See  [`NSAccessibility`](https://developer.apple.com/documentation/appkit/nsaccessibility) constants for lists of attribute names.
 
 ## See Also
 

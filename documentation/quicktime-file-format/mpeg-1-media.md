@@ -10,7 +10,7 @@ MPEG-1 media is used to store MPEG-1 video streams, MPEG-1, layer 2 audio stream
 
 #### Mpeg 1 Sample Description
 
-The MPEG-1 sample description uses the standard sample description header, as described in [`Sample description atom ('stsd')`](sample_description_atom.md).
+The MPEG-1 sample description uses the standard sample description header, as described in [`Sample description atom`](sample_description_atom.md).
 
 The data format field in the sample description is always set to `'MPEG'`. The MPEG-1 media handler adds no additional fields to the sample description.
 

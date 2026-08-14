@@ -11,7 +11,7 @@ framework: HIG
 
 When people glance at their Apple Watch, they know they can access essential information and perform simple, timely tasks whether they’re stationary or in motion.
 
-![A stylized representation of an Apple Watch frame shown on top of a grid. The image is overlaid with rectangular and circular grid lines and is tinted green to subtly reflect the green in the original six-color Apple logo.](https://docs-assets.developer.apple.com/published/b58ddc2ed402834a2bd35613f509b8fa/platforms-watchOS-intro~dark%402x.png)
+![A stylized representation of an Apple Watch frame shown on top of a grid. The image is overlaid with rectangular and circular grid lines and is tinted green to subtly reflect the green in the original six-color Apple logo.](/images/com.apple.HIG/platforms-watchOS-intro~dark@2x.png)
 As you begin designing your app for Apple Watch, start by understanding the following fundamental device characteristics and patterns that distinguish the watchOS experience. Using these characteristics and patterns to inform your design decisions can help you provide an app that Apple Watch users appreciate.
 **Display.** The small Apple Watch display fits on the wrist while delivering an easy-to-read, high-resolution experience.
 **Ergonomics.** Because people wear Apple Watch, they’re usually no more than a foot away from the display as they raise their wrist to view it and use their opposite hand to interact with the device. In addition, the Always On display lets people view information on the watch face when they drop their wrist.

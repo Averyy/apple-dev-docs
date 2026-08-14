@@ -20,7 +20,7 @@ If the delegate implements this method it will receive the message after the pan
 
 ## Parameters
 
-- `aNotification`: Always `DREraseProgressPanelDidFinishNotification` You can retrieve the `DREraseProgressPanel` object in question by sending [`object`](https://developer.apple.com/documentation/Foundation/NSNotification/object) to `aNotification`.
+- `aNotification`: Always `DREraseProgressPanelDidFinishNotification` You can retrieve the `DREraseProgressPanel` object in question by sending [`object`](https://developer.apple.com/documentation/foundation/nsnotification/object) to `aNotification`.
 
 
 ---

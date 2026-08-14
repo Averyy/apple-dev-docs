@@ -201,7 +201,7 @@ Intercepting events is only rarely required and you should avoid it if possible.
 - [func supportedInterfaceOrientations(for: UIWindow?) -> UIInterfaceOrientationMask](uiapplication/supportedinterfaceorientations(for:).md)
   Returns the default set of interface orientations to use for the view controllers in the specified window.
 ### Tracking controls in the run loop
-- [static let tracking: RunLoop.Mode](../Foundation/RunLoop/Mode/tracking.md)
+- [static let tracking: RunLoop.Mode](../foundation/runloop/mode/tracking.md)
   The mode set while tracking in controls takes place.
 ### Detecting screenshots
 - [class let userDidTakeScreenshotNotification: NSNotification.Name](uiapplication/userdidtakescreenshotnotification.md)
@@ -242,15 +242,15 @@ Intercepting events is only rarely required and you should avoid it if possible.
 ### Inherits From
 - [UIResponder](uiresponder.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [NSTouchBarProvider](../AppKit/NSTouchBarProvider.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSTouchBarProvider](../appkit/nstouchbarprovider.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 - [UIActivityItemsConfigurationProviding](uiactivityitemsconfigurationproviding.md)
 - [UIPasteConfigurationSupporting](uipasteconfigurationsupporting.md)
 - [UIResponderStandardEditActions](uiresponderstandardeditactions.md)

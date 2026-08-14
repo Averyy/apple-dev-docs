@@ -22,7 +22,7 @@ func addBoundaryTimeObserver(forTimes times: [NSValue], queue: dispatch_queue_t?
 
 #### Return Value
 
-An object that conforms to [`NSObject`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class). You must retain this value as long as you want the time observer to be invoked by the synchronizer. Pass this object to [`removeTimeObserver(_:)`](avsamplebufferrendersynchronizer/removetimeobserver(_:).md) to cancel time observation.
+An object that conforms to [`NSObject`](https://developer.apple.com/documentation/objectivec/nsobject-swift.class). You must retain this value as long as you want the time observer to be invoked by the synchronizer. Pass this object to [`removeTimeObserver(_:)`](avsamplebufferrendersynchronizer/removetimeobserver(_:).md) to cancel time observation.
 
 #### Discussion
 

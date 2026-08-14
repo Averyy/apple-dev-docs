@@ -28,7 +28,7 @@ To migrate previously-configured accessories to AccessorySetupKit, add instances
 ## Parameters
 
 - `displayItems`: An array of [`ASPickerDisplayItem`](aspickerdisplayitem.md) instances describing accessories your app can set up. The picker displays only discovered accessories that match the properties of items in this array.
-- `completionHandler`: A block or closure that the picker calls when it completes the operation. The completion handler receives an [`NSError`](https://developer.apple.com/documentation/Foundation/NSError) instance if the picker encounters an error.
+- `completionHandler`: A block or closure that the picker calls when it completes the operation. The completion handler receives an [`NSError`](https://developer.apple.com/documentation/foundation/nserror) instance if the picker encounters an error.
 
 ## See Also
 

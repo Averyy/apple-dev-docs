@@ -46,7 +46,7 @@ A [`UITextInputDelegate`](uitextinputdelegate.md) conveys notifications of pendi
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 ### Conforming Types
 - [UIInputViewController](uiinputviewcontroller.md)
 

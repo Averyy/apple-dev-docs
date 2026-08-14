@@ -27,7 +27,7 @@ The view controller corresponding to the specified identifier string. If no view
 
 Use this method to create a view controller object to present programmatically. Each time you call this method, it creates a new instance of the view controller using the block you provide.
 
-In your block, create the view controller using your custom initialization method and return it. Your custom initialization method must accept an [`NSCoder`](https://developer.apple.com/documentation/Foundation/NSCoder) parameter and must call the inherited [`init(coder:)`](uiviewcontroller/init(coder:).md) method at some point during its execution. Not doing so is a programmer error. After initializing the storyboard state, initialize your view controller’s custom properties.
+In your block, create the view controller using your custom initialization method and return it. Your custom initialization method must accept an [`NSCoder`](https://developer.apple.com/documentation/foundation/nscoder) parameter and must call the inherited [`init(coder:)`](uiviewcontroller/init(coder:).md) method at some point during its execution. Not doing so is a programmer error. After initializing the storyboard state, initialize your view controller’s custom properties.
 
 ## Parameters
 

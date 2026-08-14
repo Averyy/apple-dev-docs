@@ -42,7 +42,7 @@ struct CopyableExample: View {
 }
 ```
 
-The command copies each item’s representation as specified by the item’s conformance to the [`Transferable`](https://developer.apple.com/documentation/CoreTransferable/Transferable) protocol. The above example records selection using each list item’s corresponding string, and strings conform to the `Transferable` protocol by default. For more complex cases, you might need to take additional steps.
+The command copies each item’s representation as specified by the item’s conformance to the [`Transferable`](https://developer.apple.com/documentation/coretransferable/transferable) protocol. The above example records selection using each list item’s corresponding string, and strings conform to the `Transferable` protocol by default. For more complex cases, you might need to take additional steps.
 
 For example, the following code displays colors composed from a list of `Item` instances that contain both a color and its name, as well as an identifier. The list manages selection using item identifiers:
 
@@ -78,15 +78,15 @@ struct CopyableIDExample: View {
 This example does two things that the previous example didn’t have to:
 
 - It converts the list of selected item identifiers into a list of selected items for use with the copyable modifier.
-- It ensures that the copyable items conform to the [`Transferable`](https://developer.apple.com/documentation/CoreTransferable/Transferable) protocol, using the item’s `name` property as the representation.
+- It ensures that the copyable items conform to the [`Transferable`](https://developer.apple.com/documentation/coretransferable/transferable) protocol, using the item’s `name` property as the representation.
 
 When someone copies the first item in the list, which appears in the interface as a red rectangle, and then pastes into a text editor, they get the string “red”.
 
-> **Note**: To enable people to copy using a custom action — like from a context menu item — rather than using the system Copy command, update the Clipboard directly using an [`NSPasteboard`](https://developer.apple.com/documentation/AppKit/NSPasteboard) or a [`UIPasteboard`](https://developer.apple.com/documentation/UIKit/UIPasteboard) instance.
+> **Note**: To enable people to copy using a custom action — like from a context menu item — rather than using the system Copy command, update the Clipboard directly using an [`NSPasteboard`](https://developer.apple.com/documentation/appkit/nspasteboard) or a [`UIPasteboard`](https://developer.apple.com/documentation/uikit/uipasteboard) instance.
 
 ## Parameters
 
-- `payload`: A closure that returns an array of items to copy to the Clipboard when someone issues a Copy command. The items in the array must conform to the [`Transferable`](https://developer.apple.com/documentation/CoreTransferable/Transferable) protocol.
+- `payload`: A closure that returns an array of items to copy to the Clipboard when someone issues a Copy command. The items in the array must conform to the [`Transferable`](https://developer.apple.com/documentation/coretransferable/transferable) protocol.
 
 ## See Also
 

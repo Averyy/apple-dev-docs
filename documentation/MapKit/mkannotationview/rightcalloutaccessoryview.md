@@ -21,9 +21,9 @@ var rightCalloutAccessoryView: NSView? { get set }
 
 #### Discussion
 
-This property is `nil` by default. Typically, you use the right callout view to link to more detailed information about the annotation. In an iOS app, a common view to specify for this property is a button object with a type of [`UIButton.ButtonType.detailDisclosure`](https://developer.apple.com/documentation/UIKit/UIButton/ButtonType-swift.enum/detailDisclosure).
+This property is `nil` by default. Typically, you use the right callout view to link to more detailed information about the annotation. In an iOS app, a common view to specify for this property is a button object with a type of [`UIButton.ButtonType.detailDisclosure`](https://developer.apple.com/documentation/uikit/uibutton/buttontype-swift.enum/detaildisclosure).
 
-In an iOS app, if the view you specify is also a descendant of the [`UIControl`](https://developer.apple.com/documentation/UIKit/UIControl) class, you can use the map view’s delegate to receive notifications when a person taps your control. If it doesn’t descend from [`UIControl`](https://developer.apple.com/documentation/UIKit/UIControl), your view is responsible for handling any touch events within its bounds.
+In an iOS app, if the view you specify is also a descendant of the [`UIControl`](https://developer.apple.com/documentation/uikit/uicontrol) class, you can use the map view’s delegate to receive notifications when a person taps your control. If it doesn’t descend from [`UIControl`](https://developer.apple.com/documentation/uikit/uicontrol), your view is responsible for handling any touch events within its bounds.
 
 In a macOS app, the callout view’s view controller can implement an action method that responds when a user clicks the control in a callout view.
 

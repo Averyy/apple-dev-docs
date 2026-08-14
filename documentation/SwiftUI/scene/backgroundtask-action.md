@@ -23,7 +23,7 @@ func backgroundTask<D, R>(_ task: BackgroundTask<D, R>, action: @escaping @Senda
 
 #### Discussion
 
-When the system wakes your app or extension for one or more background tasks, it will call any actions associated with matching tasks. When your async actions return, the system put your app back into a suspended state. The system considers the task completed when the action closure that you provide returns. If the action closure has not returned when the task runs out of time to complete, the system cancels the task. Use [`withTaskCancellationHandler(operation:onCancel:isolation:)`](https://developer.apple.com/documentation/Swift/withTaskCancellationHandler(operation:onCancel:isolation:)) to observe whether the task is low on runtime.
+When the system wakes your app or extension for one or more background tasks, it will call any actions associated with matching tasks. When your async actions return, the system put your app back into a suspended state. The system considers the task completed when the action closure that you provide returns. If the action closure has not returned when the task runs out of time to complete, the system cancels the task. Use [`withTaskCancellationHandler(operation:onCancel:isolation:)`](https://developer.apple.com/documentation/swift/withtaskcancellationhandler(operation:oncancel:isolation:)) to observe whether the task is low on runtime.
 
 ```swift
 /// An example of a Weather Application.

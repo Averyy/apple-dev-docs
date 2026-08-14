@@ -29,11 +29,11 @@ abs(B - F)
 
 The `Difference` node subtracts two inputs and takes the absolute value of the result, represented by the equation `abs(B - F)`. It uses the `Mix` input to determine the weight of the foreground in the blend. Higher values closer to `1` output a more intense difference, while lower values closer to `0` dim the effect. Below is an example of a node graph that uses the difference node to blend two images together into a single material:
 
-![None](https://docs-assets.developer.apple.com/published/df0b2a945ff0248fd2850cac564a8a26/DifferenceGraph.png)
+![None](/images/ShaderGraph-Docs/DifferenceGraph.png)
 
 Below are two images and the resulting blended texture applied to a cube.
 
-![None](https://docs-assets.developer.apple.com/published/262c61aaa1f893b613b75080338aaad7/DifferenceMaterial.png)
+![None](/images/ShaderGraph-Docs/DifferenceMaterial.png)
 
 ## See Also
 

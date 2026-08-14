@@ -24,7 +24,7 @@ To create the TestFlight folder:
 
 ##### Add Text Files to the Folder to Include Notes
 
-Add text files to the TestFlight folder to provide notes to your testers. Provide notes in multiple languages by creating a file per language. For a list of the locales TestFlight supports, see [`BetaBuildLocalizationCreateRequest.Data.Attributes`](https://developer.apple.com/documentation/AppStoreConnectAPI/BetaBuildLocalizationCreateRequest/Data-data.dictionary/Attributes-data.dictionary). For general information on language and region codes, see [`Choosing localization regions and scripts`](choosing-localization-regions-and-scripts.md).
+Add text files to the TestFlight folder to provide notes to your testers. Provide notes in multiple languages by creating a file per language. For a list of the locales TestFlight supports, see [`BetaBuildLocalizationCreateRequest.Data.Attributes`](https://developer.apple.com/documentation/appstoreconnectapi/betabuildlocalizationcreaterequest/data-data.dictionary/attributes-data.dictionary). For general information on language and region codes, see [`Choosing localization regions and scripts`](choosing-localization-regions-and-scripts.md).
 
 To add the text files to your project:
 

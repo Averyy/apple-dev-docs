@@ -214,9 +214,9 @@ Regions can be signalled using the standard `#EXT-X-DATERANGE` tag. The `CLASS` 
 
 To avoid using a large number of regions, restrict risk-level values to a small set of values. Use a risk level of zero for regions that have very low risk. Don’t mark regions with a risk level unless they have been analyzed. Raw risk values can be computed using an algorithm such as [`VideoFlashingReduction`](https://developer.apple.comhttps://github.com/apple/VideoFlashingReduction).
 
-The [`AVPlayerItemMetadataCollector`](https://developer.apple.com/documentation/AVFoundation/AVPlayerItemMetadataCollector) class can be used in your application to fetch the `#EXT-X-DATERANGE` tag metadata.
+The [`AVPlayerItemMetadataCollector`](https://developer.apple.com/documentation/avfoundation/avplayeritemmetadatacollector) class can be used in your application to fetch the `#EXT-X-DATERANGE` tag metadata.
 
-If you use the [`AVKit`](https://developer.apple.com/documentation/AVKit) framework the metadata is fetched for you and the timeline is marked with a reddish color. If you display your own timeline you should do something similar.
+If you use the [`AVKit`](https://developer.apple.com/documentation/avkit) framework the metadata is fetched for you and the timeline is marked with a reddish color. If you display your own timeline you should do something similar.
 
 ##### Additional Spatial Video Specifications
 

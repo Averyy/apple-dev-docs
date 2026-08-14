@@ -34,7 +34,7 @@ See the `setxattr(2)` man page for information on setting extended attributes.
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../Swift/BitwiseCopyable.md)
+- [BitwiseCopyable](../swift/bitwisecopyable.md)
 
 ## See Also
 

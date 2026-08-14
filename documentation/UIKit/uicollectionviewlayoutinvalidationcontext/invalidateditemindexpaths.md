@@ -20,7 +20,7 @@ var invalidatedItemIndexPaths: [IndexPath]? { get }
 
 #### Discussion
 
-The array contains zero or more [`NSIndexPath`](https://developer.apple.com/documentation/Foundation/NSIndexPath) objects, each of which represents a cell whose layout changed.
+The array contains zero or more [`NSIndexPath`](https://developer.apple.com/documentation/foundation/nsindexpath) objects, each of which represents a cell whose layout changed.
 
 ## See Also
 

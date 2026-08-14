@@ -8,7 +8,7 @@ Review how you can best create custom Xcode Cloud workflows to refine your conti
 
 With Xcode, you can configure your project or workspace to use Xcode Cloud, create a first workflow, and start your first build. After Xcode Cloud successfully completes the first build, review how you can best create custom Xcode Cloud workflows to practice continuous integration and delivery (CI/CD). Then, plan next steps for refining your CI/CD practice to make sure your app or framework is always in a releasable state.
 
-![A figure that shows the iterative continuous integration and delivery practice of building, testing, distributing, and gathering feedback to fix issues and verify changes.](https://docs-assets.developer.apple.com/published/bca93b3fc3895d146eeb3773171a9c1f/Developing-a-Workflow-Strategy-for-Xcode-Cloud-1%402x.png)
+![A figure that shows the iterative continuous integration and delivery practice of building, testing, distributing, and gathering feedback to fix issues and verify changes.](/images/com.apple.Xcode/Developing-a-Workflow-Strategy-for-Xcode-Cloud-1@2x.png)
 
 If you’re new to CI/CD, see [`About continuous integration and delivery with Xcode Cloud`](about-continuous-integration-and-delivery-with-xcode-cloud.md) to learn how CI/CD with Xcode Cloud helps you create high-quality apps and frameworks. To learn more about creating your first workflow, see [`Configuring your first Xcode Cloud workflow`](configuring-your-first-xcode-cloud-workflow.md).
 
@@ -57,7 +57,7 @@ Alternatively, deactivate a workflow by Control-clicking it in the Manage Workfl
 
 To start using a deactivated workflow again, reactivate it any time in the Manage Workflows sheet, or open the workflow and toggle the switch next to its name to the On position.
 
-![A screenshot of a workflow in Xcode with a highlighted area for the switch you can use to activate or deactivate the workflow.](https://docs-assets.developer.apple.com/published/87bcce8503098665528b9e2d5973285c/Developing-a-Workflow-Strategy-for-Xcode-Cloud-3%402x.png)
+![A screenshot of a workflow in Xcode with a highlighted area for the switch you can use to activate or deactivate the workflow.](/images/com.apple.Xcode/Developing-a-Workflow-Strategy-for-Xcode-Cloud-3@2x.png)
 
 ##### Duplicate a Workflow Before Making Significant Changes
 
@@ -83,7 +83,7 @@ Depending on the complexity of your project, creating a workflow and making sure
 
 As a result, only members of your team with the Admin or App Manager role can make changes to that workflow.
 
-![A screenshot that shows a workflow in Xcode. The General section is visible and the checkbox next to Restrict Editing is selected.](https://docs-assets.developer.apple.com/published/361a557d6f785e47913557a712cece65/Developing-a-Workflow-Strategy-for-Xcode-Cloud-4%402x.png)
+![A screenshot that shows a workflow in Xcode. The General section is visible and the checkbox next to Restrict Editing is selected.](/images/com.apple.Xcode/Developing-a-Workflow-Strategy-for-Xcode-Cloud-4@2x.png)
 
 ##### Manage Workflows in App Store Connect
 

@@ -192,11 +192,11 @@ The example has at least one access conflict because both passes access a common
 - The dispatch command from the first pass stores to `bufferC`.
 - The copy command from the second pass loads from `bufferC`.
 
-![A diagram showing two compute passes accessing the same buffer C, with pass 1 storing to buffer C during its dispatch stage and pass 2 loading from buffer C during its blit stage.](https://docs-assets.developer.apple.com/published/28d5ebee107bbb409190cbb05e26c1ed/synchronizing-passes-with-a-fence-1%402x.png)
+![A diagram showing two compute passes accessing the same buffer C, with pass 1 storing to buffer C during its dispatch stage and pass 2 loading from buffer C during its blit stage.](/images/com.apple.metal/synchronizing-passes-with-a-fence-1@2x.png)
 
 Without synchronization, the GPU can run both passes and their stages in parallel, which can yield inconsistent results in resources with access conflicts.
 
-![A diagram showing both passes and their stages running in parallel without synchronization, potentially causing inconsistent results.](https://docs-assets.developer.apple.com/published/4d564ff96353f496ea9e9c3e0977a89d/synchronizing-passes-with-a-fence-2%402x.png)
+![A diagram showing both passes and their stages running in parallel without synchronization, potentially causing inconsistent results.](/images/com.apple.metal/synchronizing-passes-with-a-fence-2@2x.png)
 
 ##### Resolve an Access Conflict Between Passes with a Fence
 
@@ -287,7 +287,7 @@ The following code example modifies the code for the second pass by adding a cal
 
 The fence forces the GPU to wait before it runs the blit stage of the second pass until the dispatch stage of the first pass finishes storing its modifications to the underlying memory for `bufferC`.
 
-![A diagram showing the fence synchronization where the GPU waits for pass 1’s dispatch stage to complete before running pass 2’s blit stage.](https://docs-assets.developer.apple.com/published/7d54c4f8d610a94a846e38d6536472c8/synchronizing-passes-with-a-fence-3%402x.png)
+![A diagram showing the fence synchronization where the GPU waits for pass 1’s dispatch stage to complete before running pass 2’s blit stage.](/images/com.apple.metal/synchronizing-passes-with-a-fence-3@2x.png)
 
 You can reuse a fence instance to resolve resource access conflicts in subsequent commands after encoding a wait command for a pass.
 

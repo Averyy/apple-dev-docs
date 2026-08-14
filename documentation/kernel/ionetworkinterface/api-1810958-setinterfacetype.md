@@ -22,7 +22,7 @@ Sets the interface type before the interface is attached to the network stack. S
 
 ## Parameters
 
-- `type`: A constant defined in   that describes the interface type.
+- `type`: A constant defined in `bsd/net/if_types.h` that describes the interface type.
 
 ## See Also
 

@@ -69,13 +69,13 @@ This class provides properties and methods for accessing common elements of cont
   Returns the name of the input element to which the user remaps the given physical element.
 - [func mappedPhysicalInputNames(forElementAlias: String) -> Set<String>](gcphysicalinputprofile/mappedphysicalinputnames(forelementalias:).md)
   Returns the physical input elements to which the user remaps the given input element.
-- [static let GCControllerUserCustomizationsDidChange: NSNotification.Name](../Foundation/NSNotification/Name-swift.struct/GCControllerUserCustomizationsDidChange.md)
+- [static let GCControllerUserCustomizationsDidChange: NSNotification.Name](../foundation/nsnotification/name-swift.struct/gccontrollerusercustomizationsdidchange.md)
   A notification that posts when the user customizes the button mappings or other settings of a controller.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Inherited By
 - [GCExtendedGamepad](gcextendedgamepad.md)
 - [GCGamepad](gcgamepad.md)
@@ -83,12 +83,12 @@ This class provides properties and methods for accessing common elements of cont
 - [GCMicroGamepad](gcmicrogamepad.md)
 - [GCMouseInput](gcmouseinput.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

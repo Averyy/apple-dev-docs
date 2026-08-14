@@ -21,7 +21,7 @@ var outputDataSource: AVAudioSessionDataSourceDescription? { get }
 
 #### Discussion
 
-The value of this property is [`nil`](https://developer.apple.com/documentation/ObjectiveC/nil-227m0) if switching between multiple output sources isn’t currently possible. Only certain USB accessories support switching output sources.
+The value of this property is [`nil`](https://developer.apple.com/documentation/objectivec/nil-227m0) if switching between multiple output sources isn’t currently possible. Only certain USB accessories support switching output sources.
 
 ## See Also
 

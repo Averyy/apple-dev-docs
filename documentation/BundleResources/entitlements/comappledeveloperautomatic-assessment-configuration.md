@@ -16,11 +16,11 @@ A Boolean value that indicates whether an app may create an assessment session.
 
 #### Discussion
 
-Use an [`AEAssessmentSession`](https://developer.apple.com/documentation/AutomaticAssessmentConfiguration/AEAssessmentSession) instance to put a device into a state that prevents users from accessing certain system features during high-stakes assessment activities, such as administering an exam. Your app needs the [`com.apple.developer.automatic-assessment-configuration`](entitlements/com.apple.developer.automatic-assessment-configuration.md) entitlement to create an assessment session.
+Use an [`AEAssessmentSession`](https://developer.apple.com/documentation/automaticassessmentconfiguration/aeassessmentsession) instance to put a device into a state that prevents users from accessing certain system features during high-stakes assessment activities, such as administering an exam. Your app needs the [`com.apple.developer.automatic-assessment-configuration`](entitlements/com.apple.developer.automatic-assessment-configuration.md) entitlement to create an assessment session.
 
 To add the entitlement to your app, set the entitlement’s type to Boolean in the Xcode property list editor, and the corresponding value to `YES`.
 
-![A screenshot of Xcode with a project’s entitlements file in the property list editor, showing the com.apple.developer.automatic-assessment-configuration entitlement.](https://docs-assets.developer.apple.com/published/55ccfc9accd23ff31a26e363d366dfc9/media-3540004%402x.png)
+![A screenshot of Xcode with a project’s entitlements file in the property list editor, showing the com.apple.developer.automatic-assessment-configuration entitlement.](/images/com.apple.bundleresources/media-3540004@2x.png)
 
 Before your app can use this entitlement, you must first get permission to use it. Request permission by filling in the [`Automatic Assessment Configuration Entitlement Request`](https://developer.apple.comhttps://developer.apple.com/contact/request/automatic-assessment-configuration/) form.
 

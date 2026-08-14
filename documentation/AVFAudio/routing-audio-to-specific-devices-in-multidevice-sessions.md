@@ -8,13 +8,13 @@ Map audio channels to specific devices in multiroute sessions for recording and 
 
 When working with multiple audio devices simultaneously, such as recording from multiple microphones or routing playback to different speakers, you need precise control over which audio reaches which device.
 
-[`Core Audio`](https://developer.apple.com/documentation/CoreAudio) provides channel mapping to bind specific audio channels to targeted devices. Use the input and output nodes from [`AVAudioEngine`](avaudioengine.md) for position-based routing with global channel indices, [`Audio Queue Services`](https://developer.apple.com/documentation/AudioToolbox/audio-queue-services) for device-based routing using device identifiers, or [`AVAudioPlayer`](avaudioplayer.md) and [`AVAudioRecorder`](avaudiorecorder.md) for high-level routing with audio session channel descriptions.
+[`Core Audio`](https://developer.apple.com/documentation/coreaudio) provides channel mapping to bind specific audio channels to targeted devices. Use the input and output nodes from [`AVAudioEngine`](avaudioengine.md) for position-based routing with global channel indices, [`Audio Queue Services`](https://developer.apple.com/documentation/audiotoolbox/audio-queue-services) for device-based routing using device identifiers, or [`AVAudioPlayer`](avaudioplayer.md) and [`AVAudioRecorder`](avaudiorecorder.md) for high-level routing with audio session channel descriptions.
 
 #### Route Audio Outputs Using Audio Engines Output Node
 
-Use [`Audio Unit`](https://developer.apple.com/documentation/AudioUnit) channel maps to route playback audio to specific devices by mapping to global channel positions. A channel map is an array where the index represents the destination channel and the value specifies which source channel to route to that destination. Use `-1` to specify silence for unused channels.
+Use [`Audio Unit`](https://developer.apple.com/documentation/audiounit) channel maps to route playback audio to specific devices by mapping to global channel positions. A channel map is an array where the index represents the destination channel and the value specifies which source channel to route to that destination. Use `-1` to specify silence for unused channels.
 
-In multidevice configurations, [`Core Audio`](https://developer.apple.com/documentation/CoreAudio) flattens all device channels into a sequential global channel space. When multiple audio devices are active, Core Audio assigns channels sequentially based on port order. For example, with AirPods (2 channels) and built-in speaker (2 channels) connected:
+In multidevice configurations, [`Core Audio`](https://developer.apple.com/documentation/coreaudio) flattens all device channels into a sequential global channel space. When multiple audio devices are active, Core Audio assigns channels sequentially based on port order. For example, with AirPods (2 channels) and built-in speaker (2 channels) connected:
 
 ```swift
 Device 1 (AirPods): 2 channels > Global positions [0, 1]
@@ -56,7 +56,7 @@ for (portIndex, outputPort) in currentRoute.outputs.enumerated() {
 
 This iterates through output ports, calculating their position in the global flattened channel array. Use these calculated indices to target specific devices in your channel mapping.
 
-After discovering channel positions, configure the [`Audio Unit`](https://developer.apple.com/documentation/AudioUnit) with a channel map. This example routes a stereo audio file to the built-in speaker, assuming it occupies channels 2 and 3 in the global channel space:
+After discovering channel positions, configure the [`Audio Unit`](https://developer.apple.com/documentation/audiounit) with a channel map. This example routes a stereo audio file to the built-in speaker, assuming it occupies channels 2 and 3 in the global channel space:
 
 ```swift
 let audioSession = AVAudioSession.sharedInstance()
@@ -207,9 +207,9 @@ try engine.start()
 
 #### Route Audio with Audio Queue Channel Assignments
 
-Use [`Audio Queue Services`](https://developer.apple.com/documentation/AudioToolbox/audio-queue-services) channel assignments to route audio to specific device channels by device UID rather than global channel position. This approach provides direct device targeting without needing to calculate global channel indices.
+Use [`Audio Queue Services`](https://developer.apple.com/documentation/audiotoolbox/audio-queue-services) channel assignments to route audio to specific device channels by device UID rather than global channel position. This approach provides direct device targeting without needing to calculate global channel indices.
 
-Set the [`kAudioQueueProperty_ChannelAssignments`](https://developer.apple.com/documentation/AudioToolbox/kAudioQueueProperty_ChannelAssignments) property with an [`AudioQueueChannelAssignment`](https://developer.apple.com/documentation/AudioToolbox/AudioQueueChannelAssignment) structure specifying the target device UID and channel number:
+Set the [`kAudioQueueProperty_ChannelAssignments`](https://developer.apple.com/documentation/audiotoolbox/kaudioqueueproperty_channelassignments) property with an [`AudioQueueChannelAssignment`](https://developer.apple.com/documentation/audiotoolbox/audioqueuechannelassignment) structure specifying the target device UID and channel number:
 
 ```swift
 // Get the device UID from `AVAudioSession`.

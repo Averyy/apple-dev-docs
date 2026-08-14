@@ -19,7 +19,7 @@ case alarm
 
 #### Discussion
 
-![None](https://docs-assets.developer.apple.com/published/42d430284b96c085d29e0306d80a3555/media-2934533%402x.png)
+![None](/images/com.apple.uikit/media-2934533@2x.png)
 
 ## See Also
 

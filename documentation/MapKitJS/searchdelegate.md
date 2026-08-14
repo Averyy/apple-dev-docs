@@ -27,7 +27,7 @@ type SearchDelegate<
 
 #### Discussion
 
-You can also pass an object to the [`search(query, options)`](search/search.md) and [`autocomplete(query, options)`](search/autocomplete.md) methods instead of a search delegate callback function. A delegate object can include the following methods:
+You can also pass an object to the [`search()`](search/search.md) and [`autocomplete()`](search/autocomplete.md) methods instead of a search delegate callback function. A delegate object can include the following methods:
 
 - `searchDidComplete`. Upon successful completion of a search request, this method returns a data object that’s the same as the one that passes to the search callback function.
 - `searchDidError`. The system calls this when the search request fails.

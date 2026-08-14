@@ -22,7 +22,7 @@ let kCGImageSourceCreateThumbnailWithTransform: CFString
 
 #### Discussion
 
-The value of this key must be a CFBoolean value. The default value is [`kCFBooleanFalse`](https://developer.apple.com/documentation/CoreFoundation/kCFBooleanFalse).
+The value of this key must be a CFBoolean value. The default value is [`kCFBooleanFalse`](https://developer.apple.com/documentation/corefoundation/kcfbooleanfalse).
 
 ## See Also
 

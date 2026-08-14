@@ -17,7 +17,7 @@ Returns the keyframe rule corresponding to the given selector if it exists.
 
 ## Parameters
 
-- `key`: A selector for the rule that is either a percentage or the keyword   or  .
+- `key`: A selector for the rule that is either a percentage or the keyword `from` or `to`.
 
 ## See Also
 

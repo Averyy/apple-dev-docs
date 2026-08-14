@@ -23,8 +23,8 @@ struct TupleTransferRepresentation<Item, Value> where Item : Transferable, Value
 ## Relationships
 
 ### Conforms To
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 - [TransferRepresentation](transferrepresentation.md)
 
 ## See Also

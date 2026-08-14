@@ -14,13 +14,13 @@ Detect and classify human activity in real time using computer vision and machin
 
 The Action & Vision sample app leverages several capabilities available in Vision and Core ML in iOS 14 and later. The app provides an example of how you can use these technologies together to help players improve their bean-bag tossing performance.
 
-![A diagram of a human figure tossing a bean bag toward a board with a small opening. Above the figure is a running score tally, and below are elements that display the player’s throw type, trajectory, speed, and score for each throw.](https://docs-assets.developer.apple.com/published/cf82c42b040fd9d2aed3b4c488594534/gamescreen.png)
+![A diagram of a human figure tossing a bean bag toward a board with a small opening. Above the figure is a running score tally, and below are elements that display the player’s throw type, trajectory, speed, and score for each throw.](/images/Vision/gamescreen.png)
 
 > **Note**: This sample code project is associated with the WWDC20 session 10099: [`Explore the Action & Vision App`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2020/10099/).
 
 The app analyzes player performance in a game of bean bag toss. In this easy-to-learn game, you throw bean bags at a 4 x 2-foot board that has a 6-inch hole in one end. You stand 25 feet away from the center hole of the board, and score points if you toss the bean bag onto the board, and score additional points if it goes through the hole. To make gameplay more interesting, the app adds a style dimension to the scoring. It analyzes your throw and adds additional points based on your throw style, including overhand, underhand, or underleg.
 
-![A diagram of the dimensions of the bean bag toss game. A human figure stands 25 feet from a 2 x 4-foot board. A dotted line indicates the movement of a bean bag tossed toward a 6-inch opening in the board.](https://docs-assets.developer.apple.com/published/2e1863dff96a5d5bb4598e628024d1a2/dimensions.png)
+![A diagram of the dimensions of the bean bag toss game. A human figure stands 25 feet from a 2 x 4-foot board. A dotted line indicates the movement of a bean bag tossed toward a 6-inch opening in the board.](/images/Vision/dimensions.png)
 
 After each throw, the app also provides real-time feedback that indicates your throw’s type, speed, and trajectory, along with your score.
 

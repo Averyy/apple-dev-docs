@@ -25,7 +25,7 @@ If noncontiguous layout is not enabled, this method causes generation of all gly
 ## Parameters
 
 - `glyphIndex`: The index of the glyph to be returned.
-- `isValidIndex`: If not `NULL`, on output, [`true`](https://developer.apple.com/documentation/Swift/true) if the requested index is in range; otherwise [`false`](https://developer.apple.com/documentation/Swift/false).
+- `isValidIndex`: If not `NULL`, on output, [`true`](https://developer.apple.com/documentation/swift/true) if the requested index is in range; otherwise [`false`](https://developer.apple.com/documentation/swift/false).
 
 ## See Also
 

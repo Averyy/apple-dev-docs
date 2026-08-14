@@ -26,9 +26,9 @@ News uses this column system when it automatically scales down your article for 
 
 The first figure shows an article on three different devices. In this example, there are 10 columns on the iPad Pro, 7 on the iPad in portrait, and 3 on the iPhone in portrait.
 
-![Screenshots showing the layout of an article on iPad Pro, iPad, and iPhone.](https://docs-assets.developer.apple.com/published/c5704ae71cfad5437b2b0484597cbb1b/media-4087466%402x.png)
+![Screenshots showing the layout of an article on iPad Pro, iPad, and iPhone.](/images/com.apple.applenews/media-4087466@2x.png)
 
-![Screenshots showing the layout of an article with fewer columns on iPad Pro, iPad, and iPhone. ](https://docs-assets.developer.apple.com/published/a11d6a46e5a1107ea711964c44b5b0d1/media-4087467%402x.png)
+![Screenshots showing the layout of an article with fewer columns on iPad Pro, iPad, and iPhone. ](/images/com.apple.applenews/media-4087467@2x.png)
 
 The News app doesn’t scale up. The number of columns decreases on narrower displays, but never increases. In the previous figure, the layout with 7 columns designed for iPad in landscape still has 7 columns on iPad Pro —even though iPad Pro has an extra 300 points in landscape. News doesn’t increase the number of columns, but instead increases the margins on the left and right sides. The width of the gutter between columns remains fixed.
 
@@ -43,7 +43,7 @@ To set the layout for your article, use a [`Layout`](https://developer.apple.com
 
 The following figure shows an article that uses the default values. With 7 columns and a 60-point margin on each side, this layout offers flexibility for a variety of designs and easily scales down to iPhones.
 
-![Labeled screenshot of an article layout that conforms to the rules for article layout.](https://docs-assets.developer.apple.com/published/3bc53dc195e7f19be2df6cd99d3c0a3d/media-4099658%402x.png)
+![Labeled screenshot of an article layout that conforms to the rules for article layout.](/images/com.apple.applenews/media-4099658@2x.png)
 
 Your next step is to position each component. See [`Positioning the Content in Your Article`](positioning-the-content-in-your-article.md).
 

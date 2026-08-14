@@ -71,7 +71,7 @@ The delegate of a [`CBPeripheral`](cbperipheral.md) object must adopt the [`CBPe
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

@@ -18,7 +18,7 @@ static let destination: NSGraphicsContext.AttributeKey
 
 This value can be an instance of [`NSWindow`](nswindow.md) or [`NSBitmapImageRep`](nsbitmapimagerep.md) when creating a graphics context.
 
-When determining the type of a graphics context, this value can be an [`NSMutableData`](https://developer.apple.com/documentation/Foundation/NSMutableData), [`NSString`](https://developer.apple.com/documentation/Foundation/NSString), or [`NSURL`](https://developer.apple.com/documentation/Foundation/NSURL) object.
+When determining the type of a graphics context, this value can be an [`NSMutableData`](https://developer.apple.com/documentation/foundation/nsmutabledata), [`NSString`](https://developer.apple.com/documentation/foundation/nsstring), or [`NSURL`](https://developer.apple.com/documentation/foundation/nsurl) object.
 
 ## See Also
 

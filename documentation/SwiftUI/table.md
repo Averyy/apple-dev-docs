@@ -21,7 +21,7 @@ struct Table<Value, Rows, Columns> where Value == Rows.TableRowValue, Rows : Tab
 
 #### Overview
 
-You commonly create tables from collections of data. The following example shows how to create a simple, three-column table from an array of `Person` instances that conform to the [`Identifiable`](https://developer.apple.com/documentation/Swift/Identifiable) protocol:
+You commonly create tables from collections of data. The following example shows how to create a simple, three-column table from an array of `Person` instances that conform to the [`Identifiable`](https://developer.apple.com/documentation/swift/identifiable) protocol:
 
 ```swift
 struct Person: Identifiable {
@@ -51,13 +51,13 @@ struct PeopleTable: View {
 }
 ```
 
-![A table with three columns and four rows, showing the](https://docs-assets.developer.apple.com/published/f20f26306d37ae8499f9a1e723a48c8a/Table-1-iOS%402x.png)
+![A table with three columns and four rows, showing the](/images/com.apple.SwiftUI/Table-1-iOS@2x.png)
 
 If there are more rows than can fit in the available space, `Table` provides vertical scrolling automatically. On macOS, the table also provides horizontal scrolling if there are more columns than can fit in the width of the view. Scroll bars appear as needed on iOS; on macOS, the `Table` shows or hides scroll bars based on the “Show scroll bars” system preference.
 
 ##### Supporting Selection in Tables
 
-To make rows of a table selectable, provide a binding to a selection variable. Binding to a single instance of the table data’s [`id`](https://developer.apple.com/documentation/Swift/Identifiable/id-8t2ws) type creates a single-selection table. Binding to a [`Set`](https://developer.apple.com/documentation/Swift/Set) creates a table that supports multiple selections. The following example shows how to add multi-select to the previous example. A [`Text`](text.md) view below the table shows the number of items currently selected.
+To make rows of a table selectable, provide a binding to a selection variable. Binding to a single instance of the table data’s [`id`](https://developer.apple.com/documentation/swift/identifiable/id-8t2ws) type creates a single-selection table. Binding to a [`Set`](https://developer.apple.com/documentation/swift/set) creates a table that supports multiple selections. The following example shows how to add multi-select to the previous example. A [`Text`](text.md) view below the table shows the number of items currently selected.
 
 ```swift
 struct SelectableTable: View {
@@ -76,7 +76,7 @@ struct SelectableTable: View {
 
 ##### Supporting Sorting in Tables
 
-To make the columns of a table sortable, provide a binding to an array of [`SortComparator`](https://developer.apple.com/documentation/Foundation/SortComparator) instances. The table reflects the sorted state through its column headers, allowing sorting for any columns with key paths.
+To make the columns of a table sortable, provide a binding to an array of [`SortComparator`](https://developer.apple.com/documentation/foundation/sortcomparator) instances. The table reflects the sorted state through its column headers, allowing sorting for any columns with key paths.
 
 When the table sort descriptors update, re-sort the data collection that underlies the table; the table itself doesn’t perform a sort operation. You can watch for changes in the sort descriptors by using a [`onChange(of:perform:)`](view/onchange(of:perform:).md) modifier, and then sort the data in the modifier’s `perform` closure.
 
@@ -137,7 +137,7 @@ struct TipTable: View {
 }
 ```
 
-![A table with four columns and three rows. Each row of the](https://docs-assets.developer.apple.com/published/fef716b5fdd01259377c5460131e1cd5/Table-2-macOS%402x.png)
+![A table with four columns and three rows. Each row of the](/images/com.apple.SwiftUI/Table-2-macOS@2x.png)
 
 ##### Styling Tables
 

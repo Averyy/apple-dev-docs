@@ -48,7 +48,7 @@ protocol AVQueuedSampleBufferRendering : NSObjectProtocol
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 ### Conforming Types
 - [AVSampleBufferAudioRenderer](avsamplebufferaudiorenderer.md)
 - [AVSampleBufferDisplayLayer](avsamplebufferdisplaylayer.md)

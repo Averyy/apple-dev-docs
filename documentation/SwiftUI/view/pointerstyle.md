@@ -24,7 +24,7 @@ A view that changes the style of the pointer when hovered.
 
 Refer to [`PointerStyle`](pointerstyle.md) for a list of available pointer styles.
 
-For guidance on choosing an appropriate pointer style, refer to [`Pointing devices`](https://developer.apple.com/design/Human-Interface-Guidelines/pointing-devices) in the Human Interface Guidelines.
+For guidance on choosing an appropriate pointer style, refer to [`Pointing devices`](https://developer.apple.com/design/human-interface-guidelines/pointing-devices) in the Human Interface Guidelines.
 
 In this example, the pointer style indicates rectangular selection is possible while the Option modifier key is pressed:
 

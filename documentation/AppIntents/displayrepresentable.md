@@ -27,7 +27,7 @@ protocol DisplayRepresentable : InstanceDisplayRepresentable, TypeDisplayReprese
 ## Relationships
 
 ### Inherits From
-- [CustomLocalizedStringResourceConvertible](../Foundation/CustomLocalizedStringResourceConvertible.md)
+- [CustomLocalizedStringResourceConvertible](../foundation/customlocalizedstringresourceconvertible.md)
 - [InstanceDisplayRepresentable](instancedisplayrepresentable.md)
 - [TypeDisplayRepresentable](typedisplayrepresentable.md)
 ### Inherited By

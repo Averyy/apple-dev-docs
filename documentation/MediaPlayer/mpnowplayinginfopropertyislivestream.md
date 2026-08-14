@@ -22,7 +22,7 @@ let MPNowPlayingInfoPropertyIsLiveStream: String
 
 #### Discussion
 
-Value is an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) object configured as a `boolean`. A value of `1.0` indicates the now playing item is a live stream.
+Value is an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) object configured as a `boolean`. A value of `1.0` indicates the now playing item is a live stream.
 
 ## See Also
 

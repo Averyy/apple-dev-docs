@@ -10,7 +10,7 @@ Instruments organizes profiling data into a call tree, a hierarchical view showi
 
 Instruments provides three ways to visualize the same data: the standard call tree, flame graphs, and Top Functions. Each mode surfaces different patterns, so switching between them helps you find issues that aren’t obvious in any single view.
 
-Run Comparison and [`OSSignposter`](https://developer.apple.com/documentation/os/OSSignposter) complement call tree analysis. With `OSSignposter`, you can annotate your code with named intervals that appear as labeled spans in Instruments, and isolate the call tree to a specific operation. Run Comparison creates a diff of the call trees from two separate recordings, making it straightforward to measure whether a code change introduced a regression or an improvement.
+Run Comparison and [`OSSignposter`](https://developer.apple.com/documentation/os/ossignposter) complement call tree analysis. With `OSSignposter`, you can annotate your code with named intervals that appear as labeled spans in Instruments, and isolate the call tree to a specific operation. Run Comparison creates a diff of the call trees from two separate recordings, making it straightforward to measure whether a code change introduced a regression or an improvement.
 
 #### Switch Between Call Tree View Modes
 
@@ -22,7 +22,7 @@ In the flame graph:
 2. Scroll to pan after zooming.
 3. Click a block to select it, use the arrow keys to move the selection, and secondary-click for a context menu.
 
-![A screenshot of the Instruments detail view and the segmented control that switches between Call Tree, Flame Graph, and Top Functions modes.](https://docs-assets.developer.apple.com/published/813d06f193bf93298cb0c4401fd483d9/call-tree-view-mode-picker%402x.png)
+![A screenshot of the Instruments detail view and the segmented control that switches between Call Tree, Flame Graph, and Top Functions modes.](/images/com.apple.Xcode/call-tree-view-mode-picker@2x.png)
 
 #### Explore Profiles with Flame Graphs
 
@@ -36,7 +36,7 @@ A flame graph is a good starting point for an investigation because you can scan
 
 The standard call tree is better suited for detailed analysis of individual code paths; it shows exact sample counts in an expanded tabular format, making it easier to compare call signatures or navigate a specific tree you have in mind. Both views show the same data and support full call-hierarchy navigation, so nothing is lost when you switch between them.
 
-![A screenshot of Instruments showing a flame graph with wide blocks indicating frames that appear in many CPU samples.](https://docs-assets.developer.apple.com/published/1f79a8efd1a83041e3b75a263f5c028e/call-tree-flame-graph%402x.png)
+![A screenshot of Instruments showing a flame graph with wide blocks indicating frames that appear in many CPU samples.](/images/com.apple.Xcode/call-tree-flame-graph@2x.png)
 
 #### Find Performance Hotspots with Top Functions
 
@@ -48,13 +48,13 @@ The detail area splits into two columns: the Top Functions table on the left and
 
 By default, Instruments sorts the Top Functions table to show the functions that consume the most CPU time at the top. This counts only time spent in each function’s own code, not time it spends waiting on other functions it calls. Select a symbol in the table to populate the adjacent flame graph with all samples charged to that symbol. The flame graph defaults to an Inverted Callers configuration, which shows who called the selected symbol. Switch to Callees to see what the selected symbol calls. When the Invert Call Tree toolbar option is enabled, the flame graph displays Callers or Inverted Callees instead of the normal toggle options. All filters and call tree options in the bottom toolbar apply to Top Functions.
 
-![A screenshot of Instruments showing the Top Functions split-pane layout with the Top Functions table on the left and an adjacent flame graph on the right.](https://docs-assets.developer.apple.com/published/0704928cac01b196b7091beefd29b6b4/call-tree-top-functions%402x.png)
+![A screenshot of Instruments showing the Top Functions split-pane layout with the Top Functions table on the left and an adjacent flame graph on the right.](/images/com.apple.Xcode/call-tree-top-functions@2x.png)
 
 #### Mark Performance Intervals
 
-With [`OSSignposter`](https://developer.apple.com/documentation/os/OSSignposter), you can annotate your code with named intervals that Instruments displays as labeled spans in a timeline track. Selecting a span in the timeline sets the active time range to that interval, which filters all call tree views to show only the samples from that period.
+With [`OSSignposter`](https://developer.apple.com/documentation/os/ossignposter), you can annotate your code with named intervals that Instruments displays as labeled spans in a timeline track. Selecting a span in the timeline sets the active time range to that interval, which filters all call tree views to show only the samples from that period.
 
-Create an `OSSignposter` from the [`os`](https://developer.apple.com/documentation/os) framework with a subsystem and category, or initialize one from an existing [`Logger`](https://developer.apple.com/documentation/os/Logger). Call `beginInterval(_:id:)` before work starts and `endInterval(_:_:)` when it finishes. The name parameter is a [`StaticString`](https://developer.apple.com/documentation/Swift/StaticString), so use a string literal, or a `let` constant of type `StaticString`, as shown here:
+Create an `OSSignposter` from the [`os`](https://developer.apple.com/documentation/os) framework with a subsystem and category, or initialize one from an existing [`Logger`](https://developer.apple.com/documentation/os/logger). Call `beginInterval(_:id:)` before work starts and `endInterval(_:_:)` when it finishes. The name parameter is a [`StaticString`](https://developer.apple.com/documentation/swift/staticstring), so use a string literal, or a `let` constant of type `StaticString`, as shown here:
 
 ```swift
 let signposter = OSSignposter(subsystem: "com.example.myapp", category: .pointsOfInterest)
@@ -81,7 +81,7 @@ The comparison flame graph provides a visual overview of the same data. Block si
 
 All call tree filtering and manipulation options are available during a run comparison, including Charge, Prune, Flatten, and call tree constraints. These options can help clean up the automatic comparison to produce a more useful visualization. Source view is unavailable during a run comparison.
 
-![A screenshot of Instruments displaying a run comparison in Top Functions mode. The symbol names and their weight comparisons are shown on the left of the detail view, and green blocks indicating improvements are on the right.](https://docs-assets.developer.apple.com/published/9c686e6d3845ec7488303c491c4613e1/run-comparison-view%402x.png)
+![A screenshot of Instruments displaying a run comparison in Top Functions mode. The symbol names and their weight comparisons are shown on the left of the detail view, and green blocks indicating improvements are on the right.](/images/com.apple.Xcode/run-comparison-view@2x.png)
 
 ## See Also
 

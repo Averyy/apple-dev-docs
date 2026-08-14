@@ -27,9 +27,9 @@ The [`UIImage`](uiimage.md) class automatically handles the transform necessary 
 
 For example, an iOS device camera always encodes pixel data in the camera sensor’s native landscape orientation, along with metadata indicating the camera orientation. When UIImage loads a photo shot in portrait orientation, it automatically applies a 90° rotation before displaying the image data, and the image’s [`imageOrientation`](uiimage/imageorientation.md) value of [`UIImage.Orientation.right`](uiimage/orientation/right.md) indicates that this rotation has been applied.
 
-![UIImage rotates an image with right orientation for correct display](https://docs-assets.developer.apple.com/published/a4de8a358cbf9a76800cc595fceb8892/media-2948302%402x.png)
+![UIImage rotates an image with right orientation for correct display](/images/com.apple.uikit/media-2948302@2x.png)
 
-> **Note**:  Some frameworks describe image orientation using the [`CGImagePropertyOrientation`](https://developer.apple.com/documentation/ImageIO/CGImagePropertyOrientation) type (or the raw TIFF/Exif numeric values that type defines symbols for). However, the underlying numeric values of that type are incompatible with [`UIImage.Orientation`](uiimage/orientation.md). For conversion help, see the [`CGImagePropertyOrientation`](https://developer.apple.com/documentation/ImageIO/CGImagePropertyOrientation) overview.
+> **Note**:  Some frameworks describe image orientation using the [`CGImagePropertyOrientation`](https://developer.apple.com/documentation/imageio/cgimagepropertyorientation) type (or the raw TIFF/Exif numeric values that type defines symbols for). However, the underlying numeric values of that type are incompatible with [`UIImage.Orientation`](uiimage/orientation.md). For conversion help, see the [`CGImagePropertyOrientation`](https://developer.apple.com/documentation/imageio/cgimagepropertyorientation) overview.
 
 ## Topics
 
@@ -56,16 +56,16 @@ For example, an iOS device camera always encodes pixel data in the camera sensor
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../Swift/BitwiseCopyable.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [RawRepresentable](../Swift/RawRepresentable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [BitwiseCopyable](../swift/bitwisecopyable.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [RawRepresentable](../swift/rawrepresentable.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 
-- [enum CGImagePropertyOrientation](../ImageIO/CGImagePropertyOrientation.md)
+- [enum CGImagePropertyOrientation](../imageio/cgimagepropertyorientation.md)
   A value describing the intended display orientation for an image.
 - [var imageOrientation: UIImage.Orientation](uiimage/imageorientation.md)
   The orientation of the receiver’s image.

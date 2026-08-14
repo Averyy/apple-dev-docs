@@ -23,7 +23,7 @@ protocol MEMessageEncoder : NSObjectProtocol
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 ### Inherited By
 - [MEMessageSecurityHandler](memessagesecurityhandler.md)
 

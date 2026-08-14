@@ -20,7 +20,7 @@ var totalDataFileSize: Measurement<UnitInformationStorage> { get }
 
 #### Discussion
 
-This includes all of the data files in your application’s container(s) (including [`cachesDirectory`](https://developer.apple.com/documentation/Foundation/URL/cachesDirectory)). Additionally, it includes the clone files that are attributed to your application.
+This includes all of the data files in your application’s container(s) (including [`cachesDirectory`](https://developer.apple.com/documentation/foundation/url/cachesdirectory)). Additionally, it includes the clone files that are attributed to your application.
 
 ## See Also
 

@@ -31,28 +31,28 @@ The default sample positions are the same on all GPUs that support programmable 
 
 The default sample position for GPUs that can sample one time is at the pixel’s center.
 
-![Normalized coordinate system diagram that shows a subpixel grid with one point at the center, with coordinates zero-.5, zero-0.5.](https://docs-assets.developer.apple.com/published/b82e8ada6eb98fc644df94e8d27c8eb1/positioning-samples-programmatically-2%402x.png)
+![Normalized coordinate system diagram that shows a subpixel grid with one point at the center, with coordinates zero-.5, zero-0.5.](/images/com.apple.metal/positioning-samples-programmatically-2@2x.png)
 
 The default sample positions for GPUs that can sample two times have locations in the center of the pixel’s second quadrant and fourth quadrants.
 
-![Normalized coordinate system diagram that shows a subpixel grid with two points, one located at zero-.25, zero-0.25. and the other at zero-.75, zero-0.75.](https://docs-assets.developer.apple.com/published/0326b2b19119cd5568f173d4087b10c4/getDefaultSamplePositions-2%402x.png)
+![Normalized coordinate system diagram that shows a subpixel grid with two points, one located at zero-.25, zero-0.25. and the other at zero-.75, zero-0.75.](/images/com.apple.metal/getDefaultSamplePositions-2@2x.png)
 
 The default sample positions for GPUs that can sample four times have one location in each of the pixel’s quadrants. Each location is at the center of one of that quadrant’s subquadrants.
 
-![Normalized coordinate system diagram that shows a subpixel grid with four points. Each of the pixel’s four quadrants contains one point.](https://docs-assets.developer.apple.com/published/75241ff22d0b2ee42446c2860eca985d/getDefaultSamplePositions-3%402x.png)
+![Normalized coordinate system diagram that shows a subpixel grid with four points. Each of the pixel’s four quadrants contains one point.](/images/com.apple.metal/getDefaultSamplePositions-3@2x.png)
 
 The default sample positions for GPUs that can sample eight times have two locations in each of the pixel’s quadrants.
 
-![Normalized coordinate system diagram that shows a subpixel grid with four points. Each of the pixel’s four quadrants contains two points. ](https://docs-assets.developer.apple.com/published/b0987ba0ce96b5853f689931e9496f22/getDefaultSamplePositions-4%402x.png)
+![Normalized coordinate system diagram that shows a subpixel grid with four points. Each of the pixel’s four quadrants contains two points. ](/images/com.apple.metal/getDefaultSamplePositions-4@2x.png)
 
 The table lists the indices and default locations for GPUs that support 1, 2, 4, or 8 sample positions.
 
 | Sample count | Position indices | Subpixel coordinates |
 | --- | --- | --- |
 | 1 | 0 | (0.5, 0.5) |
-| 2 | 0 ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) 1 | (0.75, 0.75) ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) (0.25, 0.25) |
-| 4 | 0 ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) 1 ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) 2 ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) 3 | (0.375, 0.125) ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) (0.875, 0.375) ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) (0.125, 0.625) ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) (0.625, 0.875) |
-| 8 | 0 ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) 1 ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) 2 ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) 3 ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) 4 ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) 5 ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) 6 ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) 7 | (0.5625, 0.3125) ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) (0.4375, 0.6875) ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) (0.8125, 0.5625) ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) (0.3125, 0.1875) ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) (0.1875, 0.8125) ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) (0.0625, 0.4375) ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) (0.6875, 0.9375) ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) (0.9375, 0.0625) |
+| 2 | 0 ![None](/images/com.apple.metal/spacer.png) 1 | (0.75, 0.75) ![None](/images/com.apple.metal/spacer.png) (0.25, 0.25) |
+| 4 | 0 ![None](/images/com.apple.metal/spacer.png) 1 ![None](/images/com.apple.metal/spacer.png) 2 ![None](/images/com.apple.metal/spacer.png) 3 | (0.375, 0.125) ![None](/images/com.apple.metal/spacer.png) (0.875, 0.375) ![None](/images/com.apple.metal/spacer.png) (0.125, 0.625) ![None](/images/com.apple.metal/spacer.png) (0.625, 0.875) |
+| 8 | 0 ![None](/images/com.apple.metal/spacer.png) 1 ![None](/images/com.apple.metal/spacer.png) 2 ![None](/images/com.apple.metal/spacer.png) 3 ![None](/images/com.apple.metal/spacer.png) 4 ![None](/images/com.apple.metal/spacer.png) 5 ![None](/images/com.apple.metal/spacer.png) 6 ![None](/images/com.apple.metal/spacer.png) 7 | (0.5625, 0.3125) ![None](/images/com.apple.metal/spacer.png) (0.4375, 0.6875) ![None](/images/com.apple.metal/spacer.png) (0.8125, 0.5625) ![None](/images/com.apple.metal/spacer.png) (0.3125, 0.1875) ![None](/images/com.apple.metal/spacer.png) (0.1875, 0.8125) ![None](/images/com.apple.metal/spacer.png) (0.0625, 0.4375) ![None](/images/com.apple.metal/spacer.png) (0.6875, 0.9375) ![None](/images/com.apple.metal/spacer.png) (0.9375, 0.0625) |
 
 ## Parameters
 

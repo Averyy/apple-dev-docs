@@ -17,7 +17,7 @@ Improve or eliminate the time people wait while your app downloads assets.
 
 Let the system manage your asset downloads on people’s devices for you according to your preferences, and optionally, host your assets on Apple servers. For example, a game might specify that the system downloads tutorial assets before first launch and other assets on demand — such as level packs, 3D character models, and textures — as a player progresses during gameplay. The default implementation of Managed Background Assets handles downloads, updates, compression, and more for you. If you choose Apple-Hosted Background Assets, you upload your assets to App Store Connect and maintain them there, similar to app builds.
 
-![A graphic containing the framework’s logo and several circular progress indicators that show the download status of additional content such as audio, images, and achievements. Each progress indicator displays an icon that represents that specific content type such as a music note for audio.](https://docs-assets.developer.apple.com/published/7192e3aef1127088ff61bfbac7978294/media-4132858%402x.png)
+![A graphic containing the framework’s logo and several circular progress indicators that show the download status of additional content such as audio, images, and achievements. Each progress indicator displays an icon that represents that specific content type such as a music note for audio.](/images/com.apple.backgroundassets/media-4132858@2x.png)
 
 > **Note**:  For compatible iPad and iPhone apps, Background Assets is available in visionOS 1.0 and later. For apps built for visionOS, Background Assets is available in visionOS 2.4 and later.
 
@@ -52,12 +52,12 @@ Alternatively, you can manage and host asset downloads yourself using the low-le
   A manifest of asset packs that are available to download.
 - [protocol ManagedDownloaderExtension](manageddownloaderextension.md)
   An app extension that uses the system implementation to schedule asset-pack downloads automatically.
-- [BAAppGroupID](../BundleResources/Information-Property-List/BAAppGroupID.md)
+- [BAAppGroupID](../bundleresources/information-property-list/baappgroupid.md)
   The app group identifier that you share between your app and the extension that uses asset packs.
-- [BAHasManagedAssetPacks](../BundleResources/Information-Property-List/BAHasManagedAssetPacks.md)
+- [BAHasManagedAssetPacks](../bundleresources/information-property-list/bahasmanagedassetpacks.md)
   A Boolean value that indicates whether you let the system automatically manage your asset packs.
 ### Apple-hosted managed asset packs
-- [BAUsesAppleHosting](../BundleResources/Information-Property-List/BAUsesAppleHosting.md)
+- [BAUsesAppleHosting](../bundleresources/information-property-list/bausesapplehosting.md)
   A Boolean value that indicates whether you use Apple’s service to host your asset packs.
 ### Self-hosted unmanaged asset packs
 - [struct AssetPackManifest](assetpackmanifest.md)
@@ -67,13 +67,13 @@ Alternatively, you can manage and host asset downloads yourself using the low-le
   Manage and download individual assets yourself by configuring your app and extension targets.
 - [Downloading essential assets in the background](downloading-essential-assets-in-the-background.md)
   Fetch the assets your app requires before its first launch using an app extension and the Background Assets framework.
-- [BAManifestURL](../BundleResources/Information-Property-List/BAManifestURL.md)
+- [BAManifestURL](../bundleresources/information-property-list/bamanifesturl.md)
   The location URL of the app’s manifest file that contains the names and sizes of assets.
-- [BAInitialDownloadRestrictions](../BundleResources/Information-Property-List/BAInitialDownloadRestrictions.md)
+- [BAInitialDownloadRestrictions](../bundleresources/information-property-list/bainitialdownloadrestrictions.md)
   The restrictions that apply to the set of assets that download immediately after app installation.
-- [BAEssentialMaxInstallSize](../BundleResources/Information-Property-List/BAEssentialMaxInstallSize.md)
+- [BAEssentialMaxInstallSize](../bundleresources/information-property-list/baessentialmaxinstallsize.md)
   The combined, maximum size of the essential assets that the system downloads before it launches your app in bytes.
-- [BAMaxInstallSize](../BundleResources/Information-Property-List/BAMaxInstallSize.md)
+- [BAMaxInstallSize](../bundleresources/information-property-list/bamaxinstallsize.md)
   The combined, maximum size, in bytes, of the non-essential assets that download immediately after app installation.
 - [class BADownloadManager](badownloadmanager.md)
   An object that manages the queue of scheduled asset downloads.

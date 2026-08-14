@@ -39,7 +39,7 @@ This protocol refines `AppExtensionScene` and restricts the types that can be pa
 ## Relationships
 
 ### Inherits From
-- [AppExtensionScene](../ExtensionKit/AppExtensionScene.md)
+- [AppExtensionScene](../extensionkit/appextensionscene.md)
 
 ## See Also
 

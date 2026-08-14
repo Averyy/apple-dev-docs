@@ -22,10 +22,10 @@ func copy(sourceTexture: any MTLTexture, sourceSlice: Int, sourceLevel: Int, des
 
 ## Parameters
 
-- `sourceTexture`: A [`MTLTexture`](mtltexture.md) texture that the command copies data from. To read the source texture contents, you need to set its [`isFramebufferOnly`](mtltexture/isframebufferonly.md) property to [`false`](https://developer.apple.com/documentation/Swift/false) prior to drawing into it.
+- `sourceTexture`: A [`MTLTexture`](mtltexture.md) texture that the command copies data from. To read the source texture contents, you need to set its [`isFramebufferOnly`](mtltexture/isframebufferonly.md) property to [`false`](https://developer.apple.com/documentation/swift/false) prior to drawing into it.
 - `sourceSlice`: A slice within `sourceTexture` the command uses as a starting point to copy data from. Set this to `0` if `sourceTexture` isn’t a texture array or a cube texture.
 - `sourceLevel`: A mipmap level within `sourceTexture`.
-- `destinationTexture`: Another [`MTLTexture`](mtltexture.md) the command copies the data to that has the same [`pixelFormat`](mtltexture/pixelformat.md) and [`sampleCount`](mtltexture/samplecount.md) as `sourceTexture`. To write the contents into this texture, you need to set its [`isFramebufferOnly`](mtltexture/isframebufferonly.md) property to [`false`](https://developer.apple.com/documentation/Swift/false).
+- `destinationTexture`: Another [`MTLTexture`](mtltexture.md) the command copies the data to that has the same [`pixelFormat`](mtltexture/pixelformat.md) and [`sampleCount`](mtltexture/samplecount.md) as `sourceTexture`. To write the contents into this texture, you need to set its [`isFramebufferOnly`](mtltexture/isframebufferonly.md) property to [`false`](https://developer.apple.com/documentation/swift/false).
 - `destinationSlice`: A slice within `destinationTexture` the command uses as its starting point for copying data to. Set this to `0` if `destinationTexture` isn’t a texture array or a cube texture.
 - `destinationLevel`: A mipmap level within `destinationTexture`. The mipmap level you reference needs to have the same size as the `sourceTexture` slice’s mipmap at `sourceLevel`.
 - `sliceCount`: The number of slices the command copies so that it satisfies the conditions that the sum of `sourceSlice` and `sliceCount` doesn’t exceed the number of slices in `sourceTexture` and the sum of `destinationSlice` and `sliceCount` doesn’t exceed the number of slices in `destinationTexture`.

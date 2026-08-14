@@ -20,14 +20,14 @@ func selectItem(at indexPath: IndexPath?, animated: Bool, scrollPosition: UIColl
 
 #### Discussion
 
-If the [`allowsSelection`](uicollectionview/allowsselection.md) property is [`false`](https://developer.apple.com/documentation/Swift/false), calling this method has no effect. If there’s an existing selection with a different index path and the [`allowsMultipleSelection`](uicollectionview/allowsmultipleselection.md) property is [`false`](https://developer.apple.com/documentation/Swift/false), calling this method replaces the previous selection.
+If the [`allowsSelection`](uicollectionview/allowsselection.md) property is [`false`](https://developer.apple.com/documentation/swift/false), calling this method has no effect. If there’s an existing selection with a different index path and the [`allowsMultipleSelection`](uicollectionview/allowsmultipleselection.md) property is [`false`](https://developer.apple.com/documentation/swift/false), calling this method replaces the previous selection.
 
 This method doesn’t cause any selection-related delegate methods to be called.
 
 ## Parameters
 
 - `indexPath`: The index path of the item to select. Specifying `nil` for this parameter clears the current selection.
-- `animated`: Specify [`true`](https://developer.apple.com/documentation/Swift/true) to animate the change in the selection or [`false`](https://developer.apple.com/documentation/Swift/false) to make the change without animating it.
+- `animated`: Specify [`true`](https://developer.apple.com/documentation/swift/true) to animate the change in the selection or [`false`](https://developer.apple.com/documentation/swift/false) to make the change without animating it.
 - `scrollPosition`: An option that specifies where the item should be positioned when scrolling finishes. For a list of possible values, see [`UICollectionView.ScrollPosition`](uicollectionview/scrollposition.md).
 
 ## See Also

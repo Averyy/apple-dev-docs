@@ -18,7 +18,7 @@ func updateRegion(_ region: CLRegion) async throws
 
 ## Parameters
 
-- `region`: New region on which the event is triggered. Must have at least one of [`notifyOnEntry`](https://developer.apple.com/documentation/CoreLocation/CLRegion/notifyOnEntry) or [`notifyOnExit`](https://developer.apple.com/documentation/CoreLocation/CLRegion/notifyOnExit) set to [`true`](https://developer.apple.com/documentation/Swift/true).
+- `region`: New region on which the event is triggered. Must have at least one of [`notifyOnEntry`](https://developer.apple.com/documentation/corelocation/clregion/notifyonentry) or [`notifyOnExit`](https://developer.apple.com/documentation/corelocation/clregion/notifyonexit) set to [`true`](https://developer.apple.com/documentation/swift/true).
 - `completion`: The block executed when the region update request has been processed. - **error**: `nil` on success; otherwise, error object indicating the reason for failure.
 
 

@@ -20,7 +20,7 @@ static let downloadsDirectoryURL: ICDownloadOption
 
 #### Discussion
 
-Specify the directory as an [`NSURL`](https://developer.apple.com/documentation/Foundation/NSURL) object.
+Specify the directory as an [`NSURL`](https://developer.apple.com/documentation/foundation/nsurl) object.
 
 ## See Also
 

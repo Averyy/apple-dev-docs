@@ -17,7 +17,7 @@ A Boolean value that indicates whether the view accepts first responder status.
 
 #### Discussion
 
-An [`ARView`](arview.md) instance sets this value to `true` by default to indicate that it does accept first responder status. See [`NSResponder`](https://developer.apple.com/documentation/AppKit/NSResponder) for more information about the responder chain.
+An [`ARView`](arview.md) instance sets this value to `true` by default to indicate that it does accept first responder status. See [`NSResponder`](https://developer.apple.com/documentation/appkit/nsresponder) for more information about the responder chain.
 
 ## See Also
 

@@ -19,7 +19,7 @@ Start a workout in iOS, control it from the Lock Screen with App Intents, and pr
 To configure the sample code project, do the following:
 
 1. Open the sample with the latest version of Xcode.
-2. Set the developer team for all targets to let Xcode automatically manage the provisioning profile. For more information, see [`Preparing your app for distribution`](https://developer.apple.com/documentation/Xcode/preparing-your-app-for-distribution#Set-the-bundle-ID) and [`Preparing your app for distribution`](https://developer.apple.com/documentation/Xcode/preparing-your-app-for-distribution#Assign-the-project-to-a-team).
+2. Set the developer team for all targets to let Xcode automatically manage the provisioning profile. For more information, see [`Preparing your app for distribution`](https://developer.apple.com/documentation/xcode/preparing-your-app-for-distribution) and [`Preparing your app for distribution`](https://developer.apple.com/documentation/xcode/preparing-your-app-for-distribution).
 
 ## See Also
 

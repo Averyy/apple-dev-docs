@@ -25,7 +25,7 @@ On non-Apple GPUs, you can use up to eight color render targets per render pass 
 - [enum MTLTextureCompressionType](mtltexturecompressiontype.md)
 - [class MTLTextureDescriptor](mtltexturedescriptor.md)
   An instance that you use to configure new Metal texture instances.
-- [class MTKTextureLoader](../MetalKit/MTKTextureLoader.md)
+- [class MTKTextureLoader](../metalkit/mtktextureloader.md)
   An object that creates textures from existing data in common image formats.
 - [class MTLSharedTextureHandle](mtlsharedtexturehandle.md)
   A texture handle that can be shared across process address space boundaries.

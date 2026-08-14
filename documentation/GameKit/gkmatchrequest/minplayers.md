@@ -34,7 +34,7 @@ If you use matchmaking rules, the rule set’s `minPlayers` field constrains thi
 
 ## See Also
 
-- [Create a Rule Set](../AppStoreConnectAPI/POST-v1-gameCenterMatchmakingRuleSets.md)
+- [Create a Rule Set](../appstoreconnectapi/post-v1-gamecentermatchmakingrulesets.md)
   Create a rule set to contain matchmaking rules and teams.
 - [class func maxPlayersAllowedForMatch(of: GKMatchType) -> Int](gkmatchrequest/maxplayersallowedformatch(of:).md)
   Returns the maximum number of players allowed in the match request for a given match type.

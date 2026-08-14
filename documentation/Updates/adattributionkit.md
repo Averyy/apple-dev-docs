@@ -6,7 +6,7 @@ Learn about important changes to AdAttributionKit.
 
 #### Overview
 
-Browse notable changes in [`AdAttributionKit`](https://developer.apple.com/documentation/AdAttributionKit).
+Browse notable changes in [`AdAttributionKit`](https://developer.apple.com/documentation/adattributionkit).
 
 #### June 2025
 

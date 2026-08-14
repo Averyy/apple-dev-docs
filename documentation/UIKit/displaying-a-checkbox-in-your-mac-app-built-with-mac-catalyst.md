@@ -31,7 +31,7 @@ A checkbox-style switch has a default frame size of zero. If you’re not using 
   Display content that fills the entire height of a window by removing the title bar.
 - [Toolbar](toolbar.md)
   Provide a space for controls under a window’s title bar and above your custom content.
-- [Touch Bar](../AppKit/touch-bar.md)
+- [Touch Bar](../appkit/touch-bar.md)
   Display interactive content and controls in the Touch Bar.
 
 

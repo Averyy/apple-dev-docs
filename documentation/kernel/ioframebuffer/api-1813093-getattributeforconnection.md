@@ -24,7 +24,7 @@ IOFramebuffer subclasses may implement this method to allow arbitrary attribute/
 
 ## Parameters
 
-- `attribute`: kConnectionSupportsLLDDCSense If the framebuffer wishes to make use of IOFramebuffer::doI2CRequest software implementation of I2C it should implement the I2C methods setDDCClock(), setDDCData(), readDDCClock(), readDDCData(), and it should return success (and no value) for this attribute.
+- `attribute`: Defines the attribute to be returned. Some defined attributes are: kConnectionSupportsHLDDCSense If the framebuffer supports the DDC methods hasDDCConnect() and getDDCBlock() it should return success (and no value) for this attribute. kConnectionSupportsLLDDCSense If the framebuffer wishes to make use of IOFramebuffer::doI2CRequest software implementation of I2C it should implement the I2C methods setDDCClock(), setDDCData(), readDDCClock(), readDDCData(), and it should return success (and no value) for this attribute.
 - `value`: Returns the value for the attribute.
 
 ## See Also

@@ -49,12 +49,12 @@ The `CFStreamStatus` enumeration defines constants that describe the status of a
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../Swift/BitwiseCopyable.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [RawRepresentable](../Swift/RawRepresentable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [BitwiseCopyable](../swift/bitwisecopyable.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [RawRepresentable](../swift/rawrepresentable.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 
@@ -64,7 +64,7 @@ The `CFStreamStatus` enumeration defines constants that describe the status of a
   Defines constants for values returned in the domain field of the `CFStreamError` structure.
 - [Error Subdomains](error-subdomains.md)
   Subdomains used to determine how to interpret an error in the `kCFStreamErrorDomainSOCKS` domain.
-- [Secure Sockets (SOCKS) Errors](../CFNetwork/1518266-secure-sockets-socks-errors.md)
+- [Secure Sockets (SOCKS) Errors](../cfnetwork/1518266-secure-sockets-socks-errors.md)
   Error codes returned by the `kCFStreamErrorDomainSOCKS` error domain.
 - [struct CFStreamEventType](cfstreameventtype.md)
   Defines constants for stream-related events.

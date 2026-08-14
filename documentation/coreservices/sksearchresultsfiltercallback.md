@@ -27,7 +27,7 @@ Deprecated. Defines a pointer to a search-results filtering callback function fo
 
 - `inIndex`: The index you are searching.
 - `inDocument`: The document URL object within the index you are searching.
-- `inContext`: An application-specified context which you set when calling   or  .
+- `inContext`: An application-specified context which you set when calling [`SKSearchResultsCreateWithQuery`](1448610-sksearchresultscreatewithquery.md) or [`SKSearchResultsCreateWithDocuments`](1448629-sksearchresultscreatewithdocumen.md).
 
 
 ---

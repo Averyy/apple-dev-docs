@@ -21,7 +21,7 @@ let CNErrorUserInfoValidationErrorsKey: String
 
 #### Discussion
 
-An array of [`NSError`](https://developer.apple.com/documentation/Foundation/NSError) objects for [`CNError.Code.validationMultipleErrors`](cnerror/code/validationmultipleerrors.md).
+An array of [`NSError`](https://developer.apple.com/documentation/foundation/nserror) objects for [`CNError.Code.validationMultipleErrors`](cnerror/code/validationmultipleerrors.md).
 
 ## See Also
 

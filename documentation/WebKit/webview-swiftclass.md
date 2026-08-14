@@ -297,21 +297,21 @@ You can also extend WebKit by implementing your own document view and representa
 - [Element Dictionary Keys](element-dictionary-keys.md)
   Predefined keys used to access an element dictionary.
 ### Notifications
-- [static let WebViewDidBeginEditing: NSNotification.Name](../Foundation/NSNotification/Name-swift.struct/WebViewDidBeginEditing.md)
+- [static let WebViewDidBeginEditing: NSNotification.Name](../foundation/nsnotification/name-swift.struct/webviewdidbeginediting.md)
   Posted when a web view begins any operation that changes its contents in response to user editing.
-- [static let WebViewDidChange: NSNotification.Name](../Foundation/NSNotification/Name-swift.struct/WebViewDidChange.md)
+- [static let WebViewDidChange: NSNotification.Name](../foundation/nsnotification/name-swift.struct/webviewdidchange.md)
   Posted when a web view performs any operation that changes its contents in response to user editing.
-- [static let WebViewDidChangeSelection: NSNotification.Name](../Foundation/NSNotification/Name-swift.struct/WebViewDidChangeSelection.md)
+- [static let WebViewDidChangeSelection: NSNotification.Name](../foundation/nsnotification/name-swift.struct/webviewdidchangeselection.md)
   Posted when a web view changes its typing selection.
-- [static let WebViewDidChangeTypingStyle: NSNotification.Name](../Foundation/NSNotification/Name-swift.struct/WebViewDidChangeTypingStyle.md)
+- [static let WebViewDidChangeTypingStyle: NSNotification.Name](../foundation/nsnotification/name-swift.struct/webviewdidchangetypingstyle.md)
   Posted when a web view changes its typing style.
-- [static let WebViewDidEndEditing: NSNotification.Name](../Foundation/NSNotification/Name-swift.struct/WebViewDidEndEditing.md)
+- [static let WebViewDidEndEditing: NSNotification.Name](../foundation/nsnotification/name-swift.struct/webviewdidendediting.md)
   Posted when a web view ends any operation that changes its contents in response to user editing.
-- [static let WebViewProgressEstimateChanged: NSNotification.Name](../Foundation/NSNotification/Name-swift.struct/WebViewProgressEstimateChanged.md)
+- [static let WebViewProgressEstimateChanged: NSNotification.Name](../foundation/nsnotification/name-swift.struct/webviewprogressestimatechanged.md)
   Posted by a WebView object when the estimated progress value of a load changes.
-- [static let WebViewProgressFinished: NSNotification.Name](../Foundation/NSNotification/Name-swift.struct/WebViewProgressFinished.md)
+- [static let WebViewProgressFinished: NSNotification.Name](../foundation/nsnotification/name-swift.struct/webviewprogressfinished.md)
   Posted by a WebView object when the load has finished.
-- [static let WebViewProgressStarted: NSNotification.Name](../Foundation/NSNotification/Name-swift.struct/WebViewProgressStarted.md)
+- [static let WebViewProgressStarted: NSNotification.Name](../foundation/nsnotification/name-swift.struct/webviewprogressstarted.md)
   Posted by a WebView object when a load begins, including a load that is initiated in a subframe.
 ### Instance Methods
 - [func overWrite(Any?)](webview-swift.class/overwrite(_:).md)
@@ -319,29 +319,29 @@ You can also extend WebKit by implementing your own document view and representa
 ## Relationships
 
 ### Inherits From
-- [NSView](../AppKit/NSView.md)
+- [NSView](../appkit/nsview.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [Copyable](../Swift/Copyable.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Escapable](../Swift/Escapable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSAccessibilityElementProtocol](../AppKit/NSAccessibilityElementProtocol.md)
-- [NSAccessibilityProtocol](../AppKit/NSAccessibilityProtocol.md)
-- [NSAnimatablePropertyContainer](../AppKit/NSAnimatablePropertyContainer.md)
-- [NSAppearanceCustomization](../AppKit/NSAppearanceCustomization.md)
-- [NSCoding](../Foundation/NSCoding.md)
-- [NSDraggingDestination](../AppKit/NSDraggingDestination.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [NSStandardKeyBindingResponding](../AppKit/NSStandardKeyBindingResponding.md)
-- [NSTouchBarProvider](../AppKit/NSTouchBarProvider.md)
-- [NSUserActivityRestoring](../AppKit/NSUserActivityRestoring.md)
-- [NSUserInterfaceItemIdentification](../AppKit/NSUserInterfaceItemIdentification.md)
-- [NSUserInterfaceValidations](../AppKit/NSUserInterfaceValidations.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [CVarArg](../swift/cvararg.md)
+- [Copyable](../swift/copyable.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Escapable](../swift/escapable.md)
+- [Hashable](../swift/hashable.md)
+- [NSAccessibilityElementProtocol](../appkit/nsaccessibilityelementprotocol.md)
+- [NSAccessibilityProtocol](../appkit/nsaccessibilityprotocol.md)
+- [NSAnimatablePropertyContainer](../appkit/nsanimatablepropertycontainer.md)
+- [NSAppearanceCustomization](../appkit/nsappearancecustomization.md)
+- [NSCoding](../foundation/nscoding.md)
+- [NSDraggingDestination](../appkit/nsdraggingdestination.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSStandardKeyBindingResponding](../appkit/nsstandardkeybindingresponding.md)
+- [NSTouchBarProvider](../appkit/nstouchbarprovider.md)
+- [NSUserActivityRestoring](../appkit/nsuseractivityrestoring.md)
+- [NSUserInterfaceItemIdentification](../appkit/nsuserinterfaceitemidentification.md)
+- [NSUserInterfaceValidations](../appkit/nsuserinterfacevalidations.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

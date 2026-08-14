@@ -16,7 +16,7 @@ string JWSAppTransaction
 
 #### Discussion
 
-For more information, refer to [`JWSAppTransaction`](https://developer.apple.com/documentation/AppStoreServerAPI/JWSAppTransaction).
+For more information, refer to [`JWSAppTransaction`](https://developer.apple.com/documentation/appstoreserverapi/jwsapptransaction).
 
 
 ---

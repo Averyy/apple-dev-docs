@@ -22,11 +22,11 @@ convenience init(pixelBuffer value: CVPixelBuffer)
 
 #### Discussion
 
-[`Core ML`](CoreML.md) supports different pixel format types depending on the model’s feature description. For information about `ImageFeatureType`, see [`Core ML Format Reference`](https://developer.apple.comhttps://apple.github.io/coremltools/mlmodel/Format/FeatureTypes.html#imagefeaturetype). When the image feature’s color space is `GRAYSCALE`, use [`kCVPixelFormatType_OneComponent8`](https://developer.apple.com/documentation/CoreVideo/kCVPixelFormatType_OneComponent8); and when it’s `GRAYSCALE_FLOAT16`, use [`kCVPixelFormatType_OneComponent16Half`](https://developer.apple.com/documentation/CoreVideo/kCVPixelFormatType_OneComponent16Half); otherwise, use [`kCVPixelFormatType_32BGRA`](https://developer.apple.com/documentation/CoreVideo/kCVPixelFormatType_32BGRA) when it’s set to `RGB` or `BGR`.
+[`Core ML`](CoreML.md) supports different pixel format types depending on the model’s feature description. For information about `ImageFeatureType`, see [`Core ML Format Reference`](https://developer.apple.comhttps://apple.github.io/coremltools/mlmodel/Format/FeatureTypes.html#imagefeaturetype). When the image feature’s color space is `GRAYSCALE`, use [`kCVPixelFormatType_OneComponent8`](https://developer.apple.com/documentation/corevideo/kcvpixelformattype_onecomponent8); and when it’s `GRAYSCALE_FLOAT16`, use [`kCVPixelFormatType_OneComponent16Half`](https://developer.apple.com/documentation/corevideo/kcvpixelformattype_onecomponent16half); otherwise, use [`kCVPixelFormatType_32BGRA`](https://developer.apple.com/documentation/corevideo/kcvpixelformattype_32bgra) when it’s set to `RGB` or `BGR`.
 
 ## Parameters
 
-- `value`: A [`CVPixelBuffer`](https://developer.apple.com/documentation/CoreVideo/cvpixelbuffer-q2e) (Swift) or [`CVPixelBuffer`](https://developer.apple.com/documentation/CoreVideo/CVPixelBuffer) (Objective-C) instance.
+- `value`: A [`CVPixelBuffer`](https://developer.apple.com/documentation/corevideo/cvpixelbuffer-q2e) (Swift) or [`CVPixelBuffer`](https://developer.apple.com/documentation/corevideo/cvpixelbuffer) (Objective-C) instance.
 
 ## See Also
 

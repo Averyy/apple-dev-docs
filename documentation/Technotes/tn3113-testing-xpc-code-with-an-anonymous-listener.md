@@ -8,7 +8,7 @@ Use an anonymous XPC listener to simplify your XPC testing and debugging.
 
 Testing and debugging XPC code is tricky because there are two processes involved.  Imagine you have an app with an embedded XPC service.  To debug this you have to run two instances of the debugger, one connected to the app and another to the service, and then switch between them.  This works, but it’s quite inconvenient.  Fortunately there is a better way, a technique that allows you to test and debug all your XPC code in a single process.
 
-> ❗ **Important**: This technique does not help with all XPC testing and debugging scenarios.  For example, if you’re developing a `launchd` daemon that performs privileged operations on behalf of your app, you can’t use this technique to debug your privileged code because it’s not running in a privileged process.  However, even in situations like that, this technique is useful when debugging your XPC-specific code.  For example, you might use it to create a unit test for your [`NSSecureCoding`](https://developer.apple.com/documentation/Foundation/NSSecureCoding) implementation.
+> ❗ **Important**: This technique does not help with all XPC testing and debugging scenarios.  For example, if you’re developing a `launchd` daemon that performs privileged operations on behalf of your app, you can’t use this technique to debug your privileged code because it’s not running in a privileged process.  However, even in situations like that, this technique is useful when debugging your XPC-specific code.  For example, you might use it to create a unit test for your [`NSSecureCoding`](https://developer.apple.com/documentation/foundation/nssecurecoding) implementation.
 
 This technique involves two key concepts:
 
@@ -30,7 +30,7 @@ class MyListener {
 }
 ```
 
-> **Note**: While this example uses the Foundation [`XPC`](https://developer.apple.com/documentation/Foundation/xpc) API, the same technique works for the low-level C [`XPC`](https://developer.apple.com/documentation/XPC) API.
+> **Note**: While this example uses the Foundation [`XPC`](https://developer.apple.com/documentation/foundation/xpc) API, the same technique works for the low-level C [`XPC`](https://developer.apple.com/documentation/xpc) API.
 
 Change its initialiser to look like this:
 
@@ -42,7 +42,7 @@ init(listener: NSXPCListener = .service()) {
 
 This uses the XPC service’s listener by default, but allows you to override that by passing in a value to the `listener` parameter.
 
-Now, in your test program, call [`anonymous()`](https://developer.apple.com/documentation/Foundation/NSXPCListener/anonymous()) to create a anonymous listener and pass that to your listener abstraction:
+Now, in your test program, call [`anonymous()`](https://developer.apple.com/documentation/foundation/nsxpclistener/anonymous()) to create a anonymous listener and pass that to your listener abstraction:
 
 ```swift
 let myListener = MyListener(listener: .anonymous())
@@ -71,7 +71,7 @@ init(connection: NSXPCConnection = .init(serviceName: "com.example.MyService")) 
 
 This sets up a connection to the XPC service’s listener by default, but allows you to override that by passing in a value to the `connection` parameter.
 
-Finally, in your test program, use [`init(listenerEndpoint:)`](https://developer.apple.com/documentation/Foundation/NSXPCConnection/init(listenerEndpoint:)) to create a connection to your anonymous listener:
+Finally, in your test program, use [`init(listenerEndpoint:)`](https://developer.apple.com/documentation/foundation/nsxpcconnection/init(listenerendpoint:)) to create a connection to your anonymous listener:
 
 ```swift
 let connection = NSXPCConnection(listenerEndpoint: myListener.listener.endpoint)

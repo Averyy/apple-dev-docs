@@ -30,10 +30,10 @@ This method applies the perspective correction filter to an image. The effect ap
 The perspective correction filter uses the following properties:
 
 - **`inputImage`**: An image with the type [`CIImage`](ciimage.md).
-- **`topLeft`**: A [`CGPoint`](https://developer.apple.com/documentation/CoreFoundation/CGPoint) in the input image mapped to the top-left corner of the output image.
-- **`topRight`**: A [`CGPoint`](https://developer.apple.com/documentation/CoreFoundation/CGPoint) in the input image mapped to the top-right corner of the output image.
-- **`bottomLeft`**: A [`CGPoint`](https://developer.apple.com/documentation/CoreFoundation/CGPoint) in the input image mapped to the bottom-left corner of the output image.
-- **`bottomRight`**: A [`CGPoint`](https://developer.apple.com/documentation/CoreFoundation/CGPoint) in the input image mapped to the bottom-right corner of the output image.
+- **`topLeft`**: A [`CGPoint`](https://developer.apple.com/documentation/corefoundation/cgpoint) in the input image mapped to the top-left corner of the output image.
+- **`topRight`**: A [`CGPoint`](https://developer.apple.com/documentation/corefoundation/cgpoint) in the input image mapped to the top-right corner of the output image.
+- **`bottomLeft`**: A [`CGPoint`](https://developer.apple.com/documentation/corefoundation/cgpoint) in the input image mapped to the bottom-left corner of the output image.
+- **`bottomRight`**: A [`CGPoint`](https://developer.apple.com/documentation/corefoundation/cgpoint) in the input image mapped to the bottom-right corner of the output image.
 
 The following code creates a filter that corrects the perspective to appear straight:
 
@@ -49,7 +49,7 @@ func perspectiveCorrection(inputImage: CIImage) -> CIImage {
 }
 ```
 
-![Two photographs of a large building on the corner of an intersection. The building has small windows and is made of a brick structure. The photo on the left has no modifications to size or color. In the photo on the right, a perspective correction filter is applied, resulting in the perspective of the windows appearing as if the photo was taken in the front of the building.](https://docs-assets.developer.apple.com/published/835168e59d82af09a3b7bc01d47c4209/media-3582228%402x.png)
+![Two photographs of a large building on the corner of an intersection. The building has small windows and is made of a brick structure. The photo on the left has no modifications to size or color. In the photo on the right, a perspective correction filter is applied, resulting in the perspective of the windows appearing as if the photo was taken in the front of the building.](/images/com.apple.coreimage/media-3582228@2x.png)
 
 ## See Also
 

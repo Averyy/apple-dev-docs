@@ -45,7 +45,7 @@ TabView {
 }
 ```
 
-![A tab bar with three tabs, each with an icon image and a text label.](https://docs-assets.developer.apple.com/published/c472aa711f964c7e6b5127956e024e18/TabView-1%402x.png)
+![A tab bar with three tabs, each with an icon image and a text label.](/images/com.apple.SwiftUI/TabView-1@2x.png)
 
 To programmatically select different tabs, use the [`init(selection:content:)`](tabview/init(selection:content:).md) initializer. You can assign a selection value to each tab using a `Tab` initializer that takes a value. Each tab should have a unique selection value and all tabs should have the same selection value type. When people select a tab in the tab view, the tab view updates the selection binding to the value of the currently selected tab.
 

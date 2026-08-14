@@ -25,7 +25,7 @@ The results of the query in an array of `ODRecord` objects.
 
 ## Parameters
 
-- `inAllowPartialResults`: If [`true`](https://developer.apple.com/documentation/Swift/true), only immediately available results are returned; otherwise, the function waits until all results are available.
+- `inAllowPartialResults`: If [`true`](https://developer.apple.com/documentation/swift/true), only immediately available results are returned; otherwise, the function waits until all results are available.
 
 
 ---

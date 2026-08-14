@@ -26,7 +26,7 @@ The possible values for this property are listed in [`SKTextureFilteringMode`](s
 
 The figure below shows the effect of different filtering modes. The rabbit texture (original on left) has been scaled up five times. Node 1 has been scaled using [`SKTextureFilteringMode.nearest`](sktexturefilteringmode/nearest.md) and node 2 has been scaled with [`SKTextureFilteringMode.linear`](sktexturefilteringmode/linear.md).
 
-![The effect of filtering modes on a scaled texture](https://docs-assets.developer.apple.com/published/e83b4c005376dbf55f125ba9e52b414c/media-2668828%402x.png)
+![The effect of filtering modes on a scaled texture](/images/com.apple.spritekit/media-2668828@2x.png)
 
 ## See Also
 

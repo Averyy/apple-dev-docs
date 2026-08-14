@@ -24,7 +24,7 @@ Create postbacks using the initializer for [`SKAdTestPostback`](skadtestpostback
 
 Calling [`setPostbacks(_:)`](skadtestsession/setpostbacks(_:).md) overwrites previous postbacks in the test session, if any exist.
 
-Include up to six test postbacks in your test session if you want to mimic the behavior of postbacks when users experience multiple ad impressions for the same app. For more information about attributions when there are multiple ad impressions, see [`Receiving ad attributions and postbacks`](https://developer.apple.com/documentation/StoreKit/receiving-ad-attributions-and-postbacks).
+Include up to six test postbacks in your test session if you want to mimic the behavior of postbacks when users experience multiple ad impressions for the same app. For more information about attributions when there are multiple ad impressions, see [`Receiving ad attributions and postbacks`](https://developer.apple.com/documentation/storekit/receiving-ad-attributions-and-postbacks).
 
 The array of test postbacks in the test session need to follow the same rules that SKAdNetwork uses for postbacks, including:
 

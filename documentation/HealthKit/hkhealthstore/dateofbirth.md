@@ -25,7 +25,7 @@ func dateOfBirth() throws -> Date
 
 #### Return Value
 
-An [`NSDate`](https://developer.apple.com/documentation/Foundation/NSDate) object representing the user’s birthdate, or `nil`.
+An [`NSDate`](https://developer.apple.com/documentation/foundation/nsdate) object representing the user’s birthdate, or `nil`.
 
 #### Discussion
 

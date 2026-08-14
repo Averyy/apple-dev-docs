@@ -38,7 +38,7 @@ The following features are available only with the Swift-based [`In-App Purchase
 You might need to use the [`Original API for In-App Purchase`](original-api-for-in-app-purchase.md) for the following features, if your app supports them:
 
 - Promoting in-app purchases in apps that run in iOS 11 through 16.3. For more informaton, see [`Promoting In-App Purchases`](promoting-in-app-purchases.md). For information about this feature in iOS 16.4, see [`Supporting promoted In-App Purchases in your app`](supporting-promoted-in-app-purchases-in-your-app.md).
-- The Volume Purchase Program (VPP). For more information, see [`Device Management`](https://developer.apple.com/documentation/DeviceManagement).
+- The Volume Purchase Program (VPP). For more information, see [`Device Management`](https://developer.apple.com/documentation/devicemanagement).
 
 ## See Also
 

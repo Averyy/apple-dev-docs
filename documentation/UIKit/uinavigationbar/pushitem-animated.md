@@ -25,7 +25,7 @@ Pushing a navigation item displays the item’s title in the center on the navig
 ## Parameters
 
 - `item`: The navigation item to push on the stack.
-- `animated`: [`true`](https://developer.apple.com/documentation/Swift/true) if the navigation bar should be animated; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
+- `animated`: [`true`](https://developer.apple.com/documentation/swift/true) if the navigation bar should be animated; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
 
 ## See Also
 

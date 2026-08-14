@@ -42,11 +42,11 @@ struct Page
 
 ### Conforms To
 - [AssignableDocumentElement](assignabledocumentelement.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
 - [DocumentElement](documentelement.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [Identifiable](../Swift/Identifiable.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [Identifiable](../swift/identifiable.md)
 - [MergeableDocumentPage](mergeabledocumentpage.md)
 
 

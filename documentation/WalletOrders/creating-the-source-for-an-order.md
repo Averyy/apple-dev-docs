@@ -28,7 +28,7 @@ You can expand your audience by localizing the strings and images of your order 
 [language identifier]-[region identifier].lproj
 ```
 
-For example, the name for the French localization directory is `fr.lproj`, and the name for the Simplified Chinese directory is `zh-Hans.lproj`. For more information about language identifiers, see [`Choosing localization regions and scripts`](https://developer.apple.com/documentation/Xcode/choosing-localization-regions-and-scripts).
+For example, the name for the French localization directory is `fr.lproj`, and the name for the Simplified Chinese directory is `zh-Hans.lproj`. For more information about language identifiers, see [`Choosing localization regions and scripts`](https://developer.apple.com/documentation/xcode/choosing-localization-regions-and-scripts).
 
 Localize an image by adding the location-specific image files to each localization directory. For example, to add localized versions of a merchant logo, add the English version of `logo@2x.png` and `logo@3x.png` files to the `en.lprojfolder`, and the Simplified Chinese version of the `logo@2x.png` and `logo@3x.png` files to the `zh-Hans.lproj` folder. Reference your image in the `order.json` by the filename `logo`. Be sure to provide the same number of resolutions for each localization.
 

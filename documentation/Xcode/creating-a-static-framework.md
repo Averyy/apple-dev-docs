@@ -24,7 +24,7 @@ To add a new framework target:
 6. Specify the name of your framework and configure the language and other options.
 7. Click Finish.
 
-![A sheet displays the available templates for a new target. The multiplatform framework template is selected.](https://docs-assets.developer.apple.com/published/143b7c7bd31699fa966b3c1041d09ebc/creating-a-static-framework-1%402x.png)
+![A sheet displays the available templates for a new target. The multiplatform framework template is selected.](/images/com.apple.Xcode/creating-a-static-framework-1@2x.png)
 
 When you create a new framework target from a template, Xcode adds a target that builds a dynamic framework automatically. It also adds an umbrella header to the target. The header’s name is generated from your framework name, followed by a period (.) and the letter *h*. For example, if you name your framework SampleFramework, Xcode automatically adds a header file with the name `SampleFramework.h` to the target.
 
@@ -38,21 +38,21 @@ To edit the Mach-O Type build setting:
 2. Enter “Mach-O Type” in the search field to locate the Mach-O Type build setting.
 3. Choose Static Library from the setting value list.
 
-![A screenshot that shows the Mach-O Type build setting.](https://docs-assets.developer.apple.com/published/e09ee14d3776881b016058a989030da8/creating-a-static-framework-2%402x.png)
+![A screenshot that shows the Mach-O Type build setting.](/images/com.apple.Xcode/creating-a-static-framework-2@2x.png)
 
 ##### Add Source Files to Your Framework Target
 
 After you have a static framework target, add new or existing source files, such as Swift files, to the target. After adding them, check that these files appear in the Compile Sources build phase of the static framework target. For more information on adding new or existing files to a target, see [`Managing files and folders in your Xcode project`](managing-files-and-folders-in-your-xcode-project.md).
 
-![A screenshot that shows the Compile Source build phase for a target.](https://docs-assets.developer.apple.com/published/dd1ae368cdbbddbc987b8c18f68bae59/creating-a-static-framework-3%402x.png)
+![A screenshot that shows the Compile Source build phase for a target.](/images/com.apple.Xcode/creating-a-static-framework-3@2x.png)
 
 ##### Add Resources to Your Framework Target
 
 You can add resources such as asset catalogs, storyboards, image files, and a privacy manifest to a static framework. The resource files appear in the Copy Bundle Resources build phase of the static framework target. The following image shows the Copy Bundle Resources build phase of a static framework that includes a privacy manifest file:
 
-![A screenshot that shows the Copy Bundle build phase for a target. The phase contains a privacy manifest file.](https://docs-assets.developer.apple.com/published/59f30f7d7ccb38f873be5673399d9ea2/creating-a-static-framework-4%402x.png)
+![A screenshot that shows the Copy Bundle build phase for a target. The phase contains a privacy manifest file.](/images/com.apple.Xcode/creating-a-static-framework-4@2x.png)
 
-To add a privacy manifest to your static framework in Xcode, see [`Privacy manifest files`](https://developer.apple.com/documentation/BundleResources/privacy-manifest-files).
+To add a privacy manifest to your static framework in Xcode, see [`Privacy manifest files`](https://developer.apple.com/documentation/bundleresources/privacy-manifest-files).
 
 ##### Add Public and Private Headers to Your Framework Target
 
@@ -66,7 +66,7 @@ Build, analyze, and test your static framework for each platform that it support
 
 **Image**:
 
-![A screenshot that shows the bundle structure of a static framework.](https://docs-assets.developer.apple.com/published/a7e347ff002f2a6a7a2c14348b811cd6/creating-a-static-framework-5%402x.png)
+![A screenshot that shows the bundle structure of a static framework.](/images/com.apple.Xcode/creating-a-static-framework-5@2x.png)
 
 **Bundle structure**:
 
@@ -96,7 +96,7 @@ To embed your static framework in an app:
 4. Click Open.
 5. Choose the Embed & Sign option from the Embed value list for the static framework.
 
-![A screenshot that shows the Frameworks, Libraries, and Embedded Content section in the target editor area.](https://docs-assets.developer.apple.com/published/f0b1f4d431c00517b5691dba0834d2d6/creating-a-static-framework-6%402x.png)
+![A screenshot that shows the Frameworks, Libraries, and Embedded Content section in the target editor area.](/images/com.apple.Xcode/creating-a-static-framework-6@2x.png)
 
 ## See Also
 

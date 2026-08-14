@@ -19,9 +19,9 @@ var autorepeat: Bool { get set }
 
 #### Discussion
 
-If [`true`](https://developer.apple.com/documentation/Swift/true), the user pressing and holding on the stepper repeatedly alters [`value`](uistepper/value.md).
+If [`true`](https://developer.apple.com/documentation/swift/true), the user pressing and holding on the stepper repeatedly alters [`value`](uistepper/value.md).
 
-The default value for this property is [`true`](https://developer.apple.com/documentation/Swift/true).
+The default value for this property is [`true`](https://developer.apple.com/documentation/swift/true).
 
 ## See Also
 

@@ -32,7 +32,7 @@ Because periodic sync relies on good system conditions — adequate battery char
 
 The sync engine uses an opaque type to track its internal state, and it’s your responsibility to persist that state to disk and make it available across app launches so the engine can function properly. For more information, see [`handleEvent(_:syncEngine:)`](cksyncenginedelegate-1q7g8/handleevent(_:syncengine:).md) and [`CKSyncEngine.Event.StateUpdate`](cksyncengine-5sie5/event/stateupdate.md).
 
-[`CKSyncEngine`](cksyncengine-5sie5.md) requires the CloudKit and Remote notifications entitlements. For more information, see [`Configuring iCloud services`](https://developer.apple.com/documentation/Xcode/configuring-icloud-services) and [`Configuring background execution modes`](https://developer.apple.com/documentation/Xcode/configuring-background-execution-modes).
+[`CKSyncEngine`](cksyncengine-5sie5.md) requires the CloudKit and Remote notifications entitlements. For more information, see [`Configuring iCloud services`](https://developer.apple.com/documentation/xcode/configuring-icloud-services) and [`Configuring background execution modes`](https://developer.apple.com/documentation/xcode/configuring-background-execution-modes).
 
 > ❗ **Important**: Don’t use [`CKSyncEngine`](cksyncengine-5sie5.md) to sync your app’s public database.
 
@@ -142,11 +142,11 @@ The sync engine listens for when the user signs in or out of their account. When
 ## Relationships
 
 ### Conforms To
-- [Copyable](../Swift/Copyable.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Escapable](../Swift/Escapable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Copyable](../swift/copyable.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Escapable](../swift/escapable.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

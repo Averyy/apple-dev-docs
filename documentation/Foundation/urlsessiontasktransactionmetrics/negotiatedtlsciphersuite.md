@@ -22,7 +22,7 @@ var negotiatedTLSCipherSuite: tls_ciphersuite_t? { get }
 
 #### Discussion
 
-This value is a 2-byte sequence in host byte order. See [`tls_ciphersuite_t`](https://developer.apple.com/documentation/Security/tls_ciphersuite_t) for possible values. If the task didn’t negotiate an encrypted connection, this value is `nil`.
+This value is a 2-byte sequence in host byte order. See [`tls_ciphersuite_t`](https://developer.apple.com/documentation/security/tls_ciphersuite_t) for possible values. If the task didn’t negotiate an encrypted connection, this value is `nil`.
 
 ## See Also
 

@@ -26,7 +26,7 @@ When you enable the module verifier, it finds module problems in your code and d
 
 In your Xcode project, select your framework’s target, then select the Build Settings tab. Scroll down to the Apple Clang Module Verifier section. For new projects created in Xcode 14.3 or later, the Enable Module Verifier setting defaults to Yes. For projects you created in earlier versions of Xcode, change the setting to Yes.
 
-![Xcode build settings that show the Enable Module Verifier setting set to Yes.](https://docs-assets.developer.apple.com/published/92030186c87ab22e06bb2557407e46eb/identifying-and-addressing-framework-module-issues-2%402x.png)
+![Xcode build settings that show the Enable Module Verifier setting set to Yes.](/images/com.apple.Xcode/identifying-and-addressing-framework-module-issues-2@2x.png)
 
 Then, check the values for Supported Languages and Supported Language Dialects, and update them to match your project’s requirements. View Quick Help for each setting to find valid values.
 
@@ -36,7 +36,7 @@ For more information about configuring build settings, see [`Configuring the bui
 
 In Xcode, build your project, then show the Issue navigator to see issues in your project. Module verifier issues show up as errors in the Issue navigator.
 
-![Xcode Issue navigator that shows a highlighted module verifier issue and the corresponding line highlighted in the header file.](https://docs-assets.developer.apple.com/published/db4ffdc937389b10643936183d53eb3a/identifying-and-addressing-framework-module-issues-1%402x.png)
+![Xcode Issue navigator that shows a highlighted module verifier issue and the corresponding line highlighted in the header file.](/images/com.apple.Xcode/identifying-and-addressing-framework-module-issues-1@2x.png)
 
 Review the issues, then click on an issue to highlight it in your source code.
 

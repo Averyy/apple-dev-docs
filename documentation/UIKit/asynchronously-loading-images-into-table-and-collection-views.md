@@ -16,7 +16,7 @@ Caching images can help you make the table and collection views in your app inst
 
 ##### Handle Image Loading and Caching
 
-In the sample, the class `ImageCache.swift` demonstrates a basic mechanism for image loading from a URL with [`URLSession`](https://developer.apple.com/documentation/Foundation/URLSession) and caching the downloaded images using [`NSCache`](https://developer.apple.com/documentation/Foundation/NSCache). Views such as `UITableView` and `UICollectionView` are subclasses of `UIScrollView`.
+In the sample, the class `ImageCache.swift` demonstrates a basic mechanism for image loading from a URL with [`URLSession`](https://developer.apple.com/documentation/foundation/urlsession) and caching the downloaded images using [`NSCache`](https://developer.apple.com/documentation/foundation/nscache). Views such as `UITableView` and `UICollectionView` are subclasses of `UIScrollView`.
 
 As the user scrolls in a view, the app requests the same image repeatedly. This sample holds onto the relevant completion blocks until the image loads, then passes the image to all of the requesting blocks so the API only has to make one call to fetch an image for a given URL. The following code shows how the sample project constructs a basic caching and loading method:
 

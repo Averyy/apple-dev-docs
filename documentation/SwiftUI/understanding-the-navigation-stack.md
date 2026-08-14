@@ -8,9 +8,9 @@ Learn about the navigation stack, links, and how to manage navigation types in y
 
 A [`NavigationStack`](navigationstack.md) is a container for your app’s navigation structure. Use a navigation stack to present a stack of views over a root view.
 
-A `NavigationStack` exposes its state to your app with the path parameter of its initializer. To create a navigation stack with a path that you can control or track views on the navigation stack, use a [`NavigationPath`](navigationpath.md) or a [`Binding`](binding.md) to a [`RandomAccessCollection`](https://developer.apple.com/documentation/Swift/RandomAccessCollection) and [`RangeReplaceableCollection`](https://developer.apple.com/documentation/Swift/RangeReplaceableCollection) that contains [`Hashable`](https://developer.apple.com/documentation/Swift/Hashable) elements.
+A `NavigationStack` exposes its state to your app with the path parameter of its initializer. To create a navigation stack with a path that you can control or track views on the navigation stack, use a [`NavigationPath`](navigationpath.md) or a [`Binding`](binding.md) to a [`RandomAccessCollection`](https://developer.apple.com/documentation/swift/randomaccesscollection) and [`RangeReplaceableCollection`](https://developer.apple.com/documentation/swift/rangereplaceablecollection) that contains [`Hashable`](https://developer.apple.com/documentation/swift/hashable) elements.
 
-A `NavigationPath` is a type-erased collection on which you can store a heterogenous list of data. For homogenous data, use an [`Array`](https://developer.apple.com/documentation/Swift/Array) instead. Because `NavigationPath` is type-erased, it can represent different types of data that correspond to a view in the navigation stack.
+A `NavigationPath` is a type-erased collection on which you can store a heterogenous list of data. For homogenous data, use an [`Array`](https://developer.apple.com/documentation/swift/array) instead. Because `NavigationPath` is type-erased, it can represent different types of data that correspond to a view in the navigation stack.
 
 > 💡 **Tip**: Avoid using model types as elements of a navigation path. Make sure the elements of navigation paths are lightweight, and don’t use them as a mode of transport for data models.
 
@@ -220,7 +220,7 @@ struct ContentView: View {
 
 In this example, when someone activates a link, SwiftUI adds the corresponding value, such as `Color.mint`, to `path`. SwiftUI uses the [`State`](state.md) property called `path` to mange the state of the navigation stack.
 
-[`init(path:root:)`](navigationstack/init(path:root:).md) also provides an initializer in which the path parameter takes a [`Binding`](binding.md) to a `RandomAccessCollection` and a `RangeReplaceableCollection` argument. You can store the path as a property in an object that leverages the [`Observable()`](https://developer.apple.com/documentation/Observation/Observable()) macro data type, and use property observers such as `willSet` and `didSet` or the [`onChange(of:initial:_:)`](view/onchange(of:initial:_:).md) modifier to respond to changes when the value-destination link triggers.
+[`init(path:root:)`](navigationstack/init(path:root:).md) also provides an initializer in which the path parameter takes a [`Binding`](binding.md) to a `RandomAccessCollection` and a `RangeReplaceableCollection` argument. You can store the path as a property in an object that leverages the [`Observable()`](https://developer.apple.com/documentation/observation/observable()) macro data type, and use property observers such as `willSet` and `didSet` or the [`onChange(of:initial:_:)`](view/onchange(of:initial:_:).md) modifier to respond to changes when the value-destination link triggers.
 
 In this case, the navigation path is a homogenous collection type that accepts a standard type, such as `Array`, or a custom data type as shown below:
 

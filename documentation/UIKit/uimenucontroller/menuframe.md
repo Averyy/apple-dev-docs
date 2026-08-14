@@ -19,7 +19,7 @@ var menuFrame: CGRect { get }
 
 #### Discussion
 
-The property value is the bounding rectangle of the menu in screen coordinates. The property has a value of [`CGRectZero`](https://developer.apple.com/documentation/CoreGraphics/CGRectZero) if the menu is not visible. You can use this property to adjust any user-interface objects away from the menu after displaying the menu.
+The property value is the bounding rectangle of the menu in screen coordinates. The property has a value of [`CGRectZero`](https://developer.apple.com/documentation/coregraphics/cgrectzero) if the menu is not visible. You can use this property to adjust any user-interface objects away from the menu after displaying the menu.
 
 ## See Also
 

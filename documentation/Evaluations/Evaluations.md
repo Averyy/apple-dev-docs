@@ -12,7 +12,7 @@ Measure the quality of your app’s intelligence-powered features.
 
 Use the Evaluations framework to systematically evaluate your app’s intelligence-powered features. Define datasets, generate model responses, apply metrics, and aggregate results, all with type-safe Swift APIs that integrate directly into your development workflow.
 
-![An illustration of a green and blue clipboard icon showing a line chart and result rows, surrounded by floating cards displaying bar charts and distribution graphs on a dotted grid background.](https://docs-assets.developer.apple.com/published/9a30cbd869cff31535b4fee0dd2e0e8d/evalkit-hero%402x.png)
+![An illustration of a green and blue clipboard icon showing a line chart and result rows, surrounded by floating cards displaying bar charts and distribution graphs on a dotted grid background.](/images/com.apple.evaluations/evalkit-hero@2x.png)
 
 With the Evaluations framework, you can:
 
@@ -20,7 +20,7 @@ With the Evaluations framework, you can:
 - Track quality over time.
 - Catch regressions before they ship.
 
-The framework evaluates your intelligence-powered features against the metrics you define, from simple pass or fail checks to detailed scoring with model-as-judge patterns. It aggregates the results into summaries that show you which approach performs best and where individual responses fall short. The framework works with any model available through [`Foundation Models`](https://developer.apple.com/documentation/FoundationModels), including on-device, Private Cloud Compute, and other models.
+The framework evaluates your intelligence-powered features against the metrics you define, from simple pass or fail checks to detailed scoring with model-as-judge patterns. It aggregates the results into summaries that show you which approach performs best and where individual responses fall short. The framework works with any model available through [`Foundation Models`](https://developer.apple.com/documentation/foundationmodels), including on-device, Private Cloud Compute, and other models.
 
 ## Topics
 

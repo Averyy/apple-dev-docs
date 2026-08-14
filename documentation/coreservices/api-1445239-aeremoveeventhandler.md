@@ -26,10 +26,10 @@ Your application should not install a handler in a system dispatch table with th
 
 ## Parameters
 
-- `theAEEventClass`: The event class for the handler to remove. See  .
-- `theAEEventID`: The event ID for the handler to remove. See  .
-- `handler`: See  .
-- `isSysHandler`: Specifies the Apple event dispatch table to remove the handler from. Pass   to remove the handler from the system dispatch table or   to remove the handler from your application’s dispatch table. See Version Notes for related information.
+- `theAEEventClass`: The event class for the handler to remove. See [`AEEventClass`](aeeventclass.md).
+- `theAEEventID`: The event ID for the handler to remove. See [`AEEventID`](aeeventid.md).
+- `handler`: A universal procedure pointer to the handler to remove. Although the parameters `theAEEventClass` and `theAEEventID` are sufficient to identify the handler, you can identify the handler explicitly as a safeguard. If you pass `NULL` for this parameter, the Apple Event Manager relies solely on the event class and event ID to identify the handler. If you use the `typeWildCard` constant for either or both of the event class and event ID parameters, `AERemoveEventHandler` will return an error unless an entry exists that specifies `typeWildCard` in exactly the same way. For example, if you specify `typeWildCard` in both the `theAEEventClass` parameter and the `theAEEventID` parameter, `AERemoveEventHandler` will not remove the first handler for any event class and event ID in the dispatch table; instead, it will only remove a handler if an entry exists that specifies type `typeWildCard` for both the event class and the event ID. For an explanation of wildcard values, see the Discussion section for [`AEInstallEventHandler(_:_:_:_:_:)`](1448596-aeinstalleventhandler.md). See [`AEEventHandlerUPP`](aeeventhandlerupp.md).
+- `isSysHandler`: Specifies the Apple event dispatch table to remove the handler from. Pass `TRUE` to remove the handler from the system dispatch table or `FALSE` to remove the handler from your application’s dispatch table. See Version Notes for related information.
 
 ## See Also
 

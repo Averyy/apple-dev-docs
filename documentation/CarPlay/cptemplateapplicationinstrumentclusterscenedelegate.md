@@ -25,8 +25,8 @@ protocol CPTemplateApplicationInstrumentClusterSceneDelegate : UISceneDelegate
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [UISceneDelegate](../UIKit/UISceneDelegate.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [UISceneDelegate](../uikit/uiscenedelegate.md)
 
 ## See Also
 

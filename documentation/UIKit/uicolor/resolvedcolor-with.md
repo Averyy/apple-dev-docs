@@ -26,7 +26,7 @@ The version of the color to display for the specified traits.
 
 Use this method when you need to resolve a dynamic color to a specific color value for the specified trait collection. For example, reading the [`cgColor`](uicolor/cgcolor.md) property or calling [`getRed(_:green:blue:alpha:)`](uicolor/getred(_:green:blue:alpha:).md) resolves a dynamic color to a specific color value that’s no longer dynamic. If your calling context isn’t inside one of the methods documented in the [`current`](uitraitcollection/current.md) property, you need to provide a trait collection from an appropriate trait environment, such as your view or view controller.
 
-The example below uses this method set a border color on a [`CALayer`](https://developer.apple.com/documentation/QuartzCore/CALayer):
+The example below uses this method set a border color on a [`CALayer`](https://developer.apple.com/documentation/quartzcore/calayer):
 
 ```swift
 // This method sets the border color when UITraitCollection.current is undefined.

@@ -7,7 +7,6 @@ A content type for geolocation push content.
 
 **Availability**:
 - iOS 26.0+
-- iPadOS 26.0+
 
 ## Declaration
 

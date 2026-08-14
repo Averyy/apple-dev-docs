@@ -22,9 +22,9 @@ Provide the system the information needed for the existing API to perform an ins
 
 Once your app calls this method, an iOS wizard guides the person through the process of installing and configuration an eSIM.
 
-The person may send your app to the background prior to completing eSIM installation. To ensure your app has an opportunity to execute the completion handler and get the result of the installation, use [`beginBackgroundTask(expirationHandler:)`](https://developer.apple.com/documentation/UIKit/UIApplication/beginBackgroundTask(expirationHandler:)) to perform the eSIM installation as a background task.
+The person may send your app to the background prior to completing eSIM installation. To ensure your app has an opportunity to execute the completion handler and get the result of the installation, use [`beginBackgroundTask(expirationHandler:)`](https://developer.apple.com/documentation/uikit/uiapplication/beginbackgroundtask(expirationhandler:)) to perform the eSIM installation as a background task.
 
-> ❗ **Important**: When providing [`CTCellularPlanProperties`](ctcellularplanproperties.md), the [`associatedIccid`](CTCellularPlanProperties/associatedIccid.md) property is optional. If you don’t have a matching ICCID, leave the `associatedICCID` as `nil`. Providing an incorrect or empty ICCID can cause the provisioning process to fail.
+> ❗ **Important**: When providing [`CTCellularPlanProperties`](ctcellularplanproperties.md), the [`associatedIccid`](ctcellularplanproperties/associatediccid.md) property is optional. If you don’t have a matching ICCID, leave the `associatedICCID` as `nil`. Providing an incorrect or empty ICCID can cause the provisioning process to fail.
 
 ## Parameters
 

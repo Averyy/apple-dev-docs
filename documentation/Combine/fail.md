@@ -39,7 +39,7 @@ struct Fail<Output, Failure> where Failure : Error
 ## Relationships
 
 ### Conforms To
-- [Equatable](../Swift/Equatable.md)
+- [Equatable](../swift/equatable.md)
 - [Publisher](publisher.md)
 
 ## See Also

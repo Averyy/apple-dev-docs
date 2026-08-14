@@ -33,7 +33,7 @@ Use this untyped column–based subscript to create a new table by masking a sub
 
 The derived data table includes rows where the masking column has any other (nondefault) value.
 
-![A table of book information on the left with columns named “Title”,](https://docs-assets.developer.apple.com/published/e6d1f548b7d61ae8d264f690e5513d2e/MLDataTable-subscript%28_%3A%29-10r4l-1%402x.png)
+![A table of book information on the left with columns named “Title”,](/images/com.apple.createml/MLDataTable-subscript(_:)-10r4l-1@2x.png)
 
 For example, to filter the values in a data table as shown above, begin by creating a table with the original data.
 

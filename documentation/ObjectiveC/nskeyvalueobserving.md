@@ -40,20 +40,20 @@ You can observe any object properties including simple attributes, to-one relati
   Returns a Boolean value that indicates whether the observed object supports automatic key-value observation for the given key.
 - [class func keyPathsForValuesAffectingValue(forKey: String) -> Set<String>](nsobject-swift.class/keypathsforvaluesaffectingvalue(forkey:).md)
   Returns a set of key paths for properties whose values affect the value of the specified key.
-- [protocol NSKeyValueObservingCustomization](../Foundation/NSKeyValueObservingCustomization.md)
+- [protocol NSKeyValueObservingCustomization](../foundation/nskeyvalueobservingcustomization.md)
   Conforming to NSKeyValueObservingCustomization is not required to use Key-Value Observing. Provide an implementation of these functions if you need to disable auto-notifying for a key, or add dependent keys
 - [var observationInfo: UnsafeMutableRawPointer?](nsobject-swift.class/observationinfo.md)
   Returns a pointer that identifies information about all of the observers that are registered with the observed object.
 ### Constants
-- [class NSKeyValueObservation](../Foundation/NSKeyValueObservation.md)
-- [struct NSKeyValueObservedChange](../Foundation/NSKeyValueObservedChange.md)
-- [enum NSKeyValueChange](../Foundation/NSKeyValueChange.md)
+- [class NSKeyValueObservation](../foundation/nskeyvalueobservation.md)
+- [struct NSKeyValueObservedChange](../foundation/nskeyvalueobservedchange.md)
+- [enum NSKeyValueChange](../foundation/nskeyvaluechange.md)
   The kinds of changes that can be observed.
-- [struct NSKeyValueObservingOptions](../Foundation/NSKeyValueObservingOptions.md)
+- [struct NSKeyValueObservingOptions](../foundation/nskeyvalueobservingoptions.md)
   The values that can be returned in a change dictionary.
-- [struct NSKeyValueChangeKey](../Foundation/NSKeyValueChangeKey.md)
+- [struct NSKeyValueChangeKey](../foundation/nskeyvaluechangekey.md)
   The keys that can appear in the change dictionary.
-- [enum NSKeyValueSetMutationKind](../Foundation/NSKeyValueSetMutationKind.md)
+- [enum NSKeyValueSetMutationKind](../foundation/nskeyvaluesetmutationkind.md)
 
 ## See Also
 

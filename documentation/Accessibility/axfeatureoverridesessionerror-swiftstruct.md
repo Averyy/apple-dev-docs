@@ -25,12 +25,12 @@ struct AXFeatureOverrideSessionError
 ## Relationships
 
 ### Conforms To
-- [CustomNSError](../Foundation/CustomNSError.md)
-- [Equatable](../Swift/Equatable.md)
-- [Error](../Swift/Error.md)
-- [Hashable](../Swift/Hashable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [CustomNSError](../foundation/customnserror.md)
+- [Equatable](../swift/equatable.md)
+- [Error](../swift/error.md)
+- [Hashable](../swift/hashable.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 
@@ -42,7 +42,7 @@ struct AXFeatureOverrideSessionError
   Options indicating which Accessibility features will be turned on or off when an override session is held by your app.
 - [let AXFeatureOverrideSessionErrorDomain: String](axfeatureoverridesessionerrordomain.md)
 - [AXFeatureOverrideSessionError.Code](axfeatureoverridesessionerror-swift.struct/code.md)
-- [com.apple.developer.accessibility.merchant-api-control](../BundleResources/Entitlements/com.apple.developer.accessibility.merchant-api-control.md)
+- [com.apple.developer.accessibility.merchant-api-control](../bundleresources/entitlements/com.apple.developer.accessibility.merchant-api-control.md)
 
 
 ---

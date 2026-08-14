@@ -14,7 +14,7 @@ Render a capture stream with rose-colored filtering and depth effects.
 
 AVCamFilter is a sample camera app that takes photos with filtered effects. It shows the user a live preview of the scene with the effect rendered on top.
 
-![Screenshots of AVCamFilter with the rose-colored filter applied to the camera preview.](https://docs-assets.developer.apple.com/published/b70de5aabb88c9257c2a4a214f8d3554/RosyFilterSS.png)
+![Screenshots of AVCamFilter with the rose-colored filter applied to the camera preview.](/images/com.apple.avfoundation/RosyFilterSS.png)
 
 This sample shows you how to apply a filter with a rose-colored lens using Core Image and Metal. It also shows how to render depth and a smoothened depth effect on top of the capture stream using a grayscale filter. Finally, AVCamFilter allows the user to modulate the frame rate and the effect through sliders.
 
@@ -24,7 +24,7 @@ Build and run AVCamFilter on a device running iOS 12 or later. This sample won�
 
 ##### Show the Camera Preview in a Metal View
 
-AVCamFilter uses `PreviewMetalView`, a custom subclass of [`MTKView`](https://developer.apple.com/documentation/MetalKit/MTKView), instead of a [`UIView`](https://developer.apple.com/documentation/UIKit/UIView) as its preview view, because the standard [`AVCaptureVideoPreviewLayer`](avcapturevideopreviewlayer.md) gets its frames directly from the [`AVCaptureSession`](avcapturesession.md), with no opportunity for the app to apply effects to those frames. By subclassing `MTKView`, AVCamFilter can apply the rose-colored filter and depth grayscale filter before rendering each frame.
+AVCamFilter uses `PreviewMetalView`, a custom subclass of [`MTKView`](https://developer.apple.com/documentation/metalkit/mtkview), instead of a [`UIView`](https://developer.apple.com/documentation/uikit/uiview) as its preview view, because the standard [`AVCaptureVideoPreviewLayer`](avcapturevideopreviewlayer.md) gets its frames directly from the [`AVCaptureSession`](avcapturesession.md), with no opportunity for the app to apply effects to those frames. By subclassing `MTKView`, AVCamFilter can apply the rose-colored filter and depth grayscale filter before rendering each frame.
 
 The `PreviewMetalView` defines its rendering behavior in `draw`. It creates a Metal texture from the image buffer, so it can transform and render that texture to the image:
 
@@ -90,10 +90,10 @@ func render(pixelBuffer: CVPixelBuffer) -> CVPixelBuffer?
 
 AVCamFilter applies a rose-colored filter on top of the camera stream in two ways:
 
-- `RosyCIRenderer` applies a Core Image [`CIColorMatrix`](https://developer.apple.com/documentation/CoreImage/CIColorMatrix) filter to the input buffer.
+- `RosyCIRenderer` applies a Core Image [`CIColorMatrix`](https://developer.apple.com/documentation/coreimage/cicolormatrix) filter to the input buffer.
 - `RosyMetalRenderer` creates a Metal texture from the image buffer and applies the shader in `RosyEffect.metal`.
 
-Both approaches run on the GPU for optimal performance. Because the Core Image approach doesn’t require GPU command queues, `RosyCIRenderer` involves less direct manipulation of the GPU than its Metal counterpart and chains more seamlessly with other Core Image filters. Unlike the Metal function, `RosyCIRenderer` requires the creation and application of a [`CIFilter`](https://developer.apple.com/documentation/CoreImage/CIFilter-swift.class):
+Both approaches run on the GPU for optimal performance. Because the Core Image approach doesn’t require GPU command queues, `RosyCIRenderer` involves less direct manipulation of the GPU than its Metal counterpart and chains more seamlessly with other Core Image filters. Unlike the Metal function, `RosyCIRenderer` requires the creation and application of a [`CIFilter`](https://developer.apple.com/documentation/coreimage/cifilter-swift.class):
 
 ```swift
 ciContext = CIContext()
@@ -157,7 +157,7 @@ kernel void rosyEffect(texture2d<half, access::read>  inputTexture  [[ texture(0
 }
 ```
 
-For more information about setting up a Metal compute command encoder, see [`MTLComputeCommandEncoder`](https://developer.apple.com/documentation/Metal/MTLComputeCommandEncoder).
+For more information about setting up a Metal compute command encoder, see [`MTLComputeCommandEncoder`](https://developer.apple.com/documentation/metal/mtlcomputecommandencoder).
 
 ##### Vary the Mix Factor
 

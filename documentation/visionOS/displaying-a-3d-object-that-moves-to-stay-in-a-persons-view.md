@@ -10,7 +10,7 @@ Create an entity that tracks and follows head movement in an immersive scene.
 
 #### Overview
 
-This sample uses world-tracking data from [`ARKit`](https://developer.apple.com/documentation/ARKit) in visionOS to create and display a 3D entity that dynamically moves in front of a person’s view. As the following video shows, the floating sphere’s position updates based on the person’s head movement, to ensure the object stays visible and smoothly follows their view:
+This sample uses world-tracking data from [`ARKit`](https://developer.apple.com/documentation/arkit) in visionOS to create and display a 3D entity that dynamically moves in front of a person’s view. As the following video shows, the floating sphere’s position updates based on the person’s head movement, to ensure the object stays visible and smoothly follows their view:
 
 ##### Extend the Floats to Enable Calculations
 
@@ -137,7 +137,7 @@ struct ClosureComponent: Component {
 
 The component contains the `closure` variable to track the time. On initialization, it registers `ClosureSystem` into the reality view.
 
-The `ClosureSystem` constructs a query using the [`EntityQuery`](https://developer.apple.com/documentation/RealityKit/EntityQuery) to retrieve all entities with the `ClosureComponent` from the scene. Then it passes the delta time, which is the elapsed time since the last update, to the `closure` variable for each entity:
+The `ClosureSystem` constructs a query using the [`EntityQuery`](https://developer.apple.com/documentation/realitykit/entityquery) to retrieve all entities with the `ClosureComponent` from the scene. Then it passes the delta time, which is the elapsed time since the last update, to the `closure` variable for each entity:
 
 ```swift
 import SwiftUI
@@ -161,7 +161,7 @@ struct ClosureSystem: System {
 
 ##### Implement Head Tracking
 
-visionOS supports [`WorldTrackingProvider`](https://developer.apple.com/documentation/ARKit/WorldTrackingProvider) from ARKit to get live data about a device’s position. World tracking requires an [`ARKitSession`](https://developer.apple.com/documentation/ARKit/ARKitSession) and a device that supports world tracking. The sample uses the `HeadPositionTracker` to initialize the ARKit session and the [`WorldTrackingProvider`](https://developer.apple.com/documentation/ARKit/WorldTrackingProvider):
+visionOS supports [`WorldTrackingProvider`](https://developer.apple.com/documentation/arkit/worldtrackingprovider) from ARKit to get live data about a device’s position. World tracking requires an [`ARKitSession`](https://developer.apple.com/documentation/arkit/arkitsession) and a device that supports world tracking. The sample uses the `HeadPositionTracker` to initialize the ARKit session and the [`WorldTrackingProvider`](https://developer.apple.com/documentation/arkit/worldtrackingprovider):
 
 ```swift
 import SwiftUI

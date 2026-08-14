@@ -20,7 +20,7 @@ VisionKit analyzes pixel information and isolates important data such as text of
 
 The Image Analysis interface ([`ImageAnalysisInteraction`](imageanalysisinteraction.md) on iOS, and [`ImageAnalysisOverlayView`](imageanalysisoverlayview.md) on macOS) displays on top of an image and enables people to interact with content types ([`ImageAnalysisInteraction.InteractionTypes`](imageanalysisinteraction/interactiontypes.md)) that the framework recognizes in the image. For example, the Live Text interface enables them to select any text present in the image ([`textSelection`](imageanalysisinteraction/interactiontypes/textselection.md)), or invoke a URL ([`dataDetectors`](imageanalysisinteraction/interactiontypes/datadetectors.md)). Also, the text selection UI offers framework-standard buttons for copying selected text, or looking up the subject on the web for more information.
 
-![A mockup of an iPhone screen showing the Live Text button and highlighted text with its action menu.](https://docs-assets.developer.apple.com/published/c125f3997a70202dc03466ec491d07c5/visionkit-1%402x.png)
+![A mockup of an iPhone screen showing the Live Text button and highlighted text with its action menu.](/images/com.apple.VisionKit/visionkit-1@2x.png)
 
 VisionKit’s Document Camera view controller ([`VNDocumentCameraViewController`](vndocumentcameraviewcontroller.md)) is a camera pass-through experience that enables users to scan physical documents. The user scans the document page by page by tapping a camera interface in the view, which provides your app with the resulting images by page number after the scan completes. With the collection of scanned images, your app can create a digital version of the physical document, such as by exporting the scanned images to PDF.
 

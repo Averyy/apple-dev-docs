@@ -12,7 +12,7 @@ If your app provides translation service and you want it to optionally become th
 
 ##### Add the Default Translation App Entitlement to Your Project
 
-Add the `com.apple.developer.translation-app` entitlement to the `.entitlements` file in your app’s Xcode project. For instructions on how to add this entitlement, see [`Translation`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.translation-app).
+Add the `com.apple.developer.translation-app` entitlement to the `.entitlements` file in your app’s Xcode project. For instructions on how to add this entitlement, see [`Translation`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.translation-app).
 
 ##### Add the Translation Provider Network Access Key to Your Apps Infoplist
 

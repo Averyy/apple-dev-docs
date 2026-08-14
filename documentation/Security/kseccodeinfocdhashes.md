@@ -17,7 +17,7 @@ let kSecCodeInfoCdHashes: CFString
 
 #### Discussion
 
-The corresponding [`CFArray`](https://developer.apple.com/documentation/CoreFoundation/CFArray) contains the values of the [`kSecCodeInfoUnique`](kseccodeinfounique.md) binary identifier for every digest algorithm supported in the signature in the same order as in the [`kSecCodeInfoDigestAlgorithms`](kseccodeinfodigestalgorithms.md) array. The [`kSecCodeInfoUnique`](kseccodeinfounique.md) value contained in this array corresponds to the [`kSecCodeInfoDigestAlgorithm`](kseccodeinfodigestalgorithm.md) value.
+The corresponding [`CFArray`](https://developer.apple.com/documentation/corefoundation/cfarray) contains the values of the [`kSecCodeInfoUnique`](kseccodeinfounique.md) binary identifier for every digest algorithm supported in the signature in the same order as in the [`kSecCodeInfoDigestAlgorithms`](kseccodeinfodigestalgorithms.md) array. The [`kSecCodeInfoUnique`](kseccodeinfounique.md) value contained in this array corresponds to the [`kSecCodeInfoDigestAlgorithm`](kseccodeinfodigestalgorithm.md) value.
 
 
 ---

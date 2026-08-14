@@ -17,7 +17,7 @@ let kSecCodeInfoDigestAlgorithm: CFString
 
 #### Discussion
 
-The value is a [`CFNumber`](https://developer.apple.com/documentation/CoreFoundation/CFNumber) indicating the kind of cryptographic hash function used within the signature to seal its pieces together. See [`SecCSDigestAlgorithm`](seccsdigestalgorithm.md) for possible value.
+The value is a [`CFNumber`](https://developer.apple.com/documentation/corefoundation/cfnumber) indicating the kind of cryptographic hash function used within the signature to seal its pieces together. See [`SecCSDigestAlgorithm`](seccsdigestalgorithm.md) for possible value.
 
 
 ---

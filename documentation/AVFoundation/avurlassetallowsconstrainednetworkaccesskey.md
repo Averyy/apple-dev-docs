@@ -22,7 +22,7 @@ let AVURLAssetAllowsConstrainedNetworkAccessKey: String
 
 #### Discussion
 
-The default value for this key is [`true`](https://developer.apple.com/documentation/Swift/true).
+The default value for this key is [`true`](https://developer.apple.com/documentation/swift/true).
 
 ## See Also
 

@@ -8,7 +8,7 @@ Partition multisport and interval workouts into activities that represent the di
 
 Some workouts benefit from having the workout’s duration broken into a set of discrete activities. For example, a multisport event, like a triathlon, has separate swim, bike, and run portions. Similarly, you can divide interval training into active and rest periods.
 
-![An illustration showing a .swimBikeRun workout and its corresponding .swimming, .biking, .running, and .transition activities. The activities fill the entire time covered by the workout, but none of the activities overlap.](https://docs-assets.developer.apple.com/published/74a2190228254300b6b8371b87c2ec31/media-4083470%402x.png)
+![An illustration showing a .swimBikeRun workout and its corresponding .swimming, .biking, .running, and .transition activities. The activities fill the entire time covered by the workout, but none of the activities overlap.](/images/com.apple.healthkit/media-4083470@2x.png)
 
 To model these activities in HealthKit, use the [`HKWorkoutActivity`](hkworkoutactivity.md) class to specify the different parts of a workout. You can then query for workouts that have matching activities, and analyze those activities independently from the rest of the workout.
 

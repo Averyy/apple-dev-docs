@@ -6,7 +6,7 @@ Create and configure tables in attributed strings and display them in a text vie
 
 #### Overview
 
-[`NSTextTable`](nstexttable.md) and its related classes let you embed tables of rows and columns directly into [`NSAttributedString`](https://developer.apple.com/documentation/Foundation/NSAttributedString) objects on all Apple platforms. [`NSAttributedString`](https://developer.apple.com/documentation/Foundation/NSAttributedString) stores a string together with per-character formatting attributes — such as fonts, colors, and paragraph styles — and is the primary text type for UIKit text views. You build a table from three objects:
+[`NSTextTable`](nstexttable.md) and its related classes let you embed tables of rows and columns directly into [`NSAttributedString`](https://developer.apple.com/documentation/foundation/nsattributedstring) objects on all Apple platforms. [`NSAttributedString`](https://developer.apple.com/documentation/foundation/nsattributedstring) stores a string together with per-character formatting attributes — such as fonts, colors, and paragraph styles — and is the primary text type for UIKit text views. You build a table from three objects:
 
 - **[`NSTextTable`](nstexttable.md)** represents the table as a whole and defines the column count and layout algorithm.
 - **[`NSTextTableBlock`](nstexttableblock.md)** represents a single cell and records the cell’s row, column, and span values. It belongs to a parent table.
@@ -76,7 +76,7 @@ cell.setWidth(2, type: .absolute, for: .border, rectEdge: .maxYEdge)
 cell.setBorderColor(.systemBlue, rectEdge: .maxYEdge)
 ```
 
-Use the [`CGRectEdge`](https://developer.apple.com/documentation/CoreFoundation/CGRectEdge) values [`CGRectEdge.minXEdge`](https://developer.apple.com/documentation/CoreFoundation/CGRectEdge/minXEdge) (leading), [`CGRectEdge.maxXEdge`](https://developer.apple.com/documentation/CoreFoundation/CGRectEdge/maxXEdge) (trailing), [`CGRectEdge.minYEdge`](https://developer.apple.com/documentation/CoreFoundation/CGRectEdge/minYEdge) (top), and [`CGRectEdge.maxYEdge`](https://developer.apple.com/documentation/CoreFoundation/CGRectEdge/maxYEdge) (bottom).
+Use the [`CGRectEdge`](https://developer.apple.com/documentation/corefoundation/cgrectedge) values [`CGRectEdge.minXEdge`](https://developer.apple.com/documentation/corefoundation/cgrectedge/minxedge) (leading), [`CGRectEdge.maxXEdge`](https://developer.apple.com/documentation/corefoundation/cgrectedge/maxxedge) (trailing), [`CGRectEdge.minYEdge`](https://developer.apple.com/documentation/corefoundation/cgrectedge/minyedge) (top), and [`CGRectEdge.maxYEdge`](https://developer.apple.com/documentation/corefoundation/cgrectedge/maxyedge) (bottom).
 
 To support iOS 26 and earlier, use [`setWidth(_:type:for:)`](nstextblock/setwidth(_:type:for:).md) and [`setBorderColor(_:)`](nstextblock/setbordercolor(_:).md) to apply a uniform width or color to all edges.
 

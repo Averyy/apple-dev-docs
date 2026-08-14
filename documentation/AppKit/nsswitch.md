@@ -16,11 +16,11 @@ class NSSwitch
 
 #### Overview
 
-The [`NSSwitch`](nsswitch.md) class provides a simple interface for displaying and toggling a Boolean state, such as on/off. A switch toggles its [`state`](nsswitch/state.md) and sends its [`action`](nscontrol/action.md) when clicked, activated through the keyboard, or tapped in the Touch Bar. [`NSSwitch`](nsswitch.md) also allows dragging between states, and if [`isContinuous`](nscontrol/iscontinuous.md) is [`true`](https://developer.apple.com/documentation/Swift/true), the switch sends its [`action`](nscontrol/action.md) for each change in position during the drag.
+The [`NSSwitch`](nsswitch.md) class provides a simple interface for displaying and toggling a Boolean state, such as on/off. A switch toggles its [`state`](nsswitch/state.md) and sends its [`action`](nscontrol/action.md) when clicked, activated through the keyboard, or tapped in the Touch Bar. [`NSSwitch`](nsswitch.md) also allows dragging between states, and if [`isContinuous`](nscontrol/iscontinuous.md) is [`true`](https://developer.apple.com/documentation/swift/true), the switch sends its [`action`](nscontrol/action.md) for each change in position during the drag.
 
-[`NSSwitch`](nsswitch.md) doesn’t use an instance of [`NSCell`](nscell.md) to provide its functionality. The [`cellClass`](nscontrol/cellclass.md) class property and [`cell`](nscontrol/cell.md) instance property both return [`nil`](https://developer.apple.com/documentation/ObjectiveC/nil-227m0), and they ignore attempts to set a non-[`nil`](https://developer.apple.com/documentation/ObjectiveC/nil-227m0) value.
+[`NSSwitch`](nsswitch.md) doesn’t use an instance of [`NSCell`](nscell.md) to provide its functionality. The [`cellClass`](nscontrol/cellclass.md) class property and [`cell`](nscontrol/cell.md) instance property both return [`nil`](https://developer.apple.com/documentation/objectivec/nil-227m0), and they ignore attempts to set a non-[`nil`](https://developer.apple.com/documentation/objectivec/nil-227m0) value.
 
-For design guidance, see Human Interface Guidelines > [`Toggles`](https://developer.apple.com/design/Human-Interface-Guidelines/toggles).
+For design guidance, see Human Interface Guidelines > [`Toggles`](https://developer.apple.com/design/human-interface-guidelines/toggles).
 
 ## Topics
 
@@ -33,30 +33,30 @@ For design guidance, see Human Interface Guidelines > [`Toggles`](https://develo
 ### Inherits From
 - [NSControl](nscontrol.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
 - [NSAccessibilityButton](nsaccessibilitybutton.md)
 - [NSAccessibilityElementProtocol](nsaccessibilityelementprotocol.md)
 - [NSAccessibilityProtocol](nsaccessibilityprotocol.md)
 - [NSAccessibilitySwitch](nsaccessibilityswitch.md)
 - [NSAnimatablePropertyContainer](nsanimatablepropertycontainer.md)
 - [NSAppearanceCustomization](nsappearancecustomization.md)
-- [NSCoding](../Foundation/NSCoding.md)
+- [NSCoding](../foundation/nscoding.md)
 - [NSDraggingDestination](nsdraggingdestination.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 - [NSStandardKeyBindingResponding](nsstandardkeybindingresponding.md)
 - [NSTouchBarProvider](nstouchbarprovider.md)
 - [NSUserActivityRestoring](nsuseractivityrestoring.md)
 - [NSUserInterfaceItemIdentification](nsuserinterfaceitemidentification.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 
-- [Responding to control-based events using target-action](../UIKit/responding-to-control-based-events-using-target-action.md)
+- [Responding to control-based events using target-action](../uikit/responding-to-control-based-events-using-target-action.md)
   Handle user input by connecting buttons, sliders, and other controls to your app’s code using the target-action design pattern.
 - [class NSButton](nsbutton.md)
   A control that defines an area on the screen that a user clicks to trigger an action.

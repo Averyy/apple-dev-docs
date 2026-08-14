@@ -28,7 +28,7 @@ Requires Xcode 10.0, iOS 12.0 and an iOS device with A9 or later processor.
 
 This app extends the basic workflow for building an ARKit app. (For details, see [`Tracking and visualizing planes`](tracking-and-visualizing-planes.md).) It defines an [`ARWorldTrackingConfiguration`](arworldtrackingconfiguration.md) with plane detection enabled, then runs that configuration in the [`ARSession`](arsession.md) attached to the [`ARSCNView`](arscnview.md) that displays the AR experience.
 
-When [`UITapGestureRecognizer`](https://developer.apple.com/documentation/UIKit/UITapGestureRecognizer) detects a tap on the screen, the `handleSceneTap` method uses ARKit hit-testing to find a 3D point on a real-world surface, then places an [`ARAnchor`](aranchor.md) marking that position. When ARKit calls the delegate method [`renderer(_:didAdd:for:)`](arscnviewdelegate/renderer(_:didadd:for:).md), the app loads a 3D model for [`ARSCNView`](arscnview.md) to display at the anchor’s position.
+When [`UITapGestureRecognizer`](https://developer.apple.com/documentation/uikit/uitapgesturerecognizer) detects a tap on the screen, the `handleSceneTap` method uses ARKit hit-testing to find a 3D point on a real-world surface, then places an [`ARAnchor`](aranchor.md) marking that position. When ARKit calls the delegate method [`renderer(_:didAdd:for:)`](arscnviewdelegate/renderer(_:didadd:for:).md), the app loads a 3D model for [`ARSCNView`](arscnview.md) to display at the anchor’s position.
 
 #### Capture and Save the Ar World Map
 
@@ -51,7 +51,7 @@ Tracking: \(frame.camera.trackingState.description)
 """
 ```
 
-When the user taps the Save Experience button, the app calls [`getCurrentWorldMap(completionHandler:)`](arsession/getcurrentworldmap(completionhandler:).md) to capture the map from the running ARSession, then serializes it to a [`Data`](https://developer.apple.com/documentation/Foundation/Data) object with [`NSKeyedArchiver`](https://developer.apple.com/documentation/Foundation/NSKeyedArchiver) and writes it to local storage:
+When the user taps the Save Experience button, the app calls [`getCurrentWorldMap(completionHandler:)`](arsession/getcurrentworldmap(completionhandler:).md) to capture the map from the running ARSession, then serializes it to a [`Data`](https://developer.apple.com/documentation/foundation/data) object with [`NSKeyedArchiver`](https://developer.apple.com/documentation/foundation/nskeyedarchiver) and writes it to local storage:
 
 ```swift
 sceneView.session.getCurrentWorldMap { worldMap, error in

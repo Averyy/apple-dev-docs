@@ -34,7 +34,7 @@ The following code shows how to create a basic animation object using ease-in in
 
 A layer animated with the animation created by the code above and with linearly interpolated horizontal movement would describe a path similar to the following figure.
 
-![Path taken using ease-in timing function](https://docs-assets.developer.apple.com/published/b82af6bc9071639def1b44f0e86d73b1/media-2776814%402x.png)
+![Path taken using ease-in timing function](/images/com.apple.quartzcore/media-2776814@2x.png)
 
 ## See Also
 

@@ -19,7 +19,7 @@ static let postToVimeo: UIActivity.ActivityType
 
 #### Discussion
 
-When using this service, you can provide data from [`NSURL`](https://developer.apple.com/documentation/Foundation/NSURL) whose contents use the file scheme and point to a video. You can use [`NSData`](https://developer.apple.com/documentation/Foundation/NSData) objects whose contents are video data as data for the activty items.
+When using this service, you can provide data from [`NSURL`](https://developer.apple.com/documentation/foundation/nsurl) whose contents use the file scheme and point to a video. You can use [`NSData`](https://developer.apple.com/documentation/foundation/nsdata) objects whose contents are video data as data for the activty items.
 
 ## See Also
 

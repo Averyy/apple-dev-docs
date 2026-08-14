@@ -26,10 +26,10 @@ Accelerate provides high-performance, energy-efficient computation on the CPU by
 
 Although not part of the Accelerate framework, the following libraries are closely related:
 
-- **[`Apple Archive`](https://developer.apple.com/documentation/AppleArchive)**: A framework for performing multithreaded lossless compression of directories, files, and data.
-- **[`Compression`](https://developer.apple.com/documentation/Compression)**: Algorithms for lossless data compression that support LZMESH, LZRAVEN, LZFSE, LZ4, LZMA, and ZLIB algorithms.
+- **[`Apple Archive`](https://developer.apple.com/documentation/applearchive)**: A framework for performing multithreaded lossless compression of directories, files, and data.
+- **[`Compression`](https://developer.apple.com/documentation/compression)**: Algorithms for lossless data compression that support LZMESH, LZRAVEN, LZFSE, LZ4, LZMA, and ZLIB algorithms.
 - **[`simd`](simd-library.md)**: A module for performing computations on small vectors and matrices.
-- **[`Spatial`](https://developer.apple.com/documentation/Spatial)**: Spatial is a lightweight 3D mathematical library that provides a simple API for working with 3D primitives.
+- **[`Spatial`](https://developer.apple.com/documentation/spatial)**: Spatial is a lightweight 3D mathematical library that provides a simple API for working with 3D primitives.
 
 ## Topics
 

@@ -26,7 +26,7 @@ init(validation: MLTextClassifier.ModelParameters.ValidationData = .split(strate
 
 ## See Also
 
-- [struct NLLanguage](../NaturalLanguage/NLLanguage.md)
+- [struct NLLanguage](../naturallanguage/nllanguage.md)
   The languages that the Natural Language framework supports.
 - [MLTextClassifier.ModelAlgorithmType](mltextclassifier/modelalgorithmtype.md)
   The type of algorithm that a text classifier uses.

@@ -20,11 +20,11 @@ Either `nil` or a value that’s compliant with property lists:  `NSString`, `NS
 
 #### Discussion
 
-Provides custom serialization for patch internal settings that do not comply to the [`NSCoding`](https://developer.apple.com/documentation/Foundation/NSCoding) protocol.
+Provides custom serialization for patch internal settings that do not comply to the [`NSCoding`](https://developer.apple.com/documentation/foundation/nscoding) protocol.
 
 #### Discussion
 
-If your patch has internal settings that do not conform to the [`NSCoding`](https://developer.apple.com/documentation/Foundation/NSCoding) protocol, you must implement this method.
+If your patch has internal settings that do not conform to the [`NSCoding`](https://developer.apple.com/documentation/foundation/nscoding) protocol, you must implement this method.
 
 ## Parameters
 

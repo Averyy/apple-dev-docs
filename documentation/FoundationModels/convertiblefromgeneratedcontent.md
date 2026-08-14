@@ -28,7 +28,7 @@ protocol ConvertibleFromGeneratedContent : SendableMetatype
 ## Relationships
 
 ### Inherits From
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 ### Inherited By
 - [Generable](generable.md)
 ### Conforming Types

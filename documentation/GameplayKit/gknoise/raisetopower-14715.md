@@ -23,7 +23,7 @@ func raiseToPower(_ power: Double)
 
 Noise values range from `-1.0` to `1.0`, so exponentiating always results in lower values than in the original noise, with a greater effect on low original values than on high values.
 
-![None](https://docs-assets.developer.apple.com/published/50760d93d511890921c54d121ce668ba/media-2556382%402x.png)
+![None](/images/com.apple.gameplaykit/media-2556382@2x.png)
 
 ## Parameters
 

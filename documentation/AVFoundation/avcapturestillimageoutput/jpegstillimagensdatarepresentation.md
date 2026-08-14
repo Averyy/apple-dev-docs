@@ -29,7 +29,7 @@ The returned `NSData` object is suitable for writing to disk.
 
 ## Parameters
 
-- `jpegSampleBuffer`: The sample buffer carrying JPEG image data, optionally with `Exif` metadata sample buffer attachments. This method throws an [`invalidArgumentException`](https://developer.apple.com/documentation/Foundation/NSExceptionName/invalidArgumentException) if `jpegSampleBuffer` is `NULL` or not in the JPEG format.
+- `jpegSampleBuffer`: The sample buffer carrying JPEG image data, optionally with `Exif` metadata sample buffer attachments. This method throws an [`invalidArgumentException`](https://developer.apple.com/documentation/foundation/nsexceptionname/invalidargumentexception) if `jpegSampleBuffer` is `NULL` or not in the JPEG format.
 
 
 ---

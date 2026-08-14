@@ -25,9 +25,9 @@ var sourceRect: CGRect { get set }
 
 Use this property to define the rectangle that the popover’s arrow points to. The rectangle must be in the coordinate space of [`sourceView`](uipopoverpresentationcontroller/sourceview.md).
 
-In iOS 13.2 and later, the default value is [`CGRectNull`](https://developer.apple.com/documentation/CoreGraphics/CGRectNull), which instructs the system to use the current frame of [`sourceView`](uipopoverpresentationcontroller/sourceview.md). The controller observes changes to this frame and updates the popover accordingly.
+In iOS 13.2 and later, the default value is [`CGRectNull`](https://developer.apple.com/documentation/coregraphics/cgrectnull), which instructs the system to use the current frame of [`sourceView`](uipopoverpresentationcontroller/sourceview.md). The controller observes changes to this frame and updates the popover accordingly.
 
-In iOS 13.1 and earlier, the default value is [`zero`](https://developer.apple.com/documentation/CoreFoundation/CGRect/zero) (Swift) or [`CGRectZero`](https://developer.apple.com/documentation/CoreGraphics/CGRectZero) (Objective-C); using [`CGRectNull`](https://developer.apple.com/documentation/CoreGraphics/CGRectNull) results in undefined behavior.
+In iOS 13.1 and earlier, the default value is [`zero`](https://developer.apple.com/documentation/corefoundation/cgrect/zero) (Swift) or [`CGRectZero`](https://developer.apple.com/documentation/coregraphics/cgrectzero) (Objective-C); using [`CGRectNull`](https://developer.apple.com/documentation/coregraphics/cgrectnull) results in undefined behavior.
 
 [`UIPopoverPresentationController`](uipopoverpresentationcontroller.md) ignores this property if you set the [`barButtonItem`](uipopoverpresentationcontroller/barbuttonitem.md) property.
 

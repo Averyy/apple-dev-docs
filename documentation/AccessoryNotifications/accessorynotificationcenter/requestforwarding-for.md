@@ -7,7 +7,6 @@ Requests permission to forward notifications and Live Activities to the specifie
 
 **Availability**:
 - iOS 26.5+
-- iPadOS 26.5+
 
 ## Declaration
 

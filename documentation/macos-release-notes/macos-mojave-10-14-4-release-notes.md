@@ -6,7 +6,7 @@ Update your apps to use new features, and test your apps against API changes.
 
 #### Overview
 
-The macOS 10.14.4 SDK provides support for developing apps for Macs running macOS Mojave 10.14.4. The SDK comes bundled with Xcode 10.2 available from the Mac App Store. For information on the compatibility requirements for Xcode 10.2, see [`Xcode Release Notes`](https://developer.apple.com/documentation/Xcode-Release-Notes).
+The macOS 10.14.4 SDK provides support for developing apps for Macs running macOS Mojave 10.14.4. The SDK comes bundled with Xcode 10.2 available from the Mac App Store. For information on the compatibility requirements for Xcode 10.2, see [`Xcode Release Notes`](https://developer.apple.com/documentation/xcode-release-notes).
 
 ##### Accessibility
 
@@ -20,7 +20,7 @@ The macOS 10.14.4 SDK provides support for developing apps for Macs running macO
 
 StoreKit now supports subscription offers in addition to introductory offers, so apps with auto-renewable subscriptions can provide a discounted price for a specific duration for existing and previously subscribed customers. You can use subscription offers to help win back subscribers who have canceled their subscriptions or promote an upgrade to another subscription at a special price. Customers can accept the offer even if they’ve already completed an introductory offer.
 
-StoreKit introduces a new array of [`SKProductDiscount`](https://developer.apple.com/documentation/StoreKit/SKProductDiscount) objects within the [`SKProduct`](https://developer.apple.com/documentation/StoreKit/SKProduct) class to display offers within your app to eligible customers. Add a new [`SKPaymentDiscount`](https://developer.apple.com/documentation/StoreKit/SKPaymentDiscount) object within the [`SKPayment`](https://developer.apple.com/documentation/StoreKit/SKPayment) class to allow these offers to be accepted by the customer.
+StoreKit introduces a new array of [`SKProductDiscount`](https://developer.apple.com/documentation/storekit/skproductdiscount) objects within the [`SKProduct`](https://developer.apple.com/documentation/storekit/skproduct) class to display offers within your app to eligible customers. Add a new [`SKPaymentDiscount`](https://developer.apple.com/documentation/storekit/skpaymentdiscount) object within the [`SKPayment`](https://developer.apple.com/documentation/storekit/skpayment) class to allow these offers to be accepted by the customer.
 
 ##### News
 

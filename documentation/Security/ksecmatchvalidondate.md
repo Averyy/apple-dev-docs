@@ -22,7 +22,7 @@ let kSecMatchValidOnDate: CFString
 
 #### Discussion
 
-The corresponding value is of type [`CFDate`](https://developer.apple.com/documentation/CoreFoundation/CFDate). If provided, returned keys, certificates or identities are limited to those that are valid for the given date. Pass a value of [`kCFNull`](https://developer.apple.com/documentation/CoreFoundation/kCFNull) to indicate the current date.
+The corresponding value is of type [`CFDate`](https://developer.apple.com/documentation/corefoundation/cfdate). If provided, returned keys, certificates or identities are limited to those that are valid for the given date. Pass a value of [`kCFNull`](https://developer.apple.com/documentation/corefoundation/kcfnull) to indicate the current date.
 
 
 ---

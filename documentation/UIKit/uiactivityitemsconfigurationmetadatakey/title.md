@@ -19,7 +19,7 @@ static let title: UIActivityItemsConfigurationMetadataKey
 
 #### Discussion
 
-The value of this key is an [`NSString`](https://developer.apple.com/documentation/Foundation/NSString) or [`NSAttributedString`](https://developer.apple.com/documentation/Foundation/NSAttributedString) that contains the title.
+The value of this key is an [`NSString`](https://developer.apple.com/documentation/foundation/nsstring) or [`NSAttributedString`](https://developer.apple.com/documentation/foundation/nsattributedstring) that contains the title.
 
 ## See Also
 

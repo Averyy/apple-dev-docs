@@ -44,7 +44,7 @@ vImageBuffer_Init(
 print(buffer)
 ```
 
-With the [`kvImageNoAllocate`](kvimagenoallocate.md) flag, the function returns the memory alignment and overwrites the buffer’s [`rowBytes`](vimage_buffer/rowbytes.md) property with values that provide the best performance. For example, the following code calls [`vImageBuffer_Init(_:_:_:_:_:)`](vimagebuffer_init(_:_:_:_:_:).md) and uses the computed values to allocate an [`UnsafeMutableRawPointer`](https://developer.apple.com/documentation/Swift/UnsafeMutableRawPointer):
+With the [`kvImageNoAllocate`](kvimagenoallocate.md) flag, the function returns the memory alignment and overwrites the buffer’s [`rowBytes`](vimage_buffer/rowbytes.md) property with values that provide the best performance. For example, the following code calls [`vImageBuffer_Init(_:_:_:_:_:)`](vimagebuffer_init(_:_:_:_:_:).md) and uses the computed values to allocate an [`UnsafeMutableRawPointer`](https://developer.apple.com/documentation/swift/unsafemutablerawpointer):
 
 ```swift
 let width = 10

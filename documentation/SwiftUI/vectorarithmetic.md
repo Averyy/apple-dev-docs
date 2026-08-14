@@ -41,8 +41,8 @@ protocol VectorArithmetic : AdditiveArithmetic
 ## Relationships
 
 ### Inherits From
-- [AdditiveArithmetic](../Swift/AdditiveArithmetic.md)
-- [Equatable](../Swift/Equatable.md)
+- [AdditiveArithmetic](../swift/additivearithmetic.md)
+- [Equatable](../swift/equatable.md)
 ### Conforming Types
 - [AnimatablePair](animatablepair.md)
 - [AnimatableValues](animatablevalues.md)

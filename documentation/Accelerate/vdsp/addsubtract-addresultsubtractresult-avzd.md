@@ -39,7 +39,7 @@ This function calculates the addition and subtraction of the first `N` elements 
 
 ```
 
-![A diagram showing the operation of this function. There are three rows. The top row represents the input vectors, A and B, with three boxes of each. The middle row represents the operation, addition and subtraction, with three boxes of each. The bottom row represents the output vectors, O0 and O1, as three boxes of each. The diagram has connecting lines from the input vectors to the operations, and from the operations to the output vectors.](https://docs-assets.developer.apple.com/published/f97bb670a3213865fedc136f36c35060/media-4336936%402x.png)
+![A diagram showing the operation of this function. There are three rows. The top row represents the input vectors, A and B, with three boxes of each. The middle row represents the operation, addition and subtraction, with three boxes of each. The bottom row represents the output vectors, O0 and O1, as three boxes of each. The diagram has connecting lines from the input vectors to the operations, and from the operations to the output vectors.](/images/com.apple.accelerate/media-4336936@2x.png)
 
 The following code shows an example of using this function:
 

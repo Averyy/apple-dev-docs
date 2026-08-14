@@ -41,7 +41,7 @@ func photoEffectMono(inputImage: CIImage ) -> CIImage {
 }
 ```
 
-![Two pictures of a pink flower surrounded by foliage. The photo on the left shows a single flower photographed close-up, in focus, with good light and no effects. In the photo on the right, a photo effect mono filter is applied, transforming the colors in the image to grayscale.](https://docs-assets.developer.apple.com/published/acf116f96f49e9be98f4ad897672e9a5/media-3545035%402x.png)
+![Two pictures of a pink flower surrounded by foliage. The photo on the left shows a single flower photographed close-up, in focus, with good light and no effects. In the photo on the right, a photo effect mono filter is applied, transforming the colors in the image to grayscale.](/images/com.apple.coreimage/media-3545035@2x.png)
 
 ## See Also
 

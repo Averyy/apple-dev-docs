@@ -20,7 +20,7 @@ var barTintColor: UIColor? { get set }
 
 #### Discussion
 
-This color is made translucent by default unless you set the [`isTranslucent`](uisearchbar/istranslucent.md) property to [`false`](https://developer.apple.com/documentation/Swift/false).
+This color is made translucent by default unless you set the [`isTranslucent`](uisearchbar/istranslucent.md) property to [`false`](https://developer.apple.com/documentation/swift/false).
 
 ## See Also
 

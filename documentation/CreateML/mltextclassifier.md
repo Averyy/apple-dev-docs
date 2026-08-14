@@ -26,7 +26,7 @@ struct MLTextClassifier
 
 Use a text classifier to train a machine learning model you can include in your app to classify natural language text. The model learns to associate labels with features of the input text, which can be sentences, paragraphs, or even entire documents.
 
-After you train a text classifier, you save it to a Core ML model file. You then use an instance of the [`NLModel`](https://developer.apple.com/documentation/NaturalLanguage/NLModel) class from the [`Natural Language`](https://developer.apple.com/documentation/NaturalLanguage) framework to read the model file into your app.
+After you train a text classifier, you save it to a Core ML model file. You then use an instance of the [`NLModel`](https://developer.apple.com/documentation/naturallanguage/nlmodel) class from the [`Natural Language`](https://developer.apple.com/documentation/naturallanguage) framework to read the model file into your app.
 
 ## Topics
 
@@ -86,13 +86,13 @@ After you train a text classifier, you save it to a Core ML model file. You then
 ## Relationships
 
 ### Conforms To
-- [Copyable](../Swift/Copyable.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomPlaygroundDisplayConvertible](../Swift/CustomPlaygroundDisplayConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Escapable](../Swift/Escapable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Copyable](../swift/copyable.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomPlaygroundDisplayConvertible](../swift/customplaygrounddisplayconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Escapable](../swift/escapable.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

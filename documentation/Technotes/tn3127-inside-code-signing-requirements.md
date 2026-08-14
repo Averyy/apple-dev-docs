@@ -10,17 +10,17 @@ Code signing requirements are an obscure and dusty corner of the code signing ca
 
 However, in some cases requirements are important, especially on macOS.  For example:
 
-- If you’re building an XPC service, you might want to restrict it to specific clients.  The best way to do this is by setting a code signing requirement on the connection with [`setCodeSigningRequirement(_:)`](https://developer.apple.com/documentation/Foundation/NSXPCConnection/setCodeSigningRequirement(_:)).  But what requirement to use?
+- If you’re building an XPC service, you might want to restrict it to specific clients.  The best way to do this is by setting a code signing requirement on the connection with [`setCodeSigningRequirement(_:)`](https://developer.apple.com/documentation/foundation/nsxpcconnection/setcodesigningrequirement(_:)).  But what requirement to use?
 - When working with privacy-protected resources on macOS, like the microphone, you might find that the system fails to remember your choices during development.
 - You might find that the keychain presents unexpected authorization alerts when you deploy your app through a new channel, like TestFlight.
 
-> **Note**: macOS 14 added a new way to express limits on code.  For the details, see [`Applying launch environment and library constraints`](https://developer.apple.com/documentation/Security/applying-launch-environment-and-library-constraints).
+> **Note**: macOS 14 added a new way to express limits on code.  For the details, see [`Applying launch environment and library constraints`](https://developer.apple.com/documentation/security/applying-launch-environment-and-library-constraints).
 
 ##### About This Technote Series
 
 Code signing is a foundational technology on all Apple platforms.  Many documents that discuss code signing focus on solving a specific problem.  The *Inside Code Signing* technotes peek behind the code signing curtain, to give you a better understanding of how it works.  For a list of all the technotes in this series, see the introduction in [`TN3125: Inside Code Signing: Provisioning Profiles`](tn3125-inside-code-signing-provisioning-profiles.md).
 
-> ❗ **Important**: The *Inside Code Signing* technotes discuss code signing details that aren’t considered API.  The structure of a code signature has changed numerous times in the past and may well change again in the future.  Don’t encode this information in your product.  When signing code, use Xcode (all platforms) or the `codesign` tool (macOS only).  To get information or validate a code signature, use the `codesign` tool or the [`Code Signing Services`](https://developer.apple.com/documentation/Security/code-signing-services) API.  Apple updates these facilities to accommodate any changes to the code signature structure as they roll out.
+> ❗ **Important**: The *Inside Code Signing* technotes discuss code signing details that aren’t considered API.  The structure of a code signature has changed numerous times in the past and may well change again in the future.  Don’t encode this information in your product.  When signing code, use Xcode (all platforms) or the `codesign` tool (macOS only).  To get information or validate a code signature, use the `codesign` tool or the [`Code Signing Services`](https://developer.apple.com/documentation/security/code-signing-services) API.  Apple updates these facilities to accommodate any changes to the code signature structure as they roll out.
 
 #### Basics
 
@@ -45,7 +45,7 @@ Use `codesign` to evaluate a requirement:
 test-requirement: code failed to satisfy specified code requirement(s)
 ```
 
-So TextEdit satisfies this requirement but Calculator does not.  You can also check requirements programmatically.  The following example calls [`SecStaticCodeCheckValidityWithErrors(_:_:_:_:)`](https://developer.apple.com/documentation/Security/SecStaticCodeCheckValidityWithErrors(_:_:_:_:)) to check whether the given file satisfies the `anchor apple and identifier = "com.apple.TextEdit"` requirement:
+So TextEdit satisfies this requirement but Calculator does not.  You can also check requirements programmatically.  The following example calls [`SecStaticCodeCheckValidityWithErrors(_:_:_:_:)`](https://developer.apple.com/documentation/security/secstaticcodecheckvaliditywitherrors(_:_:_:_:)) to check whether the given file satisfies the `anchor apple and identifier = "com.apple.TextEdit"` requirement:
 
 ```swift
 func isTextEdit(_ url: URL) throws -> Bool {
@@ -65,7 +65,7 @@ func isTextEdit(_ url: URL) throws -> Bool {
 }
 ```
 
-> **Note**: This code uses the `secCall(_:)` helper from [`Signing a daemon with a restricted entitlement`](https://developer.apple.com/documentation/Xcode/signing-a-daemon-with-a-restricted-entitlement).
+> **Note**: This code uses the `secCall(_:)` helper from [`Signing a daemon with a restricted entitlement`](https://developer.apple.com/documentation/xcode/signing-a-daemon-with-a-restricted-entitlement).
 
 Compiling requirements is relatively expensive so, if you do this a lot, cache the requirement object you get back from `SecRequirementCreateWithString`.  Alternatively, use the `csreq` command-line tool to compile the requirement in advance, embed that data within your program, and then create a requirement by passing that data to `SecRequirementCreateWithData`.
 
@@ -111,7 +111,7 @@ designated => anchor apple generic and identifier "com.example.apple-samplecode.
 designated => anchor apple generic and identifier "com.example.apple-samplecode.AppWithTool.ToolX" and …details omitted… SKMME9E2Y8
 ```
 
-> **Note**: To build the AppWithTool app used in this example, follow the instructions in [`Embedding a command-line tool in a sandboxed app`](https://developer.apple.com/documentation/Xcode/embedding-a-helper-tool-in-a-sandboxed-app).
+> **Note**: To build the AppWithTool app used in this example, follow the instructions in [`Embedding a command-line tool in a sandboxed app`](https://developer.apple.com/documentation/xcode/embedding-a-helper-tool-in-a-sandboxed-app).
 
 The DRs in this example are heavily abbreviated lest you get lost in the details.  The critical things to note here are:
 
@@ -171,7 +171,7 @@ These default DRs strike a balance between generality and specificity.  They ens
 
 These default DRs have one important limitation: Mac App Store and Developer ID variants of your app aren’t mutually compatible.
 
-Xcode avoids this limitation by signing code with custom DRs that support mutual compatibility.  If you want mutual compatibility but don’t use Xcode to sign your code, supply a custom DR just like Xcode does.  For information on how to sign with a custom DR, see [`Creating distribution-signed code for macOS`](https://developer.apple.com/documentation/Xcode/creating-distribution-signed-code-for-the-mac).
+Xcode avoids this limitation by signing code with custom DRs that support mutual compatibility.  If you want mutual compatibility but don’t use Xcode to sign your code, supply a custom DR just like Xcode does.  For information on how to sign with a custom DR, see [`Creating distribution-signed code for macOS`](https://developer.apple.com/documentation/xcode/creating-distribution-signed-code-for-the-mac).
 
 As code signing requirements have a textual representation, you might be tempted to write your custom DR by hand.  Don’t do that.  Code signing requirements are tricky to get right.  Rather, use Xcode to sign some code for the intended distribution channel, dump the DR of that signed code to a file, and then edit the file to change the code signing identifier and Team ID embedded in the DR.  For example, if `TestApp-MAS.app` is an app signed by Xcode for Mac App Store distribution, use this command to dump its DR:
 

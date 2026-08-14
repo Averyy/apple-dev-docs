@@ -32,7 +32,7 @@ struct URL
 
 You can construct URLs and access their parts. For URLs that represent local files, you can also manipulate properties of those files directly, such as changing the file’s last modification date. Finally, you can pass URLs to other APIs to retrieve the contents of those URLs. For example, you can use [`URLSession`](urlsession.md) and its related classes to access the contents of remote resources.
 
-URLs are the preferred way to refer to local files. Most objects that read data from or write data to a file have methods that accept a URL instead of a pathname as the file reference. For example, you can get the contents of a local file URL as [`String`](https://developer.apple.com/documentation/Swift/String) by calling [`init(contentsOf:encoding:)`](https://developer.apple.com/documentation/Swift/String/init(contentsOf:encoding:)), or as a [`Data`](data.md) by calling [`init(contentsOf:options:)`](data/init(contentsof:options:).md).
+URLs are the preferred way to refer to local files. Most objects that read data from or write data to a file have methods that accept a URL instead of a pathname as the file reference. For example, you can get the contents of a local file URL as [`String`](https://developer.apple.com/documentation/swift/string) by calling [`init(contentsOf:encoding:)`](https://developer.apple.com/documentation/swift/string/init(contentsof:encoding:)), or as a [`Data`](data.md) by calling [`init(contentsOf:options:)`](data/init(contentsof:options:).md).
 
 As a convenience, you can use Swift’s `async`-`await` syntax to asynchronously access the contents of a [`URL`](url.md) through the [`resourceBytes`](url/resourcebytes.md) and [`lines`](url/lines.md) properties. These properties use the shared [`URLSession`](urlsession.md) instance to load the resource.
 
@@ -75,7 +75,7 @@ As a convenience, you can use Swift’s `async`-`await` syntax to asynchronously
   Creates a file URL that references the local file or directory at the file path you specify.
 - [init?(FilePath, isDirectory: Bool)](url/init(_:isdirectory:).md)
   Creates a file URL that references the local file or directory at the file path you specify.
-- [struct FilePath](../System/FilePath.md)
+- [struct FilePath](../system/filepath.md)
   Represents a location in the file system.
 ### Creating a file URL for a common directory
 - [init(for: FileManager.SearchPathDirectory, in: FileManager.SearchPathDomainMask, appropriateFor: URL?, create: Bool) throws](url/init(for:in:appropriatefor:create:).md)
@@ -336,22 +336,22 @@ As a convenience, you can use Swift’s `async`-`await` syntax to asynchronously
 ## Relationships
 
 ### Conforms To
-- [CVAttachmentValueRepresentable](../CoreVideo/CVAttachmentValueRepresentable.md)
-- [Copyable](../Swift/Copyable.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [CustomURLRepresentationParameterConvertible](../AppIntents/CustomURLRepresentationParameterConvertible.md)
-- [Decodable](../Swift/Decodable.md)
-- [Encodable](../Swift/Encodable.md)
-- [Equatable](../Swift/Equatable.md)
-- [Escapable](../Swift/Escapable.md)
-- [Hashable](../Swift/Hashable.md)
-- [IntentValueConvertible](../AppIntents/IntentValueConvertible.md)
-- [IntentValueExpressing](../AppIntents/IntentValueExpressing.md)
+- [CVAttachmentValueRepresentable](../corevideo/cvattachmentvaluerepresentable.md)
+- [Copyable](../swift/copyable.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [CustomURLRepresentationParameterConvertible](../appintents/customurlrepresentationparameterconvertible.md)
+- [Decodable](../swift/decodable.md)
+- [Encodable](../swift/encodable.md)
+- [Equatable](../swift/equatable.md)
+- [Escapable](../swift/escapable.md)
+- [Hashable](../swift/hashable.md)
+- [IntentValueConvertible](../appintents/intentvalueconvertible.md)
+- [IntentValueExpressing](../appintents/intentvalueexpressing.md)
 - [ReferenceConvertible](referenceconvertible.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
-- [Transferable](../CoreTransferable/Transferable.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
+- [Transferable](../coretransferable/transferable.md)
 
 ## See Also
 

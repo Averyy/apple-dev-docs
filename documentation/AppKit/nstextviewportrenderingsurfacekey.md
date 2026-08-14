@@ -21,15 +21,15 @@ protocol NSTextViewportRenderingSurfaceKey : NSObjectProtocol
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 ### Conforming Types
 - [NSTextLayoutFragment](nstextlayoutfragment.md)
 
 ## See Also
 
-- [Using TextKit 2 to interact with text](../UIKit/using-textkit-2-to-interact-with-text.md)
+- [Using TextKit 2 to interact with text](../uikit/using-textkit-2-to-interact-with-text.md)
   Interact with text by managing text selection and inserting custom text elements.
-- [Managing viewport layout and attachment reuse in text views](../UIKit/managing-viewport-layout-and-attachment-reuse-in-a-text-view-subclass.md)
+- [Managing viewport layout and attachment reuse in text views](../uikit/managing-viewport-layout-and-attachment-reuse-in-a-text-view-subclass.md)
   Customize layout and preserve attachment views in your text view subclass.
 - [class NSTextLayoutManager](nstextlayoutmanager.md)
   The primary class that you use to manage text layout and presentation for custom text displays.

@@ -21,13 +21,13 @@ optional func evaluateTrust(for connection: NWTCPConnection, peerCertificateChai
 
 #### Discussion
 
-The caller can implement this optional protocol method to set up custom policies for peer certificate trust evaluation. If the delegate method is implemented, the caller is responsible for creating and setting up the [`SecTrust`](https://developer.apple.com/documentation/Security/SecTrust) object and passing it to the completion handler. Otherwise, the default trust evaluation policy is used for the connection.
+The caller can implement this optional protocol method to set up custom policies for peer certificate trust evaluation. If the delegate method is implemented, the caller is responsible for creating and setting up the [`SecTrust`](https://developer.apple.com/documentation/security/sectrust) object and passing it to the completion handler. Otherwise, the default trust evaluation policy is used for the connection.
 
 ## Parameters
 
 - `connection`: The connection sending this message
 - `peerCertificateChain`: The connection peer’s certificate chain
-- `completion`: The completion handler for passing the [`SecTrust`](https://developer.apple.com/documentation/Security/SecTrust) object to the connection. The `SecTrustRef` object `trust` is required and must not be `nil`. It will be evaluated using [`SecTrustEvaluate(_:_:)`](https://developer.apple.com/documentation/Security/SecTrustEvaluate(_:_:)) if necessary. The caller is responsible for keeping the argument object valid for the duration of the completion handler invocation.
+- `completion`: The completion handler for passing the [`SecTrust`](https://developer.apple.com/documentation/security/sectrust) object to the connection. The `SecTrustRef` object `trust` is required and must not be `nil`. It will be evaluated using [`SecTrustEvaluate(_:_:)`](https://developer.apple.com/documentation/security/sectrustevaluate(_:_:)) if necessary. The caller is responsible for keeping the argument object valid for the duration of the completion handler invocation.
 
 ## See Also
 

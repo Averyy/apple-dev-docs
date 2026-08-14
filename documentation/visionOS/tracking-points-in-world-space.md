@@ -10,13 +10,13 @@ Retrieve the position and orientation of anchors your app stores in ARKit.
 
 #### Overview
 
-Use world anchors along with an ARKit session’s [`WorldTrackingProvider`](https://developer.apple.com/documentation/ARKit/WorldTrackingProvider) to track points of interest in the world over time, as a person moves while wearing the device, and across device usage sessions. For example, someone might place a 3D object in a specific position on their desk and expect it to come back the next time they use the device.
+Use world anchors along with an ARKit session’s [`WorldTrackingProvider`](https://developer.apple.com/documentation/arkit/worldtrackingprovider) to track points of interest in the world over time, as a person moves while wearing the device, and across device usage sessions. For example, someone might place a 3D object in a specific position on their desk and expect it to come back the next time they use the device.
 
 ARKit keeps track of a unique identifier for each world anchor your app creates and automatically places those anchors back in the space when the person returns to your app in the same location. A world tracking provider also provides the position of the device the person is wearing.
 
 ##### Start an Arkit Session with World Tracking
 
-Use an [`ARKitSession`](https://developer.apple.com/documentation/ARKit/ARKitSession) configured for world tracking to start receiving updates on the world anchors your app places. The following shows updates to world anchors your app previously registered using the [`addAnchor(_:)`](https://developer.apple.com/documentation/ARKit/WorldTrackingProvider/addAnchor(_:)) method:
+Use an [`ARKitSession`](https://developer.apple.com/documentation/arkit/arkitsession) configured for world tracking to start receiving updates on the world anchors your app places. The following shows updates to world anchors your app previously registered using the [`addAnchor(_:)`](https://developer.apple.com/documentation/arkit/worldtrackingprovider/addanchor(_:)) method:
 
 ```swift
 let session = ARKitSession()
@@ -48,17 +48,17 @@ let anchor = WorldAnchor(originFromAnchorTransform: deskPlane.originFromAnchorTr
 try await worldInfo.addAnchor(anchor)
 ```
 
-Once you add a world anchor to your app’s tracking provider using the [`addAnchor(_:)`](https://developer.apple.com/documentation/ARKit/WorldTrackingProvider/addAnchor(_:)) method, the [`anchorUpdates`](https://developer.apple.com/documentation/ARKit/WorldTrackingProvider/anchorUpdates) sequence in the current session and future runs of your app provides updates to the current position of that new world anchor.
+Once you add a world anchor to your app’s tracking provider using the [`addAnchor(_:)`](https://developer.apple.com/documentation/arkit/worldtrackingprovider/addanchor(_:)) method, the [`anchorUpdates`](https://developer.apple.com/documentation/arkit/worldtrackingprovider/anchorupdates) sequence in the current session and future runs of your app provides updates to the current position of that new world anchor.
 
 ##### Persist World Anchors Across Sessions
 
-The only information ARKit persists about the world anchors in your app is their [`UUID`](https://developer.apple.com/documentation/Foundation/UUID) — a [`WorldAnchor`](https://developer.apple.com/documentation/ARKit/WorldAnchor) instance’s [`id`](https://developer.apple.com/documentation/ARKit/WorldAnchor/id) property — and pose in a particular space. It’s your app’s responsibility to persist additional information, such as the meaning of each anchor. For example, you might save local data about a custom 3D lamp model that a person placed on their desk.
+The only information ARKit persists about the world anchors in your app is their [`UUID`](https://developer.apple.com/documentation/foundation/uuid) — a [`WorldAnchor`](https://developer.apple.com/documentation/arkit/worldanchor) instance’s [`id`](https://developer.apple.com/documentation/arkit/worldanchor/id) property — and pose in a particular space. It’s your app’s responsibility to persist additional information, such as the meaning of each anchor. For example, you might save local data about a custom 3D lamp model that a person placed on their desk.
 
-As a person moves from town-to-town or room-to-room, your app won’t receive all of the world anchor updates from each place someone used your app. Instead, the [`anchorUpdates`](https://developer.apple.com/documentation/ARKit/WorldTrackingProvider/anchorUpdates) sequence only provides world anchors for nearby objects.
+As a person moves from town-to-town or room-to-room, your app won’t receive all of the world anchor updates from each place someone used your app. Instead, the [`anchorUpdates`](https://developer.apple.com/documentation/arkit/worldtrackingprovider/anchorupdates) sequence only provides world anchors for nearby objects.
 
 ##### Track the Device Position in the World
 
-Use the Compositor Services framework and the [`WorldTrackingProvider`](https://developer.apple.com/documentation/ARKit/WorldTrackingProvider) class’s [`queryDeviceAnchor(atTimestamp:)`](https://developer.apple.com/documentation/ARKit/WorldTrackingProvider/queryDeviceAnchor(atTimestamp:)) method to get low-latency information about the current and future-predicted pose of the person’s device in world space. For more information, see [`Drawing fully immersive content using Metal`](https://developer.apple.com/documentation/CompositorServices/drawing-fully-immersive-content-using-metal).
+Use the Compositor Services framework and the [`WorldTrackingProvider`](https://developer.apple.com/documentation/arkit/worldtrackingprovider) class’s [`queryDeviceAnchor(atTimestamp:)`](https://developer.apple.com/documentation/arkit/worldtrackingprovider/querydeviceanchor(attimestamp:)) method to get low-latency information about the current and future-predicted pose of the person’s device in world space. For more information, see [`Drawing fully immersive content using Metal`](https://developer.apple.com/documentation/compositorservices/drawing-fully-immersive-content-using-metal).
 
 ## See Also
 
@@ -82,7 +82,7 @@ Use the Compositor Services framework and the [`WorldTrackingProvider`](https://
   Query and react to changes in the position and rotation of Apple Vision Pro.
 - [Drawing in the air and on surfaces with a spatial stylus](drawing-in-the-air-and-on-surfaces-with-a-spatial-stylus.md)
   Create a spatial stylus drawing experience that balances latency and accuracy for both in-air and on-surface drawing.
-- [Preparing spatial accessories for tracking in your visionOS app](../ARKit/preparing-spatial-accessories-for-tracking-in-your-visionos-app.md)
+- [Preparing spatial accessories for tracking in your visionOS app](../arkit/preparing-spatial-accessories-for-tracking-in-your-visionos-app.md)
   Prepare a spatial accessory for tracking by training a reference accessory file and integrating it into your visionOS app.
 - [Working with generic spatial accessories](working-with-generic-spatial-accessories.md)
   Let people place digital replicas of a generic spatial accessory by tracking the accessory with ARKit.

@@ -29,14 +29,14 @@ This method generates a star-shine image. The effect is similar to a supernova e
 
 The star-shine generator filter uses the following properties:
 
-- **`center`**: A `vector` representing the center of the flare as a [`CGPoint`](https://developer.apple.com/documentation/CoreFoundation/CGPoint).
-- **`color`**: A color representing the color of the flare as a [`cgColor`](https://developer.apple.com/documentation/UIKit/UIColor/cgColor).
-- **`radius`**: A `float` representing the radius of the flare as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
-- **`crossScale`**: A `float` representing the cross flare size relative to the round central flare as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
-- **`crossAngle`**: A `float` representing the angle of the flare as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
-- **`crossOpacity`**: A `float` representing the thickness of the cross opacity as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
-- **`crossWidth`**: A `float` representing the cross width as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
-- **`epsilon`**: A `float` representing the epsilon as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+- **`center`**: A `vector` representing the center of the flare as a [`CGPoint`](https://developer.apple.com/documentation/corefoundation/cgpoint).
+- **`color`**: A color representing the color of the flare as a [`cgColor`](https://developer.apple.com/documentation/uikit/uicolor/cgcolor).
+- **`radius`**: A `float` representing the radius of the flare as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
+- **`crossScale`**: A `float` representing the cross flare size relative to the round central flare as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
+- **`crossAngle`**: A `float` representing the angle of the flare as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
+- **`crossOpacity`**: A `float` representing the thickness of the cross opacity as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
+- **`crossWidth`**: A `float` representing the cross width as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
+- **`epsilon`**: A `float` representing the epsilon as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
 
 The following code generates a star-shaped silhouette with a black background.
 
@@ -55,7 +55,7 @@ func starShine() -> CIImage {
 }
 ```
 
-![A picture of an object that is similar to a square with the corners stretched farther out from the body and a green gradient behind the star shine.](https://docs-assets.developer.apple.com/published/bcef55292331767f620710cf9ec93495/media-3590972%402x.png)
+![A picture of an object that is similar to a square with the corners stretched farther out from the body and a green gradient behind the star shine.](/images/com.apple.coreimage/media-3590972@2x.png)
 
 ## See Also
 

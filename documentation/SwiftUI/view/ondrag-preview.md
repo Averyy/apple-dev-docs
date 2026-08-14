@@ -35,7 +35,7 @@ To use `Transferable` types directly and access a richer feature set — includi
 
 ## Parameters
 
-- `data`: A closure that returns a single [`NSItemProvider`](https://developer.apple.com/documentation/Foundation/NSItemProvider) that represents the draggable data from this view.
+- `data`: A closure that returns a single [`NSItemProvider`](https://developer.apple.com/documentation/foundation/nsitemprovider) that represents the draggable data from this view.
 - `preview`: A [`View`](view.md) to use as the source for the dragging preview, once the drag operation has begun. The preview is centered over the source view.
 
 ## See Also

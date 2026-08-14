@@ -10,7 +10,7 @@ QuickTime movies store streaming data in a streaming media track. This media has
 
 #### Streaming Media Sample Description
 
-The streaming media sample description contains information that defines how to interpret streaming media data. This sample description is based on the standard sample description header, as described in [`Sample table atom ('stbl')`](sample_table_atom.md).
+The streaming media sample description contains information that defines how to interpret streaming media data. This sample description is based on the standard sample description header, as described in [`Sample table atom`](sample_table_atom.md).
 
 The streaming media sample description is documented in the QuickTime header file `QTSMovie.h`, as follows:
 

@@ -8,9 +8,9 @@ Enhance the legibility of content in your app’s interface.
 
 Make content easier for people to see by making it larger, giving it greater contrast, or reducing the amount of distracting motion.
 
-![None](https://docs-assets.developer.apple.com/published/798b84460063f228cc1996fef3379310/accessible-appearance-hero%402x.png)
+![None](/images/com.apple.SwiftUI/accessible-appearance-hero@2x.png)
 
-For design guidance, see [`Accessibility`](https://developer.apple.com/design/Human-Interface-Guidelines/accessibility#Text-display) in the Accessibility section of the Human Interface Guidelines.
+For design guidance, see [`Accessibility`](https://developer.apple.com/design/human-interface-guidelines/accessibility) in the Accessibility section of the Human Interface Guidelines.
 
 ## Topics
 

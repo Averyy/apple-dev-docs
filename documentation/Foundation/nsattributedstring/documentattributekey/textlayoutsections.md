@@ -22,7 +22,7 @@ static let textLayoutSections: NSAttributedString.DocumentAttributeKey
 
 #### Discussion
 
-An [`NSArray`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/PropertyLists/OldStylePlists/OldStylePLists.html#//apple_ref/doc/uid/20001012-47205) containing [`NSDictionary`](nsdictionary.md) objects, each dictionary describing a layout orientation section. The dictionary can have two attributes: [`orientation`](nsattributedstring/textlayoutsectionkey/orientation.md) and [`range`](nsattributedstring/textlayoutsectionkey/range.md). When there is a gap between sections, it’s assumed to have [`NSLayoutManager.TextLayoutOrientation.horizontal`](https://developer.apple.com/documentation/AppKit/NSLayoutManager/TextLayoutOrientation/horizontal).
+An [`NSArray`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/PropertyLists/OldStylePlists/OldStylePLists.html#//apple_ref/doc/uid/20001012-47205) containing [`NSDictionary`](nsdictionary.md) objects, each dictionary describing a layout orientation section. The dictionary can have two attributes: [`orientation`](nsattributedstring/textlayoutsectionkey/orientation.md) and [`range`](nsattributedstring/textlayoutsectionkey/range.md). When there is a gap between sections, it’s assumed to have [`NSLayoutManager.TextLayoutOrientation.horizontal`](https://developer.apple.com/documentation/appkit/nslayoutmanager/textlayoutorientation/horizontal).
 
 ## See Also
 

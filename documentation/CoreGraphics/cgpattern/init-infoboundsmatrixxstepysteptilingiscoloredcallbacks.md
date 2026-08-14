@@ -40,7 +40,7 @@ See [`CGPatternDrawPatternCallback`](cgpatterndrawpatterncallback.md) formore in
 - `xStep`: The horizontal displacement between cells, specified in pattern space. For no additional horizontal space between cells (so that each pattern cells abuts the previous pattern cell in the horizontal direction), pass the width of the pattern cell.
 - `yStep`: The vertical displacement between cells, specified in pattern space. For no additional vertical space between cells(so that each pattern cells abuts the previous pattern cell in the vertical direction), pass the height of the pattern cell.
 - `tiling`: A [`CGPatternTiling`](cgpatterntiling.md) constant that specifies the desired tiling method.
-- `isColored`: If you want to draw your pattern using its own intrinsic color, pass [`true`](https://developer.apple.com/documentation/Swift/true). If you want to draw an uncolored (or masking) pattern that uses the fill or stroke color in the graphics state, pass [`false`](https://developer.apple.com/documentation/Swift/false).
+- `isColored`: If you want to draw your pattern using its own intrinsic color, pass [`true`](https://developer.apple.com/documentation/swift/true). If you want to draw an uncolored (or masking) pattern that uses the fill or stroke color in the graphics state, pass [`false`](https://developer.apple.com/documentation/swift/false).
 - `callbacks`: A pointer to a pattern  callback function table—your pattern drawing function is an entry in this table. See [`CGPatternCallbacks`](cgpatterncallbacks.md) for more information about callback function tables for patterns.
 
 

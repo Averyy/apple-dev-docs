@@ -3,7 +3,7 @@
 **Framework**: MetalKit  
 **Kind**: property
 
-A Boolean value that indicates whether the view responds to [`setNeedsDisplay()`](https://developer.apple.com/documentation/UIKit/UIView/setNeedsDisplay()).
+A Boolean value that indicates whether the view responds to [`setNeedsDisplay()`](https://developer.apple.com/documentation/uikit/uiview/setneedsdisplay()).
 
 **Availability**:
 - iOS 9.0+
@@ -21,9 +21,9 @@ var enableSetNeedsDisplay: Bool { get set }
 
 #### Discussion
 
-If this value and the value of [`isPaused`](mtkview/ispaused.md) are [`true`](https://developer.apple.com/documentation/Swift/true), the view behaves similarly to a [`UIView`](https://developer.apple.com/documentation/UIKit/UIView) object, responding to calls to [`setNeedsDisplay()`](https://developer.apple.com/documentation/UIKit/UIView/setNeedsDisplay()). In this case, the view’s internal draw loop is paused and updates are event-driven instead.
+If this value and the value of [`isPaused`](mtkview/ispaused.md) are [`true`](https://developer.apple.com/documentation/swift/true), the view behaves similarly to a [`UIView`](https://developer.apple.com/documentation/uikit/uiview) object, responding to calls to [`setNeedsDisplay()`](https://developer.apple.com/documentation/uikit/uiview/setneedsdisplay()). In this case, the view’s internal draw loop is paused and updates are event-driven instead.
 
-The default value is [`false`](https://developer.apple.com/documentation/Swift/false).
+The default value is [`false`](https://developer.apple.com/documentation/swift/false).
 
 ## See Also
 

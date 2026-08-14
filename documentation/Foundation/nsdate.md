@@ -32,9 +32,9 @@ In Swift, use this type when you need reference semantics or other Foundation-sp
 
 The [`NSDate`](nsdate.md) class provides methods for comparing dates, calculating the time interval between two dates, and creating a new date from a time interval relative to another date. [`NSDate`](nsdate.md) objects can be used in conjunction with [`DateFormatter`](dateformatter.md) objects to create localized representations of dates and times, as well as with [`NSCalendar`](nscalendar.md) objects to perform calendar arithmetic.
 
-[`NSDate`](nsdate.md) is *toll-free bridged* with its Core Foundation counterpart, [`CFDate`](https://developer.apple.com/documentation/CoreFoundation/CFDate). See [`Toll-Free Bridging`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Conceptual/CocoaEncyclopedia/Toll-FreeBridgin/Toll-FreeBridgin.html#//apple_ref/doc/uid/TP40010810-CH2) for more information on toll-free bridging.
+[`NSDate`](nsdate.md) is *toll-free bridged* with its Core Foundation counterpart, [`CFDate`](https://developer.apple.com/documentation/corefoundation/cfdate). See [`Toll-Free Bridging`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Conceptual/CocoaEncyclopedia/Toll-FreeBridgin/Toll-FreeBridgin.html#//apple_ref/doc/uid/TP40010810-CH2) for more information on toll-free bridging.
 
-> ❗ **Important**:  The Swift overlay to the Foundation framework provides the [`Date`](date.md) structure, which bridges to the [`NSDate`](nsdate.md) class. For more information about value types, see [`Working with Foundation Types`](https://developer.apple.com/documentation/Swift/working-with-foundation-types).
+> ❗ **Important**:  The Swift overlay to the Foundation framework provides the [`Date`](date.md) structure, which bridges to the [`NSDate`](nsdate.md) class. For more information about value types, see [`Working with Foundation Types`](https://developer.apple.com/documentation/swift/working-with-foundation-types).
 
 ##### Subclassing Notes
 
@@ -138,23 +138,23 @@ Your subclass may use a different reference date than the absolute reference dat
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CKRecordValue](../CloudKit/CKRecordValue-c.protocol.md)
-- [CKRecordValueProtocol](../CloudKit/CKRecordValueProtocol.md)
-- [CVarArg](../Swift/CVarArg.md)
-- [Copyable](../Swift/Copyable.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Escapable](../Swift/Escapable.md)
-- [Hashable](../Swift/Hashable.md)
+- [CKRecordValue](../cloudkit/ckrecordvalue-c.protocol.md)
+- [CKRecordValueProtocol](../cloudkit/ckrecordvalueprotocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [Copyable](../swift/copyable.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Escapable](../swift/escapable.md)
+- [Hashable](../swift/hashable.md)
 - [NSCoding](nscoding.md)
 - [NSCopying](nscopying.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 - [NSSecureCoding](nssecurecoding.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 
 ---

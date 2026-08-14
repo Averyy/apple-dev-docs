@@ -29,7 +29,7 @@ The rectangle of the image within the view, in unit coordinates. The default ret
 
 #### Discussion
 
-Implement this method when the interaction view type isn’t [`UIImageView`](https://developer.apple.com/documentation/UIKit/UIImageView).
+Implement this method when the interaction view type isn’t [`UIImageView`](https://developer.apple.com/documentation/uikit/uiimageview).
 
 ## Parameters
 

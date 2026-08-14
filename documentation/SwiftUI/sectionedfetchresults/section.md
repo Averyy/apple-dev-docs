@@ -49,7 +49,7 @@ ForEach(quakes) { section in
 }
 ```
 
-The sections also act as collections, which means you can use elements like the [`count`](https://developer.apple.com/documentation/Swift/Collection/count-4l4qk) property in the example above.
+The sections also act as collections, which means you can use elements like the [`count`](https://developer.apple.com/documentation/swift/collection/count) property in the example above.
 
 ## Topics
 
@@ -68,13 +68,13 @@ The sections also act as collections, which means you can use elements like the 
 ## Relationships
 
 ### Conforms To
-- [BidirectionalCollection](../Swift/BidirectionalCollection.md)
-- [Collection](../Swift/Collection.md)
-- [Identifiable](../Swift/Identifiable.md)
-- [RandomAccessCollection](../Swift/RandomAccessCollection.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
-- [Sequence](../Swift/Sequence.md)
+- [BidirectionalCollection](../swift/bidirectionalcollection.md)
+- [Collection](../swift/collection.md)
+- [Identifiable](../swift/identifiable.md)
+- [RandomAccessCollection](../swift/randomaccesscollection.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sequence](../swift/sequence.md)
 
 ## See Also
 

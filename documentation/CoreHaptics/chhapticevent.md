@@ -25,7 +25,7 @@ Each event represents a single haptic or audio signal. The event [`type`](chhapt
 
 In the following graphic, transient haptic patterns on the left trigger at a specific time with a specific intensity. Continuous haptic patterns on the right sustain the haptic feedback over a specific duration of time, such as three seconds.
 
-![A transient haptic pattern on the left, and a continuous haptic pattern on the right.](https://docs-assets.developer.apple.com/published/5457af395d15942b22d154ae7e7fa804/media-3235483%402x.png)
+![A transient haptic pattern on the left, and a continuous haptic pattern on the right.](/images/com.apple.corehaptics/media-3235483@2x.png)
 
 Specify when an event begins by setting its [`relativeTime`](chhapticevent/relativetime.md) property. Specify the length of the event by setting its [`duration`](chhapticevent/duration.md) property. Set optional parameters to customize event properties. For example, you can specify the intensity of a haptic event by creating an event parameter with ID [`hapticIntensity`](chhapticevent/parameterid/hapticintensity.md).
 
@@ -58,14 +58,14 @@ Specify when an event begins by setting its [`relativeTime`](chhapticevent/relat
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

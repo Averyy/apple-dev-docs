@@ -26,7 +26,7 @@ For more information about how to connect to external accessories, see [`Externa
 ## Topics
 
 ### Essentials
-- [UISupportedExternalAccessoryProtocols](../BundleResources/Information-Property-List/UISupportedExternalAccessoryProtocols.md)
+- [UISupportedExternalAccessoryProtocols](../bundleresources/information-property-list/uisupportedexternalaccessoryprotocols.md)
   The protocols that the app uses to communicate with external accessory hardware.
 - [class EAAccessoryManager](eaaccessorymanager.md)
   The object you use to identify connected accessories, and begin delivery of connection and disconnection notifications.
@@ -36,7 +36,7 @@ For more information about how to connect to external accessories, see [`Externa
 - [class EASession](easession.md)
   The object you use to manage communications between your app and a connected hardware accessory.
 ### Wi-Fi Accessory Configuration
-- [Wireless Accessory Configuration Entitlement](../BundleResources/Entitlements/com.apple.external-accessory.wireless-configuration.md)
+- [Wireless Accessory Configuration Entitlement](../bundleresources/entitlements/com.apple.external-accessory.wireless-configuration.md)
   A Boolean value that indicates whether your app may configure MFi Wi-Fi accessories.
 - [class EAWiFiUnconfiguredAccessoryBrowser](eawifiunconfiguredaccessorybrowser.md)
   An object you use to scan for wireless accessories and configure them for use with the user’s app.

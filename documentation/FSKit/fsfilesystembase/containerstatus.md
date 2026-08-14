@@ -20,7 +20,7 @@ var containerStatus: FSContainerStatus { get set }
 
 A file system container starts in the [`FSContainerState.notReady`](fscontainerstate/notready.md) state, and then transitions to the other values of the [`FSContainerState`](fscontainerstate.md) enumeration. The following diagram illustrates the possible state transitions.
 
-![A flow diagram of four possible container states. The initial state, notReady, can transition to ready or blocked. The ready state can transition back to not ready, or to blocked or active. The blocked state can transition to ready or not ready. The active state can transition back to ready or to not ready.](https://docs-assets.developer.apple.com/published/bddcc0fab660562eaf070e9608aa415e/fs-file-system-base%402x.png)
+![A flow diagram of four possible container states. The initial state, notReady, can transition to ready or blocked. The ready state can transition back to not ready, or to blocked or active. The blocked state can transition to ready or not ready. The active state can transition back to ready or to not ready.](/images/FSKit/fs-file-system-base@2x.png)
 
 Your file system implementation updates this property as it changes state. Many events and operations may trigger a state transition, and some transitions depend on a specific file system’s design.
 

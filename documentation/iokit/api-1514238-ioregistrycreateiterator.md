@@ -28,7 +28,7 @@ This method creates an IORegistryIterator in the kernel that is set up with opti
 
 ## Parameters
 
-- `masterPort`: The primary port obtained from  . Pass   to look up the default primary port.
+- `masterPort`: The primary port obtained from [`IOMasterPort(_:_:)`](1514652-iomasterport.md). Pass [`kIOMasterPortDefault`](kiomasterportdefault.md) to look up the default primary port.
 - `plane`: The name of an existing registry plane. Plane names are defined in IOKitKeys.h, eg. kIOServicePlane.
 - `options`: kIORegistryIterateRecursively may be set to recurse automatically into each entry as it is returned from IOIteratorNext calls on the registry iterator.
 - `iterator`: A created iterator handle, to be released by the caller when it has finished with it.

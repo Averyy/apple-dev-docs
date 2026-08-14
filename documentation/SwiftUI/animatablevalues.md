@@ -33,10 +33,10 @@ struct AnimatableValues<each Value> where repeat each Value : VectorArithmetic
 ## Relationships
 
 ### Conforms To
-- [AdditiveArithmetic](../Swift/AdditiveArithmetic.md)
-- [Equatable](../Swift/Equatable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [AdditiveArithmetic](../swift/additivearithmetic.md)
+- [Equatable](../swift/equatable.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 - [VectorArithmetic](vectorarithmetic.md)
 
 ## See Also

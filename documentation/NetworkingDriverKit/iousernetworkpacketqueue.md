@@ -64,7 +64,7 @@ Submission queues contain the packets that your driver dequeues and processes. A
 ## Relationships
 
 ### Inherits From
-- [OSObject](../DriverKit/OSObject.md)
+- [OSObject](../driverkit/osobject.md)
 ### Inherited By
 - [IOUserNetworkRxCompletionQueue](iousernetworkrxcompletionqueue.md)
 - [IOUserNetworkRxSubmissionQueue](iousernetworkrxsubmissionqueue.md)

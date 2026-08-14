@@ -34,8 +34,8 @@ struct EmptyVisualEffect
 
 ### Conforms To
 - [Animatable](animatable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 - [VisualEffect](visualeffect.md)
 
 ## See Also

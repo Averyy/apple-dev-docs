@@ -25,7 +25,7 @@ Not all papers have a printer ID associated with them. If the printer ID is know
 ## Parameters
 
 - `paper`: The paper whose printer ID you want to obtain.
-- `printerID`: A pointer to your   variable. On return, the variable refers to a Core Foundation string that contains the printer ID for the specified paper. If an error occurs, the variable is set to  . You should not release the string without first retaining it.
+- `printerID`: A pointer to your [`CFString`](https://developer.apple.com/documentation/corefoundation/cfstring) variable. On return, the variable refers to a Core Foundation string that contains the printer ID for the specified paper. If an error occurs, the variable is set to `NULL`. You should not release the string without first retaining it.
 
 ## See Also
 

@@ -16,7 +16,7 @@ var alphaValue: CGFloat { get set }
 
 #### Discussion
 
-This property contains the [`opacity`](https://developer.apple.com/documentation/QuartzCore/CALayer/opacity) value from the view’s layer. The acceptable range of values for this property are between `0.0` (transparent) and `1.0` (opaque). The default value of this property is `1.0`.
+This property contains the [`opacity`](https://developer.apple.com/documentation/quartzcore/calayer/opacity) value from the view’s layer. The acceptable range of values for this property are between `0.0` (transparent) and `1.0` (opaque). The default value of this property is `1.0`.
 
 ## See Also
 

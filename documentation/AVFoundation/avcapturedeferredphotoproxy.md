@@ -18,19 +18,19 @@ class AVCaptureDeferredPhotoProxy
 
 #### Overview
 
-A photo proxy behaves like a normal [`AVCapturePhoto`](avcapturephoto.md), and approximates the look of the final rendered image. This object represents intermediate data that the system can render into a final image and ingested into the user’s photo library using the [`PhotoKit`](https://developer.apple.com/documentation/PhotoKit) framework. The intermediate data aren’t accessible by the calling process.
+A photo proxy behaves like a normal [`AVCapturePhoto`](avcapturephoto.md), and approximates the look of the final rendered image. This object represents intermediate data that the system can render into a final image and ingested into the user’s photo library using the [`PhotoKit`](https://developer.apple.com/documentation/photokit) framework. The intermediate data aren’t accessible by the calling process.
 
 ## Relationships
 
 ### Inherits From
 - [AVCapturePhoto](avcapturephoto.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 
@@ -40,7 +40,7 @@ A photo proxy behaves like a normal [`AVCapturePhoto`](avcapturephoto.md), and a
   Configure and capture single or multiple still images, Live Photos, and other forms of photography.
 - [Capturing photos in RAW and Apple ProRAW formats](capturing-photos-in-raw-and-apple-proraw-formats.md)
   Support professional photography workflows by enabling minimally processed image capture in your camera app.
-- [Supporting Continuity Camera in Your Mac App](../AppKit/supporting-continuity-camera-in-your-mac-app.md)
+- [Supporting Continuity Camera in Your Mac App](../appkit/supporting-continuity-camera-in-your-mac-app.md)
   Incorporate scanned documents and pictures from a user’s iPhone, iPad, or iPod touch into your Mac app using Continuity Camera.
 - [class AVCapturePhoto](avcapturephoto.md)
   A container for image data from a photo capture output.

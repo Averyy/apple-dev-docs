@@ -19,7 +19,7 @@ var orientation: UIDeviceOrientation { get set }
 
 #### Discussion
 
-To simulate a change in the physical orientation of a device under test, set the value of the [`orientation`](xcuidevice/orientation.md) property for the shared [`XCUIDevice`](xcuidevice.md) object to one of the [`UIDeviceOrientation`](https://developer.apple.com/documentation/UIKit/UIDeviceOrientation) constants UIKit defines. This impacts the [`orientation`](https://developer.apple.com/documentation/UIKit/UIDevice/orientation) property UIKit uses to identify a device’s physical orientation. These constants aren’t tied directly to the orientation of your app’s user interface. The example below sets the device orientation to landscape right:
+To simulate a change in the physical orientation of a device under test, set the value of the [`orientation`](xcuidevice/orientation.md) property for the shared [`XCUIDevice`](xcuidevice.md) object to one of the [`UIDeviceOrientation`](https://developer.apple.com/documentation/uikit/uideviceorientation) constants UIKit defines. This impacts the [`orientation`](https://developer.apple.com/documentation/uikit/uidevice/orientation) property UIKit uses to identify a device’s physical orientation. These constants aren’t tied directly to the orientation of your app’s user interface. The example below sets the device orientation to landscape right:
 
 ```swift
 XCUIDevice.shared.orientation = .landscapeRight

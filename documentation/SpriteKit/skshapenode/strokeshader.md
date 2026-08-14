@@ -28,7 +28,7 @@ var strokeShader: SKShader? { get set }
 
 The default value is `nil`. If a `strokeShader` is specified, when the shape node is drawn, the shader is used to determine the output colors for any part of the shape node that’s stroked. SpriteKit implements many stroke features using a default shader, such as:
 
-- [`lineCap`](https://developer.apple.com/documentation/QuartzCore/CAShapeLayer/lineCap)
+- [`lineCap`](https://developer.apple.com/documentation/quartzcore/cashapelayer/linecap)
 - [`glowWidth`](skshapenode/glowwidth.md)
 - [`strokeColor`](skshapenode/strokecolor.md)
 

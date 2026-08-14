@@ -8,7 +8,7 @@ Get data about your apps and usage.
 
 Use the Analytics Reports API to analyze your app’s performance on iOS and the App Store and find opportunities for improvement. To learn more about interpreting the data using the glossary of report fields and definitions, see [`Analytics Reports`](https://developer.apple.com/documentation/analytics-reports).
 
-To help protect user privacy, where appropriate, Apple is applying measures to protect personally identifable infomation. For specific reports, Apple adds noise or applies crowd anonymity, and uses both approaches for other reports. Apple only reports totals when a specific number of data points are available. For more infomation about these measures, see [`Protecting user privacy in report data`](https://developer.apple.com/documentation/Analytics-Reports/privacy).
+To help protect user privacy, where appropriate, Apple is applying measures to protect personally identifable infomation. For specific reports, Apple adds noise or applies crowd anonymity, and uses both approaches for other reports. Apple only reports totals when a specific number of data points are available. For more infomation about these measures, see [`Protecting user privacy in report data`](https://developer.apple.com/documentation/analytics-reports/privacy).
 
 To download analytics reports, be sure you have one of the following user roles:
 

@@ -37,8 +37,8 @@ You must implement [`CPApplicationDelegate`](cpapplicationdelegate.md) on the sa
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [UIApplicationDelegate](../UIKit/UIApplicationDelegate.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [UIApplicationDelegate](../uikit/uiapplicationdelegate.md)
 
 
 ---

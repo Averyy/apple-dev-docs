@@ -20,7 +20,7 @@ The object at the given location in the combo box’s internal item list.
 
 #### Discussion
 
-This method logs a warning if [`usesDataSource`](nscomboboxcell/usesdatasource.md) is [`true`](https://developer.apple.com/documentation/Swift/true).
+This method logs a warning if [`usesDataSource`](nscomboboxcell/usesdatasource.md) is [`true`](https://developer.apple.com/documentation/swift/true).
 
 ## Parameters
 

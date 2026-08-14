@@ -28,7 +28,7 @@ If you want the message to be dequeued when the run loop is in a mode other than
 
 ##### Special Considerations
 
-This method registers with the runloop of its current context, and depends on that runloop being run on a regular basis to perform correctly. One common context where you might call this method and end up registering with a runloop that is not automatically run on a regular basis is when being invoked by a dispatch queue. If you need this type of functionality when running on a dispatch queue, you should use [`dispatch_after`](https://developer.apple.com/documentation/Dispatch/dispatch_after) and related methods to get the behavior you want.
+This method registers with the runloop of its current context, and depends on that runloop being run on a regular basis to perform correctly. One common context where you might call this method and end up registering with a runloop that is not automatically run on a regular basis is when being invoked by a dispatch queue. If you need this type of functionality when running on a dispatch queue, you should use [`dispatch_after`](https://developer.apple.com/documentation/dispatch/dispatch_after) and related methods to get the behavior you want.
 
 ## Parameters
 

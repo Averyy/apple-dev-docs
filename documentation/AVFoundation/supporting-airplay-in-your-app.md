@@ -21,11 +21,11 @@ try audioSession.setCategory(.playback,
 
 ##### Add an Airplay Picker
 
-Add [`AVRoutePickerView`](https://developer.apple.com/documentation/AVKit/AVRoutePickerView) to your view hierarchy to include an AirPlay picker in your app. The picker provides users with a list of potential AirPlay devices they can use with your app. To control when to show the picker, use [`AVRouteDetector`](avroutedetector.md) to identify the state of the route detector.
+Add [`AVRoutePickerView`](https://developer.apple.com/documentation/avkit/avroutepickerview) to your view hierarchy to include an AirPlay picker in your app. The picker provides users with a list of potential AirPlay devices they can use with your app. To control when to show the picker, use [`AVRouteDetector`](avroutedetector.md) to identify the state of the route detector.
 
 ##### Add a Media Player
 
-Use APIs to customize your AirPlay adoption with Media Player integration. If you use [`MPRemoteCommandCenter`](https://developer.apple.com/documentation/MediaPlayer/MPRemoteCommandCenter), you can receive remote commands. If you use [`MPNowPlayingInfoCenter`](https://developer.apple.com/documentation/MediaPlayer/MPNowPlayingInfoCenter), you can inform the system metadata about the track that’s playing on the device.
+Use APIs to customize your AirPlay adoption with Media Player integration. If you use [`MPRemoteCommandCenter`](https://developer.apple.com/documentation/mediaplayer/mpremotecommandcenter), you can receive remote commands. If you use [`MPNowPlayingInfoCenter`](https://developer.apple.com/documentation/mediaplayer/mpnowplayinginfocenter), you can inform the system metadata about the track that’s playing on the device.
 
 ##### Configure an App for Fast Streaming
 

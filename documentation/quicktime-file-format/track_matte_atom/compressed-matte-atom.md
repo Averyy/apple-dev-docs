@@ -7,7 +7,7 @@ An atom that specifies the image description structure and the matte data associ
 
 #### Overview
 
-See [`Compressed matte atom ('kmat')`](compressed_matte_atom.md).
+See [`Compressed matte atom`](compressed_matte_atom.md).
 
 ## See Also
 

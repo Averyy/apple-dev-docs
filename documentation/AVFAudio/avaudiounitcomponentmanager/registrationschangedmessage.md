@@ -26,9 +26,9 @@ This notification is posted when the system’s audio component registrations ha
 ## Relationships
 
 ### Conforms To
-- [NotificationCenter.AsyncMessage](../Foundation/NotificationCenter/AsyncMessage.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [NotificationCenter.AsyncMessage](../foundation/notificationcenter/asyncmessage.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

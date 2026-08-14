@@ -7,7 +7,6 @@ An array of possible interactions that a person can have with the notification.
 
 **Availability**:
 - iOS 26.5+
-- iPadOS 26.5+
 
 ## Declaration
 

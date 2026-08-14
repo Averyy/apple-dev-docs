@@ -19,7 +19,7 @@ class let touchBarRecordStopTemplateName: String
 
 #### Discussion
 
-![Template image for stop recording](https://docs-assets.developer.apple.com/published/cf1fada678832b326d2fa6bfedda483f/media-2793471%402x.png)
+![Template image for stop recording](/images/com.apple.appkit/media-2793471@2x.png)
 
 Touch Bar template images are exclusively for use in [`NSTouchBarItem`](nstouchbaritem.md) objects and not in onscreen windows.
 

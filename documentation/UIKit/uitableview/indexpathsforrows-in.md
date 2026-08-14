@@ -20,7 +20,7 @@ func indexPathsForRows(in rect: CGRect) -> [IndexPath]?
 
 #### Return Value
 
-An array of [`NSIndexPath`](https://developer.apple.com/documentation/Foundation/NSIndexPath) objects each representing a row and section index identifying a row within `rect`. Returns an empty array if there aren’t any rows to return.
+An array of [`NSIndexPath`](https://developer.apple.com/documentation/foundation/nsindexpath) objects each representing a row and section index identifying a row within `rect`. Returns an empty array if there aren’t any rows to return.
 
 ## Parameters
 

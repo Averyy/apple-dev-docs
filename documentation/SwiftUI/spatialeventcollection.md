@@ -39,9 +39,9 @@ You receive a structure of this type as an input to the [`onChanged(_:)`](gestur
 ## Relationships
 
 ### Conforms To
-- [Collection](../Swift/Collection.md)
-- [Equatable](../Swift/Equatable.md)
-- [Sequence](../Swift/Sequence.md)
+- [Collection](../swift/collection.md)
+- [Equatable](../swift/equatable.md)
+- [Sequence](../swift/sequence.md)
 
 ## See Also
 

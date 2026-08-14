@@ -8,7 +8,7 @@ Displays groups of items along one side of a page and images of a group’s cont
 
 Use the `catalogTemplate` element to display information about groups of like products; for example, a movie catalog that provides categories for dramas, comedies, and all movies. Each group of products is contained in its own section and displayed along the left side of the screen. Images depicting the products contained within a selected group are displayed in the related content area on the right side of the screen. The following figure shows the basic layout for a `catalogTemplate` page. The theme for the catalog template defaults to the system preference.
 
-![Layout diagram showing a banner area at the top, three section areas on the left side, and a related content area on the right.](https://docs-assets.developer.apple.com/published/3b0561b7d68246033f994c5c57b3c948/catalogtemplate-1%402x.png)
+![Layout diagram showing a banner area at the top, three section areas on the left side, and a related content area on the right.](/images/com.apple.TVML/catalogtemplate-1@2x.png)
 
 ##### Main Elements
 
@@ -125,7 +125,7 @@ The following listing shows the TVML for a `catalogTemplate` example. The exampl
 
 The following figure shows the output for the above example:
 
-![Screenshot showing several movie posters on the right and a list of movie categories on the left.](https://docs-assets.developer.apple.com/published/c65085b7852b69f01e7b241b3a1d7f53/catalogtemplate-2%402x.png)
+![Screenshot showing several movie posters on the right and a list of movie categories on the left.](/images/com.apple.TVML/catalogtemplate-2@2x.png)
 
 ## Topics
 

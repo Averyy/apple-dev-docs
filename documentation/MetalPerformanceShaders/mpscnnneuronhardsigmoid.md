@@ -23,7 +23,7 @@ class MPSCNNNeuronHardSigmoid
 
 For each pixel in an image, the filter applies the following function:
 
-![f(x) = clamp((a * x) + b, 0, 1)](https://docs-assets.developer.apple.com/published/4205d99219acb5a3f88a4bb486e7de2b/media-2903540%402x.png)
+![f(x) = clamp((a * x) + b, 0, 1)](/images/com.apple.metalperformanceshaders/media-2903540@2x.png)
 
 ## Topics
 
@@ -36,15 +36,15 @@ For each pixel in an image, the filter applies the following function:
 ### Inherits From
 - [MPSCNNNeuron](mpscnnneuron.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCoding](../Foundation/NSCoding.md)
-- [NSCopying](../Foundation/NSCopying.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [NSSecureCoding](../Foundation/NSSecureCoding.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCoding](../foundation/nscoding.md)
+- [NSCopying](../foundation/nscopying.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSSecureCoding](../foundation/nssecurecoding.md)
 
 ## See Also
 

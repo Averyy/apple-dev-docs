@@ -31,11 +31,11 @@ The mod transition filter uses the following properties:
 
 - **`inputImage`**: The starting image with the type [`CIImage`](ciimage.md).
 - **`targetImage`**: The ending image with the type [`CIImage`](ciimage.md).
-- **`center`**: A [`CGPoint`](https://developer.apple.com/documentation/CoreFoundation/CGPoint) representing the center of the image.
-- **`angle`**: A `float` representing the angle of the effect as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
-- **`radius`**: A `float` representing the size of the area of effect as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
-- **`compression`**: A `float` representing the amount of stretching applied to the mod hole pattern as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
-- **`time`**: A `float` representing the parametric time of the transition from start (at time 0) to end (at time 1) as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+- **`center`**: A [`CGPoint`](https://developer.apple.com/documentation/corefoundation/cgpoint) representing the center of the image.
+- **`angle`**: A `float` representing the angle of the effect as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
+- **`radius`**: A `float` representing the size of the area of effect as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
+- **`compression`**: A `float` representing the amount of stretching applied to the mod hole pattern as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
+- **`time`**: A `float` representing the parametric time of the transition from start (at time 0) to end (at time 1) as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
 
 The following code creates a filter that transitions from the input image to the target image by creating a series of irregular shaped holes.
 
@@ -53,7 +53,7 @@ func mod(inputImage: CIImage, targetImage: CIImage) -> CIImage {
 }
 ```
 
-![Three photographs. In the photo on the left, there are multiple small purple flowers photographed close up with good lighting, and the background has a slight blur. In the photograph on the right is a tall building with two trees directly in front of the building. In the center photograph, a mod transition filter is applied, resulting in a still photo of the moving transition. The left photograph is overlaid on the photo on the right while transitioning by a series of irregular circles that spread to reveal the city photograph.](https://docs-assets.developer.apple.com/published/498ace3776691dba2816238b2c43a202/media-3616428%402x.png)
+![Three photographs. In the photo on the left, there are multiple small purple flowers photographed close up with good lighting, and the background has a slight blur. In the photograph on the right is a tall building with two trees directly in front of the building. In the center photograph, a mod transition filter is applied, resulting in a still photo of the moving transition. The left photograph is overlaid on the photo on the right while transitioning by a series of irregular circles that spread to reveal the city photograph.](/images/com.apple.coreimage/media-3616428@2x.png)
 
 ## See Also
 

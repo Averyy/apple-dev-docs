@@ -32,8 +32,8 @@ The checkerboard generator filter uses the following properties:
 - **`center`**: A `vector` representing the center of the image as a [`CIVector`](civector.md).
 - **`color0`**: A [`CIColor`](cicolor.md) representing the first color of the pattern.
 - **`color1`**: A [`CIColor`](cicolor.md) representing the second color of the pattern.
-- **`sharpness`**: A `float` representing the sharpness of the pattern as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
-- **`width`**: A `float` representing the width of the checkerboard squares as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+- **`sharpness`**: A `float` representing the sharpness of the pattern as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
+- **`width`**: A `float` representing the width of the checkerboard squares as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
 
 The following code creates a filter that generates a black-and-white checkered pattern:
 
@@ -50,7 +50,7 @@ func checkerBoard() -> CIImage {
 }
 ```
 
-![An image of small black-and-white squares repeating, creating a checkerboard pattern.](https://docs-assets.developer.apple.com/published/6e56114180eefe4344ae741d1cebbb2a/media-3590970%402x.png)
+![An image of small black-and-white squares repeating, creating a checkerboard pattern.](/images/com.apple.coreimage/media-3590970@2x.png)
 
 ## See Also
 

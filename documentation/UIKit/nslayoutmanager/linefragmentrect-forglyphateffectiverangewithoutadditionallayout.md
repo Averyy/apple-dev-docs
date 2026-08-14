@@ -32,7 +32,7 @@ Overriding this method is not recommended. If the line fragment rectangle needs 
 
 - `glyphIndex`: The glyph for which to return the line fragment rectangle.
 - `effectiveGlyphRange`: If not `NULL`, on output, the range for all glyphs in the line fragment.
-- `flag`: If [`true`](https://developer.apple.com/documentation/Swift/true), glyph generation and layout are not performed, so this option should not be used unless layout is known to be complete for the range in question, or unless noncontiguous layout is enabled; if [`false`](https://developer.apple.com/documentation/Swift/false), both are performed as needed.
+- `flag`: If [`true`](https://developer.apple.com/documentation/swift/true), glyph generation and layout are not performed, so this option should not be used unless layout is known to be complete for the range in question, or unless noncontiguous layout is enabled; if [`false`](https://developer.apple.com/documentation/swift/false), both are performed as needed.
 
 ## See Also
 

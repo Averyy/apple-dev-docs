@@ -22,7 +22,7 @@ class SCNCapsule
 
 #### Overview
 
-![None](https://docs-assets.developer.apple.com/published/90b8dce3e43df2a5cac61f9bbb933d7a/media-2929808%402x.png)
+![None](/images/com.apple.scenekit/media-2929808@2x.png)
 
 Define the size of the two hemispheres forming the ends of a capsule with the [`capRadius`](scncapsule/capradius.md) property. Because the cylindrical body of the capsule stretches between the its two hemispherical ends, its circular cross section in the x- and z-axis dimensions has the same radius. Define the capsule’s extent in the z-axis dimension of its local coordinate space with the [`height`](scncapsule/height.md) property. To change the orientation of a capsule, adjust the [`transform`](scnnode/transform.md) property of the node containing the capsule geometry.
 
@@ -51,15 +51,15 @@ Control the level of detail with the [`heightSegmentCount`](scncapsule/heightseg
 ### Inherits From
 - [SCNGeometry](scngeometry.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCoding](../Foundation/NSCoding.md)
-- [NSCopying](../Foundation/NSCopying.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [NSSecureCoding](../Foundation/NSSecureCoding.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCoding](../foundation/nscoding.md)
+- [NSCopying](../foundation/nscopying.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSSecureCoding](../foundation/nssecurecoding.md)
 - [SCNAnimatable](scnanimatable.md)
 - [SCNBoundingVolume](scnboundingvolume.md)
 - [SCNShadable](scnshadable.md)

@@ -21,7 +21,7 @@ class UIMotionEffectGroup
 
 #### Overview
 
-This class behaves similarly to the [`CAAnimationGroup`](https://developer.apple.com/documentation/QuartzCore/CAAnimationGroup) class in Core Animation. The key paths and values returned by each motion effect object are applied simultaneously and with the same timing. Because [`UIMotionEffectGroup`](uimotioneffectgroup.md) is a subclass of [`UIMotionEffect`](uimotioneffect.md), you can treat it like a single motion effect in your code. After setting a value for the [`motionEffects`](uimotioneffectgroup/motioneffects.md) property, add the group object to one or more of your views.
+This class behaves similarly to the [`CAAnimationGroup`](https://developer.apple.com/documentation/quartzcore/caanimationgroup) class in Core Animation. The key paths and values returned by each motion effect object are applied simultaneously and with the same timing. Because [`UIMotionEffectGroup`](uimotioneffectgroup.md) is a subclass of [`UIMotionEffect`](uimotioneffect.md), you can treat it like a single motion effect in your code. After setting a value for the [`motionEffects`](uimotioneffectgroup/motioneffects.md) property, add the group object to one or more of your views.
 
 ## Topics
 
@@ -34,16 +34,16 @@ This class behaves similarly to the [`CAAnimationGroup`](https://developer.apple
 ### Inherits From
 - [UIMotionEffect](uimotioneffect.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCoding](../Foundation/NSCoding.md)
-- [NSCopying](../Foundation/NSCopying.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCoding](../foundation/nscoding.md)
+- [NSCopying](../foundation/nscopying.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

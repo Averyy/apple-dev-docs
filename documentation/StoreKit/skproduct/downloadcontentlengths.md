@@ -22,7 +22,7 @@ var downloadContentLengths: [NSNumber] { get }
 
 #### Discussion
 
-The array holds [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) objects, each of which holds a `long long` value that is the size of one of the downloadable files (in bytes).
+The array holds [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) objects, each of which holds a `long long` value that is the size of one of the downloadable files (in bytes).
 
 ## See Also
 

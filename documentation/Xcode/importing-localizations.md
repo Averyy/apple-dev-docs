@@ -14,7 +14,7 @@ In the Project navigator, select the project, then choose Product > Import Local
 
 In the sheet that appears, review the warnings and errors. In the left column, click the Issues View button in the toolbar, then select a message that appears below. In the comparison editor on the right, the imported catalog version of the file appears on the left and the current project file appears on the right.
 
-![Screenshot of an import localization sheet where you review changes and errors.](https://docs-assets.developer.apple.com/published/8efcb565b78fd33c9aa7a05aeeceb1ba/importing-localizations-1%402x.png)
+![Screenshot of an import localization sheet where you review changes and errors.](/images/com.apple.Xcode/importing-localizations-1@2x.png)
 
 To review all the changes, click the File View button in the toolbar, and select a file in the navigator below. When you’re ready to import the files, click Import. Xcode updates the strings and `.stringsdict` files from the localized versions in the catalog. Xcode also updates any localizable resources and assets in an asset catalog.
 

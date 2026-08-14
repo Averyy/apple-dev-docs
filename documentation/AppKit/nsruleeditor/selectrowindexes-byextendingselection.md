@@ -17,7 +17,7 @@ func selectRowIndexes(_ indexes: IndexSet, byExtendingSelection extend: Bool)
 ## Parameters
 
 - `indexes`: The indexes of rows in the receiver to select. > ❗ **Important**:  Raises an `NSRangeException` if any index in `rowIndexes` is less than `0` or greater than or equal to the number of rows.
-- `extend`: If [`false`](https://developer.apple.com/documentation/Swift/false), the selected rows are specified by `indexes`. If [`true`](https://developer.apple.com/documentation/Swift/true), the rows indicated by `indexes` are added to the collection of already selected rows, providing multiple selection.
+- `extend`: If [`false`](https://developer.apple.com/documentation/swift/false), the selected rows are specified by `indexes`. If [`true`](https://developer.apple.com/documentation/swift/true), the rows indicated by `indexes` are added to the collection of already selected rows, providing multiple selection.
 
 ## See Also
 

@@ -18,7 +18,7 @@ class let didExposeNotification: NSNotification.Name
 
 The system posts this notification when a window moves in front of other windows or when other windows move from in front of it, exposing part of its content.
 
-The notification object is the `NSWindow` object that has exposes its content. In the notification’s `userInfo` dictionary, the key `NSExposedRect` specifies an [`NSValue`](https://developer.apple.com/documentation/Foundation/NSValue) object that contains the rectangle the window exposed.
+The notification object is the `NSWindow` object that has exposes its content. In the notification’s `userInfo` dictionary, the key `NSExposedRect` specifies an [`NSValue`](https://developer.apple.com/documentation/foundation/nsvalue) object that contains the rectangle the window exposed.
 
 To observe this notification using Swift concurrency, use [`NSWindow.DidExposeMessage`](nswindow/didexposemessage.md).
 

@@ -32,7 +32,7 @@ If the current font can encode the string range, the function retains and return
 
 - `currentFont`: The current font that contains a valid cascade list.
 - `string`: A Unicode string containing characters that can’t be encoded by the current font.
-- `range`: A [`CFRange`](https://developer.apple.com/documentation/CoreFoundation/CFRange) structure specifying the range of the string to map.
+- `range`: A [`CFRange`](https://developer.apple.com/documentation/corefoundation/cfrange) structure specifying the range of the string to map.
 
 ## See Also
 

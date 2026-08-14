@@ -20,7 +20,7 @@ let kCGPDFContextEncryptionKeyLength: CFString
 
 #### Discussion
 
-The encryption key length in bits; see Table 3.18 “Entries  common to all encryption dictionaries”, PDF Reference: Adobe PDF version 1.5 (4th ed.) for more information. Optional; if present, the value of this key  must be a [`CFNumber`](https://developer.apple.com/documentation/CoreFoundation/CFNumber) object with value which is a multiple of 8 between 40 and  128, inclusive. If this key is absent or invalid, the encryption key  length defaults to 40 bits.
+The encryption key length in bits; see Table 3.18 “Entries  common to all encryption dictionaries”, PDF Reference: Adobe PDF version 1.5 (4th ed.) for more information. Optional; if present, the value of this key  must be a [`CFNumber`](https://developer.apple.com/documentation/corefoundation/cfnumber) object with value which is a multiple of 8 between 40 and  128, inclusive. If this key is absent or invalid, the encryption key  length defaults to 40 bits.
 
 ## See Also
 

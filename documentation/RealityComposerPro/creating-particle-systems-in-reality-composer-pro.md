@@ -23,7 +23,7 @@ Control-click World in the Reality Composer Pro Hierarchy, then choose **Add Chi
 
 > **Note**: You can start typing “particle” in the search box to quickly find the Particle Emitter component.
 
-![A screenshot of Reality Composer Pro's Add Particle Emitter menu.](https://docs-assets.developer.apple.com/published/49a4187df931025d43addd7e18224ea4/ParticleEmitter%402x.png)
+![A screenshot of Reality Composer Pro's Add Particle Emitter menu.](/images/RealityComposerPro/ParticleEmitter@2x.png)
 
 #### Configure the Emitter and Main Particles
 
@@ -46,7 +46,7 @@ In the Inspector, click **Particles** and configure the following properties:
 
 Watch how your changes affect the particle emitter and emitted particles, then configure the Secondary Particles.
 
-![A screenshot of Reality Composer Pro sample entity emitting particles.](https://docs-assets.developer.apple.com/published/50b9c3c22ed67feae4a75716c33e3792/ParticleEmitter2%402x.png)
+![A screenshot of Reality Composer Pro sample entity emitting particles.](/images/RealityComposerPro/ParticleEmitter2@2x.png)
 
 #### Configure Secondary Particles
 
@@ -57,13 +57,13 @@ If you stopped the simulation, select **Simulate** above the Workspace and then 
 - **Start Color A** - Click the color and use the sliders to change to any color you like. Try green.
 - **End Color A** - Change to any color you like. Try purple.
 
-![A screenshot of Reality Composer Pro sample entity emitting particles.](https://docs-assets.developer.apple.com/published/8c4cd5aa0f4d97400142ab71db759eb7/ParticleEmitter3%402x.png)
+![A screenshot of Reality Composer Pro sample entity emitting particles.](/images/RealityComposerPro/ParticleEmitter3@2x.png)
 
 The sphere emits streams of particles that change color, beginning with the start color and changing to the end color over its lifetime. When the main particle expires, it emits the secondary particles. The secondary particle goes from its start color to its end color over its lifetime.
 
 #### Explore Additional Properties
 
-The following descriptions cover some of the more common particle emitter and particle properties you can experiment with. For a complete description of all properties, see [`ParticleEmitterComponent`](https://developer.apple.com/documentation/RealityKit/ParticleEmitterComponent) and [`ParticleEmitterComponent.ParticleEmitter`](https://developer.apple.com/documentation/RealityKit/ParticleEmitterComponent/ParticleEmitter).
+The following descriptions cover some of the more common particle emitter and particle properties you can experiment with. For a complete description of all properties, see [`ParticleEmitterComponent`](https://developer.apple.com/documentation/realitykit/particleemittercomponent) and [`ParticleEmitterComponent.ParticleEmitter`](https://developer.apple.com/documentation/realitykit/particleemittercomponent/particleemitter).
 
 #### Review Emitter Properties
 

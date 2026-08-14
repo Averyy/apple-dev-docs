@@ -29,7 +29,7 @@ protocol SpatialPreviewSession : AnyObject, Observable
 ## Relationships
 
 ### Inherits From
-- [Observable](../Observation/Observable.md)
+- [Observable](../observation/observable.md)
 ### Conforming Types
 - [DocumentPreviewSession](documentpreviewsession.md)
 - [USDPreviewSession](usdpreviewsession.md)

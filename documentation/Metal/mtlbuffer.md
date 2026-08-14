@@ -80,7 +80,7 @@ If you create a buffer with a managed resource storage mode ([`MTLStorageMode.ma
 ### Inherits From
 - [MTLAllocation](mtlallocation.md)
 - [MTLResource](mtlresource.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 
 ---

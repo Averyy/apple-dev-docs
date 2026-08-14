@@ -13,7 +13,7 @@ convenience init(archivableObject object: any NSSecureCoding, uniformTypeIdentif
 
 ## Parameters
 
-- `object`: An encodable object that conforms to [`NSSecureCoding`](https://developer.apple.com/documentation/Foundation/NSSecureCoding).
+- `object`: An encodable object that conforms to [`NSSecureCoding`](https://developer.apple.com/documentation/foundation/nssecurecoding).
 - `identifier`: A custom UTI to represent the encoded data’s type.
 
 ## See Also

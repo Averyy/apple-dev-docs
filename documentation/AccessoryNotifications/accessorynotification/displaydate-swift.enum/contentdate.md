@@ -7,7 +7,6 @@ An option to display a date that includes a specific moment to which the notific
 
 **Availability**:
 - iOS 26.5+
-- iPadOS 26.5+
 
 ## Declaration
 

@@ -24,7 +24,7 @@ final class Notifications
 
 Use the [`notifications(named:object:)`](notificationcenter/notifications(named:object:).md) method to create an instance of this type, then iterate over its elements with the `for`-`await`-`in` syntax.
 
-> 💡 **Tip**:  The [`Notification`](notification.md) type doesn’t conform to [`Sendable`](https://developer.apple.com/documentation/Swift/Sendable), so iterating over this asynchronous sequence produces a compiler warning. You can use a [`map(_:)`](https://developer.apple.com/documentation/Swift/AsyncSequence/map(_:)-1q1k3) or [`compactMap(_:)`](https://developer.apple.com/documentation/Swift/AsyncSequence/compactMap(_:)-gfdq) operator on the sequence to extract sendable properties of the notification and iterate over those instead. See [`notifications(named:object:)`](notificationcenter/notifications(named:object:).md) for an example of this approach.
+> 💡 **Tip**:  The [`Notification`](notification.md) type doesn’t conform to [`Sendable`](https://developer.apple.com/documentation/swift/sendable), so iterating over this asynchronous sequence produces a compiler warning. You can use a [`map(_:)`](https://developer.apple.com/documentation/swift/asyncsequence/map(_:)-1q1k3) or [`compactMap(_:)`](https://developer.apple.com/documentation/swift/asyncsequence/compactmap(_:)-gfdq) operator on the sequence to extract sendable properties of the notification and iterate over those instead. See [`notifications(named:object:)`](notificationcenter/notifications(named:object:).md) for an example of this approach.
 
 ## Topics
 
@@ -40,9 +40,9 @@ Use the [`notifications(named:object:)`](notificationcenter/notifications(named:
 ## Relationships
 
 ### Conforms To
-- [AsyncSequence](../Swift/AsyncSequence.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [AsyncSequence](../swift/asyncsequence.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

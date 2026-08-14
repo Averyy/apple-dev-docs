@@ -16,7 +16,7 @@ timestamp recentSubscriptionStartDate
 
 #### Discussion
 
-For more information about the recent subscription start date, see [`recentSubscriptionStartDate`](https://developer.apple.com/documentation/AppStoreServerAPI/recentSubscriptionStartDate).
+For more information about the recent subscription start date, see [`recentSubscriptionStartDate`](https://developer.apple.com/documentation/appstoreserverapi/recentsubscriptionstartdate).
 
 > ❗ **Important**:  Don’t use the [`recentSubscriptionStartDate`](recentsubscriptionstartdate.md) date to calculate days of paid service. For more information about paid days of service, see [`Net revenue after a year`](https://developer.apple.comhttps://developer.apple.com/app-store/subscriptions/#revenue-after-one-year).
 

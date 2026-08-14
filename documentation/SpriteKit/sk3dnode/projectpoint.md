@@ -28,7 +28,7 @@ The corresponding point in the SpriteKit node’s coordinate system.
 
 The z-coordinate of the returned point describes the depth of the projected point relative to the near and far clipping planes of the viewing frustum (defined by the [`pointOfView`](sk3dnode/pointofview.md) property). Projecting a point on the near clipping plane returns a point whose z-coordinate is `0.0`; projecting a point on the far clipping plane returns a point whose z-coordinate is `1.0`.
 
-The following Swift code illustrates how you might convert the position of a SceneKit node, `sphereNode`, in 3D space to the 2D coordinates of a SpriteKit [`SK3DNode`](sk3dnode.md), `node`. The code assumes that `sphereNode` is the first child node of the SceneKit scene’s [`rootNode`](https://developer.apple.com/documentation/SceneKit/SCNScene/rootNode).
+The following Swift code illustrates how you might convert the position of a SceneKit node, `sphereNode`, in 3D space to the 2D coordinates of a SpriteKit [`SK3DNode`](sk3dnode.md), `node`. The code assumes that `sphereNode` is the first child node of the SceneKit scene’s [`rootNode`](https://developer.apple.com/documentation/scenekit/scnscene/rootnode).
 
 ```swift
 if let sphereNode = node.scnScene?.rootNode.childNodes.first { 

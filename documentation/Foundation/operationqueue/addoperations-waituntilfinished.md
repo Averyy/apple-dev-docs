@@ -24,12 +24,12 @@ func addOperations(_ ops: [Operation], waitUntilFinished wait: Bool)
 
 An operation object can be in at most one operation queue at a time and cannot be added if it is currently executing or finished. This method throws an `NSInvalidArgumentException` exception if any of those error conditions are true for any of the operations in the `ops` parameter.
 
-Once added, the specified `operation` remains in the queue until its [`isFinished`](operation/isfinished.md) method returns [`true`](https://developer.apple.com/documentation/Swift/true).
+Once added, the specified `operation` remains in the queue until its [`isFinished`](operation/isfinished.md) method returns [`true`](https://developer.apple.com/documentation/swift/true).
 
 ## Parameters
 
 - `ops`: The operations to be added to the queue.
-- `wait`: If [`true`](https://developer.apple.com/documentation/Swift/true), the current thread is blocked until all of the specified operations finish executing. If [`false`](https://developer.apple.com/documentation/Swift/false), the operations are added to the queue and control returns immediately to the caller.
+- `wait`: If [`true`](https://developer.apple.com/documentation/swift/true), the current thread is blocked until all of the specified operations finish executing. If [`false`](https://developer.apple.com/documentation/swift/false), the operations are added to the queue and control returns immediately to the caller.
 
 ## See Also
 

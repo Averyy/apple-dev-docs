@@ -33,7 +33,7 @@ config.isDiscretionary = true
 config.sessionSendsLaunchEvents = true
 ```
 
-Setting the [`isDiscretionary`](https://developer.apple.com/documentation/Foundation/URLSessionConfiguration/isDiscretionary) property to [`true`](https://developer.apple.com/documentation/Swift/true) tells the system to wait for optimal conditions to perform the transfer, such as when the device is plugged in or connected to Wi-Fi. Setting [`sessionSendsLaunchEvents`](https://developer.apple.com/documentation/Foundation/URLSessionConfiguration/sessionSendsLaunchEvents) to [`true`](https://developer.apple.com/documentation/Swift/true) tells the system to launch your app when the download task completes. This is the default for background configurations.
+Setting the [`isDiscretionary`](https://developer.apple.com/documentation/foundation/urlsessionconfiguration/isdiscretionary) property to [`true`](https://developer.apple.com/documentation/swift/true) tells the system to wait for optimal conditions to perform the transfer, such as when the device is plugged in or connected to Wi-Fi. Setting [`sessionSendsLaunchEvents`](https://developer.apple.com/documentation/foundation/urlsessionconfiguration/sessionsendslaunchevents) to [`true`](https://developer.apple.com/documentation/swift/true) tells the system to launch your app when the download task completes. This is the default for background configurations.
 
 Next, create the session and use the session to schedule a background download task.
 
@@ -46,11 +46,11 @@ let backgroundTask = urlSession.downloadTask(with: url)
 backgroundTask.earliestBeginDate = Date().addingTimeInterval(15 * 60)
 ```
 
-Be sure to assign a [`URLSessionDownloadDelegate`](https://developer.apple.com/documentation/Foundation/URLSessionDownloadDelegate) to the session. Setting the `delegateQueue` to `nil` causes the system to call the delegate methods on an anonymous background thread. Also, use the tasks’s [`earliestBeginDate`](https://developer.apple.com/documentation/Foundation/URLSessionTask/earliestBeginDate) property to schedule the download for the future. If your app’s data isn’t currently up to date, you can schedule the initial download to begin immediately, but subsequent updates should be scheduled for a future date.
+Be sure to assign a [`URLSessionDownloadDelegate`](https://developer.apple.com/documentation/foundation/urlsessiondownloaddelegate) to the session. Setting the `delegateQueue` to `nil` causes the system to call the delegate methods on an anonymous background thread. Also, use the tasks’s [`earliestBeginDate`](https://developer.apple.com/documentation/foundation/urlsessiontask/earliestbegindate) property to schedule the download for the future. If your app’s data isn’t currently up to date, you can schedule the initial download to begin immediately, but subsequent updates should be scheduled for a future date.
 
 The system limits the number of background download tasks you can perform; however, if you have an active complication on the watch face, you can safely schedule four download tasks an hour.
 
-Finally, call [`resume()`](https://developer.apple.com/documentation/Foundation/URLSessionTask/resume()) to schedule the download task.
+Finally, call [`resume()`](https://developer.apple.com/documentation/foundation/urlsessiontask/resume()) to schedule the download task.
 
 ```swift
 backgroundTask.resume()
@@ -58,31 +58,31 @@ backgroundTask.resume()
 
 The download continues, even if your app isn’t active. When the download completes, the system launches your app, if necessary. If your app terminated, you need to reconnect to the URL session to receive the download.
 
-To reconnect, create a new URL session using the same configuration identifier. The system then calls that session delegate’s [`urlSession(_:downloadTask:didFinishDownloadingTo:)`](https://developer.apple.com/documentation/Foundation/URLSessionDownloadDelegate/urlSession(_:downloadTask:didFinishDownloadingTo:)) method.
+To reconnect, create a new URL session using the same configuration identifier. The system then calls that session delegate’s [`urlSession(_:downloadTask:didFinishDownloadingTo:)`](https://developer.apple.com/documentation/foundation/urlsessiondownloaddelegate/urlsession(_:downloadtask:didfinishdownloadingto:)) method.
 
-If your app is running in the background, the system also calls your [`handle(_:)`](https://developer.apple.com/documentation/WatchKit/WKExtensionDelegate/handle(_:)-92ulv) method, passing a [`WKURLSessionRefreshBackgroundTask`](https://developer.apple.com/documentation/WatchKit/WKURLSessionRefreshBackgroundTask) object.  It gives your app a maximum of 4 seconds of CPU time which you can use over 15 seconds of wall time. In general, your app should request the next background download task before it begins processing the downloaded data—just in case those tasks exceed the time limits.
+If your app is running in the background, the system also calls your [`handle(_:)`](https://developer.apple.com/documentation/watchkit/wkextensiondelegate/handle(_:)-92ulv) method, passing a [`WKURLSessionRefreshBackgroundTask`](https://developer.apple.com/documentation/watchkit/wkurlsessionrefreshbackgroundtask) object.  It gives your app a maximum of 4 seconds of CPU time which you can use over 15 seconds of wall time. In general, your app should request the next background download task before it begins processing the downloaded data—just in case those tasks exceed the time limits.
 
-Use the download delegate method to access the data and update your app and complication, then call the background task’s [`setTaskCompletedWithSnapshot(_:)`](https://developer.apple.com/documentation/WatchKit/WKRefreshBackgroundTask/setTaskCompletedWithSnapshot(_:)) method and pass true to update your app’s snapshot.
+Use the download delegate method to access the data and update your app and complication, then call the background task’s [`setTaskCompletedWithSnapshot(_:)`](https://developer.apple.com/documentation/watchkit/wkrefreshbackgroundtask/settaskcompletedwithsnapshot(_:)) method and pass true to update your app’s snapshot.
 
 The system calls the following delegate methods in this order:
 
-1. If your app is running in the background, the system calls your extension delegate’s [`handle(_:)`](https://developer.apple.com/documentation/WatchKit/WKExtensionDelegate/handle(_:)-92ulv) method. Be sure to save the completion handler.
-2. If the download succeeds, the system calls your session delegate’s [`urlSession(_:downloadTask:didFinishDownloadingTo:)`](https://developer.apple.com/documentation/Foundation/URLSessionDownloadDelegate/urlSession(_:downloadTask:didFinishDownloadingTo:)) method. Process the downloaded data here.
-3. Regardless, the system calls your URL session delegate’s [`urlSession(_:task:didCompleteWithError:)`](https://developer.apple.com/documentation/Foundation/URLSessionTaskDelegate/urlSession(_:task:didCompleteWithError:)) method. If you are running in the background, be sure to call your background task’s completion handler here.
+1. If your app is running in the background, the system calls your extension delegate’s [`handle(_:)`](https://developer.apple.com/documentation/watchkit/wkextensiondelegate/handle(_:)-92ulv) method. Be sure to save the completion handler.
+2. If the download succeeds, the system calls your session delegate’s [`urlSession(_:downloadTask:didFinishDownloadingTo:)`](https://developer.apple.com/documentation/foundation/urlsessiondownloaddelegate/urlsession(_:downloadtask:didfinishdownloadingto:)) method. Process the downloaded data here.
+3. Regardless, the system calls your URL session delegate’s [`urlSession(_:task:didCompleteWithError:)`](https://developer.apple.com/documentation/foundation/urlsessiontaskdelegate/urlsession(_:task:didcompletewitherror:)) method. If you are running in the background, be sure to call your background task’s completion handler here.
 
-> **Note**:  The system calls the URL session delegate method whether your app is running in the background or the foreground; however, the [`handle(_:)`](https://developer.apple.com/documentation/WatchKit/WKExtensionDelegate/handle(_:)-92ulv) method is only called when your app is running in the background.
+> **Note**:  The system calls the URL session delegate method whether your app is running in the background or the foreground; however, the [`handle(_:)`](https://developer.apple.com/documentation/watchkit/wkextensiondelegate/handle(_:)-92ulv) method is only called when your app is running in the background.
 
-For more information, see [`Downloading files in the background`](https://developer.apple.com/documentation/Foundation/downloading-files-in-the-background) and [`WKURLSessionRefreshBackgroundTask`](https://developer.apple.com/documentation/WatchKit/WKURLSessionRefreshBackgroundTask).
+For more information, see [`Downloading files in the background`](https://developer.apple.com/documentation/foundation/downloading-files-in-the-background) and [`WKURLSessionRefreshBackgroundTask`](https://developer.apple.com/documentation/watchkit/wkurlsessionrefreshbackgroundtask).
 
 ##### Use Background Observer Queries
 
-In watchOS 8 and later, HealthKit supports background observer queries. Background observer queries share a budget with [`WKApplicationRefreshBackgroundTask`](https://developer.apple.com/documentation/WatchKit/WKApplicationRefreshBackgroundTask) tasks. Your app can receive four updates (or background app refresh tasks) an hour, as long as it has a complication on the active watch face.
+In watchOS 8 and later, HealthKit supports background observer queries. Background observer queries share a budget with [`WKApplicationRefreshBackgroundTask`](https://developer.apple.com/documentation/watchkit/wkapplicationrefreshbackgroundtask) tasks. Your app can receive four updates (or background app refresh tasks) an hour, as long as it has a complication on the active watch face.
 
 Start by enabling the HealthKit capability’s background delivery.
 
-![A screenshot of the HealthKit capability with Background Delivery enabled.](https://docs-assets.developer.apple.com/published/06d50f729dbf07ecdfa635f3d3fcb557/media-3897474%402x.png)
+![A screenshot of the HealthKit capability with Background Delivery enabled.](/images/com.apple.clockkit/media-3897474@2x.png)
 
-Next, register to recieve updates in the background by calling the HealthKit store’s [`enableBackgroundDelivery(for:frequency:withCompletion:)`](https://developer.apple.com/documentation/HealthKit/HKHealthStore/enableBackgroundDelivery(for:frequency:withCompletion:)) method.
+Next, register to recieve updates in the background by calling the HealthKit store’s [`enableBackgroundDelivery(for:frequency:withCompletion:)`](https://developer.apple.com/documentation/healthkit/hkhealthstore/enablebackgrounddelivery(for:frequency:withcompletion:)) method.
 
 ```swift
 // Create the caffeine type.
@@ -118,29 +118,29 @@ if let query = backgroundObserver {
 
 When you have an active observer query, HealthKit wakes your app when the store receives updates to samples matching the query. HealthKit notifies your app at most once per time period defined by the frequency you specified when registering.
 
-To ensure that your app recieves updates, create and execute the observer query soon after your app launches. For example, in your extension delegate’s [`applicationDidFinishLaunching()`](https://developer.apple.com/documentation/WatchKit/WKExtensionDelegate/applicationDidFinishLaunching()) method. For more information, see [`Executing Observer Queries`](https://developer.apple.com/documentation/HealthKit/executing-observer-queries).
+To ensure that your app recieves updates, create and execute the observer query soon after your app launches. For example, in your extension delegate’s [`applicationDidFinishLaunching()`](https://developer.apple.com/documentation/watchkit/wkextensiondelegate/applicationdidfinishlaunching()) method. For more information, see [`Executing Observer Queries`](https://developer.apple.com/documentation/healthkit/executing-observer-queries).
 
 ##### Schedule Background Tasks
 
-You can schedule background tasks to update your watchOS content periodically. This strategy works best when your data changes at predictable times. Call your extension’s [`scheduleBackgroundRefresh(withPreferredDate:userInfo:scheduledCompletion:)`](https://developer.apple.com/documentation/WatchKit/WKExtension/scheduleBackgroundRefresh(withPreferredDate:userInfo:scheduledCompletion:)) method to trigger a [`WKApplicationRefreshBackgroundTask`](https://developer.apple.com/documentation/WatchKit/WKApplicationRefreshBackgroundTask), in which the system launches your app in the background and calls your extension delegate’s [`handle(_:)`](https://developer.apple.com/documentation/WatchKit/WKExtensionDelegate/handle(_:)-92ulv) method.
+You can schedule background tasks to update your watchOS content periodically. This strategy works best when your data changes at predictable times. Call your extension’s [`scheduleBackgroundRefresh(withPreferredDate:userInfo:scheduledCompletion:)`](https://developer.apple.com/documentation/watchkit/wkextension/schedulebackgroundrefresh(withpreferreddate:userinfo:scheduledcompletion:)) method to trigger a [`WKApplicationRefreshBackgroundTask`](https://developer.apple.com/documentation/watchkit/wkapplicationrefreshbackgroundtask), in which the system launches your app in the background and calls your extension delegate’s [`handle(_:)`](https://developer.apple.com/documentation/watchkit/wkextensiondelegate/handle(_:)-92ulv) method.
 
-During the background task, you can gather updated data from the device. For example, you could perform a HealthKit query for new samples, or check the user’s current location using Core Location. When you’re done, call the background task’s [`setTaskCompletedWithSnapshot(_:)`](https://developer.apple.com/documentation/WatchKit/WKRefreshBackgroundTask/setTaskCompletedWithSnapshot(_:)) method and pass true to update your app’s snapshot.
+During the background task, you can gather updated data from the device. For example, you could perform a HealthKit query for new samples, or check the user’s current location using Core Location. When you’re done, call the background task’s [`setTaskCompletedWithSnapshot(_:)`](https://developer.apple.com/documentation/watchkit/wkrefreshbackgroundtask/settaskcompletedwithsnapshot(_:)) method and pass true to update your app’s snapshot.
 
 The system carefully budgets background refresh tasks. You can schedule only one refresh task at a time. If you have a complication on the active watch face, you can safely schedule four refresh tasks a hour.
 
-Also, when the system call your extension delegate’s [`handle(_:)`](https://developer.apple.com/documentation/WatchKit/WKExtensionDelegate/handle(_:)-92ulv) method, it gives your app a maximum of 4 seconds of CPU processing time, which you can use over 15 seconds of elapsed real time. In general, set up your requests for the next background task before you begin requesting and processing data—just in case those tasks exceed the time limits.
+Also, when the system call your extension delegate’s [`handle(_:)`](https://developer.apple.com/documentation/watchkit/wkextensiondelegate/handle(_:)-92ulv) method, it gives your app a maximum of 4 seconds of CPU processing time, which you can use over 15 seconds of elapsed real time. In general, set up your requests for the next background task before you begin requesting and processing data—just in case those tasks exceed the time limits.
 
 ##### Send Push Notifications
 
 Push notifications let you process data on your server, and update the watch as soon as the data is available. This update method allows you to perform complex, time-consuming data-gathering tasks that wouldn’t otherwise be practical on Apple Watch. It also lets you send an update as soon as the data is available, instead of waiting for a periodic refresh task.
 
-To update your watchOS content from your server, send a [`complication`](https://developer.apple.com/documentation/PushKit/PKPushType/complication) push notification. For watchOS 6 and later, send the push notification directly to Apple Watch. For watchOS 5 and earlier, you must send it to the iOS companion instead. The system limits you to 50 push notifications per day. For more information on setting up and sending push notifications, see [`PushKit`](https://developer.apple.com/documentation/PushKit).
+To update your watchOS content from your server, send a [`complication`](https://developer.apple.com/documentation/pushkit/pkpushtype/complication) push notification. For watchOS 6 and later, send the push notification directly to Apple Watch. For watchOS 5 and earlier, you must send it to the iOS companion instead. The system limits you to 50 push notifications per day. For more information on setting up and sending push notifications, see [`PushKit`](https://developer.apple.com/documentation/pushkit).
 
 ##### Transfer Data From Ios
 
 Alternatively, if your watchOS app has a companion iOS app, you can gather the data in the iOS app, and then transmit that data to Apple Watch. However, this update strategy tethers the watch to the companion iPhone. You can’t update the complication if the user ventures out without their phone, a circumstance that can result in out-of-date or inaccurate complications. Also, like push notifications, the system limits you to 50 complication transfers a day.
 
-For more information on sending updates from the phone, see the [`Watch Connectivity`](https://developer.apple.com/documentation/WatchConnectivity) framework’s [`transferCurrentComplicationUserInfo(_:)`](https://developer.apple.com/documentation/WatchConnectivity/WCSession/transferCurrentComplicationUserInfo(_:)) method.
+For more information on sending updates from the phone, see the [`Watch Connectivity`](https://developer.apple.com/documentation/watchconnectivity) framework’s [`transferCurrentComplicationUserInfo(_:)`](https://developer.apple.com/documentation/watchconnectivity/wcsession/transfercurrentcomplicationuserinfo(_:)) method.
 
 ## See Also
 

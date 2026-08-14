@@ -20,7 +20,9 @@ For additional information see [`Key Value Coding Exception Names`](key-value-co
 
 - [Key Value Coding Exception Names](key-value-coding-exception-names.md)
   This constant defines the name of an exception raised when a key value coding operation fails.
-- [var NSKeyValueValidationError: Int](../Foundation/NSKeyValueValidationError-swift.var.md)
+- [struct NSKeyValueOperator](../foundation/nskeyvalueoperator.md)
+  These constants define the available array operators. See [`Using Collection Operators`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/KeyValueCoding/CollectionOperators.html) for more information.
+- [var NSKeyValueValidationError: Int](../foundation/nskeyvaluevalidationerror-swift.var.md)
   A key-value coding validation error.
 
 

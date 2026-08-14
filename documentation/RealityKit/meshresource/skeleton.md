@@ -54,7 +54,7 @@ When unanimated, the pose of a skinned model is defined by the rest pose of each
 ## Relationships
 
 ### Conforms To
-- [Identifiable](../Swift/Identifiable.md)
+- [Identifiable](../swift/identifiable.md)
 
 ## See Also
 

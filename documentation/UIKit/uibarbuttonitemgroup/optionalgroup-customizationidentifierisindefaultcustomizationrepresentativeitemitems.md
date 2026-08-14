@@ -21,7 +21,7 @@ Creates an optional group that a person can move, add to, or remove from the nav
 ## Parameters
 
 - `customizationIdentifier`: A unique string to identify the group for navigation bar layout customization.
-- `isInDefaultCustomization`: A Boolean that determines whether to place the group in the navigation bar by default. Specify [`false`](https://developer.apple.com/documentation/Swift/false) if you want the group to appear in the navigation bar customization popover by default.
+- `isInDefaultCustomization`: A Boolean that determines whether to place the group in the navigation bar by default. Specify [`false`](https://developer.apple.com/documentation/swift/false) if you want the group to appear in the navigation bar customization popover by default.
 - `representativeItem`: The item to display for the group when space is constrained.
 - `items`: The items to include in the group.
 

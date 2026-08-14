@@ -24,7 +24,7 @@ class NSPurgeableData
 
 [`NSPurgeableData`](nspurgeabledata.md) objects inherit their creation methods from their superclass, [`NSMutableData`](nsmutabledata.md) while providing a default implementation of the [`NSDiscardableContent`](nsdiscardablecontent.md) protocol.
 
-All [`NSPurgeableData`](nspurgeabledata.md) objects begin “accessed” to ensure that they are not instantly discarded. The [`beginContentAccess()`](nsdiscardablecontent/begincontentaccess().md) method marks the object’s bytes as “accessed,” thus protecting them from being discarded, and must be called before accessing the object, or else an exception will be raised. This method returns [`true`](https://developer.apple.com/documentation/Swift/true) if the bytes have not been discarded and if they have been successfully marked as “accessed”. Any method that directly or indirectly accesses these bytes or their length when they are not “accessed” will raise an exception. When you are done with the data, call [`endContentAccess()`](nsdiscardablecontent/endcontentaccess().md) to allow them to be discarded in order to quickly free up memory.
+All [`NSPurgeableData`](nspurgeabledata.md) objects begin “accessed” to ensure that they are not instantly discarded. The [`beginContentAccess()`](nsdiscardablecontent/begincontentaccess().md) method marks the object’s bytes as “accessed,” thus protecting them from being discarded, and must be called before accessing the object, or else an exception will be raised. This method returns [`true`](https://developer.apple.com/documentation/swift/true) if the bytes have not been discarded and if they have been successfully marked as “accessed”. Any method that directly or indirectly accesses these bytes or their length when they are not “accessed” will raise an exception. When you are done with the data, call [`endContentAccess()`](nsdiscardablecontent/endcontentaccess().md) to allow them to be discarded in order to quickly free up memory.
 
 You may use these objects by themselves, and do not necessarily have to use them in conjunction with [`NSCache`](nscache.md) to get the purging behavior. The [`NSCache`](nscache.md) class incorporates a caching mechanism with some auto-removal policies to ensure that its memory footprint does not get too large.
 
@@ -35,24 +35,24 @@ You may use these objects by themselves, and do not necessarily have to use them
 ### Inherits From
 - [NSMutableData](nsmutabledata.md)
 ### Conforms To
-- [BidirectionalCollection](../Swift/BidirectionalCollection.md)
-- [CVarArg](../Swift/CVarArg.md)
-- [Collection](../Swift/Collection.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [BidirectionalCollection](../swift/bidirectionalcollection.md)
+- [CVarArg](../swift/cvararg.md)
+- [Collection](../swift/collection.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
 - [DataProtocol](dataprotocol.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
 - [NSCoding](nscoding.md)
 - [NSCopying](nscopying.md)
 - [NSDiscardableContent](nsdiscardablecontent.md)
 - [NSMutableCopying](nsmutablecopying.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 - [NSSecureCoding](nssecurecoding.md)
-- [RandomAccessCollection](../Swift/RandomAccessCollection.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
-- [Sequence](../Swift/Sequence.md)
+- [RandomAccessCollection](../swift/randomaccesscollection.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sequence](../swift/sequence.md)
 
 ## See Also
 

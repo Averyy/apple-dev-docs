@@ -29,12 +29,12 @@ Each data type has two separate permissions, one to read it and one to share it.
 
 Customize the messages displayed on the permissions sheet by setting the following keys:
 
-- [`NSHealthShareUsageDescription`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSHealthShareUsageDescription) customizes the message for reading data.
-- [`NSHealthUpdateUsageDescription`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSHealthUpdateUsageDescription) customizes the message for writing data.
+- [`NSHealthShareUsageDescription`](https://developer.apple.com/documentation/bundleresources/information-property-list/nshealthshareusagedescription) customizes the message for reading data.
+- [`NSHealthUpdateUsageDescription`](https://developer.apple.com/documentation/bundleresources/information-property-list/nshealthupdateusagedescription) customizes the message for writing data.
 
 > ⚠️ **Warning**:  You must set the usage keys, or your app will crash when you request authorization.
 
-For projects created using Xcode 13 or later, set these keys in the Target Properties list on the app’s Info tab. For projects created with Xcode 12 or earlier, set these keys in the apps `Info.plist` file. For more information, see [`Information Property List`](https://developer.apple.com/documentation/BundleResources/Information-Property-List).
+For projects created using Xcode 13 or later, set these keys in the Target Properties list on the app’s Info tab. For projects created with Xcode 12 or earlier, set these keys in the apps `Info.plist` file. For more information, see [`Information Property List`](https://developer.apple.com/documentation/bundleresources/information-property-list).
 
 After users have set the permissions for your app, they can always change them using either the Settings or the Health app. Your app appears in the Health app’s Sources tab, even if the user didn’t allow permission to read or share data.
 
@@ -42,7 +42,7 @@ After users have set the permissions for your app, they can always change them u
 
 - `typesToShare`: A set containing the data types you want to share. This set can contain any concrete subclass of the [`HKSampleType`](hksampletype.md) class (any of the [`HKQuantityType`](hkquantitytype.md), [`HKCategoryType`](hkcategorytype.md), [`HKWorkoutType`](hkworkouttype.md), or [`HKCorrelationType`](hkcorrelationtype.md) classes ). If the user grants permission, your app can create and save these data types to the HealthKit store.
 - `typesToRead`: A set containing the data types you want to read. This set can contain any concrete subclass of the [`HKObjectType`](hkobjecttype.md) class (any of the [`HKCharacteristicType`](hkcharacteristictype.md) , [`HKQuantityType`](hkquantitytype.md), [`HKCategoryType`](hkcategorytype.md), [`HKWorkoutType`](hkworkouttype.md), or [`HKCorrelationType`](hkcorrelationtype.md) classes). If the user grants permission, your app can read these data types from the HealthKit store.
-- `completion`: A block called after the user finishes responding to the request. The system calls this block with the following parameters: - **`success`**: A Boolean value that indicates whether the request succeeded. This value doesn’t indicate whether the user actually granted permission. The parameter is [`false`](https://developer.apple.com/documentation/Swift/false) if an error occurred while processing the request; otherwise, it’s [`true`](https://developer.apple.com/documentation/Swift/true).
+- `completion`: A block called after the user finishes responding to the request. The system calls this block with the following parameters: - **`success`**: A Boolean value that indicates whether the request succeeded. This value doesn’t indicate whether the user actually granted permission. The parameter is [`false`](https://developer.apple.com/documentation/swift/false) if an error occurred while processing the request; otherwise, it’s [`true`](https://developer.apple.com/documentation/swift/true).
 - **`error`**: An error object. If an error occurred, this object contains information about the error; otherwise, it’s set to `nil`.
 
 ## See Also

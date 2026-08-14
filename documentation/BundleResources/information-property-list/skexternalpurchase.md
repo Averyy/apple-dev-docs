@@ -41,7 +41,7 @@ Use valid country codes for the following allowed countries or regions:
 - In the European Union: Austria (`at`), Belgium (`be`), Bulgaria (`bg`), Croatia (`hr`), Cyprus (`cy`), Czechia (`cz`), Denmark (`dk`), Estonia (`ee`), Finland (`fi`), France (`fr`), Germany (`de`), Greece (`gr`), Hungary (`hu`), Ireland (`ie`), Italy (`it`), Latvia (`lv`), Lithuania (`lt`), Luxembourg (`lu`), Malta (`mt`), Netherlands (`nl`), Poland (`pl`), Portugal (`pt`), Romania (`ro`), Slovakia (`sk`), Slovenia (`si`), Spain (`es`), Sweden (`se`)
 - South Korea (`kr`)
 
-For more information, see [`External Purchase`](https://developer.apple.com/documentation/StoreKit/external-purchase).
+For more information, see [`External Purchase`](https://developer.apple.com/documentation/storekit/external-purchase).
 
 ## See Also
 

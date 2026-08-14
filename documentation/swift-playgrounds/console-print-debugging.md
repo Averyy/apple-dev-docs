@@ -61,7 +61,7 @@ var body: some View {
 
 Press the console button in the code editor to show and hide the console. To adjust the size of the console, you can drag to increase or decrease the available space.
 
-![The Swift Playgrounds code editor displaying console output](https://docs-assets.developer.apple.com/published/6c0ce410a209737123227e53771c814a/console%402x.png)
+![The Swift Playgrounds code editor displaying console output](/images/com.apple.Swift-Playgrounds/console@2x.png)
 
 To filter results, tap the filter button and enter a phrase you’d like to filter on. The remaining results filter based upon this input.
 

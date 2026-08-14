@@ -21,7 +21,7 @@ The name of the relationship that is the inverse of the receiver’s relationshi
 
 #### Discussion
 
-`NSObject`’s implementation of `inverseForRelationshipKey:` simply invokes `[[self classDescription] inverseForRelationshipKey:relationshipKey]`.  To make use of the default implementation, you must therefore implement and register a suitable class description—see [`NSClassDescription`](https://developer.apple.com/documentation/Foundation/NSClassDescription).
+`NSObject`’s implementation of `inverseForRelationshipKey:` simply invokes `[[self classDescription] inverseForRelationshipKey:relationshipKey]`.  To make use of the default implementation, you must therefore implement and register a suitable class description—see [`NSClassDescription`](https://developer.apple.com/documentation/foundation/nsclassdescription).
 
 For example, suppose an Employee class has a relationship named `department` to a Department class, and that Department has a relationship called `employees` to Employee. The statement:
 

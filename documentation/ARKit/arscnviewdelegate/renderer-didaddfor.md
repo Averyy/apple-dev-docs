@@ -21,7 +21,7 @@ Depending on the session configuration, ARKit may automatically add anchors to a
 
 You can provide visual content for the anchor by attaching geometry (or other SceneKit features) to this node or by adding child nodes.
 
-Alternatively, you can implement the [`renderer(_:nodeFor:)`](arscnviewdelegate/renderer(_:nodefor:).md) method to create your own node (or instance of an [`SCNNode`](https://developer.apple.com/documentation/SceneKit/SCNNode) subclass) for an anchor.
+Alternatively, you can implement the [`renderer(_:nodeFor:)`](arscnviewdelegate/renderer(_:nodefor:).md) method to create your own node (or instance of an [`SCNNode`](https://developer.apple.com/documentation/scenekit/scnnode) subclass) for an anchor.
 
 ## Parameters
 

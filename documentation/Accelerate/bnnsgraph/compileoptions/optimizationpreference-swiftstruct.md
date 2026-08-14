@@ -35,7 +35,7 @@ Use the constants that this structure defines to specify whether the BNNS librar
 ## Relationships
 
 ### Conforms To
-- [Equatable](../Swift/Equatable.md)
+- [Equatable](../swift/equatable.md)
 
 
 ---

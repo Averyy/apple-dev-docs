@@ -11,8 +11,8 @@ Users can buy promoted In-App Purchases from the App Store, but you need to test
 | **Protocol** | `itms-services://` |
 | --- | --- |
 | **Parameter** `action` | `purchaseIntent` |
-| **Parameter** `bundleId` | The bundle ID for your app; for example: ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) `com.example.app` |
-| **Parameter** `productIdentifier` | The In-App Purchase product ID you want to test; for example: ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) `com.example.product` |
+| **Parameter** `bundleId` | The bundle ID for your app; for example: ![None](/images/com.apple.storekit/spacer.png) `com.example.app` |
+| **Parameter** `productIdentifier` | The In-App Purchase product ID you want to test; for example: ![None](/images/com.apple.storekit/spacer.png) `com.example.product` |
 
 The resulting URL looks like this:
 

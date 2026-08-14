@@ -24,7 +24,7 @@ You can dock a video player by following the steps below.
 
 In Xcode, choose File > New > Project, select visionOS and Immersive Environment App in the New Project dialog, and click Next.
 
-![An Xcode screenshot of the New Project dialog with the visionOS and Immersive Environment App options selected.](https://docs-assets.developer.apple.com/published/89ee513d474328ebe4b6ffea043a3b1d/docking-xcode%402x.png)
+![An Xcode screenshot of the New Project dialog with the visionOS and Immersive Environment App options selected.](/images/com.apple.RealityKit/docking-xcode@2x.png)
 
 Enter your product name and organization identifier, and choose between a progressive and full immersive space. You can change the immersive setting later.
 
@@ -32,7 +32,7 @@ To continue, include a video in the bundle or provide a URL to an external video
 
 ##### Play the Video in the Shared Space
 
-To play the video in the shared space and immersive space, remove the calls to the `avPlayerViewModel` in the [`onAppear(perform:)`](https://developer.apple.com/documentation/SwiftUI/View/onAppear(perform:)) and [`onDisappear(perform:)`](https://developer.apple.com/documentation/SwiftUI/View/onDisappear(perform:)) methods of `ImmersiveView`. Remove the `ToggleImmersiveSpaceButton` from the `ContentView` and replace it with a button that plays the video. At this point, the app plays the video full screen after someone taps the Play Video button, but the custom immersive space doesn’t appear.
+To play the video in the shared space and immersive space, remove the calls to the `avPlayerViewModel` in the [`onAppear(perform:)`](https://developer.apple.com/documentation/swiftui/view/onappear(perform:)) and [`onDisappear(perform:)`](https://developer.apple.com/documentation/swiftui/view/ondisappear(perform:)) methods of `ImmersiveView`. Remove the `ToggleImmersiveSpaceButton` from the `ContentView` and replace it with a button that plays the video. At this point, the app plays the video full screen after someone taps the Play Video button, but the custom immersive space doesn’t appear.
 
 ##### Add an Immersive Scene Viewing Option to Your Video Player
 
@@ -62,7 +62,7 @@ struct ImmersivePickerView: View {
 }
 ```
 
-Use [`immersiveEnvironmentPicker(content:)`](https://developer.apple.com/documentation/SwiftUI/View/immersiveEnvironmentPicker(content:)) to include this picker as an option in the list of immersive scene selections.
+Use [`immersiveEnvironmentPicker(content:)`](https://developer.apple.com/documentation/swiftui/view/immersiveenvironmentpicker(content:)) to include this picker as an option in the list of immersive scene selections.
 
 ```None
 AVPlayerView(viewModel: avPlayerViewModel)
@@ -71,7 +71,7 @@ AVPlayerView(viewModel: avPlayerViewModel)
     }
 ```
 
-![A screenshot of the visionOS app in Simulator showing the immersive scene picker.](https://docs-assets.developer.apple.com/published/4159420c30cf4b4db95f9a3ca01d68e4/docking-immersive-picker%402x.png)
+![A screenshot of the visionOS app in Simulator showing the immersive scene picker.](/images/com.apple.RealityKit/docking-immersive-picker@2x.png)
 
 ##### Create a Docking Region Component with a Docking Entity
 
@@ -105,11 +105,11 @@ And, finally, add it to your `RealityView`.
 content.add(dockingEntity)
 ```
 
-![A screenshot of the visionOS app in Simulator showing the overview of the docking sample.](https://docs-assets.developer.apple.com/published/0eedf3d9c20f384e39b43d86a081292a/docking-base%402x.png)
+![A screenshot of the visionOS app in Simulator showing the overview of the docking sample.](/images/com.apple.RealityKit/docking-base@2x.png)
 
 ## See Also
 
-- [Destination Video](../visionOS/destination-video.md)
+- [Destination Video](../visionos/destination-video.md)
   Leverage SwiftUI to build an immersive media experience in a multiplatform app.
 - [Rendering stereoscopic video with RealityKit](rendering-stereoscopic-video-with-realitykit.md)
   Render stereoscopic video in visionOS with RealityKit.

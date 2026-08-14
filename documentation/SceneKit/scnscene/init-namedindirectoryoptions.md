@@ -26,7 +26,7 @@ A new scene object, or `nil` if no scene could be loaded.
 
 #### Discussion
 
-This method provides a convenient way to load a complete scene from a file in the app’s main bundle. Calling this method is equivalent to using the [`Bundle`](https://developer.apple.com/documentation/Foundation/Bundle) class to locate the scene file and passing the resulting URL to the [`init(url:options:)`](scnscene/init(url:options:)-7ugvv.md) method.
+This method provides a convenient way to load a complete scene from a file in the app’s main bundle. Calling this method is equivalent to using the [`Bundle`](https://developer.apple.com/documentation/foundation/bundle) class to locate the scene file and passing the resulting URL to the [`init(url:options:)`](scnscene/init(url:options:)-7ugvv.md) method.
 
 For more detailed options or to load only part of a file’s scene graph, use the [`SCNSceneSource`](scnscenesource.md) class.
 

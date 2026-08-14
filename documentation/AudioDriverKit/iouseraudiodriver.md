@@ -28,7 +28,7 @@ For the Core Audio host to match against this driver, add the following keys to 
  </dict>
 ```
 
-After matching the host with the driver, the AudioDriverKit framework creates the connection to the Core Audio HAL as soon as the [`IOService`](https://developer.apple.com/documentation/DriverKit/IOService) calls [`NewUserClient`](iouseraudiodriver/newuserclient.md). The driver extension must have the `com.apple.developer.driverkit.allow-any-userclient-access` entitlement.
+After matching the host with the driver, the AudioDriverKit framework creates the connection to the Core Audio HAL as soon as the [`IOService`](https://developer.apple.com/documentation/driverkit/ioservice) calls [`NewUserClient`](iouseraudiodriver/newuserclient.md). The driver extension must have the `com.apple.developer.driverkit.allow-any-userclient-access` entitlement.
 
 ## Topics
 
@@ -99,13 +99,13 @@ After matching the host with the driver, the AudioDriverKit framework creates th
 ## Relationships
 
 ### Inherits From
-- [IOService](../DriverKit/IOService.md)
+- [IOService](../driverkit/ioservice.md)
 
 ## See Also
 
 - [IOUserAudioObject](iouseraudioobject.md)
   The base class for most classes in the framework.
-- [DriverKit Audio Family](../BundleResources/Entitlements/com.apple.developer.driverkit.family.audio.md)
+- [DriverKit Audio Family](../bundleresources/entitlements/com.apple.developer.driverkit.family.audio.md)
   A Boolean value that indicates whether the device supports audio functionality.
 - [Creating an audio device driver](creating-an-audio-device-driver.md)
   Implement a configurable audio input source as a driver extension that runs in user space in macOS and iPadOS.

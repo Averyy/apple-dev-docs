@@ -26,7 +26,7 @@ func SecKeyCreateSignature(_ key: SecKey, _ algorithm: SecKeyAlgorithm, _ dataTo
 
 #### Return Value
 
-The digital signature or `NULL` on failure. In Objective-C, call the [`CFRelease`](https://developer.apple.com/documentation/CoreFoundation/CFRelease) function to free the data’s memory when you are done with it.
+The digital signature or `NULL` on failure. In Objective-C, call the [`CFRelease`](https://developer.apple.com/documentation/corefoundation/cfrelease) function to free the data’s memory when you are done with it.
 
 #### Discussion
 
@@ -37,7 +37,7 @@ You later evaluate the combined data and signature with the corresponding public
 - `key`: The private key to use in creating the signature.
 - `algorithm`: The signing algorithm to use. Use one of the signing algorithms listed in [`SecKeyAlgorithm`](seckeyalgorithm.md). You can use the [`SecKeyIsAlgorithmSupported(_:_:_:)`](seckeyisalgorithmsupported(_:_:_:).md) function to test that the key is suitable for the algorithm.
 - `dataToSign`: The data whose signature you want.
-- `error`: The address of a [`CFError`](https://developer.apple.com/documentation/CoreFoundation/CFError) object. If an error occurs, this is set to point at an error instance that describes the failure.
+- `error`: The address of a [`CFError`](https://developer.apple.com/documentation/corefoundation/cferror) object. If an error occurs, this is set to point at an error instance that describes the failure.
 
 
 ---

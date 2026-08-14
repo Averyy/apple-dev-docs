@@ -92,13 +92,13 @@ You don’t create `IOHIDElement` objects directly. Instead, use the `getElement
 ## Relationships
 
 ### Inherits From
-- [OSContainer](../DriverKit/OSContainer.md)
+- [OSContainer](../driverkit/oscontainer.md)
 
 ## See Also
 
 - [IOHIDDigitizerCollection](iohiddigitizercollection.md)
   A collection of elements that contain digitizer-related data.
-- [com.apple.developer.hid.virtual.device](../BundleResources/Entitlements/com.apple.developer.hid.virtual.device.md)
+- [com.apple.developer.hid.virtual.device](../bundleresources/entitlements/com.apple.developer.hid.virtual.device.md)
   A Boolean value that indicates whether the driver creates a virtual HID device.
 - [Low-Level Information](low-level-information.md)
   Understand the underlying structures that support HID drivers.

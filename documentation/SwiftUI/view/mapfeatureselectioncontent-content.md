@@ -29,9 +29,9 @@ If empty map content is returned, the system presentation will be used.
 
 ## See Also
 
-- [struct LocationButton](../CoreLocationUI/LocationButton.md)
+- [struct LocationButton](../corelocationui/locationbutton.md)
   A SwiftUI button that grants one-time location authorization.
-- [struct Map](../MapKit/Map.md)
+- [struct Map](../mapkit/map.md)
   A view that displays an embedded map interface.
 - [func mapStyle(MapStyle) -> some View](view/mapstyle(_:).md)
   Specifies the map style to be used.

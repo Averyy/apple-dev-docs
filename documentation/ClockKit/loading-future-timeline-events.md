@@ -8,7 +8,7 @@ Preserve battery life and improve performance on the watch by providing a timeli
 
 ClockKit renders your complication in advance to ensure that it’s instantly available when the user glances at their watch. To minimize power usage, create a timeline that includes your app’s current data as well as future entries. These timeline entries let ClockKit automatically update your complication without requiring further background tasks.
 
-For example, a meeting complication could display all the meetings that the user currently has scheduled, with a timeline entry for each meeting. If details about the meeting change, your server can use PushKit [`complication`](https://developer.apple.com/documentation/PushKit/PKPushType/complication) notifications to alert the user of these changes, updating the timeline as needed. For more information, see [`Keeping your complications up to date`](keeping-your-complications-up-to-date.md).
+For example, a meeting complication could display all the meetings that the user currently has scheduled, with a timeline entry for each meeting. If details about the meeting change, your server can use PushKit [`complication`](https://developer.apple.com/documentation/pushkit/pkpushtype/complication) notifications to alert the user of these changes, updating the timeline as needed. For more information, see [`Keeping your complications up to date`](keeping-your-complications-up-to-date.md).
 
 ##### Batch Load Data
 
@@ -22,7 +22,7 @@ func getTimelineEndDate(for complication: CLKComplication, withHandler handler: 
 
 If your app can’t provide future data, pass `nil` to the handler.
 
-> **Note**:  In watchOS 6 and earlier the system sets the end date to [`distantFuture`](https://developer.apple.com/documentation/Foundation/NSDate/distantFuture) if you passed `nil` to [`getTimelineEndDate(for:withHandler:)`](clkcomplicationdatasource/gettimelineenddate(for:withhandler:).md). To indicate that your app can batch load future timeline entries, implement your data source’s [`getSupportedTimeTravelDirections(for:withHandler:)`](clkcomplicationdatasource/getsupportedtimetraveldirections(for:withhandler:).md) method, and pass [`forward`](clkcomplicationtimetraveldirections/forward.md) to the handler.
+> **Note**:  In watchOS 6 and earlier the system sets the end date to [`distantFuture`](https://developer.apple.com/documentation/foundation/nsdate/distantfuture) if you passed `nil` to [`getTimelineEndDate(for:withHandler:)`](clkcomplicationdatasource/gettimelineenddate(for:withhandler:).md). To indicate that your app can batch load future timeline entries, implement your data source’s [`getSupportedTimeTravelDirections(for:withHandler:)`](clkcomplicationdatasource/getsupportedtimetraveldirections(for:withhandler:).md) method, and pass [`forward`](clkcomplicationtimetraveldirections/forward.md) to the handler.
 
 Next, implement your data source’s [`getTimelineEntries(for:after:limit:withHandler:)`](clkcomplicationdatasource/gettimelineentries(for:after:limit:withhandler:).md) method.
 
@@ -34,7 +34,7 @@ For details on creating timeline entries, see [`Creating a timeline entry`](crea
 
 When constructing your timeline entries, choose dates that make sense based on when the user needs to see the data. ClockKit displays a timeline entry at the time specified by the entry’s [`date`](clkcomplicationtimelineentry/date.md) property. For some types of data, you may want to specify a date before the event actually occurs. For example, if you’re implementing a meeting app, alert users to the meeting before it starts. One option is to set the dates so that the complication displays the next meeting, as soon as the current meeting begins.
 
-![An illustration showing three meetings in the timeline. For the future events, the date is set to the previous meeting’s start time.](https://docs-assets.developer.apple.com/published/e1afb2ae7c1edee98eef4ca32dd1bd8e/media-3161329%402x.png)
+![An illustration showing three meetings in the timeline. For the future events, the date is set to the previous meeting’s start time.](/images/com.apple.clockkit/media-3161329@2x.png)
 
 ## See Also
 

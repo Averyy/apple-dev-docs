@@ -10,7 +10,7 @@ The **Inspect Apps and Devices** menu item from the **Develop** menu opens the *
 
 You can use this window to observe web content as it becomes available for inspection. This is also where you can configure automatic inspection for JSContexts.
 
-![Apps and Devices Inspection window open, with a MacBook Pro device selected, showing Safari and Safari Technology Preview, each with an inspectable webpage, and a third-party macOS app with an inspectable JSContext.](https://docs-assets.developer.apple.com/published/4e57f4c8e09b30713c140cd57eefe2df/AppsAndDevicesInspection%402x.png)
+![Apps and Devices Inspection window open, with a MacBook Pro device selected, showing Safari and Safari Technology Preview, each with an inspectable webpage, and a third-party macOS app with an inspectable JSContext.](/images/com.apple.safari.developer-tools/AppsAndDevicesInspection@2x.png)
 
 #### Using the Apps and Devices Inspection Window
 

@@ -22,7 +22,7 @@ class func isPlayableExtendedMIMEType(_ extendedMIMEType: String) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/Swift/true) if the asset is playable with the specified codec and container type; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
+[`true`](https://developer.apple.com/documentation/swift/true) if the asset is playable with the specified codec and container type; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
 
 ## Parameters
 

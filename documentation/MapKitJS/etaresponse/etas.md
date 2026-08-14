@@ -16,7 +16,7 @@ etas: EtaResult[];
 
 #### Discussion
 
-The server returns [`etas`](etaresponse/etas.md) as a part of the [`EtaResponse`](etaresponse.md) after your app creates an instance of the [`Directions`](directions.md) object and calls the [`eta(request)`](directions/eta.md) method.
+The server returns [`etas`](etaresponse/etas.md) as a part of the [`EtaResponse`](etaresponse.md) after your app creates an instance of the [`Directions`](directions.md) object and calls the [`eta()`](directions/eta.md) method.
 
 ## See Also
 

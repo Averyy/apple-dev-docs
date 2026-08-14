@@ -17,7 +17,7 @@ let kAudioSession_OutputDestinationKey_ID: CFString!
 
 #### Discussion
 
-A [`CFNumber`](https://developer.apple.com/documentation/CoreFoundation/CFNumber) object, defined by a USB audio accessory attached to the device through the iPad camera connection kit, that identifies the output destination. When setting an audio output destination on the accessory, use this identifier. For possible values, see [`Audio Output Routes`](audio-output-routes.md).
+A [`CFNumber`](https://developer.apple.com/documentation/corefoundation/cfnumber) object, defined by a USB audio accessory attached to the device through the iPad camera connection kit, that identifies the output destination. When setting an audio output destination on the accessory, use this identifier. For possible values, see [`Audio Output Routes`](audio-output-routes.md).
 
 ## See Also
 

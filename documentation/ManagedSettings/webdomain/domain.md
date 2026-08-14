@@ -18,7 +18,7 @@ let domain: String?
 
 #### Discussion
 
-In an extension that provides shield configurations, this property provides the web domain. When you access this property outside that extension, the value is `nil`. See [`ShieldConfigurationDataSource`](https://developer.apple.com/documentation/ManagedSettingsUI/ShieldConfigurationDataSource) for more information.
+In an extension that provides shield configurations, this property provides the web domain. When you access this property outside that extension, the value is `nil`. See [`ShieldConfigurationDataSource`](https://developer.apple.com/documentation/managedsettingsui/shieldconfigurationdatasource) for more information.
 
 ## See Also
 

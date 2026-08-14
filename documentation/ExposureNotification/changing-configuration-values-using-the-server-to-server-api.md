@@ -44,9 +44,9 @@ This API responds with an HTTP response code, but won’t send a response body o
   Ensure that your server meets the requirements for supporting Exposure Notifications.
 - [class ENManager](enmanager.md)
   A class that manages exposure notifications.
-- [ENDeveloperRegion](../BundleResources/Information-Property-List/ENDeveloperRegion.md)
+- [ENDeveloperRegion](../bundleresources/information-property-list/endeveloperregion.md)
   A string that specifies the region that the app supports.
-- [ENAPIVersion](../BundleResources/Information-Property-List/ENAPIVersion.md)
+- [ENAPIVersion](../bundleresources/information-property-list/enapiversion.md)
   A number that specifies the version of the API to use.
 - [Testing Exposure Notifications Apps in iOS 13.7 and Later](testing-exposure-notifications-apps-in-ios-13-7-and-later.md)
   Perform end-to-end validation of Exposure Notifications apps on a device by manually loading configuration files.

@@ -38,9 +38,9 @@ For more information about which Sign in with Apple buttons are available on dif
 ## Relationships
 
 ### Conforms To
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
-- [View](../SwiftUI/View.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
+- [View](../swiftui/view.md)
 
 ## See Also
 
@@ -48,7 +48,7 @@ For more information about which Sign in with Apple buttons are available on dif
   Provide a way for users of your app to set up an account and start using your services.
 - [Simplifying User Authentication in a tvOS App](simplifying-user-authentication-in-a-tvos-app.md)
   Build a fluid sign-in experience for your tvOS apps using AuthenticationServices.
-- [Sign in with Apple Entitlement](../BundleResources/Entitlements/com.apple.developer.applesignin.md)
+- [Sign in with Apple Entitlement](../bundleresources/entitlements/com.apple.developer.applesignin.md)
   An entitlement that lets your app use Sign in with Apple.
 - [class ASAuthorizationAppleIDProvider](asauthorizationappleidprovider.md)
   A mechanism for generating requests to authenticate users based on their Apple ID.

@@ -16,13 +16,13 @@ func launchApplication(_ appName: String, showIcon: Bool, autolaunch: Bool) -> B
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/Swift/true) if the app was successfully launched or was already running; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
+[`true`](https://developer.apple.com/documentation/swift/true) if the app was successfully launched or was already running; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
 
 #### Discussion
 
 Use of this method is discouraged. Its current behavior is the same as the [`launchApplication(_:)`](nsworkspace/launchapplication(_:).md) method.
 
-Returns [`true`](https://developer.apple.com/documentation/Swift/true) if the app is successfully launched or already running, and [`false`](https://developer.apple.com/documentation/Swift/false) if it can’t be launched.
+Returns [`true`](https://developer.apple.com/documentation/swift/true) if the app is successfully launched or already running, and [`false`](https://developer.apple.com/documentation/swift/false) if it can’t be launched.
 
 Before this method begins, it posts an [`willLaunchApplicationNotification`](nsworkspace/willlaunchapplicationnotification.md) to the `NSWorkspace` object’s notification center. When the operation is complete, it posts an [`didLaunchApplicationNotification`](nsworkspace/didlaunchapplicationnotification.md).
 
@@ -31,8 +31,8 @@ It is safe to call this method from any thread in your app in macOS 10.6 and lat
 ## Parameters
 
 - `appName`: The name of the app to open.
-- `showIcon`: If [`false`](https://developer.apple.com/documentation/Swift/false), the app’s icon is not placed on the screen. (The icon still exists, though.)
-- `autolaunch`: If [`true`](https://developer.apple.com/documentation/Swift/true), the autolaunch default is set as though the specified app were autolaunched at startup.
+- `showIcon`: If [`false`](https://developer.apple.com/documentation/swift/false), the app’s icon is not placed on the screen. (The icon still exists, though.)
+- `autolaunch`: If [`true`](https://developer.apple.com/documentation/swift/true), the autolaunch default is set as though the specified app were autolaunched at startup.
 
 ## See Also
 

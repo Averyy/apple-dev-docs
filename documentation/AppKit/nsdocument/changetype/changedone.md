@@ -16,7 +16,7 @@ case changeDone
 
 #### Discussion
 
-Pass this value to the [`updateChangeCount(_:)`](nsdocument/updatechangecount(_:).md) method to indicate that a single change has been done. For example, the built-in undo support in the [`NSDocument`](nsdocument.md) class passes this value whenever a document receives an [`NSUndoManagerDidCloseUndoGroup`](https://developer.apple.com/documentation/Foundation/NSNotification/Name-swift.struct/NSUndoManagerDidCloseUndoGroup) notification from its own undo manager.
+Pass this value to the [`updateChangeCount(_:)`](nsdocument/updatechangecount(_:).md) method to indicate that a single change has been done. For example, the built-in undo support in the [`NSDocument`](nsdocument.md) class passes this value whenever a document receives an [`NSUndoManagerDidCloseUndoGroup`](https://developer.apple.com/documentation/foundation/nsnotification/name-swift.struct/nsundomanagerdidcloseundogroup) notification from its own undo manager.
 
 ## See Also
 

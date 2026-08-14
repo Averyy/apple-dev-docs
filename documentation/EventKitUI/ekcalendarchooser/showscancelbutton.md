@@ -19,7 +19,7 @@ var showsCancelButton: Bool { get set }
 
 #### Discussion
 
-Use [`true`](https://developer.apple.com/documentation/Swift/true) to show a Cancel button; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
+Use [`true`](https://developer.apple.com/documentation/swift/true) to show a Cancel button; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
 
 ## See Also
 

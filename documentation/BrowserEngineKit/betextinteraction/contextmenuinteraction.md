@@ -18,7 +18,7 @@ var contextMenuInteraction: UIContextMenuInteraction { get }
 
 #### Discussion
 
-Set the context menu interaction’s [`delegate`](https://developer.apple.com/documentation/UIKit/UIContextMenuInteraction/delegate) by supplying a value for [`contextMenuInteractionDelegate`](betextinteraction/contextmenuinteractiondelegate.md).
+Set the context menu interaction’s [`delegate`](https://developer.apple.com/documentation/uikit/uicontextmenuinteraction/delegate) by supplying a value for [`contextMenuInteractionDelegate`](betextinteraction/contextmenuinteractiondelegate.md).
 
 ## See Also
 

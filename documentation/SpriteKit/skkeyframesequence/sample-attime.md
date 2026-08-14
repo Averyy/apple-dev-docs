@@ -26,7 +26,7 @@ func sample(atTime time: CGFloat) -> Any?
 
 #### Return Value
 
-An object that contains the interpolated sample. The class of this object matches the class of the values stored in the keyframe sequence — either an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) or an `SKColor`.
+An object that contains the interpolated sample. The class of this object matches the class of the values stored in the keyframe sequence — either an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) or an `SKColor`.
 
 ## Parameters
 

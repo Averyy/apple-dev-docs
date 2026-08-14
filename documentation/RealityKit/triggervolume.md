@@ -24,7 +24,7 @@ An invisible 3D shape that detects when objects enter or exit a given region of 
 
 A trigger volume is an entity that can participate in collisions because it has a [`CollisionComponent`](collisioncomponent.md). You use a trigger volume as a sensor that indicates when another collision-capable entity, like a [`ModelEntity`](modelentity.md), enters the region of space occupied by the trigger volume. You can use the generated [`CollisionEvents`](collisionevents.md) between the trigger volume and the other entity to trigger an action, like indicating to the user that a projectile hit its target.
 
-![Diagram showing the components present in the trigger volume](https://docs-assets.developer.apple.com/published/ea980c874c628a17ed64dc62cfbc9d49/TriggerVolume-1%402x.png)
+![Diagram showing the components present in the trigger volume](/images/com.apple.RealityKit/TriggerVolume-1@2x.png)
 
 The trigger volume itself is very simple. It lacks any physical appearance, and doesn’t participate in physics simulations. This makes it very efficient for tasks that require only collision detection.
 
@@ -49,21 +49,21 @@ The trigger volume itself is very simple. It lacks any physical appearance, and 
 ### Inherits From
 - [Entity](entity.md)
 ### Conforms To
-- [CoordinateSpace3D](../Spatial/CoordinateSpace3D.md)
-- [CoordinateSpace3DFloat](../Spatial/CoordinateSpace3DFloat.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
+- [CoordinateSpace3D](../spatial/coordinatespace3d.md)
+- [CoordinateSpace3DFloat](../spatial/coordinatespace3dfloat.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [Equatable](../swift/equatable.md)
 - [EventSource](eventsource.md)
 - [HasCollision](hascollision.md)
 - [HasHierarchy](hashierarchy.md)
 - [HasSynchronization](hassynchronization.md)
 - [HasTransform](hastransform.md)
-- [Hashable](../Swift/Hashable.md)
-- [Identifiable](../Swift/Identifiable.md)
-- [Observable](../Observation/Observable.md)
+- [Hashable](../swift/hashable.md)
+- [Identifiable](../swift/identifiable.md)
+- [Observable](../observation/observable.md)
 - [RealityCoordinateSpace](realitycoordinatespace.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 
@@ -71,7 +71,7 @@ The trigger volume itself is very simple. It lacks any physical appearance, and 
   Create entities that behave and react like physical objects in a RealityKit view.
 - [Configuring Collision in RealityKit](configuring-collision-in-realitykit.md)
   Use collision groups and collision filters to control which objects collide.
-- [Creating an interactive 3D model in visionOS](../visionOS/creating-an-interactable-3d-model-in-visionos.md)
+- [Creating an interactive 3D model in visionOS](../visionos/creating-an-interactable-3d-model-in-visionos.md)
   Display an interactive car model using gestures in a reality view.
 - [struct CollisionComponent](collisioncomponent.md)
   A component that gives an entity the ability to collide with other entities that also have collision components.

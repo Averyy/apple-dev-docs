@@ -28,9 +28,9 @@ Thread-safe since Mac OS version 10.2.
 
 ## Parameters
 
-- `inItemRef`: A pointer to a file-system reference designating the item about which information is requested; see the   in the Carbon File Management Documentation for a description of the   data type.
-- `inWhichInfo`: Flags specifying what information to obtain; see   for a description of these flags.
-- `outItemInfo`: If you request the item’s filename extension (field   of the item-information record, requested by flag  ), you are responsible for releasing the Core Foundation string object in which the extension is returned.
+- `inItemRef`: A pointer to a file-system reference designating the item about which information is requested; see the *File Manager Reference* in the Carbon File Management Documentation for a description of the `FSRef` data type.
+- `inWhichInfo`: Flags specifying what information to obtain; see [`LSRequestedInfo`](lsrequestedinfo.md) for a description of these flags.
+- `outItemInfo`: A pointer to an item-information record that, on return, will contain the requested information; see [`LSItemInfoRecord`](lsiteminforecord.md) for a description of this structure. If you request the item’s filename extension (field `extension` of the item-information record, requested by flag `kLSRequestExtension`), you are responsible for releasing the Core Foundation string object in which the extension is returned.
 
 ## See Also
 

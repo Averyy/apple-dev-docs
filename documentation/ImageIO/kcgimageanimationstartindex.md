@@ -22,7 +22,7 @@ let kCGImageAnimationStartIndex: CFString
 
 #### Discussion
 
-The value of this property is a [`CFNumber`](https://developer.apple.com/documentation/CoreFoundation/CFNumber) that contains an unsigned integer. To override the start index value in the image file, include this property in the options dictionary when animating an image.
+The value of this property is a [`CFNumber`](https://developer.apple.com/documentation/corefoundation/cfnumber) that contains an unsigned integer. To override the start index value in the image file, include this property in the options dictionary when animating an image.
 
 ## See Also
 

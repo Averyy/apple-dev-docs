@@ -16,7 +16,7 @@ typedef struct IOUSBHIDDescriptor IOUSBHIDDescriptor;
 
 #### Discussion
 
-See the USB Implementers Forum (USB-IF)  for more information.
+See the USB Implementers Forum (USB-IF) *Device Class Definition for Human Interface Devices (HID)* for more information.
 
 ## Topics
 

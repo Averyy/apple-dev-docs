@@ -8,7 +8,7 @@ The [`pausesIncomingScene`](sktransition/pausesincomingscene.md) and [`pausesOut
 
 Figure 1 illustrates which frames of the incoming and outgoing scenes are displayed on screen during a three frame transition with different permutations of [`pausesIncomingScene`](sktransition/pausesincomingscene.md) and [`pausesOutgoingScene`](sktransition/pausesoutgoingscene.md).
 
-![Frame progression during transitions](https://docs-assets.developer.apple.com/published/a872be721bccc26ab0b4a3b55a7eace2/media-2975371%402x.png)
+![Frame progression during transitions](/images/com.apple.spritekit/media-2975371@2x.png)
 
 For example, consider the code again in . Because the button is going to run an action, this code expects the outgoing scene to be animated. But perhaps the incoming scene should not animate its content until the transition completes. Adding the code in Listing 1 has the desired effect.
 

@@ -65,7 +65,7 @@ To debug your extension’s pop-up, open your pop-up on the device. From the **D
 
 #### Inspect Javascript and Webpages in Apps
 
-You can make [`WKWebView`](https://developer.apple.com/documentation/WebKit/WKWebView)s and [`JSContext`](https://developer.apple.com/documentation/JavaScriptCore/JSContext)s in apps inspectable, allowing anyone who enables **Web Inspector** on the device to inspect them. Content you can inspect appears in a submenu for the connected device of the **Develop** menu of Safari on a connected Mac. Safari separates webpages and JavaScript contexts by app, making finding the content you want to inspect easier.
+You can make [`WKWebView`](https://developer.apple.com/documentation/webkit/wkwebview)s and [`JSContext`](https://developer.apple.com/documentation/javascriptcore/jscontext)s in apps inspectable, allowing anyone who enables **Web Inspector** on the device to inspect them. Content you can inspect appears in a submenu for the connected device of the **Develop** menu of Safari on a connected Mac. Safari separates webpages and JavaScript contexts by app, making finding the content you want to inspect easier.
 
 Learn more about [`Enabling inspecting content in your apps`](enabling-inspecting-content-in-your-apps.md).
 

@@ -23,7 +23,7 @@ The system calls this method when a shared file’s content changes, typically i
 
 You must override this method and respond to these changes. Do not call `super` in your implementations.
 
-In your implementation, defer all networking, asynchronous, or long-running operations to background tasks. For networking tasks, create a background [`URLSession`](https://developer.apple.com/documentation/Foundation/URLSession) task, and then register the task with the file provider manager by calling the manager’s [`register(_:forItemWithIdentifier:completionHandler:)`](nsfileprovidermanager/register(_:foritemwithidentifier:completionhandler:).md) method.
+In your implementation, defer all networking, asynchronous, or long-running operations to background tasks. For networking tasks, create a background [`URLSession`](https://developer.apple.com/documentation/foundation/urlsession) task, and then register the task with the file provider manager by calling the manager’s [`register(_:forItemWithIdentifier:completionHandler:)`](nsfileprovidermanager/register(_:foritemwithidentifier:completionhandler:).md) method.
 
 ## Parameters
 

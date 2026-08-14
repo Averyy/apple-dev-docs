@@ -31,7 +31,7 @@ You can override this method to create the store to save to or load from (invoke
 - `url`: An URL that specifies the location of the document’s store.
 - `fileType`: The document type.
 - `configuration`: The name of the managed object model configuration to use. (The managed object model is associated with the persistent store coordinator.) Pass `nil` if you do not want to specify a configuration.
-- `storeOptions`: Options for the store. See “Store Options” in [`NSPersistentStoreCoordinator`](https://developer.apple.com/documentation/CoreData/NSPersistentStoreCoordinator) for possible values.
+- `storeOptions`: Options for the store. See “Store Options” in [`NSPersistentStoreCoordinator`](https://developer.apple.com/documentation/coredata/nspersistentstorecoordinator) for possible values.
 
 ## See Also
 

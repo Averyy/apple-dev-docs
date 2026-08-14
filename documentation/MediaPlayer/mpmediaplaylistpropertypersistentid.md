@@ -22,7 +22,7 @@ let MPMediaPlaylistPropertyPersistentID: String
 
 #### Discussion
 
-Value is an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) object containing a `UInt64_t` (unsigned long long). Can be used to build a media property predicate as described in [`MPMediaQuery`](mpmediaquery.md).
+Value is an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) object containing a `UInt64_t` (unsigned long long). Can be used to build a media property predicate as described in [`MPMediaQuery`](mpmediaquery.md).
 
 ## See Also
 

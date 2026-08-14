@@ -23,11 +23,11 @@ func preferredSubscriptionOffer(_ offer: @escaping (Product, Product.Subscriptio
 
 #### Discussion
 
-Subscription stores within this view use the subscription offer you specify to configure the appearance of the subscription plans. [`ProductView`](https://developer.apple.com/documentation/StoreKit/ProductView) doesn’t display the terms of a subscription offer in the UI, but you can still use this modifier to declare which offer product views within a view hierarchy apply to a purchase.
+Subscription stores within this view use the subscription offer you specify to configure the appearance of the subscription plans. [`ProductView`](https://developer.apple.com/documentation/storekit/productview) doesn’t display the terms of a subscription offer in the UI, but you can still use this modifier to declare which offer product views within a view hierarchy apply to a purchase.
 
 Offer preferences that use this modifier override offer preferences from ancestor views.
 
-> ❗ **Important**: Subscription offers in the [`Product.SubscriptionInfo`](https://developer.apple.com/documentation/StoreKit/Product/SubscriptionInfo) object may contain offers the customer isn’t eligible for. Instead, use the eligibleOffers argument of the offer closure to select the offers to apply to the customer’s purchase.
+> ❗ **Important**: Subscription offers in the [`Product.SubscriptionInfo`](https://developer.apple.com/documentation/storekit/product/subscriptioninfo) object may contain offers the customer isn’t eligible for. Instead, use the eligibleOffers argument of the offer closure to select the offers to apply to the customer’s purchase.
 
 If StoreKit determines that the customer is eligible for more than one offer, the system calls the `offer` closure before it draws the product on the subscription store view, or before the customer initiates a purchase on a store view or product view. Return the subscription offer to apply to the product, if any, to have system-provided UI reflect the discounted pricing terms under the selected offer.
 

@@ -20,7 +20,7 @@ An array of country code strings that indicate the regions where your app suppor
 
 #### Discussion
 
-Use this information property list key if your app has the [`com.apple.developer.storekit.external-purchase-link`](entitlements/com.apple.developer.storekit.external-purchase-link.md) entitlement and uses the [`ExternalPurchaseCustomLink`](https://developer.apple.com/documentation/StoreKit/ExternalPurchaseCustomLink) API.
+Use this information property list key if your app has the [`com.apple.developer.storekit.external-purchase-link`](entitlements/com.apple.developer.storekit.external-purchase-link.md) entitlement and uses the [`ExternalPurchaseCustomLink`](https://developer.apple.com/documentation/storekit/externalpurchasecustomlink) API.
 
 Include an entry for each country code where your app supports custom links for the communication and promotion of offers.
 

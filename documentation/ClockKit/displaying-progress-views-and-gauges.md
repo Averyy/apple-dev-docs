@@ -12,7 +12,7 @@ Gauges, on the other hand, depict a value within a given range of values. You co
 
 ##### Create a Progress View
 
-To instantiate a [`ProgressView`](https://developer.apple.com/documentation/SwiftUI/ProgressView), call the initializer and pass a value.
+To instantiate a [`ProgressView`](https://developer.apple.com/documentation/swiftui/progressview), call the initializer and pass a value.
 
 ```swift
 // A progress view that is 20% complete.
@@ -23,7 +23,7 @@ By default, the progress view takes a value between 0.0 and 1.0, and visually re
 
 ##### Customize a Progress View
 
-Customize a progress view by selecting a style, adding labels, and setting a tint color. [`ProgressView`](https://developer.apple.com/documentation/SwiftUI/ProgressView) supports linear and circular styles. By default, the SwiftUI selects the style based on the view’s context. However, you can add a `progressViewStyle(_:)` modifier to specify the style.
+Customize a progress view by selecting a style, adding labels, and setting a tint color. [`ProgressView`](https://developer.apple.com/documentation/swiftui/progressview) supports linear and circular styles. By default, the SwiftUI selects the style based on the view’s context. However, you can add a `progressViewStyle(_:)` modifier to specify the style.
 
 The following code sets a circular style.
 
@@ -33,7 +33,7 @@ ProgressView(value: 0.4)
     .progressViewStyle(CircularProgressViewStyle())
 ```
 
-![A preview of the circular progress view, showing a task that is 40 percent complete.](https://docs-assets.developer.apple.com/published/4678217b2f60ffad7269a219e76e0bd6/media-3686517%402x.png)
+![A preview of the circular progress view, showing a task that is 40 percent complete.](/images/com.apple.clockkit/media-3686517@2x.png)
 
 The code below sets a linear style.
 
@@ -43,9 +43,9 @@ ProgressView(value: 0.6)
     .progressViewStyle(LinearProgressViewStyle())
 ```
 
-![A preview of the linear progress view showing a task that is 60 percent complete.](https://docs-assets.developer.apple.com/published/acba2def2c1bbdb7c649fce880513ab7/media-3686525%402x.png)
+![A preview of the linear progress view showing a task that is 60 percent complete.](/images/com.apple.clockkit/media-3686525@2x.png)
 
-[`ProgressView`](https://developer.apple.com/documentation/SwiftUI/ProgressView) also supports a label that describes the task. Pass a closure that returns a [`View`](https://developer.apple.com/documentation/SwiftUI/View) to the progress view’s initializer.
+[`ProgressView`](https://developer.apple.com/documentation/swiftui/progressview) also supports a label that describes the task. Pass a closure that returns a [`View`](https://developer.apple.com/documentation/swiftui/view) to the progress view’s initializer.
 
 ```swift
 // A progress view with an image label.
@@ -56,7 +56,7 @@ ProgressView(value: 0.8) {
 }
 ```
 
-![Previews of the circular and linear progress views with a coffee cup image as the label.](https://docs-assets.developer.apple.com/published/2a2066661e45e17c79060f39026681ac/media-3686524%402x.png)
+![Previews of the circular and linear progress views with a coffee cup image as the label.](/images/com.apple.clockkit/media-3686524@2x.png)
 
 The label appears inside a circular style, and below and to the left of the linear progress bar.
 
@@ -71,11 +71,11 @@ ProgressView(value: 0.4) {
 .progressViewStyle(CircularProgressViewStyle(tint: .green))
 ```
 
-![A preview of the tinted, circular progress view with a green gauge.](https://docs-assets.developer.apple.com/published/3be07fdf6878f851597a960c58993146/media-3686514%402x.png)
+![A preview of the tinted, circular progress view with a green gauge.](/images/com.apple.clockkit/media-3686514@2x.png)
 
 ##### Create a Gauge
 
-In many ways, the [`Gauge`](https://developer.apple.com/documentation/SwiftUI/Gauge) is similar to the [`ProgressView`](https://developer.apple.com/documentation/SwiftUI/ProgressView). It supports both a linear and circular style, and you can add a label and tinting. The main difference is that the gauge represents a value within a specified range—not the percent complete. It also has additional options, like labels for the range’s minimum, maximum values, and a label for the current value. Finally, it supports color gradients.
+In many ways, the [`Gauge`](https://developer.apple.com/documentation/swiftui/gauge) is similar to the [`ProgressView`](https://developer.apple.com/documentation/swiftui/progressview). It supports both a linear and circular style, and you can add a label and tinting. The main difference is that the gauge represents a value within a specified range—not the percent complete. It also has additional options, like labels for the range’s minimum, maximum values, and a label for the current value. Finally, it supports color gradients.
 
 ##### Customize a Gauge
 
@@ -96,7 +96,7 @@ Gauge(value: 76.0, in: 60.0...85.0) {
         Gradient(colors: [.green, .yellow, .orange, .red])))
 ```
 
-![A preview of the gauge view showing 76 degrees with a high of 85 and a low of 60.](https://docs-assets.developer.apple.com/published/44b5035ff25a6b4640a0d258256c1cf9/media-3686516%402x.png)
+![A preview of the gauge view showing 76 degrees with a high of 85 and a low of 60.](/images/com.apple.clockkit/media-3686516@2x.png)
 
 Note that the gauge doesn’t show the label (`ºF` in this example) when you specify the minimum and maximum value labels.
 

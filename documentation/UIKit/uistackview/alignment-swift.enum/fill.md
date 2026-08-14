@@ -22,7 +22,7 @@ case fill
 
 The following image shows an example of a horizontal stack view that uses the [`UIStackView.Alignment.fill`](uistackview/alignment-swift.enum/fill.md) alignment.
 
-![A horizontal stack view with four arranged subviews. The stack view resizes the height of the arranged views so that they fill the available space perpendicular to the stack view’s axis.](https://docs-assets.developer.apple.com/published/e962e4d75b26a87aeeec20fbc98108aa/media-2557454%402x.png)
+![A horizontal stack view with four arranged subviews. The stack view resizes the height of the arranged views so that they fill the available space perpendicular to the stack view’s axis.](/images/com.apple.uikit/media-2557454@2x.png)
 
 ## See Also
 

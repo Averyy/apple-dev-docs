@@ -22,7 +22,7 @@ static let adjustable: UIAccessibilityTraits
 
 #### Discussion
 
-Use this trait to characterize an accessibility element that users can adjust in a continuous manner, such as a slider or a picker view. If you specify this trait on an accessibility element, you must also implement the [`accessibilityIncrement()`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class/accessibilityIncrement()) and [`accessibilityDecrement()`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class/accessibilityDecrement()) methods in the `UIAccessibilityAction` protocol.
+Use this trait to characterize an accessibility element that users can adjust in a continuous manner, such as a slider or a picker view. If you specify this trait on an accessibility element, you must also implement the [`accessibilityIncrement()`](https://developer.apple.com/documentation/objectivec/nsobject-swift.class/accessibilityincrement()) and [`accessibilityDecrement()`](https://developer.apple.com/documentation/objectivec/nsobject-swift.class/accessibilitydecrement()) methods in the `UIAccessibilityAction` protocol.
 
 ## See Also
 

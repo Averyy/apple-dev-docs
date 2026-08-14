@@ -32,7 +32,7 @@ For example, the string:
 
 Represents the operation:
 
-![General formula that describes mathematically the equation represented by the string a underscore i j p comma b underscore i j q hyphen greater than o underscore p q. o sub p sub q equals alpha times summation over i j times a sub i sub j sub p times b sub i sub j sub q](https://docs-assets.developer.apple.com/published/c0c5777fa3a46aa2aa5826c438c5a9d5/media-3581536%402x.png)
+![General formula that describes mathematically the equation represented by the string a underscore i j p comma b underscore i j q hyphen greater than o underscore p q. o sub p sub q equals alpha times summation over i j times a sub i sub j sub p times b sub i sub j sub q](/images/com.apple.accelerate/media-3581536@2x.png)
 
 Inputs may be either trained parameters or inputs.
 
@@ -50,7 +50,7 @@ Use a tensor contraction layer to also copy from one layer to another with a per
 
 Represents the operation:
 
-![General formula that describes mathematically the equation represented by the a underscore i j hyphen greater than c underscore j i. Cap C equals alpha times Cap A sup cap T.](https://docs-assets.developer.apple.com/published/4f0e29c8ceb0e4cfc574293be1d66b53/media-3581537%402x.png)
+![General formula that describes mathematically the equation represented by the a underscore i j hyphen greater than c underscore j i. Cap C equals alpha times Cap A sup cap T.](/images/com.apple.accelerate/media-3581537@2x.png)
 
 BNNS tensor contraction supports broadcasting by using `“*”` as the final index, for example, the following string matches additional indices of `a` and `c`.
 

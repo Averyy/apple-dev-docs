@@ -24,7 +24,7 @@ A string containing the formatted date.
 ## Parameters
 
 - `date`: The date value to format.
-- `format`: A string that specifies the desired format. For a list of possible formats, see  .
+- `format`: A string that specifies the desired format. For a list of possible formats, see [`DateFormatter`](https://developer.apple.com/documentation/foundation/dateformatter).
 
 ## See Also
 

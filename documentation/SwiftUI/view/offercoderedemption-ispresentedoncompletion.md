@@ -23,7 +23,7 @@ Presents a sheet that enables customers to redeem offer codes that you configure
 
 The `offerCodeRedemption(isPresented:onCompletion:)` method displays a system sheet where customers can enter and redeem offer codes. If you generate offer codes in App Store Connect, call this function to enable customers to redeem the offer. To display the sheet using UIKit, see `presentOfferCodeRedeemSheet(in:)`.
 
-> ❗ **Important**: Set up offer codes in App Store Connect before calling this API. Customers can only redeem these offers in your app through the redemption sheet; don’t use a custom UI. For more information, see [`Supporting offer codes in your app`](https://developer.apple.com/documentation/StoreKit/supporting-offer-codes-in-your-app).
+> ❗ **Important**: Set up offer codes in App Store Connect before calling this API. Customers can only redeem these offers in your app through the redemption sheet; don’t use a custom UI. For more information, see [`Supporting offer codes in your app`](https://developer.apple.com/documentation/storekit/supporting-offer-codes-in-your-app).
 
 The following code example shows a view that displays the offer code redemption sheet upon a button press:
 
@@ -47,7 +47,7 @@ struct ContentView: View {
 }
 ```
 
-When customers redeem an offer code, StoreKit emits the resulting transaction in [`updates`](https://developer.apple.com/documentation/StoreKit/Transaction/updates). Set up a transaction listener as soon as your app launches to receive new transactions while the app is running.
+When customers redeem an offer code, StoreKit emits the resulting transaction in [`updates`](https://developer.apple.com/documentation/storekit/transaction/updates). Set up a transaction listener as soon as your app launches to receive new transactions while the app is running.
 
 ## Parameters
 

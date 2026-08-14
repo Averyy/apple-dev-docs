@@ -13,7 +13,7 @@ Configure your food-ordering app to work with CarPlay.
 
 #### Overview
 
-This sample code project demonstrates how to display custom ordering options in a vehicle using CarPlay. The sample app integrates with the CarPlay framework by implementing `CPTemplate` subclasses, such as [`CPPointOfInterestTemplate`](CPPointOfInterestTemplate.md) and [`CPListTemplate`](CPListTemplate.md). This sample’s iOS app component provides a logging interface to help you understand the life cycle of a CarPlay app.
+This sample code project demonstrates how to display custom ordering options in a vehicle using CarPlay. The sample app integrates with the CarPlay framework by implementing `CPTemplate` subclasses, such as [`CPPointOfInterestTemplate`](cppointofinteresttemplate.md) and [`CPListTemplate`](cplisttemplate.md). This sample’s iOS app component provides a logging interface to help you understand the life cycle of a CarPlay app.
 
 ##### Configure the Sample Code Project
 
@@ -60,7 +60,7 @@ func setupMap() {
 
 ##### Keep the Map in Focus
 
-The sample uses [`pointOfInterestTemplate(_:didChangeMapRegion:)`](CPPointOfInterestTemplateDelegate/pointOfInterestTemplate(_:didChangeMapRegion:).md) to keep the map in focus. The data that `CLLocationManager` provides for a given location can change as a person is moving. This means the results need to update as the map region changes.
+The sample uses [`pointOfInterestTemplate(_:didChangeMapRegion:)`](cppointofinteresttemplatedelegate/pointofinteresttemplate(_:didchangemapregion:).md) to keep the map in focus. The data that `CLLocationManager` provides for a given location can change as a person is moving. This means the results need to update as the map region changes.
 
 ```swift
 extension TemplateManager: CPPointOfInterestTemplateDelegate {

@@ -20,7 +20,7 @@ The [`NSTreeController`](nstreecontroller.md) class provides selection and sort 
 
 An [`NSTreeController`](nstreecontroller.md) object requires that you describe how the tree of objects is traversed by specifying the key-path for child objects specified by [`childrenKeyPath`](nstreecontroller/childrenkeypath.md). All child objects for the tree must be key-value coding compliant for the same child key path. If necessary, you should add properties to your model classes that map the child key name to the appropriate class-specific property name.
 
-Child objects can implement a count method (specified to the tree controller using [`countKeyPath`](nstreecontroller/countkeypath.md)) that, if provided, returns the number of child objects available. Your model objects are expected to update the value of the count key path in a key-value observing compliant method. Optionally, you can also provide a leaf key path using [`leafKeyPath`](nstreecontroller/leafkeypath.md) that specifies a key in your model object that returns [`true`](https://developer.apple.com/documentation/Swift/true) if the object is a leaf node, and [`false`](https://developer.apple.com/documentation/Swift/false) if it is not. Changes to the leaf node value of the child object should be made in a key-value observing compliant manner. Providing the leaf node key path can improve performance, because it prevents the [`NSTreeController`](nstreecontroller.md) from having to examine the child object to determine if it is a leaf node.
+Child objects can implement a count method (specified to the tree controller using [`countKeyPath`](nstreecontroller/countkeypath.md)) that, if provided, returns the number of child objects available. Your model objects are expected to update the value of the count key path in a key-value observing compliant method. Optionally, you can also provide a leaf key path using [`leafKeyPath`](nstreecontroller/leafkeypath.md) that specifies a key in your model object that returns [`true`](https://developer.apple.com/documentation/swift/true) if the object is a leaf node, and [`false`](https://developer.apple.com/documentation/swift/false) if it is not. Changes to the leaf node value of the child object should be made in a key-value observing compliant manner. Providing the leaf node key path can improve performance, because it prevents the [`NSTreeController`](nstreecontroller.md) from having to examine the child object to determine if it is a leaf node.
 
 For more information about using NSTreeController in your app, see [`Navigating Hierarchical Data Using Outline and Split Views`](navigating-hierarchical-data-using-outline-and-split-views.md).
 
@@ -111,17 +111,17 @@ For more information about using NSTreeController in your app, see [`Navigating 
 ### Inherits From
 - [NSObjectController](nsobjectcontroller.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCoding](../Foundation/NSCoding.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCoding](../foundation/nscoding.md)
 - [NSEditor](nseditor.md)
 - [NSEditorRegistration](nseditorregistration.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

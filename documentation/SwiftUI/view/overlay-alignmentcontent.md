@@ -53,7 +53,7 @@ struct Star: View {
 
 By setting different `alignment` values for each modifier, you make the stars appear in different places on the rectangle:
 
-![A screenshot of a rounded rectangle with a star in each corner. The](https://docs-assets.developer.apple.com/published/0e35601a7bf9406b5995a8203e6eea9a/View-overlay-2%402x.png)
+![A screenshot of a rounded rectangle with a star in each corner. The](/images/com.apple.SwiftUI/View-overlay-2@2x.png)
 
 If you specify more than one view in the `content` closure, the modifier collects all of the views in the closure into an implicit [`ZStack`](zstack.md), taking them in order from back to front. For example, you can place a star and a [`Circle`](circle.md) on a field of [`blue`](shapestyle/blue.md):
 
@@ -69,7 +69,7 @@ Color.blue
 
 Both the overlay modifier and the implicit [`ZStack`](zstack.md) composed from the overlay content — the circle and the star — use a default [`center`](alignment/center.md) alignment. The star appears centered on the circle, and both appear as a composite view centered in front of the square:
 
-![A screenshot of a star centered on a circle, which is](https://docs-assets.developer.apple.com/published/636dc94ec79008e94db2b7b0f7bca91f/View-overlay-3%402x.png)
+![A screenshot of a star centered on a circle, which is](/images/com.apple.SwiftUI/View-overlay-3@2x.png)
 
 If you specify an alignment for the overlay, it applies to the implicit stack rather than to the individual views in the closure. You can see this if you add the [`bottom`](alignment/bottom.md) alignment:
 
@@ -85,7 +85,7 @@ Color.blue
 
 The circle and the star move down as a unit to align the stack’s bottom edge with the bottom edge of the square, while the star remains centered on the circle:
 
-![A screenshot of a star centered on a circle, which is on a square.](https://docs-assets.developer.apple.com/published/04f713a3a16278b631260f43368cd385/View-overlay-3a%402x.png)
+![A screenshot of a star centered on a circle, which is on a square.](/images/com.apple.SwiftUI/View-overlay-3a@2x.png)
 
 To control the placement of individual items inside the `content` closure, either use a different overlay modifier for each item, as the earlier example of stars in the corners of a rectangle demonstrates, or add an explicit [`ZStack`](zstack.md) inside the content closure with its own alignment:
 
@@ -103,7 +103,7 @@ Color.blue
 
 The stack alignment ensures that the star’s bottom edge aligns with the circle’s, while the overlay aligns the composite view with the square:
 
-![A screenshot of a star, a circle, and a square with all their](https://docs-assets.developer.apple.com/published/e6b247cd2ef7a62a8b69f351ca17ae55/View-overlay-4%402x.png)
+![A screenshot of a star, a circle, and a square with all their](/images/com.apple.SwiftUI/View-overlay-4@2x.png)
 
 You can achieve layering without an overlay modifier by putting both the modified view and the overlay content into a [`ZStack`](zstack.md). This can produce a simpler view hierarchy, but changes the layout priority that SwiftUI applies to the views. Use the overlay modifier when you want the modified view to dominate the layout.
 

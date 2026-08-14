@@ -18,7 +18,7 @@ Analyze audio content and extract music information.
 
 Use the Music Understanding framework to analyze your audio content and receive information like the rhythm, pace, loudness, key, and instrument activity.
 
-![Framework overview art showing a music note and audio stream.](https://docs-assets.developer.apple.com/published/0cae6e395374de96392a2f2e2ac9295c/music-understanding-hero%402x.png)
+![Framework overview art showing a music note and audio stream.](/images/com.apple.MusicUnderstanding/music-understanding-hero@2x.png)
 
 You create a [`MusicUnderstandingSession`](musicunderstandingsession.md), specify which analysis to run, and receive the results. When complete, the framework presents the results in a single aggregate from [`MusicUnderstandingSession.SessionResult`](musicunderstandingsession/sessionresult.md), or as a livestream of partial results. You can provide audio from an `AVAsset` for file-based analysis of a complete audio track, or an `AsyncSequence` of `AVReadOnlyAudioPCMBuffer` for a stream analysis of audio buffers.
 

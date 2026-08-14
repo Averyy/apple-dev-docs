@@ -22,7 +22,7 @@ let kCGImageAnimationDelayTime: CFString
 
 #### Discussion
 
-The value of this property is a [`CFNumber`](https://developer.apple.com/documentation/CoreFoundation/CFNumber) with a floating-point value. To override the delay time value in the image file, include this property in the options dictionary when animating an image.
+The value of this property is a [`CFNumber`](https://developer.apple.com/documentation/corefoundation/cfnumber) with a floating-point value. To override the delay time value in the image file, include this property in the options dictionary when animating an image.
 
 ## See Also
 

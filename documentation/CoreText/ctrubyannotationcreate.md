@@ -33,7 +33,7 @@ Use this function to create a ruby annotation object in the most straightforward
 - `alignment`: An alignment value that specifies how the ruby text and the base text align relative to each other.
 - `overhang`: An overhang value that specifies how the ruby text overhangs adjacent characters.
 - `sizeFactor`: A size factor that specifies the annotation text size as a percentage of the base text size.
-- `text`: An array of [`CFString`](https://developer.apple.com/documentation/CoreFoundation/CFString) objects, indexed by [`CTRubyPosition`](ctrubyposition.md). Pass in `NULL` for any unused positions.
+- `text`: An array of [`CFString`](https://developer.apple.com/documentation/corefoundation/cfstring) objects, indexed by [`CTRubyPosition`](ctrubyposition.md). Pass in `NULL` for any unused positions.
 
 ## See Also
 

@@ -20,11 +20,11 @@ Support advancements in SwiftUI accessibility to make your app accessible to eve
 Open the sample code project in Xcode. Before building it, do the following:
 
 1. Set the developer team for all targets to your team so Xcode automatically manages the provisioning profile. For more information, see [`Assign a project to a team`](https://developer.apple.comhttps://help.apple.com/xcode/mac/current/#/dev23aab79b4).
-2. Replace the App Group container identifier — `group.SwiftUIAccessibilityWWDCSample` — with one specific to your team for the entire project. The identifier points to an App Group container that the app and widget use to share data. You can search for `group.SwiftUIAccessibilityWWDCSample` using the Find navigator in Xcode, and then change all of the occurrences (except those in this `README` file). For more information, see [`Configuring app groups`](https://developer.apple.com/documentation/Xcode/configuring-app-groups).
+2. Replace the App Group container identifier — `group.SwiftUIAccessibilityWWDCSample` — with one specific to your team for the entire project. The identifier points to an App Group container that the app and widget use to share data. You can search for `group.SwiftUIAccessibilityWWDCSample` using the Find navigator in Xcode, and then change all of the occurrences (except those in this `README` file). For more information, see [`Configuring app groups`](https://developer.apple.com/documentation/xcode/configuring-app-groups).
 
 ## See Also
 
-- [Creating accessible views](../SwiftUI/creating-accessible-views.md)
+- [Creating accessible views](../swiftui/creating-accessible-views.md)
   Make your app accessible to everyone by applying accessibility modifiers to your SwiftUI views.
 - [Delivering an exceptional accessibility experience](delivering_an_exceptional_accessibility_experience.md)
   Make improvements to your app’s interaction model to support assistive technologies such as VoiceOver.

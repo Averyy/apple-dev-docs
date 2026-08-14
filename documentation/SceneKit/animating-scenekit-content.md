@@ -42,7 +42,7 @@ Listing 1. Implicit animation that makes a block of text fall out of the scene w
 
 For more complex animations, you can explicitly create an animation object and attach it to the scene element being animated. Creating an animation object also makes an animation reusable, so you can play the same animation at any time on demand or apply it to different elements of your scene.
 
-Choose a [`CAAnimation`](https://developer.apple.com/documentation/QuartzCore/CAAnimation) subclass for the type of animation you want to create, specify the property to be animated using key-value coding, and set animation parameters. You then set the animation in motion by attaching it to one or more elements of your scene, as shown in [`Animating SceneKit Content`](animating-scenekit-content.md).
+Choose a [`CAAnimation`](https://developer.apple.com/documentation/quartzcore/caanimation) subclass for the type of animation you want to create, specify the property to be animated using key-value coding, and set animation parameters. You then set the animation in motion by attaching it to one or more elements of your scene, as shown in [`Animating SceneKit Content`](animating-scenekit-content.md).
 
 By using different Core Animation classes, you can combine or sequence several animations or create animations that interpolate a property’s value between several keyframe values. For more about creating animation objects, see [`Core Animation Programming Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/CoreAnimation_guide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40004514). For more about attaching animations to SceneKit objects, see [`SCNAnimatable`](scnanimatable.md).
 
@@ -72,7 +72,7 @@ animation.repeatCount = INFINITY;
 [_textNode addAnimation:animation forKey:@"extrude"];
 ```
 
-SceneKit also uses [`CAAnimation`](https://developer.apple.com/documentation/QuartzCore/CAAnimation) objects for animations created using external 3D authoring tools and saved in scene files. For example, an artist might create a game character with animations for walking, jumping, and other actions. You incorporate these animations into your game by loading animation objects from the scene file using the [`SCNSceneSource`](scnscenesource.md) class and attaching them to the [`SCNNode`](scnnode.md) object that represents the game character.
+SceneKit also uses [`CAAnimation`](https://developer.apple.com/documentation/quartzcore/caanimation) objects for animations created using external 3D authoring tools and saved in scene files. For example, an artist might create a game character with animations for walking, jumping, and other actions. You incorporate these animations into your game by loading animation objects from the scene file using the [`SCNSceneSource`](scnscenesource.md) class and attaching them to the [`SCNNode`](scnnode.md) object that represents the game character.
 
 
 ---

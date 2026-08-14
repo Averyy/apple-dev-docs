@@ -21,7 +21,7 @@ subscript(layerIndex: Int) -> MTLRasterizationRateLayerDescriptor? { get set }
 
 #### Return Value
 
-An [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) instance describing the value of the sample at the specified index, or `0` if the index is out of range.
+An [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) instance describing the value of the sample at the specified index, or `0` if the index is out of range.
 
 ## Parameters
 

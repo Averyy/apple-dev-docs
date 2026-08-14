@@ -22,7 +22,7 @@ An object that describes the content of a Live Activity.
 
 #### Overview
 
-To learn more about offering Live Activities for your app, see [`ActivityKit`](https://developer.apple.com/documentation/ActivityKit).
+To learn more about offering Live Activities for your app, see [`ActivityKit`](https://developer.apple.com/documentation/activitykit).
 
 ## Topics
 
@@ -35,15 +35,15 @@ To learn more about offering Live Activities for your app, see [`ActivityKit`](h
 ## Relationships
 
 ### Conforms To
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
-- [WidgetConfiguration](../SwiftUI/WidgetConfiguration.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
+- [WidgetConfiguration](../swiftui/widgetconfiguration.md)
 
 ## See Also
 
-- [Displaying live data with Live Activities](../ActivityKit/displaying-live-data-with-live-activities.md)
+- [Displaying live data with Live Activities](../activitykit/displaying-live-data-with-live-activities.md)
   Display up-to-date data and offer quick interactions in the Dynamic Island, on the Lock Screen, in CarPlay, and on a paired Mac or Apple Watch.
-- [ActivityKit](../ActivityKit/ActivityKit.md)
+- [ActivityKit](../activitykit/activitykit.md)
   Share live updates from your app as Live Activities on iPhone, iPad, Apple Watch, and the Mac.
 - [Creating a widget extension](creating-a-widget-extension.md)
   Display your app’s content in a convenient, informative widget on various devices.

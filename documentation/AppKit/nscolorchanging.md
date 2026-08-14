@@ -25,7 +25,7 @@ When the user selects a color in an [`NSColorPanel`](nscolorpanel.md) object, th
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 ### Conforming Types
 - [NSTextView](nstextview.md)
 

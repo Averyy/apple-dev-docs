@@ -23,7 +23,7 @@ func invert()
 
 For example, a value of `1.0` becomes `-1.0`, a value of `-0.5` becomes `0.5`, and so on.
 
-![None](https://docs-assets.developer.apple.com/published/be0782532bbccce465c4910d2a585c15/media-2556378%402x.png)
+![None](/images/com.apple.gameplaykit/media-2556378@2x.png)
 
 ## See Also
 

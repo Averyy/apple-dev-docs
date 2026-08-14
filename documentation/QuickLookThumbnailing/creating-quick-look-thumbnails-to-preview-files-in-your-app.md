@@ -8,11 +8,11 @@ Generate thumbnails of images, text files, PDFs, audio files, videos, and more.
 
 Apps often need to display a small, high-quality miniature representation, or *thumbnail*, of a file or its content. The QuickLookThumbnailing framework provides a fast way to generate thumbnails for file types with the [`QLThumbnailGenerator`](qlthumbnailgenerator.md) object. It can create thumbnails for many common file types, including:
 
-- Images, including raw image file types (the list of supported image formats varies for each platform; use the [`CGImageSourceCopyTypeIdentifiers()`](https://developer.apple.com/documentation/ImageIO/CGImageSourceCopyTypeIdentifiers()) method to retrieve a list of supported image types)
+- Images, including raw image file types (the list of supported image formats varies for each platform; use the [`CGImageSourceCopyTypeIdentifiers()`](https://developer.apple.com/documentation/imageio/cgimagesourcecopytypeidentifiers()) method to retrieve a list of supported image types)
 - Live Photos
 - Text files
 - PDF files
-- Audio and video files (use [`AVURLAsset`](https://developer.apple.com/documentation/AVFoundation/AVURLAsset)’s [`audiovisualTypes()`](https://developer.apple.com/documentation/AVFoundation/AVURLAsset/audiovisualTypes()) method to retrieve a list of supported audio and video formats)
+- Audio and video files (use [`AVURLAsset`](https://developer.apple.com/documentation/avfoundation/avurlasset)’s [`audiovisualTypes()`](https://developer.apple.com/documentation/avfoundation/avurlasset/audiovisualtypes()) method to retrieve a list of supported audio and video formats)
 - Augmented reality objects using the `USDZ` file format (iOS and iPadOS only)
 
 If an installed app implements a Thumbnail Extension that supports a custom file type, other apps can use [`QLThumbnailGenerator`](qlthumbnailgenerator.md) to create thumbnails of the custom file type. Read [`Providing Thumbnails of Your Custom File Types`](providing-thumbnails-of-your-custom-file-types.md) to learn more about adding a Thumbnail Extension to your app.
@@ -23,7 +23,7 @@ Import the QuickLookThumbnailing framework and use [`QLThumbnailGenerator`](qlth
 
 - To create the best possible thumbnail, use the [`generateBestRepresentation(for:completion:)`](qlthumbnailgenerator/generatebestrepresentation(for:completion:).md) method.
 - Use the [`generateRepresentations(for:update:)`](qlthumbnailgenerator/generaterepresentations(for:update:).md) method to create a file icon or low-quality thumbnail quickly, and replace it with a higher quality thumbnail once it’s available. QuickLookThumbnailing calls the `updateHandler` in order of lower quality to higher quality thumbnail types. If a better quality thumbnail becomes available before a lower quality one, the framework may skip the call to the `updateHandler` for the lower quality thumbnail. You can rely on QuickLookThumbnailing to call the `updateHandler` at least once by the time it finishes the creation of thumbnails with either the best requested thumbnail, or an error object.
-- Creating high-quality thumbnails often involves compressing a [`CGImage`](https://developer.apple.com/documentation/CoreGraphics/CGImage) as a `PNG` or `JPEG` file in-process. This task requires more resources than are available in resource-constrained environments such as File Provider Extensions. Use the [`saveBestRepresentation(for:to:contentType:completion:)`](qlthumbnailgenerator/savebestrepresentation(for:to:contenttype:completion:).md) method to create and save the thumbnail image outside of your process as it doesn’t impose the same constraints on memory usage.
+- Creating high-quality thumbnails often involves compressing a [`CGImage`](https://developer.apple.com/documentation/coregraphics/cgimage) as a `PNG` or `JPEG` file in-process. This task requires more resources than are available in resource-constrained environments such as File Provider Extensions. Use the [`saveBestRepresentation(for:to:contentType:completion:)`](qlthumbnailgenerator/savebestrepresentation(for:to:contenttype:completion:).md) method to create and save the thumbnail image outside of your process as it doesn’t impose the same constraints on memory usage.
 
 The following code listing generates all possible thumbnail representations for an image:
 

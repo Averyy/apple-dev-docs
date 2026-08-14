@@ -14,9 +14,9 @@ Create synchronized media experiences that enable users to watch and listen acro
 
 Watching TV and movies, and listening to music, can be more fun when you do it with friends and family. However, getting together in person isn’t always an option. Beginning with iOS 15, tvOS 15, and macOS 12, you have the ability to create media apps that let people watch and listen together wherever they are. This capability is possible using AVFoundation and the new GroupActivities frameworks.
 
-AVFoundation introduces a new class, [`AVPlayerPlaybackCoordinator`](avplayerplaybackcoordinator.md), that synchronizes the timing of [`AVPlayer`](avplayer.md) objects across devices. Apps use the GroupActivities framework to connect playback coordinators using a [`GroupSession`](https://developer.apple.com/documentation/GroupActivities/GroupSession) object.
+AVFoundation introduces a new class, [`AVPlayerPlaybackCoordinator`](avplayerplaybackcoordinator.md), that synchronizes the timing of [`AVPlayer`](avplayer.md) objects across devices. Apps use the GroupActivities framework to connect playback coordinators using a [`GroupSession`](https://developer.apple.com/documentation/groupactivities/groupsession) object.
 
-![A diagram that represents two devices with a connection through a GroupSession object. Device 1 and Device 2 each contain representations of the app, AVPlayer, AVPlayerItem, and AVPlayerPlaybackCoordinator relationships. The two AVPlayerPlaybackCoordinator items have a two-way dotted-line connection between the two devices.](https://docs-assets.developer.apple.com/published/ed4faf2bc2c9250ca5ee0a4b5e2cc862/session_coordination.png)
+![A diagram that represents two devices with a connection through a GroupSession object. Device 1 and Device 2 each contain representations of the app, AVPlayer, AVPlayerItem, and AVPlayerPlaybackCoordinator relationships. The two AVPlayerPlaybackCoordinator items have a two-way dotted-line connection between the two devices.](/images/com.apple.avfoundation/session_coordination.png)
 
 This sample app shows you how to add coordinated media playback support to your app. It provides a simple movie-playing app, where a user selects a movie from the library and plays it in a standard player user interface.
 
@@ -39,7 +39,7 @@ struct Movie: Hashable, Codable {
 }
 ```
 
-To make movie watching a group experience, the sample creates a structure called `MovieWatchingActivity` that adopts the [`GroupActivity`](https://developer.apple.com/documentation/GroupActivities/GroupActivity) protocol. This protocol defines a shareable experience in the app. The activity stores the movie to share with the group, and provides supporting metadata that the system displays when a user shares an activity.
+To make movie watching a group experience, the sample creates a structure called `MovieWatchingActivity` that adopts the [`GroupActivity`](https://developer.apple.com/documentation/groupactivities/groupactivity) protocol. This protocol defines a shareable experience in the app. The activity stores the movie to share with the group, and provides supporting metadata that the system displays when a user shares an activity.
 
 ```swift
 // A group activity to watch a movie together.
@@ -59,11 +59,11 @@ struct MovieWatchingActivity: GroupActivity {
 }
 ```
 
-> **Note**: `GroupActivity` extends [`Codable`](https://developer.apple.com/documentation/Swift/Codable), so any data that an activity stores must also conform to `Codable`.
+> **Note**: `GroupActivity` extends [`Codable`](https://developer.apple.com/documentation/swift/codable), so any data that an activity stores must also conform to `Codable`.
 
 ##### Share an Activity
 
-When a user selects a movie, the sample determines whether it needs to play the movie for the current user only, or share it with the group. It makes this determination by calling the activity’s asynchronous [`prepareForActivation()`](https://developer.apple.com/documentation/GroupActivities/GroupActivity/prepareForActivation()) method, which enables the system to present an interface for the user to select their preferred action.
+When a user selects a movie, the sample determines whether it needs to play the movie for the current user only, or share it with the group. It makes this determination by calling the activity’s asynchronous [`prepareForActivation()`](https://developer.apple.com/documentation/groupactivities/groupactivity/prepareforactivation()) method, which enables the system to present an interface for the user to select their preferred action.
 
 ```swift
 // Create a new activity for the selected movie.
@@ -94,11 +94,11 @@ default: ()
 }
 ```
 
-The call returns a result that indicates the appropriate action to take. A result of [`GroupActivityActivationResult.activationDisabled`](https://developer.apple.com/documentation/GroupActivities/GroupActivityActivationResult/activationDisabled) indicates that group playback isn’t active, or the user selects to play the movie locally only. In this case, the app sets the movie as the `enqueuedMovie`, which enqueues it for local playback. A result of [`GroupActivityActivationResult.activationPreferred`](https://developer.apple.com/documentation/GroupActivities/GroupActivityActivationResult/activationPreferred) indicates that group playback is possible, and the user wants to start a group activity. When this occurs, the sample calls the activity’s [`activate()`](https://developer.apple.com/documentation/GroupActivities/GroupActivity/activate()) method, which starts a group session and shares the activity with the group. The sample doesn’t immediately enqueue the movie for playback, but instead waits until the group session notifies all participants of the new activity.
+The call returns a result that indicates the appropriate action to take. A result of [`GroupActivityActivationResult.activationDisabled`](https://developer.apple.com/documentation/groupactivities/groupactivityactivationresult/activationdisabled) indicates that group playback isn’t active, or the user selects to play the movie locally only. In this case, the app sets the movie as the `enqueuedMovie`, which enqueues it for local playback. A result of [`GroupActivityActivationResult.activationPreferred`](https://developer.apple.com/documentation/groupactivities/groupactivityactivationresult/activationpreferred) indicates that group playback is possible, and the user wants to start a group activity. When this occurs, the sample calls the activity’s [`activate()`](https://developer.apple.com/documentation/groupactivities/groupactivity/activate()) method, which starts a group session and shares the activity with the group. The sample doesn’t immediately enqueue the movie for playback, but instead waits until the group session notifies all participants of the new activity.
 
 ##### Await Group Sessions
 
-When the sample activates a `MovieWatchingActivity`, the system creates a group session. It accesses the session by calling the [`sessions()`](https://developer.apple.com/documentation/GroupActivities/GroupActivity/sessions()) method, which returns sessions for the activity as an asynchronous sequence.
+When the sample activates a `MovieWatchingActivity`, the system creates a group session. It accesses the session by calling the [`sessions()`](https://developer.apple.com/documentation/groupactivities/groupactivity/sessions()) method, which returns sessions for the activity as an asynchronous sequence.
 
 ```swift
 // Await new sessions to watch movies together.
@@ -190,7 +190,7 @@ After the local device catches up with group playback, the sample ends the suspe
 
 ## See Also
 
-- [Destination Video](../visionOS/destination-video.md)
+- [Destination Video](../visionos/destination-video.md)
   Leverage SwiftUI to build an immersive media experience in a multiplatform app.
 - [class AVPlaybackCoordinator](avplaybackcoordinator.md)
   An object that coordinates the playback of players in a connected group.

@@ -35,9 +35,9 @@ For more information, refer to [`Increasing the visibility of widgets in Smart S
 ## Relationships
 
 ### Conforms To
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
-- [WidgetConfiguration](../SwiftUI/WidgetConfiguration.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
+- [WidgetConfiguration](../swiftui/widgetconfiguration.md)
 
 ## See Also
 

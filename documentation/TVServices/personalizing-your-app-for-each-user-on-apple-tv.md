@@ -12,13 +12,13 @@ If your app doesn’t include the `User Management` capability, the system runs 
 
 ##### Access the Current Users Data
 
-In most cases, managing each user’s data in their Apple account provides the best user experience, but it requires some support in your app. In order to provide a personalized experience in your app, enable the `Runs as Current User` privilege in the [`User Management Entitlement`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.user-management) capability. This entitlement grants your app access to data for the current user in keychain, preferences, iCloud, and Game Center.
+In most cases, managing each user’s data in their Apple account provides the best user experience, but it requires some support in your app. In order to provide a personalized experience in your app, enable the `Runs as Current User` privilege in the [`User Management Entitlement`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.user-management) capability. This entitlement grants your app access to data for the current user in keychain, preferences, iCloud, and Game Center.
 
-Implement [`applicationWillTerminate(_:)`](https://developer.apple.com/documentation/UIKit/UIApplicationDelegate/applicationWillTerminate(_:)) to save data in case a user switch occurs while your app is in the foreground. Make sure you’re using [`applicationWillResignActive(_:)`](https://developer.apple.com/documentation/UIKit/UIApplicationDelegate/applicationWillResignActive(_:)) to save data whenever the user switches away from your app.
+Implement [`applicationWillTerminate(_:)`](https://developer.apple.com/documentation/uikit/uiapplicationdelegate/applicationwillterminate(_:)) to save data in case a user switch occurs while your app is in the foreground. Make sure you’re using [`applicationWillResignActive(_:)`](https://developer.apple.com/documentation/uikit/uiapplicationdelegate/applicationwillresignactive(_:)) to save data whenever the user switches away from your app.
 
 ##### Optimize Data Usage
 
-When your app receives a push notification from CloudKit, use [`subscriptionOwnerUserRecordID`](https://developer.apple.com/documentation/CloudKit/CKNotification/subscriptionOwnerUserRecordID) to check whether the update is for the current user. If the notification is for another user on this device, you may choose to ignore the push, and get the data the next time the other user accesses your app.
+When your app receives a push notification from CloudKit, use [`subscriptionOwnerUserRecordID`](https://developer.apple.com/documentation/cloudkit/cknotification/subscriptionowneruserrecordid) to check whether the update is for the current user. If the notification is for another user on this device, you may choose to ignore the push, and get the data the next time the other user accesses your app.
 
 ## See Also
 

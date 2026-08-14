@@ -16,7 +16,7 @@ var contents: Any? { get set }
 
 #### Discussion
 
-Typically you set an [`NSImage`](nsimage.md) instance or a [`CGImage`](https://developer.apple.com/documentation/CoreGraphics/CGImage) as content.
+Typically you set an [`NSImage`](nsimage.md) instance or a [`CGImage`](https://developer.apple.com/documentation/coregraphics/cgimage) as content.
 
 ## See Also
 

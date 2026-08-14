@@ -21,15 +21,15 @@ func enumerateContacts(with fetchRequest: CNContactFetchRequest, usingBlock bloc
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/Swift/true) if enumeration of all contacts matching a contact fetch request executes successfully; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
+[`true`](https://developer.apple.com/documentation/swift/true) if enumeration of all contacts matching a contact fetch request executes successfully; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
 
 #### Discussion
 
-This method waits until the enumeration is finished. If there are no results, the block is not called and the method returns [`true`](https://developer.apple.com/documentation/Swift/true).
+This method waits until the enumeration is finished. If there are no results, the block is not called and the method returns [`true`](https://developer.apple.com/documentation/swift/true).
 
 This method can fetch all contacts without keeping all of them at once in memory, which is expensive.
 
-> **Note**: In Swift, this method returns `Void` and is marked with the `throws` keyword to indicate that it throws an error in cases of failure. You call this method in a `try` expression and handle any errors in the `catch` clauses of a `do` statement, as described in [`Error Handling`](https://developer.apple.comhttps://docs.swift.org/swift-book/LanguageGuide/ErrorHandling.html) in [`The Swift Programming Language`](https://developer.apple.comhttps://docs.swift.org/swift-book/) and [`About Imported Cocoa Error Parameters`](https://developer.apple.com/documentation/Swift/about-imported-cocoa-error-parameters).
+> **Note**: In Swift, this method returns `Void` and is marked with the `throws` keyword to indicate that it throws an error in cases of failure. You call this method in a `try` expression and handle any errors in the `catch` clauses of a `do` statement, as described in [`Error Handling`](https://developer.apple.comhttps://docs.swift.org/swift-book/LanguageGuide/ErrorHandling.html) in [`The Swift Programming Language`](https://developer.apple.comhttps://docs.swift.org/swift-book/) and [`About Imported Cocoa Error Parameters`](https://developer.apple.com/documentation/swift/about-imported-cocoa-error-parameters).
 
 ## Parameters
 

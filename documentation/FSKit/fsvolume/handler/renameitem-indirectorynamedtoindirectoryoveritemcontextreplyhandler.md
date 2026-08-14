@@ -23,7 +23,7 @@ Implement renaming along the lines of this algorithm:
 - If the source and destination directories are the same: - Rewrite the name in the existing directory.
 - Else: - Write the new entry in the destination directory.
 - Clear the old directory entry.
-- If `item` is a directory: - If the destination directory exists: - If the destination directory isn’t empty: - Fail the operation with an error of [`NSPOSIXErrorDomain`](https://developer.apple.com/documentation/Foundation/NSPOSIXErrorDomain) and a code of `ENOTEMPTY`.
+- If `item` is a directory: - If the destination directory exists: - If the destination directory isn’t empty: - Fail the operation with an error of [`NSPOSIXErrorDomain`](https://developer.apple.com/documentation/foundation/nsposixerrordomain) and a code of `ENOTEMPTY`.
 - Else: - Remove the destination directory.
 - If the source and destination directories are the same: - Rewrite the name in the existing directory.
 - Else: - If the destination is a child of the source directory: - Fail the operation with an error.

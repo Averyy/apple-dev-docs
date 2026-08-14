@@ -23,9 +23,9 @@ The request’s sort descriptors, accessed as reference types.
 
 #### Discussion
 
-Set this value to cause the associated [`FetchRequest`](fetchrequest.md) to execute a fetch with a new collection of [`NSSortDescriptor`](https://developer.apple.com/documentation/Foundation/NSSortDescriptor) instances. The order of managed objects stored in the results collection may change as a result.
+Set this value to cause the associated [`FetchRequest`](fetchrequest.md) to execute a fetch with a new collection of [`NSSortDescriptor`](https://developer.apple.com/documentation/foundation/nssortdescriptor) instances. The order of managed objects stored in the results collection may change as a result.
 
-If you want to use [`SortDescriptor`](https://developer.apple.com/documentation/Foundation/SortDescriptor) instances, set [`sortDescriptors`](fetchedresults/sortdescriptors.md) instead.
+If you want to use [`SortDescriptor`](https://developer.apple.com/documentation/foundation/sortdescriptor) instances, set [`sortDescriptors`](fetchedresults/sortdescriptors.md) instead.
 
 ## See Also
 

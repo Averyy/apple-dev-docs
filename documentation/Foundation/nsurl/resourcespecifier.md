@@ -24,7 +24,7 @@ var resourceSpecifier: String? { get }
 
 This property contains the resource specifier. Any percent-encoded characters are not unescaped. For example, in the URL `http://www.example.com/index.html?key1=value1#jumplink`, the resource specifier is `//www.example.com/index.html?key1=value1#jumplink` (everything after the colon).
 
-> ❗ **Important**:  If the receiver does not specify a net location portion of the URL, as returned by the toll-free bridged `CFURL` function [`CFURLCopyNetLocation(_:)`](https://developer.apple.com/documentation/CoreFoundation/CFURLCopyNetLocation(_:)), then this method returns only the path of the receiver. For example, in the URL `file:///file.txt`, the resource specifier is `/file.txt`.
+> ❗ **Important**:  If the receiver does not specify a net location portion of the URL, as returned by the toll-free bridged `CFURL` function [`CFURLCopyNetLocation(_:)`](https://developer.apple.com/documentation/corefoundation/cfurlcopynetlocation(_:)), then this method returns only the path of the receiver. For example, in the URL `file:///file.txt`, the resource specifier is `/file.txt`.
 
 ## See Also
 

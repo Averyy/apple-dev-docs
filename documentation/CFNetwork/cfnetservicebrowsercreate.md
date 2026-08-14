@@ -39,7 +39,7 @@ This function is thread safe.
 
 ## Parameters
 
-- `alloc`: The allocator to use to allocate memory for the new object. Pass `NULL` or [`kCFAllocatorDefault`](https://developer.apple.com/documentation/CoreFoundation/kCFAllocatorDefault) to use the current default allocator.
+- `alloc`: The allocator to use to allocate memory for the new object. Pass `NULL` or [`kCFAllocatorDefault`](https://developer.apple.com/documentation/corefoundation/kcfallocatordefault) to use the current default allocator.
 - `clientCB`: Callback function that is to be called when domains and services are found; cannot be `NULL`. For details, see [`CFNetServiceBrowserClientCallBack`](cfnetservicebrowserclientcallback.md).
 - `clientContext`: Context information to be used when `clientCB` is called; cannot be `NULL`. For details, see [`CFNetServiceClientContext`](cfnetserviceclientcontext.md).
 

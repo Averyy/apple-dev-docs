@@ -6,7 +6,7 @@ Update your apps to use new features, and test your apps against API changes.
 
 #### Overview
 
-The iOS & iPadOS 16.2 SDK provides support to develop apps for iPhone and iPad running iOS & iPadOS 16.3. The SDK comes bundled with Xcode 14.2, available from the Mac App Store. For information on the compatibility requirements for Xcode 14.2, see [`Xcode 14.2 Release Notes`](https://developer.apple.com/documentation/Xcode-Release-Notes/xcode-14_2-release-notes).
+The iOS & iPadOS 16.2 SDK provides support to develop apps for iPhone and iPad running iOS & iPadOS 16.3. The SDK comes bundled with Xcode 14.2, available from the Mac App Store. For information on the compatibility requirements for Xcode 14.2, see [`Xcode 14.2 Release Notes`](https://developer.apple.com/documentation/xcode-release-notes/xcode-14_2-release-notes).
 
 ##### General
 

@@ -22,7 +22,7 @@ let kSecTrustRevocationValidUntilDate: CFString
 
 #### Discussion
 
-This key is only present if the [`kSecTrustRevocationChecked`](ksectrustrevocationchecked.md) key has a value of [`kCFBooleanTrue`](https://developer.apple.com/documentation/CoreFoundation/kCFBooleanTrue). The value is a [`CFDate`](https://developer.apple.com/documentation/CoreFoundation/CFDate) representing the earliest date at which the revocation information for one of the certificates in this chain might change.
+This key is only present if the [`kSecTrustRevocationChecked`](ksectrustrevocationchecked.md) key has a value of [`kCFBooleanTrue`](https://developer.apple.com/documentation/corefoundation/kcfbooleantrue). The value is a [`CFDate`](https://developer.apple.com/documentation/corefoundation/cfdate) representing the earliest date at which the revocation information for one of the certificates in this chain might change.
 
 
 ---

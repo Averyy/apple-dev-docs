@@ -21,7 +21,7 @@ class func registerViewProviderClass(_ textAttachmentViewProviderClass: AnyClass
 ## Parameters
 
 - `textAttachmentViewProviderClass`: The text attachment view provider class.
-- `fileType`: A [`String`](https://developer.apple.com/documentation/Swift/String) that represents the file type.
+- `fileType`: A [`String`](https://developer.apple.com/documentation/swift/string) that represents the file type.
 
 ## See Also
 

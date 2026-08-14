@@ -28,7 +28,7 @@ To remove the stream from the queue on which it was scheduled, call [`FSEventStr
 ## Parameters
 
 - `streamRef`: A valid stream.
-- `q`: The dispatch queue to use to receive events (or   to stop receiving events from the stream).
+- `q`: The dispatch queue to use to receive events (or `NULL` to stop receiving events from the stream).
 
 
 ---

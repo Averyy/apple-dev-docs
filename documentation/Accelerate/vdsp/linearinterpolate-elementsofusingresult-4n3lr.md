@@ -46,7 +46,7 @@ let result = vDSP.linearInterpolate(elementsOf: values,
 
 The following figure visualizes the elements in `result`.
 
-![A graph of the linearly interpolated values based on a control vector created with a ramp.](https://docs-assets.developer.apple.com/published/0d5856610f65ab0f6294cdb17a50010d/media-3512160%402x.png)
+![A graph of the linearly interpolated values based on a control vector created with a ramp.](/images/com.apple.accelerate/media-3512160@2x.png)
 
 By changing the technique used to form the fractional parts of the control vector, you change the interpolation between the values in the source vector. The following code uses a sigmoid function—that is, a function that has an “S” shaped curve—to populate the control vector:
 
@@ -67,7 +67,7 @@ let result = vDSP.linearInterpolate(elementsOf: values,
 
 The following figure visualizes the elements in `result` using hyperbolic tangent for the sigmoid function.
 
-![A graph of the linearly interpolated values based on a control vector created with a sigmoid function.](https://docs-assets.developer.apple.com/published/4678ecddd904bcf461a943c01486a70b/media-3512155%402x.png)
+![A graph of the linearly interpolated values based on a control vector created with a sigmoid function.](/images/com.apple.accelerate/media-3512155@2x.png)
 
 ## Parameters
 

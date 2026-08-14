@@ -20,13 +20,13 @@ optional func activityViewControllerLinkMetadata(_ activityViewController: UIAct
 
 #### Return Value
 
-The [`LPLinkMetadata`](https://developer.apple.com/documentation/LinkPresentation/LPLinkMetadata) object that contains the metadata about a URL, including its title, icon, images, and video.
+The [`LPLinkMetadata`](https://developer.apple.com/documentation/linkpresentation/lplinkmetadata) object that contains the metadata about a URL, including its title, icon, images, and video.
 
 #### Discussion
 
-Using the [`Link Presentation`](https://developer.apple.com/documentation/LinkPresentation) framework, you can display rich previews of web links inside your app. For instance, if your app already has a database of links, with titles and images that weren’t fetched by [`LPMetadataProvider`](https://developer.apple.com/documentation/LinkPresentation/LPMetadataProvider), you don’t have to fetch new metadata from the internet. Use this method instead and avoid downloading it again.
+Using the [`Link Presentation`](https://developer.apple.com/documentation/linkpresentation) framework, you can display rich previews of web links inside your app. For instance, if your app already has a database of links, with titles and images that weren’t fetched by [`LPMetadataProvider`](https://developer.apple.com/documentation/linkpresentation/lpmetadataprovider), you don’t have to fetch new metadata from the internet. Use this method instead and avoid downloading it again.
 
-In your implementation, create an [`LPLinkMetadata`](https://developer.apple.com/documentation/LinkPresentation/LPLinkMetadata) object, and fill in at least the [`originalURL`](https://developer.apple.com/documentation/LinkPresentation/LPLinkMetadata/originalURL) and [`url`](https://developer.apple.com/documentation/LinkPresentation/LPLinkMetadata/url) fields, plus whatever additional information you have.
+In your implementation, create an [`LPLinkMetadata`](https://developer.apple.com/documentation/linkpresentation/lplinkmetadata) object, and fill in at least the [`originalURL`](https://developer.apple.com/documentation/linkpresentation/lplinkmetadata/originalurl) and [`url`](https://developer.apple.com/documentation/linkpresentation/lplinkmetadata/url) fields, plus whatever additional information you have.
 
 ```swift
 func activityViewControllerLinkMetadata(_: UIActivityViewController) -> LPLinkMetadata? {
@@ -40,7 +40,7 @@ func activityViewControllerLinkMetadata(_: UIActivityViewController) -> LPLinkMe
 }
 ```
 
-To learn more about presenting rich links and accelerating the share sheet, see [`Link Presentation`](https://developer.apple.com/documentation/LinkPresentation) and [`LPMetadataProvider`](https://developer.apple.com/documentation/LinkPresentation/LPMetadataProvider), or watch the WWDC 2019 session [`262: Embedding and Sharing Visually Rich Links`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2019/262/).
+To learn more about presenting rich links and accelerating the share sheet, see [`Link Presentation`](https://developer.apple.com/documentation/linkpresentation) and [`LPMetadataProvider`](https://developer.apple.com/documentation/linkpresentation/lpmetadataprovider), or watch the WWDC 2019 session [`262: Embedding and Sharing Visually Rich Links`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2019/262/).
 
 ## Parameters
 

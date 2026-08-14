@@ -35,8 +35,8 @@ Use the threading model constants to specify whether BLAS and LAPACK operations 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../Swift/Equatable.md)
-- [RawRepresentable](../Swift/RawRepresentable.md)
+- [Equatable](../swift/equatable.md)
+- [RawRepresentable](../swift/rawrepresentable.md)
 
 ## See Also
 

@@ -40,7 +40,7 @@ struct InlineTip: Tip {
 
 ##### Load Tips When the App Starts
 
-Before tips display, they must load into the app. The sample initializes and loads all tips the app uses by calling [`configure(_:)`](tips/configure(_:).md). The best practice is to call this once per app session, for example, in the [`init()`](https://developer.apple.com/documentation/SwiftUI/App/init()) method of your app.
+Before tips display, they must load into the app. The sample initializes and loads all tips the app uses by calling [`configure(_:)`](tips/configure(_:).md). The best practice is to call this once per app session, for example, in the [`init()`](https://developer.apple.com/documentation/swiftui/app/init()) method of your app.
 
 ```swift
 @main
@@ -109,7 +109,7 @@ Use this style of tip view if adjusting the underlying layout is undesirable or 
 To display a popover tip:
 
 1. Define an instance of your tip content.
-2. Place the tip on the feature to highlight using the [`popoverTip(_:arrowEdge:action:)`](https://developer.apple.com/documentation/SwiftUI/View/popoverTip(_:arrowEdge:action:)) view modifier, passing in the tip content.
+2. Place the tip on the feature to highlight using the [`popoverTip(_:arrowEdge:action:)`](https://developer.apple.com/documentation/swiftui/view/popovertip(_:arrowedge:action:)) view modifier, passing in the tip content.
 3. Invalidate the tip after someone uses the feature, passing in an instance of [`InvalidationReason`](tips/invalidationreason.md).
 
 ```swift
@@ -481,7 +481,7 @@ The tip displays when the following two rules are met:
 1. The user is logged in (triggered by tapping the Login button).
 2. The user enters the view three times (triggered by navigating in and out of the view).
 
-The sample tracks the number of times the page appears by donating to the event-based rule in the [`onAppear(perform:)`](https://developer.apple.com/documentation/SwiftUI/View/onAppear(perform:)) view modifier.
+The sample tracks the number of times the page appears by donating to the event-based rule in the [`onAppear(perform:)`](https://developer.apple.com/documentation/swiftui/view/onappear(perform:)) view modifier.
 
 ```swift
 .onAppear {

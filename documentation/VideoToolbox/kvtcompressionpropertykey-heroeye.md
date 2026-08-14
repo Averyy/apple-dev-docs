@@ -20,7 +20,7 @@ let kVTCompressionPropertyKey_HeroEye: CFString
 
 #### Discussion
 
-This property sets a value for the [`kCMFormatDescriptionExtension_HeroEye`](https://developer.apple.com/documentation/CoreMedia/kCMFormatDescriptionExtension_HeroEye) format description on the output samples. Supported values are [`kCMFormatDescriptionHeroEye_Left`](https://developer.apple.com/documentation/CoreMedia/kCMFormatDescriptionHeroEye_Left) or [`kCMFormatDescriptionHeroEye_Right`](https://developer.apple.com/documentation/CoreMedia/kCMFormatDescriptionHeroEye_Right).
+This property sets a value for the [`kCMFormatDescriptionExtension_HeroEye`](https://developer.apple.com/documentation/coremedia/kcmformatdescriptionextension_heroeye) format description on the output samples. Supported values are [`kCMFormatDescriptionHeroEye_Left`](https://developer.apple.com/documentation/coremedia/kcmformatdescriptionheroeye_left) or [`kCMFormatDescriptionHeroEye_Right`](https://developer.apple.com/documentation/coremedia/kcmformatdescriptionheroeye_right).
 
 ## Topics
 

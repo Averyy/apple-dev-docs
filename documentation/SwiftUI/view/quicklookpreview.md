@@ -30,7 +30,7 @@ Upon dismissal by the user, Quick Look automatically sets the item binding to `n
 
 ## Parameters
 
-- `item`: A [`Binding`](Binding.md) to a URL that should be previewed.
+- `item`: A [`Binding`](binding.md) to a URL that should be previewed.
 
 ## See Also
 

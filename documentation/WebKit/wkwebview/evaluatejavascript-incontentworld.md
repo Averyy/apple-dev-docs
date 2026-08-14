@@ -21,7 +21,7 @@ Evaluates a JavaScript string in the context of the specified frame and content 
 
 #### Return Value
 
-The result of the script evaluation, or an error object that contains information about the problem that occurred. If your function body doesn’t return an explicit value, WebKit returns `nil` on success. If your function explicitly returns `null`, WebKit returns that value as an [`NSNull`](https://developer.apple.com/documentation/Foundation/NSNull) object.
+The result of the script evaluation, or an error object that contains information about the problem that occurred. If your function body doesn’t return an explicit value, WebKit returns `nil` on success. If your function explicitly returns `null`, WebKit returns that value as an [`NSNull`](https://developer.apple.com/documentation/foundation/nsnull) object.
 
 ## Parameters
 

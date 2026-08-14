@@ -17,7 +17,7 @@ The delivery of remote notifications involves several key components:
 
 Remote notifications begin with your company’s server. You decide which notifications you want to send to your users, and when to send them. When it’s time to send a notification, you generate a request that contains the notification data and a unique identifier for the user’s device. You then forward your request to APNs, which handles the delivery of the notification to the user’s device. Upon receipt of the notification, the operating system on the user’s device handles any user interactions and delivers the notification to your app.
 
-![Your company’s provider server communicates with Apple Push Notification service, which in turn communicates with the user’s devices.](https://docs-assets.developer.apple.com/published/f70fd156eda99becc550aa1e97bc87d6/media-2953615%402x.png)
+![Your company’s provider server communicates with Apple Push Notification service, which in turn communicates with the user’s devices.](/images/com.apple.usernotifications/media-2953615@2x.png)
 
 You’re responsible for setting up a provider server (or servers) and for configuring your app to handle notifications on the user’s device. Apple manages everything in between, including the presentation of notifications to the user. You must also have an app running on the user’s device that can communicate with your server and provide necessary information. For information about how to configure your app to handle remote notifications, see [`Registering your app with APNs`](registering-your-app-with-apns.md).
 

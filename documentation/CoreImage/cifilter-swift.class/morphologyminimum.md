@@ -29,7 +29,7 @@ This method applies the morphology minimum filter to an image. The effect target
 
 The morphology minimum filter uses the following properties:
 
-- **`radius`**: A `float` representing the area of effect as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+- **`radius`**: A `float` representing the area of effect as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
 - **`inputImage`**: A [`CIImage`](ciimage.md) representing the input image to apply the filter to.
 
 The following code creates a filter that adds a blur that adds darkness to the input image:
@@ -44,7 +44,7 @@ The following code creates a filter that adds a blur that adds darkness to the i
     }
 ```
 
-![Two photographs of a beach at sunset with multiple palm trees. The photo on the left is clear and crisp. In the photo on the right, a morphology minimum blur has been applied, making the image hazy and the edges of the palm trees darker and less distinct.](https://docs-assets.developer.apple.com/published/f87f91b3540dad92df7b0c5e58e394f3/media-3544966%402x.png)
+![Two photographs of a beach at sunset with multiple palm trees. The photo on the left is clear and crisp. In the photo on the right, a morphology minimum blur has been applied, making the image hazy and the edges of the palm trees darker and less distinct.](/images/com.apple.coreimage/media-3544966@2x.png)
 
 ## See Also
 

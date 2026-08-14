@@ -24,7 +24,7 @@ protocol URLRepresentableIntent : AppIntent
 
 If your app already supports universal links for content, use this protocol to express your app intent types as URLs. When your app intent supports this protocol, the system can use the provided URL to process it. For example, if your app intent supports this protocol and the [`OpenIntent`](openintent.md) protocol, the system opens the contained item by sending the URL to your app’s URL handling code, allowing you to omit the [`perform()`](appintent/perform().md) method in your type. Having a URL representation for your app intent also makes it easier to share its contents with Siri, Shortcuts, and other system features.
 
-> ❗ **Important**: This protocol requires your app to support universal links. You can’t use this protocol with a custom URL scheme or other approaches. For information about how to add support for universal links, see [`Allowing apps and websites to link to your content`](https://developer.apple.com/documentation/Xcode/allowing-apps-and-websites-to-link-to-your-content).
+> ❗ **Important**: This protocol requires your app to support universal links. You can’t use this protocol with a custom URL scheme or other approaches. For information about how to add support for universal links, see [`Allowing apps and websites to link to your content`](https://developer.apple.com/documentation/xcode/allowing-apps-and-websites-to-link-to-your-content).
 
 Construct URLs using static text and the content of your app intent’s properties. For information on how to create the URL representation, see [`IntentURLRepresentation`](intenturlrepresentation.md).
 
@@ -42,8 +42,8 @@ Construct URLs using static text and the content of your app intent’s properti
 ### Inherits From
 - [AppIntent](appintent.md)
 - [PersistentlyIdentifiable](persistentlyidentifiable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 ### Conforming Types
 - [OpenURLIntent](openurlintent.md)
 

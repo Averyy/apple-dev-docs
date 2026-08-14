@@ -25,7 +25,7 @@ The motion controller profile provides attitude and rotation data, as well as ac
 
 This illustration shows the direction of the x, y, and z axes of an iPhone when held upright.
 
-![An illustration of a vertical iPhone with the  x-axis passing through its center from side to side, the y-axis passing through its center from top to bottom, and the z-axis passing through its center from back to front.](https://docs-assets.developer.apple.com/published/bfa00799a86f2c65db1da8219375e6dd/media-2930224%402x.png)
+![An illustration of a vertical iPhone with the  x-axis passing through its center from side to side, the y-axis passing through its center from top to bottom, and the z-axis passing through its center from back to front.](/images/com.apple.gamecontroller/media-2930224@2x.png)
 
 ## Topics
 
@@ -88,14 +88,14 @@ This illustration shows the direction of the x, y, and z axes of an iPhone when 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

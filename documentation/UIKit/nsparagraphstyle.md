@@ -21,7 +21,7 @@ class NSParagraphStyle
 
 #### Overview
 
-An [`NSParagraphStyle`](nsparagraphstyle.md) object stores formatting information for a paragraph of text. The formatting information includes the amount of space between lines, indentations for lines of text, line heights, tab-stop positions, and more. Apply paragraph styles to the text of an attributed string by adding the [`paragraphStyle`](https://developer.apple.com/documentation/Foundation/NSAttributedString/Key/paragraphStyle) attribute in Swift or the [`NSParagraphStyleAttributeName`](nsparagraphstyleattributename.md) attribute in Objective-C and setting its value to an instance of this class. The text-rendering system uses the paragraph style information in an attributed string to lay out and render the text.
+An [`NSParagraphStyle`](nsparagraphstyle.md) object stores formatting information for a paragraph of text. The formatting information includes the amount of space between lines, indentations for lines of text, line heights, tab-stop positions, and more. Apply paragraph styles to the text of an attributed string by adding the [`paragraphStyle`](https://developer.apple.com/documentation/foundation/nsattributedstring/key/paragraphstyle) attribute in Swift or the [`NSParagraphStyleAttributeName`](nsparagraphstyleattributename.md) attribute in Objective-C and setting its value to an instance of this class. The text-rendering system uses the paragraph style information in an attributed string to lay out and render the text.
 
 The [`NSParagraphStyle`](nsparagraphstyle.md) class manages an immutable set of style information, but you can create an [`NSMutableParagraphStyle`](nsmutableparagraphstyle.md) when you want to modify the style information before applying it to your text.
 
@@ -56,7 +56,7 @@ The [`NSParagraphStyle`](nsparagraphstyle.md) class manages an immutable set of 
 ### Accessing tab information
 - [var tabStops: [NSTextTab]](nsparagraphstyle/tabstops.md)
   The text tab objects that represent the paragraph’s tab stops.
-- [NSParagraphStyle.TextTabType](../AppKit/NSParagraphStyle/TextTabType.md)
+- [NSParagraphStyle.TextTabType](../appkit/nsparagraphstyle/texttabtype.md)
   Constants that specify the type of tab stop.
 - [var defaultTabInterval: CGFloat](nsparagraphstyle/defaulttabinterval.md)
   The documentwide default tab interval.
@@ -78,12 +78,12 @@ The [`NSParagraphStyle`](nsparagraphstyle.md) class manages an immutable set of 
   The paragraph’s threshold for hyphenation.
 - [var usesDefaultHyphenation: Bool](nsparagraphstyle/usesdefaulthyphenation.md)
   A Boolean value that indicates whether the paragraph style uses the system hyphenation settings.
-- [var tighteningFactorForTruncation: Float](../AppKit/NSParagraphStyle/tighteningFactorForTruncation.md)
+- [var tighteningFactorForTruncation: Float](../appkit/nsparagraphstyle/tighteningfactorfortruncation.md)
   The threshold for using tightening as an alternative to truncation.
 - [var allowsDefaultTighteningForTruncation: Bool](nsparagraphstyle/allowsdefaulttighteningfortruncation.md)
   A Boolean value that indicates whether the system tightens character spacing before truncating text.
 ### Getting the HTML header level
-- [var headerLevel: Int](../AppKit/NSParagraphStyle/headerLevel.md)
+- [var headerLevel: Int](../appkit/nsparagraphstyle/headerlevel.md)
   The paragraph’s header level for HTML generation.
 ### Determining writing direction
 - [class func defaultWritingDirection(forLanguage: String?) -> NSWritingDirection](nsparagraphstyle/defaultwritingdirection(forlanguage:).md)
@@ -98,20 +98,20 @@ The [`NSParagraphStyle`](nsparagraphstyle.md) class manages an immutable set of 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Inherited By
 - [NSMutableParagraphStyle](nsmutableparagraphstyle.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCoding](../Foundation/NSCoding.md)
-- [NSCopying](../Foundation/NSCopying.md)
-- [NSMutableCopying](../Foundation/NSMutableCopying.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [NSSecureCoding](../Foundation/NSSecureCoding.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCoding](../foundation/nscoding.md)
+- [NSCopying](../foundation/nscopying.md)
+- [NSMutableCopying](../foundation/nsmutablecopying.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSSecureCoding](../foundation/nssecurecoding.md)
 
 ## See Also
 

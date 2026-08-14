@@ -23,7 +23,7 @@ static let hapticSharpness: CHHapticEvent.ParameterID
 
 Specify a pattern’s sharpness by setting this value from 0.0 to 1.0. Haptic patterns with low sharpness have a round and organic feel, whereas haptic patterns with high sharpness feel more crisp and precise. The diagram below depicts sharpness of haptic events as a single line to indicate the sensation of persistent feedback against the user’s hand:
 
-![A diagram showing sharpness of three transient haptic events on the left, and sharpness of three continuous haptic events on the right.](https://docs-assets.developer.apple.com/published/3f9b18cbf32aef4988e7731251dfaf54/media-3242668%402x.png)
+![A diagram showing sharpness of three transient haptic events on the left, and sharpness of three continuous haptic events on the right.](/images/com.apple.corehaptics/media-3242668@2x.png)
 
 To change the sharpness dynamically, use [`hapticSharpnessControl`](chhapticdynamicparameter/id/hapticsharpnesscontrol.md).
 

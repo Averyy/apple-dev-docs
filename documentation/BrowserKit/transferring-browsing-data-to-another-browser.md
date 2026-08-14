@@ -10,11 +10,11 @@ When someone wants to transfer data from your browser to another browser on thei
 
 To display the framework-provided sheet, call [`requestExport(for:token:completionHandler:)`](bebrowserdataexportmanager/requestexport(for:token:completionhandler:).md) when the person requests exporting data from your app, and call [`requestImport(for:completionHandler:)`](bebrowserdataimportmanager/requestimport(for:completionhandler:).md) when the person requests importing data to your app.
 
-If a person uses the sheet in a browser other than your own, the system lists your browser as available when you register for specific launch activities using [`NSUserActivityTypes`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSUserActivityTypes). Add the data-transfer activity strings (`BEBrowserDataExchangeExportActivity` and `BEBrowserDataExchangeImportActivity`) to your app’s target properties.
+If a person uses the sheet in a browser other than your own, the system lists your browser as available when you register for specific launch activities using [`NSUserActivityTypes`](https://developer.apple.com/documentation/bundleresources/information-property-list/nsuseractivitytypes). Add the data-transfer activity strings (`BEBrowserDataExchangeExportActivity` and `BEBrowserDataExchangeImportActivity`) to your app’s target properties.
 
-When a person chooses your app in the sheet as the source browser for a data export, the system launches your app with the [`BEBrowserDataExportManager`](bebrowserdataexportmanager.md) class’s [`userActivityType`](bebrowserdataexportmanager/useractivitytype-4ar5j.md). When the person chooses your app as the destination browser for a data import, the system launches your app with the [`BEBrowserDataImportManager`](bebrowserdataimportmanager.md) class’s [`userActivityType`](bebrowserdataimportmanager/useractivitytype-35jes.md). Add individual [`NSUserActivity`](https://developer.apple.com/documentation/Foundation/NSUserActivity) launch handlers to fillful each type of data request.
+When a person chooses your app in the sheet as the source browser for a data export, the system launches your app with the [`BEBrowserDataExportManager`](bebrowserdataexportmanager.md) class’s [`userActivityType`](bebrowserdataexportmanager/useractivitytype-4ar5j.md). When the person chooses your app as the destination browser for a data import, the system launches your app with the [`BEBrowserDataImportManager`](bebrowserdataimportmanager.md) class’s [`userActivityType`](bebrowserdataimportmanager/useractivitytype-35jes.md). Add individual [`NSUserActivity`](https://developer.apple.com/documentation/foundation/nsuseractivity) launch handlers to fillful each type of data request.
 
-> ❗ **Important**: To use the browser-to-browser data transfer API, your app needs to meet the criteria. For more information, see [`Preparing your app to be the default web browser`](https://developer.apple.com/documentation/Xcode/preparing-your-app-to-be-the-default-browser).
+> ❗ **Important**: To use the browser-to-browser data transfer API, your app needs to meet the criteria. For more information, see [`Preparing your app to be the default web browser`](https://developer.apple.com/documentation/xcode/preparing-your-app-to-be-the-default-browser).
 
 #### Initiate a Browsing Data Export
 
@@ -143,7 +143,7 @@ if exportOptions.dataTypes.contains(.extensions) {
 
 #### Initiate a Browsing Data Import
 
-Use the BrowserKit sheet to import data in response to someone’s request in your app’s user interface. Prepare high-level information about the data transfer methods you support by providing a [`BEImportMetadata`](beimportmetadata.md) instance. First create a [`BEBrowserDataImportManager`](bebrowserdataimportmanager.md) object and pass in a reference to your app’s window scene ([`UIWindowScene`](https://developer.apple.com/documentation/UIKit/UIWindowScene)).
+Use the BrowserKit sheet to import data in response to someone’s request in your app’s user interface. Prepare high-level information about the data transfer methods you support by providing a [`BEImportMetadata`](beimportmetadata.md) instance. First create a [`BEBrowserDataImportManager`](bebrowserdataimportmanager.md) object and pass in a reference to your app’s window scene ([`UIWindowScene`](https://developer.apple.com/documentation/uikit/uiwindowscene)).
 
 ```swift
 let browserDataImportManager = BEBrowserDataImportManager(scene: scene)
@@ -166,7 +166,7 @@ The call triggers the system to present the sheet, which displays a list of avai
 
 #### Indicate Support for and Respond to Data Transfers
 
-The data transfer sheet includes browsers that support transfer requests. To indicate support, use [`NSUserActivity`](https://developer.apple.com/documentation/Foundation/NSUserActivity) by including the following strings in your app’s [`NSUserActivityTypes`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSUserActivityTypes) target property:
+The data transfer sheet includes browsers that support transfer requests. To indicate support, use [`NSUserActivity`](https://developer.apple.com/documentation/foundation/nsuseractivity) by including the following strings in your app’s [`NSUserActivityTypes`](https://developer.apple.com/documentation/bundleresources/information-property-list/nsuseractivitytypes) target property:
 
 ```xml
 <key>NSUserActivityTypes</key>
@@ -176,7 +176,7 @@ The data transfer sheet includes browsers that support transfer requests. To ind
 </array>
 ```
 
-When someone chooses your app in the sheet as the browser to which they want to import data or from which to export data, the system launches your app with the relevant activity, depending on the transfer type the person chose. In a SwiftUI app, implement [`onContinueUserActivity(_:perform:)`](https://developer.apple.com/documentation/SwiftUI/View/onContinueUserActivity(_:perform:)) to respond to the activity, including:
+When someone chooses your app in the sheet as the browser to which they want to import data or from which to export data, the system launches your app with the relevant activity, depending on the transfer type the person chose. In a SwiftUI app, implement [`onContinueUserActivity(_:perform:)`](https://developer.apple.com/documentation/swiftui/view/oncontinueuseractivity(_:perform:)) to respond to the activity, including:
 
 - The [`BEBrowserDataImportManager`](bebrowserdataimportmanager.md) class’s [`userActivityType`](bebrowserdataimportmanager/useractivitytype-8xgjo.md) for importing
 - The [`BEBrowserDataExportManager`](bebrowserdataexportmanager.md) class’s [`userActivityType`](bebrowserdataexportmanager/useractivitytype-4ar5j.md) for exporting
@@ -193,7 +193,7 @@ struct AppView: View {
 
 #### Provide a Required Token to Validate the Transfer
 
-To ensure a one-to-one data transfer between the initiating and responding browsers, the system generates a unique token to track the request. Retrieve the token from the activity’s [`userInfo`](https://developer.apple.com/documentation/Foundation/NSUserActivity/userInfo) dictionary and provide it to the system at the time of the data exchange. Pass the  [`importTokenUserInfoKey`](bebrowserdataimportmanager/importtokenuserinfokey-3bqve.md) user info key to indicate an import, and [`exportTokenUserInfoKey`](bebrowserdataexportmanager/exporttokenuserinfokey-1y5l1.md) user info key to indicate an export, as shown below:
+To ensure a one-to-one data transfer between the initiating and responding browsers, the system generates a unique token to track the request. Retrieve the token from the activity’s [`userInfo`](https://developer.apple.com/documentation/foundation/nsuseractivity/userinfo) dictionary and provide it to the system at the time of the data exchange. Pass the  [`importTokenUserInfoKey`](bebrowserdataimportmanager/importtokenuserinfokey-3bqve.md) user info key to indicate an import, and [`exportTokenUserInfoKey`](bebrowserdataexportmanager/exporttokenuserinfokey-1y5l1.md) user info key to indicate an export, as shown below:
 
 ```swift
 struct AppView: View {

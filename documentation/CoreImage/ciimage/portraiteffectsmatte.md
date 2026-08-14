@@ -21,7 +21,7 @@ var portraitEffectsMatte: AVPortraitEffectsMatte? { get }
 
 #### Discussion
 
-[`AVPortraitEffectsMatte`](https://developer.apple.com/documentation/AVFoundation/AVPortraitEffectsMatte) representation of portrait effects.
+[`AVPortraitEffectsMatte`](https://developer.apple.com/documentation/avfoundation/avportraiteffectsmatte) representation of portrait effects.
 
 ## See Also
 

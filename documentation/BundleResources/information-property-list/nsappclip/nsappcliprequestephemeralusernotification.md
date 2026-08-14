@@ -15,7 +15,7 @@ A Boolean value that indicates whether an App Clip can schedule or receive notif
 
 #### Discussion
 
-Set the corresponding value to `true` to enable your App Clip to schedule or receive notifications for up to 8 hours after each launch. For more information, see [`Enabling notifications in App Clips`](https://developer.apple.com/documentation/AppClip/enabling-notifications-in-app-clips).
+Set the corresponding value to `true` to enable your App Clip to schedule or receive notifications for up to 8 hours after each launch. For more information, see [`Enabling notifications in App Clips`](https://developer.apple.com/documentation/appclip/enabling-notifications-in-app-clips).
 
 
 ---

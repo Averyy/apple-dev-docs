@@ -21,11 +21,11 @@ var ints: MLDataColumn<Int>? { get }
 
 #### Return Value
 
-A new data column if the underlying type of the column is [`Int`](https://developer.apple.com/documentation/Swift/Int); otherwise `nil`.
+A new data column if the underlying type of the column is [`Int`](https://developer.apple.com/documentation/swift/int); otherwise `nil`.
 
 #### Discussion
 
-This property is functionally equivalent to passing [`Int`](https://developer.apple.com/documentation/Swift/Int)`.self` to [`column(type:)`](mluntypedcolumn/column(type:).md). Typically you ensure [`type`](mluntypedcolumn/type.md) is equal to [`MLDataValue.ValueType.int`](mldatavalue/valuetype/int.md) before getting this property.
+This property is functionally equivalent to passing [`Int`](https://developer.apple.com/documentation/swift/int)`.self` to [`column(type:)`](mluntypedcolumn/column(type:).md). Typically you ensure [`type`](mluntypedcolumn/type.md) is equal to [`MLDataValue.ValueType.int`](mldatavalue/valuetype/int.md) before getting this property.
 
 ## See Also
 

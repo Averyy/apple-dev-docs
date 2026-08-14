@@ -22,7 +22,7 @@ let MPMediaItemPropertyLyrics: String
 
 #### Discussion
 
-This value is an [`NSString`](https://developer.apple.com/documentation/Foundation/NSString) object.
+This value is an [`NSString`](https://developer.apple.com/documentation/foundation/nsstring) object.
 
 ## See Also
 

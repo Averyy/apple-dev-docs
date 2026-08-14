@@ -26,9 +26,9 @@ The micro gamepad controller profile supports the following input elements:
 - Two digital face buttons (A and X).
 - One analog directional pad (D-pad) that functions as a touchpad.
 
-Users can rotate game controllers that support the micro gamepad profile, switching them between landscape and portrait orientation. If you want to get directional values according to the orientation, set the [`allowsRotation`](gcmicrogamepad/allowsrotation.md) property to [`true`](https://developer.apple.com/documentation/Swift/true).
+Users can rotate game controllers that support the micro gamepad profile, switching them between landscape and portrait orientation. If you want to get directional values according to the orientation, set the [`allowsRotation`](gcmicrogamepad/allowsrotation.md) property to [`true`](https://developer.apple.com/documentation/swift/true).
 
-![An illustration of a Siri Remote with callouts for the digital face buttons, the Button menu, and the analog directional pad.](https://docs-assets.developer.apple.com/published/484a6ffc804aba9b7e2d68ed5f16ad37/media-3830807%402x.png)
+![An illustration of a Siri Remote with callouts for the digital face buttons, the Button menu, and the analog directional pad.](/images/com.apple.gamecontroller/media-3830807@2x.png)
 
 ## Topics
 
@@ -71,12 +71,12 @@ Users can rotate game controllers that support the micro gamepad profile, switch
 - [GCDirectionalGamepad](gcdirectionalgamepad.md)
 - [GCMicroGamepadSnapshot](gcmicrogamepadsnapshot.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

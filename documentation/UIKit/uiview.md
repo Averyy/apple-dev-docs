@@ -105,7 +105,7 @@ When subclassing [`UIView`](uiview.md), there are only a handful of methods you 
 
 - Initialization: - [`init(frame:)`](uiview/init(frame:).md) - It is recommended that you implement this method. You can also implement custom initialization methods in addition to, or instead of, this method.
 - [`init(coder:)`](uiview/init(coder:).md) - Implement this method if you load your view from storyboards or nib files and your view requires custom initialization.
-- [`layerClass`](uiview/layerclass.md) Use this property only if you want your view to use a different Core Animation layer for its backing store. For example, if your view uses tiling to display a large scrollable area, you might want to set the property to the [`CATiledLayer`](https://developer.apple.com/documentation/QuartzCore/CATiledLayer) class.
+- [`layerClass`](uiview/layerclass.md) Use this property only if you want your view to use a different Core Animation layer for its backing store. For example, if your view uses tiling to display a large scrollable area, you might want to set the property to the [`CATiledLayer`](https://developer.apple.com/documentation/quartzcore/catiledlayer) class.
 - Drawing and printing: - [`draw(_:)`](uiview/draw(_:).md) - Implement this method if your view draws custom content. If your view does not do any custom drawing, avoid overriding this method.
 - [`draw(_:for:)`](uiview/draw(_:for:).md) - Implement this method only if you want to draw your view’s content differently during printing.
 - Layout and Constraints: - [`requiresConstraintBasedLayout`](uiview/requiresconstraintbasedlayout.md) Use this property if your view class requires constraints to work properly.
@@ -128,13 +128,13 @@ Many view behaviors can be configured without the need for subclassing. Before y
 - Subviews - Rather than draw your content using a [`draw(_:)`](uiview/draw(_:).md) method, embed image and label subviews with the content you want to present.
 - Gesture recognizers - Rather than subclass to intercept and handle touch events yourself, you can use gesture recognizers to send an action to a target object.
 - Animations - Use the built-in animation support rather than trying to animate changes yourself. The animation support provided by Core Animation is fast and easy to use.
-- Image-based backgrounds - For views that display relatively static content, consider using a [`UIImageView`](uiimageview.md) object with gesture recognizers instead of subclassing and drawing the image yourself. Alternatively, you can also use a generic [`UIView`](uiview.md) object and assign your image as the content of the view’s [`CALayer`](https://developer.apple.com/documentation/QuartzCore/CALayer) object.
+- Image-based backgrounds - For views that display relatively static content, consider using a [`UIImageView`](uiimageview.md) object with gesture recognizers instead of subclassing and drawing the image yourself. Alternatively, you can also use a generic [`UIView`](uiview.md) object and assign your image as the content of the view’s [`CALayer`](https://developer.apple.com/documentation/quartzcore/calayer) object.
 
 Animations are another way to make visible changes to a view without requiring you to subclass and implement complex drawing code. Many properties of the [`UIView`](uiview.md) class are animatable, which means changes to those properties can trigger system-generated animations. Starting animations requires as little as one line of code to indicate that any changes that follow should be animated. For more information about animation support for views, see [`Animate views`](uiview#Animate-views.md).
 
 ##### Sensor Coordinate Orientation
 
-`UIView` conforms to [`CLBodyIdentifiable`](https://developer.apple.com/documentation/CoreLocation/CLBodyIdentifiable) and [`CMBodyIdentifiable`](https://developer.apple.com/documentation/CoreMotion/CMBodyIdentifiable), informing Core Location and Core Motion how the app’s UI and this view are situated with respect to reference physical orientations. They use this information to transform the sensor values they provide, such as compass headings and device motion data, so those values align with your UI’s actual orientation. Without this association, Core Location and Core Motion report sensor values relative to the device’s physical orientation, which can produce unexpected results, such as a navigation map that appears rotated.
+`UIView` conforms to [`CLBodyIdentifiable`](https://developer.apple.com/documentation/corelocation/clbodyidentifiable) and [`CMBodyIdentifiable`](https://developer.apple.com/documentation/coremotion/cmbodyidentifiable), informing Core Location and Core Motion how the app’s UI and this view are situated with respect to reference physical orientations. They use this information to transform the sensor values they provide, such as compass headings and device motion data, so those values align with your UI’s actual orientation. Without this association, Core Location and Core Motion report sensor values relative to the device’s physical orientation, which can produce unexpected results, such as a navigation map that appears rotated.
 
 To use this approach, set any view as the body on a `CLLocationManager` or `CMMotionManager` instance. The system tracks orientation changes through the view and applies the correct transformation automatically.
 
@@ -559,8 +559,8 @@ override func viewDidLoad() {
 - [class func modifyAnimations(withRepeatCount: CGFloat, autoreverses: Bool, animations: () -> Void)](uiview/modifyanimations(withrepeatcount:autoreverses:animations:).md)
   Repeats the specified animations a specific number of times, optionally running the animation forward and backward.
 ### Sensor coordinate orientation
-- [protocol CLBodyIdentifiable](../CoreLocation/CLBodyIdentifiable.md)
-- [protocol CMBodyIdentifiable](../CoreMotion/CMBodyIdentifiable.md)
+- [protocol CLBodyIdentifiable](../corelocation/clbodyidentifiable.md)
+- [protocol CMBodyIdentifiable](../coremotion/cmbodyidentifiable.md)
 ### Constants
 - [UIView.AnimationCurve](uiview/animationcurve.md)
   Specifies the supported animation curves.
@@ -641,22 +641,22 @@ override func viewDidLoad() {
 - [UIWebView](uiwebview.md)
 - [UIWindow](uiwindow.md)
 ### Conforms To
-- [AppEntityAnnotatable](../AppIntents/AppEntityAnnotatable.md)
-- [CALayerDelegate](../QuartzCore/CALayerDelegate.md)
-- [CLBodyIdentifiable](../CoreLocation/CLBodyIdentifiable.md)
-- [CMBodyIdentifiable](../CoreMotion/CMBodyIdentifiable.md)
-- [CVarArg](../Swift/CVarArg.md)
-- [Copyable](../Swift/Copyable.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Escapable](../Swift/Escapable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCoding](../Foundation/NSCoding.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [NSTouchBarProvider](../AppKit/NSTouchBarProvider.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [AppEntityAnnotatable](../appintents/appentityannotatable.md)
+- [CALayerDelegate](../quartzcore/calayerdelegate.md)
+- [CLBodyIdentifiable](../corelocation/clbodyidentifiable.md)
+- [CMBodyIdentifiable](../coremotion/cmbodyidentifiable.md)
+- [CVarArg](../swift/cvararg.md)
+- [Copyable](../swift/copyable.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Escapable](../swift/escapable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCoding](../foundation/nscoding.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSTouchBarProvider](../appkit/nstouchbarprovider.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 - [UIAccessibilityIdentification](uiaccessibilityidentification.md)
 - [UIActivityItemsConfigurationProviding](uiactivityitemsconfigurationproviding.md)
 - [UIAppearance](uiappearance.md)

@@ -44,7 +44,7 @@ Use the methods of this protocol to map between the positions of items and secti
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 ### Conforming Types
 - [UICollectionView](uicollectionview.md)
 - [UITableView](uitableview.md)

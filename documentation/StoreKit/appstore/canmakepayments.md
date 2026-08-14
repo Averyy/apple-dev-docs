@@ -33,7 +33,7 @@ Use [`canMakePayments`](appstore/canmakepayments.md) to determine at runtime whe
 The following conditions can cause the value of [`canMakePayments`](appstore/canmakepayments.md) to be `false`:
 
 - A person sets the Content & Privacy Restrictions in Screen Time to prevent purchases. For more information, see [`Use parental controls on your child’s iPhone, iPad, and iPod touch`](https://developer.apple.comhttps://support.apple.com/en-us/HT201304).
-- The device has a mobile device management (MDM) profile that prevents purchases. For more information, see [`Device Management`](https://developer.apple.com/documentation/DeviceManagement).
+- The device has a mobile device management (MDM) profile that prevents purchases. For more information, see [`Device Management`](https://developer.apple.com/documentation/devicemanagement).
 
 If [`canMakePayments`](appstore/canmakepayments.md) is `true` and your app uses only StoreKit [`In-App Purchase`](in-app-purchase.md) APIs, the person can authorize purchases in the App Store and your app can offer In-App Purchases.
 

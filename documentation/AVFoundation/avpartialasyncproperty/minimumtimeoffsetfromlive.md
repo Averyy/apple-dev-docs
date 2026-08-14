@@ -24,7 +24,7 @@ static var minimumTimeOffsetFromLive: AVAsyncProperty<Root, CMTime> { get }
 
 Use the [`load(_:isolation:)`](avasynchronouskeyvalueloading/load(_:isolation:).md) method to retrieve the property value.
 
-This property value is only valid when working with live streaming content. For non-live assets, this property value is [`invalid`](https://developer.apple.com/documentation/CoreMedia/CMTime/invalid).
+This property value is only valid when working with live streaming content. For non-live assets, this property value is [`invalid`](https://developer.apple.com/documentation/coremedia/cmtime/invalid).
 
 ## See Also
 

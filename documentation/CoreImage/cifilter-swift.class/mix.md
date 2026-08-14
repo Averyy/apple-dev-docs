@@ -31,7 +31,7 @@ The mix filter uses the following properties:
 
 - **`inputImage`**: An image with the type [`CIImage`](ciimage.md).
 - **`backgroundImage`**: An image representing the background image with the type [`CIImage`](ciimage.md).
-- **`amount`**: A `float` representing the strength of the effect as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+- **`amount`**: A `float` representing the strength of the effect as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
 
 The following code creates a filter that combines the input and background images to create one image with both images visible:
 
@@ -45,7 +45,7 @@ func mix(inputImage: CIImage, backgroundImage: CIImage) -> CIImage {
 }
 ```
 
-![Three pictures side by side. The first photo on the left is of the New York City skyline taken from across a river on an overcast day, with a single boat in the center of the image. The center photo is of multiple colorful rocks with green moss covering them. In the photo on the right, a mix filter is applied, and the image has detail from both the city skyline and mossy rock photo.](https://docs-assets.developer.apple.com/published/1795dc2f4040ff55fc829b930d00a2c3/media-3600009%402x.png)
+![Three pictures side by side. The first photo on the left is of the New York City skyline taken from across a river on an overcast day, with a single boat in the center of the image. The center photo is of multiple colorful rocks with green moss covering them. In the photo on the right, a mix filter is applied, and the image has detail from both the city skyline and mossy rock photo.](/images/com.apple.coreimage/media-3600009@2x.png)
 
 ## See Also
 

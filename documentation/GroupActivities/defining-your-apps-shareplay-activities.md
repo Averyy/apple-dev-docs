@@ -31,13 +31,13 @@ Before you start adding SharePlay support to your app, add the `Group Activities
 4. Add the Group Activities capability to the target.
 
 Configure this capability only for app targets. When you add the Group Activities capability, Xcode adds the necessary entitlements to your app and updates its provisioning profile.
-For more information, see [`Adding capabilities to your app`](https://developer.apple.com/documentation/Xcode/adding-capabilities-to-your-app).
+For more information, see [`Adding capabilities to your app`](https://developer.apple.com/documentation/xcode/adding-capabilities-to-your-app).
 
 ##### Create an Activity
 
 Create a SharePlay experience by defining a struct conforming to the [`GroupActivity`](groupactivity.md) protocol. This protocol provides the basic definition of a SharePlay activity and provides the information that SharePlay needs to promote that activity to participants.
 
-Ensure the data being shared during your activity conforms to [`Codable`](https://developer.apple.com/documentation/Swift/Codable). If you want to use the share sheet in SwiftUI to share an activity, it requires items to support the [`Transferable`](https://developer.apple.com/documentation/CoreTransferable/Transferable) protocol. Adopt this protocol in your custom data types and implement the [`transferRepresentation`](https://developer.apple.com/documentation/CoreTransferable/Transferable/transferRepresentation) property.
+Ensure the data being shared during your activity conforms to [`Codable`](https://developer.apple.com/documentation/swift/codable). If you want to use the share sheet in SwiftUI to share an activity, it requires items to support the [`Transferable`](https://developer.apple.com/documentation/coretransferable/transferable) protocol. Adopt this protocol in your custom data types and implement the [`transferRepresentation`](https://developer.apple.com/documentation/coretransferable/transferable/transferrepresentation) property.
 
 Most of the content in a [`GroupActivity`](groupactivity.md) type is the data you use to support the activity itself. Include data that is critical for performing the activity, such as the type of game in a game-playing activity. Include information to support the overall experience, such as a title, to display in the SharePlay UI. Store as little data as possible to support the activity. For instance, store a link to a video rather than the file itself. Also share state information instead of detailed changes wherever possible. The following example defines a `BoardGame` type that stores information about the type of game, and a group activity to share the experience:
 
@@ -60,7 +60,7 @@ struct BoardGameActivity: GroupActivity, Transferable {
 }
 ```
 
-Ensure your [`GroupActivity`](groupactivity.md) type conforms to [`Transferable`](https://developer.apple.com/documentation/CoreTransferable/Transferable). This conformance allows SwiftUI to present possible activities from your UI and enables SharePlay to share them via AirDrop. When including a [`ShareLink`](https://developer.apple.com/documentation/SwiftUI/ShareLink) view in your SwiftUI app, specify the transferable data type as the shareable item from that view. When someone taps or clicks the link, the system displays a share sheet with options for starting the associated activity. For information on starting an activity and using a `ShareLink`, see [`Presenting SharePlay activities from your app’s UI`](promoting-shareplay-activities-from-your-apps-ui.md).
+Ensure your [`GroupActivity`](groupactivity.md) type conforms to [`Transferable`](https://developer.apple.com/documentation/coretransferable/transferable). This conformance allows SwiftUI to present possible activities from your UI and enables SharePlay to share them via AirDrop. When including a [`ShareLink`](https://developer.apple.com/documentation/swiftui/sharelink) view in your SwiftUI app, specify the transferable data type as the shareable item from that view. When someone taps or clicks the link, the system displays a share sheet with options for starting the associated activity. For information on starting an activity and using a `ShareLink`, see [`Presenting SharePlay activities from your app’s UI`](promoting-shareplay-activities-from-your-apps-ui.md).
 
 > **Note**: If you have multiple activities in your app, each [`GroupActivity`](groupactivity.md) type must have a unique string in its [`activityIdentifier`](groupactivity/activityidentifier.md) property.
 
@@ -86,7 +86,7 @@ Classify your app’s activities by specifying an appropriate value for the [`ty
 
 ## See Also
 
-- [Supporting coordinated media playback](../AVFoundation/supporting-coordinated-media-playback.md)
+- [Supporting coordinated media playback](../avfoundation/supporting-coordinated-media-playback.md)
   Create synchronized media experiences that enable users to watch and listen across devices.
 - [protocol GroupActivity](groupactivity.md)
   A type that can advertise your app’s activities to other participants.

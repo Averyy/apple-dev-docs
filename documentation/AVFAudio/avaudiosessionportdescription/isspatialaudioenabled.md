@@ -27,7 +27,7 @@ When you create a “Now Playing” app, inform the system if the app supports m
 
 Some port types — like USB and HDMI — may support multichannel playback because they have hardware formats supporting more than 2 channels. For example, many HDMI receivers connect to many speakers and are capable of rendering 5.1, 7.1, or other popular surround sound formats. Use [`setPreferredOutputNumberOfChannels(_:)`](avaudiosession/setpreferredoutputnumberofchannels(_:).md) to set the preferred number of hardware channels, and query the number of channels by using [`maximumOutputNumberOfChannels`](avaudiosession/maximumoutputnumberofchannels.md).
 
-For more information about “Now Playing” apps, see [`Becoming a now playable app`](https://developer.apple.com/documentation/MediaPlayer/becoming-a-now-playable-app).
+For more information about “Now Playing” apps, see [`Becoming a now playable app`](https://developer.apple.com/documentation/mediaplayer/becoming-a-now-playable-app).
 
 ## See Also
 

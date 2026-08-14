@@ -19,7 +19,7 @@ class let touchBarTextStrikethroughTemplateName: String
 
 #### Discussion
 
-![Template image for strikethrough text](https://docs-assets.developer.apple.com/published/14ba34a37606094f1916dcb33bb0cb95/media-2825137%402x.png)
+![Template image for strikethrough text](/images/com.apple.appkit/media-2825137@2x.png)
 
 Touch Bar template images are exclusively for use in [`NSTouchBarItem`](nstouchbaritem.md) objects and not in onscreen windows.
 

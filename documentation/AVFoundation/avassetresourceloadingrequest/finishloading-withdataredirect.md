@@ -23,7 +23,7 @@ When a resource loader’s delegate takes responsibility for loading a resource,
 
 - `response`: The response object for the requested resource. Use the request object in the receiver’s [`request`](avassetresourceloadingrequest/request.md) property to get information about the requested resource.
 - `data`: The data of the resource. If no data is available, specify `nil`.
-- `redirect`: When redirecting a resource request, use this parameter to specify the corresponding [`NSURLRequest`](https://developer.apple.com/documentation/Foundation/NSURLRequest) object. If you are handling the request and not redirecting it, specify `nil`.
+- `redirect`: When redirecting a resource request, use this parameter to specify the corresponding [`NSURLRequest`](https://developer.apple.com/documentation/foundation/nsurlrequest) object. If you are handling the request and not redirecting it, specify `nil`.
 
 ## See Also
 

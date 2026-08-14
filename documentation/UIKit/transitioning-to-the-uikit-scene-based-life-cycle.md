@@ -32,22 +32,22 @@ Failure to adopt will result in an assert in the future.
 
 Migrate to the scene-based life cycle if your app meets either of the following conditions:
 
-- The [`UIApplicationSceneManifest`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/UIApplicationSceneManifest) key is missing from your information property list, or it has no specified configurations.
+- The [`UIApplicationSceneManifest`](https://developer.apple.com/documentation/bundleresources/information-property-list/uiapplicationscenemanifest) key is missing from your information property list, or it has no specified configurations.
 - Your app delegate doesn’t implement [`application(_:configurationForConnecting:options:)`](uiapplicationdelegate/application(_:configurationforconnecting:options:).md).
 
 #### Adopt the Scene Based Life Cycle
 
-To configure your app’s scenes, add a [`UIApplicationSceneManifest`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/UIApplicationSceneManifest) key with a scene configuration to your information property list. If your app requires dynamic scene configurations — such as customizing scenes based on user activities, or handling different scene roles — implement [`application(_:configurationForConnecting:options:)`](uiapplicationdelegate/application(_:configurationforconnecting:options:).md) in your app delegate instead.
+To configure your app’s scenes, add a [`UIApplicationSceneManifest`](https://developer.apple.com/documentation/bundleresources/information-property-list/uiapplicationscenemanifest) key with a scene configuration to your information property list. If your app requires dynamic scene configurations — such as customizing scenes based on user activities, or handling different scene roles — implement [`application(_:configurationForConnecting:options:)`](uiapplicationdelegate/application(_:configurationforconnecting:options:).md) in your app delegate instead.
 
 ##### Configure the Information Property List for Scene Support
 
-Add a [`UIApplicationSceneManifest`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/UIApplicationSceneManifest) key with a scene configuration to your information property list:
+Add a [`UIApplicationSceneManifest`](https://developer.apple.com/documentation/bundleresources/information-property-list/uiapplicationscenemanifest) key with a scene configuration to your information property list:
 
 1. Open your Xcode project.
 2. Select your app target.
 3. Go to the General settings for your app target.
 4. Select “Scene manifest” in the Deployment Info section.
-5. Add a [`UIApplicationSceneManifest`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/UIApplicationSceneManifest) key to the information property list.
+5. Add a [`UIApplicationSceneManifest`](https://developer.apple.com/documentation/bundleresources/information-property-list/uiapplicationscenemanifest) key to the information property list.
 
 For example:
 
@@ -73,7 +73,7 @@ For example:
 </dict>
 ```
 
-> **Note**: Supporting multiple scenes is optional, and may require restructuring your app’s data model to be scene-specific. Consider whether your app’s user experience benefits from multiple scenes before enabling it. To support multiple scenes, set [`UIApplicationSupportsMultipleScenes`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/UIApplicationSceneManifest/UIApplicationSupportsMultipleScenes) to `true` and give each [`UISceneConfiguration`](uisceneconfiguration.md) a unique configuration name.
+> **Note**: Supporting multiple scenes is optional, and may require restructuring your app’s data model to be scene-specific. Consider whether your app’s user experience benefits from multiple scenes before enabling it. To support multiple scenes, set [`UIApplicationSupportsMultipleScenes`](https://developer.apple.com/documentation/bundleresources/information-property-list/uiapplicationscenemanifest/uiapplicationsupportsmultiplescenes) to `true` and give each [`UISceneConfiguration`](uisceneconfiguration.md) a unique configuration name.
 
 ##### Provide Scene Configurations From Your App Delegate
 
@@ -109,13 +109,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 }
 ```
 
-In this example, the app uses the [`activityType`](https://developer.apple.com/documentation/Foundation/NSUserActivity/activityType) property to determine which scene to create. For more information about configuring your app for different scene types, see [`Specifying the scenes your app supports`](specifying-the-scenes-your-app-supports.md). For information about creating multiple windows programmatically, see [`Supporting multiple windows on iPad`](supporting-multiple-windows-on-ipad.md).
+In this example, the app uses the [`activityType`](https://developer.apple.com/documentation/foundation/nsuseractivity/activitytype) property to determine which scene to create. For more information about configuring your app for different scene types, see [`Specifying the scenes your app supports`](specifying-the-scenes-your-app-supports.md). For information about creating multiple windows programmatically, see [`Supporting multiple windows on iPad`](supporting-multiple-windows-on-ipad.md).
 
 ##### Configure Your Window Scene
 
-UIKit creates a [`UIWindowScene`](uiwindowscene.md) object for each scene instance. When configuring scene support, specify `UIWindowScene` objects rather than [`UIScene`](uiscene.md) objects. If your app adopts scenes for CarPlay, use [`CPTemplateApplicationScene`](https://developer.apple.com/documentation/CarPlay/CPTemplateApplicationScene) instead. To learn how to add a CarPlay scene, see [`Displaying Content in CarPlay`](https://developer.apple.com/documentation/CarPlay/displaying-content-in-carplay).
+UIKit creates a [`UIWindowScene`](uiwindowscene.md) object for each scene instance. When configuring scene support, specify `UIWindowScene` objects rather than [`UIScene`](uiscene.md) objects. If your app adopts scenes for CarPlay, use [`CPTemplateApplicationScene`](https://developer.apple.com/documentation/carplay/cptemplateapplicationscene) instead. To learn how to add a CarPlay scene, see [`Displaying Content in CarPlay`](https://developer.apple.com/documentation/carplay/displaying-content-in-carplay).
 
-If you load your root view controller from the storyboard, include the storyboard name in the [`UISceneConfigurations`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/UIApplicationSceneManifest/UISceneConfigurations) key in your information property list scene manifest. The system automatically configures your window scene and root view controller.
+If you load your root view controller from the storyboard, include the storyboard name in the [`UISceneConfigurations`](https://developer.apple.com/documentation/bundleresources/information-property-list/uiapplicationscenemanifest/uisceneconfigurations) key in your information property list scene manifest. The system automatically configures your window scene and root view controller.
 
 If you load your root view controller programmatically, implement [`scene(_:willConnectTo:options:)`](uiscenedelegate/scene(_:willconnectto:options:).md) to create a [`UIWindow`](uiwindow.md) and associate it with the scene:
 

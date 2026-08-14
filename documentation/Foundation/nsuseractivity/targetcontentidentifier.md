@@ -28,9 +28,9 @@ var targetContentIdentifier: String? { get set }
 
 A target content identifier is a string you define within your app. This string provides a unique identifier for specific content in your app, like a particular document or the location of a piece of data in a database. This string isn’t visible to the user.
 
-If you set this property, when the system delivers an [`NSUserActivity`](nsuseractivity.md) object to an app with multiple scenes, it chooses the [`UIScene`](https://developer.apple.com/documentation/UIKit/UIScene) whose [`UISceneActivationConditions`](https://developer.apple.com/documentation/UIKit/UISceneActivationConditions) have the best match with the target content identifier. For more information, see [`UISceneActivationConditions`](https://developer.apple.com/documentation/UIKit/UISceneActivationConditions).
+If you set this property, when the system delivers an [`NSUserActivity`](nsuseractivity.md) object to an app with multiple scenes, it chooses the [`UIScene`](https://developer.apple.com/documentation/uikit/uiscene) whose [`UISceneActivationConditions`](https://developer.apple.com/documentation/uikit/uisceneactivationconditions) have the best match with the target content identifier. For more information, see [`UISceneActivationConditions`](https://developer.apple.com/documentation/uikit/uisceneactivationconditions).
 
-This property is optional but is highly recommended to create a great multitasking experience for apps that run on iPad. Setting this property doesn’t automatically set [`needsSave`](nsuseractivity/needssave.md) to [`true`](https://developer.apple.com/documentation/Swift/true).
+This property is optional but is highly recommended to create a great multitasking experience for apps that run on iPad. Setting this property doesn’t automatically set [`needsSave`](nsuseractivity/needssave.md) to [`true`](https://developer.apple.com/documentation/swift/true).
 
 ## See Also
 

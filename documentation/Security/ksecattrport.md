@@ -22,7 +22,7 @@ let kSecAttrPort: CFString
 
 #### Discussion
 
-The corresponding value is of type [`CFNumber`](https://developer.apple.com/documentation/CoreFoundation/CFNumber) and represents an Internet port number. Items of class [`kSecClassInternetPassword`](ksecclassinternetpassword.md) have this attribute.
+The corresponding value is of type [`CFNumber`](https://developer.apple.com/documentation/corefoundation/cfnumber) and represents an Internet port number. Items of class [`kSecClassInternetPassword`](ksecclassinternetpassword.md) have this attribute.
 
 
 ---

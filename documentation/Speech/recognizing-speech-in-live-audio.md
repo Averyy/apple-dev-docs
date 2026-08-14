@@ -18,7 +18,7 @@ When the user taps the Start Recording button, the SpokenWord app begins capturi
 
 This sample uses [`CaptureInputSequenceProvider`](captureinputsequenceprovider.md) introduced in macOS and iOS 27; [`SpeechAnalyzer`](speechanalyzer.md), [`DictationTranscriber`](dictationtranscriber.md), and [`AssetInventory`](assetinventory.md) introduced in macOS and iOS 26; and [`SFCustomLanguageModelData`](sfcustomlanguagemodeldata.md) introduced in macOS 14 and iOS 17.
 
-![A screenshot of the transcription process. On the left, the app lets the user know that it’s ready to begin transcription. On the right, the app displays what the user said.](https://docs-assets.developer.apple.com/published/4b1e2c21721fe25807d1a877a30d35a1/sample-screens_2x.png)
+![A screenshot of the transcription process. On the left, the app lets the user know that it’s ready to begin transcription. On the right, the app displays what the user said.](/images/com.apple.speech/sample-screens_2x.png)
 
 > **Note**: The sample app doesn’t run in the iOS Simulator, so you need to run it on a physical device with iOS or iPadOS 27 or later.
 
@@ -59,9 +59,9 @@ return DictationTranscriber(
 
 #### Configure the Capture Session
 
-When the user taps the Start Recording button, the app starts a capture session managed by an [`AVCaptureSession`](https://developer.apple.com/documentation/AVFoundation/AVCaptureSession) instance.
+When the user taps the Start Recording button, the app starts a capture session managed by an [`AVCaptureSession`](https://developer.apple.com/documentation/avfoundation/avcapturesession) instance.
 
-First, the app selects an audio source. The app records audio from the default microphone, which may be the device’s built-in microphone or an external device. The app selects the [`AVCaptureDevice`](https://developer.apple.com/documentation/AVFoundation/AVCaptureDevice) object corresponding to that microphone.
+First, the app selects an audio source. The app records audio from the default microphone, which may be the device’s built-in microphone or an external device. The app selects the [`AVCaptureDevice`](https://developer.apple.com/documentation/avfoundation/avcapturedevice) object corresponding to that microphone.
 
 ```swift
 guard let captureDevice = AVCaptureDevice.default(.microphone, for: .audio, position: .unspecified) else {
@@ -79,7 +79,7 @@ let provider = try await CaptureInputSequenceProvider.providerWithSession(from: 
 
 An app may also configure a capture session independently. The input sequence provider can supply an output destination object that the app can add to its session.
 
-Finally, the app saves a reference to the [`AVCaptureSession`](https://developer.apple.com/documentation/AVFoundation/AVCaptureSession) instance created by the provider in the view controller’s `captureSession` property, and uses that to manage the session later. To avoid concurrency-related compilation errors, the app actually saves the session instance in an actor and manages the session through that actor.
+Finally, the app saves a reference to the [`AVCaptureSession`](https://developer.apple.com/documentation/avfoundation/avcapturesession) instance created by the provider in the view controller’s `captureSession` property, and uses that to manage the session later. To avoid concurrency-related compilation errors, the app actually saves the session instance in an actor and manages the session through that actor.
 
 #### Analyze Audio and Display Results
 
@@ -229,7 +229,7 @@ The remaining high-level steps — training data preparation and transcriber con
 
 ## See Also
 
-- [Speech updates](../Updates/Speech.md)
+- [Speech updates](../updates/speech.md)
   Learn about important changes to Speech.
 - [Bringing advanced speech-to-text capabilities to your app](bringing-advanced-speech-to-text-capabilities-to-your-app.md)
   Learn how to incorporate live speech-to-text transcription into your app with SpeechAnalyzer.

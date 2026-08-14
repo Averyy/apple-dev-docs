@@ -40,7 +40,7 @@ struct StepperView: View {
 }
 ```
 
-![A view displaying a stepper that increments or decrements a value by a specified amount each time the user clicks or taps the stepper’s increment or decrement buttons.](https://docs-assets.developer.apple.com/published/a85ed9351b703c8cc865d291ef62b2e9/SwiftUI-Stepper-value-step%402x.png)
+![A view displaying a stepper that increments or decrements a value by a specified amount each time the user clicks or taps the stepper’s increment or decrement buttons.](/images/com.apple.SwiftUI/SwiftUI-Stepper-value-step@2x.png)
 
 ## Parameters
 

@@ -19,7 +19,7 @@ class ARSCNView
 
 #### Overview
 
-> ❗ **Important**: SceneKit is deprecated, use [`RealityKit`](https://developer.apple.com/documentation/RealityKit) instead. For more information, see WWDC25 session 288: [`Bring your SceneKit projects to RealityKit`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2025/288/).
+> ❗ **Important**: SceneKit is deprecated, use [`RealityKit`](https://developer.apple.com/documentation/realitykit) instead. For more information, see WWDC25 session 288: [`Bring your SceneKit projects to RealityKit`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2025/288/).
 
 The [`ARSCNView`](arscnview.md) class provides an easy way to create augmented reality experiences that blend virtual 3D content with a device camera view of the real world. When you run the view’s provided [`ARSession`](arsession.md) object:
 
@@ -33,8 +33,8 @@ You don’t necessarily need to use the [`ARAnchor`](aranchor.md) class to track
 
 Because ARKit requires Metal, use only Metal features of SceneKit. For example:
 
-- This class supports only [`SCNProgram`](https://developer.apple.com/documentation/SceneKit/SCNProgram) instances with Metal Shading Language code.
-- If you set the [`preferredRenderingAPI`](https://developer.apple.com/documentation/SceneKit/SCNView/Option/preferredRenderingAPI) property to [`SCNRenderingAPI.openGLES2`](https://developer.apple.com/documentation/SceneKit/SCNRenderingAPI/openGLES2), the framework reverts the value to  [`SCNRenderingAPI.metal`](https://developer.apple.com/documentation/SceneKit/SCNRenderingAPI/metal).
+- This class supports only [`SCNProgram`](https://developer.apple.com/documentation/scenekit/scnprogram) instances with Metal Shading Language code.
+- If you set the [`preferredRenderingAPI`](https://developer.apple.com/documentation/scenekit/scnview/option/preferredrenderingapi) property to [`SCNRenderingAPI.openGLES2`](https://developer.apple.com/documentation/scenekit/scnrenderingapi/opengles2), the framework reverts the value to  [`SCNRenderingAPI.metal`](https://developer.apple.com/documentation/scenekit/scnrenderingapi/metal).
 
 ## Topics
 
@@ -77,45 +77,45 @@ Because ARKit requires Metal, use only Metal features of SceneKit. For example:
 ## Relationships
 
 ### Inherits From
-- [SCNView](../SceneKit/SCNView.md)
+- [SCNView](../scenekit/scnview.md)
 ### Conforms To
 - [ARSessionProviding](arsessionproviding.md)
-- [CALayerDelegate](../QuartzCore/CALayerDelegate.md)
-- [CLBodyIdentifiable](../CoreLocation/CLBodyIdentifiable.md)
-- [CMBodyIdentifiable](../CoreMotion/CMBodyIdentifiable.md)
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCoding](../Foundation/NSCoding.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [SCNSceneRenderer](../SceneKit/SCNSceneRenderer.md)
-- [SCNTechniqueSupport](../SceneKit/SCNTechniqueSupport.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
-- [UIAccessibilityIdentification](../UIKit/UIAccessibilityIdentification.md)
-- [UIActivityItemsConfigurationProviding](../UIKit/UIActivityItemsConfigurationProviding.md)
-- [UIAppearance](../UIKit/UIAppearance.md)
-- [UIAppearanceContainer](../UIKit/UIAppearanceContainer.md)
-- [UICoordinateSpace](../UIKit/UICoordinateSpace.md)
-- [UIDynamicItem](../UIKit/UIDynamicItem.md)
-- [UIFocusEnvironment](../UIKit/UIFocusEnvironment.md)
-- [UIFocusItem](../UIKit/UIFocusItem.md)
-- [UIFocusItemContainer](../UIKit/UIFocusItemContainer.md)
-- [UILargeContentViewerItem](../UIKit/UILargeContentViewerItem.md)
-- [UIPasteConfigurationSupporting](../UIKit/UIPasteConfigurationSupporting.md)
-- [UIPopoverPresentationControllerSourceItem](../UIKit/UIPopoverPresentationControllerSourceItem.md)
-- [UIResponderStandardEditActions](../UIKit/UIResponderStandardEditActions.md)
-- [UITraitChangeObservable](../UIKit/UITraitChangeObservable-67e94.md)
-- [UITraitEnvironment](../UIKit/UITraitEnvironment.md)
-- [UIUserActivityRestoring](../UIKit/UIUserActivityRestoring.md)
+- [CALayerDelegate](../quartzcore/calayerdelegate.md)
+- [CLBodyIdentifiable](../corelocation/clbodyidentifiable.md)
+- [CMBodyIdentifiable](../coremotion/cmbodyidentifiable.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCoding](../foundation/nscoding.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [SCNSceneRenderer](../scenekit/scnscenerenderer.md)
+- [SCNTechniqueSupport](../scenekit/scntechniquesupport.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
+- [UIAccessibilityIdentification](../uikit/uiaccessibilityidentification.md)
+- [UIActivityItemsConfigurationProviding](../uikit/uiactivityitemsconfigurationproviding.md)
+- [UIAppearance](../uikit/uiappearance.md)
+- [UIAppearanceContainer](../uikit/uiappearancecontainer.md)
+- [UICoordinateSpace](../uikit/uicoordinatespace.md)
+- [UIDynamicItem](../uikit/uidynamicitem.md)
+- [UIFocusEnvironment](../uikit/uifocusenvironment.md)
+- [UIFocusItem](../uikit/uifocusitem.md)
+- [UIFocusItemContainer](../uikit/uifocusitemcontainer.md)
+- [UILargeContentViewerItem](../uikit/uilargecontentvieweritem.md)
+- [UIPasteConfigurationSupporting](../uikit/uipasteconfigurationsupporting.md)
+- [UIPopoverPresentationControllerSourceItem](../uikit/uipopoverpresentationcontrollersourceitem.md)
+- [UIResponderStandardEditActions](../uikit/uiresponderstandardeditactions.md)
+- [UITraitChangeObservable](../uikit/uitraitchangeobservable-67e94.md)
+- [UITraitEnvironment](../uikit/uitraitenvironment.md)
+- [UIUserActivityRestoring](../uikit/uiuseractivityrestoring.md)
 
 ## See Also
 
-- [struct RealityView](../RealityKit/RealityView.md)
+- [struct RealityView](../realitykit/realityview.md)
   A view that contains RealityKit content.
-- [class ARView](../RealityKit/ARView.md)
+- [class ARView](../realitykit/arview.md)
   A view that enables you to display an AR experience with RealityKit.
 - [class ARSKView](arskview.md)
   A view that blends virtual 2D content from SpriteKit into the 3D space of an augmented reality experience.

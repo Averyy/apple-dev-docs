@@ -21,6 +21,11 @@ The system continually sends `TouchEvent` objects to an application as fingers t
 
 The different types of `TouchEvent` objects that can occur are:
 
+- **`touchstart`**: Sent when a finger for a given event touches the surface.
+- **`touchmove`**: Sent when a given event moves on the surface.
+- **`touchend`**: Sent when a given event lifts from the surface.
+- **`touchcancel`**: Sent when the system cancels tracking for the touch.
+
 `TouchEvent` objects are combined together to form high-level `GestureEvent` objects that are also sent during a multi-touch sequence. See [`GestureEvent`](gestureevent.md) for details on `GestureEvent` objects and an example of the events sent for a two finger multi-touch gesture.
 
 ## Topics

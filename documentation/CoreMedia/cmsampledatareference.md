@@ -40,10 +40,10 @@ The size of the data is provided as [`totalSampleSize`](cmreadysamplebuffer/tota
 - [CMSampleBuffer.Content](cmsamplebuffer/content.md)
 - [CMSampleBuffer.ContentWithFormatDescription](cmsamplebuffer/contentwithformatdescription.md)
 - [CMSampleBuffer.MultiSampleContent](cmsamplebuffer/multisamplecontent.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

@@ -34,13 +34,13 @@ In macOS, your application can not make an object callback function available to
 
 ## Parameters
 
-- `myCompareProc`: Either a universal procedure pointer to the object comparison function provided by your application or   if no function is provided. See  .
-- `myCountProc`: Either a universal procedure pointer to the object-counting function provided by your application or   if no function is provided. See  .
-- `myDisposeTokenProc`: Either a universal procedure pointer to the token disposal function provided by your application or   if no function is provided. (Token is defined in  . See  .
-- `myGetMarkTokenProc`: Either a universal procedure pointer to the function for returning a mark token provided by your application or   if no function is provided. See  .
-- `myMarkProc`: Either a universal procedure pointer to the object-marking function provided by your application or   if no function is provided. See  .
-- `myAdjustMarksProc`: Either a universal procedure pointer to the mark-adjusting function provided by your application or   if no function is provided. See  .
-- `myGetErrDescProcPtr`: Either a universal procedure pointer to the error callback function provided by your application or   if no function is provided. See  .
+- `myCompareProc`: Either a universal procedure pointer to the object comparison function provided by your application or `NULL` if no function is provided. See [`OSLCompareUPP`](oslcompareupp.md).
+- `myCountProc`: Either a universal procedure pointer to the object-counting function provided by your application or `NULL` if no function is provided. See [`OSLCountUPP`](oslcountupp.md).
+- `myDisposeTokenProc`: Either a universal procedure pointer to the token disposal function provided by your application or `NULL` if no function is provided. (Token is defined in [`AEDisposeToken(_:)`](1446783-aedisposetoken.md). See [`OSLDisposeTokenUPP`](osldisposetokenupp.md).
+- `myGetMarkTokenProc`: Either a universal procedure pointer to the function for returning a mark token provided by your application or `NULL` if no function is provided. See [`OSLGetMarkTokenUPP`](oslgetmarktokenupp.md).
+- `myMarkProc`: Either a universal procedure pointer to the object-marking function provided by your application or `NULL` if no function is provided. See [`OSLMarkUPP`](oslmarkupp.md).
+- `myAdjustMarksProc`: Either a universal procedure pointer to the mark-adjusting function provided by your application or `NULL` if no function is provided. See [`OSLAdjustMarksUPP`](osladjustmarksupp.md).
+- `myGetErrDescProcPtr`: Either a universal procedure pointer to the error callback function provided by your application or `NULL` if no function is provided. See [`OSLGetErrDescUPP`](oslgeterrdescupp.md).
 
 ## See Also
 

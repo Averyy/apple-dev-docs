@@ -11,7 +11,7 @@ Create anchors that track objects you recognize in the camera feed, using a cust
 
 #### Overview
 
-This sample app parses the camera feed, using the [`Vision`](https://developer.apple.com/documentation/Vision) framework with a [`Core ML`](https://developer.apple.com/documentation/CoreML) model that recognizes regular desktop items. The app displays a label onscreen that indicates when it recognizes an item. You then tap the screen to place a textual annotation in the physical environment that’s labeled with the name of the recognized object. Because the Core ML model used by this app doesn’t tell you where the object lies within an image, label placement relative to the object depends on where you tap.
+This sample app parses the camera feed, using the [`Vision`](https://developer.apple.com/documentation/vision) framework with a [`Core ML`](https://developer.apple.com/documentation/coreml) model that recognizes regular desktop items. The app displays a label onscreen that indicates when it recognizes an item. You then tap the screen to place a textual annotation in the physical environment that’s labeled with the name of the recognized object. Because the Core ML model used by this app doesn’t tell you where the object lies within an image, label placement relative to the object depends on where you tap.
 
 > **Note**: ARKit requires an iOS device with an A9 or later processor. ARKit is not available in iOS Simulator.
 
@@ -20,9 +20,9 @@ This sample app parses the camera feed, using the [`Vision`](https://developer.a
 The sample code’s `classificationRequest` property, `classifyCurrentImage() method, and `processClassifications(for:error:)` method manage:
 
 - A Core ML image-classifier model, loaded from an `mlmodel` file bundled with the app using the Swift API that Core ML generates for the model
-- [`VNCoreMLRequest`](https://developer.apple.com/documentation/Vision/VNCoreMLRequest) and [`VNImageRequestHandler`](https://developer.apple.com/documentation/Vision/VNImageRequestHandler) objects for passing image data to the model for evaluation
+- [`VNCoreMLRequest`](https://developer.apple.com/documentation/vision/vncoremlrequest) and [`VNImageRequestHandler`](https://developer.apple.com/documentation/vision/vnimagerequesthandler) objects for passing image data to the model for evaluation
 
-For more details on using [`VNImageRequestHandler`](https://developer.apple.com/documentation/Vision/VNImageRequestHandler),[`VNCoreMLRequest`](https://developer.apple.com/documentation/Vision/VNCoreMLRequest), and image classifier models, see the [`Classifying Images with Vision and Core ML`](https://developer.apple.com/documentation/CoreML/classifying-images-with-vision-and-core-ml) sample-code project.
+For more details on using [`VNImageRequestHandler`](https://developer.apple.com/documentation/vision/vnimagerequesthandler),[`VNCoreMLRequest`](https://developer.apple.com/documentation/vision/vncoremlrequest), and image classifier models, see the [`Classifying Images with Vision and Core ML`](https://developer.apple.com/documentation/coreml/classifying-images-with-vision-and-core-ml) sample-code project.
 
 #### Run the Ar Session and Process Camera Images
 
@@ -64,7 +64,7 @@ visionQueue.async {
 
 > ❗ **Important**: Limit your processing to one buffer at a time for performance. The camera recycles a finite pool of pixel buffers, so retaining too many buffers for processing could starve the camera and shut down the capture session. Passing multiple buffers to Vision for processing would slow down processing of each image, adding latency and reducing the amount of CPU and GPU overhead for rendering AR visualizations.
 
-In addition, the sample app enables the [`usesCPUOnly`](https://developer.apple.com/documentation/Vision/VNRequest/usesCPUOnly) setting for its Vision request, freeing the GPU for use in rendering.
+In addition, the sample app enables the [`usesCPUOnly`](https://developer.apple.com/documentation/vision/vnrequest/usescpuonly) setting for its Vision request, freeing the GPU for use in rendering.
 
 #### Visualize Results in Ar
 

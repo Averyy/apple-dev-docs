@@ -23,7 +23,7 @@ This method performs a paste operation on the responder object, pasting the data
 
 ## Parameters
 
-- `itemProviders`: An array of [`NSItemProvider`](https://developer.apple.com/documentation/Foundation/NSItemProvider) objects.
+- `itemProviders`: An array of [`NSItemProvider`](https://developer.apple.com/documentation/foundation/nsitemprovider) objects.
 
 ## See Also
 

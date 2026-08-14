@@ -43,9 +43,9 @@ If you provide a subscription group identifier or a collection of product identi
 The subscription store view doesn’t draw a background by default. You can add a background as follows:
 
 - To layer a background behind the view, use a view modifier, such as `background(alignment:content:)`.
-- To set the container background of the subscription store using a view, use the `containerBackground(_:for:)` or `containerBackground(for:alignment:content:)` view modifier and specify a [`ContainerBackgroundPlacement`](https://developer.apple.com/documentation/SwiftUI/ContainerBackgroundPlacement), such as [`subscriptionStoreHeader`](https://developer.apple.com/documentation/SwiftUI/ContainerBackgroundPlacement/subscriptionStoreHeader).
+- To set the container background of the subscription store using a view, use the `containerBackground(_:for:)` or `containerBackground(for:alignment:content:)` view modifier and specify a [`ContainerBackgroundPlacement`](https://developer.apple.com/documentation/swiftui/containerbackgroundplacement), such as [`subscriptionStoreHeader`](https://developer.apple.com/documentation/swiftui/containerbackgroundplacement/subscriptionstoreheader).
 
-You can optionally provide a view as a decorative icon next to each subscription option. Use the [`subscriptionStoreControlIcon(icon:)`](https://developer.apple.com/documentation/SwiftUI/View/subscriptionStoreControlIcon(icon:)) view modifier to set a view that decorates individual subscription options within a subscription store.
+You can optionally provide a view as a decorative icon next to each subscription option. Use the [`subscriptionStoreControlIcon(icon:)`](https://developer.apple.com/documentation/swiftui/view/subscriptionstorecontrolicon(icon:)) view modifier to set a view that decorates individual subscription options within a subscription store.
 
 ##### Order and Filter Subscriptions
 
@@ -55,21 +55,21 @@ If you create the subscription store view using one of the other initializers, t
 
 ##### Add Terms of Service and Privacy Policies
 
-The `SubscriptionStoreView` automatically displays buttons for the terms of service and privacy policy that you submit in App Store Connect. To override the destination of these buttons with a URL to custom terms of service and privacy policy pages, or a custom view, use the modifiers [`subscriptionStorePolicyDestination(url:for:)`](https://developer.apple.com/documentation/SwiftUI/View/subscriptionStorePolicyDestination(url:for:)) and [`subscriptionStorePolicyDestination(for:destination:)`](https://developer.apple.com/documentation/SwiftUI/View/subscriptionStorePolicyDestination(for:destination:)).
+The `SubscriptionStoreView` automatically displays buttons for the terms of service and privacy policy that you submit in App Store Connect. To override the destination of these buttons with a URL to custom terms of service and privacy policy pages, or a custom view, use the modifiers [`subscriptionStorePolicyDestination(url:for:)`](https://developer.apple.com/documentation/swiftui/view/subscriptionstorepolicydestination(url:for:)) and [`subscriptionStorePolicyDestination(for:destination:)`](https://developer.apple.com/documentation/swiftui/view/subscriptionstorepolicydestination(for:destination:)).
 
-Use modifiers, such as [`subscriptionStorePolicyForegroundStyle(_:)`](https://developer.apple.com/documentation/SwiftUI/View/subscriptionStorePolicyForegroundStyle(_:)), to customize the button’s style, for example, to make the text more readable against your store’s background.
+Use modifiers, such as [`subscriptionStorePolicyForegroundStyle(_:)`](https://developer.apple.com/documentation/swiftui/view/subscriptionstorepolicyforegroundstyle(_:)), to customize the button’s style, for example, to make the text more readable against your store’s background.
 
 ##### Add Auxiliary Buttons
 
-You can show auxiliary buttons in the subscription store using view modifiers. Specify the button’s visibility within the subscription store by using the [`storeButton(_:for:)`](https://developer.apple.com/documentation/SwiftUI/View/storeButton(_:for:)) view modifier.
+You can show auxiliary buttons in the subscription store using view modifiers. Specify the button’s visibility within the subscription store by using the [`storeButton(_:for:)`](https://developer.apple.com/documentation/swiftui/view/storebutton(_:for:)) view modifier.
 
-If you offer your subscription through other services, you can configure the subscription store view to display a sign-in button. Use the [`subscriptionStoreSignInAction(_:)`](https://developer.apple.com/documentation/SwiftUI/View/subscriptionStoreSignInAction(_:)) modifier to set the function your app calls when someone uses the sign-in button.
+If you offer your subscription through other services, you can configure the subscription store view to display a sign-in button. Use the [`subscriptionStoreSignInAction(_:)`](https://developer.apple.com/documentation/swiftui/view/subscriptionstoresigninaction(_:)) modifier to set the function your app calls when someone uses the sign-in button.
 
 The subscription store view automatically shows a Close button. To override this behavior, use the `storeButton(_:for:)` modifier to unconditionally show, or hide, the Close button.
 
 ##### Style the Subscription Store View
 
-You can further customize the subscription store’s appearance using control styles. Use subscription store control styles to customize the display of subscription options, and how people interact with your store. To try out standard styles, such as [`PickerSubscriptionStoreControlStyle`](pickersubscriptionstorecontrolstyle.md), apply the style using the [`subscriptionStoreControlStyle(_:)`](https://developer.apple.com/documentation/SwiftUI/View/subscriptionStoreControlStyle(_:)) modifier.
+You can further customize the subscription store’s appearance using control styles. Use subscription store control styles to customize the display of subscription options, and how people interact with your store. To try out standard styles, such as [`PickerSubscriptionStoreControlStyle`](pickersubscriptionstorecontrolstyle.md), apply the style using the [`subscriptionStoreControlStyle(_:)`](https://developer.apple.com/documentation/swiftui/view/subscriptionstorecontrolstyle(_:)) modifier.
 
 ## Topics
 
@@ -99,9 +99,9 @@ You can further customize the subscription store’s appearance using control st
 ## Relationships
 
 ### Conforms To
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
-- [View](../SwiftUI/View.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
+- [View](../swiftui/view.md)
 
 ## See Also
 
@@ -110,7 +110,7 @@ You can further customize the subscription store’s appearance using control st
 - [struct StoreView](storeview.md)
   A view that merchandises a collection of In-App Purchase products.
 - [struct SubscriptionOfferView](subscriptionofferview.md)
-- [Backyard Birds: Building an app with SwiftData and widgets](../SwiftUI/Backyard-birds-sample.md)
+- [Backyard Birds: Building an app with SwiftData and widgets](../swiftui/backyard-birds-sample.md)
   Create an app with persistent data, interactive widgets, and an all new in-app purchase experience.
 
 

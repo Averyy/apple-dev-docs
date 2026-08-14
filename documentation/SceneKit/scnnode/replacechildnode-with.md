@@ -29,7 +29,7 @@ Calling this method results in undefined behavior if the `oldChild` parameter do
 ## Parameters
 
 - `oldChild`: The existing child node to be replaced.
-- `newChild`: The node with which to replace the child node. > ❗ **Important**:  Raises an exception ([`invalidArgumentException`](https://developer.apple.com/documentation/Foundation/NSExceptionName/invalidArgumentException)) if `newChild` is `nil`.
+- `newChild`: The node with which to replace the child node. > ❗ **Important**:  Raises an exception ([`invalidArgumentException`](https://developer.apple.com/documentation/foundation/nsexceptionname/invalidargumentexception)) if `newChild` is `nil`.
 
 ## See Also
 

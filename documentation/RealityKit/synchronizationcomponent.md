@@ -49,7 +49,7 @@ An entity acquires a [`SynchronizationComponent`](synchronizationcomponent.md) i
 
 ### Conforms To
 - [Component](component.md)
-- [Equatable](../Swift/Equatable.md)
+- [Equatable](../swift/equatable.md)
 
 
 ---

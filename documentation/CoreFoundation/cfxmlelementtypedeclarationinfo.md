@@ -30,7 +30,7 @@ A pointer to this structure is included in the CFXMLNode passed to your applicat
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../Swift/BitwiseCopyable.md)
+- [BitwiseCopyable](../swift/bitwisecopyable.md)
 
 ## See Also
 

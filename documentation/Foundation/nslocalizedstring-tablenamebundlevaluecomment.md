@@ -28,7 +28,7 @@ The result of sending [`localizedString(forKey:value:table:)`](bundle/localizeds
 
 Use this function to automatically generate a strings files named `[tableName].strings` located in `bundle` from your code when exporting localizations from Xcode or the `genstrings` utility.
 
-For information about inserting plural nouns and units into localized strings, see [`Localizing strings that contain plurals`](https://developer.apple.com/documentation/Xcode/localizing-strings-that-contain-plurals).
+For information about inserting plural nouns and units into localized strings, see [`Localizing strings that contain plurals`](https://developer.apple.com/documentation/xcode/localizing-strings-that-contain-plurals).
 
 > ❗ **Important**:  The values for `key`, `tableName`, `value`, and `comment` must be string literal values. Xcode can read these values from source code to automatically create localization tables when exporting localizations, but it doesn’t resolve string variables. If you want to use string variables, manually create a strings file and use [`localizedString(forKey:value:table:)`](bundle/localizedstring(forkey:value:table:).md) instead. For more information on strings files, see [`String Resources`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/LoadingResources/Strings/Strings.html#//apple_ref/doc/uid/10000051i-CH6).
 
@@ -75,7 +75,7 @@ NSLocalizedString("dominant-color-caption",
 "dominant-color-caption" = "The dominant color is (dominantColor).";
 ```
 
-Instead, to dynamically insert values within localized strings, set `value` to a format string, and use [`localizedStringWithFormat(_:_:)`](https://developer.apple.com/documentation/Swift/String/localizedStringWithFormat(_:_:)) to insert those values.
+Instead, to dynamically insert values within localized strings, set `value` to a format string, and use [`localizedStringWithFormat(_:_:)`](https://developer.apple.com/documentation/swift/string/localizedstringwithformat(_:_:)) to insert those values.
 
 ```swift
 let format = NSLocalizedString("dominant-color-caption",
@@ -89,7 +89,7 @@ let localizedString = String.localizedStringWithFormat(format, favoriteColor)
 "dominant-color-copation" = "The dominant color is %@.";
 ```
 
-For information about inserting plural nouns and units into localized strings, see [`Localizing strings that contain plurals`](https://developer.apple.com/documentation/Xcode/localizing-strings-that-contain-plurals).
+For information about inserting plural nouns and units into localized strings, see [`Localizing strings that contain plurals`](https://developer.apple.com/documentation/xcode/localizing-strings-that-contain-plurals).
 
 ##### Avoid Multiline String Literals
 
@@ -111,7 +111,7 @@ The previous code sample adds the following entry into `Localized.strings` when 
 "loading-screen.venus-flytrap-fact" = "\nDid you know that venus flytraps have flowers atop very long stems?\nThe long stem keeps insects a safe distance away from their digestive leaves below.\n";
 ```
 
-You can preserve the aesthetics of mirroring newlines in a string in their code representation by using string concatenation with [`+(_:_:)`](https://developer.apple.com/documentation/Swift/String/+(_:_:)).
+You can preserve the aesthetics of mirroring newlines in a string in their code representation by using string concatenation with [`+(_:_:)`](https://developer.apple.com/documentation/swift/string/+(_:_:)).
 
 ```swift
 NSLocalizedString("loading-screen.venus-flytrap-fact",
@@ -152,9 +152,9 @@ The word "bazillion" is intentionally used to invoke a sense of childish excitem
 
 ## See Also
 
-- [Exporting localizations](../Xcode/exporting-localizations.md)
+- [Exporting localizations](../xcode/exporting-localizations.md)
   Provide the localizable files from your project to localizers.
-- [Importing localizations](../Xcode/importing-localizations.md)
+- [Importing localizations](../xcode/importing-localizations.md)
   Import the files that you translate or adapt for a language and region into your project.
 - [struct Locale](locale.md)
   Information about linguistic, cultural, and technological conventions for use in formatting data for presentation.

@@ -16,7 +16,7 @@ class NSButtonCell
 
 #### Overview
 
-Setting the integer, float, double, or object value of an `NSButtonCell` object results in a call to [`state`](nscell/state.md) with the value converted to integer. In the case of [`objectValue`](nscell/objectvalue.md), `nil` is equivalent to `0`, and a non-`nil` object that doesn’t respond to [`intValue`](nscell/intvalue.md) sets the state to `1`. Otherwise, the state is set to the object’s [`intValue`](nscell/intvalue.md). Similarly, for most button types, querying the integer, float, double, or object value of an `NSButtonCell` returns the current state in the requested representation. In the case of [`objectValue`](nscell/objectvalue.md), this is an `NSNumber` containing [`true`](https://developer.apple.com/documentation/Swift/true) for on, [`false`](https://developer.apple.com/documentation/Swift/false) for off, and integer value `-1` for the mixed state. For accelerator buttons (type [`NSAcceleratorButton`](nsacceleratorbutton.md) or [`NSMultiLevelAcceleratorButton`](nsmultilevelacceleratorbutton.md)) on systems that support pressure sensitivity, querying [`doubleValue`](nscontrol/doublevalue.md) returns the amount of pressure applied while pressing the button.
+Setting the integer, float, double, or object value of an `NSButtonCell` object results in a call to [`state`](nscell/state.md) with the value converted to integer. In the case of [`objectValue`](nscell/objectvalue.md), `nil` is equivalent to `0`, and a non-`nil` object that doesn’t respond to [`intValue`](nscell/intvalue.md) sets the state to `1`. Otherwise, the state is set to the object’s [`intValue`](nscell/intvalue.md). Similarly, for most button types, querying the integer, float, double, or object value of an `NSButtonCell` returns the current state in the requested representation. In the case of [`objectValue`](nscell/objectvalue.md), this is an `NSNumber` containing [`true`](https://developer.apple.com/documentation/swift/true) for on, [`false`](https://developer.apple.com/documentation/swift/false) for off, and integer value `-1` for the mixed state. For accelerator buttons (type [`NSAcceleratorButton`](nsacceleratorbutton.md) or [`NSMultiLevelAcceleratorButton`](nsmultilevelacceleratorbutton.md)) on systems that support pressure sensitivity, querying [`doubleValue`](nscontrol/doublevalue.md) returns the amount of pressure applied while pressing the button.
 
 The configuration of an [`NSButtonCell`](nsbuttoncell.md) object controls how the button object appears and behaves, but it’s [`NSButton`](nsbutton.md) that sends a message when the control is clicked. For more information on the behavior of [`NSButtonCell`](nsbuttoncell.md), see the [`NSButton`](nsbutton.md) and [`NSMatrix`](nsmatrix.md) class specifications.
 
@@ -118,19 +118,19 @@ Setting the [`font`](nscell/font.md) property does nothing if the button has no 
 ### Inherited By
 - [NSMenuItemCell](nsmenuitemcell.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
 - [NSAccessibilityElementProtocol](nsaccessibilityelementprotocol.md)
 - [NSAccessibilityProtocol](nsaccessibilityprotocol.md)
-- [NSCoding](../Foundation/NSCoding.md)
-- [NSCopying](../Foundation/NSCopying.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSCoding](../foundation/nscoding.md)
+- [NSCopying](../foundation/nscopying.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 - [NSUserInterfaceItemIdentification](nsuserinterfaceitemidentification.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 
 ---

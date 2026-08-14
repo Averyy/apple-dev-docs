@@ -29,7 +29,7 @@ The score you return from this method is the primary heuristic by which the [`GK
 
 Exactly how you calculate scores to return from this method depends on the rules of your game and your strategy for evaluating possible game states. The gameplay performance of the [`GKMinmaxStrategist`](gkminmaxstrategist.md) strategist depends largely on the soundness of your metric in describing the relative advantage of different game positions. For example, if your metric can distinguish between a move that is likely to result in a win after a few turns and a move that is likely to result in a win after many turns, the strategist will be better able to predict winning moves.
 
-This method should return [`NSIntegerMin`](https://developer.apple.com/documentation/ObjectiveC/NSIntegerMin) if the specified player is not valid.
+This method should return [`NSIntegerMin`](https://developer.apple.com/documentation/objectivec/nsintegermin) if the specified player is not valid.
 
 > **Note**:  This method is optional; however, your game model class must implement at least one of the [`score(for:)`](gkgamemodel/score(for:).md), [`isLoss(for:)`](gkgamemodel/isloss(for:).md), and [`isWin(for:)`](gkgamemodel/iswin(for:).md) methods.
 

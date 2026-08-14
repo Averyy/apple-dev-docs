@@ -28,8 +28,8 @@ struct AutomaticPresentationSizing
 
 ### Conforms To
 - [PresentationSizing](presentationsizing.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

@@ -14,7 +14,7 @@ Calculate face-capture quality and visualize facial features for a collection of
 
 Use the `Vision` framework to detect faces and facial features in a photo. This framework can analyze a photo to retrieve metrics such as face-capture quality and visual information like facial landmarks and face rectangles. This sample demonstrates how to locate all the faces in a selfie through the [`DetectFaceRectanglesRequest`](detectfacerectanglesrequest.md). The sample then uses [`DetectFaceCaptureQualityRequest`](detectfacecapturequalityrequest.md) to obtain capture-quality scores, and ``DetectFaceLandmarksRequest` to display outlines around each facial landmark, like the eyes or nose.
 
-![An illustration of a person’s face, and a box around the face depicting it being detected.](https://docs-assets.developer.apple.com/published/e09281809de5df298df7a922cc0a7a3a/face-detection-box%402x.png)
+![An illustration of a person’s face, and a box around the face depicting it being detected.](/images/Vision/face-detection-box@2x.png)
 
 Face-capture quality is a holistic measure that considers scene lighting, blur, occlusion, expression, pose, focus, and more. It provides a score that the app uses to sort the collection of selfies from best to worst. The pretrained machine-learning model scores a capture lower if, for example, the image contains low light or bad focus, or if the person has a negative expression. These scores are floating-point values between 0.0 and 1.0.
 
@@ -27,7 +27,7 @@ To run this sample app, you need the following:
 
 ##### Selecting the Selfies
 
-The sample uses [`PhotosPicker`](https://developer.apple.com/documentation/PhotosUI/PhotosPicker) to allow a person to select the selfies to analyze, and sets the maximum number of images to 5 through the `maxSelectionCount` parameter. For more information on using `PhotosPicker`, see [`Bringing Photos picker to your SwiftUI app`](https://developer.apple.com/documentation/PhotoKit/bringing-photos-picker-to-your-swiftui-app):
+The sample uses [`PhotosPicker`](https://developer.apple.com/documentation/photosui/photospicker) to allow a person to select the selfies to analyze, and sets the maximum number of images to 5 through the `maxSelectionCount` parameter. For more information on using `PhotosPicker`, see [`Bringing Photos picker to your SwiftUI app`](https://developer.apple.com/documentation/photokit/bringing-photos-picker-to-your-swiftui-app):
 
 ```swift
 PhotosPicker(selection: $selectedPhotos, maxSelectionCount: 5, matching: .images) {
@@ -35,7 +35,7 @@ PhotosPicker(selection: $selectedPhotos, maxSelectionCount: 5, matching: .images
 }
 ```
 
-The sample performs the `Vision` requests and displays the images using data, so the app converts each [`PhotosPickerItem`](https://developer.apple.com/documentation/PhotosUI/PhotosPickerItem) to data:
+The sample performs the `Vision` requests and displays the images using data, so the app converts each [`PhotosPickerItem`](https://developer.apple.com/documentation/photosui/photospickeritem) to data:
 
 ```swift
 for photo in selectedPhotos {
@@ -87,7 +87,7 @@ func processSelfie(photo: Data) async throws -> Selfie {
 }
 ```
 
-Analyzing a large collection of selfies with `Vision` requests can take time, so the app uses Swift concurrency to help with speed and efficiency. Using [`TaskGroup`](https://developer.apple.com/documentation/Swift/TaskGroup), the app processes the images in parallel. When the `processSelfie` method returns a new `Selfie` object, the app adds it to the `selfies` array. After the app processes all the images, it sorts the `selfies` array by capture-quality score. The function returns the new array of `Selfie` objects:
+Analyzing a large collection of selfies with `Vision` requests can take time, so the app uses Swift concurrency to help with speed and efficiency. Using [`TaskGroup`](https://developer.apple.com/documentation/swift/taskgroup), the app processes the images in parallel. When the `processSelfie` method returns a new `Selfie` object, the app adds it to the `selfies` array. After the app processes all the images, it sorts the `selfies` array by capture-quality score. The function returns the new array of `Selfie` objects:
 
 ```swift
 func processAllSelfies(photos: [Data]) async throws -> [Selfie] {
@@ -115,7 +115,7 @@ func processAllSelfies(photos: [Data]) async throws -> [Selfie] {
 
 ##### Display Face Rectangles
 
-The sample provides custom `Shape` implementations to draw a rectangle around each face, and the face landmarks. For face rectangles, the app uses the [`boundingBox`](boundingboxproviding/boundingbox.md) property on a `FaceObservation`. The `boundingBox` property contains the location and dimensions of the box in the form of a [`NormalizedRect`](normalizedrect.md). The sample converts the `NormalizedRect` to a [`CGRect`](https://developer.apple.com/documentation/CoreFoundation/CGRect), and returns a [`Path`](https://developer.apple.com/documentation/SwiftUI/Path) to draw the rectangle:
+The sample provides custom `Shape` implementations to draw a rectangle around each face, and the face landmarks. For face rectangles, the app uses the [`boundingBox`](boundingboxproviding/boundingbox.md) property on a `FaceObservation`. The `boundingBox` property contains the location and dimensions of the box in the form of a [`NormalizedRect`](normalizedrect.md). The sample converts the `NormalizedRect` to a [`CGRect`](https://developer.apple.com/documentation/corefoundation/cgrect), and returns a [`Path`](https://developer.apple.com/documentation/swiftui/path) to draw the rectangle:
 
 ```swift
 struct BoundingBox: Shape {
@@ -147,7 +147,7 @@ The sample creates a `BoundingBox` object for each face in the photo, and overla
 
 To create and display face landmarks on the image, the sample uses the custom `FaceLandmark` structure. Each `FaceObservation` from the `DetectFaceLandmarksRequest` contains a collection of landmarks as regions. A region contains all the points the sample needs to draw the outline. The possible regions are `faceContour`, `innerLips`, `leftEye`, `leftEyebrow`, `leftPupil`, `medianLine`, `nose`, `noseCrest`, `outerLips`, `rightEye`, `rightEyebrow`, and `rightPupil`.
 
-The sample converts a region’s [`NormalizedPoint`](normalizedpoint.md) collection to a [`CGPoint`](https://developer.apple.com/documentation/CoreFoundation/CGPoint) collection, and draws a path from one point to the next. When it reaches the last point, the sample closes the path:
+The sample converts a region’s [`NormalizedPoint`](normalizedpoint.md) collection to a [`CGPoint`](https://developer.apple.com/documentation/corefoundation/cgpoint) collection, and draws a path from one point to the next. When it reaches the last point, the sample closes the path:
 
 ```swift
 struct FaceLandmark: Shape {

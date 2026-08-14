@@ -36,14 +36,14 @@ Create an instance of [`OSSystemExtensionRequest`](ossystemextensionrequest.md) 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 
@@ -51,7 +51,7 @@ Create an instance of [`OSSystemExtensionRequest`](ossystemextensionrequest.md) 
   Activate system extensions and drivers to make them available to the system, and update or deactivate them as needed.
 - [class OSSystemExtensionRequest](ossystemextensionrequest.md)
   A request to activate or deactivate a system extension.
-- [System Extension Redistributable Entitlement](../BundleResources/Entitlements/com.apple.developer.system-extension.redistributable.md)
+- [System Extension Redistributable Entitlement](../bundleresources/entitlements/com.apple.developer.system-extension.redistributable.md)
   A Boolean value that indicates whether other development teams may distribute a system extension you create.
 
 

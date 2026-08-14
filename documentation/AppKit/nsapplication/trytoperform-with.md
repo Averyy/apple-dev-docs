@@ -16,11 +16,11 @@ func tryToPerform(_ action: Selector, with object: Any?) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/Swift/true) if either the receiver or its delegate can accept the specified selector; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false). This method also returns [`false`](https://developer.apple.com/documentation/Swift/false) if `aSelector` is `nil`.
+[`true`](https://developer.apple.com/documentation/swift/true) if either the receiver or its delegate can accept the specified selector; otherwise, [`false`](https://developer.apple.com/documentation/swift/false). This method also returns [`false`](https://developer.apple.com/documentation/swift/false) if `aSelector` is `nil`.
 
 #### Discussion
 
-The receiver tries to perform the method `aSelector` using its inherited [`tryToPerform(_:with:)`](nsresponder/trytoperform(_:with:).md) method of [`NSResponder`](nsresponder.md). If the receiver doesn’t perform `aSelector`, the delegate is given the opportunity to perform it using its inherited [`perform(_:with:)`](https://developer.apple.com/documentation/ObjectiveC/NSObjectProtocol/perform(_:with:)) method of [`NSObject`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class).
+The receiver tries to perform the method `aSelector` using its inherited [`tryToPerform(_:with:)`](nsresponder/trytoperform(_:with:).md) method of [`NSResponder`](nsresponder.md). If the receiver doesn’t perform `aSelector`, the delegate is given the opportunity to perform it using its inherited [`perform(_:with:)`](https://developer.apple.com/documentation/objectivec/nsobjectprotocol/perform(_:with:)) method of [`NSObject`](https://developer.apple.com/documentation/objectivec/nsobject-swift.class).
 
 ## Parameters
 
@@ -29,7 +29,7 @@ The receiver tries to perform the method `aSelector` using its inherited [`tryTo
 
 ## See Also
 
-- [func responds(to: Selector!) -> Bool](../ObjectiveC/NSObjectProtocol/responds(to:).md)
+- [func responds(to: Selector!) -> Bool](../objectivec/nsobjectprotocol/responds(to:).md)
   Returns a Boolean value that indicates whether the receiver implements or inherits a method that can respond to a specified message.
 - [func sendAction(Selector, to: Any?, from: Any?) -> Bool](nsapplication/sendaction(_:to:from:).md)
   Sends the given action message to the given target.

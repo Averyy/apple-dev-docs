@@ -25,7 +25,7 @@ static var leadingFirstTextBaseline: Alignment { get }
 
 This alignment combines the [`leading`](horizontalalignment/leading.md) horizontal guide and the [`firstTextBaseline`](verticalalignment/firsttextbaseline.md) vertical guide:
 
-![A square that’s divided into four equal quadrants. The upper-](https://docs-assets.developer.apple.com/published/fb626b3fdb3acf7b14e4279080b077f6/Alignment-leadingFirstTextBaseline-1-iOS%402x.png)
+![A square that’s divided into four equal quadrants. The upper-](/images/com.apple.SwiftUI/Alignment-leadingFirstTextBaseline-1-iOS@2x.png)
 
 ## See Also
 

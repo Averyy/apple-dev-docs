@@ -21,7 +21,7 @@ var mClassDescription: AudioClassDescription
 
 #### Discussion
 
-An [`AudioClassDescription`](https://developer.apple.com/documentation/CoreAudioTypes/AudioClassDescription) struct that specifies the codec to be used.
+An [`AudioClassDescription`](https://developer.apple.com/documentation/coreaudiotypes/audioclassdescription) struct that specifies the codec to be used.
 
 
 ---

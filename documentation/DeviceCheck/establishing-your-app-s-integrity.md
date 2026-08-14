@@ -8,7 +8,7 @@ Ensure that requests your server receives come from legitimate instances of your
 
 You can’t rely on your app’s logic to perform security checks on itself because a compromised app can falsify the results. Instead, you use the [`shared`](dcappattestservice/shared.md) instance of the [`DCAppAttestService`](dcappattestservice.md) class in your app to create a hardware-based, cryptographic key that uses Apple servers to certify that the key belongs to a valid instance of your app. Then you use the service to cryptographically sign server requests using the certified key. Your app uses these measures to assert its legitimacy with any server requests for sensitive or premium content.
 
-![A diagram showing that your app receives challenges from your server and responds with an attestation and assertions, while relying on the App Attest logic.](https://docs-assets.developer.apple.com/published/2b7a2d8c173ccb7e4e7f4c52f5a21925/establishing_your_app_s_integrity-1%402x.png)
+![A diagram showing that your app receives challenges from your server and responds with an attestation and assertions, while relying on the App Attest logic.](/images/com.apple.DeviceCheck/establishing_your_app_s_integrity-1@2x.png)
 
 This article describes how to modify your app to use the App Attest service. For a description of the complementary logic that you add to your server, see [`Validating apps that connect to your server`](validating-apps-that-connect-to-your-server.md).
 
@@ -28,7 +28,7 @@ if service.isSupported {
 
 You change the behavior of both your app, as the example above shows, and your server — which can no longer require assertions — when you find that the device doesn’t support the service.
 
-> ❗ **Important**: Action, extensible SSO, and watchOS extensions are supported. All other extension types are not supported, even if the [`isSupported`](dcappattestservice/issupported.md) method property is [`true`](https://developer.apple.com/documentation/Swift/true).
+> ❗ **Important**: Action, extensible SSO, and watchOS extensions are supported. All other extension types are not supported, even if the [`isSupported`](dcappattestservice/issupported.md) method property is [`true`](https://developer.apple.com/documentation/swift/true).
 
 ##### Create a Key Pair
 
@@ -44,13 +44,13 @@ service.generateKey { keyId, error in
 
 On success, the method’s completion handler returns a key identifier that you use later to access the key. Record the identifier in persistent storage — for example, by writing it to a file — because there’s no way to use the key without the identifier, and no way to get the identifier later. The device automatically stores the associated private key in the Secure Enclave, from where the App Attest service can use it to create signatures, but from where no process can ever directly read or modify it, ensuring its security.
 
-> ❗ **Important**: If you create a key pair in an App Clip, use the same key pair in the corresponding app. To support this, be sure to store the identifier in a shared container accessible from your full app. For more information about sharing data between your App Clip and your full app, see [`Sharing data between your App Clip and your full app`](https://developer.apple.com/documentation/AppClip/sharing-data-between-your-app-clip-and-your-full-app).
+> ❗ **Important**: If you create a key pair in an App Clip, use the same key pair in the corresponding app. To support this, be sure to store the identifier in a shared container accessible from your full app. For more information about sharing data between your App Clip and your full app, see [`Sharing data between your App Clip and your full app`](https://developer.apple.com/documentation/appclip/sharing-data-between-your-app-clip-and-your-full-app).
 
 Don’t reuse a key among multiple users on a device because this weakens security protections. In particular, it becomes hard to detect an attack that uses a single compromised device to serve multiple remote users running a compromised version of your app. For more information, see [`Assessing fraud risk`](assessing-fraud-risk.md).
 
 ##### Certify the Key Pairs As Valid
 
-Before using a key pair, ask Apple to attest to its origin on Apple hardware running an uncompromised version of your app. Because you can’t trust your app’s logic to verify the attestation result, you send the result to your server. To reduce the risk of replay attacks during this procedure, attestation embeds the hash of a unique, one-time challenge from your server. You can create a suitable value using the [`SHA256`](https://developer.apple.com/documentation/CryptoKit/SHA256) implementation in CryptoKit. The challenge should be at least 16 bytes in length to ensure sufficient entropy to ensure guessing them is infeasible.
+Before using a key pair, ask Apple to attest to its origin on Apple hardware running an uncompromised version of your app. Because you can’t trust your app’s logic to verify the attestation result, you send the result to your server. To reduce the risk of replay attacks during this procedure, attestation embeds the hash of a unique, one-time challenge from your server. You can create a suitable value using the [`SHA256`](https://developer.apple.com/documentation/cryptokit/sha256) implementation in CryptoKit. The challenge should be at least 16 bytes in length to ensure sufficient entropy to ensure guessing them is infeasible.
 
 ```swift
 import CryptoKit
@@ -71,9 +71,9 @@ service.attestKey(keyId, clientDataHash: hash) { attestation, error in
 
 If the method, which accesses a remote Apple server, returns the [`serverUnavailable`](dcerror-swift.struct/serverunavailable.md) error, try attestation again later with the same key. For any other error, discard the key identifier and create a new key when you want to try again. Otherwise, send the completion handler’s attestation object and the `keyId` to your server for processing.
 
-> ❗ **Important**: If your app already has millions of daily active users and you want to start calling the [`attestKey(_:clientDataHash:completionHandler:)`](dcappattestservice/attestkey(_:clientdatahash:completionhandler:).md) method to initiate attestation from your app, please review [`Preparing to use the app attest service`](preparing-to-use-the-app-attest-service#Onboard-users-gradually.md) for guidance on safely ramping your users.
+> ❗ **Important**: If your app already has millions of daily active users and you want to start calling the [`attestKey(_:clientDataHash:completionHandler:)`](dcappattestservice/attestkey(_:clientdatahash:completionhandler:).md) method to initiate attestation from your app, please review [`Preparing to use the app attest service`](preparing-to-use-the-app-attest-service.md) for guidance on safely ramping your users.
 
-If you use the [`URL Loading System`](https://developer.apple.com/documentation/Foundation/url-loading-system) to communicate with your server, you can send an unmodified attestation object. If you communicate with your server by generating text-based HTTPS queries, convert the attestation object to a Base64-encoded string first.
+If you use the [`URL Loading System`](https://developer.apple.com/documentation/foundation/url-loading-system) to communicate with your server, you can send an unmodified attestation object. If you communicate with your server by generating text-based HTTPS queries, convert the attestation object to a Base64-encoded string first.
 
 ```swift
 let attestationString = attestation?.base64EncodedString()
@@ -124,7 +124,7 @@ The keys that you generate remain valid through regular app updates, but don’t
   Use this guide to validate your implementation of verifying the attestation object verification process.
 - [class DCAppAttestService](dcappattestservice.md)
   A service that you use to validate the instance of your app running on a device.
-- [App Attest Environment](../BundleResources/Entitlements/com.apple.developer.devicecheck.appattest-environment.md)
+- [App Attest Environment](../bundleresources/entitlements/com.apple.developer.devicecheck.appattest-environment.md)
   The environment for an app that uses the App Attest service to validate itself.
 
 

@@ -3,6 +3,8 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
+The confirmation response that the server returns after adding or removing subscription administrators.
+
 ## Declaration
 
 ```swift
@@ -11,9 +13,9 @@ object ManageSubscriptionAdminsResponse
 
 ## Properties
 
-- `tokenExpirationDate` (string)
-- `uId` (string)
-- `versionId` (string)
+- `tokenExpirationDate` (string): The token expiration date in an ISO-8601 format. Note: The server shows all dates and times in UTC.
+- `uId` (string): The unique library identifier. When querying records using multiple tokens that may share libraries, use the `uId` field to filter duplicates and avoid double-counting records when different content managers upload duplicate tokens.
+- `versionId` (string): The current version identifier.
 
 ## See Also
 
@@ -40,11 +42,13 @@ object ManageSubscriptionAdminsResponse
 - [object ManageSubscriptionsRequest](managesubscriptionsrequest.md)
   The request for subscription management.
 - [object ManageSubscriptionAdminsRequest](managesubscriptionadminsrequest.md)
+  The request body for adding or removing subscription administrators.
 - [object ResponseSubscriptionAdmin](responsesubscriptionadmin.md)
+  An administrator for a subscription.
+- [object SubscriptionManagementResponse](subscriptionmanagementresponse.md)
+  A confirmation response that reports your device management service’s subscription management support.
 - [object MdmInfo](mdminfo.md)
   Information about the MDM client.
-- [object EventResponse](eventresponse.md)
-  The response that contains the event identifier.
 
 
 ---

@@ -32,11 +32,11 @@ After you assign tags to your asset packs, use the Prefetch view to identify whi
 
 ##### Use the on Demand Resources Api for Later Game and Optional Content
 
-Your game can programmatically download asset packs using the [`NSBundleResourceRequest`](https://developer.apple.com/documentation/Foundation/NSBundleResourceRequest) API. This allows you to save disk space by only downloading content after the player unlocks it through progression or In-App Purchases. Because asset packs can have multiple tags, splitting your content into smaller asset packs can further reduce your game’s disk space usage. Use the [`NSBundleResourceRequest`](https://developer.apple.com/documentation/Foundation/NSBundleResourceRequest) API to request tags, which prompt the system to download any matching asset packs as necessary.
+Your game can programmatically download asset packs using the [`NSBundleResourceRequest`](https://developer.apple.com/documentation/foundation/nsbundleresourcerequest) API. This allows you to save disk space by only downloading content after the player unlocks it through progression or In-App Purchases. Because asset packs can have multiple tags, splitting your content into smaller asset packs can further reduce your game’s disk space usage. Use the [`NSBundleResourceRequest`](https://developer.apple.com/documentation/foundation/nsbundleresourcerequest) API to request tags, which prompt the system to download any matching asset packs as necessary.
 
-For content unlocked by progress, requesting tags before they’re needed can make the content available to the player without waiting. In case the download doesn’t complete before the player needs the content, use the [`progress`](https://developer.apple.com/documentation/Foundation/NSBundleResourceRequest/progress) property to keep the user informed.
+For content unlocked by progress, requesting tags before they’re needed can make the content available to the player without waiting. In case the download doesn’t complete before the player needs the content, use the [`progress`](https://developer.apple.com/documentation/foundation/nsbundleresourcerequest/progress) property to keep the user informed.
 
-When the player completes part of your game’s content, use the [`setPreservationPriority(_:forTags:)`](https://developer.apple.com/documentation/Foundation/Bundle/setPreservationPriority(_:forTags:)) method of the [`Bundle`](https://developer.apple.com/documentation/Foundation/Bundle) class to inform the system that the asset packs containing that content are no longer necessary.
+When the player completes part of your game’s content, use the [`setPreservationPriority(_:forTags:)`](https://developer.apple.com/documentation/foundation/bundle/setpreservationpriority(_:fortags:)) method of the [`Bundle`](https://developer.apple.com/documentation/foundation/bundle) class to inform the system that the asset packs containing that content are no longer necessary.
 
 ##### Stay Within the on Demand Resources Limits
 
@@ -53,7 +53,7 @@ If your game targets iOS 18, iPadOS 18, or tvOS 18, it can have up to 70 GB of a
 
 ##### Use Background Assets for Content Outside the App Store
 
-Use the [`Background Assets`](https://developer.apple.com/documentation/BackgroundAssets) framework if you want to host your game’s additional content outside the App Store. To use Background Assets, write a Background Assets extension that tells the system how to download assets from your website or CDN. Your extension can also react to authentication challenges and changes in download status. Your game uses the [`BADownloadManager`](https://developer.apple.com/documentation/BackgroundAssets/BADownloadManager) API to stay informed of completed downloads and schedule new downloads.
+Use the [`Background Assets`](https://developer.apple.com/documentation/backgroundassets) framework if you want to host your game’s additional content outside the App Store. To use Background Assets, write a Background Assets extension that tells the system how to download assets from your website or CDN. Your extension can also react to authentication challenges and changes in download status. Your game uses the [`BADownloadManager`](https://developer.apple.com/documentation/backgroundassets/badownloadmanager) API to stay informed of completed downloads and schedule new downloads.
 
 > **Note**:  Session 110403: [`Meet Background Assets`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2022/110403/) Session 10108: [`What’s New in Background Assets`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2023/10108/)
 
@@ -63,7 +63,7 @@ The `BAEssentialDownloadAllowance` key tells the App Store how much additional c
 
 ##### Extract Your Assets to the Correct Location
 
-The system places downloaded files in a purgeable location. When the system finishes downloading your essential content, it informs your game if the user launched it immediately or it informs your extension. The process that receives the notification must extract the assets to a stable location where your game can find them. Choose a location within your game’s `Caches` directory. Don’t extract your assets to the `Documents` directory because this causes them to get included in device backups. To find the appropriate `Caches` directory, use the [`FileManager`](https://developer.apple.com/documentation/Foundation/FileManager) API:
+The system places downloaded files in a purgeable location. When the system finishes downloading your essential content, it informs your game if the user launched it immediately or it informs your extension. The process that receives the notification must extract the assets to a stable location where your game can find them. Choose a location within your game’s `Caches` directory. Don’t extract your assets to the `Documents` directory because this causes them to get included in device backups. To find the appropriate `Caches` directory, use the [`FileManager`](https://developer.apple.com/documentation/foundation/filemanager) API:
 
 ```swift
 @implementation MyGameBADownloaderExtension
@@ -126,7 +126,7 @@ If an essential download fails, the system skips it, and installation of your ap
   Enable Game Center, configure features, and test them locally in your Xcode project.
 - [Authenticating a player](authenticating-a-player.md)
   Confirm player credentials and device capabilities and check for account restrictions.
-- [Game Center Entitlement](../BundleResources/Entitlements/com.apple.developer.game-center.md)
+- [Game Center Entitlement](../bundleresources/entitlements/com.apple.developer.game-center.md)
   A Boolean value that indicates whether users of the app may see and compare achievements on a leaderboard, invite friends, and start multiplayer games.
 
 

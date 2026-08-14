@@ -19,7 +19,7 @@ class ARRaycastQuery
 
 You create a raycast query by providing a 3D vector and starting place.
 
-To create a raycast query using a 2D screen location and default vector that casts outward in the z-direction from the user, use the convenience functions, [`makeRaycastQuery(from:allowing:alignment:)`](https://developer.apple.com/documentation/RealityKit/ARView/makeRaycastQuery(from:allowing:alignment:)) on [`ARView`](https://developer.apple.com/documentation/RealityKit/ARView), or [`raycastQuery(from:allowing:alignment:)`](arscnview/raycastquery(from:allowing:alignment:).md) on [`ARSCNView`](arscnview.md).
+To create a raycast query using a 2D screen location and default vector that casts outward in the z-direction from the user, use the convenience functions, [`makeRaycastQuery(from:allowing:alignment:)`](https://developer.apple.com/documentation/realitykit/arview/makeraycastquery(from:allowing:alignment:)) on [`ARView`](https://developer.apple.com/documentation/realitykit/arview), or [`raycastQuery(from:allowing:alignment:)`](arscnview/raycastquery(from:allowing:alignment:).md) on [`ARSCNView`](arscnview.md).
 
 Raycasts can intersect with planes (flat surfaces) or meshes (uneven surfaces). To intersect with planes, see [`ARRaycastQuery.Target`](arraycastquery/target-swift.enum.md). To intersect with meshes, see [`ARRaycastQuery.Target.estimatedPlane`](arraycastquery/target-swift.enum/estimatedplane.md).
 
@@ -48,14 +48,14 @@ Raycasts can intersect with planes (flat surfaces) or meshes (uneven surfaces). 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

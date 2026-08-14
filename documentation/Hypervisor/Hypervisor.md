@@ -22,7 +22,7 @@ The Hypervisor framework has the following requirements:
 
 At runtime, determine whether the Hypervisor APIs are available on a particular machine with the sysctl command, passing `kern.hv_support` as an argument.
 
-- **Entitlements**: All process must have the [`com.apple.security.hypervisor`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.security.hypervisor) entitlement to use Hypervisor API.
+- **Entitlements**: All process must have the [`com.apple.security.hypervisor`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.security.hypervisor) entitlement to use Hypervisor API.
 
 ##### Virtual Resource Mapping
 
@@ -38,7 +38,7 @@ Hypervisor maps the physical memory in the guest to virtual memory of the host p
 
 The following figure illustrates a simplified life cycle of creating and running a virtual machine with one or more virtual CPUs using the Hypervisor API.
 
-![A flow diagram that represents the life cycle of a virtual machine.](https://docs-assets.developer.apple.com/published/bfee1ebf262231d5c3c11994026b7023/media-2916425%402x.png)
+![A flow diagram that represents the life cycle of a virtual machine.](/images/com.apple.hypervisor/media-2916425@2x.png)
 
 At the start of a task:
 
@@ -69,13 +69,13 @@ After all threads finish:
 - [Intel-based Mac](intel-based-mac.md)
   Create and run virtual machines on Intel-based Mac computers.
 ### Entitlements
-- [com.apple.security.hypervisor](../BundleResources/Entitlements/com.apple.security.hypervisor.md)
+- [com.apple.security.hypervisor](../bundleresources/entitlements/com.apple.security.hypervisor.md)
   A Boolean value that indicates whether the app creates and manages virtual machines.
-- [com.apple.vm.hypervisor](../BundleResources/Entitlements/com.apple.vm.hypervisor.md)
+- [com.apple.vm.hypervisor](../bundleresources/entitlements/com.apple.vm.hypervisor.md)
   A Boolean value that indicates whether the app creates and manages virtual machines.
-- [com.apple.vm.networking](../BundleResources/Entitlements/com.apple.vm.networking.md)
+- [com.apple.vm.networking](../bundleresources/entitlements/com.apple.vm.networking.md)
   A Boolean that indicates whether the app manages virtual network interfaces without escalating privileges to the root user.
-- [com.apple.vm.device-access](../BundleResources/Entitlements/com.apple.vm.device-access.md)
+- [com.apple.vm.device-access](../bundleresources/entitlements/com.apple.vm.device-access.md)
   A Boolean value that indicates whether the app captures USB devices and uses them in the guest-operating system.
 ### Reference
 - [Hypervisor Structures](hypervisor-structures.md)

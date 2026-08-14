@@ -36,7 +36,7 @@ if let television = try? await ModelEntity(named: "tv_retro") {
 
 | [`ModelDebugOptionsComponent.VisualizationMode.none`](modeldebugoptionscomponent/visualizationmode-swift.enum/none.md) | `lightingDiffuse` |
 | --- | --- |
-| ![A screenshot of a virtual TV in a visionOS app. The TV is an old-fashioned television displaying a multicolored test pattern. It is drawn with shadows and highlights to appear as realistic as possible.](https://docs-assets.developer.apple.com/published/a57e508a6549f1c8cce08e79ea6b7ec5/ModelDebugOptionsComponent-VisualizationMode-enum-none.jpg) | ![A screenshot of a virtual TV in a visionOS app. The TV is using a lighting diffuse visualization, appearing in shades of gray, which is a representation of the amount of indirect light falling on the TV at each point.](https://docs-assets.developer.apple.com/published/98fd02bc83b82063f95e1dd32106c3ba/ModelDebugOptionsComponent-VisualizationMode-enum-lightingDiffuse.jpg) |
+| ![A screenshot of a virtual TV in a visionOS app. The TV is an old-fashioned television displaying a multicolored test pattern. It is drawn with shadows and highlights to appear as realistic as possible.](/images/com.apple.RealityKit/ModelDebugOptionsComponent-VisualizationMode-enum-none.jpg) | ![A screenshot of a virtual TV in a visionOS app. The TV is using a lighting diffuse visualization, appearing in shades of gray, which is a representation of the amount of indirect light falling on the TV at each point.](/images/com.apple.RealityKit/ModelDebugOptionsComponent-VisualizationMode-enum-lightingDiffuse.jpg) |
 
 ## See Also
 

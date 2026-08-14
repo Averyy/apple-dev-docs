@@ -22,7 +22,7 @@ let MPMediaItemPropertyReleaseDate: String
 
 #### Discussion
 
-This value is an [`NSDate`](https://developer.apple.com/documentation/Foundation/NSDate) object.
+This value is an [`NSDate`](https://developer.apple.com/documentation/foundation/nsdate) object.
 
 ## See Also
 

@@ -22,7 +22,7 @@ func setValue(_ value: Any?, forKey key: String)
 
 #### Discussion
 
-The default implementation forwards the request to the [`propertyCache`](nsatomicstorecachenode/propertycache.md) dictionary if `key` matches a property name of the entity for this cache node. If `key` does not represent a property, the standard [`setValue(_:forKey:)`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class/setValue(_:forKey:)) implementation is used.
+The default implementation forwards the request to the [`propertyCache`](nsatomicstorecachenode/propertycache.md) dictionary if `key` matches a property name of the entity for this cache node. If `key` does not represent a property, the standard [`setValue(_:forKey:)`](https://developer.apple.com/documentation/objectivec/nsobject-swift.class/setvalue(_:forkey:)) implementation is used.
 
 ## Parameters
 

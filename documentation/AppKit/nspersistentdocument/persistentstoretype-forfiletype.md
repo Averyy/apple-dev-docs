@@ -16,7 +16,7 @@ func persistentStoreType(forFileType fileType: String) -> String
 
 #### Return Value
 
-The type of persistent store associated with `fileType`. For possible values, see [`NSPersistentStoreCoordinator`](https://developer.apple.com/documentation/CoreData/NSPersistentStoreCoordinator).
+The type of persistent store associated with `fileType`. For possible values, see [`NSPersistentStoreCoordinator`](https://developer.apple.com/documentation/coredata/nspersistentstorecoordinator).
 
 #### Discussion
 

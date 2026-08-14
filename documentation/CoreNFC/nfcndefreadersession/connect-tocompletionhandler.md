@@ -23,7 +23,7 @@ A tag stays connected until your app connects to a different tag or restarts pol
 ## Parameters
 
 - `tag`: A tag that the reader session should attempt connecting to.
-- `completionHandler`: A handler that the reader session invokes after completing the tag-connect request. The handler has the following parameter: - **error**: `nil` when the session successfully connects to the tag; otherwise, an [`NSError`](https://developer.apple.com/documentation/Foundation/NSError) object. The session calls `completionHandler` on the dispatch queue provided when creating the [`NFCNDEFReaderSession`](nfcndefreadersession.md).
+- `completionHandler`: A handler that the reader session invokes after completing the tag-connect request. The handler has the following parameter: - **error**: `nil` when the session successfully connects to the tag; otherwise, an [`NSError`](https://developer.apple.com/documentation/foundation/nserror) object. The session calls `completionHandler` on the dispatch queue provided when creating the [`NFCNDEFReaderSession`](nfcndefreadersession.md).
 
 
 ---

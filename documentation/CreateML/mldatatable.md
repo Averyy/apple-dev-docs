@@ -28,7 +28,7 @@ struct MLDataTable
 
 [`MLDataTable`](mldatatable.md) is Create ML’s version of a spreadsheet in which each row represents an entity (such as a book, in the example below) with observable features. Each column ([`MLDataColumn`](mldatacolumn.md) or [`MLUntypedColumn`](mluntypedcolumn.md)) in the table represents an observable feature of that entity, such as a book’s title or author.
 
-![A table of information about a book. Columns named “Title”, “Author”,](https://docs-assets.developer.apple.com/published/64120429043de5dfe14896956373df1d/MLDataTable-1%402x.png)
+![A table of information about a book. Columns named “Title”, “Author”,](/images/com.apple.createml/MLDataTable-1@2x.png)
 
 In most cases you interact with columns using the typed [`MLDataColumn`](mldatacolumn.md), especially when you need to directly access the contents of a column. You can also interact with columns using [`MLUntypedColumn`](mluntypedcolumn.md), if the underlying type of the column isn’t important.
 
@@ -142,10 +142,10 @@ Finally, when your data table is ready, use it to train and evaluate a model fro
 ## Relationships
 
 ### Conforms To
-- [Copyable](../Swift/Copyable.md)
-- [CustomPlaygroundDisplayConvertible](../Swift/CustomPlaygroundDisplayConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Escapable](../Swift/Escapable.md)
+- [Copyable](../swift/copyable.md)
+- [CustomPlaygroundDisplayConvertible](../swift/customplaygrounddisplayconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Escapable](../swift/escapable.md)
 
 ## See Also
 

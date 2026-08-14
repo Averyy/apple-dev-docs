@@ -23,7 +23,7 @@ A pseudo-random 2D single-precision vector with components in the range [0.0, 1.
 
 This function generates a random 2D vector where each component is independently generated in the range [0.0, 1.0] using single-precision floating-point format and sequential seed values (seed, seed+1). The seed is not modified, allowing for reproducible random number generation.
 
-> **Note**: ![Graph](https://docs-assets.developer.apple.com/published/2b9934afb403683ec8cf3e63e54a7cb6/random__float2_01_using.svg)
+> **Note**: ![Graph](/images/com.apple.computegraph/random__float2_01_using.svg)
 
 ## Parameters
 

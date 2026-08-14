@@ -20,7 +20,7 @@ Use this method to unregister from all remote notifications; for example, unregi
 
 ## See Also
 
-- [func registerForRemoteNotifications()](../UIKit/UIApplication/registerForRemoteNotifications.md)
+- [func registerForRemoteNotifications()](../uikit/uiapplication/registerforremotenotifications.md)
   Registers to receive remote notifications through Apple Push Notification service.
 - [func registerForRemoteNotifications()](wkapplication/registerforremotenotifications.md)
   Register to receive remote notifications from the Apple Push Notification service (APNs).

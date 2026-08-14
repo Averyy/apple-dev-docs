@@ -18,6 +18,12 @@ func AXUIElementGetAttributeValueCount(_ element: AXUIElement, _ attribute: CFSt
 
 If unsuccessful, `AXUIElementGetAttributeValueCount` may return one of the following error codes, among others:
 
+- **`kAXErrorIllegalArgument`**: The attribute's value is not an array or one of the other arguments is an illegal value.
+- **`kAXErrorAttributeUnsupported`**: The specified AXUIElementRef does not support the specified attribute.
+- **`kAXErrorInvalidUIElement`**: The AXUIElementRef is invalid.
+- **`kAXErrorCannotComplete`**: The function cannot complete because messaging has failed in some way.
+- **`kAXErrorNotImplemented`**: The process does not fully support the accessibility API.
+
 ## Parameters
 
 - `element`: The AXUIElementRef representing the accessibility object.

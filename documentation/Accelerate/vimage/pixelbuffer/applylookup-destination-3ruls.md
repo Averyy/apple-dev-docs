@@ -44,7 +44,7 @@ let lookup: [Pixel_8888] = (0 ..< 256).map { i in
 
 The graph below visualizes the values in the lookup table:
 
-![A line chart with three series. The dotted line represents the red values that peaks at the left and curves to zero at the middle. The solid line represents the green values that starts on the left at zero, peaks in the middle, and drops to zero at the right. The dashed line represents the blue values that starts at zero in the middle and peaks at the right.](https://docs-assets.developer.apple.com/published/3bae60a547eae2322e86938e16bd1841/media-4164668%402x.png)
+![A line chart with three series. The dotted line represents the red values that peaks at the left and curves to zero at the middle. The solid line represents the green values that starts on the left at zero, peaks in the middle, and drops to zero at the right. The dashed line represents the blue values that starts at zero in the middle and peaks at the right.](/images/com.apple.accelerate/media-4164668@2x.png)
 
 Use the following code to apply the lookup table to a [`vImage.Planar8`](vimage/planar8.md) source buffer with a [`vImage.Interleaved8x3`](vimage/interleaved8x3.md) destination buffer:
 
@@ -58,7 +58,7 @@ sourceBuffer.applyLookup(lookup, destination: destinationBuffer)
 
 The images below show an example grayscale source image on the left and the pseudo-color result on the right. The operation converts dark areas in the source to red in the destination, and light areas in the source to blue in the destination.
 
-![Two versions of a close-up image of a fruit tree. On the left is the original grayscale image, and on the right is the transformed RGB color image.](https://docs-assets.developer.apple.com/published/c8ef99a81c21e689fbb3e60e14a83c37/media-4164667%402x.png)
+![Two versions of a close-up image of a fruit tree. On the left is the original grayscale image, and on the right is the transformed RGB color image.](/images/com.apple.accelerate/media-4164667@2x.png)
 
 ## Parameters
 

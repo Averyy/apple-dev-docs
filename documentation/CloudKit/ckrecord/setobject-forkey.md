@@ -25,7 +25,7 @@ func setObject(_ object: (any __CKRecordObjCValue)?, forKey key: CKRecord.FieldK
 
 If the specified key already exists in the record, CloudKit deletes its previous value and replaces it with the one in the `object` parameter. This change affects only the local copy of the record. You must save the record to the server again before the change becomes available to other clients.
 
-If the type of the `object` parameter differs from the type of the object that’s on the server, you encounter an error when you attempt to save this record to the server. For example, if the current value is an [`NSString`](https://developer.apple.com/documentation/Foundation/NSString) object, you receive an error if you change the value to an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) object and save the record.
+If the type of the `object` parameter differs from the type of the object that’s on the server, you encounter an error when you attempt to save this record to the server. For example, if the current value is an [`NSString`](https://developer.apple.com/documentation/foundation/nsstring) object, you receive an error if you change the value to an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) object and save the record.
 
 You access the fields of a `CKRecord` object the same way you access key-value pairs in a dictionary. The `CKRecord` class defines the [`object(forKey:)`](ckrecord/object(forkey:).md) and [`setObject(_:forKey:)`](ckrecord/setobject(_:forkey:).md) methods for getting and setting values. It also supports dictionary index notation. The following example shows how to use both techniques to set a `firstName` field and get a `lastName` field from a record:
 

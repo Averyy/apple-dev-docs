@@ -42,10 +42,10 @@ struct ToolCallError
 ## Relationships
 
 ### Conforms To
-- [Error](../Swift/Error.md)
-- [LocalizedError](../Foundation/LocalizedError.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Error](../swift/error.md)
+- [LocalizedError](../foundation/localizederror.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

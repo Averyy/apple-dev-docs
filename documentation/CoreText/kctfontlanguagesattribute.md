@@ -22,7 +22,7 @@ let kCTFontLanguagesAttribute: CFString
 
 #### Discussion
 
-The value for this key is a [`CFArray`](https://developer.apple.com/documentation/CoreFoundation/CFArray) object containing [`CFString`](https://developer.apple.com/documentation/CoreFoundation/CFString) elements. If specified, this attribute restricts the search to matching fonts that support the specified languages. The language identifier string should conform to the RFC 3066bis standard. If unspecified, this attribute is ignored.
+The value for this key is a [`CFArray`](https://developer.apple.com/documentation/corefoundation/cfarray) object containing [`CFString`](https://developer.apple.com/documentation/corefoundation/cfstring) elements. If specified, this attribute restricts the search to matching fonts that support the specified languages. The language identifier string should conform to the RFC 3066bis standard. If unspecified, this attribute is ignored.
 
 ## See Also
 

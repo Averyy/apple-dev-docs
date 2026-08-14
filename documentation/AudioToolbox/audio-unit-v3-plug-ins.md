@@ -12,9 +12,9 @@ Deliver custom audio effects, instruments, and other audio behaviors using an Au
 - [Hosting Audio Unit Extensions Using the AUv2 API](hosting-audio-unit-extensions-using-the-auv2-api.md)
   Update your existing Audio Unit v2 host app to load and use Audio Unit extensions.
 ### Audio Units
-- [Creating an audio unit extension](../AVFAudio/creating-an-audio-unit-extension.md)
+- [Creating an audio unit extension](../avfaudio/creating-an-audio-unit-extension.md)
   Build an extension by using an Xcode template.
-- [Creating custom audio effects](../AVFAudio/creating-custom-audio-effects.md)
+- [Creating custom audio effects](../avfaudio/creating-custom-audio-effects.md)
   Add custom audio-effect processing to apps like Logic Pro X and GarageBand by creating Audio Unit (AU) plug-ins.
 - [Incorporating Audio Effects and Instruments](incorporating-audio-effects-and-instruments.md)
   Add custom audio processing and MIDI instruments to your app by hosting Audio Unit (AU) plug-ins.

@@ -21,7 +21,7 @@ weak var mesh: MTKMesh? { get }
 
 #### Discussion
 
-The buffer of this parent mesh should be set in the encoder before a call to [`drawIndexedPrimitives(type:indexCount:indexType:indexBuffer:indexBufferOffset:)`](https://developer.apple.com/documentation/Metal/MTLRenderCommandEncoder/drawIndexedPrimitives(type:indexCount:indexType:indexBuffer:indexBufferOffset:)) is made.
+The buffer of this parent mesh should be set in the encoder before a call to [`drawIndexedPrimitives(type:indexCount:indexType:indexBuffer:indexBufferOffset:)`](https://developer.apple.com/documentation/metal/mtlrendercommandencoder/drawindexedprimitives(type:indexcount:indextype:indexbuffer:indexbufferoffset:)) is made.
 
 
 ---

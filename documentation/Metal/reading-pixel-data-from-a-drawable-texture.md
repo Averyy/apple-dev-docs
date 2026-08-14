@@ -147,7 +147,7 @@ The app calls the buffer’s [`contents()`](mtlbuffer/contents().md) method to g
 AAPLPixelBGRA8Unorm *pixels = (AAPLPixelBGRA8Unorm *)pixelBuffer.contents;
 ```
 
-The sample copies the buffer’s data into an [`NSData`](https://developer.apple.com/documentation/Foundation/NSData) object and passes it to another method to initialize an `AAPLImage` object. For more information on `AAPLImage`, see [`Creating and sampling textures`](creating-and-sampling-textures.md).
+The sample copies the buffer’s data into an [`NSData`](https://developer.apple.com/documentation/foundation/nsdata) object and passes it to another method to initialize an `AAPLImage` object. For more information on `AAPLImage`, see [`Creating and sampling textures`](creating-and-sampling-textures.md).
 
 ```objective-c
 // Create an `NSData` object and initialize it with the pixel data.

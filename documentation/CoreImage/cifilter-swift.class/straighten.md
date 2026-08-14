@@ -30,7 +30,7 @@ This method applies the straighten filter to an image. The effect rotates the im
 The straighten filter uses the following properties:
 
 - **`inputImage`**: An image with the type [`CIImage`](ciimage.md).
-- **`angle`**: A `float` representing the angle to rotate the image as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+- **`angle`**: A `float` representing the angle to rotate the image as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
 
 The following code creates a filter that rotates the image 135 degrees:
 
@@ -43,7 +43,7 @@ func straighten(inputImage: CIImage) -> CIImage {
 }
 ```
 
-![Two photographs of a large building on the corner of an intersection. The building has small windows and is made of a brick structure. The photo on the left has no modifications to size or color. In the photo on the right, a straighten filter is applied, resulting in the image becoming rotated and appearing upside down.](https://docs-assets.developer.apple.com/published/62f2fa4588bae8fa39ec0116745a5369/media-3582229%402x.png)
+![Two photographs of a large building on the corner of an intersection. The building has small windows and is made of a brick structure. The photo on the left has no modifications to size or color. In the photo on the right, a straighten filter is applied, resulting in the image becoming rotated and appearing upside down.](/images/com.apple.coreimage/media-3582229@2x.png)
 
 ## See Also
 

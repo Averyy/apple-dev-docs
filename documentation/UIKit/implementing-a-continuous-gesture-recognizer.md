@@ -10,7 +10,7 @@ A continuous gesture recognizer lets you encapsulate your event-handling logic i
 
 The following image shows a free-form gesture whose input you might use to draw paths onscreen. Although you could use a pan gesture recognizer to capture the input, your action method would need to handle all of the phases of the capture process, which would add to its complexity. Using a custom gesture recognizer, you can simplify your code by distributing your logic to various methods of your subclass. Using a custom gesture recognizer also means that you can write your code for capturing the path once and reuse it in multiple views.
 
-![A diagram depicting a user triggering a free-form custom continuous gesture recognizer.](https://docs-assets.developer.apple.com/published/1fdeedc953c994dd0c2d52654a50ff94/media-3004411%402x.png)
+![A diagram depicting a user triggering a free-form custom continuous gesture recognizer.](/images/com.apple.uikit/media-3004411@2x.png)
 
 For a custom gesture recognizer that captures touch input, there are no explicit conditions that trigger a failure of the gesture. Instead, the gesture recognizer captures touch input until the touch sequence ends or is cancelled by the system. While the gesture is ongoing, the gesture recognizer places the touch data into a temporary buffer. Clients of the gesture recognizer use their action method to fetch that buffer and apply it temporarily to the app’s content. For example, a client might use that data to draw the path onscreen. Only when the touch sequence ends successfully would those target objects commit the data permanently to the app’s data structures.
 
@@ -30,7 +30,7 @@ struct StrokeSample {
 }
 ```
 
-The following code shows the partial definition of a `TouchCaptureGesture` class used to capture touch information. This class stores touch data in the `samples` property, which is an array of `StrokeSample` structs. The class also stores the [`UITouch`](uitouch.md) object associated with the first finger so that it can ignore any other touches. The implementation of the [`init(coder:)`](https://developer.apple.com/documentation/Foundation/NSCoding/init(coder:)) method ensures that the `samples` property is initialized properly when loading the gesture recognizer from an Interface Builder file.
+The following code shows the partial definition of a `TouchCaptureGesture` class used to capture touch information. This class stores touch data in the `samples` property, which is an array of `StrokeSample` structs. The class also stores the [`UITouch`](uitouch.md) object associated with the first finger so that it can ignore any other touches. The implementation of the [`init(coder:)`](https://developer.apple.com/documentation/foundation/nscoding/init(coder:)) method ensures that the `samples` property is initialized properly when loading the gesture recognizer from an Interface Builder file.
 
 ```swift
 class TouchCaptureGesture: UIGestureRecognizer, NSCoding {

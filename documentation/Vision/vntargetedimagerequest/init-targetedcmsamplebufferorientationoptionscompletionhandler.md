@@ -21,8 +21,8 @@ init(targetedCMSampleBuffer sampleBuffer: CMSampleBuffer, orientation: CGImagePr
 
 ## Parameters
 
-- `sampleBuffer`: A sample buffer containing a valid [`imageBuffer`](https://developer.apple.com/documentation/CoreMedia/CMSampleBuffer/imageBuffer).
-- `orientation`: The EXIF orientation of the image. See [`CGImagePropertyOrientation`](https://developer.apple.com/documentation/ImageIO/CGImagePropertyOrientation) for supported orientations.
+- `sampleBuffer`: A sample buffer containing a valid [`imageBuffer`](https://developer.apple.com/documentation/coremedia/cmsamplebuffer/imagebuffer).
+- `orientation`: The EXIF orientation of the image. See [`CGImagePropertyOrientation`](https://developer.apple.com/documentation/imageio/cgimagepropertyorientation) for supported orientations.
 - `options`: A dictionary with options specifying auxiliary information for the image.
 - `completionHandler`: The callback the system invokes when the request finishes executing.
 

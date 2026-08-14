@@ -6,14 +6,14 @@ Learn about important changes to Core ML.
 
 #### Overview
 
-Browse notable changes in [`Core ML`](https://developer.apple.com/documentation/CoreML).
+Browse notable changes in [`Core ML`](https://developer.apple.com/documentation/coreml).
 
 #### June 2024
 
-- Stitch machine learning models and manipulate model inputs and outputs using the [`MLTensor`](https://developer.apple.com/documentation/CoreML/MLTensor) type.
-- Add efficient reshaping and transposing to [`MLShapedArray`](https://developer.apple.com/documentation/CoreML/MLShapedArray).
-- Add [`Sendable`](https://developer.apple.com/documentation/Swift/Sendable) conformance to [`MLShapedArray`](https://developer.apple.com/documentation/CoreML/MLShapedArray) and [`MLShapedArraySlice`](https://developer.apple.com/documentation/CoreML/MLShapedArraySlice).
-- Improve performance with stateful predictions. Store and load state using the [`MLState`](https://developer.apple.com/documentation/CoreML/MLState) class.
+- Stitch machine learning models and manipulate model inputs and outputs using the [`MLTensor`](https://developer.apple.com/documentation/coreml/mltensor) type.
+- Add efficient reshaping and transposing to [`MLShapedArray`](https://developer.apple.com/documentation/coreml/mlshapedarray).
+- Add [`Sendable`](https://developer.apple.com/documentation/swift/sendable) conformance to [`MLShapedArray`](https://developer.apple.com/documentation/coreml/mlshapedarray) and [`MLShapedArraySlice`](https://developer.apple.com/documentation/coreml/mlshapedarrayslice).
+- Improve performance with stateful predictions. Store and load state using the [`MLState`](https://developer.apple.com/documentation/coreml/mlstate) class.
 - Support efficient model adaptation with multifunction ML programs.
 - Reduce model size while maintaining accuracy with new compression techniques added to [`Core ML Tools 8`](https://developer.apple.comhttps://apple.github.io/coremltools/docs-guides/source/new-features.html).
 

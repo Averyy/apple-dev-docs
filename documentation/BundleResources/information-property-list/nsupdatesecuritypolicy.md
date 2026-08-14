@@ -38,7 +38,7 @@ To add the `NSUpdateSecurityPolicy` key to your app’s `info.plist` file, follo
 
 The newly created, empty `NSUpdateSecurityPolicy` dictionary in your app’s property list resembles the image below:
 
-![A screenshot that shows the Xcode property list editor with the addition of a new, empty dictionary supporting the NSUpdateSecurityPolicy key.](https://docs-assets.developer.apple.com/published/dec3a1965721f643417e1531c6d73e9e/media-4098859%402x.png)
+![A screenshot that shows the Xcode property list editor with the addition of a new, empty dictionary supporting the NSUpdateSecurityPolicy key.](/images/com.apple.bundleresources/media-4098859@2x.png)
 
 Next, add one or both subcomponents to the security policy dictionary depending on your app’s update policy requirements. To allow any installer package signed by a specific Team ID, add an `AllowPackages` array to the `NSUpdateSecurityPolicy` dictionary. Using this key, the operating system allows any installer package signed by the specified Team IDs in this array to write content into the app’s bundle.
 
@@ -65,7 +65,7 @@ To allow specific apps from specific teams to write to this app’s bundle, add 
 
 The final new `NSUpdateSecurityPolicy` dictionary resembles the configuration in the image below:
 
-![A screenshot that shows the Xcode property list editor with the addition of the NSUpdateSecurityPolicy key and its allowsPackages and allowedProcesses components with sample values.](https://docs-assets.developer.apple.com/published/38d422bddfe218d398a9360a7e663b49/media-4098858%402x.png)
+![A screenshot that shows the Xcode property list editor with the addition of the NSUpdateSecurityPolicy key and its allowsPackages and allowedProcesses components with sample values.](/images/com.apple.bundleresources/media-4098858@2x.png)
 
 The following sample code describes a complete update policy, in JSON format, that allows any installer package signed by Team ID `Z9P22VQP42` to write to the app bundle. The policy also allows a single app associated with the bundle ID `com.example.myapp.updater` (also signed with the Team ID `Z9P22VQP42`) that can modify the app bundle.
 

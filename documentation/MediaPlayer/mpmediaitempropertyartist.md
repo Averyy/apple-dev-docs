@@ -22,7 +22,7 @@ let MPMediaItemPropertyArtist: String
 
 #### Discussion
 
-For example, if the album artist is “Joseph Fable,” the artist for one of the songs in the album may be “Joseph Fable featuring Thomas Smithson”. Value is an [`NSString`](https://developer.apple.com/documentation/Foundation/NSString) object.
+For example, if the album artist is “Joseph Fable,” the artist for one of the songs in the album may be “Joseph Fable featuring Thomas Smithson”. Value is an [`NSString`](https://developer.apple.com/documentation/foundation/nsstring) object.
 
 Can be used to build a media property predicate as described in [`MPMediaPropertyPredicate`](mpmediapropertypredicate.md).
 

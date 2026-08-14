@@ -24,7 +24,7 @@ When this mode is in use, the device’s tonal equalization is optimized for voi
 
 Using this mode has the side effect of setting the [`kAudioSessionProperty_OverrideCategoryEnableBluetoothInput`](kaudiosessionproperty_overridecategoryenablebluetoothinput.md) category override to `TRUE`.
 
-This mode is equivalent to the [`voiceChat`](https://developer.apple.com/documentation/AVFAudio/AVAudioSession/Mode-swift.struct/voiceChat) mode provided in the AVFoundation framework.
+This mode is equivalent to the [`voiceChat`](https://developer.apple.com/documentation/avfaudio/avaudiosession/mode-swift.struct/voicechat) mode provided in the AVFoundation framework.
 
 ## See Also
 

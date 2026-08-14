@@ -16,9 +16,9 @@ func close() async throws
 
 #### Discussion
 
-> ⚠️ **Warning**: Closing an accessory by calling the `destroy()` method on an [`IOUSBHostDevice`](https://developer.apple.com/documentation/IOUSBHost/IOUSBHostDevice) is a blocking operation. Such an operation causes a deadlock, if you call it from a completion handler.
+> ⚠️ **Warning**: Closing an accessory by calling the `destroy()` method on an [`IOUSBHostDevice`](https://developer.apple.com/documentation/iousbhost/iousbhostdevice) is a blocking operation. Such an operation causes a deadlock, if you call it from a completion handler.
 
-This operation closes the USB accessory, that the app previously opened through [`open(serviceQueue:completionHandler:)`](aausbaccessory/open(servicequeue:completionhandler:).md). Once this operation completes, the framework invalidates any [`IOUSBHostDevice`](https://developer.apple.com/documentation/IOUSBHost/IOUSBHostDevice) object it previously returned and you can’t use it for USB transfers. This operation has the same effect as calling the destroy method on [`IOUSBHostDevice`](https://developer.apple.com/documentation/IOUSBHost/IOUSBHostDevice).
+This operation closes the USB accessory, that the app previously opened through [`open(serviceQueue:completionHandler:)`](aausbaccessory/open(servicequeue:completionhandler:).md). Once this operation completes, the framework invalidates any [`IOUSBHostDevice`](https://developer.apple.com/documentation/iousbhost/iousbhostdevice) object it previously returned and you can’t use it for USB transfers. This operation has the same effect as calling the destroy method on [`IOUSBHostDevice`](https://developer.apple.com/documentation/iousbhost/iousbhostdevice).
 
 Once the app closes the accessory, the app can re-open the accessory using this process or any other worker process of this client application for exclusive access using [`open(serviceQueue:completionHandler:)`](aausbaccessory/open(servicequeue:completionhandler:).md).
 

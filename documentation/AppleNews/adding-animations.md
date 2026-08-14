@@ -10,11 +10,11 @@ Use animations to affect how parts of your article come into view the first time
 
 The images below display some animations. In the first image, the pull quote gets larger and darker as the user scrolls through the text. In the second image, the photo gets darker, but not larger, as the user scrolls. In the third image, the gallery moves in from the right side of the screen.
 
-![Side-by-side screenshots of an Apple News article on iPhone showing the effect of scrolling with a scale fade animation.](https://docs-assets.developer.apple.com/published/9a1e30efa0b4822e6d1b238cd6bd3917/media-3625689%402x.png)
+![Side-by-side screenshots of an Apple News article on iPhone showing the effect of scrolling with a scale fade animation.](/images/com.apple.applenews/media-3625689@2x.png)
 
-![Side-by-side screenshots of an Apple News article on iPhone showing the effect of scrolling with a fade-in animation.](https://docs-assets.developer.apple.com/published/f42dc49a0e2c5ae4d3cfcbf07d0729e7/media-3625691%402x.png)
+![Side-by-side screenshots of an Apple News article on iPhone showing the effect of scrolling with a fade-in animation.](/images/com.apple.applenews/media-3625691@2x.png)
 
-![Side-by-side screenshots of an Apple News article on iPhone showing the effect of scrolling with a move-in animation.](https://docs-assets.developer.apple.com/published/ebcb91dec2f7fc2c6dc6b7d220768098/media-3625690%402x.png)
+![Side-by-side screenshots of an Apple News article on iPhone showing the effect of scrolling with a move-in animation.](/images/com.apple.applenews/media-3625690@2x.png)
 
 ##### Create Animations
 

@@ -68,19 +68,19 @@ Review symbols that are no longer supported and find the replacements to use ins
   Invoked if `key` is represented by a scalar attribute.
 - [func values(forKeys: [Any]) -> [AnyHashable : Any]](nsobject-swift.class/values(forkeys:).md)
   Returns a dictionary containing as keys the property names in `keys`, with corresponding values being the corresponding property values.
-- [func workflowController(AMWorkflowController, didError: any Error)](../Automator/AMWorkflowControllerDelegate/workflowController(_:didError:).md)
+- [func workflowController(AMWorkflowController, didError: any Error)](../automator/amworkflowcontrollerdelegate/workflowcontroller(_:diderror:).md)
   Notifies the delegate when the workflow encounters an error.
-- [func workflowController(AMWorkflowController, didRun: AMAction)](../Automator/AMWorkflowControllerDelegate/workflowController(_:didRun:).md)
+- [func workflowController(AMWorkflowController, didRun: AMAction)](../automator/amworkflowcontrollerdelegate/workflowcontroller(_:didrun:).md)
   Notifies the delegate when the specified action finishes running.
-- [func workflowController(AMWorkflowController, willRun: AMAction)](../Automator/AMWorkflowControllerDelegate/workflowController(_:willRun:).md)
+- [func workflowController(AMWorkflowController, willRun: AMAction)](../automator/amworkflowcontrollerdelegate/workflowcontroller(_:willrun:).md)
   Notifies the delegate when the specified action is about to run.
-- [func workflowControllerDidRun(AMWorkflowController)](../Automator/AMWorkflowControllerDelegate/workflowControllerDidRun(_:).md)
+- [func workflowControllerDidRun(AMWorkflowController)](../automator/amworkflowcontrollerdelegate/workflowcontrollerdidrun(_:).md)
   Notifies the delegate when the workflow controller object finishes running.
-- [func workflowControllerDidStop(AMWorkflowController)](../Automator/AMWorkflowControllerDelegate/workflowControllerDidStop(_:).md)
+- [func workflowControllerDidStop(AMWorkflowController)](../automator/amworkflowcontrollerdelegate/workflowcontrollerdidstop(_:).md)
   Tells the delegate that the workflow controller object has stopped.
-- [func workflowControllerWillRun(AMWorkflowController)](../Automator/AMWorkflowControllerDelegate/workflowControllerWillRun(_:).md)
+- [func workflowControllerWillRun(AMWorkflowController)](../automator/amworkflowcontrollerdelegate/workflowcontrollerwillrun(_:).md)
   Notifies the delegate when the workflow controller object is about to run.
-- [func workflowControllerWillStop(AMWorkflowController)](../Automator/AMWorkflowControllerDelegate/workflowControllerWillStop(_:).md)
+- [func workflowControllerWillStop(AMWorkflowController)](../automator/amworkflowcontrollerdelegate/workflowcontrollerwillstop(_:).md)
   Tells the delegate that the workflow controller object is about to stop.
 
 

@@ -20,7 +20,7 @@ The badge text is visible even when the toolbar item is disabled.
 
 ## Parameters
 
-- `enabled`: [`true`](https://developer.apple.com/documentation/Swift/true) to enable the toolbar item; otherwise [`false`](https://developer.apple.com/documentation/Swift/false).
+- `enabled`: [`true`](https://developer.apple.com/documentation/swift/true) to enable the toolbar item; otherwise [`false`](https://developer.apple.com/documentation/swift/false).
 - `badgeText`: String to display on the badge. Pass `nil` to remove the badge.
 
 ## See Also

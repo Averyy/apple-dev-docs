@@ -18,7 +18,7 @@ let UIUserNotificationActionResponseTypedTextKey: String
 
 #### Discussion
 
-The value of this key is an [`NSString`](https://developer.apple.com/documentation/Foundation/NSString) containing the user’s text response.
+The value of this key is an [`NSString`](https://developer.apple.com/documentation/foundation/nsstring) containing the user’s text response.
 
 
 ---

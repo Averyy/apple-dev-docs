@@ -15,7 +15,7 @@ ContentView()
     .navigationTitle("My Title")
 ```
 
-The title of your apps toolbar can be further customized using additional navigation related modifiers. For example, you can associate a [`URL`](https://developer.apple.com/documentation/Foundation/URL) or your own type conforming to [`Transferable`](https://developer.apple.com/documentation/CoreTransferable/Transferable) to your view using the navigation document modifier.
+The title of your apps toolbar can be further customized using additional navigation related modifiers. For example, you can associate a [`URL`](https://developer.apple.com/documentation/foundation/url) or your own type conforming to [`Transferable`](https://developer.apple.com/documentation/coretransferable/transferable) to your view using the navigation document modifier.
 
 ```swift
 ContentView()

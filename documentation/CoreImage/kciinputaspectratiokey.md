@@ -21,7 +21,7 @@ let kCIInputAspectRatioKey: String
 
 #### Discussion
 
-A key for a scalar value ([`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber)) that specifies a ratio.
+A key for a scalar value ([`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber)) that specifies a ratio.
 
 ## See Also
 

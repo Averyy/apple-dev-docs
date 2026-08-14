@@ -95,7 +95,7 @@ Before releasing an [`MKMapView`](mkmapview.md) object that you set a delegate f
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

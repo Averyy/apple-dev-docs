@@ -22,7 +22,7 @@ let kCVPixelBufferExtendedPixelsLeftKey: CFString
 
 #### Discussion
 
-The value for this key is of type [`CFNumber`](https://developer.apple.com/documentation/CoreFoundation/CFNumber).
+The value for this key is of type [`CFNumber`](https://developer.apple.com/documentation/corefoundation/cfnumber).
 
 ## See Also
 

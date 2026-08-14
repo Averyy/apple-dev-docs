@@ -36,7 +36,7 @@ An instance of a class corresponding to this protocol is passed to [`processWith
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 ### Conforming Types
 - [VTFrameRateConversionParameters](vtframerateconversionparameters.md)
 - [VTLowLatencyFrameInterpolationParameters](vtlowlatencyframeinterpolationparameters.md)

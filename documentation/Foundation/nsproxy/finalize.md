@@ -22,7 +22,7 @@ func finalize()
 
 #### Discussion
 
-This method behaves as described in the `NSObject` class specification under the [`finalize()`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class/finalize()) instance method. Note that a `finalize` method must be thread-safe.
+This method behaves as described in the `NSObject` class specification under the [`finalize()`](https://developer.apple.com/documentation/objectivec/nsobject-swift.class/finalize()) instance method. Note that a `finalize` method must be thread-safe.
 
 ## See Also
 

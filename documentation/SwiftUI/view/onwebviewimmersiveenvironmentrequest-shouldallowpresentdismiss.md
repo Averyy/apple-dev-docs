@@ -31,9 +31,9 @@ Use this modifier to control authorization, presentation, and dismissal of immer
 
 ## See Also
 
-- [struct WebView](../WebKit/WebView-swift.struct.md)
+- [struct WebView](../webkit/webview-swift.struct.md)
   A view that displays some web content.
-- [class WebPage](../WebKit/WebPage.md)
+- [class WebPage](../webkit/webpage.md)
   An object that controls and manages the behavior of interactive web content.
 - [func webViewBackForwardNavigationGestures(WebView.BackForwardNavigationGesturesBehavior) -> some View](view/webviewbackforwardnavigationgestures(_:).md)
   Determines whether horizontal swipe gestures trigger backward and forward page navigation.

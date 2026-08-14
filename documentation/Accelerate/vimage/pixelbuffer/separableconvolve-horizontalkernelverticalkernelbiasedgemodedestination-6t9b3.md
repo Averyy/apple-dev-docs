@@ -22,7 +22,7 @@ func separableConvolve(horizontalKernel: [Float], verticalKernel: [Float], bias:
 
 #### Discussion
 
-The following code shows how to generate a multiplane pixel buffer from a [`CGImage`](https://developer.apple.com/documentation/CoreGraphics/CGImage) instance and apply a Gaussian blur using separable convolution:
+The following code shows how to generate a multiplane pixel buffer from a [`CGImage`](https://developer.apple.com/documentation/coregraphics/cgimage) instance and apply a Gaussian blur using separable convolution:
 
 ```swift
 let srcImage =  imageLiteral(resourceName: " ... ").cgImage(

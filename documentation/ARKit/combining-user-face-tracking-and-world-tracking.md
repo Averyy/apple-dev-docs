@@ -15,7 +15,7 @@ When tracking users’ faces in a world-tracking session, ARKit incorporates inf
 
 To demonstrate applying the user’s face while world-tracking, this sample app lets the user place robot heads that reflect the user’s facial expression.
 
-![Screenshot of three virtual objects placed in the physical environment, each reflecting a different expression that mimic the user’s expression at the time of placing the object.](https://docs-assets.developer.apple.com/published/2369ecab3e3cb3842a11e26fca969754/world-and-face-screenshot.jpg)
+![Screenshot of three virtual objects placed in the physical environment, each reflecting a different expression that mimic the user’s expression at the time of placing the object.](/images/com.apple.arkit/world-and-face-screenshot.jpg)
 
 #### Configure and Start the Session
 

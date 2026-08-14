@@ -39,18 +39,18 @@ class EAWiFiUnconfiguredAccessory
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 
-- [Wireless Accessory Configuration Entitlement](../BundleResources/Entitlements/com.apple.external-accessory.wireless-configuration.md)
+- [Wireless Accessory Configuration Entitlement](../bundleresources/entitlements/com.apple.external-accessory.wireless-configuration.md)
   A Boolean value that indicates whether your app may configure MFi Wi-Fi accessories.
 - [class EAWiFiUnconfiguredAccessoryBrowser](eawifiunconfiguredaccessorybrowser.md)
   An object you use to scan for wireless accessories and configure them for use with the user’s app.

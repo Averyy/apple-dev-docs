@@ -31,9 +31,9 @@ Thread safe starting in OS X v10.2.
 ## Parameters
 
 - `theAppleEvent`: A pointer to the Apple event to get the parameter descriptor from.
-- `theAEKeyword`: A keyword that specifies the desired Apple event parameter. Some keyword constants are described in  .
-- `desiredType`: If the requested Apple event parameter is not of the desired type, the Apple Event Manager attempts to coerce it to the desired type. However, if you pass a value of  , no coercion is performed, and the descriptor type of the returned descriptor is the same as the descriptor type of the Apple event parameter.
-- `result`: A pointer to a descriptor. On successful return, a copy of the descriptor for the specified Apple event parameter, coerced, if necessary, to the descriptor type specified by the   parameter. On error, a null descriptor. If the function returns successfully, your application should call the   function to dispose of the resulting descriptor after it has finished using it.
+- `theAEKeyword`: A keyword that specifies the desired Apple event parameter. Some keyword constants are described in [`Keyword Parameter Constants`](apple_events/1527206-keyword_parameter_constants.md).
+- `desiredType`: The descriptor type for the desired Apple event parameter. For a list of AppleScript’s predefined descriptor types, see [`Descriptor Type Constants`](apple_events/1542788-descriptor_type_constants.md). If the requested Apple event parameter is not of the desired type, the Apple Event Manager attempts to coerce it to the desired type. However, if you pass a value of `typeWildCard`, no coercion is performed, and the descriptor type of the returned descriptor is the same as the descriptor type of the Apple event parameter.
+- `result`: A pointer to a descriptor. On successful return, a copy of the descriptor for the specified Apple event parameter, coerced, if necessary, to the descriptor type specified by the `desiredType` parameter. On error, a null descriptor. If the function returns successfully, your application should call the [`AEDisposeDesc(_:)`](1444208-aedisposedesc.md) function to dispose of the resulting descriptor after it has finished using it.
 
 ## See Also
 

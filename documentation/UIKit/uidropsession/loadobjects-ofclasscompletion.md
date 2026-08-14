@@ -34,7 +34,7 @@ The completion handler is called on the main queue. It provides an array of all 
 
 ## Parameters
 
-- `aClass`: A class conforming to the [`NSItemProviderReading`](https://developer.apple.com/documentation/Foundation/NSItemProviderReading) protocol.
+- `aClass`: A class conforming to the [`NSItemProviderReading`](https://developer.apple.com/documentation/foundation/nsitemproviderreading) protocol.
 - `completion`: The block that is executed after all objects are loaded.
 
 

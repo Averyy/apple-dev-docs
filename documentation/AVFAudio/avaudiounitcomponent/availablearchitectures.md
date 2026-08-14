@@ -16,7 +16,7 @@ var availableArchitectures: [NSNumber] { get }
 
 #### Discussion
 
-This is an `NSArray` of `NSNumbers` where each entry corresponds to one of the constants in Mach-O Architecture in [`Bundle`](https://developer.apple.com/documentation/Foundation/Bundle).
+This is an `NSArray` of `NSNumbers` where each entry corresponds to one of the constants in Mach-O Architecture in [`Bundle`](https://developer.apple.com/documentation/foundation/bundle).
 
 ## See Also
 

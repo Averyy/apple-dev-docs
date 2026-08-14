@@ -28,7 +28,7 @@ The indexes whose corresponding values in the array pass the test specified by `
 
 - `predicate`: The block to apply to elements in the array. The block takes three arguments: - **obj**: The element in the array.
 - **idx**: The index of the element in the array.
-- **stop**: A reference to a Boolean value. The block can set the value to [`true`](https://developer.apple.com/documentation/Swift/true) to stop further enumeration of the array. If a block stops further enumeration, that block continues to run until it’s finished. The `stop` argument is an out-only argument. You should only ever set this Boolean to [`true`](https://developer.apple.com/documentation/Swift/true) within the block. The block returns a Boolean value that indicates whether `obj` passed the test.
+- **stop**: A reference to a Boolean value. The block can set the value to [`true`](https://developer.apple.com/documentation/swift/true) to stop further enumeration of the array. If a block stops further enumeration, that block continues to run until it’s finished. The `stop` argument is an out-only argument. You should only ever set this Boolean to [`true`](https://developer.apple.com/documentation/swift/true) within the block. The block returns a Boolean value that indicates whether `obj` passed the test.
 
 ## See Also
 

@@ -23,9 +23,9 @@ A view that displays the image for a music item’s artwork.
 
 #### Overview
 
-You can create an artwork image with an instance of [`Artwork`](Artwork.md).
+You can create an artwork image with an instance of [`Artwork`](artwork.md).
 
-While the artwork’s image data is loading, [`ArtworkImage`](artworkimage.md) automatically displays a placeholder with a solid color that matches the [`backgroundColor`](Artwork/backgroundColor.md) property of the artwork to render.
+While the artwork’s image data is loading, [`ArtworkImage`](artworkimage.md) automatically displays a placeholder with a solid color that matches the [`backgroundColor`](artwork/backgroundcolor.md) property of the artwork to render.
 
 ## Topics
 
@@ -40,9 +40,9 @@ While the artwork’s image data is loading, [`ArtworkImage`](artworkimage.md) a
 ## Relationships
 
 ### Conforms To
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
-- [View](../SwiftUI/View.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
+- [View](../swiftui/view.md)
 
 ## See Also
 

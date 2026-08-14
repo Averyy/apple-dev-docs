@@ -22,7 +22,7 @@ let kCTFontDisplayNameAttribute: CFString
 
 #### Discussion
 
-Most commonly this is the full name. The value associated with this key is a [`CFString`](https://developer.apple.com/documentation/CoreFoundation/CFString) object. If the value is unspecified, it defaults to `Helvetica`, and if that font is unavailable, it falls back to the global font cascade list.
+Most commonly this is the full name. The value associated with this key is a [`CFString`](https://developer.apple.com/documentation/corefoundation/cfstring) object. If the value is unspecified, it defaults to `Helvetica`, and if that font is unavailable, it falls back to the global font cascade list.
 
 ## See Also
 

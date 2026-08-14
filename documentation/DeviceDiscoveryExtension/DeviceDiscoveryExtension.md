@@ -15,9 +15,9 @@ Stream media to a third-party device that a user selects in a system menu.
 
 Use DeviceDiscoveryExtension (DDE) to discover third-party media receivers to which your app can stream AV content.
 
-When a user invokes your app’s media-streaming UI, you can offer a third-party, local-network, or Bluetooth device as a streaming destination in a route picker view ([`AVRoutePickerView`](https://developer.apple.com/documentation/AVKit/AVRoutePickerView)). The figure below illustrates actors in the discovery process. As depicted in the System section, your app’s device discovery extension loads when the view displays.
+When a user invokes your app’s media-streaming UI, you can offer a third-party, local-network, or Bluetooth device as a streaming destination in a route picker view ([`AVRoutePickerView`](https://developer.apple.com/documentation/avkit/avroutepickerview)). The figure below illustrates actors in the discovery process. As depicted in the System section, your app’s device discovery extension loads when the view displays.
 
-![A flowchart with four boxes in a horizontal row from left to right, each labeled respectively: user, app, system, and third-party device. Lines that represent channels extend downward from each box. At the top of the user channel is the start of a continuous arrow that traces a path with switchbacks through all the channels. Multiple steps of the device discovery process are shown in this path with arrows that indicate the order in which they occur, from the user invoking it until the third-party device plays the media.](https://docs-assets.developer.apple.com/published/1729cdc9d04d8250ae66a99bd7c12dfa/media-4056835%402x.png)
+![A flowchart with four boxes in a horizontal row from left to right, each labeled respectively: user, app, system, and third-party device. Lines that represent channels extend downward from each box. At the top of the user channel is the start of a continuous arrow that traces a path with switchbacks through all the channels. Multiple steps of the device discovery process are shown in this path with arrows that indicate the order in which they occur, from the user invoking it until the third-party device plays the media.](/images/com.apple.devicediscoveryextension/media-4056835@2x.png)
 
 Once the extension loads:
 
@@ -34,7 +34,7 @@ Because DDE runs in a system sandbox, the extension doesn’t need to ask the us
 ### Essentials
 - [Discovering a third-party media-streaming device](discovering-a-third-party-media-streaming-device.md)
   Build an extension that streams media to a server app in iOS or macOS.
-- [Media Device Discovery Extension](../BundleResources/Entitlements/com.apple.developer.media-device-discovery-extension.md)
+- [Media Device Discovery Extension](../bundleresources/entitlements/com.apple.developer.media-device-discovery-extension.md)
   An entitlement for an app extension that adds a specific third-party media receiver to a system device-picker UI.
 ### Extension
 - [protocol DDDiscoveryExtension](dddiscoveryextension.md)

@@ -21,7 +21,7 @@ The value of the attribute, or `NULL` if the attribute doesn't exist for the spe
 ## Parameters
 
 - `query`: The query.
-- `name`: The attribute name to return the values of. If the attribute is not one of those requested in the   or   parameters to one of the query creation functions, the result will be  .
+- `name`: The attribute name to return the values of. If the attribute is not one of those requested in the `valueListAttrs` or `sortingAttrs` parameters to one of the query creation functions, the result will be `NULL`.
 - `idx`: The index into the query's result list. If the index is negative or is equal to or larger than the current number of results in the query, the behavior is undefined.
 
 ## See Also

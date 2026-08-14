@@ -17,7 +17,7 @@ static let GCRacingWheelDidConnect: NSNotification.Name
 
 #### Discussion
 
-The notification object is the [`GCRacingWheel`](https://developer.apple.com/documentation/GameController/GCRacingWheel) object that connects to the device.
+The notification object is the [`GCRacingWheel`](https://developer.apple.com/documentation/gamecontroller/gcracingwheel) object that connects to the device.
 
 The system posts this notification on the main actor.
 

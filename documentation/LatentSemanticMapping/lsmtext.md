@@ -40,8 +40,8 @@ An [`LSMText`](lsmtext.md) is a mutable, opaque Core Foundation type that repres
 ## Relationships
 
 ### Conforms To
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
 
 ## See Also
 

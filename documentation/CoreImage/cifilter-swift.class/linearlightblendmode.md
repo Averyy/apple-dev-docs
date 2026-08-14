@@ -41,7 +41,7 @@ func linearLightBlendMode(inputImage: CIImage, backgroundImage: CIImage) -> CIIm
 }
 ```
 
-![Two images arranged vertically on the left and a third image on the right. The top left image contains a photograph of a vineyard. The lower third of the image contains gravel with a deep shadow in the foreground. The image on the bottom left is a closeup photograph of a cactus. The image on the right shows the result of applying the linear-light blend mode filter.](https://docs-assets.developer.apple.com/published/6bdf22ab09bde8745f14009343bb0238/media-4407310%402x.png)
+![Two images arranged vertically on the left and a third image on the right. The top left image contains a photograph of a vineyard. The lower third of the image contains gravel with a deep shadow in the foreground. The image on the bottom left is a closeup photograph of a cactus. The image on the right shows the result of applying the linear-light blend mode filter.](/images/com.apple.coreimage/media-4407310@2x.png)
 
 ## See Also
 

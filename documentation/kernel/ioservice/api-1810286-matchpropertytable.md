@@ -24,7 +24,7 @@ All matching on an IOService object will call this method to allow a family writ
 ## Parameters
 
 - `table`: The dictionary of properties to be matched against.
-- `score`: Pointer to the current driver's probe score, which is used to order multiple matching drivers in the same match category. It defaults to the value of the   property in the drivers property table, or   if none is specified.
+- `score`: Pointer to the current driver's probe score, which is used to order multiple matching drivers in the same match category. It defaults to the value of the `IOProbeScore` property in the drivers property table, or `kIODefaultProbeScore` if none is specified.
 
 ## See Also
 

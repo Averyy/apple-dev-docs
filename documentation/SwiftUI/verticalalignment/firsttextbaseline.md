@@ -29,7 +29,7 @@ static let firstTextBaseline: VerticalAlignment
 
 Use this guide to align with the baseline of the top-most text in a view. The guide aligns with the bottom of a view that contains no text:
 
-![A box that contains the text, First Text Baseline.](https://docs-assets.developer.apple.com/published/e676907b319612805deae559c8d91cc4/VerticalAlignment-firstTextBaseline-1-iOS%402x.png)
+![A box that contains the text, First Text Baseline.](/images/com.apple.SwiftUI/VerticalAlignment-firstTextBaseline-1-iOS@2x.png)
 
 The following code generates the image above using an [`HStack`](hstack.md):
 

@@ -22,7 +22,7 @@ Data containing a picture of this person
 
 This method searches only the local file system and operates synchronously. To perform an asynchronous search or to search over a network, use [`beginLoadingImageData(for:)`](abperson/beginloadingimagedata(for:).md).
 
-The returned data is in a QuickTime-compatible format. To create an image from it, use the `NSImage` method [`init(data:)`](https://developer.apple.com/documentation/AppKit/NSImage/init(data:)).
+The returned data is in a QuickTime-compatible format. To create an image from it, use the `NSImage` method [`init(data:)`](https://developer.apple.com/documentation/appkit/nsimage/init(data:)).
 
 ## See Also
 

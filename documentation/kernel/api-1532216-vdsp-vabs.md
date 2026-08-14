@@ -23,9 +23,9 @@ This function performs the following operation to write the absolute values of t
 ## Parameters
 
 - `__A`: The single-precision real input vector.
-- `__IA`: The stride for input vector  .
+- `__IA`: The stride for input vector `A`.
 - `__C`: The single-precision real output vector.
-- `__IC`: The stride for output vector  . 
+- `__IC`: The stride for output vector `C`. 
 - `__N`: The number of elements to process.
 
 

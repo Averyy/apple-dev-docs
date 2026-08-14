@@ -22,7 +22,7 @@ static let frame: SCNParticleSystem.ParticleProperty
 
 #### Discussion
 
-This property’s value is a floating-point scalar (an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) object for particle property controllers, or a single `float` value for particle event or modifier blocks). For details on particle image animation, see the [`particleImage`](scnparticlesystem/particleimage.md) property.
+This property’s value is a floating-point scalar (an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) object for particle property controllers, or a single `float` value for particle event or modifier blocks). For details on particle image animation, see the [`particleImage`](scnparticlesystem/particleimage.md) property.
 
 The particle system’s [`imageSequenceInitialFrame`](scnparticlesystem/imagesequenceinitialframe.md) and [`imageSequenceInitialFrameVariation`](scnparticlesystem/imagesequenceinitialframevariation.md) properties determine the initial frame for each particle.
 

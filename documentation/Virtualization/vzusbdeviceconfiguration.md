@@ -29,7 +29,7 @@ Classes that conform to this protocol represent hot-pluggable USB device configu
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 ### Conforming Types
 - [VZUSBMassStorageDeviceConfiguration](vzusbmassstoragedeviceconfiguration.md)
 - [VZUSBPassthroughDeviceConfiguration](vzusbpassthroughdeviceconfiguration.md)

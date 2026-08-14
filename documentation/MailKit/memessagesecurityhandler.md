@@ -30,7 +30,7 @@ When MailKit needs the original message content, it invokes the handler’s [`de
 
 > **Note**:  MailKit stores the encrypted and signed message content. Therefore, MailKit may ask a message security handler to decode the same message repeatedly over time when it needs the decoded original message content.
 
-To indicate that your extension contains a message security handler, add `MEMessageSecurityHandler` to the [`MEExtensionCapabilities`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSExtension/NSExtensionAttributes/MEExtensionCapabilities) array in the extension’s `Info.plist` file:
+To indicate that your extension contains a message security handler, add `MEMessageSecurityHandler` to the [`MEExtensionCapabilities`](https://developer.apple.com/documentation/bundleresources/information-property-list/nsextension/nsextensionattributes/meextensioncapabilities) array in the extension’s `Info.plist` file:
 
 ```plist
 <key>NSExtensionAttributes</key>
@@ -74,7 +74,7 @@ To indicate that your extension contains a message security handler, add `MEMess
 ### Inherits From
 - [MEMessageDecoder](memessagedecoder.md)
 - [MEMessageEncoder](memessageencoder.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 
 ---

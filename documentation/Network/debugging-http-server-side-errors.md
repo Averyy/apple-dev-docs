@@ -8,18 +8,18 @@ Understand HTTP server-side errors and how to debug them.
 
 Apple’s HTTP APIs report transport errors and server-side errors:
 
-- A transport error occurs due to a problem getting your request to, or getting the response from, the server. This [`NSError`](https://developer.apple.com/documentation/Foundation/NSError) value is typically passed to your completion handler block or to a delegate method like [`urlSession(_:task:didCompleteWithError:)`](https://developer.apple.com/documentation/Foundation/URLSessionTaskDelegate/urlSession(_:task:didCompleteWithError:)). If you get a transport error, investigate what is happening with your network traffic. To get started, read [`Choosing a Network Debugging Tool`](choosing-a-network-debugging-tool.md).
-- A server-side error occurs due to problems detected by the server. The [`statusCode`](https://developer.apple.com/documentation/Foundation/HTTPURLResponse/statusCode) property of the [`HTTPURLResponse`](https://developer.apple.com/documentation/Foundation/HTTPURLResponse) contains the error.
+- A transport error occurs due to a problem getting your request to, or getting the response from, the server. This [`NSError`](https://developer.apple.com/documentation/foundation/nserror) value is typically passed to your completion handler block or to a delegate method like [`urlSession(_:task:didCompleteWithError:)`](https://developer.apple.com/documentation/foundation/urlsessiontaskdelegate/urlsession(_:task:didcompletewitherror:)). If you get a transport error, investigate what is happening with your network traffic. To get started, read [`Choosing a Network Debugging Tool`](choosing-a-network-debugging-tool.md).
+- A server-side error occurs due to problems detected by the server. The [`statusCode`](https://developer.apple.com/documentation/foundation/httpurlresponse/statuscode) property of the [`HTTPURLResponse`](https://developer.apple.com/documentation/foundation/httpurlresponse) contains the error.
 
 The status codes returned by the server aren’t always easy to interpret (see Section 6, *Response Status Codes*, of [`RFC 7231`](https://developer.apple.comhttps://tools.ietf.org/html/rfc7231)) . Many HTTP server-side errors don’t give you a way to determine, from the client side, what went wrong. These include the 5xx errors (like *500 Internal Server Error*) and many 4xx errors (for example, with *400 Bad Request*, it’s hard to know exactly why the server considers the request bad).
 
-> **Note**:  Xcode 13 includes the HTTP Tracing instrument to aid in debugging HTTP issues. See [`Analyzing HTTP traffic with Instruments`](https://developer.apple.com/documentation/Foundation/analyzing-http-traffic-with-instruments).
+> **Note**:  Xcode 13 includes the HTTP Tracing instrument to aid in debugging HTTP issues. See [`Analyzing HTTP traffic with Instruments`](https://developer.apple.com/documentation/foundation/analyzing-http-traffic-with-instruments).
 
 The following sections explain how to debug these server-side problems.
 
 ##### Print the Http Response Body
 
-In some cases, the error response from the server includes an HTTP response body that explains what the problem is. Look at the HTTP response body to see whether such an explanation is present. If it is, that’s the easiest way to figure out what went wrong. For example, consider this standard [`URLSession`](https://developer.apple.com/documentation/Foundation/URLSession) request code.
+In some cases, the error response from the server includes an HTTP response body that explains what the problem is. Look at the HTTP response body to see whether such an explanation is present. If it is, that’s the easiest way to figure out what went wrong. For example, consider this standard [`URLSession`](https://developer.apple.com/documentation/foundation/urlsession) request code.
 
 ```swift
 URLSession.shared.dataTask(with: url) { (responseBody, response, error) in

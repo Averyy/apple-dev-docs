@@ -24,7 +24,7 @@ To use the entitlement, request it from Apple. The steps to request the entitlem
 - **European Union**: To request the entitlement in the EU, see [`Using alternative browser engines in the European Union`](https://developer.apple.comhttps://developer.apple.com/support/alternative-browser-engines).
 - **Japan**: To request the entitlement in Japan, see [`Using alternative browser engines in Japan`](https://developer.apple.comhttps://developer.apple.com/support/alternative-browser-engines-jp).
 
-For more information, see [`Creating browser extensions in Xcode`](https://developer.apple.com/documentation/BrowserEngineKit/creating-browser-extensions-in-xcode).
+For more information, see [`Creating browser extensions in Xcode`](https://developer.apple.com/documentation/browserenginekit/creating-browser-extensions-in-xcode).
 
 ## See Also
 

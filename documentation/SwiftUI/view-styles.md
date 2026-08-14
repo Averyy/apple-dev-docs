@@ -8,7 +8,7 @@ Apply built-in and custom appearances and behaviors to different types of views.
 
 SwiftUI defines built-in styles for certain kinds of views and automatically selects the appropriate style for a particular presentation context. For example, a [`Label`](label.md) might appear as an icon, a string title, or both, depending on factors like the platform, whether the view appears in a toolbar, and so on.
 
-![None](https://docs-assets.developer.apple.com/published/7ba769e017aa157b1b47692780e74e9a/view-styles-hero%402x.png)
+![None](/images/com.apple.SwiftUI/view-styles-hero@2x.png)
 
 You can override the automatic style by using one of the style view modifiers. These modifiers typically propagate throughout a container view, so that you can wrap a view hierarchy in a style modifier to affect all the views of the given type within the hierarchy.
 

@@ -25,7 +25,7 @@ This scenario can occur if you use the convenience subscribers, because they dem
 - Don’t consume excessive memory by buffering elements.
 - Don’t get overwhelmed and fail to process elements.
 
-Fortunately, many commonly used publishers, such as publishers associated with user-interface elements, publish at a manageable rate. Other common publishers only produce a single element, like the URL Loading System’s [`URLSession.DataTaskPublisher`](https://developer.apple.com/documentation/Foundation/URLSession/DataTaskPublisher). It’s perfectly safe to use sink and assign subscribers with these publishers.
+Fortunately, many commonly used publishers, such as publishers associated with user-interface elements, publish at a manageable rate. Other common publishers only produce a single element, like the URL Loading System’s [`URLSession.DataTaskPublisher`](https://developer.apple.com/documentation/foundation/urlsession/datataskpublisher). It’s perfectly safe to use sink and assign subscribers with these publishers.
 
 ##### Apply Back Pressure with a Custom Subscriber
 
@@ -33,7 +33,7 @@ To control the rate at which the publisher sends elements to your subscriber, cr
 
 This concept of controlling flow by signaling a subscriber’s readiness to receive elements is called *back pressure*.
 
-Each publisher keeps track of its current unsatisfied demand, meaning how many more elements a subscriber has requested. Even automated sources like Foundation’s [`Timer.TimerPublisher`](https://developer.apple.com/documentation/Foundation/Timer/TimerPublisher) only produce elements when they have pending demand. The following example code illustrates this behavior.
+Each publisher keeps track of its current unsatisfied demand, meaning how many more elements a subscriber has requested. Even automated sources like Foundation’s [`Timer.TimerPublisher`](https://developer.apple.com/documentation/foundation/timer/timerpublisher) only produce elements when they have pending demand. The following example code illustrates this behavior.
 
 ```swift
 // Publisher: Uses a timer to emit the date once per second.

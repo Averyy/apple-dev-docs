@@ -22,7 +22,7 @@ let kCGImageMetadataShouldExcludeGPS: CFString
 
 #### Discussion
 
-The value of this key must be a [`CFBoolean`](https://developer.apple.com/documentation/CoreFoundation/CFBoolean) value. The default value is [`kCFBooleanFalse`](https://developer.apple.com/documentation/CoreFoundation/kCFBooleanFalse), which includes GPS information in the metadata. This flag doesn’t filter any proprietary location data in the manufacturer’s EXIF MakerNote or in custom XMP properties.
+The value of this key must be a [`CFBoolean`](https://developer.apple.com/documentation/corefoundation/cfboolean) value. The default value is [`kCFBooleanFalse`](https://developer.apple.com/documentation/corefoundation/kcfbooleanfalse), which includes GPS information in the metadata. This flag doesn’t filter any proprietary location data in the manufacturer’s EXIF MakerNote or in custom XMP properties.
 
 ## See Also
 

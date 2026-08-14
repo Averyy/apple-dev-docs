@@ -35,7 +35,7 @@ This protocol provides a blueprint for a content view object that renders the co
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 ### Conforming Types
 - [UIContentUnavailableView](uicontentunavailableview.md)
 - [UIListContentView](uilistcontentview.md)

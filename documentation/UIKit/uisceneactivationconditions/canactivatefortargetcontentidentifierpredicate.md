@@ -21,9 +21,9 @@ var canActivateForTargetContentIdentifierPredicate: NSPredicate { get set }
 
 #### Discussion
 
-Use this property to specify the tasks your scene can handle, if needed. UIKit evaluates your predicate against the [`targetContentIdentifier`](uiapplicationshortcutitem/targetcontentidentifier.md) property of the object causing the activation of the scene. Many different objects contain target content identifiers, including [`NSUserActivity`](https://developer.apple.com/documentation/Foundation/NSUserActivity), [`UNNotificationContent`](https://developer.apple.com/documentation/UserNotifications/UNNotificationContent), and [`UIApplicationShortcutItem`](uiapplicationshortcutitem.md).
+Use this property to specify the tasks your scene can handle, if needed. UIKit evaluates your predicate against the [`targetContentIdentifier`](uiapplicationshortcutitem/targetcontentidentifier.md) property of the object causing the activation of the scene. Many different objects contain target content identifiers, including [`NSUserActivity`](https://developer.apple.com/documentation/foundation/nsuseractivity), [`UNNotificationContent`](https://developer.apple.com/documentation/usernotifications/unnotificationcontent), and [`UIApplicationShortcutItem`](uiapplicationshortcutitem.md).
 
-UIKit must be able to evaluate your predicate’s conditions outside the scope of your app, so don’t include conditions that require dynamic evaluation. For example, don’t include key paths in your predicate and don’t create predicates that evaluate conditions using selectors or blocks. The default value of this property is a predicate that always evaluates to the value [`true`](https://developer.apple.com/documentation/Swift/true).
+UIKit must be able to evaluate your predicate’s conditions outside the scope of your app, so don’t include conditions that require dynamic evaluation. For example, don’t include key paths in your predicate and don’t create predicates that evaluate conditions using selectors or blocks. The default value of this property is a predicate that always evaluates to the value [`true`](https://developer.apple.com/documentation/swift/true).
 
 ## See Also
 

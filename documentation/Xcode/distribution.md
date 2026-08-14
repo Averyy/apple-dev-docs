@@ -23,13 +23,13 @@ Prepare your app and share it with your team, beta testers, and customers.
   Sign Mac code for distribution using either Xcode or command-line tools.
 - [Using the latest code signature format](using-the-latest-code-signature-format.md)
   Update legacy app code signatures so your app runs on current OS releases.
-- [Notarizing macOS software before distribution](../Security/notarizing-macos-software-before-distribution.md)
+- [Notarizing macOS software before distribution](../security/notarizing-macos-software-before-distribution.md)
   Give users even more confidence in your macOS software by submitting it to Apple for notarization.
 - [Signing a daemon with a restricted entitlement](signing-a-daemon-with-a-restricted-entitlement.md)
   Wrap a daemon in an app-like structure to use an entitlement thatʼs authorized by a provisioning profile.
 - [Synchronizing code signing identities with your developer account](sharing-your-teams-signing-certificates.md)
   Ensure you and other team members can sign your organization’s code and installer packages in Xcode.
-- [TN3125: Inside Code Signing: Provisioning Profiles](../Technotes/tn3125-inside-code-signing-provisioning-profiles.md)
+- [TN3125: Inside Code Signing: Provisioning Profiles](../technotes/tn3125-inside-code-signing-provisioning-profiles.md)
   Learn how provisioning profiles enable third-party code to run on Apple platforms.
 ### Testing
 - [Testing a release build](testing-a-release-build.md)

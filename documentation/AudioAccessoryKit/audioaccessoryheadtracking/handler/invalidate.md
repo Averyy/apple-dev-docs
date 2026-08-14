@@ -8,7 +8,6 @@ Called when the head-tracking session has been invalidated.
 
 **Availability**:
 - iOS 27.0+ (Beta)
-- iPadOS 27.0+ (Beta)
 
 ## Declaration
 

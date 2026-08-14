@@ -16,7 +16,7 @@ class func menuBarVisible() -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/Swift/true) if the menu bar is visible and selectable, otherwise [`false`](https://developer.apple.com/documentation/Swift/false).
+[`true`](https://developer.apple.com/documentation/swift/true) if the menu bar is visible and selectable, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
 
 ## See Also
 

@@ -30,7 +30,7 @@ In iOS 10, tvOS 10, watchOS 3, and macOS 10.12, the default mipmapping filter mo
 
 The figure below shows the effects of enabling mipmapping. In the image on the left, mipmapping is disabled, causing pixelated artifacts as the checkerboard pattern recedes into the distance. Enabling linear mipmapping results in a smoother appearance.
 
-![None](https://docs-assets.developer.apple.com/published/8fc5eb20217d242fe7b3f882a919fee0/media-2929775%402x.png)
+![None](/images/com.apple.scenekit/media-2929775@2x.png)
 
 ## See Also
 

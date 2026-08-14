@@ -36,7 +36,7 @@ A destination app uses an object that conforms to this protocol to consume paste
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 ### Conforming Types
 - [NSAttributedString](nsattributedstring.md)
 - [NSMutableString](nsmutablestring.md)

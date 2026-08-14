@@ -26,7 +26,7 @@ The size of the sample.
 
 #### Discussion
 
-If you specify a sample index that isn’t in the range, the system returns `0`. It also returns `0` if the sample buffer contains no sizes, which occurs if the samples in the buffer are noncontiguous, such as noninterleaved audio, or if the sample buffer contains a [`CVImageBuffer`](https://developer.apple.com/documentation/CoreVideo/cvimagebuffer-q40).
+If you specify a sample index that isn’t in the range, the system returns `0`. It also returns `0` if the sample buffer contains no sizes, which occurs if the samples in the buffer are noncontiguous, such as noninterleaved audio, or if the sample buffer contains a [`CVImageBuffer`](https://developer.apple.com/documentation/corevideo/cvimagebuffer-q40).
 
 ## Parameters
 

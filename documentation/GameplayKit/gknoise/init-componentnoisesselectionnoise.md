@@ -29,7 +29,7 @@ This method is equivalent to the [`init(componentNoises:selectionNoise:component
 
 For example, if the `noises` array contains two noise objects, the boundary value is zero: In regions where the `selectionNoise` field has negative values, the noise created by this method uses values from the first element of the `noises` array, and in regions where the `selectionNoise` field has positive values, the created noise uses values from the second element in the `noises` array.
 
-![None](https://docs-assets.developer.apple.com/published/e17af09b72dc79daddb55ae834daf642/media-2556365%402x.png)
+![None](/images/com.apple.gameplaykit/media-2556365@2x.png)
 
 ## Parameters
 

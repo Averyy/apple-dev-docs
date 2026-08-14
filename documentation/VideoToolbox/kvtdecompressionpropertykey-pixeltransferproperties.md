@@ -21,7 +21,7 @@ let kVTDecompressionPropertyKey_PixelTransferProperties: CFString
 
 #### Discussion
 
-This property value is a [`CFDictionary`](https://developer.apple.com/documentation/CoreFoundation/CFDictionary) object containing properties from `VTPixelTransferProperties.h`.
+This property value is a [`CFDictionary`](https://developer.apple.com/documentation/corefoundation/cfdictionary) object containing properties from `VTPixelTransferProperties.h`.
 
 ## See Also
 

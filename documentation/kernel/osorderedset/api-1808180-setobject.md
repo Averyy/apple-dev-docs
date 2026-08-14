@@ -20,7 +20,7 @@ virtual bool setObject(
 
 The set adds storage to accomodate the new object, if necessary. If successfully added, the object is retained.
 
-If `anObject` is not already in the ordered set and there is an order function, this function loops through the existing objects, calling the order function with arguments each existingObject, `anObject`, and the ordering context (or `NULL` if none was set), until the order function returns a value  or equal to 0. It then inserts `anObject` at the index of the existing object.
+If `anObject` is not already in the ordered set and there is an order function, this function loops through the existing objects, calling the order function with arguments each existingObject, `anObject`, and the ordering context (or `NULL` if none was set), until the order function returns a value *greater than* or equal to 0. It then inserts `anObject` at the index of the existing object.
 
 If there is no order function, the object is inserted at index 0.
 

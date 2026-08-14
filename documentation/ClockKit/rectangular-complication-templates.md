@@ -8,11 +8,11 @@ Displays large, rectangular complications for charts, images, or multiple lines 
 
 The graphic rectangular templates provide a larger space for displaying images or multiple lines of text.
 
-![An illustration of three graphic rectangular templates, showing text, an image of a graph, and a gauge.](https://docs-assets.developer.apple.com/published/1f31ba28aacc44d8061c58eaf695c430/media-3744083%402x.png)
+![An illustration of three graphic rectangular templates, showing text, an image of a graph, and a gauge.](/images/com.apple.clockkit/media-3744083@2x.png)
 
 The tinted versions of the templates are shown below:
 
-![An illustration that shows tinted versions of three graphic rectangular templates, with text, an image of a graph, and a gauge. ](https://docs-assets.developer.apple.com/published/2890ce63e0e0fb5053198c41efc9d8f4/media-3744088%402x.png)
+![An illustration that shows tinted versions of three graphic rectangular templates, with text, an image of a graph, and a gauge. ](/images/com.apple.clockkit/media-3744088@2x.png)
 
 ## Topics
 

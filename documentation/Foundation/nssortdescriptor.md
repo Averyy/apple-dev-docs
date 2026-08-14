@@ -28,7 +28,7 @@ You can use sort descriptors for the following:
 
 - Sorting an array (an instance of [`NSArray`](nsarray.md) or [`NSMutableArray`](nsmutablearray.md) — see [`sortedArray(using:)`](nsarray/sortedarray(using:)-82wi1.md) and [`sort(using:)`](nsmutablearray/sort(using:)-4eh07.md))
 - Comparing two objects directly (see [`compare(_:to:)`](nssortdescriptor/compare(_:to:).md))
-- Specifying the order of objects that return from a Core Data fetch request (see [`sortDescriptors`](https://developer.apple.com/documentation/CoreData/NSFetchRequest/sortDescriptors))
+- Specifying the order of objects that return from a Core Data fetch request (see [`sortDescriptors`](https://developer.apple.com/documentation/coredata/nsfetchrequest/sortdescriptors))
 
 ## Topics
 
@@ -72,16 +72,16 @@ You can use sort descriptors for the following:
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
 - [NSCoding](nscoding.md)
 - [NSCopying](nscopying.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 - [NSSecureCoding](nssecurecoding.md)
 
 ## See Also

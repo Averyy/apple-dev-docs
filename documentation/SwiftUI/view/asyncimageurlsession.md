@@ -23,7 +23,7 @@ func asyncImageURLSession(_ urlSession: URLSession) -> some View
 
 ## Parameters
 
-- `urlSession`: An instance of [`URLSession`](https://developer.apple.com/documentation/Foundation/URLSession) for [`AsyncImage`](asyncimage.md) instances to use for image download data tasks.
+- `urlSession`: An instance of [`URLSession`](https://developer.apple.com/documentation/foundation/urlsession) for [`AsyncImage`](asyncimage.md) instances to use for image download data tasks.
 
 
 ---

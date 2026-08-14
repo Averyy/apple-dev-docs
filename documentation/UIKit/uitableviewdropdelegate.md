@@ -52,7 +52,7 @@ Assign your custom delegate object to the [`dropDelegate`](uitableview/dropdeleg
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

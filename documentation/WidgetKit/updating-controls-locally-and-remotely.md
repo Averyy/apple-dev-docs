@@ -6,7 +6,7 @@ Update and reload controls from your app or using push notifications.
 
 #### Overview
 
-A control reloads and updates when someone interacts with it, when the app asks to reload it using the shared [`ControlCenter`](controlcenter.md), or when the system receives a specific remote push notification from Apple Push Notification service (APNs). When someone interacts with a control, it’s reloaded once the assigned app intent finishes its [`perform()`](https://developer.apple.com/documentation/AppIntents/AppIntent/perform()) function. Plan for when someone interacts with your app or website and the state of a control needs to update to reflect the changes.
+A control reloads and updates when someone interacts with it, when the app asks to reload it using the shared [`ControlCenter`](controlcenter.md), or when the system receives a specific remote push notification from Apple Push Notification service (APNs). When someone interacts with a control, it’s reloaded once the assigned app intent finishes its [`perform()`](https://developer.apple.com/documentation/appintents/appintent/perform()) function. Plan for when someone interacts with your app or website and the state of a control needs to update to reflect the changes.
 
 ##### Request Reloading Controls From an App
 
@@ -26,7 +26,7 @@ Use the [`reloadAllControls()`](controlcenter/reloadallcontrols().md) method to 
 
 ##### Use Push Notifications to Reload Controls
 
-You may need the system to reload controls when someone interacts with a web server connected to your app that affects their state. Enable a control to update its state from a push notification event by registering a [`ControlPushHandler`](controlpushhandler.md) type on the [`ControlWidgetConfiguration`](https://developer.apple.com/documentation/SwiftUI/ControlWidgetConfiguration). The system reloads any controls with a registered push handler in response to a push notification event. You don’t need to reload the controls manually.
+You may need the system to reload controls when someone interacts with a web server connected to your app that affects their state. Enable a control to update its state from a push notification event by registering a [`ControlPushHandler`](controlpushhandler.md) type on the [`ControlWidgetConfiguration`](https://developer.apple.com/documentation/swiftui/controlwidgetconfiguration). The system reloads any controls with a registered push handler in response to a push notification event. You don’t need to reload the controls manually.
 
 The `ControlPushHandler` requires a [`pushTokensDidChange(controls:)`](controlpushhandler/pushtokensdidchange(controls:).md) function that is called when push tokens change. The system calls this function when you add or remove controls, and may call it at other times if any push tokens change or if someone reconfigures a control.
 

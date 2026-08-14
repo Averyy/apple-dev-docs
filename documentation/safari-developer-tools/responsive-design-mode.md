@@ -6,7 +6,7 @@ Use Responsive Design Mode to test your `media` queries and other dynamic styles
 
 #### Overview
 
-![Screenshot of Responsive Design Mode, opened to developer.apple.com, with a viewport size of 800 by 600 pixels with a 2x pixel ratio.](https://docs-assets.developer.apple.com/published/10d8510fcb8f9952ea355b4f9473d098/ResponsiveDesignMode%402x.png)
+![Screenshot of Responsive Design Mode, opened to developer.apple.com, with a viewport size of 800 by 600 pixels with a 2x pixel ratio.](/images/com.apple.safari.developer-tools/ResponsiveDesignMode@2x.png)
 
 Responsive Design Mode lets you quickly preview how your webpage responds to changes in width and height, as well as differences in the pixel ratio of displays. Use Responsive Design Mode to ensure all visitors to your webpage get a great experience, no matter the size of their screen.
 

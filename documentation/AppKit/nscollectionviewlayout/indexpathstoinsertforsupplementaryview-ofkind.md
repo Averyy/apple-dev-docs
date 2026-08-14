@@ -16,7 +16,7 @@ func indexPathsToInsertForSupplementaryView(ofKind elementKind: NSCollectionView
 
 #### Return Value
 
-The set of [`NSIndexPath`](https://developer.apple.com/documentation/Foundation/NSIndexPath) objects representing the supplementary views to insert, or an empty array if you do not want to insert any supplementary views.
+The set of [`NSIndexPath`](https://developer.apple.com/documentation/foundation/nsindexpath) objects representing the supplementary views to insert, or an empty array if you do not want to insert any supplementary views.
 
 #### Discussion
 

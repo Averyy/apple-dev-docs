@@ -19,7 +19,7 @@ void module::setPosition(float3 position)
 
 Use this function to move an element to a specific location in 3D space, replacing its current position.
 
-> **Note**: ![Graph](https://docs-assets.developer.apple.com/published/2c94b9f068d8fd39eef5dbb2fadec8a3/module__setPosition.svg)
+> **Note**: ![Graph](/images/com.apple.computegraph/module__setPosition.svg)
 
 ## Parameters
 

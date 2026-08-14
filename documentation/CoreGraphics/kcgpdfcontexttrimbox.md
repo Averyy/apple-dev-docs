@@ -22,7 +22,7 @@ let kCGPDFContextTrimBox: CFString
 
 #### Discussion
 
-This key is optional. If present, the value of this key must be a [`CFData`](https://developer.apple.com/documentation/CoreFoundation/CFData) object that contains a [`CGRect`](https://developer.apple.com/documentation/CoreFoundation/CGRect) (stored by value, not by reference).
+This key is optional. If present, the value of this key must be a [`CFData`](https://developer.apple.com/documentation/corefoundation/cfdata) object that contains a [`CGRect`](https://developer.apple.com/documentation/corefoundation/cgrect) (stored by value, not by reference).
 
 ## See Also
 

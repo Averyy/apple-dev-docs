@@ -18,7 +18,7 @@ enum Caption
 
 #### Overview
 
-Set the caption of a contact access button with the view modifier [`contactAccessButtonCaption(_:)`](https://developer.apple.com/documentation/SwiftUI/View/contactAccessButtonCaption(_:)). When the query produces a single result, the content access button shows the the caption under the matching contact name. For example, a search for `Anne` could show a button that displays the matching name “Anne Johnson” with a caption line of “annejohnson1@icloud.com” when the caption type is [`ContactAccessButton.Caption.email`](contactaccessbutton/caption/email.md).
+Set the caption of a contact access button with the view modifier [`contactAccessButtonCaption(_:)`](https://developer.apple.com/documentation/swiftui/view/contactaccessbuttoncaption(_:)). When the query produces a single result, the content access button shows the the caption under the matching contact name. For example, a search for `Anne` could show a button that displays the matching name “Anne Johnson” with a caption line of “annejohnson1@icloud.com” when the caption type is [`ContactAccessButton.Caption.email`](contactaccessbutton/caption/email.md).
 
 ## Topics
 
@@ -33,11 +33,11 @@ Set the caption of a contact access button with the view modifier [`contactAcces
 ## Relationships
 
 ### Conforms To
-- [Copyable](../Swift/Copyable.md)
-- [Equatable](../Swift/Equatable.md)
-- [Escapable](../Swift/Escapable.md)
-- [Hashable](../Swift/Hashable.md)
-- [RawRepresentable](../Swift/RawRepresentable.md)
+- [Copyable](../swift/copyable.md)
+- [Equatable](../swift/equatable.md)
+- [Escapable](../swift/escapable.md)
+- [Hashable](../swift/hashable.md)
+- [RawRepresentable](../swift/rawrepresentable.md)
 
 
 ---

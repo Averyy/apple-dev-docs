@@ -8,7 +8,7 @@ Display a model or scene that the user can move, scale, and share with others.
 
 AR Quick Look enables the user to place virtual content that you provide on any surface that ARKit finds in the real-world environment. Users can interact with your virtual content by moving and scaling it using touch gestures, or by sharing it with others through the iOS share sheet.
 
-![Screenshot of a virtual guitar that’s placed in the real world environment via AR Quick Look.  ](https://docs-assets.developer.apple.com/published/7687b2dae46a3ccf6f9f3c99946e0d2d/media-3226920%402x.png)
+![Screenshot of a virtual guitar that’s placed in the real world environment via AR Quick Look.  ](/images/com.apple.arkit/media-3226920@2x.png)
 
 ##### Choose an Input Format
 
@@ -21,7 +21,7 @@ You provide content for your AR experience in `.usdz` or `.reality` format:
 
 ##### Display an Ar Experience in Your App
 
-In your app, you enable AR Quick Look by providing [`QLPreviewController`](https://developer.apple.com/documentation/QuickLook/QLPreviewController) with a supported input file. The following code demonstrates previewing a scene named `myScene` from the app bundle.
+In your app, you enable AR Quick Look by providing [`QLPreviewController`](https://developer.apple.com/documentation/quicklook/qlpreviewcontroller) with a supported input file. The following code demonstrates previewing a scene named `myScene` from the app bundle.
 
 ```swift
 import UIKit
@@ -46,7 +46,7 @@ class ViewController: UIViewController, QLPreviewControllerDataSource {
 }
 ```
 
-To prevent the user from scaling your virtual content or to customize the default share sheet behavior, use [`ARQuickLookPreviewItem`](https://developer.apple.com/documentation/QuickLook/ARQuickLookPreviewItem) instead of [`QLPreviewItem`](https://developer.apple.com/documentation/QuickLook/QLPreviewItem).
+To prevent the user from scaling your virtual content or to customize the default share sheet behavior, use [`ARQuickLookPreviewItem`](https://developer.apple.com/documentation/quicklook/arquicklookpreviewitem) instead of [`QLPreviewItem`](https://developer.apple.com/documentation/quicklook/qlpreviewitem).
 
 ##### Display an Ar Experience in Your Web Page
 
@@ -68,8 +68,8 @@ When the user clicks the link in Safari or within a web view that’s displayed 
   Balance the appearance and performance of your AR experiences with modeling strategies.
 - [Adding an Apple Pay Button or a Custom Action in AR Quick Look](adding-an-apple-pay-button-or-a-custom-action-in-ar-quick-look.md)
   Provide a banner that users can tap to make a purchase or perform a custom action in an AR experience.
-- [class ARQuickLookPreviewItem](../QuickLook/ARQuickLookPreviewItem.md)
-- [OpenUSD schemas for AR](../USD/usd-schemas-for-ar.md)
+- [class ARQuickLookPreviewItem](../quicklook/arquicklookpreviewitem.md)
+- [OpenUSD schemas for AR](../usd/usd-schemas-for-ar.md)
   Add augmented reality functionality to your 3D content using USD schemas.
 - [Specifying a lighting environment in AR Quick Look](specifying-a-lighting-environment-in-ar-quick-look.md)
   Add metadata to your USDZ file to specify its lighting characteristics.

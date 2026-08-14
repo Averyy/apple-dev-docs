@@ -16,7 +16,7 @@ The best way to manage images for different appearances is with asset catalogs. 
 
 Create image assets in Xcode, and use the Appearance attributes to configure which variants you want to supply.
 
-![An image of the Xcode interface for configuring an image asset. After configuring the appearance options from the attributes inspector, drag each image variant to the appropriate slot in the editor window.](https://docs-assets.developer.apple.com/published/80632b114b4334ca3a116c0a25bc776c/providing-images-for-different-appearances-1%402x.png)
+![An image of the Xcode interface for configuring an image asset. After configuring the appearance options from the attributes inspector, drag each image variant to the appropriate slot in the editor window.](/images/com.apple.uikit/providing-images-for-different-appearances-1@2x.png)
 
 You can supply image assets for different combinations of the following characteristics:
 
@@ -47,7 +47,7 @@ Use your favorite image editor to create template image files. When creating you
 
 When designing your app’s interface, you typically create images at design time and include them in the app bundle that you ship. However, in macOS, you can also create images dynamically, which you might do if you don’t yet know what the image content will be, or if that content is changeable.
 
-To create an image that draws its content dynamically, use the [`init(size:flipped:drawingHandler:)`](https://developer.apple.com/documentation/AppKit/NSImage/init(size:flipped:drawingHandler:)) method to initialize your image with a custom drawing handler block. AppKit calls your handler block whenever the system appearance changes, giving you a chance to redraw the image using the new appearance.
+To create an image that draws its content dynamically, use the [`init(size:flipped:drawingHandler:)`](https://developer.apple.com/documentation/appkit/nsimage/init(size:flipped:drawinghandler:)) method to initialize your image with a custom drawing handler block. AppKit calls your handler block whenever the system appearance changes, giving you a chance to redraw the image using the new appearance.
 
 ## See Also
 

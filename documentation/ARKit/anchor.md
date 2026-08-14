@@ -32,10 +32,10 @@ protocol Anchor : CustomStringConvertible, Identifiable, Sendable
 ## Relationships
 
 ### Inherits From
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Identifiable](../Swift/Identifiable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Identifiable](../swift/identifiable.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 ### Inherited By
 - [TrackableAnchor](trackableanchor.md)
 ### Conforming Types
@@ -55,7 +55,7 @@ protocol Anchor : CustomStringConvertible, Identifiable, Sendable
 
 ## See Also
 
-- [Setting up access to ARKit data](../visionOS/setting-up-access-to-arkit-data.md)
+- [Setting up access to ARKit data](../visionos/setting-up-access-to-arkit-data.md)
   Check whether your app can use ARKit and respect people’s privacy.
 - [class ARKitSession](arkitsession.md)
   The main entry point for receiving data from ARKit.

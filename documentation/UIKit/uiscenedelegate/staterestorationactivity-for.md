@@ -20,12 +20,12 @@ optional func stateRestorationActivity(for scene: UIScene) -> NSUserActivity?
 
 #### Discussion
 
-Use this method to return an [`NSUserActivity`](https://developer.apple.com/documentation/Foundation/NSUserActivity) object with information about your scene’s current state. Save enough information to be able to restore that state again after UIKit disconnects and then reconnects the scene. User activity objects are a mechanism to record what the user is doing, so you don’t need to manually persist the state of your scene’s UI.
+Use this method to return an [`NSUserActivity`](https://developer.apple.com/documentation/foundation/nsuseractivity) object with information about your scene’s current state. Save enough information to be able to restore that state again after UIKit disconnects and then reconnects the scene. User activity objects are a mechanism to record what the user is doing, so you don’t need to manually persist the state of your scene’s UI.
 
-After calling this method, and before archiving the [`NSUserActivity`](https://developer.apple.com/documentation/Foundation/NSUserActivity) object and saving it to disk, UIKit lets you add state information as follows:
+After calling this method, and before archiving the [`NSUserActivity`](https://developer.apple.com/documentation/foundation/nsuseractivity) object and saving it to disk, UIKit lets you add state information as follows:
 
-- If you set a delegate for the [`NSUserActivity`](https://developer.apple.com/documentation/Foundation/NSUserActivity) object in your app, UIKit calls the delegate’s [`userActivityWillSave(_:)`](https://developer.apple.com/documentation/Foundation/NSUserActivityDelegate/userActivityWillSave(_:)) method.
-- If you assign the [`NSUserActivity`](https://developer.apple.com/documentation/Foundation/NSUserActivity) object to the [`userActivity`](uiresponder/useractivity.md) property of any responders, UIKit calls each responder’s [`updateUserActivityState(_:)`](uiresponder/updateuseractivitystate(_:).md) method.
+- If you set a delegate for the [`NSUserActivity`](https://developer.apple.com/documentation/foundation/nsuseractivity) object in your app, UIKit calls the delegate’s [`userActivityWillSave(_:)`](https://developer.apple.com/documentation/foundation/nsuseractivitydelegate/useractivitywillsave(_:)) method.
+- If you assign the [`NSUserActivity`](https://developer.apple.com/documentation/foundation/nsuseractivity) object to the [`userActivity`](uiresponder/useractivity.md) property of any responders, UIKit calls each responder’s [`updateUserActivityState(_:)`](uiresponder/updateuseractivitystate(_:).md) method.
 
 When reconnecting the scene and restoring state, the user activity provided by this method will be provided in the [`stateRestorationActivity`](uiscenesession/staterestorationactivity.md) property of [`UISceneSession`](uiscenesession.md).
 

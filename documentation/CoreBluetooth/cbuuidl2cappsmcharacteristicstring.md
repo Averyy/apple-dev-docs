@@ -22,7 +22,7 @@ let CBUUIDL2CAPPSMCharacteristicString: String
 
 #### Discussion
 
-This PSM is a little-endian [`UInt16`](https://developer.apple.com/documentation/Swift/UInt16). Servers can publish this characteristic with the UUID `ABDD3056-28FA-441D-A470-55A75A52553A`.
+This PSM is a little-endian [`UInt16`](https://developer.apple.com/documentation/swift/uint16). Servers can publish this characteristic with the UUID `ABDD3056-28FA-441D-A470-55A75A52553A`.
 
 ## See Also
 

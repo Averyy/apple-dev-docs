@@ -18,7 +18,7 @@ class NSFont
 
 [`NSFont`](nsfont.md) objects represent fonts to an app, providing access to characteristics of the font and assistance in laying out glyphs relative to one another. Font objects are also used to establish the current font for drawing text directly into a graphics context, using the [`set()`](nsfont/set().md) method.
 
-You don’t create [`NSFont`](nsfont.md) objects using the `alloc` and `init` methods. Instead, you use either [`init(descriptor:size:)`](nsfont/init(descriptor:size:).md) or [`init(name:size:)`](nsfont/init(name:size:).md) to look up an available font and alter its size or matrix to your needs. These methods check for an existing font object with the specified characteristics, returning it if there is one. Otherwise, they look up the font data requested and create the appropriate object. [`NSFont`](nsfont.md) also defines a number of methods for getting standard system fonts, such as [`systemFont(ofSize:)`](nsfont/systemfont(ofsize:).md), [`userFont(ofSize:)`](nsfont/userfont(ofsize:).md), and [`messageFont(ofSize:)`](nsfont/messagefont(ofsize:).md). To request the default size for these standard fonts, pass a negative number or `0` as the font size. For more information on system fonts, see Human Interface Guidelines > [`Typography`](https://developer.apple.com/design/Human-Interface-Guidelines/typography).
+You don’t create [`NSFont`](nsfont.md) objects using the `alloc` and `init` methods. Instead, you use either [`init(descriptor:size:)`](nsfont/init(descriptor:size:).md) or [`init(name:size:)`](nsfont/init(name:size:).md) to look up an available font and alter its size or matrix to your needs. These methods check for an existing font object with the specified characteristics, returning it if there is one. Otherwise, they look up the font data requested and create the appropriate object. [`NSFont`](nsfont.md) also defines a number of methods for getting standard system fonts, such as [`systemFont(ofSize:)`](nsfont/systemfont(ofsize:).md), [`userFont(ofSize:)`](nsfont/userfont(ofsize:).md), and [`messageFont(ofSize:)`](nsfont/messagefont(ofsize:).md). To request the default size for these standard fonts, pass a negative number or `0` as the font size. For more information on system fonts, see Human Interface Guidelines > [`Typography`](https://developer.apple.com/design/human-interface-guidelines/typography).
 
 ## Topics
 
@@ -167,17 +167,17 @@ You don’t create [`NSFont`](nsfont.md) objects using the `alloc` and `init` me
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCoding](../Foundation/NSCoding.md)
-- [NSCopying](../Foundation/NSCopying.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [NSSecureCoding](../Foundation/NSSecureCoding.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCoding](../foundation/nscoding.md)
+- [NSCopying](../foundation/nscopying.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSSecureCoding](../foundation/nssecurecoding.md)
 
 ## See Also
 

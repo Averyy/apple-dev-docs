@@ -24,7 +24,7 @@ final class NetworkCompatibilityToken
 
 Client apps send a copy of their token to the host when attempting to connect to a host app. The host deserializes that token and calls [`compatibilityWith(_:)`](networkcompatibilitytoken/compatibilitywith(_:).md) on [`NetworkCompatibilityToken`](networkcompatibilitytoken.md).[`local`](networkcompatibilitytoken/local.md). If [`compatibilityWith(_:)`](networkcompatibilitytoken/compatibilitywith(_:).md) returns [`NetworkCompatibilityToken.Compatibility.compatible`](networkcompatibilitytoken/compatibility/compatible.md), the client and host can sync and it’s safe to proceed with the connection. If [`compatibilityWith(_:)`](networkcompatibilitytoken/compatibilitywith(_:).md) returns any other value, the client that’s attempting to connect is incompatible and should be ignored.
 
-A client running a [`MCNearbyServiceAdvertiser`](https://developer.apple.com/documentation/MultipeerConnectivity/MCNearbyServiceAdvertiser), for example, writes its own token into its [`discoveryInfo`](https://developer.apple.com/documentation/MultipeerConnectivity/MCNearbyServiceAdvertiser/discoveryInfo) dictionary. When the host (running a [`MCNearbyServiceBrowser`](https://developer.apple.com/documentation/MultipeerConnectivity/MCNearbyServiceBrowser)) discovers that client, it deserializes the client’s token from the `discoverInfo` dictionary and uses it to check compatibility before inviting the client to the [`MCSession`](https://developer.apple.com/documentation/MultipeerConnectivity/MCSession).
+A client running a [`MCNearbyServiceAdvertiser`](https://developer.apple.com/documentation/multipeerconnectivity/mcnearbyserviceadvertiser), for example, writes its own token into its [`discoveryInfo`](https://developer.apple.com/documentation/multipeerconnectivity/mcnearbyserviceadvertiser/discoveryinfo) dictionary. When the host (running a [`MCNearbyServiceBrowser`](https://developer.apple.com/documentation/multipeerconnectivity/mcnearbyservicebrowser)) discovers that client, it deserializes the client’s token from the `discoverInfo` dictionary and uses it to check compatibility before inviting the client to the [`MCSession`](https://developer.apple.com/documentation/multipeerconnectivity/mcsession).
 
 > **Note**: Even if two peers are compatible, scene synchronization can fail for other reasons, such as packet corruption or a poor network connection.
 
@@ -48,8 +48,8 @@ A client running a [`MCNearbyServiceAdvertiser`](https://developer.apple.com/doc
 ## Relationships
 
 ### Conforms To
-- [Decodable](../Swift/Decodable.md)
-- [Encodable](../Swift/Encodable.md)
+- [Decodable](../swift/decodable.md)
+- [Encodable](../swift/encodable.md)
 
 ## See Also
 

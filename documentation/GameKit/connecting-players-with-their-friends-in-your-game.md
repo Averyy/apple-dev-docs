@@ -12,15 +12,15 @@ If the player has friends, you can access the list with their permission. The fi
 
 For example, if a player grants access, then only the friends who also grant your game access to their friends appear in the friends list. When a player grants access to their friends, GameKit syncs the permission across the player’s devices so the player only needs to respond to this system prompt once.
 
-![An illustration of loading friends where Game Center only returns friends who authorize access to their friends.](https://docs-assets.developer.apple.com/published/1cd6ccb56ecc6d65c3661cca667dba56/media-3880129%402x.png)
+![An illustration of loading friends where Game Center only returns friends who authorize access to their friends.](/images/com.apple.gamekit/media-3880129@2x.png)
 
-> ❗ **Important**:  The code listings in this article use GameKit asynchronous methods that you invoke within a [`Task`](https://developer.apple.com/documentation/Swift/Task) structure in SwiftUI. For details on asynchronous flows, see [`Concurrency`](https://developer.apple.com/documentation/Swift/concurrency).
+> ❗ **Important**:  The code listings in this article use GameKit asynchronous methods that you invoke within a [`Task`](https://developer.apple.com/documentation/swift/task) structure in SwiftUI. For details on asynchronous flows, see [`Concurrency`](https://developer.apple.com/documentation/swift/concurrency).
 
 ##### Sending Friend Requests
 
 Game Center provides an interface for sending and receiving friend requests including an inbox that shows requests that a player may have missed. Players can also send friend requests within your game. For example, use this feature to encourage players to add more friends in your multiplayer game.
 
-Add a friend request button to your interface using an add person SF Symbol (for example, `person.crop.circle.badge.plus`) for the button image. For details on using SF Symbols, see [`Configuring and displaying symbol images in your UI`](https://developer.apple.com/documentation/UIKit/configuring-and-displaying-symbol-images-in-your-ui).
+Add a friend request button to your interface using an add person SF Symbol (for example, `person.crop.circle.badge.plus`) for the button image. For details on using SF Symbols, see [`Configuring and displaying symbol images in your UI`](https://developer.apple.com/documentation/uikit/configuring-and-displaying-symbol-images-in-your-ui).
 
 Implement the button’s action to call the [`presentFriendRequestCreator(from:)`](gklocalplayer/presentfriendrequestcreator(from:)-7j1kn.md) method that presents the Game Center request friend view controller. After the player sends the friend request using this interface, this method dismisses the view controller and returns control to your game. Before continuing, check whether an error occurs sending the friend request.
 
@@ -34,9 +34,9 @@ do {
 
 ##### Providing a Reason to Access the Friends List
 
-You must provide a reason to access a player’s friends by adding the [`NSGKFriendListUsageDescription`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSGKFriendListUsageDescription) key to the information property list. The system displays the reason in the prompt it presents to the player to grant your game access. If you don’t provide this key, an error occurs when you attempt to access the friends.
+You must provide a reason to access a player’s friends by adding the [`NSGKFriendListUsageDescription`](https://developer.apple.com/documentation/bundleresources/information-property-list/nsgkfriendlistusagedescription) key to the information property list. The system displays the reason in the prompt it presents to the player to grant your game access. If you don’t provide this key, an error occurs when you attempt to access the friends.
 
-For details on the system prompt, see [`Requesting access to protected resources`](https://developer.apple.com/documentation/UIKit/requesting-access-to-protected-resources).
+For details on the system prompt, see [`Requesting access to protected resources`](https://developer.apple.com/documentation/uikit/requesting-access-to-protected-resources).
 
 ##### Checking Whether the Player Grants Access
 
@@ -106,9 +106,9 @@ For example, you can display details on their friends leaderboard scores to a pl
   A class that provides common data and methods for the different player objects.
 - [protocol GKLocalPlayerListener](gklocalplayerlistener.md)
   A protocol that handles events for Game Center players.
-- [static let GKPlayerAuthenticationDidChangeNotificationName: NSNotification.Name](../Foundation/NSNotification/Name-swift.struct/GKPlayerAuthenticationDidChangeNotificationName.md)
+- [static let GKPlayerAuthenticationDidChangeNotificationName: NSNotification.Name](../foundation/nsnotification/name-swift.struct/gkplayerauthenticationdidchangenotificationname.md)
   A notification that posts after GameKit authenticates the local player.
-- [static let GKPlayerDidChangeNotificationName: NSNotification.Name](../Foundation/NSNotification/Name-swift.struct/GKPlayerDidChangeNotificationName.md)
+- [static let GKPlayerDidChangeNotificationName: NSNotification.Name](../foundation/nsnotification/name-swift.struct/gkplayerdidchangenotificationname.md)
   A notification that posts when a player object’s data changes.
 
 

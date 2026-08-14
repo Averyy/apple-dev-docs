@@ -27,14 +27,14 @@ This is a response that you provide to the [`Get a Signed Web Ad Impression Payl
 
 ## Properties
 
-- `ad_network_id` (string) *(required)*: The ad network ID. You receive an ad network ID when you register to use SKAdNetwork. For more information, see [`Registering an ad network`](https://developer.apple.com/documentation/StoreKit/registering-an-ad-network).
+- `ad_network_id` (string) *(required)*: The ad network ID. You receive an ad network ID when you register to use SKAdNetwork. For more information, see [`Registering an ad network`](https://developer.apple.com/documentation/storekit/registering-an-ad-network).
 - `itunes_item_id` (integer) *(required)*: The App Store app ID that the ad impression advertises. This is the same value the ad network provides in the attributable ad link. For more information, see [`Creating an attributable ad link`](creating-an-attributable-ad-link.md).
 - `nonce` (string) *(required)*: This value needs to match the value of `source_nonce` in the [`AdImpressionRequest`](adimpressionrequest.md). The value needs to be in the `UUID` string format. Provide the dash-separated representation of the `source_nonce`.
 - `signature` (signature) *(required)*: The cryptographic signature the ad network generates to sign the web ad. For more information, see [`Generating a signature for attributable web ads`](generating-a-signature-for-attributable-web-ads.md).
 - `source_domain` (string) *(required)*: The effective top-level domain and one more preceding path component (eTLD+1) representation of the ad network serving the ad. This value needs to match the `source_domain` value you receive in the [`AdImpressionRequest`](adimpressionrequest.md).
 - `source_identifier` (integer) *(required)*: A four-digit value you use to measure the aspects of an advertising effort or campaign.
 - `timestamp` (integer) *(required)*: An integer that represents the UNIX time, in milliseconds, that you create this [`AdImpressionResponse`](adimpressionresponse.md).
-- `version` (string) *(required)*: The SKAdNetwork version. Use version `"4.0"` or later. For version information, see [`SKAdNetwork release notes`](https://developer.apple.com/documentation/StoreKit/skadnetwork-release-notes).
+- `version` (string) *(required)*: The SKAdNetwork version. Use version `"4.0"` or later. For version information, see [`SKAdNetwork release notes`](https://developer.apple.com/documentation/storekit/skadnetwork-release-notes).
 
 ## See Also
 

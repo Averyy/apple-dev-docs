@@ -24,7 +24,7 @@ static let trailing: Alignment
 
 This alignment combines the [`trailing`](horizontalalignment/trailing.md) horizontal guide and the [`center`](verticalalignment/center.md) vertical guide:
 
-![A square that’s divided into four equal quadrants. The upper-](https://docs-assets.developer.apple.com/published/001b59ea315c44f7ab2b6f2d8cf10837/Alignment-trailing-1-iOS%402x.png)
+![A square that’s divided into four equal quadrants. The upper-](/images/com.apple.SwiftUI/Alignment-trailing-1-iOS@2x.png)
 
 ## See Also
 

@@ -31,7 +31,7 @@ Two types conform to this protocol by default:
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 ### Conforming Types
 - [NSTextLayoutFragment](nstextlayoutfragment.md)
 

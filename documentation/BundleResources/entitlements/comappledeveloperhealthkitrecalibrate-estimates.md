@@ -15,9 +15,9 @@ A Boolean value that determines whether your app can recalibrate the prediction 
 
 #### Discussion
 
-Apps can recalibrate HealthKitʼs prediction algorithms after an event that may significantly affect their results. For example, you can recalibrate the [`sixMinuteWalkTestDistance`](https://developer.apple.com/documentation/HealthKit/HKQuantityTypeIdentifier/sixMinuteWalkTestDistance) type to use only data collected after a mobility-impacting health event, such as surgery or an injury.
+Apps can recalibrate HealthKitʼs prediction algorithms after an event that may significantly affect their results. For example, you can recalibrate the [`sixMinuteWalkTestDistance`](https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier/sixminutewalktestdistance) type to use only data collected after a mobility-impacting health event, such as surgery or an injury.
 
-To check whether a sample type supports recalibration, see [`allowsRecalibrationForEstimates`](https://developer.apple.com/documentation/HealthKit/HKSampleType/allowsRecalibrationForEstimates). To recalibrate the sample, see [`recalibrateEstimates(sampleType:date:completion:)`](https://developer.apple.com/documentation/HealthKit/HKHealthStore/recalibrateEstimates(sampleType:date:completion:)).
+To check whether a sample type supports recalibration, see [`allowsRecalibrationForEstimates`](https://developer.apple.com/documentation/healthkit/hksampletype/allowsrecalibrationforestimates). To recalibrate the sample, see [`recalibrateEstimates(sampleType:date:completion:)`](https://developer.apple.com/documentation/healthkit/hkhealthstore/recalibrateestimates(sampletype:date:completion:)).
 
 ## See Also
 

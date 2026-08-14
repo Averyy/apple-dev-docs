@@ -20,8 +20,8 @@ struct BasicChart3DSurfaceStyle
 
 ### Conforms To
 - [Chart3DSurfaceStyle](chart3dsurfacestyle.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
 
 ## See Also
 

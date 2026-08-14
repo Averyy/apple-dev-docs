@@ -21,7 +21,7 @@ func keypointsMultiArray() throws -> MLMultiArray
 
 #### Return Value
 
-The key points converted to an [`MLMultiArray`](https://developer.apple.com/documentation/CoreML/MLMultiArray).
+The key points converted to an [`MLMultiArray`](https://developer.apple.com/documentation/coreml/mlmultiarray).
 
 
 ---

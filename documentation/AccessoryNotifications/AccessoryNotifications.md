@@ -7,7 +7,6 @@ Receive forwarded iOS system notifications on an accessory that you develop.
 
 **Availability**:
 - iOS 26.5+
-- iPadOS 26.5+
 
 #### Overview
 
@@ -17,15 +16,15 @@ The Accessory Notifications framework allows accessory companion apps to request
 
 #### Request Notification Forwarding
 
-Call [`requestForwarding(for:)`](accessorynotificationcenter/requestforwarding(for:).md) from your companion app to prompt the person to allow notification forwarding. The system identifies your accessory through the reference you receive from [`AccessorySetupKit`](https://developer.apple.com/documentation/AccessorySetupKit). The method returns a [`ForwardingDecision`](forwardingdecision.md) that indicates the person’s choice.
+Call [`requestForwarding(for:)`](accessorynotificationcenter/requestforwarding(for:).md) from your companion app to prompt the person to allow notification forwarding. The system identifies your accessory through the reference you receive from [`AccessorySetupKit`](https://developer.apple.com/documentation/accessorysetupkit). The method returns a [`ForwardingDecision`](forwardingdecision.md) that indicates the person’s choice.
 
 Check the current forwarding status for an accessory using [`forwardingStatus(for:)`](accessorynotificationcenter/forwardingstatus(for:).md), or present notification settings using [`presentSettings(for:scenePersistentIdentifier:)`](accessorynotificationcenter/presentsettings(for:scenepersistentidentifier:).md).
 
 #### Receive and Process Notifications
 
-To receive notifications, implement [`NotificationsForwarding.AccessoryNotificationsHandler`](notificationsforwarding/accessorynotificationshandler.md) in an [`AccessoryDataProvider`](https://developer.apple.com/documentation/AccessoryTransportExtension/AccessoryDataProvider) extension of the [`Accessory Transport Extension`](https://developer.apple.com/documentation/AccessoryTransportExtension) framework. The system calls your handler’s methods for notification arrivals, updates, or removals. Curate just the notification information that your accessory needs from the [`AccessoryNotification`](accessorynotification.md) structure, which includes content for display, icons, related file attachments, and interactive actions.
+To receive notifications, implement [`NotificationsForwarding.AccessoryNotificationsHandler`](notificationsforwarding/accessorynotificationshandler.md) in an [`AccessoryDataProvider`](https://developer.apple.com/documentation/accessorytransportextension/accessorydataprovider) extension of the [`Accessory Transport Extension`](https://developer.apple.com/documentation/accessorytransportextension) framework. The system calls your handler’s methods for notification arrivals, updates, or removals. Curate just the notification information that your accessory needs from the [`AccessoryNotification`](accessorynotification.md) structure, which includes content for display, icons, related file attachments, and interactive actions.
 
-Send the curated data to your accessory using the session’s [`send(message:)`](notificationsforwarding/accessorynotificationssession/send(message:).md) method. The system encrypts the data using keys established through your app’s [`AccessoryTransportSecurity`](https://developer.apple.com/documentation/AccessoryTransportExtension/AccessoryTransportSecurity) extension, then delivers the encrypted data to your app’s [`AccessoryTransportAppExtension`](https://developer.apple.com/documentation/AccessoryTransportExtension/AccessoryTransportAppExtension) for transmission to the accessory.
+Send the curated data to your accessory using the session’s [`send(message:)`](notificationsforwarding/accessorynotificationssession/send(message:).md) method. The system encrypts the data using keys established through your app’s [`AccessoryTransportSecurity`](https://developer.apple.com/documentation/accessorytransportextension/accessorytransportsecurity) extension, then delivers the encrypted data to your app’s [`AccessoryTransportAppExtension`](https://developer.apple.com/documentation/accessorytransportextension/accessorytransportappextension) for transmission to the accessory.
 
 Your handler’s [`addNotification(_:alertingContext:)`](notificationsforwarding/accessorynotificationshandler/addnotification(_:alertingcontext:).md) method returns a Boolean value that indicates whether your accessory alerted for the notification. Return `true` if the accessory successfully alerts the person. The system considers that information to coordinate alerting across multiple devices.
 
@@ -42,7 +41,7 @@ Your accessory can send information back to the companion app, such as notificat
 ## Topics
 
 ### Essentials
-- [Receiving iOS notifications on an accessory](../AccessoryTransportExtension/receiving-ios-notifications-on-an-accessory.md)
+- [Receiving iOS notifications on an accessory](../accessorytransportextension/receiving-ios-notifications-on-an-accessory.md)
   Create custom app extensions that manage iOS system notifications for your accessory.
 ### Authorization
 - [class AccessoryNotificationCenter](accessorynotificationcenter.md)

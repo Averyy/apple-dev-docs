@@ -20,7 +20,7 @@ var preferredPlayerViewFrame: CGRect { get }
 
 #### Discussion
 
-This value defaults to a rectangle that represents the entire screen bounds, but custom view controllers may return a smaller rectangle, or [`zero`](https://developer.apple.com/documentation/CoreFoundation/CGRect/zero) to hide the player view completely. If you return a rectangle smaller that the full-screen bounds, the player view animates its frame to its new size and position.
+This value defaults to a rectangle that represents the entire screen bounds, but custom view controllers may return a smaller rectangle, or [`zero`](https://developer.apple.com/documentation/corefoundation/cgrect/zero) to hide the player view completely. If you return a rectangle smaller that the full-screen bounds, the player view animates its frame to its new size and position.
 
 ## See Also
 

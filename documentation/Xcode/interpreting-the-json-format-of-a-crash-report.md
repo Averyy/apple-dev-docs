@@ -50,8 +50,8 @@ The IPS metadata object contains the following properties:
 | --- | --- | --- |
 | `name` | String | The name of the process the report applies to. Usually the process executable name. |
 | `bug_type` | String | The identifier for the type of log captured by the report. Type `309` for the crash reports this article describes. You might encounter other types. Type `288`, for instance, is a stackshot. |
-| `bundleID` | String | The bundle identifier of the process the report applies to; see [`CFBundleIdentifier`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/CFBundleIdentifier). |
-| `build_version` | String | The bundle version string of the process the report applies to; see [`CFBundleVersion`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/CFBundleVersion). |
+| `bundleID` | String | The bundle identifier of the process the report applies to; see [`CFBundleIdentifier`](https://developer.apple.com/documentation/bundleresources/information-property-list/cfbundleidentifier). |
+| `build_version` | String | The bundle version string of the process the report applies to; see [`CFBundleVersion`](https://developer.apple.com/documentation/bundleresources/information-property-list/cfbundleversion). |
 | `incident_id` | String | A unique identifier for the report. Two reports never share the same identifier. |
 | `platform` | Number | A number identifying the platform the process was running on. For the meaning of these values, see [`Platforms`](interpreting-the-json-format-of-a-crash-report#Platforms.md). |
 | `timestamp` | String | A date and time the log system generates for report tracking. Use the `procLaunch` and `captureTime` properties from the crash report object to determine launch and termination time for the process. |
@@ -127,8 +127,8 @@ A report includes bundle information in an object with the following properties:
 | Key | Type | Description |
 | --- | --- | --- |
 | `CFBundleIdentifier` | String | The bundle identifier for the process that crashed. Appears in a translated report under Identifier. |
-| `CFBundleShortVersionString` | String | The bundle version string (short) for the process that crashed; see [`CFBundleShortVersionString`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/CFBundleShortVersionString). Appears in a translated report under Version. |
-| `CFBundleVersion` | String | The bundle version for the process that crashed; see [`CFBundleVersion`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/CFBundleVersion). Appears in a translated report under Version. |
+| `CFBundleShortVersionString` | String | The bundle version string (short) for the process that crashed; see [`CFBundleShortVersionString`](https://developer.apple.com/documentation/bundleresources/information-property-list/cfbundleshortversionstring). Appears in a translated report under Version. |
+| `CFBundleVersion` | String | The bundle version for the process that crashed; see [`CFBundleVersion`](https://developer.apple.com/documentation/bundleresources/information-property-list/cfbundleversion). Appears in a translated report under Version. |
 
 ##### Store Info
 

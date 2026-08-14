@@ -23,7 +23,7 @@ You should only invoke this method when there is a current graphics context.
 ## Parameters
 
 - `rect`: The rectangle specifies the rendering origin in the current graphics context.
-- `options`: The string drawing options. See [`NSStringDrawingOptions`](https://developer.apple.com/documentation/UIKit/NSStringDrawingOptions) for the available options.
+- `options`: The string drawing options. See [`NSStringDrawingOptions`](https://developer.apple.com/documentation/uikit/nsstringdrawingoptions) for the available options.
 
 ## See Also
 

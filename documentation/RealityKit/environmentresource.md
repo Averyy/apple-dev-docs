@@ -24,7 +24,7 @@ An environmental resource that contains background and lighting information for 
 
 RealityKit supports image-based lighting that enables realistic reflections on your scene’s 3D content. You can define the look of your scene’s background by supplying an environment resource image that determines the general color of the room, and the location of any spotlights or shadowed areas within the reflection. RealityKit applies the image’s characteristics to your scene’s reflective content.
 
-![Two screenshots depicting the process of applying an environment resource image to a reflective surface in a RealityKit scene. The first screenshot defines the](https://docs-assets.developer.apple.com/published/1b295efdb644c044538354288c31d568/EnvironmentResource~dark%402x.png)
+![Two screenshots depicting the process of applying an environment resource image to a reflective surface in a RealityKit scene. The first screenshot defines the](/images/com.apple.RealityKit/EnvironmentResource~dark@2x.png)
 
 RealityKit checks a bundle for an environment resource by the filename you supply to one of the load functions.
 
@@ -90,8 +90,8 @@ RealityKit supports the same input formats as Image I/O, such as `.png` and `.jp
 
 ### Conforms To
 - [Resource](resource.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

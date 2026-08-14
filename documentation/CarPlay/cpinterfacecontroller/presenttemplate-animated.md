@@ -25,7 +25,7 @@ You can present only one template at a time.
 - `templateToPresent`: A template to display over currently displayed content on the CarPlay screen. The template must be one of the following types: - [`CPActionSheetTemplate`](cpactionsheettemplate.md)
 - [`CPAlertTemplate`](cpalerttemplate.md)
 - [`CPVoiceControlTemplate`](cpvoicecontroltemplate.md)
-- `animated`: A Boolean value that indicates whether the system animates the display of transitioning templates. Set to [`true`](https://developer.apple.com/documentation/Swift/true) to animate the transition.
+- `animated`: A Boolean value that indicates whether the system animates the display of transitioning templates. Set to [`true`](https://developer.apple.com/documentation/swift/true) to animate the transition.
 
 ## See Also
 

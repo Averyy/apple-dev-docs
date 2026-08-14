@@ -25,7 +25,7 @@ A printer may have associated with it a list of preset settings. Each setting is
 ## Parameters
 
 - `printer`: The printer whose presets you want to obtain.
-- `presetList`: A pointer to your   variable. On return, the variable refers to a Core Foundation array containing the presets for the specified printer. Each element in the array is an object of type  . You are responsible for releasing the array.
+- `presetList`: A pointer to your [`CFArray`](https://developer.apple.com/documentation/corefoundation/cfarray) variable. On return, the variable refers to a Core Foundation array containing the presets for the specified printer. Each element in the array is an object of type [`PMPreset`](pmpreset.md). You are responsible for releasing the array.
 
 ## See Also
 

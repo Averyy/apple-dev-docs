@@ -10,7 +10,7 @@ With Tap to Share, merchants can use an iPhone to connect to a customer’s iPho
 
 > ❗ **Important**: Tap to Share is supported on iPhone 12 and later. Your app needs a Tap to Pay on iPhone entitlement and the ability to open a session by [`Adding support for Tap to Pay on iPhone to your app`](adding-support-for-tap-to-pay-on-iphone-to-your-app.md), or retrieve and use a [`PaymentCardReader.Token`](paymentcardreader/token.md) to initialize a [`CustomerEngagementSession`](customerengagementsession.md) and connect to a customer’s device. For more information on the Tap to Pay on iPhone entitlement, see [`Setting up Tap to Pay on iPhone`](setting-up-the-entitlement-for-tap-to-pay-on-iphone.md) and the Building support for your app section in [`Tap to Pay on iPhone`](https://developer.apple.comhttps://developer.apple.com/tap-to-pay/).
 
-Before you get started, you need to add the Tap to Share capability to your project in Xcode, see [`Adding capabilities to your app`](https://developer.apple.com/documentation/Xcode/adding-capabilities-to-your-app).
+Before you get started, you need to add the Tap to Share capability to your project in Xcode, see [`Adding capabilities to your app`](https://developer.apple.com/documentation/xcode/adding-capabilities-to-your-app).
 
 #### Create a Session and Connect to a Customers Device
 

@@ -27,7 +27,7 @@ The default value of this property is [`linear`](calayercontentsfilter/linear.md
 
 [`Figure 1`](calayer/1410907-magnificationfilter#2851435.md) shows the difference between linear and nearest filtering when a 10 x 10 point image of a circle is magnified by a scale of 10.
 
-![Circle with different magnification filters](https://docs-assets.developer.apple.com/published/c00f9e57718120dafa9ff73959f5b0df/media-2851435%402x.png)
+![Circle with different magnification filters](/images/com.apple.quartzcore/media-2851435@2x.png)
 
 The circle on the left uses [`linear`](calayercontentsfilter/linear.md) and the circle on the right uses [`nearest`](calayercontentsfilter/nearest.md).
 

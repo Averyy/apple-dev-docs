@@ -24,7 +24,7 @@ The UTI for the item.
 
 #### Discussion
 
-Providing the UTI allows services to handle specific data types in appropriate ways, such as an email service formatting an image to display in-line. If you provide items as [`NSData`](https://developer.apple.com/documentation/Foundation/NSData) objects, implement this method to allow those services to better handle your data.
+Providing the UTI allows services to handle specific data types in appropriate ways, such as an email service formatting an image to display in-line. If you provide items as [`NSData`](https://developer.apple.com/documentation/foundation/nsdata) objects, implement this method to allow those services to better handle your data.
 
 To ensure that Mail can handle an attachment that uses your exported UTI, include the [`UTExportedTypeDeclarations`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CocoaKeys.html#//apple_ref/doc/plist/info/UTExportedTypeDeclarations) key in your app’s `Info.plist` file, describing the UTI and providing the MIME type for it. The following example shows how `public.jpeg` might be defined as an exported type (only the required keys are shown):
 

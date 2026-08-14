@@ -13,7 +13,7 @@ Integrate onscreen touch controls into your Metal-based games.
 
 #### Overview
 
-Use Touch Controller to add custom and interactive touch controls for your games. The framework offers a suite of controls that enable support for a variety of control schemes, like buttons, directional pads, thumbsticks, throttle controls, and touchpads. The Game Controller framework supports each control and surfaces them through a [`GCController`](https://developer.apple.com/documentation/GameController/GCController) instance.
+Use Touch Controller to add custom and interactive touch controls for your games. The framework offers a suite of controls that enable support for a variety of control schemes, like buttons, directional pads, thumbsticks, throttle controls, and touchpads. The Game Controller framework supports each control and surfaces them through a [`GCController`](https://developer.apple.com/documentation/gamecontroller/gccontroller) instance.
 
 Use the [`TCTouchController`](tctouchcontroller.md) class as the central point to manage and render your touch controls. To configure the appearance of your controls, use [`TCControlContents`](tccontrolcontents.md) and [`TCControlImage`](tccontrolimage.md). Use [`TCControlContents`](tccontrolcontents.md) to create a consistent look and feel with system-provided assets.
 

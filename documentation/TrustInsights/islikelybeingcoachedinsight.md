@@ -41,8 +41,8 @@ It could be useful to consider this in operations where it’s possible that som
 ## Relationships
 
 ### Conforms To
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 - [TrustInsight](trustinsight.md)
 
 

@@ -16,7 +16,7 @@ func setHelpAnchor(_ anchor: String!)
 
 #### Discussion
 
-You may call this function to set a help anchor string if you display a help button in the sheet or modal panel and do not implement the delegate method [`certificatePanelShowHelp(_:)`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class/certificatePanelShowHelp(_:)), or if the delegate method returns [`false`](https://developer.apple.com/documentation/Swift/false). If you display a help button, do not set a help anchor string, and do not implement a delegate, the certificate panel displays a default help page (“What is a digital identity?”).
+You may call this function to set a help anchor string if you display a help button in the sheet or modal panel and do not implement the delegate method [`certificatePanelShowHelp(_:)`](https://developer.apple.com/documentation/objectivec/nsobject-swift.class/certificatepanelshowhelp(_:)), or if the delegate method returns [`false`](https://developer.apple.com/documentation/swift/false). If you display a help button, do not set a help anchor string, and do not implement a delegate, the certificate panel displays a default help page (“What is a digital identity?”).
 
 ## Parameters
 
@@ -24,7 +24,7 @@ You may call this function to set a help anchor string if you display a help but
 
 ## See Also
 
-- [func chooseIdentityPanelShowHelp(SFChooseIdentityPanel!) -> Bool](../ObjectiveC/NSObject-swift.class/chooseIdentityPanelShowHelp(_:).md)
+- [func chooseIdentityPanelShowHelp(SFChooseIdentityPanel!) -> Bool](../objectivec/nsobject-swift.class/chooseidentitypanelshowhelp(_:).md)
   Implements custom help behavior for the modal panel.
 - [func setShowsHelp(Bool)](sfchooseidentitypanel/setshowshelp(_:).md)
   Displays a Help button in the sheet or panel.

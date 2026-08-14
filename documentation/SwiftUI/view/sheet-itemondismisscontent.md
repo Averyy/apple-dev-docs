@@ -63,7 +63,7 @@ struct InventoryItem: Identifiable {
 }
 ```
 
-![A view showing a custom structure acting as a data source, providing](https://docs-assets.developer.apple.com/published/2f9f883defdfa231ffad431bac2df110/SwiftUI-View-SheetItemContent%402x.png)
+![A view showing a custom structure acting as a data source, providing](/images/com.apple.SwiftUI/SwiftUI-View-SheetItemContent@2x.png)
 
 In vertically compact environments, such as iPhone in landscape orientation, a sheet presentation automatically adapts to appear as a full-screen cover. Use the [`presentationCompactAdaptation(_:)`](view/presentationcompactadaptation(_:).md) or [`presentationCompactAdaptation(horizontal:vertical:)`](view/presentationcompactadaptation(horizontal:vertical:).md) modifier to override this behavior.
 

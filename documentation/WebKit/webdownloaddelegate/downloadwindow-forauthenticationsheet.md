@@ -16,7 +16,7 @@ optional func downloadWindow(forAuthenticationSheet download: WebDownload!) -> N
 
 #### Return Value
 
-An [`NSWindow`](https://developer.apple.com/documentation/AppKit/NSWindow) object into which the `WebDownload` object should draw its authentication sheet.
+An [`NSWindow`](https://developer.apple.com/documentation/appkit/nswindow) object into which the `WebDownload` object should draw its authentication sheet.
 
 #### Discussion
 

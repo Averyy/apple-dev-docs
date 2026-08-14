@@ -8,7 +8,7 @@ Understand the Apple Haptic and Audio Pattern (AHAP) file format.
 
 AHAP is a JSON-like file format that specifies a haptic pattern through key-value pairs, analogous to a dictionary literal, except in a text file. You add an AHAP file to your Xcode project bundle like any other file resource, such as an audio file or an image.
 
-![A diagram showing n’t structure of an AHAP file representing a haptic pattern.](https://docs-assets.developer.apple.com/published/ef5e2bacc8ae9eda11fc8d34ce578651/media-3261350%402x.png)
+![A diagram showing n’t structure of an AHAP file representing a haptic pattern.](/images/com.apple.corehaptics/media-3261350@2x.png)
 
 An AHAP file doesn’t need an entry for every key. When Core Haptics loads an AHAP file, it sets missing entries to their default value and clamps out-of-range values to their minimum or maximum values, whichever is closer. The framework ignores unsupported keys. Indentation of nested levels is also not required; you don’t need to indent the various subdictionaries, but doing so helps you visually distinguish the levels. You can create these files in Xcode or another text editor, like TextEdit. For several example AHAP files and guidance for playing them, see [`Playing a Custom Haptic Pattern from a File`](playing-a-custom-haptic-pattern-from-a-file.md).
 
@@ -46,7 +46,7 @@ Each pattern can have several events, which can overlap. For example, an AHAP fi
 
 `EventWaveformPath` is specific to audio events. When your app designates an audio file to play alongside a haptic, use an audio event with a waveform path and audio-specific properties:
 
-![A diagram showing the structure of an audio event in an AHAP file.](https://docs-assets.developer.apple.com/published/47226d969747c0a2fa290b94a3402417/media-3558816%402x.png)
+![A diagram showing the structure of an audio event in an AHAP file.](/images/com.apple.corehaptics/media-3558816@2x.png)
 
 ##### Define an Event Parameter
 

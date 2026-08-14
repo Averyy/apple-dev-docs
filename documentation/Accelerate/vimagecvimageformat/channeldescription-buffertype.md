@@ -28,7 +28,7 @@ A [`vImageChannelDescription`](vimagechanneldescription.md) structure that descr
 
 Use this function to return the [`vImageChannelDescription`](vimagechanneldescription.md) description for a specified channel in a Core Video format.
 
-For example, the following code prints the description of each channel in a [`kCVPixelFormatType_420YpCbCr8Planar`](https://developer.apple.com/documentation/CoreVideo/kCVPixelFormatType_420YpCbCr8Planar) Core Video image format:
+For example, the following code prints the description of each channel in a [`kCVPixelFormatType_420YpCbCr8Planar`](https://developer.apple.com/documentation/corevideo/kcvpixelformattype_420ypcbcr8planar) Core Video image format:
 
 ```swift
 let cvImageFormat = vImageCVImageFormat.make(

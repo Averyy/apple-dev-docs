@@ -22,7 +22,7 @@ let kCGImagePropertyHEICSDelayTime: CFString
 
 #### Discussion
 
-The value of this key is a [`CFNumber`](https://developer.apple.com/documentation/CoreFoundation/CFNumber) with a floating-point value. The value of this key is never less than 100 millseconds, and the system adjusts values less than that amount to 100 milliseconds, as needed. See [`kCGImagePropertyHEICSUnclampedDelayTime`](kcgimagepropertyheicsunclampeddelaytime.md).
+The value of this key is a [`CFNumber`](https://developer.apple.com/documentation/corefoundation/cfnumber) with a floating-point value. The value of this key is never less than 100 millseconds, and the system adjusts values less than that amount to 100 milliseconds, as needed. See [`kCGImagePropertyHEICSUnclampedDelayTime`](kcgimagepropertyheicsunclampeddelaytime.md).
 
 ## See Also
 

@@ -19,11 +19,11 @@ optional func canPaste(_ itemProviders: [NSItemProvider]) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/Swift/true) if the responder object can perform a paste operation using specified item providers; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
+[`true`](https://developer.apple.com/documentation/swift/true) if the responder object can perform a paste operation using specified item providers; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
 
 ## Parameters
 
-- `itemProviders`: An array of [`NSItemProvider`](https://developer.apple.com/documentation/Foundation/NSItemProvider) objects.
+- `itemProviders`: An array of [`NSItemProvider`](https://developer.apple.com/documentation/foundation/nsitemprovider) objects.
 
 ## See Also
 

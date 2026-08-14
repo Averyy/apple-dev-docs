@@ -14,7 +14,7 @@ Give users a familiar experience when they manage HomeKit accessories.
 
 This sample presents a simplified version of the kind of app a HomeKit-enabled accessory manufacturer might provide. You use the app to configure and control a specific device—a garage door opener from a fictional manufacturer, Kilgo Devices. The app offers access to secondary and custom characteristics that Apple’s Home app doesn’t expose. It provides a user experience that’s consistent with the Home app’s approach and terminology, but doesn’t attempt to replicate every feature of the Home app.
 
-![High level diagram of an iOS device controlling a garage door opener.](https://docs-assets.developer.apple.com/published/b016fb7beedcb68ed3df5ff2fcb6cd86/GarageControl.png)
+![High level diagram of an iOS device controlling a garage door opener.](/images/com.apple.homekit/GarageControl.png)
 
 For more information about user interface considerations for HomeKit-enabled apps, see the [`HomeKit`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/homekit/overview/introduction/) section of the [`Human Interface Guidelines`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/).
 

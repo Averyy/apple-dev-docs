@@ -28,7 +28,7 @@ static let top: VerticalAlignment
 
 Use this guide to align the top edges of views:
 
-![A box that contains the word, Top. A horizontal](https://docs-assets.developer.apple.com/published/3dc36d23d9c2d6c1e864ab77287943ba/VerticalAlignment-top-1-iOS%402x.png)
+![A box that contains the word, Top. A horizontal](/images/com.apple.SwiftUI/VerticalAlignment-top-1-iOS@2x.png)
 
 The following code generates the image above using an [`HStack`](hstack.md):
 

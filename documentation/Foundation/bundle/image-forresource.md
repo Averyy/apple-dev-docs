@@ -24,7 +24,7 @@ This method accommodates Apple’s naming conventions for high-resolution versio
 
 Images requested using this method whose name ends in the word `Template` are automatically marked as template images.
 
-This method does not look up images based on [`setName(_:)`](https://developer.apple.com/documentation/AppKit/NSImage/setName(_:)) or get named system images. Use [`init(named:)`](https://developer.apple.com/documentation/AppKit/NSImage/init(named:)) for that purpose.
+This method does not look up images based on [`setName(_:)`](https://developer.apple.com/documentation/appkit/nsimage/setname(_:)) or get named system images. Use [`init(named:)`](https://developer.apple.com/documentation/appkit/nsimage/init(named:)) for that purpose.
 
 This method does not cache its search results.
 
@@ -34,7 +34,7 @@ This method does not cache its search results.
 
 ## See Also
 
-- [init?(named: NSImage.Name)](../AppKit/NSImage/init(named:).md)
+- [init?(named: NSImage.Name)](../appkit/nsimage/init(named:).md)
   Returns the image object associated with the specified name.
 - [func urlForImageResource(NSImage.Name) -> URL?](bundle/urlforimageresource(_:).md)
   Returns the location of the specified image resource as an NSURL.

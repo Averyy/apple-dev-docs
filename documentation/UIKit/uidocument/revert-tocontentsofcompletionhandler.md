@@ -19,12 +19,12 @@ func revert(toContentsOf url: URL) async -> Bool
 
 #### Discussion
 
-You call this method to discard all unsaved document modifications and replace the document’s contents by reading the file or file package located by `url`. The default implementation brackets the reversion operation between [`disableEditing()`](uidocument/disableediting().md) and [`enableEditing()`](uidocument/enableediting().md)because the document shouldn’t accept user changes during this period. Subclasses that override this method must call the superclass implementation (`super`) or use the [`NSFileCoordinator`](https://developer.apple.com/documentation/Foundation/NSFileCoordinator) class to initiate a coordinated read.
+You call this method to discard all unsaved document modifications and replace the document’s contents by reading the file or file package located by `url`. The default implementation brackets the reversion operation between [`disableEditing()`](uidocument/disableediting().md) and [`enableEditing()`](uidocument/enableediting().md)because the document shouldn’t accept user changes during this period. Subclasses that override this method must call the superclass implementation (`super`) or use the [`NSFileCoordinator`](https://developer.apple.com/documentation/foundation/nsfilecoordinator) class to initiate a coordinated read.
 
 ## Parameters
 
 - `url`: A file URL locating the most recent version of the document file in the application’s sandbox.
-- `completionHandler`: A block with code to execute after the reversion operation concludes. The block returns no value and has one parameter: - **`success`**: [`true`](https://developer.apple.com/documentation/Swift/true) if the reversion operation succeeds, otherwise [`false`](https://developer.apple.com/documentation/Swift/false). The block is invoked on the main queue.
+- `completionHandler`: A block with code to execute after the reversion operation concludes. The block returns no value and has one parameter: - **`success`**: [`true`](https://developer.apple.com/documentation/swift/true) if the reversion operation succeeds, otherwise [`false`](https://developer.apple.com/documentation/swift/false). The block is invoked on the main queue.
 
 
 ---

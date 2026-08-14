@@ -12,7 +12,7 @@ Creating and managing default and advanced App Clip experiences using the [`App 
 - Advanced App Clip experiences
 - App Clip experiences for testers
 
-If you’re new to creating an App Clip, see [`App Clips`](https://developer.apple.com/documentation/AppClip) and [`Human Interface Guidelines > App Clips`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/app-clips/overview/introduction/). For more information about creating App Clip experiences, see [`Configuring App Clip experiences`](https://developer.apple.com/documentation/AppClip/configuring-the-launch-experience-of-your-app-clip).
+If you’re new to creating an App Clip, see [`App Clips`](https://developer.apple.com/documentation/appclip) and [`Human Interface Guidelines > App Clips`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/app-clips/overview/introduction/). For more information about creating App Clip experiences, see [`Configuring App Clip experiences`](https://developer.apple.com/documentation/appclip/configuring-the-launch-experience-of-your-app-clip).
 
 ##### Review App Store Connect Api Usage
 

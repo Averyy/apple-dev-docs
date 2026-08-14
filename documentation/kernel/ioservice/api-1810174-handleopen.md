@@ -25,7 +25,7 @@ IOService calls this method in its subclasses in response to the open method, so
 ## Parameters
 
 - `forClient`: Designates the client of the provider requesting the open.
-- `options`: Options for the open, may be interpreted by the implementor of  .
+- `options`: Options for the open, may be interpreted by the implementor of `handleOpen`.
 
 ## See Also
 

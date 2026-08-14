@@ -20,7 +20,7 @@ var transform3D: CATransform3D { get set }
 
 #### Discussion
 
-The default value of this property is [`CATransform3DIdentity`](https://developer.apple.com/documentation/QuartzCore/CATransform3DIdentity).
+The default value of this property is [`CATransform3DIdentity`](https://developer.apple.com/documentation/quartzcore/catransform3didentity).
 
 ## See Also
 

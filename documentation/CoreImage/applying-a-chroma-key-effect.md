@@ -8,7 +8,7 @@ Replace a color in one image with the background from another.
 
 Use the chroma key effect, also known as bluescreening or greenscreening, to replace the background of an image by setting a color or range of colors to transparent.
 
-![The chroma key effect replaces the greenscreen background behind a paper airplane foreground with the image of a beach landscape to show paper airplane flying on a beach.](https://docs-assets.developer.apple.com/published/ee2cd0ca15bb37c38fd2cefeadfe0e8f/media-2952813%402x.png)
+![The chroma key effect replaces the greenscreen background behind a paper airplane foreground with the image of a beach landscape to show paper airplane flying on a beach.](/images/com.apple.coreimage/media-2952813@2x.png)
 
 You apply this technique in three steps:
 
@@ -22,7 +22,7 @@ A color cube is a 3D color-lookup table that uses the R, G, and B values from th
 
 A simple way to construct a color map with these characteristics is to model colors using an HSV (hue-saturation-value) representation. HSV represents hue as an angle around the central axis, as in a color wheel. In order to make a chroma key color from the source image transparent, set its lookup table value to `0` when its hue is in the correct color range.
 
-![A hue color wheel highlighting hues between 108° and 144° to show the slice of green to filter out of the source image](https://docs-assets.developer.apple.com/published/b82a5bcd6674c74bc2bec48ead92139a/media-2952814%402x.png)
+![A hue color wheel highlighting hues between 108° and 144° to show the slice of green to filter out of the source image](/images/com.apple.coreimage/media-2952814@2x.png)
 
 The value for green in the source image falls within the slice beginning at 108° (`108/360` = `0.3`) and ending at 144° (`144/360` = `0.4`). You’ll set transparency to `0` for this range in the color cube.
 
@@ -72,7 +72,7 @@ To create the color cube, iterate across all values of red, green, and blue, ent
 4. The [`colorCube()`](cifilter-swift.class/colorcube().md) filter requires premultiplied alpha values, meaning that the values in the lookup table have their transparency baked into their stored entries rather than applied when accessed.
 5. Create a [`colorCube()`](cifilter-swift.class/colorcube().md) filter with the cube data.
 
-> **Note**:  The framework doesn’t have built-in direct conversion between color spaces, but you can access the hue of a [`UIColor`](https://developer.apple.com/documentation/UIKit/UIColor) created with RGB values. Create a [`UIColor`](https://developer.apple.com/documentation/UIKit/UIColor) from the raw RGB values and then read the hue from it.
+> **Note**:  The framework doesn’t have built-in direct conversion between color spaces, but you can access the hue of a [`UIColor`](https://developer.apple.com/documentation/uikit/uicolor) created with RGB values. Create a [`UIColor`](https://developer.apple.com/documentation/uikit/uicolor) from the raw RGB values and then read the hue from it.
 
 ```swift
 - (CGFloat) hueFromRed:(CGFloat)red green:(CGFloat)green blue:(CGFloat)blue {

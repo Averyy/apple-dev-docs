@@ -25,7 +25,7 @@ When you create a new Swift package with Xcode, check “Create Git repository o
 
 If you already have a local package that’s not using version control, put it under version control using Xcode. Open your Swift package, choose Integrate > New Git Repository, check the checkbox next to your package, and click Create. This initializes a Git repository, adds your package to the staging area, and commits your files.
 
-![Screenshot showing the dialogue when following the directions to put a standalone Swift package under version control.](https://docs-assets.developer.apple.com/published/25cc750fddc0390c43fdc6672b5edd58/publishing-a-swift-package-with-xcode-1%402x.png)
+![Screenshot showing the dialogue when following the directions to put a standalone Swift package under version control.](/images/com.apple.Xcode/publishing-a-swift-package-with-xcode-1@2x.png)
 
 ##### Tag Your Latest Commit
 

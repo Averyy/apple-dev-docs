@@ -17,7 +17,7 @@ kern_return_t Enqueue(uint32_t dataSize, IODataQueueClientEnqueueEntryBlock call
 
 #### Return_value
 
-[`kIOReturnSuccess`](https://developer.apple.com/documentation/driverkit/kioreturnsuccess) on success, [`kIOReturnOverrun`](https://developer.apple.com/documentation/driverkit/kioreturnoverrun) if the queue was full, or [`kIOReturnError`](https://developer.apple.com/documentation/driverkit/kioreturnerror) if the queue is corrupt. See `Error Codes`. 
+[`kIOReturnSuccess`](https://developer.apple.com/documentation/driverkit/kioreturnsuccess) on success, [`kIOReturnOverrun`](https://developer.apple.com/documentation/driverkit/kioreturnoverrun) if the queue was full, or [`kIOReturnError`](https://developer.apple.com/documentation/driverkit/kioreturnerror) if the queue is corrupt. See [`Error Codes`](https://developer.apple.com/documentation/driverkit/error-codes). 
 
 ## Parameters
 
@@ -29,13 +29,13 @@ kern_return_t Enqueue(uint32_t dataSize, IODataQueueClientEnqueueEntryBlock call
 - [- SetDataServicedHandler](../driverkit/iodataqueuedispatchsource/setdataservicedhandler.md)
   Installs the handler block to execute when data is removed from the queue.
 - [- DataServiced](../driverkit/iodataqueuedispatchsource/dataserviced.md)
-  Responds to the removal of data from the queue.
-- [IODataQueueClientEnqueueEntryBlock](../driverkit/iodataqueueclientenqueueentryblock.md)
-  The handler block you use to add data to a queue.
+  Responds to the removal of data from the queue.  
 - [- EnqueueWithCoalesce](iodataqueuedispatchsource/3438181-enqueuewithcoalesce.md)
   Adds an entry to the queue, but doesn't automatically send a data-available notification.
 - [- SendDataAvailable](iodataqueuedispatchsource/3438184-senddataavailable.md)
   Sends a notification to observers that indicates more data is available for processing.
+- [IODataQueueClientEnqueueEntryBlock](../driverkit/iodataqueueclientenqueueentryblock.md)
+  The handler block you use to add data to a queue. 
 
 
 ---

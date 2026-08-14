@@ -38,7 +38,7 @@ Use this scope to access translation attributes when working with [`AttributedSt
 - [AttributeScope](attributescope.md)
 - [DecodingConfigurationProviding](decodingconfigurationproviding.md)
 - [EncodingConfigurationProviding](encodingconfigurationproviding.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

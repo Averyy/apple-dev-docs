@@ -10,25 +10,25 @@ Miscellaneous icons that don’t fall into a specific category.
 
 The resource name for the closed captioning icon is cc. Place a closed captioning icon to indicate that the media item is able to display text on the screen. Place a closed captioning icon using `<img src="resource://cc" />`.
 
-![The letters C C, inside a black rectangle with rounded corners.](https://docs-assets.developer.apple.com/published/2222dc6b08f6bbab93b605c33313f5ea/miscellaneous-icons-1%402x.png)
+![The letters C C, inside a black rectangle with rounded corners.](/images/com.apple.TVML/miscellaneous-icons-1@2x.png)
 
 ##### High Definition
 
 The resource name for the high definition icon is hd. Place a high definition icon next to media items that provide high definition video streams. Place a high definition icon using `<img src="resource://hd />`.
 
-![The letters H D, inside a black rectangle with rounded corners.](https://docs-assets.developer.apple.com/published/b21efc46f52f19476cb56e3039565b65/miscellaneous-icons-2%402x.png)
+![The letters H D, inside a black rectangle with rounded corners.](/images/com.apple.TVML/miscellaneous-icons-2@2x.png)
 
 ##### List Chevron
 
 The resource name for a list chevron icon is list-chevron. Place a list chevron icon to indicate that the item next to the chevron is playing or selectable. Place a list chevron icon using `<img src="resource://list-chevron" />`.
 
-![A black chevron pointing to the right.](https://docs-assets.developer.apple.com/published/e67ef02ea2606cc729cbb1ec47133e40/miscellaneous-icons-3%402x.png)
+![A black chevron pointing to the right.](/images/com.apple.TVML/miscellaneous-icons-3@2x.png)
 
 ##### Overlay Checkmark
 
 The resource name for the overlay checkmark icon is overlay-checkmark. Place an overlay checkmark on top of other images to indicate that the user has selected the item. Place an overlay checkmark icon using `<img src="resource://overlay-checkmark" />`.
 
-![A gray checkmark inside a small, white circle. The circle is inside a gray, right-angle triangle.](https://docs-assets.developer.apple.com/published/35b8a74b0348d49ed14a62413e37d8ad/miscellaneous-icons-4%402x.png)
+![A gray checkmark inside a small, white circle. The circle is inside a gray, right-angle triangle.](/images/com.apple.TVML/miscellaneous-icons-4@2x.png)
 
 ## See Also
 

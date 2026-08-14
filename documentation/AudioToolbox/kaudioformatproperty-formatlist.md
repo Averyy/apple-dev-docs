@@ -21,7 +21,7 @@ var kAudioFormatProperty_FormatList: AudioFormatPropertyID { get }
 
 #### Discussion
 
-A list of [`AudioFormatListItem`](https://developer.apple.com/documentation/CoreAudioTypes/AudioFormatListItem) structures describing the audio formats contained within the compressed bit stream, as described by the magic cookie. Set the `inSpecifier` parameter to an [`AudioFormatInfo`](audioformatinfo.md) structure.
+A list of [`AudioFormatListItem`](https://developer.apple.com/documentation/coreaudiotypes/audioformatlistitem) structures describing the audio formats contained within the compressed bit stream, as described by the magic cookie. Set the `inSpecifier` parameter to an [`AudioFormatInfo`](audioformatinfo.md) structure.
 
 #### Discussion
 

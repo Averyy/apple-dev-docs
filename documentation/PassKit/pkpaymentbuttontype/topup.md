@@ -23,7 +23,7 @@ case topUp
 
 This button looks like:
 
-![A button with the text “Top Up with” and the Apple Pay logo.](https://docs-assets.developer.apple.com/published/b72dab2098d8e9931f18d896f3ff8d9b/media-3667470%402x.png)
+![A button with the text “Top Up with” and the Apple Pay logo.](/images/com.apple.passkit/media-3667470@2x.png)
 
 For design guidance, see [`Human Interface Guidelines > Apple Pay > Buttons and Marks`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/apple-pay/overview/buttons-and-marks/).
 

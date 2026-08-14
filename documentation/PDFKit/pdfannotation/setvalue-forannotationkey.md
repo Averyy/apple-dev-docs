@@ -21,11 +21,11 @@ func setValue(_ value: Any, forAnnotationKey key: PDFAnnotationKey) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/Swift/true) if the value sets successfully; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
+[`true`](https://developer.apple.com/documentation/swift/true) if the value sets successfully; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
 
 #### Discussion
 
-Some keys expect a complex type. For example, the [`color`](pdfannotationkey/color.md) key expects an array of zero, one, two, three, or four elements, where each element is a floating-point number from `0.0` to `1.0`. As a convenience, this key accepts an [`NSColor`](https://developer.apple.com/documentation/AppKit/NSColor) or [`UIColor`](https://developer.apple.com/documentation/UIKit/UIColor) value. For details about other conveniences, see the individual [`PDFAnnotationKey`](pdfannotationkey.md) properties or the `PDFAnnotationUtilities.h` header file.
+Some keys expect a complex type. For example, the [`color`](pdfannotationkey/color.md) key expects an array of zero, one, two, three, or four elements, where each element is a floating-point number from `0.0` to `1.0`. As a convenience, this key accepts an [`NSColor`](https://developer.apple.com/documentation/appkit/nscolor) or [`UIColor`](https://developer.apple.com/documentation/uikit/uicolor) value. For details about other conveniences, see the individual [`PDFAnnotationKey`](pdfannotationkey.md) properties or the `PDFAnnotationUtilities.h` header file.
 
 > 💡 **Tip**:  Set the `PDFKIT_LOG_ANNOTATIONS` environment variable to log key-value assignment failure details.
 

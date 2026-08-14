@@ -16,7 +16,7 @@ struct MEError
 
 #### Overview
 
-If a [`MediaExtension`](MediaExtension.md) method fails, the [`NSError`](https://developer.apple.com/documentation/Foundation/NSError) object contains an [`MEError`](meerror-swift.struct.md) instance that provides specific information about the failure.
+If a [`MediaExtension`](MediaExtension.md) method fails, the [`NSError`](https://developer.apple.com/documentation/foundation/nserror) object contains an [`MEError`](meerror-swift.struct.md) instance that provides specific information about the failure.
 
 ## Topics
 
@@ -46,21 +46,21 @@ If a [`MediaExtension`](MediaExtension.md) method fails, the [`NSError`](https:/
 - [static var unsupportedFeature: MEError.Code](meerror-swift.struct/unsupportedfeature.md)
   An error code that indicates the extension doesn’t support an aspect of the media.
 ### Inspecting an error
-- [var code: Int](../Foundation/NSError/code.md)
+- [var code: Int](../foundation/nserror/code.md)
   The error code.
-- [var errorCode: Int](../Foundation/CustomNSError/errorCode.md)
+- [var errorCode: Int](../foundation/customnserror/errorcode.md)
   The error code within the given domain.
-- [var errorUserInfo: [String : Any]](../Foundation/CustomNSError/errorUserInfo.md)
+- [var errorUserInfo: [String : Any]](../foundation/customnserror/erroruserinfo.md)
   The user-info dictionary.
-- [var hashValue: Int](../Swift/Hashable/hashValue.md)
+- [var hashValue: Int](../swift/hashable/hashvalue.md)
   The hash value.
-- [var userInfo: [String : Any]](../Foundation/NSError/userInfo.md)
+- [var userInfo: [String : Any]](../foundation/nserror/userinfo.md)
   The user info dictionary.
-- [static func == (borrowing Self, borrowing Self) -> Bool](../Swift/Equatable/==(_:_:).md)
+- [static func == (borrowing Self, borrowing Self) -> Bool](../swift/equatable/==(_:_:).md)
   Returns a Boolean value indicating whether two values are equal.
-- [static func != (borrowing Self, borrowing Self) -> Bool](../Swift/Equatable/!=(_:_:).md)
+- [static func != (borrowing Self, borrowing Self) -> Bool](../swift/equatable/!=(_:_:).md)
   Returns a Boolean value indicating whether two values are not equal.
-- [func hash(into: inout Hasher)](../Swift/Hashable/hash(into:).md)
+- [func hash(into: inout Hasher)](../swift/hashable/hash(into:).md)
   Hashes the essential components of this value by feeding them into the given hasher.
 - [MEError.Code](meerror-swift.struct/code.md)
   An enumeration that models media extension error codes.
@@ -70,12 +70,12 @@ If a [`MediaExtension`](MediaExtension.md) method fails, the [`NSError`](https:/
 ## Relationships
 
 ### Conforms To
-- [CustomNSError](../Foundation/CustomNSError.md)
-- [Equatable](../Swift/Equatable.md)
-- [Error](../Swift/Error.md)
-- [Hashable](../Swift/Hashable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [CustomNSError](../foundation/customnserror.md)
+- [Equatable](../swift/equatable.md)
+- [Error](../swift/error.md)
+- [Hashable](../swift/hashable.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

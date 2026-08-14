@@ -21,7 +21,7 @@ func url() -> URL?
 
 #### Return Value
 
-The [`NSURL`](https://developer.apple.com/documentation/Foundation/NSURL) object used to initialize the receiver. This value can be `nil`.
+The [`NSURL`](https://developer.apple.com/documentation/foundation/nsurl) object used to initialize the receiver. This value can be `nil`.
 
 
 ---

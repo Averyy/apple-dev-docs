@@ -22,7 +22,7 @@ static let playRepeatedly: SCNSceneSource.AnimationImportPolicy
 
 #### Discussion
 
-Using this policy is equivalent to manually loading each animation, setting its [`repeatCount`](https://developer.apple.com/documentation/QuartzCore/CAMediaTiming/repeatCount) property to `INFINITY`, and adding it to the appropriate element of the scene.
+Using this policy is equivalent to manually loading each animation, setting its [`repeatCount`](https://developer.apple.com/documentation/quartzcore/camediatiming/repeatcount) property to `INFINITY`, and adding it to the appropriate element of the scene.
 
 ## See Also
 

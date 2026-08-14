@@ -34,7 +34,7 @@ Get the complete offer details by searching for the identifier in the [`winBackO
 
 When you test win-back offers with StoreKit Testing in Xcode, the system lists the offers in no particular order. For more information, see [`Testing win-back offers in Xcode`](testing-win-back-offers-in-xcode.md).
 
-You can also use the [`App Store Server API`](https://developer.apple.com/documentation/AppStoreServerAPI) to get a list of eligible win-back offers, on your server. For more information, see [`Get All Subscription Statuses`](https://developer.apple.com/documentation/AppStoreServerAPI/Get-All-Subscription-Statuses) and [`eligibleWinBackOfferIds`](https://developer.apple.com/documentation/AppStoreServerAPI/eligibleWinBackOfferIds).
+You can also use the [`App Store Server API`](https://developer.apple.com/documentation/appstoreserverapi) to get a list of eligible win-back offers, on your server. For more information, see [`Get All Subscription Statuses`](https://developer.apple.com/documentation/appstoreserverapi/get-all-subscription-statuses) and [`eligibleWinBackOfferIds`](https://developer.apple.com/documentation/appstoreserverapi/eligiblewinbackofferids).
 
 For information about configuring win-back offers in App Store Connect, see [`Set up win-back offers`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/manage-subscriptions/set-up-win-back-offers).
 

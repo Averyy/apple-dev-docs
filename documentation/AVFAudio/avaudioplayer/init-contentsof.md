@@ -22,7 +22,7 @@ init(contentsOf url: URL) throws
 
 #### Return Value
 
-A new audio player instance, or [`nil`](https://developer.apple.com/documentation/ObjectiveC/nil-227m0) if an error occurs.
+A new audio player instance, or [`nil`](https://developer.apple.com/documentation/objectivec/nil-227m0) if an error occurs.
 
 #### Discussion
 

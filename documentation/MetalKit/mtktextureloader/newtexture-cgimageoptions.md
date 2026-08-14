@@ -25,7 +25,7 @@ A fully loaded and initialized Metal texture, or `nil` if an error occurred.
 
 ## Parameters
 
-- `cgImage`: The [`CGImage`](https://developer.apple.com/documentation/CoreGraphics/CGImage) from which to load image data.
+- `cgImage`: The [`CGImage`](https://developer.apple.com/documentation/coregraphics/cgimage) from which to load image data.
 - `options`: A dictionary describing any additional texture loading steps. See `Texture Loading Options`.
 
 ## See Also

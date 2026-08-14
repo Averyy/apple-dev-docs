@@ -19,7 +19,7 @@ class let touchBarEnterFullScreenTemplateName: String
 
 #### Discussion
 
-![Template image for enter full screen](https://docs-assets.developer.apple.com/published/0fd2e6064bac7effca68767c224c10b5/media-2825112%402x.png)
+![Template image for enter full screen](/images/com.apple.appkit/media-2825112@2x.png)
 
 Touch Bar template images are exclusively for use in [`NSTouchBarItem`](nstouchbaritem.md) objects and not in onscreen windows.
 

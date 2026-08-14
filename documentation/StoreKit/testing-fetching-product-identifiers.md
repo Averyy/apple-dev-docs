@@ -6,7 +6,7 @@ Verify that your app receives the correct product identifiers by inspecting or r
 
 #### Overview
 
-If you embed your product identifiers in your app, set a breakpoint in your code after the code loads the identifiers. Verify that the instance of [`NSArray`](https://developer.apple.com/documentation/Foundation/NSArray) contains your expected list of product identifiers.
+If you embed your product identifiers in your app, set a breakpoint in your code after the code loads the identifiers. Verify that the instance of [`NSArray`](https://developer.apple.com/documentation/foundation/nsarray) contains your expected list of product identifiers.
 
 > **Note**:  Changes that you make to product metadata in App Store Connect can take up to one hour to appear in the sandbox environment.
 

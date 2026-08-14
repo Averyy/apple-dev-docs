@@ -24,8 +24,8 @@ class NSCompoundPredicate
 
 Use [`NSCompoundPredicate`](nscompoundpredicate.md) to create an `AND` or `OR` compound predicate of one or more other predicates, or the `NOT` of a single predicate. For the logical `AND` and `OR` operations:
 
-- An `AND` predicate with no subpredicates evaluates to [`true`](https://developer.apple.com/documentation/Swift/true).
-- An `OR` predicate with no subpredicates evaluates to [`false`](https://developer.apple.com/documentation/Swift/false).
+- An `AND` predicate with no subpredicates evaluates to [`true`](https://developer.apple.com/documentation/swift/true).
+- An `OR` predicate with no subpredicates evaluates to [`false`](https://developer.apple.com/documentation/swift/false).
 - A compound predicate with one or more subpredicates evaluates to the truth of its subpredicates.
 
 ## Topics
@@ -54,17 +54,17 @@ Use [`NSCompoundPredicate`](nscompoundpredicate.md) to create an `AND` or `OR` c
 ### Inherits From
 - [NSPredicate](nspredicate.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
 - [NSCoding](nscoding.md)
 - [NSCopying](nscopying.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 - [NSSecureCoding](nssecurecoding.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

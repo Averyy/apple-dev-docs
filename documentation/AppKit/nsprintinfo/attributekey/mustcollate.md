@@ -16,7 +16,7 @@ static let mustCollate: NSPrintInfo.AttributeKey
 
 #### Discussion
 
-If [`true`](https://developer.apple.com/documentation/Swift/true), collates output.
+If [`true`](https://developer.apple.com/documentation/swift/true), collates output.
 
 ## See Also
 

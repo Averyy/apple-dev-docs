@@ -23,7 +23,7 @@ func fetchDatabaseChanges(since changeToken: CKServerChangeToken?, resultsLimit:
 
 #### Discussion
 
-The completion handler takes a single [`Result`](https://developer.apple.com/documentation/Swift/Result) parameter that contains either a tuple, or an error if the request fails. For example, when the network is unavailable or the device doesn’t have an active iCloud account.
+The completion handler takes a single [`Result`](https://developer.apple.com/documentation/swift/result) parameter that contains either a tuple, or an error if the request fails. For example, when the network is unavailable or the device doesn’t have an active iCloud account.
 
 When present, the tuple contains the following named elements:
 
@@ -34,7 +34,7 @@ When present, the tuple contains the following named elements:
 
 This method fetches record zone changes in a database, which includes new record zones, changed zones — including deleted or purged zones — and zones that contain record changes.
 
-Along with the fetched changes, CloudKit supplies a *change token*, which is an opaque token that denotes a specific point in the database’s history. Store this token and provide it the next time you execute this method. Change tokens conform to [`NSSecureCoding`](https://developer.apple.com/documentation/Foundation/NSSecureCoding) and are safe to cache on-disk. Don’t infer any behavior or order from a token’s contents.
+Along with the fetched changes, CloudKit supplies a *change token*, which is an opaque token that denotes a specific point in the database’s history. Store this token and provide it the next time you execute this method. Change tokens conform to [`NSSecureCoding`](https://developer.apple.com/documentation/foundation/nssecurecoding) and are safe to cache on-disk. Don’t infer any behavior or order from a token’s contents.
 
 For information on a more configurable way to fetch database changes, see [`CKFetchDatabaseChangesOperation`](ckfetchdatabasechangesoperation.md).
 

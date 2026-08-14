@@ -168,7 +168,7 @@ For more information about creating app entities and implementing app schemas, s
 
 #### Make Entities Transferable
 
-In addition to conforming entities to an app schema, the app’s entities also conform to the [`Transferable`](https://developer.apple.com/documentation/CoreTransferable/Transferable) protocol. This enables Apple Intelligence to pass the message entities to other apps and system experiences.
+In addition to conforming entities to an app schema, the app’s entities also conform to the [`Transferable`](https://developer.apple.com/documentation/coretransferable/transferable) protocol. This enables Apple Intelligence to pass the message entities to other apps and system experiences.
 
 ```swift
 extension MessageEntity: Transferable {
@@ -209,7 +209,7 @@ For more information about making app content available to Spotlight, see [`Spot
 
 #### Annotate Views and Notifications with App Entities
 
-People use Siri to interact with onscreen content. For example, someone might say “Siri, summarize this message.” To fulfill the request, Apple Intelligence needs contextual information about content that’s visible onscreen. To provide the needed context, the sample app annotates its view with app entities that represent the onscreen content. For example, the app’s `MessageRow` view annotates its [`HStack`](https://developer.apple.com/documentation/SwiftUI/HStack) with an app entity using the [`appEntityIdentifier(_:)`](https://developer.apple.com/documentation/SwiftUI/View/appEntityIdentifier(_:)) modifier:
+People use Siri to interact with onscreen content. For example, someone might say “Siri, summarize this message.” To fulfill the request, Apple Intelligence needs contextual information about content that’s visible onscreen. To provide the needed context, the sample app annotates its view with app entities that represent the onscreen content. For example, the app’s `MessageRow` view annotates its [`HStack`](https://developer.apple.com/documentation/swiftui/hstack) with an app entity using the [`appEntityIdentifier(_:)`](https://developer.apple.com/documentation/swiftui/view/appentityidentifier(_:)) modifier:
 
 ```swift
 var body: some View {

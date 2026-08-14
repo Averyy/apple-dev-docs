@@ -38,8 +38,8 @@ Kexts that are explicitly unloaded have all pending request callbacks invoked wi
 - `kextIdentifier`: The CFBundleIdentifier of the kext from which to read the file.
 - `resourceName`: The name of the resource file to read.
 - `callback`: A pointer to a callback function; the address must be within a currently-loaded kext.
-- `context`: A pointer to arbitrary run-time data that will be passed to the callback when it is invoked. May be  .
-- `requestTagOut`: If non- , filled on success with a tag identifying the pending request (or on failure with  ; can be used with  .
+- `context`: A pointer to arbitrary run-time data that will be passed to the callback when it is invoked. May be `NULL`.
+- `requestTagOut`: If non-`NULL`, filled on success with a tag identifying the pending request (or on failure with `kOSKextRequestTagInvalid`; can be used with [`OSKextCancelRequest`](1508350-oskextcancelrequest.md).
 
 ## See Also
 

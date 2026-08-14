@@ -16,7 +16,7 @@ func performFileOperation(_ operation: NSWorkspace.FileOperationName, source: St
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/Swift/true) if the operation succeeded; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
+[`true`](https://developer.apple.com/documentation/swift/true) if the operation succeeded; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
 
 #### Discussion
 
@@ -29,7 +29,7 @@ It is safe to call this method from any thread of your app.
 - `operation`: The file operation to perform. The possible values for this parameter are described in `File Operations`.
 - `source`: The full path to the directory containing the files on which to operate.
 - `destination`: The full path to the destination directory of the operation.
-- `files`: An array of [`NSString`](https://developer.apple.com/documentation/Foundation/NSString) objects specifying the names of the files and directories to be manipulated. Each string must not contain any path information other than the name of the file or directory. In other words, all of the files and directories must be located in the source directory and not in one if its subdirectories.
+- `files`: An array of [`NSString`](https://developer.apple.com/documentation/foundation/nsstring) objects specifying the names of the files and directories to be manipulated. Each string must not contain any path information other than the name of the file or directory. In other words, all of the files and directories must be located in the source directory and not in one if its subdirectories.
 - `tag`: On input, a integer variable; on return, this variable contains a negative integer if the operation fails, 0 if the operation was performed synchronously and succeeded, or a positive integer if the operation was performed asynchronously. If the value is a positive integer, the value is a tag that identifies the requested file operation.
 
 ## See Also

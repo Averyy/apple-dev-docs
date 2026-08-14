@@ -24,7 +24,7 @@ let SKStoreProductParameterITunesItemIdentifier: String
 
 #### Discussion
 
-The value for this key, an iTunes item identifier, is an instance of [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+The value for this key, an iTunes item identifier, is an instance of [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
 
 To find a product’s iTunes identifier, go to [`linkmaker.itunes.apple.com`](https://developer.apple.comhttp://linkmaker.itunes.apple.com/us/) and search for the product, then locate the iTunes identifier in the link URL. For example, the iTunes identifier for the iBooks app is 364709193.
 

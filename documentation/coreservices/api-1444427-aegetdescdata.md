@@ -30,9 +30,9 @@ Thread safe starting in OS X v10.2.
 
 ## Parameters
 
-- `theAEDesc`: A pointer to the descriptor to get the data from. See  .
-- `dataPtr`: A pointer to a buffer, local variable, or other storage location created and disposed of by your application. The size in bytes should be the same as the value you pass in the   parameter. On return, contains the data from the descriptor.
-- `maximumSize`: The length, in bytes, of the expected descriptor data. The   function will not return more data than you specify in this parameter. You typically determine the maximum size by calling  .
+- `theAEDesc`: A pointer to the descriptor to get the data from. See [`AEDesc`](aedesc.md).
+- `dataPtr`: A pointer to a buffer, local variable, or other storage location created and disposed of by your application. The size in bytes should be the same as the value you pass in the `maximumSize` parameter. On return, contains the data from the descriptor.
+- `maximumSize`: The length, in bytes, of the expected descriptor data. The `AEGetDescData` function will not return more data than you specify in this parameter. You typically determine the maximum size by calling [`AEGetDescDataSize(_:)`](1450119-aegetdescdatasize.md).
 
 ## See Also
 

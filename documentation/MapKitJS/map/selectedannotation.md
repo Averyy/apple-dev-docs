@@ -23,7 +23,7 @@ An annotation is in a selected state if its [`selected`](annotation/selected.md)
 
 To select an annotation that’s already part of the map, set this property to the desired annotation.
 
-When MapKit JS removes the selected annotation from the map (as an effect of [`removeAnnotation(annotation)`](map/removeannotation.md), [`removeAnnotations(annotations)`](map/removeannotations.md), or setting a new set of annotations with the [`annotations`](map/annotations.md) property), MapKit JS deselects it before removing it.
+When MapKit JS removes the selected annotation from the map (as an effect of [`removeAnnotation()`](map/removeannotation.md), [`removeAnnotations()`](map/removeannotations.md), or setting a new set of annotations with the [`annotations`](map/annotations.md) property), MapKit JS deselects it before removing it.
 
 ## See Also
 

@@ -26,7 +26,7 @@ The requested attachment object or `NULL` if not found.
 
 #### Discussion
 
-You can attach any Core Foundation object to a `CMAttachmentBearer` to store additional information. `CMGetAttachment` retrieves an attachment identified by a key. Given a [`CVBuffer`](https://developer.apple.com/documentation/CoreVideo/CVBuffer), `CMGetAttachment` is equivalent to [`CVBufferCopyAttachment(_:_:_:)`](https://developer.apple.com/documentation/CoreVideo/CVBufferCopyAttachment(_:_:_:)).
+You can attach any Core Foundation object to a `CMAttachmentBearer` to store additional information. `CMGetAttachment` retrieves an attachment identified by a key. Given a [`CVBuffer`](https://developer.apple.com/documentation/corevideo/cvbuffer), `CMGetAttachment` is equivalent to [`CVBufferCopyAttachment(_:_:_:)`](https://developer.apple.com/documentation/corevideo/cvbuffercopyattachment(_:_:_:)).
 
 ## Parameters
 

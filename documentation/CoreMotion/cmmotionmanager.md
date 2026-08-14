@@ -41,7 +41,7 @@ You can receive live sensor data at a specified update interval, or you can let 
 
 ##### Receive Regular Motion Updates
 
-To receive motion data at specific intervals, the app calls a start method that takes an operation queue (instance of [`OperationQueue`](https://developer.apple.com/documentation/Foundation/OperationQueue)) and a block handler of a specific type for processing those updates.  The motion data is passed into the block handler. The frequency of updates is determined by the value of an interval property.
+To receive motion data at specific intervals, the app calls a start method that takes an operation queue (instance of [`OperationQueue`](https://developer.apple.com/documentation/foundation/operationqueue)) and a block handler of a specific type for processing those updates.  The motion data is passed into the block handler. The frequency of updates is determined by the value of an interval property.
 
 - **Accelerometer.** Set the [`accelerometerUpdateInterval`](cmmotionmanager/accelerometerupdateinterval.md) property to specify an update interval. Call  the [`startAccelerometerUpdates(to:withHandler:)`](cmmotionmanager/startaccelerometerupdates(to:withhandler:).md) method, passing in a block of type [`CMAccelerometerHandler`](cmaccelerometerhandler.md). Accelerometer data is passed into the block as [`CMAccelerometerData`](cmaccelerometerdata.md) objects.
 - **Gyroscope.** Set the [`gyroUpdateInterval`](cmmotionmanager/gyroupdateinterval.md) property to specify an update interval. Call  the [`startGyroUpdates(to:withHandler:)`](cmmotionmanager/startgyroupdates(to:withhandler:).md) method, passing in a block of type [`CMGyroHandler`](cmgyrohandler.md). Rotation-rate data is passed into the block as [`CMGyroData`](cmgyrodata.md) objects.
@@ -65,7 +65,7 @@ If a hardware feature (for example, a gyroscope) is not available on a device, c
 
 To interpret accelerometer, gyroscope, or attitude information, you need to know the orientation of the device’s coordinate axes. The following illustration shows the positive x-axis, positive y-axis, and positive z-axis for motion-capable Apple devices.
 
-![An illustration showing iPhone, iPad, Apple Watch, and Apple Vision Pro with labels representing the positive x-axis, positive y-axis, and positive z-axis on each device.](https://docs-assets.developer.apple.com/published/b702f8aa95f1359d3b1b7a05b575569b/media-4302073%402x.png)
+![An illustration showing iPhone, iPad, Apple Watch, and Apple Vision Pro with labels representing the positive x-axis, positive y-axis, and positive z-axis on each device.](/images/com.apple.coremotion/media-4302073@2x.png)
 
 ## Topics
 
@@ -161,18 +161,18 @@ To interpret accelerometer, gyroscope, or attitude information, you need to know
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 
-- [Core Motion updates](../Updates/CoreMotion.md)
+- [Core Motion updates](../updates/coremotion.md)
   Learn about important changes to Core Motion.
 
 

@@ -20,7 +20,7 @@ Call this method to resume a VM that’s in the [`VZVirtualMachine.State.paused`
 
 ## Parameters
 
-- `completionHandler`: The block to call with the results of the resume attempt. This block has no return value and has one [`NSError`](https://developer.apple.com/documentation/Foundation/NSError) object as its parameter. The completion handler returns an error object when the VM fails to resume. - **result**: A result type that contains an error object when the VM fails to resume.
+- `completionHandler`: The block to call with the results of the resume attempt. This block has no return value and has one [`NSError`](https://developer.apple.com/documentation/foundation/nserror) object as its parameter. The completion handler returns an error object when the VM fails to resume. - **result**: A result type that contains an error object when the VM fails to resume.
 
 ## See Also
 

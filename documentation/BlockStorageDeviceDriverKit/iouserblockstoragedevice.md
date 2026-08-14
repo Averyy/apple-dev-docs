@@ -20,7 +20,7 @@ Implement your driver by subclassing this class and overriding all C++ pure virt
 
 ##### Specifying the Drivers Personality Information
 
-When you subclass `IOUserBlockStorageDevice`, update the [`IOKitPersonalities`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/IOKitPersonalities) key of your driver extension’s `Info.plist` file with information to match your driver to the correct hardware. For this class, always include the keys and values in the following table:
+When you subclass `IOUserBlockStorageDevice`, update the [`IOKitPersonalities`](https://developer.apple.com/documentation/bundleresources/information-property-list/iokitpersonalities) key of your driver extension’s `Info.plist` file with information to match your driver to the correct hardware. For this class, always include the keys and values in the following table:
 
 | Key | Value |
 | --- | --- |
@@ -85,7 +85,7 @@ When you subclass `IOUserBlockStorageDevice`, update the [`IOKitPersonalities`](
 ## Relationships
 
 ### Inherits From
-- [IOService](../DriverKit/IOService.md)
+- [IOService](../driverkit/ioservice.md)
 
 
 ---

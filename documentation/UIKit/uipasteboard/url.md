@@ -19,7 +19,7 @@ var url: URL? { get set }
 
 #### Discussion
 
-The value stored in this property is an [`NSURL`](https://developer.apple.com/documentation/Foundation/NSURL) object. The associated array of representation types is [`typeListURL`](uipasteboard/typelisturl.md), which includes type `kUTTypeURL`. Setting this property replaces all current items in the pasteboard with the new item.  If the first item has no value of the indicated type, `nil` is returned.
+The value stored in this property is an [`NSURL`](https://developer.apple.com/documentation/foundation/nsurl) object. The associated array of representation types is [`typeListURL`](uipasteboard/typelisturl.md), which includes type `kUTTypeURL`. Setting this property replaces all current items in the pasteboard with the new item.  If the first item has no value of the indicated type, `nil` is returned.
 
 > **Note**:  Do not use this property to determine if a pasteboard contains URL data. Instead, use the [`hasURLs`](uipasteboard/hasurls.md) property.
 

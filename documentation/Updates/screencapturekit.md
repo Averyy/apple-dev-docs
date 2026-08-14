@@ -6,7 +6,7 @@ Learn about important changes to ScreenCaptureKit.
 
 #### Overview
 
-Browse notable changes in [`ScreenCaptureKit`](https://developer.apple.com/documentation/ScreenCaptureKit).
+Browse notable changes in [`ScreenCaptureKit`](https://developer.apple.com/documentation/screencapturekit).
 
 #### June 2024
 
@@ -30,10 +30,10 @@ Browse notable changes in [`ScreenCaptureKit`](https://developer.apple.com/docum
 
 #### June 2023
 
-- Use the new sharing picker: [`SCContentSharingPicker`](https://developer.apple.com/documentation/ScreenCaptureKit/SCContentSharingPicker).
-- Access new properties of [`AVCaptureDevice`](https://developer.apple.com/documentation/AVFoundation/AVCaptureDevice) for status on effects relevant to screen capture.
-- Take screenshots with [`SCStream`](https://developer.apple.com/documentation/ScreenCaptureKit/SCStream).
-- Deprecated `CGStream`. Use [`SCStreamConfiguration`](https://developer.apple.com/documentation/ScreenCaptureKit/SCStreamConfiguration) instead.
+- Use the new sharing picker: [`SCContentSharingPicker`](https://developer.apple.com/documentation/screencapturekit/sccontentsharingpicker).
+- Access new properties of [`AVCaptureDevice`](https://developer.apple.com/documentation/avfoundation/avcapturedevice) for status on effects relevant to screen capture.
+- Take screenshots with [`SCStream`](https://developer.apple.com/documentation/screencapturekit/scstream).
+- Deprecated `CGStream`. Use [`SCStreamConfiguration`](https://developer.apple.com/documentation/screencapturekit/scstreamconfiguration) instead.
 
 ## See Also
 

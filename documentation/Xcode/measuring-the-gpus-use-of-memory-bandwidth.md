@@ -15,9 +15,9 @@ You can reduce a GPU’s memory bandwidth with the following strategies in your 
 - Read only the data your pass needs.
 - Write only the data that a subsequent pass needs.
 - Load and store only the attachments that a render pass needs.
-- Create textures that use only the appropriate [`MTLTextureUsage`](https://developer.apple.com/documentation/Metal/MTLTextureUsage) attributes.
+- Create textures that use only the appropriate [`MTLTextureUsage`](https://developer.apple.com/documentation/metal/mtltextureusage) attributes.
 
-Metal can reduce your app’s memory bandwidth by optimizing the memory accesses to your textures that have the correct usage attributes. To set a texture’s usage appropriately, configure an [`MTLTextureDescriptor`](https://developer.apple.com/documentation/Metal/MTLTextureDescriptor) instance’s [`usage`](https://developer.apple.com/documentation/Metal/MTLTextureDescriptor/usage) property and create a texture with it.
+Metal can reduce your app’s memory bandwidth by optimizing the memory accesses to your textures that have the correct usage attributes. To set a texture’s usage appropriately, configure an [`MTLTextureDescriptor`](https://developer.apple.com/documentation/metal/mtltexturedescriptor) instance’s [`usage`](https://developer.apple.com/documentation/metal/mtltexturedescriptor/usage) property and create a texture with it.
 
 Buffer and texture operations can also increase your app’s memory bandwidth. To check whether the limiter counters for buffer or texture operations are too high, and to learn what you can do to reduce their impact, see [`Reducing shader bottlenecks`](reducing-shader-bottlenecks.md).
 

@@ -21,9 +21,9 @@ static let SRGB: MTKTextureLoader.Option
 
 #### Discussion
 
-The value for this key is an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) object containing a boolean value.
+The value for this key is an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) object containing a boolean value.
 
-If the value is [`false`](https://developer.apple.com/documentation/Swift/false), the image data is treated as linear pixel data. If the value is [`true`](https://developer.apple.com/documentation/Swift/true), the image data is treated as sRGB pixel data. If this key is not specified and the image being loaded has been gamma-corrected, the image data uses the specified sRGB information.
+If the value is [`false`](https://developer.apple.com/documentation/swift/false), the image data is treated as linear pixel data. If the value is [`true`](https://developer.apple.com/documentation/swift/true), the image data is treated as sRGB pixel data. If this key is not specified and the image being loaded has been gamma-corrected, the image data uses the specified sRGB information.
 
 
 ---

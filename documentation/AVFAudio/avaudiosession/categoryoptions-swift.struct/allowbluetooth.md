@@ -23,7 +23,7 @@ static var allowBluetooth: AVAudioSession.CategoryOptions { get }
 
 You’re required to set this option to allow routing audio input and output to a paired Bluetooth Hands-Free Profile (HFP) device. If you clear this option, paired Bluetooth HFP devices don’t show up as available audio input routes.
 
-If an application uses the [`setPreferredInput(_:)`](avaudiosession/setpreferredinput(_:).md) method to select a Bluetooth HFP input, the output automatically changes to the corresponding Bluetooth HFP output. Likewise, selecting a Bluetooth HFP output using an [`MPVolumeView`](https://developer.apple.com/documentation/MediaPlayer/MPVolumeView) object’s route picker automatically changes the input to the corresponding Bluetooth HFP input. Therefore, both audio input and output are routed to the Bluetooth HFP device even though you only selected the input or output.
+If an application uses the [`setPreferredInput(_:)`](avaudiosession/setpreferredinput(_:).md) method to select a Bluetooth HFP input, the output automatically changes to the corresponding Bluetooth HFP output. Likewise, selecting a Bluetooth HFP output using an [`MPVolumeView`](https://developer.apple.com/documentation/mediaplayer/mpvolumeview) object’s route picker automatically changes the input to the corresponding Bluetooth HFP input. Therefore, both audio input and output are routed to the Bluetooth HFP device even though you only selected the input or output.
 
 You can set this option only if the audio session category is [`playAndRecord`](avaudiosession/category-swift.struct/playandrecord.md) or [`record`](avaudiosession/category-swift.struct/record.md).
 

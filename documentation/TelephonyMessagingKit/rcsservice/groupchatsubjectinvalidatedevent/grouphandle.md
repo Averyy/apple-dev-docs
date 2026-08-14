@@ -7,7 +7,6 @@ The group handle whose subject was invalidated.
 
 **Availability**:
 - iOS 26.5+
-- iPadOS 26.5+
 
 ## Declaration
 

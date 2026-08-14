@@ -7,7 +7,7 @@ An atom that defines how to interpret subtitle media data.
 
 #### Overview
 
-The subtitle sample description contains information that defines how to interpret subtitle media data. This sample description is based on the standard sample description header, as described in [`Sample description atom ('stsd')`](sample_description_atom.md).
+The subtitle sample description contains information that defines how to interpret subtitle media data. This sample description is based on the standard sample description header, as described in [`Sample description atom`](sample_description_atom.md).
 
 > **Note**: Only one sample description is permitted in a `'sbtl'` track.
 

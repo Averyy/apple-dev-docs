@@ -12,7 +12,7 @@ QuickTime movies store 3D image data in a base media. This media has a media typ
 
 #### 3d Sample Description
 
-The 3D sample description uses the standard sample description header, as described in [`Sample table atom ('stbl')`](sample_table_atom.md).
+The 3D sample description uses the standard sample description header, as described in [`Sample table atom`](sample_table_atom.md).
 
 The data format field in the sample description is always set to `'qd3d'`. The 3D media handler adds no additional fields to the sample description.
 

@@ -24,7 +24,7 @@ The frame rectangle that describes the text layout fragment.
 
 #### Discussion
 
-Returns [`CGRectZero`](https://developer.apple.com/documentation/CoreGraphics/CGRectZero) if `location` isn’t with any attachment or the state isn’t [`NSTextLayoutFragment.State.layoutAvailable`](nstextlayoutfragment/state-swift.enum/layoutavailable.md).
+Returns [`CGRectZero`](https://developer.apple.com/documentation/coregraphics/cgrectzero) if `location` isn’t with any attachment or the state isn’t [`NSTextLayoutFragment.State.layoutAvailable`](nstextlayoutfragment/state-swift.enum/layoutavailable.md).
 
 ## Parameters
 

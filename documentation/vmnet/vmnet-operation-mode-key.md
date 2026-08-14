@@ -17,7 +17,7 @@ let vmnet_operation_mode_key: UnsafePointer<CChar>
 
 #### Discussion
 
-The value specified for this key should be of type [`XPC_TYPE_UINT64`](https://developer.apple.com/documentation/XPC/XPC_TYPE_UINT64-swift.var).
+The value specified for this key should be of type [`XPC_TYPE_UINT64`](https://developer.apple.com/documentation/xpc/xpc_type_uint64-swift.var).
 
 ## See Also
 

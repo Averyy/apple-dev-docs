@@ -18,11 +18,11 @@ func validateToolbarItem(_ item: NSToolbarItem) -> Bool
 
 #### Discussion
 
-If this method is implemented and returns [`false`](https://developer.apple.com/documentation/Swift/false), [`NSToolbar`](nstoolbar.md) will disable `item`. Returning [`true`](https://developer.apple.com/documentation/Swift/true) causes `item` to be enabled.
+If this method is implemented and returns [`false`](https://developer.apple.com/documentation/swift/false), [`NSToolbar`](nstoolbar.md) will disable `item`. Returning [`true`](https://developer.apple.com/documentation/swift/true) causes `item` to be enabled.
 
 [`NSToolbar`](nstoolbar.md) only calls this method for image items.
 
-> **Note**:  [`validateToolbarItem:`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class/validateToolbarItem:) is called very frequently, so it must be efficient.
+> **Note**:  [`validateToolbarItem:`](https://developer.apple.com/documentation/objectivec/nsobject-swift.class/validatetoolbaritem:) is called very frequently, so it must be efficient.
 
 If the receiver is the `target` for the actions of multiple toolbar items, it’s necessary to determine which toolbar item `item` refers to by testing the `itemIdentifier`.
 

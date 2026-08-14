@@ -17,7 +17,7 @@ kern_return_t Cancel(OSActionCancelHandler handler);
 
 #### Return_value
 
-[`kIOReturnSuccess`](https://developer.apple.com/documentation/driverkit/kioreturnsuccess) on success, or another value if an error occurs. See `Error Codes`. 
+[`kIOReturnSuccess`](https://developer.apple.com/documentation/driverkit/kioreturnsuccess) on success, or another value if an error occurs. See [`Error Codes`](https://developer.apple.com/documentation/driverkit/error-codes). 
 
 #### Discussion
 
@@ -30,7 +30,7 @@ After cancellation, you can only free the action object. You cannot reactivate i
 ## See Also
 
 - [- Aborted](../driverkit/osaction/aborted.md)
-  Calls the abort handler of the action object.
+  Calls the abort handler of the action object. 
 - [OSActionAbortedHandler](../driverkit/osactionabortedhandler.md)
   The block to call before aborting an action object.
 - [OSActionCancelHandler](../driverkit/osactioncancelhandler.md)

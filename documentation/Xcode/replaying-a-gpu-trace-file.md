@@ -10,7 +10,7 @@ Replaying a GPU trace file allows you to debug and profile previously captured G
 
 To replay a GPU trace file, open it in Xcode. Before clicking Replay, you can configure which device to use (if there’s more than one available), as well as configure whether to run with profiling.
 
-![An Xcode screenshot of the Replay GPU Trace dialog with options to begin replaying a GPU trace file.](https://docs-assets.developer.apple.com/published/63299cd1e14acd0035b2afb3b4405eba/gputools-metal-debugger-essentials-replay%402x.png)
+![An Xcode screenshot of the Replay GPU Trace dialog with options to begin replaying a GPU trace file.](/images/com.apple.Xcode/gputools-metal-debugger-essentials-replay@2x.png)
 
 ##### Configure Replay
 

@@ -17,13 +17,13 @@ class ARSCNFaceGeometry
 
 #### Overview
 
-This class is a subclass of [`SCNGeometry`](https://developer.apple.com/documentation/SceneKit/SCNGeometry) that wraps the mesh data provided by the [`ARFaceGeometry`](arfacegeometry.md) class. You can use [`ARSCNFaceGeometry`](arscnfacegeometry.md) to quickly and easily visualize face topology and facial expressions provided by ARKit in a SceneKit view.
+This class is a subclass of [`SCNGeometry`](https://developer.apple.com/documentation/scenekit/scngeometry) that wraps the mesh data provided by the [`ARFaceGeometry`](arfacegeometry.md) class. You can use [`ARSCNFaceGeometry`](arscnfacegeometry.md) to quickly and easily visualize face topology and facial expressions provided by ARKit in a SceneKit view.
 
 > ❗ **Important**:  [`ARSCNFaceGeometry`](arscnfacegeometry.md) is available only in SceneKit views or renderers that use Metal. This class is not supported for OpenGL-based SceneKit rendering.
 
-Face mesh topology is constant for the lifetime of an [`ARSCNFaceGeometry`](arscnfacegeometry.md) object. That is, the geometry’s single [`SCNGeometryElement`](https://developer.apple.com/documentation/SceneKit/SCNGeometryElement) object always describes the same arrangement of vertices, and the [`texcoord`](https://developer.apple.com/documentation/SceneKit/SCNGeometrySource/Semantic-swift.struct/texcoord) geometry source always maps the same vertices to the same texture coordinates.
+Face mesh topology is constant for the lifetime of an [`ARSCNFaceGeometry`](arscnfacegeometry.md) object. That is, the geometry’s single [`SCNGeometryElement`](https://developer.apple.com/documentation/scenekit/scngeometryelement) object always describes the same arrangement of vertices, and the [`texcoord`](https://developer.apple.com/documentation/scenekit/scngeometrysource/semantic-swift.struct/texcoord) geometry source always maps the same vertices to the same texture coordinates.
 
-When you modify the geometry with the [`update(from:)`](arscnfacegeometry/update(from:).md) method, only the contents of the [`vertex`](https://developer.apple.com/documentation/SceneKit/SCNGeometrySource/Semantic-swift.struct/vertex) geometry source change, indicating the difference in vertex positions as ARKit adapts the mesh to the shape and expression of the user’s face.
+When you modify the geometry with the [`update(from:)`](arscnfacegeometry/update(from:).md) method, only the contents of the [`vertex`](https://developer.apple.com/documentation/scenekit/scngeometrysource/semantic-swift.struct/vertex) geometry source change, indicating the difference in vertex positions as ARKit adapts the mesh to the shape and expression of the user’s face.
 
 ## Topics
 
@@ -41,20 +41,20 @@ When you modify the geometry with the [`update(from:)`](arscnfacegeometry/update
 ## Relationships
 
 ### Inherits From
-- [SCNGeometry](../SceneKit/SCNGeometry.md)
+- [SCNGeometry](../scenekit/scngeometry.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCoding](../Foundation/NSCoding.md)
-- [NSCopying](../Foundation/NSCopying.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [NSSecureCoding](../Foundation/NSSecureCoding.md)
-- [SCNAnimatable](../SceneKit/SCNAnimatable.md)
-- [SCNBoundingVolume](../SceneKit/SCNBoundingVolume.md)
-- [SCNShadable](../SceneKit/SCNShadable.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCoding](../foundation/nscoding.md)
+- [NSCopying](../foundation/nscopying.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [SCNAnimatable](../scenekit/scnanimatable.md)
+- [SCNBoundingVolume](../scenekit/scnboundingvolume.md)
+- [SCNShadable](../scenekit/scnshadable.md)
 
 ## See Also
 

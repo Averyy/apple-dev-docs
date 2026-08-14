@@ -47,8 +47,8 @@ Most compute commands apply to one stage within a pass. The following table show
 | [`dispatchThreads(_:threadsPerThreadgroup:)`](mtlcomputecommandencoder/dispatchthreads(_:threadsperthreadgroup:).md) | [`dispatch`](mtlstages/dispatch.md) |
 | [`dispatchThreadgroups(_:threadsPerThreadgroup:)`](mtlcomputecommandencoder/dispatchthreadgroups(_:threadsperthreadgroup:).md) | [`dispatch`](mtlstages/dispatch.md) |
 | [`dispatchThreadgroups(indirectBuffer:indirectBufferOffset:threadsPerThreadgroup:)`](mtlcomputecommandencoder/dispatchthreadgroups(indirectbuffer:indirectbufferoffset:threadsperthreadgroup:).md) | [`dispatch`](mtlstages/dispatch.md) |
-| [`executeCommandsInBuffer(_:range:)`](mtlcomputecommandencoder/executecommandsinbuffer(_:range:).md)![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png)[`executeCommandsInBuffer:withRange:`](mtlcomputecommandencoder/executecommandsinbuffer:withrange:.md) | None |
-| [`executeCommandsInBuffer(_:indirectBuffer:offset:)`](mtlcomputecommandencoder/executecommandsinbuffer(_:indirectbuffer:offset:).md)![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png)[`executeCommandsInBuffer:indirectBuffer:indirectBufferOffset:`](mtlcomputecommandencoder/executecommandsinbuffer:indirectbuffer:indirectbufferoffset:.md) | None |
+| [`executeCommandsInBuffer(_:range:)`](mtlcomputecommandencoder/executecommandsinbuffer(_:range:).md)![None](/images/com.apple.metal/spacer.png)[`executeCommandsInBuffer:withRange:`](mtlcomputecommandencoder/executecommandsinbuffer:withrange:.md) | None |
+| [`executeCommandsInBuffer(_:indirectBuffer:offset:)`](mtlcomputecommandencoder/executecommandsinbuffer(_:indirectbuffer:offset:).md)![None](/images/com.apple.metal/spacer.png)[`executeCommandsInBuffer:indirectBuffer:indirectBufferOffset:`](mtlcomputecommandencoder/executecommandsinbuffer:indirectbuffer:indirectbufferoffset:.md) | None |
 | [`sampleCounters(sampleBuffer:sampleIndex:barrier:)`](mtlcomputecommandencoder/samplecounters(samplebuffer:sampleindex:barrier:).md) | None |
 
 The [`executeCommandsInBuffer(_:range:)`](mtlcomputecommandencoder/executecommandsinbuffer(_:range:).md) and [`executeCommandsInBuffer(_:indirectBuffer:offset:)`](mtlcomputecommandencoder/executecommandsinbuffer(_:indirectbuffer:offset:).md) commands don’t apply to any stage, which means you can’t use a barrier to wait for all commands in an indirect command buffer to complete. However, each command within the [`MTLIndirectCommandBuffer`](mtlindirectcommandbuffer.md) applies to the same stages as when you encode the equivalent command directly.
@@ -158,7 +158,7 @@ For more information about stages and synchronization, see [`MTLStages`](mtlstag
 
 ### Inherits From
 - [MTLCommandEncoder](mtlcommandencoder.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

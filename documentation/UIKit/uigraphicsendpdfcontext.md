@@ -21,7 +21,7 @@ func UIGraphicsEndPDFContext()
 
 #### Discussion
 
-You must call this function after you finish drawing to a PDF graphics context. This function closes the current open page and removes the PDF context from the graphics context stack. It also releases the [`CGContext`](https://developer.apple.com/documentation/CoreGraphics/CGContext) associated with the PDF context.  If the current graphics context is not a PDF context, this function does nothing.
+You must call this function after you finish drawing to a PDF graphics context. This function closes the current open page and removes the PDF context from the graphics context stack. It also releases the [`CGContext`](https://developer.apple.com/documentation/coregraphics/cgcontext) associated with the PDF context.  If the current graphics context is not a PDF context, this function does nothing.
 
 ## See Also
 

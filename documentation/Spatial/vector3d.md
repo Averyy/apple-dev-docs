@@ -185,16 +185,16 @@ struct Vector3D
 ## Relationships
 
 ### Conforms To
-- [AdditiveArithmetic](../Swift/AdditiveArithmetic.md)
-- [Animatable](../SwiftUI/Animatable.md)
-- [Copyable](../Swift/Copyable.md)
-- [CustomReflectable](../Swift/CustomReflectable.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Decodable](../Swift/Decodable.md)
-- [Encodable](../Swift/Encodable.md)
-- [Equatable](../Swift/Equatable.md)
-- [Escapable](../Swift/Escapable.md)
-- [Hashable](../Swift/Hashable.md)
+- [AdditiveArithmetic](../swift/additivearithmetic.md)
+- [Animatable](../swiftui/animatable.md)
+- [Copyable](../swift/copyable.md)
+- [CustomReflectable](../swift/customreflectable.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Decodable](../swift/decodable.md)
+- [Encodable](../swift/encodable.md)
+- [Equatable](../swift/equatable.md)
+- [Escapable](../swift/escapable.md)
+- [Hashable](../swift/hashable.md)
 - [Primitive3D](primitive3d.md)
 - [Primitive3DProtocol](primitive3dprotocol.md)
 - [ProjectiveTransformable3D](projectivetransformable3d.md)
@@ -202,11 +202,11 @@ struct Vector3D
 - [Rotatable3DProtocol](rotatable3dprotocol.md)
 - [Scalable3D](scalable3d.md)
 - [Scalable3DProtocol](scalable3dprotocol.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 - [Shearable3D](shearable3d.md)
 - [SpatialTypeProtocol](spatialtypeprotocol.md)
-- [VectorArithmetic](../SwiftUI/VectorArithmetic.md)
+- [VectorArithmetic](../swiftui/vectorarithmetic.md)
 
 ## See Also
 

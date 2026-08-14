@@ -21,7 +21,7 @@ Surface shared content and collaborate in your app.
 
 Access and view content shared from Messages across the system and continue the messaging experience without leaving your app. Incorporate Shared with You to make it easier for people to access content shared through conversations or notifications.
 
-![An image of an iPhone. In the middle of the screen is a Shared with You shelf with three list items arranged vertically. Each list item has a gray rectangle with text next to it. All three rows have Title as the title and Subtitle as the subtitle. Below the subtitle in all three rows is an oval button with the title From Juan.](https://docs-assets.developer.apple.com/published/cbf165ab43e7dff75cbc6c588785e19f/media-4301694%402x.png)
+![An image of an iPhone. In the middle of the screen is a Shared with You shelf with three list items arranged vertically. Each list item has a gray rectangle with text next to it. All three rows have Title as the title and Subtitle as the subtitle. Below the subtitle in all three rows is an oval button with the title From Juan.](/images/com.apple.sharedwithyou/media-4301694@2x.png)
 
 Support a Shared with You shelf in your app to visually represent shared items with an [`SWAttributionView`](swattributionview.md) that the system renders. Securely share universal links that your app accesses using the [`SWHighlight`](swhighlight.md) class. For information on getting started, see [`Making your app content shareable`](making-your-app-content-shareable.md).
 

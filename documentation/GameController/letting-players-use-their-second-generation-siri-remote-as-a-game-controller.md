@@ -12,13 +12,13 @@ To add support for the second-generation Siri Remote in your Apple TV game, you 
 
 First configure your Xcode project to handle directional gamepads and multiple micro gamepads.
 
-On the Signing & Capabilities tab in the project editor, add the Game Controllers capability to your project and check Directional Gamepad under Game Controllers. For more information, see [`Configuring game controllers`](https://developer.apple.com/documentation/Xcode/configuring-game-controllers).
+On the Signing & Capabilities tab in the project editor, add the Game Controllers capability to your project and check Directional Gamepad under Game Controllers. For more information, see [`Configuring game controllers`](https://developer.apple.com/documentation/xcode/configuring-game-controllers).
 
-On the Info tab, add the [`GCSupportsMultipleMicroGamepads`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/GCSupportsMultipleMicroGamepads) key and set the value to `YES`. For more information, see [`Managing your app’s information property list values`](https://developer.apple.com/documentation/BundleResources/managing-your-app-s-information-property-list).
+On the Info tab, add the [`GCSupportsMultipleMicroGamepads`](https://developer.apple.com/documentation/bundleresources/information-property-list/gcsupportsmultiplemicrogamepads) key and set the value to `YES`. For more information, see [`Managing your app’s information property list values`](https://developer.apple.com/documentation/bundleresources/managing-your-app-s-information-property-list).
 
 ##### Handle Multiple Micro Gamepads
 
-In your code, handle multiple micro gamepad connections. When a game controller connects, check if the controller is a directional gamepad using the [`isKind(of:)`](https://developer.apple.com/documentation/ObjectiveC/NSObjectProtocol/isKind(of:)) method:
+In your code, handle multiple micro gamepad connections. When a game controller connects, check if the controller is a directional gamepad using the [`isKind(of:)`](https://developer.apple.com/documentation/objectivec/nsobjectprotocol/iskind(of:)) method:
 
 ```swift
 if controller.microGamepad isKind(of: GCDirectionalGamepad.class) {

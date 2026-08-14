@@ -26,7 +26,7 @@ Trust settings for a certificate are associated with the hash of the certificate
 ## Parameters
 
 - `domain`: The trust settings domain for which you want an external representation of trust settings. For possible values, see [`SecTrustSettingsDomain`](sectrustsettingsdomain.md).
-- `trustSettings`: An external representation of the domain’s trust settings. In Objective-C, call the [`CFRelease`](https://developer.apple.com/documentation/CoreFoundation/CFRelease) function to release this object when you are finished with it.
+- `trustSettings`: An external representation of the domain’s trust settings. In Objective-C, call the [`CFRelease`](https://developer.apple.com/documentation/corefoundation/cfrelease) function to release this object when you are finished with it.
 
 
 ---

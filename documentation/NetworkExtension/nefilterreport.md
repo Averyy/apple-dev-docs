@@ -20,7 +20,7 @@ class NEFilterReport
 
 #### Overview
 
-The system issues a report by calling your control provider’s [`handle(_:)`](nefilterprovider/handle(_:).md) method with a report instance when the data provider issues a verdict whose [`shouldReport`](nefilterverdict/shouldreport.md) property is set to [`true`](https://developer.apple.com/documentation/Swift/true).
+The system issues a report by calling your control provider’s [`handle(_:)`](nefilterprovider/handle(_:).md) method with a report instance when the data provider issues a verdict whose [`shouldReport`](nefilterverdict/shouldreport.md) property is set to [`true`](https://developer.apple.com/documentation/swift/true).
 
 ## Topics
 
@@ -43,17 +43,17 @@ The system issues a report by calling your control provider’s [`handle(_:)`](n
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCoding](../Foundation/NSCoding.md)
-- [NSCopying](../Foundation/NSCopying.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [NSSecureCoding](../Foundation/NSSecureCoding.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCoding](../foundation/nscoding.md)
+- [NSCopying](../foundation/nscopying.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSSecureCoding](../foundation/nssecurecoding.md)
 
 ## See Also
 

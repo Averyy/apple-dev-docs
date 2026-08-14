@@ -19,7 +19,7 @@ class let touchBarAudioOutputVolumeOffTemplateName: String
 
 #### Discussion
 
-![Template image for audio output volume off](https://docs-assets.developer.apple.com/published/c226912c5e9cc6bcea5822c315dcf927/media-2825106%402x.png)
+![Template image for audio output volume off](/images/com.apple.appkit/media-2825106@2x.png)
 
 Touch Bar template images are exclusively for use in [`NSTouchBarItem`](nstouchbaritem.md) objects and not in onscreen windows.
 

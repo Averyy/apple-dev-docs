@@ -21,7 +21,7 @@ let HKMetadataKeySyncVersion: String
 
 #### Discussion
 
-This key takes an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) as its value. When you save an object to the HealthKit store, the new object replaces any matching objects (existing objects with a matching [`HKMetadataKeySyncIdentifier`](hkmetadatakeysyncidentifier.md) value) with a lower sync version.
+This key takes an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) as its value. When you save an object to the HealthKit store, the new object replaces any matching objects (existing objects with a matching [`HKMetadataKeySyncIdentifier`](hkmetadatakeysyncidentifier.md) value) with a lower sync version.
 
 For more information, see [`HKMetadataKeySyncIdentifier`](hkmetadatakeysyncidentifier.md).
 

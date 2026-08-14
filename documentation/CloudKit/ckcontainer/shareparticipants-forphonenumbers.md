@@ -22,7 +22,7 @@ func shareParticipants(forPhoneNumbers phoneNumbers: [String]) async throws -> [
 
 #### Return Value
 
-A dictionary of fetched share participants. The dictionary uses the phone numbers you specify in `phoneNumbers` as its keys. The value of each key is a [`Result`](https://developer.apple.com/documentation/Swift/Result) that contains either the corresponding fetched share participant, or an error that describes why CloudKit can’t fetch that share participant.
+A dictionary of fetched share participants. The dictionary uses the phone numbers you specify in `phoneNumbers` as its keys. The value of each key is a [`Result`](https://developer.apple.com/documentation/swift/result) that contains either the corresponding fetched share participant, or an error that describes why CloudKit can’t fetch that share participant.
 
 #### Discussion
 

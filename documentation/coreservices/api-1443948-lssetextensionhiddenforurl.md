@@ -32,8 +32,8 @@ Thread-safe since Mac OS version 10.2.
 
 ## Parameters
 
-- `inFileURL`: A Core Foundation URL reference designating the item whose filename extension is to be hidden or shown; see the   in the Core Foundation Reference Documentation for a description of the   data type. The URL must have scheme   and contain a valid path to either a file or a directory.
-- `inHide`: A Boolean value specifying whether the extension should be hidden ( ) or shown ( ).
+- `inFileURL`: A Core Foundation URL reference designating the item whose filename extension is to be hidden or shown; see the *CFURL Reference* in the Core Foundation Reference Documentation for a description of the `CFURLRef` data type. The URL must have scheme `file` and contain a valid path to either a file or a directory.
+- `inHide`: A Boolean value specifying whether the extension should be hidden (`true`) or shown (`false`).
 
 ## See Also
 

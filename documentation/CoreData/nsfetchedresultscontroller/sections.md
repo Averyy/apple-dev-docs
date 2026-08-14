@@ -24,7 +24,7 @@ var sections: [any NSFetchedResultsSectionInfo]? { get }
 
 The objects in the sections array implement the [`NSFetchedResultsSectionInfo`](nsfetchedresultssectioninfo.md) protocol.
 
-You typically use the sections array when implementing `UITableViewDataSource` methods, such as [`numberOfSections(in:)`](https://developer.apple.com/documentation/UIKit/UITableViewDataSource/numberOfSections(in:)) and [`tableView(_:titleForHeaderInSection:)`](https://developer.apple.com/documentation/UIKit/UITableViewDataSource/tableView(_:titleForHeaderInSection:)).
+You typically use the sections array when implementing `UITableViewDataSource` methods, such as [`numberOfSections(in:)`](https://developer.apple.com/documentation/uikit/uitableviewdatasource/numberofsections(in:)) and [`tableView(_:titleForHeaderInSection:)`](https://developer.apple.com/documentation/uikit/uitableviewdatasource/tableview(_:titleforheaderinsection:)).
 
 ## See Also
 

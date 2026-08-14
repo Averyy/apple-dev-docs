@@ -11,7 +11,7 @@ Safari on macOS has several tools for web developers, including the [`Develop me
 3. Go to the **Advanced** pane.
 4. Check the **Show features for web developers** checkbox.
 
-![Safari’s Advanced Settings Pane with “Show features for web developers” highlighted at the bottom of the window.](https://docs-assets.developer.apple.com/published/d566397b9712b13285f2fc05bc1fc07a/EnablingToolsForWebDevelopers-SafariAdvancedSettings%402x.png)
+![Safari’s Advanced Settings Pane with “Show features for web developers” highlighted at the bottom of the window.](/images/com.apple.safari.developer-tools/EnablingToolsForWebDevelopers-SafariAdvancedSettings@2x.png)
 
 
 ---

@@ -22,7 +22,7 @@ class NSTouchBar
 
 On supported MacBook Pro models, the Touch Bar, above the keyboard, shows instances of the [`NSTouchBar`](nstouchbar.md) class from the front-most app. Such an instance is called a *bar*. You define a bar to provide controls relevant to the user’s context. Each such control is an instance of the [`NSTouchBarItem`](nstouchbaritem.md) class, called an *item*.
 
-![Image of bars and items from the TextEdit app, identifying examples of bars and items as well as the Control Strip.](https://docs-assets.developer.apple.com/published/e4c99a6dd2d8c87ddb4a3c6e063c2710/media-2851859%402x.png)
+![Image of bars and items from the TextEdit app, identifying examples of bars and items as well as the Control Strip.](/images/com.apple.appkit/media-2851859@2x.png)
 
 You can provide many bars within your app, one for each responder instance; macOS frameworks can provide bars, as well, that can appear alongside your app’s bars. The system determines which bars to show at any given time. For example, an app that uses standard AppKit objects, such as text fields (instances of the [`NSTextField`](nstextfield.md) class), obtains appropriate bars along with relevant items automatically.
 
@@ -45,7 +45,7 @@ The Touch Bar is a Retina display, like the screen of a MacBook Pro. To perform 
 
 On the right side of the Touch Bar, the system supplies the always-available *Control Strip*. The Control Strip gives the user access to standard controls for display brightness, sound volume, Siri, and so on. Your app’s bars appear to the left of the Control Strip. The user can choose to hide the Control Strip, which gives the frontmost app the entire Touch Bar width.
 
-To the right of the Control Strip is a Touch ID sensor. To use Touch ID on supported MacBook Pro models, use methods from the [`Local Authentication`](https://developer.apple.com/documentation/LocalAuthentication) framework.
+To the right of the Control Strip is a Touch ID sensor. To use Touch ID on supported MacBook Pro models, use methods from the [`Local Authentication`](https://developer.apple.com/documentation/localauthentication) framework.
 
 The Touch Bar dims automatically and wakes when the user touches it. Don’t show alerts in the Touch Bar, and don’t use the Touch Bar for widgets.
 
@@ -153,7 +153,7 @@ The system also respects your bar customization configuration when you use group
 
 A user invokes the customization UI for a particular [`NSTouchBar`](nstouchbar.md) object, when it’s visible in the Touch Bar, by choosing the bar customization menu item. To enable this menu item you must explicitly opt-in, which you can do in the following ways:
 
-- If you want the system to automatically name, place, validate, and activate this menu item in your app’s menus, set the [`isAutomaticCustomizeTouchBarMenuItemEnabled`](nsapplication/isautomaticcustomizetouchbarmenuitemenabled.md) property of your app object (of type [`NSApplication`](nsapplication.md)) to [`true`](https://developer.apple.com/documentation/Swift/true).
+- If you want the system to automatically name, place, validate, and activate this menu item in your app’s menus, set the [`isAutomaticCustomizeTouchBarMenuItemEnabled`](nsapplication/isautomaticcustomizetouchbarmenuitemenabled.md) property of your app object (of type [`NSApplication`](nsapplication.md)) to [`true`](https://developer.apple.com/documentation/swift/true).
 - To explicitly place the customization menu item in one of your app’s menus, employ the [`toggleTouchBarCustomizationPalette(_:)`](nsapplication/toggletouchbarcustomizationpalette(_:).md) method of your app object. When you do this, the system still names and validates the menu item, and hides it on systems that don’t have a Touch Bar.
 
 If you attempt to employ the customization menu item (using either of these two approaches), but do not provide a customization identifier property ([`customizationIdentifier`](nstouchbar/customizationidentifier-swift.property.md)) for a bar, the customization menu item appears when that bar is active — but the menu item, in this case, is disabled.
@@ -340,18 +340,18 @@ Always test Touch Bar performance using the specific MacBook hardware you suppor
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [Copyable](../Swift/Copyable.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Escapable](../Swift/Escapable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCoding](../Foundation/NSCoding.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [Sendable](../Swift/Sendable.md)
+- [CVarArg](../swift/cvararg.md)
+- [Copyable](../swift/copyable.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Escapable](../swift/escapable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCoding](../foundation/nscoding.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [Sendable](../swift/sendable.md)
 
 ## See Also
 

@@ -7,7 +7,7 @@ An atom you use to specify out-of-order video samples.
 
 #### Overview
 
-See [`Composition offset atom ('ctts')`](composition_offset_atom.md).
+See [`Composition offset atom`](composition_offset_atom.md).
 
 ## See Also
 

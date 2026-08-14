@@ -8,9 +8,9 @@ Build a license server that supports the installation of your apps and the apps 
 
 iOS and iPadOS require each app that installs outside of the App Store to have a license issued by the developer. As the developer of an alternative app marketplace or other app that installs over the web, you use the [`App License Delivery SDK`](AppLicenseDeliverySDK.md) to generate a license for each download request for your app. Alternative app marketplaces also create a license for each download request for the apps that they distribute.
 
-Before continuing, ensure you complete the steps in either [`Creating an alternative app marketplace`](https://developer.apple.com/documentation/appdistribution/creating-an-alternative-app-marketplace) or [`Distributing your app from your website`](https://developer.apple.com/documentation/appdistribution/distributing-your-app-from-your-website).
+Before continuing, ensure you complete the steps in either [`Creating an alternative app marketplace`](https://developer.apple.com/documentation/marketplacekit/creating-an-alternative-app-marketplace) or [`Distributing your app from your website`](https://developer.apple.com/documentation/marketplacekit/distributing-your-app-from-your-website).
 
-The [`MarketplaceKit`](https://developer.apple.com/documentation/MarketplaceKit) installation methods trigger the device’s operating system to request a license from your web server before installing a particular app. To support installation of your app or the apps on your marketplace, implement a license server to process the requests. Your license server consists of two endpoints that use this SDK: one that creates licenses for new installations and another that updates the licenses of existing installations.
+The [`MarketplaceKit`](https://developer.apple.com/documentation/marketplacekit) installation methods trigger the device’s operating system to request a license from your web server before installing a particular app. To support installation of your app or the apps on your marketplace, implement a license server to process the requests. Your license server consists of two endpoints that use this SDK: one that creates licenses for new installations and another that updates the licenses of existing installations.
 
 > ❗ **Important**: Prepare your App License Delivery (ALD) encryption assets and development environment for use with the licensing workflow. For more information, see [`Configuring your app licensing environment`](configuring-the-app-licensing-environment.md).
 
@@ -22,7 +22,7 @@ To inform the system of the details of your license server, publish a `marketpla
 https://<fully qualified domain>/.well-known/marketplace-kit
 ```
 
-The base domain, `<fully qualified domain>`, of the above URL is from the app’s domain that you add to App Store Connect. For more information about adding and managing domains in App Store Connect, see [`Alternative Distribution Domains`](https://developer.apple.com/documentation/AppStoreConnectAPI/alternative-distribution-domains).
+The base domain, `<fully qualified domain>`, of the above URL is from the app’s domain that you add to App Store Connect. For more information about adding and managing domains in App Store Connect, see [`Alternative Distribution Domains`](https://developer.apple.com/documentation/appstoreconnectapi/alternative-distribution-domains).
 
 This URL is your licensing endpoint, so your web server needs to serve a JSON configuration file that identifies your license server details:
 
@@ -50,9 +50,9 @@ The system requires that the “`license`” key specifies the following propert
 | `signingCertificateURL` | A certificate that signs liceneses you create. |
 | `encryptionCertificateURL` | A certificate that the system uses to encrypt license requests. |
 
-> **Note**: The “`restore`” and “`updates`” keys configuration require you to set a value. For more information, see [`Installing your app from your website`](https://developer.apple.com/documentation/appdistribution/installing-your-app-from-your-website) for alternative marketplace apps, and [`Installing apps from an alternative marketplace`](https://developer.apple.com/documentation/appdistribution/installing-apps-from-an-alternative-marketplace) for other apps.
+> **Note**: The “`restore`” and “`updates`” keys configuration require you to set a value. For more information, see [`Installing your app from your website`](https://developer.apple.com/documentation/marketplacekit/installing-your-app-from-your-website) for alternative marketplace apps, and [`Installing apps from an alternative marketplace`](https://developer.apple.com/documentation/marketplacekit/installing-apps-from-an-alternative-marketplace) for other apps.
 
-Host the file using the `https://` URL scheme with a valid certificate, and don’t use redirects. This configuration publication follows the same pattern as the `apple-app-site-association` file. For more information, see [`Supporting associated domains`](https://developer.apple.com/documentation/Xcode/supporting-associated-domains).
+Host the file using the `https://` URL scheme with a valid certificate, and don’t use redirects. This configuration publication follows the same pattern as the `apple-app-site-association` file. For more information, see [`Supporting associated domains`](https://developer.apple.com/documentation/xcode/supporting-associated-domains).
 
 For more information about the signing and encryption certificates, see [`Configuring your app licensing environment`](configuring-the-app-licensing-environment.md).
 
@@ -68,7 +68,7 @@ Host: server.example.com
 Authorization: Bearer mF_9.B5f-4.1JqM
 ```
 
-Your token endpoint issues the bearer token to the signed-in person at the start of the app download request and the system adds it to all further communication with your server for their account. Use your rules to decide whether to issue the licenses in the request for the account. For more information about authorization, see [`Installing your app from your website`](https://developer.apple.com/documentation/appdistribution/installing-your-app-from-your-website).
+Your token endpoint issues the bearer token to the signed-in person at the start of the app download request and the system adds it to all further communication with your server for their account. Use your rules to decide whether to issue the licenses in the request for the account. For more information about authorization, see [`Installing your app from your website`](https://developer.apple.com/documentation/marketplacekit/installing-your-app-from-your-website).
 
 The following example reflects the body of a dynamic license request the system makes to your licensing endpoint:
 
@@ -93,16 +93,16 @@ The license request payload contains the following data:
 | --- | --- |
 | `licenseRequest` | A `base64` encoded license request that’s AES CBC encrypted. |
 | `licenseKey` | An AES key/IV that’s `base64` encoded and RSA-OAEP encrypted. This key encrypts the license request. |
-| `appsById` | A set of one or more identifiers ([`AppleItemID`](https://developer.apple.com/documentation/MarketplaceKit/AppleItemID)) that refer to an app that your marketplace distributes. |
+| `appsById` | A set of one or more identifiers ([`AppleItemID`](https://developer.apple.com/documentation/marketplacekit/appleitemid)) that refer to an app that your marketplace distributes. |
 
 Each item in `appsById` describes the following data:
 
 | `appsById` key | Value |
 | --- | --- |
-| `appleVersionID` | The app version ([`AppleVersionID`](https://developer.apple.com/documentation/MarketplaceKit/AppleVersionID)) that the device requests. |
+| `appleVersionID` | The app version ([`AppleVersionID`](https://developer.apple.com/documentation/marketplacekit/appleversionid)) that the device requests. |
 | `assetPublicId` | The app variant that the system chooses for the device. |
 
-To begin processing the request, parse the payload using a [`JSONDecoder`](https://developer.apple.com/documentation/Foundation/JSONDecoder):
+To begin processing the request, parse the payload using a [`JSONDecoder`](https://developer.apple.com/documentation/foundation/jsondecoder):
 
 ```swift
 struct LicenseRequest: Decodable {
@@ -246,7 +246,7 @@ With the session object, generate a license for each app that you approve for do
 1. Choose a value for the license ID. Ensure the ID is unique across all the licenses your license server distributes.
 2. Create a license attribute for the license ID by calling [`init(licenseID:)`](aldlicenseattribute/init(licenseid:).md).
 3. Set the [`issuedTime`](aldlicenseattribute/issuedtime.md) and a [`duration`](aldlicenseattribute/duration.md), in seconds, that determines when the license expires. For example, setting `duration` to `86400` prevents the licensed app from launching after a day.
-4. Set the `appKey` for the app, or *key blob*, which is unique per app variant. Refer to `appsById` in the request payload for the app ID, and `assetPublicId` for the variant that iOS needs for that app. App Store Connect provides the key blob during app ingestion. For more information, see [`Ingesting an alternative distribution package`](https://developer.apple.com/documentation/appdistribution/ingesting-an-alternative-distribution-package).
+4. Set the `appKey` for the app, or *key blob*, which is unique per app variant. Refer to `appsById` in the request payload for the app ID, and `assetPublicId` for the variant that iOS needs for that app. App Store Connect provides the key blob during app ingestion. For more information, see [`Ingesting an alternative distribution package`](https://developer.apple.com/documentation/marketplacekit/ingesting-an-alternative-distribution-package).
 5. Create the license by calling the [`generateLicense(attr:)`](aldsession/generatelicense(attr:).md) method with the license attribute.
 
 ```swift
@@ -265,7 +265,7 @@ try session.generateLicense(attr: attribute)
 
 If the system requests a license for multiple apps in its POST, repeat this process for each app. Every time you call [`generateLicense(attr:)`](aldsession/generatelicense(attr:).md), the framework queues an additional license for the response.
 
-> ❗ **Important**: In iOS 17.4, set a value less than `Int64.max`; see [`iOS & iPadOS 17.4 Release Notes`](https://developer.apple.com/documentation/iOS-iPadOS-Release-Notes/ios-ipados-17_4-release-notes).
+> ❗ **Important**: In iOS 17.4, set a value less than `Int64.max`; see [`iOS & iPadOS 17.4 Release Notes`](https://developer.apple.com/documentation/ios-ipados-release-notes/ios-ipados-17_4-release-notes).
 
 #### Respond with the Generated Licenses
 
@@ -308,7 +308,7 @@ The format of the license response payload is:
 | License response payload key | Value |
 | --- | --- |
 | `license` | The `finalizeLicenseResponse` return result that you encode in `base64`. This value contains the license(s) that you added to the session. |
-| `unlicensedApps` | An array that contains an [`AppleItemID`](https://developer.apple.com/documentation/MarketplaceKit/AppleItemID) for each app from the request for which you choose not to provide a license. |
+| `unlicensedApps` | An array that contains an [`AppleItemID`](https://developer.apple.com/documentation/marketplacekit/appleitemid) for each app from the request for which you choose not to provide a license. |
 
 > ❗ **Important**: To complete an installation, the system requires a response from your server within 60 seconds of making the request. If you use a web debugging proxy tool to test license generation, make sure it doesn’t interfere with your server’s ability to respond promptly.
 
@@ -316,8 +316,8 @@ When the system receives the `license` response, it validates the licenses conta
 
 Then, the system downloads the licensed app(s) from your app web server. For more information about serving app downloads, see:
 
-- [`Installing your app from your website`](https://developer.apple.com/documentation/appdistribution/installing-your-app-from-your-website) for alternative marketplace apps or other apps that install from your website.
-- [`Installing apps from an alternative marketplace`](https://developer.apple.com/documentation/appdistribution/installing-apps-from-an-alternative-marketplace) for other apps.
+- [`Installing your app from your website`](https://developer.apple.com/documentation/marketplacekit/installing-your-app-from-your-website) for alternative marketplace apps or other apps that install from your website.
+- [`Installing apps from an alternative marketplace`](https://developer.apple.com/documentation/marketplacekit/installing-apps-from-an-alternative-marketplace) for other apps.
 
 #### Track the Number of Simultaneous App Installs for an Account
 

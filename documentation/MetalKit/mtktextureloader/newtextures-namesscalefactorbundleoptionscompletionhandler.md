@@ -23,12 +23,12 @@ func newTextures(names: [String], scaleFactor: CGFloat, bundle: Bundle?, options
 
 > ❗ **Important**:  You can call this method from synchronous code using a completion handler, as shown on this page, or you can call it as an asynchronous method that has the following declaration: ```swift
 func newTextures(names: [String], scaleFactor: CGFloat, bundle: Bundle?, options: [MTKTextureLoader.Option : Any]? = nil) async throws -> [MTLTexture]
-``` For information about concurrency and asynchronous code in Swift, see [`Calling Objective-C APIs Asynchronously`](https://developer.apple.com/documentation/Swift/calling-objective-c-apis-asynchronously).
+``` For information about concurrency and asynchronous code in Swift, see [`Calling Objective-C APIs Asynchronously`](https://developer.apple.com/documentation/swift/calling-objective-c-apis-asynchronously).
 
 ## Parameters
 
 - `names`: An array of strings, each the name of a texture in an asset catalog.
-- `scaleFactor`: The scale factor of texture to request. In iOS and tvOS, pass the [`contentsScale`](https://developer.apple.com/documentation/QuartzCore/CALayer/contentsScale) value of the view where you plan to display texture content. In macOS, pass the [`backingScaleFactor`](https://developer.apple.com/documentation/AppKit/NSWindow/backingScaleFactor) value of the window where you plan to display texture content.
+- `scaleFactor`: The scale factor of texture to request. In iOS and tvOS, pass the [`contentsScale`](https://developer.apple.com/documentation/quartzcore/calayer/contentsscale) value of the view where you plan to display texture content. In macOS, pass the [`backingScaleFactor`](https://developer.apple.com/documentation/appkit/nswindow/backingscalefactor) value of the window where you plan to display texture content.
 - `bundle`: The resource bundle containing the asset catalog to load textures from.
 - `options`: A dictionary describing any additional texture loading steps. See `Texture Loading Options`. When using this method, the texture loader ignores the [`generateMipmaps`](mtktextureloader/option/generatemipmaps.md), [`SRGB`](mtktextureloader/option/srgb.md), [`cubeLayout`](mtktextureloader/option/cubelayout.md), and [`origin`](mtktextureloader/option/origin.md) options.
 - `completionHandler`: A block called after all assets have been processed. See the [`MTKTextureLoader.ArrayCallback`](mtktextureloader/arraycallback.md) signature to determine whether each texture has successfully loaded.

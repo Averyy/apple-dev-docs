@@ -23,7 +23,7 @@ Increasing the offset’s `x` value shifts the content to the left. Increasing t
 ## Parameters
 
 - `contentOffset`: The distance that the content is offset from the browser’s origin.
-- `animated`: A Boolean value that determines whether the change is animated. If [`true`](https://developer.apple.com/documentation/Swift/true), the change is animated at a constant velocity. If [`false`](https://developer.apple.com/documentation/Swift/false), the change takes place immediately.
+- `animated`: A Boolean value that determines whether the change is animated. If [`true`](https://developer.apple.com/documentation/swift/true), the change is animated at a constant velocity. If [`false`](https://developer.apple.com/documentation/swift/false), the change takes place immediately.
 
 ## See Also
 

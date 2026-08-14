@@ -24,11 +24,11 @@ protocol NSCopying
 
 The exact meaning of “copy” can vary from class to class, but a copy must be a functionally independent object with values identical to the original at the time the copy was made. A copy produced with [`NSCopying`](nscopying.md) is implicitly retained by the sender, who is responsible for releasing it.
 
-[`NSCopying`](nscopying.md) declares one method, [`copy(with:)`](nscopying/copy(with:).md), but copying is commonly invoked with the convenience method [`copy()`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class/copy()). The [`copy()`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class/copy()) method is defined for all objects inheriting from [`NSObject`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class) and simply invokes [`copy(with:)`](nscopying/copy(with:).md) with the default zone.
+[`NSCopying`](nscopying.md) declares one method, [`copy(with:)`](nscopying/copy(with:).md), but copying is commonly invoked with the convenience method [`copy()`](https://developer.apple.com/documentation/objectivec/nsobject-swift.class/copy()). The [`copy()`](https://developer.apple.com/documentation/objectivec/nsobject-swift.class/copy()) method is defined for all objects inheriting from [`NSObject`](https://developer.apple.com/documentation/objectivec/nsobject-swift.class) and simply invokes [`copy(with:)`](nscopying/copy(with:).md) with the default zone.
 
 Your options for implementing this protocol are as follows:
 
-- Implement [`NSCopying`](nscopying.md) using [`alloc`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class/alloc) and `init...` in classes that don’t inherit [`copy(with:)`](nscopying/copy(with:).md).
+- Implement [`NSCopying`](nscopying.md) using [`alloc`](https://developer.apple.com/documentation/objectivec/nsobject-swift.class/alloc) and `init...` in classes that don’t inherit [`copy(with:)`](nscopying/copy(with:).md).
 - Implement [`NSCopying`](nscopying.md) by invoking the superclass’s [`copy(with:)`](nscopying/copy(with:).md) when `NSCopying` behavior is inherited. If the superclass implementation might use the [`NSCopyObject`](nscopyobject.md) function, make explicit assignments to pointer instance variables for retained objects.
 - Implement [`NSCopying`](nscopying.md) by retaining the original instead of creating a new copy when the class and its contents are immutable.
 

@@ -8,7 +8,7 @@ Show a temporary interface on top of your app’s content on iPad.
 
 Use popovers for app content that appears when needed and disappears when someone is finished with it. For example, use popovers to display information about the currently selected item, to display tools and configuration options, or to gather information from a person. You anchor a popover to a specific location onscreen, and the popover floats above the main window. The following image shows how the Calendar app on iPad uses a popover to show detailed meeting information.
 
-![An illustration of an event in Calendar with the event’s popover next to and pointing to it.](https://docs-assets.developer.apple.com/published/ef05d3cb071e4c11209cce39b596ca99/displaying-transient-content-in-a-popover%402x.png)
+![An illustration of an event in Calendar with the event’s popover next to and pointing to it.](/images/com.apple.uikit/displaying-transient-content-in-a-popover@2x.png)
 
 You specify the content of a popover using a view controller. You then present your view controller using the popover presentation style. UIKit anchors your popover to the location you specify.
 

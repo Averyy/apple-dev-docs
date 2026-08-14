@@ -31,7 +31,7 @@ This class enables people to interact with specific content types ([`ImageAnalys
 
 #### Configure the Interface and Begin Interaction
 
-This class conforms to the [`UIInteraction`](https://developer.apple.com/documentation/UIKit/UIInteraction) protocol. To connect the interface with an image that your app displays, call [`addInteraction(_:)`](https://developer.apple.com/documentation/UIKit/UIView/addInteraction(_:)) on your app’s image view and pass in a new instance of this class.
+This class conforms to the [`UIInteraction`](https://developer.apple.com/documentation/uikit/uiinteraction) protocol. To connect the interface with an image that your app displays, call [`addInteraction(_:)`](https://developer.apple.com/documentation/uikit/uiview/addinteraction(_:)) on your app’s image view and pass in a new instance of this class.
 
 Choose the items that the framework recognizes in an image by configuring the  [`preferredInteractionTypes`](imageanalysisinteraction/preferredinteractiontypes.md) property. To recognize all types of content, specify the [`automatic`](imageanalysisinteraction/interactiontypes/automatic.md) option, or choose a combination of types by assigning an array:
 
@@ -41,7 +41,7 @@ interaction.preferredInteractionTypes = [.textSelection, .imageSubject]
 
 To begin interaction, call one of the [`ImageAnalyzer`](imageanalyzer.md) class’s `analyze` methods, such as [`analyze(_:configuration:)`](imageanalyzer/analyze(_:configuration:).md) and set the result onto this class’s [`analysis`](imageanalysisoverlayview/analysis.md) property.
 
-You can take more control over the interaction or provide details about your app’s image view by implementing a delegate ([`ImageAnalysisInteractionDelegate`](imageanalysisinteractiondelegate.md)) and assigning it to the [`delegate`](imageanalysisinteraction/delegate.md) property. If your image view isn’t an instance of [`UIImageView`](https://developer.apple.com/documentation/UIKit/UIImageView), your app needs to define the interactive area within the image by implementing the [`contentsRect(for:)`](imageanalysisinteractiondelegate/contentsrect(for:).md) method.
+You can take more control over the interaction or provide details about your app’s image view by implementing a delegate ([`ImageAnalysisInteractionDelegate`](imageanalysisinteractiondelegate.md)) and assigning it to the [`delegate`](imageanalysisinteraction/delegate.md) property. If your image view isn’t an instance of [`UIImageView`](https://developer.apple.com/documentation/uikit/uiimageview), your app needs to define the interactive area within the image by implementing the [`contentsRect(for:)`](imageanalysisinteractiondelegate/contentsrect(for:).md) method.
 
 ## Topics
 
@@ -132,17 +132,17 @@ You can take more control over the interaction or provide details about your app
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
-- [UIInteraction](../UIKit/UIInteraction.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
+- [UIInteraction](../uikit/uiinteraction.md)
 
 ## See Also
 

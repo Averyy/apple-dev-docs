@@ -21,7 +21,10 @@ A result code. See [`Result Codes`](core_printing#1670007.md).
 ## Parameters
 
 - `pageFormat`: The page format object whose orientation you want to obtain.
-- `orientation`: See   for a complete description of the page orientation constants.
+- `orientation`: A pointer to your `PMOrientation` variable. On return, the variable contains a constant value indicating the page orientation. Supported values are: - `kPMPortrait`
+- `kPMLandscape`
+- `kPMReversePortrait` (supported in macOS 10.5 and later)
+- `kPMReverseLandscape` See [`PMOrientation`](pmorientation.md) for a complete description of the page orientation constants.
 
 ## See Also
 

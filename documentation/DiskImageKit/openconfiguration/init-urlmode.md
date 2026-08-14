@@ -16,7 +16,7 @@ init(url: URL, mode: OpenConfiguration.Mode = .automatic)
 
 ## Parameters
 
-- `url`: The [`URL`](https://developer.apple.com/documentation/Foundation/URL) of the disk image file to open.
+- `url`: The [`URL`](https://developer.apple.com/documentation/foundation/url) of the disk image file to open.
 - `mode`: The mode in which to open the image (read-only or read-write).
 
 

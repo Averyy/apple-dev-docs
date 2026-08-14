@@ -21,7 +21,7 @@ A standalone document does not have an external DTD associated with it.
 
 ## Parameters
 
-- `standalone`: [`true`](https://developer.apple.com/documentation/Swift/true) if the receiver represents a standalone XML document, [`false`](https://developer.apple.com/documentation/Swift/false) otherwise.
+- `standalone`: [`true`](https://developer.apple.com/documentation/swift/true) if the receiver represents a standalone XML document, [`false`](https://developer.apple.com/documentation/swift/false) otherwise.
 
 ## See Also
 

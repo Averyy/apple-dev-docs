@@ -19,7 +19,7 @@ let kCFStreamPropertyHTTPProxy: CFString
 
 #### Discussion
 
-HTTP Proxy property. To cause an HTTP CFStream to use an HTTP proxy, set the value of this property to a CFDictionary that includes at least one host/port pair described in “CFStream SOCKS Proxy Key Constants” in [`CFStream`](https://developer.apple.com/documentation/CoreFoundation/cfstream). SystemConfiguration returns a CFDictionary that is usable without modification.
+HTTP Proxy property. To cause an HTTP CFStream to use an HTTP proxy, set the value of this property to a CFDictionary that includes at least one host/port pair described in “CFStream SOCKS Proxy Key Constants” in [`CFStream`](https://developer.apple.com/documentation/corefoundation/cfstream). SystemConfiguration returns a CFDictionary that is usable without modification.
 
 ## See Also
 
@@ -36,7 +36,7 @@ HTTP Proxy property. To cause an HTTP CFStream to use an HTTP proxy, set the val
 - [let kCFStreamPropertyHTTPProxyPort: CFString](kcfstreampropertyhttpproxyport.md)
 - [let kCFStreamPropertyHTTPRequestBytesWrittenCount: CFString](kcfstreampropertyhttprequestbyteswrittencount.md)
 - [let kCFStreamPropertyHTTPResponseHeader: CFString](kcfstreampropertyhttpresponseheader.md)
-  HTTP Response Header property. When copied by [`CFReadStreamCopyProperty(_:_:)`](https://developer.apple.com/documentation/CoreFoundation/CFReadStreamCopyProperty(_:_:)), the header of an HTTP response message is returned.
+  HTTP Response Header property. When copied by [`CFReadStreamCopyProperty(_:_:)`](https://developer.apple.com/documentation/corefoundation/cfreadstreamcopyproperty(_:_:)), the header of an HTTP response message is returned.
 - [let kCFStreamPropertyHTTPSProxyHost: CFString](kcfstreampropertyhttpsproxyhost.md)
 - [let kCFStreamPropertyHTTPSProxyPort: CFString](kcfstreampropertyhttpsproxyport.md)
 - [let kCFStreamPropertyHTTPShouldAutoredirect: CFString](kcfstreampropertyhttpshouldautoredirect.md)

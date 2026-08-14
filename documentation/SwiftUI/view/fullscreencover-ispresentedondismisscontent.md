@@ -55,7 +55,7 @@ struct FullScreenCoverPresentedOnDismiss: View {
 }
 ```
 
-![A full-screen modal view with the text A full-screen modal view](https://docs-assets.developer.apple.com/published/a32b09a71d0ef972a3408add2e1a9871/SwiftUI-FullScreenCoverIsPresented%402x.png)
+![A full-screen modal view with the text A full-screen modal view](/images/com.apple.SwiftUI/SwiftUI-FullScreenCoverIsPresented@2x.png)
 
 ## Parameters
 

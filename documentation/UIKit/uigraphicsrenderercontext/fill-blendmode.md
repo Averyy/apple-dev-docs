@@ -22,7 +22,7 @@ func fill(_ rect: CGRect, blendMode: CGBlendMode)
 
 Before calling this method, select the fill color with the [`setFill()`](uicolor/setfill().md) method on an instance of [`UIColor`](uicolor.md).
 
-The blend mode specifies how the new value for a given pixel is calculated, given the existing pixel value and the currently selected fill color. For more information on the blend modes available, see [`CGBlendMode`](https://developer.apple.com/documentation/CoreGraphics/CGBlendMode).
+The blend mode specifies how the new value for a given pixel is calculated, given the existing pixel value and the currently selected fill color. For more information on the blend modes available, see [`CGBlendMode`](https://developer.apple.com/documentation/coregraphics/cgblendmode).
 
 For an example of how to use this method, see [`Using blend mode`](uigraphicsimagerenderer#Using-blend-mode.md) in [`UIGraphicsImageRenderer`](uigraphicsimagerenderer.md).
 

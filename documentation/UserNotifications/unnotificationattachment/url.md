@@ -21,7 +21,7 @@ var url: URL { get }
 
 #### Discussion
 
-The file at the specified URL is security scoped to your app. Before you access it, call the [`startAccessingSecurityScopedResource()`](https://developer.apple.com/documentation/Foundation/URL/startAccessingSecurityScopedResource()) method of [`NSURL`](https://developer.apple.com/documentation/Foundation/NSURL).
+The file at the specified URL is security scoped to your app. Before you access it, call the [`startAccessingSecurityScopedResource()`](https://developer.apple.com/documentation/foundation/url/startaccessingsecurityscopedresource()) method of [`NSURL`](https://developer.apple.com/documentation/foundation/nsurl).
 
 ## See Also
 

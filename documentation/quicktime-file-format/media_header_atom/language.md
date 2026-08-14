@@ -7,7 +7,7 @@ A 16-bit integer that specifies the language code for this media.
 
 #### Overview
 
-See [`Language code values`](language_code_values.md) for valid language codes. Also see [`Extended language tag atom ('elng')`](extended_language_tag_atom.md) for the preferred code to use here if an extended language tag is also included in the media atom.
+See [`Language code values`](language_code_values.md) for valid language codes. Also see [`Extended language tag atom`](extended_language_tag_atom.md) for the preferred code to use here if an extended language tag is also included in the media atom.
 
 ## See Also
 

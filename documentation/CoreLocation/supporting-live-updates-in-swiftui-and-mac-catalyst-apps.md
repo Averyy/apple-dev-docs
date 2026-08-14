@@ -12,11 +12,11 @@ In iOS 17 and later, Core Location supports live updates using Swift concurrency
 
 To add support for life cycle events, you need to add three components to your app:
 
-1. A shared state using an [`ObservableObject`](https://developer.apple.com/documentation/Combine/ObservableObject) that maintains instances of [`CLLocationManager`](cllocationmanager.md) and [`CLBackgroundActivitySession`](clbackgroundactivitysession-3mzv3.md)
-2. An `AppDelegate` object that provides the [`application(_:didFinishLaunchingWithOptions:)`](https://developer.apple.com/documentation/UIKit/UIApplicationDelegate/application(_:didFinishLaunchingWithOptions:)) method that handles resuming background activities on return from background or an app relaunch
+1. A shared state using an [`ObservableObject`](https://developer.apple.com/documentation/combine/observableobject) that maintains instances of [`CLLocationManager`](cllocationmanager.md) and [`CLBackgroundActivitySession`](clbackgroundactivitysession-3mzv3.md)
+2. An `AppDelegate` object that provides the [`application(_:didFinishLaunchingWithOptions:)`](https://developer.apple.com/documentation/uikit/uiapplicationdelegate/application(_:didfinishlaunchingwithoptions:)) method that handles resuming background activities on return from background or an app relaunch
 3. An `AppDelegate` object in the SwiftUI or Mac Catalyst app’s `@main` structure
 
-In your SwiftUI or Mac Catalyst App, add support for the `AppDelegate` by adding a shared state through an [`ObservableObject`](https://developer.apple.com/documentation/Combine/ObservableObject), and a [`UIApplicationDelegateAdaptor`](https://developer.apple.com/documentation/SwiftUI/UIApplicationDelegateAdaptor) as an object the app’s `@main` structure maintains, as shown in the following example:
+In your SwiftUI or Mac Catalyst App, add support for the `AppDelegate` by adding a shared state through an [`ObservableObject`](https://developer.apple.com/documentation/combine/observableobject), and a [`UIApplicationDelegateAdaptor`](https://developer.apple.com/documentation/swiftui/uiapplicationdelegateadaptor) as an object the app’s `@main` structure maintains, as shown in the following example:
 
 ```swift
     import SwiftUI
@@ -83,7 +83,7 @@ In your SwiftUI or Mac Catalyst App, add support for the `AppDelegate` by adding
     }
 ```
 
-Next, create an instance of a UIKit `AppDelegate` class that conforms to SwiftUI’s [`ObservableObject`](https://developer.apple.com/documentation/Combine/ObservableObject) protocol; this enables the `AppDelegate` to participate in the SwiftUI’s app-level shared state and manages the resumption of Core Location activities when needed.
+Next, create an instance of a UIKit `AppDelegate` class that conforms to SwiftUI’s [`ObservableObject`](https://developer.apple.com/documentation/combine/observableobject) protocol; this enables the `AppDelegate` to participate in the SwiftUI’s app-level shared state and manages the resumption of Core Location activities when needed.
 
 ```swift
     import Foundation
@@ -108,7 +108,7 @@ Next, create an instance of a UIKit `AppDelegate` class that conforms to SwiftUI
     }
 ```
 
-Finally, include the `AppDelegate` functionality in your app’s `@main` structure using a [`UIApplicationDelegateAdaptor`](https://developer.apple.com/documentation/SwiftUI/UIApplicationDelegateAdaptor):
+Finally, include the `AppDelegate` functionality in your app’s `@main` structure using a [`UIApplicationDelegateAdaptor`](https://developer.apple.com/documentation/swiftui/uiapplicationdelegateadaptor):
 
 ```swift
     @main

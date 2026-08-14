@@ -25,11 +25,11 @@ The `metadata` parameter contains additional information about the VoIP payload.
 
 #### Callkit
 
-[`reportNewIncomingCall(with:update:completion:)`](https://developer.apple.com/documentation/CallKit/CXProvider/reportNewIncomingCall(with:update:completion:))
+[`reportNewIncomingCall(with:update:completion:)`](https://developer.apple.com/documentation/callkit/cxprovider/reportnewincomingcall(with:update:completion:))
 
 #### Livecommunicationkit
 
-[`reportNewIncomingConversation(uuid:update:)`](https://developer.apple.com/documentation/LiveCommunicationKit/ConversationManager/reportNewIncomingConversation(uuid:update:))
+[`reportNewIncomingConversation(uuid:update:)`](https://developer.apple.com/documentation/livecommunicationkit/conversationmanager/reportnewincomingconversation(uuid:update:))
 
 When you call either of these methods, the system displays the standard incoming call interface to the user unless an error occurs. For example, the system reports an error if the user enabled Do Not Disturb. You may establish a connection to your VoIP server in parallel to reporting the incoming call to the system.
 
@@ -39,7 +39,7 @@ If the metadata’s `mustReport` parameter is set to `NO` you are not required t
 
 If you are a VoIP developer you should prefer this delegate method over the`pushRegistry:didReceiveIncomingPushWithPayload:forType: withCompletionHandler:` method so that you can use the `metadata` parameter to ignore VoIP push notifications where `mustReport` is set to `NO` and do not need to be reported.
 
-If you want to initiate a VoIP call without using CallKit, register for push notifications using the User Notifications framework instead of PushKit. For more information, see [`User Notifications`](https://developer.apple.com/documentation/UserNotifications).
+If you want to initiate a VoIP call without using CallKit, register for push notifications using the User Notifications framework instead of PushKit. For more information, see [`User Notifications`](https://developer.apple.com/documentation/usernotifications).
 
 ## Parameters
 

@@ -12,9 +12,9 @@ Reality Composer Pro tailors each type of Graph Editor — Script Graph, Shader 
 
 For example, a Script Graph uses different nodes and options than a Shader Graph. The following screenshots compare the two:
 
-![A screenshot of a Shader Material Graph in the Reality Composer Pro Graph Editor.](https://docs-assets.developer.apple.com/published/b2574806a6f2e316b464429b6c7d2708/ShaderGraph%402x.png)
+![A screenshot of a Shader Material Graph in the Reality Composer Pro Graph Editor.](/images/RealityComposerPro/ShaderGraph@2x.png)
 
-![A screenshot of a Script Graph in the Reality Composer Pro Graph Editor.](https://docs-assets.developer.apple.com/published/eaa6868a511e01296d7a36e0ec2d8922/ScriptGraph%402x.png)
+![A screenshot of a Script Graph in the Reality Composer Pro Graph Editor.](/images/RealityComposerPro/ScriptGraph@2x.png)
 
 #### Open the Graph Editor
 
@@ -22,7 +22,7 @@ You can open the Graph Editor in two ways. To open a graph file directly, double
 
 To open a graph file from a new tab, from the main menu choose **Tab** > **New Tab** to open a blank graph tab in your workspace. Then drag a graph file — such as a Script Graph, Shader Graph Material, or Animation Graph — from the project browser into the Graph tab.
 
-![A screenshot showing how to open a graph file in the Reality Composer Pro Graph Editor from a new tab.](https://docs-assets.developer.apple.com/published/1afd0c323a69654550fb0477279b5aa1/GraphEditor-NewTab%402x.png)
+![A screenshot showing how to open a graph file in the Reality Composer Pro Graph Editor from a new tab.](/images/RealityComposerPro/GraphEditor-NewTab@2x.png)
 
 #### Navigate the Graph Editor Workspace
 
@@ -54,7 +54,7 @@ You can also click and drag a node’s input or output connector and release in 
 
 > 💡 **Tip**: You can click the name of any node in a graph to rename it to something more descriptive of its function — for example, Wait at Door, Pick Up Key, or Open Door A.
 
-![A screenshot showing how to rename a node in the Reality Composer Pro Graph Editor by clicking its name.](https://docs-assets.developer.apple.com/published/795605d91c69f404783c0be415e6eed9/Rename%402x.png)
+![A screenshot showing how to rename a node in the Reality Composer Pro Graph Editor by clicking its name.](/images/RealityComposerPro/Rename@2x.png)
 
 #### Connect Input Output and Subgraph Nodes
 
@@ -62,7 +62,7 @@ To connect two nodes, drag from an output port on one node to a compatible input
 
 When you create an **Input**, **Output**, or **Subgraph** node, notice that they all have a **+** connector. When you drag a connection from the **+**, the Graph Editor determines the name and type of the new input or output automatically based on the connection.
 
-![A screenshot of Input, Output, and Subgraph nodes in the Reality Composer Pro Graph Editor, each showing a + connector.](https://docs-assets.developer.apple.com/published/e189d3a25753eb6a1d3a469bbcfb4be6/InputOutputSubgraph%402x.png)
+![A screenshot of Input, Output, and Subgraph nodes in the Reality Composer Pro Graph Editor, each showing a + connector.](/images/RealityComposerPro/InputOutputSubgraph@2x.png)
 
 The graph type determines whether you can create additional inputs and outputs. For example, a Shader Graph doesn’t allow you to create additional outputs.
 
@@ -80,7 +80,7 @@ To expand a subgraph back into the parent graph, Control-click the subgraph node
 
 Use comments to help organize, describe, and annotate complex graphs and subgraphs. To add a comment to a single node, Control-click the node and choose **Add Comment Box**. To add a comment to multiple nodes, click and drag a selection box around the nodes and press **C** on the keyboard. Alternatively, Control-click any of the selected nodes and choose **Add Comment Box**.
 
-![A screenshot showing a comment box added around multiple selected nodes in the Reality Composer Pro Graph Editor.](https://docs-assets.developer.apple.com/published/6595af9f5eb6de95ff844f03e8e98218/CommentBox%402x.png)
+![A screenshot showing a comment box added around multiple selected nodes in the Reality Composer Pro Graph Editor.](/images/RealityComposerPro/CommentBox@2x.png)
 
 #### Edit Copy or Color Code Comments
 
@@ -100,7 +100,7 @@ These commands apply to selected nodes. With one or more nodes selected, Control
 - **Duplicate** — Duplicates the selected nodes.
 - **Delete** — Deletes the selected nodes.
 
-![A screenshot of the complete graph node context menu in the Reality Composer Pro Graph Editor, showing all available options.](https://docs-assets.developer.apple.com/published/780608881870365d9518f80c3ef2f41a/NodeContextMenu%402x.png)
+![A screenshot of the complete graph node context menu in the Reality Composer Pro Graph Editor, showing all available options.](/images/RealityComposerPro/NodeContextMenu@2x.png)
 
 ## See Also
 

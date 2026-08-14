@@ -16,11 +16,11 @@ func view(forUIConfiguration inUIConfiguration: [AnyHashable : Any]!, excludedKe
 
 #### Return Value
 
-An [`IKFilterUIView`](https://developer.apple.com/documentation/Quartz/IKFilterUIView) object.
+An [`IKFilterUIView`](https://developer.apple.com/documentation/quartz/ikfilteruiview) object.
 
 #### Discussion
 
-Calling this method to receive a view for a filter causes the [`CIFilter`](cifilter-swift.class.md) class to invoke the [`provideView(forUIConfiguration:excludedKeys:)`](https://developer.apple.com/documentation/Quartz/IKFilterCustomUIProvider/provideView(forUIConfiguration:excludedKeys:)) method. If you override [`provideView(forUIConfiguration:excludedKeys:)`](https://developer.apple.com/documentation/Quartz/IKFilterCustomUIProvider/provideView(forUIConfiguration:excludedKeys:)) the user interface is created by your filter subclass. Otherwise, Core Image automatically generates the user interface based on the filter keys and attributes.
+Calling this method to receive a view for a filter causes the [`CIFilter`](cifilter-swift.class.md) class to invoke the [`provideView(forUIConfiguration:excludedKeys:)`](https://developer.apple.com/documentation/quartz/ikfiltercustomuiprovider/provideview(foruiconfiguration:excludedkeys:)) method. If you override [`provideView(forUIConfiguration:excludedKeys:)`](https://developer.apple.com/documentation/quartz/ikfiltercustomuiprovider/provideview(foruiconfiguration:excludedkeys:)) the user interface is created by your filter subclass. Otherwise, Core Image automatically generates the user interface based on the filter keys and attributes.
 
 Your app can retrieve a view whose control sizes complement the size of user interface elements already used in the application. It is also possible to choose which filter input parameters appear in the view. Consumer applications, for example, may want to show a small, basic set of input parameters whereas professional applications may want to provide access to all input parameters.
 
@@ -30,7 +30,7 @@ The controls in the view use bindings to set the values of the filter. See [`Coc
 
 ## Parameters
 
-- `inUIConfiguration`: A dictionary that contains values for the [`IKUISizeFlavor`](https://developer.apple.com/documentation/Quartz/IKUISizeFlavor) and [`kCIUIParameterSet`](kciuiparameterset.md) keys. For allowed values for the [`IKUISizeFlavor`](https://developer.apple.com/documentation/Quartz/IKUISizeFlavor) key, see [`User Interface Options`](user-interface-options.md). For allowed values for the [`kCIUIParameterSet`](kciuiparameterset.md) key, see [`User Interface Control Options`](user-interface-control-options.md).
+- `inUIConfiguration`: A dictionary that contains values for the [`IKUISizeFlavor`](https://developer.apple.com/documentation/quartz/ikuisizeflavor) and [`kCIUIParameterSet`](kciuiparameterset.md) keys. For allowed values for the [`IKUISizeFlavor`](https://developer.apple.com/documentation/quartz/ikuisizeflavor) key, see [`User Interface Options`](user-interface-options.md). For allowed values for the [`kCIUIParameterSet`](kciuiparameterset.md) key, see [`User Interface Control Options`](user-interface-control-options.md).
 - `inKeys`: An array of the input keys for which you do *not* want to provide a user interface. Pass `nil` if you want all input keys to be represented in the user interface.
 
 

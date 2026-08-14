@@ -17,19 +17,19 @@ This sample app shows you how to create a custom audio effect plug-in using the 
 
 The sample Audio Unit is a low-pass filter that allows frequencies at or below the cutoff frequency to pass through to the output. It attenuates frequencies above this point. It also lets you change the filter’s resonance, which boosts or attenuates a narrow band of frequencies around the cutoff point. You set these values by moving the draggable point around the plug-in’s user interface, as shown in the figure below.
 
-![plug-in User Interface](https://docs-assets.developer.apple.com/published/77036aca41724e5409050b93ab4a5b9c/graph.png)
+![plug-in User Interface](/images/com.apple.avfaudio/graph.png)
 
 The project has targets for both iOS and macOS. Each platform’s main app target has two supporting targets: `AUv3FilterExtension`, which contains the plug-in packaged as an Audio Unit extension, and `AUv3FilterFramework`, which bundles the plug-in’s code and resources.
 
-> **Note**: See [`Incorporating Audio Effects and Instruments`](https://developer.apple.com/documentation/AudioToolbox/incorporating-audio-effects-and-instruments) for details on how you can use this Audio Unit extension in a host app.
+> **Note**: See [`Incorporating Audio Effects and Instruments`](https://developer.apple.com/documentation/audiotoolbox/incorporating-audio-effects-and-instruments) for details on how you can use this Audio Unit extension in a host app.
 
 ##### Create a Custom Audio Effect Plug in
 
 The extension itself contains two primary pieces: an Audio Unit proper and a factory object that creates it.
 
-The sample app’s Audio Unit is `AUv3FilterDemo`. This is a Swift class that subclasses [`AUAudioUnit`](https://developer.apple.com/documentation/AudioToolbox/AUAudioUnit) and defines the plug-in’s interface, including key features like its parameters, presets, and I/O busses. A class called `FilterDSPKernel` provides the plug-in’s digital signal processing (DSP) logic, and is written in C++ to ensure real-time safety. Because Swift can’t talk directly to C++, the sample project also includes an Objective-C++ adapter class called `FilterDSPKernelAdapter` to act as an intermediary.
+The sample app’s Audio Unit is `AUv3FilterDemo`. This is a Swift class that subclasses [`AUAudioUnit`](https://developer.apple.com/documentation/audiotoolbox/auaudiounit) and defines the plug-in’s interface, including key features like its parameters, presets, and I/O busses. A class called `FilterDSPKernel` provides the plug-in’s digital signal processing (DSP) logic, and is written in C++ to ensure real-time safety. Because Swift can’t talk directly to C++, the sample project also includes an Objective-C++ adapter class called `FilterDSPKernelAdapter` to act as an intermediary.
 
-`AUv3FilterDemoViewController` is the Audio Unit’s main view controller. It adopts the [`AUAudioUnitFactory`](https://developer.apple.com/documentation/AudioToolbox/AUAudioUnitFactory) protocol and is responsible for creating new instances of your plug-in. You implement the protocol’s [`createAudioUnit(with:)`](https://developer.apple.com/documentation/AudioToolbox/AUAudioUnitFactory/createAudioUnit(with:)) factory method to return a new instance of `AUv3FilterDemo` when a host app requests it.
+`AUv3FilterDemoViewController` is the Audio Unit’s main view controller. It adopts the [`AUAudioUnitFactory`](https://developer.apple.com/documentation/audiotoolbox/auaudiounitfactory) protocol and is responsible for creating new instances of your plug-in. You implement the protocol’s [`createAudioUnit(with:)`](https://developer.apple.com/documentation/audiotoolbox/auaudiounitfactory/createaudiounit(with:)) factory method to return a new instance of `AUv3FilterDemo` when a host app requests it.
 
 ```swift
 extension AUv3FilterDemoViewController: AUAudioUnitFactory {
@@ -44,7 +44,7 @@ extension AUv3FilterDemoViewController: AUAudioUnitFactory {
 
 ##### Add Custom Parameters to Your Audio Unit
 
-In most Audio Units, you’ll provide one or more parameters to configure the audio processing. Your Audio Unit arranges its parameters into a tree structure, provided by an instance of [`AUParameterTree`](https://developer.apple.com/documentation/AudioToolbox/AUParameterTree). This object represents the root node of the plug-in’s tree of parameters and parameter groupings.
+In most Audio Units, you’ll provide one or more parameters to configure the audio processing. Your Audio Unit arranges its parameters into a tree structure, provided by an instance of [`AUParameterTree`](https://developer.apple.com/documentation/audiotoolbox/auparametertree). This object represents the root node of the plug-in’s tree of parameters and parameter groupings.
 
 `AUv3FilterDemo` has parameters to control the filter’s cutoff frequency and resonance. You create its parameters using a factory method on `AUParameterTree`.
 
@@ -106,7 +106,7 @@ parameterTree = AUParameterTree.createTree(withChildren: [cutoffParam,
                                                           resonanceParam])
 ```
 
-Next, you bind handlers to the parameter tree’s readable and writeable values by installing closures for its [`implementorValueObserver`](https://developer.apple.com/documentation/AudioToolbox/AUParameterNode/implementorValueObserver), [`implementorValueProvider`](https://developer.apple.com/documentation/AudioToolbox/AUParameterNode/implementorValueProvider), and [`implementorStringFromValueCallback`](https://developer.apple.com/documentation/AudioToolbox/AUParameterNode/implementorStringFromValueCallback) properties. These closures delegate to the filter adapter instance, which in turn communicates with the underlying DSP logic.
+Next, you bind handlers to the parameter tree’s readable and writeable values by installing closures for its [`implementorValueObserver`](https://developer.apple.com/documentation/audiotoolbox/auparameternode/implementorvalueobserver), [`implementorValueProvider`](https://developer.apple.com/documentation/audiotoolbox/auparameternode/implementorvalueprovider), and [`implementorStringFromValueCallback`](https://developer.apple.com/documentation/audiotoolbox/auparameternode/implementorstringfromvaluecallback) properties. These closures delegate to the filter adapter instance, which in turn communicates with the underlying DSP logic.
 
 ```swift
 // A closure for observing all externally generated parameter value changes.
@@ -205,7 +205,7 @@ private let factoryPresetValues:[(cutoff: AUValue, resonance: AUValue)] = [
 
 ##### Support User Presets
 
-Factory presets provide a useful starting point for further user customization, but users also want the ability to save their changes and create their own custom presets. `AUAudioUnit` provides built-in support for user presets. To enable this support in your Audio Unit, override the [`supportsUserPresets`](https://developer.apple.com/documentation/AudioToolbox/AUAudioUnit/supportsUserPresets) property to return `true`.
+Factory presets provide a useful starting point for further user customization, but users also want the ability to save their changes and create their own custom presets. `AUAudioUnit` provides built-in support for user presets. To enable this support in your Audio Unit, override the [`supportsUserPresets`](https://developer.apple.com/documentation/audiotoolbox/auaudiounit/supportsuserpresets) property to return `true`.
 
 ```swift
 /// Indicates that this audio unit supports persisting user presets.
@@ -214,11 +214,11 @@ public override var supportsUserPresets: Bool {
 }
 ```
 
-Opting in to support for user presets automatically enables your Audio Unit to load, save, and delete user presets. The default implementation of the [`userPresets`](https://developer.apple.com/documentation/AudioToolbox/AUAudioUnit/userPresets), [`saveUserPreset(_:)`](https://developer.apple.com/documentation/AudioToolbox/AUAudioUnit/saveUserPreset(_:)), and [`deleteUserPreset(_:)`](https://developer.apple.com/documentation/AudioToolbox/AUAudioUnit/deleteUserPreset(_:)) API reads from and writes to an internal store, but you’re free to override this property and methods if you want to directly manage the persistence behavior. For example, you can override the default behavior to persist user presets to an iCloud container or some other remote location.
+Opting in to support for user presets automatically enables your Audio Unit to load, save, and delete user presets. The default implementation of the [`userPresets`](https://developer.apple.com/documentation/audiotoolbox/auaudiounit/userpresets), [`saveUserPreset(_:)`](https://developer.apple.com/documentation/audiotoolbox/auaudiounit/saveuserpreset(_:)), and [`deleteUserPreset(_:)`](https://developer.apple.com/documentation/audiotoolbox/auaudiounit/deleteuserpreset(_:)) API reads from and writes to an internal store, but you’re free to override this property and methods if you want to directly manage the persistence behavior. For example, you can override the default behavior to persist user presets to an iCloud container or some other remote location.
 
 ##### Select Factory and User Presets
 
-A host app selects a factory or user preset by setting the plug-in’s `currentPreset` property. You override this property and take the appropriate action depending on the preset type selected. If the user selected a factory preset (a preset `number` greater than `0`), look up its associated values and set the parameter values accordingly. If the user selected a user preset (a preset `number` less than `0`), restore the preset’s parameter state by calling the [`presetState(for:)`](https://developer.apple.com/documentation/AudioToolbox/AUAudioUnit/presetState(for:)) method and setting the returned data as the [`fullStateForDocument`](https://developer.apple.com/documentation/AudioToolbox/AUAudioUnit/fullStateForDocument) property.
+A host app selects a factory or user preset by setting the plug-in’s `currentPreset` property. You override this property and take the appropriate action depending on the preset type selected. If the user selected a factory preset (a preset `number` greater than `0`), look up its associated values and set the parameter values accordingly. If the user selected a user preset (a preset `number` less than `0`), restore the preset’s parameter state by calling the [`presetState(for:)`](https://developer.apple.com/documentation/audiotoolbox/auaudiounit/presetstate(for:)) method and setting the returned data as the [`fullStateForDocument`](https://developer.apple.com/documentation/audiotoolbox/auaudiounit/fullstatefordocument) property.
 
 ```swift
 private var _currentPreset: AUAudioUnitPreset?
@@ -258,7 +258,7 @@ public override var currentPreset: AUAudioUnitPreset? {
 
 Like all App Extensions, AUv3 plug-ins run *out-of-process* by default, which means the extension runs in a separate process from the host app, and all communication between the two occurs over interprocess communication (IPC). This model provides increased security and stability for the host app. For example, if an AUv3 plug-in crashes, the host app won’t crash. However, the IPC communication adds a small amount of overhead to each render cycle, which may be unacceptable depending on the needs of a given application. In macOS only, you can package your plug-in to run *in-process*, which eliminates the IPC communication as your Audio Unit runs as part of the host’s process.
 
-Running an in-process plug-in requires an agreement between the host and the Audio Unit. The host requests in-process instantiation by passing the [`loadInProcess`](https://developer.apple.com/documentation/AudioToolbox/AudioComponentInstantiationOptions/loadInProcess) option during the plug-in’s creation, and you need to package your Audio Unit as described and shown below.
+Running an in-process plug-in requires an agreement between the host and the Audio Unit. The host requests in-process instantiation by passing the [`loadInProcess`](https://developer.apple.com/documentation/audiotoolbox/audiocomponentinstantiationoptions/loadinprocess) option during the plug-in’s creation, and you need to package your Audio Unit as described and shown below.
 
 Your extension’s main binary can’t be dynamically loaded into another app, which means all executable code needs to reside in a separate framework bundle. However, the extension target still needs to contain at least one source file for the extension binary to be created, properly loaded, and linked with the framework bundle. To ensure the extension is created, add some unused placeholder code in your extension target, like that found in `AUv3FilterExtension.swift`.
 
@@ -285,7 +285,7 @@ The macOS sample packages all of the Audio Unit’s code into the `AUv3FilterFra
 </dict>
 ```
 
-If you’re using a xib or Storyboard for your user interface, override your view controller’s [`init(nibName:bundle:)`](https://developer.apple.com/documentation/AppKit/NSViewController/init(nibName:bundle:)) initializer and pass the framework bundle to the superclass initializer. This ensures your user interface properly loads when the system requests your Audio Unit extension.
+If you’re using a xib or Storyboard for your user interface, override your view controller’s [`init(nibName:bundle:)`](https://developer.apple.com/documentation/appkit/nsviewcontroller/init(nibname:bundle:)) initializer and pass the framework bundle to the superclass initializer. This ensures your user interface properly loads when the system requests your Audio Unit extension.
 
 ```swift
 public override init(nibName: NSNib.Name?, bundle: Bundle?) {
@@ -305,7 +305,7 @@ Finally, in the extension’s `Info.plist` file, set the Audio Unit’s factory 
 </dict>
 ```
 
-> **Note**: See [`Incorporating Audio Effects and Instruments`](https://developer.apple.com/documentation/AudioToolbox/incorporating-audio-effects-and-instruments) for a host app you can use to load your plug-in both in-process and out-of-process.
+> **Note**: See [`Incorporating Audio Effects and Instruments`](https://developer.apple.com/documentation/audiotoolbox/incorporating-audio-effects-and-instruments) for a host app you can use to load your plug-in both in-process and out-of-process.
 
 ## See Also
 

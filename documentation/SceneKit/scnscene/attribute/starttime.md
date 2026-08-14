@@ -20,7 +20,7 @@ static let startTime: SCNScene.Attribute
 
 #### Discussion
 
-A floating-point value (in an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) object) for the start time of the scene.
+A floating-point value (in an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) object) for the start time of the scene.
 
 ## See Also
 

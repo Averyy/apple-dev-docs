@@ -21,7 +21,7 @@ static func purchaseDate(_ date: Date, renewalBehavior: Product.PurchaseOption.S
 
 #### Discussion
 
-Use this purchase option when you test your app in Xcode using [`StoreKit Test`](https://developer.apple.com/documentation/StoreKitTest) and call [`buyProduct(identifier:options:)`](https://developer.apple.com/documentation/StoreKitTest/SKTestSession/buyProduct(identifier:options:)).
+Use this purchase option when you test your app in Xcode using [`StoreKit Test`](https://developer.apple.com/documentation/storekittest) and call [`buyProduct(identifier:options:)`](https://developer.apple.com/documentation/storekittest/sktestsession/buyproduct(identifier:options:)).
 
 Use this purchase option to create useful transactions for your test cases. For example, use a date in the past with the default `renewalBehavior` to generate a full history of subscription renewals to test. Or, use a date in the past with the [`Product.PurchaseOption.SubscriptionRenewalBehavior.cancelImmediately`](product/purchaseoption/subscriptionrenewalbehavior/cancelimmediately.md) behavior to simulate an account of a customer who canceled their subscription.
 

@@ -10,7 +10,7 @@ When an app reacts to the relative position of another device, it creates a uniq
 
 To create these kinds of spatial interactions with nearby people or objects, your app discovers the available peers with a network technology you choose. If the peer app responds positively, the apps agree to commence receiving respective positions.
 
-To perform this discovery and handshake, the app implements custom code using a network technology you choose. Common examples are [`Core Bluetooth`](https://developer.apple.com/documentation/CoreBluetooth), [`Multipeer Connectivity`](https://developer.apple.com/documentation/MultipeerConnectivity), [`Watch Connectivity`](https://developer.apple.com/documentation/WatchConnectivity), or a custom server deployment. Over the network, the apps share specific data that the system requires to begin an interaction session, such as the session’s [`discoveryToken`](nisession/discoverytoken.md).
+To perform this discovery and handshake, the app implements custom code using a network technology you choose. Common examples are [`Core Bluetooth`](https://developer.apple.com/documentation/corebluetooth), [`Multipeer Connectivity`](https://developer.apple.com/documentation/multipeerconnectivity), [`Watch Connectivity`](https://developer.apple.com/documentation/watchconnectivity), or a custom server deployment. Over the network, the apps share specific data that the system requires to begin an interaction session, such as the session’s [`discoveryToken`](nisession/discoverytoken.md).
 
 The [`NIConfiguration`](niconfiguration.md) subclass that you choose decides the device type for an interaction: an Apple device or third-party accessory. When you pass the configuration to an [`NISession`](nisession.md) instance and run it, the framework provides your app with the position of the nearby object periodically through [`NISessionDelegate`](nisessiondelegate.md) callbacks.
 
@@ -18,15 +18,15 @@ Your session’s delegate also monitors critical state by implementing callbacks
 
 ##### Define a Usage Description
 
-Before the system allows an interaction session to start, the framework checks for user permission to share the device’s position with a nearby peer. The first time the app runs, the framework presents a prompt that displays the textual value of [`NSNearbyInteractionUsageDescription`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSNearbyInteractionUsageDescription) in the app’s `Info.plist`. This property describes the benefits of position sharing in an interaction session.
+Before the system allows an interaction session to start, the framework checks for user permission to share the device’s position with a nearby peer. The first time the app runs, the framework presents a prompt that displays the textual value of [`NSNearbyInteractionUsageDescription`](https://developer.apple.com/documentation/bundleresources/information-property-list/nsnearbyinteractionusagedescription) in the app’s `Info.plist`. This property describes the benefits of position sharing in an interaction session.
 
 The system persists the user’s choice in Settings. After your app runs for the first time, it consults the user preference in Settings before it begins a new interaction session.
 
-![Screenshot of a Nearby Interaction app’s settings displayed on an iPhone. The text reads Allow NIPeekaboo to access, followed by three list items, including Local Network, Nearby Interactions, and Siri & Search. The figure highlights the Nearby Interaction setting and its slider UI, which is in the enabled position.](https://docs-assets.developer.apple.com/published/c552832ed2ae19fa642e77bd24090bda/media-3958388%402x.png)
+![Screenshot of a Nearby Interaction app’s settings displayed on an iPhone. The text reads Allow NIPeekaboo to access, followed by three list items, including Local Network, Nearby Interactions, and Siri & Search. The figure highlights the Nearby Interaction setting and its slider UI, which is in the enabled position.](/images/com.apple.nearbyinteraction/media-3958388@2x.png)
 
 Alternatively, the user adjusts Nearby Interaction permission in Privacy Settings.
 
-![Screenshot of Privacy Settings on an iPhone. The setting for the NIPeekaboo app contains a slider in the enabled position, above text that reads, Nearby Interaction uses Ultra Wideband and Bluetooth to precisely measure the distance between your iPhone and other devices or items.](https://docs-assets.developer.apple.com/published/694edff069750ee25341c98dffa6e0fc/media-3958392%402x.png)
+![Screenshot of Privacy Settings on an iPhone. The setting for the NIPeekaboo app contains a slider in the enabled position, above text that reads, Nearby Interaction uses Ultra Wideband and Bluetooth to precisely measure the distance between your iPhone and other devices or items.](/images/com.apple.nearbyinteraction/media-3958392@2x.png)
 
 ##### Confirm Device and Feature Support
 
@@ -118,7 +118,7 @@ Nearby Interaction works best when peer iPhone devices are:
 
 An iPhone detects a peer device’s direction when it appears within the narrow line of sight illustrated by the conic region in the following diagram.
 
-![A diagram of two phones pointing their back cameras at each other. The image depicts a cone shape emerging from each device, representing their lines of sight. The cone’s point touches the back of the device and expands as it extends outward in the same direction that the device’s back camera points.](https://docs-assets.developer.apple.com/published/c690a5a0b912ace6b7020ea4067b9126/media-3618333%402x.png)
+![A diagram of two phones pointing their back cameras at each other. The image depicts a cone shape emerging from each device, representing their lines of sight. The cone’s point touches the back of the device and expands as it extends outward in the same direction that the device’s back camera points.](/images/com.apple.nearbyinteraction/media-3618333@2x.png)
 
 The arrow in the center of the cone represents the direction vector, which extends outward from the center of the back of the device in the direction of the peer. The arrow can point anywhere within the cone in the direction of the peer. However, the line of sight must be clear of obstacles that could interfere with the UWB chip’s communication, such as people, vehicles, or walls.
 

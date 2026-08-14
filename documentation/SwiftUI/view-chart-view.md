@@ -6,7 +6,7 @@ Configure charts that you declare with Swift Charts.
 
 #### Overview
 
-Use these modifiers to configure a [`Chart`](https://developer.apple.com/documentation/Charts/Chart) view that you add to your SwiftUI app.
+Use these modifiers to configure a [`Chart`](https://developer.apple.com/documentation/charts/chart) view that you add to your SwiftUI app.
 
 ## Topics
 

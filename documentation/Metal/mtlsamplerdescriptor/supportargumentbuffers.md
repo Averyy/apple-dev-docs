@@ -25,9 +25,9 @@ var supportArgumentBuffers: Bool { get set }
 
 #### Discussion
 
-The default value is  [`false`](https://developer.apple.com/documentation/Swift/false), which means that you can only encode the samplers you make with this descriptor as individual resources in the sampler state argument table.
+The default value is  [`false`](https://developer.apple.com/documentation/swift/false), which means that you can only encode the samplers you make with this descriptor as individual resources in the sampler state argument table.
 
-Your app can encode samplers into an argument buffer if you create them with an [`MTLSamplerDescriptor`](mtlsamplerdescriptor.md) instance that has this property equal to [`true`](https://developer.apple.com/documentation/Swift/true).
+Your app can encode samplers into an argument buffer if you create them with an [`MTLSamplerDescriptor`](mtlsamplerdescriptor.md) instance that has this property equal to [`true`](https://developer.apple.com/documentation/swift/true).
 
 > 💡 **Tip**: Check [`maxArgumentBufferSamplerCount`](mtldevice/maxargumentbuffersamplercount.md) at runtime to query the number of samplers your app can encode into an argument buffer.
 

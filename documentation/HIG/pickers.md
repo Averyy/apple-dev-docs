@@ -13,7 +13,7 @@ framework: HIG
 
 A picker displays one or more scrollable lists of distinct values that people can choose from.
 
-![A stylized representation of a selected item in a scrollable list. The image is tinted red to subtly reflect the red in the original six-color Apple logo.](https://docs-assets.developer.apple.com/published/2d09e7756ddcb44959b734f46a87b465/components-pickers-intro~dark%402x.png)
+![A stylized representation of a selected item in a scrollable list. The image is tinted red to subtly reflect the red in the original six-color Apple logo.](/images/com.apple.HIG/components-pickers-intro~dark@2x.png)
 The system provides several styles of pickers, each of which offers different types of selectable values and has a different appearance. The exact values shown in a picker, and their order, depend on the device language.
 Pickers help people enter information by letting them choose single or multipart values. Date pickers specifically offer additional ways to choose values, like selecting a day in a calendar view or entering dates and times using a numeric keypad.
 
@@ -43,21 +43,21 @@ Here are several examples of date pickers showing different combinations of styl
 
 ### macOS
 **Choose a date picker style that suits your app.** There are two styles of date pickers in macOS: textual and graphical. The textual style is useful when you’re working with limited space and you expect people to make specific date and time selections. The graphical style is useful when you want to give people the option of browsing through days in a calendar or selecting a range of dates, or when the look of a clock face is appropriate for your app.
-For developer guidance, see [NSDatePicker](../AppKit/NSDatePicker.md).
+For developer guidance, see [NSDatePicker](../appkit/nsdatepicker.md).
 
 ### tvOS
-Pickers are available in tvOS with SwiftUI. For developer guidance, see [Picker](../SwiftUI/Picker.md).
+Pickers are available in tvOS with SwiftUI. For developer guidance, see [Picker](../swiftui/picker.md).
 
 ### watchOS
 Pickers display lists of items that people navigate using the Digital Crown, which helps people manage selections in a precise and engaging way.
-A picker can display a list of items using the wheels style. watchOS can also display date and time pickers using the wheels style. For developer guidance, see [Picker](../SwiftUI/Picker.md) and [DatePicker](../SwiftUI/DatePicker.md).
-![An illustration representing a screen containing a picker view on Apple Watch, showing three items in a list. The center item is highlighted.](https://docs-assets.developer.apple.com/published/3324da7e747432a1e22d847d45b4430d/pickers-wheel-watch%402x.png)
-![An illustration representing a screen containing a date picker on Apple Watch, with the day highlighted.](https://docs-assets.developer.apple.com/published/e2c5c57649b0b94a5a0319688f300cd0/pickers-date-watch%402x.png)
-![An illustration representing a screen containing a time picker on Apple Watch, with the minutes highlighted.](https://docs-assets.developer.apple.com/published/1b10bb28a6101999c45dc2aca39bba32/pickers-time-watch%402x.png)
+A picker can display a list of items using the wheels style. watchOS can also display date and time pickers using the wheels style. For developer guidance, see [Picker](../swiftui/picker.md) and [DatePicker](../swiftui/datepicker.md).
+![An illustration representing a screen containing a picker view on Apple Watch, showing three items in a list. The center item is highlighted.](/images/com.apple.HIG/pickers-wheel-watch@2x.png)
+![An illustration representing a screen containing a date picker on Apple Watch, with the day highlighted.](/images/com.apple.HIG/pickers-date-watch@2x.png)
+![An illustration representing a screen containing a time picker on Apple Watch, with the minutes highlighted.](/images/com.apple.HIG/pickers-time-watch@2x.png)
 You can configure a picker to display an outline, caption, and scrolling indicator.
-For longer lists, the navigation link displays the picker as a button. When someone taps the button, the system shows the list of options. The person can also scrub through the options using the Digital Crown without tapping the button. For developer guidance, see [navigationLink](../SwiftUI/PickerStyle/navigationLink.md).
-![An illustration representing a screen that contains a picker button on Apple Watch. The button’s text denotes that the second item is selected.](https://docs-assets.developer.apple.com/published/21fcdd5021089b020137dd099821dc85/pickers-navigation-button-watch%402x.png)
-![An illustration representing a screen showing a list of items on Apple Watch. The second item in the list is selected.](https://docs-assets.developer.apple.com/published/f56f12978536df47dc0a7f67e3f0a686/pickers-navigation-list-watch%402x.png)
+For longer lists, the navigation link displays the picker as a button. When someone taps the button, the system shows the list of options. The person can also scrub through the options using the Digital Crown without tapping the button. For developer guidance, see [navigationLink](../swiftui/pickerstyle/navigationlink.md).
+![An illustration representing a screen that contains a picker button on Apple Watch. The button’s text denotes that the second item is selected.](/images/com.apple.HIG/pickers-navigation-button-watch@2x.png)
+![An illustration representing a screen showing a list of items on Apple Watch. The second item in the list is selected.](/images/com.apple.HIG/pickers-navigation-list-watch@2x.png)
 
 ## Resources
 
@@ -66,10 +66,10 @@ For longer lists, the navigation link displays the picker as a button. When some
 [Lists and tables](lists-and-tables.md)
 
 #### Developer documentation
-[Picker](../SwiftUI/Picker.md) — SwiftUI
-[UIDatePicker](../UIKit/UIDatePicker.md) — UIKit
-[UIPickerView](../UIKit/UIPickerView.md) — UIKit
-[NSDatePicker](../AppKit/NSDatePicker.md) — AppKit
+[Picker](../swiftui/picker.md) — SwiftUI
+[UIDatePicker](../uikit/uidatepicker.md) — UIKit
+[UIPickerView](../uikit/uipickerview.md) — UIKit
+[NSDatePicker](../appkit/nsdatepicker.md) — AppKit
 
 ## Change log
 | Date | Changes |

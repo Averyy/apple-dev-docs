@@ -8,7 +8,7 @@ Use Xcode previews to iteratively develop, fine-tune, and troubleshoot widgets a
 
 With Xcode previews, you can make changes to your app’s code and see the results quickly in the preview canvas. Using the `#Preview` macros for widgets, you can preview widgets and Live Activities. The macros allow you to provide timeline entries and content states and click through timeline updates and content changes. As a result, Xcode previews help you quickly and iteratively develop, review, and fine-tune functionality and animations.
 
-For general information about Xcode previews, refer to [`Previewing your app’s interface in Xcode`](https://developer.apple.com/documentation/Xcode/previewing-your-apps-interface-in-xcode).
+For general information about Xcode previews, refer to [`Previewing your app’s interface in Xcode`](https://developer.apple.com/documentation/xcode/previewing-your-apps-interface-in-xcode).
 
 > **Note**: Xcode previews support for iOS and watchOS widgets, and Live Activities. Debug your macOS widgets as described in [`Debugging widgets`](debugging-widgets.md).
 

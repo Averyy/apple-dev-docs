@@ -21,7 +21,7 @@ let kVTPropertySupportedValueMinimumKey: CFString
 
 #### Discussion
 
-The associated value is a [`CFNumber`](https://developer.apple.com/documentation/CoreFoundation/CFNumber).
+The associated value is a [`CFNumber`](https://developer.apple.com/documentation/corefoundation/cfnumber).
 
 ## See Also
 

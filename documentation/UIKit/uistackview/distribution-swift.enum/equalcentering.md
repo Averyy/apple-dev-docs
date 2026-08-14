@@ -24,7 +24,7 @@ If the arranged views don’t fit within the stack view, it shrinks the spacing 
 
 The following image shows an example of a horizontal stack view that uses the [`UIStackView.Distribution.equalSpacing`](uistackview/distribution-swift.enum/equalspacing.md) distribution.
 
-![A horizontal stack view with four arranged subviews. The stack view spaces the arranged views with equal center-to-center spacing along the stack view’s axis.](https://docs-assets.developer.apple.com/published/bc4851ca81324cf9b29c51c98131d69e/media-2557452%402x.png)
+![A horizontal stack view with four arranged subviews. The stack view spaces the arranged views with equal center-to-center spacing along the stack view’s axis.](/images/com.apple.uikit/media-2557452@2x.png)
 
 > **Note**:  The stack view maintains the intrinsic content size of its arranged views at the expense of the center-to-center spacing. Similarly, it maintains the minimum spacing between views at the expense of the view’s intrinsic content size.
 

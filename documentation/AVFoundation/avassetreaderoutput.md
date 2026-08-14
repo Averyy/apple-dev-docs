@@ -27,7 +27,7 @@ class AVAssetReaderOutput
 
 You add concrete output instances, such as [`AVAssetReaderTrackOutput`](avassetreadertrackoutput.md) or [`AVAssetReaderVideoCompositionOutput`](avassetreadervideocompositionoutput.md), to an asset reader to perform specific tasks.
 
-> ❗ **Important**:  If you don’t require modifying sample data in-place, set the value of the [`alwaysCopiesSampleData`](avassetreaderoutput/alwayscopiessampledata.md) property to [`false`](https://developer.apple.com/documentation/Swift/false) to prevent the output from making unnecessary copies.
+> ❗ **Important**:  If you don’t require modifying sample data in-place, set the value of the [`alwaysCopiesSampleData`](avassetreaderoutput/alwayscopiessampledata.md) property to [`false`](https://developer.apple.com/documentation/swift/false) to prevent the output from making unnecessary copies.
 
 ## Topics
 
@@ -55,19 +55,19 @@ You add concrete output instances, such as [`AVAssetReaderTrackOutput`](avassetr
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Inherited By
 - [AVAssetReaderAudioMixOutput](avassetreaderaudiomixoutput.md)
 - [AVAssetReaderSampleReferenceOutput](avassetreadersamplereferenceoutput.md)
 - [AVAssetReaderTrackOutput](avassetreadertrackoutput.md)
 - [AVAssetReaderVideoCompositionOutput](avassetreadervideocompositionoutput.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

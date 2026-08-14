@@ -21,7 +21,7 @@ var kAudioFilePropertyRegionList: AudioFilePropertyID { get }
 
 #### Discussion
 
-If you access this property, your app is responsible for releasing the [`CFString`](https://developer.apple.com/documentation/CoreFoundation/CFString) objects.
+If you access this property, your app is responsible for releasing the [`CFString`](https://developer.apple.com/documentation/corefoundation/cfstring) objects.
 
 Use the `NextAudioFileRegion` function to walk through the region list.
 

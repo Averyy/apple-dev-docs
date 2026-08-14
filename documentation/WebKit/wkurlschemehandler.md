@@ -37,7 +37,7 @@ When a web view encounters a resource that uses a custom scheme, it creates a [`
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 
@@ -49,7 +49,7 @@ When a web view encounters a resource that uses a custom scheme, it creates a [`
   An object that manages the HTTP cookies associated with a particular web view.
 - [protocol WKURLSchemeTask](wkurlschemetask.md)
   An interface that WebKit uses to request custom resources from your app.
-- [static let readAccessURL: NSAttributedString.DocumentReadingOptionKey](../Foundation/NSAttributedString/DocumentReadingOptionKey/readAccessURL.md)
+- [static let readAccessURL: NSAttributedString.DocumentReadingOptionKey](../foundation/nsattributedstring/documentreadingoptionkey/readaccessurl.md)
   The local files WebKit can access when loading content.
 
 

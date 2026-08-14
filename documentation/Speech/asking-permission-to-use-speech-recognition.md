@@ -10,11 +10,11 @@ The speech recognition process involves capturing audio of the user’s voice an
 
 > **Note**: This process only applies to speech recognition using [`SFSpeechRecognizer`](sfspeechrecognizer.md). [`SpeechAnalyzer`](speechanalyzer.md) transcriber modules don’t send audio data of the user’s voice to Apple’s servers.
 
-![When an app requests authorization to use speech recognition, the system prompts the user to grant or deny access to the feature.](https://docs-assets.developer.apple.com/published/b77d3cc65c0bfa28175cd54cc7a38b4b/media-3038127%402x.png)
+![When an app requests authorization to use speech recognition, the system prompts the user to grant or deny access to the feature.](/images/com.apple.speech/media-3038127@2x.png)
 
 ##### Add the Privacy Key to Your Infoplist File
 
-In Xcode, add the `“Privacy - Speech Recognition Usage Description”` key to your app’s `Info.plist` file. The raw name of this key is [`NSSpeechRecognitionUsageDescription`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSSpeechRecognitionUsageDescription). Set the value of this key to a string that explains how you plan to use any recognized speech. When your app request authorization later, the system displays the value of this key to the user as part of the system prompt.
+In Xcode, add the `“Privacy - Speech Recognition Usage Description”` key to your app’s `Info.plist` file. The raw name of this key is [`NSSpeechRecognitionUsageDescription`](https://developer.apple.com/documentation/bundleresources/information-property-list/nsspeechrecognitionusagedescription). Set the value of this key to a string that explains how you plan to use any recognized speech. When your app request authorization later, the system displays the value of this key to the user as part of the system prompt.
 
 Take the opportunity to build trust with the user through your usage description. The quality of your usage description can significantly impact the user’s decision. For example, users are more likely to deny authorization if the usage description is unclear or misleading. Good descriptions explain precisely how you intend to use speech recognition, and may also include a link to your app’s privacy policy. For example:
 
@@ -22,7 +22,7 @@ Take the opportunity to build trust with the user through your usage description
 - “Lets you mark an item as finished by saying Done.”
 - “The app listens for specific verbal commands, such as “Start”, “Stop”, and “Pause”. For a complete list of commands, see http://myapp.example.com”.
 
-> ❗ **Important**:  You must include the [`NSSpeechRecognitionUsageDescription`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSSpeechRecognitionUsageDescription) key in your app’s `Info.plist` file. If this key is not present, your app will crash when it attempts to request authorization or use the APIs of the Speech framework.
+> ❗ **Important**:  You must include the [`NSSpeechRecognitionUsageDescription`](https://developer.apple.com/documentation/bundleresources/information-property-list/nsspeechrecognitionusagedescription) key in your app’s `Info.plist` file. If this key is not present, your app will crash when it attempts to request authorization or use the APIs of the Speech framework.
 
 ##### Request Authorization at First Use
 

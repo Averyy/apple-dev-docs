@@ -24,8 +24,8 @@ let kVTPixelTransferPropertyKey_ScalingMode: CFString
 Depending on the scaling mode, scaling may take into account:
 
 - The full image buffer width and height of the source and destination
-- The clean aperture attachment ([`kCVImageBufferCleanApertureKey`](https://developer.apple.com/documentation/CoreVideo/kCVImageBufferCleanApertureKey)) on the source image buffer
-- The pixel aspect ratio attachment ([`kCVImageBufferPixelAspectRatioKey`](https://developer.apple.com/documentation/CoreVideo/kCVImageBufferPixelAspectRatioKey)) on the source image buffer
+- The clean aperture attachment ([`kCVImageBufferCleanApertureKey`](https://developer.apple.com/documentation/corevideo/kcvimagebuffercleanaperturekey)) on the source image buffer
+- The pixel aspect ratio attachment ([`kCVImageBufferPixelAspectRatioKey`](https://developer.apple.com/documentation/corevideo/kcvimagebufferpixelaspectratiokey)) on the source image buffer
 - The destination clean aperture ([`kVTPixelTransferPropertyKey_DestinationCleanAperture`](kvtpixeltransferpropertykey_destinationcleanaperture.md))
 - The destination pixel aspect ratio ([`kVTPixelTransferPropertyKey_DestinationPixelAspectRatio`](kvtpixeltransferpropertykey_destinationpixelaspectratio.md))
 

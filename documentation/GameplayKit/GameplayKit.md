@@ -164,7 +164,7 @@ To experiment with GameplayKit in action, see these sample code projects:
 - [class GKRule](gkrule.md)
   A rule to be used in the context of a rule system, with a predicate to be tested and an action to be executed when the test succeeds.
 - [class GKNSPredicateRule](gknspredicaterule.md)
-  A rule for use in a rule system that uses a Foundation [`NSPredicate`](https://developer.apple.com/documentation/Foundation/NSPredicate) object to evaluate itself.
+  A rule for use in a rule system that uses a Foundation [`NSPredicate`](https://developer.apple.com/documentation/foundation/nspredicate) object to evaluate itself.
 - [class GKRuleSystem](gkrulesystem.md)
   A list of rules, together with a context for evaluating them and interpreting results, for use in constructing data-driven logic or fuzzy logic systems.
 ### Xcode and SpriteKit Integration

@@ -25,7 +25,7 @@ You can use this function to obtain the page number entered by the user in the F
 ## Parameters
 
 - `printSettings`: The print settings object whose first page number you want to obtain.
-- `first`: A pointer to your   variable. On return, the variable contains the page number of the first page to print. The default first page number is 1.
+- `first`: A pointer to your `UInt32` variable. On return, the variable contains the page number of the first page to print. The default first page number is 1.
 
 ## See Also
 

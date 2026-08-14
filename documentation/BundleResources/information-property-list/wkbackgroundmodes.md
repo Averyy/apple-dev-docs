@@ -20,9 +20,9 @@ To add this key to the Information Property List, enable your WatchKit extension
 
 ## See Also
 
-- [Using extended runtime sessions](../WatchKit/using-extended-runtime-sessions.md)
+- [Using extended runtime sessions](../watchkit/using-extended-runtime-sessions.md)
   Create an extended runtime session that continues running your app after the user stops interacting with it.
-- [Running workout sessions](../HealthKit/running-workout-sessions.md)
+- [Running workout sessions](../healthkit/running-workout-sessions.md)
   Track a workout on Apple Watch.
 - [UIBackgroundModes](information-property-list/uibackgroundmodes.md)
   Services provided by an app that require it to run in the background.

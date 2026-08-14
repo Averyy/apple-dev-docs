@@ -31,7 +31,7 @@ Use this method to delete all donations with a specific type of app intent. Incl
 ## Parameters
 
 - `intentType`: The app intent type to match against.
-- `entityIdentifier`: The identifier for one of your app’s entities. Typically, you find an entity’s identifier in its `id` property, which you add as part of your implementation of the [`Identifiable`](https://developer.apple.com/documentation/Swift/Identifiable) protocol.
+- `entityIdentifier`: The identifier for one of your app’s entities. Typically, you find an entity’s identifier in its `id` property, which you add as part of your implementation of the [`Identifiable`](https://developer.apple.com/documentation/swift/identifiable) protocol.
 
 ## See Also
 

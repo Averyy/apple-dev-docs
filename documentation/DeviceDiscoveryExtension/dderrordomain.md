@@ -20,7 +20,7 @@ let DDErrorDomain: String
 
 #### Discussion
 
-For more information, see [`Error domains`](https://developer.apple.com/documentation/CoreFoundation/error-domains).
+For more information, see [`Error domains`](https://developer.apple.com/documentation/corefoundation/error-domains).
 
 ## See Also
 

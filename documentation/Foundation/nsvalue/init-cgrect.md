@@ -29,7 +29,7 @@ A new value object that contains the rectangle information.
 
 ## See Also
 
-- [struct CGRect](../CoreFoundation/CGRect.md)
+- [struct CGRect](../corefoundation/cgrect.md)
 - [init(CGPoint: CGPoint)](nsvalue/init(cgpoint:).md)
   Creates a new value object containing the specified CoreGraphics point structure.
 - [init(CGVector: CGVector)](nsvalue/init(cgvector:).md)

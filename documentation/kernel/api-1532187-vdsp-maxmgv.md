@@ -50,10 +50,10 @@ print("max magnitude", c) // Prints "max magnitude 4.3".
 
 ## Parameters
 
-- `__A`: The single-precision real input vector  . 
-- `__I`: The stride for input vector  . 
+- `__A`: The single-precision real input vector `A`. 
+- `__I`: The stride for input vector `A`. 
 - `__C`: The single-precsion output scalar.
-- `__N`: The number of elements to process. If   is zero ( ), this function returns  .
+- `__N`: The number of elements to process. If `N` is zero (`0`), this function returns `-INFINITY`.
 
 
 ---

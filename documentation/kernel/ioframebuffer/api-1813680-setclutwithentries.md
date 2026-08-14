@@ -28,7 +28,7 @@ IOFramebuffer subclasses may implement this method to allow a palette to be set 
 - `colors`: A pointer to an array of numEntries RGB color entries.
 - `index`: The index of the first entry to set.
 - `numEntries`: The number of entries in the table.
-- `options`: kSetCLUTWithLuminance is set if the CLUT should be set to a gray value equivalent in luminance to the passed color entry.
+- `options`: Options controlling the operation. kSetCLUTByValue is set if the index field of each entry should be used to set the table sparsely, otherwise consecutive entries from the index parameter should be set. kSetCLUTImmediately is set if the CLUT set should not be synchronized with the vertical blank, otherwise it should. kSetCLUTWithLuminance is set if the CLUT should be set to a gray value equivalent in luminance to the passed color entry.
 
 ## See Also
 

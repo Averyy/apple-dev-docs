@@ -6,14 +6,14 @@ Send Advanced Commerce API requests from your app that you authorize with a JSON
 
 #### Overview
 
-You can make certain [`Advanced Commerce API`](https://developer.apple.com/documentation/AdvancedCommerceAPI) requests through StoreKit in your app, while you make other requests directly from your server.  In both cases, you authorize the calls with signatures you generate on your server.
+You can make certain [`Advanced Commerce API`](https://developer.apple.com/documentation/advancedcommerceapi) requests through StoreKit in your app, while you make other requests directly from your server.  In both cases, you authorize the calls with signatures you generate on your server.
 
 The following Advanced Commerce API requests are available in your app using StoreKit APIs:
 
-- [`OneTimeChargeCreateRequest`](https://developer.apple.com/documentation/AdvancedCommerceAPI/OneTimeChargeCreateRequest)
-- [`SubscriptionCreateRequest`](https://developer.apple.com/documentation/AdvancedCommerceAPI/SubscriptionCreateRequest)
-- [`SubscriptionModifyInAppRequest`](https://developer.apple.com/documentation/AdvancedCommerceAPI/SubscriptionModifyInAppRequest)
-- [`SubscriptionReactivateInAppRequest`](https://developer.apple.com/documentation/AdvancedCommerceAPI/SubscriptionReactivateInAppRequest)
+- [`OneTimeChargeCreateRequest`](https://developer.apple.com/documentation/advancedcommerceapi/onetimechargecreaterequest)
+- [`SubscriptionCreateRequest`](https://developer.apple.com/documentation/advancedcommerceapi/subscriptioncreaterequest)
+- [`SubscriptionModifyInAppRequest`](https://developer.apple.com/documentation/advancedcommerceapi/subscriptionmodifyinapprequest)
+- [`SubscriptionReactivateInAppRequest`](https://developer.apple.com/documentation/advancedcommerceapi/subscriptionreactivateinapprequest)
 
 To make Advanced Commerce requests from your app, follow these steps:
 
@@ -22,13 +22,13 @@ To make Advanced Commerce requests from your app, follow these steps:
 3. Wrap the JWS in a JSON object, and convert it into a `Data` buffer to create the Advanced Commerce request data object, `advancedCommerceRequestData`.
 4. In your app, use the `advancedCommerceRequestData` as the value of a purchase option in your product purchase call.
 
-For more information on authorizing server-based calls, see [`Authorizing API requests from your server`](https://developer.apple.com/documentation/AdvancedCommerceAPI/authorizing-server-calls).
+For more information on authorizing server-based calls, see [`Authorizing API requests from your server`](https://developer.apple.com/documentation/advancedcommerceapi/authorizing-server-calls).
 
 #### Create the Base64 Encoded Request Data
 
 Place the Advanced Commerce request data in a UTF-8 JSON string and base64-encode the request.
 
-For example, the following JSON represents a [`OneTimeChargeCreateRequest`](https://developer.apple.com/documentation/AdvancedCommerceAPI/OneTimeChargeCreateRequest) for the purchase of a one-time charge product:
+For example, the following JSON represents a [`OneTimeChargeCreateRequest`](https://developer.apple.com/documentation/advancedcommerceapi/onetimechargecreaterequest) for the purchase of a one-time charge product:
 
 ```JSON
 {

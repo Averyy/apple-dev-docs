@@ -28,9 +28,9 @@ Alternative app marketplaces call methods of this class to retrieve the set of c
 
 #### Observe Runtime Changes
 
-The class is observable (through [`SwiftUI`](https://developer.apple.com/documentation/SwiftUI) or the [`Observation`](https://developer.apple.com/documentation/Observation) framework), so you can provide reactive updates when finishing, installing, updating, or loading (see [`isLoading`](applibrary/isloading.md)).
+The class is observable (through [`SwiftUI`](https://developer.apple.com/documentation/swiftui) or the [`Observation`](https://developer.apple.com/documentation/observation) framework), so you can provide reactive updates when finishing, installing, updating, or loading (see [`isLoading`](applibrary/isloading.md)).
 
-> ❗ **Important**: iOS ignores calls to this class for apps that lack one of the required entitlements: [`com.apple.developer.marketplace.app-installation`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.marketplace.app-installation), or [`com.apple.developer.browser.app-installation`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.browser.app-installation).
+> ❗ **Important**: iOS ignores calls to this class for apps that lack one of the required entitlements: [`com.apple.developer.marketplace.app-installation`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.marketplace.app-installation), or [`com.apple.developer.browser.app-installation`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.browser.app-installation).
 
 ## Topics
 
@@ -84,11 +84,11 @@ The class is observable (through [`SwiftUI`](https://developer.apple.com/documen
 ## Relationships
 
 ### Conforms To
-- [Copyable](../Swift/Copyable.md)
-- [Escapable](../Swift/Escapable.md)
-- [Observable](../Observation/Observable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Copyable](../swift/copyable.md)
+- [Escapable](../swift/escapable.md)
+- [Observable](../observation/observable.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

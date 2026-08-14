@@ -14,7 +14,7 @@ Use the Call Directory app extension to manage callers by their phone number. Th
 
 You can create a Call Directory app extension for your containing app by adding a new project target and selecting the Call Directory Extension template under Application Extension.
 
-![An Xcode screenshot of the New target dialog with the Call Directory Extension entry selected.](https://docs-assets.developer.apple.com/published/748561c23c1f916045573b17910167ca/media-call-directory-extension.png)
+![An Xcode screenshot of the New target dialog with the Call Directory Extension entry selected.](/images/com.apple.callkit/media-call-directory-extension.png)
 
 You set up both identification and blocking of incoming calls in the implementation of the [`beginRequest(with:)`](cxcalldirectoryprovider/beginrequest(with:).md) method of the [`CXCallDirectoryProvider`](cxcalldirectoryprovider.md) subclass of your Call Directory app extension. The system calls this method when it launches the app extension.
 
@@ -107,7 +107,7 @@ class CustomCallDirectoryProvider: CXCallDirectoryProvider {
 
 ##### Handle Audio Session Interruptions
 
-Like other audio apps, VoIP apps need to handle audio session interruptions. Interruptions may occur for several reasons, including a person accepting another call or closing the Smart Folio of their iPad. In these situations, an interruption notification contains the reason for the interruption and allows your app to correctly terminate the call, if necessary. For more information, see [`Handling audio interruptions`](https://developer.apple.com/documentation/AVFAudio/handling-audio-interruptions).
+Like other audio apps, VoIP apps need to handle audio session interruptions. Interruptions may occur for several reasons, including a person accepting another call or closing the Smart Folio of their iPad. In these situations, an interruption notification contains the reason for the interruption and allows your app to correctly terminate the call, if necessary. For more information, see [`Handling audio interruptions`](https://developer.apple.com/documentation/avfaudio/handling-audio-interruptions).
 
 ## See Also
 

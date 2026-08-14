@@ -12,7 +12,7 @@ Configure your navigation app to work with CarPlay by displaying your custom map
 
 #### Overview
 
-Coastal Roads is a sample navigation app that demonstrates how to display a custom map and navigation instructions in a CarPlay–enabled vehicle. Coastal Roads integrates with the CarPlay framework by implementing the map and additional `CPTemplate` subclasses, such as [`CPGridTemplate`](CPGridTemplate.md) and [`CPListTemplate`](CPListTemplate.md). This sample’s iOS app component provides a logging interface to help you understand the life cycle of a CarPlay app.
+Coastal Roads is a sample navigation app that demonstrates how to display a custom map and navigation instructions in a CarPlay–enabled vehicle. Coastal Roads integrates with the CarPlay framework by implementing the map and additional `CPTemplate` subclasses, such as [`CPGridTemplate`](cpgridtemplate.md) and [`CPListTemplate`](cplisttemplate.md). This sample’s iOS app component provides a logging interface to help you understand the life cycle of a CarPlay app.
 
 ##### Handle Communication with Carplay
 
@@ -85,7 +85,7 @@ extension TemplateManager: CPMapTemplateDelegate {
     }
 ```
 
-See [`CPMapTemplateDelegate`](CPMapTemplateDelegate.md) for more information.
+See [`CPMapTemplateDelegate`](cpmaptemplatedelegate.md) for more information.
 
 ## See Also
 

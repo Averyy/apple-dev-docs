@@ -19,7 +19,7 @@ convenience init(forOpeningContentTypes contentTypes: [UTType])
 
 ## Parameters
 
-- `contentTypes`: An array of uniform type identifiers for the document picker to display. For more information, see [`Uniform Type Identifiers`](https://developer.apple.com/documentation/UniformTypeIdentifiers).
+- `contentTypes`: An array of uniform type identifiers for the document picker to display. For more information, see [`Uniform Type Identifiers`](https://developer.apple.com/documentation/uniformtypeidentifiers).
 
 ## See Also
 

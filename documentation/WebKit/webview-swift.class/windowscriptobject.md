@@ -16,7 +16,7 @@ var windowScriptObject: WebScriptObject! { get }
 
 ## See Also
 
-- [var objectForWebScript: Any!](../ObjectiveC/NSObject-swift.class/objectForWebScript.md)
+- [var objectForWebScript: Any!](../objectivec/nsobject-swift.class/objectforwebscript.md)
   Returns an object that exposes the plug-in’s scripting interface.
 
 

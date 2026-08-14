@@ -20,7 +20,7 @@ var videoCompressionProperties: [String : any NSSecureCoding & NSObjectProtocol]
 
 #### Discussion
 
-See [`AVVideoCompressionPropertiesKey`](https://developer.apple.com/documentation/AVFoundation/AVVideoCompressionPropertiesKey) for a list of available properties.
+See [`AVVideoCompressionPropertiesKey`](https://developer.apple.com/documentation/avfoundation/avvideocompressionpropertieskey) for a list of available properties.
 
 ## See Also
 

@@ -21,7 +21,7 @@ An initialized `NSPopUpButton` object, or `nil` if the object could not be initi
 ## Parameters
 
 - `buttonFrame`: The frame rectangle for the button, specified in the parent view’s coordinate system.
-- `flag`: [`true`](https://developer.apple.com/documentation/Swift/true) if you want the receiver to display a pull-down menu; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false) if you want it to display a pop-up menu.
+- `flag`: [`true`](https://developer.apple.com/documentation/swift/true) if you want the receiver to display a pull-down menu; otherwise, [`false`](https://developer.apple.com/documentation/swift/false) if you want it to display a pop-up menu.
 
 ## See Also
 

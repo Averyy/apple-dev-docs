@@ -21,7 +21,7 @@ enum CFNetworkErrors
 
 #### Overview
 
-To determine the source of an error, examine the `userInfo` dictionary included in the `CFError` object returned by a function call or call [`CFErrorGetDomain(_:)`](https://developer.apple.com/documentation/CoreFoundation/CFErrorGetDomain(_:)) and pass in the `CFError` object and the domain whose value you want to read. These errors are all part of the `kCFErrorDomainCFNetwork` domain.
+To determine the source of an error, examine the `userInfo` dictionary included in the `CFError` object returned by a function call or call [`CFErrorGetDomain(_:)`](https://developer.apple.com/documentation/corefoundation/cferrorgetdomain(_:)) and pass in the `CFError` object and the domain whose value you want to read. These errors are all part of the `kCFErrorDomainCFNetwork` domain.
 
 ## Topics
 
@@ -201,12 +201,12 @@ To determine the source of an error, examine the `userInfo` dictionary included 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../Swift/BitwiseCopyable.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [RawRepresentable](../Swift/RawRepresentable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [BitwiseCopyable](../swift/bitwisecopyable.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [RawRepresentable](../swift/rawrepresentable.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

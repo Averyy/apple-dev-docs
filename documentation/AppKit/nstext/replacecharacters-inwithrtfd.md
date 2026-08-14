@@ -20,7 +20,7 @@ This method applies only to rich text objects.
 
 This method does not include undo support by default. Clients must invoke [`shouldChangeText(inRanges:replacementStrings:)`](nstextview/shouldchangetext(inranges:replacementstrings:).md) or [`shouldChangeText(in:replacementString:)`](nstextview/shouldchangetext(in:replacementstring:).md) to include this method in an undoable action.
 
-This method is designed for transferring text from out-of-process sources such as the pasteboard. In most cases, programmatic modification of the text is best done by operating on the text storage directly, using the general methods of [`NSMutableAttributedString`](https://developer.apple.com/documentation/Foundation/NSMutableAttributedString).
+This method is designed for transferring text from out-of-process sources such as the pasteboard. In most cases, programmatic modification of the text is best done by operating on the text storage directly, using the general methods of [`NSMutableAttributedString`](https://developer.apple.com/documentation/foundation/nsmutableattributedstring).
 
 ## Parameters
 

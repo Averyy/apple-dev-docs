@@ -25,7 +25,7 @@ The dictionary representation of the value.
 
 #### Discussion
 
-If the value is a JavaScript object, this method creates an [`NSDictionary`](https://developer.apple.com/documentation/Foundation/NSDictionary) object of the corresponding size, and recursively copies and converts all enumerable properties of the object into the dictionary with correspondingly named keys. JavaScript converts each element to a native object using the rules listed in [`Convert Between JavaScript and Native Types`](jsvalue#Convert-Between-JavaScript-and-Native-Types.md).
+If the value is a JavaScript object, this method creates an [`NSDictionary`](https://developer.apple.com/documentation/foundation/nsdictionary) object of the corresponding size, and recursively copies and converts all enumerable properties of the object into the dictionary with correspondingly named keys. JavaScript converts each element to a native object using the rules listed in [`Convert Between JavaScript and Native Types`](jsvalue#Convert-Between-JavaScript-and-Native-Types.md).
 
 This method returns `nil` if the JavaScript value is `null` or `undefined`, and throws a JavaScript `TypeError` if the value is not a JavaScript object.
 
@@ -44,7 +44,7 @@ This method returns `nil` if the JavaScript value is `null` or `undefined`, and 
 - [func toUInt32() -> UInt32](jsvalue/touint32.md)
   Converts the JavaScript value to a native unsigned integer value.
 - [func toNumber() -> NSNumber!](jsvalue/tonumber.md)
-  Converts the JavaScript value to a [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) object.
+  Converts the JavaScript value to a [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) object.
 - [func toString() -> String!](jsvalue/tostring.md)
   Converts the JavaScript value to a native string.
 - [func toDate() -> Date!](jsvalue/todate.md)

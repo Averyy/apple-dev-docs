@@ -27,7 +27,7 @@ Prefer CryptoKit over lower-level interfaces. CryptoKit frees your app from mana
 ## Topics
 
 ### Essentials
-- [Complying with Encryption Export Regulations](../Security/complying-with-encryption-export-regulations.md)
+- [Complying with Encryption Export Regulations](../security/complying-with-encryption-export-regulations.md)
   Declare the use of encryption in your app to streamline the app submission process.
 - [Performing Common Cryptographic Operations](performing-common-cryptographic-operations.md)
   Use CryptoKit to carry out operations like hashing, key generation, and encryption.

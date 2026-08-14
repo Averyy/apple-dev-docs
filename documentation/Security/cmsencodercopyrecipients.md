@@ -21,7 +21,7 @@ A result code. See [`Security Framework Result Codes`](security-framework-result
 ## Parameters
 
 - `cmsEncoder`: The CMSEncoder reference returned by the [`CMSEncoderCreate(_:)`](cmsencodercreate(_:).md) function.
-- `recipientsOut`: On return, points to an array of certificate objects of type [`SecCertificate`](seccertificate.md) of the recipients of the message. If the [`CMSEncoderAddRecipients(_:_:)`](cmsencoderaddrecipients(_:_:).md) function has not been called for this message, this function returns a `NULL` array. You must use the [`CFRelease`](https://developer.apple.com/documentation/CoreFoundation/CFRelease) function to free this reference when you are finished using it.
+- `recipientsOut`: On return, points to an array of certificate objects of type [`SecCertificate`](seccertificate.md) of the recipients of the message. If the [`CMSEncoderAddRecipients(_:_:)`](cmsencoderaddrecipients(_:_:).md) function has not been called for this message, this function returns a `NULL` array. You must use the [`CFRelease`](https://developer.apple.com/documentation/corefoundation/cfrelease) function to free this reference when you are finished using it.
 
 ## See Also
 

@@ -24,7 +24,7 @@ You do not create instances of this class programmatically. Instead, add a swipe
 
 A swipe gesture recognizer tracks discrete events, and therefore has a limited number of state changes. The swipe gesture is recognized when a single touch has moved mostly in an allowable direction far enough to be considered a swipe. Swipes can be slow or fast. A slow swipe requires high directional precision but a small distance; a fast swipe requires low directional precision but a large distance.
 
-![Possible state is Recognized or Failed](https://docs-assets.developer.apple.com/published/cb3692b76f000fb3b3a265280f7fdb70/media-3591360%402x.png)
+![Possible state is Recognized or Failed](/images/com.apple.watchkit/media-3591360@2x.png)
 
 The gesture recognizer calls its action method when it enters the [`WKGestureRecognizerState.recognized`](wkgesturerecognizerstate/recognized.md) state. You may determine the location where a swipe began by calling its [`locationInObject()`](wkgesturerecognizer/locationinobject().md) method. For more information on implementing discrete gesture recognizers, see [`WKGestureRecognizer`](wkgesturerecognizer.md).
 
@@ -52,12 +52,12 @@ The [`WKGestureRecognizer`](wkgesturerecognizer.md) parent class also defines at
 ### Inherits From
 - [WKGestureRecognizer](wkgesturerecognizer.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

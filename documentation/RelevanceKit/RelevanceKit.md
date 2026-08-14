@@ -19,16 +19,16 @@ On Apple Watch, widgets appear in the Smart Stack in an order that best fits a p
 
 To give your widget additional visibility in the watchOS Smart Stack and ensure it appears when a person needs it, use RelevanceKit to provide contextual clues that signal the widget’s relevance to the system. For example, your widget might be most useful at a specific location or time, or every time a person starts a workout.
 
-Note that you use RelevanceKit in combination with [`WidgetKit`](https://developer.apple.com/documentation/WidgetKit) and [`App Intents`](https://developer.apple.com/documentation/AppIntents) to provide interactive and contextually relevant widgets in the Smart Stack, including iPhone widgets that appear on Apple Watch. When you add an import statement for App Intents to your code, App Intents implicitly adds a dependence to RelevanceKit . You don’t need to explicitly add `import RelevanceKit` to your code.
+Note that you use RelevanceKit in combination with [`WidgetKit`](https://developer.apple.com/documentation/widgetkit) and [`App Intents`](https://developer.apple.com/documentation/appintents) to provide interactive and contextually relevant widgets in the Smart Stack, including iPhone widgets that appear on Apple Watch. When you add an import statement for App Intents to your code, App Intents implicitly adds a dependence to RelevanceKit . You don’t need to explicitly add `import RelevanceKit` to your code.
 
-For more information, refer to [`Increasing the visibility of widgets in Smart Stacks`](https://developer.apple.com/documentation/WidgetKit/Widget-Suggestions-In-Smart-Stacks).
+For more information, refer to [`Increasing the visibility of widgets in Smart Stacks`](https://developer.apple.com/documentation/widgetkit/widget-suggestions-in-smart-stacks).
 
 > **Note**: Smart Stacks are available in iOS, iPadOS, and watchOS. However, functionality provided by RelevanceKit is only available in watchOS. Calling its API on other platforms doesn’t have any effect.
 
 ## Topics
 
 ### Providing relevance information
-- [Increasing the visibility of widgets in Smart Stacks](../WidgetKit/Widget-Suggestions-In-Smart-Stacks.md)
+- [Increasing the visibility of widgets in Smart Stacks](../widgetkit/widget-suggestions-in-smart-stacks.md)
   Provide contextual information and donate intents to the system to make sure your widget appears prominently in Smart Stacks.
 - [struct RelevantContext](relevantcontext.md)
   Contextual clues the system uses to show relevant widgets in the Smart Stack on watchOS.

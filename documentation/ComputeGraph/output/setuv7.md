@@ -19,7 +19,7 @@ void output::setUV7(float4 value)
 
 This function assigns a custom UV coordinate to the seventh texture coordinate channel of the output mesh. If the mesh doesn’t already have a UV7 channel, it will be created. This enables multi-texturing and advanced shader effects.
 
-> **Note**: ![Graph](https://docs-assets.developer.apple.com/published/f60dc7f6eb244d129b8997ef2d015afe/output__setUV7.svg)
+> **Note**: ![Graph](/images/com.apple.computegraph/output__setUV7.svg)
 
 > **Note**: Reads and writes to output attribute `float4 uv7`
 

@@ -29,8 +29,8 @@ Don’t adopt this protocol directly, instead use the [`AssistantIntent(schema:)
 ### Inherits From
 - [AppIntent](appintent.md)
 - [PersistentlyIdentifiable](persistentlyidentifiable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 ### Inherited By
 - [AssistantSchemaIntent](assistantschemaintent.md)
 

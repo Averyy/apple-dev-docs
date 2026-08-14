@@ -21,7 +21,7 @@ class var componentMin: CIBlendKernel { get }
 
 #### Discussion
 
-![The result of using the component min blend kernel (background image is top left, foreground image is bottom left)](https://docs-assets.developer.apple.com/published/87298ec5e7ccabcd0d47239e3932d1de/media-2926852%402x.png)
+![The result of using the component min blend kernel (background image is top left, foreground image is bottom left)](/images/com.apple.coreimage/media-2926852@2x.png)
 
 ## See Also
 

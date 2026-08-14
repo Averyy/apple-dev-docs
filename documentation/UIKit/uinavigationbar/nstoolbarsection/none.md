@@ -19,7 +19,7 @@ case none
 
 #### Discussion
 
-Use this value to disable [`NSToolbar`](https://developer.apple.com/documentation/AppKit/NSToolbar) hosting. This value is equivalent to setting the [`preferredBehavioralStyle`](uinavigationbar/preferredbehavioralstyle.md) of the navigation bar to [`UIBehavioralStyle.pad`](uibehavioralstyle/pad.md).
+Use this value to disable [`NSToolbar`](https://developer.apple.com/documentation/appkit/nstoolbar) hosting. This value is equivalent to setting the [`preferredBehavioralStyle`](uinavigationbar/preferredbehavioralstyle.md) of the navigation bar to [`UIBehavioralStyle.pad`](uibehavioralstyle/pad.md).
 
 ## See Also
 

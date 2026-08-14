@@ -16,9 +16,9 @@ Note that the Smart App Banner only appears on your website if:
 - You added the banner to your website’s source code.
 - You configured the default App Clip experience.
 - You published a version of your app that offers an App Clip.
-- A person opens the website in an [`SFSafariViewController`](https://developer.apple.com/documentation/SafariServices/SFSafariViewController) or in Safari without Private Browsing enabled.
+- A person opens the website in an [`SFSafariViewController`](https://developer.apple.com/documentation/safariservices/sfsafariviewcontroller) or in Safari without Private Browsing enabled.
 
-With the App Clip card on your website, people don’t need to tap the Smart App Banner for the card to appear. Alternatively, they can choose to view the website with the Smart App Banner instead of launching the App Clip. Both Safari and an [`SFSafariViewController`](https://developer.apple.com/documentation/SafariServices/SFSafariViewController) remember the person’s decision and won’t display the App Clip card when they visit the site again.
+With the App Clip card on your website, people don’t need to tap the Smart App Banner for the card to appear. Alternatively, they can choose to view the website with the Smart App Banner instead of launching the App Clip. Both Safari and an [`SFSafariViewController`](https://developer.apple.com/documentation/safariservices/sfsafariviewcontroller) remember the person’s decision and won’t display the App Clip card when they visit the site again.
 
 > 💡 **Tip**:  Displaying an App Clip card in Safari on devices that run iOS 15 or later increases the discoverability of your App Clip and reduces the number of taps required to launch the App Clip. However, obscuring your website’s content with the App Clip card may not be ideal. In this case, creating a dedicated page that displays the App Clip card in Safari and linking to it may be a good option to guide people to launch your App Clip.
 
@@ -30,7 +30,7 @@ In most cases, the best time to add the Smart App Banner and the App Clip card t
 <meta name="apple-itunes-app" content="app-id=myAppStoreID, app-clip-bundle-id=appClipBundleID, app-clip-display=card">
 ```
 
-Note how the `meta` tag’s `content` attribute includes the `app-clip-bundle-id`, `app-id`, and `app-clip-display` parameters. By including the `app-id` parameter, you enable the Smart App Banner to open the full app on devices that run iOS 13 or earlier and on devices where Screen Time or a mobile device management (MDM) profile don’t allow App Clips. By including the `app-clip-display` parameter, you display the App Clip card in Safari or an [`SFSafariViewController`](https://developer.apple.com/documentation/SafariServices/SFSafariViewController) on devices running iOS 15 or later.
+Note how the `meta` tag’s `content` attribute includes the `app-clip-bundle-id`, `app-id`, and `app-clip-display` parameters. By including the `app-id` parameter, you enable the Smart App Banner to open the full app on devices that run iOS 13 or earlier and on devices where Screen Time or a mobile device management (MDM) profile don’t allow App Clips. By including the `app-clip-display` parameter, you display the App Clip card in Safari or an [`SFSafariViewController`](https://developer.apple.com/documentation/safariservices/sfsafariviewcontroller) on devices running iOS 15 or later.
 
 > 💡 **Tip**:  If you already display a Smart App Banner on your site, add the `app-clip-bundle-id=appClipBundleID` attribute to the existing `meta` tag for the Smart App Banner, and use the bundle identifier of your App Clip for its value. To display the App Clip card on devices running iOS 15 or later, also add the `app-clip-display` parameter.
 
@@ -38,7 +38,7 @@ Note that the value of a Smart App Banner’s `app-argument` attribute isn’t a
 
 ##### Support Invocations From Links People Share in Messages
 
-When you add the `meta` tag to your webpage to support invocations from Safari or an [`SFSafariViewController`](https://developer.apple.com/documentation/SafariServices/SFSafariViewController), you automatically add support for invocations from links people share with others in the Messages app. When a person shares a link to the website that displays the banner or App Clip card, the recipient can tap the link to instantly launch your App Clip.
+When you add the `meta` tag to your webpage to support invocations from Safari or an [`SFSafariViewController`](https://developer.apple.com/documentation/safariservices/sfsafariviewcontroller), you automatically add support for invocations from links people share with others in the Messages app. When a person shares a link to the website that displays the banner or App Clip card, the recipient can tap the link to instantly launch your App Clip.
 
 > 💡 **Tip**: If people share the default App Clip URL or the App Clip demo URL in Messages, Messages displays the App Clip card.
 
@@ -58,7 +58,7 @@ In addition to the above requirements, you must provide the preview image that a
 
 To enable your App Clip or full app to respond to the invocation from a website that displays the Smart App Banner or the App Clip card in Safari, retrieve the website’s URL upon invocation. Then, use the URL to update the interface of your App Clip to best match the content on the website. For more information on accessing the invocation URL, see [`Responding to invocations`](responding-to-invocations.md).
 
-![A screenshot of a conversation in the Messages app on iPhone that includes a preview of a shared App Clip.](https://docs-assets.developer.apple.com/published/97635dff8996bd29f1983dd2a2909adc/food-truck-app-clip-message%402x.png)
+![A screenshot of a conversation in the Messages app on iPhone that includes a preview of a shared App Clip.](/images/com.apple.appclip/food-truck-app-clip-message@2x.png)
 
 ##### Add the Smart App Banner and App Clip Card to Multiple Websites
 
@@ -87,7 +87,7 @@ To avoid associating your App Clip with multiple domains, consider using one dom
   Enable people to launch another app’s App Clip from your app with App Clip links and offer a rich preview of it with the Link Presentation framework.
 - [class APActivationPayload](apactivationpayload.md)
   Information that’s passed to an App Clip on launch.
-- [NSAppClip](../BundleResources/Information-Property-List/NSAppClip.md)
+- [NSAppClip](../bundleresources/information-property-list/nsappclip.md)
   A collection of keys that an App Clip uses to get additional capabilities.
 
 

@@ -24,7 +24,7 @@ let kCLLocationAccuracyBest: CLLocationAccuracy
 
 Specify this constant when you want very high accuracy but don’t need the same level of accuracy required for navigation apps.
 
-This level of accurate is available only if `isAuthorizedForPreciseLocation` is [`true`](https://developer.apple.com/documentation/Swift/true).
+This level of accurate is available only if `isAuthorizedForPreciseLocation` is [`true`](https://developer.apple.com/documentation/swift/true).
 
 ## See Also
 

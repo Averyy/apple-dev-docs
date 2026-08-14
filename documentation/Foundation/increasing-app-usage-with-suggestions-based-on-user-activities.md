@@ -22,7 +22,7 @@ When donating location information, this sample app also verifies whether the pr
 
 You implement proactive suggestions by determining specific activities that a user can perform in your app, and whose state you can recreate at a later time. The sample app has one user activity, `view-location`, which represents the user viewing details of a specific restaurant location.
 
-In the sample app, the target includes the `view-location` activity in its [`Information Property List`](https://developer.apple.com/documentation/BundleResources/Information-Property-List) file, as an entry with the key name . The type of this entry is `Array`, and each member is a `String` representing a supported user activity in reverse DNS notation.
+In the sample app, the target includes the `view-location` activity in its [`Information Property List`](https://developer.apple.com/documentation/bundleresources/information-property-list) file, as an entry with the key name . The type of this entry is `Array`, and each member is a `String` representing a supported user activity in reverse DNS notation.
 
 ```None
 <key>NSUserActivityTypes</key>
@@ -35,11 +35,11 @@ In the sample app, the target includes the `view-location` activity in its [`Inf
 
 At runtime, you represent a user activity with the [`NSUserActivity`](nsuseractivity.md) object. You initialize a user activity object with a string identifier, the same one declared earlier in the `Info.plist` file.
 
-In the sample app, `LocationViewController` manages a single [`NSUserActivity`](nsuseractivity.md) object, representing the `view-location` activity type. When you select a restaurant, the view controller sets its [`userActivity`](https://developer.apple.com/documentation/UIKit/UIResponder/userActivity) property to the `view-location` activity—registering the user activity object as the current activity, replacing any other activity previously sent to Siri or the system.
+In the sample app, `LocationViewController` manages a single [`NSUserActivity`](nsuseractivity.md) object, representing the `view-location` activity type. When you select a restaurant, the view controller sets its [`userActivity`](https://developer.apple.com/documentation/uikit/uiresponder/useractivity) property to the `view-location` activity—registering the user activity object as the current activity, replacing any other activity previously sent to Siri or the system.
 
 > ❗ **Important**: When the user activity object is not contained within the responder chain, you must call the [`becomeCurrent()`](nsuseractivity/becomecurrent().md) method to mark the object as current, which also registers the object with the system.
 
-The view controller also sets [`needsSave`](nsuseractivity/needssave.md) to `true`, indicating that the activity will be updated with new data in the future, which eventually results in a callback to the [`updateUserActivityState(_:)`](https://developer.apple.com/documentation/UIKit/UIResponder/updateUserActivityState(_:)) method. This is the app’s opportunity to refresh the activity object’s [`userInfo`](nsuseractivity/userinfo.md) property, with the minimal amount of information needed to restore the state of the app, before Siri or the system receives the activity.
+The view controller also sets [`needsSave`](nsuseractivity/needssave.md) to `true`, indicating that the activity will be updated with new data in the future, which eventually results in a callback to the [`updateUserActivityState(_:)`](https://developer.apple.com/documentation/uikit/uiresponder/updateuseractivitystate(_:)) method. This is the app’s opportunity to refresh the activity object’s [`userInfo`](nsuseractivity/userinfo.md) property, with the minimal amount of information needed to restore the state of the app, before Siri or the system receives the activity.
 
 ```swift
 /*
@@ -100,7 +100,7 @@ activity.suggestedInvocationPhrase = "Show my favorite pizzeria"
 
 During development, the system provides developer settings to modify the display behavior of shortcuts, and force sync shortcuts to an Apple Watch from an iPhone device. Go to Settings > Developer on the iPhone device to test an app’s behavior with Siri Shortcuts.
 
-For more information, see [`Donating Shortcuts`](https://developer.apple.com/documentation/SiriKit/donating-shortcuts).
+For more information, see [`Donating Shortcuts`](https://developer.apple.com/documentation/sirikit/donating-shortcuts).
 
 ##### Provide Support for Sharing
 
@@ -113,9 +113,9 @@ activity.webpageURL = mapItem?.url
 
 ##### Handle Activities
 
-When a user interacts with a proactive suggestion for your app, such as through Siri Shortcuts, the system restores your app to the foreground, receives data associated with its user activity, and calls [`application(_:continue:restorationHandler:)`](https://developer.apple.com/documentation/UIKit/UIApplicationDelegate/application(_:continue:restorationHandler:)).
+When a user interacts with a proactive suggestion for your app, such as through Siri Shortcuts, the system restores your app to the foreground, receives data associated with its user activity, and calls [`application(_:continue:restorationHandler:)`](https://developer.apple.com/documentation/uikit/uiapplicationdelegate/application(_:continue:restorationhandler:)).
 
-To give `SearchViewController` a chance to perform its state restoration operation through [`restoreUserActivityState(_:)`](https://developer.apple.com/documentation/UIKit/UIResponder/restoreUserActivityState(_:)), the sample app verifies the activity type of the user activity object, and passes the first tab’s view controller hierarchy to the `restorationHandler` block parameter.
+To give `SearchViewController` a chance to perform its state restoration operation through [`restoreUserActivityState(_:)`](https://developer.apple.com/documentation/uikit/uiresponder/restoreuseractivitystate(_:)), the sample app verifies the activity type of the user activity object, and passes the first tab’s view controller hierarchy to the `restorationHandler` block parameter.
 
 ```swift
 func application(_ application: UIApplication,
@@ -169,7 +169,7 @@ override func restoreUserActivityState(_ activity: NSUserActivity) {
 
 ##### Verify Quicktype Keyboard Integration
 
-Text fields describe the intended purpose of input data, like a region’s name or postal code, via the [`textContentType`](https://developer.apple.com/documentation/UIKit/UITextInputTraits/textContentType) property. If any app on the device recently donated information matching the expected text content type, that information is suggested in the QuickType keyboard as the user types in the text field.
+Text fields describe the intended purpose of input data, like a region’s name or postal code, via the [`textContentType`](https://developer.apple.com/documentation/uikit/uitextinputtraits/textcontenttype) property. If any app on the device recently donated information matching the expected text content type, that information is suggested in the QuickType keyboard as the user types in the text field.
 
 For example, in the sample app, a user selects a pizza restaurant, and its address is suggested in Messages or a search field in Apple Maps.
 

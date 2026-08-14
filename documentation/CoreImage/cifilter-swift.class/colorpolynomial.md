@@ -49,7 +49,7 @@ func colorPolynomial(inputImage: CIImage) -> CIImage {
 }
 ```
 
-![Two versions of a photograph side by side. The photo on the left shows a small bunch of flowers photographed close up, in focus, with good light and no effects. In the photo on the right, a color polynomial filter is applied, resulting in less contrast.](https://docs-assets.developer.apple.com/published/3b329edd727be8386d5fe2011d5713fa/media-3545009%402x.png)
+![Two versions of a photograph side by side. The photo on the left shows a small bunch of flowers photographed close up, in focus, with good light and no effects. In the photo on the right, a color polynomial filter is applied, resulting in less contrast.](/images/com.apple.coreimage/media-3545009@2x.png)
 
 ## See Also
 

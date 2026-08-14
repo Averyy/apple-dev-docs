@@ -18,7 +18,7 @@ var numberOfMajorTickMarks: Int { get set }
 
 The number of major tick marks must be less than or equal to the number of tick marks returned by [`numberOfTickMarks`](nslevelindicator/numberoftickmarks.md). For example, if the number of tick marks is 11 and you specify 3 major tick marks, the resulting level indicator will display 3 major tick marks alternating with 8 minor tick marks, as in the example shown in [`NSLevelIndicator`](nslevelindicator.md).
 
-![Major and minor tick marks in a level indicator](https://docs-assets.developer.apple.com/published/6d8de4ad21c396ebc4ef77203661539b/media-1965752.gif)
+![Major and minor tick marks in a level indicator](/images/com.apple.appkit/media-1965752.gif)
 
 ## See Also
 

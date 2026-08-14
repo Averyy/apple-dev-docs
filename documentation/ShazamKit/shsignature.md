@@ -44,7 +44,7 @@ For signatures longer than [`maximumQuerySignatureDuration`](shcatalog/maximumqu
 - [SHSignature.Slices](shsignature/slices.md)
   A sequence of signature segments.
 ### Getting the content type
-- [static var shazamSignature: UTType](../UniformTypeIdentifiers/UTType-swift.struct/shazamSignature.md)
+- [static var shazamSignature: UTType](../uniformtypeidentifiers/uttype-swift.struct/shazamsignature.md)
   A type that represents a signature.
 ### Initializers
 - [init?(coder: NSCoder)](shsignature/init(coder:).md)
@@ -52,19 +52,19 @@ For signatures longer than [`maximumQuerySignatureDuration`](shcatalog/maximumqu
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCoding](../Foundation/NSCoding.md)
-- [NSCopying](../Foundation/NSCopying.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [NSSecureCoding](../Foundation/NSSecureCoding.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCoding](../foundation/nscoding.md)
+- [NSCopying](../foundation/nscopying.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

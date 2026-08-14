@@ -10,7 +10,7 @@ Mach-O is the executable image format on Apple platforms.  A Mach-O image is a M
 
 > **Note**: Mach-O images have nothing to do with images in the more general sense, like PNG files.
 
-A Mach-O image should contain a UUID that identifies the image.  This build UUID is vital to various subsystems.  For example, the build UUID connects an image to its debug symbol (`dSYM`) file, as explained in [`Building your app to include debugging information`](https://developer.apple.com/documentation/Xcode/building-your-app-to-include-debugging-information) and [`Adding identifiable symbol names to a crash report`](https://developer.apple.com/documentation/Xcode/adding-identifiable-symbol-names-to-a-crash-report).
+A Mach-O image should contain a UUID that identifies the image.  This build UUID is vital to various subsystems.  For example, the build UUID connects an image to its debug symbol (`dSYM`) file, as explained in [`Building your app to include debugging information`](https://developer.apple.com/documentation/xcode/building-your-app-to-include-debugging-information) and [`Adding identifiable symbol names to a crash report`](https://developer.apple.com/documentation/xcode/adding-identifiable-symbol-names-to-a-crash-report).
 
 Most Mach-O images are created by the Apple linker (`ld`).  If you use Xcode, it invokes the Apple linker as part of its build process.  The Apple linker sets the build UUID to a unique value, so most developers never run into build UUID problems.  However, you might run into problems if:
 
@@ -97,7 +97,7 @@ The easiest fix is to build both apps from source code.  Typically, the linker a
 - In Swift, the name mangling includes the module name.
 - The module name defaults to the app name, which is different for each app.
 
-> **Note**: In Xcode, use the [`Build settings reference`](https://developer.apple.com/documentation/Xcode/build-settings-reference) to change the module name.  It defaults to the app name, with any unrepresentable characters, such as space, replaced by underscore (`_`).
+> **Note**: In Xcode, use the [`Build settings reference`](https://developer.apple.com/documentation/xcode/build-settings-reference) to change the module name.  It defaults to the app name, with any unrepresentable characters, such as space, replaced by underscore (`_`).
 
 If that doesn’t resolve the issue, add some unique code to each app.
 

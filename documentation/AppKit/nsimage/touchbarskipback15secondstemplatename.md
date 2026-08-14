@@ -19,7 +19,7 @@ class let touchBarSkipBack15SecondsTemplateName: String
 
 #### Discussion
 
-![Template image for skip back 15 seconds](https://docs-assets.developer.apple.com/published/be0363b71320931575af7390465f0878/media-2825129%402x.png)
+![Template image for skip back 15 seconds](/images/com.apple.appkit/media-2825129@2x.png)
 
 Touch Bar template images are exclusively for use in [`NSTouchBarItem`](nstouchbaritem.md) objects and not in onscreen windows.
 

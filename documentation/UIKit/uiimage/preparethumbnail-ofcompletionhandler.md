@@ -65,7 +65,7 @@ func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath:
 ## Parameters
 
 - `size`: The desired size of the thumbnail.
-- `completionHandler`: The completion handler to call when the thumbnail is ready. The handler executes on a background thread. The completion handler takes the following parameters: - **`thumbnail`**: A new thumbnail image. This parameter is `nil` if the original image isn’t backed by a [`CGImage`](https://developer.apple.com/documentation/CoreGraphics/CGImage) or if the image data is corrupt or malformed.
+- `completionHandler`: The completion handler to call when the thumbnail is ready. The handler executes on a background thread. The completion handler takes the following parameters: - **`thumbnail`**: A new thumbnail image. This parameter is `nil` if the original image isn’t backed by a [`CGImage`](https://developer.apple.com/documentation/coregraphics/cgimage) or if the image data is corrupt or malformed.
 
 ## See Also
 

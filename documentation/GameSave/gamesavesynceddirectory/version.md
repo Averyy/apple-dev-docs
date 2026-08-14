@@ -38,8 +38,8 @@ Used to describe the conflicted or local versions of a directory in case there a
 ## Relationships
 
 ### Conforms To
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Identifiable](../Swift/Identifiable.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Identifiable](../swift/identifiable.md)
 
 ## See Also
 

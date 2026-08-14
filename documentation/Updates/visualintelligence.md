@@ -6,13 +6,13 @@ Learn about important changes in Visual Intelligence.
 
 #### Overview
 
-Browse notable changes in [`Visual Intelligence`](https://developer.apple.com/documentation/VisualIntelligence).
+Browse notable changes in [`Visual Intelligence`](https://developer.apple.com/documentation/visualintelligence).
 
 #### June 2026
 
 ##### General
 
-- Use [`SemanticContentDescriptor`](https://developer.apple.com/documentation/VisualIntelligence/SemanticContentDescriptor) to integrate your macOS app with visual intelligence.
+- Use [`SemanticContentDescriptor`](https://developer.apple.com/documentation/visualintelligence/semanticcontentdescriptor) to integrate your macOS app with visual intelligence.
 
 ## See Also
 

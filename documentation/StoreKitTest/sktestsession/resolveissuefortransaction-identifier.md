@@ -26,7 +26,7 @@ Call this method to simulate a user resolving an issue that prevents a purchase,
 
 In the production environment, users resolve the issues by completing actions outside of your app. For example, users may need to agree to new terms and conditions or update a payment card.
 
-When you call [`resolveIssueForTransaction(identifier:)`](sktestsession/resolveissuefortransaction(identifier:).md), your app receives the new transaction in the [`updates`](https://developer.apple.com/documentation/StoreKit/Transaction/updates) sequence or the [`transactionObservers`](https://developer.apple.com/documentation/StoreKit/SKPaymentQueue/transactionObservers).
+When you call [`resolveIssueForTransaction(identifier:)`](sktestsession/resolveissuefortransaction(identifier:).md), your app receives the new transaction in the [`updates`](https://developer.apple.com/documentation/storekit/transaction/updates) sequence or the [`transactionObservers`](https://developer.apple.com/documentation/storekit/skpaymentqueue/transactionobservers).
 
 ## Parameters
 

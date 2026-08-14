@@ -34,7 +34,7 @@ Chart(data) {
 }
 ```
 
-![Vertical bar chart with x-axis showing department categories Production, Marketing, Finance and with y-axis ranging from 0 to 15000. There are 3 bars: Production 15000, Marketing 8000, Finance 10000.](https://docs-assets.developer.apple.com/published/a69f46e0c2563656f66919f67861d18e/BarMarkSwift.BarMarkBarChart%402x.png)
+![Vertical bar chart with x-axis showing department categories Production, Marketing, Finance and with y-axis ranging from 0 to 15000. There are 3 bars: Production 15000, Marketing 8000, Finance 10000.](/images/com.apple.Charts/BarMarkSwift.BarMarkBarChart@2x.png)
 
 ## Parameters
 

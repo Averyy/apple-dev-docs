@@ -24,7 +24,7 @@ struct TimeFormatStyle
 
 This style produces formatted strings that uses separators between components, like “2:03”
 
-Create a `TimeFormatStyle` by providing a [`Duration.TimeFormatStyle.Pattern`](duration/timeformatstyle/pattern-swift.struct.md) and an optional locale. The pattern specifies which units (hours, minutes, and seconds) to include in the formatted string, with optional configuration of the units. Then create a formatted string by calling [`formatted(_:)`](duration/formatted(_:).md) on a duration, passing the style, or [`format(_:)`](duration/timeformatstyle/format(_:).md) on the style, passing a duration. You can also use the style’s [`attributed`](duration/timeformatstyle/attributed-swift.property.md) property to create a style that produces [`AttributedString`](https://developer.apple.com/documentation/Foundation/AttributedString) instances, which contains attributes that indicate the unit value of formatted runs of the string.
+Create a `TimeFormatStyle` by providing a [`Duration.TimeFormatStyle.Pattern`](duration/timeformatstyle/pattern-swift.struct.md) and an optional locale. The pattern specifies which units (hours, minutes, and seconds) to include in the formatted string, with optional configuration of the units. Then create a formatted string by calling [`formatted(_:)`](duration/formatted(_:).md) on a duration, passing the style, or [`format(_:)`](duration/timeformatstyle/format(_:).md) on the style, passing a duration. You can also use the style’s [`attributed`](duration/timeformatstyle/attributed-swift.property.md) property to create a style that produces [`AttributedString`](https://developer.apple.com/documentation/foundation/attributedstring) instances, which contains attributes that indicate the unit value of formatted runs of the string.
 
 In situations that expect a [`Duration.TimeFormatStyle`](duration/timeformatstyle.md), such as [`formatted(_:)`](duration/formatted(_:).md), you can use the convenience function `Swift/Duration/TimeFormatStyle/time(pattern:)` to create a [`Duration.TimeFormatStyle`](duration/timeformatstyle.md), rather than using the full initializer.
 
@@ -77,11 +77,11 @@ let format = duration.formatted(
 ### Conforms To
 - [Copyable](copyable.md)
 - [Decodable](decodable.md)
-- [DiscreteFormatStyle](../Foundation/DiscreteFormatStyle.md)
+- [DiscreteFormatStyle](../foundation/discreteformatstyle.md)
 - [Encodable](encodable.md)
 - [Equatable](equatable.md)
 - [Escapable](escapable.md)
-- [FormatStyle](../Foundation/FormatStyle.md)
+- [FormatStyle](../foundation/formatstyle.md)
 - [Hashable](hashable.md)
 - [Sendable](sendable.md)
 - [SendableMetatype](sendablemetatype.md)

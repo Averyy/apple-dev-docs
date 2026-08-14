@@ -26,7 +26,7 @@ If you don’t implement this method, the web view uses system settings to deter
 
 - `webView`: The web view that receives the authentication challenge.
 - `challenge`: The authentication challenge.
-- `decisionHandler`: The completion handler block to execute with the decision. This handler has no return value and takes the following parameter: - **decision**: A Boolean value that indicates whether to continue to use a deprecated version of TLS. Specify [`true`](https://developer.apple.com/documentation/Swift/true) to continue, or [`false`](https://developer.apple.com/documentation/Swift/false) to reject the connection.
+- `decisionHandler`: The completion handler block to execute with the decision. This handler has no return value and takes the following parameter: - **decision**: A Boolean value that indicates whether to continue to use a deprecated version of TLS. Specify [`true`](https://developer.apple.com/documentation/swift/true) to continue, or [`false`](https://developer.apple.com/documentation/swift/false) to reject the connection.
 
 ## See Also
 

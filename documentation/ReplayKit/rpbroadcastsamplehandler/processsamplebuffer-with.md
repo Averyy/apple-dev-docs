@@ -29,7 +29,7 @@ The sample buffer passed to this method is available only until the method retur
 
 ## Parameters
 
-- `sampleBuffer`: A [`CMSampleBuffer`](https://developer.apple.com/documentation/CoreMedia/CMSampleBuffer) object containing either audio or video data.
+- `sampleBuffer`: A [`CMSampleBuffer`](https://developer.apple.com/documentation/coremedia/cmsamplebuffer) object containing either audio or video data.
 - `sampleBufferType`: An [`RPSampleBufferType`](rpsamplebuffertype.md) identifying the media type of the recorded sample.
 
 ## See Also

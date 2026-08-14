@@ -22,7 +22,7 @@ let SKReceiptPropertyIsVolumePurchase: String
 
 #### Discussion
 
-This key’s value is an instance of [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) that the system interprets as a Boolean value that indicates whether the receipt is a Volume Purchase Plan receipt.
+This key’s value is an instance of [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) that the system interprets as a Boolean value that indicates whether the receipt is a Volume Purchase Plan receipt.
 
 ## See Also
 

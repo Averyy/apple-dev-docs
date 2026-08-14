@@ -6,9 +6,9 @@ Compress the contents of a Unicode string and store the result on the file syste
 
 #### Overview
 
-In this article, you’ll learn how to use AppleArchive to compress a [`String`](https://developer.apple.com/documentation/Swift/String) structure, and write the compressed data to a file in macOS.
+In this article, you’ll learn how to use AppleArchive to compress a [`String`](https://developer.apple.com/documentation/swift/string) structure, and write the compressed data to a file in macOS.
 
-The code below compresses a string using the [`Algorithm.lzfse`](https://developer.apple.com/documentation/Compression/Algorithm/lzfse) algorithm, and stores the result as `lorem.txt` in an AppleArchive file named `lorem.aar`. The code writes `lorem.aar` to the user’s `Downloads` directory.
+The code below compresses a string using the [`Algorithm.lzfse`](https://developer.apple.com/documentation/compression/algorithm/lzfse) algorithm, and stores the result as `lorem.txt` in an AppleArchive file named `lorem.aar`. The code writes `lorem.aar` to the user’s `Downloads` directory.
 
 ##### Create the Source String
 
@@ -25,7 +25,7 @@ In a real-world app, you’ll most likely generate the string from a source such
 
 ##### Specify the Compressed File Path
 
-Create a [`FilePath`](https://developer.apple.com/documentation/System/FilePath) structure that specifies the file name and location of the AppleArchive file that stores the compressed data. You must add read and write file access to the Downloads folder in the Signing and Capabilities pane. To learn more about configuring the App Sandbox, see [`App Sandbox`](https://developer.apple.com/documentation/Security/app-sandbox).
+Create a [`FilePath`](https://developer.apple.com/documentation/system/filepath) structure that specifies the file name and location of the AppleArchive file that stores the compressed data. You must add read and write file access to the Downloads folder in the Signing and Capabilities pane. To learn more about configuring the App Sandbox, see [`App Sandbox`](https://developer.apple.com/documentation/security/app-sandbox).
 
 The following code creates a file path to `lorem.aar`:
 
@@ -45,10 +45,10 @@ let archiveFilePath: FilePath = {
 
 ##### Create the File Stream to Write the Compressed File
 
-Use `fileStream(path:mode:options:permissions:)` to create the file stream that writes the compressed file to the file system. In this case, use the [`writeOnly`](https://developer.apple.com/documentation/System/FileDescriptor/AccessMode/writeOnly) mode. Set the options as:
+Use `fileStream(path:mode:options:permissions:)` to create the file stream that writes the compressed file to the file system. In this case, use the [`writeOnly`](https://developer.apple.com/documentation/system/filedescriptor/accessmode/writeonly) mode. Set the options as:
 
-- **[`create`](https://developer.apple.com/documentation/System/FileDescriptor/OpenOptions/create)**: To specify that the byte stream creates the file if it doesn’t already exist.
-- **[`truncate`](https://developer.apple.com/documentation/System/FileDescriptor/OpenOptions/truncate)**: To specify that if the file exists, the byte stream truncates it to zero bytes before it performs any operations.
+- **[`create`](https://developer.apple.com/documentation/system/filedescriptor/openoptions/create)**: To specify that the byte stream creates the file if it doesn’t already exist.
+- **[`truncate`](https://developer.apple.com/documentation/system/filedescriptor/openoptions/truncate)**: To specify that if the file exists, the byte stream truncates it to zero bytes before it performs any operations.
 
 ```swift
 guard let writeFileStream = ArchiveByteStream.fileStream(
@@ -65,7 +65,7 @@ defer {
 
 ##### Create the Compression Stream
 
-Create the compression stream, and specify the compression algorithm as [`lzfse`](https://developer.apple.com/documentation/AppleArchive/ArchiveCompression/lzfse). Specify the file-writing stream as the stream that receives the compressed data:
+Create the compression stream, and specify the compression algorithm as [`lzfse`](https://developer.apple.com/documentation/applearchive/archivecompression/lzfse). Specify the file-writing stream as the stream that receives the compressed data:
 
 ```swift
 guard let compressStream = ArchiveByteStream.compressionStream(
@@ -103,7 +103,7 @@ header.append(.string(key: ArchiveHeader.FieldKey("PAT"),
                       value: "lorem.txt"))
 ```
 
-The `TYP` field contains the compressed file type. Specify [`regularFile`](https://developer.apple.com/documentation/AppleArchive/ArchiveHeader/EntryType-swift.struct/regularFile) for the `TYP` field:
+The `TYP` field contains the compressed file type. Specify [`regularFile`](https://developer.apple.com/documentation/applearchive/archiveheader/entrytype-swift.struct/regularfile) for the `TYP` field:
 
 ```swift
 header.append(.uint(key: ArchiveHeader.FieldKey("TYP"),
@@ -117,7 +117,7 @@ header.append(.blob(key: ArchiveHeader.FieldKey("DAT"),
                     size: UInt64(loremString.utf8.count)))
 ```
 
-For more information about three-letter keys, see [`init(_:)`](https://developer.apple.com/documentation/AppleArchive/ArchiveHeader/FieldKeySet/init(_:)).
+For more information about three-letter keys, see [`init(_:)`](https://developer.apple.com/documentation/applearchive/archiveheader/fieldkeyset/init(_:)).
 
 Finally, write the header to the encode stream:
 
@@ -131,7 +131,7 @@ do {
 
 ##### Write the String to the Encode Stream
 
-Use [`writeBlob(key:from:)`](https://developer.apple.com/documentation/AppleArchive/ArchiveStreamProtocol/writeBlob(key:from:)) to write the contents of the string as a blob to the encode stream. In turn, the encode stream writes to the compression stream and then, the compression stream writes to the file stream. Finally, the file stream writes the archive file to the file system:
+Use [`writeBlob(key:from:)`](https://developer.apple.com/documentation/applearchive/archivestreamprotocol/writeblob(key:from:)) to write the contents of the string as a blob to the encode stream. In turn, the encode stream writes to the compression stream and then, the compression stream writes to the file stream. Finally, the file stream writes the archive file to the file system:
 
 ```swift
 do {

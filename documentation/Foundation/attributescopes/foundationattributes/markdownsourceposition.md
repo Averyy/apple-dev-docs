@@ -46,7 +46,7 @@ if let attString = try? AttributedString(markdown: markdown, options: options) {
 // Prints: Found strong emphasis: MarkdownSourcePosition(startLine: 1, startColumn: 27, endLine: 1, endColumn: 41, startOffsets: Optional(Foundation.AttributedString.MarkdownSourcePosition.Offsets(utf8: 26, utf16: 26, utf8NextCodePoint: 27, utf16CurrentCodePointLength: 1)), endOffsets: Optional(Foundation.AttributedString.MarkdownSourcePosition.Offsets(utf8: 40, utf16: 40, utf8NextCodePoint: 41, utf16CurrentCodePointLength: 1))), text: 'strong emphasis'
 ```
 
-This uses the [`Range`](https://developer.apple.com/documentation/Swift/Range) convenience initializer [`init(_:in:)`](https://developer.apple.com/documentation/Swift/Range/init(_:in:)-9vre5), which creates a range from an [`AttributedString.MarkdownSourcePosition`](attributedstring/markdownsourceposition.md) and the Markdown source string. Working with a range may be more convenient than working with the start and end position properties in [`AttributedString.MarkdownSourcePosition`](attributedstring/markdownsourceposition.md).
+This uses the [`Range`](https://developer.apple.com/documentation/swift/range) convenience initializer [`init(_:in:)`](https://developer.apple.com/documentation/swift/range/init(_:in:)-9vre5), which creates a range from an [`AttributedString.MarkdownSourcePosition`](attributedstring/markdownsourceposition.md) and the Markdown source string. Working with a range may be more convenient than working with the start and end position properties in [`AttributedString.MarkdownSourcePosition`](attributedstring/markdownsourceposition.md).
 
 ## See Also
 

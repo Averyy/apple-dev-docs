@@ -21,7 +21,7 @@ In addition, using the right directories for the right files provides useful fea
 
 ##### Access Common Directories
 
-On iOS, tvOS, watchOS, and visionOS, apps perform all their file access within the app’s bundle. There’s no access outside of the bundle, except in cases where higher-level APIs access outside files on the app’s behalf, like when you use [`Media Player`](https://developer.apple.com/documentation/MediaPlayer) to play songs from the device’s music library. A sandboxed macOS app uses a similar setup.
+On iOS, tvOS, watchOS, and visionOS, apps perform all their file access within the app’s bundle. There’s no access outside of the bundle, except in cases where higher-level APIs access outside files on the app’s behalf, like when you use [`Media Player`](https://developer.apple.com/documentation/mediaplayer) to play songs from the device’s music library. A sandboxed macOS app uses a similar setup.
 
 Within the bundle, the system provides specific directories, some with distinct behaviors, such as backing up, or periodically purging files. Access these directories with methods and properties from the [`URL`](url.md) and [`FileManager`](filemanager.md) types:
 
@@ -32,9 +32,9 @@ Use these APIs whenever possible. Don’t hard-code paths to what appear to be c
 
 ##### Store Long Lived Files
 
-When writing a document-based app with APIs like [`UIDocument`](https://developer.apple.com/documentation/UIKit/UIDocument) and [`NSDocument`](https://developer.apple.com/documentation/AppKit/NSDocument), store files in the `Documents` folder. You can access this folder with the URL [`documentsDirectory`](url/documentsdirectory.md) or the search path [`FileManager.SearchPathDirectory.documentDirectory`](filemanager/searchpathdirectory/documentdirectory.md).
+When writing a document-based app with APIs like [`UIDocument`](https://developer.apple.com/documentation/uikit/uidocument) and [`NSDocument`](https://developer.apple.com/documentation/appkit/nsdocument), store files in the `Documents` folder. You can access this folder with the URL [`documentsDirectory`](url/documentsdirectory.md) or the search path [`FileManager.SearchPathDirectory.documentDirectory`](filemanager/searchpathdirectory/documentdirectory.md).
 
-You can also use this folder for other files managed by the person using your app, even if you don’t use the [`UIDocument`](https://developer.apple.com/documentation/UIKit/UIDocument) or [`NSDocument`](https://developer.apple.com/documentation/AppKit/NSDocument) APIs.
+You can also use this folder for other files managed by the person using your app, even if you don’t use the [`UIDocument`](https://developer.apple.com/documentation/uikit/uidocument) or [`NSDocument`](https://developer.apple.com/documentation/appkit/nsdocument) APIs.
 
 The system backs up files in the `Documents` folder when connecting an iOS device to a macOS computer with a USB cable, or when performing an iCloud backup. The system can also make the contents of the `Documents` folder available for file sharing. Only store files in this folder that you want to expose to the person using your app.
 
@@ -60,13 +60,13 @@ The system doesn’t back up either the temporary directory or the caches direct
 
 The following decision tree summarizes the factors to consider when choosing a storage directory, and the [`URL`](url.md) constants for those directories.
 
-![A graphic showing a decision tree, reading from left to right. The first decision point reads ‘Is your file long-lived?’ The ‘yes’ answer leads to another decision point: ‘Who manages the file?](https://docs-assets.developer.apple.com/published/83778edc2ff98e6e2f0b37fe988744a6/storage-usage-best-practices-decision-flow%402x.png)
+![A graphic showing a decision tree, reading from left to right. The first decision point reads ‘Is your file long-lived?’ The ‘yes’ answer leads to another decision point: ‘Who manages the file?](/images/com.apple.foundation/storage-usage-best-practices-decision-flow@2x.png)
 
 ##### Access the Rest of the File System in a Non Sandboxed Macos App
 
 A non-sandboxed macOS app can access files outside of its own container. This ability can be useful for apps that read from and write to other locations in the file system.
 
-> 💡 **Tip**: To use files outside the app container of a sandboxed macOS app, see [`Accessing files from the macOS App Sandbox`](https://developer.apple.com/documentation/Security/accessing-files-from-the-macos-app-sandbox).
+> 💡 **Tip**: To use files outside the app container of a sandboxed macOS app, see [`Accessing files from the macOS App Sandbox`](https://developer.apple.com/documentation/security/accessing-files-from-the-macos-app-sandbox).
 
 When a macOS app isn’t sandboxed, the common directory properties in [`URL`](url.md) provide different values. For example, in a non-sandboxed macOS app, [`applicationSupportDirectory`](url/applicationsupportdirectory.md) is “`~/Library/Application Support`”, and [`cachesDirectory`](url/cachesdirectory.md) is “`~/Library/Caches`”. This difference in values also applies when using [`urls(for:in:)`](filemanager/urls(for:in:).md) with search path constants like [`FileManager.SearchPathDirectory.applicationSupportDirectory`](filemanager/searchpathdirectory/applicationsupportdirectory.md) and [`FileManager.SearchPathDirectory.cachesDirectory`](filemanager/searchpathdirectory/cachesdirectory.md).
 

@@ -23,7 +23,7 @@ var sampleReferenceBaseURL: URL? { get set }
 
 This property is only valid for file types that support writing sample references, such as QuickTime files. If the system resolves the value of this property to an absolute URL, the sample references it appends are relative to this URL. The URL must point to a location that’s in a directory that’s a parent of the sample reference location.
 
-For example, setting the value of this property to `file:///User/johnappleseed/Movies/` and appending sample buffers with the [`kCMSampleBufferAttachmentKey_SampleReferenceURL`](https://developer.apple.com/documentation/CoreMedia/kCMSampleBufferAttachmentKey_SampleReferenceURL) attachment set to `file:///User/johnappleseed/Movies/data/movie1.mov` writes a sample reference of `data/movie1.mov` to the movie.
+For example, setting the value of this property to `file:///User/johnappleseed/Movies/` and appending sample buffers with the [`kCMSampleBufferAttachmentKey_SampleReferenceURL`](https://developer.apple.com/documentation/coremedia/kcmsamplebufferattachmentkey_samplereferenceurl) attachment set to `file:///User/johnappleseed/Movies/data/movie1.mov` writes a sample reference of `data/movie1.mov` to the movie.
 
 ## See Also
 

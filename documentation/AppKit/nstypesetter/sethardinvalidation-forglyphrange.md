@@ -16,7 +16,7 @@ func setHardInvalidation(_ flag: Bool, forGlyphRange glyphRange: NSRange)
 
 ## Parameters
 
-- `flag`: [`true`](https://developer.apple.com/documentation/Swift/true) if the layout manager should invalidate the specified portion of the glyph cache, [`false`](https://developer.apple.com/documentation/Swift/false) otherwise.
+- `flag`: [`true`](https://developer.apple.com/documentation/swift/true) if the layout manager should invalidate the specified portion of the glyph cache, [`false`](https://developer.apple.com/documentation/swift/false) otherwise.
 - `glyphRange`: The range of glyphs in the cache to be marked for hard invalidation.
 
 ## See Also

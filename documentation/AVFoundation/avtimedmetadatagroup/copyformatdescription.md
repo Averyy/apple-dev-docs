@@ -22,7 +22,7 @@ func copyFormatDescription() -> CMMetadataFormatDescription?
 
 #### Return Value
 
-An instance of [`CMMetadataFormatDescription`](https://developer.apple.com/documentation/CoreMedia/CMMetadataFormatDescription) sufficient to describe the contents of all the items referenced by the object.
+An instance of [`CMMetadataFormatDescription`](https://developer.apple.com/documentation/coremedia/cmmetadataformatdescription) sufficient to describe the contents of all the items referenced by the object.
 
 #### Discussion
 

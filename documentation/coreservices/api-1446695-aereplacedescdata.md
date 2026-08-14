@@ -24,10 +24,10 @@ Thread safe starting in OS X v10.2.
 
 ## Parameters
 
-- `typeCode`: Specifies the descriptor type of the data pointed to by  . For a list of AppleScript’s predefined descriptor types, see  . See  .
+- `typeCode`: Specifies the descriptor type of the data pointed to by `dataPtr`. For a list of AppleScript’s predefined descriptor types, see [`Descriptor Type Constants`](apple_events/1542788-descriptor_type_constants.md). See [`DescType`](desctype.md).
 - `dataPtr`: A pointer to the data to store in the specified descriptor.
-- `dataSize`: The size, in bytes, of the data pointed to by the   parameter. 
-- `theAEDesc`: A pointer to a descriptor. On return, contains the copied data. See  .
+- `dataSize`: The size, in bytes, of the data pointed to by the `dataSize` parameter. 
+- `theAEDesc`: A pointer to a descriptor. On return, contains the copied data. See [`AEDesc`](aedesc.md).
 
 ## See Also
 

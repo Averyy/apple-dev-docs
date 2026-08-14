@@ -8,7 +8,7 @@ Let players measure their own progress and compare their skills with friends and
 
 Use leaderboards to record player scores, which they can view in their Game Center account and directly in your game using built-in Game Center or custom interfaces. Game Center even encourages engagement by notifying players when their friends pass their scores.
 
-![Three images of an iPhone screen in portrait layout, showing the Leaderboards section of Game Center, the best scores of an individual leaderboard, and a notification to a player that their friend passed their score.](https://docs-assets.developer.apple.com/published/6cc8995ce2829bc3a39c7b2057866692/media-4285793%402x.png)
+![Three images of an iPhone screen in portrait layout, showing the Leaderboards section of Game Center, the best scores of an individual leaderboard, and a notification to a player that their friend passed their score.](/images/com.apple.gamekit/media-4285793@2x.png)
 
 You configure a classic or recurring leaderboard in Xcode and submit scores from your code. A *classic leaderboard* retains the scores until you delete the leaderboard. A *recurring leaderboard* automatically resets the board on the intervals you specify. For example, use a classic leaderboard for the best all-time scores and a recurring leaderboard for periodic competitions.
 
@@ -22,7 +22,7 @@ Configure leaderboards in Xcode before accessing them in your code and testing l
 
 For each leaderboard you configure, you specify details like the score format, submission type, and whether the data resets and starts again after a period of time. Decide on a style for your leaderboard identifiers, because you won’t be able to change them at a later time. Before you begin, have at least one localized name and image, which Game Center presents to the player, ready to upload for a language.
 
-![A screenshot showing the Xcode project with a GameKit configuration file selected. A leaderboard is in a selected state and it shows a variety of properties to configure, like the reference name, score format type, score submission type, and so on.](https://docs-assets.developer.apple.com/published/896698aca1b7e35bb2d51ea08117c716/xcode-config-leaderboards%402x.png)
+![A screenshot showing the Xcode project with a GameKit configuration file selected. A leaderboard is in a selected state and it shows a variety of properties to configure, like the reference name, score format type, score submission type, and so on.](/images/com.apple.gamekit/xcode-config-leaderboards@2x.png)
 
 A leaderboard set organizes many leaderboards into a single unit. For example, for a game with many levels, use a leaderboard set to organize the leaderboards for each level. You can have up to 100 leaderboards without using leaderboard sets. When you use leaderboard sets, you can have up to 500 leaderboards across 100 leaderboard sets.
 
@@ -34,7 +34,7 @@ If you add a leaderboard to an unreleased version of your game or sign the game 
 
 Use the Game Progress Manager to test leaderboards on your local device before you push the configuration update to App Store Connect. After selecting a leaderboard, you can add players to the leaderboard with score value. You can also test deep-linking behavior that you associate with a leaderboard.
 
-![A screenshot showing the Game Progress Manager with a leaderboard is in a selected state. The right panel shows a list of custom players that have a score values.](https://docs-assets.developer.apple.com/published/1ecee853d8093dcc5b84b4a97287fc35/xcode-progress-manager-leaderboards%402x.png)
+![A screenshot showing the Game Progress Manager with a leaderboard is in a selected state. The right panel shows a list of custom players that have a score values.](/images/com.apple.gamekit/xcode-progress-manager-leaderboards@2x.png)
 
 For more information about the leaderboard properties you can configure, see [`Leaderboard properties`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/reference/leaderboards#leaderboard-properties).
 
@@ -55,7 +55,7 @@ Game Center formats the scores that you submit as integer values depending on th
 
 Optionally, enter a range of allowable values in the Score Range fields that matches the score format. For elapsed time values, enter a range in seconds or centiseconds (Elapsed Time - To the Hundredth of a Second). For example, if you choose Elapsed Time - To the Minute and want the maximum value to be 10 minutes, enter `600` seconds in the To field. Then check whether the formatted range values that appear below the range text fields are in the score format you want.
 
-![A screenshot of the Add Leaderboard sheet in Xcode. The score format is set to Elapsed Time - To the Hundredth of a Second, with 360000 centiseconds entered as the maximum value in the score range, formatted as 1:00:00.00.](https://docs-assets.developer.apple.com/published/02c72dd4834ea2d545434aad90263db4/add-leaderboard%402x.png)
+![A screenshot of the Add Leaderboard sheet in Xcode. The score format is set to Elapsed Time - To the Hundredth of a Second, with 360000 centiseconds entered as the maximum value in the score range, formatted as 1:00:00.00.](/images/com.apple.gamekit/add-leaderboard@2x.png)
 
 #### Add a Unit to the Score Format or Choose a Currency Symbol
 
@@ -79,7 +79,7 @@ If you load all leaderboards using the `GKLeaderboard` [`loadLeaderboards(IDs:co
 
 Optionally, use the `context` parameter in both of these methods to store game-specific information. For example, pass a flag that contains information about how the player earned the score, such as the vehicle they drive in a racing game.
 
-If you prefer to submit scores through your own server, see [`Game Center leaderboards scores`](https://developer.apple.com/documentation/AppStoreConnectAPI/game-center-leaderboards-scores).
+If you prefer to submit scores through your own server, see [`Game Center leaderboards scores`](https://developer.apple.com/documentation/appstoreconnectapi/game-center-leaderboards-scores).
 
 #### Fetch Leaderboards and Leaderboard Sets
 

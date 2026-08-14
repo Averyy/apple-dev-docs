@@ -33,7 +33,7 @@ This function is thread safe.
 
 ## Parameters
 
-- `alloc`: The allocator to use to allocate memory for the new object. Pass `NULL` or [`kCFAllocatorDefault`](https://developer.apple.com/documentation/CoreFoundation/kCFAllocatorDefault) to use the current default allocator.
+- `alloc`: The allocator to use to allocate memory for the new object. Pass `NULL` or [`kCFAllocatorDefault`](https://developer.apple.com/documentation/corefoundation/kcfallocatordefault) to use the current default allocator.
 - `service`: CFNetServiceRef to be copied; cannot be `NULL`. If `service` is not a valid CFNetServiceRef, the behavior of this function is undefined.
 
 ## See Also

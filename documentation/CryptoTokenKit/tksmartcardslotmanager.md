@@ -24,7 +24,7 @@ class TKSmartCardSlotManager
 
 Get a list of all known smart card reader slots in the system using the [`slotNames`](tksmartcardslotmanager/slotnames.md) property, and access individual slots by name using the [`getSlot(withName:reply:)`](tksmartcardslotmanager/getslot(withname:reply:).md) method.
 
-> ❗ **Important**:  The [`com.apple.security.smartcard`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.security.smartcard) entitlement is required in order to use `TKSmartCardSlotManager`.
+> ❗ **Important**:  The [`com.apple.security.smartcard`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.security.smartcard) entitlement is required in order to use `TKSmartCardSlotManager`.
 
 ## Topics
 
@@ -47,14 +47,14 @@ Get a list of all known smart card reader slots in the system using the [`slotNa
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

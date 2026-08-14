@@ -18,7 +18,7 @@ var nameComponents: PersonNameComponents?
 
 #### Discussion
 
-You can use this property to construct the person’s name for display. Use the components with an instance of [`PersonNameComponentsFormatter`](https://developer.apple.com/documentation/Foundation/PersonNameComponentsFormatter) to create a string representation for the current locale.
+You can use this property to construct the person’s name for display. Use the components with an instance of [`PersonNameComponentsFormatter`](https://developer.apple.com/documentation/foundation/personnamecomponentsformatter) to create a string representation for the current locale.
 
 ## See Also
 

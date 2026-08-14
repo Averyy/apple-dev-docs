@@ -25,8 +25,8 @@ The page range returned by the function `PMGetPageRange` is independent of the f
 ## Parameters
 
 - `printSettings`: The print settings object whose page range you want to obtain.
-- `minPage`: A pointer to your   variable. On return, the variable contains the minimum page number allowed.
-- `maxPage`: A pointer to your   variable. On return, the variable contains the maximum page number allowed.
+- `minPage`: A pointer to your `UInt32` variable. On return, the variable contains the minimum page number allowed.
+- `maxPage`: A pointer to your `UInt32` variable. On return, the variable contains the maximum page number allowed.
 
 ## See Also
 

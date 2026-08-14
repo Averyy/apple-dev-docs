@@ -21,7 +21,7 @@ var kExtAudioFileProperty_ClientDataFormat: ExtAudioFilePropertyID { get }
 
 #### Discussion
 
-The audio stream format for your application. Value is a read/write [`AudioStreamBasicDescription`](https://developer.apple.com/documentation/CoreAudioTypes/AudioStreamBasicDescription) struct.
+The audio stream format for your application. Value is a read/write [`AudioStreamBasicDescription`](https://developer.apple.com/documentation/coreaudiotypes/audiostreambasicdescription) struct.
 
 #### Discussion
 

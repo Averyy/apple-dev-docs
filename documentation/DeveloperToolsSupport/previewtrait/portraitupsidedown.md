@@ -23,7 +23,7 @@ static var portraitUpsideDown: PreviewTrait<Preview.ViewTraits> { get }
 
 #### Discussion
 
-This is the same as [`portraitUpsideDown`](https://developer.apple.com/documentation/SwiftUI/InterfaceOrientation/portraitUpsideDown).
+This is the same as [`portraitUpsideDown`](https://developer.apple.com/documentation/swiftui/interfaceorientation/portraitupsidedown).
 
 ## See Also
 

@@ -10,7 +10,7 @@ Create a displayable ARGB image using the luminance and chrominance information 
 
 #### Overview
 
-As an alternative to the any-to-any conversion technique that [`Using vImage pixel buffers to generate video effects`](using-vimage-pixel-buffers-to-generate-video-effects.md) describes, vImage provides low-level functions for creating RGB images from the separate luminance and chrominance planes that an [`AVCaptureSession`](https://developer.apple.com/documentation/AVFoundation/AVCaptureSession) instance provides. These functions offer better performance and more granular configuration than using a [`vImageConverter`](vimageconverter.md) instance.
+As an alternative to the any-to-any conversion technique that [`Using vImage pixel buffers to generate video effects`](using-vimage-pixel-buffers-to-generate-video-effects.md) describes, vImage provides low-level functions for creating RGB images from the separate luminance and chrominance planes that an [`AVCaptureSession`](https://developer.apple.com/documentation/avfoundation/avcapturesession) instance provides. These functions offer better performance and more granular configuration than using a [`vImageConverter`](vimageconverter.md) instance.
 
 ##### Configure the Ypcbcr to Argb Information
 
@@ -49,9 +49,9 @@ func configureYpCbCrToARGBInfo() {
 
 ##### Lock the Core Video Pixel Buffer
 
-Before the sample app accesses the pixel data that AVFoundation supplies as a [`CVPixelBuffer`](https://developer.apple.com/documentation/CoreVideo/cvpixelbuffer-q2e), it calls [`CVPixelBufferLockBaseAddress(_:_:)`](https://developer.apple.com/documentation/CoreVideo/CVPixelBufferLockBaseAddress(_:_:)) to lock the pixel buffer and make the underlying memory available.
+Before the sample app accesses the pixel data that AVFoundation supplies as a [`CVPixelBuffer`](https://developer.apple.com/documentation/corevideo/cvpixelbuffer-q2e), it calls [`CVPixelBufferLockBaseAddress(_:_:)`](https://developer.apple.com/documentation/corevideo/cvpixelbufferlockbaseaddress(_:_:)) to lock the pixel buffer and make the underlying memory available.
 
-After the YpCbCr-to-RGB conversion is complete, the code calls [`CVPixelBufferUnlockBaseAddress(_:_:)`](https://developer.apple.com/documentation/CoreVideo/CVPixelBufferUnlockBaseAddress(_:_:)) to unlock the pixel buffer.
+After the YpCbCr-to-RGB conversion is complete, the code calls [`CVPixelBufferUnlockBaseAddress(_:_:)`](https://developer.apple.com/documentation/corevideo/cvpixelbufferunlockbaseaddress(_:_:)) to unlock the pixel buffer.
 
 The `convertYpCbCrToRGB(cvPixelBuffer:)` function performs the YpCbCr-to-RGB conversion.
 
@@ -69,7 +69,7 @@ CVPixelBufferUnlockBaseAddress(
 
 ##### Create the Source Luminance and Chrominance Pixel Buffers
 
-The `convertYpCbCrToRGB(cvPixelBuffer:)` function creates two pixel buffers that share memory with the [`CVPixelBuffer`](https://developer.apple.com/documentation/CoreVideo/cvpixelbuffer-q2e). The Core Video pixel buffer contains two planes: the plane at index `0` contains one channel that represents the luminance component, the plane at index `1` contains two interleaved channels that represent the two chrominance components.
+The `convertYpCbCrToRGB(cvPixelBuffer:)` function creates two pixel buffers that share memory with the [`CVPixelBuffer`](https://developer.apple.com/documentation/corevideo/cvpixelbuffer-q2e). The Core Video pixel buffer contains two planes: the plane at index `0` contains one channel that represents the luminance component, the plane at index `1` contains two interleaved channels that represent the two chrominance components.
 
 The [`init(referencing:planeIndex:overrideSize:pixelFormat:)`](vimage/pixelbuffer/init(referencing:planeindex:overridesize:pixelformat:).md) function initializes a [`vImage.PixelBuffer`](vimage/pixelbuffer.md) that references a single plane of a multiple-plane Core Video pixel buffer.
 
@@ -85,7 +85,7 @@ let chromaPixelBuffer = vImage.PixelBuffer(referencing: cvPixelBuffer,
 
 ##### Adjust the Contrast of the Image
 
-The sample app provides a [`Slider`](https://developer.apple.com/documentation/SwiftUI/Slider) for changing the contrast of the final image. The following code example uses the tone-mapping technique that [`Adjusting saturation and applying tone mapping`](adjusting-saturation-and-applying-tone-mapping.md) describes:
+The sample app provides a [`Slider`](https://developer.apple.com/documentation/swiftui/slider) for changing the contrast of the final image. The following code example uses the tone-mapping technique that [`Adjusting saturation and applying tone mapping`](adjusting-saturation-and-applying-tone-mapping.md) describes:
 
 ```swift
 if contrast != 1 {

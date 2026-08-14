@@ -52,7 +52,7 @@ struct StepperView: View {
 }
 ```
 
-![A view displaying a stepper that uses a title resource for the](https://docs-assets.developer.apple.com/published/454b319c800c954fe79070014aaa7d83/SwiftUI-Stepper-increment-decrement-closures%402x.png)
+![A view displaying a stepper that uses a title resource for the](/images/com.apple.SwiftUI/SwiftUI-Stepper-increment-decrement-closures@2x.png)
 
 ## Parameters
 

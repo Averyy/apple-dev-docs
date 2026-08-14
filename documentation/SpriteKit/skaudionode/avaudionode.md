@@ -22,7 +22,7 @@ var avAudioNode: AVAudioNode? { get set }
 
 #### Discussion
 
-The AV audio node must refer to an [`AVAudioEngine`](https://developer.apple.com/documentation/AVFAudio/AVAudioEngine) sound graph from a single sound source or URL.
+The AV audio node must refer to an [`AVAudioEngine`](https://developer.apple.com/documentation/avfaudio/avaudioengine) sound graph from a single sound source or URL.
 
 ## See Also
 

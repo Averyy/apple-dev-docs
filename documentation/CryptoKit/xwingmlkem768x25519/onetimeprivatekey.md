@@ -34,8 +34,8 @@ struct OneTimePrivateKey
 
 ### Conforms To
 - [KEMOneTimePrivateKey](kemonetimeprivatekey.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 
 ---

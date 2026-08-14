@@ -17,17 +17,17 @@ Develop device drivers for Peripheral Component Interconnect (PCI) accessories.
 
 Use the PCIDriverKit framework to develop drivers that manage custom features on your Peripheral Component Interconnect (PCI) and PCI-Express hardware. When the system loads your custom PCI driver, it passes an [`IOPCIDevice`](iopcidevice.md) object as the provider to your driver. Use that object to read and write the configuration and memory of your PCI hardware.
 
-On macOS, use the [`System Extensions`](https://developer.apple.com/documentation/SystemExtensions) framework to install and upgrade your driver. On iPadOS, the system automatically discovers and upgrades drivers along with their host apps.
+On macOS, use the [`System Extensions`](https://developer.apple.com/documentation/systemextensions) framework to install and upgrade your driver. On iPadOS, the system automatically discovers and upgrades drivers along with their host apps.
 
 > **Note**:  PCIDriverKit is available on macOS for Intel and Apple Silicon devices, and on iPadOS for devices with an M-series chip.
 
 ## Topics
 
 ### Entitlements
-- [com.apple.developer.driverkit.transport.pci](../BundleResources/Entitlements/com.apple.developer.driverkit.transport.pci.md)
+- [com.apple.developer.driverkit.transport.pci](../bundleresources/entitlements/com.apple.developer.driverkit.transport.pci.md)
   An array of PCI device descriptors that your custom driver supports.
 ### Samples
-- [DriverKit sample code](../DriverKit/driverkit-sample-code.md)
+- [DriverKit sample code](../driverkit/driverkit-sample-code.md)
   Explore projects that demonstrate how to write macOS device drivers with the DriverKit family of frameworks.
 - [Connecting a network driver](connecting-a-network-driver.md)
   Create an Ethernet driver that interfaces with the system’s network protocol stack.

@@ -10,7 +10,7 @@ A person’s device maximizes its battery life by reducing its use of power-cons
 
 When your app uses these features, it reduces the time the device lasts between charges and potentially increases the device’s temperature, which can cause the device to limit its function to avoid overheating. A person can see which apps use significant amounts of battery power by opening the Battery settings on their device. If the person sees that your app uses a lot of power and contributes to a poor overall experience using the device, they might choose to use your app less, or uninstall your app.
 
-![A screenshot of the iOS Battery settings pane, showing a list of apps that use energy on the device.](https://docs-assets.developer.apple.com/published/e862697e584353c8704e7c57153f2212/battery-settings%402x.png)
+![A screenshot of the iOS Battery settings pane, showing a list of apps that use energy on the device.](/images/com.apple.Xcode/battery-settings@2x.png)
 
 Gather information from Xcode, MetricKit, and Instruments to understand your app’s battery use, and identify and prioritize opportunities for improving your app’s performance.
 
@@ -20,7 +20,7 @@ The Battery Usage pane in the Xcode Organizer shows a breakdown of the appʼs fo
 
 The top graph shows the onscreen use, and the percentage of battery used, normalized to a 24-hour period while the app is in the foreground and the device isnʼt connected to power.
 
-![Screenshot of the Battery Usage metric pane in the Xcode Organizer. From left to right is the list of metrics and reports, the metric UI with a bar graph showing the battery usage over the last 8 app versions, and a detail view of the comparison data and battery usage category breakdown on the right side. ](https://docs-assets.developer.apple.com/published/c6fc436ca3bc73b36edf1044071f39b6/analyzing-your-app-s-battery-use-1%402x.png)
+![Screenshot of the Battery Usage metric pane in the Xcode Organizer. From left to right is the list of metrics and reports, the metric UI with a bar graph showing the battery usage over the last 8 app versions, and a detail view of the comparison data and battery usage category breakdown on the right side. ](/images/com.apple.Xcode/analyzing-your-app-s-battery-use-1@2x.png)
 
 The bottom graph shows the background battery use during the same period.
 
@@ -55,19 +55,19 @@ In Xcode, set the run destination to a device and choose Product > Run. For more
 
 In the Debug navigator, show the debug gauges and click Energy Impact to see your app’s energy usage. The gauge shows the app’s average energy impact, and the pie chart shows how much each power use category contributes to energy use on the device. The timeline reports the instantaneous energy use associated with each category, along with the app’s life-cycle state and the device’s thermal condition.
 
-![Screenshot of the Energy Impact view in Xcode. A gauge shows the average overall energy impact of the running app, and other charts report which power-use categories are active, and the state of the device.](https://docs-assets.developer.apple.com/published/68e23dc2f44eaf64684d58b741f506d0/xcode-energy-gauges%402x.png)
+![Screenshot of the Energy Impact view in Xcode. A gauge shows the average overall energy impact of the running app, and other charts report which power-use categories are active, and the state of the device.](/images/com.apple.Xcode/xcode-energy-gauges@2x.png)
 
 ##### Gather Power Metrics
 
-Use [`MetricKit`](https://developer.apple.com/documentation/MetricKit) to receive metrics about how your app uses the battery on people’s devices. Understand your app’s battery use by gathering the following metrics:
+Use [`MetricKit`](https://developer.apple.com/documentation/metrickit) to receive metrics about how your app uses the battery on people’s devices. Understand your app’s battery use by gathering the following metrics:
 
 | Power-use category | Metric |
 | --- | --- |
-| CPU | [`CPUTimeMetric`](https://developer.apple.com/documentation/MetricKit/CPUTimeMetric), [`CPUInstructionsCountMetric`](https://developer.apple.com/documentation/MetricKit/CPUInstructionsCountMetric) |
-| Display | [`PixelLuminanceMetric`](https://developer.apple.com/documentation/MetricKit/PixelLuminanceMetric) |
-| GPU | [`GPUTimeMetric`](https://developer.apple.com/documentation/MetricKit/GPUTimeMetric) |
-| Location activity | [`LocationActivityTimeMetric`](https://developer.apple.com/documentation/MetricKit/LocationActivityTimeMetric) |
-| Network activity | [`TotalWiFiUploadMetric`](https://developer.apple.com/documentation/MetricKit/TotalWiFiUploadMetric), [`TotalWiFiDownloadMetric`](https://developer.apple.com/documentation/MetricKit/TotalWiFiDownloadMetric), [`TotalCellularUploadMetric`](https://developer.apple.com/documentation/MetricKit/TotalCellularUploadMetric), [`TotalCellularDownloadMetric`](https://developer.apple.com/documentation/MetricKit/TotalCellularDownloadMetric) |
+| CPU | [`CPUTimeMetric`](https://developer.apple.com/documentation/metrickit/cputimemetric), [`CPUInstructionsCountMetric`](https://developer.apple.com/documentation/metrickit/cpuinstructionscountmetric) |
+| Display | [`PixelLuminanceMetric`](https://developer.apple.com/documentation/metrickit/pixelluminancemetric) |
+| GPU | [`GPUTimeMetric`](https://developer.apple.com/documentation/metrickit/gputimemetric) |
+| Location activity | [`LocationActivityTimeMetric`](https://developer.apple.com/documentation/metrickit/locationactivitytimemetric) |
+| Network activity | [`TotalWiFiUploadMetric`](https://developer.apple.com/documentation/metrickit/totalwifiuploadmetric), [`TotalWiFiDownloadMetric`](https://developer.apple.com/documentation/metrickit/totalwifidownloadmetric), [`TotalCellularUploadMetric`](https://developer.apple.com/documentation/metrickit/totalcellularuploadmetric), [`TotalCellularDownloadMetric`](https://developer.apple.com/documentation/metrickit/totalcellulardownloadmetric) |
 
 ##### Profile Your Apps Power Use in Instruments
 
@@ -77,7 +77,7 @@ Use the Power Profiler tool in Instruments to investigate your app’s battery u
 
 If you identify that a particular part of your code contributes significantly to your app’s overall energy use through CPU-intensive activity, create a performance test that measures that code’s CPU use. Run the test regularly to detect regressions in your app’s CPU use, which may cause a corresponding increase in energy use.
 
-Use [`XCTCPUMetric`](https://developer.apple.com/documentation/XCTest/XCTCPUMetric) in your performance test to measure the CPU use of the code block in the test. For more information, see [`Writing and running performance tests`](writing-and-running-performance-tests.md).
+Use [`XCTCPUMetric`](https://developer.apple.com/documentation/xctest/xctcpumetric) in your performance test to measure the CPU use of the code block in the test. For more information, see [`Writing and running performance tests`](writing-and-running-performance-tests.md).
 
 ##### Adopt Recommended Practices for Minimizing Battery Use
 

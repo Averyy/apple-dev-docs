@@ -26,9 +26,9 @@ A list format style that formats an array as a textual list of items.
 
 #### Discussion
 
-Use the dot-notation form of this type method when the call point allows the use of [`ListFormatStyle`](listformatstyle.md). You typically do this when calling the [`formatted(_:)`](https://developer.apple.com/documentation/Swift/Sequence/formatted(_:)) method of [`Sequence`](https://developer.apple.com/documentation/Swift/Sequence).
+Use the dot-notation form of this type method when the call point allows the use of [`ListFormatStyle`](listformatstyle.md). You typically do this when calling the [`formatted(_:)`](https://developer.apple.com/documentation/swift/sequence/formatted(_:)) method of [`Sequence`](https://developer.apple.com/documentation/swift/sequence).
 
-The following example creates an array of integers, then uses [`formatted(_:)`](https://developer.apple.com/documentation/Swift/Sequence/formatted(_:)) and the list format style provided by this method to format the items. By using a currency [`IntegerFormatStyle`](integerformatstyle.md), the list format style expresses each member as US dollars. The example also modifies the list format style to use the `en_US` locale, so the resulting string uses US English conventions for commas and conjunctions (“and”).
+The following example creates an array of integers, then uses [`formatted(_:)`](https://developer.apple.com/documentation/swift/sequence/formatted(_:)) and the list format style provided by this method to format the items. By using a currency [`IntegerFormatStyle`](integerformatstyle.md), the list format style expresses each member as US dollars. The example also modifies the list format style to use the `en_US` locale, so the resulting string uses US English conventions for commas and conjunctions (“and”).
 
 ```swift
 let items: [Int] = [100, 1000, 10000, 100000, 1000000]

@@ -8,9 +8,9 @@ Identify and control which visible object responds to user interaction.
 
 Focus indicates which element in the display receives the next input. Use view modifiers to indicate which views can receive focus, to detect which view has focus, and to programmatically control focus state.
 
-![None](https://docs-assets.developer.apple.com/published/2639ac49d6c0d4aac51bcc00f12a5e2e/focus-hero%402x.png)
+![None](/images/com.apple.SwiftUI/focus-hero@2x.png)
 
-For design guidance, see [`Focus and selection`](https://developer.apple.com/design/Human-Interface-Guidelines/focus-and-selection) in the Human Interface Guidelines.
+For design guidance, see [`Focus and selection`](https://developer.apple.com/design/human-interface-guidelines/focus-and-selection) in the Human Interface Guidelines.
 
 ## Topics
 

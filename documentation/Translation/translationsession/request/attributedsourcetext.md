@@ -54,7 +54,7 @@ if let coordinatesRange = attributedSource.range(of: "N37°47'11.5\" W122°25'34
 }
 ```
 
-When translating transcribed speech, the framework preserves time ranges so you can synchronize translated captions to the original audio. The Speech framework provides time ranges when you transcribe audio with [`SFSpeechRecognizer`](https://developer.apple.com/documentation/Speech/SFSpeechRecognizer). The following example shows setting time ranges and reads them back from the translation:
+When translating transcribed speech, the framework preserves time ranges so you can synchronize translated captions to the original audio. The Speech framework provides time ranges when you transcribe audio with [`SFSpeechRecognizer`](https://developer.apple.com/documentation/speech/sfspeechrecognizer). The following example shows setting time ranges and reads them back from the translation:
 
 ```swift
 import SwiftUI

@@ -22,7 +22,7 @@ let kCMSampleAttachmentKey_DependsOnOthers: CFString
 
 #### Discussion
 
-This key has no default value. If this key is not present, dependency information for the sample is unknown. A value of [`kCFBooleanFalse`](https://developer.apple.com/documentation/CoreFoundation/kCFBooleanFalse) indicates that the sample does not depend on other samples (for example, an I frame).  A value of [`kCFBooleanTrue`](https://developer.apple.com/documentation/CoreFoundation/kCFBooleanTrue) indicates that the sample does depend on other samples (for example, a P or B frame).
+This key has no default value. If this key is not present, dependency information for the sample is unknown. A value of [`kCFBooleanFalse`](https://developer.apple.com/documentation/corefoundation/kcfbooleanfalse) indicates that the sample does not depend on other samples (for example, an I frame).  A value of [`kCFBooleanTrue`](https://developer.apple.com/documentation/corefoundation/kcfbooleantrue) indicates that the sample does depend on other samples (for example, a P or B frame).
 
 This attachment is read from and written to media files.
 

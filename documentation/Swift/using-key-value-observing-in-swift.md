@@ -6,7 +6,7 @@ Notify objects about changes to the properties of other objects.
 
 #### Overview
 
-Key-value observing is a Cocoa programming pattern you use to notify objects about changes to properties of other objects. It’s useful for communicating changes between logically separated parts of your app—such as between models and views. You can only use key-value observing with classes that inherit from [`NSObject`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class).
+Key-value observing is a Cocoa programming pattern you use to notify objects about changes to properties of other objects. It’s useful for communicating changes between logically separated parts of your app—such as between models and views. You can only use key-value observing with classes that inherit from [`NSObject`](https://developer.apple.com/documentation/objectivec/nsobject-swift.class).
 
 ##### Annotate a Property for Key Value Observing
 
@@ -46,7 +46,7 @@ class MyObserver: NSObject {
 }
 ```
 
-You use the `oldValue` and `newValue` properties of the [`NSKeyValueObservedChange`](https://developer.apple.com/documentation/Foundation/NSKeyValueObservedChange) instance to see what’s changed about the property you’re observing.
+You use the `oldValue` and `newValue` properties of the [`NSKeyValueObservedChange`](https://developer.apple.com/documentation/foundation/nskeyvalueobservedchange) instance to see what’s changed about the property you’re observing.
 
 If you don’t need to know *how* a property has changed, omit the `options` parameter. Omitting the `options` parameter forgoes storing the new and old property values, which causes the `oldValue` and `newValue` properties to be `nil`.
 

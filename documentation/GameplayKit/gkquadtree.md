@@ -23,7 +23,7 @@ class GKQuadtree<ElementType> where ElementType : NSObject
 
 A quadtree manages its structure to optimize for spatial searches—unlike a basic data structure such as an array or dictionary, a quadtree can find all elements occupying a specific position or region very quickly. The quadtree partitioning strategy divides space into four quadrants at each level, as illustrated in [`Figure 1`](gkquadtree#1965707.md). When a quadrant contains more than one object, the tree subdivides that region into four smaller quadrants, adding a level to the tree.
 
-![None](https://docs-assets.developer.apple.com/published/43b632815a9aac05024873e4495e98c1/media-1965707%402x.png)
+![None](/images/com.apple.gameplaykit/media-1965707@2x.png)
 
 Quadtrees can be useful for many tasks in game design. For example:
 
@@ -61,14 +61,14 @@ The [`GKQuadtree`](gkquadtree.md) class is one of three spatial partitioning dat
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

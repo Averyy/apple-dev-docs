@@ -23,11 +23,11 @@ func subscriptionStoreControlStyle<S>(_ style: S, placement: S.Placement) -> som
 
 #### Discussion
 
-This modifier sets the style and placement of the subscription controls in any [`SubscriptionStoreView`](https://developer.apple.com/documentation/StoreKit/SubscriptionStoreView) instance within a view.
+This modifier sets the style and placement of the subscription controls in any [`SubscriptionStoreView`](https://developer.apple.com/documentation/storekit/subscriptionstoreview) instance within a view.
 
 ## Parameters
 
-- `style`: The subscription store control style to use when drawing the subscription controls of [`SubscriptionStoreView`](https://developer.apple.com/documentation/StoreKit/SubscriptionStoreView) instances within a view.
+- `style`: The subscription store control style to use when drawing the subscription controls of [`SubscriptionStoreView`](https://developer.apple.com/documentation/storekit/subscriptionstoreview) instances within a view.
 - `placement`: The desired region of the subscription store view for placing the subscription controls.
 
 ## See Also

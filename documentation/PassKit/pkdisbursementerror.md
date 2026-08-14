@@ -23,9 +23,9 @@ struct PKDisbursementError
 ### Error details
 - [PKDisbursementError.Code](pkdisbursementerror/code.md)
   Values that describe errors that can occur while processing the disbursement.
-- [var errorCode: Int](../Foundation/CustomNSError/errorCode-2opgi.md)
+- [var errorCode: Int](../foundation/customnserror/errorcode-2opgi.md)
   The error code within the given domain.
-- [var errorUserInfo: [String : Any]](../Foundation/CustomNSError/errorUserInfo-1aas5.md)
+- [var errorUserInfo: [String : Any]](../foundation/customnserror/erroruserinfo-1aas5.md)
   The default user-info dictionary.
 ### Type properties
 - [static var errorDomain: String](pkdisbursementerror/errordomain.md)
@@ -39,12 +39,12 @@ struct PKDisbursementError
 ## Relationships
 
 ### Conforms To
-- [CustomNSError](../Foundation/CustomNSError.md)
-- [Equatable](../Swift/Equatable.md)
-- [Error](../Swift/Error.md)
-- [Hashable](../Swift/Hashable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [CustomNSError](../foundation/customnserror.md)
+- [Equatable](../swift/equatable.md)
+- [Error](../swift/error.md)
+- [Hashable](../swift/hashable.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

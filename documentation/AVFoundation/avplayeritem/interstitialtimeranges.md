@@ -20,7 +20,7 @@ var interstitialTimeRanges: [AVInterstitialTimeRange] { get set }
 
 #### Discussion
 
-Interstitial content is material that’s unrelated to a player item’s primary content, such as advertisements and legal notices. If you use [`AVPlayerViewController`](https://developer.apple.com/documentation/AVKit/AVPlayerViewController) to present an item that contains interstitial time ranges, the user interface marks those time ranges differently on the playback timeline. A player view controller can also call your app when it begins and ends playing interstitial content. You can use these events to customize playback behavior, such as preventing viewers from skipping required content.
+Interstitial content is material that’s unrelated to a player item’s primary content, such as advertisements and legal notices. If you use [`AVPlayerViewController`](https://developer.apple.com/documentation/avkit/avplayerviewcontroller) to present an item that contains interstitial time ranges, the user interface marks those time ranges differently on the playback timeline. A player view controller can also call your app when it begins and ends playing interstitial content. You can use these events to customize playback behavior, such as preventing viewers from skipping required content.
 
 > **Note**:  On iOS, the stream must define the interstitial time ranges, or you must use [`AVPlayerInterstitialEventController`](avplayerinterstitialeventcontroller.md).
 

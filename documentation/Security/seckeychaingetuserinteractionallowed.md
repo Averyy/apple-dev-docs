@@ -20,7 +20,7 @@ A result code. See [`Security Framework Result Codes`](security-framework-result
 
 ## Parameters
 
-- `state`: On return, a Boolean value indicating whether user interaction is permitted. If [`true`](https://developer.apple.com/documentation/Swift/true), user interaction is allowed, and keychain services functions that display a user interface can do so as appropriate.
+- `state`: On return, a Boolean value indicating whether user interaction is permitted. If [`true`](https://developer.apple.com/documentation/swift/true), user interaction is allowed, and keychain services functions that display a user interface can do so as appropriate.
 
 
 ---

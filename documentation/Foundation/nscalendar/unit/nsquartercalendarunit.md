@@ -22,7 +22,7 @@ static var NSQuarterCalendarUnit: NSCalendar.Unit { get }
 
 #### Discussion
 
-In macOS 10.6 and earlier this was defined as equal to [`quarter`](https://developer.apple.com/documentation/CoreFoundation/CFCalendarUnit/quarter). In macOS 10.7 and later it is defined as `(1 << 20)`.
+In macOS 10.6 and earlier this was defined as equal to [`quarter`](https://developer.apple.com/documentation/corefoundation/cfcalendarunit/quarter). In macOS 10.7 and later it is defined as `(1 << 20)`.
 
 ## See Also
 

@@ -8,7 +8,7 @@ Reduce the time-window for ad attributions and inspect postbacks using a proxy d
 
 You can reduce the time window for receiving ad attribution postbacks by installing an SKAdNetwork testing profile on your test device.
 
-> ❗ **Important**:  To download the latest profile, see the [`AdAttributionKit`](https://developer.apple.com/documentation/AdAttributionKit) article on [`Testing ad attributions with a downloaded profile`](https://developer.apple.com/documentation/AdAttributionKit/testing-ad-attributions-with-a-downloaded-profile). This profile is compatible with both AdAttributionKit and SKAdNetwork.
+> ❗ **Important**:  To download the latest profile, see the [`AdAttributionKit`](https://developer.apple.com/documentation/adattributionkit) article on [`Testing ad attributions with a downloaded profile`](https://developer.apple.com/documentation/adattributionkit/testing-ad-attributions-with-a-downloaded-profile). This profile is compatible with both AdAttributionKit and SKAdNetwork.
 
 For information about installing profiles, see [`Install a configuration profile on your iPhone or iPad`](https://developer.apple.comhttps://support.apple.com/en-us/HT209435). You can install this profile on devices running iOS or iPadOS 14 or later.
 
@@ -35,7 +35,7 @@ With the profile installed, the SKAdNetwork postbacks that the device sends now 
 
 ## See Also
 
-- [Testing and validating ad impression signatures and postbacks for SKAdNetwork](../StoreKitTest/testing-and-validating-ad-impression-signatures-and-postbacks-for-skadnetwork.md)
+- [Testing and validating ad impression signatures and postbacks for SKAdNetwork](../storekittest/testing-and-validating-ad-impression-signatures-and-postbacks-for-skadnetwork.md)
   Validate your ad impressions and test your postbacks by creating unit tests using the StoreKit Test framework.
 
 

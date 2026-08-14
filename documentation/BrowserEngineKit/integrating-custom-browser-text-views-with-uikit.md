@@ -6,7 +6,7 @@ Process keyboard interactions asynchronously in your iOS browser app’s text vi
 
 #### Overview
 
-iOS apps that draw custom text views adopt the [`UITextInput`](https://developer.apple.com/documentation/UIKit/UITextInput) protocol to inform the text input system about changes in state related to text input and selection.
+iOS apps that draw custom text views adopt the [`UITextInput`](https://developer.apple.com/documentation/uikit/uitextinput) protocol to inform the text input system about changes in state related to text input and selection.
 
 In browser apps, the text input system might need information that your app prepares by communicating with an extension asynchronously, or information that the app prepares by executing Javascript from a web site. In these situations, your text view additionally adopts the [`BETextInput`](betextinput.md) protocol. The text input system uses this protocol to make asynchronous requests for information about the text in your view, and to supply information about gestures that support text interactions, including selecting text and modifying the selection.
 
@@ -20,7 +20,7 @@ public class MyTextView: UIView, BETextInput, UITextInput {
 }
 ```
 
-Implement the required [`UITextInput`](https://developer.apple.com/documentation/UIKit/UITextInput) methods in your view class. At runtime, the text system determines whether your text field implements `BETextInput` counterparts to the `UITextInput` methods; if it does, the text system calls the `BETextInput` methods instead of the `UITextInput` methods.
+Implement the required [`UITextInput`](https://developer.apple.com/documentation/uikit/uitextinput) methods in your view class. At runtime, the text system determines whether your text field implements `BETextInput` counterparts to the `UITextInput` methods; if it does, the text system calls the `BETextInput` methods instead of the `UITextInput` methods.
 
 Your custom view’s [`textInputView`](betextinput/textinputview.md) is the view that the system uses for all coordinate transforms when handling text-input gestures. When you create the text input view, add a [`BETextInteraction`](betextinteraction.md) to the view’s interactions. The system uses the `BETextInteraction` to track the state of text-input gestures.
 
@@ -36,7 +36,7 @@ public class MyTextView: UIView, BETextInput, UITextInput {
 
 ##### Report Whether the Text View Performs Actions
 
-Implement [`canPerformAction(_:withSender:)`](betextinput/canperformaction(_:withsender:).md) in your view, returning `true` when your view can perform the action and `false` otherwise. If you return `false`, the system doesn’t call the action method even if your class implements it (so [`responds(to:)`](https://developer.apple.com/documentation/ObjectiveC/NSObjectProtocol/responds(to:)) with the action method’s selector returns `true`). Return `false` when your view is in a state where it doesn’t handle the action.
+Implement [`canPerformAction(_:withSender:)`](betextinput/canperformaction(_:withsender:).md) in your view, returning `true` when your view can perform the action and `false` otherwise. If you return `false`, the system doesn’t call the action method even if your class implements it (so [`responds(to:)`](https://developer.apple.com/documentation/objectivec/nsobjectprotocol/responds(to:)) with the action method’s selector returns `true`). Return `false` when your view is in a state where it doesn’t handle the action.
 
 ##### Accept Text Input
 

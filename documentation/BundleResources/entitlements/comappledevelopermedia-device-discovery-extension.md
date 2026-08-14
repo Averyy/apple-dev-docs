@@ -16,7 +16,7 @@ An entitlement for an app extension that adds a specific third-party media recei
 
 #### Discussion
 
-To add this entitlement to your app extension, enable the Media Device Discovery capability in Xcode. For more information, see [`Configuring media device discovery`](https://developer.apple.com/documentation/Xcode/configuring-media-device-discovery).
+To add this entitlement to your app extension, enable the Media Device Discovery capability in Xcode. For more information, see [`Configuring media device discovery`](https://developer.apple.com/documentation/xcode/configuring-media-device-discovery).
 
 ## See Also
 

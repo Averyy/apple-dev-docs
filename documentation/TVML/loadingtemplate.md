@@ -10,7 +10,7 @@ Use the `loadingTemplate` element to display a spinner and description of why th
 
 > **Note**: When a user performs an action to bring up a new page and the new page is not immediately ready, a `loadingTemplate` page should be presented. After the new page is ready, replace the `loadingTemplate` with the new page onto the navigation stack.
 
-![Layout diagram showing a title area and a spinner.](https://docs-assets.developer.apple.com/published/b97d2cd006e891cee13c5d8721a7bc46/loadingtemplate-1%402x.png)
+![Layout diagram showing a title area and a spinner.](/images/com.apple.TVML/loadingtemplate-1@2x.png)
 
 ##### Main Elements
 
@@ -47,7 +47,7 @@ The following listing shows the TVML for a loadingTemplate example.
 
 The following figure shows the output of the above example:
 
-![Screenshot of a loading page with a spinner icon.](https://docs-assets.developer.apple.com/published/17e70b9a9eace22aa56e09194bd71695/loadingtemplate-2%402x.png)
+![Screenshot of a loading page with a spinner icon.](/images/com.apple.TVML/loadingtemplate-2@2x.png)
 
 ## Topics
 

@@ -20,7 +20,7 @@ A result code. See [`Security Framework Result Codes`](security-framework-result
 
 ## Parameters
 
-- `keychain`: On return, a pointer to the default keychain object. In Objective-C, call the [`CFRelease`](https://developer.apple.com/documentation/CoreFoundation/CFRelease) function to release this object when you are finished using it.
+- `keychain`: On return, a pointer to the default keychain object. In Objective-C, call the [`CFRelease`](https://developer.apple.com/documentation/corefoundation/cfrelease) function to release this object when you are finished using it.
 
 
 ---

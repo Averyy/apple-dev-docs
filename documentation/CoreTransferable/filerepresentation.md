@@ -71,8 +71,8 @@ It’s efficient to pass data around as a file and the receiver loads it into me
 ## Relationships
 
 ### Conforms To
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 - [TransferRepresentation](transferrepresentation.md)
 
 ## See Also

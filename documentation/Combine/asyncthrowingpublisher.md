@@ -22,7 +22,7 @@ struct AsyncThrowingPublisher<P> where P : Publisher
 
 #### Overview
 
-`AsyncThrowingPublisher` conforms to [`AsyncSequence`](https://developer.apple.com/documentation/Swift/AsyncSequence), which allows callers to receive values with the `for`-`await`-`in` syntax, rather than attaching a [`Subscriber`](subscriber.md). If the upstream publisher terminates with an error, `AsyncThrowingPublisher` throws the error to the awaiting caller.
+`AsyncThrowingPublisher` conforms to [`AsyncSequence`](https://developer.apple.com/documentation/swift/asyncsequence), which allows callers to receive values with the `for`-`await`-`in` syntax, rather than attaching a [`Subscriber`](subscriber.md). If the upstream publisher terminates with an error, `AsyncThrowingPublisher` throws the error to the awaiting caller.
 
 Use the [`values`](publisher/values-v7nz.md) property of the [`Publisher`](publisher.md) protocol to wrap an existing publisher with an instance of this type.
 
@@ -43,7 +43,7 @@ Use the [`values`](publisher/values-v7nz.md) property of the [`Publisher`](publi
 ## Relationships
 
 ### Conforms To
-- [AsyncSequence](../Swift/AsyncSequence.md)
+- [AsyncSequence](../swift/asyncsequence.md)
 
 ## See Also
 

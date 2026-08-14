@@ -35,10 +35,10 @@ The bar swipe transition filter uses the following properties:
 
 - **`inputImage`**: The starting image with the type [`CIImage`](ciimage.md).
 - **`targetImage`**: The ending image with the type [`CIImage`](ciimage.md).
-- **`time`**: A `float` representing the parametric time of the transition from start (at time 0) to end (at time 1) as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
-- **`angle`**: A `float` representing the angle of the motion as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
-- **`width`**: A `float` representing the width of the bars in pixels as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
-- **`barOffset`**: A `float` representing the offset of one bar in relation to others as a [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+- **`time`**: A `float` representing the parametric time of the transition from start (at time 0) to end (at time 1) as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
+- **`angle`**: A `float` representing the angle of the motion as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
+- **`width`**: A `float` representing the width of the bars in pixels as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
+- **`barOffset`**: A `float` representing the offset of one bar in relation to others as a [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
 
 The following code creates a filter that produces falling bars from the input image to transition to the target image:
 
@@ -55,7 +55,7 @@ func barSwipe(inputImage: CIImage, targetImage: CIImage) -> CIImage {
 }
 ```
 
-![Three photographs. In the photo on the left, multiple sets of small purple flowers are photographed close up with good lighting, and the background has a slight blur. In the photograph on the right is a tall city building with two trees directly in front of the building. The center photograph is a snapshot of the moment that the bar swipe transition creates, where the left photo slowly fades away by sized bars moving out of frame, revealing the city building.](https://docs-assets.developer.apple.com/published/c751699d5a8e3963e169c131ecb5edd4/media-3616431%402x.png)
+![Three photographs. In the photo on the left, multiple sets of small purple flowers are photographed close up with good lighting, and the background has a slight blur. In the photograph on the right is a tall city building with two trees directly in front of the building. The center photograph is a snapshot of the moment that the bar swipe transition creates, where the left photo slowly fades away by sized bars moving out of frame, revealing the city building.](/images/com.apple.coreimage/media-3616431@2x.png)
 
 ## See Also
 

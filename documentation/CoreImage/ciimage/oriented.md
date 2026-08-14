@@ -21,7 +21,7 @@ func oriented(_ orientation: CGImagePropertyOrientation) -> CIImage
 
 #### Discussion
 
-Returns a new image representing the original image transformed for the given [`CGImagePropertyOrientation`](https://developer.apple.com/documentation/ImageIO/CGImagePropertyOrientation).
+Returns a new image representing the original image transformed for the given [`CGImagePropertyOrientation`](https://developer.apple.com/documentation/imageio/cgimagepropertyorientation).
 
 ## See Also
 

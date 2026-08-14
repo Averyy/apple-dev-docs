@@ -29,7 +29,7 @@ This method applies a 5 x 5 convolution to the `RGBA` components of an image. Th
 
 The convolution 5 x 5 filter uses the following properties:
 
-- **`bias`**: A `float` representing the value that’s added to each output pixel as a [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+- **`bias`**: A `float` representing the value that’s added to each output pixel as a [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
 - **`weights`**: A [`CIVector`](civector.md) representing the convolution kernel.
 - **`inputImage`**: An image with the type [`CIImage`](ciimage.md).
 
@@ -55,7 +55,7 @@ func convolution5X5(inputImage: CIImage) -> CIImage? {
 }
 ```
 
-![Two images arranged horizontally. The left image contains a photo of the Golden Gate Bridge with a clear sky as the background. The right image shows the result of applying a 5 x 5 box blur convolution kernel. Fine detail in the image is now blurred.](https://docs-assets.developer.apple.com/published/fc467d006355fb073a7b6b0af38f7642/media-4334867%402x.png)
+![Two images arranged horizontally. The left image contains a photo of the Golden Gate Bridge with a clear sky as the background. The right image shows the result of applying a 5 x 5 box blur convolution kernel. Fine detail in the image is now blurred.](/images/com.apple.coreimage/media-4334867@2x.png)
 
 ## See Also
 

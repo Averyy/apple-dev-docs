@@ -38,7 +38,7 @@ Chart {
 }
 ```
 
-![Vertical bar chart with x-axis showing department categories Production, Marketing, Finance, and R&D, and with y-axis ranging from 0 to 15000. There are 3 bars: Production 15000, Marketing 8000, Finance 10000. A horizontal rule mark at 9000 shows the break even threshold.](https://docs-assets.developer.apple.com/published/7e451f6fe310c4757a2b567b44b30323/LineSegmentMarkSwift.LineSegmentMarkBarChartWithHorizontalLineSegmentMark%402x.png)
+![Vertical bar chart with x-axis showing department categories Production, Marketing, Finance, and R&D, and with y-axis ranging from 0 to 15000. There are 3 bars: Production 15000, Marketing 8000, Finance 10000. A horizontal rule mark at 9000 shows the break even threshold.](/images/com.apple.Charts/LineSegmentMarkSwift.LineSegmentMarkBarChartWithHorizontalLineSegmentMark@2x.png)
 
 See the first code example in [`RuleMark`](rulemark.md) for the setup of the structure that contains the `department` and `profit` properties.
 

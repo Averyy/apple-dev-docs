@@ -12,7 +12,7 @@ For EPG design guidance, see the Human Interface Guidelines on [`Live-Viewing Ap
 
 ##### Display a Channel Guide
 
-Some remotes provide a dedicated button for displaying TV channel listings or a similar EPG. For example, if you have a function named `activateChannelGuide()` that displays your EPG, add logic to your app’s [`UIApplicationDelegate`](https://developer.apple.com/documentation/UIKit/UIApplicationDelegate) to call `activateChannelGuide()` when your app receives a [`TVUserActivityTypeBrowsingChannelGuide`](tvuseractivitytypebrowsingchannelguide.md) user activity:
+Some remotes provide a dedicated button for displaying TV channel listings or a similar EPG. For example, if you have a function named `activateChannelGuide()` that displays your EPG, add logic to your app’s [`UIApplicationDelegate`](https://developer.apple.com/documentation/uikit/uiapplicationdelegate) to call `activateChannelGuide()` when your app receives a [`TVUserActivityTypeBrowsingChannelGuide`](tvuseractivitytypebrowsingchannelguide.md) user activity:
 
 ```swift
 func application(_ application: UIApplication, continue userActivity: NSUserActivity, restorationHandler: @escaping ([UIUserActivityRestoring]?) -> Void) -> Bool {
@@ -33,11 +33,11 @@ When the user presses the Guide button while your app is active, the system send
 
 ##### Navigate an Epg
 
-For an EPG that spans multiple screens, help users scan listings quickly, then navigate to the content they want.  Respond to a [`UIPress.PressType.pageUp`](https://developer.apple.com/documentation/UIKit/UIPress/PressType/pageUp) or [`UIPress.PressType.pageDown`](https://developer.apple.com/documentation/UIKit/UIPress/PressType/pageDown) button press by moving to the previous or next screen of content, similar to a large swipe gesture.
+For an EPG that spans multiple screens, help users scan listings quickly, then navigate to the content they want.  Respond to a [`UIPress.PressType.pageUp`](https://developer.apple.com/documentation/uikit/uipress/presstype/pageup) or [`UIPress.PressType.pageDown`](https://developer.apple.com/documentation/uikit/uipress/presstype/pagedown) button press by moving to the previous or next screen of content, similar to a large swipe gesture.
 
 ##### Change the Channel
 
-While your content plays, change the channel when your app receives [`UIPress.PressType.pageUp`](https://developer.apple.com/documentation/UIKit/UIPress/PressType/pageUp) or [`UIPress.PressType.pageDown`](https://developer.apple.com/documentation/UIKit/UIPress/PressType/pageDown).
+While your content plays, change the channel when your app receives [`UIPress.PressType.pageUp`](https://developer.apple.com/documentation/uikit/uipress/presstype/pageup) or [`UIPress.PressType.pageDown`](https://developer.apple.com/documentation/uikit/uipress/presstype/pagedown).
 
 ```swift
 override func viewDidLoad() {    

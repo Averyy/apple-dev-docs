@@ -28,8 +28,8 @@ Thread-safe since Mac OS version 10.2.
 
 ## Parameters
 
-- `inFileURL`: A Core Foundation URL reference designating the item whose display name is requested; see the   in the Core Foundation Reference Documentation for a description of the   data type. The URL must have scheme   and contain a valid path to either a file or a directory.
-- `outDisplayName`: A pointer to a Core Foundation string object that, on return, will contain the item’s display name; see the   in the Core Foundation Reference Documentation for a description of the   data type. You are responsible for releasing this object.
+- `inFileURL`: A Core Foundation URL reference designating the item whose display name is requested; see the *CFURL Reference* in the Core Foundation Reference Documentation for a description of the `CFURLRef` data type. The URL must have scheme `file` and contain a valid path to either a file or a directory.
+- `outDisplayName`: A pointer to a Core Foundation string object that, on return, will contain the item’s display name; see the *CFString Reference* in the Core Foundation Reference Documentation for a description of the `CFStringRef` data type. You are responsible for releasing this object.
 
 ## See Also
 

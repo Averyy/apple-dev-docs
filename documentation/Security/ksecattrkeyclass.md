@@ -22,7 +22,7 @@ let kSecAttrKeyClass: CFString
 
 #### Discussion
 
-The corresponding value is of type [`CFTypeRef`](https://developer.apple.com/documentation/CoreFoundation/CFTypeRef) and specifies a type of cryptographic key. Possible values are listed in [`Key Class Values`](item-attribute-keys-and-values#Key-Class-Values.md). Read only.
+The corresponding value is of type [`CFTypeRef`](https://developer.apple.com/documentation/corefoundation/cftyperef) and specifies a type of cryptographic key. Possible values are listed in [`Key Class Values`](item-attribute-keys-and-values#Key-Class-Values.md). Read only.
 
 > **Note**:  Don’t confuse this attribute with the more general [`kSecClass`](ksecclass.md) attribute that indicates an item’s class (for example password, certificate, or cryptographic key). The [`kSecAttrKeyClass`](ksecattrkeyclass.md) attribute described here applies only to items of class [`kSecClassKey`](ksecclasskey.md), indicating what category a cryptographic key fits into (for example, public, private, or symmetric).
 

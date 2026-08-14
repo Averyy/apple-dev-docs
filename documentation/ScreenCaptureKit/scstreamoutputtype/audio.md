@@ -21,7 +21,7 @@ case audio
 
 #### Discussion
 
-A captured sample buffer wraps an [`AudioBufferList`](https://developer.apple.com/documentation/CoreAudioTypes/AudioBufferList) structure that contains the audio samples. The stream configuration’s [`sampleRate`](scstreamconfiguration/samplerate.md) and [`channelCount`](scstreamconfiguration/channelcount.md) property values determine of the format of the audio.
+A captured sample buffer wraps an [`AudioBufferList`](https://developer.apple.com/documentation/coreaudiotypes/audiobufferlist) structure that contains the audio samples. The stream configuration’s [`sampleRate`](scstreamconfiguration/samplerate.md) and [`channelCount`](scstreamconfiguration/channelcount.md) property values determine of the format of the audio.
 
 ## See Also
 

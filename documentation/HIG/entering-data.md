@@ -13,7 +13,7 @@ framework: HIG
 
 When you need information from people, design ways that make it easy for them to provide it without making mistakes.
 
-![A sketch of a pencil writing within a field, suggesting data entry. The image is overlaid with rectangular and circular grid lines and is tinted orange to subtly reflect the orange in the original six-color Apple logo.](https://docs-assets.developer.apple.com/published/c52bbe5cc497dced0562df178a66638e/patterns-entering-data-intro~dark%402x.png)
+![A sketch of a pencil writing within a field, suggesting data entry. The image is overlaid with rectangular and circular grid lines and is tinted orange to subtly reflect the orange in the original six-color Apple logo.](/images/com.apple.HIG/patterns-entering-data-intro~dark@2x.png)
 Entering information can be a tedious process regardless of the interaction methods people use. Improve the experience by:
 - Pre-gathering as much information as possible to minimize the amount of data that people need to supply
 - Supporting all available input methods so people can choose the method that works for them
@@ -21,7 +21,7 @@ Entering information can be a tedious process regardless of the interaction meth
 ## Best practices
 **Get information from the system whenever possible.** Don’t ask people to enter information that you can gather automatically — such as from settings — or by getting their permission, such as their location or calendar information.
 **Be clear about the data you need.** For example, you might display a prompt in a text field — like “username@company.com” — or provide an introductory label that describes the information, like “Email.” You can also prefill fields with reasonable default values, which can minimize decision making and speed data entry.
-**Use a secure text-entry field when appropriate.** If your app or game needs sensitive data, use a field that obscures people’s input as they enter it, typically by displaying a small filled circle symbol for each character. For developer guidance, see [SecureField](../SwiftUI/SecureField.md). In tvOS, you can also configure a [digit entry view](https://developer.apple.com/design/human-interface-guidelines/digit-entry-views) to obscure the numerals people enter (for developer guidance, see [isSecureDigitEntry](../TVUIKit/TVDigitEntryViewController/isSecureDigitEntry.md)). When you use the system-provided text field in visionOS, the system shows the entered data to the wearer, but not to anyone else; for example, a secure text field automatically blurs when people use AirPlay to stream their content.
+**Use a secure text-entry field when appropriate.** If your app or game needs sensitive data, use a field that obscures people’s input as they enter it, typically by displaying a small filled circle symbol for each character. For developer guidance, see [SecureField](../swiftui/securefield.md). In tvOS, you can also configure a [digit entry view](https://developer.apple.com/design/human-interface-guidelines/digit-entry-views) to obscure the numerals people enter (for developer guidance, see [isSecureDigitEntry](../tvuikit/tvdigitentryviewcontroller/issecuredigitentry.md)). When you use the system-provided text field in visionOS, the system shows the entered data to the wearer, but not to anyone else; for example, a secure text field automatically blurs when people use AirPlay to stream their content.
 **Never prepopulate a password field.** Always ask people to enter their password or use biometric or keychain authentication. For guidance, see [Managing accounts](managing-accounts.md).
 **When possible, offer choices instead of requiring text entry.** It’s usually easier and more efficient to choose from lists of options than to type information, even when a keyboard is conveniently available. When it makes sense, consider using a picker, menu, or other selection component to give people an easy way to provide the information you need.
 **As much as possible, let people provide data by dragging and dropping it or by pasting it.** Supporting these interactions can ease data entry and make your experience feel more integrated with the rest of the system.
@@ -42,7 +42,7 @@ Entering information can be a tedious process regardless of the interaction meth
 [Keyboards](keyboards.md)
 
 #### Developer documentation
-[Input events](../SwiftUI/Input-events.md) — SwiftUI
+[Input events](../swiftui/input-events.md) — SwiftUI
 
 #### Videos
 - [What's new in UIKit](https://developer.apple.com/videos/play/wwdc2021/10059) - Discover the latest updates and improvements to UIKit and learn how to build better iPadOS, iOS, and Mac Catalyst apps. We’ll take you through UI refinements, productivity updates, and API enhancements, and help you explore performance improvements and security & privacy features.

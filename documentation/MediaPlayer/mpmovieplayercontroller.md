@@ -18,11 +18,11 @@ class MPMoviePlayerController
 
 #### Overview
 
-> ❗ **Important**:  The [`MPMoviePlayerController`](mpmovieplayercontroller.md) class is formally deprecated in iOS 9. (The [`MPMoviePlayerViewController`](mpmovieplayerviewcontroller.md) class is also formally deprecated.) To play video content in iOS 9 and later, instead use the [`AVPictureInPictureController`](https://developer.apple.com/documentation/AVKit/AVPictureInPictureController) or [`AVPlayerViewController`](https://developer.apple.com/documentation/AVKit/AVPlayerViewController) class from the AVKit framework, or the [`WKWebView`](https://developer.apple.com/documentation/WebKit/WKWebView) class from WebKit.
+> ❗ **Important**:  The [`MPMoviePlayerController`](mpmovieplayercontroller.md) class is formally deprecated in iOS 9. (The [`MPMoviePlayerViewController`](mpmovieplayerviewcontroller.md) class is also formally deprecated.) To play video content in iOS 9 and later, instead use the [`AVPictureInPictureController`](https://developer.apple.com/documentation/avkit/avpictureinpicturecontroller) or [`AVPlayerViewController`](https://developer.apple.com/documentation/avkit/avplayerviewcontroller) class from the AVKit framework, or the [`WKWebView`](https://developer.apple.com/documentation/webkit/wkwebview) class from WebKit.
 
 Playback occurs in a view owned by the movie player and takes place either fullscreen or inline. You can incorporate a movie player’s view into a view hierarchy owned by your app, or use an MPMoviePlayerViewController object to manage the presentation for you.
 
-Movie players support wireless movie playback to AirPlay-enabled hardware such as Apple TV. AirPlay playback is enabled by default. To disable AirPlay in your app, set the [`allowsAirPlay`](mpmovieplayercontroller/allowsairplay.md) property to [`false`](https://developer.apple.com/documentation/Swift/false). In iOS 8.0 and later, users access AirPlay compatible hardware through the Control Panel; no AirPlay control is displayed by the movie player.
+Movie players support wireless movie playback to AirPlay-enabled hardware such as Apple TV. AirPlay playback is enabled by default. To disable AirPlay in your app, set the [`allowsAirPlay`](mpmovieplayercontroller/allowsairplay.md) property to [`false`](https://developer.apple.com/documentation/swift/false). In iOS 8.0 and later, users access AirPlay compatible hardware through the Control Panel; no AirPlay control is displayed by the movie player.
 
 When you add a movie player’s view to your app’s view hierarchy, be sure to size the frame correctly, as shown here:
 
@@ -48,7 +48,7 @@ You typically specify the movie you want to play when you create a new `MPMovieP
 
 To facilitate the creation of video bookmarks or chapter links for a long movie, the `MPMoviePlayerController` class defines methods for generating thumbnail images at specific times within a movie. You can request a single thumbnail image using the [`thumbnailImage(atTime:timeOption:)`](mpmovieplayercontroller/thumbnailimage(attime:timeoption:).md) method or request multiple thumbnail images using the [`requestThumbnailImages(atTimes:timeOption:)`](mpmovieplayercontroller/requestthumbnailimages(attimes:timeoption:).md) method.
 
-To play a network stream whose URL requires access credentials, first create an appropriate [`URLCredential`](https://developer.apple.com/documentation/Foundation/URLCredential) object. Do this by calling, for example, the [`init(user:password:persistence:)`](https://developer.apple.com/documentation/Foundation/URLCredential/init(user:password:persistence:)) method, as shown here:
+To play a network stream whose URL requires access credentials, first create an appropriate [`URLCredential`](https://developer.apple.com/documentation/foundation/urlcredential) object. Do this by calling, for example, the [`init(user:password:persistence:)`](https://developer.apple.com/documentation/foundation/urlcredential/init(user:password:persistence:)) method, as shown here:
 
 ```objc
 NSURLCredential *credential = [[NSURLCredential alloc]
@@ -60,7 +60,7 @@ self.credential = credential;
 [credential release];
 ```
 
-In addition, create an appropriate [`URLProtectionSpace`](https://developer.apple.com/documentation/Foundation/URLProtectionSpace) object, as shown here. Make appropriate modifications for the realm you are accessing:
+In addition, create an appropriate [`URLProtectionSpace`](https://developer.apple.com/documentation/foundation/urlprotectionspace) object, as shown here. Make appropriate modifications for the realm you are accessing:
 
 ```objc
 NSURLProtectionSpace *protectionSpace = [[NSURLProtectionSpace alloc]
@@ -74,7 +74,7 @@ self.protectionSpace = protectionSpace;
 [protectionSpace release];
 ```
 
-Add the URL credential and the protection space to the [`Singleton`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Conceptual/DevPedia-CocoaCore/Singleton.html#//apple_ref/doc/uid/TP40008195-CH49) [`URLCredentialStorage`](https://developer.apple.com/documentation/Foundation/URLCredentialStorage) object. Do this by calling, for example, the [`set(_:for:)`](https://developer.apple.com/documentation/Foundation/URLCredentialStorage/set(_:for:)) method, as shown here:
+Add the URL credential and the protection space to the [`Singleton`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Conceptual/DevPedia-CocoaCore/Singleton.html#//apple_ref/doc/uid/TP40008195-CH49) [`URLCredentialStorage`](https://developer.apple.com/documentation/foundation/urlcredentialstorage) object. Do this by calling, for example, the [`set(_:for:)`](https://developer.apple.com/documentation/foundation/urlcredentialstorage/set(_:for:)) method, as shown here:
 
 ```objc
 [[NSURLCredentialStorage sharedCredentialStorage]
@@ -193,15 +193,15 @@ For more information, see the Notifications section in this document.
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
 - [MPMediaPlayback](mpmediaplayback.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

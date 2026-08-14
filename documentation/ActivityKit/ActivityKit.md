@@ -23,9 +23,9 @@ A Live Activity appears in highly visible contexts:
 
 In addition to viewing real-time information, people perform essential functionality without launching your app using buttons or toggles included in a Live Activity layout or tap the Live Activity to launch the app to a scene that matches the activity’s content.
 
-![Three screenshots of iPhone that show a Live Activity for a delivery app. They show the Live Activity on the Lock Screen, in the leading and trailing presentations in the Dynamic Island, and in the expanded presentation.](https://docs-assets.developer.apple.com/published/a81e13e284bbdea7bed42f642b5d9ee5/live-activity-dynamic-island%402x.png)
+![Three screenshots of iPhone that show a Live Activity for a delivery app. They show the Live Activity on the Lock Screen, in the leading and trailing presentations in the Dynamic Island, and in the expanded presentation.](/images/com.apple.activitykit/live-activity-dynamic-island@2x.png)
 
-In your app, use ActivityKit to configure, start, update, and end the Live Activity, and create the user interface of your Live Activities with a widget extension, [`WidgetKit`](https://developer.apple.com/documentation/WidgetKit), and [`SwiftUI`](https://developer.apple.com/documentation/SwiftUI). By using SwiftUI and WidgetKit, you can share code between widgets and Live Activities or develop them in tandem.
+In your app, use ActivityKit to configure, start, update, and end the Live Activity, and create the user interface of your Live Activities with a widget extension, [`WidgetKit`](https://developer.apple.com/documentation/widgetkit), and [`SwiftUI`](https://developer.apple.com/documentation/swiftui). By using SwiftUI and WidgetKit, you can share code between widgets and Live Activities or develop them in tandem.
 
 However, Live Activities use a different mechanism to receive updates compared to widgets. Instead of using a timeline mechanism, Live Activities receive updated data from your app with ActivityKit and from your server with ActivityKit push notifications, and you can start Live Activities with ActivityKit push notifications.
 
@@ -34,9 +34,9 @@ However, Live Activities use a different mechanism to receive updates compared t
 ## Topics
 
 ### Essentials
-- [Developing a WidgetKit strategy](../WidgetKit/Developing-a-WidgetKit-strategy.md)
+- [Developing a WidgetKit strategy](../widgetkit/developing-a-widgetkit-strategy.md)
   Explore features, tasks, related frameworks, and constraints as you make a plan to implement widgets, controls, watch complications, and Live Activities.
-- [ActivityKit updates](../Updates/ActivityKit.md)
+- [ActivityKit updates](../updates/activitykit.md)
   Learn about important changes in ActivityKit.
 ### Starting a Live Activity
 - [Displaying live data with Live Activities](displaying-live-data-with-live-activities.md)
@@ -45,11 +45,11 @@ However, Live Activities use a different mechanism to receive updates compared t
   Use ActivityKit to receive push tokens and to remotely start, update, and end your Live Activity with ActivityKit notifications.
 - [class Activity](activity.md)
   The object you use to start, update, and end a Live Activity.
-- [Emoji Rangers: Supporting Live Activities, interactivity, and animations](../WidgetKit/emoji-rangers-supporting-live-activities-interactivity-and-animations.md)
+- [Emoji Rangers: Supporting Live Activities, interactivity, and animations](../widgetkit/emoji-rangers-supporting-live-activities-interactivity-and-animations.md)
   Offer Live Activities, controls, animate data updates, and add interactivity to widgets.
-- [NSSupportsLiveActivities](../BundleResources/Information-Property-List/NSSupportsLiveActivities.md)
+- [NSSupportsLiveActivities](../bundleresources/information-property-list/nssupportsliveactivities.md)
   A Boolean value that indicates whether an app supports Live Activities.
-- [NSSupportsLiveActivitiesFrequentUpdates](../BundleResources/Information-Property-List/NSSupportsLiveActivitiesFrequentUpdates.md)
+- [NSSupportsLiveActivitiesFrequentUpdates](../bundleresources/information-property-list/nssupportsliveactivitiesfrequentupdates.md)
   A Boolean value that indicates whether an app can update its Live Activities frequently.
 ### User interface
 - [Creating custom views for Live Activities](creating-custom-views-for-live-activities.md)
@@ -59,15 +59,15 @@ However, Live Activities use a different mechanism to receive updates compared t
 - [Launching your app from a Live Activity](launching-your-app-from-a-live-activity.md)
   Use deep links to enable people to open your app’s scene that matches the data of you Live Activity.
 ### Widget ecosystem
-- [Creating a widget extension](../WidgetKit/Creating-a-Widget-Extension.md)
+- [Creating a widget extension](../widgetkit/creating-a-widget-extension.md)
   Display your app’s content in a convenient, informative widget on various devices.
-- [Animating data updates in widgets and Live Activities](../WidgetKit/Animating-data-updates-in-widgets-and-live-activities.md)
+- [Animating data updates in widgets and Live Activities](../widgetkit/animating-data-updates-in-widgets-and-live-activities.md)
   Use SwiftUI animations to indicate data updates in your widgets and Live Activities.
-- [Creating views for widgets, Live Activities, and watch complications](../WidgetKit/Creating-views-for-widgets-Live-Activities-and-watch-complications.md)
+- [Creating views for widgets, Live Activities, and watch complications](../widgetkit/creating-views-for-widgets-live-activities-and-watch-complications.md)
   Implement glanceable views with WidgetKit and SwiftUI.
-- [Linking to specific app scenes from your widget or Live Activity](../WidgetKit/Linking-to-specific-app-scenes-from-your-widget-or-Live-Activity.md)
+- [Linking to specific app scenes from your widget or Live Activity](../widgetkit/linking-to-specific-app-scenes-from-your-widget-or-live-activity.md)
   Add deep links to your widgets and Live Activities that enable people to open a specific scene in your app.
-- [WidgetKit](../WidgetKit/WidgetKit.md)
+- [WidgetKit](../widgetkit/widgetkit.md)
   Extend the reach of your app by creating widgets, watch complications, Live Activities, and controls.
 
 

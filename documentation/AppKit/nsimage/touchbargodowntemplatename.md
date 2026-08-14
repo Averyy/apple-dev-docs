@@ -19,7 +19,7 @@ class let touchBarGoDownTemplateName: String
 
 #### Discussion
 
-![Template image for go down](https://docs-assets.developer.apple.com/published/0c2e94a97766da2cd60956b916d1fb51/media-2793520%402x.png)
+![Template image for go down](/images/com.apple.appkit/media-2793520@2x.png)
 
 Touch Bar template images are exclusively for use in [`NSTouchBarItem`](nstouchbaritem.md) objects and not in onscreen windows.
 

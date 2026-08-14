@@ -24,9 +24,9 @@ class ValueTransformer
 
 You create a value transformer by subclassing [`ValueTransformer`](valuetransformer.md) and overriding the necessary methods to provide the required custom transformation. You then register the value transformer using the [`setValueTransformer(_:forName:)`](valuetransformer/setvaluetransformer(_:forname:).md) method, so that other parts of your app can access it by name with [`init(forName:)`](valuetransformer/init(forname:).md).
 
-Use the [`transformedValue(_:)`](valuetransformer/transformedvalue(_:).md) method to transform a value from one representation into another. If a value transformer designates that its transformation is reversible by returning [`true`](https://developer.apple.com/documentation/Swift/true) for [`allowsReverseTransformation()`](valuetransformer/allowsreversetransformation().md), you can also use the [`reverseTransformedValue(_:)`](valuetransformer/reversetransformedvalue(_:).md) to perform the transformation in reverse. For example, reversing the characters in a string is a reversible operation, whereas changing the characters in a string to be uppercase is a nonreversible operation.
+Use the [`transformedValue(_:)`](valuetransformer/transformedvalue(_:).md) method to transform a value from one representation into another. If a value transformer designates that its transformation is reversible by returning [`true`](https://developer.apple.com/documentation/swift/true) for [`allowsReverseTransformation()`](valuetransformer/allowsreversetransformation().md), you can also use the [`reverseTransformedValue(_:)`](valuetransformer/reversetransformedvalue(_:).md) to perform the transformation in reverse. For example, reversing the characters in a string is a reversible operation, whereas changing the characters in a string to be uppercase is a nonreversible operation.
 
-A value transformer can take inputs of one type and return a value of a different type. For example,  a value transformer could take an [`NSImage`](https://developer.apple.com/documentation/AppKit/NSImage) or [`UIImage`](https://developer.apple.com/documentation/UIKit/UIImage) object and return an [`NSData`](nsdata.md) object containing the PNG representation of that image.
+A value transformer can take inputs of one type and return a value of a different type. For example,  a value transformer could take an [`NSImage`](https://developer.apple.com/documentation/appkit/nsimage) or [`UIImage`](https://developer.apple.com/documentation/uikit/uiimage) object and return an [`NSData`](nsdata.md) object containing the PNG representation of that image.
 
 ##### Example Usage
 
@@ -99,16 +99,16 @@ ValueTransformer.setValueTransformer(ClassNameTransformer(), forName: .className
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Inherited By
 - [NSSecureUnarchiveFromDataTransformer](nssecureunarchivefromdatatransformer.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

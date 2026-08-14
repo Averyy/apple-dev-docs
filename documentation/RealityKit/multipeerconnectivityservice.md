@@ -19,7 +19,7 @@ class MultipeerConnectivityService
 
 #### Overview
 
-RealityKit uses this class to automatically sync scenes with other connected devices running the same app. It leverages the [`Multipeer Connectivity`](https://developer.apple.com/documentation/MultipeerConnectivity) framework to automatically keep the scenes of all connected devices synchronized. To sync a RealityKit scene, create a [`MultipeerConnectivityService`](multipeerconnectivityservice.md) object initialized with an [`MCSession`](https://developer.apple.com/documentation/MultipeerConnectivity/MCSession) and assign it to your scene’s [`synchronizationService`](scene/synchronizationservice.md) property.
+RealityKit uses this class to automatically sync scenes with other connected devices running the same app. It leverages the [`Multipeer Connectivity`](https://developer.apple.com/documentation/multipeerconnectivity) framework to automatically keep the scenes of all connected devices synchronized. To sync a RealityKit scene, create a [`MultipeerConnectivityService`](multipeerconnectivityservice.md) object initialized with an [`MCSession`](https://developer.apple.com/documentation/multipeerconnectivity/mcsession) and assign it to your scene’s [`synchronizationService`](scene/synchronizationservice.md) property.
 
 ```swift
 let peerID = MCPeerID(displayName: UIDevice.current.name)
@@ -28,7 +28,7 @@ arView.scene.synchronizationService = try?
 MultipeerConnectivityService(session: self.session)
 ```
 
-For more information on browsing for, and connecting to, other devices, see [`Multipeer Connectivity`](https://developer.apple.com/documentation/MultipeerConnectivity).
+For more information on browsing for, and connecting to, other devices, see [`Multipeer Connectivity`](https://developer.apple.com/documentation/multipeerconnectivity).
 
 ## Topics
 

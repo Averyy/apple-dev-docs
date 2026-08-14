@@ -63,7 +63,7 @@ There are several options for customizing the button’s attributes:
 
 | Attribute | Accepted Values | Description |
 | --- | --- | --- |
-| `buttonstyle` ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) `(required)` | `black`, `white-border`, or `white` | The button display style for either light mode or dark mode devices. |
+| `buttonstyle` ![None](/images/com.apple.applepayontheweb/spacer.png) `(required)` | `black`, `white-border`, or `white` | The button display style for either light mode or dark mode devices. |
 | `compact` | `true` or `false` | Modifies the display style of the button to either have the default compact multi-line view or the single line view. |
 | `locale` | An BCP 47 language code, such as `en-US`. | The language and region the button uses. |
 | `onclick` | A JavaScript function | An inline function argument to trigger the distributable order package code. |

@@ -20,7 +20,7 @@ object JWSRenewalInfoDecodedPayload
 
 ## Properties
 
-- `appAccountToken` (appAccountToken): A UUID you create at the time of purchase that associates the transaction with a customer on your own service. This is the token that applies to the upcoming renewal transaction. If your app doesn’t provide an `appAccountToken`, this field is omitted.  For more information, see [`appAccountToken(_:)`](https://developer.apple.com/documentation/StoreKit/Product/PurchaseOption/appAccountToken(_:)).
+- `appAccountToken` (appAccountToken): A UUID you create at the time of purchase that associates the transaction with a customer on your own service. This is the token that applies to the upcoming renewal transaction. If your app doesn’t provide an `appAccountToken`, this field is omitted.  For more information, see [`appAccountToken(_:)`](https://developer.apple.com/documentation/storekit/product/purchaseoption/appaccounttoken(_:)).
 - `appTransactionId` (appTransactionId): The unique identifier of the app download transaction.
 - `autoRenewProductId` (autoRenewProductId): The identifier of the product that renews at the next billing period.
 - `autoRenewStatus` (autoRenewStatus): The renewal status of the auto-renewable subscription.

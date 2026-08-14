@@ -43,7 +43,7 @@ See [`NSSharingService`](nssharingservice.md) for more information.
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 ### Inherited By
 - [NSCloudSharingServiceDelegate](nscloudsharingservicedelegate.md)
 

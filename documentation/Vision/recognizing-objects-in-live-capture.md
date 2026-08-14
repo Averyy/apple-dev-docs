@@ -16,7 +16,7 @@ With the [`Vision`](https://developer.apple.comhttps://developer.apple.com/docum
 
 This sample app shows you how to set up your camera for live capture, incorporate a Core ML model into Vision, and parse results as classified objects.
 
-![Example screenshots of app identifying a croissant and bananas in live capture.](https://docs-assets.developer.apple.com/published/b50c403165ace192310571f86cebf6f3/BananaCroissant.png)
+![Example screenshots of app identifying a croissant and bananas in live capture.](/images/Vision/BananaCroissant.png)
 
 ##### Set Up Live Capture
 
@@ -189,7 +189,7 @@ You can also use the [`VNRecognizedObjectObservation`](https://developer.apple.c
 
 ## See Also
 
-- [Understanding a Dice Roll with Vision and Object Detection](../CoreML/understanding-a-dice-roll-with-vision-and-object-detection.md)
+- [Understanding a Dice Roll with Vision and Object Detection](../coreml/understanding-a-dice-roll-with-vision-and-object-detection.md)
   Detect dice position and values shown in a camera frame, and determine the end of a roll by leveraging a dice detection model.
 - [class VNRecognizedObjectObservation](vnrecognizedobjectobservation.md)
   A detected object observation with an array of classification labels that classify the recognized object.

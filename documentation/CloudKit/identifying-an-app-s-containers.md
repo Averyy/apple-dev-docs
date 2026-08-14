@@ -12,7 +12,7 @@ An app’s Xcode project manages which CloudKit containers are available to that
 
 In your app’s Xcode project, select Signing & Capabilities > iCloud in the Project navigator.
 
-![A screenshot of an Xcode project’s Signing & Capabilities pane. The project contains the iCloud capability with the CloudKit option in a selected state. There are three custom CloudKit containers — app, docs, and settings — and each is in a selected state.](https://docs-assets.developer.apple.com/published/834483e205503a63b239752195f2c377/media-3743337%402x.png)
+![A screenshot of an Xcode project’s Signing & Capabilities pane. The project contains the iCloud capability with the CloudKit option in a selected state. There are three custom CloudKit containers — app, docs, and settings — and each is in a selected state.](/images/com.apple.cloudkit/media-3743337@2x.png)
 
 After you identify the containers that your app uses, you can create instances of [`CKContainer`](ckcontainer.md) in your app and interact with CloudKit data.
 

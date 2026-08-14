@@ -21,7 +21,7 @@ struct Components
 
 #### Overview
 
-Reading a component from this set establishes observation tracking. See [`Observation`](https://developer.apple.com/documentation/Observation) for more details.
+Reading a component from this set establishes observation tracking. See [`Observation`](https://developer.apple.com/documentation/observation) for more details.
 
 ## Topics
 

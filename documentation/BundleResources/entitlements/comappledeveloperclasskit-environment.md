@@ -25,9 +25,9 @@ To add this entitlement to your app, enable the ClassKit capability in Xcode.
 
 ## See Also
 
-- [Enabling ClassKit in your app](../ClassKit/enabling-classkit-in-your-app.md)
+- [Enabling ClassKit in your app](../classkit/enabling-classkit-in-your-app.md)
   Prepare your app and your development environment to adopt ClassKit.
-- [Testing your ClassKit app during development](../ClassKit/testing-your-classkit-app-during-development.md)
+- [Testing your ClassKit app during development](../classkit/testing-your-classkit-app-during-development.md)
   Use development mode to test your app without a Managed Apple ID.
 - [com.apple.developer.automatic-assessment-configuration](entitlements/com.apple.developer.automatic-assessment-configuration.md)
   A Boolean value that indicates whether an app may create an assessment session.

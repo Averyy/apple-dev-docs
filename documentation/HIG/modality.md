@@ -13,7 +13,7 @@ framework: HIG
 
 Modality is a design technique that presents content in a separate, dedicated mode that prevents interaction with the parent view and requires an explicit action to dismiss.
 
-![A sketch of an active window above an inactive window, suggesting focus on the frontmost window. The image is overlaid with rectangular and circular grid lines and is tinted orange to subtly reflect the orange in the original six-color Apple logo.](https://docs-assets.developer.apple.com/published/85cbd9154d02e6f08ca1b273e721b303/patterns-modality-intro~dark%402x.png)
+![A sketch of an active window above an inactive window, suggesting focus on the frontmost window. The image is overlaid with rectangular and circular grid lines and is tinted orange to subtly reflect the orange in the original six-color Apple logo.](/images/com.apple.HIG/patterns-modality-intro~dark@2x.png)
 Presenting content modally can:
 - Ensure that people receive critical information and, if necessary, act on it
 - Provide options that let people confirm or modify their most recent action
@@ -45,9 +45,9 @@ To provide a temporary experience, like viewing media, or to help people perform
 [Activity views](activity-views.md)
 
 #### Developer documentation
-[Presentation modifiers](../SwiftUI/View-Presentation.md) — SwiftUI
-[UIModalPresentationStyle](../UIKit/UIModalPresentationStyle.md) — UIKit
-[Modal Windows and Panels](../AppKit/modal-windows-and-panels.md) — AppKit
+[Presentation modifiers](../swiftui/view-presentation.md) — SwiftUI
+[UIModalPresentationStyle](../uikit/uimodalpresentationstyle.md) — UIKit
+[Modal Windows and Panels](../appkit/modal-windows-and-panels.md) — AppKit
 
 #### Videos
 - [Get to know the new design system](https://developer.apple.com/videos/play/wwdc2025/356) - Dive deeper into the new design system to explore key changes to visual design, information architecture, and core system components. Learn how the system reshapes the relationship between interface and content, enabling you to create designs that are dynamic, harmonious, and consistent across devices, screen sizes, and input modes.

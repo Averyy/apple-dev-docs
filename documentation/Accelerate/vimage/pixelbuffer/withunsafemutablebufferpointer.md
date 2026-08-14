@@ -32,7 +32,7 @@ You can use this function to simplify interoperation with other libraries and fr
 
 ##### Add Text to a Pixel Buffer
 
-The following code creates a [`CGContext`](https://developer.apple.com/documentation/CoreGraphics/CGContext) instance from the pointer to the buffer’s storage. The code renders a gray rectangle over the image and draws text inside the rectangle by calling [`CTLineDraw(_:_:)`](https://developer.apple.com/documentation/CoreText/CTLineDraw(_:_:)).
+The following code creates a [`CGContext`](https://developer.apple.com/documentation/coregraphics/cgcontext) instance from the pointer to the buffer’s storage. The code renders a gray rectangle over the image and draws text inside the rectangle by calling [`CTLineDraw(_:_:)`](https://developer.apple.com/documentation/coretext/ctlinedraw(_:_:)).
 
 ```swift
 let srcImage =  imageLiteral(resourceName: " ... ").cgImage(
@@ -92,7 +92,7 @@ let result = buffer.makeCGImage(cgImageFormat: cgImageFormat)!
 
 On return, the buffer contains the original image with a text overlay.
 
-![A photograph of twigs and branches with the text vImage Pixel Buffer added to the bottom left corner.](https://docs-assets.developer.apple.com/published/38c7454327642f7cc02088f6fd50fd68/media-3978480%402x.png)
+![A photograph of twigs and branches with the text vImage Pixel Buffer added to the bottom left corner.](/images/com.apple.accelerate/media-3978480@2x.png)
 
 ##### Fill a Pixel Buffer with Random Values
 
@@ -126,11 +126,11 @@ buffer.withUnsafeMutableBufferPointer { bufferPtr in
 
 On return, the buffer contains random color values.
 
-![A square image of random noise.](https://docs-assets.developer.apple.com/published/ecf59b954bf028a9e9ef9c0262f24c51/media-3978494%402x.png)
+![A square image of random noise.](/images/com.apple.accelerate/media-3978494@2x.png)
 
 ## Parameters
 
-- `body`: A closure with an [`UnsafeMutableBufferPointer`](https://developer.apple.com/documentation/Swift/UnsafeMutableBufferPointer) parameter that points to the contiguous storage for the pixel buffer.
+- `body`: A closure with an [`UnsafeMutableBufferPointer`](https://developer.apple.com/documentation/swift/unsafemutablebufferpointer) parameter that points to the contiguous storage for the pixel buffer.
 
 
 ---

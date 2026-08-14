@@ -31,7 +31,7 @@ A view that’s padded by the specified amount on the specified edges.
 
 #### Discussion
 
-Use this modifier to add a specified amount of padding to one or more edges of the view. Indicate the edges to pad by naming either a single value from [`Edge.Set`](edge/set.md), or by specifying an [`OptionSet`](https://developer.apple.com/documentation/Swift/OptionSet) that contains edge values:
+Use this modifier to add a specified amount of padding to one or more edges of the view. Indicate the edges to pad by naming either a single value from [`Edge.Set`](edge/set.md), or by specifying an [`OptionSet`](https://developer.apple.com/documentation/swift/optionset) that contains edge values:
 
 ```swift
 VStack {
@@ -45,7 +45,7 @@ VStack {
 
 The order in which you apply modifiers matters. The example above applies the padding before applying the border to ensure that the border encompasses the padded region:
 
-![A screenshot of two text strings arranged vertically, each surrounded](https://docs-assets.developer.apple.com/published/de51d2c2d529d3dacc60fbe0a17edf2e/View-padding-2-iOS%402x.png)
+![A screenshot of two text strings arranged vertically, each surrounded](/images/com.apple.SwiftUI/View-padding-2-iOS@2x.png)
 
 You can omit either or both of the parameters. If you omit the `length`, SwiftUI uses a default amount of padding. If you omit the `edges`, SwiftUI applies the padding to all edges. Omit both to add a default padding all the way around a view. SwiftUI chooses a default amount of padding that’s appropriate for the platform and the presentation context.
 
@@ -61,7 +61,7 @@ VStack {
 
 The example above looks like this in iOS under typical conditions:
 
-![A screenshot of two text strings arranged vertically, each surrounded](https://docs-assets.developer.apple.com/published/a8d65b9d38c14fa85c243db7f6ca50f1/View-padding-2a-iOS%402x.png)
+![A screenshot of two text strings arranged vertically, each surrounded](/images/com.apple.SwiftUI/View-padding-2a-iOS@2x.png)
 
 To control the amount of padding independently for each edge, use [`padding(_:)`](view/padding(_:)-6pgqq.md). To pad all outside edges of a view by a specified amount, use [`padding(_:)`](view/padding(_:)-68shk.md).
 

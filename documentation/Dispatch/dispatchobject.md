@@ -40,7 +40,7 @@ There are many types of dispatch objects, including [`DispatchQueue`](dispatchqu
 ## Relationships
 
 ### Inherits From
-- [OS_object](../os/OS_object.md)
+- [OS_object](../os/os_object.md)
 ### Inherited By
 - [DispatchGroup](dispatchgroup.md)
 - [DispatchIO](dispatchio.md)
@@ -48,10 +48,10 @@ There are many types of dispatch objects, including [`DispatchQueue`](dispatchqu
 - [DispatchSemaphore](dispatchsemaphore.md)
 - [DispatchSource](dispatchsource.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

@@ -20,9 +20,9 @@ var indentsAccessories: Bool { get set }
 
 #### Discussion
 
-If the value is [`false`](https://developer.apple.com/documentation/Swift/false), the cell indents the content view only.
+If the value is [`false`](https://developer.apple.com/documentation/swift/false), the cell indents the content view only.
 
-The default value of this property is [`true`](https://developer.apple.com/documentation/Swift/true).
+The default value of this property is [`true`](https://developer.apple.com/documentation/swift/true).
 
 ## See Also
 

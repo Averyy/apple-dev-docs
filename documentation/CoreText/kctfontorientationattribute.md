@@ -22,7 +22,7 @@ let kCTFontOrientationAttribute: CFString
 
 #### Discussion
 
-The value associated with this key is an integer represented as a [`CFNumber`](https://developer.apple.com/documentation/CoreFoundation/CFNumber) object containing one of the constants in [`CTFontOrientation`](ctfontorientation.md). If you want to receive vertical metrics from a font for vertical rendering, specify [`kCTFontVerticalOrientation`](ctfontorientation/kctfontverticalorientation.md). If unspecified, the font uses its native orientation.
+The value associated with this key is an integer represented as a [`CFNumber`](https://developer.apple.com/documentation/corefoundation/cfnumber) object containing one of the constants in [`CTFontOrientation`](ctfontorientation.md). If you want to receive vertical metrics from a font for vertical rendering, specify [`kCTFontVerticalOrientation`](ctfontorientation/kctfontverticalorientation.md). If unspecified, the font uses its native orientation.
 
 ## See Also
 

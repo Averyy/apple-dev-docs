@@ -240,7 +240,7 @@ Although most people will interact with your app in respectful ways, it’s impo
 
 Create a list of potentially harmful prompt inputs that you can run as part of your app’s tests. Include every prompt in your app, even safe ones, as part of your app testing. For each prompt test, log the timestamp, full input prompt, the model’s response, and whether it activates any built-in safety or mitigations you’ve included in your app. When starting out, manually read the model’s response on all tests to ensure it meets your design and safety goals. To scale your tests, consider using a frontier LLM to auto-grade the safety of each prompt. Building a test pipeline for prompts and safety is a worthwhile investment for tracking changes in how your app responds over time.
 
-> 💡 **Tip**: Evaluations are tests for generative model features. Use the [`Evaluations`](https://developer.apple.com/documentation/Evaluations) framework to create them for your app.
+> 💡 **Tip**: Evaluations are tests for generative model features. Use the [`Evaluations`](https://developer.apple.com/documentation/evaluations) framework to create them for your app.
 
 Someone might purposefully attempt to break your feature or produce bad output — especially someone who won’t be harmed by their actions. But, keep in mind that it’s very important to identify cases where someone might *accidentally* be harmed during normal app use.
 
@@ -265,7 +265,7 @@ Use [`logFeedbackAttachment(sentiment:issues:desiredOutput:)`](languagemodelsess
 
 Apple releases updates to the on-device model as part of regular OS updates. If you participate in the developer beta program you can test your app with new model versions ahead of people using your app.
 
-When any model you use updates, it’s important to re-run all of your prompt tests in addition to your adversarial safety tests because the model’s response may change. Your risk assessment helps you track any change to safety risks in your app. Use the [`Evaluations`](https://developer.apple.com/documentation/Evaluations) framework to regularly test your prompts and help you track your test results over time.
+When any model you use updates, it’s important to re-run all of your prompt tests in addition to your adversarial safety tests because the model’s response may change. Your risk assessment helps you track any change to safety risks in your app. Use the [`Evaluations`](https://developer.apple.com/documentation/evaluations) framework to regularly test your prompts and help you track your test results over time.
 
 
 ---

@@ -16,7 +16,7 @@ class NSOpenGLLayer
 
 #### Overview
 
-Unlike [`CAOpenGLLayer`](https://developer.apple.com/documentation/QuartzCore/CAOpenGLLayer), [`NSOpenGLLayer`](nsopengllayer.md) uses AppKit types.
+Unlike [`CAOpenGLLayer`](https://developer.apple.com/documentation/quartzcore/caopengllayer), [`NSOpenGLLayer`](nsopengllayer.md) uses AppKit types.
 
 ## Topics
 
@@ -42,19 +42,19 @@ Unlike [`CAOpenGLLayer`](https://developer.apple.com/documentation/QuartzCore/CA
 ## Relationships
 
 ### Inherits From
-- [CAOpenGLLayer](../QuartzCore/CAOpenGLLayer.md)
+- [CAOpenGLLayer](../quartzcore/caopengllayer.md)
 ### Conforms To
-- [CAMediaTiming](../QuartzCore/CAMediaTiming.md)
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCoding](../Foundation/NSCoding.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [NSSecureCoding](../Foundation/NSSecureCoding.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [CAMediaTiming](../quartzcore/camediatiming.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCoding](../foundation/nscoding.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

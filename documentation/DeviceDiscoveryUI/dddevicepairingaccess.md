@@ -26,13 +26,13 @@ struct DDDevicePairingAccess
 
 ## See Also
 
-- [Building peer-to-peer apps](../WiFiAware/Building-peer-to-peer-apps.md)
+- [Building peer-to-peer apps](../wifiaware/building-peer-to-peer-apps.md)
   Communicate with nearby devices over a secure, high-throughput, low-latency connection by using Wi-Fi Aware.
 - [struct DevicePairingView](devicepairingview.md)
   A control that allows a user to become discoverable and advertise to local devices.
 - [class DDDevicePairingViewController](dddevicepairingviewcontroller.md)
   A UIKit view that displays and manages the device discovery and pairing process.
-- [NSApplicationServices](../BundleResources/Information-Property-List/NSApplicationServices.md)
+- [NSApplicationServices](../bundleresources/information-property-list/nsapplicationservices.md)
   A list of service providers and the devices that they support.
 
 

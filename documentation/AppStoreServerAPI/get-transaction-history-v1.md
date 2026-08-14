@@ -20,7 +20,7 @@ The [`Get Transaction History V1`](get-transaction-history-v1.md) endpoint retur
 - Auto-renewable subscriptions
 - Non-renewing subscriptions
 - Non-consumable in-app purchases
-- Consumable in-app purchases if the transaction is refunded or revoked, or if the app hasn’t finished processing the transaction. The results don’t include consumable in-app purchases that the app marks as finished. For more information about finishing transactions, see [`finish()`](https://developer.apple.com/documentation/StoreKit/Transaction/finish()) and [`finishTransaction(_:)`](https://developer.apple.com/documentation/StoreKit/SKPaymentQueue/finishTransaction(_:)).
+- Consumable in-app purchases if the transaction is refunded or revoked, or if the app hasn’t finished processing the transaction. The results don’t include consumable in-app purchases that the app marks as finished. For more information about finishing transactions, see [`finish()`](https://developer.apple.com/documentation/storekit/transaction/finish()) and [`finishTransaction(_:)`](https://developer.apple.com/documentation/storekit/skpaymentqueue/finishtransaction(_:)).
 
 > **Note**:  Use [`Get Transaction History`](get-transaction-history.md) instead to get all the product types, including consumable in-app purchases in the finished state.
 

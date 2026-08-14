@@ -20,7 +20,7 @@ Set the speed to be used for data transfers.
 
 ## Parameters
 
-- `kilobytesPerSecond`: kCDSpeedMin specifies the minimum speed for all CD media (1X). kCDSpeedMax specifies the maximum speed supported in hardware.
+- `kilobytesPerSecond`: Speed to be used for data transfers, in kB/s. kCDSpeedMin specifies the minimum speed for all CD media (1X). kCDSpeedMax specifies the maximum speed supported in hardware.
 
 ## See Also
 

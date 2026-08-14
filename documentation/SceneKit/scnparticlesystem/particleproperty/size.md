@@ -22,7 +22,7 @@ static let size: SCNParticleSystem.ParticleProperty
 
 #### Discussion
 
-This property’s value is a floating-point scalar (an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) object for particle property controllers, or a single `float` value for particle event or modifier blocks). SceneKit renders particle images as square, so this value applies to both width and height.
+This property’s value is a floating-point scalar (an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) object for particle property controllers, or a single `float` value for particle event or modifier blocks). SceneKit renders particle images as square, so this value applies to both width and height.
 
 The particle system’s [`particleSize`](scnparticlesystem/particlesize.md) and [`particleSizeVariation`](scnparticlesystem/particlesizevariation.md) properties determine the initial size for each particle.
 

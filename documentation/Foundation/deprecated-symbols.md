@@ -17,7 +17,7 @@ Migrate your code away from using these symbols.
 - [var containsAttachments: Bool](nsattributedstring/containsattachments.md)
   A Boolean value that indicates whether the attribute string contains any attachment attributes.
 ### Deprecated Enumerations
-- [enum NSTextWritingDirection](../UIKit/NSTextWritingDirection.md)
+- [enum NSTextWritingDirection](../uikit/nstextwritingdirection.md)
   Options for specifying text-writing direction.
 ### Deprecated Instance Methods
 - [func url(at: Int, effectiveRange: NSRangePointer) -> URL?](nsattributedstring/url(at:effectiverange:).md)

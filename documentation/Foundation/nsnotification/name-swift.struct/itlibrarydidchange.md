@@ -16,7 +16,7 @@ static let ITLibraryDidChange: NSNotification.Name
 
 #### Discussion
 
-Call [`reloadData()`](https://developer.apple.com/documentation/iTunesLibrary/ITLibrary/reloadData()) to retrieve a new view of the library contents.
+Call [`reloadData()`](https://developer.apple.com/documentation/ituneslibrary/itlibrary/reloaddata()) to retrieve a new view of the library contents.
 
 
 ---

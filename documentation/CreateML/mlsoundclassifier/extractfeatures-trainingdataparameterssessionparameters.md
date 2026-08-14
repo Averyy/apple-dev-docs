@@ -26,7 +26,7 @@ An [`MLJob`](mljob.md) that represents the sound feature extraction session.
 
 Use this method to reduce the training time for multiple sound classifiers that use the same training data. Use the [`MLJob`](mljob.md) instance this method returns to save the audio features as an [`MLSoundClassifier.DataSource`](mlsoundclassifier/datasource.md). Then use the audio features data source to train one or more sound classifiers.
 
-You can also create a data source from a [`DataFrame`](https://developer.apple.com/documentation/TabularData/DataFrame) or an [`MLDataTable`](mldatatable.md) that contains audio features by using [`MLSoundClassifier.DataSource.featuresDataFrame(_:featureColumn:labelColumn:parameters:)`](mlsoundclassifier/datasource/featuresdataframe(_:featurecolumn:labelcolumn:parameters:).md) or [`MLSoundClassifier.DataSource.features(table:featureColumn:labelColumn:parameters:)`](mlsoundclassifier/datasource/features(table:featurecolumn:labelcolumn:parameters:).md), respectively.
+You can also create a data source from a [`DataFrame`](https://developer.apple.com/documentation/tabulardata/dataframe) or an [`MLDataTable`](mldatatable.md) that contains audio features by using [`MLSoundClassifier.DataSource.featuresDataFrame(_:featureColumn:labelColumn:parameters:)`](mlsoundclassifier/datasource/featuresdataframe(_:featurecolumn:labelcolumn:parameters:).md) or [`MLSoundClassifier.DataSource.features(table:featureColumn:labelColumn:parameters:)`](mlsoundclassifier/datasource/features(table:featurecolumn:labelcolumn:parameters:).md), respectively.
 
 ## Parameters
 

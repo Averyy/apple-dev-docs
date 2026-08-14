@@ -16,7 +16,7 @@ alternateIds: string[] | null;
 
 #### Discussion
 
-Associate alternate identifiers with a place that changes its identity over time. For information about identifiers, see [`Identifying unique locations with Place IDs`](https://developer.apple.com/documentation/MapKit/identifying-unique-locations-with-place-ids).
+Associate alternate identifiers with a place that changes its identity over time. For information about identifiers, see [`Identifying unique locations with Place IDs`](https://developer.apple.com/documentation/mapkit/identifying-unique-locations-with-place-ids).
 
 ## See Also
 

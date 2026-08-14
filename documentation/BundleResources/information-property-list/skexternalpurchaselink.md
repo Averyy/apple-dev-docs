@@ -67,7 +67,7 @@ The following code example shows a property list entry with keys for more than o
 </plist>
 ```
 
-For more information, see [`External Purchase`](https://developer.apple.com/documentation/StoreKit/external-purchase).
+For more information, see [`External Purchase`](https://developer.apple.com/documentation/storekit/external-purchase).
 
 ## Properties
 

@@ -24,7 +24,7 @@ class CFDate
 
 `CFDate` provides functions for creating dates, comparing dates, and computing intervals. You use the [`CFDateCreate(_:_:)`](cfdatecreate(_:_:).md) function to create `CFDate` objects. You use the [`CFDateCompare(_:_:_:)`](cfdatecompare(_:_:_:).md) function to compare two dates, and the [`CFDateGetTimeIntervalSinceDate(_:_:)`](cfdategettimeintervalsincedate(_:_:).md) function to compute a time interval. Additional functions for managing dates and times are described in [`Time Utilities`](time-utilities.md)
 
-`CFDate` is “toll-free bridged” with its Cocoa Foundation counterpart, [`NSDate`](https://developer.apple.com/documentation/Foundation/NSDate). What this means is that the Core Foundation type is interchangeable in function or method calls with the bridged Foundation object. In other words, in a method where you see an `NSDate *` parameter, you can pass in a `CFDateRef`, and in a function where you see a `CFDateRef` parameter, you can pass in an `NSDate` instance. This also applies to concrete subclasses of `NSDate`. See Interchangeable Data Types for more information on toll-free bridging.
+`CFDate` is “toll-free bridged” with its Cocoa Foundation counterpart, [`NSDate`](https://developer.apple.com/documentation/foundation/nsdate). What this means is that the Core Foundation type is interchangeable in function or method calls with the bridged Foundation object. In other words, in a method where you see an `NSDate *` parameter, you can pass in a `CFDateRef`, and in a function where you see a `CFDateRef` parameter, you can pass in an `NSDate` instance. This also applies to concrete subclasses of `NSDate`. See Interchangeable Data Types for more information on toll-free bridging.
 
 ## Topics
 
@@ -43,8 +43,8 @@ class CFDate
 ## Relationships
 
 ### Conforms To
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
 
 ## See Also
 

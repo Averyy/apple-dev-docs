@@ -24,7 +24,7 @@ CFData and its derived mutable type, [`CFMutableData`](cfmutabledata.md), provid
 
 You use the [`CFDataCreate(_:_:_:)`](cfdatacreate(_:_:_:).md) and [`CFDataCreateCopy(_:_:)`](cfdatacreatecopy(_:_:).md) functions to create static data objects. These functions make a new copy of the supplied data. To create a data object that uses the supplied buffer instead of making a separate copy, use the [`CFDataCreateWithBytesNoCopy(_:_:_:_:)`](cfdatacreatewithbytesnocopy(_:_:_:_:).md) function. You use the [`CFDataGetBytes(_:_:_:)`](cfdatagetbytes(_:_:_:).md) function to retrieve the bytes and the [`CFDataGetLength(_:)`](cfdatagetlength(_:).md) function to get the length of the bytes.
 
-CFData is “toll-free bridged” with its Cocoa Foundation counterpart, [`NSData`](https://developer.apple.com/documentation/Foundation/NSData). What this means is that the Core Foundation type is interchangeable in function or method calls with the bridged Foundation object. In other words, in a method where you see an `NSData *` parameter, you can pass in a `CFDataRef`, and in a function where you see a `CFDataRef` parameter, you can pass in an `NSData` instance. This also applies to concrete subclasses of `NSData`. See [`Toll-Free Bridged Types`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFDesignConcepts/Articles/tollFreeBridgedTypes.html#//apple_ref/doc/uid/TP40010677) for more information on toll-free bridging.
+CFData is “toll-free bridged” with its Cocoa Foundation counterpart, [`NSData`](https://developer.apple.com/documentation/foundation/nsdata). What this means is that the Core Foundation type is interchangeable in function or method calls with the bridged Foundation object. In other words, in a method where you see an `NSData *` parameter, you can pass in a `CFDataRef`, and in a function where you see a `CFDataRef` parameter, you can pass in an `NSData` instance. This also applies to concrete subclasses of `NSData`. See [`Toll-Free Bridged Types`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFDesignConcepts/Articles/tollFreeBridgedTypes.html#//apple_ref/doc/uid/TP40010677) for more information on toll-free bridging.
 
 ## Topics
 
@@ -56,8 +56,8 @@ CFData is “toll-free bridged” with its Cocoa Foundation counterpart, [`NSDat
 ### Inherited By
 - [CFMutableData](cfmutabledata.md)
 ### Conforms To
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
 
 ## See Also
 

@@ -30,7 +30,7 @@ Your application should choose a frame rate that it can consistently maintain. T
 - [var isPaused: Bool](mtkview/ispaused.md)
   A Boolean value that indicates whether the draw loop is paused.
 - [var enableSetNeedsDisplay: Bool](mtkview/enablesetneedsdisplay.md)
-  A Boolean value that indicates whether the view responds to [`setNeedsDisplay()`](https://developer.apple.com/documentation/UIKit/UIView/setNeedsDisplay()).
+  A Boolean value that indicates whether the view responds to [`setNeedsDisplay()`](https://developer.apple.com/documentation/uikit/uiview/setneedsdisplay()).
 - [func draw()](mtkview/draw.md)
   Redraws the view’s contents immediately.
 - [var presentsWithTransaction: Bool](mtkview/presentswithtransaction.md)

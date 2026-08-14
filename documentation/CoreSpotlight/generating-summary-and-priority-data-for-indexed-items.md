@@ -18,7 +18,7 @@ When preparing your app’s indexable items, update the [`CSSearchableItemAttrib
 
 | Attribute | Required in | Notes |
 | --- | --- | --- |
-| [`contentType`](cssearchableitemattributeset/contenttype.md) | All apps | This type must be [`message`](https://developer.apple.com/documentation/UniformTypeIdentifiers/UTType-swift.struct/message), [`emailMessage`](https://developer.apple.com/documentation/UniformTypeIdentifiers/UTType-swift.struct/emailMessage), or `public.voice-audio` type. Apple Intelligence doesn’t operate on items with other types. |
+| [`contentType`](cssearchableitemattributeset/contenttype.md) | All apps | This type must be [`message`](https://developer.apple.com/documentation/uniformtypeidentifiers/uttype-swift.struct/message), [`emailMessage`](https://developer.apple.com/documentation/uniformtypeidentifiers/uttype-swift.struct/emailmessage), or `public.voice-audio` type. Apple Intelligence doesn’t operate on items with other types. |
 | [`domainIdentifier`](cssearchableitemattributeset/domainidentifier.md) | All apps | Specify the identifier for the email, message, or audio conversation thread. Apple Intelligence uses this value to find items from the same thread. |
 | [`contentCreationDate`](cssearchableitemattributeset/contentcreationdate.md) | All apps | Apple Intelligence doesn’t summarize items that are more than 24 hours old. |
 | [`authors`](cssearchableitemattributeset/authors.md) | Mail and message apps | Apple Intelligence uses this field to distinguish among people in the conversation. |

@@ -14,7 +14,7 @@ With the Live Caller ID Lookup app extension, you can provide caller ID and call
 
 To use the Live Caller ID Lookup app extension, you need to add it to your Xcode project by choosing File > New > Target, selecting its template, and clicking Next.
 
-![An Xcode screenshot of the New target dialog with the Live Caller ID Lookup Extension option selected.](https://docs-assets.developer.apple.com/published/7f4435f865db00ff0f5b3565b89874e4/media-4444460%402x.png)
+![An Xcode screenshot of the New target dialog with the Live Caller ID Lookup Extension option selected.](/images/com.apple.identitylookup/media-4444460@2x.png)
 
 When you add this target to your project, it provides the initial files you need for your app extension.
 

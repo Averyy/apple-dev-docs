@@ -22,7 +22,7 @@ func cancel() -> Bool
 
 #### Return Value
 
-Returns [`false`](https://developer.apple.com/documentation/Swift/false) if the operation is not running, or if cancelation is not supported.
+Returns [`false`](https://developer.apple.com/documentation/swift/false) if the operation is not running, or if cancelation is not supported.
 
 ## See Also
 

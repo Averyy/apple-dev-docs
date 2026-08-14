@@ -21,7 +21,7 @@ class var exclusion: CIBlendKernel { get }
 
 #### Discussion
 
-![The result of using the exclusion blend kernel (background image is top left, foreground image is bottom left)](https://docs-assets.developer.apple.com/published/c90cfac9e642265717c8ebe437f34419/media-2926865%402x.png)
+![The result of using the exclusion blend kernel (background image is top left, foreground image is bottom left)](/images/com.apple.coreimage/media-2926865@2x.png)
 
 ## See Also
 

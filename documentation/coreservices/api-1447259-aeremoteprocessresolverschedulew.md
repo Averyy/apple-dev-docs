@@ -24,11 +24,11 @@ Thread safe starting in OS X v10.3.
 
 ## Parameters
 
-- `ref`: The   to query. Acquired from a previous call to  .
-- `runLoop`: The run loop on which to schedule resolution of remote processes. For information on run loops, see Introduction to Run Loops. See the Core Foundation Reference Documentation for a description of the   data type.
-- `runLoopMode`: Specifies the run loop mode. See Input Modes for information on available modes. See the Core Foundation Reference Documentation for a description of the   data type.
-- `callback`: A callback function to be executed when the resolver completes. See   for information on the callback definition.
-- `ctx`: Optionally supplies information of use while resolving remote processes. If this parameter is not  , the info field of this structure is passed to the callback function (otherwise, the info parameter to the   function will explicitly be  ). See   for a description of this data type.
+- `ref`: The [`AERemoteProcessResolverRef`](aeremoteprocessresolverref.md) to query. Acquired from a previous call to [`AECreateRemoteProcessResolver(_:_:)`](1445692-aecreateremoteprocessresolver.md).
+- `runLoop`: The run loop on which to schedule resolution of remote processes. For information on run loops, see Introduction to Run Loops. See the Core Foundation Reference Documentation for a description of the `CFRunLoop` data type.
+- `runLoopMode`: Specifies the run loop mode. See Input Modes for information on available modes. See the Core Foundation Reference Documentation for a description of the `CFStringRef` data type.
+- `callback`: A callback function to be executed when the resolver completes. See [`AERemoteProcessResolverCallback`](aeremoteprocessresolvercallback.md) for information on the callback definition.
+- `ctx`: Optionally supplies information of use while resolving remote processes. If this parameter is not `NULL`, the info field of this structure is passed to the callback function (otherwise, the info parameter to the `callback` function will explicitly be `NULL`). See [`AERemoteProcessResolverContext`](aeremoteprocessresolvercontext.md) for a description of this data type.
 
 ## See Also
 

@@ -61,7 +61,7 @@ struct LuminanceToAlphaExample: View {
 
 The unmodified version of the palette contains rectangles that range from solid black to solid white, thus with increasing luminance. The second version of the palette, which has the `luminanceToAlpha()` modifier applied, allows the background to show through in an amount that corresponds inversely to the luminance of the input.
 
-![A screenshot of a blue background with two wide rectangles on it,](https://docs-assets.developer.apple.com/published/e2c3c9501978adf4162289344ce36c3a/View-luminanceToAlpha-1-iOS%402x.png)
+![A screenshot of a blue background with two wide rectangles on it,](/images/com.apple.SwiftUI/View-luminanceToAlpha-1-iOS@2x.png)
 
 ## See Also
 

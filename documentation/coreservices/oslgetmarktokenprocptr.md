@@ -42,9 +42,9 @@ After you are finished with your mark token callback function, you can dispose o
 
 ## Parameters
 
-- `dContainerToken`: A pointer to the Apple event object that contains the elements to be marked with the mark token. (Token is defined in  . See  .
-- `containerClass`: The object class of the container that contains the objects to be marked. See  .
-- `result`: A pointer to a descriptor where your mark token function should return a mark token. If your function can’t return a mark token, it should return a null descriptor. See  .
+- `dContainerToken`: A pointer to the Apple event object that contains the elements to be marked with the mark token. (Token is defined in [`AEDisposeToken(_:)`](1446783-aedisposetoken.md). See [`AEDesc`](aedesc.md).
+- `containerClass`: The object class of the container that contains the objects to be marked. See [`DescType`](desctype.md).
+- `result`: A pointer to a descriptor where your mark token function should return a mark token. If your function can’t return a mark token, it should return a null descriptor. See [`AEDesc`](aedesc.md).
 
 ## See Also
 

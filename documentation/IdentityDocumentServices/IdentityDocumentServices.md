@@ -14,9 +14,9 @@ Share mobile documents using the Digital Credentials API.
 
 Identity Document Services enables the presentment of identity documents on device and web browser support for the Digital Credentials API.
 
-![A conceptual image that shows a small identity document and a rectangular web page.](https://docs-assets.developer.apple.com/published/fe83fe395f5f3bb1f92833a0c1798345/identity-document-services-hero~dark%402x.png)
+![A conceptual image that shows a small identity document and a rectangular web page.](/images/com.apple.identitydocumentservices/identity-document-services-hero~dark@2x.png)
 
-Once authorized, a person can select your app during a identity documents request, where they can authorize the presentment of identification through a UI you create with [`IdentityDocumentServicesUI`](https://developer.apple.com/documentation/IdentityDocumentServicesUI).
+Once authorized, a person can select your app during a identity documents request, where they can authorize the presentment of identification through a UI you create with [`IdentityDocumentServicesUI`](https://developer.apple.com/documentation/identitydocumentservicesui).
 
 This framework also enables web browsers to implement the presentment flow for the Digital Credentials API. With web browser support, a person can present identity documents locally on their device or remotely on another device using the same iCloud account. Identity documents can include documents such as a driver’s license or identity card.
 

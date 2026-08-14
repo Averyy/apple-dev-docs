@@ -45,13 +45,13 @@ For more information about adding entities to your app’s Spotlight index, see 
 ### Inherits From
 - [AppEntity](appentity.md)
 - [AppValue](appvalue.md)
-- [CustomLocalizedStringResourceConvertible](../Foundation/CustomLocalizedStringResourceConvertible.md)
+- [CustomLocalizedStringResourceConvertible](../foundation/customlocalizedstringresourceconvertible.md)
 - [DisplayRepresentable](displayrepresentable.md)
-- [Identifiable](../Swift/Identifiable.md)
+- [Identifiable](../swift/identifiable.md)
 - [InstanceDisplayRepresentable](instancedisplayrepresentable.md)
 - [PersistentlyIdentifiable](persistentlyidentifiable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 - [TypeDisplayRepresentable](typedisplayrepresentable.md)
 
 ## See Also

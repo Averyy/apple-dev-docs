@@ -23,7 +23,7 @@ func addClip()
 
 This method modifies the visible drawing area of the current graphics context. After calling it, subsequent drawing operations result in rendered content only if they occur within the fill area of the specified path.
 
-> ❗ **Important**:  If you need to remove the clipping region to perform subsequent drawing operations, you must save the current graphics state (using the [`saveGState()`](https://developer.apple.com/documentation/CoreGraphics/CGContext/saveGState()) function) before calling this method. When you no longer need the clipping region, you can then restore the previous drawing properties and clipping region using the [`restoreGState()`](https://developer.apple.com/documentation/CoreGraphics/CGContext/restoreGState()) function.
+> ❗ **Important**:  If you need to remove the clipping region to perform subsequent drawing operations, you must save the current graphics state (using the [`saveGState()`](https://developer.apple.com/documentation/coregraphics/cgcontext/savegstate()) function) before calling this method. When you no longer need the clipping region, you can then restore the previous drawing properties and clipping region using the [`restoreGState()`](https://developer.apple.com/documentation/coregraphics/cgcontext/restoregstate()) function.
 
 The [`usesEvenOddFillRule`](uibezierpath/usesevenoddfillrule.md) property is used to determine whether the even-odd or non-zero rule is used to determine the area enclosed by the path.
 

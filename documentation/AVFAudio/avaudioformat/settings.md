@@ -22,7 +22,7 @@ var settings: [String : Any] { get }
 
 #### Discussion
 
-The settings dictionary doesn’t support all formats that [`AudioStreamBasicDescription`](https://developer.apple.com/documentation/CoreAudioTypes/AudioStreamBasicDescription) represents (the underlying implementation), in which case, this property returns `nil`.
+The settings dictionary doesn’t support all formats that [`AudioStreamBasicDescription`](https://developer.apple.com/documentation/coreaudiotypes/audiostreambasicdescription) represents (the underlying implementation), in which case, this property returns `nil`.
 
 ## See Also
 

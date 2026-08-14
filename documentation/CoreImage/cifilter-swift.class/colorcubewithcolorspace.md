@@ -30,7 +30,7 @@ This method applies the color cube with color space filter to an image. The effe
 The color cube with color space filter uses the following properties:
 
 - **`cubeData`**: Data containing a 3-dimensional color table of floating-point premultiplied RGBA values. The cells are organized in a standard ordering. The columns and rows of the data are indexed by red and green, respectively. Each data plane is followed by the next higher plane in the data, with planes indexed by blue.
-- **`colorSpace`**: A [`CGColorSpace`](https://developer.apple.com/documentation/CoreGraphics/CGColorSpace) representing the color space for the color cube.
+- **`colorSpace`**: A [`CGColorSpace`](https://developer.apple.com/documentation/coregraphics/cgcolorspace) representing the color space for the color cube.
 - **`cubeDimension`**: The dimension of the color cube.
 - **`inputImage`**: An image with the type [`CIImage`](ciimage.md).
 
@@ -68,7 +68,7 @@ let cubeData = Data(bytes:colorCubeData, count: colorCubeData.count*4)
 let result = colorCube(inputImage: ciImage, cubeData: cubeData)
 ```
 
-![Two pictures of a pink flower surrounded by foliage. The photo on the left shows a single flower photographed close-up, in focus, with good light and no effects. In the photo on the right, a color cube with color space filter is applied, resulting in the photo becoming lighter and the flower becoming darker.](https://docs-assets.developer.apple.com/published/0d8b301bc3f49b8387ed6c820e74dfe0/media-3545016%402x.png)
+![Two pictures of a pink flower surrounded by foliage. The photo on the left shows a single flower photographed close-up, in focus, with good light and no effects. In the photo on the right, a color cube with color space filter is applied, resulting in the photo becoming lighter and the flower becoming darker.](/images/com.apple.coreimage/media-3545016@2x.png)
 
 ## See Also
 

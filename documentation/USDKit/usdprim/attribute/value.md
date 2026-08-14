@@ -33,8 +33,8 @@ Types that conform to this protocol can be authored as an attribute value using 
 ## Relationships
 
 ### Inherits From
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 ### Conforming Types
 - [USDArray](usdarray.md)
 - [USDLayer.AssetPath](usdlayer/assetpath.md)

@@ -16,7 +16,7 @@ class NSGlyphInfo
 
 #### Overview
 
-Glyphs are the graphic representations of characters, stored in a font, that the text system draws on a display or printed page. Before text can be laid out, the layout manager (<[`NSLayoutManager`](nslayoutmanager.md)) generates a stream of glyphs, using the character and font information specified by the attributed string and contained in the font file. [`NSGlyphInfo`](nsglyphinfo.md) represents a glyph attribute value ([`NSGlyphInfoAttributeName`](nsglyphinfoattributename.md)) in an attributed string ([`NSAttributedString`](https://developer.apple.com/documentation/Foundation/NSAttributedString)) and provides a means to override the standard glyph generation process and substitute a specified glyph over the attribute’s range.
+Glyphs are the graphic representations of characters, stored in a font, that the text system draws on a display or printed page. Before text can be laid out, the layout manager (<[`NSLayoutManager`](nslayoutmanager.md)) generates a stream of glyphs, using the character and font information specified by the attributed string and contained in the font file. [`NSGlyphInfo`](nsglyphinfo.md) represents a glyph attribute value ([`NSGlyphInfoAttributeName`](nsglyphinfoattributename.md)) in an attributed string ([`NSAttributedString`](https://developer.apple.com/documentation/foundation/nsattributedstring)) and provides a means to override the standard glyph generation process and substitute a specified glyph over the attribute’s range.
 
 Glyph attributes are integer values that the layout manager uses to denote special handling for particular glyphs during rendering. [`NSGlyphInfo`](nsglyphinfo.md) enables you to override a font’s built-in mapping from a Unicode character code to a corresponding glyph ID. Overriding the mapping allows you to specify a variant glyph for a given character if the font contains multiple variations for that character or to specify a glyph that doesn’t have a standard mapping (such as some ligature glyphs).
 
@@ -55,17 +55,17 @@ Glyph attributes are integer values that the layout manager uses to denote speci
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCoding](../Foundation/NSCoding.md)
-- [NSCopying](../Foundation/NSCopying.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [NSSecureCoding](../Foundation/NSSecureCoding.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCoding](../foundation/nscoding.md)
+- [NSCopying](../foundation/nscopying.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSSecureCoding](../foundation/nssecurecoding.md)
 
 ## See Also
 

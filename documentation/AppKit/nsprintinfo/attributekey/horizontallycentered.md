@@ -16,7 +16,7 @@ static let horizontallyCentered: NSPrintInfo.AttributeKey
 
 #### Discussion
 
-If [`true`](https://developer.apple.com/documentation/Swift/true), pages are centered horizontally.
+If [`true`](https://developer.apple.com/documentation/swift/true), pages are centered horizontally.
 
 ## See Also
 

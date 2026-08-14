@@ -24,7 +24,7 @@ static let bottomLeading: Alignment
 
 This alignment combines the [`leading`](horizontalalignment/leading.md) horizontal guide and the [`bottom`](verticalalignment/bottom.md) vertical guide:
 
-![A square that’s divided into four equal quadrants. The upper-](https://docs-assets.developer.apple.com/published/7102049f7888d3d84fdfc54da2c0d4a6/Alignment-bottomLeading-1-iOS%402x.png)
+![A square that’s divided into four equal quadrants. The upper-](/images/com.apple.SwiftUI/Alignment-bottomLeading-1-iOS@2x.png)
 
 ## See Also
 

@@ -21,7 +21,7 @@ static let neutralChromaticityX: CIRAWFilterOption
 
 #### Discussion
 
-The associated value is a floating-point value packaged as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) object.  You can query this value to get the current x value for neutral x, y.
+The associated value is a floating-point value packaged as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) object.  You can query this value to get the current x value for neutral x, y.
 
 ## See Also
 

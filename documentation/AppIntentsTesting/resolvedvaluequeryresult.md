@@ -22,7 +22,7 @@ struct ResolvedValueQueryResult
 
 #### Overview
 
-Use the resolved value query result to verify that your [`IntentValueQuery`](https://developer.apple.com/documentation/AppIntents/IntentValueQuery) returns the expected results as shown in the following example:
+Use the resolved value query result to verify that your [`IntentValueQuery`](https://developer.apple.com/documentation/appintents/intentvaluequery) returns the expected results as shown in the following example:
 
 ```swift
 let result = try await searchQuery.values(for: "Arizona")
@@ -44,8 +44,8 @@ let entity: AnyAppEntity =
 ## Relationships
 
 ### Conforms To
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

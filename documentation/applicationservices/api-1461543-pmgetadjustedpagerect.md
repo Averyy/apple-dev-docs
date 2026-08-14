@@ -25,7 +25,7 @@ Before using this function, you must call [`PMSessionValidatePageFormat(_:_:_:)`
 ## Parameters
 
 - `pageFormat`: The page format object whose adjusted page rectangle you want to obtain.
-- `pageRect`: A pointer to your   structure. On return, the structure contains the current imageable area, in points, taking into account scaling, rotation, and application resolution settings. The page rectangle is the area of the page to which an application can draw. The coordinates for the upper-left corner of the page rectangle are (0,0). See Supporting Printing in Your Carbon Application for more information on page and paper rectangles.
+- `pageRect`: A pointer to your [`PMRect`](core_printing/pmrect.md) structure. On return, the structure contains the current imageable area, in points, taking into account scaling, rotation, and application resolution settings. The page rectangle is the area of the page to which an application can draw. The coordinates for the upper-left corner of the page rectangle are (0,0). See Supporting Printing in Your Carbon Application for more information on page and paper rectangles.
 
 ## See Also
 

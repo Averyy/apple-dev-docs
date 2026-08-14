@@ -26,7 +26,7 @@ The (x,y) pixel coordinates of the origin point (0,0) represent the leftmost col
 
 If an image is encoded with this orientation, then displayed by software unaware of orientation metadata, the image appears correctly “right side up”. That is, this orientation is an identity value.
 
-![An image in up orientation can be presented for display without rotating or flipping.](https://docs-assets.developer.apple.com/published/08b6857053beb92301df7ceb36ab8175/media-2948288%402x.png)
+![An image in up orientation can be presented for display without rotating or flipping.](/images/com.apple.imageio/media-2948288@2x.png)
 
 ## See Also
 

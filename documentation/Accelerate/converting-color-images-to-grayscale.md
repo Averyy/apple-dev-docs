@@ -128,7 +128,7 @@ static var destinationFormatF = vImage_CGImageFormat(
         CGImageAlphaInfo.none.rawValue))!
 ```
 
-The [`makeCGImage(cgImageFormat:)`](vimage/pixelbuffer/makecgimage(cgimageformat:).md) function is available for both the 8- and 32-bit pixel buffers. The following code creates a [`CGImage`](https://developer.apple.com/documentation/CoreGraphics/CGImage) instance from the 32-bit grayscale pixel buffer:
+The [`makeCGImage(cgImageFormat:)`](vimage/pixelbuffer/makecgimage(cgimageformat:).md) function is available for both the 8- and 32-bit pixel buffers. The following code creates a [`CGImage`](https://developer.apple.com/documentation/coregraphics/cgimage) instance from the 32-bit grayscale pixel buffer:
 
 ```swift
 let result = destinationBufferF.makeCGImage(
@@ -137,7 +137,7 @@ let result = destinationBufferF.makeCGImage(
 
 On return, `result` contains the grayscale representation of the original image:
 
-![Grayscale photograph.](https://docs-assets.developer.apple.com/published/91ec6c92e6eedcb41bb2612616718ee9/grayscale_2x.png)
+![Grayscale photograph.](/images/com.apple.accelerate/grayscale_2x.png)
 
 ## See Also
 

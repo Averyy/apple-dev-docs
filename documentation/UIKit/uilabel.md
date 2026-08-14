@@ -38,27 +38,27 @@ Follow these steps to add a label to your interface:
 
 ##### Customize the Labels Appearance
 
-You provide the content for a label by assigning either a [`NSString`](https://developer.apple.com/documentation/Foundation/NSString) object to the [`text`](uilabel/text.md) property, or an [`NSAttributedString`](https://developer.apple.com/documentation/Foundation/NSAttributedString) object to the [`attributedText`](uilabel/attributedtext.md) property. The label displays the property set most recently.
+You provide the content for a label by assigning either a [`NSString`](https://developer.apple.com/documentation/foundation/nsstring) object to the [`text`](uilabel/text.md) property, or an [`NSAttributedString`](https://developer.apple.com/documentation/foundation/nsattributedstring) object to the [`attributedText`](uilabel/attributedtext.md) property. The label displays the property set most recently.
 
-The [`attributedText`](uilabel/attributedtext.md) property allows you to control the appearance of individual characters and groups of characters, using the [`NSAttributedString`](https://developer.apple.com/documentation/Foundation/NSAttributedString) API. The following image shows a label displaying an [`NSAttributedString`](https://developer.apple.com/documentation/Foundation/NSAttributedString) that includes attributes to customize the font, color, and alignment of the string.
+The [`attributedText`](uilabel/attributedtext.md) property allows you to control the appearance of individual characters and groups of characters, using the [`NSAttributedString`](https://developer.apple.com/documentation/foundation/nsattributedstring) API. The following image shows a label displaying an [`NSAttributedString`](https://developer.apple.com/documentation/foundation/nsattributedstring) that includes attributes to customize the font, color, and alignment of the string.
 
-![A screenshot of a label showing text aligned to the left and formatted with different attributes. The first attribute changes the text color of the second word to a color different from the rest of the text. The second attribute applies a bold font to the fifth word. The third and final attribute highlights the last four words that the label displays. The display text ends with an ellipsis indicating that the label truncates the full text at the end due to its line break mode. ](https://docs-assets.developer.apple.com/published/40ee9fac5632a81fcc433d85594290bd/media-2759882%402x.png)
+![A screenshot of a label showing text aligned to the left and formatted with different attributes. The first attribute changes the text color of the second word to a color different from the rest of the text. The second attribute applies a bold font to the fifth word. The third and final attribute highlights the last four words that the label displays. The display text ends with an ellipsis indicating that the label truncates the full text at the end due to its line break mode. ](/images/com.apple.uikit/media-2759882@2x.png)
 
-If you want to format the label’s text in a uniform fashion, set the [`text`](uilabel/text.md) property to an [`NSString`](https://developer.apple.com/documentation/Foundation/NSString) object containing the content, and configure the [`font`](uilabel/font.md), [`textColor`](uilabel/textcolor.md), [`textAlignment`](uilabel/textalignment.md), and [`lineBreakMode`](uilabel/linebreakmode.md) properties. The following image shows a label displaying an [`NSString`](https://developer.apple.com/documentation/Foundation/NSString) with a custom font, color, and alignment.
+If you want to format the label’s text in a uniform fashion, set the [`text`](uilabel/text.md) property to an [`NSString`](https://developer.apple.com/documentation/foundation/nsstring) object containing the content, and configure the [`font`](uilabel/font.md), [`textColor`](uilabel/textcolor.md), [`textAlignment`](uilabel/textalignment.md), and [`lineBreakMode`](uilabel/linebreakmode.md) properties. The following image shows a label displaying an [`NSString`](https://developer.apple.com/documentation/foundation/nsstring) with a custom font, color, and alignment.
 
-![A screenshot of a label displaying text with a center alignment and truncated in the middle, showing the beginning and ending of the full text, separated with an ellipsis.](https://docs-assets.developer.apple.com/published/056a9ff6d397d84c263077990f1cb109/media-2759883%402x.png)
+![A screenshot of a label displaying text with a center alignment and truncated in the middle, showing the beginning and ending of the full text, separated with an ellipsis.](/images/com.apple.uikit/media-2759883@2x.png)
 
 If you set these appearance properties on a label that displays the content of the [`attributedText`](uilabel/attributedtext.md) property, the label overrides the appropriate attributes and displays the attributed string with a uniform appearance. The following image shows the label from the first image with the [`textColor`](uilabel/textcolor.md) property set to green.
 
-![A screenshot of a label showing left aligned text. The color of the text is green.](https://docs-assets.developer.apple.com/published/8e72b904f736047642dea7ce807b13b9/media-2759884%402x.png)
+![A screenshot of a label showing left aligned text. The color of the text is green.](/images/com.apple.uikit/media-2759884@2x.png)
 
 Specify the maximum number of lines for the label to use when laying out the text with the [`numberOfLines`](uilabel/numberoflines.md) property. Setting a value of `0` allows the label to use as many lines as necessary to lay out the text within the label’s width. Use the [`lineBreakMode`](uilabel/linebreakmode.md) property to control how the label splits the text into multiple lines, and the truncation behavior associated with the final line.
 
 Use Auto Layout to position and optionally size the label. The intrinsic content size for a label defaults to the size that displays the entirety of the content on a single line. If you provide Auto Layout constraints that define the width of the label but not the height, the label’s intrinsic content size adjusts the height to display the text completely.
 
-When the label has its size completely defined externally, you can specify how it handles the situation when its content doesn’t fit within the bounds. To reduce the font size, set the [`adjustsFontSizeToFitWidth`](uilabel/adjustsfontsizetofitwidth.md) property to [`true`](https://developer.apple.com/documentation/Swift/true) and set the [`minimumScaleFactor`](uilabel/minimumscalefactor.md) property to a value between `0` and `1`. The latter of these properties represents how much smaller than the requested font size the label scales the text. Setting the [`allowsDefaultTighteningForTruncation`](uilabel/allowsdefaulttighteningfortruncation.md) property to [`true`](https://developer.apple.com/documentation/Swift/true) instructs the label to reduce the spacing between characters before truncating the string. The following image shows a label that uses [`minimumScaleFactor`](uilabel/minimumscalefactor.md) and [`adjustsFontSizeToFitWidth`](uilabel/adjustsfontsizetofitwidth.md) to display the content of an entire string that would otherwise have overflowed.
+When the label has its size completely defined externally, you can specify how it handles the situation when its content doesn’t fit within the bounds. To reduce the font size, set the [`adjustsFontSizeToFitWidth`](uilabel/adjustsfontsizetofitwidth.md) property to [`true`](https://developer.apple.com/documentation/swift/true) and set the [`minimumScaleFactor`](uilabel/minimumscalefactor.md) property to a value between `0` and `1`. The latter of these properties represents how much smaller than the requested font size the label scales the text. Setting the [`allowsDefaultTighteningForTruncation`](uilabel/allowsdefaulttighteningfortruncation.md) property to [`true`](https://developer.apple.com/documentation/swift/true) instructs the label to reduce the spacing between characters before truncating the string. The following image shows a label that uses [`minimumScaleFactor`](uilabel/minimumscalefactor.md) and [`adjustsFontSizeToFitWidth`](uilabel/adjustsfontsizetofitwidth.md) to display the content of an entire string that would otherwise have overflowed.
 
-![A screenshot showing two labels containing the same text, displayed side by side. The label on the left side truncates the text at the end. The label on the right side displays the full text in an adjusted, smaller font that fits within the display area of the label.](https://docs-assets.developer.apple.com/published/ef03caba2711ad3ab5f90f6569c85cce/media-2759885%402x.png)
+![A screenshot showing two labels containing the same text, displayed side by side. The label on the left side truncates the text at the end. The label on the right side displays the full text in an adjusted, smaller font that fits within the display area of the label.](/images/com.apple.uikit/media-2759885@2x.png)
 
 ##### Design Labels for a Wide Audience
 
@@ -137,19 +137,19 @@ For design guidance, see [`Human Interface Guidelines`](https://developer.apple.
 ### Inherits From
 - [UIView](uiview.md)
 ### Conforms To
-- [CALayerDelegate](../QuartzCore/CALayerDelegate.md)
-- [CLBodyIdentifiable](../CoreLocation/CLBodyIdentifiable.md)
-- [CMBodyIdentifiable](../CoreMotion/CMBodyIdentifiable.md)
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCoding](../Foundation/NSCoding.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [NSTouchBarProvider](../AppKit/NSTouchBarProvider.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [CALayerDelegate](../quartzcore/calayerdelegate.md)
+- [CLBodyIdentifiable](../corelocation/clbodyidentifiable.md)
+- [CMBodyIdentifiable](../coremotion/cmbodyidentifiable.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCoding](../foundation/nscoding.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSTouchBarProvider](../appkit/nstouchbarprovider.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 - [UIAccessibilityIdentification](uiaccessibilityidentification.md)
 - [UIActivityItemsConfigurationProviding](uiactivityitemsconfigurationproviding.md)
 - [UIAppearance](uiappearance.md)

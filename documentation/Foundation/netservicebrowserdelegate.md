@@ -44,7 +44,7 @@ Delegates of [`NetServiceBrowser`](netservicebrowser.md) instances optionally im
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

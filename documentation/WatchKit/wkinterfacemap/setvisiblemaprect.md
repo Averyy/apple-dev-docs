@@ -22,7 +22,7 @@ Changing the visible region may require the loading of additional map tiles to r
 
 ## Parameters
 
-- `mapRect`: The region to be displayed, specified as a map rectangle. The size of the rectangle provides an implicit zoom value for the map. For more information about the [`MKMapRect`](https://developer.apple.com/documentation/MapKit/MKMapRect) type, see [`MapKit`](https://developer.apple.com/documentation/MapKit).
+- `mapRect`: The region to be displayed, specified as a map rectangle. The size of the rectangle provides an implicit zoom value for the map. For more information about the [`MKMapRect`](https://developer.apple.com/documentation/mapkit/mkmaprect) type, see [`MapKit`](https://developer.apple.com/documentation/mapkit).
 
 ## See Also
 

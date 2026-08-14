@@ -99,7 +99,7 @@ func didBecomeInactive() {
 }
 ```
 
-If you implement custom text UI in an AppKit app, see [`Adopting the system text cursor in custom text views`](https://developer.apple.com/documentation/AppKit/adopting-the-system-text-cursor-in-custom-text-views).
+If you implement custom text UI in an AppKit app, see [`Adopting the system text cursor in custom text views`](https://developer.apple.com/documentation/appkit/adopting-the-system-text-cursor-in-custom-text-views).
 
 > **Note**:  Session 10058: [`What’s new with text and text interactions`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2023/10058/)
 

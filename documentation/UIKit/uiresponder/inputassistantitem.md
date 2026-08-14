@@ -23,7 +23,7 @@ On iPad, the shortcuts bar above the keyboard contains typing suggestions and ot
 
 This property has special considerations in visionOS:
 
-- In apps built for visionOS, this property isn’t available. Use [`bottomOrnament`](https://developer.apple.com/documentation/SwiftUI/ToolbarItemPlacement/bottomOrnament) instead.
+- In apps built for visionOS, this property isn’t available. Use [`bottomOrnament`](https://developer.apple.com/documentation/swiftui/toolbaritemplacement/bottomornament) instead.
 - In compatible iPad apps running in visionOS, the shortcuts bar behaves similar to iPadOS. It contains the custom bar button items you configure using this property and system items (such as cut, copy, and paste). The shortcuts bar renders at the bottom of the app window, but it doesn’t anchor to the keyboard in visionOS.
 
 ## See Also

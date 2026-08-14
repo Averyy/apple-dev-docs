@@ -20,7 +20,7 @@ var identifier: any NSCopying { get }
 
 #### Discussion
 
-If you did not provide an identifier when creating this object, UIKit assigns a new [`UUID`](https://developer.apple.com/documentation/Foundation/UUID) object to this property.
+If you did not provide an identifier when creating this object, UIKit assigns a new [`UUID`](https://developer.apple.com/documentation/foundation/uuid) object to this property.
 
 
 ---

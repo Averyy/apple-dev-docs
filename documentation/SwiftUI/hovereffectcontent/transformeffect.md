@@ -20,11 +20,11 @@ An effect that applies an affine transformation to the view’s rendered output.
 
 #### Discussion
 
-Use `transformEffect(_:)` to rotate, scale, translate, or skew the output of the view according to the provided [`CGAffineTransform`](https://developer.apple.com/documentation/CoreFoundation/CGAffineTransform).
+Use `transformEffect(_:)` to rotate, scale, translate, or skew the output of the view according to the provided [`CGAffineTransform`](https://developer.apple.com/documentation/corefoundation/cgaffinetransform).
 
 ## Parameters
 
-- `transform`: A [`CGAffineTransform`](https://developer.apple.com/documentation/CoreFoundation/CGAffineTransform) to apply to the view.
+- `transform`: A [`CGAffineTransform`](https://developer.apple.com/documentation/corefoundation/cgaffinetransform) to apply to the view.
 
 
 ---

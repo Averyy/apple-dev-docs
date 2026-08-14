@@ -24,7 +24,7 @@ static var sendFailed: MFMailComposeError.Code { get }
 - [static var saveFailed: MFMailComposeError.Code](mfmailcomposeerror/savefailed.md)
   An error occurred while trying to save the email message to the drafts folder.
 - [MFMailComposeError.Code](mfmailcomposeerror/code.md)
-  Error codes for [`NSError`](https://developer.apple.com/documentation/Foundation/NSError) objects that are associated with the mail composition interface.
+  Error codes for [`NSError`](https://developer.apple.com/documentation/foundation/nserror) objects that are associated with the mail composition interface.
 
 
 ---

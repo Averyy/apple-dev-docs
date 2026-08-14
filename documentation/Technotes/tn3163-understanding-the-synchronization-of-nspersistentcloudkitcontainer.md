@@ -6,7 +6,7 @@ Explore the details inside the synchronization of `NSPersistentCloudKitContainer
 
 #### Overview
 
-[`NSPersistentCloudKitContainer`](https://developer.apple.com/documentation/CoreData/NSPersistentCloudKitContainer) is designed to provide end-to-end synchronization for apps. In many cases, apps use this API to set up a Core Data stack, and the Core Data store automatically synchronizes across devices.
+[`NSPersistentCloudKitContainer`](https://developer.apple.com/documentation/coredata/nspersistentcloudkitcontainer) is designed to provide end-to-end synchronization for apps. In many cases, apps use this API to set up a Core Data stack, and the Core Data store automatically synchronizes across devices.
 
 Under the hood, `NSPersistentCloudKitContainer` separates the synchronization process into many tasks, and encapsulates all the implementation details. When performing a task, it generates logs, which are persisted as a part of a sysdiagnose. To understand what really happens in the process, which is sometimes necessary when diagnosing a synchronization issue, you need to look into a sysdiagnose.
 
@@ -18,9 +18,9 @@ As a prerequisite, it’s important to understand how the synchronization works 
 
 `NSPersistentCloudKitContainer` associates a Core Data store with a CloudKit database. The store lives on the device to provide data to your app, the database lives on the remote CloudKit server to hold the server truth, and `NSPersistentCloudKitContainer` takes care the synchronization between them.
 
-The synchronization process is transparent to your app. You still use Core Data APIs to access the store. When you perform a fetch, Core Data returns the data currently existing in the store, without querying CloudKit for potentially unsynchronized changes on the server side. When you perform a save, Core Data writes the data to the store and records the changes in the [`Persistent history`](https://developer.apple.com/documentation/CoreData/persistent-history). When appropriate, `NSPersistentCloudKitContainer` *exports* the local changes from the store to the database, and *imports* the remote changes from the database to the store.
+The synchronization process is transparent to your app. You still use Core Data APIs to access the store. When you perform a fetch, Core Data returns the data currently existing in the store, without querying CloudKit for potentially unsynchronized changes on the server side. When you perform a save, Core Data writes the data to the store and records the changes in the [`Persistent history`](https://developer.apple.com/documentation/coredata/persistent-history). When appropriate, `NSPersistentCloudKitContainer` *exports* the local changes from the store to the database, and *imports* the remote changes from the database to the store.
 
-Multiple system services get involved in the process. For example, `dasd` is a system process that coordinates the execution of app activities to balance the use of system resources and achieve the best overall user experience; `NSPersistentCloudKitContainer` works with the process to determine when it is appropriate to execute an import or export. `apsd` receives [`User Notifications`](https://developer.apple.com/documentation/UserNotifications) from APNs server and delivers them to the target apps; `NSPersistentCloudKitContainer` relies on it to detect changes on the associated CloudKit private or shared database. `NSPersistentCloudKitContainer` also relies on `cloudd`, the on-device CloudKit service, to do the data transportation between the device and the CloudKit server.
+Multiple system services get involved in the process. For example, `dasd` is a system process that coordinates the execution of app activities to balance the use of system resources and achieve the best overall user experience; `NSPersistentCloudKitContainer` works with the process to determine when it is appropriate to execute an import or export. `apsd` receives [`User Notifications`](https://developer.apple.com/documentation/usernotifications) from APNs server and delivers them to the target apps; `NSPersistentCloudKitContainer` relies on it to detect changes on the associated CloudKit private or shared database. `NSPersistentCloudKitContainer` also relies on `cloudd`, the on-device CloudKit service, to do the data transportation between the device and the CloudKit server.
 
 For more information about `NSPersistentCloudKitContainer`, see the following WWDC sessions:
 
@@ -43,7 +43,7 @@ Use [`CloudKit Console`](https://developer.apple.comhttp://icloud.developer.appl
 
 1. Prepare two devices, A and B, that are well configured to access CloudKit and can reproduce the issue. To confirm that your devices and project are correctly configured, see [`Configure iCloud on your devices`](tn3164-debugging-the-synchronization-of-nspersistentcloudkitcontainer#Configure-iCloud-on-your-devices.md) and [`Configure CloudKit in your project`](tn3164-debugging-the-synchronization-of-nspersistentcloudkitcontainer#Configure-CloudKit-in-your-project.md).
 2. Reproduce the synchronization issue by adding some data on device A and observing the data not being synchronized to device B after some time.
-3. Try to find the associated CloudKit record with CloudKit Console. To learn how your Core Data model is mirrored to the CloudKit schema, see [`Sharing Core Data objects between iCloud users`](https://developer.apple.com/documentation/CoreData/sharing-core-data-objects-between-icloud-users#4288212). To query data in CloudKit Console, see WWDC22 session 10115: [`What’s new in CloudKit Console`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2022/10115/).
+3. Try to find the associated CloudKit record with CloudKit Console. To learn how your Core Data model is mirrored to the CloudKit schema, see [`Sharing Core Data objects between iCloud users`](https://developer.apple.com/documentation/coredata/sharing-core-data-objects-between-icloud-users). To query data in CloudKit Console, see WWDC22 session 10115: [`What’s new in CloudKit Console`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2022/10115/).
 
 If CloudKit Console can’t find the record, you determine that the data wasn’t exported, and so only need to focus on device A. Otherwise, the issue is either the system didn’t deliver the change to your app on device B, or your app didn’t present the data correctly. In this case, capture a sysdiagnose from each device in case your investigation needs the information from both sides.
 
@@ -93,7 +93,7 @@ This section shows the filters for tracing the phases, and provides the represen
 
 ##### Observe If the Core Data Store Is Changed
 
-When observing the app saving a managed object context ([`NSManagedObjectContext`](https://developer.apple.com/documentation/CoreData/NSManagedObjectContext)) or a remote change notification ([`NSPersistentStoreRemoteChange`](https://developer.apple.com/documentation/Foundation/NSNotification/Name-swift.struct/NSPersistentStoreRemoteChange)) that indicates the store being changed remotely, `NSPersistentCloudKitContainer` logs the event and starts to schedule an export. Use the `process` (”<the app name>”), `subsystem` (“com.apple.coredata”), and `message` (“Observed”) filters to find the relevant logs, as shown in the following example:
+When observing the app saving a managed object context ([`NSManagedObjectContext`](https://developer.apple.com/documentation/coredata/nsmanagedobjectcontext)) or a remote change notification ([`NSPersistentStoreRemoteChange`](https://developer.apple.com/documentation/foundation/nsnotification/name-swift.struct/nspersistentstoreremotechange)) that indicates the store being changed remotely, `NSPersistentCloudKitContainer` logs the event and starts to schedule an export. Use the `process` (”<the app name>”), `subsystem` (“com.apple.coredata”), and `message` (“Observed”) filters to find the relevant logs, as shown in the following example:
 
 ```None
 info  … 14:14:15.227567 …  YourCoolApp  debug: CoreData+CloudKit: 
@@ -109,9 +109,9 @@ info  … 14:14:15.230887 …  YourCoolApp debug: CoreData+CloudKit:
 
 > **Note**: For better readability, the logs in this technote are formatted to fit the page size, and some information in the logs is omitted.
 
-> **Note**: If you save a managed object context but can’t find the relevant logs, confirm that the save was successful. Be sure to save the [`parent`](https://developer.apple.com/documentation/CoreData/NSManagedObjectContext/parent), if you use a nested context.
+> **Note**: If you save a managed object context but can’t find the relevant logs, confirm that the save was successful. Be sure to save the [`parent`](https://developer.apple.com/documentation/coredata/nsmanagedobjectcontext/parent), if you use a nested context.
 
-The logs contain the Core Data [`NSStoreUUIDKey`](https://developer.apple.com/documentation/CoreData/NSStoreUUIDKey), or `A73C42D5-ADEE-4758-B2A1-F75DEBF93702` in this example, which can be used with the `message` filter to filter out the logs irrelevant to the store.
+The logs contain the Core Data [`NSStoreUUIDKey`](https://developer.apple.com/documentation/coredata/nsstoreuuidkey), or `A73C42D5-ADEE-4758-B2A1-F75DEBF93702` in this example, which can be used with the `message` filter to filter out the logs irrelevant to the store.
 
 ##### Confirm That the Export Can Proceed
 
@@ -238,7 +238,7 @@ The associated CloudKit database can change (as a result of a peer’s export, f
 - Imports that happen at some points, like when the app is activated.
 - An import when getting notified of a database change.
 
-When working with a CloudKit private or shared database, `NSPersistentCloudKitContainer` schedules an import when getting a [`CKNotification`](https://developer.apple.com/documentation/CloudKit/CKNotification), which is triggered when the database changes. A CloudKit public database doesn’t support this kind of notification, and so `NSPersistentCloudKitContainer` needs to poll periodically for the database changes. To avoid draining the system resources, `NSPersistentCloudKitContainer` typically polls once every 30 minutes when working in the CloudKit development environment, and up to once every 24 hours in the production environment. For more information, see WWDC20 session 10650: [`Sync a Core Data store with the CloudKit public database`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2020/10650/).
+When working with a CloudKit private or shared database, `NSPersistentCloudKitContainer` schedules an import when getting a [`CKNotification`](https://developer.apple.com/documentation/cloudkit/cknotification), which is triggered when the database changes. A CloudKit public database doesn’t support this kind of notification, and so `NSPersistentCloudKitContainer` needs to poll periodically for the database changes. To avoid draining the system resources, `NSPersistentCloudKitContainer` typically polls once every 30 minutes when working in the CloudKit development environment, and up to once every 24 hours in the production environment. For more information, see WWDC20 session 10650: [`Sync a Core Data store with the CloudKit public database`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2020/10650/).
 
 Use the `process` (”<the app name>”), `subsystem` (“com.apple.coredata”), and `message` (“checkAndSchedule”) filters to find the relevant logs. The following example shows that three imports were being scheduled:
 
@@ -321,7 +321,7 @@ default  … 15:37:22.887758 …  YourCoolApp  CloudKit: CoreData+CloudKit:
 com.apple.coredata.cloudkit.private.subscription <CKDatabaseNotification: …>
 ```
 
-> **Note**: If the system receives a CloudKit notification but doesn’t forward it to your app, confirm that the `Remote notification` background mode is on in your project, as described in [`Setting Up Core Data with CloudKit`](https://developer.apple.com/documentation/CoreData/setting-up-core-data-with-cloudkit#3235668).
+> **Note**: If the system receives a CloudKit notification but doesn’t forward it to your app, confirm that the `Remote notification` background mode is on in your project, as described in [`Setting Up Core Data with CloudKit`](https://developer.apple.com/documentation/coredata/setting-up-core-data-with-cloudkit).
 
 ##### Confirm That the Import Can Proceed
 
@@ -433,11 +433,11 @@ When you see a system behavior that doesn’t make sense in your use case, consi
 4. The part of the system logs that shows the behavior, or why the behavior makes no sense to you.
 5. The Core Data store on the device(s).
 
-To retrieve a Core Data store in your app’s container from an iOS device, see [`View, download, and replace app containers on a device`](https://developer.apple.comhttps://help.apple.com/xcode/mac/11.4/#/dev816c242e1). If your store is in another location, such as an App Group container, use [`replacePersistentStore(at:destinationOptions:withPersistentStoreFrom:sourceOptions:type:)`](https://developer.apple.com/documentation/CoreData/NSPersistentStoreCoordinator/replacePersistentStore(at:destinationOptions:withPersistentStoreFrom:sourceOptions:type:)) to copy it to a location where you have access. A Core Data store contains a main database file, multiple accompanying files (`-wal` and `-shm` files), and potentially some hidden files. When zipping a store, zip the whole parent folder so all the files are included.
+To retrieve a Core Data store in your app’s container from an iOS device, see [`View, download, and replace app containers on a device`](https://developer.apple.comhttps://help.apple.com/xcode/mac/11.4/#/dev816c242e1). If your store is in another location, such as an App Group container, use [`replacePersistentStore(at:destinationOptions:withPersistentStoreFrom:sourceOptions:type:)`](https://developer.apple.com/documentation/coredata/nspersistentstorecoordinator/replacepersistentstore(at:destinationoptions:withpersistentstorefrom:sourceoptions:type:)) to copy it to a location where you have access. A Core Data store contains a main database file, multiple accompanying files (`-wal` and `-shm` files), and potentially some hidden files. When zipping a store, zip the whole parent folder so all the files are included.
 
 For more information about filing a great feedback report, see WWDC22 session 10119: [`Optimize your use of Core Data and CloudKit`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2022/10119/?time=1295).
 
-> **Note**: When providing feedback for other CloudKit APIs, such as the [`CloudKit`](https://developer.apple.com/documentation/CloudKit) framework and [`NSUbiquitousKeyValueStore`](https://developer.apple.com/documentation/Foundation/NSUbiquitousKeyValueStore), make your report actionable as well by providing the same information, except the Core Data store that isn’t needed.
+> **Note**: When providing feedback for other CloudKit APIs, such as the [`CloudKit`](https://developer.apple.com/documentation/cloudkit) framework and [`NSUbiquitousKeyValueStore`](https://developer.apple.com/documentation/foundation/nsubiquitouskeyvaluestore), make your report actionable as well by providing the same information, except the Core Data store that isn’t needed.
 
 #### Revision History
 

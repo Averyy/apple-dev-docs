@@ -22,7 +22,7 @@ let kCVPixelBufferIOSurfacePropertiesKey: CFString
 
 #### Discussion
 
-The value for this key is of type [`CFDictionary`](https://developer.apple.com/documentation/CoreFoundation/CFDictionary). Provide a value for this key if you want Core Video to use the [`IOSurface`](https://developer.apple.com/documentation/IOSurface) framework to allocate the pixel buffer. Provide an empty dictionary to use the default [`IOSurface`](https://developer.apple.com/documentation/IOSurface) options.
+The value for this key is of type [`CFDictionary`](https://developer.apple.com/documentation/corefoundation/cfdictionary). Provide a value for this key if you want Core Video to use the [`IOSurface`](https://developer.apple.com/documentation/iosurface) framework to allocate the pixel buffer. Provide an empty dictionary to use the default [`IOSurface`](https://developer.apple.com/documentation/iosurface) options.
 
 ## See Also
 

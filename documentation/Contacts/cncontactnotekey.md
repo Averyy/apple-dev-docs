@@ -23,11 +23,11 @@ let CNContactNoteKey: String
 
 This key takes a string value.
 
-To be able to fetch the [`note`](cncontact/note.md) property in iOS, your app needs the [`com.apple.developer.contacts.notes`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.contacts.notes) entitlement.
+To be able to fetch the [`note`](cncontact/note.md) property in iOS, your app needs the [`com.apple.developer.contacts.notes`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.contacts.notes) entitlement.
 
 ## See Also
 
-- [com.apple.developer.contacts.notes](../BundleResources/Entitlements/com.apple.developer.contacts.notes.md)
+- [com.apple.developer.contacts.notes](../bundleresources/entitlements/com.apple.developer.contacts.notes.md)
   A Boolean value that indicates whether the app may access the notes in contact entries.
 
 

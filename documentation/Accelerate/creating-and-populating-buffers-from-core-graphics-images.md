@@ -14,7 +14,7 @@ Typically, you’ll initialize a source buffer from an image and initialize and 
 
 The vImage functions that initialize a buffer’s size and data require an instantiated [`vImage_Buffer`](vimage_buffer.md) structure. Typically, you declare a buffer as a variable because these functions mutate the buffer.
 
-You can initialize a vImage buffer from a [`CGImage`](https://developer.apple.com/documentation/CoreGraphics/CGImage) instance that’s acquired from the [`cgImage`](https://developer.apple.com/documentation/UIKit/UIImage/cgImage) property of an image. In the following example, the image is named `Flowers_2.jpg`. The [`init(cgImage:format:flags:)`](vimage_buffer/init(cgimage:format:flags:).md) function initializes a [`vImage_Buffer`](vimage_buffer.md) structure with the image data using the format discussed in [`Converting bitmap data between Core Graphics images and vImage buffers`](converting-bitmap-data-between-core-graphics-images-and-vimage-buffers.md).
+You can initialize a vImage buffer from a [`CGImage`](https://developer.apple.com/documentation/coregraphics/cgimage) instance that’s acquired from the [`cgImage`](https://developer.apple.com/documentation/uikit/uiimage/cgimage) property of an image. In the following example, the image is named `Flowers_2.jpg`. The [`init(cgImage:format:flags:)`](vimage_buffer/init(cgimage:format:flags:).md) function initializes a [`vImage_Buffer`](vimage_buffer.md) structure with the image data using the format discussed in [`Converting bitmap data between Core Graphics images and vImage buffers`](converting-bitmap-data-between-core-graphics-images-and-vimage-buffers.md).
 
 ```swift
 guard

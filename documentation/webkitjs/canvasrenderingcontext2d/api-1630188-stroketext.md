@@ -27,8 +27,8 @@ The `x`, `y`, and `maxWidth` parameter values are in the canvas’s current coor
 ## Parameters
 
 - `text`: A string containing the text to draw.
-- `x`: The x-coordinate of the   point (the left edge, right edge, or center of the text).
-- `y`: The y-coordinate of the   point.
+- `x`: The x-coordinate of the `textAlign` point (the left edge, right edge, or center of the text).
+- `y`: The y-coordinate of the `textBaseline` point.
 - `maxWidth`: The maximum width of the string, in pixels. This parameter is optional. If omitted, the string is drawn in the current font style; any text falling outside the canvas clipping region is clipped. If this parameter is provided, and the text would exceed the specified width, the text is scaled down until it fits within the specified width.
 
 ## See Also

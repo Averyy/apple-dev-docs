@@ -49,7 +49,7 @@ struct ContentView: View {
 }
 ```
 
-![A screenshot showing a list with leading 25 point inset on each](https://docs-assets.developer.apple.com/published/0b10922ed606478b5a4155f90ed18221/SwiftUI-View-ListRowInsets%402x.png)
+![A screenshot showing a list with leading 25 point inset on each](/images/com.apple.SwiftUI/SwiftUI-View-ListRowInsets@2x.png)
 
 When applying multiple `listRowInsets` modifiers, modifiers with the same edges will override modifiers higher up in the view hierarchy.
 

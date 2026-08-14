@@ -6,25 +6,25 @@ Learn about important changes to GameKit.
 
 #### Overview
 
-Browse notable changes in [`GameKit`](https://developer.apple.com/documentation/GameKit).
+Browse notable changes in [`GameKit`](https://developer.apple.com/documentation/gamekit).
 
 #### June 2025
 
 - Use a GameKit Configuration file in Xcode to configure Game Activities and Challenges.
 - Test leaderboard score submissions by receiving system notifications when they happen. On iOS, open Settings > Developer, then turn on Notify About Score Submissions.
-- Use [`GKGameActivity`](https://developer.apple.com/documentation/GameKit/GKGameActivity) to present players with ways to engage each other in your game.
-- Configure challenges in Xcode or App Store Connect and use  [`GKChallengeDefinition`](https://developer.apple.com/documentation/GameKit/GKChallengeDefinition) to retrieve the metadata you define.
+- Use [`GKGameActivity`](https://developer.apple.com/documentation/gamekit/gkgameactivity) to present players with ways to engage each other in your game.
+- Configure challenges in Xcode or App Store Connect and use  [`GKChallengeDefinition`](https://developer.apple.com/documentation/gamekit/gkchallengedefinition) to retrieve the metadata you define.
 
 #### June 2024
 
 ##### Dashboard
 
-- Create a [`GKGameCenterViewController`](https://developer.apple.com/documentation/GameKit/GKGameCenterViewController) object using the [`init(leaderboardSetID:)`](https://developer.apple.com/documentation/GameKit/GKGameCenterViewController/init(leaderboardSetID:)) initializer to display a set of leaderboards in the dashboard.
-- Use the [`init(player:)`](https://developer.apple.com/documentation/GameKit/GKGameCenterViewController/init(player:)) initializer to display a player’s profile in the dashboard.
+- Create a [`GKGameCenterViewController`](https://developer.apple.com/documentation/gamekit/gkgamecenterviewcontroller) object using the [`init(leaderboardSetID:)`](https://developer.apple.com/documentation/gamekit/gkgamecenterviewcontroller/init(leaderboardsetid:)) initializer to display a set of leaderboards in the dashboard.
+- Use the [`init(player:)`](https://developer.apple.com/documentation/gamekit/gkgamecenterviewcontroller/init(player:)) initializer to display a player’s profile in the dashboard.
 
 ##### Voice Chat
 
-- Use SharePlay to allow voice chat in your real-time games instead of [`GKVoiceChat`](https://developer.apple.com/documentation/GameKit/GKVoiceChat) which is deprecated. When you present a [`GKMatchmakerViewController`](https://developer.apple.com/documentation/GameKit/GKMatchmakerViewController) object, it automatically shows a SharePlay button on iOS. To implement a custom SharePlay experience, see [`GKMatchmaker`](https://developer.apple.com/documentation/GameKit/GKMatchmaker#4110693).
+- Use SharePlay to allow voice chat in your real-time games instead of [`GKVoiceChat`](https://developer.apple.com/documentation/gamekit/gkvoicechat) which is deprecated. When you present a [`GKMatchmakerViewController`](https://developer.apple.com/documentation/gamekit/gkmatchmakerviewcontroller) object, it automatically shows a SharePlay button on iOS. To implement a custom SharePlay experience, see [`GKMatchmaker`](https://developer.apple.com/documentation/gamekit/gkmatchmaker).
 
 ## See Also
 

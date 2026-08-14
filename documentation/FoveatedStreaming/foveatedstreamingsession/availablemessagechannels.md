@@ -19,7 +19,7 @@ final var availableMessageChannels: Set<FoveatedStreamingSession.MessageChannel.
 
 Observe this property to know when the endpoint creates a new message channel. Message channels can only be initialized by the endpoint.
 
-For example, you can observe the available message channels by employing [`withObservationTracking(_:onChange:)`](https://developer.apple.com/documentation/Observation/withObservationTracking(_:onChange:)).
+For example, you can observe the available message channels by employing [`withObservationTracking(_:onChange:)`](https://developer.apple.com/documentation/observation/withobservationtracking(_:onchange:)).
 
 ```swift
 @MainActor

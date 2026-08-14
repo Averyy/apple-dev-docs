@@ -22,12 +22,12 @@ convenience init(keyPath: String, object: Any)
 
 #### Discussion
 
-This initializer sets up KVO observation for `keyPath` with the following [`NSKeyValueObservingOptions`](https://developer.apple.com/documentation/Foundation/NSKeyValueObservingOptions):
+This initializer sets up KVO observation for `keyPath` with the following [`NSKeyValueObservingOptions`](https://developer.apple.com/documentation/foundation/nskeyvalueobservingoptions):
 
-- [`new`](https://developer.apple.com/documentation/Foundation/NSKeyValueObservingOptions/new)
-- [`old`](https://developer.apple.com/documentation/Foundation/NSKeyValueObservingOptions/old)
+- [`new`](https://developer.apple.com/documentation/foundation/nskeyvalueobservingoptions/new)
+- [`old`](https://developer.apple.com/documentation/foundation/nskeyvalueobservingoptions/old)
 
-The inclusion of the [`new`](https://developer.apple.com/documentation/Foundation/NSKeyValueObservingOptions/new) and [`old`](https://developer.apple.com/documentation/Foundation/NSKeyValueObservingOptions/old) options means that any custom KVO handler you provide in the expectation’s [`handler`](xctkvoexpectation/handler-swift.property.md) property receives a change info dictionary that contains the [`newKey`](https://developer.apple.com/documentation/Foundation/NSKeyValueChangeKey/newKey) and [`oldKey`](https://developer.apple.com/documentation/Foundation/NSKeyValueChangeKey/oldKey) keys.
+The inclusion of the [`new`](https://developer.apple.com/documentation/foundation/nskeyvalueobservingoptions/new) and [`old`](https://developer.apple.com/documentation/foundation/nskeyvalueobservingoptions/old) options means that any custom KVO handler you provide in the expectation’s [`handler`](xctkvoexpectation/handler-swift.property.md) property receives a change info dictionary that contains the [`newKey`](https://developer.apple.com/documentation/foundation/nskeyvaluechangekey/newkey) and [`oldKey`](https://developer.apple.com/documentation/foundation/nskeyvaluechangekey/oldkey) keys.
 
 ## Parameters
 

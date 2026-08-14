@@ -12,13 +12,13 @@ Rotten Tomatoes ratings are based on reviews by television and movie critics.
 
 The fresh rating icon comes in two sizes, which have the resource names `tomato-fresh` and `tomato-fresh-m`. Rotten Tomatoes assigns a fresh rating to media items that have at least 60% positive reviews. Place a fresh rating icon using `<img src="resource://tomato-fresh" />`.
 
-![A drawing of a tomato.](https://docs-assets.developer.apple.com/published/aefccf524ea0c8490ffa31eafb94d4dc/rotten-tomatoes-rating-icons-1%402x.png)
+![A drawing of a tomato.](/images/com.apple.TVML/rotten-tomatoes-rating-icons-1@2x.png)
 
 ##### Splat
 
 The splat rating icon comes in two sizes, which have the resource names `tomato-splat` and `tomato-splat-m`. Rotten Tomatoes assigns a splat rating to media items that have less than 60% positive reviews. Place a splat rating icon is `<img src="resource://tomato-splat" />`.
 
-![A drawing of an irregularly shaped green blob.](https://docs-assets.developer.apple.com/published/94095adab2dbf237fdb79d39f2a13157/rotten-tomatoes-rating-icons-2%402x.png)
+![A drawing of an irregularly shaped green blob.](/images/com.apple.TVML/rotten-tomatoes-rating-icons-2@2x.png)
 
 ##### Certified Fresh
 
@@ -32,7 +32,7 @@ The certified fresh rating icon comes in two sizes, which have the resource name
 
 Place a certified fresh rating icon using `<img src="resource://tomato-certified" />`.
 
-![A drawing of a tomato with a green banner below it and a yellow circle behind it.](https://docs-assets.developer.apple.com/published/0d9755fc21f147837c514a9b34e706d7/rotten-tomatoes-rating-icons-3%402x.png)
+![A drawing of a tomato with a green banner below it and a yellow circle behind it.](/images/com.apple.TVML/rotten-tomatoes-rating-icons-3@2x.png)
 
 ## See Also
 

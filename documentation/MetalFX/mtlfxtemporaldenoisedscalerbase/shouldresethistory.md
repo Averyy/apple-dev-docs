@@ -21,7 +21,7 @@ var shouldResetHistory: Bool { get set }
 
 #### Discussion
 
-Set this property to [`true`](https://developer.apple.com/documentation/Swift/true) to invalidate history, for example when there is a scene cut in your game.
+Set this property to [`true`](https://developer.apple.com/documentation/swift/true) to invalidate history, for example when there is a scene cut in your game.
 
 
 ---

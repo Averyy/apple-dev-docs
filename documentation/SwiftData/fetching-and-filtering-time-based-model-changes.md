@@ -12,13 +12,13 @@ SwiftData History enables your app to track changes in its data store over time.
 
 To use SwiftData History in your app, create a history descriptor and use a model context to fetch the corresponding chronological transactions. After the fetch completes, determine which of those fetched transactions relate to the current view or task and process them accordingly. After you finish processing them, delete the transactions from the store to reclaim the disk space.
 
-> **Note**: SwiftData History is available in data stores that adopt the [`HistoryProviding`](HistoryProviding.md) protocol such as [`DefaultStore`](DefaultStore.md) . All examples in this article assume the use of `DefaultStore` and its related types.
+> **Note**: SwiftData History is available in data stores that adopt the [`HistoryProviding`](historyproviding.md) protocol such as [`DefaultStore`](defaultstore.md) . All examples in this article assume the use of `DefaultStore` and its related types.
 
 #### Fetch a Stores Change Transactions
 
 Transactions group together one or more changes that occur on a specific boundary — such as when a model context writes pending changes to the store — and are identifiable by their associated history token. SwiftData stores transactions in the order they occur, and a model context fetches them in that same order. The group of changes that a transaction contains (inserts, updates, deletes) are also ordered chronologically.
 
-Using a model context, you can fetch all transactions from the persistent store, or just a subset by specifying a history token, an author, or both. Tokens are opaque objects that conform to the [`Comparable`](https://developer.apple.com/documentation/Swift/Comparable) and [`Codable`](https://developer.apple.com/documentation/Swift/Codable) protocols, enabling you to store the most recent token on-disk and use it in the next fetch to receive only newer changes. An author is a short string that your app uses to identify the origin of a transaction, which you specify on the model context that writes those changes to the store.
+Using a model context, you can fetch all transactions from the persistent store, or just a subset by specifying a history token, an author, or both. Tokens are opaque objects that conform to the [`Comparable`](https://developer.apple.com/documentation/swift/comparable) and [`Codable`](https://developer.apple.com/documentation/swift/codable) protocols, enabling you to store the most recent token on-disk and use it in the next fetch to receive only newer changes. An author is a short string that your app uses to identify the origin of a transaction, which you specify on the model context that writes those changes to the store.
 
 For example, you may want to fetch all new transactions that originate from your app’s widget.
 

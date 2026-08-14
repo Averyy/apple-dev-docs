@@ -20,7 +20,7 @@ func requestAlwaysAuthorization()
 
 #### Discussion
 
-You must call this or the [`requestWhenInUseAuthorization()`](cllocationmanager/requestwheninuseauthorization().md) method before your app can receive location information. To call this method, you must have both [`NSLocationAlwaysUsageDescription`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSLocationAlwaysUsageDescription) and [`NSLocationWhenInUseUsageDescription`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSLocationWhenInUseUsageDescription) keys in your app’s `Info.plist` file. You may call [`requestAlwaysAuthorization()`](cllocationmanager/requestalwaysauthorization().md) when the current authorization state is either:
+You must call this or the [`requestWhenInUseAuthorization()`](cllocationmanager/requestwheninuseauthorization().md) method before your app can receive location information. To call this method, you must have both [`NSLocationAlwaysUsageDescription`](https://developer.apple.com/documentation/bundleresources/information-property-list/nslocationalwaysusagedescription) and [`NSLocationWhenInUseUsageDescription`](https://developer.apple.com/documentation/bundleresources/information-property-list/nslocationwheninuseusagedescription) keys in your app’s `Info.plist` file. You may call [`requestAlwaysAuthorization()`](cllocationmanager/requestalwaysauthorization().md) when the current authorization state is either:
 
 - Not Determined — [`CLAuthorizationStatus.notDetermined`](clauthorizationstatus/notdetermined.md)
 - When In Use — [`CLAuthorizationStatus.authorizedWhenInUse`](clauthorizationstatus/authorizedwheninuse.md)
@@ -37,7 +37,7 @@ If the user grants When In Use permission after your app calls [`requestWhenInUs
 
 > **Note**:  In iOS 16 and later, apps that actively track a user’s location or that have recently enabled Core Location display an indicator in Control Center. Be mindful of battery use and user privacy by monitoring the device’s location only when necessary and when the user expects it.
 
-Core Location prompts the user to grant permission with the string from [`NSLocationAlwaysUsageDescription`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSLocationAlwaysUsageDescription). The user prompt displays the following options, which determine the authorization your app can receive:
+Core Location prompts the user to grant permission with the string from [`NSLocationAlwaysUsageDescription`](https://developer.apple.com/documentation/bundleresources/information-property-list/nslocationalwaysusagedescription). The user prompt displays the following options, which determine the authorization your app can receive:
 
 | Option | Authorization |
 | --- | --- |
@@ -48,7 +48,7 @@ Core Location prompts the user to grant permission with the string from [`NSLoca
 
 If your app’s current state is [`CLAuthorizationStatus.notDetermined`](clauthorizationstatus/notdetermined.md) and you call [`requestAlwaysAuthorization()`](cllocationmanager/requestalwaysauthorization().md), Core Location uses two prompts before it fully enables Always authorization.
 
-The first prompt displays immediately with the string from [`NSLocationWhenInUseUsageDescription`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSLocationWhenInUseUsageDescription). The user prompt displays the following options, which determine the authorization your app receives:
+The first prompt displays immediately with the string from [`NSLocationWhenInUseUsageDescription`](https://developer.apple.com/documentation/bundleresources/information-property-list/nslocationwheninuseusagedescription). The user prompt displays the following options, which determine the authorization your app receives:
 
 | Option | Authorization |
 | --- | --- |
@@ -56,7 +56,7 @@ The first prompt displays immediately with the string from [`NSLocationWhenInUse
 | Allow Once | Core Location grants your app a Temporary When in Use authorization. The delegate receives [`CLAuthorizationStatus.authorizedWhenInUse`](clauthorizationstatus/authorizedwheninuse.md). This authorization expires when your app is no longer in use, reverting to [`CLAuthorizationStatus.notDetermined`](clauthorizationstatus/notdetermined.md). |
 | Don’t Allow | Core Location marks your app with Denied authorization. The delegate receives [`CLAuthorizationStatus.denied`](clauthorizationstatus/denied.md). |
 
-The second prompt displays when Core Location prepares to deliver an event to your app requiring [`CLAuthorizationStatus.authorizedAlways`](clauthorizationstatus/authorizedalways.md). If the app is in the Provisional Always state, the system displays the second prompt with the string from [`NSLocationAlwaysUsageDescription`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSLocationAlwaysUsageDescription). Core Location will typically display the second prompt when your app isn’t running.
+The second prompt displays when Core Location prepares to deliver an event to your app requiring [`CLAuthorizationStatus.authorizedAlways`](clauthorizationstatus/authorizedalways.md). If the app is in the Provisional Always state, the system displays the second prompt with the string from [`NSLocationAlwaysUsageDescription`](https://developer.apple.com/documentation/bundleresources/information-property-list/nslocationalwaysusagedescription). Core Location will typically display the second prompt when your app isn’t running.
 
 Your app receives permanent Always authorization if the user chooses to grant permission when the second prompt appears while in the Provisional Always state. When the user responds, your app receives either the location event or a call to your delegate with the modified authorization.
 
@@ -72,7 +72,7 @@ If the user responds to the prompt near the time it was delivered and chooses to
 ## Topics
 
 ### Related Documentation
-- [NSLocationAlwaysUsageDescription](../BundleResources/Information-Property-List/NSLocationAlwaysUsageDescription.md)
+- [NSLocationAlwaysUsageDescription](../bundleresources/information-property-list/nslocationalwaysusagedescription.md)
   A message that tells people why the app is requesting access to their location at all times.
 
 ## See Also
@@ -87,9 +87,9 @@ If the user responds to the prompt near the time it was delivered and chooses to
   The current authorization status for the app.
 - [enum CLAuthorizationStatus](clauthorizationstatus.md)
   Constants that indicate the app’s authorization to use location services.
-- [NSLocationDefaultAccuracyReduced](../BundleResources/Information-Property-List/NSLocationDefaultAccuracyReduced.md)
+- [NSLocationDefaultAccuracyReduced](../bundleresources/information-property-list/nslocationdefaultaccuracyreduced.md)
   A Boolean value that indicates whether the app requests reduced location accuracy by default.
-- [NSLocationAlwaysAndWhenInUseUsageDescription](../BundleResources/Information-Property-List/NSLocationAlwaysAndWhenInUseUsageDescription.md)
+- [NSLocationAlwaysAndWhenInUseUsageDescription](../bundleresources/information-property-list/nslocationalwaysandwheninuseusagedescription.md)
   A message that tells people why the app is requesting access to their location information at all times.
 
 

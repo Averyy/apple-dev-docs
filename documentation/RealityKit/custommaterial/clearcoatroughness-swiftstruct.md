@@ -42,7 +42,7 @@ For information, see [`clearcoatRoughness`](custommaterial/clearcoatroughness-sw
 ## Relationships
 
 ### Conforms To
-- [ExpressibleByFloatLiteral](../Swift/ExpressibleByFloatLiteral.md)
+- [ExpressibleByFloatLiteral](../swift/expressiblebyfloatliteral.md)
 
 
 ---

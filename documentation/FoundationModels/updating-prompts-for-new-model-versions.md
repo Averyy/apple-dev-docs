@@ -10,7 +10,7 @@ When a new version of the foundation model your app uses becomes available, test
 
 To adopt the latest model improvements, and make sure your app works for people on all model versions:
 
-- Monitor when Apple releases a new model version by visiting [`Foundation Models updates`](https://developer.apple.com/documentation/Updates/FoundationModels).
+- Monitor when Apple releases a new model version by visiting [`Foundation Models updates`](https://developer.apple.com/documentation/updates/foundationmodels).
 - Record what output your prompt produces for the previous model version.
 - Compare the previous model output against the new model to determine whether you need to update the prompt.
 - If an update is necessary, version your prompts for each model your app supports.
@@ -55,7 +55,7 @@ In addition to localization, you can use string catalogs to manage your prompts 
 
 The string catalog allows you to add a new key, like `support-ticket-summarizer-v1.0` that you use to get the prompt you associate with it. The following image shows a string catalog with two English prompts and one in Spanish:
 
-![A screenshot that shows a string catalog with two default prompts. One prompt](https://docs-assets.developer.apple.com/published/26a5b1cff0347e187cae6c949c6bef17/updating-prompts-for-new-model-versions-string-catalog%402x.png)
+![A screenshot that shows a string catalog with two default prompts. One prompt](/images/com.apple.foundationmodels/updating-prompts-for-new-model-versions-string-catalog@2x.png)
 
 Access the prompt in your app by initializing a `String` with the the unique key in the string catalog you specify:
 
@@ -67,7 +67,7 @@ if #available(iOS 26.4, macOS 26.4, visionOS 26.4, *) {
 }
 ```
 
-For more information about Xcode string catalogs, see [`Localizing and varying text with a string catalog`](https://developer.apple.com/documentation/Xcode/localizing-and-varying-text-with-a-string-catalog).
+For more information about Xcode string catalogs, see [`Localizing and varying text with a string catalog`](https://developer.apple.com/documentation/xcode/localizing-and-varying-text-with-a-string-catalog).
 
 #### Use a Server to Version Your Prompts
 

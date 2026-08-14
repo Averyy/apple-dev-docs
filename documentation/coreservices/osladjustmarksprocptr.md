@@ -42,9 +42,9 @@ After you are finished with your adjust marks callback function, you can dispose
 
 ## Parameters
 
-- `newStart`: The mark count value (provided when the   callback function was called to mark the object) for the first object in the new set of marked objects.
-- `newStop`: The mark count value (provided when the   callback function was called to mark the object) for the last object in the new set of marked objects.
-- `markToken`: A pointer to the mark token for the marked objects. (Token is defined in  . See  .
+- `newStart`: The mark count value (provided when the `MyAdjustMarksCallback` callback function was called to mark the object) for the first object in the new set of marked objects.
+- `newStop`: The mark count value (provided when the `MyAdjustMarksCallback` callback function was called to mark the object) for the last object in the new set of marked objects.
+- `markToken`: A pointer to the mark token for the marked objects. (Token is defined in [`AEDisposeToken(_:)`](1446783-aedisposetoken.md). See [`AEDesc`](aedesc.md).
 
 ## See Also
 

@@ -7,7 +7,6 @@ Suggestions provided by business.
 
 **Availability**:
 - iOS 26.0+
-- iPadOS 26.0+
 
 ## Declaration
 

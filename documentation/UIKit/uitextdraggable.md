@@ -36,7 +36,7 @@ protocol UITextDraggable : UITextInput
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 - [UIKeyInput](uikeyinput.md)
 - [UITextInput](uitextinput.md)
 - [UITextInputTraits](uitextinputtraits.md)

@@ -18,6 +18,9 @@ func AXUIElementGetPid(_ element: AXUIElement, _ pid: UnsafeMutablePointer<pid_t
 
 If unsuccessful, `AXUIElementGetPid` may return one of the following error codes, among others:
 
+- **`kAXErrorIllegalArgument`**: One or more of the arguments is an illegal value.
+- **`kAXErrorInvalidUIElement`**: The AXUIElementRef is invalid.
+
 ## Parameters
 
 - `element`: The AXUIElementRef representing an accessibility object.

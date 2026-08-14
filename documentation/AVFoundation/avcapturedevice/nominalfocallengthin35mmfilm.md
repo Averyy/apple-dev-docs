@@ -18,7 +18,7 @@ var nominalFocalLengthIn35mmFilm: Float { get }
 
 #### Discussion
 
-This value represents a nominal measurement of the device’s field of view, expressed as a 35mm equivalent focal length, measured diagonally. The value is similar to the `FocalLengthIn35mmFormat` EXIF entry (see [`kCGImagePropertyExifFocalLenIn35mmFilm`](https://developer.apple.com/documentation/ImageIO/kCGImagePropertyExifFocalLenIn35mmFilm)) for a photo captured using the device’s format where [`isHighestPhotoQualitySupported`](avcapturedevice/format/ishighestphotoqualitysupported.md) is `true` or when you’ve configured the session with the [`photo`](avcapturesession/preset/photo.md) preset.
+This value represents a nominal measurement of the device’s field of view, expressed as a 35mm equivalent focal length, measured diagonally. The value is similar to the `FocalLengthIn35mmFormat` EXIF entry (see [`kCGImagePropertyExifFocalLenIn35mmFilm`](https://developer.apple.com/documentation/imageio/kcgimagepropertyexiffocallenin35mmfilm)) for a photo captured using the device’s format where [`isHighestPhotoQualitySupported`](avcapturedevice/format/ishighestphotoqualitysupported.md) is `true` or when you’ve configured the session with the [`photo`](avcapturesession/preset/photo.md) preset.
 
 This property value is `0` for virtual devices and external cameras.
 

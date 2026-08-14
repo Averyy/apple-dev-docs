@@ -32,7 +32,7 @@ HealthKit stores a temporary [`HKDeletedObject`](hkdeletedobject.md) entry, lett
 ## Parameters
 
 - `object`: An object that this app has previously saved to the HealthKit store.
-- `completion`: A block that this method calls as soon as the delete operation is complete. This block is passed the following parameters: - **success**: A Boolean value. This parameter contains [`true`](https://developer.apple.com/documentation/Swift/true) if the object was successfully deleted; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
+- `completion`: A block that this method calls as soon as the delete operation is complete. This block is passed the following parameters: - **success**: A Boolean value. This parameter contains [`true`](https://developer.apple.com/documentation/swift/true) if the object was successfully deleted; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
 - **error**: An error object. If an error occurred, this object contains information about the error; otherwise, it is set to `nil`.
 
 ## See Also

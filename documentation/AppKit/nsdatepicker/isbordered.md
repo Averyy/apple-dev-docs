@@ -16,7 +16,7 @@ var isBordered: Bool { get set }
 
 #### Discussion
 
-This property contains [`true`](https://developer.apple.com/documentation/Swift/true) if the date picker has a plain boarder; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
+This property contains [`true`](https://developer.apple.com/documentation/swift/true) if the date picker has a plain boarder; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
 
 ## See Also
 

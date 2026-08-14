@@ -5,7 +5,7 @@
 ## Topics
 
 ### Data Types
-- [typealias AuthorizationRef](../Security/AuthorizationRef.md)
+- [typealias AuthorizationRef](../security/authorizationref.md)
   A pointer to an opaque authorization reference structure.
 
 ## See Also

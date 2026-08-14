@@ -22,7 +22,7 @@ When inserting or deleting multiple sections and items, you can animate all of y
 
 ## Parameters
 
-- `indexPaths`: A set of [`NSIndexPath`](https://developer.apple.com/documentation/Foundation/NSIndexPath) objects, each of which includes a section and item index corresponding to the insertion point of a single item. Specifying `nil` for this parameter raises an exception.
+- `indexPaths`: A set of [`NSIndexPath`](https://developer.apple.com/documentation/foundation/nsindexpath) objects, each of which includes a section and item index corresponding to the insertion point of a single item. Specifying `nil` for this parameter raises an exception.
 
 ## See Also
 

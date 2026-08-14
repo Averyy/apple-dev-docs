@@ -8,7 +8,7 @@ Create smooth visual updates in response to state changes.
 
 You tell SwiftUI how to draw your app’s user interface for different states, and then rely on SwiftUI to make interface updates when the state changes.
 
-![None](https://docs-assets.developer.apple.com/published/634da5b7eb74a20fee434a105cebd3c7/animations-hero%402x.png)
+![None](/images/com.apple.SwiftUI/animations-hero@2x.png)
 
 To avoid abrupt visual transitions when the state changes, add animation in one of the following ways:
 
@@ -20,7 +20,7 @@ SwiftUI animates the effects that many built-in view modifiers produce, like tho
 
 When an animated state change results in adding or removing a view to or from the view hierarchy, you can tell SwiftUI how to transition the view into or out of place using built-in transitions that [`AnyTransition`](anytransition.md) defines, like [`slide`](anytransition/slide.md) or [`scale`](anytransition/scale.md). You can also create custom transitions.
 
-For design guidance, see [`Motion`](https://developer.apple.com/design/Human-Interface-Guidelines/motion) in the Human Interface Guidelines.
+For design guidance, see [`Motion`](https://developer.apple.com/design/human-interface-guidelines/motion) in the Human Interface Guidelines.
 
 ## Topics
 
@@ -100,7 +100,7 @@ For design guidance, see [`Motion`](https://developer.apple.com/design/Human-Int
 - [struct EmptyAnimatableData](emptyanimatabledata.md)
   An empty type for animatable data.
 ### Updating a view on a schedule
-- [Updating watchOS apps with timelines](../watchOS-Apps/updating-watchos-apps-with-timelines.md)
+- [Updating watchOS apps with timelines](../watchos-apps/updating-watchos-apps-with-timelines.md)
   Seamlessly schedule updates to your user interface, even while it’s inactive.
 - [struct TimelineView](timelineview.md)
   A view that updates according to a schedule that you provide.

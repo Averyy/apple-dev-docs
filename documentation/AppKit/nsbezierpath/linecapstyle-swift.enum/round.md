@@ -18,7 +18,7 @@ case round
 
 Here is an example of the appearance of this style:
 
-![Diagram that shows the round line cap style.](https://docs-assets.developer.apple.com/published/a4375de4f678a4c65ee0780f7a1946ed/media-3670934%402x.png)
+![Diagram that shows the round line cap style.](/images/com.apple.appkit/media-3670934@2x.png)
 
 ## See Also
 

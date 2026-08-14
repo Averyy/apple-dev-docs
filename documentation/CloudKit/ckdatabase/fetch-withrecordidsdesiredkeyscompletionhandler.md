@@ -25,7 +25,7 @@ func fetch(withRecordIDs recordIDs: [CKRecord.ID], desiredKeys: [CKRecord.FieldK
 
 The completion handler takes the following parameters:
 
-- A [`Result`](https://developer.apple.com/documentation/Swift/Result) that contains either a dictionary of fetched records, or an error if the request fails, such as when the network is unavailable or the device doesn’t have an active iCloud account. When present, the dictionary uses the identifiers you specify in `recordIDs` as its keys. The value of each key is a [`Result`](https://developer.apple.com/documentation/Swift/Result) that contains either the corresponding fetched record, or an error that describes why CloudKit can’t provide that record.
+- A [`Result`](https://developer.apple.com/documentation/swift/result) that contains either a dictionary of fetched records, or an error if the request fails, such as when the network is unavailable or the device doesn’t have an active iCloud account. When present, the dictionary uses the identifiers you specify in `recordIDs` as its keys. The value of each key is a [`Result`](https://developer.apple.com/documentation/swift/result) that contains either the corresponding fetched record, or an error that describes why CloudKit can’t provide that record.
 
 If you’re fetching records of different types, make sure that `desiredKeys` is the union of all the fields you require across each distinct record type.
 

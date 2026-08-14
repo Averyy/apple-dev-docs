@@ -8,9 +8,9 @@ Track a generic spatial accessory by helping ARKit find the device’s reference
 
 To track a generic spatial accessory, your app needs a `.referenceaccessory` file that describes the device’s physical characteristics. ARKit uses the metadata in this file to recognize and track the device in physical space.
 
-Manufacturers create `.referenceaccessory` files by training an accessory tracker model in Create ML. For more information on creating a reference accessory file, see [`Preparing spatial accessories for tracking in your visionOS app`](https://developer.apple.com/documentation/ARKit/preparing-spatial-accessories-for-tracking-in-your-visionos-app).
+Manufacturers create `.referenceaccessory` files by training an accessory tracker model in Create ML. For more information on creating a reference accessory file, see [`Preparing spatial accessories for tracking in your visionOS app`](https://developer.apple.com/documentation/arkit/preparing-spatial-accessories-for-tracking-in-your-visionos-app).
 
-When your app initializes an [`Accessory`](https://developer.apple.com/documentation/ARKit/Accessory) from a connected [`GCSpatialAccessory`](https://developer.apple.com/documentation/GameController/GCSpatialAccessory), ARKit locates the corresponding `.referenceaccessory` file using a Uniform Type Identifier (UTI) registered with the system. If ARKit can’t find a matching file, initialization fails. For more information on Uniform Type Identifiers, see [`Defining file and data types for your app`](https://developer.apple.com/documentation/UniformTypeIdentifiers/defining-file-and-data-types-for-your-app).
+When your app initializes an [`Accessory`](https://developer.apple.com/documentation/arkit/accessory) from a connected [`GCSpatialAccessory`](https://developer.apple.com/documentation/gamecontroller/gcspatialaccessory), ARKit locates the corresponding `.referenceaccessory` file using a Uniform Type Identifier (UTI) registered with the system. If ARKit can’t find a matching file, initialization fails. For more information on Uniform Type Identifiers, see [`Defining file and data types for your app`](https://developer.apple.com/documentation/uniformtypeidentifiers/defining-file-and-data-types-for-your-app).
 
 This article covers the two ways to make a `.referenceaccessory` file available to your app: bundle the file with your app, or rely on ARKit to read it from the accessory manufacturer’s app when that app is also installed on the device.
 
@@ -85,7 +85,7 @@ If you prefer editing `Info.plist` file’s source, use the exported declaration
 
 #### Rely on the Manufacturers App
 
-If the manufacturer doesn’t make their `.referenceaccessory` file available for bundling, your app can instead rely on ARKit to find the file in the manufacturer’s app when that app is installed on the device. Your app doesn’t need any configuration changes for this path; just ensure your app handles initialization failures gracefully. When [`init(device:)`](https://developer.apple.com/documentation/ARKit/Accessory/init(device:)) throws, display an error with a button that helps the person install the manufacturer’s app.
+If the manufacturer doesn’t make their `.referenceaccessory` file available for bundling, your app can instead rely on ARKit to find the file in the manufacturer’s app when that app is installed on the device. Your app doesn’t need any configuration changes for this path; just ensure your app handles initialization failures gracefully. When [`init(device:)`](https://developer.apple.com/documentation/arkit/accessory/init(device:)) throws, display an error with a button that helps the person install the manufacturer’s app.
 
 ```swift
 do {
@@ -97,11 +97,11 @@ do {
 }
 ```
 
-For more information on prompting people to install another app, see [`SKOverlay`](https://developer.apple.com/documentation/StoreKit/SKOverlay) and [`appStoreOverlay(isPresented:configuration:)`](https://developer.apple.com/documentation/SwiftUI/View/appStoreOverlay(isPresented:configuration:)).
+For more information on prompting people to install another app, see [`SKOverlay`](https://developer.apple.com/documentation/storekit/skoverlay) and [`appStoreOverlay(isPresented:configuration:)`](https://developer.apple.com/documentation/swiftui/view/appstoreoverlay(ispresented:configuration:)).
 
 ## See Also
 
-- [Preparing spatial accessories for tracking in your visionOS app](../ARKit/preparing-spatial-accessories-for-tracking-in-your-visionos-app.md)
+- [Preparing spatial accessories for tracking in your visionOS app](../arkit/preparing-spatial-accessories-for-tracking-in-your-visionos-app.md)
   Prepare a spatial accessory for tracking by training a reference accessory file and integrating it into your visionOS app.
 
 

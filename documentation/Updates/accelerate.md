@@ -6,15 +6,15 @@ Learn about important changes to Accelerate.
 
 #### Overview
 
-Browse notable changes in [`Accelerate`](https://developer.apple.com/documentation/Accelerate).
+Browse notable changes in [`Accelerate`](https://developer.apple.com/documentation/accelerate).
 
 #### June 2024
 
 - Check out the updated BLAS and LAPACK libraries under the Accelerate framework, now in line with LAPACK 3.11.0.
 - Discover BNNS Graph API added to the Basic Neural Network Subroutines library that consumes, optimizes, and executes an entire ML model. BNNS Graph is suited to real-time and latency-sensitive ML use cases.
 - Add new half-precision vectors and matrices to the simd header.
-- Define spherical coordinates in radial, inclination, azimuthal order with the [`SphericalCoordinates3D`](https://developer.apple.com/documentation/Spatial/SphericalCoordinates3D) structure in Spatial.
-- Contain a position, rotation, and scale with the [`ScaledPose3D`](https://developer.apple.com/documentation/Spatial/ScaledPose3D) structure in Spatial.
+- Define spherical coordinates in radial, inclination, azimuthal order with the [`SphericalCoordinates3D`](https://developer.apple.com/documentation/spatial/sphericalcoordinates3d) structure in Spatial.
+- Contain a position, rotation, and scale with the [`ScaledPose3D`](https://developer.apple.com/documentation/spatial/scaledpose3d) structure in Spatial.
 
 ## See Also
 

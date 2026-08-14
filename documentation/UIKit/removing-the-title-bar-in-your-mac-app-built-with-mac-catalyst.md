@@ -12,7 +12,7 @@ Some Mac apps such as Messages and Contacts have no title bar in their main wind
 
 The following image illustrates these styles in two windows. The first window displays a title bar, while the second has none.
 
-![Screenshot of two windows, one stacked above the other, with a dark background in the content area of each window.](https://docs-assets.developer.apple.com/published/125be45fc6704d3881a3e241a6706782/media-3507886%402x.png)
+![Screenshot of two windows, one stacked above the other, with a dark background in the content area of each window.](/images/com.apple.uikit/media-3507886@2x.png)
 
 ##### Remove the Title Bar
 
@@ -43,7 +43,7 @@ func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options conn
   Present a switch control as a Mac-style checkbox when your app runs in the Mac user interface idiom.
 - [Toolbar](toolbar.md)
   Provide a space for controls under a window’s title bar and above your custom content.
-- [Touch Bar](../AppKit/touch-bar.md)
+- [Touch Bar](../appkit/touch-bar.md)
   Display interactive content and controls in the Touch Bar.
 
 

@@ -22,7 +22,7 @@ let kCGImagePropertyPixelFormat: CFString
 
 #### Discussion
 
-The value of this property is a [`CFNumber`](https://developer.apple.com/documentation/CoreFoundation/CFNumber). For information about how to interpret this value, see the `PixelFormat` tag in the EXIF specification.
+The value of this property is a [`CFNumber`](https://developer.apple.com/documentation/corefoundation/cfnumber). For information about how to interpret this value, see the `PixelFormat` tag in the EXIF specification.
 
 ## See Also
 

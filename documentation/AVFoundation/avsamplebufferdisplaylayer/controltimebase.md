@@ -21,11 +21,11 @@ var controlTimebase: CMTimebase? { get set }
 
 #### Discussion
 
-By default, this property is `nil`, which indicates the layer interprets timestamps according the host time clock (`mach_absolute_time` with the appropriate timescale conversion; this is the same as Core Animation’s [`CACurrentMediaTime()`](https://developer.apple.com/documentation/QuartzCore/CACurrentMediaTime())). Without a control timebase, it isn’t possible to change when the layer displays frames after enqueuing them.
+By default, this property is `nil`, which indicates the layer interprets timestamps according the host time clock (`mach_absolute_time` with the appropriate timescale conversion; this is the same as Core Animation’s [`CACurrentMediaTime()`](https://developer.apple.com/documentation/quartzcore/cacurrentmediatime())). Without a control timebase, it isn’t possible to change when the layer displays frames after enqueuing them.
 
 Setting a valid time base enables you to control the timing of frame display by setting the rate and time of the control timebase.
 
-If you’re synchronizing video to audio, you should use a timebase whose host clock is a [`CMClock`](https://developer.apple.com/documentation/CoreMedia/CMClock) for the appropriate audio device to prevent drift. See [`CMAudioClock`](https://developer.apple.com/documentation/CoreMedia/cmaudioclock-api) for more information.
+If you’re synchronizing video to audio, you should use a timebase whose host clock is a [`CMClock`](https://developer.apple.com/documentation/coremedia/cmclock) for the appropriate audio device to prevent drift. See [`CMAudioClock`](https://developer.apple.com/documentation/coremedia/cmaudioclock-api) for more information.
 
 ## See Also
 

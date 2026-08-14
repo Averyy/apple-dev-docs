@@ -21,7 +21,7 @@ func fetchThumbnails(for itemIdentifiers: [NSFileProviderItemIdentifier], reques
 
 #### Return Value
 
-An object that reports the progress of this request. If the thumbnails are no longer needed, the system can cancel this request by calling the progress object’s [`cancel()`](https://developer.apple.com/documentation/Foundation/Progress/cancel()) method.
+An object that reports the progress of this request. If the thumbnails are no longer needed, the system can cancel this request by calling the progress object’s [`cancel()`](https://developer.apple.com/documentation/foundation/progress/cancel()) method.
 
 #### Discussion
 
@@ -93,7 +93,7 @@ func fetchThumbnails(for itemIdentifiers: [NSFileProviderItemIdentifier], reques
 }
 ```
 
-For the best performance, use PNG images for text and vector graphics, JPEG for nontransparent photographs, and JPEG2000 for photographs with transparent backgrounds; however, you can use any image formats supported by [`NSImage`](https://developer.apple.com/documentation/AppKit/NSImage) and [`UIImage`](https://developer.apple.com/documentation/UIKit/UIImage). You can also select a different image type for different thumbnails.
+For the best performance, use PNG images for text and vector graphics, JPEG for nontransparent photographs, and JPEG2000 for photographs with transparent backgrounds; however, you can use any image formats supported by [`NSImage`](https://developer.apple.com/documentation/appkit/nsimage) and [`UIImage`](https://developer.apple.com/documentation/uikit/uiimage). You can also select a different image type for different thumbnails.
 
 If a global error occurs, you don’t have to call `perThumbnailCompletionHandler` on each item. Instead, call the `completionHandler` block, and pass in the global error. The system applies this error to all outstanding items.
 
@@ -104,7 +104,7 @@ If a given item doesn’t have a thumbnail, call the `perThumbnailCompletionHand
 - `itemIdentifiers`: The identifiers of the specified items.
 - `size`: The size for the thumbnail image.
 - `perThumbnailCompletionHandler`: A block that you call once for each item in the `itemIdentifiers` array. Pass the following parameters: - **`identifier`**: The identifier of the item.
-- **`imageData`**: A data object containing the thumbnail, or `nil` if an error occurred. This data object must be in an image format supported by [`Image I/O`](https://developer.apple.com/documentation/ImageIO).
+- **`imageData`**: A data object containing the thumbnail, or `nil` if an error occurred. This data object must be in an image format supported by [`Image I/O`](https://developer.apple.com/documentation/imageio).
 - **`error`**: If an error occurs, this object contains information about the error; otherwise, it’s `nil`.
 - `completionHandler`: A block that you call after returning a thumbnail for each item. Pass the following parameters: - **`error`**: If an error occurs, this object contains information about the error; otherwise, it’s `nil`.
 

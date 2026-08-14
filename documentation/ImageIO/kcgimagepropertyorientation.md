@@ -22,7 +22,7 @@ let kCGImagePropertyOrientation: CFString
 
 #### Discussion
 
-The value of this property is a [`CFNumber`](https://developer.apple.com/documentation/CoreFoundation/CFNumber). The value encodes the intended display orientation for the image according to the TIFF and EXIF specifications. See the [`CGImagePropertyOrientation`](cgimagepropertyorientation.md) type for possible values and their meanings.
+The value of this property is a [`CFNumber`](https://developer.apple.com/documentation/corefoundation/cfnumber). The value encodes the intended display orientation for the image according to the TIFF and EXIF specifications. See the [`CGImagePropertyOrientation`](cgimagepropertyorientation.md) type for possible values and their meanings.
 
 ## See Also
 

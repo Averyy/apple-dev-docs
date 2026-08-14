@@ -19,7 +19,7 @@ func sendCommand(apdu: NFCISO7816APDU) async throws -> (Data, UInt8, UInt8)
 
 #### Discussion
 
-When you send a `SELECT` command with a [`p1Parameter`](nfciso7816apdu/p1parameter.md) value of `0x04`, your app must support one of the applications listed in the [`ISO7816 application identifiers for NFC Tag Reader Session`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.nfc.readersession.iso7816.select-identifiers) property list key. Otherwise, the `completionHandler` receives an [`NFCReaderError.Code.readerErrorSecurityViolation`](nfcreadererror-swift.struct/code/readererrorsecurityviolation.md) error.
+When you send a `SELECT` command with a [`p1Parameter`](nfciso7816apdu/p1parameter.md) value of `0x04`, your app must support one of the applications listed in the [`ISO7816 application identifiers for NFC Tag Reader Session`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.nfc.readersession.iso7816.select-identifiers) property list key. Otherwise, the `completionHandler` receives an [`NFCReaderError.Code.readerErrorSecurityViolation`](nfcreadererror-swift.struct/code/readererrorsecurityviolation.md) error.
 
 The session calls `completionHandler` on the dispatch queue that you provided when creating the [`NFCTagReaderSession`](nfctagreadersession.md) object.
 
@@ -29,7 +29,7 @@ The session calls `completionHandler` on the dispatch queue that you provided wh
 - `completionHandler`: A handler that the reader session invokes after the operation completes. The handler has the following parameters: - **responseData**: The response data, which may be empty even if the operation completes successfully.
 - **sw1**: The SW1 command-processing status byte. This value is always valid.
 - **sw2**: The SW2 command-processing status byte. This value is always valid.
-- **error**: `nil` when the operation completes successfully; otherwise, an [`NSError`](https://developer.apple.com/documentation/Foundation/NSError) object when there’s a communication issue with the tag.
+- **error**: `nil` when the operation completes successfully; otherwise, an [`NSError`](https://developer.apple.com/documentation/foundation/nserror) object when there’s a communication issue with the tag.
 
 ## See Also
 

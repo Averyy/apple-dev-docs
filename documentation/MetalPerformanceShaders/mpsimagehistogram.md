@@ -23,7 +23,7 @@ class MPSImageHistogram
 
 Typically, you use an [`MPSImageHistogram`](mpsimagehistogram.md) filter to calculate an image’s histogram that is passed to a subsequent filter such as [`MPSImageHistogramEqualization`](mpsimagehistogramequalization.md) or [`MPSImageHistogramSpecification`](mpsimagehistogramspecification.md).
 
-The following listing shows how you can create a histogram filter to calculate the histogram of the [`MTLTexture`](https://developer.apple.com/documentation/Metal/MTLTexture), `sourceTexture`. The filter is passed an instance of [`MPSImageHistogramInfo`](mpsimagehistograminfo.md) that specifies information to compute the histogram for the channels of an image. After encoding, `histogramInfoBuffer` contains the histogram information and can be used for further operations such as equalization or specification.
+The following listing shows how you can create a histogram filter to calculate the histogram of the [`MTLTexture`](https://developer.apple.com/documentation/metal/mtltexture), `sourceTexture`. The filter is passed an instance of [`MPSImageHistogramInfo`](mpsimagehistograminfo.md) that specifies information to compute the histogram for the channels of an image. After encoding, `histogramInfoBuffer` contains the histogram information and can be used for further operations such as equalization or specification.
 
 Listing 1. Creating a histogram filter
 
@@ -73,15 +73,15 @@ calculation.encode(to: commandBuffer,
 ### Inherits From
 - [MPSKernel](mpskernel.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCoding](../Foundation/NSCoding.md)
-- [NSCopying](../Foundation/NSCopying.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [NSSecureCoding](../Foundation/NSSecureCoding.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCoding](../foundation/nscoding.md)
+- [NSCopying](../foundation/nscopying.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSSecureCoding](../foundation/nssecurecoding.md)
 
 ## See Also
 

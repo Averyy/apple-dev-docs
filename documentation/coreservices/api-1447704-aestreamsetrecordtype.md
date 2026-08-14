@@ -24,8 +24,8 @@ Use this routine to change the type of a record after it has been opened. You mu
 
 ## Parameters
 
-- `ref`: An   containing the stream data.
-- `newType`: The new type code for the   being added to the stream. See  .
+- `ref`: An [`AEStreamRef`](aestreamref.md) containing the stream data.
+- `newType`: The new type code for the `AERecord` being added to the stream. See [`DescType`](desctype.md).
 
 ## See Also
 

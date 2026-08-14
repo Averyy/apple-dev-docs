@@ -21,7 +21,7 @@ let kCIInputIntensityKey: String
 
 #### Discussion
 
-A key for a scalar value ([`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber)) that specifies an intensity value.
+A key for a scalar value ([`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber)) that specifies an intensity value.
 
 ## See Also
 

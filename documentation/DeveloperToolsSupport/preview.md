@@ -23,7 +23,7 @@ struct Preview
 
 #### Overview
 
-Frameworks like SwiftUI and WidgetKit define initializers for this type, along with framework-specific preview macros that rely on this type. You don’t use this type directly. Instead, use one of the preview macros, like [`Preview(_:body:)`](https://developer.apple.com/documentation/SwiftUI/Preview(_:body:)).
+Frameworks like SwiftUI and WidgetKit define initializers for this type, along with framework-specific preview macros that rely on this type. You don’t use this type directly. Instead, use one of the preview macros, like [`Preview(_:body:)`](https://developer.apple.com/documentation/swiftui/preview(_:body:)).
 
 ## Topics
 
@@ -76,8 +76,8 @@ Frameworks like SwiftUI and WidgetKit define initializers for this type, along w
 ## Relationships
 
 ### Conforms To
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

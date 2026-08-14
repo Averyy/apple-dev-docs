@@ -44,7 +44,7 @@ For a document-scoped bookmark, any sandboxed app that has access to the bookmar
 - `relativeToURL`: The base URL that the bookmark data is relative to. Can be `NULL`. If you are resolving a security-scoped bookmark to obtain a security-scoped URL, use this parameter as follows: - To resolve an app-scoped bookmark, use a value of `nil`.
 - To resolve a document-scoped bookmark, use the *absolute* path (despite this parameter’s name) to the document from which you retrieved the bookmark.
 - `resourcePropertiesToInclude`: An array of resource properties to include when creating the URL. Can be `NULL`.
-- `isStale`: If [`true`](https://developer.apple.com/documentation/Swift/true), the bookmark data is stale.
+- `isStale`: If [`true`](https://developer.apple.com/documentation/swift/true), the bookmark data is stale.
 - `error`: The error that occurred in the case that the URL cannot be created.
 
 ## See Also

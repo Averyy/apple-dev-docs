@@ -21,7 +21,7 @@ let kVTDecompressionPropertyKey_SupportedPixelFormatsOrderedByPerformance: CFStr
 
 #### Discussion
 
-This is an optional property for video decoders to implement. This property value is an array containing [`CFNumber`](https://developer.apple.com/documentation/CoreFoundation/CFNumber) objects holding [`CMPixelFormatType`](https://developer.apple.com/documentation/CoreMedia/CMPixelFormatType) values,	ordered by speed from fastest to slowest.
+This is an optional property for video decoders to implement. This property value is an array containing [`CFNumber`](https://developer.apple.com/documentation/corefoundation/cfnumber) objects holding [`CMPixelFormatType`](https://developer.apple.com/documentation/coremedia/cmpixelformattype) values,	ordered by speed from fastest to slowest.
 
 ## See Also
 

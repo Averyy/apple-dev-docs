@@ -20,7 +20,7 @@ An app may use an [`NSScreen`](nsscreen.md) object to retrieve information about
 
 Create the application object before you use the methods in this class, so that the application object can make the necessary connection to the window system. You can make sure the application object exists by invoking the [`shared`](nsapplication/shared.md) method of [`NSApplication`](nsapplication.md). If you created your app with Xcode, the application object is automatically created for you during initialization.
 
-> **Note**:  The [`NSScreen`](nsscreen.md) class is only for getting information about the available displays. If you need additional information or want to change the attributes relating to a display, you must use Quartz Services. For more information, see [`Quartz Display Services`](https://developer.apple.com/documentation/CoreGraphics/quartz-display-services).
+> **Note**:  The [`NSScreen`](nsscreen.md) class is only for getting information about the available displays. If you need additional information or want to change the attributes relating to a display, you must use Quartz Services. For more information, see [`Quartz Display Services`](https://developer.apple.com/documentation/coregraphics/quartz-display-services).
 
 ## Topics
 
@@ -105,14 +105,14 @@ Create the application object before you use the methods in this class, so that 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 
 ---

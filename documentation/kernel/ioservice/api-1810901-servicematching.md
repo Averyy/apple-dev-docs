@@ -24,7 +24,7 @@ A very common matching criteria for IOService object is based on its class. `ser
 ## Parameters
 
 - `className`: The class name, as an OSString (which includes OSSymbol). Class matching is successful on IOService objects of this class or any subclass.
-- `table`: If zero,   creates a matching dictionary and returns a reference to it, otherwise the matching properties are added to the specified dictionary.
+- `table`: If zero, `serviceMatching` creates a matching dictionary and returns a reference to it, otherwise the matching properties are added to the specified dictionary.
 
 ## See Also
 

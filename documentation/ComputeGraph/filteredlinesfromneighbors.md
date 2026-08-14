@@ -15,7 +15,7 @@ void filteredLinesFromNeighbors(pointer<uniform_grid_t> grid, strided_buffer<flo
 
 #### Discussion
 
-> **Note**: ![Graph](https://docs-assets.developer.apple.com/published/d44ff2af760517562884a2f57d9891e4/filteredLinesFromNeighbors.svg)
+> **Note**: ![Graph](/images/com.apple.computegraph/filteredLinesFromNeighbors.svg)
 
 
 ---

@@ -21,7 +21,7 @@ var keychainReference: Data { get }
 
 #### Discussion
 
-The keychain item needs to have the class [`kSecClassGenericPassword`](https://developer.apple.com/documentation/Security/kSecClassGenericPassword).
+The keychain item needs to have the class [`kSecClassGenericPassword`](https://developer.apple.com/documentation/security/ksecclassgenericpassword).
 
 ## See Also
 

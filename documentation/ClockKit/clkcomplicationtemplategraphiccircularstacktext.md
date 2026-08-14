@@ -18,7 +18,7 @@ class CLKComplicationTemplateGraphicCircularStackText
 
 This template belongs to the [`CLKComplicationFamily.graphicCircular`](clkcomplicationfamily/graphiccircular.md) family.
 
-![Diagram showing the layout of a circular template containing two rows of text.](https://docs-assets.developer.apple.com/published/4280783e5c638fbc913ba4bfb5d59f39/media-3262158%402x.png)
+![Diagram showing the layout of a circular template containing two rows of text.](/images/com.apple.clockkit/media-3262158@2x.png)
 
 ## Topics
 
@@ -36,13 +36,13 @@ This template belongs to the [`CLKComplicationFamily.graphicCircular`](clkcompli
 ### Inherits From
 - [CLKComplicationTemplateGraphicCircular](clkcomplicationtemplategraphiccircular.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCopying](../Foundation/NSCopying.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCopying](../foundation/nscopying.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

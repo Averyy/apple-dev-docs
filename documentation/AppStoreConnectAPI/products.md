@@ -6,7 +6,7 @@ Read information about the products Xcode Cloud detected or delete a product and
 
 #### Overview
 
-The `ciProducts` resource represents the products [`Xcode Cloud`](https://developer.apple.com/documentation/Xcode/Xcode-Cloud) detected when you started using Xcode Cloud. The resource includes information associated with the product like your app, workflows, builds, and Git repositories.
+The `ciProducts` resource represents the products [`Xcode Cloud`](https://developer.apple.com/documentation/xcode/xcode-cloud) detected when you started using Xcode Cloud. The resource includes information associated with the product like your app, workflows, builds, and Git repositories.
 
 In addition to viewing your product and its associated information, you can use the `ciProducts` resource to delete a product and its associated data.
 

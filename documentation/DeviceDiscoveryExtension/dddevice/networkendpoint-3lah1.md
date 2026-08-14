@@ -20,7 +20,7 @@ var networkEndpoint: NWEndpoint? { get set }
 
 #### Discussion
 
-For the discovery of local-network devices, the extension sets the value of this property to the [`endpoint`](https://developer.apple.com/documentation/Network/NWBrowser/Result/endpoint) of an [`NWBrowser.Result`](https://developer.apple.com/documentation/Network/NWBrowser/Result). When a search over the local network succeeds, the browser passes the newly discovered device into your extension’s [`browseResultsChangedHandler`](https://developer.apple.com/documentation/Network/NWBrowser/browseResultsChangedHandler).
+For the discovery of local-network devices, the extension sets the value of this property to the [`endpoint`](https://developer.apple.com/documentation/network/nwbrowser/result/endpoint) of an [`NWBrowser.Result`](https://developer.apple.com/documentation/network/nwbrowser/result). When a search over the local network succeeds, the browser passes the newly discovered device into your extension’s [`browseResultsChangedHandler`](https://developer.apple.com/documentation/network/nwbrowser/browseresultschangedhandler).
 
 ## See Also
 

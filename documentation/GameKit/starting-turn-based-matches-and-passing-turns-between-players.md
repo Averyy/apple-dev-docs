@@ -42,7 +42,7 @@ To get the maximum number of players Game Center supports for turn-based games, 
 
 Let players create a new match and select opponents by using the provided GameKit turn-based interface. Similar to how the process works in the real-time game interface, the player creates a match by tapping the plus button (+) in the upper-right corner. In the next few screens, the player invites players and, optionally, fills empty slots using automatch.
 
-![An iPhone screen showing the turn-based matchmaker view controller interface displaying the participants, and the Invite Friends and the Start Game buttons. ](https://docs-assets.developer.apple.com/published/c6508ddcdd406e0b1fd1c6c87d552e66/media-3894600%402x.png)
+![An iPhone screen showing the turn-based matchmaker view controller interface displaying the participants, and the Invite Friends and the Start Game buttons. ](/images/com.apple.gamekit/media-3894600@2x.png)
 
 In your code, use the following steps to present the turn-based matchmaker interface:
 
@@ -53,7 +53,7 @@ let viewController = GKTurnBasedMatchmakerViewController(matchRequest: request)
 viewController.turnBasedMatchmakerDelegate = self
 ```
 
-1. Configure the view controller before presenting it. Optionally, set the view controller’s [`matchmakingMode`](gkturnbasedmatchmakerviewcontroller/matchmakingmode.md) property to limit the use of automatch. You can also set [`showExistingMatches`](gkturnbasedmatchmakerviewcontroller/showexistingmatches.md) to [`false`](https://developer.apple.com/documentation/Swift/false) to remove ongoing matches that appear under Your Turn and Their Turn. Otherwise, the player can select an existing match rather than create a new one. For more information about handling existing matches, see the [`Open an existing turn-based match`](starting-turn-based-matches-and-passing-turns-between-players#Open-an-existing-turn-based-match.md) section below.
+1. Configure the view controller before presenting it. Optionally, set the view controller’s [`matchmakingMode`](gkturnbasedmatchmakerviewcontroller/matchmakingmode.md) property to limit the use of automatch. You can also set [`showExistingMatches`](gkturnbasedmatchmakerviewcontroller/showexistingmatches.md) to [`false`](https://developer.apple.com/documentation/swift/false) to remove ongoing matches that appear under Your Turn and Their Turn. Otherwise, the player can select an existing match rather than create a new one. For more information about handling existing matches, see the [`Open an existing turn-based match`](starting-turn-based-matches-and-passing-turns-between-players#Open-an-existing-turn-based-match.md) section below.
 2. Implement the [`GKTurnBasedMatchmakerViewControllerDelegate`](gkturnbasedmatchmakerviewcontrollerdelegate.md) protocol methods to handle cancellations and errors.
 3. Then, present the turn-based matchmaker view controller to the local player.
 
@@ -93,7 +93,7 @@ let nextParticipants = match.participants.filter (){
 }
 ```
 
-1. Create a `Data` representation of your game data that GameKit saves and forwards to the next participant. Ensure that the size of the match data doesn’t exceed the [`matchDataMaximumSize`](gkturnbasedmatch/matchdatamaximumsize.md) property. For example, use the [`NSKeyedArchiver`](https://developer.apple.com/documentation/Foundation/NSKeyedArchiver) class to convert your game data to a `Data` object.
+1. Create a `Data` representation of your game data that GameKit saves and forwards to the next participant. Ensure that the size of the match data doesn’t exceed the [`matchDataMaximumSize`](gkturnbasedmatch/matchdatamaximumsize.md) property. For example, use the [`NSKeyedArchiver`](https://developer.apple.com/documentation/foundation/nskeyedarchiver) class to convert your game data to a `Data` object.
 2. Call the `GKTurnBasedMatch` [`endTurn(withNextParticipants:turnTimeout:match:completionHandler:)`](gkturnbasedmatch/endturn(withnextparticipants:turntimeout:match:completionhandler:).md) method, passing the next participant’s array, current game data, and optional timeout for the participant to take their turn.
 
 ```swift
@@ -110,7 +110,7 @@ After the first turn, Game Center manages the status of participants for you by 
 
 To join the match, a participant taps the Game Center invitation that appears on their device, and then taps the Accept button. If necessary, the system launches your game or brings it to the foreground. The player can also tap the match under New Invitations in the turn-based matchmaker interface when you present it.
 
-![An iPhone screen showing the Game Center invitation banner that displays the name of the game and an invitation message. Below the banner are the Accept and Decline buttons.](https://docs-assets.developer.apple.com/published/420e6e49674e35e1a288e8aef7eb34d0/media-3894601%402x.png)
+![An iPhone screen showing the Game Center invitation banner that displays the name of the game and an invitation message. Below the banner are the Accept and Decline buttons.](/images/com.apple.gamekit/media-3894601@2x.png)
 
 When the local player joins a match, GameKit invokes the `GKTurnBasedEventListener` [`player(_:receivedTurnEventFor:didBecomeActive:)`](gkturnbasedeventlistener/player(_:receivedturneventfor:didbecomeactive:).md) method. Implement this method to show the gameplay interface with the current game data, and if it’s the local player’s turn, let them take it.
 
@@ -139,17 +139,17 @@ opponentAvatar = Image(uiImage: image)
 
 A player can continue a match if they don’t forfeit it when they exit or quit your game. In the turn-based matchmaker interface, the player opens an existing match by selecting it under Your Turn or Their Turn.
 
-![An iPhone screen showing the turn-based matchmaker view controller interface displaying the list of existing matches in the Your Turn and Their Turn sections. The Completed Games section displays games that are done. The plus button (+) for creating a new game appears in the upper-right corner.](https://docs-assets.developer.apple.com/published/019eec391c151c4e3e1e06ef0d59b762/media-3901330%402x.png)
+![An iPhone screen showing the turn-based matchmaker view controller interface displaying the list of existing matches in the Your Turn and Their Turn sections. The Completed Games section displays games that are done. The plus button (+) for creating a new game appears in the upper-right corner.](/images/com.apple.gamekit/media-3901330@2x.png)
 
 When the player selects an open match, GameKit invokes the `GKTurnBasedEventListener` [`player(_:receivedTurnEventFor:didBecomeActive:)`](gkturnbasedeventlistener/player(_:receivedturneventfor:didbecomeactive:).md) method. Implement this method to present the match using the current game data in the match object, and if it’s the local player’s turn, let them take it.
 
 GameKit also invokes the [`player(_:receivedTurnEventFor:didBecomeActive:)`](gkturnbasedeventlistener/player(_:receivedturneventfor:didbecomeactive:).md) method if the player selects an ended match under Completed and then clicks the View Game button on the next screen.
 
-![An iPhone screen showing the turn-based matchmaker view controller’s completed match detail view. The avatar and name of the player who created the match appear, followed by the View Game button and a list of participants with their avatars, names, and outcomes.](https://docs-assets.developer.apple.com/published/1e6f59285d43d6e39566564df3472d27/media-3894599%402x.png)
+![An iPhone screen showing the turn-based matchmaker view controller’s completed match detail view. The avatar and name of the player who created the match appear, followed by the View Game button and a list of participants with their avatars, names, and outcomes.](/images/com.apple.gamekit/media-3894599@2x.png)
 
 If the match [`status`](gkturnbasedmatch/status-swift.property.md) property is [`GKTurnBasedMatch.Status.ended`](gkturnbasedmatch/status-swift.enum/ended.md), show the outcomes of the participants and the final game data from the match object.
 
-If you don’t want existing matches to appear in the interface, set the view controller’s [`showExistingMatches`](gkturnbasedmatchmakerviewcontroller/showexistingmatches.md) to [`false`](https://developer.apple.com/documentation/Swift/false) before presenting it.
+If you don’t want existing matches to appear in the interface, set the view controller’s [`showExistingMatches`](gkturnbasedmatchmakerviewcontroller/showexistingmatches.md) to [`false`](https://developer.apple.com/documentation/swift/false) before presenting it.
 
 Alternatively, implement a custom interface that lets players manage existing matches. Use the `GKTurnBasedMatch` [`loadMatches(completionHandler:)`](gkturnbasedmatch/loadmatches(completionhandler:).md) method to load the matches from Game Center.
 
@@ -157,7 +157,7 @@ Alternatively, implement a custom interface that lets players manage existing ma
 
 A player can forfeit an open match using the turn-based matchmaker interface. The player taps the information button next to a match under Your Turn or Their Turn, and on the next screen, taps the Forfeit button in the upper-right corner. The player can also forfeit a match from the list by sliding the match to the left and tapping the Remove button. Players might also forfeit a match using a control in your gameplay interface.
 
-![An iPhone screen showing the turn-based matchmaker view controller with the open match details. The player’s avatar and name appear at the top with a Play your turn button on the bottom. The Forfeit button appears in the upper-right corner.](https://docs-assets.developer.apple.com/published/cc6831c1e022ab090e7fa7cb9c024f60/media-3894721%402x.png)
+![An iPhone screen showing the turn-based matchmaker view controller with the open match details. The player’s avatar and name appear at the top with a Play your turn button on the bottom. The Forfeit button appears in the upper-right corner.](/images/com.apple.gamekit/media-3894721@2x.png)
 
 GameKit invokes the `GKTurnBasedEventListener` [`player(_:receivedTurnEventFor:didBecomeActive:)`](gkturnbasedeventlistener/player(_:receivedturneventfor:didbecomeactive:).md) method in the game instance of the next participant. If the player removes a match that appears under Completed, GameKit deletes the match from Game Center without notifying your game.
 
@@ -215,7 +215,7 @@ When a match ends, notify the participants using the APIs described in [`Sending
   Exchange request information that participants send in a turn-based match.
 - [class GKTurnBasedExchangeReply](gkturnbasedexchangereply.md)
   Details about a recipient’s response to an exchange request.
-- [GKGameCenterBadgingDisabled](../BundleResources/Information-Property-List/GKGameCenterBadgingDisabled.md)
+- [GKGameCenterBadgingDisabled](../bundleresources/information-property-list/gkgamecenterbadgingdisabled.md)
   A Boolean value indicating whether GameKit can add badges to a turn-based game icon.
 
 

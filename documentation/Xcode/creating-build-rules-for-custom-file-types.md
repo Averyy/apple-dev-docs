@@ -22,7 +22,7 @@ If your project contains file types not covered by Xcode’s built-in build rule
 4. In the Process field, specify a filename matching string.
 5. In the script text field, specify your custom script code.
 
-![A target contains a custom build rule that builds a custom file type using a shell script.](https://docs-assets.developer.apple.com/published/a23b1bb936328f1861ce2bb80e67b6d1/build-rules-creating%402x.png)
+![A target contains a custom build rule that builds a custom file type using a shell script.](/images/com.apple.Xcode/build-rules-creating@2x.png)
 
 A build rule can use either a custom shell script or an existing tool to process files. If you use an existing tool to handle your custom file types, select that tool from the build rule’s Using field. For example, if your input files contain source code that a built-in compiler can handle, select the compiler from the list.
 

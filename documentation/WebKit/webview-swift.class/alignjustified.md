@@ -16,7 +16,7 @@ func alignJustified(_ sender: Any?)
 
 #### Discussion
 
-This method behaves similar to the [`alignJustified(_:)`](https://developer.apple.com/documentation/AppKit/NSTextView/alignJustified(_:)) method in [`NSTextView`](https://developer.apple.com/documentation/AppKit/NSTextView).
+This method behaves similar to the [`alignJustified(_:)`](https://developer.apple.com/documentation/appkit/nstextview/alignjustified(_:)) method in [`NSTextView`](https://developer.apple.com/documentation/appkit/nstextview).
 
 ## Parameters
 

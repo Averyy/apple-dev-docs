@@ -28,8 +28,8 @@ Thread safe starting in OS X v10.2.
 
 ## Parameters
 
-- `theAEDesc`: A pointer to the descriptor to duplicate. See  .
-- `result`: A pointer to a descriptor. On return, the descriptor contains a copy of the descriptor specified by the   parameter. If the function returns successfully, your application should call the   function to dispose of the resulting descriptor after it has finished using it.
+- `theAEDesc`: A pointer to the descriptor to duplicate. See [`AEDesc`](aedesc.md).
+- `result`: A pointer to a descriptor. On return, the descriptor contains a copy of the descriptor specified by the `theAEDesc` parameter. If the function returns successfully, your application should call the [`AEDisposeDesc(_:)`](1444208-aedisposedesc.md) function to dispose of the resulting descriptor after it has finished using it.
 
 ## See Also
 

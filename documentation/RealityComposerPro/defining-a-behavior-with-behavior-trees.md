@@ -12,7 +12,7 @@ Similar to other graphs, a Behavior Tree consists of different nodes specificall
 
 When a Behavior Tree has completed processing — meaning the tree has traversed the last leaf node — it resets to the Root (beginning) node, although you can modify this behavior.
 
-![A Behavior Tree in the Reality Composer Pro editor showing a Root node connected to Selector and Sequence composite nodes, with Action nodes as leaves.](https://docs-assets.developer.apple.com/published/f887394df63c1b189c28329acdcdc8fe/BehaviorTree%402x.png)
+![A Behavior Tree in the Reality Composer Pro editor showing a Root node connected to Selector and Sequence composite nodes, with Action nodes as leaves.](/images/RealityComposerPro/BehaviorTree@2x.png)
 
 #### Combine Behavior Trees with a Decision Making Layer
 

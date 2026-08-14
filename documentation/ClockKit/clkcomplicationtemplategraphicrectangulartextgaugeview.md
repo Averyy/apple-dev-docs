@@ -18,7 +18,7 @@ final class CLKComplicationTemplateGraphicRectangularTextGaugeView<Label> where 
 
 This template belongs to the [`CLKComplicationFamily.graphicRectangular`](clkcomplicationfamily/graphicrectangular.md) family. [`Figure 1`](clkcomplicationtemplategraphicrectangulartextgaugeview#3667408.md) shows the layout of the complication and where it appears on the clock face.
 
-![A diagram showing the layout of the complication that calls out the header label, text providers, and gauge provider.](https://docs-assets.developer.apple.com/published/fa5cfc4140640679d83e7d86e7a0c9a0/media-3667408%402x.png)
+![A diagram showing the layout of the complication that calls out the header label, text providers, and gauge provider.](/images/com.apple.clockkit/media-3667408@2x.png)
 
 The following table lists the dimensions of the SwiftUI view displayed by this template.
 
@@ -49,13 +49,13 @@ The following table lists the dimensions of the SwiftUI view displayed by this t
 ### Inherits From
 - [CLKComplicationTemplate](clkcomplicationtemplate.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCopying](../Foundation/NSCopying.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCopying](../foundation/nscopying.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

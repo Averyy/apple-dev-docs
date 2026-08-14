@@ -19,11 +19,11 @@ This sample app demonstrates the use of state preservation and restoration for a
 The state restoration system in AppKit uses three key mechanisms working together:
 
 - Window registration with a restoration class.
-- Encoding state into an [`NSCoder`](https://developer.apple.com/documentation/Foundation/NSCoder) archive.
+- Encoding state into an [`NSCoder`](https://developer.apple.com/documentation/foundation/nscoder) archive.
 - Restoring windows on relaunch through the
 [`restoreWindow(withIdentifier:state:completionHandler:)`](nswindowrestoration/restorewindow(withidentifier:state:completionhandler:).md) protocol method.
 
-To learn how to adopt state restoration in your iOS app, see [`Restoring your app’s state`](https://developer.apple.com/documentation/UIKit/restoring-your-app-s-state). For state restoration in your SwiftUI app, see [`Restoring your app’s state with SwiftUI`](https://developer.apple.com/documentation/SwiftUI/restoring-your-app-s-state-with-swiftui).
+To learn how to adopt state restoration in your iOS app, see [`Restoring your app’s state`](https://developer.apple.com/documentation/uikit/restoring-your-app-s-state). For state restoration in your SwiftUI app, see [`Restoring your app’s state with SwiftUI`](https://developer.apple.com/documentation/swiftui/restoring-your-app-s-state-with-swiftui).
 
 #### Configure the Sample Code Project
 
@@ -84,11 +84,11 @@ class WindowRestorationHandler: NSObject, NSWindowRestoration {
 }
 ```
 
-After AppKit creates each window through this method, it calls [`restoreState(with:)`](NSResponder/restoreState(with:).md) on the window controller to decode the saved state.
+After AppKit creates each window through this method, it calls [`restoreState(with:)`](nsresponder/restorestate(with:).md) on the window controller to decode the saved state.
 
 #### Encode and Decode Window State
 
-Each window controller overrides [`encodeRestorableState(with:)`](NSResponder/encodeRestorableState(with:).md) to save its state, and `restoreState(with:)` to read it back. The main window controller encodes the selected product identifier, the active tab index, and whether the editor sheet was presented with its field values:
+Each window controller overrides [`encodeRestorableState(with:)`](nsresponder/encoderestorablestate(with:).md) to save its state, and `restoreState(with:)` to read it back. The main window controller encodes the selected product identifier, the active tab index, and whether the editor sheet was presented with its field values:
 
 ```swift
 override func encodeRestorableState(with coder: NSCoder) {

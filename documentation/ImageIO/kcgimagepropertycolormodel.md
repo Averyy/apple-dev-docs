@@ -22,7 +22,7 @@ let kCGImagePropertyColorModel: CFString
 
 #### Discussion
 
-The value of this key is of type [`CFString`](https://developer.apple.com/documentation/CoreFoundation/CFString). Typically, the value corresponds to the [`kCGImagePropertyColorModelRGB`](kcgimagepropertycolormodelrgb.md), [`kCGImagePropertyColorModelCMYK`](kcgimagepropertycolormodelcmyk.md), [`kCGImagePropertyColorModelGray`](kcgimagepropertycolormodelgray.md), or [`kCGImagePropertyColorModelLab`](kcgimagepropertycolormodellab.md) constant.
+The value of this key is of type [`CFString`](https://developer.apple.com/documentation/corefoundation/cfstring). Typically, the value corresponds to the [`kCGImagePropertyColorModelRGB`](kcgimagepropertycolormodelrgb.md), [`kCGImagePropertyColorModelCMYK`](kcgimagepropertycolormodelcmyk.md), [`kCGImagePropertyColorModelGray`](kcgimagepropertycolormodelgray.md), or [`kCGImagePropertyColorModelLab`](kcgimagepropertycolormodellab.md) constant.
 
 A color model describes how color values are represented mathematically. A color space is a color model combined with a definition of how to interpret values within the model.
 

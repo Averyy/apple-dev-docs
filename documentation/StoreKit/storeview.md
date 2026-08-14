@@ -35,7 +35,7 @@ If you set up promoted images for your products in App Store Connect, you can ch
 
 The `StoreView` arranges products in rows. If the view has enough horizontal space available, the store adds columns. In tvOS, the view arranges the products in columns and adds rows as space permits.
 
-The store view grows to fit its container, and scrolls when the container doesn’t have enough space to display all the products. Use the [`fixedSize(horizontal:vertical:)`](https://developer.apple.com/documentation/SwiftUI/View/fixedSize(horizontal:vertical:)) modifier to change this behavior.
+The store view grows to fit its container, and scrolls when the container doesn’t have enough space to display all the products. Use the [`fixedSize(horizontal:vertical:)`](https://developer.apple.com/documentation/swiftui/view/fixedsize(horizontal:vertical:)) modifier to change this behavior.
 
 To achieve a custom layout, you can compose [`ProductView`](productview.md) instances with other container views instead of using the `StoreView`.
 
@@ -43,9 +43,9 @@ To achieve a custom layout, you can compose [`ProductView`](productview.md) inst
 
 You can customize the store by displaying additional buttons, and applying styles.
 
-To display a button that syncs in-app purchase entitlements with the App Store, modify the in-app store view or an ancestor view using the `storeButton(_:for:)` modifier with the parameters [`Visibility.visible`](https://developer.apple.com/documentation/SwiftUI/Visibility/visible) and [`restorePurchases`](storebuttonkind/restorepurchases.md). The app calls the [`sync()`](appstore/sync().md) method when people use this button.
+To display a button that syncs in-app purchase entitlements with the App Store, modify the in-app store view or an ancestor view using the `storeButton(_:for:)` modifier with the parameters [`Visibility.visible`](https://developer.apple.com/documentation/swiftui/visibility/visible) and [`restorePurchases`](storebuttonkind/restorepurchases.md). The app calls the [`sync()`](appstore/sync().md) method when people use this button.
 
-You can customize the appearance of the products using product view styles, such as [`CompactProductViewStyle`](compactproductviewstyle.md), [`LargeProductViewStyle`](largeproductviewstyle.md), and [`RegularProductViewStyle`](regularproductviewstyle.md). To apply the style, call the [`productViewStyle(_:)`](https://developer.apple.com/documentation/SwiftUI/View/productViewStyle(_:)) modifier.
+You can customize the appearance of the products using product view styles, such as [`CompactProductViewStyle`](compactproductviewstyle.md), [`LargeProductViewStyle`](largeproductviewstyle.md), and [`RegularProductViewStyle`](regularproductviewstyle.md). To apply the style, call the [`productViewStyle(_:)`](https://developer.apple.com/documentation/swiftui/view/productviewstyle(_:)) modifier.
 
 ## Topics
 
@@ -72,9 +72,9 @@ You can customize the appearance of the products using product view styles, such
 ## Relationships
 
 ### Conforms To
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
-- [View](../SwiftUI/View.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
+- [View](../swiftui/view.md)
 
 ## See Also
 
@@ -83,7 +83,7 @@ You can customize the appearance of the products using product view styles, such
 - [struct SubscriptionStoreView](subscriptionstoreview.md)
   A view that merchandises a collection of auto-renewable subscription options that belong to the same subscription group.
 - [struct SubscriptionOfferView](subscriptionofferview.md)
-- [Backyard Birds: Building an app with SwiftData and widgets](../SwiftUI/Backyard-birds-sample.md)
+- [Backyard Birds: Building an app with SwiftData and widgets](../swiftui/backyard-birds-sample.md)
   Create an app with persistent data, interactive widgets, and an all new in-app purchase experience.
 
 

@@ -26,7 +26,7 @@ This message is sent to the color picker whenever the color panel attempts to di
 
 ## Parameters
 
-- `initialRequest`: [`true`](https://developer.apple.com/documentation/Swift/true) only when this method is first invoked for your color picker. If `initialRequest` is [`true`](https://developer.apple.com/documentation/Swift/true), the method should perform any initialization required (such as lazily loading a nib file, initializing the view, or performing any other custom initialization required for your picker).
+- `initialRequest`: [`true`](https://developer.apple.com/documentation/swift/true) only when this method is first invoked for your color picker. If `initialRequest` is [`true`](https://developer.apple.com/documentation/swift/true), the method should perform any initialization required (such as lazily loading a nib file, initializing the view, or performing any other custom initialization required for your picker).
 
 
 ---

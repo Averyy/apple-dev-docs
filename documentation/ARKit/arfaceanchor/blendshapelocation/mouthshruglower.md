@@ -19,7 +19,7 @@ static let mouthShrugLower: ARFaceAnchor.BlendShapeLocation
 
 The figure below shows a face geometry (see [`ARSCNFaceGeometry`](arscnfacegeometry.md)) in two states, demonstrating values of `0.0` and `1.0` for this coefficient. In both states, the values for all other [`ARFaceAnchor.BlendShapeLocation`](arfaceanchor/blendshapelocation.md) coefficients are set to `0.0`.
 
-![None](https://docs-assets.developer.apple.com/published/1bca6ce0f6151fb856caacc48cff655d/media-2930076%402x.png)
+![None](/images/com.apple.arkit/media-2930076@2x.png)
 
 ## See Also
 

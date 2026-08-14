@@ -15,7 +15,7 @@ void linesFromNeighbors(pointer<uniform_grid_t> grid, strided_buffer<float3> pos
 
 #### Discussion
 
-> **Note**: ![Graph](https://docs-assets.developer.apple.com/published/23dd1117d813ed138c05fabcd63fc5d6/linesFromNeighbors.svg)
+> **Note**: ![Graph](/images/com.apple.computegraph/linesFromNeighbors.svg)
 
 
 ---

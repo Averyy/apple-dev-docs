@@ -7,7 +7,6 @@ A timestamp that indicates when the system received the notification.
 
 **Availability**:
 - iOS 26.5+
-- iPadOS 26.5+
 
 ## Declaration
 

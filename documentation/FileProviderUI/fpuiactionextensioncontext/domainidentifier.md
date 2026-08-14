@@ -20,7 +20,7 @@ var domainIdentifier: NSFileProviderDomainIdentifier? { get }
 
 ## See Also
 
-- [struct NSFileProviderDomainIdentifier](../FileProvider/NSFileProviderDomainIdentifier.md)
+- [struct NSFileProviderDomainIdentifier](../fileprovider/nsfileproviderdomainidentifier.md)
   A unique identifier for a file provider’s domain.
 
 

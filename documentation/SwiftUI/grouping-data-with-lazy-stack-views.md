@@ -14,11 +14,11 @@ To group content or data inside a lazy stack view, use [`Section`](section.md) i
 
 The code samples in this article build a user interface for visualizing shades of primary colors. Each section in the stack represents a primary color, containing five subviews, each showing a different variation of the color.
 
-![A screenshot showing a lazy stack view with multiple sections. Each section header contains the name of the color, followed by a set of views showing varying shades of that color.](https://docs-assets.developer.apple.com/published/c939775b61be43efe77507b4fb324b99/Grouping-Data-with-Lazy-Stack-Views-1%402x.png)
+![A screenshot showing a lazy stack view with multiple sections. Each section header contains the name of the color, followed by a set of views showing varying shades of that color.](/images/com.apple.SwiftUI/Grouping-Data-with-Lazy-Stack-Views-1@2x.png)
 
 ##### Prepare Your Data
 
-As with views contained within a stack, each [`Section`](section.md) must be uniquely identifiable when iterated by [`ForEach`](foreach.md). In this example, `ColorData` instances represent the sections, and `ShadeData` instances represent the shades of each color inside a section. Both `ColorData` and `ShadeData` conform to the [`Identifiable`](https://developer.apple.com/documentation/Swift/Identifiable) protocol.
+As with views contained within a stack, each [`Section`](section.md) must be uniquely identifiable when iterated by [`ForEach`](foreach.md). In this example, `ColorData` instances represent the sections, and `ShadeData` instances represent the shades of each color inside a section. Both `ColorData` and `ShadeData` conform to the [`Identifiable`](https://developer.apple.com/documentation/swift/identifiable) protocol.
 
 ```swift
 struct ColorData: Identifiable {
@@ -108,7 +108,7 @@ In [`LazyVStack`](lazyvstack.md) containers, headers attach to the top and foote
 
 With this change, section headers are pinned to the top of the view as the user begins to scroll.
 
-![A screenshot showing a lazy stack view with multiple sections, configured in the same way as in the first screenshot. In this screenshot, the user has scrolled down and the colored views show behind the section header, which is pinned to the top of the container view.](https://docs-assets.developer.apple.com/published/b195c453e947e7a12840fdc2ecdc1245/Grouping-Data-with-Lazy-Stack-Views-2%402x.png)
+![A screenshot showing a lazy stack view with multiple sections, configured in the same way as in the first screenshot. In this screenshot, the user has scrolled down and the colored views show behind the section header, which is pinned to the top of the container view.](/images/com.apple.SwiftUI/Grouping-Data-with-Lazy-Stack-Views-2@2x.png)
 
 ## See Also
 

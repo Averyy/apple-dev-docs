@@ -8,7 +8,7 @@ Adjust the characteristics of views in a hierarchy.
 
 SwiftUI enables you to tune the appearance and behavior of views using view modifiers.
 
-![None](https://docs-assets.developer.apple.com/published/4f97c3ff1212e8df86b49977696cabfe/view-configuration-hero%402x.png)
+![None](/images/com.apple.SwiftUI/view-configuration-hero@2x.png)
 
 Many modifiers apply to specific kinds of views or behaviors, but some apply more generally. For example, you can conditionally hide any view by dynamically setting its opacity, display contextual help when people hover over a view, or request the light or dark appearance for a view.
 
@@ -67,7 +67,7 @@ Many modifiers apply to specific kinds of views or behaviors, but some apply mor
   Ensures that the view is always visible to the user, even when other content is occluding it, like 3D models.
 - [struct BreakthroughEffect](breakthrougheffect.md)
 ### Redacting private content
-- [Designing your app for the Always On state](../watchOS-Apps/designing-your-app-for-the-always-on-state.md)
+- [Designing your app for the Always On state](../watchos-apps/designing-your-app-for-the-always-on-state.md)
   Customize your watchOS app’s user interface for continuous display.
 - [Protecting sensitive content when screen sharing and remote control are active](protecting-sensitive-content-when-screen-sharing.md)
   Detect active screen capture sessions and respond appropriately to protect sensitive content in your app.

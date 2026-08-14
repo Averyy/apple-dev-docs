@@ -97,8 +97,8 @@ You don’t conform to this protocol yourself. Instead, visual effects are creat
 
 ### Inherits From
 - [Animatable](animatable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 ### Conforming Types
 - [EmptyVisualEffect](emptyvisualeffect.md)
 - [ModifiedContent](modifiedcontent.md)

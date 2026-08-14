@@ -71,7 +71,7 @@ Encode the binary signature you generate into a Base64 string. The result is you
 MEQCIEQlmZRNfYzKBSE8QnhLTIHZZZWCFgZpRqRxHss65KoFAiAJgJKjdrWdkLUOCCjuEx2RmFS7daRzSVZRVZ8RyMyUXg==
 ```
 
-For more information about Base64 encoding, see [`base64EncodedString(options:)`](https://developer.apple.com/documentation/Foundation/Data/base64EncodedString(options:)).
+For more information about Base64 encoding, see [`base64EncodedString(options:)`](https://developer.apple.com/documentation/foundation/data/base64encodedstring(options:)).
 
 ##### Use the Generated Signature String
 

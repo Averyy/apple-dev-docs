@@ -14,25 +14,25 @@ The images below show some of the design and layout features of Apple News Forma
 
 The first advanced tutorial covers some techniques for designing the header of your article.
 
-![Labeled screenshot of an Apple News article on a Mac, iPad, and iPhone. The article includes a header image fill and a caption block anchored to the bottom of the header.](https://docs-assets.developer.apple.com/published/dfa198c8d0a84da4af5f63252af7ce8f/media-3624568%402x.png)
+![Labeled screenshot of an Apple News article on a Mac, iPad, and iPhone. The article includes a header image fill and a caption block anchored to the bottom of the header.](/images/com.apple.applenews/media-3624568@2x.png)
 
 ##### Layout and Positioning
 
 The second advanced tutorial covers elements of complex layouts, along with other topics.
 
-![Labeled screenshot of an Apple News article on a Mac, iPad, and iPhone. The article includes a scene, text layered in front of a header image, inline HTML text styling, an inset pull quote, and a floating caption.](https://docs-assets.developer.apple.com/published/d65cd4d63d3dc315d175a9ea7f28bc1b/media-3629707%402x.png)
+![Labeled screenshot of an Apple News article on a Mac, iPad, and iPhone. The article includes a scene, text layered in front of a header image, inline HTML text styling, an inset pull quote, and a floating caption.](/images/com.apple.applenews/media-3629707@2x.png)
 
 ##### Video and Dark Theme
 
 Among other topics, the third advanced tutorial will teach you how to include a video as your header background and implement a theme with different colors.
 
-![Screenshot of an Apple News article with a color theme on a Mac, iPad, and iPhone.](https://docs-assets.developer.apple.com/published/a2bac481eb67d7d8a65d0008272abda0/media-3624567%402x.png)
+![Screenshot of an Apple News article with a color theme on a Mac, iPad, and iPhone.](/images/com.apple.applenews/media-3624567@2x.png)
 
 ##### Static Image Fill
 
 Another topic the third advanced tutorial covers is how to cause an image to stay still while article content scrolls in front of it.
 
-![Screenshot of an Apple News article with a full-screen, fixed-attachment image fill on a Mac, iPad, and iPhone.](https://docs-assets.developer.apple.com/published/b8789fc1dc896b43df6b1bb66403053c/media-3624565%402x.png)
+![Screenshot of an Apple News article with a full-screen, fixed-attachment image fill on a Mac, iPad, and iPhone.](/images/com.apple.applenews/media-3624565@2x.png)
 
 ##### Choose an Option for Completing the Advanced Tutorials
 

@@ -33,7 +33,7 @@ protocol EquipmentState : Equatable
 ## Relationships
 
 ### Inherits From
-- [Equatable](../Swift/Equatable.md)
+- [Equatable](../swift/equatable.md)
 ### Inherited By
 - [CustomEquipmentState](customequipmentstate.md)
 - [MutableEquipmentState](mutableequipmentstate.md)

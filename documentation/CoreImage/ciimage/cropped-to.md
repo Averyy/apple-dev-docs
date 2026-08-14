@@ -25,11 +25,11 @@ An image object cropped to the specified rectangle.
 
 #### Discussion
 
-![Butterfly photo with background cropped out](https://docs-assets.developer.apple.com/published/44e39ae57f70286b7a3ea4d5a6491b8b/media-2951307%402x.png)
+![Butterfly photo with background cropped out](/images/com.apple.coreimage/media-2951307@2x.png)
 
 #### Discussion
 
-Due to Core Image’s coordinate system mismatch with [`UIKit`](https://developer.apple.comhttps://developer.apple.com/library/archive/releasenotes/General/WhatsNewIniOS/Articles/iOS5.html#//apple_ref/doc/uid/TP30915195-SW41), this filtering approach may yield unexpected results when displayed in a [`UIImageView`](https://developer.apple.com/documentation/UIKit/UIImageView) with [`contentMode`](https://developer.apple.com/documentation/UIKit/UIView/contentMode-swift.property). Be sure to back it with a [`cgImage`](ciimage/cgimage.md) so that it handles [`contentMode`](https://developer.apple.com/documentation/UIKit/UIView/contentMode-swift.property) properly.
+Due to Core Image’s coordinate system mismatch with [`UIKit`](https://developer.apple.comhttps://developer.apple.com/library/archive/releasenotes/General/WhatsNewIniOS/Articles/iOS5.html#//apple_ref/doc/uid/TP30915195-SW41), this filtering approach may yield unexpected results when displayed in a [`UIImageView`](https://developer.apple.com/documentation/uikit/uiimageview) with [`contentMode`](https://developer.apple.com/documentation/uikit/uiview/contentmode-swift.property). Be sure to back it with a [`cgImage`](ciimage/cgimage.md) so that it handles [`contentMode`](https://developer.apple.com/documentation/uikit/uiview/contentmode-swift.property) properly.
 
 ```swift
 CIContext* context = [CIContext context];
@@ -38,7 +38,7 @@ UIImage* croppedImage = [UIImage imageWithCGImage:cgCroppedImage];
 CGImageRelease(cgCroppedImage);
 ```
 
-If you are displaying or processing your image primarily as a [`CGImage`](https://developer.apple.com/documentation/CoreGraphics/CGImage) or [`UIImage`](https://developer.apple.com/documentation/UIKit/UIImage), with no additional Core Image application, consider cropping in Core Graphics using the [`cropping(to:)`](https://developer.apple.com/documentation/CoreGraphics/CGImage/cropping(to:)) function to save processing overhead from conversion of images to [`CIImage`](ciimage.md).  It makes most sense to use [`cropped(to:)`](ciimage/cropped(to:).md) when you already have [`CIImage`](ciimage.md) in your pipeline.
+If you are displaying or processing your image primarily as a [`CGImage`](https://developer.apple.com/documentation/coregraphics/cgimage) or [`UIImage`](https://developer.apple.com/documentation/uikit/uiimage), with no additional Core Image application, consider cropping in Core Graphics using the [`cropping(to:)`](https://developer.apple.com/documentation/coregraphics/cgimage/cropping(to:)) function to save processing overhead from conversion of images to [`CIImage`](ciimage.md).  It makes most sense to use [`cropped(to:)`](ciimage/cropped(to:).md) when you already have [`CIImage`](ciimage.md) in your pipeline.
 
 ## Parameters
 

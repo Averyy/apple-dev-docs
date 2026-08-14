@@ -20,8 +20,8 @@ The system calls this function when the USB input/output request completes.
 
 ## Parameters
 
-- `target`: The target that the   structure specifies.
-- `parameter`: The parameter that the   structure specifies.
+- `target`: The target that the `IOUSBCompletion` structure specifies.
+- `parameter`: The parameter that the `IOUSBCompletion` structure specifies.
 - `status`: The completion status.
 - `bufferSizeRemaining`: The number of bytes remaining to transfer.
 

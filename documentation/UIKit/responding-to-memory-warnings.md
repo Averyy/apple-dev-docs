@@ -11,7 +11,7 @@ If the system runs low on free memory and is unable to reclaim memory by termina
 - It calls the [`applicationDidReceiveMemoryWarning(_:)`](uiapplicationdelegate/applicationdidreceivememorywarning(_:).md) method of your app delegate.
 - It calls the [`didReceiveMemoryWarning()`](uiviewcontroller/didreceivememorywarning().md) method of any active [`UIViewController`](uiviewcontroller.md) classes.
 - It posts a [`didReceiveMemoryWarningNotification`](uiapplication/didreceivememorywarningnotification.md) object to any registered observers.
-- It delivers a warning to dispatch queues of type [`DISPATCH_SOURCE_TYPE_MEMORYPRESSURE`](https://developer.apple.com/documentation/Dispatch/DISPATCH_SOURCE_TYPE_MEMORYPRESSURE).
+- It delivers a warning to dispatch queues of type [`DISPATCH_SOURCE_TYPE_MEMORYPRESSURE`](https://developer.apple.com/documentation/dispatch/dispatch_source_type_memorypressure).
 
 When your app receives a low-memory warning, free up as much memory as possible, as quickly as possible. Remove references to images, media files, or any large data files that already have an on-disk representation and can be reloaded later. Remove references to any temporary objects that you no longer need. If active tasks might consume significant amounts of memory, pause dispatch queues or restrict the number of simultaneous operations that your app performs.
 

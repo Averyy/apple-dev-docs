@@ -30,11 +30,11 @@ class SKReceiptRefreshRequest
 
 > **Note**:  The receipt isn’t necessary if you use [`AppTransaction`](apptransaction.md) to validate the app download, or [`Transaction`](transaction.md) to validate in-app purchases. Only use the receipt if your app uses the [`Original API for In-App Purchase`](original-api-for-in-app-purchase.md), or needs the receipt to validate the app download because it can’t use [`AppTransaction`](apptransaction.md).
 
-Use this API to request a new app receipt from the App Store if the receipt is invalid or missing from its expected location, [`appStoreReceiptURL`](https://developer.apple.com/documentation/Foundation/Bundle/appStoreReceiptURL). To request the receipt using the [`SKReceiptRefreshRequest`](skreceiptrefreshrequest.md) object, you initialize it, attach a [`delegate`](skrequest/delegate.md), and then call the request’s [`start()`](skrequest/start().md) method.
+Use this API to request a new app receipt from the App Store if the receipt is invalid or missing from its expected location, [`appStoreReceiptURL`](https://developer.apple.com/documentation/foundation/bundle/appstorereceipturl). To request the receipt using the [`SKReceiptRefreshRequest`](skreceiptrefreshrequest.md) object, you initialize it, attach a [`delegate`](skrequest/delegate.md), and then call the request’s [`start()`](skrequest/start().md) method.
 
 > ❗ **Important**:  The receipt refresh request displays a system prompt that asks users to authenticate with their App Store credentials. For a better user experience, initiate the request after an explicit user action, like tapping or clicking a button.
 
-When the request completes successfully, your delegate receives an [`SKReceiptRefreshRequest`](skreceiptrefreshrequest.md) object in its [`requestDidFinish(_:)`](skrequestdelegate/requestdidfinish(_:).md) method. Locate the app receipt using the [`appStoreReceiptURL`](https://developer.apple.com/documentation/Foundation/Bundle/appStoreReceiptURL) property. For information about validating the receipt, see [`Choosing a receipt validation technique`](choosing-a-receipt-validation-technique.md).
+When the request completes successfully, your delegate receives an [`SKReceiptRefreshRequest`](skreceiptrefreshrequest.md) object in its [`requestDidFinish(_:)`](skrequestdelegate/requestdidfinish(_:).md) method. Locate the app receipt using the [`appStoreReceiptURL`](https://developer.apple.com/documentation/foundation/bundle/appstorereceipturl) property. For information about validating the receipt, see [`Choosing a receipt validation technique`](choosing-a-receipt-validation-technique.md).
 
 If the request fails and calls your delegate’s [`request(_:didFailWithError:)`](skrequestdelegate/request(_:didfailwitherror:).md) method, your app needs to release the request and not attempt to call it a second time. Requests can fail when a user doesn’t authenticate or chooses to cancel the request. Without a validated receipt, assume the user doesn’t have access to premium content.
 
@@ -45,7 +45,7 @@ In the sandbox environment, you can initialize a receipt with any combination of
 There are times when using [`SKReceiptRefreshRequest`](skreceiptrefreshrequest.md) isn’t necessary, so avoid doing so, such as in the following scenarios:
 
 - If the receipt is valid, but may be missing transactions, use [`restoreCompletedTransactions()`](skpaymentqueue/restorecompletedtransactions().md) instead. For example, the receipt may be missing a transaction if a person purchases a new subscription on another device.
-- In the sandbox environment, before the tester completes their first in-app purchase. Receipts are initially absent in the sandbox environment for iOS and iPadOS apps. For more information, see [`appStoreReceiptURL`](https://developer.apple.com/documentation/Foundation/Bundle/appStoreReceiptURL).
+- In the sandbox environment, before the tester completes their first in-app purchase. Receipts are initially absent in the sandbox environment for iOS and iPadOS apps. For more information, see [`appStoreReceiptURL`](https://developer.apple.com/documentation/foundation/bundle/appstorereceipturl).
 
 ## Topics
 
@@ -67,14 +67,14 @@ There are times when using [`SKReceiptRefreshRequest`](skreceiptrefreshrequest.m
 ### Inherits From
 - [SKRequest](skrequest.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 
@@ -82,7 +82,7 @@ There are times when using [`SKReceiptRefreshRequest`](skreceiptrefreshrequest.m
   Select the type of receipt validation, on the device or on your server, that works for your app.
 - [Validating receipts with the App Store](validating-receipts-with-the-app-store.md)
   Verify transactions with the App Store on a secure server.
-- [var appStoreReceiptURL: URL?](../Foundation/Bundle/appStoreReceiptURL.md)
+- [var appStoreReceiptURL: URL?](../foundation/bundle/appstorereceipturl.md)
   The file URL for the bundle’s App Store receipt.
 
 

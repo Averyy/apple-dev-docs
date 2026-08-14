@@ -23,7 +23,7 @@ struct AnisotropyLevel
 
 By default, PBR materials are isotropic; in other words, an entity that uses [`PhysicallyBasedMaterial`](physicallybasedmaterial.md) reflects light uniformly in all directions, mimicking the behavior of most real-world objects. Some objects, including those with many small parallel striations such as vinyl records, CDs, or straight hair, reflect light more in some directions than others, resulting in stretched or oblong specular highlights, as shown in the following figure.
 
-![An illustration showing 11 metallic spheres in a horizontal row. The](https://docs-assets.developer.apple.com/published/2eecb2feb22234ad8501e669131a2d52/PhysicallyBasedMaterial-AnisotropyLevel-swift-struct-1%402x.png)
+![An illustration showing 11 metallic spheres in a horizontal row. The](/images/com.apple.RealityKit/PhysicallyBasedMaterial-AnisotropyLevel-swift-struct-1@2x.png)
 
 Use this object to specify the [`anisotropyLevel`](physicallybasedmaterial/anisotropylevel-swift.property.md) for a material.
 
@@ -45,7 +45,7 @@ Use this object to specify the [`anisotropyLevel`](physicallybasedmaterial/aniso
 ## Relationships
 
 ### Conforms To
-- [ExpressibleByFloatLiteral](../Swift/ExpressibleByFloatLiteral.md)
+- [ExpressibleByFloatLiteral](../swift/expressiblebyfloatliteral.md)
 
 ## See Also
 
@@ -53,7 +53,7 @@ Use this object to specify the [`anisotropyLevel`](physicallybasedmaterial/aniso
   Enhance the appearance of objects in a RealityKit scene with Physically Based Rendering (PBR).
 - [Rendering high-fidelity characters](rendering-high-fidelity-characters.md)
   Configure material and lighting properties to avoid flat, dull skin and static hair on your characters.
-- [Generating procedural textures](../visionOS/generating-procedural-textures-in-visionos.md)
+- [Generating procedural textures](../visionos/generating-procedural-textures-in-visionos.md)
   Display a 3D model that generates procedural textures in a reality view.
 - [struct PhysicallyBasedMaterial](physicallybasedmaterial.md)
   A material that simulates the appearance of real-world objects.

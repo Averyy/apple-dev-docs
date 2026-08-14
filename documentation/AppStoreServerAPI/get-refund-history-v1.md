@@ -19,9 +19,9 @@ Call this endpoint to get a customer’s refund history for your app. The respon
 
 > **Note**:  To get the complete refund history, use [`Get Refund History`](get-refund-history.md).
 
-To call this endpoint, provide any original transaction identifier ([`originalID`](https://developer.apple.com/documentation/StoreKit/Transaction/originalID)) for any of the customer’s in-app purchases. The response only includes App Store-approved refunds for any product type: consumable, non-consumable, auto-renewable subscriptions, and non-renewing subscriptions. For more information about product types, see [`In-app purchase`](https://developer.apple.comhttps://developer.apple.com/in-app-purchase/).
+To call this endpoint, provide any original transaction identifier ([`originalID`](https://developer.apple.com/documentation/storekit/transaction/originalid)) for any of the customer’s in-app purchases. The response only includes App Store-approved refunds for any product type: consumable, non-consumable, auto-renewable subscriptions, and non-renewing subscriptions. For more information about product types, see [`In-app purchase`](https://developer.apple.comhttps://developer.apple.com/in-app-purchase/).
 
-The information in the response is the same as the information in one or more `REFUND` notifications ([`notificationType`](https://developer.apple.com/documentation/AppStoreServerNotifications/notificationType)) from [`App Store Server Notifications`](https://developer.apple.com/documentation/AppStoreServerNotifications). Use this API to retrieve any refund notifications you may have missed, such as during a server outage.
+The information in the response is the same as the information in one or more `REFUND` notifications ([`notificationType`](https://developer.apple.com/documentation/appstoreservernotifications/notificationtype)) from [`App Store Server Notifications`](https://developer.apple.com/documentation/appstoreservernotifications). Use this API to retrieve any refund notifications you may have missed, such as during a server outage.
 
 A successful response may have an empty `signedTransactions` array if the customer hasn’t received any App Store-approved refunds. To identify the date and reason code for a refund, see `revocationDate` and `revocationReason` in the [`JWSTransactionDecodedPayload`](jwstransactiondecodedpayload.md).
 

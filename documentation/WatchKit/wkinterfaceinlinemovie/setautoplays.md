@@ -16,7 +16,7 @@ func setAutoplays(_ autoplays: Bool)
 
 ## Parameters
 
-- `autoplays`: A Boolean value indicating the movie’s autoplay behavior. Specify [`true`](https://developer.apple.com/documentation/Swift/true) to have the movie automatically play as soon as the scene is presented. If set to [`false`](https://developer.apple.com/documentation/Swift/false), the inline movie object displays the poster image instead. The movie does not begin playing until the user taps the poster, or until you programmatically call either the [`play()`](wkinterfaceinlinemovie/play().md) or [`playFromBeginning()`](wkinterfaceinlinemovie/playfrombeginning().md) method. Defaults to [`true`](https://developer.apple.com/documentation/Swift/true).
+- `autoplays`: A Boolean value indicating the movie’s autoplay behavior. Specify [`true`](https://developer.apple.com/documentation/swift/true) to have the movie automatically play as soon as the scene is presented. If set to [`false`](https://developer.apple.com/documentation/swift/false), the inline movie object displays the poster image instead. The movie does not begin playing until the user taps the poster, or until you programmatically call either the [`play()`](wkinterfaceinlinemovie/play().md) or [`playFromBeginning()`](wkinterfaceinlinemovie/playfrombeginning().md) method. Defaults to [`true`](https://developer.apple.com/documentation/swift/true).
 
 ## See Also
 

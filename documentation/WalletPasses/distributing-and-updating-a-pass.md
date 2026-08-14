@@ -12,7 +12,7 @@ There are three ways you can distribute a pass:
 - Provide a download on a web page for one pass or a bundle containing multiple passes.
 - Send a pass as an attachment in an email.
 
-In your app or App Clip, add a [`PKAddPassButton`](https://developer.apple.com/documentation/PassKit/PKAddPassButton) to show that a pass is available. When the user taps the button, show a [`PKAddPassesViewController`](https://developer.apple.com/documentation/PassKit/PKAddPassesViewController) for the pass.
+In your app or App Clip, add a [`PKAddPassButton`](https://developer.apple.com/documentation/passkit/pkaddpassbutton) to show that a pass is available. When the user taps the button, show a [`PKAddPassesViewController`](https://developer.apple.com/documentation/passkit/pkaddpassesviewcontroller) for the pass.
 
 On your website, show an Add to Apple Wallet button. Download the pass when the user clicks the button. For more information on displaying the button, see the [`Add to Apple Wallet Guidelines.`](https://developer.apple.comhttps://developer.apple.com/wallet/add-to-apple-wallet-guidelines)
 

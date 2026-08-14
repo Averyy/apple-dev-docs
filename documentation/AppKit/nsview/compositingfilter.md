@@ -16,7 +16,7 @@ var compositingFilter: CIFilter? { get set }
 
 #### Discussion
 
-This property contains the compositing filter stored in the [`compositingFilter`](https://developer.apple.com/documentation/QuartzCore/CALayer/compositingFilter) property of the view’s layer. If the view does not have a layer, setting the value of this property has no effect.
+This property contains the compositing filter stored in the [`compositingFilter`](https://developer.apple.com/documentation/quartzcore/calayer/compositingfilter) property of the view’s layer. If the view does not have a layer, setting the value of this property has no effect.
 
 The default value of this property is `nil`, which causes content to be rendered without any special compositing effects.
 

@@ -28,7 +28,7 @@ A one-dimensional [`CIImage`](ciimage.md) containing the colors.
 This filter uses the k-means clustering algorithm to find the most common colors in an input image. The result is a [`CIImage`](ciimage.md) with `count` x 1 dimensions. Each `RGBA` pixel in the result image represents the center of a k-means cluster. The `RGB` components contain the color and the alpha component represents the weight of the color. You typically use the [`kMeans()`](cifilter-swift.class/kmeans().md) filter in conjunction with the [`palettize()`](cifilter-swift.class/palettize().md) filter to produce an image with a reduced number of colors.
 
 - **`inputImage`**: A [`CIImage`](ciimage.md) to process.
-- **`extent`**: A [`CGRect`](https://developer.apple.com/documentation/CoreFoundation/CGRect) specifying the area of the image to analyze.
+- **`extent`**: A [`CGRect`](https://developer.apple.com/documentation/corefoundation/cgrect) specifying the area of the image to analyze.
 - **`means`**: An optional [`CIImage`](ciimage.md) containing a set of colors to use as seeds for the k-means clustering.
 - **`count`**: The number of k-means color clusters that should be created. Maximum is `128`, and default is `8`.
 - **`passes`**: The number of k-means passes that should run. Maximum is `20`, and default is `5`.
@@ -59,7 +59,7 @@ let palette = kMeans(inputImage: image)
 let palettized = palettize(inputImage: image, palette.settingAlphaOne(in: palette.extent))
 ```
 
-![Three images arranged horizontally. The image on the left is a closeup photograph of a cactus. The center image consists of squares arranged vertically showing the four main colors from the left image. The image on the right shows the image with the reduced colors.](https://docs-assets.developer.apple.com/published/ad1e4bae35fc0ae11f29b1c1b52fcb6e/media-4332587%402x.png)
+![Three images arranged horizontally. The image on the left is a closeup photograph of a cactus. The center image consists of squares arranged vertically showing the four main colors from the left image. The image on the right shows the image with the reduced colors.](/images/com.apple.coreimage/media-4332587@2x.png)
 
 ## See Also
 

@@ -37,9 +37,9 @@ The function `DCSGetTermRangeInString` only returns the range. You must call [`D
 
 ## Parameters
 
-- `dictionary`: This parameter is reserved for future use, so pass  . Dictionary Services searches in all active dictionaries.
+- `dictionary`: This parameter is reserved for future use, so pass `NULL`. Dictionary Services searches in all active dictionaries.
 - `textString`: Text that contains the word or phrase to look up.
-- `offset`: A character offset in the   parameter.
+- `offset`: A character offset in the `textString` parameter.
 
 ## See Also
 

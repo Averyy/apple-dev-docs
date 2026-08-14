@@ -23,7 +23,7 @@ interface ImageDelegate
 
 In addition to using a dictionary object that defines image URLs for [`ImageAnnotation`](imageannotation.md) or [`MarkerAnnotation`](markerannotation.md), you can specify an image delegate that allows you to return an image dynamically or asynchronously.
 
-Implement [`getImage(ratio)`](imagedelegate/getimage.md) to return a `Promise` that resolves to a URL string, an [`ImageSource`](imagesource.md), or `undefined`:
+Implement [`getImage()`](imagedelegate/getimage.md) to return a `Promise` that resolves to a URL string, an [`ImageSource`](imagesource.md), or `undefined`:
 
 ```javascript
 const imageDelegate = {

@@ -47,7 +47,7 @@ struct TapGestureExample: View {
 }
 ```
 
-![A screenshot of a view of a heart.](https://docs-assets.developer.apple.com/published/83704b234b6271147a2dee7586c1438f/SwiftUI-View-TapGesture%402x.png)
+![A screenshot of a view of a heart.](/images/com.apple.SwiftUI/SwiftUI-View-TapGesture@2x.png)
 
 ## Parameters
 

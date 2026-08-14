@@ -38,7 +38,7 @@ The temporary image will be released when the command buffer is committed. The u
   A description of the attributes used to create an [`MPSImage`](mpsimage.md).
 - [convenience init(commandBuffer: any MTLCommandBuffer, textureDescriptor: MTLTextureDescriptor)](mpstemporaryimage/init(commandbuffer:texturedescriptor:).md)
   Low-level interface for creating a temporary image using a texture descriptor.
-- [class MTLTextureDescriptor](../Metal/MTLTextureDescriptor.md)
+- [class MTLTextureDescriptor](../metal/mtltexturedescriptor.md)
   An instance that you use to configure new Metal texture instances.
 - [convenience init(commandBuffer: any MTLCommandBuffer, textureDescriptor: MTLTextureDescriptor, featureChannels: Int)](mpstemporaryimage/init(commandbuffer:texturedescriptor:featurechannels:).md)
 

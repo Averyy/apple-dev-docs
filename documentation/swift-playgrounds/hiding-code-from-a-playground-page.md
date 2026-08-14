@@ -10,7 +10,7 @@ You can hide code that’s unrelated to the main content of a playground page, l
 
 Place code you want to hide between the `hidden-code` and `end-hidden-code` delimiters.
 
-![Diagram showing the hidden-code and end-hidden code comment syntax. The first line is “//#-hidden-code”, followed by a placeholder line, terminated with a line with contents “//#-end-hidden-code”.](https://docs-assets.developer.apple.com/published/d8bdfe3e44e58770fc17748e2752dc1c/hiding-code-from-a-playground-page-1%402x.png)
+![Diagram showing the hidden-code and end-hidden code comment syntax. The first line is “//#-hidden-code”, followed by a placeholder line, terminated with a line with contents “//#-end-hidden-code”.](/images/com.apple.Swift-Playgrounds/hiding-code-from-a-playground-page-1@2x.png)
 
 The following shows the raw syntax for a playground page with hidden code.
 

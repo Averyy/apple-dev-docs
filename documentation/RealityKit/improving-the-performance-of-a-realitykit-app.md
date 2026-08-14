@@ -6,9 +6,9 @@ Measure CPU and GPU utilization to find ways to improve your app’s performance
 
 #### Overview
 
-You use the RealityKit framework to add 3D content to an [`ARKit`](https://developer.apple.com/documentation/ARKit) app. The framework runs an entity component system (ECS) on the CPU to manage tasks like physics calculations, animations, audio processing, and network synchronization. It also relies on the [`Metal`](https://developer.apple.com/documentation/Metal) framework and GPU hardware to perform multithreaded rendering.
+You use the RealityKit framework to add 3D content to an [`ARKit`](https://developer.apple.com/documentation/arkit) app. The framework runs an entity component system (ECS) on the CPU to manage tasks like physics calculations, animations, audio processing, and network synchronization. It also relies on the [`Metal`](https://developer.apple.com/documentation/metal) framework and GPU hardware to perform multithreaded rendering.
 
-![A diagram showing how your app runs on the CPU, supported by RealityKit, ARKit, and Metal, with Metal running vertex, compute, and fragment shaders on the GPU, resulting in your app’s content rendering on the display.](https://docs-assets.developer.apple.com/published/46121d5e2ef35e29f7453c9edf9c5087/improving-the-performance-of-a-realitykit-app-1%402x.png)
+![A diagram showing how your app runs on the CPU, supported by RealityKit, ARKit, and Metal, with Metal running vertex, compute, and fragment shaders on the GPU, resulting in your app’s content rendering on the display.](/images/com.apple.RealityKit/improving-the-performance-of-a-realitykit-app-1@2x.png)
 
 Although RealityKit handles much of the complexity of this system for you, it’s still important to optimize your app for performance. Use debugging features built in to RealityKit — along with standard tools like Xcode and Instruments — to pinpoint the causes of reduced frame rate. Then make data-driven adjustments to your assets or to the way you use the framework to improve performance.
 
@@ -22,13 +22,13 @@ arView.debugOptions.insert(.showStatistics)
 
 As a result, the view draws an overlay that displays statistics, updated in real time.
 
-![A screenshot of a RealityKit app running on an iPad, showing statistics in the lower third of the display overlaid with partial transparency onto a scene with a virtual cube placed on a real wooden surface.](https://docs-assets.developer.apple.com/published/4ae6ce5c8e636852322064a0932f33d4/improving-the-performance-of-a-realitykit-app-2%402x.png)
+![A screenshot of a RealityKit app running on an iPad, showing statistics in the lower third of the display overlaid with partial transparency onto a scene with a virtual cube placed on a real wooden surface.](/images/com.apple.RealityKit/improving-the-performance-of-a-realitykit-app-2@2x.png)
 
 RealityKit typically limits the refresh rate — the rate at which the framework renders updates for the screen — to 60 frames per second (fps). This rate limits each of the main and render threads, as well as the GPU, to 16.6 ms to complete all computations per rendered frame. The overlay reports the observed frame rate, as well as the measured main and render thread times. It also provides granular detail about time spent in the main thread, such as when performing tasks like ECS updates and physics calculations. For more information about the visible metrics, see [`showStatistics`](arview/debugoptions-swift.struct/showstatistics.md).
 
 If the main thread consumes more than 16.6 ms, then the app is CPU limited. If not, but the frame rate remains consistently below 60 fps, then the app is probably GPU limited. Use this information and the other data in the overlay to drive changes in your app.
 
-> 💡 **Tip**: If you need more detailed data, use tools like Xcode’s [`debug gauges`](https://developer.apple.comhttps://help.apple.com/xcode/mac/current/#/dev94c128b7b) and the [`Instruments`](https://developer.apple.comhttps://help.apple.com/instruments/mac/current/) app. Combined with OS signposts, available among the [`Logging`](https://developer.apple.com/documentation/os/logging) methods of the [`os`](https://developer.apple.com/documentation/os) framework, you can identify processor utilization with a great deal of precision, as described in [`Improving your app’s performance`](https://developer.apple.com/documentation/Xcode/improving-your-app-s-performance).
+> 💡 **Tip**: If you need more detailed data, use tools like Xcode’s [`debug gauges`](https://developer.apple.comhttps://help.apple.com/xcode/mac/current/#/dev94c128b7b) and the [`Instruments`](https://developer.apple.comhttps://help.apple.com/instruments/mac/current/) app. Combined with OS signposts, available among the [`Logging`](https://developer.apple.com/documentation/os/logging) methods of the [`os`](https://developer.apple.com/documentation/os) framework, you can identify processor utilization with a great deal of precision, as described in [`Improving your app’s performance`](https://developer.apple.com/documentation/xcode/improving-your-app-s-performance).
 
 ##### Reduce Cpu Utilization
 
@@ -55,7 +55,7 @@ let defaultScaleFactor = arView.contentScaleFactor
 arView.contentScaleFactor = 0.75 * defaultScaleFactor
 ```
 
-Determine which adjustments you need for different kinds of hardware, and then choose different code paths based on the hardware you detect at runtime. To learn about identifying the available GPU hardware, see [`Detecting GPU features and Metal software versions`](https://developer.apple.com/documentation/Metal/detecting-gpu-features-and-metal-software-versions).
+Determine which adjustments you need for different kinds of hardware, and then choose different code paths based on the hardware you detect at runtime. To learn about identifying the available GPU hardware, see [`Detecting GPU features and Metal software versions`](https://developer.apple.com/documentation/metal/detecting-gpu-features-and-metal-software-versions).
 
 ## Topics
 

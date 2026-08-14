@@ -13,13 +13,13 @@ func XCTAssertEqualWithAccuracy<T>(_ expression1: @autoclosure () throws -> T, _
 
 #### Discussion
 
-`expression1`, `expression2`, and `accuracy` must all be of the same type `T` that conforms to [`FloatingPoint`](https://developer.apple.com/documentation/Swift/FloatingPoint).
+`expression1`, `expression2`, and `accuracy` must all be of the same type `T` that conforms to [`FloatingPoint`](https://developer.apple.com/documentation/swift/floatingpoint).
 
 ## Parameters
 
-- `expression1`: An expression of type `T`, where `T` conforms to [`FloatingPoint`](https://developer.apple.com/documentation/Swift/FloatingPoint).
-- `expression2`: An expression of type `T`, where `T` conforms to [`FloatingPoint`](https://developer.apple.com/documentation/Swift/FloatingPoint).
-- `accuracy`: An expression of type `T`, where `T` conforms to [`FloatingPoint`](https://developer.apple.com/documentation/Swift/FloatingPoint). Describes the maximum difference between `expression1` and `expression2` for these values to be considered equal.
+- `expression1`: An expression of type `T`, where `T` conforms to [`FloatingPoint`](https://developer.apple.com/documentation/swift/floatingpoint).
+- `expression2`: An expression of type `T`, where `T` conforms to [`FloatingPoint`](https://developer.apple.com/documentation/swift/floatingpoint).
+- `accuracy`: An expression of type `T`, where `T` conforms to [`FloatingPoint`](https://developer.apple.com/documentation/swift/floatingpoint). Describes the maximum difference between `expression1` and `expression2` for these values to be considered equal.
 - `message`: An optional description of the failure.
 - `file`: The file in which failure occurred. Defaults to the file name of the test case in which this function was called.
 - `line`: The line number on which failure occurred. Defaults to the line number on which this function was called.

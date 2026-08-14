@@ -22,9 +22,9 @@ static let NSManagedObjectContextDidMergeChangesObjectIDs: NSNotification.Name
 
 #### Discussion
 
-This notification’s `object` is the merged context. Don’t peform any asynchronous work or block the calling thread. [`NSManagedObjectContext`](https://developer.apple.com/documentation/CoreData/NSManagedObjectContext) posts notifications to the same thread that creates it.
+This notification’s `object` is the merged context. Don’t peform any asynchronous work or block the calling thread. [`NSManagedObjectContext`](https://developer.apple.com/documentation/coredata/nsmanagedobjectcontext) posts notifications to the same thread that creates it.
 
-The `userInfo` dictionary contains the identifiers of the inserted, updated, deleted, refreshed, and invalidated managed objects. For the keys to access those objects, see [`NSManagedObjectContext.NotificationKey`](https://developer.apple.com/documentation/CoreData/NSManagedObjectContext/NotificationKey). It’s safe to capture the dictionary’s contents.
+The `userInfo` dictionary contains the identifiers of the inserted, updated, deleted, refreshed, and invalidated managed objects. For the keys to access those objects, see [`NSManagedObjectContext.NotificationKey`](https://developer.apple.com/documentation/coredata/nsmanagedobjectcontext/notificationkey). It’s safe to capture the dictionary’s contents.
 
 ## See Also
 

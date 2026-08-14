@@ -32,15 +32,15 @@ Bindings between objects are typically established in Interface Builder using th
   Returns an array describing the options for the specified binding.
 - [func infoForBinding(NSBindingName) -> [NSBindingInfoKey : Any]?](nsobject-swift.class/infoforbinding(_:).md)
   Returns a dictionary describing the receiver’s `binding`.
-- [struct NSBindingInfoKey](../AppKit/NSBindingInfoKey.md)
+- [struct NSBindingInfoKey](../appkit/nsbindinginfokey.md)
 - [func unbind(NSBindingName)](nsobject-swift.class/unbind(_:).md)
   Removes a given binding between the receiver and a controller.
-- [func NSIsControllerMarker(Any?) -> Bool](../AppKit/NSIsControllerMarker(_:).md)
+- [func NSIsControllerMarker(Any?) -> Bool](../appkit/nsiscontrollermarker(_:).md)
   Tests whether a given object is special marker object used for indicating the state of a selection in relation to a key.
 ### Constants
-- [struct NSBindingName](../AppKit/NSBindingName.md)
+- [struct NSBindingName](../appkit/nsbindingname.md)
   Values that specify a binding for certain methods.
-- [struct NSBindingOption](../AppKit/NSBindingOption.md)
+- [struct NSBindingOption](../appkit/nsbindingoption.md)
 - [Binding Dictionary Keys](binding-dictionary-keys.md)
   The following values are used as keys in the dictionary returned by [`infoForBinding(_:)`](nsobject-swift.class/infoforbinding(_:).md)
 

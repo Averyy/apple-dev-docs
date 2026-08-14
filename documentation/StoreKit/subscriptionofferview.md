@@ -34,9 +34,9 @@
 ## Relationships
 
 ### Conforms To
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
-- [View](../SwiftUI/View.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
+- [View](../swiftui/view.md)
 
 ## See Also
 
@@ -46,7 +46,7 @@
   A view that merchandises a collection of In-App Purchase products.
 - [struct SubscriptionStoreView](subscriptionstoreview.md)
   A view that merchandises a collection of auto-renewable subscription options that belong to the same subscription group.
-- [Backyard Birds: Building an app with SwiftData and widgets](../SwiftUI/Backyard-birds-sample.md)
+- [Backyard Birds: Building an app with SwiftData and widgets](../swiftui/backyard-birds-sample.md)
   Create an app with persistent data, interactive widgets, and an all new in-app purchase experience.
 
 

@@ -26,9 +26,9 @@ let kSecAttrProtocol: CFString
 
 #### Discussion
 
-The corresponding value is of type [`CFString`](https://developer.apple.com/documentation/CoreFoundation/CFString) and denotes the protocol for this item (see [`Protocol Values`](item-attribute-keys-and-values#Protocol-Values.md)). Items of class [`kSecClassInternetPassword`](ksecclassinternetpassword.md) have this attribute.
+The corresponding value is of type [`CFString`](https://developer.apple.com/documentation/corefoundation/cfstring) and denotes the protocol for this item (see [`Protocol Values`](item-attribute-keys-and-values#Protocol-Values.md)). Items of class [`kSecClassInternetPassword`](ksecclassinternetpassword.md) have this attribute.
 
-> **Note**:  For compatibility with earlier Keychain APIs, functions in [`Keychain services`](keychain-services.md) accept a [`CFNumber`](https://developer.apple.com/documentation/CoreFoundation/CFNumber) for the protocol. The number is a 32-bit integer that encodes the protocol value as a `FourCharCode`. In your code, use a [`CFString`](https://developer.apple.com/documentation/CoreFoundation/CFString) with one of the values from [`Protocol Values`](item-attribute-keys-and-values#Protocol-Values.md) instead of a number.
+> **Note**:  For compatibility with earlier Keychain APIs, functions in [`Keychain services`](keychain-services.md) accept a [`CFNumber`](https://developer.apple.com/documentation/corefoundation/cfnumber) for the protocol. The number is a 32-bit integer that encodes the protocol value as a `FourCharCode`. In your code, use a [`CFString`](https://developer.apple.com/documentation/corefoundation/cfstring) with one of the values from [`Protocol Values`](item-attribute-keys-and-values#Protocol-Values.md) instead of a number.
 
 
 ---

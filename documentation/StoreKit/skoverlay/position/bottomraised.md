@@ -19,7 +19,7 @@ case bottomRaised
 
 #### Discussion
 
-Use this position in case your app uses a [`UITabBar`](https://developer.apple.com/documentation/UIKit/UITabBar).
+Use this position in case your app uses a [`UITabBar`](https://developer.apple.com/documentation/uikit/uitabbar).
 
 ## See Also
 

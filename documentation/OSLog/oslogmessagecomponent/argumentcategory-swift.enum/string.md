@@ -23,7 +23,7 @@ case string
 ## See Also
 
 - [OSLogMessageComponent.ArgumentCategory.data](oslogmessagecomponent/argumentcategory-swift.enum/data.md)
-  The argument is an [`NSData`](https://developer.apple.com/documentation/Foundation/NSData) object.
+  The argument is an [`NSData`](https://developer.apple.com/documentation/foundation/nsdata) object.
 - [OSLogMessageComponent.ArgumentCategory.double](oslogmessagecomponent/argumentcategory-swift.enum/double.md)
   The argument is a double.
 - [OSLogMessageComponent.ArgumentCategory.int64](oslogmessagecomponent/argumentcategory-swift.enum/int64.md)

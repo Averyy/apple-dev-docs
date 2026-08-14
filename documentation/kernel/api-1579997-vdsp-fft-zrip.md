@@ -26,11 +26,11 @@ See also functions [`vDSP_create_fftsetup`](1580009-vdsp_create_fftsetup.md) and
 
 ## Parameters
 
-- `__Setup`: The FFT setup structure for this transform. The setup’s structure   must be greater than or equal to this function’s  .
+- `__Setup`: The FFT setup structure for this transform. The setup’s structure `Log2N` must be greater than or equal to this function’s `Log2N`.
 - `__C`: A pointer to the input-output data.
-- `__IC`: The stride between the elements in  , set to 1 for best performance.
-- `__Log2N`: The base 2 exponent of the number of elements to process. For example, to process 1024 elements, specify 10 for parameter  .
-- `__Direction`: A flag that specifies the transform direction. Pass   to transform from the time domain to the frequency domain. Pass   to transform from the frequency domain to the time domain.
+- `__IC`: The stride between the elements in `C`, set to 1 for best performance.
+- `__Log2N`: The base 2 exponent of the number of elements to process. For example, to process 1024 elements, specify 10 for parameter `Log2N`.
+- `__Direction`: A flag that specifies the transform direction. Pass [`kFFTDirection_Forward`](1645049-anonymous/kfftdirection_forward.md) to transform from the time domain to the frequency domain. Pass [`kFFTDirection_Inverse`](1645049-anonymous/kfftdirection_inverse.md) to transform from the frequency domain to the time domain.
 
 
 ---

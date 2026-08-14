@@ -21,7 +21,7 @@ let HMUserFailedAccessoriesKey: String
 
 #### Discussion
 
-The value associated with this key is an [`NSArray`](https://developer.apple.com/documentation/Foundation/NSArray) of [`NSDictionary`](https://developer.apple.com/documentation/Foundation/NSDictionary) objects. Each dictionary contains the [`NSUUID`](https://developer.apple.com/documentation/Foundation/NSUUID) of the accessory that failed to be added/removed and the value corresponding to the dictionary key is an [`NSError`](https://developer.apple.com/documentation/Foundation/NSError) that provides more details on the underlying error for that accessory.
+The value associated with this key is an [`NSArray`](https://developer.apple.com/documentation/foundation/nsarray) of [`NSDictionary`](https://developer.apple.com/documentation/foundation/nsdictionary) objects. Each dictionary contains the [`NSUUID`](https://developer.apple.com/documentation/foundation/nsuuid) of the accessory that failed to be added/removed and the value corresponding to the dictionary key is an [`NSError`](https://developer.apple.com/documentation/foundation/nserror) that provides more details on the underlying error for that accessory.
 
 ## See Also
 

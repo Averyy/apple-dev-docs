@@ -22,7 +22,7 @@ convenience init?(layoutTag: AudioChannelLayoutTag)
 
 #### Return Value
 
-A new `AVAudioChannelLayout` object, or `nil` if `layoutTag` is [`kAudioChannelLayoutTag_UseChannelDescriptions`](https://developer.apple.com/documentation/CoreAudioTypes/kAudioChannelLayoutTag_UseChannelDescriptions) or [`kAudioChannelLayoutTag_UseChannelBitmap`](https://developer.apple.com/documentation/CoreAudioTypes/kAudioChannelLayoutTag_UseChannelBitmap).
+A new `AVAudioChannelLayout` object, or `nil` if `layoutTag` is [`kAudioChannelLayoutTag_UseChannelDescriptions`](https://developer.apple.com/documentation/coreaudiotypes/kaudiochannellayouttag_usechanneldescriptions) or [`kAudioChannelLayoutTag_UseChannelBitmap`](https://developer.apple.com/documentation/coreaudiotypes/kaudiochannellayouttag_usechannelbitmap).
 
 ## Parameters
 

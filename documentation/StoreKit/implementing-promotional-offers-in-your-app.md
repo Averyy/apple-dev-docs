@@ -18,7 +18,7 @@ For business guidance on using promotional offers, see [`Auto-renewable Subscrip
 
 To present a promotional offer, first determine the subscriber’s eligibility, get the product details from the App Store, and generate a signature on your server.
 
-![Steps for determining a user’s eligibility and preparing the offer.](https://docs-assets.developer.apple.com/published/a004b42af1d7ad1be16f91965d222dc4/media-3162620%402x.png)
+![Steps for determining a user’s eligibility and preparing the offer.](/images/com.apple.storekit/media-3162620@2x.png)
 
 ###### Determine Eligibility
 
@@ -27,11 +27,11 @@ There are two aspects to determining a user’s eligibility for promotional offe
 - The App Store deems all customers with an existing or expired subscription in the app eligible to redeem a promotional offer. You can check whether the receipt contains any existing or expired subscription purchases to identify these current or lapsed subscribers.
 - You determine any additional eligibility criteria for a specific promotional offer. Eligibility can be contingent on a wide range of business logic determined by your business needs.
 
-Consider using the App Store server notification `DID_CHANGE_RENEWAL_STATUS` to determine eligibility. This notification is triggered by changes in a subscription’s auto-renew status. For example, you receive a notification when a subscriber disables auto-renew in Manage Subscriptions or contacts AppleCare to cancel their subscription. For more information on server notifications, see [`App Store Server Notifications`](https://developer.apple.com/documentation/AppStoreServerNotifications). Your server can notify your app if the user is eligible for an offer so the app can present it to the customer.
+Consider using the App Store server notification `DID_CHANGE_RENEWAL_STATUS` to determine eligibility. This notification is triggered by changes in a subscription’s auto-renew status. For example, you receive a notification when a subscriber disables auto-renew in Manage Subscriptions or contacts AppleCare to cancel their subscription. For more information on server notifications, see [`App Store Server Notifications`](https://developer.apple.com/documentation/appstoreservernotifications). Your server can notify your app if the user is eligible for an offer so the app can present it to the customer.
 
 > **Note**:  Customers can redeem promotional offers only on devices running iOS 12.2 and later, macOS 10.14.4 and later, and tvOS 12.2 and later. Consider providing messaging prompting your customer to update their OS if they try to redeem a promotional offer in your app on a device running an older OS version.
 
-Consider also implementing [`DeviceCheck`](https://developer.apple.com/documentation/DeviceCheck) to keep track of devices that have previously redeemed offers. `TwoBitKit` allows you to maintain user privacy while defining parameters you use to determine eligibility.
+Consider also implementing [`DeviceCheck`](https://developer.apple.com/documentation/devicecheck) to keep track of devices that have previously redeemed offers. `TwoBitKit` allows you to maintain user privacy while defining parameters you use to determine eligibility.
 
 ###### Request Product Details
 
@@ -80,7 +80,7 @@ Present offers to eligible subscribers only, to avoid misleading or confusing us
 
 After a user chooses to buy the promotional offer, submit the payment request, verify the receipt, and unlock the offer.
 
-![Steps for creating a payment request through unlocking service.](https://docs-assets.developer.apple.com/published/8ad058c2ab051727623df9ca5dfb34ed/media-3162621%402x.png)
+![Steps for creating a payment request through unlocking service.](/images/com.apple.storekit/media-3162621@2x.png)
 
 ###### Create a Payment Request
 
@@ -116,9 +116,9 @@ Handle the transaction state of the payment request and notify the customer as n
 
 ###### Verify the Receipt
 
-As you do for all purchases, verify the receipt with the App Store by calling the [`verifyReceipt`](https://developer.apple.com/documentation/AppStoreReceipts/Verify-Receipt) endpoint from your server. The App Store sends a JSON response containing information about the user’s purchase. See [`Validating Receipts With the App Store`](https://developer.apple.comhttps://developer.apple.com/library/archive/releasenotes/General/ValidateAppStoreReceipt/Chapters/ValidateRemotely.html) for more information.
+As you do for all purchases, verify the receipt with the App Store by calling the [`verifyReceipt`](https://developer.apple.com/documentation/appstorereceipts/verify-receipt) endpoint from your server. The App Store sends a JSON response containing information about the user’s purchase. See [`Validating Receipts With the App Store`](https://developer.apple.comhttps://developer.apple.com/library/archive/releasenotes/General/ValidateAppStoreReceipt/Chapters/ValidateRemotely.html) for more information.
 
-When a subscriber redeems an offer, the receipt contains a [`promotional_offer_id`](https://developer.apple.com/documentation/AppStoreReceipts/promotional_offer_id) in the purchase transaction. This receipt field is a string containing the offer ID that you configured in App Store Connect. You can look at past transactions in the receipt to identify the offers the customer redeemed.
+When a subscriber redeems an offer, the receipt contains a [`promotional_offer_id`](https://developer.apple.com/documentation/appstorereceipts/promotional_offer_id) in the purchase transaction. This receipt field is a string containing the offer ID that you configured in App Store Connect. You can look at past transactions in the receipt to identify the offers the customer redeemed.
 
 ###### Unlock the Service
 

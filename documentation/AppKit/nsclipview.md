@@ -31,7 +31,7 @@ The [`NSClipView`](nsclipview.md) methods are intended for when the [`NSClipView
 
 There is only one background-drawing state per [`NSScrollView`](nsscrollview.md)/[`NSClipView`](nsclipview.md) pair. The two objects do not maintain independent and distinct [`drawsBackground`](nsclipview/drawsbackground.md) and [`backgroundColor`](nsclipview/backgroundcolor.md) properties; rather, the accessors for these properties on [`NSScrollView`](nsscrollview.md) largely defer to the associated [`NSClipView`](nsclipview.md) and allow the [`NSClipView`](nsclipview.md) to maintain the state. Note that this state is not cached by the [`NSScrollView`](nsscrollview.md) object.
 
-It is also important to note that setting [`drawsBackground`](nsclipview/drawsbackground.md) to [`false`](https://developer.apple.com/documentation/Swift/false) in an [`NSScrollView`](nsscrollview.md) has the added effect of setting the [`NSClipView`](nsclipview.md) property [`copiesOnScroll`](nsclipview/copiesonscroll.md) to [`false`](https://developer.apple.com/documentation/Swift/false). The side effect of setting the [`drawsBackground`](nsclipview/drawsbackground.md) property directly to the [`NSClipView`](nsclipview.md) is the appearance of “trails” (vestiges of previous drawing) in the document view as it is scrolled.
+It is also important to note that setting [`drawsBackground`](nsclipview/drawsbackground.md) to [`false`](https://developer.apple.com/documentation/swift/false) in an [`NSScrollView`](nsscrollview.md) has the added effect of setting the [`NSClipView`](nsclipview.md) property [`copiesOnScroll`](nsclipview/copiesonscroll.md) to [`false`](https://developer.apple.com/documentation/swift/false). The side effect of setting the [`drawsBackground`](nsclipview/drawsbackground.md) property directly to the [`NSClipView`](nsclipview.md) is the appearance of “trails” (vestiges of previous drawing) in the document view as it is scrolled.
 
 ## Topics
 
@@ -79,24 +79,24 @@ It is also important to note that setting [`drawsBackground`](nsclipview/drawsba
 ### Inherits From
 - [NSView](nsview.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
 - [NSAccessibilityElementProtocol](nsaccessibilityelementprotocol.md)
 - [NSAccessibilityProtocol](nsaccessibilityprotocol.md)
 - [NSAnimatablePropertyContainer](nsanimatablepropertycontainer.md)
 - [NSAppearanceCustomization](nsappearancecustomization.md)
-- [NSCoding](../Foundation/NSCoding.md)
+- [NSCoding](../foundation/nscoding.md)
 - [NSDraggingDestination](nsdraggingdestination.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 - [NSStandardKeyBindingResponding](nsstandardkeybindingresponding.md)
 - [NSTouchBarProvider](nstouchbarprovider.md)
 - [NSUserActivityRestoring](nsuseractivityrestoring.md)
 - [NSUserInterfaceItemIdentification](nsuserinterfaceitemidentification.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

@@ -21,7 +21,7 @@ var depthStencilStorageMode: MTLStorageMode { get set }
 
 #### Discussion
 
-The default value is [`MTLStorageMode.private`](https://developer.apple.com/documentation/Metal/MTLStorageMode/private).
+The default value is [`MTLStorageMode.private`](https://developer.apple.com/documentation/metal/mtlstoragemode/private).
 
 ## See Also
 

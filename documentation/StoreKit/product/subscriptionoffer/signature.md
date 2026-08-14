@@ -24,7 +24,7 @@ struct Signature
 
 For information about promotional offers, see [`Implementing promotional offers in your app`](implementing-promotional-offers-in-your-app.md).
 
-The App Store Server Library provides a function that produces signatures for promotional offers. For more information, see [`Simplifying your implementation by using the App Store Server Library`](https://developer.apple.com/documentation/AppStoreServerAPI/simplifying-your-implementation-by-using-the-app-store-server-library).
+The App Store Server Library provides a function that produces signatures for promotional offers. For more information, see [`Simplifying your implementation by using the App Store Server Library`](https://developer.apple.com/documentation/appstoreserverapi/simplifying-your-implementation-by-using-the-app-store-server-library).
 
 ## Topics
 
@@ -44,10 +44,10 @@ The App Store Server Library provides a function that produces signatures for pr
 ## Relationships
 
 ### Conforms To
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 
 ---

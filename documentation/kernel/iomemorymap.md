@@ -47,13 +47,13 @@ The IOMemoryMap object represents a mapped range of memory, described by a IOMem
 - [- getAddress](1441813-getaddress.md)
 - [- getSize](1441811-getsize.md)
 - [- Dispatch](iomemorymap/3180655-dispatch.md)
-- [- GetAddress](../driverkit/iomemorymap/getaddress.md)
+- [- GetAddress](iomemorymap/3180656-getaddress.md)
   Returns the address of the memory block.
-- [- GetLength](../driverkit/iomemorymap/getlength.md)
+- [- GetLength](iomemorymap/3180657-getlength.md)
   Returns the length of the memory block in bytes.
 - [- GetOffset](iomemorymap/3438204-getoffset.md)
   Returns the offset from the original start of the memory block.
-- [- free](../driverkit/iomemorymap/free.md)
+- [- free](iomemorymap/3180658-free.md)
   Performs any final cleanup for the memory map object.
 - [- getAddressTask](iomemorymap/1441809-getaddresstask.md)
 - [- getLength](iomemorymap/1441789-getlength.md)

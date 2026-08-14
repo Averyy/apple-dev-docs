@@ -24,7 +24,7 @@ var propertiesToUpdate: [AnyHashable : Any]? { get set }
 
 The dictionary keys are either [`NSPropertyDescription`](nspropertydescription.md) objects or strings that identify the property name.
 
-The dictionary values are either a constant value or an [`NSExpression`](https://developer.apple.com/documentation/Foundation/NSExpression) that evaluates to a scalar value.
+The dictionary values are either a constant value or an [`NSExpression`](https://developer.apple.com/documentation/foundation/nsexpression) that evaluates to a scalar value.
 
 ## See Also
 

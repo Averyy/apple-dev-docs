@@ -21,7 +21,7 @@ A message that tells people why the app is requesting to send user data to Apple
 
 ## See Also
 
-- [Asking Permission to Use Speech Recognition](../Speech/asking-permission-to-use-speech-recognition.md)
+- [Asking Permission to Use Speech Recognition](../speech/asking-permission-to-use-speech-recognition.md)
   Ask the user’s permission to perform speech recognition using Apple’s servers.
 
 

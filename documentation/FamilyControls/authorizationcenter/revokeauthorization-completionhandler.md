@@ -21,13 +21,13 @@ If your app’s authentication status is [`AuthorizationStatus.approved`](author
 
 > **Note**: This method has no effect if your app’s current authentication status is [`AuthorizationStatus.denied`](authorizationstatus/denied.md).
 
-The completion handler’s [`Result`](https://developer.apple.com/documentation/Swift/Result) parameter indicates whether the request completed successfully. It doesn’t indicate your app’s authorization state.
+The completion handler’s [`Result`](https://developer.apple.com/documentation/swift/result) parameter indicates whether the request completed successfully. It doesn’t indicate your app’s authorization state.
 
 After you revoke authorization, your app no longer provides parental controls, and the system no longer enforces restrictions, such as preventing the user from deleting your app.
 
 ## Parameters
 
-- `completionHandler`: A closure the system calls after it completes the authorization request. The system passes the following parameters: - **`result`**: A value that represents either a success or a failure, including an associated [`Error`](https://developer.apple.com/documentation/Swift/Error) object for failures.
+- `completionHandler`: A closure the system calls after it completes the authorization request. The system passes the following parameters: - **`result`**: A value that represents either a success or a failure, including an associated [`Error`](https://developer.apple.com/documentation/swift/error) object for failures.
 
 ## See Also
 

@@ -22,9 +22,9 @@ final class CLKComplicationTemplateGraphicRectangularFullView<Content> where Con
 
 This template belongs to the [`CLKComplicationFamily.graphicRectangular`](clkcomplicationfamily/graphicrectangular.md) family. [`Figure 1`](clkcomplicationtemplategraphicrectangularfullview#3667288.md) shows the layout of the complication and where it appears on the clock face.
 
-![A diagram showing the layout of the complication that calls out the content and the safe area insets.](https://docs-assets.developer.apple.com/published/a8a67b1cfbffd5ea77d58b9b25204045/media-3667288%402x.png)
+![A diagram showing the layout of the complication that calls out the content and the safe area insets.](/images/com.apple.clockkit/media-3667288@2x.png)
 
-The following table lists the dimensions of the view displayed by this template. The template automatically masks the view to a rounded rectangle with a 8-pixel corner radius. By default, the template also provides a safe area inset to help you avoid clipping your content. Use the [`edgesIgnoringSafeArea(_:)`](https://developer.apple.com/documentation/SwiftUI/View/edgesIgnoringSafeArea(_:)) modifier if you need to fill the complication to the edges.
+The following table lists the dimensions of the view displayed by this template. The template automatically masks the view to a rounded rectangle with a 8-pixel corner radius. By default, the template also provides a safe area inset to help you avoid clipping your content. Use the [`edgesIgnoringSafeArea(_:)`](https://developer.apple.com/documentation/swiftui/view/edgesignoringsafearea(_:)) modifier if you need to fill the complication to the edges.
 
 | Apple Watch Size | Width | Height |
 | --- | --- | --- |
@@ -51,13 +51,13 @@ The following table lists the dimensions of the view displayed by this template.
 ### Inherits From
 - [CLKComplicationTemplate](clkcomplicationtemplate.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCopying](../Foundation/NSCopying.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCopying](../foundation/nscopying.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

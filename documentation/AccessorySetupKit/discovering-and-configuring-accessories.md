@@ -32,7 +32,7 @@ If you add `Bluetooth` to the list of supported protocols, you also need to add 
 
 ##### Activate a Discovery Session
 
-The [`ASAccessorySession`](asaccessorysession.md) is how your app uses the AccessorySetupKit framework. In your app, you create an instance of [`ASAccessorySession`](asaccessorysession.md) and activate it to receive callbacks with events as the session processes events. The [`activate(on:eventHandler:)`](asaccessorysession/activate(on:eventhandler:).md) method takes a [`DispatchQueue`](https://developer.apple.com/documentation/Dispatch/DispatchQueue) and an event-handling block or closure. The callbacks occur on the provided queue, which defaults to [`main`](https://developer.apple.com/documentation/Dispatch/DispatchQueue/main).
+The [`ASAccessorySession`](asaccessorysession.md) is how your app uses the AccessorySetupKit framework. In your app, you create an instance of [`ASAccessorySession`](asaccessorysession.md) and activate it to receive callbacks with events as the session processes events. The [`activate(on:eventHandler:)`](asaccessorysession/activate(on:eventhandler:).md) method takes a [`DispatchQueue`](https://developer.apple.com/documentation/dispatch/dispatchqueue) and an event-handling block or closure. The callbacks occur on the provided queue, which defaults to [`main`](https://developer.apple.com/documentation/dispatch/dispatchqueue/main).
 
 The event handler receives a single parameter of type [`ASAccessoryEvent`](asaccessoryevent.md), which has an [`eventType`](asaccessoryevent/eventtype.md) that you use to determine what to do with each callback. For example, shortly after activating the session, your callback receives the [`ASAccessoryEventType.activated`](asaccessoryeventtype/activated.md) event. The following listing comments on the meaning of these events and how you may want to handle them.
 
@@ -121,7 +121,7 @@ When the picker appears, the person using the app sees a view of all nearby acce
 
 The following figure shows a single accessory selected in the picker.
 
-![The accessory picker sheet, covering the bottom part of the screen. The top of sheet shows the title ‘Finding Accessories’ and a close button. Below this is the image of a six-sided die and the caption ‘Bluetooth Die’, followed by a serial number. The bottom of the sheet shows two buttons, a defautl ‘Set Up’ button, followed by a ‘Learn More’ button.](https://docs-assets.developer.apple.com/published/8b4b33dc0b9ef7aee54d56d61b2dd461/discovering-and-configuring-accessories-01%402x.png)
+![The accessory picker sheet, covering the bottom part of the screen. The top of sheet shows the title ‘Finding Accessories’ and a close button. Below this is the image of a six-sided die and the caption ‘Bluetooth Die’, followed by a serial number. The bottom of the sheet shows two buttons, a defautl ‘Set Up’ button, followed by a ‘Learn More’ button.](/images/com.apple.AccessorySetupKit/discovering-and-configuring-accessories-01@2x.png)
 
 ##### Use the Picker When Migrating to Accessorysetupkit
 
@@ -130,9 +130,9 @@ You can also perform a one-time migration of previously-configured accessories, 
 For items you want to migrate, set one or both of the following:
 
 - An [`hotspotSSID`](asmigrationdisplayitem/hotspotssid.md), which must be a full SSID and not a prefix.
-- An [`peripheralIdentifier`](asmigrationdisplayitem/peripheralidentifier.md), which corresponds to the [`identifier`](https://developer.apple.com/documentation/CoreBluetooth/CBPeer/identifier) property of the [`CBPeer`](https://developer.apple.com/documentation/CoreBluetooth/CBPeer) type.
+- An [`peripheralIdentifier`](asmigrationdisplayitem/peripheralidentifier.md), which corresponds to the [`identifier`](https://developer.apple.com/documentation/corebluetooth/cbpeer/identifier) property of the [`CBPeer`](https://developer.apple.com/documentation/corebluetooth/cbpeer) type.
 
-> ❗ **Important**: Don’t initialize a [`CBCentralManager`](https://developer.apple.com/documentation/CoreBluetooth/CBCentralManager) before migration is complete. If you do, your callback handler receives an error and the picker fails to appear.
+> ❗ **Important**: Don’t initialize a [`CBCentralManager`](https://developer.apple.com/documentation/corebluetooth/cbcentralmanager) before migration is complete. If you do, your callback handler receives an error and the picker fails to appear.
 
 ##### Perform Custom Filtering
 
@@ -188,7 +188,7 @@ case .pickerDidDismiss:
     self.handleAccessoryAdded(accessory)
 ```
 
-The event’s [`accessory`](asaccessoryevent/accessory.md) property contains details of the selected device, like its [`displayName`](asaccessory/displayname.md) and an [`bluetoothIdentifier`](asaccessory/bluetoothidentifier.md) for Bluetooth devices or [`ssid`](asaccessory/ssid.md) for Wi-Fi. Use this information to connect to the accessory — using [`Core Bluetooth`](https://developer.apple.com/documentation/CoreBluetooth) for Bluetooth or [`Network Extension`](https://developer.apple.com/documentation/NetworkExtension) for Wi-Fi — and begin your device-specific setup process.
+The event’s [`accessory`](asaccessoryevent/accessory.md) property contains details of the selected device, like its [`displayName`](asaccessory/displayname.md) and an [`bluetoothIdentifier`](asaccessory/bluetoothidentifier.md) for Bluetooth devices or [`ssid`](asaccessory/ssid.md) for Wi-Fi. Use this information to connect to the accessory — using [`Core Bluetooth`](https://developer.apple.com/documentation/corebluetooth) for Bluetooth or [`Network Extension`](https://developer.apple.com/documentation/networkextension) for Wi-Fi — and begin your device-specific setup process.
 
 ```swift
 private func handleAccessoryAdded(_ accessory: ASAccessory) {

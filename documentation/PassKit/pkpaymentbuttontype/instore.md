@@ -23,7 +23,7 @@ case inStore
 
 This button looks like:
 
-![A button with the text “Pay with” and the Apple Pay logo.](https://docs-assets.developer.apple.com/published/19a92c91dae22ac56f214b6a337c66af/media-2903983%402x.png)
+![A button with the text “Pay with” and the Apple Pay logo.](/images/com.apple.passkit/media-2903983@2x.png)
 
 For design guidance, see [`Human Interface Guidelines > Apple Pay > Buttons and Marks`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/apple-pay/overview/buttons-and-marks/).
 

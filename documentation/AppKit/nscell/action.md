@@ -18,7 +18,7 @@ var action: Selector? { get set }
 
 The value of this property is the selector to call on the cell’s [`target`](nscell/target.md) object. Set the value of this property to `nil` to stop the delivery of action messages.
 
-The default value of this property is `nil`. Setting the value of this property raises with [`internalInconsistencyException`](https://developer.apple.com/documentation/Foundation/NSExceptionName/internalInconsistencyException). Subclasses are expected to override this property as part of their target/action implementation.
+The default value of this property is `nil`. Setting the value of this property raises with [`internalInconsistencyException`](https://developer.apple.com/documentation/foundation/nsexceptionname/internalinconsistencyexception). Subclasses are expected to override this property as part of their target/action implementation.
 
 ## See Also
 

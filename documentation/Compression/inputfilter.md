@@ -31,9 +31,9 @@ class InputFilter<D> where D : DataProtocol
 
 ## See Also
 
-- [Compressing and decompressing data with input and output filters](../Accelerate/compressing-and-decompressing-data-with-input-and-output-filters.md)
+- [Compressing and decompressing data with input and output filters](../accelerate/compressing-and-decompressing-data-with-input-and-output-filters.md)
   Compress and decompress streamed or from-memory data, using input and output filters.
-- [Compressing and decompressing files with stream compression](../Accelerate/compressing-and-decompressing-files-with-stream-compression.md)
+- [Compressing and decompressing files with stream compression](../accelerate/compressing-and-decompressing-files-with-stream-compression.md)
   Perform compression for all files and decompression for files with supported extension types.
 - [class OutputFilter](outputfilter.md)
   An encoder-decoder that writes output data to a stream.

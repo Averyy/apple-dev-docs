@@ -28,7 +28,13 @@ In OS X v10.4 and earlier, this function is not implemented and returns an error
 
 ## Parameters
 
-- `workflowItem`: A file system URL pointing to the workflow item that will handle the PDF file. See  . The following table describes the different types of workflow items for this function.
+- `workflowItem`: A file system URL pointing to the workflow item that will handle the PDF file. See [`PMWorkflowCopyItems(_:)`](1459914-pmworkflowcopyitems.md). The following table describes the different types of workflow items for this function. | Workflow item | Description |
+| --- | --- |
+| Automator action | The action is executed for the PDF file. Available in macOS 10.4 and later. |
+| Folder alias | The PDF file is moved to the resolved folder. |
+| Application or application alias | The application is sent an open event along with a reference to the PDF file. |
+| Compiled AppleScript | The script is run with an open event along with a reference to the PDF file. |
+| Executable tool | The tool is run with the specified settings and PDF file. This function converts these parameters into a CUPS options string and passes the options string to the tool. |
 - `settings`: The print settings to apply to the PDF document. These settings are passed to the workflow item as a CUPS options string.
 - `pdfFile`: A file system URL pointing to the PDF file to be processed by the workflow item.
 

@@ -16,7 +16,7 @@ func lastKeyView() -> NSView!
 
 #### Discussion
 
-The default return value of this method is `nil`. When the authorization plug-in calls this method, your subclass should return the last view in the keyboard loop of your custom [`NSView`](https://developer.apple.com/documentation/AppKit/NSView) object.
+The default return value of this method is `nil`. When the authorization plug-in calls this method, your subclass should return the last view in the keyboard loop of your custom [`NSView`](https://developer.apple.com/documentation/appkit/nsview) object.
 
 ## See Also
 

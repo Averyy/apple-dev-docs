@@ -23,7 +23,7 @@ mutating func withUnsafeMutableBufferPointer<R>(_ body: (inout UnsafeMutableBuff
 
 ## Parameters
 
-- `body`: A closure that receives an [`UnsafeMutableBufferPointer`](https://developer.apple.com/documentation/Swift/UnsafeMutableBufferPointer) to the sequence’s contiguous storage.
+- `body`: A closure that receives an [`UnsafeMutableBufferPointer`](https://developer.apple.com/documentation/swift/unsafemutablebufferpointer) to the sequence’s contiguous storage.
 
 
 ---

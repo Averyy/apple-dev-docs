@@ -41,7 +41,7 @@ self.captureSession.startRunning()
 
 To capture a photo, first create an [`AVCapturePhotoSettings`](avcapturephotosettings.md) object describing the settings you want to use for that shot and the data format for the resulting still photo. For example:
 
-- On supported devices, you can use the HEIF/HEVC format for improved image quality at smaller file sizes: use [`init(format:)`](avcapturephotosettings/init(format:).md) and choose [`hevc`](avvideocodectype/hevc.md) for the video codec. On devices without HEVC support, use the default initializer [`init()`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class/init()) to fall back to JPEG format.
+- On supported devices, you can use the HEIF/HEVC format for improved image quality at smaller file sizes: use [`init(format:)`](avcapturephotosettings/init(format:).md) and choose [`hevc`](avvideocodectype/hevc.md) for the video codec. On devices without HEVC support, use the default initializer [`init()`](https://developer.apple.com/documentation/objectivec/nsobject-swift.class/init()) to fall back to JPEG format.
 - To shoot in RAW format, use [`init(rawPixelFormatType:)`](avcapturephotosettings/init(rawpixelformattype:).md) with one of the [`availableRawPhotoPixelFormatTypes`](avcapturephotooutput/availablerawphotopixelformattypes-5fatm.md) supported by the photo output.
 
 After creating a photo settings object, you can choose other settings for the photo. For example, the code below creates a settings object for HEIF/HEVC shooting, with automatic flash and image stabilization.
@@ -108,7 +108,7 @@ When your captured image data is ready for use, the photo output calls your dele
   Add the power of a photography studio and lighting rig to your app with the new Constant Color API.
 - [Capturing photos in RAW and Apple ProRAW formats](capturing-photos-in-raw-and-apple-proraw-formats.md)
   Support professional photography workflows by enabling minimally processed image capture in your camera app.
-- [Supporting Continuity Camera in Your Mac App](../AppKit/supporting-continuity-camera-in-your-mac-app.md)
+- [Supporting Continuity Camera in Your Mac App](../appkit/supporting-continuity-camera-in-your-mac-app.md)
   Incorporate scanned documents and pictures from a user’s iPhone, iPad, or iPod touch into your Mac app using Continuity Camera.
 - [class AVCapturePhoto](avcapturephoto.md)
   A container for image data from a photo capture output.

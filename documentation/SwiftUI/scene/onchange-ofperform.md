@@ -63,7 +63,7 @@ The system passes the new value into the closure. If you need the old value, cap
 
 ## Parameters
 
-- `value`: The value to check when determining whether to run the closure. The value must conform to the [`Equatable`](https://developer.apple.com/documentation/Swift/Equatable) protocol.
+- `value`: The value to check when determining whether to run the closure. The value must conform to the [`Equatable`](https://developer.apple.com/documentation/swift/equatable) protocol.
 - `action`: A closure to run when the value changes. The closure provides a single `newValue` parameter that indicates the changed value.
 
 

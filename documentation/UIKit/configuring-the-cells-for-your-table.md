@@ -10,9 +10,9 @@ Cells provide the visual representation of your table’s rows. For most tables,
 
 You specify the appearance of cells at design time in your storyboard file. Xcode provides one prototype cell for each table, and you can add more prototype cells as needed. A prototype cell acts as a template for your cell’s appearance. It includes the views you want to display and their arrangement within the content area of the cell. At runtime, the table’s data source object creates actual cells from the prototypes and configures them with your app’s data.
 
-![A screenshot that shows a table with four prototype cells.](https://docs-assets.developer.apple.com/published/3b92f1c8cb5d51695c3526e43e172b35/configuring-the-cells-for-your-table-1%402x.png)
+![A screenshot that shows a table with four prototype cells.](/images/com.apple.uikit/configuring-the-cells-for-your-table-1@2x.png)
 
-For tips on how to design the appearance of your cells, see Human Interface Guidelines > [`Lists and tables`](https://developer.apple.com/design/Human-Interface-Guidelines/lists-and-tables).
+For tips on how to design the appearance of your cells, see Human Interface Guidelines > [`Lists and tables`](https://developer.apple.com/design/human-interface-guidelines/lists-and-tables).
 
 ##### Assign a Reuse Identifier to Each Cell
 
@@ -30,7 +30,7 @@ The simplest way to configure a cell is to use one of the built-in styles provid
 
 To configure a prototype cell with one of the standard styles, select the cell in your storyboard and set the cell’s Style property to a value other than custom.
 
-![A screenshot that shows the four standard cell styles: basic, right-detail, left-detail, and title-subtitle.](https://docs-assets.developer.apple.com/published/0f798192b56bbf247e51cc3e978e518b/configuring-the-cells-for-your-table-2%402x.png)
+![A screenshot that shows the four standard cell styles: basic, right-detail, left-detail, and title-subtitle.](/images/com.apple.uikit/configuring-the-cells-for-your-table-2@2x.png)
 
 In your [`tableView(_:cellForRowAt:)`](uitableviewdatasource/tableview(_:cellforrowat:).md) method, configure the content of your cell using the [`textLabel`](uitableviewcell/textlabel.md), [`detailTextLabel`](uitableviewcell/detailtextlabel.md), and [`imageView`](uitableviewcell/imageview.md) properties of [`UITableViewCell`](uitableviewcell.md). Those properties contain views, but the cell object only assigns a view if the style supports the corresponding content. For example, the Basic cell style doesn’t support a detail string, so the [`detailTextLabel`](uitableviewcell/detailtextlabel.md) property is `nil` for that style. The following example code shows how to configure a cell that uses the basic cell style.
 
@@ -53,7 +53,7 @@ For appearances other than the standard styles, use the custom cell style. With 
 
 To configure a custom cell, drag views into the prototype cell for your table. The following illustration shows a cell with a custom layout and formatting for its views. You use constraints to position your views within the cell’s content area. When setting up constraints, use the “Constrain to margins” option to preserve the gap between the content areas of your cells.
 
-![A screenshot that shows a custom cell with an image on the right side of the cell, and two labels that each use different fonts to distinguish the type of information they contain.](https://docs-assets.developer.apple.com/published/081a2fd46c86572f80305d9a85fe7f1a/configuring-the-cells-for-your-table-3%402x.png)
+![A screenshot that shows a custom cell with an image on the right side of the cell, and two labels that each use different fonts to distinguish the type of information they contain.](/images/com.apple.uikit/configuring-the-cells-for-your-table-3@2x.png)
 
 For custom cells, you need to define a [`UITableViewCell`](uitableviewcell.md) subclass to access your cell’s views. Add outlets to your subclass and connect those outlets to the corresponding views in your prototype cell.
 

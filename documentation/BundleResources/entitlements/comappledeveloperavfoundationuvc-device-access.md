@@ -14,7 +14,7 @@ A Boolean value that indicates whether the app can stream USB UVC devices connec
 
 #### Discussion
 
-On visionOS, your app must have the this entitlement to discover and use devices of type [`external`](https://developer.apple.com/documentation/AVFoundation/AVCaptureDevice/DeviceType-swift.struct/external) using an [`AVCaptureDevice.DiscoverySession`](https://developer.apple.com/documentation/AVFoundation/AVCaptureDevice/DiscoverySession).
+On visionOS, your app must have the this entitlement to discover and use devices of type [`external`](https://developer.apple.com/documentation/avfoundation/avcapturedevice/devicetype-swift.struct/external) using an [`AVCaptureDevice.DiscoverySession`](https://developer.apple.com/documentation/avfoundation/avcapturedevice/discoverysession).
 
 This feature only supports USB2 devices drawing a maximum 500mA and supports the use of up to 1 hub.
 

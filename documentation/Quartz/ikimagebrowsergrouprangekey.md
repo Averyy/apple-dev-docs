@@ -16,7 +16,7 @@ let IKImageBrowserGroupRangeKey: String
 
 #### Discussion
 
-The associated value is an [`NSValue`](https://developer.apple.com/documentation/Foundation/NSValue) object. This is required if the view uses grouping
+The associated value is an [`NSValue`](https://developer.apple.com/documentation/foundation/nsvalue) object. This is required if the view uses grouping
 
 ## See Also
 

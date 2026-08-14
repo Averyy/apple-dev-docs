@@ -23,7 +23,7 @@ init(location: CLLocation)
 
 ## Parameters
 
-- `location`: The [`CLLocation`](https://developer.apple.com/documentation/CoreLocation/CLLocation) object that contains the latitude, longitude, and course information for this proxy.
+- `location`: The [`CLLocation`](https://developer.apple.com/documentation/corelocation/cllocation) object that contains the latitude, longitude, and course information for this proxy.
 
 
 ---

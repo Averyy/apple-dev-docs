@@ -97,7 +97,7 @@ private func donateInteraction(for order: Order) {
 
 As mentioned earlier, to handle a order soup intent, Soup Chef provides an Intents app extension, which handles the intent in the background. This makes it possible for the user to remain on the current screen – such as the Lock screen – while Soup Chef places the order in the background.
 
-There are times, however, when the app must launch to handle the intent; for example, when the user taps the shortcut in Search. That’s why Soup Chef also handles the order soup intent in its [`scene(_:continue:)`](https://developer.apple.com/documentation/UIKit/UISceneDelegate/scene(_:continue:)) implementation found in the scene delegate.
+There are times, however, when the app must launch to handle the intent; for example, when the user taps the shortcut in Search. That’s why Soup Chef also handles the order soup intent in its [`scene(_:continue:)`](https://developer.apple.com/documentation/uikit/uiscenedelegate/scene(_:continue:)) implementation found in the scene delegate.
 
 ```swift
 /// The system calls this method when continuing a user activity through the restoration handler

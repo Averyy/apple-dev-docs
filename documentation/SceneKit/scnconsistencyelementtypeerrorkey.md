@@ -22,7 +22,7 @@ let SCNConsistencyElementTypeErrorKey: String
 
 #### Discussion
 
-The value for this key is a [`NSString`](https://developer.apple.com/documentation/Foundation/NSString) object naming a scene file element type.
+The value for this key is a [`NSString`](https://developer.apple.com/documentation/foundation/nsstring) object naming a scene file element type.
 
 ## See Also
 

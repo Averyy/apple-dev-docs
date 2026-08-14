@@ -28,12 +28,12 @@ In Mac OS 7.1 through 9.x and macOS version v10.2 and later, `AEGetCoercionHandl
 
 ## Parameters
 
-- `fromType`: The descriptor type of the data coerced by the handler. For a list of AppleScript’s predefined descriptor types, see  . See  .
-- `toType`: The descriptor type of the resulting data. For a list of AppleScript’s predefined descriptor types, see  .
-- `handler`: A universal procedure pointer. On return, a pointer to the specified handler, if a coercion table entry exists that exactly matches the values supplied in the parameters   and  . See  .
+- `fromType`: The descriptor type of the data coerced by the handler. For a list of AppleScript’s predefined descriptor types, see [`Descriptor Type Constants`](apple_events/1542788-descriptor_type_constants.md). See [`DescType`](desctype.md).
+- `toType`: The descriptor type of the resulting data. For a list of AppleScript’s predefined descriptor types, see [`Descriptor Type Constants`](apple_events/1542788-descriptor_type_constants.md).
+- `handler`: A universal procedure pointer. On return, a pointer to the specified handler, if a coercion table entry exists that exactly matches the values supplied in the parameters `fromType` and `toType`. See [`AECoercionHandlerUPP`](aecoercionhandlerupp.md).
 - `handlerRefcon`: A pointer to a reference constant. On return, the reference constant from the coercion table entry for the specified coercion handler. The Apple Event Manager passes this reference constant to the handler each time it calls the handler. The reference constant may have a value of 0.
-- `fromTypeIsDesc`: A pointer to a Boolean value. The   function returns a value of   in this parameter if the coercion handler expects the data as a descriptor or  , if the coercion handler expects a pointer to the data.
-- `isSysHandler`: Specifies the coercion table to get the handler from. Pass   to get the handler from the system coercion table or   to get the handler from your application’s coercion table. Use of the system coercion table is not recommended.
+- `fromTypeIsDesc`: A pointer to a Boolean value. The `AEGetCoercionHandler` function returns a value of `TRUE` in this parameter if the coercion handler expects the data as a descriptor or `FALSE`, if the coercion handler expects a pointer to the data.
+- `isSysHandler`: Specifies the coercion table to get the handler from. Pass `TRUE` to get the handler from the system coercion table or `FALSE` to get the handler from your application’s coercion table. Use of the system coercion table is not recommended.
 
 ## See Also
 

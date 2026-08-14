@@ -16,11 +16,11 @@ virtual void CompleteAsyncIO(OSAction *action, IOReturn status, uint32_t actualB
 
 #### Discussion
 
-Implement a custom version of this method and use the [`TYPE`](https://developer.apple.com/documentation/DriverKit/TYPE) macro to let the system know that your method conforms to this prototype.
+Implement a custom version of this method and use the [`TYPE`](https://developer.apple.com/documentation/driverkit/type) macro to let the system know that your method conforms to this prototype.
 
 ## Parameters
 
-- `action`: A pointer to the [`OSAction`](https://developer.apple.com/documentation/DriverKit/OSAction) object of the request.
+- `action`: A pointer to the [`OSAction`](https://developer.apple.com/documentation/driverkit/osaction) object of the request.
 - `status`: The result of the operation.
 - `actualByteCount`: The number of bytes that the operation actually transferred.
 - `completionTimestamp`: The absolute time that the transfer completed.

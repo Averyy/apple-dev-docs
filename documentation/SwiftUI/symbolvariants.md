@@ -22,7 +22,7 @@ struct SymbolVariants
 
 #### Overview
 
-Many of the [`SF Symbols`](https://developer.apple.com/design/Human-Interface-Guidelines/sf-symbols) that you can add to your app using an [`Image`](image.md) or a [`Label`](label.md) instance have common variants, like a filled version or a version that’s contained within a circle. The symbol’s name indicates the variant:
+Many of the [`SF Symbols`](https://developer.apple.com/design/human-interface-guidelines/sf-symbols) that you can add to your app using an [`Image`](image.md) or a [`Label`](label.md) instance have common variants, like a filled version or a version that’s contained within a circle. The symbol’s name indicates the variant:
 
 ```swift
 VStack(alignment: .leading) {
@@ -33,7 +33,7 @@ VStack(alignment: .leading) {
 }
 ```
 
-![A screenshot showing an outlined heart, a filled heart, a heart in](https://docs-assets.developer.apple.com/published/8cf2af925aa53e568847c8f7e4f67777/SymbolVariants-1%402x.png)
+![A screenshot showing an outlined heart, a filled heart, a heart in](/images/com.apple.SwiftUI/SymbolVariants-1@2x.png)
 
 You can configure a part of your view hierarchy to use a particular variant for all symbols in that view and its child views using `SymbolVariants`. Add the [`symbolVariant(_:)`](view/symbolvariant(_:).md) modifier to a view to set a variant for that view’s environment. For example, you can use the modifier to create the same set of labels as in the example above, using only the base name of the symbol in the label declarations:
 
@@ -91,10 +91,10 @@ SwiftUI sets a variant for you in some environments. For example, SwiftUI automa
 ## Relationships
 
 ### Conforms To
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

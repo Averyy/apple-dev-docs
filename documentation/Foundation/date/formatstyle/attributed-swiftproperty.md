@@ -51,15 +51,15 @@ The runs of the resulting attributed string have the following attributes:
 | --- | --- |
 | Mar | [`AttributeScopes.FoundationAttributes.DateFieldAttribute.Field.month`](attributescopes/foundationattributes/datefieldattribute/field/month.md) |
 | 15 | [`AttributeScopes.FoundationAttributes.DateFieldAttribute.Field.day`](attributescopes/foundationattributes/datefieldattribute/field/day.md) |
-| 2022 | [`AttributeScopes.FoundationAttributes.DateFieldAttribute.Field.year`](attributescopes/foundationattributes/datefieldattribute/field/year.md) ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) [`emphasized`](inlinepresentationintent/emphasized.md)  ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) [`stronglyEmphasized`](inlinepresentationintent/stronglyemphasized.md) |
+| 2022 | [`AttributeScopes.FoundationAttributes.DateFieldAttribute.Field.year`](attributescopes/foundationattributes/datefieldattribute/field/year.md) ![None](/images/com.apple.foundation/spacer.png) [`emphasized`](inlinepresentationintent/emphasized.md)  ![None](/images/com.apple.foundation/spacer.png) [`stronglyEmphasized`](inlinepresentationintent/stronglyemphasized.md) |
 | 10 | [`AttributeScopes.FoundationAttributes.DateFieldAttribute.Field.hour`](attributescopes/foundationattributes/datefieldattribute/field/hour.md) |
 | 06 | [`AttributeScopes.FoundationAttributes.DateFieldAttribute.Field.minute`](attributescopes/foundationattributes/datefieldattribute/field/minute.md) |
 | 46 | [`AttributeScopes.FoundationAttributes.DateFieldAttribute.Field.second`](attributescopes/foundationattributes/datefieldattribute/field/second.md) |
 | AM | [`AttributeScopes.FoundationAttributes.DateFieldAttribute.Field.amPM`](attributescopes/foundationattributes/datefieldattribute/field/ampm.md) |
 
-If you create a SwiftUI [`Text`](https://developer.apple.com/documentation/SwiftUI/Text) view with this attributed string, SwiftUI renders the combination of [`emphasized`](inlinepresentationintent/emphasized.md) and [`stronglyEmphasized`](inlinepresentationintent/stronglyemphasized.md) attributes as bold, italicized text, as seen in the following screenshot.
+If you create a SwiftUI [`Text`](https://developer.apple.com/documentation/swiftui/text) view with this attributed string, SwiftUI renders the combination of [`emphasized`](inlinepresentationintent/emphasized.md) and [`stronglyEmphasized`](inlinepresentationintent/stronglyemphasized.md) attributes as bold, italicized text, as seen in the following screenshot.
 
-![A macOS window with a text view showing the current date and time. The year is displayed in bold, italicized text.](https://docs-assets.developer.apple.com/published/28831814e748f64678cda91ac0f2f449/media-3957718%402x.png)
+![A macOS window with a text view showing the current date and time. The year is displayed in bold, italicized text.](/images/com.apple.foundation/media-3957718@2x.png)
 
 ## See Also
 

@@ -20,7 +20,7 @@ This sample code project demonstrates how to implement a virtual conference exte
 To configure the sample code project, do the following in Xcode:
 
 1. Open the sample in the latest version of Xcode.
-2. For all targets in the sample project, choose your team from the Team menu in the Signing & Capabilities pane to let Xcode automatically manage your provisioning profile. For more information, see “Set the bundle ID” and “Assign the project to a team” in [`Preparing your app for distribution`](https://developer.apple.com/documentation/Xcode/preparing-your-app-for-distribution).
+2. For all targets in the sample project, choose your team from the Team menu in the Signing & Capabilities pane to let Xcode automatically manage your provisioning profile. For more information, see “Set the bundle ID” and “Assign the project to a team” in [`Preparing your app for distribution`](https://developer.apple.com/documentation/xcode/preparing-your-app-for-distribution).
 
 ##### Add a Virtual Conference Extension Target to Your Project
 
@@ -29,7 +29,7 @@ To create a virtual conference extension, add a virtual conference extension tar
 To add a virtual conference extension target, follow these steps:
 
 1. Choose File > New > Target.
-2. In the sheet that appears, choose the platform your app supports. For instance, select the Virtual Conference template under the iOS platform. If your app supports an additional platform such as macOS, add the platform as a destination to the created extension. For more information, see “Configure the supported destinations for a target” in  [`Configuring a multiplatform app`](https://developer.apple.com/documentation/Xcode/configuring-a-multiplatform-app-target).
+2. In the sheet that appears, choose the platform your app supports. For instance, select the Virtual Conference template under the iOS platform. If your app supports an additional platform such as macOS, add the platform as a destination to the created extension. For more information, see “Configure the supported destinations for a target” in  [`Configuring a multiplatform app`](https://developer.apple.com/documentation/xcode/configuring-a-multiplatform-app-target).
 3. Scroll down to the Application Extension section.
 4. Select the Virtual Conference template.
 5. Click Next.

@@ -26,15 +26,15 @@ To illustrate how the framework computes this value, assume Alice encounters Bob
 
 Bob’s minutes-at-attenuation weight is 50, his infectiousness weight is 100%, and his report type weight is 200% (a confirmed test). His exposure risk value is 100 as dictated by his Public Health Authority.
 
-![A diagram showing that Bob’s exposure risk value is a product of his minutes-at-attenuation weight, infectiousness weight, and report type. ](https://docs-assets.developer.apple.com/published/edb87363ba43f32f6cea7ce3c0e77ea9/media-3744329%402x.png)
+![A diagram showing that Bob’s exposure risk value is a product of his minutes-at-attenuation weight, infectiousness weight, and report type. ](/images/com.apple.exposurenotification/media-3744329@2x.png)
 
 Carol’s minutes-at-attenuation weight is 30, her infectiousness weight is 100%, and her report type weight is 100% (a confirmed clinical diagnosis). Her exposure risk value is 30 as dictated by her Public Health Authority.
 
-![A diagram showing that Carol’s exposure risk value is a product of her minutes-at-attenuation weight, infectiousness weight, and report type. ](https://docs-assets.developer.apple.com/published/996e341da3d94c1f1fd0224030a40e9b/media-3744330%402x.png)
+![A diagram showing that Carol’s exposure risk value is a product of her minutes-at-attenuation weight, infectiousness weight, and report type. ](/images/com.apple.exposurenotification/media-3744330@2x.png)
 
 Dave’s minutes-at-attenuation weight is 40, his infectiousness weight is 0%, and his report type weight is 80% (a self-diagnosis). His exposure risk value is 0 as dictated by his Public Health Authority.
 
-![A diagram showing that Dave’s exposure risk value is a product of his minutes-at-attenuation weight, infectiousness weight, and report type. ](https://docs-assets.developer.apple.com/published/377c78066bdd32826913eefeea0a53d7/media-3744527%402x.png)
+![A diagram showing that Dave’s exposure risk value is a product of his minutes-at-attenuation weight, infectiousness weight, and report type. ](/images/com.apple.exposurenotification/media-3744527@2x.png)
 
 Alice’s exposure summary item for that day would be a [`weightedDurationSum`](enexposuresummaryitem/weighteddurationsum.md) of 120 (50 + 30 + 40), a [`maximumScore`](enexposuresummaryitem/maximumscore.md) of 100 (the maximum of the exposure risk values), and a [`scoreSum`](enexposuresummaryitem/scoresum.md) of 130 (100 + 30).
 
@@ -51,14 +51,14 @@ Alice’s exposure summary item for that day would be a [`weightedDurationSum`](
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

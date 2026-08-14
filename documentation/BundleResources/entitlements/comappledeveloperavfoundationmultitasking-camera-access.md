@@ -15,7 +15,7 @@ A Boolean value that indicates whether an app may continue using the camera at t
 
 #### Discussion
 
-When your app enters a multitasking mode, this entitlement allows it to continue using the camera. Multitasking modes include Slide Over, Split View, and Picture in Picture (PiP). For information about Picture in Picture, see [`Adopting Picture in Picture for video calls`](https://developer.apple.com/documentation/AVKit/adopting-picture-in-picture-for-video-calls).
+When your app enters a multitasking mode, this entitlement allows it to continue using the camera. Multitasking modes include Slide Over, Split View, and Picture in Picture (PiP). For information about Picture in Picture, see [`Adopting Picture in Picture for video calls`](https://developer.apple.com/documentation/avkit/adopting-picture-in-picture-for-video-calls).
 
 > ❗ **Important**: Your app needs to run on iOS 13.5 or later to use this entitlement. Usage of this entitlement is restricted to apps that use `voip` as one of their [`UIBackgroundModes`](information-property-list/uibackgroundmodes.md).
 

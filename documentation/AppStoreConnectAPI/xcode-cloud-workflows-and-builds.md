@@ -6,7 +6,7 @@ Automate reading Xcode Cloud data, managing workflows, and starting builds.
 
 #### Overview
 
-[`Xcode Cloud`](https://developer.apple.com/documentation/Xcode/Xcode-Cloud) makes it easy to get started with continuous integration and delivery_ _(CI/CD). Using either Xcode or [`App Store Connect`](https://developer.apple.comhttps://appstoreconnect.apple.com), you can create custom workflows to verify the quality of your apps or frameworks. However, you may need to further automate Xcode Cloud usage and integrate Xcode Cloud into existing back-end systems — often in a corporate context. For example, you may need to:
+[`Xcode Cloud`](https://developer.apple.com/documentation/xcode/xcode-cloud) makes it easy to get started with continuous integration and delivery_ _(CI/CD). Using either Xcode or [`App Store Connect`](https://developer.apple.comhttps://appstoreconnect.apple.com), you can create custom workflows to verify the quality of your apps or frameworks. However, you may need to further automate Xcode Cloud usage and integrate Xcode Cloud into existing back-end systems — often in a corporate context. For example, you may need to:
 
 - Provide decision makers with data about workflows and builds using custom dashboards or reports.
 - Integrate with other CI/CD systems that verify changes to back-end services and apps for other platforms.

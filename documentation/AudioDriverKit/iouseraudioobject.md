@@ -16,7 +16,7 @@ class IOUserAudioObject;
 
 #### Overview
 
-All classes in the framework subclass [`IOUserAudioObject`](iouseraudioobject.md), except for [`IOUserAudioDriver`](iouseraudiodriver.md), which subclasses [`IOService`](https://developer.apple.com/documentation/DriverKit/IOService) from [`DriverKit`](https://developer.apple.com/documentation/DriverKit).
+All classes in the framework subclass [`IOUserAudioObject`](iouseraudioobject.md), except for [`IOUserAudioDriver`](iouseraudiodriver.md), which subclasses [`IOService`](https://developer.apple.com/documentation/driverkit/ioservice) from [`DriverKit`](https://developer.apple.com/documentation/driverkit).
 
 Don’t subclass or instantiate [`IOUserAudioObject`](iouseraudioobject.md) directly.
 
@@ -67,7 +67,7 @@ Don’t subclass or instantiate [`IOUserAudioObject`](iouseraudioobject.md) dire
 ## Relationships
 
 ### Inherits From
-- [OSObject](../DriverKit/OSObject.md)
+- [OSObject](../driverkit/osobject.md)
 ### Inherited By
 - [IOUserAudioBox](iouseraudiobox.md)
 - [IOUserAudioClockDevice](iouseraudioclockdevice.md)
@@ -79,7 +79,7 @@ Don’t subclass or instantiate [`IOUserAudioObject`](iouseraudioobject.md) dire
 
 - [IOUserAudioDriver](iouseraudiodriver.md)
   A DriverKit provider object that manages communications with an audio device.
-- [DriverKit Audio Family](../BundleResources/Entitlements/com.apple.developer.driverkit.family.audio.md)
+- [DriverKit Audio Family](../bundleresources/entitlements/com.apple.developer.driverkit.family.audio.md)
   A Boolean value that indicates whether the device supports audio functionality.
 - [Creating an audio device driver](creating-an-audio-device-driver.md)
   Implement a configurable audio input source as a driver extension that runs in user space in macOS and iPadOS.

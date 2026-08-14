@@ -10,7 +10,7 @@ The Xcode build process is highly configurable, and you can change the build set
 
 Make changes to your project or target’s settings from the Build Settings tab or with build configuration files. The following image shows the Build Settings tab for a project.
 
-![An Xcode window shows the build settings for the selected target, and the controls you use to filter and search the list of settings.](https://docs-assets.developer.apple.com/published/af7a7a11967dfd4ab70af3f67339364e/build-settings-editor%402x.png)
+![An Xcode window shows the build settings for the selected target, and the controls you use to filter and search the list of settings.](/images/com.apple.Xcode/build-settings-editor@2x.png)
 
 > **Note**: You can also store settings in specially formatted text files called build configuration files. These files make it easy to save your settings along with your source files in your source control management system. For information about build configuration files, see [`Adding a build configuration file to your project`](adding-a-build-configuration-file-to-your-project.md).
 
@@ -49,7 +49,7 @@ Every target inherits settings from both its parent project and the platform SDK
 
 To help you track down the source of a setting’s value, open the build settings for your project or target and select the Levels filter. Xcode displays the current settings hierarchy in the build settings editor. This hierarchy includes the default SDK values and any other project or target values that are active. The Resolved column shows the final resolved value Xcode uses to build the item.
 
-![The levels option in the build settings editor shows the inheritance of default system settings, project settings, and target settings.](https://docs-assets.developer.apple.com/published/6f1f0ea843065c4fd5bceb5188cf354a/build-setting-inheritance-hierarchy%402x.png)
+![The levels option in the build settings editor shows the inheritance of default system settings, project settings, and target settings.](/images/com.apple.Xcode/build-setting-inheritance-hierarchy@2x.png)
 
 With levels displayed, highlighted values indicate values that take precedence. Xcode uses a target’s build settings before referring to build settings you define for the project. At each level, Xcode gives precedence to settings you provide in the project over those you provide in build configuration files. Xcode gives the lowest precedence to the default system values. The hierarchy of precedence is:
 
@@ -65,7 +65,7 @@ With levels displayed, highlighted values indicate values that take precedence. 
 
 To see detailed information about a particular setting, select the setting and choose View > Inspectors > Quick Help. Xcode displays a description of the setting, along with its name and value type.
 
-![The quick help inspector shows detailed information about the selected build setting.](https://docs-assets.developer.apple.com/published/c40047e4289f3d112b8f553c3e70d542/build-setting-quick-help%402x.png)
+![The quick help inspector shows detailed information about the selected build setting.](/images/com.apple.Xcode/build-setting-quick-help@2x.png)
 
 ## See Also
 

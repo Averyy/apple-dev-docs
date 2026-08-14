@@ -41,7 +41,7 @@ It also updates the watchOS app target’s information property list as needed. 
   Integrate SwiftUI elements and watch-specific features, and build widgets for the Smart Stack.
 - [Building a watchOS app](building_a_watchos_app.md)
   Set up your app’s life cycle and create its user interface with SwiftUI.
-- [watchOS updates](../Updates/watchos.md)
+- [watchOS updates](../updates/watchos.md)
   Learn about important changes to watchOS.
 
 

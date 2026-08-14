@@ -28,7 +28,7 @@ To examine the results of possible future moves, GameplayKit uses several instan
 
 > ❗ **Important**:  Because GameplayKit can evaluate thousands of game states each time it plans a move, its performance is limited by the size and complexity of your game model class and its  [`setGameModel(_:)`](gkgamemodel/setgamemodel(_:).md) method. Ensure that your class contains only data that minimally describes the state of a game in progress and that your [`setGameModel(_:)`](gkgamemodel/setgamemodel(_:).md) method can copy that data quickly (for example, without creating new objects or allocating memory).
 
-The [`GKGameModel`](gkgamemodel.md) protocol extends the [`NSCopying`](https://developer.apple.com/documentation/Foundation/NSCopying) protocol. Because the [`setGameModel(_:)`](gkgamemodel/setgamemodel(_:).md) method does the critical work of copying the internal state of your game model, you can use this method to implement the requirements of the the [`NSCopying`](https://developer.apple.com/documentation/Foundation/NSCopying) protocol:
+The [`GKGameModel`](gkgamemodel.md) protocol extends the [`NSCopying`](https://developer.apple.com/documentation/foundation/nscopying) protocol. Because the [`setGameModel(_:)`](gkgamemodel/setgamemodel(_:).md) method does the critical work of copying the internal state of your game model, you can use this method to implement the requirements of the the [`NSCopying`](https://developer.apple.com/documentation/foundation/nscopying) protocol:
 
 ```objc
 - (__nonnull id)copyWithZone:(nullable NSZone *)zone {

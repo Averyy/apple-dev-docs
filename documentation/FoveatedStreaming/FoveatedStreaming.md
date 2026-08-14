@@ -12,9 +12,9 @@ Foveated Streaming enables visionOS apps to display high-resolution, low-latency
 
 The Foveated Streaming framework provides a session-based API for establishing connections from Apple Vision Pro to local and cloud streaming endpoints. The endpoint host streams high quality content only where necessary based on information about the approximate region where the person is looking, ensuring performance. Applications and games can integrate with the NVIDIA CloudXR™ SDK to become streaming endpoints.
 
-On Apple Vision Pro, Foveated Streaming allows you to display visionOS spatial content alongside streaming content. For example, a flight simulator app can render a cockpit using [`RealityKit`](https://developer.apple.com/documentation/RealityKit), and stream a processor-intensive landscape from a remote computer to the device.
+On Apple Vision Pro, Foveated Streaming allows you to display visionOS spatial content alongside streaming content. For example, a flight simulator app can render a cockpit using [`RealityKit`](https://developer.apple.com/documentation/realitykit), and stream a processor-intensive landscape from a remote computer to the device.
 
-The core workflow involves creating a [`FoveatedStreamingSession`](foveatedstreamingsession.md), establishing a connection to the external streaming endpoint, and presenting the streamed content inside the app’s [`ImmersiveSpace`](https://developer.apple.com/documentation/SwiftUI/ImmersiveSpace). All of the features of `ImmersiveSpace` are available, including progressive and mixed immersion styles. A bidirectional message channel system allows visionOS apps to exchange custom data with streaming endpoints, allowing apps to configure the streamed content with a native [`SwiftUI`](https://developer.apple.com/documentation/SwiftUI) interface.
+The core workflow involves creating a [`FoveatedStreamingSession`](foveatedstreamingsession.md), establishing a connection to the external streaming endpoint, and presenting the streamed content inside the app’s [`ImmersiveSpace`](https://developer.apple.com/documentation/swiftui/immersivespace). All of the features of `ImmersiveSpace` are available, including progressive and mixed immersion styles. A bidirectional message channel system allows visionOS apps to exchange custom data with streaming endpoints, allowing apps to configure the streamed content with a native [`SwiftUI`](https://developer.apple.com/documentation/swiftui) interface.
 
 ## Topics
 
@@ -32,12 +32,12 @@ The core workflow involves creating a [`FoveatedStreamingSession`](foveatedstrea
 - [struct FoveatedStreamingSpaceContent](foveatedstreamingspacecontent.md)
   A type that defines the content of an immersive space displaying a foveated stream.
 ### Presentation and control
-- [init(foveatedStreaming: FoveatedStreamingSession)](../SwiftUI/ImmersiveSpace/init(foveatedStreaming:).md)
+- [init(foveatedStreaming: FoveatedStreamingSession)](../swiftui/immersivespace/init(foveatedstreaming:).md)
   Creates an immersive space to display foveated streaming content.
-- [init<V>(foveatedStreaming: FoveatedStreamingSession, content: () -> V)](../SwiftUI/ImmersiveSpace/init(foveatedStreaming:content:).md)
+- [init<V>(foveatedStreaming: FoveatedStreamingSession, content: () -> V)](../swiftui/immersivespace/init(foveatedstreaming:content:).md)
   Creates an immersive space to display foveated streaming content alongside `RealityKit` content.
 - [func foveatedStreamingPauseSheet(session: Binding<FoveatedStreamingSession?>) -> some View
-](../SwiftUI/View/foveatedStreamingPauseSheet(session:).md)
+](../swiftui/view/foveatedstreamingpausesheet(session:).md)
   Tells the system to present a sheet with controls for resuming or ending the foveated streaming session when it pauses.
 ### Streaming provider extensions
 - [class FoveatedStreamingProviderContext](foveatedstreamingprovidercontext.md)

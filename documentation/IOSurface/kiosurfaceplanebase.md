@@ -23,7 +23,7 @@ let kIOSurfacePlaneBase: CFString
 
 Optional, defaults to the plane offset
 
-This value is stored as a [`CFNumber`](https://developer.apple.com/documentation/CoreFoundation/CFNumber).
+This value is stored as a [`CFNumber`](https://developer.apple.com/documentation/corefoundation/cfnumber).
 
 ## See Also
 

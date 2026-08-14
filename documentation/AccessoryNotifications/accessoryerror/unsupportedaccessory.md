@@ -7,7 +7,6 @@ An error that indicates the system doesn’t support notification forwarding for
 
 **Availability**:
 - iOS 26.5+
-- iPadOS 26.5+
 
 ## Declaration
 

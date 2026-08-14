@@ -64,7 +64,7 @@ For additional information about how to implement contextual menus, see [`Adding
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 ### Conforming Types
 - [UIButton](uibutton.md)
 - [UIColorWell](uicolorwell.md)

@@ -25,9 +25,9 @@ A new array that lists this array’s elements in a random order.
 
 #### Discussion
 
-Use the `randomSource` parameter to influence the random shuffling. For example, to reproduce a series of shuffles for testing, you can create a [`GKARC4RandomSource`](https://developer.apple.com/documentation/GameplayKit/GKARC4RandomSource) object using the [`seed`](https://developer.apple.com/documentation/GameplayKit/GKARC4RandomSource/seed) value of a previously used random source.
+Use the `randomSource` parameter to influence the random shuffling. For example, to reproduce a series of shuffles for testing, you can create a [`GKARC4RandomSource`](https://developer.apple.com/documentation/gameplaykit/gkarc4randomsource) object using the [`seed`](https://developer.apple.com/documentation/gameplaykit/gkarc4randomsource/seed) value of a previously used random source.
 
-This method is equivalent to the [`GKRandomSource`](https://developer.apple.com/documentation/GameplayKit/GKRandomSource) method [`arrayByShufflingObjects(in:)`](https://developer.apple.com/documentation/GameplayKit/GKRandomSource/arrayByShufflingObjects(in:)), but as an [`NSArray`](nsarray.md) method it preserves generic type parameters.
+This method is equivalent to the [`GKRandomSource`](https://developer.apple.com/documentation/gameplaykit/gkrandomsource) method [`arrayByShufflingObjects(in:)`](https://developer.apple.com/documentation/gameplaykit/gkrandomsource/arraybyshufflingobjects(in:)), but as an [`NSArray`](nsarray.md) method it preserves generic type parameters.
 
 ## Parameters
 

@@ -30,7 +30,7 @@ If you disable user interaction before calling a Keychain Services function, be 
 
 ## Parameters
 
-- `state`: A flag that indicates whether the keychain services will display a user interface. If you pass [`true`](https://developer.apple.com/documentation/Swift/true), user interaction is allowed. This is the default value. If [`false`](https://developer.apple.com/documentation/Swift/false), keychain services functions that normally display a user interface will instead return an error.
+- `state`: A flag that indicates whether the keychain services will display a user interface. If you pass [`true`](https://developer.apple.com/documentation/swift/true), user interaction is allowed. This is the default value. If [`false`](https://developer.apple.com/documentation/swift/false), keychain services functions that normally display a user interface will instead return an error.
 
 
 ---

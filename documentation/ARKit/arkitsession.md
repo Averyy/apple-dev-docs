@@ -77,13 +77,13 @@ Because a [`PlaneDetectionProvider`](planedetectionprovider.md) instance’s req
 ## Relationships
 
 ### Conforms To
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 
-- [Setting up access to ARKit data](../visionOS/setting-up-access-to-arkit-data.md)
+- [Setting up access to ARKit data](../visionos/setting-up-access-to-arkit-data.md)
   Check whether your app can use ARKit and respect people’s privacy.
 - [protocol DataProvider](dataprovider.md)
   A source of live data from ARKit.

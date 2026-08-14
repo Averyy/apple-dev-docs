@@ -43,7 +43,7 @@ func darkenBlendMode(inputImage: CIImage, backgroundImage: CIImage) -> CIImage {
 }
 ```
 
-![The image on the top left shows a beach with multiple palm trees and a rainbow arching across the blue sky.  The image below is a gradient image displaying a gradual color shift from purple to a dark orange. The image on the right shows the output from applying the color darken blend mode filter. The results displays colors from both images and has added darkness.](https://docs-assets.developer.apple.com/published/26d75f0a4bd011875c3889ea932f478f/media-3546416%402x.png)
+![The image on the top left shows a beach with multiple palm trees and a rainbow arching across the blue sky.  The image below is a gradient image displaying a gradual color shift from purple to a dark orange. The image on the right shows the output from applying the color darken blend mode filter. The results displays colors from both images and has added darkness.](/images/com.apple.coreimage/media-3546416@2x.png)
 
 ## See Also
 

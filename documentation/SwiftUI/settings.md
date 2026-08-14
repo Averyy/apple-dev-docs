@@ -42,9 +42,9 @@ struct MyApp: App {
 
 Passing a view as the argument to a settings scene in the [`App`](app.md) declaration causes SwiftUI to enable the app’s Settings menu item. SwiftUI manages displaying and removing the settings view when the user selects the Settings item from the application menu or the equivalent keyboard shortcut:
 
-![A screenshot of the MyApp application menu, showing the active](https://docs-assets.developer.apple.com/published/6816987b7f2629737c2e5427ab99ad8d/SwiftUI-AppBehavior-Settings-AppMenu%402x.png)
+![A screenshot of the MyApp application menu, showing the active](/images/com.apple.SwiftUI/SwiftUI-AppBehavior-Settings-AppMenu@2x.png)
 
-The contents of your settings view are controls that modify bindings to [`UserDefaults`](https://developer.apple.com/documentation/Foundation/UserDefaults) values that SwiftUI manages using the [`AppStorage`](appstorage.md) property wrapper:
+The contents of your settings view are controls that modify bindings to [`UserDefaults`](https://developer.apple.com/documentation/foundation/userdefaults) values that SwiftUI manages using the [`AppStorage`](appstorage.md) property wrapper:
 
 ```swift
 struct GeneralSettingsView: View {
@@ -81,7 +81,7 @@ struct SettingsView: View {
 }
 ```
 
-![A screenshot showing a tabbed application settings view containing a](https://docs-assets.developer.apple.com/published/01f778a442e362d593a8937912132520/SwiftUI-AppBehavior-Settings%402x.png)
+![A screenshot showing a tabbed application settings view containing a](/images/com.apple.SwiftUI/SwiftUI-AppBehavior-Settings@2x.png)
 
 ## Topics
 

@@ -16,7 +16,7 @@ let kSCPropNetIPSecXAuthPasswordEncryption: CFString
 
 #### Discussion
 
-The value of this key is of type [`CFString`](https://developer.apple.com/documentation/CoreFoundation/CFString). This key can accept the following constants:
+The value of this key is of type [`CFString`](https://developer.apple.com/documentation/corefoundation/cfstring). This key can accept the following constants:
 
 - [`kSCValNetIPSecXAuthPasswordEncryptionKeychain`](kscvalnetipsecxauthpasswordencryptionkeychain-swift.var.md), which has the value `Keychain`
 - [`kSCValNetIPSecXAuthPasswordEncryptionPrompt`](kscvalnetipsecxauthpasswordencryptionprompt-swift.var.md), which has the value `Prompt`

@@ -13,8 +13,8 @@ func XCTAssertGreaterThanOrEqual<T>(_ expression1: @autoclosure () throws -> T, 
 
 ## Parameters
 
-- `expression1`: An expression of type `T`, where `T` is [`Comparable`](https://developer.apple.com/documentation/Swift/Comparable).
-- `expression2`: A second expression of type `T`, where `T` is [`Comparable`](https://developer.apple.com/documentation/Swift/Comparable).
+- `expression1`: An expression of type `T`, where `T` is [`Comparable`](https://developer.apple.com/documentation/swift/comparable).
+- `expression2`: A second expression of type `T`, where `T` is [`Comparable`](https://developer.apple.com/documentation/swift/comparable).
 - `message`: An optional description of a failure.
 - `file`: The file where the failure occurs. The default is the filename of the test case where you call this function.
 - `line`: The line number where the failure occurs. The default is the line number where you call this function.

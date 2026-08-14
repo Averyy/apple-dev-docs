@@ -7,7 +7,7 @@ An atom you use to visually blend the track’s image when it is displayed.
 
 #### Overview
 
-See [`Track matte atom ('matt')`](track_matte_atom.md).
+See [`Track matte atom`](track_matte_atom.md).
 
 ## See Also
 

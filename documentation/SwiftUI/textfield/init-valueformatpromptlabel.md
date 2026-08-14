@@ -23,11 +23,11 @@ init<F>(value: Binding<F.FormatInput>, format: F, prompt: Text? = nil, @ContentB
 
 #### Discussion
 
-Use this initializer to create a text field that binds to a bound value, using a [`ParseableFormatStyle`](https://developer.apple.com/documentation/Foundation/ParseableFormatStyle) to convert to and from this type. Changes to the bound value update the string displayed by the text field. Editing the text field updates the bound value, as long as the format style can parse the text. If the format style can’t parse the input, the bound value remains unchanged.
+Use this initializer to create a text field that binds to a bound value, using a [`ParseableFormatStyle`](https://developer.apple.com/documentation/foundation/parseableformatstyle) to convert to and from this type. Changes to the bound value update the string displayed by the text field. Editing the text field updates the bound value, as long as the format style can parse the text. If the format style can’t parse the input, the bound value remains unchanged.
 
 Use the [`onSubmit(of:_:)`](view/onsubmit(of:_:).md) modifier to invoke an action whenever the user submits this text field.
 
-The following example uses a [`Double`](https://developer.apple.com/documentation/Swift/Double) as the bound value, and a [`FloatingPointFormatStyle`](https://developer.apple.com/documentation/Foundation/FloatingPointFormatStyle) instance to convert to and from a string representation. As the user types, the bound value updates, which in turn updates three [`Text`](text.md) views that use different format styles. If the user enters text that doesn’t represent a valid `Double`, the bound value doesn’t update.
+The following example uses a [`Double`](https://developer.apple.com/documentation/swift/double) as the bound value, and a [`FloatingPointFormatStyle`](https://developer.apple.com/documentation/foundation/floatingpointformatstyle) instance to convert to and from a string representation. As the user types, the bound value updates, which in turn updates three [`Text`](text.md) views that use different format styles. If the user enters text that doesn’t represent a valid `Double`, the bound value doesn’t update.
 
 ```swift
 @State private var myDouble: Double = 0.673
@@ -46,7 +46,7 @@ var body: some View {
 }
 ```
 
-![A text field with the string 0.673. Below this, three text views](https://docs-assets.developer.apple.com/published/e225c5567dcc84af2e36e44ff5cc3768/TextField-init-format-1%402x.png)
+![A text field with the string 0.673. Below this, three text views](/images/com.apple.SwiftUI/TextField-init-format-1@2x.png)
 
 ## Parameters
 

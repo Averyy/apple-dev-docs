@@ -22,7 +22,7 @@ var languageTag: String? { get }
 
 #### Discussion
 
-This property contains the IETF BCP 47 language code for the language option. A value of [`nil`](https://developer.apple.com/documentation/ObjectiveC/nil-227m0) indicates that this option is disabled.
+This property contains the IETF BCP 47 language code for the language option. A value of [`nil`](https://developer.apple.com/documentation/objectivec/nil-227m0) indicates that this option is disabled.
 
 ## See Also
 

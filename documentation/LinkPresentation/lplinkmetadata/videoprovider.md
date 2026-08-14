@@ -22,7 +22,7 @@ var videoProvider: NSItemProvider? { get set }
 
 #### Discussion
 
-The item provider returns a video that [`AVFoundation`](https://developer.apple.com/documentation/AVFoundation) can play.
+The item provider returns a video that [`AVFoundation`](https://developer.apple.com/documentation/avfoundation) can play.
 
 ## See Also
 

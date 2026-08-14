@@ -16,7 +16,7 @@ Use Compute Graph instead of Particle Emitter when you need:
 - A GPU compute pipeline that isn’t strictly “particles” at all — Compute Graph is general-purpose GPU compute, not only a particle system.
 - Fine control over performance — you decide exactly what runs in each stage, rather than depending on a fixed set of emitter properties.
 
-![A screenshot of an advanced particle emitter created using Compute Graph in Reality Composer Pro.](https://docs-assets.developer.apple.com/published/0dad0604e1b2dbaf956fc6dc19bb7a34/ComputeGraphColorRampA%402x.png)
+![A screenshot of an advanced particle emitter created using Compute Graph in Reality Composer Pro.](/images/RealityComposerPro/ComputeGraphColorRampA@2x.png)
 
 Like other Reality Composer Pro graphs, Compute Graph is a node-and-connection-based workflow designer. Before working with Compute Graph, review the general navigation and features of the Reality Composer Pro Graph Editor in [`Working with the Graph Editor`](realitycomposerpro-essentials-grapheditoroverview.md).
 
@@ -30,7 +30,7 @@ Alternatively, Control-click inside a folder, and then click **New** > **Compute
 
 The default Compute Graph node includes four stages — Emission, Initialization, Simulation, and Output. Additional stage types, such as Texture, are available when configuring custom pipelines. The Compute Graph stages run top to bottom.
 
-![A screenshot of the four Reality Composer Pro Compute Graph stages, shown left to right.](https://docs-assets.developer.apple.com/published/81f8f216dbc30ddfdce33a6b6cc48cf4/ComputeGraphHorizontal%402x.png)
+![A screenshot of the four Reality Composer Pro Compute Graph stages, shown left to right.](/images/RealityComposerPro/ComputeGraphHorizontal@2x.png)
 
 At the top of each stage is a node called **Constants**. Constant nodes provide static values that you can feed into other nodes’ parameters. Constants inject fixed, hardcoded values into the graph, rather than values computed dynamically from other nodes. In the Simulation stage, for example, you can use the Constant to set up the capacity count and a loop toggle. The Output stage Constant contains properties related to the material used by the individual particles.
 
@@ -48,11 +48,11 @@ Next to **Compute Simulation**, click the field and then choose a Compute Graph.
 
 Attach the Compute Graph to the entity that generates the effect.
 
-![A screenshot of configuring the Compute Simulation component in the Reality Composer Pro Inspector.](https://docs-assets.developer.apple.com/published/6c7e19adde8c5b0e68bbcecbcc1de9e9/ComputeGraph2%402x.png)
+![A screenshot of configuring the Compute Simulation component in the Reality Composer Pro Inspector.](/images/RealityComposerPro/ComputeGraph2@2x.png)
 
 #### Explore Built in Node Namespaces
 
-Apple’s Compute Graph framework documents the full built-in node library by namespace, organized into `element::`, `emitter::`, `module::`, `force::`, `output::`, and utility namespaces. See the framework reference ([`Compute Graph`](https://developer.apple.com/documentation/ComputeGraph)) for a complete catalog of nodes in each namespace.
+Apple’s Compute Graph framework documents the full built-in node library by namespace, organized into `element::`, `emitter::`, `module::`, `force::`, `output::`, and utility namespaces. See the framework reference ([`Compute Graph`](https://developer.apple.com/documentation/computegraph)) for a complete catalog of nodes in each namespace.
 
 #### Read Current Element State with Element Nodes
 
@@ -64,7 +64,7 @@ Available in any stage, `element::` nodes read data about the particle currently
 - `element::index` returns the particle’s index, useful for deterministic per-particle variation.
 - `element::terminate` ends the particle’s life immediately when its boolean input is true — use it for custom termination conditions, such as falling below a floor value or exceeding a distance from origin, instead of relying solely on a fixed lifetime.
 
-See the Element namespace reference ([`element`](https://developer.apple.com/documentation/ComputeGraph/element)) for the full list.
+See the Element namespace reference ([`element`](https://developer.apple.com/documentation/computegraph/element)) for the full list.
 
 #### Control Emission with Emitter Nodes
 
@@ -106,7 +106,7 @@ Once added, a bundle’s composed nodes become available in the insertion menu l
 
 Add Compute Graph Bundles from the Reality Composer Pro **Project Settings** menu. Click **Compute Graph Bundle**, click **+**, and then click the folder to find and select a bundle file. Repeat this process to add more bundles.
 
-For complete documentation on Compute Graph nodes, see [`Compute Graph`](https://developer.apple.com/documentation/ComputeGraph).
+For complete documentation on Compute Graph nodes, see [`Compute Graph`](https://developer.apple.com/documentation/computegraph).
 
 #### Optimize Your Compute Graphs
 
@@ -117,11 +117,11 @@ For complete documentation on Compute Graph nodes, see [`Compute Graph`](https:/
 
 #### Combine Compute Graph with Your Apps Gameplay Logic
 
-If your effect needs to react to gameplay state — for example, intensifying based on a value a custom system computes in Swift (see [`Systems`](https://developer.apple.com/documentation/RealityKit/ecs-systems)), or only emitting while the app is in a certain mode — drive that through a **Public Input** on the graph. Set the input from your Swift code, or from a Script Graph node through a Set Variable or component write.
+If your effect needs to react to gameplay state — for example, intensifying based on a value a custom system computes in Swift (see [`Systems`](https://developer.apple.com/documentation/realitykit/ecs-systems)), or only emitting while the app is in a certain mode — drive that through a **Public Input** on the graph. Set the input from your Swift code, or from a Script Graph node through a Set Variable or component write.
 
 Keep Compute Graph focused on simulating and rendering the effect; broader gameplay logic belongs in RealityKit systems or Script Graph, feeding the Compute Graph through its exposed interfaces.
 
-`ComputeGraphSimulation` represents a simulation of particles that use a single pipeline ([`ComputeGraphSimulation`](https://developer.apple.com/documentation/ComputeGraph/ComputeGraphSimulation)). It’s built from a `ComputeNodeGraph` and attached to a RealityKit `Entity` through the Compute Simulation component ([`ComputeNodeGraph`](https://developer.apple.com/documentation/ComputeGraph/ComputeNodeGraph), [`Entity`](https://developer.apple.com/documentation/RealityKit/Entity)).
+`ComputeGraphSimulation` represents a simulation of particles that use a single pipeline ([`ComputeGraphSimulation`](https://developer.apple.com/documentation/computegraph/computegraphsimulation)). It’s built from a `ComputeNodeGraph` and attached to a RealityKit `Entity` through the Compute Simulation component ([`ComputeNodeGraph`](https://developer.apple.com/documentation/computegraph/computenodegraph), [`Entity`](https://developer.apple.com/documentation/realitykit/entity)).
 
 ## See Also
 

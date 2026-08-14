@@ -20,9 +20,9 @@ This feature requires Bluetooth access to discover and pair with nearby devices,
 
 ### Essentials
 - [func automatedDeviceEnrollmentAddition(isPresented: Binding<Bool>) -> some View
-](../SwiftUI/View/automatedDeviceEnrollmentAddition(isPresented:).md)
+](../swiftui/view/automateddeviceenrollmentaddition(ispresented:).md)
   Presents a modal view that enables users to add devices to their organization.
-- [com.apple.developer.automated-device-enrollment.add-devices](../BundleResources/Entitlements/com.apple.developer.automated-device-enrollment.add-devices.md)
+- [com.apple.developer.automated-device-enrollment.add-devices](../bundleresources/entitlements/com.apple.developer.automated-device-enrollment.add-devices.md)
   A Boolean value that indicates whether an app may add a device to Automated Device Enrollment.
 
 

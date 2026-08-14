@@ -19,13 +19,13 @@ class func register(options: [String : NSObject]? = nil, queue: dispatch_queue_t
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/Swift/true) if the registration was successful, [`false`](https://developer.apple.com/documentation/Swift/false) otherwise
+[`true`](https://developer.apple.com/documentation/swift/true) if the registration was successful, [`false`](https://developer.apple.com/documentation/swift/false) otherwise
 
 #### Discussion
 
 Once this API is invoked successfully, the application becomes eligible to be launched in the background and participate in various hotspot related functions.
 
-This method should be called once when the application starts up. Invoking it again will have no effect and result in [`false`](https://developer.apple.com/documentation/Swift/false) being returned.
+This method should be called once when the application starts up. Invoking it again will have no effect and result in [`false`](https://developer.apple.com/documentation/swift/false) being returned.
 
 > ⚠️ **Warning**:  The application’s `Info.plist` must include a `UIBackgroundModes` array containing `network-authentication`.
 
@@ -33,8 +33,8 @@ This method should be called once when the application starts up. Invoking it ag
 
 ## Parameters
 
-- `options`: If not nil, a [`NSDictionary`](https://developer.apple.com/documentation/Foundation/NSDictionary) containing `kNEHotspotHelperOption*` keys (currently just `kNEHotspotHelperOptionDisplayName`).
-- `queue`: The [`dispatch_queue_t`](https://developer.apple.com/documentation/Dispatch/dispatch_queue_t) to invoke the handle block on.
+- `options`: If not nil, a [`NSDictionary`](https://developer.apple.com/documentation/foundation/nsdictionary) containing `kNEHotspotHelperOption*` keys (currently just `kNEHotspotHelperOptionDisplayName`).
+- `queue`: The [`dispatch_queue_t`](https://developer.apple.com/documentation/dispatch/dispatch_queue_t) to invoke the handle block on.
 - `handler`: The `NEHotspotHelperHandler` block to execute to process helper commands.
 
 ## See Also

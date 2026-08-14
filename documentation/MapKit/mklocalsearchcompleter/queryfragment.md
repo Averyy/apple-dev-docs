@@ -22,7 +22,7 @@ var queryFragment: String { get set }
 
 #### Discussion
 
-Assigning a string to this property initiates a search based on that string. The completer object waits a short amount of time before initiating new searches. This delay gives you enough time to update the search string based on typed input from the user. For example, if you’re using a text field to manage the input from the user, use the [`textField(_:shouldChangeCharactersIn:replacementString:)`](https://developer.apple.com/documentation/UIKit/UITextFieldDelegate/textField(_:shouldChangeCharactersIn:replacementString:)) method of the text field’s delegate to update the value of this property, as the following example shows:
+Assigning a string to this property initiates a search based on that string. The completer object waits a short amount of time before initiating new searches. This delay gives you enough time to update the search string based on typed input from the user. For example, if you’re using a text field to manage the input from the user, use the [`textField(_:shouldChangeCharactersIn:replacementString:)`](https://developer.apple.com/documentation/uikit/uitextfielddelegate/textfield(_:shouldchangecharactersin:replacementstring:)) method of the text field’s delegate to update the value of this property, as the following example shows:
 
 ```objc
 - (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range

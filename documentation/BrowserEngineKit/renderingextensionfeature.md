@@ -29,8 +29,8 @@ The [`enableFeature(_:)`](renderingextension/enablefeature(_:).md) method of the
 ## Relationships
 
 ### Conforms To
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
 
 ## See Also
 

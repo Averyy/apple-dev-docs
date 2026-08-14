@@ -21,7 +21,7 @@ let kVTDecompressionPropertyKey_RealTime: CFString
 
 #### Discussion
 
-For non-realtime decompression, clients may set this property to [`kCFBooleanFalse`](https://developer.apple.com/documentation/CoreFoundation/kCFBooleanFalse), which indicates that it is OK to run this decode pipeline at a lower priority than is used for realtime decoding. By default, VideoToolbox will treat the decompression session as though it is being used for realtime playback ([`kCFBooleanTrue`](https://developer.apple.com/documentation/CoreFoundation/kCFBooleanTrue)).  Setting the property to `NULL` is equivalent to setting it to [`kCFBooleanTrue`](https://developer.apple.com/documentation/CoreFoundation/kCFBooleanTrue).
+For non-realtime decompression, clients may set this property to [`kCFBooleanFalse`](https://developer.apple.com/documentation/corefoundation/kcfbooleanfalse), which indicates that it is OK to run this decode pipeline at a lower priority than is used for realtime decoding. By default, VideoToolbox will treat the decompression session as though it is being used for realtime playback ([`kCFBooleanTrue`](https://developer.apple.com/documentation/corefoundation/kcfbooleantrue)).  Setting the property to `NULL` is equivalent to setting it to [`kCFBooleanTrue`](https://developer.apple.com/documentation/corefoundation/kcfbooleantrue).
 
 ## See Also
 

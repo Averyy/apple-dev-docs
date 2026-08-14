@@ -12,11 +12,11 @@ Capture photos and record video using the front and rear iPhone and iPad cameras
 
 #### Overview
 
-The AVCam sample shows you how to build a basic camera app for iOS. It demonstrates how to use AVFoundation to access device cameras and microphones, configure a capture session, capture photos and videos, and much more. It also shows how to use the [`PhotoKit`](https://developer.apple.com/documentation/PhotoKit) framework to save your captured media to the Photos library.
+The AVCam sample shows you how to build a basic camera app for iOS. It demonstrates how to use AVFoundation to access device cameras and microphones, configure a capture session, capture photos and videos, and much more. It also shows how to use the [`PhotoKit`](https://developer.apple.com/documentation/photokit) framework to save your captured media to the Photos library.
 
 The sample uses SwiftUI and the features of Swift concurrency to build a responsive camera app. The following diagram describes the app’s design:
 
-![A diagram that describes the relationships between app objects. When the app starts, it creates an instance of CameraModel. The camera model creates instances of the CaptureService and MediaLibrary types, which it uses to perform its essential functions. Finally, the app creates an instance of CameraView, which provides the main user interface, and passes it a reference to the CameraModel object.](https://docs-assets.developer.apple.com/published/099e27ca35a3de0fc5aaadb24152517d/app-assembly-overview.png)
+![A diagram that describes the relationships between app objects. When the app starts, it creates an instance of CameraModel. The camera model creates instances of the CaptureService and MediaLibrary types, which it uses to perform its essential functions. Finally, the app creates an instance of CameraView, which provides the main user interface, and passes it a reference to the CameraModel object.](/images/com.apple.avfoundation/app-assembly-overview.png)
 
 The key type the app defines is `CaptureService`, an actor that manages the interactions with the AVFoundation capture APIs. This object configures the capture pipeline and manages its life cycle, and defines an asynchronous interface to capture photos and videos. It delegates the handling of those operations to the app’s `PhotoCapture` and `MovieCapture` objects, respectively.
 
@@ -28,13 +28,13 @@ Because Simulator doesn’t have access to device cameras, it isn’t suitable f
 
 - An iOS device with iOS 26 or later
 
-AVCam adopts the [`LockedCameraCapture`](https://developer.apple.com/documentation/LockedCameraCapture) framework, which makes the app eligible to launch from the Lock Screen, Control Center, Action Button, and the Camera Control. To support this framework, the sample adds a capture extension target and a Control Center extension target to the main app target. Set your signing credentials on each target to build and run the sample.
+AVCam adopts the [`LockedCameraCapture`](https://developer.apple.com/documentation/lockedcameracapture) framework, which makes the app eligible to launch from the Lock Screen, Control Center, Action Button, and the Camera Control. To support this framework, the sample adds a capture extension target and a Control Center extension target to the main app target. Set your signing credentials on each target to build and run the sample.
 
 ##### Configure a Capture Session
 
-The central object in any capture app is an instance of [`AVCaptureSession`](AVCaptureSession.md). A capture session is the central hub to which the app connects inputs from camera and microphone devices, and attaches them to outputs that capture media like photos and video. After configuring the session, the app uses it to control the flow of data through the capture pipeline.
+The central object in any capture app is an instance of [`AVCaptureSession`](avcapturesession.md). A capture session is the central hub to which the app connects inputs from camera and microphone devices, and attaches them to outputs that capture media like photos and video. After configuring the session, the app uses it to control the flow of data through the capture pipeline.
 
-![A diagram that describes the configuration of a capture session. It shows how a capture session connects inputs from camera and microphone devices to compatible outputs that capture photos or video, or display a video preview.](https://docs-assets.developer.apple.com/published/5bffa1d94c052514c5b1f45adc09649b/avcapturesession-overview.png)
+![A diagram that describes the configuration of a capture session. It shows how a capture session connects inputs from camera and microphone devices to compatible outputs that capture photos or video, or display a video preview.](/images/com.apple.avfoundation/avcapturesession-overview.png)
 
 The capture service performs the session configuration in its `setUpSession()` method. It retrieves the default camera and microphone for the host device and adds them as inputs to the capture session.
 
@@ -80,7 +80,7 @@ if captureSession.canAddOutput(photoCapture.output) {
 
 ##### Set Up a Capture Preview
 
-To preview the content a camera is capturing, AVFoundation provides a Core Animation layer subclass called  [`AVCaptureVideoPreviewLayer`](avcapturevideopreviewlayer.md). SwiftUI doesn’t support using layers directly, so instead, the app hosts this layer in a [`UIView`](https://developer.apple.com/documentation/UIKit/UIView) subclass called `PreviewView`. It overrides the [`layerClass`](https://developer.apple.com/documentation/UIKit/UIView/layerClass) property to make the preview layer the backing for the view.
+To preview the content a camera is capturing, AVFoundation provides a Core Animation layer subclass called  [`AVCaptureVideoPreviewLayer`](avcapturevideopreviewlayer.md). SwiftUI doesn’t support using layers directly, so instead, the app hosts this layer in a [`UIView`](https://developer.apple.com/documentation/uikit/uiview) subclass called `PreviewView`. It overrides the [`layerClass`](https://developer.apple.com/documentation/uikit/uiview/layerclass) property to make the preview layer the backing for the view.
 
 ```swift
 class PreviewView: UIView, PreviewTarget {
@@ -102,7 +102,7 @@ class PreviewView: UIView, PreviewTarget {
 }
 ```
 
-To make this view accessible to SwiftUI, the app wraps it as a [`UIViewRepresentable`](https://developer.apple.com/documentation/SwiftUI/UIViewRepresentable) type called `CameraPreview`.
+To make this view accessible to SwiftUI, the app wraps it as a [`UIViewRepresentable`](https://developer.apple.com/documentation/swiftui/uiviewrepresentable) type called `CameraPreview`.
 
 ```swift
 struct CameraPreview: UIViewRepresentable {
@@ -315,7 +315,7 @@ func fileOutput(_ output: AVCaptureFileOutput, didFinishRecordingTo outputFileUR
 
 - [Setting up a capture session](setting-up-a-capture-session.md)
   Configure input devices, output media, preview views, and basic settings before capturing photos or video.
-- [Accessing the camera while multitasking on iPad](../AVKit/accessing-the-camera-while-multitasking-on-ipad.md)
+- [Accessing the camera while multitasking on iPad](../avkit/accessing-the-camera-while-multitasking-on-ipad.md)
   Operate the camera in Split View, Slide Over, Picture in Picture, and Stage Manager modes.
 - [Build a responsive camera app that launches quickly](build-a-responsive-camera-app-that-launches-quickly.md)
   Build a fast camera launch experience for your iOS and iPadOS apps.

@@ -23,7 +23,7 @@ var triangulationMode: GKMeshGraphTriangulationMode { get set }
 
 The [`triangulate()`](gkmeshgraph/triangulate().md) method creates an internal model the empty space around the obstacles in the graph in the form of a polygon mesh. The mesh is generated such that the empty space divides into roughly even partitions, each of which is no more than a certain distance from an obstacle. After generating the mesh, the [`triangulate()`](gkmeshgraph/triangulate().md) method adds nodes to the graph corresponding to locations in the mesh. This property controls which locations in the mesh become nodes in the graph.
 
-The [`GKMeshGraphTriangulationMode`](gkmeshgraphtriangulationmode.md) type is an option set: you can place nodes using multiple modes by combining the relevant constants with [`OptionSet`](https://developer.apple.com/documentation/Swift/OptionSet) syntax, or bitwise OR operations in Objective-C. Combining modes yields a denser graph, which can lead to slower pathfinding operations but smoother resulting paths. For best results, experiment with different modes and combinations to find the most natural style of movement for your game.
+The [`GKMeshGraphTriangulationMode`](gkmeshgraphtriangulationmode.md) type is an option set: you can place nodes using multiple modes by combining the relevant constants with [`OptionSet`](https://developer.apple.com/documentation/swift/optionset) syntax, or bitwise OR operations in Objective-C. Combining modes yields a denser graph, which can lead to slower pathfinding operations but smoother resulting paths. For best results, experiment with different modes and combinations to find the most natural style of movement for your game.
 
 ## See Also
 

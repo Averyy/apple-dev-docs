@@ -22,7 +22,7 @@ let kCTFontStyleNameAttribute: CFString
 
 #### Discussion
 
-This name represents the designer’s description of the font’s style. The value associated with this key is a [`CFString`](https://developer.apple.com/documentation/CoreFoundation/CFString) object.
+This name represents the designer’s description of the font’s style. The value associated with this key is a [`CFString`](https://developer.apple.com/documentation/corefoundation/cfstring) object.
 
 ## See Also
 

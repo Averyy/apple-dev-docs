@@ -80,7 +80,7 @@ To define your own types in your app’s `Info.plist`, see [`Defining file and d
   Returns a Boolean value that indicates whether a type is higher in a hierarchy than the type.
 - [func isSupertype(of: UTType) -> Bool](uttype-swift.struct/issupertype(of:).md)
   Returns a Boolean value that indicates whether a type is lower in a hierarchy than the type.
-- [Navigating Hierarchical Data Using Outline and Split Views](../AppKit/navigating-hierarchical-data-using-outline-and-split-views.md)
+- [Navigating Hierarchical Data Using Outline and Split Views](../appkit/navigating-hierarchical-data-using-outline-and-split-views.md)
   Build a structured user interface that simplifies navigation in your app.
 ### Describing a type
 - [var localizedDescription: String?](uttype-swift.struct/localizeddescription.md)
@@ -406,17 +406,17 @@ To define your own types in your app’s `Info.plist`, see [`Defining file and d
 ## Relationships
 
 ### Conforms To
-- [Copyable](../Swift/Copyable.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Decodable](../Swift/Decodable.md)
-- [Encodable](../Swift/Encodable.md)
-- [Equatable](../Swift/Equatable.md)
-- [Escapable](../Swift/Escapable.md)
-- [Hashable](../Swift/Hashable.md)
-- [ReferenceConvertible](../Foundation/ReferenceConvertible.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Copyable](../swift/copyable.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Decodable](../swift/decodable.md)
+- [Encodable](../swift/encodable.md)
+- [Equatable](../swift/equatable.md)
+- [Escapable](../swift/escapable.md)
+- [Hashable](../swift/hashable.md)
+- [ReferenceConvertible](../foundation/referenceconvertible.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

@@ -113,7 +113,7 @@ Most of these properties are optional. A File Provider extension doesn’t need 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 ### Inherited By
 - [NSFileProviderItemDecorating](nsfileprovideritemdecorating.md)
 

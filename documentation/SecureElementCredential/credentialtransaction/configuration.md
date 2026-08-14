@@ -21,7 +21,7 @@ class Configuration
 
 #### Overview
 
-In SwiftUI apps, you fetch a `Configuration` for use in calling the [`transactionTask(_:action:)`](https://developer.apple.com/documentation/SwiftUI/View/transactionTask(_:action:)) view modifier to perform wired transactions and card emulation. Inside the task closure, call [`invalidate()`](credentialtransaction/configuration/invalidate().md) on the configuration when you finish your transaction work.
+In SwiftUI apps, you fetch a `Configuration` for use in calling the [`transactionTask(_:action:)`](https://developer.apple.com/documentation/swiftui/view/transactiontask(_:action:)) view modifier to perform wired transactions and card emulation. Inside the task closure, call [`invalidate()`](credentialtransaction/configuration/invalidate().md) on the configuration when you finish your transaction work.
 
 ## Topics
 
@@ -32,7 +32,7 @@ In SwiftUI apps, you fetch a `Configuration` for use in calling the [`transactio
 ## Relationships
 
 ### Conforms To
-- [Equatable](../Swift/Equatable.md)
+- [Equatable](../swift/equatable.md)
 
 ## See Also
 

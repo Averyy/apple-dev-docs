@@ -18,7 +18,7 @@ Applies a delta to an IOService object's `busyState`. A change in the `busyState
 
 ## Parameters
 
-- `delta`: The delta to be applied to the IOService object's  .
+- `delta`: The delta to be applied to the IOService object's `busyState`.
 
 ## See Also
 

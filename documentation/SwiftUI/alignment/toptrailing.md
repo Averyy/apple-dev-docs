@@ -24,7 +24,7 @@ static let topTrailing: Alignment
 
 This alignment combines the [`trailing`](horizontalalignment/trailing.md) horizontal guide and the [`top`](verticalalignment/top.md) vertical guide:
 
-![A square that’s divided into four equal quadrants. The upper-](https://docs-assets.developer.apple.com/published/a3647a08ca1d2349ece764a1dd74ae4e/Alignment-topTrailing-1-iOS%402x.png)
+![A square that’s divided into four equal quadrants. The upper-](/images/com.apple.SwiftUI/Alignment-topTrailing-1-iOS@2x.png)
 
 ## See Also
 

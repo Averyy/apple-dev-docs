@@ -12,7 +12,7 @@ Before you update the rule set of a queue that actively processes player match r
 
 You can add an optional experimental rule set to a queue, in addition to the required rule set that Game Center uses in production. When you add an experimental rule set, Game Center processes the match requests in the queue using both the existing rule set and the experimental rule set, except that it doesn’t return the results of the experimental rule set to clients. So you can apply the same metrics APIs on the experimental rule set to analyze performance issues before you release it.
 
-To set the experimental rule set of a queue, use the [`Modify a Queue`](https://developer.apple.com/documentation/AppStoreConnectAPI/PATCH-v1-gameCenterMatchmakingQueues-_id_) endpoint. Pass the queue’s identifier in the path parameters and include the experimental rule set’s identifier in the request body.
+To set the experimental rule set of a queue, use the [`Modify a Queue`](https://developer.apple.com/documentation/appstoreconnectapi/patch-v1-gamecentermatchmakingqueues-_id_) endpoint. Pass the queue’s identifier in the path parameters and include the experimental rule set’s identifier in the request body.
 
 ```json
 PATCH /v1/gameCenterMatchmakingQueues/532ad9c0-1a28-4536-ad57-33213bcc0a29
@@ -35,7 +35,7 @@ To create a new rule set and get its identifier, see [`Finding players using mat
 
 ##### View the Results of an Experimental Rule Set
 
-To get the results of processing match requests using the experimental rule set, pass `experimentalRuleSet` in the query parameter to the [`List All Queues`](https://developer.apple.com/documentation/AppStoreConnectAPI/GET-v1-gameCenterMatchmakingQueues) or [`Read Queue Information`](https://developer.apple.com/documentation/AppStoreConnectAPI/GET-v1-gameCenterMatchmakingQueues-_id_) endpoints. Then compare the results of the experimental rule set with the production rule set.
+To get the results of processing match requests using the experimental rule set, pass `experimentalRuleSet` in the query parameter to the [`List All Queues`](https://developer.apple.com/documentation/appstoreconnectapi/get-v1-gamecentermatchmakingqueues) or [`Read Queue Information`](https://developer.apple.com/documentation/appstoreconnectapi/get-v1-gamecentermatchmakingqueues-_id_) endpoints. Then compare the results of the experimental rule set with the production rule set.
 
 ```other
 GET /v1/gameCenterMatchmakingQueues/532ad9c0-1a28-4536-ad57-33213bcc0a29/experimentMatchmakingRequests?granularity=PT15M&groupBy=result
@@ -45,7 +45,7 @@ If it takes Game Center longer to find players or Game Center finds fewer player
 
 ##### Check the Size of the Queue
 
-Also, check the queue size over time using the [`Get Experimental Queue Size`](https://developer.apple.com/documentation/AppStoreConnectAPI/GET-v1-gameCenterMatchmakingQueues-_id_-metrics-experimentMatchmakingQueueSizes) endpoint. If the queue size for the experimental rule set is larger than the queue size for the existing rule set, investigate whether the new rule set causes this before releasing it.
+Also, check the queue size over time using the [`Get Experimental Queue Size`](https://developer.apple.com/documentation/appstoreconnectapi/get-v1-gamecentermatchmakingqueues-_id_-metrics-experimentmatchmakingqueuesizes) endpoint. If the queue size for the experimental rule set is larger than the queue size for the existing rule set, investigate whether the new rule set causes this before releasing it.
 
 ```other
 GET /v1/gameCenterMatchmakingQueues/532ad9c0-1a28-4536-ad57-33213bcc0a29/metrics/experimentMatchmakingQueueSizes?granularity=PT15M
@@ -55,7 +55,7 @@ GET /v1/gameCenterMatchmakingQueues/532ad9c0-1a28-4536-ad57-33213bcc0a29/metrics
 
 After you finish testing the new rule set, release it by replacing the queue’s rule set with the new one.
 
-First, remove the experimental rule set that you used for testing from the queue using the [`Modify a Queue`](https://developer.apple.com/documentation/AppStoreConnectAPI/PATCH-v1-gameCenterMatchmakingQueues-_id_) endpoint. Pass the queue identifier in the parameters and set `data` to `null` in the request body.
+First, remove the experimental rule set that you used for testing from the queue using the [`Modify a Queue`](https://developer.apple.com/documentation/appstoreconnectapi/patch-v1-gamecentermatchmakingqueues-_id_) endpoint. Pass the queue identifier in the parameters and set `data` to `null` in the request body.
 
 ```json
 PATCH /v1/gameCenterMatchmakingQueues/532ad9c0-1a28-4536-ad57-33213bcc0a29/relationships/experimentRuleSet
@@ -64,7 +64,7 @@ PATCH /v1/gameCenterMatchmakingQueues/532ad9c0-1a28-4536-ad57-33213bcc0a29/relat
 }
 ```
 
-Then set the queue’s rule set using the [`Modify a Queue`](https://developer.apple.com/documentation/AppStoreConnectAPI/PATCH-v1-gameCenterMatchmakingQueues-_id_) endpoint. Pass the queue identifier in the parameters and include the new rule set’s identifier in the request body.
+Then set the queue’s rule set using the [`Modify a Queue`](https://developer.apple.com/documentation/appstoreconnectapi/patch-v1-gamecentermatchmakingqueues-_id_) endpoint. Pass the queue identifier in the parameters and include the new rule set’s identifier in the request body.
 
 ```json
 PATCH /v1/gameCenterMatchmakingQueues/532ad9c0-1a28-4536-ad57-33213bcc0a29

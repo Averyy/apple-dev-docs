@@ -40,7 +40,7 @@ For example, a red `SimpleMaterial` that is not metallic, and one that is metall
 
 | Not metallic | Metallic |
 | --- | --- |
-| ![A screenshot of a red cube in a living room scene. The cube is rounded on the edges and appears to be made of a reflective plastic material.](https://docs-assets.developer.apple.com/published/1c42115ca829aa1fde7b9c344fac4ebc/simplematerial-not-metallic.jpg) | ![A screenshot of a red cube in a living room scene. The cube is rounded on the edges and appears to be made of a reflective metal material.](https://docs-assets.developer.apple.com/published/d58949e85bccef55e9218565e2e3f237/simplematerial-metallic.jpg) |
+| ![A screenshot of a red cube in a living room scene. The cube is rounded on the edges and appears to be made of a reflective plastic material.](/images/com.apple.RealityKit/simplematerial-not-metallic.jpg) | ![A screenshot of a red cube in a living room scene. The cube is rounded on the edges and appears to be made of a reflective metal material.](/images/com.apple.RealityKit/simplematerial-metallic.jpg) |
 
 ## Topics
 
@@ -90,7 +90,7 @@ For example, a red `SimpleMaterial` that is not metallic, and one that is metall
 
 ## See Also
 
-- [Creating 3D entities with RealityKit](../visionOS/creating-3d-entities-with-realitykit.md)
+- [Creating 3D entities with RealityKit](../visionos/creating-3d-entities-with-realitykit.md)
   Display a horizontal row of three-dimensional shapes in your visionOS app, using predefined mesh and white material.
 - [SimpleMaterial.BaseColor](simplematerial/basecolor-swift.typealias.md)
   The type used to represent base color.

@@ -35,7 +35,7 @@ NavigationView {
 }
 ```
 
-![A table with the navigation title Servers and four rows: North 1,](https://docs-assets.developer.apple.com/published/b5f34f4ffdb5ba98e88b91513e2da519/View-badge-3%402x.png)
+![A table with the navigation title Servers and four rows: North 1,](/images/com.apple.SwiftUI/View-badge-3@2x.png)
 
 ## Parameters
 

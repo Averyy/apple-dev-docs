@@ -39,7 +39,7 @@ The [`SKProductsRequestDelegate`](skproductsrequestdelegate.md) protocol declare
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 - [SKRequestDelegate](skrequestdelegate.md)
 
 ## See Also

@@ -22,7 +22,7 @@ class SCNAudioPlayer
 
 #### Overview
 
-An [`SCNAudioPlayer`](scnaudioplayer.md) object controls playback of a positional audio source in a SceneKit scene. To use positional audio, first create a reusable [`SCNAudioSource`](scnaudiosource.md) or [`AVAudioNode`](https://developer.apple.com/documentation/AVFAudio/AVAudioNode) object to provide an audio stream. Then, create an audio player to control the playback of that audio source. Finally, attach the audio player to an [`SCNNode`](scnnode.md) object for spatialized 3D audio playback based on the position of that node relative to the scene’s [`audioListener`](scnscenerenderer/audiolistener.md) node.
+An [`SCNAudioPlayer`](scnaudioplayer.md) object controls playback of a positional audio source in a SceneKit scene. To use positional audio, first create a reusable [`SCNAudioSource`](scnaudiosource.md) or [`AVAudioNode`](https://developer.apple.com/documentation/avfaudio/avaudionode) object to provide an audio stream. Then, create an audio player to control the playback of that audio source. Finally, attach the audio player to an [`SCNNode`](scnnode.md) object for spatialized 3D audio playback based on the position of that node relative to the scene’s [`audioListener`](scnscenerenderer/audiolistener.md) node.
 
 ## Topics
 
@@ -48,14 +48,14 @@ An [`SCNAudioPlayer`](scnaudioplayer.md) object controls playback of a positiona
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

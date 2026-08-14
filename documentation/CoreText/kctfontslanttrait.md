@@ -22,7 +22,7 @@ let kCTFontSlantTrait: CFString
 
 #### Discussion
 
-The value returned is a [`CFNumber`](https://developer.apple.com/documentation/CoreFoundation/CFNumber) object representing a float value between `-1.0` and `1.0` for normalized slant angle. The value of `0.0` corresponds to 0 degrees clockwise rotation from the vertical and `1.0` corresponds to 30 degrees clockwise rotation.
+The value returned is a [`CFNumber`](https://developer.apple.com/documentation/corefoundation/cfnumber) object representing a float value between `-1.0` and `1.0` for normalized slant angle. The value of `0.0` corresponds to 0 degrees clockwise rotation from the vertical and `1.0` corresponds to 30 degrees clockwise rotation.
 
 ## See Also
 

@@ -7,7 +7,6 @@ The message contained in this notification.
 
 **Availability**:
 - iOS 26.0+
-- iPadOS 26.0+
 
 ## Declaration
 

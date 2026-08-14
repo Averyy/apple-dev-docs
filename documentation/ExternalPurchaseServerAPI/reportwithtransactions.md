@@ -6,7 +6,7 @@ Create reports for external purchase tokens that result in completed transaction
 
 #### Overview
 
-If your app uses [`External Purchase`](https://developer.apple.com/documentation/StoreKit/external-purchase), you’re required to report all tokens and associated transactions according to the documentation for the region in which your app uses external purchases, see:
+If your app uses [`External Purchase`](https://developer.apple.com/documentation/storekit/external-purchase), you’re required to report all tokens and associated transactions according to the documentation for the region in which your app uses external purchases, see:
 
 - [`Communication and promotion of offers on the App Store in the EU`](https://developer.apple.comhttps://developer.apple.com/support/apps-using-alternative-payment-providers-in-the-eu#commission-reports-and-payments), specifically the section on *Commission, transaction reports, and payments*
 - [`Payment options on the App Store in Brazil`](https://developer.apple.comhttps://developer.apple.com/support/payment-options-on-the-app-store-in-brazil)

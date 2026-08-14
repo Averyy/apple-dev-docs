@@ -31,7 +31,7 @@ When implementing [`textPasteConfigurationSupporting(_:transform:)`](uitextpaste
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 - [UITextPasteItem](uitextpasteitem.md)
 
 ## See Also

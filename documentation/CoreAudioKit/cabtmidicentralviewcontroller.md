@@ -19,39 +19,39 @@ class CABTMIDICentralViewController
 
 #### Overview
 
-To let the user search for nearby MIDI peripherals, create a new [`CABTMIDICentralViewController`](cabtmidicentralviewcontroller.md) object and then either present it modally or push it onto a [`UINavigationController`](https://developer.apple.com/documentation/UIKit/UINavigationController) view controller. No other configuration of the object is necessary. Once the user interface is visible, the iOS device finds nearby peripherals and displays them to the user. If the user selects a peripheral, it’s automatically paired with this iOS device. The [`CABTMIDICentralViewController`](cabtmidicentralviewcontroller.md) object manages its own user interface and is dismissed automatically.
+To let the user search for nearby MIDI peripherals, create a new [`CABTMIDICentralViewController`](cabtmidicentralviewcontroller.md) object and then either present it modally or push it onto a [`UINavigationController`](https://developer.apple.com/documentation/uikit/uinavigationcontroller) view controller. No other configuration of the object is necessary. Once the user interface is visible, the iOS device finds nearby peripherals and displays them to the user. If the user selects a peripheral, it’s automatically paired with this iOS device. The [`CABTMIDICentralViewController`](cabtmidicentralviewcontroller.md) object manages its own user interface and is dismissed automatically.
 
-Once connected, the peripheral appears as a MIDI device, just like any other connected MIDI device. MIDI commands sent to the peripheral are automatically played. For more information, see [`Core MIDI`](https://developer.apple.com/documentation/CoreMIDI).
+Once connected, the peripheral appears as a MIDI device, just like any other connected MIDI device. MIDI commands sent to the peripheral are automatically played. For more information, see [`Core MIDI`](https://developer.apple.com/documentation/coremidi).
 
 ## Relationships
 
 ### Inherits From
-- [UITableViewController](../UIKit/UITableViewController.md)
+- [UITableViewController](../uikit/uitableviewcontroller.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCoding](../Foundation/NSCoding.md)
-- [NSExtensionRequestHandling](../Foundation/NSExtensionRequestHandling.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [NSTouchBarProvider](../AppKit/NSTouchBarProvider.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
-- [UIActivityItemsConfigurationProviding](../UIKit/UIActivityItemsConfigurationProviding.md)
-- [UIAppearanceContainer](../UIKit/UIAppearanceContainer.md)
-- [UIContentContainer](../UIKit/UIContentContainer.md)
-- [UIFocusEnvironment](../UIKit/UIFocusEnvironment.md)
-- [UIPasteConfigurationSupporting](../UIKit/UIPasteConfigurationSupporting.md)
-- [UIResponderStandardEditActions](../UIKit/UIResponderStandardEditActions.md)
-- [UIScrollViewDelegate](../UIKit/UIScrollViewDelegate.md)
-- [UIStateRestoring](../UIKit/UIStateRestoring.md)
-- [UITableViewDataSource](../UIKit/UITableViewDataSource.md)
-- [UITableViewDelegate](../UIKit/UITableViewDelegate.md)
-- [UITraitChangeObservable](../UIKit/UITraitChangeObservable-67e94.md)
-- [UITraitEnvironment](../UIKit/UITraitEnvironment.md)
-- [UIUserActivityRestoring](../UIKit/UIUserActivityRestoring.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCoding](../foundation/nscoding.md)
+- [NSExtensionRequestHandling](../foundation/nsextensionrequesthandling.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSTouchBarProvider](../appkit/nstouchbarprovider.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
+- [UIActivityItemsConfigurationProviding](../uikit/uiactivityitemsconfigurationproviding.md)
+- [UIAppearanceContainer](../uikit/uiappearancecontainer.md)
+- [UIContentContainer](../uikit/uicontentcontainer.md)
+- [UIFocusEnvironment](../uikit/uifocusenvironment.md)
+- [UIPasteConfigurationSupporting](../uikit/uipasteconfigurationsupporting.md)
+- [UIResponderStandardEditActions](../uikit/uiresponderstandardeditactions.md)
+- [UIScrollViewDelegate](../uikit/uiscrollviewdelegate.md)
+- [UIStateRestoring](../uikit/uistaterestoring.md)
+- [UITableViewDataSource](../uikit/uitableviewdatasource.md)
+- [UITableViewDelegate](../uikit/uitableviewdelegate.md)
+- [UITraitChangeObservable](../uikit/uitraitchangeobservable-67e94.md)
+- [UITraitEnvironment](../uikit/uitraitenvironment.md)
+- [UIUserActivityRestoring](../uikit/uiuseractivityrestoring.md)
 
 ## See Also
 

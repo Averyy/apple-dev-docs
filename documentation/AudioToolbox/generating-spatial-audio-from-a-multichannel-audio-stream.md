@@ -43,7 +43,7 @@ err = setStreamFormatAndACL(inOutputSampleRate, kAudioChannelLayoutTag_Stereo, k
 assert(err == noErr);
 ```
 
-The sample then configures the input stream format and sets the channel layout to  [`kAudioChannelLayoutTag_MPEG_7_1_A`](https://developer.apple.com/documentation/CoreAudioTypes/kAudioChannelLayoutTag_MPEG_7_1_A)  for 8-channel audio.
+The sample then configures the input stream format and sets the channel layout to  [`kAudioChannelLayoutTag_MPEG_7_1_A`](https://developer.apple.com/documentation/coreaudiotypes/kaudiochannellayouttag_mpeg_7_1_a)  for 8-channel audio.
 
 ```objc
 err = setStreamFormatAndACL(inInputSampleRate,

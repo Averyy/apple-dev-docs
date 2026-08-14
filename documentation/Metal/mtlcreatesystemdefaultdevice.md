@@ -30,7 +30,7 @@ A device object.
 
 #### Discussion
 
-In macOS, in order for the system to provide a default Metal device object, you need to link to the [`Core Graphics`](https://developer.apple.com/documentation/CoreGraphics) framework. You usually need to do this explicitly if you’re writing apps that don’t use graphics by default, such as command line tools.
+In macOS, in order for the system to provide a default Metal device object, you need to link to the [`Core Graphics`](https://developer.apple.com/documentation/coregraphics) framework. You usually need to do this explicitly if you’re writing apps that don’t use graphics by default, such as command line tools.
 
 ## See Also
 

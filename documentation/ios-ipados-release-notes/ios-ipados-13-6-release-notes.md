@@ -6,7 +6,7 @@ Update your apps to use new features, and test your apps against API changes.
 
 #### Overview
 
-The iOS & iPadOS 13.6 SDK provides support to develop apps for iPhone, iPad, and iPod touch devices running iOS & iPadOS 13.6. The SDK comes bundled with Xcode 11.6, available from the Mac App Store. For information on the compatibility requirements for Xcode 11.6, see [`Xcode 11.6 Release Notes`](https://developer.apple.com/documentation/Xcode-Release-Notes/xcode-11_6-release-notes).
+The iOS & iPadOS 13.6 SDK provides support to develop apps for iPhone, iPad, and iPod touch devices running iOS & iPadOS 13.6. The SDK comes bundled with Xcode 11.6, available from the Mac App Store. For information on the compatibility requirements for Xcode 11.6, see [`Xcode 11.6 Release Notes`](https://developer.apple.com/documentation/xcode-release-notes/xcode-11_6-release-notes).
 
 ##### Healthkit
 

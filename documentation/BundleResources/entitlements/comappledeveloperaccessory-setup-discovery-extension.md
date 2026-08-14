@@ -17,9 +17,9 @@ An entitlement that lets an app extension discover and set up accessories.
 
 #### Discussion
 
-To use [`AccessorySetupKit`](https://developer.apple.com/documentation/AccessorySetupKit) in your app, your accessory setup extension needs this entitlement. Don’t add the entitlement to your app.
+To use [`AccessorySetupKit`](https://developer.apple.com/documentation/accessorysetupkit) in your app, your accessory setup extension needs this entitlement. Don’t add the entitlement to your app.
 
-For more information, see [`Discovering and configuring accessories`](https://developer.apple.com/documentation/AccessorySetupKit/discovering-and-configuring-accessories).
+For more information, see [`Discovering and configuring accessories`](https://developer.apple.com/documentation/accessorysetupkit/discovering-and-configuring-accessories).
 
 
 ---

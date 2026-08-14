@@ -37,13 +37,13 @@ Parent view controllers control the appearance of their contained child view con
 
 ##### Opt Out of Dark Mode Entirely
 
-The system automatically opts in any app linked against the iOS 13.0 or later SDK to both light and dark appearances. If you need extra time to work on your app’s Dark Mode support, you can temporarily opt out by including the [`UIUserInterfaceStyle`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/UIUserInterfaceStyle) key (with a value of `Light`) in your app’s `Info.plist` file. Setting this key to `Light` causes the system to ignore the user’s preference and always apply a light appearance to your app.
+The system automatically opts in any app linked against the iOS 13.0 or later SDK to both light and dark appearances. If you need extra time to work on your app’s Dark Mode support, you can temporarily opt out by including the [`UIUserInterfaceStyle`](https://developer.apple.com/documentation/bundleresources/information-property-list/uiuserinterfacestyle) key (with a value of `Light`) in your app’s `Info.plist` file. Setting this key to `Light` causes the system to ignore the user’s preference and always apply a light appearance to your app.
 
-> ❗ **Important**:  Supporting Dark Mode is strongly encouraged. Use the [`UIUserInterfaceStyle`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/UIUserInterfaceStyle) key to opt out only temporarily while you work on improvements to your app’s Dark Mode support.
+> ❗ **Important**:  Supporting Dark Mode is strongly encouraged. Use the [`UIUserInterfaceStyle`](https://developer.apple.com/documentation/bundleresources/information-property-list/uiuserinterfacestyle) key to opt out only temporarily while you work on improvements to your app’s Dark Mode support.
 
 ## See Also
 
-- [Choosing a Specific Appearance for Your macOS App](../AppKit/choosing-a-specific-appearance-for-your-macos-app.md)
+- [Choosing a Specific Appearance for Your macOS App](../appkit/choosing-a-specific-appearance-for-your-macos-app.md)
   Adopt a specific appearance for your windows, views, or app when it is inappropriate to support both light and dark variants.
 
 

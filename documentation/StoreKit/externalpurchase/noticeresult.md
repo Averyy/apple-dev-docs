@@ -35,10 +35,10 @@ These values return when your app calls [`presentNoticeSheet()`](externalpurchas
 ## Relationships
 
 ### Conforms To
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 
@@ -46,7 +46,7 @@ These values return when your app calls [`presentNoticeSheet()`](externalpurchas
   A Boolean value that indicates whether the app can successfully present the notice sheet to inform people about external purchases.
 - [static func presentNoticeSheet() async throws -> ExternalPurchase.NoticeResult](externalpurchase/presentnoticesheet.md)
   Presents a notice sheet from Apple that informs people of external purchases before showing them, and determines if your app can present external purchases
-- [SKExternalPurchase](../BundleResources/Information-Property-List/SKExternalPurchase.md)
+- [SKExternalPurchase](../bundleresources/information-property-list/skexternalpurchase.md)
   A string array of country codes that indicates your app supports external purchases.
 
 

@@ -49,7 +49,7 @@ portal.components.set(PortalComponent(
 ))
 ```
 
-![A screenshot of cyan color box with only one face using portal material and a spaceship poking out of it](https://docs-assets.developer.apple.com/published/1e829c989c7a4cb292bc1ec6409b7bb4/portal-material-box.png)
+![A screenshot of cyan color box with only one face using portal material and a spaceship poking out of it](/images/com.apple.RealityKit/portal-material-box.png)
 
 RealityKit treats each mesh part with a `PortalMaterial` as a different portal, even if they are pointing to the same world. Beware of the performance impact of this usage.
 
@@ -92,8 +92,8 @@ See [`PortalComponent`](portalcomponent.md) for example usage.
 
 ### Conforms To
 - [Material](material.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

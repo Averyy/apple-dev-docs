@@ -19,7 +19,7 @@ class let touchBarPlayPauseTemplateName: String
 
 #### Discussion
 
-![Template image for play/pause](https://docs-assets.developer.apple.com/published/78897d125bad0d4031d0c269572655bc/media-2793504%402x.png)
+![Template image for play/pause](/images/com.apple.appkit/media-2793504@2x.png)
 
 Touch Bar template images are exclusively for use in [`NSTouchBarItem`](nstouchbaritem.md) objects and not in onscreen windows.
 

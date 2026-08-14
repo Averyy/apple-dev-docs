@@ -23,7 +23,7 @@ Each time your loop receives updated [`ServicePrediction`](serviceprediction.md)
 
 While processing predictions from the [`servicePredictions`](servicepredictionprovider/servicepredictions.md) sequence, gracefully handle any errors that it throws. The [`ServicePredictionError.unsupportedDevice`](servicepredictionerror/unsupporteddevice.md) error indicates that WirelessInsights won’t provide any predictions on this device. However, other errors indicate recoverable failures, such as [`ServicePredictionError.connectionError`](servicepredictionerror/connectionerror.md).
 
-The following example shows a class that creates a [`Task`](https://developer.apple.com/documentation/Swift/Task) to receive service predictions and call a private helper method when it receives a sufficiently important prediction.
+The following example shows a class that creates a [`Task`](https://developer.apple.com/documentation/swift/task) to receive service predictions and call a private helper method when it receives a sufficiently important prediction.
 
 ```swift
 class PredictionHandler {
@@ -82,7 +82,7 @@ class PredictionHandler {
 
 ## See Also
 
-- [Wireless Insights Service Predictions](../BundleResources/Entitlements/com.apple.developer.wireless-insights.service-predictions.md)
+- [Wireless Insights Service Predictions](../bundleresources/entitlements/com.apple.developer.wireless-insights.service-predictions.md)
   A Boolean value that indicates whether the app can use the WirelessInsights framework to obtain wireless service predictions.
 
 

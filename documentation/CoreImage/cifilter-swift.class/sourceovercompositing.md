@@ -48,7 +48,7 @@ func sourceOverCompositing(inputImage: CIImage, backgroundImage: CIImage) -> CII
 }
 ```
 
-![The image on the top left shows a beach with multiple palm trees and a rainbow arching across the blue sky.  The image below is a gradient image displaying a gradual color shift from purple to a dark orange. The image on the right shows the output from applying a source-over compositing filter. The gradient image is overlaid on the beach photo image.](https://docs-assets.developer.apple.com/published/6d9377d9cdb80cb42d9fdd83f3de78b9/media-3546395%402x.png)
+![The image on the top left shows a beach with multiple palm trees and a rainbow arching across the blue sky.  The image below is a gradient image displaying a gradual color shift from purple to a dark orange. The image on the right shows the output from applying a source-over compositing filter. The gradient image is overlaid on the beach photo image.](/images/com.apple.coreimage/media-3546395@2x.png)
 
 ## See Also
 

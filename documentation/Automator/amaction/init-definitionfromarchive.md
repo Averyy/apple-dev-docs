@@ -28,7 +28,7 @@ The [`AMAction`](amaction.md) object being instantiated should perform whatever 
 ## Parameters
 
 - `dict`: A dictionary that describes the action, including any custom definition properties.
-- `archived`: If the action is being unarchived, [`true`](https://developer.apple.com/documentation/Swift/true); otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
+- `archived`: If the action is being unarchived, [`true`](https://developer.apple.com/documentation/swift/true); otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
 
 ## See Also
 

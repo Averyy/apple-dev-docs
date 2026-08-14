@@ -19,7 +19,7 @@ static var unsyncedEdits: NSFileProviderError.Code { get }
 
 #### Discussion
 
-The [`NSFileProviderManager`](nsfileprovidermanager.md) throws this error when you attempt to evict an item that contains unsynced changes. The system sets the error’s [`NSURLErrorKey`](https://developer.apple.com/documentation/Foundation/NSURLErrorKey) to the URL of the item that the error affects.
+The [`NSFileProviderManager`](nsfileprovidermanager.md) throws this error when you attempt to evict an item that contains unsynced changes. The system sets the error’s [`NSURLErrorKey`](https://developer.apple.com/documentation/foundation/nsurlerrorkey) to the URL of the item that the error affects.
 
 ## See Also
 

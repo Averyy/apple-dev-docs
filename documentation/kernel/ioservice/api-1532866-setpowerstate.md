@@ -27,7 +27,7 @@ A power managed driver must override [`setPowerState`](ioservice/1532866-setpowe
 ## Parameters
 
 - `powerStateOrdinal`: The number in the power state array of the state the driver is being instructed to switch to.
-- `whatDevice`: A pointer to the power management object which registered to manage power for this device. In most cases, whatDevice will be equal to your driver's own   pointer.
+- `whatDevice`: A pointer to the power management object which registered to manage power for this device. In most cases, whatDevice will be equal to your driver's own `this` pointer.
 
 ## See Also
 

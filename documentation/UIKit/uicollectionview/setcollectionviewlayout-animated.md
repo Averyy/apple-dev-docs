@@ -25,7 +25,7 @@ This method makes the layout change without further interaction from the user. I
 ## Parameters
 
 - `layout`: The new layout object for the collection view.
-- `animated`: Specify [`true`](https://developer.apple.com/documentation/Swift/true) if you want to animate changes from the current layout to the new layout specified by the `layout` parameter. Specify [`false`](https://developer.apple.com/documentation/Swift/false) to make the change without animations.
+- `animated`: Specify [`true`](https://developer.apple.com/documentation/swift/true) if you want to animate changes from the current layout to the new layout specified by the `layout` parameter. Specify [`false`](https://developer.apple.com/documentation/swift/false) to make the change without animations.
 
 ## See Also
 

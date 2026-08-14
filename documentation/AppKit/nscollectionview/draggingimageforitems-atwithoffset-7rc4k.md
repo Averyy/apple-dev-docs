@@ -26,9 +26,9 @@ If the delegate implements the [`collectionView(_:draggingImageForItemsAt:with:o
 
 ## Parameters
 
-- `indexPaths`: The set of [`NSIndexPath`](https://developer.apple.com/documentation/Foundation/NSIndexPath) objects corresponding to the items being dragged.
+- `indexPaths`: The set of [`NSIndexPath`](https://developer.apple.com/documentation/foundation/nsindexpath) objects corresponding to the items being dragged.
 - `event`: The mouse-down event that began the drag operation.
-- `dragImageOffset`: The offset value to use when positioning the image. On input, the point is [`NSZeroPoint`](https://developer.apple.com/documentation/Foundation/NSZeroPoint), which centers the returned image under the mouse. Custom implementations can return a different point that repositions the drag image by the specified offset values.
+- `dragImageOffset`: The offset value to use when positioning the image. On input, the point is [`NSZeroPoint`](https://developer.apple.com/documentation/foundation/nszeropoint), which centers the returned image under the mouse. Custom implementations can return a different point that repositions the drag image by the specified offset values.
 
 
 ---

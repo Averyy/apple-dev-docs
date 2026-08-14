@@ -27,7 +27,7 @@ The [`pixelFormat`](mtlrenderpipelinecolorattachmentdescriptor/pixelformat.md) p
 
 Blend operations determine how a source fragment is combined with a destination value in a color attachment to determine the pixel value to be written. The following properties define whether and how blending is performed:
 
-- The [`isBlendingEnabled`](mtlrenderpipelinecolorattachmentdescriptor/isblendingenabled.md) property enables blending. The default value is [`false`](https://developer.apple.com/documentation/Swift/false).
+- The [`isBlendingEnabled`](mtlrenderpipelinecolorattachmentdescriptor/isblendingenabled.md) property enables blending. The default value is [`false`](https://developer.apple.com/documentation/swift/false).
 - The [`writeMask`](mtlrenderpipelinecolorattachmentdescriptor/writemask.md) property identifies which color channels are blended. The default value is [`all`](mtlcolorwritemask/all.md), which allows all color channels to be blended.
 - The [`rgbBlendOperation`](mtlrenderpipelinecolorattachmentdescriptor/rgbblendoperation.md) and [`alphaBlendOperation`](mtlrenderpipelinecolorattachmentdescriptor/alphablendoperation.md) properties assign the blend operations for RGB and alpha pixel data. The default value for both properties is [`MTLBlendOperation.add`](mtlblendoperation/add.md).
 - The [`sourceRGBBlendFactor`](mtlrenderpipelinecolorattachmentdescriptor/sourcergbblendfactor.md), [`sourceAlphaBlendFactor`](mtlrenderpipelinecolorattachmentdescriptor/sourcealphablendfactor.md), [`destinationRGBBlendFactor`](mtlrenderpipelinecolorattachmentdescriptor/destinationrgbblendfactor.md), and [`destinationAlphaBlendFactor`](mtlrenderpipelinecolorattachmentdescriptor/destinationalphablendfactor.md) properties assign the source and destination blend factors. The default value for [`sourceRGBBlendFactor`](mtlrenderpipelinecolorattachmentdescriptor/sourcergbblendfactor.md) and [`sourceAlphaBlendFactor`](mtlrenderpipelinecolorattachmentdescriptor/sourcealphablendfactor.md) is [`MTLBlendFactor.one`](mtlblendfactor/one.md). The default value for [`destinationRGBBlendFactor`](mtlrenderpipelinecolorattachmentdescriptor/destinationrgbblendfactor.md) and [`destinationAlphaBlendFactor`](mtlrenderpipelinecolorattachmentdescriptor/destinationalphablendfactor.md) is [`MTLBlendFactor.zero`](mtlblendfactor/zero.md).
@@ -65,15 +65,15 @@ Blend operations determine how a source fragment is combined with a destination 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCopying](../Foundation/NSCopying.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCopying](../foundation/nscopying.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

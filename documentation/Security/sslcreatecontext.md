@@ -23,11 +23,11 @@ func SSLCreateContext(_ alloc: CFAllocator?, _ protocolSide: SSLProtocolSide, _ 
 
 #### Return Value
 
-A new context. In Objective-C, use [`CFRelease`](https://developer.apple.com/documentation/CoreFoundation/CFRelease) to release this object’s memory when you are done with it.
+A new context. In Objective-C, use [`CFRelease`](https://developer.apple.com/documentation/corefoundation/cfrelease) to release this object’s memory when you are done with it.
 
 ## Parameters
 
-- `alloc`: The allocator to use. Pass `NULL` or [`kCFAllocatorDefault`](https://developer.apple.com/documentation/CoreFoundation/kCFAllocatorDefault) to use the default allocator.
+- `alloc`: The allocator to use. Pass `NULL` or [`kCFAllocatorDefault`](https://developer.apple.com/documentation/corefoundation/kcfallocatordefault) to use the default allocator.
 - `protocolSide`: Either [`SSLProtocolSide.serverSide`](sslprotocolside/serverside.md) or [`SSLProtocolSide.clientSide`](sslprotocolside/clientside.md).
 - `connectionType`: Either [`SSLConnectionType.streamType`](sslconnectiontype/streamtype.md) or [`SSLConnectionType.datagramType`](sslconnectiontype/datagramtype.md).
 

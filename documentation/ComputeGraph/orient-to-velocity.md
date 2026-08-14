@@ -19,7 +19,7 @@ void orient_to_velocity()
 
 Adding this node will cause a `float3 axisY` attribute to be added, if one doesn’t already exist.
 
-> **Note**: ![Graph](https://docs-assets.developer.apple.com/published/15626c44d1bf74523ee1488e6a6a572a/orient_to_velocity.svg)
+> **Note**: ![Graph](/images/com.apple.computegraph/orient_to_velocity.svg)
 
 > **Note**: Reads from element state `float3 velocity`, if it exists
 

@@ -21,7 +21,7 @@ static let textStyle: UIFontDescriptor.AttributeName
 
 #### Discussion
 
-The value is an [`NSString`](https://developer.apple.com/documentation/Foundation/NSString) object that contains the specified text style.
+The value is an [`NSString`](https://developer.apple.com/documentation/foundation/nsstring) object that contains the specified text style.
 
 ## See Also
 

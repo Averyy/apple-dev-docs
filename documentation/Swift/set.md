@@ -289,9 +289,9 @@ Bridging from `NSSet` to `Set` first calls the `copy(with:)` method (`- copyWith
 - [var customMirror: Mirror](set/custommirror.md)
   A mirror that reflects the set.
 ### Reference Types
-- [class NSSet](../Foundation/NSSet.md)
+- [class NSSet](../foundation/nsset.md)
   A static, unordered collection of unique objects.
-- [class NSMutableSet](../Foundation/NSMutableSet.md)
+- [class NSMutableSet](../foundation/nsmutableset.md)
   A dynamic unordered collection of unique objects.
 ### Supporting Types
 - [struct Index](set/index.md)
@@ -331,7 +331,7 @@ Bridging from `NSSet` to `Set` first calls the `copy(with:)` method (`- copyWith
 ## Relationships
 
 ### Conforms To
-- [CVAttachmentValueRepresentable](../CoreVideo/CVAttachmentValueRepresentable.md)
+- [CVAttachmentValueRepresentable](../corevideo/cvattachmentvaluerepresentable.md)
 - [CVarArg](cvararg.md)
 - [Collection](collection.md)
 - [Copyable](copyable.md)
@@ -344,8 +344,8 @@ Bridging from `NSSet` to `Set` first calls the `copy(with:)` method (`- copyWith
 - [Escapable](escapable.md)
 - [ExpressibleByArrayLiteral](expressiblebyarrayliteral.md)
 - [Hashable](hashable.md)
-- [IntentValueConvertible](../AppIntents/IntentValueConvertible.md)
-- [IntentValueExpressing](../AppIntents/IntentValueExpressing.md)
+- [IntentValueConvertible](../appintents/intentvalueconvertible.md)
+- [IntentValueExpressing](../appintents/intentvalueexpressing.md)
 - [Sendable](sendable.md)
 - [SendableMetatype](sendablemetatype.md)
 - [Sequence](sequence.md)

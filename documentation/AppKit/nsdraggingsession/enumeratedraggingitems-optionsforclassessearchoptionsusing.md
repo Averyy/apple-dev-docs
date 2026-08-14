@@ -43,7 +43,7 @@ To refine the list of dragging items that this method provides, specify `enumOpt
 - `searchOptions`: A dictionary that specifies options to refine the search for pasteboard items, such as restricting the search to file URLs with particular content types. For valid dictionary keys, see [`NSPasteboard.ReadingOptionKey`](nspasteboard/readingoptionkey.md).
 - `block`: The block to execute for the enumeration. The block takes three arguments: - **`draggingItem`**: A reference to the dragging item. The [`draggingFrame`](nsdraggingitem/draggingframe.md) of the dragging item is in the coordinate space of the view that `view` specifies. A `view` value of `nil` means the screen coordinate space.
 - **`idx`**: The index of the element in the classes.
-- **`stop`**: A reference to a Boolean value that the block can use to stop the enumeration by setting `*stop` to [`true`](https://developer.apple.com/documentation/Swift/true).
+- **`stop`**: A reference to a Boolean value that the block can use to stop the enumeration by setting `*stop` to [`true`](https://developer.apple.com/documentation/swift/true).
 
 ## See Also
 

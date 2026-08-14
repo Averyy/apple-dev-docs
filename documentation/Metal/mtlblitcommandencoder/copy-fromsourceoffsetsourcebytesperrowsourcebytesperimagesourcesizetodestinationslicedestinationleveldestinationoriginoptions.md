@@ -22,7 +22,7 @@ func copy(from sourceBuffer: any MTLBuffer, sourceOffset: Int, sourceBytesPerRow
 
 #### Discussion
 
-Passing an empty [`OptionSet`](https://developer.apple.com/documentation/Swift/OptionSet) to the `options` parameter is the equivalent of calling [`copy(from:sourceOffset:sourceBytesPerRow:sourceBytesPerImage:sourceSize:to:destinationSlice:destinationLevel:destinationOrigin:)`](mtlblitcommandencoder/copy(from:sourceoffset:sourcebytesperrow:sourcebytesperimage:sourcesize:to:destinationslice:destinationlevel:destinationorigin:).md). In Swift, pass `[]` to represent an empty option set, and in Objective-C, pass [`MTLBlitOptionNone`](mtlblitoption/mtlblitoptionnone.md).
+Passing an empty [`OptionSet`](https://developer.apple.com/documentation/swift/optionset) to the `options` parameter is the equivalent of calling [`copy(from:sourceOffset:sourceBytesPerRow:sourceBytesPerImage:sourceSize:to:destinationSlice:destinationLevel:destinationOrigin:)`](mtlblitcommandencoder/copy(from:sourceoffset:sourcebytesperrow:sourcebytesperimage:sourcesize:to:destinationslice:destinationlevel:destinationorigin:).md). In Swift, pass `[]` to represent an empty option set, and in Objective-C, pass [`MTLBlitOptionNone`](mtlblitoption/mtlblitoptionnone.md).
 
 ## Parameters
 
@@ -33,7 +33,7 @@ Passing an empty [`OptionSet`](https://developer.apple.com/documentation/Swift/O
 - `sourceBytesPerImage`: The number of bytes between each 2D image of a 3D texture. This value needs to be a multiple of the source texture’s pixel size, in bytes. Set this value to `0` for 2D textures, which means `sourceSize.`[`depth`](mtlsize/depth.md) is equal to `1`.
 - `sourceSize`: An [`MTLSize`](mtlsize.md) instance, which can represent a 3D region, that instructs the command how many pixels to copy to `destinationTexture`, starting at `destinationOrigin`. Assign `1` to each dimension that’s not relevant to `destinationTexture`. For example: - If the destination texture is a 2D texture, set the size’s [`depth`](mtlsize/depth.md) property to `1`.
 - If the destination texture is a 1D texture, set the size’s [`height`](mtlsize/height.md) and [`depth`](mtlsize/depth.md) properties to `1`. If `destinationTexture` uses a compressed pixel format, set `sourceSize` to a multiple of the pixel format’s block size. If the block extends outside the bounds of the texture, clamp `sourceSize` to the edge of the texture.
-- `destinationTexture`: A texture with an [`isFramebufferOnly`](mtltexture/isframebufferonly.md) property value of [`false`](https://developer.apple.com/documentation/Swift/false) that the command copies data to.
+- `destinationTexture`: A texture with an [`isFramebufferOnly`](mtltexture/isframebufferonly.md) property value of [`false`](https://developer.apple.com/documentation/swift/false) that the command copies data to.
 - `destinationSlice`: A slice within `destinationTexture`. For textures that use a combined depth/stencil pixel format, configure the `options` parameter appropriately.
 - `destinationLevel`: A mipmap level within `destinationTexture`.
 - `destinationOrigin`: A location within `destinationTexture` that the command begins copying data to. Assign `0` to each dimension that’s not relevant to `destinationTexture`. For example: - If the destination texture is a 2D texture, set the origin’s [`z`](mtlorigin/z.md) property to `0`.

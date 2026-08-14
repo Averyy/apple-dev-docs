@@ -17,7 +17,7 @@ init<V>(foveatedStreaming session: FoveatedStreamingSession, @ViewBuilder conten
 
 #### Discussion
 
-You can add [`RealityKit`](https://developer.apple.com/documentation/RealityKit) content to your space that coexists alongside the streamed content, for example:
+You can add [`RealityKit`](https://developer.apple.com/documentation/realitykit) content to your space that coexists alongside the streamed content, for example:
 
 ```swift
 ImmersiveSpace(foveatedStreaming: session) {

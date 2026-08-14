@@ -22,22 +22,22 @@ Construct and manage a graphical, event-driven user interface for your iOS, iPad
 
 UIKit provides a variety of features for building apps, including components you can use to construct the core infrastructure of your iOS, iPadOS, or tvOS apps. The framework provides the window and view architecture for implementing your UI, the event-handling infrastructure for delivering Multi-Touch and other types of input to your app, and the main run loop for managing interactions between the user, the system, and your app.
 
-![An image of the Landmarks sample app on iPad and iPhone showing the Mount Fuji landmark.](https://docs-assets.developer.apple.com/published/6452b204ef978b327ecf448e232eee4e/Landmarks-Building-an-app-with-Liquid-Glass-1%402x.png)
+![An image of the Landmarks sample app on iPad and iPhone showing the Mount Fuji landmark.](/images/com.apple.uikit/Landmarks-Building-an-app-with-Liquid-Glass-1@2x.png)
 
 UIKit also includes support for animations, documents, drawing and printing, text management and display, search, app extensions, resource management, and getting information about the current device. You can also customize accessibility support, and localize your app’s interface for different languages, countries, or cultural regions.
 
-UIKit works seamlessly with the [`SwiftUI`](https://developer.apple.com/documentation/SwiftUI) framework, so you can implement parts of your UIKit app in SwiftUI or mix interface elements between the two frameworks. For example, you can place UIKit views and view controllers inside SwiftUI views, and vice versa.
+UIKit works seamlessly with the [`SwiftUI`](https://developer.apple.com/documentation/swiftui) framework, so you can implement parts of your UIKit app in SwiftUI or mix interface elements between the two frameworks. For example, you can place UIKit views and view controllers inside SwiftUI views, and vice versa.
 
-To build a macOS app, you can use [`SwiftUI`](https://developer.apple.com/documentation/SwiftUI) to create an app that works across all of Apple’s platforms, or use [`AppKit`](https://developer.apple.com/documentation/AppKit) to create an app for Mac only. Alternatively, you can bring your UIKit iPad app to the Mac with [`Mac Catalyst`](mac-catalyst.md).
+To build a macOS app, you can use [`SwiftUI`](https://developer.apple.com/documentation/swiftui) to create an app that works across all of Apple’s platforms, or use [`AppKit`](https://developer.apple.com/documentation/appkit) to create an app for Mac only. Alternatively, you can bring your UIKit iPad app to the Mac with [`Mac Catalyst`](mac-catalyst.md).
 
 > ❗ **Important**:  Use UIKit classes only from your app’s main thread or main dispatch queue, unless otherwise indicated in the documentation for those classes. This restriction particularly applies to classes that derive from [`UIResponder`](uiresponder.md) or that involve manipulating your app’s user interface in any way.
 
 ## Topics
 
 ### Essentials
-- [Adopting Liquid Glass](../TechnologyOverviews/adopting-liquid-glass.md)
+- [Adopting Liquid Glass](../technologyoverviews/adopting-liquid-glass.md)
   Find out how to bring the new material to your app.
-- [UIKit updates](../Updates/UIKit.md)
+- [UIKit updates](../updates/uikit.md)
   Learn about important changes to UIKit.
 - [About app development with UIKit](about-app-development-with-uikit.md)
   Learn about the basic support that UIKit and Xcode provide for your iOS and tvOS apps.

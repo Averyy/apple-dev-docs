@@ -20,8 +20,8 @@ kern_return_t CreateMapping(uint64_t options, uint64_t address, uint64_t offset,
 - [+ CreateMapping_Invoke](iomemorydescriptor/3174976-createmapping_invoke.md)
 - [- populateDevicePager](iomemorydescriptor/1442017-populatedevicepager.md)
 - [- CreateMapping_Impl](iomemorydescriptor/3174975-createmapping_impl.md)
-- [- Map](../driverkit/iomemorydescriptor/map.md)
-  Maps memory internally.
+- [- Map](iomemorydescriptor/3180643-map.md)
+  Maps memory internally. 
 - [- addMapping](iomemorydescriptor/1442013-addmapping.md)
 - [- removeMapping](iomemorydescriptor/1441778-removemapping.md)
 - [- makeMapping](iomemorydescriptor/1441923-makemapping.md)

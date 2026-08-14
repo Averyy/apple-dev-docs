@@ -20,7 +20,7 @@ static let location: UIApplication.LaunchOptionsKey
 
 #### Discussion
 
-The value of this key is an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) object containing a Boolean value. You should use the presence of this key as a signal to create a [`CLLocationManager`](https://developer.apple.com/documentation/CoreLocation/CLLocationManager) object and start location services again. Location data is delivered only to the location manager delegate and not using this key.
+The value of this key is an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) object containing a Boolean value. You should use the presence of this key as a signal to create a [`CLLocationManager`](https://developer.apple.com/documentation/corelocation/cllocationmanager) object and start location services again. Location data is delivered only to the location manager delegate and not using this key.
 
 ## See Also
 

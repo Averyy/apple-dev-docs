@@ -21,7 +21,7 @@ var isApplicationRunningInDock: Bool { get }
 
 #### Discussion
 
-This property contains [`true`](https://developer.apple.com/documentation/Swift/true) if the app is running in the dock; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
+This property contains [`true`](https://developer.apple.com/documentation/swift/true) if the app is running in the dock; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
 
 Check this property (for example, in your extension delegate’s [`applicationWillEnterForeground()`](wkextensiondelegate/applicationwillenterforeground().md) method) to determine whether your app is running in the dock. You can use this information to customize your user interface in the dock.
 

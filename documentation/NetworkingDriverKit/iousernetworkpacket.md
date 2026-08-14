@@ -95,7 +95,7 @@ An [`IOUserNetworkPacket`](iousernetworkpacket.md) contains meta information abo
 ## Relationships
 
 ### Inherits From
-- [OSObject](../DriverKit/OSObject.md)
+- [OSObject](../driverkit/osobject.md)
 
 ## See Also
 

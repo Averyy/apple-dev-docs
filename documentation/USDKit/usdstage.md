@@ -149,7 +149,7 @@ A composed, runtime view of a USD scene assembled from one or more layers.
 ## Relationships
 
 ### Conforms To
-- [Equatable](../Swift/Equatable.md)
+- [Equatable](../swift/equatable.md)
 
 ## See Also
 

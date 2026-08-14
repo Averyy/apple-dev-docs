@@ -35,7 +35,7 @@ protocol ASCredentialIdentity : NSObjectProtocol
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 ### Conforming Types
 - [ASOneTimeCodeCredentialIdentity](asonetimecodecredentialidentity.md)
 - [ASPasskeyCredentialIdentity](aspasskeycredentialidentity.md)

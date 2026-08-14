@@ -29,7 +29,7 @@ A new value object that contains the size information.
 
 ## See Also
 
-- [struct CGSize](../CoreFoundation/CGSize.md)
+- [struct CGSize](../corefoundation/cgsize.md)
   A structure that contains width and height values.
 - [init(CGPoint: CGPoint)](nsvalue/init(cgpoint:).md)
   Creates a new value object containing the specified CoreGraphics point structure.

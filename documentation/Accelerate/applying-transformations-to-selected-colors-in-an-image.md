@@ -12,7 +12,7 @@ Desaturate a range of colors in an image with a multidimensional lookup table.
 
 This sample code app allows you to desaturate the colors in an image based on their similarity to a selected color. For example, the image below shows an original image (left) and the transformed image (right) where the app has transformed the cake sprinkles that aren’t yellow to grayscale.
 
-![A comparison of the original image of colorful cake sprinkles with its selectively-desaturated counterpart.](https://docs-assets.developer.apple.com/published/5dcd704e85563a225fd9fd045f29208c/comparison_2x.png)
+![A comparison of the original image of colorful cake sprinkles with its selectively-desaturated counterpart.](/images/com.apple.accelerate/comparison_2x.png)
 
 Before exploring the code, try building and running the app to familiarize yourself with the effect of the different transformations on the image. In the app, click the smaller image to select a color and the app displays the transformed result as the larger image.
 

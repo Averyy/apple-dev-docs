@@ -23,7 +23,7 @@ Create a parent folder to contain the labeled folders. Then, create a folder for
 
 > ❗ **Important**: Each video in a labeled folder’s data source must demonstrate a single type of action.
 
-![Flow diagram that shows a labeled directory data-source file arrangement. The parent folder, named Training Data 1 contains three labeled folders named, Squats, Lunges, and Jumping Jacks. Next to each labeled folder is a stack of video file icons with an arrow pointing toward its corresponding labeled directory.](https://docs-assets.developer.apple.com/published/f288d165786aefedd400466cf528383e/building-an-action-classifier-data-source-1%402x.png)
+![Flow diagram that shows a labeled directory data-source file arrangement. The parent folder, named Training Data 1 contains three labeled folders named, Squats, Lunges, and Jumping Jacks. Next to each labeled folder is a stack of video file icons with an arrow pointing toward its corresponding labeled directory.](/images/com.apple.createml/building-an-action-classifier-data-source-1@2x.png)
 
 Each video file may have more than one instance of an action, but the videos must minimize the time between each instance. If you notice inactivity between action instances, remove the inactivity by breaking the video file into separate files and trimming each video to the action.
 
@@ -31,7 +31,7 @@ Each video file may have more than one instance of an action, but the videos mus
 
 Create a folder and place all your example video files in it. Then, create an annotation file using either a CSV — with either `.csv` or `.txt` file extensions — or JSON format.
 
-![Flow diagram of an annotated videos data-source file arrangement. The parent folder, named Training Data 2 contains 5 files named: annotations.csv, Squats1.mov, Squats2.mov, Jumping Jacks.mov, and Exercise montage 1.mov.](https://docs-assets.developer.apple.com/published/26472f7c02e0bace57143933dd20e93c/building-an-action-classifier-data-source-2%402x.png)
+![Flow diagram of an annotated videos data-source file arrangement. The parent folder, named Training Data 2 contains 5 files named: annotations.csv, Squats1.mov, Squats2.mov, Jumping Jacks.mov, and Exercise montage 1.mov.](/images/com.apple.createml/building-an-action-classifier-data-source-2@2x.png)
 
 Each entry in the annotation file must have these categories:
 

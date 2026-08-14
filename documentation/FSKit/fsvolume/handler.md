@@ -128,7 +128,7 @@ Conform to this protocol in your subclass of [`FSVolume`](fsvolume.md). To provi
 ### Inherits From
 - [FSVolume.CommonOperations](fsvolume/commonoperations.md)
 - [FSVolume.PathConfOperations](fsvolume/pathconfoperations.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

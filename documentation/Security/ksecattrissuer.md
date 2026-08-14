@@ -22,7 +22,7 @@ let kSecAttrIssuer: CFString
 
 #### Discussion
 
-The corresponding value is of type [`CFData`](https://developer.apple.com/documentation/CoreFoundation/CFData) and contains the X.500 issuer name of a certificate. Items of class [`kSecClassCertificate`](ksecclasscertificate.md) have this attribute. Read only.
+The corresponding value is of type [`CFData`](https://developer.apple.com/documentation/corefoundation/cfdata) and contains the X.500 issuer name of a certificate. Items of class [`kSecClassCertificate`](ksecclasscertificate.md) have this attribute. Read only.
 
 
 ---

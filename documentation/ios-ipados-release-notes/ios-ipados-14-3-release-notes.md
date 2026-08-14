@@ -6,7 +6,7 @@ Update your apps to use new features, and test your apps against API changes.
 
 #### Overview
 
-The iOS & iPadOS 14.3 SDK provides support to develop apps for iPhone, iPad, and iPod touch devices running iOS & iPadOS 14.3. The SDK comes bundled with Xcode 12.3, available from the Mac App Store. For information on the compatibility requirements for Xcode 12.3, see [`Xcode 12.3 Release Notes`](https://developer.apple.com/documentation/Xcode-Release-Notes/xcode-12_3-release-notes).
+The iOS & iPadOS 14.3 SDK provides support to develop apps for iPhone, iPad, and iPod touch devices running iOS & iPadOS 14.3. The SDK comes bundled with Xcode 12.3, available from the Mac App Store. For information on the compatibility requirements for Xcode 12.3, see [`Xcode 12.3 Release Notes`](https://developer.apple.com/documentation/xcode-release-notes/xcode-12_3-release-notes).
 
 ##### App Clips
 
@@ -33,7 +33,7 @@ The iOS & iPadOS 14.3 SDK provides support to develop apps for iPhone, iPad, and
 
 ###### Deprecations
 
-The `TargetApplicationBundleIdentifier` in [`WebClip`](https://developer.apple.com/documentation/DeviceManagement/WebClip) is intended for enterprise customers to launch a custom URL in a third-party browser, rather than to provide theming options. Beginning in iOS & iPadOS 14.3, pointing `TargetApplicationBundleIdentifier` to an app made by Apple is no longer supported. A Web Clip already installed via a configuration profile will continue to work; however, the `TargetApplicationBundleIdentifier` property will be ignored in newly installed Web Clips unless the configuration profile is deployed via MDM. For devices not enrolled in MDM, create a single-step shortcut with the Open App action, then add the shortcut to the Home screen. (71422092)
+The `TargetApplicationBundleIdentifier` in [`WebClip`](https://developer.apple.com/documentation/devicemanagement/webclip) is intended for enterprise customers to launch a custom URL in a third-party browser, rather than to provide theming options. Beginning in iOS & iPadOS 14.3, pointing `TargetApplicationBundleIdentifier` to an app made by Apple is no longer supported. A Web Clip already installed via a configuration profile will continue to work; however, the `TargetApplicationBundleIdentifier` property will be ignored in newly installed Web Clips unless the configuration profile is deployed via MDM. For devices not enrolled in MDM, create a single-step shortcut with the Open App action, then add the shortcut to the Home screen. (71422092)
 
 ## See Also
 

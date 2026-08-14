@@ -25,7 +25,7 @@ A [`VZVirtualMachine`](vzvirtualmachine.md) object emulates a complete hardware 
 
 Create and configure a [`VZVirtualMachineConfiguration`](vzvirtualmachineconfiguration.md) object with details about how you want to configure your VM, and use that object to create the [`VZVirtualMachine`](vzvirtualmachine.md) object. After creating the VM, call the [`start(completionHandler:)`](vzvirtualmachine/start(completionhandler:).md) method (Swift)  or the [`start()`](vzvirtualmachine/start().md) method (Objective-C) to start the VM and boot the guest operating system.
 
-> ❗ **Important**:  The creation of a virtual machine requires your app to have the [`com.apple.security.virtualization`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.security.virtualization) entitlement.
+> ❗ **Important**:  The creation of a virtual machine requires your app to have the [`com.apple.security.virtualization`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.security.virtualization) entitlement.
 
 ## Topics
 
@@ -103,14 +103,14 @@ Create and configure a [`VZVirtualMachineConfiguration`](vzvirtualmachineconfigu
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

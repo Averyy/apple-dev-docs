@@ -34,7 +34,7 @@ You use text fields to gather text-based input from the user using the onscreen 
 
 In addition to its basic text-editing behavior, you can add overlay views to a text field to display additional information and provide additional tappable controls. You might add custom overlay views for elements such as a bookmarks button or search icon. Text fields provide a built-in overlay view to clear the current text. The use of custom overlay views is optional.
 
-![None](https://docs-assets.developer.apple.com/published/a9c08ac61274deea4eef6f1c14f01dea/media-2557435%402x.png)
+![None](/images/com.apple.uikit/media-2557435@2x.png)
 
 After adding a text field to your interface, you configure it for use in your app. Configuration involves performing some or all of the following tasks:
 
@@ -78,20 +78,20 @@ Because the system manages the showing and hiding of the keyboard in response to
 - [`keyboardWillChangeFrameNotification`](uiresponder/keyboardwillchangeframenotification.md)
 - [`keyboardDidChangeFrameNotification`](uiresponder/keyboarddidchangeframenotification.md)
 
-Each notification contains a [`userInfo`](https://developer.apple.com/documentation/Foundation/NSNotification/userInfo) dictionary that includes the size of the keyboard. Because the keyboard can hide portions of your interface, you should use the size information to reposition your content on the screen. For content embedded in a scroll view, you can scroll the text field into view, as illustrated in the following image. In other cases, you can resize your main content view so that it isn’t covered by the keyboard.
+Each notification contains a [`userInfo`](https://developer.apple.com/documentation/foundation/nsnotification/userinfo) dictionary that includes the size of the keyboard. Because the keyboard can hide portions of your interface, you should use the size information to reposition your content on the screen. For content embedded in a scroll view, you can scroll the text field into view, as illustrated in the following image. In other cases, you can resize your main content view so that it isn’t covered by the keyboard.
 
-![A screenshot that demonstrates adjusting the position of a text field when the keyboard appears.](https://docs-assets.developer.apple.com/published/e17a65caa37c61e4c058c2cb6c175039/media-1965762%402x.png)
+![A screenshot that demonstrates adjusting the position of a text field when the keyboard appears.](/images/com.apple.uikit/media-1965762@2x.png)
 
 ##### Format the Text in a Text Field
 
 There are two types of formatting you can do to a text field’s text:
 
-- You can change the font, color, and style of the text using properties of this class. Alternatively, you can specify an [`NSAttributedString`](https://developer.apple.com/documentation/Foundation/NSAttributedString) for the text field’s content.
-- You can format the content of a text field using an [`Formatter`](https://developer.apple.com/documentation/Foundation/Formatter) object.
+- You can change the font, color, and style of the text using properties of this class. Alternatively, you can specify an [`NSAttributedString`](https://developer.apple.com/documentation/foundation/nsattributedstring) for the text field’s content.
+- You can format the content of a text field using an [`Formatter`](https://developer.apple.com/documentation/foundation/formatter) object.
 
-The [`font`](uitextfield/font.md), [`textColor`](uitextfield/textcolor.md), and [`textAlignment`](uitextfield/textalignment.md) properties, among others, affect the appearance of the text field’s string. Modifying these properties applies the specified characteristic to the entire string. To specify more granular formatting, specify the text field’s text using an [`NSAttributedString`](https://developer.apple.com/documentation/Foundation/NSAttributedString) object.
+The [`font`](uitextfield/font.md), [`textColor`](uitextfield/textcolor.md), and [`textAlignment`](uitextfield/textalignment.md) properties, among others, affect the appearance of the text field’s string. Modifying these properties applies the specified characteristic to the entire string. To specify more granular formatting, specify the text field’s text using an [`NSAttributedString`](https://developer.apple.com/documentation/foundation/nsattributedstring) object.
 
-The [`UITextField`](uitextfield.md) class doesn’t provide built-in support for formatting its string using an [`Formatter`](https://developer.apple.com/documentation/Foundation/Formatter) object, but you can use the text field’s delegate to format the content yourself. To do so, use the text field’s delegate methods to validate text and to format it appropriately. For example, use the [`textField(_:shouldChangeCharactersIn:replacementString:)`](uitextfielddelegate/textfield(_:shouldchangecharactersin:replacementstring:).md) method to validate and format text while the user is typing. For information about how to use formatter objects, see [`Data Formatting`](https://developer.apple.com/documentation/Foundation/data-formatting).
+The [`UITextField`](uitextfield.md) class doesn’t provide built-in support for formatting its string using an [`Formatter`](https://developer.apple.com/documentation/foundation/formatter) object, but you can use the text field’s delegate to format the content yourself. To do so, use the text field’s delegate methods to validate text and to format it appropriately. For example, use the [`textField(_:shouldChangeCharactersIn:replacementString:)`](uitextfielddelegate/textfield(_:shouldchangecharactersin:replacementstring:).md) method to validate and format text while the user is typing. For information about how to use formatter objects, see [`Data Formatting`](https://developer.apple.com/documentation/foundation/data-formatting).
 
 ##### Use Overlay Views to Edit Content
 
@@ -163,7 +163,7 @@ The following table lists the keyboard-related attributes that you configure for
 | Spell Checking | The spell checking behavior of the text field. This attribute determines whether spell checking is enabled or disabled during typing. You can access the value of this attribute programmatically using the text field’s [`spellCheckingType`](uitextinputtraits/spellcheckingtype.md) property. |
 | Keyboard Type | The style of the text field’s keyboard. This property specifies the type of keyboard displayed when the text field is active. You can access the value of this attribute programmatically using the text field’s [`keyboardType`](uitextinputtraits/keyboardtype.md) property. |
 | Appearance | The visual style applied to the text field’s keyboard. Use this property to specify a dark or light keyboard. You can access the value of this attribute programmatically using the text field’s [`keyboardAppearance`](uitextinputtraits/keyboardappearance.md) property. |
-| Return Key | The type of return key to display on the keyboard. Use this property to configure the text and visual style applied to the keyboard’s return key. You can access the value of this attribute programmatically using the text field’s [`returnKeyType`](uitextinputtraits/returnkeytype.md) property. ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) The return key is disabled by default and becomes enabled only when the user types some text into the text field. To respond to taps in the Return key, implement the [`textFieldShouldReturn(_:)`](uitextfielddelegate/textfieldshouldreturn(_:).md) method in the delegate you assign to the text field. |
+| Return Key | The type of return key to display on the keyboard. Use this property to configure the text and visual style applied to the keyboard’s return key. You can access the value of this attribute programmatically using the text field’s [`returnKeyType`](uitextinputtraits/returnkeytype.md) property. ![None](/images/com.apple.uikit/spacer.png) The return key is disabled by default and becomes enabled only when the user types some text into the text field. To respond to taps in the Return key, implement the [`textFieldShouldReturn(_:)`](uitextfielddelegate/textfieldshouldreturn(_:).md) method in the delegate you assign to the text field. |
 
 For information about additional attributes you can configure for a text view, see [`UIControl`](uicontrol.md).
 
@@ -171,7 +171,7 @@ For information about additional attributes you can configure for a text view, s
 
 The default language of the device affects the keyboard that pops up with the text field (including the return key). You don’t need to do anything to enable this functionality; it’s enabled by default. However, your text field should be able to handle input that comes from any language.
 
-When using storyboards to build your interface, use Xcode’s base internationalization feature to configure the localizations your project supports. When you add a localization, Xcode creates a strings file for that localization. When configuring your interface programmatically, use the system’s built-in support for loading localized strings and resources. For more information about internationalizing your interface, see [`Localization`](https://developer.apple.com/documentation/Xcode/localization).
+When using storyboards to build your interface, use Xcode’s base internationalization feature to configure the localizations your project supports. When you add a localization, Xcode creates a strings file for that localization. When configuring your interface programmatically, use the system’s built-in support for loading localized strings and resources. For more information about internationalizing your interface, see [`Localization`](https://developer.apple.com/documentation/xcode/localization).
 
 ##### Accessibility
 
@@ -297,21 +297,21 @@ For design guidance, see [`Human Interface Guidelines`](https://developer.apple.
 ### Inherited By
 - [UISearchTextField](uisearchtextfield.md)
 ### Conforms To
-- [CALayerDelegate](../QuartzCore/CALayerDelegate.md)
-- [CLBodyIdentifiable](../CoreLocation/CLBodyIdentifiable.md)
-- [CMBodyIdentifiable](../CoreMotion/CMBodyIdentifiable.md)
-- [CVarArg](../Swift/CVarArg.md)
-- [Copyable](../Swift/Copyable.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Escapable](../Swift/Escapable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCoding](../Foundation/NSCoding.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [NSTouchBarProvider](../AppKit/NSTouchBarProvider.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [CALayerDelegate](../quartzcore/calayerdelegate.md)
+- [CLBodyIdentifiable](../corelocation/clbodyidentifiable.md)
+- [CMBodyIdentifiable](../coremotion/cmbodyidentifiable.md)
+- [CVarArg](../swift/cvararg.md)
+- [Copyable](../swift/copyable.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Escapable](../swift/escapable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCoding](../foundation/nscoding.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSTouchBarProvider](../appkit/nstouchbarprovider.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 - [UIAccessibilityIdentification](uiaccessibilityidentification.md)
 - [UIActivityItemsConfigurationProviding](uiactivityitemsconfigurationproviding.md)
 - [UIAppearance](uiappearance.md)

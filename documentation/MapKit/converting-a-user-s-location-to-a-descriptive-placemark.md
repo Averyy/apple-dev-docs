@@ -14,7 +14,7 @@ To provide user-friendly place information, configure your map view to display t
 
 ##### Geocode the User Location Annotation
 
-[`CLPlacemark`](https://developer.apple.com/documentation/CoreLocation/CLPlacemark) objects represent user place names, and include properties for street name, city name, country or region name, and many other location identifiers. When [`mapView(_:didUpdate:)`](mkmapviewdelegate/mapview(_:didupdate:).md) receives updates on the user’s location, convert the [`MKUserLocation`](mkuserlocation.md) object to a [`CLPlacemark`](https://developer.apple.com/documentation/CoreLocation/CLPlacemark) by reverse geocoding the [`location`](mkuserlocation/location.md) property with a [`CLGeocoder`](https://developer.apple.com/documentation/CoreLocation/CLGeocoder). Readable descriptions of the user’s location are available as properties on the placemark, such as the city information stored in the [`locality`](https://developer.apple.com/documentation/CoreLocation/CLPlacemark/locality) property.
+[`CLPlacemark`](https://developer.apple.com/documentation/corelocation/clplacemark) objects represent user place names, and include properties for street name, city name, country or region name, and many other location identifiers. When [`mapView(_:didUpdate:)`](mkmapviewdelegate/mapview(_:didupdate:).md) receives updates on the user’s location, convert the [`MKUserLocation`](mkuserlocation.md) object to a [`CLPlacemark`](https://developer.apple.com/documentation/corelocation/clplacemark) by reverse geocoding the [`location`](mkuserlocation/location.md) property with a [`CLGeocoder`](https://developer.apple.com/documentation/corelocation/clgeocoder). Readable descriptions of the user’s location are available as properties on the placemark, such as the city information stored in the [`locality`](https://developer.apple.com/documentation/corelocation/clplacemark/locality) property.
 
 > ❗ **Important**:  Geocoding requests are rate-limited for each app. Issue new geocoding requests only when the user has moved a significant distance and after a reasonable amount of time has passed.
 
@@ -55,7 +55,7 @@ func mapView(_ mapView: MKMapView, didUpdate userLocation: MKUserLocation) {
 
 ## See Also
 
-- [Converting between coordinates and user-friendly place names](../CoreLocation/converting-between-coordinates-and-user-friendly-place-names.md)
+- [Converting between coordinates and user-friendly place names](../corelocation/converting-between-coordinates-and-user-friendly-place-names.md)
   Convert between a latitude and longitude pair and a more user-friendly description of that location.
 - [var showsUserLocation: Bool](mkmapview/showsuserlocation.md)
   A Boolean value that indicates whether the map tries to display the user’s location.

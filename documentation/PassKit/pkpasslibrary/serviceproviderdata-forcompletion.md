@@ -23,7 +23,7 @@ func serviceProviderData(for secureElementPass: PKSecureElementPass) async throw
 
 - `secureElementPass`: The Secure Element pass to check for secure data.
 - `completion`: The completion block called by the system that returns the data or an error. This block takes the following parameters: - **`serviceProviderData`**: The custom data for the Secure Element pass; otherwise, `nil`.
-- **`error`**: If the process fails, an [`NSError`](https://developer.apple.com/documentation/Foundation/NSError) that describes the failure; otherwise, `nil`.
+- **`error`**: If the process fails, an [`NSError`](https://developer.apple.com/documentation/foundation/nserror) that describes the failure; otherwise, `nil`.
 
 ## See Also
 

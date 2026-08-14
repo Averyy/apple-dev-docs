@@ -25,8 +25,8 @@ To add a text label to an accessory family widget, call this method on the widge
 
 The following widget families support text accessory labels:
 
-- The [`WidgetFamily.accessoryCorner`](https://developer.apple.com/documentation/WidgetKit/WidgetFamily/accessoryCorner) widget-based complication can display a curved text label on the inside edge of the corner. Adding a label to an accessory corner complication causes the main SwiftUI view to shrink to make space for the label.
-- The [`WidgetFamily.accessoryCircular`](https://developer.apple.com/documentation/WidgetKit/WidgetFamily/accessoryCircular) widget can display a text label in watchOS; however, WidgetKit only renders the label along the bezel on the Infograph watch face (the top circular complication).
+- The [`WidgetFamily.accessoryCorner`](https://developer.apple.com/documentation/widgetkit/widgetfamily/accessorycorner) widget-based complication can display a curved text label on the inside edge of the corner. Adding a label to an accessory corner complication causes the main SwiftUI view to shrink to make space for the label.
+- The [`WidgetFamily.accessoryCircular`](https://developer.apple.com/documentation/widgetkit/widgetfamily/accessorycircular) widget can display a text label in watchOS; however, WidgetKit only renders the label along the bezel on the Infograph watch face (the top circular complication).
 
 ## Parameters
 

@@ -30,7 +30,7 @@ This method applies the edge work filter to an image. The effect creates a styli
 The edge work filter uses the following properties:
 
 - **`inputImage`**: An image with the type [`CIImage`](ciimage.md).
-- **`radius`**: A `float` representing the area of effect as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+- **`radius`**: A `float` representing the area of effect as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
 
 The following code creates a filter that results in a monochrome image with the edges of objects highlighted:
 
@@ -43,7 +43,7 @@ func edgeWork(inputImage: CIImage) -> CIImage {
 }
 ```
 
-![Two pictures of a pink flower surrounded by foliage. The photo on the left shows a single flower photographed close up, in focus, with good light and no effects. In the photo on the right, an edge work filter is applied, resulting in the image becoming monochrome with the outlines of objects black and the flower white.](https://docs-assets.developer.apple.com/published/a9c62cc9c3538dce5b7502c1e039c879/media-3600010%402x.png)
+![Two pictures of a pink flower surrounded by foliage. The photo on the left shows a single flower photographed close up, in focus, with good light and no effects. In the photo on the right, an edge work filter is applied, resulting in the image becoming monochrome with the outlines of objects black and the flower white.](/images/com.apple.coreimage/media-3600010@2x.png)
 
 ## See Also
 

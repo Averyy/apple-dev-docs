@@ -29,11 +29,11 @@ A blend operation that darkens the foreground layer using the background.
 
 The `Burn` node darkens each area in the background based on the darkness of the corresponding area in the foreground, represented by the equation `1 - (1 - B) / F`. Below is an example of a node graph that uses the `Burn` node to darken a brick texture:
 
-![None](https://docs-assets.developer.apple.com/published/47249df37324d4d19ad18877480395f9/BurnGraph.png)
+![None](/images/ShaderGraph-Docs/BurnGraph.png)
 
 Use a [`Noise 2D`](2d-procedural/noise-2d.md) node to generate Perlin noise, and use the output of that texture as the foreground in the `Burn` node. This process darkens the background brick texture according to the procedural pattern. Below, the resulting texture applies to a cube:
 
-![None](https://docs-assets.developer.apple.com/published/566f3dfbd55a92bb27315df1e62c5540/BurnMaterial.png)
+![None](/images/ShaderGraph-Docs/BurnMaterial.png)
 
 ## See Also
 

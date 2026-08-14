@@ -16,7 +16,7 @@ func dragSelection(with event: NSEvent, offset mouseOffset: NSSize, slideBack: B
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/Swift/true) if the drag can be successfully initiated, [`false`](https://developer.apple.com/documentation/Swift/false) otherwise.
+[`true`](https://developer.apple.com/documentation/swift/true) if the drag can be successfully initiated, [`false`](https://developer.apple.com/documentation/swift/false) otherwise.
 
 #### Discussion
 
@@ -26,7 +26,7 @@ Primarily for subclasses, who can override it to intervene at the beginning of a
 
 - `event`: The event that initiated dragging the selection.
 - `mouseOffset`: The cursor’s current location relative to the mouse-down `event`.
-- `slideBack`: [`true`](https://developer.apple.com/documentation/Swift/true) if the image being dragged should slide back to its original position if the drag does not succeed, [`false`](https://developer.apple.com/documentation/Swift/false) otherwise.
+- `slideBack`: [`true`](https://developer.apple.com/documentation/swift/true) if the image being dragged should slide back to its original position if the drag does not succeed, [`false`](https://developer.apple.com/documentation/swift/false) otherwise.
 
 ## See Also
 

@@ -3,7 +3,7 @@
 **Framework**: SpriteKit  
 **Kind**: method
 
-Creates a tile map node by allowing a [`GKNoiseMap`](https://developer.apple.com/documentation/GameplayKit/GKNoiseMap) to choose its tiles.
+Creates a tile map node by allowing a [`GKNoiseMap`](https://developer.apple.com/documentation/gameplaykit/gknoisemap) to choose its tiles.
 
 **Availability**:
 - iOS ?+

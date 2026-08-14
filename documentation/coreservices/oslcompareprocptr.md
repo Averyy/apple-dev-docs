@@ -42,10 +42,10 @@ After you are finished with your object comparison callback function, you can di
 
 ## Parameters
 
-- `oper`: A comparison operator that specifies the type of comparison to perform. The available comparison operators are described in  . For related information, see the function  . See  .
-- `obj1`: A pointer to a token describing the first Apple event object to compare. (Token is defined in  . See  .
-- `obj2`: A pointer to a token or some other descriptor that specifies either an Apple event object or a value to compare to the Apple event object specified by the   parameter. See  .
-- `result`: A pointer to a Boolean value where your object comparison function stores a value indicating the result of the comparison operation. You store   if the values of the   and   parameters have the relationship specified by the   parameter; otherwise, you store  . 
+- `oper`: A comparison operator that specifies the type of comparison to perform. The available comparison operators are described in [`Comparison Operator Constants`](https://developer.apple.com/documentation/applicationservices/apple_event_manager/comparison_operator_constants). For related information, see the function [`CreateCompDescriptor(_:_:_:_:_:)`](1449155-createcompdescriptor.md). See [`DescType`](desctype.md).
+- `obj1`: A pointer to a token describing the first Apple event object to compare. (Token is defined in [`AEDisposeToken(_:)`](1446783-aedisposetoken.md). See [`AEDesc`](aedesc.md).
+- `obj2`: A pointer to a token or some other descriptor that specifies either an Apple event object or a value to compare to the Apple event object specified by the `obj1` parameter. See [`AEDesc`](aedesc.md).
+- `result`: A pointer to a Boolean value where your object comparison function stores a value indicating the result of the comparison operation. You store `TRUE` if the values of the `obj1` and `obj2` parameters have the relationship specified by the `comparisonOperator` parameter; otherwise, you store `FALSE`. 
 
 ## See Also
 

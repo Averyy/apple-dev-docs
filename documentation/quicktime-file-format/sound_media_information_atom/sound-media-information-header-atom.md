@@ -7,7 +7,7 @@ An atom that stores the sound media’s control information, such as balance.
 
 #### Overview
 
-See [`Sound media information header atom ('smhd')`](sound_media_information_header_atom.md).
+See [`Sound media information header atom`](sound_media_information_header_atom.md).
 
 ## See Also
 

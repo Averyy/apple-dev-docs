@@ -21,7 +21,7 @@ var contents: Any? { get set }
 
 #### Discussion
 
-A layer can set this property to a [`CGImage`](https://developer.apple.com/documentation/CoreGraphics/CGImage) to display the image as its contents.
+A layer can set this property to a [`CGImage`](https://developer.apple.com/documentation/coregraphics/cgimage) to display the image as its contents.
 
 The default value of this property is `nil`.
 

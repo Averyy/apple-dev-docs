@@ -22,7 +22,7 @@ func vImageCVImageFormat_GetFormatCode(_ format: vImageConstCVImageFormat) -> UI
 
 #### Return Value
 
-The four-character code of the image format, such as [`kCVPixelFormatType_420YpCbCr8Planar`](https://developer.apple.com/documentation/CoreVideo/kCVPixelFormatType_420YpCbCr8Planar).
+The four-character code of the image format, such as [`kCVPixelFormatType_420YpCbCr8Planar`](https://developer.apple.com/documentation/corevideo/kcvpixelformattype_420ypcbcr8planar).
 
 #### Discussion
 

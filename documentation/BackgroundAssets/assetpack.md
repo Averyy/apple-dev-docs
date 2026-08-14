@@ -42,7 +42,7 @@ An instance of this structure can be invalidated when the asset pack that it rep
 ### Accessing asset language
 - [let language: Locale.Language?](assetpack/language.md)
   The language for which this asset pack is localized.
-- [Locale.Language](../Foundation/Locale/Language-swift.struct.md)
+- [Locale.Language](../foundation/locale/language-swift.struct.md)
   A type that represents a language, as used in a locale.
 ### Downloading assets
 - [func download(for: BAContentRequest?) -> BADownload](assetpack/download(for:).md)
@@ -53,14 +53,14 @@ An instance of this structure can be invalidated when the asset pack that it rep
 ## Relationships
 
 ### Conforms To
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [DecodableWithConfiguration](../Foundation/DecodableWithConfiguration.md)
-- [Encodable](../Swift/Encodable.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [Identifiable](../Swift/Identifiable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [DecodableWithConfiguration](../foundation/decodablewithconfiguration.md)
+- [Encodable](../swift/encodable.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [Identifiable](../swift/identifiable.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 
@@ -70,9 +70,9 @@ An instance of this structure can be invalidated when the asset pack that it rep
   A manifest of asset packs that are available to download.
 - [protocol ManagedDownloaderExtension](manageddownloaderextension.md)
   An app extension that uses the system implementation to schedule asset-pack downloads automatically.
-- [BAAppGroupID](../BundleResources/Information-Property-List/BAAppGroupID.md)
+- [BAAppGroupID](../bundleresources/information-property-list/baappgroupid.md)
   The app group identifier that you share between your app and the extension that uses asset packs.
-- [BAHasManagedAssetPacks](../BundleResources/Information-Property-List/BAHasManagedAssetPacks.md)
+- [BAHasManagedAssetPacks](../bundleresources/information-property-list/bahasmanagedassetpacks.md)
   A Boolean value that indicates whether you let the system automatically manage your asset packs.
 
 

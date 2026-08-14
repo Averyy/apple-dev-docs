@@ -22,11 +22,11 @@ Use the background execution time to process the notification and download its a
 
 Background notifications are low priority, and the system limits these notifications based on the power considerations of the target device. APNs doesn’t guarantee that a device will receive push notifications, and apps that use significant amounts of power or time when processing background notifications may not receive background time to process future notifications.
 
-For more information, see [`Pushing background updates to your App`](https://developer.apple.com/documentation/UserNotifications/pushing-background-updates-to-your-app).
+For more information, see [`Pushing background updates to your App`](https://developer.apple.com/documentation/usernotifications/pushing-background-updates-to-your-app).
 
 ## Parameters
 
-- `userInfo`: A dictionary that contains data from the notification payload. The notification originates as a JSON-defined dictionary that WatchKit converts to a dictionary type; the dictionary may contain only property-list objects plus [`NSNull`](https://developer.apple.com/documentation/Foundation/NSNull). For more information about the contents of the notification payload, see [`Generating a remote notification`](https://developer.apple.com/documentation/UserNotifications/generating-a-remote-notification).
+- `userInfo`: A dictionary that contains data from the notification payload. The notification originates as a JSON-defined dictionary that WatchKit converts to a dictionary type; the dictionary may contain only property-list objects plus [`NSNull`](https://developer.apple.com/documentation/foundation/nsnull). For more information about the contents of the notification payload, see [`Generating a remote notification`](https://developer.apple.com/documentation/usernotifications/generating-a-remote-notification).
 - `completionHandler`: The block to execute after the download operation completes. When calling this block, pass the fetch result that best describes your download operation. For a list of possible values, see the [`WKBackgroundFetchResult`](wkbackgroundfetchresult.md) type.
 
 ## See Also

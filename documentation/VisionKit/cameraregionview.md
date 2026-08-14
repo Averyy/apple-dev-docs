@@ -17,7 +17,7 @@ This view displays a stabilized region of interest within a person’s view and 
 
 #### Overview
 
-`CameraRegionView` needs enterprise API access in order to be used. To use this view, you need to apply for the [`Camera Region access`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.arkit.camera-region.allow) entitlement. For more information, including how to apply for this entitlement, see [`Building spatial experiences for business apps with enterprise APIs for visionOS`](https://developer.apple.com/documentation/visionOS/building-spatial-experiences-for-business-apps-with-enterprise-apis).
+`CameraRegionView` needs enterprise API access in order to be used. To use this view, you need to apply for the [`Camera Region access`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.arkit.camera-region.allow) entitlement. For more information, including how to apply for this entitlement, see [`Building spatial experiences for business apps with enterprise APIs for visionOS`](https://developer.apple.com/documentation/visionos/building-spatial-experiences-for-business-apps-with-enterprise-apis).
 
 This is a standalone view used in a `WindowGroup` that a person can freely move and place in order to position the desired region of interest. Examples of possible regions of interest are documents, user manuals, gauges, and displays.
 
@@ -61,9 +61,9 @@ struct AppScene: Scene {
 ## Relationships
 
 ### Conforms To
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
-- [View](../SwiftUI/View.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
+- [View](../swiftui/view.md)
 
 ## See Also
 

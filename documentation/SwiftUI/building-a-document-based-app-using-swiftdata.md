@@ -13,7 +13,7 @@ Code along with the WWDC presenter to transform an app with SwiftData.
 
 #### Overview
 
-Learn how to use [`Query`](https://developer.apple.com/documentation/SwiftData/Query), [`Bindable`](Bindable.md), [`modelContainer(_:)`](View/modelContainer(_:).md), the [`modelContext`](EnvironmentValues/modelContext.md) environment variable, and [`DocumentGroup`](DocumentGroup.md) to integrate with the [`SwiftData`](https://developer.apple.com/documentation/SwiftData) framework.
+Learn how to use [`Query`](https://developer.apple.com/documentation/swiftdata/query), [`Bindable`](bindable.md), [`modelContainer(_:)`](view/modelcontainer(_:).md), the [`modelContext`](environmentvalues/modelcontext.md) environment variable, and [`DocumentGroup`](documentgroup.md) to integrate with the [`SwiftData`](https://developer.apple.com/documentation/swiftdata) framework.
 
 > **Note**: This sample code project is associated with WWDC23 session 10154: [`Build an app with SwiftData`](https://developer.apple.comhttps://developer.apple.com/wwdc23/10154/).
 

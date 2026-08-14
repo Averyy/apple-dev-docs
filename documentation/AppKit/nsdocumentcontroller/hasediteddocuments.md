@@ -16,7 +16,7 @@ var hasEditedDocuments: Bool { get }
 
 #### Discussion
 
-The value of this property is [`true`](https://developer.apple.com/documentation/Swift/true) if the document controller contains documents with unsaved changes; otherwise, the value is [`false`](https://developer.apple.com/documentation/Swift/false).
+The value of this property is [`true`](https://developer.apple.com/documentation/swift/true) if the document controller contains documents with unsaved changes; otherwise, the value is [`false`](https://developer.apple.com/documentation/swift/false).
 
 ## See Also
 

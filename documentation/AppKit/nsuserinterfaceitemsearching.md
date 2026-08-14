@@ -36,7 +36,7 @@ In your app, you implement the [`NSUserInterfaceItemSearching`](nsuserinterface
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

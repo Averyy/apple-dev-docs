@@ -48,7 +48,7 @@ If using a VBR compressed audio data format, you may want to instead use the `Au
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../Swift/BitwiseCopyable.md)
+- [BitwiseCopyable](../swift/bitwisecopyable.md)
 
 ## See Also
 

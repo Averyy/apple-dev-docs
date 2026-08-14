@@ -23,9 +23,9 @@ static let sustained: CHHapticEvent.ParameterID
 
 This parameter is an event parameter. It determines whether or not the haptic continues playing at full strength after attack has finished, and before decay begins.
 
-![A graphic showing the effect of sustain: on the left, turning sustain on causes attack and decay to happen outside the haptic pattern, whereas turning sustain off (on the right) causes attan’tand decay to happen within the haptic pattern.](https://docs-assets.developer.apple.com/published/04bc2e5f6d5f61b14f7d15792da853b8/media-3235480%402x.png)
+![A graphic showing the effect of sustain: on the left, turning sustain on causes attack and decay to happen outside the haptic pattern, whereas turning sustain off (on the right) causes attan’tand decay to happen within the haptic pattern.](/images/com.apple.corehaptics/media-3235480@2x.png)
 
-If [`true`](https://developer.apple.com/documentation/Swift/true), the engine sustains the haptic pattern throughout its specified duration, increasing only during its [`attackTime`](chhapticevent/parameterid/attacktime.md), and decreasing only after its [`decayTime`](chhapticevent/parameterid/decaytime.md). If [`false`](https://developer.apple.com/documentation/Swift/false), the haptic doesn’t stay at full strength between attack and decay, tailing off even before its decay has begun.
+If [`true`](https://developer.apple.com/documentation/swift/true), the engine sustains the haptic pattern throughout its specified duration, increasing only during its [`attackTime`](chhapticevent/parameterid/attacktime.md), and decreasing only after its [`decayTime`](chhapticevent/parameterid/decaytime.md). If [`false`](https://developer.apple.com/documentation/swift/false), the haptic doesn’t stay at full strength between attack and decay, tailing off even before its decay has begun.
 
 ## See Also
 

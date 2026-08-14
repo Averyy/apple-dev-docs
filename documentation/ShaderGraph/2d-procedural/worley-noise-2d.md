@@ -24,12 +24,12 @@ A 2D Worley noise generator.
 
 The `Worley Noise 2D` node procedurally generates nonuniform cellular regions. Creates a finite number of center points, and each region is a polygon that surrounds the points closest to each center point. Below is an example of a simple node graph that uses the `Worley Noise 2D` node to generate a black and white pattern procedurally:
 
-![None](https://docs-assets.developer.apple.com/published/62d4fabeb371ea9ca3f41c9279d37cb8/WorleyNoise2dGraph.png)
+![None](/images/ShaderGraph-Docs/WorleyNoise2dGraph.png)
 
 Multiply the incoming texture coordinates with a constant float, which changes the frequency of the generated noise. A higher value corresponds to the pattern repeating more often. You then run the output through a convert node to change it to a black and white color value.
 Below is an example of a simple node graph that uses the `Worley Noise 2D` node to generate a black and white pattern procedurally:
 
-![None](https://docs-assets.developer.apple.com/published/0e472112c39c6c41e216af35b03029b5/WorleyNoise2dMaterial.png)
+![None](/images/ShaderGraph-Docs/WorleyNoise2dMaterial.png)
 
 ## See Also
 

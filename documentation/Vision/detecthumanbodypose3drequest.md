@@ -21,7 +21,7 @@ final class DetectHumanBodyPose3DRequest
 
 #### Overview
 
-This request generates a collection of [`HumanBodyPose3DObservation`](humanbodypose3dobservation.md) objects that describe the position of each body the request detects. If the system allows it, the request uses [`AVDepthData`](https://developer.apple.com/documentation/AVFoundation/AVDepthData) information to improve the accuracy.
+This request generates a collection of [`HumanBodyPose3DObservation`](humanbodypose3dobservation.md) objects that describe the position of each body the request detects. If the system allows it, the request uses [`AVDepthData`](https://developer.apple.com/documentation/avfoundation/avdepthdata) information to improve the accuracy.
 
 ## Topics
 
@@ -60,12 +60,12 @@ This request generates a collection of [`HumanBodyPose3DObservation`](humanbodyp
 ## Relationships
 
 ### Conforms To
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
 - [ImageProcessingRequest](imageprocessingrequest.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 - [StatefulRequest](statefulrequest.md)
 - [VisionRequest](visionrequest.md)
 

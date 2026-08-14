@@ -29,7 +29,7 @@ An object that implements the [`GLKViewDelegate`](glkviewdelegate.md) protocol c
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 ### Conforming Types
 - [GLKViewController](glkviewcontroller.md)
 

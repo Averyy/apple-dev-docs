@@ -25,8 +25,8 @@ class var main: DispatchQueue { get }
 The system automatically creates the main queue and associates it with your application’s main thread. Your app uses one (and only one) of the following three approaches to execute blocks submitted to the main queue:
 
 - Calling [`dispatchMain()`](dispatchmain().md)
-- Starting your app with a call to [`UIApplicationMain(_:_:_:_:)`](https://developer.apple.com/documentation/UIKit/UIApplicationMain(_:_:_:_:)-1yub7) (iOS) or [`NSApplicationMain(_:_:)`](https://developer.apple.com/documentation/AppKit/NSApplicationMain(_:_:)) (macOS)
-- Using a [`CFRunLoop`](https://developer.apple.com/documentation/CoreFoundation/CFRunLoop) on the main thread
+- Starting your app with a call to [`UIApplicationMain(_:_:_:_:)`](https://developer.apple.com/documentation/uikit/uiapplicationmain(_:_:_:_:)-1yub7) (iOS) or [`NSApplicationMain(_:_:)`](https://developer.apple.com/documentation/appkit/nsapplicationmain(_:_:)) (macOS)
+- Using a [`CFRunLoop`](https://developer.apple.com/documentation/corefoundation/cfrunloop) on the main thread
 
 As with the global concurrent queues, calls to [`suspend()`](dispatchobject/suspend().md), [`resume()`](dispatchobject/resume().md), [`dispatch_set_context`](dispatch_set_context.md), and the like have no effect when used on the queue in this property.
 

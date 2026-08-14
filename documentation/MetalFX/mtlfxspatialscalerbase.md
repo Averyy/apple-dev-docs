@@ -83,7 +83,7 @@ MetalFX doesn’t track that you assign the same texture instances to each prope
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 ### Inherited By
 - [MTL4FXSpatialScaler](mtl4fxspatialscaler.md)
 - [MTLFXSpatialScaler](mtlfxspatialscaler.md)

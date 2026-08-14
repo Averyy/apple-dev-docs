@@ -20,7 +20,7 @@ init()
 
 #### Discussion
 
-Create an instance of this class when the system launches your app with an [`NSUserActivity`](https://developer.apple.com/documentation/Foundation/NSUserActivity) of type `ASCredentialExchangeActivityType`, then call [`importCredentials(token:)`](ascredentialimportmanager/importcredentials(token:).md) to import credentials from the source app.
+Create an instance of this class when the system launches your app with an [`NSUserActivity`](https://developer.apple.com/documentation/foundation/nsuseractivity) of type `ASCredentialExchangeActivityType`, then call [`importCredentials(token:)`](ascredentialimportmanager/importcredentials(token:).md) to import credentials from the source app.
 
 
 ---

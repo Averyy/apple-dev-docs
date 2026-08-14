@@ -18,7 +18,7 @@ To create an image set, generate an image asset outside of Xcode, then import it
 2. Drag an image from the Finder to the outline view. A new image set appears in the outline view, and the image asset appears in a well in the detail area.
 3. Double-click the image set name in the outline view to rename the image set with a descriptive name, and press the Return key.
 
-![Screenshot of an asset catalog in Xcode. An image set with the name Image contains a single picture of oranges in the 1x well in the detail area.](https://docs-assets.developer.apple.com/published/fde3f2c3641843d417853ca4df14f28c/adding-images-to-your-xcode-project-1%402x.png)
+![Screenshot of an asset catalog in Xcode. An image set with the name Image contains a single picture of oranges in the 1x well in the detail area.](/images/com.apple.Xcode/adding-images-to-your-xcode-project-1@2x.png)
 
 ##### Select Supported Appearances and Variations for Images
 
@@ -31,7 +31,7 @@ In addition to resolution, your image assets might vary based on other device ch
 3. In the inspector area, select the Attributes inspector.
 4. In the Attributes inspector, add, remove, and edit the device characteristic settings to show additional image wells for the variations you want to customize.
 
-![Screenshot of the Attributes inspector with the default Universal option selected.](https://docs-assets.developer.apple.com/published/039f3c8fc6decb8e7e250da05956b546/adding-images-to-your-xcode-project-2%402x.png)
+![Screenshot of the Attributes inspector with the default Universal option selected.](/images/com.apple.Xcode/adding-images-to-your-xcode-project-2@2x.png)
 
 For more information about image size and resolution, see [`Image Size and Resolution`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/ios/icons-and-images/image-size-and-resolution) in the [`Human Interface Guidelines`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/ios).
 
@@ -60,7 +60,7 @@ let image = NSImage(named: "ImageName")
 
 ## See Also
 
-- [Creating custom symbol images for your app](../UIKit/creating-custom-symbol-images-for-your-app.md)
+- [Creating custom symbol images for your app](../uikit/creating-custom-symbol-images-for-your-app.md)
   Create, organize, and annotate symbol images using SF Symbols.
 
 

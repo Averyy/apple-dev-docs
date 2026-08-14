@@ -27,7 +27,7 @@ class GKVoiceChat
 
 GameKit provides the underlying mechanism to implement voice chat between players in a multiplayer game. It’s your responsibility to provide player controls and display feedback during the chat.
 
-First, configure voice chat by adding the [`NSMicrophoneUsageDescription`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSMicrophoneUsageDescription) key to the Information Property List and creating an audio session. Then, create a `GKVoiceChat` object using the `GKMatch` [`voiceChat(withName:)`](gkmatch/voicechat(withname:).md) method passing a string that identifies the voice channel. Use the [`start()`](gkvoicechat/start().md) method to connect players to the channel. Use the [`isActive`](gkvoicechat/isactive.md) property to activate the microphone or switch the microphone between channels.
+First, configure voice chat by adding the [`NSMicrophoneUsageDescription`](https://developer.apple.com/documentation/bundleresources/information-property-list/nsmicrophoneusagedescription) key to the Information Property List and creating an audio session. Then, create a `GKVoiceChat` object using the `GKMatch` [`voiceChat(withName:)`](gkmatch/voicechat(withname:).md) method passing a string that identifies the voice channel. Use the [`start()`](gkvoicechat/start().md) method to connect players to the channel. Use the [`isActive`](gkvoicechat/isactive.md) property to activate the microphone or switch the microphone between channels.
 
 Provide a handler using the [`playerVoiceChatStateDidChangeHandler`](gkvoicechat/playervoicechatstatedidchangehandler.md) property to update the interface when a player connects, speaks, or disconnects from a chat. You can also add controls that mute and set the volume using the [`setPlayer(_:muted:)`](gkvoicechat/setplayer(_:muted:).md) method and [`volume`](gkvoicechat/volume.md) property.
 
@@ -71,14 +71,14 @@ Note that if there’s insufficient bandwidth over Wi-Fi to maintain a voice cha
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

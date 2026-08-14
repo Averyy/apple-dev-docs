@@ -14,11 +14,11 @@ Use Xcode to inspect the information in the code signature embedded in an XCFram
 
 In Xcode, select your dependency’s XCFramework folder in the Project navigator. The File inspector shows you the XCFramework’s code signing status. If the framework is signed with an Apple Developer certificate, the inspector also shows which team signed the framework.
 
-![A screenshot of Xcode. An XCFramework folder is selected in the Project navigator, and the File inspector shows that the XCFramework is signed, and identifies your team in the code signature.](https://docs-assets.developer.apple.com/published/61df9da7f5438ac1bb76a9a8d97ef9d9/verifying-the-origin-of-your-xcframeworks-1%402x.png)
+![A screenshot of Xcode. An XCFramework folder is selected in the Project navigator, and the File inspector shows that the XCFramework is signed, and identifies your team in the code signature.](/images/com.apple.Xcode/verifying-the-origin-of-your-xcframeworks-1@2x.png)
 
 If the XCFramework is signed by a self-issued code signing identity, the inspector shows the SHA-256 fingerprint of the certificate in the framework’s code signature. Verify that the certificate fingerprint matches the value you expect.
 
-![A screenshot of Xcode. An XCFramework folder is selected in the Project navigator, and the File inspector shows that the XCFramework is signed using a self-signed certificate, and shows the certificate’s SHA-256 checksum.](https://docs-assets.developer.apple.com/published/8490bfd701b433405a9adce86f4e3148/verifying-the-origin-of-your-xcframeworks-2%402x.png)
+![A screenshot of Xcode. An XCFramework folder is selected in the Project navigator, and the File inspector shows that the XCFramework is signed using a self-signed certificate, and shows the certificate’s SHA-256 checksum.](/images/com.apple.Xcode/verifying-the-origin-of-your-xcframeworks-2@2x.png)
 
 ##### Diagnose Build Failures Caused By Code Signature Changes
 
@@ -31,7 +31,7 @@ A changed code signature can also indicate that the XCFramework has been tampere
 
 If the code signature for an XCFramework changes, Xcode shows the changed code signature information in the File inspector.
 
-![A screenshot of Xcode. An XCFramework folder is selected in the Project navigator, and the File inspector shows that the Team ID in the XCFramework’s code signature has changed from the expected value.](https://docs-assets.developer.apple.com/published/0f7df4b2b5ec65cb64772d2f5a88e2fa/verifying-the-origin-of-your-xcframeworks-3%402x.png)
+![A screenshot of Xcode. An XCFramework folder is selected in the Project navigator, and the File inspector shows that the Team ID in the XCFramework’s code signature has changed from the expected value.](/images/com.apple.Xcode/verifying-the-origin-of-your-xcframeworks-3@2x.png)
 
 If you attempt to build the software without resolving the changed code signature information, the build system produces an error. Work with the XCFramework’s provider to determine whether the change is expected. If the change is expected, follow these steps:
 
@@ -39,7 +39,7 @@ If you attempt to build the software without resolving the changed code signatur
 2. Select the error that says “[XCFramework name] is not signed with the expected identity and may have been compromised”.
 3. In the dialog that appears, click Accept Change.
 
-![A screenshot of Xcode. The Issues navigator reports an error due to an XCFramework’s code signature not matching the expected value. A dialog presents more information about the changed code signature, with options to cancel, move the framework to Trash, or accept the change.](https://docs-assets.developer.apple.com/published/041bf53d85785f212ff5248de5f463fd/verifying-the-origin-of-your-xcframeworks-4%402x.png)
+![A screenshot of Xcode. The Issues navigator reports an error due to an XCFramework’s code signature not matching the expected value. A dialog presents more information about the changed code signature, with options to cancel, move the framework to Trash, or accept the change.](/images/com.apple.Xcode/verifying-the-origin-of-your-xcframeworks-4@2x.png)
 
 If your team and the SDK provider can’t account for the change to the XCFramework’s code signature, restore a version of the framework with the expected code signature, or remove the framework from your project. To restore the framework to a version with the expected code signature, do the following:
 
@@ -56,7 +56,7 @@ Xcode also warns you if the XCFramework is signed with an expired or revoked cod
 
 If someone removes the code signature for an XCFramework, Xcode shows the change in the File inspector.
 
-![A screenshot of Xcode. An XCFramework folder is selected in the Project navigator, and the File inspector shows that the XCFramework’s code signature is missing, when a code signature is expected.](https://docs-assets.developer.apple.com/published/819f7e3332015583fa4f04a85d520616/verifying-the-origin-of-your-xcframeworks-5%402x.png)
+![A screenshot of Xcode. An XCFramework folder is selected in the Project navigator, and the File inspector shows that the XCFramework’s code signature is missing, when a code signature is expected.](/images/com.apple.Xcode/verifying-the-origin-of-your-xcframeworks-5@2x.png)
 
 The build system fails with an error if you attempt to build the software without resolving the removed code signature. Determine why the code signature is missing from the XCFramework. If you no longer expect the XCFramework to be signed, follow these steps:
 
@@ -64,7 +64,7 @@ The build system fails with an error if you attempt to build the software withou
 2. Select the error that says “[XCFramework name] is not signed with the expected identity and may have been compromised”.
 3. In the dialog that appears, click Accept Change.
 
-![A screenshot of Xcode. The Issues navigator reports an error due to an XCFramework missing a code signature. A dialog presents more information about the missing code signature, with options to cancel, move the framework to Trash, or accept the change.](https://docs-assets.developer.apple.com/published/f491f3644b3ff6ac4916fb0ad5659ee7/verifying-the-origin-of-your-xcframeworks-6%402x.png)
+![A screenshot of Xcode. The Issues navigator reports an error due to an XCFramework missing a code signature. A dialog presents more information about the missing code signature, with options to cancel, move the framework to Trash, or accept the change.](/images/com.apple.Xcode/verifying-the-origin-of-your-xcframeworks-6@2x.png)
 
 ## See Also
 

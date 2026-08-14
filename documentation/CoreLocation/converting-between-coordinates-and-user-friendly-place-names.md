@@ -8,7 +8,7 @@ Convert between a latitude and longitude pair and a more user-friendly descripti
 
 The [`CLLocationManager`](cllocationmanager.md) object reports locations as a latitude/longitude pair. While these values uniquely represent any location on the planet, they are not values that users immediately associate with the location. Users are more familiar with names that describe a location, such as street names or city names. The [`CLGeocoder`](clgeocoder.md) class lets you convert between geographic coordinates and the user-friendly names associated with that location. You can convert from either a latitude/longitude pair to a user friendly place name, or the other way around.
 
-![A map of Infinite Loop 1](https://docs-assets.developer.apple.com/published/b3329e28c7b3cdd6718e8cbf711ad7cd/media-2904078%402x.png)
+![A map of Infinite Loop 1](/images/com.apple.corelocation/media-2904078@2x.png)
 
 User place names are represented by a [`CLPlacemark`](clplacemark.md) object, which contains properties for specifying the street name, city name, country or region name, postal code, and many others. Placemarks also contain properties describing relevant geographic features or points of interest at the location, such as the names of mountains, rivers, businesses, or landmarks.
 

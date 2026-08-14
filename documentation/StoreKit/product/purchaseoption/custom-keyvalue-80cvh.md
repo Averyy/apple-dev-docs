@@ -26,7 +26,7 @@ static func custom(key: String, value: Data) -> Product.PurchaseOption
 
 #### Discussion
 
-Use this custom option with the [`Advanced Commerce API`](https://developer.apple.com/documentation/AdvancedCommerceAPI).
+Use this custom option with the [`Advanced Commerce API`](https://developer.apple.com/documentation/advancedcommerceapi).
 
 ## Parameters
 

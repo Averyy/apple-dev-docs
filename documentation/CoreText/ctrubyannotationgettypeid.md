@@ -22,7 +22,7 @@ func CTRubyAnnotationGetTypeID() -> CFTypeID
 
 #### Return Value
 
-The [`CFTypeID`](https://developer.apple.com/documentation/CoreFoundation/CFTypeID) of the ruby annotation object.
+The [`CFTypeID`](https://developer.apple.com/documentation/corefoundation/cftypeid) of the ruby annotation object.
 
 ## See Also
 

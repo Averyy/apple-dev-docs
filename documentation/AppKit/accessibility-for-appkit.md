@@ -6,7 +6,7 @@ Make your AppKit apps accessible to everyone who uses macOS.
 
 #### Overview
 
-Making your app accessible means making it usable by everyone. By designing your app with accessibility in mind, you make it possible for everyone to enjoy your app. For more information, see [`Accessibility`](https://developer.apple.com/documentation/Accessibility).
+Making your app accessible means making it usable by everyone. By designing your app with accessibility in mind, you make it possible for everyone to enjoy your app. For more information, see [`Accessibility`](https://developer.apple.com/documentation/accessibility).
 
 AppKit controls and views come with built-in accessibility, providing an accessible user experience by default. Typically, you don’t need to do extra work to enable the standard accessibility features.
 
@@ -14,14 +14,14 @@ In some cases, you might want to modify the default values to better represent y
 
 If your app contains custom user interface elements that subclass [`NSView`](nsview.md), enhance the accessibility of those elements using the role-based protocols in [`Custom Controls`](custom-controls.md). If your app contains custom user interface elements that don’t inherit from [`NSView`](nsview.md) or one of the other AppKit classes with built-in accessibility, make those elements accessible by subclassing [`NSAccessibilityElement`](nsaccessibilityelement-swift.class.md).
 
-If you build your app with SwiftUI, see [`Accessibility modifiers`](https://developer.apple.com/documentation/SwiftUI/View-Accessibility).
+If you build your app with SwiftUI, see [`Accessibility modifiers`](https://developer.apple.com/documentation/swiftui/view-accessibility).
 
 ## Topics
 
 ### Essentials
-- [Integrating accessibility into your app](../Accessibility/integrating-accessibility-into-your-app.md)
+- [Integrating accessibility into your app](../accessibility/integrating-accessibility-into-your-app.md)
   Make your app more accessible to users with disabilities by adding accessibility features.
-- [Accessibility design for Mac Catalyst](../Accessibility/accessibility_design_for_mac_catalyst.md)
+- [Accessibility design for Mac Catalyst](../accessibility/accessibility_design_for_mac_catalyst.md)
   Improve navigation in your app by using keyboard shortcuts and accessibility containers.
 ### AppKit Elements
 - [protocol NSAccessibilityProtocol](nsaccessibilityprotocol.md)

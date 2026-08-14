@@ -56,7 +56,7 @@ This method creates and initializes an IOMemoryDescriptor for memory consisting 
   Copy constructor that generates a new memory descriptor if the backing memory for the same task's virtual address and length has changed.
 - [+ withPhysicalAddress](iomemorydescriptor/1441877-withphysicaladdress.md)
   Creates an IOMemoryDescriptor to describe one physical range.
-- [- free](../driverkit/iomemorydescriptor/free.md)
+- [- free](iomemorydescriptor/3180646-free.md)
   Performs any final cleanup for the memory descriptor object.
 
 

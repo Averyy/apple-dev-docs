@@ -18,7 +18,7 @@ var immersiveSpaceDisplacement: Pose3D { get }
 
 By default, the system places the origin of the immersive space at floor level, at the person’s feet. When joining a shared activity, the system moves the immersive space to an appropriate location for all participants. As participants join and leave the activity, the location of participants and the immersive space can update. Read this property to get the current offset of the immersive space relative to its default position.
 
-If you access this property outside of an open immersive space, it contains the value [`identity`](https://developer.apple.com/documentation/Spatial/Pose3D/identity).
+If you access this property outside of an open immersive space, it contains the value [`identity`](https://developer.apple.com/documentation/spatial/pose3d/identity).
 
 If you display participant-specific views or entities in your shared activity, use the inverse of this displacement value to position those views and entities in the immersive space. Applying the inverse value positions them as if they were in a single-participant immersive space.
 

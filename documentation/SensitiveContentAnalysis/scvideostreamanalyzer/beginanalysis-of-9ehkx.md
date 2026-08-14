@@ -18,7 +18,7 @@ func beginAnalysis(of decompressionSession: VTDecompressionSession) throws
 
 #### Discussion
 
-If the framework detects sensitive content in the video stream, the [`VTDecompressionSession`](https://developer.apple.com/documentation/VideoToolbox/VTDecompressionSession) produces blank frames to effectively censor the video stream on the person’s behalf. When your app is ready to show the video stream again, resume analysis by calling [`continueStream()`](scvideostreamanalyzer/continuestream().md).
+If the framework detects sensitive content in the video stream, the [`VTDecompressionSession`](https://developer.apple.com/documentation/videotoolbox/vtdecompressionsession) produces blank frames to effectively censor the video stream on the person’s behalf. When your app is ready to show the video stream again, resume analysis by calling [`continueStream()`](scvideostreamanalyzer/continuestream().md).
 
 ## Parameters
 

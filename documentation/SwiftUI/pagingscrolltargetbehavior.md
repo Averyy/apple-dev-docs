@@ -44,9 +44,9 @@ ScrollView {
 ## Relationships
 
 ### Conforms To
-- [ChartScrollTargetBehavior](../Charts/ChartScrollTargetBehavior.md)
-- [Copyable](../Swift/Copyable.md)
-- [Escapable](../Swift/Escapable.md)
+- [ChartScrollTargetBehavior](../charts/chartscrolltargetbehavior.md)
+- [Copyable](../swift/copyable.md)
+- [Escapable](../swift/escapable.md)
 - [ScrollTargetBehavior](scrolltargetbehavior.md)
 
 ## See Also

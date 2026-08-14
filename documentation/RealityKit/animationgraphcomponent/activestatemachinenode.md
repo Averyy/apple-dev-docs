@@ -45,10 +45,10 @@ Use this type to read the current and previous states of a state machine, along 
 
 ### Conforms To
 - [AnimationGraphComponent.ActiveNode](animationgraphcomponent/activenode.md)
-- [Equatable](../Swift/Equatable.md)
-- [Identifiable](../Swift/Identifiable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Equatable](../swift/equatable.md)
+- [Identifiable](../swift/identifiable.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

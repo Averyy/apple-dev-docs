@@ -12,15 +12,15 @@ Some App Clips may need to schedule or receive notifications to provide value. C
 
 ##### Schedule or Receive Notifications Temporarily
 
-To enable your App Clip to schedule or receive notifications for up to 8 hours after each launch, first add the [`NSAppClip`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSAppClip) key to your App Clip’s `Info.plist` file and set its type to `Dictionary`. Then, add an entry to the dictionary with the [`NSAppClipRequestEphemeralUserNotification`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSAppClip/NSAppClipRequestEphemeralUserNotification) key. Set its type to `Boolean` and its value to `true`.
+To enable your App Clip to schedule or receive notifications for up to 8 hours after each launch, first add the [`NSAppClip`](https://developer.apple.com/documentation/bundleresources/information-property-list/nsappclip) key to your App Clip’s `Info.plist` file and set its type to `Dictionary`. Then, add an entry to the dictionary with the [`NSAppClipRequestEphemeralUserNotification`](https://developer.apple.com/documentation/bundleresources/information-property-list/nsappclip/nsappcliprequestephemeralusernotification) key. Set its type to `Boolean` and its value to `true`.
 
 Alternatively, open the `Info.plist` file in the property list editor and add the entry by selecting App Clip from the list of keys. This adds the `NSAppClip` key and two entries of type `Boolean` to its dictionary: “Requests ephemeral user notifications” and “Requests location confirmation”. By default, the value for both entries is `NO`. Change the value for “Requests ephemeral user notifications” to `YES`.
 
-![An Info.plist file with the entry that allows the App Clip to send notifications for a short time.](https://docs-assets.developer.apple.com/published/dc9b46cc4c6e5cee07541b12dcffcd11/xcode-requests-ephemeral-user-notifications%402x.png)
+![An Info.plist file with the entry that allows the App Clip to send notifications for a short time.](/images/com.apple.appclip/xcode-requests-ephemeral-user-notifications@2x.png)
 
 As a result, the App Clip card that’s displayed upon invocation of the App Clip contains a note that tells the user about the App Clip’s ability to receive or schedule notifications. This permission is enabled by default, but users can disable it by tapping the note on the App Clip card.
 
-![An App Clip card for an App Clip that can send notifications.](https://docs-assets.developer.apple.com/published/5999ea382ac6117b0817757549947499/enabling-app-clips-card-notifications%402x.png)
+![An App Clip card for an App Clip that can send notifications.](/images/com.apple.appclip/enabling-app-clips-card-notifications@2x.png)
 
 Because users can disable notifications in the App Clip card, add code to check whether the App Clip has permission to schedule and receive notifications. The following code checks whether the user has granted permission to send notifications for a short amount of time:
 
@@ -42,7 +42,7 @@ If your App Clip’s functionality spans more than a day, explicitly request the
 
 However, carefully consider whether you should ask for this permission. Users could deny the request, overriding the App Clip’s ability to receive and schedule notifications for up to 8 hours after each launch.
 
-For more information, see [`Asking permission to use notifications`](https://developer.apple.com/documentation/UserNotifications/asking-permission-to-use-notifications).
+For more information, see [`Asking permission to use notifications`](https://developer.apple.com/documentation/usernotifications/asking-permission-to-use-notifications).
 
 ##### Make Changes to Your Notification Payload
 
@@ -74,9 +74,9 @@ The invocation URLs and target content identifiers could then be:
 - `https://example.com/restaurants/restaurant_a/order/1234`
 - `https://example.com/restaurants/restaurant_b/order/5678`
 
-In general, use a target content identifier that’s as specific as possible. Similarly, if you enable your App Clip to schedule local notifications, set the target content identifier for the notification payload; for example, using [`targetContentIdentifier`](https://developer.apple.com/documentation/UserNotifications/UNNotificationContent/targetContentIdentifier).
+In general, use a target content identifier that’s as specific as possible. Similarly, if you enable your App Clip to schedule local notifications, set the target content identifier for the notification payload; for example, using [`targetContentIdentifier`](https://developer.apple.com/documentation/usernotifications/unnotificationcontent/targetcontentidentifier).
 
-For more information, see [`Configuring App Clip experiences`](configuring-the-launch-experience-of-your-app-clip.md), [`Generating a remote notification`](https://developer.apple.com/documentation/UserNotifications/generating-a-remote-notification), and [`Scheduling a notification locally from your app`](https://developer.apple.com/documentation/UserNotifications/scheduling-a-notification-locally-from-your-app).
+For more information, see [`Configuring App Clip experiences`](configuring-the-launch-experience-of-your-app-clip.md), [`Generating a remote notification`](https://developer.apple.com/documentation/usernotifications/generating-a-remote-notification), and [`Scheduling a notification locally from your app`](https://developer.apple.com/documentation/usernotifications/scheduling-a-notification-locally-from-your-app).
 
 
 ---

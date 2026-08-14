@@ -19,7 +19,7 @@ static let postToFacebook: UIActivity.ActivityType
 
 #### Discussion
 
-When using this service, you can provide [`NSString`](https://developer.apple.com/documentation/Foundation/NSString), [`NSAttributedString`](https://developer.apple.com/documentation/Foundation/NSAttributedString), [`UIImage`](uiimage.md), and [`NSURL`](https://developer.apple.com/documentation/Foundation/NSURL) objects as data for the activity items.
+When using this service, you can provide [`NSString`](https://developer.apple.com/documentation/foundation/nsstring), [`NSAttributedString`](https://developer.apple.com/documentation/foundation/nsattributedstring), [`UIImage`](uiimage.md), and [`NSURL`](https://developer.apple.com/documentation/foundation/nsurl) objects as data for the activity items.
 
 ## See Also
 

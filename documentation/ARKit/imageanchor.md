@@ -38,13 +38,13 @@ struct ImageAnchor
 ### Conforms To
 - [ARKitCoordinateSpaceProviding](arkitcoordinatespaceproviding.md)
 - [Anchor](anchor.md)
-- [Copyable](../Swift/Copyable.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Escapable](../Swift/Escapable.md)
-- [Identifiable](../Swift/Identifiable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Copyable](../swift/copyable.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Escapable](../swift/escapable.md)
+- [Identifiable](../swift/identifiable.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 - [TrackableAnchor](trackableanchor.md)
 
 ## See Also
@@ -53,7 +53,7 @@ struct ImageAnchor
   Create images from rectangular shapes found in the user’s environment, and augment their appearance.
 - [Detecting Images in an AR Experience](detecting-images-in-an-ar-experience.md)
   React to known 2D images in the user’s environment, and use their positions to place AR content.
-- [Tracking preregistered images in 3D space](../visionOS/tracking-images-in-3d-space.md)
+- [Tracking preregistered images in 3D space](../visionos/tracking-images-in-3d-space.md)
   Place content based on the current position of a known image in a person’s surroundings.
 - [class ImageTrackingProvider](imagetrackingprovider.md)
   A source of live data about a 2D image’s position in a person’s surroundings.

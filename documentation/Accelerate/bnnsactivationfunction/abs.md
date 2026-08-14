@@ -30,7 +30,7 @@ abs(x)
 
 The following illustrates the output that the activation function generates from inputs in the range `-10...10`:
 
-![Graph that shows input values for the activation function on horizontal axis and its output values on vertical axis. ](https://docs-assets.developer.apple.com/published/9d7784ba5b02827e1447ab4a37928130/media-3394573%402x.png)
+![Graph that shows input values for the activation function on horizontal axis and its output values on vertical axis. ](/images/com.apple.accelerate/media-3394573@2x.png)
 
 ## See Also
 

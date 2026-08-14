@@ -22,7 +22,7 @@ func CTLineGetStringRange(_ line: CTLine) -> CFRange
 
 #### Return Value
 
-A [`CFRange`](https://developer.apple.com/documentation/CoreFoundation/CFRange) structure that contains the range over the backing store string that spawned the glyphs, or if the function fails for any reason, an empty range.
+A [`CFRange`](https://developer.apple.com/documentation/corefoundation/cfrange) structure that contains the range over the backing store string that spawned the glyphs, or if the function fails for any reason, an empty range.
 
 ## Parameters
 

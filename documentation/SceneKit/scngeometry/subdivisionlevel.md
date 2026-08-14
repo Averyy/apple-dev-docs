@@ -24,7 +24,7 @@ var subdivisionLevel: Int { get set }
 
 *Surface subdivision* is a technique for using low-detail geometry to generate a smooth surface for rendering. When you increase the [`subdivisionLevel`](scngeometry/subdivisionlevel.md) value of a geometry, SceneKit automatically splits each face in the rendered surface, creating a more detailed, smoother geometry, as shown in . SceneKit performs this subdivision process at render time, preserving the original geometry data.
 
-![None](https://docs-assets.developer.apple.com/published/198634f31b7c2f613d42c06519779400/media-2929791%402x.png)
+![None](/images/com.apple.scenekit/media-2929791@2x.png)
 
 Subdividing a surface rounds away any sharp edges and corners in the geometry; however, such details may be important to a model’s design. To preserve edges, use the [`edgeCreasesElement`](scngeometry/edgecreaseselement.md) property to identify edges and the [`edgeCreasesSource`](scngeometry/edgecreasessource.md) property to specify how smooth or sharp they should appear after subdivision. To preserve corners, include a geometry source whose [`semantic`](scngeometrysource/semantic-swift.property.md) value is [`vertexCrease`](scngeometrysource/semantic-swift.struct/vertexcrease.md) when creating the geometry.
 

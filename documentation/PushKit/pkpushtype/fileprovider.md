@@ -20,7 +20,7 @@ static let fileProvider: PKPushType
 
 #### Discussion
 
-Use file provider notifications to update your File Provider extension’s content from your server. For more information, see [`Tracking Your File Provider’s Changes`](https://developer.apple.com/documentation/FileProvider/tracking-your-file-provider-s-changes).
+Use file provider notifications to update your File Provider extension’s content from your server. For more information, see [`Tracking Your File Provider’s Changes`](https://developer.apple.com/documentation/fileprovider/tracking-your-file-provider-s-changes).
 
 ## See Also
 

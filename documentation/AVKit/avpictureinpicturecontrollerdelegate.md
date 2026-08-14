@@ -48,7 +48,7 @@ Adopt this protocol in a custom object, and assign the object as the [`delegate`
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

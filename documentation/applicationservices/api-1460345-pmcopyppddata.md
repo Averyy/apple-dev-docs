@@ -20,8 +20,8 @@ A result code. See [`Result Codes`](core_printing#1670007.md).
 
 ## Parameters
 
-- `ppd`: A URL for a PPD or compressed PPD file. You can obtain a PPD URL using the function   or  .
-- `data`: A pointer to your   variable. On return, the variable refers to a Core Foundation data object containing the uncompressed PPD data from the specified PPD file. You are responsible for releasing the data object. If the   parameter does not reference a PPD file, the variable is set to  .
+- `ppd`: A URL for a PPD or compressed PPD file. You can obtain a PPD URL using the function [`PMCopyAvailablePPDs(_:_:)`](1464170-pmcopyavailableppds.md) or [`PMCopyLocalizedPPD(_:_:)`](1459690-pmcopylocalizedppd.md).
+- `data`: A pointer to your [`CFData`](https://developer.apple.com/documentation/corefoundation/cfdata) variable. On return, the variable refers to a Core Foundation data object containing the uncompressed PPD data from the specified PPD file. You are responsible for releasing the data object. If the `ppd` parameter does not reference a PPD file, the variable is set to `NULL`.
 
 ## See Also
 

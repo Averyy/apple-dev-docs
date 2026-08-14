@@ -21,7 +21,7 @@ struct WidgetPreviewContext
 
 #### Overview
 
-To create a preview for a widget in Xcode, use [`previewContext(_:)`](https://developer.apple.com/documentation/SwiftUI/View/previewContext(_:)) and pass `WidgetPreviewContext` initialized with the appropriate `WidgetFamily`.
+To create a preview for a widget in Xcode, use [`previewContext(_:)`](https://developer.apple.com/documentation/swiftui/view/previewcontext(_:)) and pass `WidgetPreviewContext` initialized with the appropriate `WidgetFamily`.
 
 ```swift
 struct Widget_Previews: PreviewProvider {
@@ -43,7 +43,7 @@ struct Widget_Previews: PreviewProvider {
 ## Relationships
 
 ### Conforms To
-- [PreviewContext](../SwiftUI/PreviewContext.md)
+- [PreviewContext](../swiftui/previewcontext.md)
 
 ## See Also
 

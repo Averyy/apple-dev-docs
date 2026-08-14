@@ -27,13 +27,13 @@ You can customize the submission process using view modifiers that execute at ke
 
 For submissions, use:
 
-- [`onAssignedDocumentWillSubmit(_:)`](https://developer.apple.com/documentation/SwiftUI/View/onAssignedDocumentWillSubmit(_:)) to validate the document before submission.
-- [`onAssignedDocumentDidSubmit(_:)`](https://developer.apple.com/documentation/SwiftUI/View/onAssignedDocumentDidSubmit(_:)) to update your interface or log analytics after a successful submission.
+- [`onAssignedDocumentWillSubmit(_:)`](https://developer.apple.com/documentation/swiftui/view/onassigneddocumentwillsubmit(_:)) to validate the document before submission.
+- [`onAssignedDocumentDidSubmit(_:)`](https://developer.apple.com/documentation/swiftui/view/onassigneddocumentdidsubmit(_:)) to update your interface or log analytics after a successful submission.
 
 For withdrawing submissions use:
 
-- [`onAssignedDocumentWillWithdraw(_:)`](https://developer.apple.com/documentation/SwiftUI/View/onAssignedDocumentWillWithdraw(_:)) to confirm the withdrawal action with the student or prepare your app state.
-- [`onAssignedDocumentDidWithdraw(_:)`](https://developer.apple.com/documentation/SwiftUI/View/onAssignedDocumentDidWithdraw(_:)) to update your interface or notify the student that their document is no longer submitted.
+- [`onAssignedDocumentWillWithdraw(_:)`](https://developer.apple.com/documentation/swiftui/view/onassigneddocumentwillwithdraw(_:)) to confirm the withdrawal action with the student or prepare your app state.
+- [`onAssignedDocumentDidWithdraw(_:)`](https://developer.apple.com/documentation/swiftui/view/onassigneddocumentdidwithdraw(_:)) to update your interface or notify the student that their document is no longer submitted.
 
 The following example shows how to create an assigned document submission button and customize its behavior with validation and completion actions:
 
@@ -67,9 +67,9 @@ AssignedDocumentSubmissionButton(documentURL: documentURL)
 ## Relationships
 
 ### Conforms To
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
-- [View](../SwiftUI/View.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
+- [View](../swiftui/view.md)
 
 ## See Also
 

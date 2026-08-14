@@ -32,7 +32,7 @@ If you want to set attribute values in an implementation of this method, you sho
 
 If you create a managed object then perform undo operations to bring the managed object context to a state prior to the object’s creation, then perform redo operations to bring the managed object context back to a state after the object’s creation, [`awakeFromInsert()`](nsmanagedobject/awakefrominsert().md) is *not* invoked a second time.
 
-You are typically discouraged from performing fetches within an implementation of [`awakeFromInsert()`](nsmanagedobject/awakefrominsert().md). Although it is allowed, execution of the fetch request can trigger the sending of internal Core Data notifications which may have unwanted side-effects. For example, in macOS, an instance of [`NSArrayController`](https://developer.apple.com/documentation/AppKit/NSArrayController) may end up inserting a new object into its content array twice.
+You are typically discouraged from performing fetches within an implementation of [`awakeFromInsert()`](nsmanagedobject/awakefrominsert().md). Although it is allowed, execution of the fetch request can trigger the sending of internal Core Data notifications which may have unwanted side-effects. For example, in macOS, an instance of [`NSArrayController`](https://developer.apple.com/documentation/appkit/nsarraycontroller) may end up inserting a new object into its content array twice.
 
 ## See Also
 

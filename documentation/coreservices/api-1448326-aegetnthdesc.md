@@ -30,11 +30,11 @@ Thread safe starting in OS X v10.2.
 
 ## Parameters
 
-- `theAEDescList`: A pointer to the descriptor list to get the descriptor from. See  .
-- `index`: A one-based positive integer indicating the position of the descriptor to get.   returns an error if you pass zero, a negative number, or a value that is out of range.
-- `desiredType`: See  .
-- `theAEKeyword`: A pointer to a keyword. On successful return, the keyword for the specified descriptor, if you are getting data from a list of keyword-specified descriptors; otherwise,   returns the value  . Some keyword constants are described in   and  . See  .
-- `result`: A pointer to a descriptor. On successful return, a copy of the descriptor specified by the   parameter, coerced, if necessary, to the descriptor type specified by the   parameter. On error, a null descriptor. If the function returns successfully, your application should call the   function to dispose of the resulting descriptor after it has finished using it. See  .
+- `theAEDescList`: A pointer to the descriptor list to get the descriptor from. See [`AEDescList`](aedesclist.md).
+- `index`: A one-based positive integer indicating the position of the descriptor to get. `AEGetNthDesc` returns an error if you pass zero, a negative number, or a value that is out of range.
+- `desiredType`: The desired descriptor type for the descriptor to copy. For a list of AppleScript’s predefined descriptor types, see [`Descriptor Type Constants`](apple_events/1542788-descriptor_type_constants.md). If the descriptor specified by the `index` parameter is not of the desired type, `AEGetNthDesc` attempts to coerce it to this type. However, if you pass a value of `typeWildCard`, no coercion is performed, and the descriptor type of the copied descriptor is the same as the descriptor type of the original descriptor. See [`DescType`](desctype.md).
+- `theAEKeyword`: A pointer to a keyword. On successful return, the keyword for the specified descriptor, if you are getting data from a list of keyword-specified descriptors; otherwise, `AEGetNthDesc` returns the value `typeWildCard`. Some keyword constants are described in [`Keyword Attribute Constants`](apple_events/1542920-keyword_attribute_constants.md) and [`Keyword Parameter Constants`](apple_events/1527206-keyword_parameter_constants.md). See [`AEKeyword`](aekeyword.md).
+- `result`: A pointer to a descriptor. On successful return, a copy of the descriptor specified by the `index` parameter, coerced, if necessary, to the descriptor type specified by the `desiredType` parameter. On error, a null descriptor. If the function returns successfully, your application should call the [`AEDisposeDesc(_:)`](1444208-aedisposedesc.md) function to dispose of the resulting descriptor after it has finished using it. See [`AEDesc`](aedesc.md).
 
 ## See Also
 

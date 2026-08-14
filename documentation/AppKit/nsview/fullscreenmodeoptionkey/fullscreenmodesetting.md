@@ -16,7 +16,7 @@ static let fullScreenModeSetting: NSView.FullScreenModeOptionKey
 
 #### Discussion
 
-The corresponding value is an instance of [`NSDictionary`](https://developer.apple.com/documentation/Foundation/NSDictionary) that contains keys specified in Display Mode Standard Properties and Display Mode Optional Properties in [`Quartz Display Services`](https://developer.apple.com/documentation/CoreGraphics/quartz-display-services).
+The corresponding value is an instance of [`NSDictionary`](https://developer.apple.com/documentation/foundation/nsdictionary) that contains keys specified in Display Mode Standard Properties and Display Mode Optional Properties in [`Quartz Display Services`](https://developer.apple.com/documentation/coregraphics/quartz-display-services).
 
 When the [`fullScreenModeApplicationPresentationOptions`](nsview/fullscreenmodeoptionkey/fullscreenmodeapplicationpresentationoptions.md) is specified in the options dictionary specifying this option as well will cause an exception.
 

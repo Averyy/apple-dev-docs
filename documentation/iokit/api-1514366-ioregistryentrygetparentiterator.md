@@ -29,7 +29,7 @@ This method creates an iterator which will return each of a registry entry's par
 ## Parameters
 
 - `entry`: The registry entry whose parents to iterate over.
-- `plane`: The name of an existing registry plane. Plane names are defined in IOKitKeys.h, for example,  .
+- `plane`: The name of an existing registry plane. Plane names are defined in IOKitKeys.h, for example, [`kIOServicePlane`](kioserviceplane.md).
 - `iterator`: The created iterator over the parents of the entry, on success. The iterator must be released when the iteration is finished.
 
 ## See Also

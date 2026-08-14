@@ -21,7 +21,7 @@ let kCFURLUbiquitousItemPercentUploadedKey: CFString!
 
 A `CFNumber` value that provides the status of the upload in progress.
 
-Deprecated. Use [`NSMetadataQuery`](https://developer.apple.com/documentation/Foundation/NSMetadataQuery) and [`NSMetadataUbiquitousItemPercentUploadedKey`](https://developer.apple.com/documentation/Foundation/NSMetadataUbiquitousItemPercentUploadedKey) on [`NSMetadataItem`](https://developer.apple.com/documentation/Foundation/NSMetadataItem) instead.
+Deprecated. Use [`NSMetadataQuery`](https://developer.apple.com/documentation/foundation/nsmetadataquery) and [`NSMetadataUbiquitousItemPercentUploadedKey`](https://developer.apple.com/documentation/foundation/nsmetadataubiquitousitempercentuploadedkey) on [`NSMetadataItem`](https://developer.apple.com/documentation/foundation/nsmetadataitem) instead.
 
 ## See Also
 

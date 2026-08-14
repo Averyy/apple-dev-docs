@@ -19,9 +19,9 @@ An entitlement that enables someone’s head movement to determine the orientati
 
 This entitlement changes the orientation of spatial audio output to match the person’s head pose via compatible AirPods for the following APIs:
 
-- [`AVAudioEnvironmentNode`](https://developer.apple.com/documentation/AVFAudio/AVAudioEnvironmentNode), when you set the [`isListenerHeadTrackingEnabled`](https://developer.apple.com/documentation/AVFAudio/AVAudioEnvironmentNode/isListenerHeadTrackingEnabled) property to `true`
-- [`Audio Toolbox`](https://developer.apple.com/documentation/AudioToolbox) (see [`AUSpatialMixer Parameters`](https://developer.apple.com/documentation/AudioToolbox/1390073-auspatialmixer-parameters)), when you set the [`kAudioUnitProperty_SpatialMixerEnableHeadTracking`](https://developer.apple.com/documentation/AudioToolbox/kAudioUnitProperty_SpatialMixerEnableHeadTracking) property to `true`
-- [`PHASEListener`](https://developer.apple.com/documentation/PHASE/PHASEListener), when you set the new [`automaticHeadTrackingFlags`](https://developer.apple.com/documentation/PHASE/PHASEListener/automaticHeadTrackingFlags) property to orientation
+- [`AVAudioEnvironmentNode`](https://developer.apple.com/documentation/avfaudio/avaudioenvironmentnode), when you set the [`isListenerHeadTrackingEnabled`](https://developer.apple.com/documentation/avfaudio/avaudioenvironmentnode/islistenerheadtrackingenabled) property to `true`
+- [`Audio Toolbox`](https://developer.apple.com/documentation/audiotoolbox) (see [`AUSpatialMixer Parameters`](https://developer.apple.com/documentation/audiotoolbox/1390073-auspatialmixer-parameters)), when you set the [`kAudioUnitProperty_SpatialMixerEnableHeadTracking`](https://developer.apple.com/documentation/audiotoolbox/kaudiounitproperty_spatialmixerenableheadtracking) property to `true`
+- [`PHASEListener`](https://developer.apple.com/documentation/phase/phaselistener), when you set the new [`automaticHeadTrackingFlags`](https://developer.apple.com/documentation/phase/phaselistener/automaticheadtrackingflags) property to orientation
 
 Add this entitlement to your app by enabling the Head Pose capability in Xcode.
 

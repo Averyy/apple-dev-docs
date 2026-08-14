@@ -21,7 +21,7 @@ class var componentMultiply: CIBlendKernel { get }
 
 #### Discussion
 
-![The result of using the component multiply blend kernel (background image is top left, foreground image is bottom left)](https://docs-assets.developer.apple.com/published/1dba8c201e4d0b5e383e1fa0c8a1e99a/media-2926856%402x.png)
+![The result of using the component multiply blend kernel (background image is top left, foreground image is bottom left)](/images/com.apple.coreimage/media-2926856@2x.png)
 
 ## See Also
 

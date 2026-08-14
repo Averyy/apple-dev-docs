@@ -23,8 +23,8 @@ protocol WebDownloadDelegate : NSURLDownloadDelegate
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [NSURLDownloadDelegate](../Foundation/NSURLDownloadDelegate.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSURLDownloadDelegate](../foundation/nsurldownloaddelegate.md)
 
 ## See Also
 

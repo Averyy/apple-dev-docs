@@ -21,7 +21,7 @@ init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?)
 ## Parameters
 
 - `nibNameOrNil`: The name of the nib file.
-- `nibBundleOrNil`: The [`Bundle`](https://developer.apple.com/documentation/Foundation/Bundle) file.
+- `nibBundleOrNil`: The [`Bundle`](https://developer.apple.com/documentation/foundation/bundle) file.
 
 ## See Also
 

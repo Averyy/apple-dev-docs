@@ -32,7 +32,7 @@ Certain cellular networks also offer Network Slicing, which can use `serviceClas
 
 There are two steps to enable Cellular Network Slicing:
 
-- Set the entitlements in your property list for [`5G Network Slicing App Category`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.networking.slicing.appcategory) and [`5G Network Slicing Traffic Category`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.networking.slicing.trafficcategory). If you don’t entitle your app by specifying both these entitlements, your apps network connections won’t be using Cellular Network Slicing, even if supported by the carrier.
+- Set the entitlements in your property list for [`5G Network Slicing App Category`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.networking.slicing.appcategory) and [`5G Network Slicing Traffic Category`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.networking.slicing.trafficcategory). If you don’t entitle your app by specifying both these entitlements, your apps network connections won’t be using Cellular Network Slicing, even if supported by the carrier.
 - Set this to the appropriate [`NWParameters.ServiceClass`](nwparameters/serviceclass-swift.enum.md).
 
 ## See Also

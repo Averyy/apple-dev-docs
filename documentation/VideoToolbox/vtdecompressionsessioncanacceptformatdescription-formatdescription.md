@@ -21,7 +21,7 @@ func VTDecompressionSessionCanAcceptFormatDescription(_ session: VTDecompression
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/Swift/true) if the decompression session accepts the format description; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
+[`true`](https://developer.apple.com/documentation/swift/true) if the decompression session accepts the format description; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
 
 #### Discussion
 
@@ -30,7 +30,7 @@ Some video decoders can accommodate minor changes in format without needing to b
 ## Parameters
 
 - `session`: The decompression session.
-- `newFormatDesc`: The [`CMFormatDescription`](https://developer.apple.com/documentation/CoreMedia/CMFormatDescription) to test.
+- `newFormatDesc`: The [`CMFormatDescription`](https://developer.apple.com/documentation/coremedia/cmformatdescription) to test.
 
 ## See Also
 

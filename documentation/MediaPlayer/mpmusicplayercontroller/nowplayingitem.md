@@ -25,7 +25,7 @@ To specify that playback should begin at a particular media item in the playback
 
 If no media item is playing or designated to play, this property’s value is `nil`.
 
-If you use the system music player and the user plays an item from another library using Home Sharing, the value of this property is [`nil`](https://developer.apple.com/documentation/ObjectiveC/nil-227m0).
+If you use the system music player and the user plays an item from another library using Home Sharing, the value of this property is [`nil`](https://developer.apple.com/documentation/objectivec/nil-227m0).
 
 ## See Also
 

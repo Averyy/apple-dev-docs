@@ -18,7 +18,7 @@ var sourceDomain: String? { get }
 
 #### Discussion
 
-This postback value indicates the `source_domain` of the corresponding [`AdImpressionRequest`](https://developer.apple.com/documentation/SKAdNetworkforWebAds/AdImpressionRequest).
+This postback value indicates the `source_domain` of the corresponding [`AdImpressionRequest`](https://developer.apple.com/documentation/skadnetworkforwebads/adimpressionrequest).
 
 ## See Also
 

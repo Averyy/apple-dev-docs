@@ -26,7 +26,7 @@ A positional audio player object.
 
 #### Discussion
 
-Using this initializer is typically not necessary. Instead, call the [`audioPlayerWithAVAudioNode:`](scnaudioplayer/audioplayerwithavaudionode:.md) method, which returns a cached audio player object if one for the specified [`AVAudioNode`](https://developer.apple.com/documentation/AVFAudio/AVAudioNode) object has already been created and is available for use.
+Using this initializer is typically not necessary. Instead, call the [`audioPlayerWithAVAudioNode:`](scnaudioplayer/audioplayerwithavaudionode:.md) method, which returns a cached audio player object if one for the specified [`AVAudioNode`](https://developer.apple.com/documentation/avfaudio/avaudionode) object has already been created and is available for use.
 
 ## Parameters
 

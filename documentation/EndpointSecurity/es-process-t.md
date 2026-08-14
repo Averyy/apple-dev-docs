@@ -29,7 +29,7 @@ Endpoint Security provides clients the current state of the CS flags in the [`co
 
 - The `CS_VALID` bit in [`codesigning_flags`](es_process_t/codesigning_flags.md) means that everything the kernel has validated up to that point in time was valid. However, this doesn’t mean there’s been a full validation of all the pages in the executable file. If a page’s content has been tampered with, XNU won’t know until that page pages in.
 - When XNU detects a tampered page, it clears the `CS_VALID` bit. With the `CS_KILL` bit set, Endpoint Security terminates the process, preventing the tampered code from executing. Platform binaries and binaries that opted into the hardened runtime typically have the `CS_KILL` bit set.
-- If you want your Endpoint Security client to detect tampered code before it pages in, such as at execution time, you can do so with the [`Security`](https://developer.apple.com/documentation/Security) framework. However, this may impose a significant performance cost.
+- If you want your Endpoint Security client to detect tampered code before it pages in, such as at execution time, you can do so with the [`Security`](https://developer.apple.com/documentation/security) framework. However, this may impose a significant performance cost.
 - Endpoint Security plays no role in verifying the validity of code signatures.
 
 ## Topics

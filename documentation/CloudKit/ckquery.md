@@ -30,7 +30,7 @@ Because you can’t change the record type and predicate after initialization, y
 
 ##### Building Your Predicates
 
-An [`NSPredicate`](https://developer.apple.com/documentation/Foundation/NSPredicate) object defines the logical conditions for determining whether a record is a match for a query. Queries support only a subset of the predicate behaviors that the `NSPredicate` class offers.
+An [`NSPredicate`](https://developer.apple.com/documentation/foundation/nspredicate) object defines the logical conditions for determining whether a record is a match for a query. Queries support only a subset of the predicate behaviors that the `NSPredicate` class offers.
 
 ###### Predicate Rules for Query Objects
 
@@ -38,13 +38,13 @@ The predicates you create for your query objects must follow these rules:
 
 - Predicates derive from a format string. You can’t use value or block-based predicates.
 - Predicates use only the operators in [`Supported Predicate Operators`](ckquery#Supported-Predicate-Operators.md).
-- Predicates operate only on fields that contain the following types of data: - [`NSString`](https://developer.apple.com/documentation/Foundation/NSString)
-- [`NSData`](https://developer.apple.com/documentation/Foundation/NSData)
-- [`NSDate`](https://developer.apple.com/documentation/Foundation/NSDate)
-- [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber)
-- [`NSArray`](https://developer.apple.com/documentation/Foundation/NSArray)
+- Predicates operate only on fields that contain the following types of data: - [`NSString`](https://developer.apple.com/documentation/foundation/nsstring)
+- [`NSData`](https://developer.apple.com/documentation/foundation/nsdata)
+- [`NSDate`](https://developer.apple.com/documentation/foundation/nsdate)
+- [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber)
+- [`NSArray`](https://developer.apple.com/documentation/foundation/nsarray)
 - [`CKRecord.Reference`](ckrecord/reference.md)
-- [`CLLocation`](https://developer.apple.com/documentation/CoreLocation/CLLocation)
+- [`CLLocation`](https://developer.apple.com/documentation/corelocation/cllocation)
 - Key names in predicates correspond to fields in the currently evaluated record. Key names can include the names of the record’s metadata properties, such as `creationDate`, or any data fields you add to the record. You can’t use key paths to specify fields in related records.
 - Predicates support the following variable substitution strings: - Use `%@` for value objects, such as strings, numbers, and dates.
 - Use `%K` for the name of a field. This substitution variable indicates that the system uses the substitution string to look up a field name.
@@ -63,12 +63,12 @@ The following table lists the operators you can use in predicates for a query.
 
 | Operation | Supported operators |
 | --- | --- |
-| Basic comparisons | `=`, `==` ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) `>=`, `=>` ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) `<=`, `=<` ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) `<` ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) `>` ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) `!=`, `<>` ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) `BETWEEN` |
-| Boolean value predicates | `TRUEPREDICATE` ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) `FALSEPREDICATE` |
-| Basic compound predicates | `AND`, `&&` ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) `NOT` |
+| Basic comparisons | `=`, `==` ![None](/images/com.apple.cloudkit/spacer.png) `>=`, `=>` ![None](/images/com.apple.cloudkit/spacer.png) `<=`, `=<` ![None](/images/com.apple.cloudkit/spacer.png) `<` ![None](/images/com.apple.cloudkit/spacer.png) `>` ![None](/images/com.apple.cloudkit/spacer.png) `!=`, `<>` ![None](/images/com.apple.cloudkit/spacer.png) `BETWEEN` |
+| Boolean value predicates | `TRUEPREDICATE` ![None](/images/com.apple.cloudkit/spacer.png) `FALSEPREDICATE` |
+| Basic compound predicates | `AND`, `&&` ![None](/images/com.apple.cloudkit/spacer.png) `NOT` |
 | String comparisons | `BEGINSWITH` |
-| Aggregate operations | `IN` ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) `CONTAINS` |
-| Functions | `distanceToLocation:fromLocation:` ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) `now` ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) `tokenize:using:` |
+| Aggregate operations | `IN` ![None](/images/com.apple.cloudkit/spacer.png) `CONTAINS` |
+| Functions | `distanceToLocation:fromLocation:` ![None](/images/com.apple.cloudkit/spacer.png) `now` ![None](/images/com.apple.cloudkit/spacer.png) `tokenize:using:` |
 
 Specifying an unsupported operator or data type in your query’s predicate results in an error when you execute the query. For more information about creating predicate objects, see [`Predicate Programming Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/Predicates/AdditionalChapters/Introduction.html#//apple_ref/doc/uid/TP40001789).
 
@@ -136,7 +136,7 @@ NSPredicate *predicate = nil;
 predicate = [NSPredicate predicateWithFormat:@"self contains 'bob' AND self contains 'smith'"];
 ```
 
-To test whether two locations are near each other, create a predicate using the `distanceToLocation:fromLocation:` function as Listing 7 shows. Predicates that use this function must have the structure in the listing. In your code, replace the `location` variable with a field name from one of your records. This data type for the field must be a [`CLLocation`](https://developer.apple.com/documentation/CoreLocation/CLLocation) object. Similarly, replace the `fixedLoc` and `radius` values with appropriate values from your app. The `fixedLoc` value is the geographic coordinate that marks the center of a circle with the specified radius. In this example, the predicate returns a match if the location in the record is within 10 kilometers of the specified latitude and longitude.
+To test whether two locations are near each other, create a predicate using the `distanceToLocation:fromLocation:` function as Listing 7 shows. Predicates that use this function must have the structure in the listing. In your code, replace the `location` variable with a field name from one of your records. This data type for the field must be a [`CLLocation`](https://developer.apple.com/documentation/corelocation/cllocation) object. Similarly, replace the `fixedLoc` and `radius` values with appropriate values from your app. The `fixedLoc` value is the geographic coordinate that marks the center of a circle with the specified radius. In this example, the predicate returns a match if the location in the record is within 10 kilometers of the specified latitude and longitude.
 
 Listing 7. Matching by distance from a location
 
@@ -204,19 +204,19 @@ Queries always run asynchronously and deliver results to a completion handler th
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCoding](../Foundation/NSCoding.md)
-- [NSCopying](../Foundation/NSCopying.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [NSSecureCoding](../Foundation/NSSecureCoding.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCoding](../foundation/nscoding.md)
+- [NSCopying](../foundation/nscopying.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

@@ -50,7 +50,7 @@ Use the advanced pattern player, [`CHHapticAdvancedPatternPlayer`](chhapticadvan
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 ### Inherited By
 - [CHHapticAdvancedPatternPlayer](chhapticadvancedpatternplayer.md)
 

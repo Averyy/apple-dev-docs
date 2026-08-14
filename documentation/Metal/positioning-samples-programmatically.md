@@ -10,7 +10,7 @@ When you perform a render pass that uses multisample antialiasing (MSAA) operati
 
 ##### Verify Support for Programmable Sample Positions
 
-Not all GPUs support programmable sample positions. Check for support by reading the [`areProgrammableSamplePositionsSupported`](mtldevice/areprogrammablesamplepositionssupported.md) property on a device instance. If this property’s value is [`false`](https://developer.apple.com/documentation/Swift/false), the device instance uses fixed sample positions that you can’t query or modify.
+Not all GPUs support programmable sample positions. Check for support by reading the [`areProgrammableSamplePositionsSupported`](mtldevice/areprogrammablesamplepositionssupported.md) property on a device instance. If this property’s value is [`false`](https://developer.apple.com/documentation/swift/false), the device instance uses fixed sample positions that you can’t query or modify.
 
 Additionally, the number of sample positions that the device instance supports may vary. Call the [`supportsTextureSampleCount(_:)`](mtldevice/supportstexturesamplecount(_:).md) method to determine if a given number of samples is usable on that device instance.
 
@@ -18,7 +18,7 @@ Additionally, the number of sample positions that the device instance supports m
 
 Programmable sample positions are set on a 4-bit subpixel grid (16 x 16 subpixels). Floating-point values are in the `[0.0,1.0)` range along each axis, with the origin `(0,0)` defined at the top-left corner.  You can set values from `0/16` up to `15/16`, inclusive, in `1/16` increments along each axis.
 
-![Coordinate system diagram showing the subpixel grid on which programmable sample positions are set. Example positions are set at the top-left corner (0, 0), top-right corner (1,0), bottom-right corner (1,1), bottom-left corner (0,1), and center (0.5,0.5).](https://docs-assets.developer.apple.com/published/7db887d0d8133b2a601258d3215ec9e4/positioning-samples-programmatically-1%402x.png)
+![Coordinate system diagram showing the subpixel grid on which programmable sample positions are set. Example positions are set at the top-left corner (0, 0), top-right corner (1,0), bottom-right corner (1,1), bottom-left corner (0,1), and center (0.5,0.5).](/images/com.apple.metal/positioning-samples-programmatically-1@2x.png)
 
 Metal uses the same default sample positions on all GPUs that support programmable sample positions. Get the default sample positions for a given sample count by calling the [`getDefaultSamplePositions:count:`](mtldevice/getdefaultsamplepositions:count:.md) method, as shown in the code below. Programmable sample positions are defined as an array of [`MTLSamplePosition`](mtlsampleposition.md) values.
 
@@ -33,7 +33,7 @@ For example, the following table and grid show the position index, values, and p
 | --- | --- |
 | 0 | 0.5, 0.5 |
 
-![Coordinate system diagram showing the subpixel grid on which the default one-sample position is set.](https://docs-assets.developer.apple.com/published/b82e8ada6eb98fc644df94e8d27c8eb1/positioning-samples-programmatically-2%402x.png)
+![Coordinate system diagram showing the subpixel grid on which the default one-sample position is set.](/images/com.apple.metal/positioning-samples-programmatically-2@2x.png)
 
 ##### Set the Sample Positions in a Render Pass
 
@@ -51,7 +51,7 @@ static const MTLSamplePosition samplePositions[4] = {
 
 The following grid shows the programmable sample positions in the `samplePositions` array:
 
-![Coordinate system diagram showing the subpixel grid on which programmable sample positions are set.](https://docs-assets.developer.apple.com/published/880c249cfff2fe84866e541e71a8dc90/positioning-samples-programmatically-3%402x.png)
+![Coordinate system diagram showing the subpixel grid on which programmable sample positions are set.](/images/com.apple.metal/positioning-samples-programmatically-3@2x.png)
 
 ## See Also
 

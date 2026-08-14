@@ -15,7 +15,7 @@ Create and manage widgets for the Today view.
 
 The Notification Center framework helps you create and manage app extensions that implement Today widgets. The framework provides an API you can use to specify whether a Today widget has content to display, and to customize aspects of its appearance and behavior. In macOS, the Notification Center framework also provides ways to customize the editing and searching experience in a widget.
 
-![Widgets showing weather information in the Today view on iOS and macOS.](https://docs-assets.developer.apple.com/published/e202f58bcb54e62c748ceb590bb16819/media-3039577%402x.png)
+![Widgets showing weather information in the Today view on iOS and macOS.](/images/com.apple.notificationcenter/media-3039577@2x.png)
 
 ## Topics
 

@@ -17,7 +17,7 @@ void emitter::continuous(float rate, float maxBurst)
 
 #### Discussion
 
-> **Note**: ![Graph](https://docs-assets.developer.apple.com/published/ba1078030d9b378f614f1a229ce01630/emitter__continuous.svg)
+> **Note**: ![Graph](/images/com.apple.computegraph/emitter__continuous.svg)
 
 > **Note**: Reads from emitter state `ContinuousEmitterState state`, if it exists
 

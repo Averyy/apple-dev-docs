@@ -21,7 +21,7 @@ A Core Video result code. See [`Core Video Constants`](core-video-constants.md) 
 
 #### Discussion
 
-Use this call to create a display link for a single display. For more information on the display identifier type, see [`CGDirectDisplayID`](https://developer.apple.com/documentation/CoreGraphics/CGDirectDisplayID).
+Use this call to create a display link for a single display. For more information on the display identifier type, see [`CGDirectDisplayID`](https://developer.apple.com/documentation/coregraphics/cgdirectdisplayid).
 
 ## Parameters
 

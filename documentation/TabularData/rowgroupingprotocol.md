@@ -82,7 +82,7 @@ protocol RowGroupingProtocol : CustomStringConvertible
 ## Relationships
 
 ### Inherits From
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
 ### Conforming Types
 - [RowGrouping](rowgrouping.md)
 

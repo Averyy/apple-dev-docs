@@ -23,10 +23,10 @@ A new [`MEVideoDecoder`](mevideodecoder.md).
 
 The `videoDecoderSpecifications` parameter accepts the following keys:
 
-- [`kVTVideoDecoderSpecification_EnableHardwareAcceleratedVideoDecoder`](https://developer.apple.com/documentation/VideoToolbox/kVTVideoDecoderSpecification_EnableHardwareAcceleratedVideoDecoder)
-- [`kVTVideoDecoderSpecification_RequireHardwareAcceleratedVideoDecoder`](https://developer.apple.com/documentation/VideoToolbox/kVTVideoDecoderSpecification_RequireHardwareAcceleratedVideoDecoder)
-- [`kVTVideoDecoderSpecification_RequiredDecoderGPURegistryID`](https://developer.apple.com/documentation/VideoToolbox/kVTVideoDecoderSpecification_RequiredDecoderGPURegistryID)
-- [`kVTVideoDecoderSpecification_PreferredDecoderGPURegistryID`](https://developer.apple.com/documentation/VideoToolbox/kVTVideoDecoderSpecification_PreferredDecoderGPURegistryID)
+- [`kVTVideoDecoderSpecification_EnableHardwareAcceleratedVideoDecoder`](https://developer.apple.com/documentation/videotoolbox/kvtvideodecoderspecification_enablehardwareacceleratedvideodecoder)
+- [`kVTVideoDecoderSpecification_RequireHardwareAcceleratedVideoDecoder`](https://developer.apple.com/documentation/videotoolbox/kvtvideodecoderspecification_requirehardwareacceleratedvideodecoder)
+- [`kVTVideoDecoderSpecification_RequiredDecoderGPURegistryID`](https://developer.apple.com/documentation/videotoolbox/kvtvideodecoderspecification_requireddecodergpuregistryid)
+- [`kVTVideoDecoderSpecification_PreferredDecoderGPURegistryID`](https://developer.apple.com/documentation/videotoolbox/kvtvideodecoderspecification_preferreddecodergpuregistryid)
 
 If the parameter values aren’t compatible with the video decoder, this method fails with the error [`MEError.Code.unsupportedFeature`](meerror-swift.struct/code/unsupportedfeature.md).
 
@@ -36,7 +36,7 @@ The video decoder needs to retain the pixel buffer manager and use it to allocat
 
 - `codecType`: The codec type for the requested decoder.
 - `videoFormatDescription`: An object that describes the video data.
-- `videoDecoderSpecifications`: A dictionary that contains video decoder specification values, which may be empty. See [`Decompression Properties`](https://developer.apple.com/documentation/VideoToolbox/decompression-properties) for a list of keys to use.
+- `videoDecoderSpecifications`: A dictionary that contains video decoder specification values, which may be empty. See [`Decompression Properties`](https://developer.apple.com/documentation/videotoolbox/decompression-properties) for a list of keys to use.
 - `extensionDecoderPixelBufferManager`: A pixel buffer manager.
 
 ## See Also

@@ -7,7 +7,6 @@ The original message ID of this message.
 
 **Availability**:
 - iOS 26.5+
-- iPadOS 26.5+
 
 ## Declaration
 

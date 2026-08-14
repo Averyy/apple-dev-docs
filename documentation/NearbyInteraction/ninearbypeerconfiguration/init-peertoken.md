@@ -23,7 +23,7 @@ init(peerToken: NIDiscoveryToken)
 
 #### Discussion
 
-To acquire a peer’s discovery token, two instantiations of the app exchange their respective [`discoveryToken`](nisession/discoverytoken.md) over the network using a method you choose. For a discussion that covers sharing discovery tokens using [`Multipeer Connectivity`](https://developer.apple.com/documentation/MultipeerConnectivity), see [`Discovering peers with Multipeer Connectivity`](discovering-peers-with-multipeer-connectivity.md).
+To acquire a peer’s discovery token, two instantiations of the app exchange their respective [`discoveryToken`](nisession/discoverytoken.md) over the network using a method you choose. For a discussion that covers sharing discovery tokens using [`Multipeer Connectivity`](https://developer.apple.com/documentation/multipeerconnectivity), see [`Discovering peers with Multipeer Connectivity`](discovering-peers-with-multipeer-connectivity.md).
 
 ## Parameters
 

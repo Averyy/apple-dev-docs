@@ -24,7 +24,7 @@ class NLContextualEmbedding
 
 `NLContextualEmbedding` provides a dense vector representation of natural language utterances using models trained with contextualized language understanding. Unlike static word embeddings provided by `NLEmbedding`, contextual embeddings dynamically adjust based on surrounding words, enabling deeper language comprehension.
 
-If you are building text classification or word tagging models, you can use `NLContextualEmbedding` with [`Create ML`](https://developer.apple.com/documentation/CreateML) by selecting [`MLTextClassifier.FeatureExtractorType.bertEmbedding`](https://developer.apple.com/documentation/CreateML/MLTextClassifier/FeatureExtractorType/bertEmbedding) as the feature extraction component in your model. For more information on how to create your own text classification model refer to [`Creating a text classifier model`](https://developer.apple.com/documentation/CreateML/creating-a-text-classifier-model).
+If you are building text classification or word tagging models, you can use `NLContextualEmbedding` with [`Create ML`](https://developer.apple.com/documentation/createml) by selecting [`MLTextClassifier.FeatureExtractorType.bertEmbedding`](https://developer.apple.com/documentation/createml/mltextclassifier/featureextractortype/bertembedding) as the feature extraction component in your model. For more information on how to create your own text classification model refer to [`Creating a text classifier model`](https://developer.apple.com/documentation/createml/creating-a-text-classifier-model).
 
 > **Note**: For semantic similarity tasks, consider using [`NLEmbedding`](nlembedding.md). To learn more on how to implement semantic similarity, refer to [`Finding similarities between pieces of text`](finding-similarities-between-pieces-of-text.md).
 
@@ -81,14 +81,14 @@ Some models support multiple languages; for example, you can use the same object
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

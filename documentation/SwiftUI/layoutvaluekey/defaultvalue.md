@@ -31,7 +31,7 @@ private struct Flexibility: LayoutValueKey {
 }
 ```
 
-The type that you declare for the `defaultValue` sets the layout key’s [`Value`](layoutvaluekey/value.md) associated type. The Swift compiler infers the key’s associated type in the above example as an optional [`CGFloat`](https://developer.apple.com/documentation/CoreFoundation/CGFloat-swift.struct).
+The type that you declare for the `defaultValue` sets the layout key’s [`Value`](layoutvaluekey/value.md) associated type. The Swift compiler infers the key’s associated type in the above example as an optional [`CGFloat`](https://developer.apple.com/documentation/corefoundation/cgfloat-swift.struct).
 
 Any view that you don’t explicitly set a value for uses the default value. Override the default value for a view using the [`layoutValue(key:value:)`](view/layoutvalue(key:value:).md) modifier.
 

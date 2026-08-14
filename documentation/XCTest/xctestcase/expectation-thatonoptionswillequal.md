@@ -25,7 +25,7 @@ Creates and returns an expectation for the test case.
 
 - `keyPath`: The key path for the observed property, relative to the observed object.
 - `observedObject`: The object to observe the key path on.
-- `options`: A combination of values that specify what to include in observation notifications. For possible values, see [`NSKeyValueObservingOptions`](https://developer.apple.com/documentation/Foundation/NSKeyValueObservingOptions).
+- `options`: A combination of values that specify what to include in observation notifications. For possible values, see [`NSKeyValueObservingOptions`](https://developer.apple.com/documentation/foundation/nskeyvalueobservingoptions).
 - `expectedValue`: A value the property must equal to fulfill the expectation.
 
 ## See Also

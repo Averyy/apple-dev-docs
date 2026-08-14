@@ -22,7 +22,7 @@ func withUnsafeBytes<R>(_ body: (UnsafeRawBufferPointer) throws -> R) rethrows -
 
 ## Parameters
 
-- `body`: A closure with an [`UnsafeRawBufferPointer`](https://developer.apple.com/documentation/Swift/UnsafeRawBufferPointer) parameter that points to the storage for the multiarray. This closure takes the following parameter: - **`ptr`**: The pointer to the buffer.
+- `body`: A closure with an [`UnsafeRawBufferPointer`](https://developer.apple.com/documentation/swift/unsaferawbufferpointer) parameter that points to the storage for the multiarray. This closure takes the following parameter: - **`ptr`**: The pointer to the buffer.
 
 ## See Also
 

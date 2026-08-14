@@ -30,8 +30,8 @@ This method applies the circle splash distortion filter to an image. This effect
 The circle splash distortion filter uses the following properties:
 
 - **`inputImage`**: An image with the type [`CIImage`](ciimage.md).
-- **`radius`**: A `float` representing the amount in pixels the filter uses to create the distortion as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
-- **`center`**: A [`CGPoint`](https://developer.apple.com/documentation/CoreFoundation/CGPoint) representing the center of the image.
+- **`radius`**: A `float` representing the amount in pixels the filter uses to create the distortion as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
+- **`center`**: A [`CGPoint`](https://developer.apple.com/documentation/corefoundation/cgpoint) representing the center of the image.
 
 The following code creates a filter that results in a ripple effect applied to the image:
 
@@ -45,7 +45,7 @@ func circularSplash(inputImage: CIImage) -> CIImage {
 }
 ```
 
-![On the left, an image with a checkerboard pattern. On the right, the same image but with a circle splash distortion applied. The center of the image contains a checkerboard pattern with larger squares than the original. This is surrounded by stretched black and white stripes radiating out to the edge of the image.](https://docs-assets.developer.apple.com/published/a1a41d94e5b1e030ee121ab50708ac7c/media-4407306%402x.png)
+![On the left, an image with a checkerboard pattern. On the right, the same image but with a circle splash distortion applied. The center of the image contains a checkerboard pattern with larger squares than the original. This is surrounded by stretched black and white stripes radiating out to the edge of the image.](/images/com.apple.coreimage/media-4407306@2x.png)
 
 ## See Also
 

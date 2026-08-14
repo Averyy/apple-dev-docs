@@ -34,8 +34,8 @@ class AudioHardwareTap
 ### Inherits From
 - [AudioHardwareObject](audiohardwareobject.md)
 ### Conforms To
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 
 ---

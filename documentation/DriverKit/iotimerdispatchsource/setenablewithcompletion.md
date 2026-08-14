@@ -23,7 +23,7 @@ virtual kern_return_t SetEnableWithCompletion(bool enable, IODispatchSourceCance
 
 ## Parameters
 
-- `enable`: A Boolean value that indicates whether to enable or disable the timer. Specify [`true`](https://developer.apple.com/documentation/Swift/true) to enable the timer or [`false`](https://developer.apple.com/documentation/Swift/false) to disable it.
+- `enable`: A Boolean value that indicates whether to enable or disable the timer. Specify [`true`](https://developer.apple.com/documentation/swift/true) to enable the timer or [`false`](https://developer.apple.com/documentation/swift/false) to disable it.
 - `handler`: An optional block to execute after any pending handlers of a newly disabled timer finish executing.
 
 ## See Also

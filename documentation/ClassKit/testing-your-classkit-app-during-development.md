@@ -16,11 +16,11 @@ During development, you might not have access to users with Managed Apple IDs. I
 
 After you install Schoolwork on an iOS device, new developer settings appear for controlling ClassKit development mode behavior. Go to Settings > Developer on the device and choose ClassKit API.
 
-![Screenshot of the Settings app on an iPad with the Developer item selected in the Settings table on the left, and with the ClassKit API item highlighted in the Developer table on the right.](https://docs-assets.developer.apple.com/published/e131620ac7b7d8ff4ad9141ee851d3bf/media-2977081%402x.png)
+![Screenshot of the Settings app on an iPad with the Developer item selected in the Settings table on the left, and with the ClassKit API item highlighted in the Developer table on the right.](/images/com.apple.classkit/media-2977081@2x.png)
 
 In the view that appears, choose either a teacher or student role for the device. The role you choose changes how ClassKit routes data, as described in [`About ClassKit and user roles`](about-classkit-and-user-roles.md).
 
-![Screenshot of ClassKit API developer settings on an iPad showing the available roles of Off, Teacher, and Student, with Off currently selected. The settings also include a button for resetting development data.](https://docs-assets.developer.apple.com/published/9a10b4efa13bd16482c6bac9d43a5553/media-2977079%402x.png)
+![Screenshot of ClassKit API developer settings on an iPad showing the available roles of Off, Teacher, and Student, with Off currently selected. The settings also include a button for resetting development data.](/images/com.apple.classkit/media-2977079@2x.png)
 
 You can switch back and forth between the teacher and student roles as needed. For example, begin as a teacher and run your app to establish your assignable content. Then create an assignment with Schoolwork. Next, switch to student mode and complete the assignment in your app. Finally, switch back to teacher mode to see the reported student progress. If you want to start over, tap Reset Development Data, shown just underneath the role selection in the screenshot above, to purge the student and teacher databases.
 
@@ -40,7 +40,7 @@ When you enable the ClassKit capability in Xcode for your app, Xcode adds a `Cla
 
 To override this behavior and choose production mode during development, modify the entitlement manually by opening your app’s entitlements file and setting the ClassKit entitlement’s value to `production`:
 
-![Screenshot of Xcode with the MyApp.entitlements file selected in the navigation pane, and the ClassKit Environment entitlement visible in the entitlements file. The value for the entitlement is set to “production”.](https://docs-assets.developer.apple.com/published/f4efceae5a72efc5668815761b0ebdd7/media-3016370%402x.png)
+![Screenshot of Xcode with the MyApp.entitlements file selected in the navigation pane, and the ClassKit Environment entitlement visible in the entitlements file. The value for the entitlement is set to “production”.](/images/com.apple.classkit/media-3016370@2x.png)
 
 From your app’s point of view, the ClassKit API behaves exactly the same in production mode as it did in development mode, but the framework only interacts with Schoolwork and the network if you sign in to the device with a Managed Apple ID. If you don’t sign in with a Managed Apple ID in production mode, ClassKit treats you as an unmanaged user, silently dropping any data you report through the API. Similarly, ClassKit drops data unless your school’s IT administrator enables student progress in Apple School Manager, as described in [`Use Schoolwork to manage student progress in Apple School Manager`](https://developer.apple.comhttps://support.apple.com/guide/apple-school-manager/asm921383508).
 

@@ -20,7 +20,7 @@ Swift Splash scenes include Shader Graph materials built in Reality Composer Pro
 
 Slide pieces are the building blocks of Swift Splash. The Reality Composer project contains a separate scene for each one. In addition to the 3D models that make up the slide piece, each scene contains a number of other entities the app uses to animate and place the slide piece.
 
-![A screenshot of Reality Composer Pro showing one of Swift Splash's track pieces called 'Slide02`. On the left side of the window, there's a hierarchical outline showing the entities in the scene. The right side shows the 3D models that make up the slide, including the bottom, top, water, and fish.](https://docs-assets.developer.apple.com/published/88c564a92a9904ce68b8fa6041bfe2ff/SS-slide-piece%402x.png)
+![A screenshot of Reality Composer Pro showing one of Swift Splash's track pieces called 'Slide02`. On the left side of the window, there's a hierarchical outline showing the entities in the scene. The right side shows the 3D models that make up the slide, including the bottom, top, water, and fish.](/images/com.apple.visionOS/SS-slide-piece@2x.png)
 
 In the hierarchy viewer on the left side of the screenshot above, there are two transform entities called `connect_in` and `connect_out`. These transforms mark the points where the slide piece connects to the next or previous piece. Swift Splash uses these transforms to place new pieces at the end of the existing slide, as well as to snap pieces to other slide pieces when you manually move them near each other.
 
@@ -36,7 +36,7 @@ Many of Swift Splash’s slide pieces use the same materials. For example, the s
 
 ##### Parallelize the Asset Load
 
-To maximize load speed and make the most efficient use of available compute resources, Swift Splash parallelizes loading scenes from the Reality Composer project using a [`TaskGroup`](https://developer.apple.com/documentation/Swift/TaskGroup). The app creates a separate [`Task`](https://developer.apple.com/documentation/Swift/Task) for each of the scenes it needs to load.
+To maximize load speed and make the most efficient use of available compute resources, Swift Splash parallelizes loading scenes from the Reality Composer project using a [`TaskGroup`](https://developer.apple.com/documentation/swift/taskgroup). The app creates a separate [`Task`](https://developer.apple.com/documentation/swift/task) for each of the scenes it needs to load.
 
 ```swift
 await withTaskGroup(of: LoadResult.self) { taskGroup in   
@@ -86,7 +86,7 @@ When multiple entities have more than one overlapping, nonopaque material, Reali
 
 The following video demonstrates the problem. If the three boxes are the bounding boxes for three different transparent entities, and the small spheres are the box centers, the sphere that’s closest to the camera changes as the camera moves around the boxes, which changes the order that RealityKit’s default depth sorting algorithm draws them.
 
-Swift Splash assigns a [`ModelSortGroupComponent`](https://developer.apple.com/documentation/RealityKit/ModelSortGroupComponent) to each of the transparent entities to manually specify the relative depth sorting. To fix the transparency issues in the start piece in the video above, Swift Splash instructs RealityKit to draw the opaque parts of the fish first, its transparent goggles second, the water third, the glass globe fourth, and the selection glow shell last. Swift Splash does this by assigning a [`ModelSortGroupComponent`](https://developer.apple.com/documentation/RealityKit/ModelSortGroupComponent) to each of the overlapping entities using the same [`ModelSortGroup`](https://developer.apple.com/documentation/RealityKit/ModelSortGroup), but with a different order specified.
+Swift Splash assigns a [`ModelSortGroupComponent`](https://developer.apple.com/documentation/realitykit/modelsortgroupcomponent) to each of the transparent entities to manually specify the relative depth sorting. To fix the transparency issues in the start piece in the video above, Swift Splash instructs RealityKit to draw the opaque parts of the fish first, its transparent goggles second, the water third, the glass globe fourth, and the selection glow shell last. Swift Splash does this by assigning a [`ModelSortGroupComponent`](https://developer.apple.com/documentation/realitykit/modelsortgroupcomponent) to each of the overlapping entities using the same [`ModelSortGroup`](https://developer.apple.com/documentation/realitykit/modelsortgroup), but with a different order specified.
 
 ```swift
 fileprivate func setEntityDrawOrder(_ entity: Entity, _ sortOrder: Int32, _ sortGroup: ModelSortGroup) {
@@ -164,7 +164,7 @@ public func calculateRideDuration() {
 
 To build and edit the ride, players interact with Swift Splash in two different ways. They interact with SwiftUI windows to perform certain tasks, such as adding a new piece or deleting an existing piece of the ride. They also manipulate slide pieces using standard visionOS gestures, including taps, double taps, drags, and rotates. The player taps on a piece to select or deselect it. When a player double taps a piece, they select that piece without deselecting any other selected pieces. When someone drags a piece, it moves around the immersive space, snapping together with other pieces if placed near one. A two-finger rotate gesture spins the selected track piece or pieces on the Z-axis.
 
-Swift Splash handles all of these interactions using standard SwiftUI gestures targeted to an entity. To support any of these gestures at any time, the app declares them using [`SimultaneousGesture`](https://developer.apple.com/documentation/SwiftUI/SimultaneousGesture). The code for all of the gestures are contained in `TrackBuildingView`, which controls the app’s immersive space. Here’s how the app defines the rotation gesture:
+Swift Splash handles all of these interactions using standard SwiftUI gestures targeted to an entity. To support any of these gestures at any time, the app declares them using [`SimultaneousGesture`](https://developer.apple.com/documentation/swiftui/simultaneousgesture). The code for all of the gestures are contained in `TrackBuildingView`, which controls the app’s immersive space. Here’s how the app defines the rotation gesture:
 
 ```swift
 .simultaneousGesture(
@@ -181,7 +181,7 @@ Swift Splash handles all of these interactions using standard SwiftUI gestures t
 )
 ```
 
-Because multiple tap gestures on the same [`RealityView`](https://developer.apple.com/documentation/RealityKit/RealityView) execute with a different number of taps, multiple gestures may be called at once. If a player double taps an entity, for example, both the single tap and the double tap gesture code get called, and the app has to determine which one to execute. Swift Splash makes this determination by using a Boolean state variable. If a player single taps, it sets that variable — called `shouldSingleTap` — to `true`. Then it waits for a period of time before executing the rest of its code. If `shouldSingleTap` gets set to `false` while it’s waiting, the code doesn’t execute. When SwiftSplash detects a double tap gesture, it sets `shouldSingleTap` to `false`, preventing the single-tap code from firing when it executes the double-tap code.
+Because multiple tap gestures on the same [`RealityView`](https://developer.apple.com/documentation/realitykit/realityview) execute with a different number of taps, multiple gestures may be called at once. If a player double taps an entity, for example, both the single tap and the double tap gesture code get called, and the app has to determine which one to execute. Swift Splash makes this determination by using a Boolean state variable. If a player single taps, it sets that variable — called `shouldSingleTap` — to `true`. Then it waits for a period of time before executing the rest of its code. If `shouldSingleTap` gets set to `false` while it’s waiting, the code doesn’t execute. When SwiftSplash detects a double tap gesture, it sets `shouldSingleTap` to `false`, preventing the single-tap code from firing when it executes the double-tap code.
 
 ```swift
 .simultaneousGesture(

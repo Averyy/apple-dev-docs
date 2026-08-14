@@ -20,12 +20,12 @@ A pointer to the memory on success, `NULL` on failure.
 
 #### Discussion
 
-If `tag` was created with the `OSMT_PAGEABLE` attribute ` size` is a full page or larger, the allocated memory is pageable; otherwise it is wired.
+If `tag` was created with the `OSMT_PAGEABLE` attribute *and*` size` is a full page or larger, the allocated memory is pageable; otherwise it is wired.
 
 ## Parameters
 
 - `size`: The size of the memory block to allocate.
-- `tag`: The   under which to allocate the memory.
+- `tag`: The [`OSMallocTag`](osmalloctag.md) under which to allocate the memory.
 
 ## See Also
 

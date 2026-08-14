@@ -89,12 +89,12 @@ sudo killall -9 usbmuxd
 
 ###### New Features
 
-- Interface Builder now supports Inline and Compact [`UIDatePicker`](https://developer.apple.com/documentation/UIKit/UIDatePicker) styles. (65085323) (FB7847821)
+- Interface Builder now supports Inline and Compact [`UIDatePicker`](https://developer.apple.com/documentation/uikit/uidatepicker) styles. (65085323) (FB7847821)
 
 ###### Resolved Issues
 
-- Enabled safe area relative margins by default for navigation bars of [`UINavigationController`](https://developer.apple.com/documentation/UIKit/UINavigationController). For existing navigation controllers in storyboards, you can correct clipping by selecting the navigation bar in the controller, and enable Size Inspector > Safe Area Relative Margins. (66566017) (FB8269384)
-- Fixed an issue that could cause an [`NSTableView`](https://developer.apple.com/documentation/AppKit/NSTableView) to lose its Source List style when deploying to macOS versions earlier than macOS 11. (67700315) (FB8525478)
+- Enabled safe area relative margins by default for navigation bars of [`UINavigationController`](https://developer.apple.com/documentation/uikit/uinavigationcontroller). For existing navigation controllers in storyboards, you can correct clipping by selecting the navigation bar in the controller, and enable Size Inspector > Safe Area Relative Margins. (66566017) (FB8269384)
+- Fixed an issue that could cause an [`NSTableView`](https://developer.apple.com/documentation/appkit/nstableview) to lose its Source List style when deploying to macOS versions earlier than macOS 11. (67700315) (FB8525478)
 
 ##### Organizer
 
@@ -109,19 +109,19 @@ sudo killall -9 usbmuxd
 - The action menu has a new “Embed…” menu item that lets you specify the type of View container in which to embed the selected view hierarchy. (51152198)
 - The action menu has a new “Embed in ZStack” menu item. (56989502)
 - Xcode provides SwiftUI previews for macOS Widget extensions. (57990060)
-- The SwiftUI previews canvas now automatically shows and hides based on the presence of a [`PreviewProvider`](https://developer.apple.com/documentation/SwiftUI/PreviewProvider) in the file you’re editing. (67083504, 67693254)
-- The Editor menu now includes Create Preview to create a [`PreviewProvider`](https://developer.apple.com/documentation/SwiftUI/PreviewProvider), and Create Library Item to create a [`LibraryContentProvider`](https://developer.apple.com/documentation/DeveloperToolsSupport/LibraryContentProvider). (67110969)
+- The SwiftUI previews canvas now automatically shows and hides based on the presence of a [`PreviewProvider`](https://developer.apple.com/documentation/swiftui/previewprovider) in the file you’re editing. (67083504, 67693254)
+- The Editor menu now includes Create Preview to create a [`PreviewProvider`](https://developer.apple.com/documentation/swiftui/previewprovider), and Create Library Item to create a [`LibraryContentProvider`](https://developer.apple.com/documentation/developertoolssupport/librarycontentprovider). (67110969)
 
 ###### Resolved Issues
 
 - Fixed an issue that prevented previews from loading in projects with non-ASCII characters in their names, or in symbols within the project. (57260388) (FB7451792)
 - Previews correctly display interpolated strings, including for localized strings. (64278576)
 - Fixed an issue that prevented previews from loading for code that contains multi-line string literals. (65735599)
-- The canvas now displays error details when a preview fails to launch due to the underlying app crashing, such as when the app doesn’t have an [`EnvironmentObject`](https://developer.apple.com/documentation/SwiftUI/EnvironmentObject). (67955924)
+- The canvas now displays error details when a preview fails to launch due to the underlying app crashing, such as when the app doesn’t have an [`EnvironmentObject`](https://developer.apple.com/documentation/swiftui/environmentobject). (67955924)
 
 ###### Known Issues
 
-- Using the device name “Mac Catalyst” in a SwiftUI [`PreviewDevice`](https://developer.apple.com/documentation/SwiftUI/PreviewDevice) modifier may cause the preview to fail to update. Instead, the banner displays the error “Cannot preview in this file – rendering service was interrupted”. (65305155) **Workaround**: Remove the `previewDevice` modifier and switch to the “My Mac” run destination.
+- Using the device name “Mac Catalyst” in a SwiftUI [`PreviewDevice`](https://developer.apple.com/documentation/swiftui/previewdevice) modifier may cause the preview to fail to update. Instead, the banner displays the error “Cannot preview in this file – rendering service was interrupted”. (65305155) **Workaround**: Remove the `previewDevice` modifier and switch to the “My Mac” run destination.
 
 ##### Realitykit
 
@@ -149,7 +149,7 @@ sudo killall -9 usbmuxd
 
 ###### Resolved Issues
 
-- Fixed an issue that could cause apps linking against [`Core NFC`](https://developer.apple.com/documentation/CoreNFC) to crash with an error of “Library not loaded” from `dyld`. (67961203)
+- Fixed an issue that could cause apps linking against [`Core NFC`](https://developer.apple.com/documentation/corenfc) to crash with an error of “Library not loaded” from `dyld`. (67961203)
 
 ###### Known Issues
 
@@ -181,7 +181,7 @@ sudo killall -9 usbmuxd
 
 ###### Known Issues
 
-- Compiling a project with Mac Catalyst that imports [`OSLog`](https://developer.apple.com/documentation/OSLog) from Swift may fail. (68597591) **Workaround:** Consider importing `os.log` and similar services directly, or guarding the `OSLog` import with a `targetEnvironment` compiler directive.
+- Compiling a project with Mac Catalyst that imports [`OSLog`](https://developer.apple.com/documentation/oslog) from Swift may fail. (68597591) **Workaround:** Consider importing `os.log` and similar services directly, or guarding the `OSLog` import with a `targetEnvironment` compiler directive.
 
 ##### Swift Packages
 

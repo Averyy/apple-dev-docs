@@ -22,7 +22,7 @@ struct Model3D<Content> where Content : View
 
 Use `Model3D` to embed a 3D model from a USD file or Reality file in your SwiftUI app.
 
-You can use methods on the [`ResolvedModel3D`](resolvedmodel3d.md) type as well as standard view modifiers to adjust the size of the model to fit your app’s interface. Here, the [`resizable(_:)`](resolvedmodel3d/resizable(_:).md) method scales the model to fit the current view. Then, the [`aspectRatio(_:contentMode:)`](https://developer.apple.com/documentation/SwiftUI/View/aspectRatio(_:contentMode:)-771ow) view modifier adjusts this resizing behavior to maintain the model’s original aspect ratio, rather than scaling the `x`,` y`-, and `z` axes independently to fit the robot to the full frame of the view.
+You can use methods on the [`ResolvedModel3D`](resolvedmodel3d.md) type as well as standard view modifiers to adjust the size of the model to fit your app’s interface. Here, the [`resizable(_:)`](resolvedmodel3d/resizable(_:).md) method scales the model to fit the current view. Then, the [`aspectRatio(_:contentMode:)`](https://developer.apple.com/documentation/swiftui/view/aspectratio(_:contentmode:)-771ow) view modifier adjusts this resizing behavior to maintain the model’s original aspect ratio, rather than scaling the `x`,` y`-, and `z` axes independently to fit the robot to the full frame of the view.
 
 ```swift
  Model3D(named: "Robot-Drummer") { model in
@@ -34,7 +34,7 @@ You can use methods on the [`ResolvedModel3D`](resolvedmodel3d.md) type as well 
  }
 ```
 
-If loading from a remote URL, this view uses the shared [`URLSession`](https://developer.apple.com/documentation/Foundation/URLSession) instance to load a model from the specified URL, and then display it. For example, you can display a model that’s stored on a server:
+If loading from a remote URL, this view uses the shared [`URLSession`](https://developer.apple.com/documentation/foundation/urlsession) instance to load a model from the specified URL, and then display it. For example, you can display a model that’s stored on a server:
 
 ```swift
  Model3D(url: URL(string: "https://example.com/robot.usdz")!)
@@ -55,7 +55,7 @@ You can specify a custom placeholder using [`init(url:content:placeholder:)`](mo
  .frame(width: 50, height: 50)
 ```
 
-For this example, [`Model3D`](model3d.md) shows a  [`ProgressView`](https://developer.apple.com/documentation/SwiftUI/ProgressView) first, and then the model scaled to fit in the specified frame:
+For this example, [`Model3D`](model3d.md) shows a  [`ProgressView`](https://developer.apple.com/documentation/swiftui/progressview) first, and then the model scaled to fit in the specified frame:
 
 > ❗ **Important**: You can’t apply [`ResolvedModel3D`](resolvedmodel3d.md)-specific modifiers, like [`resizable(_:)`](resolvedmodel3d/resizable(_:).md), directly to a `Model3D`. Instead, apply them to the `ResolvedModel3D` instance that your `content` closure gets when defining the view’s appearance.
 
@@ -80,9 +80,9 @@ To gain more control over the loading process, use the [`init(url:transaction:co
 - [init(named: String, bundle: Bundle?)](model3d/init(named:bundle:).md)
   Loads and displays a model by name, by searching through the specified `Foundation/Bundle`.
 - [init<Model, Placeholder>(named: String, bundle: Bundle?, content: (ResolvedModel3D) -> Model, placeholder: () -> Placeholder)](model3d/init(named:bundle:content:placeholder:).md)
-  Loads and displays a modifiable model by name, by searching through the specified [`Bundle`](https://developer.apple.com/documentation/Foundation/Bundle), using a custom placeholder until the model loads.
+  Loads and displays a modifiable model by name, by searching through the specified [`Bundle`](https://developer.apple.com/documentation/foundation/bundle), using a custom placeholder until the model loads.
 - [init(named: String, bundle: Bundle?, transaction: Transaction, content: (Model3DPhase) -> Content)](model3d/init(named:bundle:transaction:content:).md)
-  Loads and displays a modifiable model by name, by searching through the specified [`Bundle`](https://developer.apple.com/documentation/Foundation/Bundle), in phases.
+  Loads and displays a modifiable model by name, by searching through the specified [`Bundle`](https://developer.apple.com/documentation/foundation/bundle), in phases.
 - [init(url: URL)](model3d/init(url:).md)
   Loads and displays a model from the specified URL.
 - [init<Model, Placeholder>(url: URL, content: (ResolvedModel3D) -> Model, placeholder: () -> Placeholder)](model3d/init(url:content:placeholder:).md)
@@ -91,7 +91,7 @@ To gain more control over the loading process, use the [`init(url:transaction:co
   Loads and displays a modifiable model from the specified URL in phases.
 ### Accessing content
 - [init<Model, Placeholder>(named: String, bundle: Bundle?, content: (ResolvedModel3D) -> Model, placeholder: () -> Placeholder)](model3d/init(named:bundle:content:placeholder:).md)
-  Loads and displays a modifiable model by name, by searching through the specified [`Bundle`](https://developer.apple.com/documentation/Foundation/Bundle), using a custom placeholder until the model loads.
+  Loads and displays a modifiable model by name, by searching through the specified [`Bundle`](https://developer.apple.com/documentation/foundation/bundle), using a custom placeholder until the model loads.
 - [init<Model, Placeholder>(url: URL, content: (ResolvedModel3D) -> Model, placeholder: () -> Placeholder)](model3d/init(url:content:placeholder:).md)
   Loads and displays a modifiable model from the specified URL using a custom placeholder until the model loads.
 ### Initializers
@@ -107,7 +107,7 @@ To gain more control over the loading process, use the [`init(url:transaction:co
 ## Relationships
 
 ### Conforms To
-- [View](../SwiftUI/View.md)
+- [View](../swiftui/view.md)
 
 ## See Also
 

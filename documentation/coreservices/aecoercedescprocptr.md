@@ -38,10 +38,10 @@ After you are finished with a descriptor coercion callback function, and have re
 
 ## Parameters
 
-- `fromDesc`: A pointer to the descriptor that contains the data to coerce. See  .
-- `toType`: The desired descriptor type for the resulting descriptor. For a list of AppleScript’s predefined descriptor types, see  . See  .
+- `fromDesc`: A pointer to the descriptor that contains the data to coerce. See [`AEDesc`](aedesc.md).
+- `toType`: The desired descriptor type for the resulting descriptor. For a list of AppleScript’s predefined descriptor types, see [`Descriptor Type Constants`](apple_events/1542788-descriptor_type_constants.md). See [`DescType`](desctype.md).
 - `handlerRefcon`: A reference constant that is stored in the coercion dispatch table entry for the handler. The Apple Event Manager passes this value to the handler each time it calls it. The reference constant may have a value of 0.
-- `toDesc`: A pointer to a descriptor where your coercion routine must store the descriptor that contains the coerced data. See  .
+- `toDesc`: A pointer to a descriptor where your coercion routine must store the descriptor that contains the coerced data. See [`AEDesc`](aedesc.md).
 
 ## See Also
 

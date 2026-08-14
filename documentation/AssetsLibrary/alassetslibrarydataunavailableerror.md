@@ -18,7 +18,7 @@ var ALAssetsLibraryDataUnavailableError: Int { get }
 
 #### Discussion
 
-This error may be returned in the [`ALAssetsLibraryAccessFailureBlock`](alassetslibraryaccessfailureblock.md) for `ALAssetsLibrary/enumerateGroups(withTypes:using:failureBlock:)` and `ALAssetsLibrary/asset(for:resultBlock:failureBlock:)`; and in the completion blocks for `ALAssetsLibrary/writeImage(toSavedPhotosAlbum:orientation:completionBlock:)` and `ALAssetsLibrary/writeImage(toSavedPhotosAlbum:orientation:completionBlock:)`; as well as in the completion selector for [`UIImageWriteToSavedPhotosAlbum(_:_:_:_:)`](https://developer.apple.com/documentation/UIKit/UIImageWriteToSavedPhotosAlbum(_:_:_:_:)) and [`UISaveVideoAtPathToSavedPhotosAlbum(_:_:_:_:)`](https://developer.apple.com/documentation/UIKit/UISaveVideoAtPathToSavedPhotosAlbum(_:_:_:_:)).
+This error may be returned in the [`ALAssetsLibraryAccessFailureBlock`](alassetslibraryaccessfailureblock.md) for `ALAssetsLibrary/enumerateGroups(withTypes:using:failureBlock:)` and `ALAssetsLibrary/asset(for:resultBlock:failureBlock:)`; and in the completion blocks for `ALAssetsLibrary/writeImage(toSavedPhotosAlbum:orientation:completionBlock:)` and `ALAssetsLibrary/writeImage(toSavedPhotosAlbum:orientation:completionBlock:)`; as well as in the completion selector for [`UIImageWriteToSavedPhotosAlbum(_:_:_:_:)`](https://developer.apple.com/documentation/uikit/uiimagewritetosavedphotosalbum(_:_:_:_:)) and [`UISaveVideoAtPathToSavedPhotosAlbum(_:_:_:_:)`](https://developer.apple.com/documentation/uikit/uisavevideoatpathtosavedphotosalbum(_:_:_:_:)).
 
 ## See Also
 

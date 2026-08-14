@@ -15,8 +15,8 @@ class IODataQueueDispatchSource : IODispatchSource, IODataQueueDispatchSourceInt
 ## Topics
 
 ### Instance Methods
-- [- CanEnqueueData](../driverkit/iodataqueuedispatchsource/canenqueuedata-4tug8.md)
-- [- CanEnqueueData](../driverkit/iodataqueuedispatchsource/canenqueuedata-3yyz2.md)
+- [- CanEnqueueData](iodataqueuedispatchsource/3943320-canenqueuedata.md)
+- [- CanEnqueueData](iodataqueuedispatchsource/3969247-canenqueuedata.md)
 - [- Cancel_Impl](iodataqueuedispatchsource/3223201-cancel_impl.md)
 - [- CheckForWork_Impl](iodataqueuedispatchsource/3223202-checkforwork_impl.md)
 - [- CopyDataAvailableHandler](iodataqueuedispatchsource/3223203-copydataavailablehandler.md)
@@ -66,7 +66,7 @@ class IODataQueueDispatchSource : IODispatchSource, IODataQueueDispatchSourceInt
 - [+ DataAvailable_Invoke](iodataqueuedispatchsource/4519991-dataavailable_invoke.md)
 - [+ DataServiced_Invoke](iodataqueuedispatchsource/4519992-dataserviced_invoke.md)
 - [+ DataServiced_Invoke](iodataqueuedispatchsource/4519993-dataserviced_invoke.md)
-- [+ GetDataQueueEntryHeaderSize](../driverkit/iodataqueuedispatchsource/getdataqueueentryheadersize.md)
+- [+ GetDataQueueEntryHeaderSize](iodataqueuedispatchsource/3969248-getdataqueueentryheadersize.md)
 - [+ SetDataAvailableHandler_Invoke](iodataqueuedispatchsource/3223228-setdataavailablehandler_invoke.md)
 - [+ SetDataServicedHandler_Invoke](iodataqueuedispatchsource/3223231-setdataservicedhandler_invoke.md)
 

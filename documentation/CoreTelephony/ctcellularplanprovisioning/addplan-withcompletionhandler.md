@@ -22,7 +22,7 @@ Once your app calls this method, an iOS wizard guides the user through the proce
 
 ##### Installing an Esim in the Background
 
-The user may send your app to the background prior to completing eSIM installation. To ensure your app has an opportunity to execute the completion handler and get the result of the installation, use [`beginBackgroundTask(expirationHandler:)`](https://developer.apple.com/documentation/UIKit/UIApplication/beginBackgroundTask(expirationHandler:)) to perform the eSIM installation as a background task.
+The user may send your app to the background prior to completing eSIM installation. To ensure your app has an opportunity to execute the completion handler and get the result of the installation, use [`beginBackgroundTask(expirationHandler:)`](https://developer.apple.com/documentation/uikit/uiapplication/beginbackgroundtask(expirationhandler:)) to perform the eSIM installation as a background task.
 
 ## Parameters
 

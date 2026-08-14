@@ -25,7 +25,7 @@ func isDeviceCertified(for performanceTier: NSDeviceCertification) -> Bool
 
 ## Parameters
 
-- `performanceTier`: The desired system performance tier. [`iPhonePerformanceGaming`](https://developer.apple.com/documentation/Metal/NSDeviceCertification/iPhonePerformanceGaming) is the only performance tier.
+- `performanceTier`: The desired system performance tier. [`iPhonePerformanceGaming`](https://developer.apple.com/documentation/metal/nsdevicecertification/iphoneperformancegaming) is the only performance tier.
 
 ## See Also
 

@@ -23,7 +23,7 @@ func connectMIDI(_ sourceNode: AVAudioNode, to destinationNodes: [AVAudioNode], 
 
 Use this to establish a MIDI connection between a source node and multiple destination nodes that have MIDI input capability. This method disconnects any existing MIDI connection that involves the destination node. When making the MIDI connection, this method overwrites the source node’s event list block.
 
-The source node can only be an [`AVAudioUnit`](avaudiounit.md) node with the type [`kAudioUnitType_MIDIProcessor`](https://developer.apple.com/documentation/AudioToolbox/kAudioUnitType_MIDIProcessor). The destination node types can be [`kAudioUnitType_MusicDevice`](https://developer.apple.com/documentation/AudioToolbox/kAudioUnitType_MusicDevice), [`kAudioUnitType_MusicEffect`](https://developer.apple.com/documentation/AudioToolbox/kAudioUnitType_MusicEffect), or [`kAudioUnitType_MIDIProcessor`](https://developer.apple.com/documentation/AudioToolbox/kAudioUnitType_MIDIProcessor).
+The source node can only be an [`AVAudioUnit`](avaudiounit.md) node with the type [`kAudioUnitType_MIDIProcessor`](https://developer.apple.com/documentation/audiotoolbox/kaudiounittype_midiprocessor). The destination node types can be [`kAudioUnitType_MusicDevice`](https://developer.apple.com/documentation/audiotoolbox/kaudiounittype_musicdevice), [`kAudioUnitType_MusicEffect`](https://developer.apple.com/documentation/audiotoolbox/kaudiounittype_musiceffect), or [`kAudioUnitType_MIDIProcessor`](https://developer.apple.com/documentation/audiotoolbox/kaudiounittype_midiprocessor).
 
 MIDI connections made with this method specify a single destination connection (one-to-one) or  multiple connections (one-to-many), but never many-to-one.
 

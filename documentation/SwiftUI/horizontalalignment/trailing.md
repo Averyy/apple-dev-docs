@@ -24,7 +24,7 @@ static let trailing: HorizontalAlignment
 
 Use this guide to align the trailing edges of views. For a device that uses a left-to-right language, the trailing edge is on the right:
 
-![A box that contains the word, Trailing. Vertical](https://docs-assets.developer.apple.com/published/3d36e49a665b5b5f456af2746870ae1c/HorizontalAlignment-trailing-1-iOS%402x.png)
+![A box that contains the word, Trailing. Vertical](/images/com.apple.SwiftUI/HorizontalAlignment-trailing-1-iOS@2x.png)
 
 The following code generates the image above using a [`VStack`](vstack.md):
 

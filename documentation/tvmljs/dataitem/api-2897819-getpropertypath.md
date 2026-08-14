@@ -22,7 +22,7 @@ The data item object contained in the path.
 
 ## Parameters
 
-- `path`: The dot-separated sequence of properties from the receiver. The path can contain array indexers. For example,   refers to the   property stored in index location 0 in the   array.
+- `path`: The dot-separated sequence of properties from the receiver. The path can contain array indexers. For example, `items[0].title` refers to the `title` property stored in index location 0 in the `items` array.
 
 ## See Also
 

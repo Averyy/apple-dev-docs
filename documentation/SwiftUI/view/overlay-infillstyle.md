@@ -37,7 +37,7 @@ Rectangle()
 
 The example above uses the [`inset(by:)`](insettableshape/inset(by:).md) method to slightly reduce the size of the overlaid rectangle, and the [`stroke(lineWidth:)`](shape/stroke(linewidth:).md) method to fill only the shape’s outline. This creates an inset border:
 
-![A screenshot of a rectangle with a teal border that’s](https://docs-assets.developer.apple.com/published/e5c5d90e427c84a03c43bf19ee2d2b06/View-overlay-7%402x.png)
+![A screenshot of a rectangle with a teal border that’s](/images/com.apple.SwiftUI/View-overlay-7@2x.png)
 
 This modifier is a convenience method for layering a shape over a view. To handle the more general case of overlaying a [`View`](view.md) — or a stack of views — with control over the position, use [`overlay(alignment:content:)`](view/overlay(alignment:content:).md) instead. To cover a view with a [`ShapeStyle`](shapestyle.md), use [`overlay(_:ignoresSafeAreaEdges:)`](view/overlay(_:ignoressafeareaedges:).md).
 

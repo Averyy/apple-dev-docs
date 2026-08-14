@@ -18,7 +18,7 @@ case circularSmall
 
 The following figure shows the size and location of the circular small complication.
 
-![Diagram showing the size and position of a circular small complication.](https://docs-assets.developer.apple.com/published/6a8c5a0207433667fb12d14e0a5ffa6b/media-2933721%402x.png)
+![Diagram showing the size and position of a circular small complication.](/images/com.apple.clockkit/media-2933721@2x.png)
 
 
 ---

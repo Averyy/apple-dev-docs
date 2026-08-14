@@ -20,7 +20,7 @@ struct UIHostingConfiguration<Content, Background> where Content : View, Backgro
 
 #### Overview
 
-Use a value of this type, which conforms to the [`UIContentConfiguration`](https://developer.apple.com/documentation/UIKit/UIContentConfiguration-9eib5) protocol, with a [`UICollectionViewCell`](https://developer.apple.com/documentation/UIKit/UICollectionViewCell) or [`UITableViewCell`](https://developer.apple.com/documentation/UIKit/UITableViewCell) to host a hierarchy of SwiftUI views in a collection or table view, respectively. For example, the following shows a stack with an image and text inside the cell:
+Use a value of this type, which conforms to the [`UIContentConfiguration`](https://developer.apple.com/documentation/uikit/uicontentconfiguration-9eib5) protocol, with a [`UICollectionViewCell`](https://developer.apple.com/documentation/uikit/uicollectionviewcell) or [`UITableViewCell`](https://developer.apple.com/documentation/uikit/uitableviewcell) to host a hierarchy of SwiftUI views in a collection or table view, respectively. For example, the following shows a stack with an image and text inside the cell:
 
 ```swift
 myCell.contentConfiguration = UIHostingConfiguration {
@@ -87,11 +87,11 @@ cell.contentConfiguration = UIHostingConfiguration {
 ## Relationships
 
 ### Conforms To
-- [UIContentConfiguration](../UIKit/UIContentConfiguration-9eib5.md)
+- [UIContentConfiguration](../uikit/uicontentconfiguration-9eib5.md)
 
 ## See Also
 
-- [Using SwiftUI with UIKit](../UIKit/using-swiftui-with-uikit.md)
+- [Using SwiftUI with UIKit](../uikit/using-swiftui-with-uikit.md)
   Learn how to incorporate SwiftUI views into a UIKit app.
 - [Unifying your app’s animations](unifying-your-app-s-animations.md)
   Create a consistent UI animation experience across SwiftUI, UIKit, and AppKit.

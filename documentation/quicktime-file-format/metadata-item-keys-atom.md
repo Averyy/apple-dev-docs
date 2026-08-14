@@ -17,7 +17,7 @@ Note that:
 
 The following figure shows a typical metadata item keys atom.
 
-![A diagram that shows a box, with the captions “Item keys atom” and “Type = ‘keys’” inside the top of the box. Just below the captions is a box, inside the previous box, that extends almost the width of the containing box, and has the caption “Entry count = 4”. Below that box are three columns of boxes, each with four rows. Each row of boxes is captioned “size”, “namespace”, and “value” from right to left. Outside the enclosing box there is a marker line that spans the four rows of boxes, with the caption “Key definitions.”](https://docs-assets.developer.apple.com/published/4e8940f990ae4a64cddd5b758a81e4a7/metadata-item-keys-atom%402x.png)
+![A diagram that shows a box, with the captions “Item keys atom” and “Type = ‘keys’” inside the top of the box. Just below the captions is a box, inside the previous box, that extends almost the width of the containing box, and has the caption “Entry count = 4”. Below that box are three columns of boxes, each with four rows. Each row of boxes is captioned “size”, “namespace”, and “value” from right to left. Outside the enclosing box there is a marker line that spans the four rows of boxes, with the caption “Key definitions.”](/images/com.apple.qtff/metadata-item-keys-atom@2x.png)
 
 The following figure shows an example of a metadata item keys atom consisting of three keys: two from one key namespace and a third from another key namespace.
 

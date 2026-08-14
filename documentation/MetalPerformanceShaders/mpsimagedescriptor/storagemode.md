@@ -21,7 +21,7 @@ var storageMode: MTLStorageMode { get set }
 
 #### Discussion
 
-The default value is [`MTLStorageMode.shared`](https://developer.apple.com/documentation/Metal/MTLStorageMode/shared).
+The default value is [`MTLStorageMode.shared`](https://developer.apple.com/documentation/metal/mtlstoragemode/shared).
 
 ## See Also
 

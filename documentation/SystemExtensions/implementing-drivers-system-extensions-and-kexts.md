@@ -12,7 +12,7 @@ Create drivers, system extensions, and kernel extensions for specific low-level 
 - A system extension implements features that require kernel-level cooperation, such as custom security and network behaviors.
 - A kernel extension (kext) supports any low-level services that cannot be implemented using a dext or system extension.
 
-![An illustration of the relationship between drivers, system extensions, kernel extensions, and the kernel. Kernel extensions run inside the kernel. Drivers and system extensions run in user space and communicate with the kernel for critical needs.](https://docs-assets.developer.apple.com/published/ece66b36e6607d450f5b40fcc883f3f3/media-3618408%402x.png)
+![An illustration of the relationship between drivers, system extensions, kernel extensions, and the kernel. Kernel extensions run inside the kernel. Drivers and system extensions run in user space and communicate with the kernel for critical needs.](/images/com.apple.systemextensions/media-3618408@2x.png)
 
 Use the DriverKit SDK and [`System Extensions`](SystemExtensions.md) framework to implement low-level services whenever possible. Drivers and system extensions run in user space, instead of inside the kernel’s process space. Running in user space improves system stability and makes it easier to develop, debug, and install your code.
 
@@ -34,7 +34,7 @@ Apple provides drivers for all standards-based hardware protocols that Mac compu
 
 > ❗ **Important**:  In macOS 11 and later, the kernel doesn’t load a kext if an equivalent DriverKit solution exists. You may continue to use kexts in macOS 10.15 and earlier.
 
-For information about how to create and install custom drivers, see [`Creating a Driver Using the DriverKit SDK`](https://developer.apple.com/documentation/DriverKit/creating-a-driver-using-the-driverkit-sdk).
+For information about how to create and install custom drivers, see [`Creating a Driver Using the DriverKit SDK`](https://developer.apple.com/documentation/driverkit/creating-a-driver-using-the-driverkit-sdk).
 
 ##### Support Custom Hardware Without Writing Driver Code
 
@@ -49,24 +49,24 @@ Create a codeless dext when the system provides DriverKit support for your hardw
 
 In the few cases where your driver requires a kernel extension, use a codeless kext to match your hardware to the existing system driver. Unlike a DriverKit extension, a codeless kext doesn’t have an executable file. Instead, its `Info.plist` file provides all the information that the system needs to match your hardware to a system driver.
 
-For information about how to create and install a dext, see [`Creating a Driver Using the DriverKit SDK`](https://developer.apple.com/documentation/DriverKit/creating-a-driver-using-the-driverkit-sdk).
+For information about how to create and install a dext, see [`Creating a Driver Using the DriverKit SDK`](https://developer.apple.com/documentation/driverkit/creating-a-driver-using-the-driverkit-sdk).
 
 ##### Build Kernel Extensions with Well Known Restrictions
 
 Kexts run inside the kernel and must support the same architecture and restrictions as other kernel code.
 
-- Kexts on Apple silicon must support the `arm64e` architecture. The `arm64e` architecture includes pointer authentication codes (PACs) to detect and guard against malicious or accidental modifications to pointers in memory. The compiler transparently adds and removes PACs to your code at compile time, but the addition of PACs may require you to adjust how you handle pointers in your kexts. For information about supporting PACs, see [`Preparing your app to work with pointer authentication`](https://developer.apple.com/documentation/Security/preparing-your-app-to-work-with-pointer-authentication).
+- Kexts on Apple silicon must support the `arm64e` architecture. The `arm64e` architecture includes pointer authentication codes (PACs) to detect and guard against malicious or accidental modifications to pointers in memory. The compiler transparently adds and removes PACs to your code at compile time, but the addition of PACs may require you to adjust how you handle pointers in your kexts. For information about supporting PACs, see [`Preparing your app to work with pointer authentication`](https://developer.apple.com/documentation/security/preparing-your-app-to-work-with-pointer-authentication).
 - Kexts run under Kernel Integrity Protection (KIP). After the system initializes the kernel and kexts, KIP locks down the kernel memory pages to prevent modifications to kernel and driver code. For more information about KIP, see [`Kernel Integrity Protection`](https://developer.apple.comhttps://support.apple.com/guide/security/kernel-integrity-protection-secb1caeb4bc/1/web/1).
 
 ##### Install Kernel Extensions As the Final Step in an Installer Package
 
 If your custom installer package includes kexts, install them as the final installation step. The system manages kexts differently in macOS 11 and later, requiring a reboot to finish the installation process. As part of the reboot process, users must also explicitly change the security settings of their computer to allow the kext installation.
 
-For information about the kext installation process, see [`Installing a custom kernel extension`](https://developer.apple.com/documentation/Apple-Silicon/installing-a-custom-kernel-extension).
+For information about the kext installation process, see [`Installing a custom kernel extension`](https://developer.apple.com/documentation/apple-silicon/installing-a-custom-kernel-extension).
 
 ## See Also
 
-- [System Extension Entitlement](../BundleResources/Entitlements/com.apple.developer.system-extension.install.md)
+- [System Extension Entitlement](../bundleresources/entitlements/com.apple.developer.system-extension.install.md)
   A Boolean value that indicates whether your app has permission to activate or deactivate system extensions.
 
 

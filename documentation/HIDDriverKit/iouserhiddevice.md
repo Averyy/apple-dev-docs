@@ -28,9 +28,9 @@ When you subclass `IOUserHIDDevice`, update the `IOKitPersonalities` key of your
 | Key | Discussion |
 | --- | --- |
 | `IOClass` | The value `AppleUserHIDDevice`. |
-| `IOProviderClass` | The provider class information. For a USB-based HID device, specify [`IOUSBHostInterface`](https://developer.apple.com/documentation/USBDriverKit/IOUSBHostInterface). |
+| `IOProviderClass` | The provider class information. For a USB-based HID device, specify [`IOUSBHostInterface`](https://developer.apple.com/documentation/usbdriverkit/iousbhostinterface). |
 | `IOUserClass` | The name of your custom subclass. |
-| [`CFBundleIdentifier`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/CFBundleIdentifier) | The bundle identifier of your driver. |
+| [`CFBundleIdentifier`](https://developer.apple.com/documentation/bundleresources/information-property-list/cfbundleidentifier) | The bundle identifier of your driver. |
 
 You may add other keys to assist with the matching process. For example, you might include the `VendorID`, `ProductID`, `PrimaryUsagePage`, and `PrimaryUsage` keys to match against specific USB devices and HID usage types. The USB specification defines which keys to include when matching your driver to a USB device. For information about the specific key combinations, see *Universal Serial Bus Common Class Specification* at [`https://www.usb.org`](https://developer.apple.comhttps://www.usb.org).
 
@@ -57,7 +57,7 @@ You may add other keys to assist with the matching process. For example, you mig
 
 ## See Also
 
-- [com.apple.developer.driverkit.family.hid.device](../BundleResources/Entitlements/com.apple.developer.driverkit.family.hid.device.md)
+- [com.apple.developer.driverkit.family.hid.device](../bundleresources/entitlements/com.apple.developer.driverkit.family.hid.device.md)
   A Boolean value that indicates whether the driver provides a HID-related service to the system.
 - [IOHIDInterface](iohidinterface.md)
   A provider object for a HID device’s interface.

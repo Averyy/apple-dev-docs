@@ -53,7 +53,7 @@ struct UtilityApp: App {
 
 An app that only shows in the menu bar will be automatically terminated if the user removes the extra from the menu bar.
 
-For apps that only show in the menu bar, a common behavior is for the app to not display its icon in either the Dock or the application switcher. To enable this behavior, set the [`LSUIElement`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/LSUIElement) flag in your app’s [`Information Property List`](https://developer.apple.com/documentation/BundleResources/Information-Property-List) file to `true`.
+For apps that only show in the menu bar, a common behavior is for the app to not display its icon in either the Dock or the application switcher. To enable this behavior, set the [`LSUIElement`](https://developer.apple.com/documentation/bundleresources/information-property-list/lsuielement) flag in your app’s [`Information Property List`](https://developer.apple.com/documentation/bundleresources/information-property-list) file to `true`.
 
 For more complex or data rich menu bar extras, you can use the [`window`](menubarextrastyle/window.md) style, which displays a popover-like window from the menu bar icon that contains standard controls. You define the layout and contents of those controls with the content that you provide:
 

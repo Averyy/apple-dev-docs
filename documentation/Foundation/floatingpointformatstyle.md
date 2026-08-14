@@ -22,15 +22,15 @@ struct FloatingPointFormatStyle<Value> where Value : BinaryFloatingPoint
 
 #### Overview
 
-Instances of [`FloatingPointFormatStyle`](floatingpointformatstyle.md) create localized, human-readable text from [`BinaryFloatingPoint`](https://developer.apple.com/documentation/Swift/BinaryFloatingPoint) numbers and parse string representations of numbers into instances of [`BinaryFloatingPoint`](https://developer.apple.com/documentation/Swift/BinaryFloatingPoint) types. All of the Swift standard library’s floating-point types, such as [`Double`](https://developer.apple.com/documentation/Swift/Double), [`Float`](https://developer.apple.com/documentation/Swift/Float), and [`Float80`](https://developer.apple.com/documentation/Swift/Float80), conform to [`BinaryFloatingPoint`](https://developer.apple.com/documentation/Swift/BinaryFloatingPoint), and therefore work with this format style.
+Instances of [`FloatingPointFormatStyle`](floatingpointformatstyle.md) create localized, human-readable text from [`BinaryFloatingPoint`](https://developer.apple.com/documentation/swift/binaryfloatingpoint) numbers and parse string representations of numbers into instances of [`BinaryFloatingPoint`](https://developer.apple.com/documentation/swift/binaryfloatingpoint) types. All of the Swift standard library’s floating-point types, such as [`Double`](https://developer.apple.com/documentation/swift/double), [`Float`](https://developer.apple.com/documentation/swift/float), and [`Float80`](https://developer.apple.com/documentation/swift/float80), conform to [`BinaryFloatingPoint`](https://developer.apple.com/documentation/swift/binaryfloatingpoint), and therefore work with this format style.
 
 [`FloatingPointFormatStyle`](floatingpointformatstyle.md) includes two nested types, [`FloatingPointFormatStyle.Percent`](floatingpointformatstyle/percent.md) and [`FloatingPointFormatStyle.Currency`](floatingpointformatstyle/currency.md), for working with percentages and currencies, respectively. Each format style includes a configuration that determines how it represents numeric values, for things like grouping, displaying signs, and variant presentations like scientific notation. [`FloatingPointFormatStyle`](floatingpointformatstyle.md) and [`FloatingPointFormatStyle.Percent`](floatingpointformatstyle/percent.md) include a [`NumberFormatStyleConfiguration`](numberformatstyleconfiguration.md), and [`FloatingPointFormatStyle.Currency`](floatingpointformatstyle/currency.md) includes a [`CurrencyFormatStyleConfiguration`](currencyformatstyleconfiguration.md). You can customize numeric formatting for a style by adjusting its backing configuration. The system automatically caches unique configurations of a format style to enhance performance.
 
-> **Note**:  Foundation provides another format style type, [`IntegerFormatStyle`](integerformatstyle.md), for working with numbers that conform to [`BinaryInteger`](https://developer.apple.com/documentation/Swift/BinaryInteger). For Foundation’s [`Decimal`](decimal.md) type, use [`Decimal.FormatStyle`](decimal/formatstyle.md).
+> **Note**:  Foundation provides another format style type, [`IntegerFormatStyle`](integerformatstyle.md), for working with numbers that conform to [`BinaryInteger`](https://developer.apple.com/documentation/swift/binaryinteger). For Foundation’s [`Decimal`](decimal.md) type, use [`Decimal.FormatStyle`](decimal/formatstyle.md).
 
 ##### Formatting Floating Point Values
 
-Use the [`formatted()`](https://developer.apple.com/documentation/Swift/BinaryFloatingPoint/formatted()) method to create a string representation of a floating-point value using the default [`FloatingPointFormatStyle`](floatingpointformatstyle.md) configuration.
+Use the [`formatted()`](https://developer.apple.com/documentation/swift/binaryfloatingpoint/formatted()) method to create a string representation of a floating-point value using the default [`FloatingPointFormatStyle`](floatingpointformatstyle.md) configuration.
 
 ```swift
 let formattedDefault = 12345.67.formatted()
@@ -38,7 +38,7 @@ let formattedDefault = 12345.67.formatted()
 // Other locales may use different separator and grouping behavior.
 ```
 
-You can specify a format style by providing an argument to the [`formatted(_:)`](https://developer.apple.com/documentation/Swift/BinaryFloatingPoint/formatted(_:)-4ksqj) method. The following example shows the number `0.1` represented in each of the available styles, in the `en_US` locale:
+You can specify a format style by providing an argument to the [`formatted(_:)`](https://developer.apple.com/documentation/swift/binaryfloatingpoint/formatted(_:)-4ksqj) method. The following example shows the number `0.1` represented in each of the available styles, in the `en_US` locale:
 
 ```swift
 let number = 0.1
@@ -71,7 +71,7 @@ let customFormatting = exampleNumber.formatted(
 
 ##### Creating a Floating Point Format Style Instance
 
-The previous examples use static factory methods like [`number`](formatstyle/number-8c8rj.md) to create format styles within the call to the [`formatted(_:)`](https://developer.apple.com/documentation/Swift/BinaryFloatingPoint/formatted(_:)-4ksqj) method. You can also create a [`FloatingPointFormatStyle`](floatingpointformatstyle.md) instance and use it to repeatedly format different values, with the [`format(_:)`](floatingpointformatstyle/format(_:).md) method:
+The previous examples use static factory methods like [`number`](formatstyle/number-8c8rj.md) to create format styles within the call to the [`formatted(_:)`](https://developer.apple.com/documentation/swift/binaryfloatingpoint/formatted(_:)-4ksqj) method. You can also create a [`FloatingPointFormatStyle`](floatingpointformatstyle.md) instance and use it to repeatedly format different values, with the [`format(_:)`](floatingpointformatstyle/format(_:).md) method:
 
 ```swift
 let percentFormatStyle = FloatingPointFormatStyle<Double>.Percent()
@@ -181,18 +181,18 @@ print("\(localizedPercentage!)") // 0.551
 ## Relationships
 
 ### Conforms To
-- [Copyable](../Swift/Copyable.md)
-- [CustomConsumingRegexComponent](../Swift/CustomConsumingRegexComponent.md)
-- [Decodable](../Swift/Decodable.md)
-- [Encodable](../Swift/Encodable.md)
-- [Equatable](../Swift/Equatable.md)
-- [Escapable](../Swift/Escapable.md)
+- [Copyable](../swift/copyable.md)
+- [CustomConsumingRegexComponent](../swift/customconsumingregexcomponent.md)
+- [Decodable](../swift/decodable.md)
+- [Encodable](../swift/encodable.md)
+- [Equatable](../swift/equatable.md)
+- [Escapable](../swift/escapable.md)
 - [FormatStyle](formatstyle.md)
-- [Hashable](../Swift/Hashable.md)
+- [Hashable](../swift/hashable.md)
 - [ParseableFormatStyle](parseableformatstyle.md)
-- [RegexComponent](../Swift/RegexComponent.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [RegexComponent](../swift/regexcomponent.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

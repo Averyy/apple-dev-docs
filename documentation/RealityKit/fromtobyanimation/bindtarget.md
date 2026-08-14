@@ -21,7 +21,7 @@ var bindTarget: BindTarget { get set }
 
 #### Discussion
 
-The property name is a key path. For more information on key paths, see [`Key-Path Expressions`](https://developer.apple.com/documentation/Swift/key-path-expressions).
+The property name is a key path. For more information on key paths, see [`Key-Path Expressions`](https://developer.apple.com/documentation/swift/key-path-expressions).
 
 ## See Also
 

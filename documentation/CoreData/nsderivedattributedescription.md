@@ -32,8 +32,8 @@ Derived attributes support the following expressions:
 | **Expression** | **Description** | **Example** |
 | --- | --- | --- |
 | to-one keypath | A single value to replicate. | `name` or `author.name` |
-| to-one keypath with a function | The result of calling a function on a single value. ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) Supported functions include `canonical:`, `uppercase:`, and `lowercase:`. ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) The `canonical:` function returns a case- and diacritic-insensitive String value. | `canonical:(name)` |
-| to-many keypath with a function | The result of calling an aggregate function on a set of values. ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) Supported functions include `@count` and `@sum`. | `friends.@count` |
+| to-one keypath with a function | The result of calling a function on a single value. ![None](/images/com.apple.coredata/spacer.png) Supported functions include `canonical:`, `uppercase:`, and `lowercase:`. ![None](/images/com.apple.coredata/spacer.png) The `canonical:` function returns a case- and diacritic-insensitive String value. | `canonical:(name)` |
+| to-many keypath with a function | The result of calling an aggregate function on a set of values. ![None](/images/com.apple.coredata/spacer.png) Supported functions include `@count` and `@sum`. | `friends.@count` |
 | time | The current time. | `now()` |
 
 > ❗ **Important**:  Data recomputes derived attributes when you save a context. A managed object’s property does not reflect unsaved changes until you save the context and refresh the object.
@@ -49,14 +49,14 @@ Derived attributes support the following expressions:
 ### Inherits From
 - [NSAttributeDescription](nsattributedescription.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCoding](../Foundation/NSCoding.md)
-- [NSCopying](../Foundation/NSCopying.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCoding](../foundation/nscoding.md)
+- [NSCopying](../foundation/nscopying.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

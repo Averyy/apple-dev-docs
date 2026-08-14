@@ -39,7 +39,7 @@ struct SimpleGauge: View {
 }
 ```
 
-![A screenshot showing a circular gauge describing heart rate in beats](https://docs-assets.developer.apple.com/published/e39aab1677b1eba8885745e659503b54/SwiftUI-Gauge-LabelCurrentValueCircular%402x.png)
+![A screenshot showing a circular gauge describing heart rate in beats](/images/com.apple.SwiftUI/SwiftUI-Gauge-LabelCurrentValueCircular@2x.png)
 
 ## Parameters
 

@@ -19,7 +19,7 @@ class let touchBarTextLeftAlignTemplateName: String
 
 #### Discussion
 
-![Template image for align text to the left](https://docs-assets.developer.apple.com/published/42fe3f9bad4d9ecc0b787c284617cbc4/media-2825133%402x.png)
+![Template image for align text to the left](/images/com.apple.appkit/media-2825133@2x.png)
 
 Touch Bar template images are exclusively for use in [`NSTouchBarItem`](nstouchbaritem.md) objects and not in onscreen windows.
 

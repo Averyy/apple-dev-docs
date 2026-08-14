@@ -27,7 +27,7 @@ Text("Hello, World!")
 
 Modifiers return a view that wraps the original view and replaces it in the view hierarchy. You can think of the two lines in the example above as resolving to a single view that displays red text.
 
-![A screenshot of a rendered text view showing the text Hello World in a foreground color.](https://docs-assets.developer.apple.com/published/9b47d0002300cc22e3d3376a2ce4c323/Configuring-Views-1%402x.png)
+![A screenshot of a rendered text view showing the text Hello World in a foreground color.](/images/com.apple.SwiftUI/Configuring-Views-1@2x.png)
 
 While the code above follows the rules of Swift, the code’s structure might be unfamiliar for developers new to SwiftUI. SwiftUI uses a declarative approach, where you declare and configure a view at the point in your code that corresponds to the view’s position in the view hierarchy. For more information, see [`Declaring a custom view`](declaring-a-custom-view.md).
 
@@ -43,7 +43,7 @@ Text("Title")
 
 The order in which you apply modifiers matters. For example, the border that results from the code above outlines the full width of the frame.
 
-![A screenshot of a text view displaying the string Title, outlined by a gray rectangle that’s wider than the string it encloses, leaving empty space inside the rectangle on either side of the string. A caption reads, Apply the frame first.](https://docs-assets.developer.apple.com/published/33cb22ce7e7806dc0d45f7b8baf075ed/Configuring-Views-2%402x.png)
+![A screenshot of a text view displaying the string Title, outlined by a gray rectangle that’s wider than the string it encloses, leaving empty space inside the rectangle on either side of the string. A caption reads, Apply the frame first.](/images/com.apple.SwiftUI/Configuring-Views-2@2x.png)
 
 By specifying the frame modifier after the border modifier, SwiftUI applies the border only to the text view, which never takes more space than it needs to render its contents.
 
@@ -55,7 +55,7 @@ Text("Title")
 
 Wrapping that view in an invisible one with a fixed 100 point width affects the layout of the composite view, but has no effect on the border.
 
-![A screenshot of a text view displaying the string Title, outlined by a gray rectangle that closely surrounds the text. A caption reads, Apply the border first.](https://docs-assets.developer.apple.com/published/21357a93e1c663799824e2fb1b471806/Configuring-Views-3%402x.png)
+![A screenshot of a text view displaying the string Title, outlined by a gray rectangle that closely surrounds the text. A caption reads, Apply the border first.](/images/com.apple.SwiftUI/Configuring-Views-3@2x.png)
 
 ##### Configure Child Views
 
@@ -73,7 +73,7 @@ VStack {
 .font(.body) // Set a default font for text in the stack.
 ```
 
-![A screenshot of a vertical stack of text views. The first appears in a larger, title font, and reads Title. The others appear in a smaller, body font and read First body line and Second body line, respectively.](https://docs-assets.developer.apple.com/published/b14a505826003da068329bc3df8c18a1/Configuring-Views-4%402x.png)
+![A screenshot of a vertical stack of text views. The first appears in a larger, title font, and reads Title. The others appear in a smaller, body font and read First body line and Second body line, respectively.](/images/com.apple.SwiftUI/Configuring-Views-4@2x.png)
 
 ##### Use View Specific Modifiers
 

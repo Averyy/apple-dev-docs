@@ -21,7 +21,7 @@ enum MTLIOCompressionMethod
 
 #### Overview
 
-For more information on the individual codecs, see the [`Algorithm`](https://developer.apple.com/documentation/Compression/Algorithm) enumeration in the [`Compression`](https://developer.apple.com/documentation/Compression) framework.
+For more information on the individual codecs, see the [`Algorithm`](https://developer.apple.com/documentation/compression/algorithm) enumeration in the [`Compression`](https://developer.apple.com/documentation/compression) framework.
 
 ## Topics
 
@@ -42,12 +42,12 @@ For more information on the individual codecs, see the [`Algorithm`](https://dev
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../Swift/BitwiseCopyable.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [RawRepresentable](../Swift/RawRepresentable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [BitwiseCopyable](../swift/bitwisecopyable.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [RawRepresentable](../swift/rawrepresentable.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

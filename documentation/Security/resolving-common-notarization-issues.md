@@ -46,7 +46,7 @@ The binary is not signed with a valid Developer ID certificate.
 
 Be sure to use the correct Developer ID certificate for the given target. When code signing items like Mach-O files, disk images, bundles, apps, command line tools, photos, and so on, sign with a Developer ID Application certificate. Sign installer packages with a Developer ID Installer certificate. Although distributing kernel extensions (kexts) is discouraged, you can use a [`Developer ID Application certificate`](https://developer.apple.comhttps://developer.apple.com/contact/kext) that has the kext capability to do so.
 
-To learn about managing your signing certificates in Xcode, see [`Synchronizing code signing identities with your developer account`](https://developer.apple.com/documentation/Xcode/sharing-your-teams-signing-certificates).
+To learn about managing your signing certificates in Xcode, see [`Synchronizing code signing identities with your developer account`](https://developer.apple.com/documentation/xcode/sharing-your-teams-signing-certificates).
 
 Additionally, you can use the `spctl` utility to determine if the software to be notarized will run with the system policies currently in effect:
 
@@ -100,7 +100,7 @@ The executable requests the com.apple.security.get-task-allow entitlement.
 
 To avoid receiving this error message, archive (as of Xcode 10.2) or export your app directly from Xcode, or set the `CODE_SIGN_INJECT_BASE_ENTITLEMENTS` build setting to `NO` before building your app for distribution. But only change the build setting when you’re done debugging and ready to distribute, because doing so makes it impossible to debug the binary on a system that uses System Integrity Protection.
 
-> **Note**:  To enable debugging a plug-in in the context of a host executable, the host can include the `com.apple.security.get-task-allow` entitlement if it also includes the [`Disable Library Validation Entitlement`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.security.cs.disable-library-validation). Don’t disable library validation for executables that don’t host plug-ins because library validation protects them from loading untrusted code.
+> **Note**:  To enable debugging a plug-in in the context of a host executable, the host can include the `com.apple.security.get-task-allow` entitlement if it also includes the [`Disable Library Validation Entitlement`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.security.cs.disable-library-validation). Don’t disable library validation for executables that don’t host plug-ins because library validation protects them from loading untrusted code.
 
 ##### Use the Macos 109 Sdk or Later
 
@@ -173,15 +173,15 @@ The signature could not be validated because AMFI could not load its entitlement
 
 You can only notarize macOS app targets in Xcode. You can’t use Xcode to notarize an Aggregate or Build System target, even if that target ultimately produces a Mac app. For archives of unsupported target types, the Archives organizer reports a Generic Xcode Archive:
 
-![A screenshot of the Xcode archive browser window containing one archive, called Overnight Text Editor. The details pane shows that the archive has the type Generic Xcode Archive.](https://docs-assets.developer.apple.com/published/30dde1461a813722bb54000c3b1cec6c/media-3859182%402x.png)
+![A screenshot of the Xcode archive browser window containing one archive, called Overnight Text Editor. The details pane shows that the archive has the type Generic Xcode Archive.](/images/com.apple.security/media-3859182@2x.png)
 
 Even for a macOS target, the archive might be a Generic Xcode Archive if the app has dependencies with the Skip Install build setting set to `No`. This setting causes the build system to place the dependency in its final install path within the `xcarchive` file, changing what would otherwise be a macOS App Archive into a Generic Xcode Archive. The following screenshot shows the contents of an archive that has two folders inside its Products folder. The presence of the `TextIsAwesome.framework` bundle indicates that the framework target has Skip Install set to `No`.
 
-![A screenshot of a Finder window showing the contents of teh Overnight Text Editor archive bundle. The Products folder contains both an Applications folder with the app executable, and a Library folder with the TextIsAwesome framework. ](https://docs-assets.developer.apple.com/published/1d1a414e56bb1e5809857fe9b2646554/media-3859183%402x.png)
+![A screenshot of a Finder window showing the contents of teh Overnight Text Editor archive bundle. The Products folder contains both an Applications folder with the app executable, and a Library folder with the TextIsAwesome framework. ](/images/com.apple.security/media-3859183@2x.png)
 
 To ensure that archiving your macOS app target produces a macOS App Archive, set Skip Install to `Yes` for all of your app’s dependencies. For example, you can do this for the framework by editing the target’s build settings:
 
-![A screenshot of Xcode showing the build settings for the TextIsAwesome target of the Overnight Text Editor project. The Skip Install setting is highlighted, and set to a value of Yes.](https://docs-assets.developer.apple.com/published/60a73c6f115a4d17a809f00279d7a754/media-3859181%402x.png)
+![A screenshot of Xcode showing the build settings for the TextIsAwesome target of the Overnight Text Editor project. The Skip Install setting is highlighted, and set to a value of Yes.](/images/com.apple.security/media-3859181@2x.png)
 
 After you enable Skip Install on all dependencies, you can use the Xcode notarization interface to notarize your macOS app.
 

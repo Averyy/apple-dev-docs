@@ -26,8 +26,8 @@ For information on adding keyword/descriptor data to the record, see the [`AEStr
 
 ## Parameters
 
-- `ref`: An   containing the stream data.
-- `newType`: A type code for the new record you are adding to the stream. This value can be   or any other appropriate value. See  .
+- `ref`: An [`AEStreamRef`](aestreamref.md) containing the stream data.
+- `newType`: A type code for the new record you are adding to the stream. This value can be `typeAERecord` or any other appropriate value. See [`DescType`](desctype.md).
 
 ## See Also
 

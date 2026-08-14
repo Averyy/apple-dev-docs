@@ -21,7 +21,7 @@ var preferredMaxLayoutWidth: CGFloat { get set }
 
 #### Discussion
 
-When embedding this view in a SwiftUI [`UIViewRepresentable`](https://developer.apple.com/documentation/SwiftUI/UIViewRepresentable) or [`NSViewRepresentable`](https://developer.apple.com/documentation/SwiftUI/NSViewRepresentable) view, the system constrains its contents to the `preferredMaxLayoutWidth` width.
+When embedding this view in a SwiftUI [`UIViewRepresentable`](https://developer.apple.com/documentation/swiftui/uiviewrepresentable) or [`NSViewRepresentable`](https://developer.apple.com/documentation/swiftui/nsviewrepresentable) view, the system constrains its contents to the `preferredMaxLayoutWidth` width.
 
 If you’re not using SwiftUI this property shouldn’t be necessary, as [`SWAttributionView`](swattributionview.md) otherwise derives the maximum width from the frame or constraints you set.
 

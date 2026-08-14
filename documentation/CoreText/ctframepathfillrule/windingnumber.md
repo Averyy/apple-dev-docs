@@ -22,7 +22,7 @@ case windingNumber
 
 #### Discussion
 
-Text is filled in the area that would be painted if the path were given to [`CGContextFillPath`](https://developer.apple.com/documentation/CoreGraphics/CGContextFillPath).
+Text is filled in the area that would be painted if the path were given to [`CGContextFillPath`](https://developer.apple.com/documentation/coregraphics/cgcontextfillpath).
 
 ## See Also
 

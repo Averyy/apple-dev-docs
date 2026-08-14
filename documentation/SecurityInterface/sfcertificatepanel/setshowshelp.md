@@ -16,19 +16,19 @@ func setShowsHelp(_ showsHelp: Bool)
 
 #### Discussion
 
-When a user clicks the help button, the certificate panel first checks the delegate for a [`certificatePanelShowHelp(_:)`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class/certificatePanelShowHelp(_:)) method. If the delegate does not implement such a method, or the delegate method returns [`false`](https://developer.apple.com/documentation/Swift/false), then the [`NSHelpManager`](https://developer.apple.com/documentation/AppKit/NSHelpManager) method [`openHelpAnchor(_:inBook:)`](https://developer.apple.com/documentation/AppKit/NSHelpManager/openHelpAnchor(_:inBook:)) is called with a `nil` book and the anchor specified by the [`setHelpAnchor(_:)`](sfcertificatepanel/sethelpanchor(_:).md) method. An exception is raised if the delegate returns [`false`](https://developer.apple.com/documentation/Swift/false) and there is no help anchor set.
+When a user clicks the help button, the certificate panel first checks the delegate for a [`certificatePanelShowHelp(_:)`](https://developer.apple.com/documentation/objectivec/nsobject-swift.class/certificatepanelshowhelp(_:)) method. If the delegate does not implement such a method, or the delegate method returns [`false`](https://developer.apple.com/documentation/swift/false), then the [`NSHelpManager`](https://developer.apple.com/documentation/appkit/nshelpmanager) method [`openHelpAnchor(_:inBook:)`](https://developer.apple.com/documentation/appkit/nshelpmanager/openhelpanchor(_:inbook:)) is called with a `nil` book and the anchor specified by the [`setHelpAnchor(_:)`](sfcertificatepanel/sethelpanchor(_:).md) method. An exception is raised if the delegate returns [`false`](https://developer.apple.com/documentation/swift/false) and there is no help anchor set.
 
 ## Parameters
 
-- `showsHelp`: Set to [`true`](https://developer.apple.com/documentation/Swift/true) to display the help button. The help button is hidden by default.
+- `showsHelp`: Set to [`true`](https://developer.apple.com/documentation/swift/true) to display the help button. The help button is hidden by default.
 
 ## See Also
 
-- [func openHelpAnchor(NSHelpManager.AnchorName, inBook: NSHelpManager.BookName?)](../AppKit/NSHelpManager/openHelpAnchor(_:inBook:).md)
+- [func openHelpAnchor(NSHelpManager.AnchorName, inBook: NSHelpManager.BookName?)](../appkit/nshelpmanager/openhelpanchor(_:inbook:).md)
   Finds and displays the text at the given anchor location in the given book.
 - [func showsHelp() -> Bool](sfcertificatepanel/showshelp.md)
   Indicates whether the help button is currently set to be displayed.
-- [func certificatePanelShowHelp(SFCertificatePanel!) -> Bool](../ObjectiveC/NSObject-swift.class/certificatePanelShowHelp(_:).md)
+- [func certificatePanelShowHelp(SFCertificatePanel!) -> Bool](../objectivec/nsobject-swift.class/certificatepanelshowhelp(_:).md)
   Implements custom help behavior for the modal panel.
 - [func setHelpAnchor(String!)](sfcertificatepanel/sethelpanchor(_:).md)
   Sets the help anchor string for the sheet or modal panel.

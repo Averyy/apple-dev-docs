@@ -19,7 +19,7 @@ class let touchBarAudioInputTemplateName: String
 
 #### Discussion
 
-![Template image for audio input](https://docs-assets.developer.apple.com/published/dc26a12ab44e3fb743ad651634e68d45/media-2793512%402x.png)
+![Template image for audio input](/images/com.apple.appkit/media-2793512@2x.png)
 
 Touch Bar template images are exclusively for use in [`NSTouchBarItem`](nstouchbaritem.md) objects and not in onscreen windows.
 

@@ -38,8 +38,8 @@ Built-in styles typically have a similar appearance across platforms, tailored t
 
 | Platform | Appearance |
 | --- | --- |
-| iOS, iPadOS | ![A screenshot of the text Vibrate on Ring appearing to the left of a toggle switch that’s on. The toggle’s tint color is green. The toggle and its text appear in a rounded rectangle.](https://docs-assets.developer.apple.com/published/90deb976984567d835517e64555ce986/View-toggleStyle-1-iOS%402x.png) |
-| macOS | ![A screenshot of the text Vibrate on Ring appearing to the left of a toggle switch that’s on. The toggle’s tint color is blue. The toggle and its text appear on a neutral background.](https://docs-assets.developer.apple.com/published/1cd62d0dec90241bf316800b28e25862/View-toggleStyle-1-macOS%402x.png) |
+| iOS, iPadOS | ![A screenshot of the text Vibrate on Ring appearing to the left of a toggle switch that’s on. The toggle’s tint color is green. The toggle and its text appear in a rounded rectangle.](/images/com.apple.SwiftUI/View-toggleStyle-1-iOS@2x.png) |
+| macOS | ![A screenshot of the text Vibrate on Ring appearing to the left of a toggle switch that’s on. The toggle’s tint color is blue. The toggle and its text appear on a neutral background.](/images/com.apple.SwiftUI/View-toggleStyle-1-macOS@2x.png) |
 
 ##### Styling Toggles in a Hierarchy
 
@@ -61,8 +61,8 @@ The example above has the following appearance when `isFlagged` is `true` and `i
 
 | Platform | Appearance |
 | --- | --- |
-| iOS, iPadOS | ![A screenshot of two buttons arranged horizontally. The first has the image of a flag and is active with a blue tint. The second has an image of a speaker with a line through it and is inactive with a neutral tint.](https://docs-assets.developer.apple.com/published/041f6e83a5670d01f46a9d234a74bd59/View-toggleStyle-2-iOS%402x.png) |
-| macOS | ![A screenshot of two buttons arranged horizontally. The first has the image of a flag and is active with a blue tint. The second has an image of a speaker with a line through it and is inactive with a neutral tint.](https://docs-assets.developer.apple.com/published/44a1adcdab9ae2e9b542d17fea64c41c/View-toggleStyle-2-macOS%402x.png) |
+| iOS, iPadOS | ![A screenshot of two buttons arranged horizontally. The first has the image of a flag and is active with a blue tint. The second has an image of a speaker with a line through it and is inactive with a neutral tint.](/images/com.apple.SwiftUI/View-toggleStyle-2-iOS@2x.png) |
+| macOS | ![A screenshot of two buttons arranged horizontally. The first has the image of a flag and is active with a blue tint. The second has an image of a speaker with a line through it and is inactive with a neutral tint.](/images/com.apple.SwiftUI/View-toggleStyle-2-macOS@2x.png) |
 
 ##### Automatic Styling
 
@@ -90,8 +90,8 @@ The style that SwiftUI uses as the default depends on both the platform and the 
 
 | Platform | Appearance |
 | --- | --- |
-| iOS, iPadOS | ![A screenshot of several horizontally arranged items: two buttons, a vertical divider line, the text Enhance sound, and a switch. The first button has two right facing arrows that cross over in the middle and is active with a blue tint. The second button has one right and one left facing arrow and is inactive with neutral tint. The switch is on and has a green tint.](https://docs-assets.developer.apple.com/published/713a018359ab9ecdfe222029b7a2366a/View-toggleStyle-3-iOS%402x.png) |
-| macOS | ![A screenshot of several horizontally arranged items: two buttons, a vertical divider line, a checkbox, and the text Enhance sound. The first button has two right facing arrows that cross over in the middle and is active with a blue tint. The second button has one right and one left facing arrow and is inactive with a neutral tint. The check box is checked and has a blue tint.](https://docs-assets.developer.apple.com/published/7348c954c3ccc51b7cf2057fa69f660a/View-toggleStyle-3-macOS%402x.png) |
+| iOS, iPadOS | ![A screenshot of several horizontally arranged items: two buttons, a vertical divider line, the text Enhance sound, and a switch. The first button has two right facing arrows that cross over in the middle and is active with a blue tint. The second button has one right and one left facing arrow and is inactive with neutral tint. The switch is on and has a green tint.](/images/com.apple.SwiftUI/View-toggleStyle-3-iOS@2x.png) |
+| macOS | ![A screenshot of several horizontally arranged items: two buttons, a vertical divider line, a checkbox, and the text Enhance sound. The first button has two right facing arrows that cross over in the middle and is active with a blue tint. The second button has one right and one left facing arrow and is inactive with a neutral tint. The check box is checked and has a blue tint.](/images/com.apple.SwiftUI/View-toggleStyle-3-macOS@2x.png) |
 
 > **Note**: Like toggle style does for toggles, the [`labelStyle(_:)`](view/labelstyle(_:).md) modifier sets the style for [`Label`](label.md) instances in the hierarchy. The example above demostrates the compact [`iconOnly`](labelstyle/icononly.md) style, which is useful for button toggles in space-constrained contexts. Always include a descriptive title for better accessibility.
 

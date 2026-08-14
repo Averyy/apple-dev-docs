@@ -25,7 +25,7 @@ You present these interfaces from within your app. Upon presentation, the system
 
 EventKitUI also provides several configurable classes for selecting a default calendar, displaying buttons, or to enabling the user to select one or more calendars.
 
-> **Note**: To access the event store, which contains calendar and reminder data, use EventKit. For more information, see [`Accessing the event store`](https://developer.apple.com/documentation/EventKit/accessing-the-event-store).
+> **Note**: To access the event store, which contains calendar and reminder data, use EventKit. For more information, see [`Accessing the event store`](https://developer.apple.com/documentation/eventkit/accessing-the-event-store).
 
 ## Topics
 

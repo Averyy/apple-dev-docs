@@ -18,7 +18,7 @@ Registering an IOService object informs possible clients of its existance and in
 
 ## Parameters
 
-- `options`: In most cases no options are needed.   may be passed to cause   to not return until the service is finalized.
+- `options`: In most cases no options are needed. `kIOServiceSynchronous` may be passed to cause `terminate` to not return until the service is finalized.
 
 ## See Also
 

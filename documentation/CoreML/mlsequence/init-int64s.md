@@ -22,7 +22,7 @@ convenience init(int64s int64Values: [NSNumber])
 
 ## Parameters
 
-- `int64Values`: An array of integer values represented as [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) instances.
+- `int64Values`: An array of integer values represented as [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) instances.
 
 ## See Also
 

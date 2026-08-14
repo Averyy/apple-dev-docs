@@ -33,7 +33,7 @@ The [`HKWorkout`](hkworkout.md) class is a concrete subclass of the [`HKSample`]
 - You must provide an [`HKWorkoutActivityType`](hkworkoutactivitytype.md) value for each workout. This value defines the type of activity performed during the workout.
 - After saving the workout to the HealthKit store, you must associate additional samples with the workout (for example, active energy burned or distance samples). These samples provide fine-grained details. Use the [`add(_:to:completion:)`](hkhealthstore/add(_:to:completion:).md) method to associate them with the workout.
 
-![An illustration showing how a workout is created and added to the store.](https://docs-assets.developer.apple.com/published/3e2441ede3d4e430ec577a6823e2f76d/media-3570087%402x.png)
+![An illustration showing how a workout is created and added to the store.](/images/com.apple.healthkit/media-3570087@2x.png)
 
 The workout records a summary of information about a single physical activity (for example, the duration, total distance, and total energy burned). It also acts as a container for other [`HKSample`](hksample.md) objects. You can associate any number of samples with a workout, adding details over the course of the workout. For example, you may want to break a single run into a number of shorter intervals, and then add samples to track the user’s heart rate, energy burned, distance traveled, and steps taken for each interval. For more information, see [`Adding samples to a workout`](adding-samples-to-a-workout.md).
 
@@ -146,16 +146,16 @@ For more information, see the methods [`init(activityType:start:end:duration:tot
 ### Inherits From
 - [HKSample](hksample.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCoding](../Foundation/NSCoding.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [NSSecureCoding](../Foundation/NSSecureCoding.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCoding](../foundation/nscoding.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

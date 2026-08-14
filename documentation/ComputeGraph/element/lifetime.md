@@ -23,7 +23,7 @@ The lifetime duration in seconds
 
 Use this function to get the duration the element will exist before being automatically removed from the system.
 
-> **Note**: ![Graph](https://docs-assets.developer.apple.com/published/0d638ebf2faf6ebd2ec12a6f2014d454/element__lifetime.svg)
+> **Note**: ![Graph](/images/com.apple.computegraph/element__lifetime.svg)
 
 
 ---

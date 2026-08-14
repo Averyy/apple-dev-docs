@@ -26,9 +26,9 @@ An integer format style that uses the specified currency code.
 
 #### Discussion
 
-Use the dot-notation form of this method when the call point allows the use of [`IntegerFormatStyle`](integerformatstyle.md). You typically do this when calling the `formatted` methods of types that conform to [`BinaryInteger`](https://developer.apple.com/documentation/Swift/BinaryInteger).
+Use the dot-notation form of this method when the call point allows the use of [`IntegerFormatStyle`](integerformatstyle.md). You typically do this when calling the `formatted` methods of types that conform to [`BinaryInteger`](https://developer.apple.com/documentation/swift/binaryinteger).
 
-The following example creates an array of integers, then uses [`formatted(_:)`](https://developer.apple.com/documentation/Swift/BinaryInteger/formatted(_:)-73k3e) and the currency style provided by this method to format the integers as US dollars:
+The following example creates an array of integers, then uses [`formatted(_:)`](https://developer.apple.com/documentation/swift/binaryinteger/formatted(_:)-73k3e) and the currency style provided by this method to format the integers as US dollars:
 
 ```swift
 let nums: [Int] = [100, 1000, 10000, 100000, 1000000]

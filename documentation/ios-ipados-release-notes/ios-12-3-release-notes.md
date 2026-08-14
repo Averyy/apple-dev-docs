@@ -6,7 +6,7 @@ Update your apps to use new features, and test your apps against API changes.
 
 #### Overview
 
-The iOS 12.2 SDK provides support for developing iOS apps for iPhone, iPad, or iPod touch devices running iOS 12.3. The SDK comes bundled with Xcode 10.2.1 available from the Mac App Store. For information on the compatibility requirements for Xcode 10.2.1, see [`Xcode 10.2.1 Release Notes`](https://developer.apple.com/documentation/Xcode-Release-Notes/xcode-10_2_1-release-notes).
+The iOS 12.2 SDK provides support for developing iOS apps for iPhone, iPad, or iPod touch devices running iOS 12.3. The SDK comes bundled with Xcode 10.2.1 available from the Mac App Store. For information on the compatibility requirements for Xcode 10.2.1, see [`Xcode 10.2.1 Release Notes`](https://developer.apple.com/documentation/xcode-release-notes/xcode-10_2_1-release-notes).
 
 ##### Accessibility
 

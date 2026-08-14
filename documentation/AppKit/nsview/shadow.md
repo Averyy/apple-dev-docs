@@ -17,11 +17,11 @@ var shadow: NSShadow? { get set }
 
 #### Return Value
 
-An instance of `NSShadow` that is created using the [`shadowColor`](https://developer.apple.com/documentation/QuartzCore/CALayer/shadowColor),[`shadowOffset`](https://developer.apple.com/documentation/QuartzCore/CALayer/shadowOffset), [`shadowOpacity`](https://developer.apple.com/documentation/QuartzCore/CALayer/shadowOpacity), and [`shadowRadius`](https://developer.apple.com/documentation/QuartzCore/CALayer/shadowRadius) properties of the view’s layer.
+An instance of `NSShadow` that is created using the [`shadowColor`](https://developer.apple.com/documentation/quartzcore/calayer/shadowcolor),[`shadowOffset`](https://developer.apple.com/documentation/quartzcore/calayer/shadowoffset), [`shadowOpacity`](https://developer.apple.com/documentation/quartzcore/calayer/shadowopacity), and [`shadowRadius`](https://developer.apple.com/documentation/quartzcore/calayer/shadowradius) properties of the view’s layer.
 
 #### Discussion
 
-The default value of this property is normally `nil`. When you configure any of the shadow-related properties on the view’s layer, such as the [`shadowColor`](https://developer.apple.com/documentation/QuartzCore/CALayer/shadowColor),[`shadowOffset`](https://developer.apple.com/documentation/QuartzCore/CALayer/shadowOffset), [`shadowOpacity`](https://developer.apple.com/documentation/QuartzCore/CALayer/shadowOpacity) or [`shadowRadius`](https://developer.apple.com/documentation/QuartzCore/CALayer/shadowRadius) properties, this property contains the [`NSShadow`](nsshadow.md) object that encapsulates that information. Assigning a new shadow object to this property sets the corresponding shadow-related properties on the view’s layer.
+The default value of this property is normally `nil`. When you configure any of the shadow-related properties on the view’s layer, such as the [`shadowColor`](https://developer.apple.com/documentation/quartzcore/calayer/shadowcolor),[`shadowOffset`](https://developer.apple.com/documentation/quartzcore/calayer/shadowoffset), [`shadowOpacity`](https://developer.apple.com/documentation/quartzcore/calayer/shadowopacity) or [`shadowRadius`](https://developer.apple.com/documentation/quartzcore/calayer/shadowradius) properties, this property contains the [`NSShadow`](nsshadow.md) object that encapsulates that information. Assigning a new shadow object to this property sets the corresponding shadow-related properties on the view’s layer.
 
 If the view does not have a layer, setting the value of this property has no effect.
 

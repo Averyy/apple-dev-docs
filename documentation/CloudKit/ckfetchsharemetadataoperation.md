@@ -24,18 +24,18 @@ class CKFetchShareMetadataOperation
 
 Use this operation to fetch the metadata for one or more shares. A share’s metadata contains the share and details about the user’s participation. Fetch metadata when you want to manually accept participation in a share using [`CKAcceptSharesOperation`](ckacceptsharesoperation.md).
 
-For a shared record hierarchy, the fetched metadata includes the record ID of the share’s root record. Set [`shouldFetchRootRecord`](ckfetchsharemetadataoperation/shouldfetchrootrecord.md) to [`true`](https://developer.apple.com/documentation/Swift/true) to fetch the entire root record. You can further customize this behavior using [`rootRecordDesiredKeys`](ckfetchsharemetadataoperation/rootrecorddesiredkeys-3xrex.md) to specify which fields you want to include in your fetch. This functionality isn’t applicable for a shared record zone because, unlike a shared record hierarchy, it doesn’t have a nominated root record.
+For a shared record hierarchy, the fetched metadata includes the record ID of the share’s root record. Set [`shouldFetchRootRecord`](ckfetchsharemetadataoperation/shouldfetchrootrecord.md) to [`true`](https://developer.apple.com/documentation/swift/true) to fetch the entire root record. You can further customize this behavior using [`rootRecordDesiredKeys`](ckfetchsharemetadataoperation/rootrecorddesiredkeys-3xrex.md) to specify which fields you want to include in your fetch. This functionality isn’t applicable for a shared record zone because, unlike a shared record hierarchy, it doesn’t have a nominated root record.
 
 To run the operation, add it to any container’s operation queue. Returned metadata includes the ID of the container that stores the share. The operation executes its callbacks on a private serial queue.
 
-The operation calls [`perShareMetadataBlock`](ckfetchsharemetadataoperation/persharemetadatablock.md) once for each URL you provide, and CloudKit returns the metadata, or an error if the fetch fails. CloudKit also batches per-URL errors. If the operation completes with errors, it returns a [`partialFailure`](ckerror/partialfailure.md) error. The error stores individual errors in its [`userInfo`](https://developer.apple.com/documentation/Foundation/NSError/userInfo) dictionary. Use the [`CKPartialErrorsByItemIDKey`](ckpartialerrorsbyitemidkey.md) key to extract them.
+The operation calls [`perShareMetadataBlock`](ckfetchsharemetadataoperation/persharemetadatablock.md) once for each URL you provide, and CloudKit returns the metadata, or an error if the fetch fails. CloudKit also batches per-URL errors. If the operation completes with errors, it returns a [`partialFailure`](ckerror/partialfailure.md) error. The error stores individual errors in its [`userInfo`](https://developer.apple.com/documentation/foundation/nserror/userinfo) dictionary. Use the [`CKPartialErrorsByItemIDKey`](ckpartialerrorsbyitemidkey.md) key to extract them.
 
 When all of the following conditions are true, CloudKit returns a [`participantMayNeedVerification`](ckerror/participantmayneedverification.md) error:
 
 - There are pending participants that don’t have matched iCloud accounts.
 - The current user has an active iCloud account and isn’t an existing participant (pending or otherwise).
 
-On receipt of this error, call [`open(_:options:completionHandler:)`](https://developer.apple.com/documentation/UIKit/UIApplication/open(_:options:completionHandler:)) with the share’s URL to allow CloudKit to verify the user.
+On receipt of this error, call [`open(_:options:completionHandler:)`](https://developer.apple.com/documentation/uikit/uiapplication/open(_:options:completionhandler:)) with the share’s URL to allow CloudKit to verify the user.
 
 The following example demonstrates how to create the operation, configure it, and then execute it using the default container’s operation queue:
 
@@ -111,14 +111,14 @@ func fetchShareMetadata(for shareURLs: [URL],
 ### Inherits From
 - [CKOperation](ckoperation.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

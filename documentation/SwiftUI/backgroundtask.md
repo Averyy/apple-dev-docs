@@ -22,7 +22,7 @@ struct BackgroundTask<Request, Response>
 
 #### Overview
 
-Use a value of this type with the [`backgroundTask(_:action:)`](scene/backgroundtask(_:action:).md) scene modifier to create a handler for background tasks that the system sends to your app or extension. For example, you can use [`urlSession`](backgroundtask/urlsession.md) to define an asynchronous closure that the system calls when it launches your app or extension to handle a response from a background [`URLSession`](https://developer.apple.com/documentation/Foundation/URLSession).
+Use a value of this type with the [`backgroundTask(_:action:)`](scene/backgroundtask(_:action:).md) scene modifier to create a handler for background tasks that the system sends to your app or extension. For example, you can use [`urlSession`](backgroundtask/urlsession.md) to define an asynchronous closure that the system calls when it launches your app or extension to handle a response from a background [`URLSession`](https://developer.apple.com/documentation/foundation/urlsession).
 
 ## Topics
 
@@ -58,8 +58,8 @@ Use a value of this type with the [`backgroundTask(_:action:)`](scene/background
 ## Relationships
 
 ### Conforms To
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

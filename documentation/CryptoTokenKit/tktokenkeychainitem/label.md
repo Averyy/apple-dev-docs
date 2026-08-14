@@ -29,7 +29,7 @@ This property is equivalent to the `kSecAttrLabel` attribute type.
 - [var objectID: TKToken.ObjectID](tktokenkeychainitem/objectid.md)
   Returns the object ID used for keychain item identification.
 - [var constraints: [NSNumber : Any]?](tktokenkeychainitem/constraints.md)
-  Access constraints for the keychain item, keyed by [`TKTokenOperation`](tktokenoperation.md) values wrapped in [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) objects.
+  Access constraints for the keychain item, keyed by [`TKTokenOperation`](tktokenoperation.md) values wrapped in [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) objects.
 
 
 ---

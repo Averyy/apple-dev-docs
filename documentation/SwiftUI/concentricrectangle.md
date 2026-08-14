@@ -24,11 +24,11 @@ struct ConcentricRectangle
 
 Use `ConcentricRectangle` to create a rectangular shape that fits inside a container’s shape, similar to the way that a sheet’s corners in iOS match the curvature of the screen. System-provided elements like sheets and popovers do this automatically. You can use this effect for your custom views to match a device’s curved edges, or for your custom views near the edges inside another view with concentric corners. For example, the Notes app format sheet has rounded bottom corners that are concentric relative to the device’s corners, and rounded top corners that have a fixed radius.
 
-![A screenshot of the Format sheet over the Notes app. The Format sheet has top corners that have rounded corners with a fixed radius, and rounded bottom corners that are concentric relative to the device's corners.](https://docs-assets.developer.apple.com/published/ba2ffc711fa9f1276aeba5d0fd9e7141/concentricrectangle-6%402x.png)
+![A screenshot of the Format sheet over the Notes app. The Format sheet has top corners that have rounded corners with a fixed radius, and rounded bottom corners that are concentric relative to the device's corners.](/images/com.apple.SwiftUI/concentricrectangle-6@2x.png)
 
 A rounded corner of a rectangle is *concentric* relative to the container shape’s adjacent corner when the corner’s radius shares a common center with the containing shape’s rounded corner radius. A containing shape could be a view that extends to the device’s rounded corners, or any view that sets [`containerShape(_:)`](view/containershape(_:)-3br47.md). `ConcentricRectangle` automatically calculates each corner’s radius relative to the container shape, so your view adapts correctly across devices and sizes without hard-coded values.
 
-![A diagram of the bottom half of an iPhone with a gray background view. Over the gray background is a green view with uniformly rounded top corners, and uniformly rounded bottom corners that are concentric with the device's edge. Callouts identify the gray background as the container shape, the green view as a concentric rectangle, and a dot that's the common center of the radii of the bottom leading corner curves.](https://docs-assets.developer.apple.com/published/32bee852550c84b81cea83add7e0ef14/concentricrectangle-3%402x.png)
+![A diagram of the bottom half of an iPhone with a gray background view. Over the gray background is a green view with uniformly rounded top corners, and uniformly rounded bottom corners that are concentric with the device's edge. Callouts identify the gray background as the container shape, the green view as a concentric rectangle, and a dot that's the common center of the radii of the bottom leading corner curves.](/images/com.apple.SwiftUI/concentricrectangle-3@2x.png)
 
 ##### Create a Concentric Rectangle
 
@@ -46,7 +46,7 @@ ConcentricRectangle()
 
 **Preview**:
 
-![A screenshot of a green view with squared top corners, and rounded bottom corners that are concentric with the device's edge.](https://docs-assets.developer.apple.com/published/fd90fdbe009e25ad944f3cc337ffeb15/concentricrectangle-4%402x.png)
+![A screenshot of a green view with squared top corners, and rounded bottom corners that are concentric with the device's edge.](/images/com.apple.SwiftUI/concentricrectangle-4@2x.png)
 
 When your `ConcentricRectangle`‘s corners are far away from the containing shape’s corners, such as the top corners in this example, the corner radius the system calculates may be zero. When that happens, the corner is square. It’s also possible that your app is running on a device whose corners are square. To ensure that your view always has rounded corners that are concentric relative to the container shape when they can be, use [`concentric(minimum:)`](edge/corner/style/concentric(minimum:).md) to specify a rounded corner with a minimum radius.
 
@@ -80,7 +80,7 @@ ConcentricRectangle(
 
 **Preview**:
 
-![A screenshot of a green view with a concentric top leading corner with a minimum radius, a fixed radius top trailing corner, a concentric bottom leading corner, and a square bottom trailing corner.](https://docs-assets.developer.apple.com/published/8307969798ff7829b37603ea442ee7a2/concentricrectangle-5%402x.png)
+![A screenshot of a green view with a concentric top leading corner with a minimum radius, a fixed radius top trailing corner, a concentric bottom leading corner, and a square bottom trailing corner.](/images/com.apple.SwiftUI/concentricrectangle-5@2x.png)
 
 ##### Create Uniform Corners
 
@@ -101,7 +101,7 @@ ConcentricRectangle(
 
 **Preview**:
 
-![A screenshot of a green view with uniformly rounded top corners, and uniformly rounded bottom corners that are concentric with the device's edge.](https://docs-assets.developer.apple.com/published/7afed6bb4482ec27553a5370e8723105/concentricrectangle-2%402x.png)
+![A screenshot of a green view with uniformly rounded top corners, and uniformly rounded bottom corners that are concentric with the device's edge.](/images/com.apple.SwiftUI/concentricrectangle-2@2x.png)
 
 Use initializers with uniform parameters to fit your concentric rectangle inside the containing view, depending on which corners need concentricity:
 
@@ -163,8 +163,8 @@ Use initializers with uniform parameters to fit your concentric rectangle inside
 
 ### Conforms To
 - [Animatable](animatable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 - [Shape](shape.md)
 - [View](view.md)
 

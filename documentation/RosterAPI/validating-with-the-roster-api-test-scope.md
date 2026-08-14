@@ -16,7 +16,7 @@ From your developer account, select Certificates, Identifiers & Profiles. When p
 
 Ensure the service URL has the test scope configured in the Apple Developer website. The following screenshot shows where to configure the test scope:
 
-![A screenshot showing the Certificates, Identifiers and Profiles page of the Apple developer website.](https://docs-assets.developer.apple.com/published/df63cb83754f8edbf49d02d0d96ee0ec/media-4133355%402x.png)
+![A screenshot showing the Certificates, Identifiers and Profiles page of the Apple developer website.](/images/com.apple.rosterapi/media-4133355@2x.png)
 
 ##### Test the Authorization Endpoint
 

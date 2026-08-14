@@ -38,7 +38,7 @@ struct CombineLatest4<A, B, C, D> where A : Publisher, B : Publisher, C : Publis
 ## Relationships
 
 ### Conforms To
-- [Equatable](../Swift/Equatable.md)
+- [Equatable](../swift/equatable.md)
 - [Publisher](publisher.md)
 
 ## See Also

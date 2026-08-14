@@ -45,7 +45,7 @@ sourceBuffer.applyLookup(alphaTable: nil,
 
 The images below show an example source image on the left and the negative result on the right.
 
-![Two versions of a close-up image of a fruit tree. On the left is the original color image, and on the right is the transformed, negative image with its colors inverted.](https://docs-assets.developer.apple.com/published/4c40124db5d99ab6bafa4d50595bf9e8/media-4165177%402x.png)
+![Two versions of a close-up image of a fruit tree. On the left is the original color image, and on the right is the transformed, negative image with its colors inverted.](/images/com.apple.accelerate/media-4165177@2x.png)
 
 ## Parameters
 

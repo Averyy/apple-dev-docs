@@ -33,7 +33,7 @@ NEHotspostHelperCommand objects are passed to the the Hotspot Helper app’s com
 - [var networkList: [NEHotspotNetwork]?](nehotspothelpercommand/networklist.md)
   The list of networks associated with the command.
 ### Networking on the hotspot network
-- [func bind(to: NEHotspotHelperCommand)](../Foundation/NSMutableURLRequest/bind(to:).md)
+- [func bind(to: NEHotspotHelperCommand)](../foundation/nsmutableurlrequest/bind(to:).md)
   Binds a URL request to the network interface associated with the hotspot helper command instance.
 - [func createTCPConnection(NWEndpoint) -> NWTCPConnection](nehotspothelpercommand/createtcpconnection(_:).md)
   Create a new TCP connection over the network associated with the command.
@@ -50,14 +50,14 @@ NEHotspostHelperCommand objects are passed to the the Hotspot Helper app’s com
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

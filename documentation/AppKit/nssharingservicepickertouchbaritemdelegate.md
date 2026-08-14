@@ -23,7 +23,7 @@ protocol NSSharingServicePickerTouchBarItemDelegate : NSSharingServicePickerDele
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 - [NSSharingServicePickerDelegate](nssharingservicepickerdelegate.md)
 
 ## See Also

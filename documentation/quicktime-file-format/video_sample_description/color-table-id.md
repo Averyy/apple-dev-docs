@@ -9,7 +9,7 @@ A 16-bit integer that identifies which color table to use.
 
 If this field is set to –1, the default color table should be used for the specified depth. For all depths below 16 bits per pixel, this indicates a standard Macintosh color table for the specified depth. Depths of 16, 24, and 32 have no color table.
 
-If the color table ID is set to 0, a color table is contained within the sample description itself. The color table immediately follows the color table ID field in the sample description. See [`Color table atom ('ctab')`](color_table_atom.md) for a complete description of a color table.
+If the color table ID is set to 0, a color table is contained within the sample description itself. The color table immediately follows the color table ID field in the sample description. See [`Color table atom`](color_table_atom.md) for a complete description of a color table.
 
 ## See Also
 

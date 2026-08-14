@@ -22,7 +22,7 @@ This protocol provides an interface for the Media Toolbox to interact with exten
 
 To create an `MEFormatReader` object, Media Toolbox first creates a primary [`MEByteSource`](mebytesource.md) object from a source media asset. It then creates an [`MEFormatReaderExtension`](meformatreaderextension.md) object and calls its [`formatReader(with:options:)`](meformatreaderextension/formatreader(with:options:).md) method.
 
-Once a user installs and runs the host app, embedded MediaExtension format reader extensions become available to any app on the user’s system that opts in to using them by calling [`MTRegisterProfessionalVideoWorkflowFormatReaders()`](https://developer.apple.com/documentation/MediaToolbox/MTRegisterProfessionalVideoWorkflowFormatReaders()).
+Once a user installs and runs the host app, embedded MediaExtension format reader extensions become available to any app on the user’s system that opts in to using them by calling [`MTRegisterProfessionalVideoWorkflowFormatReaders()`](https://developer.apple.com/documentation/mediatoolbox/mtregisterprofessionalvideoworkflowformatreaders()).
 
 > ❗ **Important**:  `MEFormatReader` objects run in a sandboxed process with restricted access to the filesystem, network, and other kernel resources.
 
@@ -48,7 +48,7 @@ Once a user installs and runs the host app, embedded MediaExtension format reade
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

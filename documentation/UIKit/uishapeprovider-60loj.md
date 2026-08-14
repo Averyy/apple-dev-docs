@@ -31,7 +31,7 @@ protocol UIShapeProvider : Equatable
 ## Relationships
 
 ### Inherits From
-- [Equatable](../Swift/Equatable.md)
+- [Equatable](../swift/equatable.md)
 ### Conforming Types
 - [UIShape](uishape-swift.struct.md)
 

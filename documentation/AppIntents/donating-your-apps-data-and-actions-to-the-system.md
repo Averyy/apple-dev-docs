@@ -32,7 +32,7 @@ For each app intent you donate:
 
 The system uses the contents of your app intents to craft a suitable message when suggesting an action. Typically, the system uses the intent’s title and parameter information to create this message, but you can provide custom messages by using the [`PredictableIntent`](predictableintent.md) protocol. Use this protocol to specify messages that contain custom text and optionally incorporate parameter values from the app intent. You can configure multiple messages with different parameters, and tailor each message to match the data present in the app intent.
 
-> **Note**: Apps still need to donate Handoff-related actions using the [`NSUserActivity`](https://developer.apple.com/documentation/Foundation/NSUserActivity) type. For more information on how to add Handoff support to your app, see [`Implementing Handoff in Your App`](https://developer.apple.com/documentation/Foundation/implementing-handoff-in-your-app).
+> **Note**: Apps still need to donate Handoff-related actions using the [`NSUserActivity`](https://developer.apple.com/documentation/foundation/nsuseractivity) type. For more information on how to add Handoff support to your app, see [`Implementing Handoff in Your App`](https://developer.apple.com/documentation/foundation/implementing-handoff-in-your-app).
 
 ##### Provide Contextual Awareness of Whats in Your Apps Interface
 
@@ -40,7 +40,7 @@ The views in your app’s interface reflect your app’s data — specifically, 
 
 When you configure your app’s interface, you fetch specific data objects and use them to configure the views you’re about to show. During this process, fetch the matching app entities and attach them to your views as well. If you use a set of views to show content from a single data object, you might attach the entity only to the top-level view. However, if you display a table or collection view, you might associate entities with each row or cell. Make sure the entities you attach to your interface accurately reflect the content you display. To assign entities to your views, use one of the following techniques:
 
-- In SwiftUI, assign the identifier of your app entity to a view using the [`appEntityIdentifier(_:)`](https://developer.apple.com/documentation/SwiftUI/View/appEntityIdentifier(_:)) modifier.
+- In SwiftUI, assign the identifier of your app entity to a view using the [`appEntityIdentifier(_:)`](https://developer.apple.com/documentation/swiftui/view/appentityidentifier(_:)) modifier.
 - In UIKit or AppKit, assign the identifier of your app entity to the [`appEntityIdentifier`](appentityannotatable/appentityidentifier.md) property of a view or responder object.
 
 For more information, see [`Providing contextual cues to Apple Intelligence and Siri`](providing-contextual-cues-to-apple-intelligence-and-siri.md).

@@ -16,7 +16,7 @@ optional var recommendedThreadCount: Int { get set }
 
 #### Discussion
 
-The system sets this property on the extension when [`Video Toolbox`](https://developer.apple.com/documentation/VideoToolbox) sets [`kVTDecompressionPropertyKey_ThreadCount`](https://developer.apple.com/documentation/VideoToolbox/kVTDecompressionPropertyKey_ThreadCount) on the hosting [`VTDecompressionSession`](https://developer.apple.com/documentation/VideoToolbox/VTDecompressionSession).
+The system sets this property on the extension when [`Video Toolbox`](https://developer.apple.com/documentation/videotoolbox) sets [`kVTDecompressionPropertyKey_ThreadCount`](https://developer.apple.com/documentation/videotoolbox/kvtdecompressionpropertykey_threadcount) on the hosting [`VTDecompressionSession`](https://developer.apple.com/documentation/videotoolbox/vtdecompressionsession).
 
 ## See Also
 

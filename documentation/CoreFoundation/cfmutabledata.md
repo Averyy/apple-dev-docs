@@ -28,7 +28,7 @@ Bytes are added to a data object with the [`CFDataAppendBytes(_:_:_:)`](cfdataap
 
 > ❗ **Important**:  Many of the CFMutableData functions take a [`CFIndex`](cfindex.md) `length` or `capacity` argument. You must not pass a negative number for such values—this may introduce a security risk.
 
-CFMutableData is “toll-free bridged” with its Cocoa Foundation counterpart, [`NSMutableData`](https://developer.apple.com/documentation/Foundation/NSMutableData). What this means is that the Core Foundation type is interchangeable in function or method calls with the bridged Foundation object. In other words, in a method where you see an `NSMutableData *` parameter, you can pass in a `CFMutableDataRef`, and in a function where you see a `CFMutableDataRef` parameter, you can pass in an `NSMutableData` instance. This also applies to concrete subclasses of `NSMutableData`. See [`Toll-Free Bridged Types`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFDesignConcepts/Articles/tollFreeBridgedTypes.html#//apple_ref/doc/uid/TP40010677) for more information on toll-free bridging.
+CFMutableData is “toll-free bridged” with its Cocoa Foundation counterpart, [`NSMutableData`](https://developer.apple.com/documentation/foundation/nsmutabledata). What this means is that the Core Foundation type is interchangeable in function or method calls with the bridged Foundation object. In other words, in a method where you see an `NSMutableData *` parameter, you can pass in a `CFMutableDataRef`, and in a function where you see a `CFMutableDataRef` parameter, you can pass in an `NSMutableData` instance. This also applies to concrete subclasses of `NSMutableData`. See [`Toll-Free Bridged Types`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFDesignConcepts/Articles/tollFreeBridgedTypes.html#//apple_ref/doc/uid/TP40010677) for more information on toll-free bridging.
 
 ## Topics
 
@@ -57,8 +57,8 @@ CFMutableData is “toll-free bridged” with its Cocoa Foundation counterpart, 
 ### Inherits From
 - [CFData](cfdata.md)
 ### Conforms To
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
 
 ## See Also
 

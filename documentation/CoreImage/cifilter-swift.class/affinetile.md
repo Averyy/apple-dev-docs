@@ -25,12 +25,12 @@ The tiled image.
 
 #### Discussion
 
-This method applies the affine tile filter to an image. This effect performs an [`CGAffineTransform`](https://developer.apple.com/documentation/CoreFoundation/CGAffineTransform) and then tiles the transformed image.
+This method applies the affine tile filter to an image. This effect performs an [`CGAffineTransform`](https://developer.apple.com/documentation/corefoundation/cgaffinetransform) and then tiles the transformed image.
 
 The affine tile filter uses the following properties:
 
 - **`inputImage`**: An image with the type [`CIImage`](ciimage.md).
-- **`transform`**: A [`CGAffineTransform`](https://developer.apple.com/documentation/CoreFoundation/CGAffineTransform) to apply to the image.
+- **`transform`**: A [`CGAffineTransform`](https://developer.apple.com/documentation/corefoundation/cgaffinetransform) to apply to the image.
 
 The following code creates a filter that results in the image becoming tiled:
 
@@ -43,7 +43,7 @@ func affineTile(inputImage: CIImage) -> CIImage {
 }
 ```
 
-![Two photographs. The photo on the left shows multiple sets of small purple flowers close up with good lighting, and the background has a slight blur. In the photograph on the right, an affine tile filter is applied, resulting in the flower image tiled to fill the extent of the image.](https://docs-assets.developer.apple.com/published/4356cd4710550dc8c2cd37cae00a0246/media-3624744%402x.png)
+![Two photographs. The photo on the left shows multiple sets of small purple flowers close up with good lighting, and the background has a slight blur. In the photograph on the right, an affine tile filter is applied, resulting in the flower image tiled to fill the extent of the image.](/images/com.apple.coreimage/media-3624744@2x.png)
 
 ## See Also
 

@@ -20,7 +20,7 @@ Your driver extension class invokes this method to complete an asynchronous requ
 
 ## Parameters
 
-- `action`: A pointer to the [`OSAction`](https://developer.apple.com/documentation/DriverKit/OSAction) object of the asynchronous request that the system specifies in a [`UserProcessParallelTask`](iouserscsiparallelinterfacecontroller/userprocessparalleltask.md).
+- `action`: A pointer to the [`OSAction`](https://developer.apple.com/documentation/driverkit/osaction) object of the asynchronous request that the system specifies in a [`UserProcessParallelTask`](iouserscsiparallelinterfacecontroller/userprocessparalleltask.md).
 - `response`: The result of the asychronous request.
 
 ## See Also

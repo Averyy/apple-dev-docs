@@ -22,7 +22,7 @@ var imageBuffer: CVImageBuffer? { get }
 
 #### Discussion
 
-The value is [`nil`](https://developer.apple.com/documentation/ObjectiveC/nil-227m0) if the sample buffer doesn’t contain a [`CVImageBuffer`](https://developer.apple.com/documentation/CoreVideo/cvimagebuffer-q40), if the sample contains a [`CMBlockBuffer`](cmblockbuffer-api.md), or if there’s an error.
+The value is [`nil`](https://developer.apple.com/documentation/objectivec/nil-227m0) if the sample buffer doesn’t contain a [`CVImageBuffer`](https://developer.apple.com/documentation/corevideo/cvimagebuffer-q40), if the sample contains a [`CMBlockBuffer`](cmblockbuffer-api.md), or if there’s an error.
 
 ## See Also
 

@@ -20,12 +20,12 @@ Returns a a pixel aligned rectangle on the target screen from the given input re
 
 #### Discussion
 
-This method uses [`NSIntegralRectWithOptions(_:_:)`](https://developer.apple.com/documentation/Foundation/NSIntegralRectWithOptions(_:_:)) to produce the pixel aligned rectangle.
+This method uses [`NSIntegralRectWithOptions(_:_:)`](https://developer.apple.com/documentation/foundation/nsintegralrectwithoptions(_:_:)) to produce the pixel aligned rectangle.
 
 ## Parameters
 
 - `rect`: The input rectangle in global screen coordinates.
-- `options`: Specifies the alignment options. See [`AlignmentOptions`](https://developer.apple.com/documentation/Foundation/AlignmentOptions) for possible values.
+- `options`: Specifies the alignment options. See [`AlignmentOptions`](https://developer.apple.com/documentation/foundation/alignmentoptions) for possible values.
 
 ## See Also
 

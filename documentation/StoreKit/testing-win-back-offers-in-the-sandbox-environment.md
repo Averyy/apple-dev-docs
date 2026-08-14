@@ -82,7 +82,7 @@ If you merchandise the win-back offer using StoreKit views or other StoreKit API
 1. Complete the steps in the preceding sections to ensure the test account is eligible for one or more win-back offers: [`Set up win-back offer testing in App Store Connect and Account Settings`](testing-win-back-offers-in-the-sandbox-environment#Set-up-win-back-offer-testing-in-App-Store-Connect-and-Account-Settings.md) and [`Prepare eligibility conditions`](testing-win-back-offers-in-the-sandbox-environment#Prepare-eligibility-conditions.md). Close the app.
 2. Optionally, on the Account Settings page (Settings > Developer > Sandbox Apple Account > Manage), turn off the Display Win-back Offer Sheet toggle to prevent the win-back offer sheet from appearing.
 3. Launch your app. Open your app’s store and exercise the offer API.
-4. StoreKit views automatically chooses an offer to display. If there are multiple offers, your app indicates a preference using the [`preferredSubscriptionOffer(_:)`](https://developer.apple.com/documentation/SwiftUI/View/preferredSubscriptionOffer(_:)) API.
+4. StoreKit views automatically chooses an offer to display. If there are multiple offers, your app indicates a preference using the [`preferredSubscriptionOffer(_:)`](https://developer.apple.com/documentation/swiftui/view/preferredsubscriptionoffer(_:)) API.
 
 For more information about customizing your in-app experience, see [`Merchandising win-back offers in your app`](merchandising-win-back-offers-in-your-app.md) and [`Supporting win-back offers in your app`](supporting-win-back-offers-in-your-app.md).
 

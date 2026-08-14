@@ -25,8 +25,8 @@ protocol UITraitChangeRegistration : NSCopying, NSObjectProtocol
 ## Relationships
 
 ### Inherits From
-- [NSCopying](../Foundation/NSCopying.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSCopying](../foundation/nscopying.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

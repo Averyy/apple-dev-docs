@@ -19,7 +19,7 @@ void output::setUVTransform(float2 uvOffset, float2 uvScale)
 
 This function customizes how texture coordinates are applied to the rendered output by specifying an offset and scale. The UV transform affects texture mapping without modifying the underlying particle data.
 
-> **Note**: ![Graph](https://docs-assets.developer.apple.com/published/dc1c869d31a094ecd8e0a903c4885bb4/output__setUVTransform.svg)
+> **Note**: ![Graph](/images/com.apple.computegraph/output__setUVTransform.svg)
 
 ## Parameters
 

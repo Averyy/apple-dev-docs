@@ -50,8 +50,8 @@ Implement the methods in this protocol to support text interactions in your brow
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [UIResponderStandardEditActions](../UIKit/UIResponderStandardEditActions.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [UIResponderStandardEditActions](../uikit/uiresponderstandardeditactions.md)
 ### Inherited By
 - [BETextInput](betextinput.md)
 

@@ -23,7 +23,7 @@ struct cssm_applecspdl_db_change_password_parameters
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../Swift/BitwiseCopyable.md)
+- [BitwiseCopyable](../swift/bitwisecopyable.md)
 
 
 ---

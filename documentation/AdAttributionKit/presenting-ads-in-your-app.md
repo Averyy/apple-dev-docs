@@ -56,7 +56,7 @@ struct AdContentView: View {
 
 #### Record Click Through Impressions
 
-To respond to a click-through interaction and redirect a person to open or install the advertised app, first display a [`UIEventAttributionView`](https://developer.apple.com/documentation/UIKit/UIEventAttributionView) over your ad content. Once the ad receives a tap, call [`handleTap()`](appimpression/handletap().md). The system then records a click-through impression, and if the app specified by the impression’s advertised item ID isn’t installed, the system launches the app’s product page on the App Store or alternative marketplace according to the user’s preferences in Settings. If the app is already installed, the system launches the app directly.
+To respond to a click-through interaction and redirect a person to open or install the advertised app, first display a [`UIEventAttributionView`](https://developer.apple.com/documentation/uikit/uieventattributionview) over your ad content. Once the ad receives a tap, call [`handleTap()`](appimpression/handletap().md). The system then records a click-through impression, and if the app specified by the impression’s advertised item ID isn’t installed, the system launches the app’s product page on the App Store or alternative marketplace according to the user’s preferences in Settings. If the app is already installed, the system launches the app directly.
 
 ```swift
     func handleAdTapped(impression: AppImpression) async {
@@ -72,7 +72,7 @@ To respond to a click-through interaction and redirect a person to open or insta
 
 #### Display Storekit Rendered Ads
 
-Pass an `AppImpression` when configuring a StoreKit rendered ad, and it handles recording a view-through impression after the framework displays it for 2 seconds; it records a click-through impression if a person taps through the ad. For more information on StoreKit rendered ads, see  [`SKStoreProductViewController`](https://developer.apple.com/documentation/StoreKit/SKStoreProductViewController), [`SKOverlay.AppConfiguration`](https://developer.apple.com/documentation/StoreKit/SKOverlay/AppConfiguration), [`appImpression`](https://developer.apple.com/documentation/StoreKit/SKOverlay/AppConfiguration/appImpression), and  [`loadProduct(parameters:impression:)`](https://developer.apple.com/documentation/StoreKit/SKStoreProductViewController/loadProduct(parameters:impression:))
+Pass an `AppImpression` when configuring a StoreKit rendered ad, and it handles recording a view-through impression after the framework displays it for 2 seconds; it records a click-through impression if a person taps through the ad. For more information on StoreKit rendered ads, see  [`SKStoreProductViewController`](https://developer.apple.com/documentation/storekit/skstoreproductviewcontroller), [`SKOverlay.AppConfiguration`](https://developer.apple.com/documentation/storekit/skoverlay/appconfiguration), [`appImpression`](https://developer.apple.com/documentation/storekit/skoverlay/appconfiguration/appimpression), and  [`loadProduct(parameters:impression:)`](https://developer.apple.com/documentation/storekit/skstoreproductviewcontroller/loadproduct(parameters:impression:))
 
 ## See Also
 

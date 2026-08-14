@@ -22,7 +22,7 @@ static let opacity: SCNParticleSystem.ParticleProperty
 
 #### Discussion
 
-This property’s value is a floating-point scalar (an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) object for particle property controllers, or a single `float` value for particle event or modifier blocks).
+This property’s value is a floating-point scalar (an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) object for particle property controllers, or a single `float` value for particle event or modifier blocks).
 
 This property controls the same alpha value as the [`color`](scnparticlesystem/particleproperty/color.md) property. Use this property when you want to modify particle opacity without modifying color, or when you want to use opacity as the input for a [`SCNParticlePropertyController`](scnparticlepropertycontroller.md) object.
 

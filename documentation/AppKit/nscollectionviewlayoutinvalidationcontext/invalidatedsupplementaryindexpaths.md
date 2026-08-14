@@ -16,7 +16,7 @@ var invalidatedSupplementaryIndexPaths: [NSCollectionView.SupplementaryElementKi
 
 #### Discussion
 
-The keys in this dictionary are the element kind strings of the supplementary views. The value for each key is an [`NSSet`](https://developer.apple.com/documentation/Foundation/NSSet) object containing one or more [`NSIndexPath`](https://developer.apple.com/documentation/Foundation/NSIndexPath) objects, each of which identifies the section containing the supplementary view.
+The keys in this dictionary are the element kind strings of the supplementary views. The value for each key is an [`NSSet`](https://developer.apple.com/documentation/foundation/nsset) object containing one or more [`NSIndexPath`](https://developer.apple.com/documentation/foundation/nsindexpath) objects, each of which identifies the section containing the supplementary view.
 
 ## See Also
 

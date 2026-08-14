@@ -20,7 +20,7 @@ let MKLaunchOptionsShowsTrafficKey: String
 
 #### Discussion
 
-The value of this key is an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) object that contains a Boolean value. If you don’t specify this key, the Maps app uses its current settings to determine whether to display traffic.
+The value of this key is an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) object that contains a Boolean value. If you don’t specify this key, the Maps app uses its current settings to determine whether to display traffic.
 
 ## See Also
 

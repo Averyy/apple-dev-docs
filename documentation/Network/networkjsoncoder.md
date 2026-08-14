@@ -30,8 +30,8 @@ struct NetworkJSONCoder
 
 ### Conforms To
 - [NetworkCoder](networkcoder.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 
 ---

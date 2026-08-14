@@ -25,7 +25,7 @@ class IOUserSCSIPeripheralDeviceType07;
 ## Relationships
 
 ### Inherits From
-- [IOService](../DriverKit/IOService.md)
+- [IOService](../driverkit/ioservice.md)
 
 
 ---

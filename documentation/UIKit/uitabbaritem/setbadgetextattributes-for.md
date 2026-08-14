@@ -24,7 +24,7 @@ The [`setTitleTextAttributes(_:for:)`](uibaritem/settitletextattributes(_:for:).
 
 ## Parameters
 
-- `textAttributes`: A dictionary of text attributes. For a list of possible attributes, see [`NSAttributedString.Key`](https://developer.apple.com/documentation/Foundation/NSAttributedString/Key).
+- `textAttributes`: A dictionary of text attributes. For a list of possible attributes, see [`NSAttributedString.Key`](https://developer.apple.com/documentation/foundation/nsattributedstring/key).
 - `state`: The item’s state. For possible values, see [`UIControl.State`](uicontrol/state-swift.struct.md).
 
 ## See Also

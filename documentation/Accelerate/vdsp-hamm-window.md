@@ -46,7 +46,7 @@ vDSP_hamm_window(&c,
 
 The following illustrates the values of the output vector, `c`:
 
-![Visualization of a Hamming window.](https://docs-assets.developer.apple.com/published/e3d393e94ae8ea343b802ca3b64d3ef0/media-3233535%402x.png)
+![Visualization of a Hamming window.](/images/com.apple.accelerate/media-3233535@2x.png)
 
 ## Parameters
 

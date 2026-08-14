@@ -22,7 +22,7 @@ let MPNowPlayingInfoPropertyPlaybackProgress: String
 
 #### Discussion
 
-Value is an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) object configured as a `float`. A value of `0.0` indicates the item isn’t watched, while a value of `1.0` indicates the item was fully watched. This is a high-level indicator. Use [`MPNowPlayingInfoPropertyElapsedPlaybackTime`](mpnowplayinginfopropertyelapsedplaybacktime.md) for detailed information about how much of the item the user watched.
+Value is an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) object configured as a `float`. A value of `0.0` indicates the item isn’t watched, while a value of `1.0` indicates the item was fully watched. This is a high-level indicator. Use [`MPNowPlayingInfoPropertyElapsedPlaybackTime`](mpnowplayinginfopropertyelapsedplaybacktime.md) for detailed information about how much of the item the user watched.
 
 ## See Also
 

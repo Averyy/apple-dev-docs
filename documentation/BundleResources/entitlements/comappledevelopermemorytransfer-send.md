@@ -17,7 +17,7 @@ An entitlement that grants an alternative browser engine’s rendering extension
 
 To increase the memory allocation of your alternative browser engine’s rendering extension, add this entitlement to its code signature and set the value of this entitlement to your browser app’s bundle ID.
 
-For more information, see [`Attributing memory to a content extension`](https://developer.apple.com/documentation/BrowserEngineKit/attributing-memory-to-a-content-extension).
+For more information, see [`Attributing memory to a content extension`](https://developer.apple.com/documentation/browserenginekit/attributing-memory-to-a-content-extension).
 
 ## See Also
 

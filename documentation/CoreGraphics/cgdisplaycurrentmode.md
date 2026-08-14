@@ -16,7 +16,7 @@ func CGDisplayCurrentMode(_ display: CGDirectDisplayID) -> CFDictionary?
 
 #### Return Value
 
-A display mode dictionary, or `NULL` if the display is invalid. The dictionary is owned by the system and you should not release it. The dictionary contains information about the current display mode. For a list of the properties in a display mode dictionary, see [`Display Mode Standard Properties`](display-mode-standard-properties.md) and [`Display Mode Optional Properties`](display-mode-optional-properties.md). For general information about using dictionaries, see [`CFDictionary`](https://developer.apple.com/documentation/CoreFoundation/CFDictionary).
+A display mode dictionary, or `NULL` if the display is invalid. The dictionary is owned by the system and you should not release it. The dictionary contains information about the current display mode. For a list of the properties in a display mode dictionary, see [`Display Mode Standard Properties`](display-mode-standard-properties.md) and [`Display Mode Optional Properties`](display-mode-optional-properties.md). For general information about using dictionaries, see [`CFDictionary`](https://developer.apple.com/documentation/corefoundation/cfdictionary).
 
 #### Discussion
 

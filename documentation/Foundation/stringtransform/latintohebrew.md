@@ -26,7 +26,7 @@ This transformation is reversible.
 
 For example, the string “ʻbryţ” transliterates to “עברית”.
 
-This is equivalent to [`kCFStringTransformLatinHebrew`](https://developer.apple.com/documentation/CoreFoundation/kCFStringTransformLatinHebrew).
+This is equivalent to [`kCFStringTransformLatinHebrew`](https://developer.apple.com/documentation/corefoundation/kcfstringtransformlatinhebrew).
 
 ## See Also
 

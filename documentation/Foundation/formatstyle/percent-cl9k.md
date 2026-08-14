@@ -22,7 +22,7 @@ static var percent: IntegerFormatStyle<Int>.Percent { get }
 
 #### Discussion
 
-Use the this type property when the call point allows the use of [`IntegerFormatStyle`](integerformatstyle.md). You typically do this when calling the `formatted` methods of types that conform to [`BinaryInteger`](https://developer.apple.com/documentation/Swift/BinaryInteger).
+Use the this type property when the call point allows the use of [`IntegerFormatStyle`](integerformatstyle.md). You typically do this when calling the `formatted` methods of types that conform to [`BinaryInteger`](https://developer.apple.com/documentation/swift/binaryinteger).
 
 ## See Also
 

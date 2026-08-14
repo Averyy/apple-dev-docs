@@ -27,7 +27,7 @@ You can safely call this method from a background queue, but you must do so cons
 ## Parameters
 
 - `snapshot`: The snapshot that reflects the new state of the data in the table view.
-- `animatingDifferences`: If [`true`](https://developer.apple.com/documentation/Swift/true), the system animates the updates to the table view. If [`false`](https://developer.apple.com/documentation/Swift/false), the system doesn’t animate the updates to the table view.
+- `animatingDifferences`: If [`true`](https://developer.apple.com/documentation/swift/true), the system animates the updates to the table view. If [`false`](https://developer.apple.com/documentation/swift/false), the system doesn’t animate the updates to the table view.
 
 ## See Also
 

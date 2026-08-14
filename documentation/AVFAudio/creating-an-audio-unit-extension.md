@@ -14,7 +14,7 @@ To create an audio unit extension, you create an Xcode project using the Audio U
 
 To create a new project in Xcode, choose File > New > Project. In the template chooser, select multiplatform. Scroll to the end of the template chooser and select the Audio Unit Extension App template under the Application section.
 
-![A screenshot of the Choose a template for your new project dialog in Xcode. It shows a section with the name Other, with the Audio Unit Extension App template selected.](https://docs-assets.developer.apple.com/published/6132dee6798f52f5961f880013b9a053/updated-media-4093016%402x.png)
+![A screenshot of the Choose a template for your new project dialog in Xcode. It shows a section with the name Other, with the Audio Unit Extension App template selected.](/images/com.apple.avfaudio/updated-media-4093016@2x.png)
 
 After clicking Next, configure the options for the project — including choosing what kind of audio unit to generate.
 
@@ -22,7 +22,7 @@ After clicking Next, configure the options for the project — including choosin
 
 Configure the options for your new audio unit extension application. The template creates an extension and a host application for your audio unit.
 
-![A screenshot of the Choose options for your new project dialog in Xcode. The fields for Product Name, Team, Organization Name, Subtype Code, Manufacturer Code, Testing System, and Storage are empty. The Organization Identifier field contains com.examples. It shows a menu to select the Audio Unit Type, with Effect selected by default. It shows a User Interface menu, with Presents User Interface selected by default. Below the User Interface option, a checkbox for host in CloudKit is unchecked. At the bottom of the dialog, there are three buttons: Cancel, Previous, and Next. The Next button is grayed out. ](https://docs-assets.developer.apple.com/published/007da1182f1ed60fc7d9da1e694d485d/updated-media-4093019%402x.png)
+![A screenshot of the Choose options for your new project dialog in Xcode. The fields for Product Name, Team, Organization Name, Subtype Code, Manufacturer Code, Testing System, and Storage are empty. The Organization Identifier field contains com.examples. It shows a menu to select the Audio Unit Type, with Effect selected by default. It shows a User Interface menu, with Presents User Interface selected by default. Below the User Interface option, a checkbox for host in CloudKit is unchecked. At the bottom of the dialog, there are three buttons: Cancel, Previous, and Next. The Next button is grayed out. ](/images/com.apple.avfaudio/updated-media-4093019@2x.png)
 
 For an Audio Unit Extension App template, Xcode provides a starting point for the type of audio unit you’re creating.
 
@@ -41,7 +41,7 @@ If your extension doesn’t need a user interface, choose No User Interface; oth
 
 Xcode generates two targets for you — the host app and the extension. The template uses Swift and SwiftUI for the business logic and user interface, C++ for real-time processing, and Objective-C for interacting between Swift and C++.
 
-![A screenshot of the Xcode Project navigator showing a project with the name NewAU. The project is expanded and shows a host app group and NewAU Extension group, with the extension group expanded. The extension group contains expanded groups with the names Common, Parameters, DSP, and UI. The Common group shows an expanded Audio Unit group with a file named NewAUExtensionAudioUnit. The expanded Parameters group shows the files NewAUExtensionParameterAddresses and Parameters. The expanded DSP group shows the file NewAUExtensionDSPKernel. The expanded UI group shows the files NewAUExtensionMainView and ParameterSlider.](https://docs-assets.developer.apple.com/published/34e04dd1bbac682579564c42b2f21b13/updated-media-4093014%402x.png)
+![A screenshot of the Xcode Project navigator showing a project with the name NewAU. The project is expanded and shows a host app group and NewAU Extension group, with the extension group expanded. The extension group contains expanded groups with the names Common, Parameters, DSP, and UI. The Common group shows an expanded Audio Unit group with a file named NewAUExtensionAudioUnit. The expanded Parameters group shows the files NewAUExtensionParameterAddresses and Parameters. The expanded DSP group shows the file NewAUExtensionDSPKernel. The expanded UI group shows the files NewAUExtensionMainView and ParameterSlider.](/images/com.apple.avfaudio/updated-media-4093014@2x.png)
 
 The Common group contains code — organized by functionality — that you rarely need to change. In the above image, the project name `NewAU` is prefixed to many files.
 

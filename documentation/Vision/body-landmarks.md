@@ -8,7 +8,7 @@ The body landmarks that Vision detects.
 
 The illustration below shows the nineteen body points that you can detect with [`VNDetectHumanBodyPoseRequest`](vndetecthumanbodyposerequest.md).
 
-![An illustration depicting a model of the human body. The body points that Vision detects are the right and left wrists, elbows, shoulders, ears, eyes, hips, knees, and ankles; and the nose, neck, and root, or center point.](https://docs-assets.developer.apple.com/published/4e34d488e7a26e8c93e57970d5973369/media-3627959%402x.png)
+![An illustration depicting a model of the human body. The body points that Vision detects are the right and left wrists, elbows, shoulders, ears, eyes, hips, knees, and ankles; and the nose, neck, and root, or center point.](/images/Vision/media-3627959@2x.png)
 
 ## Topics
 

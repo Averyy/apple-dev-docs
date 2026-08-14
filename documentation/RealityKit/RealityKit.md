@@ -19,9 +19,9 @@ Simulate and render 3D content for use in your augmented reality apps.
 
 #### Overview
 
-RealityKit provides high-performance 3D simulation and rendering capabilities you can use to create apps with 3D or augmented reality (AR) for iOS, iPadOS, macOS, tvOS, and visionOS. RealityKit is an AR-first 3D framework that leverages [`ARKit`](https://developer.apple.com/documentation/ARKit) to seamlessly integrate virtual objects into the real world.
+RealityKit provides high-performance 3D simulation and rendering capabilities you can use to create apps with 3D or augmented reality (AR) for iOS, iPadOS, macOS, tvOS, and visionOS. RealityKit is an AR-first 3D framework that leverages [`ARKit`](https://developer.apple.com/documentation/arkit) to seamlessly integrate virtual objects into the real world.
 
-![A screenshot that shows a virtual warehouse environment set up as a theater. A movie showing on a big floating screen features a wheeled robot rolling through an outdoor environment.](https://docs-assets.developer.apple.com/published/608fdec903f17a98916147458196a26f/realityKit-hero-image.png)
+![A screenshot that shows a virtual warehouse environment set up as a theater. A movie showing on a big floating screen features a wheeled robot rolling through an outdoor environment.](/images/com.apple.RealityKit/realityKit-hero-image.png)
 
 Use RealityKit’s rich functionality to create compelling augmented reality (AR) experiences:
 
@@ -35,7 +35,7 @@ Use RealityKit’s rich functionality to create compelling augmented reality (AR
 ## Topics
 
 ### Essentials
-- [Understanding the modular architecture of RealityKit](../visionOS/understanding-the-realitykit-modular-architecture.md)
+- [Understanding the modular architecture of RealityKit](../visionos/understanding-the-realitykit-modular-architecture.md)
   Learn how everything fits together in RealityKit.
 - [Building an immersive experience with RealityKit](building-an-immersive-experience-with-realitykit.md)
   Use systems and postprocessing effects to create a realistic underwater scene.
@@ -60,24 +60,24 @@ Use RealityKit’s rich functionality to create compelling augmented reality (AR
 - [Entity actions](ecs-entity-actions.md)
   Create simple, reusable actions that can change your app state, RealityKit scene, or animate an entity.
 ### Asset creation
-- [Reality Composer Pro](../RealityComposerPro/RealityComposerPro.md)
+- [Reality Composer Pro](../realitycomposerpro/realitycomposerpro.md)
   Build, design, and orchestrate 3D content for your RealityKit apps.
-- [Swift Splash](../visionOS/swift-splash.md)
+- [Swift Splash](../visionos/swift-splash.md)
   Use RealityKit to create an interactive ride in visionOS.
-- [Diorama](../visionOS/diorama.md)
+- [Diorama](../visionos/diorama.md)
   Design scenes for your visionOS app using Reality Composer Pro.
 - [Presenting an artist’s scene](presenting-an-artists-scene.md)
   Display a scene from Reality Composer Pro in visionOS.
 - [Object capture](realitykit-object-capture.md)
   Create 3D objects from a series of photographs using photogrammetry.
-- [USD](../USD/USD.md)
+- [USD](../usd/usd.md)
   An efficient and scalable way to represent 3D scenes.
 - [Composing interactive 3D content with RealityKit and Reality Composer Pro](composing-interactive-3d-content-with-realitykit-and-reality-composer-pro.md)
   Build an interactive scene using an animation timeline.
 ### Scene content
-- [Hello World](../visionOS/World.md)
+- [Hello World](../visionos/world.md)
   Use windows, volumes, and immersive spaces to teach people about the Earth.
-- [Enabling video reflections in an immersive environment](../visionOS/enabling-video-reflections-in-an-immersive-environment.md)
+- [Enabling video reflections in an immersive environment](../visionos/enabling-video-reflections-in-an-immersive-environment.md)
   Create a more immersive experience by adding video reflections in a custom environment.
 - [Creating a spatial drawing app with RealityKit](creating-a-spatial-drawing-app-with-realitykit.md)
   Use low-level mesh and texture APIs to achieve fast updates to a person’s brush strokes by integrating RealityKit with ARKit and SwiftUI.

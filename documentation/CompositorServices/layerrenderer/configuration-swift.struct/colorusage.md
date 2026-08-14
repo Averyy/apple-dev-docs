@@ -17,7 +17,7 @@ var colorUsage: MTLTextureUsage { get set }
 
 #### Discussion
 
-Metal optimizes texture-related operations based on the value in this property. The usage value can be a combination of options. For more information, see [`MTLTextureUsage`](https://developer.apple.com/documentation/Metal/MTLTextureUsage).
+Metal optimizes texture-related operations based on the value in this property. The usage value can be a combination of options. For more information, see [`MTLTextureUsage`](https://developer.apple.com/documentation/metal/mtltextureusage).
 
 ## See Also
 

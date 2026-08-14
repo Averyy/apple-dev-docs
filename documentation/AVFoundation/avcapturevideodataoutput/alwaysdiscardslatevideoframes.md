@@ -21,9 +21,9 @@ var alwaysDiscardsLateVideoFrames: Bool { get set }
 
 #### Discussion
 
-If this property is [`true`](https://developer.apple.com/documentation/Swift/true), the output immediately discard frames that captured while the dispatch queue handling existing frames blocks in the [`captureOutput(_:didOutput:from:)`](avcapturevideodataoutputsamplebufferdelegate/captureoutput(_:didoutput:from:).md) delegate method. When set to [`false`](https://developer.apple.com/documentation/Swift/false), the output gives delegates more time to process old frames before it discards new frames, but application memory usage may increase significantly as a result.
+If this property is [`true`](https://developer.apple.com/documentation/swift/true), the output immediately discard frames that captured while the dispatch queue handling existing frames blocks in the [`captureOutput(_:didOutput:from:)`](avcapturevideodataoutputsamplebufferdelegate/captureoutput(_:didoutput:from:).md) delegate method. When set to [`false`](https://developer.apple.com/documentation/swift/false), the output gives delegates more time to process old frames before it discards new frames, but application memory usage may increase significantly as a result.
 
-The default is [`true`](https://developer.apple.com/documentation/Swift/true).
+The default is [`true`](https://developer.apple.com/documentation/swift/true).
 
 ## See Also
 

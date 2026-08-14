@@ -33,20 +33,20 @@ enum AuthorizationStatus
 ## Relationships
 
 ### Conforms To
-- [Copyable](../Swift/Copyable.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Decodable](../Swift/Decodable.md)
-- [Encodable](../Swift/Encodable.md)
-- [Equatable](../Swift/Equatable.md)
-- [Escapable](../Swift/Escapable.md)
-- [Hashable](../Swift/Hashable.md)
-- [RawRepresentable](../Swift/RawRepresentable.md)
+- [Copyable](../swift/copyable.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Decodable](../swift/decodable.md)
+- [Encodable](../swift/encodable.md)
+- [Equatable](../swift/equatable.md)
+- [Escapable](../swift/escapable.md)
+- [Hashable](../swift/hashable.md)
+- [RawRepresentable](../swift/rawrepresentable.md)
 
 ## See Also
 
 - [class AuthorizationCenter](authorizationcenter.md)
   The center for requesting authorization to provide parental controls.
-- [Family Controls](../BundleResources/Entitlements/com.apple.developer.family-controls.md)
+- [Family Controls](../bundleresources/entitlements/com.apple.developer.family-controls.md)
   A Boolean value that indicates whether the app can request or revoke authorization to provide parental controls.
 - [Requesting the Family Controls entitlement](requesting-the-family-controls-entitlement.md)
   Register your app and its Screen Time API app extensions to use Family Controls.

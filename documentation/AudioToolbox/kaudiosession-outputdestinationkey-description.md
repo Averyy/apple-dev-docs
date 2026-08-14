@@ -17,7 +17,7 @@ let kAudioSession_OutputDestinationKey_Description: CFString!
 
 #### Discussion
 
-A [`CFString`](https://developer.apple.com/documentation/CoreFoundation/CFString) object, defined by the accessory, that describes the audio output destination and that is suitable for displaying in a user interface.
+A [`CFString`](https://developer.apple.com/documentation/corefoundation/cfstring) object, defined by the accessory, that describes the audio output destination and that is suitable for displaying in a user interface.
 
 ## See Also
 

@@ -22,7 +22,7 @@ let kCLErrorDomain: String
 
 #### Discussion
 
-This value is used in the [`NSError`](https://developer.apple.com/documentation/Foundation/NSError) class.
+This value is used in the [`NSError`](https://developer.apple.com/documentation/foundation/nserror) class.
 
 ## See Also
 

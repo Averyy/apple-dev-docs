@@ -24,13 +24,13 @@ This routine effectively combines a call to [`AECreateAppleEvent(_:_:_:_:_:_:)`]
 
 ## Parameters
 
-- `clazz`: The event class of the Apple event. See  .
-- `id`: The event ID of the Apple event. See  .
-- `targetType`: The address type for the addressing information in the next two parameters. Usually contains one of the following values:  .  , or  . See  .
-- `targetData`: A pointer to the address information. The data in this pointer must match the data associated with the specified  .
-- `targetLength`: The number of bytes pointed to by the   parameter. 
-- `returnID`: The return ID for the created Apple event. If you pass a value of  , the Apple Event Manager assigns the created Apple event a return ID that is unique to the current session. If you pass any other value, the Apple Event Manager assigns that value for the ID. The return ID constant is described in  . See  .
-- `transactionID`: The transaction ID for this Apple event. A transaction is a sequence of Apple events that are sent back and forth between the client and server applications, beginning with the client’s initial request for a service. All Apple events that are part of a transaction must have the same transaction ID. You can specify the   constant if the Apple event is not one of a series of interdependent Apple events. This transaction ID constant is described in  . See  .
+- `clazz`: The event class of the Apple event. See [`AEEventClass`](aeeventclass.md).
+- `id`: The event ID of the Apple event. See [`AEEventID`](aeeventid.md).
+- `targetType`: The address type for the addressing information in the next two parameters. Usually contains one of the following values: `typeApplSignature`. `typeKernelProcessID`, or `typeProcessSerialNumber`. See [`DescType`](desctype.md).
+- `targetData`: A pointer to the address information. The data in this pointer must match the data associated with the specified `targetType`.
+- `targetLength`: The number of bytes pointed to by the `targetData` parameter. 
+- `returnID`: The return ID for the created Apple event. If you pass a value of `kAutoGenerateReturnID`, the Apple Event Manager assigns the created Apple event a return ID that is unique to the current session. If you pass any other value, the Apple Event Manager assigns that value for the ID. The return ID constant is described in [`ID Constants for the AECreateAppleEvent Function`](apple_events/1542799-id_constants_for_the_aecreateapp.md). See [`AEReturnID`](aereturnid.md).
+- `transactionID`: The transaction ID for this Apple event. A transaction is a sequence of Apple events that are sent back and forth between the client and server applications, beginning with the client’s initial request for a service. All Apple events that are part of a transaction must have the same transaction ID. You can specify the `kAnyTransactionID` constant if the Apple event is not one of a series of interdependent Apple events. This transaction ID constant is described in [`ID Constants for the AECreateAppleEvent Function`](apple_events/1542799-id_constants_for_the_aecreateapp.md). See [`AETransactionID`](aetransactionid.md).
 
 ## See Also
 

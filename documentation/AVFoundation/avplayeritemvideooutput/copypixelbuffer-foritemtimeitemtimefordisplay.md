@@ -21,13 +21,13 @@ func copyPixelBuffer(forItemTime itemTime: CMTime, itemTimeForDisplay outItemTim
 
 #### Return Value
 
-A pixel buffer containing the image data to display or `nil` if nothing should be displayed at the specified time. The caller is responsible for calling [`CVBufferRelease`](https://developer.apple.com/documentation/CoreVideo/CVBufferRelease) on the returned data when it is no longer needed.
+A pixel buffer containing the image data to display or `nil` if nothing should be displayed at the specified time. The caller is responsible for calling [`CVBufferRelease`](https://developer.apple.com/documentation/corevideo/cvbufferrelease) on the returned data when it is no longer needed.
 
 #### Discussion
 
-Typically, you call this method in response to a CVDisplayLink callback or a [`CADisplayLink`](https://developer.apple.com/documentation/QuartzCore/CADisplayLink) delegate method call when the [`hasNewPixelBuffer(forItemTime:)`](avplayeritemvideooutput/hasnewpixelbuffer(foritemtime:).md) method also returns [`true`](https://developer.apple.com/documentation/Swift/true).
+Typically, you call this method in response to a CVDisplayLink callback or a [`CADisplayLink`](https://developer.apple.com/documentation/quartzcore/cadisplaylink) delegate method call when the [`hasNewPixelBuffer(forItemTime:)`](avplayeritemvideooutput/hasnewpixelbuffer(foritemtime:).md) method also returns [`true`](https://developer.apple.com/documentation/swift/true).
 
-After calling this method, the video output object marks the pixel buffer data as having been acquired. This causes the [`hasNewPixelBuffer(forItemTime:)`](avplayeritemvideooutput/hasnewpixelbuffer(foritemtime:).md) method to return [`false`](https://developer.apple.com/documentation/Swift/false) unless newer data becomes available.
+After calling this method, the video output object marks the pixel buffer data as having been acquired. This causes the [`hasNewPixelBuffer(forItemTime:)`](avplayeritemvideooutput/hasnewpixelbuffer(foritemtime:).md) method to return [`false`](https://developer.apple.com/documentation/swift/false) unless newer data becomes available.
 
 ## Parameters
 

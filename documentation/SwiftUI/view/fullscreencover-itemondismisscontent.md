@@ -57,7 +57,7 @@ struct CoverData: Identifiable {
 }
 ```
 
-![A full-screen modal view that shows Custom](https://docs-assets.developer.apple.com/published/72cf50713ffecadcae7c1fb32b785b73/SwiftUI-FullScreenCoverItemOnDismissContent%402x.png)
+![A full-screen modal view that shows Custom](/images/com.apple.SwiftUI/SwiftUI-FullScreenCoverItemOnDismissContent@2x.png)
 
 ## Parameters
 

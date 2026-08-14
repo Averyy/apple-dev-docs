@@ -25,12 +25,12 @@ var duration: CMTime { get }
 
 This property indicates the duration of the item, not considering either its [`forwardPlaybackEndTime`](avplayeritem/forwardplaybackendtime.md) or [`reversePlaybackEndTime`](avplayeritem/reverseplaybackendtime.md).
 
-The system reports the value of this property as [`indefinite`](https://developer.apple.com/documentation/CoreMedia/CMTime/indefinite) until it loads the duration of the underlying asset. There are two ways to make sure you don’t access the value of duration until the system makes it available:
+The system reports the value of this property as [`indefinite`](https://developer.apple.com/documentation/coremedia/cmtime/indefinite) until it loads the duration of the underlying asset. There are two ways to make sure you don’t access the value of duration until the system makes it available:
 
 - Wait until the [`status`](avplayeritem/status-swift.property.md) of the player item is [`AVPlayerItem.Status.readyToPlay`](avplayeritem/status-swift.enum/readytoplay.md).
-- Register for key-value observation of the property and request the initial value. If the system reports the initial value as [`indefinite`](https://developer.apple.com/documentation/CoreMedia/CMTime/indefinite), wait for the player item to notify you when [`duration`](avplayeritem/duration.md) becomes available.
+- Register for key-value observation of the property and request the initial value. If the system reports the initial value as [`indefinite`](https://developer.apple.com/documentation/coremedia/cmtime/indefinite), wait for the player item to notify you when [`duration`](avplayeritem/duration.md) becomes available.
 
-> **Note**:  The value of [`duration`](avplayeritem/duration.md) may remain [`indefinite`](https://developer.apple.com/documentation/CoreMedia/CMTime/indefinite) for live streams.
+> **Note**:  The value of [`duration`](avplayeritem/duration.md) may remain [`indefinite`](https://developer.apple.com/documentation/coremedia/cmtime/indefinite) for live streams.
 
 ## See Also
 

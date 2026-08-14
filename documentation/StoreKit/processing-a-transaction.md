@@ -10,7 +10,7 @@ Implementing an in-app purchase flow consists of three stages. In the first stag
 
 The App Store calls the transaction queue observer after it processes the payment request. Your app then records information about the purchase for future launches, downloads the purchased content, and marks the transaction as finished.
 
-![A flowchart depicting the three stages of the in-app purchase process between your app and the App Store. First, your app makes a request for a product, the App Store provides that product information, and your app displays it. Next, the user selects a product, your app makes a payment request, and the App Store processes the payment. Finally, the App Store calls your app’s transaction queue observer, and your app delivers the purchased product. The third stage, delivering products, is highlighted.](https://docs-assets.developer.apple.com/published/5b88efb67bd1deaf5cc7b0e2c373d310/media-3314631%402x.png)
+![A flowchart depicting the three stages of the in-app purchase process between your app and the App Store. First, your app makes a request for a product, the App Store provides that product information, and your app displays it. Next, the user selects a product, your app makes a payment request, and the App Store processes the payment. Finally, the App Store calls your app’s transaction queue observer, and your app delivers the purchased product. The third stage, delivering products, is highlighted.](/images/com.apple.storekit/media-3314631@2x.png)
 
 ##### Monitor Transactions in the Queue
 

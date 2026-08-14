@@ -20,7 +20,7 @@ var accessibilityFrameInContainerSpace: CGRect { get set }
 
 #### Discussion
 
-The default value of this property is [`CGRectNull`](https://developer.apple.com/documentation/CoreGraphics/CGRectNull). Use this property to set the frame rectangle of an element whose frame rectangle could be affected by its container view. For example, use this property to set the frame rectangle for an element in a scroll view’s content view. Changing the value of this property automatically adjusts the rectangle in the [`accessibilityFrame`](uiaccessibilityelement/accessibilityframe.md) property.
+The default value of this property is [`CGRectNull`](https://developer.apple.com/documentation/coregraphics/cgrectnull). Use this property to set the frame rectangle of an element whose frame rectangle could be affected by its container view. For example, use this property to set the frame rectangle for an element in a scroll view’s content view. Changing the value of this property automatically adjusts the rectangle in the [`accessibilityFrame`](uiaccessibilityelement/accessibilityframe.md) property.
 
 ## See Also
 

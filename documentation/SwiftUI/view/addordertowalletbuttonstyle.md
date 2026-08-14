@@ -23,11 +23,11 @@ Sets the button’s style.
 
 ## See Also
 
-- [struct PayWithApplePayButton](../PassKit/PayWithApplePayButton.md)
+- [struct PayWithApplePayButton](../passkit/paywithapplepaybutton.md)
   A type that provides a button to pay with Apple pay.
-- [struct AddPassToWalletButton](../PassKit/AddPassToWalletButton.md)
+- [struct AddPassToWalletButton](../passkit/addpasstowalletbutton.md)
   A type that provides a button that enables people to add a new or existing pass to Apple Wallet.
-- [struct VerifyIdentityWithWalletButton](../PassKit/VerifyIdentityWithWalletButton.md)
+- [struct VerifyIdentityWithWalletButton](../passkit/verifyidentitywithwalletbutton.md)
   A type that displays a button to present the identity verification flow.
 - [func addPassToWalletButtonStyle(AddPassToWalletButtonStyle) -> some View](view/addpasstowalletbuttonstyle(_:).md)
   Sets the style to be used by the button. (see `PKAddPassButtonStyle`).
@@ -49,7 +49,7 @@ Sets the button’s style.
   Sets the style to be used by the button. (see `PayWithApplePayButtonStyle`).
 - [func verifyIdentityWithWalletButtonStyle(VerifyIdentityWithWalletButtonStyle) -> some View](view/verifyidentitywithwalletbuttonstyle(_:).md)
   Sets the style to be used by the button. (see `PKIdentityButtonStyle`).
-- [struct AsyncShareablePassConfiguration](../PassKit/AsyncShareablePassConfiguration.md)
+- [struct AsyncShareablePassConfiguration](../passkit/asyncshareablepassconfiguration.md)
 - [func transactionTask(CredentialTransaction.Configuration?, action: (CredentialTransaction) async -> Void) -> some View](view/transactiontask(_:action:).md)
   Provides a task to perform before this view appears
 

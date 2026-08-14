@@ -128,7 +128,7 @@ try wordTagger.write(to: URL(fileURLWithPath: "<#/path/to/save/AppleTagger.mlmod
 
 With your app open in Xcode, drag the `AppleTagger.mlmodel` file into the navigation pane. Xcode compiles the model and generates an `AppleTagger` class for use in your app. Select the `AppleTagger.mlmodel` file in Xcode to view additional information about the model.
 
-Create an [`NLModel`](https://developer.apple.com/documentation/NaturalLanguage/NLModel) in the Natural Language framework from the `AppleTagger` to ensure that the tokenization is consistent between training and deployment. Attach the model to an [`NLTagger`](https://developer.apple.com/documentation/NaturalLanguage/NLTagger) to tag sentences or paragraphs, using an existing or custom [`NLTagScheme`](https://developer.apple.com/documentation/NaturalLanguage/NLTagScheme).
+Create an [`NLModel`](https://developer.apple.com/documentation/naturallanguage/nlmodel) in the Natural Language framework from the `AppleTagger` to ensure that the tokenization is consistent between training and deployment. Attach the model to an [`NLTagger`](https://developer.apple.com/documentation/naturallanguage/nltagger) to tag sentences or paragraphs, using an existing or custom [`NLTagScheme`](https://developer.apple.com/documentation/naturallanguage/nltagscheme).
 
 ```swift
 import NaturalLanguage 

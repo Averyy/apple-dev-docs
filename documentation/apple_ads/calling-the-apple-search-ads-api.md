@@ -19,7 +19,7 @@ curl "https://api.searchads.apple.com/api/v5/campaigns" \
 | **Header** | **Description** |
 | --- | --- |
 | `Authorization` | **Required**. The authorization value is always `Bearer`. |
-| `X-AP-Context` | **Required**. The value is your `orgId`.  ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) **Note**: This isn’t a requirement when calling [`Get User ACL`](get-user-acl.md) and [`Get Me Details`](get-me-details.md). |
+| `X-AP-Context` | **Required**. The value is your `orgId`.  ![None](/images/com.apple.appleads/spacer.png) **Note**: This isn’t a requirement when calling [`Get User ACL`](get-user-acl.md) and [`Get Me Details`](get-me-details.md). |
 
 To return the `userId` and `parentOrgId` of an API caller, use [`Get Me Details`](get-me-details.md).
 

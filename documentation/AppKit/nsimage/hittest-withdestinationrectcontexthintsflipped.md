@@ -28,7 +28,7 @@ This method simulates the results of hit-testing the test rectangle as if the im
 - `imageRectDestSpace`: A rectangle representing the drawn size of the image.
 - `context`: A graphics context. This value can be `nil`.
 - `hints`: An optional dictionary of hints that provide more context for selecting or generating a `CGImage`, and may override properties of the `referenceContext`. See `Image Hint Dictionary Keys` for a summary of the possible key-value pairs.
-- `flipped`: [`true`](https://developer.apple.com/documentation/Swift/true) if the image is flipped, otherwise [`false`](https://developer.apple.com/documentation/Swift/false).
+- `flipped`: [`true`](https://developer.apple.com/documentation/swift/true) if the image is flipped, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
 
 
 ---

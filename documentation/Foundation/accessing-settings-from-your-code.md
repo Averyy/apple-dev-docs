@@ -18,7 +18,7 @@ To register a set of default settings, create a dictionary with all of your app�
 
 ##### Configure a Swiftui View with Settings Data
 
-If you use settings to configure your SwiftUI interface, wrap the variables you use to store those values with the [`AppStorage`](https://developer.apple.com/documentation/SwiftUI/AppStorage) property wrapper. Although you can fetch values from [`UserDefaults`](userdefaults.md) programmatically, the property wrapper automates the process of getting and setting the values.
+If you use settings to configure your SwiftUI interface, wrap the variables you use to store those values with the [`AppStorage`](https://developer.apple.com/documentation/swiftui/appstorage) property wrapper. Although you can fetch values from [`UserDefaults`](userdefaults.md) programmatically, the property wrapper automates the process of getting and setting the values.
 
 The following example shows a view with a variable that retrieves its value from the app’s settings. The `"ShowLineNumbers"` value in the declaration is the setting key SwiftUI uses to get and set the value. The initial value in the declaration becomes the default value, which SwiftUI adds to the registration domain of the defaults database.
 
@@ -32,7 +32,7 @@ struct EditingPrefs: View {
 }
 ```
 
-SwiftUI retrieves settings from the standard defaults database unless you specify a different option. To use a different set of settings, add the [`defaultAppStorage(_:)`](https://developer.apple.com/documentation/SwiftUI/Scene/defaultAppStorage(_:)) modifier to your view. The parameter for this modifier is the [`UserDefaults`](userdefaults.md) object that you provide. Specify the object that contains the settings you want to use instead. For example, specify a defaults object that contains settings your app shares with an app extension.
+SwiftUI retrieves settings from the standard defaults database unless you specify a different option. To use a different set of settings, add the [`defaultAppStorage(_:)`](https://developer.apple.com/documentation/swiftui/scene/defaultappstorage(_:)) modifier to your view. The parameter for this modifier is the [`UserDefaults`](userdefaults.md) object that you provide. Specify the object that contains the settings you want to use instead. For example, specify a defaults object that contains settings your app shares with an app extension.
 
 ##### Get and Set Stored Values Directly
 
@@ -59,11 +59,11 @@ When you assign a new value to a setting, your app’s local [`UserDefaults`](us
 
 When a setting changes, you might need to update portions of your app to reflect the new value. Changes can occur from both inside and outside your app. You can monitor these changes in several ways:
 
-- In a SwiftUI view, add the [`AppStorage`](https://developer.apple.com/documentation/SwiftUI/AppStorage) property wrapper to variables that store settings. SwiftUI updates the variable value in response to changes from both inside and outside your app.
+- In a SwiftUI view, add the [`AppStorage`](https://developer.apple.com/documentation/swiftui/appstorage) property wrapper to variables that store settings. SwiftUI updates the variable value in response to changes from both inside and outside your app.
 - To detect changes that occur inside your app, register for a [`UserDefaults.DidChangeMessage`](userdefaults/didchangemessage.md) or [`didChangeNotification`](userdefaults/didchangenotification.md) with your `UserDefaults` object.
 - To detect changes that occur outside your app, use key-value observing to monitor specific settings in your [`UserDefaults`](userdefaults.md) object. For example, use this approach to detect changes people make to your app-specific settings from the system Settings app. In macOS, external changes can also come from the `defaults` command-line tool.
 
-The following example shows a type that uses key-value observing to monitor changes to a setting. After creating the object, a call to the `configureObserver` function registers the object as an observer of the `ShowLineNumbers` setting in the standard defaults database. When the value of that setting changes, the defaults system calls the object’s [`observeValue(forKeyPath:of:change:context:)`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class/observeValue(forKeyPath:of:change:context:)) method to report the change. The system calls this method only when the actual value of the setting changes. If your code assigns a value to a setting, but the new value is the same as the old value, the defaults system doesn’t notify observers.
+The following example shows a type that uses key-value observing to monitor changes to a setting. After creating the object, a call to the `configureObserver` function registers the object as an observer of the `ShowLineNumbers` setting in the standard defaults database. When the value of that setting changes, the defaults system calls the object’s [`observeValue(forKeyPath:of:change:context:)`](https://developer.apple.com/documentation/objectivec/nsobject-swift.class/observevalue(forkeypath:of:change:context:)) method to report the change. The system calls this method only when the actual value of the setting changes. If your code assigns a value to a setting, but the new value is the same as the old value, the defaults system doesn’t notify observers.
 
 ```swift
 @objc class MyObserver: NSObject {

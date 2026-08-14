@@ -19,7 +19,7 @@ func glkView(_ view: GLKView, drawIn rect: CGRect)
 
 #### Discussion
 
-The semantics of this method are identical to those of the [`draw(_:)`](https://developer.apple.com/documentation/UIKit/UIView/draw(_:)) method; the [`GLKView`](glkview.md) object makes its OpenGL ES context the current context and binds its framebuffer as the target for OpenGL ES rendering commands. Your delegate method should then draw the view’s contents.
+The semantics of this method are identical to those of the [`draw(_:)`](https://developer.apple.com/documentation/uikit/uiview/draw(_:)) method; the [`GLKView`](glkview.md) object makes its OpenGL ES context the current context and binds its framebuffer as the target for OpenGL ES rendering commands. Your delegate method should then draw the view’s contents.
 
 ## Parameters
 

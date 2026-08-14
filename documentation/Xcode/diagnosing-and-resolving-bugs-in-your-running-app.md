@@ -44,7 +44,7 @@ To determine whether your code executes with minimal effect to timing, use a bre
 
 To log a variable value to the console without pausing, add a breakpoint with a Debugger Command action using `po` to print out the evaluation of an object, or `v` to print the value of a variable to the console. Select the Automatically continue after evaluating actions option for the breakpoint to prevent pausing.
 
-![Xcode displaying a breakpoint with a debugger command action. The debugger command is “po indexPath”.](https://docs-assets.developer.apple.com/published/f6ac0431871e13b8fe9ede7c698b989b/diagnosing-and-resolving-bugs-in-your-running-app-1%402x.png)
+![Xcode displaying a breakpoint with a debugger command action. The debugger command is “po indexPath”.](/images/com.apple.Xcode/diagnosing-and-resolving-bugs-in-your-running-app-1@2x.png)
 
 To log custom text to the console and add context to variable values, add a breakpoint with a Log Message action. Specify your custom text, and include expressions, the breakpoint name, or the breakpoint hit count to provide more information.
 
@@ -58,7 +58,7 @@ For more information on inspecting variables, see [`Setting breakpoints to pause
 
 An easily overlooked and common problem in development and testing is the overuse of CPU and memory. Xcode’s debugger provides gauges in the Debug navigator to help investigate potential problems. Monitor the gauges while you’re testing your app to uncover unusual usage. Click a gauge for a more detailed view.
 
-![Xcode displaying the CPU, Memory, Disk, and Network gauges in the debug navigator for a running app.](https://docs-assets.developer.apple.com/published/0bd53b098c7e8d44c54160d4f318e68c/diagnosing-and-resolving-bugs-in-your-running-app-2%402x.png)
+![Xcode displaying the CPU, Memory, Disk, and Network gauges in the debug navigator for a running app.](/images/com.apple.Xcode/diagnosing-and-resolving-bugs-in-your-running-app-2@2x.png)
 
 The CPU gauge shows the amount of CPU the app requires to process instructions over time. When your app is drawing the user interface, processing data it retrieves from the network, or performing calculations, it‘s normal to see CPU usage increase to fairly high numbers for a short period of time. When those tasks are complete and your app is idle and waiting for the user to perform an action, CPU usage should be zero or very low. Do additional analysis if CPU usage is:
 
@@ -87,7 +87,7 @@ The Network I/O gauge shows how much data your app reads from and writes to the 
 
 Diagnose the cause of memory leaks and abandoned memory with the memory graph. The observable symptom of a memory leak is memory usage that continues to increase over time, even when conditions in the app indicate that memory usage is decreasing. A memory leak can occur in a *retain cycle*, which is when objects maintain strong references to each other, but the app no longer references them. These objects remain in memory and the app can’t remove them. *Abandoned memory* occurs when you create objects and your code still references them, but your app no longer needs them or uses them.
 
-![The Xcode debugger toolbar for a running app, highlighting the Debug Memory Graph button.](https://docs-assets.developer.apple.com/published/298aadf579ae724a68e5cb8051662624/diagnosing-and-resolving-bugs-in-your-running-app-3%402x.png)
+![The Xcode debugger toolbar for a running app, highlighting the Debug Memory Graph button.](/images/com.apple.Xcode/diagnosing-and-resolving-bugs-in-your-running-app-3@2x.png)
 
 To see the memory graph in the debugger, pause your app at a breakpoint and click the Debug Memory Graph button in the debug bar. Alternatively, click the Debug Memory Graph button when the app is running to pause the app and show the memory graph.
 
@@ -95,7 +95,7 @@ The memory graph view replaces the stack trace in the Debug navigator with a lis
 
 A node’s memory graph shows all the memory references to that node, and highlights strong references. Control-click any node in the graph to perform more actions, such as accessing Quick Look or printing the description to the console. Choose Focus on Node to show the graph for the selected node. Click a reference to see its details, including the name of the variable, the type of reference, and the source and destination objects in memory.
 
-![Xcode displaying the memory graph, with an instance of DetailViewController highlighted. The debug navigator shows there are seven instances of DetailViewController and seven instances of FruitDetailView. The graph shows that one instance of FruitDetailView has a strong reference to DetailViewController. The memory inspector shows details about the reference from FruitDetailView to DetailViewController.](https://docs-assets.developer.apple.com/published/6fb1a393aef960969e4b0f56c3fcc176/diagnosing-and-resolving-bugs-in-your-running-app-4%402x.png)
+![Xcode displaying the memory graph, with an instance of DetailViewController highlighted. The debug navigator shows there are seven instances of DetailViewController and seven instances of FruitDetailView. The graph shows that one instance of FruitDetailView has a strong reference to DetailViewController. The memory inspector shows details about the reference from FruitDetailView to DetailViewController.](/images/com.apple.Xcode/diagnosing-and-resolving-bugs-in-your-running-app-4@2x.png)
 
 To resolve a memory leak for a retain cycle:
 

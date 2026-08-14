@@ -89,7 +89,7 @@ All of the methods in this protocol are optional. You can use them in situations
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 - [UIScrollViewDelegate](uiscrollviewdelegate.md)
 
 ## See Also

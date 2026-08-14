@@ -16,7 +16,7 @@ var profileSpace: Int16 { get set }
 
 #### Discussion
 
-This value maps to the [`kCMHEVCTemporalLevelInfoKey_ProfileSpace`](https://developer.apple.com/documentation/CoreMedia/kCMHEVCTemporalLevelInfoKey_ProfileSpace) sample buffer attachment, and is `-1` if this information isn’t available.
+This value maps to the [`kCMHEVCTemporalLevelInfoKey_ProfileSpace`](https://developer.apple.com/documentation/coremedia/kcmhevctemporallevelinfokey_profilespace) sample buffer attachment, and is `-1` if this information isn’t available.
 
 ## See Also
 

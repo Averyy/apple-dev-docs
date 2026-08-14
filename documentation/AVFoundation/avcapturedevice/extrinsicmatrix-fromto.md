@@ -19,7 +19,7 @@ class func extrinsicMatrix(from fromDevice: AVCaptureDevice, to toDevice: AVCapt
 
 #### Return Value
 
-A [`Data`](https://developer.apple.com/documentation/Foundation/Data) containing a [`matrix_float4x3`](https://developer.apple.com/documentation/simd/matrix_float4x3) matrix, which is a column major with 3 rows and 4 columns.
+A [`Data`](https://developer.apple.com/documentation/foundation/data) containing a [`matrix_float4x3`](https://developer.apple.com/documentation/simd/matrix_float4x3) matrix, which is a column major with 3 rows and 4 columns.
 
 #### Discussion
 

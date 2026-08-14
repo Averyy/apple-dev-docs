@@ -22,7 +22,7 @@ To use the Apple Pay Web Merchant Registration API,  you must meet the following
 
 - Your organization must be enrolled in the Apple Developer program. For more information about enrollment, see the “Enrolling as an Organization” section in [`What You Need To Enroll`](https://developer.apple.comhttps://developer.apple.com/programs/enroll/).
 - You must apply for access to the API. For more information about applying, see [`Applying to use the registration API and configuring IDs`](applying-to-use-the-registration-api-and-configuring-ids.md).
-- Your server must call the API using mutual authentication with Transport Layer Security (TLS) 1.2 or later, and one of the supported cipher suites. For a list of supported cipher suites, see [`Setting Up Your Server`](https://developer.apple.com/documentation/ApplePayontheWeb/setting-up-your-server).
+- Your server must call the API using mutual authentication with Transport Layer Security (TLS) 1.2 or later, and one of the supported cipher suites. For a list of supported cipher suites, see [`Setting Up Your Server`](https://developer.apple.com/documentation/applepayontheweb/setting-up-your-server).
 
 ## Topics
 

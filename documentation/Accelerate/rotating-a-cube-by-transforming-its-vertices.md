@@ -12,7 +12,7 @@ Rotate a cube through a series of keyframes using quaternion interpolation to tr
 
 Quaternions are fundamental to graphics programming and are often used as a compact representation of the rotation of an object in three dimensions. You can rotate a 3D object in space by applying unit quaternion actions to each of its vertices. The [`simd`](simd-library.md) module includes functions to interpolate between a series of rotational keyframes — defined by unit quaternions — with either the [`simd_slerp(_:_:_:)`](https://developer.apple.com/documentation/simd/simd_slerp(_:_:_:)-u2db) (for linear interpolation) or the [`simd_spline(_:_:_:_:_:)`](https://developer.apple.com/documentation/simd/simd_spline(_:_:_:_:_:)-1ok51) (for smooth, spline-based interpolation) functions.
 
-This sample code project defines a cube using eight vertices and transforms it through a series of rotations. The sample app provides a SwiftUI [`Toggle`](https://developer.apple.com/documentation/SwiftUI/Toggle) control that switches between a series of discrete spherical linear interpolations (that is, a series of separate arcs between each keyframe) and a continuous spline (that is, a single, smooth path between each keyframe).
+This sample code project defines a cube using eight vertices and transforms it through a series of rotations. The sample app provides a SwiftUI [`Toggle`](https://developer.apple.com/documentation/swiftui/toggle) control that switches between a series of discrete spherical linear interpolations (that is, a series of separate arcs between each keyframe) and a continuous spline (that is, a single, smooth path between each keyframe).
 
 ##### Define a Cube By Its Vertices
 
@@ -39,7 +39,7 @@ lazy var cubeVertices = cubeVertexOrigins
 
 This sample uses [`SceneKit`](https://developer.apple.comhttps://developer.apple.com/scenekit/) to render the cube that vertices in the `cubeVertices` array define. You can also use the technique that the sample code uses to rotate geometry in other technologies such as [`Metal`](https://developer.apple.comhttps://developer.apple.com/metal/). The following image shows the cube, defined by the vertices above, rendered in SceneKit:
 
-![An image of a cube.](https://docs-assets.developer.apple.com/published/d620197542839aaed7545f8a5e71ee2b/cube_2x.jpg)
+![An image of a cube.](/images/com.apple.accelerate/cube_2x.jpg)
 
 ##### Define the Quaternion Rotation Keyframes
 
@@ -74,7 +74,7 @@ let vertexRotations: [simd_quatd] = [
 
 ##### Animate Between Keyframes with Spherical Interpolation
 
-This sample uses a [`CVDisplayLink`](https://developer.apple.com/documentation/CoreVideo/cvdisplaylink-k0k) instance to schedule updates to the cube’s vertices and calls the  `vertexRotationStep()` function every frame.
+This sample uses a [`CVDisplayLink`](https://developer.apple.com/documentation/corevideo/cvdisplaylink-k0k) instance to schedule updates to the cube’s vertices and calls the  `vertexRotationStep()` function every frame.
 
 ```swift
 CVDisplayLinkCreateWithCGDisplay(CGMainDisplayID(), &displayLink)
@@ -146,7 +146,7 @@ if vertexRotationTime >= 1 {
 
 Over time, the cube animates through the series of keyframes. The following image shows the sharp change in direction as the cube rotates between the keyframes:
 
-![An image of a cube with the path of one of its vertices rendered as a line after a series of spherical interpolated rotations.](https://docs-assets.developer.apple.com/published/923a4c2dedbf09a6148d0ff939f82dfd/spherical_interpolation_2x.png)
+![An image of a cube with the path of one of its vertices rendered as a line after a series of spherical interpolated rotations.](/images/com.apple.accelerate/spherical_interpolation_2x.png)
 
 ##### Animate Between Keyframes with Spline Interpolation
 
@@ -163,7 +163,7 @@ quaternion = simd_spline(
 
 The image below shows that the spline interpolation creates transitions between the quaternion keyframes that are smoother than the linear spherical interpolation.
 
-![An image of a cube with the path of one of its vertices rendered as a line after a series of spline interpolated rotations.](https://docs-assets.developer.apple.com/published/118465d071bd0496ec42c80c99db4a0e/spline_interpolation_2x.png)
+![An image of a cube with the path of one of its vertices rendered as a line after a series of spline interpolated rotations.](/images/com.apple.accelerate/spline_interpolation_2x.png)
 
 ## See Also
 

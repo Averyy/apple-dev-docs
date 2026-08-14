@@ -27,7 +27,7 @@ When you receive an [`EKEventStoreChangedNotification`](ekeventstorechangednoti
 
 Because your local data is often invalidated or incomplete when a change occurs in the Calendar database, you should refetch your current date range of events whenever you receive an [`EKEventStoreChangedNotification`](ekeventstorechangednotification.md) notification. If you are modifying an event and do not want to refetch it unless it is absolutely necessary, call the [`refreshSourcesIfNecessary()`](ekeventstore/refreshsourcesifnecessary().md) method on the event. If the method returns `YES`, you can continue to use the event; otherwise, you must refetch it. 
 
-> **Note**:  Events being modified in an event view controller with EventKitUI for iOS are updated automatically when a change occurs in the Calendar database. See [`EventKit UI`](https://developer.apple.com/documentation/EventKitUI) for more.
+> **Note**:  Events being modified in an event view controller with EventKitUI for iOS are updated automatically when a change occurs in the Calendar database. See [`EventKit UI`](https://developer.apple.com/documentation/eventkitui) for more.
 
 ## See Also
 

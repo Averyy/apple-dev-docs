@@ -20,7 +20,7 @@ class ScreenSaverView
 
 > **Note**:  When someone previews your screen saver in System Preferences, the system instantiates your [`ScreenSaverView`](screensaverview.md) subclass.
 
-You can draw from your view’s [`draw(_:)`](screensaverview/draw(_:).md) method, or you can draw directly from the [`animateOneFrame()`](screensaverview/animateoneframe().md) method. If you prefer to use the [`draw(_:)`](screensaverview/draw(_:).md) method, use the [`animateOneFrame()`](screensaverview/animateoneframe().md) method to call the [`setNeedsDisplay(_:)`](https://developer.apple.com/documentation/AppKit/NSView/setNeedsDisplay(_:)) method and specify the portions of your view that require updates.
+You can draw from your view’s [`draw(_:)`](screensaverview/draw(_:).md) method, or you can draw directly from the [`animateOneFrame()`](screensaverview/animateoneframe().md) method. If you prefer to use the [`draw(_:)`](screensaverview/draw(_:).md) method, use the [`animateOneFrame()`](screensaverview/animateoneframe().md) method to call the [`setNeedsDisplay(_:)`](https://developer.apple.com/documentation/appkit/nsview/setneedsdisplay(_:)) method and specify the portions of your view that require updates.
 
 ## Topics
 
@@ -58,24 +58,24 @@ You can draw from your view’s [`draw(_:)`](screensaverview/draw(_:).md) method
 ## Relationships
 
 ### Inherits From
-- [NSView](../AppKit/NSView.md)
+- [NSView](../appkit/nsview.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSAccessibilityElementProtocol](../AppKit/NSAccessibilityElementProtocol.md)
-- [NSAccessibilityProtocol](../AppKit/NSAccessibilityProtocol.md)
-- [NSAnimatablePropertyContainer](../AppKit/NSAnimatablePropertyContainer.md)
-- [NSAppearanceCustomization](../AppKit/NSAppearanceCustomization.md)
-- [NSCoding](../Foundation/NSCoding.md)
-- [NSDraggingDestination](../AppKit/NSDraggingDestination.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [NSStandardKeyBindingResponding](../AppKit/NSStandardKeyBindingResponding.md)
-- [NSTouchBarProvider](../AppKit/NSTouchBarProvider.md)
-- [NSUserActivityRestoring](../AppKit/NSUserActivityRestoring.md)
-- [NSUserInterfaceItemIdentification](../AppKit/NSUserInterfaceItemIdentification.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSAccessibilityElementProtocol](../appkit/nsaccessibilityelementprotocol.md)
+- [NSAccessibilityProtocol](../appkit/nsaccessibilityprotocol.md)
+- [NSAnimatablePropertyContainer](../appkit/nsanimatablepropertycontainer.md)
+- [NSAppearanceCustomization](../appkit/nsappearancecustomization.md)
+- [NSCoding](../foundation/nscoding.md)
+- [NSDraggingDestination](../appkit/nsdraggingdestination.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSStandardKeyBindingResponding](../appkit/nsstandardkeybindingresponding.md)
+- [NSTouchBarProvider](../appkit/nstouchbarprovider.md)
+- [NSUserActivityRestoring](../appkit/nsuseractivityrestoring.md)
+- [NSUserInterfaceItemIdentification](../appkit/nsuserinterfaceitemidentification.md)
 
 ## See Also
 

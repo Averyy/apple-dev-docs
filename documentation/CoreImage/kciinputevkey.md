@@ -21,7 +21,7 @@ let kCIInputEVKey: String
 
 #### Discussion
 
-A key for a scalar value ([`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber)) that specifies how many F-stops brighter or darker the image should be.
+A key for a scalar value ([`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber)) that specifies how many F-stops brighter or darker the image should be.
 
 ## See Also
 

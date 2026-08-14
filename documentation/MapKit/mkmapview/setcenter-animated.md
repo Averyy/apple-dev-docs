@@ -26,7 +26,7 @@ Changing the center coordinate centers the map on the new coordinate without cha
 ## Parameters
 
 - `coordinate`: The new center coordinate for the map.
-- `animated`: Specify [`true`](https://developer.apple.com/documentation/Swift/true) if you want the map view to scroll to the new location or [`false`](https://developer.apple.com/documentation/Swift/false) if you want the map to display the new location immediately.
+- `animated`: Specify [`true`](https://developer.apple.com/documentation/swift/true) if you want the map view to scroll to the new location or [`false`](https://developer.apple.com/documentation/swift/false) if you want the map to display the new location immediately.
 
 ## See Also
 

@@ -17,7 +17,7 @@ Configurations for scenes you use to display navigation content on a CarPlay Ins
 
 After setting [`CPSupportsInstrumentClusterNavigationScene`](information-property-list/uiapplicationscenemanifest/cpsupportsinstrumentclusternavigationscene.md) to `YES`, use this key to specify a scene configuration when displaying navigation content in the CarPlay Instrument Cluster.
 
-For more information, see [`Displaying Content in CarPlay`](https://developer.apple.com/documentation/CarPlay/displaying-content-in-carplay).
+For more information, see [`Displaying Content in CarPlay`](https://developer.apple.com/documentation/carplay/displaying-content-in-carplay).
 
 ## Topics
 

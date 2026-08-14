@@ -29,7 +29,7 @@ While people can use devices like iPhone 15 Pro and Apple Vision Pro to capture 
 - A 3D game can export spatial screenshots or gameplay videos.
 - A 3D rendering engine can render spatial images or video sequences of a 3D scene.
 
-Spatial photos and videos both use the same spatial metadata, but encode it in different ways. For examples of how to write spatial metadata to stereo photos and videos your app creates, check out [`Writing spatial photos`](writing-spatial-photos.md) and [`Converting side-by-side 3D video to multiview HEVC and spatial video`](https://developer.apple.com/documentation/AVFoundation/converting-side-by-side-3d-video-to-multiview-hevc-and-spatial-video).
+Spatial photos and videos both use the same spatial metadata, but encode it in different ways. For examples of how to write spatial metadata to stereo photos and videos your app creates, check out [`Writing spatial photos`](writing-spatial-photos.md) and [`Converting side-by-side 3D video to multiview HEVC and spatial video`](https://developer.apple.com/documentation/avfoundation/converting-side-by-side-3d-video-to-multiview-hevc-and-spatial-video).
 
 ##### Specify Camera Properties
 
@@ -61,7 +61,7 @@ People can experience spatial media immersively at true scale. Consider adding s
 
 Spatial metadata needs to reflect the true camera properties. Ensure you know enough about the capture-time characteristics of the left- and right-eye cameras to provide accurate spatial metadata for them.
 
-Camera properties in spatial videos need to be constant throughout the duration of the video. Don’t write spatial metadata to a stereo video if the baseline, horizontal field of view, or recommended disparity adjustment of your stereo video varies over time. For example, a movie or TV show that was captured on multiple stereo cameras with different fields of view might not have consistent spatial metadata across its entire duration, and might not be appropriate for spatial presentation. For this kind of content, prefer [`VideoPlayer`](https://developer.apple.com/documentation/AVKit/VideoPlayer) or [`AVPlayerViewController`](https://developer.apple.com/documentation/AVKit/AVPlayerViewController) for stereo playback presentation.
+Camera properties in spatial videos need to be constant throughout the duration of the video. Don’t write spatial metadata to a stereo video if the baseline, horizontal field of view, or recommended disparity adjustment of your stereo video varies over time. For example, a movie or TV show that was captured on multiple stereo cameras with different fields of view might not have consistent spatial metadata across its entire duration, and might not be appropriate for spatial presentation. For this kind of content, prefer [`VideoPlayer`](https://developer.apple.com/documentation/avkit/videoplayer) or [`AVPlayerViewController`](https://developer.apple.com/documentation/avkit/avplayerviewcontroller) for stereo playback presentation.
 
 Spatial media is always rectilinear, typically with a field of view less than 90 degrees. If your content uses an equirectangular, fisheye, or other non-rectilinear projection, don’t encode it as spatial media.
 

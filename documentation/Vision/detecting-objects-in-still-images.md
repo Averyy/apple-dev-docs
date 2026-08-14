@@ -14,7 +14,7 @@ Locate and demarcate rectangles, faces, barcodes, and text in images using the V
 
 The [`Vision`](https://developer.apple.comhttps://developer.apple.com/documentation/vision) framework can detect rectangles, faces, text, and barcodes at any orientation.  This sample code shows how to create requests to detect these types of objects, and how to interpret the results of those requests.  To help you visualize where an observation occurs, and how it looks, this code uses Core Animation layers to draw paths around detected features in images.  For example, the following mock gift card has a QR code and rectangles that surface through the detector.  The sample highlights not only text blocks (shown in red) but also individual characters within text (shown in purple):
 
-![The left side shows a sample input image that the end user feeds into the app.  The right side shows the output image with the detected text and QR code.](https://docs-assets.developer.apple.com/published/c84d5b21bfb5dbea951e4a37dc161ff7/DevGiftCard.png)
+![The left side shows a sample input image that the end user feeds into the app.  The right side shows the output image with the detected text and QR code.](/images/Vision/DevGiftCard.png)
 
 This sample code project runs on iOS 11. However, you can also use Vision in your own apps on macOS 10.13, iOS 11, or tvOS 11.
 

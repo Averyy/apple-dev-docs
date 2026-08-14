@@ -23,11 +23,11 @@ var outputPixelFormat: OSType { get set }
 
 The property supports the following values:
 
-- [`kCVPixelFormatType_OneComponent8`](https://developer.apple.com/documentation/CoreVideo/kCVPixelFormatType_OneComponent8)
-- [`kCVPixelFormatType_OneComponent16Half`](https://developer.apple.com/documentation/CoreVideo/kCVPixelFormatType_OneComponent16Half)
-- [`kCVPixelFormatType_OneComponent32Float`](https://developer.apple.com/documentation/CoreVideo/kCVPixelFormatType_OneComponent32Float)
+- [`kCVPixelFormatType_OneComponent8`](https://developer.apple.com/documentation/corevideo/kcvpixelformattype_onecomponent8)
+- [`kCVPixelFormatType_OneComponent16Half`](https://developer.apple.com/documentation/corevideo/kcvpixelformattype_onecomponent16half)
+- [`kCVPixelFormatType_OneComponent32Float`](https://developer.apple.com/documentation/corevideo/kcvpixelformattype_onecomponent32float)
 
-The default value is [`kCVPixelFormatType_OneComponent8`](https://developer.apple.com/documentation/CoreVideo/kCVPixelFormatType_OneComponent8).
+The default value is [`kCVPixelFormatType_OneComponent8`](https://developer.apple.com/documentation/corevideo/kcvpixelformattype_onecomponent8).
 
 ## See Also
 

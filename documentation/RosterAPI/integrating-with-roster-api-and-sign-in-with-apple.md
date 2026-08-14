@@ -6,9 +6,9 @@ Associate someone’s Managed Apple Account with their identity in Apple School 
 
 #### Overview
 
-When your app uses [`Sign in with Apple`](https://developer.apple.com/documentation/SigninwithApple) to authenticate someone, Apple checks whether that person’s Managed Apple Account is associated with an Apple School Manager (ASM) organization that’s authorized Roster API for your app. The identity token contains identifiers that you use with Roster API to fetch information about the organization and person.
+When your app uses [`Sign in with Apple`](https://developer.apple.com/documentation/signinwithapple) to authenticate someone, Apple checks whether that person’s Managed Apple Account is associated with an Apple School Manager (ASM) organization that’s authorized Roster API for your app. The identity token contains identifiers that you use with Roster API to fetch information about the organization and person.
 
-For more information about decoding an identity token that you receive from Sign in with Apple, see [`id_token`](https://developer.apple.com/documentation/SigninwithAppleJS/AuthorizationI/id_token). The decoded identity token is a JSON object with the fields shown in the example below.
+For more information about decoding an identity token that you receive from Sign in with Apple, see [`id_token`](https://developer.apple.com/documentation/signinwithapplejs/authorizationi/id_token). The decoded identity token is a JSON object with the fields shown in the example below.
 
 ```javascript
 {

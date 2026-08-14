@@ -47,7 +47,7 @@ Grid(horizontalSpacing: 1, verticalSpacing: 1) {
 
 The grid creates red reference squares in the first row and column to establish row and column sizes. Without the anchor modifier, the blue marker in the remaining cell would appear at the center of its cell, because of the grid’s default [`center`](alignment/center.md) alignment. With the anchor modifier shown in the code above, the grid aligns the one quarter point of the marker with the one quarter point of its cell in the x direction, as measured from the origin at the top left of the cell. The grid also aligns the three quarters point of the marker with the three quarters point of the cell in the y direction:
 
-![A screenshot of a grid with two rows and two columns. The cells in](https://docs-assets.developer.apple.com/published/c96bd07fdbfc0ca0025e690f35ccd984/View-gridCellAnchor-1-iOS%402x.png)
+![A screenshot of a grid with two rows and two columns. The cells in](/images/com.apple.SwiftUI/View-gridCellAnchor-1-iOS@2x.png)
 
 [`UnitPoint`](unitpoint.md) defines many convenience points that correspond to the typical alignment guides, which you can use as well. For example, you can use [`topTrailing`](unitpoint/toptrailing.md) to align the top and trailing edges of a view in a cell with the top and trailing edges of the cell:
 
@@ -56,7 +56,7 @@ Color.blue.frame(width: 10, height: 10)
     .gridCellAnchor(.topTrailing)
 ```
 
-![A screenshot of a grid with two rows and two columns. The cells in](https://docs-assets.developer.apple.com/published/ccaf515085dff8fa2f4640e0034ddfc2/View-gridCellAnchor-2-iOS%402x.png)
+![A screenshot of a grid with two rows and two columns. The cells in](/images/com.apple.SwiftUI/View-gridCellAnchor-2-iOS@2x.png)
 
 Applying the anchor-based alignment strategy to a single cell doesn’t affect the alignment strategy that the grid uses on other cells.
 
@@ -81,7 +81,7 @@ Grid(alignment: .center, horizontalSpacing: 1, verticalSpacing: 1) {
 
 The grid makes this conversion in part to avoid ambiguity. Each column has its own horizontal guide, and it isn’t clear which of these a cell that spans multiple columns should align with. Further, in the example above, neither of the center alignment guides for the second or third column would provide the expected behavior, which is to center the marker in the merged cell. Anchor alignment provides this behavior:
 
-![A screenshot of a grid with two rows and three columns. The cells in](https://docs-assets.developer.apple.com/published/e5b44b464f4d772d3518bdfed0e3ef0d/View-gridCellAnchor-3-iOS%402x.png)
+![A screenshot of a grid with two rows and three columns. The cells in](/images/com.apple.SwiftUI/View-gridCellAnchor-3-iOS@2x.png)
 
 ## Parameters
 

@@ -29,7 +29,7 @@ This function calculates the element-wise product of vectors `A` and `B`, adds s
     D[n] = A[n] * B[n] + C;
 ```
 
-![A diagram showing the operation of this function. There are four rows. The top row represents the input vectors, A and B, with three boxes of each. The second row represents the operation that multiplies A and B, with three boxes, as well as the input scalar C with one box. The third row represents the addition operation as three boxes. The bottom row represents the output vector D as three boxes. The diagram has connecting lines from the input vectors to the operations, and from the operations to the output vector.   ](https://docs-assets.developer.apple.com/published/99bc516d97b0d8928cf6579a5da72c0f/media-4387441%402x.png)
+![A diagram showing the operation of this function. There are four rows. The top row represents the input vectors, A and B, with three boxes of each. The second row represents the operation that multiplies A and B, with three boxes, as well as the input scalar C with one box. The third row represents the addition operation as three boxes. The bottom row represents the output vector D as three boxes. The diagram has connecting lines from the input vectors to the operations, and from the operations to the output vector.   ](/images/com.apple.accelerate/media-4387441@2x.png)
 
 The following code shows an example of using this function:
 

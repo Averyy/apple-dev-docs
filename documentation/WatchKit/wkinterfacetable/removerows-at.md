@@ -16,7 +16,7 @@ func removeRows(at rows: IndexSet)
 
 #### Discussion
 
-This method removes row controllers from the table using the same semantics defined by the [`removeObjects(at:)`](https://developer.apple.com/documentation/Foundation/NSMutableArray/removeObjects(at:)) method of [`NSMutableArray`](https://developer.apple.com/documentation/Foundation/NSMutableArray).
+This method removes row controllers from the table using the same semantics defined by the [`removeObjects(at:)`](https://developer.apple.com/documentation/foundation/nsmutablearray/removeobjects(at:)) method of [`NSMutableArray`](https://developer.apple.com/documentation/foundation/nsmutablearray).
 
 ## Parameters
 

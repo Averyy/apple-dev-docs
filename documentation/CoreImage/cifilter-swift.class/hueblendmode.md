@@ -43,7 +43,7 @@ func hueBlendMode(inputImage: CIImage, backgroundImage: CIImage) -> CIImage {
 }
 ```
 
-![The image on the top left shows a beach with multiple palm trees and a rainbow arching across the blue sky.  The image below is a gradient image displaying a gradual color shift from purple to a dark orange. The image on the right shows the output from applying a hue-blend mode filter. The result displays very little detail: the rainbow and sky are not very  visible, the trees on the beach are a lighter shade of green, and the beach has colors from the gradient photo.](https://docs-assets.developer.apple.com/published/b6e2d1cf8904120975dd33de34b1d861/media-3546412%402x.png)
+![The image on the top left shows a beach with multiple palm trees and a rainbow arching across the blue sky.  The image below is a gradient image displaying a gradual color shift from purple to a dark orange. The image on the right shows the output from applying a hue-blend mode filter. The result displays very little detail: the rainbow and sky are not very  visible, the trees on the beach are a lighter shade of green, and the beach has colors from the gradient photo.](/images/com.apple.coreimage/media-3546412@2x.png)
 
 ## See Also
 

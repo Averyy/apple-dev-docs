@@ -51,7 +51,7 @@ VStack {
 
 > ❗ **Important**: The visual result of a drawing group only includes views that SwiftUI rasterizes directly using its own drawing primitives, such as text, images, shapes, and composite views of these types. It will not include views whose contents are composited by Core Animation layers, such as more complex controls and containers, web views, media players, and most types of UIKit and AppKit views. In those cases, the output displays a placeholder image instead. Whether a particular view is rendered using SwiftUI’s own drawing primitives or composited by Core Animation may change in future releases. However, any view that is currently supported is guaranteed to remain supported.
 
-![A screenshot showing the effects on several stacks configured as a](https://docs-assets.developer.apple.com/published/c81675b1f1b78f79e131cdabc7d7a89a/SwiftUI-View-drawingGroup%402x.png)
+![A screenshot showing the effects on several stacks configured as a](/images/com.apple.SwiftUI/SwiftUI-View-drawingGroup@2x.png)
 
 ## Parameters
 

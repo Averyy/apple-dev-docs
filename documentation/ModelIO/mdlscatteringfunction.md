@@ -23,7 +23,7 @@ class MDLScatteringFunction
 
 The set of material properties that define a material’s response to lighting is also called the *Bidirectional Reflectance Distribution Function*, or BRDF, for surfaces shaded using that [`MDLMaterial`](mdlmaterial.md) object. The set of properties defined by the [`MDLScatteringFunction`](mdlscatteringfunction.md) class itself describes a Lambertian shading model with Blinn-Phong specular response; subclasses can define a set of properties for other shading models.
 
-Creating a new scattering function object with the inherited [`init()`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class/init()) method creates a set of material properties with useful default values for this shading model.
+Creating a new scattering function object with the inherited [`init()`](https://developer.apple.com/documentation/objectivec/nsobject-swift.class/init()) method creates a set of material properties with useful default values for this shading model.
 
 ## Topics
 
@@ -51,17 +51,17 @@ Creating a new scattering function object with the inherited [`init()`](https://
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Inherited By
 - [MDLPhysicallyPlausibleScatteringFunction](mdlphysicallyplausiblescatteringfunction.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
 - [MDLNamed](mdlnamed.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

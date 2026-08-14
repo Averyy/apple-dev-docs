@@ -16,19 +16,19 @@ Before you create a project, collect the information that Xcode needs to identif
 - **Team.** The email or phone number for the Apple account that you want to use as a developer if you haven’t already added it to Xcode > Settings > Apple Accounts.
 - **Organization identifier.** A reverse DNS string that uniquely identifies your organization. If you don’t have a company identifier, use `com.example.` followed by your organization name, and replace it before you distribute your app.
 
-> ❗ **Important**: The organization identifier is part of the bundle ID ([`CFBundleIdentifier`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/CFBundleIdentifier)) by default. Xcode uses the bundle ID to register an App ID when you first run your app on a device. The number of App IDs are limited if you are not a member of the Apple Developer Program, and you can’t change the App ID after you upload a build to App Store Connect, so choose the organization identifier carefully.
+> ❗ **Important**: The organization identifier is part of the bundle ID ([`CFBundleIdentifier`](https://developer.apple.com/documentation/bundleresources/information-property-list/cfbundleidentifier)) by default. Xcode uses the bundle ID to register an App ID when you first run your app on a device. The number of App IDs are limited if you are not a member of the Apple Developer Program, and you can’t change the App ID after you upload a build to App Store Connect, so choose the organization identifier carefully.
 
 ##### Create a Project
 
 Launch Xcode, then click Create New Project in the Xcode window or choose File > New > Project. In the sheet that appears, select a specific platform or Multiplatform for an app that runs on all platforms. Then select a template under Application depending on the platform you select.
 
-![Screenshot of an Xcode window depicting the choices for a template for a new project. At the top are a list of platforms from which to choose, including Multiplatform, iOS, and macOS. In the lower half of the window, options for types of applications are displayed, such as a game and an augmented reality app.](https://docs-assets.developer.apple.com/published/2977182f20663b6f289a6a72af2105d9/creating-an-xcode-project-for-an-app-1%402x.png)
+![Screenshot of an Xcode window depicting the choices for a template for a new project. At the top are a list of platforms from which to choose, including Multiplatform, iOS, and macOS. In the lower half of the window, options for types of applications are displayed, such as a game and an augmented reality app.](/images/com.apple.Xcode/creating-an-xcode-project-for-an-app-1@2x.png)
 
 If you see a banner that says you don’t have support for a platform, you can create the project, but you can’t build and run it on a device. To install the platform now, click the Get button on the right of the banner. Otherwise, you can manage downloads in the Components settings later (see [`Downloading and installing additional Xcode components`](downloading-and-installing-additional-xcode-components.md)).
 
 In the following sheet, enter a *product name* and *organization identifier* that Xcode uses to create the *bundle identifier* that identifies your app throughout the system. Optionally, choose an account from the Team pop-up menu that Xcode uses to code sign your app.
 
-![Screenshot showing new project options where you enter a product name and organization identifier, and choose a Team and other options depending on the template.](https://docs-assets.developer.apple.com/published/d6991a12aa7b3baa411606d37940947c/creating-an-xcode-project-for-an-app-2%402x.png)
+![Screenshot showing new project options where you enter a product name and organization identifier, and choose a Team and other options depending on the template.](/images/com.apple.Xcode/creating-an-xcode-project-for-an-app-2@2x.png)
 
 In the sheets that appear, choose other options from pop-up menus depending on the template you select, such as testing systems, storage, interface, and language. In the last sheet, choose a location for your project, select other options, and click Create.
 
@@ -38,7 +38,7 @@ When you create a project or open an existing project, the *main window* appears
 
 You can access different parts of your project from the *navigator area* on the left. Use the *Project navigator* to select files you want to edit in the *editor area*. For example, when you select a Swift file in the Project navigator, the file opens in the *source editor,* where you can modify the code and set breakpoints.
 
-![Screenshot showing the location of the main window areas: the toolbar at the top, navigator area on the far left, editor area in the middle, canvas area on the right, debug area below, and inspector area on the far right.](https://docs-assets.developer.apple.com/published/9b171f99285cc30c5df4e42284a5c016/creating-an-xcode-project-for-an-app-3%402x.png)
+![Screenshot showing the location of the main window areas: the toolbar at the top, navigator area on the far left, editor area in the middle, canvas area on the right, debug area below, and inspector area on the far right.](/images/com.apple.Xcode/creating-an-xcode-project-for-an-app-3@2x.png)
 
 Details about the selected file also appear in the *inspector area* on the right. In the inspector area, you can select the File inspector to edit properties of a file. If you want to hide the inspector to make more room for the editor, click the “Hide or show the Inspectors” button in the upper-right corner of the toolbar.
 
@@ -50,9 +50,9 @@ If you use SwiftUI, you can see an interactive preview of the user interface whi
 
 To change properties you enter when creating your project, select the project name in the Project navigator that appears at the top, then the *project editor* opens in the editor area. Most of the properties you entered appear on the *General pane* of the project editor.
 
-![Screenshot showing the General pane of the project editor with the Identity and Deployment Info settings revealed.](https://docs-assets.developer.apple.com/published/712e5f55a3af879cd71d8bada4e3793b/creating-an-xcode-project-for-an-app-4%402x.png)
+![Screenshot showing the General pane of the project editor with the Identity and Deployment Info settings revealed.](/images/com.apple.Xcode/creating-an-xcode-project-for-an-app-4@2x.png)
 
-> **Note**: Most templates are preconfigured with an asset catalog for the app icon, but you can use a multilayer Icon Composer file that supports [`Liquid Glass`](https://developer.apple.com/documentation/TechnologyOverviews/liquid-glass) instead. For more information, see [`Creating your app icon using Icon Composer`](creating-your-app-icon-using-icon-composer.md).
+> **Note**: Most templates are preconfigured with an asset catalog for the app icon, but you can use a multilayer Icon Composer file that supports [`Liquid Glass`](https://developer.apple.com/documentation/technologyoverviews/liquid-glass) instead. For more information, see [`Creating your app icon using Icon Composer`](creating-your-app-icon-using-icon-composer.md).
 
 ## See Also
 
@@ -62,7 +62,7 @@ To change properties you enter when creating your project, select the project na
   Iterate designs quickly and preview your apps’ displays across different Apple devices.
 - [Building and running an app](building-and-running-an-app.md)
   Compile your source files and assemble an app bundle to run on a device or simulator.
-- [Xcode updates](../Updates/Xcode.md)
+- [Xcode updates](../updates/xcode.md)
   Learn about important changes to Xcode.
 
 

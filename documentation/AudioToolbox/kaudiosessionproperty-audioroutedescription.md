@@ -20,7 +20,7 @@ var kAudioSessionProperty_AudioRouteDescription: Int { get }
 
 #### Discussion
 
-A read-only [`CFDictionary`](https://developer.apple.com/documentation/CoreFoundation/CFDictionary) object containing information about an audio route.
+A read-only [`CFDictionary`](https://developer.apple.com/documentation/corefoundation/cfdictionary) object containing information about an audio route.
 
 #### Discussion
 

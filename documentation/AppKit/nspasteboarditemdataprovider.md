@@ -29,7 +29,7 @@ You can specify an object as a pasteboard data provider for a pasteboard item us
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

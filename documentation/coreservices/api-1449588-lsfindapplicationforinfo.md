@@ -28,11 +28,11 @@ Thread-safe since Mac OS version 10.2.
 
 ## Parameters
 
-- `inCreator`: The creator signature to consider. Comparison of creator signatures is case-sensitive. Pass   if the application’s creator signature is unimportant.
-- `inBundleID`: A Core Foundation string object specifying the bundle ID to consider; see the   in the Core Foundation Reference Documentation for a description of the   data type. Comparison of bundle IDs is case-insensitive. Pass   if the application’s bundle ID is unimportant.
-- `inName`: A Core Foundation string object specifying the filename to consider; see the   in the Core Foundation Reference Documentation for a description of the   data type. The string must include any extension (such as  ) that is part of the filename. Comparison of filenames is case-insensitive. Pass   if the application’s filename is unimportant.
-- `outAppRef`: A pointer to a file-system reference that, on return, will identify the requested application; see the   in the Carbon File Management Documentation for a description of the   data type. Pass   if you are not interested in identifying the application in this form; however, this parameter and   cannot both be  .
-- `outAppURL`: Despite the absence of the word   in its name, this function retains the URL reference object on your behalf; you are responsible for releasing this object.
+- `inCreator`: The creator signature to consider. Comparison of creator signatures is case-sensitive. Pass `kLSUnknownCreator` if the application’s creator signature is unimportant.
+- `inBundleID`: A Core Foundation string object specifying the bundle ID to consider; see the *CFString Reference* in the Core Foundation Reference Documentation for a description of the `CFStringRef` data type. Comparison of bundle IDs is case-insensitive. Pass `NULL` if the application’s bundle ID is unimportant.
+- `inName`: A Core Foundation string object specifying the filename to consider; see the *CFString Reference* in the Core Foundation Reference Documentation for a description of the `CFStringRef` data type. The string must include any extension (such as `'.app'`) that is part of the filename. Comparison of filenames is case-insensitive. Pass `NULL` if the application’s filename is unimportant.
+- `outAppRef`: A pointer to a file-system reference that, on return, will identify the requested application; see the *File Manager Reference* in the Carbon File Management Documentation for a description of the `FSRef` data type. Pass `NULL` if you are not interested in identifying the application in this form; however, this parameter and `outAppURL` cannot both be `NULL`.
+- `outAppURL`: A pointer to a Core Foundation URL reference that, on return, will identify the requested application; see the *CFURL Reference* in the Core Foundation Reference Documentation for a description of the `CFURLRef` data type. Pass `NULL` if you are not interested in identifying the application in this form; however, this parameter and `outAppRef` cannot both be `NULL`. Despite the absence of the word `Copy` in its name, this function retains the URL reference object on your behalf; you are responsible for releasing this object.
 
 ## See Also
 

@@ -24,7 +24,7 @@ A row template initialized for displaying compound predicates of the types speci
 
 ## Parameters
 
-- `compoundTypes`: An array of [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) objects specifying compound predicate types. See [`NSCompoundPredicate.LogicalType`](https://developer.apple.com/documentation/Foundation/NSCompoundPredicate/LogicalType) for possible values.
+- `compoundTypes`: An array of [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) objects specifying compound predicate types. See [`NSCompoundPredicate.LogicalType`](https://developer.apple.com/documentation/foundation/nscompoundpredicate/logicaltype) for possible values.
 
 ## See Also
 

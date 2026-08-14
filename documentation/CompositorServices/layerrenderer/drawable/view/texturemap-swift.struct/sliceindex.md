@@ -17,7 +17,7 @@ var sliceIndex: Int { get }
 
 #### Discussion
 
-Use the returned index to retrieve the view’s texture when the texture type is [`MTLTextureType.type2DArray`](https://developer.apple.com/documentation/Metal/MTLTextureType/type2DArray). When configuring your render pass descriptor, specify the index in the [`slice`](https://developer.apple.com/documentation/Metal/MTLRenderPassAttachmentDescriptor/slice) property of the descriptor’s color and depth attachments.
+Use the returned index to retrieve the view’s texture when the texture type is [`MTLTextureType.type2DArray`](https://developer.apple.com/documentation/metal/mtltexturetype/type2darray). When configuring your render pass descriptor, specify the index in the [`slice`](https://developer.apple.com/documentation/metal/mtlrenderpassattachmentdescriptor/slice) property of the descriptor’s color and depth attachments.
 
 If you don’t use array-based textures for drawing, fetch the index using [`textureIndex`](layerrenderer/drawable/view/texturemap-swift.struct/textureindex.md) instead.
 

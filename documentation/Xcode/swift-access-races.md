@@ -29,7 +29,7 @@ func consumer() {
 
 ###### Solution
 
-Use [`Dispatch`](https://developer.apple.com/documentation/Dispatch) APIs to coordinate access to `messages` across multiple threads.
+Use [`Dispatch`](https://developer.apple.com/documentation/dispatch) APIs to coordinate access to `messages` across multiple threads.
 
 ##### Access Race with in Out Parameters
 
@@ -49,7 +49,7 @@ func writeLetters() {
 
 ###### Solution
 
-Use [`Dispatch`](https://developer.apple.com/documentation/Dispatch) APIs to coordinate access to `log` across multiple threads.
+Use [`Dispatch`](https://developer.apple.com/documentation/dispatch) APIs to coordinate access to `log` across multiple threads.
 
 ## See Also
 

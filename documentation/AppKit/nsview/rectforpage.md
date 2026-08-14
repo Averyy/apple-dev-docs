@@ -20,9 +20,9 @@ A rectangle defining the region of the view to be printed for `pageNumber`. This
 
 #### Discussion
 
-If the view responded [`true`](https://developer.apple.com/documentation/Swift/true) to an earlier [`knowsPageRange(_:)`](nsview/knowspagerange(_:).md) message, this method is invoked for each page it specified in the out parameters of that message. The view is later made to display this rectangle in order to generate the image for this page.
+If the view responded [`true`](https://developer.apple.com/documentation/swift/true) to an earlier [`knowsPageRange(_:)`](nsview/knowspagerange(_:).md) message, this method is invoked for each page it specified in the out parameters of that message. The view is later made to display this rectangle in order to generate the image for this page.
 
-If an `NSView` object responds [`false`](https://developer.apple.com/documentation/Swift/false) to [`knowsPageRange(_:)`](nsview/knowspagerange(_:).md), this method isn’t invoked by the printing mechanism.
+If an `NSView` object responds [`false`](https://developer.apple.com/documentation/swift/false) to [`knowsPageRange(_:)`](nsview/knowspagerange(_:).md), this method isn’t invoked by the printing mechanism.
 
 ## Parameters
 

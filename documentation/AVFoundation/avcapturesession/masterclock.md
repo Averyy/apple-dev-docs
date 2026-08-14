@@ -19,7 +19,7 @@ var masterClock: CMClock? { get }
 
 #### Discussion
 
-The returned [`CMClock`](https://developer.apple.com/documentation/CoreMedia/CMClock) object is read-only and provides a timebase for all sample buffers in capture output. Use this clock in conjunction with the clock from an [`AVCaptureInput.Port`](avcaptureinput/port.md) object to synchronize capture output with external data sources such as motion samples.
+The returned [`CMClock`](https://developer.apple.com/documentation/coremedia/cmclock) object is read-only and provides a timebase for all sample buffers in capture output. Use this clock in conjunction with the clock from an [`AVCaptureInput.Port`](avcaptureinput/port.md) object to synchronize capture output with external data sources such as motion samples.
 
 For example, to synchronize output timestamps to the original timestamps provided by an input device, you can do the following in your [`fileOutput(_:didOutputSampleBuffer:from:)`](avcapturefileoutputdelegate/fileoutput(_:didoutputsamplebuffer:from:).md) method:
 

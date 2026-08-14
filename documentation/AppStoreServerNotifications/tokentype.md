@@ -20,7 +20,7 @@ string tokenType
 
 ##### Discussion
 
-The token type field is present only for custom link tokens. For more information on tokens, see [`Receiving and decoding external purchase tokens`](https://developer.apple.com/documentation/StoreKit/receiving-and-decoding-external-purchase-tokens).
+The token type field is present only for custom link tokens. For more information on tokens, see [`Receiving and decoding external purchase tokens`](https://developer.apple.com/documentation/storekit/receiving-and-decoding-external-purchase-tokens).
 
 ## See Also
 

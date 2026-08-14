@@ -30,7 +30,7 @@ void main() {
 
 The following figure illustrates the effect of the shader. The original image, on the left, has its colors inverted by the shader:
 
-![Example of a color inverted sprite](https://docs-assets.developer.apple.com/published/76d703dd22169b7ddbe4bb0b0de38a55/media-2983067%402x.png)
+![Example of a color inverted sprite](/images/com.apple.spritekit/media-2983067@2x.png)
 
 ## See Also
 

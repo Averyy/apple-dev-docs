@@ -22,7 +22,7 @@ var cgColor: CGColor { get }
 
 #### Discussion
 
-You can get a [`CGColor`](https://developer.apple.com/documentation/CoreGraphics/CGColor) instance from a resolved color.
+You can get a [`CGColor`](https://developer.apple.com/documentation/coregraphics/cgcolor) instance from a resolved color.
 
 
 ---

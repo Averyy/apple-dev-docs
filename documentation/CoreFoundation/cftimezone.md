@@ -24,7 +24,7 @@ CFTimeZone defines the behavior of time zone objects. Time zone objects represen
 
 CFTimeZone provides several functions to create time zone objects: [`CFTimeZoneCreateWithName(_:_:_:)`](cftimezonecreatewithname(_:_:_:).md) and [`CFTimeZoneCreateWithTimeIntervalFromGMT(_:_:)`](cftimezonecreatewithtimeintervalfromgmt(_:_:).md). CFTimeZone also permits you to set the default time zone within your application using the [`CFTimeZoneSetDefault(_:)`](cftimezonesetdefault(_:).md) function. You can access this default time zone at any time with the [`CFTimeZoneCopyDefault()`](cftimezonecopydefault().md) function.
 
-CFTimeZone is “toll-free bridged” with its Cocoa Foundation counterpart, [`NSTimeZone`](https://developer.apple.com/documentation/Foundation/NSTimeZone). This means that the Core Foundation type is interchangeable in function or method calls with the bridged Foundation object. Therefore, in a method where you see an `NSTimeZone *` parameter, you can pass in a `CFTimeZoneRef`, and in a function where you see a `CFTimeZoneRef` parameter, you can pass in an NSTimeZone instance. This fact also applies to concrete subclasses of NSTimeZone. See [`Toll-Free Bridged Types`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFDesignConcepts/Articles/tollFreeBridgedTypes.html#//apple_ref/doc/uid/TP40010677) for more information on toll-free bridging.
+CFTimeZone is “toll-free bridged” with its Cocoa Foundation counterpart, [`NSTimeZone`](https://developer.apple.com/documentation/foundation/nstimezone). This means that the Core Foundation type is interchangeable in function or method calls with the bridged Foundation object. Therefore, in a method where you see an `NSTimeZone *` parameter, you can pass in a `CFTimeZoneRef`, and in a function where you see a `CFTimeZoneRef` parameter, you can pass in an NSTimeZone instance. This fact also applies to concrete subclasses of NSTimeZone. See [`Toll-Free Bridged Types`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFDesignConcepts/Articles/tollFreeBridgedTypes.html#//apple_ref/doc/uid/TP40010677) for more information on toll-free bridging.
 
 ## Topics
 
@@ -83,8 +83,8 @@ CFTimeZone is “toll-free bridged” with its Cocoa Foundation counterpart, [`N
 ## Relationships
 
 ### Conforms To
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
 
 ## See Also
 

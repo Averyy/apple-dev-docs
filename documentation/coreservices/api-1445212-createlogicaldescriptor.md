@@ -24,10 +24,10 @@ The `CreateLogicalDescriptor` function creates a logical descriptor, which speci
 
 ## Parameters
 
-- `theLogicalTerms`: A pointer to a list containing comparison descriptors ( ), logical descriptors ( ), or both. If the value of the parameter   is   or  , the list can contain any number of descriptors. If the value of the parameter   is  , logically this list should contain a single descriptor. However, the function will not return an error if the list contains more than one descriptor for a logical operator of  . See  .
-- `theLogicOperator`: A logical operator represented by one of the constants described in  . What you pass for this parameter helps determine what you pass for the   parameter. See  .
-- `disposeInputs`: A Boolean value. Pass   if the function should automatically dispose of the descriptors you have provided in the   parameter or ( ) if your application will. A value of   may be more efficient for some applications because it allows them to reuse descriptors. 
-- `theDescriptor`: A pointer to a descriptor. On successful return, the logical descriptor created by  . Your application must dispose of this descriptor after it has finished using it. See  .
+- `theLogicalTerms`: A pointer to a list containing comparison descriptors (`typeLogicalDescriptor`), logical descriptors (`typeCompDescriptor`), or both. If the value of the parameter `theLogicOperator` is `kAEAND` or `kAEOR`, the list can contain any number of descriptors. If the value of the parameter `theLogicOperator` is `kAENOT`, logically this list should contain a single descriptor. However, the function will not return an error if the list contains more than one descriptor for a logical operator of `kAENOT`. See [`AEDescList`](aedesclist.md).
+- `theLogicOperator`: A logical operator represented by one of the constants described in [`Constants for Object Specifiers, Positions, and Logical and Comparison Operations`](apple_events/1572744-constants_for_object_specifiers_.md). What you pass for this parameter helps determine what you pass for the `theLogicalTerms` parameter. See [`DescType`](desctype.md).
+- `disposeInputs`: A Boolean value. Pass `TRUE` if the function should automatically dispose of the descriptors you have provided in the `theLogicalTerms` parameter or (`FALSE`) if your application will. A value of `FALSE` may be more efficient for some applications because it allows them to reuse descriptors. 
+- `theDescriptor`: A pointer to a descriptor. On successful return, the logical descriptor created by `CreateLogicalDescriptor`. Your application must dispose of this descriptor after it has finished using it. See [`AEDesc`](aedesc.md).
 
 ## See Also
 

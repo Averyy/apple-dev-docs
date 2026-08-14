@@ -29,7 +29,7 @@ This method applies the hue-adjust filter to an image. The effect changes the hu
 
 The hue-adjust filter uses the following properties:
 
-- **`angle`**: A `float` representing the angle in radians to adjust the current hue of the image as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+- **`angle`**: A `float` representing the angle in radians to adjust the current hue of the image as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
 - **`inputImage`**: An image with the type [`CIImage`](ciimage.md).
 
 The following code creates a filter that shifts the hue of the image by 5 radians.
@@ -43,7 +43,7 @@ func hueAdjust(inputImage: CIImage) -> CIImage {
 }
 ```
 
-![Two versions of a photograph side by side. The photo on the left shows a small bunch of flowers photographed close up, in focus, with good light and no effects. In the photo on the right, a hue adjust filter is applied, transforming the colors in the image to have a purple hue.](https://docs-assets.developer.apple.com/published/4252b733bdd01d08fc471fb74af6900c/media-3544999%402x.png)
+![Two versions of a photograph side by side. The photo on the left shows a small bunch of flowers photographed close up, in focus, with good light and no effects. In the photo on the right, a hue adjust filter is applied, transforming the colors in the image to have a purple hue.](/images/com.apple.coreimage/media-3544999@2x.png)
 
 ## See Also
 

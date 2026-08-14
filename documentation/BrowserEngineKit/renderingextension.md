@@ -32,7 +32,7 @@ When you add an object that conforms to this protocol in your extension’s Xcod
 ## Relationships
 
 ### Inherits From
-- [AppExtension](../ExtensionFoundation/AppExtension.md)
+- [AppExtension](../extensionfoundation/appextension.md)
 - [RestrictedSandboxAppliable](restrictedsandboxappliable.md)
 
 ## See Also

@@ -17,7 +17,7 @@ func copyPipe(withAddress address: Int) throws -> IOUSBHostPipe
 
 #### Return Value
 
-An [`IOUSBHostPipe`](iousbhostpipe.md) or [`nil`](https://developer.apple.com/documentation/ObjectiveC/nil-227m0) if the system can’t create the pipe.
+An [`IOUSBHostPipe`](iousbhostpipe.md) or [`nil`](https://developer.apple.com/documentation/objectivec/nil-227m0) if the system can’t create the pipe.
 
 #### Discussion
 

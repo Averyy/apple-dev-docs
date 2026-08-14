@@ -17,7 +17,7 @@ A view that represents a WatchKit interface object.
 
 #### Overview
 
-Use a `WKInterfaceObjectRepresentable` instance to create and manage a [`WKInterfaceObject`](https://developer.apple.com/documentation/WatchKit/WKInterfaceObject) in your SwiftUI interface. Adopt this protocol in one of your app’s custom instances, and use its methods to create, update, and tear down your interface object. The creation and update processes parallel the behavior of SwiftUI views, and you use them to configure your interface object with your app’s current state information. Use the teardown process to remove your interface object cleanly from your SwiftUI. For example, you might use the teardown process to notify other parts of your app that the interface object is disappearing.
+Use a `WKInterfaceObjectRepresentable` instance to create and manage a [`WKInterfaceObject`](https://developer.apple.com/documentation/watchkit/wkinterfaceobject) in your SwiftUI interface. Adopt this protocol in one of your app’s custom instances, and use its methods to create, update, and tear down your interface object. The creation and update processes parallel the behavior of SwiftUI views, and you use them to configure your interface object with your app’s current state information. Use the teardown process to remove your interface object cleanly from your SwiftUI. For example, you might use the teardown process to notify other parts of your app that the interface object is disappearing.
 
 To add your interface object into your SwiftUI interface, create your `WKInterfaceObjectRepresentable` instance and add it to your SwiftUI interface. The system calls the methods of your representable instance at appropriate times to create and update the interface object.
 

@@ -19,7 +19,7 @@ class let touchBarTextBoxTemplateName: String
 
 #### Discussion
 
-![Template image for text box](https://docs-assets.developer.apple.com/published/dfb816fe66ad83bd94dcc04b759c52a5/media-2793530%402x.png)
+![Template image for text box](/images/com.apple.appkit/media-2793530@2x.png)
 
 Touch Bar template images are exclusively for use in [`NSTouchBarItem`](nstouchbaritem.md) objects and not in onscreen windows.
 

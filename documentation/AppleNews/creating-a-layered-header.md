@@ -128,7 +128,7 @@ Ellipses (`...`) indicate lines of code that have been omitted from this example
 
 In [`Replace a Captioned Photo with an Image Fill`](creating-a-layered-header#Replace-a-Captioned-Photo-with-an-Image-Fill.md), you added a `header` component to your article. Now, you’ll move a `caption` component so that it’s a child of that header. This creates a layering effect.
 
-![Labeled screenshot of an Apple News article on iPhone. The article includes a header with an image fill and a child caption.](https://docs-assets.developer.apple.com/published/2bd3a52f4c070d4a5833f473a471fe4f/media-3624527%402x.png)
+![Labeled screenshot of an Apple News article on iPhone. The article includes a header with an image fill and a child caption.](/images/com.apple.applenews/media-3624527@2x.png)
 
 1. In your `article.json` file, delete the first `caption` component. The code you are deleting begins with the opening brace (`{`) before `"role": "caption",` and ends with a closing brace and comma (`},`). This is the caption that you pasted in [`Replace a Captioned Photo with an Image Fill`](creating-a-layered-header#Replace-a-Captioned-Photo-with-an-Image-Fill.md).
 2. Copy the example code [`Child Components: Copy This Code`](creating-a-layered-header#Child-Components-Copy-This-Code.md).
@@ -257,7 +257,7 @@ Ellipses (`...`) indicate lines of code that have been omitted from this example
 
 To make your caption easier to read, apply the styles that you added in [`Define a Dark Background for the Caption`](creating-a-layered-header#Define-a-Dark-Background-for-the-Caption.md) and [`Define a Light Text Color for the Caption`](creating-a-layered-header#Define-a-Light-Text-Color-for-the-Caption.md). Adjust the position of the caption using the `ComponentLayout` object `headerImageLayout` that you created earlier in [`Define a ComponentLayout Object for Headers`](creating-a-layered-header#Define-a-ComponentLayout-Object-for-Headers.md). Because your `caption` component is in a container, you can adjust its position without affecting the parent container.
 
-![Labeled screenshot of an Apple News article on iPhone. The article includes a child caption that has a background color.](https://docs-assets.developer.apple.com/published/dbf492862edd0b65d7eaee767bb21b73/media-3624525%402x.png)
+![Labeled screenshot of an Apple News article on iPhone. The article includes a child caption that has a background color.](/images/com.apple.applenews/media-3624525@2x.png)
 
 1. In your `article.json` file, delete the first `caption` component. The code you are deleting begins with the opening brace (`{`) before `"role": "caption",` and ends with a closing brace (`}`). This is the caption that you pasted in [`Move a Caption Inside a Header`](creating-a-layered-header#Move-a-Caption-Inside-a-Header.md).
 2. Copy the example code [`Container and Caption: Copy This Code`](creating-a-layered-header#Container-and-Caption-Copy-This-Code.md).
@@ -329,7 +329,7 @@ Ellipses (`...`) indicate lines of code that have been omitted from this example
 
 The final step in creating your layered header is to anchor the caption to the bottom of the header by adding an `anchor` property to the `container` component.
 
-![Labeled screenshot of an Apple News article on iPhone. The article includes a child caption anchored to the bottom of the header.](https://docs-assets.developer.apple.com/published/71ccc4f4c5aa67d441fda98284e5f293/media-3624526%402x.png)
+![Labeled screenshot of an Apple News article on iPhone. The article includes a child caption anchored to the bottom of the header.](/images/com.apple.applenews/media-3624526@2x.png)
 
 1. Copy the example code [`Anchor: Copy This Code`](creating-a-layered-header#Anchor-Copy-This-Code.md).
 2. Paste the code inside the `container` component, after the line `"style": "captionBarBackgroundStyle",`

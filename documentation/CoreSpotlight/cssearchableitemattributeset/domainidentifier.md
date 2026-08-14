@@ -24,7 +24,7 @@ var domainIdentifier: String? { get set }
 
 #### Discussion
 
-Specify a domain identifier to group items together and make it easier to delete them from the index. For example, to delete a user activity, set this property on the [`contentAttributeSet`](https://developer.apple.com/documentation/Foundation/NSUserActivity/contentAttributeSet) property of the [`NSUserActivity`](https://developer.apple.com/documentation/Foundation/NSUserActivity) object and then call [`deleteSearchableItems(withDomainIdentifiers:completionHandler:)`](cssearchableindex/deletesearchableitems(withdomainidentifiers:completionhandler:).md) on your app’s index.
+Specify a domain identifier to group items together and make it easier to delete them from the index. For example, to delete a user activity, set this property on the [`contentAttributeSet`](https://developer.apple.com/documentation/foundation/nsuseractivity/contentattributeset) property of the [`NSUserActivity`](https://developer.apple.com/documentation/foundation/nsuseractivity) object and then call [`deleteSearchableItems(withDomainIdentifiers:completionHandler:)`](cssearchableindex/deletesearchableitems(withdomainidentifiers:completionhandler:).md) on your app’s index.
 
 ## See Also
 

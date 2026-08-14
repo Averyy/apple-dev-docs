@@ -24,7 +24,7 @@ A promise that resolves when the autocomplete request completes.
 
 #### Discussion
 
-To provide the user with a menu of search suggestions, invoke the [`autocomplete(query, callback, options)`](search/autocomplete1.md) method as users type. This method minimizes typing and brings users the results they’re looking for.
+To provide the user with a menu of search suggestions, invoke the [`autocomplete()`](search/autocomplete1.md) method as users type. This method minimizes typing and brings users the results they’re looking for.
 
 MapKit JS invokes the `callback` function on failure and success with two arguments, `error` and `data`:
 

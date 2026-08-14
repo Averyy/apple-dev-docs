@@ -19,7 +19,7 @@ var isLockingWhiteBalanceWithCustomDeviceGainsSupported: Bool { get }
 
 #### Discussion
 
-If the value is [`false`](https://developer.apple.com/documentation/Swift/false), calling the [`setWhiteBalanceModeLocked(with:completionHandler:)`](avcapturedevice/setwhitebalancemodelocked(with:completionhandler:).md) method with a white balance gains value other than [`currentWhiteBalanceGains`](avcapturedevice/currentwhitebalancegains.md) throws an exception.
+If the value is [`false`](https://developer.apple.com/documentation/swift/false), calling the [`setWhiteBalanceModeLocked(with:completionHandler:)`](avcapturedevice/setwhitebalancemodelocked(with:completionhandler:).md) method with a white balance gains value other than [`currentWhiteBalanceGains`](avcapturedevice/currentwhitebalancegains.md) throws an exception.
 
 ## See Also
 

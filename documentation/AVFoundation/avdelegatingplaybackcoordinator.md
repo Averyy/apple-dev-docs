@@ -21,11 +21,11 @@ class AVDelegatingPlaybackCoordinator
 
 #### Overview
 
-This object coordinates the state of custom player objects, such as those that render media using [`AVSampleBufferDisplayLayer`](avsamplebufferdisplaylayer.md) and [`AVSampleBufferAudioRenderer`](avsamplebufferaudiorenderer.md), or that play audio using [`AVAudioEngine`](https://developer.apple.com/documentation/AVFAudio/AVAudioEngine).
+This object coordinates the state of custom player objects, such as those that render media using [`AVSampleBufferDisplayLayer`](avsamplebufferdisplaylayer.md) and [`AVSampleBufferAudioRenderer`](avsamplebufferaudiorenderer.md), or that play audio using [`AVAudioEngine`](https://developer.apple.com/documentation/avfaudio/avaudioengine).
 
 Adopt the [`AVPlaybackCoordinatorPlaybackControlDelegate`](avplaybackcoordinatorplaybackcontroldelegate.md) protocol so that your app responds to playback commands from the coordinator. The commands provide the details of a requested state change so you can control your player object accordingly.
 
-![A diagram representing two devices that each contain representations of the app, AVDelegatingPlaybackCoordinator, playback control delegate, and custom playback object relationships. The two AVDelegatingPlaybackCoordinator items have a two-way dotted-line connection between the two devices.](https://docs-assets.developer.apple.com/published/f1475dd7253b6e97cc096c2648300c98/media-3783472%402x.png)
+![A diagram representing two devices that each contain representations of the app, AVDelegatingPlaybackCoordinator, playback control delegate, and custom playback object relationships. The two AVDelegatingPlaybackCoordinator items have a two-way dotted-line connection between the two devices.](/images/com.apple.avfoundation/media-3783472@2x.png)
 
 ## Topics
 
@@ -70,18 +70,18 @@ Adopt the [`AVPlaybackCoordinatorPlaybackControlDelegate`](avplaybackcoordinator
 ### Inherits From
 - [AVPlaybackCoordinator](avplaybackcoordinator.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 
-- [Destination Video](../visionOS/destination-video.md)
+- [Destination Video](../visionos/destination-video.md)
   Leverage SwiftUI to build an immersive media experience in a multiplatform app.
 - [Supporting coordinated media playback](supporting-coordinated-media-playback.md)
   Create synchronized media experiences that enable users to watch and listen across devices.

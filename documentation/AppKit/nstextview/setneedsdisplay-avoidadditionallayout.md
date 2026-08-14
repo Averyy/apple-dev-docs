@@ -16,12 +16,12 @@ func setNeedsDisplay(_ rect: NSRect, avoidAdditionalLayout flag: Bool)
 
 #### Discussion
 
-`NSTextView` overrides the `NSView` [`setNeedsDisplay(_:)`](nsview/setneedsdisplay(_:).md) method to invoke this method with a `flag` argument of [`false`](https://developer.apple.com/documentation/Swift/false).
+`NSTextView` overrides the `NSView` [`setNeedsDisplay(_:)`](nsview/setneedsdisplay(_:).md) method to invoke this method with a `flag` argument of [`false`](https://developer.apple.com/documentation/swift/false).
 
 ## Parameters
 
 - `rect`: The rectangle in which display is required.
-- `flag`: A value of [`true`](https://developer.apple.com/documentation/Swift/true) causes the receiver to not perform any layout, even if this means that portions of the text view remain empty. Otherwise the receiver performs at least as much layout as needed to display `aRect`.
+- `flag`: A value of [`true`](https://developer.apple.com/documentation/swift/true) causes the receiver to not perform any layout, even if this means that portions of the text view remain empty. Otherwise the receiver performs at least as much layout as needed to display `aRect`.
 
 ## See Also
 

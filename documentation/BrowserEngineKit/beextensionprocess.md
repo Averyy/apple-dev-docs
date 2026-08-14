@@ -20,7 +20,7 @@ protocol BEExtensionProcess : NSObjectProtocol
 
 This protocol is common across extension processes for networking ([`BENetworkingProcess`](benetworkingprocess.md)), rendering ([`BERenderingProcess`](berenderingprocess.md)), and web content ([`BEWebContentProcess`](bewebcontentprocess.md)).
 
-Create an XPC connection for an extension process with the [`makeLibXPCConnectionError()`](BEExtensionProcess/makeLibXPCConnectionError().md) method. Stop an extension process with [`invalidate()`](BEExtensionProcess/invalidate().md).
+Create an XPC connection for an extension process with the [`makeLibXPCConnectionError()`](beextensionprocess/makelibxpcconnectionerror().md) method. Stop an extension process with [`invalidate()`](beextensionprocess/invalidate().md).
 
 ## Topics
 
@@ -32,7 +32,7 @@ Create an XPC connection for an extension process with the [`makeLibXPCConnectio
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

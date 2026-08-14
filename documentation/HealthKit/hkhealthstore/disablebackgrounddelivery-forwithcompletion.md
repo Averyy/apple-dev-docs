@@ -26,7 +26,7 @@ Call this method to prevent your app from receiving any additional update notifi
 ## Parameters
 
 - `type`: The type of data. This object can be any concrete subclass of the [`HKObjectType`](hkobjecttype.md) class (any of the classes [`HKCharacteristicType`](hkcharacteristictype.md) , [`HKQuantityType`](hkquantitytype.md), [`HKCategoryType`](hkcategorytype.md), [`HKWorkoutType`](hkworkouttype.md) or [`HKCorrelationType`](hkcorrelationtype.md)).
-- `completion`: A block that this method calls as soon as the background delivery is disabled. This block is passed the following parameters: - **success**: A Boolean value. This parameter contains [`true`](https://developer.apple.com/documentation/Swift/true) if the background delivery was successfully disabled; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
+- `completion`: A block that this method calls as soon as the background delivery is disabled. This block is passed the following parameters: - **success**: A Boolean value. This parameter contains [`true`](https://developer.apple.com/documentation/swift/true) if the background delivery was successfully disabled; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
 - **error**: An error object. If an error occurred, this object contains information about the error; otherwise, it is set to `nil`.
 
 ## See Also
@@ -35,7 +35,7 @@ Call this method to prevent your app from receiving any additional update notifi
   A long-running query that monitors the HealthKit store and updates your app when the HealthKit store saves or deletes a matching sample.
 - [func enableBackgroundDelivery(for: HKObjectType, frequency: HKUpdateFrequency, withCompletion: (Bool, (any Error)?) -> Void)](hkhealthstore/enablebackgrounddelivery(for:frequency:withcompletion:).md)
   Enables the delivery of updates to an app running in the background.
-- [com.apple.developer.healthkit.background-delivery](../BundleResources/Entitlements/com.apple.developer.healthkit.background-delivery.md)
+- [com.apple.developer.healthkit.background-delivery](../bundleresources/entitlements/com.apple.developer.healthkit.background-delivery.md)
   A Boolean value that indicates whether observer queries receive updates while running in the background.
 - [enum HKUpdateFrequency](hkupdatefrequency.md)
   Constants that determine how often the system launches your app in response to changes to HealthKit data.

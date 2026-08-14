@@ -12,7 +12,7 @@ By design, SwiftData supplements your existing model classes. The framework prov
 
 ##### Turn Classes Into Models to Make Them Persistable
 
-To let SwiftData save instances of a model class, import the framework and annotate that class with the [`Model()`](model().md) macro. The macro updates the class with conformance to the [`PersistentModel`](persistentmodel.md) protocol, which SwiftData uses to examine the class and generate an internal schema. Additionally, the macro enables change tracking for the class by adding conformance to the [`Observable`](https://developer.apple.com/documentation/Observation/Observable) protocol.
+To let SwiftData save instances of a model class, import the framework and annotate that class with the [`Model()`](model().md) macro. The macro updates the class with conformance to the [`PersistentModel`](persistentmodel.md) protocol, which SwiftData uses to examine the class and generate an internal schema. Additionally, the macro enables change tracking for the class by adding conformance to the [`Observable`](https://developer.apple.com/documentation/observation/observable) protocol.
 
 ```swift
 import SwiftData
@@ -28,7 +28,7 @@ class Trip {
 }
 ```
 
-By default, SwiftData includes all noncomputed properties of a class as long as they use compatible types. The framework supports primitive types such as [`Bool`](https://developer.apple.com/documentation/Swift/Bool), [`Int`](https://developer.apple.com/documentation/Swift/Int), and [`String`](https://developer.apple.com/documentation/Swift/String), as well as complex value types such as structures, enumerations, and other value types that conform to the [`Codable`](https://developer.apple.com/documentation/Swift/Codable) protocol.
+By default, SwiftData includes all noncomputed properties of a class as long as they use compatible types. The framework supports primitive types such as [`Bool`](https://developer.apple.com/documentation/swift/bool), [`Int`](https://developer.apple.com/documentation/swift/int), and [`String`](https://developer.apple.com/documentation/swift/string), as well as complex value types such as structures, enumerations, and other value types that conform to the [`Codable`](https://developer.apple.com/documentation/swift/codable) protocol.
 
 The code you write to define your model classes now serves as the source of truth for your app’s model layer, and the framework uses that to keep the persisted data in a consistent state.
 
@@ -60,7 +60,7 @@ SwiftData persists all noncomputed attributes of a model by default, but you may
 
 Before SwiftData can examine your models and generate the required schema, you need to tell it — at runtime — which models to persist, and optionally, the configuration to use for the underlying storage. For example, you may want the storage to exist only in memory when running tests, or to use a specific CloudKit container when syncing model data across devices.
 
-To set up the default storage, use the [`modelContainer(for:inMemory:isAutosaveEnabled:isUndoEnabled:onSetup:)`](https://developer.apple.com/documentation/SwiftUI/View/modelContainer(for:inMemory:isAutosaveEnabled:isUndoEnabled:onSetup:)-18hhy) view modifier (or the scene equivalent) and specify the array of model types to persist. If you use the view modifier, add it at the very top of the view hierarchy so all nested views inherit the properly configured environment:
+To set up the default storage, use the [`modelContainer(for:inMemory:isAutosaveEnabled:isUndoEnabled:onSetup:)`](https://developer.apple.com/documentation/swiftui/view/modelcontainer(for:inmemory:isautosaveenabled:isundoenabled:onsetup:)-18hhy) view modifier (or the scene equivalent) and specify the array of model types to persist. If you use the view modifier, add it at the very top of the view hierarchy so all nested views inherit the properly configured environment:
 
 ```swift
 import SwiftUI
@@ -112,7 +112,7 @@ let container = try ModelContainer(
 
 ##### Save Models for Later Use
 
-To manage instances of your model classes at runtime, use a *model context* — the object responsible for the in-memory model data and coordination with the model container to successfully persist that data. To get a context for your model container that’s bound to the main actor, use the [`modelContext`](https://developer.apple.com/documentation/SwiftUI/EnvironmentValues/modelContext) environment variable:
+To manage instances of your model classes at runtime, use a *model context* — the object responsible for the in-memory model data and coordination with the model container to successfully persist that data. To get a context for your model container that’s bound to the main actor, use the [`modelContext`](https://developer.apple.com/documentation/swiftui/environmentvalues/modelcontext) environment variable:
 
 ```swift
 import SwiftUI
@@ -184,15 +184,15 @@ upcomingTrips.includePendingChanges = true
 let results = context.fetch(upcomingTrips)
 ```
 
-For more information about predicates, see [`Predicate`](https://developer.apple.com/documentation/Foundation/Predicate).
+For more information about predicates, see [`Predicate`](https://developer.apple.com/documentation/foundation/predicate).
 
 ## See Also
 
 - [Adding and editing persistent data in your app](adding-and-editing-persistent-data-in-your-app.md)
   Create a data entry form for collecting and changing data managed by SwiftData.
-- [Adopting SwiftData for a Core Data app](../CoreData/adopting-swiftdata-for-a-core-data-app.md)
+- [Adopting SwiftData for a Core Data app](../coredata/adopting-swiftdata-for-a-core-data-app.md)
   Persist data in your app intuitively with the Swift native persistence framework.
-- [SwiftData updates](../Updates/SwiftData.md)
+- [SwiftData updates](../updates/swiftdata.md)
   Learn about important changes to SwiftData.
 - [Adopting inheritance in SwiftData](adopting-inheritance-in-swiftdata.md)
   Add flexibility to your models using class inheritance.

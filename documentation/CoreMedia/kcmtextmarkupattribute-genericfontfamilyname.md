@@ -22,7 +22,7 @@ let kCMTextMarkupAttribute_GenericFontFamilyName: CFString
 
 #### Discussion
 
-This attribute’s value must be one of the constants listed below. You need to map generic fonts to the family name of an installed font before rendering and/or measuring text (see [`Media Accessibility`](https://developer.apple.com/documentation/MediaAccessibility)).
+This attribute’s value must be one of the constants listed below. You need to map generic fonts to the family name of an installed font before rendering and/or measuring text (see [`Media Accessibility`](https://developer.apple.com/documentation/mediaaccessibility)).
 
 When the system specifies legible output, an attributed string has at most one of [`kCMTextMarkupAttribute_FontFamilyName`](kcmtextmarkupattribute_fontfamilyname.md) or [`kCMTextMarkupAttribute_GenericFontFamilyName`](kcmtextmarkupattribute_genericfontfamilyname.md) associated with each character.
 

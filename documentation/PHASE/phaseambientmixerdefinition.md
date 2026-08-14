@@ -21,7 +21,7 @@ class PHASEAmbientMixerDefinition
 
 #### Overview
 
-As an audio-layering object, this class combines multiple audio signals to a single signal for the output device. Play audio with a 3D orientation using this class when you supply a quaternion for the `orientation` argument of the [`init(channelLayout:orientation:)`](phaseambientmixerdefinition/init(channellayout:orientation:).md) initializer. For information on orientation the sound, see [`Working with Quaternions`](https://developer.apple.com/documentation/Accelerate/working-with-quaternions).
+As an audio-layering object, this class combines multiple audio signals to a single signal for the output device. Play audio with a 3D orientation using this class when you supply a quaternion for the `orientation` argument of the [`init(channelLayout:orientation:)`](phaseambientmixerdefinition/init(channellayout:orientation:).md) initializer. For information on orientation the sound, see [`Working with Quaternions`](https://developer.apple.com/documentation/accelerate/working-with-quaternions).
 
 You also supply the intitializer with a channel layout in either mono, stereo, or surround formats. Surround audio files create the best listening experience due to their extra channel data. The framework renders each channel from the direction of its corresponding speaker in the channel layout. This class ignores low-frequency effect channels that may be present in the layout.
 
@@ -123,12 +123,12 @@ PHASE changes the channel output of ambient-mixer sound dynamically, depending o
 ### Inherits From
 - [PHASEMixerDefinition](phasemixerdefinition.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

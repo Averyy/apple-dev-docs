@@ -39,7 +39,7 @@ func performAsyncActionAsFuture() -> Future <Void, Never> {
 }
 ```
 
-Rather than explicitly invoking a closure when the work completes, the future invokes the promise passed to it, passing in a [`Result`](https://developer.apple.com/documentation/Swift/Result) that indicates success or failure. The caller receives this result asynchronously from the future. Because [`Future`](future.md) is a Combine [`Publisher`](publisher.md), the caller attaches it to an optional chain of operators, ending with a [`Subscriber`](subscriber.md), like [`sink(receiveValue:)`](publisher/sink(receivevalue:).md):
+Rather than explicitly invoking a closure when the work completes, the future invokes the promise passed to it, passing in a [`Result`](https://developer.apple.com/documentation/swift/result) that indicates success or failure. The caller receives this result asynchronously from the future. Because [`Future`](future.md) is a Combine [`Publisher`](publisher.md), the caller attaches it to an optional chain of operators, ending with a [`Subscriber`](subscriber.md), like [`sink(receiveValue:)`](publisher/sink(receivevalue:).md):
 
 ```swift
 cancellable = performAsyncActionAsFuture()
@@ -61,7 +61,7 @@ func performAsyncActionAsFutureWithParameter() -> Future <Int, Never> {
 }
 ```
 
-By declaring that the future produces `Int` elements, the future can use the [`Result`](https://developer.apple.com/documentation/Swift/Result) type to pass an `Int` value to the promise. When the promise executes, the future publishes the value, which a caller can receive with a subscriber like [`sink(receiveValue:)`](publisher/sink(receivevalue:).md):
+By declaring that the future produces `Int` elements, the future can use the [`Result`](https://developer.apple.com/documentation/swift/result) type to pass an `Int` value to the promise. When the promise executes, the future publishes the value, which a caller can receive with a subscriber like [`sink(receiveValue:)`](publisher/sink(receivevalue:).md):
 
 ```swift
 cancellable = performAsyncActionAsFutureWithParameter()
@@ -92,7 +92,7 @@ cancellable = vc.doSomethingSubject
 
 One advantage to using Combine is that the subject can call [`send(completion:)`](subject/send(completion:).md) to tell the subscriber that no further events are forthcoming, or that an error occurred.
 
-> 💡 **Tip**: If you are using `async`-`await` concurrency in Swift 5.5 or later, you can use a [`AsyncStream`](https://developer.apple.com/documentation/Swift/AsyncStream), instead of a Combine [`Subject`](subject.md), to asynchronously produce new elements. With this arrangement, the call point performs a `for`-`await`-`in` loop to iterate over the stream rather than subscribing to the subject. The code that would go in the subscriber’s `receiveValue` closure instead becomes the contents of the `for`-`await`-`in` loop.
+> 💡 **Tip**: If you are using `async`-`await` concurrency in Swift 5.5 or later, you can use a [`AsyncStream`](https://developer.apple.com/documentation/swift/asyncstream), instead of a Combine [`Subject`](subject.md), to asynchronously produce new elements. With this arrangement, the call point performs a `for`-`await`-`in` loop to iterate over the stream rather than subscribing to the subject. The code that would go in the subscriber’s `receiveValue` closure instead becomes the contents of the `for`-`await`-`in` loop.
 
 ## See Also
 

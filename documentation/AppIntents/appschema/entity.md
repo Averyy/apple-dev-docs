@@ -42,8 +42,8 @@ struct Entity
 - [AppSchema.WhiteboardEntity](appschema/whiteboardentity.md)
 - [AppSchema.WordProcessorEntity](appschema/wordprocessorentity.md)
 - [AppSchemaEntity](appschemaentity.md)
-- [Copyable](../Swift/Copyable.md)
-- [Escapable](../Swift/Escapable.md)
+- [Copyable](../swift/copyable.md)
+- [Escapable](../swift/escapable.md)
 
 
 ---

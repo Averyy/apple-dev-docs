@@ -19,7 +19,7 @@ class ARGeoTrackingConfiguration
 
 This configuration creates location anchors ([`ARGeoAnchor`](argeoanchor.md)) that specify a particular latitude, longitude, and optionally, altitude to enable an app to track geographic areas of interest in an AR experience.
 
-> ❗ **Important**:  The [`isSupported`](arconfiguration/issupported.md) property returns [`true`](https://developer.apple.com/documentation/Swift/true) for this class on iOS 14 & iPadOS 14 devices that have an A12 chip or later and cellular (GPS) capability. Geotracking is available in specific geographic locations. To determine availability at the user’s location at runtime, call [`checkAvailability(completionHandler:)`](argeotrackingconfiguration/checkavailability(completionhandler:).md).
+> ❗ **Important**:  The [`isSupported`](arconfiguration/issupported.md) property returns [`true`](https://developer.apple.com/documentation/swift/true) for this class on iOS 14 & iPadOS 14 devices that have an A12 chip or later and cellular (GPS) capability. Geotracking is available in specific geographic locations. To determine availability at the user’s location at runtime, call [`checkAvailability(completionHandler:)`](argeotrackingconfiguration/checkavailability(completionhandler:).md).
 
 Geotracking occurs exclusively outdoors. If a geotracking app navigates users between waypoints, your app needs to handle any events along a route. The user must have an internet connection, and you can provide them information about data usage, as described in [`ARGeoAnchor`](argeoanchor.md).
 
@@ -78,7 +78,7 @@ Localization imagery is available for specific areas in over 20 countries, inclu
 - [var wantsHDREnvironmentTextures: Bool](argeotrackingconfiguration/wantshdrenvironmenttextures.md)
   A flag that instructs the framework to create environment textures in HDR format.
 ### Accessing app clip codes
-- [Interacting with App Clip Codes in AR](../AppClip/interacting-with-app-clip-codes-in-ar.md)
+- [Interacting with App Clip Codes in AR](../appclip/interacting-with-app-clip-codes-in-ar.md)
   Display content and provide services in an AR experience with App Clip Codes.
 - [class var supportsAppClipCodeTracking: Bool](argeotrackingconfiguration/supportsappclipcodetracking.md)
   A flag that indicates if the device tracks App Clip Codes.
@@ -92,13 +92,13 @@ Localization imagery is available for specific areas in over 20 countries, inclu
 ### Inherits From
 - [ARConfiguration](arconfiguration.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCopying](../Foundation/NSCopying.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCopying](../foundation/nscopying.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

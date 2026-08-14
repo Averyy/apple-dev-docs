@@ -24,7 +24,7 @@ var kvImageConvert_OrderedGaussianBlue: UInt32 { get }
 
 The following shows an 8-bit RGB image converted to a 1-bit planar image with [`vImageConvert_Planar8toPlanar1(_:_:_:_:_:)`](vimageconvert_planar8toplanar1(_:_:_:_:_:).md) using [`kvImageConvert_DitherOrderedReproducible`](kvimageconvert_ditherorderedreproducible.md). The image on the left uses [`kvImageConvert_OrderedGaussianBlue`](kvimageconvert_orderedgaussianblue.md), and the image on the right uses [`kvImageConvert_OrderedUniformBlue`](kvimageconvert_ordereduniformblue.md):
 
-![Photos showing images with different noise distributions applied during dithering.](https://docs-assets.developer.apple.com/published/beda0d003a2257d21f39a3c03cb147aa/media-3358020%402x.png)
+![Photos showing images with different noise distributions applied during dithering.](/images/com.apple.accelerate/media-3358020@2x.png)
 
 To learn about converting an RGB image to grayscale, see [`Converting color images to grayscale`](converting-color-images-to-grayscale.md).
 

@@ -42,13 +42,13 @@ App Proxy Providers receive network connections to be proxied in the form of `NE
   A metadata object containing information about the source app of the flow.
 - [func setMetadata(nw_parameters_t)](neappproxyflow/setmetadata(_:).md)
   Sets the flow’s metadata for use by proxy providers.
-- [typealias nw_parameters_t](../Network/nw_parameters_t.md)
+- [typealias nw_parameters_t](../network/nw_parameters_t.md)
   An object that stores the protocols to use for connections, options for sending data, and network path constraints.
 - [var isBound: Bool](neappproxyflow/isbound.md)
   A Boolean value that indicates whether the flow has a binding to a specific interface.
 - [var networkInterface: nw_interface_t?](neappproxyflow/networkinterface.md)
   The network interface, if any, used by this flow.
-- [struct nw_interface_type_t](../Network/nw_interface_type_t.md)
+- [struct nw_interface_type_t](../network/nw_interface_type_t.md)
   Types of network interfaces, based on their link layer media types.
 - [var remoteHostname: String?](neappproxyflow/remotehostname.md)
   The remote host name for flows created from a hostname.
@@ -71,17 +71,17 @@ App Proxy Providers receive network connections to be proxied in the form of `NE
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Inherited By
 - [NEAppProxyTCPFlow](neappproxytcpflow.md)
 - [NEAppProxyUDPFlow](neappproxyudpflow.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

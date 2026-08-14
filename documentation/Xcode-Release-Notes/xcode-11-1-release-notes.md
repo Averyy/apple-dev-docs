@@ -28,7 +28,7 @@ Xcode 11.1 includes SDKs for iOS 13.1, macOS Catalina 10.15, watchOS 6, and tvOS
 
 ###### Known Issues
 
-- There is an issue with [`UITabBarController`](https://developer.apple.com/documentation/UIKit/UITabBarController) where decoding an instance from a storyboard will create some extra views at the left end of the screen. Developers may remove these by applying a workaround. (55310448) **Workaround**: To remove the extraneous views from Storyboard, create a subclass of a [`UITabBarController`](https://developer.apple.com/documentation/UIKit/UITabBarController) and add the following snippet in the class’s [`init(coder:)`](https://developer.apple.com/documentation/UIKit/UIViewController/init(coder:)) method: ```swift
+- There is an issue with [`UITabBarController`](https://developer.apple.com/documentation/uikit/uitabbarcontroller) where decoding an instance from a storyboard will create some extra views at the left end of the screen. Developers may remove these by applying a workaround. (55310448) **Workaround**: To remove the extraneous views from Storyboard, create a subclass of a [`UITabBarController`](https://developer.apple.com/documentation/uikit/uitabbarcontroller) and add the following snippet in the class’s [`init(coder:)`](https://developer.apple.com/documentation/uikit/uiviewcontroller/init(coder:)) method: ```swift
 class WorkaroundTabBarController: UITabBarController {
     required init?(coder: NSCoder) {
         super.init(coder: coder)
@@ -49,7 +49,7 @@ class WorkaroundTabBarController: UITabBarController {
 
 ###### Known Issues
 
-- [`UITableViewCell`](https://developer.apple.com/documentation/UIKit/UITableViewCell) labels in storyboards and XIB files do not use localized string values from the strings file at runtime. (52839404)
+- [`UITableViewCell`](https://developer.apple.com/documentation/uikit/uitableviewcell) labels in storyboards and XIB files do not use localized string values from the strings file at runtime. (52839404)
 
 ##### Simulator
 
@@ -65,9 +65,9 @@ class WorkaroundTabBarController: UITabBarController {
 
 ###### Known Issues
 
-- The `NEHotspotConfigurationError` enum from the [`Network Extension`](https://developer.apple.com/documentation/NetworkExtension) framework changed from `NS_ENUM` to `NS_ERROR_ENUM`, which can cause compiler errors in existing Swift code that uses the enum. For example, in code like this: ```swift
+- The `NEHotspotConfigurationError` enum from the [`Network Extension`](https://developer.apple.com/documentation/networkextension) framework changed from `NS_ENUM` to `NS_ERROR_ENUM`, which can cause compiler errors in existing Swift code that uses the enum. For example, in code like this: ```swift
 let code = NEHotspotConfigurationError(rawValue: errorCode)
-``` You will see the error message: “error: incorrect argument label in call (have ‘rawValue:’, expected ‘_nsError:’).” (54134493) **Workaround**: Replace references of `NEHotspotConfigurationError` with [`NEHotspotConfigurationError`](https://developer.apple.com/documentation/NetworkExtension/NEHotspotConfigurationError). For the above example, change the code to: ```swift
+``` You will see the error message: “error: incorrect argument label in call (have ‘rawValue:’, expected ‘_nsError:’).” (54134493) **Workaround**: Replace references of `NEHotspotConfigurationError` with [`NEHotspotConfigurationError`](https://developer.apple.com/documentation/networkextension/nehotspotconfigurationerror). For the above example, change the code to: ```swift
 let code = NEHotspotConfigurationError.Code(rawValue: errorCode)
 ```
 

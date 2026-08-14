@@ -12,7 +12,7 @@ The default focus movement sounds are sufficient for the vast majority of apps. 
 
 Drag the custom focus sound file into your Xcode project. Ensure that the app is selected as a target. You can use any sound file that conforms to the standard iOS sound file formats and is less than 30 seconds long. However, be sure that the sounds you create are appropriate for your app. Playing a 20-second sound clip every time the user moves focus won’t result in a good user experience.
 
-![Screenshot that shows targeting the app when adding a sound file.](https://docs-assets.developer.apple.com/published/6dbc5bf5a24185f428cd8d71584f0df2/media-2943426%402x.png)
+![Screenshot that shows targeting the app when adding a sound file.](/images/com.apple.uikit/media-2943426@2x.png)
 
 ##### Register Your Sound File
 

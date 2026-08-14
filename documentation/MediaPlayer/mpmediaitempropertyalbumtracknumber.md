@@ -22,7 +22,7 @@ let MPMediaItemPropertyAlbumTrackNumber: String
 
 #### Discussion
 
-This value is an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) object representing an [`NSUInteger`](https://developer.apple.com/documentation/ObjectiveC/NSUInteger) data type.
+This value is an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) object representing an [`NSUInteger`](https://developer.apple.com/documentation/objectivec/nsuinteger) data type.
 
 ## See Also
 

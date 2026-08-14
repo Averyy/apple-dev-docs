@@ -16,15 +16,15 @@ func attachmentBounds(for attributes: [NSAttributedString.Key : Any], location: 
 
 #### Return Value
 
-Returns a [`CGRect`](https://developer.apple.com/documentation/CoreFoundation/CGRect) that describes the bounds of the attachment.
+Returns a [`CGRect`](https://developer.apple.com/documentation/corefoundation/cgrect) that describes the bounds of the attachment.
 
 ## Parameters
 
 - `attributes`: A dictionary that contains a list of key and attribute pairs that describe the customization of the string.
 - `location`: An [`NSTextLocation`](nstextlocation.md) that indicates that start of the string.
 - `textContainer`: The [`NSTextContainer`](nstextcontainer.md) that contains the source string.
-- `proposedLineFragment`: A [`CGRect`](https://developer.apple.com/documentation/CoreFoundation/CGRect) that describes the boundaries of the line fragment.
-- `position`: A [`CGPoint`](https://developer.apple.com/documentation/CoreFoundation/CGPoint) inside `proposedLineFragment`.
+- `proposedLineFragment`: A [`CGRect`](https://developer.apple.com/documentation/corefoundation/cgrect) that describes the boundaries of the line fragment.
+- `position`: A [`CGPoint`](https://developer.apple.com/documentation/corefoundation/cgpoint) inside `proposedLineFragment`.
 
 
 ---

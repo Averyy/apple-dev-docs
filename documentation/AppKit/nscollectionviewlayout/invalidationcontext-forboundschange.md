@@ -20,7 +20,7 @@ An invalidation context that describes the changes to be made. This value is nev
 
 #### Discussion
 
-The default implementation of this method creates an instance of the class returned by the [`invalidationContextClass`](nscollectionviewlayout/invalidationcontextclass.md) method and initializes it using its [`init()`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class/init()) method. Subclasses can override this method and configure additional properties of the invalidation context. In your implementation, you must call `super` first to get the context object; you can then configure that object and return it.
+The default implementation of this method creates an instance of the class returned by the [`invalidationContextClass`](nscollectionviewlayout/invalidationcontextclass.md) method and initializes it using its [`init()`](https://developer.apple.com/documentation/objectivec/nsobject-swift.class/init()) method. Subclasses can override this method and configure additional properties of the invalidation context. In your implementation, you must call `super` first to get the context object; you can then configure that object and return it.
 
 ## Parameters
 

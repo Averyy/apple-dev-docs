@@ -25,7 +25,7 @@ This function provides an array of the keys in a print settings object. You coul
 ## Parameters
 
 - `printSettings`: The print settings object with the desired keys.
-- `settingsKeys`: A pointer to your   variable. On return, the variable refers to a Core Foundation array that contains the keys for items in the specified print settings object. Each of these keys may be passed to the function   to obtain a value. You are responsible for releasing the array. If an error occurs, the variable is set to  .
+- `settingsKeys`: A pointer to your [`CFArray`](https://developer.apple.com/documentation/corefoundation/cfarray) variable. On return, the variable refers to a Core Foundation array that contains the keys for items in the specified print settings object. Each of these keys may be passed to the function `PMPrintSettingsGetValue` to obtain a value. You are responsible for releasing the array. If an error occurs, the variable is set to `NULL`.
 
 ## See Also
 

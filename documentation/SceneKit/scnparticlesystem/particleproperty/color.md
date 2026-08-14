@@ -22,7 +22,7 @@ static let color: SCNParticleSystem.ParticleProperty
 
 #### Discussion
 
-This property’s value is a four-component vector (an [`NSValue`](https://developer.apple.com/documentation/Foundation/NSValue) object containing an [`SCNVector4`](scnvector4.md) value for particle property controllers, or an array of four `float` values for particle event or modifier blocks).
+This property’s value is a four-component vector (an [`NSValue`](https://developer.apple.com/documentation/foundation/nsvalue) object containing an [`SCNVector4`](scnvector4.md) value for particle property controllers, or an array of four `float` values for particle event or modifier blocks).
 
 The particle system’s [`particleColor`](scnparticlesystem/particlecolor.md) and [`particleColorVariation`](scnparticlesystem/particlecolorvariation.md) properties determine the initial color for each particle.
 

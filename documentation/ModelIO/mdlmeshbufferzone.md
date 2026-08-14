@@ -34,7 +34,7 @@ The concrete type of a zone is often private—you obtain zones by creating them
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 ### Conforming Types
 - [MDLMeshBufferZoneDefault](mdlmeshbufferzonedefault.md)
 

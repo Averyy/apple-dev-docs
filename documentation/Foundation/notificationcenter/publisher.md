@@ -41,8 +41,8 @@ struct Publisher
 ## Relationships
 
 ### Conforms To
-- [Equatable](../Swift/Equatable.md)
-- [Publisher](../Combine/Publisher.md)
+- [Equatable](../swift/equatable.md)
+- [Publisher](../combine/publisher.md)
 
 ## See Also
 

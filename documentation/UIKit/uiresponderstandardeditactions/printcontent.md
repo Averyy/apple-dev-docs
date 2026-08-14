@@ -80,7 +80,7 @@ override func printContent(_ sender: Any?) {
 }
 ```
 
-If your app includes the [`UIApplicationSupportsPrintCommand`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/UIApplicationSupportsPrintCommand) key in its `Info.plist` file, people can print from your app using the keyboard shortcut Command-P, which calls [`printContent(_:)`](uiresponderstandardeditactions/printcontent(_:).md). You can also set [`printContent(_:)`](uiresponderstandardeditactions/printcontent(_:).md) as the action on other print-related controls such as a print button on a toolbar.
+If your app includes the [`UIApplicationSupportsPrintCommand`](https://developer.apple.com/documentation/bundleresources/information-property-list/uiapplicationsupportsprintcommand) key in its `Info.plist` file, people can print from your app using the keyboard shortcut Command-P, which calls [`printContent(_:)`](uiresponderstandardeditactions/printcontent(_:).md). You can also set [`printContent(_:)`](uiresponderstandardeditactions/printcontent(_:).md) as the action on other print-related controls such as a print button on a toolbar.
 
 For more information about printing from your app, see [`Printing`](printing.md).
 

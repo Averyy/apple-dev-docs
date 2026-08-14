@@ -22,7 +22,7 @@ optional func playerViewController(_ playerViewController: AVPlayerViewControlle
 
 Interstitial content is material that’s unrelated to the main content and may have special playback options or requirements. For example, implement this method to record when a user begins viewing an advertisement, or to enable the player view controller’s [`requiresLinearPlayback`](avplayerviewcontroller/requireslinearplayback.md) property to prevent skipping mandatory legal notices.
 
-Use the [`interstitialTimeRanges`](https://developer.apple.com/documentation/AVFoundation/AVPlayerItem/interstitialTimeRanges) property to identify the time ranges of interstitial content in the media timeline.
+Use the [`interstitialTimeRanges`](https://developer.apple.com/documentation/avfoundation/avplayeritem/interstitialtimeranges) property to identify the time ranges of interstitial content in the media timeline.
 
 ## Parameters
 

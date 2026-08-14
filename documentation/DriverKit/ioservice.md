@@ -27,14 +27,14 @@ An [`IOService`](ioservice.md) object is the base class the system uses to repre
 
 When the user plugs in a device, the system looks for the service objects that best match the device’s capabilities. Apple’s built-in driver families support most device types and a large array of standard interfaces. You provide custom service objects to support your device’s custom behaviors.
 
-In most cases, you subclass a child of [`IOService`](ioservice.md) such as [`IOUSBHostInterface`](https://developer.apple.com/documentation/USBDriverKit/IOUSBHostInterface), instead of [`IOService`](ioservice.md) itself. Use the methods of this class to do the following:
+In most cases, you subclass a child of [`IOService`](ioservice.md) such as [`IOUSBHostInterface`](https://developer.apple.com/documentation/usbdriverkit/iousbhostinterface), instead of [`IOService`](ioservice.md) itself. Use the methods of this class to do the following:
 
 - Handle the initialization, setup, and teardown of your driver.
 - View and manage the I/O Registry entry for the device or interface.
 - Configure the dispatch queue on which to execute your code.
 - Respond to power-level changes
 
-For additional information about how to implement services for a particular type of device, see the service subclasses in [`HIDDriverKit`](https://developer.apple.com/documentation/HIDDriverKit), [`USBDriverKit`](https://developer.apple.com/documentation/USBDriverKit), [`NetworkingDriverKit`](https://developer.apple.com/documentation/NetworkingDriverKit), [`SerialDriverKit`](https://developer.apple.com/documentation/SerialDriverKit), and [`USBSerialDriverKit`](https://developer.apple.com/documentation/USBSerialDriverKit).
+For additional information about how to implement services for a particular type of device, see the service subclasses in [`HIDDriverKit`](https://developer.apple.com/documentation/hiddriverkit), [`USBDriverKit`](https://developer.apple.com/documentation/usbdriverkit), [`NetworkingDriverKit`](https://developer.apple.com/documentation/networkingdriverkit), [`SerialDriverKit`](https://developer.apple.com/documentation/serialdriverkit), and [`USBSerialDriverKit`](https://developer.apple.com/documentation/usbserialdriverkit).
 
 ##### Adding Member Variables to Your Custom Subclass
 

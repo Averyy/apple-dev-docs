@@ -50,10 +50,10 @@ struct LinearRegressor<Scalar> where Scalar : MLShapedArrayScalar, Scalar : Bina
 ## Relationships
 
 ### Conforms To
-- [Copyable](../Swift/Copyable.md)
-- [Escapable](../Swift/Escapable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Copyable](../swift/copyable.md)
+- [Escapable](../swift/escapable.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 - [SupervisedEstimator](supervisedestimator.md)
 - [UpdatableSupervisedEstimator](updatablesupervisedestimator.md)
 

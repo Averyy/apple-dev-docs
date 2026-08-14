@@ -23,7 +23,7 @@ struct PKPaymentError
 
 The user must resolve any errors that you report on the Apple Pay sheet before they’re able to authorize the transaction.  You return any errors in [`PKPaymentAuthorizationResult`](pkpaymentauthorizationresult.md) or [`PKPaymentRequestShippingContactUpdate`](pkpaymentrequestshippingcontactupdate.md).
 
-You can build your own payment error ([`NSError`](https://developer.apple.com/documentation/Foundation/NSError)), or use one of the following convenience methods from [`PKPaymentRequest`](pkpaymentrequest.md) to build it for you.
+You can build your own payment error ([`NSError`](https://developer.apple.com/documentation/foundation/nserror)), or use one of the following convenience methods from [`PKPaymentRequest`](pkpaymentrequest.md) to build it for you.
 
 - For an error with contact information, use [`paymentContactInvalidError(withContactField:localizedDescription:)`](pkpaymentrequest/paymentcontactinvaliderror(withcontactfield:localizeddescription:).md).
 - For a shipping address that is unserviceable, use [`paymentShippingAddressUnserviceableError(withLocalizedDescription:)`](pkpaymentrequest/paymentshippingaddressunserviceableerror(withlocalizeddescription:).md).
@@ -52,9 +52,9 @@ let billingAddressInvalidStreet = PKPaymentRequest.paymentBillingAddressInvalidE
 ## Topics
 
 ### Describing the error
-- [var errorCode: Int](../Foundation/CustomNSError/errorCode-2opgi.md)
+- [var errorCode: Int](../foundation/customnserror/errorcode-2opgi.md)
   The error code within the given domain.
-- [var errorUserInfo: [String : Any]](../Foundation/CustomNSError/errorUserInfo-1aas5.md)
+- [var errorUserInfo: [String : Any]](../foundation/customnserror/erroruserinfo-1aas5.md)
   The default user-info dictionary.
 ### Identifying the error
 - [static var billingContactInvalidError: PKPaymentError.Code](pkpaymenterror/billingcontactinvaliderror.md)
@@ -79,12 +79,12 @@ let billingAddressInvalidStreet = PKPaymentRequest.paymentBillingAddressInvalidE
 ## Relationships
 
 ### Conforms To
-- [CustomNSError](../Foundation/CustomNSError.md)
-- [Equatable](../Swift/Equatable.md)
-- [Error](../Swift/Error.md)
-- [Hashable](../Swift/Hashable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [CustomNSError](../foundation/customnserror.md)
+- [Equatable](../swift/equatable.md)
+- [Error](../swift/error.md)
+- [Hashable](../swift/hashable.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

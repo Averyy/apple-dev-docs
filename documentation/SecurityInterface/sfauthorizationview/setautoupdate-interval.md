@@ -20,8 +20,8 @@ If autoupdates are enabled and the authorization times out (for example), the au
 
 ## Parameters
 
-- `autoupdate`: Specifies whether the authorization view should update itself automatically. Set to [`true`](https://developer.apple.com/documentation/Swift/true) to enable autoupdates.
-- `interval`: If `autoupdate` is [`true`](https://developer.apple.com/documentation/Swift/true), sets the interval at which updates take place, in seconds.
+- `autoupdate`: Specifies whether the authorization view should update itself automatically. Set to [`true`](https://developer.apple.com/documentation/swift/true) to enable autoupdates.
+- `interval`: If `autoupdate` is [`true`](https://developer.apple.com/documentation/swift/true), sets the interval at which updates take place, in seconds.
 
 ## See Also
 

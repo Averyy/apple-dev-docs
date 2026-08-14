@@ -7,7 +7,6 @@ Registers the audio accessory with the system and activates its configured capab
 
 **Availability**:
 - iOS 26.4+
-- iPadOS 26.4+
 
 ## Declaration
 

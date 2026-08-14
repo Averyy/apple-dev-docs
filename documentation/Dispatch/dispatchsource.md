@@ -100,8 +100,8 @@ Use the methods of this class to construct new dispatch sources of the appropria
 ### Inherits From
 - [DispatchObject](dispatchobject.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [Copyable](../Swift/Copyable.md)
+- [CVarArg](../swift/cvararg.md)
+- [Copyable](../swift/copyable.md)
 - [DispatchSourceFileSystemObject](dispatchsourcefilesystemobject.md)
 - [DispatchSourceMachReceive](dispatchsourcemachreceive.md)
 - [DispatchSourceMachSend](dispatchsourcemachsend.md)
@@ -115,12 +115,12 @@ Use the methods of this class to construct new dispatch sources of the appropria
 - [DispatchSourceUserDataOr](dispatchsourceuserdataor.md)
 - [DispatchSourceUserDataReplace](dispatchsourceuserdatareplace.md)
 - [DispatchSourceWrite](dispatchsourcewrite.md)
-- [Equatable](../Swift/Equatable.md)
-- [Escapable](../Swift/Escapable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Equatable](../swift/equatable.md)
+- [Escapable](../swift/escapable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

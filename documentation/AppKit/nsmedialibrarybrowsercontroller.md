@@ -20,7 +20,7 @@ From this panel a user can drag media  into views in their app. The class provid
 
 > **Note**:  The Media Library Browser panel is not an `NSPanel` instance.  It has panel like methods to remotely control the Media Library Browser.  Clients have no direct programmatic access to the panel displaying the Media Library Browser.
 
-For more information see [`MLMediaLibrary`](https://developer.apple.com/documentation/MediaLibrary/MLMediaLibrary), [`MLMediaSource`](https://developer.apple.com/documentation/MediaLibrary/MLMediaSource), [`MLMediaGroup`](https://developer.apple.com/documentation/MediaLibrary/MLMediaGroup), and [`MLMediaObject`](https://developer.apple.com/documentation/MediaLibrary/MLMediaObject) in [`Media Library`](https://developer.apple.com/documentation/MediaLibrary).
+For more information see [`MLMediaLibrary`](https://developer.apple.com/documentation/medialibrary/mlmedialibrary), [`MLMediaSource`](https://developer.apple.com/documentation/medialibrary/mlmediasource), [`MLMediaGroup`](https://developer.apple.com/documentation/medialibrary/mlmediagroup), and [`MLMediaObject`](https://developer.apple.com/documentation/medialibrary/mlmediaobject) in [`Media Library`](https://developer.apple.com/documentation/medialibrary).
 
 ##### Pasteboard Types
 
@@ -31,7 +31,7 @@ The Media Library Browser defines two pasteboard types for decoding the dragged 
 
 There is a third, less specialized, type of media library pasteboard. When the user initiates a drag the pasteboard will contain an array with one more more  [`NSFilenamesPboardType`](nsfilenamespboardtype.md) pasteboard items, one for each of the files within the group dragged from the media-group-organized pane, and one or more items when a media item or items are dragged from the media item pane.
 
-If you do not need access to the associated Media Library metadata, using the `NSFilenamesPboardType` pasteboard data is the simplest means of retrieving the dragged content, although accessing the media in this manner when your app is sandboxed requires that you use the `NSURL` [`startAccessingSecurityScopedResource()`](https://developer.apple.com/documentation/Foundation/NSURL/startAccessingSecurityScopedResource()) and [`stopAccessingSecurityScopedResource()`](https://developer.apple.com/documentation/Foundation/NSURL/stopAccessingSecurityScopedResource()) methods.
+If you do not need access to the associated Media Library metadata, using the `NSFilenamesPboardType` pasteboard data is the simplest means of retrieving the dragged content, although accessing the media in this manner when your app is sandboxed requires that you use the `NSURL` [`startAccessingSecurityScopedResource()`](https://developer.apple.com/documentation/foundation/nsurl/startaccessingsecurityscopedresource()) and [`stopAccessingSecurityScopedResource()`](https://developer.apple.com/documentation/foundation/nsurl/stopaccessingsecurityscopedresource()) methods.
 
 ###### The Media Group Pasteboard Type
 
@@ -123,14 +123,14 @@ Listing 2. Retrieving MLMediaObject instances from the pasteboard
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 
 ---

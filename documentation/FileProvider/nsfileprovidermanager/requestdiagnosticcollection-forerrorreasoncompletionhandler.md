@@ -30,7 +30,7 @@ The system may or may not allow the request, and the method call returns normall
 ## Parameters
 
 - `itemIdentifier`: The item that failed to sync.
-- `errorReason`: An error instance that indicates why the sync failed. If you use a Swift [`Error`](https://developer.apple.com/documentation/Swift/Error), the system coerces it to an [`NSError`](https://developer.apple.com/documentation/Foundation/NSError) and uses only the domain and code.
+- `errorReason`: An error instance that indicates why the sync failed. If you use a Swift [`Error`](https://developer.apple.com/documentation/swift/error), the system coerces it to an [`NSError`](https://developer.apple.com/documentation/foundation/nserror) and uses only the domain and code.
 - `completionHandler`: A block or closure that executes after the system processes the diagnostic collection request. The completion handler receives an error parameter, which is non-`nil` if an error prevented collection of diagnostics. In Swift, you can omit the completion handler and instead use a `do`-`catch` block to handle the thrown error.
 
 

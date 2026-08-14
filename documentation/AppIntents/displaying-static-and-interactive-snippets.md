@@ -111,7 +111,7 @@ extension LandmarkSnippetIntent {
 
 Note the `isFavorite` parameter in the view’s initializer. The `LandmarkView` indicates whether a landmark is marked as a favorite already, and includes a button to add or remove it from favorites. The `LandMarkView` also includes a button to start a search for tickets to visit the landmark.
 
-> **Note**: Snippets are great candidates to reuse views you use in your widgets, and, like widgets, you must initialize the snippet’s [`Button`](https://developer.apple.com/documentation/SwiftUI/Button) or [`Toggle`](https://developer.apple.com/documentation/SwiftUI/Toggle) with an [`AppIntent`](appintent.md) that performs the underlying action. For more information, refer to [`Adding interactivity to widgets and Live Activities`](https://developer.apple.com/documentation/WidgetKit/Adding-interactivity-to-widgets-and-Live-Activities).
+> **Note**: Snippets are great candidates to reuse views you use in your widgets, and, like widgets, you must initialize the snippet’s [`Button`](https://developer.apple.com/documentation/swiftui/button) or [`Toggle`](https://developer.apple.com/documentation/swiftui/toggle) with an [`AppIntent`](appintent.md) that performs the underlying action. For more information, refer to [`Adding interactivity to widgets and Live Activities`](https://developer.apple.com/documentation/widgetkit/adding-interactivity-to-widgets-and-live-activities).
 
 ##### Review the Lifecycle of Snippet Intents
 

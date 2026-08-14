@@ -26,7 +26,7 @@ This method is used by the layout mechanism and should be invoked only during ty
 
 ## Parameters
 
-- `flag`: If [`true`](https://developer.apple.com/documentation/Swift/true), sets the given glyph to draw outside its line fragment; if [`false`](https://developer.apple.com/documentation/Swift/false), the glyph does not draw outside.
+- `flag`: If [`true`](https://developer.apple.com/documentation/swift/true), sets the given glyph to draw outside its line fragment; if [`false`](https://developer.apple.com/documentation/swift/false), the glyph does not draw outside.
 - `glyphIndex`: Index of the glyph to set.
 
 ## See Also

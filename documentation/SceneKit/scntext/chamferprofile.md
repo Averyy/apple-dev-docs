@@ -25,7 +25,7 @@ var chamferProfile: NSBezierPath? { get set }
 
 The value of this property must be a two-dimensional path starting at the point `{1, 0}` and ending at the point `{0, 1}`, determining the contour of the shape along its extruded sides. If the value of this property is `nil` and the value of the [`chamferRadius`](scntext/chamferradius.md) property is greater than zero, SceneKit uses a chamfer profile in the shape of a quarter circle. [`Figure 1`](scntext/1523334-chamferprofile#1965884.md) illustrates various chamfer profiles applied to the shape of a tilde (~) character.
 
-![None](https://docs-assets.developer.apple.com/published/5a92cf08a192d2bc019ad9266b486308/media-1965884%402x.png)
+![None](/images/com.apple.scenekit/media-1965884@2x.png)
 
 ## See Also
 

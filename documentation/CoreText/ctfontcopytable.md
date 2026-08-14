@@ -22,7 +22,7 @@ func CTFontCopyTable(_ font: CTFont, _ table: CTFontTableTag, _ options: CTFontT
 
 #### Return Value
 
-A retained reference to the font table data as a [`CFData`](https://developer.apple.com/documentation/CoreFoundation/CFData) object. The table data is not actually copied; however, the data reference must be released.
+A retained reference to the font table data as a [`CFData`](https://developer.apple.com/documentation/corefoundation/cfdata) object. The table data is not actually copied; however, the data reference must be released.
 
 ## Parameters
 

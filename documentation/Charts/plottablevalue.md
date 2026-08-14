@@ -24,7 +24,7 @@ struct PlottableValue<Value> where Value : Plottable
 
 Provide a `PlottableValue` to a `Mark` property (e.g., x, y, foregroundStyle) to plot data values with the mark property.
 
-> ❗ **Important**: The data type must conform to [`Plottable`](plottable.md). This is a numeric value like a [`Double`](https://developer.apple.com/documentation/Swift/Double) or [`Int16`](https://developer.apple.com/documentation/Swift/Int16) for quantitative data, [`Date`](https://developer.apple.com/documentation/Foundation/Date) for temporal data, or [`String`](https://developer.apple.com/documentation/Swift/String) for categorical data.
+> ❗ **Important**: The data type must conform to [`Plottable`](plottable.md). This is a numeric value like a [`Double`](https://developer.apple.com/documentation/swift/double) or [`Int16`](https://developer.apple.com/documentation/swift/int16) for quantitative data, [`Date`](https://developer.apple.com/documentation/foundation/date) for temporal data, or [`String`](https://developer.apple.com/documentation/swift/string) for categorical data.
 
 You can use the `.value("Category", \.category)` shorthand to create a `PlottableValue`. The example below plots category, value, and group with the bar mark’s x, y, and foregroundStyle.
 

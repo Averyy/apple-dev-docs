@@ -12,7 +12,7 @@ Xcode and Instruments provide multiple tools for observing and exploring memory 
 
 While your app is running in Xcode, the memory report available from Xcode’s Debug navigator shows the app’s current memory use, along with the highest value seen. The yellow region of the memory gauge indicates memory use high enough to trigger a warning. The app risks termination by iOS if its memory use enters the red region.
 
-![Illustration showing Xcode’s Memory Report, available while debugging an app. The line graph tracks memory use over time.](https://docs-assets.developer.apple.com/published/aa40d4726bfc19940d796f766fb1aceb/gathering-information-about-memory-use-1.png)
+![Illustration showing Xcode’s Memory Report, available while debugging an app. The line graph tracks memory use over time.](/images/com.apple.Xcode/gathering-information-about-memory-use-1.png)
 
 > 💡 **Tip**: If iOS repeatedly terminates your app because it’s using too much memory, you can investigate its behavior in the simulator, where it can continue to run. When you run your app in the simulator, the memory gauge always stays in the green (safe) region because macOS doesn’t issue memory warnings or out-of-memory terminations. This behavior has advantages in diagnosing problems associated with too much memory use. But keep in mind that memory use in the green region of the gauge in the simulator doesn’t necessarily mean that your app’s memory use is within safe limits.
 
@@ -20,11 +20,11 @@ While your app is running in Xcode, the memory report available from Xcode’s D
 
 You can generate a memory graph of the objects and allocations in your app by clicking the Debug Memory Graph button in Xcode’s debug area at the bottom of the workspace window.
 
-![Illustration showing the Debug Memory Graph button.](https://docs-assets.developer.apple.com/published/d156982b0dad1dd581a8d8e0e866539d/gathering-information-about-memory-use-2.png)
+![Illustration showing the Debug Memory Graph button.](/images/com.apple.Xcode/gathering-information-about-memory-use-2.png)
 
 The memory graph shows the memory regions your app is using and the size of each region. A node in the graph represents an object, a heap allocation, or a memory-mapped file. Connections between nodes, drawn as arrows, show where one memory region refers to another.
 
-![Illustration showing the debug memory graph, and relationships between allocated memory regions in an app. ](https://docs-assets.developer.apple.com/published/b02db2b60e5ef7d88a9bd5d237a85d36/gathering-information-about-memory-use-3.png)
+![Illustration showing the debug memory graph, and relationships between allocated memory regions in an app. ](/images/com.apple.Xcode/gathering-information-about-memory-use-3.png)
 
 The memory graph shows where your app is using memory and how those uses are related. You can augment the graph with allocation stack traces, so that each region is associated with a call stack trace recorded at the point at which the region was allocated.
 

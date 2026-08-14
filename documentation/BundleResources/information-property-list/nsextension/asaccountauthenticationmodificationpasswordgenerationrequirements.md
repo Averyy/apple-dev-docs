@@ -16,7 +16,7 @@ The rules the system satisfies when generating a strong password for your extens
 
 #### Discussion
 
-For more information about the format and content of this value, see [`Customizing Password AutoFill rules`](https://developer.apple.com/documentation/Security/customizing-password-autofill-rules).
+For more information about the format and content of this value, see [`Customizing Password AutoFill rules`](https://developer.apple.com/documentation/security/customizing-password-autofill-rules).
 
 ## See Also
 

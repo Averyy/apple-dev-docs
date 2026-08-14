@@ -20,7 +20,7 @@ var rect: CGRect { get set }
 
 #### Discussion
 
-The default value of this property is [`CGRectNull`](https://developer.apple.com/documentation/CoreGraphics/CGRectNull), which captures everything in the view’s bounds rectangle. If you specify a custom rectangle, it must lie within the bounds rectangle of the [`WKWebView`](wkwebview.md) object.
+The default value of this property is [`CGRectNull`](https://developer.apple.com/documentation/coregraphics/cgrectnull), which captures everything in the view’s bounds rectangle. If you specify a custom rectangle, it must lie within the bounds rectangle of the [`WKWebView`](wkwebview.md) object.
 
 ## See Also
 

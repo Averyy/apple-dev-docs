@@ -20,7 +20,7 @@ The bounding rectangle for the specified control glyph with the specified parame
 
 #### Discussion
 
-Sent for resolving the glyph metrics for [`NSControlCharacterWhitespaceAction`](https://developer.apple.com/documentation/UIKit/NSControlCharacterWhitespaceAction) control character.
+Sent for resolving the glyph metrics for [`NSControlCharacterWhitespaceAction`](https://developer.apple.com/documentation/uikit/nscontrolcharacterwhitespaceaction) control character.
 
 ## Parameters
 

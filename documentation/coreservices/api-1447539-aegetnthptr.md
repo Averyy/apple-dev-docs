@@ -32,14 +32,14 @@ Thread safe starting in OS X v10.2.
 
 ## Parameters
 
-- `theAEDescList`: A pointer to the descriptor list that contains the descriptor. See  .
-- `index`: A one-based positive integer indicating the position in the descriptor list of the descriptor to get the data from.   returns an error if you pass zero, a negative number, or a value that is out of range.
-- `desiredType`: See  .
-- `theAEKeyword`: A pointer to a keyword. On return, the keyword for the specified descriptor, if you are getting data from a list of keyword-specified descriptors; otherwise,   returns the value  . Some keyword constants are described in   and  . See  .
-- `typeCode`: A pointer to a descriptor type. On return, specifies the descriptor type of the data pointed to by  . For a list of AppleScript’s predefined descriptor types, see  .
-- `dataPtr`: A pointer to a buffer, local variable, or other storage location created and disposed of by your application. The size in bytes must be at least as large as the value you pass in the   parameter. On return, contains the data from the descriptor at the position in the descriptor list specified by the   parameter.
-- `maximumSize`: The maximum length, in bytes, of the expected data. The   function will not return more data than you specify in this parameter. 
-- `actualSize`: A pointer to a size variable. On return, the length, in bytes, of the data for the specified descriptor. If this value is larger than the value of the   parameter, the buffer pointed to by   was not large enough to contain all of the data for the descriptor, though   does not write beyond the end of the buffer. If the buffer was too small, you can resize it and call   again.
+- `theAEDescList`: A pointer to the descriptor list that contains the descriptor. See [`AEDescList`](aedesclist.md).
+- `index`: A one-based positive integer indicating the position in the descriptor list of the descriptor to get the data from. `AEGetNthPtr` returns an error if you pass zero, a negative number, or a value that is out of range.
+- `desiredType`: The desired descriptor type for the copied data. For a list of AppleScript’s predefined descriptor types, see [`Descriptor Type Constants`](apple_events/1542788-descriptor_type_constants.md). If the descriptor specified by the `index` parameter is not of the desired type, `AEGetNthPtr` attempts to coerce the data to this type. If you pass a value of `typeWildCard`, no coercion is performed, and the descriptor type of the copied data is the same as the descriptor type of the original descriptor. See [`DescType`](desctype.md).
+- `theAEKeyword`: A pointer to a keyword. On return, the keyword for the specified descriptor, if you are getting data from a list of keyword-specified descriptors; otherwise, `AEGetNthPtr` returns the value `typeWildCard`. Some keyword constants are described in [`Keyword Attribute Constants`](apple_events/1542920-keyword_attribute_constants.md) and [`Keyword Parameter Constants`](apple_events/1527206-keyword_parameter_constants.md). See [`AEKeyword`](aekeyword.md).
+- `typeCode`: A pointer to a descriptor type. On return, specifies the descriptor type of the data pointed to by `dataPtr`. For a list of AppleScript’s predefined descriptor types, see [`Descriptor Type Constants`](apple_events/1542788-descriptor_type_constants.md).
+- `dataPtr`: A pointer to a buffer, local variable, or other storage location created and disposed of by your application. The size in bytes must be at least as large as the value you pass in the `maximumSize` parameter. On return, contains the data from the descriptor at the position in the descriptor list specified by the `index` parameter.
+- `maximumSize`: The maximum length, in bytes, of the expected data. The `AEGetNthPtr` function will not return more data than you specify in this parameter. 
+- `actualSize`: A pointer to a size variable. On return, the length, in bytes, of the data for the specified descriptor. If this value is larger than the value of the `maximumSize` parameter, the buffer pointed to by `dataPtr` was not large enough to contain all of the data for the descriptor, though `AEGetNthPtr` does not write beyond the end of the buffer. If the buffer was too small, you can resize it and call `AEGetNthPtr` again.
 
 ## See Also
 

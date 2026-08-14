@@ -10,7 +10,7 @@ All bundles, which represent runnable code, need to contain an information prope
 
 ##### Create a New Project
 
-When you create a project from a template, as described in [`Creating an Xcode project for an app`](https://developer.apple.com/documentation/Xcode/creating-an-xcode-project-for-an-app), Xcode populates the project’s build settings with values that it uses to generate the information property list, or with variable values that it replaces at build time using build settings. For example, Xcode sets [`CFBundleIdentifier`](information-property-list/cfbundleidentifier.md) with a value of `$(PRODUCT_BUNDLE_IDENTIFIER)`.
+When you create a project from a template, as described in [`Creating an Xcode project for an app`](https://developer.apple.com/documentation/xcode/creating-an-xcode-project-for-an-app), Xcode populates the project’s build settings with values that it uses to generate the information property list, or with variable values that it replaces at build time using build settings. For example, Xcode sets [`CFBundleIdentifier`](information-property-list/cfbundleidentifier.md) with a value of `$(PRODUCT_BUNDLE_IDENTIFIER)`.
 
 In most cases, the project itself doesn’t contain an actual information property list file. Instead, when you build your app, Xcode uses the values from those build settings to generate the file in the app’s bundle. For some situations, such as iOS apps that use storyboards for their UI, Xcode creates an information property list file for the app that contains some of the properties, and merges its content with values from build settings to produce the final information property list file.
 
@@ -20,17 +20,17 @@ Xcode generates an information property list file for each target in the project
 
 You can change some of the default settings and add others by configuring your project or target in Xcode. For example, changing the bundle identifier field in the target’s General pane affects the value of the `PRODUCT_BUNDLE_IDENTIFIER` build setting.
 
-![Screenshot of Xcode highlighting the Bundle Identifier field in the General pane of a macOS app project.](https://docs-assets.developer.apple.com/published/53de9f52c624e46cc4f27120ff016c21/bundle-identifier%402x.png)
+![Screenshot of Xcode highlighting the Bundle Identifier field in the General pane of a macOS app project.](/images/com.apple.bundleresources/bundle-identifier@2x.png)
 
-As noted in the previous section, this build setting controls the value of the [`CFBundleIdentifier`](information-property-list/cfbundleidentifier.md) key. For more information about configuring the target, see [`Preparing your app for distribution`](https://developer.apple.com/documentation/Xcode/preparing-your-app-for-distribution) and [`Adding capabilities to your app`](https://developer.apple.com/documentation/Xcode/adding-capabilities-to-your-app).
+As noted in the previous section, this build setting controls the value of the [`CFBundleIdentifier`](information-property-list/cfbundleidentifier.md) key. For more information about configuring the target, see [`Preparing your app for distribution`](https://developer.apple.com/documentation/xcode/preparing-your-app-for-distribution) and [`Adding capabilities to your app`](https://developer.apple.com/documentation/xcode/adding-capabilities-to-your-app).
 
 ##### Configure Information Property List Values
 
 You can edit information property list values, and add and remove keys, in the target’s Info pane. The Info pane ensures that the value types you use with each key are the types that the system expects, and supplies templates for complex types like dictionaries.
 
-![Screenshot of the Info pane of a macOS app project in Xcode.](https://docs-assets.developer.apple.com/published/92b65d53458ac681c42a0ce9dc7ac167/info-pane%402x.png)
+![Screenshot of the Info pane of a macOS app project in Xcode.](/images/com.apple.bundleresources/info-pane@2x.png)
 
-Configure purpose strings that explain why your app uses protected resources in the target’s Signing and Capabilities pane. For more information, see [`Requesting access to protected resources`](https://developer.apple.com/documentation/UIKit/requesting-access-to-protected-resources).
+Configure purpose strings that explain why your app uses protected resources in the target’s Signing and Capabilities pane. For more information, see [`Requesting access to protected resources`](https://developer.apple.com/documentation/uikit/requesting-access-to-protected-resources).
 
 ##### Configure Information Property List Build Settings
 
@@ -38,7 +38,7 @@ When Xcode generates the information property list for a target, it uses values 
 
 Xcode organizes these build settings in the Info.plist Values group in the target’s Build Settings pane.
 
-To learn more about configuring your target’s build settings, see [`Configuring the build settings of a target`](https://developer.apple.com/documentation/Xcode/configuring-the-build-settings-of-a-target). For a full list of build settings, see [`Build settings reference`](https://developer.apple.com/documentation/Xcode/build-settings-reference).
+To learn more about configuring your target’s build settings, see [`Configuring the build settings of a target`](https://developer.apple.com/documentation/xcode/configuring-the-build-settings-of-a-target). For a full list of build settings, see [`Build settings reference`](https://developer.apple.com/documentation/xcode/build-settings-reference).
 
 > **Note**:  Xcode doesn’t use values from user-defined build settings when it generates the information property list, even if you create settings with the `INFOPLIST_KEY_` prefix. For example, a user-defined build setting called `INFOPLIST_KEY_ExampleKey` doesn’t result in Xcode generating an `ExampleKey` in the information property list.
 
@@ -56,7 +56,7 @@ If necessary, you can create a property list file that you use as your target’
 
 > ❗ **Important**:  Don’t add the property list file to your target. If you do, Xcode copies it into the Resources folder of your bundle, which isn’t the correct location for the file. Additionally, Xcode copies the file without processing its values, and copies information about your project’s build settings into the bundle that you distribute to your customers.
 
-You can add or remove keys in the property list file, or change their values directly. For more information, see [`Editing property list files`](https://developer.apple.com/documentation/Xcode/editing-property-list-files).
+You can add or remove keys in the property list file, or change their values directly. For more information, see [`Editing property list files`](https://developer.apple.com/documentation/xcode/editing-property-list-files).
 
 How Xcode uses this file depends on the value of the `GENERATE_INFOPLIST_FILE` build setting. If the value is `Yes`, then Xcode merges the content of the property list file with the values from the Info.plist Values build settings when it generates your bundle’s information property list file. If it’s `No`, then Xcode doesn’t use build settings to generate the information property list file. Instead, it processes the values in the property list file you supply to substitute any build settings variables with their values, and copies the processed file into your bundle.
 
@@ -100,7 +100,7 @@ During the operation, Xcode uses build settings to perform variable substitution
 
 ##### Localize the Information Property List
 
-Many strings in the information property list are human-readable strings displayed to the user, so you should localize the file. For example, localize [`CFBundleDisplayName`](information-property-list/cfbundledisplayname.md), [`CFBundleName`](information-property-list/cfbundlename.md), and all of the `UsageDescription` keys found in [`Protected resources`](protected-resources.md). For more information, see [`Localization`](https://developer.apple.com/documentation/Xcode/localization).
+Many strings in the information property list are human-readable strings displayed to the user, so you should localize the file. For example, localize [`CFBundleDisplayName`](information-property-list/cfbundledisplayname.md), [`CFBundleName`](information-property-list/cfbundlename.md), and all of the `UsageDescription` keys found in [`Protected resources`](protected-resources.md). For more information, see [`Localization`](https://developer.apple.com/documentation/xcode/localization).
 
 
 ---

@@ -23,7 +23,7 @@ Call this method when your provider determines it’s receiving an incoming call
 
 ## Parameters
 
-- `userInfo`: A dictionary of custom information associated with the incoming call. The dictionary’s values must only use data types supported by [`PropertyListSerialization`](https://developer.apple.com/documentation/Foundation/PropertyListSerialization); you can’t use custom types for the values.
+- `userInfo`: A dictionary of custom information associated with the incoming call. The dictionary’s values must only use data types supported by [`PropertyListSerialization`](https://developer.apple.com/documentation/foundation/propertylistserialization); you can’t use custom types for the values.
 
 ## See Also
 

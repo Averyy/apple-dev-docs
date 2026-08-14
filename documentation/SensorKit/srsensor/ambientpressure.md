@@ -18,9 +18,9 @@ static let ambientPressure: SRSensor
 
 #### Discussion
 
-The [`sample`](srfetchresult/sample.md) type for this sensor is `[`[`CMRecordedPressureData`](https://developer.apple.com/documentation/CoreMotion/CMRecordedPressureData)`]`.
+The [`sample`](srfetchresult/sample.md) type for this sensor is `[`[`CMRecordedPressureData`](https://developer.apple.com/documentation/coremotion/cmrecordedpressuredata)`]`.
 
-You need to provide a reason to record ambient pressure by adding the [`SRSensorUsageElevation`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSSensorKitUsageDetail/SRSensorUsageElevation) dictionary to the [`NSSensorKitUsageDetail`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSSensorKitUsageDetail) key in the information property list.
+You need to provide a reason to record ambient pressure by adding the [`SRSensorUsageElevation`](https://developer.apple.com/documentation/bundleresources/information-property-list/nssensorkitusagedetail/srsensorusageelevation) dictionary to the [`NSSensorKitUsageDetail`](https://developer.apple.com/documentation/bundleresources/information-property-list/nssensorkitusagedetail) key in the information property list.
 
 ## See Also
 

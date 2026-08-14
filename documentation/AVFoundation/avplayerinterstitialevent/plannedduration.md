@@ -22,7 +22,7 @@ var plannedDuration: CMTime { get set }
 
 #### Discussion
 
-The default value is [`zero`](https://developer.apple.com/documentation/CoreMedia/CMTime/zero).
+The default value is [`zero`](https://developer.apple.com/documentation/coremedia/cmtime/zero).
 
 ## See Also
 

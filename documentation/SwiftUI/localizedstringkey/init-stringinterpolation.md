@@ -24,7 +24,7 @@ init(stringInterpolation: LocalizedStringKey.StringInterpolation)
 
 To create a localized string key from a string interpolation, use the `\()` string interpolation syntax. Swift matches the parameter types in the expression to one of the `appendInterpolation` methods in [`LocalizedStringKey.StringInterpolation`](localizedstringkey/stringinterpolation.md). The interpolated types can include numeric values, Foundation types, and SwiftUI [`Text`](text.md) and [`Image`](image.md) instances.
 
-The following example uses a string interpolation with two arguments: an unlabeled [`Date`](https://developer.apple.com/documentation/Foundation/Date) and a [`Text.DateStyle`](text/datestyle.md) labeled `style`. The compiler maps these to the method [`appendInterpolation(_:style:)`](localizedstringkey/stringinterpolation/appendinterpolation(_:style:).md) as it builds the string that it creates the [`LocalizedStringKey`](localizedstringkey.md) with.
+The following example uses a string interpolation with two arguments: an unlabeled [`Date`](https://developer.apple.com/documentation/foundation/date) and a [`Text.DateStyle`](text/datestyle.md) labeled `style`. The compiler maps these to the method [`appendInterpolation(_:style:)`](localizedstringkey/stringinterpolation/appendinterpolation(_:style:).md) as it builds the string that it creates the [`LocalizedStringKey`](localizedstringkey.md) with.
 
 ```swift
 let key = LocalizedStringKey("Date is \(company.foundedDate, style: .offset)")

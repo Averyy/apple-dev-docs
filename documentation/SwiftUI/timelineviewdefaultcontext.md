@@ -28,7 +28,7 @@ The context includes both the date from the schedule that triggered the callback
 
 ## See Also
 
-- [Updating watchOS apps with timelines](../watchOS-Apps/updating-watchos-apps-with-timelines.md)
+- [Updating watchOS apps with timelines](../watchos-apps/updating-watchos-apps-with-timelines.md)
   Seamlessly schedule updates to your user interface, even while it’s inactive.
 - [struct TimelineView](timelineview.md)
   A view that updates according to a schedule that you provide.

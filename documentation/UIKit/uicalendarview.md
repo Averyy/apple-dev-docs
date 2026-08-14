@@ -38,7 +38,7 @@ You use a calendar view only for the display and selection of dates. If you want
 
 ##### Configure a Calendar View
 
-Configure your calendar view to display the type of calendar appropriate to the user’s location and cultural preference, in the user’s preferred language. By default, a calendar view selects the user’s current [`Calendar`](https://developer.apple.com/documentation/Foundation/Calendar) and [`Locale`](https://developer.apple.com/documentation/Foundation/Locale). If users can select a different calendar or locale in your app, configure the calendar view to use those selections.
+Configure your calendar view to display the type of calendar appropriate to the user’s location and cultural preference, in the user’s preferred language. By default, a calendar view selects the user’s current [`Calendar`](https://developer.apple.com/documentation/foundation/calendar) and [`Locale`](https://developer.apple.com/documentation/foundation/locale). If users can select a different calendar or locale in your app, configure the calendar view to use those selections.
 
 ```swift
 // Create the calendar view.
@@ -272,19 +272,19 @@ func dateSelection(_ selection: UICalendarSelectionSingleDate, didSelectDate dat
 ### Inherits From
 - [UIView](uiview.md)
 ### Conforms To
-- [CALayerDelegate](../QuartzCore/CALayerDelegate.md)
-- [CLBodyIdentifiable](../CoreLocation/CLBodyIdentifiable.md)
-- [CMBodyIdentifiable](../CoreMotion/CMBodyIdentifiable.md)
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCoding](../Foundation/NSCoding.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [NSTouchBarProvider](../AppKit/NSTouchBarProvider.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [CALayerDelegate](../quartzcore/calayerdelegate.md)
+- [CLBodyIdentifiable](../corelocation/clbodyidentifiable.md)
+- [CMBodyIdentifiable](../coremotion/cmbodyidentifiable.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCoding](../foundation/nscoding.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSTouchBarProvider](../appkit/nstouchbarprovider.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 - [UIAccessibilityIdentification](uiaccessibilityidentification.md)
 - [UIActivityItemsConfigurationProviding](uiactivityitemsconfigurationproviding.md)
 - [UIAppearance](uiappearance.md)

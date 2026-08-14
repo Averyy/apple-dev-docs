@@ -18,7 +18,7 @@ class CLKComplicationTemplateModularSmallRingText
 
 This template belongs to the [`CLKComplicationFamily.modularSmall`](clkcomplicationfamily/modularsmall.md) family.
 
-![A diagram showing the layout of the modular small ring text complication. The diagram shows text inside a small progress ring.](https://docs-assets.developer.apple.com/published/c4a5ba0d520030a0d1b3fbe8afba3624/media-2933755%402x.png)
+![A diagram showing the layout of the modular small ring text complication. The diagram shows text inside a small progress ring.](/images/com.apple.clockkit/media-2933755@2x.png)
 
 ## Topics
 
@@ -38,13 +38,13 @@ This template belongs to the [`CLKComplicationFamily.modularSmall`](clkcomplicat
 ### Inherits From
 - [CLKComplicationTemplate](clkcomplicationtemplate.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCopying](../Foundation/NSCopying.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCopying](../foundation/nscopying.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

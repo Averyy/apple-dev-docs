@@ -15,7 +15,7 @@ Arrange views in your app’s interface using layout tools that SwiftUI provides
 
 This sample app demonstrates many of the layout tools that SwiftUI provides by building an interface that enables people to vote for their favorite kind of pet. The app offers buttons to vote for a specific pet type, and displays the vote counts and relative rankings of the various contenders on a leaderboard. It also shows avatars for the pets, arranged in a way that reflects the current rankings.
 
-![An iPhone showing the layout of the app, with the three main sections called out. The group of avatars are in a circular arrangement at the top. The leaderboard grid is in the middle. The equal-width voting buttons are at the bottom.](https://docs-assets.developer.apple.com/published/794cadfbcce445db9386cb030b450d3f/composing-custom-layouts-with-swiftui-overview%402x.png)
+![An iPhone showing the layout of the app, with the three main sections called out. The group of avatars are in a circular arrangement at the top. The leaderboard grid is in the middle. The equal-width voting buttons are at the bottom.](/images/com.apple.SwiftUI/composing-custom-layouts-with-swiftui-overview@2x.png)
 
 > **Note**: This sample code project is associated with WWDC22 session [`10056: Compose custom layouts with SwiftUI`](https://developer.apple.comhttps://developer.apple.com/wwdc22/10056/).
 
@@ -23,7 +23,7 @@ This sample app demonstrates many of the layout tools that SwiftUI provides by b
 
 To draw a leaderboard in the middle of the display that shows vote counts and percentages, the sample uses a [`Grid`](grid.md) view.
 
-![A grid with three rows and three columns. The first column and last column each contain rectangles in every cell. The middle column contains progress indicators with different amounts of progress.](https://docs-assets.developer.apple.com/published/85c0ef3a96673deaf14cb97e83cb64cd/composing-custom-layouts-with-swiftui-leaderboard%402x.png)
+![A grid with three rows and three columns. The first column and last column each contain rectangles in every cell. The middle column contains progress indicators with different amounts of progress.](/images/com.apple.SwiftUI/composing-custom-layouts-with-swiftui-leaderboard@2x.png)
 
 The grid contains a [`GridRow`](gridrow.md) inside a [`ForEach`](foreach.md), where each view in the row creates a column cell. So the first view appears in the first column, the second in the second column, and so on. Because the [`Divider`](divider.md) appears outside of a grid row instance, it creates a row that spans the width of the grid.
 
@@ -50,7 +50,7 @@ The sample initializes the grid with leading-edge alignment, which applies to ev
 
 The app offers buttons for voting at the bottom of the interface.
 
-![Three rectangles arranged in a horizontal line. Each rectangle contains one smaller rectangle. The smaller rectangles have varying widths. Dashed lines above each of the container rectangles show that the larger rectangles all have the same width as each other.](https://docs-assets.developer.apple.com/published/425e108596569736386a66d6b8172f1f/composing-custom-layouts-with-swiftui-voting-buttons%402x.png)
+![Three rectangles arranged in a horizontal line. Each rectangle contains one smaller rectangle. The smaller rectangles have varying widths. Dashed lines above each of the container rectangles show that the larger rectangles all have the same width as each other.](/images/com.apple.SwiftUI/composing-custom-layouts-with-swiftui-voting-buttons@2x.png)
 
 To ensure the buttons all have the same width, but are no wider than the widest button text, the app creates a custom layout container type that conforms to the [`Layout`](layout.md) protocol. The equal-width horizontal stack (`MyEqualWidthHStack`) measures the ideal sizes of all its subviews, and offers the widest ideal size to each subview.
 
@@ -164,7 +164,7 @@ Contrast this with the equal-width horizontal stack, which doesn’t use a cache
 
 To display the pet avatars in a circle, the app defines a radial layout (`MyRadialLayout`).
 
-![Three filled circles placed at equal distances along the outline of a larger, empty circle. The outline of the larger circle uses a dashed line.](https://docs-assets.developer.apple.com/published/a29a6cf6d9e596e753b36cf6de28b6c6/composing-custom-layouts-with-swiftui-avatars%402x.png)
+![Three filled circles placed at equal distances along the outline of a larger, empty circle. The outline of the larger circle uses a dashed line.](/images/com.apple.SwiftUI/composing-custom-layouts-with-swiftui-avatars@2x.png)
 
 Like other custom layouts, this layout needs the two required methods. For [`sizeThatFits(proposal:subviews:cache:)`](layout/sizethatfits(proposal:subviews:cache:).md), the layout fills the available space by returning whatever size its container proposes.
 

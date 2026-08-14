@@ -21,7 +21,7 @@ class var sourceAtop: CIBlendKernel { get }
 
 #### Discussion
 
-![The result of using the source atop blend kernel (background image is top left, foreground image is bottom left)](https://docs-assets.developer.apple.com/published/0f190b60d6f39645eb2cfc8f6c5ac2b6/media-2926887%402x.png)
+![The result of using the source atop blend kernel (background image is top left, foreground image is bottom left)](/images/com.apple.coreimage/media-2926887@2x.png)
 
 ## See Also
 

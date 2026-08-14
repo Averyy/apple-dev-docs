@@ -62,14 +62,14 @@ struct MyTool: Tool {
 ### Conforms To
 - [ConvertibleFromGeneratedContent](convertiblefromgeneratedcontent.md)
 - [ConvertibleToGeneratedContent](convertibletogeneratedcontent.md)
-- [Copyable](../Swift/Copyable.md)
-- [Equatable](../Swift/Equatable.md)
-- [Escapable](../Swift/Escapable.md)
+- [Copyable](../swift/copyable.md)
+- [Equatable](../swift/equatable.md)
+- [Escapable](../swift/escapable.md)
 - [Generable](generable.md)
 - [InstructionsRepresentable](instructionsrepresentable.md)
 - [PromptRepresentable](promptrepresentable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

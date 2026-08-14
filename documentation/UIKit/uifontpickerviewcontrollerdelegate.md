@@ -29,7 +29,7 @@ protocol UIFontPickerViewControllerDelegate : NSObjectProtocol
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 ### Conforming Types
 - [UITextFormattingCoordinator](uitextformattingcoordinator.md)
 

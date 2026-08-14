@@ -22,7 +22,7 @@ let MPMediaPlaylistPropertyDescriptionText: String
 
 #### Discussion
 
-Value is an [`NSString`](https://developer.apple.com/documentation/Foundation/NSString) object.
+Value is an [`NSString`](https://developer.apple.com/documentation/foundation/nsstring) object.
 
 ## See Also
 

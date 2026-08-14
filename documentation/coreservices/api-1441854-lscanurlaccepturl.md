@@ -28,10 +28,10 @@ Thread-safe since Mac OS version 10.2.
 
 ## Parameters
 
-- `inItemURL`: A Core Foundation URL reference designating the source item (the item to test for acceptance by the target application); see the   in the Core Foundation Reference Documentation for a description of the   data type.
-- `inTargetURL`: A Core Foundation URL reference designating the target application; see the   in the Core Foundation Reference Documentation for a description of the   data type. The URL must have scheme   and contain a valid path to an application file or application bundle.
-- `inRolesMask`: A bit mask specifying the target app’s desired role or roles with respect to the source item; see   for a description of this mask. This parameter applies only to URLs with a scheme component of  , and is ignored for all other schemes. If the role is unimportant, pass  .
-- `inFlags`: Flags specifying behavior to observe during the acceptance test; see   for a description of these flags.
+- `inItemURL`: A Core Foundation URL reference designating the source item (the item to test for acceptance by the target application); see the *CFURL Reference* in the Core Foundation Reference Documentation for a description of the `CFURLRef` data type.
+- `inTargetURL`: A Core Foundation URL reference designating the target application; see the *CFURL Reference* in the Core Foundation Reference Documentation for a description of the `CFURLRef` data type. The URL must have scheme `file` and contain a valid path to an application file or application bundle.
+- `inRolesMask`: A bit mask specifying the target app’s desired role or roles with respect to the source item; see [`LSRolesMask`](lsrolesmask.md) for a description of this mask. This parameter applies only to URLs with a scheme component of `file`, and is ignored for all other schemes. If the role is unimportant, pass `kLSRolesAll`.
+- `inFlags`: Flags specifying behavior to observe during the acceptance test; see [`LSAcceptanceFlags`](lsacceptanceflags.md) for a description of these flags.
 - `outAcceptsItem`: A pointer to a Boolean value that, on return, will indicate whether the target application can accept the source item with at least one of the specified roles.
 
 ## See Also

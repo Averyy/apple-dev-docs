@@ -42,7 +42,7 @@ let entity = Entity()
 entity.components.set(modelComponent)
 ```
 
-![A screenshot of a reflective, metallic blue cube centered on the screen with a plain background.](https://docs-assets.developer.apple.com/published/945150be269ae400b094a53f46671006/modelcomponent-cube-simple.jpg)
+![A screenshot of a reflective, metallic blue cube centered on the screen with a plain background.](/images/com.apple.RealityKit/modelcomponent-cube-simple.jpg)
 
 Make different primitive shapes, like spheres with [`generateSphere(radius:)`](meshresource/generatesphere(radius:).md), or cylinders with [`generateCylinder(height:radius:)`](meshresource/generatecylinder(height:radius:).md), or create custom shapes with [`MeshDescriptor`](meshdescriptor.md). For more information about materials, see [`Applying realistic material and lighting effects to entities`](applying-realistic-material-and-lighting-effects-to-entities.md)
 
@@ -69,22 +69,22 @@ Use other components like [`CollisionComponent`](collisioncomponent.md), [`Physi
 
 ### Conforms To
 - [Component](component.md)
-- [Copyable](../Swift/Copyable.md)
-- [Escapable](../Swift/Escapable.md)
+- [Copyable](../swift/copyable.md)
+- [Escapable](../swift/escapable.md)
 
 ## See Also
 
-- [Creating 3D entities with RealityKit](../visionOS/creating-3d-entities-with-realitykit.md)
+- [Creating 3D entities with RealityKit](../visionos/creating-3d-entities-with-realitykit.md)
   Display a horizontal row of three-dimensional shapes in your visionOS app, using predefined mesh and white material.
-- [Creating 3D models as movable windows](../visionOS/creating-a-volumetric-window-in-visionos.md)
+- [Creating 3D models as movable windows](../visionos/creating-a-volumetric-window-in-visionos.md)
   Display 3D content with a volumetric window that people can move.
-- [Creating a 3D painting space](../visionOS/creating-a-painting-space-in-visionos.md)
+- [Creating a 3D painting space](../visionos/creating-a-painting-space-in-visionos.md)
   Implement a painting canvas entity, and update its mesh to represent a stroke.
-- [Tracking and visualizing hand movement](../visionOS/tracking-and-visualizing-hand-movement.md)
+- [Tracking and visualizing hand movement](../visionos/tracking-and-visualizing-hand-movement.md)
   Use hand-tracking anchors to display a visual representation of hand transforms in visionOS.
-- [Applying mesh to real-world surroundings](../visionOS/applying-mesh-to-real-world-surroundings.md)
+- [Applying mesh to real-world surroundings](../visionos/applying-mesh-to-real-world-surroundings.md)
   Add a layer of mesh to objects in the real world, using scene reconstruction in ARKit.
-- [Obscuring virtual items in a scene behind real-world items](../visionOS/obscuring-virtual-items-in-a-scene-behind-real-world-items.md)
+- [Obscuring virtual items in a scene behind real-world items](../visionos/obscuring-virtual-items-in-a-scene-behind-real-world-items.md)
   Increase the realism of an immersive experience by adding entities with invisible materials  real-world objects.
 - [Manipulating models with RealityKit](manipulating-models-with-realitykit.md)
   Interact with detailed 3D models using manipulation and clipping controls.

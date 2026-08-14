@@ -63,7 +63,7 @@ func color(fraction: Double) -> Color {
 }
 ```
 
-![A scroll view, with a button labeled “Scroll to Bottom” at top.](https://docs-assets.developer.apple.com/published/8735b201580f404d498324837faf9233/SwiftUI-ScrollViewReader-scroll-to-bottom-button%402x.png)
+![A scroll view, with a button labeled “Scroll to Bottom” at top.](/images/com.apple.SwiftUI/SwiftUI-ScrollViewReader-scroll-to-bottom-button@2x.png)
 
 > ❗ **Important**: You may not use the [`ScrollViewProxy`](scrollviewproxy.md) during execution of the `content` content builder; doing so results in a runtime error. Instead, only actions created within `content` can call the proxy, such as gesture handlers or a view’s `onChange(of:perform:)` method.
 

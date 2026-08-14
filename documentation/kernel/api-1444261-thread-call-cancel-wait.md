@@ -20,7 +20,7 @@ TRUE if the call was successfully cancelled, FALSE otherwise.
 
 #### Discussion
 
-Attempt to cancel a thread call which has been scheduled for execution with a thread_call_enter* variant. If the call has not yet begun executing, the pending invocation will be cancelled and TRUE will be returned. If the work item has already begun executing, thread_call_cancel_wait waits for the most recent invocation to finish. When called on a work item which has already finished, it will return FALSE immediately. Note that this routine can only be used on thread calls set up with either thread_call_allocate or thread_call_allocate_with_priority, and that invocations of the thread call  the current invocation may be in flight when thread_call_cancel_wait returns.
+Attempt to cancel a thread call which has been scheduled for execution with a thread_call_enter* variant. If the call has not yet begun executing, the pending invocation will be cancelled and TRUE will be returned. If the work item has already begun executing, thread_call_cancel_wait waits for the most recent invocation to finish. When called on a work item which has already finished, it will return FALSE immediately. Note that this routine can only be used on thread calls set up with either thread_call_allocate or thread_call_allocate_with_priority, and that invocations of the thread call *after* the current invocation may be in flight when thread_call_cancel_wait returns.
 
 ## See Also
 

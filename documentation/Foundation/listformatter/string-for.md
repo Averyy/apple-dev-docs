@@ -26,7 +26,7 @@ A formatted string representing the list of objects in an array. Returns `nil` i
 
 #### Discussion
 
-The list formatter uses [`itemFormatter`](listformatter/itemformatter.md) to format each item in the array. If [`itemFormatter`](listformatter/itemformatter.md) doesn’t apply to a particular item, the list formatter falls back to the item’s [`description(withLocale:)`](nsarray/description(withlocale:).md) or [`localizedDescription`](progress/localizeddescription.md) if implemented. If those methods aren’t implemented, the formatter uses [`description`](https://developer.apple.com/documentation/ObjectiveC/NSObjectProtocol/description) instead.
+The list formatter uses [`itemFormatter`](listformatter/itemformatter.md) to format each item in the array. If [`itemFormatter`](listformatter/itemformatter.md) doesn’t apply to a particular item, the list formatter falls back to the item’s [`description(withLocale:)`](nsarray/description(withlocale:).md) or [`localizedDescription`](progress/localizeddescription.md) if implemented. If those methods aren’t implemented, the formatter uses [`description`](https://developer.apple.com/documentation/objectivec/nsobjectprotocol/description) instead.
 
 ## Parameters
 

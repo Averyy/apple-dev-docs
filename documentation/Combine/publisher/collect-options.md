@@ -34,7 +34,7 @@ Use [`collect(_:options:)`](publisher/collect(_:options:).md) to emit arrays of 
 
 If the upstream publisher fails with an error, this publisher forwards the error to the downstream receiver instead of sending its output.
 
-The example above collects timestamps generated on a one-second [`Timer`](https://developer.apple.com/documentation/Foundation/Timer) in groups (`Stride`) of five.
+The example above collects timestamps generated on a one-second [`Timer`](https://developer.apple.com/documentation/foundation/timer) in groups (`Stride`) of five.
 
 ```swift
 let sub = Timer.publish(every: 1, on: .main, in: .default)

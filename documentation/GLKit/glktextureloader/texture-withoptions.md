@@ -29,11 +29,11 @@ If the image was created using the CGBitmapImageContextCreate function, it must 
 
 | Color Space | Pixel format and bitmap information constant |
 | --- | --- |
-| Null | 8 bpp, 8 bpc, [`CGImageAlphaInfo.alphaOnly`](https://developer.apple.com/documentation/CoreGraphics/CGImageAlphaInfo/alphaOnly) |
-| Gray | 8 bpp, 8 bpc, [`CGImageAlphaInfo.none`](https://developer.apple.com/documentation/CoreGraphics/CGImageAlphaInfo/none) |
-| Gray | 8 bpp, 8 bpc, [`CGImageAlphaInfo.alphaOnly`](https://developer.apple.com/documentation/CoreGraphics/CGImageAlphaInfo/alphaOnly) |
-| RGB | 32 bpp, 8 bpc, [`CGImageAlphaInfo.noneSkipFirst`](https://developer.apple.com/documentation/CoreGraphics/CGImageAlphaInfo/noneSkipFirst) |
-| RGB | 32 bpp, 8 bpc, [`CGImageAlphaInfo.premultipliedFirst`](https://developer.apple.com/documentation/CoreGraphics/CGImageAlphaInfo/premultipliedFirst) |
+| Null | 8 bpp, 8 bpc, [`CGImageAlphaInfo.alphaOnly`](https://developer.apple.com/documentation/coregraphics/cgimagealphainfo/alphaonly) |
+| Gray | 8 bpp, 8 bpc, [`CGImageAlphaInfo.none`](https://developer.apple.com/documentation/coregraphics/cgimagealphainfo/none) |
+| Gray | 8 bpp, 8 bpc, [`CGImageAlphaInfo.alphaOnly`](https://developer.apple.com/documentation/coregraphics/cgimagealphainfo/alphaonly) |
+| RGB | 32 bpp, 8 bpc, [`CGImageAlphaInfo.noneSkipFirst`](https://developer.apple.com/documentation/coregraphics/cgimagealphainfo/noneskipfirst) |
+| RGB | 32 bpp, 8 bpc, [`CGImageAlphaInfo.premultipliedFirst`](https://developer.apple.com/documentation/coregraphics/cgimagealphainfo/premultipliedfirst) |
 
 > **Note**:  In Swift, this method returns a nonoptional result and is marked with the `throws` keyword to indicate that it throws an error in cases of failure. You call this method in a `try` expression and handle any errors in the `catch` clauses of a `do` statement, as described in [`Error Handling`](https://developer.apple.comhttps://docs.swift.org/swift-book/LanguageGuide/ErrorHandling.html) in [`The Swift Programming Language`](https://developer.apple.comhttps://docs.swift.org/swift-book/) and `About Imported Cocoa Error Parameters`.
 

@@ -6,13 +6,13 @@ Learn about important changes to XCUIAutomation.
 
 #### Overview
 
-Browse notable changes in [`XCUIAutomation`](https://developer.apple.com/documentation/XCUIAutomation).
+Browse notable changes in [`XCUIAutomation`](https://developer.apple.com/documentation/xcuiautomation).
 
 #### June 2025
 
-- Record UI tests in Xcode using an updated interface. For more information, see [`Recording UI automation for testing`](https://developer.apple.com/documentation/XCUIAutomation/recording-ui-automation-for-testing).
-- Simulate volume-button presses in Simulator with [`XCUIDevice.Button.volumeUp`](https://developer.apple.com/documentation/XCUIAutomation/XCUIDevice/Button/volumeUp) and [`XCUIDevice.Button.volumeDown`](https://developer.apple.com/documentation/XCUIAutomation/XCUIDevice/Button/volumeDown).
-- Create tests that interact with multiple apps by creating an instance of [`XCUIApplication`](https://developer.apple.com/documentation/XCUIAutomation/XCUIApplication) for each app.
+- Record UI tests in Xcode using an updated interface. For more information, see [`Recording UI automation for testing`](https://developer.apple.com/documentation/xcuiautomation/recording-ui-automation-for-testing).
+- Simulate volume-button presses in Simulator with [`XCUIDevice.Button.volumeUp`](https://developer.apple.com/documentation/xcuiautomation/xcuidevice/button/volumeup) and [`XCUIDevice.Button.volumeDown`](https://developer.apple.com/documentation/xcuiautomation/xcuidevice/button/volumedown).
+- Create tests that interact with multiple apps by creating an instance of [`XCUIApplication`](https://developer.apple.com/documentation/xcuiautomation/xcuiapplication) for each app.
 
 ## See Also
 

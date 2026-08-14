@@ -49,7 +49,7 @@ struct DigitalCrown: View {
 }
 ```
 
-![A screenshot showing a value received by turning the Digital Crown](https://docs-assets.developer.apple.com/published/7dfeb0ec7a130dad14480125b0fd80cc/SwiftUI-View-digitalCrownRotationBindingFull%402x.png)
+![A screenshot showing a value received by turning the Digital Crown](/images/com.apple.SwiftUI/SwiftUI-View-digitalCrownRotationBindingFull@2x.png)
 
 ## Parameters
 

@@ -26,7 +26,7 @@ protocol NSSearchFieldDelegate : NSTextFieldDelegate
 
 ### Inherits From
 - [NSControlTextEditingDelegate](nscontroltexteditingdelegate.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 - [NSTextFieldDelegate](nstextfielddelegate.md)
 
 ## See Also

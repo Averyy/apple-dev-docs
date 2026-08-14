@@ -19,9 +19,9 @@ var urlIsPlayingVideo: Bool { get set }
 
 #### Discussion
 
-The default value is [`NO`](https://developer.apple.com/documentation/ObjectiveC/NO). Set this value when the webpage starts or stops playing video.
+The default value is [`NO`](https://developer.apple.com/documentation/objectivec/no). Set this value when the webpage starts or stops playing video.
 
-> ❗ **Important**: Set this value to [`NO`](https://developer.apple.com/documentation/ObjectiveC/NO) prior to changing [`url`](stwebpagecontroller/url.md) if the new webpage at that URL stops currently playing media and won’t immediately start playing new media.
+> ❗ **Important**: Set this value to [`NO`](https://developer.apple.com/documentation/objectivec/no) prior to changing [`url`](stwebpagecontroller/url.md) if the new webpage at that URL stops currently playing media and won’t immediately start playing new media.
 
 ## See Also
 

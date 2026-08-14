@@ -19,7 +19,7 @@ func azimuthUnitVector(in view: UIView?) -> CGVector
 
 #### Return Value
 
-A [`CGVector`](https://developer.apple.com/documentation/CoreFoundation/CGVector) that represents the azimuth unit vector of the hovering pointing device.
+A [`CGVector`](https://developer.apple.com/documentation/corefoundation/cgvector) that represents the azimuth unit vector of the hovering pointing device.
 
 #### Discussion
 

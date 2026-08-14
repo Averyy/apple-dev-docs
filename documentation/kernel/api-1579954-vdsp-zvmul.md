@@ -20,18 +20,18 @@ If `Conjugate` = 1, this function multiplies the first `N` complex elements of `
 
 ![](https://docs-assets.developer.apple.com/published/097ccd4f03/vdsp_41_2x_1a0245af-fbfc-40df-bf55-f015b974c78e.png)
 
-where  stands for `Conjugate`.
+where *F* stands for `Conjugate`.
 
 ## Parameters
 
 - `__A`: Single-precision complex input vector.
-- `__IA`: Stride for  .
+- `__IA`: Stride for `A`.
 - `__B`: Single-precision complex input vector.
-- `__IB`: Stride for  .
+- `__IB`: Stride for `B`.
 - `__C`: Single-precision complex output vector.
-- `__IC`: Stride for  .
+- `__IC`: Stride for `C`.
 - `__N`: The number of elements to process.
-- `__Conjugate`: Set this parameter to   for normal or   for conjugate multiplication, respectively. Results are undefined for other values; represented by   in the discussion
+- `__Conjugate`: Set this parameter to `1` for normal or `-1` for conjugate multiplication, respectively. Results are undefined for other values; represented by `F` in the discussion
 
 
 ---

@@ -36,7 +36,7 @@ When setting the stream’s SOCKS Proxy property, the property’s value is a `C
   Defines constants for values returned in the domain field of the `CFStreamError` structure.
 - [Error Subdomains](error-subdomains.md)
   Subdomains used to determine how to interpret an error in the `kCFStreamErrorDomainSOCKS` domain.
-- [Secure Sockets (SOCKS) Errors](../CFNetwork/1518266-secure-sockets-socks-errors.md)
+- [Secure Sockets (SOCKS) Errors](../cfnetwork/1518266-secure-sockets-socks-errors.md)
   Error codes returned by the `kCFStreamErrorDomainSOCKS` error domain.
 - [struct CFStreamEventType](cfstreameventtype.md)
   Defines constants for stream-related events.

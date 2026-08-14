@@ -25,7 +25,7 @@ The current progress is represented by a floating-point value between 0.0 and 1.
 ## Parameters
 
 - `progress`: The new progress value.
-- `animated`: [`true`](https://developer.apple.com/documentation/Swift/true) if the change should be animated, [`false`](https://developer.apple.com/documentation/Swift/false) if the change should happen immediately.
+- `animated`: [`true`](https://developer.apple.com/documentation/swift/true) if the change should be animated, [`false`](https://developer.apple.com/documentation/swift/false) if the change should happen immediately.
 
 ## See Also
 

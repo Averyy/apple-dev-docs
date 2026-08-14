@@ -34,8 +34,8 @@ struct EntitySchema
 - [AssistantSchemas.SpreadsheetEntity](assistantschemas/spreadsheetentity.md)
 - [AssistantSchemas.WhiteboardEntity](assistantschemas/whiteboardentity.md)
 - [AssistantSchemas.WordProcessorEntity](assistantschemas/wordprocessorentity.md)
-- [Copyable](../Swift/Copyable.md)
-- [Escapable](../Swift/Escapable.md)
+- [Copyable](../swift/copyable.md)
+- [Escapable](../swift/escapable.md)
 
 
 ---

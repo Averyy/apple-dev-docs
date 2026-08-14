@@ -51,7 +51,7 @@ struct ConfirmImportAlert: View {
 }
 ```
 
-![An alert showing information from a data source that describes the result of a file import process. The alert displays the name of the file imported, MyImageFile.png and its file type, the PNG image file format along with a default OK button for dismissing the alert.](https://docs-assets.developer.apple.com/published/6c38178e447f79ba1d5d831ed40917e0/SwiftUI-View-AlertItemContent%402x.png)
+![An alert showing information from a data source that describes the result of a file import process. The alert displays the name of the file imported, MyImageFile.png and its file type, the PNG image file format along with a default OK button for dismissing the alert.](/images/com.apple.SwiftUI/SwiftUI-View-AlertItemContent@2x.png)
 
 ## Parameters
 

@@ -8,7 +8,7 @@ Optimize your app’s asset files, adopt on-demand resources, and reduce the siz
 
 Following the basic optimizations described in [`Doing basic optimization to reduce your app’s size`](doing-basic-optimization-to-reduce-your-app-s-size.md) is a good way to decrease the size of your app. However, you can optimize your app’s size further to minimize its footprint on a device and provide a fast download, installation, and update experience.
 
-![Flow chart that shows how to further optimize the size of your app. Measure the app’s size and do basic optimizations. Then measure again and do advanced optimizations, including optimizing asset files, reducing the size of app updates, adopting on-demand resources, and using app thinning for enterprise apps.](https://docs-assets.developer.apple.com/published/3014f056faa37bb8b9c66b5487e8fd1a/doing-advanced-optimization-to-further-reduce-your-app-s-size-1%402x.png)
+![Flow chart that shows how to further optimize the size of your app. Measure the app’s size and do basic optimizations. Then measure again and do advanced optimizations, including optimizing asset files, reducing the size of app updates, adopting on-demand resources, and using app thinning for enterprise apps.](/images/com.apple.Xcode/doing-advanced-optimization-to-further-reduce-your-app-s-size-1@2x.png)
 
 ##### Optimize Your Apps Asset Files
 
@@ -37,7 +37,7 @@ Consider the following to reduce the size of your app’s update package:
 
 Analyze all of your app’s assets and determine which resources it uses infrequently. Group the infrequently used resources into *asset packs*. When you upload your app to App Store Connect, asset packs don’t become part of your app’s initial download or app updates. Instead, the app can download them separately as needed. See the [`On-Demand Resources Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/FileManagement/Conceptual/On_Demand_Resources_Guide/index.html#//apple_ref/doc/uid/TP40015083) for more information.
 
-If you can’t adopt on-demand resources, consider implementing a web service that provides them, and download them in the background as needed, using [`URLSession`](https://developer.apple.com/documentation/Foundation/URLSession). To learn more, see [`Downloading files in the background`](https://developer.apple.com/documentation/Foundation/downloading-files-in-the-background).
+If you can’t adopt on-demand resources, consider implementing a web service that provides them, and download them in the background as needed, using [`URLSession`](https://developer.apple.com/documentation/foundation/urlsession). To learn more, see [`Downloading files in the background`](https://developer.apple.com/documentation/foundation/downloading-files-in-the-background).
 
 ##### Leverage App Thinning
 

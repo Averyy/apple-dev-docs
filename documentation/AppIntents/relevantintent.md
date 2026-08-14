@@ -33,15 +33,15 @@ Use a `RelevantIntent` structure to specify an action someone might want to take
 ## Relationships
 
 ### Conforms To
-- [Copyable](../Swift/Copyable.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [Escapable](../Swift/Escapable.md)
+- [Copyable](../swift/copyable.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [Escapable](../swift/escapable.md)
 
 ## See Also
 
 - [class RelevantIntentManager](relevantintentmanager.md)
   A type you use to suggest app intents and their current relevance to a person.
-- [struct RelevantContext](../RelevanceKit/RelevantContext.md)
+- [struct RelevantContext](../relevancekit/relevantcontext.md)
   Contextual clues the system uses to show relevant widgets in the Smart Stack on watchOS.
 
 

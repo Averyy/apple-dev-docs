@@ -6,7 +6,7 @@ Update your apps to use new features, and test your apps against API changes.
 
 #### Overview
 
-The iOS & iPadOS 13.4 SDK provides support to develop apps for iPhone, iPad, and iPod touch devices running iOS & iPadOS 13.4. The SDK comes bundled with Xcode 11.4, available from the Mac App Store. For information on the compatibility requirements for Xcode 11.4, see [`Xcode 11.4 Release Notes`](https://developer.apple.com/documentation/Xcode-Release-Notes/xcode-11_4-release-notes).
+The iOS & iPadOS 13.4 SDK provides support to develop apps for iPhone, iPad, and iPod touch devices running iOS & iPadOS 13.4. The SDK comes bundled with Xcode 11.4, available from the Mac App Store. For information on the compatibility requirements for Xcode 11.4, see [`Xcode 11.4 Release Notes`](https://developer.apple.com/documentation/xcode-release-notes/xcode-11_4-release-notes).
 
 ##### General
 
@@ -42,18 +42,18 @@ The iOS & iPadOS 13.4 SDK provides support to develop apps for iPhone, iPad, and
 
 ###### Known Issues
 
-- After updating to iOS & iPadOS 13.4, you won’t be able to synchronize scenes with peers using earlier versions of RealityKit, due to a fundamental change in the physics system. If two peers running a [`MultipeerConnectivityService`](https://developer.apple.com/documentation/RealityKit/MultipeerConnectivityService) have incompatible versions, they will remain connected in the underlying [`MCSession`](https://developer.apple.com/documentation/MultipeerConnectivity/MCSession), but won’t synchronize scenes. iOS & iPadOS 13.4 adds a new [`NetworkCompatibilityToken`](https://developer.apple.com/documentation/RealityKit/NetworkCompatibilityToken) class so a host can avoid inviting incompatible clients to its [`MCSession`](https://developer.apple.com/documentation/MultipeerConnectivity/MCSession). Please see the [`NetworkCompatibilityToken`](https://developer.apple.com/documentation/RealityKit/NetworkCompatibilityToken) documentation for additional details. (59262764)
+- After updating to iOS & iPadOS 13.4, you won’t be able to synchronize scenes with peers using earlier versions of RealityKit, due to a fundamental change in the physics system. If two peers running a [`MultipeerConnectivityService`](https://developer.apple.com/documentation/realitykit/multipeerconnectivityservice) have incompatible versions, they will remain connected in the underlying [`MCSession`](https://developer.apple.com/documentation/multipeerconnectivity/mcsession), but won’t synchronize scenes. iOS & iPadOS 13.4 adds a new [`NetworkCompatibilityToken`](https://developer.apple.com/documentation/realitykit/networkcompatibilitytoken) class so a host can avoid inviting incompatible clients to its [`MCSession`](https://developer.apple.com/documentation/multipeerconnectivity/mcsession). Please see the [`NetworkCompatibilityToken`](https://developer.apple.com/documentation/realitykit/networkcompatibilitytoken) documentation for additional details. (59262764)
 
 ##### Swiftui
 
 ###### New Features
 
-- When using a [`NavigationView`](https://developer.apple.com/documentation/SwiftUI/NavigationView) with multiple columns, the navigation bar now shows a control to toggle the columns. (49074511)
+- When using a [`NavigationView`](https://developer.apple.com/documentation/swiftui/navigationview) with multiple columns, the navigation bar now shows a control to toggle the columns. (49074511)
 - The `onDrag` and `onDrop` modifiers are now available on iOS. (49661347)
 
 ###### Resolved Issues
 
-- [`safeAreaInsets`](https://developer.apple.com/documentation/SwiftUI/GeometryProxy/safeAreaInsets) in navigation and tab views now extend to the top edge as expected. If you previously used `edgesIgnoringSafeArea(_:)` as a workaround, it should now be removed. (52851281)
+- [`safeAreaInsets`](https://developer.apple.com/documentation/swiftui/geometryproxy/safeareainsets) in navigation and tab views now extend to the top edge as expected. If you previously used `edgesIgnoringSafeArea(_:)` as a workaround, it should now be removed. (52851281)
 
 ## See Also
 

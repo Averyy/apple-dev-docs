@@ -52,7 +52,7 @@ Your app can choose to filter device activity data for a specific date interval,
 ## Relationships
 
 ### Conforms To
-- [Equatable](../Swift/Equatable.md)
+- [Equatable](../swift/equatable.md)
 
 ## See Also
 

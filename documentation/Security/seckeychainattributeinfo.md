@@ -34,7 +34,7 @@ Each tag and format item form a pair. Use [`SecKeychainAttributeInfoForItemID(_:
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../Swift/BitwiseCopyable.md)
+- [BitwiseCopyable](../swift/bitwisecopyable.md)
 
 
 ---

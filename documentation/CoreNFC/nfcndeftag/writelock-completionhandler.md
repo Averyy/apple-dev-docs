@@ -23,7 +23,7 @@ Calling this method updates the write access condition byte in the NDEF File Con
 
 ## Parameters
 
-- `completionHandler`: The handler invoked by the reader session after completing the lock request. The session calls `completionHandler` on the dispatch queue provided when creating the [`NFCNDEFReaderSession`](nfcndefreadersession.md). The handler has the following parameter: - **error**: An [`NSError`](https://developer.apple.com/documentation/Foundation/NSError) object if the write request fails. A value of `nil` indicates that the session locked the tag and future write requests aren’t possible.
+- `completionHandler`: The handler invoked by the reader session after completing the lock request. The session calls `completionHandler` on the dispatch queue provided when creating the [`NFCNDEFReaderSession`](nfcndefreadersession.md). The handler has the following parameter: - **error**: An [`NSError`](https://developer.apple.com/documentation/foundation/nserror) object if the write request fails. A value of `nil` indicates that the session locked the tag and future write requests aren’t possible.
 
 ## See Also
 

@@ -16,7 +16,7 @@ let QCPortTypeImage: String
 
 #### Discussion
 
-The associated value can be an [`NSImage`](https://developer.apple.com/documentation/AppKit/NSImage) object or a [`CIImage`](https://developer.apple.com/documentation/CoreImage/CIImage)  object.
+The associated value can be an [`NSImage`](https://developer.apple.com/documentation/appkit/nsimage) object or a [`CIImage`](https://developer.apple.com/documentation/coreimage/ciimage)  object.
 
 ## See Also
 

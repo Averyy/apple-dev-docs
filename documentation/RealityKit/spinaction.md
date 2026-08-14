@@ -68,8 +68,8 @@ entity.playAnimation(spinAnimation)
 ## Relationships
 
 ### Conforms To
-- [Decodable](../Swift/Decodable.md)
-- [Encodable](../Swift/Encodable.md)
+- [Decodable](../swift/decodable.md)
+- [Encodable](../swift/encodable.md)
 - [EntityAction](entityaction.md)
 
 ## See Also

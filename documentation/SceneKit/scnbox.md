@@ -22,7 +22,7 @@ class SCNBox
 
 #### Overview
 
-![None](https://docs-assets.developer.apple.com/published/2626bbf0d905da4f946e9f326170a985/media-2929807%402x.png)
+![None](/images/com.apple.scenekit/media-2929807@2x.png)
 
 Define the shape of the box in the x-, y-, and z-axis dimensions of its local coordinate space by setting its [`width`](scnbox/width.md), [`height`](scnbox/height.md), and [`length`](scnbox/length.md) properties. Add rounded edges and corners to a box with its [`chamferRadius`](scnbox/chamferradius.md) property. To position and orient a box in a scene, attach it to the [`geometry`](scnnode/geometry.md) property of an [`SCNNode`](scnnode.md) object.
 
@@ -60,15 +60,15 @@ You can assign up to six [`SCNMaterial`](scnmaterial.md) instances to a box—on
 ### Inherits From
 - [SCNGeometry](scngeometry.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCoding](../Foundation/NSCoding.md)
-- [NSCopying](../Foundation/NSCopying.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [NSSecureCoding](../Foundation/NSSecureCoding.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCoding](../foundation/nscoding.md)
+- [NSCopying](../foundation/nscopying.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSSecureCoding](../foundation/nssecurecoding.md)
 - [SCNAnimatable](scnanimatable.md)
 - [SCNBoundingVolume](scnboundingvolume.md)
 - [SCNShadable](scnshadable.md)

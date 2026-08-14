@@ -27,7 +27,7 @@ The media timing function for the transaction’s animations.
 
 #### Discussion
 
-Media timing functions, also known as *animation curves*, define the relationship between the elapsed time of an animation and its effect on a property. For example, the [`easeInEaseOut`](https://developer.apple.com/documentation/QuartzCore/CAMediaTimingFunctionName/easeInEaseOut) function creates an effect that begins slowly, speeds up, and then finishes slowly.
+Media timing functions, also known as *animation curves*, define the relationship between the elapsed time of an animation and its effect on a property. For example, the [`easeInEaseOut`](https://developer.apple.com/documentation/quartzcore/camediatimingfunctionname/easeineaseout) function creates an effect that begins slowly, speeds up, and then finishes slowly.
 
 ## See Also
 

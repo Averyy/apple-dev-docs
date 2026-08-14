@@ -6,9 +6,9 @@ Sync edits between an app with its own OpenUSD runtime and a Spatial Preview ses
 
 #### Overview
 
-Spatial Preview uses [`USDKit`](https://developer.apple.com/documentation/USDKit) to manage a [`USDStage`](https://developer.apple.com/documentation/USDKit/USDStage) on the Mac. Apps that use USDKit to access USD data automatically sync their edits with Spatial Preview sessions. When your app has its own USD runtime, the two apps don’t share memory or a stage cache. Writing a USD file to disk doesn’t notify USDKit of changes, and edits made on the connected Apple Vision Pro aren’t automatically visible to your app.
+Spatial Preview uses [`USDKit`](https://developer.apple.com/documentation/usdkit) to manage a [`USDStage`](https://developer.apple.com/documentation/usdkit/usdstage) on the Mac. Apps that use USDKit to access USD data automatically sync their edits with Spatial Preview sessions. When your app has its own USD runtime, the two apps don’t share memory or a stage cache. Writing a USD file to disk doesn’t notify USDKit of changes, and edits made on the connected Apple Vision Pro aren’t automatically visible to your app.
 
-Bridge the two runtimes using a shared [`USDLayer`](https://developer.apple.com/documentation/USDKit/USDLayer) as an exchange mechanism. For each direction, app to device and device to app, the pattern is the same: write overrides into a thin edit layer, export it to disk, and use [`copy(from:to:in:)`](https://developer.apple.com/documentation/USDKit/USDLayer/copy(from:to:in:)) to propagate the changes into USDKit’s stage. [`USDPreviewSession`](usdpreviewsession.md) watches the [`USDStage`](https://developer.apple.com/documentation/USDKit/USDStage) for mutations and syncs only the changed data to the device.
+Bridge the two runtimes using a shared [`USDLayer`](https://developer.apple.com/documentation/usdkit/usdlayer) as an exchange mechanism. For each direction, app to device and device to app, the pattern is the same: write overrides into a thin edit layer, export it to disk, and use [`copy(from:to:in:)`](https://developer.apple.com/documentation/usdkit/usdlayer/copy(from:to:in:)) to propagate the changes into USDKit’s stage. [`USDPreviewSession`](usdpreviewsession.md) watches the [`USDStage`](https://developer.apple.com/documentation/usdkit/usdstage) for mutations and syncs only the changed data to the device.
 
 ##### Set Up the Layer Stack
 
@@ -22,9 +22,9 @@ Create a [`USDPreviewSession`](usdpreviewsession.md) to coordinate incremental U
 
 ##### Sync Edits From Your App to the Device
 
-When your external runtime detects a change, write the affected [`USDPrim`](https://developer.apple.com/documentation/USDKit/USDPrim) overrides as over-prims into the app-side edit layer and export that layer to the chosen exchange path on disk. Then call your bridge function to pull those edits into the USDKit stage.
+When your external runtime detects a change, write the affected [`USDPrim`](https://developer.apple.com/documentation/usdkit/usdprim) overrides as over-prims into the app-side edit layer and export that layer to the chosen exchange path on disk. Then call your bridge function to pull those edits into the USDKit stage.
 
-The bridge opens the exchange layer using [`find(identifier:)`](https://developer.apple.com/documentation/USDKit/USDLayer/find(identifier:)) and walks its root prims. For each root prim, check whether the destination edit layer already has a [`USDPrim`](https://developer.apple.com/documentation/USDKit/USDPrim) specification at that path using [`prim(at:)`](https://developer.apple.com/documentation/USDKit/USDLayer/prim(at:)). Then copy the data with [`copy(from:to:in:)`](https://developer.apple.com/documentation/USDKit/USDLayer/copy(from:to:in:)). Once every changed prim is in the USDKit edit layer, [`USDPreviewSession`](usdpreviewsession.md) detects the mutation and syncs the delta to the device:
+The bridge opens the exchange layer using [`find(identifier:)`](https://developer.apple.com/documentation/usdkit/usdlayer/find(identifier:)) and walks its root prims. For each root prim, check whether the destination edit layer already has a [`USDPrim`](https://developer.apple.com/documentation/usdkit/usdprim) specification at that path using [`prim(at:)`](https://developer.apple.com/documentation/usdkit/usdlayer/prim(at:)). Then copy the data with [`copy(from:to:in:)`](https://developer.apple.com/documentation/usdkit/usdlayer/copy(from:to:in:)). Once every changed prim is in the USDKit edit layer, [`USDPreviewSession`](usdpreviewsession.md) detects the mutation and syncs the delta to the device:
 
 ```swift
 @MainActor
@@ -45,17 +45,17 @@ For each prim under the root in the source layer, ensure a spec exists in the de
 }
 ```
 
-Mark the function with [`MainActor`](https://developer.apple.com/documentation/Swift/MainActor) because all USDKit edit operations must run on the main actor. Dispatch to the main actor from any background thread before calling this function.
+Mark the function with [`MainActor`](https://developer.apple.com/documentation/swift/mainactor) because all USDKit edit operations must run on the main actor. Dispatch to the main actor from any background thread before calling this function.
 
 ##### Sync Device Edits Back to Your App
 
 When a user manipulates objects on Apple Vision Pro, Spatial Preview writes those edits to the USDKit edit layer. In your bridge, read from the updated wrapper stage on an app-specific polling interval or in response to a [`USDPreviewSession`](usdpreviewsession.md) event. Your app reads the updated layer file and applies its prim overrides to the external USD runtime inside the app.
 
-When you read edits from the Spatial Preview stage and apply them to the [`USDStage`](https://developer.apple.com/documentation/USDKit/USDStage) in your app, don’t treat the edits as new changes to the USD data. Otherwise, your app echoes them back to the Spatial Preview session and creates an infinite feedback loop.
+When you read edits from the Spatial Preview stage and apply them to the [`USDStage`](https://developer.apple.com/documentation/usdkit/usdstage) in your app, don’t treat the edits as new changes to the USD data. Otherwise, your app echoes them back to the Spatial Preview session and creates an infinite feedback loop.
 
-Batch and pass edits from an external OpenUSD runtime to the bridge layer at a reasonable interval (for example, 30 ms) to prevent locking the [`MainActor`](https://developer.apple.com/documentation/Swift/MainActor) thread.
+Batch and pass edits from an external OpenUSD runtime to the bridge layer at a reasonable interval (for example, 30 ms) to prevent locking the [`MainActor`](https://developer.apple.com/documentation/swift/mainactor) thread.
 
-For apps that can’t produce a minimal edit layer, export the complete scene and call [`reload()`](https://developer.apple.com/documentation/USDKit/USDStage/reload()) or [`reload()`](https://developer.apple.com/documentation/USDKit/USDLayer/reload()) on the corresponding USDKit object. USDKit diffs the old and new stage internally; [`USDPreviewSession`](usdpreviewsession.md) syncs only the deltas. This approach requires less bridging code but exports the full scene on every change, which can be slow for large scenes:
+For apps that can’t produce a minimal edit layer, export the complete scene and call [`reload()`](https://developer.apple.com/documentation/usdkit/usdstage/reload()) or [`reload()`](https://developer.apple.com/documentation/usdkit/usdlayer/reload()) on the corresponding USDKit object. USDKit diffs the old and new stage internally; [`USDPreviewSession`](usdpreviewsession.md) syncs only the deltas. This approach requires less bridging code but exports the full scene on every change, which can be slow for large scenes:
 
 ```swift
 @MainActor

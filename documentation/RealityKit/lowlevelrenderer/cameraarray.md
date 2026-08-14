@@ -38,9 +38,9 @@ Set `count` to the number of active cameras before calling [`render(using:_:)`](
 ## Relationships
 
 ### Conforms To
-- [Collection](../Swift/Collection.md)
-- [MutableCollection](../Swift/MutableCollection.md)
-- [Sequence](../Swift/Sequence.md)
+- [Collection](../swift/collection.md)
+- [MutableCollection](../swift/mutablecollection.md)
+- [Sequence](../swift/sequence.md)
 
 ## See Also
 

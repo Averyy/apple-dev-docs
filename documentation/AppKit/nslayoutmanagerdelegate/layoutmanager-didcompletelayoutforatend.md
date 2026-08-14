@@ -22,7 +22,7 @@ This message is sent whenever a text container has been filled. This method can 
 
 - `layoutManager`: The layout manager doing the layout.
 - `textContainer`: The text container in which layout is complete. If `nil`, if there aren’t enough containers to hold all the text; the delegate can use this information as a cue to add another text container.
-- `layoutFinishedFlag`: If [`true`](https://developer.apple.com/documentation/Swift/true), `aLayoutManager` is finished laying out its text—this also means that `aTextContainer` is the final text container used by the layout manager. Delegates can use this information to show an indicator or background or to enable or disable a button that forces immediate layout of text.
+- `layoutFinishedFlag`: If [`true`](https://developer.apple.com/documentation/swift/true), `aLayoutManager` is finished laying out its text—this also means that `aTextContainer` is the final text container used by the layout manager. Delegates can use this information to show an indicator or background or to enable or disable a button that forces immediate layout of text.
 
 ## See Also
 

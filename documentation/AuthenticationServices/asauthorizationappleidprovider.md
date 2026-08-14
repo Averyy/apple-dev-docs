@@ -44,7 +44,7 @@ provider.getCredentialState(forUserID: user) { state, error in
 ### Offering Sign In with Apple
 - [class ASAuthorizationAppleIDButton](asauthorizationappleidbutton.md)
   A control you add to your interface that enables users to initiate the Sign In with Apple flow.
-- [class WKInterfaceAuthorizationAppleIDButton](../WatchKit/WKInterfaceAuthorizationAppleIDButton.md)
+- [class WKInterfaceAuthorizationAppleIDButton](../watchkit/wkinterfaceauthorizationappleidbutton.md)
   A button that you can use to trigger a Sign in with Apple request.
 ### Creating Requests
 - [func createRequest() -> ASAuthorizationAppleIDRequest](asauthorizationappleidprovider/createrequest.md)
@@ -64,17 +64,17 @@ provider.getCredentialState(forUserID: user) { state, error in
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
 - [ASAuthorizationProvider](asauthorizationprovider.md)
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 
@@ -84,7 +84,7 @@ provider.getCredentialState(forUserID: user) { state, error in
   Build a fluid sign-in experience for your tvOS apps using AuthenticationServices.
 - [struct SignInWithAppleButton](signinwithapplebutton.md)
   A SwiftUI view that creates the Sign in with Apple button for display.
-- [Sign in with Apple Entitlement](../BundleResources/Entitlements/com.apple.developer.applesignin.md)
+- [Sign in with Apple Entitlement](../bundleresources/entitlements/com.apple.developer.applesignin.md)
   An entitlement that lets your app use Sign in with Apple.
 - [class ASAuthorizationAppleIDCredential](asauthorizationappleidcredential.md)
   A credential that results from a successful Apple ID authentication.

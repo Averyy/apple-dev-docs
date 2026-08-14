@@ -21,7 +21,7 @@ var providerConfiguration: [String : Any]? { get set }
 
 #### Discussion
 
-All of the keys and values in this dictionary must conform to the [`NSSecureCoding`](https://developer.apple.com/documentation/Foundation/NSSecureCoding) and [`NSCopying`](https://developer.apple.com/documentation/Foundation/NSCopying) protocols.
+All of the keys and values in this dictionary must conform to the [`NSSecureCoding`](https://developer.apple.com/documentation/foundation/nssecurecoding) and [`NSCopying`](https://developer.apple.com/documentation/foundation/nscopying) protocols.
 
 ## See Also
 

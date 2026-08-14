@@ -18,7 +18,7 @@ var contentOffset: CGPoint { get set }
 
 #### Discussion
 
-Positive `x` values shift the content to the left. Positive `y` values shift the content upward. The default value is [`CGPointZero`](https://developer.apple.com/documentation/CoreGraphics/CGPointZero).
+Positive `x` values shift the content to the left. Positive `y` values shift the content upward. The default value is [`CGPointZero`](https://developer.apple.com/documentation/coregraphics/cgpointzero).
 
 ## See Also
 

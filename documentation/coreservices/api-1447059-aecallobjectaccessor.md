@@ -32,12 +32,12 @@ In macOS, your application can not make an object callback function available to
 
 ## Parameters
 
-- `desiredClass`: The type of the Apple event object requested. Some possible values are defined in  . See  .
-- `containerToken`: A pointer to the token that identifies the container for the desired object. (Token is defined in  .) See  .
-- `containerClass`: The object class of the container for the desired objects. See  .
-- `keyForm`: The key form that specifies how to find the object within the container. Key form constants are described in  . See  .
-- `keyData`: A pointer to the key data that identifies the object within the container. The type of this data is form-specific. That is,   typically has key data of type  . See  .
-- `token`: A pointer to a token. On return, a token specifying the desired object (or objects). Your application should dispose of this token when it is through with it by calling  . See  .
+- `desiredClass`: The type of the Apple event object requested. Some possible values are defined in [`Object Class ID Constants`](apple_events/1556368-object_class_id_constants.md). See [`DescType`](desctype.md).
+- `containerToken`: A pointer to the token that identifies the container for the desired object. (Token is defined in [`AEDisposeToken(_:)`](1446783-aedisposetoken.md).) See [`AEDesc`](aedesc.md).
+- `containerClass`: The object class of the container for the desired objects. See [`DescType`](desctype.md).
+- `keyForm`: The key form that specifies how to find the object within the container. Key form constants are described in [`Key Form and Descriptor Type Object Specifier Constants`](apple_events/1572731-key_form_and_descriptor_type_obj.md). See [`DescType`](desctype.md).
+- `keyData`: A pointer to the key data that identifies the object within the container. The type of this data is form-specific. That is, `formName` typically has key data of type `typeText`. See [`AEDesc`](aedesc.md).
+- `token`: A pointer to a token. On return, a token specifying the desired object (or objects). Your application should dispose of this token when it is through with it by calling [`AEDisposeToken(_:)`](1446783-aedisposetoken.md). See [`AEDesc`](aedesc.md).
 
 ## See Also
 

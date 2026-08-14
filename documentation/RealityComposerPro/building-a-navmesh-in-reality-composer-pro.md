@@ -30,7 +30,7 @@ Configure the properties for each of the following sections, described later in 
 
 Click **Generate Navigation Mesh** when you’re ready.
 
-![A screenshot of a basic Navigation Mesh in a Reality Composer Pro project.](https://docs-assets.developer.apple.com/published/c9d804804fb267b440600dd105de9f33/NavMesh1%402x.png)
+![A screenshot of a basic Navigation Mesh in a Reality Composer Pro project.](/images/RealityComposerPro/NavMesh1@2x.png)
 
 > 💡 **Tip**: You can generate a navmesh without opening each component individually. Above the Inspector, click **Lighting Tools** (the shaded circle icon). In Baking options, open the **Selected Navigation Mesh** drop-down menu and choose a navigation mesh to generate — or select **All** to generate all navigation meshes for the scene — then click **Generate Navigation Mesh**.
 

@@ -53,7 +53,7 @@ The table below summarizes the descriptor classes:
 ### Inherits From
 - [MTLAllocation](mtlallocation.md)
 - [MTLResource](mtlresource.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

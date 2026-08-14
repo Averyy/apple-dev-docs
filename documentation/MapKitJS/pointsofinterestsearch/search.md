@@ -22,7 +22,7 @@ A promise that resolves with a [`PointsOfInterestSearchResponse`](pointsofintere
 
 #### Discussion
 
-The [`search(options)`](pointsofinterestsearch/search.md) method returns a set of points of interest within the region defined and matching the [`PointOfInterestFilter`](pointofinterestfilter.md).
+The [`search()`](pointsofinterestsearch/search.md) method returns a set of points of interest within the region defined and matching the [`PointOfInterestFilter`](pointofinterestfilter.md).
 
 Pass an `AbortSignal` from an `AbortController` to the [`signal`](pointsofinterestsearchoptions/signal.md) option to allow the controller to cancel a pending request. When the controller aborts, the promise it returns rejects with a `DOMException` whose `name` is `"AbortError"`.
 

@@ -11,7 +11,7 @@ An atom that contains information about text media.
 
 #### Overview
 
-The text media also requires a text media information atom. This media information atom is stored in a base media information atom (`'minf'`) in the base media information header atom (`'gmhd'`) (see [`Base media information atom ('minf')`](base_media_information_atom.md)). The type of the text media information atom is `'text'`.
+The text media also requires a text media information atom. This media information atom is stored in a base media information atom (`'minf'`) in the base media information header atom (`'gmhd'`) (see [`Base media information atom`](base_media_information_atom.md)). The type of the text media information atom is `'text'`.
 
 ## Topics
 

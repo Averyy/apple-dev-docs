@@ -10,10 +10,10 @@ Browse notable changes in [`MapKit`](https://developer.apple.comhttps://develope
 
 #### June 2025
 
-- Find information about a place using [`MKGeocodingRequest`](https://developer.apple.com/documentation/MapKit/MKGeocodingRequest) and [`MKReverseGeocodingRequest`](https://developer.apple.com/documentation/MapKit/MKReverseGeocodingRequest).
-- Get address information to use in displays, such as place cards and annotations you create using an MKMapItem, by using [`MKAddress`](https://developer.apple.com/documentation/MapKit/MKAddress) with Search and reverse geocoding.
-- Obtain formatted address strings for a place’s full address, city, or region using [`MKAddressRepresentations`](https://developer.apple.com/documentation/MapKit/MKAddressRepresentations).
-- Request cycling directions and ETAs using the [`cycling`](https://developer.apple.com/documentation/MapKit/MKDirectionsTransportType/cycling) transport type.
+- Find information about a place using [`MKGeocodingRequest`](https://developer.apple.com/documentation/mapkit/mkgeocodingrequest) and [`MKReverseGeocodingRequest`](https://developer.apple.com/documentation/mapkit/mkreversegeocodingrequest).
+- Get address information to use in displays, such as place cards and annotations you create using an MKMapItem, by using [`MKAddress`](https://developer.apple.com/documentation/mapkit/mkaddress) with Search and reverse geocoding.
+- Obtain formatted address strings for a place’s full address, city, or region using [`MKAddressRepresentations`](https://developer.apple.com/documentation/mapkit/mkaddressrepresentations).
+- Request cycling directions and ETAs using the [`cycling`](https://developer.apple.com/documentation/mapkit/mkdirectionstransporttype/cycling) transport type.
 
 #### June 2024
 

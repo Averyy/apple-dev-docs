@@ -49,8 +49,8 @@ struct TabularTransformerToUpdatableEstimatorAdaptor<Transformer> where Transfor
 ## Relationships
 
 ### Conforms To
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 - [TabularEstimator](tabularestimator.md)
 - [UpdatableTabularEstimator](updatabletabularestimator.md)
 

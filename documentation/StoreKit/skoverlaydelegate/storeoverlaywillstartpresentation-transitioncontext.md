@@ -19,7 +19,7 @@ optional func storeOverlayWillStartPresentation(_ overlay: SKOverlay, transition
 
 #### Discussion
 
-Use the `transitionContext` parameter to animate updates to the UI on the main thread. For example, make a [`UIImageView`](https://developer.apple.com/documentation/UIKit/UIImageView) disappear by animating the change of its opacity to 0% as shown in the following code:
+Use the `transitionContext` parameter to animate updates to the UI on the main thread. For example, make a [`UIImageView`](https://developer.apple.com/documentation/uikit/uiimageview) disappear by animating the change of its opacity to 0% as shown in the following code:
 
 ```swift
 func storeOverlayWillStartPresentation(_ overlay: SKOverlay, transitionContext: SKOverlay.TransitionContext) {

@@ -28,7 +28,7 @@ A [`SparseOpaqueFactorization_Double`](sparseopaquefactorization_double.md) stru
 
 Use this function to calculate the factorization of a sparse matrix to pass to the direct solve functions. The following figure shows a system of equations where the coefficient matrix is sparse:
 
-![A mathematical equation that has one set of three simultaneous equations on the left. Each equation has three unknowns. The same set of simultaneous equations appears on the right as a single matrix equation, A x equals B. The single matrix equation consists of a three-by-three matrix multiplied by a three-element column matrix that equals a three-element column matrix. ](https://docs-assets.developer.apple.com/published/0974a26754c699cdf34196f2c95365c3/media-3703879%402x.png)
+![A mathematical equation that has one set of three simultaneous equations on the left. Each equation has three unknowns. The same set of simultaneous equations appears on the right as a single matrix equation, A x equals B. The single matrix equation consists of a three-by-three matrix multiplied by a three-element column matrix that equals a three-element column matrix. ](/images/com.apple.accelerate/media-3703879@2x.png)
 
 The following code solves this system with a QR factorization of the coefficient matrix:
 

@@ -29,13 +29,13 @@ protocol AssistantSchemaEntity : AssistantEntity
 - [AppEntity](appentity.md)
 - [AppValue](appvalue.md)
 - [AssistantEntity](assistantentity.md)
-- [CustomLocalizedStringResourceConvertible](../Foundation/CustomLocalizedStringResourceConvertible.md)
+- [CustomLocalizedStringResourceConvertible](../foundation/customlocalizedstringresourceconvertible.md)
 - [DisplayRepresentable](displayrepresentable.md)
-- [Identifiable](../Swift/Identifiable.md)
+- [Identifiable](../swift/identifiable.md)
 - [InstanceDisplayRepresentable](instancedisplayrepresentable.md)
 - [PersistentlyIdentifiable](persistentlyidentifiable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 - [TypeDisplayRepresentable](typedisplayrepresentable.md)
 
 ## See Also

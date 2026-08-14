@@ -22,7 +22,7 @@ protocol PreviewRegistry
 
 #### Overview
 
-Preview macros make use of this protocol on your behalf. Don’t use it directly. Instead, use one of the preview macros, like [`Preview(_:body:)`](https://developer.apple.com/documentation/SwiftUI/Preview(_:body:)).
+Preview macros make use of this protocol on your behalf. Don’t use it directly. Instead, use one of the preview macros, like [`Preview(_:body:)`](https://developer.apple.com/documentation/swiftui/preview(_:body:)).
 
 > ❗ **Important**: If you define a preview registry directly, the behavior is undefined.
 

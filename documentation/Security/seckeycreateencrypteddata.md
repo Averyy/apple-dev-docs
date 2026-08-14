@@ -27,7 +27,7 @@ func SecKeyCreateEncryptedData(_ key: SecKey, _ algorithm: SecKeyAlgorithm, _ pl
 
 #### Return Value
 
-The encrypted data or `NULL` on failure. In Objective-C, call the [`CFRelease`](https://developer.apple.com/documentation/CoreFoundation/CFRelease) function to free the data’s memory when you are done with it.
+The encrypted data or `NULL` on failure. In Objective-C, call the [`CFRelease`](https://developer.apple.com/documentation/corefoundation/cfrelease) function to free the data’s memory when you are done with it.
 
 #### Discussion
 
@@ -38,7 +38,7 @@ You can decrypt this data with the corresponding private key and a call to [`Sec
 - `key`: The public key to use to perform the encryption.
 - `algorithm`: The encryption algorithm to use. Use one of the encryption algorithms listed in [`SecKeyAlgorithm`](seckeyalgorithm.md). You can use the [`SecKeyIsAlgorithmSupported(_:_:_:)`](seckeyisalgorithmsupported(_:_:_:).md) function to test that the key is suitable for the algorithm.
 - `plaintext`: The data to be encrypted.
-- `error`: The address of a [`CFError`](https://developer.apple.com/documentation/CoreFoundation/CFError) object. If an error occurs, this is set to point at an error instance that describes the failure.
+- `error`: The address of a [`CFError`](https://developer.apple.com/documentation/corefoundation/cferror) object. If an error occurs, this is set to point at an error instance that describes the failure.
 
 
 ---

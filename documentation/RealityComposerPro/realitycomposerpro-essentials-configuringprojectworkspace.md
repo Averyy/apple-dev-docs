@@ -14,13 +14,13 @@ You can open multiple workspaces, each with multiple tabs. For example, open one
 
 To open a new workspace, in the Project Browser, double-click an entity (or any asset such as a material or animation graph) to open the asset in a new workspace. The selected entity (and any components) opens in a new workspace. Workspaces appear as window tabs below the app toolbar.
 
-![A screenshot showing how to open a new tab from the Reality Composer Pro Main Menu.](https://docs-assets.developer.apple.com/published/e4af8b33b0576cc0939d58b03dc61165/WorkspaceTab%402x.png)
+![A screenshot showing how to open a new tab from the Reality Composer Pro Main Menu.](/images/RealityComposerPro/WorkspaceTab@2x.png)
 
 #### Open a New Tab
 
 From the **Main Menu**, choose **Tab** > **New Tab**, and then select the tab you want to open. The new tab appears in the tab bar at the top of the viewport.
 
-![A screenshot showing how to open a new tab from the Reality Composer Pro Main Menu.](https://docs-assets.developer.apple.com/published/1afd0c323a69654550fb0477279b5aa1/NewTab%402x.png)
+![A screenshot showing how to open a new tab from the Reality Composer Pro Main Menu.](/images/RealityComposerPro/NewTab@2x.png)
 
 Tabs you can open include:
 
@@ -48,7 +48,7 @@ Drag any tab onto a layout dock to dock it to a new location in a workspace.
 
 > 💡 **Tip**: Each workspace maintains its own layout. For example, one workspace can have the Project Browser docked to the top while another has it docked to the bottom. You can also move tabs between the Viewport tab bar and the Project Browser tab bar.
 
-![A screenshot showing how to move and dock a tab in a Reality Composer Pro workspace.](https://docs-assets.developer.apple.com/published/c8de96819598df3069c622154a50868c/MoveTab%402x.png)
+![A screenshot showing how to move and dock a tab in a Reality Composer Pro workspace.](/images/RealityComposerPro/MoveTab@2x.png)
 
 ## See Also
 

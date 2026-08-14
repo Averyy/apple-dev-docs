@@ -27,7 +27,7 @@ The amount of time the cursor was moved along the presentation timeline. Because
 ## Parameters
 
 - `deltaPresentationTime`: The amount of time to move in the presentation timeline.
-- `outWasPinned`: The system sets the value of this pointer to [`true`](https://developer.apple.com/documentation/Swift/true) if the cursor reaches the beginning or the end of the sample sequence before it reaches the requested time. You may specify `nil` if you’re not interested in this information.
+- `outWasPinned`: The system sets the value of this pointer to [`true`](https://developer.apple.com/documentation/swift/true) if the cursor reaches the beginning or the end of the sample sequence before it reaches the requested time. You may specify `nil` if you’re not interested in this information.
 
 ## See Also
 

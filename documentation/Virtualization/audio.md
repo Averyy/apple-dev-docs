@@ -6,7 +6,7 @@ Configure audio devices that enable the guest operating system to perform audio 
 
 #### Overview
 
-If your app can configure an audio input device, you must set an [`NSMicrophoneUsageDescription`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSMicrophoneUsageDescription) message in your app’s `Info.plist.` The system uses this description when asking the user’s permission to enable microphone access. If this message isn’t set or the key isn’t present, the system denies microphone access to your app.
+If your app can configure an audio input device, you must set an [`NSMicrophoneUsageDescription`](https://developer.apple.com/documentation/bundleresources/information-property-list/nsmicrophoneusagedescription) message in your app’s `Info.plist.` The system uses this description when asking the user’s permission to enable microphone access. If this message isn’t set or the key isn’t present, the system denies microphone access to your app.
 
 > **Note**:  To enable VIRTIO sound support in Linux guests, configure sound support in the kernel using the `CONFIG_SND_VIRTIO` kernel parameter.
 

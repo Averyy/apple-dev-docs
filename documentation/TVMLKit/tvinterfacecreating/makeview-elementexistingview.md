@@ -24,7 +24,7 @@ The new view associated with the view element. If the app doesn’t handle the e
 
 #### Discussion
 
-When possible, update the view contained in the `existingView` parameter instead of creating a new view. However, if the existing view is an instance of [`UICollectionViewCell`](https://developer.apple.com/documentation/UIKit/UICollectionViewCell), you must configure the cell instead of creating a new instance.
+When possible, update the view contained in the `existingView` parameter instead of creating a new view. However, if the existing view is an instance of [`UICollectionViewCell`](https://developer.apple.com/documentation/uikit/uicollectionviewcell), you must configure the cell instead of creating a new instance.
 
 ## Parameters
 

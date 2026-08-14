@@ -21,7 +21,7 @@ func UIGraphicsBeginPDFContextToFile(_ path: String, _ bounds: CGRect, _ documen
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/Swift/true) if the PDF context was created successfully or [`false`](https://developer.apple.com/documentation/Swift/false) if it was not.
+[`true`](https://developer.apple.com/documentation/swift/true) if the PDF context was created successfully or [`false`](https://developer.apple.com/documentation/swift/false) if it was not.
 
 #### Discussion
 
@@ -34,8 +34,8 @@ After creating it, you can get the PDF context using the [`UIGraphicsGetCurrentC
 ## Parameters
 
 - `path`: A POSIX-style path string identifying the location of the resulting PDF file. The specified path may be relative or a full path name. If a file does not exist at the specified path, one is created; otherwise, the contents of any existing file are deleted. The directories in the path must exist.
-- `bounds`: A rectangle that specifies the default size and location of PDF pages. (This value is used as the default media box for each new page.) The origin of the rectangle should typically be (0, 0). Specifying an empty rectangle ([`CGRectZero`](https://developer.apple.com/documentation/CoreGraphics/CGRectZero)) sets the default page size to 8.5 by 11 inches (612 by 792 points).
-- `documentInfo`: A dictionary that specifies additional information to be associated with the PDF file. You can use these keys to specify additional metadata and security information for the PDF, such as the author of the PDF or the password for accessing it. The keys in this dictionary are the same keys you pass to the [`init(consumer:mediaBox:_:)`](https://developer.apple.com/documentation/CoreGraphics/CGContext/init(consumer:mediaBox:_:)) function and are described in [`Auxiliary Dictionary Keys`](https://developer.apple.com/documentation/CoreGraphics/auxiliary-dictionary-keys). The dictionary is retained by the new context, so on return you may safely release it. Specify `nil` if you do not want to associate any additional information with the PDF document.
+- `bounds`: A rectangle that specifies the default size and location of PDF pages. (This value is used as the default media box for each new page.) The origin of the rectangle should typically be (0, 0). Specifying an empty rectangle ([`CGRectZero`](https://developer.apple.com/documentation/coregraphics/cgrectzero)) sets the default page size to 8.5 by 11 inches (612 by 792 points).
+- `documentInfo`: A dictionary that specifies additional information to be associated with the PDF file. You can use these keys to specify additional metadata and security information for the PDF, such as the author of the PDF or the password for accessing it. The keys in this dictionary are the same keys you pass to the [`init(consumer:mediaBox:_:)`](https://developer.apple.com/documentation/coregraphics/cgcontext/init(consumer:mediabox:_:)) function and are described in [`Auxiliary Dictionary Keys`](https://developer.apple.com/documentation/coregraphics/auxiliary-dictionary-keys). The dictionary is retained by the new context, so on return you may safely release it. Specify `nil` if you do not want to associate any additional information with the PDF document.
 
 ## See Also
 

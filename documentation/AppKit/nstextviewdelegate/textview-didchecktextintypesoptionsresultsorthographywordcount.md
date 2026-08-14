@@ -17,7 +17,7 @@ optional func textView(_ view: NSTextView, didCheckTextIn range: NSRange, types 
 
 #### Return Value
 
-An array of [`NSTextCheckingResult`](https://developer.apple.com/documentation/Foundation/NSTextCheckingResult) instances. You can return the results array as is, or an altered array of [`NSTextCheckingResult`](https://developer.apple.com/documentation/Foundation/NSTextCheckingResult) objects.
+An array of [`NSTextCheckingResult`](https://developer.apple.com/documentation/foundation/nstextcheckingresult) instances. You can return the results array as is, or an altered array of [`NSTextCheckingResult`](https://developer.apple.com/documentation/foundation/nstextcheckingresult) objects.
 
 #### Discussion
 
@@ -27,9 +27,9 @@ Invoked by [`handleTextCheckingResults(_:forRange:types:options:orthography:word
 
 - `view`: The text view sending the message.
 - `range`: The range that was checked.
-- `checkingTypes`: The type of checking that was performed. The possible constants are listed in [`NSTextCheckingTypes`](https://developer.apple.com/documentation/Foundation/NSTextCheckingTypes) and can be combined using the C bit-wise `OR` operator to perform multiple checks at the same time.
+- `checkingTypes`: The type of checking that was performed. The possible constants are listed in [`NSTextCheckingTypes`](https://developer.apple.com/documentation/foundation/nstextcheckingtypes) and can be combined using the C bit-wise `OR` operator to perform multiple checks at the same time.
 - `options`: A dictionary of values used during the checking process to perform. See Spell Checking Option Dictionary Keys for the supported values.
-- `results`: An array of [`NSTextCheckingResult`](https://developer.apple.com/documentation/Foundation/NSTextCheckingResult) instances.
+- `results`: An array of [`NSTextCheckingResult`](https://developer.apple.com/documentation/foundation/nstextcheckingresult) instances.
 - `orthography`: The orthography of the text.
 - `wordCount`: The number of words checked.
 

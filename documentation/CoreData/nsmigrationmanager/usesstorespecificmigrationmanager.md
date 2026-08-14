@@ -22,11 +22,11 @@ var usesStoreSpecificMigrationManager: Bool { get set }
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/Swift/true) if the receiver uses a store-specific migration manager, otherwise [`false`](https://developer.apple.com/documentation/Swift/false).
+[`true`](https://developer.apple.com/documentation/swift/true) if the receiver uses a store-specific migration manager, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
 
 #### Discussion
 
-[`true`](https://developer.apple.com/documentation/Swift/true) if the receiver uses a store-specific migration manager, otherwise [`false`](https://developer.apple.com/documentation/Swift/false). The default value is [`true`](https://developer.apple.com/documentation/Swift/true).
+[`true`](https://developer.apple.com/documentation/swift/true) if the receiver uses a store-specific migration manager, otherwise [`false`](https://developer.apple.com/documentation/swift/false). The default value is [`true`](https://developer.apple.com/documentation/swift/true).
 
 A store-specific migration manager class is not guaranteed to perform any of the migration manager delegate callbacks or update values for the observable properties.
 

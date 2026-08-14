@@ -20,7 +20,7 @@ class func extendLaunchMeasurement(forTaskID taskID: MXLaunchTaskID) throws
 
 #### Discussion
 
-Use this method on the main thread to measure an extended launch task. Your app needs to start the first task before or during [`scene(_:restoreInteractionStateWith:)`](https://developer.apple.com/documentation/UIKit/UISceneDelegate/scene(_:restoreInteractionStateWith:)), or before the system calls [`sceneDidBecomeActive(_:)`](https://developer.apple.com/documentation/UIKit/UISceneDelegate/sceneDidBecomeActive(_:)) on the first scene to connect, and each task needs to overlap with others.
+Use this method on the main thread to measure an extended launch task. Your app needs to start the first task before or during [`scene(_:restoreInteractionStateWith:)`](https://developer.apple.com/documentation/uikit/uiscenedelegate/scene(_:restoreinteractionstatewith:)), or before the system calls [`sceneDidBecomeActive(_:)`](https://developer.apple.com/documentation/uikit/uiscenedelegate/scenedidbecomeactive(_:)) on the first scene to connect, and each task needs to overlap with others.
 
 The maximum number of tasks is 16. The extended launch measurement finishes when all running tasks finish.
 

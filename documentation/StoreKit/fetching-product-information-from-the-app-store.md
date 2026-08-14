@@ -83,7 +83,7 @@ Invalid product identifiers in the App Store response to your products request u
 
 - In production builds, display your app’s store UI and omit the invalid product.
 - In development builds, display an error to call attention to the issue.
-- In both production and development builds, use [`NSLog(_:_:)`](https://developer.apple.com/documentation/Foundation/NSLog(_:_:)) to write a message to the console to record the invalid identifier.
+- In both production and development builds, use [`NSLog(_:_:)`](https://developer.apple.com/documentation/foundation/nslog(_:_:)) to write a message to the console to record the invalid identifier.
 - If your app fetches the list from your server, you can define a logging mechanism to let your app send the list of invalid identifiers back to your server.
 - Verify that you have a signed Paid Applications Agreement for your developer account. For more information about this agreement, see [`Sign and update agreements`](https://developer.apple.comhttps://help.apple.com/app-store-connect/#/deva001f4a14).
 

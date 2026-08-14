@@ -23,8 +23,8 @@ func setRate(_ rate: Float, time: CMTime, atHostTime hostTime: CMTime)
 ## Parameters
 
 - `rate`: A new timebase rate. This value must be greater than or equal to `0.0`.
-- `time`: A new timebase time. This value must be greater than or equal to [`zero`](https://developer.apple.com/documentation/CoreMedia/CMTime/zero), or [`invalid`](https://developer.apple.com/documentation/CoreMedia/CMTime/invalid).
-- `hostTime`: A new host time. This value must be greater than or equal to [`zero`](https://developer.apple.com/documentation/CoreMedia/CMTime/zero), or [`invalid`](https://developer.apple.com/documentation/CoreMedia/CMTime/invalid).
+- `time`: A new timebase time. This value must be greater than or equal to [`zero`](https://developer.apple.com/documentation/coremedia/cmtime/zero), or [`invalid`](https://developer.apple.com/documentation/coremedia/cmtime/invalid).
+- `hostTime`: A new host time. This value must be greater than or equal to [`zero`](https://developer.apple.com/documentation/coremedia/cmtime/zero), or [`invalid`](https://developer.apple.com/documentation/coremedia/cmtime/invalid).
 
 ## See Also
 

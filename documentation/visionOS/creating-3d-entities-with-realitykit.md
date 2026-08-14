@@ -10,7 +10,7 @@ Display a horizontal row of three-dimensional shapes in your visionOS app, using
 
 #### Overview
 
-This sample code project demonstrates how to create and display 3D objects using predefined methods in `MeshResource`, such as [`generateBox(size:cornerRadius:)`](https://developer.apple.com/documentation/RealityKit/MeshResource/generateBox(size:cornerRadius:)-8em0v) for creating a box and [`generateSphere(radius:)`](https://developer.apple.com/documentation/RealityKit/MeshResource/generateSphere(radius:)) for creating a sphere. Additionally, it shows how to use [`SimpleMaterial`](https://developer.apple.com/documentation/RealityKit/SimpleMaterial) to apply a white material. By combining the mesh and material, you can create a [`ModelComponent`](https://developer.apple.com/documentation/RealityKit/ModelComponent) for your visionOS app with RealityKit.
+This sample code project demonstrates how to create and display 3D objects using predefined methods in `MeshResource`, such as [`generateBox(size:cornerRadius:)`](https://developer.apple.com/documentation/realitykit/meshresource/generatebox(size:cornerradius:)-8em0v) for creating a box and [`generateSphere(radius:)`](https://developer.apple.com/documentation/realitykit/meshresource/generatesphere(radius:)) for creating a sphere. Additionally, it shows how to use [`SimpleMaterial`](https://developer.apple.com/documentation/realitykit/simplematerial) to apply a white material. By combining the mesh and material, you can create a [`ModelComponent`](https://developer.apple.com/documentation/realitykit/modelcomponent) for your visionOS app with RealityKit.
 
 The sample app draws the following entities in its main view:
 
@@ -20,7 +20,7 @@ The sample app draws the following entities in its main view:
 - A cone
 - A cylinder
 
-![](https://docs-assets.developer.apple.com/published/5e013edfa7e1ad36291edb644bd975c2/sample-3d-shapes-1-main-view.png)
+![](/images/com.apple.visionOS/sample-3d-shapes-1-main-view.png)
 
 RealityKit defines the `Box`, `Sphere`, `Cone`, and `Cylinder` types, and the app creates a `roundedBox` type by adding a `cornerRadius` to `Box`.
 
@@ -68,9 +68,9 @@ The `addGeometryShapes(to:)` method sets an array of 3D entities in a row along 
 
 The `ShapesView` extension defines the entity types for the box, sphere, cone, and cylinder with white material by:
 
-- Creating a material with [`SimpleMaterial`](https://developer.apple.com/documentation/RealityKit/SimpleMaterial)
-- Generating a mesh with [`MeshResource`](https://developer.apple.com/documentation/RealityKit/MeshResource)
-- Rendering a 3D model with [`ModelComponent`](https://developer.apple.com/documentation/RealityKit/ModelComponent)
+- Creating a material with [`SimpleMaterial`](https://developer.apple.com/documentation/realitykit/simplematerial)
+- Generating a mesh with [`MeshResource`](https://developer.apple.com/documentation/realitykit/meshresource)
+- Rendering a 3D model with [`ModelComponent`](https://developer.apple.com/documentation/realitykit/modelcomponent)
 
 ```swift
 import RealityKit

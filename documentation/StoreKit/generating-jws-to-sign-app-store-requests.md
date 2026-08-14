@@ -16,7 +16,7 @@ The following App Store features require a JWS Compact Serialization to authoriz
 
 The data you sign when generating the JWS is a JSON Web Token (JWT). The JWT contains name-value pairs called *claims*, including claims specific to the feature you’re using. Your server returns the JWS Compact Serialization to your app. Your app uses the JWS in the relevant StoreKit API call.
 
-> 💡 **Tip**:  The App Store Server Library provides a signing utility that creates JWS specific for each of these uses. For more information, see [`Simplifying your implementation by using the App Store Server Library`](https://developer.apple.com/documentation/AppStoreServerAPI/simplifying-your-implementation-by-using-the-app-store-server-library).
+> 💡 **Tip**:  The App Store Server Library provides a signing utility that creates JWS specific for each of these uses. For more information, see [`Simplifying your implementation by using the App Store Server Library`](https://developer.apple.com/documentation/appstoreserverapi/simplifying-your-implementation-by-using-the-app-store-server-library).
 
 To get started, you need your key ID and issuer ID from App Store Connect. Then, to generate a signed JWS, you perform these steps on your server:
 
@@ -35,7 +35,7 @@ To get the key ID:
 3. Hover the cursor next to a key ID to display the Copy Key ID link. The key IDs appear in a column under the Active heading.
 4. Click Copy Key ID.
 
-If you have more than one API key, copy the key ID of the private key that you use to sign the JWS. For information about creating keys, see [`Creating API keys to authorize API requests`](https://developer.apple.com/documentation/AppStoreServerAPI/creating-api-keys-to-authorize-api-requests).
+If you have more than one API key, copy the key ID of the private key that you use to sign the JWS. For information about creating keys, see [`Creating API keys to authorize API requests`](https://developer.apple.com/documentation/appstoreserverapi/creating-api-keys-to-authorize-api-requests).
 
 To get the issuer ID:
 
@@ -51,7 +51,7 @@ To create a JWS to communicate with the App Store, use the following fields and 
 
 | **Header field** | **Value** |
 | --- | --- |
-| `alg` - Encryption Algorithm | `ES256`  ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) You need to sign JWS with ES256 encryption. |
+| `alg` - Encryption Algorithm | `ES256`  ![None](/images/com.apple.storekit/spacer.png) You need to sign JWS with ES256 encryption. |
 | `kid` - Key ID | Your private key ID from App Store Connect (example: `2X9R4HXF34`) |
 | `typ` - Token Type | `JWT` |
 
@@ -184,11 +184,11 @@ For more information about providing the introductory offer eligibility signed v
 
 On your server, use the private key associated with the key ID you specified in the header to generate the signature using ES256 encryption.  The process of signing combines the JWS Header and JWS Payload into a single signed string.
 
-There are a variety of open source libraries available online for creating and signing JWT tokens; see [`JWT.io`](https://developer.apple.comhttps://jwt.io/) for more information.  Consider using the App Store Server Library to create the JWS. For more information, see [`Simplifying your implementation by using the App Store Server Library`](https://developer.apple.com/documentation/AppStoreServerAPI/simplifying-your-implementation-by-using-the-app-store-server-library).
+There are a variety of open source libraries available online for creating and signing JWT tokens; see [`JWT.io`](https://developer.apple.comhttps://jwt.io/) for more information.  Consider using the App Store Server Library to create the JWS. For more information, see [`Simplifying your implementation by using the App Store Server Library`](https://developer.apple.com/documentation/appstoreserverapi/simplifying-your-implementation-by-using-the-app-store-server-library).
 
 After signing, you should have a string in JWS compact serialization format.  Send that string to your app.
 
-> **Note**: Always use a secure connection when sending data, including the signature, between your app and server. For more information on ensuring your data’s security, see [`Preventing Insecure Network Connections`](https://developer.apple.com/documentation/Security/preventing-insecure-network-connections).
+> **Note**: Always use a secure connection when sending data, including the signature, between your app and server. For more information on ensuring your data’s security, see [`Preventing Insecure Network Connections`](https://developer.apple.com/documentation/security/preventing-insecure-network-connections).
 
 ## See Also
 

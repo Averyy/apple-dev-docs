@@ -20,9 +20,9 @@ virtual bool init();
 
 #### Discussion
 
-Override this method inherited from [`IOService`](https://developer.apple.com/documentation/DriverKit/IOService).
+Override this method inherited from [`IOService`](https://developer.apple.com/documentation/driverkit/ioservice).
 
-The system calls this method shortly after it instantiates your custom [`IOService`](https://developer.apple.com/documentation/DriverKit/IOService) subclass, and before it calls the [`Start`](iouseraudiodriver/start.md) method of your service. Limit the work you do in this method to simple tasks that must occur before your service starts. For example, use this method to allocate memory for your `ivars` structure.
+The system calls this method shortly after it instantiates your custom [`IOService`](https://developer.apple.com/documentation/driverkit/ioservice) subclass, and before it calls the [`Start`](iouseraudiodriver/start.md) method of your service. Limit the work you do in this method to simple tasks that must occur before your service starts. For example, use this method to allocate memory for your `ivars` structure.
 
 Always call `super` early in your implementation of this method.
 

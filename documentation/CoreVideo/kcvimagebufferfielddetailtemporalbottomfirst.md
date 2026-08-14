@@ -22,7 +22,7 @@ let kCVImageBufferFieldDetailTemporalBottomFirst: CFString
 
 #### Discussion
 
-The temporal bottom first detail field value is of type [`CFString`](https://developer.apple.com/documentation/CoreFoundation/CFString). The image buffer contains complete fields in alternating order. The bottom, even-numbered, fields contain image data captured at an earlier time than top, odd-numbered, fields.
+The temporal bottom first detail field value is of type [`CFString`](https://developer.apple.com/documentation/corefoundation/cfstring). The image buffer contains complete fields in alternating order. The bottom, even-numbered, fields contain image data captured at an earlier time than top, odd-numbered, fields.
 
 ## See Also
 

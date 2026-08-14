@@ -23,7 +23,7 @@ Returns the `MediaItem` object found in the location specified by the URL.
 
 ## Parameters
 
-- `type`: The type of media item to be created. Valid values are   and  . The default is  .
+- `type`: The type of media item to be created. Valid values are `audio` and `video`. The default is `video`.
 - `url`: The URL pointing to the media item information.
 
 

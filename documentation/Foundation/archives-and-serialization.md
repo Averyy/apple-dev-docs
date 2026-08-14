@@ -8,7 +8,7 @@ Convert objects and values to and from property list, JSON, and other flat binar
 
 Use these APIs to convert your app’s in-memory types to representations suitable for serialization over I/O and network interfaces or to long-term storage.
 
-In Swift, the standard library defines the [`Encodable`](https://developer.apple.com/documentation/Swift/Encodable), [`Decodable`](https://developer.apple.com/documentation/Swift/Decodable), and [`Codable`](https://developer.apple.com/documentation/Swift/Codable) types, along with [`Encoder`](https://developer.apple.com/documentation/Swift/Encoder) and [`Decoder`](https://developer.apple.com/documentation/Swift/Decoder) APIs to perform encoding and decoding, as described in [`Encoding, Decoding, and Serialization`](https://developer.apple.com/documentation/Swift/encoding-decoding-and-serialization). Foundation extends this with the [`EncodableWithConfiguration`](encodablewithconfiguration.md) and [`DecodableWithConfiguration`](decodablewithconfiguration.md) protocols, used for types that require additional static information to encode and decode, such as [`AttributedString`](attributedstring.md).
+In Swift, the standard library defines the [`Encodable`](https://developer.apple.com/documentation/swift/encodable), [`Decodable`](https://developer.apple.com/documentation/swift/decodable), and [`Codable`](https://developer.apple.com/documentation/swift/codable) types, along with [`Encoder`](https://developer.apple.com/documentation/swift/encoder) and [`Decoder`](https://developer.apple.com/documentation/swift/decoder) APIs to perform encoding and decoding, as described in [`Encoding, Decoding, and Serialization`](https://developer.apple.com/documentation/swift/encoding-decoding-and-serialization). Foundation extends this with the [`EncodableWithConfiguration`](encodablewithconfiguration.md) and [`DecodableWithConfiguration`](decodablewithconfiguration.md) protocols, used for types that require additional static information to encode and decode, such as [`AttributedString`](attributedstring.md).
 
 In Objective-C, [`NSCoding`](nscoding.md) defines a protocol for encoding and decoding objects. When adding serialization to your own types, you should also adopt [`NSSecureCoding`](nssecurecoding.md). This protocol adds protection against security vulnerabilities introduced by instantiating arbitrary objects as part of the decoding process.
 
@@ -19,7 +19,7 @@ Many system frameworks use these types. When working with external systems, such
 ### Adopting Codability
 - [Encoding and Decoding Custom Types](encoding-and-decoding-custom-types.md)
   Make your data types encodable and decodable for compatibility with external representations such as JSON.
-- [typealias Codable](../Swift/Codable.md)
+- [typealias Codable](../swift/codable.md)
   A type that can convert itself into and out of an external representation.
 - [protocol NSCoding](nscoding.md)
   A protocol that enables an object to be encoded and decoded for archiving and distribution.

@@ -21,7 +21,7 @@ class func supportsDevice(_ device: any MTLDevice) -> Bool
 
 ## Parameters
 
-- `device`: An [`MTLDevice`](https://developer.apple.com/documentation/Metal/MTLDevice) instance that represents a GPU.
+- `device`: An [`MTLDevice`](https://developer.apple.com/documentation/metal/mtldevice) instance that represents a GPU.
 
 
 ---

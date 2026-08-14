@@ -13,7 +13,7 @@ framework: HIG
 
 A gesture is a physical motion that a person uses to directly affect an object in an app or game on their device.
 
-![A sketch of a pointing hand swiping in a curved motion toward the right, suggesting touch interaction with a device. The image is overlaid with rectangular and circular grid lines and is tinted purple to subtly reflect the purple in the original six-color Apple logo.](https://docs-assets.developer.apple.com/published/c7a962cd20329fd48490e56c97d57135/inputs-gestures-intro~dark%402x.png)
+![A sketch of a pointing hand swiping in a curved motion toward the right, suggesting touch interaction with a device. The image is overlaid with rectangular and circular grid lines and is tinted purple to subtly reflect the purple in the original six-color Apple logo.](/images/com.apple.HIG/inputs-gestures-intro~dark@2x.png)
 Depending on the device they’re using, people can make gestures on a touchscreen, in the air, or on a range of input devices such as a trackpad, mouse, remote, or game controller that includes a touch surface.
 Every platform supports basic gestures like tap, swipe, and drag. Although the precise movements that make up basic gestures can vary per platform and input device, people are familiar with the underlying functionality of these gestures and expect to use them everywhere. For a list of these gestures, see [Standard gestures](gestures.md#Standard-gestures).
 
@@ -56,10 +56,10 @@ People expect to use [Standard gestures](gestures.md#Standard-gestures) to navig
 visionOS supports two categories of gestures: indirect and direct.
 People use an *indirect* gesture by looking at an object to target it, and then manipulating that object from a distance — indirectly — with their hands. For example, a person can look at a button to focus it and select it by quickly tapping their finger and thumb together. Indirect gestures are comfortable to perform at any distance, and let people quickly change focus between different objects and select items with minimal movement.
 
-[Video: visionos-spatial-gesture-indirect.mp4](https://docs-assets.developer.apple.com/published/9557a3ad0b177a131f36bb37d6661cfb/visionos-spatial-gesture-indirect.mp4)
+[Video: visionos-spatial-gesture-indirect.mp4](/videos/com.apple.HIG/visionos-spatial-gesture-indirect.mp4)
 People use a *direct* gesture to physically touch an interactive object. For example, people can directly type on the visionOS keyboard by tapping the virtual keys. Direct gestures work best when they are within reach. Because people may find it tiring to keep their arms raised for extended periods, direct gestures are best for infrequent use. visionOS also supports direct versions of all standard gestures, allowing people the choice to interact directly or indirectly with any standard component.
 
-[Video: visionos-spatial-gesture-direct.mp4](https://docs-assets.developer.apple.com/published/936efb1057888e3d20b0035cff16a234/visionos-spatial-gesture-direct.mp4)
+[Video: visionos-spatial-gesture-direct.mp4](/videos/com.apple.HIG/visionos-spatial-gesture-direct.mp4)
 Here are the standard direct gestures people use in visionOS; see [Specifications](gestures.md#Specifications) for a list of standard indirect gestures.
 | Direct gesture | Common use |
 | --- | --- |
@@ -76,8 +76,8 @@ Here are the standard direct gestures people use in visionOS; see [Specification
 **Avoid requiring specific body movements or positions for input.** Not all people can perform specific body movements or position themselves in certain ways at all times, whether due to disability, spatial constraints, or other environmental factors. If your experience requires movement, consider supporting alternative inputs to let people choose the interaction method that works best for them.
 
 #### Designing custom gestures in visionOS
-If you want to offer a specific interaction for your experience that people can’t perform using an existing system gesture, consider designing a custom gesture. To offer this type of interaction, your app needs to be running in a Full Space, and you must request people’s permission to access information about their hands. For developer guidance, see [Setting up access to ARKit data](../visionOS/setting-up-access-to-arkit-data.md).
-![A screenshot of a person's hands performing a custom gesture, placing the two hands together to form a heart, while playing a visionOS game.](https://docs-assets.developer.apple.com/published/363ecbc8eeb441809f62ae935e13fbdc/visionos-custom-spatial-gesture-happy-beam%402x.png)
+If you want to offer a specific interaction for your experience that people can’t perform using an existing system gesture, consider designing a custom gesture. To offer this type of interaction, your app needs to be running in a Full Space, and you must request people’s permission to access information about their hands. For developer guidance, see [Setting up access to ARKit data](../visionos/setting-up-access-to-arkit-data.md).
+![A screenshot of a person's hands performing a custom gesture, placing the two hands together to form a heart, while playing a visionOS game.](/images/com.apple.HIG/visionos-custom-spatial-gesture-happy-beam@2x.png)
 **Prioritize comfort.** Continually test ergonomics of all interactions that require custom gestures. A custom interaction that requires people to keep their arms raised for even a little while can be physically tiring, and repeating very similar movements many times in succession can stress people’s muscles and joints.
 **Carefully consider complex custom gestures that involve multiple fingers or both hands.** People may not always have both hands available when using your app or game. If you require a more complex gesture for your experience, consider also offering an alternative that requires less movement.
 **Avoid custom gestures that require using a specific hand.** It can increase someone’s cognitive load if they need to remember which hand to use to trigger a custom gesture. It may also make your experience less welcoming to people with strong hand-dominance or limb differences.
@@ -88,13 +88,13 @@ In visionOS 2 and later, people can look at the palm of one hand and use gesture
 > **Note:** The system overlay is the default method of accessing Control Center in visionOS 2 and later. The visionOS 1 behavior (looking upward) remains available as an accessibility setting.
 When designing apps and games that use custom gestures or anchor content to a person’s hands, it’s important to take interactions with the system overlays into consideration.
 **Reserve the area around a person’s hand for system overlays and their related gestures.** If possible, don’t anchor content to a person’s hands or wrists. If you’re designing a game that involves hand-anchored content, place it outside of the immediate area of someone’s hand to avoid colliding with the Home indicator.
-![An illustration of a person's open hand with the palm facing upward. A dashed circular line above the hand indicates the area reserved for system overlays.](https://docs-assets.developer.apple.com/published/c9586a1348adff0aa01943891300a3ac/visionos-hand-area-of-focus~dark%402x.png)
-![An illustration of a person's open hand with the palm facing upward. A button with a circle icon representing the Home indicator appears above the palm.](https://docs-assets.developer.apple.com/published/075a39cf157ebfe7c2e8a200966799fe/visionos-spatial-gesture-home-indicator~dark%402x.png)
-![An illustration of a person's open hand with the palm facing downward. An overlay with the status bar appears above the hand.](https://docs-assets.developer.apple.com/published/a7c54c4d405c17907e3498464b2f1951/visionos-spatial-gesture-control-center~dark%402x.png)
-**Consider deferring the system overlay behavior when designing an immersive app or game.** In certain circumstances, you may not want the Home indicator to appear when someone looks at the palm of their hand. For example, a game that uses virtual hands or gloves may want to keep someone within the world of the story, even if they happen to look at their hands from different angles. In such cases, when your app is running in a Full Space, you can choose to require a tap to reveal the Home indicator instead. For developer guidance, see [persistentSystemOverlays(_:)](../SwiftUI/View/persistentSystemOverlays(_:).md).
-![An image of a person's open hand with the palm facing upward, shown from the person's perspective. A button with a circle icon representing the Home indicator appears above the palm. The image background shows the room that's the person's surroundings.](https://docs-assets.developer.apple.com/published/dc6b4a94633c063ddd432dcc8043cae3/gestures-default-home-indicator%402x.png)
-![An image of a person's open hand with the palm facing upward, shown from the person's perspective. A button with a circle icon representing the Home indicator appears above the palm. The image background shows a forest in a fully immersive space.](https://docs-assets.developer.apple.com/published/96cb708d391f1ab78a77d23c7f2e0442/gestures-home-indicator-in-immersive-space%402x.png)
-![An image of a person's open hand wearing a bulky space suit glove, shown from the person's perspective. The palm faces upward, and no button appears above it. The image background shows a starry sky in a fully immersive space.](https://docs-assets.developer.apple.com/published/b978fe99b00df892890e1d194f704a83/gestures-fully-immersive-game-with-glove%402x.png)
+![An illustration of a person's open hand with the palm facing upward. A dashed circular line above the hand indicates the area reserved for system overlays.](/images/com.apple.HIG/visionos-hand-area-of-focus~dark@2x.png)
+![An illustration of a person's open hand with the palm facing upward. A button with a circle icon representing the Home indicator appears above the palm.](/images/com.apple.HIG/visionos-spatial-gesture-home-indicator~dark@2x.png)
+![An illustration of a person's open hand with the palm facing downward. An overlay with the status bar appears above the hand.](/images/com.apple.HIG/visionos-spatial-gesture-control-center~dark@2x.png)
+**Consider deferring the system overlay behavior when designing an immersive app or game.** In certain circumstances, you may not want the Home indicator to appear when someone looks at the palm of their hand. For example, a game that uses virtual hands or gloves may want to keep someone within the world of the story, even if they happen to look at their hands from different angles. In such cases, when your app is running in a Full Space, you can choose to require a tap to reveal the Home indicator instead. For developer guidance, see [persistentSystemOverlays(_:)](../swiftui/view/persistentsystemoverlays(_:).md).
+![An image of a person's open hand with the palm facing upward, shown from the person's perspective. A button with a circle icon representing the Home indicator appears above the palm. The image background shows the room that's the person's surroundings.](/images/com.apple.HIG/gestures-default-home-indicator@2x.png)
+![An image of a person's open hand with the palm facing upward, shown from the person's perspective. A button with a circle icon representing the Home indicator appears above the palm. The image background shows a forest in a fully immersive space.](/images/com.apple.HIG/gestures-home-indicator-in-immersive-space@2x.png)
+![An image of a person's open hand wearing a bulky space suit glove, shown from the person's perspective. The palm faces upward, and no button appears above it. The image background shows a starry sky in a fully immersive space.](/images/com.apple.HIG/gestures-fully-immersive-game-with-glove@2x.png)
 
 > **Note:** Apps and games that you built for visionOS 1 defer the system overlay behavior by default. When a person looks at their palm with your app running in a Full Space, the Home indicator won’t appear unless they tap first.
 **Use caution when designing custom gestures that involve a rolling motion of the hand, wrist, and forearm.** This specific motion is reserved for revealing system overlays. Since system overlays always display on top of app content and your app isn’t aware of when they’re visible, it’s important to test any custom gestures or content that might conflict.
@@ -104,12 +104,12 @@ When designing apps and games that use custom gestures or anchor content to a pe
 #### Double tap
 In watchOS 11 and later, people can use the double-tap gesture to scroll through lists and scroll views, and to advance between vertical tab views. Additionally, you can specify a toggle or button as the primary action in your app, or in your widget or Live Activity when the system displays it in the Smart Stack. Double-tapping in a view with a primary action highlights the control and then performs the action. The system also supports double tap for custom actions that you offer in [Notifications](notifications.md), where it acts on the first nondestructive action in the notification.
 **Avoid setting a primary action in views with lists, scroll views, or vertical tabs.** This conflicts with the default navigation behaviors that people expect when they double-tap.
-**Choose the button that people use most commonly as the primary action in a view.** Double tap is helpful in a nonscrolling view when it performs the action that people use the most. For example, in a media controls view, you could assign the primary action to the play/pause button. For developer guidance, see [handGestureShortcut(_:isEnabled:)](../SwiftUI/View/handGestureShortcut(_:isEnabled:).md) and [primaryAction](../SwiftUI/HandGestureShortcut/primaryAction.md).
+**Choose the button that people use most commonly as the primary action in a view.** Double tap is helpful in a nonscrolling view when it performs the action that people use the most. For example, in a media controls view, you could assign the primary action to the play/pause button. For developer guidance, see [handGestureShortcut(_:isEnabled:)](../swiftui/view/handgestureshortcut(_:isenabled:).md) and [primaryAction](../swiftui/handgestureshortcut/primaryaction.md).
 
 ## Specifications
 
 ### Standard gestures
-The system provides APIs that support the familiar gestures people use with their devices, whether they use a touchscreen, an indirect gesture in visionOS, or an input device like a trackpad, mouse, remote, or game controller. For developer guidance, see [Gestures](../SwiftUI/Gestures.md).
+The system provides APIs that support the familiar gestures people use with their devices, whether they use a touchscreen, an indirect gesture in visionOS, or an input device like a trackpad, mouse, remote, or game controller. For developer guidance, see [Gestures](../swiftui/gestures.md).
 | Gesture | Supported in | Common action |
 | --- | --- | --- |
 | Tap | iOS, iPadOS, macOS, tvOS, visionOS, watchOS | Activate a control; select an item. |
@@ -130,8 +130,8 @@ For guidance on supporting additional gestures and button presses on specific in
 [Playing haptics](playing-haptics.md)
 
 #### Developer documentation
-[Gestures](../SwiftUI/Gestures.md) — SwiftUI
-[UITouch](../UIKit/UITouch.md) — UIKit
+[Gestures](../swiftui/gestures.md) — SwiftUI
+[UITouch](../uikit/uitouch.md) — UIKit
 
 #### Videos
 - [Enhance your UI animations and transitions](https://developer.apple.com/videos/play/wwdc2024/10145) - Explore how to adopt the zoom transition in navigation and presentations to increase the sense of continuity in your app, and learn how to animate UIKit views with SwiftUI animations to make it easier to build animations that feel continuous.

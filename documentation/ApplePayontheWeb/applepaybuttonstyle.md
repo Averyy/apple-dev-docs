@@ -21,15 +21,15 @@ The values for the button style:
 
 - **`"black"`**: A black button with white lettering.
 
-For more information, see [`PKPaymentButtonStyle.black`](https://developer.apple.com/documentation/PassKit/PKPaymentButtonStyle/black).
+For more information, see [`PKPaymentButtonStyle.black`](https://developer.apple.com/documentation/passkit/pkpaymentbuttonstyle/black).
 
 - **`"white"`**: A white button with black lettering.
 
-For more information, see [`PKPaymentButtonStyle.white`](https://developer.apple.com/documentation/PassKit/PKPaymentButtonStyle/white).
+For more information, see [`PKPaymentButtonStyle.white`](https://developer.apple.com/documentation/passkit/pkpaymentbuttonstyle/white).
 
 - **`"white-outline"`**: A white button with black lettering and a black outline.
 
-For more information, see [`PKPaymentButtonStyle.whiteOutline`](https://developer.apple.com/documentation/PassKit/PKPaymentButtonStyle/whiteOutline).
+For more information, see [`PKPaymentButtonStyle.whiteOutline`](https://developer.apple.com/documentation/passkit/pkpaymentbuttonstyle/whiteoutline).
 
 ## Topics
 

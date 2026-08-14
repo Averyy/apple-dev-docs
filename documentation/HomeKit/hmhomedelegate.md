@@ -103,7 +103,7 @@ To be alerted about changes made to the overall list of homes, adopt the [`HMHom
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

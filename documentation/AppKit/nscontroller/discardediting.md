@@ -17,7 +17,7 @@ func discardEditing()
 
 #### Discussion
 
-The receiver invokes [`discardEditing`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class/discardEditing) on any current editors.
+The receiver invokes [`discardEditing`](https://developer.apple.com/documentation/objectivec/nsobject-swift.class/discardediting) on any current editors.
 
 ## See Also
 

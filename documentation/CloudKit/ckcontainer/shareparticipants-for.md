@@ -22,7 +22,7 @@ func shareParticipants(for lookupInfos: [CKUserIdentity.LookupInfo]) async throw
 
 #### Return Value
 
-A dictionary of fetched share participants. The dictionary uses the lookup infos you specify in `lookupInfos` as its keys. The value of each key is a [`Result`](https://developer.apple.com/documentation/Swift/Result) that contains either the corresponding fetched share participant, or an error that describes why CloudKit can’t fetch that share participant.
+A dictionary of fetched share participants. The dictionary uses the lookup infos you specify in `lookupInfos` as its keys. The value of each key is a [`Result`](https://developer.apple.com/documentation/swift/result) that contains either the corresponding fetched share participant, or an error that describes why CloudKit can’t fetch that share participant.
 
 #### Discussion
 

@@ -19,7 +19,7 @@ static let textItemTag: NSAttributedString.Key
 
 #### Discussion
 
-The value of this attribute is an [`NSString`](nsstring.md) object with the tag name of a [`UITextItem`](https://developer.apple.com/documentation/UIKit/UITextItem) object.
+The value of this attribute is an [`NSString`](nsstring.md) object with the tag name of a [`UITextItem`](https://developer.apple.com/documentation/uikit/uitextitem) object.
 
 ## See Also
 

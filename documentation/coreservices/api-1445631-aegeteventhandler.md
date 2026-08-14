@@ -28,11 +28,11 @@ In Mac OS 7.1 through 9.x and macOS version v10.2 and later, `AEGetEventHandler`
 
 ## Parameters
 
-- `theAEEventClass`: The event class for the desired handler. See  .
-- `theAEEventID`: The event ID for the desired handler. See  .
-- `handler`: See  .
+- `theAEEventClass`: The event class for the desired handler. See [`AEEventClass`](aeeventclass.md).
+- `theAEEventID`: The event ID for the desired handler. See [`AEEventID`](aeeventid.md).
+- `handler`: A universal procedure pointer. On return, a pointer to the specified handler, if a dispatch table entry exists that exactly matches the values supplied in the parameters `theAEEventClass` and `theAEEventID`. If you use the `typeWildCard` constant for either or both of these parameters, `AEGetEventHandler` will return an error unless an entry exists that specifies `typeWildCard` in exactly the same way. For example, if you specify `typeWildCard` in both the `theAEEventClass` parameter and the `theAEEventID` parameter, the Apple Event Manager will not return the first handler for any event class and event ID in the dispatch table; instead, it will only return a handler if an entry exists that specifies type `typeWildCard` for both the event class and the event ID. For an explanation of wildcard values, see the Discussion section for [`AEInstallEventHandler(_:_:_:_:_:)`](1448596-aeinstalleventhandler.md). See [`AEEventHandlerUPP`](aeeventhandlerupp.md).
 - `handlerRefcon`: A pointer to a reference constant. On return, the reference constant from the dispatch table entry for the specified handler. The reference constant may have a value of 0.
-- `isSysHandler`: Specifies the Apple event dispatch table to get the handler from. Pass   to get the handler from the system dispatch table or   to get the handler from your application’s dispatch table. See Version Notes for related information.
+- `isSysHandler`: Specifies the Apple event dispatch table to get the handler from. Pass `TRUE` to get the handler from the system dispatch table or `FALSE` to get the handler from your application’s dispatch table. See Version Notes for related information.
 
 ## See Also
 

@@ -32,7 +32,7 @@ You must add the new timer to a run loop, using [`add(_:forMode:)`](runloop/add(
 
 - `date`: The time at which the timer should first fire.
 - `interval`: For a repeating timer, this parameter contains the number of seconds between firings of the timer. If `interval` is less than or equal to `0.0`, this method chooses the nonnegative value of `0.0001` seconds instead.
-- `repeats`: If [`true`](https://developer.apple.com/documentation/Swift/true), the timer will repeatedly reschedule itself until invalidated. If [`false`](https://developer.apple.com/documentation/Swift/false), the timer will be invalidated after it fires.
+- `repeats`: If [`true`](https://developer.apple.com/documentation/swift/true), the timer will repeatedly reschedule itself until invalidated. If [`false`](https://developer.apple.com/documentation/swift/false), the timer will be invalidated after it fires.
 - `block`: A block to be executed when the timer fires. The block takes a single [`Timer`](timer.md) parameter and has no return value.
 
 ## See Also

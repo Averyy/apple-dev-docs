@@ -44,9 +44,9 @@ Use MapKit to give your app a sense of place with maps and location information.
 ## See Also
 
 - [Location and Maps Programming Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/UserExperience/Conceptual/LocationAwarenessPG/Introduction/Introduction.html#//apple_ref/doc/uid/TP40009497)
-- [MapKit JS](../MapKitJS/MapKitJS.md)
+- [MapKit JS](../mapkitjs/mapkitjs.md)
   Embed interactive Apple Maps on your website, annotate points of interest, and perform georelated searches.
-- [Apple Maps Server API](../AppleMapsServerAPI/AppleMapsServerAPI.md)
+- [Apple Maps Server API](../applemapsserverapi/applemapsserverapi.md)
   Reduce API calls and conserve device power by streamlining your app’s georelated searches.
 
 

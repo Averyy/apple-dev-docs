@@ -8,24 +8,24 @@ Understand dataless files and how to minimize the performance impact as the syst
 
 In a modern file system, a file’s content may not be available locally on the device. A file that contains only metadata is known as a *dataless* file. The file’s content typically resides on a remote server and is available to people or apps, transparently, when they access the file.
 
-For example, a person can create a dataless file in iCloud Drive on iOS by selecting a file in the Files app and choosing the Remove Download menu item. That action removes the file’s contents from the local device and frees the used storage space. Later, when a person taps the same file, or an app accesses it, the system redownloads the file’s content and makes it available again — a process known as materialization. File providers typically support dataless files. For more information, see [`Synchronizing the File Provider Extension`](https://developer.apple.com/documentation/FileProvider/synchronizing-the-file-provider-extension).
+For example, a person can create a dataless file in iCloud Drive on iOS by selecting a file in the Files app and choosing the Remove Download menu item. That action removes the file’s contents from the local device and frees the used storage space. Later, when a person taps the same file, or an app accesses it, the system redownloads the file’s content and makes it available again — a process known as materialization. File providers typically support dataless files. For more information, see [`Synchronizing the File Provider Extension`](https://developer.apple.com/documentation/fileprovider/synchronizing-the-file-provider-extension).
 
-Materializing a dataless file can take time if the file is large or there are poor network conditions. In such a scenario, the app may become unresponsive. If an app’s main queue remains unresponsive for a long time, the system may terminate the app and trigger a watchdog crash. See [`Addressing watchdog terminations`](https://developer.apple.com/documentation/Xcode/addressing-watchdog-terminations) for details.
+Materializing a dataless file can take time if the file is large or there are poor network conditions. In such a scenario, the app may become unresponsive. If an app’s main queue remains unresponsive for a long time, the system may terminate the app and trigger a watchdog crash. See [`Addressing watchdog terminations`](https://developer.apple.com/documentation/xcode/addressing-watchdog-terminations) for details.
 
 #### Understand the Impact of File Materialization
 
 Dataless files reduce the amount of storage space a file typically consumes, but accessing a dataless file causes the system to materialize the file. This can take a long time, creating a poor user experience in apps that aren’t ready for it.
 
-This typically affects apps that store files in their own [`url(forUbiquityContainerIdentifier:)`](https://developer.apple.com/documentation/Foundation/FileManager/url(forUbiquityContainerIdentifier:)) or access files from network file providers like iCloud Drive. Common symptoms are:
+This typically affects apps that store files in their own [`url(forUbiquityContainerIdentifier:)`](https://developer.apple.com/documentation/foundation/filemanager/url(forubiquitycontaineridentifier:)) or access files from network file providers like iCloud Drive. Common symptoms are:
 
 - Slower frame rates and jitters when someone scrolls a user interface that loads data from one or more files
 - Spins or hangs when performing file system operations
 - Time-out errors (`ETIMEDOUT`) when invoking file system APIs
 - A watchdog termination where the crash report includes reference to the materialization process
 
-Examples of actions that may result in one or more of these symptoms are enumerating a directory’s contents and checking whether a file exists using [`fileExists(atPath:)`](https://developer.apple.com/documentation/Foundation/FileManager/fileExists(atPath:)).
+Examples of actions that may result in one or more of these symptoms are enumerating a directory’s contents and checking whether a file exists using [`fileExists(atPath:)`](https://developer.apple.com/documentation/foundation/filemanager/fileexists(atpath:)).
 
-If you app encounters one of these symptoms, use Instruments to profile your app and identify the contributing API calls. For example, the following trace shows an app using [`contentsOfDirectory(atPath:)`](https://developer.apple.com/documentation/Foundation/FileManager/contentsOfDirectory(atPath:)) to retrieve all paths in a directory, and the `apfs_materialize_dataless_file_ext` symbol in the last frame corresponds to the materialization process:
+If you app encounters one of these symptoms, use Instruments to profile your app and identify the contributing API calls. For example, the following trace shows an app using [`contentsOfDirectory(atPath:)`](https://developer.apple.com/documentation/foundation/filemanager/contentsofdirectory(atpath:)) to retrieve all paths in a directory, and the `apfs_materialize_dataless_file_ext` symbol in the last frame corresponds to the materialization process:
 
 ```None
  1000 -[NSFileManager contentsOfDirectoryAtPath:error:] + 36 (Foundation + 416570) [0x7ff81ca4fb3a]
@@ -43,9 +43,9 @@ If you app encounters one of these symptoms, use Instruments to profile your app
 
 #### Prepare Your App for Dataless File Access
 
-The system, or a person using the device, can make dataless files whenever they determine it’s appropriate, and your app needs to be ready to handle them. Specifically, avoid unnecessarily materializing dataless files and, when your app requires access to a file’s contents, perform that work asynchronously off the main thread. For more information, see [`Improving performance and stability when accessing the file system`](https://developer.apple.com/documentation/Foundation/improving-performance-and-stability-when-accessing-the-file-system).
+The system, or a person using the device, can make dataless files whenever they determine it’s appropriate, and your app needs to be ready to handle them. Specifically, avoid unnecessarily materializing dataless files and, when your app requires access to a file’s contents, perform that work asynchronously off the main thread. For more information, see [`Improving performance and stability when accessing the file system`](https://developer.apple.com/documentation/foundation/improving-performance-and-stability-when-accessing-the-file-system).
 
-[`UIDocument`](https://developer.apple.com/documentation/UIKit/UIDocument) and [`NSDocument`](https://developer.apple.com/documentation/AppKit/NSDocument) automatically access the file system in a coordinated and asynchronous manner. If your app uses those classes to read and write files (and document packages), it will automatically do the right thing with dataless files. (The system still materializes the intermediate folders, if they themselves are dataless.)
+[`UIDocument`](https://developer.apple.com/documentation/uikit/uidocument) and [`NSDocument`](https://developer.apple.com/documentation/appkit/nsdocument) automatically access the file system in a coordinated and asynchronous manner. If your app uses those classes to read and write files (and document packages), it will automatically do the right thing with dataless files. (The system still materializes the intermediate folders, if they themselves are dataless.)
 
 If your app or framework uses low-level POSIX APIs to access the file system and you’re unable to migrate to the preferred methods, consider the following two options:
 

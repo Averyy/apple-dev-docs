@@ -16,13 +16,13 @@ virtual kern_return_t AsyncIOBundled(uint32_t ioTransferIndex, uint32_t ioTransf
 
 #### Return Value
 
-[`kIOReturnSuccess`](https://developer.apple.com/documentation/DriverKit/kIOReturnSuccess) on success, or another value if an error occurs. See [`Error Codes`](https://developer.apple.com/documentation/DriverKit/error-codes).
+[`kIOReturnSuccess`](https://developer.apple.com/documentation/driverkit/kioreturnsuccess) on success, or another value if an error occurs. See [`Error Codes`](https://developer.apple.com/documentation/driverkit/error-codes).
 
 #### Discussion
 
 This method performs a bulk transfer of multiple data buffers. Use this method on bulk pipes to reduce the messaging overhead when you need to transfer large amounts of data to or from the device. Don’t use this method with interrupt or isochonous pipes.
 
-This method requires you to use a memory descriptor ring to store the data buffers involved in the transfer. Create a ring for the current pipe using [`CreateMemoryDescriptorRing`](IOUSBHostPipe/CreateMemoryDescriptorRing.md) and populate the buffers for each ring element using the [`SetMemoryDescriptor`](IOUSBHostPipe/SetMemoryDescriptor.md) method. When sending data to the device, fill several of the ring’s data buffers with content before calling this method. When receiving data, calling this method asks the system to fill the data buffers of the specified ring elements.
+This method requires you to use a memory descriptor ring to store the data buffers involved in the transfer. Create a ring for the current pipe using [`CreateMemoryDescriptorRing`](iousbhostpipe/creatememorydescriptorring.md) and populate the buffers for each ring element using the [`SetMemoryDescriptor`](iousbhostpipe/setmemorydescriptor.md) method. When sending data to the device, fill several of the ring’s data buffers with content before calling this method. When receiving data, calling this method asks the system to fill the data buffers of the specified ring elements.
 
 When you enqueue a set of buffers, this method automatically handles wraparound conditions in the ring. For example, if the index of the next element to enqueue is beyond the end of the ring, the method automatically wraps around to the beginning of the ring. However, you are still responsible for keeping track of which data buffers your code has read or written.
 
@@ -40,8 +40,8 @@ When all transfers are complete, the system executes the callback you provided i
 
 ## See Also
 
-- [CreateMemoryDescriptorRing](IOUSBHostPipe/CreateMemoryDescriptorRing.md)
-- [SetMemoryDescriptor](IOUSBHostPipe/SetMemoryDescriptor.md)
+- [CreateMemoryDescriptorRing](iousbhostpipe/creatememorydescriptorring.md)
+- [SetMemoryDescriptor](iousbhostpipe/setmemorydescriptor.md)
 - [CompleteAsyncIOBundled](iousbhostpipe/completeasynciobundled.md)
   Handles the completion of an asynchronous bundled transfer.
 - [Bundling Constants](bundling_constants-enum.md)

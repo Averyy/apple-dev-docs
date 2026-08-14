@@ -84,7 +84,7 @@ All resources sub-allocated from the same heap share the same storage mode and C
 
 ### Inherits From
 - [MTLAllocation](mtlallocation.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

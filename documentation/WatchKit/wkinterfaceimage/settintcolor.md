@@ -16,7 +16,7 @@ func setTintColor(_ tintColor: UIColor?)
 
 #### Discussion
 
-When you display a template image, use this method to set the tint color to apply to that image. With a template image, WatchKit uses only the alpha channel of the image to define a shape. To create a template image from an existing image, call the [`withRenderingMode(_:)`](https://developer.apple.com/documentation/UIKit/UIImage/withRenderingMode(_:)) method on an existing [`UIImage`](https://developer.apple.com/documentation/UIKit/UIImage) and specify the [`UIImage.RenderingMode.alwaysTemplate`](https://developer.apple.com/documentation/UIKit/UIImage/RenderingMode-swift.enum/alwaysTemplate) rendering mode.
+When you display a template image, use this method to set the tint color to apply to that image. With a template image, WatchKit uses only the alpha channel of the image to define a shape. To create a template image from an existing image, call the [`withRenderingMode(_:)`](https://developer.apple.com/documentation/uikit/uiimage/withrenderingmode(_:)) method on an existing [`UIImage`](https://developer.apple.com/documentation/uikit/uiimage) and specify the [`UIImage.RenderingMode.alwaysTemplate`](https://developer.apple.com/documentation/uikit/uiimage/renderingmode-swift.enum/alwaystemplate) rendering mode.
 
 An image object applies the tint color only when it contains a single template image. It does not apply the tint color to animated images or images that are not configured as template images.
 

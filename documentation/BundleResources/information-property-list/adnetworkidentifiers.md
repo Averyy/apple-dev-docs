@@ -15,7 +15,7 @@ An array of strings that identifies the ad networks a publisher app shows advert
 
 #### Discussion
 
-Use this key to identify which ad networks the publisher app shows advertisements for. For more information, see [`Configuring a publisher app`](https://developer.apple.com/documentation/AdAttributionKit/configuring-a-publisher-app).
+Use this key to identify which ad networks the publisher app shows advertisements for. For more information, see [`Configuring a publisher app`](https://developer.apple.com/documentation/adattributionkit/configuring-a-publisher-app).
 
 ## See Also
 

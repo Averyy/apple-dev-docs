@@ -23,7 +23,7 @@ var extrinsicMatrix: matrix_float4x3 { get }
 
 The extrinsic matrix consists of a unitless 3 x 3 rotation matrix (`R`) on the left and a 3 x 1 column vector translation (`t`) on the right. The translation vector’s units are millimeters.
 
-![None](https://docs-assets.developer.apple.com/published/92babba2b0619b872714b9dcb8889260/media-2902624%402x.png)
+![None](/images/com.apple.avfoundation/media-2902624@2x.png)
 
 The camera’s pose is expressed with respect to a reference camera (camera-to-world view). If the rotation matrix is an identity matrix, then this camera is the reference camera.
 

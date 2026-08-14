@@ -16,7 +16,7 @@ When Xcode has enough information to determine a goal for a metric, the chart in
 
 When you open Xcode Organizer, the Insights overview provides a unified view of the most actionable performance information for your app. It surfaces performance regressions, top and trending signatures, and the metrics most likely to need your attention, so you spend less time navigating between individual metric and diagnostic report pages.
 
-![A screenshot of the Insights overview in Xcode Organizer, showing a Memory metric regression with a summary chart, metric recommendation, and links to relevant diagnostic pages.](https://docs-assets.developer.apple.com/published/1d229f9efaf07f55eda560520e4b4b23/analyzing-the-performance-of-your-shipping-app-insights-overview%402x.png)
+![A screenshot of the Insights overview in Xcode Organizer, showing a Memory metric regression with a summary chart, metric recommendation, and links to relevant diagnostic pages.](/images/com.apple.Xcode/analyzing-the-performance-of-your-shipping-app-insights-overview@2x.png)
 
 The Insights overview highlights the highest-impact metrics for your app and displays information for each one. When Xcode detects a regression, it displays a regression chart that calls out the affected metric. When Xcode has enough data to compute a goal for a metric, it displays a recommendation chart for that metric regardless of whether a regression exists. A single metric can appear with a regression chart, a recommendation chart, or both. Even if your app has no regressions, the Insights overview will surface actionable recommendations you can act on. From there, you can follow links to the relevant diagnostic reports and metric pages for further investigation.
 
@@ -28,7 +28,7 @@ The first time you open Organizer, it opens to the Insights overview. On subsequ
 
 The Xcode Organizer shows a title, description, and graph for each type of metric. In the graph, each bar represents a version of your app. Use the pop-up menus to filter the metric data for different devices and the median or high value. If your app has an App Clip available, use the pop-up menu to filter by app type and switch between viewing metrics for the main app and the App Clip.
 
-![A screenshot of the Hang Rate metric pane in the Xcode Organizer. From left to right are the list of metrics and reports, the metric UI with a bar graph showing the hang rate for the past 16 app versions, and data for the latest app version.](https://docs-assets.developer.apple.com/published/031175a44e74fef7a78bb04842e56564/analyzing-the-performance-of-your-shipping-app-1%402x.png)
+![A screenshot of the Hang Rate metric pane in the Xcode Organizer. From left to right are the list of metrics and reports, the metric UI with a bar graph showing the hang rate for the past 16 app versions, and data for the latest app version.](/images/com.apple.Xcode/analyzing-the-performance-of-your-shipping-app-1@2x.png)
 
 Metrics that show *limited usage* in the detail section include an associated margin of error because the existing data is limited. Use this margin of error to determine the upper and lower bounds of the displayed value. The margin of error decreases as data increases. The release date information in this section provides the date when the selected app version is ready for sale.
 
@@ -38,7 +38,7 @@ To explore changes between versions for a metric, such as those for Hang Rate in
 
 The data for both the selected and latest versions appear to the right of the graph with the higher of the two values in bold. Change information for those versions appears in the details section below the latest version data.
 
-![A screenshot of the comparison view in the Hang Rate metric pane of the Xcode Organizer. Key pieces are the highlighted selected version bar, data for the latest and selected app versions, and change information between those two versions.](https://docs-assets.developer.apple.com/published/e23db2c9e6cdf19aa4bc46c14885b6fc/analyzing-the-performance-of-your-shipping-app-2%402x.png)
+![A screenshot of the comparison view in the Hang Rate metric pane of the Xcode Organizer. Key pieces are the highlighted selected version bar, data for the latest and selected app versions, and change information between those two versions.](/images/com.apple.Xcode/analyzing-the-performance-of-your-shipping-app-2@2x.png)
 
 ##### Compare Your Apps Metrics with Goal Values
 
@@ -48,7 +48,7 @@ For metrics that support them, similar-app goals serve as realistic and actionab
 
 Historical performance goals use your app’s own past metric values as a baseline, helping you detect regressions and track improvements over time.
 
-![A screenshot of the Launch Time metric pane in Xcode Organizer, showing previous app versions as blue bars and a dotted line indicating the similar-app performance goal.](https://docs-assets.developer.apple.com/published/bb10cdcfa2e8668561d62d4eb84aea8f/analyzing-the-performance-of-your-shipping-app-metric-goals%402x.png)
+![A screenshot of the Launch Time metric pane in Xcode Organizer, showing previous app versions as blue bars and a dotted line indicating the similar-app performance goal.](/images/com.apple.Xcode/analyzing-the-performance-of-your-shipping-app-metric-goals@2x.png)
 
 ##### Improve Your Apps Performance
 
@@ -74,7 +74,7 @@ For more details about how to use the data in the Organizer panes to improve the
   Model, measure, and boost the performance of your app by using a continuous-improvement cycle.
 - [Profiling apps using Instruments](https://developer.apple.com/tutorials/instruments)
   Use Instruments to analyze the performance, resource usage, and behavior of your apps. Learn how to improve responsiveness, reduce memory usage, and analyze complex behavior over time.
-- [Creating a performance plan for your visionOS app](../visionOS/creating-a-performance-plan-for-visionos-app.md)
+- [Creating a performance plan for your visionOS app](../visionos/creating-a-performance-plan-for-visionos-app.md)
   Identify your app’s performance and power goals and create a plan to measure and assess them.
 
 

@@ -30,13 +30,13 @@ struct PrivateKey
 ## Relationships
 
 ### Conforms To
-- [Copyable](../Swift/Copyable.md)
-- [Escapable](../Swift/Escapable.md)
+- [Copyable](../swift/copyable.md)
+- [Escapable](../swift/escapable.md)
 - [HPKEKEMPrivateKey](hpkekemprivatekey.md)
 - [HPKEKEMPrivateKeyGeneration](hpkekemprivatekeygeneration.md)
 - [KEMPrivateKey](kemprivatekey.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

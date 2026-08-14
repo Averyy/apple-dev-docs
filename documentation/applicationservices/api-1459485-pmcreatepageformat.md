@@ -24,7 +24,7 @@ This function allocates memory for a new page format object in your applicationâ
 
 ## Parameters
 
-- `pageFormat`: A pointer to your   variable. On return, the variable refers to a new page format object. You are responsible for releasing the page format object with the function  .
+- `pageFormat`: A pointer to your [`PMPageFormat`](pmpageformat.md) variable. On return, the variable refers to a new page format object. You are responsible for releasing the page format object with the function [`PMRelease(_:)`](1461402-pmrelease.md).
 
 ## See Also
 

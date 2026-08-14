@@ -25,7 +25,7 @@ The minimum time interval between the sample’s [`startDate`](hksample/startdat
 
 #### Discussion
 
-This method throws an exception if [`isMinimumDurationRestricted`](hksampletype/isminimumdurationrestricted.md) is [`false`](https://developer.apple.com/documentation/Swift/false).
+This method throws an exception if [`isMinimumDurationRestricted`](hksampletype/isminimumdurationrestricted.md) is [`false`](https://developer.apple.com/documentation/swift/false).
 
 ## See Also
 

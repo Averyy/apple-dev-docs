@@ -47,7 +47,7 @@ struct Saturation: View {
 }
 ```
 
-![Rendering showing the effects of grayscale adjustments in](https://docs-assets.developer.apple.com/published/03275cfc07acd18d5ee760273126ab15/SwiftUI-View-grayscale%402x.png)
+![Rendering showing the effects of grayscale adjustments in](/images/com.apple.SwiftUI/SwiftUI-View-grayscale@2x.png)
 
 ## Parameters
 

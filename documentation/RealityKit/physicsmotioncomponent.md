@@ -50,7 +50,7 @@ The behavior of an entity with a physics motion component depends on the entityâ
 
 ### Conforms To
 - [Component](component.md)
-- [Equatable](../Swift/Equatable.md)
+- [Equatable](../swift/equatable.md)
 
 ## See Also
 

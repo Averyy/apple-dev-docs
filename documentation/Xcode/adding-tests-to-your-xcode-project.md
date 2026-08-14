@@ -10,8 +10,8 @@ When creating a new project in Xcode 16 and later, choose a Testing System from 
 
 Xcode includes two testing frameworks:
 
-- **[`Swift Testing`](https://developer.apple.com/documentation/Testing)**: A newer, modern testing framework that takes advantage of the powerful and expressive language capabilities of the Swift programming language. Writing tests requires less code to maintain and provides more actionable feedback. Use it for your unit tests and integration tests that call your code directly.
-- **[`XCTest`](https://developer.apple.com/documentation/XCTest)**: A widely used and well established testing framework with support to write unit tests, integration tests, UI test and performance tests.
+- **[`Swift Testing`](https://developer.apple.com/documentation/testing)**: A newer, modern testing framework that takes advantage of the powerful and expressive language capabilities of the Swift programming language. Writing tests requires less code to maintain and provides more actionable feedback. Use it for your unit tests and integration tests that call your code directly.
+- **[`XCTest`](https://developer.apple.com/documentation/xctest)**: A widely used and well established testing framework with support to write unit tests, integration tests, UI test and performance tests.
 
 The options for testing system are Swift Test with XCTest UI Tests and XCTests for Unit and UI Tests. After making a selection, Xcode adds two types of test targets to your project, one for your unit tests with a name ending in “Tests” and one for your UI tests with a name ending in “UITests”. You’ll find the matching name for each of these targets in the Project navigator, along with a template file you can use to start writing your first tests. Your testing system choice impacts the primary framework Xcode includes in the file template for unit tests. Previous versions of Xcode included these targets when you enabled the Include Tests option when creating a new project and included file templates that use XCTest.
 
@@ -34,11 +34,11 @@ To write a test, select a test file from your test target, and choose a type or 
 
 1. **Arrange** — Create any objects or data structures that the code path you’re exercising uses. Replace complex dependencies with “stubs” that are easy to configure to ensure that tests run quickly and are deterministic. Adopting dependency injection and protocol-oriented programming ensures that relationships between objects in your app are sufficiently flexible to enable substitution of real implementations for stubs.
 2. **Act** — Call the method or function that you’re testing, using parameters and properties that you configure in the Arrange phase.
-3. **Assert** — Use [`Expectations and confirmations`](https://developer.apple.com/documentation/Testing/Expectations) in Swift Testing or Test Assertions in [`XCTest`](https://developer.apple.com/documentation/XCTest) to compare the behavior of the code you exercise in the Act phase with your expectations of what should happen. Any expectation whose condition is false causes a test to fail.
+3. **Assert** — Use [`Expectations and confirmations`](https://developer.apple.com/documentation/testing/expectations) in Swift Testing or Test Assertions in [`XCTest`](https://developer.apple.com/documentation/xctest) to compare the behavior of the code you exercise in the Act phase with your expectations of what should happen. Any expectation whose condition is false causes a test to fail.
 
 In Swift Testing, Test functions are just ordinary Swift functions that you add the the `Test` attribute to. They can be global functions or methods in a type. You can optionally identify suites, types that contain test functions, by marking them with the `Suite` attribute. You can mark them async or throws, or isolate them to a global actor.
 
-For tests you create with XCTest, create a subclass of [`XCTestCase`](https://developer.apple.com/documentation/XCTest/XCTestCase) to contain test methods. Add a method to your `XCTestCase` subclass that takes no arguments and returns `Void`, giving the method a name that begins with the word “`test`”.
+For tests you create with XCTest, create a subclass of [`XCTestCase`](https://developer.apple.com/documentation/xctest/xctestcase) to contain test methods. Add a method to your `XCTestCase` subclass that takes no arguments and returns `Void`, giving the method a name that begins with the word “`test`”.
 
 **Swift Testing**:
 
@@ -64,9 +64,9 @@ class MyAPITests : XCTestCase {
 }
 ```
 
-Cover multiple paths and test for each scenario. For example, if a function receives an optional parameter, test the parameter as `nil` and test a non-`nil` value. Identify the boundary cases and logical branches in your code, and write a unit test to cover each combination of these cases. To test multiple paths through a function or method in your project using Swift Testing, implement parameterized test functions. For more information, see [`Implementing parameterized tests`](https://developer.apple.com/documentation/Testing/ParameterizedTesting). In XCTest, each unit test should assert the expected behavior of a single path through a method or function in your project. To cover multiple paths, write one test for each scenario.
+Cover multiple paths and test for each scenario. For example, if a function receives an optional parameter, test the parameter as `nil` and test a non-`nil` value. Identify the boundary cases and logical branches in your code, and write a unit test to cover each combination of these cases. To test multiple paths through a function or method in your project using Swift Testing, implement parameterized test functions. For more information, see [`Implementing parameterized tests`](https://developer.apple.com/documentation/testing/parameterizedtesting). In XCTest, each unit test should assert the expected behavior of a single path through a method or function in your project. To cover multiple paths, write one test for each scenario.
 
-For more information on defining tests using Swift Testing, see [`Defining test functions`](https://developer.apple.com/documentation/Testing/DefiningTests). For more information on defining tests using XCTest, see [`Defining Test Cases and Test Methods`](https://developer.apple.com/documentation/XCTest/defining-test-cases-and-test-methods).
+For more information on defining tests using Swift Testing, see [`Defining test functions`](https://developer.apple.com/documentation/testing/definingtests). For more information on defining tests using XCTest, see [`Defining Test Cases and Test Methods`](https://developer.apple.com/documentation/xctest/defining-test-cases-and-test-methods).
 
 > **Note**: The Swift access control model prevents an external entity from accessing anything declared as internal. To access items declared as internal from your test code, compile the module your test code needs to access with [`Enable Testability`](build-settings-reference#Enable-Testability.md) and add the `@testable` attribute to the import statement for the module. For more information, see [`Access Control`](https://developer.apple.comhttps://docs.swift.org/swift-book/documentation/the-swift-programming-language/accesscontrol/#Access-Levels-for-Unit-Test-Targets).
 
@@ -78,13 +78,13 @@ Rather than trying to cover every different condition or boundary case as with u
 
 ##### Write a Ui Test
 
-UI tests work in a different way from unit and integration tests. The XCTest UI Test template for new files contains the common starting points for UI tests. You implement the UI tests for your app using XCTest in a subclass of [`XCTestCase`](https://developer.apple.com/documentation/XCTest/XCTestCase). Rather than executing your app’s code directly, they use the app’s user-interface controls to determine whether the user can complete a specific task using the app.
+UI tests work in a different way from unit and integration tests. The XCTest UI Test template for new files contains the common starting points for UI tests. You implement the UI tests for your app using XCTest in a subclass of [`XCTestCase`](https://developer.apple.com/documentation/xctest/xctestcase). Rather than executing your app’s code directly, they use the app’s user-interface controls to determine whether the user can complete a specific task using the app.
 
 Create UI tests to verify that the app can accomplish a tasks in response to user interactions, and that bugs haven’t been introduced that break the behavior of UI controls. UI tests that replicate real user activities provide confidence that the app can be used for its intended task. A UI test for a document-based app might verify that the user can create a new document, edit its content, then delete the document.
 
 To create a UI test in a method on an `XCTestCase` subclass, record your interaction with the app using the Record UI Test feature in Xcode. Design UI tests to replicate the most critical workflows that would affect users if they broke, and to replay reported bugs to avoid regressions.
 
-![Image showing the Record UI Tests button in Xcode.](https://docs-assets.developer.apple.com/published/af3223bfb6cc09fe1d5ff0a0d0ca9912/adding-tests-to-your-xcode-project-ui-record%402x.png)
+![Image showing the Record UI Tests button in Xcode.](/images/com.apple.Xcode/adding-tests-to-your-xcode-project-ui-record@2x.png)
 
 When recording a workflow that exercises the functionality you’re testing, use the test assertion functions to ensure that the final state of the UI is what you’d expect, given the actions performed during the recorded interaction.
 
@@ -117,13 +117,13 @@ class MyUITests: XCTestCase {
 }
 ```
 
-Where UI tests imitate complex workflows with multiple distinct steps, use [`XCTActivity`](https://developer.apple.com/documentation/XCTest/XCTActivity) to organize and name the shared steps. Create helper methods to share implementations of activities that you use in multiple tests.
+Where UI tests imitate complex workflows with multiple distinct steps, use [`XCTActivity`](https://developer.apple.com/documentation/xctest/xctactivity) to organize and name the shared steps. Create helper methods to share implementations of activities that you use in multiple tests.
 
 ##### Write a Performance Test
 
 Write performance tests to gather information on time taken, memory used, or data written, during the execution of a region of code. XCTest runs your code multiple times, measuring the requested metrics. You can set a baseline expectation for the metric, and if the measured value is significantly worse than the baseline, XCTest reports a test failure.
 
-To test time taken by your code, call [`measure(_:)`](https://developer.apple.com/documentation/XCTest/XCTestCase/measure(_:)) inside your test method, and run your app’s code inside the block argument to `measure(_:)`. To measure performance using other metrics, including memory use and amount of data written to disk, call [`measure(metrics:block:)`](https://developer.apple.com/documentation/XCTest/XCTestCase/measure(metrics:block:)).
+To test time taken by your code, call [`measure(_:)`](https://developer.apple.com/documentation/xctest/xctestcase/measure(_:)) inside your test method, and run your app’s code inside the block argument to `measure(_:)`. To measure performance using other metrics, including memory use and amount of data written to disk, call [`measure(metrics:block:)`](https://developer.apple.com/documentation/xctest/xctestcase/measure(metrics:block:)).
 
 ```swift
 class PerformanceTests : XCTestCase {

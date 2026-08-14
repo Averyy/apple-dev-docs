@@ -28,9 +28,9 @@ The data is an 32-bit floating-point values, containing three noninterleaved dat
 
 ## See Also
 
-- [class ARDirectionalLightEstimate](../ARKit/ARDirectionalLightEstimate.md)
+- [class ARDirectionalLightEstimate](../arkit/ardirectionallightestimate.md)
   Estimated environmental lighting information associated with a captured video frame in a face-tracking AR session.
-- [class MDLLightProbe](../ModelIO/MDLLightProbe.md)
+- [class MDLLightProbe](../modelio/mdllightprobe.md)
   A light source described in terms of the variations in color and intensity of its illumination in all directions.
 - [var type: SCNLight.LightType](scnlight/type.md)
   A constant identifying the general behavior of the light.

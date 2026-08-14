@@ -26,7 +26,7 @@ An object containing the value of the shader symbol.
 
 #### Discussion
 
-This method returns an object appropriate to the type of the shader symbol being set. For example, retrieving the value of a `float` uniform variable returns an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) object, and retrieving the value of a GLSL `vec3` uniform variable or Metal `float3` variable returns an [`NSValue`](https://developer.apple.com/documentation/Foundation/NSValue) object containing an [`SCNVector3`](scnvector3.md) structure.
+This method returns an object appropriate to the type of the shader symbol being set. For example, retrieving the value of a `float` uniform variable returns an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) object, and retrieving the value of a GLSL `vec3` uniform variable or Metal `float3` variable returns an [`NSValue`](https://developer.apple.com/documentation/foundation/nsvalue) object containing an [`SCNVector3`](scnvector3.md) structure.
 
 ## Parameters
 

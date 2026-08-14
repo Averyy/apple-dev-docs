@@ -16,7 +16,7 @@ The pages of a playground book can include features that you use to teach a less
 
 The following screenshot of a page from Learn to Code 1 shows a lesson on the left and an interactive live view on the right.
 
-![Screenshot showing the “Issuing Commands” playground page from Learn to Code 1.](https://docs-assets.developer.apple.com/published/21bf8c1b3feadfaf2478859ad5657537/swift-playgrounds-1%402x.png)
+![Screenshot showing the “Issuing Commands” playground page from Learn to Code 1.](/images/com.apple.Swift-Playgrounds/swift-playgrounds-1@2x.png)
 
 You can further enrich a playground book and tailor it to your audience by adding cutscenes, glossaries, hints, and assessments. When you’re done writing a playground book, you can distribute it locally in a classroom or workshop environment, or publish it online as a subscription.
 

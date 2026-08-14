@@ -14,7 +14,7 @@ Apps that can use app group containers include: main executables packaged in bun
 
 #### Add App Group Membership to Your App
 
-Ensure that your app target lists all the app groups to which it belongs in the [`App Groups Entitlement`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.security.application-groups). You can use Xcode to entitle your app for app groups. For more details, see [`Configuring app groups`](configuring-app-groups.md).
+Ensure that your app target lists all the app groups to which it belongs in the [`App Groups Entitlement`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.security.application-groups). You can use Xcode to entitle your app for app groups. For more details, see [`Configuring app groups`](configuring-app-groups.md).
 
 An app can belong to more than one app group, with these guidelines:
 
@@ -42,14 +42,14 @@ code signing info = valid
 
 Xcode automatically obtains new provisioning profiles if you check “Automatically manage signing” in the Signing & Capabilities editor for your app target, and set the `REGISTER_APP_GROUPS` build setting to `Yes`. To apply a provisioning profile to a daemon, or another executable file that you don’t distribute in a bundle, see [`Signing a daemon with a restricted entitlement`](signing-a-daemon-with-a-restricted-entitlement.md).
 
-If you encounter any issues provisioning the app group entitlement properly, see  [`Diagnosing Issues with Entitlements`](https://developer.apple.com/documentation/BundleResources/diagnosing-issues-with-entitlements) for help diagnosing these issues.
+If you encounter any issues provisioning the app group entitlement properly, see  [`Diagnosing Issues with Entitlements`](https://developer.apple.com/documentation/bundleresources/diagnosing-issues-with-entitlements) for help diagnosing these issues.
 
 ##### Use App Groups That You Dont Provision
 
 To use app groups that have the `<Developer team identifier>.<group name>` identifiers on macOS, you don’t need a provisioning profile. The system checks that the team identifier prefix matches the developer team identifier you use to sign the app. You also don’t need to register these app group identifiers on the Developer website. But, there are limitations to using these identifiers:
 
 - `<Developer team identifier>.<group name>` is not supported on iOS, iPadOS, tvOS, visionOS, or watchOS.
-- Keychain Access Groups doesn’t support the `<Developer team identifier>.<group name>` prefixed identifier. For more information, see [`Sharing access to keychain items among a collection of apps`](https://developer.apple.com/documentation/Security/sharing-access-to-keychain-items-among-a-collection-of-apps)
+- Keychain Access Groups doesn’t support the `<Developer team identifier>.<group name>` prefixed identifier. For more information, see [`Sharing access to keychain items among a collection of apps`](https://developer.apple.com/documentation/security/sharing-access-to-keychain-items-among-a-collection-of-apps)
 
 #### Access an App Group Container
 

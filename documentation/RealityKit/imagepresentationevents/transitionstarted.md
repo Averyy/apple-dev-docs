@@ -32,8 +32,8 @@ Use the `TransitionStarted` event as an opportunity to hide overlaid UI during a
 
 ### Conforms To
 - [Event](event.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

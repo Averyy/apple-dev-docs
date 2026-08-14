@@ -39,7 +39,7 @@ HStack {
 }
 ```
 
-![Three text views arranged horizontally, each containing](https://docs-assets.developer.apple.com/published/31654f673e42a4a453b46dbad7d32b61/SwiftUI-Text-foregroundColor%402x.png)
+![Three text views arranged horizontally, each containing](/images/com.apple.SwiftUI/SwiftUI-Text-foregroundColor@2x.png)
 
 ## Parameters
 

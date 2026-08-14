@@ -129,7 +129,7 @@ In addition to the preceding formatting options, the unified logging system supp
 | `iec-bytes` | `%{iec-bytes}d` | `2.64 MiB` |
 | `bitrate` | `%{bitrate}d` | `123 kbps` |
 | `iec-bitrate` | `%{iec-bitrate}d` | `118 Kibps` |
-| `uuid_t` | `%{uuid_t}.*16P` ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) `%{uuid_t}.*P` | `10742E39-0657-41F8-AB99-878C5EC2DCAA` |
+| `uuid_t` | `%{uuid_t}.*16P` ![None](/images/com.apple.os/spacer.png) `%{uuid_t}.*P` | `10742E39-0657-41F8-AB99-878C5EC2DCAA` |
 
 The following example shows how to format custom bit rates and a UUID structure.
 

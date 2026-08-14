@@ -33,7 +33,7 @@ The [`maxTotalThreadsPerThreadgroup`](mtlcomputepipelinestate/maxtotalthreadsper
 
 Metal may return an error if this value exceeds the available resources for the device, or Metal may lower the thread limit when creating the compute pipeline state, which can reduce runtime performance.
 
-> 💡 **Tip**: Verify whether setting this property improves runtime performance by profiling your app. For more information on performance profiling, see [`Analyzing the performance of your Metal app`](https://developer.apple.com/documentation/Xcode/Analyzing-the-performance-of-your-Metal-app).
+> 💡 **Tip**: Verify whether setting this property improves runtime performance by profiling your app. For more information on performance profiling, see [`Analyzing the performance of your Metal app`](https://developer.apple.com/documentation/xcode/analyzing-the-performance-of-your-metal-app).
 
 ## See Also
 

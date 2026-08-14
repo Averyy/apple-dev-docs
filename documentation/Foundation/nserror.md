@@ -26,7 +26,7 @@ Objective-C methods can signal an error condition by returning an [`NSError`](ns
 
 Methods in Foundation and other Cocoa frameworks most often produce errors in the Cocoa error domain ([`NSCocoaErrorDomain`](nscocoaerrordomain.md)); error codes for the Cocoa Error Domain are documented in the [`Foundation Constants`](foundation-constants.md). There are also predefined domains corresponding to Mach ([`NSMachErrorDomain`](nsmacherrordomain.md)), POSIX ([`NSPOSIXErrorDomain`](nsposixerrordomain.md)), and Carbon ([`NSOSStatusErrorDomain`](nsosstatuserrordomain.md)) errors.
 
-[`NSError`](nserror.md) is “toll-free bridged” with its Core Foundation counterpart, [`CFError`](https://developer.apple.com/documentation/CoreFoundation/CFError). See [`Toll-Free Bridging`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Conceptual/CocoaEncyclopedia/Toll-FreeBridgin/Toll-FreeBridgin.html#//apple_ref/doc/uid/TP40010810-CH2) for more information.
+[`NSError`](nserror.md) is “toll-free bridged” with its Core Foundation counterpart, [`CFError`](https://developer.apple.com/documentation/corefoundation/cferror). See [`Toll-Free Bridging`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Conceptual/CocoaEncyclopedia/Toll-FreeBridgin/Toll-FreeBridgin.html#//apple_ref/doc/uid/TP40010810-CH2) for more information.
 
 ##### Subclassing Notes
 
@@ -113,26 +113,26 @@ Applications may choose to create subclasses of `NSError`, for example, to provi
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [Copyable](../Swift/Copyable.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Error](../Swift/Error.md)
-- [Escapable](../Swift/Escapable.md)
-- [Hashable](../Swift/Hashable.md)
+- [CVarArg](../swift/cvararg.md)
+- [Copyable](../swift/copyable.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Error](../swift/error.md)
+- [Escapable](../swift/escapable.md)
+- [Hashable](../swift/hashable.md)
 - [NSCoding](nscoding.md)
 - [NSCopying](nscopying.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 - [NSSecureCoding](nssecurecoding.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 
-- [protocol Error](../Swift/Error.md)
+- [protocol Error](../swift/error.md)
   A type representing an error value that can be thrown.
 - [protocol LocalizedError](localizederror.md)
   A specialized error that provides localized messages describing the error and why it occurred.

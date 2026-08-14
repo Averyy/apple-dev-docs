@@ -19,7 +19,7 @@ static let quarantinePropertiesKey: URLResourceKey
 - [let kLSQuarantineAgentBundleIdentifierKey: CFString](../coreservices/klsquarantineagentbundleidentifierkey.md)
   The bundle identifier of the quarantining agent.
 - [let kLSQuarantineTimeStampKey: CFString](../coreservices/klsquarantinetimestampkey.md)
-  The date and time of the item’s quarantine.
+  The date and time of the item's quarantine.
 - [let kLSQuarantineTypeKey: CFString](../coreservices/klsquarantinetypekey.md)
   A symbolic string identifying the reason for the quarantine.
 - [let kLSQuarantineOriginURLKey: CFString](../coreservices/klsquarantineoriginurlkey.md)

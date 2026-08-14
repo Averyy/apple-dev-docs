@@ -14,7 +14,7 @@ Because there was no explicit way to represent the extent of the priming or rema
 
 > **Note**: The lack of explicit representation for encoder delay and remainder samples is not a problem unique to AAC encoding. With MPEG-4 and ADTS/MPEG-2 bitstreams and file containers, there is still no satisfactory, explicit representation for either the encoder delay or remainder samples. MP3 also has these data dependencies and delays in its bitstream, as do proprietary codecs such as AC-3 and others. In all of these cases the conventional solution is as described above: an implicit assumption is made about the size of the encoder delay and the playback engine is required to trim this designated number of samples from its output at the start of playback. Adjustments must also be made for the remainder samples as required.
 
-In summary, the historical technique to handle the timing and synchronization problem is to assume an implicit 2112 sample standard encoder delay in AAC data streams and indicate start time—the first media sample or AAC packet—in the sound track edit list (see [`Edit list atom ('elst')`](edit_list_atom.md)) at the start of encoder delay.
+In summary, the historical technique to handle the timing and synchronization problem is to assume an implicit 2112 sample standard encoder delay in AAC data streams and indicate start time—the first media sample or AAC packet—in the sound track edit list (see [`Edit list atom`](edit_list_atom.md)) at the start of encoder delay.
 
 ## See Also
 

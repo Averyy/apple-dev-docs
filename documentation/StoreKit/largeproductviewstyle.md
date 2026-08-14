@@ -31,8 +31,8 @@ A style for a product view that’s suitable for layouts where the in-app purcha
 
 ### Conforms To
 - [ProductViewStyle](productviewstyle.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

@@ -20,7 +20,7 @@ var certificateChain: [Any] { get }
 
 #### Discussion
 
-Each item in the array is a [`SecCertificate`](https://developer.apple.com/documentation/Security/SecCertificate) object.
+Each item in the array is a [`SecCertificate`](https://developer.apple.com/documentation/security/seccertificate) object.
 
 ## See Also
 

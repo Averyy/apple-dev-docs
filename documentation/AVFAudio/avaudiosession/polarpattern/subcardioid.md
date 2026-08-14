@@ -24,7 +24,7 @@ static let subcardioid: AVAudioSession.PolarPattern
 
 The subcardioid pattern picks up a sound from a wide radius in the front and in the back.
 
-![The subcardioid pattern picks up more sound from the direction of the data source than from the rear. ](https://docs-assets.developer.apple.com/published/0acc584378e763be5f567d2e4921f04c/media-3039130%402x.png)
+![The subcardioid pattern picks up more sound from the direction of the data source than from the rear. ](/images/com.apple.avfaudio/media-3039130@2x.png)
 
 ## See Also
 

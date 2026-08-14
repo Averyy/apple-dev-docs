@@ -25,7 +25,7 @@ Use this method to selectively remove notifications that you no longer want disp
 
 ## Parameters
 
-- `identifiers`: An array of [`NSString`](https://developer.apple.com/documentation/Foundation/NSString) objects, each of which corresponds to a value in the [`identifier`](unnotificationrequest/identifier.md) property of a [`UNNotificationRequest`](unnotificationrequest.md) object. This method ignores the identifiers of requests whose notifications are not currently displayed in Notification Center.
+- `identifiers`: An array of [`NSString`](https://developer.apple.com/documentation/foundation/nsstring) objects, each of which corresponds to a value in the [`identifier`](unnotificationrequest/identifier.md) property of a [`UNNotificationRequest`](unnotificationrequest.md) object. This method ignores the identifiers of requests whose notifications are not currently displayed in Notification Center.
 
 ## See Also
 

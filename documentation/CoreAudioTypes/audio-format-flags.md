@@ -6,7 +6,7 @@ Commonly used combinations of data format flags for an audio stream description.
 
 #### Overview
 
-Prefer using fixed-point formats in [`iOS`](https://developer.apple.com/documentation/PackageDescription/Platform/iOS) and floating-point formats in [`macOS`](https://developer.apple.com/documentation/PackageDescription/Platform/macOS).
+Prefer using fixed-point formats in [`iOS`](https://developer.apple.com/documentation/packagedescription/platform/ios) and floating-point formats in [`macOS`](https://developer.apple.com/documentation/packagedescription/platform/macos).
 
 ## Topics
 

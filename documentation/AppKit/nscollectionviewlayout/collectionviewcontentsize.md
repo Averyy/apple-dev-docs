@@ -20,7 +20,7 @@ This property contains the width and height of all of the collection view’s co
 
 When creating custom layouts, you must reimplement this property and provide the size of the collection view’s contents. It is recommended that you cache the content size and adjust the value when the layout changes or when items are added and removed.
 
-The default value in this property is [`NSZeroSize`](https://developer.apple.com/documentation/Foundation/NSZeroSize).
+The default value in this property is [`NSZeroSize`](https://developer.apple.com/documentation/foundation/nszerosize).
 
 ## See Also
 

@@ -6,9 +6,9 @@ Enable services that Apple provides, such as In-App Purchase, Push Notifications
 
 #### Overview
 
-Capabilities simplify the configuration process for many of Apple’s services, some of which require you to configure specific [`Entitlements`](https://developer.apple.com/documentation/BundleResources/Entitlements) or change your app’s provisioning profile. When you add a capability to an app or other target in your project, Xcode automatically configures that target to use the corresponding service. For example, Xcode might add a required entitlement to a new entitlements file and configure the project to use those entitlements. When Xcode needs you to provide additional information, it presents a simplified UI for you to specify that information.
+Capabilities simplify the configuration process for many of Apple’s services, some of which require you to configure specific [`Entitlements`](https://developer.apple.com/documentation/bundleresources/entitlements) or change your app’s provisioning profile. When you add a capability to an app or other target in your project, Xcode automatically configures that target to use the corresponding service. For example, Xcode might add a required entitlement to a new entitlements file and configure the project to use those entitlements. When Xcode needs you to provide additional information, it presents a simplified UI for you to specify that information.
 
-![A screenshot of Xcode’s Capabilities library. On the left is a list of available capabilities where you can double-click or drag a capability to add it to the selected target. On the right is a description of the selected capability. There’s a text box at the top that allows you to filter the list of capabilities.](https://docs-assets.developer.apple.com/published/2615efe10594368ecb5a0ed009c3a509/capabilities%402x.png)
+![A screenshot of Xcode’s Capabilities library. On the left is a list of available capabilities where you can double-click or drag a capability to add it to the selected target. On the right is a description of the selected capability. There’s a text box at the top that allows you to filter the list of capabilities.](/images/com.apple.Xcode/capabilities@2x.png)
 
 > **Note**: You add most capabilities directly from Xcode, but some app services — such as Game Center and In-App Purchase — require additional setup in App Store Connect and your developer account. For more information, see the documentation below for the specific capability.
 
@@ -47,7 +47,7 @@ Xcode automatically manages your target’s entitlements file based on the capab
 ### Network
 - [Configuring network extensions](configuring-network-extensions.md)
   Customize the various capabilities of your app’s networking stack, such as proxying DNS queries or creating packet tunnels.
-- [Registering your app with APNs](../UserNotifications/registering-your-app-with-apns.md)
+- [Registering your app with APNs](../usernotifications/registering-your-app-with-apns.md)
   Communicate with Apple Push Notification service (APNs) and receive a unique device token that identifies your app.
 - [Configuring Group Activities](configuring-group-activities.md)
   Leverage FaceTime infrastructure to create coordinated experiences users can share.

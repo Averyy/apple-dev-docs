@@ -41,8 +41,8 @@ Implement the methods of the [`PKCanvasViewDelegate`](pkcanvasviewdelegate.md) p
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [UIScrollViewDelegate](../UIKit/UIScrollViewDelegate.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [UIScrollViewDelegate](../uikit/uiscrollviewdelegate.md)
 
 ## See Also
 

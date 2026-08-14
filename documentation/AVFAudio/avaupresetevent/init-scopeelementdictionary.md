@@ -21,7 +21,7 @@ init(scope: UInt32, element: UInt32, dictionary presetDictionary: [AnyHashable :
 
 #### Discussion
 
-The system copies the dictionary you specify and isn’t editable once it creates the event. The `scope` parameter must be [`kAudioUnitScope_Global`](https://developer.apple.com/documentation/AudioToolbox/kAudioUnitScope_Global), and the element index should be `0`.
+The system copies the dictionary you specify and isn’t editable once it creates the event. The `scope` parameter must be [`kAudioUnitScope_Global`](https://developer.apple.com/documentation/audiotoolbox/kaudiounitscope_global), and the element index should be `0`.
 
 ## Parameters
 

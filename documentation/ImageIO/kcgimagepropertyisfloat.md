@@ -22,7 +22,7 @@ let kCGImagePropertyIsFloat: CFString
 
 #### Discussion
 
-The value of this property is [`kCFBooleanTrue`](https://developer.apple.com/documentation/CoreFoundation/kCFBooleanTrue) if the image contains floating-point pixel samples.
+The value of this property is [`kCFBooleanTrue`](https://developer.apple.com/documentation/corefoundation/kcfbooleantrue) if the image contains floating-point pixel samples.
 
 ## See Also
 

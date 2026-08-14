@@ -29,9 +29,9 @@ An Intent timeline provider performs the same function as [`TimelineProvider`](t
 
 For example, in a widget that displays the health status of a game character the user has chosen, the provider receives a custom intent specifying the character to display. In your Xcode project, you then define a custom SiriKit Intent Definition file. The intent definition can include the character’s details such as its name, avatar, strategic alliances, and so on.
 
-![A screenshot showing a custom intent definition file configured with an](https://docs-assets.developer.apple.com/published/cc1a99720381abca170a6ba17b6b24e6/IntentTimelineProvider-IntentDefinition%402x.png)
+![A screenshot showing a custom intent definition file configured with an](/images/com.apple.WidgetKit/IntentTimelineProvider-IntentDefinition@2x.png)
 
-Xcode generates the following [`INIntent`](https://developer.apple.com/documentation/Intents/INIntent) custom intent:
+Xcode generates the following [`INIntent`](https://developer.apple.com/documentation/intents/inintent) custom intent:
 
 ```swift
 public class SelectCharacterIntent: INIntent {
@@ -94,7 +94,7 @@ struct CharacterDetailProvider: IntentTimelineProvider {
 
 ## See Also
 
-- [class INIntent](../Intents/INIntent.md)
+- [class INIntent](../intents/inintent.md)
   A request to fulfill in your app or Intents extension.
 - [Keeping a widget up to date](keeping-a-widget-up-to-date.md)
   Plan your widget’s timeline to show timely, relevant information using dynamic views, and update the timeline when things change.

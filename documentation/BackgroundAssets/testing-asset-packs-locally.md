@@ -34,7 +34,7 @@ You create a root CA on your Mac using Keychain Access. To quickly open Keychain
 7. If necessary, authenticate with Touch ID, your Apple Watch, or your password.
 8. Review the information in the Conclusion sheet, and then close the Certificate Assistant window.
 
-![A screenshot of Keychain Access that shows the Certificate Assistant window with the Conclusion sheet that you see after creating a root certificate authority.](https://docs-assets.developer.apple.com/published/d0f73413da2ab7855fcd4a33ab443121/testing-asset-packs-create-root-ca%402x.png)
+![A screenshot of Keychain Access that shows the Certificate Assistant window with the Conclusion sheet that you see after creating a root certificate authority.](/images/com.apple.backgroundassets/testing-asset-packs-create-root-ca@2x.png)
 
 In Keychain Access, select the “login” keychain in the sidebar and click the Certificates tab (not the My Certificates tab). Control-click on your new CA and select Export *Certificate Name*. In the dialog that appears, choose Certificate (`.cer`) as the file format, select a location to save the exported certificate, and click Save.
 
@@ -64,15 +64,15 @@ In Keychain Access on your Mac, choose Keychain Access > Certificate Assistant >
 1. In the first sheet, enter this information and click Continue: - Set the name to the IP address, hostname, or domain name where you’re hosting the mock server.
 - Set the identity type to Leaf.
 - Set the certificate type to SSL Server.
-- Enable “Let me override defaults.” ![A screenshot of Keychain Access showing the Certificate Assistant window with the Create Your Certificate sheet where you enter a name, choose an identity type, and configure other options before you click Continue.](https://docs-assets.developer.apple.com/published/5bcdb8e34120fb773ec4d981f51c9559/testing-asset-packs-create-your-certificate%402x.png) > ❗ **Important**: Unlike with a root CA, your SSL certificate’s name must be a valid IP address, hostname, or domain name.
+- Enable “Let me override defaults.” ![A screenshot of Keychain Access showing the Certificate Assistant window with the Create Your Certificate sheet where you enter a name, choose an identity type, and configure other options before you click Continue.](/images/com.apple.backgroundassets/testing-asset-packs-create-your-certificate@2x.png) > ❗ **Important**: Unlike with a root CA, your SSL certificate’s name must be a valid IP address, hostname, or domain name.
 2. In the Certificate Information sheet, leave the default options and click Continue.
-3. In the next Certificate Information sheet, set the name (common name) to the same IP address, hostname, or domain name that you provided earlier. Optionally, provide information about your organization, and then click Continue. ![A screenshot of Keychain Access that shows the Certificate Information sheet that appears when you create a certificate. The sheet shows optional personal information you can enter about the certificate, such as your email and organization name and address.](https://docs-assets.developer.apple.com/published/c70296690f7f5543cfcd56225c158038/testing-asset-packs-certificate-information%402x.png)
+3. In the next Certificate Information sheet, set the name (common name) to the same IP address, hostname, or domain name that you provided earlier. Optionally, provide information about your organization, and then click Continue. ![A screenshot of Keychain Access that shows the Certificate Information sheet that appears when you create a certificate. The sheet shows optional personal information you can enter about the certificate, such as your email and organization name and address.](/images/com.apple.backgroundassets/testing-asset-packs-certificate-information@2x.png)
 4. In the Choose An Issuer sheet, select your root CA as the issuer and click Continue.
 5. In these next sheets, just click Continue: - Key Pair Information
 - Key Usage Extension
 - Extended Key Usage Extension
 - Basic Constraints Extension
-6. In the Subject Alternate Name Extension sheet, either set dNSName to the hostname or domain name that you provided earlier or set iPAddress to the IP address that you provided earlier. Leave all other text fields blank and click Continue. ![A screenshot of Keychain Access that shows the Subject Alternate Name Extension sheet that appears when you create a certificate. The sheet shows the dNSName and iPAddress text fields, and the Continue button.](https://docs-assets.developer.apple.com/published/a87ff7810a9bac19d37ba9274169609a/testing-asset-packs-subject-alternate-name%402x.png) > ❗ **Important**: Provide exactly one IP address, hostname, or domain name in the appropriate text field and leave the other three text fields blank.
+6. In the Subject Alternate Name Extension sheet, either set dNSName to the hostname or domain name that you provided earlier or set iPAddress to the IP address that you provided earlier. Leave all other text fields blank and click Continue. ![A screenshot of Keychain Access that shows the Subject Alternate Name Extension sheet that appears when you create a certificate. The sheet shows the dNSName and iPAddress text fields, and the Continue button.](/images/com.apple.backgroundassets/testing-asset-packs-subject-alternate-name@2x.png) > ❗ **Important**: Provide exactly one IP address, hostname, or domain name in the appropriate text field and leave the other three text fields blank.
 7. In the Specify a Location For The Certificate sheet, select the “login” keychain and click Create.
 8. In the Conclusion sheet, click Done.
 
@@ -90,7 +90,7 @@ To create asset pack archives, see [`Creating managed asset packs`](creating-man
 
 ##### Configure a Url Override in Developer Settings
 
-Enable Developer Mode on all of your test devices (see [`Enabling Developer Mode on a device`](https://developer.apple.com/documentation/Xcode/enabling-developer-mode-on-a-device)).
+Enable Developer Mode on all of your test devices (see [`Enabling Developer Mode on a device`](https://developer.apple.com/documentation/xcode/enabling-developer-mode-on-a-device)).
 
 In iOS, iPadOS, tvOS, and visionOS, go to Settings > Developer and click Development Overrides under Background Assets Testing. Under URL Override, enter your server’s base URL.
 

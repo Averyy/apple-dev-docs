@@ -23,7 +23,7 @@ This is not a designated initializer.
 ## Parameters
 
 - `cgImage`: The source image.
-- `size`: The size of the new image. Use [`zero`](https://developer.apple.com/documentation/CoreFoundation/CGSize/zero), or [`NSZeroSize`](https://developer.apple.com/documentation/Foundation/NSZeroSize) in Objective-C, to have the new image adopt the pixel dimensions of the source image.
+- `size`: The size of the new image. Use [`zero`](https://developer.apple.com/documentation/corefoundation/cgsize/zero), or [`NSZeroSize`](https://developer.apple.com/documentation/foundation/nszerosize) in Objective-C, to have the new image adopt the pixel dimensions of the source image.
 
 ## See Also
 

@@ -30,7 +30,7 @@ SiLU(x) = x * sigmoid(x)
 
 The following illustrates the output that the activation function generates from inputs in the range `-10...10`:
 
-![Graph that shows input values for the activation function on horizontal axis and its output values on vertical axis. ](https://docs-assets.developer.apple.com/published/c0473bda3a54b647695fa2ff9e0360a6/media-3786739%402x.png)
+![Graph that shows input values for the activation function on horizontal axis and its output values on vertical axis. ](/images/com.apple.accelerate/media-3786739@2x.png)
 
 ## See Also
 

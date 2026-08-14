@@ -20,13 +20,13 @@ The PassKit framework lets you:
 - Add Apple Pay to your app
 - Manage passes in the user’s Wallet app
 
-![The Apple Pay logo.](https://docs-assets.developer.apple.com/published/65928622a496739ca5949a1771499e5d/media-3975193%402x.png)
+![The Apple Pay logo.](/images/com.apple.passkit/media-3975193@2x.png)
 
 Apple Pay is a secure and easy way for users to make purchases in stores, in apps, and on the web. When you use PassKit APIs to support Apple Pay in your iOS and watchOS apps, your users can purchase real-world goods and services, or donate to nonprofit organizations, without ever leaving your app.
 
-> **Note**:  To add Apple Pay to your web applications, see [`Apple Pay on the Web`](https://developer.apple.com/documentation/ApplePayontheWeb). For digital goods and services delivered within the app, see [`In-App Purchase`](https://developer.apple.comhttps://developer.apple.com/in-app-purchase/) instead.
+> **Note**:  To add Apple Pay to your web applications, see [`Apple Pay on the Web`](https://developer.apple.com/documentation/applepayontheweb). For digital goods and services delivered within the app, see [`In-App Purchase`](https://developer.apple.comhttps://developer.apple.com/in-app-purchase/) instead.
 
-![The icon that respresents Wallet.](https://docs-assets.developer.apple.com/published/1f03432c3578ddd87cc12f1efefebc4e/media-3975195%402x.png)
+![The icon that respresents Wallet.](/images/com.apple.passkit/media-3975195@2x.png)
 
 The Wallet app allows users to organize their boarding passes, tickets, gift cards, and loyalty cards. It also lets users manage their payment cards for Apple Pay. Using the PassKit framework, you can add passes to Wallet and have these passes appear on the user’s lock screen based on the time and place when the pass is relevant. You can also update a pass’s content using push notifications.
 
@@ -49,7 +49,7 @@ The Wallet app allows users to organize their boarding passes, tickets, gift car
 
 ## See Also
 
-- [Wallet Passes](../WalletPasses/WalletPasses.md)
+- [Wallet Passes](../walletpasses/walletpasses.md)
   Create, distribute, and update passes for the Wallet app.
 
 

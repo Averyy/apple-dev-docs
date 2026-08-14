@@ -22,7 +22,7 @@ class SCNTorus
 
 #### Overview
 
-![None](https://docs-assets.developer.apple.com/published/efa6172dd2b7015ddd7ccb23e381513b/media-2929816%402x.png)
+![None](/images/com.apple.scenekit/media-2929816@2x.png)
 
 A torus is mathematically defined as a surface of revolution formed by revolving a circle around a coplanar axis. It is the product of two circles: a large ring and a pipe that encircles the ring. SceneKit uses these terms to define the dimensions of a torus geometry in its local coordinate space. The torus’ [`ringRadius`](scntorus/ringradius.md) property defines a circle in the x- and z-axis dimensions, centered at the origin, and its [`pipeRadius`](scntorus/piperadius.md) property defines the width of the surface encircling the ring. To change the orientation of a torus, adjust the [`transform`](scnnode/transform.md) property of the node containing the torus geometry.
 
@@ -49,15 +49,15 @@ Control the level of detail with the [`ringSegmentCount`](scntorus/ringsegmentco
 ### Inherits From
 - [SCNGeometry](scngeometry.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCoding](../Foundation/NSCoding.md)
-- [NSCopying](../Foundation/NSCopying.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [NSSecureCoding](../Foundation/NSSecureCoding.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCoding](../foundation/nscoding.md)
+- [NSCopying](../foundation/nscopying.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSSecureCoding](../foundation/nssecurecoding.md)
 - [SCNAnimatable](scnanimatable.md)
 - [SCNBoundingVolume](scnboundingvolume.md)
 - [SCNShadable](scnshadable.md)

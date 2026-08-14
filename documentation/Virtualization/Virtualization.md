@@ -23,7 +23,7 @@ To set up a VM, configure a [`VZVirtualMachineConfiguration`](vzvirtualmachinec
 ### Essentials
 - [Adding the Virtualization Entitlement to Your Project](adding-the-virtualization-entitlement-to-your-project.md)
   Configure your project to use the Virtualization framework.
-- [com.apple.security.virtualization](../BundleResources/Entitlements/com.apple.security.virtualization.md)
+- [com.apple.security.virtualization](../bundleresources/entitlements/com.apple.security.virtualization.md)
   A Boolean value that indicates whether your app can use the Virtualization framework.
 - [Using iCloud with macOS virtual machines](using-icloud-with-macos-virtual-machines.md)
   Access iCloud from macOS guest virtual machines.

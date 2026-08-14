@@ -16,7 +16,7 @@ let kQLPreviewPropertyWidthKey: CFString!
 
 #### Discussion
 
-Note that this property is a hint; Quick Look might set the width automatically for some types of previews. You mus encapsulate the value in a [`CFNumber`](https://developer.apple.com/documentation/CoreFoundation/CFNumber) object.
+Note that this property is a hint; Quick Look might set the width automatically for some types of previews. You mus encapsulate the value in a [`CFNumber`](https://developer.apple.com/documentation/corefoundation/cfnumber) object.
 
 ## See Also
 

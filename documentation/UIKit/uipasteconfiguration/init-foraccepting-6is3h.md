@@ -23,11 +23,11 @@ A paste configuration initialized with acceptable uniform type identifiers (UTIs
 
 #### Discussion
 
-When you use this initializer, the property [`readableTypeIdentifiersForItemProvider`](https://developer.apple.com/documentation/Foundation/NSItemProviderReading/readableTypeIdentifiersForItemProvider), implemented on `aClass`, is used to determine the acceptable UTIs.
+When you use this initializer, the property [`readableTypeIdentifiersForItemProvider`](https://developer.apple.com/documentation/foundation/nsitemproviderreading/readabletypeidentifiersforitemprovider), implemented on `aClass`, is used to determine the acceptable UTIs.
 
 ## Parameters
 
-- `aClass`: A class conforming to the [`NSItemProviderReading`](https://developer.apple.com/documentation/Foundation/NSItemProviderReading) protocol.
+- `aClass`: A class conforming to the [`NSItemProviderReading`](https://developer.apple.com/documentation/foundation/nsitemproviderreading) protocol.
 
 ## See Also
 

@@ -48,8 +48,8 @@ To add this trait to a test, use one of the following functions:
 ## Relationships
 
 ### Conforms To
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 - [SuiteTrait](suitetrait.md)
 - [TestTrait](testtrait.md)
 - [Trait](trait.md)

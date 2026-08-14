@@ -25,7 +25,7 @@ let SKStoreProductParameterAdNetworkSourceAppStoreIdentifier: String
 
 #### Discussion
 
-The value for this key is an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber). Provide the App Store item identifier of the app that’s displaying the ad.
+The value for this key is an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber). Provide the App Store item identifier of the app that’s displaying the ad.
 
 During testing, if you’re using a development-signed build to display the ads and not an app from App Store, use `0` as the item identifier.
 

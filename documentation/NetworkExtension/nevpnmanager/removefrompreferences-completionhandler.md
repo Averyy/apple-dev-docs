@@ -25,7 +25,7 @@ After the configuration is removed from the preferences the `NEVPNManager` objec
 
 ## Parameters
 
-- `completionHandler`: An optional block that takes an [`NSError`](https://developer.apple.com/documentation/Foundation/NSError) object. If specified, this block will be executed on the caller’s main thread after the removal operation is complete. If the configuration does not exist or an error occurs while removing it, the error parameter will be set to an `NSError` object containing details about the error. See `NEVPN Errors` for a list of possible errors. If the configuration is removed successfully then the error parameter will be set to nil.
+- `completionHandler`: An optional block that takes an [`NSError`](https://developer.apple.com/documentation/foundation/nserror) object. If specified, this block will be executed on the caller’s main thread after the removal operation is complete. If the configuration does not exist or an error occurs while removing it, the error parameter will be set to an `NSError` object containing details about the error. See `NEVPN Errors` for a list of possible errors. If the configuration is removed successfully then the error parameter will be set to nil.
 
 ## See Also
 

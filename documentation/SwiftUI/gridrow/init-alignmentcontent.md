@@ -47,7 +47,7 @@ Grid(alignment: .trailing) {
 
 The example above specifies [`trailing`](alignment/trailing.md) alignment for the grid, which is composed of [`center`](verticalalignment/center.md) vertical alignment and [`trailing`](horizontalalignment/trailing.md) horizontal alignment. The middle row relies on the center vertical alignment, but the other two rows specify custom vertical alignments:
 
-![A grid with three rows and three columns. Scanning from top to bottom,](https://docs-assets.developer.apple.com/published/09f1e686a052f81a8774eb3266637e3f/GridRow-init-1-iOS%402x.png)
+![A grid with three rows and three columns. Scanning from top to bottom,](/images/com.apple.SwiftUI/GridRow-init-1-iOS@2x.png)
 
 > ❗ **Important**: A grid row behaves like a [`Group`](group.md) if you create it outside of a grid.
 

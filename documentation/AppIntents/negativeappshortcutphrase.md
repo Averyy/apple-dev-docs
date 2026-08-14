@@ -35,10 +35,10 @@ Each negative phrase will be used to populate an app-level negative training set
 ## Relationships
 
 ### Conforms To
-- [ExpressibleByExtendedGraphemeClusterLiteral](../Swift/ExpressibleByExtendedGraphemeClusterLiteral.md)
-- [ExpressibleByStringInterpolation](../Swift/ExpressibleByStringInterpolation.md)
-- [ExpressibleByStringLiteral](../Swift/ExpressibleByStringLiteral.md)
-- [ExpressibleByUnicodeScalarLiteral](../Swift/ExpressibleByUnicodeScalarLiteral.md)
+- [ExpressibleByExtendedGraphemeClusterLiteral](../swift/expressiblebyextendedgraphemeclusterliteral.md)
+- [ExpressibleByStringInterpolation](../swift/expressiblebystringinterpolation.md)
+- [ExpressibleByStringLiteral](../swift/expressiblebystringliteral.md)
+- [ExpressibleByUnicodeScalarLiteral](../swift/expressiblebyunicodescalarliteral.md)
 
 ## See Also
 
@@ -50,9 +50,9 @@ Each negative phrase will be used to populate an app-level negative training set
   Dynamic values you can include in the spoken phrases that run your shortcut.
 - [struct NegativeAppShortcutPhrases](negativeappshortcutphrases.md)
   This is a set of negative phrases, which will all be added to the app-level negative training set. All the training data specified here, will be used to completely bypass your app
-- [NSAppIconActionTintColorName](../BundleResources/Information-Property-List/CFBundleIcons/CFBundlePrimaryIcon/NSAppIconActionTintColorName.md)
+- [NSAppIconActionTintColorName](../bundleresources/information-property-list/cfbundleicons/cfbundleprimaryicon/nsappiconactiontintcolorname.md)
   The tint color to apply to text and symbols in the App Shortcuts platter.
-- [NSAppIconComplementingColorNames](../BundleResources/Information-Property-List/CFBundleIcons/CFBundlePrimaryIcon/NSAppIconComplementingColorNames.md)
+- [NSAppIconComplementingColorNames](../bundleresources/information-property-list/cfbundleicons/cfbundleprimaryicon/nsappiconcomplementingcolornames.md)
   The names of the colors to use for the background of the App Shortcuts platter.
 - [enum AppShortcutsBuilder](appshortcutsbuilder.md)
   A result builder that allows you to declaratively describe the App Shortcuts that your app provides.

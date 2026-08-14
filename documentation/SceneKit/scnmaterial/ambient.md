@@ -24,11 +24,11 @@ var ambient: SCNMaterialProperty { get }
 
 Ambient shading describes the amount and color of ambient light reflected by the material. Ambient shading is uniform in all directions at all points on a surface. If a scene does not contain lights whose type is [`ambient`](scnlight/lighttype/ambient.md), this property has no effect on a material’s appearance.
 
-By default, the ambient property’s [`contents`](scnmaterialproperty/contents.md) object is a dark gray color. Changing the ambient property’s contents lets you specify a different color or texture for the areas of a surface not directly illuminated by lights in a scene. To make the material respond identically to both ambient and diffuse light, set its [`locksAmbientWithDiffuse`](scnmaterial/locksambientwithdiffuse.md) property to [`true`](https://developer.apple.com/documentation/Swift/true).
+By default, the ambient property’s [`contents`](scnmaterialproperty/contents.md) object is a dark gray color. Changing the ambient property’s contents lets you specify a different color or texture for the areas of a surface not directly illuminated by lights in a scene. To make the material respond identically to both ambient and diffuse light, set its [`locksAmbientWithDiffuse`](scnmaterial/locksambientwithdiffuse.md) property to [`true`](https://developer.apple.com/documentation/swift/true).
 
 The figure below shows a material (with a texture for its [`diffuse`](scnmaterial/diffuse.md) property) before and after setting the ambient property’s contents to a solid color.
 
-![None](https://docs-assets.developer.apple.com/published/fb3885ad46a4a3606bfee6d4cd4b3cb7/media-2934161%402x.png)
+![None](/images/com.apple.scenekit/media-2934161@2x.png)
 
 The material’s [`lightingModel`](scnmaterial/lightingmodel-swift.property.md) property determines the formula SceneKit uses to combine its ambient color and other visual properties with lights and other contents in a scene to produce the final color for each rendered pixel in the rendered scene. For details, see `Lighting Models`.
 

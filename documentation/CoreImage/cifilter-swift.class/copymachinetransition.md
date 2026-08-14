@@ -35,12 +35,12 @@ The copy machine transition filter uses the following properties:
 
 - **`inputImage`**: The starting image with the type [`CIImage`](ciimage.md).
 - **`targetImage`**: The ending image with the type [`CIImage`](ciimage.md).
-- **`time`**: A `float` representing the parametric time of the transition from start (at time 0) to end (at time 1) as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
-- **`angle`**: A `float` representing the angle of the copier light, in radians as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
-- **`width`**: A `float` representing the width of the effect as a [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
-- **`extent`**: A [`CGRect`](https://developer.apple.com/documentation/CoreFoundation/CGRect) representing the area of the copy machine effect.
+- **`time`**: A `float` representing the parametric time of the transition from start (at time 0) to end (at time 1) as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
+- **`angle`**: A `float` representing the angle of the copier light, in radians as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
+- **`width`**: A `float` representing the width of the effect as a [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
+- **`extent`**: A [`CGRect`](https://developer.apple.com/documentation/corefoundation/cgrect) representing the area of the copy machine effect.
 - **`color`**: A [`CIColor`](cicolor.md) representing the color of the light.
-- **`opacity`**: A `float` representing the transparency of the copier light as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+- **`opacity`**: A `float` representing the transparency of the copier light as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
 
 The following code creates a filter that produces a light bar that glides across the input image revealing the target image:
 
@@ -59,7 +59,7 @@ func copyMachine(inputImage: CIImage, targetImage: CIImage) -> CIImage {
 }
 ```
 
-![Three photographs. In the photo on the left, multiple sets of small purple flowers are photographed close up with good lighting, and the background has a slight blur. In the photograph on the right is a tall building with two trees directly in front of the building. In the center photo, a copy machine transition filter is applied, resulting in a still photograph of the moving transition. The left photograph is overlaid on the right photo while slowly transitioning to the city image with a light bar that stretches the height of the image slowly showing the city building image.](https://docs-assets.developer.apple.com/published/f578e13b2368f00c8f8f81c5584c41a4/media-3616432%402x.png)
+![Three photographs. In the photo on the left, multiple sets of small purple flowers are photographed close up with good lighting, and the background has a slight blur. In the photograph on the right is a tall building with two trees directly in front of the building. In the center photo, a copy machine transition filter is applied, resulting in a still photograph of the moving transition. The left photograph is overlaid on the right photo while slowly transitioning to the city image with a light bar that stretches the height of the image slowly showing the city building image.](/images/com.apple.coreimage/media-3616432@2x.png)
 
 ## See Also
 

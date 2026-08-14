@@ -18,9 +18,9 @@ static let heartRate: SRSensor
 
 #### Discussion
 
-The [`sample`](srfetchresult/sample.md) type for this sensor is [`CMHighFrequencyHeartRateData`](https://developer.apple.com/documentation/CoreMotion/CMHighFrequencyHeartRateData).
+The [`sample`](srfetchresult/sample.md) type for this sensor is [`CMHighFrequencyHeartRateData`](https://developer.apple.com/documentation/coremotion/cmhighfrequencyheartratedata).
 
-You need to provide a reason to record heart rates by adding the [`SRSensorUsageHeartRate`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSSensorKitUsageDetail/SRSensorUsageHeartRate) dictionary to the [`NSSensorKitUsageDetail`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSSensorKitUsageDetail) key in the information property list.
+You need to provide a reason to record heart rates by adding the [`SRSensorUsageHeartRate`](https://developer.apple.com/documentation/bundleresources/information-property-list/nssensorkitusagedetail/srsensorusageheartrate) dictionary to the [`NSSensorKitUsageDetail`](https://developer.apple.com/documentation/bundleresources/information-property-list/nssensorkitusagedetail) key in the information property list.
 
 ## See Also
 

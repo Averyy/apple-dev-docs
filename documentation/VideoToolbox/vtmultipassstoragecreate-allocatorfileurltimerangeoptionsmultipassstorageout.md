@@ -23,14 +23,14 @@ func VTMultiPassStorageCreate(allocator: CFAllocator?, fileURL: CFURL?, timeRang
 
 You can use the multipass storage object to perform multipass encoding; see [`kVTCompressionPropertyKey_MultiPassStorage`](kvtcompressionpropertykey_multipassstorage.md).
 
-Call [`CFRelease`](https://developer.apple.com/documentation/CoreFoundation/CFRelease) to release the multipass storage object when you are done with it.
+Call [`CFRelease`](https://developer.apple.com/documentation/corefoundation/cfrelease) to release the multipass storage object when you are done with it.
 
 ## Parameters
 
 - `allocator`: An allocator for the session.  Pass `NULL` to use the default allocator.
 - `fileURL`: Specifies where to put the backing file for the multipass storage object. If you pass `NULL` for `fileURL`, the video toolbox will pick a unique temporary file name.
 - `timeRange`: Gives a hint to the multipass storage about valid time stamps for data. You can pass `kCMTimeRangeInvalid` if you do not want to provide a time range hint.
-- `options`: If the file did not exist when the storage was created, the file will be deleted when the multipass storage object is finalized, unless you set the [`kVTMultiPassStorageCreationOption_DoNotDelete`](kvtmultipassstoragecreationoption_donotdelete.md) option to [`kCFBooleanTrue`](https://developer.apple.com/documentation/CoreFoundation/kCFBooleanTrue) in the `options` dictionary.
+- `options`: If the file did not exist when the storage was created, the file will be deleted when the multipass storage object is finalized, unless you set the [`kVTMultiPassStorageCreationOption_DoNotDelete`](kvtmultipassstoragecreationoption_donotdelete.md) option to [`kCFBooleanTrue`](https://developer.apple.com/documentation/corefoundation/kcfbooleantrue) in the `options` dictionary.
 - `multiPassStorageOut`: A pointer to the newly created multipass storage object.
 
 

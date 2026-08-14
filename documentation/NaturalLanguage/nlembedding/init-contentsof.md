@@ -22,7 +22,7 @@ convenience init(contentsOf url: URL) throws
 
 #### Discussion
 
-Use this initializer to create a word embedding from an `.mlmodel` file saved by Create ML’s [`MLWordEmbedding`](https://developer.apple.com/documentation/CreateML/MLWordEmbedding).
+Use this initializer to create a word embedding from an `.mlmodel` file saved by Create ML’s [`MLWordEmbedding`](https://developer.apple.com/documentation/createml/mlwordembedding).
 
 ## Parameters
 

@@ -6,16 +6,16 @@ Control an app’s access to protected system services and user data.
 
 #### Overview
 
-Before your app can access certain protected resources, like the Bluetooth interface, location information, or the user’s photos, the system asks the user for permission on behalf of your app. The prompt that the system displays includes a `UsageDescription` string you provide, explaining why your app needs to access the protected resource. Enter the string in the Signing and Capabilities editor for your app’s target, as described in [`Requesting access to protected resources`](https://developer.apple.com/documentation/UIKit/requesting-access-to-protected-resources). Xcode adds the string as the value for the relevant [`Information Property List`](information-property-list.md) key in your app’s build settings. The topics below list the keys you use to provide usage-description strings for protected resources.
+Before your app can access certain protected resources, like the Bluetooth interface, location information, or the user’s photos, the system asks the user for permission on behalf of your app. The prompt that the system displays includes a `UsageDescription` string you provide, explaining why your app needs to access the protected resource. Enter the string in the Signing and Capabilities editor for your app’s target, as described in [`Requesting access to protected resources`](https://developer.apple.com/documentation/uikit/requesting-access-to-protected-resources). Xcode adds the string as the value for the relevant [`Information Property List`](information-property-list.md) key in your app’s build settings. The topics below list the keys you use to provide usage-description strings for protected resources.
 
 ## Topics
 
 ### Essentials
-- [Requesting access to protected resources](../UIKit/requesting-access-to-protected-resources.md)
+- [Requesting access to protected resources](../uikit/requesting-access-to-protected-resources.md)
   Provide a purpose string that explains to a person why you need access to protected resources on their device.
-- [Inspecting app activity data](../Network/inspecting-app-activity-data.md)
+- [Inspecting app activity data](../network/inspecting-app-activity-data.md)
   Verify that your app accesses only the user data and network resources that you expect it to access.
-- [Resetting access to protected resources in macOS](../Xcode/resetting-access-to-protected-resources-in-macOS.md)
+- [Resetting access to protected resources in macOS](../xcode/resetting-access-to-protected-resources-in-macos.md)
   Use Terminal to remove your app’s authorization access to protected resources during testing.
 ### Bluetooth
 - [NSBluetoothAlwaysUsageDescription](information-property-list/nsbluetoothalwaysusagedescription.md)
@@ -29,10 +29,10 @@ Before your app can access certain protected resources, like the Bluetooth inter
   A message that tells people why the app is requesting access to create calendar events.
 - [NSRemindersFullAccessUsageDescription](information-property-list/nsremindersfullaccessusagedescription.md)
   A message that tells people why the app is requesting access to read and write their reminders data.
-- [Accessing the event store](../EventKit/accessing-the-event-store.md)
+- [Accessing the event store](../eventkit/accessing-the-event-store.md)
   Request access to a person’s calendar data through the event store.
 ### Camera and sound
-- [Requesting authorization to capture and save media](../AVFoundation/requesting-authorization-to-capture-and-save-media.md)
+- [Requesting authorization to capture and save media](../avfoundation/requesting-authorization-to-capture-and-save-media.md)
   Prompt the user to authorize access to the camera, microphone, and photo library.
 - [Requesting Authorization for Media Capture on macOS](requesting-authorization-for-media-capture-on-macos.md)
   Prompt the user to authorize access to the camera and microphone.
@@ -45,12 +45,12 @@ Before your app can access certain protected resources, like the Bluetooth inter
 - [NSMicrophoneUsageDescription](information-property-list/nsmicrophoneusagedescription.md)
   A message that tells people why the app is requesting access to the device’s microphone.
 ### Contacts
-- [Accessing the contact store](../Contacts/accessing-the-contact-store.md)
+- [Accessing the contact store](../contacts/accessing-the-contact-store.md)
   Request permission from the person to read and write their contact data.
 - [NSContactsUsageDescription](information-property-list/nscontactsusagedescription.md)
   A message that tells people why the app is requesting access to their contacts.
 ### Face ID
-- [Logging a User into Your App with Face ID or Touch ID](../LocalAuthentication/logging-a-user-into-your-app-with-face-id-or-touch-id.md)
+- [Logging a User into Your App with Face ID or Touch ID](../localauthentication/logging-a-user-into-your-app-with-face-id-or-touch-id.md)
   Supplement your own authentication scheme with biometric authentication, making it easy for users to access sensitive parts of your app.
 - [NSFaceIDUsageDescription](information-property-list/nsfaceidusagedescription.md)
   A message that tells people why the app is requesting the ability to authenticate with Face ID.
@@ -72,7 +72,7 @@ Before your app can access certain protected resources, like the Bluetooth inter
 - [NSGKFriendListUsageDescription](information-property-list/nsgkfriendlistusagedescription.md)
   A message that tells people why the app needs access to their Game Center friends list.
 ### Health
-- [Setting up HealthKit](../HealthKit/setting-up-healthkit.md)
+- [Setting up HealthKit](../healthkit/setting-up-healthkit.md)
   Set up and configure your HealthKit store.
 - [NSHealthClinicalHealthRecordsShareUsageDescription](information-property-list/nshealthclinicalhealthrecordsshareusagedescription.md)
   A message to the user that explains why the app requested permission to read clinical records.
@@ -83,7 +83,7 @@ Before your app can access certain protected resources, like the Bluetooth inter
 - [NSHealthRequiredReadAuthorizationTypeIdentifiers](information-property-list/nshealthrequiredreadauthorizationtypeidentifiers.md)
   The clinical record data types that your app must get permission to read.
 ### Home
-- [Enabling HomeKit in your app](../HomeKit/enabling-homekit-in-your-app.md)
+- [Enabling HomeKit in your app](../homekit/enabling-homekit-in-your-app.md)
   Declare your app’s intention to use HomeKit, and get permission from the user to access home automation accessories.
 - [NSHomeKitUsageDescription](information-property-list/nshomekitusagedescription.md)
   A message that tells people why the app is requesting access to their HomeKit configuration data.
@@ -105,7 +105,7 @@ Before your app can access certain protected resources, like the Bluetooth inter
 - [NSLocationDefaultAccuracyReduced](information-property-list/nslocationdefaultaccuracyreduced.md)
   A Boolean value that indicates whether the app requests reduced location accuracy by default.
 ### MediaPlayer
-- [Requesting Access to Apple Music Library](../StoreKit/requesting-access-to-apple-music-library.md)
+- [Requesting Access to Apple Music Library](../storekit/requesting-access-to-apple-music-library.md)
   Prompt the customer to authorize access to Apple Music library.
 - [NSAppleMusicUsageDescription](information-property-list/nsapplemusicusagedescription.md)
   A message that tells people why the app is requesting access to their media library.
@@ -128,7 +128,7 @@ Before your app can access certain protected resources, like the Bluetooth inter
 - [NFCReaderUsageDescription](information-property-list/nfcreaderusagedescription.md)
   A message that tells people why the app is requesting access to the device’s NFC hardware.
 ### Photos
-- [Delivering an Enhanced Privacy Experience in Your Photos App](../PhotoKit/delivering-an-enhanced-privacy-experience-in-your-photos-app.md)
+- [Delivering an Enhanced Privacy Experience in Your Photos App](../photokit/delivering-an-enhanced-privacy-experience-in-your-photos-app.md)
   Adopt the latest privacy enhancements to deliver advanced user-privacy controls.
 - [NSPhotoLibraryAddUsageDescription](information-property-list/nsphotolibraryaddusagedescription.md)
   A message that tells people why the app is requesting add-only access to their photo library.
@@ -162,12 +162,12 @@ Before your app can access certain protected resources, like the Bluetooth inter
 - [NSSensorKitPrivacyPolicyURL](information-property-list/nssensorkitprivacypolicyurl.md)
   A hyperlink to a webpage that displays the privacy policy for your app’s research study.
 ### Siri
-- [Requesting Authorization to Use Siri](../SiriKit/requesting-authorization-to-use-siri.md)
+- [Requesting Authorization to Use Siri](../sirikit/requesting-authorization-to-use-siri.md)
   Request permission from the user for Siri and Maps to communicate with your app or Intents app extension.
 - [NSSiriUsageDescription](information-property-list/nssiriusagedescription.md)
   A message that tells people why the app is requesting to send user data to Siri.
 ### Speech
-- [Asking Permission to Use Speech Recognition](../Speech/asking-permission-to-use-speech-recognition.md)
+- [Asking Permission to Use Speech Recognition](../speech/asking-permission-to-use-speech-recognition.md)
   Ask the user’s permission to perform speech recognition using Apple’s servers.
 - [NSSpeechRecognitionUsageDescription](information-property-list/nsspeechrecognitionusagedescription.md)
   A message that tells people why the app is requesting to send user data to Apple’s speech recognition servers.

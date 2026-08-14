@@ -29,8 +29,8 @@ Each kind of document format needs its own concrete type that conforms to this p
 ## Relationships
 
 ### Inherits From
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 ### Conforming Types
 - [MobileDocumentRegistration](mobiledocumentregistration.md)
 

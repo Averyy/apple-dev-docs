@@ -21,7 +21,7 @@ A result code. See [`Code Signing Services Result Codes`](code-signing-services-
 
 #### Discussion
 
-You can extract the binary blob from the [`CFData`](https://developer.apple.com/documentation/CoreFoundation/CFData) object and store it in any form you wish. Use of this function is the only publicly supported way to get such a data blob. You can use the [`SecRequirementCreateWithData(_:_:_:)`](secrequirementcreatewithdata(_:_:_:).md) function to convert it back to a code requirement object.
+You can extract the binary blob from the [`CFData`](https://developer.apple.com/documentation/corefoundation/cfdata) object and store it in any form you wish. Use of this function is the only publicly supported way to get such a data blob. You can use the [`SecRequirementCreateWithData(_:_:_:)`](secrequirementcreatewithdata(_:_:_:).md) function to convert it back to a code requirement object.
 
 ## Parameters
 

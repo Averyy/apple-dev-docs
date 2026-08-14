@@ -23,7 +23,7 @@ class MPSCNNNeuronReLUN
 
 For each pixel in an image, the filter applies the following function:
 
-![f(x) = x , x >= 0 |  a * x, x <  0 |  b , x >= b](https://docs-assets.developer.apple.com/published/e6dedfb2f9e4f6bf206255a219d3da48/media-2923195%402x.png)
+![f(x) = x , x >= 0 |  a * x, x <  0 |  b , x >= b](/images/com.apple.metalperformanceshaders/media-2923195@2x.png)
 
 The default value of `a` is 1.0 and the default value of `b` is 6.0.
 
@@ -37,15 +37,15 @@ The default value of `a` is 1.0 and the default value of `b` is 6.0.
 ### Inherits From
 - [MPSCNNNeuron](mpscnnneuron.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCoding](../Foundation/NSCoding.md)
-- [NSCopying](../Foundation/NSCopying.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [NSSecureCoding](../Foundation/NSSecureCoding.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCoding](../foundation/nscoding.md)
+- [NSCopying](../foundation/nscopying.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSSecureCoding](../foundation/nssecurecoding.md)
 
 ## See Also
 

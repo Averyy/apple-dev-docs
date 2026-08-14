@@ -16,7 +16,7 @@ var executableArchitecture: Int { get }
 
 #### Discussion
 
-The returned value will be one of the constants in Mach-O Architecture in [`Bundle`](https://developer.apple.com/documentation/Foundation/Bundle).
+The returned value will be one of the constants in Mach-O Architecture in [`Bundle`](https://developer.apple.com/documentation/foundation/bundle).
 
 ## See Also
 

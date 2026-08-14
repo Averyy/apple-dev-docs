@@ -21,7 +21,7 @@ var localizedSubtitle: String? { get set }
 
 If you specify a subtitle for a mutable quick action, the system then displays the title on a single line (potentially with an ellipsis character), no matter how long the title is.
 
-To internationalize the subtitle for a Home Screen mutable, dynamic quick action, employ the [`NSLocalizedString`](https://developer.apple.com/documentation/Foundation/NSLocalizedString) Foundation function, described in [`Foundation Functions`](https://developer.apple.com/documentation/Foundation/foundation-functions), along with a `Localized.strings` file in your Xcode project.
+To internationalize the subtitle for a Home Screen mutable, dynamic quick action, employ the [`NSLocalizedString`](https://developer.apple.com/documentation/foundation/nslocalizedstring) Foundation function, described in [`Foundation Functions`](https://developer.apple.com/documentation/foundation/foundation-functions), along with a `Localized.strings` file in your Xcode project.
 
 ## See Also
 

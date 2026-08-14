@@ -49,7 +49,7 @@ struct ConfirmEraseItems: View {
 }
 ```
 
-![An action sheet with a title and message showing the use of default and destructive button types.](https://docs-assets.developer.apple.com/published/bf17402357d695dc8c4b82d669a0ef22/SwiftUI-View-ActionSheetisPresentedContent%402x.png)
+![An action sheet with a title and message showing the use of default and destructive button types.](/images/com.apple.SwiftUI/SwiftUI-View-ActionSheetisPresentedContent@2x.png)
 
 > **Note**: In regular size classes in iOS, the system renders alert sheets as a popover that the user dismisses by tapping anywhere outside the popover, rather than displaying the default dismiss button.
 

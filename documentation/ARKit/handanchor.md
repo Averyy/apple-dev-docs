@@ -47,22 +47,22 @@ struct HandAnchor
 ### Conforms To
 - [ARKitCoordinateSpaceProviding](arkitcoordinatespaceproviding.md)
 - [Anchor](anchor.md)
-- [Copyable](../Swift/Copyable.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Escapable](../Swift/Escapable.md)
-- [Identifiable](../Swift/Identifiable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Copyable](../swift/copyable.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Escapable](../swift/escapable.md)
+- [Identifiable](../swift/identifiable.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 - [TrackableAnchor](trackableanchor.md)
 
 ## See Also
 
-- [Happy Beam](../visionOS/happybeam.md)
+- [Happy Beam](../visionos/happybeam.md)
   Leverage a Full Space to create a fun game using ARKit.
-- [Creating a 3D painting space](../visionOS/creating-a-painting-space-in-visionos.md)
+- [Creating a 3D painting space](../visionos/creating-a-painting-space-in-visionos.md)
   Implement a painting canvas entity, and update its mesh to represent a stroke.
-- [Tracking and visualizing hand movement](../visionOS/tracking-and-visualizing-hand-movement.md)
+- [Tracking and visualizing hand movement](../visionos/tracking-and-visualizing-hand-movement.md)
   Use hand-tracking anchors to display a visual representation of hand transforms in visionOS.
 - [class HandTrackingProvider](handtrackingprovider.md)
   A source of live data about the position of a person’s hands and hand joints.

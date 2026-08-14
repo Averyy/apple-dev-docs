@@ -17,7 +17,7 @@ Work with image and video assets that the Photos app manages, including those fr
 
 PhotoKit is the combination of the Photos and PhotosUI frameworks, which together enable you to access image and video assets that the Photos app manages. You might use PhotoKit to edit or display a person’s photos, or to manage collections of assets such as albums, Moments, and Shared Albums. The framework provides access to photos on the person’s device and in iCloud.
 
-![A diagram showing the types of requests your app can make through PhotoKit, to access photos stored in the user’s photo library](https://docs-assets.developer.apple.com/published/4ef7c35aea420b2d2bbd6f43b5a7e6d4/media-3030182%402x.png)
+![A diagram showing the types of requests your app can make through PhotoKit, to access photos stored in the user’s photo library](/images/com.apple.photokit/media-3030182@2x.png)
 
 ## Topics
 

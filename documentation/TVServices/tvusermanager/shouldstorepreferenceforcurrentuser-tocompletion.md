@@ -18,14 +18,14 @@ func shouldStorePreferenceForCurrentUser(to profile: TVAppProfileDescriptor) asy
 
 > ❗ **Important**:  You can call this method from synchronous code using a completion handler, as shown on this page, or you can call it as an asynchronous method that has the following declaration: ```swift
 func shouldStorePreferenceForCurrentUser(to profile: TVAppProfileDescriptor) async -> Bool
-``` For information about concurrency and asynchronous code in Swift, see [`Calling Objective-C APIs Asynchronously`](https://developer.apple.com/documentation/Swift/calling-objective-c-apis-asynchronously).
+``` For information about concurrency and asynchronous code in Swift, see [`Calling Objective-C APIs Asynchronously`](https://developer.apple.com/documentation/swift/calling-objective-c-apis-asynchronously).
 
 Use this method to confirm that the profile chosen by the user should become their new preferred profile. The method prompts the user to confirm the profile change and calls the completion handler with the results. Call this method only once for each user.
 
 ## Parameters
 
 - `profile`: The profile to associate with the current user.
-- `completion`: The completion handler to call with the results. This handler has no return value and takes the following parameter: - **shouldCreateMapping**: A Boolean value indicating whether your app should associate the specified profile with the current user. If this parameter is [`true`](https://developer.apple.com/documentation/Swift/true), save the association in your app’s data structures.
+- `completion`: The completion handler to call with the results. This handler has no return value and takes the following parameter: - **shouldCreateMapping**: A Boolean value indicating whether your app should associate the specified profile with the current user. If this parameter is [`true`](https://developer.apple.com/documentation/swift/true), save the association in your app’s data structures.
 
 ## See Also
 

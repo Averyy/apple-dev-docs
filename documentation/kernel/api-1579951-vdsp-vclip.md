@@ -34,11 +34,11 @@ Elements of `A` are copied to `D`, while clipping elements that are outside the 
 ## Parameters
 
 - `__A`: Single-precision real input vector
-- `__IA`: Stride for 
+- `__IA`: Stride for `A`
 - `__B`: Pointer to single-precision real input scalar: low clipping threshold
 - `__C`: Pointer to single-precision real input scalar: high clipping threshold
 - `__D`: Single-precision real output vector
-- `__ID`: Stride for 
+- `__ID`: Stride for `D`
 - `__N`: The number of elements to process.
 
 

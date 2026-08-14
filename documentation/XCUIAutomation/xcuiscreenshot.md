@@ -42,7 +42,7 @@ func testTakeScreenshots() {
 }
 ```
 
-If you use [`XCTest`](https://developer.apple.com/documentation/XCTest) for your UI automation tests, you can attach a screenshot of your app’s UI to a test or activity to store it for later analysis. Create an attachment for a screenshot by calling the [`XCTAttachment`](https://developer.apple.com/documentation/XCTest/XCTAttachment) initializer [`init(screenshot:)`](https://developer.apple.com/documentation/XCTest/XCTAttachment/init(screenshot:)) or [`init(screenshot:quality:)`](https://developer.apple.com/documentation/XCTest/XCTAttachment/init(screenshot:quality:)). Add the attachment to a test or activity by calling the [`XCTActivity`](https://developer.apple.com/documentation/XCTest/XCTActivity) method [`add(_:)`](https://developer.apple.com/documentation/XCTest/XCTActivity/add(_:)). For more information, see [`Adding Attachments to Tests, Activities, and Issues`](https://developer.apple.com/documentation/XCTest/adding-attachments-to-tests-activities-and-issues).
+If you use [`XCTest`](https://developer.apple.com/documentation/xctest) for your UI automation tests, you can attach a screenshot of your app’s UI to a test or activity to store it for later analysis. Create an attachment for a screenshot by calling the [`XCTAttachment`](https://developer.apple.com/documentation/xctest/xctattachment) initializer [`init(screenshot:)`](https://developer.apple.com/documentation/xctest/xctattachment/init(screenshot:)) or [`init(screenshot:quality:)`](https://developer.apple.com/documentation/xctest/xctattachment/init(screenshot:quality:)). Add the attachment to a test or activity by calling the [`XCTActivity`](https://developer.apple.com/documentation/xctest/xctactivity) method [`add(_:)`](https://developer.apple.com/documentation/xctest/xctactivity/add(_:)). For more information, see [`Adding Attachments to Tests, Activities, and Issues`](https://developer.apple.com/documentation/xctest/adding-attachments-to-tests-activities-and-issues).
 
 ## Topics
 
@@ -55,15 +55,15 @@ If you use [`XCTest`](https://developer.apple.com/documentation/XCTest) for your
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [Sendable](../Swift/Sendable.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [Sendable](../swift/sendable.md)
 
 ## See Also
 

@@ -25,7 +25,7 @@ var kernelHeight: Int { get }
   A signed coordinate with x, y, and z components.
 - [var clipRect: MTLRegion](mpscnnkernel/cliprect.md)
   An optional clip rectangle to use when writing data. Only the pixels in the clip rectangle will be overwritten.
-- [struct MTLRegion](../Metal/MTLRegion.md)
+- [struct MTLRegion](../metal/mtlregion.md)
   The bounds for a subset of an instance’s elements.
 - [var destinationFeatureChannelOffset: Int](mpscnnkernel/destinationfeaturechanneloffset.md)
   The number of channels in the destination image to skip before writing output data.

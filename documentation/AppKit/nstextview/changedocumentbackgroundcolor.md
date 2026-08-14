@@ -18,7 +18,7 @@ func changeDocumentBackgroundColor(_ sender: Any?)
 
 This method gets the new color by sending a [`color`](nscolorpanel/color.md) message to  `sender`.
 
-This will only set the background color if [`allowsDocumentBackgroundColorChange`](nstextview/allowsdocumentbackgroundcolorchange.md)returns [`true`](https://developer.apple.com/documentation/Swift/true).
+This will only set the background color if [`allowsDocumentBackgroundColorChange`](nstextview/allowsdocumentbackgroundcolorchange.md)returns [`true`](https://developer.apple.com/documentation/swift/true).
 
 ## Parameters
 

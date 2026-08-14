@@ -7,7 +7,7 @@ Configure text fields and custom views that accept text to handle input from App
 ## Topics
 
 ### Essentials
-- [Customizing Scribble with Interactions](../PencilKit/customizing-scribble-with-interactions.md)
+- [Customizing Scribble with Interactions](../pencilkit/customizing-scribble-with-interactions.md)
   Enable writing on a non-text-input view by adding interactions.
 ### Text fields
 - [class UIScribbleInteraction](uiscribbleinteraction.md)

@@ -28,12 +28,12 @@ Thread-safe since Mac OS version 10.2.
 
 ## Parameters
 
-- `inType`: The file type to consider. Comparison of file types is case-sensitive. Pass   if the items’ file type is unimportant.
-- `inCreator`: The creator signature to consider. Comparison of creator signatures is case-sensitive. Pass   if the items’ creator signature is unimportant.
-- `inExtension`: A Core Foundation string object specifying the filename extension to consider; see the   in the Core Foundation Reference Documentation for a description of the   data type. Comparison of filename extensions is case-insensitive. Pass   if the items’ filename extension is unimportant.
-- `inRolesMask`: A bit mask specifying the application’s desired role or roles with respect to items with the specified characteristics; see   for a description of this mask. If the role is unimportant, pass  .
-- `outAppRef`: A pointer to a file-system reference that, on return, will identify the preferred application for opening items with the specified characteristics; see the   in the Carbon File Management Documentation for a description of the   data type. Pass   if you are not interested in identifying the preferred application in this form; however, this parameter and   cannot both be  .
-- `outAppURL`: Despite the absence of the word   in its name, this function retains the URL reference object on your behalf; you are responsible for releasing this object.
+- `inType`: The file type to consider. Comparison of file types is case-sensitive. Pass `kLSUnknownType` if the items’ file type is unimportant.
+- `inCreator`: The creator signature to consider. Comparison of creator signatures is case-sensitive. Pass `kLSUnknownCreator` if the items’ creator signature is unimportant. > **Note**: In macOS 10.6 and later, the `inCreator` parameter is ignored.
+- `inExtension`: A Core Foundation string object specifying the filename extension to consider; see the *CFString Reference* in the Core Foundation Reference Documentation for a description of the `CFStringRef` data type. Comparison of filename extensions is case-insensitive. Pass `NULL` if the items’ filename extension is unimportant.
+- `inRolesMask`: A bit mask specifying the application’s desired role or roles with respect to items with the specified characteristics; see [`LSRolesMask`](lsrolesmask.md) for a description of this mask. If the role is unimportant, pass `kLSRolesAll`.
+- `outAppRef`: A pointer to a file-system reference that, on return, will identify the preferred application for opening items with the specified characteristics; see the *File Manager Reference* in the Carbon File Management Documentation for a description of the `FSRef` data type. Pass `NULL` if you are not interested in identifying the preferred application in this form; however, this parameter and `outAppURL` cannot both be `NULL`.
+- `outAppURL`: A pointer to a Core Foundation URL reference that, on return, will identify the preferred application for items with the specified characteristics; see the *CFURL Reference* in the Core Foundation Reference Documentation for a description of the `CFURLRef` data type. Pass `NULL` if you are not interested in identifying the preferred application in this form; however, this parameter and `outAppRef` cannot both be `NULL`. Despite the absence of the word `Copy` in its name, this function retains the URL reference object on your behalf; you are responsible for releasing this object.
 
 ## See Also
 

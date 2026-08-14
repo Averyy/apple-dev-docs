@@ -42,15 +42,15 @@ case .failure(let error):
 }
 ```
 
-The keyframe’s `timestamp` is a [`CMTime`](https://developer.apple.com/documentation/CoreMedia/CMTime) value that identifies the most representative frame in the video. Use it to move the player to that frame or generate a thumbnail image.
+The keyframe’s `timestamp` is a [`CMTime`](https://developer.apple.com/documentation/coremedia/cmtime) value that identifies the most representative frame in the video. Use it to move the player to that frame or generate a thumbnail image.
 
-> **Note**: A convenient way to generate a thumbnail from the keyframe timestamp is with [`AVAssetImageGenerator`](https://developer.apple.com/documentation/AVFoundation/AVAssetImageGenerator). For more information, see [`Creating images from a video asset`](https://developer.apple.com/documentation/AVFoundation/creating-images-from-a-video-asset).
+> **Note**: A convenient way to generate a thumbnail from the keyframe timestamp is with [`AVAssetImageGenerator`](https://developer.apple.com/documentation/avfoundation/avassetimagegenerator). For more information, see [`Creating images from a video asset`](https://developer.apple.com/documentation/avfoundation/creating-images-from-a-video-asset).
 
 #### Find Video Highlights
 
 To understand engagement across an entire video rather than a single representative frame, create a [`HighlightAnalysisRequest`](highlightanalysisrequest.md). The result provides two complementary perspectives on engagement:
 
-- **[`highlights`](highlightanalysisrequest/result/highlights.md)**: An array of [`CMTimeRange`](https://developer.apple.com/documentation/CoreMedia/CMTimeRange) values identifying the most engaging segments. Use these to build a highlight reel or seek directly to interesting moments.
+- **[`highlights`](highlightanalysisrequest/result/highlights.md)**: An array of [`CMTimeRange`](https://developer.apple.com/documentation/coremedia/cmtimerange) values identifying the most engaging segments. Use these to build a highlight reel or seek directly to interesting moments.
 - **[`levels`](highlightanalysisrequest/result/levels.md)**: A segment-by-segment breakdown where every portion of the video receives a floating-point engagement level from `0` (least engaging) to `9` (most engaging). Use levels to visualize pacing or let people scrub by interest.
 
 The following example analyzes a video for highlights and iterates through both the highlight ranges and per-segment engagement levels:
@@ -73,7 +73,7 @@ case .failure(let error):
 
 #### Combine Multiple Requests
 
-When you need highlights and a keyframe from a video, pass both requests to a single [`analyze(_:for:)`](videoanalyzer/analyze(_:for:).md) call. The analyzer decodes the video once regardless of how many requests you pass, making the combined call more efficient. Because each request produces its own [`Result`](https://developer.apple.com/documentation/Swift/Result) value, you can handle successes and failures independently. The following example requests both analyses:
+When you need highlights and a keyframe from a video, pass both requests to a single [`analyze(_:for:)`](videoanalyzer/analyze(_:for:).md) call. The analyzer decodes the video once regardless of how many requests you pass, making the combined call more efficient. Because each request produces its own [`Result`](https://developer.apple.com/documentation/swift/result) value, you can handle successes and failures independently. The following example requests both analyses:
 
 ```swift
 let (highlightResult, keyframeResult) = try await VideoAnalyzer.shared.analyze(

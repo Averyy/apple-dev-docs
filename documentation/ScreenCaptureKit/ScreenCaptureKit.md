@@ -15,11 +15,11 @@ Stream screen content and audio to your app with fine-grained control over what 
 
 #### Overview
 
-Use ScreenCaptureKit to capture high-performance video and audio across iOS, iPadOS, macOS, tvOS, and visionOS. The framework gives you fine-grained control to select and stream only the content you want to capture, delivering media to your app as [`CMSampleBuffer`](https://developer.apple.com/documentation/CoreMedia/CMSampleBuffer) objects with the associated metadata.
+Use ScreenCaptureKit to capture high-performance video and audio across iOS, iPadOS, macOS, tvOS, and visionOS. The framework gives you fine-grained control to select and stream only the content you want to capture, delivering media to your app as [`CMSampleBuffer`](https://developer.apple.com/documentation/coremedia/cmsamplebuffer) objects with the associated metadata.
 
 > ❗ **Important**: ScreenCaptureKit replaces ReplayKit for screen streaming and mirroring. A broadcast extension is no longer necessary.
 
-Use [`SCContentSharingPicker`](sccontentsharingpicker.md), the system screen-sharing control, as the recommended approach for letting people select content sources and manage active streams, rather than building your own selection UI. To capture content while your app is in the background, configure the appropriate [`Configuring background execution modes`](https://developer.apple.com/documentation/Xcode/configuring-background-execution-modes) in the Signing & Capabilities pane in Xcode.
+Use [`SCContentSharingPicker`](sccontentsharingpicker.md), the system screen-sharing control, as the recommended approach for letting people select content sources and manage active streams, rather than building your own selection UI. To capture content while your app is in the background, configure the appropriate [`Configuring background execution modes`](https://developer.apple.com/documentation/xcode/configuring-background-execution-modes) in the Signing & Capabilities pane in Xcode.
 
 Request screen recording permission from the person before capturing content. In the Info pane of the Xcode target editor, add a `NSScreenCaptureUsageDescription` key with a description of why your app requires screen recording access.
 
@@ -28,9 +28,9 @@ Request screen recording permission from the person before capturing content. In
 ## Topics
 
 ### Essentials
-- [ScreenCaptureKit updates](../Updates/ScreenCaptureKit.md)
+- [ScreenCaptureKit updates](../updates/screencapturekit.md)
   Learn about important changes to ScreenCaptureKit.
-- [Persistent Content Capture](../BundleResources/Entitlements/com.apple.developer.persistent-content-capture.md)
+- [Persistent Content Capture](../bundleresources/entitlements/com.apple.developer.persistent-content-capture.md)
   A Boolean value that indicates whether a Virtual Network Computing (VNC) app needs persistent access to screen capture.
 - [Capturing screen content on iOS](capturing-screen-content-on-ios.md)
   Record and share screen captures on iOS by presenting the system content-sharing picker.

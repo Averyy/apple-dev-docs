@@ -26,7 +26,7 @@ struct MetricReport
 
 `MetricReport` is a value type that conforms to `Sendable` and `Codable`, so you can pass it across actor boundaries and serialize it with `JSONEncoder` directly.
 
-Each report covers a 24-hour reporting period. Access metric data through [`intervalEntries`](metricreport/intervalentries.md), which contains one or more [`MetricReport.IntervalEntry`](metricreport/intervalentry.md) values. Use the [`MetricReport.IntervalEntry`](metricreport/intervalentry.md) collection’s [`fullDayEntry`](https://developer.apple.com/documentation/Swift/Array/fullDayEntry) property to retrieve the full-day aggregate, then iterate its [`values`](metricreport/intervalentry/values.md) array and switch over each [`MetricResult`](metricresult.md):
+Each report covers a 24-hour reporting period. Access metric data through [`intervalEntries`](metricreport/intervalentries.md), which contains one or more [`MetricReport.IntervalEntry`](metricreport/intervalentry.md) values. Use the [`MetricReport.IntervalEntry`](metricreport/intervalentry.md) collection’s [`fullDayEntry`](https://developer.apple.com/documentation/swift/array/fulldayentry) property to retrieve the full-day aggregate, then iterate its [`values`](metricreport/intervalentry/values.md) array and switch over each [`MetricResult`](metricresult.md):
 
 ```swift
 if let entry = report.intervalEntries.fullDayEntry {
@@ -72,10 +72,10 @@ When state reporting is enabled via [`init(enabledStateReportingDomains:)`](metr
 ## Relationships
 
 ### Conforms To
-- [Decodable](../Swift/Decodable.md)
-- [Encodable](../Swift/Encodable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Decodable](../swift/decodable.md)
+- [Encodable](../swift/encodable.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

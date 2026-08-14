@@ -28,9 +28,9 @@ For information on how to receive error information from the `AEResolve` functio
 
 ## Parameters
 
-- `objectSpecifier`: A pointer to the object specifier to resolve. See  .
-- `callbackFlags`: A value that determines what additional assistance, if any, your application can give the Apple Event Manager when it parses the object specifier. The value is specified by adding the desired constants described in  . Most applications use  .
-- `theToken`: Whenever the   function returns final token to your event handler as the result of the resolving an object specifier passed to  , your application must deallocate the memory used by the token. If your application uses complex tokens, it must dispose of the token by calling  . If your application uses simple tokens, you can use either   or  . See  .
+- `objectSpecifier`: A pointer to the object specifier to resolve. See [`AEDesc`](aedesc.md).
+- `callbackFlags`: A value that determines what additional assistance, if any, your application can give the Apple Event Manager when it parses the object specifier. The value is specified by adding the desired constants described in [`Callback Constants for the AEResolve Function`](apple_events/1572741-callback_constants_for_the_aeres.md). Most applications use `kAEIDoMinimum`.
+- `theToken`: A pointer to a descriptor. On return, a token that identifies the Apple event objects specified by the `objectSpecifier` parameter. (Token is defined in [`AEDisposeToken(_:)`](1446783-aedisposetoken.md).) Your object accessor functions may need to create many tokens to resolve a single object specifier; this parameter contains only the final token that identifies the requested Apple event object. Whenever the `AEResolve` function returns final token to your event handler as the result of the resolving an object specifier passed to `AEResolve`, your application must deallocate the memory used by the token. If your application uses complex tokens, it must dispose of the token by calling [`AEDisposeToken(_:)`](1446783-aedisposetoken.md). If your application uses simple tokens, you can use either [`AEDisposeToken(_:)`](1446783-aedisposetoken.md) or [`AEDisposeDesc(_:)`](1444208-aedisposedesc.md). See [`AEDesc`](aedesc.md).
 
 
 ---

@@ -25,7 +25,7 @@ For more information about how UIKit performs segues involving the Show and Show
 
 ##### Prevent a Segue Based on Dynamic Conditions
 
-When you don’t want the user to leave the current view controller, tell UIKit not to perform a segue by returning false from the [`shouldPerformSegue(withIdentifier:sender:)`](uiviewcontroller/shouldperformsegue(withidentifier:sender:).md) method of the source view controller. Use that method to perform any checks you need to determine whether the segue can proceed. For example, return [`false`](https://developer.apple.com/documentation/Swift/false) if the view controller’s content is invalid and requires corrective user actions. Returning true lets the segue continue, but returning [`false`](https://developer.apple.com/documentation/Swift/false) causes the segue to fail silently.
+When you don’t want the user to leave the current view controller, tell UIKit not to perform a segue by returning false from the [`shouldPerformSegue(withIdentifier:sender:)`](uiviewcontroller/shouldperformsegue(withidentifier:sender:).md) method of the source view controller. Use that method to perform any checks you need to determine whether the segue can proceed. For example, return [`false`](https://developer.apple.com/documentation/swift/false) if the view controller’s content is invalid and requires corrective user actions. Returning true lets the segue continue, but returning [`false`](https://developer.apple.com/documentation/swift/false) causes the segue to fail silently.
 
 ##### Pass Data to the Presented View Controller
 
@@ -51,7 +51,7 @@ Use the delegate design pattern to pass data from a presented view controller ba
 
 Although UIKit handles segues automatically, there are many places where you can perform work related to displaying the new view controller. The following figure shows the flow of events that happens from the time the user triggers a segue until the process is complete. The main place to perform segue-related actions is the current view controller’s [`prepare(for:sender:)`](uiviewcontroller/prepare(for:sender:).md) method, but you also may perform tasks during the creation of the new view controller.
 
-![An illustration of the flow of events that occur when the user triggers a segue. UIKit calls methods of the current view controller to modify the segue’s behavior. ](https://docs-assets.developer.apple.com/published/edeaea13eae34394632d64f139802ad4/media-3379644%402x.png)
+![An illustration of the flow of events that occur when the user triggers a segue. UIKit calls methods of the current view controller to modify the segue’s behavior. ](/images/com.apple.uikit/media-3379644@2x.png)
 
 ## See Also
 

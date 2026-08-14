@@ -32,7 +32,7 @@ Thread safe starting in OS X v10.2.
 
 ## Parameters
 
-- `buffer`: A pointer to memory, allocated by the application, that contains flattened data produced by a previous call to  .
+- `buffer`: A pointer to memory, allocated by the application, that contains flattened data produced by a previous call to [`AEFlattenDesc(_:_:_:_:)`](1441808-aeflattendesc.md).
 - `result`: A null descriptor. On successful completion, points to a descriptor created from the flattened data. The caller is responsible for disposing of the descriptor.
 
 ## See Also

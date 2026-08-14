@@ -20,7 +20,7 @@ class CSLocalizedString
 
 #### Overview
 
-The `CSLocalizedString` class helps you localize text in searchable items. You can use a `CSLocalizedString` object in place of an [`NSString`](https://developer.apple.com/documentation/Foundation/NSString) object to display localized text in search results related to your app.
+The `CSLocalizedString` class helps you localize text in searchable items. You can use a `CSLocalizedString` object in place of an [`NSString`](https://developer.apple.com/documentation/foundation/nsstring) object to display localized text in search results related to your app.
 
 For example, you might use the following code to define a `CSLocalizedString` object for a searchable item you want to identify as “Song” in English:
 
@@ -47,25 +47,25 @@ CSSearchableItem *item = [CSSearchableItem new];
 ## Relationships
 
 ### Inherits From
-- [NSString](../Foundation/NSString.md)
+- [NSString](../foundation/nsstring.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [ExpressibleByExtendedGraphemeClusterLiteral](../Swift/ExpressibleByExtendedGraphemeClusterLiteral.md)
-- [ExpressibleByStringLiteral](../Swift/ExpressibleByStringLiteral.md)
-- [ExpressibleByUnicodeScalarLiteral](../Swift/ExpressibleByUnicodeScalarLiteral.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCoding](../Foundation/NSCoding.md)
-- [NSCopying](../Foundation/NSCopying.md)
-- [NSItemProviderReading](../Foundation/NSItemProviderReading.md)
-- [NSItemProviderWriting](../Foundation/NSItemProviderWriting.md)
-- [NSMutableCopying](../Foundation/NSMutableCopying.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [NSSecureCoding](../Foundation/NSSecureCoding.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [ExpressibleByExtendedGraphemeClusterLiteral](../swift/expressiblebyextendedgraphemeclusterliteral.md)
+- [ExpressibleByStringLiteral](../swift/expressiblebystringliteral.md)
+- [ExpressibleByUnicodeScalarLiteral](../swift/expressiblebyunicodescalarliteral.md)
+- [Hashable](../swift/hashable.md)
+- [NSCoding](../foundation/nscoding.md)
+- [NSCopying](../foundation/nscopying.md)
+- [NSItemProviderReading](../foundation/nsitemproviderreading.md)
+- [NSItemProviderWriting](../foundation/nsitemproviderwriting.md)
+- [NSMutableCopying](../foundation/nsmutablecopying.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

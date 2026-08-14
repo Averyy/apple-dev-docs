@@ -41,7 +41,7 @@ Use an [`IOBufferMemoryDescriptor`](iobuffermemorydescriptor.md) object to store
   Creates a buffer memory descriptor and allocates enough bytes to meet the specified capacity.
 - [+ withCopy](iobuffermemorydescriptor/3074961-withcopy.md)
   Creates a memory buffer with memory descriptor for that buffer.
-- [- free](../driverkit/iobuffermemorydescriptor/free.md)
+- [- free](iobuffermemorydescriptor/3180456-free.md)
   Performs any final cleanup for the memory buffer descriptor object.
 ### Configuring the Descriptor
 - [- getCapacity](iobuffermemorydescriptor/1574844-getcapacity.md)
@@ -61,15 +61,15 @@ Use an [`IOBufferMemoryDescriptor`](iobuffermemorydescriptor.md) object to store
 ### Managing Internal Structures
 - [ExpansionData](ioservice/expansiondata.md)
 - [reserved](iobuffermemorydescriptor/reserved.md)
-- [+ Create](../driverkit/iobuffermemorydescriptor/create.md)
+- [+ Create](iobuffermemorydescriptor/3180450-create.md)
   Creates a new memory buffer descriptor object in the current process space.
 - [+ Create_Impl](iobuffermemorydescriptor/3074954-create_impl.md)
 - [+ Create_Invoke](iobuffermemorydescriptor/3180451-create_invoke.md)
-- [- GetAddressRange](../driverkit/iobuffermemorydescriptor/getaddressrange.md)
+- [- GetAddressRange](iobuffermemorydescriptor/3180453-getaddressrange.md)
   Returns the address and length of the memory buffer.
 - [- getMetaClass](iobuffermemorydescriptor/1574832-getmetaclass.md)
 - [+ SetLength_Invoke](iobuffermemorydescriptor/3131492-setlength_invoke.md)
-- [- SetLength](../driverkit/iobuffermemorydescriptor/setlength.md)
+- [- SetLength](iobuffermemorydescriptor/3180454-setlength.md)
   Changes the length of the memory buffer.
 - [- SetLength_Impl](iobuffermemorydescriptor/3131491-setlength_impl.md)
 - [- Dispatch](iobuffermemorydescriptor/3180452-dispatch.md)

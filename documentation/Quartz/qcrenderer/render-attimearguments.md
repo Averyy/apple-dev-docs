@@ -16,7 +16,7 @@ func render(atTime time: TimeInterval, arguments: [AnyHashable : Any]!) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/Swift/true) if successful.
+[`true`](https://developer.apple.com/documentation/swift/true) if successful.
 
 #### Discussion
 
@@ -30,7 +30,7 @@ All OpenGL states are preserved  *except* the following:
 
 If you are using double buffers, keep in mind that the `renderAtTime:arguments:` method does not swap the front and back buffers of the OpenGL context. You must perform the swap yourself by calling the OpenGL command `flushBuffer` on the context associated with the renderer.
 
-If you are interleaving OpenGL code with rendering of a composition, make sure that the OpenGL context is current. If you are using the [`NSOpenGLContext`](https://developer.apple.com/documentation/AppKit/NSOpenGLContext) class, call the [`makeCurrentContext()`](https://developer.apple.com/documentation/AppKit/NSOpenGLContext/makeCurrentContext()) method prior to rendering. If you are using the CGL API, call the function `CGLSetCurrentContext(_:)`.
+If you are interleaving OpenGL code with rendering of a composition, make sure that the OpenGL context is current. If you are using the [`NSOpenGLContext`](https://developer.apple.com/documentation/appkit/nsopenglcontext) class, call the [`makeCurrentContext()`](https://developer.apple.com/documentation/appkit/nsopenglcontext/makecurrentcontext()) method prior to rendering. If you are using the CGL API, call the function `CGLSetCurrentContext(_:)`.
 
 ## Parameters
 

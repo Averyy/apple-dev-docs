@@ -27,7 +27,7 @@ Returns the initialized URL components object, or `nil` if the URL could not be 
 ## Parameters
 
 - `url`: The URL to parse.
-- `resolve`: Controls whether the URL should be resolved against its base URL before parsing. If [`true`](https://developer.apple.com/documentation/Swift/true), and if the `url` parameter contains a relative URL, the original URL is resolved against its base URL before parsing by calling the [`absoluteURL`](nsurl/absoluteurl.md) method. Otherwise, the string portion is used by itself.
+- `resolve`: Controls whether the URL should be resolved against its base URL before parsing. If [`true`](https://developer.apple.com/documentation/swift/true), and if the `url` parameter contains a relative URL, the original URL is resolved against its base URL before parsing by calling the [`absoluteURL`](nsurl/absoluteurl.md) method. Otherwise, the string portion is used by itself.
 
 ## See Also
 

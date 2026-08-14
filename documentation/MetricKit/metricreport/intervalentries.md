@@ -23,7 +23,7 @@ let intervalEntries: [MetricReport.IntervalEntry]
 
 #### Discussion
 
-Use the [`fullDayEntry`](https://developer.apple.com/documentation/Swift/Array/fullDayEntry) convenience property on the collection to access the entry covering the entire 24-hour reporting period. This is the entry with the longest [`duration`](metricreport/intervalentry/duration.md):
+Use the [`fullDayEntry`](https://developer.apple.com/documentation/swift/array/fulldayentry) convenience property on the collection to access the entry covering the entire 24-hour reporting period. This is the entry with the longest [`duration`](metricreport/intervalentry/duration.md):
 
 ```swift
 let entry = report.intervalEntries.fullDayEntry

@@ -94,7 +94,7 @@ func addBoundaryTimeObserver() {
 
 ## Parameters
 
-- `times`: An array of `NSValue` objects containing [`CMTime`](https://developer.apple.com/documentation/CoreMedia/CMTime) values that represent the times at which to invoke the callback. The system raises an exception if you pass an empty array.
+- `times`: An array of `NSValue` objects containing [`CMTime`](https://developer.apple.com/documentation/coremedia/cmtime) values that represent the times at which to invoke the callback. The system raises an exception if you pass an empty array.
 - `queue`: A *serial* queue onto which `block` should be enqueued. Passing a concurrent queue is not supported and will result in undefined behavior. If you pass `nil`, the main queue is used.
 - `block`: The block to be invoked when any of the times in `times` is crossed during normal playback.
 

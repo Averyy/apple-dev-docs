@@ -16,7 +16,7 @@ kern_return_t RequestDeviceConfigurationChange(uint64_t in_change_action, OSObje
 
 #### Return Value
 
-[`kIOReturnSuccess`](https://developer.apple.com/documentation/DriverKit/kIOReturnSuccess) on success, or another value if an error occurs. For a list of error codes, see [`Error Codes`](https://developer.apple.com/documentation/DriverKit/error-codes).
+[`kIOReturnSuccess`](https://developer.apple.com/documentation/driverkit/kioreturnsuccess) on success, or another value if an error occurs. For a list of error codes, see [`Error Codes`](https://developer.apple.com/documentation/driverkit/error-codes).
 
 #### Discussion
 
@@ -41,7 +41,7 @@ Changing the safety offset.
 ## Parameters
 
 - `in_change_action`: A [`uint64_t`](https://developer.apple.com/documentation/kernel/uint64_t) that indicates the action the device object takes. The invocation of [`PerformDeviceConfigurationChange`](iouseraudioclockdevice/performdeviceconfigurationchange.md) passes this same action back to your driver. This value is purely for the driver’s use; the host doesn’t look at this value.
-- `in_change_info`: A pointer to an [`OSObject`](https://developer.apple.com/documentation/DriverKit/OSObject) containing information about the configuration change. The invocation of [`PerformDeviceConfigurationChange`](iouseraudioclockdevice/performdeviceconfigurationchange.md) passes this same info back to your driver. This value is purely for the driver’s use; the host doesn’t look at this value.
+- `in_change_info`: A pointer to an [`OSObject`](https://developer.apple.com/documentation/driverkit/osobject) containing information about the configuration change. The invocation of [`PerformDeviceConfigurationChange`](iouseraudioclockdevice/performdeviceconfigurationchange.md) passes this same info back to your driver. This value is purely for the driver’s use; the host doesn’t look at this value.
 
 
 ---

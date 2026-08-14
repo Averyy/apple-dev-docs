@@ -32,8 +32,8 @@ Thread safe starting in OS X v10.3.
 
 ## Parameters
 
-- `allocator`: An object that is used to allocates and deallocate any Core Foundation types created or returned by this API. You can pass   to get the default allocation behavior. The allocator is based on  , an opaque data type described in the Core Foundation Reference Documentation.
-- `url`: A   reference identifying the remote host and port on which to look for processes. See the Core Foundation Reference Documentation for a description of the   data type.
+- `allocator`: An object that is used to allocates and deallocate any Core Foundation types created or returned by this API. You can pass `kCFAllocatorDefault` to get the default allocation behavior. The allocator is based on `CFAllocatorRef`, an opaque data type described in the Core Foundation Reference Documentation.
+- `url`: A `CFURL` reference identifying the remote host and port on which to look for processes. See the Core Foundation Reference Documentation for a description of the `CFURLRef` data type.
 
 ## See Also
 

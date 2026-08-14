@@ -32,8 +32,8 @@ protocol DataStoreConfiguration : Hashable
 ## Relationships
 
 ### Inherits From
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
 ### Conforming Types
 - [ModelConfiguration](modelconfiguration.md)
 

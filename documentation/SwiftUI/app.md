@@ -108,15 +108,15 @@ extension MyCustomType: Transition {
 
 ## See Also
 
-- [Destination Video](../visionOS/destination-video.md)
+- [Destination Video](../visionos/destination-video.md)
   Leverage SwiftUI to build an immersive media experience in a multiplatform app.
-- [Hello World](../visionOS/World.md)
+- [Hello World](../visionos/world.md)
   Use windows, volumes, and immersive spaces to teach people about the Earth.
 - [Backyard Birds: Building an app with SwiftData and widgets](backyard-birds-sample.md)
   Create an app with persistent data, interactive widgets, and an all new in-app purchase experience.
 - [Food Truck: Building a SwiftUI multiplatform app](food-truck-building-a-swiftui-multiplatform-app.md)
   Create a single codebase and app target for Mac, iPad, and iPhone.
-- [Fruta: Building a feature-rich app with SwiftUI](../AppClip/fruta-building-a-feature-rich-app-with-swiftui.md)
+- [Fruta: Building a feature-rich app with SwiftUI](../appclip/fruta-building-a-feature-rich-app-with-swiftui.md)
   Create a shared codebase to build a multiplatform app that offers widgets and an App Clip.
 - [Migrating to the SwiftUI life cycle](migrating-to-the-swiftui-life-cycle.md)
   Use a scene-based life cycle in SwiftUI while keeping your existing codebase.

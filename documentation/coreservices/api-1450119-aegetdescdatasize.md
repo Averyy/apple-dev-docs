@@ -28,7 +28,7 @@ Thread safe starting in OS X v10.2.
 
 ## Parameters
 
-- `theAEDesc`: A pointer to the descriptor to obtain the data size for. See  .
+- `theAEDesc`: A pointer to the descriptor to obtain the data size for. See [`AEDesc`](aedesc.md).
 
 ## See Also
 

@@ -17,7 +17,7 @@ void module::setSize(float2 size)
 
 #### Discussion
 
-> **Note**: ![Graph](https://docs-assets.developer.apple.com/published/214c655c673401ef5019802fe30a24c9/module__setSize.svg)
+> **Note**: ![Graph](/images/com.apple.computegraph/module__setSize.svg)
 
 ## Parameters
 

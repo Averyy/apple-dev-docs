@@ -36,7 +36,7 @@ When you use the [`onPencilSqueeze(perform:)`](view/onpencilsqueeze(perform:).md
 ## Relationships
 
 ### Conforms To
-- [Equatable](../Swift/Equatable.md)
+- [Equatable](../swift/equatable.md)
 
 ## See Also
 

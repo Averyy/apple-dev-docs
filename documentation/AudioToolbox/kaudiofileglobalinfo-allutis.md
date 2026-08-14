@@ -21,7 +21,7 @@ var kAudioFileGlobalInfo_AllUTIs: AudioFilePropertyID { get }
 
 #### Discussion
 
-If you access this property, your app is responsible for releasing the [`CFArray`](https://developer.apple.com/documentation/CoreFoundation/CFArray) object.
+If you access this property, your app is responsible for releasing the [`CFArray`](https://developer.apple.com/documentation/corefoundation/cfarray) object.
 
 When accessing this property’s value, you must set the `inSpecifier` parameter to `NULL`.
 

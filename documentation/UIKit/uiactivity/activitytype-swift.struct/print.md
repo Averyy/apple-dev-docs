@@ -19,7 +19,7 @@ static let print: UIActivity.ActivityType
 
 #### Discussion
 
-When using this service, you can provide [`UIImage`](uiimage.md) and [`NSData`](https://developer.apple.com/documentation/Foundation/NSData) objects and [`NSURL`](https://developer.apple.com/documentation/Foundation/NSURL) objects pointing to local files as data for the activity items. You can also provide [`UIPrintPageRenderer`](uiprintpagerenderer.md), [`UIPrintFormatter`](uiprintformatter.md), and [`UIPrintInfo`](uiprintinfo.md) objects.
+When using this service, you can provide [`UIImage`](uiimage.md) and [`NSData`](https://developer.apple.com/documentation/foundation/nsdata) objects and [`NSURL`](https://developer.apple.com/documentation/foundation/nsurl) objects pointing to local files as data for the activity items. You can also provide [`UIPrintPageRenderer`](uiprintpagerenderer.md), [`UIPrintFormatter`](uiprintformatter.md), and [`UIPrintInfo`](uiprintinfo.md) objects.
 
 ## See Also
 

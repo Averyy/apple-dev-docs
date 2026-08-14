@@ -56,13 +56,13 @@ When you define your widget, you implement a custom [`TimelineProvider`](timelin
 
 The following is an example of a game widget that displays a character’s health level. When the health level is less than 100 percent, the character recovers at a rate of 25 percent per hour. For example, when the character’s health level is 25 percent, it takes 3 hours to fully recover to 100 percent. The following diagram shows how WidgetKit requests the timeline from the provider, rendering the widget at each time specified in the timeline entries.
 
-![A diagram showing WidgetKit requesting a timeline, the provider generating the timeline, and the progression of time for 3 hours after which WidgetKit requests a new timeline](https://docs-assets.developer.apple.com/published/98d04d83e50d24aa56ec117d99d76a94/WidgetKit-Timeline-At-End%402x.png)
+![A diagram showing WidgetKit requesting a timeline, the provider generating the timeline, and the progression of time for 3 hours after which WidgetKit requests a new timeline](/images/com.apple.WidgetKit/WidgetKit-Timeline-At-End@2x.png)
 
 When WidgetKit initially requests the timeline, the provider creates one with four entries. The first entry represents the current time, followed by three entries at hourly intervals. With the refresh policy set to the default [`atEnd`](timelinereloadpolicy/atend.md), WidgetKit requests a new timeline after the last date in the timeline’s entries. When each date in the timeline arrives, WidgetKit invokes the widget’s content closure and displays the result. After the last timeline entry passes, WidgetKit repeats the process by asking the provider for a new timeline. Because the character’s health has reached 100 percent, the provider responds with a single entry for the current time and a refresh policy set to [`never`](timelinereloadpolicy/never.md). With this setting, WidgetKit doesn’t ask for another timeline until the app uses [`WidgetCenter`](widgetcenter.md) to tell WidgetKit to request a new timeline.
 
 In addition to the `atEnd` and `never` refresh policies, a provider can specify a different date altogether if the timeline might change before or after reaching the end of the entries. For example, if a dragon will appear in 2 hours to challenge the character to a battle, the provider sets the reload policy to [`after(_:)`](timelinereloadpolicy/after(_:).md), passing a date 2 hours in the future. The following diagram shows how WidgetKit, after rendering the widget at the 2-hour mark, requests a new one.
 
-![A diagram showing WidgetKit requesting a timeline, the provider generating the timeline, and WidgetKit requesting a new timeline after 2 hours](https://docs-assets.developer.apple.com/published/9005db8df021afb5c939c9b2651997c0/WidgetKit-Timeline-After-Date%402x.png)
+![A diagram showing WidgetKit requesting a timeline, the provider generating the timeline, and WidgetKit requesting a new timeline after 2 hours](/images/com.apple.WidgetKit/WidgetKit-Timeline-After-Date@2x.png)
 
 Due to the battle with the dragon, the character’s healing will take 2 additional hours to reach 100 percent. The new timeline consists of two entries, one for the current time, and a second entry 2 hours in the future. The timeline specifies `atEnd` for the refresh policy, indicating there are no more known events that might alter the timeline.
 
@@ -80,7 +80,7 @@ Your app can tell WidgetKit to request a new timeline when something affects a w
 WidgetCenter.shared.reloadTimelines(ofKind: "com.mygame.character-detail")
 ```
 
-The `kind` parameter contains the same string as the value used to create the widget’s [`WidgetConfiguration`](https://developer.apple.com/documentation/SwiftUI/WidgetConfiguration).
+The `kind` parameter contains the same string as the value used to create the widget’s [`WidgetConfiguration`](https://developer.apple.com/documentation/swiftui/widgetconfiguration).
 
 If your widgets have user-configurable properties, avoid unnecessary reloads by using WidgetCenter to verify that a widget with the appropriate settings exists. For example, when the game receives a push notification about a character receiving a healing potion, it verifies that a widget is showing that character before reloading the timeline.
 
@@ -103,7 +103,7 @@ WidgetCenter.shared.getCurrentConfigurations { result in
 }
 ```
 
-If your app uses [`WidgetBundle`](https://developer.apple.com/documentation/SwiftUI/WidgetBundle) to support multiple widgets, you can use `WidgetCenter` to reload the timelines for all your widgets. For example, if your widgets require the user to sign in to an account but they have signed out, you can reload all the widgets by calling:
+If your app uses [`WidgetBundle`](https://developer.apple.com/documentation/swiftui/widgetbundle) to support multiple widgets, you can use `WidgetCenter` to reload the timelines for all your widgets. For example, if your widgets require the user to sign in to an account but they have signed out, you can reload all the widgets by calling:
 
 ```swift
 WidgetCenter.shared.reloadAllTimelines()
@@ -119,7 +119,7 @@ Even though your widget doesn’t run continually, it can display time-based inf
 
 ##### Load Data From Your Server Before Updating the Timeline
 
-You may need to load new data from your server before reloading a timeline. To do this, use the system’s URL loading system and a [`URLSession`](https://developer.apple.com/documentation/Foundation/URLSession). To learn more, refer to [`Making network requests in a widget extension`](making-network-requests-in-a-widget-extension.md).
+You may need to load new data from your server before reloading a timeline. To do this, use the system’s URL loading system and a [`URLSession`](https://developer.apple.com/documentation/foundation/urlsession). To learn more, refer to [`Making network requests in a widget extension`](making-network-requests-in-a-widget-extension.md).
 
 ## See Also
 

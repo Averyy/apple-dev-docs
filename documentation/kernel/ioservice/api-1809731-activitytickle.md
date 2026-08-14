@@ -23,8 +23,8 @@ The `activityTickle` method is provided for objects in the system (or for the dr
 
 ## Parameters
 
-- `type`: When   is  ,   is not handled in IOService and should be intercepted by the subclass. When   is  , an activity flag is set and the device state is checked. If the device has been powered down, it is powered up again.
-- `stateNumber`: When   is  ,   contains the desired power state ordinal for the activity. If the device is in a lower state, the superclass will switch it to this state. This is for devices that can handle some accesses in lower power states; the device is powered up only as far as it needs to be for the activity.
+- `type`: When `type` is `kIOPMSubclassPolicy`, `activityTickle` is not handled in IOService and should be intercepted by the subclass. When `type` is `kIOPMSuperclassPolicy1`, an activity flag is set and the device state is checked. If the device has been powered down, it is powered up again.
+- `stateNumber`: When `type` is `kIOPMSuperclassPolicy1`, `stateNumber` contains the desired power state ordinal for the activity. If the device is in a lower state, the superclass will switch it to this state. This is for devices that can handle some accesses in lower power states; the device is powered up only as far as it needs to be for the activity.
 
 ## See Also
 

@@ -34,9 +34,9 @@ struct HoverEffect
 ## Relationships
 
 ### Conforms To
-- [Copyable](../Swift/Copyable.md)
+- [Copyable](../swift/copyable.md)
 - [CustomHoverEffect](customhovereffect.md)
-- [Escapable](../Swift/Escapable.md)
+- [Escapable](../swift/escapable.md)
 
 ## See Also
 

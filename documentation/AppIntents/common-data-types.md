@@ -17,9 +17,9 @@ When creating your app intents or app entities, use existing types for parameter
 - [struct IntentFile](intentfile.md)
   An interface for providing an app entity that represents an on-disk file or file-based resource.
 ### Media
-- [struct AudioSearch](../MediaIntents/AudioSearch.md)
+- [struct AudioSearch](../mediaintents/audiosearch.md)
   Results and metadata for a person’s audio search and playback request with Siri.
-- [Media Intents](../MediaIntents/MediaIntents.md)
+- [Media Intents](../mediaintents/mediaintents.md)
   Enable people to use Siri to find and play media from your app.
 ### Monetary types
 - [struct IntentCurrencyAmount](intentcurrencyamount.md)

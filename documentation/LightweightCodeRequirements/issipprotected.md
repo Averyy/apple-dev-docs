@@ -40,13 +40,13 @@ When you use this constraint to test a running process, it tests whether the pro
 ## Relationships
 
 ### Conforms To
-- [Decodable](../Swift/Decodable.md)
-- [Encodable](../Swift/Encodable.md)
+- [Decodable](../swift/decodable.md)
+- [Encodable](../swift/encodable.md)
 - [LaunchConstraint](launchconstraint.md)
 - [OnDiskConstraint](ondiskconstraint.md)
 - [ProcessConstraint](processconstraint.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

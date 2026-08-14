@@ -51,7 +51,7 @@ At build time, you use the compiler to generate the actual binding information t
 
 Apart from adopting the host app’s required API, an app extension’s only requirement is to establish a communications channel with that app. After launching an app extension, the host app is responsible for initiating an XPC connection to that extension. Accept this connection in your app extension code to start communication with the host.
 
-To accept an incoming XPC connection request, create a custom type that adopts the [`AppExtensionConfiguration`](appextensionconfiguration.md) protocol and initialize your [`AppExtension`](appextension.md) type with it. When the host app initiates an XPC connection, the system redirects the request to the code you provide in this type. Use that code to configure the XPC connection details and call the connection’s [`resume()`](https://developer.apple.com/documentation/Foundation/NSXPCConnection/resume()) method. The following code shows an implementation of the protocol’s [`accept(connection:)`](appextensionconfiguration/accept(connection:).md) method, which is where you put your connection code. In the code, the app extension configures the connection with a local object and the interface that both it and the host app recognize.
+To accept an incoming XPC connection request, create a custom type that adopts the [`AppExtensionConfiguration`](appextensionconfiguration.md) protocol and initialize your [`AppExtension`](appextension.md) type with it. When the host app initiates an XPC connection, the system redirects the request to the code you provide in this type. Use that code to configure the XPC connection details and call the connection’s [`resume()`](https://developer.apple.com/documentation/foundation/nsxpcconnection/resume()) method. The following code shows an implementation of the protocol’s [`accept(connection:)`](appextensionconfiguration/accept(connection:).md) method, which is where you put your connection code. In the code, the app extension configures the connection with a local object and the interface that both it and the host app recognize.
 
 ```swift
 struct ExampleConfiguration<E:ExampleExtension>: AppExtensionConfiguration {
@@ -66,9 +66,9 @@ struct ExampleConfiguration<E:ExampleExtension>: AppExtensionConfiguration {
 }
 ```
 
-If the host app uses the [`XPC`](https://developer.apple.com/documentation/XPC) framework for communication, establish a connection using a [`ConnectionHandler`](connectionhandler.md) structure instead of a custom configuration type. The XPC framework is a lower-level version of the Foundation API that offers better options for communicating with hardened app extensions. The host app might require the use of this framework, especially if its extension point includes the [`AppExtensionPoint.EnhancedSecurity`](appextensionpoint/enhancedsecurity.md) attribute.
+If the host app uses the [`XPC`](https://developer.apple.com/documentation/xpc) framework for communication, establish a connection using a [`ConnectionHandler`](connectionhandler.md) structure instead of a custom configuration type. The XPC framework is a lower-level version of the Foundation API that offers better options for communicating with hardened app extensions. The host app might require the use of this framework, especially if its extension point includes the [`AppExtensionPoint.EnhancedSecurity`](appextensionpoint/enhancedsecurity.md) attribute.
 
-The following code shows the configuration of a text translation app extension that uses the [`XPC`](https://developer.apple.com/documentation/XPC) framework. The app extension’s configuration property returns a [`ConnectionHandler`](connectionhandler.md) type to process incoming requests. The provided closure creates a custom object to handle incoming requests and return a response. The app extension defines the `translate()` method to generate the translation for a host-provided string.
+The following code shows the configuration of a text translation app extension that uses the [`XPC`](https://developer.apple.com/documentation/xpc) framework. The app extension’s configuration property returns a [`ConnectionHandler`](connectionhandler.md) type to process incoming requests. The provided closure creates a custom object to handle incoming requests and return a response. The app extension defines the `translate()` method to generate the translation for a host-provided string.
 
 ```swift
 public extension MyTextTransformerExtension {
@@ -103,7 +103,7 @@ struct TranslateMessage: Codable {
 }
 ```
 
-For more information about using XPC for communicating between processes, see the [`XPC`](https://developer.apple.com/documentation/XPC) framework and the [`XPC`](https://developer.apple.com/documentation/Foundation/xpc) in the Foundation framework.
+For more information about using XPC for communicating between processes, see the [`XPC`](https://developer.apple.com/documentation/xpc) framework and the [`XPC`](https://developer.apple.com/documentation/foundation/xpc) in the Foundation framework.
 
 ## See Also
 

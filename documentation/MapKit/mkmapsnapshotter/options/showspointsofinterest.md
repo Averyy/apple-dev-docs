@@ -20,7 +20,7 @@ var showsPointsOfInterest: Bool { get set }
 
 #### Discussion
 
-When this property is set to [`true`](https://developer.apple.com/documentation/Swift/true), the map displays icons and labels for restaurants, schools, and other relevant points of interest. The default value of this property is [`true`](https://developer.apple.com/documentation/Swift/true).
+When this property is set to [`true`](https://developer.apple.com/documentation/swift/true), the map displays icons and labels for restaurants, schools, and other relevant points of interest. The default value of this property is [`true`](https://developer.apple.com/documentation/swift/true).
 
 ## See Also
 

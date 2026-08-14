@@ -26,11 +26,11 @@ If you maintain a public Swift package, adopting the Swift 6 language mode helps
 
 You can start using new features from Swift 6, like strict concurrency checking, before upgrading your project to the Swift 6 language mode. To enable new language features, open your build settings, and choose Swift Compiler - Upcoming Features; then select Yes next to the features you want to adopt. As you prepare to upgrade to the Swift 6 language version, you can increase the level of concurrency checking by changing the Strict Concurrency Checking build setting from Minimal to Complete.
 
-![A screenshot of Xcode showing the Swift Compiler - Upcoming Features build settings](https://docs-assets.developer.apple.com/published/4d47d0829a1834189c4306ba635ed04d/AdoptingSwift6-features%402x.png)
+![A screenshot of Xcode showing the Swift Compiler - Upcoming Features build settings](/images/com.apple.Swift/AdoptingSwift6-features@2x.png)
 
 To upgrade your project to the Swift 6 language mode, open your build settings, and choose Swift Compiler - Language > Swift Language Version.
 
-![A screenshot of Xcode showing the Swift Compiler - Language build settings](https://docs-assets.developer.apple.com/published/20d5c414f84c361a36ee4ea173668ac7/AdoptingSwift6-language%402x.png)
+![A screenshot of Xcode showing the Swift Compiler - Language build settings](/images/com.apple.Swift/AdoptingSwift6-language@2x.png)
 
 Upgrading to the Swift 6 language mode enables all of the new language features that are part of Swift 6, including strict concurrency checking.
 
@@ -42,7 +42,7 @@ For information about how to migrate, including techniques for interoperating wi
 
 ## See Also
 
-- [Swift updates](../Updates/Swift.md)
+- [Swift updates](../updates/swift.md)
   Learn about important changes to Swift.
 
 

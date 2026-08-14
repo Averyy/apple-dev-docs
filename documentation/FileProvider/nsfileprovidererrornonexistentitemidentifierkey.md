@@ -20,7 +20,7 @@ let NSFileProviderErrorNonExistentItemIdentifierKey: String
 
 #### Discussion
 
-Use this key to access the item’s identifier from a [`noSuchItem`](nsfileprovidererror/nosuchitem.md) error’s [`userInfo`](https://developer.apple.com/documentation/Foundation/NSError/userInfo) dictionary.
+Use this key to access the item’s identifier from a [`noSuchItem`](nsfileprovidererror/nosuchitem.md) error’s [`userInfo`](https://developer.apple.com/documentation/foundation/nserror/userinfo) dictionary.
 
 ## See Also
 

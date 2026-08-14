@@ -23,7 +23,7 @@ protocol NSFetchRequestResult : NSObjectProtocol
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 ### Conforming Types
 - [NSManagedObject](nsmanagedobject.md)
 - [NSManagedObjectID](nsmanagedobjectid.md)

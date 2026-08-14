@@ -24,7 +24,7 @@ var shouldCollectWorkoutEvents: Bool { get set }
 
 #### Discussion
 
-By default, this property is [`true`](https://developer.apple.com/documentation/Swift/true). Set it to [`false`](https://developer.apple.com/documentation/Swift/false) if your app adds its own events to the workout builder, and you want to ignore events from the workout session.
+By default, this property is [`true`](https://developer.apple.com/documentation/swift/true). Set it to [`false`](https://developer.apple.com/documentation/swift/false) if your app adds its own events to the workout builder, and you want to ignore events from the workout session.
 
 You must set this property before calling the workout builder’s [`beginCollection(withStart:completion:)`](hkworkoutbuilder/begincollection(withstart:completion:).md) method.
 

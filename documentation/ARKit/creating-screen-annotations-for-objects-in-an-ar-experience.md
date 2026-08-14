@@ -13,7 +13,7 @@ Annotate an AR experience with virtual sticky notes that you display onscreen ov
 
 At times, the user may want to annotate real or virtual objects in your AR experience. For example, they might want to place a virtual name plate on paintings at a museum. By fixing annotations to the screen, you enable the user to annotate their AR experience in *screen space*. To demonstrate screen-space annotations, this sample app enables the capability to tap the screen to place one or more virtual sticky notes with text in the real world.
 
-Text displayed in screen space remains readable at all viewing angles and distances. The sample app implements sticky notes using a [`UITextView`](https://developer.apple.com/documentation/UIKit/UITextView) that’s flush with the screen, which allows the user to quickly define the note’s text using regular touch input. Using UIKit to annotate an AR experience also provides the benefits of localization and accessibility.
+Text displayed in screen space remains readable at all viewing angles and distances. The sample app implements sticky notes using a [`UITextView`](https://developer.apple.com/documentation/uikit/uitextview) that’s flush with the screen, which allows the user to quickly define the note’s text using regular touch input. Using UIKit to annotate an AR experience also provides the benefits of localization and accessibility.
 
 > **Note**: This sample uses RealityKit to anchor virtual content in the real world. RealityKit requires iOS 13. ARKit is not available in iOS Simulator.
 
@@ -34,7 +34,7 @@ func arViewGestureSetup() {
 }
 ```
 
-When the input handler is called, you read the tap screen coordinates by calling [`location(in:)`](https://developer.apple.com/documentation/UIKit/UIGestureRecognizer/location(in:)).
+When the input handler is called, you read the tap screen coordinates by calling [`location(in:)`](https://developer.apple.com/documentation/uikit/uigesturerecognizer/location(in:)).
 
 ```swift
 let touchLocation = sender.location(in: arView)
@@ -53,7 +53,7 @@ If ARKit finds a planar surface where the user tapped, the ray-cast result provi
 
 #### Anchor a Sticky Note in the Environment
 
-To keep track of a real-world location, you create an anchor positioned there. RealityKit implements an anchor as an [`Entity`](https://developer.apple.com/documentation/RealityKit/Entity) conforming to [`HasAnchoring`](https://developer.apple.com/documentation/RealityKit/HasAnchoring). Thus, you implement those protocols when designing a sticky note in RealityKit.
+To keep track of a real-world location, you create an anchor positioned there. RealityKit implements an anchor as an [`Entity`](https://developer.apple.com/documentation/realitykit/entity) conforming to [`HasAnchoring`](https://developer.apple.com/documentation/realitykit/hasanchoring). Thus, you implement those protocols when designing a sticky note in RealityKit.
 
 ```swift
 class StickyNoteEntity: Entity, HasAnchoring, HasScreenSpaceView {
@@ -92,7 +92,7 @@ struct ScreenSpaceComponent: Component {
     //...
 ```
 
-As a prepackaged UI element that renders text for you, [`UITextView`](https://developer.apple.com/documentation/UIKit/UITextView) is useful as a screen-space annotation.
+As a prepackaged UI element that renders text for you, [`UITextView`](https://developer.apple.com/documentation/uikit/uitextview) is useful as a screen-space annotation.
 
 ```swift
 class StickyNoteView: UIView {
@@ -123,7 +123,7 @@ guard let stickyView = note.view else { return }
 arView.insertSubview(stickyView, belowSubview: trashZone)
 ```
 
-To put the annotation in the right place on the screen, ask the [`ARView`](https://developer.apple.com/documentation/RealityKit/ARView) to convert its entity’s world location to a 2D screen point.
+To put the annotation in the right place on the screen, ask the [`ARView`](https://developer.apple.com/documentation/realitykit/arview) to convert its entity’s world location to a 2D screen point.
 
 ```swift
 guard let projectedPoint = arView.project(note.position) else { return }
@@ -143,7 +143,7 @@ view.frame.origin = CGPoint(x: centerPoint.x, y: centerPoint.y)
 
 #### Update the Annotations Position
 
-Because users move their device during an AR experience, the annotation’s screen position quickly becomes out of sync with its anchor’s world position. To keep the annotation’s screen position accurate, call [`ARView`](https://developer.apple.com/documentation/RealityKit/ARView)‘s `project` function every frame, updating the annotation’s position with the result.
+Because users move their device during an AR experience, the annotation’s screen position quickly becomes out of sync with its anchor’s world position. To keep the annotation’s screen position accurate, call [`ARView`](https://developer.apple.com/documentation/realitykit/arview)‘s `project` function every frame, updating the annotation’s position with the result.
 
 ```swift
 // Updates the screen position of the note based on its visibility
@@ -153,7 +153,7 @@ note.updateScreenPosition()
 
 #### Handle User Interaction
 
-A benefit of using [`UIView`](https://developer.apple.com/documentation/UIKit/UIView) types for screen annotations is that they simplify user interaction. The sample implements sticky notes using [`UITextView`](https://developer.apple.com/documentation/UIKit/UITextView), which enables users to more easily edit their text. The sample implements minimal gesture recognizer code to manage sticky notes.
+A benefit of using [`UIView`](https://developer.apple.com/documentation/uikit/uiview) types for screen annotations is that they simplify user interaction. The sample implements sticky notes using [`UITextView`](https://developer.apple.com/documentation/uikit/uitextview), which enables users to more easily edit their text. The sample implements minimal gesture recognizer code to manage sticky notes.
 
 The following code enables the capability to create a note by tapping the screen.
 
@@ -169,7 +169,7 @@ func tappedOnARView(_ sender: UITapGestureRecognizer) {
 }
 ```
 
-By implementing its own tap gesture recognizer to control editing, [`UITextView`](https://developer.apple.com/documentation/UIKit/UITextView)  enables the user to tap an existing note to edit its text. To be notified when the user edits a note, override [`UITextView`](https://developer.apple.com/documentation/UIKit/UITextView)’s `textViewDidBeginEditing(_ textView:)` delegate callback.
+By implementing its own tap gesture recognizer to control editing, [`UITextView`](https://developer.apple.com/documentation/uikit/uitextview)  enables the user to tap an existing note to edit its text. To be notified when the user edits a note, override [`UITextView`](https://developer.apple.com/documentation/uikit/uitextview)’s `textViewDidBeginEditing(_ textView:)` delegate callback.
 
 ```swift
 extension ViewController: UITextViewDelegate {
@@ -201,7 +201,7 @@ func panOnStickyView(_ sender: UIPanGestureRecognizer) {
 }
 ```
 
-When the user pans to reposition a sticky note, you convert the screen touch location to a 3D world position using [`raycast(from:allowing:alignment:)`](https://developer.apple.com/documentation/RealityKit/ARView/raycast(from:allowing:alignment:)). The user can then reposition the sticky note’s anchor in the real world versus simply moving the annotation to a new arbitrary screen location. If a ray cast from the final screen location in the pan gesture doesn’t produce an intersection with a 3D world location, don’t move the sticky note there.
+When the user pans to reposition a sticky note, you convert the screen touch location to a 3D world position using [`raycast(from:allowing:alignment:)`](https://developer.apple.com/documentation/realitykit/arview/raycast(from:allowing:alignment:)). The user can then reposition the sticky note’s anchor in the real world versus simply moving the annotation to a new arbitrary screen location. If a ray cast from the final screen location in the pan gesture doesn’t produce an intersection with a 3D world location, don’t move the sticky note there.
 
 ```swift
 fileprivate func attemptRepositioning(_ stickyView: StickyNoteView) {
@@ -253,7 +253,7 @@ if shouldAnimate {
     // ...
 ```
 
-To animate the note’s movement, you continually set its location using a [`UIViewPropertyAnimator`](https://developer.apple.com/documentation/UIKit/UIViewPropertyAnimator).
+To animate the note’s movement, you continually set its location using a [`UIViewPropertyAnimator`](https://developer.apple.com/documentation/uikit/uiviewpropertyanimator).
 
 ```swift
 func animateTo(_ point: CGPoint) {

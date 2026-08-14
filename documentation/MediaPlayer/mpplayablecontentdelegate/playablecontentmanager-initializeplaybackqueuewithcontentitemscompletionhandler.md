@@ -23,13 +23,13 @@ iOS calls this method when the user performs an action that, in context, might i
 
 Use this method only to suggest content. Don’t begin playback of content in this method—do so only upon receiving a `Play` command or when the playable content manager requests to play something else.
 
-After preparing content for playing, call the provided `completionHandler` block with an argument of [`nil`](https://developer.apple.com/documentation/ObjectiveC/nil-227m0); or, if your app can’t prepare content, call the completion handler an error that indicates the reason.
+After preparing content for playing, call the provided `completionHandler` block with an argument of [`nil`](https://developer.apple.com/documentation/objectivec/nil-227m0); or, if your app can’t prepare content, call the completion handler an error that indicates the reason.
 
 ## Parameters
 
 - `contentManager`: The content manager that initiated the request.
 - `contentItems`: The content items to load.
-- `completionHandler`: A block that the system calls after content is ready for playback. The block takes the following parameter: - **error**: Pass [`nil`](https://developer.apple.com/documentation/ObjectiveC/nil-227m0) if playback successfully began. If playback can’t begin, pass an error to indicate the reason.
+- `completionHandler`: A block that the system calls after content is ready for playback. The block takes the following parameter: - **error**: Pass [`nil`](https://developer.apple.com/documentation/objectivec/nil-227m0) if playback successfully began. If playback can’t begin, pass an error to indicate the reason.
 
 ## See Also
 

@@ -34,7 +34,7 @@ If the type can’t be decoded from the [`userInfo`](nsuseractivity/userinfo.md)
 
 ## Parameters
 
-- `type`: The type to decode from [`userInfo`](nsuseractivity/userinfo.md). The `type` must conform to [`Codable`](https://developer.apple.com/documentation/Swift/Codable).
+- `type`: The type to decode from [`userInfo`](nsuseractivity/userinfo.md). The `type` must conform to [`Codable`](https://developer.apple.com/documentation/swift/codable).
 
 ## See Also
 

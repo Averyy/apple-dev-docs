@@ -339,7 +339,7 @@ When this method returns, the configuration change is complete, and the system r
 
 ## See Also
 
-- [com.apple.developer.driverkit.family.midi](../BundleResources/Entitlements/com.apple.developer.driverkit.family.midi.md)
+- [com.apple.developer.driverkit.family.midi](../bundleresources/entitlements/com.apple.developer.driverkit.family.midi.md)
   A Boolean value that indicates whether to match the driver against devices that support MIDI.
 
 

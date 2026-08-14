@@ -41,11 +41,11 @@ Additionally, your widget’s buttons and toggles behave differently to match th
 - If the vehicle supports touch input, people tap a widget’s buttons and toggles to perform their functionality.
 - If the vehicle doesn’t have a touchscreen, widgets and buttons are inactive, and people can’t tap the widget to open your app in CarPlay or on their phone.
 
-> **Note**: CarPlay integration is only available to apps with specific functionality. For more information, see [`CarPlay`](https://developer.apple.com/documentation/CarPlay).
+> **Note**: CarPlay integration is only available to apps with specific functionality. For more information, see [`CarPlay`](https://developer.apple.com/documentation/carplay).
 
 ##### Test Widgets in Carplay
 
-To test widgets in CarPlay, preview your widget in Xcode to verify that your widget works in StandBy and the CarPlay Simulator. For more information, refer to [`Previewing widgets and Live Activities in Xcode`](previewing-widgets-and-live-activities-in-xcode.md) and [`Using the CarPlay Simulator`](https://developer.apple.com/documentation/CarPlay/using-the-carplay-simulator).
+To test widgets in CarPlay, preview your widget in Xcode to verify that your widget works in StandBy and the CarPlay Simulator. For more information, refer to [`Previewing widgets and Live Activities in Xcode`](previewing-widgets-and-live-activities-in-xcode.md) and [`Using the CarPlay Simulator`](https://developer.apple.com/documentation/carplay/using-the-carplay-simulator).
 
 ## See Also
 

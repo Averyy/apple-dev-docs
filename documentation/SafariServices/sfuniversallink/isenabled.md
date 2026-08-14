@@ -21,7 +21,7 @@ This Boolean property indicates if the universal link is enabled.
 When enabled, this property has two defined behaviors:
 
 1. If an application opens the universal link, the system opens the link in the native application represented by the application URL property instead of the browser.
-2. If a browser opens the universal link, it can choose to open the URL using [`open(_:withApplicationAt:configuration:completionHandler:)`](https://developer.apple.com/documentation/AppKit/NSWorkspace/open(_:withApplicationAt:configuration:completionHandler:)), or can present other information to the user as appropriate.
+2. If a browser opens the universal link, it can choose to open the URL using [`open(_:withApplicationAt:configuration:completionHandler:)`](https://developer.apple.com/documentation/appkit/nsworkspace/open(_:withapplicationat:configuration:completionhandler:)), or can present other information to the user as appropriate.
 
 When this property is disabled, the browser simply opens the URL as it normally would.
 

@@ -23,11 +23,11 @@ func peripheralData(withMeasuredPower measuredPower: NSNumber?) -> NSMutableDict
 
 #### Return Value
 
-A dictionary of data that you can use in conjunction with a [`CBPeripheralManager`](https://developer.apple.com/documentation/CoreBluetooth/CBPeripheralManager) to advertise the current device as a beacon.
+A dictionary of data that you can use in conjunction with a [`CBPeripheralManager`](https://developer.apple.com/documentation/corebluetooth/cbperipheralmanager) to advertise the current device as a beacon.
 
 #### Discussion
 
-The returned dictionary encodes the beacon’s identifying information, along with other information needed to advertise the beacon. You don’t need to access the dictionary contents directly. Pass the dictionary to the [`startAdvertising(_:)`](https://developer.apple.com/documentation/CoreBluetooth/CBPeripheralManager/startAdvertising(_:)) method of a [`CBPeripheralManager`](https://developer.apple.com/documentation/CoreBluetooth/CBPeripheralManager) to begin advertising the beacon.
+The returned dictionary encodes the beacon’s identifying information, along with other information needed to advertise the beacon. You don’t need to access the dictionary contents directly. Pass the dictionary to the [`startAdvertising(_:)`](https://developer.apple.com/documentation/corebluetooth/cbperipheralmanager/startadvertising(_:)) method of a [`CBPeripheralManager`](https://developer.apple.com/documentation/corebluetooth/cbperipheralmanager) to begin advertising the beacon.
 
 ## Parameters
 

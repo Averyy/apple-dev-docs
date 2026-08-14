@@ -18,23 +18,23 @@ The Shader editor shows your source code in the context of an executed function,
 
 In addition to the source containing the executed function, you can also edit other files within the Metal library that the executed function requires. Click the Toggle Left Sidebar button on the bottom left to reveal the source files outline. Then, select another file.
 
-![A screenshot of the Shader editor showing a list of shader source files on the left and the contents of the selected shader source file on the right.](https://docs-assets.developer.apple.com/published/2676ede9b5b80647e96166d46d3c2027/gputools-metal-debugger-se-source%402x.png)
+![A screenshot of the Shader editor showing a list of shader source files on the left and the contents of the selected shader source file on the right.](/images/com.apple.Xcode/gputools-metal-debugger-se-source@2x.png)
 
 ##### View Per Line Performance Metrics
 
 You can view per-line performance metrics in the Shader editor after profiling finishes. This happens automatically if you select Profile after Replay in the Metal Capture popover (see [`Capturing a Metal workload in Xcode`](capturing-a-metal-workload-in-xcode.md)) or Profile GPU Trace in the Replay window (see [`Replaying a GPU trace file`](replaying-a-gpu-trace-file.md)). Alternatively, you can profile directly within the Shader editor by clicking the Generate button in the top right corner.
 
-![A screenshot of the Shader editor highlighting the Generate button at the top right.](https://docs-assets.developer.apple.com/published/0a3618d437b6f53d12ed4a946db4314d/gputools-metal-debugger-se-profile-generate%402x.png)
+![A screenshot of the Shader editor highlighting the Generate button at the top right.](/images/com.apple.Xcode/gputools-metal-debugger-se-profile-generate@2x.png)
 
 Then, wait for profiling to finish. You can see its status in the activity bar at the top of your Xcode window.
 
-After profiling your Metal workload, the Shader editor shows statistics on each line. For devices with a GPU in the Apple 4 family or later, there’s a pie chart to the right of the numeric statistics to help you improve the performance for a function or a line of code. For more information on Apple GPU family 4 devices, see [`Tailor your apps for Apple GPUs and tile-based deferred rendering`](https://developer.apple.com/documentation/Metal/tailor-your-apps-for-apple-gpus-and-tile-based-deferred-rendering) and [`Metal feature set tables`](https://developer.apple.comhttps://developer.apple.com/metal/Metal-Feature-Set-Tables.pdf).
+After profiling your Metal workload, the Shader editor shows statistics on each line. For devices with a GPU in the Apple 4 family or later, there’s a pie chart to the right of the numeric statistics to help you improve the performance for a function or a line of code. For more information on Apple GPU family 4 devices, see [`Tailor your apps for Apple GPUs and tile-based deferred rendering`](https://developer.apple.com/documentation/metal/tailor-your-apps-for-apple-gpus-and-tile-based-deferred-rendering) and [`Metal feature set tables`](https://developer.apple.comhttps://developer.apple.com/metal/Metal-Feature-Set-Tables.pdf).
 
-![A screenshot of the Shader editor highlighting the per-line shader profiling data next to the source code. It displays weights in percentages and categorical breakdowns in pie charts.](https://docs-assets.developer.apple.com/published/3deba516335f4981cfc8c4c13c3e8073/gputools-metal-debugger-se-numbers%402x.png)
+![A screenshot of the Shader editor highlighting the per-line shader profiling data next to the source code. It displays weights in percentages and categorical breakdowns in pie charts.](/images/com.apple.Xcode/gputools-metal-debugger-se-numbers@2x.png)
 
 You can hover the pointer over the pie chart to enlarge it and show more detail about the work that the GPU performed while executing the line of code. The work a GPU performs can be categorized as memory, ALU, synchronization, or control flow.
 
-![A screenshot of the Shader editor showing the categorical performance breakdown of a shader line in the popover.](https://docs-assets.developer.apple.com/published/dd7ed266d6266e81a5bb9e9cb0837ce4/gputools-metal-debugger-se-profiler-numbers%402x.png)
+![A screenshot of the Shader editor showing the categorical performance breakdown of a shader line in the popover.](/images/com.apple.Xcode/gputools-metal-debugger-se-profiler-numbers@2x.png)
 
 By understanding the activities that the GPU executes for each line in your shader, you can infer any necessary code changes to improve the shader performance.
 
@@ -51,17 +51,17 @@ By understanding the activities that the GPU executes for each line in your shad
 
 To ensure you see the most up-to-date profiling numbers, set your app’s deployment target to the matching OS version, even if temporarily. The Shader editor displays a warning at the top if the deployment target doesn’t match your OS version.
 
-![A screenshot showing a warning about a mismatching deployment target and OS version.](https://docs-assets.developer.apple.com/published/8f28d38c613b07944bf8035498be374d/gputools-metal-debugger-se-profile-warnings%402x.png)
+![A screenshot showing a warning about a mismatching deployment target and OS version.](/images/com.apple.Xcode/gputools-metal-debugger-se-profile-warnings@2x.png)
 
 You can change the deployment target in the Xcode project settings. If you change the deployment target temporarily, don’t forget to change it back before deploying your app.
 
-![A screenshot of the Xcode project editor showing the drop-down menu to choose a minimum deployment target.](https://docs-assets.developer.apple.com/published/c2400502e7aeb292ef214224d02589ab/gputools-metal-debugger-se-deployment-target%402x.png)
+![A screenshot of the Xcode project editor showing the drop-down menu to choose a minimum deployment target.](/images/com.apple.Xcode/gputools-metal-debugger-se-deployment-target@2x.png)
 
 ##### Update Your Shader
 
 After changing a shader, you can update the captured frame with the new source code by clicking the Reload Shaders button in the debug bar.
 
-![A screenshot of the Reload Shaders button in the debug bar.](https://docs-assets.developer.apple.com/published/3772f6e2fc52fa9d8f2252a384c418df/gputools-metal-debugger-se-reload%402x.png)
+![A screenshot of the Reload Shaders button in the debug bar.](/images/com.apple.Xcode/gputools-metal-debugger-se-reload@2x.png)
 
 After updating the captured frame, Xcode does the following:
 
@@ -74,11 +74,11 @@ After updating the captured frame, Xcode does the following:
 
 You can profile using a specific performance state by clicking the GPU Profiler button in the debug bar.
 
-![A screenshot of the GPU Profiler button.](https://docs-assets.developer.apple.com/published/68df1c3d2ba412e5c521788ae7a981a1/gputools-metal-debugger-se-induce-performance-0%402x.png)
+![A screenshot of the GPU Profiler button.](/images/com.apple.Xcode/gputools-metal-debugger-se-induce-performance-0@2x.png)
 
 Then, select your desired performance state.
 
-![A screenshot of the GPU Profiler popover to choose a performance state.](https://docs-assets.developer.apple.com/published/61daf532caabadf630af1cb1f3cd3bbf/gputools-metal-debugger-se-induce-performance-1%402x.png)
+![A screenshot of the GPU Profiler popover to choose a performance state.](/images/com.apple.Xcode/gputools-metal-debugger-se-induce-performance-1@2x.png)
 
 If your shader is producing incorrect results, you can also debug it. For more information, see [`Debugging the shaders within a draw command or compute dispatch`](debugging-the-shaders-within-a-draw-command-or-compute-dispatch.md).
 

@@ -18,7 +18,7 @@ class TVCollectionViewFullScreenLayout
 
 Use this class to create a full-screen browsing experience. Full-screen layouts are an immersive way to present and navigate through content.
 
-![A diagram showing the TVCollectionViewFullScreenLayout. One cell is centered, and two cells are peeking from the left and right sides.](https://docs-assets.developer.apple.com/published/dc256aae53b2cb0d0bc0e88c31ab8fa5/media-3332103%402x.png)
+![A diagram showing the TVCollectionViewFullScreenLayout. One cell is centered, and two cells are peeking from the left and right sides.](/images/com.apple.tvuikit/media-3332103@2x.png)
 
 ## Topics
 
@@ -45,15 +45,15 @@ Use this class to create a full-screen browsing experience. Full-screen layouts 
 ## Relationships
 
 ### Inherits From
-- [UICollectionViewLayout](../UIKit/UICollectionViewLayout.md)
+- [UICollectionViewLayout](../uikit/uicollectionviewlayout.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCoding](../Foundation/NSCoding.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCoding](../foundation/nscoding.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

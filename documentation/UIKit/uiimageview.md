@@ -27,7 +27,7 @@ class UIImageView
 
 Image views let you efficiently draw any image that can be specified using a [`UIImage`](uiimage.md) object. For example, you can use the [`UIImageView`](uiimageview.md) class to display the contents of many standard image files, such as JPEG and PNG files. You can configure image views programmatically or in your storyboard file and change the images they display at runtime. For animated images, you can also use the methods of this class to start and stop the animation and specify other animation parameters.
 
-![An image view](https://docs-assets.developer.apple.com/published/707440cc50954c46cf2c38fbab7cd76b/media-2923882%402x.png)
+![An image view](/images/com.apple.uikit/media-2923882@2x.png)
 
 ##### Understand How Images Are Scaled
 
@@ -44,10 +44,10 @@ For tips on how to prepare images, see [`Debug issues with your image view`](uii
 Images are composited onto the image view’s background and are then composited into the rest of the window. Any transparency in the image allows the image view’s background to show through. Similarly, any further transparency in the background of the image is dependent on the transparency of the image view and the transparency of the [`UIImage`](uiimage.md) object it displays. When the image view and its image both have transparency, the image view uses alpha blending to combine the two.
 
 - The image is composited onto the image view’s background.
-- If the image view’s [`isOpaque`](uiview/isopaque.md) property is [`true`](https://developer.apple.com/documentation/Swift/true), the image’s pixels are composited on top of the image view’s background color and the [`alpha`](uiview/alpha.md) property of the image view is ignored.
-- If the image view’s [`isOpaque`](uiview/isopaque.md) property is [`false`](https://developer.apple.com/documentation/Swift/false), the alpha value of each pixel is multiplied by the image view’s [`alpha`](uiview/alpha.md) value, with the resulting value becoming the actual transparency value for that pixel. If the image doesn’t have an alpha channel, the alpha value of each pixel is assumed to be `1.0`.
+- If the image view’s [`isOpaque`](uiview/isopaque.md) property is [`true`](https://developer.apple.com/documentation/swift/true), the image’s pixels are composited on top of the image view’s background color and the [`alpha`](uiview/alpha.md) property of the image view is ignored.
+- If the image view’s [`isOpaque`](uiview/isopaque.md) property is [`false`](https://developer.apple.com/documentation/swift/false), the alpha value of each pixel is multiplied by the image view’s [`alpha`](uiview/alpha.md) value, with the resulting value becoming the actual transparency value for that pixel. If the image doesn’t have an alpha channel, the alpha value of each pixel is assumed to be `1.0`.
 
-> ❗ **Important**:  It’s computationally expensive to composite the alpha channel of an image with the alpha channel of a non-opaque image view. The performance impact is further magnified if you use Core Animation shadows, because the shape of the shadow is then based on the contents of the view and must be dynamically computed. If you aren’t intentionally using the alpha channel of the image or the alpha channel of the image view, set the [`isOpaque`](uiview/isopaque.md) property to [`true`](https://developer.apple.com/documentation/Swift/true) to improve performance. For additional optimization tips, see [`Improve performance`](uiimageview#Improve-performance.md).
+> ❗ **Important**:  It’s computationally expensive to composite the alpha channel of an image with the alpha channel of a non-opaque image view. The performance impact is further magnified if you use Core Animation shadows, because the shape of the shadow is then based on the contents of the view and must be dynamically computed. If you aren’t intentionally using the alpha channel of the image or the alpha channel of the image view, set the [`isOpaque`](uiview/isopaque.md) property to [`true`](https://developer.apple.com/documentation/swift/true) to improve performance. For additional optimization tips, see [`Improve performance`](uiimageview#Improve-performance.md).
 
 ##### Animate a Sequence of Images
 
@@ -62,7 +62,7 @@ Consider the following tips when displaying a sequence of animated images:
 
 ##### Respond to Touch Events
 
-Image views ignore user events by default. Normally, you use image views only to present visual content in your interface. If you want an image view to handle user interactions as well, change the value of its [`isUserInteractionEnabled`](uiimageview/isuserinteractionenabled.md) property to [`true`](https://developer.apple.com/documentation/Swift/true). After doing that, you can attach gesture recognizers or use any other event handling techniques to respond to touch events or other user-initiated events.
+Image views ignore user events by default. Normally, you use image views only to present visual content in your interface. If you want an image view to handle user interactions as well, change the value of its [`isUserInteractionEnabled`](uiimageview/isuserinteractionenabled.md) property to [`true`](https://developer.apple.com/documentation/swift/true). After doing that, you can attach gesture recognizers or use any other event handling techniques to respond to touch events or other user-initiated events.
 
 For more information about handling events, see [`Event Handling Guide for UIKit Apps`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/EventHandling/Conceptual/EventHandlingiPhoneOS/index.html#//apple_ref/doc/uid/TP40009541).
 
@@ -72,7 +72,7 @@ Image scaling and alpha blending are two relatively expensive operations that ca
 
 - **Cache scaled versions of frequently used images.** If you expect certain large images to be displayed frequently in a scaled-down thumbnail view, consider creating the scaled-down images in advance and storing them in a thumbnail cache. Doing so alleviates the need for each image view to scale them separately.
 - **Use images whose size is close to the size of the image view.** Rather than assigning a large image to an image view, created a scaled version that matches the current size of the image view. You can also create a resizable image object using the [`UIImage.ResizingMode.tile`](uiimage/resizingmode-swift.enum/tile.md) option, which tiles the image instead of scaling it.
-- **Make your image view opaque whenever possible.** Unless you’re intentionally working with images that contain transparency (drawing UI elements, for example), make sure the [`isOpaque`](uiview/isopaque.md) property of your image view is set to [`true`](https://developer.apple.com/documentation/Swift/true). For more information about how transparency is determined, see [`Determine the final transparency of the image`](uiimageview#Determine-the-final-transparency-of-the-image.md).
+- **Make your image view opaque whenever possible.** Unless you’re intentionally working with images that contain transparency (drawing UI elements, for example), make sure the [`isOpaque`](uiview/isopaque.md) property of your image view is set to [`true`](https://developer.apple.com/documentation/swift/true). For more information about how transparency is determined, see [`Determine the final transparency of the image`](uiimageview#Determine-the-final-transparency-of-the-image.md).
 
 ##### Debug Issues with Your Image View
 
@@ -103,7 +103,7 @@ Internationalization of image views is automatic if your view displays only stat
 
 > **Note**:  Screen metrics and layout may also change depending on the language and locale, particularly if the internationalized versions of your images have different dimensions. Where possible, you should try to make minimize dimension differences in internationalized versions of image resources.
 
-For more information, see [`Localization`](https://developer.apple.com/documentation/Xcode/localization).
+For more information, see [`Localization`](https://developer.apple.com/documentation/xcode/localization).
 
 ##### Accessibility
 
@@ -113,7 +113,7 @@ For more information about making iOS controls accessible, see the accessibility
 
 ##### State Preservation
 
-When you assign a value to an image view’s [`restorationIdentifier`](uiviewcontroller/restorationidentifier.md) property, it attempts to preserve the frame of the displayed image. Specifically, the class preserves the values of the [`bounds`](uiview/bounds.md), [`center`](uiview/center.md), and [`transform`](uiview/transform.md) properties of the view and the [`anchorPoint`](https://developer.apple.com/documentation/QuartzCore/CALayer/anchorPoint) property of the underlying layer. During restoration, the image view restores these values so that the image appears exactly as before. For more information about how state preservation and restoration works, see [`Restoring your app’s state`](restoring-your-app-s-state.md).
+When you assign a value to an image view’s [`restorationIdentifier`](uiviewcontroller/restorationidentifier.md) property, it attempts to preserve the frame of the displayed image. Specifically, the class preserves the values of the [`bounds`](uiview/bounds.md), [`center`](uiview/center.md), and [`transform`](uiview/transform.md) properties of the view and the [`anchorPoint`](https://developer.apple.com/documentation/quartzcore/calayer/anchorpoint) property of the underlying layer. During restoration, the image view restores these values so that the image appears exactly as before. For more information about how state preservation and restoration works, see [`Restoring your app’s state`](restoring-your-app-s-state.md).
 
 ## Topics
 
@@ -200,21 +200,21 @@ When you assign a value to an image view’s [`restorationIdentifier`](uiviewcon
 ### Inherits From
 - [UIView](uiview.md)
 ### Conforms To
-- [CALayerDelegate](../QuartzCore/CALayerDelegate.md)
-- [CLBodyIdentifiable](../CoreLocation/CLBodyIdentifiable.md)
-- [CMBodyIdentifiable](../CoreMotion/CMBodyIdentifiable.md)
-- [CVarArg](../Swift/CVarArg.md)
-- [Copyable](../Swift/Copyable.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Escapable](../Swift/Escapable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCoding](../Foundation/NSCoding.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [NSTouchBarProvider](../AppKit/NSTouchBarProvider.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [CALayerDelegate](../quartzcore/calayerdelegate.md)
+- [CLBodyIdentifiable](../corelocation/clbodyidentifiable.md)
+- [CMBodyIdentifiable](../coremotion/cmbodyidentifiable.md)
+- [CVarArg](../swift/cvararg.md)
+- [Copyable](../swift/copyable.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Escapable](../swift/escapable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCoding](../foundation/nscoding.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSTouchBarProvider](../appkit/nstouchbarprovider.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 - [UIAccessibilityContentSizeCategoryImageAdjusting](uiaccessibilitycontentsizecategoryimageadjusting.md)
 - [UIAccessibilityIdentification](uiaccessibilityidentification.md)
 - [UIActivityItemsConfigurationProviding](uiactivityitemsconfigurationproviding.md)

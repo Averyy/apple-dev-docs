@@ -24,7 +24,7 @@ static let center: HorizontalAlignment
 
 Use this guide to align the centers of views:
 
-![A box that contains the word, Center. Vertical](https://docs-assets.developer.apple.com/published/98c827da09fff59ad521ae1431e95b70/HorizontalAlignment-center-1-iOS%402x.png)
+![A box that contains the word, Center. Vertical](/images/com.apple.SwiftUI/HorizontalAlignment-center-1-iOS@2x.png)
 
 The following code generates the image above using a [`VStack`](vstack.md):
 

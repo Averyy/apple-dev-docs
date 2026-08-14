@@ -24,8 +24,8 @@ protocol MultiSampleContent : CMSampleBuffer.Content
 
 ### Inherits From
 - [CMSampleBuffer.Content](cmsamplebuffer/content.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 ### Conforming Types
 - [CMReadOnlyDataBlockBuffer](cmreadonlydatablockbuffer.md)
 - [CMSampleBuffer.DynamicContent](cmsamplebuffer/dynamiccontent.md)

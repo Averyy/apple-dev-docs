@@ -22,7 +22,7 @@ static let showFeaturePoints: SCNDebugOptions
 
 #### Discussion
 
-This option is available only when running a [`ARWorldTrackingConfiguration`](https://developer.apple.com/documentation/ARKit/ARWorldTrackingConfiguration) session.
+This option is available only when running a [`ARWorldTrackingConfiguration`](https://developer.apple.com/documentation/arkit/arworldtrackingconfiguration) session.
 
 
 ---

@@ -10,7 +10,7 @@ Access and modify DOM elements within a webpage, including touch events and visu
 
 #### Overview
 
-> **Note**: This document was previously titled .
+> **Note**: This document was previously titled *Safari DOM Extensions Reference*.
 
 This covers miscellaneous DOM extensions used by Safari in macOS and iOS. These extensions include DOM touch events for processing gestures for devices that have a touch screen and visual effects that support 2D and 3D transforms, animation, and transitions. Most of the classes described in this reference are Apple extensions that may also be proposed W3C standards.
 
@@ -41,7 +41,8 @@ This covers miscellaneous DOM extensions used by Safari in macOS and iOS. These 
 - [BeforeLoadEvent](beforeloadevent.md)
 - [BeforeUnloadEvent](beforeunloadevent.md)
 - [BiquadFilterNode](biquadfilternode.md)
-- [Blob](../cktooljs/blob.md)
+- [Blob](blob.md)
+  Represents a binary large object of raw data.
 - [ByteLengthQueuingStrategy](bytelengthqueuingstrategy.md)
 - [CDATASection](cdatasection.md)
 - [CSSFontFaceRule](cssfontfacerule.md)
@@ -121,7 +122,8 @@ This covers miscellaneous DOM extensions used by Safari in macOS and iOS. These 
 - [EventListener](eventlistener.md)
 - [EventSource](eventsource.md)
 - [EventTarget](../tvmljs/eventtarget.md)
-- [File](../cktooljs/file.md)
+- [File](file.md)
+  An object that contains information about files.
 - [FileError](fileerror.md)
 - [FileList](filelist.md)
 - [FileReader](filereader.md)

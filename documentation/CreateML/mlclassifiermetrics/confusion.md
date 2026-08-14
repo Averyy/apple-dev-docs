@@ -27,7 +27,7 @@ var confusion: MLDataTable { get }
 
 The confusion data table describes how examples were mislabeled between categories. Each row contains the true label, the predicted label, and the count for each possible combination of categories. For example, the table below lists that “business” was labeled correctly with “business” 113 times, while “business” was confused with “entertainment” 2 times.
 
-![A table showing the format of the confusion table containing rows for the true label the label predicted by](https://docs-assets.developer.apple.com/published/c9b7730d227217804dd88adf475e1069/MLClassifierMetrics-confusion-1%402x.png)
+![A table showing the format of the confusion table containing rows for the true label the label predicted by](/images/com.apple.createml/MLClassifierMetrics-confusion-1@2x.png)
 
 To gain insight into the performance of your model, you can use this data table to determine what categories your model is most confused about (making the most mistakes on) for a given data set. For example, the code listing below shows how to find the mistake that happens most frequently.
 

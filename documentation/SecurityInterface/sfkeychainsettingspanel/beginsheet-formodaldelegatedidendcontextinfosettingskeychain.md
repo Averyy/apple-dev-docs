@@ -27,7 +27,7 @@ The delegate method has the following signature:
 The parameters for the delegate method are:
 
 - **`sheet`**: The window to which the sheet was attached.
-- **`returnCode`**: The result code indicating which button the user clicked: either [`NSFileHandlingPanelOKButton`](https://developer.apple.com/documentation/AppKit/NSFileHandlingPanelOKButton) or [`NSFileHandlingPanelCancelButton`](https://developer.apple.com/documentation/AppKit/NSFileHandlingPanelCancelButton).
+- **`returnCode`**: The result code indicating which button the user clicked: either [`NSFileHandlingPanelOKButton`](https://developer.apple.com/documentation/appkit/nsfilehandlingpanelokbutton) or [`NSFileHandlingPanelCancelButton`](https://developer.apple.com/documentation/appkit/nsfilehandlingpanelcancelbutton).
 - **`contextInfo`**: Client-defined contextual data that is passed in the `contextInfo` parameter of the `beginSheetForDirectory:...` method.
 
 The delegate method may dismiss the keychain settings sheet itself; if it does not, the sheet is dismissed on return from the `beginSheetForDirectory:...` method.

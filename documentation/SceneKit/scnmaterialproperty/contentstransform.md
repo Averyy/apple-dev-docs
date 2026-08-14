@@ -26,7 +26,7 @@ SceneKit applies this transformation to the texture coordinates provided by the 
 
 For example, you can use this property to grow, offset, or rotate a texture relative to the surface of a material, as illustrated below.
 
-![None](https://docs-assets.developer.apple.com/published/378b1d77e45a8491465a75f8a83982d8/media-2929785%402x.png)
+![None](/images/com.apple.scenekit/media-2929785@2x.png)
 
 You can animate changes to this property’s value. See [`Animating SceneKit Content`](animating-scenekit-content.md).
 

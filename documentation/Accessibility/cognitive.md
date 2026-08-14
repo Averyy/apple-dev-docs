@@ -8,7 +8,7 @@ A person may have difficulty remembering a sequence of steps, or they may find a
 
 People who need support with comprehension, attention, or communication can use Apple’s cognitive accessibility features to stay focused, streamline tasks, or limit the number of decisions to make. Design and develop your app to support cognitive accessibility features and provide a great experience for people who rely on these features.
 
-![An illustration that shows a person in a room with an easel, desk, lamp, computer chair, Mac, and their pet cat. The person is holding a paintbrush and painting while wearing AirPods to maintain focus on their task.](https://docs-assets.developer.apple.com/published/f88d682c62c7444a826873ed38a7711d/accessibility-scene-cognitive%402x.png)
+![An illustration that shows a person in a room with an easel, desk, lamp, computer chair, Mac, and their pet cat. The person is holding a paintbrush and painting while wearing AirPods to maintain focus on their task.](/images/com.apple.Accessibility/accessibility-scene-cognitive@2x.png)
 
 ##### Related Videos
 
@@ -19,7 +19,7 @@ People who need support with comprehension, attention, or communication can use 
   A mode that tailors the iOS and iPadOS experience for people with cognitive disabilities.
 - [static var isAssistiveAccessEnabled: Bool](accessibilitysettings/isassistiveaccessenabled.md)
   A Boolean value that indicates whether Assistive Access is running.
-- [UISupportsFullScreenInAssistiveAccess](../BundleResources/Information-Property-List/UISupportsFullScreenInAssistiveAccess.md)
+- [UISupportsFullScreenInAssistiveAccess](../bundleresources/information-property-list/uisupportsfullscreeninassistiveaccess.md)
   A Boolean value that indicates if an iOS or iPadOS app appears as full screen in Assistive Access.
 
 ## See Also

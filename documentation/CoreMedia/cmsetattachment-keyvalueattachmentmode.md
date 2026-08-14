@@ -22,7 +22,7 @@ func CMSetAttachment(_ target: CMAttachmentBearer, key: CFString, value: CFTypeR
 
 #### Discussion
 
-You can attach any Core Foundation object to a `CMAttachmentBearer` object to store additional information. `CMSetAttachment` stores an attachment identified by a key. If the key doesn’t currently exist for the `CMAttachmentBearer` object when you call this function, the function adds the new attachment. If the key does exist, the function replaces the existing attachment. In both cases the function increments the retain count of the attachment. The value can be any `CFType` but a `NULL` value results in an error. Given a [`CVBuffer`](https://developer.apple.com/documentation/CoreVideo/CVBuffer), `CMSetAttachment` is equivalent to `CVBufferSetAttachment`.
+You can attach any Core Foundation object to a `CMAttachmentBearer` object to store additional information. `CMSetAttachment` stores an attachment identified by a key. If the key doesn’t currently exist for the `CMAttachmentBearer` object when you call this function, the function adds the new attachment. If the key does exist, the function replaces the existing attachment. In both cases the function increments the retain count of the attachment. The value can be any `CFType` but a `NULL` value results in an error. Given a [`CVBuffer`](https://developer.apple.com/documentation/corevideo/cvbuffer), `CMSetAttachment` is equivalent to `CVBufferSetAttachment`.
 
 ## Parameters
 

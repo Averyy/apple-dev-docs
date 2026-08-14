@@ -16,7 +16,7 @@ var invalidatedItemIndexPaths: Set<IndexPath>? { get }
 
 #### Discussion
 
-The set contains zero or more [`NSIndexPath`](https://developer.apple.com/documentation/Foundation/NSIndexPath) objects, each of which identifies an invalid item.
+The set contains zero or more [`NSIndexPath`](https://developer.apple.com/documentation/foundation/nsindexpath) objects, each of which identifies an invalid item.
 
 ## See Also
 

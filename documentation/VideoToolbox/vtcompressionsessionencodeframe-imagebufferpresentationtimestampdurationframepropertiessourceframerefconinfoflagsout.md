@@ -26,9 +26,9 @@ Encoded frames may or may not be output before the function returns. The client 
 ## Parameters
 
 - `session`: The compression session.
-- `imageBuffer`: A Core Video image buffer ([`CVImageBuffer`](https://developer.apple.com/documentation/CoreVideo/CVImageBuffer)) containing a video frame to be compressed. The buffer must have a nonzero reference count.
+- `imageBuffer`: A Core Video image buffer ([`CVImageBuffer`](https://developer.apple.com/documentation/corevideo/cvimagebuffer)) containing a video frame to be compressed. The buffer must have a nonzero reference count.
 - `presentationTimeStamp`: The presentation timestamp for this frame, to be attached to the sample buffer. Each presentation timestamp passed to a session must be greater than the previous one.
-- `duration`: The presentation duration for this frame, to be attached to the sample buffer. If you do not have duration information, pass [`invalid`](https://developer.apple.com/documentation/CoreMedia/CMTime/invalid).
+- `duration`: The presentation duration for this frame, to be attached to the sample buffer. If you do not have duration information, pass [`invalid`](https://developer.apple.com/documentation/coremedia/cmtime/invalid).
 - `frameProperties`: Key/value pairs specifying additional properties for encoding this frame. Note that some session properties may also be changed between frames. Such changes affect subsequently encoded frames.
 - `sourceFrameRefcon`: Your reference value for the frame, which will be passed to the output callback function.
 - `infoFlagsOut`: A pointer to a `VTEncodeInfoFlags` to receive information about the encode operation. The [`asynchronous`](vtencodeinfoflags/asynchronous.md) bit may be set if the encode is (or was) running asynchronously. The [`frameDropped`](vtencodeinfoflags/framedropped.md) bit may be set if the frame was dropped (synchronously). Pass `NULL` if you do not want to receive this information.

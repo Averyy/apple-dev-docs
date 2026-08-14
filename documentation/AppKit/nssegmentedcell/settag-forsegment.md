@@ -17,7 +17,7 @@ func setTag(_ tag: Int, forSegment segment: Int)
 ## Parameters
 
 - `tag`: The tag of the segment.
-- `segment`: The index of the segment whose tool tag you want to set. This method raises an exception ([`rangeException`](https://developer.apple.com/documentation/Foundation/NSExceptionName/rangeException)) if the index is out of bounds.
+- `segment`: The index of the segment whose tool tag you want to set. This method raises an exception ([`rangeException`](https://developer.apple.com/documentation/foundation/nsexceptionname/rangeexception)) if the index is out of bounds.
 
 ## See Also
 

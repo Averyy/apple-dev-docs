@@ -17,7 +17,7 @@ init(nsColor: NSColor)
 
 #### Discussion
 
-Use this method to create a SwiftUI color from an [`NSColor`](https://developer.apple.com/documentation/AppKit/NSColor) instance. The new color preserves the adaptability of the original. For example, you can create a rectangle using [`linkColor`](https://developer.apple.com/documentation/AppKit/NSColor/linkColor) to see how the shade adjusts to match the user’s system settings:
+Use this method to create a SwiftUI color from an [`NSColor`](https://developer.apple.com/documentation/appkit/nscolor) instance. The new color preserves the adaptability of the original. For example, you can create a rectangle using [`linkColor`](https://developer.apple.com/documentation/appkit/nscolor/linkcolor) to see how the shade adjusts to match the user’s system settings:
 
 ```swift
 struct Box: View {
@@ -30,9 +30,9 @@ struct Box: View {
 
 The `Box` view defined above automatically changes its appearance when the user turns on Dark Mode. With the light and dark appearances placed side by side, you can see the subtle difference in shades:
 
-![A side by side comparison of light and dark appearance screenshots of](https://docs-assets.developer.apple.com/published/5d1b72a6328b7881b1e9304e8b0bc496/Color-init-4%402x.png)
+![A side by side comparison of light and dark appearance screenshots of](/images/com.apple.SwiftUI/Color-init-4@2x.png)
 
-> **Note**: Use this initializer only if you need to convert an existing [`NSColor`](https://developer.apple.com/documentation/AppKit/NSColor) to a SwiftUI color. Otherwise, create a SwiftUI [`Color`](color.md) using an initializer like [`init(_:red:green:blue:opacity:)`](color/init(_:red:green:blue:opacity:).md), or use a system color like [`blue`](shapestyle/blue.md).
+> **Note**: Use this initializer only if you need to convert an existing [`NSColor`](https://developer.apple.com/documentation/appkit/nscolor) to a SwiftUI color. Otherwise, create a SwiftUI [`Color`](color.md) using an initializer like [`init(_:red:green:blue:opacity:)`](color/init(_:red:green:blue:opacity:).md), or use a system color like [`blue`](shapestyle/blue.md).
 
 ## See Also
 

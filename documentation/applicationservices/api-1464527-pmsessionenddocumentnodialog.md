@@ -28,7 +28,7 @@ The function `PMSessionEndDocumentNoDialog` must be called after its correspondi
 
 ## Parameters
 
-- `printSession`: The current printing session. On return, the printing session is no longer valid; however, you must still call the function   to release the object. 
+- `printSession`: The current printing session. On return, the printing session is no longer valid; however, you must still call the function [`PMRelease(_:)`](1461402-pmrelease.md) to release the object. 
 
 ## See Also
 

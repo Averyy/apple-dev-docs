@@ -21,7 +21,7 @@ typealias CE_ExtendedKeyUsage = __CE_ExtendedKeyUsage
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../Swift/BitwiseCopyable.md)
+- [BitwiseCopyable](../swift/bitwisecopyable.md)
 
 
 ---

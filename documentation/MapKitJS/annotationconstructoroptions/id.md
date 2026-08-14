@@ -16,7 +16,7 @@ id?: string;
 
 #### Discussion
 
-For information about identifiers, see [`Identifying unique locations with Place IDs`](https://developer.apple.com/documentation/MapKit/identifying-unique-locations-with-place-ids).
+For information about identifiers, see [`Identifying unique locations with Place IDs`](https://developer.apple.com/documentation/mapkit/identifying-unique-locations-with-place-ids).
 
 ## See Also
 

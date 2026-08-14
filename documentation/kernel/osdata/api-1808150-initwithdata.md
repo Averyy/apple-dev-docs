@@ -22,13 +22,13 @@ Returns `true` on success, `false` on failure.
 
 Not for general use. Use the static instance creation method withData(OSData *, unsigned int, unsigned int) instead.
 
-The new OSData object will grow as needed to accommodate more bytes (`CFMutableData`, for which a nonzero initial capacity is a hard limit).
+The new OSData object will grow as needed to accommodate more bytes (*unlike*[`CFMutableData`](https://developer.apple.com/documentation/corefoundation/cfmutabledata), for which a nonzero initial capacity is a hard limit).
 
 ## Parameters
 
 - `inData`: An OSData object that provides the initial data.
 - `start`: The starting index from which bytes will be copied.
-- `numBytes`: The number of bytes to be copied from  .
+- `numBytes`: The number of bytes to be copied from `start`.
 
 ## See Also
 

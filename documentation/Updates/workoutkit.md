@@ -6,21 +6,21 @@ Learn about important changes to WorkoutKit.
 
 #### Overview
 
-Browse notable changes in [`WorkoutKit`](https://developer.apple.com/documentation/WorkoutKit).
+Browse notable changes in [`WorkoutKit`](https://developer.apple.com/documentation/workoutkit).
 
 #### June 2024
 
 ##### Custom Swim Workouts
 
-- Create custom pool swimming workouts with the [`HKWorkoutActivityType.swimming`](https://developer.apple.com/documentation/HealthKit/HKWorkoutActivityType/swimming) activity.
-- Set a distance-with-time goal for custom swimming workouts with the [`WorkoutGoal.poolSwimDistanceWithTime(_:_:)`](https://developer.apple.com/documentation/WorkoutKit/WorkoutGoal/poolSwimDistanceWithTime(_:_:)) goal.
+- Create custom pool swimming workouts with the [`HKWorkoutActivityType.swimming`](https://developer.apple.com/documentation/healthkit/hkworkoutactivitytype/swimming) activity.
+- Set a distance-with-time goal for custom swimming workouts with the [`WorkoutGoal.poolSwimDistanceWithTime(_:_:)`](https://developer.apple.com/documentation/workoutkit/workoutgoal/poolswimdistancewithtime(_:_:)) goal.
 
 ##### General
 
-- Provide a custom name to a workout step using the [`WorkoutStep`](https://developer.apple.com/documentation/WorkoutKit/WorkoutStep) structure’s [`displayName`](https://developer.apple.com/documentation/WorkoutKit/WorkoutStep/displayName).
-- Preview workouts on Apple Watch using the [`workoutPreview(_:isPresented:)`](https://developer.apple.com/documentation/SwiftUI/View/workoutPreview(_:isPresented:)) view modifier.
-- Set average power goals for cycling and running with [`PowerThresholdAlert`](https://developer.apple.com/documentation/WorkoutKit/PowerThresholdAlert) and [`PowerRangeAlert`](https://developer.apple.com/documentation/WorkoutKit/PowerRangeAlert).
-- Set pace goals for indoor running with the [`SpeedThresholdAlert`](https://developer.apple.com/documentation/WorkoutKit/SpeedThresholdAlert) and [`SpeedRangeAlert`](https://developer.apple.com/documentation/WorkoutKit/SpeedRangeAlert) targets.
+- Provide a custom name to a workout step using the [`WorkoutStep`](https://developer.apple.com/documentation/workoutkit/workoutstep) structure’s [`displayName`](https://developer.apple.com/documentation/workoutkit/workoutstep/displayname).
+- Preview workouts on Apple Watch using the [`workoutPreview(_:isPresented:)`](https://developer.apple.com/documentation/swiftui/view/workoutpreview(_:ispresented:)) view modifier.
+- Set average power goals for cycling and running with [`PowerThresholdAlert`](https://developer.apple.com/documentation/workoutkit/powerthresholdalert) and [`PowerRangeAlert`](https://developer.apple.com/documentation/workoutkit/powerrangealert).
+- Set pace goals for indoor running with the [`SpeedThresholdAlert`](https://developer.apple.com/documentation/workoutkit/speedthresholdalert) and [`SpeedRangeAlert`](https://developer.apple.com/documentation/workoutkit/speedrangealert) targets.
 
 ## See Also
 

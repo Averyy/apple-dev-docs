@@ -21,7 +21,7 @@ When testing your app you may find that adopting controls that look and behave l
 
 ##### Update Your App to Use the Mac Idiom
 
-Choosing Optimize Interface for Mac means your Mac app runs in the [`UIUserInterfaceIdiom.mac`](uiuserinterfaceidiom/mac.md) user interface idiom, which changes the interface of your app. Some controls change their size and appearance, and interacting with them feels identical to interacting with AppKit controls. For example, [`UIButton`](uibutton.md) appears identical to [`NSButton`](https://developer.apple.com/documentation/AppKit/NSButton).
+Choosing Optimize Interface for Mac means your Mac app runs in the [`UIUserInterfaceIdiom.mac`](uiuserinterfaceidiom/mac.md) user interface idiom, which changes the interface of your app. Some controls change their size and appearance, and interacting with them feels identical to interacting with AppKit controls. For example, [`UIButton`](uibutton.md) appears identical to [`NSButton`](https://developer.apple.com/documentation/appkit/nsbutton).
 
 Because the system sets control sizes appropriately when the user interface idiom is [`UIUserInterfaceIdiom.mac`](uiuserinterfaceidiom/mac.md), the system no longer needs to scale your app’s interface to match Mac sizing. Screen points are identical in size to those in AppKit-based apps. However, if your app has hard-coded sizes or uses images sized for iPad, you may need to update your app to accommodate the size differences. You may also need to adjust auto layout constraints.
 
@@ -39,7 +39,7 @@ if traitCollection.userInterfaceIdiom == .mac {
 
 ##### Determine the Current User Interface Idiom
 
-To determine if your app is running in the Mac idiom, compare the value of the [`userInterfaceIdiom`](uitraitcollection/userinterfaceidiom.md) property with [`UIUserInterfaceIdiom.mac`](uiuserinterfaceidiom/mac.md). When the comparison is [`true`](https://developer.apple.com/documentation/Swift/true), you can tailor the behavior of your app for the Mac; for example, to display a different child view.
+To determine if your app is running in the Mac idiom, compare the value of the [`userInterfaceIdiom`](uitraitcollection/userinterfaceidiom.md) property with [`UIUserInterfaceIdiom.mac`](uiuserinterfaceidiom/mac.md). When the comparison is [`true`](https://developer.apple.com/documentation/swift/true), you can tailor the behavior of your app for the Mac; for example, to display a different child view.
 
 ```swift
 let childViewController: UIViewController
@@ -112,13 +112,13 @@ present(alert, animated: true, completion: nil)
 
 ## See Also
 
-- [Bring an iPad App to the Mac with Mac Catalyst](https://developer.apple.com/tutorials/Mac-Catalyst)
+- [Bring an iPad App to the Mac with Mac Catalyst](https://developer.apple.com/tutorials/mac-catalyst)
   Build a native Mac app from the same codebase as your iPad app.
 - [Optimizing your iPad app for Mac](optimizing-your-ipad-app-for-mac.md)
   Make your iPad app more like a Mac app by taking advantage of system features in macOS.
-- [LSMinimumSystemVersion](../BundleResources/Information-Property-List/LSMinimumSystemVersion.md)
+- [LSMinimumSystemVersion](../bundleresources/information-property-list/lsminimumsystemversion.md)
   The minimum version of the operating system required for the app to run in macOS.
-- [UIApplicationSupportsTabbedSceneCollection](../BundleResources/Information-Property-List/UIApplicationSceneManifest/UIApplicationSupportsTabbedSceneCollection.md)
+- [UIApplicationSupportsTabbedSceneCollection](../bundleresources/information-property-list/uiapplicationscenemanifest/uiapplicationsupportstabbedscenecollection.md)
   A Boolean value indicating whether an app built with Mac Catalyst supports automatic tabbing mode.
 
 

@@ -16,7 +16,7 @@ func SecEncodeTransformCreate(_ encodeType: CFTypeRef, _ error: UnsafeMutablePoi
 
 #### Return Value
 
-A pointer to a new transform or `NULL` on error. In Objective-C, call the [`CFRelease`](https://developer.apple.com/documentation/CoreFoundation/CFRelease) function to free this object’s memory when you are done with it.
+A pointer to a new transform or `NULL` on error. In Objective-C, call the [`CFRelease`](https://developer.apple.com/documentation/corefoundation/cfrelease) function to free this object’s memory when you are done with it.
 
 #### Discussion
 
@@ -25,7 +25,7 @@ This function creates a transform which computes an encode.
 ## Parameters
 
 - `encodeType`: The type of digest to compute. You may pass `NULL` for this parameter, in which case an appropriate algorithm will be chosen for you. See `Encoding Types` for a list of valid values.
-- `error`: A pointer to a [`CFError`](https://developer.apple.com/documentation/CoreFoundation/CFError). This pointer will be set if an error occurred. This value may be `nil` if you do not want an error returned.
+- `error`: A pointer to a [`CFError`](https://developer.apple.com/documentation/corefoundation/cferror). This pointer will be set if an error occurred. This value may be `nil` if you do not want an error returned.
 
 
 ---

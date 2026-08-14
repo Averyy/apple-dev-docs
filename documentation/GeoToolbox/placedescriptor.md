@@ -33,7 +33,7 @@ For example to create a [`PlaceDescriptor`](placedescriptor.md) that describes a
     )
 ```
 
-You can also initialize a `PlaceDescriptor` using an [`MKMapItem`](https://developer.apple.com/documentation/MapKit/MKMapItem) as shown below.
+You can also initialize a `PlaceDescriptor` using an [`MKMapItem`](https://developer.apple.com/documentation/mapkit/mkmapitem) as shown below.
 
 ```swift
     guard let descriptor = PlaceDescriptor(item: myMapItem) else {
@@ -76,21 +76,21 @@ You can also initialize a `PlaceDescriptor` using an [`MKMapItem`](https://devel
 ## Relationships
 
 ### Conforms To
-- [Copyable](../Swift/Copyable.md)
-- [CustomLocalizedStringResourceConvertible](../Foundation/CustomLocalizedStringResourceConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Decodable](../Swift/Decodable.md)
-- [DisplayRepresentable](../AppIntents/DisplayRepresentable.md)
-- [Encodable](../Swift/Encodable.md)
-- [Equatable](../Swift/Equatable.md)
-- [Escapable](../Swift/Escapable.md)
-- [InstanceDisplayRepresentable](../AppIntents/InstanceDisplayRepresentable.md)
-- [IntentValueConvertible](../AppIntents/IntentValueConvertible.md)
-- [IntentValueExpressing](../AppIntents/IntentValueExpressing.md)
-- [PersistentlyIdentifiable](../AppIntents/PersistentlyIdentifiable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
-- [TypeDisplayRepresentable](../AppIntents/TypeDisplayRepresentable.md)
+- [Copyable](../swift/copyable.md)
+- [CustomLocalizedStringResourceConvertible](../foundation/customlocalizedstringresourceconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Decodable](../swift/decodable.md)
+- [DisplayRepresentable](../appintents/displayrepresentable.md)
+- [Encodable](../swift/encodable.md)
+- [Equatable](../swift/equatable.md)
+- [Escapable](../swift/escapable.md)
+- [InstanceDisplayRepresentable](../appintents/instancedisplayrepresentable.md)
+- [IntentValueConvertible](../appintents/intentvalueconvertible.md)
+- [IntentValueExpressing](../appintents/intentvalueexpressing.md)
+- [PersistentlyIdentifiable](../appintents/persistentlyidentifiable.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
+- [TypeDisplayRepresentable](../appintents/typedisplayrepresentable.md)
 
 
 ---

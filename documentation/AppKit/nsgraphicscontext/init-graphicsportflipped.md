@@ -20,7 +20,7 @@ The created [`NSGraphicsContext`](nsgraphicscontext.md) object, or `nil` if the 
 
 ## Parameters
 
-- `graphicsPort`: The graphics port used to create the graphics-context object. Typically `graphicsPort` is a [`CGContext`](https://developer.apple.com/documentation/CoreGraphics/CGContext) (opaque type) object.
+- `graphicsPort`: The graphics port used to create the graphics-context object. Typically `graphicsPort` is a [`CGContext`](https://developer.apple.com/documentation/coregraphics/cgcontext) (opaque type) object.
 - `initialFlippedState`: Specifies the receiver’s initial flipped state. This is the value returned by [`isFlipped`](nsgraphicscontext/isflipped.md) when no view has focus.
 
 ## See Also

@@ -19,7 +19,7 @@ var attachments: [[AnyHashable : Any]]? { get }
 
 #### Discussion
 
-Each attachment is described by an [`NSDictionary`](https://developer.apple.com/documentation/Foundation/NSDictionary) object in the `attachments` array. To retrieve the alternate file name for an attachment from its dictionary, use the [`MFMessageComposeViewControllerAttachmentAlternateFilename`](mfmessagecomposeviewcontrollerattachmentalternatefilename.md) key.
+Each attachment is described by an [`NSDictionary`](https://developer.apple.com/documentation/foundation/nsdictionary) object in the `attachments` array. To retrieve the alternate file name for an attachment from its dictionary, use the [`MFMessageComposeViewControllerAttachmentAlternateFilename`](mfmessagecomposeviewcontrollerattachmentalternatefilename.md) key.
 
 ## See Also
 

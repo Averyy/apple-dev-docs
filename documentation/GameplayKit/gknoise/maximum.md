@@ -23,7 +23,7 @@ func maximum(_ noise: GKNoise)
 
 In a grayscale texture, higher values are brighter and lower values are darker.
 
-![None](https://docs-assets.developer.apple.com/published/c5c04e6f3a331d2371799338c9978d76/media-2556403%402x.png)
+![None](/images/com.apple.gameplaykit/media-2556403@2x.png)
 
 ## Parameters
 

@@ -26,7 +26,7 @@ func results(for healthStore: HKHealthStore) -> Self.Sequence
 
 #### Discussion
 
-The adopting type’s [`Sequence`](hkasyncsequencequery/sequence.md) associated type specifies the type of [`AsyncSequence`](https://developer.apple.com/documentation/Swift/AsyncSequence) that this method returns. For example, the [`HKAnchoredObjectQueryDescriptor`](hkanchoredobjectquerydescriptor.md) returns a sequence of [`HKAnchoredObjectQueryDescriptor.Result`](hkanchoredobjectquerydescriptor/result.md) instances.
+The adopting type’s [`Sequence`](hkasyncsequencequery/sequence.md) associated type specifies the type of [`AsyncSequence`](https://developer.apple.com/documentation/swift/asyncsequence) that this method returns. For example, the [`HKAnchoredObjectQueryDescriptor`](hkanchoredobjectquerydescriptor.md) returns a sequence of [`HKAnchoredObjectQueryDescriptor.Result`](hkanchoredobjectquerydescriptor/result.md) instances.
 
 ```swift
 let anchorDescriptor =

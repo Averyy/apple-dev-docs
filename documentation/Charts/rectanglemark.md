@@ -61,7 +61,7 @@ var body: some View {
 }
 ```
 
-![2D heat map chart that represents a simple confusion matrix in a 2x2 grid. The number of records is represented by the color of its corresponding rectangle. Darker colors represent higher values.](https://docs-assets.developer.apple.com/published/f585a7db900f8c450c88cdcfe7b0a8a9/RectangleMarkSwift.RectangleMarkHistogramHeatmap2D%402x.png)
+![2D heat map chart that represents a simple confusion matrix in a 2x2 grid. The number of records is represented by the color of its corresponding rectangle. Darker colors represent higher values.](/images/com.apple.Charts/RectangleMarkSwift.RectangleMarkHistogramHeatmap2D@2x.png)
 
 ##### Annotate a Rectangular Area with Rectangle Marks
 
@@ -97,7 +97,7 @@ var body: some View {
 }
 ```
 
-![Scatter plot chart with a rectangle mark annotation. 3 points on the chart at: (5, 5), (2.5, 2.5), (3, 3) each point mark is highlighted with an opaque rectangle.](https://docs-assets.developer.apple.com/published/25ed6d8c79ed66cfd15feff0a8264741/RectangleMarkSwift.RectangleMarkScatter%402x.png)
+![Scatter plot chart with a rectangle mark annotation. 3 points on the chart at: (5, 5), (2.5, 2.5), (3, 3) each point mark is highlighted with an opaque rectangle.](/images/com.apple.Charts/RectangleMarkSwift.RectangleMarkScatter@2x.png)
 
 ##### Rectanglemark in Chart3d
 
@@ -164,10 +164,10 @@ Chart3D {
 ### Conforms To
 - [Chart3DContent](chart3dcontent.md)
 - [ChartContent](chartcontent.md)
-- [Copyable](../Swift/Copyable.md)
-- [Escapable](../Swift/Escapable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Copyable](../swift/copyable.md)
+- [Escapable](../swift/escapable.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

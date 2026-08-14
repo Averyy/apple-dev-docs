@@ -14,7 +14,7 @@ A fixed-point number.
 ## Declaration
 
 ```swift
-typedef SInt32 IOFixed;
+typedef int32_t IOFixed;
 ```
 
 ## Topics

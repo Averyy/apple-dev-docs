@@ -20,7 +20,7 @@ var isManualHitTestingEnabled: Bool { get set }
 
 #### Discussion
 
-The default value of this property is [`false`](https://developer.apple.com/documentation/Swift/false).
+The default value of this property is [`false`](https://developer.apple.com/documentation/swift/false).
 
 ## See Also
 

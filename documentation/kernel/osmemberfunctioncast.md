@@ -28,9 +28,9 @@ This function will panic if an attempt is made to call it with a multiply-inheri
 
 ## Parameters
 
-- `cptrtype`: The function type declaration to cast to (typically provided as a   by I/O KitKit classes).
-- `self`: The   pointer of the object whose function you wish to cache.
-- `func`: The pointer to the member function itself, something like  .
+- `cptrtype`: The function type declaration to cast to (typically provided as a `typedef` by I/O KitKit classes).
+- `self`: The `this` pointer of the object whose function you wish to cache.
+- `func`: The pointer to the member function itself, something like `&Class::function`.
 
 ## See Also
 

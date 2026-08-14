@@ -19,7 +19,7 @@ class let touchBarTextUnderlineTemplateName: String
 
 #### Discussion
 
-![Template image for underline text](https://docs-assets.developer.apple.com/published/edd5fd5a97fd4c9d083ce58e033bd318/media-2825134%402x.png)
+![Template image for underline text](/images/com.apple.appkit/media-2825134@2x.png)
 
 Touch Bar template images are exclusively for use in [`NSTouchBarItem`](nstouchbaritem.md) objects and not in onscreen windows.
 

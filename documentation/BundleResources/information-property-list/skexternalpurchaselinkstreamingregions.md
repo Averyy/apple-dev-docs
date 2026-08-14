@@ -21,7 +21,7 @@ The strings in this array are lowercased ISO 3166-1 alpha-2 country codes. Valid
 
 Include an entry for each country code where your music-streaming app communicates and promotes offers.
 
-For more information, see [`External Purchase`](https://developer.apple.com/documentation/StoreKit/external-purchase).
+For more information, see [`External Purchase`](https://developer.apple.com/documentation/storekit/external-purchase).
 
 ## See Also
 

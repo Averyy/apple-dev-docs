@@ -23,7 +23,7 @@ class MPSMatrix
 
 [`MPSMatrix`](mpsmatrix.md) objects serve as inputs and outputs of [`MPSMatrixMultiplication`](mpsmatrixmultiplication.md) objects. Matrix data is assumed to be stored in row-major order.
 
-> **Note**:  An [`MPSMatrix`](mpsmatrix.md) object maintains its internal storage using a [`MTLBuffer`](https://developer.apple.com/documentation/Metal/MTLBuffer) object. Thus, the same rules for maintaining coherency of the buffer’s data between CPU memory and GPU memory also apply to an [`MPSMatrix`](mpsmatrix.md) object.
+> **Note**:  An [`MPSMatrix`](mpsmatrix.md) object maintains its internal storage using a [`MTLBuffer`](https://developer.apple.com/documentation/metal/mtlbuffer) object. Thus, the same rules for maintaining coherency of the buffer’s data between CPU memory and GPU memory also apply to an [`MPSMatrix`](mpsmatrix.md) object.
 
 ## Topics
 
@@ -57,16 +57,16 @@ class MPSMatrix
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Inherited By
 - [MPSTemporaryMatrix](mpstemporarymatrix.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

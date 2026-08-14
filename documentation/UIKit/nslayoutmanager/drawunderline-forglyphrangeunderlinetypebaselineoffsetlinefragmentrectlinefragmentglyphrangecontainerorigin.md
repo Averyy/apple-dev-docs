@@ -20,7 +20,7 @@ func drawUnderline(forGlyphRange glyphRange: NSRange, underlineType underlineVal
 
 #### Discussion
 
-This method is invoked automatically by [`underlineGlyphRange(_:underlineType:lineFragmentRect:lineFragmentGlyphRange:containerOrigin:)`](nslayoutmanager/underlineglyphrange(_:underlinetype:linefragmentrect:linefragmentglyphrange:containerorigin:).md); you should rarely need to invoke it directly. This method’s `underlineVal` parameter does not take account of any setting for [`NSUnderlineByWordMask`](https://developer.apple.com/documentation/AppKit/NSUnderlineByWordMask) because that’s taken care of by [`underlineGlyphRange(_:underlineType:lineFragmentRect:lineFragmentGlyphRange:containerOrigin:)`](nslayoutmanager/underlineglyphrange(_:underlinetype:linefragmentrect:linefragmentglyphrange:containerorigin:).md).
+This method is invoked automatically by [`underlineGlyphRange(_:underlineType:lineFragmentRect:lineFragmentGlyphRange:containerOrigin:)`](nslayoutmanager/underlineglyphrange(_:underlinetype:linefragmentrect:linefragmentglyphrange:containerorigin:).md); you should rarely need to invoke it directly. This method’s `underlineVal` parameter does not take account of any setting for [`NSUnderlineByWordMask`](https://developer.apple.com/documentation/appkit/nsunderlinebywordmask) because that’s taken care of by [`underlineGlyphRange(_:underlineType:lineFragmentRect:lineFragmentGlyphRange:containerOrigin:)`](nslayoutmanager/underlineglyphrange(_:underlinetype:linefragmentrect:linefragmentglyphrange:containerorigin:).md).
 
 ## Parameters
 

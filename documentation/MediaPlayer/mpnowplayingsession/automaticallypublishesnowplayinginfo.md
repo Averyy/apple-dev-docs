@@ -20,7 +20,7 @@ var automaticallyPublishesNowPlayingInfo: Bool { get set }
 
 #### Discussion
 
-You can set Now Playing information keys for automatic publishing on [`nowPlayingInfo`](https://developer.apple.com/documentation/AVFoundation/AVPlayerItem/nowPlayingInfo).
+You can set Now Playing information keys for automatic publishing on [`nowPlayingInfo`](https://developer.apple.com/documentation/avfoundation/avplayeritem/nowplayinginfo).
 
 > ❗ **Important**:  If you set `automaticallyPublishesNowPlayingInfo` to `true`, don’t use [`nowPlayingInfoCenter`](mpnowplayingsession/nowplayinginfocenter.md).
 

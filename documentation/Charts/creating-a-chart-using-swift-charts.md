@@ -8,7 +8,7 @@ Make a chart by combining chart building blocks in SwiftUI.
 
 Help people understand complex data by focusing on what you want to communicate and who you’re communicating to. For example, suppose that you have a collection of colorful toy shapes:
 
-![A collection of cubes, spheres, and pyramids that appear in pink, yellow, purple, and green, all lying on a plane.](https://docs-assets.developer.apple.com/published/e8ebe6ee2e8c5c0f78807b983a145fc2/CreatingYourFirstChart-1%402x.png)
+![A collection of cubes, spheres, and pyramids that appear in pink, yellow, purple, and green, all lying on a plane.](/images/com.apple.Charts/CreatingYourFirstChart-1@2x.png)
 
 You can formulate questions about this data that you’d like to answer, like which toy shape appears the most, or how many toys are green? One way to represent your data is to collect it into a table. A table organizes the data into columns and rows so it can be easily inspected. For example, you can record how many shapes of each color you have:
 
@@ -84,11 +84,11 @@ Chart {
 
 The resulting chart clearly communicates that the cube toy shape appears the most:
 
-![A bar chart with three bars. The first bar has a height of five and has the label Cube below the bar. The second bar has a height of four and has the label Sphere below the bar. The third bar has a height of 4 and has the label Pyramid below the bar. The first bar has a call out that identifies it as a type of Mark, specifically a BarMark. The bar chart also has labels on the x-axis and the y-axis. The number scale appears on the right side of the chart where the number 4 has a call out that marks it as an Axis Label. The scale has a minimum of zero and a maximum of six.](https://docs-assets.developer.apple.com/published/10bd600c6f8df9ac57bd337b0d2d05fb/CreatingYourFirstChart-2%402x.png)
+![A bar chart with three bars. The first bar has a height of five and has the label Cube below the bar. The second bar has a height of four and has the label Sphere below the bar. The third bar has a height of 4 and has the label Pyramid below the bar. The first bar has a call out that identifies it as a type of Mark, specifically a BarMark. The bar chart also has labels on the x-axis and the y-axis. The number scale appears on the right side of the chart where the number 4 has a call out that marks it as an Axis Label. The scale has a minimum of zero and a maximum of six.](/images/com.apple.Charts/CreatingYourFirstChart-2@2x.png)
 
 Scale determines the position, height, and color of each `BarMark`. As you plot data on the y-dimension, the framework automatically generates axis labels for the y-axis to map the data values. The scale for the y-dimension is adjusted to match the range of totals for the shape’s group.
 
-The above code lists each [`BarMark`](barmark.md) individually. However, for regular, repetitive data, you can use a [`ForEach`](https://developer.apple.com/documentation/SwiftUI/ForEach) structure to represent the same chart more concisely:
+The above code lists each [`BarMark`](barmark.md) individually. However, for regular, repetitive data, you can use a [`ForEach`](https://developer.apple.com/documentation/swiftui/foreach) structure to represent the same chart more concisely:
 
 ```swift
 Chart {
@@ -149,13 +149,13 @@ Chart {
 
 The chart now splits the bars into different parts that represent the number of colors for each shape:
 
-![A stacked bar chart showing the count of shape types with a legend. The first bar is labeled Cube, and is split into four segments of different colors. The other two are labeled Pyramid and Sphere, and each is split into three segments of different colors. A legend at the bottom of the chart indicates what each segment color represents, which is a shape color. The colors used by the chart to create the marks don’t match the shape colors that they represent. For example, the color that represents green shapes is pink.](https://docs-assets.developer.apple.com/published/aa183eca90a2e1b597d1f03a03aeee6e/CreatingYourFirstChart-3%402x.png)
+![A stacked bar chart showing the count of shape types with a legend. The first bar is labeled Cube, and is split into four segments of different colors. The other two are labeled Pyramid and Sphere, and each is split into three segments of different colors. A legend at the bottom of the chart indicates what each segment color represents, which is a shape color. The colors used by the chart to create the marks don’t match the shape colors that they represent. For example, the color that represents green shapes is pink.](/images/com.apple.Charts/CreatingYourFirstChart-3@2x.png)
 
 The stacked bar chart chooses colors to represent the new data, and adds a legend to indicate which color represents which kind of data.
 
 ##### Customize Your Chart
 
-For many charts, the default configuration works well. However, in this case, the colors that the framework assigns to each mark don’t match the shape colors that they represent. You can customize the chart to override the default color scale by adding the [`chartForegroundStyleScale(_:)`](https://developer.apple.com/documentation/SwiftUI/View/chartForegroundStyleScale(_:)) chart modifier:
+For many charts, the default configuration works well. However, in this case, the colors that the framework assigns to each mark don’t match the shape colors that they represent. You can customize the chart to override the default color scale by adding the [`chartForegroundStyleScale(_:)`](https://developer.apple.com/documentation/swiftui/view/chartforegroundstylescale(_:)) chart modifier:
 
 ```swift
 Chart {
@@ -174,7 +174,7 @@ Chart {
 
 Now the names of the colors match the colors used in the chart, making the chart easier to understand:
 
-![A stacked bar chart showing the count of shape types with a legend. The first bar is labeled Cube, and is split into four segments of different colors. The other two are labeled Pyramid and Sphere, and each is split into three segments of different colors. A legend at the bottom of the chart indicates what each segment color represents, which is a shape color. The legend shows that the color of bar marks match the shape colors that they represent. For example, the color green is labeled Green, indicating that green marks in the chart represent green shapes.](https://docs-assets.developer.apple.com/published/a2edaec71be31fe5fa54116d6ea12a5c/CreatingYourFirstChart-4%402x.png)
+![A stacked bar chart showing the count of shape types with a legend. The first bar is labeled Cube, and is split into four segments of different colors. The other two are labeled Pyramid and Sphere, and each is split into three segments of different colors. A legend at the bottom of the chart indicates what each segment color represents, which is a shape color. The legend shows that the color of bar marks match the shape colors that they represent. For example, the color green is labeled Green, indicating that green marks in the chart represent green shapes.](/images/com.apple.Charts/CreatingYourFirstChart-4@2x.png)
 
 This chart makes the relationship between shape counts and colors clear. You can customize charts in many other ways. For example, you can set the bar width, choose different legend symbols, and control the axes.
 

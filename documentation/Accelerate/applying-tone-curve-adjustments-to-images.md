@@ -18,7 +18,7 @@ To generate the smooth curves in the user interface, the app passes the same coe
 
 The following image shows the sample code project’s app. The circles on the curves are the handles that the user can drag vertically, and the image changes to show the effect of the polynomial transform.
 
-![A screenshot showing the sample code app with the transformed photograph on the left after adjustment, and the three tone curve controls on the right for the red, green, and blue channels.](https://docs-assets.developer.apple.com/published/dc8351ac3a9e7073974d9decfac88e97/vImagePolynomial_2x.png)
+![A screenshot showing the sample code app with the transformed photograph on the left after adjustment, and the three tone curve controls on the right for the red, green, and blue channels.](/images/com.apple.accelerate/vImagePolynomial_2x.png)
 
 ##### Convert the Interleaved Source Image to Planar Buffers
 
@@ -46,7 +46,7 @@ greenHandleValues = vDSP.ramp(
 
 When the sample code app first launches, the default values form a linear tone curve that renders as a stright line in the user interface.
 
-![A screenshot showing the sample code app with the original unadjusted photograph on the left, and the three linear tone controls on the right for the red, green, and blue channels.](https://docs-assets.developer.apple.com/published/be0076c7c847f81d910518064d785e2a/tone_curve.png)
+![A screenshot showing the sample code app with the original unadjusted photograph on the left, and the three linear tone controls on the right for the red, green, and blue channels.](/images/com.apple.accelerate/tone_curve.png)
 
 The default control points create an output image that’s identical to the input image. That is, for each pixel, the transformed output value is equal to the input value.
 
@@ -99,7 +99,7 @@ After the transform, the `displayPlanarDestinationBuffers()` function calls [`in
 
 The `PolynomialEditor` class uses the coefficients that the `applyPolynomial()` function computes to render a representation of the response curve.
 
-The `updatePath()` function calls [`evaluatePolynomial(usingCoefficients:withVariables:result:)`](vdsp/evaluatepolynomial(usingcoefficients:withvariables:result:)-2ncdh.md) to build a [`CGPath`](https://developer.apple.com/documentation/CoreGraphics/CGPath) instance that the editor uses to render a smooth curve in the user interface.
+The `updatePath()` function calls [`evaluatePolynomial(usingCoefficients:withVariables:result:)`](vdsp/evaluatepolynomial(usingcoefficients:withvariables:result:)-2ncdh.md) to build a [`CGPath`](https://developer.apple.com/documentation/coregraphics/cgpath) instance that the editor uses to render a smooth curve in the user interface.
 
 ```swift
 static func updatePath(path: inout Path,

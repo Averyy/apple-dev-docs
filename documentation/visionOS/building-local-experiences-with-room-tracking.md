@@ -12,7 +12,7 @@ Use room tracking in visionOS to provide custom interactions with physical space
 
 This sample allows your app to keep track of rooms as discrete, identifiable places, and enables you to provide a customized virtual experience inside a specific room, and to get notified when someone enters or leaves the room. These customizations can be as simple as knowing when to stop room-specific animations, or to support the creation of location-specific virtual content such as in-game treasures, effects, or even portals to virtual worlds that contain other content.
 
-This sample demonstrates how to use room tracking by enabling a person to place spheres in a space and continuously query the framework as to whether those spheres are in the same room as the person. As someone moves into, through, and out of the room, ARKit delivers [`RoomAnchor`](https://developer.apple.com/documentation/ARKit/RoomAnchor) updates that represent the latest knowledge of the current room. This structure provides a [`contains(_:)`](https://developer.apple.com/documentation/ARKit/RoomAnchor/contains(_:)) query method that you use to determine if the spheres are in the current room, and highlight them accordingly.
+This sample demonstrates how to use room tracking by enabling a person to place spheres in a space and continuously query the framework as to whether those spheres are in the same room as the person. As someone moves into, through, and out of the room, ARKit delivers [`RoomAnchor`](https://developer.apple.com/documentation/arkit/roomanchor) updates that represent the latest knowledge of the current room. This structure provides a [`contains(_:)`](https://developer.apple.com/documentation/arkit/roomanchor/contains(_:)) query method that you use to determine if the spheres are in the current room, and highlight them accordingly.
 
 The app has an *occlusion mode*, in which the room geometry the framework renders is a transparent occluder that hides virtual objects outside the room. It also has a *wall selection mode*, in which someone may select a specific wall for the purpose of replacing it with a video or virtual portal.
 
@@ -20,9 +20,9 @@ The app has an *occlusion mode*, in which the room geometry the framework render
 
 #### Ensure All Data Providers Are in an Authorized State
 
-Your app must request permission to use certain visionOS capabilities before being able to access data associated with them. For example, attempting to access the [`RoomTrackingProvider`](https://developer.apple.com/documentation/ARKit/RoomTrackingProvider) displays a permission sheet asking the user to authorize your app’s access. If the user has previously denied this request, the app displays an error message in the scene. For information about using a `RoomTrackingProvider`, see [`Setting up access to ARKit data`](setting-up-access-to-arkit-data.md). For information about best practices for privacy, see [`Adopting best practices for privacy and user preferences`](adopting-best-practices-for-privacy.md).
+Your app must request permission to use certain visionOS capabilities before being able to access data associated with them. For example, attempting to access the [`RoomTrackingProvider`](https://developer.apple.com/documentation/arkit/roomtrackingprovider) displays a permission sheet asking the user to authorize your app’s access. If the user has previously denied this request, the app displays an error message in the scene. For information about using a `RoomTrackingProvider`, see [`Setting up access to ARKit data`](setting-up-access-to-arkit-data.md). For information about best practices for privacy, see [`Adopting best practices for privacy and user preferences`](adopting-best-practices-for-privacy.md).
 
-> **Note**: To use the room tracking capabilities in visionOS in your app, you need to provide the  [`NSWorldSensingUsageDescription`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSWorldSensingUsageDescription) key in your app’s `Info.plist` along with a description of why your app uses this feature. This sample already provides this key and description.
+> **Note**: To use the room tracking capabilities in visionOS in your app, you need to provide the  [`NSWorldSensingUsageDescription`](https://developer.apple.com/documentation/bundleresources/information-property-list/nsworldsensingusagedescription) key in your app’s `Info.plist` along with a description of why your app uses this feature. This sample already provides this key and description.
 
 ```swift
 func areAllDataProvidersAuthorized() async -> Bool {
@@ -36,7 +36,7 @@ func areAllDataProvidersAuthorized() async -> Bool {
 
 #### Configure Room Tracking
 
-Set up room tracking by first configuring an [`ARKitSession`](https://developer.apple.com/documentation/ARKit/ARKitSession) instance, then add a  [`WorldTrackingProvider`](https://developer.apple.com/documentation/ARKit/WorldTrackingProvider) and a  [`RoomTrackingProvider`](https://developer.apple.com/documentation/ARKit/RoomTrackingProvider) to the session as shown in the following example:
+Set up room tracking by first configuring an [`ARKitSession`](https://developer.apple.com/documentation/arkit/arkitsession) instance, then add a  [`WorldTrackingProvider`](https://developer.apple.com/documentation/arkit/worldtrackingprovider) and a  [`RoomTrackingProvider`](https://developer.apple.com/documentation/arkit/roomtrackingprovider) to the session as shown in the following example:
 
 ```swift
 private let session = ARKitSession()
@@ -93,7 +93,7 @@ private func createPreviewSphere() -> ModelEntity {
 }
 ```
 
-The second phase allows a person to place the sphere (a [`WorldAnchor`](https://developer.apple.com/documentation/ARKit/WorldAnchor)) in their surroundings  with a tap gesture. Gestures such as this are SwiftUI view modifiers you apply to the room’s `View`, as shown below:
+The second phase allows a person to place the sphere (a [`WorldAnchor`](https://developer.apple.com/documentation/arkit/worldanchor)) in their surroundings  with a tap gesture. Gestures such as this are SwiftUI view modifiers you apply to the room’s `View`, as shown below:
 
 ```swift
 .gesture(SpatialTapGesture().targetedToAnyEntity().onEnded { event in
@@ -115,7 +115,7 @@ This changing state and the property of a room being *current* is what allows an
 
 #### Check the Current Room and Respond to Updates
 
-As a person moves from room to room, ARKit’s room tracking process checks to see which room is current and reports back changes to the app through the `RoomTrackingProvider` property  [`anchorUpdates`](https://developer.apple.com/documentation/ARKit/RoomTrackingProvider/anchorUpdates), which is an asynchronous sequence of all anchor updates. As these updates come in, a `Task` view modifier in the app’s `WorldAndRoomView` calls a method that looks for anchors to update, as demonstrated here:
+As a person moves from room to room, ARKit’s room tracking process checks to see which room is current and reports back changes to the app through the `RoomTrackingProvider` property  [`anchorUpdates`](https://developer.apple.com/documentation/arkit/roomtrackingprovider/anchorupdates), which is an asynchronous sequence of all anchor updates. As these updates come in, a `Task` view modifier in the app’s `WorldAndRoomView` calls a method that looks for anchors to update, as demonstrated here:
 
 ```swift
 func processRoomTrackingUpdates() async {
@@ -246,7 +246,7 @@ Room tracking operates only in the current room a person is in. If someone leave
 
 Clutter in a room, large furniture elements, and very large spaces may interfere with ARKit’s ability to accurately detect walls and fully detect the dimensions of a room. In the case of very large indoor spaces, or in rooms with low-light conditions, the framework may only provide a floor mesh. Additionally, visionOS doesn’t support using room tracking outdoors or when Apple Vision Pro is in Travel Mode. In these cases, there’s no current room. For more information on implementing immersive experiences, see Human Interface Guidelines > [`Immersive experiences`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/immersive-experiences).
 
-> ⚠️ **Warning**: Be mindful of how much content you include in immersive scenes that use the [`mixed`](https://developer.apple.com/documentation/SwiftUI/ImmersionStyle/mixed) style. Content that fills a significant portion of the screen, even if that content is partially transparent, can prevent the person from seeing potential hazards in their surroundings. If you want to immerse the person in your content, configure your space with the  [`full`](https://developer.apple.com/documentation/SwiftUI/ImmersionStyle/full) style. For more information, see [`Creating fully immersive experiences in your app`](https://developer.apple.comhttps://developer.apple.com/documentation/visionos/creating-fully-immersive-experiences).
+> ⚠️ **Warning**: Be mindful of how much content you include in immersive scenes that use the [`mixed`](https://developer.apple.com/documentation/swiftui/immersionstyle/mixed) style. Content that fills a significant portion of the screen, even if that content is partially transparent, can prevent the person from seeing potential hazards in their surroundings. If you want to immerse the person in your content, configure your space with the  [`full`](https://developer.apple.com/documentation/swiftui/immersionstyle/full) style. For more information, see [`Creating fully immersive experiences in your app`](https://developer.apple.comhttps://developer.apple.com/documentation/visionos/creating-fully-immersive-experiences).
 
 ## See Also
 
@@ -270,7 +270,7 @@ Clutter in a room, large furniture elements, and very large spaces may interfere
   Query and react to changes in the position and rotation of Apple Vision Pro.
 - [Drawing in the air and on surfaces with a spatial stylus](drawing-in-the-air-and-on-surfaces-with-a-spatial-stylus.md)
   Create a spatial stylus drawing experience that balances latency and accuracy for both in-air and on-surface drawing.
-- [Preparing spatial accessories for tracking in your visionOS app](../ARKit/preparing-spatial-accessories-for-tracking-in-your-visionos-app.md)
+- [Preparing spatial accessories for tracking in your visionOS app](../arkit/preparing-spatial-accessories-for-tracking-in-your-visionos-app.md)
   Prepare a spatial accessory for tracking by training a reference accessory file and integrating it into your visionOS app.
 - [Working with generic spatial accessories](working-with-generic-spatial-accessories.md)
   Let people place digital replicas of a generic spatial accessory by tracking the accessory with ARKit.

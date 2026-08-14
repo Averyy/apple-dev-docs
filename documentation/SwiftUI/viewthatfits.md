@@ -65,7 +65,7 @@ VStack {
 }
 ```
 
-![A vertical stack showing three expressions of progress, constrained by](https://docs-assets.developer.apple.com/published/2b5e67f3b1922018a42dec9df80df304/ViewThatFits-1%402x.png)
+![A vertical stack showing three expressions of progress, constrained by](/images/com.apple.SwiftUI/ViewThatFits-1@2x.png)
 
 ## Topics
 

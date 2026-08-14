@@ -32,8 +32,8 @@ Thread-safe since Mac OS version 10.2.
 
 ## Parameters
 
-- `inRef`: A pointer to a file-system reference designating the item whose filename extension is to be hidden or shown; see the   in the Carbon File Management Documentation for a description of the   data type.
-- `inHide`: A Boolean value specifying whether the filename extension should be hidden ( ) or shown ( ).
+- `inRef`: A pointer to a file-system reference designating the item whose filename extension is to be hidden or shown; see the *File Manager Reference* in the Carbon File Management Documentation for a description of the `FSRef` data type.
+- `inHide`: A Boolean value specifying whether the filename extension should be hidden (`true`) or shown (`false`).
 
 ## See Also
 

@@ -16,7 +16,7 @@ static let textureTarget: CIImageOption
 
 #### Discussion
 
-The value for this key must be an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) object containing a supported OpenGL texture target constant, either `GL_TEXTURE_2D` or `GL_TEXTURE_RECTANGLE_ARB`. You may only use this key when initializing an image using the [`init(texture:size:flipped:options:)`](ciimage/init(texture:size:flipped:options:).md) method.
+The value for this key must be an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) object containing a supported OpenGL texture target constant, either `GL_TEXTURE_2D` or `GL_TEXTURE_RECTANGLE_ARB`. You may only use this key when initializing an image using the [`init(texture:size:flipped:options:)`](ciimage/init(texture:size:flipped:options:).md) method.
 
 ## See Also
 

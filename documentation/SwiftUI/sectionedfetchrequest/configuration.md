@@ -22,7 +22,7 @@ struct Configuration
 
 #### Overview
 
-You initialize a [`SectionedFetchRequest`](sectionedfetchrequest.md) with a section identifier, an optional predicate, and sort descriptors, either explicitly or with a configured [`NSFetchRequest`](https://developer.apple.com/documentation/CoreData/NSFetchRequest). Later, you can dynamically update the identifier, predicate, and sort parameters using the request’s configuration structure.
+You initialize a [`SectionedFetchRequest`](sectionedfetchrequest.md) with a section identifier, an optional predicate, and sort descriptors, either explicitly or with a configured [`NSFetchRequest`](https://developer.apple.com/documentation/coredata/nsfetchrequest). Later, you can dynamically update the identifier, predicate, and sort parameters using the request’s configuration structure.
 
 You access or bind to a request’s configuration components through properties on the associated [`SectionedFetchResults`](sectionedfetchresults.md) instance, just like you do for a [`FetchRequest`](fetchrequest.md) using [`FetchRequest.Configuration`](fetchrequest/configuration.md).
 

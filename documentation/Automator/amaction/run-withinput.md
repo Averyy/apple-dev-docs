@@ -17,13 +17,13 @@ func run(withInput input: Any?) throws -> Any
 
 #### Return Value
 
-An [`NSArray`](https://developer.apple.com/documentation/Foundation/NSArray) object that contains one or more objects of a data type compatible with a type specified in the receiving action’s `AMProvides` property. If the action doesn’t modify the data passed in `input`, it should return it unchanged. If the action doesn’t have any data to provide, it should return an empty [`NSArray`](https://developer.apple.com/documentation/Foundation/NSArray) object.
+An [`NSArray`](https://developer.apple.com/documentation/foundation/nsarray) object that contains one or more objects of a data type compatible with a type specified in the receiving action’s `AMProvides` property. If the action doesn’t modify the data passed in `input`, it should return it unchanged. If the action doesn’t have any data to provide, it should return an empty [`NSArray`](https://developer.apple.com/documentation/foundation/nsarray) object.
 
 #### Discussion
 
 This method is intended to be overridden.
 
-The input and output objects for actions are usually instances of [`NSArray`](https://developer.apple.com/documentation/Foundation/NSArray). If the action encounters problems, it should return by indirection an [`NSError`](https://developer.apple.com/documentation/Foundation/NSError) object that describes the error.
+The input and output objects for actions are usually instances of [`NSArray`](https://developer.apple.com/documentation/foundation/nsarray). If the action encounters problems, it should return by indirection an [`NSError`](https://developer.apple.com/documentation/foundation/nserror) object that describes the error.
 
 ## Parameters
 

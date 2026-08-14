@@ -8,7 +8,7 @@ Add joints to nodes in your scene.
 
 Although you can make a lot of interesting games that use the physics systems already described, you can take your designs further by connecting physics bodies using joints. When the scene simulates the physics, it takes these joints into account when calculating how forces affect the bodies. The following illustration shows the types of joints you can use.
 
-![Physics joints](https://docs-assets.developer.apple.com/published/65b02ce268194270c8f520b815c754a1/media-2975408%402x.png)
+![Physics joints](/images/com.apple.spritekit/media-2975408@2x.png)
 
 You add or remove joints using the physics world. When you create a joint, the points that connect the joint are always specified in the scene’s coordinate system. This may require you to first convert from node coordinates to scene coordinates before creating the joint.
 

@@ -26,17 +26,17 @@ Apple Archive provides fast compression that includes file attributes, such as, 
 ## Topics
 
 ### Apple Archive essentials
-- [Compressing single files](../Accelerate/compressing-single-files.md)
+- [Compressing single files](../accelerate/compressing-single-files.md)
   Compress a single file and store the result on the file system.
-- [Decompressing single files](../Accelerate/decompressing-single-files.md)
+- [Decompressing single files](../accelerate/decompressing-single-files.md)
   Recreate a single file from a compressed file.
-- [Compressing file system directories](../Accelerate/compressing-file-system-directories.md)
+- [Compressing file system directories](../accelerate/compressing-file-system-directories.md)
   Compress the contents of an entire directory and store the result on the file system.
-- [Decompressing and extracting an archived directory](../Accelerate/decompressing-and-extracting-an-archived-directory.md)
+- [Decompressing and extracting an archived directory](../accelerate/decompressing-and-extracting-an-archived-directory.md)
   Recreate an entire file system directory from an archive file.
-- [Compressing and saving a string to the file system](../Accelerate/compressing-and-saving-a-string-to-the-file-system.md)
+- [Compressing and saving a string to the file system](../accelerate/compressing-and-saving-a-string-to-the-file-system.md)
   Compress the contents of a Unicode string and store the result on the file system.
-- [Decompressing and parsing an archived string](../Accelerate/decompressing-and-parsing-an-archived-string.md)
+- [Decompressing and parsing an archived string](../accelerate/decompressing-and-parsing-an-archived-string.md)
   Recreate a string from an archive file.
 ### Apple Encrypted Archive essentials
 - [Encrypting and Decrypting a String](encrypting-and-decrypting-a-string.md)
@@ -70,7 +70,7 @@ Apple Archive provides fast compression that includes file attributes, such as, 
 
 ## See Also
 
-- [About Apple File System](../Foundation/about-apple-file-system.md)
+- [About Apple File System](../foundation/about-apple-file-system.md)
   Use high-level APIs to get the most out of Apple File System.
 
 

@@ -21,7 +21,7 @@ let AVAudioSessionSilenceSecondaryAudioHintTypeKey: String
 
 #### Discussion
 
-The associated value is an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) representing the silence secondary audio hint type. See [`AVAudioSession.SilenceSecondaryAudioHintType`](avaudiosession/silencesecondaryaudiohinttype.md) for supported values.
+The associated value is an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) representing the silence secondary audio hint type. See [`AVAudioSession.SilenceSecondaryAudioHintType`](avaudiosession/silencesecondaryaudiohinttype.md) for supported values.
 
 
 ---

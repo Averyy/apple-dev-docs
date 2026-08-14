@@ -22,10 +22,10 @@ The default implementation of this method propagates the message to its subviews
 
 ## Parameters
 
-- `newBottom`: Returns by indirection a new [`CGFloat`](https://developer.apple.com/documentation/CoreFoundation/CGFloat-swift.struct) value for the bottom edge of the pending page rectangle in the view’s coordinate system.
-- `oldTop`: A [`CGFloat`](https://developer.apple.com/documentation/CoreFoundation/CGFloat-swift.struct) value that sets the top edge of the pending page rectangle in the view’s coordinate system.
-- `oldBottom`: A [`CGFloat`](https://developer.apple.com/documentation/CoreFoundation/CGFloat-swift.struct) value that sets the bottom edge of the pending page rectangle in the view’s coordinate system.
-- `bottomLimit`: The topmost [`CGFloat`](https://developer.apple.com/documentation/CoreFoundation/CGFloat-swift.struct) value `newBottom` can be set to, as calculated using the value of the [`heightAdjustLimit`](nsview/heightadjustlimit.md) property.
+- `newBottom`: Returns by indirection a new [`CGFloat`](https://developer.apple.com/documentation/corefoundation/cgfloat-swift.struct) value for the bottom edge of the pending page rectangle in the view’s coordinate system.
+- `oldTop`: A [`CGFloat`](https://developer.apple.com/documentation/corefoundation/cgfloat-swift.struct) value that sets the top edge of the pending page rectangle in the view’s coordinate system.
+- `oldBottom`: A [`CGFloat`](https://developer.apple.com/documentation/corefoundation/cgfloat-swift.struct) value that sets the bottom edge of the pending page rectangle in the view’s coordinate system.
+- `bottomLimit`: The topmost [`CGFloat`](https://developer.apple.com/documentation/corefoundation/cgfloat-swift.struct) value `newBottom` can be set to, as calculated using the value of the [`heightAdjustLimit`](nsview/heightadjustlimit.md) property.
 
 ## See Also
 

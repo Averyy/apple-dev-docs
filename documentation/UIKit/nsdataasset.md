@@ -27,13 +27,13 @@ The object’s content is stored as a set of one or more files with associated d
 
 Data assets are initialized from a named data set in an asset catalog. You create data sets during app development. Each data set contains one or more data files. Each file has associated attributes for features of the device, including the minimum amount of memory and the version of Metal. When you initialize the data asset, the system selects the data file that best matches the current device.
 
-For more information on the data set type in an asset catalog, see [`Data Set Type`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Xcode/Reference/xcode_ref-Asset_Catalog_Format/DataSetType.html#//apple_ref/doc/uid/TP40015170-CH23) in [`Asset Catalog Format Reference`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Xcode/Reference/xcode_ref-Asset_Catalog_Format/index.html#//apple_ref/doc/uid/TP40015170). For information on asset catalogs, see [`Managing assets with asset catalogs`](https://developer.apple.com/documentation/Xcode/managing-assets-with-asset-catalogs).
+For more information on the data set type in an asset catalog, see [`Data Set Type`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Xcode/Reference/xcode_ref-Asset_Catalog_Format/DataSetType.html#//apple_ref/doc/uid/TP40015170-CH23) in [`Asset Catalog Format Reference`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Xcode/Reference/xcode_ref-Asset_Catalog_Format/index.html#//apple_ref/doc/uid/TP40015170). For information on asset catalogs, see [`Managing assets with asset catalogs`](https://developer.apple.com/documentation/xcode/managing-assets-with-asset-catalogs).
 
 ##### Access the Data
 
-You access the data file by using the [`data`](nsdataasset/data.md) property. Because the property is of type [`NSData`](https://developer.apple.com/documentation/Foundation/NSData) it provides methods for accessing the raw data only as bytes and ranges of bytes.
+You access the data file by using the [`data`](nsdataasset/data.md) property. Because the property is of type [`NSData`](https://developer.apple.com/documentation/foundation/nsdata) it provides methods for accessing the raw data only as bytes and ranges of bytes.
 
-To access structured data, convert the bytes into the appropriate format. The system can convert some data types for you. One example is XML data using the [`init(data:)`](https://developer.apple.com/documentation/Foundation/XMLParser/init(data:)) method of [`XMLParser`](https://developer.apple.com/documentation/Foundation/XMLParser). Other data types require code for parsing and converting the raw data. You may need to convert larger data files incrementally.
+To access structured data, convert the bytes into the appropriate format. The system can convert some data types for you. One example is XML data using the [`init(data:)`](https://developer.apple.com/documentation/foundation/xmlparser/init(data:)) method of [`XMLParser`](https://developer.apple.com/documentation/foundation/xmlparser). Other data types require code for parsing and converting the raw data. You may need to convert larger data files incrementally.
 
 ## Topics
 
@@ -56,17 +56,17 @@ To access structured data, convert the bytes into the appropriate format. The sy
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCopying](../Foundation/NSCopying.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCopying](../foundation/nscopying.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

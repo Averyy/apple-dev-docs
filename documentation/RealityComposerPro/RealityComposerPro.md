@@ -8,7 +8,7 @@ Build, design, and orchestrate 3D content for your RealityKit apps.
 
 Reality Composer Pro 3 makes it easy to rapidly iterate, preview, and prepare 3D content for your visionOS apps, iOS apps, and more — right on your Mac. Build stunning scenes and animate characters with cinematic precision. And you can preview your changes live on Apple Vision Pro.
 
-![A screenshot of Reality Composer Pro.](https://docs-assets.developer.apple.com/published/6358581971f04ea168a3a38d38f011ab/Overview%402x.png)
+![A screenshot of Reality Composer Pro.](/images/RealityComposerPro/Overview@2x.png)
 
 Reality Composer Pro includes editors and workflows for designing materials with Shader Graph, building visual scripts with Script Graph, authoring GPU-driven simulations with Compute Graph, defining character behaviors with Animation Graphs, and editing skeletons.
 
@@ -28,7 +28,7 @@ The ECS model has three building blocks: entities, components, and systems.
 
 Systems change an entity’s behavior at runtime by adding, removing, or modifying components.
 
-> **Note**: To learn more about RealityKit components, see [`Understanding the modular architecture of RealityKit`](https://developer.apple.com/documentation/visionOS/understanding-the-realitykit-modular-architecture).
+> **Note**: To learn more about RealityKit components, see [`Understanding the modular architecture of RealityKit`](https://developer.apple.com/documentation/visionos/understanding-the-realitykit-modular-architecture).
 
 ##### Whats New in Reality Composer Pro
 

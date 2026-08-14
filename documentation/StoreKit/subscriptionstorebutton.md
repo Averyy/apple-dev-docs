@@ -23,7 +23,7 @@ A button for subscribing to an in-app subscription with a localized label and op
 
 #### Overview
 
-When implementing custom subscription store control styles conforming to [`SubscriptionStoreControlStyle`](subscriptionstorecontrolstyle.md), you can use this button to utilize the standard subscribe button as a component of the view you provide from [`makeBody(configuration:)`](subscriptionstorecontrolstyle/makebody(configuration:).md). The subscription store button automatically generates a localized label and optional caption for the corresponding subscription option. To configure a custom button label, use [`Button`](https://developer.apple.com/documentation/SwiftUI/Button) instead.
+When implementing custom subscription store control styles conforming to [`SubscriptionStoreControlStyle`](subscriptionstorecontrolstyle.md), you can use this button to utilize the standard subscribe button as a component of the view you provide from [`makeBody(configuration:)`](subscriptionstorecontrolstyle/makebody(configuration:).md). The subscription store button automatically generates a localized label and optional caption for the corresponding subscription option. To configure a custom button label, use [`Button`](https://developer.apple.com/documentation/swiftui/button) instead.
 
 Standard subscription store control styles use the subscription store button. For example, the [`buttons`](subscriptionstorecontrolstyle/buttons.md) style creates a `SubscriptionStoreButton` instance for each subscription option.
 
@@ -31,7 +31,7 @@ Standard subscription store control styles use the subscription store button. Fo
 
 In iOS, macOS, visionOS and watchOS you can configure the button’s label by modifying it with `subscriptionStoreButtonLabel(_:)`. Some button label configurations cause the button to have a caption, for example .`displayName.singleLine`.
 
-Because the `SubscriptionStoreButton` is composed of a SwiftUI [`Button`](https://developer.apple.com/documentation/SwiftUI/Button), you can also configure the button using other built-in view modifiers such as [`buttonStyle(_:)`](https://developer.apple.com/documentation/SwiftUI/View/buttonStyle(_:)-66fbx).
+Because the `SubscriptionStoreButton` is composed of a SwiftUI [`Button`](https://developer.apple.com/documentation/swiftui/button), you can also configure the button using other built-in view modifiers such as [`buttonStyle(_:)`](https://developer.apple.com/documentation/swiftui/view/buttonstyle(_:)-66fbx).
 
 To create a `SubscriptionStoreButton`, provide a value of [`SubscriptionStoreControlStyleConfiguration.Option`](subscriptionstorecontrolstyleconfiguration/option.md) to the [`init(_:)`](subscriptionstorebutton/init(_:).md) method. Get an option value from the required [`makeBody(configuration:)`](subscriptionstorecontrolstyle/makebody(configuration:).md) method on your [`SubscriptionStoreControlStyle`](subscriptionstorecontrolstyle.md) implementation.
 
@@ -46,9 +46,9 @@ To create a `SubscriptionStoreButton`, provide a value of [`SubscriptionStoreCon
 ## Relationships
 
 ### Conforms To
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
-- [View](../SwiftUI/View.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
+- [View](../swiftui/view.md)
 
 ## See Also
 

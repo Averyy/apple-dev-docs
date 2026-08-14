@@ -20,7 +20,7 @@ object Context
 
 #### Discussion
 
-The contexts that you specify in your app as [`CLSContext`](https://developer.apple.com/documentation/ClassKit/CLSContext) instances correspond to the [`Context.Data`](context/data-data.dictionary.md) object. The [`Context.Metadata`](context/metadata-data.dictionary.md) object contains additional information about a context that’s implicit when working with ClassKit in your app.
+The contexts that you specify in your app as [`CLSContext`](https://developer.apple.com/documentation/classkit/clscontext) instances correspond to the [`Context.Data`](context/data-data.dictionary.md) object. The [`Context.Metadata`](context/metadata-data.dictionary.md) object contains additional information about a context that’s implicit when working with ClassKit in your app.
 
 ## Topics
 
@@ -32,7 +32,7 @@ The contexts that you specify in your app as [`CLSContext`](https://developer.ap
 
 ## Properties
 
-- `data` (Context.Data) *(required)*: The data that makes up the context. This is largely the same information that you provide to the ClassKit framework when you create a [`CLSContext`](https://developer.apple.com/documentation/ClassKit/CLSContext) instance.
+- `data` (Context.Data) *(required)*: The data that makes up the context. This is largely the same information that you provide to the ClassKit framework when you create a [`CLSContext`](https://developer.apple.com/documentation/classkit/clscontext) instance.
 - `metadata` (Context.Metadata) *(required)*: Information about the context, like the locale to which the context applies.
 
 ## See Also

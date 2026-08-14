@@ -20,10 +20,10 @@ class NFCTagReaderSession
 
 Use NFCTagReaderSession to interact with one of the tag types listed in [`NFCTagType`](nfctagtype.md). To use this reader session, you must:
 
-- Include the [`Near Field Communication Tag Reader Session Formats Entitlement`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.nfc.readersession.formats) in your app.
-- Provide a non-empty string for the [`NFCReaderUsageDescription`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NFCReaderUsageDescription) key in your app’s information property list file.
+- Include the [`Near Field Communication Tag Reader Session Formats Entitlement`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.nfc.readersession.formats) in your app.
+- Provide a non-empty string for the [`NFCReaderUsageDescription`](https://developer.apple.com/documentation/bundleresources/information-property-list/nfcreaderusagedescription) key in your app’s information property list file.
 
-To interact with ISO 7816 tags, add the list of the application identifiers supported in your app to the [`ISO7816 application identifiers for NFC Tag Reader Session`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.nfc.readersession.iso7816.select-identifiers) information property list key. If you include the application identifier `D2760000850101`—the identifier for the NDEF application on MIFARE DESFire tags (NFC Forum T4T tag platform)—and the reader session finds a tag matching this identifier, it sends the delegate an [`NFCISO7816Tag`](nfciso7816tag.md) tag object. To get the MIFARE DESFire tag as an [`NFCMiFareTag`](nfcmifaretag.md) object, don’t include `D2760000850101` in the application identifier list.
+To interact with ISO 7816 tags, add the list of the application identifiers supported in your app to the [`ISO7816 application identifiers for NFC Tag Reader Session`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.nfc.readersession.iso7816.select-identifiers) information property list key. If you include the application identifier `D2760000850101`—the identifier for the NDEF application on MIFARE DESFire tags (NFC Forum T4T tag platform)—and the reader session finds a tag matching this identifier, it sends the delegate an [`NFCISO7816Tag`](nfciso7816tag.md) tag object. To get the MIFARE DESFire tag as an [`NFCMiFareTag`](nfcmifaretag.md) object, don’t include `D2760000850101` in the application identifier list.
 
 Only one reader session of any type can be active in the system at a time. The system puts additional sessions in a queue and processes them in first-in, first-out (FIFO) order.
 
@@ -65,13 +65,13 @@ Only one reader session of any type can be active in the system at a time. The 
 ### Inherited By
 - [NFCPaymentTagReaderSession](nfcpaymenttagreadersession.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
 - [NFCReaderSessionProtocol](nfcreadersessionprotocol.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 
@@ -85,7 +85,7 @@ Only one reader session of any type can be active in the system at a time. The 
   The abstract base class that represents a reader session for detecting NFC tags.
 - [protocol NFCReaderSessionProtocol](nfcreadersessionprotocol.md)
   A general interface for interacting with a reader session.
-- [Near Field Communication Tag Reader Session Formats Entitlement](../BundleResources/Entitlements/com.apple.developer.nfc.readersession.formats.md)
+- [Near Field Communication Tag Reader Session Formats Entitlement](../bundleresources/entitlements/com.apple.developer.nfc.readersession.formats.md)
   The Near Field Communication data formats an app can read.
 
 

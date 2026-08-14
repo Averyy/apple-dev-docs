@@ -43,7 +43,7 @@ This sample demonstrates the following views and controls; several of which are 
 - [`UITextView`](uitextview.md)
 - [`UIToolbar`](uitoolbar.md)
 - [`UIVisualEffect`](uivisualeffect.md)
-- [`WKWebView`](https://developer.apple.com/documentation/WebKit/WKWebView)
+- [`WKWebView`](https://developer.apple.com/documentation/webkit/wkwebview)
 
 ##### Configure the Sample Code Project
 
@@ -305,7 +305,7 @@ When built for Mac Catalyst, this sample achieves:
   Display content that fills the entire height of a window by removing the title bar.
 - [Toolbar](toolbar.md)
   Provide a space for controls under a window’s title bar and above your custom content.
-- [Touch Bar](../AppKit/touch-bar.md)
+- [Touch Bar](../appkit/touch-bar.md)
   Display interactive content and controls in the Touch Bar.
 
 

@@ -29,9 +29,9 @@ For guidelines on how to design fully immersive experiences, see [`Human Interfa
 
 ##### Open an Immersive Space
 
-To create a fully immersive experience, open an [`ImmersiveSpace`](https://developer.apple.com/documentation/SwiftUI/ImmersiveSpace) and set its style to [`full`](https://developer.apple.com/documentation/SwiftUI/ImmersionStyle/full). An immersive space is a type of SwiftUI scene that lets you place content anywhere in the person’s surroundings. Applying the [`full`](https://developer.apple.com/documentation/SwiftUI/ImmersionStyle/full) style to the scene tells the system to hide passthrough video and display only your app’s content.
+To create a fully immersive experience, open an [`ImmersiveSpace`](https://developer.apple.com/documentation/swiftui/immersivespace) and set its style to [`full`](https://developer.apple.com/documentation/swiftui/immersionstyle/full). An immersive space is a type of SwiftUI scene that lets you place content anywhere in the person’s surroundings. Applying the [`full`](https://developer.apple.com/documentation/swiftui/immersionstyle/full) style to the scene tells the system to hide passthrough video and display only your app’s content.
 
-Declare spaces in the [`body`](https://developer.apple.com/documentation/SwiftUI/App/body-swift.property) property of your app object, or anywhere you manage SwiftUI scenes. The following example shows an app with a main window and a fully immersive space. At launch time, the app displays the window.
+Declare spaces in the [`body`](https://developer.apple.com/documentation/swiftui/app/body-swift.property) property of your app object, or anywhere you manage SwiftUI scenes. The following example shows an app with a main window and a fully immersive space. At launch time, the app displays the window.
 
 ```swift
 @main
@@ -51,7 +51,7 @@ struct MyImmersiveApp: App {
 }
 ```
 
-To display an [`ImmersiveSpace`](https://developer.apple.com/documentation/SwiftUI/ImmersiveSpace), open it using the [`openImmersiveSpace`](https://developer.apple.com/documentation/SwiftUI/EnvironmentValues/openImmersiveSpace) action, which you obtain from the SwiftUI environment. This action runs asynchronously and uses the provided information to find and initialize your scene. The following example shows a button that opens the space with the `solarSystem` identifier:
+To display an [`ImmersiveSpace`](https://developer.apple.com/documentation/swiftui/immersivespace), open it using the [`openImmersiveSpace`](https://developer.apple.com/documentation/swiftui/environmentvalues/openimmersivespace) action, which you obtain from the SwiftUI environment. This action runs asynchronously and uses the provided information to find and initialize your scene. The following example shows a button that opens the space with the `solarSystem` identifier:
 
 ```swift
 Button("Show Solar System") {
@@ -64,13 +64,13 @@ Button("Show Solar System") {
 }
 ```
 
-An app can display only one space at a time, and it’s an error for you to try to open a space while another space is visible. To dismiss an open space, use the [`dismissImmersiveSpace`](https://developer.apple.com/documentation/SwiftUI/EnvironmentValues/dismissImmersiveSpace) action.
+An app can display only one space at a time, and it’s an error for you to try to open a space while another space is visible. To dismiss an open space, use the [`dismissImmersiveSpace`](https://developer.apple.com/documentation/swiftui/environmentvalues/dismissimmersivespace) action.
 
-For more information about displaying spaces, see the [`ImmersiveSpace`](https://developer.apple.com/documentation/SwiftUI/ImmersiveSpace) type.
+For more information about displaying spaces, see the [`ImmersiveSpace`](https://developer.apple.com/documentation/swiftui/immersivespace) type.
 
 ##### Draw Your Content Using Realitykit
 
-RealityKit works well when your content consists of primitive shapes or existing content in USD files. Organize the contents of your scene using RealityKit entities, and animate that content using components and systems. Use Reality Composer Pro to assemble your content visually, and to attach dynamic shaders, animations, audio, and other behaviors to your content. Display the contents of your RealityKit scene in a [`RealityView`](https://developer.apple.com/documentation/RealityKit/RealityView) in your scene.
+RealityKit works well when your content consists of primitive shapes or existing content in USD files. Organize the contents of your scene using RealityKit entities, and animate that content using components and systems. Use Reality Composer Pro to assemble your content visually, and to attach dynamic shaders, animations, audio, and other behaviors to your content. Display the contents of your RealityKit scene in a [`RealityView`](https://developer.apple.com/documentation/realitykit/realityview) in your scene.
 
 To load a Reality Composer Pro scene at runtime, fetch the URL of your Reality Composer Pro package file, and load the root entity of your scene. The following example shows how to create the entity for a package located in the app’s bundle:
 
@@ -82,13 +82,13 @@ let url = MyRealityBundle.bundle.url(forResource:
 let scene = try await Entity(contentsOf: url)
 ```
 
-For more information about how to display content in a [`RealityView`](https://developer.apple.com/documentation/RealityKit/RealityView) and manage interactions with your content, see [`Adding 3D content to your app`](adding-3d-content-to-your-app.md).
+For more information about how to display content in a [`RealityView`](https://developer.apple.com/documentation/realitykit/realityview) and manage interactions with your content, see [`Adding 3D content to your app`](adding-3d-content-to-your-app.md).
 
 ##### Draw Your Content Using Metal
 
 Another option for creating fully immersive scenes is to draw everything yourself using Metal. When using Metal to draw your content, use the Compositor Services framework to place that content onscreen. Compositor Services provides the code you need to set up your Metal rendering engine and start drawing.
 
-For details on how to render content using Metal and Compositor Services, and manage interactions with your content, see [`Drawing fully immersive content using Metal`](https://developer.apple.com/documentation/CompositorServices/drawing-fully-immersive-content-using-metal).
+For details on how to render content using Metal and Compositor Services, and manage interactions with your content, see [`Drawing fully immersive content using Metal`](https://developer.apple.com/documentation/compositorservices/drawing-fully-immersive-content-using-metal).
 
 ## See Also
 

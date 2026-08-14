@@ -18,7 +18,7 @@ Improve navigation in your app by using keyboard shortcuts and accessibility con
 
 - [Enhancing the accessibility of your SwiftUI app](enhancing-the-accessibility-of-your-swiftui-app.md)
   Support advancements in SwiftUI accessibility to make your app accessible to everyone.
-- [Creating accessible views](../SwiftUI/creating-accessible-views.md)
+- [Creating accessible views](../swiftui/creating-accessible-views.md)
   Make your app accessible to everyone by applying accessibility modifiers to your SwiftUI views.
 - [Delivering an exceptional accessibility experience](delivering_an_exceptional_accessibility_experience.md)
   Make improvements to your app’s interaction model to support assistive technologies such as VoiceOver.

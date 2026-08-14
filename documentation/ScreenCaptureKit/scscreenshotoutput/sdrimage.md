@@ -17,7 +17,7 @@ var sdrImage: CGImage? { get set }
 
 #### Discussion
 
-The output [`CGImage`](https://developer.apple.com/documentation/CoreGraphics/CGImage) uses the same color space as the content capture display.
+The output [`CGImage`](https://developer.apple.com/documentation/coregraphics/cgimage) uses the same color space as the content capture display.
 
 
 ---

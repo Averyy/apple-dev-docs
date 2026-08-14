@@ -22,7 +22,7 @@ let kCVImageBufferDisplayMaskRectangle_RectangleWidthKey: CFString
 
 #### Discussion
 
-The width value is a [`CFNumber`](https://developer.apple.com/documentation/CoreFoundation/CFNumber) of an unsigned 16-bit integer.
+The width value is a [`CFNumber`](https://developer.apple.com/documentation/corefoundation/cfnumber) of an unsigned 16-bit integer.
 
 ## See Also
 

@@ -24,19 +24,19 @@ Through Core Data’s Data Model editor, you define your data’s types and rela
 
 Core Data abstracts the details of mapping your objects to a store, making it easy to save data from Swift and Objective-C without administering a database directly.
 
-![Flow diagram showing an app saving data to and loading data from a persistent store.](https://docs-assets.developer.apple.com/published/75428f775be2ff5c6fe139221ff330d4/media-3119932%402x.png)
+![Flow diagram showing an app saving data to and loading data from a persistent store.](/images/com.apple.coredata/media-3119932@2x.png)
 
 ##### Undo and Redo of Individual and Batched Changes
 
 Core Data’s undo manager tracks changes and can roll them back individually, in groups, or all at once, making it easy to add undo and redo support to your app.
 
-![Figure showing a shake to undo gesture causing an element to be removed from a list.](https://docs-assets.developer.apple.com/published/640964de6db0e195490edb69b0d5aae8/media-3118362%402x.png)
+![Figure showing a shake to undo gesture causing an element to be removed from a list.](/images/com.apple.coredata/media-3118362@2x.png)
 
 ##### Background Data Tasks
 
 Perform potentially UI-blocking data tasks, like parsing JSON into objects, in the background. You can then cache or store the results to reduce server roundtrips.
 
-![Flow diagram showing data from an endpoint populating objects in the background before updating the UI.](https://docs-assets.developer.apple.com/published/d71b242e7299eb1f75bd78763df7278c/media-3118359%402x.png)
+![Flow diagram showing data from an endpoint populating objects in the background before updating the UI.](/images/com.apple.coredata/media-3118359@2x.png)
 
 ##### View Synchronization
 
@@ -97,7 +97,7 @@ Core Data includes mechanisms for versioning your data model and migrating user 
 ### Background tasks
 - [Using Core Data in the background](using-core-data-in-the-background.md)
   Use Core Data in both a single-threaded and multithreaded app.
-- [Loading and displaying a large data feed](../SwiftUI/loading-and-displaying-a-large-data-feed.md)
+- [Loading and displaying a large data feed](../swiftui/loading-and-displaying-a-large-data-feed.md)
   Consume data in the background, and lower memory use by batching imports and preventing duplicate records.
 - [Conflict resolution](conflict-resolution.md)
   Detect and resolve conflicts that occur when data is changed on multiple threads.

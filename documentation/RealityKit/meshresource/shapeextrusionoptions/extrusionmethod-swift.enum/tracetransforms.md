@@ -42,7 +42,7 @@ extrusionOptions.extrusionMethod = .traceTransforms(
 )
 ```
 
-![None](https://docs-assets.developer.apple.com/published/c6f16e2949accc8f0c48a62dd6a502ee/generateExtrudedShape-extrusionMethod-traceTransforms-red.jpg)
+![None](/images/com.apple.RealityKit/generateExtrudedShape-extrusionMethod-traceTransforms-red.jpg)
 
 You can also add a rotation for each point in the collection. For example, use the index to rotate the angle by `.pi / 6` in the z-axis for each position.
 
@@ -60,7 +60,7 @@ extrusionOptions.extrusionMethod = .traceTransforms(
 )
 ```
 
-![None](https://docs-assets.developer.apple.com/published/24dbfe6b4dc3bc4560e39fc4f925a335/generateExtrudedShape-extrusionMethod-traceTransforms-red-rotated.jpg)
+![None](/images/com.apple.RealityKit/generateExtrudedShape-extrusionMethod-traceTransforms-red-rotated.jpg)
 
 
 ---

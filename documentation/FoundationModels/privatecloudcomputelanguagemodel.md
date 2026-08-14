@@ -70,18 +70,18 @@ Before using the model, verify its availability. Model availability depends on w
 ## Relationships
 
 ### Conforms To
-- [Copyable](../Swift/Copyable.md)
-- [Escapable](../Swift/Escapable.md)
+- [Copyable](../swift/copyable.md)
+- [Escapable](../swift/escapable.md)
 - [LanguageModel](languagemodel.md)
-- [Observable](../Observation/Observable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Observable](../observation/observable.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 
 - [Adding server-side intelligence with Private Cloud Compute](adding-server-side-intelligence-with-private-cloud-compute.md)
   Access a larger context window and stronger reasoning by routing session requests through Private Cloud Compute.
-- [com.apple.developer.private-cloud-compute](../BundleResources/Entitlements/com.apple.developer.private-cloud-compute.md)
+- [com.apple.developer.private-cloud-compute](../bundleresources/entitlements/com.apple.developer.private-cloud-compute.md)
   A Boolean value that indicates whether the app can use Private Cloud Compute.
 
 

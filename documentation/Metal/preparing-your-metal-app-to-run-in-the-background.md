@@ -8,7 +8,7 @@ Prepare your app to move into the background by pausing future GPU use and ensur
 
 iOS and tvOS restrict a background app’s access to the GPU, to guarantee foreground app performance. If a Metal command queue tries to schedule command buffers after the app moves in the background, the system prevents those commands from executing. When UIKit notifies you that your app is being suspended or moved into the background, your app needs to restrict its use of Metal.
 
-For more information on the UIKit app life cycle, see [`Preparing your UI to run in the background`](https://developer.apple.com/documentation/UIKit/preparing-your-ui-to-run-in-the-background).
+For more information on the UIKit app life cycle, see [`Preparing your UI to run in the background`](https://developer.apple.com/documentation/uikit/preparing-your-ui-to-run-in-the-background).
 
 ##### Disable Code That Commits New Command Buffers
 
@@ -18,7 +18,7 @@ After the system notifies your app that it’s being deactivated, you’ve some 
 
 ##### Ensure All Previous Work Is Scheduled for Execution
 
-When UIKit calls your app delegate’s [`applicationDidEnterBackground(_:)`](https://developer.apple.com/documentation/UIKit/UIApplicationDelegate/applicationDidEnterBackground(_:)) method, make sure Metal has scheduled all command buffers you’ve already committed before your app returns control to the system. On each command queue, if the last command buffer you queued isn’t already scheduled or complete, call [`waitUntilScheduled()`](mtlcommandbuffer/waituntilscheduled().md) to force it to be scheduled.
+When UIKit calls your app delegate’s [`applicationDidEnterBackground(_:)`](https://developer.apple.com/documentation/uikit/uiapplicationdelegate/applicationdidenterbackground(_:)) method, make sure Metal has scheduled all command buffers you’ve already committed before your app returns control to the system. On each command queue, if the last command buffer you queued isn’t already scheduled or complete, call [`waitUntilScheduled()`](mtlcommandbuffer/waituntilscheduled().md) to force it to be scheduled.
 
 If you’re in the middle of encoding a new command buffer, you can combine these steps. Finish encoding commands to render the frame and commit the command buffer, then call [`waitUntilScheduled()`](mtlcommandbuffer/waituntilscheduled().md).
 

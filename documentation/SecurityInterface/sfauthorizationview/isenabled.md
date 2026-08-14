@@ -3,7 +3,7 @@
 **Framework**: Security Interface  
 **Kind**: method
 
-Indicates whether the authorization view is enabled ([`true`](https://developer.apple.com/documentation/Swift/true)) or disabled ([`false`](https://developer.apple.com/documentation/Swift/false)).
+Indicates whether the authorization view is enabled ([`true`](https://developer.apple.com/documentation/swift/true)) or disabled ([`false`](https://developer.apple.com/documentation/swift/false)).
 
 **Availability**:
 - macOS 10.3+

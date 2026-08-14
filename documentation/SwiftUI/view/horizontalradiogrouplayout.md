@@ -49,7 +49,7 @@ struct HorizontalRadioGroupLayout: View {
 }
 ```
 
-![A screenshot showing radio button groups laid out horizontally and](https://docs-assets.developer.apple.com/published/8f2854f2770dea6cb22a722e3aac8095/SwiftUI-view-horizontalRadioGroupLayout%402x.png)
+![A screenshot showing radio button groups laid out horizontally and](/images/com.apple.SwiftUI/SwiftUI-view-horizontalRadioGroupLayout@2x.png)
 
 ## See Also
 

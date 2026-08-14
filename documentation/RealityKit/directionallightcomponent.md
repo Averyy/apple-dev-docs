@@ -47,7 +47,7 @@ The directional light illuminates entities evenly in the direction it derives fr
 
 | Without a directional light | With a directional light |
 | --- | --- |
-| ![A screenshot of a RealityKit scene with a dark gray floor, a light gray cube. There is no obvious lighting in the scene, so the edges of the cube are not clear.](https://docs-assets.developer.apple.com/published/e8b038bfa7b07c3d0dcacbd9fc181188/directionallight-cube-off.jpg) | ![A screenshot of a RealityKit scene with a dark gray floor, a light gray cube, and five small green arrows in a row above the cube. There is a red light uniformly affecting the scene from above, casting a shadow to the right of the cube.](https://docs-assets.developer.apple.com/published/f01ce460b71220e95e8772c713bd9d84/directionallight-cube-on.jpg) |
+| ![A screenshot of a RealityKit scene with a dark gray floor, a light gray cube. There is no obvious lighting in the scene, so the edges of the cube are not clear.](/images/com.apple.RealityKit/directionallight-cube-off.jpg) | ![A screenshot of a RealityKit scene with a dark gray floor, a light gray cube, and five small green arrows in a row above the cube. There is a red light uniformly affecting the scene from above, casting a shadow to the right of the cube.](/images/com.apple.RealityKit/directionallight-cube-on.jpg) |
 
 > **Note**: The green arrows in the above illustration are only a visual representation of the light’s direction.
 
@@ -98,9 +98,9 @@ Because this behavior varies by device, verify your scene’s lighting on the ol
 
 ### Conforms To
 - [Component](component.md)
-- [Copyable](../Swift/Copyable.md)
-- [Equatable](../Swift/Equatable.md)
-- [Escapable](../Swift/Escapable.md)
+- [Copyable](../swift/copyable.md)
+- [Equatable](../swift/equatable.md)
+- [Escapable](../swift/escapable.md)
 
 ## See Also
 

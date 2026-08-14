@@ -26,7 +26,7 @@ A representation of the receiver using `encoding` to determine the percent escap
 
 #### Discussion
 
-It may be difficult to use this function to “clean up” unescaped or partially escaped URL strings where sequences are unpredictable. See [`CFURLCreateStringByAddingPercentEscapes(_:_:_:_:_:)`](https://developer.apple.com/documentation/CoreFoundation/CFURLCreateStringByAddingPercentEscapes(_:_:_:_:_:)) for more information.
+It may be difficult to use this function to “clean up” unescaped or partially escaped URL strings where sequences are unpredictable. See [`CFURLCreateStringByAddingPercentEscapes(_:_:_:_:_:)`](https://developer.apple.com/documentation/corefoundation/cfurlcreatestringbyaddingpercentescapes(_:_:_:_:_:)) for more information.
 
 ## Parameters
 

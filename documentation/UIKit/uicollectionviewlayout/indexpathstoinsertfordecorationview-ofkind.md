@@ -20,7 +20,7 @@ func indexPathsToInsertForDecorationView(ofKind elementKind: String) -> [IndexPa
 
 #### Return Value
 
-An array of [`NSIndexPath`](https://developer.apple.com/documentation/Foundation/NSIndexPath) objects indicating the location of the new decoration views or an empty array if you do not want to add any decoration views.
+An array of [`NSIndexPath`](https://developer.apple.com/documentation/foundation/nsindexpath) objects indicating the location of the new decoration views or an empty array if you do not want to add any decoration views.
 
 #### Discussion
 

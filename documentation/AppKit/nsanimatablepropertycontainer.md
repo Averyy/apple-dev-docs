@@ -21,7 +21,7 @@ protocol NSAnimatablePropertyContainer
 
 The [`NSAnimatablePropertyContainer`](nsanimatablepropertycontainer.md) protocol returns a proxy object for the receiver that can be used to initiate implied animation of property changes. An object’s animator proxy should be treated as if it was the object itself, and may be passed to any code that accepts the object as a parameter. Sending of key-value-coding compliant “set” messages to the proxy will trigger animation for automatically animated properties of its target object.
 
-An object’s automatically animated properties are those for which [`NSAnimatablePropertyContainer`](nsanimatablepropertycontainer.md) finds and returns a [`CAAnimation`](https://developer.apple.com/documentation/QuartzCore/CAAnimation) object instead of `nil`, often because [`animator()`](nsanimatablepropertycontainer/animator().md) specifies a default animation for the key.
+An object’s automatically animated properties are those for which [`NSAnimatablePropertyContainer`](nsanimatablepropertycontainer.md) finds and returns a [`CAAnimation`](https://developer.apple.com/documentation/quartzcore/caanimation) object instead of `nil`, often because [`animator()`](nsanimatablepropertycontainer/animator().md) specifies a default animation for the key.
 
 It’s perfectly valid to set a new value for a property for which an animation that is currently in progress; this simply sets a new target value for that property, with animation to the new target proceeding from whatever current value the property has reached. An in-flight property animation can be stopped by setting a new value for the property bracketed by an [`NSAnimationContext`](nsanimationcontext.md) with 0.0 as the duration.
 

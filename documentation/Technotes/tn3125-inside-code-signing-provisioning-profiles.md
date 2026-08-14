@@ -14,7 +14,7 @@ The other technotes in the *Inside Code Signing* series are:
 - [`TN3127: Inside Code Signing: Requirements`](tn3127-inside-code-signing-requirements.md)
 - [`TN3161: Inside Code Signing: Certificates`](tn3161-inside-code-signing-certificates.md)
 
-> ❗ **Important**: The *Inside Code Signing* technotes discuss code signing details that aren’t considered API.  The structure of a code signature has changed numerous times in the past and may well change again in the future.  Don’t encode this information in your product.  When signing code, use Xcode (all platforms) or the `codesign` tool (macOS only).  To get information or validate a code signature, use the `codesign` tool or the [`Code Signing Services`](https://developer.apple.com/documentation/Security/code-signing-services) API.  Apple updates these facilities to accommodate any changes to the code signature structure as they roll out.
+> ❗ **Important**: The *Inside Code Signing* technotes discuss code signing details that aren’t considered API.  The structure of a code signature has changed numerous times in the past and may well change again in the future.  Don’t encode this information in your product.  When signing code, use Xcode (all platforms) or the `codesign` tool (macOS only).  To get information or validate a code signature, use the `codesign` tool or the [`Code Signing Services`](https://developer.apple.com/documentation/security/code-signing-services) API.  Apple updates these facilities to accommodate any changes to the code signature structure as they roll out.
 
 #### Provisioning Profile Fundamentals
 
@@ -28,7 +28,7 @@ Apple platforms, except macOS, won’t run arbitrary third-party code.  All exec
 
 > **Note**: In this document the term *app* refers to a main executable packaged in a bundle structure.  This encompasses apps, app extensions, App Clips, system extensions, and XPC Services.
 
-You create provisioning profiles using the Apple Developer website, either directly using the website or indirectly using Xcode or the [`App Store Connect API`](https://developer.apple.com/documentation/AppStoreConnectAPI).
+You create provisioning profiles using the Apple Developer website, either directly using the website or indirectly using Xcode or the [`App Store Connect API`](https://developer.apple.com/documentation/appstoreconnectapi).
 
 When the Apple Developer website creates a profile for you, it cryptographically signs it.  When you run an app on a device, the device checks this signature to determine if the profile is valid and, if so, checks that the app meets the criteria in the profile.
 
@@ -213,10 +213,10 @@ A macOS app can claim certain entitlements without them being authorized by a pr
 
 - `com.apple.security.get-task-allow`
 - `com.apple.security.application-groups`
-- Those used to enable and configure the [`App Sandbox`](https://developer.apple.com/documentation/Security/app-sandbox)
-- Those used to configure the [`Hardened Runtime`](https://developer.apple.com/documentation/Security/hardened-runtime)
+- Those used to enable and configure the [`App Sandbox`](https://developer.apple.com/documentation/security/app-sandbox)
+- Those used to configure the [`Hardened Runtime`](https://developer.apple.com/documentation/security/hardened-runtime)
 
-> **Note**: On other Apple platforms the equivalent to `com.apple.security.get-task-allow` is `get-task-allow` and, as with all entitlements on those platforms, must be authorized by a profile.  Also, App Groups work differently on macOS and other platforms.  For details, see [`App Groups Entitlement`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.security.application-groups).
+> **Note**: On other Apple platforms the equivalent to `com.apple.security.get-task-allow` is `get-task-allow` and, as with all entitlements on those platforms, must be authorized by a profile.  Also, App Groups work differently on macOS and other platforms.  For details, see [`App Groups Entitlement`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.security.application-groups).
 
 In contrast, *restricted entitlements* must be authorized by a provisioning profile.  This is an important security feature on macOS.  For example, the fact that the `keychain-access-groups` entitlement must be authorized by a profile means that other developers can’t impersonate your app in order to steal its keychain items.
 
@@ -235,7 +235,7 @@ Note that macOS also uses a different file name extension for provisioning profi
 
 Apps that you download from the App Store don’t contain an embedded provisioning profile because the App Store checks that the app is signed and provisioned correctly as part of its distribution process.
 
-Some macOS products, like daemons and command-line tools, ship as a standalone executable.  A standalone executable can’t claim a restricted entitlement because there’s no place to embed the provisioning profile that authorizes that claim.  If your standalone executable needs to do this, wrap it in an app-like structure.  For an example of this, see [`Signing a daemon with a restricted entitlement`](https://developer.apple.com/documentation/Xcode/signing-a-daemon-with-a-restricted-entitlement).
+Some macOS products, like daemons and command-line tools, ship as a standalone executable.  A standalone executable can’t claim a restricted entitlement because there’s no place to embed the provisioning profile that authorizes that claim.  If your standalone executable needs to do this, wrap it in an app-like structure.  For an example of this, see [`Signing a daemon with a restricted entitlement`](https://developer.apple.com/documentation/xcode/signing-a-daemon-with-a-restricted-entitlement).
 
 #### The Future Is Der
 
@@ -306,7 +306,7 @@ The one exception is the `DeveloperCertificates` property.  This doesn’t conta
 1a6836292903fefeb3a1303507436ad808bede7100e360f8f632579ac7eaca96 …
 ```
 
-This DER-encoded profile is required starting with iOS 15, iPadOS 15, tvOS 15, and watchOS 8.  For more on that change, see [`Using the latest code signature format`](https://developer.apple.com/documentation/Xcode/using-the-latest-code-signature-format).
+This DER-encoded profile is required starting with iOS 15, iPadOS 15, tvOS 15, and watchOS 8.  For more on that change, see [`Using the latest code signature format`](https://developer.apple.com/documentation/xcode/using-the-latest-code-signature-format).
 
 #### Revision History
 

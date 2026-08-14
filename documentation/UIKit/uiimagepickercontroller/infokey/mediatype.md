@@ -19,7 +19,7 @@ static let mediaType: UIImagePickerController.InfoKey
 
 #### Discussion
 
-The value for this key is an [`NSString`](https://developer.apple.com/documentation/Foundation/NSString) object containing a type code such as `kUTTypeImage` or `kUTTypeMovie`.
+The value for this key is an [`NSString`](https://developer.apple.com/documentation/foundation/nsstring) object containing a type code such as `kUTTypeImage` or `kUTTypeMovie`.
 
 ## See Also
 

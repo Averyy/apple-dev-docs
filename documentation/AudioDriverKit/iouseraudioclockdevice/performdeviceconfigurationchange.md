@@ -16,7 +16,7 @@ virtual kern_return_t PerformDeviceConfigurationChange(uint64_t change_action, O
 
 #### Return Value
 
-[`kIOReturnSuccess`](https://developer.apple.com/documentation/DriverKit/kIOReturnSuccess) on success, or another value if an error occurs. For a list of error codes, see [`Error Codes`](https://developer.apple.com/documentation/DriverKit/error-codes).
+[`kIOReturnSuccess`](https://developer.apple.com/documentation/driverkit/kioreturnsuccess) on success, or another value if an error occurs. For a list of error codes, see [`Error Codes`](https://developer.apple.com/documentation/driverkit/error-codes).
 
 #### Discussion
 
@@ -25,7 +25,7 @@ The host calls this method to allow the clock device to perform a configuration 
 ## Parameters
 
 - `change_action`: A uint64_t that indicates the action the device object takes. This is the same value previously passed to [`RequestDeviceConfigurationChange`](iouseraudioclockdevice/requestdeviceconfigurationchange.md). This value is purely for the clock device’s usage; the host doesn’t look at this value.
-- `in_change_info`: A pointer to an [`OSObject`](https://developer.apple.com/documentation/DriverKit/OSObject) about the configuration change. This is the same value previously passed to [`RequestDeviceConfigurationChange`](iouseraudioclockdevice/requestdeviceconfigurationchange.md). This value is purely for the clock device’s usage; the host doesn’t look at this value. Retain and release this object reference as needed.
+- `in_change_info`: A pointer to an [`OSObject`](https://developer.apple.com/documentation/driverkit/osobject) about the configuration change. This is the same value previously passed to [`RequestDeviceConfigurationChange`](iouseraudioclockdevice/requestdeviceconfigurationchange.md). This value is purely for the clock device’s usage; the host doesn’t look at this value. Retain and release this object reference as needed.
 
 ## See Also
 

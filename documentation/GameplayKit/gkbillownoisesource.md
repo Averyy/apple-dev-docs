@@ -23,9 +23,9 @@ class GKBillowNoiseSource
 
 Billow noise is similar to Perlin noise (see the [`GKPerlinNoiseSource`](gkperlinnoisesource.md) class), but with more rounded features resembling natural phenomena such as treetops and hills.
 
-![None](https://docs-assets.developer.apple.com/published/113cf35967e73b07fac1e879b09ec774/media-2556322%402x.png)
+![None](/images/com.apple.gameplaykit/media-2556322@2x.png)
 
-Like all [`GKNoiseSource`](gknoisesource.md) subclasses, a billow noise source represents a noise generation algorithm and its parameters. To make use of a noise source, first create [`GKNoise`](gknoise.md) object from it (and optionally apply operations to that noise object or combine it with other noise objects). Then create a [`GKNoiseMap`](gknoisemap.md) object from your noise object, generating a concrete field of values that you can sample from directly or visualize using the [`SKTexture`](https://developer.apple.com/documentation/SpriteKit/SKTexture) or `SKTileMap` class.
+Like all [`GKNoiseSource`](gknoisesource.md) subclasses, a billow noise source represents a noise generation algorithm and its parameters. To make use of a noise source, first create [`GKNoise`](gknoise.md) object from it (and optionally apply operations to that noise object or combine it with other noise objects). Then create a [`GKNoiseMap`](gknoisemap.md) object from your noise object, generating a concrete field of values that you can sample from directly or visualize using the [`SKTexture`](https://developer.apple.com/documentation/spritekit/sktexture) or `SKTileMap` class.
 
 ## Topics
 
@@ -40,12 +40,12 @@ Like all [`GKNoiseSource`](gknoisesource.md) subclasses, a billow noise source r
 ### Inherits From
 - [GKCoherentNoiseSource](gkcoherentnoisesource.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

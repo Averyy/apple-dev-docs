@@ -8,7 +8,7 @@ Display images for specific times within the media timeline by generating images
 
 A common requirement when you build video apps is to display images of a video’s content. You may want to show a single thumbnail next to a video in a list, or show several images spanning a video’s duration that you use to build a visual scrubbing or selection user interface. AVFoundation makes it simple to produce images from your app’s video content by using [`AVAssetImageGenerator`](avassetimagegenerator.md).
 
-![A top-down illustration that shows the data flow when using an AVAssetImageGenerator. At the top of the diagram is a rectangle that represents an AVAsset object. From the asset, there’s an arrowed-line that points to another rectangle in the middle of the diagram that represents an AVAssetImageGenerator. Below the image generator are five rectangles, arranged horizontally, that represent the image-generation requests. There is an arrowed line from the image generator to each image request that shows it’s generated three images and has two more to process.](https://docs-assets.developer.apple.com/published/801bc39c84e570688e33d7858a00f84d/media-4009055%402x.png)
+![A top-down illustration that shows the data flow when using an AVAssetImageGenerator. At the top of the diagram is a rectangle that represents an AVAsset object. From the asset, there’s an arrowed-line that points to another rectangle in the middle of the diagram that represents an AVAssetImageGenerator. Below the image generator are five rectangles, arranged horizontally, that represent the image-generation requests. There is an arrowed line from the image generator to each image request that shows it’s generated three images and has two more to process.](/images/com.apple.avfoundation/media-4009055@2x.png)
 
 [`AVAssetImageGenerator`](avassetimagegenerator.md) is a utility class that creates images from assets that contain one or more video tracks. You can use it to generate an image for a single point in time, or a series of images by passing it an array of times.
 
@@ -40,7 +40,7 @@ generator.requestedTimeToleranceBefore = .zero
 generator.requestedTimeToleranceAfter = CMTime(seconds: 2, preferredTimescale: 600)
 ```
 
-You can request frame-accurate image generation by setting the values of the before and after tolerances to [`zero`](https://developer.apple.com/documentation/CoreMedia/CMTime/zero). However, configuring the generator this way requires it to perform additional frame decoding, which impacts its image generation speed.
+You can request frame-accurate image generation by setting the values of the before and after tolerances to [`zero`](https://developer.apple.com/documentation/coremedia/cmtime/zero). However, configuring the generator this way requires it to perform additional frame decoding, which impacts its image generation speed.
 
 ##### Generate Images
 

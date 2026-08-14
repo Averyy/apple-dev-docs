@@ -22,7 +22,7 @@ To play back an audio file from the Project Browser, click an audio file. In the
 
 The Inspector displays the following basic audio properties for the file.
 
-> **Note**: Some key properties and usage are highlighted below. For more information, see [`AudioFileResource.Configuration`](https://developer.apple.com/documentation/RealityKit/AudioFileResource/Configuration-swift.struct).
+> **Note**: Some key properties and usage are highlighted below. For more information, see [`AudioFileResource.Configuration`](https://developer.apple.com/documentation/realitykit/audiofileresource/configuration-swift.struct).
 
 - **Should Loop** — When toggled on, the audio loops seamlessly. If you attempt to loop the sound using the completionHandler in the API, there will be a slight gap between repeats. Configuring the looping behavior on the resource allows the audio engine to guarantee sample-precise seamless looping.
 - **Should Randomize Start** — Randomizes the start time of the audio file.
@@ -33,7 +33,7 @@ Use **Should Randomize Start** and **Should Loop** together to create audio vari
 
 - **Should Stream** — When toggled on, the audio streams from disk instead of loading into memory.
 
-Streaming audio saves memory but uses more compute. For more information, see [`AudioFileResource.LoadingStrategy`](https://developer.apple.com/documentation/RealityKit/AudioFileResource/LoadingStrategy-swift.enum).
+Streaming audio saves memory but uses more compute. For more information, see [`AudioFileResource.LoadingStrategy`](https://developer.apple.com/documentation/realitykit/audiofileresource/loadingstrategy-swift.enum).
 
 #### Choose an Audio Playback Component
 
@@ -48,9 +48,9 @@ Spatial Audio is the **default** audio component placed on an entity. If you don
 
 > 💡 **Tip**: To attach playback to the simulated reverb in your scene, use a Spatial Audio component. Regardless of how many channels an audio file has, the Spatial Audio component mixes it down to a single channel — preview this using the Audio Preview within the Spatial Audio component. Spatial Audio sources are Negative-Z forward, represented in the Spatial Audio component by the yellow arrow.
 
-![A screenshot of the Reality Composer Pro Spatial Audio Component properties and graphical representation in the Viewport.](https://docs-assets.developer.apple.com/published/d78eea75aaec296397d7be5fcca9db46/Audio_SpatialAudio%402x.png)
+![A screenshot of the Reality Composer Pro Spatial Audio Component properties and graphical representation in the Viewport.](/images/RealityComposerPro/Audio_SpatialAudio@2x.png)
 
-For more information, see [`SpatialAudioComponent`](https://developer.apple.com/documentation/RealityKit/SpatialAudioComponent).
+For more information, see [`SpatialAudioComponent`](https://developer.apple.com/documentation/realitykit/spatialaudiocomponent).
 
 #### Add an Ambient Audio Component
 
@@ -59,7 +59,7 @@ Ambient Audio renders each channel of an audio resource from an angle based on t
 - Ambient audio is position-independent but orientation-sensitive.
 - Ambient Audio does not take on Reverb characteristics; it relies on Reverb effects recorded in the source audio file.
 
-For more information, see [`AmbientAudioComponent`](https://developer.apple.com/documentation/RealityKit/AmbientAudioComponent).
+For more information, see [`AmbientAudioComponent`](https://developer.apple.com/documentation/realitykit/ambientaudiocomponent).
 
 #### Add a Channel Audio Component
 
@@ -69,7 +69,7 @@ Channel Audio routes audio directly to the device output channels with no spatia
 
 Channel Audio is typically used for music.
 
-For more information, see [`ChannelAudioComponent`](https://developer.apple.com/documentation/RealityKit/ChannelAudioComponent).
+For more information, see [`ChannelAudioComponent`](https://developer.apple.com/documentation/realitykit/channelaudiocomponent).
 
 #### Add a Reverb Component
 
@@ -81,13 +81,13 @@ Only one Reverb component can be active at a time in a scene, and you can place 
 
 > 💡 **Tip**: The Reverb component affects any entity that has a Spatial Audio component (the default).
 
-For more information, see [`ReverbComponent`](https://developer.apple.com/documentation/RealityKit/ReverbComponent).
+For more information, see [`ReverbComponent`](https://developer.apple.com/documentation/realitykit/reverbcomponent).
 
 #### Add an Audio File Group to Your Project
 
 Add an **Audio File Group** to define a collection of audio files. When RealityKit plays an Audio File Group, it selects a random file from the collection — useful for groups of similar but varied sounds, such as footsteps or bird calls. You reference Audio File Groups through an **Audio Library Component** attached to an entity.
 
-![A screenshot of adding audio files to a Reality Composer Pro Audio Library Component.](https://docs-assets.developer.apple.com/published/6ea5d4f2b56494ec8a5b86938ec4ccc7/Audio_Library_2%402x.png)
+![A screenshot of adding audio files to a Reality Composer Pro Audio Library Component.](/images/RealityComposerPro/Audio_Library_2@2x.png)
 
 You can have as many Audio File Groups in your project as you need. For example, you might define a group for Forest Sounds and another for Musical Instrument Sounds.
 
@@ -112,9 +112,9 @@ The Audio Library Component lets you reference and play specific sounds directly
 5. Click the **Audio Asset** field and select an audio file from the list.
 6. Repeat the last two steps to add as many audio references as you need.
 
-![A screenshot of adding audio files to a Reality Composer Pro Audio Library Component.](https://docs-assets.developer.apple.com/published/6ea5d4f2b56494ec8a5b86938ec4ccc7/Audio_Library_2%402x.png)
+![A screenshot of adding audio files to a Reality Composer Pro Audio Library Component.](/images/RealityComposerPro/Audio_Library_2@2x.png)
 
-For more information, see [`AudioLibraryComponent`](https://developer.apple.com/documentation/RealityKit/AudioLibraryComponent).
+For more information, see [`AudioLibraryComponent`](https://developer.apple.com/documentation/realitykit/audiolibrarycomponent).
 
 #### Add an Audio Mix Group Component
 

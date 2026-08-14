@@ -17,7 +17,7 @@ let kAudioSession_AudioRouteKey_Outputs: CFString!
 
 #### Discussion
 
-If there is an audio output available, the array usually contains one [`CFDictionary`](https://developer.apple.com/documentation/CoreFoundation/CFDictionary) object with a single key, namely [`kAudioSession_AudioRouteKey_Type`](kaudiosession_audioroutekey_type.md), whose value is one of the constants in [`Audio Output Routes`](audio-output-routes.md).
+If there is an audio output available, the array usually contains one [`CFDictionary`](https://developer.apple.com/documentation/corefoundation/cfdictionary) object with a single key, namely [`kAudioSession_AudioRouteKey_Type`](kaudiosession_audioroutekey_type.md), whose value is one of the constants in [`Audio Output Routes`](audio-output-routes.md).
 
 In certain circumstances, such as when a ringtone is being sent to the device speaker and to a connected headset, the array contains more than one dictionary.
 

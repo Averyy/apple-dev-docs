@@ -24,7 +24,7 @@ init(_ name: String, bundle: Bundle? = nil)
 
 Use this initializer to load a color from a color set stored in an Asset Catalog. The system determines which color within the set to use based on the environment at render time. For example, you can provide light and dark versions for background and foreground colors:
 
-![A screenshot of color sets for foreground and background colors,](https://docs-assets.developer.apple.com/published/8be673759199dc3fa229fc09e8bb0455/Color-init-1%402x.png)
+![A screenshot of color sets for foreground and background colors,](/images/com.apple.SwiftUI/Color-init-1@2x.png)
 
 You can then instantiate colors by referencing the names of the assets:
 
@@ -43,7 +43,7 @@ struct Hello: View {
 
 SwiftUI renders the appropriate colors for each appearance:
 
-![A side by side comparison of light and dark appearance screenshots](https://docs-assets.developer.apple.com/published/708f550b6b27799d86f6238ac6d65d5e/Color-init-2%402x.png)
+![A side by side comparison of light and dark appearance screenshots](/images/com.apple.SwiftUI/Color-init-2@2x.png)
 
 ## Parameters
 

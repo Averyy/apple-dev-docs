@@ -21,7 +21,7 @@ let kCATransactionAnimationDuration: String
 
 #### Discussion
 
-The value for this key must be an instance of [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+The value for this key must be an instance of [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
 
 ## See Also
 

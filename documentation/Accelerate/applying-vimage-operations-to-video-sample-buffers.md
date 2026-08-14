@@ -16,7 +16,7 @@ This sample code app uses [`AVFoundation`](https://developer.apple.comhttps://de
 
 ##### Specify the Pixel Format
 
-To ensure that AVCapture doesn’t have to perform a conversion from the capture format to the output format, the sample code specifies the output format as the camera’s active format. After declaring `videoOutput` as an [`AVCaptureVideoDataOutput`](https://developer.apple.com/documentation/AVFoundation/AVCaptureVideoDataOutput) instance, the following code defines the output pixel format by creating the [`videoSettings`](https://developer.apple.com/documentation/AVFoundation/AVCaptureVideoDataOutput/videoSettings) dictionary:
+To ensure that AVCapture doesn’t have to perform a conversion from the capture format to the output format, the sample code specifies the output format as the camera’s active format. After declaring `videoOutput` as an [`AVCaptureVideoDataOutput`](https://developer.apple.com/documentation/avfoundation/avcapturevideodataoutput) instance, the following code defines the output pixel format by creating the [`videoSettings`](https://developer.apple.com/documentation/avfoundation/avcapturevideodataoutput/videosettings) dictionary:
 
 ```swift
 pixelFormat = CMFormatDescriptionGetMediaSubType(camera.activeFormat.formatDescription)
@@ -25,7 +25,7 @@ videoOutput.videoSettings = [kCVPixelBufferPixelFormatTypeKey as String: pixelFo
 
 ##### Lock the Core Video Pixel Buffer
 
-When the app starts the flow of data through the capture pipeline, [`AVFoundation`](https://developer.apple.comhttps://developer.apple.com/av-foundation/) calls [`captureOutput(_:didOutput:from:)`](https://developer.apple.com/documentation/AVFoundation/AVCaptureVideoDataOutputSampleBufferDelegate/captureOutput(_:didOutput:from:)) for each new video frame. The following code locks the [`CVPixelBuffer`](https://developer.apple.com/documentation/CoreVideo/CVPixelBuffer) structure’s underlying memory to make it available exclusively to the vImage conversion function:
+When the app starts the flow of data through the capture pipeline, [`AVFoundation`](https://developer.apple.comhttps://developer.apple.com/av-foundation/) calls [`captureOutput(_:didOutput:from:)`](https://developer.apple.com/documentation/avfoundation/avcapturevideodataoutputsamplebufferdelegate/captureoutput(_:didoutput:from:)) for each new video frame. The following code locks the [`CVPixelBuffer`](https://developer.apple.com/documentation/corevideo/cvpixelbuffer) structure’s underlying memory to make it available exclusively to the vImage conversion function:
 
 ```swift
 CVPixelBufferLockBaseAddress(
@@ -45,7 +45,7 @@ CVPixelBufferUnlockBaseAddress(
 
 ##### Create a Core Video to Core Graphics Converter
 
-The vImage convert-any-to-any function requires a converter that describes the source and destination formats. The sample code app converts a Core Video pixel buffer to a Core Graphics image. The code calls the [`make(buffer:)`](vimagecvimageformat/make(buffer:).md) function to derive the source Core Video image format from the [`CVPixelBuffer`](https://developer.apple.com/documentation/CoreVideo/CVPixelBuffer). In some cases, the [`vImageCVImageFormat`](vimagecvimageformat.md) instance that the make function returns may have incomplete information. The following code ensures that the format has a color space and chrominance siting information:
+The vImage convert-any-to-any function requires a converter that describes the source and destination formats. The sample code app converts a Core Video pixel buffer to a Core Graphics image. The code calls the [`make(buffer:)`](vimagecvimageformat/make(buffer:).md) function to derive the source Core Video image format from the [`CVPixelBuffer`](https://developer.apple.com/documentation/corevideo/cvpixelbuffer). In some cases, the [`vImageCVImageFormat`](vimagecvimageformat.md) instance that the make function returns may have incomplete information. The following code ensures that the format has a color space and chrominance siting information:
 
 ```swift
 guard let cvImageFormat = vImageCVImageFormat.make(buffer: cvPixelBuffer) else {

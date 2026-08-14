@@ -20,7 +20,7 @@ var kAudioSessionProperty_AudioRouteChange: Int { get }
 
 #### Discussion
 
-A [`CFDictionary`](https://developer.apple.com/documentation/CoreFoundation/CFDictionary) object containing the reason the audio route changed along with details on the previous and current audio route.
+A [`CFDictionary`](https://developer.apple.com/documentation/corefoundation/cfdictionary) object containing the reason the audio route changed along with details on the previous and current audio route.
 
 #### Discussion
 

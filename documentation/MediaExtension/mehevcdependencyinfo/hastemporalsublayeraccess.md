@@ -16,7 +16,7 @@ var hasTemporalSubLayerAccess: Bool { get set }
 
 #### Discussion
 
-This value maps to the [`kCMSampleAttachmentKey_HEVCTemporalSubLayerAccess`](https://developer.apple.com/documentation/CoreMedia/kCMSampleAttachmentKey_HEVCTemporalSubLayerAccess) sample buffer attachment.
+This value maps to the [`kCMSampleAttachmentKey_HEVCTemporalSubLayerAccess`](https://developer.apple.com/documentation/coremedia/kcmsampleattachmentkey_hevctemporalsublayeraccess) sample buffer attachment.
 
 ## See Also
 

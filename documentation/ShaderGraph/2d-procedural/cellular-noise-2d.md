@@ -23,11 +23,11 @@ A 2D cellular noise generator.
 
 The `Cellular Noise 2D` shader node procedurally generates noise patterns that you can use to add texture and variation to materials. Below is an example of a node graph that uses the `Cellular Noise 2D` node to generate a black and white pattern procedurally:
 
-![None](https://docs-assets.developer.apple.com/published/e7cba5b397d0b79f7db7a9a072b3e93d/CellNoise2dGraph.png)
+![None](/images/ShaderGraph-Docs/CellNoise2dGraph.png)
 
 Multiply the incoming texture coordinates with a constant float. The float changes the frequency of the generated noise to a higher number that corresponds with the pattern repeating more often. The output of the node runs through a `Convert` node to change the float output to a black and white color output: Below, the resulting texture applies to a cube:
 
-![None](https://docs-assets.developer.apple.com/published/c346f62f96cb87deeccd42e14b529293/CellNoise2dMaterial.png)
+![None](/images/ShaderGraph-Docs/CellNoise2dMaterial.png)
 
 ## See Also
 

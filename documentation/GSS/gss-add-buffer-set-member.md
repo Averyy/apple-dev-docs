@@ -28,7 +28,7 @@ The function does not add the `member_buffer` to the buffer set directly. Rather
 
 ## Parameters
 
-- `minor_status`: A pointer to the secondary status result that provides additional information in case of failure. Typically, a failure results from an inability to allocate memory, communicated with minor status [`ENOMEM`](https://developer.apple.com/documentation/Foundation/POSIXError/ENOMEM).
+- `minor_status`: A pointer to the secondary status result that provides additional information in case of failure. Typically, a failure results from an inability to allocate memory, communicated with minor status [`ENOMEM`](https://developer.apple.com/documentation/foundation/posixerror/enomem).
 - `member_buffer`: The buffer to copy into the buffer set.
 - `buffer_set`: A pointer to a buffer set descriptor reference that receives a copy of the buffer. You can indicate that the buffer set doesn’t yet exist by setting its reference to [`GSS_C_NO_BUFFER_SET`](gss_c_no_buffer_set.md). In this case, the function creates it first using [`gss_create_empty_buffer_set(_:_:)`](gss_create_empty_buffer_set(_:_:).md). In any case, the buffer is added to the end of the set, and the buffer set’s `count` parameter incremented.
 

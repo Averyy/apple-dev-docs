@@ -20,7 +20,7 @@ var possibleTitles: Set<String>? { get set }
 
 #### Discussion
 
-Use this property to provide a hint to the system on how to correctly size the bar button item to be wide enough to accommodate your widest title. Set the value of this property to an [`NSSet`](https://developer.apple.com/documentation/Foundation/NSSet) object containing all the titles you intend as possible titles for the bar button item. Use the actual text strings you intend to display.
+Use this property to provide a hint to the system on how to correctly size the bar button item to be wide enough to accommodate your widest title. Set the value of this property to an [`NSSet`](https://developer.apple.com/documentation/foundation/nsset) object containing all the titles you intend as possible titles for the bar button item. Use the actual text strings you intend to display.
 
 This property applies to bar button items placed on navigation bars or toolbars.
 

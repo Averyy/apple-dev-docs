@@ -27,7 +27,7 @@ Call this method to create or modify your app’s page-based interface:
 
 ## Parameters
 
-- `names`: An array of [`NSString`](https://developer.apple.com/documentation/Foundation/NSString) objects, each of which contains the identifier of an interface controller in your storyboard file. The order of the identifiers in the array defines the order of the corresponding interface controllers in the page-based interface.
+- `names`: An array of [`NSString`](https://developer.apple.com/documentation/foundation/nsstring) objects, each of which contains the identifier of an interface controller in your storyboard file. The order of the identifiers in the array defines the order of the corresponding interface controllers in the page-based interface.
 - `contexts`: An array of objects of type `id`. Use this parameter to pass context objects to each of the interface controllers loaded into the page-based interface. The first object in the array is passed to the first interface controller, the second object is passed to the second interface controller, and so on.
 - `orientation`: The scrolling orientation for the page-based interface. For a list of valid values, see [`WKPageOrientation`](wkpageorientation.md).
 - `pageIndex`: The index of the page that the system displays in the page-based interface.

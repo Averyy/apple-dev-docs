@@ -19,7 +19,7 @@ A Boolean value that allows your app to access frame rates higher than the syste
 
 Devices with ProMotion displays allow apps to dynamically request a frame rate they prefer. If you set this key to `YES`, your app can request any frame rate the display supports. If you set this key to `NO`, frame rates higher than the system default are unavailable.
 
-For more information on refresh rates, see [`Optimizing iPhone and iPad apps to support ProMotion displays`](https://developer.apple.com/documentation/QuartzCore/optimizing-iphone-and-ipad-apps-to-support-promotion-displays).
+For more information on refresh rates, see [`Optimizing iPhone and iPad apps to support ProMotion displays`](https://developer.apple.com/documentation/quartzcore/optimizing-iphone-and-ipad-apps-to-support-promotion-displays).
 
 ## See Also
 

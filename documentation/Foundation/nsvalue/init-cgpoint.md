@@ -29,7 +29,7 @@ A new value object that contains the point information.
 
 ## See Also
 
-- [struct CGPoint](../CoreFoundation/CGPoint.md)
+- [struct CGPoint](../corefoundation/cgpoint.md)
 - [init(CGVector: CGVector)](nsvalue/init(cgvector:).md)
   Creates a new value object containing the specified CoreGraphics vector structure.
 - [init(CGSize: CGSize)](nsvalue/init(cgsize:).md)

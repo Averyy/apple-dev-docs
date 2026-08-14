@@ -22,7 +22,9 @@ To use an OSCollectionIterator, you create it with the collection to be iterated
 
 Note that when iterating associative collections, the objects returned by `getNextObject` are keys; if you want to work with the associated values, simply look them up in the collection with the keys.
 
-With very few exceptions in the I/O Kit, all Libkern-based C++ classes, functions, and macros are  to use in a primary interrupt context. Consult the I/O Kit documentation related to primary interrupts for more information.
+**Use Restrictions**
+
+With very few exceptions in the I/O Kit, all Libkern-based C++ classes, functions, and macros are **unsafe** to use in a primary interrupt context. Consult the I/O Kit documentation related to primary interrupts for more information.
 
 OSCollectionIterator provides no concurrency protection.
 

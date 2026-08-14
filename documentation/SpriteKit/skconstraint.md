@@ -33,7 +33,7 @@ An [`SKConstraint`](skconstraint.md) object describes a mathematical constraint 
 - Keep a node inside a specified rectangle.
 - Restrict the [`zRotation`](sknode/zrotation.md) property of a node so that it has a more limited rotation range of motion.
 
-To use constraints, create an [`NSArray`](https://developer.apple.com/documentation/Foundation/NSArray) object that contains one or more constraint objects and assign the array to a node’s [`constraints`](sknode/constraints.md) property. When the system evaluates a scene, it executes the constraints on a node in the order they appear in the [`constraints`](sknode/constraints.md) array.
+To use constraints, create an [`NSArray`](https://developer.apple.com/documentation/foundation/nsarray) object that contains one or more constraint objects and assign the array to a node’s [`constraints`](sknode/constraints.md) property. When the system evaluates a scene, it executes the constraints on a node in the order they appear in the [`constraints`](sknode/constraints.md) array.
 
 You can’t change a constraint after you create it. However, you can selectively disable or enable a constraint by setting its [`enabled`](skconstraint/enabled.md) property. You can also use the [`referenceNode`](skconstraint/referencenode.md) property to convert positions to the referenced coordinate system before applying the constraint.
 
@@ -78,17 +78,17 @@ You can’t change a constraint after you create it. However, you can selectivel
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCoding](../Foundation/NSCoding.md)
-- [NSCopying](../Foundation/NSCopying.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [NSSecureCoding](../Foundation/NSSecureCoding.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCoding](../foundation/nscoding.md)
+- [NSCopying](../foundation/nscopying.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSSecureCoding](../foundation/nssecurecoding.md)
 
 ## See Also
 

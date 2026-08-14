@@ -22,7 +22,7 @@ let kCTForegroundColorAttributeName: CFString
 
 #### Discussion
 
-The value associated with this attribute must be a [`CGColor`](https://developer.apple.com/documentation/CoreGraphics/CGColor) object. Default value is [`black`](https://developer.apple.com/documentation/CoreGraphics/CGColor/black).
+The value associated with this attribute must be a [`CGColor`](https://developer.apple.com/documentation/coregraphics/cgcolor) object. Default value is [`black`](https://developer.apple.com/documentation/coregraphics/cgcolor/black).
 
 ## See Also
 

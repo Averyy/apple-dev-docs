@@ -22,7 +22,7 @@ convenience init<IndexType>(indices: [IndexType], primitiveType: SCNGeometryPrim
 
 #### Discussion
 
-SceneKit connects the vertices in the order specified by the `indices` array, arranged according to the `primitiveType` parameter.This initializer is equivalent to the [`init(data:primitiveType:primitiveCount:bytesPerIndex:)`](scngeometryelement/init(data:primitivetype:primitivecount:bytesperindex:).md) initializer, but does not require an intermediary [`Data`](https://developer.apple.com/documentation/Foundation/Data) object; instead, it automatically infers the necessary allocation size and [`bytesPerIndex`](scngeometryelement/bytesperindex.md) values based on the contents of the `indices` array.
+SceneKit connects the vertices in the order specified by the `indices` array, arranged according to the `primitiveType` parameter.This initializer is equivalent to the [`init(data:primitiveType:primitiveCount:bytesPerIndex:)`](scngeometryelement/init(data:primitivetype:primitivecount:bytesperindex:).md) initializer, but does not require an intermediary [`Data`](https://developer.apple.com/documentation/foundation/data) object; instead, it automatically infers the necessary allocation size and [`bytesPerIndex`](scngeometryelement/bytesperindex.md) values based on the contents of the `indices` array.
 
 To create a custom [`SCNGeometry`](scngeometry.md) object from the geometry element, use the [`init(sources:elements:)`](scngeometry/init(sources:elements:).md) initializer.
 

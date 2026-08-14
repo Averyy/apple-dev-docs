@@ -12,7 +12,7 @@ A context, stored as a [`CLSContext`](clscontext.md) instance, represents an are
 
 Before you write any new code, decide which parts of your existing app correspond to tasks that a teacher might want to assign to students. For example, a textbook reader app might divide textbooks into chapters and sections, while offering tests and quizzes to measure the reader’s retention of the material. So the app’s assignable tasks fall into a hierarchical structure with the app at the top and tests and quizzes at the bottom.
 
-![Diagram showing a context hierarchy corresponding to a textbook reader.](https://docs-assets.developer.apple.com/published/b23ff2cd38ab0d1f9483d46e67c9eea5/media-2969445%402x.png)
+![Diagram showing a context hierarchy corresponding to a textbook reader.](/images/com.apple.classkit/media-2969445@2x.png)
 
 Every app that adopts ClassKit has a single, predefined top-level context called the main app context. To this, you add one or more child contexts representing assignable tasks, each potentially with descendants of its own representing subtasks.
 

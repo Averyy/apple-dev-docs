@@ -21,7 +21,7 @@ var metadata: [String : Any]? { get }
 
 #### Discussion
 
-The metadata dictionary contains extra information describing this activity. The dictionary’s keys are all [`NSString`](https://developer.apple.com/documentation/Foundation/NSString) objects. The values can be [`NSString`](https://developer.apple.com/documentation/Foundation/NSString) objects, [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) objects or [`NSDate`](https://developer.apple.com/documentation/Foundation/NSDate) objects. For a complete list of predefined metadata keys, see [`Metadata Keys`](metadata-keys.md).
+The metadata dictionary contains extra information describing this activity. The dictionary’s keys are all [`NSString`](https://developer.apple.com/documentation/foundation/nsstring) objects. The values can be [`NSString`](https://developer.apple.com/documentation/foundation/nsstring) objects, [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) objects or [`NSDate`](https://developer.apple.com/documentation/foundation/nsdate) objects. For a complete list of predefined metadata keys, see [`Metadata Keys`](metadata-keys.md).
 
 Using predefined keys helps facilitate sharing data between apps; however, you are also encouraged to create your own, custom keys as needed to extend the workout activity’s capabilities.
 

@@ -22,7 +22,7 @@ case count
 
 #### Discussion
 
-When you create a ruby annotation using [`CTRubyAnnotationCreate(_:_:_:_:)`](ctrubyannotationcreate(_:_:_:_:).md), use this constant to allocate an array of [`CFString`](https://developer.apple.com/documentation/CoreFoundation/CFString) texts that contains a sufficient number of elements for each [`CTRubyPosition`](ctrubyposition.md).
+When you create a ruby annotation using [`CTRubyAnnotationCreate(_:_:_:_:)`](ctrubyannotationcreate(_:_:_:_:).md), use this constant to allocate an array of [`CFString`](https://developer.apple.com/documentation/corefoundation/cfstring) texts that contains a sufficient number of elements for each [`CTRubyPosition`](ctrubyposition.md).
 
 ## See Also
 

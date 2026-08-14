@@ -43,7 +43,7 @@ func subtractBlendMode(inputImage: CIImage, backgroundImage: CIImage) -> CIImage
 }
 ```
 
-![The image on the top left shows a beach with multiple palm trees and a rainbow arching across the blue sky.  The image below is a gradient image displaying a gradual color shift from purple to a dark orange. The image on the right shows the output from applying a subtract-blend mode filter. The result displays the sum of colors from both images, creating a darker image with dark red and purple colors.](https://docs-assets.developer.apple.com/published/6dd0d4f944026ff01958436ea7fffd86/media-3546402%402x.png)
+![The image on the top left shows a beach with multiple palm trees and a rainbow arching across the blue sky.  The image below is a gradient image displaying a gradual color shift from purple to a dark orange. The image on the right shows the output from applying a subtract-blend mode filter. The result displays the sum of colors from both images, creating a darker image with dark red and purple colors.](/images/com.apple.coreimage/media-3546402@2x.png)
 
 ## See Also
 

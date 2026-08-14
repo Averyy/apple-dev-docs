@@ -18,6 +18,10 @@ readonly attribute Acceleration acceleration;
 
 The acceleration data are expressed in m/s^2 and use the following `x`, `y`, and `z` axis properties represented as doubles:
 
+- **x**: In the plane of the screen, positive towards the right side of the screen.
+- **y**: In the plane of the screen, positive towards the top of the screen.
+- **z**: Perpendicular to the screen, positive out of the screen. 
+
 This property is `null` if the device cannot provide the user acceleration—that is, if the device does not have a gyroscope. 
 
 Use the [`accelerationIncludingGravity`](devicemotionevent/1629110-accelerationincludinggravity.md) property to get the total acceleration.

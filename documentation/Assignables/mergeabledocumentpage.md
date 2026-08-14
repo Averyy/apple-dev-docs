@@ -28,7 +28,7 @@ protocol MergeableDocumentPage : Identifiable
 ## Relationships
 
 ### Inherits From
-- [Identifiable](../Swift/Identifiable.md)
+- [Identifiable](../swift/identifiable.md)
 ### Conforming Types
 - [AssignableDocument.Page](assignabledocument/page.md)
 - [AssignedWorkDocument.Page](assignedworkdocument/page.md)

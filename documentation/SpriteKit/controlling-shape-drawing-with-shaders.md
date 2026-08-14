@@ -44,7 +44,7 @@ void main() {
 
 The generated shape node looks like this:
 
-![Shape node with graduated stroke](https://docs-assets.developer.apple.com/published/35f8287ee6831d82f4014a12c6c0af3f/media-2647280%402x.png)
+![Shape node with graduated stroke](/images/com.apple.spritekit/media-2647280@2x.png)
 
 Alternatively, by casting both symbols to integers and using the modulo operator, you get the same shape node with a shader that generates a dashed line, as shown in the following code:
 
@@ -70,7 +70,7 @@ void main() {
 
 The generated shape node looks like this:
 
-![Shape node with dashed stroke](https://docs-assets.developer.apple.com/published/4ab86f1c90bda856996e41f7eb5fae69/media-2647282%402x.png)
+![Shape node with dashed stroke](/images/com.apple.spritekit/media-2647282@2x.png)
 
 ##### Customize a Shape Nodes Fill
 
@@ -113,7 +113,7 @@ void main() {
 
 The generated shape node looks like this:
 
-![Shape node with checkerboard fill](https://docs-assets.developer.apple.com/published/9a7d57d88b73855f8b577da52d571a3e/media-2647284%402x.png)
+![Shape node with checkerboard fill](/images/com.apple.spritekit/media-2647284@2x.png)
 
 ## See Also
 

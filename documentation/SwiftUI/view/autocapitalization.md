@@ -30,11 +30,11 @@ TextField("Last, First", text: $fullName)
     .autocapitalization(UITextAutocapitalizationType.words)
 ```
 
-The [`UITextAutocapitalizationType`](https://developer.apple.com/documentation/UIKit/UITextAutocapitalizationType) enumeration defines the available capitalization modes. The default is [`UITextAutocapitalizationType.sentences`](https://developer.apple.com/documentation/UIKit/UITextAutocapitalizationType/sentences).
+The [`UITextAutocapitalizationType`](https://developer.apple.com/documentation/uikit/uitextautocapitalizationtype) enumeration defines the available capitalization modes. The default is [`UITextAutocapitalizationType.sentences`](https://developer.apple.com/documentation/uikit/uitextautocapitalizationtype/sentences).
 
 ## Parameters
 
-- `style`: One of the autocapitalization modes defined in the [`UITextAutocapitalizationType`](https://developer.apple.com/documentation/UIKit/UITextAutocapitalizationType) enumeration.
+- `style`: One of the autocapitalization modes defined in the [`UITextAutocapitalizationType`](https://developer.apple.com/documentation/uikit/uitextautocapitalizationtype) enumeration.
 
 ## See Also
 

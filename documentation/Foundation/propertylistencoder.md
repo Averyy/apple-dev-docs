@@ -42,12 +42,12 @@ class PropertyListEncoder
 ## Relationships
 
 ### Conforms To
-- [Copyable](../Swift/Copyable.md)
-- [Escapable](../Swift/Escapable.md)
-- [NetworkEncoder](../Network/NetworkEncoder.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
-- [TopLevelEncoder](../Combine/TopLevelEncoder.md)
+- [Copyable](../swift/copyable.md)
+- [Escapable](../swift/escapable.md)
+- [NetworkEncoder](../network/networkencoder.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
+- [TopLevelEncoder](../combine/toplevelencoder.md)
 
 ## See Also
 

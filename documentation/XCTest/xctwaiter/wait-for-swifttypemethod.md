@@ -17,7 +17,7 @@ A value describing the outcome of waiting for `expectations`.
 
 #### Discussion
 
-In Objective-C code, you might use an expectation to wait on a call to an interface that uses a completion handler to return a result. In Swift, consider calling `withCheckedContinuation(function:_:)` to use [`Concurrency`](https://developer.apple.com/documentation/Swift/concurrency) instead of an expectation to wait on the result.
+In Objective-C code, you might use an expectation to wait on a call to an interface that uses a completion handler to return a result. In Swift, consider calling `withCheckedContinuation(function:_:)` to use [`Concurrency`](https://developer.apple.com/documentation/swift/concurrency) instead of an expectation to wait on the result.
 
 ## Parameters
 

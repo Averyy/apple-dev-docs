@@ -33,7 +33,7 @@ The returned object is implicitly retained by the sender, who is responsible for
 
 - [func mutableCopy(with: NSZone?) -> Any](nsmutablecopying/mutablecopy(with:).md)
   Returns a new instance that’s a mutable copy of the receiver.
-- [func copy() -> Any](../ObjectiveC/NSObject-swift.class/copy.md)
+- [func copy() -> Any](../objectivec/nsobject-swift.class/copy.md)
   Returns the object returned by `copy(with:)`.
 - [Advanced Memory Management Programming Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/MemoryMgmt/Articles/MemoryMgmt.html#//apple_ref/doc/uid/10000011i)
 

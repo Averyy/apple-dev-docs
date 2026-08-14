@@ -25,7 +25,7 @@ This mode is valid only with the [`record`](avaudiosession/category-swift.struct
 
 Use this mode to ensure that the system provides appropriate audio-signal processing.
 
-Use [`AVCaptureSession`](https://developer.apple.com/documentation/AVFoundation/AVCaptureSession) in conjunction with the video recording mode for greater control of input and output routes. For example, setting the [`automaticallyConfiguresApplicationAudioSession`](https://developer.apple.com/documentation/AVFoundation/AVCaptureSession/automaticallyConfiguresApplicationAudioSession) property results in the session automatically choosing the best input route for the device and camera used.
+Use [`AVCaptureSession`](https://developer.apple.com/documentation/avfoundation/avcapturesession) in conjunction with the video recording mode for greater control of input and output routes. For example, setting the [`automaticallyConfiguresApplicationAudioSession`](https://developer.apple.com/documentation/avfoundation/avcapturesession/automaticallyconfiguresapplicationaudiosession) property results in the session automatically choosing the best input route for the device and camera used.
 
 ## See Also
 

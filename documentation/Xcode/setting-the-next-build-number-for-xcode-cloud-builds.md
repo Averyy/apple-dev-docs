@@ -16,7 +16,7 @@ When you distribute an Xcode Cloud build with [`TestFlight`](https://developer.a
 
 ##### Review Build Number Requirements
 
-For a new app, starting with build number `1` makes sense. When you start using Xcode Cloud for an existing app, it assigns build number `1` to your first build. For iOS, iPadOS, tvOS, visionOS, and watchOS apps, this behavior meets build number requirements. Apps for those platforms can use a lower build number for a new version compared to a previous version because App Store Connect requires each app version to use a unique combination of [`CFBundleShortVersionString`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/CFBundleShortVersionString) and [`CFBundleVersion`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/CFBundleVersion).
+For a new app, starting with build number `1` makes sense. When you start using Xcode Cloud for an existing app, it assigns build number `1` to your first build. For iOS, iPadOS, tvOS, visionOS, and watchOS apps, this behavior meets build number requirements. Apps for those platforms can use a lower build number for a new version compared to a previous version because App Store Connect requires each app version to use a unique combination of [`CFBundleShortVersionString`](https://developer.apple.com/documentation/bundleresources/information-property-list/cfbundleshortversionstring) and [`CFBundleVersion`](https://developer.apple.com/documentation/bundleresources/information-property-list/cfbundleversion).
 
 For example, your latest app version in the App Store could be  `1.2.1 (42)` before you start using Xcode Cloud. When you start using Xcode Cloud, your next app version would be  `1.2.2 (1)` because Xcode Cloud build numbers start at `1`. It’s a unique combination of the version and the build number and, as a result, App Store Connect accepts it when you submit the new version for app review.
 
@@ -41,7 +41,7 @@ To configure the next build number:
 
 The screenshot below shows the form you use to edit the Build Number on the App Store Connect website.
 
-![A screenshot that shows the Build Number section of an app’s Xcode Cloud settings on the App Store Connect website. The user has clicked the edit button next to Next Build Number and the website displays a modal dialog with a text field where the user can enter the next build number.](https://docs-assets.developer.apple.com/published/f2c5252ee06e8b8f657151289db56ffb/Setting-the-Next-Build-Number-for-Xcode-Cloud-Builds-1%402x.png)
+![A screenshot that shows the Build Number section of an app’s Xcode Cloud settings on the App Store Connect website. The user has clicked the edit button next to Next Build Number and the website displays a modal dialog with a text field where the user can enter the next build number.](/images/com.apple.Xcode/Setting-the-Next-Build-Number-for-Xcode-Cloud-Builds-1@2x.png)
 
 ## See Also
 

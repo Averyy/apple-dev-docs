@@ -18,9 +18,9 @@ static let pedometerData: SRSensor
 
 #### Discussion
 
-The [`sample`](srfetchresult/sample.md) type for this sensor is [`CMPedometerData`](https://developer.apple.com/documentation/CoreMotion/CMPedometerData).
+The [`sample`](srfetchresult/sample.md) type for this sensor is [`CMPedometerData`](https://developer.apple.com/documentation/coremotion/cmpedometerdata).
 
-You need to provide a reason to record pedometer data by adding the [`SRSensorUsagePedometer`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSSensorKitUsageDetail/SRSensorUsagePedometer) dictionary to the [`NSSensorKitUsageDetail`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSSensorKitUsageDetail) key in the information property list.
+You need to provide a reason to record pedometer data by adding the [`SRSensorUsagePedometer`](https://developer.apple.com/documentation/bundleresources/information-property-list/nssensorkitusagedetail/srsensorusagepedometer) dictionary to the [`NSSensorKitUsageDetail`](https://developer.apple.com/documentation/bundleresources/information-property-list/nssensorkitusagedetail) key in the information property list.
 
 ## See Also
 

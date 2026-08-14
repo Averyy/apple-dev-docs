@@ -28,7 +28,7 @@ let image = try DiskImage(opening: .open(url: imageURL))
 
 ## Parameters
 
-- `url`: A [`URL`](https://developer.apple.com/documentation/Foundation/URL)  of the disk image file to open.
+- `url`: A [`URL`](https://developer.apple.com/documentation/foundation/url)  of the disk image file to open.
 - `mode`: Mode in which to open the image (read-only or read-write).
 
 

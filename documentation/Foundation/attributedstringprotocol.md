@@ -98,11 +98,11 @@ Don’t declare new conformances to [`AttributedStringProtocol`](attributedstrin
 
 ### Inherits From
 - [AttributedStringAttributeMutation](attributedstringattributemutation.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 ### Conforming Types
 - [AttributedString](attributedstring.md)
 - [AttributedSubstring](attributedsubstring.md)

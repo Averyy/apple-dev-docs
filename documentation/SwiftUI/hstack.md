@@ -53,7 +53,7 @@ var body: some View {
 }
 ```
 
-![Five text views, named Item 1 through Item 5, arranged in a](https://docs-assets.developer.apple.com/published/4d9bc52c0fbde5252c797d82d913a50b/SwiftUI-HStack-simple%402x.png)
+![Five text views, named Item 1 through Item 5, arranged in a](/images/com.apple.SwiftUI/SwiftUI-HStack-simple@2x.png)
 
 > **Note**: If you need a horizontal stack that conforms to the [`Layout`](layout.md) protocol, like when you want to create a conditional layout using [`AnyLayout`](anylayout.md), use [`HStackLayout`](hstacklayout.md) instead.
 

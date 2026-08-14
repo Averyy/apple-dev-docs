@@ -18,7 +18,7 @@ An instance of OSData containing a copy of the data in `inData`, with a referenc
 
 #### Overview
 
-The new OSData object will grow as needed to accommodate more bytes (`CFMutableData`, for which a nonzero initial capacity is a hard limit).
+The new OSData object will grow as needed to accommodate more bytes (*unlike*[`CFMutableData`](https://developer.apple.com/documentation/corefoundation/cfmutabledata), for which a nonzero initial capacity is a hard limit).
 
 ## Parameters
 

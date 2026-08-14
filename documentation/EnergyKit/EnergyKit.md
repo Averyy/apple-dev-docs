@@ -15,7 +15,7 @@ EnergyKit provides grid forecasts and energy insights to help people view their 
 
 Use EnergyKit to build apps that manage home device electricity usage and support the transition to a cleaner electricity grid. You can use the framework for residential, metered locations such as smart thermostats (HVAC), and for electric vehicle charging.
 
-![An electric vehicle charging app interface with the Clean Energy Guidance feature enabled, set to charge until 7AM, and a 'Begin Charging' button displayed below the settings.](https://docs-assets.developer.apple.com/published/76c60c9dc4015f4f6a977bc4310a17c9/energykit-art%402x.png)
+![An electric vehicle charging app interface with the Clean Energy Guidance feature enabled, set to charge until 7AM, and a 'Begin Charging' button displayed below the settings.](/images/com.apple.energykit/energykit-art@2x.png)
 
 Using EnergyKit, your app can:
 
@@ -31,11 +31,11 @@ The framework provides two complementary workflows:
 - The [`ElectricityGuidance`](electricityguidance.md) structure identifies optimal times for electricity usage based on grid cleanliness and utility rates. Use this guidance to optimize when your managed devices consume electricity.
 - Submit [`ElectricVehicleLoadEvent`](electricvehicleloadevent.md) and [`ElectricHVACLoadEvent`](electrichvacloadevent.md) instances that track energy consumption during device operation. Optionally submit [`ElectricVehicleStatusEvent`](electricvehiclestatusevent.md) instances that explain charging behavior and support informative activity logs in the Home app.
 
-> ❗ **Important**: Energy guidance is only available in the contiguous United States. To use EnergyKit, the system requires your app to have the [`EnergyKit Entitlement`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.energykit) entitlement with a value of `true`.
+> ❗ **Important**: Energy guidance is only available in the contiguous United States. To use EnergyKit, the system requires your app to have the [`EnergyKit Entitlement`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.energykit) entitlement with a value of `true`.
 
 #### Display Energy Data in the Home App
 
-When you adopt the [`EnergyKit LoadEvents Entitlement`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.energykit.loadevents-experience), the Home app displays your electrical load events in a unified energy experience. The Home app shows:
+When you adopt the [`EnergyKit LoadEvents Entitlement`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.energykit.loadevents-experience), the Home app displays your electrical load events in a unified energy experience. The Home app shows:
 
 - Historical charts with up to five years of energy data
 - Activity logs that explain device behavior with timestamps and reasons
@@ -51,9 +51,9 @@ This integration eliminates the need to build custom analytics UI, while providi
   Shift electric vehicle charging schedules to times when the grid is cleaner and potentially less expensive.
 - [Providing charging history for electric vehicles](providing-informative-charging-history-for-electric-vehicles.md)
   Track energy consumption and provide people detailed insights into the charging of their electric vehicle.
-- [EnergyKit Entitlement](../BundleResources/Entitlements/com.apple.developer.energykit.md)
+- [EnergyKit Entitlement](../bundleresources/entitlements/com.apple.developer.energykit.md)
   The entitlement the system requires for an app to use the EnergyKit framework.
-- [EnergyKit LoadEvents Entitlement](../BundleResources/Entitlements/com.apple.developer.energykit.loadevents-experience.md)
+- [EnergyKit LoadEvents Entitlement](../bundleresources/entitlements/com.apple.developer.energykit.loadevents-experience.md)
   An entitlement that works with the EnergyKit framework to share energy data and usage insights in the Home app.
 ### Electricity guidance
 - [struct ElectricityGuidance](electricityguidance.md)

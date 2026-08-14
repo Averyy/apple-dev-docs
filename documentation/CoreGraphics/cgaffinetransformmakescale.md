@@ -28,13 +28,13 @@ A new affine transformation matrix.
 
 This function creates a `CGAffineTransform` structure, which you can use (and reuse, if you want) to scale a coordinate system. The matrix takes the following form:
 
-![A 3 by 3 matrix used to scale.](https://docs-assets.developer.apple.com/published/9f887f1de9bbcb61af9992432fb821eb/media-1966736%402x.png)
+![A 3 by 3 matrix used to scale.](/images/com.apple.coregraphics/media-1966736@2x.png)
 
 Because the third column is always `(0,0,1)`, the `CGAffineTransform` data structure returned by this function contains values for only the first two columns.
 
 These are the resulting equations used to scale the coordinates of a point (x,y):
 
-![Scaling equations.](https://docs-assets.developer.apple.com/published/31382764681648947a31bcd32a01d6e5/media-1966741%402x.png)
+![Scaling equations.](/images/com.apple.coregraphics/media-1966741@2x.png)
 
 If you want only to scale an object to be drawn, it is not necessary to construct an affine transform to do so. The most direct way to scale your drawing is by calling the function [`scaleBy(x:y:)`](cgcontext/scaleby(x:y:).md).
 

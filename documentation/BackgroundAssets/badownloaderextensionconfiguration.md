@@ -21,9 +21,9 @@
 ## Relationships
 
 ### Inherits From
-- [AppExtensionConfiguration](../ExtensionFoundation/AppExtensionConfiguration.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [AppExtensionConfiguration](../extensionfoundation/appextensionconfiguration.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 
@@ -31,13 +31,13 @@
   Manage and download individual assets yourself by configuring your app and extension targets.
 - [Downloading essential assets in the background](downloading-essential-assets-in-the-background.md)
   Fetch the assets your app requires before its first launch using an app extension and the Background Assets framework.
-- [BAManifestURL](../BundleResources/Information-Property-List/BAManifestURL.md)
+- [BAManifestURL](../bundleresources/information-property-list/bamanifesturl.md)
   The location URL of the app’s manifest file that contains the names and sizes of assets.
-- [BAInitialDownloadRestrictions](../BundleResources/Information-Property-List/BAInitialDownloadRestrictions.md)
+- [BAInitialDownloadRestrictions](../bundleresources/information-property-list/bainitialdownloadrestrictions.md)
   The restrictions that apply to the set of assets that download immediately after app installation.
-- [BAEssentialMaxInstallSize](../BundleResources/Information-Property-List/BAEssentialMaxInstallSize.md)
+- [BAEssentialMaxInstallSize](../bundleresources/information-property-list/baessentialmaxinstallsize.md)
   The combined, maximum size of the essential assets that the system downloads before it launches your app in bytes.
-- [BAMaxInstallSize](../BundleResources/Information-Property-List/BAMaxInstallSize.md)
+- [BAMaxInstallSize](../bundleresources/information-property-list/bamaxinstallsize.md)
   The combined, maximum size, in bytes, of the non-essential assets that download immediately after app installation.
 - [class BADownloadManager](badownloadmanager.md)
   An object that manages the queue of scheduled asset downloads.

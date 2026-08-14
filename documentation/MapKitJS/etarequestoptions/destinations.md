@@ -16,7 +16,7 @@ destinations: CoordinateData[];
 
 #### Discussion
 
-A [`Coordinate`](coordinate.md) represents each destination in the array. You may get coordinates from [`search(query, options)`](search/search.md) or [`lookup(place, options)`](geocoder/lookup.md), which return [`Place`](place.md) objects that contain coordinates. You may provide up to 10 destinations in the array.
+A [`Coordinate`](coordinate.md) represents each destination in the array. You may get coordinates from [`search()`](search/search.md) or [`lookup()`](geocoder/lookup.md), which return [`Place`](place.md) objects that contain coordinates. You may provide up to 10 destinations in the array.
 
 ## See Also
 

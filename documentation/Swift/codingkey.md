@@ -43,7 +43,7 @@ protocol CodingKey : CustomDebugStringConvertible, CustomStringConvertible, Send
 
 ## See Also
 
-- [Encoding and Decoding Custom Types](../Foundation/encoding-and-decoding-custom-types.md)
+- [Encoding and Decoding Custom Types](../foundation/encoding-and-decoding-custom-types.md)
   Make your data types encodable and decodable for compatibility with external representations such as JSON.
 - [typealias Codable](codable.md)
   A type that can convert itself into and out of an external representation.

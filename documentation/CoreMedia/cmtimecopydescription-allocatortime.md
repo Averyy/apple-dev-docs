@@ -26,7 +26,7 @@ A string representation of the time.
 
 ## Parameters
 
-- `allocator`: An allocator with which to create the description. Pass [`kCFAllocatorDefault`](https://developer.apple.com/documentation/CoreFoundation/kCFAllocatorDefault) to use the default allocator.
+- `allocator`: An allocator with which to create the description. Pass [`kCFAllocatorDefault`](https://developer.apple.com/documentation/corefoundation/kcfallocatordefault) to use the default allocator.
 - `time`: The time to describe.
 
 ## See Also

@@ -8,7 +8,7 @@ Attributes for a filter and its parameters.
 
 Attribute keys are used for the attribute dictionary of a filter.  Most entries in the attribute dictionary are optional. The attribute [`kCIAttributeFilterName`](kciattributefiltername.md) is mandatory. For a parameter, the attribute [`kCIAttributeClass`](kciattributeclass.md) is mandatory because it specifies the class name of the filter.
 
-A parameter of type [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) does not necessarily need the attributes [`kCIAttributeMin`](kciattributemin.md) and [`kCIAttributeMax`](kciattributemax.md). These attributes are not present when the parameter has no upper or lower bounds. For example, the Gaussian blur filter has a radius parameter with a minimum of `0` but no maximum value to indicate that all nonnegative values are valid.
+A parameter of type [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) does not necessarily need the attributes [`kCIAttributeMin`](kciattributemin.md) and [`kCIAttributeMax`](kciattributemax.md). These attributes are not present when the parameter has no upper or lower bounds. For example, the Gaussian blur filter has a radius parameter with a minimum of `0` but no maximum value to indicate that all nonnegative values are valid.
 
 ## Topics
 

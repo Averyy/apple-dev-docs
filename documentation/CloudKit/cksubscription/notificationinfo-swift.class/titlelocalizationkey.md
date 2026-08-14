@@ -23,7 +23,7 @@ var titleLocalizationKey: String? { get set }
 
 CloudKit uses this value to set the `title-loc-key` push notification property.
 
-See [`Generating a remote notification`](https://developer.apple.com/documentation/UserNotifications/generating-a-remote-notification) for more details about push notification properties.
+See [`Generating a remote notification`](https://developer.apple.com/documentation/usernotifications/generating-a-remote-notification) for more details about push notification properties.
 
 ## See Also
 

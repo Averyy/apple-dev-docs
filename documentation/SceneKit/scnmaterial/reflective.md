@@ -29,11 +29,11 @@ By default, the reflective property’s [`contents`](scnmaterialproperty/content
 To produce a mirror-finish effect using an environment map, the texture image should take one of two forms:
 
 - A sphere map, a square image whose content depicts an environment as reflected by a mirrored sphere.
-- A cube map, an array of six square images which together form an imaginary cube enclosing the scene, whose inner surfaces are reflected by the material. You create a cube map by setting the reflective property’s [`contents`](scnmaterialproperty/contents.md) object to an [`NSArray`](https://developer.apple.com/documentation/Foundation/NSArray) instance containing six images, each corresponding to a direction in the scene’s world coordinate space in the following order: +X, -X, +Y, -Y, +Z, -Z (or Right, Left, Top, Bottom, Near, Far).
+- A cube map, an array of six square images which together form an imaginary cube enclosing the scene, whose inner surfaces are reflected by the material. You create a cube map by setting the reflective property’s [`contents`](scnmaterialproperty/contents.md) object to an [`NSArray`](https://developer.apple.com/documentation/foundation/nsarray) instance containing six images, each corresponding to a direction in the scene’s world coordinate space in the following order: +X, -X, +Y, -Y, +Z, -Z (or Right, Left, Top, Bottom, Near, Far).
 
 The figure below shows a material (with a texture for its [`normal`](scnmaterial/normal.md) property) before and after providing a cube map for the reflective property.
 
-![None](https://docs-assets.developer.apple.com/published/4e8a6171d615e3e6b9b2a3095c035735/media-2934164%402x.png)
+![None](/images/com.apple.scenekit/media-2934164@2x.png)
 
 This material property does not apply to physically-based materials (see [`physicallyBased`](scnmaterial/lightingmodel-swift.struct/physicallybased.md)). Instead, such materials reflect environment-based lighting (see the [`SCNScene`](scnscene.md) [`lightingEnvironment`](scnscene/lightingenvironment.md) property) based on their [`metalness`](scnmaterial/metalness.md) and [`roughness`](scnmaterial/roughness.md) properties.
 

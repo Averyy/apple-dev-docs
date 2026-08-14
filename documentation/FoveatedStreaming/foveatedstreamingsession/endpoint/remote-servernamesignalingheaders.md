@@ -16,7 +16,7 @@ static func remote(serverName: String, signalingHeaders: [String : String]) -> F
 
 #### Discussion
 
-The framework uses the server name to look up the remote URL from the app’s [`ApprovedStreamingEndpoints`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/ApprovedStreamingEndpoints) in `Info.plist`.
+The framework uses the server name to look up the remote URL from the app’s [`ApprovedStreamingEndpoints`](https://developer.apple.com/documentation/bundleresources/information-property-list/approvedstreamingendpoints) in `Info.plist`.
 
 - Parameter - serverName: The server name corresponding to an entry in the `ApprovedStreamingEndpoints` dictionary.
 - signalingHeaders: HTTP headers which the session forwards to the remote server. Use these headers for authentication and session management.

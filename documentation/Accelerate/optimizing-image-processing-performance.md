@@ -12,7 +12,7 @@ The vImage library operates on image data with two memory layouts:
 
 **Planar** stores each color channel in separate buffers. For example, a 4-channel image would be stored as four individual buffers containing red, green, blue, and alpha data.
 
-![A diagram showing how the color information for each pixel in an image is stored in interleaved and planar buffers.](https://docs-assets.developer.apple.com/published/9ca5720cecfccf9a40e29dcb8dfb8134/media-3023512%402x.png)
+![A diagram showing how the color information for each pixel in an image is stored in interleaved and planar buffers.](/images/com.apple.accelerate/media-3023512@2x.png)
 
 Because many vImage functions operate on a single color channel at a time — by converting an interleaved buffer to planar buffers — you can often improve your app’s performance by doing this conversion manually. However, most vImage functions are available in both the interleaved and planar variants, so before you do the conversion, try both to see which works better in your context.
 
@@ -43,7 +43,7 @@ let time = ContinuousClock().measure {
 }
 ```
 
-You can use [`ContinuousClock`](https://developer.apple.com/documentation/Swift/ContinuousClock) to measure the execution time.
+You can use [`ContinuousClock`](https://developer.apple.com/documentation/swift/continuousclock) to measure the execution time.
 
 ##### Convert an Interleaved Source Buffer to Planar Buffers
 

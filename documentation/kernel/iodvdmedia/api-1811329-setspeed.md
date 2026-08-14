@@ -20,7 +20,7 @@ Set the speed to be used for data transfers.
 
 ## Parameters
 
-- `kilobytesPerSecond`: kDVDSpeedMin specifies the minimum speed for all DVD media (1X). kDVDSpeedMax specifies the maximum speed supported in hardware.
+- `kilobytesPerSecond`: Speed to be used for data transfers, in kB/s. kDVDSpeedMin specifies the minimum speed for all DVD media (1X). kDVDSpeedMax specifies the maximum speed supported in hardware.
 
 ## See Also
 

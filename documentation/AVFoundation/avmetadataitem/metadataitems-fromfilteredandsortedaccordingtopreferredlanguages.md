@@ -27,7 +27,7 @@ An array of metadata items that match the specified languages.
 ## Parameters
 
 - `metadataItems`: The metadata items to filter.
-- `preferredLanguages`: An array of [`NSString`](https://developer.apple.com/documentation/Foundation/NSString) objects, each of which contains a canonicalized IETF BCP 47 language identifier. The order of the identifiers in the array reflects the preferred language order, with the most preferred language being first in the array. Typically, you pass the user’s preferred languages by retrieving this array from the [`preferredLanguages`](https://developer.apple.com/documentation/Foundation/NSLocale/preferredLanguages) class method of [`NSLocale`](https://developer.apple.com/documentation/Foundation/NSLocale).
+- `preferredLanguages`: An array of [`NSString`](https://developer.apple.com/documentation/foundation/nsstring) objects, each of which contains a canonicalized IETF BCP 47 language identifier. The order of the identifiers in the array reflects the preferred language order, with the most preferred language being first in the array. Typically, you pass the user’s preferred languages by retrieving this array from the [`preferredLanguages`](https://developer.apple.com/documentation/foundation/nslocale/preferredlanguages) class method of [`NSLocale`](https://developer.apple.com/documentation/foundation/nslocale).
 
 ## See Also
 

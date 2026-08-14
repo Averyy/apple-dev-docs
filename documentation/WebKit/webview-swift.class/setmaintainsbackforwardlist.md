@@ -20,7 +20,7 @@ The back-forward list maintains a page cache, so applications that do not use th
 
 ## Parameters
 
-- `flag`: If [`false`](https://developer.apple.com/documentation/Swift/false), clears the back-forward list and relinquishes ownership the page cache; otherwise, it does not.
+- `flag`: If [`false`](https://developer.apple.com/documentation/swift/false), clears the back-forward list and relinquishes ownership the page cache; otherwise, it does not.
 
 ## See Also
 

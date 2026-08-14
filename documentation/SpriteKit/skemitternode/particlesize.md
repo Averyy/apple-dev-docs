@@ -22,7 +22,7 @@ var particleSize: CGSize { get set }
 
 #### Discussion
 
-The default value is [`CGSizeZero`](https://developer.apple.com/documentation/CoreGraphics/CGSizeZero). If set to the default, the size of the texture stored in the [`particleTexture`](skemitternode/particletexture.md) property is used to determine the size of a particle. If a texture has not been assigned, you must set this property to a non-empty size.
+The default value is [`CGSizeZero`](https://developer.apple.com/documentation/coregraphics/cgsizezero). If set to the default, the size of the texture stored in the [`particleTexture`](skemitternode/particletexture.md) property is used to determine the size of a particle. If a texture has not been assigned, you must set this property to a non-empty size.
 
 ## See Also
 

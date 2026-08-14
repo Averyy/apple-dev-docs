@@ -15,7 +15,7 @@ You can load and configure audio with an [`AudioResource`](audioresource.md) sub
 ### Audio source components
 - [Creating a Spaceship game](creating-a-spaceship-game.md)
   Build an immersive game using RealityKit audio, simulation, and rendering features.
-- [Playing spatial audio](../visionOS/playing-spatial-audio-in-visionos.md)
+- [Playing spatial audio](../visionos/playing-spatial-audio-in-visionos.md)
   Create and adjust spatial audio in visionOS with RealityKit.
 - [struct SpatialAudioComponent](spatialaudiocomponent.md)
   A component that configures how sounds emit from an entity into a person’s environment.
@@ -40,7 +40,7 @@ You can load and configure audio with an [`AudioResource`](audioresource.md) sub
 - [class AudioFileGroupResource](audiofilegroupresource.md)
   An audio file group.
 - [class AudioBufferResource](audiobufferresource.md)
-  An audio resource that you load from an [`AVAudioBuffer`](https://developer.apple.com/documentation/AVFAudio/AVAudioBuffer).
+  An audio resource that you load from an [`AVAudioBuffer`](https://developer.apple.com/documentation/avfaudio/avaudiobuffer).
 - [struct AudioLibraryComponent](audiolibrarycomponent.md)
   A container for audio resources that you can look up by user-defined names.
 - [class AudioResource](audioresource.md)
@@ -80,9 +80,9 @@ You can load and configure audio with an [`AudioResource`](audioresource.md) sub
 
 ## See Also
 
-- [Hello World](../visionOS/World.md)
+- [Hello World](../visionos/world.md)
   Use windows, volumes, and immersive spaces to teach people about the Earth.
-- [Enabling video reflections in an immersive environment](../visionOS/enabling-video-reflections-in-an-immersive-environment.md)
+- [Enabling video reflections in an immersive environment](../visionos/enabling-video-reflections-in-an-immersive-environment.md)
   Create a more immersive experience by adding video reflections in a custom environment.
 - [Creating a spatial drawing app with RealityKit](creating-a-spatial-drawing-app-with-realitykit.md)
   Use low-level mesh and texture APIs to achieve fast updates to a person’s brush strokes by integrating RealityKit with ARKit and SwiftUI.

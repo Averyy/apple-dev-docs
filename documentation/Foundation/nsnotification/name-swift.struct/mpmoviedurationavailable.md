@@ -19,7 +19,7 @@ static let MPMovieDurationAvailable: NSNotification.Name
 
 #### Discussion
 
-To retrieve the duration of a movie, access the movie player’s [`duration`](https://developer.apple.com/documentation/MediaPlayer/MPMoviePlayerController/duration) property. The movie player whose state has changed is available as the object associated with the notification.
+To retrieve the duration of a movie, access the movie player’s [`duration`](https://developer.apple.com/documentation/mediaplayer/mpmovieplayercontroller/duration) property. The movie player whose state has changed is available as the object associated with the notification.
 
 ## See Also
 

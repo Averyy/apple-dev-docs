@@ -47,7 +47,7 @@ struct MergeMany<Upstream> where Upstream : Publisher
 ## Relationships
 
 ### Conforms To
-- [Equatable](../Swift/Equatable.md)
+- [Equatable](../swift/equatable.md)
 - [Publisher](publisher.md)
 
 ## See Also

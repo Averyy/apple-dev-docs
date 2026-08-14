@@ -21,7 +21,7 @@ static let postalAddressUserInfoKey: PKPaymentErrorKey
 
 #### Discussion
 
-See [`CNPostalAddress`](https://developer.apple.com/documentation/Contacts/CNPostalAddress) for the values that can be used with this key. These values point to the specific area of the address that is at fault, for example, [`CNPostalAddressStreetKey`](https://developer.apple.com/documentation/Contacts/CNPostalAddressStreetKey) indicates the street. When you supply the key values in a payment error, the Apple Pay sheet highlights the appropriate field, enabling the user to correct errors.
+See [`CNPostalAddress`](https://developer.apple.com/documentation/contacts/cnpostaladdress) for the values that can be used with this key. These values point to the specific area of the address that is at fault, for example, [`CNPostalAddressStreetKey`](https://developer.apple.com/documentation/contacts/cnpostaladdressstreetkey) indicates the street. When you supply the key values in a payment error, the Apple Pay sheet highlights the appropriate field, enabling the user to correct errors.
 
 ## See Also
 

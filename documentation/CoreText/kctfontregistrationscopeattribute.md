@@ -22,7 +22,7 @@ let kCTFontRegistrationScopeAttribute: CFString
 
 #### Discussion
 
-The value associated with this key is an integer represented as a [`CFNumber`](https://developer.apple.com/documentation/CoreFoundation/CFNumber) object containing one of the [`CTFontManagerScope`](ctfontmanagerscope.md) enumerated values. A value of `NULL` can be returned for font descriptors that are not registered.
+The value associated with this key is an integer represented as a [`CFNumber`](https://developer.apple.com/documentation/corefoundation/cfnumber) object containing one of the [`CTFontManagerScope`](ctfontmanagerscope.md) enumerated values. A value of `NULL` can be returned for font descriptors that are not registered.
 
 ## See Also
 

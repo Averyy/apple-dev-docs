@@ -31,18 +31,18 @@ StoreKit automatically verifies the [`Transaction`](transaction.md), [`Product.S
 
 In addition to getting a verification result from StoreKit, you might want to verify the signed information yourself, either on the device, or on your server for the most control and security. Perform the verification on the [`jwsRepresentation`](verificationresult/jwsrepresentation-178oj.md) property for subscription renewal information, the [`jwsRepresentation`](verificationresult/jwsrepresentation-21vgo.md) property for transactions, and the [`jwsRepresentation`](verificationresult/jwsrepresentation-6ma59.md) property for an app transaction.
 
-To verify the [`jwsRepresentation`](verificationresult/jwsrepresentation-21vgo.md) on your server, consider using the verification functions in the App Store Server Library. The library provides the functions `verifyAndDecodeTransaction`, `verifyAndDecodeAppTransaction`, and `verifyAndDecodeRenewalInfo` in each language the library supports. For more information, see [`Simplifying your implementation by using the App Store Server Library`](https://developer.apple.com/documentation/AppStoreServerAPI/simplifying-your-implementation-by-using-the-app-store-server-library).
+To verify the [`jwsRepresentation`](verificationresult/jwsrepresentation-21vgo.md) on your server, consider using the verification functions in the App Store Server Library. The library provides the functions `verifyAndDecodeTransaction`, `verifyAndDecodeAppTransaction`, and `verifyAndDecodeRenewalInfo` in each language the library supports. For more information, see [`Simplifying your implementation by using the App Store Server Library`](https://developer.apple.com/documentation/appstoreserverapi/simplifying-your-implementation-by-using-the-app-store-server-library).
 
 The [`jwsRepresentation`](verificationresult/jwsrepresentation-21vgo.md) string is in JWS Compact Serialization format and is the same as its counterpart in the App Store server APIs, as follows:
 
 | StoreKit string | Equivalent in the App Store Server API | Equivalent in App Store Server Notifications |
 | --- | --- | --- |
-| [`jwsRepresentation`](verificationresult/jwsrepresentation-178oj.md) for subscription renewal information | [`JWSRenewalInfo`](https://developer.apple.com/documentation/AppStoreServerAPI/JWSRenewalInfo) | [`JWSRenewalInfo`](https://developer.apple.com/documentation/AppStoreServerNotifications/JWSRenewalInfo) |
-| [`jwsRepresentation`](verificationresult/jwsrepresentation-21vgo.md) for transactions | [`JWSTransaction`](https://developer.apple.com/documentation/AppStoreServerAPI/JWSTransaction) | [`JWSTransaction`](https://developer.apple.com/documentation/AppStoreServerNotifications/JWSTransaction) |
+| [`jwsRepresentation`](verificationresult/jwsrepresentation-178oj.md) for subscription renewal information | [`JWSRenewalInfo`](https://developer.apple.com/documentation/appstoreserverapi/jwsrenewalinfo) | [`JWSRenewalInfo`](https://developer.apple.com/documentation/appstoreservernotifications/jwsrenewalinfo) |
+| [`jwsRepresentation`](verificationresult/jwsrepresentation-21vgo.md) for transactions | [`JWSTransaction`](https://developer.apple.com/documentation/appstoreserverapi/jwstransaction) | [`JWSTransaction`](https://developer.apple.com/documentation/appstoreservernotifications/jwstransaction) |
 
 The decoded payload of the [`jwsRepresentation`](verificationresult/jwsrepresentation-21vgo.md) contains  two additional fields: `deviceVerification` and `deviceVerificationNonce`. Use these fields on the device to verify that JWS information belongs to the device. For more information, see [`deviceVerificationID`](appstore/deviceverificationid.md).
 
-> ❗ **Important**:  The decoded payloads of [`jwsRepresentation`](verificationresult/jwsrepresentation-21vgo.md) and [`JWSTransaction`](https://developer.apple.com/documentation/AppStoreServerAPI/JWSTransaction) strings contain [`price`](https://developer.apple.com/documentation/AppStoreServerAPI/price) or [`renewalPrice`](https://developer.apple.com/documentation/AppStoreServerAPI/renewalPrice) fields specified in *milliunits* of the currency.  StoreKit represents the `price` and [`renewalPrice`](product/subscriptioninfo/renewalinfo/renewalprice.md) values in is *units* of the currency. Take care not to confuse these two representations when working with both APIs.
+> ❗ **Important**:  The decoded payloads of [`jwsRepresentation`](verificationresult/jwsrepresentation-21vgo.md) and [`JWSTransaction`](https://developer.apple.com/documentation/appstoreserverapi/jwstransaction) strings contain [`price`](https://developer.apple.com/documentation/appstoreserverapi/price) or [`renewalPrice`](https://developer.apple.com/documentation/appstoreserverapi/renewalprice) fields specified in *milliunits* of the currency.  StoreKit represents the `price` and [`renewalPrice`](product/subscriptioninfo/renewalinfo/renewalprice.md) values in is *units* of the currency. Take care not to confuse these two representations when working with both APIs.
 
 ## Topics
 
@@ -118,13 +118,13 @@ The decoded payload of the [`jwsRepresentation`](verificationresult/jwsrepresent
 ## Relationships
 
 ### Conforms To
-- [Copyable](../Swift/Copyable.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Escapable](../Swift/Escapable.md)
-- [Hashable](../Swift/Hashable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Copyable](../swift/copyable.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Escapable](../swift/escapable.md)
+- [Hashable](../swift/hashable.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

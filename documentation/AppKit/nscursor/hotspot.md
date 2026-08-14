@@ -21,7 +21,7 @@ var hotSpot: NSPoint { get }
 
 The hot spot precisely determines the click location within the cursor’s image. Using its flipped coordinate system, you calculate the hot spot in points with the top-left corner acting as the origin. For example, the arrow cursor’s hot spot is at the intersection of its left and right edges, which is inset 4pts from the image’s corner to account for the arrow’s stroke and shadow.
 
-![A diagram showing an arrow cursor that points up and to the left. At the tip of the arrow, inset slightly, is a cross hair pointing to the cursor’s hot spot.](https://docs-assets.developer.apple.com/published/e5091aa5be2b52dcadf2d52c1d016a30/media-4311497%402x.png)
+![A diagram showing an arrow cursor that points up and to the left. At the tip of the arrow, inset slightly, is a cross hair pointing to the cursor’s hot spot.](/images/com.apple.appkit/media-4311497@2x.png)
 
 Note that an `NSCursor` object is immutable: you can’t change its hot spot after it’s created. Instead, use [`init(image:hotSpot:)`](nscursor/init(image:hotspot:).md) to create a new cursor with the new settings.
 

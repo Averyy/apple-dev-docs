@@ -22,7 +22,7 @@ var isScalar: Bool { get }
 
 #### Discussion
 
-The value is equivalent to [`shape`](mlshapedarrayprotocol/shape.md).[`isEmpty`](https://developer.apple.com/documentation/Swift/Array/isEmpty).
+The value is equivalent to [`shape`](mlshapedarrayprotocol/shape.md).[`isEmpty`](https://developer.apple.com/documentation/swift/array/isempty).
 
 ## See Also
 

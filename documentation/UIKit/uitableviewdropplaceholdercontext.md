@@ -39,7 +39,7 @@ When you’re ready to swap a placeholder cell for a cell with the actual data, 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 - [UIDragAnimating](uidraganimating.md)
 
 ## See Also

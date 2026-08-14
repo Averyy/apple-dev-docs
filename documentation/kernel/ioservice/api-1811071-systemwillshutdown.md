@@ -20,7 +20,7 @@ Any power managed driver (which has called joinPMtree to join the power plane) i
 
 ## Parameters
 
-- `specifier`:  or  .
+- `specifier`: `kIOMessageSystemWillPowerOff` or `kIOMessageSystemWillRestart`.
 
 ## See Also
 

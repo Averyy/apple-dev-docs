@@ -28,7 +28,7 @@ A new action object.
 
 This action can only be executed by an [`SKSpriteNode`](skspritenode.md) object. When the action executes, the sprite’s [`texture`](skspritenode/texture.md) property animates through the array of textures. The sprite’s [`texture`](skspritenode/texture.md) property is changed to the next texture in the array. The action then pauses for the specified time before continuing. The action continues until it has finished animating through all of the textures in the array. The total duration of the action is the number of textures multiplied by the frame interval.
 
-> **Note**:  If the `restore` parameter is [`true`](https://developer.apple.com/documentation/Swift/true) and this action is removed from a node before it completes, then node’s texture is still restored. This differs from the default behavior of removing an action.
+> **Note**:  If the `restore` parameter is [`true`](https://developer.apple.com/documentation/swift/true) and this action is removed from a node before it completes, then node’s texture is still restored. This differs from the default behavior of removing an action.
 
 This action is reversible; the resulting action animates through the same textures from last to first.
 
@@ -36,8 +36,8 @@ This action is reversible; the resulting action animates through the same textur
 
 - `textures`: An array of textures to use when animating a sprite.
 - `sec`: The amount of time, in seconds, that each texture is displayed.
-- `resize`: If [`true`](https://developer.apple.com/documentation/Swift/true), the sprite is resized to match each new texture. If [`false`](https://developer.apple.com/documentation/Swift/false), the size of the sprite remains at a constant size.
-- `restore`: - If [`true`](https://developer.apple.com/documentation/Swift/true): When the action completes, the sprite’s texture is restored to the texture it had before the action completed. (If the resize parameter is [`true`](https://developer.apple.com/documentation/Swift/true), the sprite is resized to match the size of the original texture.) - If [`false`](https://developer.apple.com/documentation/Swift/false): When the action completes, the sprite’s texture remains set to the final texture in the array.
+- `resize`: If [`true`](https://developer.apple.com/documentation/swift/true), the sprite is resized to match each new texture. If [`false`](https://developer.apple.com/documentation/swift/false), the size of the sprite remains at a constant size.
+- `restore`: - If [`true`](https://developer.apple.com/documentation/swift/true): When the action completes, the sprite’s texture is restored to the texture it had before the action completed. (If the resize parameter is [`true`](https://developer.apple.com/documentation/swift/true), the sprite is resized to match the size of the original texture.) - If [`false`](https://developer.apple.com/documentation/swift/false): When the action completes, the sprite’s texture remains set to the final texture in the array.
 
 ## See Also
 

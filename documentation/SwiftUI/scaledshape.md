@@ -37,8 +37,8 @@ struct ScaledShape<Content> where Content : Shape
 
 ### Conforms To
 - [Animatable](animatable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 - [Shape](shape.md)
 - [View](view.md)
 

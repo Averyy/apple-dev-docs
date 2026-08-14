@@ -23,13 +23,13 @@ optional func legibleOutput(_ output: AVPlayerItemLegibleOutput, didOutputAttrib
 
 For each media subtype in the array passed in to the `output` object’s  [`init(mediaSubtypesForNativeRepresentation:)`](avplayeritemlegibleoutput/init(mediasubtypesfornativerepresentation:).md) method, the delegate receives sample buffers carrying data in its native format via the `nativeSamples` parameter if there is media data of that subtype in the media resource.
 
-For all other media subtypes present in the media resource, the delegate receives attributed strings in a common format via the `strings` parameter.  See [`CMTextMarkup`](https://developer.apple.com/documentation/CoreMedia/cmtextmarkup) for the string attributes keys and values that are used in the attributed strings.
+For all other media subtypes present in the media resource, the delegate receives attributed strings in a common format via the `strings` parameter.  See [`CMTextMarkup`](https://developer.apple.com/documentation/coremedia/cmtextmarkup) for the string attributes keys and values that are used in the attributed strings.
 
 ## Parameters
 
 - `output`: The [`AVPlayerItemLegibleOutput`](avplayeritemlegibleoutput.md) source instance.
-- `strings`: An array of [`NSAttributedString`](https://developer.apple.com/documentation/Foundation/NSAttributedString) objects, each containing both the run of text and the descriptive markup.
-- `nativeSamples`: An array of [`CMSampleBuffer`](https://developer.apple.com/documentation/CoreMedia/CMSampleBuffer) objects, for media subtypes included in the array passed to the `output` object’s [`init(mediaSubtypesForNativeRepresentation:)`](avplayeritemlegibleoutput/init(mediasubtypesfornativerepresentation:).md) method.
+- `strings`: An array of [`NSAttributedString`](https://developer.apple.com/documentation/foundation/nsattributedstring) objects, each containing both the run of text and the descriptive markup.
+- `nativeSamples`: An array of [`CMSampleBuffer`](https://developer.apple.com/documentation/coremedia/cmsamplebuffer) objects, for media subtypes included in the array passed to the `output` object’s [`init(mediaSubtypesForNativeRepresentation:)`](avplayeritemlegibleoutput/init(mediasubtypesfornativerepresentation:).md) method.
 - `itemTime`: The item time at which the strings should be presented.
 
 

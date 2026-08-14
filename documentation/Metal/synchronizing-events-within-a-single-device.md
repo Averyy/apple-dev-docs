@@ -8,7 +8,7 @@ Use nonshareable events to synchronize your app’s work within a single device.
 
 The following figure and code show a nonshareable event that synchronizes graphics rendering on one command queue with compute processing on another.
 
-![Timeline diagram that shows a nonshareable synchronization event encoded into two command queues. Command queue A shows graphics-rendering commands, and command queue B shows compute-processing commands.](https://docs-assets.developer.apple.com/published/9579ce601b5d1e22efed4f32680415f9/synchronizing-events-within-a-single-device-1%402x.png)
+![Timeline diagram that shows a nonshareable synchronization event encoded into two command queues. Command queue A shows graphics-rendering commands, and command queue B shows compute-processing commands.](/images/com.apple.metal/synchronizing-events-within-a-single-device-1@2x.png)
 
 **Swift**:
 

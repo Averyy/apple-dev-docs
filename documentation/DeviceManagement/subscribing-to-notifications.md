@@ -22,7 +22,7 @@ Each notification has these common fields:
 | `notificationId` | Each notification has a unique ID that you can use for deduping notifications that the server sends more than once. |
 | `notificationType` | The type of notification. You can use this to determine how to deserialize the notification value. |
 | `notification` | Contains the JSON object with the changed data. Each notification type has a uniquely structured notification JSON object. |
-| `uId` | The ID of the location for the notification. |
+| `uId` | The ID of the organizational unit for the notification. |
 
 Notifications resemble the following:
 
@@ -61,7 +61,7 @@ The test notification has the following format:
 Update total asset counts upon receiving an `ASSET_COUNT` notification type that the server sends when:
 
 - A user buys an asset
-- A user transfers an asset between locations
+- A user transfers an asset between organizational units
 - A user refunds an asset
 
 The notifications have the following format:

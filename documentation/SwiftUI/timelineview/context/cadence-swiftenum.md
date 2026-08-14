@@ -24,7 +24,7 @@ enum Cadence
 
 Use the cadence presented to content in a [`TimelineView`](timelineview.md) to hide information that updates faster than the view’s current update rate. For example, you could hide the millisecond component of a digital timer when the cadence is [`TimelineView.Context.Cadence.seconds`](timelineview/context/cadence-swift.enum/seconds.md) or [`TimelineView.Context.Cadence.minutes`](timelineview/context/cadence-swift.enum/minutes.md).
 
-Because this enumeration conforms to the [`Comparable`](https://developer.apple.com/documentation/Swift/Comparable) protocol, you can compare cadences with relational operators. Slower cadences have higher values, so you could perform the check described above with the following comparison:
+Because this enumeration conforms to the [`Comparable`](https://developer.apple.com/documentation/swift/comparable) protocol, you can compare cadences with relational operators. Slower cadences have higher values, so you could perform the check described above with the following comparison:
 
 ```swift
 let hideMilliseconds = cadence > .live
@@ -43,11 +43,11 @@ let hideMilliseconds = cadence > .live
 ## Relationships
 
 ### Conforms To
-- [Comparable](../Swift/Comparable.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Comparable](../swift/comparable.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

@@ -19,7 +19,7 @@ A wrapper for a `UIGestureRecognizer` that you use to integrate that gesture rec
 
 #### Overview
 
-Use a [`UIGestureRecognizerRepresentable`](uigesturerecognizerrepresentable.md) instance to create and manage a [`UIGestureRecognizer`](https://developer.apple.com/documentation/UIKit/UIGestureRecognizer) object in your SwiftUI interface.
+Use a [`UIGestureRecognizerRepresentable`](uigesturerecognizerrepresentable.md) instance to create and manage a [`UIGestureRecognizer`](https://developer.apple.com/documentation/uikit/uigesturerecognizer) object in your SwiftUI interface.
 
 To add your gesture recognizer to a SwiftUI view, create an instance of [`UIGestureRecognizerRepresentable`](uigesturerecognizerrepresentable.md) and use the [`gesture(_:)`](view/gesture(_:).md) modifier to attach it. The system calls the methods of your representable instance at appropriate times to create and update the gesture recognizer.
 

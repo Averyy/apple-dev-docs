@@ -16,7 +16,7 @@ let kQLPreviewPropertyAttachmentsKey: CFString!
 
 #### Discussion
 
-The value is a [`CFDictionary`](https://developer.apple.com/documentation/CoreFoundation/CFDictionary) object. The keys of the dictionary are the attachment identifiers ([`CFString`](https://developer.apple.com/documentation/CoreFoundation/CFString) objects) that can be referenced with the `cid:id` URL. The dictionary’s values are themselves dictionaries that use the [`kQLPreviewPropertyAttachmentDataKey`](kqlpreviewpropertyattachmentdatakey.md), [`kQLPreviewPropertyMIMETypeKey`](kqlpreviewpropertymimetypekey.md) and [`kQLPreviewPropertyTextEncodingNameKey`](kqlpreviewpropertytextencodingnamekey.md) properties.
+The value is a [`CFDictionary`](https://developer.apple.com/documentation/corefoundation/cfdictionary) object. The keys of the dictionary are the attachment identifiers ([`CFString`](https://developer.apple.com/documentation/corefoundation/cfstring) objects) that can be referenced with the `cid:id` URL. The dictionary’s values are themselves dictionaries that use the [`kQLPreviewPropertyAttachmentDataKey`](kqlpreviewpropertyattachmentdatakey.md), [`kQLPreviewPropertyMIMETypeKey`](kqlpreviewpropertymimetypekey.md) and [`kQLPreviewPropertyTextEncodingNameKey`](kqlpreviewpropertytextencodingnamekey.md) properties.
 
 ## See Also
 

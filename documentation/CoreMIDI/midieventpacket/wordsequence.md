@@ -24,7 +24,7 @@ struct WordSequence
 ## Relationships
 
 ### Conforms To
-- [Sequence](../Swift/Sequence.md)
+- [Sequence](../swift/sequence.md)
 
 
 ---

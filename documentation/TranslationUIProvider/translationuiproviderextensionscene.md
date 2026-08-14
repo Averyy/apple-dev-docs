@@ -19,7 +19,7 @@ protocol TranslationUIProviderExtensionScene : AppExtensionScene
 ## Relationships
 
 ### Inherits From
-- [AppExtensionScene](../ExtensionKit/AppExtensionScene.md)
+- [AppExtensionScene](../extensionkit/appextensionscene.md)
 ### Conforming Types
 - [TranslationUIProviderSelectedTextScene](translationuiproviderselectedtextscene.md)
 

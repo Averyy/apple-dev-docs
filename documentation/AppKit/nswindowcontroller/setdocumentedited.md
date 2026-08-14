@@ -20,7 +20,7 @@ The window controller uses this flag to control whether its associated window sh
 
 ## Parameters
 
-- `dirtyFlag`: [`true`](https://developer.apple.com/documentation/Swift/true) if the document has been edited since its last save, [`false`](https://developer.apple.com/documentation/Swift/false) if it hasn’t.
+- `dirtyFlag`: [`true`](https://developer.apple.com/documentation/swift/true) if the document has been edited since its last save, [`false`](https://developer.apple.com/documentation/swift/false) if it hasn’t.
 
 ## See Also
 

@@ -22,7 +22,7 @@ func contexts(matching predicate: NSPredicate) async throws -> [CLSContext]
 
 > ❗ **Important**:  You can call this method from synchronous code using a completion handler, as shown on this page, or you can call it as an asynchronous method that has the following declaration: ```swift
 func contexts(matching predicate: NSPredicate) async throws -> [CLSContext]
-``` For information about concurrency and asynchronous code in Swift, see [`Calling Objective-C APIs Asynchronously`](https://developer.apple.com/documentation/Swift/calling-objective-c-apis-asynchronously).
+``` For information about concurrency and asynchronous code in Swift, see [`Calling Objective-C APIs Asynchronously`](https://developer.apple.com/documentation/swift/calling-objective-c-apis-asynchronously).
 
 Use the predicate keys defined in [`CLSPredicateKeyPath`](clspredicatekeypath.md) to create a predicate that you pass to this method to search for contexts matching certain criteria.
 

@@ -12,7 +12,7 @@ When the parent or guardian taps the message, a sheet displays with buttons to a
 
 Alternatively, if the request recipient is in the vicinity of the device, a follow-on pane for the request flow contains an Approve in Person button, which when tapped, approves the request after the parent or guardian authenticates with their Apple Account.
 
-![An iPhone device body that features a modal sheet for the Ask for Exception workflow. Text notifies the person that the request message is sent and pending approval, and that a parent or guardian can approve the request in person if they're in the vicinity of the device. Two buttons follow the text that read Approve in Person and Close.](https://docs-assets.developer.apple.com/published/ff6403af08575b7846df574a82dbaf33/providing-age-rating-appropriate-content-5%402x.png)
+![An iPhone device body that features a modal sheet for the Ask for Exception workflow. Text notifies the person that the request message is sent and pending approval, and that a parent or guardian can approve the request in person if they're in the vicinity of the device. Two buttons follow the text that read Approve in Person and Close.](/images/com.apple.MarketplaceKit/providing-age-rating-appropriate-content-5@2x.png)
 
 #### Check for Age Rating Based Content Restrictions
 
@@ -34,11 +34,11 @@ If your app calls [`presentAgeExceptionApproveInPersonSheet()`](applibrary/app/p
 
 - [Reauthenticating a person to manage apps](reauthenticating-a-person-to-manage-apps.md)
   Renew your app’s authorization when an app needs updating or when a device restores from backup.
-- [com.apple.developer.marketplace.app-installation](../BundleResources/Entitlements/com.apple.developer.marketplace.app-installation.md)
+- [com.apple.developer.marketplace.app-installation](../bundleresources/entitlements/com.apple.developer.marketplace.app-installation.md)
   An entitlement that enables an app to vend other apps as an alternative app marketplace.
-- [com.apple.developer.browser.app-installation](../BundleResources/Entitlements/com.apple.developer.browser.app-installation.md)
+- [com.apple.developer.browser.app-installation](../bundleresources/entitlements/com.apple.developer.browser.app-installation.md)
   An entitlement that enables a browser to install alternative distribution apps from a website.
-- [App License Delivery SDK](../AppLicenseDeliverySDK/AppLicenseDeliverySDK.md)
+- [App License Delivery SDK](../applicensedeliverysdk/applicensedeliverysdk.md)
   Secure the installation of alternative distribution apps on iOS or iPadOS devices by vending licenses from your web server.
 
 

@@ -61,7 +61,7 @@ struct MyControls: View {
 }
 ```
 
-![A screenshot showing several controls of various](https://docs-assets.developer.apple.com/published/accf80df231061eac66e07e5377e0d31/SwiftUI-View-controlSize%402x.png)
+![A screenshot showing several controls of various](/images/com.apple.SwiftUI/SwiftUI-View-controlSize@2x.png)
 
 ## Parameters
 

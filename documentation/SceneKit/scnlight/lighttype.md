@@ -24,9 +24,9 @@ struct LightType
 
 Each of the four scenes in the figure below has the same content illuminated by a single [`SCNLight`](scnlight.md) object. The node containing the light source has the same position and orientation in each scene—all differences between the four pictures are due to the light’s [`type`](scnlight/type.md) property.
 
-![None](https://docs-assets.developer.apple.com/published/eb60d2d59a291b85e0103d60120f7d81/media-2929780%402x.png)
+![None](/images/com.apple.scenekit/media-2929780@2x.png)
 
-![None](https://docs-assets.developer.apple.com/published/ae5647e6cf3f8abe6ac1f57a449fa23b/media-2929783%402x.png)
+![None](/images/com.apple.scenekit/media-2929783@2x.png)
 
 ## Topics
 
@@ -50,11 +50,11 @@ Each of the four scenes in the figure below has the same content illuminated by 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [RawRepresentable](../Swift/RawRepresentable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [RawRepresentable](../swift/rawrepresentable.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

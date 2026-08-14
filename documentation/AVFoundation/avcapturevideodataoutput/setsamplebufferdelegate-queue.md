@@ -31,7 +31,7 @@ If you need to minimize the chances of frames being dropped, you should specify 
 
 ##### Special Considerations
 
-This method uses [`dispatch_retain`](https://developer.apple.com/documentation/Dispatch/dispatch_retain) and [`dispatch_release`](https://developer.apple.com/documentation/Dispatch/dispatch_release) to manage the queue.
+This method uses [`dispatch_retain`](https://developer.apple.com/documentation/dispatch/dispatch_retain) and [`dispatch_release`](https://developer.apple.com/documentation/dispatch/dispatch_release) to manage the queue.
 
 ## Parameters
 

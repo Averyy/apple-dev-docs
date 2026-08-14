@@ -31,7 +31,7 @@ The shaded material filter uses the following properties:
 
 - **`inputImage`**: An image with the type [`CIImage`](ciimage.md).
 - **`shadingImage`**: An image representing the color shading effect with type [`CIImage`](ciimage.md).
-- **`scale`**: A `float` representing the strength of effect as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+- **`scale`**: A `float` representing the strength of effect as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
 
 The following code creates a filter that results in an image containing glossy text by applying the shading image.
 
@@ -45,7 +45,7 @@ func shadowMaterial(inputImage: CIImage, shadeImage: CIImage) -> CIImage {
 }
 ```
 
-![Three pictures side by side. The first photo on the left is a black image with the text Core Image in the center with the shading detail inside the white text. The center photograph of a colorful sphere. In the photo on the right, a shaded material filter is applied, resulting in the color from the center image being overlaid onto the text, creating a shiny effect on the text and giving the image the effect of becoming three-dimensional.](https://docs-assets.developer.apple.com/published/b4fcb61f14dbbf9386865921e50ee6ef/media-3600005%402x.png)
+![Three pictures side by side. The first photo on the left is a black image with the text Core Image in the center with the shading detail inside the white text. The center photograph of a colorful sphere. In the photo on the right, a shaded material filter is applied, resulting in the color from the center image being overlaid onto the text, creating a shiny effect on the text and giving the image the effect of becoming three-dimensional.](/images/com.apple.coreimage/media-3600005@2x.png)
 
 ## See Also
 

@@ -26,15 +26,15 @@ A share’s metadata is an intermediary object that provides access to the share
 
 You don’t create metadata. CloudKit provides it to your app when the user taps or clicks a share’s [`url`](ckshare/url.md), such as in an email or a message. The method CloudKit calls varies by platform and app configuration, and includes the following:
 
-- For a scene-based iOS app in a running or suspended state, CloudKit calls the [`windowScene(_:userDidAcceptCloudKitShareWith:)`](https://developer.apple.com/documentation/UIKit/UIWindowSceneDelegate/windowScene(_:userDidAcceptCloudKitShareWith:)) method on your window scene delegate.
-- For a scene-based iOS app that’s not running, the system launches your app in response to the tap or click, and calls the [`scene(_:willConnectTo:options:)`](https://developer.apple.com/documentation/UIKit/UISceneDelegate/scene(_:willConnectTo:options:)) method on your scene delegate. The `connectionOptions` parameter contains the metadata. Use its [`cloudKitShareMetadata`](https://developer.apple.com/documentation/UIKit/UIScene/ConnectionOptions/cloudKitShareMetadata) property to access it.
-- For an iOS app that doesn’t use scenes, CloudKit calls your app delegate’s [`application(_:userDidAcceptCloudKitShareWith:)`](https://developer.apple.com/documentation/UIKit/UIApplicationDelegate/application(_:userDidAcceptCloudKitShareWith:)) method.
-- For a macOS app, CloudKit calls your app delegate’s [`application(_:userDidAcceptCloudKitShareWith:)`](https://developer.apple.com/documentation/AppKit/NSApplicationDelegate/application(_:userDidAcceptCloudKitShareWith:)) method.
-- For a watchOS app, CloudKit calls the [`userDidAcceptCloudKitShare(with:)`](https://developer.apple.com/documentation/WatchKit/WKExtensionDelegate/userDidAcceptCloudKitShare(with:)) method on your watch extension delegate.
+- For a scene-based iOS app in a running or suspended state, CloudKit calls the [`windowScene(_:userDidAcceptCloudKitShareWith:)`](https://developer.apple.com/documentation/uikit/uiwindowscenedelegate/windowscene(_:userdidacceptcloudkitsharewith:)) method on your window scene delegate.
+- For a scene-based iOS app that’s not running, the system launches your app in response to the tap or click, and calls the [`scene(_:willConnectTo:options:)`](https://developer.apple.com/documentation/uikit/uiscenedelegate/scene(_:willconnectto:options:)) method on your scene delegate. The `connectionOptions` parameter contains the metadata. Use its [`cloudKitShareMetadata`](https://developer.apple.com/documentation/uikit/uiscene/connectionoptions/cloudkitsharemetadata) property to access it.
+- For an iOS app that doesn’t use scenes, CloudKit calls your app delegate’s [`application(_:userDidAcceptCloudKitShareWith:)`](https://developer.apple.com/documentation/uikit/uiapplicationdelegate/application(_:userdidacceptcloudkitsharewith:)) method.
+- For a macOS app, CloudKit calls your app delegate’s [`application(_:userDidAcceptCloudKitShareWith:)`](https://developer.apple.com/documentation/appkit/nsapplicationdelegate/application(_:userdidacceptcloudkitsharewith:)) method.
+- For a watchOS app, CloudKit calls the [`userDidAcceptCloudKitShare(with:)`](https://developer.apple.com/documentation/watchkit/wkextensiondelegate/userdidacceptcloudkitshare(with:)) method on your watch extension delegate.
 
 Respond by checking the [`participantStatus`](ckshare/metadata/participantstatus.md) of the provided metadata. If the status is `pending`, use [`CKAcceptSharesOperation`](ckacceptsharesoperation.md) to accept participation in the share. You can also fetch metadata independent of this flow using [`CKFetchShareMetadataOperation`](ckfetchsharemetadataoperation.md).
 
-For a shared record hierarchy, the [`hierarchicalRootRecordID`](ckshare/metadata/hierarchicalrootrecordid.md) property contains the ID of the share’s root record. When using [`CKFetchShareMetadataOperation`](ckfetchsharemetadataoperation.md) to fetch metadata, you can include the entire root record by setting the operation’s [`shouldFetchRootRecord`](ckfetchsharemetadataoperation/shouldfetchrootrecord.md) property to [`true`](https://developer.apple.com/documentation/Swift/true). CloudKit then populates the [`rootRecord`](ckshare/metadata/rootrecord.md) property before it returns the metadata. You can further customize this behavior using the operation’s [`rootRecordDesiredKeys`](ckfetchsharemetadataoperation/rootrecorddesiredkeys-3xrex.md) property to specify which fields to return. This functionality isn’t applicable for a shared record zone because, unlike a shared record hierarchy, it doesn’t have a nominated root record.
+For a shared record hierarchy, the [`hierarchicalRootRecordID`](ckshare/metadata/hierarchicalrootrecordid.md) property contains the ID of the share’s root record. When using [`CKFetchShareMetadataOperation`](ckfetchsharemetadataoperation.md) to fetch metadata, you can include the entire root record by setting the operation’s [`shouldFetchRootRecord`](ckfetchsharemetadataoperation/shouldfetchrootrecord.md) property to [`true`](https://developer.apple.com/documentation/swift/true). CloudKit then populates the [`rootRecord`](ckshare/metadata/rootrecord.md) property before it returns the metadata. You can further customize this behavior using the operation’s [`rootRecordDesiredKeys`](ckfetchsharemetadataoperation/rootrecorddesiredkeys-3xrex.md) property to specify which fields to return. This functionality isn’t applicable for a shared record zone because, unlike a shared record hierarchy, it doesn’t have a nominated root record.
 
 The participant properties provide the current user’s acceptance status, permissions, and role. Use these values to determine what functionality to provide to the user. For example, only display editing controls for accepted participants with `readWrite` permissions.
 
@@ -67,19 +67,19 @@ The participant properties provide the current user’s acceptance status, permi
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCoding](../Foundation/NSCoding.md)
-- [NSCopying](../Foundation/NSCopying.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [NSSecureCoding](../Foundation/NSSecureCoding.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCoding](../foundation/nscoding.md)
+- [NSCopying](../foundation/nscopying.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

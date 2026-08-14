@@ -22,9 +22,9 @@ let kSecAttrAuthenticationType: CFString
 
 #### Discussion
 
-The corresponding value is of type [`CFString`](https://developer.apple.com/documentation/CoreFoundation/CFString) and denotes the authentication scheme for this item (see [`Authentication Type Values`](item-attribute-keys-and-values#Authentication-Type-Values.md)).
+The corresponding value is of type [`CFString`](https://developer.apple.com/documentation/corefoundation/cfstring) and denotes the authentication scheme for this item (see [`Authentication Type Values`](item-attribute-keys-and-values#Authentication-Type-Values.md)).
 
-> **Note**:  For compatibility with earlier Keychain APIs, functions in [`Keychain services`](keychain-services.md) accept a [`CFNumber`](https://developer.apple.com/documentation/CoreFoundation/CFNumber) for the authentication scheme. The number is a 32-bit integer that encodes the authentication scheme as a `FourCharCode`. In your code, use a [`CFString`](https://developer.apple.com/documentation/CoreFoundation/CFString) with one of the values from [`Authentication Type Values`](item-attribute-keys-and-values#Authentication-Type-Values.md) instead of a number.
+> **Note**:  For compatibility with earlier Keychain APIs, functions in [`Keychain services`](keychain-services.md) accept a [`CFNumber`](https://developer.apple.com/documentation/corefoundation/cfnumber) for the authentication scheme. The number is a 32-bit integer that encodes the authentication scheme as a `FourCharCode`. In your code, use a [`CFString`](https://developer.apple.com/documentation/corefoundation/cfstring) with one of the values from [`Authentication Type Values`](item-attribute-keys-and-values#Authentication-Type-Values.md) instead of a number.
 
 
 ---

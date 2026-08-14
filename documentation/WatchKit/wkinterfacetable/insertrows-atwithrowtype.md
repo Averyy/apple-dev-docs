@@ -16,7 +16,7 @@ func insertRows(at rows: IndexSet, withRowType rowType: String)
 
 #### Discussion
 
-This method inserts the new row controllers into the existing array of row controllers using the semantics defined by the [`insert(_:at:)`](https://developer.apple.com/documentation/Foundation/NSMutableArray/insert(_:at:)-73pln) method of [`NSMutableArray`](https://developer.apple.com/documentation/Foundation/NSMutableArray).
+This method inserts the new row controllers into the existing array of row controllers using the semantics defined by the [`insert(_:at:)`](https://developer.apple.com/documentation/foundation/nsmutablearray/insert(_:at:)-73pln) method of [`NSMutableArray`](https://developer.apple.com/documentation/foundation/nsmutablearray).
 
 ## Parameters
 

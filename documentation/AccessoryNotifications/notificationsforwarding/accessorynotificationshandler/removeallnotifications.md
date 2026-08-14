@@ -8,7 +8,6 @@ Removes all notifications from the user interface.
 
 **Availability**:
 - iOS 26.5+
-- iPadOS 26.5+
 
 ## Declaration
 

@@ -24,7 +24,7 @@ protocol CustomAppIntentErrorConvertible
 
 Conform your custom type to this protocol when you need full control over the [`AppIntentError`](appintenterror.md) that the system produces — including the error kind and localized description. When you throw a conforming error from a method such as [`perform()`](appintent/perform().md) or [`entities(for:)`](entityquery/entities(for:).md), the framework reads the [`appIntentError`](customappintenterrorconvertible/appintenterror.md) property and uses it directly.
 
-If an error conforms to both [`CustomLocalizedStringResourceConvertible`](https://developer.apple.com/documentation/Foundation/CustomLocalizedStringResourceConvertible) and [`CustomAppIntentErrorConvertible`](customappintenterrorconvertible.md), the system uses only [`CustomAppIntentErrorConvertible`](customappintenterrorconvertible.md).
+If an error conforms to both [`CustomLocalizedStringResourceConvertible`](https://developer.apple.com/documentation/foundation/customlocalizedstringresourceconvertible) and [`CustomAppIntentErrorConvertible`](customappintenterrorconvertible.md), the system uses only [`CustomAppIntentErrorConvertible`](customappintenterrorconvertible.md).
 
 ## Topics
 

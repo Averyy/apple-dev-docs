@@ -21,7 +21,7 @@ The object that represents the Live Activity you started.
 
 #### Discussion
 
-Use this function to request and start a Live Activity from your app while it’s in the foreground. Note that you can’t do this while your app is in the background, unless you adopt [`App Intents`](https://developer.apple.com/documentation/AppIntents) and start the Live Activity using a [`LiveActivityIntent`](https://developer.apple.com/documentation/AppIntents/LiveActivityIntent).
+Use this function to request and start a Live Activity from your app while it’s in the foreground. Note that you can’t do this while your app is in the background, unless you adopt [`App Intents`](https://developer.apple.com/documentation/appintents) and start the Live Activity using a [`LiveActivityIntent`](https://developer.apple.com/documentation/appintents/liveactivityintent).
 
 The system starts the Live Activity at the specified date, even if the app is in the background. Note that you must provide an [`AlertConfiguration`](alertconfiguration.md). This makes sure that the system notifies people when your app starts the Live Activity.
 

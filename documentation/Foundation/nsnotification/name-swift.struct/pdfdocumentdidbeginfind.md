@@ -21,7 +21,7 @@ static let PDFDocumentDidBeginFind: NSNotification.Name
 
 #### Discussion
 
-The document posts this notification when the [`beginFindString(_:withOptions:)`](https://developer.apple.com/documentation/PDFKit/PDFDocument/beginFindString(_:withOptions:)) or [`findString(_:withOptions:)`](https://developer.apple.com/documentation/PDFKit/PDFDocument/findString(_:withOptions:)) method begins finding.
+The document posts this notification when the [`beginFindString(_:withOptions:)`](https://developer.apple.com/documentation/pdfkit/pdfdocument/beginfindstring(_:withoptions:)) or [`findString(_:withOptions:)`](https://developer.apple.com/documentation/pdfkit/pdfdocument/findstring(_:withoptions:)) method begins finding.
 
 The notification object is the `PDFDocument` object itself.
 

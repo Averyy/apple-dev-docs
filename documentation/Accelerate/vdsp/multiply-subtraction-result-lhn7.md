@@ -29,7 +29,7 @@ This function calculates the element-wise difference of vectors `A` and `B`, mul
     D[n] = (A[n] - B[n]) * C;
 ```
 
-![A diagram showing the operation of this function. There are four rows. The top row represents the input vectors, A and B, with three boxes of each. The second row frepresents the operation that subtracts B from A, with three boxes, as well as the input scalar C with one box. The third row represents the multiplication operation as three boxes. The bottom row represents the output vector D as three boxes. The diagram has connecting lines from the input vectors to the operations, and from the operations to the output vector.  ](https://docs-assets.developer.apple.com/published/fc305c66e64754bd03a5d1cf24d30eda/media-4387365%402x.png)
+![A diagram showing the operation of this function. There are four rows. The top row represents the input vectors, A and B, with three boxes of each. The second row frepresents the operation that subtracts B from A, with three boxes, as well as the input scalar C with one box. The third row represents the multiplication operation as three boxes. The bottom row represents the output vector D as three boxes. The diagram has connecting lines from the input vectors to the operations, and from the operations to the output vector.  ](/images/com.apple.accelerate/media-4387365@2x.png)
 
 The following code shows an example of using this function:
 

@@ -82,9 +82,9 @@ struct LocationEntity: TransientAppEntity, Transferable {
 ## Relationships
 
 ### Conforms To
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
-- [TransferRepresentation](../CoreTransferable/TransferRepresentation.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
+- [TransferRepresentation](../coretransferable/transferrepresentation.md)
 
 
 ---

@@ -16,7 +16,7 @@ To build an order package, you:
 - Create and write the manifest.
 - Sign and compress the order package.
 
-Donate the distributable order package to Wallet by setting the [`orderDetails`](https://developer.apple.com/documentation/PassKit/PKPaymentAuthorizationResult/orderDetails) property on [`PKPaymentAuthorizationResult`](https://developer.apple.com/documentation/PassKit/PKPaymentAuthorizationResult).
+Donate the distributable order package to Wallet by setting the [`orderDetails`](https://developer.apple.com/documentation/passkit/pkpaymentauthorizationresult/orderdetails) property on [`PKPaymentAuthorizationResult`](https://developer.apple.com/documentation/passkit/pkpaymentauthorizationresult).
 
 ##### Create an Order Type Identifier
 
@@ -95,7 +95,7 @@ If your order package doesn’t build correctly, check whether the following are
 - Strings that require value formats are correct, such as the `createdAt` and `updatedAt` keys of [`Order`](order.md), which require an RFC 3339 format, or `pickupWindowDuration,` which requires an ISO 8601-1 duration format.
 - `updatedAt` is equal to `createdAt` if there are no updates, and `updatedAt` is monotonically increasing.
 - Strings that require values from a finite set are correct, such as `Order.status` and `Order.ShippingFulfillment.status`.
-- The names of localization folders use the correct language and region identifiers. For more information about language identifiers, see [`Choosing localization regions and scripts`](https://developer.apple.com/documentation/Xcode/choosing-localization-regions-and-scripts).
+- The names of localization folders use the correct language and region identifiers. For more information about language identifiers, see [`Choosing localization regions and scripts`](https://developer.apple.com/documentation/xcode/choosing-localization-regions-and-scripts).
 - Each localization folder contains all localized image files.
 - Each localization folder contains the `order.strings` file for the order with localized strings.
 - The keys for localized strings in the `order.json` file match those in the `order.strings` files.

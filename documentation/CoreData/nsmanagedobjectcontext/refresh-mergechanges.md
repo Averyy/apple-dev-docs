@@ -22,16 +22,16 @@ func refresh(_ object: NSManagedObject, mergeChanges flag: Bool)
 
 #### Discussion
 
-If you call this method before the [`stalenessInterval`](nsmanagedobjectcontext/stalenessinterval.md) expires, the context reloads the data from the cache instead of fetching from the store. If `flag` is [`true`](https://developer.apple.com/documentation/Swift/true), this method doesn’t affect any transient properties. If `flag` is [`false`](https://developer.apple.com/documentation/Swift/false), the object disposes the value of transient properties.
+If you call this method before the [`stalenessInterval`](nsmanagedobjectcontext/stalenessinterval.md) expires, the context reloads the data from the cache instead of fetching from the store. If `flag` is [`true`](https://developer.apple.com/documentation/swift/true), this method doesn’t affect any transient properties. If `flag` is [`false`](https://developer.apple.com/documentation/swift/false), the object disposes the value of transient properties.
 
 You typically use this method to ensure data freshness if multiple managed object contexts share a single persistent store. You can use this method to resolve an optimistic locking failure when attempting to save.
 
-Turning `object` into a fault by setting `flag` to [`false`](https://developer.apple.com/documentation/Swift/false) breaks strong references to related managed objects. You can use this method to release a portion of your object graph if you want to constrain memory usage.
+Turning `object` into a fault by setting `flag` to [`false`](https://developer.apple.com/documentation/swift/false) breaks strong references to related managed objects. You can use this method to release a portion of your object graph if you want to constrain memory usage.
 
 ## Parameters
 
 - `object`: A managed object.
-- `flag`: A Boolean value. If `flag` is [`false`](https://developer.apple.com/documentation/Swift/false), the context discards pending changes and the managed object becomes a fault. Upon next access, the context reloads the object’s values from the persistent store or last cached state. If `flag` is [`true`](https://developer.apple.com/documentation/Swift/true), the context reloads the object’s property values from the store or the cache. Then the context applies local changes over the newly loaded values. Merging the local values into `object` always succeeds, and never results in a merge conflict.
+- `flag`: A Boolean value. If `flag` is [`false`](https://developer.apple.com/documentation/swift/false), the context discards pending changes and the managed object becomes a fault. Upon next access, the context reloads the object’s values from the persistent store or last cached state. If `flag` is [`true`](https://developer.apple.com/documentation/swift/true), the context reloads the object’s property values from the store or the cache. Then the context applies local changes over the newly loaded values. Merging the local values into `object` always succeeds, and never results in a merge conflict.
 
 ## See Also
 

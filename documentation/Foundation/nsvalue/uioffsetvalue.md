@@ -25,7 +25,7 @@ The UIKit offset structure representation of the value.
 
 ## See Also
 
-- [struct UIOffset](../UIKit/UIOffset.md)
+- [struct UIOffset](../uikit/uioffset.md)
   A structure that specifies an amount to offset a position.
 - [init(UIEdgeInsets: UIEdgeInsets)](nsvalue/init(uiedgeinsets:).md)
   Creates a new value object containing the specified UIKit edge insets structure.

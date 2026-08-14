@@ -32,7 +32,7 @@ An allocator returns instances of [`MTLIOScratchBuffer`](mtlioscratchbuffer.md),
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

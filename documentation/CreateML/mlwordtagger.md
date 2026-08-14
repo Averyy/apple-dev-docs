@@ -22,7 +22,7 @@ struct MLWordTagger
 
 Use an [`MLWordTagger`](mlwordtagger.md) to create a custom word tagger to identify content that’s relevant for your app, like product names and points of interest.
 
-To use your custom word tagger in the [`Natural Language`](https://developer.apple.com/documentation/NaturalLanguage) framework, save it to a model file and import it into an [`NLModel`](https://developer.apple.com/documentation/NaturalLanguage/NLModel). Then add your custom [`NLModel`](https://developer.apple.com/documentation/NaturalLanguage/NLModel) to an [`NLTagger`](https://developer.apple.com/documentation/NaturalLanguage/NLTagger) with its [`setModels(_:forTagScheme:)`](https://developer.apple.com/documentation/NaturalLanguage/NLTagger/setModels(_:forTagScheme:)) method.
+To use your custom word tagger in the [`Natural Language`](https://developer.apple.com/documentation/naturallanguage) framework, save it to a model file and import it into an [`NLModel`](https://developer.apple.com/documentation/naturallanguage/nlmodel). Then add your custom [`NLModel`](https://developer.apple.com/documentation/naturallanguage/nlmodel) to an [`NLTagger`](https://developer.apple.com/documentation/naturallanguage/nltagger) with its [`setModels(_:forTagScheme:)`](https://developer.apple.com/documentation/naturallanguage/nltagger/setmodels(_:fortagscheme:)) method.
 
 ## Topics
 
@@ -82,13 +82,13 @@ To use your custom word tagger in the [`Natural Language`](https://developer.app
 ## Relationships
 
 ### Conforms To
-- [Copyable](../Swift/Copyable.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomPlaygroundDisplayConvertible](../Swift/CustomPlaygroundDisplayConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Escapable](../Swift/Escapable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Copyable](../swift/copyable.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomPlaygroundDisplayConvertible](../swift/customplaygrounddisplayconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Escapable](../swift/escapable.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

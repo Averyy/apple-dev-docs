@@ -21,11 +21,11 @@ func setFormat(_ format: AVAudioFormat) throws
 
 #### Discussion
 
-- [`false`](https://developer.apple.com/documentation/Swift/false) if the operation failed.
+- [`false`](https://developer.apple.com/documentation/swift/false) if the operation failed.
 
 #### Discussion
 
-Audio units can generally be expected to support the [`AVAudioFormat`](https://developer.apple.com/documentation/AVFAudio/AVAudioFormat) standard format (deinterleaved 32-bit float), at any sample rate.
+Audio units can generally be expected to support the [`AVAudioFormat`](https://developer.apple.com/documentation/avfaudio/avaudioformat) standard format (deinterleaved 32-bit float), at any sample rate.
 
 Channel counts can be more complex. See the [`channelCapabilities`](auaudiounit/channelcapabilities.md) reference for a more complete discussion.
 

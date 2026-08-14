@@ -6,7 +6,7 @@ Recognize the keys of the user info dictionary provided by functions that return
 
 #### Overview
 
-Code Signing Services functions that return an error on failure may provide additional information by populating the error’s user info dictionary with any of these keys. Use the [`CFErrorCopyUserInfo(_:)`](https://developer.apple.com/documentation/CoreFoundation/CFErrorCopyUserInfo(_:)) function to retrieve the user info dictionary from the error object.
+Code Signing Services functions that return an error on failure may provide additional information by populating the error’s user info dictionary with any of these keys. Use the [`CFErrorCopyUserInfo(_:)`](https://developer.apple.com/documentation/corefoundation/cferrorcopyuserinfo(_:)) function to retrieve the user info dictionary from the error object.
 
 These keys are always supplemental and optional. Don’t rely on their presence or absence to categorize an error. Use the primary `OSStatus` return codes listed in [`Code Signing Services Result Codes`](code-signing-services-result-codes.md) for that.
 

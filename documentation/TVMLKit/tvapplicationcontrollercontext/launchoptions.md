@@ -16,7 +16,7 @@ var launchOptions: [String : Any] { get set }
 
 #### Discussion
 
-The system will pass this data to the JavaScript [`onLaunch`](https://developer.apple.com/documentation/tvmljs/app/1627407-onlaunch) method. The values contained in this property must be serializable. You must include [`url`](https://developer.apple.com/documentation/UIKit/UIApplication/LaunchOptionsKey/url) and [`sourceApplication`](https://developer.apple.com/documentation/UIKit/UIApplication/LaunchOptionsKey/sourceApplication) in the launch options if the JavaScript implements the [`openURL(_:)`](https://developer.apple.com/documentation/UIKit/UIApplication/openURL(_:)) method.
+The system will pass this data to the JavaScript [`onLaunch`](https://developer.apple.com/documentation/tvmljs/app/1627407-onlaunch) method. The values contained in this property must be serializable. You must include [`url`](https://developer.apple.com/documentation/uikit/uiapplication/launchoptionskey/url) and [`sourceApplication`](https://developer.apple.com/documentation/uikit/uiapplication/launchoptionskey/sourceapplication) in the launch options if the JavaScript implements the [`openURL(_:)`](https://developer.apple.com/documentation/uikit/uiapplication/openurl(_:)) method.
 
 ## See Also
 

@@ -29,7 +29,7 @@ To use location services, call [`liveUpdates(_:)`](cllocationupdate/liveupdates(
 
 If needed, the system prompts the user to grant or deny the request. An initial prompt is shown in the example below:
 
-![A screenshot of an iPhone showing a prompt asking the user if they allow the “Park Finder” app to have access to their location. The options are “OK” and “Not now”.](https://docs-assets.developer.apple.com/published/71e6a0fc9cb93b0e6926165d35fc2b16/core-location-overview%402x.png)
+![A screenshot of an iPhone showing a prompt asking the user if they allow the “Park Finder” app to have access to their location. The options are “OK” and “Not now”.](/images/com.apple.corelocation/core-location-overview@2x.png)
 
 On iOS devices, users can change location service settings at any time in the Settings app, affecting individual apps or the device as a whole. Your app receives events, including authorization changes, by observing asynchronous sequences from [`CLLocationUpdate`](cllocationupdate.md) and [`CLMonitor`](clmonitor-6ynwz.md).
 
@@ -59,15 +59,15 @@ On iOS devices, users can change location service settings at any time in the Se
   Constants that indicate the app’s authorization to use location services.
 - [enum CLAccuracyAuthorization](claccuracyauthorization.md)
   Constants that indicate the level of location accuracy the app has authorization to use.
-- [NSLocationAlwaysAndWhenInUseUsageDescription](../BundleResources/Information-Property-List/NSLocationAlwaysAndWhenInUseUsageDescription.md)
+- [NSLocationAlwaysAndWhenInUseUsageDescription](../bundleresources/information-property-list/nslocationalwaysandwheninuseusagedescription.md)
   A message that tells people why the app is requesting access to their location information at all times.
-- [NSLocationWhenInUseUsageDescription](../BundleResources/Information-Property-List/NSLocationWhenInUseUsageDescription.md)
+- [NSLocationWhenInUseUsageDescription](../bundleresources/information-property-list/nslocationwheninuseusagedescription.md)
   A message that tells people why the app is requesting access to their location information while the app is running in the foreground.
-- [NSLocationUsageDescription](../BundleResources/Information-Property-List/NSLocationUsageDescription.md)
+- [NSLocationUsageDescription](../bundleresources/information-property-list/nslocationusagedescription.md)
   A message that tells people why the app is requesting access to their location information.
-- [NSLocationDefaultAccuracyReduced](../BundleResources/Information-Property-List/NSLocationDefaultAccuracyReduced.md)
+- [NSLocationDefaultAccuracyReduced](../bundleresources/information-property-list/nslocationdefaultaccuracyreduced.md)
   A Boolean value that indicates whether the app requests reduced location accuracy by default.
-- [NSLocationAlwaysUsageDescription](../BundleResources/Information-Property-List/NSLocationAlwaysUsageDescription.md)
+- [NSLocationAlwaysUsageDescription](../bundleresources/information-property-list/nslocationalwaysusagedescription.md)
   A message that tells people why the app is requesting access to their location at all times.
 ### Monitoring
 - [actor CLMonitor](clmonitor-2r51v.md)
@@ -124,7 +124,7 @@ On iOS devices, users can change location service settings at any time in the Se
 - [class CLPlacemark](clplacemark.md)
   A user-friendly description of a geographic coordinate, often containing the name of the place, its address, and other relevant information.
 ### Location push service extension
-- [Location Push Service Extension](../BundleResources/Entitlements/com.apple.developer.location.push.md)
+- [Location Push Service Extension](../bundleresources/entitlements/com.apple.developer.location.push.md)
   An entitlement to enable a location-sharing app to query someone’s location in response to a push notification.
 - [protocol CLLocationPushServiceExtension](cllocationpushserviceextension.md)
   The interface you adopt in the type that acts as the main entry point for a Location Push Service Extension.

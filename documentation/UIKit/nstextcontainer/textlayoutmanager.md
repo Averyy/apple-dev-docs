@@ -28,7 +28,7 @@ When non-nil, the legacy `layoutManager` should be `nil`.
   The text container’s layout manager.
 - [func replaceLayoutManager(NSLayoutManager)](nstextcontainer/replacelayoutmanager(_:).md)
   Replaces the layout manager for the group of text system objects that contains the text container.
-- [var textView: NSTextView?](../AppKit/NSTextContainer/textView.md)
+- [var textView: NSTextView?](../appkit/nstextcontainer/textview.md)
   The text container’s text view.
 
 

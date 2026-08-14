@@ -22,7 +22,7 @@ func CMSampleBufferCopyPCMDataIntoAudioBufferList(_ sbuf: CMSampleBuffer, at fra
 
 #### Discussion
 
-The [`AudioBufferList`](https://developer.apple.com/documentation/CoreAudioTypes/AudioBufferList) must contain the same number of channels and its data buffers must be sized to hold the specified number of frames.
+The [`AudioBufferList`](https://developer.apple.com/documentation/coreaudiotypes/audiobufferlist) must contain the same number of channels and its data buffers must be sized to hold the specified number of frames.
 
 This API is specific to audio format sample buffers, and will return `kCMSampleBufferError_InvalidMediaTypeForOperation` if called with a non-audio sample buffer. It will return an error if the sample buffer doesn’t contain PCM audio data or if its data buffer isn’t ready.
 

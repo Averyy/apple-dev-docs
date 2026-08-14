@@ -12,7 +12,7 @@ For apps running on systems prior to macOS Ventura 13, the legacy behavior remai
 
 #### Ekcalendar
 
-The inherited initializer `init()` throws an exception when attempting to create a new calendar. Use [`init(for:eventStore:)`](https://developer.apple.com/documentation/EventKit/EKCalendar/init(for:eventStore:)) instead.
+The inherited initializer `init()` throws an exception when attempting to create a new calendar. Use [`init(for:eventStore:)`](https://developer.apple.com/documentation/eventkit/ekcalendar/init(for:eventstore:)) instead.
 
 ```swift
 let calendar = EKCalendar(for: .event, eventStore: eventStore)
@@ -24,7 +24,7 @@ In the legacy behavior, this inherited initializer returns an unusable `EKCalend
 
 ##### Fetching Recurrence Rules
 
-The [`recurrenceRules`](https://developer.apple.com/documentation/EventKit/EKCalendarItem/recurrenceRules) property returns an empty array if the calendar item doesn’t have any recurrence rules.
+The [`recurrenceRules`](https://developer.apple.com/documentation/eventkit/ekcalendaritem/recurrencerules) property returns an empty array if the calendar item doesn’t have any recurrence rules.
 
 In the legacy behavior, `recurrenceRules` returns `nil` if the calendar item doesn’t have any recurrence rules.
 
@@ -36,17 +36,17 @@ Changing the time zone of an event no longer changes the absolute time at which 
 
 ##### Creating Events
 
-The inherited initializer `init()` throws an exception when attempting to create a new event. Use [`init(eventStore:)`](https://developer.apple.com/documentation/EventKit/EKEvent/init(eventStore:)) to create new events.
+The inherited initializer `init()` throws an exception when attempting to create a new event. Use [`init(eventStore:)`](https://developer.apple.com/documentation/eventkit/ekevent/init(eventstore:)) to create new events.
 
 In the legacy behavior, this inherited initializer returns an unusable `EKEvent` object.
 
 ##### Event Identifiers
 
-The [`eventIdentifier`](https://developer.apple.com/documentation/EventKit/EKEvent/eventIdentifier) property now returns identifiers in a new format. The previous identifier format will continue to work.
+The [`eventIdentifier`](https://developer.apple.com/documentation/eventkit/ekevent/eventidentifier) property now returns identifiers in a new format. The previous identifier format will continue to work.
 
 ##### End Date of All Day Events
 
-The [`endDate`](https://developer.apple.com/documentation/EventKit/EKEvent/endDate) property of all-day events returns a time of `11:59:59 PM` on the last day of this event.
+The [`endDate`](https://developer.apple.com/documentation/eventkit/ekevent/enddate) property of all-day events returns a time of `11:59:59 PM` on the last day of this event.
 
 ```json
 Event title: Marathon  
@@ -66,7 +66,7 @@ End date: June 19, 2022 at 12:00:00 AM PDT
 
 ##### Accessing Sources
 
-The [`sources`](https://developer.apple.com/documentation/EventKit/EKEventStore/sources) property now contains delegate sources.
+The [`sources`](https://developer.apple.com/documentation/eventkit/ekeventstore/sources) property now contains delegate sources.
 
 ```swift
 // Fetch all sources associated with the event store.
@@ -83,21 +83,21 @@ sources.forEach { source in
 
 ##### Fetching Events
 
-[`events(matching:)`](https://developer.apple.com/documentation/EventKit/EKEventStore/events(matching:)) and [`enumerateEvents(matching:using:)`](https://developer.apple.com/documentation/EventKit/EKEventStore/enumerateEvents(matching:using:)) no longer necessarily return events sorted by start date.
+[`events(matching:)`](https://developer.apple.com/documentation/eventkit/ekeventstore/events(matching:)) and [`enumerateEvents(matching:using:)`](https://developer.apple.com/documentation/eventkit/ekeventstore/enumerateevents(matching:using:)) no longer necessarily return events sorted by start date.
 
 ##### Accessing Calendar Events
 
-The [`calendarItem(withIdentifier:)`](https://developer.apple.com/documentation/EventKit/EKEventStore/calendarItem(withIdentifier:)), [`calendarItems(withExternalIdentifier:)`](https://developer.apple.com/documentation/EventKit/EKEventStore/calendarItems(withExternalIdentifier:)), and [`event(withIdentifier:)`](https://developer.apple.com/documentation/EventKit/EKEventStore/event(withIdentifier:)) methods may return different occurrences of an event or reminder with a given identifier in some cases. For instance, when the first occurrence of a recurring event was modified and the specified identifier refers to this occurrence. In this case, use the given identifier to fetch the unmodified version of the event’s first occurrence.
+The [`calendarItem(withIdentifier:)`](https://developer.apple.com/documentation/eventkit/ekeventstore/calendaritem(withidentifier:)), [`calendarItems(withExternalIdentifier:)`](https://developer.apple.com/documentation/eventkit/ekeventstore/calendaritems(withexternalidentifier:)), and [`event(withIdentifier:)`](https://developer.apple.com/documentation/eventkit/ekeventstore/event(withidentifier:)) methods may return different occurrences of an event or reminder with a given identifier in some cases. For instance, when the first occurrence of a recurring event was modified and the specified identifier refers to this occurrence. In this case, use the given identifier to fetch the unmodified version of the event’s first occurrence.
 
 ##### Committing Changes
 
-When you call [`saveCalendar(_:commit:)`](https://developer.apple.com/documentation/EventKit/EKEventStore/saveCalendar(_:commit:)), [`removeCalendar(_:commit:)`](https://developer.apple.com/documentation/EventKit/EKEventStore/removeCalendar(_:commit:)), [`save(_:span:commit:)`](https://developer.apple.com/documentation/EventKit/EKEventStore/save(_:span:commit:)), [`remove(_:span:commit:)`](https://developer.apple.com/documentation/EventKit/EKEventStore/remove(_:span:commit:)), [`save(_:commit:)`](https://developer.apple.com/documentation/EventKit/EKEventStore/save(_:commit:)), or [`remove(_:commit:)`](https://developer.apple.com/documentation/EventKit/EKEventStore/remove(_:commit:)) methods with the `commit` parameter set to `true`, [`EKEventStore`](https://developer.apple.com/documentation/EventKit/EKEventStore) attempts to immediately save and commit your changes to the event store. If the commit fails, `EKEventStore` automatically rolls back all changes that been saved but aren’t yet committed to the event store.
+When you call [`saveCalendar(_:commit:)`](https://developer.apple.com/documentation/eventkit/ekeventstore/savecalendar(_:commit:)), [`removeCalendar(_:commit:)`](https://developer.apple.com/documentation/eventkit/ekeventstore/removecalendar(_:commit:)), [`save(_:span:commit:)`](https://developer.apple.com/documentation/eventkit/ekeventstore/save(_:span:commit:)), [`remove(_:span:commit:)`](https://developer.apple.com/documentation/eventkit/ekeventstore/remove(_:span:commit:)), [`save(_:commit:)`](https://developer.apple.com/documentation/eventkit/ekeventstore/save(_:commit:)), or [`remove(_:commit:)`](https://developer.apple.com/documentation/eventkit/ekeventstore/remove(_:commit:)) methods with the `commit` parameter set to `true`, [`EKEventStore`](https://developer.apple.com/documentation/eventkit/ekeventstore) attempts to immediately save and commit your changes to the event store. If the commit fails, `EKEventStore` automatically rolls back all changes that been saved but aren’t yet committed to the event store.
 
 In the legacy behavior, uncommitted objects remain saved in the event store.
 
 #### Ekreminder
 
-The inherited initializer `init()` throws an exception when attempting to create a new reminder. Use [`init(eventStore:)`](https://developer.apple.com/documentation/EventKit/EKReminder/init(eventStore:)) instead.
+The inherited initializer `init()` throws an exception when attempting to create a new reminder. Use [`init(eventStore:)`](https://developer.apple.com/documentation/eventkit/ekreminder/init(eventstore:)) instead.
 
 ```swift
 let reminder = EKReminder(eventStore: eventStore)
@@ -107,7 +107,7 @@ In the legacy behavior, this inherited initializer returns an unusable `EKRemind
 
 #### Eksource
 
-The [`isDelegate`](https://developer.apple.com/documentation/EventKit/EKSource/isDelegate) property indicates whether the source is an event source delegated to the user.
+The [`isDelegate`](https://developer.apple.com/documentation/eventkit/eksource/isdelegate) property indicates whether the source is an event source delegated to the user.
 
 #### Revision History
 

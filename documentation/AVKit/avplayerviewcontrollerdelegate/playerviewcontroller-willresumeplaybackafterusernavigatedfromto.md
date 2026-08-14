@@ -16,7 +16,7 @@ optional func playerViewController(_ playerViewController: AVPlayerViewControlle
 
 #### Discussion
 
-Unlike the [`timeJumpedNotification`](https://developer.apple.com/documentation/AVFoundation/AVPlayerItem/timeJumpedNotification) notification, this method fires only for complete, user-initiated navigation events. For example, if the user begins scrubbing through the media timeline and pauses several times before resuming playback, the player view controller calls this method only once.
+Unlike the [`timeJumpedNotification`](https://developer.apple.com/documentation/avfoundation/avplayeritem/timejumpednotification) notification, this method fires only for complete, user-initiated navigation events. For example, if the user begins scrubbing through the media timeline and pauses several times before resuming playback, the player view controller calls this method only once.
 
 You can use this method to present interstitial content before resuming playback, however, it’s recommended to use [`playerViewController(_:timeToSeekAfterUserNavigatedFrom:to:)`](avplayerviewcontrollerdelegate/playerviewcontroller(_:timetoseekafterusernavigatedfrom:to:).md) for this purpose.
 

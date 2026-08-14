@@ -60,7 +60,7 @@ MLModel.load(contentsOf: modelURL) { result in
 }];
 ```
 
-In Swift, if the model loaded successfully, you can use the instance from the [`Result.success(_:)`](https://developer.apple.com/documentation/Swift/Result/success(_:)) associated value; otherwise, use the [`Result.failure(_:)`](https://developer.apple.com/documentation/Swift/Result/failure(_:)) associated value to address the error. In Objective-C, you can use the [`MLModel`](mlmodel.md) instance in your completion hander; otherwise, use the [`NSError`](https://developer.apple.com/documentation/Foundation/NSError) instance to address the error.  See [`MLModelError.Code`](mlmodelerror-swift.struct/code.md) for the list of error codes.
+In Swift, if the model loaded successfully, you can use the instance from the [`Result.success(_:)`](https://developer.apple.com/documentation/swift/result/success(_:)) associated value; otherwise, use the [`Result.failure(_:)`](https://developer.apple.com/documentation/swift/result/failure(_:)) associated value to address the error. In Objective-C, you can use the [`MLModel`](mlmodel.md) instance in your completion hander; otherwise, use the [`NSError`](https://developer.apple.com/documentation/foundation/nserror) instance to address the error.  See [`MLModelError.Code`](mlmodelerror-swift.struct/code.md) for the list of error codes.
 
 ## Parameters
 

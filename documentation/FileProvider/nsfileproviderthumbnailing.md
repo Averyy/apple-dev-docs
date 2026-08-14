@@ -31,7 +31,7 @@ Adopt this protocol if your File Provider extension supports downloading thumbna
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

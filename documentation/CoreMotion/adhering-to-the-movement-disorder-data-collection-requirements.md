@@ -8,7 +8,7 @@ Ensure that your users understand and have control over the data your app collec
 
 When using the movement disorder APIs, it’s critical that your app provides a transparent data collection experience. Your app must display an introductory screen that describes its data use policy. Additionally, some data types require specific disclosures.
 
-> ❗ **Important**:  Apps that offer movement disorders monitoring must adhere to the [`Movement Disorder API Addendum`](https://developer.apple.comhttps://developer.apple.com/contact/request/movement-disorder-api-entitlement/). Note that only Apple Developer Program account holders can access the addendum. In addition, all health-related apps must follow best practices for handling the user’s health data, as defined by the HealthKit guidelines (see [`Protecting user privacy`](https://developer.apple.com/documentation/HealthKit/protecting-user-privacy)).
+> ❗ **Important**:  Apps that offer movement disorders monitoring must adhere to the [`Movement Disorder API Addendum`](https://developer.apple.comhttps://developer.apple.com/contact/request/movement-disorder-api-entitlement/). Note that only Apple Developer Program account holders can access the addendum. In addition, all health-related apps must follow best practices for handling the user’s health data, as defined by the HealthKit guidelines (see [`Protecting user privacy`](https://developer.apple.com/documentation/healthkit/protecting-user-privacy)).
 
 ##### Explain Your Apps Data Use Policy
 

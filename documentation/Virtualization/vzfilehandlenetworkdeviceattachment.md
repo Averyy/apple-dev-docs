@@ -21,12 +21,12 @@ A [`VZFileHandleNetworkDeviceAttachment`](vzfilehandlenetworkdeviceattachment.md
 To configure a network device with a socket-based file handle:
 
 1. Create a socket with the `SOCK_DGRAM` type in your app.
-2. Create a [`FileHandle`](https://developer.apple.com/documentation/Foundation/FileHandle) from the socket’s file descriptor.
+2. Create a [`FileHandle`](https://developer.apple.com/documentation/foundation/filehandle) from the socket’s file descriptor.
 3. Create the [`VZFileHandleNetworkDeviceAttachment`](vzfilehandlenetworkdeviceattachment.md) object using the file handle.
 4. Assign the attachment object to the [`attachment`](vznetworkdeviceconfiguration/attachment.md) property of a [`VZVirtioNetworkDeviceConfiguration`](vzvirtionetworkdeviceconfiguration.md) object.
 5. Add the [`VZVirtioNetworkDeviceConfiguration`](vzvirtionetworkdeviceconfiguration.md) object to the [`networkDevices`](vzvirtualmachineconfiguration/networkdevices.md) property of your [`VZVirtualMachineConfiguration`](vzvirtualmachineconfiguration.md).
 
-This attachment doesn’t require your app to have the [`com.apple.vm.networking`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.vm.networking) entitlement.
+This attachment doesn’t require your app to have the [`com.apple.vm.networking`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.vm.networking) entitlement.
 
 ## Topics
 
@@ -45,12 +45,12 @@ This attachment doesn’t require your app to have the [`com.apple.vm.networking
 ### Inherits From
 - [VZNetworkDeviceAttachment](vznetworkdeviceattachment.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

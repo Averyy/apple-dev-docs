@@ -35,7 +35,7 @@ HStack{
 .font(.system(.largeTitle))
 ```
 
-![Three instances of the bar chart symbol, arranged horizontally.](https://docs-assets.developer.apple.com/published/b60576218ca849986d68d3e314163f02/Image-3%402x.png)
+![Three instances of the bar chart symbol, arranged horizontally.](/images/com.apple.SwiftUI/Image-3@2x.png)
 
 To create a custom symbol image from your app’s asset catalog, use [`init(_:variableValue:bundle:)`](image/init(_:variablevalue:bundle:).md) instead.
 

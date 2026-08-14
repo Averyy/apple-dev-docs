@@ -37,7 +37,7 @@ struct AnisotropyAngle
 ## Relationships
 
 ### Conforms To
-- [ExpressibleByFloatLiteral](../Swift/ExpressibleByFloatLiteral.md)
+- [ExpressibleByFloatLiteral](../swift/expressiblebyfloatliteral.md)
 
 ## See Also
 
@@ -45,7 +45,7 @@ struct AnisotropyAngle
   Enhance the appearance of objects in a RealityKit scene with Physically Based Rendering (PBR).
 - [Rendering high-fidelity characters](rendering-high-fidelity-characters.md)
   Configure material and lighting properties to avoid flat, dull skin and static hair on your characters.
-- [Generating procedural textures](../visionOS/generating-procedural-textures-in-visionos.md)
+- [Generating procedural textures](../visionos/generating-procedural-textures-in-visionos.md)
   Display a 3D model that generates procedural textures in a reality view.
 - [struct PhysicallyBasedMaterial](physicallybasedmaterial.md)
   A material that simulates the appearance of real-world objects.

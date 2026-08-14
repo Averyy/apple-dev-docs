@@ -39,7 +39,7 @@ You can further enhance the adopting element by implementing any of the informat
 ### Inherits From
 - [NSAccessibilityElementProtocol](nsaccessibilityelementprotocol.md)
 - [NSAccessibilityStaticText](nsaccessibilitystatictext.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 ### Conforming Types
 - [NSComboBox](nscombobox.md)
 - [NSSearchField](nssearchfield.md)

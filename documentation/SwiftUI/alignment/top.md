@@ -24,7 +24,7 @@ static let top: Alignment
 
 This alignment combines the [`center`](horizontalalignment/center.md) horizontal guide and the [`top`](verticalalignment/top.md) vertical guide:
 
-![A square that’s divided into four equal quadrants. The upper-](https://docs-assets.developer.apple.com/published/c829507afa9fdb9209b0e77fb077a631/Alignment-top-1-iOS%402x.png)
+![A square that’s divided into four equal quadrants. The upper-](/images/com.apple.SwiftUI/Alignment-top-1-iOS@2x.png)
 
 ## See Also
 

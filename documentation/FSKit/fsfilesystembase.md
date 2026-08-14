@@ -29,7 +29,7 @@ Both [`FSFileSystem`](fsfilesystem.md) and [`FSUnaryFileSystem`](fsunaryfilesyst
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 ### Conforming Types
 - [FSUnaryFileSystem](fsunaryfilesystem.md)
 

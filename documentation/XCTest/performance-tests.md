@@ -7,7 +7,7 @@ Gather metrics while running your code, and report a failure if the metrics beco
 ## Topics
 
 ### Measuring Performance
-- [Writing and running performance tests](../Xcode/writing-and-running-performance-tests.md)
+- [Writing and running performance tests](../xcode/writing-and-running-performance-tests.md)
   Repeatably gather metrics on the performance of your code.
 ### Measurement Options
 - [class XCTMeasureOptions](xctmeasureoptions.md)

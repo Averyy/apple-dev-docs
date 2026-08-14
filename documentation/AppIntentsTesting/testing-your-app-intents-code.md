@@ -6,7 +6,7 @@ Evaluate intents, entities, and queries, and verify your integration with system
 
 #### Overview
 
-The [`App Intents`](https://developer.apple.com/documentation/AppIntents) framework connects your app to system features like Siri, Spotlight, and Shortcuts. When your App Intents code regresses, those integrations often break silently — people may get wrong results, custom shortcuts fail, or Spotlight search doesn’t find content without any obvious error. The App Intents Testing framework enables you to test your App Intents code, and prevent and catch regressions before they ship.
+The [`App Intents`](https://developer.apple.com/documentation/appintents) framework connects your app to system features like Siri, Spotlight, and Shortcuts. When your App Intents code regresses, those integrations often break silently — people may get wrong results, custom shortcuts fail, or Spotlight search doesn’t find content without any obvious error. The App Intents Testing framework enables you to test your App Intents code, and prevent and catch regressions before they ship.
 
 Writing tests with App Intents Testing works differently from typical unit testing: you create an [`IntentDefinitions`](intentdefinitions.md) instance with your app’s bundle identifier, then use it to look up definitions by their string name — [`AppIntentDefinition`](appintentdefinition.md) for intents, [`AppEntityDefinition`](appentitydefinition.md) for entities, [`AppEnumDefinition`](appenumdefinition.md) for enumerations. Because every type is accessed by name rather than imported directly, your tests run in a UI Testing target that communicates with your app out-of-process through the real App Intents infrastructure. As a result, tests use the same code path that Siri and Shortcuts use, and they run fast enough that you can include them in frequent continuous-integration workflows.
 
@@ -47,7 +47,7 @@ The [`run()`](anyappintent/run().md) method sends the intent to your running app
 
 #### Test Entities and Enumerations
 
-[`App entities`](https://developer.apple.com/documentation/AppIntents/app-entities) represent your app’s content and contain information about its data, or concepts related to its data. Think of them like the “nouns” of your app. The system queries your app for entities that match an intent’s parameter, a person’s search in Spotlight, or to understand visible onscreen content. Testing your entities and entity queries confirms that system features like Siri and Spotlight can find the right entities when people ask for them.
+[`App entities`](https://developer.apple.com/documentation/appintents/app-entities) represent your app’s content and contain information about its data, or concepts related to its data. Think of them like the “nouns” of your app. The system queries your app for entities that match an intent’s parameter, a person’s search in Spotlight, or to understand visible onscreen content. Testing your entities and entity queries confirms that system features like Siri and Spotlight can find the right entities when people ask for them.
 
 Use [`entities(matching:)`](appentitydefinition/entities(matching:).md) on an [`AppEntityDefinition`](appentitydefinition.md) to search entities by string, the same way the system resolves a spoken name. Each result is an [`AnyAppEntity`](anyappentity.md) instance that supports `@dynamicMemberLookup`, so you can read entity properties directly by name as shown in the following example:
 
@@ -127,7 +127,7 @@ This test verifies the entire workflow end-to-end. If the entity identifier form
 
 #### Use Testing Only Intents for Setup and Teardown
 
-Some tests need the app to be in a specific state before they run — a particular calendar needs to exist, or the database needs to be empty. Rather than relying on UI automation to navigate your app and set up state, create intents specifically for testing that perform app navigation or other setup tasks. Mark these intents with [`isDiscoverable`](https://developer.apple.com/documentation/AppIntents/AppIntent/isDiscoverable) set to `false`, so they don’t appear in Shortcuts or Siri, and wrap them in an `#if DEBUG` block so they’re excluded from release builds:
+Some tests need the app to be in a specific state before they run — a particular calendar needs to exist, or the database needs to be empty. Rather than relying on UI automation to navigate your app and set up state, create intents specifically for testing that perform app navigation or other setup tasks. Mark these intents with [`isDiscoverable`](https://developer.apple.com/documentation/appintents/appintent/isdiscoverable) set to `false`, so they don’t appear in Shortcuts or Siri, and wrap them in an `#if DEBUG` block so they’re excluded from release builds:
 
 ```swift
 #if DEBUG
@@ -159,7 +159,7 @@ This pattern keeps your tests deterministic without coupling them to navigation 
 
 #### Test Transferable Conformance
 
-Making your app entities conform to the [`Transferable`](https://developer.apple.com/documentation/CoreTransferable/Transferable) protocol is a key requirement for your app to support Apple Intelligence and Siri. If an entity doesn’t serialize and transfer to other apps correctly, features like drag and drop, copy and paste, or multi-turn commands for Siri don’t work or produce incorrect results.
+Making your app entities conform to the [`Transferable`](https://developer.apple.com/documentation/coretransferable/transferable) protocol is a key requirement for your app to support Apple Intelligence and Siri. If an entity doesn’t serialize and transfer to other apps correctly, features like drag and drop, copy and paste, or multi-turn commands for Siri don’t work or produce incorrect results.
 
 First, export an entity to a data representation using `exported(as:)`, then reimport it using `resolved(from:)` on the entity definition:
 

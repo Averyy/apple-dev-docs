@@ -12,10 +12,10 @@ When a user taps a row of a table view, an action of some kind usually follows, 
 
 Use the following properties to configure how row selection behaves in a table view:
 
-- **[`allowsSelection`](uitableview/allowsselection.md)**: Determines whether users can select a row when the table isn’t in editing mode. The default is [`true`](https://developer.apple.com/documentation/Swift/true).
-- **[`allowsMultipleSelection`](uitableview/allowsmultipleselection.md)**: Determines whether users can select more than one row when the table isn’t in editing mode. The default is [`false`](https://developer.apple.com/documentation/Swift/false).
-- **[`allowsSelectionDuringEditing`](uitableview/allowsselectionduringediting.md)**: Determines whether user can select a row while the table view is in editing mode. The default is [`false`](https://developer.apple.com/documentation/Swift/false).
-- **[`allowsMultipleSelectionDuringEditing`](uitableview/allowsmultipleselectionduringediting.md)**: Determines whether users can select a more than one row while in editing mode. The default is [`false`](https://developer.apple.com/documentation/Swift/false).
+- **[`allowsSelection`](uitableview/allowsselection.md)**: Determines whether users can select a row when the table isn’t in editing mode. The default is [`true`](https://developer.apple.com/documentation/swift/true).
+- **[`allowsMultipleSelection`](uitableview/allowsmultipleselection.md)**: Determines whether users can select more than one row when the table isn’t in editing mode. The default is [`false`](https://developer.apple.com/documentation/swift/false).
+- **[`allowsSelectionDuringEditing`](uitableview/allowsselectionduringediting.md)**: Determines whether user can select a row while the table view is in editing mode. The default is [`false`](https://developer.apple.com/documentation/swift/false).
+- **[`allowsMultipleSelectionDuringEditing`](uitableview/allowsmultipleselectionduringediting.md)**: Determines whether users can select a more than one row while in editing mode. The default is [`false`](https://developer.apple.com/documentation/swift/false).
 
 ##### Respond to Row Selections
 
@@ -32,7 +32,7 @@ func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 }
 ```
 
-If you respond to the cell selection by pushing a new view controller onto the navigation stack, deselect the cell when the view controller pops off the stack. If you’re using a [`UITableViewController`](uitableviewcontroller.md) to display a table view, you get the behavior by setting the [`clearsSelectionOnViewWillAppear`](uitableviewcontroller/clearsselectiononviewwillappear.md) property to [`true`](https://developer.apple.com/documentation/Swift/true). Otherwise, you can clear the selection in your view controller’s [`viewWillAppear(_:)`](uiviewcontroller/viewwillappear(_:).md) method:
+If you respond to the cell selection by pushing a new view controller onto the navigation stack, deselect the cell when the view controller pops off the stack. If you’re using a [`UITableViewController`](uitableviewcontroller.md) to display a table view, you get the behavior by setting the [`clearsSelectionOnViewWillAppear`](uitableviewcontroller/clearsselectiononviewwillappear.md) property to [`true`](https://developer.apple.com/documentation/swift/true). Otherwise, you can clear the selection in your view controller’s [`viewWillAppear(_:)`](uiviewcontroller/viewwillappear(_:).md) method:
 
 ```swift
 override func viewWillAppear(_ animated: Bool) {

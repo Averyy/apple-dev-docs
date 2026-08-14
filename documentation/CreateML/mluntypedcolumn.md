@@ -21,7 +21,7 @@ struct MLUntypedColumn
 
 #### Overview
 
-A column is a homogenous collection of data values, similar to an [`Array`](https://developer.apple.com/documentation/Swift/Array). Columns are the main components of an [`MLDataTable`](mldatatable.md) and are designed to efficiently scale with large data sets.
+A column is a homogenous collection of data values, similar to an [`Array`](https://developer.apple.com/documentation/swift/array). Columns are the main components of an [`MLDataTable`](mldatatable.md) and are designed to efficiently scale with large data sets.
 
 Typically you use [`MLDataColumn`](mldatacolumn.md), the typed equivalent to [`MLUntypedColumn`](mluntypedcolumn.md), for its type-specific functionality.
 
@@ -54,7 +54,7 @@ print(invalidColumn.isValid) // Prints "false"
 
 Once a column becomes invalid, you can’t use it for any subsequent operation because it will only produce further invalid columns or invalid tables.
 
-Each comparison operator of [`MLUntypedColumn`](mluntypedcolumn.md) returns a column of Booleans. However, [`MLUntypedColumn`](mluntypedcolumn.md) uses integers as its underlying type for columns of Booleans, because [`MLDataValue`](mldatavalue.md) does not have a case for [`Bool`](https://developer.apple.com/documentation/Swift/Bool).
+Each comparison operator of [`MLUntypedColumn`](mluntypedcolumn.md) returns a column of Booleans. However, [`MLUntypedColumn`](mluntypedcolumn.md) uses integers as its underlying type for columns of Booleans, because [`MLDataValue`](mldatavalue.md) does not have a case for [`Bool`](https://developer.apple.com/documentation/swift/bool).
 
 For example, create an untyped column of Booleans using the less-than comparison operator([`<(_:_:)`](mluntypedcolumn/_(_:_:)-7zms0.md)).
 
@@ -304,12 +304,12 @@ Use these untyped columns of Booleans just as you would with a typed column of B
 ## Relationships
 
 ### Conforms To
-- [Copyable](../Swift/Copyable.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomPlaygroundDisplayConvertible](../Swift/CustomPlaygroundDisplayConvertible.md)
-- [CustomReflectable](../Swift/CustomReflectable.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Escapable](../Swift/Escapable.md)
+- [Copyable](../swift/copyable.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomPlaygroundDisplayConvertible](../swift/customplaygrounddisplayconvertible.md)
+- [CustomReflectable](../swift/customreflectable.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Escapable](../swift/escapable.md)
 
 ## See Also
 

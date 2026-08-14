@@ -21,14 +21,14 @@ virtual bool initWithArray(
 
 Not for general use. Use the static instance creation method withArray instead.
 
-`array` must be non-`NULL`. If `capacity` is nonzero, it must be greater than or equal to `count`. The new array will grow as needed to accommodate more objects (`CFMutableArray`, for which the initial capacity is a hard limit).
+`array` must be non-`NULL`. If `capacity` is nonzero, it must be greater than or equal to `count`. The new array will grow as needed to accommodate more objects (*unlike*[`CFMutableArray`](https://developer.apple.com/documentation/corefoundation/cfmutablearray), for which the initial capacity is a hard limit).
 
 The objects in `array` are retained for storage in the new OSArray, not copied.
 
 ## Parameters
 
 - `anArray`: The array whose contents will be placed in the new instance.
-- `capacity`: The initial storage capacity of the array object. If 0, the capacity is set to the number of objects in  ; otherwise   must be greater than or equal to the number of objects in  .
+- `capacity`: The initial storage capacity of the array object. If 0, the capacity is set to the number of objects in `array`; otherwise `capacity` must be greater than or equal to the number of objects in `array`.
 
 ## See Also
 

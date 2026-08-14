@@ -26,11 +26,11 @@ RealityKit extracts the cube faces from the source 2D image using a convention b
 
 - If `height == 6 * width`, RealityKit treats the source image as a vertical strip of the cube faces, containing [+X, -X, +Y, -Y, +Z, -Z]  from top to bottom:
 
-![A cube source image showing the expected cube face’s orientation for a vertical strip](https://docs-assets.developer.apple.com/published/f291c9574e4130d8540555b0f321ac86/textureresource-cube-vstrip-orientation.jpg)
+![A cube source image showing the expected cube face’s orientation for a vertical strip](/images/com.apple.RealityKit/textureresource-cube-vstrip-orientation.jpg)
 
 - If `6 * height == width`, RealityKit treats the source image as a horizontal strip of the cube faces, containing [+X, -X, +Y, -Y, +Z, -Z] from left to right:
 
-![A cube source image showing the expected cube face’s orientation for a vertical strip](https://docs-assets.developer.apple.com/published/3010520f97600c24a2a1cadf5ccf84ed/textureresource-cube-hstrip-orientation.jpg)
+![A cube source image showing the expected cube face’s orientation for a vertical strip](/images/com.apple.RealityKit/textureresource-cube-hstrip-orientation.jpg)
 
 - If `height / 3 == width / 4`, RealityKit treats the source image as a cross layout of the cube faces as follows:
 
@@ -40,7 +40,7 @@ RealityKit extracts the cube faces from the source 2D image using a convention b
     [-Y]
 ```
 
-![A cube source image showing the expected cube face’s orientation and layout for a cross](https://docs-assets.developer.apple.com/published/50894b5906edd417d6b7e3467625f5b6/textureresource-cube-cross-orientation.jpg)
+![A cube source image showing the expected cube face’s orientation and layout for a cross](/images/com.apple.RealityKit/textureresource-cube-cross-orientation.jpg)
 
 Use the resulting texture to create an [`EnvironmentResource`](environmentresource.md), or assign it to a material in Reality Composer Pro that requires a cube texture type.
 

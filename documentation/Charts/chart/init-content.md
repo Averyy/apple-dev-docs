@@ -23,11 +23,11 @@ init<Data, C>(_ data: Data, @ContentBuilder content: @escaping (Data.Element) ->
 
 #### Discussion
 
-This initializer wraps the data that you provide as input in an implicit [`ForEach`](https://developer.apple.com/documentation/SwiftUI/ForEach) structure. If you need to represent more than one series in your chart, use [`init(content:)`](chart/init(content:).md) instead.
+This initializer wraps the data that you provide as input in an implicit [`ForEach`](https://developer.apple.com/documentation/swiftui/foreach) structure. If you need to represent more than one series in your chart, use [`init(content:)`](chart/init(content:).md) instead.
 
 ## Parameters
 
-- `data`: A collection of data that conforms to the [`Identifiable`](https://developer.apple.com/documentation/Swift/Identifiable) protocol.
+- `data`: A collection of data that conforms to the [`Identifiable`](https://developer.apple.com/documentation/swift/identifiable) protocol.
 - `content`: The mark that the chart should draw for each element in the data collection.
 
 ## See Also

@@ -59,8 +59,8 @@ Checking a digest doesn’t guard against changes made by a malicious user who a
 ## Relationships
 
 ### Inherits From
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 ### Conforming Types
 - [Insecure.MD5](insecure/md5.md)
 - [Insecure.SHA1](insecure/sha1.md)

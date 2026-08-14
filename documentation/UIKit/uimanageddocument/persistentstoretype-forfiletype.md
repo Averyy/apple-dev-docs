@@ -25,7 +25,7 @@ The persistent store type for `fileType`.
 
 Override this method to specify a persistent store type for a given document type.
 
-The default returns [`NSSQLiteStoreType`](https://developer.apple.com/documentation/CoreData/NSSQLiteStoreType).
+The default returns [`NSSQLiteStoreType`](https://developer.apple.com/documentation/coredata/nssqlitestoretype).
 
 ## Parameters
 

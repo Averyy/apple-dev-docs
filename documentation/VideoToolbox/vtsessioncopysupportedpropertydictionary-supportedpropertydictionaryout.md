@@ -36,7 +36,7 @@ The caller must release the returned dictionary.
 ## Parameters
 
 - `session`: The session object.
-- `supportedPropertyDictionaryOut`: A pointer to a [`CFDictionary`](https://developer.apple.com/documentation/CoreFoundation/CFDictionary).
+- `supportedPropertyDictionaryOut`: A pointer to a [`CFDictionary`](https://developer.apple.com/documentation/corefoundation/cfdictionary).
 
 ## See Also
 

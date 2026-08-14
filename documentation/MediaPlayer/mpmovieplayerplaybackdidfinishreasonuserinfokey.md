@@ -17,7 +17,7 @@ let MPMoviePlayerPlaybackDidFinishReasonUserInfoKey: String
 
 #### Discussion
 
-The value of this key is an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) containing an integer value that represents one of the [`MPMovieFinishReason`](mpmoviefinishreason.md) constants.
+The value of this key is an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) containing an integer value that represents one of the [`MPMovieFinishReason`](mpmoviefinishreason.md) constants.
 
 
 ---

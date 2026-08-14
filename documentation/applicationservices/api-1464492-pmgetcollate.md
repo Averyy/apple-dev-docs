@@ -25,7 +25,7 @@ The Collated checkbox is displayed in the Copies & Pages pane of the Print dialo
 ## Parameters
 
 - `printSettings`: The print settings object you’re querying to determine whether the job collate option is selected.
-- `collate`: A pointer to your Boolean variable. On return,   if the job collate option is selected; otherwise,  .
+- `collate`: A pointer to your Boolean variable. On return, `true` if the job collate option is selected; otherwise, `false`.
 
 ## See Also
 

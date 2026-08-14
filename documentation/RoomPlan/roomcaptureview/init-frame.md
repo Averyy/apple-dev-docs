@@ -19,7 +19,7 @@ Creates a view that sizes to the specified frame.
 
 #### Overview
 
-This property inherits from [`UIView`](https://developer.apple.com/documentation/UIKit/UIView).
+This property inherits from [`UIView`](https://developer.apple.com/documentation/uikit/uiview).
 
 The system invokes this initializer if you omit the `arSession` argument to [`init(frame:arSession:)`](roomcaptureview/init(frame:arsession:).md). RoomPlan creates its own `ARSession` instance, which you can access through the [`captureSession`](roomcaptureview/capturesession.md) property’s [`arSession`](roomcapturesession/arsession.md).
 

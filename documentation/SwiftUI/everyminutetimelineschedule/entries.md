@@ -22,15 +22,15 @@ struct Entries
 
 #### Overview
 
-The [`entries(from:mode:)`](everyminutetimelineschedule/entries(from:mode:).md) method returns a value of this type, which is a [`Sequence`](https://developer.apple.com/documentation/Swift/Sequence) of dates, one per minute, in ascending order. A [`TimelineView`](timelineview.md) that you create updates its content at the moments in time corresponding to the dates included in the sequence.
+The [`entries(from:mode:)`](everyminutetimelineschedule/entries(from:mode:).md) method returns a value of this type, which is a [`Sequence`](https://developer.apple.com/documentation/swift/sequence) of dates, one per minute, in ascending order. A [`TimelineView`](timelineview.md) that you create updates its content at the moments in time corresponding to the dates included in the sequence.
 
 ## Relationships
 
 ### Conforms To
-- [IteratorProtocol](../Swift/IteratorProtocol.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
-- [Sequence](../Swift/Sequence.md)
+- [IteratorProtocol](../swift/iteratorprotocol.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sequence](../swift/sequence.md)
 
 ## See Also
 

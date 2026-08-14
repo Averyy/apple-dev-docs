@@ -18,7 +18,7 @@ var maximumRating: NSNumber? { get }
 
 #### Discussion
 
-This property is an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) that contains a value in the range of 1 to 5. The value is a whole number.
+This property is an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) that contains a value in the range of 1 to 5. The value is a whole number.
 
 ## See Also
 

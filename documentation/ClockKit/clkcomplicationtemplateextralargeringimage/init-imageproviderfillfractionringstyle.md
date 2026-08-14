@@ -16,7 +16,7 @@ init(imageProvider: CLKImageProvider, fillFraction: Float, ringStyle: CLKComplic
 
 ## Parameters
 
-- `imageProvider`: The image provider for the main image. The system renders the image as a tinted template image, a bitmap image where only the opacity of the image matters. For more information, see [`Providing images for different appearances`](https://developer.apple.com/documentation/UIKit/providing-images-for-different-appearances#Create-tintable-images-using-template-images).
+- `imageProvider`: The image provider for the main image. The system renders the image as a tinted template image, a bitmap image where only the opacity of the image matters. For more information, see [`Providing images for different appearances`](https://developer.apple.com/documentation/uikit/providing-images-for-different-appearances).
 - `fillFraction`: A value between `0.0` and `1.0` that indicates how much of the ring fills.
 - `ringStyle`: The ring’s style. For a complete list of styles, see [`CLKComplicationRingStyle`](clkcomplicationringstyle.md).
 

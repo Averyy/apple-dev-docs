@@ -9,9 +9,9 @@ Train a machine learning model by using Core ML to import and manage tabular dat
 
 #### Overview
 
-This sample playground uses the [`Create ML`](CreateML.md) framework to train two [`Core ML`](https://developer.apple.com/documentation/CoreML) models, a regressor and a classifier.
+This sample playground uses the [`Create ML`](CreateML.md) framework to train two [`Core ML`](https://developer.apple.com/documentation/coreml) models, a regressor and a classifier.
 
-![A diagram that shows the data flow where the data feeds into Create ML and produces a Core ML model file.](https://docs-assets.developer.apple.com/published/38976948d8275d3ec653e82667c6e840/tabular-data-flow%402x.png)
+![A diagram that shows the data flow where the data feeds into Create ML and produces a Core ML model file.](/images/com.apple.createml/tabular-data-flow@2x.png)
 
 The playground imports a CSV file, which contains Martian housing data, into a data table. The data table contains the following columns of information about a habitat on Mars:
 
@@ -221,7 +221,7 @@ try classifier.write(to: desktopPath.appendingPathComponent("MarsHabitatPurposeC
 
 ##### Add the Model to an App
 
-To add your model to an app, see [`Integrating a Core ML Model into Your App`](https://developer.apple.com/documentation/CoreML/integrating-a-core-ml-model-into-your-app).
+To add your model to an app, see [`Integrating a Core ML Model into Your App`](https://developer.apple.com/documentation/coreml/integrating-a-core-ml-model-into-your-app).
 
 ## See Also
 

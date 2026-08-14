@@ -23,7 +23,7 @@ case custom(@Sendable ([any CodingKey]) -> any CodingKey)
 
 #### Discussion
 
-The value associated with this case is a closure you use to choose the names of keys in the encoded JSON object. During encoding, the closure executes once for each key in the [`Encodable`](https://developer.apple.com/documentation/Swift/Encodable) value. The closure receives an array of [`CodingKey`](https://developer.apple.com/documentation/Swift/CodingKey) instances representing the sequence of keys needed to reach the value the encoder is currently encoding.
+The value associated with this case is a closure you use to choose the names of keys in the encoded JSON object. During encoding, the closure executes once for each key in the [`Encodable`](https://developer.apple.com/documentation/swift/encodable) value. The closure receives an array of [`CodingKey`](https://developer.apple.com/documentation/swift/codingkey) instances representing the sequence of keys needed to reach the value the encoder is currently encoding.
 
 The example below shows how to encode the properties of the nested `A`, `B`, and `C` structures with custom logic that you specify in the closure value associated with the custom case.
 

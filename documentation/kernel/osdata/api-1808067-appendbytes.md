@@ -25,8 +25,8 @@ An OSData object created "NoCopy" does not allow bytes to be appended.
 
 ## Parameters
 
-- `bytes`: A pointer to the data to append. If   is   then a zero-filled buffer of length   is appended.
-- `numBytes`: The number of bytes from   to append.
+- `bytes`: A pointer to the data to append. If `bytes` is `NULL` then a zero-filled buffer of length `numBytes` is appended.
+- `numBytes`: The number of bytes from `bytes` to append.
 
 ## See Also
 

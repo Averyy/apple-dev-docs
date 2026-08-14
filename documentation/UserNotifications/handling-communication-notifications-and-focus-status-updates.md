@@ -27,7 +27,7 @@ Begin by configuring the iOS target to include your development team and a [`bun
 - Time Sensitive notifications
 - SiriKit
 
-To support communication notifications, the app’s `Info.plist` file must contain a top-level entry with the key [`NSUserActivityTypes`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSUserActivityTypes) and type `Array`. This array should contain `INStartCallIntent` if the app supports calling functionality, and `INSendMessageIntent` if it supports messaging.
+To support communication notifications, the app’s `Info.plist` file must contain a top-level entry with the key [`NSUserActivityTypes`](https://developer.apple.com/documentation/bundleresources/information-property-list/nsuseractivitytypes) and type `Array`. This array should contain `INStartCallIntent` if the app supports calling functionality, and `INSendMessageIntent` if it supports messaging.
 
 Accessing a user’s Focus status requires their authorization. To let the user know how the app uses their Focus status, include a usage description string. Provide this usage description string as a value for the `Privacy - Focus Status Usage Description` key in the app’s `Info.plist` file.
 
@@ -143,9 +143,9 @@ The sample accesses the current Focus status in the `requestFocusStatus(completi
     }
 ```
 
-Observe Focus status changes from an Intents app extension. This extension launches in the background to handle interactions between your app and SiriKit. To learn more about Intents app extensions, see [`Creating an Intents App Extension`](https://developer.apple.com/documentation/SiriKit/creating-an-intents-app-extension). Ensure your Intents app extension target includes support for [`INShareFocusStatusIntent`](https://developer.apple.com/documentation/Intents/INShareFocusStatusIntent). The Intents app extension target’s General tab in the project file contains the list of supported intents. Include the class names of all supported intents in the Supported Intents section.
+Observe Focus status changes from an Intents app extension. This extension launches in the background to handle interactions between your app and SiriKit. To learn more about Intents app extensions, see [`Creating an Intents App Extension`](https://developer.apple.com/documentation/sirikit/creating-an-intents-app-extension). Ensure your Intents app extension target includes support for [`INShareFocusStatusIntent`](https://developer.apple.com/documentation/intents/insharefocusstatusintent). The Intents app extension target’s General tab in the project file contains the list of supported intents. Include the class names of all supported intents in the Supported Intents section.
 
-The Intents app extension in the sample handles incoming [`INShareFocusStatusIntent`](https://developer.apple.com/documentation/Intents/INShareFocusStatusIntent) objects. When doing so, the sample uses the intent itself to access the `isFocused` bool directly instead of using the default `INFocusStatusCenter`.
+The Intents app extension in the sample handles incoming [`INShareFocusStatusIntent`](https://developer.apple.com/documentation/intents/insharefocusstatusintent) objects. When doing so, the sample uses the intent itself to access the `isFocused` bool directly instead of using the default `INFocusStatusCenter`.
 
 ```swift
 /**

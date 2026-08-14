@@ -26,7 +26,7 @@ When the [`wantsDepthOfField`](scncamera/wantsdepthoffield.md) setting is enable
 
 This property controls the number of blades in the simulated camera aperture, and thus the polygon shape seen in the resulting bokeh effect. For example, a blade count of 6 (the default) causes distant bright points to blur into hexagon shapes. Increasingly large blade counts result in the bokeh effect appearing more circular, as shown below.
 
-![Screenshots showing aperture blade count settings of 5, 6, and 10, resulting in differently-shaped blur effects for distant point lights.](https://docs-assets.developer.apple.com/published/af032325a768456a11e5715aa501c042/media-2953443%402x.png)
+![Screenshots showing aperture blade count settings of 5, 6, and 10, resulting in differently-shaped blur effects for distant point lights.](/images/com.apple.scenekit/media-2953443@2x.png)
 
 ## See Also
 

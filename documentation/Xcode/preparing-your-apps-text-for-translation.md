@@ -12,7 +12,7 @@ For more information on string catalogs, see [`Localizing and varying text with 
 
 ##### Localize Text in Your View Hierarchy
 
-When you use SwiftUI, all string literals of type [`LocalizedStringKey`](https://developer.apple.com/documentation/SwiftUI/LocalizedStringKey) within a view are automatically localizable.
+When you use SwiftUI, all string literals of type [`LocalizedStringKey`](https://developer.apple.com/documentation/swiftui/localizedstringkey) within a view are automatically localizable.
 
 For example, Xcode adds the following string literals in this code snippet to the default string catalog:
 
@@ -29,7 +29,7 @@ HStack {
 
 ##### Create Localizable Strings
 
-Use the [`init(localized:)`](https://developer.apple.com/documentation/Swift/String/init(localized:)) initializer when creating [`String`](https://developer.apple.com/documentation/Swift/String) and [`AttributedString`](https://developer.apple.com/documentation/Foundation/AttributedString) objects that contain text you want to localize.
+Use the [`init(localized:)`](https://developer.apple.com/documentation/swift/string/init(localized:)) initializer when creating [`String`](https://developer.apple.com/documentation/swift/string) and [`AttributedString`](https://developer.apple.com/documentation/foundation/attributedstring) objects that contain text you want to localize.
 
 ```swift
 // General localizable text.
@@ -38,20 +38,20 @@ String(localized: "Add a description for your collection here.")
 
 The initializer uses the string that you pass as the key to look up the translation based on the device settings.
 
-To create localizable strings with different keys and values, use the  [`init(localized:defaultValue:options:table:bundle:locale:comment:)`](https://developer.apple.com/documentation/Swift/String/init(localized:defaultValue:options:table:bundle:locale:comment:)) initializer. Xcode uses the first parameter as the key and the second parameter as the default source string.
+To create localizable strings with different keys and values, use the  [`init(localized:defaultValue:options:table:bundle:locale:comment:)`](https://developer.apple.com/documentation/swift/string/init(localized:defaultvalue:options:table:bundle:locale:comment:)) initializer. Xcode uses the first parameter as the key and the second parameter as the default source string.
 
 ```swift
 // Localizable string with a different key and value.
 String(localized: "LIGHTING_KEY", defaultValue: "Lightbulbs")
 ```
 
-For additional initializer options, see [`String`](https://developer.apple.com/documentation/Swift/String#Creating-a-Localized-String). For apps targeting older platforms, use the [`NSLocalizedString`](https://developer.apple.com/documentation/Foundation/NSLocalizedString) instead.
+For additional initializer options, see [`String`](https://developer.apple.com/documentation/swift/string). For apps targeting older platforms, use the [`NSLocalizedString`](https://developer.apple.com/documentation/foundation/nslocalizedstring) instead.
 
 ##### Add Comments to Your Localizable Strings
 
 Add comments to give context and assist localizers when translating your text.
 
-In SwiftUI, use the [`init(_:tableName:bundle:comment:)`](https://developer.apple.com/documentation/SwiftUI/Text/init(_:tableName:bundle:comment:)) initializer of your [`Text`](https://developer.apple.com/documentation/SwiftUI/Text) view and provide a comment with additional details.
+In SwiftUI, use the [`init(_:tableName:bundle:comment:)`](https://developer.apple.com/documentation/swiftui/text/init(_:tablename:bundle:comment:)) initializer of your [`Text`](https://developer.apple.com/documentation/swiftui/text) view and provide a comment with additional details.
 
 ```swift
 // Provide additional localizable data with a `TextView`.
@@ -65,7 +65,7 @@ Stepper {
 }
 ```
 
-In Swift, use the [`init(localized:table:bundle:locale:comment:)`](https://developer.apple.com/documentation/Swift/String/init(localized:table:bundle:locale:comment:)) initializer:
+In Swift, use the [`init(localized:table:bundle:locale:comment:)`](https://developer.apple.com/documentation/swift/string/init(localized:table:bundle:locale:comment:)) initializer:
 
 ```swift
 // Localizable text with comments.
@@ -93,7 +93,7 @@ Use `String(localized:)` and `AttributedString(localized:)` initializers to init
 
 ##### Pass Localizable Strings with a Localizable Type
 
-When defining or passing localizable text in your views, use the recommended type for passing strings in Swift [`LocalizedStringResource`](https://developer.apple.com/documentation/Foundation/LocalizedStringResource).
+When defining or passing localizable text in your views, use the recommended type for passing strings in Swift [`LocalizedStringResource`](https://developer.apple.com/documentation/foundation/localizedstringresource).
 
 ```swift
 // Localizable strings in SwiftUI.
@@ -135,7 +135,7 @@ let actionWithComment = UserAction(title: LocalizedStringResource("Order items",
 
 ##### Load Localizable Strings That Reside Outside of the Main Bundle
 
-When localizable strings reside in another module, framework, or Swift Package, pass the [`bundle()`](https://developer.apple.com/documentation/Foundation/bundle()) macro as the `bundle` parameter in localizable APIs to tell the system to look up the translation in the bundle associated with that target.
+When localizable strings reside in another module, framework, or Swift Package, pass the [`bundle()`](https://developer.apple.com/documentation/foundation/bundle()) macro as the `bundle` parameter in localizable APIs to tell the system to look up the translation in the bundle associated with that target.
 
 ```swift
     // Localizable string within a framework.
@@ -144,7 +144,7 @@ When localizable strings reside in another module, framework, or Swift Package, 
 
 If you invoke this code in the app target, the macro returns the main bundle. Or you can explicitly pass `Bundle.main` which is also the default bundle.
 
-Alternatively, you can create a bundle from a specific class that resides in that target using the [`init(for:)`](https://developer.apple.com/documentation/Foundation/Bundle/init(for:)) initializer and pass that as the `bundle` parameter to localizable APIs. For example, you can use this initializer in the framework code where the `BirdSongs` class resides.
+Alternatively, you can create a bundle from a specific class that resides in that target using the [`init(for:)`](https://developer.apple.com/documentation/foundation/bundle/init(for:)) initializer and pass that as the `bundle` parameter to localizable APIs. For example, you can use this initializer in the framework code where the `BirdSongs` class resides.
 
 ```swift
 // Localizable string within a framework.

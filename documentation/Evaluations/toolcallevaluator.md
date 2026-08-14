@@ -55,8 +55,8 @@ let evaluator = ToolCallEvaluator<ModelSample<String>>(
 
 ### Conforms To
 - [EvaluatorProtocol](evaluatorprotocol.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

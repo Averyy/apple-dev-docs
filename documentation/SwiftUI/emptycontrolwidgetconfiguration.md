@@ -27,9 +27,9 @@ An empty control widget configuration.
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../Swift/BitwiseCopyable.md)
+- [BitwiseCopyable](../swift/bitwisecopyable.md)
 - [ControlWidgetConfiguration](controlwidgetconfiguration.md)
-- [Copyable](../Swift/Copyable.md)
+- [Copyable](../swift/copyable.md)
 
 ## See Also
 

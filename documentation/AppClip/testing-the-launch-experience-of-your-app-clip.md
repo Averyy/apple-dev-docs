@@ -26,11 +26,11 @@ To configure an invocation URL for debugging:
 3. In the Arguments tab, check whether the `_XCAppClipURL` environment variable is present. When you add an App Clip target to your project, Xcode adds it for you. If it’s missing, add the environment variable.
 4. Set the environment variable’s value to the invocation URL you want to test.
 5. Enable the variable by selecting the checkbox next to it.
-6. Build and run the App Clip to access the test URL you configured from an [`NSUserActivity`](https://developer.apple.com/documentation/Foundation/NSUserActivity) object. For more information on accessing the invocation URL, refer to [`Responding to invocations`](responding-to-invocations.md).
+6. Build and run the App Clip to access the test URL you configured from an [`NSUserActivity`](https://developer.apple.com/documentation/foundation/nsuseractivity) object. For more information on accessing the invocation URL, refer to [`Responding to invocations`](responding-to-invocations.md).
 
 The following screenshot shows the sheet to configure an App Clip target’s Run action with a value for the `_XCAppClipURL` environment variable:
 
-![A screenshot showing the sheet to configure an App Clip target’s Run action. The _XCAppClipURL environment variable’s value is set but not enabled.](https://docs-assets.developer.apple.com/published/f183530078eba0a42a3d61fa51ea8197/media-3671997%402x.png)
+![A screenshot showing the sheet to configure an App Clip target’s Run action. The _XCAppClipURL environment variable’s value is set but not enabled.](/images/com.apple.appclip/media-3671997@2x.png)
 
 When you debug your App Clip with Xcode, the App Clip launches right away with the value you set for the `_XCAppClipURL` variable. Note that the App Clip card doesn’t appear. To see the App Clip card on invocation when testing and test your entire launch experience, register a local experience on your test device.
 
@@ -43,10 +43,10 @@ Leveraging the `_XCAppClipURL` environment variable is helpful when you debug th
 To test invocations and explore the design of your App Clip card during development, configure a local experience on your test device. With a local experience, you can launch your App Clip by:
 
 - Scanning an App Clip Code, QR code, or NFC tag you’ve created to launch the local experience. For information on creating App Clip Codes for testing, refer to [`Creating App Clip Codes with the App Clip Code Generator`](creating-app-clip-codes-with-the-app-clip-code-generator.md). To create a QR code or write an NFC tag, use your favorite tool.
-- Tapping a Smart Banner you added to your website or an App Clip card that appears in Safari or an [`SFSafariViewController`](https://developer.apple.com/documentation/SafariServices/SFSafariViewController).
+- Tapping a Smart Banner you added to your website or an App Clip card that appears in Safari or an [`SFSafariViewController`](https://developer.apple.com/documentation/safariservices/sfsafariviewcontroller).
 - Sharing a link to the website that displays a Smart App Banner. Make sure to add the sender of the message as a contact on the test device.
 
-Note that you don’t need to configure the [`Associated Domains Entitlement`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.associated-domains) or associate the App Clip with your website to launch a local experience from App Clip Codes, QR codes, or NFC tags. However, testing invocations from a Smart App Banner or the App Clip card in Safari comes with prerequisites; for example, you need to associate your website with your App Clip, submit a version of your app with an App Clip for review to App Store Connect, and release it in the App Store after approval. To learn more about when the Smart App Banner appears and for information on supporting invocations from your website or the Messages app, refer to [`Supporting invocations from your website and the Messages app`](supporting-invocations-from-your-website-and-the-messages-app.md). To verify your configured App Clip experiences for a released app and App Clip, refer to [`Verify the configuration of your released App Clip`](testing-the-launch-experience-of-your-app-clip#Verify-the-configuration-of-your-released-App-Clip.md) below.
+Note that you don’t need to configure the [`Associated Domains Entitlement`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.associated-domains) or associate the App Clip with your website to launch a local experience from App Clip Codes, QR codes, or NFC tags. However, testing invocations from a Smart App Banner or the App Clip card in Safari comes with prerequisites; for example, you need to associate your website with your App Clip, submit a version of your app with an App Clip for review to App Store Connect, and release it in the App Store after approval. To learn more about when the Smart App Banner appears and for information on supporting invocations from your website or the Messages app, refer to [`Supporting invocations from your website and the Messages app`](supporting-invocations-from-your-website-and-the-messages-app.md). To verify your configured App Clip experiences for a released app and App Clip, refer to [`Verify the configuration of your released App Clip`](testing-the-launch-experience-of-your-app-clip#Verify-the-configuration-of-your-released-App-Clip.md) below.
 
 > 💡 **Tip**:  Add the Code Scanner and the NFC Tag Reader to Control Center by opening the Settings app and selecting Control Center.
 
@@ -64,7 +64,7 @@ To test your launch experience with a local experience:
 
 The following screenshot shows the interface you use to configure a local experience on iPhone:
 
-![A screenshot of an iPhone that shows the interface for configuring a local experience. It uses https://example.com as the URL prefix and com.example.app.clip as the bundle identifier. The title for the local experience’s App Clip card is Example App, its subtitle is A local App Clip experience, and its call-to-action verb is Open.](https://docs-assets.developer.apple.com/published/2a952ad63d25ae376798d8dc31152766/settings-local-experience%402x.png)
+![A screenshot of an iPhone that shows the interface for configuring a local experience. It uses https://example.com as the URL prefix and com.example.app.clip as the bundle identifier. The title for the local experience’s App Clip card is Example App, its subtitle is A local App Clip experience, and its call-to-action verb is Open.](/images/com.apple.appclip/settings-local-experience@2x.png)
 
 When you configure a local experience on a device, the local experience takes precedence over App Clip experiences you configure in [`App Store Connect`](https://developer.apple.comhttps://appstoreconnect.apple.com/login). However, local experiences only launch an App Clip that’s signed for Development, Ad Hoc, or TestFlight distribution. They don’t launch an App Clip or full app that’s published on the App Store. Remember to remove the local experience before testing App Clip experiences you configure in App Store Connect.
 
@@ -72,7 +72,7 @@ When you configure a local experience on a device, the local experience takes pr
 
 Local App Clip invocations help you test the launch experience of your App Clip while you develop it in Xcode. However, local invocations don’t allow you to test the launch experience of the full app from an App Clip invocation. The best way to verify that your full app can handle App Clip invocations as you would expect is to use universal links and the invocation URL of your App Clip as the link’s URL. Both App Clips and universal links make the launch URL available as part of the user activity object. If a Universal Link opens your app to the App Clip experience you expect, you can be sure that the launch experience from the App Clip card to your full app works correctly.
 
-For more information about debugging and testing universal links, refer to [`TN3155: Debugging universal links`](https://developer.apple.com/documentation/Technotes/tn3155-debugging-universal-links). For general information about universal links, refer to [`Supporting universal links in your app`](https://developer.apple.com/documentation/Xcode/supporting-universal-links-in-your-app).
+For more information about debugging and testing universal links, refer to [`TN3155: Debugging universal links`](https://developer.apple.com/documentation/technotes/tn3155-debugging-universal-links). For general information about universal links, refer to [`Supporting universal links in your app`](https://developer.apple.com/documentation/xcode/supporting-universal-links-in-your-app).
 
 ##### Create App Clip Experiences for Testers in Testflight
 

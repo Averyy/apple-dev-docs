@@ -24,7 +24,7 @@ protocol AccessoryDataProvider : AppExtension, Sendable where Self.Configuration
 
 Implement this protocol in an extension with an `EXExtensionPointIdentifier` value of `com.apple.accessory-data-provider` to receive notification data for eventual forwarding to an accessory that you develop. The extension runs in a sandboxed environment and communicates with the system through the extension’s configuration object ([`AccessoryDataProviderConfiguration`](accessorydataproviderconfiguration.md)).
 
-> ❗ **Important**: The system requires your app extension to have the [`com.apple.developer.accessory-data-provider`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.accessory-data-provider) entitlement to use this protocol.
+> ❗ **Important**: The system requires your app extension to have the [`com.apple.developer.accessory-data-provider`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.accessory-data-provider) entitlement to use this protocol.
 
 #### Add the Necessary Target Configuration
 
@@ -48,7 +48,7 @@ In your extension’s target properties, include the `EXCapabilities` key with t
 
 #### Implement the Extension Point
 
-In your extension’s Swift code, implement the protocol and declare the capability with your [`NotificationsForwarding.AccessoryNotificationsHandler`](https://developer.apple.com/documentation/AccessoryNotifications/NotificationsForwarding/AccessoryNotificationsHandler) implementation:
+In your extension’s Swift code, implement the protocol and declare the capability with your [`NotificationsForwarding.AccessoryNotificationsHandler`](https://developer.apple.com/documentation/accessorynotifications/notificationsforwarding/accessorynotificationshandler) implementation:
 
 ```swift
 struct DataProvider: AccessoryDataProvider {
@@ -90,9 +90,9 @@ For more information, see [`Receiving iOS notifications on an accessory`](receiv
 ## Relationships
 
 ### Inherits From
-- [AppExtension](../ExtensionFoundation/AppExtension.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [AppExtension](../extensionfoundation/appextension.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 
@@ -104,7 +104,7 @@ For more information, see [`Receiving iOS notifications on an accessory`](receiv
   A protocol for an extension that handles cryptographic key exchange with your accessory.
 - [protocol AccessoryTransportSecurityConfiguration](accessorytransportsecurityconfiguration.md)
   A protocol that configures and manages communication between your security extension and the system.
-- [Accessory Notifications](../AccessoryNotifications/AccessoryNotifications.md)
+- [Accessory Notifications](../accessorynotifications/accessorynotifications.md)
   Receive forwarded iOS system notifications on an accessory that you develop.
 
 

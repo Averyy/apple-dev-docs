@@ -20,10 +20,10 @@ An MDQueryRef, or `NULL` on failure. If the query string is empty or malformed t
 
 ## Parameters
 
-- `allocator`: The CFAllocator object to be used to allocate memory for the new object. Pass   or   to use the current default allocator.
+- `allocator`: The CFAllocator object to be used to allocate memory for the new object. Pass `NULL` or `kCFAllocatorDefault` to use the current default allocator.
 - `queryString`: The query expression string for this query.
-- `valueListAttrs`: An optional array of attribute names. The query will collect the values of these attributes into uniqued lists that can be used to summarize the results of the query and allow the user to further qualify the search. This parameter may be   if no value lists are required. Value list collection increases CPU usage and significantly increases the memory usage of an MDQuery. The attribute names are CFStrings.
-- `sortingAttrs`: A n array of attribute names used to sort the results, or   if no sorting is required. The first name in the array is used as the primary sort key, the second as the secondary key, and so on. The comparison of like-typed values is a simple, literal comparison. Sorting increases memory usage and significantly increases the CPU usage of an MDQuery. It is usually more efficient to allow the MDQuery to sort the results than retrieving the values and sorting the results yourself. The attribute names are CFStrings.
+- `valueListAttrs`: An optional array of attribute names. The query will collect the values of these attributes into uniqued lists that can be used to summarize the results of the query and allow the user to further qualify the search. This parameter may be `NULL` if no value lists are required. Value list collection increases CPU usage and significantly increases the memory usage of an MDQuery. The attribute names are CFStrings.
+- `sortingAttrs`: A n array of attribute names used to sort the results, or `NULL` if no sorting is required. The first name in the array is used as the primary sort key, the second as the secondary key, and so on. The comparison of like-typed values is a simple, literal comparison. Sorting increases memory usage and significantly increases the CPU usage of an MDQuery. It is usually more efficient to allow the MDQuery to sort the results than retrieving the values and sorting the results yourself. The attribute names are CFStrings.
 
 ## See Also
 

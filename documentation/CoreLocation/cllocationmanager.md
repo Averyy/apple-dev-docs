@@ -42,7 +42,7 @@ A [`CLLocationManager`](cllocationmanager.md) object is the central place to man
 
 Create one or more location-manager objects in your app and use them where you need location data. After you create a location-manager object, configure it so that Core Location knows how often to report location changes. In particular, configure the [`distanceFilter`](cllocationmanager/distancefilter.md) and [`desiredAccuracy`](cllocationmanager/desiredaccuracy.md) properties with values that reflect your app’s needs.
 
-A [`CLLocationManager`](cllocationmanager.md) object reports all location-related updates to its [`delegate`](cllocationmanager/delegate.md) object, which is an object that conforms to the [`CLLocationManagerDelegate`](cllocationmanagerdelegate.md) protocol. Assign the delegate immediately when you configure your location manager, because the system reports the app’s authorization status to the delegate’s [`locationManagerDidChangeAuthorization(_:)`](cllocationmanagerdelegate/locationmanagerdidchangeauthorization(_:).md) method after the location manager finishes initializing itself.  Core Location calls the methods of your delegate object using the [`RunLoop`](https://developer.apple.com/documentation/Foundation/RunLoop) of the thread on which you initialized the [`CLLocationManager`](cllocationmanager.md) object. That thread must itself have an active [`RunLoop`](https://developer.apple.com/documentation/Foundation/RunLoop), like the one found in your app’s main thread.
+A [`CLLocationManager`](cllocationmanager.md) object reports all location-related updates to its [`delegate`](cllocationmanager/delegate.md) object, which is an object that conforms to the [`CLLocationManagerDelegate`](cllocationmanagerdelegate.md) protocol. Assign the delegate immediately when you configure your location manager, because the system reports the app’s authorization status to the delegate’s [`locationManagerDidChangeAuthorization(_:)`](cllocationmanagerdelegate/locationmanagerdidchangeauthorization(_:).md) method after the location manager finishes initializing itself.  Core Location calls the methods of your delegate object using the [`RunLoop`](https://developer.apple.com/documentation/foundation/runloop) of the thread on which you initialized the [`CLLocationManager`](cllocationmanager.md) object. That thread must itself have an active [`RunLoop`](https://developer.apple.com/documentation/foundation/runloop), like the one found in your app’s main thread.
 
 For more information, see [`Configuring your app to use location services`](configuring-your-app-to-use-location-services.md).
 
@@ -81,9 +81,9 @@ For more information, see [`Configuring your app to use location services`](conf
   The current authorization status for the app.
 - [enum CLAuthorizationStatus](clauthorizationstatus.md)
   Constants that indicate the app’s authorization to use location services.
-- [NSLocationDefaultAccuracyReduced](../BundleResources/Information-Property-List/NSLocationDefaultAccuracyReduced.md)
+- [NSLocationDefaultAccuracyReduced](../bundleresources/information-property-list/nslocationdefaultaccuracyreduced.md)
   A Boolean value that indicates whether the app requests reduced location accuracy by default.
-- [NSLocationAlwaysAndWhenInUseUsageDescription](../BundleResources/Information-Property-List/NSLocationAlwaysAndWhenInUseUsageDescription.md)
+- [NSLocationAlwaysAndWhenInUseUsageDescription](../bundleresources/information-property-list/nslocationalwaysandwheninuseusagedescription.md)
   A message that tells people why the app is requesting access to their location information at all times.
 ### Specifying distance and accuracy
 - [var distanceFilter: CLLocationDistance](cllocationmanager/distancefilter.md)
@@ -178,14 +178,14 @@ For more information, see [`Configuring your app to use location services`](conf
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

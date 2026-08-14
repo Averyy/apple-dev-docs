@@ -12,7 +12,7 @@ When one person in a group starts an activity, other people’s devices display 
 - Start the activity, monitor its state, and respond to changes.
 - Synchronize activity-related information.
 
-![An illustration of the Messages app on iPhone showing a message that includes a prompt to join a SharePlay activity. The system UI displays a Join button to start the activity from the Messages app.](https://docs-assets.developer.apple.com/published/2602468996c73256afdbd12889921202/group-activity-from-messages%402x.png)
+![An illustration of the Messages app on iPhone showing a message that includes a prompt to join a SharePlay activity. The system UI displays a Join button to start the activity from the Messages app.](/images/com.apple.GroupActivities/group-activity-from-messages@2x.png)
 
 For information about how to define activities, see [`Defining your app’s SharePlay activities`](defining-your-apps-shareplay-activities.md). For information about how to start activities, see [`Presenting SharePlay activities from your app’s UI`](promoting-shareplay-activities-from-your-apps-ui.md).
 
@@ -20,7 +20,7 @@ For information about how to define activities, see [`Defining your app’s Shar
 
 Activities can start at any time, so you need to set up an asynchronous handler in your app to listen for when they start. After a participant joins an activity, the system creates a [`GroupSession`](groupsession.md) object and delivers it to the sessions property of the [`GroupActivity`](groupactivity.md) type you defined. Monitor the sessions property from an asynchronous handler, and process new session objects when they become available.
 
-Configure separate asynchronous handlers for each of your app’s activity types, and use each one to receive new sessions for their activity. In SwiftUI, create your handler by adding the doc://com.apple.documentation/documentation/swiftui/view/task(priority:_:) modifier to the view containing the UI for the activity, as shown in the example below. Inside the block for the task modifier, wait on the activity’s sessions property using a `for..in` loop. The sessions property contains an [`AsyncSequence`](https://developer.apple.com/documentation/Swift/AsyncSequence) type, which wakes up the task and executes your code when a new session arrives. Use your code to begin the activity in your app.
+Configure separate asynchronous handlers for each of your app’s activity types, and use each one to receive new sessions for their activity. In SwiftUI, create your handler by adding the doc://com.apple.documentation/documentation/swiftui/view/task(priority:_:) modifier to the view containing the UI for the activity, as shown in the example below. Inside the block for the task modifier, wait on the activity’s sessions property using a `for..in` loop. The sessions property contains an [`AsyncSequence`](https://developer.apple.com/documentation/swift/asyncsequence) type, which wakes up the task and executes your code when a new session arrives. Use your code to begin the activity in your app.
 
 ```swift
 struct ContentView: View {
@@ -42,7 +42,7 @@ struct ContentView: View {
 }
 ```
 
-If you’re not using SwiftUI, handle the arrival of sessions using a [`Task`](https://developer.apple.com/documentation/Swift/Task) block, as shown in the following example. This block offers the same behavior as the SwiftUI task modifier, and you use it in similar ways. When a new session arrives, update your app’s UI to reflect the current activity, or perform any other tasks you need to prepare for the activity.
+If you’re not using SwiftUI, handle the arrival of sessions using a [`Task`](https://developer.apple.com/documentation/swift/task) block, as shown in the following example. This block offers the same behavior as the SwiftUI task modifier, and you use it in similar ways. When a new session arrives, update your app’s UI to reflect the current activity, or perform any other tasks you need to prepare for the activity.
 
 ```swift
 // Process an asynchronously delivered session.
@@ -99,7 +99,7 @@ Task {
 
 The [`GroupSession`](groupsession.md) object contains methods to end the session for the current participant or the entire group. When designing your UI, make it clear which option someone is choosing, and call the correct method in response.
 
-![A screenshot of an app on iPhone showing a list of participants in the current group. The UI includes a button to end the activity.](https://docs-assets.developer.apple.com/published/3983156f5313bf94842675696cbb6b8e/shareplay-lobby-status%402x.png)
+![A screenshot of an app on iPhone showing a list of participants in the current group. The UI includes a button to end the activity.](/images/com.apple.GroupActivities/shareplay-lobby-status@2x.png)
 
 When a participant quits your app, switches to a different app, or navigates away from your app’s activity-related UI, call [`leave()`](groupsession/leave().md)  to end the activity for that participant. Other participants remain engaged in the activity until they leave or until someone ends the activity for everyone.
 

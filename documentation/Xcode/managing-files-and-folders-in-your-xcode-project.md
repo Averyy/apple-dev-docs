@@ -8,7 +8,7 @@ Add new or existing files to your project, and use groups to organize the files 
 
 The Project navigator displays your project’s files and lets you open, add, delete, and rearrange those files. To open the Project navigator, at the top of your project window’s navigator area, click the icon that resembles a file folder.
 
-![Use the Project navigator to select files and find items in your Xcode project.](https://docs-assets.developer.apple.com/published/4dd86a2ee0fbde094f156c00ea1a4f0c/project-navigator-overview%402x.png)
+![Use the Project navigator to select files and find items in your Xcode project.](/images/com.apple.Xcode/project-navigator-overview@2x.png)
 
 When you select a file in the navigator, the inspector pane displays information about the file, and the editor area displays the contents of the file. The appearance of the editor area changes based on the type of file you select. For example, a source code file displays the source editor, and a property-list file displays the property-list editor.
 
@@ -28,13 +28,13 @@ Xcode provides templates for the common types of files you might want to add to 
 
 In the new file sheet, select a template for your new file. Xcode organizes templates by type to make them easier to find. You can also use the filter control to search for templates by name. After you select a template, click Next.
 
-![The sheet you use to select the type of file to add to your project.](https://docs-assets.developer.apple.com/published/bc8fbff0c30d0e54a3f4fc866f122b73/files-new-file-template%402x.png)
+![The sheet you use to select the type of file to add to your project.](/images/com.apple.Xcode/files-new-file-template@2x.png)
 
 Some templates require you to specify additional information for the new file. For example, the Cocoa Touch template asks you to specify information about the class you’re creating, including the parent class name. Xcode uses this information to populate the file with some initial content.
 
 The final step is to save your file to the file system. When Xcode prompts you for the file’s location, it also asks you to specify group and target information. The group indicates where in your project to place the file, and Xcode selects a default group based on contextual information. Xcode also selects a default target. Make any relevant changes to the target and group values and click Create to create the file.
 
-![A sheet shows the options for copying files, creating groups, and adding files to an existing target.](https://docs-assets.developer.apple.com/published/f315024f296172b99a155b1547233776/files-add-existing%402x.png)
+![A sheet shows the options for copying files, creating groups, and adding files to an existing target.](/images/com.apple.Xcode/files-add-existing@2x.png)
 
 ##### Add Existing Files and Folders to a Project
 
@@ -62,7 +62,7 @@ When adding a local Swift Package’s folder to your project, perform the follow
 
 For more information about managing Swift packages, see [`Swift packages`](swift-packages.md).
 
-> **Note**: To use RealityKit content that you create using Reality Composer Pro, you can add its folder to your Xcode project and link against the Swift Package it contains. For more information about Reality Composer Pro, see [`Composing interactive 3D content with RealityKit and Reality Composer Pro`](https://developer.apple.com/documentation/RealityKit/composing-interactive-3d-content-with-realitykit-and-reality-composer-pro).
+> **Note**: To use RealityKit content that you create using Reality Composer Pro, you can add its folder to your Xcode project and link against the Swift Package it contains. For more information about Reality Composer Pro, see [`Composing interactive 3D content with RealityKit and Reality Composer Pro`](https://developer.apple.com/documentation/realitykit/composing-interactive-3d-content-with-realitykit-and-reality-composer-pro).
 
 ##### Organize Project Files in the Navigator
 

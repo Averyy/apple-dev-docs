@@ -138,7 +138,7 @@ An *empty* `InlineArray`’s size is zero. Its stride and alignment are both one
 
 ### Conforms To
 - [BitwiseCopyable](bitwisecopyable.md)
-- [ContiguousBytes](../Foundation/ContiguousBytes.md)
+- [ContiguousBytes](../foundation/contiguousbytes.md)
 - [ConvertibleFromBytes](convertiblefrombytes.md)
 - [ConvertibleToBytes](convertibletobytes.md)
 - [Copyable](copyable.md)

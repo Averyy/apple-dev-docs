@@ -29,7 +29,7 @@ This method applies the box blur filter to an image. The effect targets a square
 
 The box blur filter uses the following properties:
 
-- **`radius`**: A `float` representing the area of effect as a [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+- **`radius`**: A `float` representing the area of effect as a [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
 - **`inputImage`**: A [`CIImage`](ciimage.md) representing the input image to apply the filter to.
 
 The following code creates a filter that results in less detail in the input image:
@@ -44,7 +44,7 @@ The following code creates a filter that results in less detail in the input ima
     }
 ```
 
-![Two photographs of a beach at sunset with multiple palm trees. The photo on the left is clear and crisp. In the photo on the right, a box blur filter has been applied, resulting in an image with slightly less detail.](https://docs-assets.developer.apple.com/published/a4415b346213b41113657f0b0d8a9c7f/media-3544956%402x.png)
+![Two photographs of a beach at sunset with multiple palm trees. The photo on the left is clear and crisp. In the photo on the right, a box blur filter has been applied, resulting in an image with slightly less detail.](/images/com.apple.coreimage/media-3544956@2x.png)
 
 ## See Also
 

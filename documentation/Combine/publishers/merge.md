@@ -51,7 +51,7 @@ struct Merge<A, B> where A : Publisher, B : Publisher, A.Failure == B.Failure, A
 ## Relationships
 
 ### Conforms To
-- [Equatable](../Swift/Equatable.md)
+- [Equatable](../swift/equatable.md)
 - [Publisher](publisher.md)
 
 ## See Also

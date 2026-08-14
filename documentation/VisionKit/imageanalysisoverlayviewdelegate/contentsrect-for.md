@@ -22,7 +22,7 @@ The rectangle of the image within the view, in unit coordinates. The default ret
 
 #### Discussion
 
-Implement this method if the [`trackingImageView`](imageanalysisoverlayview/trackingimageview.md) type isn’t [`NSImageView`](https://developer.apple.com/documentation/AppKit/NSImageView).
+Implement this method if the [`trackingImageView`](imageanalysisoverlayview/trackingimageview.md) type isn’t [`NSImageView`](https://developer.apple.com/documentation/appkit/nsimageview).
 
 ## Parameters
 

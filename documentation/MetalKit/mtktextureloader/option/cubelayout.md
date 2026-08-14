@@ -23,7 +23,7 @@ static let cubeLayout: MTKTextureLoader.Option
 
 The value for this key is one of the values listed for [`MTKTextureLoader.CubeLayout`](mtktextureloader/cubelayout.md). If this option is omitted, the texture loader does not create a cube texture.
 
-This option cannot be used with PVR files, KTX files, or [`MDLTexture`](https://developer.apple.com/documentation/ModelIO/MDLTexture) objects, which support cube textures directly.
+This option cannot be used with PVR files, KTX files, or [`MDLTexture`](https://developer.apple.com/documentation/modelio/mdltexture) objects, which support cube textures directly.
 
 ## See Also
 

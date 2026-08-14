@@ -7,7 +7,6 @@ An identifier that groups notifications that belong to the same thread.
 
 **Availability**:
 - iOS 26.5+
-- iPadOS 26.5+
 
 ## Declaration
 

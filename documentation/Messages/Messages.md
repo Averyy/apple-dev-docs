@@ -20,7 +20,7 @@ iMessage apps and stickers help people interact and communicate in the context o
 
 iMessage apps leverage the full framework to interact with the Messages app.
 
-> **Note**:  To avoid a crash, an iMessage app linked on or after iOS 10 must include usage description keys for the device features it needs to access in its `Info.plist` file. Specifically, it must include [`NSCameraUsageDescription`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSCameraUsageDescription) to access the device’s camera, and it must include [`NSMicrophoneUsageDescription`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSMicrophoneUsageDescription) to access the device’s microphones.
+> **Note**:  To avoid a crash, an iMessage app linked on or after iOS 10 must include usage description keys for the device features it needs to access in its `Info.plist` file. Specifically, it must include [`NSCameraUsageDescription`](https://developer.apple.com/documentation/bundleresources/information-property-list/nscamerausagedescription) to access the device’s camera, and it must include [`NSMicrophoneUsageDescription`](https://developer.apple.com/documentation/bundleresources/information-property-list/nsmicrophoneusagedescription) to access the device’s microphones.
 
 Use iMessage apps to:
 
@@ -32,10 +32,10 @@ Use iMessage apps to:
 
 For more information on submitting iMessage Apps to the App Store, see [`Preparing Your iMessage App for Submission`](https://developer.apple.comhttps://developer.apple.com/app-store/imessage-app-submissions/).
 
-In iOS 17, Messages allows you to interactively resize iMessage apps with a vertical pan gesture. Messages handles any conflicts between resize gestures and your custom gestures. If your app uses manual touch handling such as [`touchesBegan(_:with:)`](https://developer.apple.com/documentation/UIKit/UIGestureRecognizer/touchesBegan(_:with:)), [`touchesMoved(_:with:)`](https://developer.apple.com/documentation/UIKit/UIGestureRecognizer/touchesMoved(_:with:)), and [`touchesEnded(_:with:)`](https://developer.apple.com/documentation/UIKit/UIGestureRecognizer/touchesEnded(_:with:)), you can do either of the following:
+In iOS 17, Messages allows you to interactively resize iMessage apps with a vertical pan gesture. Messages handles any conflicts between resize gestures and your custom gestures. If your app uses manual touch handling such as [`touchesBegan(_:with:)`](https://developer.apple.com/documentation/uikit/uigesturerecognizer/touchesbegan(_:with:)), [`touchesMoved(_:with:)`](https://developer.apple.com/documentation/uikit/uigesturerecognizer/touchesmoved(_:with:)), and [`touchesEnded(_:with:)`](https://developer.apple.com/documentation/uikit/uigesturerecognizer/touchesended(_:with:)), you can do either of the following:
 
 - Change your manual touch handling code to use a gesture recognizer instead.
-- Use your [`UIView`](https://developer.apple.com/documentation/UIKit/UIView) to override [`gestureRecognizerShouldBegin(_:)`](https://developer.apple.com/documentation/UIKit/UIGestureRecognizerDelegate/gestureRecognizerShouldBegin(_:)) and return `NO` when your iMessage app doesn’t own the gesture.
+- Use your [`UIView`](https://developer.apple.com/documentation/uikit/uiview) to override [`gestureRecognizerShouldBegin(_:)`](https://developer.apple.com/documentation/uikit/uigesturerecognizerdelegate/gesturerecognizershouldbegin(_:)) and return `NO` when your iMessage app doesn’t own the gesture.
 
 ##### Become the Default Messaging App
 

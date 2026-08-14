@@ -16,7 +16,7 @@ func readBuffers() -> [Data]
 
 #### Return Value
 
-An array of [`NSData`](https://developer.apple.com/documentation/Foundation/NSData) object that represents the remaining read buffers memory.
+An array of [`NSData`](https://developer.apple.com/documentation/foundation/nsdata) object that represents the remaining read buffers memory.
 
 #### Discussion
 

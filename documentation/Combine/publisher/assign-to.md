@@ -24,7 +24,7 @@ func assign(to published: inout Published<Self.Output>.Publisher)
 
 Use this operator when you want to receive elements from a publisher and republish them through a property marked with the `@Published` attribute. The `assign(to:)` operator manages the life cycle of the subscription, canceling the subscription automatically when the [`Published`](published.md) instance deinitializes. Because of this, the `assign(to:)` operator doesn’t return an [`AnyCancellable`](anycancellable.md) that you’re responsible for like [`assign(to:on:)`](publisher/assign(to:on:).md) does.
 
-The example below shows a model class that receives elements from an internal [`Timer.TimerPublisher`](https://developer.apple.com/documentation/Foundation/Timer/TimerPublisher), and assigns them to a `@Published` property called `lastUpdated`. Because the `to` parameter has the `inout` keyword, you need to use the `&` operator when calling this method.
+The example below shows a model class that receives elements from an internal [`Timer.TimerPublisher`](https://developer.apple.com/documentation/foundation/timer/timerpublisher), and assigns them to a `@Published` property called `lastUpdated`. Because the `to` parameter has the `inout` keyword, you need to use the `&` operator when calling this method.
 
 ```swift
 class MyModel: ObservableObject {

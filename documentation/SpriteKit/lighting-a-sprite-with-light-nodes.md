@@ -42,7 +42,7 @@ for position in [CGPoint(x: x, y: y), CGPoint(x: y, y: y)] {
 
 The resulting scene shows the two rabbits casting shadows over the background (the light is rendered as a white circle). The noise texture gains a 3D look from the normal mapping:
 
-![Shadow casting and normal mapping](https://docs-assets.developer.apple.com/published/261e62e59e1061db0683dbf9c6d3e2ef/media-2983060%402x.png)
+![Shadow casting and normal mapping](/images/com.apple.spritekit/media-2983060@2x.png)
 
 
 ---

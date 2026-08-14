@@ -14,7 +14,7 @@ Synchronizing multiple audio loops with different tempos requires precise timing
 
 This sample builds a grid-based clip launcher that synchronizes multiple audio loops in real time, adjusting their playback rates to match a main tempo while maintaining sample-accurate timing. The sample uses Swift concurrency features for thread-safe buffer sharing and concurrent audio metering. The app uses an actor to handle file input and audio analysis on background threads, while the main actor manages audio engine operations. The sample demonstrates:
 
-- Automatic BPM detection using the [`Music Understanding`](https://developer.apple.com/documentation/MusicUnderstanding) framework.
+- Automatic BPM detection using the [`Music Understanding`](https://developer.apple.com/documentation/musicunderstanding) framework.
 - Per-track rate adjustment to synchronize loops with different BPMs
 - Quantized clip launching aligned to bar boundaries
 - Drift-free looping through manual buffer rescheduling
@@ -73,7 +73,7 @@ actor ClipLoader {
 }
 ```
 
-The clip loader analyzes audio content to detect BPM using the [`Music Understanding`](https://developer.apple.com/documentation/MusicUnderstanding) framework. For clips shorter than 15 seconds, the `analyzeRhythm` helper repeats the audio to provide enough data for accurate tempo detection.
+The clip loader analyzes audio content to detect BPM using the [`Music Understanding`](https://developer.apple.com/documentation/musicunderstanding) framework. For clips shorter than 15 seconds, the `analyzeRhythm` helper repeats the audio to provide enough data for accurate tempo detection.
 
 #### Configure the Audio Engine
 
@@ -276,7 +276,7 @@ The [`AVAudioUnitVarispeed`](avaudiounitvarispeed.md) node applies the rate chan
 
 #### Perform Audio Metering
 
-The `AudioLevelTap` class monitors audio levels using [`installAudioTap(onBus:bufferSize:format:tapProvider:)`](avaudionode/installaudiotap(onbus:buffersize:format:tapprovider:).md), which receives [`AVReadOnlyAudioPCMBuffer`](avreadonlyaudiopcmbuffer.md) for thread-safe concurrent processing. The tap block runs on the audio thread and uses the [`Accelerate`](https://developer.apple.com/documentation/Accelerate) framework for efficient peak detection:
+The `AudioLevelTap` class monitors audio levels using [`installAudioTap(onBus:bufferSize:format:tapProvider:)`](avaudionode/installaudiotap(onbus:buffersize:format:tapprovider:).md), which receives [`AVReadOnlyAudioPCMBuffer`](avreadonlyaudiopcmbuffer.md) for thread-safe concurrent processing. The tap block runs on the audio thread and uses the [`Accelerate`](https://developer.apple.com/documentation/accelerate) framework for efficient peak detection:
 
 ```swift
 @Observable

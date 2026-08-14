@@ -47,7 +47,7 @@ Text-processing objects that conform to the [`UITextInput`](uitextinput.md) prot
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 ### Conforming Types
 - [UITextInputStringTokenizer](uitextinputstringtokenizer.md)
 

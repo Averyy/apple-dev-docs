@@ -22,7 +22,7 @@ let kSecAttrCertificateType: CFString
 
 #### Discussion
 
-The corresponding value is of type [`CFNumber`](https://developer.apple.com/documentation/CoreFoundation/CFNumber) and denotes the certificate type (see the `CSSM_CERT_TYPE` enumeration in cssmtype.h). Items of class [`kSecClassCertificate`](ksecclasscertificate.md) have this attribute. Read only.
+The corresponding value is of type [`CFNumber`](https://developer.apple.com/documentation/corefoundation/cfnumber) and denotes the certificate type (see the `CSSM_CERT_TYPE` enumeration in cssmtype.h). Items of class [`kSecClassCertificate`](ksecclasscertificate.md) have this attribute. Read only.
 
 
 ---

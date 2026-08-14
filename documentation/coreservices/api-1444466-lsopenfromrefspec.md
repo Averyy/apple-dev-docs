@@ -37,8 +37,8 @@ Thread-safe since Mac OS version 10.2.
 
 ## Parameters
 
-- `inLaunchSpec`: A pointer to a file-based launch specification indicating what to open and how to launch the relevant application or applications; see   for a description of this structure.
-- `outLaunchedRef`: A pointer to a file-system reference that, on return, will identify the application launched; see the   in the Carbon File Management Documentation for a description of the   data type. Pass   if this information is unimportant. If more than one application is launched, the one identified will be the one corresponding to the first item designated in the launch specification.
+- `inLaunchSpec`: A pointer to a file-based launch specification indicating what to open and how to launch the relevant application or applications; see [`LSLaunchFSRefSpec`](lslaunchfsrefspec.md) for a description of this structure.
+- `outLaunchedRef`: A pointer to a file-system reference that, on return, will identify the application launched; see the *File Manager Reference* in the Carbon File Management Documentation for a description of the `FSRef` data type. Pass `NULL` if this information is unimportant. If more than one application is launched, the one identified will be the one corresponding to the first item designated in the launch specification.
 
 ## See Also
 

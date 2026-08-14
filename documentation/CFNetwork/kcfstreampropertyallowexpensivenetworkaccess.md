@@ -21,7 +21,7 @@ let kCFStreamPropertyAllowExpensiveNetworkAccess: CFString
 
 #### Discussion
 
-The default value is [`kCFBooleanTrue`](https://developer.apple.com/documentation/CoreFoundation/kCFBooleanTrue) and allows the use of expensive network interfaces. Set this property to [`kCFBooleanFalse`](https://developer.apple.com/documentation/CoreFoundation/kCFBooleanFalse) to disallow the use of expensive network interfaces. For more information about expensive network interfaces, see [`allowsExpensiveNetworkAccess`](https://developer.apple.com/documentation/Foundation/URLSessionConfiguration/allowsExpensiveNetworkAccess).
+The default value is [`kCFBooleanTrue`](https://developer.apple.com/documentation/corefoundation/kcfbooleantrue) and allows the use of expensive network interfaces. Set this property to [`kCFBooleanFalse`](https://developer.apple.com/documentation/corefoundation/kcfbooleanfalse) to disallow the use of expensive network interfaces. For more information about expensive network interfaces, see [`allowsExpensiveNetworkAccess`](https://developer.apple.com/documentation/foundation/urlsessionconfiguration/allowsexpensivenetworkaccess).
 
 ## See Also
 

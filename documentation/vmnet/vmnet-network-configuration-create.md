@@ -35,7 +35,7 @@ All other parameters are optional and have the following default value:
 - DHCP reservation: none
 - MTU: 1500
 
-Use [`CFRelease`](https://developer.apple.com/documentation/CoreFoundation/CFRelease) to release the network configuration object.
+Use [`CFRelease`](https://developer.apple.com/documentation/corefoundation/cfrelease) to release the network configuration object.
 
 ## Parameters
 

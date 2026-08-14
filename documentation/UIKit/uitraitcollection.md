@@ -34,11 +34,11 @@ To make your view controllers and views responsive to changes in the iOS interfa
 
 To customize view controller animations in response to interface environment changes, override the [`willTransition(to:with:)`](uicontentcontainer/willtransition(to:with:).md) method of the [`UIContentContainer`](uicontentcontainer.md) protocol.
 
-For more information about the horizontal (width) and vertical (height) size classes your app can encounter when running full-screen on various devices, see Human Interface Guidelines > [`Layout`](https://developer.apple.com/design/Human-Interface-Guidelines/layout#iOS-iPadOS-device-size-classes).
+For more information about the horizontal (width) and vertical (height) size classes your app can encounter when running full-screen on various devices, see Human Interface Guidelines > [`Layout`](https://developer.apple.com/design/human-interface-guidelines/layout).
 
 You can create standalone trait collections to assist in matching against specific environments. The [`UITraitCollection`](uitraitcollection.md) class includes four specialized constructors, as well as a constructor that enables you to combine an array of trait collections, [`init(traitsFrom:)`](uitraitcollection/init(traitsfrom:).md).
 
-One important use of standalone trait collections is to enable conditional use of images based on the current iOS interface environment. You can associate a trait collection with a [`UIImage`](uiimage.md) instance by way of a [`UIImageAsset`](uiimageasset.md) instance, as described in the overview section of [`UIImageAsset`](uiimageasset.md). For information on configuring asset catalogs graphically from within the Xcode IDE, see [`Managing assets with asset catalogs`](https://developer.apple.com/documentation/Xcode/managing-assets-with-asset-catalogs).
+One important use of standalone trait collections is to enable conditional use of images based on the current iOS interface environment. You can associate a trait collection with a [`UIImage`](uiimage.md) instance by way of a [`UIImageAsset`](uiimageasset.md) instance, as described in the overview section of [`UIImageAsset`](uiimageasset.md). For information on configuring asset catalogs graphically from within the Xcode IDE, see [`Managing assets with asset catalogs`](https://developer.apple.com/documentation/xcode/managing-assets-with-asset-catalogs).
 
 You can employ a standalone trait collection to enable a two-column split view in landscape orientation on iPhone. See the [`setOverrideTraitCollection(_:forChild:)`](uiviewcontroller/setoverridetraitcollection(_:forchild:).md) method of the [`UIViewController`](uiviewcontroller.md) class.
 
@@ -259,19 +259,19 @@ For information on creating custom traits, see [`Providing data to the view hier
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCoding](../Foundation/NSCoding.md)
-- [NSCopying](../Foundation/NSCopying.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [NSSecureCoding](../Foundation/NSSecureCoding.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCoding](../foundation/nscoding.md)
+- [NSCopying](../foundation/nscopying.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

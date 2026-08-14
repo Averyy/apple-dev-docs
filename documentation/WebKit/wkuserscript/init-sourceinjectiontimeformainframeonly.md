@@ -30,7 +30,7 @@ This method sets the script’s content world to the object in the [`page`](wkco
 
 - `source`: The script’s source code.
 - `injectionTime`: The time at which to inject the script into the webpage. For a list of possible values, see [`WKUserScriptInjectionTime`](wkuserscriptinjectiontime.md).
-- `forMainFrameOnly`: A Boolean value that indicates whether to inject the script into the main frame. Specify [`true`](https://developer.apple.com/documentation/Swift/true) to inject the script only into the main frame, or [`false`](https://developer.apple.com/documentation/Swift/false) to inject it into all frames.
+- `forMainFrameOnly`: A Boolean value that indicates whether to inject the script into the main frame. Specify [`true`](https://developer.apple.com/documentation/swift/true) to inject the script only into the main frame, or [`false`](https://developer.apple.com/documentation/swift/false) to inject it into all frames.
 
 ## See Also
 

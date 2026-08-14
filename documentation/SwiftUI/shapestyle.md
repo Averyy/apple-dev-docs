@@ -58,12 +58,12 @@ Path { path in
     center: .topLeading,
     startRadius: 15,
     endRadius: 80))
-``` ![A screenshot of a quarter of a circle filled with](https://docs-assets.developer.apple.com/published/3785a0af3ac638892cc24860786c4049/ShapeStyle-1%402x.png)
+``` ![A screenshot of a quarter of a circle filled with](/images/com.apple.SwiftUI/ShapeStyle-1@2x.png)
 - Tracing the outline of a shape with a style with either the [`stroke(_:lineWidth:)`](shape/stroke(_:linewidth:).md) or the [`stroke(_:style:)`](shape/stroke(_:style:).md) modifier: ```swift
 RoundedRectangle(cornerRadius: 10)
     .stroke(.mint, lineWidth: 10)
     .frame(width: 200, height: 50)
-``` ![A screenshot of a rounded rectangle, outlined in mint.](https://docs-assets.developer.apple.com/published/71f178536aa4724205ac12cbb26a0d81/ShapeStyle-2%402x.png)
+``` ![A screenshot of a rounded rectangle, outlined in mint.](/images/com.apple.SwiftUI/ShapeStyle-2@2x.png)
 - Styling the foreground elements in a view with the [`foregroundStyle(_:)`](view/foregroundstyle(_:).md) modifier: ```swift
 VStack(alignment: .leading) {
     Text("Primary")
@@ -72,7 +72,7 @@ VStack(alignment: .leading) {
         .font(.caption)
         .foregroundStyle(.secondary)
 }
-``` ![A screenshot of a title in the primary content color above a](https://docs-assets.developer.apple.com/published/25e5e8427d277b3dcfcc1150ea5bc0d1/ShapeStyle-3%402x.png)
+``` ![A screenshot of a title in the primary content color above a](/images/com.apple.SwiftUI/ShapeStyle-3@2x.png)
 
 ## Topics
 
@@ -265,8 +265,8 @@ VStack(alignment: .leading) {
 ## Relationships
 
 ### Inherits From
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 ### Conforming Types
 - [AngularGradient](angulargradient.md)
 - [AnyGradient](anygradient.md)

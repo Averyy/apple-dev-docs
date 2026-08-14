@@ -16,7 +16,7 @@ var temporalLevel: Int16 { get set }
 
 #### Discussion
 
-This value maps to the [`kCMHEVCTemporalLevelInfoKey_TemporalLevel`](https://developer.apple.com/documentation/CoreMedia/kCMHEVCTemporalLevelInfoKey_TemporalLevel) sample buffer attachment, and is `-1` if this information isn’t available.
+This value maps to the [`kCMHEVCTemporalLevelInfoKey_TemporalLevel`](https://developer.apple.com/documentation/coremedia/kcmhevctemporallevelinfokey_temporallevel) sample buffer attachment, and is `-1` if this information isn’t available.
 
 ## See Also
 

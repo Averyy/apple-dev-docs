@@ -31,7 +31,7 @@ Use a [`ConnectablePublisher`](connectablepublisher.md) when you need to perform
 
 This publisher doesn’t produce any elements until you call its [`connect()`](connectablepublisher/connect().md) method.
 
-Use [`makeConnectable()`](publisher/makeconnectable().md) to create a [`ConnectablePublisher`](connectablepublisher.md) from any publisher whose failure type is [`Never`](https://developer.apple.com/documentation/Swift/Never).
+Use [`makeConnectable()`](publisher/makeconnectable().md) to create a [`ConnectablePublisher`](connectablepublisher.md) from any publisher whose failure type is [`Never`](https://developer.apple.com/documentation/swift/never).
 
 ## Topics
 

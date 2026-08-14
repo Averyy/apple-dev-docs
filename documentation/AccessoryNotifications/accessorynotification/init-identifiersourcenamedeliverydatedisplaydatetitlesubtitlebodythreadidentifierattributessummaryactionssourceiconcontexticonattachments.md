@@ -7,7 +7,6 @@ Initializes an accessory notification.
 
 **Availability**:
 - iOS 26.5+
-- iPadOS 26.5+
 
 ## Declaration
 

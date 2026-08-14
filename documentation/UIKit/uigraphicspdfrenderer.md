@@ -26,7 +26,7 @@ To render a PDF:
 
 1. Optionally create a [`UIGraphicsPDFRendererFormat`](uigraphicspdfrendererformat.md) object to specify nondefault parameters the renderer should use to create its context.
 2. Instantiate a [`UIGraphicsPDFRenderer`](uigraphicspdfrenderer.md) object, providing the dimensions of the output image and a format object. The renderer uses sensible defaults for the current device if you don’t provide format object, as demonstrated in [`Creating a graphics PDF renderer`](uigraphicspdfrenderer#Creating-a-graphics-PDF-renderer.md).
-3. Choose one of the rendering methods depending on your desired output: [`pdfData(actions:)`](uigraphicspdfrenderer/pdfdata(actions:).md) outputs the PDF in the form of a [`Data`](https://developer.apple.com/documentation/Foundation/Data) object, and [`writePDF(to:withActions:)`](uigraphicspdfrenderer/writepdf(to:withactions:).md) saves the PDF as a file directly to disk.
+3. Choose one of the rendering methods depending on your desired output: [`pdfData(actions:)`](uigraphicspdfrenderer/pdfdata(actions:).md) outputs the PDF in the form of a [`Data`](https://developer.apple.com/documentation/foundation/data) object, and [`writePDF(to:withActions:)`](uigraphicspdfrenderer/writepdf(to:withactions:).md) saves the PDF as a file directly to disk.
 4. Provide Core Graphics drawing instructions within the closure associated with your chosen method, as shown in [`Creating a PDF with a PDF renderer`](uigraphicspdfrenderer#Creating-a-PDF-with-a-PDF-renderer.md).
 5. Optionally, you can create a multi-page PDF, using the approach shown in [`Adding pages`](uigraphicspdfrenderer#Adding-pages.md).
 6. Optionally, add links to your PDF to make navigation easy, as shown in [`Creating internal links`](uigraphicspdfrenderer#Creating-internal-links.md).
@@ -82,11 +82,11 @@ NSData *pdf = [renderer PDFDataWithActions:^(UIGraphicsPDFRendererContext * _Non
 
 The drawing actions closure takes a single argument of type [`UIGraphicsPDFRendererContext`](uigraphicspdfrenderercontext.md). This provides access to some high-level drawing functions, such as [`fill(_:)`](uigraphicsrenderercontext/fill(_:).md) through the [`UIGraphicsRendererContext`](uigraphicsrenderercontext.md) superclass.
 
-> **Note**:  This code uses a drawing method on [`NSString`](https://developer.apple.com/documentation/Foundation/NSString). If you want to create a PDF with more text, consider using [`TextKit`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Miscellaneous/Conceptual/iPhoneOSTechOverview/iPhoneOSTechnologies/iPhoneOSTechnologies.html#//apple_ref/doc/uid/TP40007898-CH3-SW11) or [`Core Text`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/StringsTextFonts/Conceptual/TextAndWebiPhoneOS/LowerLevelText-HandlingTechnologies/LowerLevelText-HandlingTechnologies.html#//apple_ref/doc/uid/TP40009542-CH15-SW3), both of which provide extensive text layout functionality.
+> **Note**:  This code uses a drawing method on [`NSString`](https://developer.apple.com/documentation/foundation/nsstring). If you want to create a PDF with more text, consider using [`TextKit`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Miscellaneous/Conceptual/iPhoneOSTechOverview/iPhoneOSTechnologies/iPhoneOSTechnologies.html#//apple_ref/doc/uid/TP40007898-CH3-SW11) or [`Core Text`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/StringsTextFonts/Conceptual/TextAndWebiPhoneOS/LowerLevelText-HandlingTechnologies/LowerLevelText-HandlingTechnologies.html#//apple_ref/doc/uid/TP40009542-CH15-SW3), both of which provide extensive text layout functionality.
 
 The above code creates the following result:
 
-![Image of a PDF open in Preview, with the word “Hello!” rendered in large, black lettering in the top-left.](https://docs-assets.developer.apple.com/published/a1502445dbaa2ddde3045eaa89064476/media-2864001%402x.png)
+![Image of a PDF open in Preview, with the word “Hello!” rendered in large, black lettering in the top-left.](/images/com.apple.uikit/media-2864001@2x.png)
 
 ##### Adding Pages
 
@@ -123,7 +123,7 @@ Use the [`beginPage(withBounds:pageInfo:)`](uigraphicspdfrenderercontext/beginpa
 
 This code creates a PDF with three pages, each of which contains the current page number as large text, as shown in the following image.
 
-![Screenshot from Preview showing a 3-page PDF. Each page contains large black lettering which details the current page number.](https://docs-assets.developer.apple.com/published/69c0b1a8802e3a5f9e3d1cd2cfa64c77/media-2864003%402x.png)
+![Screenshot from Preview showing a 3-page PDF. Each page contains large black lettering which details the current page number.](/images/com.apple.uikit/media-2864003@2x.png)
 
 ##### Creating Internal Links
 
@@ -192,11 +192,11 @@ NSData *pdf = [renderer PDFDataWithActions:^(UIGraphicsPDFRendererContext * _Non
 
 This code adds large red labels that jump from the current page to the next page when clicked. Each page has a destination with names of the form `page-1`, positioned at the origin. The bounding box for the next-page label is the link to the destination on the following page.
 
-> **Note**:  The [`addDestination(withName:at:)`](uigraphicspdfrenderercontext/adddestination(withname:at:).md) and [`setDestinationWithName(_:for:)`](uigraphicspdfrenderercontext/setdestinationwithname(_:for:).md) methods on [`UIGraphicsPDFRendererContext`](uigraphicspdfrenderercontext.md) use the underlying PDF coordinate space, which has its y-axis flipped with respect to the coordinate system used by Core Graphics. You can translate between the two using the [`userSpaceToDeviceSpaceTransform`](https://developer.apple.com/documentation/CoreGraphics/CGContext/userSpaceToDeviceSpaceTransform) property on [`CGContext`](https://developer.apple.com/documentation/CoreGraphics/CGContext), as shown in the code.
+> **Note**:  The [`addDestination(withName:at:)`](uigraphicspdfrenderercontext/adddestination(withname:at:).md) and [`setDestinationWithName(_:for:)`](uigraphicspdfrenderercontext/setdestinationwithname(_:for:).md) methods on [`UIGraphicsPDFRendererContext`](uigraphicspdfrenderercontext.md) use the underlying PDF coordinate space, which has its y-axis flipped with respect to the coordinate system used by Core Graphics. You can translate between the two using the [`userSpaceToDeviceSpaceTransform`](https://developer.apple.com/documentation/coregraphics/cgcontext/userspacetodevicespacetransform) property on [`CGContext`](https://developer.apple.com/documentation/coregraphics/cgcontext), as shown in the code.
 
 The above code results in the following PDF:
 
-![Screenshot from Preview showing a 3-page PDFs with red links entitled “Next Page” at the bottom-right of each page.](https://docs-assets.developer.apple.com/published/9cae1cc7f0812418f8639b4d40da5e94/media-2864256%402x.png)
+![Screenshot from Preview showing a 3-page PDFs with red links entitled “Next Page” at the bottom-right of each page.](/images/com.apple.uikit/media-2864256@2x.png)
 
 ## Topics
 
@@ -216,14 +216,14 @@ The above code results in the following PDF:
 ### Inherits From
 - [UIGraphicsRenderer](uigraphicsrenderer.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

@@ -21,24 +21,24 @@ Using ImageCaptureCore, your app can:
 - Take photos directly on a connected camera using tethered capture
 - Perform overview scans and scans on a connected scanner
 
-![Diagram showing a macOS device connected by cables to a camera and a scanner, and an iPadOS device connected by cable to a camera.](https://docs-assets.developer.apple.com/published/0060df4265c83f5384bad802fb263ffd/media-3501083%402x.png)
+![Diagram showing a macOS device connected by cables to a camera and a scanner, and an iPadOS device connected by cable to a camera.](/images/com.apple.imagecapturecore/media-3501083@2x.png)
 
 ##### Configuring Tethered Capture and Photo Import
 
-To import pictures and tether from a macOS app, you first need to enable the Hardened Runtime capability in Xcode, and then add the [`Photos Library Entitlement`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.security.personal-information.photos-library).
+To import pictures and tether from a macOS app, you first need to enable the Hardened Runtime capability in Xcode, and then add the [`Photos Library Entitlement`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.security.personal-information.photos-library).
 
-Before you can tether from an iOS app, you need to tell the user why the app is requesting access to an external camera. Add the [`NSCameraUsageDescription`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSCameraUsageDescription) key to your `Info.plist` file with a description of your intended use.
+Before you can tether from an iOS app, you need to tell the user why the app is requesting access to an external camera. Add the [`NSCameraUsageDescription`](https://developer.apple.com/documentation/bundleresources/information-property-list/nscamerausagedescription) key to your `Info.plist` file with a description of your intended use.
 
-> ❗ **Important**:  In macOS 14 and later, use the [`com.apple.security.device.usb`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.security.device.usb) entitlement key to allow your sandboxed app to interact with USB devices.
+> ❗ **Important**:  In macOS 14 and later, use the [`com.apple.security.device.usb`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.security.device.usb) entitlement key to allow your sandboxed app to interact with USB devices.
 
 ## Topics
 
 ### Essentials
 - [class ICDeviceBrowser](icdevicebrowser.md)
   An object for finding digital cameras and scanners.
-- [Photos Library Entitlement](../BundleResources/Entitlements/com.apple.security.personal-information.photos-library.md)
+- [Photos Library Entitlement](../bundleresources/entitlements/com.apple.security.personal-information.photos-library.md)
   A Boolean value that indicates whether the app has read-write access to the user’s Photos library.
-- [NSCameraUsageDescription](../BundleResources/Information-Property-List/NSCameraUsageDescription.md)
+- [NSCameraUsageDescription](../bundleresources/information-property-list/nscamerausagedescription.md)
   A message that tells people why the app is requesting access to the device’s camera.
 ### Cameras
 - [class ICCameraDevice](iccameradevice.md)

@@ -22,7 +22,7 @@ let kCGImageSourceSubsampleFactor: CFString
 
 #### Discussion
 
-When you specify this key, the image source scales down the image data by the specified numerical factor. The value of this key must be a [`CFNumber`](https://developer.apple.com/documentation/CoreFoundation/CFNumber) containing the integer value 2, 4, or 8. If the image doesn’t support the specified scale factor, the image source provides a larger or full-size normal image.
+When you specify this key, the image source scales down the image data by the specified numerical factor. The value of this key must be a [`CFNumber`](https://developer.apple.com/documentation/corefoundation/cfnumber) containing the integer value 2, 4, or 8. If the image doesn’t support the specified scale factor, the image source provides a larger or full-size normal image.
 
 Image sources support this option only for JPEG, HEIF, TIFF, and PNG images.
 

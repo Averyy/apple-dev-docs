@@ -7,7 +7,7 @@ An atom where you define and store data associated with a QuickTime object.
 
 #### Overview
 
-For more information, see [`User data atom ('udta')`](user_data_atom.md).
+For more information, see [`User data atom`](user_data_atom.md).
 
 ## See Also
 

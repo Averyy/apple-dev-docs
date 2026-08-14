@@ -25,8 +25,8 @@ A attachment content that doesn’t contain any content.
 
 ### Conforms To
 - [AttachmentContent](attachmentcontent.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

@@ -20,18 +20,18 @@ case nonEvictableChildren
 
 #### Discussion
 
-The [`NSFileProviderManager`](nsfileprovidermanager.md) throws this error when you attempt to evict a directory that contains items that it can’t evict. The system sets the error’s [`underlyingErrors`](https://developer.apple.com/documentation/Foundation/NSError/underlyingErrors) property to an array of errors that indicate the nonevictable content.
+The [`NSFileProviderManager`](nsfileprovidermanager.md) throws this error when you attempt to evict a directory that contains items that it can’t evict. The system sets the error’s [`underlyingErrors`](https://developer.apple.com/documentation/foundation/nserror/underlyingerrors) property to an array of errors that indicate the nonevictable content.
 
-> ❗ **Important**:  The system limits the number of items in the [`underlyingErrors`](https://developer.apple.com/documentation/Foundation/CocoaError/underlyingErrors) array, so it may not represent the complete list of nonevictable items in the directory.
+> ❗ **Important**:  The system limits the number of items in the [`underlyingErrors`](https://developer.apple.com/documentation/foundation/cocoaerror/underlyingerrors) array, so it may not represent the complete list of nonevictable items in the directory.
 
-The [`underlyingErrors`](https://developer.apple.com/documentation/Foundation/CocoaError/underlyingErrors) array contains the following possible values:
+The [`underlyingErrors`](https://developer.apple.com/documentation/foundation/cocoaerror/underlyingerrors) array contains the following possible values:
 
 - **`EBUSY`**: The item has an open file descriptor.
 - **`EMLINK`**: The item has too many hard links.
 - **[`NSFileProviderError.Code.nonEvictable`](nsfileprovidererror/code/nonevictable.md)**: The File Provider has marked the item as nonevictable.
 - **[`NSFileProviderError.Code.unsyncedEdits`](nsfileprovidererror/code/unsyncededits.md)**: The item contains unsynced changes.
 
-Each error has an [`NSURLErrorKey`](https://developer.apple.com/documentation/Foundation/NSURLErrorKey) to identify the file or directory that the error affects.
+Each error has an [`NSURLErrorKey`](https://developer.apple.com/documentation/foundation/nsurlerrorkey) to identify the file or directory that the error affects.
 
 ## See Also
 

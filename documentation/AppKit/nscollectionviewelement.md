@@ -38,7 +38,7 @@ Collection view items—that is, instances of the [`NSCollectionViewItem`](nscol
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 - [NSUserInterfaceItemIdentification](nsuserinterfaceitemidentification.md)
 ### Inherited By
 - [NSCollectionViewSectionHeaderView](nscollectionviewsectionheaderview.md)

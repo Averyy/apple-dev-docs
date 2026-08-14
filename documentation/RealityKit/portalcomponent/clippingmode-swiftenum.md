@@ -43,7 +43,7 @@ With [`PortalComponent.ClippingMode.volume(_:)`](portalcomponent/clippingmode-sw
 ## Relationships
 
 ### Conforms To
-- [Equatable](../Swift/Equatable.md)
+- [Equatable](../swift/equatable.md)
 
 
 ---

@@ -19,7 +19,7 @@ Create a new Xcode project for your app and apply the following settings to your
 
 1. Add the Managed Network Credentials (development) capability to your project — select your app’s target in the project navigator, click on capabilities, and search for “Manage Thread Network Credentials.” Double-click on the resulting entitlement to add it to your app’s entitlements.
 2. In your app, add `import ThreadNetwork` to import the Thread framework support.
-3. Add Thread Border Router configuration and management capabilities to your app; for information on router configuration, see [`Configuring a Border Router`](configuring-a-border-router.md). For information on managing credentials, see [`com.apple.developer.networking.manage-thread-network-credentials`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.networking.manage-thread-network-credentials).
+3. Add Thread Border Router configuration and management capabilities to your app; for information on router configuration, see [`Configuring a Border Router`](configuring-a-border-router.md). For information on managing credentials, see [`com.apple.developer.networking.manage-thread-network-credentials`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.networking.manage-thread-network-credentials).
 
 #### Perform Required Conformance Testing
 

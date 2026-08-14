@@ -20,7 +20,7 @@ virtual bool initWithCapacity(
 
 Not for general use. Use the static instance creation method withCapacity instead.
 
-`capacity` must be nonzero. The new set will grow as needed to accommodate more key/object pairs (`CFMutableSet`, for which the initial capacity is a hard limit).
+`capacity` must be nonzero. The new set will grow as needed to accommodate more key/object pairs (*unlike*[`CFMutableSet`](https://developer.apple.com/documentation/corefoundation/cfmutableset), for which the initial capacity is a hard limit).
 
 ## Parameters
 

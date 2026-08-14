@@ -8,7 +8,7 @@ Customize a toolbar item for your Safari app extension.
 
 Safari has a user-customizable toolbar that can contain a selection of buttons. A Safari app extension can provide a new toolbar item, and when the Safari app extension is in an enabled state, Safari adds that item to the toolbar by default. The user may choose to hide your toolbar item by customizing the toolbar.
 
-![A screenshot of the Safari toolbar. It shows standard toolbar items, as well as an app extension toolbar item that looks like a lightning bolt inside a circle. ](https://docs-assets.developer.apple.com/published/c4108e139b0ba0285b01ac6b2fb411b1/media-2958181%402x.png)
+![A screenshot of the Safari toolbar. It shows standard toolbar items, as well as an app extension toolbar item that looks like a lightning bolt inside a circle. ](/images/com.apple.safariservices/media-2958181@2x.png)
 
 Your app extension can enable or disable the toolbar item or add a badge with text to it. When the user clicks it, the toolbar item can either execute a command or display a popover. The decision of which behavior to implement occurs at design time. For more information, see [`Display a popover for a toolbar item`](adjusting-settings-for-a-toolbar-item#Display-a-popover-for-a-toolbar-item.md).
 
@@ -28,7 +28,7 @@ Provide an `InfoPlist.strings` file and include localized text for a custom key 
 "Toolbar Button Label for Identifier: translate" = "Przetłumacz";
 ```
 
-For more information, see [`Managing your app’s information property list values`](https://developer.apple.com/documentation/BundleResources/managing-your-app-s-information-property-list#Localize-the-Information-Property-List).
+For more information, see [`Managing your app’s information property list values`](https://developer.apple.com/documentation/bundleresources/managing-your-app-s-information-property-list).
 
 ##### Dynamically Change the Image of a Toolbar Item
 

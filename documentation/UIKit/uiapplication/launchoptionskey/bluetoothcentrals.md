@@ -20,9 +20,9 @@ static let bluetoothCentrals: UIApplication.LaunchOptionsKey
 
 #### Discussion
 
-The presence of this key indicates that the app previously had one or more [`CBCentralManager`](https://developer.apple.com/documentation/CoreBluetooth/CBCentralManager) objects and was relaunched by the Bluetooth system to continue actions associated with those objects. The value of this key is an [`NSArray`](https://developer.apple.com/documentation/Foundation/NSArray) object containing one or more [`NSString`](https://developer.apple.com/documentation/Foundation/NSString) objects.
+The presence of this key indicates that the app previously had one or more [`CBCentralManager`](https://developer.apple.com/documentation/corebluetooth/cbcentralmanager) objects and was relaunched by the Bluetooth system to continue actions associated with those objects. The value of this key is an [`NSArray`](https://developer.apple.com/documentation/foundation/nsarray) object containing one or more [`NSString`](https://developer.apple.com/documentation/foundation/nsstring) objects.
 
-Each string in the array represents the restoration identifier for a central manager object. This is the same string you assigned to the [`CBCentralManagerOptionRestoreIdentifierKey`](https://developer.apple.com/documentation/CoreBluetooth/CBCentralManagerOptionRestoreIdentifierKey) key when you initialized the central manager object previously. The system provides the restoration identifiers only for central managers that had active or pending peripheral connections or were scanning for peripherals.
+Each string in the array represents the restoration identifier for a central manager object. This is the same string you assigned to the [`CBCentralManagerOptionRestoreIdentifierKey`](https://developer.apple.com/documentation/corebluetooth/cbcentralmanageroptionrestoreidentifierkey) key when you initialized the central manager object previously. The system provides the restoration identifiers only for central managers that had active or pending peripheral connections or were scanning for peripherals.
 
 ## See Also
 

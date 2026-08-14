@@ -26,7 +26,7 @@ You create a mutable set object using either the [`CFSetCreateMutable(_:_:_:)`](
 
 CFMutableSet provides several functions for adding and removing values from a set. The [`CFSetAddValue(_:_:)`](cfsetaddvalue(_:_:).md) function adds a value to a set and [`CFSetRemoveValue(_:_:)`](cfsetremovevalue(_:_:).md) removes a value from a set.
 
-CFMutableSet is “toll-free bridged” with its Cocoa Foundation counterpart, [`NSMutableSet`](https://developer.apple.com/documentation/Foundation/NSMutableSet). What this means is that the Core Foundation type is interchangeable in function or method calls with the bridged Foundation object. This means that in a method where you see an `NSMutableSet *` parameter, you can pass in a `CFMutableSetRef`, and in a function where you see a `CFMutableSetRef` parameter, you can pass in an NSMutableSet instance. This also applies to concrete subclasses of NSMutableSet. See [`Toll-Free Bridged Types`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFDesignConcepts/Articles/tollFreeBridgedTypes.html#//apple_ref/doc/uid/TP40010677) for more information on toll-free bridging.
+CFMutableSet is “toll-free bridged” with its Cocoa Foundation counterpart, [`NSMutableSet`](https://developer.apple.com/documentation/foundation/nsmutableset). What this means is that the Core Foundation type is interchangeable in function or method calls with the bridged Foundation object. This means that in a method where you see an `NSMutableSet *` parameter, you can pass in a `CFMutableSetRef`, and in a function where you see a `CFMutableSetRef` parameter, you can pass in an NSMutableSet instance. This also applies to concrete subclasses of NSMutableSet. See [`Toll-Free Bridged Types`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFDesignConcepts/Articles/tollFreeBridgedTypes.html#//apple_ref/doc/uid/TP40010677) for more information on toll-free bridging.
 
 ## Topics
 
@@ -51,8 +51,8 @@ CFMutableSet is “toll-free bridged” with its Cocoa Foundation counterpart, [
 ### Inherits From
 - [CFSet](cfset.md)
 ### Conforms To
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
 
 ## See Also
 

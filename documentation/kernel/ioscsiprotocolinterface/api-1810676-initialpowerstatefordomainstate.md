@@ -22,7 +22,7 @@ Power management calls this method once, when the driver is initializing power m
 
 ## Parameters
 
-- `flags`: Flags that describe the character of "domain power"; they represent the   field of a state in the power domain's power state array.
+- `flags`: Flags that describe the character of "domain power"; they represent the `outputPowerCharacter` field of a state in the power domain's power state array.
 
 ## See Also
 

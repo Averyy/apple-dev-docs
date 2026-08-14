@@ -25,7 +25,7 @@ This method runs asynchronously. As soon as it finishes looking up the preferred
 
 By default, the preferred units are based on the device’s current locale. For example, in the US, the preferred units for the [`bodyMass`](hkquantitytypeidentifier/bodymass.md) identifier are pounds. Other regions may use kilograms or stones. However, users can change their preferred units in the Health app at any time.
 
-Your app should present HealthKit data using the current preferred units (see the [`bloodGlucose`](hkquantitytypeidentifier/bloodglucose.md) results identifier for an exception). You should also observe the [`HKUserPreferencesDidChange`](https://developer.apple.com/documentation/Foundation/NSNotification/Name-swift.struct/HKUserPreferencesDidChange) notification, and update the user interface whenever the user changes his or her preferred units.
+Your app should present HealthKit data using the current preferred units (see the [`bloodGlucose`](hkquantitytypeidentifier/bloodglucose.md) results identifier for an exception). You should also observe the [`HKUserPreferencesDidChange`](https://developer.apple.com/documentation/foundation/nsnotification/name-swift.struct/hkuserpreferencesdidchange) notification, and update the user interface whenever the user changes his or her preferred units.
 
 > **Note**:  The results returned by this method are based on your app’s permissions: - If you have never requested access for a type, this method returns an authorization not determined error.
 - If the user denied access to a type, this method returns the default units for the device’s current locale for that type.
@@ -41,7 +41,7 @@ Your app should present HealthKit data using the current preferred units (see th
 
 - [func preferredWorkoutZoneConfiguration(for: HKQuantityType) async throws -> HKWorkoutZoneConfiguration?](hkhealthstore/preferredworkoutzoneconfiguration(for:).md)
   Returns a person’s preferred zone configuration for a quantity type.
-- [static let HKUserPreferencesDidChange: NSNotification.Name](../Foundation/NSNotification/Name-swift.struct/HKUserPreferencesDidChange.md)
+- [static let HKUserPreferencesDidChange: NSNotification.Name](../foundation/nsnotification/name-swift.struct/hkuserpreferencesdidchange.md)
   Notifies observers whenever the user changes his or her preferred units.
 
 

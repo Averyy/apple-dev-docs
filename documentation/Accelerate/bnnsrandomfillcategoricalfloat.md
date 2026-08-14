@@ -55,7 +55,7 @@ For example, the following code fills an array descriptor with 1024 random integ
 
 The following graph shows the normalized event probabilities as a line chart and a histogram of the normalized random values as a bar chart:
 
-![A line chart overlaid on a bar chart, with peaks at 3 and 11 on the x-axis.](https://docs-assets.developer.apple.com/published/eecfe86412e2c92e86da258ff8ba00e2/media-4182664%402x.png)
+![A line chart overlaid on a bar chart, with peaks at 3 and 11 on the x-axis.](/images/com.apple.accelerate/media-4182664@2x.png)
 
 ## Parameters
 

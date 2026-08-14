@@ -8,7 +8,7 @@ Let users choose the music they want to play by displaying a media picker interf
 
 Add a media picker view controller to your app to enable users to choose music items from their Apple Music library without leaving your app. You can configure the media picker to accept single or multiple items from the user.
 
-> ❗ **Important**:  Your app’s `Info.plist` file must include the [`NSAppleMusicUsageDescription`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSAppleMusicUsageDescription) key prior to accessing the user’s music library. If that key isn’t present, displaying the media picker causes your app to exit.
+> ❗ **Important**:  Your app’s `Info.plist` file must include the [`NSAppleMusicUsageDescription`](https://developer.apple.com/documentation/bundleresources/information-property-list/nsapplemusicusagedescription) key prior to accessing the user’s music library. If that key isn’t present, displaying the media picker causes your app to exit.
 
 ##### Adopt the Protocol and Create the System Music Player
 
@@ -38,11 +38,11 @@ Set the media picker view controller as a popover presentation controller when y
 
 To create a button that gives the user access to their Apple Music library from within your app:
 
-1. Add a [`UIButton`](https://developer.apple.com/documentation/UIKit/UIButton) object, and name it Select Songs.
+1. Add a [`UIButton`](https://developer.apple.com/documentation/uikit/uibutton) object, and name it Select Songs.
 2. Attach restraints to center the button in the display.
 3. Control-drag from the new button object to View Controller in the Outline view, and select `selectSongs:` from the menu that appears.
 
-![The Xcode Outline View and Canvas displayed side-by-side.](https://docs-assets.developer.apple.com/published/90637eda70d37f70a1b4c4fca3fa4d57/media-3405904%402x.png)
+![The Xcode Outline View and Canvas displayed side-by-side.](/images/com.apple.mediaplayer/media-3405904@2x.png)
 
 The Select Songs button is the source view for the media picker that the view controller presents modally. The media picker displays the user’s Apple Music library, which allows them to choose the music they want to play.
 

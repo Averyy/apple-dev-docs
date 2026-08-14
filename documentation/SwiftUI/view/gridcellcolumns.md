@@ -53,7 +53,7 @@ Grid(alignment: .leadingFirstTextBaseline) {
 
 The [`Toggle`](toggle.md) in the example above spans the column that contains the font names and the column that contains the buttons:
 
-![A screenshot of a configuration view, arranged in a grid. The grid](https://docs-assets.developer.apple.com/published/4f5b4b93d67b82887d0e3b515f084470/View-gridCellColumns-1-macOS%402x.png)
+![A screenshot of a configuration view, arranged in a grid. The grid](/images/com.apple.SwiftUI/View-gridCellColumns-1-macOS@2x.png)
 
 > ❗ **Important**: When you tell a cell to span multiple columns, the grid changes the merged cell to use anchor alignment, rather than the usual alignment guides. For information about the behavior of anchor alignment, see [`gridCellAnchor(_:)`](view/gridcellanchor(_:).md).
 

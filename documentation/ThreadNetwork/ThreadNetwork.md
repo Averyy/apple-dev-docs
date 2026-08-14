@@ -16,7 +16,7 @@ Create robust, smart device networks using Thread Border Routers.
 
 The [`Thread`](https://developer.apple.comhttps://www.threadgroup.org) standard is a low-power, wireless mesh networking protocol that runs over standard Internet protocols that allows smart home devices — such as Apple Home—compatible devices — to communicate with each other. Mesh networks are peer-to-peer networks that don’t have a single, centrally defined router, eliminating the risk of a single point of failure. They can dynamically reconfigure themselves and discover nearby peer devices with shared credentials. This allows them to maintain communication even when some devices go offline, like the following image illustrates:
 
-![A cross-cut section of a two-story house. The living room on the bottom floor shows a fan, a HomePod mini, a light bulb, and a remote, all connected wirelessly with Thread. The upstairs rooms have a ceiling fan, a HomePod, several light bulbs, and a wall plug connected wirelessly with Thread. The kitchen on the first floor has an oven and a light bulb connected wirelessly to Thread. The front yard has a landscape light under a tree connected wireless to Thread.](https://docs-assets.developer.apple.com/published/7c8ccd1019a7919ab4ed39e7ee04d814/threadnetwork-1%402x.png)
+![A cross-cut section of a two-story house. The living room on the bottom floor shows a fan, a HomePod mini, a light bulb, and a remote, all connected wirelessly with Thread. The upstairs rooms have a ceiling fan, a HomePod, several light bulbs, and a wall plug connected wirelessly with Thread. The kitchen on the first floor has an oven and a light bulb connected wirelessly to Thread. The front yard has a landscape light under a tree connected wireless to Thread.](/images/com.apple.ThreadNetwork/threadnetwork-1@2x.png)
 
 The robustness of Thread relies on member devices forwarding packets to their neighbors; this creates a mesh that strengthens and increases its reliability as people add more devices. The mesh can also provide faster communication, especially over large networks, because there are more paths for messages to take across the network.
 
@@ -35,7 +35,7 @@ A Thread network can contain several types of devices that someone can deploy in
 
 The following image illustrates the connections between a Border Router, an end device, and a sleepy end device:
 
-![A Thread Border Router connects wirelessly to two end devices. One is an end device icon that represents a light switch. The other is a sleepy end device icon that represents a wireless, battery-powered sensor.](https://docs-assets.developer.apple.com/published/1c35203952259f42eb47e0efb735ae20/threadnetwork-2%402x.png)
+![A Thread Border Router connects wirelessly to two end devices. One is an end device icon that represents a light switch. The other is a sleepy end device icon that represents a wireless, battery-powered sensor.](/images/com.apple.ThreadNetwork/threadnetwork-2@2x.png)
 
 To learn more about Thread, visit the [`OpenThread Guides`](https://developer.apple.comhttps://openthread.io/guides) and [`What is Thread?`](https://developer.apple.comhttps://www.threadgroup.org/What-is-Thread/Overview)
 
@@ -53,7 +53,7 @@ To learn more about the process of ThreadNetwork development, see [`Getting star
 - [Managing Thread network credentials](managing-thread-network-credentials.md)
   Store, retrieve, update, and delete Thread network credentials on your Apple device.
 ### Managing clients and sharing credentials
-- [com.apple.developer.networking.manage-thread-network-credentials](../BundleResources/Entitlements/com.apple.developer.networking.manage-thread-network-credentials.md)
+- [com.apple.developer.networking.manage-thread-network-credentials](../bundleresources/entitlements/com.apple.developer.networking.manage-thread-network-credentials.md)
   A Boolean value that indicates whether the app can use ThreadNetwork.
 - [class THClient](thclient.md)
   A class that supports safely sharing Thread credentials between multiple clients.

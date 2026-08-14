@@ -27,13 +27,13 @@ let kSecAttrAccessGroup: CFString
 
 #### Discussion
 
-The corresponding value is of type [`CFString`](https://developer.apple.com/documentation/CoreFoundation/CFString) and indicates the item’s one and only access group.
+The corresponding value is of type [`CFString`](https://developer.apple.com/documentation/corefoundation/cfstring) and indicates the item’s one and only access group.
 
 For an app to access a keychain item, one of the groups to which the app belongs must be the item’s group. The list of an app’s access groups consists of the following string identifiers, in this order:
 
-- The strings in the app’s [`Keychain Access Groups Entitlement`](https://developer.apple.com/documentation/BundleResources/Entitlements/keychain-access-groups)
+- The strings in the app’s [`Keychain Access Groups Entitlement`](https://developer.apple.com/documentation/bundleresources/entitlements/keychain-access-groups)
 - The app ID string
-- The strings in the [`App Groups Entitlement`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.security.application-groups)
+- The strings in the [`App Groups Entitlement`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.security.application-groups)
 
 Two or more apps that are in the same access group can share keychain items. For more details, see [`Sharing access to keychain items among a collection of apps`](sharing-access-to-keychain-items-among-a-collection-of-apps.md).
 

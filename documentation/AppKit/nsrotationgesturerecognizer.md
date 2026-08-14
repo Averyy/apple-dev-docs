@@ -18,7 +18,7 @@ class NSRotationGestureRecognizer
 
 This rotation gesture implies that the underlying view should rotate in a matching direction. The gesture is recognized when the trackpad touches end.
 
-Upon creation, the gesture recognizer sets the value of the [`delaysRotationEvents`](nsgesturerecognizer/delaysrotationevents.md) property to [`true`](https://developer.apple.com/documentation/Swift/true).
+Upon creation, the gesture recognizer sets the value of the [`delaysRotationEvents`](nsgesturerecognizer/delaysrotationevents.md) property to [`true`](https://developer.apple.com/documentation/swift/true).
 
 ## Topics
 
@@ -33,15 +33,15 @@ Upon creation, the gesture recognizer sets the value of the [`delaysRotationEven
 ### Inherits From
 - [NSGestureRecognizer](nsgesturerecognizer.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCoding](../Foundation/NSCoding.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCoding](../foundation/nscoding.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

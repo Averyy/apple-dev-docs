@@ -26,7 +26,7 @@ The object for the specified URL.
 
 ## Parameters
 
-- `value`: A URL to produce an [`NSObject`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class) from.
+- `value`: A URL to produce an [`NSObject`](https://developer.apple.com/documentation/objectivec/nsobject-swift.class) from.
 
 ## See Also
 

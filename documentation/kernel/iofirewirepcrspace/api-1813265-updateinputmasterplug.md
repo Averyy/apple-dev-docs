@@ -15,8 +15,8 @@ virtual IOReturn updateInputMasterPlug(
 
 ## Parameters
 
-- `oldVal`: Value returned by  .
-- `newVal`: New value to store in plug if it’s current value is  .
+- `oldVal`: Value returned by [`readInputMasterPlug`](iofirewirepcrspace/1556248-readinputmasterplug.md).
+- `newVal`: New value to store in plug if it’s current value is `oldVal`.
 
 ## See Also
 

@@ -51,7 +51,7 @@ A [`CXProvider`](cxprovider.md) object is responsible for reporting out-of-band 
   Reports a new incoming call with the specified unique identifier to the provider.
 - [class func reportNewIncomingVoIPPushPayload([AnyHashable : Any], completion: (((any Error)?) -> Void)?)](cxprovider/reportnewincomingvoippushpayload(_:completion:).md)
   Reports a new incoming call after your notification service extension decrypts a VoIP call request.
-- [com.apple.developer.usernotifications.filtering](../BundleResources/Entitlements/com.apple.developer.usernotifications.filtering.md)
+- [com.apple.developer.usernotifications.filtering](../bundleresources/entitlements/com.apple.developer.usernotifications.filtering.md)
   Enable receiving notifications without displaying the notification to the user.
 - [func reportOutgoingCall(with: UUID, startedConnectingAt: Date?)](cxprovider/reportoutgoingcall(with:startedconnectingat:).md)
   Reports to the provider that an outgoing call with the specified unique identifier started connecting at a particular time.
@@ -85,14 +85,14 @@ A [`CXProvider`](cxprovider.md) object is responsible for reporting out-of-band 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 
@@ -106,7 +106,7 @@ A [`CXProvider`](cxprovider.md) object is responsible for reporting out-of-band 
   Use the CallKit framework to integrate native VoIP calling.
 - [Preparing your app to be the default calling app](preparing-your-app-to-be-the-default-calling-app.md)
   Configure your CallKit or LiveCommunicationKit app so people can set it as the default calling app on their device.
-- [CallKit updates](../Updates/CallKit.md)
+- [CallKit updates](../updates/callkit.md)
   Learn about important changes to CallKit.
 
 

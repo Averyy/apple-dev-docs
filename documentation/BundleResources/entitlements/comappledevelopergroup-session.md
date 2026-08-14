@@ -22,7 +22,7 @@ A Boolean value that indicates whether the app may implement shared group experi
 
 To add this entitlement to your app, enable the Group Activities capability in Xcode. This entitlement applies only to apps.
 
-Use this entitlement to create group experiences with the [`Group Activities`](https://developer.apple.com/documentation/GroupActivities) framework.
+Use this entitlement to create group experiences with the [`Group Activities`](https://developer.apple.com/documentation/groupactivities) framework.
 
 
 ---

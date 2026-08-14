@@ -18,7 +18,7 @@ optional func speechSynthesizer(_ sender: NSSpeechSynthesizer, didFinishSpeaking
 ## Parameters
 
 - `sender`: An [`NSSpeechSynthesizer`](nsspeechsynthesizer.md) object that has stopped speaking into the sound output device.
-- `finishedSpeaking`: [`true`](https://developer.apple.com/documentation/Swift/true) when speaking completed normally, [`false`](https://developer.apple.com/documentation/Swift/false) if speaking is stopped prematurely for any reason.
+- `finishedSpeaking`: [`true`](https://developer.apple.com/documentation/swift/true) when speaking completed normally, [`false`](https://developer.apple.com/documentation/swift/false) if speaking is stopped prematurely for any reason.
 
 ## See Also
 

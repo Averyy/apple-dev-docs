@@ -16,7 +16,7 @@ Add actions to the document browser’s context menu.
 
 Use the File Provider UI extension to add custom actions to your File Provider extension. These actions appear if the user long presses an item while browsing your file provider’s content. When the user selects your action, the system displays your custom user interface, where the user completes the action. After the user is finished, you must explicitly cancel or complete the action.
 
-For more about File Provider extensions, see [`File Provider`](https://developer.apple.com/documentation/FileProvider).
+For more about File Provider extensions, see [`File Provider`](https://developer.apple.com/documentation/fileprovider).
 
 For more about creating extensions, see [`App Extension Programming Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Conceptual/ExtensibilityPG/index.html#//apple_ref/doc/uid/TP40014214).
 

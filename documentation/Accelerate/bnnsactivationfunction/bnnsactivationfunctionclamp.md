@@ -38,7 +38,7 @@ var activation = BNNSActivation(function: .clamp,
 
 The following illustrates the output that the activation function generates from inputs in the range `-10...10`:
 
-![Graph that shows input values for the activation function on horizontal axis and its output values on vertical axis. ](https://docs-assets.developer.apple.com/published/beed2d6163b4fc226d65d1ff6fc3e383/media-3401544%402x.png)
+![Graph that shows input values for the activation function on horizontal axis and its output values on vertical axis. ](/images/com.apple.accelerate/media-3401544@2x.png)
 
 ## See Also
 

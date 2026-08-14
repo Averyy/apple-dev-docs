@@ -24,7 +24,7 @@ Thread safe starting in OS X v10.3.
 
 ## Parameters
 
-- `ref`: The   to dispose of. Acquired from a previous call to  .
+- `ref`: The [`AERemoteProcessResolverRef`](aeremoteprocessresolverref.md) to dispose of. Acquired from a previous call to [`AECreateRemoteProcessResolver(_:_:)`](1445692-aecreateremoteprocessresolver.md).
 
 ## See Also
 

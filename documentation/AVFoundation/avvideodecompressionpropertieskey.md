@@ -22,7 +22,7 @@ let AVVideoDecompressionPropertiesKey: String
 
 #### Discussion
 
-The value for this key is specified as an [`NSDictionary`](https://developer.apple.com/documentation/Foundation/NSDictionary) object containing other keys to pass to the video decoder.
+The value for this key is specified as an [`NSDictionary`](https://developer.apple.com/documentation/foundation/nsdictionary) object containing other keys to pass to the video decoder.
 
 ## See Also
 

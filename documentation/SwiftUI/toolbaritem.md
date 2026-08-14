@@ -34,10 +34,10 @@ struct ToolbarItem<ID, Content> where Content : View
 ## Relationships
 
 ### Conforms To
-- [Copyable](../Swift/Copyable.md)
+- [Copyable](../swift/copyable.md)
 - [CustomizableToolbarContent](customizabletoolbarcontent.md)
-- [Escapable](../Swift/Escapable.md)
-- [Identifiable](../Swift/Identifiable.md)
+- [Escapable](../swift/escapable.md)
+- [Identifiable](../swift/identifiable.md)
 - [ToolbarContent](toolbarcontent.md)
 
 ## See Also

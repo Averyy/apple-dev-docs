@@ -18,7 +18,7 @@ Construct and customize charts on every Apple platform.
 
 Swift Charts is a powerful and concise SwiftUI framework you can use to transform your data into informative visualizations. With Swift Charts, you can build effective and customizable charts with minimal code. This framework provides marks, scales, axes, and legends as building blocks that you can combine to develop a broad range of data-driven charts.
 
-![A graphic showing three charts built with Swift Charts: a line chart, a bar chart, and a scatter plot.](https://docs-assets.developer.apple.com/published/39f0be0768748aef1d94764a618561a0/FrameworkOverview%402x.png)
+![A graphic showing three charts built with Swift Charts: a line chart, a bar chart, and a scatter plot.](/images/com.apple.Charts/FrameworkOverview@2x.png)
 
 There are many ways you can use Swift Charts to communicate patterns or trends in your data. You can create a variety of charts including line charts, bar charts, and scatter plots as shown above. When you create a chart using this framework, it automatically generates scales and axes that fit your data.
 
@@ -27,7 +27,7 @@ Swift Charts supports localization and accessibility features. You can also over
 ## Topics
 
 ### Essentials
-- [Swift Charts updates](../Updates/SwiftCharts.md)
+- [Swift Charts updates](../updates/swiftcharts.md)
   Learn about important changes to Swift Charts.
 ### Charts
 - [Creating a chart using Swift Charts](creating-a-chart-using-swift-charts.md)

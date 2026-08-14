@@ -25,10 +25,10 @@ Use this method to determine if your code is running on the same thread as the c
 
 ## See Also
 
-- [IODispatchQueueName](../driverkit/iodispatchqueuename.md)
-  A buffer for specifying the name of a dispatch queue.
 - [- GetName](iodispatchqueue/3438194-getname.md)
   Returns the name of the queue as a C string.
+- [IODispatchQueueName](../driverkit/iodispatchqueuename.md)
+  A buffer for specifying the name of a dispatch queue.
 
 
 ---

@@ -20,7 +20,7 @@ protocol NSTextLayoutOrientationProvider
 
 #### Overview
 
-In macOS, the [`NSTextContainer`](nstextcontainer.md) and [`NSTextView`](https://developer.apple.com/documentation/AppKit/NSTextView) classes adopt this protocol; in iOS, only the [`NSTextContainer`](nstextcontainer.md) class implements it. An [`NSTextContainer`](nstextcontainer.md) object returns the value from its associated text view when present; otherwise, it returns [`NSLayoutManager.TextLayoutOrientation.horizontal`](nslayoutmanager/textlayoutorientation/horizontal.md) by default. If you define a custom [`NSTextContainer`](nstextcontainer.md) object, you can override this method and return [`NSLayoutManager.TextLayoutOrientation.vertical`](nslayoutmanager/textlayoutorientation/vertical.md) to support laying out text vertically.
+In macOS, the [`NSTextContainer`](nstextcontainer.md) and [`NSTextView`](https://developer.apple.com/documentation/appkit/nstextview) classes adopt this protocol; in iOS, only the [`NSTextContainer`](nstextcontainer.md) class implements it. An [`NSTextContainer`](nstextcontainer.md) object returns the value from its associated text view when present; otherwise, it returns [`NSLayoutManager.TextLayoutOrientation.horizontal`](nslayoutmanager/textlayoutorientation/horizontal.md) by default. If you define a custom [`NSTextContainer`](nstextcontainer.md) object, you can override this method and return [`NSLayoutManager.TextLayoutOrientation.vertical`](nslayoutmanager/textlayoutorientation/vertical.md) to support laying out text vertically.
 
 ## Topics
 

@@ -20,11 +20,11 @@ func actions(forTarget target: Any?, forControlEvent controlEvent: UIControl.Eve
 
 #### Return Value
 
-An array [`NSString`](https://developer.apple.com/documentation/Foundation/NSString) objects containing the selector names of the corresponding action methods, or `nil` if there are no action methods associated with the specified target object and control event.
+An array [`NSString`](https://developer.apple.com/documentation/foundation/nsstring) objects containing the selector names of the corresponding action methods, or `nil` if there are no action methods associated with the specified target object and control event.
 
 #### Discussion
 
-Use this method to determine what action methods are called on the specified object in response to a particular control event. You can use the [`NSSelectorFromString(_:)`](https://developer.apple.com/documentation/Foundation/NSSelectorFromString(_:)) function to convert the returned strings to valid selectors, as needed.
+Use this method to determine what action methods are called on the specified object in response to a particular control event. You can use the [`NSSelectorFromString(_:)`](https://developer.apple.com/documentation/foundation/nsselectorfromstring(_:)) function to convert the returned strings to valid selectors, as needed.
 
 ## Parameters
 

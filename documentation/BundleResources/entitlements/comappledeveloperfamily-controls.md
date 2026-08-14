@@ -17,9 +17,9 @@ A Boolean value that indicates whether the app can request or revoke authorizati
 
 #### Discussion
 
-You must add the Family Controls entitlement to your app before you call the [`AuthorizationCenter`](https://developer.apple.com/documentation/FamilyControls/AuthorizationCenter) class’s [`requestAuthorization(completionHandler:)`](https://developer.apple.com/documentation/FamilyControls/AuthorizationCenter/requestAuthorization(completionHandler:)) or [`revokeAuthorization(completionHandler:)`](https://developer.apple.com/documentation/FamilyControls/AuthorizationCenter/revokeAuthorization(completionHandler:)) methods.
+You must add the Family Controls entitlement to your app before you call the [`AuthorizationCenter`](https://developer.apple.com/documentation/familycontrols/authorizationcenter) class’s [`requestAuthorization(completionHandler:)`](https://developer.apple.com/documentation/familycontrols/authorizationcenter/requestauthorization(completionhandler:)) or [`revokeAuthorization(completionHandler:)`](https://developer.apple.com/documentation/familycontrols/authorizationcenter/revokeauthorization(completionhandler:)) methods.
 
-Adding the Family Controls capability to your app automatically sets this entitlement. Before submitting your app to the App Store, you must [`request permission`](https://developer.apple.comhttps://developer.apple.com/contact/request/family-controls-distribution) to use the entitlement. For more information, see [`Adding capabilities to your app`](https://developer.apple.com/documentation/Xcode/adding-capabilities-to-your-app).
+Adding the Family Controls capability to your app automatically sets this entitlement. Before submitting your app to the App Store, you must [`request permission`](https://developer.apple.comhttps://developer.apple.com/contact/request/family-controls-distribution) to use the entitlement. For more information, see [`Adding capabilities to your app`](https://developer.apple.com/documentation/xcode/adding-capabilities-to-your-app).
 
 ## See Also
 

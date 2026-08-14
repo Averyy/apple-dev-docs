@@ -19,14 +19,14 @@ An instance of OSDictionary containing the key/value pairs of `dict`, with a ret
 
 #### Overview
 
-`dict` must be non-`NULL`. If `capacity` is nonzero, it must be greater than or equal to `count`. The new dictionary will grow as needed to accommodate more key/object pairs (`CFMutableDictionary`, for which the initial capacity is a hard limit).
+`dict` must be non-`NULL`. If `capacity` is nonzero, it must be greater than or equal to `count`. The new dictionary will grow as needed to accommodate more key/object pairs (*unlike*[`CFMutableDictionary`](https://developer.apple.com/documentation/corefoundation/cfmutabledictionary), for which the initial capacity is a hard limit).
 
 The keys and objects in `dict` are retained for storage in the new OSDictionary, not copied.
 
 ## Parameters
 
 - `dict`: A dictionary whose contents will be stored in the new instance.
-- `capacity`: The initial storage capacity of the new dictionary object. If 0, the capacity is set to the number of key/value pairs in  ; otherwise   must be greater than or equal to the number of key/value pairs in  .
+- `capacity`: The initial storage capacity of the new dictionary object. If 0, the capacity is set to the number of key/value pairs in `dict`; otherwise `capacity` must be greater than or equal to the number of key/value pairs in `dict`.
 
 ## See Also
 

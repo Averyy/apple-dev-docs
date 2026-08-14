@@ -14,7 +14,7 @@ The system automatically selects the source. If the user is listening to audio o
 
 To add the Now Playing view, drag it from the Library to an empty interface controller in your WatchKit app’s storyboard.
 
-![A screenshot showing the Now Playing view inside an interface controller in the storyboard.](https://docs-assets.developer.apple.com/published/5daf416d20b998f9195e06c5815073ff/media-3377250%402x.png)
+![A screenshot showing the Now Playing view inside an interface controller in the storyboard.](/images/com.apple.watchkit/media-3377250@2x.png)
 
 Always present the Now Playing view so that it fills the screen in a nonscrolling container. Don’t add any other elements to this scene.
 
@@ -28,7 +28,7 @@ The Now Playing view uses your app’s tint color, but otherwise has no attribut
   Enable background audio in your app to provide a seamless playback experience.
 - [class WKInterfaceVolumeControl](wkinterfacevolumecontrol.md)
   An interface element that provides control of the audio volume from the watch or a paired iPhone.
-- [PUICAutoLaunchAudioOptOut](../BundleResources/Information-Property-List/PUICAutoLaunchAudioOptOut.md)
+- [PUICAutoLaunchAudioOptOut](../bundleresources/information-property-list/puicautolaunchaudiooptout.md)
   A Boolean value that indicates whether a watchOS app should opt out of automatically launching when its companion iOS app starts playing audio content.
 - [class WKAudioFilePlayer](wkaudiofileplayer.md)
   An object that controls playback of a single audio item.

@@ -8,13 +8,13 @@ Catch performance issues using the Metal Performance HUD while your app runs.
 
 The Metal Performance HUD (heads-up display) adds a real-time overlay to your app that displays and, optionally, logs common graphics performance information. The overlay helps you spot subtle performance issues, such as large variations in rendering time, so you can find the perfect scope to capture in Xcode (see [`Capturing a Metal workload in Xcode`](capturing-a-metal-workload-in-xcode.md)) or in Instruments (see [`Analyzing the performance of your Metal app`](analyzing-the-performance-of-your-metal-app.md)).
 
-![A screenshot of the Metal Performance HUD over a rendered scene from Metal.](https://docs-assets.developer.apple.com/published/9fde0c144909c9da0129fffda297698c/metal-hud-app%402x.png)
+![A screenshot of the Metal Performance HUD over a rendered scene from Metal.](/images/com.apple.Xcode/metal-hud-app@2x.png)
 
 By default, the top of the HUD shows the Metal device, resolution, an indicator for whether the present mode is direct or composited, the amount of memory allocated by the app and Metal, and whether Game Mode is turned on or off (see [`Use Game Mode on Mac`](https://developer.apple.comhttps://support.apple.com/en-us/105118)).
 
 The bottom section of the HUD shows the average frames per second (FPS), GPU time, and frame interval. Below the frame interval is a chart graphing the frame interval from the past 120 frames.
 
-![A cropped screenshot of the Metal Performance HUD showing the GPU, resolution, display scaling factor, present mode, and refresh rate.](https://docs-assets.developer.apple.com/published/cab7f5055c95c64dfc1e11e62829a887/metal-hud-app-zoomed%402x.png)
+![A cropped screenshot of the Metal Performance HUD showing the GPU, resolution, display scaling factor, present mode, and refresh rate.](/images/com.apple.Xcode/metal-hud-app-zoomed@2x.png)
 
 You can also customize the HUD to include more metrics. To learn more, see [`Customizing the Metal Performance HUD`](customizing-metal-performance-hud.md).
 
@@ -24,16 +24,16 @@ For more information about the metrics provided by the HUD, see [`Understanding 
 
 Follow these steps to enable the Metal Performance HUD using the runtime diagnostics options in the scheme settings:
 
-1. In the Xcode toolbar, choose Edit Scheme from the Scheme menu. Alternatively, choose Product > Scheme > Edit Scheme. ![An Xcode screenshot that shows the Scheme menu with the Edit Scheme menu item highlighted.](https://docs-assets.developer.apple.com/published/ff9b85fcfb0ccf4ed67a04eeadbe422b/metal-hud-xcode-scheme%402x.png)
+1. In the Xcode toolbar, choose Edit Scheme from the Scheme menu. Alternatively, choose Product > Scheme > Edit Scheme. ![An Xcode screenshot that shows the Scheme menu with the Edit Scheme menu item highlighted.](/images/com.apple.Xcode/metal-hud-xcode-scheme@2x.png)
 2. In the scheme action panel, select Run.
 3. In the action setting tab, click Diagnostics.
-4. Select Show Graphics Overview to enable the Metal Performance HUD, and click Close. ![A screenshot of Xcode scheme editor with the Show Graphics Overview option enabled and highlighted.](https://docs-assets.developer.apple.com/published/e6b9c3382210821110de57a47b0909b2/metal-hud-xcode-diagnostics%402x.png)
+4. Select Show Graphics Overview to enable the Metal Performance HUD, and click Close. ![A screenshot of Xcode scheme editor with the Show Graphics Overview option enabled and highlighted.](/images/com.apple.Xcode/metal-hud-xcode-diagnostics@2x.png)
 
 Now, Xcode enables the Metal Performance HUD runtime each time you run your scheme.
 
 You can also optionally enable the output of per-frame statistics to the console by selecting the Log Graphics Overview option.
 
-![A screenshot of the Xcode scheme editor with the Log Graphics Overview option enabled and highlighted.](https://docs-assets.developer.apple.com/published/e189a8f0075bce45381fdd7459ca92b0/metal-hud-xcode-diagnostics-log%402x.png)
+![A screenshot of the Xcode scheme editor with the Log Graphics Overview option enabled and highlighted.](/images/com.apple.Xcode/metal-hud-xcode-diagnostics-log@2x.png)
 
 > **Note**: You need to select both the Show Graphics Overview and the Log Graphics Overview options to output per-frame statistics.
 
@@ -60,18 +60,18 @@ The Metal Performance HUD appears for apps you build and install yourself to you
 
 The following screenshot shows the options in iOS:
 
-![A screenshot of the Developer settings in iOS, highlighting the toggles to enable the Metal Performance HUD overlay and logging.](https://docs-assets.developer.apple.com/published/c05466ddf012b3296586a8609987f42a/metal-hud-ios-top%402x.png)
+![A screenshot of the Developer settings in iOS, highlighting the toggles to enable the Metal Performance HUD overlay and logging.](/images/com.apple.Xcode/metal-hud-ios-top@2x.png)
 
 The following screenshot shows the options in tvOS:
 
-![A screenshot of the Developer settings in tvOS, highlighting the toggles to enable the Metal Performance HUD overlay and logging.](https://docs-assets.developer.apple.com/published/f1202dbd1c5bc72869c2984d196a9578/metal-hud-tv-settings%402x.png)
+![A screenshot of the Developer settings in tvOS, highlighting the toggles to enable the Metal Performance HUD overlay and logging.](/images/com.apple.Xcode/metal-hud-tv-settings@2x.png)
 
 ##### Enable the Hud and Logging with Information Property List and User Defaults
 
 Alternatively, you can enable the HUD and logging programmatically with one of the following methods:
 
 - Add `MetalHudEnabled` to your app’s `Info.plist` file.
-- Add `MetalHUDForceEnabled=1` in your app’s [`UserDefaults`](https://developer.apple.com/documentation/Foundation/UserDefaults).
+- Add `MetalHUDForceEnabled=1` in your app’s [`UserDefaults`](https://developer.apple.com/documentation/foundation/userdefaults).
 
 ##### Utilize the Logging Capabilities
 
@@ -81,9 +81,9 @@ If you enable logging, once per second as your app runs, the HUD writes data in 
 metal-HUD: <first-frame-number-integer>,<graphics-memory-usage-float>,<process-memory-usage-float>,<first-frame-present-interval-float>,<first-frame-gpu-time-float>,...<last-frame-present-interval-float>,<last-frame-gpu-time-float>
 ```
 
-For example, the HUD writes the following data to the console while running the [`Rendering a scene with deferred lighting in Swift`](https://developer.apple.com/documentation/Metal/rendering-a-scene-with-deferred-lighting-in-swift) sample code project:
+For example, the HUD writes the following data to the console while running the [`Rendering a scene with deferred lighting in Swift`](https://developer.apple.com/documentation/metal/rendering-a-scene-with-deferred-lighting-in-swift) sample code project:
 
-![A screenshot of the per-frame statistics logs output from the Metal Performance HUD.](https://docs-assets.developer.apple.com/published/043e140b84047c43cae5f93931629a47/gputools-runtime-performance-numbers%402x.png)
+![A screenshot of the per-frame statistics logs output from the Metal Performance HUD.](/images/com.apple.Xcode/gputools-runtime-performance-numbers@2x.png)
 
 When you enable shader compiler logging, as your app runs, the Metal HUD emits signposts for each compiled shader. The subsystem is `com.apple.metal.hud` and the category is `Logging`.
 
@@ -96,7 +96,7 @@ When you enable shader compiler logging, as your app runs, the Metal HUD emits s
 
 You can turn on encoder GPU time tracking by ticking the `Enable Encoder GPU Time Tracking` option in the configuration panel or by setting `MTL_HUD_ENCODER_TIMING_ENABLED` to `1` in the environment variable.
 
-With encoder GPU time tracking, the Metal Performance HUD leverages [`GPU counters and counter sample buffers`](https://developer.apple.com/documentation/Metal/gpu-counters-and-counter-sample-buffers) to track GPU timing for each command encoder to provide enhanced GPU time reporting.
+With encoder GPU time tracking, the Metal Performance HUD leverages [`GPU counters and counter sample buffers`](https://developer.apple.com/documentation/metal/gpu-counters-and-counter-sample-buffers) to track GPU timing for each command encoder to provide enhanced GPU time reporting.
 
 > ❗ **Important**: Encoder GPU time tracking is only available if your app doesn’t use the Metal counter sample buffer. It also may increase the CPU cost of the Metal HUD due to additional data processing.
 
@@ -104,11 +104,11 @@ Encoder GPU time measures GPU activity by tracking the start and end times of wo
 
 The overlay shows the encoder GPU time as well as the GPU time and the percentage to the total frame time for each encoder type. Below the timing metrics, a GPU timeline visualizes the GPU execution of the last three frames, updating every second.
 
-![A screenshot showing the Metal HUD encoder GPU time.](https://docs-assets.developer.apple.com/published/64eebc2008088a2f84e0ae99c669e6ac/metal-hud-app-gpu-timeline-zoomed%402x.png)
+![A screenshot showing the Metal HUD encoder GPU time.](/images/com.apple.Xcode/metal-hud-app-gpu-timeline-zoomed@2x.png)
 
 With the encoder GPU time tracking enabled, the Metal Performance HUD also tracks command buffer and encoder labels. Two new optional metrics become available: Top Labeled Command Buffers and Top Labeled Encoders. These metrics show the three most GPU-intensive command buffers and encoders by label, helping you quickly pinpoint potential performance bottlenecks.
 
-![A screenshot showing the top labeled command buffers and encoders.](https://docs-assets.developer.apple.com/published/0826eddb53403afe0c816978b2d090db/metal-hud-app-top-objects-zoomed%402x.png)
+![A screenshot showing the top labeled command buffers and encoders.](/images/com.apple.Xcode/metal-hud-app-top-objects-zoomed@2x.png)
 
 ##### Display the Value Range of Metrics
 
@@ -120,7 +120,7 @@ With this option, the HUD visualizes common metrics in three columns:
 - The second column contains the minimum values of the last 1200 frames.
 - The third column contains the maximum values of the last 1200 frames.
 
-![A screenshot showing the Metal HUD reporting value range of metrics.](https://docs-assets.developer.apple.com/published/09e525d4252d5bc2b49128a2e5d3596d/metal-hud-app-value-range%402x.png)
+![A screenshot showing the Metal HUD reporting value range of metrics.](/images/com.apple.Xcode/metal-hud-app-value-range@2x.png)
 
 ## See Also
 

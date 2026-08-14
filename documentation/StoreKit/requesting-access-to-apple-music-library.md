@@ -10,13 +10,13 @@ Your app must obtain permission from the customer before accessing Apple Music L
 
 ##### Provide a Purpose String in Infoplist
 
-Provide a purpose string or usage description that describes how your app intends to use the user’s iCloud Music library or Apple Music catalog. Add the [`NSAppleMusicUsageDescription`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSAppleMusicUsageDescription) key to your app’s Info.plist. Set its value to a string that explains why your app needs access to Apple Music library. The system displays the string to the user when prompting them for authorization.
+Provide a purpose string or usage description that describes how your app intends to use the user’s iCloud Music library or Apple Music catalog. Add the [`NSAppleMusicUsageDescription`](https://developer.apple.com/documentation/bundleresources/information-property-list/nsapplemusicusagedescription) key to your app’s Info.plist. Set its value to a string that explains why your app needs access to Apple Music library. The system displays the string to the user when prompting them for authorization.
 
-![Privacy - Media Library Usage Description](https://docs-assets.developer.apple.com/published/172797b315ff7d28ae7b00cf609dd514/media-3580813%402x.png)
+![Privacy - Media Library Usage Description](/images/com.apple.storekit/media-3580813@2x.png)
 
 > ❗ **Important**:  This key is required for apps that access the user’s music library. Apps crash when the key is absent.
 
-See [`Requesting access to protected resources`](https://developer.apple.com/documentation/UIKit/requesting-access-to-protected-resources) for more details.
+See [`Requesting access to protected resources`](https://developer.apple.com/documentation/uikit/requesting-access-to-protected-resources) for more details.
 
 ##### Request Authorization
 

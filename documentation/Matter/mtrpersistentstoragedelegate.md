@@ -22,7 +22,7 @@ protocol MTRPersistentStorageDelegate : MTRStorage
 
 ### Inherits From
 - [MTRStorage](mtrstorage.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 
 ---

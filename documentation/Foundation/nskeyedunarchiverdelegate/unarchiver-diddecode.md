@@ -26,7 +26,7 @@ The object to use in place of `object`. The delegate can either return `object` 
 
 #### Discussion
 
-This method is called after `object` has been sent [`init(coder:)`](nscoding/init(coder:).md) and [`awakeAfter(using:)`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class/awakeAfter(using:)).
+This method is called after `object` has been sent [`init(coder:)`](nscoding/init(coder:).md) and [`awakeAfter(using:)`](https://developer.apple.com/documentation/objectivec/nsobject-swift.class/awakeafter(using:)).
 
 The delegate may use this method to keep track of the decoded objects.
 

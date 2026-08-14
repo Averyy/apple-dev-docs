@@ -20,13 +20,13 @@ func handleAuthorizationForExtension() async throws
 
 #### Discussion
 
-The host app must implement the application delegate’s [`applicationShouldRequestHealthAuthorization(_:)`](https://developer.apple.com/documentation/UIKit/UIApplicationDelegate/applicationShouldRequestHealthAuthorization(_:)) method. This delegate method is called after an app extension calls [`requestAuthorization(toShare:read:completion:)`](hkhealthstore/requestauthorization(toshare:read:completion:).md). The host app is then responsible for calling [`handleAuthorizationForExtension(completion:)`](hkhealthstore/handleauthorizationforextension(completion:).md). This method prompts the user to authorize both the app and its extensions for the types that the extension requested.
+The host app must implement the application delegate’s [`applicationShouldRequestHealthAuthorization(_:)`](https://developer.apple.com/documentation/uikit/uiapplicationdelegate/applicationshouldrequesthealthauthorization(_:)) method. This delegate method is called after an app extension calls [`requestAuthorization(toShare:read:completion:)`](hkhealthstore/requestauthorization(toshare:read:completion:).md). The host app is then responsible for calling [`handleAuthorizationForExtension(completion:)`](hkhealthstore/handleauthorizationforextension(completion:).md). This method prompts the user to authorize both the app and its extensions for the types that the extension requested.
 
 The system performs this request asynchronously. After the user has finished responding, this method calls its completion block on a background queue. If the user has already chosen to grant or prohibit access to all of the types specified, the completion is called without prompting the user.
 
 ## Parameters
 
-- `completion`: A block that is called after the user finishes responding to the request. This block is passed the following parameters: - **success**: A Boolean value that indicates whether the user responded to the prompt (if any). This value does not indicate whether permission was actually granted. This parameter is [`false`](https://developer.apple.com/documentation/Swift/false) if the user canceled the prompt without selecting permissions; otherwise, [`true`](https://developer.apple.com/documentation/Swift/true).
+- `completion`: A block that is called after the user finishes responding to the request. This block is passed the following parameters: - **success**: A Boolean value that indicates whether the user responded to the prompt (if any). This value does not indicate whether permission was actually granted. This parameter is [`false`](https://developer.apple.com/documentation/swift/false) if the user canceled the prompt without selecting permissions; otherwise, [`true`](https://developer.apple.com/documentation/swift/true).
 - **error**: An error object. If an error occurred, this object contains information about the error; otherwise, it is set to `nil`.
 
 ## See Also

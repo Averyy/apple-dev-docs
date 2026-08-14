@@ -20,7 +20,7 @@ var identifier: String { get set }
 
 #### Discussion
 
-As an example [`identifier`](dddevice/identifier.md) for Bluetooth devices, your extension can use the device’s local name (see [`CBAdvertisementDataLocalNameKey`](https://developer.apple.com/documentation/CoreBluetooth/CBAdvertisementDataLocalNameKey)).
+As an example [`identifier`](dddevice/identifier.md) for Bluetooth devices, your extension can use the device’s local name (see [`CBAdvertisementDataLocalNameKey`](https://developer.apple.com/documentation/corebluetooth/cbadvertisementdatalocalnamekey)).
 
 ## See Also
 

@@ -21,9 +21,9 @@ Support hardware game controllers in your game.
 
 Use Game Controller to support users interacting with your app using a physical or virtual game controller. Game controllers include third-party products, such as the DualShock 4, DualSense, and Xbox, as well as the mouse, keyboard, Siri Remote, and racing wheels.
 
-![An illustration of a laptop displaying a game that shows a car driving on the road toward a country landscape. On the left is an overlay of a steering wheel controller.](https://docs-assets.developer.apple.com/published/99ea4875edb8bfa1d668e34753abfabb/media-4083651%402x.png)
+![An illustration of a laptop displaying a game that shows a car driving on the road toward a country landscape. On the left is an overlay of a steering wheel controller.](/images/com.apple.gamecontroller/media-4083651@2x.png)
 
-To support game controllers, add the Game Controller capability (the [`GCSupportsControllerUserInteraction`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/GCSupportsControllerUserInteraction) property) to your project, and Xcode adds the Game Controller framework automatically. Then, choose the types of controllers your app supports (the [`GCSupportedGameControllers`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/GCSupportedGameControllers) property) under the Game Controllers capability on the Signing & Capabilities pane.
+To support game controllers, add the Game Controller capability (the [`GCSupportsControllerUserInteraction`](https://developer.apple.com/documentation/bundleresources/information-property-list/gcsupportscontrolleruserinteraction) property) to your project, and Xcode adds the Game Controller framework automatically. Then, choose the types of controllers your app supports (the [`GCSupportedGameControllers`](https://developer.apple.com/documentation/bundleresources/information-property-list/gcsupportedgamecontrollers) property) under the Game Controllers capability on the Signing & Capabilities pane.
 
 For controllers other than the racing wheel, follow these steps to process the game controller input in your app:
 
@@ -32,25 +32,25 @@ For controllers other than the racing wheel, follow these steps to process the g
 - To process the input, either get the values directly from the elements or register callbacks for when the user changes their values. Apps running in visionOS receive input events only when the person is looking at the app’s window.
 - For controllers that support haptics, you can provide feedback to the user by creating an engine that manipulates the controller’s actuators.
 
-Users may remap game controller elements in Settings and Preferences, so be sure to display the correct input element in your interface. If the [`hasRemappedElements`](gcphysicalinputprofile/hasremappedelements.md) property is [`true`](https://developer.apple.com/documentation/Swift/true), the user remapped elements and you can get the mapping between the actual and alias elements using the [`mappedElementAlias(forPhysicalInputName:)`](gcphysicalinputprofile/mappedelementalias(forphysicalinputname:).md) and [`mappedPhysicalInputNames(forElementAlias:)`](gcphysicalinputprofile/mappedphysicalinputnames(forelementalias:).md) methods.
+Users may remap game controller elements in Settings and Preferences, so be sure to display the correct input element in your interface. If the [`hasRemappedElements`](gcphysicalinputprofile/hasremappedelements.md) property is [`true`](https://developer.apple.com/documentation/swift/true), the user remapped elements and you can get the mapping between the actual and alias elements using the [`mappedElementAlias(forPhysicalInputName:)`](gcphysicalinputprofile/mappedelementalias(forphysicalinputname:).md) and [`mappedPhysicalInputNames(forElementAlias:)`](gcphysicalinputprofile/mappedphysicalinputnames(forelementalias:).md) methods.
 
 To support racing wheel devices in your macOS app, see [`Racing wheel device support`](racing-wheel-device-support.md).
 
 ## Topics
 
 ### Essentials
-- [Game Controller updates](../Updates/GameController.md)
+- [Game Controller updates](../updates/gamecontroller.md)
   Learn about important changes to Game Controller.
 - [Discovering game controllers](discovering-game-controllers.md)
   Implement connection and input handling to provide seamless physical controller support for players.
 - [Handling input events](handling-input-events.md)
   Receive controller input using either polling or callbacks.
 ### Configuration
-- [GCSupportsControllerUserInteraction](../BundleResources/Information-Property-List/GCSupportsControllerUserInteraction.md)
+- [GCSupportsControllerUserInteraction](../bundleresources/information-property-list/gcsupportscontrolleruserinteraction.md)
   A Boolean value indicating whether the app supports a game controller.
-- [GCSupportedGameControllers](../BundleResources/Information-Property-List/GCSupportedGameControllers.md)
+- [GCSupportedGameControllers](../bundleresources/information-property-list/gcsupportedgamecontrollers.md)
   The types of game controller profiles that the app supports or requires.
-- [GCSupportsMultipleMicroGamepads](../BundleResources/Information-Property-List/GCSupportsMultipleMicroGamepads.md)
+- [GCSupportsMultipleMicroGamepads](../bundleresources/information-property-list/gcsupportsmultiplemicrogamepads.md)
   A Boolean value indicating whether the physical Apple TV Remote and the Apple TV Remote app operate as separate game controllers.
 ### View controller
 - [class GCEventViewController](gceventviewcontroller.md)

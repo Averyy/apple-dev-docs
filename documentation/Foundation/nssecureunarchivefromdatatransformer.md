@@ -26,9 +26,9 @@ This class provides a default [`ValueTransformer`](valuetransformer.md) implemen
 
 To archive or unarchive other classes that support [`NSSecureCoding`](nssecurecoding.md), create a subclass and override [`allowedTopLevelClasses`](nssecureunarchivefromdatatransformer/allowedtoplevelclasses.md) to list the classes to transform.
 
-To use [`NSSecureUnarchiveFromDataTransformer`](nssecureunarchivefromdatatransformer.md) with [`Core Data`](https://developer.apple.com/documentation/CoreData), use the name of this class, or the name of a subclass you implement, as the name of the transformer for an entity’s attribute within a Core Data Model. If you use your own transformer subclass, register it with your app before intializing your persistent container with Core Data.
+To use [`NSSecureUnarchiveFromDataTransformer`](nssecureunarchivefromdatatransformer.md) with [`Core Data`](https://developer.apple.com/documentation/coredata), use the name of this class, or the name of a subclass you implement, as the name of the transformer for an entity’s attribute within a Core Data Model. If you use your own transformer subclass, register it with your app before intializing your persistent container with Core Data.
 
-For an example of subclassing [`NSSecureUnarchiveFromDataTransformer`](nssecureunarchivefromdatatransformer.md), see [`Handling Different Data Types in Core Data`](https://developer.apple.com/documentation/CoreData/handling-different-data-types-in-core-data), which has a `ColorToDataTransformer` class that transforms [`UIColor`](https://developer.apple.com/documentation/UIKit/UIColor) to [`NSData`](nsdata.md) and the reverse, to support archiving instances of [`UIColor`](https://developer.apple.com/documentation/UIKit/UIColor).
+For an example of subclassing [`NSSecureUnarchiveFromDataTransformer`](nssecureunarchivefromdatatransformer.md), see [`Handling Different Data Types in Core Data`](https://developer.apple.com/documentation/coredata/handling-different-data-types-in-core-data), which has a `ColorToDataTransformer` class that transforms [`UIColor`](https://developer.apple.com/documentation/uikit/uicolor) to [`NSData`](nsdata.md) and the reverse, to support archiving instances of [`UIColor`](https://developer.apple.com/documentation/uikit/uicolor).
 
 ## Topics
 
@@ -41,14 +41,14 @@ For an example of subclassing [`NSSecureUnarchiveFromDataTransformer`](nssecureu
 ### Inherits From
 - [ValueTransformer](valuetransformer.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

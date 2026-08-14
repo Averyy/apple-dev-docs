@@ -26,7 +26,7 @@ A new set that contains a single member, `object`.
 
 ## Parameters
 
-- `object`: The object to add to the new set. `object` receives a [`retain`](https://developer.apple.com/documentation/ObjectiveC/NSObject-c.protocol/retain) message after being added to the set.
+- `object`: The object to add to the new set. `object` receives a [`retain`](https://developer.apple.com/documentation/objectivec/nsobject-c.protocol/retain) message after being added to the set.
 
 ## See Also
 

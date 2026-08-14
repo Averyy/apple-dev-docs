@@ -43,7 +43,7 @@ Starting in iOS 7, the [`UIView`](uiview.md) and [`UICollectionViewLayoutAttribu
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 ### Inherited By
 - [NSCollectionLayoutVisibleItem](nscollectionlayoutvisibleitem.md)
 ### Conforming Types

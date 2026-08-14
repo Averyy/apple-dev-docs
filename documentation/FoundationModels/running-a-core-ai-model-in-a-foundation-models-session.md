@@ -12,13 +12,13 @@ By default, the Foundation Models framework provides access to the same on-devic
 - Support a range of devices that might not support Apple Intelligence.
 - Maintain cross-platform support.
 
-With [`Core AI`](https://developer.apple.com/documentation/CoreAI), you can deploy AI models within your app and load them into the same language model session API you already use. Only the model you pass into [`init(model:tools:instructions:)`](languagemodelsession/init(model:tools:instructions:).md) changes.
+With [`Core AI`](https://developer.apple.com/documentation/coreai), you can deploy AI models within your app and load them into the same language model session API you already use. Only the model you pass into [`init(model:tools:instructions:)`](languagemodelsession/init(model:tools:instructions:).md) changes.
 
 > **Note**: Running and integrating a Core AI model requires macOS 27, iOS 27, and Xcode 27 or later.
 
 #### Export an Open Source Model
 
-The open-source [`coreai-models`](https://developer.apple.comhttps://github.com/apple/coreai-models) Swift package provides model export recipes and utilities for building on-device AI with [`Core AI`](https://developer.apple.com/documentation/CoreAI). The package contains `CoreAILanguageModel`, which conforms to the `LanguageModel` protocol, and you can use it to easily load an on-device model and prepare it to run.
+The open-source [`coreai-models`](https://developer.apple.comhttps://github.com/apple/coreai-models) Swift package provides model export recipes and utilities for building on-device AI with [`Core AI`](https://developer.apple.com/documentation/coreai). The package contains `CoreAILanguageModel`, which conforms to the `LanguageModel` protocol, and you can use it to easily load an on-device model and prepare it to run.
 
 Discover open source models to export by following these steps:
 
@@ -78,7 +78,7 @@ let model = try await CoreAILanguageModel(resourcesAt: modelURL)
 let session = LanguageModelSession(model: model)
 ```
 
-Loading is asynchronous because the framework compiles the model and loads its tokenizer before the first request. Load a model ahead of time when you know a request is at least a second or two away so it’s ready when a person interacts with your feature. For more information about compiling models in advance, see [`Compiling Core AI models ahead of time`](https://developer.apple.com/documentation/CoreAI/compiling-core-ai-models-ahead-of-time).
+Loading is asynchronous because the framework compiles the model and loads its tokenizer before the first request. Load a model ahead of time when you know a request is at least a second or two away so it’s ready when a person interacts with your feature. For more information about compiling models in advance, see [`Compiling Core AI models ahead of time`](https://developer.apple.com/documentation/coreai/compiling-core-ai-models-ahead-of-time).
 
 #### Run Requests Through the Session
 

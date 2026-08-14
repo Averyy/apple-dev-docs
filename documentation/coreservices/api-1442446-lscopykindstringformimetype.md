@@ -28,8 +28,8 @@ Thread-safe since Mac OS version 10.2.
 
 ## Parameters
 
-- `inMIMEType`: A Core Foundation string object specifying the MIME type whose kind string is requested; see the   in the Core Foundation Reference Documentation for a description of the   data type. Comparison of MIME types is case-insensitive.
-- `outKindString`: A pointer to a Core Foundation string object that, on return, will contain the kind string for the specified MIME type; see the   in the Core Foundation Reference Documentation for a description of the   data type. You are responsible for releasing this object.
+- `inMIMEType`: A Core Foundation string object specifying the MIME type whose kind string is requested; see the *CFString Reference* in the Core Foundation Reference Documentation for a description of the `CFStringRef` data type. Comparison of MIME types is case-insensitive.
+- `outKindString`: A pointer to a Core Foundation string object that, on return, will contain the kind string for the specified MIME type; see the *CFString Reference* in the Core Foundation Reference Documentation for a description of the `CFStringRef` data type. You are responsible for releasing this object.
 
 ## See Also
 

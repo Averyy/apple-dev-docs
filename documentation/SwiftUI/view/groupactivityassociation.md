@@ -17,7 +17,7 @@ func groupActivityAssociation(_ kind: GroupActivityAssociationKind?) -> some Vie
 
 #### Discussion
 
-When a group of people join a SharePlay activity with their spatial Personas, the system selects a common, primary scene to arrange their spatial Personas around. This association between the group activity and a primary scene in your app creates a shared space for the spatial Personas to interact in; enabling participants to gesture at the associated scene and understand each other. For more information about spatial Personas and  SharePlay on visionOS, see [`Adding spatial Persona support to an activity`](https://developer.apple.com/documentation/GroupActivities/adding-spatial-persona-support-to-an-activity).
+When a group of people join a SharePlay activity with their spatial Personas, the system selects a common, primary scene to arrange their spatial Personas around. This association between the group activity and a primary scene in your app creates a shared space for the spatial Personas to interact in; enabling participants to gesture at the associated scene and understand each other. For more information about spatial Personas and  SharePlay on visionOS, see [`Adding spatial Persona support to an activity`](https://developer.apple.com/documentation/groupactivities/adding-spatial-persona-support-to-an-activity).
 
 By default, the system uses your scene’s activation conditions in concert with your activity’s `SceneAssociationBehavior` to select a scene to associate with the activity. You can specify a different scene or dynamically change the associated scene by using this modifier to set a view’s group activity association to `GroupActivityAssociationKind/primary`.
 

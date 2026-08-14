@@ -33,7 +33,7 @@ To register an observer, create an object that implements the `CPNowPlayingTempl
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

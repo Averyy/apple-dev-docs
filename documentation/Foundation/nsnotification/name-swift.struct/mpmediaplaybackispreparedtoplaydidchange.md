@@ -22,7 +22,7 @@ static let MPMediaPlaybackIsPreparedToPlayDidChange: NSNotification.Name
 
 #### Discussion
 
-Posted upon change in the prepared-to-play state of an object conforming to the [`MPMediaPlayback`](https://developer.apple.com/documentation/MediaPlayer/MPMediaPlayback) protocol. The object whose state has changed is available as the object associated with the notification.
+Posted upon change in the prepared-to-play state of an object conforming to the [`MPMediaPlayback`](https://developer.apple.com/documentation/mediaplayer/mpmediaplayback) protocol. The object whose state has changed is available as the object associated with the notification.
 
 ## See Also
 

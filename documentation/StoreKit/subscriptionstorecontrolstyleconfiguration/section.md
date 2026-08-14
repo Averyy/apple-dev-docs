@@ -47,7 +47,7 @@ Even if a subscription store instance doesn’t declare sections using [`Subscri
 ## Relationships
 
 ### Conforms To
-- [Identifiable](../Swift/Identifiable.md)
+- [Identifiable](../swift/identifiable.md)
 
 ## See Also
 

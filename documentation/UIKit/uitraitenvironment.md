@@ -46,7 +46,7 @@ For more information about how traits propagate through the system, see [`Unleas
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 ### Conforming Types
 - [UIActionSheet](uiactionsheet.md)
 - [UIActivityIndicatorView](uiactivityindicatorview.md)

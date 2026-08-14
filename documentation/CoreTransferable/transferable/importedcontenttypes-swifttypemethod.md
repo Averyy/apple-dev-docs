@@ -22,7 +22,7 @@ static func importedContentTypes() -> [UTType]
 
 #### Discussion
 
-For example, if you have a type that conforms to [`Transferable`](transferable.md) and can be represented as [`Image`](https://developer.apple.com/documentation/SwiftUI/Image) and you need to know if it can be instantiated with a JPEG file, you can check against `importedContentTypes`:
+For example, if you have a type that conforms to [`Transferable`](transferable.md) and can be represented as [`Image`](https://developer.apple.com/documentation/swiftui/image) and you need to know if it can be instantiated with a JPEG file, you can check against `importedContentTypes`:
 
 ```swift
 struct Icon: Transferable {

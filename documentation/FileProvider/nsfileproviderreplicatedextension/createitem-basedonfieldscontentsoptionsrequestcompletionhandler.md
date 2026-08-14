@@ -21,7 +21,7 @@ func createItem(basedOn itemTemplate: NSFileProviderItem, fields: NSFileProvider
 
 #### Return Value
 
-A progress that tracks creating the item in your remote storage and uploading its content. The system automatically calls [`cancel()`](https://developer.apple.com/documentation/Foundation/Progress/cancel())  on the progress object when an error occurs.
+A progress that tracks creating the item in your remote storage and uploading its content. The system automatically calls [`cancel()`](https://developer.apple.com/documentation/foundation/progress/cancel())  on the progress object when an error occurs.
 
 #### Discussion
 
@@ -32,7 +32,7 @@ Implement this method to create an item in your remote storage that matches the 
 The `itemTemplate` parameter describes the item’s intended state, including:
 
 - **[`filename`](nsfileprovideritemprotocol/filename.md)**: The item’s name.
-- **[`contentType`](nsfileprovideritemprotocol/contenttype.md)**: The item’s type. The item can be a file, directory, symlink, or alias. [`UTTypeFolder`](https://developer.apple.com/documentation/UniformTypeIdentifiers/UTTypeFolder), [`UTTypeSymbolicLink`](https://developer.apple.com/documentation/UniformTypeIdentifiers/UTTypeSymbolicLink), and [`UTTypeAliasFile`](https://developer.apple.com/documentation/UniformTypeIdentifiers/UTTypeAliasFile) types typically need special handling.
+- **[`contentType`](nsfileprovideritemprotocol/contenttype.md)**: The item’s type. The item can be a file, directory, symlink, or alias. [`UTTypeFolder`](https://developer.apple.com/documentation/uniformtypeidentifiers/uttypefolder), [`UTTypeSymbolicLink`](https://developer.apple.com/documentation/uniformtypeidentifiers/uttypesymboliclink), and [`UTTypeAliasFile`](https://developer.apple.com/documentation/uniformtypeidentifiers/uttypealiasfile) types typically need special handling.
 - **[`parentItemIdentifier`](nsfileprovideritemprotocol/parentitemidentifier.md)**: The item’s location.
 
 The system sets the template’s [`itemIdentifier`](nsfileprovideritemprotocol/itemidentifier.md) to a unique value and guarantees that it remains the same for the specified item. For example, the system can reuse the identifier to replay this method after a crash.

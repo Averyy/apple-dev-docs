@@ -24,7 +24,7 @@ optional func metadataOutput(_ output: AVPlayerItemMetadataOutput, didOutputTime
 
 Each group provided in a single invocation of this method will have timing that does not overlap with any other group in the array.
 
-Note that for some timed metadata formats carried by HTTP live streaming, the `timeRange` of each group must be reported as [`indefinite`](https://developer.apple.com/documentation/CoreMedia/CMTime/indefinite), because its duration will be unknown until the next metadata group in the stream arrives. In these cases, the groups parameter will always contain a single group.
+Note that for some timed metadata formats carried by HTTP live streaming, the `timeRange` of each group must be reported as [`indefinite`](https://developer.apple.com/documentation/coremedia/cmtime/indefinite), because its duration will be unknown until the next metadata group in the stream arrives. In these cases, the groups parameter will always contain a single group.
 
 Groups are typically packaged into arrays for delivery to your delegate according to the chunking or interleaving of the underlying metadata data.
 

@@ -22,7 +22,7 @@ struct AsyncBytes
 
 #### Overview
 
-Use the `for`-`await`-`in` syntax to iterate over the bytes in this sequence. For text files, you can also use its [`characters`](https://developer.apple.com/documentation/Swift/AsyncSequence/characters), [`unicodeScalars`](https://developer.apple.com/documentation/Swift/AsyncSequence/unicodeScalars), or [`lines`](https://developer.apple.com/documentation/Swift/AsyncSequence/lines) properties to retrieve the contents in a more convenient format. Since all of these properties conform to [`AsyncSequence`](https://developer.apple.com/documentation/Swift/AsyncSequence), as does the [`FileHandle`](filehandle.md) property [`bytes`](filehandle/bytes.md), you can use methods defined by [`AsyncSequence`](https://developer.apple.com/documentation/Swift/AsyncSequence) to perform powerful inline processing. For example, you can skip the first `n` bytes of the file with `myFileHandle.bytes.prefix(n)`.
+Use the `for`-`await`-`in` syntax to iterate over the bytes in this sequence. For text files, you can also use its [`characters`](https://developer.apple.com/documentation/swift/asyncsequence/characters), [`unicodeScalars`](https://developer.apple.com/documentation/swift/asyncsequence/unicodescalars), or [`lines`](https://developer.apple.com/documentation/swift/asyncsequence/lines) properties to retrieve the contents in a more convenient format. Since all of these properties conform to [`AsyncSequence`](https://developer.apple.com/documentation/swift/asyncsequence), as does the [`FileHandle`](filehandle.md) property [`bytes`](filehandle/bytes.md), you can use methods defined by [`AsyncSequence`](https://developer.apple.com/documentation/swift/asyncsequence) to perform powerful inline processing. For example, you can skip the first `n` bytes of the file with `myFileHandle.bytes.prefix(n)`.
 
 ## Topics
 
@@ -43,9 +43,9 @@ Use the `for`-`await`-`in` syntax to iterate over the bytes in this sequence. Fo
 ## Relationships
 
 ### Conforms To
-- [AsyncSequence](../Swift/AsyncSequence.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [AsyncSequence](../swift/asyncsequence.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

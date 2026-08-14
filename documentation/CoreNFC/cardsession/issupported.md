@@ -17,7 +17,7 @@ class var isSupported: Bool { get }
 
 #### Discussion
 
-Query this property before calling [`init()`](cardsession/init().md) to avoid raising [`fatalError(_:file:line:)`](https://developer.apple.com/documentation/Swift/fatalError(_:file:line:)) on ineligible devices.
+Query this property before calling [`init()`](cardsession/init().md) to avoid raising [`fatalError(_:file:line:)`](https://developer.apple.com/documentation/swift/fatalerror(_:file:line:)) on ineligible devices.
 
 ## See Also
 

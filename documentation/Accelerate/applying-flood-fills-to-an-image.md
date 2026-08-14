@@ -8,7 +8,7 @@ Fill consistently colored connected parts of an image with a new color.
 
 The vImage library provides a set of functions that allow you to flood fill areas of an image with a new color. The following image demonstrates how the flood-fill operation can colorize a hand-drawn line illustration:
 
-![A flow diagram that depicts colorization of a hand-drawn illustration. On the left is a grayscale line drawing of a mountainous landscape, and on the right is the same drawing with each segment filled in with a solid color.](https://docs-assets.developer.apple.com/published/f942d57c950e905b5d515ec5cbbb8df6/media-4098131%402x.png)
+![A flow diagram that depicts colorization of a hand-drawn illustration. On the left is a grayscale line drawing of a mountainous landscape, and on the right is the same drawing with each segment filled in with a solid color.](/images/com.apple.accelerate/media-4098131@2x.png)
 
 The flood-fill functions fill areas with identical pixel values. The process of applying lossy compression, such as when generating JPG images, may subtly change pixel values. Use losslessly compressed or uncompressed images, such as PNGs, to achieve the best flood-fill results.
 
@@ -56,7 +56,7 @@ let bufferRGB8 = vImage.PixelBuffer<vImage.Interleaved8x4>(
 
 The source image is 1024 pixels wide and 1585 pixels high. The following image shows the coordinates of the six seed pixels:
 
-![A diagram of a grayscale line drawing of a mountainous landscape. An indicator at the top shows the width as 1024, and an indicator on the left shows the height as 1585. On the right are six callouts that are stacked vertically. Each callout specifies the x and y positions of the seed pixel and the corresponding red, green, and blue values for the color fill.](https://docs-assets.developer.apple.com/published/5a53f4d909cd849b96e3622b746b156d/media-4110108%402x.png)
+![A diagram of a grayscale line drawing of a mountainous landscape. An indicator at the top shows the width as 1024, and an indicator on the left shows the height as 1585. On the right are six callouts that are stacked vertically. Each callout specifies the x and y positions of the seed pixel and the corresponding red, green, and blue values for the color fill.](/images/com.apple.accelerate/media-4110108@2x.png)
 
 Call [`vImageFloodFill_ARGB8888(_:_:_:_:_:_:_:)`](vimagefloodfill_argb8888(_:_:_:_:_:_:_:).md) to apply different colors to different parts of the line drawing. Note that the vImage flood-fill functions only work in place. That is, a single vImage buffer is the source and the destination for the flood-fill operation.
 

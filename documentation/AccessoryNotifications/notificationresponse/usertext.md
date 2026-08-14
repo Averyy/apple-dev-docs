@@ -7,7 +7,6 @@ A text string that a person provides in response to the notification.
 
 **Availability**:
 - iOS 26.5+
-- iPadOS 26.5+
 
 ## Declaration
 

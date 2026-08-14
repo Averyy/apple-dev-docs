@@ -19,7 +19,7 @@ static let copyToPasteboard: UIActivity.ActivityType
 
 #### Discussion
 
-When using this service, you can provide [`NSString`](https://developer.apple.com/documentation/Foundation/NSString), [`UIImage`](uiimage.md), [`NSURL`](https://developer.apple.com/documentation/Foundation/NSURL), [`UIColor`](uicolor.md), and [`NSDictionary`](https://developer.apple.com/documentation/Foundation/NSDictionary) objects as data for the activity items.
+When using this service, you can provide [`NSString`](https://developer.apple.com/documentation/foundation/nsstring), [`UIImage`](uiimage.md), [`NSURL`](https://developer.apple.com/documentation/foundation/nsurl), [`UIColor`](uicolor.md), and [`NSDictionary`](https://developer.apple.com/documentation/foundation/nsdictionary) objects as data for the activity items.
 
 ## See Also
 

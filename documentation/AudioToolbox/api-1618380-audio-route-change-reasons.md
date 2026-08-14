@@ -6,7 +6,7 @@ Identifiers for the various reasons that an audio route can change while your ap
 
 #### Overview
 
-You encounter these identifiers as values in the [`CFDictionary`](https://developer.apple.com/documentation/CoreFoundation/CFDictionary) object passed to your property listener callback function when it is listening for audio route changes. See the description for [`kAudioSessionProperty_AudioRouteChange`](kaudiosessionproperty_audioroutechange.md).
+You encounter these identifiers as values in the [`CFDictionary`](https://developer.apple.com/documentation/corefoundation/cfdictionary) object passed to your property listener callback function when it is listening for audio route changes. See the description for [`kAudioSessionProperty_AudioRouteChange`](kaudiosessionproperty_audioroutechange.md).
 
 ## Topics
 

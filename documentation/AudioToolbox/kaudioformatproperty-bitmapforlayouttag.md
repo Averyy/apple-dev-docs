@@ -21,7 +21,7 @@ var kAudioFormatProperty_BitmapForLayoutTag: AudioFormatPropertyID { get }
 
 #### Discussion
 
-A bitmap for an [`AudioChannelLayoutTag`](https://developer.apple.com/documentation/CoreAudioTypes/AudioChannelLayoutTag) value, if there is one. Set the `inSpecifier` parameter to an `AudioChannelLayoutTag` value containing the layout tag. The value is an `UInt32` bitmap. The bits are as defined in [`Core Audio Data Types`](https://developer.apple.com/documentation/CoreAudio/core-audio-data-types). To go in the other direction, that is, to get a layout tag for a bitmap, use the [`kAudioFormatProperty_TagForChannelLayout`](kaudioformatproperty_tagforchannellayout.md) where your layout tag is [`kAudioChannelLayoutTag_UseChannelBitmap`](https://developer.apple.com/documentation/CoreAudioTypes/kAudioChannelLayoutTag_UseChannelBitmap) and the bitmap is filled in.
+A bitmap for an [`AudioChannelLayoutTag`](https://developer.apple.com/documentation/coreaudiotypes/audiochannellayouttag) value, if there is one. Set the `inSpecifier` parameter to an `AudioChannelLayoutTag` value containing the layout tag. The value is an `UInt32` bitmap. The bits are as defined in [`Core Audio Data Types`](https://developer.apple.com/documentation/coreaudio/core-audio-data-types). To go in the other direction, that is, to get a layout tag for a bitmap, use the [`kAudioFormatProperty_TagForChannelLayout`](kaudioformatproperty_tagforchannellayout.md) where your layout tag is [`kAudioChannelLayoutTag_UseChannelBitmap`](https://developer.apple.com/documentation/coreaudiotypes/kaudiochannellayouttag_usechannelbitmap) and the bitmap is filled in.
 
 ## See Also
 

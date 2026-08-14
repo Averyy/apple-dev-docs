@@ -21,7 +21,7 @@ let kCFStreamPropertySSLSettings: CFString
 
 #### Discussion
 
-The key’s value is a `CFDictionary` object containing security settings. For information on the dictionary’s keys and values, see [`CFStream Property SSL Settings Constants`](https://developer.apple.com/documentation/CoreFoundation/cfstream-property-ssl-settings-constants). By default, there are no security settings.
+The key’s value is a `CFDictionary` object containing security settings. For information on the dictionary’s keys and values, see [`CFStream Property SSL Settings Constants`](https://developer.apple.com/documentation/corefoundation/cfstream-property-ssl-settings-constants). By default, there are no security settings.
 
 ## See Also
 
@@ -39,7 +39,7 @@ The key’s value is a `CFDictionary` object containing security settings. For i
 - [let kCFStreamPropertyHTTPProxyPort: CFString](kcfstreampropertyhttpproxyport.md)
 - [let kCFStreamPropertyHTTPRequestBytesWrittenCount: CFString](kcfstreampropertyhttprequestbyteswrittencount.md)
 - [let kCFStreamPropertyHTTPResponseHeader: CFString](kcfstreampropertyhttpresponseheader.md)
-  HTTP Response Header property. When copied by [`CFReadStreamCopyProperty(_:_:)`](https://developer.apple.com/documentation/CoreFoundation/CFReadStreamCopyProperty(_:_:)), the header of an HTTP response message is returned.
+  HTTP Response Header property. When copied by [`CFReadStreamCopyProperty(_:_:)`](https://developer.apple.com/documentation/corefoundation/cfreadstreamcopyproperty(_:_:)), the header of an HTTP response message is returned.
 - [let kCFStreamPropertyHTTPSProxyHost: CFString](kcfstreampropertyhttpsproxyhost.md)
 - [let kCFStreamPropertyHTTPSProxyPort: CFString](kcfstreampropertyhttpsproxyport.md)
 - [let kCFStreamPropertyHTTPShouldAutoredirect: CFString](kcfstreampropertyhttpshouldautoredirect.md)

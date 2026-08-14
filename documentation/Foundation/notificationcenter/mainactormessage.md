@@ -111,7 +111,7 @@ With this definition, an observer for this `MainActorMessage` type receives info
 ## Relationships
 
 ### Inherits From
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 ### Conforming Types
 - [Date.SystemClockDidChangeMessage](date/systemclockdidchangemessage.md)
 - [FileManager.UbiquityIdentityDidChangeMessage](filemanager/ubiquityidentitydidchangemessage.md)

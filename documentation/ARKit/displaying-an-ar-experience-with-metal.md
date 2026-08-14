@@ -6,9 +6,9 @@ Control rendering of your app’s virtual content on top of a camera feed.
 
 #### Overview
 
-ARKit includes view classes for easily displaying AR experiences with SceneKit or SpriteKit. However, if instead you build your own rendering engine using [`Metal`](https://developer.apple.com/documentation/Metal), ARKit also provides all the support necessary to display an AR experience with your custom view.
+ARKit includes view classes for easily displaying AR experiences with SceneKit or SpriteKit. However, if instead you build your own rendering engine using [`Metal`](https://developer.apple.com/documentation/metal), ARKit also provides all the support necessary to display an AR experience with your custom view.
 
-![None](https://docs-assets.developer.apple.com/published/e6a7b45df95eeca85dc610dd27c73c98/media-2903215%402x.png)
+![None](/images/com.apple.arkit/media-2903215@2x.png)
 
 In any AR experience, the first step is to configure an [`ARSession`](arsession.md) object to manage camera capture and motion processing. A session defines and maintains a correspondence between the real-world space the device inhabits and a virtual space where you model AR content. To display your AR experience in a custom view, you’ll need to:
 
@@ -51,7 +51,7 @@ Upon obtaining a frame, you’ll need to draw the camera image, and update and r
 
 Each [`ARFrame`](arframe.md) object’s [`capturedImage`](arframe/capturedimage.md) property contains a pixel buffer captured from the device camera. To draw this image as the backdrop for your custom view, you’ll need to create textures from the image content and submit GPU rendering commands that use those textures.
 
-The pixel buffer’s contents are encoded in a biplanar YCbCr (also called YUV) data format; to render the image you’ll need to convert this pixel data to a drawable RGB format. For rendering with Metal, you can perform this conversion most efficiently in GPU shader code. Use [`CVMetalTextureCache`](https://developer.apple.com/documentation/CoreVideo/cvmetaltexturecache-q3j) APIs to create two Metal textures from the pixel buffer—one each for the buffer’s luma (Y) and chroma (CbCr) planes:
+The pixel buffer’s contents are encoded in a biplanar YCbCr (also called YUV) data format; to render the image you’ll need to convert this pixel data to a drawable RGB format. For rendering with Metal, you can perform this conversion most efficiently in GPU shader code. Use [`CVMetalTextureCache`](https://developer.apple.com/documentation/corevideo/cvmetaltexturecache-q3j) APIs to create two Metal textures from the pixel buffer—one each for the buffer’s luma (Y) and chroma (CbCr) planes:
 
 ```swift
 func updateCapturedImageTextures(frame: ARFrame) {

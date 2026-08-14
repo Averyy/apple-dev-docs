@@ -31,7 +31,7 @@ The color monochrome filter uses the following properties:
 
 - **`inputImage`**: An image with the type [`CIImage`](ciimage.md).
 - **`color`**: The color to map the input image colors to, as a [`CIColor`](cicolor.md).
-- **`intensity`**: A `float` representing the desired strength of the effect as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+- **`intensity`**: A `float` representing the desired strength of the effect as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
 
 The following code creates a filter that results in the colors of the image becoming shades of red:
 
@@ -45,7 +45,7 @@ func colorMonochrome(inputImage: CIImage) -> CIImage {
 }
 ```
 
-![Two pictures of a pink flower surrounded by foliage. The photo on the left shows a single flower photographed close-up, in focus, with good light and no effects. In the photo on the right, a color monochrome filter is applied, transforming the colors in the image to a red hue.](https://docs-assets.developer.apple.com/published/3a797ec8266e2c0b3fe657d59c891aa9/media-3545012%402x.png)
+![Two pictures of a pink flower surrounded by foliage. The photo on the left shows a single flower photographed close-up, in focus, with good light and no effects. In the photo on the right, a color monochrome filter is applied, transforming the colors in the image to a red hue.](/images/com.apple.coreimage/media-3545012@2x.png)
 
 ## See Also
 

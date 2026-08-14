@@ -45,15 +45,15 @@ struct UIAccessibilityTextualContext
 ## Relationships
 
 ### Conforms To
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [RawRepresentable](../Swift/RawRepresentable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [RawRepresentable](../swift/rawrepresentable.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 
-- [UIAccessibilityFocus](../ObjectiveC/uiaccessibilityfocus.md)
+- [UIAccessibilityFocus](../objectivec/uiaccessibilityfocus.md)
   An informal protocol that provides a way to determine whether an assistive app, such as VoiceOver, has focus on an accessible element.
 - [protocol UIAccessibilityIdentification](uiaccessibilityidentification.md)
   Methods that associate a unique identifier with elements in your user interface.

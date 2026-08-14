@@ -16,7 +16,7 @@ minimumSpan?: CoordinateSpanData;
 
 #### Discussion
 
-Set this value to ensure that [`showItems(items, options)`](map/showitems.md) sets a map region no smaller than the minimum span specified.
+Set this value to ensure that [`showItems()`](map/showitems.md) sets a map region no smaller than the minimum span specified.
 
 ## See Also
 

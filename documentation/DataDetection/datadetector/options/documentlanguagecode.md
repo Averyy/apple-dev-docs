@@ -22,7 +22,7 @@ var documentLanguageCode: Locale.LanguageCode?
 
 #### Discussion
 
-For more information on locales, see [`Locale.LanguageCode`](https://developer.apple.com/documentation/Foundation/Locale/LanguageCode-swift.struct).
+For more information on locales, see [`Locale.LanguageCode`](https://developer.apple.com/documentation/foundation/locale/languagecode-swift.struct).
 
 ## See Also
 

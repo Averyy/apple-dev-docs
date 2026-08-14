@@ -18,7 +18,7 @@ case utilitarianLarge
 
 The following figure shows the size and location of the utilitarian large complication.
 
-![Diagram showing the size and position of a utilitarian large complication.](https://docs-assets.developer.apple.com/published/369664f2ee4947a6578a6bc000aa23d2/media-2933732%402x.png)
+![Diagram showing the size and position of a utilitarian large complication.](/images/com.apple.clockkit/media-2933732@2x.png)
 
 ## See Also
 

@@ -22,7 +22,7 @@ func CTRunGetGlyphsPtr(_ run: CTRun) -> UnsafePointer<CGGlyph>?
 
 #### Return Value
 
-A valid pointer to an array of [`CGGlyph`](https://developer.apple.com/documentation/CoreGraphics/CGGlyph) structures, or `NULL`.
+A valid pointer to an array of [`CGGlyph`](https://developer.apple.com/documentation/coregraphics/cgglyph) structures, or `NULL`.
 
 #### Discussion
 

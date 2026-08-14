@@ -26,7 +26,7 @@ Enumerate a log container object to get a list of [`MTLFunctionLog`](mtlfunction
 ## Relationships
 
 ### Conforms To
-- [Sequence](../Swift/Sequence.md)
+- [Sequence](../swift/sequence.md)
 
 ## See Also
 

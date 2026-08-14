@@ -8,7 +8,7 @@ Set up the classes that manage and persist your app’s objects.
 
 After you create a data model file as described in [`Creating a Core Data model`](creating-a-core-data-model.md), set up the classes that collaboratively support your app’s model layer. These classes are collectively referred to as the Core Data stack.
 
-![Diagram showing that a persistent container instance contains references to a a managed object model, a managed object context, and a persistent store coordinator that connects to your app’s stores.](https://docs-assets.developer.apple.com/published/5ae3a13612ee984aac0a82870723ef9d/media-3122928%402x.png)
+![Diagram showing that a persistent container instance contains references to a a managed object model, a managed object context, and a persistent store coordinator that connects to your app’s stores.](/images/com.apple.coredata/media-3122928@2x.png)
 
 - An instance of [`NSManagedObjectModel`](nsmanagedobjectmodel.md) represents your app’s model file describing your app’s types, properties, and relationships.
 - An instance of [`NSManagedObjectContext`](nsmanagedobjectcontext.md) tracks changes to instances of your app’s types.

@@ -21,7 +21,7 @@ This sample demonstrates:
 - Using aliasing to reduce the amount of memory used for temporary resources
 - Using events to manage dependencies between encoders that produce and consume dynamic textures
 
-![Screenshot of the sample app running to show a filtered image.](https://docs-assets.developer.apple.com/published/a0e0be8f7c006a6b14466de6eb449c11/image-filtering-with-heaps-and-events-1-ImageFilterGraphWithHeapsAndEvents.png)
+![Screenshot of the sample app running to show a filtered image.](/images/com.apple.metal/image-filtering-with-heaps-and-events-1-ImageFilterGraphWithHeapsAndEvents.png)
 
 This implementation minimizes memory usage in an orderly fashion for a filter graph with a downsample and Gaussian blur filter. For more information, including implementation details about heaps for static and dynamic textures, see [`Implementing a multistage image filter using heaps and fences`](implementing-a-multistage-image-filter-using-heaps-and-fences.md).
 
@@ -126,7 +126,7 @@ The second filter, implemented by the sample in `AAPLGaussianBlurFilter`, calls 
 [event wait:commandBuffer];
 ```
 
-![Timeline diagram that shows how an event manages dependencies between filters.](https://docs-assets.developer.apple.com/published/2acf2f1e09ade27278cc5bc6d8cba3c8/image-filtering-with-heaps-and-events-2-EventBetweenFilters.png)
+![Timeline diagram that shows how an event manages dependencies between filters.](/images/com.apple.metal/image-filtering-with-heaps-and-events-2-EventBetweenFilters.png)
 
 ##### Reuse Memory and Manage Dependencies Within a Filter
 
@@ -197,7 +197,7 @@ This memory reuse creates dynamic texture dependencies between mipmap levels. Th
 
 Because the sample already calls the `wait:` method to wait for the downsample filter to complete its work, the sample leverages this same call to wait for any previous mipmap levels to complete their work before beginning a new mipmap level iteration.
 
-![Timeline diagram that shows how an event manages dependencies within a filter.](https://docs-assets.developer.apple.com/published/4b410457dbaa25a62bf83e44b15992cb/image-filtering-with-heaps-and-events-3-EventWithinFilter.png)
+![Timeline diagram that shows how an event manages dependencies within a filter.](/images/com.apple.metal/image-filtering-with-heaps-and-events-3-EventWithinFilter.png)
 
 ##### Manage Dependencies Between Frames
 
@@ -227,7 +227,7 @@ Finally, the sample calls the `signal:` method to indicate that the frame has be
 [commandBuffer commit];
 ```
 
-![Timeline diagram that shows how an event manages dependencies between frames.](https://docs-assets.developer.apple.com/published/6fa7c1c14eebecfd1c4af38d28d305f7/image-filtering-with-heaps-and-events-4-EventBetweenFrames.png)
+![Timeline diagram that shows how an event manages dependencies between frames.](/images/com.apple.metal/image-filtering-with-heaps-and-events-4-EventBetweenFrames.png)
 
 ## See Also
 

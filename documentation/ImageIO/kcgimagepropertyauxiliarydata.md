@@ -22,7 +22,7 @@ let kCGImagePropertyAuxiliaryData: CFString
 
 #### Discussion
 
-The value of this key is a [`CFArray`](https://developer.apple.com/documentation/CoreFoundation/CFArray). Each [`CFDictionary`](https://developer.apple.com/documentation/CoreFoundation/CFDictionary) in the array contains auxiliary data for one of the images in the file. Use the [`kCGImagePropertyAuxiliaryDataType`](kcgimagepropertyauxiliarydatatype.md) key to determine the type of data associated with the image.
+The value of this key is a [`CFArray`](https://developer.apple.com/documentation/corefoundation/cfarray). Each [`CFDictionary`](https://developer.apple.com/documentation/corefoundation/cfdictionary) in the array contains auxiliary data for one of the images in the file. Use the [`kCGImagePropertyAuxiliaryDataType`](kcgimagepropertyauxiliarydatatype.md) key to determine the type of data associated with the image.
 
 ## See Also
 

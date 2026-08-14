@@ -38,8 +38,8 @@ struct IntentSchema
 - [AssistantSchemas.VisualIntelligenceIntent](assistantschemas/visualintelligenceintent.md)
 - [AssistantSchemas.WhiteboardIntent](assistantschemas/whiteboardintent.md)
 - [AssistantSchemas.WordProcessorIntent](assistantschemas/wordprocessorintent.md)
-- [Copyable](../Swift/Copyable.md)
-- [Escapable](../Swift/Escapable.md)
+- [Copyable](../swift/copyable.md)
+- [Escapable](../swift/escapable.md)
 
 
 ---

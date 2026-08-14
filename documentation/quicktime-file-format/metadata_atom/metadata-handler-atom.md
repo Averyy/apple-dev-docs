@@ -7,7 +7,7 @@ An atom that defines the structure used for all types of metadata stored within 
 
 #### Overview
 
-For more information, see [`Metadata handler atom ('hdlr')`](metadata_handler_atom.md).
+For more information, see [`Metadata handler atom`](metadata_handler_atom.md).
 
 ## See Also
 

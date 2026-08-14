@@ -24,9 +24,7 @@ bool IsDataAvailable(void);
 - [- SetDataAvailableHandler](../driverkit/iodataqueuedispatchsource/setdataavailablehandler.md)
   Sets the handler block to run when another object adds data to the queue.
 - [- DataAvailable](../driverkit/iodataqueuedispatchsource/dataavailable.md)
-  Responds to the addition of new data to the queue.
-- [IODataQueueClientDequeueEntryBlock](../driverkit/iodataqueueclientdequeueentryblock.md)
-  The handler block you use to remove data from a queue.
+  Responds to the addition of new data to the queue. 
 - [- Peek](iodataqueuedispatchsource/3438183-peek.md)
   Returns the next queue entry without removing it from the queue.
 - [- Dequeue](iodataqueuedispatchsource/3438178-dequeue.md)
@@ -35,6 +33,8 @@ bool IsDataAvailable(void);
   Removes the next queue entry, but doesn't automatically send notifications.
 - [- SendDataServiced](iodataqueuedispatchsource/3438185-senddataserviced.md)
   Notifies interested parties that you removed data from the queue. 
+- [IODataQueueClientDequeueEntryBlock](../driverkit/iodataqueueclientdequeueentryblock.md)
+  The handler block you use to remove data from a queue. 
 
 
 ---

@@ -14,7 +14,7 @@ A type that represents a number of bytes in a 64-bit address space.
 ## Declaration
 
 ```swift
-typedef UInt64 IOByteCount64;
+typedef uint64_t IOByteCount64;
 ```
 
 ## See Also

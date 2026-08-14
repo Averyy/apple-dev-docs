@@ -32,7 +32,7 @@ To learn more about the agent simulation, see [`Agents, Goals, and Behaviors`](h
 
 Because [`GKAgent`](gkagent.md) is a subclass of [`GKComponent`](gkcomponent.md), you can use Entity-Component architecture to add agent-based behaviors to your game. (For details on this architecture, see [`Entities and Components`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Conceptual/GameplayKit_Guide/EntityComponent.html#//apple_ref/doc/uid/TP40015172-CH6) in [`GameplayKit Programming Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Conceptual/GameplayKit_Guide/index.html#//apple_ref/doc/uid/TP40015172).)
 
-To integrate agents with gameplay, call each agent’s [`update(deltaTime:)`](gkcomponent/update(deltatime:).md) method each time you want to update the simulation that governs the agent’s behavior. Typically, you call this method once for each frame processed by your game’s graphics engine—for example, in the [`update(_:)`](https://developer.apple.com/documentation/SpriteKit/SKScene/update(_:)) method of a SpriteKit scene or the [`renderer(_:updateAtTime:)`](https://developer.apple.com/documentation/SceneKit/SCNSceneRendererDelegate/renderer(_:updateAtTime:)) method of a SceneKit renderer delegate. If your game uses Entity-Component architecture, you can use a [`GKComponentSystem`](gkcomponentsystem.md) object to update all the agents in the game scene for each frame. If not, you must call each agent’s [`update(deltaTime:)`](gkcomponent/update(deltatime:).md) method directly.
+To integrate agents with gameplay, call each agent’s [`update(deltaTime:)`](gkcomponent/update(deltatime:).md) method each time you want to update the simulation that governs the agent’s behavior. Typically, you call this method once for each frame processed by your game’s graphics engine—for example, in the [`update(_:)`](https://developer.apple.com/documentation/spritekit/skscene/update(_:)) method of a SpriteKit scene or the [`renderer(_:updateAtTime:)`](https://developer.apple.com/documentation/scenekit/scnscenerendererdelegate/renderer(_:updateattime:)) method of a SceneKit renderer delegate. If your game uses Entity-Component architecture, you can use a [`GKComponentSystem`](gkcomponentsystem.md) object to update all the agents in the game scene for each frame. If not, you must call each agent’s [`update(deltaTime:)`](gkcomponent/update(deltatime:).md) method directly.
 
 ##### An Agent Simulates Movement Based on Goals
 
@@ -40,7 +40,7 @@ Each time an agent’s [`update(deltaTime:)`](gkcomponent/update(deltatime:).md)
 
 There are two options for using the output of this simulation to move game entities:
 
-- In a per-frame update that executes after the agent’s [`update(deltaTime:)`](gkcomponent/update(deltatime:).md) method—such as the [`update(deltaTime:)`](gkcomponent/update(deltatime:).md) method of another [`GKComponent`](gkcomponent.md) subclass in your game or a game engine method such as [`didEvaluateActions()`](https://developer.apple.com/documentation/SpriteKit/SKScene/didEvaluateActions()) (SpriteKit) or [`renderer(_:willRenderScene:atTime:)`](https://developer.apple.com/documentation/SceneKit/SCNSceneRendererDelegate/renderer(_:willRenderScene:atTime:)) (SceneKit)—examine the position and rotation of each agent and use that information to update the properties of any visual objects representing the agents.
+- In a per-frame update that executes after the agent’s [`update(deltaTime:)`](gkcomponent/update(deltatime:).md) method—such as the [`update(deltaTime:)`](gkcomponent/update(deltatime:).md) method of another [`GKComponent`](gkcomponent.md) subclass in your game or a game engine method such as [`didEvaluateActions()`](https://developer.apple.com/documentation/spritekit/skscene/didevaluateactions()) (SpriteKit) or [`renderer(_:willRenderScene:atTime:)`](https://developer.apple.com/documentation/scenekit/scnscenerendererdelegate/renderer(_:willrenderscene:attime:)) (SceneKit)—examine the position and rotation of each agent and use that information to update the properties of any visual objects representing the agents.
 - Set the [`delegate`](gkagent/delegate.md) property of each agent to an object responsible for that agent’s visual representation. That object can implement the [`agentDidUpdate(_:)`](gkagentdelegate/agentdidupdate(_:).md) method, which the agent calls every time it updates its position and direction. In that method, you can examine the agent’s properties and make corresponding changes to a visual representation.
 
 In addition, an agent delegate can implement the [`agentWillUpdate(_:)`](gkagentdelegate/agentwillupdate(_:).md) method to feed information into the agent simulation. This option can be useful for combining agent-based movement with an external physics engine (such as those found in SceneKit and SpriteKit), or with other APIs that might apply motion to an agent’s visual representation (such as SpriteKit actions). However, the agent simulation cannot account for momentum introduced by such influences, so the accuracy of the agent’s planning will be reduced in these scenarios.
@@ -78,15 +78,15 @@ In addition, an agent delegate can implement the [`agentWillUpdate(_:)`](gkagent
 - [GKAgent2D](gkagent2d.md)
 - [GKAgent3D](gkagent3d.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCoding](../Foundation/NSCoding.md)
-- [NSCopying](../Foundation/NSCopying.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [NSSecureCoding](../Foundation/NSSecureCoding.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCoding](../foundation/nscoding.md)
+- [NSCopying](../foundation/nscopying.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSSecureCoding](../foundation/nssecurecoding.md)
 
 ## See Also
 

@@ -21,7 +21,7 @@ class func paymentContactInvalidError(withContactField field: PKContactField, lo
 
 #### Discussion
 
-You can use this convenience method to create a payment error object instead of creating an [`NSError`](https://developer.apple.com/documentation/Foundation/NSError) object yourself.  This method indicates an error in the contact information that is received from an Apple Pay sheet.
+You can use this convenience method to create a payment error object instead of creating an [`NSError`](https://developer.apple.com/documentation/foundation/nserror) object yourself.  This method indicates an error in the contact information that is received from an Apple Pay sheet.
 
 The error you provide and its optional message appear on the Apple Pay sheet. The available space to display messages is limited, so you should keep your messages concise.
 

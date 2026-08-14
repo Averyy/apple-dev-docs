@@ -22,7 +22,7 @@ enum NonConformingFloatEncodingStrategy
 
 #### Overview
 
-The IEEE 754 floating-point specification defines exceptional values, which include [`infinity`](https://developer.apple.com/documentation/Swift/FloatingPoint/infinity) and [`nan`](https://developer.apple.com/documentation/Swift/FloatingPoint/nan).
+The IEEE 754 floating-point specification defines exceptional values, which include [`infinity`](https://developer.apple.com/documentation/swift/floatingpoint/infinity) and [`nan`](https://developer.apple.com/documentation/swift/floatingpoint/nan).
 
 ## Topics
 
@@ -35,8 +35,8 @@ The IEEE 754 floating-point specification defines exceptional values, which incl
 ## Relationships
 
 ### Conforms To
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

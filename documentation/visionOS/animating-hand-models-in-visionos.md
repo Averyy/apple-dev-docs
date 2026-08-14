@@ -14,17 +14,17 @@ Hand tracking enables your app to observe an Apple Vision Pro wearer’s hand po
 
 #### Create the Glove Models
 
-The glove models in this sample code project match the hand skeleton structure in [`ARKit`](https://developer.apple.com/documentation/ARKit). Each glove’s origin is positioned at the base of the wrist just like the ARKit hand skeleton’s origin. Each glove has 27 joints, matching both the number and order of the ARKit hand skeleton. These joints form a kinematic chain where each joint’s position and rotation is relative to the preceding joint, extending from wrist to fingertips. For example, the wrist connects to the thumb base, which connects to the first thumb joint, and so on.
+The glove models in this sample code project match the hand skeleton structure in [`ARKit`](https://developer.apple.com/documentation/arkit). Each glove’s origin is positioned at the base of the wrist just like the ARKit hand skeleton’s origin. Each glove has 27 joints, matching both the number and order of the ARKit hand skeleton. These joints form a kinematic chain where each joint’s position and rotation is relative to the preceding joint, extending from wrist to fingertips. For example, the wrist connects to the thumb base, which connects to the first thumb joint, and so on.
 
 The gloves use a natural, relaxed hand pose as the rest pose. The fingers point forward along the negative z-axis, the palm faces downward along the negative y-axis, the thumb extends at approximately 45 degrees from the palm, and the fingers curl slightly rather than fully extend. This rest pose aligns with the ARKit hand skeleton, ensuring natural animation when applying joint rotations.
 
-![Two white gloves, each with an overlaid hand skeleton showing 27 joints marked by cyan dots and connected by lines in a kinematic chain from wrist to fingertips.](https://docs-assets.developer.apple.com/published/c23754b3758e047f5fd01d58ad56efee/animating-hand-models.png)
+![Two white gloves, each with an overlaid hand skeleton showing 27 joints marked by cyan dots and connected by lines in a kinematic chain from wrist to fingertips.](/images/com.apple.visionOS/animating-hand-models.png)
 
 For more information on ARKit in visionOS, including hands-tracking, see [`Meet ARKit for spatial computing`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2023/10082).
 
 #### Hide the Wearers Hands
 
-By default, the system displays the wearer’s hands in an immersive space. The sample hides the wearer’s hands using [`upperLimbVisibility(_:)`](https://developer.apple.com/documentation/SwiftUI/Scene/upperLimbVisibility(_:)).
+By default, the system displays the wearer’s hands in an immersive space. The sample hides the wearer’s hands using [`upperLimbVisibility(_:)`](https://developer.apple.com/documentation/swiftui/scene/upperlimbvisibility(_:)).
 
 ```swift
 ImmersiveSpace(id: appModel.immersiveSpaceID) {
@@ -38,7 +38,7 @@ ImmersiveSpace(id: appModel.immersiveSpaceID) {
 
 #### Add Usage Descriptions for Arkit Data Access
 
-To help protect people’s privacy, visionOS limits app access to hands-tracking data and other sensors in Apple Vision Pro. Add the Hands Tracking capability to your app’s target and provide a usage description that explains how your app uses the data those sensors provide. People see that description when your app prompts for access to hands-tracking data. For more information on app capabilities, see [`Adding capabilities to your app`](https://developer.apple.com/documentation/Xcode/adding-capabilities-to-your-app).
+To help protect people’s privacy, visionOS limits app access to hands-tracking data and other sensors in Apple Vision Pro. Add the Hands Tracking capability to your app’s target and provide a usage description that explains how your app uses the data those sensors provide. People see that description when your app prompts for access to hands-tracking data. For more information on app capabilities, see [`Adding capabilities to your app`](https://developer.apple.com/documentation/xcode/adding-capabilities-to-your-app).
 
 #### Add the Glove Models and Start Hand Tracking
 
@@ -74,7 +74,7 @@ var body: some View {
 
 > **Note**: The glove models take time to load, particularly in debug builds. For simplicity, this implementation loads the gloves in the reality view’s make closure. To improve perceived performance, consider preloading the models. When dismissing the immersive space, ensure you dereference the glove models to free memory.
 
-The `startHandTracking` method runs an [`ARKitSession`](https://developer.apple.com/documentation/ARKit/ARKitSession) with a [`HandTrackingProvider`](https://developer.apple.com/documentation/ARKit/HandTrackingProvider) to begin hand tracking, then responds to updates from the `HandTrackingProvider`.
+The `startHandTracking` method runs an [`ARKitSession`](https://developer.apple.com/documentation/arkit/arkitsession) with a [`HandTrackingProvider`](https://developer.apple.com/documentation/arkit/handtrackingprovider) to begin hand tracking, then responds to updates from the `HandTrackingProvider`.
 
 ```swift
 private func startHandTracking() async {
@@ -90,7 +90,7 @@ private func startHandTracking() async {
 
 #### Animate the Glove Models
 
-ARKit delivers a stream of [`HandAnchor`](https://developer.apple.com/documentation/ARKit/HandAnchor) instances, each containing skeletal tracking data for one of the wearer’s hands. The `updateGlovesFromHandAnchors` method hides the glove when ARKit is unable to track the hand. Each hand anchor includes [`originFromAnchorTransform`](https://developer.apple.com/documentation/ARKit/HandAnchor/originFromAnchorTransform), a transform with an origin at the base of the wrist. Because the glove model’s origin is also at the wrist, `updateGlovesFromHandAnchors` sets the glove’s transform to match this transform, positioning the glove correctly in space.
+ARKit delivers a stream of [`HandAnchor`](https://developer.apple.com/documentation/arkit/handanchor) instances, each containing skeletal tracking data for one of the wearer’s hands. The `updateGlovesFromHandAnchors` method hides the glove when ARKit is unable to track the hand. Each hand anchor includes [`originFromAnchorTransform`](https://developer.apple.com/documentation/arkit/handanchor/originfromanchortransform), a transform with an origin at the base of the wrist. Because the glove model’s origin is also at the wrist, `updateGlovesFromHandAnchors` sets the glove’s transform to match this transform, positioning the glove correctly in space.
 
 ```swift
 private func updateGlovesFromHandAnchors() async {

@@ -34,7 +34,7 @@ For more information about the how views are added to view hierarchies by a view
 
 ## Parameters
 
-- `animated`: If [`true`](https://developer.apple.com/documentation/Swift/true), the view is being added to the window using an animation.
+- `animated`: If [`true`](https://developer.apple.com/documentation/swift/true), the view is being added to the window using an animation.
 
 ## See Also
 

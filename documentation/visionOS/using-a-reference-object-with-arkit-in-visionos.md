@@ -34,9 +34,9 @@ For more information, see [`Exploring object tracking with ARKit`](exploring_obj
 
 By default, ARKit tracks objects at a lower frequency so apps consume less power. This works best with stationary objects where the virtual content doesn’t need to follow an object’s precise position on every frame. With default tracking, the anchor also persists briefly when the object leaves the field of view, while high frame rate tracking removes the anchor immediately.
 
-If you have an object that moves and changes its position frequently, like a handheld device, enable [`highFrameRateTrackingEnabled`](https://developer.apple.com/documentation/ARKit/ReferenceObject/Configuration/highFrameRateTrackingEnabled) for that object. The [`ReferenceObject.Configuration`](https://developer.apple.com/documentation/ARKit/ReferenceObject/Configuration) allows you set the tracking behavior for a chosen object at load time, independently of any other objects in your session. Using the reference object configuration and initializers require visionOS 27 or later.
+If you have an object that moves and changes its position frequently, like a handheld device, enable [`highFrameRateTrackingEnabled`](https://developer.apple.com/documentation/arkit/referenceobject/configuration/highframeratetrackingenabled) for that object. The [`ReferenceObject.Configuration`](https://developer.apple.com/documentation/arkit/referenceobject/configuration) allows you set the tracking behavior for a chosen object at load time, independently of any other objects in your session. Using the reference object configuration and initializers require visionOS 27 or later.
 
-To enable high frame rate tracking, create a [`ReferenceObject.Configuration`](https://developer.apple.com/documentation/ARKit/ReferenceObject/Configuration) and pass it at load time:
+To enable high frame rate tracking, create a [`ReferenceObject.Configuration`](https://developer.apple.com/documentation/arkit/referenceobject/configuration) and pass it at load time:
 
 ```swift
 var configuration = ReferenceObject.Configuration()
@@ -48,7 +48,7 @@ let referenceObject = try await ReferenceObject(named: "MyObject", from: Bundle.
 
 #### Run Object Tracking on a Session
 
-You use an [`ObjectTrackingProvider`](https://developer.apple.com/documentation/ARKit/ObjectTrackingProvider) to track your reference object in a spatial location and receive [`ObjectAnchor`](https://developer.apple.com/documentation/ARKit/ObjectAnchor) updates. `ObjectTrackingProvider` gets the live position and orientation of the real-world object. The system can track a maximum of 10 reference objects at once. To receive this data and begin tracking, configure an [`ARKitSession`](https://developer.apple.com/documentation/ARKit/ARKitSession).
+You use an [`ObjectTrackingProvider`](https://developer.apple.com/documentation/arkit/objecttrackingprovider) to track your reference object in a spatial location and receive [`ObjectAnchor`](https://developer.apple.com/documentation/arkit/objectanchor) updates. `ObjectTrackingProvider` gets the live position and orientation of the real-world object. The system can track a maximum of 10 reference objects at once. To receive this data and begin tracking, configure an [`ARKitSession`](https://developer.apple.com/documentation/arkit/arkitsession).
 
 ```swift
 func configureAndRunObjectTracking() async -> ObjectTrackingProvider? {
@@ -76,7 +76,7 @@ func configureAndRunObjectTracking() async -> ObjectTrackingProvider? {
 
 As your app tracks the reference object file, ARKit sends asynchronous updates when it detects changes in a person’s surroundings. Account for those changes and update the scene accordingly.
 
-An [`Anchor`](https://developer.apple.com/documentation/ARKit/Anchor) represents the position of your real-world object within Apple Vision Pro. The [`ARKitSession`](https://developer.apple.com/documentation/ARKit/ARKitSession) structure provides events about the anchors, including adding a new anchor, removing an anchor, and updates on an anchor’s pose and tracking state. You can place visualizations at those anchors to render content on real-world objects.
+An [`Anchor`](https://developer.apple.com/documentation/arkit/anchor) represents the position of your real-world object within Apple Vision Pro. The [`ARKitSession`](https://developer.apple.com/documentation/arkit/arkitsession) structure provides events about the anchors, including adding a new anchor, removing an anchor, and updates on an anchor’s pose and tracking state. You can place visualizations at those anchors to render content on real-world objects.
 
 ```swift
 Task {
@@ -112,12 +112,12 @@ Task {
 
 #### Obtain Metric Poses
 
-By default, the system optimizes an object anchor’s transform for placing virtual content over the tracked object in the [`mixed`](https://developer.apple.com/documentation/SwiftUI/ImmersionStyle/mixed) immersion style.
+By default, the system optimizes an object anchor’s transform for placing virtual content over the tracked object in the [`mixed`](https://developer.apple.com/documentation/swiftui/immersionstyle/mixed) immersion style.
 
-When querying a tracked object’s position, the [`ARKitCoordinateSpace.Correction`](https://developer.apple.com/documentation/ARKit/ARKitCoordinateSpace/Correction) API provides two options:
+When querying a tracked object’s position, the [`ARKitCoordinateSpace.Correction`](https://developer.apple.com/documentation/arkit/arkitcoordinatespace/correction) API provides two options:
 
-- **[`ARKitCoordinateSpace.Correction.rendered`](https://developer.apple.com/documentation/ARKit/ARKitCoordinateSpace/Correction/rendered)**: Returns the position with display corrections applied. This keeps virtual content visually aligned with the real-world object.
-- **[`ARKitCoordinateSpace.Correction.none`](https://developer.apple.com/documentation/ARKit/ARKitCoordinateSpace/Correction/none)**: Returns the object’s position in metric space, without display corrections. This is useful for measuring the distance between tracked objects or determining where an object sits in physical space.
+- **[`ARKitCoordinateSpace.Correction.rendered`](https://developer.apple.com/documentation/arkit/arkitcoordinatespace/correction/rendered)**: Returns the position with display corrections applied. This keeps virtual content visually aligned with the real-world object.
+- **[`ARKitCoordinateSpace.Correction.none`](https://developer.apple.com/documentation/arkit/arkitcoordinatespace/correction/none)**: Returns the object’s position in metric space, without display corrections. This is useful for measuring the distance between tracked objects or determining where an object sits in physical space.
 
 ```swift
 let metricSpace = myObjectAnchor.coordinateSpace(correction: .none)
@@ -127,7 +127,7 @@ The resulting coordinate space corresponds to real-world measurements and remain
 
 #### Adjust the Object Tracking Properties for Your App
 
-If you have an enterprise app, you can further adjust object-tracking properties to track more objects with a higher frequency. Use the [`Object-tracking parameter adjustment`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.arkit.object-tracking-parameter-adjustment.allow) key to configure object-tracking properties.
+If you have an enterprise app, you can further adjust object-tracking properties to track more objects with a higher frequency. Use the [`Object-tracking parameter adjustment`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.arkit.object-tracking-parameter-adjustment.allow) key to configure object-tracking properties.
 
 > **Note**: The object-tracking parameter adjustment key doesn’t allow you to change the maximum of 10 reference objects that the system can detect at once.
 
@@ -141,13 +141,13 @@ To configure the entitlement within your app:
 
 This creates an entitlement file with the `com.apple.developer.arkit.object-tracking-parameter-adjustment.allow` key.
 
-![An Xcode screenshot of the Capabilities library dialog with the Object Tracking Parameter Adjustment option selected.](https://docs-assets.developer.apple.com/published/7aaf40e61871a5623726a9361cab6ecb/capabilities%402x.png)
+![An Xcode screenshot of the Capabilities library dialog with the Object Tracking Parameter Adjustment option selected.](/images/com.apple.visionOS/capabilities@2x.png)
 
-For more information on how to add capabilities in your app, see [`Adding capabilities to your app`](https://developer.apple.com/documentation/Xcode/adding-capabilities-to-your-app).
+For more information on how to add capabilities in your app, see [`Adding capabilities to your app`](https://developer.apple.com/documentation/xcode/adding-capabilities-to-your-app).
 
-![An Xcode screenshot showing the com.apple.developer.arkit.object-tracking-parameter-adjustment.allow key selected in the Signing & Capabilities pane.](https://docs-assets.developer.apple.com/published/4c9655dccb89c6e9039bc0309c7739e2/key%402x.png)
+![An Xcode screenshot showing the com.apple.developer.arkit.object-tracking-parameter-adjustment.allow key selected in the Signing & Capabilities pane.](/images/com.apple.visionOS/key@2x.png)
 
-To configure the object tracking parameters, initialize a [`init(referenceObjects:trackingConfiguration:)`](https://developer.apple.com/documentation/ARKit/ObjectTrackingProvider/init(referenceObjects:trackingConfiguration:)).
+To configure the object tracking parameters, initialize a [`init(referenceObjects:trackingConfiguration:)`](https://developer.apple.com/documentation/arkit/objecttrackingprovider/init(referenceobjects:trackingconfiguration:)).
 
 ```swift
 var trackingConfiguration = ObjectTrackingProvider.TrackingConfiguration()
@@ -165,7 +165,7 @@ Use `TrackingConfiguration` to adjust the values of these properties in your app
 trackingConfiguration.maximumInstancesPerReferenceObject = 2
 ```
 
-Pass the `trackingConfiguration` to [`ObjectTrackingProvider`](https://developer.apple.com/documentation/ARKit/ObjectTrackingProvider) alongside your reference objects, then run the session as described earlier in the section, [`Run object tracking on a session`](https://developer.apple.com#Run-object-tracking-on-a-session).
+Pass the `trackingConfiguration` to [`ObjectTrackingProvider`](https://developer.apple.com/documentation/arkit/objecttrackingprovider) alongside your reference objects, then run the session as described earlier in the section, [`Run object tracking on a session`](https://developer.apple.com#Run-object-tracking-on-a-session).
 
 ```swift
 dataProvider = ObjectTrackingProvider(referenceObjects: referenceObjects,

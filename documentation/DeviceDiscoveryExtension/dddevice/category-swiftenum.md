@@ -22,7 +22,7 @@ enum Category
 
 The device ([`DDDevice`](dddevice.md)) [`category`](dddevice/category-swift.property.md) property is of this type.
 
-Each value in this enumeration determines a different icon that the picker UI ([`AVRoutePickerView`](https://developer.apple.com/documentation/AVKit/AVRoutePickerView)) displays, which helps the user visually confirm that their selection corresponds to the device they intend to stream media to.
+Each value in this enumeration determines a different icon that the picker UI ([`AVRoutePickerView`](https://developer.apple.com/documentation/avkit/avroutepickerview)) displays, which helps the user visually confirm that their selection corresponds to the device they intend to stream media to.
 
 ## Topics
 
@@ -47,12 +47,12 @@ Each value in this enumeration determines a different icon that the picker UI ([
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../Swift/BitwiseCopyable.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [RawRepresentable](../Swift/RawRepresentable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [BitwiseCopyable](../swift/bitwisecopyable.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [RawRepresentable](../swift/rawrepresentable.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

@@ -21,7 +21,7 @@ func stopDiscovery(session: DDDiscoverySession)
 
 #### Discussion
 
-The system controls the discovery process using this function by calling it when [`AVRoutePickerView`](https://developer.apple.com/documentation/AVKit/AVRoutePickerView) dismisses. Your extension’s implementation performs any cleanup necessary, such as stopping Bluetooth or Bonjour scanning.
+The system controls the discovery process using this function by calling it when [`AVRoutePickerView`](https://developer.apple.com/documentation/avkit/avroutepickerview) dismisses. Your extension’s implementation performs any cleanup necessary, such as stopping Bluetooth or Bonjour scanning.
 
 ## Parameters
 

@@ -22,7 +22,7 @@ let kCVImageBufferCleanApertureWidthKey: CFString
 
 #### Discussion
 
-The clean aperture width value is of type [`CFNumber`](https://developer.apple.com/documentation/CoreFoundation/CFNumber).
+The clean aperture width value is of type [`CFNumber`](https://developer.apple.com/documentation/corefoundation/cfnumber).
 
 ## See Also
 

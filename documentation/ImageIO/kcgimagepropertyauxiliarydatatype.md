@@ -22,7 +22,7 @@ let kCGImagePropertyAuxiliaryDataType: CFString
 
 #### Discussion
 
-The value of this property is a [`CFString`](https://developer.apple.com/documentation/CoreFoundation/CFString). The value of this key might be [`kCGImageAuxiliaryDataTypeDisparity`](kcgimageauxiliarydatatypedisparity.md), [`kCGImageAuxiliaryDataTypeDepth`](kcgimageauxiliarydatatypedepth.md), or another auxiliary data type.
+The value of this property is a [`CFString`](https://developer.apple.com/documentation/corefoundation/cfstring). The value of this key might be [`kCGImageAuxiliaryDataTypeDisparity`](kcgimageauxiliarydatatypedisparity.md), [`kCGImageAuxiliaryDataTypeDepth`](kcgimageauxiliarydatatypedepth.md), or another auxiliary data type.
 
 ## See Also
 

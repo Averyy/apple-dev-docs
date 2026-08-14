@@ -26,7 +26,7 @@ In Xcode, select your development team on the iOS target’s Signing and Capabil
 
 This sample code project uses SwiftUI’s [`Scene`](scene.md) to manage the app’s user interface with its life cycle managed by the system. On iOS, state restoration is especially important at the window or scene level, because windows come and go frequently. It’s necessary to save and restore state associated with each one. On the iPad, it’s especially important because an app in the switcher is not necessarily running. Scene-level state restoration preserves the illusion they are running.
 
-To support state preservation and restoration, this sample uses [`NSUserActivity`](https://developer.apple.com/documentation/Foundation/NSUserActivity) objects. For each user activity, the app must supply an activity type defined in its `Info.plist`.
+To support state preservation and restoration, this sample uses [`NSUserActivity`](https://developer.apple.com/documentation/foundation/nsuseractivity) objects. For each user activity, the app must supply an activity type defined in its `Info.plist`.
 
 ##### Use Scene Storage
 

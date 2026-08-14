@@ -20,7 +20,7 @@ To add the iCloud capability:
 4. Make sure that your bundle identifier is one you want to use for your app. (This identifier determines the name of the iCloud container created in a later step.)
 5. Click the + Capability button, then search for iCloud in the Add Capability editor and select that capability. An iCloud section appears on your app’s Signing and Capabilities page.
 
-![Labeled screenshot of the Xcode window with the Signing & Capabilities page open. From left to right is the project navigator, the button you use to add a Capability, the Target menu, the Automatically manage signing checkbox, the Team menu, and the target’s Bundle Identifier.](https://docs-assets.developer.apple.com/published/1d8e7b2d5bfaf5654352cc84a7b23b16/media-3699095%402x.png)
+![Labeled screenshot of the Xcode window with the Signing & Capabilities page open. From left to right is the project navigator, the button you use to add a Capability, the Target menu, the Automatically manage signing checkbox, the Team menu, and the target’s Bundle Identifier.](/images/com.apple.cloudkit/media-3699095@2x.png)
 
 ##### Create Your Container
 
@@ -29,7 +29,7 @@ Next, add the CloudKit service to add the appropriate entitlements to your proje
 1. Select the CloudKit checkbox. In addition to adding the CloudKit capability to your app, this selection also creates an iCloud container and adds the Push Notifications capability. The name of the container is your app’s bundle identifier prefixed with “iCloud.”
 2. Check the box next to the container name.
 
-![Screenshot showing an Xcode window with the Signing & Capabilities page open. The screenshot highlights the CloudKit service checkbox, the Containers checkbox, and the Push Notifications capability.](https://docs-assets.developer.apple.com/published/c9e0acee44349e28cae21c96ff92747e/media-3699096%402x.png)
+![Screenshot showing an Xcode window with the Signing & Capabilities page open. The screenshot highlights the CloudKit service checkbox, the Containers checkbox, and the Push Notifications capability.](/images/com.apple.cloudkit/media-3699096@2x.png)
 
 Multiple apps and users have access to iCloud, but each app’s data and schema, together, are typically in separate containers. Although an app can have multiple containers or share a container, each app has one default container. Once you’ve created a container, you can’t delete or rename it.
 
@@ -50,7 +50,7 @@ To enter your credentials on an iOS or iPadOS device:
 3. Click Next. Wait until the system verifies your iCloud account.
 4. To enable iCloud Drive, choose iCloud and then click the iCloud Drive switch. If the switch doesn’t appear, iCloud Drive is already enabled.
 
-![Two screenshots of the Settings app in iOS. The first screenshot highlights the Sign in to your iPhone button that you use to connect your Apple ID to the device. The second screenshot highlights the iCloud Drive checkbox within  iCloud settings, which is accessible once a user signs in.](https://docs-assets.developer.apple.com/published/36c4af53d92219d9dfcb895409698eb7/media-3697735%402x.png)
+![Two screenshots of the Settings app in iOS. The first screenshot highlights the Sign in to your iPhone button that you use to connect your Apple ID to the device. The second screenshot highlights the iCloud Drive checkbox within  iCloud settings, which is accessible once a user signs in.](/images/com.apple.cloudkit/media-3697735@2x.png)
 
 Perform the same sign-in process for each iOS or iPadOS simulator you test your app on. You can access the simulators from Xcode by choosing Xcode > Open Developer Tool > Simulator.
 
@@ -64,7 +64,7 @@ CloudKit Console is a web-based tool that lets you manage your app’s iCloud co
 2. If you’re asked to sign in, enter your credentials and click Sign In.
 3. On the subsequent page, verify that your container appears in the container list.
 
-![Screenshot showing the CloudKit Console in which the user can view the options for a specific container by selecting one from the drop-down list on the left.](https://docs-assets.developer.apple.com/published/7087288deb4ac2392599bb02ed0741d3/media-3699094%402x.png)
+![Screenshot showing the CloudKit Console in which the user can view the options for a specific container by selecting one from the drop-down list on the left.](/images/com.apple.cloudkit/media-3699094@2x.png)
 
 For more information on CloudKit Console, see [`Managing iCloud Containers with CloudKit Database App`](managing-icloud-containers-with-cloudkit-database-app.md).
 

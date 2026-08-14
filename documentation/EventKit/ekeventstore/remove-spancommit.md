@@ -32,7 +32,7 @@ This method raises an exception if it’s passed an event from another event sto
 
 - `event`: The event to remove.
 - `span`: The span that indicates whether to remove a single event or all future instances of the event in the case of a recurring event.
-- `commit`: [`true`](https://developer.apple.com/documentation/Swift/true) to remove the event immediately; otherwise, the change is batched until the [`commit()`](ekeventstore/commit().md) method is invoked.
+- `commit`: [`true`](https://developer.apple.com/documentation/swift/true) to remove the event immediately; otherwise, the change is batched until the [`commit()`](ekeventstore/commit().md) method is invoked.
 
 ## See Also
 

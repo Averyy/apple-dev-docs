@@ -10,7 +10,7 @@ Localizing the resources in your Swift package ensures its usefulness for as man
 
 ##### Declare a Default Localization
 
-To localize your package’s resources, pass the optional [`defaultLocalization`](https://developer.apple.com/documentation/PackageDescription/Package/defaultLocalization) parameter to the package initializer in your package manifest. This example provides English as the default localization:
+To localize your package’s resources, pass the optional [`defaultLocalization`](https://developer.apple.com/documentation/packagedescription/package/defaultlocalization) parameter to the package initializer in your package manifest. This example provides English as the default localization:
 
 ```swift
 let package = Package(
@@ -33,7 +33,7 @@ let package = Package(
 
 When you declare a value for `defaultLocalization` in the package manifest, Xcode requires the package to contain localized resources.
 
-> ❗ **Important**: When declaring a supported language, or naming directories that contain localized resources, use two-letter ISO 639-1 or three-letter ISO 639-2 language codes with optional region or script designators. See [`CFBundleDevelopmentRegion`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/CFBundleDevelopmentRegion) for more information.
+> ❗ **Important**: When declaring a supported language, or naming directories that contain localized resources, use two-letter ISO 639-1 or three-letter ISO 639-2 language codes with optional region or script designators. See [`CFBundleDevelopmentRegion`](https://developer.apple.com/documentation/bundleresources/information-property-list/cfbundledevelopmentregion) for more information.
 
 ##### Add Resources to Language Specific Directories
 
@@ -49,18 +49,18 @@ When you build your Swift package, Xcode validates the package’s localized res
 
 The following screenshot shows the structure of a Swift package with localized resources.
 
-![Screenshot of an expanded Swift package in Xcode’s Project navigator with localized resource directories residing in a parent directory named Resources.](https://docs-assets.developer.apple.com/published/5f537126d363d23c91d9f7c4ccca00f3/localizing-package-resources-1%402x.png)
+![Screenshot of an expanded Swift package in Xcode’s Project navigator with localized resource directories residing in a parent directory named Resources.](/images/com.apple.Xcode/localizing-package-resources-1@2x.png)
 
 ##### Localize Storyboards and Interface Builder Files
 
 If the Swift package includes storyboards or Interface Builder files as resources, adopt base internationalization to relieve localizers of the need to modify these files directly. To have Xcode automatically recognize base localization in the Swift package:
 
-1. Declare a value for [`defaultLocalization`](https://developer.apple.com/documentation/PackageDescription/Package/defaultLocalization) in the package manifest.
+1. Declare a value for [`defaultLocalization`](https://developer.apple.com/documentation/packagedescription/package/defaultlocalization) in the package manifest.
 2. Create a directory named, for example, `Resources,` for your localized resources.
 3. Create a subdirectory named `Base.lproj` and place the package’s storyboards and Interface Builder files in it.
 4. Place the `.lproj` directories for all supported languages in the `Resources` directory.
 
-If you prefer to explicitly declare a resource for base internationalization, use the process rule and pass [`Resource.Localization.base`](https://developer.apple.com/documentation/PackageDescription/Resource/Localization/base) to it. For example, use the following to declare a `.xib` file that supports base internationalization:
+If you prefer to explicitly declare a resource for base internationalization, use the process rule and pass [`Resource.Localization.base`](https://developer.apple.com/documentation/packagedescription/resource/localization/base) to it. For example, use the following to declare a `.xib` file that supports base internationalization:
 
 `.process(”path/to/MyViewController.xib”, localization: .base)`
 
@@ -68,11 +68,11 @@ For more information about base internationalization, see [`Internationalizing t
 
 ##### Access Localized Resources
 
-Xcode recognizes localized resources in `.lproj` directories and automatically creates resource bundles. As a result, you can access localized resource files in your package’s code with APIs you may already know from app development. For example, use [`Foundation`](https://developer.apple.com/documentation/Foundation) to access a localized string at runtime:
+Xcode recognizes localized resources in `.lproj` directories and automatically creates resource bundles. As a result, you can access localized resource files in your package’s code with APIs you may already know from app development. For example, use [`Foundation`](https://developer.apple.com/documentation/foundation) to access a localized string at runtime:
 
 `let localizedString = NSLocalizedString(”a_localized_string”, bundle: Bundle.module, comment: “a comment”)`.
 
-Similarly, you can access localized image resources with [`UIImage`](https://developer.apple.com/documentation/UIKit/UIImage):
+Similarly, you can access localized image resources with [`UIImage`](https://developer.apple.com/documentation/uikit/uiimage):
 
 `UIImage(named: “image name”, in: .module, with: nil)`.
 
@@ -90,7 +90,7 @@ For more information, see [`Access a resource in code`](bundling-resources-with-
   Add your published Swift package as a local package to your app’s project and develop the package and the app in tandem.
 - [Organizing your code with local packages](organizing-your-code-with-local-packages.md)
   Simplify maintenance, promote modularity, and encourage reuse by organizing your app’s code into local Swift packages.
-- [PackageDescription](../PackageDescription/PackageDescription.md)
+- [PackageDescription](../packagedescription/packagedescription.md)
   Create reusable code, organize it in a lightweight way, and share it across your projects and with other developers.
 
 

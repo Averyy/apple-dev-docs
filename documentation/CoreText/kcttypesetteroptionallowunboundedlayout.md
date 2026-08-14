@@ -22,9 +22,9 @@ let kCTTypesetterOptionAllowUnboundedLayout: CFString
 
 #### Discussion
 
-Proper Unicode layout of some text requires unreasonable effort. By default, the text system avoids expending this effort. To create a typesetter that always typesets the text, regardless of the amount of work needed, call [`CTTypesetterCreateWithAttributedStringAndOptions(_:_:)`](cttypesettercreatewithattributedstringandoptions(_:_:).md) and set this option to [`kCFBooleanTrue`](https://developer.apple.com/documentation/CoreFoundation/kCFBooleanTrue).
+Proper Unicode layout of some text requires unreasonable effort. By default, the text system avoids expending this effort. To create a typesetter that always typesets the text, regardless of the amount of work needed, call [`CTTypesetterCreateWithAttributedStringAndOptions(_:_:)`](cttypesettercreatewithattributedstringandoptions(_:_:).md) and set this option to [`kCFBooleanTrue`](https://developer.apple.com/documentation/corefoundation/kcfbooleantrue).
 
-The value for this key must be a `CFBooleanRef`. The default value is [`kCFBooleanFalse`](https://developer.apple.com/documentation/CoreFoundation/kCFBooleanFalse).
+The value for this key must be a `CFBooleanRef`. The default value is [`kCFBooleanFalse`](https://developer.apple.com/documentation/corefoundation/kcfbooleanfalse).
 
 ## See Also
 

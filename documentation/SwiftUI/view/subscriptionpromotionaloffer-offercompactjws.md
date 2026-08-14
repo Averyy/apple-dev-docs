@@ -23,16 +23,16 @@ func subscriptionPromotionalOffer(offer: @escaping (Product, Product.Subscriptio
 
 #### Discussion
 
-Subscription stores within this view uses the specified subscription offer to configure the appearance of the subscription plans displayed, when you use a system-provided [`SubscriptionStoreControlStyle`](https://developer.apple.com/documentation/StoreKit/SubscriptionStoreControlStyle) to style the in-app subscription store. Standard [`ProductViewStyle`](https://developer.apple.com/documentation/StoreKit/ProductViewStyle) instances don’t show introductory or promotional offers in UI. Use the [`SubscriptionStoreView`](https://developer.apple.com/documentation/StoreKit/SubscriptionStoreView) instead to show these offers in the UI.
+Subscription stores within this view uses the specified subscription offer to configure the appearance of the subscription plans displayed, when you use a system-provided [`SubscriptionStoreControlStyle`](https://developer.apple.com/documentation/storekit/subscriptionstorecontrolstyle) to style the in-app subscription store. Standard [`ProductViewStyle`](https://developer.apple.com/documentation/storekit/productviewstyle) instances don’t show introductory or promotional offers in UI. Use the [`SubscriptionStoreView`](https://developer.apple.com/documentation/storekit/subscriptionstoreview) instead to show these offers in the UI.
 
-If the signature passes validation for the offer you select, the system applies the offer to the purchase. If the signature fails validation for the offer you select, the purchase fails with [`Product.PurchaseError.invalidOfferSignature`](https://developer.apple.com/documentation/StoreKit/Product/PurchaseError/invalidOfferSignature).
+If the signature passes validation for the offer you select, the system applies the offer to the purchase. If the signature fails validation for the offer you select, the purchase fails with [`Product.PurchaseError.invalidOfferSignature`](https://developer.apple.com/documentation/storekit/product/purchaseerror/invalidoffersignature).
 
 Promotional offers you select in this modifier overwrite any offers you specified in ancestor views.
 
 ## Parameters
 
 - `offer`: The system calls this function before drawing the given subscription product on the subscription store view. Return the promotional offer to apply to the product, if any, to have system-provided UI reflect the discounted terms under the selected offer.
-- `compactJWS`: The system calls this function before processing a purchase, with the product to be purchased provided as a parameter, along with the selected subscription offer to be applied to the purchase. Return a compact JWS signature you generate on your server that validates the selected offer. Errors thrown from this closure will be surfaced via the [`onInAppPurchaseCompletion(perform:)`](view/oninapppurchasecompletion(perform:).md) modifier. For information about generating the JWS signature, see [`Generating JWS to sign App Store requests`](https://developer.apple.com/documentation/StoreKit/generating-jws-to-sign-app-store-requests)..
+- `compactJWS`: The system calls this function before processing a purchase, with the product to be purchased provided as a parameter, along with the selected subscription offer to be applied to the purchase. Return a compact JWS signature you generate on your server that validates the selected offer. Errors thrown from this closure will be surfaced via the [`onInAppPurchaseCompletion(perform:)`](view/oninapppurchasecompletion(perform:).md) modifier. For information about generating the JWS signature, see [`Generating JWS to sign App Store requests`](https://developer.apple.com/documentation/storekit/generating-jws-to-sign-app-store-requests)..
 
 ## See Also
 

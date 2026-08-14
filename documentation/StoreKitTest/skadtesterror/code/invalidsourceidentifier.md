@@ -18,7 +18,7 @@ case invalidSourceIdentifier
 
 #### Discussion
 
-A valid postback includes two to four digits of the impression’s [`sourceIdentifier`](https://developer.apple.com/documentation/StoreKit/SKAdImpression/sourceIdentifier). For more information about the varying length of source identifiers, see [`Receiving postbacks in multiple conversion windows`](https://developer.apple.com/documentation/StoreKit/receiving-postbacks-in-multiple-conversion-windows).
+A valid postback includes two to four digits of the impression’s [`sourceIdentifier`](https://developer.apple.com/documentation/storekit/skadimpression/sourceidentifier). For more information about the varying length of source identifiers, see [`Receiving postbacks in multiple conversion windows`](https://developer.apple.com/documentation/storekit/receiving-postbacks-in-multiple-conversion-windows).
 
 ## See Also
 

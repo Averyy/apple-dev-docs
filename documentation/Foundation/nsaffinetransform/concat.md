@@ -18,7 +18,7 @@ func concat()
 
 Concatenation is performed by matrix multiplication—see Manipulating Transform Values.
 
-If this method is invoked from within an `NSView`[`draw(_:)`](https://developer.apple.com/documentation/AppKit/NSView/draw(_:)) method, then the current transformation matrix is an accumulation of the screen, window, and any superview’s transformation matrices. Invoking this method defines a new user coordinate system whose coordinates are mapped into the former coordinate system according to the receiver’s transformation matrix. To undo the concatenation, you must invert the receiver’s matrix and invoke this method again.
+If this method is invoked from within an `NSView`[`draw(_:)`](https://developer.apple.com/documentation/appkit/nsview/draw(_:)) method, then the current transformation matrix is an accumulation of the screen, window, and any superview’s transformation matrices. Invoking this method defines a new user coordinate system whose coordinates are mapped into the former coordinate system according to the receiver’s transformation matrix. To undo the concatenation, you must invert the receiver’s matrix and invoke this method again.
 
 ## See Also
 

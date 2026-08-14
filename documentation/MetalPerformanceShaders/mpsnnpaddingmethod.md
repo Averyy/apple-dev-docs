@@ -62,7 +62,7 @@ Layered on top of that is usually another flavor of encode call that returns a d
 
 If you set the [`custom`](mpsnnpaddingmethod/custom.md) bit in the [`MPSNNPaddingMethod`](mpsnnpaddingmethod.md), then the [`destinationImageDescriptor(forSourceImages:sourceStates:for:suggestedDescriptor:)`](mpsnnpadding/destinationimagedescriptor(forsourceimages:sourcestates:for:suggesteddescriptor:).md) method is called. The [`MPSImageDescriptor`](mpsimagedescriptor.md) prepared earlier is passed in as the last parameter. You can use this descriptor or modify as needed. In addition, you can adjust any properties of the [`MPSKernel`](mpskernel.md) with which it will be used. If, for example, the descriptor is not the right [`MPSImageFeatureChannelFormat`](mpsimagefeaturechannelformat.md), you can change it, or make your own [`MPSImageDescriptor`](mpsimagedescriptor.md) based on the one handed to you. This is your opportunity to customize the configuration of the [`MPSKernel`](mpskernel.md). In some cases (for example, [`forTensorflowAveragePooling()`](mpsnndefaultpadding/fortensorflowaveragepooling().md)) you might change other properties such as the filter edging mode, or adjust the offset that was already set for you. When the kernel is fully configured, return the [`MPSImageDescriptor`](mpsimagedescriptor.md).
 
-The [`MPSImageDescriptor`](mpsimagedescriptor.md) is then passed to the [`destinationImageAllocator`](mpscnnkernel/destinationimageallocator.md) to allocate the image. You might provide such an allocator if you want to use your own custom [`MTLHeap`](https://developer.apple.com/documentation/Metal/MTLHeap) rather than the MPS internal heap. The allocator can be set either directly in the [`MPSCNNKernel`](mpscnnkernel.md) or through the [`imageAllocator`](mpsnnimagenode/imageallocator.md) property.
+The [`MPSImageDescriptor`](mpsimagedescriptor.md) is then passed to the [`destinationImageAllocator`](mpscnnkernel/destinationimageallocator.md) to allocate the image. You might provide such an allocator if you want to use your own custom [`MTLHeap`](https://developer.apple.com/documentation/metal/mtlheap) rather than the MPS internal heap. The allocator can be set either directly in the [`MPSCNNKernel`](mpscnnkernel.md) or through the [`imageAllocator`](mpsnnimagenode/imageallocator.md) property.
 
 It is intended that most of the time, default values for padding method and destination image allocator should be good enough. Only minimal additional configuration should be required, apart from occasional adjustments to set the [`MPSNNPaddingMethod`](mpsnnpaddingmethod.md) when something other than default padding for the object is needed. If you find yourself encumbered by frequent adjustments of this kind, you might find it to your advantage to subclass [`MPSNNFilterNode`](mpsnnfilternode.md) or [`MPSCNNKernel`](mpscnnkernel.md) objects to adjust the default padding policy and allocator at initialization time.
 
@@ -96,14 +96,14 @@ It is intended that most of the time, default values for padding method and dest
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../Swift/BitwiseCopyable.md)
-- [Equatable](../Swift/Equatable.md)
-- [ExpressibleByArrayLiteral](../Swift/ExpressibleByArrayLiteral.md)
-- [OptionSet](../Swift/OptionSet.md)
-- [RawRepresentable](../Swift/RawRepresentable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
-- [SetAlgebra](../Swift/SetAlgebra.md)
+- [BitwiseCopyable](../swift/bitwisecopyable.md)
+- [Equatable](../swift/equatable.md)
+- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
+- [OptionSet](../swift/optionset.md)
+- [RawRepresentable](../swift/rawrepresentable.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
+- [SetAlgebra](../swift/setalgebra.md)
 
 ## See Also
 

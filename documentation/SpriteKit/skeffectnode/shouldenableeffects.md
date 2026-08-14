@@ -22,7 +22,7 @@ var shouldEnableEffects: Bool { get set }
 
 #### Discussion
 
-If the value of this property is [`true`](https://developer.apple.com/documentation/Swift/true), the effect node applies the filter and blends the results. If the value is [`false`](https://developer.apple.com/documentation/Swift/false), the effect node is ignored and its children are rendered normally. The default value is [`false`](https://developer.apple.com/documentation/Swift/false).
+If the value of this property is [`true`](https://developer.apple.com/documentation/swift/true), the effect node applies the filter and blends the results. If the value is [`false`](https://developer.apple.com/documentation/swift/false), the effect node is ignored and its children are rendered normally. The default value is [`false`](https://developer.apple.com/documentation/swift/false).
 
 ## See Also
 

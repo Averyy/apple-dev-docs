@@ -16,7 +16,7 @@ This sample code app converts an 8-bit grayscale image to a 1-bit dithered image
 
 The example below shows an image with continuous tones (left) and the same image with dithering applied (right):
 
-![A comparison of the original image of a plant with its dithered counterpart. The original image contains continuous tones of gray. In the dithered image, the gray tones are simulated by black and white pixels.](https://docs-assets.developer.apple.com/published/31a959725f91a45ecc16eb2d8e562ab8/dither_comparison.png)
+![A comparison of the original image of a plant with its dithered counterpart. The original image contains continuous tones of gray. In the dithered image, the gray tones are simulated by black and white pixels.](/images/com.apple.accelerate/dither_comparison.png)
 
 Before exploring the code, try building and running the app to familiarize yourself with the effect of the different dithering algorithms on the image.
 

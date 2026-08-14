@@ -33,16 +33,16 @@ class TVCollectionViewFullScreenLayoutAttributes
 ## Relationships
 
 ### Inherits From
-- [UICollectionViewLayoutAttributes](../UIKit/UICollectionViewLayoutAttributes.md)
+- [UICollectionViewLayoutAttributes](../uikit/uicollectionviewlayoutattributes.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCopying](../Foundation/NSCopying.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [UIDynamicItem](../UIKit/UIDynamicItem.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCopying](../foundation/nscopying.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [UIDynamicItem](../uikit/uidynamicitem.md)
 
 ## See Also
 

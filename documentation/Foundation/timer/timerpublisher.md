@@ -35,8 +35,8 @@ final class TimerPublisher
 ## Relationships
 
 ### Conforms To
-- [ConnectablePublisher](../Combine/ConnectablePublisher.md)
-- [Publisher](../Combine/Publisher.md)
+- [ConnectablePublisher](../combine/connectablepublisher.md)
+- [Publisher](../combine/publisher.md)
 
 ## See Also
 

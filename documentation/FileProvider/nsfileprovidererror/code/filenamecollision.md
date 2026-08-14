@@ -24,7 +24,7 @@ case filenameCollision
 
 #### Discussion
 
-Use the [`fileProviderErrorForCollision(with:)`](https://developer.apple.com/documentation/Foundation/NSError/fileProviderErrorForCollision(with:)) method to create properly formatted [`filenameCollision`](nsfileprovidererror/filenamecollision.md) errors.
+Use the [`fileProviderErrorForCollision(with:)`](https://developer.apple.com/documentation/foundation/nserror/fileprovidererrorforcollision(with:)) method to create properly formatted [`filenameCollision`](nsfileprovidererror/filenamecollision.md) errors.
 
 You have two options for resolving file name collisions:
 

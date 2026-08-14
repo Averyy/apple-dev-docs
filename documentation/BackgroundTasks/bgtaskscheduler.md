@@ -26,7 +26,7 @@ class BGTaskScheduler
 
 Background tasks give your app a way to run code even when the app is suspended:
 
-- To register, schedule, and run tasks in the background, see [`Using background tasks to update your app`](https://developer.apple.com/documentation/UIKit/using-background-tasks-to-update-your-app).
+- To register, schedule, and run tasks in the background, see [`Using background tasks to update your app`](https://developer.apple.com/documentation/uikit/using-background-tasks-to-update-your-app).
 - To submit work in the foreground that can finish even if the app moves to the background, see [`Performing long-running tasks on iOS and iPadOS`](performing-long-running-tasks-on-ios-and-ipados.md).
 
 ## Topics
@@ -64,18 +64,18 @@ Background tasks give your app a way to run code even when the app is suspended:
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 
-- [Background Tasks updates](../Updates/BackgroundTasks.md)
+- [Background Tasks updates](../updates/backgroundtasks.md)
   Learn about important changes in Background Tasks.
 - [class BGTask](bgtask.md)
   An abstract class for the framework’s tasks.

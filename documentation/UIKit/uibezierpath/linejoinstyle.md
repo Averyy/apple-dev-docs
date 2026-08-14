@@ -21,7 +21,7 @@ var lineJoinStyle: CGLineJoin { get set }
 
 #### Discussion
 
-The default line join style is [`CGLineJoin.miter`](https://developer.apple.com/documentation/CoreGraphics/CGLineJoin/miter).
+The default line join style is [`CGLineJoin.miter`](https://developer.apple.com/documentation/coregraphics/cglinejoin/miter).
 
 ## See Also
 

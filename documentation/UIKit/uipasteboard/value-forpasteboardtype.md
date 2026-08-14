@@ -19,11 +19,11 @@ func value(forPasteboardType pasteboardType: String) -> Any?
 
 #### Return Value
 
-An object that is an instance of the appropriate class based on `pasteboardType` or an [`NSData`](https://developer.apple.com/documentation/Foundation/NSData) object containing “raw” data.
+An object that is an instance of the appropriate class based on `pasteboardType` or an [`NSData`](https://developer.apple.com/documentation/foundation/nsdata) object containing “raw” data.
 
 #### Discussion
 
-This method attempts to return an object that is of a class type appropriate to the representation type, which typically is a UTI. For example, if the representation type is `kUTTypePlainText` (`public.plain-text`), the method returns an [`NSString`](https://developer.apple.com/documentation/Foundation/NSString) object. If the method can’t determine the class type from the representation type, it returns the object as a generic object, such as an [`NSString`](https://developer.apple.com/documentation/Foundation/NSString), [`NSArray`](https://developer.apple.com/documentation/Foundation/NSArray), [`NSDictionary`](https://developer.apple.com/documentation/Foundation/NSDictionary), [`NSDate`](https://developer.apple.com/documentation/Foundation/NSDate), [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber), [`NSURL`](https://developer.apple.com/documentation/Foundation/NSURL), [`UIImage`](uiimage.md), or [`NSData`](https://developer.apple.com/documentation/Foundation/NSData) object. This method works on the first item in the pasteboard. If there are other items, it ignores them.
+This method attempts to return an object that is of a class type appropriate to the representation type, which typically is a UTI. For example, if the representation type is `kUTTypePlainText` (`public.plain-text`), the method returns an [`NSString`](https://developer.apple.com/documentation/foundation/nsstring) object. If the method can’t determine the class type from the representation type, it returns the object as a generic object, such as an [`NSString`](https://developer.apple.com/documentation/foundation/nsstring), [`NSArray`](https://developer.apple.com/documentation/foundation/nsarray), [`NSDictionary`](https://developer.apple.com/documentation/foundation/nsdictionary), [`NSDate`](https://developer.apple.com/documentation/foundation/nsdate), [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber), [`NSURL`](https://developer.apple.com/documentation/foundation/nsurl), [`UIImage`](uiimage.md), or [`NSData`](https://developer.apple.com/documentation/foundation/nsdata) object. This method works on the first item in the pasteboard. If there are other items, it ignores them.
 
 ## Parameters
 

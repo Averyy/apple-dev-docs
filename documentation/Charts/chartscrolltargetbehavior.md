@@ -50,7 +50,7 @@ protocol ChartScrollTargetBehavior : ScrollTargetBehavior
 ## Relationships
 
 ### Inherits From
-- [ScrollTargetBehavior](../SwiftUI/ScrollTargetBehavior.md)
+- [ScrollTargetBehavior](../swiftui/scrolltargetbehavior.md)
 ### Conforming Types
 - [ValueAlignedChartScrollTargetBehavior](valuealignedchartscrolltargetbehavior.md)
 

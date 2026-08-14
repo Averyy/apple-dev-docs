@@ -17,7 +17,7 @@ var isReadyForMoreMediaData: Bool { get }
 
 #### Discussion
 
-An [`MERAWProcessor`](merawprocessor.md) operates asynchronously and often has a fixed capacity for buffers in flight in the processor. This property allows the processor to signal to [`Video Toolbox`](https://developer.apple.com/documentation/VideoToolbox) that its internal buffers are full and cannot accept more samples. The processor must use [`MERAWProcessorReadyForMoreMediaDataDidChangeNotification`](merawprocessorreadyformoremediadatadidchangenotification.md) to notify Video Toolbox when this property changes.
+An [`MERAWProcessor`](merawprocessor.md) operates asynchronously and often has a fixed capacity for buffers in flight in the processor. This property allows the processor to signal to [`Video Toolbox`](https://developer.apple.com/documentation/videotoolbox) that its internal buffers are full and cannot accept more samples. The processor must use [`MERAWProcessorReadyForMoreMediaDataDidChangeNotification`](merawprocessorreadyformoremediadatadidchangenotification.md) to notify Video Toolbox when this property changes.
 
 ## See Also
 

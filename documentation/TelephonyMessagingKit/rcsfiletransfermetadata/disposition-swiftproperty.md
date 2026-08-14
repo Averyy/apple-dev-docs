@@ -7,7 +7,6 @@ The disposition of the file, indicating how a recipient needs to handle the file
 
 **Availability**:
 - iOS 26.0+
-- iPadOS 26.0+
 
 ## Declaration
 

@@ -16,13 +16,13 @@ A Boolean value indicating whether your app can use the hotspot manager to confi
 
 #### Discussion
 
-This key indicates whether your app may use the [`NEHotspotConfigurationManager`](https://developer.apple.com/documentation/NetworkExtension/NEHotspotConfigurationManager) and [`NEHotspotConfiguration`](https://developer.apple.com/documentation/NetworkExtension/NEHotspotConfiguration) classes to configure Wi-Fi networks.
+This key indicates whether your app may use the [`NEHotspotConfigurationManager`](https://developer.apple.com/documentation/networkextension/nehotspotconfigurationmanager) and [`NEHotspotConfiguration`](https://developer.apple.com/documentation/networkextension/nehotspotconfiguration) classes to configure Wi-Fi networks.
 
 To add this entitlement to your app, enable the Hotspot Configuration capability in Xcode.
 
 ## See Also
 
-- [class NEHotspotHelper](../NetworkExtension/NEHotspotHelper.md)
+- [class NEHotspotHelper](../networkextension/nehotspothelper.md)
   A class to register a hotspot helper.
 - [Access Wi-Fi Information Entitlement](entitlements/com.apple.developer.networking.wifi-info.md)
   A Boolean value indicating whether your app can access information about the connected Wi-Fi network.

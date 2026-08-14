@@ -41,7 +41,7 @@ You don’t adopt this protocol in your own types. If you want to add buttons to
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 ### Conforming Types
 - [CPContactTemplate](cpcontacttemplate.md)
 - [CPGridTemplate](cpgridtemplate.md)

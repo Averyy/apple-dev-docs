@@ -14,7 +14,7 @@ Actions are the events you place on those tracks. Unlike animation clips, which 
 
 Motion Path deserves special attention because it’s a small system in itself: a path made of points, each with position, rotation, scale, timing, and easing, optionally generated automatically into an orbit or spin shape rather than placed by hand.
 
-![A screenshot of Reality Composer Pro showing an animation sequence with an Animation Motion Path selected.](https://docs-assets.developer.apple.com/published/ab9f9db12f08f1aa7e7ecf2de677514c/AnimationMotionPath3%402x.png)
+![A screenshot of Reality Composer Pro showing an animation sequence with an Animation Motion Path selected.](/images/RealityComposerPro/AnimationMotionPath3@2x.png)
 
 > **Note**: The tracks and actions you author are wasted work at runtime unless the Sequence is rooted where its Animation Library Component expects to find it. The sections below build up multi-track authoring using tracks, actions, and Motion Path. Once your Sequence is ready, see [`Creating animation sequences for auto-play`](creating-animation-sequences-for-autoplay.md) to wire it for auto-play, or doc:automating-motion-path-creation-with-editor-scripting-commands to build the same Motion Path programmatically with editor-scripting commands.
 

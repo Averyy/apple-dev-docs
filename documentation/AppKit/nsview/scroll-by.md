@@ -20,7 +20,7 @@ This method is useful during scrolling or translation of the coordinate system t
 
 1. Invoke [`scroll(_:by:)`](nsview/scroll(_:by:).md) to copy the rendered image.
 2. Move the view object’s origin or scroll it within its superview.
-3. Calculate the newly exposed rectangles and either set the [`needsDisplay`](nsview/needsdisplay.md) property to [`true`](https://developer.apple.com/documentation/Swift/true) or call [`setNeedsDisplay(_:)`](nsview/setneedsdisplay(_:).md) to draw them.
+3. Calculate the newly exposed rectangles and either set the [`needsDisplay`](nsview/needsdisplay.md) property to [`true`](https://developer.apple.com/documentation/swift/true) or call [`setNeedsDisplay(_:)`](nsview/setneedsdisplay(_:).md) to draw them.
 
 You should rarely need to use this method, however. The [`scroll(_:)`](nsview/scroll(_:).md), [`scrollToVisible(_:)`](nsview/scrolltovisible(_:).md), and [`autoscroll(with:)`](nsview/autoscroll(with:).md) methods automatically perform optimized scrolling.
 

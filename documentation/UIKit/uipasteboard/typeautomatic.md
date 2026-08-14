@@ -19,7 +19,7 @@ class let typeAutomatic: String
 
 #### Discussion
 
-Use this type in the [`setItems(_:options:)`](uipasteboard/setitems(_:options:).md) method to automatically insert appropriate UTIs for supported types. In iOS 10, supported types are [`NSString`](https://developer.apple.com/documentation/Foundation/NSString), [`NSAttributedString`](https://developer.apple.com/documentation/Foundation/NSAttributedString), [`NSURL`](https://developer.apple.com/documentation/Foundation/NSURL), [`UIImage`](uiimage.md), and [`UIColor`](uicolor.md).
+Use this type in the [`setItems(_:options:)`](uipasteboard/setitems(_:options:).md) method to automatically insert appropriate UTIs for supported types. In iOS 10, supported types are [`NSString`](https://developer.apple.com/documentation/foundation/nsstring), [`NSAttributedString`](https://developer.apple.com/documentation/foundation/nsattributedstring), [`NSURL`](https://developer.apple.com/documentation/foundation/nsurl), [`UIImage`](uiimage.md), and [`UIColor`](uicolor.md).
 
 ## See Also
 

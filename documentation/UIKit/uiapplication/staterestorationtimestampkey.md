@@ -20,7 +20,7 @@ class let stateRestorationTimestampKey: String
 
 #### Discussion
 
-The value of this key is an [`NSDate`](https://developer.apple.com/documentation/Foundation/NSDate) object containing the date when the restoration archive was saved. The date is specified using coordinated universal time (UTC).
+The value of this key is an [`NSDate`](https://developer.apple.com/documentation/foundation/nsdate) object containing the date when the restoration archive was saved. The date is specified using coordinated universal time (UTC).
 
 ## See Also
 

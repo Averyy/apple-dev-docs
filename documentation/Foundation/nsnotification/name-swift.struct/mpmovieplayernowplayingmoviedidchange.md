@@ -19,7 +19,7 @@ static let MPMoviePlayerNowPlayingMovieDidChange: NSNotification.Name
 
 #### Discussion
 
-To retrieve the URL for currently playing movie, access the movie player’s [`contentURL`](https://developer.apple.com/documentation/MediaPlayer/MPMoviePlayerController/contentURL) property. The movie player whose state has changed is available as the object associated with the notification.
+To retrieve the URL for currently playing movie, access the movie player’s [`contentURL`](https://developer.apple.com/documentation/mediaplayer/mpmovieplayercontroller/contenturl) property. The movie player whose state has changed is available as the object associated with the notification.
 
 ## See Also
 

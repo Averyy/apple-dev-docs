@@ -26,7 +26,7 @@ The (x,y) pixel coordinates of the origin point (0,0) represent the top row and 
 
 If an image is encoded with this orientation, then displayed by software unaware of orientation metadata, the image appears to be horizontally mirrored, then rotated 90° counter-clockwise. (That is, to present the image in its intended orientation, you can rotate it 90° clockwise, then flip horizontally.)
 
-![To correct an image with leftMirrored orientation for display, rotate it 90° clockwise then flip it horizontally.](https://docs-assets.developer.apple.com/published/ed7462784881f7d23e39b968a2ecefff/media-2948297%402x.png)
+![To correct an image with leftMirrored orientation for display, rotate it 90° clockwise then flip it horizontally.](/images/com.apple.imageio/media-2948297@2x.png)
 
 ## See Also
 

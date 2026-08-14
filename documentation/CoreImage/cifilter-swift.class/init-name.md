@@ -25,7 +25,7 @@ A [`CIFilter`](cifilter-swift.class.md) object whose input values are undefined.
 
 #### Discussion
 
-In macOS, after creating a filter with this method you must call [`setDefaults()`](cifilter-swift.class/setdefaults().md) or set parameters individually by calling [`setValue(_:forKey:)`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class/setValue(_:forKey:)). In iOS, the filter’s parameters are automatically set to default values.
+In macOS, after creating a filter with this method you must call [`setDefaults()`](cifilter-swift.class/setdefaults().md) or set parameters individually by calling [`setValue(_:forKey:)`](https://developer.apple.com/documentation/objectivec/nsobject-swift.class/setvalue(_:forkey:)). In iOS, the filter’s parameters are automatically set to default values.
 
 ## Parameters
 

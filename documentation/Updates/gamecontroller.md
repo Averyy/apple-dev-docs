@@ -6,26 +6,26 @@ Learn about important changes to Game Controller.
 
 #### Overview
 
-Browse notable changes in [`Game Controller`](https://developer.apple.com/documentation/GameController).
+Browse notable changes in [`Game Controller`](https://developer.apple.com/documentation/gamecontroller).
 
 #### June 2025
 
-- Add support for spatial game controllers. To determine if a controller is a spatial game controller, check whether the product category is  [`GCProductCategorySpatialController`](https://developer.apple.com/documentation/GameController/GCProductCategorySpatialController).
-- Add support for a physical stylus with a [`GCStylus`](https://developer.apple.com/documentation/GameController/GCStylus) object.
-- Add [`NSAccessoryTrackingUsageDescription`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSAccessoryTrackingUsageDescription) to your information property list if your app requires access to accessory-tracking data for a spatial game controller or stylus.
-- Add [`GCSupportedGameControllers`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/GCSupportedGameControllers) to your information property list — with a value of `SpatialGamepad` — if your app supports spatial game controllers.
+- Add support for spatial game controllers. To determine if a controller is a spatial game controller, check whether the product category is  [`GCProductCategorySpatialController`](https://developer.apple.com/documentation/gamecontroller/gcproductcategoryspatialcontroller).
+- Add support for a physical stylus with a [`GCStylus`](https://developer.apple.com/documentation/gamecontroller/gcstylus) object.
+- Add [`NSAccessoryTrackingUsageDescription`](https://developer.apple.com/documentation/bundleresources/information-property-list/nsaccessorytrackingusagedescription) to your information property list if your app requires access to accessory-tracking data for a spatial game controller or stylus.
+- Add [`GCSupportedGameControllers`](https://developer.apple.com/documentation/bundleresources/information-property-list/gcsupportedgamecontrollers) to your information property list — with a value of `SpatialGamepad` — if your app supports spatial game controllers.
 
 #### June 2024
 
 ##### Visionos
 
-- For UIKit apps, add a user interaction that determines whether the system delivers game controller events through the Game Controller framework instead of the [`UIResponder`](https://developer.apple.com/documentation/UIKit/UIResponder) chain. To receive events through the Game Controller framework, add a [`GCEventInteraction`](https://developer.apple.com/documentation/GameController/GCEventInteraction) object to one or more views and set the [`handledEventTypes`](https://developer.apple.com/documentation/GameController/GCEventInteraction/handledEventTypes) property to the types of events you want to handle.
+- For UIKit apps, add a user interaction that determines whether the system delivers game controller events through the Game Controller framework instead of the [`UIResponder`](https://developer.apple.com/documentation/uikit/uiresponder) chain. To receive events through the Game Controller framework, add a [`GCEventInteraction`](https://developer.apple.com/documentation/gamecontroller/gceventinteraction) object to one or more views and set the [`handledEventTypes`](https://developer.apple.com/documentation/gamecontroller/gceventinteraction/handledeventtypes) property to the types of events you want to handle.
 
 #### June 2023
 
-- Use the classes that conform to the [`GCDevicePhysicalInput`](https://developer.apple.com/documentation/GameController/GCDevicePhysicalInput) protocol to poll for game controller input in your game loop. For more information, see  [`Handling input events`](https://developer.apple.com/documentation/GameController/handling-input-events).
-- Add support for arcade sticks. To determine if a controller is an arcade stick, check whether the product category is  [`GCProductCategoryArcadeStick`](https://developer.apple.com/documentation/GameController/GCProductCategoryArcadeStick).
-- Add [`GCRequiresControllerUserInteraction`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/GCRequiresControllerUserInteraction) to your information property list if your app requires a game controller on visionOS or to recommend a game controller on iOS.
+- Use the classes that conform to the [`GCDevicePhysicalInput`](https://developer.apple.com/documentation/gamecontroller/gcdevicephysicalinput) protocol to poll for game controller input in your game loop. For more information, see  [`Handling input events`](https://developer.apple.com/documentation/gamecontroller/handling-input-events).
+- Add support for arcade sticks. To determine if a controller is an arcade stick, check whether the product category is  [`GCProductCategoryArcadeStick`](https://developer.apple.com/documentation/gamecontroller/gcproductcategoryarcadestick).
+- Add [`GCRequiresControllerUserInteraction`](https://developer.apple.com/documentation/bundleresources/information-property-list/gcrequirescontrolleruserinteraction) to your information property list if your app requires a game controller on visionOS or to recommend a game controller on iOS.
 
 ## See Also
 

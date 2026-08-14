@@ -43,12 +43,12 @@ class PropertyListDecoder
 ## Relationships
 
 ### Conforms To
-- [Copyable](../Swift/Copyable.md)
-- [Escapable](../Swift/Escapable.md)
-- [NetworkDecoder](../Network/NetworkDecoder.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
-- [TopLevelDecoder](../Combine/TopLevelDecoder.md)
+- [Copyable](../swift/copyable.md)
+- [Escapable](../swift/escapable.md)
+- [NetworkDecoder](../network/networkdecoder.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
+- [TopLevelDecoder](../combine/topleveldecoder.md)
 
 ## See Also
 

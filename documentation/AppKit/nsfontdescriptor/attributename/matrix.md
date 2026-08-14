@@ -16,7 +16,7 @@ static let matrix: NSFontDescriptor.AttributeName
 
 #### Discussion
 
-The value of this attribute is an [`NSAffineTransform`](https://developer.apple.com/documentation/Foundation/NSAffineTransform) object. The default value is the identity matrix.
+The value of this attribute is an [`NSAffineTransform`](https://developer.apple.com/documentation/foundation/nsaffinetransform) object. The default value is the identity matrix.
 
 ## See Also
 

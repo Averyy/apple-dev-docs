@@ -22,7 +22,7 @@ An archived `QCCompositionLayer` object saves the composition that’s loaded at
 
 You can pass data to the input ports, or retrieve data from the output ports, of the root patch of a composition by accessing the `patch` attribute of the `QCCompositionLayer` instance using methods provided by the [`QCCompositionRenderer`](qccompositionrenderer.md) protocol.
 
-> **Note**:  You must not modify the `asynchronous` property of the superclass [`CAOpenGLLayer`](https://developer.apple.com/documentation/QuartzCore/CAOpenGLLayer).
+> **Note**:  You must not modify the `asynchronous` property of the superclass [`CAOpenGLLayer`](https://developer.apple.com/documentation/quartzcore/caopengllayer).
 
 ## Topics
 
@@ -38,20 +38,20 @@ You can pass data to the input ports, or retrieve data from the output ports, of
 ## Relationships
 
 ### Inherits From
-- [CAOpenGLLayer](../QuartzCore/CAOpenGLLayer.md)
+- [CAOpenGLLayer](../quartzcore/caopengllayer.md)
 ### Conforms To
-- [CAMediaTiming](../QuartzCore/CAMediaTiming.md)
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCoding](../Foundation/NSCoding.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [NSSecureCoding](../Foundation/NSSecureCoding.md)
+- [CAMediaTiming](../quartzcore/camediatiming.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCoding](../foundation/nscoding.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSSecureCoding](../foundation/nssecurecoding.md)
 - [QCCompositionRenderer](qccompositionrenderer.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

@@ -45,7 +45,7 @@ HStack(alignment: .top) {
 
 By drawing a border around each text view, you can see how the text moves, and how that affects the view.
 
-![Three text views, each with the word “Hello” outlined by a border and](https://docs-assets.developer.apple.com/published/8c35ccbfa5502afbadcb29f8ad4e15c5/SwiftUI-Text-baselineOffset%402x.png)
+![Three text views, each with the word “Hello” outlined by a border and](/images/com.apple.SwiftUI/SwiftUI-Text-baselineOffset@2x.png)
 
 The first view, with a negative offset, grows downward to handle the lowered text. The last view, with a positive offset, grows upward. The enclosing [`HStack`](hstack.md) instance, shown in gray, ensures all the text views remain aligned at their top edge, regardless of the offset.
 

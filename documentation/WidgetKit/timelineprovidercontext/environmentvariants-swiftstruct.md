@@ -22,9 +22,9 @@ struct EnvironmentVariants
 
 #### Overview
 
-When changes occur in environment values that affect display, like [`colorScheme`](https://developer.apple.com/documentation/SwiftUI/EnvironmentValues/colorScheme), WidgetKit renders your widget’s views. If your widget uses assets that take time to generate or depend on the specific environment they’re rendered in, you can generate those assets in advance based on the new environment values.
+When changes occur in environment values that affect display, like [`colorScheme`](https://developer.apple.com/documentation/swiftui/environmentvalues/colorscheme), WidgetKit renders your widget’s views. If your widget uses assets that take time to generate or depend on the specific environment they’re rendered in, you can generate those assets in advance based on the new environment values.
 
-For example, in macOS, if the user has a mixture of @1x and @2x displays, the value for [`displayScale`](https://developer.apple.com/documentation/SwiftUI/EnvironmentValues/displayScale) includes both scales. With these values, you can prepare your content in advance, if needed, to handle either type of display.
+For example, in macOS, if the user has a mixture of @1x and @2x displays, the value for [`displayScale`](https://developer.apple.com/documentation/swiftui/environmentvalues/displayscale) includes both scales. With these values, you can prepare your content in advance, if needed, to handle either type of display.
 
 ## Topics
 

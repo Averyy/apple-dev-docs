@@ -20,7 +20,7 @@ A choice widget annotation can be either a list or a pop-up menu.
 
 ## Parameters
 
-- `isList`: Send [`true`](https://developer.apple.com/documentation/Swift/true) to set the choice widget annotation is a list, [`false`](https://developer.apple.com/documentation/Swift/false) otherwise.
+- `isList`: Send [`true`](https://developer.apple.com/documentation/swift/true) to set the choice widget annotation is a list, [`false`](https://developer.apple.com/documentation/swift/false) otherwise.
 
 ## See Also
 

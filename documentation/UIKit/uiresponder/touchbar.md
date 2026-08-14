@@ -16,7 +16,7 @@ var touchBar: NSTouchBar? { get set }
 
 #### Discussion
 
-This property’s default value — on devices with a Touch Bar — is the [`NSTouchBar`](https://developer.apple.com/documentation/AppKit/NSTouchBar) instance that the responder’s [`makeTouchBar()`](uiresponder/maketouchbar().md) method returns. Otherwise, the default value is `nil`.
+This property’s default value — on devices with a Touch Bar — is the [`NSTouchBar`](https://developer.apple.com/documentation/appkit/nstouchbar) instance that the responder’s [`makeTouchBar()`](uiresponder/maketouchbar().md) method returns. Otherwise, the default value is `nil`.
 
 ## See Also
 

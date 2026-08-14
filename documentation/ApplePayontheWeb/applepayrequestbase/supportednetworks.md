@@ -29,7 +29,7 @@ For the best compatibility with operating systems and browsers, use the lowest p
 
 In macOS 12.3, iOS 15.4, watchOS 8.5, and Mac Catalyst 15.4 or later, specify payment methods in the order you prefer. For example, to specify the default network to use for cobadged cards, set the first element in the array to the default network, and alternate networks afterward in the order you prefer.
 
-> **Note**:  If your website supports debit networks, check for regional regulations. For more information, see [`Complying with regional regulations`](https://developer.apple.com/documentation/PassKit/complying-with-regional-regulations).
+> **Note**:  If your website supports debit networks, check for regional regulations. For more information, see [`Complying with regional regulations`](https://developer.apple.com/documentation/passkit/complying-with-regional-regulations).
 
 ## See Also
 

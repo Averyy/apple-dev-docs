@@ -28,7 +28,7 @@ A new `AVAudioFormat` instance, or `nil` if the initialization fails.
 
 When `layout` is `nil`, and `asbd` specifies one or two channels, this method assumes mono or stereo layout, respectively.
 
-If the [`AudioStreamBasicDescription`](https://developer.apple.com/documentation/CoreAudioTypes/AudioStreamBasicDescription) specifies more than two channels and `layout` is `nil`, this method fails and returns `nil`.
+If the [`AudioStreamBasicDescription`](https://developer.apple.com/documentation/coreaudiotypes/audiostreambasicdescription) specifies more than two channels and `layout` is `nil`, this method fails and returns `nil`.
 
 ## Parameters
 

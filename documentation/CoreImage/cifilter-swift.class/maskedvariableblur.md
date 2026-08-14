@@ -33,7 +33,7 @@ This method applies the masked variable blur to an image. The effect blurs the i
 
 The masked variable blur filter uses the following properties:
 
-- **`radius`**: A `float` representing the area of effect as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+- **`radius`**: A `float` representing the area of effect as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
 - **`mask`**: An image that masks an area on the input image with the type [`CIImage`](ciimage.md).
 - **`inputImage`**: A [`CIImage`](ciimage.md) representing the input image to apply the filter to.
 
@@ -55,7 +55,7 @@ func maskedVariableBlur(inputImage: CIImage) -> CIImage {
 }
 ```
 
-![Three images, with two images on the left arranged vertically and a third image on the right vertically centered. The top left image contains a photo of the Golden Gate Bridge with a clear sky in the background. The bottom left image contains a white to black gradient with white at the bottom and black at the top. The right image shows the result of applying the masked variable blur filter using the two images on the left as inputs. The resulting image has a strong blur at the bottom that reduces to zero blur at the top.](https://docs-assets.developer.apple.com/published/56f6433d26ca41bc9abbf5a6d2a3256e/media-4334872%402x.png)
+![Three images, with two images on the left arranged vertically and a third image on the right vertically centered. The top left image contains a photo of the Golden Gate Bridge with a clear sky in the background. The bottom left image contains a white to black gradient with white at the bottom and black at the top. The right image shows the result of applying the masked variable blur filter using the two images on the left as inputs. The resulting image has a strong blur at the bottom that reduces to zero blur at the top.](/images/com.apple.coreimage/media-4334872@2x.png)
 
 ## See Also
 

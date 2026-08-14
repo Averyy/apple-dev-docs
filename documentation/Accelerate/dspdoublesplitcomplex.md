@@ -36,9 +36,9 @@ struct DSPDoubleSplitComplex
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../Swift/BitwiseCopyable.md)
-- [Copyable](../Swift/Copyable.md)
-- [Escapable](../Swift/Escapable.md)
+- [BitwiseCopyable](../swift/bitwisecopyable.md)
+- [Copyable](../swift/copyable.md)
+- [Escapable](../swift/escapable.md)
 - [vDSP_FourierTransformable](vdsp_fouriertransformable.md)
 
 ## See Also

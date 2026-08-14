@@ -20,7 +20,7 @@ func shouldAllow(_ interaction: UISpringLoadedInteraction, with context: any UIS
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/Swift/true) if the spring-loaded interaction should begin or continue; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
+[`true`](https://developer.apple.com/documentation/swift/true) if the spring-loaded interaction should begin or continue; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
 
 ## Parameters
 

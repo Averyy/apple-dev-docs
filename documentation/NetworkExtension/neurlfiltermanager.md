@@ -19,7 +19,7 @@ class NEURLFilterManager
 
 #### Overview
 
-The system performs URL filtering on your behalf according to your configuration and URL data set. The system filters all URL requests initiated with the [`WebKit`](https://developer.apple.com/documentation/WebKit) and [`URLSession`](https://developer.apple.com/documentation/Foundation/URLSession) APIs.
+The system performs URL filtering on your behalf according to your configuration and URL data set. The system filters all URL requests initiated with the [`WebKit`](https://developer.apple.com/documentation/webkit) and [`URLSession`](https://developer.apple.com/documentation/foundation/urlsession) APIs.
 
 During URL filtering, the system performs sub-URL generation to enumurate all possible sub-URLs for the URL in question. For example, the URL
 
@@ -160,8 +160,8 @@ Instances of this class are thread-safe.
 ## Relationships
 
 ### Conforms To
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

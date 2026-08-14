@@ -19,7 +19,7 @@ var allowedWritingToolsResultOptions: UIWritingToolsResultOptions { get set }
 
 #### Discussion
 
-Text views support most types of generated content. However, if you set this property to a value that includes the [`table`](uiwritingtoolsresultoptions/table.md) option, UIKit raises [`invalidArgumentException`](https://developer.apple.com/documentation/Foundation/NSExceptionName/invalidArgumentException).
+Text views support most types of generated content. However, if you set this property to a value that includes the [`table`](uiwritingtoolsresultoptions/table.md) option, UIKit raises [`invalidArgumentException`](https://developer.apple.com/documentation/foundation/nsexceptionname/invalidargumentexception).
 
 ## See Also
 

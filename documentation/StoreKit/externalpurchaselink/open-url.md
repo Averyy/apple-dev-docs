@@ -26,7 +26,7 @@ static func open(url: URL) async throws
 
 #### Discussion
 
-Call this method if your app configures the [`SKExternalPurchaseMultiLink`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/SKExternalPurchaseMultiLink) property list key to attempt to open the eligible external purchase link, `url`. Call this asynchronous method as shown below:
+Call this method if your app configures the [`SKExternalPurchaseMultiLink`](https://developer.apple.com/documentation/bundleresources/information-property-list/skexternalpurchasemultilink) property list key to attempt to open the eligible external purchase link, `url`. Call this asynchronous method as shown below:
 
 ```swift
 if let eligibleURLs = await ExternalPurchaseLink.eligibleURLs {
@@ -49,14 +49,14 @@ If the person chooses to continue, this method opens the link that you provide i
 https://site.example.com?externalPurchaseToken=ewoJImFwcEFwcGxlSWQiOjEyMzQ1Njc4OTAsCgkiYnVuZGxlSWQiOiJjb20uZXhhbXBsZSIsCgkidG9rZW5DcmVhdGlvbkRhdGUiOjE3MDYxNjk2MDAwMDAsCgkiZXh0ZXJuYWxQdXJjaGFzZUlkIjoiMDAwMDAwMDAtMDAwMC0wMDAwLTAwMDAtMDAwMDAwMDAwMDAwIgp9&bundleId=com.example
 ```
 
-> ❗ **Important**:  Record and use the external purchase token to report the customer’s external purchases to Apple. For more information, see [`External Purchase Server API`](https://developer.apple.com/documentation/ExternalPurchaseServerAPI).
+> ❗ **Important**:  Record and use the external purchase token to report the customer’s external purchases to Apple. For more information, see [`External Purchase Server API`](https://developer.apple.com/documentation/externalpurchaseserverapi).
 
 ##### Handle Errors
 
 This method throws a [`StoreKitError`](storekiterror.md) if any of the following are true:
 
-- Your app doesn’t have the  [`com.apple.developer.storekit.external-purchase-link`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.storekit.external-purchase-link) entitlement.
-- You haven’t configured external purchase links for the current App Store storefront in the [`SKExternalPurchaseMultiLink`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/SKExternalPurchaseMultiLink) property list key.
+- Your app doesn’t have the  [`com.apple.developer.storekit.external-purchase-link`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.storekit.external-purchase-link) entitlement.
+- You haven’t configured external purchase links for the current App Store storefront in the [`SKExternalPurchaseMultiLink`](https://developer.apple.com/documentation/bundleresources/information-property-list/skexternalpurchasemultilink) property list key.
 - The current App Store storefront doesn’t support external purchases.
 - The person is ineligible to make external purchases.
 - A network or system error occurs.
@@ -69,7 +69,7 @@ For more information about App Store storefronts, see [`Storefront`](storefront.
 
 ## See Also
 
-- [SKExternalPurchaseMultiLink](../BundleResources/Information-Property-List/SKExternalPurchaseMultiLink.md)
+- [SKExternalPurchaseMultiLink](../bundleresources/information-property-list/skexternalpurchasemultilink.md)
   A dictionary that contains an array of URLs to websites where people using your app can make external purchases.
 - [static var eligibleURLs: [URL]?](externalpurchaselink/eligibleurls.md)
   An array of external purchase links for the current storefront that the app configured and from which it chooses.

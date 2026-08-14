@@ -23,7 +23,7 @@ The age in seconds since the element was created
 
 Use this function to determine how long the element has existed, which is useful for time-based effects and animations.
 
-> **Note**: ![Graph](https://docs-assets.developer.apple.com/published/5549afbd0ccd9f0011b484eca167b04b/element__age.svg)
+> **Note**: ![Graph](/images/com.apple.computegraph/element__age.svg)
 
 
 ---

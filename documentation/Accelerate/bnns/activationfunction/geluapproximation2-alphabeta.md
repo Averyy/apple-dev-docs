@@ -30,7 +30,7 @@ x * (ReLU 6(x + 3.0) * 1.0 / 6.0)
 
 The following illustrates the output that the activation function generates from inputs in the range `-10...10`, an `alpha` of `0.1`, and a `beta` of `1.0`. The thinner, dashed line shows, for comparison, the result of [`BNNSActivationFunctionGELUApproximation`](bnnsactivationfunctiongeluapproximation.md) using the same `alpha` and `beta` values:
 
-![Graph that shows input values for the activation function on horizontal axis and its output values on vertical axis.](https://docs-assets.developer.apple.com/published/da2859fd172c040176380fed448b3650/media-3654658%402x.png)
+![Graph that shows input values for the activation function on horizontal axis and its output values on vertical axis.](/images/com.apple.accelerate/media-3654658@2x.png)
 
 ## See Also
 

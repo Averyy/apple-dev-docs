@@ -26,11 +26,11 @@ To deploy the sample driver, you need to create an explicit App ID and provision
 - com.apple.developer.driverkit
 - com.apple.developer.driverkit.transport.usb
 
-To learn how to perform this configuration, see [`Requesting Entitlements for DriverKit Development`](https://developer.apple.com/documentation/DriverKit/requesting-entitlements-for-driverkit-development).
+To learn how to perform this configuration, see [`Requesting Entitlements for DriverKit Development`](https://developer.apple.com/documentation/driverkit/requesting-entitlements-for-driverkit-development).
 
 To bypass this configuration and use ad hoc signing to test the driver in your local development environment, perform the following steps:
 
-1. Disable System Integrity Protection (SIP) on your system so it recognizes ad hoc-signed DriverKit extensions. For more information, see [`Disabling and Enabling System Integrity Protection`](https://developer.apple.com/documentation/Security/disabling-and-enabling-system-integrity-protection).
+1. Disable System Integrity Protection (SIP) on your system so it recognizes ad hoc-signed DriverKit extensions. For more information, see [`Disabling and Enabling System Integrity Protection`](https://developer.apple.com/documentation/security/disabling-and-enabling-system-integrity-protection).
 2. Configure the `SimpleAudioDriver`  target to use local signing. Select the target, and then select its Build Settings tab. Find the Code Signing Identity build setting and select Sign to Run Locally.
 
 Use the included installer script to install the driver on your system. Navigate to the root of the sample project and run the following command:

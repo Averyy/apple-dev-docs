@@ -25,7 +25,7 @@ var perRecordZoneDeleteBlock: ((CKRecordZone.ID, Result<Void, any Error>) -> Voi
 This property is a closure that returns no value and has the following parameters:
 
 - The ID of the record zone that CloudKit deletes.
-- A [`Result`](https://developer.apple.com/documentation/Swift/Result) that contains either - A successful `Result`
+- A [`Result`](https://developer.apple.com/documentation/swift/result) that contains either - A successful `Result`
 - An error that provides information about a failure deleting the record zone.
 
 The closure executes once for each record zone in the [`recordZoneIDsToDelete`](ckmodifyrecordzonesoperation/recordzoneidstodelete.md) property. Each time the closure executes, it executes serially with respect to the other record zone completion blocks of the operation.

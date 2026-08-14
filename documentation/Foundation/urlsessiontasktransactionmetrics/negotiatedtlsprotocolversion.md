@@ -22,7 +22,7 @@ var negotiatedTLSProtocolVersion: tls_protocol_version_t? { get }
 
 #### Discussion
 
-This value is a 2-byte sequence in host byte order. See [`tls_protocol_version_t`](https://developer.apple.com/documentation/Security/tls_protocol_version_t) for possible values. If the task didn’t negotiate an encrypted connection, this value is `nil`.
+This value is a 2-byte sequence in host byte order. See [`tls_protocol_version_t`](https://developer.apple.com/documentation/security/tls_protocol_version_t) for possible values. If the task didn’t negotiate an encrypted connection, this value is `nil`.
 
 ## See Also
 

@@ -26,11 +26,11 @@ A Core Foundation dictionary with all attachments identified by their keys. If n
 
 #### Discussion
 
-`CMCopyDictionaryOfAttachments` is a convenience call that returns all attachments with their corresponding keys in a new [`CFDictionary`](https://developer.apple.com/documentation/CoreFoundation/CFDictionary). Given a `CVBufferRef`, `CMCopyDictionaryOfAttachments` is similar to `CVBufferGetAttachments`, except that the `CFDictionary` that `CMCopyDictionaryOfAttachments` returns isn’t updated for later changes to the attachments.
+`CMCopyDictionaryOfAttachments` is a convenience call that returns all attachments with their corresponding keys in a new [`CFDictionary`](https://developer.apple.com/documentation/corefoundation/cfdictionary). Given a `CVBufferRef`, `CMCopyDictionaryOfAttachments` is similar to `CVBufferGetAttachments`, except that the `CFDictionary` that `CMCopyDictionaryOfAttachments` returns isn’t updated for later changes to the attachments.
 
 ## Parameters
 
-- `allocator`: Allocator for the new dictionary; pass [`kCFAllocatorDefault`](https://developer.apple.com/documentation/CoreFoundation/kCFAllocatorDefault) or `NULL` to use the default allocator.
+- `allocator`: Allocator for the new dictionary; pass [`kCFAllocatorDefault`](https://developer.apple.com/documentation/corefoundation/kcfallocatordefault) or `NULL` to use the default allocator.
 - `target`: Specifies the [`CMAttachmentBearer`](cmattachmentbearer.md) whose attachments you want to obtain.
 - `attachmentMode`: The mode of the attachments you want to obtain. See [`CMAttachmentMode`](cmattachmentmode.md) for possible values.
 

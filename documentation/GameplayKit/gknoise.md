@@ -25,13 +25,13 @@ Using procedural noise requires three steps:
 
 1. Select the [`GKNoiseSource`](gknoisesource.md) subclass that generates the style of noise you’d like, and configure its properties to customize the noise generation algorithm.
 2. Create a [`GKNoise`](gknoise.md) object from that noise source. A noise source generates a field of floating-point noise values between `-1.0` and `1.0` across an infinite, three-dimensional domain—a noise object represents this field. Using [`GKNoise`](gknoise.md) methods you can process the values in the noise field or combine values from multiple noise fields.
-3. Create a [`GKNoiseMap`](gknoisemap.md) object from the noise object. A noise map samples values from a finite, two-dimensional slice of the noise field to create a concrete output. You can then read those values directly, use the [`SKTexture`](https://developer.apple.com/documentation/SpriteKit/SKTexture) class to generate texture images, or use the `SKTileMap` class to generate tile maps.
+3. Create a [`GKNoiseMap`](gknoisemap.md) object from the noise object. A noise map samples values from a finite, two-dimensional slice of the noise field to create a concrete output. You can then read those values directly, use the [`SKTexture`](https://developer.apple.com/documentation/spritekit/sktexture) class to generate texture images, or use the `SKTileMap` class to generate tile maps.
 
 [`GKNoise`](gknoise.md) objects are lightweight. Because each noise object represents only a specific configuration of noise generation and processing steps, there’s little computation cost to creating noise objects from noise sources and applying operations to process, transform, or combine them. After you create noise objects and apply operations, creating a [`GKNoiseMap`](gknoisemap.md) object from the resulting noise object performs only the computation needed to generate final output.
 
 ##### Colorizing and Combining Noise
 
-A noise object doesn’t contain noise values or pixel color values for the noise field it describes. However, because you can combine multiple noise objects before producing colorized textures from the result, the [`gradientColors`](gknoise/gradientcolors.md) property specifies the colors that the [`SKTexture`](https://developer.apple.com/documentation/SpriteKit/SKTexture) class uses to colorize output. For example, you can generate a realistic terrain texture by creating several styles of noise representing different biomes such as water, grassland, forests and mountains, each with their own color gradient, then combining them with the [`init(componentNoises:selectionNoise:)`](gknoise/init(componentnoises:selectionnoise:).md) method. The selectionNoise parameter to that method determines which biomes shows through in which regions of the final output, and each retains its own color gradient.
+A noise object doesn’t contain noise values or pixel color values for the noise field it describes. However, because you can combine multiple noise objects before producing colorized textures from the result, the [`gradientColors`](gknoise/gradientcolors.md) property specifies the colors that the [`SKTexture`](https://developer.apple.com/documentation/spritekit/sktexture) class uses to colorize output. For example, you can generate a realistic terrain texture by creating several styles of noise representing different biomes such as water, grassland, forests and mountains, each with their own color gradient, then combining them with the [`init(componentNoises:selectionNoise:)`](gknoise/init(componentnoises:selectionnoise:).md) method. The selectionNoise parameter to that method determines which biomes shows through in which regions of the final output, and each retains its own color gradient.
 
 ## Topics
 
@@ -94,14 +94,14 @@ A noise object doesn’t contain noise values or pixel color values for the nois
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

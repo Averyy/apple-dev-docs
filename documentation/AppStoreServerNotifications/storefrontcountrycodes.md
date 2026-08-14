@@ -16,9 +16,9 @@ A list of storefront country codes for limiting the storefronts for a subscripti
 
 #### Discussion
 
-If you provide a list of storefronts when you call the [`Extend Subscription Renewal Dates for All Active Subscribers`](https://developer.apple.com/documentation/AppStoreServerAPI/Extend-Subscription-Renewal-Dates-for-All-Active-Subscribers) endpoint, the notification returns only those storefronts. If you don’t use the `storefrontCountryCodes`, the subscription-renewal-date extension applies to all storefronts.
+If you provide a list of storefronts when you call the [`Extend Subscription Renewal Dates for All Active Subscribers`](https://developer.apple.com/documentation/appstoreserverapi/extend-subscription-renewal-dates-for-all-active-subscribers) endpoint, the notification returns only those storefronts. If you don’t use the `storefrontCountryCodes`, the subscription-renewal-date extension applies to all storefronts.
 
-For information about providing the list of storefronts, see [`MassExtendRenewalDateRequest`](https://developer.apple.com/documentation/AppStoreServerAPI/MassExtendRenewalDateRequest).
+For information about providing the list of storefronts, see [`MassExtendRenewalDateRequest`](https://developer.apple.com/documentation/appstoreserverapi/massextendrenewaldaterequest).
 
 ## See Also
 

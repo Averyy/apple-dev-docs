@@ -54,7 +54,7 @@ You can safely call this protocol’s methods and access its properties from any
 
 ### Inherits From
 - [GCDevicePhysicalInputState](gcdevicephysicalinputstate.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 ### Conforming Types
 - [GCControllerLiveInput](gccontrollerliveinput.md)
 - [GCRacingWheelInput](gcracingwheelinput.md)

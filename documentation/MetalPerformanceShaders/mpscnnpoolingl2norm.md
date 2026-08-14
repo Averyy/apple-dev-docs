@@ -23,7 +23,7 @@ class MPSCNNPoolingL2Norm
 
 For each pixel, returns L2-Norm of pixels in the `kernelWidth * kernelHeight` filter region:
 
-![out[c,x,y] = sqrt ( sum_{dx,dy} in[c,x+dx,y+dy] * in[c,x+dx,y+dy] )](https://docs-assets.developer.apple.com/published/ad86372e61a5349468f50e9f214fd2be/media-2903549%402x.png)
+![out[c,x,y] = sqrt ( sum_{dx,dy} in[c,x+dx,y+dy] * in[c,x+dx,y+dy] )](/images/com.apple.metalperformanceshaders/media-2903549@2x.png)
 
 ## Topics
 
@@ -38,15 +38,15 @@ For each pixel, returns L2-Norm of pixels in the `kernelWidth * kernelHeight` fi
 ### Inherits From
 - [MPSCNNPooling](mpscnnpooling.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCoding](../Foundation/NSCoding.md)
-- [NSCopying](../Foundation/NSCopying.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [NSSecureCoding](../Foundation/NSSecureCoding.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCoding](../foundation/nscoding.md)
+- [NSCopying](../foundation/nscopying.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSSecureCoding](../foundation/nssecurecoding.md)
 
 ## See Also
 

@@ -35,7 +35,7 @@ Chart(data) { day in
 }
 ```
 
-![A chart that shows month names on the y-axis, ranging from January to October, and a number in the range 0 to 80 on the x-axis. A solid blue region spans the chart from top to bottom. The region is close to the middle of the x-axis on either end, and closer to the right of the chart in the middle. The region is thinner at the ends and thicker in the middle.](https://docs-assets.developer.apple.com/published/f553595c5ccf7707839392624453410e/AreaMark-6-macOS%402x.png)
+![A chart that shows month names on the y-axis, ranging from January to October, and a number in the range 0 to 80 on the x-axis. A solid blue region spans the chart from top to bottom. The region is close to the middle of the x-axis on either end, and closer to the right of the chart in the middle. The region is thinner at the ends and thicker in the middle.](/images/com.apple.Charts/AreaMark-6-macOS@2x.png)
 
 If you want to plot values that have a vertical interval, use [`init(x:yStart:yEnd:)`](areamark/init(x:ystart:yend:).md) instead.
 

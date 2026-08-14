@@ -30,7 +30,7 @@ struct HorizontalAlignment
 
 Use horizontal alignment guides to tell SwiftUI how to position views relative to one another horizontally, like when you place views vertically in an [`VStack`](vstack.md). The following example demonstrates common built-in horizontal alignments:
 
-![Three columns of content. Each column contains a string](https://docs-assets.developer.apple.com/published/cb8ad6030a1ebcfee545d02f406500ee/HorizontalAlignment-1-iOS%402x.png)
+![Three columns of content. Each column contains a string](/images/com.apple.SwiftUI/HorizontalAlignment-1-iOS@2x.png)
 
 You can generate the example above by creating a series of columns implemented as vertical stacks, where you configure each stack with a different alignment guide:
 
@@ -66,9 +66,9 @@ HorizontalAlignmentGallery()
     .environment(\.layoutDirection, .rightToLeft)
 ```
 
-![Three columns of content. Each column contains a string](https://docs-assets.developer.apple.com/published/809107178762dd221c16b555750c8dc8/HorizontalAlignment-2-iOS%402x.png)
+![Three columns of content. Each column contains a string](/images/com.apple.SwiftUI/HorizontalAlignment-2-iOS@2x.png)
 
-This automatic layout adjustment makes it easier to localize your app, but it’s still important to test your app for the different locales that you ship into. For more information about the localization process, see [`Localization`](https://developer.apple.com/documentation/Xcode/localization).
+This automatic layout adjustment makes it easier to localize your app, but it’s still important to test your app for the different locales that you ship into. For more information about the localization process, see [`Localization`](https://developer.apple.com/documentation/xcode/localization).
 
 ##### Custom Alignment Guides
 
@@ -115,7 +115,7 @@ struct LayeredVerticalStripes: View {
 
 The example above uses widths and heights that generate two mismatched sets of four vertical stripes. The [`ZStack`](zstack.md) centers the two sets vertically and aligns them horizontally one quarter of the way from the leading edge of each set. In a left-to-right locale, this aligns the right edges of the left-most stripes of each set:
 
-![Two sets of four rectangles. The first set is blue. The](https://docs-assets.developer.apple.com/published/712b90585dfdca95aa15b76df32fb1aa/HorizontalAlignment-3-iOS%402x.png)
+![Two sets of four rectangles. The first set is blue. The](/images/com.apple.SwiftUI/HorizontalAlignment-3-iOS@2x.png)
 
 ## Topics
 
@@ -139,11 +139,11 @@ The example above uses widths and heights that generate two mismatched sets of f
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../Swift/BitwiseCopyable.md)
-- [Copyable](../Swift/Copyable.md)
-- [Equatable](../Swift/Equatable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [BitwiseCopyable](../swift/bitwisecopyable.md)
+- [Copyable](../swift/copyable.md)
+- [Equatable](../swift/equatable.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

@@ -13,7 +13,7 @@ framework: HIG
 
 A context menu provides access to functionality that’s directly related to an item, without cluttering the interface.
 
-![A stylized representation of a contextual menu beneath a clicking pointer. The image is tinted red to subtly reflect the red in the original six-color Apple logo.](https://docs-assets.developer.apple.com/published/9f6b0259748a5692f6f43edc9a8e9ebf/components-context-menu-intro~dark%402x.png)
+![A stylized representation of a contextual menu beneath a clicking pointer. The image is tinted red to subtly reflect the red in the original six-color Apple logo.](/images/com.apple.HIG/components-context-menu-intro~dark@2x.png)
 Although a context menu provides convenient access to frequently used items, it’s hidden by default, so people might not know it’s there. To reveal a context menu, people generally choose a view or select some content and then perform an action, using the input modes their current configuration supports. For example:
 - The system-defined touch or pinch and hold gesture in visionOS, iOS, and iPadOS
 - Pressing the Control key while clicking a pointing device in macOS and iPadOS
@@ -29,7 +29,7 @@ Although a context menu provides convenient access to frequently used items, it�
 **Aim to place the most frequently used menu items where people are likely to encounter them first.** When a context menu opens, people often read it starting from the part that’s closest to where their finger or pointer revealed it. Depending on the location of the selected content, a context menu might open above or below it, so you might also need to reverse the order of items to match the position of the menu.
 **Show keyboard shortcuts in your app’s main menus, not in context menus.** Context menus already provide a shortcut to task-specific commands, so it’s redundant to display keyboard shortcuts too.
 **Follow best practices for using separators.** As with other types of menus, you can use separators to group items in a context menu and help people scan the menu more quickly. In general, you don’t want more than about three groups in a context menu. For guidance, see [Menus](menus.md).
-**In iOS, iPadOS, and visionOS, warn people about context menu items that can destroy data.** If you need to include potentially destructive items in your context menu — such as Delete or Remove — list them at the end of the menu and identify them as destructive (for developer guidance, see [destructive](../UIKit/UIMenuElement/Attributes/destructive.md)). The system can display a destructive menu item using a red text color.
+**In iOS, iPadOS, and visionOS, warn people about context menu items that can destroy data.** If you need to include potentially destructive items in your context menu — such as Delete or Remove — list them at the end of the menu and identify them as destructive (for developer guidance, see [destructive](../uikit/uimenuelement/attributes/destructive.md)). The system can display a destructive menu item using a red text color.
 
 ## Content
 A context menu seldom displays a title. In contrast, each item in a context menu needs to display a short label that clearly describes what it does. For guidance, see [Menus > Labels](https://developer.apple.com/design/human-interface-guidelines/menus#Labels).
@@ -44,7 +44,7 @@ A context menu seldom displays a title. In contrast, each item in a context menu
 **In iPadOS, consider using a context menu to let people create a new object in your app.** iPadOS lets you reveal a context menu when people perform a long press on the touchscreen or use a secondary click with an attached trackpad or keyboard. For example, Files lets people create a new folder by revealing a context menu in an area between existing files and folders.
 In iOS and iPadOS, a context menu can display a preview of the current content near the list of commands. People can choose a command in the menu or — in some cases — they can tap the preview to open it or drag it to another area.
 **Prefer a graphical preview that clarifies the target of a context menu’s commands.** For example, when people reveal a context menu on a list item in Notes or Mail, the preview shows a condensed version of the actual content to help people confirm that they’re working with the item they intend.
-**Ensure that your preview looks good as it animates.** As people reveal a context menu on an onscreen object, the system animates the preview image as it emerges from the content, dimming the screen behind the preview and the menu. It’s important to adjust the preview’s clipping path to match the shape of the preview image so that its contours, such as the rounded corners, don’t appear to change during animation. For developer guidance, see [UIContextMenuInteractionDelegate](../UIKit/UIContextMenuInteractionDelegate.md).
+**Ensure that your preview looks good as it animates.** As people reveal a context menu on an onscreen object, the system animates the preview image as it emerges from the content, dimming the screen behind the preview and the menu. It’s important to adjust the preview’s clipping path to match the shape of the preview image so that its contours, such as the rounded corners, don’t appear to change during animation. For developer guidance, see [UIContextMenuInteractionDelegate](../uikit/uicontextmenuinteractiondelegate.md).
 
 ### macOS
 On a Mac, a context menu is sometimes called a *contextual* menu.
@@ -62,9 +62,9 @@ On a Mac, a context menu is sometimes called a *contextual* menu.
 [Pull-down buttons](pull-down-buttons.md)
 
 #### Developer documentation
-[contextMenu(menuItems:)](../SwiftUI/View/contextMenu(menuItems:).md) — SwiftUI
-[UIContextMenuInteraction](../UIKit/UIContextMenuInteraction.md) — UIKit
-[popUpContextMenu(_:with:for:)](../AppKit/NSMenu/popUpContextMenu(_:with:for:).md) — AppKit
+[contextMenu(menuItems:)](../swiftui/view/contextmenu(menuitems:).md) — SwiftUI
+[UIContextMenuInteraction](../uikit/uicontextmenuinteraction.md) — UIKit
+[popUpContextMenu(_:with:for:)](../appkit/nsmenu/popupcontextmenu(_:with:for:).md) — AppKit
 
 ## Change log
 | Date | Changes |

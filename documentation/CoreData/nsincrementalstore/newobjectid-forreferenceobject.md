@@ -31,7 +31,7 @@ You should not override this method.
 ## Parameters
 
 - `entity`: The entity for the new object ID.
-- `data`: An object of type [`NSString`](https://developer.apple.com/documentation/Foundation/NSString) or [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) to use as the key.
+- `data`: An object of type [`NSString`](https://developer.apple.com/documentation/foundation/nsstring) or [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) to use as the key.
 
 ## See Also
 

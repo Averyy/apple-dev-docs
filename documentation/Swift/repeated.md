@@ -56,7 +56,7 @@ for name in repeatedName {
 - [BidirectionalCollection](bidirectionalcollection.md)
 - [Collection](collection.md)
 - [Copyable](copyable.md)
-- [DataProtocol](../Foundation/DataProtocol.md)
+- [DataProtocol](../foundation/dataprotocol.md)
 - [Escapable](escapable.md)
 - [RandomAccessCollection](randomaccesscollection.md)
 - [Sendable](sendable.md)

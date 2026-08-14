@@ -114,9 +114,9 @@ struct NSExceptionName
 - [static let windowServerCommunicationException: NSExceptionName](nsexceptionname/windowservercommunicationexception.md)
 - [static let wordTablesReadException: NSExceptionName](nsexceptionname/wordtablesreadexception.md)
 - [static let wordTablesWriteException: NSExceptionName](nsexceptionname/wordtableswriteexception.md)
-- [class let hierarchyInconsistencyException: NSExceptionName](../UIKit/UIViewController/hierarchyInconsistencyException.md)
+- [class let hierarchyInconsistencyException: NSExceptionName](../uikit/uiviewcontroller/hierarchyinconsistencyexception.md)
   Raised if the view controller hierarchy is inconsistent with the view hierarchy.
-- [class let invalidInterfaceOrientationException: NSExceptionName](../UIKit/UIApplication/invalidInterfaceOrientationException.md)
+- [class let invalidInterfaceOrientationException: NSExceptionName](../uikit/uiapplication/invalidinterfaceorientationexception.md)
   An exception that’s thrown if a view controller or the app returns an invalid set of supported interface orientations.
 ### Initializers
 - [init(String)](nsexceptionname/init(_:).md)
@@ -125,11 +125,11 @@ struct NSExceptionName
 ## Relationships
 
 ### Conforms To
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [RawRepresentable](../Swift/RawRepresentable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [RawRepresentable](../swift/rawrepresentable.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

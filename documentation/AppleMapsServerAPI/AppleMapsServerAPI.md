@@ -12,9 +12,9 @@ Reduce API calls and conserve device power by streamlining your app’s georelat
 
 Use this web-based service to streamline your app’s API by moving georelated searches for places, points of interest, geocoding, directions, possible autocompletions for searches, and estimated time of arrival (ETA) calculations from inside your app to your server.
 
-To try the Maps Server API, generate a temporary token as described in [`Creating a Maps token`](https://developer.apple.com/documentation/MapKitJS/creating-a-maps-token). Use these credentials to access the API from your app, or use them on [`Try Maps Server API`](https://developer.apple.comhttps://developer.apple.com/maps/try-maps-server-api/).
+To try the Maps Server API, generate a temporary token as described in [`Creating a Maps token`](https://developer.apple.com/documentation/mapkitjs/creating-a-maps-token). Use these credentials to access the API from your app, or use them on [`Try Maps Server API`](https://developer.apple.comhttps://developer.apple.com/maps/try-maps-server-api/).
 
-The Apple Maps Server API is a web-based API similar to the [`MapKit JS`](https://developer.apple.com/documentation/MapKitJS) API, and uses the same authorization infrastructure. It requires authorization using a JSON Web Token (JWT) for API calls. You obtain a key for creating the token when you complete the setup in your Apple Developer account.
+The Apple Maps Server API is a web-based API similar to the [`MapKit JS`](https://developer.apple.com/documentation/mapkitjs) API, and uses the same authorization infrastructure. It requires authorization using a JSON Web Token (JWT) for API calls. You obtain a key for creating the token when you complete the setup in your Apple Developer account.
 
 To start using the API, you first need to generate an identifier and a private key, and authenticate with the service, following the steps below:
 

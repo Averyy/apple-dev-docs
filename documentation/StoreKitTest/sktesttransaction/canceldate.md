@@ -22,11 +22,11 @@ var cancelDate: Date? { get }
 
 #### Discussion
 
-The [`cancelDate`](sktesttransaction/canceldate.md) is equivalent to the [`revocationDate`](https://developer.apple.com/documentation/StoreKit/Transaction/revocationDate) in [`Transaction`](https://developer.apple.com/documentation/StoreKit/Transaction). The system sets the [`cancelDate`](sktesttransaction/canceldate.md) if it refunds or revokes the in-app purchase. Otherwise, the value is `nil`.
+The [`cancelDate`](sktesttransaction/canceldate.md) is equivalent to the [`revocationDate`](https://developer.apple.com/documentation/storekit/transaction/revocationdate) in [`Transaction`](https://developer.apple.com/documentation/storekit/transaction). The system sets the [`cancelDate`](sktesttransaction/canceldate.md) if it refunds or revokes the in-app purchase. Otherwise, the value is `nil`.
 
 A subscription can have a `nil` [`cancelDate`](sktesttransaction/canceldate.md) and be inactive if its expiration date passed.
 
-The system doesn’t set [`cancelDate`](sktesttransaction/canceldate.md) if the user turns off auto-renewing for the subscription. If the user upgrades the subscription, the system sets [`isUpgraded`](https://developer.apple.com/documentation/StoreKit/Transaction/isUpgraded) in [`Transaction`](https://developer.apple.com/documentation/StoreKit/Transaction) to `true` and sends a new transaction for the upgraded subscription. The system doesn’t set [`cancelDate`](sktesttransaction/canceldate.md) in this case.
+The system doesn’t set [`cancelDate`](sktesttransaction/canceldate.md) if the user turns off auto-renewing for the subscription. If the user upgrades the subscription, the system sets [`isUpgraded`](https://developer.apple.com/documentation/storekit/transaction/isupgraded) in [`Transaction`](https://developer.apple.com/documentation/storekit/transaction) to `true` and sends a new transaction for the upgraded subscription. The system doesn’t set [`cancelDate`](sktesttransaction/canceldate.md) in this case.
 
 ## See Also
 

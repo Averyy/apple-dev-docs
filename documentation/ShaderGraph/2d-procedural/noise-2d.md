@@ -29,7 +29,7 @@ Image(source: “Noise2dGraph”)
 
 Multiply the incoming texture coordinates with a constant float. The float changes the frequency of the generated noise to a higher number that corresponds with the pattern repeating more often. Below, the resulting texture applies to a cube:
 
-![None](https://docs-assets.developer.apple.com/published/0731a19532c2cf80f4640eb844465f64/Noise2dMaterial.png)
+![None](/images/ShaderGraph-Docs/Noise2dMaterial.png)
 
 ## See Also
 

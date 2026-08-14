@@ -10,11 +10,11 @@ watchOS apps use a simplified, stack-based layout model for their user interface
 
 As you add items to the storyboard, Xcode stacks them vertically, with each item on its own line ([`Figure 1`](storyboard_support/building_watchos_app_interfaces_using_the_storyboard#3295988.md)).
 
-![A screenshot of a storyboard scene with three buttons stacked horizontally.](https://docs-assets.developer.apple.com/published/9100c5dcbc2e2dd9efdbda264280e41f/media-3295988%402x.png)
+![A screenshot of a storyboard scene with three buttons stacked horizontally.](/images/com.apple.watchkit/media-3295988@2x.png)
 
 Use Groups to create horizontal or vertical stacks ([`Figure 2`](storyboard_support/building_watchos_app_interfaces_using_the_storyboard#3172421.md)). Groups don’t have a default visual representation, but you can configure a background color or image as needed. Nest Groups, as necessary, to create more complex layouts.
 
-![A screenshot with a Group containing a horizontal stack of buttons.](https://docs-assets.developer.apple.com/published/9799d1483038c93393bfd7c9cb936929/media-3172421%402x.png)
+![A screenshot with a Group containing a horizontal stack of buttons.](/images/com.apple.watchkit/media-3172421@2x.png)
 
 ##### Customize the Layout Using Attributes
 

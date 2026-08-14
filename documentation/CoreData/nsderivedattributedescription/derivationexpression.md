@@ -26,7 +26,7 @@ When using derived attributes in an SQL store, this expression should be
 
 - a keypath expression (including @operation components)
 
-a function expression using one of the predefined functions defined in [`NSExpression`](https://developer.apple.com/documentation/Foundation/NSExpression)
+a function expression using one of the predefined functions defined in [`NSExpression`](https://developer.apple.com/documentation/foundation/nsexpression)
 
 Any keypaths used in the expression must be accessible from the entity on which the derived attribute is specified.
 

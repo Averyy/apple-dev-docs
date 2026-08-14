@@ -17,7 +17,7 @@ Draw shapes, images, and other content on the screen.
 ### Strings
 - [class NSStringDrawingContext](nsstringdrawingcontext.md)
   An object that manages metrics for drawing attributed strings.
-- [struct NSStringDrawingOptions](../UIKit/NSStringDrawingOptions.md)
+- [struct NSStringDrawingOptions](../uikit/nsstringdrawingoptions.md)
   Constants that specify the rendering options for drawing a string.
 ### Gradients
 - [class NSGradient](nsgradient.md)

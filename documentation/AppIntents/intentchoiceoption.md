@@ -44,7 +44,7 @@ Each option includes display text and an optional style that influences its visu
 ## Relationships
 
 ### Conforms To
-- [Equatable](../Swift/Equatable.md)
+- [Equatable](../swift/equatable.md)
 
 ## See Also
 

@@ -8,13 +8,13 @@ Enable people to scroll to content that doesn’t fit in the current display.
 
 When the content of a view doesn’t fit in the display, you can wrap the view in a [`ScrollView`](scrollview.md) to enable people to scroll on one or more axes. Configure the scroll view using view modifiers. For example, you can set the visibility of the scroll indicators or the availability of scrolling in a given dimension.
 
-![None](https://docs-assets.developer.apple.com/published/fc9311e17b13443bf22043d6155e0e7f/scroll-views-hero%402x.png)
+![None](/images/com.apple.SwiftUI/scroll-views-hero@2x.png)
 
 You can put any view type in a scroll view, but you most often use a scroll view for a layout container with too many elements to fit in the display. For some container views that you put in a scroll view, like lazy stacks, the container doesn’t load views until they are visible or almost visible. For others, like regular stacks and grids, the container loads the content all at once, regardless of the state of scrolling.
 
 [`Lists`](lists.md) and [`Tables`](tables.md) implicitly include a scroll view, so you don’t need to add scrolling to those container types. However, you can configure their implicit scroll views with the same view modifiers that apply to explicit scroll views.
 
-For design guidance, see [`Scroll views`](https://developer.apple.com/design/Human-Interface-Guidelines/scroll-views) in the Human Interface Guidelines.
+For design guidance, see [`Scroll views`](https://developer.apple.com/design/human-interface-guidelines/scroll-views) in the Human Interface Guidelines.
 
 ## Topics
 

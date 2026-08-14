@@ -20,7 +20,7 @@ func indexPathsToInsertForSupplementaryView(ofKind elementKind: String) -> [Inde
 
 #### Return Value
 
-An array of [`NSIndexPath`](https://developer.apple.com/documentation/Foundation/NSIndexPath) objects indicating the location of the new supplementary views, or an empty array if you don’t want to add any supplementary views.
+An array of [`NSIndexPath`](https://developer.apple.com/documentation/foundation/nsindexpath) objects indicating the location of the new supplementary views, or an empty array if you don’t want to add any supplementary views.
 
 #### Discussion
 

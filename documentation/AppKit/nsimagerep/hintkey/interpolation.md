@@ -16,7 +16,7 @@ static let interpolation: NSImageRep.HintKey
 
 #### Discussion
 
-The value for this key is an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) with an [`NSImageInterpolation`](nsimageinterpolation.md) value.
+The value for this key is an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) with an [`NSImageInterpolation`](nsimageinterpolation.md) value.
 
 ## See Also
 

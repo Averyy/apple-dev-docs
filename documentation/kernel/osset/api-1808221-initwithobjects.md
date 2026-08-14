@@ -22,7 +22,7 @@ virtual bool initWithObjects(
 
 Not for general use. Use the static instance creation method withObjects instead.
 
-`objects` must be non-`NULL`, and `count` must be nonzero. If `capacity` is nonzero, it must be greater than or equal to `count`. The new array will grow as needed to accommodate more key-object pairs (`CFMutableSet`, for which the initial capacity is a hard limit).
+`objects` must be non-`NULL`, and `count` must be nonzero. If `capacity` is nonzero, it must be greater than or equal to `count`. The new array will grow as needed to accommodate more key-object pairs (*unlike*[`CFMutableSet`](https://developer.apple.com/documentation/corefoundation/cfmutableset), for which the initial capacity is a hard limit).
 
 The objects in `objects` are retained for storage in the new set, not copied.
 
@@ -30,7 +30,7 @@ The objects in `objects` are retained for storage in the new set, not copied.
 
 - `objects`: A C array of OSObject-derived objects.
 - `count`: The number of objects to be placed into the set.
-- `capacity`: The initial storage capacity of the new set object. If 0,   is used; otherwise this value must be greater than or equal to  .
+- `capacity`: The initial storage capacity of the new set object. If 0, `count` is used; otherwise this value must be greater than or equal to `count`.
 
 ## See Also
 

@@ -22,7 +22,7 @@ static let collisionBitMask: SCNPhysicsWorld.TestOption
 
 #### Discussion
 
-The value for this key is an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) object containing an [`NSUInteger`](https://developer.apple.com/documentation/ObjectiveC/NSUInteger) value. SceneKit tests for contacts only with physics bodies whose [`categoryBitMask`](scnphysicsbody/categorybitmask.md) property overlaps with this bit mask. The default value is [`all`](scnphysicscollisioncategory/all.md), specifying that searches should test all physics bodies regardless of their category.
+The value for this key is an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) object containing an [`NSUInteger`](https://developer.apple.com/documentation/objectivec/nsuinteger) value. SceneKit tests for contacts only with physics bodies whose [`categoryBitMask`](scnphysicsbody/categorybitmask.md) property overlaps with this bit mask. The default value is [`all`](scnphysicscollisioncategory/all.md), specifying that searches should test all physics bodies regardless of their category.
 
 ## See Also
 

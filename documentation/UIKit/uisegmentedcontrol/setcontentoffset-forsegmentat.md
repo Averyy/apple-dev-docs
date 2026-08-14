@@ -20,7 +20,7 @@ func setContentOffset(_ offset: CGSize, forSegmentAt segment: Int)
 
 ## Parameters
 
-- `offset`: The offset (as a [`CGSize`](https://developer.apple.com/documentation/CoreFoundation/CGSize) type) from the origin of the segment at which to draw the segment’s content. The default offset is (0,0).
+- `offset`: The offset (as a [`CGSize`](https://developer.apple.com/documentation/corefoundation/cgsize) type) from the origin of the segment at which to draw the segment’s content. The default offset is (0,0).
 - `segment`: An index number identifying a segment in the control. It must be a number between 0 and the number of segments ([`numberOfSegments`](uisegmentedcontrol/numberofsegments.md)) minus 1; the segmented control pins values exceeding this upper range to the last segment.
 
 ## See Also

@@ -23,8 +23,8 @@ A very common matching criteria for IOService object is based on its name. `name
 
 ## Parameters
 
-- `name`: The service's name, as a const C string. Name matching is successful on IOService objects that respond successfully to the   method.
-- `table`: If zero,   creates a matching dictionary and returns a reference to it, otherwise the matching properties are added to the specified dictionary.
+- `name`: The service's name, as a const C string. Name matching is successful on IOService objects that respond successfully to the `IORegistryEntry::compareName` method.
+- `table`: If zero, `nameMatching` creates a matching dictionary and returns a reference to it, otherwise the matching properties are added to the specified dictionary.
 
 ## See Also
 

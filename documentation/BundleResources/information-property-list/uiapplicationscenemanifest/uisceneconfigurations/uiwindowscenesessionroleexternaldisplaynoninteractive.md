@@ -34,7 +34,7 @@ Use this key to specify scene configurations for a session role. Each scene conf
 
 ## See Also
 
-- [Presenting content on a connected display](../UIKit/presenting-content-on-a-connected-display.md)
+- [Presenting content on a connected display](../uikit/presenting-content-on-a-connected-display.md)
   Fill connected displays with additional content from your app.
 - [UIWindowSceneSessionRoleApplication](information-property-list/uiapplicationscenemanifest/uisceneconfigurations/uiwindowscenesessionroleapplication.md)
   Configurations for scenes you use to display content on the device’s main screen and respond to user interactions.

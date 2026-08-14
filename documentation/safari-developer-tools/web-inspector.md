@@ -14,7 +14,7 @@ The most complete resource for Web Inspector is the [`Web Inspector Reference`](
 
 Web Inspector is divided into multiple tabs, with navigation and details sidebars, a main content area, a console prompt at the bottom, and optionally a split console visible in every tab. Learn more about [`Web Inspector’s interface`](https://developer.apple.comhttps://webkit.org/web-inspector/web-inspector-interface/) as well as how to quickly navigate Web Inspector with [`keyboard shortcuts`](https://developer.apple.comhttps://webkit.org/web-inspector/keyboard-shortcuts/).
 
-![Overview of Web Inspector’s interface, with a tab bar at the top, a navigation sidebar, content area, and details sidebar in the middle, and the console prompt at the bottom.](https://docs-assets.developer.apple.com/published/6c979bb3ac204dbb2b08e5fe161c697a/WebInspector-Interface~dark%402x.png)
+![Overview of Web Inspector’s interface, with a tab bar at the top, a navigation sidebar, content area, and details sidebar in the middle, and the console prompt at the bottom.](/images/com.apple.safari.developer-tools/WebInspector-Interface~dark@2x.png)
 
 Each tab contains a set of related tools and features to make it easier to find the tool you are looking for.
 

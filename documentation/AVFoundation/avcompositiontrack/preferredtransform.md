@@ -22,7 +22,7 @@ var preferredTransform: CGAffineTransform { get }
 
 #### Discussion
 
-The value of this property is typically, but not always, [`CGAffineTransformIdentity`](https://developer.apple.com/documentation/CoreGraphics/CGAffineTransformIdentity).
+The value of this property is typically, but not always, [`CGAffineTransformIdentity`](https://developer.apple.com/documentation/coregraphics/cgaffinetransformidentity).
 
 ## See Also
 

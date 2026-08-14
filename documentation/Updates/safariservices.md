@@ -6,13 +6,13 @@ Learn about important changes in SafariServices.
 
 #### Overview
 
-Browse notable changes in [`Safari Services`](https://developer.apple.com/documentation/SafariServices).
+Browse notable changes in [`Safari Services`](https://developer.apple.com/documentation/safariservices).
 
 #### June 2025
 
 ##### Safari Settings Export Browsing Data Ui
 
-- Web browsers can present the Export Browsing Data sheet from Safari’s settings using [`SFSafariSettings`](https://developer.apple.com/documentation/SafariServices/SFSafariSettings) and its [`openExportBrowsingDataSettings(completionHandler:)`](https://developer.apple.com/documentation/SafariServices/SFSafariSettings/openExportBrowsingDataSettings(completionHandler:)) method.
+- Web browsers can present the Export Browsing Data sheet from Safari’s settings using [`SFSafariSettings`](https://developer.apple.com/documentation/safariservices/sfsafarisettings) and its [`openExportBrowsingDataSettings(completionHandler:)`](https://developer.apple.com/documentation/safariservices/sfsafarisettings/openexportbrowsingdatasettings(completionhandler:)) method.
 
 ## See Also
 

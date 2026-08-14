@@ -26,10 +26,10 @@ This function and related “AEBuild” routines provide a very simple translati
 
 ## Parameters
 
-- `event`: The Apple event to which you are adding parameters. See  .
-- `error`: A pointer to an   structure where additional information about any errors that occur will be saved. This is an optional parameter and you can pass   if this information is not required. See  .
-- `format`: An   format string describing the   parameters to be created.
-- `args`: A reference to a previously defined, variable argument parameter list to use with the descriptor-string. The file   defines macros for declaring and using the   data type.
+- `event`: The Apple event to which you are adding parameters. See [`AppleEvent`](appleevent.md).
+- `error`: A pointer to an `AEBuildError` structure where additional information about any errors that occur will be saved. This is an optional parameter and you can pass `NULL` if this information is not required. See [`AEBuildError`](aebuilderror.md).
+- `format`: An `AEBuild` format string describing the `AEDesc` parameters to be created.
+- `args`: A reference to a previously defined, variable argument parameter list to use with the descriptor-string. The file `<stdarg.h>` defines macros for declaring and using the `va_list` data type.
 
 ## See Also
 

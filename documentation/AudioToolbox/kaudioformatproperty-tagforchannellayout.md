@@ -21,7 +21,7 @@ var kAudioFormatProperty_TagForChannelLayout: AudioFormatPropertyID { get }
 
 #### Discussion
 
-An AudioChannelLayoutTag value for a layout, if there is one. Set the `inSpecifier` parameter to an [`AudioChannelLayout`](https://developer.apple.com/documentation/CoreAudioTypes/AudioChannelLayout) structure containing the layout description. This can be used to reduce a layout specified by [`kAudioChannelLayoutTag_UseChannelDescriptions`](https://developer.apple.com/documentation/CoreAudioTypes/kAudioChannelLayoutTag_UseChannelDescriptions) or [`kAudioChannelLayoutTag_UseChannelBitmap`](https://developer.apple.com/documentation/CoreAudioTypes/kAudioChannelLayoutTag_UseChannelBitmap) to a known AudioChannelLayoutTag value.
+An AudioChannelLayoutTag value for a layout, if there is one. Set the `inSpecifier` parameter to an [`AudioChannelLayout`](https://developer.apple.com/documentation/coreaudiotypes/audiochannellayout) structure containing the layout description. This can be used to reduce a layout specified by [`kAudioChannelLayoutTag_UseChannelDescriptions`](https://developer.apple.com/documentation/coreaudiotypes/kaudiochannellayouttag_usechanneldescriptions) or [`kAudioChannelLayoutTag_UseChannelBitmap`](https://developer.apple.com/documentation/coreaudiotypes/kaudiochannellayouttag_usechannelbitmap) to a known AudioChannelLayoutTag value.
 
 ## See Also
 

@@ -36,9 +36,9 @@ To replace the pending data in the dispatch source, call the [`replace(data:)`](
 
 ### Inherits From
 - [DispatchSourceProtocol](dispatchsourceprotocol.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 ### Conforming Types
 - [DispatchSource](dispatchsource.md)
 

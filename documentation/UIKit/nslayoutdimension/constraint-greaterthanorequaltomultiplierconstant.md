@@ -63,7 +63,7 @@ button.widthAnchor.constraintGreaterThanOrEqualToAnchor(button.heightAnchor, mul
 
 ## Parameters
 
-- `anchor`: A dimension anchor from a [`UIView`](uiview.md), [`NSView`](https://developer.apple.com/documentation/AppKit/NSView), or [`UILayoutGuide`](uilayoutguide.md) object.
+- `anchor`: A dimension anchor from a [`UIView`](uiview.md), [`NSView`](https://developer.apple.com/documentation/appkit/nsview), or [`UILayoutGuide`](uilayoutguide.md) object.
 - `m`: The multiplier constant for the constraint.
 - `c`: The constant offset for this relationship.
 

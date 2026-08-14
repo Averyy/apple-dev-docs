@@ -19,7 +19,7 @@ case mail
 
 #### Discussion
 
-![None](https://docs-assets.developer.apple.com/published/da083acdc4e98b1368d921c30ffba4e0/media-2934525%402x.png)
+![None](/images/com.apple.uikit/media-2934525@2x.png)
 
 ## See Also
 

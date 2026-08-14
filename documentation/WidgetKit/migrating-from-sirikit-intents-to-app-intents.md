@@ -22,14 +22,14 @@ Xcode provides automatic conversion from SiriKit Intents to App Intents. Follow 
 4. Select one or more intents from the list of available intents, and click Next.
 5. Select a location to save the new files in your project, and the targets in which to include the converted intents.
 
-Xcode generates source files for new types that conform to the [`CustomIntentMigratedAppIntent`](https://developer.apple.com/documentation/AppIntents/CustomIntentMigratedAppIntent) protocol, and sets the `intentClassName` property to the name of the SiriKit Intent.
+Xcode generates source files for new types that conform to the [`CustomIntentMigratedAppIntent`](https://developer.apple.com/documentation/appintents/customintentmigratedappintent) protocol, and sets the `intentClassName` property to the name of the SiriKit Intent.
 
 ##### Update the Widget Configuration
 
 In the widget’s `body` method, add code that does the following:
 
 - Instead of using an `IntentConfiguration`, create an [`AppIntentConfiguration`](appintentconfiguration.md).
-- Instead of passing an `INIntent` type to the app configuration’s initializer, pass the newly converted intent type created as described in the steps above. This new intent type conforms to [`WidgetConfigurationIntent`](https://developer.apple.com/documentation/AppIntents/WidgetConfigurationIntent) .
+- Instead of passing an `INIntent` type to the app configuration’s initializer, pass the newly converted intent type created as described in the steps above. This new intent type conforms to [`WidgetConfigurationIntent`](https://developer.apple.com/documentation/appintents/widgetconfigurationintent) .
 - Instead of passing an `IntentTimelineProvider`, pass a type that conforms to [`AppIntentTimelineProvider`](appintenttimelineprovider.md).
 
 To continue supporting versions earlier than iOS 17, macOS 14, and watchOS 10, factor the creation of the widget’s configuration to a type-erased method that the `body` method calls, as shown below.

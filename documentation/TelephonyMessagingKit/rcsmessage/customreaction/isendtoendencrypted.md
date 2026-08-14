@@ -7,7 +7,6 @@ A Boolean value indicating whether this message is end-to-end encrypted.
 
 **Availability**:
 - iOS 27.0+ (Beta)
-- iPadOS 27.0+ (Beta)
 
 ## Declaration
 

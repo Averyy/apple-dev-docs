@@ -14,7 +14,7 @@ In the Inspector, click the **Assistant** tab (top right) to open the Assistant 
 
 > **Note**: Keep your API key confidential. Do not share it or commit it to source control.
 
-![Screenshot of the assistant's settings option](https://docs-assets.developer.apple.com/published/3603e32c2a494b2d80e5fd94033dc248/AssistSettings%402x.png)
+![Screenshot of the assistant's settings option](/images/RealityComposerPro/AssistSettings@2x.png)
 
 To add more AI models, repeat this process with any compatible AI model provider.
 

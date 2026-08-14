@@ -34,7 +34,7 @@ A pasteboard item can be associated with a single pasteboard. When you create an
 
 Use pasteboard items during a single pasteboard interaction, rather than retaining and reusing them. A pasteboard item is only valid until the owner of the pasteboard changes.
 
-> ❗ **Important**:  When a pasteboard item’s owner changes, it becomes stale and its methods return an empty array, `nil`, or [`false`](https://developer.apple.com/documentation/Swift/false).
+> ❗ **Important**:  When a pasteboard item’s owner changes, it becomes stale and its methods return an empty array, `nil`, or [`false`](https://developer.apple.com/documentation/swift/false).
 
 ## Topics
 
@@ -78,14 +78,14 @@ Use pasteboard items during a single pasteboard interaction, rather than retaini
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 - [NSPasteboardReading](nspasteboardreading.md)
 - [NSPasteboardWriting](nspasteboardwriting.md)
 

@@ -19,9 +19,9 @@ static let MPMoviePlayerWillExitFullscreen: NSNotification.Name
 
 #### Discussion
 
-The `userInfo` dictionary contains keys whose values describe the transition animation used to exit full-screen mode. See [`Fullscreen notification keys`](https://developer.apple.com/documentation/MediaPlayer/fullscreen-notification-keys).
+The `userInfo` dictionary contains keys whose values describe the transition animation used to exit full-screen mode. See [`Fullscreen notification keys`](https://developer.apple.com/documentation/mediaplayer/fullscreen-notification-keys).
 
-A movie player can exit full screen mode programmatically (see the [`setFullscreen(_:animated:)`](https://developer.apple.com/documentation/MediaPlayer/MPMoviePlayerController/setFullscreen(_:animated:)) method) or by user interaction. The movie player whose state has changed is available as the object associated with the notification.
+A movie player can exit full screen mode programmatically (see the [`setFullscreen(_:animated:)`](https://developer.apple.com/documentation/mediaplayer/mpmovieplayercontroller/setfullscreen(_:animated:)) method) or by user interaction. The movie player whose state has changed is available as the object associated with the notification.
 
 ## See Also
 

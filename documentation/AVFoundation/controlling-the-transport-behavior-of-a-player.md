@@ -64,7 +64,7 @@ private func observePlayingState() {
 }
 ```
 
-Observe changes to the [`rate`](avplayer/rate.md) property by observing notifications of type [`rateDidChangeNotification`](avplayer/ratedidchangenotification.md). Observing this notification is similar to key-value observing the [`rate`](avplayer/rate.md) property, but provides additional information about the reason for the rate change. Retrieve the reason from the notification’s [`userInfo`](https://developer.apple.com/documentation/Foundation/Notification/userInfo) dictionary using the [`rateDidChangeReasonKey`](avplayer/ratedidchangereasonkey.md) constant:
+Observe changes to the [`rate`](avplayer/rate.md) property by observing notifications of type [`rateDidChangeNotification`](avplayer/ratedidchangenotification.md). Observing this notification is similar to key-value observing the [`rate`](avplayer/rate.md) property, but provides additional information about the reason for the rate change. Retrieve the reason from the notification’s [`userInfo`](https://developer.apple.com/documentation/foundation/notification/userinfo) dictionary using the [`rateDidChangeReasonKey`](avplayer/ratedidchangereasonkey.md) constant:
 
 ```swift
 // Observe changes to the playback rate asynchronously.
@@ -92,7 +92,7 @@ private func observeRateChanges() async {
 
 ##### Seek Through the Media Timeline
 
-You can seek through a media timeline in several ways using the methods of [`AVPlayer`](avplayer.md) and [`AVPlayerItem`](avplayeritem.md). The most common way is to use the player’s [`seek(to:)`](avplayer/seek(to:)-87h2r.md) method, passing it a destination [`CMTime`](https://developer.apple.com/documentation/CoreMedia/CMTime) value. Call this method in an asynchronous context:
+You can seek through a media timeline in several ways using the methods of [`AVPlayer`](avplayer.md) and [`AVPlayerItem`](avplayeritem.md). The most common way is to use the player’s [`seek(to:)`](avplayer/seek(to:)-87h2r.md) method, passing it a destination [`CMTime`](https://developer.apple.com/documentation/coremedia/cmtime) value. Call this method in an asynchronous context:
 
 ```swift
 // Handle time update request from user interface.
@@ -103,7 +103,7 @@ func seek(to timeInterval: TimeInterval) async {
 }
 ```
 
-You can call this method a single time to seek to the location, but you can also call it continuously such as when you use a [`Slider`](https://developer.apple.com/documentation/SwiftUI/Slider) view.
+You can call this method a single time to seek to the location, but you can also call it continuously such as when you use a [`Slider`](https://developer.apple.com/documentation/swiftui/slider) view.
 
 The [`seek(to:)`](avplayer/seek(to:)-87h2r.md) method is a convenient way to quickly seek through your presentation, but it’s tuned for speed rather than precision. This means the actual time to which the player seeks may differ slightly from the time you request. If you need to implement precise seeking behavior, use the [`seek(to:toleranceBefore:toleranceAfter:)`](avplayer/seek(to:tolerancebefore:toleranceafter:).md) method, which lets you indicate the tolerated amount of deviation from your target time (before and after). For example, if you need to provide sample-accurate seeking behavior, specify tolerance values of zero:
 

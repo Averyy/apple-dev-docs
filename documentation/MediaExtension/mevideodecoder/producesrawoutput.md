@@ -16,9 +16,9 @@ optional var producesRAWOutput: Bool { get }
 
 #### Discussion
 
-The extension should implement this property returning [`YES`](https://developer.apple.com/documentation/ObjectiveC/YES) if the decoder produces RAW output which requires the use of an [`MERAWProcessor`](merawprocessor.md) for post-decode processing to produce renderable output.
+The extension should implement this property returning [`YES`](https://developer.apple.com/documentation/objectivec/yes) if the decoder produces RAW output which requires the use of an [`MERAWProcessor`](merawprocessor.md) for post-decode processing to produce renderable output.
 
-This optional property is queried on the extension when a Video Toolbox client queries the [`kVTDecompressionPropertyKey_DecoderProducesRAWOutput`](https://developer.apple.com/documentation/VideoToolbox/kVTDecompressionPropertyKey_DecoderProducesRAWOutput) property on the hosting [`VTDecompressionSession`](https://developer.apple.com/documentation/VideoToolbox/VTDecompressionSession).
+This optional property is queried on the extension when a Video Toolbox client queries the [`kVTDecompressionPropertyKey_DecoderProducesRAWOutput`](https://developer.apple.com/documentation/videotoolbox/kvtdecompressionpropertykey_decoderproducesrawoutput) property on the hosting [`VTDecompressionSession`](https://developer.apple.com/documentation/videotoolbox/vtdecompressionsession).
 
 ## See Also
 

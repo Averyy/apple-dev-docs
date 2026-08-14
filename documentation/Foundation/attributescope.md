@@ -51,7 +51,7 @@ This allows callers to use a syntax like `myAttributedString.foregroundColor = .
 ### Inherits From
 - [DecodingConfigurationProviding](decodingconfigurationproviding.md)
 - [EncodingConfigurationProviding](encodingconfigurationproviding.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 ### Conforming Types
 - [AttributeScopes.AccessibilityAttributes](attributescopes/accessibilityattributes.md)
 - [AttributeScopes.AppKitAttributes](attributescopes/appkitattributes.md)

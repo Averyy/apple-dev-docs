@@ -25,7 +25,7 @@ Core NFC isn’t available for use in app extensions, and it requires a device t
   Read NFC tags with NDEF messages in your app.
 - [Adding Support for Background Tag Reading](adding-support-for-background-tag-reading.md)
   Allow users to scan NFC tags without an app using background tag reading.
-- [NFCReaderUsageDescription](../BundleResources/Information-Property-List/NFCReaderUsageDescription.md)
+- [NFCReaderUsageDescription](../bundleresources/information-property-list/nfcreaderusagedescription.md)
   A message that tells people why the app is requesting access to the device’s NFC hardware.
 ### Reader sessions
 - [class NFCNDEFReaderSession](nfcndefreadersession.md)
@@ -40,7 +40,7 @@ Core NFC isn’t available for use in app extensions, and it requires a device t
   The abstract base class that represents a reader session for detecting NFC tags.
 - [protocol NFCReaderSessionProtocol](nfcreadersessionprotocol.md)
   A general interface for interacting with a reader session.
-- [Near Field Communication Tag Reader Session Formats Entitlement](../BundleResources/Entitlements/com.apple.developer.nfc.readersession.formats.md)
+- [Near Field Communication Tag Reader Session Formats Entitlement](../bundleresources/entitlements/com.apple.developer.nfc.readersession.formats.md)
   The Near Field Communication data formats an app can read.
 ### Tag types
 - [Creating NFC Tags from Your iPhone](creating-nfc-tags-from-your-iphone.md)

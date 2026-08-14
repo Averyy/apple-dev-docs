@@ -26,7 +26,7 @@ An initialized event trigger.
 - `name`: The name of the event trigger.
 - `events`: An array of events that can activate the evaluation of the event trigger. The trigger is evaluated if any one of the events is true.
 - `endEvents`: An array of events that can trigger the end of the scene that this event trigger represents.
-- `recurrences`: Specifies the days of the week to evaluate the trigger. All properties other than [`weekday`](https://developer.apple.com/documentation/Foundation/DateComponents/weekday) on [`DateComponents`](https://developer.apple.com/documentation/Foundation/DateComponents) are ignored.
+- `recurrences`: Specifies the days of the week to evaluate the trigger. All properties other than [`weekday`](https://developer.apple.com/documentation/foundation/datecomponents/weekday) on [`DateComponents`](https://developer.apple.com/documentation/foundation/datecomponents) are ignored.
 - `predicate`: The predicate to test and activate after evaluating the event trigger. Once activated, the event’s scenes execute. If a value isn’t specified the event trigger executes the scene if any of the events activate.
 
 ## See Also

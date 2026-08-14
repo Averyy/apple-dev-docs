@@ -38,7 +38,7 @@ This method should be called as part of the process of establishing the tunnel, 
 ## Parameters
 
 - `tunnelNetworkSettings`: The network settings to use for the tunnel. Pass nil to clear out the network settings for the current tunneling session.
-- `completionHandler`: A block that will be executed when the operation of setting the network settings is complete. If the network settings could not be set due to an error, then the error parameter will be set to an [`NSError`](https://developer.apple.com/documentation/Foundation/NSError) object containing more information about the error. See `NETunnelProviderError` for possible error codes. If the network settings were set successfully then the error parameter will be set to nil.
+- `completionHandler`: A block that will be executed when the operation of setting the network settings is complete. If the network settings could not be set due to an error, then the error parameter will be set to an [`NSError`](https://developer.apple.com/documentation/foundation/nserror) object containing more information about the error. See `NETunnelProviderError` for possible error codes. If the network settings were set successfully then the error parameter will be set to nil.
 
 
 ---

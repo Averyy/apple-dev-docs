@@ -57,7 +57,7 @@ func convolutionRGB7X7(inputImage: CIImage) -> CIImage {
 }
 ```
 
-![Two images arranged horizontally. The left image contains a photo of the Golden Gate Bridge with a clear sky as the background. The right image shows the result of applying a 7 x 7 convolution kernel that highlights edges. Fine detail and noise in the image are highlighted.](https://docs-assets.developer.apple.com/published/e13d156f8eeffbdeaa74cb99335d304f/media-4407333%402x.png)
+![Two images arranged horizontally. The left image contains a photo of the Golden Gate Bridge with a clear sky as the background. The right image shows the result of applying a 7 x 7 convolution kernel that highlights edges. Fine detail and noise in the image are highlighted.](/images/com.apple.coreimage/media-4407333@2x.png)
 
 ## See Also
 

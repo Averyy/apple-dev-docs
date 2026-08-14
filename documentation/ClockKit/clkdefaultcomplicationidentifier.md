@@ -40,7 +40,7 @@ default:
 
 ## See Also
 
-- [Migrating ClockKit complications to WidgetKit](../WidgetKit/Converting-A-ClockKit-App.md)
+- [Migrating ClockKit complications to WidgetKit](../widgetkit/converting-a-clockkit-app.md)
   Leverage WidgetKit’s API to create watchOS complications using SwiftUI.
 - [protocol CLKComplicationDataSource](clkcomplicationdatasource.md)
   A protocol that provides ClockKit with information about your complication.

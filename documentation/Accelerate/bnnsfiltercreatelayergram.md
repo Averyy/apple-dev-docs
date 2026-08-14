@@ -24,7 +24,7 @@ func BNNSFilterCreateLayerGram(_ layer_params: UnsafePointer<BNNSLayerParameters
 
 You use this layer to perform the Gram matrix calculation:
 
-![None](https://docs-assets.developer.apple.com/published/ac968b76ee024dd5523f2d4df3404ffe/media-3562374%402x.png)
+![None](/images/com.apple.accelerate/media-3562374@2x.png)
 
 ## Parameters
 

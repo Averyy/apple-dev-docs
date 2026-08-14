@@ -25,8 +25,8 @@ This function tells Universal Access the frame of the element in focus and the p
 ## Parameters
 
 - `inRect`: The frame of the element in focus, in global 72-dot-per-inch (dpi) coordinates.
-- `inHighlightRect`: The frame of the highlighted part of the element in focus, in global 72 dpi coordinates. If the whole element is in focus, and not just a smaller part of it, pass the   parameter and pass   for  .
-- `inType`: A value of type  .
+- `inHighlightRect`: The frame of the highlighted part of the element in focus, in global 72 dpi coordinates. If the whole element is in focus, and not just a smaller part of it, pass the `inRect` parameter and pass `NULL` for `inHighlightRect`.
+- `inType`: A value of type [`UAZoomChangeFocusType`](uazoomchangefocustype.md).
 
 ## See Also
 

@@ -27,9 +27,9 @@ init(cgImage: CGImage, cgImageFormat: inout vImage_CGImageFormat, pixelFormat: F
 
 #### Discussion
 
-For example, the following code creates a single-channel, 8-bit per pixel buffer from a [`CGImage`](https://developer.apple.com/documentation/CoreGraphics/CGImage) of unknown bit depth.
+For example, the following code creates a single-channel, 8-bit per pixel buffer from a [`CGImage`](https://developer.apple.com/documentation/coregraphics/cgimage) of unknown bit depth.
 
-When you pass a populated `cgImageFormat`, the [`init(cgImage:cgImageFormat:pixelFormat:)`](vimage/pixelbuffer/init(cgimage:cgimageformat:pixelformat:).md) initializer performs the conversion from the [`CGImage`](https://developer.apple.com/documentation/CoreGraphics/CGImage) instance’s format to the [`vImage_CGImageFormat`](vimage_cgimageformat.md) that you specify.
+When you pass a populated `cgImageFormat`, the [`init(cgImage:cgImageFormat:pixelFormat:)`](vimage/pixelbuffer/init(cgimage:cgimageformat:pixelformat:).md) initializer performs the conversion from the [`CGImage`](https://developer.apple.com/documentation/coregraphics/cgimage) instance’s format to the [`vImage_CGImageFormat`](vimage_cgimageformat.md) that you specify.
 
 Note the `bitsPerComponent`, `bitsPerPixel`, `colorSpace`, and `bitmapInfo`.
 
@@ -72,7 +72,7 @@ The following code shows a similar workflow, but it creates a 32-bit per channel
      pixelFormat: pixelFormat)
 ```
 
-If you pass an empty `cgImageFormat`, the [`init(cgImage:cgImageFormat:pixelFormat:)`](vimage/pixelbuffer/init(cgimage:cgimageformat:pixelformat:).md) initializer populates the [`vImage_CGImageFormat`](vimage_cgimageformat.md) with the properties of the [`CGImage`](https://developer.apple.com/documentation/CoreGraphics/CGImage) instance. For example, the following code initializes a pixel buffer from a 8-bit-per-channel, 4-channel RGB image:
+If you pass an empty `cgImageFormat`, the [`init(cgImage:cgImageFormat:pixelFormat:)`](vimage/pixelbuffer/init(cgimage:cgimageformat:pixelformat:).md) initializer populates the [`vImage_CGImageFormat`](vimage_cgimageformat.md) with the properties of the [`CGImage`](https://developer.apple.com/documentation/coregraphics/cgimage) instance. For example, the following code initializes a pixel buffer from a 8-bit-per-channel, 4-channel RGB image:
 
 ```swift
 let cgImage = [ ... ]
@@ -90,7 +90,7 @@ print(cgImageFormat.bitsPerComponent,
       cgImageFormat.colorSpace.takeRetainedValue().model.rawValue)
 ```
 
-> ❗ **Important**:  If you specify a populated [`vImage_CGImageFormat`](vimage_cgimageformat.md), its bits per component and bits per pixel must match those of the buffer’s `pixelFormat`. If you specify an empty [`vImage_CGImageFormat`](vimage_cgimageformat.md), the bits per component and bits per pixel of the [`CGImage`](https://developer.apple.com/documentation/CoreGraphics/CGImage) must match those of the buffer’s `pixelFormat`.
+> ❗ **Important**:  If you specify a populated [`vImage_CGImageFormat`](vimage_cgimageformat.md), its bits per component and bits per pixel must match those of the buffer’s `pixelFormat`. If you specify an empty [`vImage_CGImageFormat`](vimage_cgimageformat.md), the bits per component and bits per pixel of the [`CGImage`](https://developer.apple.com/documentation/coregraphics/cgimage) must match those of the buffer’s `pixelFormat`.
 
 > ❗ **Important**: If you provide a populated `vImage_CGImageFormat` with properties (such as bit-depth, color space, and channel ordering) that are different from those of the `CGImage` instance, vImage uses [`any-to-any conversion`](https://developer.apple.comhttps://developer.apple.com/documentation/accelerate/functions-that-perform-any-to-any-conversion/) as part of the operation. If your app is latency-sensitive, provide either an empty `vImage_CGImageFormat` or a `vImage_CGImageFormat` with properties that match the source image to ensure that the operation avoids the conversion step.
 

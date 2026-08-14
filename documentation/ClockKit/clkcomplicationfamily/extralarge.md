@@ -18,7 +18,7 @@ case extraLarge
 
 The following figure shows the size and location of the extra-large complication.
 
-![Diagram showing the size and position of an extra-large complication.](https://docs-assets.developer.apple.com/published/dcfa544e71e27deb279753671bde2a5f/media-2880712%402x.png)
+![Diagram showing the size and position of an extra-large complication.](/images/com.apple.clockkit/media-2880712@2x.png)
 
 
 ---

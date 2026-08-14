@@ -48,7 +48,7 @@ attachmentStore.streamData(for: myAttachment) { dataChunk, error, done in
 - `attachment`: An attachment associated with an object in the HealthKit store.
 - `dataHandler`: A closure that the system calls repeatedly to return the attachment’s contents. This closure takes the following parameters: - **dataChunk**: A data object that contains the next chunk of the attachment’s contents. If an error occurred, the system sets this property to `nil`.
 - **error**: If an error occurred, this parameter contains information about the error. Otherwise, it’s `nil`.
-- **done**: A Boolean value that indicates whether the transfer is complete. If this is the last `dataChunk`, the system sets this property to [`true`](https://developer.apple.com/documentation/Swift/true).
+- **done**: A Boolean value that indicates whether the transfer is complete. If this is the last `dataChunk`, the system sets this property to [`true`](https://developer.apple.com/documentation/swift/true).
 
 ## See Also
 

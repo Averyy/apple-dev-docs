@@ -25,12 +25,12 @@ struct ExtendedControlEvent
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../Swift/BitwiseCopyable.md)
-- [Sendable](../Swift/Sendable.md)
+- [BitwiseCopyable](../swift/bitwisecopyable.md)
+- [Sendable](../swift/sendable.md)
 
 ## See Also
 
-- [typealias MIDIEndpointRef](../CoreMIDI/MIDIEndpointRef.md)
+- [typealias MIDIEndpointRef](../coremidi/midiendpointref.md)
   A MIDI source or destination an entity owns.
 - [typealias MagicCookieInfo](magiccookieinfo.md)
   A structure holding magic cookie information.

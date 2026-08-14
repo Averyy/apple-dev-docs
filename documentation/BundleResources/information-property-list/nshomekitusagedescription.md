@@ -19,11 +19,11 @@ A message that tells people why the app is requesting access to their HomeKit co
 
 > ❗ **Important**:  This key is required if your app uses APIs that access the user’s HomeKit configuration data.
 
-For more information about using HomeKit in your app, see [`Enabling HomeKit in your app`](https://developer.apple.com/documentation/HomeKit/enabling-homekit-in-your-app).
+For more information about using HomeKit in your app, see [`Enabling HomeKit in your app`](https://developer.apple.com/documentation/homekit/enabling-homekit-in-your-app).
 
 ## See Also
 
-- [Enabling HomeKit in your app](../HomeKit/enabling-homekit-in-your-app.md)
+- [Enabling HomeKit in your app](../homekit/enabling-homekit-in-your-app.md)
   Declare your app’s intention to use HomeKit, and get permission from the user to access home automation accessories.
 
 

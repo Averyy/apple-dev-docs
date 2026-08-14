@@ -22,7 +22,7 @@ let kCTKernAttributeName: CFString
 
 #### Discussion
 
-The value associated with this attribute must be a [`CFNumber`](https://developer.apple.com/documentation/CoreFoundation/CFNumber) float. Default is standard kerning. The kerning attribute indicates how many points the following character should be shifted from its default offset as defined by the current character’s font in points: a positive kern indicates a shift farther away from and a negative kern indicates a shift closer to the current character. If this attribute is not present, standard kerning is used. If this attribute is set to `0.0`, no kerning is done at all.
+The value associated with this attribute must be a [`CFNumber`](https://developer.apple.com/documentation/corefoundation/cfnumber) float. Default is standard kerning. The kerning attribute indicates how many points the following character should be shifted from its default offset as defined by the current character’s font in points: a positive kern indicates a shift farther away from and a negative kern indicates a shift closer to the current character. If this attribute is not present, standard kerning is used. If this attribute is set to `0.0`, no kerning is done at all.
 
 ## See Also
 

@@ -22,7 +22,7 @@ var primitiveRange: NSRange { get set }
 
 #### Discussion
 
-The default value for this property is an [`NSRange`](https://developer.apple.com/documentation/Foundation/NSRange-c.struct) whose location is [`NSNotFound`](https://developer.apple.com/documentation/Foundation/NSNotFound-4qp9h) and length is zero, indicating that, by default, SceneKit renders the entire set of primitives specified by a geometry element’s data buffer.
+The default value for this property is an [`NSRange`](https://developer.apple.com/documentation/foundation/nsrange-c.struct) whose location is [`NSNotFound`](https://developer.apple.com/documentation/foundation/nsnotfound-4qp9h) and length is zero, indicating that, by default, SceneKit renders the entire set of primitives specified by a geometry element’s data buffer.
 
 You can change a geometry without redefining it by choosing to render only a subset of the primitives specified by a geometry element. To do so, set this property to a subrange of primitive indexes.
 

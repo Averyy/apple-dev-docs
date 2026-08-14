@@ -22,7 +22,7 @@ func songs() async throws -> [Song]
 
 #### Discussion
 
-For more information about the MusicKit song object, see [`Song`](https://developer.apple.com/documentation/MusicKit/Song).
+For more information about the MusicKit song object, see [`Song`](https://developer.apple.com/documentation/musickit/song).
 
 
 ---

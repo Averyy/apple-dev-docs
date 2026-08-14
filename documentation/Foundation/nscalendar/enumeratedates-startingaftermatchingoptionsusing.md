@@ -36,7 +36,7 @@ If you do not specify a strict matching option, you must specify one of the foll
 
 For example, if the date “February 29th” does not exist for a particular year, a non-strict match would return “February 28th” of that year instead.
 
-![Given the date “January 1st, 2010” and searching for the next date with month component equal to 2 and day component equal to 29, a strict match returns the date “February 29th, 2012”, whereas a non-strict match returns the date “February 28th, 2010”.](https://docs-assets.developer.apple.com/published/cb4a216c7c1c09c7951e77f858588750/media-2852008%402x.png)
+![Given the date “January 1st, 2010” and searching for the next date with month component equal to 2 and day component equal to 29, a strict match returns the date “February 29th, 2012”, whereas a non-strict match returns the date “February 28th, 2010”.](/images/com.apple.foundation/media-2852008@2x.png)
 
 As another example, if the time “2:37AM” does not exist for a particular day, such as when advancing by an hour at the beginning of Daylight Savings Time, the following is true:
 
@@ -45,7 +45,7 @@ As another example, if the time “2:37AM” does not exist for a particular day
 - If [`matchNextTimePreservingSmallerUnits`](nscalendar/options/matchnexttimepreservingsmallerunits.md) is specified, the date at the time “3:37AM” would be used instead, if that time exists.
 - If [`matchNextTime`](nscalendar/options/matchnexttime.md) is specified, the date at the time “3:00AM” would be used instead, if that time exists.
 
-![Given the date “March 11th, 2012 at 12:00AM UTC” and searching for the next date with hour component equal to 2 and minute component equal to 47, a strict match returns the date “March 12th, 2012 at 2:47AM UTC”, a non-strict match specifying the previous time preserving smaller units returns the date “March 11th, 2012 at 1:47AM UTC”, a non-strict match specifying the next time preserving smaller units returns the date “March 11th, 2012 at 3:47AM UTC”, and a non-strict match specifying the next time returns the date “March 11th, 2012 at 3:00AM UTC”.](https://docs-assets.developer.apple.com/published/e932092cb0fd5c79ba0c94337f19d1ed/media-2852011%402x.png)
+![Given the date “March 11th, 2012 at 12:00AM UTC” and searching for the next date with hour component equal to 2 and minute component equal to 47, a strict match returns the date “March 12th, 2012 at 2:47AM UTC”, a non-strict match specifying the previous time preserving smaller units returns the date “March 11th, 2012 at 1:47AM UTC”, a non-strict match specifying the next time preserving smaller units returns the date “March 11th, 2012 at 3:47AM UTC”, and a non-strict match specifying the next time returns the date “March 11th, 2012 at 3:00AM UTC”.](/images/com.apple.foundation/media-2852011@2x.png)
 
 Matching First or Last Occurrence
 
@@ -59,7 +59,7 @@ There is no option to return middle occurrences of more than two occurrences of 
 
 For example, when Daylight Savings Time ends, clocks are set back by one hour at 2:00AM, such that times between 1:00AM and 1:59AM occur twice that day. The [`matchFirst`](nscalendar/options/matchfirst.md) and [`matchLast`](nscalendar/options/matchlast.md) search options return the first and last occurrence of these times.
 
-![Given the date “November 4th, 2012 at 12:00AM UTC” and searching for the next date with hour component equal to 1 and minute component equal to 19, the match first option returns the first instance of “November 4th, 2012 at 1:19AM UTC”, before Daylight Savings Time ends, and the match first option returns the second instance of “November 4th, 2012 at 1:19AM UTC”, after Daylight Savings Time ends.](https://docs-assets.developer.apple.com/published/b25a32a47433be72d6d65242c123cd99/media-2852012%402x.png)
+![Given the date “November 4th, 2012 at 12:00AM UTC” and searching for the next date with hour component equal to 1 and minute component equal to 19, the match first option returns the first instance of “November 4th, 2012 at 1:19AM UTC”, before Daylight Savings Time ends, and the match first option returns the second instance of “November 4th, 2012 at 1:19AM UTC”, after Daylight Savings Time ends.](/images/com.apple.foundation/media-2852012@2x.png)
 
 Forward & Backward Search
 
@@ -67,7 +67,7 @@ If you specify a backward search option ([`searchBackwards`](nscalendar/options/
 
 For example, given a date with a time of “5:00AM” when searching for a minute component equal to 30, a forward search returns the time “5:30AM” and a backward search returns “4:30AM”.
 
-![Given the date “July 18th, 2012 at 5:00AM UTC” and searching for a minute component equal to 30, a forward search returns “July 18th, 2012 at 5:30AM UTC” and a backward search returns “July 18th, 2012 at 4:30AM UTC”.](https://docs-assets.developer.apple.com/published/ab4d16f9cc06400cbf4279d3719339f4/media-2852013%402x.png)
+![Given the date “July 18th, 2012 at 5:00AM UTC” and searching for a minute component equal to 30, a forward search returns “July 18th, 2012 at 5:30AM UTC” and a backward search returns “July 18th, 2012 at 4:30AM UTC”.](/images/com.apple.foundation/media-2852013@2x.png)
 
 ## Parameters
 
@@ -76,7 +76,7 @@ For example, given a date with a time of “5:00AM” when searching for a minut
 - `opts`: Options for the enumeration. For possible values, see [`NSCalendar.Options`](nscalendar/options.md). For usage, see *Discussion* below.
 - `block`: The block to apply to each enumerated date. The block takes three arguments: - **date**: The enumerated date.
 - **idx**: Whether `date` exactly matches the specified date components.
-- **stop**: A reference to a Boolean value. The block can set the value to [`true`](https://developer.apple.com/documentation/Swift/true) to stop further processing of the array. The stop argument is an out-only argument. You should only ever set this Boolean to [`true`](https://developer.apple.com/documentation/Swift/true) within the Block.
+- **stop**: A reference to a Boolean value. The block can set the value to [`true`](https://developer.apple.com/documentation/swift/true) to stop further processing of the array. The stop argument is an out-only argument. You should only ever set this Boolean to [`true`](https://developer.apple.com/documentation/swift/true) within the Block.
 
 ## See Also
 

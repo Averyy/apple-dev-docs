@@ -7,7 +7,6 @@ An asynchronous sequence of critical message state notifications.
 
 **Availability**:
 - iOS 26.0+
-- iPadOS 26.0+
 
 ## Declaration
 
@@ -17,7 +16,7 @@ final var criticalMessageStateNotifications: some AsyncSequence<SMSService.Criti
 
 #### Discussion
 
-This sequence tracks messages sent with the Critical Messaging API, as described in [`Sending SMS messages from an app`](https://developer.apple.com/documentation/Messages/critical-messaging-api).
+This sequence tracks messages sent with the Critical Messaging API, as described in [`Sending SMS messages from an app`](https://developer.apple.com/documentation/messages/critical-messaging-api).
 
 ## See Also
 

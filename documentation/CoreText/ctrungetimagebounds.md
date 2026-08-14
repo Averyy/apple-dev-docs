@@ -22,7 +22,7 @@ func CTRunGetImageBounds(_ run: CTRun, _ context: CGContext?, _ range: CFRange) 
 
 #### Return Value
 
-A rectangle that tightly encloses the paths of the run’s glyphs, or, if `run`, `context`, or `range` is invalid, [`CGRectNull`](https://developer.apple.com/documentation/CoreGraphics/CGRectNull).
+A rectangle that tightly encloses the paths of the run’s glyphs, or, if `run`, `context`, or `range` is invalid, [`CGRectNull`](https://developer.apple.com/documentation/coregraphics/cgrectnull).
 
 ## Parameters
 

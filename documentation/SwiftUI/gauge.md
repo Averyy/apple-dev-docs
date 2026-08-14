@@ -38,7 +38,7 @@ struct SimpleGauge: View {
 }
 ```
 
-![A linear gauge displaying a current value set to 40 percent in a range of 0](https://docs-assets.developer.apple.com/published/294460fde9fad086627bca9bbcea396f/SwiftUI-Gauge-ValueLabelLinear%402x.png)
+![A linear gauge displaying a current value set to 40 percent in a range of 0](/images/com.apple.SwiftUI/SwiftUI-Gauge-ValueLabelLinear@2x.png)
 
 You can make a gauge more descriptive by describing its purpose, showing its current value and its start and end values. This example shows the gauge variant that accepts a range and adds labels using multiple trailing closures describing the current value and the minimum and maximum values of the gauge:
 
@@ -62,7 +62,7 @@ struct LabeledGauge: View {
 }
 ```
 
-![A linear gauge describing heart-rate in beats per minute with its](https://docs-assets.developer.apple.com/published/09257b8f46cdf18f05c7a7399ce3baa2/SwiftUI-Gauge-Label-CurrentValueLinear%402x.png)
+![A linear gauge describing heart-rate in beats per minute with its](/images/com.apple.SwiftUI/SwiftUI-Gauge-Label-CurrentValueLinear@2x.png)
 
 As shown above, the default style for gauges is a linear, continuous bar with an indicator showing the current value, and optional labels describing the gauge’s purpose, current, minimum, and maximum values.
 
@@ -91,7 +91,7 @@ struct LabeledGauge: View {
 }
 ```
 
-![A circular gauge describing heart rate in beats per minute with its](https://docs-assets.developer.apple.com/published/f36677c0da94cb4224de1633c1367dd7/SwiftUI-Gauge-LabeledCircular%402x.png)
+![A circular gauge describing heart rate in beats per minute with its](/images/com.apple.SwiftUI/SwiftUI-Gauge-LabeledCircular@2x.png)
 
 To style elements of a gauge’s presentation, you apply view modifiers to the elements that you want to change. In the example below, the current value, minimum and maximum value labels have custom colors:
 
@@ -120,7 +120,7 @@ struct StyledGauge: View {
 }
 ```
 
-![A circular gauge describing heart rate in beats per minute with its](https://docs-assets.developer.apple.com/published/6edbf40c27a1190d9418a36ad84d488c/SwiftUI-Gauge-CircularStyled%402x.png)
+![A circular gauge describing heart rate in beats per minute with its](/images/com.apple.SwiftUI/SwiftUI-Gauge-CircularStyled@2x.png)
 
 You can further style a gauge’s appearance by supplying a tint color or a gradient to the style’s initializer. The following example shows the effect of a gradient in the initialization of a [`CircularGaugeStyle`](circulargaugestyle.md) gauge with a colorful gradient across the length of the gauge:
 
@@ -150,7 +150,7 @@ struct StyledGauge: View {
 }
 ```
 
-![A screenshot showing a circular gauge with a gradient](https://docs-assets.developer.apple.com/published/55bce9efa228cc603553c2355f36335b/SwiftUI-Gauge-Circular-Gradient%402x.png)
+![A screenshot showing a circular gauge with a gradient](/images/com.apple.SwiftUI/SwiftUI-Gauge-Circular-Gradient@2x.png)
 
 ## Topics
 

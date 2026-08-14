@@ -19,7 +19,7 @@ An entitlement that restricts access to system notifications to enhance the secu
 
 To enhance the security of a browser app you develop that uses an alternative browser engine, add this entitlement to the app’s web-content extension with a value of `true`.
 
-For more information, see [`Limiting resource access in web content extensions`](https://developer.apple.com/documentation/BrowserEngineKit/limiting-resource-access-in-content-extensions).
+For more information, see [`Limiting resource access in web content extensions`](https://developer.apple.com/documentation/browserenginekit/limiting-resource-access-in-content-extensions).
 
 ## See Also
 

@@ -36,9 +36,9 @@ Add enough information to your user activity object to recreate the activity in 
 
 Create user activity objects in response to specific interactions with your app’s interface. When someone performs a significant task in your interface, create a user activity object and call its [`becomeCurrent()`](nsuseractivity/becomecurrent().md) method to make it your app’s current activity. For example, you might do this when someone opens a new document in your app. Handoff and other features operate on the current activity and use it as context for their behavior. In the case of opening a document, Handoff indicates that the person can open that document on their other devices. When the person stops the activity in your interface, or the activity is no longer relevant, call the [`resignCurrent()`](nsuseractivity/resigncurrent().md) or [`invalidate()`](nsuseractivity/invalidate().md) method, or create a new user activity object and make it the current one.
 
-For features like Handoff to work, the system needs to know which types of activities it can deliver to your app. To specify the activity types you support, add the [`NSUserActivityTypes`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSUserActivityTypes) key to your app’s `Info.plist` file. Configure this key using the Info tab of your Xcode project, and set its value to an array of strings. For each string, specify one of the activity types you use to create your `NSUserActivity` objects. You can specify all of your app’s activity types or only a subset.
+For features like Handoff to work, the system needs to know which types of activities it can deliver to your app. To specify the activity types you support, add the [`NSUserActivityTypes`](https://developer.apple.com/documentation/bundleresources/information-property-list/nsuseractivitytypes) key to your app’s `Info.plist` file. Configure this key using the Info tab of your Xcode project, and set its value to an array of strings. For each string, specify one of the activity types you use to create your `NSUserActivity` objects. You can specify all of your app’s activity types or only a subset.
 
-System features like Siri and Apple Intelligence use contextual information from your app’s interface to improve their responses. Assign [`AppEntity`](https://developer.apple.com/documentation/AppIntents/AppEntity) types directly to your views when possible, but you can also assign a user activity object to your view as needed. In SwiftUI, create and configure this user activity object using the [`userActivity(_:element:_:)`](https://developer.apple.com/documentation/SwiftUI/View/userActivity(_:element:_:)) modifier. In UIKit and AppKit, assign the user activity object to the [`userActivity`](https://developer.apple.com/documentation/UIKit/UIResponder/userActivity) property of a responder object in your interface. Use the [`appEntityIdentifier`](nsuseractivity/appentityidentifier.md) property of your user activity object to provide the entity for your view.
+System features like Siri and Apple Intelligence use contextual information from your app’s interface to improve their responses. Assign [`AppEntity`](https://developer.apple.com/documentation/appintents/appentity) types directly to your views when possible, but you can also assign a user activity object to your view as needed. In SwiftUI, create and configure this user activity object using the [`userActivity(_:element:_:)`](https://developer.apple.com/documentation/swiftui/view/useractivity(_:element:_:)) modifier. In UIKit and AppKit, assign the user activity object to the [`userActivity`](https://developer.apple.com/documentation/uikit/uiresponder/useractivity) property of a responder object in your interface. Use the [`appEntityIdentifier`](nsuseractivity/appentityidentifier.md) property of your user activity object to provide the entity for your view.
 
 ## Topics
 
@@ -88,7 +88,7 @@ System features like Siri and Apple Intelligence use contextual information from
   The URL of the webpage that linked to the webpage URL.
 - [let NSUserActivityTypeBrowsingWeb: String](nsuseractivitytypebrowsingweb.md)
   An activity that continues from Handoff or a universal link.
-- [let TVUserActivityTypeBrowsingChannelGuide: String](../TVServices/TVUserActivityTypeBrowsingChannelGuide.md)
+- [let TVUserActivityTypeBrowsingChannelGuide: String](../tvservices/tvuseractivitytypebrowsingchannelguide.md)
   An activity for viewing your app’s channel guide.
 ### Specifying activity-related data
 - [var userInfo: [AnyHashable : Any]?](nsuseractivity/userinfo.md)
@@ -165,19 +165,19 @@ System features like Siri and Apple Intelligence use contextual information from
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [AppEntityAnnotatable](../AppIntents/AppEntityAnnotatable.md)
-- [CVarArg](../Swift/CVarArg.md)
-- [Copyable](../Swift/Copyable.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Escapable](../Swift/Escapable.md)
-- [Hashable](../Swift/Hashable.md)
+- [AppEntityAnnotatable](../appintents/appentityannotatable.md)
+- [CVarArg](../swift/cvararg.md)
+- [Copyable](../swift/copyable.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Escapable](../swift/escapable.md)
+- [Hashable](../swift/hashable.md)
 - [NSItemProviderReading](nsitemproviderreading.md)
 - [NSItemProviderWriting](nsitemproviderwriting.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

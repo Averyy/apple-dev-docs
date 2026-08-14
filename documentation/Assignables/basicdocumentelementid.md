@@ -20,11 +20,11 @@ struct BasicDocumentElementID<Element> where Element : DocumentElement
 ## Relationships
 
 ### Conforms To
-- [Decodable](../Swift/Decodable.md)
+- [Decodable](../swift/decodable.md)
 - [DocumentElementID](documentelementid.md)
-- [Encodable](../Swift/Encodable.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
+- [Encodable](../swift/encodable.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
 
 ## See Also
 

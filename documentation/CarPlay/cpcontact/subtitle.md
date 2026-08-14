@@ -20,7 +20,7 @@ var subtitle: String? { get set }
 
 Use this property to display secondary information about the contact. For example, their job title or email address.
 
-The default value is [`nil`](https://developer.apple.com/documentation/ObjectiveC/nil-227m0).
+The default value is [`nil`](https://developer.apple.com/documentation/objectivec/nil-227m0).
 
 ## See Also
 

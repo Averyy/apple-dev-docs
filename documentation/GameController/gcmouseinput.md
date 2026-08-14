@@ -29,7 +29,7 @@ This profile supports a mouse with the following features:
 - An optional middle button
 - An optional set of auxiliary buttons
 
-This profile provides only raw mouse movement delta values. For the cursor position at a specific time, use the [`UIHoverGestureRecognizer`](https://developer.apple.com/documentation/UIKit/UIHoverGestureRecognizer) class and the `NSEvent` [`mouseLocation`](https://developer.apple.com/documentation/AppKit/NSEvent/mouseLocation) method.
+This profile provides only raw mouse movement delta values. For the cursor position at a specific time, use the [`UIHoverGestureRecognizer`](https://developer.apple.com/documentation/uikit/uihovergesturerecognizer) class and the `NSEvent` [`mouseLocation`](https://developer.apple.com/documentation/appkit/nsevent/mouselocation) method.
 
 ## Topics
 
@@ -56,12 +56,12 @@ This profile provides only raw mouse movement delta values. For the cursor posit
 ### Inherits From
 - [GCPhysicalInputProfile](gcphysicalinputprofile.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

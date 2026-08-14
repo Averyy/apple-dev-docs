@@ -16,7 +16,7 @@ func SecKeyDeriveFromPassword(_ password: CFString, _ parameters: CFDictionary, 
 
 #### Return Value
 
-The derived key object, or `NULL` on error. In Objective-C, call the [`CFRelease`](https://developer.apple.com/documentation/CoreFoundation/CFRelease) function to free the key’s memory when you are done with it.
+The derived key object, or `NULL` on error. In Objective-C, call the [`CFRelease`](https://developer.apple.com/documentation/corefoundation/cfrelease) function to free the key’s memory when you are done with it.
 
 #### Discussion
 
@@ -38,7 +38,7 @@ If zero, this defaults to [`kSecAttrPRFHmacAlgSHA1`](ksecattrprfhmacalgsha1.md).
 
 - `password`: The password from which the key should be derived.
 - `parameters`: A set of parameters for deriving the password.
-- `error`: A pointer to a [`CFError`](https://developer.apple.com/documentation/CoreFoundation/CFError) variable where an error object is stored upon failure. If not `NULL`, the caller is responsible for checking this variable and releasing the resulting object if it exists.
+- `error`: A pointer to a [`CFError`](https://developer.apple.com/documentation/corefoundation/cferror) variable where an error object is stored upon failure. If not `NULL`, the caller is responsible for checking this variable and releasing the resulting object if it exists.
 
 
 ---

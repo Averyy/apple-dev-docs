@@ -23,7 +23,7 @@ A pseudo-random half-precision float in the range [0.0, 1.0].
 
 This function generates a random value in the range [0.0, 1.0] using half-precision floating-point format and the provided seed. The seed is not modified, allowing for reproducible random number generation.
 
-> **Note**: ![Graph](https://docs-assets.developer.apple.com/published/a82de8bdc1fa7c149fc2e5c52aa53d5d/random__half_01_using.svg)
+> **Note**: ![Graph](/images/com.apple.computegraph/random__half_01_using.svg)
 
 ## Parameters
 

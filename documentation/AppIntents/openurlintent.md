@@ -26,7 +26,7 @@ This app intent uses your app’s existing universal link support to open the sp
 
 The system automatically brings your app to the foreground to run an app intent of this type. If your app intent adopts the [`TargetContentProvidingIntent`](targetcontentprovidingintent.md) or [`UISceneAppIntent`](uisceneappintent.md) protocol, the system directs the app intent to one of your app’s scenes first so you can configure the scene’s views. If your app intent type doesn’t support these protocols, use the [`perform()`](appintent/perform().md) method to update your app’s interface.
 
-For information about how to adopt universal links in your app, see [`Allowing apps and websites to link to your content`](https://developer.apple.com/documentation/Xcode/allowing-apps-and-websites-to-link-to-your-content).
+For information about how to adopt universal links in your app, see [`Allowing apps and websites to link to your content`](https://developer.apple.com/documentation/xcode/allowing-apps-and-websites-to-link-to-your-content).
 
 ## Topics
 
@@ -47,8 +47,8 @@ For information about how to adopt universal links in your app, see [`Allowing a
 ### Conforms To
 - [AppIntent](appintent.md)
 - [PersistentlyIdentifiable](persistentlyidentifiable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 - [SystemIntent](systemintent.md)
 - [URLRepresentableIntent](urlrepresentableintent.md)
 

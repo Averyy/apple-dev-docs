@@ -25,9 +25,9 @@ This function returns the description of the first matching record found in the 
 
 ## Parameters
 
-- `dictionary`: This parameter is reserved for future use, so pass  . Dictionary Services searches in all active dictionaries.
+- `dictionary`: This parameter is reserved for future use, so pass `NULL`. Dictionary Services searches in all active dictionaries.
 - `textString`: Text that contains the word or phrase to look up.
-- `range`: If the   parameter contains the word or phrase, but does not specify it exactly, then pass the range returned by the function  .
+- `range`: A range that specifies the location of the word or phrase in the `textString` parameter. If text string exactly specifies the word or phrase that you want to look up, you can pass the range of the text string. For example, for the word `make`, you would pass (`0`,`4`) to specify the range. If the `textString` parameter contains the word or phrase, but does not specify it exactly, then pass the range returned by the function [`DCSGetTermRangeInString(_:_:_:)`](1450556-dcsgettermrangeinstring.md).
 
 
 ---

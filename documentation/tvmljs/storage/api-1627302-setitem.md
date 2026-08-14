@@ -25,8 +25,8 @@ The `setItem` function first checks whether the given key already exists in the 
 
 ## Parameters
 
-- `key`: A   object containing the key associated with the data to be saved.
-- `data`: A   object containing the data to be stored.
+- `key`: A `String` object containing the key associated with the data to be saved.
+- `data`: A `String` object containing the data to be stored.
 
 ## See Also
 

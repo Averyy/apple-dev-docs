@@ -26,7 +26,7 @@ Call this method one or more times to provide data to the hash function in block
 
 ## Parameters
 
-- `data`: The next block of data for the ongoing digest calculation. You can provide this as any type that conforms to [`DataProtocol`](https://developer.apple.com/documentation/Foundation/DataProtocol), like [`Data`](https://developer.apple.com/documentation/Foundation/Data) or an array of [`UInt8`](https://developer.apple.com/documentation/Swift/UInt8) instances.
+- `data`: The next block of data for the ongoing digest calculation. You can provide this as any type that conforms to [`DataProtocol`](https://developer.apple.com/documentation/foundation/dataprotocol), like [`Data`](https://developer.apple.com/documentation/foundation/data) or an array of [`UInt8`](https://developer.apple.com/documentation/swift/uint8) instances.
 
 ## See Also
 

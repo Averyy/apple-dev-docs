@@ -28,8 +28,8 @@ If you write a printing dialog extension for your application that stores data i
 
 - `pageFormat`: The page format object that contains your extended data.
 - `dataID`: A 4-character code that identifies your data. This is typically your application’s creator code. If your creator code is outside the ASCII 7-bit character range 0x20–0x7F, you need to use a different 4-character code.
-- `size`: A pointer to a value that specifies the size of the buffer you have allocated for the extended page format data. On return, this variable contains the number of bytes read into the buffer or the size of the extended data. You can pass the constant   if you do not need this information. (See   for more information.)
-- `extendedData`: A pointer to a buffer to receive the extended data. Pass the constant   if you do not want to read the data. (See   for more information.)
+- `size`: A pointer to a value that specifies the size of the buffer you have allocated for the extended page format data. On return, this variable contains the number of bytes read into the buffer or the size of the extended data. You can pass the constant `kPMDontWantSize` if you do not need this information. (See [`Data Not Wanted Constants`](core_printing/data_not_wanted_constants.md) for more information.)
+- `extendedData`: A pointer to a buffer to receive the extended data. Pass the constant `kPMDontWantData` if you do not want to read the data. (See [`Data Not Wanted Constants`](core_printing/data_not_wanted_constants.md) for more information.)
 
 ## See Also
 

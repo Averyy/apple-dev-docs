@@ -34,10 +34,10 @@ struct Rows
 ## Relationships
 
 ### Conforms To
-- [BidirectionalCollection](../Swift/BidirectionalCollection.md)
-- [Collection](../Swift/Collection.md)
-- [MutableCollection](../Swift/MutableCollection.md)
-- [Sequence](../Swift/Sequence.md)
+- [BidirectionalCollection](../swift/bidirectionalcollection.md)
+- [Collection](../swift/collection.md)
+- [MutableCollection](../swift/mutablecollection.md)
+- [Sequence](../swift/sequence.md)
 
 ## See Also
 

@@ -10,7 +10,7 @@ Security key authentication supports physical security devices for authenticatio
 
 Take special care when using physical devices for authentication. If the user loses the device or someone steals it, there is no way to perform authentication with associated services. Have a backup strategy in place for such events.
 
-> ❗ **Important**:  You must have an associated domain with the `webcredentials` service type when making a registration or assertion request; otherwise, the request returns an error. See [`Supporting associated domains`](https://developer.apple.com/documentation/Xcode/supporting-associated-domains) for more information.__
+> ❗ **Important**:  You must have an associated domain with the `webcredentials` service type when making a registration or assertion request; otherwise, the request returns an error. See [`Supporting associated domains`](https://developer.apple.com/documentation/xcode/supporting-associated-domains) for more information.__
 
 ##### Register a New Account on a Service
 

@@ -19,7 +19,7 @@ class let touchBarPauseTemplateName: String
 
 #### Discussion
 
-![Template image for pause](https://docs-assets.developer.apple.com/published/5a1e4bd75baa3ce0c6666c7dd99afb78/media-2793535%402x.png)
+![Template image for pause](/images/com.apple.appkit/media-2793535@2x.png)
 
 Before pausing, store the current location so playback can resume later.
 

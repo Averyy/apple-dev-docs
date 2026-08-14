@@ -23,7 +23,7 @@ class VZVirtualMachineConfiguration
 
 Use a [`VZVirtualMachineConfiguration`](vzvirtualmachineconfiguration.md) object to configure the environment for a macOS or Linux VM. This configuration object contains information about the VM environment, including the devices that the VM exposes to the guest operating system. For example, use the configuration object to specify the network interfaces and storage devices that the operating system may access. For more information on the devices that macOS and Linux guests can support, see the Devices section on the [`Virtualization`](Virtualization.md) framework page.
 
-You create and configure [`VZVirtualMachineConfiguration`](vzvirtualmachineconfiguration.md) objects directly. After validating the configuration object, use it to initialize the [`VZVirtualMachine`](vzvirtualmachine.md) object that manages the virtual environment. The smallest valid configuration includes a value for the [`bootLoader`](vzvirtualmachineconfiguration/bootloader.md) property; you can also include more devices in the configuration depending on the needs of your app, such as graphics devices, shared directories, and so on. When you finish configuring the object, call the [`validate()`](vzvirtualmachineconfiguration/validate().md) method to determine whether a VM can successfully support your configuration. A configuration object is invalid if your app doesn’t have the [`com.apple.security.virtualization`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.security.virtualization) entitlement.
+You create and configure [`VZVirtualMachineConfiguration`](vzvirtualmachineconfiguration.md) objects directly. After validating the configuration object, use it to initialize the [`VZVirtualMachine`](vzvirtualmachine.md) object that manages the virtual environment. The smallest valid configuration includes a value for the [`bootLoader`](vzvirtualmachineconfiguration/bootloader.md) property; you can also include more devices in the configuration depending on the needs of your app, such as graphics devices, shared directories, and so on. When you finish configuring the object, call the [`validate()`](vzvirtualmachineconfiguration/validate().md) method to determine whether a VM can successfully support your configuration. A configuration object is invalid if your app doesn’t have the [`com.apple.security.virtualization`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.security.virtualization) entitlement.
 
 For more information on using `VZVirtualMachineConfiguration`, see [`Installing macOS on a Virtual Machine`](installing-macos-on-a-virtual-machine.md) and [`Creating and Running a Linux Virtual Machine`](creating-and-running-a-linux-virtual-machine.md).
 
@@ -91,15 +91,15 @@ For more information on using `VZVirtualMachineConfiguration`, see [`Installing 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCopying](../Foundation/NSCopying.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCopying](../foundation/nscopying.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

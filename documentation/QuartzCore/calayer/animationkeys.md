@@ -21,7 +21,7 @@ func animationKeys() -> [String]?
 
 #### Return Value
 
-An array of [`NSString`](https://developer.apple.com/documentation/Foundation/NSString) objects identifying the current animations.
+An array of [`NSString`](https://developer.apple.com/documentation/foundation/nsstring) objects identifying the current animations.
 
 #### Discussion
 

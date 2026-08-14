@@ -30,7 +30,7 @@ If the element is already focused, make no changes to the selection. Before retu
 
 - `interaction`: The interaction requesting to focus an element.
 - `elementIdentifier`: The identifier of the element that should receive focus.
-- `focusReferencePoint`: A [`CGPoint`](https://developer.apple.com/documentation/CoreFoundation/CGPoint) inside the element’s view.
+- `focusReferencePoint`: A [`CGPoint`](https://developer.apple.com/documentation/corefoundation/cgpoint) inside the element’s view.
 - `completion`: A completion handler that you must call, either synchronously or asynchronously. On success, the first parameter should be the text input that became first responder and that handles text operations for this element. On failure, call the completion with a `nil` parameter.
 
 ## See Also

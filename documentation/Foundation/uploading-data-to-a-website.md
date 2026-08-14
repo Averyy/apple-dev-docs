@@ -12,7 +12,7 @@ Many apps work with servers that accept uploads of files like images or document
 
 The data to upload can be the contents of a file, a stream, or data, as is the case in the following example.
 
-Many web service endpoints take JSON-formatted data, which you create by using the  [`JSONEncoder`](jsonencoder.md) class on [`Encodable`](https://developer.apple.com/documentation/Swift/Encodable) types like arrays and dictionaries. As shown in the following example, you can declare a structure that conforms to [`Codable`](https://developer.apple.com/documentation/Swift/Codable), create an instance of this type, and use [`JSONEncoder`](jsonencoder.md) to encode the instance to JSON data for upload.
+Many web service endpoints take JSON-formatted data, which you create by using the  [`JSONEncoder`](jsonencoder.md) class on [`Encodable`](https://developer.apple.com/documentation/swift/encodable) types like arrays and dictionaries. As shown in the following example, you can declare a structure that conforms to [`Codable`](https://developer.apple.com/documentation/swift/codable), create an instance of this type, and use [`JSONEncoder`](jsonencoder.md) to encode the instance to JSON data for upload.
 
 Preparing JSON data for upload
 

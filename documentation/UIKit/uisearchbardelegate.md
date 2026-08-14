@@ -56,7 +56,7 @@ A [`UISearchBar`](uisearchbar.md) object provides the user interface for a searc
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 - [UIBarPositioningDelegate](uibarpositioningdelegate.md)
 
 ## See Also

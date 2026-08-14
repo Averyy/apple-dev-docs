@@ -7,7 +7,6 @@ The client is composing a message.
 
 **Availability**:
 - iOS 26.0+
-- iPadOS 26.0+
 
 ## Declaration
 

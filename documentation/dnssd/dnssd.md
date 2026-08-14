@@ -27,9 +27,9 @@ In support of these main tasks, this API can directly assist you in performing t
 - Enumerating domains (finding recommended service domains).
 - Updating registrations (changing your DNS registration data dynamically).
 
-Most apps shouldn’t use this API, and instead should use a higher-level service discovery API like [`NetService`](https://developer.apple.com/documentation/Foundation/NetService). Use dnssd if you’re writing BSD-style applications or cross-platform programs that don’t need to link to higher-level frameworks. You can also use dnssd if you need specific lower-level functionality exposed by this API.
+Most apps shouldn’t use this API, and instead should use a higher-level service discovery API like [`NetService`](https://developer.apple.com/documentation/foundation/netservice). Use dnssd if you’re writing BSD-style applications or cross-platform programs that don’t need to link to higher-level frameworks. You can also use dnssd if you need specific lower-level functionality exposed by this API.
 
-> ❗ **Important**:  Apps that use the local network must provide a usage string in their `Info.plist` file with the key [`NSLocalNetworkUsageDescription`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSLocalNetworkUsageDescription). Apps that use [`Bonjour`](https://developer.apple.com/documentation/Foundation/bonjour) must also declare the services they browse, using the [`NSBonjourServices`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSBonjourServices) key.
+> ❗ **Important**:  Apps that use the local network must provide a usage string in their `Info.plist` file with the key [`NSLocalNetworkUsageDescription`](https://developer.apple.com/documentation/bundleresources/information-property-list/nslocalnetworkusagedescription). Apps that use [`Bonjour`](https://developer.apple.com/documentation/foundation/bonjour) must also declare the services they browse, using the [`NSBonjourServices`](https://developer.apple.com/documentation/bundleresources/information-property-list/nsbonjourservices) key.
 
 ## Topics
 

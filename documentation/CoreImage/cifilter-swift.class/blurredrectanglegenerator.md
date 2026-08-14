@@ -29,7 +29,7 @@ Creates a [`CIImage`](ciimage.md) containing a blurred rectangle. The resulting 
 
 The blurred rectangle filter uses the following properties:
 
-- **`extent`**: A [`CGRect`](https://developer.apple.com/documentation/CoreFoundation/CGRect) that defines the extent of the effect.
+- **`extent`**: A [`CGRect`](https://developer.apple.com/documentation/corefoundation/cgrect) that defines the extent of the effect.
 - **`color`**: A [`CIColor`](cicolor.md) specifying the color of the rectangle.
 - **`sigma`**: A `float` specifying the sigma for the Gaussian blur.
 
@@ -45,7 +45,7 @@ func blurredRectangle() -> CIImage {
 }
 ```
 
-![An image of a blurred rectangle with an aspect ratio of 2 to 1.](https://docs-assets.developer.apple.com/published/257daf45e9747156fa4c45de515c9085/media-4407302%402x.png)
+![An image of a blurred rectangle with an aspect ratio of 2 to 1.](/images/com.apple.coreimage/media-4407302@2x.png)
 
 ## See Also
 

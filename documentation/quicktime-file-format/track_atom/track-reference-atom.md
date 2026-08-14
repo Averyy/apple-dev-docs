@@ -7,7 +7,7 @@ An atom that defines relationships between tracks.
 
 #### Overview
 
-See [`Track reference atom ('tref')`](track_reference_atom.md).
+See [`Track reference atom`](track_reference_atom.md).
 
 ## See Also
 

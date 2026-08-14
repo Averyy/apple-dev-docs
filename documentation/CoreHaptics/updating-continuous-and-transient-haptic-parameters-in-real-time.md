@@ -14,7 +14,7 @@ Generate continuous and transient haptic patterns in response to user touch.
 
 This sample, HapticPalette, defines a two-dimensional touch area, where the x-axis varies the haptic pattern’s sharpness, and the y-axis maps to haptic intensity. Use this interface to explore the range of haptic patterns that you can create with Core Haptics. By sliding your finger inside the bounded area, you can vary the parameters of the generated haptic pattern.
 
-![A screenshot of the HapticPalette interface, showing a labeled circle and the meaning of coordinate axes controlling intensity and sharpness.](https://docs-assets.developer.apple.com/published/f2b28fefb582143ef6ad6407305de8f1/HapticPaletteAxes%402x.png)
+![A screenshot of the HapticPalette interface, showing a labeled circle and the meaning of coordinate axes controlling intensity and sharpness.](/images/com.apple.corehaptics/HapticPaletteAxes@2x.png)
 
 > **Note**: HapticPalette requires Xcode 11 or later. Simulator doesn’t support a haptic interface, so build and run this sample on an iPhone 8, 8 Plus, X, XR, XS, or XS Max running iOS 13 or later.
 
@@ -71,7 +71,7 @@ continuousPlayer.completionHandler = { _ in
 }
 ```
 
-The sample app allows you to change the continuous pattern’s intensity and sharpness by dragging your finger inside the region labeled Continuous. This region is a view that translates the touch coordinates into normalized intensity and sharpness values. To enable this behavior, the code attaches a [`UILongPressGestureRecognizer`](https://developer.apple.com/documentation/UIKit/UILongPressGestureRecognizer) to each palette view. When the user begins to drag a finger in the view, the gesture handler maps the touch coordinates to intensity and sharpness values.
+The sample app allows you to change the continuous pattern’s intensity and sharpness by dragging your finger inside the region labeled Continuous. This region is a view that translates the touch coordinates into normalized intensity and sharpness values. To enable this behavior, the code attaches a [`UILongPressGestureRecognizer`](https://developer.apple.com/documentation/uikit/uilongpressgesturerecognizer) to each palette view. When the user begins to drag a finger in the view, the gesture handler maps the touch coordinates to intensity and sharpness values.
 
 ```swift
 // Normalize coordinates to a [0, 1] spectrum.

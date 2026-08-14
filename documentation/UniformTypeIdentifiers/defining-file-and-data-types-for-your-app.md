@@ -23,13 +23,13 @@ Define an imported type if your app uses a type that another app defines, or if 
 
 ##### Choose an Identifier for Your Type
 
-The identifiers you create for your app need to be unique. To ensure uniqueness, start by using a reverse DNS format that begins with `com.companyName`. Although the system supports different type identifier strings with the same specification, the reverse isn’t true. The identifier must contain only alphanumeric characters (`a–z`, `A`–`Z`, and `0`–`9`), hyphens (`-`), and periods (`.`). For example, you might use `com.example.greatAppDocument` or `com.example.greatApp-document` for the [`UTTypeIdentifier`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/UTExportedTypeDeclarations/UTTypeIdentifier) string in the `Info.plist` file.
+The identifiers you create for your app need to be unique. To ensure uniqueness, start by using a reverse DNS format that begins with `com.companyName`. Although the system supports different type identifier strings with the same specification, the reverse isn’t true. The identifier must contain only alphanumeric characters (`a–z`, `A`–`Z`, and `0`–`9`), hyphens (`-`), and periods (`.`). For example, you might use `com.example.greatAppDocument` or `com.example.greatApp-document` for the [`UTTypeIdentifier`](https://developer.apple.com/documentation/bundleresources/information-property-list/utexportedtypedeclarations/uttypeidentifier) string in the `Info.plist` file.
 
 > ❗ **Important**:  Don’t use `public`, `dyn`, or `com.apple` as the prefix in your app’s types. The system reserves `public` for public domain or standard types. The framework reserves the prefix `dyn` for types that it generates dynamically when no other type is available, and the prefix `com.apple` for types that Apple declares.
 
 ##### Define the Conformance
 
-The type declaration can include a list of type identifiers that the type conforms to. For example, if your app uses a proprietary file format based on `JSON`, use `public.json` in the [`UTTypeConformsTo`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/UTExportedTypeDeclarations/UTTypeConformsTo) string in the `Info.plist` file.
+The type declaration can include a list of type identifiers that the type conforms to. For example, if your app uses a proprietary file format based on `JSON`, use `public.json` in the [`UTTypeConformsTo`](https://developer.apple.com/documentation/bundleresources/information-property-list/utexportedtypedeclarations/uttypeconformsto) string in the `Info.plist` file.
 
 When defining a document type, make sure that it conforms to `public.data` or `com.apple.package` to ensure the Finder or Files app can represent it. If your type doesn’t conform to `public.data` or `com.apple.package`, the system can’t tell if a stored item has that type.
 
@@ -41,9 +41,9 @@ If you specify conformance to a nonpublic type, make sure that you also declare 
 
 ##### Define the Description Extensions and Mime Types
 
-In addition to declaring the identifier, the type can define a user-readable string describing the type that you can also localize. For example, you might use `GreatApp Document` for the [`UTTypeDescription`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/UTExportedTypeDeclarations/UTTypeDescription) string in the `Info.plist` file.
+In addition to declaring the identifier, the type can define a user-readable string describing the type that you can also localize. For example, you might use `GreatApp Document` for the [`UTTypeDescription`](https://developer.apple.com/documentation/bundleresources/information-property-list/utexportedtypedeclarations/uttypedescription) string in the `Info.plist` file.
 
-Add a [`UTTypeTagSpecification`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/UTExportedTypeDeclarations/UTTypeTagSpecification) dictionary in the `Info.plist` file to define the file extension or MIME types for your type. For example, add the string `greatappdoc` and `greatapp` into an array, and put it into the [`UTTypeTagSpecification`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/UTExportedTypeDeclarations/UTTypeTagSpecification) dictionary with the key `public.filename-extension` to support both as file extensions for your type.
+Add a [`UTTypeTagSpecification`](https://developer.apple.com/documentation/bundleresources/information-property-list/utexportedtypedeclarations/uttypetagspecification) dictionary in the `Info.plist` file to define the file extension or MIME types for your type. For example, add the string `greatappdoc` and `greatapp` into an array, and put it into the [`UTTypeTagSpecification`](https://developer.apple.com/documentation/bundleresources/information-property-list/utexportedtypedeclarations/uttypetagspecification) dictionary with the key `public.filename-extension` to support both as file extensions for your type.
 
 The following sample shows the exported example type added to an `Info.plist` file:
 
@@ -77,13 +77,13 @@ The following table lists the available property keys that you use in type decla
 
 | Key | Value type | Description |
 | --- | --- | --- |
-| [`UTExportedTypeDeclarations`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/UTExportedTypeDeclarations) | Array of dictionaries | An array of exported type declarations for identifiers your app owns. |
-| [`UTImportedTypeDeclarations`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/UTImportedTypeDeclarations) | Array of dictionaries | An array of imported type declarations, typically types another company or organization declares. |
-| [`UTTypeIdentifier`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/UTExportedTypeDeclarations/UTTypeIdentifier) | String | The identifier for the declared type. This key is required for type declarations. |
-| [`UTTypeTagSpecification`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/UTExportedTypeDeclarations/UTTypeTagSpecification) | Dictionary | A dictionary defining one or more equivalent type identifiers. |
-| [`UTTypeConformsTo`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/UTExportedTypeDeclarations/UTTypeConformsTo) | Array of strings | The types the identifier conforms to. |
-| [`UTTypeDescription`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/UTExportedTypeDeclarations/UTTypeDescription) | String | A user-visible description of the type. You can localize this string by including it in an `InfoPlist.strings` file. |
-| [`UTTypeReferenceURL`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/UTExportedTypeDeclarations/UTTypeReferenceURL) | String | The URL of a reference document describing the type. |
+| [`UTExportedTypeDeclarations`](https://developer.apple.com/documentation/bundleresources/information-property-list/utexportedtypedeclarations) | Array of dictionaries | An array of exported type declarations for identifiers your app owns. |
+| [`UTImportedTypeDeclarations`](https://developer.apple.com/documentation/bundleresources/information-property-list/utimportedtypedeclarations) | Array of dictionaries | An array of imported type declarations, typically types another company or organization declares. |
+| [`UTTypeIdentifier`](https://developer.apple.com/documentation/bundleresources/information-property-list/utexportedtypedeclarations/uttypeidentifier) | String | The identifier for the declared type. This key is required for type declarations. |
+| [`UTTypeTagSpecification`](https://developer.apple.com/documentation/bundleresources/information-property-list/utexportedtypedeclarations/uttypetagspecification) | Dictionary | A dictionary defining one or more equivalent type identifiers. |
+| [`UTTypeConformsTo`](https://developer.apple.com/documentation/bundleresources/information-property-list/utexportedtypedeclarations/uttypeconformsto) | Array of strings | The types the identifier conforms to. |
+| [`UTTypeDescription`](https://developer.apple.com/documentation/bundleresources/information-property-list/utexportedtypedeclarations/uttypedescription) | String | A user-visible description of the type. You can localize this string by including it in an `InfoPlist.strings` file. |
+| [`UTTypeReferenceURL`](https://developer.apple.com/documentation/bundleresources/information-property-list/utexportedtypedeclarations/uttypereferenceurl) | String | The URL of a reference document describing the type. |
 
 If both exported and imported declarations for a type exist, the exported declaration takes precedence over the imported declaration.
 

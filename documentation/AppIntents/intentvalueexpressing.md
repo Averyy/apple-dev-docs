@@ -35,8 +35,8 @@ This protocol forms the foundation of the lazy evaluation mechanism in the inten
 ## Relationships
 
 ### Inherits From
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 ### Inherited By
 - [IntentValueConvertible](intentvalueconvertible.md)
 - [IntentValueConvertibleWrapper](intentvalueconvertiblewrapper.md)

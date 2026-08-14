@@ -31,13 +31,13 @@ You create and configure entities to embody objects that you want to place in th
 
 RealityKit defines a few concrete subclasses of [`Entity`](entity.md) that provide commonly used functionality. For example, you typically start by creating an instance of [`AnchorEntity`](anchorentity.md) to anchor your content, and add the anchor to a scene’s [`anchors`](scene/anchors.md) collection. You might then instantiate a [`ModelEntity`](modelentity.md) to represent a physical object in the scene, and add that as a child entity to the anchor. You can also create custom entities, and add them either to an anchor, or as children of another entity.
 
-![Block diagram showing how entity hierarchies, composed of different kinds](https://docs-assets.developer.apple.com/published/1dd45148e6b513f8be6c51d113384e59/Entity-1%402x.png)
+![Block diagram showing how entity hierarchies, composed of different kinds](/images/com.apple.RealityKit/Entity-1@2x.png)
 
 You can load predefined entities or a hierarchy of entities from your app’s bundle, or from a file on disk, using the methods in [`Stored entities`](stored-entities.md). Alternatively, you can create entities programmatically.
 
 Entities contain components (instances conforming to the [`Component`](component.md) protocol) that provide appearance and behaviors for the entity. For example, the [`Transform`](transform.md) component contains the scale, rotation, and translation information needed to position an entity in space. You store components in the entity’s [`components`](entity/components.md) collection, which can hold exactly one of any component type. It makes sense to have only a single [`Transform`](transform.md) component, one [`ModelComponent`](modelcomponent.md) (specifying the visual appearance of the entity), and so on.
 
-![Diagram showing the components present in the base entity class, as well](https://docs-assets.developer.apple.com/published/49fe65cf08e611d8df83f5f842db7f4a/Entity-2%402x.png)
+![Diagram showing the components present in the base entity class, as well](/images/com.apple.RealityKit/Entity-2@2x.png)
 
 All entities inherit a few common components from the [`Entity`](entity.md) base class: the [`Transform`](transform.md) component for spatial positioning, and [`SynchronizationComponent`](synchronizationcomponent.md), which enables synchronization of the entity among networked peers. Specific types of entities define additional behaviors. For example, the model entity has components for visual appearance ([`ModelComponent`](modelcomponent.md)), collision detection ([`CollisionComponent`](collisioncomponent.md)), and physics simulations ([`PhysicsBodyComponent`](physicsbodycomponent.md) and [`PhysicsMotionComponent`](physicsmotioncomponent.md)).
 
@@ -55,7 +55,7 @@ All entities inherit a few common components from the [`Entity`](entity.md) base
 - [func didClone(from: Entity)](entity/didclone(from:).md)
   Tells a newly cloned entity that cloning is complete.
 ### Loading an entity from a file
-- [Generating procedural textures](../visionOS/generating-procedural-textures-in-visionos.md)
+- [Generating procedural textures](../visionos/generating-procedural-textures-in-visionos.md)
   Display a 3D model that generates procedural textures in a reality view.
 - [protocol Resource](resource.md)
   A shared resource you use to configure a component, like a material, mesh, or texture.
@@ -63,7 +63,7 @@ All entities inherit a few common components from the [`Entity`](entity.md) base
   Retrieve an entity from storage on disk using a synchronous or an asynchronous load operation.
 - [Stored entities](stored-entities.md)
   Manage entities that you store as assets on disk.
-- [Creating USD files for Apple devices](../USD/creating-usd-files-for-apple-devices.md)
+- [Creating USD files for Apple devices](../usd/creating-usd-files-for-apple-devices.md)
   Generate 3D assets that render as expected.
 - [convenience init(contentsOf: URL, withName: String?) async throws](entity/init(contentsof:withname:).md)
   Creates an entity by asynchronously loading it from a file URL.
@@ -262,26 +262,26 @@ All entities inherit a few common components from the [`Entity`](entity.md) base
 - [TriggerVolume](triggervolume.md)
 - [ViewAttachmentEntity](viewattachmententity.md)
 ### Conforms To
-- [CoordinateSpace3D](../Spatial/CoordinateSpace3D.md)
-- [CoordinateSpace3DFloat](../Spatial/CoordinateSpace3DFloat.md)
-- [Copyable](../Swift/Copyable.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Escapable](../Swift/Escapable.md)
+- [CoordinateSpace3D](../spatial/coordinatespace3d.md)
+- [CoordinateSpace3DFloat](../spatial/coordinatespace3dfloat.md)
+- [Copyable](../swift/copyable.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Escapable](../swift/escapable.md)
 - [EventSource](eventsource.md)
 - [HasHierarchy](hashierarchy.md)
 - [HasSynchronization](hassynchronization.md)
 - [HasTransform](hastransform.md)
-- [Hashable](../Swift/Hashable.md)
-- [Identifiable](../Swift/Identifiable.md)
-- [Observable](../Observation/Observable.md)
+- [Hashable](../swift/hashable.md)
+- [Identifiable](../swift/identifiable.md)
+- [Observable](../observation/observable.md)
 - [RealityCoordinateSpace](realitycoordinatespace.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 
-- [Understanding the modular architecture of RealityKit](../visionOS/understanding-the-realitykit-modular-architecture.md)
+- [Understanding the modular architecture of RealityKit](../visionos/understanding-the-realitykit-modular-architecture.md)
   Learn how everything fits together in RealityKit.
 - [Building an immersive experience with RealityKit](building-an-immersive-experience-with-realitykit.md)
   Use systems and postprocessing effects to create a realistic underwater scene.

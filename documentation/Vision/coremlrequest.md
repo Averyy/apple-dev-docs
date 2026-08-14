@@ -22,10 +22,10 @@ struct CoreMLRequest
 
 #### Overview
 
-The results array of a [`Core ML`](https://developer.apple.com/documentation/CoreML)-based image-analysis request contain a different observation type, depending on the kind of `MLModel` object you use:
+The results array of a [`Core ML`](https://developer.apple.com/documentation/coreml)-based image-analysis request contain a different observation type, depending on the kind of `MLModel` object you use:
 
-- If the model predicts a single feature and the model’s [`MLModelDescription`](https://developer.apple.com/documentation/CoreML/MLModelDescription) object has a non-`nil` value for [`predictedFeatureName`](https://developer.apple.com/documentation/CoreML/MLModelDescription/predictedFeatureName), then Vision treats the model as a classifier. The results are [`ClassificationObservation`](classificationobservation.md) objects.
-- If the model’s outputs include at least one output with a feature type of [`MLFeatureType.image`](https://developer.apple.com/documentation/CoreML/MLFeatureType/image), Vision treats that model as an image-to-image model. The results are [`PixelBufferObservation`](pixelbufferobservation.md) objects.
+- If the model predicts a single feature and the model’s [`MLModelDescription`](https://developer.apple.com/documentation/coreml/mlmodeldescription) object has a non-`nil` value for [`predictedFeatureName`](https://developer.apple.com/documentation/coreml/mlmodeldescription/predictedfeaturename), then Vision treats the model as a classifier. The results are [`ClassificationObservation`](classificationobservation.md) objects.
+- If the model’s outputs include at least one output with a feature type of [`MLFeatureType.image`](https://developer.apple.com/documentation/coreml/mlfeaturetype/image), Vision treats that model as an image-to-image model. The results are [`PixelBufferObservation`](pixelbufferobservation.md) objects.
 - Otherwise, Vision treats the model as a general predictor model. The results are [`CoreMLFeatureValueObservation`](coremlfeaturevalueobservation.md) objects.
 
 > **Note**:  Vision forwards all confidence values from Core ML models as-is and doesn’t normalize them to [0, 1].
@@ -79,12 +79,12 @@ The results array of a [`Core ML`](https://developer.apple.com/documentation/Cor
 ## Relationships
 
 ### Conforms To
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
 - [ImageProcessingRequest](imageprocessingrequest.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 - [VisionRequest](visionrequest.md)
 
 

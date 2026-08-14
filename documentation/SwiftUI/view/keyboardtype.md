@@ -30,13 +30,13 @@ TextField("someone@example.com", text: $emailAddress)
     .keyboardType(.emailAddress)
 ```
 
-There are several different kinds of specialized keyboard types available though the [`UIKeyboardType`](https://developer.apple.com/documentation/UIKit/UIKeyboardType) enumeration. To specify the default system keyboard type, use `.default`.
+There are several different kinds of specialized keyboard types available though the [`UIKeyboardType`](https://developer.apple.com/documentation/uikit/uikeyboardtype) enumeration. To specify the default system keyboard type, use `.default`.
 
-![A screenshot showing the use of a specialized keyboard type with a](https://docs-assets.developer.apple.com/published/5a18abb1297dad5b4d3fa9a1616ef97c/SwiftUI-View-keyboardType%402x.png)
+![A screenshot showing the use of a specialized keyboard type with a](/images/com.apple.SwiftUI/SwiftUI-View-keyboardType@2x.png)
 
 ## Parameters
 
-- `type`: One of the keyboard types defined in the [`UIKeyboardType`](https://developer.apple.com/documentation/UIKit/UIKeyboardType) enumeration.
+- `type`: One of the keyboard types defined in the [`UIKeyboardType`](https://developer.apple.com/documentation/uikit/uikeyboardtype) enumeration.
 
 ## See Also
 

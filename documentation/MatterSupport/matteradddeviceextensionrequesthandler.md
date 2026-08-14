@@ -25,7 +25,7 @@ class MatterAddDeviceExtensionRequestHandler
 
 #### Overview
 
-This class facilitates the user interface flow during the setup of a new Matter device. Subclass this class and override its methods, except for `beginRequest(with:)`. The principal class for the app’s extension declared by the [`NSPrincipalClass`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSPrincipalClass) in the extension plist must inherit from this base class.
+This class facilitates the user interface flow during the setup of a new Matter device. Subclass this class and override its methods, except for `beginRequest(with:)`. The principal class for the app’s extension declared by the [`NSPrincipalClass`](https://developer.apple.com/documentation/bundleresources/information-property-list/nsprincipalclass) in the extension plist must inherit from this base class.
 
 If the [`MatterAddDeviceRequest.Topology`](matteradddevicerequest/topology-swift.struct.md) object in the request has two or more homes, the user interface flow displays a picker to allow selection of a home. If the object contains one home, that home is the selected home and the user interface flow doesn’t display a picker. If the object contains no home, then the user interface flow doesn’t display a picker, and any methods take a home parameter receive `nil`.
 
@@ -65,14 +65,14 @@ If the [`MatterAddDeviceRequest.Topology`](matteradddevicerequest/topology-swift
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

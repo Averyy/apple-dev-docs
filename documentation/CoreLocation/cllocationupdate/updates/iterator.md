@@ -27,7 +27,7 @@ Use [`CLLocationUpdate.Updates.Iterator`](cllocationupdate/updates/iterator.md) 
 ## Relationships
 
 ### Conforms To
-- [AsyncIteratorProtocol](../Swift/AsyncIteratorProtocol.md)
+- [AsyncIteratorProtocol](../swift/asynciteratorprotocol.md)
 
 
 ---

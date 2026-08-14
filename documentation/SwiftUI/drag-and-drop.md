@@ -8,11 +8,11 @@ Enable people to move or duplicate items by dragging them from one location to a
 
 Drag and drop offers people a convenient way to move content from one part of your app to another, from one app to another, or to reorder content using an intuitive dragging gesture. Support this feature in your app by adding view modifiers to potential source and destination views within your app’s interface.
 
-![None](https://docs-assets.developer.apple.com/published/389cb904528e698574c83a1ccfbb85d9/drag-and-drop-hero%402x.png)
+![None](/images/com.apple.SwiftUI/drag-and-drop-hero@2x.png)
 
-In your modifiers, provide or accept types that conform to the [`Transferable`](https://developer.apple.com/documentation/CoreTransferable/Transferable) protocol, or that conform to [`NSItemProviderReading`](https://developer.apple.com/documentation/Foundation/NSItemProviderReading) and/or [`NSItemProviderWriting`](https://developer.apple.com/documentation/Foundation/NSItemProviderWriting). In Swift, prefer using transferable items.
+In your modifiers, provide or accept types that conform to the [`Transferable`](https://developer.apple.com/documentation/coretransferable/transferable) protocol, or that conform to [`NSItemProviderReading`](https://developer.apple.com/documentation/foundation/nsitemproviderreading) and/or [`NSItemProviderWriting`](https://developer.apple.com/documentation/foundation/nsitemproviderwriting). In Swift, prefer using transferable items.
 
-For design guidance, see [`Drag and drop`](https://developer.apple.com/design/Human-Interface-Guidelines/drag-and-drop) in the Human Interface Guidelines.
+For design guidance, see [`Drag and drop`](https://developer.apple.com/design/human-interface-guidelines/drag-and-drop) in the Human Interface Guidelines.
 
 ## Topics
 

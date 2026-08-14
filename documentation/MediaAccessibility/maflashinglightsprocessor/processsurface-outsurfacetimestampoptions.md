@@ -25,8 +25,8 @@ An [`MAFlashingLightsProcessor.Result`](maflashinglightsprocessor/result.md) obj
 
 ## Parameters
 
-- `inSurface`: The input [`IOSurfaceRef`](https://developer.apple.com/documentation/IOSurface/IOSurfaceRef) to process for flashing lights.
-- `outSurface`: The output [`IOSurfaceRef`](https://developer.apple.com/documentation/IOSurface/IOSurfaceRef) for storing the mitigated video frame. This is the surface to display to the user.
+- `inSurface`: The input [`IOSurfaceRef`](https://developer.apple.com/documentation/iosurface/iosurfaceref) to process for flashing lights.
+- `outSurface`: The output [`IOSurfaceRef`](https://developer.apple.com/documentation/iosurface/iosurfaceref) for storing the mitigated video frame. This is the surface to display to the user.
 - `timestamp`: The time when your app displays the video frame to the user. The flashing lights processor uses the timestamp to determine the video’s real-time frame rate for the detection algorithm.
 - `options`: An options dictionary for additional parameters.
 

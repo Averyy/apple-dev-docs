@@ -12,15 +12,15 @@ After you enable CloudKit in your app, you create a *schema* for your container 
 
 CloudKit allows you to store your data as [`CKRecord`](ckrecord.md) objects, and relationships between those objects as [`CKRecord.Reference`](ckrecord/reference.md) associations. Separate your data into record types by grouping objects of the same type together. If you’ve already separated your model data into classes, these classes might have the same record type in iCloud. Choose which objects and which of their properties and relationships you want to persist to iCloud.
 
-Each object property that you persist maps to a key-value pair, known as a *field*, within a [`CKRecord`](ckrecord.md). [`CKRecord`](ckrecord.md) supports value types for your fields, such as [`String`](https://developer.apple.com/documentation/Swift/String), or more complex types, such as [`Data`](https://developer.apple.com/documentation/Foundation/Data).
+Each object property that you persist maps to a key-value pair, known as a *field*, within a [`CKRecord`](ckrecord.md). [`CKRecord`](ckrecord.md) supports value types for your fields, such as [`String`](https://developer.apple.com/documentation/swift/string), or more complex types, such as [`Data`](https://developer.apple.com/documentation/foundation/data).
 
 For example, a “to-do item” might have the following record type:
 
 | **Key** | **Type** | **Example value** |
 | --- | --- | --- |
-| title | [`String`](https://developer.apple.com/documentation/Swift/String) | “Get apples” |
-| dueDate | [`Date`](https://developer.apple.com/documentation/Foundation/Date) | October 28, 2019 |
-| isCompleted | [`Bool`](https://developer.apple.com/documentation/Swift/Bool) | false |
+| title | [`String`](https://developer.apple.com/documentation/swift/string) | “Get apples” |
+| dueDate | [`Date`](https://developer.apple.com/documentation/foundation/date) | October 28, 2019 |
+| isCompleted | [`Bool`](https://developer.apple.com/documentation/swift/bool) | false |
 
 For information on additional supported value types, see [`CKRecord`](ckrecord.md).
 
@@ -32,7 +32,7 @@ Create a [`CKRecord`](ckrecord.md) object with a string representing the type of
 let record = CKRecord(recordType: "ToDoItem")
 ```
 
-Then set the record’s fields. Because [`CKRecord`](ckrecord.md) is key-value coding compliant, you can use [`setValuesForKeys(_:)`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class/setValuesForKeys(_:)). The values you set could be from a details sheet that the user fills out.
+Then set the record’s fields. Because [`CKRecord`](ckrecord.md) is key-value coding compliant, you can use [`setValuesForKeys(_:)`](https://developer.apple.com/documentation/objectivec/nsobject-swift.class/setvaluesforkeys(_:)). The values you set could be from a details sheet that the user fills out.
 
 ```swift
 record.setValuesForKeys([

@@ -24,7 +24,7 @@ Subclasses of OSCollection must override this function to properly support deep 
 
 ## Parameters
 
-- `cycleDict`: A dictionary of all of the collections that have been copied so far, to start the copy at the top level pass   for  .
+- `cycleDict`: A dictionary of all of the collections that have been copied so far, to start the copy at the top level pass `NULL` for `cycleDict`.
 
 ## See Also
 

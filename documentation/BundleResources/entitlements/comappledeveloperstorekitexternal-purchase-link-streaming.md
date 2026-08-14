@@ -28,7 +28,7 @@ If your account receives this entitlement, you can add it to your app by opening
 </plist>
 ```
 
-For more information, see [`External Purchase`](https://developer.apple.com/documentation/StoreKit/external-purchase).
+For more information, see [`External Purchase`](https://developer.apple.com/documentation/storekit/external-purchase).
 
 ## See Also
 

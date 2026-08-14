@@ -29,7 +29,7 @@ This method generates an attributed-text image. The effect takes the input strin
 
 The attributed-text image generator filter uses the following properties:
 
-- **`text`**: An [`NSAttributedString`](https://developer.apple.com/documentation/Foundation/NSAttributedString).
+- **`text`**: An [`NSAttributedString`](https://developer.apple.com/documentation/foundation/nsattributedstring).
 - **`scaleFactor`**: A `float` representing the scale of the font to use for the generated text.
 - **padding**: A `float` representing the value for an additional number of pixels to pad around the text’s bounding box.
 
@@ -45,7 +45,7 @@ func attributedTextImage() -> CIImage {
 }
 ```
 
-![An image with the text “Hello World!” in black and a hand wave emoticon in yellow skin tone.](https://docs-assets.developer.apple.com/published/36d1983d2920b9f874cf64d90abb6122/media-3546317%402x.png)
+![An image with the text “Hello World!” in black and a hand wave emoticon in yellow skin tone.](/images/com.apple.coreimage/media-3546317@2x.png)
 
 ## See Also
 

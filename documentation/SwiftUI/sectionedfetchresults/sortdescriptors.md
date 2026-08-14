@@ -23,9 +23,9 @@ The request’s sort descriptors, accessed as value types.
 
 #### Discussion
 
-Set this value to cause the associated [`SectionedFetchRequest`](sectionedfetchrequest.md) to execute a fetch with a new collection of [`SortDescriptor`](https://developer.apple.com/documentation/Foundation/SortDescriptor) instances. The order of entities stored in the results collection may change as a result. Use care to coordinate section and sort updates, as described in [`SectionedFetchRequest.Configuration`](sectionedfetchrequest/configuration.md).
+Set this value to cause the associated [`SectionedFetchRequest`](sectionedfetchrequest.md) to execute a fetch with a new collection of [`SortDescriptor`](https://developer.apple.com/documentation/foundation/sortdescriptor) instances. The order of entities stored in the results collection may change as a result. Use care to coordinate section and sort updates, as described in [`SectionedFetchRequest.Configuration`](sectionedfetchrequest/configuration.md).
 
-If you want to use [`NSSortDescriptor`](https://developer.apple.com/documentation/Foundation/NSSortDescriptor) instances, set [`nsSortDescriptors`](sectionedfetchresults/nssortdescriptors.md) instead.
+If you want to use [`NSSortDescriptor`](https://developer.apple.com/documentation/foundation/nssortdescriptor) instances, set [`nsSortDescriptors`](sectionedfetchresults/nssortdescriptors.md) instead.
 
 ## See Also
 

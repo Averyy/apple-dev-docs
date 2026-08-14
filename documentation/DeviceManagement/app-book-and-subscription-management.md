@@ -17,7 +17,7 @@ Manage apps, books, and subscriptions for your students and employees.
 - [Managing subscriptions](managing-subscriptions.md)
   Administer auto-renewable subscription seats for your organization.
 - [Managing users](managing-users.md)
-  Register and manage users for your organization’s managed location.
+  Register and manage users for your organization’s managed organizational unit.
 - [Setting up and assigning content](setting-up-and-assigning-content.md)
   Distribute purchased licenses to managed users through your device management service.
 ### Common tasks
@@ -44,6 +44,10 @@ Manage apps, books, and subscriptions for your students and employees.
 - [Get Assignments](get-assignments-9wv1e.md)
   Get the set of current assignments for users or devices.
 ### Subscription management
+- [Enable Subscriptions](enable-subscriptions.md)
+  Declare that your device management service supports subscription management.
+- [Disable Subscriptions](disable-subscriptions.md)
+  Declare that your device management service doesn’t support subscription management.
 - [Get Subscriptions](get-subscriptions.md)
   Get the subscriptions that your organization manages.
 - [Get Subscription Assignments](get-subscription-assignments.md)
@@ -94,8 +98,13 @@ Manage apps, books, and subscriptions for your students and employees.
 - [object ManageSubscriptionsRequest](managesubscriptionsrequest.md)
   The request for subscription management.
 - [object ManageSubscriptionAdminsRequest](managesubscriptionadminsrequest.md)
+  The request body for adding or removing subscription administrators.
 - [object ManageSubscriptionAdminsResponse](managesubscriptionadminsresponse.md)
+  The confirmation response that the server returns after adding or removing subscription administrators.
 - [object ResponseSubscriptionAdmin](responsesubscriptionadmin.md)
+  An administrator for a subscription.
+- [object SubscriptionManagementResponse](subscriptionmanagementresponse.md)
+  A confirmation response that reports your device management service’s subscription management support.
 - [object MdmInfo](mdminfo.md)
   Information about the MDM client.
 - [object EventResponse](eventresponse.md)
@@ -103,6 +112,7 @@ Manage apps, books, and subscriptions for your students and employees.
 - [object ErrorResponse](errorresponse.md)
   The response that contains the error that occurs.
 - [object StatusResponse](statusresponse.md)
+  The status of an asynchronous event.
 ### Legacy API
 - [App and book management (Legacy)](app-and-book-management-legacy.md)
   Manage apps and books for your students and employees.

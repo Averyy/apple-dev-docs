@@ -25,7 +25,7 @@ You must call this function between the creation and release of a printing sessi
 ## Parameters
 
 - `printSession`: The printing session in which you want to store application-specific data.
-- `key`: A key that uniquely identifies the data being added. This key is required to retrieve the data using the function  . 
+- `key`: A key that uniquely identifies the data being added. This key is required to retrieve the data using the function [`PMSessionGetDataFromSession(_:_:_:)`](1462964-pmsessiongetdatafromsession.md). 
 - `data`: The data to be stored in the printing session.
 
 ## See Also

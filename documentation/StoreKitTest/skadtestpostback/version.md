@@ -18,7 +18,7 @@ var version: SKAdTestPostbackVersion { get }
 
 #### Discussion
 
-For information about the SKAdNetwork versions, See [`SKAdNetwork release notes`](https://developer.apple.com/documentation/StoreKit/skadnetwork-release-notes).
+For information about the SKAdNetwork versions, See [`SKAdNetwork release notes`](https://developer.apple.com/documentation/storekit/skadnetwork-release-notes).
 
 ## See Also
 

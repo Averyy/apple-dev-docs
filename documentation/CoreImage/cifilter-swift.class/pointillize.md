@@ -45,7 +45,7 @@ func pointillize(inputImage: CIImage) -> CIImage {
 }
 ```
 
-![Two images arranged horizontally. The left image contains a photo of a colorful bunch of flowers. The right image shows the result of applying the pointillize filter. The image is made of small circular points. The color of each point matches up with the color at the location of the dot in the original image.](https://docs-assets.developer.apple.com/published/70e93800225aff907168a23ef0f4d7e6/media-4333706%402x.png)
+![Two images arranged horizontally. The left image contains a photo of a colorful bunch of flowers. The right image shows the result of applying the pointillize filter. The image is made of small circular points. The color of each point matches up with the color at the location of the dot in the original image.](/images/com.apple.coreimage/media-4333706@2x.png)
 
 ## See Also
 

@@ -20,7 +20,7 @@ virtual bool initWithCapacity(
 
 Not for general use. Use the static instance creation method withCapacity instead.
 
-`capacity` must be nonzero. The new dictionary will grow as needed to accommodate more key/object pairs (`CFMutableDictionary`, for which the initial capacity is a hard limit).
+`capacity` must be nonzero. The new dictionary will grow as needed to accommodate more key/object pairs (*unlike*[`CFMutableDictionary`](https://developer.apple.com/documentation/corefoundation/cfmutabledictionary), for which the initial capacity is a hard limit).
 
 ## Parameters
 

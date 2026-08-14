@@ -22,7 +22,7 @@ init(targetedImageURL imageURL: URL, orientation: CGImagePropertyOrientation, op
 ## Parameters
 
 - `imageURL`: The URL of the targeted image.
-- `orientation`: The orientation of the image buffer, based on EXIF specification and superseding other orientation information. The value must be an integer from `1` to `8`; see [`kCGImagePropertyOrientation`](https://developer.apple.com/documentation/ImageIO/kCGImagePropertyOrientation) for details.
+- `orientation`: The orientation of the image buffer, based on EXIF specification and superseding other orientation information. The value must be an integer from `1` to `8`; see [`kCGImagePropertyOrientation`](https://developer.apple.com/documentation/imageio/kcgimagepropertyorientation) for details.
 - `options`: A dictionary with options specifying auxiliary information for the image.
 - `completionHandler`: The block to invoke when the request has finished executing.
 

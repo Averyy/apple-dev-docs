@@ -19,7 +19,7 @@ To view the fields for a record type:
 1. Select Record Types in the CloudKit Database app Schema section for your app’s container.
 2. On the main screen, select a record type. The app displays the field names and the field types for the record type you select. You can then add, modify, and remove unpublished fields.
 
-![A screenshot showing a container’s record types on the schema management page of the CloudKit Database app. The screenshot highlights the Record Types menu item in the Schema section on the left, as well as the selected Record Type in the pane on the right.](https://docs-assets.developer.apple.com/published/4c3a86836ec5d4dfc9926bef5d2e774a/media-3699099%402x.png)
+![A screenshot showing a container’s record types on the schema management page of the CloudKit Database app. The screenshot highlights the Record Types menu item in the Schema section on the left, as well as the selected Record Type in the pane on the right.](/images/com.apple.cloudkit/media-3699099@2x.png)
 
 For more information about just-in-time schema creation, see the [`Save initial records to iCloud`](designing-and-creating-a-cloudkit-database#Save-initial-records-to-iCloud.md) section of [`Designing and Creating a CloudKit Database`](designing-and-creating-a-cloudkit-database.md).
 
@@ -40,7 +40,7 @@ To enable querying:
 7. Choose the field to index.
 8. Click Add. The new index appears in Indexes main panel, and you can search for records using that field.
 
-![A screenshot showing a container’s indexes on the schema management page of the CloudKit Dashboard app. The screenshot highlights the Indexes menu item in the Schema section on the left and the Add Index pane.](https://docs-assets.developer.apple.com/published/cd1d954320f5a477f44893402eb25094/media-3699101%402x.png)
+![A screenshot showing a container’s indexes on the schema management page of the CloudKit Dashboard app. The screenshot highlights the Indexes menu item in the Schema section on the left and the Add Index pane.](/images/com.apple.cloudkit/media-3699101@2x.png)
 
 ##### Create a Record Type
 
@@ -55,7 +55,7 @@ To create a new record type:
 5. To delete a field, choose Delete in the option’s menu of that field’s row. You can’t delete fields that are in a production schema.
 6. Click Save Changes. CloudKit adds the new fields to the schema.
 
-![A screenshot showing a container’s record types on the schema management page of the CloudKit Dashboard app. The screenshot highlights the Record Types menu item in the Schema section on the left, as well as the New Record Type panel.](https://docs-assets.developer.apple.com/published/c3288df8dec299caee74d4a1e0be396a/media-3699108%402x.png)
+![A screenshot showing a container’s record types on the schema management page of the CloudKit Dashboard app. The screenshot highlights the Record Types menu item in the Schema section on the left, as well as the New Record Type panel.](/images/com.apple.cloudkit/media-3699108@2x.png)
 
 ##### Delete a Record Type
 
@@ -68,7 +68,7 @@ To delete a record type:
 3. When that type’s details appear, click the Delete button. You can’t delete record types that are part of a production schema.
 4. Confirm that you want to delete the record type. CloudKit removes the record type and any corresponding records from the container.
 
-![A screenshot showing a container’s record types on the schema management page of the CloudKit Database app. The screenshot highlights the Record Types menu item in the Schema section on the left, as well as the Record Type details dialog on the right.](https://docs-assets.developer.apple.com/published/cef088d0cb85a6b32603033158c08803/media-3699107%402x.png)
+![A screenshot showing a container’s record types on the schema management page of the CloudKit Database app. The screenshot highlights the Record Types menu item in the Schema section on the left, as well as the Record Type details dialog on the right.](/images/com.apple.cloudkit/media-3699107@2x.png)
 
 ## See Also
 

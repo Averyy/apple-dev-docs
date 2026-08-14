@@ -17,7 +17,7 @@ After you enable one or more agents and chat models, you can start conversations
 - To start a conversation with a specific agent or model, click the Coding Assistant button or press Command-0. Then click New Conversation in the conversation sidebar, and choose an agent under Agents or a model under Chat in the pop-up menu.
 - To start a conversation from anywhere in your project using the current agent or model, click the New Conversation button in the project window toolbar.
 
-![A screenshot that shows the Coding Assistant button selected, the conversation list in the sidebar, an agent chosen from the New Conversation pop-up menu in the toolbar, and a file open in the source editor on the right.](https://docs-assets.developer.apple.com/published/3cdbd6c44b3a646262a094a6b745559d/coding-assistant-start-conversation%402x.png)
+![A screenshot that shows the Coding Assistant button selected, the conversation list in the sidebar, an agent chosen from the New Conversation pop-up menu in the toolbar, and a file open in the source editor on the right.](/images/com.apple.Xcode/coding-assistant-start-conversation@2x.png)
 
 Xcode adds a New Conversation to the list in the conversation sidebar and shows the transcript on the right with a message text field at the bottom. The placeholder text shows the current agent or model that Xcode is using. To switch the agent or model, press Command-0 and choose another from the New Conversation pop-up menu.
 
@@ -34,7 +34,7 @@ Although Xcode automatically gathers relevant context based on your prompt and t
 - To reference specific symbols and files in your project, type the `@` character and choose a symbol or file.
 - To add files for context, inside and outside your project, choose “Add context from project” or “Upload files” from the Attachments pop-up menu in the lower-left corner.
 
-![A screenshot that shows the Project navigator in the sidebar, a New Conversation transcript in the editor area. There’s an at-character in the message text field, and a completion menu shows suggested symbols and filenames the person can use.](https://docs-assets.developer.apple.com/published/ed3b81af16fdb5db1fee7472611adda6/coding-assistant-enter-symbols%402x.png)
+![A screenshot that shows the Project navigator in the sidebar, a New Conversation transcript in the editor area. There’s an at-character in the message text field, and a completion menu shows suggested symbols and filenames the person can use.](/images/com.apple.Xcode/coding-assistant-enter-symbols@2x.png)
 
 Use other buttons in the message text field to manage a request:
 
@@ -50,7 +50,7 @@ When you submit a prompt, Xcode appends it to the transcript above the message t
 
 Review the response in the transcript, because it may contain content that you can interact with. For example, if a response references a filename, click the arrow button next to the filename to open it in the source editor where Xcode uses multicolor change bars to highlight any changes to your code.
 
-![A screenshot that shows the conversation sidebar on the left, a transcript showing a response in the middle, and a changes to a file in the artifacts pane on the right.](https://docs-assets.developer.apple.com/published/026e6ab9344f5cb0e540732551650afc/coding-assistant-write-code%402x.png)
+![A screenshot that shows the conversation sidebar on the left, a transcript showing a response in the middle, and a changes to a file in the artifacts pane on the right.](/images/com.apple.Xcode/coding-assistant-write-code@2x.png)
 
 At the end of the transcript, Xcode may ask you follow-up questions or suggest next steps. You can either answer the questions or enter a new prompt in the same thread. Xcode appends all your prompts, dialogs, and responses to the transcript so that you have a complete record of your conversation. To start a new conversation with a fresh transcript, click the New Conversation button in the toolbar.
 
@@ -76,7 +76,7 @@ If you use an agent, you can enter plan mode to iterate on a software design and
 
 If you use a chat product, you control whether Xcode modifies your project in the message text field before you submit a prompt. If you turn the “Automatically apply code changes” button off, Xcode proposes changes to your code instead of applying them and labels them as “Proposal” in the transcript. The response may contain proposed code that you can selectively apply or paste into your files.
 
-![A screenshot that shows the conversation sidebar on the left and a transcript on the right containing a proposed change in a response.](https://docs-assets.developer.apple.com/published/1b90efc660e1949a20691f110b8ee034/coding-assistant-propose-code%402x.png)
+![A screenshot that shows the conversation sidebar on the left and a transcript on the right containing a proposed change in a response.](/images/com.apple.Xcode/coding-assistant-propose-code@2x.png)
 
 To apply a proposed change, click the code snippet in the response and click Apply in the dialog that appears. If the change adds a new file, click Create New File in the dialog.
 
@@ -88,7 +88,7 @@ To roll back changes in a conversation by prompt, choose the conversation in the
 
 Move the slider from the bottom to the top to unwind changes in the order that you made them. Move the slider up to remove changes and move the slider down to add changes in the next prompt. To update your project files to the current state of the slider, click the Restore button; otherwise, click Cancel.
 
-![A screenshot that shows the conversation sidebar on the left, the History view in the middle with the slider on the right, and the Cancel and Restore buttons below. The changes for the current state are in the artifacts pane on the right.](https://docs-assets.developer.apple.com/published/ba670b3b9f0aa77973c50ea524a44b67/coding-assistant-history-view%402x.png)
+![A screenshot that shows the conversation sidebar on the left, the History view in the middle with the slider on the right, and the Cancel and Restore buttons below. The changes for the current state are in the artifacts pane on the right.](/images/com.apple.Xcode/coding-assistant-history-view@2x.png)
 
 Xcode keeps all the edits in the conversation history in case you decide to reapply changes from subsequent prompts later.
 

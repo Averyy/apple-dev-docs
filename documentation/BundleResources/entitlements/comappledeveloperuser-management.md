@@ -14,9 +14,9 @@ The entitlement for distinguishing between multiple user accounts on Apple TV.
 
 #### Discussion
 
-To configure the entitlement, add the User Management capability on your app’s target in Xcode and select the checkbox for each privilege your app requires. For more details about adding a capability, see [`Adding capabilities to your app`](https://developer.apple.com/documentation/Xcode/adding-capabilities-to-your-app).
+To configure the entitlement, add the User Management capability on your app’s target in Xcode and select the checkbox for each privilege your app requires. For more details about adding a capability, see [`Adding capabilities to your app`](https://developer.apple.com/documentation/xcode/adding-capabilities-to-your-app).
 
-For guidance on choosing a data management strategy for your app, see [`Personalizing Your App for Each User on Apple TV`](https://developer.apple.com/documentation/TVServices/personalizing-your-app-for-each-user-on-apple-tv). For an example of how to use this entitlement in your tvOS app, see [`Mapping Apple TV users to app profiles`](https://developer.apple.com/documentation/TVServices/mapping-apple-tv-users-to-app-profiles).
+For guidance on choosing a data management strategy for your app, see [`Personalizing Your App for Each User on Apple TV`](https://developer.apple.com/documentation/tvservices/personalizing-your-app-for-each-user-on-apple-tv). For an example of how to use this entitlement in your tvOS app, see [`Mapping Apple TV users to app profiles`](https://developer.apple.com/documentation/tvservices/mapping-apple-tv-users-to-app-profiles).
 
 > **Note**:  You can enable `runs-as-current-user` if your app’s minimum version is earlier than tvOS 14, but the app will behave as if the privilege isn’t set when running on the earlier version.
 

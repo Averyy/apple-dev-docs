@@ -10,7 +10,7 @@ Implement a file system that runs in user space.
 
 #### Overview
 
-With FSKit, you can extend macOS by enabling access to new types of file systems. You do this by developing an FSKit module (`FSModule`), which you deliver as an app extension that runs in user space, and is compatible with Mac App Store distribution. FSKit connects your module to the system’s existing frameworks and tools, like [`Disk Arbitration`](https://developer.apple.com/documentation/DiskArbitration), NetFS, and the `mount(8)` command.
+With FSKit, you can extend macOS by enabling access to new types of file systems. You do this by developing an FSKit module (`FSModule`), which you deliver as an app extension that runs in user space, and is compatible with Mac App Store distribution. FSKit connects your module to the system’s existing frameworks and tools, like [`Disk Arbitration`](https://developer.apple.com/documentation/diskarbitration), NetFS, and the `mount(8)` command.
 
 ##### Fskit Modules
 
@@ -118,7 +118,7 @@ When you choose a design flow, write an app extension that conforms to either `F
 - [class FSProbeResult](fsproberesult.md)
   An object that represents the results of a specific probe.
 ### Entitlements
-- [com.apple.developer.fskit.fsmodule](../BundleResources/Entitlements/com.apple.developer.fskit.fsmodule.md)
+- [com.apple.developer.fskit.fsmodule](../bundleresources/entitlements/com.apple.developer.fskit.fsmodule.md)
   An entitlement that indicates an extension provides an FSKit filesystem.
 
 

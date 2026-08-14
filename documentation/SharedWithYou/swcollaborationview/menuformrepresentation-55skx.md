@@ -16,7 +16,7 @@ var menuFormRepresentation: NSMenuItem { get }
 
 #### Discussion
 
-If this [`SWCollaborationView`](swcollaborationview.md) instance is being set on an [`NSToolbarItem`](https://developer.apple.com/documentation/AppKit/NSToolbarItem), assign this property to the item’s `menuFormRepresentation` property.
+If this [`SWCollaborationView`](swcollaborationview.md) instance is being set on an [`NSToolbarItem`](https://developer.apple.com/documentation/appkit/nstoolbaritem), assign this property to the item’s `menuFormRepresentation` property.
 
 ## See Also
 

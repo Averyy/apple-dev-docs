@@ -25,7 +25,7 @@ This function is not recommended because it makes your application driver-depend
 ## Parameters
 
 - `printer`: The printer whose driver creator you want to obtain.
-- `creator`: On return, the 4-byte creator code of the driver (for example,   for an Apple printer driver). 
+- `creator`: On return, the 4-byte creator code of the driver (for example, `'APPL'` for an Apple printer driver). 
 
 ## See Also
 

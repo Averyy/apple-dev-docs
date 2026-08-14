@@ -24,7 +24,7 @@ This function provides a way to create a `PMPrinter` object that represents the 
 
 ## Parameters
 
-- `printer`: A pointer to your   variable. On return, the variable refers to a new printer object that represents the generic formatting printer. You are responsible for releasing the printer object with the function  .
+- `printer`: A pointer to your [`PMPrinter`](pmprinter.md) variable. On return, the variable refers to a new printer object that represents the generic formatting printer. You are responsible for releasing the printer object with the function [`PMRelease(_:)`](1461402-pmrelease.md).
 
 ## See Also
 

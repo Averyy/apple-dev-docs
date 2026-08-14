@@ -63,8 +63,8 @@ If you are using a protocol that expects message content, like WebSocket or a cu
 ### Inherited By
 - [NWConnectionGroup.Message](nwconnectiongroup/message.md)
 ### Conforms To
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

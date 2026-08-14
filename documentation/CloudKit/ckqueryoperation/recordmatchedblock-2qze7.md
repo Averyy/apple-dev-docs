@@ -25,7 +25,7 @@ var recordMatchedBlock: ((CKRecord.ID, Result<CKRecord, any Error>) -> Void)? { 
 The closure returns no value and takes the following parameters:
 
 - The ID of the record.
-- A [`Result`](https://developer.apple.com/documentation/Swift/Result) that contains either a retrieved record, or an error that describes why CloudKit can’t retrieve the record.
+- A [`Result`](https://developer.apple.com/documentation/swift/result) that contains either a retrieved record, or an error that describes why CloudKit can’t retrieve the record.
 
 After identifying and sorting the records, the query operation executes this closure once for each of the result’s records. The closure executes serially with respect to all other closures of the operation, so you can expect only one closure at a time to execute for this operation.
 

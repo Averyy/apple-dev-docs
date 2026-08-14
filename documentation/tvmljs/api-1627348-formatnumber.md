@@ -30,7 +30,7 @@ This function changes an integer into a string, based on the formatting styles s
 ## Parameters
 
 - `number`: An integer that is the number to be formatted.
-- `styleValue`: A string that designates the style the number is formatted in to. Valid values are  ,  ,  ,  ,  ,  . If no value is given for this parameter, it defaults to  .
+- `styleValue`: A string that designates the style the number is formatted in to. Valid values are `noStyle`, `currency`, `decimal`, `percent`, `scientific`, `spellOut`. If no value is given for this parameter, it defaults to `noStyle`.
 - `positiveNumberFormat`: The formatting used for a positive number value input.
 - `negativeNumberFormat`: The formatting used for a negative number value input.
 

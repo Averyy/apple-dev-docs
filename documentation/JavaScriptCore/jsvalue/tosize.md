@@ -25,7 +25,7 @@ A CoreGraphics size representation of the value.
 
 #### Discussion
 
-This method treats the value as a JavaScript object, reading the values of its `width` and `height` properties using the [`toDouble()`](jsvalue/todouble().md) method and creating a [`CGSize`](https://developer.apple.com/documentation/CoreFoundation/CGSize) structure from the result. If the value is not a JavaScript object or does not have the appropriate properties, the size’s width and height are each not a number (NaN).
+This method treats the value as a JavaScript object, reading the values of its `width` and `height` properties using the [`toDouble()`](jsvalue/todouble().md) method and creating a [`CGSize`](https://developer.apple.com/documentation/corefoundation/cgsize) structure from the result. If the value is not a JavaScript object or does not have the appropriate properties, the size’s width and height are each not a number (NaN).
 
 ## See Also
 
@@ -42,7 +42,7 @@ This method treats the value as a JavaScript object, reading the values of its `
 - [func toUInt32() -> UInt32](jsvalue/touint32.md)
   Converts the JavaScript value to a native unsigned integer value.
 - [func toNumber() -> NSNumber!](jsvalue/tonumber.md)
-  Converts the JavaScript value to a [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) object.
+  Converts the JavaScript value to a [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) object.
 - [func toString() -> String!](jsvalue/tostring.md)
   Converts the JavaScript value to a native string.
 - [func toDate() -> Date!](jsvalue/todate.md)

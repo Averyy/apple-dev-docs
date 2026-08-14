@@ -23,7 +23,7 @@ var suggestedInvocationPhrase: String? { get set }
 
 The system displays the suggested invocation phrase to the user when they create the shortcut. Use a short, memorable phrase, such as “Soup time”.
 
-![A screenshot of adding a shortcut to Siri for one order of tomato soup.](https://docs-assets.developer.apple.com/published/8ba32c1cccce9885aad9bc8ebc40e79e/media-3020431%402x.png)
+![A screenshot of adding a shortcut to Siri for one order of tomato soup.](/images/com.apple.foundation/media-3020431@2x.png)
 
 > **Note**:  To access the [`suggestedInvocationPhrase`](nsuseractivity/suggestedinvocationphrase.md) property, import the *Intents* framework.
 

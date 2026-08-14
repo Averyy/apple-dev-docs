@@ -22,7 +22,7 @@ let MPNowPlayingInfoPropertyPlaybackRate: String
 
 #### Discussion
 
-Value is an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) object configured as a `double`. The default value is `1.0`, which indicates a normal playback rate. A playback rate value of `2.0` means twice the normal playback rate; a piece of media played at this rate would take half as long to play to completion. A value of `0.5` means half the normal playback rate; a piece of media played at this rate would take twice as long to play to completion.
+Value is an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) object configured as a `double`. The default value is `1.0`, which indicates a normal playback rate. A playback rate value of `2.0` means twice the normal playback rate; a piece of media played at this rate would take half as long to play to completion. A value of `0.5` means half the normal playback rate; a piece of media played at this rate would take twice as long to play to completion.
 
 ## See Also
 

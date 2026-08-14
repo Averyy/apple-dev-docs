@@ -23,7 +23,7 @@ let kVTPixelTransferPropertyKey_DestinationYCbCrMatrix: CFString
 
 Specifying this value may lead to performance degradation, as a color matching operation may need to be performed between the source and the destination.
 
-See [`kCMFormatDescriptionExtension_YCbCrMatrix`](https://developer.apple.com/documentation/CoreMedia/kCMFormatDescriptionExtension_YCbCrMatrix-swift.var) in `CMFormatDescription.h` for possible values.
+See [`kCMFormatDescriptionExtension_YCbCrMatrix`](https://developer.apple.com/documentation/coremedia/kcmformatdescriptionextension_ycbcrmatrix-swift.var) in `CMFormatDescription.h` for possible values.
 
 ## See Also
 

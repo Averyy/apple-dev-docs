@@ -19,7 +19,7 @@ final let options: NSKeyValueObservingOptions
 
 #### Discussion
 
-For possible values, see [`NSKeyValueObservingOptions`](https://developer.apple.com/documentation/Foundation/NSKeyValueObservingOptions).
+For possible values, see [`NSKeyValueObservingOptions`](https://developer.apple.com/documentation/foundation/nskeyvalueobservingoptions).
 
 ## See Also
 

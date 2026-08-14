@@ -21,7 +21,7 @@ var device: (any MTLDevice)? { get set }
 
 #### Discussion
 
-This property determines which device object Metal uses to create its [`MTLTexture`](https://developer.apple.com/documentation/Metal/MTLTexture) objects. When you retrieve a drawable object and its associated texture, you must render to the texture using the same device object.
+This property determines which device object Metal uses to create its [`MTLTexture`](https://developer.apple.com/documentation/metal/mtltexture) objects. When you retrieve a drawable object and its associated texture, you must render to the texture using the same device object.
 
 The default value is `nil`—you must set the device for a layer before rendering.
 

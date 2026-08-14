@@ -27,11 +27,11 @@ A four-point linear value ramp (gradient) generator.
 
 This node uses bilinear interpolation to create a ramp from four corner values. Any point within the output ramp is a mix of one of the four corner values. A given point is more similar to a corner value the closer its position is to that corner. Below is a an example of a simple node graph that uses `Ramp 4 Corners` to create a gradient with four different colors:
 
-![None](https://docs-assets.developer.apple.com/published/1778842288c4d7928f63c92b5eb32703/Ramp4Graph.png)
+![None](/images/ShaderGraph-Docs/Ramp4Graph.png)
 
 The image below shows the resulting texture along with the color values on each corner:
 
-![None](https://docs-assets.developer.apple.com/published/1d6fc6df1e54b2e218c0941bff4530e0/Ramp4Material.png)
+![None](/images/ShaderGraph-Docs/Ramp4Material.png)
 
 ## See Also
 

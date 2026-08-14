@@ -16,7 +16,7 @@ static let characterSet: NSFontDescriptor.AttributeName
 
 #### Discussion
 
-The value of this attribute is an [`NSCharacterSet`](https://developer.apple.com/documentation/Foundation/NSCharacterSet) object. The default value is supplied by the font.
+The value of this attribute is an [`NSCharacterSet`](https://developer.apple.com/documentation/foundation/nscharacterset) object. The default value is supplied by the font.
 
 ## See Also
 

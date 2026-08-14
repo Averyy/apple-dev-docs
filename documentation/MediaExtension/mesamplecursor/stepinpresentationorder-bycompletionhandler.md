@@ -17,7 +17,7 @@ func stepInPresentationOrder(by stepCount: Int64) async throws -> Int64
 
 #### Discussion
 
-If the request would advance the cursor past the last sample or before the first sample, the cursor points to that limiting sample and `actualStepCount` is equal to the number of samples the cursor moved. If decode order and presentation order are the same, in other words, the samples aren’t reordered, this method has the same effect as [`stepInDecodeOrder(byCount:)`](https://developer.apple.com/documentation/AVFoundation/AVSampleCursor/stepInDecodeOrder(byCount:)).
+If the request would advance the cursor past the last sample or before the first sample, the cursor points to that limiting sample and `actualStepCount` is equal to the number of samples the cursor moved. If decode order and presentation order are the same, in other words, the samples aren’t reordered, this method has the same effect as [`stepInDecodeOrder(byCount:)`](https://developer.apple.com/documentation/avfoundation/avsamplecursor/stepindecodeorder(bycount:)).
 
 ## Parameters
 

@@ -20,7 +20,7 @@ static let keyboardMetrics: SRSensor
 
 The [`sample`](srfetchresult/sample.md) type for this sensor is [`SRKeyboardMetrics`](srkeyboardmetrics.md).
 
-You need to provide a reason to record keyboard metrics by adding the [`SRSensorUsageKeyboardMetrics`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSSensorKitUsageDetail/SRSensorUsageKeyboardMetrics) dictionary to the [`NSSensorKitUsageDetail`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSSensorKitUsageDetail) key in the information property list.
+You need to provide a reason to record keyboard metrics by adding the [`SRSensorUsageKeyboardMetrics`](https://developer.apple.com/documentation/bundleresources/information-property-list/nssensorkitusagedetail/srsensorusagekeyboardmetrics) dictionary to the [`NSSensorKitUsageDetail`](https://developer.apple.com/documentation/bundleresources/information-property-list/nssensorkitusagedetail) key in the information property list.
 
 ## See Also
 

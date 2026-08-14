@@ -6,13 +6,13 @@ Create a simple DriverKit extension to override the default driver-matching beha
 
 #### Overview
 
-Starting in macOS 12.3, the operating system provides a class-compliant Core Media I/O (CMIO) extension that enables the use of USB cameras and other video capture devices. When you connect a USB camera, the system finds its default driver and connects it with the camera. To override the system’s default matching behavior so that you can load a custom CMIO extension instead, create a simple [`DriverKit`](https://developer.apple.com/documentation/DriverKit) extension.
+Starting in macOS 12.3, the operating system provides a class-compliant Core Media I/O (CMIO) extension that enables the use of USB cameras and other video capture devices. When you connect a USB camera, the system finds its default driver and connects it with the camera. To override the system’s default matching behavior so that you can load a custom CMIO extension instead, create a simple [`DriverKit`](https://developer.apple.com/documentation/driverkit) extension.
 
 ##### Create a Driverkit Extension
 
 In a standalone Xcode project, or as a target within an existing project, create a new DriverKit extension. In Xcode’s menu, select File > New and choose either the Project or Target menu items as appropriate. In the dialog that appears, select the DriverKit tab and the Driver template, and click the Next button.
 
-![An Xcode New Project dialog. At the top-left of the dialog is a label with the value Choose a template for your new project. Below the label shows a row of tabs, with the DriverKit tab selected. Below the tab bar shows the Driver template selected. Along the bottom of the dialog are three buttons. The left-most button has the title Cancel. The two right-most buttons have the titles Previous and Next, respectively. The Previous button is in a disabled state, and the Next button is in a highlighted state.](https://docs-assets.developer.apple.com/published/c764db2273d7db3036b9adbe5951627f/media-4029886%402x.png)
+![An Xcode New Project dialog. At the top-left of the dialog is a label with the value Choose a template for your new project. Below the label shows a row of tabs, with the DriverKit tab selected. Below the tab bar shows the Driver template selected. Along the bottom of the dialog are three buttons. The left-most button has the title Cancel. The two right-most buttons have the titles Previous and Next, respectively. The Previous button is in a disabled state, and the Next button is in a highlighted state.](/images/com.apple.coremediaio/media-4029886@2x.png)
 
 In the dialog that follows, give the driver an appropriate Product Name and click the Finish button to create it.
 
@@ -20,7 +20,7 @@ The default IOKit interface generator (`.iig`) and C++ implementation files that
 
 ##### Configure the Infoplist File
 
-Specify your matching parameters as one or more entries in the [`IOKitPersonalities`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/IOKitPersonalities) dictionary inside the DriverKit extension’s `Info.plist` file. The following example shows the standard configuration to provide within this file.
+Specify your matching parameters as one or more entries in the [`IOKitPersonalities`](https://developer.apple.com/documentation/bundleresources/information-property-list/iokitpersonalities) dictionary inside the DriverKit extension’s `Info.plist` file. The following example shows the standard configuration to provide within this file.
 
 ```swift
 <key>IOKitPersonalities</key>
@@ -60,9 +60,9 @@ Specify your matching parameters as one or more entries in the [`IOKitPersonalit
 </dict>
 ```
 
-Set [`IOUserClass`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/IOUserClass) and [`IOUserServerName`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/IOUserServerName) values as appropriate for your newly created extension. Set a high `IOProbeScore` value to give priority to your driver, and set the identifiers of the vendor and product to match. In the `IOProviderMergeProperties`, specify the identifier of your custom CMIO extension to load in place of the default driver.
+Set [`IOUserClass`](https://developer.apple.com/documentation/bundleresources/information-property-list/iouserclass) and [`IOUserServerName`](https://developer.apple.com/documentation/bundleresources/information-property-list/iouserservername) values as appropriate for your newly created extension. Set a high `IOProbeScore` value to give priority to your driver, and set the identifiers of the vendor and product to match. In the `IOProviderMergeProperties`, specify the identifier of your custom CMIO extension to load in place of the default driver.
 
-With the configuration of your DriverKit extension complete, refer to [`Installing System Extensions and Drivers`](https://developer.apple.com/documentation/SystemExtensions/installing-system-extensions-and-drivers) for information on how to package and install your extension.
+With the configuration of your DriverKit extension complete, refer to [`Installing System Extensions and Drivers`](https://developer.apple.com/documentation/systemextensions/installing-system-extensions-and-drivers) for information on how to package and install your extension.
 
 ## See Also
 

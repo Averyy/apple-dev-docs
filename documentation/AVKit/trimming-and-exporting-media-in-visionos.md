@@ -8,7 +8,7 @@ Display standard controls in your app to edit the timeline of the currently play
 
 You use [`AVPlayerViewController`](avplayerviewcontroller.md) to present the system video-player interface in your visionOS app. In addition to its primary role, [`AVPlayerViewController`](avplayerviewcontroller.md) can also provide a media-trimming experience similar to the interface of QuickTime Player in macOS, like that below.
 
-![An illustration of an AVPlayerViewController object’s media trimming interface. The illustration shows a rectangular video window, with media control bar along its bottom edge. On the leading edge, the control bar contains a button to toggle playback, a rectangular area that represents the media timeline, and a yellow selection interface to set the in and out points of the video selection. Below the media controls is an ornament that display the text Trim in the middle of it. On its leading edge is a cancel button to cancel the trimming operation. On its trailing edge is a Done button to complete the trimming operation.](https://docs-assets.developer.apple.com/published/25ee3b6fa1bd39fcacb521b0bdd8f6a4/media-4251549%402x.png)
+![An illustration of an AVPlayerViewController object’s media trimming interface. The illustration shows a rectangular video window, with media control bar along its bottom edge. On the leading edge, the control bar contains a button to toggle playback, a rectangular area that represents the media timeline, and a yellow selection interface to set the in and out points of the video selection. Below the media controls is an ornament that display the text Trim in the middle of it. On its leading edge is a cancel button to cancel the trimming operation. On its trailing edge is a Done button to complete the trimming operation.](/images/com.apple.avkit/media-4251549@2x.png)
 
 When you enable this feature, people can specify a segment of the media timeline for display. This article describes how to adopt this feature in your app, and shows how to use AVFoundation to export the trimmed result.
 
@@ -58,11 +58,11 @@ func startTrimming() async {
 }
 ```
 
-This method returns a Boolean value that indicates whether the user pinched the Done button or the Cancel button. Pinching the Done button causes the view controller to update the values of the player item’s [`reversePlaybackEndTime`](https://developer.apple.com/documentation/AVFoundation/AVPlayerItem/reversePlaybackEndTime) and [`forwardPlaybackEndTime`](https://developer.apple.com/documentation/AVFoundation/AVPlayerItem/forwardPlaybackEndTime) properties to match the trimmed selection.
+This method returns a Boolean value that indicates whether the user pinched the Done button or the Cancel button. Pinching the Done button causes the view controller to update the values of the player item’s [`reversePlaybackEndTime`](https://developer.apple.com/documentation/avfoundation/avplayeritem/reverseplaybackendtime) and [`forwardPlaybackEndTime`](https://developer.apple.com/documentation/avfoundation/avplayeritem/forwardplaybackendtime) properties to match the trimmed selection.
 
 ##### Export the Trimmed Media Selection
 
-A convenient way to export your trimmed selection is to use [`AVAssetExportSession`](https://developer.apple.com/documentation/AVFoundation/AVAssetExportSession). This object provides a simple preset-based approach to transcode media in various formats. Create an instance of an export session by passing it the player item’s asset and an export preset. Additionally, configure its output URL and file type:
+A convenient way to export your trimmed selection is to use [`AVAssetExportSession`](https://developer.apple.com/documentation/avfoundation/avassetexportsession). This object provides a simple preset-based approach to transcode media in various formats. Create an instance of an export session by passing it the player item’s asset and an export preset. Additionally, configure its output URL and file type:
 
 ```swift
 // Export the asset in the highest quality.
@@ -82,7 +82,7 @@ guard let exportSession = AVAssetExportSession(asset: playerItem.asset,
 }
 ```
 
-To export only the portion of the asset that matches your trimmed selection, create a [`CMTimeRange`](https://developer.apple.com/documentation/CoreMedia/CMTimeRange) based on the reverse and forward playback end times of the current player item:
+To export only the portion of the asset that matches your trimmed selection, create a [`CMTimeRange`](https://developer.apple.com/documentation/coremedia/cmtimerange) based on the reverse and forward playback end times of the current player item:
 
 ```swift
 // Create a time range that matches the trimmed selection.

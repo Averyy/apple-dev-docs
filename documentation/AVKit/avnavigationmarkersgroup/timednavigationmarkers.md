@@ -16,7 +16,7 @@ var timedNavigationMarkers: [AVTimedMetadataGroup]? { get }
 
 #### Discussion
 
-Returns the array of [`AVTimedMetadataGroup`](https://developer.apple.com/documentation/AVFoundation/AVTimedMetadataGroup) objects managed by this group. This value may be `nil`.
+Returns the array of [`AVTimedMetadataGroup`](https://developer.apple.com/documentation/avfoundation/avtimedmetadatagroup) objects managed by this group. This value may be `nil`.
 
 ## See Also
 

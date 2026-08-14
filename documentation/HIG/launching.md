@@ -13,7 +13,7 @@ framework: HIG
 
 A streamlined launch experience helps people start using your app or game immediately.
 
-![A sketch of a square containing an arrow pointing to the upper-right corner, suggesting a transition to a new state. The image is overlaid with rectangular and circular grid lines and is tinted orange to subtly reflect the orange in the original six-color Apple logo.](https://docs-assets.developer.apple.com/published/74560c9edf7335a72908e187ec52ac81/patterns-launching-intro~dark%402x.png)
+![A sketch of a square containing an arrow pointing to the upper-right corner, suggesting a transition to a new state. The image is overlaid with rectangular and circular grid lines and is tinted orange to subtly reflect the orange in the original six-color Apple logo.](/images/com.apple.HIG/patterns-launching-intro~dark@2x.png)
 Launching begins when someone opens your app or game, includes an initial download, and ends when the first screen is ready. After launching completes, you might offer an [Onboarding](onboarding.md) experience, which can give people a high-level view of your app or game.
 
 ## Best practices
@@ -50,8 +50,8 @@ Launching begins when someone opens your app or game, includes an initial downlo
 [Loading](loading.md)
 
 #### Developer documentation
-[Specifying your app’s launch screen](../Xcode/specifying-your-apps-launch-screen.md) — Xcode
-[Responding to the launch of your app](../UIKit/responding-to-the-launch-of-your-app.md) — UIKit
+[Specifying your app’s launch screen](../xcode/specifying-your-apps-launch-screen.md) — Xcode
+[Responding to the launch of your app](../uikit/responding-to-the-launch-of-your-app.md) — UIKit
 
 #### Videos
 - [Optimizing App Launch](https://developer.apple.com/videos/play/wwdc2019/423) - Slow app launches are frustrating. Learn about the new app launch instrument and discover how to make your app launch fast. Gain insights into what happens during app launch and how to minimize, prioritize, and optimize work at this critical time. Hear tips and tricks from the engineers making iOS apps launch fast.

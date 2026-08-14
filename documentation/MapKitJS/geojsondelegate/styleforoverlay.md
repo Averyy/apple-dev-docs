@@ -23,7 +23,7 @@ This method returns a [`Style`](style.md) object for the provided overlay.
 
 #### Discussion
 
-MapKit JS calls this method for each overlay, and after each call to [`itemForPoint(coordinate, geoJSON)`](geojsondelegate/itemforpoint.md) and [`itemForPolygon(overlay, geoJSON)`](geojsondelegate/itemforpolygon.md).
+MapKit JS calls this method for each overlay, and after each call to [`itemForPoint()`](geojsondelegate/itemforpoint.md) and [`itemForPolygon()`](geojsondelegate/itemforpolygon.md).
 
 ## Parameters
 

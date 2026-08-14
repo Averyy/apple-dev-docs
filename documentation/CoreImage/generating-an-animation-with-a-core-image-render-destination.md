@@ -13,20 +13,20 @@ Animate a filtered image to a Metal view in a SwiftUI app using a Core Image Ren
 
 #### Overview
 
-This sample shows how to assemble a [`SwiftUI`](https://developer.apple.com/documentation/SwiftUI) app that displays a Metal view with animated images that you generate procedurally from Core Image.
+This sample shows how to assemble a [`SwiftUI`](https://developer.apple.com/documentation/swiftui) app that displays a Metal view with animated images that you generate procedurally from Core Image.
 
-To accomplish this, the sample sets up a [`Scene`](https://developer.apple.com/documentation/SwiftUI/Scene) in a [`WindowGroup`](https://developer.apple.com/documentation/SwiftUI/WindowGroup) with a single content view. The sample’s `ContentView` adopts the [`View`](https://developer.apple.com/documentation/SwiftUI/View) protocol and initializes a `Renderer` using a closure to vend a [`CIImage`](CIImage.md). It then adds a `MetalView`, with the instantiated `Renderer`, to the content [`body`](https://developer.apple.com/documentation/SwiftUI/View/body-8kl5o).
+To accomplish this, the sample sets up a [`Scene`](https://developer.apple.com/documentation/swiftui/scene) in a [`WindowGroup`](https://developer.apple.com/documentation/swiftui/windowgroup) with a single content view. The sample’s `ContentView` adopts the [`View`](https://developer.apple.com/documentation/swiftui/view) protocol and initializes a `Renderer` using a closure to vend a [`CIImage`](ciimage.md). It then adds a `MetalView`, with the instantiated `Renderer`, to the content [`body`](https://developer.apple.com/documentation/swiftui/view/body-8kl5o).
 
 The sample combines view update and state changes to produce the animation:
 
-- For view update, the `MetalView` structure conforms to the [`UIViewRepresentable`](https://developer.apple.com/documentation/SwiftUI/UIViewRepresentable) or [`NSViewRepresentable`](https://developer.apple.com/documentation/SwiftUI/NSViewRepresentable) protocol of the SwiftUI life cycle.
-- For state changes, the Renderer is a `StateObject` conforming to the [`ObservableObject`](https://developer.apple.com/documentation/Combine/ObservableObject) protocol.
+- For view update, the `MetalView` structure conforms to the [`UIViewRepresentable`](https://developer.apple.com/documentation/swiftui/uiviewrepresentable) or [`NSViewRepresentable`](https://developer.apple.com/documentation/swiftui/nsviewrepresentable) protocol of the SwiftUI life cycle.
+- For state changes, the Renderer is a `StateObject` conforming to the [`ObservableObject`](https://developer.apple.com/documentation/combine/observableobject) protocol.
 
 ##### Generate an Animation
 
-The `Renderer` class generates an image for an animation frame by conforming to the MetalKit [`MTKViewDelegate`](https://developer.apple.com/documentation/MetalKit/MTKViewDelegate) delegate protocol. The protocol’s [`draw(in:)`](https://developer.apple.com/documentation/MetalKit/MTKViewDelegate/draw(in:)) function commits render destination work to the GPU using a render task in a Metal command buffer.
+The `Renderer` class generates an image for an animation frame by conforming to the MetalKit [`MTKViewDelegate`](https://developer.apple.com/documentation/metalkit/mtkviewdelegate) delegate protocol. The protocol’s [`draw(in:)`](https://developer.apple.com/documentation/metalkit/mtkviewdelegate/draw(in:)) function commits render destination work to the GPU using a render task in a Metal command buffer.
 
-For more information about drawing with MetalKit see [`Drawing a triangle with Metal 4`](https://developer.apple.com/documentation/Metal/drawing-a-triangle-with-metal-4).
+For more information about drawing with MetalKit see [`Drawing a triangle with Metal 4`](https://developer.apple.com/documentation/metal/drawing-a-triangle-with-metal-4).
 
 MetalKit calls the `draw(in:)` delegate function of the `Renderer` automatically.
 
@@ -58,7 +58,7 @@ let renderer = Renderer(imageProvider: { (time: CFTimeInterval, scaleFactor: CGF
     image = colorFilter.outputImage ?? CIImage.empty()
 ```
 
-After the sample initializes the `Renderer`, the `Renderer` makes a command buffer and gets the [`currentDrawable`](https://developer.apple.com/documentation/MetalKit/MTKView/currentDrawable).
+After the sample initializes the `Renderer`, the `Renderer` makes a command buffer and gets the [`currentDrawable`](https://developer.apple.com/documentation/metalkit/mtkview/currentdrawable).
 
 ```swift
 if let commandBuffer = commandQueue.makeCommandBuffer() {
@@ -76,7 +76,7 @@ if let commandBuffer = commandQueue.makeCommandBuffer() {
     if let drawable = view.currentDrawable {
 ```
 
-The `Renderer` then configures a [`CIRenderDestination`](CIRenderDestination.md) with the command buffer, `currentDrawable`, dimensions, and pixel format, along with a closure that returns the [`texture`](https://developer.apple.com/documentation/QuartzCore/CAMetalDrawable/texture) for the `currentDrawable`.
+The `Renderer` then configures a [`CIRenderDestination`](cirenderdestination.md) with the command buffer, `currentDrawable`, dimensions, and pixel format, along with a closure that returns the [`texture`](https://developer.apple.com/documentation/quartzcore/cametaldrawable/texture) for the `currentDrawable`.
 
 ```swift
 // Create a destination the Core Image context uses to render to the drawable's Metal texture.
@@ -133,7 +133,7 @@ For more information about adding an EDR effect, see [`Display EDR content with 
 
 ##### Configure the View for Edr Support
 
-The `MetalView` opts into EDR support setting [`wantsExtendedDynamicRangeContent`](https://developer.apple.com/documentation/QuartzCore/CAMetalLayer/wantsExtendedDynamicRangeContent) to true on the backing [`CAMetalLayer`](https://developer.apple.com/documentation/QuartzCore/CAMetalLayer). When enabled, the layer uses a wide gamut [`colorspace`](https://developer.apple.com/documentation/QuartzCore/CAMetalLayer/colorspace) to render colors beyond SDR range. Similarly, the [`MTKView`](https://developer.apple.com/documentation/MetalKit/MTKView) sets a wide gamut [`pixelFormat`](https://developer.apple.com/documentation/QuartzCore/CAMetalLayer/pixelFormat) to render the generated EDR image.
+The `MetalView` opts into EDR support setting [`wantsExtendedDynamicRangeContent`](https://developer.apple.com/documentation/quartzcore/cametallayer/wantsextendeddynamicrangecontent) to true on the backing [`CAMetalLayer`](https://developer.apple.com/documentation/quartzcore/cametallayer). When enabled, the layer uses a wide gamut [`colorspace`](https://developer.apple.com/documentation/quartzcore/cametallayer/colorspace) to render colors beyond SDR range. Similarly, the [`MTKView`](https://developer.apple.com/documentation/metalkit/mtkview) sets a wide gamut [`pixelFormat`](https://developer.apple.com/documentation/quartzcore/cametallayer/pixelformat) to render the generated EDR image.
 
 ```swift
 if let layer = view.layer as? CAMetalLayer {
@@ -149,7 +149,7 @@ if let layer = view.layer as? CAMetalLayer {
 
 ##### Query Edr Headroom
 
-The `Renderer` queries the current EDR headroom for each draw call using either [`maximumPotentialExtendedDynamicRangeColorComponentValue`](https://developer.apple.com/documentation/AppKit/NSScreen/maximumPotentialExtendedDynamicRangeColorComponentValue) ([`NSScreen`](https://developer.apple.com/documentation/AppKit/NSScreen)) or [`currentEDRHeadroom`](https://developer.apple.com/documentation/UIKit/UIScreen/currentEDRHeadroom) ([`UIScreen`](https://developer.apple.com/documentation/UIKit/UIScreen)). If EDR headroom is unavailable the sample sets `headroom` to `1.0` clamping to SDR.
+The `Renderer` queries the current EDR headroom for each draw call using either [`maximumPotentialExtendedDynamicRangeColorComponentValue`](https://developer.apple.com/documentation/appkit/nsscreen/maximumpotentialextendeddynamicrangecolorcomponentvalue) ([`NSScreen`](https://developer.apple.com/documentation/appkit/nsscreen)) or [`currentEDRHeadroom`](https://developer.apple.com/documentation/uikit/uiscreen/currentedrheadroom) ([`UIScreen`](https://developer.apple.com/documentation/uikit/uiscreen)). If EDR headroom is unavailable the sample sets `headroom` to `1.0` clamping to SDR.
 
 ```swift
                 // Determine EDR headroom and fallback to SDR, as needed.
@@ -167,7 +167,7 @@ The `Renderer` queries the current EDR headroom for each draw call using either 
 
 ##### Leverage Edr Headroom
 
-The sample’s ripple effect takes a gradient [`shadingImage`](CIRippleTransition/shadingImage.md) to shade the contor of the ripple so that it appears to reflect light from the upper-left corner. [`CILinearGradient`](CILinearGradient.md) generates the gradient shading image between the current maximum RGB white, [`color0`](CILinearGradient/color0.md), and a fully transparent clear color, [`color1`](CILinearGradient/color1.md).
+The sample’s ripple effect takes a gradient [`shadingImage`](cirippletransition/shadingimage.md) to shade the contor of the ripple so that it appears to reflect light from the upper-left corner. [`CILinearGradient`](cilineargradient.md) generates the gradient shading image between the current maximum RGB white, [`color0`](cilineargradient/color0.md), and a fully transparent clear color, [`color1`](cilineargradient/color1.md).
 
 ```swift
 // Compute a shading image for the ripple effect below.

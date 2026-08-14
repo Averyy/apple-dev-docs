@@ -25,7 +25,7 @@ Returns the content margins for the current widget presentation context.
 
 #### Discussion
 
-The content margins of a widget depend on the context in which it appears. The system applies default content margins. However, if you disable automatic application of default content margins with [`contentMarginsDisabled()`](WidgetConfiguration/contentMarginsDisabled().md), the system uses the `widgetContentMargins` property in combination with [`padding(_:)`](View/padding(_:).md) to selectively apply default content margins.
+The content margins of a widget depend on the context in which it appears. The system applies default content margins. However, if you disable automatic application of default content margins with [`contentMarginsDisabled()`](widgetconfiguration/contentmarginsdisabled().md), the system uses the `widgetContentMargins` property in combination with [`padding(_:)`](view/padding(_:).md) to selectively apply default content margins.
 
 ## See Also
 

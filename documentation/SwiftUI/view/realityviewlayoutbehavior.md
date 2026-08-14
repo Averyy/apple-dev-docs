@@ -39,7 +39,7 @@ struct ModelWrapperView: View {
 }
 ```
 
-See [`RealityViewLayoutOption`](https://developer.apple.com/documentation/RealityKit/RealityViewLayoutOption) for a list of options to pass into `realityViewLayoutBehavior(_:)`.
+See [`RealityViewLayoutOption`](https://developer.apple.com/documentation/realitykit/realityviewlayoutoption) for a list of options to pass into `realityViewLayoutBehavior(_:)`.
 
 ## See Also
 

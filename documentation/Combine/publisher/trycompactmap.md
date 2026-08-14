@@ -28,7 +28,7 @@ Any non-`nil` optional results of calling the supplied closure.
 
 Use [`tryCompactMap(_:)`](publisher/trycompactmap(_:).md) to remove `nil` elements from a publisher’s stream based on an error-throwing closure you provide. If the closure throws an error, the publisher cancels the upstream publisher and sends the thrown error to the downstream subscriber as a [`Failure`](publisher/failure.md).
 
-The following example uses an array of numbers as the source for a collection-based publisher. A [`tryCompactMap(_:)`](publisher/trycompactmap(_:).md) operator consumes each integer from the publisher and uses a dictionary to transform the numbers from its Arabic to Roman numerals, as an optional [`String`](https://developer.apple.com/documentation/Swift/String).
+The following example uses an array of numbers as the source for a collection-based publisher. A [`tryCompactMap(_:)`](publisher/trycompactmap(_:).md) operator consumes each integer from the publisher and uses a dictionary to transform the numbers from its Arabic to Roman numerals, as an optional [`String`](https://developer.apple.com/documentation/swift/string).
 
 If the closure called by [`tryCompactMap(_:)`](publisher/trycompactmap(_:).md) fails to look up a Roman numeral, it returns the optional String `(unknown)`.
 

@@ -72,7 +72,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 }
 ```
 
-It’s important to add the observer at launch, in [`application(_:didFinishLaunchingWithOptions:)`](https://developer.apple.com/documentation/UIKit/UIApplicationDelegate/application(_:didFinishLaunchingWithOptions:)), to ensure that it persists during all launches of your app, receives all payment queue notifications, and continues transactions that may initiate outside the app, such as:
+It’s important to add the observer at launch, in [`application(_:didFinishLaunchingWithOptions:)`](https://developer.apple.com/documentation/uikit/uiapplicationdelegate/application(_:didfinishlaunchingwithoptions:)), to ensure that it persists during all launches of your app, receives all payment queue notifications, and continues transactions that may initiate outside the app, such as:
 
 - Promoted in-app purchases. For more information, see [`Promoting In-App Purchases`](promoting-in-app-purchases.md).
 - Background subscription renewals

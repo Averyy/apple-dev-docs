@@ -14,7 +14,7 @@ To connect Xcode Cloud with a custom tool or service, you need to configure an H
 
 Xcode Cloud sends an HTTP request to each webhook’s configured HTTPS endpoint every time it creates, starts, and finishes a build.
 
-![An illustration that shows the different moments when Xcode Cloud sends a JSON payload to the configured endpoint: when it creates, starts, and finishes a new build.](https://docs-assets.developer.apple.com/published/0a9e7a570ecb8754fe39342feeff1aa9/Configuring-Webhooks-in-Xcode-Cloud-1%402x.png)
+![An illustration that shows the different moments when Xcode Cloud sends a JSON payload to the configured endpoint: when it creates, starts, and finishes a new build.](/images/com.apple.Xcode/Configuring-Webhooks-in-Xcode-Cloud-1@2x.png)
 
 For more information about creating webhooks in Xcode Cloud, see [`Customize your advanced Xcode Cloud workflows`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2021/10269).
 

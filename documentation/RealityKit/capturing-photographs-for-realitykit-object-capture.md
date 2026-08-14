@@ -10,7 +10,7 @@ In iOS 17 and later, and macOS 12 and later, you can create 3D objects from phot
 
 To generate the best 3D representation from the object-creation process, provide RealityKit with high-quality, high-resolution photographs that don’t contain hard shadows or strong highlights.
 
-![An illustration showing a toy robot. There are several cameras at different heights around the robot with dotted blue circular arrows indicating movement.](https://docs-assets.developer.apple.com/published/5c8b7121dbda6ad8ad9360821f10bc7a/capturing-photographs-for-realitykit-object-capture-1%402x.png)
+![An illustration showing a toy robot. There are several cameras at different heights around the robot with dotted blue circular arrows indicating movement.](/images/com.apple.RealityKit/capturing-photographs-for-realitykit-object-capture-1@2x.png)
 
 ##### Select an Object to Photograph
 
@@ -24,9 +24,9 @@ You can approach taking photographs for object creation in two ways: Either move
 
 The number of pictures that RealityKit needs in order to create an accurate 3D representation varies depending on the complexity and size of the object, but adjacent shots must have substantial overlap. Position sequential images so they have a 70% overlap or more. Anything less than 50% overlap between neighboring shots, and the object-creation process may fail or result in a low-quality recreation.
 
-![An illustration of a robot, showing the overlapping field of view for two cameras next to each other. The overlap is labeled “Ideal overlap: 70%”.](https://docs-assets.developer.apple.com/published/dc543114a82dec08b2a42b316b1b1243/capturing-photographs-for-realitykit-object-capture-2%402x.png)
+![An illustration of a robot, showing the overlapping field of view for two cameras next to each other. The overlap is labeled “Ideal overlap: 70%”.](/images/com.apple.RealityKit/capturing-photographs-for-realitykit-object-capture-2@2x.png)
 
-RealityKit object creation accepts images captured by any digital camera, including the cameras on an iPhone or iPad, a DSLR or mirrorless camera, or even a camera-equipped drone. If your source images contain depth data, RealityKit uses it to calculate the real-world size of the scanned object. RealityKit can also create objects from images without depth data, but you may have to scale the object when placing it into your AR scene. For more information on capturing image depth data, see [`Capturing photos with depth`](https://developer.apple.com/documentation/AVFoundation/capturing-photos-with-depth).
+RealityKit object creation accepts images captured by any digital camera, including the cameras on an iPhone or iPad, a DSLR or mirrorless camera, or even a camera-equipped drone. If your source images contain depth data, RealityKit uses it to calculate the real-world size of the scanned object. RealityKit can also create objects from images without depth data, but you may have to scale the object when placing it into your AR scene. For more information on capturing image depth data, see [`Capturing photos with depth`](https://developer.apple.com/documentation/avfoundation/capturing-photos-with-depth).
 
 > **Note**: RealityKit object creation doesn’t require you to take images in any specific order or name them in a specific way.
 

@@ -44,7 +44,7 @@ struct Contains<Upstream> where Upstream : Publisher, Upstream.Output : Equatabl
 ## Relationships
 
 ### Conforms To
-- [Equatable](../Swift/Equatable.md)
+- [Equatable](../swift/equatable.md)
 - [Publisher](publisher.md)
 
 ## See Also

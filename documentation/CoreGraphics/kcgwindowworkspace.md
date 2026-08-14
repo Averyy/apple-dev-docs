@@ -14,7 +14,7 @@ let kCGWindowWorkspace: CFString
 
 #### Discussion
 
-The key that identifies the workspace to which the window belongs. The value for this key is a [`CFNumber`](https://developer.apple.com/documentation/CoreFoundation/CFNumber) type whose value is encoded using the [`CFNumberType.intType`](https://developer.apple.com/documentation/CoreFoundation/CFNumberType/intType) type.
+The key that identifies the workspace to which the window belongs. The value for this key is a [`CFNumber`](https://developer.apple.com/documentation/corefoundation/cfnumber) type whose value is encoded using the [`CFNumberType.intType`](https://developer.apple.com/documentation/corefoundation/cfnumbertype/inttype) type.
 
 ## See Also
 

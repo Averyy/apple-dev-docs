@@ -22,7 +22,7 @@ func encode(to encoder: any Encoder) throws
 
 #### Discussion
 
-> ❗ **Important**:  You don’t call this method directly. Instead, the object you’re using to encode the interval state, which must adopt the [`Encoder`](https://developer.apple.com/documentation/Swift/Encoder) protocol, calls it on your behalf as part of the serialization process.
+> ❗ **Important**:  You don’t call this method directly. Instead, the object you’re using to encode the interval state, which must adopt the [`Encoder`](https://developer.apple.com/documentation/swift/encoder) protocol, calls it on your behalf as part of the serialization process.
 
 The method throws an error if the interval state is invalid for the specified encoder’s format.
 

@@ -16,7 +16,7 @@ interface CloudKit.QueryNotification
 
 #### Overview
 
-This class is similar to the [`CKQueryNotification`](https://developer.apple.com/documentation/CloudKit/CKQueryNotification) class in the CloudKit framework.
+This class is similar to the [`CKQueryNotification`](https://developer.apple.com/documentation/cloudkit/ckquerynotification) class in the CloudKit framework.
 
 ## Topics
 

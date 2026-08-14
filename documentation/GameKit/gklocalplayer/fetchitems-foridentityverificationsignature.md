@@ -33,7 +33,7 @@ In your game, follow these steps:
 
 1. Call the [`fetchItems(forIdentityVerificationSignature:)`](gklocalplayer/fetchitems(foridentityverificationsignature:).md) method.
 2. Send the completion handler `publicKeyURL`, `signature`, `salt`, and `timestamp` parameters to your authentication server.
-3. Share the [`teamPlayerID`](gkplayer/teamplayerid.md) and the bundle ID (see [`CFBundleIdentifier`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/CFBundleIdentifier)) with the server. For Apple Arcade games, share the [`gamePlayerID`](gkplayer/gameplayerid.md) instead of the [`teamPlayerID`](gkplayer/teamplayerid.md).
+3. Share the [`teamPlayerID`](gkplayer/teamplayerid.md) and the bundle ID (see [`CFBundleIdentifier`](https://developer.apple.com/documentation/bundleresources/information-property-list/cfbundleidentifier)) with the server. For Apple Arcade games, share the [`gamePlayerID`](gkplayer/gameplayerid.md) instead of the [`teamPlayerID`](gkplayer/teamplayerid.md).
 
 On the server, perform these steps:
 
@@ -61,7 +61,7 @@ If the generated and retrieved signatures match, GameKit authenticates the local
   A handler that GameKit calls while initializing the local player.
 - [var isAuthenticated: Bool](gklocalplayer/isauthenticated.md)
   A Boolean value that indicates whether a local player has signed in to Game Center.
-- [static let GKPlayerAuthenticationDidChangeNotificationName: NSNotification.Name](../Foundation/NSNotification/Name-swift.struct/GKPlayerAuthenticationDidChangeNotificationName.md)
+- [static let GKPlayerAuthenticationDidChangeNotificationName: NSNotification.Name](../foundation/nsnotification/name-swift.struct/gkplayerauthenticationdidchangenotificationname.md)
   A notification that posts after GameKit authenticates the local player.
 
 

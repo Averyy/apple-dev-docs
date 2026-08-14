@@ -16,7 +16,7 @@ var numberOfItems: Int { get }
 
 ## See Also
 
-- [var count: Int](../Foundation/NSArray/count.md)
+- [var count: Int](../foundation/nsarray/count.md)
   The number of objects in the array.
 - [var itemArray: [NSMenuItem]](nspopupbuttoncell/itemarray.md)
   An array of [`NSMenuItem`](nsmenuitem.md) objects that represent the items in the menu.

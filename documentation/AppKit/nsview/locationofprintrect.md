@@ -20,7 +20,7 @@ A point to be used for setting the origin for `aRect`, whose size the view can e
 
 #### Discussion
 
-The default implementation places `aRect` according to the status of the [`NSPrintInfo`](nsprintinfo.md) object for the print job. By default it places the image in the upper-left corner of the page, but if the `NSPrintInfo` methods [`isHorizontallyCentered`](nsprintinfo/ishorizontallycentered.md) or [`isVerticallyCentered`](nsprintinfo/isverticallycentered.md) return [`true`](https://developer.apple.com/documentation/Swift/true), it centers a single-page image along the appropriate axis. A multiple-page document, however, is always placed so the divided pieces can be assembled at their edges.
+The default implementation places `aRect` according to the status of the [`NSPrintInfo`](nsprintinfo.md) object for the print job. By default it places the image in the upper-left corner of the page, but if the `NSPrintInfo` methods [`isHorizontallyCentered`](nsprintinfo/ishorizontallycentered.md) or [`isVerticallyCentered`](nsprintinfo/isverticallycentered.md) return [`true`](https://developer.apple.com/documentation/swift/true), it centers a single-page image along the appropriate axis. A multiple-page document, however, is always placed so the divided pieces can be assembled at their edges.
 
 ## Parameters
 

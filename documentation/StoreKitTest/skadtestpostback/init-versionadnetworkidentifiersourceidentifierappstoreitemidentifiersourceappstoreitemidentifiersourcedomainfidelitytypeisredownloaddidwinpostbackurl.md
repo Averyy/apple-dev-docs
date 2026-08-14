@@ -18,7 +18,7 @@ init?(version: SKAdTestPostbackVersion, adNetworkIdentifier: String, sourceIdent
 
 ## Parameters
 
-- `version`: [`SKAdTestPostbackVersion`](skadtestpostbackversion.md), the SKAdNetwork version. For more information about versions, see [`SKAdNetwork release notes`](https://developer.apple.com/documentation/StoreKit/skadnetwork-release-notes).
+- `version`: [`SKAdTestPostbackVersion`](skadtestpostbackversion.md), the SKAdNetwork version. For more information about versions, see [`SKAdNetwork release notes`](https://developer.apple.com/documentation/storekit/skadnetwork-release-notes).
 - `adNetworkIdentifier`: Your ad network identifier. For the test environment, you may use any lowercased value. You must use the same value to verify the signature after you receive the postback on your server. Also, use the same ad network identifier in the `Info.plist` of the source app in the testing environment.
 - `sourceIdentifier`: Four digits that represent the ad campaign.
 - `appStoreItemIdentifier`: The App Store item identifier of the advertised app.

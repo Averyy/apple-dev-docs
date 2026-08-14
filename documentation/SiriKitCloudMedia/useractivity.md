@@ -26,7 +26,7 @@ Create a `UserActivity` and provide it in your response to a [`Process a Play Me
 
 ## Properties
 
-- `activityType` (string) *(required)*: A reverse-DNS string that uniquely identifies the activity. Provide the same activity types your app specifies in [`NSUserActivity`](https://developer.apple.com/documentation/Foundation/NSUserActivity) objects.
+- `activityType` (string) *(required)*: A reverse-DNS string that uniquely identifies the activity. Provide the same activity types your app specifies in [`NSUserActivity`](https://developer.apple.com/documentation/foundation/nsuseractivity) objects.
 - `persistentIdentifier` (string): An identifier for this activity.
 - `title` (string): A short description of this activity for logging or debugging purposes.
 - `userInfo` (UserActivity.UserActivityUserInfo): Additional data your service needs to fulfill requests to [`Get a Media Queue`](playmedia-1onzj.md).

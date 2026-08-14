@@ -23,7 +23,7 @@ class GKOctree<ElementType> where ElementType : NSObject
 
 An octree manages its structure to optimize for spatial searches—unlike a basic data structure such as an array or dictionary, an octree can find all elements occupying a specific position or volume very quickly. The octree partitioning strategy divides space into eight octants at each level, as illustrated in [`Figure 1`](gkoctree#1965708.md). When an octant contains more than one object, the tree subdivides that region into eight smaller octants, adding a level to the tree.
 
-![None](https://docs-assets.developer.apple.com/published/7438d4db9a93c3bf5caf8148b6562337/media-1965708%402x.png)
+![None](/images/com.apple.gameplaykit/media-1965708@2x.png)
 
 Octrees can be useful for many tasks in game design. For example:
 
@@ -58,14 +58,14 @@ The [`GKOctree`](gkoctree.md) class is one of three spatial partitioning data st
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

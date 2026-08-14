@@ -47,7 +47,7 @@ func coreML(inputImage: CIImage) -> CIImage {
 }
 ```
 
-![Two photographs of colorful flowers. The photo on the left is clear and crisp with good lighting. In the photo on the right, a Core ML model filter is applied, and the image flowers appear to be made of colorful glass panes.](https://docs-assets.developer.apple.com/published/02df49e79d715e136a5de3a9953b6eec/media-3600002%402x.png)
+![Two photographs of colorful flowers. The photo on the left is clear and crisp with good lighting. In the photo on the right, a Core ML model filter is applied, and the image flowers appear to be made of colorful glass panes.](/images/com.apple.coreimage/media-3600002@2x.png)
 
 ## See Also
 

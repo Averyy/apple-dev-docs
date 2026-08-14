@@ -31,9 +31,9 @@ The spotlight filter uses the following properties:
 
 - **`inputImage`**: An image with the type [`CIImage`](ciimage.md).
 - **`lightPointsAt`**: A [`CIVector`](civector.md) with the x and y positions that the spotlight points at.
-- **`brightness`**: A `float` representing the brightness of the spotlight as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+- **`brightness`**: A `float` representing the brightness of the spotlight as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
 - **`lightPosition`**: A [`CIVector`](civector.md) containing the x and y position of the spotlight.
-- **`concentration`**: A `float` representing the size of the spotlight in pixels as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+- **`concentration`**: A `float` representing the size of the spotlight in pixels as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
 - **`color`**: A [`CIColor`](cicolor.md) representing the spotlight color.
 
 The following code creates a filter that results in only the bottom left of the image becoming visible while the rest of the image gradually becomes transparent:
@@ -50,7 +50,7 @@ func spotlight(inputImage: CIImage) -> CIImage {
 }
 ```
 
-![Two pictures of a large amount of colorful  flowers. The photo on the left shows a group of flowers, in focus, with good light and no effects. In the photo on the right a spotlight  filter is applied, resulting in the photo becoming transparent with the bottom left corner being the most visible glimpse of the original image.](https://docs-assets.developer.apple.com/published/eaa79f2ee90643be0e49bdf0c4b74b11/media-3600004%402x.png)
+![Two pictures of a large amount of colorful  flowers. The photo on the left shows a group of flowers, in focus, with good light and no effects. In the photo on the right a spotlight  filter is applied, resulting in the photo becoming transparent with the bottom left corner being the most visible glimpse of the original image.](/images/com.apple.coreimage/media-3600004@2x.png)
 
 ## See Also
 

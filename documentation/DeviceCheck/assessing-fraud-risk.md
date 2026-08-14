@@ -10,7 +10,7 @@ Your app uses the App Attest service to assert its authenticity. A compromised v
 
 While it isn’t possible to detect fraudulent activity with absolute certainty, App Attest does provide a metric to assess its likelihood. Specifically, you can get an approximate count of unique attestations for your app on a particular device. A count that’s higher than expected might be an indication of a compromised device that’s serving multiple compromised instances of your app. You can use this information to assess your risk.
 
-![A diagram showing that your server sends receipts to an Apple server and receives metrics in return.](https://docs-assets.developer.apple.com/published/174c88ce470d9c9b4ded3df3553d72f2/assessing_fraud_risk-1%402x.png)
+![A diagram showing that your server sends receipts to an Apple server and receives metrics in return.](/images/com.apple.DeviceCheck/assessing_fraud_risk-1@2x.png)
 
 To get the metric, use the receipt that your server extracts from the attestation object, as described in [`Validating apps that connect to your server`](validating-apps-that-connect-to-your-server.md). Send the receipt from your server to an Apple server using an HTTP POST request. The Apple server returns a new receipt that includes the metric. You can also use the new receipt to refresh the metric later, but be sure to do that before the receipt expires.
 
@@ -22,7 +22,7 @@ You request a new receipt by sending an HTTP POST to an Apple server with a body
 Authorization: <JWT>
 ```
 
-Generate the token using the same procedure you use to create a provider authentication token for the Apple Push Notification service (APNs), as described in [`Establishing a token-based connection to APNs`](https://developer.apple.com/documentation/UserNotifications/establishing-a-token-based-connection-to-apns). Be sure to enable the DeviceCheck service when requesting the cryptographic key that you use to encrypt the App Attest token.
+Generate the token using the same procedure you use to create a provider authentication token for the Apple Push Notification service (APNs), as described in [`Establishing a token-based connection to APNs`](https://developer.apple.com/documentation/usernotifications/establishing-a-token-based-connection-to-apns). Be sure to enable the DeviceCheck service when requesting the cryptographic key that you use to encrypt the App Attest token.
 
 Send the request to the `attestationData` endpoint. For example, a `curl` command that does this using a receipt stored in a file called `receipt.bin` might look like:
 
@@ -105,7 +105,7 @@ When you communicate with the server, you may receive one of the following respo
   Use this guide to validate your implementation of verifying the attestation object verification process.
 - [class DCAppAttestService](dcappattestservice.md)
   A service that you use to validate the instance of your app running on a device.
-- [App Attest Environment](../BundleResources/Entitlements/com.apple.developer.devicecheck.appattest-environment.md)
+- [App Attest Environment](../bundleresources/entitlements/com.apple.developer.devicecheck.appattest-environment.md)
   The environment for an app that uses the App Attest service to validate itself.
 
 

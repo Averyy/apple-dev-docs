@@ -28,7 +28,7 @@ You use these attributes only for writing HTML. [`excludedElements`](nsattribute
   Constants for the document type document attribute key.
 - [NSAttributedString.TextLayoutSectionKey](nsattributedstring/textlayoutsectionkey.md)
   Constants for the text layout sections document attribute key.
-- [enum NSTextScalingType](../UIKit/NSTextScalingType.md)
+- [enum NSTextScalingType](../uikit/nstextscalingtype.md)
   Constants that specify the text scaling.
 
 

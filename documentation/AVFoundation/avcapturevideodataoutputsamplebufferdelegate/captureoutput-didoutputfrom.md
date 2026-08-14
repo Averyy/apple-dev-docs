@@ -29,7 +29,7 @@ If you need to reference the `CMSampleBuffer` object outside of the scope of thi
 
 To maintain optimal performance, some sample buffers directly reference pools of memory that may need to be reused by the device system and other capture inputs. This is frequently the case for uncompressed device native capture where memory blocks are copied as little as possible. If multiple sample buffers reference such pools of memory for too long, inputs will no longer be able to copy new samples into memory and those samples will be dropped.
 
-If your application is causing samples to be dropped by retaining the provided [`CMSampleBuffer`](https://developer.apple.com/documentation/CoreMedia/CMSampleBuffer) objects for too long, but it needs access to the sample data for a long period of time, consider copying the data into a new buffer and then releasing the sample buffer (if it was previously retained) so that the memory it references can be reused.
+If your application is causing samples to be dropped by retaining the provided [`CMSampleBuffer`](https://developer.apple.com/documentation/coremedia/cmsamplebuffer) objects for too long, but it needs access to the sample data for a long period of time, consider copying the data into a new buffer and then releasing the sample buffer (if it was previously retained) so that the memory it references can be reused.
 
 ## Parameters
 

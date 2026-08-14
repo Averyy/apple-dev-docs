@@ -16,7 +16,7 @@ let kSecPropertyKeyValue: CFString
 
 #### Discussion
 
-The value is a Core Foundation type, usually a [`CFString`](https://developer.apple.com/documentation/CoreFoundation/CFString), [`CFArray`](https://developer.apple.com/documentation/CoreFoundation/CFArray), or [`CFDictionary`](https://developer.apple.com/documentation/CoreFoundation/CFDictionary) object.
+The value is a Core Foundation type, usually a [`CFString`](https://developer.apple.com/documentation/corefoundation/cfstring), [`CFArray`](https://developer.apple.com/documentation/corefoundation/cfarray), or [`CFDictionary`](https://developer.apple.com/documentation/corefoundation/cfdictionary) object.
 
 
 ---

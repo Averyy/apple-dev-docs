@@ -3,6 +3,8 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
+An administrator for a subscription.
+
 ## Declaration
 
 ```swift
@@ -11,10 +13,10 @@ object ResponseSubscriptionAdmin
 
 ## Properties
 
-- `adamId` (int64)
-- `clientUserId` (string)
-- `idHash` (string)
-- `userStatus` (string)
+- `adamId` (int64): The Adam ID for the subscription that the user administers.
+- `clientUserId` (string): The client user identifier for the administrator.
+- `idHash` (string): The hash of the user’s identifier.
+- `userStatus` (string): The current association state of the user. The server includes this key only when the request sets the `includeUserState` query parameter to `true`.
 
 ## See Also
 
@@ -41,11 +43,13 @@ object ResponseSubscriptionAdmin
 - [object ManageSubscriptionsRequest](managesubscriptionsrequest.md)
   The request for subscription management.
 - [object ManageSubscriptionAdminsRequest](managesubscriptionadminsrequest.md)
+  The request body for adding or removing subscription administrators.
 - [object ManageSubscriptionAdminsResponse](managesubscriptionadminsresponse.md)
+  The confirmation response that the server returns after adding or removing subscription administrators.
+- [object SubscriptionManagementResponse](subscriptionmanagementresponse.md)
+  A confirmation response that reports your device management service’s subscription management support.
 - [object MdmInfo](mdminfo.md)
   Information about the MDM client.
-- [object EventResponse](eventresponse.md)
-  The response that contains the event identifier.
 
 
 ---

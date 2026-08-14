@@ -31,14 +31,14 @@ Quartz constructs the affine transform as follows:
 - Computes the effective rectangle by intersecting the rectangle associated with `box` and the `/MediaBox` entry of the specified page.
 - Rotates the effective rectangle according to the page’s `/Rotate` entry.
 - Centers the resulting rectangle on `rect`.If the value of the `rotate` parameter is non-zero, then the rectangle is rotated clockwise by rotate degrees. The value of `rotate` must be a multiple of 90.
-- Scales the rectangle, if necessary, so that it coincides with the edges of `rect`. If the value of `preserveAspectRatio` parameter is [`true`](https://developer.apple.com/documentation/Swift/true), then the final rectangle coincides with the edges of `rect` only in the more restrictive dimension.
+- Scales the rectangle, if necessary, so that it coincides with the edges of `rect`. If the value of `preserveAspectRatio` parameter is [`true`](https://developer.apple.com/documentation/swift/true), then the final rectangle coincides with the edges of `rect` only in the more restrictive dimension.
 
 ## Parameters
 
 - `box`: A constant that specifies the type of box. For possible values, see [`CGPDFBox`](cgpdfbox.md).
 - `rect`: A Quartz rectangle.
 - `rotate`: An integer, that must be a multiple of `90`, that specifies the angle by which the specified rectangle is rotated clockwise.
-- `preserveAspectRatio`: A Boolean value that specifies whether or not the aspect ratio should be preserved. A value of [`true`](https://developer.apple.com/documentation/Swift/true) specifies that the aspect ratio should be preserved.
+- `preserveAspectRatio`: A Boolean value that specifies whether or not the aspect ratio should be preserved. A value of [`true`](https://developer.apple.com/documentation/swift/true) specifies that the aspect ratio should be preserved.
 
 ## See Also
 

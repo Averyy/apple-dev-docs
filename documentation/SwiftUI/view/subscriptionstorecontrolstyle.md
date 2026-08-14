@@ -23,7 +23,7 @@ func subscriptionStoreControlStyle(_ style: some SubscriptionStoreControlStyle) 
 
 #### Discussion
 
-This view modifier set the style of controls for [`SubscriptionStoreView`](https://developer.apple.com/documentation/StoreKit/SubscriptionStoreView) instances within a view.
+This view modifier set the style of controls for [`SubscriptionStoreView`](https://developer.apple.com/documentation/storekit/subscriptionstoreview) instances within a view.
 
 ## See Also
 

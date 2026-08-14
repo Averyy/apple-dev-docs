@@ -23,7 +23,7 @@ func displaceWithNoises(x xDisplacementNoise: GKNoise, y yDisplacementNoise: GKN
 
 For each position in the noise field, this method first constructs a vector by sampling from the same position in the `xDisplacementNoise`, `yDisplacementNoise`, and `zDisplacementNoise` noise objects. Then this method uses that vector to shift the location of the noise value at that position. By applying different types of noise to each parameter, you can create different kinds of distortion effects. For example, passing [`GKCylindersNoiseSource`](gkcylindersnoisesource.md) output to one parameter and [`GKConstantNoiseSource`](gkconstantnoisesource.md) to the other two, you can add horizontal, vertical, or transverse waves to the noise.
 
-![None](https://docs-assets.developer.apple.com/published/66bfc9b63990c5fbe8d343cb94d5b561/media-2556416%402x.png)
+![None](/images/com.apple.gameplaykit/media-2556416@2x.png)
 
 ## Parameters
 

@@ -10,7 +10,7 @@ Use a strings dictionary file to ensure correct localization of strings that con
 
 Languages have different grammatical rules for handling plurals of nouns and units. So if you localize formatted strings that contain variable amounts, use a `.stringsdict` file to provide a different translation for each plural form in the language.
 
-For example, if you pass the `%d home(s) found` formatted string to the [`NSLocalizedString`](https://developer.apple.com/documentation/Foundation/NSLocalizedString) macro or similar API, such as the [`Text`](https://developer.apple.com/documentation/SwiftUI/Text) structure, you can use the a `.stringsdict` file to return different versions of the string. In English, you can return `one home found` or `1 home found` when `d` is `1`, and `%d homes found` when `d` is greater than `1`. For other languages, the `.stringsdict` file can have more or fewer plural variants of a formatted string.
+For example, if you pass the `%d home(s) found` formatted string to the [`NSLocalizedString`](https://developer.apple.com/documentation/foundation/nslocalizedstring) macro or similar API, such as the [`Text`](https://developer.apple.com/documentation/swiftui/text) structure, you can use the a `.stringsdict` file to return different versions of the string. In English, you can return `one home found` or `1 home found` when `d` is `1`, and `%d homes found` when `d` is greater than `1`. For other languages, the `.stringsdict` file can have more or fewer plural variants of a formatted string.
 
 Xcode automatically handles `.stringsdict` files for you when you export and import localizations. However, you need to know the format of a `.stringsdict` file to localize it in the development language and other languages if you don’t use a localization service.
 
@@ -63,7 +63,7 @@ For example, enter separate dictionaries for the user-facing formatted strings y
 </plist>
 ```
 
-The variable dictionary for each formatted string determines which string returns from the [`Text`](https://developer.apple.com/documentation/SwiftUI/Text) structure, [`NSLocalizedString`](https://developer.apple.com/documentation/Foundation/NSLocalizedString) macro, or similar API in your code. It contains a key-value pair for each grammatical plural variant in the language, called a *category*.
+The variable dictionary for each formatted string determines which string returns from the [`Text`](https://developer.apple.com/documentation/swiftui/text) structure, [`NSLocalizedString`](https://developer.apple.com/documentation/foundation/nslocalizedstring) macro, or similar API in your code. It contains a key-value pair for each grammatical plural variant in the language, called a *category*.
 
 For example, the following `.stringsdict` file with English localization contains plural variants for the `zero`, `one`, and `other` categories. For the `%d home(s) found` formatted string, the API returns `No homes found` for `0`, `%d home found `for` 1`, and `%d homes found` for `other` values.
 

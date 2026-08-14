@@ -32,12 +32,12 @@ Your application should not install a coercion handler in a system coercion hand
 
 ## Parameters
 
-- `fromType`: The descriptor type of the data coerced by the handler. For a list of AppleScript’s predefined descriptor types, see  . See  .
-- `toType`:  If there was already an entry in the specified coercion handler table for the same source descriptor type and result descriptor type, the existing entry is replaced. See  .
-- `handler`: A universal procedure pointer to the coercion handler function to install. See  .
+- `fromType`: The descriptor type of the data coerced by the handler. For a list of AppleScript’s predefined descriptor types, see [`Descriptor Type Constants`](apple_events/1542788-descriptor_type_constants.md). See [`DescType`](desctype.md).
+- `toType`: The descriptor type of the resulting data. For a list of AppleScript’s predefined descriptor types, see [`Descriptor Type Constants`](apple_events/1542788-descriptor_type_constants.md).  If there was already an entry in the specified coercion handler table for the same source descriptor type and result descriptor type, the existing entry is replaced. See [`DescType`](desctype.md).
+- `handler`: A universal procedure pointer to the coercion handler function to install. See [`AECoercionHandlerUPP`](aecoercionhandlerupp.md).
 - `handlerRefcon`: A reference constant. The Apple Event Manager passes this value to the handler each time it calls it. If your handler doesn’t require a reference constant, pass 0 for this parameter.
-- `fromTypeIsDesc`: Specifies the form of the data to coerce. Pass   if the coercion handler expects the data as a descriptor or   if the coercion handler expects a pointer to the data. The Apple Event Manager can provide a pointer to data more efficiently than it can provide a descriptor, so all coercion functions should accept a pointer to data if possible.
-- `isSysHandler`: Specifies the coercion table to add the handler to. Pass   to add the handler to the system coercion table or   to add the handler to your application’s coercion table. Use of the system coercion table is not recommended.
+- `fromTypeIsDesc`: Specifies the form of the data to coerce. Pass `TRUE` if the coercion handler expects the data as a descriptor or `FALSE` if the coercion handler expects a pointer to the data. The Apple Event Manager can provide a pointer to data more efficiently than it can provide a descriptor, so all coercion functions should accept a pointer to data if possible.
+- `isSysHandler`: Specifies the coercion table to add the handler to. Pass `TRUE` to add the handler to the system coercion table or `FALSE` to add the handler to your application’s coercion table. Use of the system coercion table is not recommended.
 
 ## See Also
 

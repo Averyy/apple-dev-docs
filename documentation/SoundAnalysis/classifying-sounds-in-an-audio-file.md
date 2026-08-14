@@ -17,11 +17,11 @@ let version1 = SNClassifierIdentifier.version1
 let request = try SNClassifySoundRequest(classifierIdentifier: version1)
 ```
 
-Alternatively, you can create a sound request that uses a custom Core ML model. For example, you can train your own sound classifier with Create ML’s [`MLSoundClassifier`](https://developer.apple.com/documentation/CreateML/MLSoundClassifier).
+Alternatively, you can create a sound request that uses a custom Core ML model. For example, you can train your own sound classifier with Create ML’s [`MLSoundClassifier`](https://developer.apple.com/documentation/createml/mlsoundclassifier).
 
 Create an [`SNClassifySoundRequest`](snclassifysoundrequest.md) with a custom sound classifier model:
 
-1. Add a sound classifier’s [`Core ML`](https://developer.apple.com/documentation/CoreML) model file to your project (see [`Integrating a Core ML Model into Your App`](https://developer.apple.com/documentation/CoreML/integrating-a-core-ml-model-into-your-app)).
+1. Add a sound classifier’s [`Core ML`](https://developer.apple.com/documentation/coreml) model file to your project (see [`Integrating a Core ML Model into Your App`](https://developer.apple.com/documentation/coreml/integrating-a-core-ml-model-into-your-app)).
 2. Create an instance of the model’s wrapper class. Xcode automatically generates a class with the same name (minus the `mlmodel` extension).
 3. Pass the instance’s `model` property to the [`init(mlModel:)`](snclassifysoundrequest/init(mlmodel:)-6rmee.md) initializer.
 
@@ -97,7 +97,7 @@ func createAnalyzer(audioFileURL: URL) -> SNAudioFileAnalyzer? {
 }
 ```
 
-> 💡 **Tip**:  Audio file analyzers work with any compressed or uncompressed audio file format that [`Core Audio`](https://developer.apple.com/documentation/CoreAudio) supports.
+> 💡 **Tip**:  Audio file analyzers work with any compressed or uncompressed audio file format that [`Core Audio`](https://developer.apple.com/documentation/coreaudio) supports.
 
 Add your sound classification request and results observer to the analyzer by calling the [`add(_:withObserver:)`](snaudiofileanalyzer/add(_:withobserver:).md) method.
 

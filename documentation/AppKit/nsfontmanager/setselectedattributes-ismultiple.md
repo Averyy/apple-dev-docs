@@ -21,7 +21,7 @@ This method is used primarily by `NSTextView`.
 ## Parameters
 
 - `attributes`: The new attributes.
-- `flag`: If [`true`](https://developer.apple.com/documentation/Swift/true), informs the panel that multiple fonts or attributes are enclosed within the selection.
+- `flag`: If [`true`](https://developer.apple.com/documentation/swift/true), informs the panel that multiple fonts or attributes are enclosed within the selection.
 
 ## See Also
 

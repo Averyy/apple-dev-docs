@@ -16,17 +16,17 @@ For example code using the fast path, see [`Extracting phone numbers from text i
 
 - **Accurate**: The accurate path uses a neural network to find text in terms of strings and lines, and then performs further analysis to find individual words and sentences. This approach is much more in line with how humans read text.
 
-For example code using the accurate path, see [`Structuring recognized text on a document`](https://developer.apple.com/documentation/VisionKit/structuring-recognized-text-on-a-document).
+For example code using the accurate path, see [`Structuring recognized text on a document`](https://developer.apple.com/documentation/visionkit/structuring-recognized-text-on-a-document).
 
 Using either path, you may optionally apply a language-correction phase based on Natural Language Processing (NLP) to minimize the potential for misreadings.
 
-![An illustration contrasting the Vision framework’s fast text-recognition path with its accurate text-recognition path. ](https://docs-assets.developer.apple.com/published/f79b11e3d4a11c918935c5267ed1999e/media-3616311%402x.png)
+![An illustration contrasting the Vision framework’s fast text-recognition path with its accurate text-recognition path. ](/images/Vision/media-3616311@2x.png)
 
 > **Note**:  Using Vision’s text-recognition features is similar to performing other Vision operations, where you perform computer vision requests on an image and retrieve the resulting observations. If you’re new to the Vision framework, see [`Detecting Objects in Still Images`](detecting-objects-in-still-images.md).
 
 ##### Perform a Text Recognition Request
 
-Vision provides its text-recognition capabilities through [`VNRecognizeTextRequest`](vnrecognizetextrequest.md), an image-based request type that finds and extracts text in images. The following example shows how to use [`VNImageRequestHandler`](vnimagerequesthandler.md) to perform a [`VNRecognizeTextRequest`](vnrecognizetextrequest.md) for recognizing text in the specified [`CGImage`](https://developer.apple.com/documentation/CoreGraphics/CGImage).
+Vision provides its text-recognition capabilities through [`VNRecognizeTextRequest`](vnrecognizetextrequest.md), an image-based request type that finds and extracts text in images. The following example shows how to use [`VNImageRequestHandler`](vnimagerequesthandler.md) to perform a [`VNRecognizeTextRequest`](vnrecognizetextrequest.md) for recognizing text in the specified [`CGImage`](https://developer.apple.com/documentation/coregraphics/cgimage).
 
 ```swift
 // Get the CGImage on which to perform requests.
@@ -68,7 +68,7 @@ func recognizeTextHandler(request: VNRequest, error: Error?) {
 }
 ```
 
-If you’d like to render the bounding rectangles around recognized text in your user interface, you can also retrieve that information from the observation. The rectangles it provides are in normalized coordinates. To render them correctly in your user interface, convert [`CGRect`](https://developer.apple.com/documentation/CoreFoundation/CGRect) instances from normalized coordinates to image coordinates by using the [`VNImageRectForNormalizedRect(_:_:_:)`](vnimagerectfornormalizedrect(_:_:_:).md) function as shown below.
+If you’d like to render the bounding rectangles around recognized text in your user interface, you can also retrieve that information from the observation. The rectangles it provides are in normalized coordinates. To render them correctly in your user interface, convert [`CGRect`](https://developer.apple.com/documentation/corefoundation/cgrect) instances from normalized coordinates to image coordinates by using the [`VNImageRectForNormalizedRect(_:_:_:)`](vnimagerectfornormalizedrect(_:_:_:).md) function as shown below.
 
 ```swift
 let boundingRects: [CGRect] = observations.compactMap { observation in
@@ -104,7 +104,7 @@ Enabling language correction on the request helps minimize common recognition er
 
 ## See Also
 
-- [Structuring recognized text on a document](../VisionKit/structuring-recognized-text-on-a-document.md)
+- [Structuring recognized text on a document](../visionkit/structuring-recognized-text-on-a-document.md)
   Detect, recognize, and structure text on a business card or receipt using Vision and VisionKit.
 - [Extracting phone numbers from text in images](extracting-phone-numbers-from-text-in-images.md)
   Analyze and filter phone numbers from text in live capture by using Vision.

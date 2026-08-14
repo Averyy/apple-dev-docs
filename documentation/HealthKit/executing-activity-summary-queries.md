@@ -6,7 +6,7 @@ Create and run activity summary queries.
 
 #### Overview
 
-Use activity summary queries to read [`HKActivitySummary`](hkactivitysummary.md) objects from the HealthKit store. Apps can display summary information using an activity ring view ([`HKActivityRingView`](https://developer.apple.com/documentation/healthkitui/hkactivityringview) on iOS or [`WKInterfaceActivityRing`](https://developer.apple.com/documentation/WatchKit/WKInterfaceActivityRing) on watchOS).
+Use activity summary queries to read [`HKActivitySummary`](hkactivitysummary.md) objects from the HealthKit store. Apps can display summary information using an activity ring view ([`HKActivityRingView`](https://developer.apple.com/documentation/healthkitui/hkactivityringview) on iOS or [`WKInterfaceActivityRing`](https://developer.apple.com/documentation/watchkit/wkinterfaceactivityring) on watchOS).
 
 ##### Create the Predicate
 

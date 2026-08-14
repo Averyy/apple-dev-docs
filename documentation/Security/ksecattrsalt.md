@@ -16,7 +16,7 @@ let kSecAttrSalt: CFString
 
 #### Discussion
 
-The corresponding value is of type [`CFData`](https://developer.apple.com/documentation/CoreFoundation/CFData) that indicates the salt to use with this cryptographic key.
+The corresponding value is of type [`CFData`](https://developer.apple.com/documentation/corefoundation/cfdata) that indicates the salt to use with this cryptographic key.
 
 
 ---

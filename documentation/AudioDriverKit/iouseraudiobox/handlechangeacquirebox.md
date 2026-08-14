@@ -16,11 +16,11 @@ virtual kern_return_t HandleChangeAcquireBox(bool in_acquire);
 
 #### Return Value
 
-[`kIOReturnSuccess`](https://developer.apple.com/documentation/DriverKit/kIOReturnSuccess) on success, or another value if an error occurs. For a list of error codes, see [`Error Codes`](https://developer.apple.com/documentation/DriverKit/error-codes).
+[`kIOReturnSuccess`](https://developer.apple.com/documentation/driverkit/kioreturnsuccess) on success, or another value if an error occurs. For a list of error codes, see [`Error Codes`](https://developer.apple.com/documentation/driverkit/error-codes).
 
 #### Discussion
 
-The default implementation calls [`SetIsAcquired`](iouseraudiobox/setisacquired.md) and return [`kIOReturnSuccess`](https://developer.apple.com/documentation/DriverKit/kIOReturnSuccess). Custom drivers should override this method to validate the change, then return [`kIOReturnSuccess`](https://developer.apple.com/documentation/DriverKit/kIOReturnSuccess) to confirm the change. If acquisition fails, return the error code returned from [`GetAcquisitionFailure`](iouseraudiobox/getacquisitionfailure.md).
+The default implementation calls [`SetIsAcquired`](iouseraudiobox/setisacquired.md) and return [`kIOReturnSuccess`](https://developer.apple.com/documentation/driverkit/kioreturnsuccess). Custom drivers should override this method to validate the change, then return [`kIOReturnSuccess`](https://developer.apple.com/documentation/driverkit/kioreturnsuccess) to confirm the change. If acquisition fails, return the error code returned from [`GetAcquisitionFailure`](iouseraudiobox/getacquisitionfailure.md).
 
 ## Parameters
 

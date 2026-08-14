@@ -17,11 +17,11 @@ virtual OSData * newReportDescriptor();
 
 #### Return Value
 
-An [`OSData`](https://developer.apple.com/documentation/DriverKit/OSData) object containing the report descriptor for the device.
+An [`OSData`](https://developer.apple.com/documentation/driverkit/osdata) object containing the report descriptor for the device.
 
 #### Discussion
 
-The default implementation of this method fetches the report descriptor from the USB device and packages the resulting data into an [`OSData`](https://developer.apple.com/documentation/DriverKit/OSData) object.
+The default implementation of this method fetches the report descriptor from the USB device and packages the resulting data into an [`OSData`](https://developer.apple.com/documentation/driverkit/osdata) object.
 
 ## See Also
 

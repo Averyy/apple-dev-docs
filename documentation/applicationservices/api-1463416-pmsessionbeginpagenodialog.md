@@ -35,8 +35,8 @@ Prior to OS X v10.5, the `pageFormat` parameter is ignored. In macOS 10.5 and la
 ## Parameters
 
 - `printSession`: The printing session that provides a context for the print job.
-- `pageFormat`: The page format for the new page. If you pass  , the printing system uses the page format you passed to  .
-- `pageFrame`: You should pass  , as this parameter is currently unsupported.
+- `pageFormat`: The page format for the new page. If you pass `NULL`, the printing system uses the page format you passed to [`PMSessionBeginCGDocumentNoDialog(_:_:_:)`](1460101-pmsessionbegincgdocumentnodialog.md).
+- `pageFrame`: You should pass `NULL`, as this parameter is currently unsupported.
 
 ## See Also
 

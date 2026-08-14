@@ -22,7 +22,7 @@ enum ExternalPurchaseLink
 
 #### Overview
 
-This functionality is only available to apps with the [`com.apple.developer.storekit.external-purchase-link`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.storekit.external-purchase-link) entitlement.
+This functionality is only available to apps with the [`com.apple.developer.storekit.external-purchase-link`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.storekit.external-purchase-link) entitlement.
 
 For more information, see:
 
@@ -36,14 +36,14 @@ For more information, see:
 ## Topics
 
 ### Getting multiple external purchase links
-- [SKExternalPurchaseMultiLink](../BundleResources/Information-Property-List/SKExternalPurchaseMultiLink.md)
+- [SKExternalPurchaseMultiLink](../bundleresources/information-property-list/skexternalpurchasemultilink.md)
   A dictionary that contains an array of URLs to websites where people using your app can make external purchases.
 - [static var eligibleURLs: [URL]?](externalpurchaselink/eligibleurls.md)
   An array of external purchase links for the current storefront that the app configured and from which it chooses.
 - [static func open(url: URL) async throws](externalpurchaselink/open(url:).md)
   Presents a continuation sheet that enables people to choose whether your app shows the indicated URL link for external purchases.
 ### Getting a single external purchase link
-- [SKExternalPurchaseLink](../BundleResources/Information-Property-List/SKExternalPurchaseLink.md)
+- [SKExternalPurchaseLink](../bundleresources/information-property-list/skexternalpurchaselink.md)
   A dictionary that contains URLs to websites where people using your app can make external purchases for supported regions.
 - [static var canOpen: Bool](externalpurchaselink/canopen.md)
   A Boolean value that indicates whether the app can successfully open the configured external purchase link in the current App Store storefront.
@@ -53,16 +53,16 @@ For more information, see:
 ## Relationships
 
 ### Conforms To
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 
-- [com.apple.developer.storekit.external-purchase-link](../BundleResources/Entitlements/com.apple.developer.storekit.external-purchase-link.md)
+- [com.apple.developer.storekit.external-purchase-link](../bundleresources/entitlements/com.apple.developer.storekit.external-purchase-link.md)
   A Boolean value that indicates whether your app can include a link that directs people to a website to make an external purchase.
-- [SKExternalPurchaseMultiLink](../BundleResources/Information-Property-List/SKExternalPurchaseMultiLink.md)
+- [SKExternalPurchaseMultiLink](../bundleresources/information-property-list/skexternalpurchasemultilink.md)
   A dictionary that contains an array of URLs to websites where people using your app can make external purchases.
-- [SKExternalPurchaseLink](../BundleResources/Information-Property-List/SKExternalPurchaseLink.md)
+- [SKExternalPurchaseLink](../bundleresources/information-property-list/skexternalpurchaselink.md)
   A dictionary that contains URLs to websites where people using your app can make external purchases for supported regions.
 
 

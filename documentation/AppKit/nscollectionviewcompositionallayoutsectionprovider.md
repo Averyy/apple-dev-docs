@@ -74,7 +74,7 @@ func createAdaptiveLayout() -> NSCollectionViewLayout {
 
 ## See Also
 
-- [Implementing modern collection views](../UIKit/implementing-modern-collection-views.md)
+- [Implementing modern collection views](../uikit/implementing-modern-collection-views.md)
   Bring compositional layouts to your app and simplify updating your user interface with diffable data sources.
 - [class NSCollectionViewFlowLayout](nscollectionviewflowlayout.md)
   A layout that organizes items into a flexible and configurable arrangement.

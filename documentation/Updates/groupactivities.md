@@ -6,16 +6,16 @@ Learn about important changes to Group Activities.
 
 #### Overview
 
-Browse notable changes in [`Group Activities`](https://developer.apple.com/documentation/GroupActivities).
+Browse notable changes in [`Group Activities`](https://developer.apple.com/documentation/groupactivities).
 
 #### June 2025
 
-- Create shared experiences for people wearing Apple Vision Pro in the same room, starting with visionOS 3. Existing SharePlay apps typically support sharing with people who are nearby but you can adopt the latest API like [`pose`](https://developer.apple.com/documentation/GroupActivities/SystemCoordinator/ParticipantState/pose) and [`isNearbyWithLocalParticipant`](https://developer.apple.com/documentation/GroupActivities/Participant/isNearbyWithLocalParticipant) to create the best experience.
-- Specify which scene to associate with your app’s group activity in visionOS using the [`groupActivityAssociation(_:)`](https://developer.apple.com/documentation/SwiftUI/View/groupActivityAssociation(_:)) SwiftUI view modifier or the [`GroupActivityAssociationInteraction`](https://developer.apple.com/documentation/GroupActivities/GroupActivityAssociationInteraction) UIKit interaction.
+- Create shared experiences for people wearing Apple Vision Pro in the same room, starting with visionOS 3. Existing SharePlay apps typically support sharing with people who are nearby but you can adopt the latest API like [`pose`](https://developer.apple.com/documentation/groupactivities/systemcoordinator/participantstate/pose) and [`isNearbyWithLocalParticipant`](https://developer.apple.com/documentation/groupactivities/participant/isnearbywithlocalparticipant) to create the best experience.
+- Specify which scene to associate with your app’s group activity in visionOS using the [`groupActivityAssociation(_:)`](https://developer.apple.com/documentation/swiftui/view/groupactivityassociation(_:)) SwiftUI view modifier or the [`GroupActivityAssociationInteraction`](https://developer.apple.com/documentation/groupactivities/groupactivityassociationinteraction) UIKit interaction.
 
 #### June 2024
 
-- Customize the placement of spatial Personas in a shared activity using the [`SpatialTemplate`](https://developer.apple.com/documentation/GroupActivities/SpatialTemplate) and [`SpatialTemplateElement`](https://developer.apple.com/documentation/GroupActivities/SpatialTemplateElement) protocols.
+- Customize the placement of spatial Personas in a shared activity using the [`SpatialTemplate`](https://developer.apple.com/documentation/groupactivities/spatialtemplate) and [`SpatialTemplateElement`](https://developer.apple.com/documentation/groupactivities/spatialtemplateelement) protocols.
 
 ## See Also
 

@@ -49,26 +49,26 @@ The following outlines the life cycle of a typical document:
 3. The user requests that the document be integrated with cloud services (optional). You must enable the document for cloud storage. You must also resolve any conflicts between different versions of the same document.
 4. The user closes the document. Call [`close(completionHandler:)`](uidocument/close(completionhandler:).md) on the document instance. [`UIDocument`](uidocument.md) saves the document if there are any unsaved changes.
 
-A typical document-based app calls [`open(completionHandler:)`](uidocument/open(completionhandler:).md), [`close(completionHandler:)`](uidocument/close(completionhandler:).md), and [`save(to:for:completionHandler:)`](uidocument/save(to:for:completionhandler:).md) on the main thread. When the read or save operation kicked off by these methods concludes, the system executes the completion-handler block on the same dispatch queue as the system used to invoke the method, allowing you to complete any tasks contingent on the read or save operation. If the operation isn’t successful, the system passes [`false`](https://developer.apple.com/documentation/Swift/false) to the completion-handler block.
+A typical document-based app calls [`open(completionHandler:)`](uidocument/open(completionhandler:).md), [`close(completionHandler:)`](uidocument/close(completionhandler:).md), and [`save(to:for:completionHandler:)`](uidocument/save(to:for:completionhandler:).md) on the main thread. When the read or save operation kicked off by these methods concludes, the system executes the completion-handler block on the same dispatch queue as the system used to invoke the method, allowing you to complete any tasks contingent on the read or save operation. If the operation isn’t successful, the system passes [`false`](https://developer.apple.com/documentation/swift/false) to the completion-handler block.
 
 ##### Implement the Nsfilepresenter Protocol
 
-The [`UIDocument`](uidocument.md) class adopts the [`NSFilePresenter`](https://developer.apple.com/documentation/Foundation/NSFilePresenter) protocol. When another client attempts to read the document of a [`UIDocument`](uidocument.md)-based app, the system suspends reading until the system provides the [`UIDocument`](uidocument.md) object an opportunity to save any changes made to the document.
+The [`UIDocument`](uidocument.md) class adopts the [`NSFilePresenter`](https://developer.apple.com/documentation/foundation/nsfilepresenter) protocol. When another client attempts to read the document of a [`UIDocument`](uidocument.md)-based app, the system suspends reading until the system provides the [`UIDocument`](uidocument.md) object an opportunity to save any changes made to the document.
 
-Although some implementations do nothing, [`UIDocument`](uidocument.md) implements all [`NSFilePresenter`](https://developer.apple.com/documentation/Foundation/NSFilePresenter) methods. Specifically, [`UIDocument`](uidocument.md):
+Although some implementations do nothing, [`UIDocument`](uidocument.md) implements all [`NSFilePresenter`](https://developer.apple.com/documentation/foundation/nsfilepresenter) methods. Specifically, [`UIDocument`](uidocument.md):
 
-- Implements [`relinquishPresentedItem(toReader:)`](https://developer.apple.com/documentation/Foundation/NSFilePresenter/relinquishPresentedItem(toReader:)) to forward the incoming block to [`performAsynchronousFileAccess(_:)`](uidocument/performasynchronousfileaccess(_:).md)
-- Implements [`relinquishPresentedItem(toWriter:)`](https://developer.apple.com/documentation/Foundation/NSFilePresenter/relinquishPresentedItem(toWriter:)) to check if the file-modification date changed; if the file is newer than before, it calls [`revert(toContentsOf:completionHandler:)`](uidocument/revert(tocontentsof:completionhandler:).md) with the value of the [`fileURL`](uidocument/fileurl.md) as the URL parameter
-- Implements [`presentedItemDidMove(to:)`](https://developer.apple.com/documentation/Foundation/NSFilePresenter/presentedItemDidMove(to:)) to update the document’s file URL ([`fileURL`](uidocument/fileurl.md))
+- Implements [`relinquishPresentedItem(toReader:)`](https://developer.apple.com/documentation/foundation/nsfilepresenter/relinquishpresenteditem(toreader:)) to forward the incoming block to [`performAsynchronousFileAccess(_:)`](uidocument/performasynchronousfileaccess(_:).md)
+- Implements [`relinquishPresentedItem(toWriter:)`](https://developer.apple.com/documentation/foundation/nsfilepresenter/relinquishpresenteditem(towriter:)) to check if the file-modification date changed; if the file is newer than before, it calls [`revert(toContentsOf:completionHandler:)`](uidocument/revert(tocontentsof:completionhandler:).md) with the value of the [`fileURL`](uidocument/fileurl.md) as the URL parameter
+- Implements [`presentedItemDidMove(to:)`](https://developer.apple.com/documentation/foundation/nsfilepresenter/presenteditemdidmove(to:)) to update the document’s file URL ([`fileURL`](uidocument/fileurl.md))
 
-In your [`UIDocument`](uidocument.md) subclass, if you override a [`NSFilePresenter`](https://developer.apple.com/documentation/Foundation/NSFilePresenter) method, you can always invoke the superclass implementation (`super`).
+In your [`UIDocument`](uidocument.md) subclass, if you override a [`NSFilePresenter`](https://developer.apple.com/documentation/foundation/nsfilepresenter) method, you can always invoke the superclass implementation (`super`).
 
 ##### Create a Subclass
 
 Each document-based app must create a subclass of [`UIDocument`](uidocument.md) whose instances represent its documents. The subclassing requirements for most apps are simple:
 
-- For writing operations, implement the [`contents(forType:)`](uidocument/contents(fortype:).md) method to provide a snapshot of document data. The data must be in the form of an [`NSData`](https://developer.apple.com/documentation/Foundation/NSData) object (for flat files) or an [`FileWrapper`](https://developer.apple.com/documentation/Foundation/FileWrapper) object (for file packages). Writing operations are usually initiated through the autosave feature.
-- For reading operations, implement the [`load(fromContents:ofType:)`](uidocument/load(fromcontents:oftype:).md) method to receive an [`NSData`](https://developer.apple.com/documentation/Foundation/NSData) or [`FileWrapper`](https://developer.apple.com/documentation/Foundation/FileWrapper) object and initialize the app’s data structures with it.
+- For writing operations, implement the [`contents(forType:)`](uidocument/contents(fortype:).md) method to provide a snapshot of document data. The data must be in the form of an [`NSData`](https://developer.apple.com/documentation/foundation/nsdata) object (for flat files) or an [`FileWrapper`](https://developer.apple.com/documentation/foundation/filewrapper) object (for file packages). Writing operations are usually initiated through the autosave feature.
+- For reading operations, implement the [`load(fromContents:ofType:)`](uidocument/load(fromcontents:oftype:).md) method to receive an [`NSData`](https://developer.apple.com/documentation/foundation/nsdata) or [`FileWrapper`](https://developer.apple.com/documentation/foundation/filewrapper) object and initialize the app’s data structures with it.
 - Implement change tracking to enable the autosaving feature. See [`Track changes`](uidocument#Track-changes.md) for details.
 - When cloud services are enabled for a document, resolve conflicts between different versions of a document. See [`Resolve conflicts and handle errors`](uidocument#Resolve-conflicts-and-handle-errors.md) for details. The system typically calls the [`contents(forType:)`](uidocument/contents(fortype:).md) and [`load(fromContents:ofType:)`](uidocument/load(fromcontents:oftype:).md) methods on the main queue. More specifically:
 - The system calls the [`contents(forType:)`](uidocument/contents(fortype:).md) method on the queue that the system called the [`save(to:for:completionHandler:)`](uidocument/save(to:for:completionhandler:).md) method on; writing of data takes place on a background thread.
@@ -78,18 +78,18 @@ If you have special requirements for reading and writing document data for which
 
 ###### Track Changes
 
-To enable the autosaving feature of [`UIDocument`](uidocument.md), you must notify it when users make changes to a document. [`UIDocument`](uidocument.md) periodically checks whether the [`hasUnsavedChanges`](uidocument/hasunsavedchanges.md) method returns [`true`](https://developer.apple.com/documentation/Swift/true); if it does, it initiates the save operation for the document.
+To enable the autosaving feature of [`UIDocument`](uidocument.md), you must notify it when users make changes to a document. [`UIDocument`](uidocument.md) periodically checks whether the [`hasUnsavedChanges`](uidocument/hasunsavedchanges.md) method returns [`true`](https://developer.apple.com/documentation/swift/true); if it does, it initiates the save operation for the document.
 
 There are two primary ways to implement change tracking in your [`UIDocument`](uidocument.md) subclass:
 
-- Call the methods of the [`UndoManager`](https://developer.apple.com/documentation/Foundation/UndoManager) class to implement undo and redo for the document. You can access the default [`UndoManager`](https://developer.apple.com/documentation/Foundation/UndoManager) object from the [`undoManager`](uidocument/undomanager.md) property. This is the preferred approach, especially for existing apps that already support undo and redo.
+- Call the methods of the [`UndoManager`](https://developer.apple.com/documentation/foundation/undomanager) class to implement undo and redo for the document. You can access the default [`UndoManager`](https://developer.apple.com/documentation/foundation/undomanager) object from the [`undoManager`](uidocument/undomanager.md) property. This is the preferred approach, especially for existing apps that already support undo and redo.
 - Call the [`updateChangeCount(_:)`](uidocument/updatechangecount(_:).md) method at the appropriate junctures in your code.
 
 ###### Resolve Conflicts and Handle Errors
 
 A [`UIDocument`](uidocument.md) object has a specific state at any moment in its life cycle. You can check the current state by querying the [`documentState`](uidocument/documentstate.md) property, and get notified about changes by observing the [`stateChangedNotification`](uidocument/statechangednotification.md) notification.
 
-If the owner enables a document for iCloud, it’s important to check for conflicting versions and to attempt to resolve conflicts. Listen for the [`stateChangedNotification`](uidocument/statechangednotification.md) notification and then checking if the document state is [`inConflict`](uidocument/state/inconflict.md). This state indicates that there are conflicting versions of the document, which you can access by calling the [`NSFileVersion`](https://developer.apple.com/documentation/Foundation/NSFileVersion) class method [`unresolvedConflictVersionsOfItem(at:)`](https://developer.apple.com/documentation/Foundation/NSFileVersion/unresolvedConflictVersionsOfItem(at:)), passing in the document’s file URL. If you can resolve a conflict correctly without user interaction, do so. Otherwise, discretely notify the user that a conflict exists and let them choose how to resolve it. Possible approaches include:
+If the owner enables a document for iCloud, it’s important to check for conflicting versions and to attempt to resolve conflicts. Listen for the [`stateChangedNotification`](uidocument/statechangednotification.md) notification and then checking if the document state is [`inConflict`](uidocument/state/inconflict.md). This state indicates that there are conflicting versions of the document, which you can access by calling the [`NSFileVersion`](https://developer.apple.com/documentation/foundation/nsfileversion) class method [`unresolvedConflictVersionsOfItem(at:)`](https://developer.apple.com/documentation/foundation/nsfileversion/unresolvedconflictversionsofitem(at:)), passing in the document’s file URL. If you can resolve a conflict correctly without user interaction, do so. Otherwise, discretely notify the user that a conflict exists and let them choose how to resolve it. Possible approaches include:
 
 - Display the conflicting versions, from which a user can pick one or both versions to keep.
 - Display a merged version and giving the user an option to pick it.
@@ -106,7 +106,7 @@ Be sure to read the description for the [`contents(forType:)`](uidocument/conten
 If you app has special requirements for reading or writing document data, it can override methods of [`UIDocument`](uidocument.md) other than [`load(fromContents:ofType:)`](uidocument/load(fromcontents:oftype:).md) and [`contents(forType:)`](uidocument/contents(fortype:).md). These requirements often include the following:
 
 - Incremental reading and writing of large data files Override the [`read(from:)`](uidocument/read(from:).md) and [`writeContents(_:to:for:originalContentsURL:)`](uidocument/writecontents(_:to:for:originalcontentsurl:).md) methods, respectively.
-- Custom representations of document data (that is, not an [`NSData`](https://developer.apple.com/documentation/Foundation/NSData) or [`FileWrapper`](https://developer.apple.com/documentation/Foundation/FileWrapper) object) Override the [`read(from:)`](uidocument/read(from:).md) method when reading document data and the [`writeContents(_:to:for:originalContentsURL:)`](uidocument/writecontents(_:to:for:originalcontentsurl:).md) method when writing document data.
+- Custom representations of document data (that is, not an [`NSData`](https://developer.apple.com/documentation/foundation/nsdata) or [`FileWrapper`](https://developer.apple.com/documentation/foundation/filewrapper) object) Override the [`read(from:)`](uidocument/read(from:).md) method when reading document data and the [`writeContents(_:to:for:originalContentsURL:)`](uidocument/writecontents(_:to:for:originalcontentsurl:).md) method when writing document data.
 - Performing actions before or after reading or writing data Override [`open(completionHandler:)`](uidocument/open(completionhandler:).md) and [`save(to:for:completionHandler:)`](uidocument/save(to:for:completionhandler:).md).
 - A custom approach to safe-saving Override the [`writeContents(_:andAttributes:safelyTo:for:)`](uidocument/writecontents(_:andattributes:safelyto:for:).md) method.
 - Changing the file type of a document before it’s saved Override the [`savingFileType`](uidocument/savingfiletype.md) method to return a file type other than the default ([`fileType`](uidocument/filetype.md)). An example of this is an RTF document which, after a user adds an image to it, should be saved as an RTFD document.
@@ -257,20 +257,20 @@ class EditorViewController: UIViewController,
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Inherited By
 - [UIManagedDocument](uimanageddocument.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [Copyable](../Swift/Copyable.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Escapable](../Swift/Escapable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSFilePresenter](../Foundation/NSFilePresenter.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [ProgressReporting](../Foundation/ProgressReporting.md)
+- [CVarArg](../swift/cvararg.md)
+- [Copyable](../swift/copyable.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Escapable](../swift/escapable.md)
+- [Hashable](../swift/hashable.md)
+- [NSFilePresenter](../foundation/nsfilepresenter.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [ProgressReporting](../foundation/progressreporting.md)
 - [UIUserActivityRestoring](uiuseractivityrestoring.md)
 
 ## See Also

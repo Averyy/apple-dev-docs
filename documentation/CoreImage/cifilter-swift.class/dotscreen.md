@@ -30,9 +30,9 @@ This method applies a dot screen filter to an image. The effect generates a mono
 The dot screen filter uses the following properties:
 
 - **`inputImage`**: An image with the type [`CIImage`](ciimage.md).
-- **`center`**: A set of coordinates marking the center of the image as a [`CGPoint`](https://developer.apple.com/documentation/CoreFoundation/CGPoint).
-- **`width`**: A `float` representing the distance between dots in the pattern as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
-- **`sharpness`**: A `float` representing the sharpness of the pattern as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+- **`center`**: A set of coordinates marking the center of the image as a [`CGPoint`](https://developer.apple.com/documentation/corefoundation/cgpoint).
+- **`width`**: A `float` representing the distance between dots in the pattern as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
+- **`sharpness`**: A `float` representing the sharpness of the pattern as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
 
 The following code creates a filter that produces an image containing monochrome dots of detail on a black background:
 
@@ -48,7 +48,7 @@ func dot (inputImage: CIImage) -> CIImage {
 }
 ```
 
-![Two photographs of a wooden barrel of green artichokes. The artichokes are crisp with good lighting. The photo on the left has no modifications to color or detail. In the photo on the right, a dot screen filter is applied, resulting in the image becoming monochrome with an overlay of small dots creating the detail of the image.](https://docs-assets.developer.apple.com/published/8dfb12e72fcd303b50be1aec2f9b8818/media-3595912%402x.png)
+![Two photographs of a wooden barrel of green artichokes. The artichokes are crisp with good lighting. The photo on the left has no modifications to color or detail. In the photo on the right, a dot screen filter is applied, resulting in the image becoming monochrome with an overlay of small dots creating the detail of the image.](/images/com.apple.coreimage/media-3595912@2x.png)
 
 ## See Also
 

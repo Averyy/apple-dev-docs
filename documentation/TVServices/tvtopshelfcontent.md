@@ -21,7 +21,7 @@ Don’t adopt this protocol in your own classes. The TVServices framework adopts
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 ### Conforming Types
 - [TVTopShelfCarouselContent](tvtopshelfcarouselcontent.md)
 - [TVTopShelfInsetContent](tvtopshelfinsetcontent.md)

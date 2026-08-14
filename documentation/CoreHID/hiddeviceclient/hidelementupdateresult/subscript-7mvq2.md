@@ -16,7 +16,7 @@ subscript(originalRequest: HIDDeviceClient.RequestElementUpdate) -> Result<[HIDE
 
 #### Return Value
 
-The result for the specified request which contains a list of updated [`HIDElement.Value`](hidelement/value.md) objects. Access the results using  [`get()`](https://developer.apple.com/documentation/Swift/Result/get()).
+The result for the specified request which contains a list of updated [`HIDElement.Value`](hidelement/value.md) objects. Access the results using  [`get()`](https://developer.apple.com/documentation/swift/result/get()).
 
 #### Overview
 

@@ -20,11 +20,11 @@ Returns an array of items removed from the map.
 
 #### Discussion
 
-This method doesn’t change the map’s visible region. Use [`showItems(items, options)`](map/showitems.md) with a list of items to focus on to update the map’s view.
+This method doesn’t change the map’s visible region. Use [`showItems()`](map/showitems.md) with a list of items to focus on to update the map’s view.
 
 ## Parameters
 
-- `items`: An array of annotations, overlays, or the data returned from [`importGeoJSON(data, callback)`](mapkit/importgeojson.md) to display on the map.
+- `items`: An array of annotations, overlays, or the data returned from [`importGeoJSON()`](mapkit/importgeojson.md) to display on the map.
 
 ## See Also
 

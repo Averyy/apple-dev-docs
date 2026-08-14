@@ -11,7 +11,7 @@ Create a new universe of apps and games for Apple Vision Pro.
 
 visionOS is the operating system that powers Apple Vision Pro. Use visionOS together with familiar tools and technologies to build immersive apps and games for spatial computing.
 
-![Three scenes from visionOS apps that show the Music app, a close-up of the tools associated with a window, and a photo browser.](https://docs-assets.developer.apple.com/published/230b02516973a1e9ed5e1ce8f8e62ccc/overview%402x.png)
+![Three scenes from visionOS apps that show the Music app, a close-up of the tools associated with a window, and a photo browser.](/images/com.apple.visionOS/overview@2x.png)
 
 Developing for visionOS requires a Mac with Apple silicon. Create new apps using SwiftUI to take full advantage of the spectrum of immersion available in visionOS. If you have an existing iPad or iPhone app, add the visionOS destination to your app’s target to gain access to the standard system appearance, and add platform-specific features to create a compelling experience. To provide continuous access to your content in the meantime, deliver a compatible version of your app that runs in visionOS.
 
@@ -19,7 +19,7 @@ Developing for visionOS requires a Mac with Apple silicon. Create new apps using
 
 ##### Explore New Kinds of Interaction
 
-People can select an element by looking at it and tapping their fingers together. They can also pinch, drag, zoom, and rotate objects using specific hand gestures. [`SwiftUI`](https://developer.apple.com/documentation/SwiftUI) provides built-in support for these standard gestures, so rely on them for most of your app’s input. When you want to go beyond the standard gestures, use [`ARKit`](https://developer.apple.com/documentation/ARKit) to create custom gestures.
+People can select an element by looking at it and tapping their fingers together. They can also pinch, drag, zoom, and rotate objects using specific hand gestures. [`SwiftUI`](https://developer.apple.com/documentation/swiftui) provides built-in support for these standard gestures, so rely on them for most of your app’s input. When you want to go beyond the standard gestures, use [`ARKit`](https://developer.apple.com/documentation/arkit) to create custom gestures.
 
 ##### Dive Into Featured Sample Apps
 
@@ -43,7 +43,7 @@ Explore the core concepts for all visionOS apps with Hello World. Understand how
 - [Connecting iPadOS and visionOS apps over the local network](connecting-ipados-and-visionos-apps-over-the-local-network.md)
   Build an iPadOS companion app to control your visionOS app.
 ### Design
-- [Designing for visionOS](https://developer.apple.com/design/Human-Interface-Guidelines/designing-for-visionos)
+- [Designing for visionOS](https://developer.apple.com/design/human-interface-guidelines/designing-for-visionos)
   When people wear Apple Vision Pro, they enter an infinite 3D space where they can engage with your app or game while staying connected to their surroundings.
 - [Adopting best practices for privacy and user preferences](adopting-best-practices-for-privacy.md)
   Minimize your use of sensitive information and provide a clear statement of what information you do use and how you use it.
@@ -61,7 +61,7 @@ Explore the core concepts for all visionOS apps with Hello World. Understand how
 - [Adopting best practices for persistent UI](adopting-best-practices-for-scene-restoration.md)
   Create persistent and contextually relevant spatial experiences by managing scene restoration, customizing window behaviors, and surface snapping data.
 ### RealityKit and Reality Composer Pro
-- [Reality Composer Pro](../RealityComposerPro/RealityComposerPro.md)
+- [Reality Composer Pro](../realitycomposerpro/realitycomposerpro.md)
   Build, design, and orchestrate 3D content for your RealityKit apps.
 - [Chaparral Village: Building an immersive visionOS adventure game](chaparral-village-building-an-immersive-visionos-adventure-game.md)
   Create an adventure game using SwiftUI, RealityKit, and Reality Composer Pro 3.
@@ -79,7 +79,7 @@ Explore the core concepts for all visionOS apps with Hello World. Understand how
   Add a deeper level of immersion to media playback in your app with RealityKit and Reality Composer Pro.
 - [Enabling video reflections in an immersive environment](enabling-video-reflections-in-an-immersive-environment.md)
   Create a more immersive experience by adding video reflections in a custom environment.
-- [Combining 2D and 3D views in an immersive app](../RealityKit/combining-2d-and-3d-views-in-an-immersive-app.md)
+- [Combining 2D and 3D views in an immersive app](../realitykit/combining-2d-and-3d-views-in-an-immersive-app.md)
   Use attachments to place 2D content relative to 3D content in your visionOS app.
 - [Understanding the modular architecture of RealityKit](understanding-the-realitykit-modular-architecture.md)
   Learn how everything fits together in RealityKit.
@@ -95,7 +95,7 @@ Explore the core concepts for all visionOS apps with Hello World. Understand how
   Extend the capabilities of your app by using entities, components, and systems to maintain solid collisions when manipulating entities.
 - [Gaussian splats on visionOS](gaussian-splats-on-visionos.md)
   Use the new Gaussian splat APIs available in RealityKit in visionOS 27.
-- [Manipulating models with RealityKit](../RealityKit/manipulating-models-with-realitykit.md)
+- [Manipulating models with RealityKit](../realitykit/manipulating-models-with-realitykit.md)
   Interact with detailed 3D models using manipulation and clipping controls.
 ### ARKit
 - [Happy Beam](happybeam.md)
@@ -120,20 +120,20 @@ Explore the core concepts for all visionOS apps with Hello World. Understand how
   Query and react to changes in the position and rotation of Apple Vision Pro.
 - [Drawing in the air and on surfaces with a spatial stylus](drawing-in-the-air-and-on-surfaces-with-a-spatial-stylus.md)
   Create a spatial stylus drawing experience that balances latency and accuracy for both in-air and on-surface drawing.
-- [Preparing spatial accessories for tracking in your visionOS app](../ARKit/preparing-spatial-accessories-for-tracking-in-your-visionos-app.md)
+- [Preparing spatial accessories for tracking in your visionOS app](../arkit/preparing-spatial-accessories-for-tracking-in-your-visionos-app.md)
   Prepare a spatial accessory for tracking by training a reference accessory file and integrating it into your visionOS app.
 - [Working with generic spatial accessories](working-with-generic-spatial-accessories.md)
   Let people place digital replicas of a generic spatial accessory by tracking the accessory with ARKit.
 ### SharePlay
-- [Building a guessing game for visionOS](../GroupActivities/building-a-guessing-game-for-visionos.md)
+- [Building a guessing game for visionOS](../groupactivities/building-a-guessing-game-for-visionos.md)
   Create a team-based guessing game for visionOS using Group Activities.
 - [Implementing SharePlay for immersive spaces in visionOS](implementing-shareplay-for-immersive-spaces-in-visionos.md)
   Enable collaborative spatial experiences by using SharePlay to synchronize 3D content among participants.
-- [Configure your visionOS app for sharing with people nearby](../GroupActivities/configure-your-app-for-sharing-with-people-nearby.md)
+- [Configure your visionOS app for sharing with people nearby](../groupactivities/configure-your-app-for-sharing-with-people-nearby.md)
   Create shared experiences for people wearing Vision Pro in the same room and those on FaceTime.
-- [Adding spatial Persona support to an activity](../GroupActivities/adding-spatial-persona-support-to-an-activity.md)
+- [Adding spatial Persona support to an activity](../groupactivities/adding-spatial-persona-support-to-an-activity.md)
   Update your SharePlay activities to support spatial Personas and the shared context when running in visionOS.
-- [Synchronizing group gameplay with TabletopKit](../TabletopKit/synchronizing-group-gameplay-with-tabletopkit.md)
+- [Synchronizing group gameplay with TabletopKit](../tabletopkit/synchronizing-group-gameplay-with-tabletopkit.md)
   Maintain game state across multiple players in a race to capture all the coins.
 ### Video playback
 - [Destination Video](destination-video.md)
@@ -142,30 +142,30 @@ Explore the core concepts for all visionOS apps with Hello World. Understand how
   Show video from devices connected with the Developer Strap in your visionOS app.
 - [Playing immersive media with RealityKit](playing-immersive-media-with-realitykit.md)
   Create an immersive video playback experience with RealityKit.
-- [Rendering stereoscopic video with RealityKit](../RealityKit/rendering-stereoscopic-video-with-realitykit.md)
+- [Rendering stereoscopic video with RealityKit](../realitykit/rendering-stereoscopic-video-with-realitykit.md)
   Render stereoscopic video in visionOS with RealityKit.
-- [Creating a multiview video playback experience in visionOS](../AVKit/creating-a-multiview-video-playback-experience-in-visionos.md)
+- [Creating a multiview video playback experience in visionOS](../avkit/creating-a-multiview-video-playback-experience-in-visionos.md)
   Build an interface that plays multiple videos simultaneously and handles transitions to different experience types gracefully.
-- [Configuring your app for media playback](../AVFoundation/configuring-your-app-for-media-playback.md)
+- [Configuring your app for media playback](../avfoundation/configuring-your-app-for-media-playback.md)
   Configure apps to enable standard media playback behavior.
-- [Adopting the system player interface in visionOS](../AVKit/adopting-the-system-player-interface-in-visionos.md)
+- [Adopting the system player interface in visionOS](../avkit/adopting-the-system-player-interface-in-visionos.md)
   Provide an optimized viewing experience for watching 3D video content.
-- [Controlling the transport behavior of a player](../AVFoundation/controlling-the-transport-behavior-of-a-player.md)
+- [Controlling the transport behavior of a player](../avfoundation/controlling-the-transport-behavior-of-a-player.md)
   Play, pause, and seek through a media presentation.
-- [Monitoring playback progress in your app](../AVFoundation/monitoring-playback-progress-in-your-app.md)
+- [Monitoring playback progress in your app](../avfoundation/monitoring-playback-progress-in-your-app.md)
   Observe the playback of a media asset to update your app’s user-interface state.
-- [Trimming and exporting media in visionOS](../AVKit/trimming-and-exporting-media-in-visionos.md)
+- [Trimming and exporting media in visionOS](../avkit/trimming-and-exporting-media-in-visionos.md)
   Display standard controls in your app to edit the timeline of the currently playing media.
 ### Xcode and Simulator
-- [Configuring your app icon using an asset catalog](../Xcode/configuring-your-app-icon.md)
+- [Configuring your app icon using an asset catalog](../xcode/configuring-your-app-icon.md)
   Add app icon variations to an asset catalog that represents your app in places such as the App Store, the Home Screen, Settings, and search results.
-- [Diagnosing and resolving bugs in your running app](../Xcode/diagnosing-and-resolving-bugs-in-your-running-app.md)
+- [Diagnosing and resolving bugs in your running app](../xcode/diagnosing-and-resolving-bugs-in-your-running-app.md)
   Inspect your app to isolate bugs, locate crashes, identify excess system-resource usage, visualize memory bugs, and investigate problems in its appearance.
-- [Diagnosing issues in the appearance of a running app](../Xcode/diagnosing-issues-in-the-appearance-of-your-running-app.md)
+- [Diagnosing issues in the appearance of a running app](../xcode/diagnosing-issues-in-the-appearance-of-your-running-app.md)
   Inspect your running app to investigate issues in the appearance and placement of the content it displays.
-- [Running your app on simulated or physical devices](../Xcode/running-your-app-on-simulated-or-physical-devices.md)
+- [Running your app on simulated or physical devices](../xcode/running-your-app-on-simulated-or-physical-devices.md)
   Launch your app on a simulated iOS, iPadOS, tvOS, visionOS, or watchOS device, or on a physical device paired with your Mac.
-- [Device Hub](../Xcode/device-hub.md)
+- [Device Hub](../xcode/device-hub.md)
   Manage the simulated and physical devices that you use to test your app.
 ### Performance
 - [Creating a performance plan for your visionOS app](creating-a-performance-plan-for-visionos-app.md)

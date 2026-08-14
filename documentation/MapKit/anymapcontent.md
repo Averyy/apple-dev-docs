@@ -35,8 +35,8 @@ An `AnyMapContent` allows changing the type of content used in a given map view.
 
 ### Conforms To
 - [MapContent](mapcontent.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 
 ---

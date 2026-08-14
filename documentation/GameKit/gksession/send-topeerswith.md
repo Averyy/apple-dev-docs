@@ -28,7 +28,7 @@ The session queues the data and transmits it in the order it was queued. Data tr
 ## Parameters
 
 - `data`: The bytes to be sent.
-- `peers`: An array of [`NSString`](https://developer.apple.com/documentation/Foundation/NSString) objects identifying the peers that should receive the data.
+- `peers`: An array of [`NSString`](https://developer.apple.com/documentation/foundation/nsstring) objects identifying the peers that should receive the data.
 - `mode`: The mechanism used to send the data.
 
 ## See Also

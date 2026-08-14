@@ -22,7 +22,7 @@ let kSecAttrCreationDate: CFString
 
 #### Discussion
 
-The corresponding value is of type [`CFDate`](https://developer.apple.com/documentation/CoreFoundation/CFDate) and represents the date the item was created. Read only.
+The corresponding value is of type [`CFDate`](https://developer.apple.com/documentation/corefoundation/cfdate) and represents the date the item was created. Read only.
 
 
 ---

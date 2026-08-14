@@ -23,7 +23,7 @@ var debugDescription: String { get }
 
 #### Discussion
 
-Use this property to access debugging information about this object and the underlying [`CLLocation`](https://developer.apple.com/documentation/CoreLocation/CLLocation) this object wraps.
+Use this property to access debugging information about this object and the underlying [`CLLocation`](https://developer.apple.com/documentation/corelocation/cllocation) this object wraps.
 
 ## See Also
 

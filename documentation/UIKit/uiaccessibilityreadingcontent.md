@@ -40,7 +40,7 @@ To give VoiceOver users a superior, continuous reading experience, you can imple
 
 ## See Also
 
-- [UIAccessibilityFocus](../ObjectiveC/uiaccessibilityfocus.md)
+- [UIAccessibilityFocus](../objectivec/uiaccessibilityfocus.md)
   An informal protocol that provides a way to determine whether an assistive app, such as VoiceOver, has focus on an accessible element.
 - [protocol UIAccessibilityIdentification](uiaccessibilityidentification.md)
   Methods that associate a unique identifier with elements in your user interface.

@@ -22,7 +22,7 @@ let kCTFontVariationAxisMinimumValueKey: CFString
 
 #### Discussion
 
-Key to get the variation axis minimum value as a reference to a [`CFNumber`](https://developer.apple.com/documentation/CoreFoundation/CFNumber) object.
+Key to get the variation axis minimum value as a reference to a [`CFNumber`](https://developer.apple.com/documentation/corefoundation/cfnumber) object.
 
 ## See Also
 

@@ -16,7 +16,7 @@ You can configure your own models so RealityKit’s puppeteering functionality c
 
 The easiest way to configure your model for puppeteering is to rig it to the skeleton from the robot model in the [`Capturing Body Motion in 3D`](capturing-body-motion-in-3d.md) sample. By using the robot model’s skeleton to rig your own model, you’ll start with the correct bone names and hierarchy. You can download a zip file containing both the USDZ and FBX versions of the [`robot character`](https://developer.apple.comhttps://developer.apple.com/sample-code/ar/Biped-Robot.zip).
 
-> **Note**:  If you already have a rigged humanoid model and prefer to modify your existing skeleton to match [`RealityKit`](https://developer.apple.com/documentation/RealityKit)‘s expected format instead of rebinding your model to the provided skeleton, you can find detailed information on the joint names and hierarchy required by ARKit’s motion capture functionality in [`Validating a Model for Motion Capture`](validating-a-model-for-motion-capture.md).
+> **Note**:  If you already have a rigged humanoid model and prefer to modify your existing skeleton to match [`RealityKit`](https://developer.apple.com/documentation/realitykit)‘s expected format instead of rebinding your model to the provided skeleton, you can find detailed information on the joint names and hierarchy required by ARKit’s motion capture functionality in [`Validating a Model for Motion Capture`](validating-a-model-for-motion-capture.md).
 
 ##### Import the Skeleton Into Your 3d Modeling Program
 
@@ -24,7 +24,7 @@ In your 3D-modeling software package (such as Maya, Cinema4D, or Modo), import t
 
 It’s very important that you configure your import settings so that they don’t change the orientation of the imported character or any of the skeleton’s individual joints. After import, the character should be oriented facing the +Z axis, with the top of its head oriented toward the +Y axis, and the character’s left hand pointing along the +X axis. Your scene should also be configured with +Y as the up axis. In some software packages, this orientation requires changing the default scene configuration.
 
-![Illustration of two human-shaped robots, one facing forward in T-pose and the other in profile. For both images, the correct orientation is indicated with a right angle graph in which +Y represents up, +Z represents forward, and +X represents the character’s left.](https://docs-assets.developer.apple.com/published/c6738231bd3bd150144f953350829e3b/ARKit-character-orientation%402x.png)
+![Illustration of two human-shaped robots, one facing forward in T-pose and the other in profile. For both images, the correct orientation is indicated with a right angle graph in which +Y represents up, +Z represents forward, and +X represents the character’s left.](/images/com.apple.arkit/ARKit-character-orientation@2x.png)
 
 > **Note**:  Some 3D software packages predefine which axis runs the length of the bone. You may not be able to export a compatible model from these programs without additional scripting or conversion work.
 
@@ -34,11 +34,11 @@ Once you’ve imported the robot character file, unbind and delete the robot mes
 
 Next, align your mesh to the imported skeleton, then scale, translate, and rotate it until it matches the imported skeleton as closely as you can get it. Finally, freeze transformations on the mesh.
 
-![Illustration showing a character in a T-pose configuration.](https://docs-assets.developer.apple.com/published/03584aaf7c89af006491eb963ecbdcb7/ARKit-tpose-rest-position%402x.png)
+![Illustration showing a character in a T-pose configuration.](/images/com.apple.arkit/ARKit-tpose-rest-position@2x.png)
 
 Finish matching the mesh and armature by moving any joints of the armature that don’t line up correctly with the mesh, making sure that the X axis still points down the length of the bone after you’re done moving it. Many 3D software packages include tools to automatically re-orient joints based on the location of their children. If a re-orienting feature is available in your software package, use it when you’re done moving joints into new locations.
 
-![Illustration showing the bone axis rotation orientation of a character’s arm, with the X axis pointing down the length of the bone.](https://docs-assets.developer.apple.com/published/1e349970f1eb4533d7b65ed46cfbb8cd/ARKit-bone-axis-rotation-orientation%402x.png)
+![Illustration showing the bone axis rotation orientation of a character’s arm, with the X axis pointing down the length of the bone.](/images/com.apple.arkit/ARKit-bone-axis-rotation-orientation@2x.png)
 
 > ❗ **Important**:  The Motion Capture feature doesn’t retarget motion before applying it to your model. If your custom character’s proportions differ substantially from the provided skeleton, the puppeteering functionality may not perform as expected unless you adjust for the differences in your own code.
 
@@ -52,7 +52,7 @@ After you’ve tested your bound mesh and are happy with your vertex weights and
 
 Xcode automatically configures USDZ files imported into an AR application target and adds them to your app bundle when building so they become available to load at runtime.
 
-For more information on loading and using the model once it’s in your Xcode project, see the [`Capturing Body Motion in 3D`](capturing-body-motion-in-3d.md) sample code project, which demonstrates how to load and display a skeletal model contained in a USDZ file as a [`BodyTrackedEntity`](https://developer.apple.com/documentation/RealityKit/BodyTrackedEntity).
+For more information on loading and using the model once it’s in your Xcode project, see the [`Capturing Body Motion in 3D`](capturing-body-motion-in-3d.md) sample code project, which demonstrates how to load and display a skeletal model contained in a USDZ file as a [`BodyTrackedEntity`](https://developer.apple.com/documentation/realitykit/bodytrackedentity).
 
 ## See Also
 

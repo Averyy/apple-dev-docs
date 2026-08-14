@@ -40,7 +40,7 @@ Factory function to create and initialise an IODMACommand in one operation. The 
 - [- initWithRefCon](iodmacommand/1547754-initwithrefcon.md)
 - [- cloneCommand](iodmacommand/1547732-clonecommand.md)
   Creates a new command based on the specification of the current one.
-- [- init](../driverkit/iodmacommand/3645796-init.md)
+- [- init](../driverkit/iodmacommand/init.md)
 - [- free](iodmacommand/1547725-free.md)
 - [MappingOptions](iodmacommand/mappingoptions.md)
   Mapping types to indicate the desired mapper type for translating memory descriptors into I/O DMA Bus addresses.

@@ -41,7 +41,7 @@ func maskToAlpha(inputImage: CIImage) -> CIImage {
 }
 ```
 
-![Two photographs of a triangle, hexagon, circle, and a square arranged in the center of the image on a black background. In the photo on the right, a mask-to-alpha filter is applied. The image no longer has a black background and all of the white shapes are now on a transparent layer.](https://docs-assets.developer.apple.com/published/5cd3d28ef9765c6899603188db7af963/media-3545058%402x.png)
+![Two photographs of a triangle, hexagon, circle, and a square arranged in the center of the image on a black background. In the photo on the right, a mask-to-alpha filter is applied. The image no longer has a black background and all of the white shapes are now on a transparent layer.](/images/com.apple.coreimage/media-3545058@2x.png)
 
 ## See Also
 

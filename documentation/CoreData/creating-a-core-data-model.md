@@ -14,25 +14,25 @@ You can add a Core Data model file to your Xcode project when you create the pro
 
 In the dialog for creating a new project, select the Use Core Data checkbox, and click Next.
 
-![Screenshot showing the Use Core Data checkbox in the options for creating a new Xcode project. The checkbox appears after the language dropdown, and before the checkboxes for including Unit Tests and UI Tests.](https://docs-assets.developer.apple.com/published/19ae17fc660e455d5244f4d43eedb41a/media-3039511%402x.png)
+![Screenshot showing the Use Core Data checkbox in the options for creating a new Xcode project. The checkbox appears after the language dropdown, and before the checkboxes for including Unit Tests and UI Tests.](/images/com.apple.coredata/media-3039511@2x.png)
 
 The resulting project includes an `.xcdatamodeld` file.
 
-![Screenshot showing the .xcdatamodeld file highlighted in the project navigator.](https://docs-assets.developer.apple.com/published/bbbb08e2398531cf02bc029b3aa047e3/media-3080773%402x.png)
+![Screenshot showing the .xcdatamodeld file highlighted in the project navigator.](/images/com.apple.coredata/media-3080773@2x.png)
 
 ##### Add a Core Data Model to an Existing Project
 
 Choose File > New > File and select the iOS platform tab. Scroll down to the Core Data section, select Data Model, and click Next.
 
-![Screenshot showing the Data Model template in the Core Data section of the file template chooser.](https://docs-assets.developer.apple.com/published/9e07aa8d17ce31890e3262cb2434d297/media-3039513%402x.png)
+![Screenshot showing the Data Model template in the Core Data section of the file template chooser.](/images/com.apple.coredata/media-3039513@2x.png)
 
 Name your model file, select its group and targets, and click Create.
 
-![Screenshot showing the dialog for saving a data model file. The filename is selected and immediately editable.](https://docs-assets.developer.apple.com/published/d04d51680b0977d684f13964ef908766/media-3122943%402x.png)
+![Screenshot showing the dialog for saving a data model file. The filename is selected and immediately editable.](/images/com.apple.coredata/media-3122943@2x.png)
 
 Xcode adds an `.xcdatamodeld` file with the specified name to your project.
 
-![Screenshot of Xcode showing the new model file selected in the project navigator.](https://docs-assets.developer.apple.com/published/a7a34ec891b4f73305a50e61a313cd9f/media-3080772%402x.png)
+![Screenshot of Xcode showing the new model file selected in the project navigator.](/images/com.apple.coredata/media-3080772@2x.png)
 
 ## See Also
 

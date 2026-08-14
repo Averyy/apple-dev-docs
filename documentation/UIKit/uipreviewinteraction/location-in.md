@@ -19,7 +19,7 @@ func location(in coordinateSpace: (any UICoordinateSpace)?) -> CGPoint
 
 #### Return Value
 
-The [`CGPoint`](https://developer.apple.com/documentation/CoreFoundation/CGPoint) that represents the current location of the touch, translated into the requested coordinate space.
+The [`CGPoint`](https://developer.apple.com/documentation/corefoundation/cgpoint) that represents the current location of the touch, translated into the requested coordinate space.
 
 #### Discussion
 

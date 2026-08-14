@@ -24,7 +24,7 @@ class PropertyListSerialization
 
 The [`PropertyListSerialization`](propertylistserialization.md) class provides methods that convert a property list to and from several serialized formats. A property list is itself an array or dictionary that contains only [`NSData`](nsdata.md), [`NSString`](nsstring.md), [`NSArray`](nsarray.md), [`NSDictionary`](nsdictionary.md), [`NSDate`](nsdate.md), and [`NSNumber`](nsnumber.md) objects.
 
-Property list objects are toll-free bridged with their respective Core Foundation types ([`CFData`](https://developer.apple.com/documentation/CoreFoundation/CFData), [`CFString`](https://developer.apple.com/documentation/CoreFoundation/CFString), and so on). See [`Toll-Free Bridging`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Conceptual/CocoaEncyclopedia/Toll-FreeBridgin/Toll-FreeBridgin.html#//apple_ref/doc/uid/TP40010810-CH2)  for more information on toll-free bridging.
+Property list objects are toll-free bridged with their respective Core Foundation types ([`CFData`](https://developer.apple.com/documentation/corefoundation/cfdata), [`CFString`](https://developer.apple.com/documentation/corefoundation/cfstring), and so on). See [`Toll-Free Bridging`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Conceptual/CocoaEncyclopedia/Toll-FreeBridgin/Toll-FreeBridgin.html#//apple_ref/doc/uid/TP40010810-CH2)  for more information on toll-free bridging.
 
 ## Topics
 
@@ -73,14 +73,14 @@ Property list objects are toll-free bridged with their respective Core Foundatio
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

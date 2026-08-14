@@ -16,7 +16,7 @@ class let boundsDidChangeNotification: NSNotification.Name
 
 #### Discussion
 
-This notification posts only when the view’s [`postsBoundsChangedNotifications`](nsview/postsboundschangednotifications.md) property is [`true`](https://developer.apple.com/documentation/Swift/true).
+This notification posts only when the view’s [`postsBoundsChangedNotifications`](nsview/postsboundschangednotifications.md) property is [`true`](https://developer.apple.com/documentation/swift/true).
 
 The notification object is the `NSView` object whose bounds rectangle has changed. This notification does not contain a `userInfo` dictionary.
 

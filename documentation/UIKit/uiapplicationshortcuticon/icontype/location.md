@@ -19,7 +19,7 @@ case location
 
 #### Discussion
 
-![None](https://docs-assets.developer.apple.com/published/8ebdb0db8b21398d57e0f374a696d018/media-2934513%402x.png)
+![None](/images/com.apple.uikit/media-2934513@2x.png)
 
 ## See Also
 

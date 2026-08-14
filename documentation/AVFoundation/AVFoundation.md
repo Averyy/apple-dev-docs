@@ -21,7 +21,7 @@ AVFoundation combines several major technology areas that together encompass a w
 ## Topics
 
 ### Essentials
-- [AVFoundation updates](../Updates/AVFoundation.md)
+- [AVFoundation updates](../updates/avfoundation.md)
   Learn about important changes to AVFoundation.
 ### Common
 - [Media assets](media-assets.md)

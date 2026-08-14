@@ -19,7 +19,7 @@ var suppressUsageRecording: Bool { get set }
 
 #### Discussion
 
-Set to [`YES`](https://developer.apple.com/documentation/ObjectiveC/YES) to stop recording and reporting web-usage data.
+Set to [`YES`](https://developer.apple.com/documentation/objectivec/yes) to stop recording and reporting web-usage data.
 
 ## See Also
 

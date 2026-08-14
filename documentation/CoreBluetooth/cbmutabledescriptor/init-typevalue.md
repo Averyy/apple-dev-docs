@@ -26,7 +26,7 @@ A newly initialized mutable descriptor.
 The value type of `value` depends on the type of descriptor:
 
 - The value type of [`CBUUIDCharacteristicUserDescriptionString`](cbuuidcharacteristicuserdescriptionstring.md) is a string you use to provide a human-readable description of the characteristic’s value.
-- The value type of a [`CBUUIDCharacteristicFormatString`](cbuuidcharacteristicformatstring.md) is an [`NSData`](https://developer.apple.com/documentation/Foundation/NSData) object that you use to specify how to format the characteristic’s value for presentation purposes.
+- The value type of a [`CBUUIDCharacteristicFormatString`](cbuuidcharacteristicformatstring.md) is an [`NSData`](https://developer.apple.com/documentation/foundation/nsdata) object that you use to specify how to format the characteristic’s value for presentation purposes.
 
 If you want to create a local characteristic format descriptor, the descriptor’s value must conform to the attribute value of the characteristic format descriptor as defined in the Bluetooth 4.0 specification, Volume 3, Part G, Section 3.3.3.5.
 

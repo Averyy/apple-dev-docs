@@ -24,7 +24,7 @@ var isCameraAssistanceEnabled: Bool { get set }
 
 The default value is `false`.
 
-When `true`, this property leverages [`ARKit`](https://developer.apple.com/documentation/ARKit) to provide a nearby object’s [`distance`](ninearbyobject/distance-9atp7.md) and [`direction`](ninearbyobject/direction-4qh5w.md) in a wider range of environmental conditions.
+When `true`, this property leverages [`ARKit`](https://developer.apple.com/documentation/arkit) to provide a nearby object’s [`distance`](ninearbyobject/distance-9atp7.md) and [`direction`](ninearbyobject/direction-4qh5w.md) in a wider range of environmental conditions.
 
 By studying image captures from the device’s camera, ARKit creates an accurate world model of the user’s physical space. As the user moves, ARKit tracks the device with 6 degrees of freedom, by noting the device’s:
 

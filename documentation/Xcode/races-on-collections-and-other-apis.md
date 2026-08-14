@@ -6,12 +6,12 @@ Detects when one thread accesses a mutable object while another thread is writin
 
 #### Overview
 
-In Xcode 9 and later, the Thread Sanitizer detects unsafe thread accesses of [`Foundation`](https://developer.apple.com/documentation/Foundation) and [`Core Foundation`](https://developer.apple.com/documentation/CoreFoundation) framework APIs. This feature applies to the following collection types:
+In Xcode 9 and later, the Thread Sanitizer detects unsafe thread accesses of [`Foundation`](https://developer.apple.com/documentation/foundation) and [`Core Foundation`](https://developer.apple.com/documentation/corefoundation) framework APIs. This feature applies to the following collection types:
 
-- [`NSMutableArray`](https://developer.apple.com/documentation/Foundation/NSMutableArray)
-- [`NSMutableDictionary`](https://developer.apple.com/documentation/Foundation/NSMutableDictionary)
-- [`CFMutableArray`](https://developer.apple.com/documentation/CoreFoundation/CFMutableArray)
-- [`CFMutableDictionary`](https://developer.apple.com/documentation/CoreFoundation/CFMutableDictionary)
+- [`NSMutableArray`](https://developer.apple.com/documentation/foundation/nsmutablearray)
+- [`NSMutableDictionary`](https://developer.apple.com/documentation/foundation/nsmutabledictionary)
+- [`CFMutableArray`](https://developer.apple.com/documentation/corefoundation/cfmutablearray)
+- [`CFMutableDictionary`](https://developer.apple.com/documentation/corefoundation/cfmutabledictionary)
 
 ##### Collection Race with a Mutable Array
 
@@ -45,7 +45,7 @@ for (id value in array) {
 
 ###### Solution
 
-Use [`Dispatch`](https://developer.apple.com/documentation/Dispatch) APIs to coordinate access to `array` across multiple threads.
+Use [`Dispatch`](https://developer.apple.com/documentation/dispatch) APIs to coordinate access to `array` across multiple threads.
 
 ##### Collection Race with a Mutable Dictionary
 
@@ -77,7 +77,7 @@ dictionary[@"forty-two"] = @42;
 
 ###### Solution
 
-Use [`Dispatch`](https://developer.apple.com/documentation/Dispatch) APIs to coordinate access to `dictionary` across multiple threads.
+Use [`Dispatch`](https://developer.apple.com/documentation/dispatch) APIs to coordinate access to `dictionary` across multiple threads.
 
 ## See Also
 

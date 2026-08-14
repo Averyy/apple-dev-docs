@@ -82,7 +82,7 @@ For more information about the features of a text field, see [`UITextField`](uit
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 ### Inherited By
 - [UISearchTextFieldDelegate](uisearchtextfielddelegate.md)
 

@@ -38,7 +38,7 @@ In iOS, open the Settings app and choose Accessibility > Spoken Content > Voices
 
 ##### Create an App to Provide Voices
 
-The sample creates a host app to customize the list of voices available to the speech synthesis extension, using an App Group to share information between the host app and the audio unit extension. For more information about App Groups, see [`Configuring app groups`](https://developer.apple.com/documentation/Xcode/configuring-app-groups).
+The sample creates a host app to customize the list of voices available to the speech synthesis extension, using an App Group to share information between the host app and the audio unit extension. For more information about App Groups, see [`Configuring app groups`](https://developer.apple.com/documentation/xcode/configuring-app-groups).
 
 ```swift
 let groupDefaults = UserDefaults(suiteName: "group.com.example.apple.samplecode.CustomSpeechSynthesizerExample")
@@ -93,7 +93,7 @@ The sample calls a helper method with the SSML to retrieve a buffer that contain
 
 ##### Provide Audio Buffers to the System
 
-The system calls an audio unit’s rendering block to get a list of audio buffers for playback. The block receives the number of frames the system requests. The sample copies the current buffer’s frames into the target buffer for rendering. When the sample exhausts the available audio buffer, it sets the render action to [`offlineUnitRenderAction_Complete`](https://developer.apple.com/documentation/AudioToolbox/AudioUnitRenderActionFlags/offlineUnitRenderAction_Complete).
+The system calls an audio unit’s rendering block to get a list of audio buffers for playback. The block receives the number of frames the system requests. The sample copies the current buffer’s frames into the target buffer for rendering. When the sample exhausts the available audio buffer, it sets the render action to [`offlineUnitRenderAction_Complete`](https://developer.apple.com/documentation/audiotoolbox/audiounitrenderactionflags/offlineunitrenderaction_complete).
 
 ```swift
 // Iterate through the requested number of frames.

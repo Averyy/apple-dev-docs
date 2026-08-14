@@ -3,7 +3,7 @@
 **Framework**: GameplayKit  
 **Kind**: class
 
-A rule for use in a rule system that uses a Foundation [`NSPredicate`](https://developer.apple.com/documentation/Foundation/NSPredicate) object to evaluate itself.
+A rule for use in a rule system that uses a Foundation [`NSPredicate`](https://developer.apple.com/documentation/foundation/nspredicate) object to evaluate itself.
 
 **Availability**:
 - iOS 9.0+
@@ -21,7 +21,7 @@ class GKNSPredicateRule
 
 #### Overview
 
-The [`GKNSPredicateRule`](gknspredicaterule.md) class is a specialized subclass of the [`GKRule`](gkrule.md) class (which represents rules to be used by [`GKRuleSystem`](gkrulesystem.md) objects). Custom subclasses of [`GKNSPredicateRule`](gknspredicaterule.md) use an [`NSPredicate`](https://developer.apple.com/documentation/Foundation/NSPredicate) object to evaluate a rule, rather than requiring custom logic for evaluation as is the case with custom [`GKRule`](gkrule.md) subclasses.
+The [`GKNSPredicateRule`](gknspredicaterule.md) class is a specialized subclass of the [`GKRule`](gkrule.md) class (which represents rules to be used by [`GKRuleSystem`](gkrulesystem.md) objects). Custom subclasses of [`GKNSPredicateRule`](gknspredicaterule.md) use an [`NSPredicate`](https://developer.apple.com/documentation/foundation/nspredicate) object to evaluate a rule, rather than requiring custom logic for evaluation as is the case with custom [`GKRule`](gkrule.md) subclasses.
 
 For more information about rules and rule systems, read [`Rule Systems`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Conceptual/GameplayKit_Guide/RuleSystems.html#//apple_ref/doc/uid/TP40015172-CH10) in [`GameplayKit Programming Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Conceptual/GameplayKit_Guide/index.html#//apple_ref/doc/uid/TP40015172).
 
@@ -35,7 +35,7 @@ Override the [`performAction(in:)`](gkrule/performaction(in:).md) method to perf
 
 ###### Alternatives to Subclassing
 
-- Use the [`GKRule`](gkrule.md) method [`init(predicate:assertingFact:grade:)`](gkrule/init(predicate:assertingfact:grade:).md) or [`init(predicate:retractingFact:grade:)`](gkrule/init(predicate:retractingfact:grade:).md) to create a rule that uses an [`NSPredicate`](https://developer.apple.com/documentation/Foundation/NSPredicate) object for evaluation and whose action asserts or retracts a fact in the containing rule system.
+- Use the [`GKRule`](gkrule.md) method [`init(predicate:assertingFact:grade:)`](gkrule/init(predicate:assertingfact:grade:).md) or [`init(predicate:retractingFact:grade:)`](gkrule/init(predicate:retractingfact:grade:).md) to create a rule that uses an [`NSPredicate`](https://developer.apple.com/documentation/foundation/nspredicate) object for evaluation and whose action asserts or retracts a fact in the containing rule system.
 - Use the [`GKRule`](gkrule.md) method [`init(blockPredicate:action:)`](gkrule/init(blockpredicate:action:).md) method to quickly create a rule whose custom logic is contained in block objects.
 
 ## Topics
@@ -54,12 +54,12 @@ Override the [`performAction(in:)`](gkrule/performaction(in:).md) method to perf
 ### Inherits From
 - [GKRule](gkrule.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

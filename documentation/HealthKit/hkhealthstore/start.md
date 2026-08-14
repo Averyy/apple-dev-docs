@@ -24,7 +24,7 @@ This method returns immediately, however the work is performed asynchronously on
 
 ## Parameters
 
-- `workoutSession`: The workout session to start. You cannot restart a workout session that has stopped. If you pass in a session that is running or has stopped, the system returns an [`invalidArgumentException`](https://developer.apple.com/documentation/Foundation/NSExceptionName/invalidArgumentException) exception.
+- `workoutSession`: The workout session to start. You cannot restart a workout session that has stopped. If you pass in a session that is running or has stopped, the system returns an [`invalidArgumentException`](https://developer.apple.com/documentation/foundation/nsexceptionname/invalidargumentexception) exception.
 
 ## See Also
 

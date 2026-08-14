@@ -20,7 +20,7 @@ class func supportedInputContentMinScale(device: any MTLDevice) -> Float
 
 ## Parameters
 
-- `device`: The [`MTLDevice`](https://developer.apple.com/documentation/Metal/MTLDevice) instance that represents a GPU.
+- `device`: The [`MTLDevice`](https://developer.apple.com/documentation/metal/mtldevice) instance that represents a GPU.
 
 ## See Also
 

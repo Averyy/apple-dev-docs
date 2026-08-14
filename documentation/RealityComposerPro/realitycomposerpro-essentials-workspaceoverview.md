@@ -10,7 +10,7 @@ The Reality Composer Pro workspace is organized into four main sections: Hierarc
 
 Together, the Hierarchy, Project Browser, Viewport, and Inspector form the core editing workflow in Reality Composer Pro: locate assets in the Project Browser, organize them in the Hierarchy, edit them in the Viewport, and refine their components in the Inspector.
 
-![An annotated screenshot of an empty Reality Composer Pro project, highlighting the four main panes: Hierarchy, Viewport, Project Browser, and Inspector.](https://docs-assets.developer.apple.com/published/6358581971f04ea168a3a38d38f011ab/Overview%402x.png)
+![An annotated screenshot of an empty Reality Composer Pro project, highlighting the four main panes: Hierarchy, Viewport, Project Browser, and Inspector.](/images/RealityComposerPro/Overview@2x.png)
 
 #### Browse the Scene Hierarchy
 
@@ -39,7 +39,7 @@ Use the icons at the bottom of the Hierarchy to:
 - **Show Components —** Toggle components on or off to view Entities only.
 - **Filter (Command-F)** — Type to search or filter the hierarchy view. For example, typing “robot” limits the hierarchy view to display all items in the hierarchy with robot in the name. You can also use the filter to find components.
 
-![Control-clicking a Transformation object compared to Control-clicking a 3D object in the Reality Composer Pro Hierarchy.](https://docs-assets.developer.apple.com/published/9d5cefe47681a069a8dd491546cea384/SceneHierarchyInstancedEntityContextMenu%402x.png)
+![Control-clicking a Transformation object compared to Control-clicking a 3D object in the Reality Composer Pro Hierarchy.](/images/RealityComposerPro/SceneHierarchyInstancedEntityContextMenu@2x.png)
 
 > 💡 **Tip**: You can also **Control-click** an entity in the Hierarchy to see all available options for that entity.
 
@@ -73,11 +73,11 @@ The Viewport displays your project’s assets and scenes. Use the Viewport modes
 
 Use the Viewport toolbar to preview and run simulations in the Viewport, on a simulated device, or through a connected device. For more information about previewing content, see [`Previewing content and running simulations`](realitycomposerpro-essentials-previewcontentrunsimulations.md).
 
-![A screenshot of additional entities opened from the Hierarchy view appearing as tabs in the Reality Composer Pro Viewport.](https://docs-assets.developer.apple.com/published/e4af8b33b0576cc0939d58b03dc61165/WorkspaceTab%402x.png)
+![A screenshot of additional entities opened from the Hierarchy view appearing as tabs in the Reality Composer Pro Viewport.](/images/RealityComposerPro/WorkspaceTab@2x.png)
 
 #### Manipulate Entities in the Viewport
 
-![A screenshot of the Reality Composer Pro Viewport icons for selecting, moving, rotating, scaling, snapping, transforming, and pivoting.](https://docs-assets.developer.apple.com/published/4f108c6f935ca889b333766377ed59ae/GizmoControl%402x.png)
+![A screenshot of the Reality Composer Pro Viewport icons for selecting, moving, rotating, scaling, snapping, transforming, and pivoting.](/images/RealityComposerPro/GizmoControl@2x.png)
 
 Click an object or entity in the Viewport to select it. You can also drag to select one or more objects (Marquee select) or Shift-click to select multiple, individual items. Use the scroll wheel to zoom in or out of the Viewport. Option-click to rotate (orbit) the view in the Viewport.
 
@@ -85,7 +85,7 @@ Click an object or entity in the Viewport to select it. You can also drag to sel
 
 Select an entity in the Viewport, click a mode (Move, Rotate, or Scale) in the bottom-left of the Viewport, and then use the **manipulator** to manipulate the asset.
 
-![A screenshot of the manipulator gizmo on a selected entity in the Reality Composer Pro Viewport, with colored axes for moving, rotating, and scaling.](https://docs-assets.developer.apple.com/published/e389046122756a15e695de79b122c223/Gizmo%402x.png)
+![A screenshot of the manipulator gizmo on a selected entity in the Reality Composer Pro Viewport, with colored axes for moving, rotating, and scaling.](/images/RealityComposerPro/Gizmo@2x.png)
 
 The Q, W, E, and R keys on the keyboard are also mapped to the Select, Move, Scale, and Rotate functions. Each color in the manipulator corresponds to a specific axis:
 
@@ -110,13 +110,13 @@ The following icons (to the right of the Select, Move, Rotate, and Scale icons) 
 
 Preview your scene with different cameras, lighting, and visualization options by selecting the icons in the upper-right corner of the Viewport.
 
-![A screenshot of the Viewport toolbar visualization icons in Reality Composer Pro, including camera, lighting, debug visualization filter, and rendering mode controls.](https://docs-assets.developer.apple.com/published/94ab59502bc6db8ffb4ad7242cc054c7/VisualizationToolbar%402x.png)
+![A screenshot of the Viewport toolbar visualization icons in Reality Composer Pro, including camera, lighting, debug visualization filter, and rendering mode controls.](/images/RealityComposerPro/VisualizationToolbar@2x.png)
 
 - **Select Camera** — Select a camera in the scene for the Viewport to use. By default, the Viewport shows only **Default Camera** unless you’ve added a Camera component to the current entity. Select Default Camera to reset the view.
 - **Lighting Environment Settings —** Change the Environment Lighting Asset used to light the scene.
-- **Filter Component Debug Visualization** — Overlays visual indicators in the Viewport that show how specific components affect your scene. Toggle individual components on or off to isolate their effects — for example: - [`CollisionComponent`](https://developer.apple.com/documentation/RealityKit/CollisionComponent) — Displays collision shape geometry on entities.
-- [`PointLightComponent`](https://developer.apple.com/documentation/RealityKit/PointLightComponent) — Visualizes each light’s attenuation radius as a sphere.
-- [`IKComponent`](https://developer.apple.com/documentation/RealityKit/IKComponent) — Displays skeletal bones and joint hierarchies overlaid on characters. All supported components — including [`CharacterControllerComponent`](https://developer.apple.com/documentation/RealityKit/CharacterControllerComponent), [`DirectionalLightComponent`](https://developer.apple.com/documentation/RealityKit/DirectionalLightComponent), [`DockingRegionComponent`](https://developer.apple.com/documentation/RealityKit/DockingRegionComponent), [`ModelComponent`](https://developer.apple.com/documentation/RealityKit/ModelComponent), [`SpotLightComponent`](https://developer.apple.com/documentation/RealityKit/SpotLightComponent), and [`VirtualEnvironmentProbeComponent`](https://developer.apple.com/documentation/RealityKit/VirtualEnvironmentProbeComponent) — appear in the dropdown.
+- **Filter Component Debug Visualization** — Overlays visual indicators in the Viewport that show how specific components affect your scene. Toggle individual components on or off to isolate their effects — for example: - [`CollisionComponent`](https://developer.apple.com/documentation/realitykit/collisioncomponent) — Displays collision shape geometry on entities.
+- [`PointLightComponent`](https://developer.apple.com/documentation/realitykit/pointlightcomponent) — Visualizes each light’s attenuation radius as a sphere.
+- [`IKComponent`](https://developer.apple.com/documentation/realitykit/ikcomponent) — Displays skeletal bones and joint hierarchies overlaid on characters. All supported components — including [`CharacterControllerComponent`](https://developer.apple.com/documentation/realitykit/charactercontrollercomponent), [`DirectionalLightComponent`](https://developer.apple.com/documentation/realitykit/directionallightcomponent), [`DockingRegionComponent`](https://developer.apple.com/documentation/realitykit/dockingregioncomponent), [`ModelComponent`](https://developer.apple.com/documentation/realitykit/modelcomponent), [`SpotLightComponent`](https://developer.apple.com/documentation/realitykit/spotlightcomponent), and [`VirtualEnvironmentProbeComponent`](https://developer.apple.com/documentation/realitykit/virtualenvironmentprobecomponent) — appear in the dropdown.
 - **Rendering Visualization Modes** — Isolate and inspect specific rendering data for the selected asset. Use geometry channel modes to check surface topology, material channel modes to verify texture assignments, and lighting modes to diagnose shading. Options include: - **Geometry Channels**: - **Normals** — Displays surface normal directions as RGB colors; useful for diagnosing shading artifacts.
 - **Tangent** — Shows tangent vectors used for normal mapping.
 - **Bitangent** — Shows bitangent vectors that complete the tangent space.
@@ -151,7 +151,7 @@ Lightmap baking is a precomputation step that renders static lighting into textu
 
 > 💡 **Tip**: You can open a Lightmap Preview (**Tab** > **Lightmap Preview**) to view bake results.
 
-![A screenshot of the Inspector view icons at the top right of the Reality Composer Pro Inspector pane, including Lighting Tools and the Hide/Show Inspector toggle.](https://docs-assets.developer.apple.com/published/ec25bb1eeccb387fd880dada35374148/InspectorButton%402x.png)
+![A screenshot of the Inspector view icons at the top right of the Reality Composer Pro Inspector pane, including Lighting Tools and the Hide/Show Inspector toggle.](/images/RealityComposerPro/InspectorButton@2x.png)
 
 ## See Also
 

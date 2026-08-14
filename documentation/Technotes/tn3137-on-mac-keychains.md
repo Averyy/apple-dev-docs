@@ -25,7 +25,7 @@ The file-based keychain has its origins on traditional Mac OS.  The data protect
 
 > ❗ **Important**: iOS, tvOS, and watchOS only support the SecItem API with the data protection keychain implementation.
 
-The Keychain and SecKeychain APIs always target the file-based keychain.  The SecItem API can target either implementation.  It defaults to targeting the file-based keychain.  To target the data protection keychain, set the [`kSecUseDataProtectionKeychain`](https://developer.apple.com/documentation/Security/kSecUseDataProtectionKeychain) attribute or the [`kSecAttrSynchronizable`](https://developer.apple.com/documentation/Security/kSecAttrSynchronizable) attribute to true.
+The Keychain and SecKeychain APIs always target the file-based keychain.  The SecItem API can target either implementation.  It defaults to targeting the file-based keychain.  To target the data protection keychain, set the [`kSecUseDataProtectionKeychain`](https://developer.apple.com/documentation/security/ksecusedataprotectionkeychain) attribute or the [`kSecAttrSynchronizable`](https://developer.apple.com/documentation/security/ksecattrsynchronizable) attribute to true.
 
 The file-based keychain is on the road to deprecation.  It’s not officially deprecated, but some of the APIs surrounding it are.  For example, `SecKeychainCreate` was deprecated in the macOS 12 SDK.  Moreover, new features, like iCloud Keychain, require the data protection keychain.
 
@@ -65,15 +65,15 @@ File-based keychains are stored, as the name suggests, in files.  Every context 
 
 When using the SecItem API to target the file-based keychain:
 
-- [`SecItemAdd(_:_:)`](https://developer.apple.com/documentation/Security/SecItemAdd(_:_:)) adds the item to the default keychain.  Use [`kSecUseKeychain`](https://developer.apple.com/documentation/Security/kSecUseKeychain) to override this.
-- Queries, like those done using [`SecItemCopyMatching(_:_:)`](https://developer.apple.com/documentation/Security/SecItemCopyMatching(_:_:)), consult all keychains in the search list.   Use [`kSecMatchSearchList`](https://developer.apple.com/documentation/Security/kSecMatchSearchList) to override this.
+- [`SecItemAdd(_:_:)`](https://developer.apple.com/documentation/security/secitemadd(_:_:)) adds the item to the default keychain.  Use [`kSecUseKeychain`](https://developer.apple.com/documentation/security/ksecusekeychain) to override this.
+- Queries, like those done using [`SecItemCopyMatching(_:_:)`](https://developer.apple.com/documentation/security/secitemcopymatching(_:_:)), consult all keychains in the search list.   Use [`kSecMatchSearchList`](https://developer.apple.com/documentation/security/ksecmatchsearchlist) to override this.
 
 Each keychain implementation uses its own access control model:
 
 - The file-based keychain uses access control lists (`SecAccess`).
-- The data protection keychain uses keychain access groups, supplemented by an optional access control object ([`SecAccessControl`](https://developer.apple.com/documentation/Security/SecAccessControl)).
+- The data protection keychain uses keychain access groups, supplemented by an optional access control object ([`SecAccessControl`](https://developer.apple.com/documentation/security/secaccesscontrol)).
 
-macOS builds the list of data protection keychain access groups available to your program from its code signing entitlements.  For the details, see [`Sharing access to keychain items among a collection of apps`](https://developer.apple.com/documentation/Security/sharing-access-to-keychain-items-among-a-collection-of-apps).  These entitlements must be authorized by a provisioning profile.  Your program needs an app-like bundle structure in which to embed that profile.  This is standard for app and app extensions but not for command-line tools.  For information on how to wrap a command-line tool in a dummy app-like structure, see [`Signing a daemon with a restricted entitlement`](https://developer.apple.com/documentation/Xcode/signing-a-daemon-with-a-restricted-entitlement).
+macOS builds the list of data protection keychain access groups available to your program from its code signing entitlements.  For the details, see [`Sharing access to keychain items among a collection of apps`](https://developer.apple.com/documentation/security/sharing-access-to-keychain-items-among-a-collection-of-apps).  These entitlements must be authorized by a provisioning profile.  Your program needs an app-like bundle structure in which to embed that profile.  This is standard for app and app extensions but not for command-line tools.  For information on how to wrap a command-line tool in a dummy app-like structure, see [`Signing a daemon with a restricted entitlement`](https://developer.apple.com/documentation/xcode/signing-a-daemon-with-a-restricted-entitlement).
 
 > ❗ **Important**: This command-line tool will only work when run from a user context because, regardless of the packaging, the data protection keychain is only available in that context.
 
@@ -85,9 +85,9 @@ The data protection keychain can hold all keychain item classes (Internet passwo
 
 Some keychain features require the data protection keychain, including:
 
-- iCloud Keychain.  See the [`kSecAttrSynchronizable`](https://developer.apple.com/documentation/Security/kSecAttrSynchronizable) attribute.
-- Protecting an item with biometrics (Touch ID and Face ID).  See [`Restricting keychain item accessibility`](https://developer.apple.com/documentation/Security/restricting-keychain-item-accessibility).
-- Protecting a key with the Secure Enclave.  See [`Protecting keys with the Secure Enclave`](https://developer.apple.com/documentation/Security/protecting-keys-with-the-secure-enclave).
+- iCloud Keychain.  See the [`kSecAttrSynchronizable`](https://developer.apple.com/documentation/security/ksecattrsynchronizable) attribute.
+- Protecting an item with biometrics (Touch ID and Face ID).  See [`Restricting keychain item accessibility`](https://developer.apple.com/documentation/security/restricting-keychain-item-accessibility).
+- Protecting a key with the Secure Enclave.  See [`Protecting keys with the Secure Enclave`](https://developer.apple.com/documentation/security/protecting-keys-with-the-secure-enclave).
 
 #### User Interface
 

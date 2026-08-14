@@ -7,7 +7,6 @@ The recipient device displayed the message.
 
 **Availability**:
 - iOS 26.0+
-- iPadOS 26.0+
 
 ## Declaration
 

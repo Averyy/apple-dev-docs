@@ -33,7 +33,7 @@ Before you run the sample code project in Xcode, check to be sure your device ha
   Initiate outgoing calls with VoIP and configure your app to receive incoming calls.
 - [Preparing your app to be the default calling app](preparing-your-app-to-be-the-default-calling-app.md)
   Configure your CallKit or LiveCommunicationKit app so people can set it as the default calling app on their device.
-- [CallKit updates](../Updates/CallKit.md)
+- [CallKit updates](../updates/callkit.md)
   Learn about important changes to CallKit.
 
 

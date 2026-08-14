@@ -20,7 +20,7 @@ var pNorm: Float? { get }
 
 #### Discussion
 
-You can set this value to [`infinity`](https://developer.apple.com/documentation/Swift/Float/infinity).
+You can set this value to [`infinity`](https://developer.apple.com/documentation/swift/float/infinity).
 
 ## See Also
 

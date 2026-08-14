@@ -20,7 +20,7 @@ The trust policy settings can be shown or hidden depending on whether the user c
 
 ## Parameters
 
-- `disclosed`: Pass [`true`](https://developer.apple.com/documentation/Swift/true) to display the certificate details, or [`false`](https://developer.apple.com/documentation/Swift/false) to hide them.
+- `disclosed`: Pass [`true`](https://developer.apple.com/documentation/swift/true) to display the certificate details, or [`false`](https://developer.apple.com/documentation/swift/false) to hide them.
 
 ## See Also
 

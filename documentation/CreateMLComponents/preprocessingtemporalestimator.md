@@ -48,8 +48,8 @@ struct PreprocessingTemporalEstimator<Preprocessor, Estimator> where Preprocesso
 ## Relationships
 
 ### Conforms To
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 - [TemporalEstimator](temporalestimator.md)
 
 ## See Also

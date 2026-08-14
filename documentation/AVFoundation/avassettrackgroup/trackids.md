@@ -22,7 +22,7 @@ var trackIDs: [NSNumber] { get }
 
 #### Discussion
 
-The value of this property is an array of [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) instances used as [`CMPersistentTrackID`](https://developer.apple.com/documentation/CoreMedia/CMPersistentTrackID) values, one for each track in the group.
+The value of this property is an array of [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) instances used as [`CMPersistentTrackID`](https://developer.apple.com/documentation/coremedia/cmpersistenttrackid) values, one for each track in the group.
 
 
 ---

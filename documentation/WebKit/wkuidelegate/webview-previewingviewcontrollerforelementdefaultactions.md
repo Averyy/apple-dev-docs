@@ -23,7 +23,7 @@ Return `nil` to use Webkit’s default preview behavior. Returning a view contro
 
 #### Discussion
 
-To use the default actions, your app must return the actions to be run in your view controller’s implementation of [`previewActionItems`](https://developer.apple.com/documentation/UIKit/UIViewController/previewActionItems).
+To use the default actions, your app must return the actions to be run in your view controller’s implementation of [`previewActionItems`](https://developer.apple.com/documentation/uikit/uiviewcontroller/previewactionitems).
 
 ## Parameters
 

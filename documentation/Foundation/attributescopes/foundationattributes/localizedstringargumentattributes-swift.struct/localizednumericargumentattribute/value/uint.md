@@ -22,7 +22,7 @@ case uint(UInt64)
 
 ## Parameters
 
-- `uint`: The attribute value, as a [`UInt64`](https://developer.apple.com/documentation/Swift/UInt64).
+- `uint`: The attribute value, as a [`UInt64`](https://developer.apple.com/documentation/swift/uint64).
 
 ## See Also
 

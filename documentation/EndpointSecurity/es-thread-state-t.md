@@ -35,7 +35,7 @@ To work with thread state, see the definitions in the include file `mach/thread_
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../Swift/BitwiseCopyable.md)
+- [BitwiseCopyable](../swift/bitwisecopyable.md)
 
 ## See Also
 

@@ -45,7 +45,7 @@ To learn about 3D Touch, read [`Adopting 3D Touch on iPhone`](https://developer.
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

@@ -17,7 +17,7 @@ var widgetLargestAvailableDisplayMode: NCWidgetDisplayMode { get set }
 
 #### Discussion
 
-The default value of this property is [`NCWidgetDisplayMode.compact`](https://developer.apple.com/documentation/NotificationCenter/NCWidgetDisplayMode/compact). At any time, you can change the largest display mode your widget supports by changing the value of this property. For example, you can update the property value as more or less content is available to display in your widget.
+The default value of this property is [`NCWidgetDisplayMode.compact`](https://developer.apple.com/documentation/notificationcenter/ncwidgetdisplaymode/compact). At any time, you can change the largest display mode your widget supports by changing the value of this property. For example, you can update the property value as more or less content is available to display in your widget.
 
 ## See Also
 

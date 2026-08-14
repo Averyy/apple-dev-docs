@@ -22,16 +22,16 @@ func write(toFile path: String, atomically useAuxiliaryFile: Bool) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/Swift/true) if the file is written successfully, otherwise [`false`](https://developer.apple.com/documentation/Swift/false).
+[`true`](https://developer.apple.com/documentation/swift/true) if the file is written successfully, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
 
 #### Discussion
 
-If the array’s contents are all property list objects (`NSString`, `NSData`, `NSArray`, or `NSDictionary` objects), the file written by this method can be used to initialize a new array with the class method [`arrayWithContentsOfFile:`](nsarray/arraywithcontentsoffile:.md) or the instance method [`init(contentsOfFile:)`](nsarray/init(contentsoffile:).md). This method recursively validates that all the contained objects are property list objects before writing out the file, and returns [`false`](https://developer.apple.com/documentation/Swift/false) if all the objects are not property list objects, since the resultant file would not be a valid property list.
+If the array’s contents are all property list objects (`NSString`, `NSData`, `NSArray`, or `NSDictionary` objects), the file written by this method can be used to initialize a new array with the class method [`arrayWithContentsOfFile:`](nsarray/arraywithcontentsoffile:.md) or the instance method [`init(contentsOfFile:)`](nsarray/init(contentsoffile:).md). This method recursively validates that all the contained objects are property list objects before writing out the file, and returns [`false`](https://developer.apple.com/documentation/swift/false) if all the objects are not property list objects, since the resultant file would not be a valid property list.
 
 ## Parameters
 
 - `path`: The path at which to write the contents of the array. If `path` contains a tilde (~) character, you must expand it with [`expandingTildeInPath`](nsstring/expandingtildeinpath.md) before invoking this method.
-- `useAuxiliaryFile`: If [`true`](https://developer.apple.com/documentation/Swift/true), the array is written to an auxiliary file, and then the auxiliary file is renamed to `path`. If [`false`](https://developer.apple.com/documentation/Swift/false), the array is written directly to `path`. The [`true`](https://developer.apple.com/documentation/Swift/true) option guarantees that `path`, if it exists at all, won’t be corrupted even if the system should crash during writing.
+- `useAuxiliaryFile`: If [`true`](https://developer.apple.com/documentation/swift/true), the array is written to an auxiliary file, and then the auxiliary file is renamed to `path`. If [`false`](https://developer.apple.com/documentation/swift/false), the array is written directly to `path`. The [`true`](https://developer.apple.com/documentation/swift/true) option guarantees that `path`, if it exists at all, won’t be corrupted even if the system should crash during writing.
 
 ## See Also
 

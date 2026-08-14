@@ -26,7 +26,7 @@ The initial view controller in the storyboard.
 
 Every storyboard file has an initial view controller that represents the default view controller to create. Typically, you use the initial view controller as the root view controller for a window. However, you can also instantiate the initial view controller when transitioning to content in a new storyboard file. This method creates a new instance of the initial view controller using its [`init(coder:)`](uiviewcontroller/init(coder:).md) method.
 
-When you specify a storyboard in the [`UISceneStoryboardFile`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/UIApplicationSceneManifest/UISceneConfigurations/UIWindowSceneSessionRoleApplication/UISceneStoryboardFile) or [`UIMainStoryboardFile`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/UIMainStoryboardFile) key of your app’s `Info.plist` file, UIKit loads the initial view controller from that storyboard.
+When you specify a storyboard in the [`UISceneStoryboardFile`](https://developer.apple.com/documentation/bundleresources/information-property-list/uiapplicationscenemanifest/uisceneconfigurations/uiwindowscenesessionroleapplication/uiscenestoryboardfile) or [`UIMainStoryboardFile`](https://developer.apple.com/documentation/bundleresources/information-property-list/uimainstoryboardfile) key of your app’s `Info.plist` file, UIKit loads the initial view controller from that storyboard.
 
 ## See Also
 

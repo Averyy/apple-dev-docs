@@ -20,9 +20,9 @@ This project requires an iPhone or iPad running iOS 15 or iPadOS 15. It doesn’
 
 ## See Also
 
-- [Occluding virtual content with people](../ARKit/occluding-virtual-content-with-people.md)
+- [Occluding virtual content with people](../arkit/occluding-virtual-content-with-people.md)
   Cover your app’s virtual content with people that ARKit perceives in the camera feed.
-- [Placing entities using head and device transform](../visionOS/placing-entities-using-head-and-device-transform.md)
+- [Placing entities using head and device transform](../visionos/placing-entities-using-head-and-device-transform.md)
   Query and react to changes in the position and rotation of Apple Vision Pro.
 - [struct BodyTrackingComponent](bodytrackingcomponent.md)
   A component for tracking people in an AR session.

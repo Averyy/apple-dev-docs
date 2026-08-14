@@ -29,7 +29,7 @@ If the end of the input text buffer is reached before thespecified stopping poin
 ## Parameters
 
 - `chan`: The speech channel on which speech is to be stopped.
-- `whereToStop`: A constant indicating when speech processing should stop. Pass the constant   to stop immediately, even in the middle of a word. Pass   or   to stop speech at the end of the current word or sentence, respectively. 
+- `whereToStop`: A constant indicating when speech processing should stop. Pass the constant `kImmediate` to stop immediately, even in the middle of a word. Pass `kEndOfWord` or `kEndOfSentence` to stop speech at the end of the current word or sentence, respectively. 
 
 ## See Also
 

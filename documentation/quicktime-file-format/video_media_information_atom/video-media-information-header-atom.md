@@ -7,7 +7,7 @@ An atom that defines specific color and graphics mode information.
 
 #### Overview
 
-See [`Video media information header atom ('vmhd')`](video_media_information_header_atom.md).
+See [`Video media information header atom`](video_media_information_header_atom.md).
 
 ## See Also
 

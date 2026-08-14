@@ -18,7 +18,7 @@ class func availableCaptureModes(for cameraDevice: UIImagePickerController.Camer
 
 #### Return Value
 
-An array of [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) objects indicating the capture modes supported by `cameraDevice`.
+An array of [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) objects indicating the capture modes supported by `cameraDevice`.
 
 #### Discussion
 

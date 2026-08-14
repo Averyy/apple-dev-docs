@@ -21,7 +21,7 @@ var normalizedPoints: [simd_float2] { get }
 
 #### Discussion
 
-This property value provides the address of the buffer that contain the array of [`CGPoint`](https://developer.apple.com/documentation/CoreFoundation/CGPoint) values.
+This property value provides the address of the buffer that contain the array of [`CGPoint`](https://developer.apple.com/documentation/corefoundation/cgpoint) values.
 
 ## See Also
 

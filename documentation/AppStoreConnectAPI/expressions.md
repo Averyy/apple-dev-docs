@@ -26,9 +26,9 @@ The JSON input to an expression contains the following arrays, that you can use 
 
 | Array | Description |
 | --- | --- |
-| `players` | An array of [`Player`](player.md) objects representing the players associated with the requests.  ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) Available in all types of rule expressions. |
-| `requests` | An array of [`Request`](request.md) objects representing the match requests that you compare in an expression.  ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) Available in all types of rule expressions. In compatible and distance rules, contains two items for comparison. In match and team rules, contains two or more items. |
-| `teams` | An array of [`Team`](team.md) objects representing the teams that you add to a rule set, including the players assigned to the teams.  ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) Available only in team rule expressions. |
+| `players` | An array of [`Player`](player.md) objects representing the players associated with the requests.  ![None](/images/com.apple.appstoreconnectapi/spacer.png) Available in all types of rule expressions. |
+| `requests` | An array of [`Request`](request.md) objects representing the match requests that you compare in an expression.  ![None](/images/com.apple.appstoreconnectapi/spacer.png) Available in all types of rule expressions. In compatible and distance rules, contains two items for comparison. In match and team rules, contains two or more items. |
+| `teams` | An array of [`Team`](team.md) objects representing the teams that you add to a rule set, including the players assigned to the teams.  ![None](/images/com.apple.appstoreconnectapi/spacer.png) Available only in team rule expressions. |
 
 ## Topics
 

@@ -23,10 +23,10 @@ protocol LaunchConstraint : Decodable, Encodable, Sendable
 ## Relationships
 
 ### Inherits From
-- [Decodable](../Swift/Decodable.md)
-- [Encodable](../Swift/Encodable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Decodable](../swift/decodable.md)
+- [Encodable](../swift/encodable.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 ### Conforming Types
 - [CodeDirectoryHash](codedirectoryhash.md)
 - [EntitlementsQuery](entitlementsquery.md)
@@ -43,7 +43,7 @@ protocol LaunchConstraint : Decodable, Encodable, Sendable
 
 - [func SecCodeCheckValidityWithProcessRequirement(code: SecCode, flags: SecCSFlags, requirement: ProcessCodeRequirement) -> ValidationResult](seccodecheckvaliditywithprocessrequirement(code:flags:requirement:).md)
   Checks whether the code associated with a running process satisfies a lightweight code requirement.
-- [var launchRequirement: LaunchCodeRequirement?](../Foundation/Process/launchRequirement.md)
+- [var launchRequirement: LaunchCodeRequirement?](../foundation/process/launchrequirement.md)
 - [struct LaunchCodeRequirement](launchcoderequirement.md)
   A lightweight code requirement that you use to evaluate the executable for a launching process.
 - [func allOf(requirement: () -> [any LaunchConstraint]) -> any LaunchConstraint](allof(requirement:)-4gf5f.md)

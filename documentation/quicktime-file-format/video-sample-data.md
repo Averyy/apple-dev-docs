@@ -63,7 +63,7 @@ QuickTime stores JPEG images according to the rules described in the ISO JPEG sp
 
 #### Mpeg 4 Video
 
-MPEG-4 video uses the `'mp4v'` data format. The sample description requires the elementary stream descriptor (‘esds’) extension to the standard video sample description. If non-square pixels are used, the pixel aspect ratio (`'pasp'`) extension is also required. For details on these extensions, see [`Pixel aspect ratio ('pasp')`](pixel_aspect_ratio.md) and [`MPEG-4 elementary stream descriptor atom ('esds')`](mpeg-4_elementary_stream_descriptor_atom.md).
+MPEG-4 video uses the `'mp4v'` data format. The sample description requires the elementary stream descriptor (‘esds’) extension to the standard video sample description. If non-square pixels are used, the pixel aspect ratio (`'pasp'`) extension is also required. For details on these extensions, see [`Pixel aspect ratio`](pixel_aspect_ratio.md) and [`MPEG-4 elementary stream descriptor atom`](mpeg-4_elementary_stream_descriptor_atom.md).
 
 MPEG-4 video conforms to ISO/IEC documents 14496-1/2000(E) and 14496-2:1999/Amd.1:2000(E).
 

@@ -16,7 +16,7 @@ var orderedWindows: [NSWindow] { get }
 
 #### Discussion
 
-Only windows that are typically scriptable are included in the array. For example, panels are not included. This property is accessed during script command evaluation—for example, while finding the window in the script statement `close the second window`. For information on how your app can return its own array of ordered windows, see [`application:delegateHandlesKey:`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class/application:delegateHandlesKey:).
+Only windows that are typically scriptable are included in the array. For example, panels are not included. This property is accessed during script command evaluation—for example, while finding the window in the script statement `close the second window`. For information on how your app can return its own array of ordered windows, see [`application:delegateHandlesKey:`](https://developer.apple.com/documentation/objectivec/nsobject-swift.class/application:delegatehandleskey:).
 
 ## See Also
 

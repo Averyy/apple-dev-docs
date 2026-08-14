@@ -23,7 +23,7 @@ Implement this protocol with the [`LockedCameraCaptureUIScene`](lockedcameracapt
 ## Relationships
 
 ### Inherits From
-- [AppExtensionScene](../ExtensionKit/AppExtensionScene.md)
+- [AppExtensionScene](../extensionkit/appextensionscene.md)
 ### Conforming Types
 - [LockedCameraCaptureUIScene](lockedcameracaptureuiscene.md)
 

@@ -13,7 +13,7 @@ Enable privacy-preserving discovery and configuration of accessories.
 
 Use AccessorySetupKit to discover and configure Bluetooth or Wi-Fi accessories with images and names provided by the app. Allow seamless, privacy-preserving user consent and control for Bluetooth, Wi-Fi, and Local Network permissions. AccessorySetupKit apps can access enhanced accessory controls including accessory pairing removal and renaming.
 
-To use AccessorySetupKit with [`Wi-Fi Aware`](https://developer.apple.com/documentation/WiFiAware), specify Wi-Fi Aware properties in a [`ASDiscoveryDescriptor`](asdiscoverydescriptor.md) prior to beginning accessory discovery.
+To use AccessorySetupKit with [`Wi-Fi Aware`](https://developer.apple.com/documentation/wifiaware), specify Wi-Fi Aware properties in a [`ASDiscoveryDescriptor`](asdiscoverydescriptor.md) prior to beginning accessory discovery.
 
 > ❗ **Important**: AccessorySetupKit is available for iOS and iPadOS. In watchOS 26 and later, if someone sets up an accessory with your iOS app by using AccessorySetupKit, a companion watchOS app can also use CoreBluetooth to communicate with the new accessory and any other accessories.
 
@@ -48,13 +48,13 @@ To use AccessorySetupKit with [`Wi-Fi Aware`](https://developer.apple.com/docume
 - [class ASMigrationDisplayItem](asmigrationdisplayitem.md)
   A previously-discovered accessory as presented by the discovery picker, for use when migrating it to AccessorySetupKit.
 ### Information property list keys
-- [NSAccessorySetupSupports](../BundleResources/Information-Property-List/NSAccessorySetupSupports.md)
+- [NSAccessorySetupSupports](../bundleresources/information-property-list/nsaccessorysetupsupports.md)
   An array of strings that indicates the wireless technologies AccessorySetupKit uses when discovering and configuring accessories.
-- [NSAccessorySetupBluetoothCompanyIdentifiers](../BundleResources/Information-Property-List/NSAccessorySetupBluetoothCompanyIdentifiers.md)
+- [NSAccessorySetupBluetoothCompanyIdentifiers](../bundleresources/information-property-list/nsaccessorysetupbluetoothcompanyidentifiers.md)
   An array of strings that represent the Bluetooth company identifiers for accessories that your app configures.
-- [NSAccessorySetupBluetoothNames](../BundleResources/Information-Property-List/NSAccessorySetupBluetoothNames.md)
+- [NSAccessorySetupBluetoothNames](../bundleresources/information-property-list/nsaccessorysetupbluetoothnames.md)
   An array of strings that represent the Bluetooth device names or substrings for accessories that your app configures.
-- [NSAccessorySetupBluetoothServices](../BundleResources/Information-Property-List/NSAccessorySetupBluetoothServices.md)
+- [NSAccessorySetupBluetoothServices](../bundleresources/information-property-list/nsaccessorysetupbluetoothservices.md)
   An array of strings that represent the hexadecimal values of Bluetooth SIG-defined services or custom services for accessories your app configures.
 ### Errors
 - [struct ASError](aserror.md)

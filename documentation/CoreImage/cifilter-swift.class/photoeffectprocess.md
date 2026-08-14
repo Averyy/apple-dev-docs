@@ -41,7 +41,7 @@ func photoEffectProcess(inputImage: CIImage ) -> CIImage {
 }
 ```
 
-![Two pictures of a pink flower surrounded by foliage. The photo on the left shows a single flower photographed close-up, in focus, with good light and no effects. In the photo on the right, a photo effect process filter is applied, transforming the colors in the image to be a lower contrast.](https://docs-assets.developer.apple.com/published/9635af252323165ec282cc7c01c4d943/media-3545027%402x.png)
+![Two pictures of a pink flower surrounded by foliage. The photo on the left shows a single flower photographed close-up, in focus, with good light and no effects. In the photo on the right, a photo effect process filter is applied, transforming the colors in the image to be a lower contrast.](/images/com.apple.coreimage/media-3545027@2x.png)
 
 ## See Also
 

@@ -29,7 +29,7 @@ struct AnyTemporalSequence<Feature>
 ## Relationships
 
 ### Conforms To
-- [AsyncSequence](../Swift/AsyncSequence.md)
+- [AsyncSequence](../swift/asyncsequence.md)
 - [TemporalSequence](temporalsequence.md)
 
 ## See Also

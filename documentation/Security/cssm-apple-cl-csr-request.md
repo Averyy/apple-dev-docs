@@ -29,7 +29,7 @@ struct CSSM_APPLE_CL_CSR_REQUEST
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../Swift/BitwiseCopyable.md)
+- [BitwiseCopyable](../swift/bitwisecopyable.md)
 
 
 ---

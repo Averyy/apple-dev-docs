@@ -37,8 +37,8 @@ struct Enum
 - [AppSchema.RemindersEnum](appschema/remindersenum.md)
 - [AppSchema.WhiteboardEnum](appschema/whiteboardenum.md)
 - [AppSchemaEnum](appschemaenum.md)
-- [Copyable](../Swift/Copyable.md)
-- [Escapable](../Swift/Escapable.md)
+- [Copyable](../swift/copyable.md)
+- [Escapable](../swift/escapable.md)
 
 
 ---

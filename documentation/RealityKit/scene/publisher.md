@@ -22,7 +22,7 @@ struct Publisher<E> where E : Event
 ## Relationships
 
 ### Conforms To
-- [Publisher](../Combine/Publisher.md)
+- [Publisher](../combine/publisher.md)
 
 ## See Also
 

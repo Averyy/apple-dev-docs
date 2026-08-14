@@ -16,7 +16,7 @@ var isInFullScreenMode: Bool { get }
 
 #### Discussion
 
-The value is [`true`](https://developer.apple.com/documentation/Swift/true) if the panel is currently open and in full screen mode; otherwise it’s [`false`](https://developer.apple.com/documentation/Swift/false).
+The value is [`true`](https://developer.apple.com/documentation/swift/true) if the panel is currently open and in full screen mode; otherwise it’s [`false`](https://developer.apple.com/documentation/swift/false).
 
 ## See Also
 

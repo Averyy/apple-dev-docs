@@ -22,7 +22,7 @@ let modelContainer: CoreMLModelContainer
 
 #### Discussion
 
-This object wraps a [`Core ML`](https://developer.apple.com/documentation/CoreML) model.
+This object wraps a [`Core ML`](https://developer.apple.com/documentation/coreml) model.
 
 ## See Also
 

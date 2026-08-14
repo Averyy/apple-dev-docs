@@ -6,11 +6,11 @@ Create API keys you use to sign JSON Web Tokens and authorize API requests.
 
 #### Overview
 
-The [`App Store Server API`](AppStoreServerAPI.md), the [`Advanced Commerce API`](https://developer.apple.com/documentation/AdvancedCommerceAPI), and the [`External Purchase Server API`](https://developer.apple.com/documentation/ExternalPurchaseServerAPI) require JSON Web Tokens (JWTs) to authorize each request you make to the API. You generate JWTs using a private API key that you download from App Store Connect. For information about generating the JWT using your private key, see [`Generating JSON Web Tokens for API requests`](generating-json-web-tokens-for-api-requests.md).
+The [`App Store Server API`](AppStoreServerAPI.md), the [`Advanced Commerce API`](https://developer.apple.com/documentation/advancedcommerceapi), and the [`External Purchase Server API`](https://developer.apple.com/documentation/externalpurchaseserverapi) require JSON Web Tokens (JWTs) to authorize each request you make to the API. You generate JWTs using a private API key that you download from App Store Connect. For information about generating the JWT using your private key, see [`Generating JSON Web Tokens for API requests`](generating-json-web-tokens-for-api-requests.md).
 
 An API key has two parts: a public portion that Apple keeps, and a private key that you download. Use the private key to sign tokens that authorize the API to access or submit your data to the App Store.
 
-> ❗ **Important**:  Store your private keys in a secure place. Don’t share your keys, don’t store keys in a code repository, and don’t include keys in client-side code. If you suspect a private key is compromised, immediately revoke the key in App Store Connect. See [`Revoking API Keys`](https://developer.apple.com/documentation/AppStoreConnectAPI/revoking-api-keys) for details.
+> ❗ **Important**:  Store your private keys in a secure place. Don’t share your keys, don’t store keys in a code repository, and don’t include keys in client-side code. If you suspect a private key is compromised, immediately revoke the key in App Store Connect. See [`Revoking API Keys`](https://developer.apple.com/documentation/appstoreconnectapi/revoking-api-keys) for details.
 
 Use the API key for the App Store Server API, the Advanced Commerce API, and the External Purchase Server API. You can’t use the key for other Apple services.
 

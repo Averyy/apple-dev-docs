@@ -35,7 +35,7 @@ In macOS, a result code. See [`Security Framework Result Codes`](security-framew
 ## Parameters
 
 - `certificate`: The certificate object from which to retrieve the public key.
-- `key`: In macOS, points to the public key for the specified certificate. In Objective-C, call the [`CFRelease`](https://developer.apple.com/documentation/CoreFoundation/CFRelease) function to release this object when you are finished with it.
+- `key`: In macOS, points to the public key for the specified certificate. In Objective-C, call the [`CFRelease`](https://developer.apple.com/documentation/corefoundation/cfrelease) function to release this object when you are finished with it.
 
 
 ---

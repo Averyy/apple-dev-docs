@@ -102,7 +102,7 @@ Responder objects can implement the methods of this protocol to handle standard 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 ### Conforming Types
 - [UIAccessibilityElement](uiaccessibilityelement.md)
 - [UIActionSheet](uiactionsheet.md)

@@ -12,11 +12,11 @@ In iOS 14 or later and macOS Big Sur or later, format the SMS messages you send 
 
 ##### Configure Your Apps Associated Domains
 
-AutoFill suggests domain-bound codes in your app if the bound domain in the message is one of the app’s associated domains. For information on configuring associated domains, see [`Supporting associated domains`](https://developer.apple.com/documentation/Xcode/supporting-associated-domains).
+AutoFill suggests domain-bound codes in your app if the bound domain in the message is one of the app’s associated domains. For information on configuring associated domains, see [`Supporting associated domains`](https://developer.apple.com/documentation/xcode/supporting-associated-domains).
 
 ##### Set Your One Time Code Text Fields Content Type
 
-For UIKit apps on iOS and Mac Catalyst, set your one-time code field’s [`textContentType`](https://developer.apple.com/documentation/UIKit/UITextInputTraits/textContentType) property to [`oneTimeCode`](https://developer.apple.com/documentation/UIKit/UITextContentType/oneTimeCode). For AppKit apps on macOS, set your one-time code field’s [`contentType`](https://developer.apple.com/documentation/AppKit/NSTextContent/contentType) property to [`oneTimeCode`](https://developer.apple.com/documentation/AppKit/NSTextContentType/oneTimeCode). For SwiftUI apps, use the [`textContentType(_:)`](https://developer.apple.com/documentation/SwiftUI/View/textContentType(_:)-ufdv) view modifier to set the content type to [`oneTimeCode`](https://developer.apple.com/documentation/UIKit/UITextContentType/oneTimeCode).
+For UIKit apps on iOS and Mac Catalyst, set your one-time code field’s [`textContentType`](https://developer.apple.com/documentation/uikit/uitextinputtraits/textcontenttype) property to [`oneTimeCode`](https://developer.apple.com/documentation/uikit/uitextcontenttype/onetimecode). For AppKit apps on macOS, set your one-time code field’s [`contentType`](https://developer.apple.com/documentation/appkit/nstextcontent/contenttype) property to [`oneTimeCode`](https://developer.apple.com/documentation/appkit/nstextcontenttype/onetimecode). For SwiftUI apps, use the [`textContentType(_:)`](https://developer.apple.com/documentation/swiftui/view/textcontenttype(_:)-ufdv) view modifier to set the content type to [`oneTimeCode`](https://developer.apple.com/documentation/uikit/uitextcontenttype/onetimecode).
 
 For your website, set the HTML `<input>` element attribute `autocomplete=one-time-code`.
 

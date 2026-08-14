@@ -15,7 +15,7 @@ Consider the following figure:
 - A `pullquote` component starts in column 4 and spans 3 columns.
 - A `pullquote` component contains an `Ancho`r object that aligns the pull quote with a character range in the second paragraph of the body component.
 
-![Screenshot of an article layout with body and pull quote.](https://docs-assets.developer.apple.com/published/7e561ea1ca3e0012ee97bde766570681/media-4087468%402x.png)
+![Screenshot of an article layout with body and pull quote.](/images/com.apple.applenews/media-4087468@2x.png)
 
 > 💡 **Tip**:  For a step-by-step process for creating an inset pull quote, see [`Advanced Design Tutorial 2: Layout and Positioning`](apple-news-format-tutorials#Advanced-Design-Tutorial-2-Layout-and-Positioning.md). Get started at [`Setting Up the Advanced Tutorials`](setting-up-the-advanced-tutorials.md).
 

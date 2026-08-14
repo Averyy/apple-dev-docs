@@ -21,7 +21,7 @@ var startIndex: JointTransforms.Index { get }
 
 #### Discussion
 
-For more on the sequence’s beginning index, see [`startIndex`](https://developer.apple.com/documentation/Swift/Array/startIndex).
+For more on the sequence’s beginning index, see [`startIndex`](https://developer.apple.com/documentation/swift/array/startindex).
 
 ## See Also
 

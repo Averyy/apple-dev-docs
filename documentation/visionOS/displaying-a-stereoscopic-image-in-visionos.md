@@ -12,13 +12,13 @@ Build a stereoscopic image by applying textures to the left and right eye in a s
 
 This sample demonstrates how to create a stereoscopic image with shader graph materials in visionOS. You can apply the textures independently to the left and the right eye. The following image shows a stereoscopic image displaying a pair of left and right images that correspond to the angle of vision of a person’s eyes:
 
-![A screenshot of a visionOS app in Simulator displaying a translucent window, with the text Stereoscopic Image Example at the top, and a stereoscopic image at the bottom.](https://docs-assets.developer.apple.com/published/01e6cb9a20ba25889b7153ea0fa030fa/sample-stereoimage-1-main-view.jpg)
+![A screenshot of a visionOS app in Simulator displaying a translucent window, with the text Stereoscopic Image Example at the top, and a stereoscopic image at the bottom.](/images/com.apple.visionOS/sample-stereoimage-1-main-view.jpg)
 
 ##### Set Up the Shader Graph
 
-The sample sets up the shader graph for the stereoscopic material with two image files: `LeftTexture` and `RightTexture`. The sample applies these image files to the [`Camera Index Switch (RealityKit)`](https://developer.apple.com/documentation/ShaderGraph/realitykit/Camera-Index-Switch-(RealityKit)) node, to set up a dedicated texture for both the left and the right eye, like in the following image:
+The sample sets up the shader graph for the stereoscopic material with two image files: `LeftTexture` and `RightTexture`. The sample applies these image files to the [`Camera Index Switch (RealityKit)`](https://developer.apple.com/documentation/shadergraph/realitykit/camera-index-switch-(realitykit)) node, to set up a dedicated texture for both the left and the right eye, like in the following image:
 
-![A screenshot of the shader graph in Reality Composer Pro, showcasing the stereoscopic material with the LeftTexture and RightTexture image files.](https://docs-assets.developer.apple.com/published/1b5afec6df0c85a7507c7d49d99c3e9a/sample-stereoimage-1-shader-graph-view.png)
+![A screenshot of the shader graph in Reality Composer Pro, showcasing the stereoscopic material with the LeftTexture and RightTexture image files.](/images/com.apple.visionOS/sample-stereoimage-1-shader-graph-view.png)
 
 ##### Load the Stereoscopic Image As an Entity
 
@@ -60,7 +60,7 @@ To create the stereoscopic image, the sample creates the `StereoImageCreator` cl
 
 The method uses a do-catch block to handle any potential errors that may occur when loading and applying the image files to the material.
 
-The `StereoImageCreator` class also contains the `createImageEntity()` method, which constructs a [`ShaderGraphMaterial`](https://developer.apple.com/documentation/RealityKit/ShaderGraphMaterial) and creates a box entity with the shader graph material.
+The `StereoImageCreator` class also contains the `createImageEntity()` method, which constructs a [`ShaderGraphMaterial`](https://developer.apple.com/documentation/realitykit/shadergraphmaterial) and creates a box entity with the shader graph material.
 
 ```swift
 @MainActor public func createImageEntity() async -> ModelEntity? {

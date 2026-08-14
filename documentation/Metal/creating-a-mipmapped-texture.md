@@ -61,8 +61,8 @@ If you use MetalKit to create a texture, and the source data includes multiple m
 
 You can override this behavior by providing an options dictionary with one of the following keys:
 
-- The [`allocateMipmaps`](https://developer.apple.com/documentation/MetalKit/MTKTextureLoader/Option/allocateMipmaps) key with a value of [`true`](https://developer.apple.com/documentation/Swift/true) allocates a full set of mipmap levels for the texture. After loading is complete, Metal fills mipmap `0` with the source data, and leaves the other mipmap contents uninitialized; you fill the other mipmaps with data. Similarly, if you provide this key with a value of [`false`](https://developer.apple.com/documentation/Swift/false), Metal ignores any extra mipmap data and only loads the top mipmap.
-- The [`generateMipmaps`](https://developer.apple.com/documentation/MetalKit/MTKTextureLoader/Option/generateMipmaps) key with a value of [`true`](https://developer.apple.com/documentation/Swift/true) allocates a full set of mipmap levels for the texture. This key has the device object generate images for the lower-level mipmaps by filtering the provided source data.
+- The [`allocateMipmaps`](https://developer.apple.com/documentation/metalkit/mtktextureloader/option/allocatemipmaps) key with a value of [`true`](https://developer.apple.com/documentation/swift/true) allocates a full set of mipmap levels for the texture. After loading is complete, Metal fills mipmap `0` with the source data, and leaves the other mipmap contents uninitialized; you fill the other mipmaps with data. Similarly, if you provide this key with a value of [`false`](https://developer.apple.com/documentation/swift/false), Metal ignores any extra mipmap data and only loads the top mipmap.
+- The [`generateMipmaps`](https://developer.apple.com/documentation/metalkit/mtktextureloader/option/generatemipmaps) key with a value of [`true`](https://developer.apple.com/documentation/swift/true) allocates a full set of mipmap levels for the texture. This key has the device object generate images for the lower-level mipmaps by filtering the provided source data.
 
 ## See Also
 

@@ -25,11 +25,11 @@ A merge operation that layers premultiplied foreground over background.
 
 The Matte node determines its output using the alpha channels of the foreground and background inputs. The RGB component of the output is `Ff+B(1-f)` and the alpha component of the output is `f+b(1-f)`. Below is a simple node graph that uses the In node to blend a wood and rock texture.
 
-![None](https://docs-assets.developer.apple.com/published/c9896f648bad20c84ad337c69fac5ca0/MatteGraph.png)
+![None](/images/ShaderGraph-Docs/MatteGraph.png)
 
 Below are the two original images, the image representation of the alpha of the foreground, and the resulting blended texture applied to a cube.
 
-![None](https://docs-assets.developer.apple.com/published/8ae875713c6e485fd5cfa686168f841e/MatteMaterial.png)
+![None](/images/ShaderGraph-Docs/MatteMaterial.png)
 
 ## See Also
 

@@ -21,7 +21,7 @@ var clearColor: MTLClearColor { get set }
 
 #### Discussion
 
-When the view creates a render pass, it sets the load action for the color render target to [`MTLLoadAction.clear`](https://developer.apple.com/documentation/Metal/MTLLoadAction/clear) and uses this color as the clear color. The default value is `(0.0, 0.0, 0.0, 1.0)`.
+When the view creates a render pass, it sets the load action for the color render target to [`MTLLoadAction.clear`](https://developer.apple.com/documentation/metal/mtlloadaction/clear) and uses this color as the clear color. The default value is `(0.0, 0.0, 0.0, 1.0)`.
 
 ## See Also
 

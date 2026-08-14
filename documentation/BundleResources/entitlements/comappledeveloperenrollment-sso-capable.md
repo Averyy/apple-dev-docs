@@ -16,7 +16,7 @@ An entitlement that indicates the app participates in single sign-on (SSO) durin
 
 #### Discussion
 
-Adopt this entitlement to inform the system that your app authenticates the person enrolling a device into device management, reducing the number of times the person needs to sign in to your service. For more information, see [`Onboarding users with account-driven enrollment`](https://developer.apple.com/documentation/DeviceManagement/onboarding-users-with-account-driven-enrollment).
+Adopt this entitlement to inform the system that your app authenticates the person enrolling a device into device management, reducing the number of times the person needs to sign in to your service. For more information, see [`Onboarding users with account-driven enrollment`](https://developer.apple.com/documentation/devicemanagement/onboarding-users-with-account-driven-enrollment).
 
 To request this entitlement for your app, [`fill out the request form`](https://developer.apple.comhttps://developer.apple.com/contact/request/enrollment-sso/).
 

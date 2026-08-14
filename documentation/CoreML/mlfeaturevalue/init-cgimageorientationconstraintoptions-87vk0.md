@@ -22,10 +22,10 @@ convenience init(CGImage cgImage: CGImage, orientation: CGImagePropertyOrientati
 
 ## Parameters
 
-- `cgImage`: A [`CGImage`](https://developer.apple.com/documentation/CoreGraphics/CGImage) instance.
-- `orientation`: A [`CGImagePropertyOrientation`](https://developer.apple.com/documentation/ImageIO/CGImagePropertyOrientation) instance.
+- `cgImage`: A [`CGImage`](https://developer.apple.com/documentation/coregraphics/cgimage) instance.
+- `orientation`: A [`CGImagePropertyOrientation`](https://developer.apple.com/documentation/imageio/cgimagepropertyorientation) instance.
 - `constraint`: An [`MLImageConstraint`](mlimageconstraint.md) instance.
-- `options`: A dictionary of [`VNImageCropAndScaleOption`](https://developer.apple.com/documentation/Vision/VNImageCropAndScaleOption) values, each keyed by [`MLFeatureValue.ImageOption`](mlfeaturevalue/imageoption.md).
+- `options`: A dictionary of [`VNImageCropAndScaleOption`](https://developer.apple.com/documentation/vision/vnimagecropandscaleoption) values, each keyed by [`MLFeatureValue.ImageOption`](mlfeaturevalue/imageoption.md).
 
 ## See Also
 

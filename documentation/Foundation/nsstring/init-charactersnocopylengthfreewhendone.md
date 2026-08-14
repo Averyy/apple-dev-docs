@@ -26,13 +26,13 @@ An initialized `NSString` object that contains `length` characters from `charact
 
 #### Discussion
 
-If an error occurs during the creation of the string, then `bytes` is not freed even if `flag` is [`true`](https://developer.apple.com/documentation/Swift/true). In this case, the caller is responsible for freeing the buffer. This allows the caller to continue trying to create a string with the buffer, without having the buffer deallocated.
+If an error occurs during the creation of the string, then `bytes` is not freed even if `flag` is [`true`](https://developer.apple.com/documentation/swift/true). In this case, the caller is responsible for freeing the buffer. This allows the caller to continue trying to create a string with the buffer, without having the buffer deallocated.
 
 ## Parameters
 
 - `characters`: A C array of UTF-16 code units.
 - `length`: The number of characters to use from `characters`.
-- `freeBuffer`: If [`true`](https://developer.apple.com/documentation/Swift/true), the receiver releases the memory with `free()` when it no longer needs the data; if [`false`](https://developer.apple.com/documentation/Swift/false) it won’t.
+- `freeBuffer`: If [`true`](https://developer.apple.com/documentation/swift/true), the receiver releases the memory with `free()` when it no longer needs the data; if [`false`](https://developer.apple.com/documentation/swift/false) it won’t.
 
 ## See Also
 

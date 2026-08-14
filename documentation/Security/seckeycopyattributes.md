@@ -22,7 +22,7 @@ func SecKeyCopyAttributes(_ key: SecKey) -> CFDictionary?
 
 #### Return Value
 
-A dictionary containing the key’s attributes. In Objective-C, call the [`CFRelease`](https://developer.apple.com/documentation/CoreFoundation/CFRelease) function to free this dictionary’s memory when you are done with it.
+A dictionary containing the key’s attributes. In Objective-C, call the [`CFRelease`](https://developer.apple.com/documentation/corefoundation/cfrelease) function to free this dictionary’s memory when you are done with it.
 
 ## Parameters
 

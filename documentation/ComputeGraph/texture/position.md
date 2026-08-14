@@ -19,7 +19,7 @@ uint2 texture::position()
 
 In the context of a texture stage, returns the current pixel position, in integer coordinates.
 
-> **Note**: ![Graph](https://docs-assets.developer.apple.com/published/1ebf3de91eca1ac58283311a1ae2b3c0/texture__position.svg)
+> **Note**: ![Graph](/images/com.apple.computegraph/texture__position.svg)
 
 
 ---

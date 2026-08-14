@@ -19,7 +19,7 @@ void module::setVelocity(float3 velocity)
 
 Use this function to assign a new velocity vector to an element, replacing its current velocity.
 
-> **Note**: ![Graph](https://docs-assets.developer.apple.com/published/54c6ced8fde7ed5ad81798ee739731e2/module__setVelocity.svg)
+> **Note**: ![Graph](/images/com.apple.computegraph/module__setVelocity.svg)
 
 ## Parameters
 

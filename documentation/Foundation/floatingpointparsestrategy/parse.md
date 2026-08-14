@@ -26,7 +26,7 @@ The parsed integer value.
 
 #### Discussion
 
-Use this method to repeatedly parse floating-point strings with the same [`FloatingPointParseStrategy`](floatingpointparsestrategy.md). To parse a single floating-point string, use the initializers inherited from [`BinaryFloatingPoint`](https://developer.apple.com/documentation/Swift/BinaryFloatingPoint) that take a [`String`](https://developer.apple.com/documentation/Swift/String) and a [`FormatStyle`](formatstyle.md) as parameters.
+Use this method to repeatedly parse floating-point strings with the same [`FloatingPointParseStrategy`](floatingpointparsestrategy.md). To parse a single floating-point string, use the initializers inherited from [`BinaryFloatingPoint`](https://developer.apple.com/documentation/swift/binaryfloatingpoint) that take a [`String`](https://developer.apple.com/documentation/swift/string) and a [`FormatStyle`](formatstyle.md) as parameters.
 
 This method throws an error if the parse strategy can’t parse the provided string.
 

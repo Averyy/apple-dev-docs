@@ -19,7 +19,7 @@ optional func parentScrollView(for scrollView: BEScrollView) -> BEScrollView?
 
 #### Return Value
 
-The scroll view that is the logical DOM container of the provided scroll view. Return `nil` to get the default behavior, where the system recursively searches the scroll view’s [`superview`](https://developer.apple.com/documentation/UIKit/UIView/superview) hierarchy for a containing scroll view.
+The scroll view that is the logical DOM container of the provided scroll view. Return `nil` to get the default behavior, where the system recursively searches the scroll view’s [`superview`](https://developer.apple.com/documentation/uikit/uiview/superview) hierarchy for a containing scroll view.
 
 #### Discussion
 

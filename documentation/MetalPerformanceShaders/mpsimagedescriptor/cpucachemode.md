@@ -21,7 +21,7 @@ var cpuCacheMode: MTLCPUCacheMode { get set }
 
 #### Discussion
 
-The default value is [`MTLCPUCacheMode.defaultCache`](https://developer.apple.com/documentation/Metal/MTLCPUCacheMode/defaultCache).
+The default value is [`MTLCPUCacheMode.defaultCache`](https://developer.apple.com/documentation/metal/mtlcpucachemode/defaultcache).
 
 ## See Also
 

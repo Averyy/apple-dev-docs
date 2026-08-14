@@ -55,7 +55,7 @@ var body: some View {
 }
 ```
 
-![Two vertically stacked text views, displaying the date January 11,](https://docs-assets.developer.apple.com/published/b7e28c98f5e43223b077b81b7fab9dd6/Text-monospacedDigit-1%402x.png)
+![Two vertically stacked text views, displaying the date January 11,](/images/com.apple.SwiftUI/Text-monospacedDigit-1@2x.png)
 
 If the base font of the text view doesn’t support fixed-width digits, the font remains unchanged.
 

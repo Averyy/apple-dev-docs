@@ -22,7 +22,7 @@ var kAudioSessionProperty_OverrideCategoryDefaultToSpeaker: Int { get }
 
 A read/write `UInt32` value. By default, the value of this property is `FALSE` (`0`).
 
-This property retains its value through an audio route change (such as when plugging in or unplugging a headset), and upon interruption; it reverts to its default value only upon an audio session category change.  This property can be used only with the [`kAudioSessionCategory_PlayAndRecord`](kaudiosessioncategory_playandrecord.md) (or the equivalent [`playAndRecord`](https://developer.apple.com/documentation/AVFAudio/AVAudioSession/Category-swift.struct/playAndRecord)) category.
+This property retains its value through an audio route change (such as when plugging in or unplugging a headset), and upon interruption; it reverts to its default value only upon an audio session category change.  This property can be used only with the [`kAudioSessionCategory_PlayAndRecord`](kaudiosessioncategory_playandrecord.md) (or the equivalent [`playAndRecord`](https://developer.apple.com/documentation/avfaudio/avaudiosession/category-swift.struct/playandrecord)) category.
 
 See also [`kAudioSessionProperty_OverrideAudioRoute`](kaudiosessionproperty_overrideaudioroute.md).
 

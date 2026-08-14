@@ -22,7 +22,7 @@ func CVImageBufferGetDisplaySize(_ imageBuffer: CVImageBuffer) -> CGSize
 
 #### Return Value
 
-A [`CGSize`](https://developer.apple.com/documentation/CoreFoundation/CGSize) structure defining the nominal display size of the image buffer. The size is zero if you pass a value for the image buffer that isn’t a [`CVImageBuffer`](cvimagebuffer.md) type.
+A [`CGSize`](https://developer.apple.com/documentation/corefoundation/cgsize) structure defining the nominal display size of the image buffer. The size is zero if you pass a value for the image buffer that isn’t a [`CVImageBuffer`](cvimagebuffer.md) type.
 
 #### Discussion
 

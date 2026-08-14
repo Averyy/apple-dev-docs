@@ -20,7 +20,7 @@ var handleIdentifier: String { get }
 
 #### Discussion
 
-The value of this property is a [`CNContact`](https://developer.apple.com/documentation/Contacts/CNContact) property key, such as [`CNContactPhoneNumbersKey`](https://developer.apple.com/documentation/Contacts/CNContactPhoneNumbersKey) or [`CNContactEmailAddressesKey`](https://developer.apple.com/documentation/Contacts/CNContactEmailAddressesKey).
+The value of this property is a [`CNContact`](https://developer.apple.com/documentation/contacts/cncontact) property key, such as [`CNContactPhoneNumbersKey`](https://developer.apple.com/documentation/contacts/cncontactphonenumberskey) or [`CNContactEmailAddressesKey`](https://developer.apple.com/documentation/contacts/cncontactemailaddresseskey).
 
 ## See Also
 

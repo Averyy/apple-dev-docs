@@ -26,7 +26,7 @@ A URL indicating the location of the group’s shared directory in the file syst
 
 #### Discussion
 
-Sandboxed apps in macOS and all apps in iOS that need to share files with other apps from the same developer on a given device use the [`App Groups Entitlement`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.security.application-groups) to join one or more application groups. The entitlement consists of an array of group identifier strings that indicate the groups to which the app belongs, as described in [`Adding an App to an App Group`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Miscellaneous/Reference/EntitlementKeyReference/Chapters/EnablingAppSandbox.html#//apple_ref/doc/uid/TP40011195-CH4-SW19) in [`Entitlement Key Reference`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Miscellaneous/Reference/EntitlementKeyReference/Chapters/AboutEntitlements.html#//apple_ref/doc/uid/TP40011195).
+Sandboxed apps in macOS and all apps in iOS that need to share files with other apps from the same developer on a given device use the [`App Groups Entitlement`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.security.application-groups) to join one or more application groups. The entitlement consists of an array of group identifier strings that indicate the groups to which the app belongs, as described in [`Adding an App to an App Group`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Miscellaneous/Reference/EntitlementKeyReference/Chapters/EnablingAppSandbox.html#//apple_ref/doc/uid/TP40011195-CH4-SW19) in [`Entitlement Key Reference`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Miscellaneous/Reference/EntitlementKeyReference/Chapters/AboutEntitlements.html#//apple_ref/doc/uid/TP40011195).
 
 You use one of these group identifier strings to locate the corresponding group’s shared directory. When you call [`containerURL(forSecurityApplicationGroupIdentifier:)`](filemanager/containerurl(forsecurityapplicationgroupidentifier:).md) with one of your app’s group identifiers, the method returns an [`NSURL`](nsurl.md) instance specifying the location in the file system of that group’s shared directory. The behavior of application groups differs between macOS and iOS.
 
@@ -50,13 +50,13 @@ If you call the method with an invalid group identifier in iOS, the method retur
 
 ## Parameters
 
-- `groupIdentifier`: A string that names the group whose shared directory you want to obtain. This input should exactly match one of the strings in the app’s [`App Groups Entitlement`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.security.application-groups).
+- `groupIdentifier`: A string that names the group whose shared directory you want to obtain. This input should exactly match one of the strings in the app’s [`App Groups Entitlement`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.security.application-groups).
 
 ## See Also
 
 - [App Sandbox Design Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Security/Conceptual/AppSandboxDesignGuide/AboutAppSandbox/AboutAppSandbox.html#//apple_ref/doc/uid/TP40011183)
 - [Entitlement Key Reference](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Miscellaneous/Reference/EntitlementKeyReference/Chapters/AboutEntitlements.html#//apple_ref/doc/uid/TP40011195)
-- [App Groups Entitlement](../BundleResources/Entitlements/com.apple.security.application-groups.md)
+- [App Groups Entitlement](../bundleresources/entitlements/com.apple.security.application-groups.md)
   A list of identifiers specifying the groups your app belongs to.
 
 

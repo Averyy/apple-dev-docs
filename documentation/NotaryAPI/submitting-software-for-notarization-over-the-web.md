@@ -8,17 +8,17 @@ Eliminate a dependency on macOS in your notarization workflow by interfacing dir
 
 If you notarize macOS software that you distribute with Developer ID, and if you use a custom notarization workflow, you can use `notarytool` (included with Xcode) to interact with the notary service. However, if you want to avoid a macOS dependency for this part of the workflow, you can use the notary service’s REST API.
 
-For an overview of the entire custom notarization workflow, see [`Customizing the notarization workflow`](https://developer.apple.com/documentation/Security/customizing-the-notarization-workflow). This article describes how to use the notary service API to replace the parts of that article that depend on `notarytool`, namely uploading your software and checking on the status of your request.
+For an overview of the entire custom notarization workflow, see [`Customizing the notarization workflow`](https://developer.apple.com/documentation/security/customizing-the-notarization-workflow). This article describes how to use the notary service API to replace the parts of that article that depend on `notarytool`, namely uploading your software and checking on the status of your request.
 
 ##### Create a Private Key
 
-When you access the notary service, you authenticate the access by including a token that you sign with a private key. Use the same key to sign tokens for the notary service that you use for the App Store Connect API. For details on how to create a key, see [`Creating API Keys for App Store Connect API`](https://developer.apple.com/documentation/AppStoreConnectAPI/creating-api-keys-for-app-store-connect-api).
+When you access the notary service, you authenticate the access by including a token that you sign with a private key. Use the same key to sign tokens for the notary service that you use for the App Store Connect API. For details on how to create a key, see [`Creating API Keys for App Store Connect API`](https://developer.apple.com/documentation/appstoreconnectapi/creating-api-keys-for-app-store-connect-api).
 
-Keep the key secure and private. You only need to create a key once, but if you lose the key, or if the key becomes compromised, revoke it immediately and create a new one. For more information, see [`Revoking API Keys`](https://developer.apple.com/documentation/AppStoreConnectAPI/revoking-api-keys).
+Keep the key secure and private. You only need to create a key once, but if you lose the key, or if the key becomes compromised, revoke it immediately and create a new one. For more information, see [`Revoking API Keys`](https://developer.apple.com/documentation/appstoreconnectapi/revoking-api-keys).
 
 ##### Include a Signed Token with Each Api Access
 
-The notary service requires a JSON Web Token (JWT) to authorize each API request. JWT is an open standard ([`RFC 7519`](https://developer.apple.comhttps://tools.ietf.org/html/rfc7519)) that defines a way to securely transmit information by using a private key to cryptographically sign a message in JSON format. You use the key to create a JWT for each request. For more information, see [`Generating Tokens for API Requests`](https://developer.apple.com/documentation/AppStoreConnectAPI/generating-tokens-for-api-requests).
+The notary service requires a JSON Web Token (JWT) to authorize each API request. JWT is an open standard ([`RFC 7519`](https://developer.apple.comhttps://tools.ietf.org/html/rfc7519)) that defines a way to securely transmit information by using a private key to cryptographically sign a message in JSON format. You use the key to create a JWT for each request. For more information, see [`Generating Tokens for API Requests`](https://developer.apple.com/documentation/appstoreconnectapi/generating-tokens-for-api-requests).
 
 After creating the signed token, include it in the header for all of your notary service API calls. For example, to use the [`Get Previous Submissions`](get-previous-submissions.md) endpoint to get a list of up to 100 of your team’s previous notarization submissions, replace `<token>` in the following call to the `curl` command with your signed token:
 

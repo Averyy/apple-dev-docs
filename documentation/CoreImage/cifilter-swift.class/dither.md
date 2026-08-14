@@ -30,7 +30,7 @@ The effect applies a dithering effect to the input image. The effect applies ran
 The dither filter uses the following properties:
 
 - **`inputImage`**: An image with the type [`CIImage`](ciimage.md).
-- **`intensity`**: A `float` representing the desired strength of the effect as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+- **`intensity`**: A `float` representing the desired strength of the effect as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
 
 The following code creates a filter that adds desaturation to the input image:
 
@@ -43,7 +43,7 @@ func dither(inputImage: CIImage) -> CIImage {
 }
 ```
 
-![Two pictures of a pink flower surrounded by foliage. The photo on the left shows a single flower photographed close-up, in focus, with good light and no effects. In the photo on the right, a dither filter is applied, resulting in the image having a worn appearance.](https://docs-assets.developer.apple.com/published/1c6a6d110de6ac78c9e8cfb2b5e1e930/media-3545020%402x.png)
+![Two pictures of a pink flower surrounded by foliage. The photo on the left shows a single flower photographed close-up, in focus, with good light and no effects. In the photo on the right, a dither filter is applied, resulting in the image having a worn appearance.](/images/com.apple.coreimage/media-3545020@2x.png)
 
 ## See Also
 

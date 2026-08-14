@@ -27,8 +27,8 @@ Calling this method after calling [`finishWorkout(completion:)`](hkworkoutbuilde
 
 - `UUID`: The workout activity’s universally unique identifier (UUID).
 - `endDate`: The end date and time for the workout activity.
-- `completion`: A callback handler that the system calls after updating the workout activity. The system calls the callback handler on an anonymous background queue. The callback handler takes the following parameters: - **success**: Contains [`true`](https://developer.apple.com/documentation/Swift/true) if the builder successfully updates the activity.
-- **error**: If the `success` parameter is [`false`](https://developer.apple.com/documentation/Swift/false), this parameter contains information about the error; otherwise, it’s `nil`.
+- `completion`: A callback handler that the system calls after updating the workout activity. The system calls the callback handler on an anonymous background queue. The callback handler takes the following parameters: - **success**: Contains [`true`](https://developer.apple.com/documentation/swift/true) if the builder successfully updates the activity.
+- **error**: If the `success` parameter is [`false`](https://developer.apple.com/documentation/swift/false), this parameter contains information about the error; otherwise, it’s `nil`.
 
 ## See Also
 

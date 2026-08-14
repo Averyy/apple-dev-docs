@@ -22,7 +22,7 @@ let CBAdvertisementDataTxPowerLevelKey: String
 
 #### Discussion
 
-The value associated with this key is an instance of [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+The value associated with this key is an instance of [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
 
 This key and value are available if the peripheral provides its transmitting power level in its advertising packet. You can calculate the path loss by comparing the RSSI value with the transmitting power level.
 

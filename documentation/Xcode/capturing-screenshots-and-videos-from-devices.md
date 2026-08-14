@@ -19,7 +19,7 @@ Use Device Hub to capture screenshots and record videos of your app in action to
 
 To take a screenshot, run your app on a simulated or physical device in Device Hub. Navigate to the place in your app where you want to capture a screenshot. Then click the Screenshot button below the device in the canvas. Device Hub captures the screenshot at the full resolution of the simulated or physical device, regardless of the display resolution of your Mac. Device Hub saves the screenshot to the Desktop folder on your Mac.
 
-![A screenshot of Device Hub showing a compact window of an iPhone simulator running the Landmarks sample code app with the Screenshot and Record button below the device.](https://docs-assets.developer.apple.com/published/ca999ea628e2f9bfd34ece670a1b2e92/capture-device-screenshot-and-video%402x.png)
+![A screenshot of Device Hub showing a compact window of an iPhone simulator running the Landmarks sample code app with the Screenshot and Record button below the device.](/images/com.apple.Xcode/capture-device-screenshot-and-video@2x.png)
 
 #### Record Videos on Simulated Devices
 

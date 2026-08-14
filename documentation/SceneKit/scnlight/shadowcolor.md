@@ -22,7 +22,7 @@ var shadowColor: Any { get set }
 
 #### Discussion
 
-The value of this property is an [`NSColor`](https://developer.apple.com/documentation/AppKit/NSColor) or [`CGColor`](https://developer.apple.com/documentation/CoreGraphics/CGColor) object. SceneKit blends the light’s color with other colors in the rendered image to produce a shadow effect. The color’s opacity (alpha value) determines the intensity of the shadows. The default shadow color is black with 50% opacity.
+The value of this property is an [`NSColor`](https://developer.apple.com/documentation/appkit/nscolor) or [`CGColor`](https://developer.apple.com/documentation/coregraphics/cgcolor) object. SceneKit blends the light’s color with other colors in the rendered image to produce a shadow effect. The color’s opacity (alpha value) determines the intensity of the shadows. The default shadow color is black with 50% opacity.
 
 You can animate changes to this property’s value. See [`Animating SceneKit Content`](animating-scenekit-content.md).
 

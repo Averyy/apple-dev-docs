@@ -33,7 +33,7 @@ https://example.com/.well-known/appattribution/report-attribution/
 
 Replace `example.com` with your domain name.
 
-> **Note**: If your app uses the [`AdAttributionKit`](AdAttributionKit.md) framework and the [`SKAdNetwork`](https://developer.apple.com/documentation/StoreKit/SKAdNetwork) class, add the AdAttributionKit and `SKAdNetwork` postback copy URLs to your app’s Information Property List through the Info pane in Xcode. For more information, see [`Managing your app’s information property list values`](https://developer.apple.com/documentation/BundleResources/managing-your-app-s-information-property-list).
+> **Note**: If your app uses the [`AdAttributionKit`](AdAttributionKit.md) framework and the [`SKAdNetwork`](https://developer.apple.com/documentation/storekit/skadnetwork) class, add the AdAttributionKit and `SKAdNetwork` postback copy URLs to your app’s Information Property List through the Info pane in Xcode. For more information, see [`Managing your app’s information property list values`](https://developer.apple.com/documentation/bundleresources/managing-your-app-s-information-property-list).
 
 For more information about receiving postbacks, see [`Receiving ad attributions and postbacks`](receiving-ad-attributions-and-postbacks.md).
 

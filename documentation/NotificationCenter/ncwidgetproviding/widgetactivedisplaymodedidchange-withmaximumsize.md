@@ -18,14 +18,14 @@ optional func widgetActiveDisplayModeDidChange(_ activeDisplayMode: NCWidgetDisp
 
 #### Discussion
 
-You might implement this method if your widget should change its [`preferredContentSize`](https://developer.apple.com/documentation/UIKit/UIViewController/preferredContentSize) value to better accommodate the new display mode.
+You might implement this method if your widget should change its [`preferredContentSize`](https://developer.apple.com/documentation/uikit/uiviewcontroller/preferredcontentsize) value to better accommodate the new display mode.
 
 Widgets displayed as [`NCWidgetDisplayMode.compact`](ncwidgetdisplaymode/compact.md) have a fixed size passed in the `maxSize` parameter.
 
 ## Parameters
 
 - `activeDisplayMode`: The new active display mode. See [`NCWidgetDisplayMode`](ncwidgetdisplaymode.md) for possible values.
-- `maxSize`: A [`CGSize`](https://developer.apple.com/documentation/CoreFoundation/CGSize) object that represents the new maximum size this widget can have.
+- `maxSize`: A [`CGSize`](https://developer.apple.com/documentation/corefoundation/cgsize) object that represents the new maximum size this widget can have.
 
 ## See Also
 

@@ -23,12 +23,12 @@ optional func download(_ download: BADownload, didReceive challenge: URLAuthenti
 
 The completion handler takes the following parameters:
 
-- An [`URLSession.AuthChallengeDisposition`](https://developer.apple.com/documentation/Foundation/URLSession/AuthChallengeDisposition) that indicates whether the system processes, cancels, or rejects the challenge.
-- If the specified dispostion is [`URLSession.AuthChallengeDisposition.useCredential`](https://developer.apple.com/documentation/Foundation/URLSession/AuthChallengeDisposition/useCredential), the [`URLCredential`](https://developer.apple.com/documentation/Foundation/URLCredential) to use for authentication; otherwise, specify `nil`.
+- An [`URLSession.AuthChallengeDisposition`](https://developer.apple.com/documentation/foundation/urlsession/authchallengedisposition) that indicates whether the system processes, cancels, or rejects the challenge.
+- If the specified dispostion is [`URLSession.AuthChallengeDisposition.useCredential`](https://developer.apple.com/documentation/foundation/urlsession/authchallengedisposition/usecredential), the [`URLCredential`](https://developer.apple.com/documentation/foundation/urlcredential) to use for authentication; otherwise, specify `nil`.
 
 If you implement this method, make sure to call the completion handler promptly and with the necessary information. Otherwise, the server may deny the request and the associated asset download fails.
 
-For more information about authentication challenges, see [`Handling an authentication challenge`](https://developer.apple.com/documentation/Foundation/handling-an-authentication-challenge).
+For more information about authentication challenges, see [`Handling an authentication challenge`](https://developer.apple.com/documentation/foundation/handling-an-authentication-challenge).
 
 ## Parameters
 

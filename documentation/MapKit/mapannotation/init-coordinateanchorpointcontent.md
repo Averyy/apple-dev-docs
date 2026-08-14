@@ -27,7 +27,7 @@ Use the anchor point to align the SwiftUI view you return in content to the coor
 ## Parameters
 
 - `coordinate`: The location of the specified annotation.
-- `anchorPoint`: A [`CGPoint`](https://developer.apple.com/documentation/CoreFoundation/CGPoint) value in unit coordinate space that aligns the coordinate location of the annotation with view created. The default value `0.5`, which represents the center of the view.
+- `anchorPoint`: A [`CGPoint`](https://developer.apple.com/documentation/corefoundation/cgpoint) value in unit coordinate space that aligns the coordinate location of the annotation with view created. The default value `0.5`, which represents the center of the view.
 - `content`: The closure that returns a custom annotation view.
 
 

@@ -19,7 +19,7 @@ case confirmation
 
 #### Discussion
 
-![None](https://docs-assets.developer.apple.com/published/dae52dacb9646bd714de31163e1ea12c/media-2934524%402x.png)
+![None](/images/com.apple.uikit/media-2934524@2x.png)
 
 ## See Also
 

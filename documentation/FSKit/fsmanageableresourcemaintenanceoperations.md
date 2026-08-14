@@ -30,7 +30,7 @@ This protocol includes operations to check and format a resource for an [`FSUnar
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 
 ---

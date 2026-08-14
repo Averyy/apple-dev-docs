@@ -17,7 +17,7 @@ class AVDisplayCriteria
 
 #### Overview
 
-In tvOS, this object provides the display criteria that an [`AVDisplayManager`](https://developer.apple.com/documentation/AVKit/AVDisplayManager) uses to set an appropriate display mode, such as switching to HDR, when presenting a video asset. If your app uses [`AVPlayerViewController`](https://developer.apple.com/documentation/AVKit/AVPlayerViewController) for its player user interface, the system automatically applies the display critera when it presents the asset. If you use a custom player interface, load the value of an asset’s [`preferredDisplayCriteria`](avpartialasyncproperty/preferreddisplaycriteria.md) property and set it on the window’s [`avDisplayManager`](https://developer.apple.com/documentation/UIKit/UIWindow/avDisplayManager) object.
+In tvOS, this object provides the display criteria that an [`AVDisplayManager`](https://developer.apple.com/documentation/avkit/avdisplaymanager) uses to set an appropriate display mode, such as switching to HDR, when presenting a video asset. If your app uses [`AVPlayerViewController`](https://developer.apple.com/documentation/avkit/avplayerviewcontroller) for its player user interface, the system automatically applies the display critera when it presents the asset. If you use a custom player interface, load the value of an asset’s [`preferredDisplayCriteria`](avpartialasyncproperty/preferreddisplaycriteria.md) property and set it on the window’s [`avDisplayManager`](https://developer.apple.com/documentation/uikit/uiwindow/avdisplaymanager) object.
 
 > ❗ **Important**:  Most apps don’t create instances of this class, and instead retrieve the preferred display criteria from a media asset. If your app doesn’t use [`AVAsset`](avasset.md), such as a streaming app that renders sample buffers using [`AVSampleBufferDisplayLayer`](avsamplebufferdisplaylayer.md), you can manually create an instance using the [`init(refreshRate:formatDescription:)`](avdisplaycriteria/init(refreshrate:formatdescription:).md) initializer.
 
@@ -30,17 +30,17 @@ In tvOS, this object provides the display criteria that an [`AVDisplayManager`](
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCopying](../Foundation/NSCopying.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCopying](../foundation/nscopying.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

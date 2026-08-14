@@ -16,19 +16,19 @@ Create a MetalKit view and a render pass to draw the view’s contents.
 
 In this sample, you’ll learn the basics of rendering graphics content with Metal. You’ll use the MetalKit framework to create a view that uses Metal to draw the contents of the view.  Then, you’ll encode commands for a render pass that erases the view to a background color.
 
-> **Note**: MetalKit automates windowing system tasks, loads textures, and handles 3D model data. See [`MetalKit`](https://developer.apple.com/documentation/MetalKit) for more information.
+> **Note**: MetalKit automates windowing system tasks, loads textures, and handles 3D model data. See [`MetalKit`](https://developer.apple.com/documentation/metalkit) for more information.
 
 ##### Prepare a Metalkit View to Draw
 
-MetalKit provides a class called [`MTKView`](https://developer.apple.com/documentation/MetalKit/MTKView), which is a subclass of [`NSView`](https://developer.apple.com/documentation/AppKit/NSView) (in macOS) or [`UIView`](https://developer.apple.com/documentation/UIKit/UIView) (in iOS and tvOS). `MTKView` handles many of the details related to getting the content you draw with Metal onto the screen.
+MetalKit provides a class called [`MTKView`](https://developer.apple.com/documentation/metalkit/mtkview), which is a subclass of [`NSView`](https://developer.apple.com/documentation/appkit/nsview) (in macOS) or [`UIView`](https://developer.apple.com/documentation/uikit/uiview) (in iOS and tvOS). `MTKView` handles many of the details related to getting the content you draw with Metal onto the screen.
 
-An `MTKView` needs a reference to a Metal device object in order to create resources internally, so your first step is to set the view’s [`device`](https://developer.apple.com/documentation/MetalKit/MTKView/device) property to an existing [`MTLDevice`](mtldevice.md).
+An `MTKView` needs a reference to a Metal device object in order to create resources internally, so your first step is to set the view’s [`device`](https://developer.apple.com/documentation/metalkit/mtkview/device) property to an existing [`MTLDevice`](mtldevice.md).
 
 ```objective-c
 _view.device = MTLCreateSystemDefaultDevice();
 ```
 
-Other properties on `MTKView` allow you to control its behavior. To erase the contents of the view to a solid background color, you set its [`clearColor`](https://developer.apple.com/documentation/MetalKit/MTKView/clearColor) property. You create the color using the [`MTLClearColorMake(_:_:_:_:)`](mtlclearcolormake(_:_:_:_:).md) function, specifying the red, green, blue, and alpha values.
+Other properties on `MTKView` allow you to control its behavior. To erase the contents of the view to a solid background color, you set its [`clearColor`](https://developer.apple.com/documentation/metalkit/mtkview/clearcolor) property. You create the color using the [`MTLClearColorMake(_:_:_:_:)`](mtlclearcolormake(_:_:_:_:).md) function, specifying the red, green, blue, and alpha values.
 
 ```objective-c
 _view.clearColor = MTLClearColorMake(0.0, 0.5, 1.0, 1.0);
@@ -42,7 +42,7 @@ _view.enableSetNeedsDisplay = YES;
 
 ##### Delegate Drawing Responsibilities
 
-`MTKView` relies on your app to issue commands to Metal to produce visual content. `MTKView` uses the delegate pattern to inform your app when it should draw. To receive delegate callbacks, set the view’s `delegate` property to an object that conforms to the [`MTKViewDelegate`](https://developer.apple.com/documentation/MetalKit/MTKViewDelegate) protocol.
+`MTKView` relies on your app to issue commands to Metal to produce visual content. `MTKView` uses the delegate pattern to inform your app when it should draw. To receive delegate callbacks, set the view’s `delegate` property to an object that conforms to the [`MTKViewDelegate`](https://developer.apple.com/documentation/metalkit/mtkviewdelegate) protocol.
 
 ```objective-c
 _view.delegate = _renderer;
@@ -50,8 +50,8 @@ _view.delegate = _renderer;
 
 The delegate implements two methods:
 
-- The view calls the [`mtkView(_:drawableSizeWillChange:)`](https://developer.apple.com/documentation/MetalKit/MTKViewDelegate/mtkView(_:drawableSizeWillChange:)) method whenever the size of the contents changes. This happens when the window containing the view is resized, or when the device orientation changes (on iOS). This allows your app to adapt the resolution at which it renders to the size of the view.
-- The view calls the [`draw(in:)`](https://developer.apple.com/documentation/MetalKit/MTKViewDelegate/draw(in:)) method whenever it’s time to update the view’s contents. In this method, you create a command buffer, encode commands that tell the GPU what to draw and when to display it onscreen, and enqueue that command buffer to be executed by the GPU. This is sometimes referred to as drawing a frame. You can think of a frame as all of the work that goes into producing a single image that gets displayed on the screen. In an interactive app, like a game, you might draw many frames per second.
+- The view calls the [`mtkView(_:drawableSizeWillChange:)`](https://developer.apple.com/documentation/metalkit/mtkviewdelegate/mtkview(_:drawablesizewillchange:)) method whenever the size of the contents changes. This happens when the window containing the view is resized, or when the device orientation changes (on iOS). This allows your app to adapt the resolution at which it renders to the size of the view.
+- The view calls the [`draw(in:)`](https://developer.apple.com/documentation/metalkit/mtkviewdelegate/draw(in:)) method whenever it’s time to update the view’s contents. In this method, you create a command buffer, encode commands that tell the GPU what to draw and when to display it onscreen, and enqueue that command buffer to be executed by the GPU. This is sometimes referred to as drawing a frame. You can think of a frame as all of the work that goes into producing a single image that gets displayed on the screen. In an interactive app, like a game, you might draw many frames per second.
 
 In this sample, a class called `AAPLRenderer` implements the delegate methods and takes on the responsibility of drawing. The view controller creates an instance of this class and sets it as the view’s delegate.
 
@@ -91,7 +91,7 @@ In this sample, you don’t encode any drawing commands, so the only thing the r
 
 Drawing to a texture doesn’t automatically display the new contents onscreen. In fact, only some textures can be presented onscreen. In Metal, textures that can be displayed onscreen are managed by *drawable objects*, and to display the content, you present the drawable.
 
-`MTKView` automatically creates drawable objects to manage its textures. Read the [`currentDrawable`](https://developer.apple.com/documentation/MetalKit/MTKView/currentDrawable) property to get the drawable that owns the texture that is the render pass’s target. The view returns a [`CAMetalDrawable`](https://developer.apple.com/documentation/QuartzCore/CAMetalDrawable) object, an object connected to Core Animation.
+`MTKView` automatically creates drawable objects to manage its textures. Read the [`currentDrawable`](https://developer.apple.com/documentation/metalkit/mtkview/currentdrawable) property to get the drawable that owns the texture that is the render pass’s target. The view returns a [`CAMetalDrawable`](https://developer.apple.com/documentation/quartzcore/cametaldrawable) object, an object connected to Core Animation.
 
 ```objective-c
 id<MTLDrawable> drawable = view.currentDrawable;

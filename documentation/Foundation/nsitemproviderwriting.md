@@ -43,7 +43,7 @@ A source app uses an object that conforms to this protocol to initialize an item
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 ### Conforming Types
 - [NSAttributedString](nsattributedstring.md)
 - [NSMutableString](nsmutablestring.md)

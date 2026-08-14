@@ -34,9 +34,9 @@ struct SchedulerTimeType
 ## Relationships
 
 ### Conforms To
-- [Comparable](../Swift/Comparable.md)
-- [Equatable](../Swift/Equatable.md)
-- [Strideable](../Swift/Strideable.md)
+- [Comparable](../swift/comparable.md)
+- [Equatable](../swift/equatable.md)
+- [Strideable](../swift/strideable.md)
 
 ## See Also
 

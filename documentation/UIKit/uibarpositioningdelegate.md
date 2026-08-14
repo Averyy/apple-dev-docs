@@ -32,7 +32,7 @@ Navigation bars, toolbars, and search bars all have delegates that support the [
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 ### Inherited By
 - [UINavigationBarDelegate](uinavigationbardelegate.md)
 - [UISearchBarDelegate](uisearchbardelegate.md)

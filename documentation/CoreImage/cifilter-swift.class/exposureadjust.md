@@ -29,7 +29,7 @@ This method applies the exposure-adjust filter to an image. The effect uses mult
 
 The exposure-adjust filter uses the following properties:
 
-- **`ev`**: A `float` representing the amount to adjust the exposure as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+- **`ev`**: A `float` representing the amount to adjust the exposure as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
 - **`inputImage`**: An image with the type [`CIImage`](ciimage.md).
 
 The following code creates a filter that adds brightness to the input image:
@@ -43,7 +43,7 @@ func exposureAdjust(inputImage: CIImage) -> CIImage {
 }
 ```
 
-![Two versions of a photograph side by side. The photo on the left shows a small bunch of flowers photographed close up, in focus, with good light and no effects. In the photo on the right, an exposure-adjust filter is applied, resulting in a brighter image.](https://docs-assets.developer.apple.com/published/6c7826b025bfcaa86b0448ee76baf2ad/media-3545001%402x.png)
+![Two versions of a photograph side by side. The photo on the left shows a small bunch of flowers photographed close up, in focus, with good light and no effects. In the photo on the right, an exposure-adjust filter is applied, resulting in a brighter image.](/images/com.apple.coreimage/media-3545001@2x.png)
 
 ## See Also
 

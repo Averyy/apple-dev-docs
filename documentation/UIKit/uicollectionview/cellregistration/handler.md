@@ -23,7 +23,7 @@ typealias Handler = (Cell, IndexPath, Item) -> Void
 The closure takes the following parameters:
 
 - **`cell`**: The [`UICollectionViewCell`](uicollectionviewcell.md) or subclass instance to configure.
-- **`indexPath`**: The [`IndexPath`](https://developer.apple.com/documentation/Foundation/IndexPath) of the cell to configure.
+- **`indexPath`**: The [`IndexPath`](https://developer.apple.com/documentation/foundation/indexpath) of the cell to configure.
 - **`item`**: The data item you provide in [`dequeueConfiguredReusableCell(using:for:item:)`](uicollectionview/dequeueconfiguredreusablecell(using:for:item:).md).
 
 ## See Also

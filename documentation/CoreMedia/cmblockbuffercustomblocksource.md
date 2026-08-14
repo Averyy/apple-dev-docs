@@ -41,7 +41,7 @@ This structure allows a client to provide a custom facility for obtaining the me
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../Swift/BitwiseCopyable.md)
+- [BitwiseCopyable](../swift/bitwisecopyable.md)
 
 ## See Also
 

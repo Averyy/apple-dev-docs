@@ -21,7 +21,7 @@ class var hardMix: CIBlendKernel { get }
 
 #### Discussion
 
-![The result of using the hard mix blend kernel (background image is top left, foreground image is bottom left)](https://docs-assets.developer.apple.com/published/9559185a8ee4cc31697ba5a67c59bc44/media-2926868%402x.png)
+![The result of using the hard mix blend kernel (background image is top left, foreground image is bottom left)](/images/com.apple.coreimage/media-2926868@2x.png)
 
 ## See Also
 

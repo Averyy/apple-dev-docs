@@ -16,7 +16,7 @@ optional func resourceImage(name resourceName: String) -> UIImage?
 
 #### Return Value
 
-The [`UIImage`](https://developer.apple.com/documentation/UIKit/UIImage) associated with the resource name. Returns `nil` if no image matches the resource name or if the event is not handled.
+The [`UIImage`](https://developer.apple.com/documentation/uikit/uiimage) associated with the resource name. Returns `nil` if no image matches the resource name or if the event is not handled.
 
 #### Discussion
 

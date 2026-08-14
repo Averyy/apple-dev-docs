@@ -30,7 +30,7 @@ The language used for the visual format string is described in [`Auto Layout Coo
 
 - `format`: The format specification for the constraints. For more information, see [`Auto Layout Cookbook`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/UserExperience/Conceptual/AutolayoutPG/LayoutUsingStackViews.html#//apple_ref/doc/uid/TP40010853-CH3) in [`Auto Layout Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/UserExperience/Conceptual/AutolayoutPG/index.html#//apple_ref/doc/uid/TP40010853).
 - `opts`: Options describing the attribute and the direction of layout for all objects in the visual format string.
-- `metrics`: A dictionary of constants that appear in the visual format string. The dictionary’s keys must be the string values used in the visual format string. Their values must be [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) objects.
+- `metrics`: A dictionary of constants that appear in the visual format string. The dictionary’s keys must be the string values used in the visual format string. Their values must be [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) objects.
 - `views`: A dictionary of views that appear in the visual format string. The keys must be the string values used in the visual format string, and the values must be the view objects.
 
 ## See Also

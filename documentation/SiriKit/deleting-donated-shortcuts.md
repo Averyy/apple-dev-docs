@@ -20,26 +20,26 @@ If you need to delete all interactions that your app donated—for example, when
 
 ##### Delete User Activity Donations
 
-The method you use to delete a donation made with [`NSUserActivity`](https://developer.apple.com/documentation/Foundation/NSUserActivity) depends on how you set up the user activity.
+The method you use to delete a donation made with [`NSUserActivity`](https://developer.apple.com/documentation/foundation/nsuseractivity) depends on how you set up the user activity.
 
 ###### Persisted Activities
 
-If user activity’s [`isEligibleForPrediction`](https://developer.apple.com/documentation/Foundation/NSUserActivity/isEligibleForPrediction) property is set to [`true`](https://developer.apple.com/documentation/Swift/true) and the [`persistentIdentifier`](https://developer.apple.com/documentation/Foundation/NSUserActivity/persistentIdentifier) property is set to a unique string identifying the activity, then:
+If user activity’s [`isEligibleForPrediction`](https://developer.apple.com/documentation/foundation/nsuseractivity/iseligibleforprediction) property is set to [`true`](https://developer.apple.com/documentation/swift/true) and the [`persistentIdentifier`](https://developer.apple.com/documentation/foundation/nsuseractivity/persistentidentifier) property is set to a unique string identifying the activity, then:
 
-- Use [`deleteSavedUserActivities(withPersistentIdentifiers:completionHandler:)`](https://developer.apple.com/documentation/Foundation/NSUserActivity/deleteSavedUserActivities(withPersistentIdentifiers:completionHandler:)), passing in the list of persistent identifiers, to delete individual activities. This method also deletes user activities stored by Core Spotlight that have a matching persistent identifier.
-- Use [`deleteAllSavedUserActivities(completionHandler:)`](https://developer.apple.com/documentation/Foundation/NSUserActivity/deleteAllSavedUserActivities(completionHandler:)) to delete all activities saved by your app; for example, after the user signs out of your app. This method also deletes all user activities created by your app and stored by Core Spotlight.
+- Use [`deleteSavedUserActivities(withPersistentIdentifiers:completionHandler:)`](https://developer.apple.com/documentation/foundation/nsuseractivity/deletesaveduseractivities(withpersistentidentifiers:completionhandler:)), passing in the list of persistent identifiers, to delete individual activities. This method also deletes user activities stored by Core Spotlight that have a matching persistent identifier.
+- Use [`deleteAllSavedUserActivities(completionHandler:)`](https://developer.apple.com/documentation/foundation/nsuseractivity/deleteallsaveduseractivities(completionhandler:)) to delete all activities saved by your app; for example, after the user signs out of your app. This method also deletes all user activities created by your app and stored by Core Spotlight.
 
 ###### Spotlight Indexed Activities
 
-If the user activity is indexed in Spotlight and the [`relatedUniqueIdentifier`](https://developer.apple.com/documentation/CoreSpotlight/CSSearchableItemAttributeSet/relatedUniqueIdentifier) property is set to a unique string identifying the activity, then:
+If the user activity is indexed in Spotlight and the [`relatedUniqueIdentifier`](https://developer.apple.com/documentation/corespotlight/cssearchableitemattributeset/relateduniqueidentifier) property is set to a unique string identifying the activity, then:
 
-- Use [`deleteSearchableItems(withIdentifiers:completionHandler:)`](https://developer.apple.com/documentation/CoreSpotlight/CSSearchableIndex/deleteSearchableItems(withIdentifiers:completionHandler:)) to delete specific Spotlight items.
-- Use [`deleteSearchableItems(withDomainIdentifiers:completionHandler:)`](https://developer.apple.com/documentation/CoreSpotlight/CSSearchableIndex/deleteSearchableItems(withDomainIdentifiers:completionHandler:)) to delete Spotlight items grouped by domain identifiers.
-- Use [`deleteAllSearchableItems(completionHandler:)`](https://developer.apple.com/documentation/CoreSpotlight/CSSearchableIndex/deleteAllSearchableItems(completionHandler:)) to delete all searchable items that your app contributed to Spotlight from the index.
+- Use [`deleteSearchableItems(withIdentifiers:completionHandler:)`](https://developer.apple.com/documentation/corespotlight/cssearchableindex/deletesearchableitems(withidentifiers:completionhandler:)) to delete specific Spotlight items.
+- Use [`deleteSearchableItems(withDomainIdentifiers:completionHandler:)`](https://developer.apple.com/documentation/corespotlight/cssearchableindex/deletesearchableitems(withdomainidentifiers:completionhandler:)) to delete Spotlight items grouped by domain identifiers.
+- Use [`deleteAllSearchableItems(completionHandler:)`](https://developer.apple.com/documentation/corespotlight/cssearchableindex/deleteallsearchableitems(completionhandler:)) to delete all searchable items that your app contributed to Spotlight from the index.
 
 When you delete a Spotlight item, the system deletes the related user activity and its donations.
 
-For more information about Spotlight indexing, see [`Core Spotlight`](https://developer.apple.com/documentation/CoreSpotlight).
+For more information about Spotlight indexing, see [`Core Spotlight`](https://developer.apple.com/documentation/corespotlight).
 
 ## See Also
 

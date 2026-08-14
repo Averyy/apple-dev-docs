@@ -16,7 +16,7 @@ struct MLGazetteer
 
 #### Overview
 
-Use an [`MLGazetteer`](mlgazetteer.md) to configure a gazetteer and save it to a file, which you then add to your app in Xcode. Your app uses the gazetteer file at runtime to create an instance of [`NLGazetteer`](https://developer.apple.com/documentation/NaturalLanguage/NLGazetteer), which augments an [`NLTagger`](https://developer.apple.com/documentation/NaturalLanguage/NLTagger) to tag specific terms with a label.
+Use an [`MLGazetteer`](mlgazetteer.md) to configure a gazetteer and save it to a file, which you then add to your app in Xcode. Your app uses the gazetteer file at runtime to create an instance of [`NLGazetteer`](https://developer.apple.com/documentation/naturallanguage/nlgazetteer), which augments an [`NLTagger`](https://developer.apple.com/documentation/naturallanguage/nltagger) to tag specific terms with a label.
 
 You configure a gazetteer with a dictionary, keyed by labels. Each value in the dictionary is an array of terms (words or phrases) for each label. For example, you can store the names of real and fictional planets in a gazetteer.
 
@@ -80,11 +80,11 @@ A gazetteer file can efficiently store many labels, and many terms for each labe
 ## Relationships
 
 ### Conforms To
-- [Copyable](../Swift/Copyable.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomPlaygroundDisplayConvertible](../Swift/CustomPlaygroundDisplayConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Escapable](../Swift/Escapable.md)
+- [Copyable](../swift/copyable.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomPlaygroundDisplayConvertible](../swift/customplaygrounddisplayconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Escapable](../swift/escapable.md)
 
 ## See Also
 

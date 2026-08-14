@@ -16,7 +16,7 @@ optional func previewPanel(_ panel: QLPreviewPanel!, sourceFrameOnScreenFor item
 
 #### Return Value
 
-The screen rectangle for the given preview item. Return [`NSZeroRect`](https://developer.apple.com/documentation/Foundation/NSZeroRect) if there is no origin point (this will produce a fade of the panel).
+The screen rectangle for the given preview item. Return [`NSZeroRect`](https://developer.apple.com/documentation/foundation/nszerorect) if there is no origin point (this will produce a fade of the panel).
 
 #### Discussion
 

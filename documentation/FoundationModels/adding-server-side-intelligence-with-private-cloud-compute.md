@@ -14,7 +14,7 @@ Typically, you need to handle authentication and manage API keys with server mod
 
 #### Use the Server Based Apple Intelligence Model
 
-Choosing when to use PCC depends on your feature and is best made after evaluating your feature. This process helps you understand the quality of your specific feature, and whether it meets your expectations when using the on-device model. Start with the on-device model and evaluate it with the [`Evaluations`](https://developer.apple.com/documentation/Evaluations) framework. If you determine your feature needs more reasoning capability or context size, then use PCC.
+Choosing when to use PCC depends on your feature and is best made after evaluating your feature. This process helps you understand the quality of your specific feature, and whether it meets your expectations when using the on-device model. Start with the on-device model and evaluate it with the [`Evaluations`](https://developer.apple.com/documentation/evaluations) framework. If you determine your feature needs more reasoning capability or context size, then use PCC.
 
 | Capability | `SystemLanguageModel` |  | `PrivateCloudComputeLanguageModel` |
 | --- | --- | --- | --- |
@@ -95,7 +95,7 @@ A person might encounter their usage limit when they are interacting with your s
 
 When a person exceeds the limit, display a message in your app so they know about it and can choose to upgrade for more access. The following shows three ways for presenting a usage limit message to a person:
 
-![Three iPhone screens side by side, each showing a different presentation style](https://docs-assets.developer.apple.com/published/36860c7b8ff8a800d3a6193fdce9f565/adding-server-side-intelligence-with-private-cloud-compute-usage-message%402x.png)
+![Three iPhone screens side by side, each showing a different presentation style](/images/com.apple.foundationmodels/adding-server-side-intelligence-with-private-cloud-compute-usage-message@2x.png)
 
 To test your app’s experience when encountering usage limits, the Xcode Scheme navigator provides options that simulate approaching and exceeding the limit.
 
@@ -125,7 +125,7 @@ The more reasoning you apply causes the model to use more of the context window 
 
 ## See Also
 
-- [com.apple.developer.private-cloud-compute](../BundleResources/Entitlements/com.apple.developer.private-cloud-compute.md)
+- [com.apple.developer.private-cloud-compute](../bundleresources/entitlements/com.apple.developer.private-cloud-compute.md)
   A Boolean value that indicates whether the app can use Private Cloud Compute.
 - [class PrivateCloudComputeLanguageModel](privatecloudcomputelanguagemodel.md)
   A variant of Apple Foundation Models that runs on Private Cloud Compute to provide enhanced capabilities while maintaining privacy guarantees.

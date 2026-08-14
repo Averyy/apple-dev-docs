@@ -18,9 +18,9 @@ When using your app, the user performs actions that affect the user interface. F
 
 This sample app demonstrates the use of state preservation and restoration for scenarios where the system interrupts the app. The sample project manages a set of products. Each product has a title, an image, and other metadata you can view and edit. The project shows how to preserve and restore a product in its `DetailParentViewController`.
 
-The sample supports two state preservation approaches. In iOS 13 and later, apps save the state for each window scene using [`NSUserActivity`](https://developer.apple.com/documentation/Foundation/NSUserActivity) objects. In iOS 12 and earlier, apps preserve the state of their user interfaces by saving and restoring the configuration of view controllers.
+The sample supports two state preservation approaches. In iOS 13 and later, apps save the state for each window scene using [`NSUserActivity`](https://developer.apple.com/documentation/foundation/nsuseractivity) objects. In iOS 12 and earlier, apps preserve the state of their user interfaces by saving and restoring the configuration of view controllers.
 
-For scene-based apps, UIKit asks each scene to save its state information using an [`NSUserActivity`](https://developer.apple.com/documentation/Foundation/NSUserActivity) object. `NSUserActivity` is a core part of modern state restoration with [`UIScene`](uiscene.md) and [`UISceneDelegate`](uiscenedelegate.md). In your own apps, you use the activity object to store information needed to recreate your scene’s interface and restore the content of that interface. If your app doesn’t support scenes, use the view-controller-based state restoration process to preserve the state of your interface instead.
+For scene-based apps, UIKit asks each scene to save its state information using an [`NSUserActivity`](https://developer.apple.com/documentation/foundation/nsuseractivity) object. `NSUserActivity` is a core part of modern state restoration with [`UIScene`](uiscene.md) and [`UISceneDelegate`](uiscenedelegate.md). In your own apps, you use the activity object to store information needed to recreate your scene’s interface and restore the content of that interface. If your app doesn’t support scenes, use the view-controller-based state restoration process to preserve the state of your interface instead.
 
 For additional information about state restoration, see  [`Preserving your app’s UI across launches`](preserving-your-app-s-ui-across-launches.md).
 
@@ -58,7 +58,7 @@ func application(_ application: UIApplication, shouldRestoreSecureApplicationSta
 
 ##### Restore the App State with an Activity Object
 
-Scene-based state restoration is the recommended way to restore the app’s user interface. An [`NSUserActivity`](https://developer.apple.com/documentation/Foundation/NSUserActivity) object captures the app’s state at the current moment in time. For this sample, the app preserves and restores the product information as the user displays or edits it. The sample app saves the product’s data in an `NSUserActivity` object when the user closes the app or the app enters the background. When the user launches the app again, the sample’s [`scene(_:willConnectTo:options:)`](uiscenedelegate/scene(_:willconnectto:options:).md) method checks for the presence of an activity object. If one is present, the method configures the detail view controller that the activity object specifies.
+Scene-based state restoration is the recommended way to restore the app’s user interface. An [`NSUserActivity`](https://developer.apple.com/documentation/foundation/nsuseractivity) object captures the app’s state at the current moment in time. For this sample, the app preserves and restores the product information as the user displays or edits it. The sample app saves the product’s data in an `NSUserActivity` object when the user closes the app or the app enters the background. When the user launches the app again, the sample’s [`scene(_:willConnectTo:options:)`](uiscenedelegate/scene(_:willconnectto:options:).md) method checks for the presence of an activity object. If one is present, the method configures the detail view controller that the activity object specifies.
 
 ##### Restore the App State Using View Controllers
 
@@ -68,7 +68,7 @@ The sample specifies which of its view controllers to save, and assigns a restor
 
 The sample assigns a restoration ID for each view controller in the storyboard file. This information is available by selecting the view controller and looking at the Identity Inspector. The Storyboard ID for that view controller is usually the same as the Restoration ID.
 
-This sample saves the state information in the detail view controller’s [`encodeRestorableState(with:)`](https://developer.apple.com/documentation/AppKit/NSResponder/encodeRestorableState(with:)) method, and it restores that state in the [`restoreState(with:)`](https://developer.apple.com/documentation/AppKit/NSResponder/restoreState(with:)) method. Because it already encapsulates the view controller’s state in an [`NSUserActivity`](https://developer.apple.com/documentation/Foundation/NSUserActivity) object, the implementations of these methods operate on the existing activity object. The sample then calls the required superclass methods from these methods, which allows UIKit to restore the rest of the view controller’s inherited state.
+This sample saves the state information in the detail view controller’s [`encodeRestorableState(with:)`](https://developer.apple.com/documentation/appkit/nsresponder/encoderestorablestate(with:)) method, and it restores that state in the [`restoreState(with:)`](https://developer.apple.com/documentation/appkit/nsresponder/restorestate(with:)) method. Because it already encapsulates the view controller’s state in an [`NSUserActivity`](https://developer.apple.com/documentation/foundation/nsuseractivity) object, the implementations of these methods operate on the existing activity object. The sample then calls the required superclass methods from these methods, which allows UIKit to restore the rest of the view controller’s inherited state.
 
 This example enables the state preservation of `InfoViewController`:
 
@@ -106,7 +106,7 @@ When debugging the sample project, the system automatically deletes its preserve
 
 ## See Also
 
-- [Restoring your app’s state with SwiftUI](../SwiftUI/restoring-your-app-s-state-with-swiftui.md)
+- [Restoring your app’s state with SwiftUI](../swiftui/restoring-your-app-s-state-with-swiftui.md)
   Provide app continuity for users by preserving their current activities.
 - [Preserving your app’s UI across launches](preserving-your-app-s-ui-across-launches.md)
   Return your app to its previous state after the system terminates it.

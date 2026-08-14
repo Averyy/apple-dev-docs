@@ -16,7 +16,7 @@ var alwaysUsesMultipleValuesMarker: Bool { get set }
 
 #### Discussion
 
-Setting this property to [`true`](https://developer.apple.com/documentation/Swift/true) can increase performance if your application doesn’t allow editing multiple values. The default is [`false`](https://developer.apple.com/documentation/Swift/false). This property is observable using key-value observing.
+Setting this property to [`true`](https://developer.apple.com/documentation/swift/true) can increase performance if your application doesn’t allow editing multiple values. The default is [`false`](https://developer.apple.com/documentation/swift/false). This property is observable using key-value observing.
 
 ## See Also
 

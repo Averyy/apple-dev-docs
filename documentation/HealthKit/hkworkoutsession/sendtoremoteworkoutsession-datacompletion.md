@@ -45,7 +45,7 @@ Task {
 
 - `data`: A data object that contains the data your app is sending to the remote workout session.
 - `completion`: A block that the system calls when the send attempt is complete. The system passes the following parameters: - **`success`**: A Boolean value that indicates whether the system successfully sent the data.
-- **`error`**: If `sucess` is [`false`](https://developer.apple.com/documentation/Swift/false), this contains an object that describes the error. Otherwise, it’s `nil`.
+- **`error`**: If `sucess` is [`false`](https://developer.apple.com/documentation/swift/false), this contains an object that describes the error. Otherwise, it’s `nil`.
 
 ## See Also
 

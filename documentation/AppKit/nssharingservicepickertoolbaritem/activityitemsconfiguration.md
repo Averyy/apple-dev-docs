@@ -18,7 +18,7 @@ var activityItemsConfiguration: (any UIActivityItemsConfigurationReading)? { get
 
 Use this object to provide the set of items to share from your macOS window.
 
-If this property is `nil`, the item uses the activity items configuration the window scene provides. For more information, see [`activityItemsConfigurationSource`](https://developer.apple.com/documentation/UIKit/UIWindowScene/activityItemsConfigurationSource).
+If this property is `nil`, the item uses the activity items configuration the window scene provides. For more information, see [`activityItemsConfigurationSource`](https://developer.apple.com/documentation/uikit/uiwindowscene/activityitemsconfigurationsource).
 
 ## See Also
 

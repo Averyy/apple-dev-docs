@@ -25,7 +25,7 @@ typealias GCControllerTouchpadHandler = (GCControllerTouchpad, Float, Float, Flo
 - `xValue`: A normalized value of the x-axis touch location ranging from `-1` to `1`.
 - `yValue`: A normalized value of the y-axis touch location ranging from `-1` to `1`.
 - `buttonValue`: A normalized number between `0.0` (minimum) and `1.0` (maximum) that represents the level of pressure the user applies to the touchpad button.
-- `buttonPressed`: A Boolean value that indicates whether the user is pressing the touchpad button. If [`true`](https://developer.apple.com/documentation/Swift/true), the user is pressing the button; otherwise, the user isn’t.
+- `buttonPressed`: A Boolean value that indicates whether the user is pressing the touchpad button. If [`true`](https://developer.apple.com/documentation/swift/true), the user is pressing the button; otherwise, the user isn’t.
 
 ## See Also
 

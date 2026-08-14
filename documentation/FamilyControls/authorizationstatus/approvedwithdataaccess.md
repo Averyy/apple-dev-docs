@@ -17,13 +17,13 @@ case approvedWithDataAccess
 
 #### Discussion
 
-This status grants everything that [`AuthorizationStatus.approved`](authorizationstatus/approved.md) allows, and additionally lets your app use [`FamilyActivityData`](familyactivitydata.md) to fetch the actual bundle identifiers of installed applications, domain names of visited websites, and display names of activity categories instead of the opaque, tokenized representations returned under [`AuthorizationStatus.approved`](authorizationstatus/approved.md). It also grants access to [`activityData(filteredBy:using:)`](https://developer.apple.com/documentation/DeviceActivity/DeviceActivityData/activityData(filteredBy:using:)).
+This status grants everything that [`AuthorizationStatus.approved`](authorizationstatus/approved.md) allows, and additionally lets your app use [`FamilyActivityData`](familyactivitydata.md) to fetch the actual bundle identifiers of installed applications, domain names of visited websites, and display names of activity categories instead of the opaque, tokenized representations returned under [`AuthorizationStatus.approved`](authorizationstatus/approved.md). It also grants access to [`activityData(filteredBy:using:)`](https://developer.apple.com/documentation/deviceactivity/deviceactivitydata/activitydata(filteredby:using:)).
 
 Only one app at a time can hold this authorization status on a given device. If a person grants data access to a different app, your app’s status reverts to `.notDetermined`.
 
 You may develop and test an app that achieves this status on devices in all regions by using an Apple-provided provisioning profile. Customer installations of your app can only achieve this status on devices located in the EU that are signed in with an Apple Account with an EU country or region. On devices outside the EU, [`authorizationStatus`](authorizationcenter/authorizationstatus.md) never returns `approvedWithDataAccess`, and any attempt to access [`FamilyActivityData`](familyactivitydata.md)properties fails with [`FamilyControlsError.unavailable`](familycontrolserror/unavailable.md).
 
-> ❗ **Important**: Add the [`Family Controls App and Website Usage`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.family-controls.app-and-website-usage) capability to your app before accessing [`FamilyActivityData`](familyactivitydata.md). For more information, see [`Adding capabilities to your app`](https://developer.apple.com/documentation/Xcode/adding-capabilities-to-your-app).
+> ❗ **Important**: Add the [`Family Controls App and Website Usage`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.family-controls.app-and-website-usage) capability to your app before accessing [`FamilyActivityData`](familyactivitydata.md). For more information, see [`Adding capabilities to your app`](https://developer.apple.com/documentation/xcode/adding-capabilities-to-your-app).
 
 ## See Also
 

@@ -17,17 +17,17 @@ The app splits into two parts in its main view:
 - A 3D shape with a glass material
 - Two sliders to adjust modifiables
 
-![A screenshot of a visionOS app in Simulator with a translucent window displaying a 3D shape with a glass material, and two sliders on the side to adjust modifiables of the 3D shape.](https://docs-assets.developer.apple.com/published/8508947cc3447375679e31bdaecdba30/sample-glass-1-main-view.png)
+![A screenshot of a visionOS app in Simulator with a translucent window displaying a 3D shape with a glass material, and two sliders on the side to adjust modifiables of the 3D shape.](/images/com.apple.visionOS/sample-glass-1-main-view.png)
 
 ##### Set Up the Shader Graph
 
 The shader graph for the dragon model includes two modifiable parameters: `roughness` and `eta`. These control the model’s surface roughness and refraction, respectively, as the following image shows:
 
-![A screenshot of a model's shader graph in Reality Composer Pro, showcasing how the model accepts two modifiables, roughness and eta.](https://docs-assets.developer.apple.com/published/e8aa559c0574d7ed8e18c1dd694b6fb9/sample-glass-2-shader-graph.png)
+![A screenshot of a model's shader graph in Reality Composer Pro, showcasing how the model accepts two modifiables, roughness and eta.](/images/com.apple.visionOS/sample-glass-2-shader-graph.png)
 
 These parameters connect through various nodes, ultimately feeding into a `RealitykitEnvironmentRadiance` node. This setup allows dynamic adjustment of the dragon’s appearance.
 
-> **Note**: The parameter `eta` represents `η`, which symbolizes the index of refraction. For more information, see [`Refract (RealityKit)`](https://developer.apple.com/documentation/ShaderGraph/Geometric/Refract-(RealityKit)).
+> **Note**: The parameter `eta` represents `η`, which symbolizes the index of refraction. For more information, see [`Refract (RealityKit)`](https://developer.apple.com/documentation/shadergraph/geometric/refract-(realitykit)).
 
 ##### Update the Component Material
 
@@ -143,9 +143,9 @@ var body: some View {
 }
 ```
 
-Within the closure that the app passes into the method, the app tries to set the `roughness` and `eta` parameter into the [`ShaderGraphMaterial`](https://developer.apple.com/documentation/RealityKit/ShaderGraphMaterial) to update the dragon model.
+Within the closure that the app passes into the method, the app tries to set the `roughness` and `eta` parameter into the [`ShaderGraphMaterial`](https://developer.apple.com/documentation/realitykit/shadergraphmaterial) to update the dragon model.
 
-The view incorporates a [`Divider`](https://developer.apple.com/documentation/SwiftUI/Divider) structure to separate the reality view, which houses the dragon model, from the `VStack`, which houses sliders that enable interactive adjustment of the `roughness` and `eta` values, to modify the model’s visual appearance:
+The view incorporates a [`Divider`](https://developer.apple.com/documentation/swiftui/divider) structure to separate the reality view, which houses the dragon model, from the `VStack`, which houses sliders that enable interactive adjustment of the `roughness` and `eta` values, to modify the model’s visual appearance:
 
 ```swift
 var body: some View {

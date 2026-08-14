@@ -10,7 +10,7 @@ Container view controllers promote better encapsulation by separating out your c
 
 A container view controller is still a view controller, so you display it in a window or present it like any other view controller. A container view controller also manages a composite interface, incorporating the views from one or more child view controllers into its own view hierarchy. Each child continues to manage its own view hierarchy, but the container manages the position and size of that child’s root view.
 
-![An illustration showing the relationships between a container view controller and its children, and the resulting interface that appears onscreen.](https://docs-assets.developer.apple.com/published/31b57b164fcd77f6c82549528d86339e/media-3375406%402x.png)
+![An illustration showing the relationships between a container view controller and its children, and the resulting interface that appears onscreen.](/images/com.apple.uikit/media-3375406@2x.png)
 
 Many container view controllers facilitate navigation between different parts of your app’s content. Examples include [`UINavigationController`](uinavigationcontroller.md), [`UITabBarController`](uitabbarcontroller.md), and [`UIPageViewController`](uipageviewcontroller.md), which help users navigate between different view controllers. You can also use container view controllers to organize the content you have more efficiently. For example, [`UISplitViewController`](uisplitviewcontroller.md) displays two view controllers side-by-side on iPad. The only difference between navigation and organization is that navigation requires custom API to change the child view controllers; otherwise, the implementations are identical.
 
@@ -64,7 +64,7 @@ Breaking a container-child relationship tells UIKit that your container view con
 
 If your container view controller organizes content, and doesn’t change that content later, configure your UI using container views. A container view is a proxy view that stands in for the content of a child view controller. When you add one to your interface, it looks like a normal view, but it has an attached view controller.
 
-![An illustration showing a container view with a segue to the content of an embedded child view controller.](https://docs-assets.developer.apple.com/published/e1ea2e4e04857d762d37bd948d9fb131/media-3376047%402x.png)
+![An illustration showing a container view with a segue to the content of an embedded child view controller.](/images/com.apple.uikit/media-3376047@2x.png)
 
 Size and position a container view the same way you would other views in your interface. Add constraints to specify the size and position of the view for different devices and in different configurations. However, don’t add any subviews to the container view itself. Instead, add them to the view of the attached view controller.
 

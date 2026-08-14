@@ -15,7 +15,7 @@ Define and manage which of your app’s activities can be continued between devi
 
 This sample app searches for Apple Store locations and shows them on a map. The user can choose a store’s map annotation to see its address and mark it as a favorite. As the user changes visible regions or inspects individual stores, the app uses Handoff to share these activities with the user’s other devices. If the user changes devices, they can use Handoff to launch the app and return to what they were doing on the original device.
 
-![Outlines of mobile and desktop devices, showing a specific point of interest on a map.](https://docs-assets.developer.apple.com/published/813a4ab0a97cc1f25dece547f1788a22/handoff-sample-code%402x.png)
+![Outlines of mobile and desktop devices, showing a specific point of interest on a map.](/images/com.apple.foundation/handoff-sample-code@2x.png)
 
 The sample project builds for both macOS and iOS, so you can run it on a Mac, iPhone, and iPad. The project does not contain a watchOS or tvOS app.
 

@@ -32,9 +32,9 @@ Each `Session` has one corresponding [`LiveActivityForwarding.AccessoryLiveActiv
 ## Relationships
 
 ### Conforms To
-- [AccessoryFeatureSession](../AccessoryTransportExtension/AccessoryFeatureSession.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [AccessoryFeatureSession](../accessorytransportextension/accessoryfeaturesession.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

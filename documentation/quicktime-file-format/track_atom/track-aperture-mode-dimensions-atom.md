@@ -7,7 +7,7 @@ A container atom that stores information for video correction in the form of thr
 
 #### Overview
 
-See [`Track aperture mode dimensions atom ('tapt')`](track_aperture_mode_dimensions_atom.md).
+See [`Track aperture mode dimensions atom`](track_aperture_mode_dimensions_atom.md).
 
 ## See Also
 

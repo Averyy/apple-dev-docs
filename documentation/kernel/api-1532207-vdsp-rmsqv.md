@@ -47,10 +47,10 @@ print(String(format: "RMS %.4f", c)) // Prints "RMS 2.5434".
 
 ## Parameters
 
-- `__A`: The single-precision real input vector  . 
-- `__I`: The stride for input vector  . 
+- `__A`: The single-precision real input vector `A`. 
+- `__I`: The stride for input vector `A`. 
 - `__C`: The single-precision output scalar. 
-- `__N`: The number of elements to process. If   is zero ( ), this function returns  .
+- `__N`: The number of elements to process. If `N` is zero (`0`), this function returns `NAN`.
 
 ## See Also
 

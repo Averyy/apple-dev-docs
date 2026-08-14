@@ -22,7 +22,7 @@ static let rotationAxis: SCNParticleSystem.ParticleProperty
 
 #### Discussion
 
-This property’s value is a three-component vector (an [`NSValue`](https://developer.apple.com/documentation/Foundation/NSValue) object containing an [`SCNVector3`](scnvector3.md) value for particle property controllers, or an array of three `float` values for particle event or modifier blocks).
+This property’s value is a three-component vector (an [`NSValue`](https://developer.apple.com/documentation/foundation/nsvalue) object containing an [`SCNVector3`](scnvector3.md) value for particle property controllers, or an array of three `float` values for particle event or modifier blocks).
 
 The particle system’s [`orientationMode`](scnparticlesystem/orientationmode.md) determines the initial rotation axis for each particle. The [`angle`](scnparticlesystem/particleproperty/angle.md) property defines the particle’s rotation about this axis.
 

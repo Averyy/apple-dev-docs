@@ -24,7 +24,7 @@ When the arranged views don’t fit within the stack view, it shrinks the views 
 
 The following image shows an example of a horizontal stack view that uses the [`UIStackView.Distribution.fill`](uistackview/distribution-swift.enum/fill.md) distribution.
 
-![A horizontal stack view with four arranged subviews. The stack view resizes the width of one of the arranged views so that it fills the available space along the stack view’s axis.](https://docs-assets.developer.apple.com/published/a693b7e520e8b73306562cbddfd111df/media-2557443%402x.png)
+![A horizontal stack view with four arranged subviews. The stack view resizes the width of one of the arranged views so that it fills the available space along the stack view’s axis.](/images/com.apple.uikit/media-2557443@2x.png)
 
 ## See Also
 

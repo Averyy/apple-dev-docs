@@ -22,7 +22,7 @@ func synchronize() -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/Swift/true) if the data was saved successfully to disk, otherwise [`false`](https://developer.apple.com/documentation/Swift/false).
+[`true`](https://developer.apple.com/documentation/swift/true) if the data was saved successfully to disk, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
 
 ## See Also
 

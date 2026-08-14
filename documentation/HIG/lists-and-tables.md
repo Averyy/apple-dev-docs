@@ -13,7 +13,7 @@ framework: HIG
 
 Lists and tables present data in one or more columns of rows.
 
-![A stylized representation of a three-row table with header and footer text. The image is tinted red to subtly reflect the red in the original six-color Apple logo.](https://docs-assets.developer.apple.com/published/3f8a1cde5880e6291c15f8238ab1e45e/components-lists-and-tables-intro~dark%402x.png)
+![A stylized representation of a three-row table with header and footer text. The image is tinted red to subtly reflect the red in the original six-color Apple logo.](/images/com.apple.HIG/components-lists-and-tables-intro~dark@2x.png)
 A table or list can represent data that’s organized in groups or hierarchies, and it can support user interactions like selecting, adding, deleting, and reordering. Apps and games in all platforms can use tables to present content and options; many apps use lists to express an overall information hierarchy and help people navigate it. For example, iOS Settings uses a hierarchy of lists to help people choose options, and several apps — such as Mail in iPadOS and macOS — use a table within a [split view](https://developer.apple.com/design/human-interface-guidelines/split-views).
 Sometimes, people need to work with complex data in a multicolumn table or a spreadsheet. Apps that offer productivity tasks often use a table to represent various characteristics or attributes of the data in separate, sortable columns.
 
@@ -28,15 +28,15 @@ Sometimes, people need to work with complex data in a multicolumn table or a spr
 **Use descriptive column headings in a multicolumn table.** Use nouns or short noun phrases with [title-style capitalization](https://support.apple.com/guide/applestyleguide/c-apsgb744e4a3/web#apdca93e113f1d64), and don’t add ending punctuation. If you don’t include a column heading in a single-column table view, use a label or a header to help people understand the context.
 
 ## Style
-**Choose a table or list style that coordinates with your data and platform.** Some styles use visual details to help communicate grouping and hierarchy or to provide specific experiences. In iOS and iPadOS, for example, the grouped style uses headers, footers, and additional space to separate groups of data; the elliptical style available in watchOS makes items appear as if they’re rolling off a rounded surface as people scroll; and macOS defines a bordered style that uses alternating row backgrounds to help make large tables easier to use. For developer guidance, see [ListStyle](../SwiftUI/ListStyle.md).
-**Choose a row style that fits the information you need to display.** For example, you might need to display a small image in the leading end of a row, followed by a brief explanatory label. Some platforms provide built-in row styles you can use to arrange content in list rows, such as the [UIListContentConfiguration](../UIKit/UIListContentConfiguration-swift.struct.md) API you can use to lay out content in a list’s rows, headers, and footers in iOS, iPadOS, and tvOS.
+**Choose a table or list style that coordinates with your data and platform.** Some styles use visual details to help communicate grouping and hierarchy or to provide specific experiences. In iOS and iPadOS, for example, the grouped style uses headers, footers, and additional space to separate groups of data; the elliptical style available in watchOS makes items appear as if they’re rolling off a rounded surface as people scroll; and macOS defines a bordered style that uses alternating row backgrounds to help make large tables easier to use. For developer guidance, see [ListStyle](../swiftui/liststyle.md).
+**Choose a row style that fits the information you need to display.** For example, you might need to display a small image in the leading end of a row, followed by a brief explanatory label. Some platforms provide built-in row styles you can use to arrange content in list rows, such as the [UIListContentConfiguration](../uikit/uilistcontentconfiguration-swift.struct.md) API you can use to lay out content in a list’s rows, headers, and footers in iOS, iPadOS, and tvOS.
 
 ## Platform considerations
 
 ### iOS, iPadOS, visionOS
-**Use an info button only to reveal more information about a row’s content.** An info button — called a *detail disclosure button* when it appears in a list row — doesn’t support navigation through a hierarchical table or list. If you need to let people drill into a list or table row’s subviews, use a disclosure indicator accessory control. For developer guidance, see [UITableViewCell.AccessoryType.disclosureIndicator](../UIKit/UITableViewCell/AccessoryType-swift.enum/disclosureIndicator.md).
-![An illustration of a grouped list of rows. Each list item includes an info button at the trailing end of the row.](https://docs-assets.developer.apple.com/published/c6d94902720357c265d3d61e354c4e73/info-button-in-list~dark%402x.png)
-![An illustration of a grouped list of rows. Each list item includes a right-pointing chevron at the trailing end of the row.](https://docs-assets.developer.apple.com/published/77544da65ba6bba87cd3e0ec7f124224/disclosure-indicator-in-list~dark%402x.png)
+**Use an info button only to reveal more information about a row’s content.** An info button — called a *detail disclosure button* when it appears in a list row — doesn’t support navigation through a hierarchical table or list. If you need to let people drill into a list or table row’s subviews, use a disclosure indicator accessory control. For developer guidance, see [UITableViewCell.AccessoryType.disclosureIndicator](../uikit/uitableviewcell/accessorytype-swift.enum/disclosureindicator.md).
+![An illustration of a grouped list of rows. Each list item includes an info button at the trailing end of the row.](/images/com.apple.HIG/info-button-in-list~dark@2x.png)
+![An illustration of a grouped list of rows. Each list item includes a right-pointing chevron at the trailing end of the row.](/images/com.apple.HIG/disclosure-indicator-in-list~dark@2x.png)
 **Avoid adding an index to a table that displays controls — like disclosure indicators — in the trailing ends of its rows.** An *index* typically consists of the letters in an alphabet, displayed vertically at the trailing side of a list. People can jump to a specific section in the list by choosing the index letter that maps to it. Because both the index and elements like disclosure indicators appear on the trailing side of a list, it can be difficult for people to use one element without activating the other.
 
 ### macOS
@@ -60,10 +60,10 @@ Sometimes, people need to work with complex data in a multicolumn table or a spr
 [Layout](layout.md)
 
 #### Developer documentation
-[List](../SwiftUI/List.md) — SwiftUI
-[Tables](../SwiftUI/Tables.md) — SwiftUI
-[UITableView](../UIKit/UITableView.md) — UIKit
-[NSTableView](../AppKit/NSTableView.md) — AppKit
+[List](../swiftui/list.md) — SwiftUI
+[Tables](../swiftui/tables.md) — SwiftUI
+[UITableView](../uikit/uitableview.md) — UIKit
+[NSTableView](../appkit/nstableview.md) — AppKit
 
 #### Videos
 - [Stacks, Grids, and Outlines in SwiftUI](https://developer.apple.com/videos/play/wwdc2020/10031) - Display detailed data in your SwiftUI apps more quickly and efficiently with improved stacks and new list and outline views. Now available on iOS and iPadOS for the first time, outlines are a new multi-platform tool for expressing hierarchical data that work alongside stacks and lists. Learn how to use new and improved tools in SwiftUI to display more content on screen when using table views, create smooth-scrolling and responsive stacks, and build out list views for content that needs more than a vStack can provide. Take your layout options even further with the new grid view, as well as disclosure groups.

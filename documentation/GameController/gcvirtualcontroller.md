@@ -24,7 +24,7 @@ class GCVirtualController
 
 Use a virtual controller to display software controls that you can customize over your game. You create a virtual controller from a configuration where you choose the input elements to display. You can even customize the images for the elements. When you connect the controller to the device, users interact with it similarly to a real controller.
 
-![Screenshot of a virtual controller showing left and right thumbsticks with A and B buttons on the right thumbstick.](https://docs-assets.developer.apple.com/published/028437930f5ac469e6f776b5673ad0f2/media-3830787%402x.png)
+![Screenshot of a virtual controller showing left and right thumbsticks with A and B buttons on the right thumbstick.](/images/com.apple.gamecontroller/media-3830787@2x.png)
 
 To add a virtual controller to your game, create a [`GCVirtualController.Configuration`](gcvirtualcontroller/configuration.md) object containing the elements you want to appear in the controller. Then create the virtual controller by passing the configuration to the [`init(configuration:)`](gcvirtualcontroller/init(configuration:).md) method. Use the [`connect(replyHandler:)`](gcvirtualcontroller/connect(replyhandler:).md) method to display the virtual controller on the screen.
 
@@ -61,14 +61,14 @@ You process input from a virtual controller similarly to a real controller. Use 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

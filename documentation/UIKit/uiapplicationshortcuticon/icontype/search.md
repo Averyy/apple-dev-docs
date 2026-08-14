@@ -19,7 +19,7 @@ case search
 
 #### Discussion
 
-![None](https://docs-assets.developer.apple.com/published/e714f926d92cd33825f1dd6a64c1359c/media-2934514%402x.png)
+![None](/images/com.apple.uikit/media-2934514@2x.png)
 
 ## See Also
 

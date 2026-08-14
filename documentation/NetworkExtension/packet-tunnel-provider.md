@@ -18,14 +18,14 @@ Your provider should open a tunnel to a VPN server and send those packets over t
 
 Packet tunnel providers can run in destination IP mode or source-application mode. The latter is one form of per-app VPN (the other form is an [`App proxy provider`](app-proxy-provider.md)).
 
-For detailed information about packet tunnel provider deployment options, see [`TN3134: Network Extension provider deployment`](https://developer.apple.com/documentation/Technotes/tn3134-network-extension-provider-deployment).
+For detailed information about packet tunnel provider deployment options, see [`TN3134: Network Extension provider deployment`](https://developer.apple.com/documentation/technotes/tn3134-network-extension-provider-deployment).
 
 > **Note**:  When a VPN configuration is active, connections use the VPN instead of iCloud Private Relay. Network Extension providers also don’t use iCloud Private Relay.
 
 ## Topics
 
 ### Essentials
-- [Network Extensions Entitlement](../BundleResources/Entitlements/com.apple.developer.networking.networkextension.md)
+- [Network Extensions Entitlement](../bundleresources/entitlements/com.apple.developer.networking.networkextension.md)
   The APIs an app can use to customize networking features.
 ### Packet tunnel provider
 - [class NEPacketTunnelProvider](nepackettunnelprovider.md)

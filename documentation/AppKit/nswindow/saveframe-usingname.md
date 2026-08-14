@@ -16,7 +16,7 @@ func saveFrame(usingName name: NSWindow.FrameAutosaveName)
 
 #### Discussion
 
-With the companion method [`setFrameUsingName(_:)`](nswindow/setframeusingname(_:).md), you can save and reset an `NSWindow` object’s frame over various launches of an application. The default is owned by the application and stored under the name “`NSWindow Frame name`”. See [`UserDefaults`](https://developer.apple.com/documentation/Foundation/UserDefaults) for more information.
+With the companion method [`setFrameUsingName(_:)`](nswindow/setframeusingname(_:).md), you can save and reset an `NSWindow` object’s frame over various launches of an application. The default is owned by the application and stored under the name “`NSWindow Frame name`”. See [`UserDefaults`](https://developer.apple.com/documentation/foundation/userdefaults) for more information.
 
 ## Parameters
 

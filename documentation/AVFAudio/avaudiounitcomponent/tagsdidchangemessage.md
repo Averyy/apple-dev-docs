@@ -23,9 +23,9 @@ This notification is posted when the user tags of an audio unit component are mo
 ## Relationships
 
 ### Conforms To
-- [NotificationCenter.AsyncMessage](../Foundation/NotificationCenter/AsyncMessage.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [NotificationCenter.AsyncMessage](../foundation/notificationcenter/asyncmessage.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 
 ---

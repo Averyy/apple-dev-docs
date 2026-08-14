@@ -38,9 +38,9 @@ The [`SKSceneDelegate`](skscenedelegate.md) protocol is used to implement a dele
 
 When processing a scene, SpriteKit runs a loop that processes and renders the scene. The [`SKSceneDelegate`](skscenedelegate.md) methods allows you to add logic at any step of the loop.
 
-![Frame processing in a scene](https://docs-assets.developer.apple.com/published/be1a33d8b82e5a33a9f3873c756bb121/media-2527821%402x.png)
+![Frame processing in a scene](/images/com.apple.spritekit/media-2527821@2x.png)
 
-> ❗ **Important**:  If your view has a [`SKViewDelegate`](skviewdelegate.md) and its [`view(_:shouldRenderAtTime:)`](skviewdelegate/view(_:shouldrenderattime:).md) method returns [`false`](https://developer.apple.com/documentation/Swift/false), the update is skipped and none of the scene delegate methods are called.
+> ❗ **Important**:  If your view has a [`SKViewDelegate`](skviewdelegate.md) and its [`view(_:shouldRenderAtTime:)`](skviewdelegate/view(_:shouldrenderattime:).md) method returns [`false`](https://developer.apple.com/documentation/swift/false), the update is skipped and none of the scene delegate methods are called.
 
 ## Topics
 
@@ -61,7 +61,7 @@ When processing a scene, SpriteKit runs a loop that processes and renders the sc
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

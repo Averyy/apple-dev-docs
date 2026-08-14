@@ -36,7 +36,7 @@ The [`MDLAsset`](mdlasset.md) [`placeLightProbes(withDensity:heuristic:using:)`]
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

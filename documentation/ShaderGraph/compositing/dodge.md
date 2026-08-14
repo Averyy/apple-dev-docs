@@ -29,11 +29,11 @@ B / (1 - F)
 
 The Dodge node lightens each area in the background based on the lightness of the corresponding area in the foreground, represented by the equation `B / (1 - F)`. Below is an example of a simple node graph that uses the the dodge node to lighten a brick texture:
 
-![None](https://docs-assets.developer.apple.com/published/4aa9b8b032d8716a4316e8c991c36f25/DodgeGraph.png)
+![None](/images/ShaderGraph-Docs/DodgeGraph.png)
 
 Use a [`Noise 2D`](2d-procedural/noise-2d.md) node to generate Perlin noise, and use the output of that texture as the foreground in the dodge node. This process causes the background brick texture to lighten according to the procedural pattern. Below, the resulting texture applies to a cube:
 
-![None](https://docs-assets.developer.apple.com/published/3f99d156c5fbb66084cdaecc9ea0b4ec/DodgeMaterial.png)
+![None](/images/ShaderGraph-Docs/DodgeMaterial.png)
 
 ## See Also
 

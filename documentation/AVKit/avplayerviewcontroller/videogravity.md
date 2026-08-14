@@ -20,9 +20,9 @@ var videoGravity: AVLayerVideoGravity { get set }
 
 #### Discussion
 
-The player view controller supports the following video gravity values: [`resizeAspect`](https://developer.apple.com/documentation/AVFoundation/AVLayerVideoGravity/resizeAspect), [`resizeAspectFill`](https://developer.apple.com/documentation/AVFoundation/AVLayerVideoGravity/resizeAspectFill), and [`resize`](https://developer.apple.com/documentation/AVFoundation/AVLayerVideoGravity/resize).
+The player view controller supports the following video gravity values: [`resizeAspect`](https://developer.apple.com/documentation/avfoundation/avlayervideogravity/resizeaspect), [`resizeAspectFill`](https://developer.apple.com/documentation/avfoundation/avlayervideogravity/resizeaspectfill), and [`resize`](https://developer.apple.com/documentation/avfoundation/avlayervideogravity/resize).
 
-The default value is [`resizeAspect`](https://developer.apple.com/documentation/AVFoundation/AVLayerVideoGravity/resizeAspect).
+The default value is [`resizeAspect`](https://developer.apple.com/documentation/avfoundation/avlayervideogravity/resizeaspect).
 
 ## See Also
 

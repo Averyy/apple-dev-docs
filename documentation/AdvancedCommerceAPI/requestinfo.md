@@ -22,17 +22,17 @@ You provide the `RequestInfo` in your Advanced Commerce API server requests to u
 
 You can include an `appAccountToken` in `RequestInfo` to associate an account on your system with the purchase. The App Store returns the same `appAccountToken` value in the transaction information.
 
-If you include `appAccountToken` in the `RequestInfo`, you don’t need to include the app account token as a purchase option by adding [`appAccountToken(_:)`](https://developer.apple.com/documentation/StoreKit/Product/PurchaseOption/appAccountToken(_:)) to the product purchase options ([`purchase(options:)`](https://developer.apple.com/documentation/StoreKit/Product/purchase(options:))).
+If you include `appAccountToken` in the `RequestInfo`, you don’t need to include the app account token as a purchase option by adding [`appAccountToken(_:)`](https://developer.apple.com/documentation/storekit/product/purchaseoption/appaccounttoken(_:)) to the product purchase options ([`purchase(options:)`](https://developer.apple.com/documentation/storekit/product/purchase(options:))).
 
 > ❗ **Important**: If you do include `appAccountToken` in the `purchase(options:)`, you must include the same app account token value in the `RequestInfo`; otherwise, the request fails.
 
-For more information about sending API requests from your app, see [`Sending Advanced Commerce API requests from your app`](https://developer.apple.com/documentation/StoreKit/sending-advanced-commerce-api-requests-from-your-app).
+For more information about sending API requests from your app, see [`Sending Advanced Commerce API requests from your app`](https://developer.apple.com/documentation/storekit/sending-advanced-commerce-api-requests-from-your-app).
 
 ##### Include the Consistency Token Optionally
 
 The consistency token helps prevent unintended operations that might occur when the server gets multiple or overlapping requests for the same subscription.
 
-Subscriptions receive a new consistency token in the [`advancedCommerceRenewalInfo`](https://developer.apple.com/documentation/AppStoreServerAPI/advancedCommerceRenewalInfo) object of the [`JWSRenewalInfo`](jwsrenewalinfo.md) each time the system updates the subscrpition renewal information. Include the consistency token when you use the [`SubscriptionCreateRequest`](subscriptioncreaterequest.md) operation to resubscribe to the subscription and provide the `previousTransactionID`.
+Subscriptions receive a new consistency token in the [`advancedCommerceRenewalInfo`](https://developer.apple.com/documentation/appstoreserverapi/advancedcommercerenewalinfo) object of the [`JWSRenewalInfo`](jwsrenewalinfo.md) each time the system updates the subscrpition renewal information. Include the consistency token when you use the [`SubscriptionCreateRequest`](subscriptioncreaterequest.md) operation to resubscribe to the subscription and provide the `previousTransactionID`.
 
 Don’t include a consistency token when:
 
@@ -43,7 +43,7 @@ Don’t include a consistency token when:
 ## Properties
 
 - `appAccountToken` (uuid): A UUID that represents an app account token, to associate with the transaction in the request.
-- `consistencyToken` (string): The value of the [`advancedCommerceConsistencyToken`](https://developer.apple.com/documentation/AppStoreServerAPI/advancedCommerceConsistencyToken) that you receive in the [`JWSRenewalInfo`](jwsrenewalinfo.md) renewal information for a subscription. Don’t generate this value.
+- `consistencyToken` (string): The value of the [`advancedCommerceConsistencyToken`](https://developer.apple.com/documentation/appstoreserverapi/advancedcommerceconsistencytoken) that you receive in the [`JWSRenewalInfo`](jwsrenewalinfo.md) renewal information for a subscription. Don’t generate this value.
 - `requestReferenceId` (uuid) *(required)*: A UUID that you provide to uniquely identify each request. If the request times out, you can use the same `requestReferenceId` value to retry the request. Otherwise, provide a unique value.
 
 ## See Also

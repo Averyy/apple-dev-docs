@@ -12,7 +12,7 @@ Add interactive card game behavior for a pile of playing cards with physically r
 
 This sample code project demonstrates an effective way an app can implement a 3D volumetric layout to allow for thin equipment, such as playing cards, to pile up in a realistic manner if placed arbitrarily by the player. As the player adds cards into the pile, the app deliberately places them at a nonintersecting, and physically believable height and tilt atop all previous equipment.
 
-![A screenshot of a game where there are several cards spread out and overlapping on a table.](https://docs-assets.developer.apple.com/published/66ee3ad1e292b7a63457bc994727789c/tabletopkit-messy-cards%402x.png)
+![A screenshot of a game where there are several cards spread out and overlapping on a table.](/images/com.apple.tabletopkit/tabletopkit-messy-cards@2x.png)
 
 The app contains a center pile that cards the player adds become descendants of. Each card has its pose calculated by an algorithm comprised of two physically based solvers:
 

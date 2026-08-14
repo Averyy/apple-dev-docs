@@ -21,9 +21,9 @@ var kAudioUnitProperty_ParameterValueStrings: AudioUnitPropertyID { get }
 
 #### Discussion
 
-A read-only [`CFArray`](https://developer.apple.com/documentation/CoreFoundation/CFArray) object whose elements are [`CFString`](https://developer.apple.com/documentation/CoreFoundation/CFString) objects, valid on any audio unit scope.
+A read-only [`CFArray`](https://developer.apple.com/documentation/corefoundation/cfarray) object whose elements are [`CFString`](https://developer.apple.com/documentation/corefoundation/cfstring) objects, valid on any audio unit scope.
 
-When obtaining a parameter string array from an audio unit with the [`AudioUnitGetProperty(_:_:_:_:_:_:)`](audiounitgetproperty(_:_:_:_:_:_:).md) function, you own the reference to the array and are responsible for later releasing it by calling the [`CFRelease`](https://developer.apple.com/documentation/CoreFoundation/CFRelease) function.
+When obtaining a parameter string array from an audio unit with the [`AudioUnitGetProperty(_:_:_:_:_:_:)`](audiounitgetproperty(_:_:_:_:_:_:).md) function, you own the reference to the array and are responsible for later releasing it by calling the [`CFRelease`](https://developer.apple.com/documentation/corefoundation/cfrelease) function.
 
 Indexed parameters use whole-number index values; the size of this property’s array should be the same as the range between the parameter’s minimum and maximum values.
 

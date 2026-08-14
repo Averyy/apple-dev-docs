@@ -16,7 +16,7 @@ var topAnchor: NSLayoutYAxisAnchor { get }
 
 #### Discussion
 
-Use this anchor to create constraints with the view’s top edge. You can only combine this anchor with other [`NSLayoutYAxisAnchor`](https://developer.apple.com/documentation/UIKit/NSLayoutYAxisAnchor) anchors. For more information, see [`NSLayoutAnchor`](https://developer.apple.com/documentation/UIKit/NSLayoutAnchor).
+Use this anchor to create constraints with the view’s top edge. You can only combine this anchor with other [`NSLayoutYAxisAnchor`](https://developer.apple.com/documentation/uikit/nslayoutyaxisanchor) anchors. For more information, see [`NSLayoutAnchor`](https://developer.apple.com/documentation/uikit/nslayoutanchor).
 
 ## See Also
 

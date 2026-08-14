@@ -27,7 +27,7 @@ A new shape node.
 ## Parameters
 
 - `path`: The Core Graphics path to use.
-- `centered`: If [`true`](https://developer.apple.com/documentation/Swift/true), the path is translated so that the center of the path’s bounding box is at the node’s origin; otherwise the path is relative to the node’s origin.
+- `centered`: If [`true`](https://developer.apple.com/documentation/swift/true), the path is translated so that the center of the path’s bounding box is at the node’s origin; otherwise the path is relative to the node’s origin.
 
 ## See Also
 

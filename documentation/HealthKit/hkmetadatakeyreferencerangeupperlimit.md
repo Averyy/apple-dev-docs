@@ -21,7 +21,7 @@ let HKMetadataKeyReferenceRangeUpperLimit: String
 
 #### Discussion
 
-This key takes an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) value.
+This key takes an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) value.
 
 ## See Also
 

@@ -54,7 +54,7 @@ When you save changes in a context, the changes are only committed “one store 
 
 ##### Notifications
 
-A context posts notifications at various points—see [`NSManagedObjectContextObjectsDidChange`](https://developer.apple.com/documentation/Foundation/NSNotification/Name-swift.struct/NSManagedObjectContextObjectsDidChange) for example. Typically, you should register to receive these notifications only from known contexts:
+A context posts notifications at various points—see [`NSManagedObjectContextObjectsDidChange`](https://developer.apple.com/documentation/foundation/nsnotification/name-swift.struct/nsmanagedobjectcontextobjectsdidchange) for example. Typically, you should register to receive these notifications only from known contexts:
 
 **Swift**:
 
@@ -74,11 +74,11 @@ NotificationCenter.default.addObserver(self,
                                       object:<#A managed object context#>];
 ```
 
-Several system frameworks use Core Data internally. If you register to receive these notifications from all contexts (by passing `nil` as the object parameter to a method such as [`addObserver(_:selector:name:object:)`](https://developer.apple.com/documentation/Foundation/NotificationCenter/addObserver(_:selector:name:object:))), then you may receive unexpected notifications that are difficult to handle.
+Several system frameworks use Core Data internally. If you register to receive these notifications from all contexts (by passing `nil` as the object parameter to a method such as [`addObserver(_:selector:name:object:)`](https://developer.apple.com/documentation/foundation/notificationcenter/addobserver(_:selector:name:object:))), then you may receive unexpected notifications that are difficult to handle.
 
 ##### Concurrency
 
-Core Data uses thread (or serialized queue) confinement to protect managed objects and managed object contexts (see [`Core Data Programming Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/CoreData/index.html#//apple_ref/doc/uid/TP40001075)). A consequence of this is that a context assumes the default owner is the thread or queue that creates it. Don’t, therefore, initialize a context on one thread then pass it to another. Instead, pass a reference to a persistent store coordinator and have the receiving thread or queue create a new context using that. If you use [`Operation`](https://developer.apple.com/documentation/Foundation/Operation), you must create the context in [`main()`](https://developer.apple.com/documentation/Foundation/Operation/main()) (for a serial queue) or [`start()`](https://developer.apple.com/documentation/Foundation/Operation/start()) (for a concurrent queue).
+Core Data uses thread (or serialized queue) confinement to protect managed objects and managed object contexts (see [`Core Data Programming Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/CoreData/index.html#//apple_ref/doc/uid/TP40001075)). A consequence of this is that a context assumes the default owner is the thread or queue that creates it. Don’t, therefore, initialize a context on one thread then pass it to another. Instead, pass a reference to a persistent store coordinator and have the receiving thread or queue create a new context using that. If you use [`Operation`](https://developer.apple.com/documentation/foundation/operation), you must create the context in [`main()`](https://developer.apple.com/documentation/foundation/operation/main()) (for a serial queue) or [`start()`](https://developer.apple.com/documentation/foundation/operation/start()) (for a concurrent queue).
 
 When you create a context you specify the concurrency type with which you’ll use it. When you create a managed object context, you have two options for its thread (queue) association:
 
@@ -260,15 +260,15 @@ You are strongly discouraged from subclassing `NSManagedObjectContext`. The chan
 ### Managing notifications
 - [static let didChangeObjectsNotification: Notification.Name](nsmanagedobjectcontext/didchangeobjectsnotification.md)
   A notification that posts when a context makes changes to its registered objects.
-- [static let NSManagedObjectContextObjectsDidChange: NSNotification.Name](../Foundation/NSNotification/Name-swift.struct/NSManagedObjectContextObjectsDidChange.md)
+- [static let NSManagedObjectContextObjectsDidChange: NSNotification.Name](../foundation/nsnotification/name-swift.struct/nsmanagedobjectcontextobjectsdidchange.md)
   A notification that posts when there are changes to context’s registered managed objects.
 - [static let didSaveObjectsNotification: Notification.Name](nsmanagedobjectcontext/didsaveobjectsnotification.md)
   A notification that posts after a context completes a save.
-- [static let NSManagedObjectContextDidSave: NSNotification.Name](../Foundation/NSNotification/Name-swift.struct/NSManagedObjectContextDidSave.md)
+- [static let NSManagedObjectContextDidSave: NSNotification.Name](../foundation/nsnotification/name-swift.struct/nsmanagedobjectcontextdidsave.md)
   A notification that posts after a context finishes writing unsaved changes.
 - [static let willSaveObjectsNotification: Notification.Name](nsmanagedobjectcontext/willsaveobjectsnotification.md)
   A notification that posts before a context writes pending changes to disk.
-- [static let NSManagedObjectContextWillSave: NSNotification.Name](../Foundation/NSNotification/Name-swift.struct/NSManagedObjectContextWillSave.md)
+- [static let NSManagedObjectContextWillSave: NSNotification.Name](../foundation/nsnotification/name-swift.struct/nsmanagedobjectcontextwillsave.md)
   A notification that posts before a context writes unsaved changes.
 - [let NSInsertedObjectsKey: String](nsinsertedobjectskey.md)
   A key for the set of objects that were inserted into the context.
@@ -345,22 +345,22 @@ You are strongly discouraged from subclassing `NSManagedObjectContext`. The chan
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [Copyable](../Swift/Copyable.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Escapable](../Swift/Escapable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCoding](../Foundation/NSCoding.md)
-- [NSEditor](../AppKit/NSEditor.md)
-- [NSEditorRegistration](../AppKit/NSEditorRegistration.md)
-- [NSLocking](../Foundation/NSLocking.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [CVarArg](../swift/cvararg.md)
+- [Copyable](../swift/copyable.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Escapable](../swift/escapable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCoding](../foundation/nscoding.md)
+- [NSEditor](../appkit/nseditor.md)
+- [NSEditorRegistration](../appkit/nseditorregistration.md)
+- [NSLocking](../foundation/nslocking.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

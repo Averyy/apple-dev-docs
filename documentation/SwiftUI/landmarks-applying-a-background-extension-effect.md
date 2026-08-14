@@ -19,11 +19,11 @@ This sample demonstrates how to apply a background extension effect. In the top 
 
 **With**:
 
-![An image of the landmark detail view for Mount Fuji in the Landmarks app on an iPad, with the sidebar visible.](https://docs-assets.developer.apple.com/published/be1f84499936c8af77caef51f8fe1539/Landmarks-Building-an-app-with-Liquid-Glass-2%402x.png)
+![An image of the landmark detail view for Mount Fuji in the Landmarks app on an iPad, with the sidebar visible.](/images/com.apple.SwiftUI/Landmarks-Building-an-app-with-Liquid-Glass-2@2x.png)
 
 **Without**:
 
-![An image of the landmark detail view for Mount Fuji in the Landmarks app on an iPad, with the sidebar visible.](https://docs-assets.developer.apple.com/published/ba72fc98e5999719b306e3f5b26dc351/Landmarks-Building-an-app-with-Liquid-Glass-2r%402x.png)
+![An image of the landmark detail view for Mount Fuji in the Landmarks app on an iPad, with the sidebar visible.](/images/com.apple.SwiftUI/Landmarks-Building-an-app-with-Liquid-Glass-2r@2x.png)
 
 To apply the background extension effect, the sample:
 

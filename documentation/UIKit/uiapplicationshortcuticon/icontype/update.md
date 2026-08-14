@@ -19,7 +19,7 @@ case update
 
 #### Discussion
 
-![None](https://docs-assets.developer.apple.com/published/23a534175cad292b9e51f3d927180cb8/media-2934537%402x.png)
+![None](/images/com.apple.uikit/media-2934537@2x.png)
 
 ## See Also
 

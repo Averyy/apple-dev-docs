@@ -28,18 +28,18 @@ class SCNSceneSource
 
 You can also use a scene source to examine the contents of a scene file or to selectively extract certain elements of a scene without keeping the entire scene and all the assets it contains.
 
-SceneKit can read scene contents from a file in a supported format, or from an [`NSData`](https://developer.apple.com/documentation/Foundation/NSData) object holding the contents of such a file. Supported formats include the following:
+SceneKit can read scene contents from a file in a supported format, or from an [`NSData`](https://developer.apple.com/documentation/foundation/nsdata) object holding the contents of such a file. Supported formats include the following:
 
 | Format | Filename Extension | Supported in |
 | --- | --- | --- |
 | Digital Asset Exchange | `.dae` | macOS 10.8 and later |
 | Alembic | `.abc` | macOS 10.10 and later |
-| SceneKit compressed scene | `.dae` or `.abc` | macOS 10.10 and later ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) iOS 8.0 and later |
-| SceneKit archive | `.scn` | macOS 10.10 and later ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) iOS 8.0 and later |
+| SceneKit compressed scene | `.dae` or `.abc` | macOS 10.10 and later ![None](/images/com.apple.scenekit/spacer.png) iOS 8.0 and later |
+| SceneKit archive | `.scn` | macOS 10.10 and later ![None](/images/com.apple.scenekit/spacer.png) iOS 8.0 and later |
 
 When you include a scene file in DAE or Alembic format in your Xcode project, Xcode automatically converts the file to SceneKit’s compressed scene format for use in the built app. The compressed file retains its original `.dae` or `.abc` extension.
 
-The [`SCNSceneSource`](scnscenesource.md) class can also load SceneKit archive files, which you create in the Xcode scene editor or programmatically by using the [`NSKeyedArchiver`](https://developer.apple.com/documentation/Foundation/NSKeyedArchiver) class to serialize an [`SCNScene`](scnscene.md) object and the scene graph it contains.
+The [`SCNSceneSource`](scnscenesource.md) class can also load SceneKit archive files, which you create in the Xcode scene editor or programmatically by using the [`NSKeyedArchiver`](https://developer.apple.com/documentation/foundation/nskeyedarchiver) class to serialize an [`SCNScene`](scnscene.md) object and the scene graph it contains.
 
 > **Note**:  For best results, place scene files that ship in your app bundle in a folder with the `.scnassets` extension, and place image files referenced as textures from those scenes in an Asset Catalog. Xcode then optimizes the scene and texture resources for best performance on each target device, and prepares your texture resources for delivery features such as App Thinning and On-Demand Resources.
 
@@ -94,14 +94,14 @@ The [`SCNSceneSource`](scnscenesource.md) class can also load SceneKit archive f
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 
 ---

@@ -18,7 +18,7 @@ var noiseTerms: SRPhotoplethysmogramOpticalSample.NoiseTerms? { get }
 
 #### Discussion
 
-If the sensor data is invalid, this property is [`nil`](https://developer.apple.com/documentation/ObjectiveC/nil-227m0).
+If the sensor data is invalid, this property is [`nil`](https://developer.apple.com/documentation/objectivec/nil-227m0).
 
 ## See Also
 

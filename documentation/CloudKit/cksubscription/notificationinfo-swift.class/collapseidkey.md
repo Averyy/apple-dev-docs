@@ -24,7 +24,7 @@ var collapseIDKey: String? { get set }
 
 When CloudKit generates a push notification, it sets the notification’s `apns-collapse-id` header to this property’s value. The system uses this header to coalesce unseen notifications.
 
-See [`Sending notification requests to APNs`](https://developer.apple.com/documentation/UserNotifications/sending-notification-requests-to-apns) for more information about sending notifications using the Apple Push Notification service.
+See [`Sending notification requests to APNs`](https://developer.apple.com/documentation/usernotifications/sending-notification-requests-to-apns) for more information about sending notifications using the Apple Push Notification service.
 
 ## See Also
 

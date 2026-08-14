@@ -7,7 +7,6 @@ A Boolean value indicating whether the RCS service supports end-to-end encryptio
 
 **Availability**:
 - iOS 26.5+
-- iPadOS 26.5+
 
 ## Declaration
 

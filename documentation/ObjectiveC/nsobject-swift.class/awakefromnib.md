@@ -27,7 +27,7 @@ You must call the `super` implementation of `awakeFromNib` to give parent classe
 
 > **Note**:  During Interface Builder’s test mode, this message is also sent to objects instantiated from loaded Interface Builder plug-ins. Because plug-ins link against the framework containing the object definition code, Interface Builder is able to call their `awakeFromNib` method when present. The same is not true for custom objects that you create for your Xcode projects. Interface Builder knows only about the defined outlets and actions of those objects; it does not have access to the actual code for them.
 
-During the instantiation process, each object in the archive is unarchived and then initialized with the method befitting its type. Objects that conform to the [`NSCoding`](https://developer.apple.com/documentation/Foundation/NSCoding) protocol (including all subclasses of [`UIView`](https://developer.apple.com/documentation/UIKit/UIView) and [`UIViewController`](https://developer.apple.com/documentation/UIKit/UIViewController)) are initialized using their `initWithCoder:` method. All objects that do not conform to the `NSCoding` protocol are initialized using their `init` method. After all objects have been instantiated and initialized, the nib-loading code reestablishes the outlet and action connections for all of those objects. It then calls the `awakeFromNib` method of the objects. For more detailed information about the steps followed during the nib-loading process, see Nib Files in Resource Programming Guide.
+During the instantiation process, each object in the archive is unarchived and then initialized with the method befitting its type. Objects that conform to the [`NSCoding`](https://developer.apple.com/documentation/foundation/nscoding) protocol (including all subclasses of [`UIView`](https://developer.apple.com/documentation/uikit/uiview) and [`UIViewController`](https://developer.apple.com/documentation/uikit/uiviewcontroller)) are initialized using their `initWithCoder:` method. All objects that do not conform to the `NSCoding` protocol are initialized using their `init` method. After all objects have been instantiated and initialized, the nib-loading code reestablishes the outlet and action connections for all of those objects. It then calls the `awakeFromNib` method of the objects. For more detailed information about the steps followed during the nib-loading process, see Nib Files in Resource Programming Guide.
 
 > ❗ **Important**:  Because the order in which objects are instantiated from an archive is not guaranteed, your initialization methods should not send messages to other objects in the hierarchy. Messages to other objects can be sent safely from within an `awakeFromNib` method.
 
@@ -39,7 +39,7 @@ Typically, you implement `awakeFromNib` for objects that require additional set 
   Overridden by subclasses to substitute another object in place of the object that was decoded and subsequently received this message.
 - [class func initialize()](nsobject-swift.class/initialize.md)
   Initializes the class before it receives its first message.
-- [init?(coder: NSCoder)](../Foundation/NSCoding/init(coder:).md)
+- [init?(coder: NSCoder)](../foundation/nscoding/init(coder:).md)
   Initializes the receiver from data in a given unarchiver.
 
 

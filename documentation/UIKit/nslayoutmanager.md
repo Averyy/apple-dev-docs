@@ -20,7 +20,7 @@ class NSLayoutManager
 
 #### Overview
 
-[`NSLayoutManager`](nslayoutmanager.md) maps Unicode character codes to glyphs, sets the glyphs in a series of [`NSTextContainer`](nstextcontainer.md) objects, and displays them in a series of [`NSTextView`](https://developer.apple.com/documentation/AppKit/NSTextView) objects. In addition to its core function of laying out text, a layout manager object coordinates its text view objects, provides services to those text views to support [`NSRulerView`](https://developer.apple.com/documentation/AppKit/NSRulerView) instances for editing paragraph styles, and handles the layout and display of text attributes not inherent in glyphs (such as underline or strikethrough). You can create a subclass of [`NSLayoutManager`](nslayoutmanager.md) to handle additional text attributes, whether inherent or not.
+[`NSLayoutManager`](nslayoutmanager.md) maps Unicode character codes to glyphs, sets the glyphs in a series of [`NSTextContainer`](nstextcontainer.md) objects, and displays them in a series of [`NSTextView`](https://developer.apple.com/documentation/appkit/nstextview) objects. In addition to its core function of laying out text, a layout manager object coordinates its text view objects, provides services to those text views to support [`NSRulerView`](https://developer.apple.com/documentation/appkit/nsrulerview) instances for editing paragraph styles, and handles the layout and display of text attributes not inherent in glyphs (such as underline or strikethrough). You can create a subclass of [`NSLayoutManager`](nslayoutmanager.md) to handle additional text attributes, whether inherent or not.
 
 ##### Text Antialiasing
 
@@ -36,7 +36,7 @@ If you want to use a layout manager on a background thread, first make sure that
 
 Noncontiguous layout is an optional layout manager behavior. Previously, both glyph generation and layout were always performed, in order, from the beginning to the end of the document. When noncontiguous layout is turned on, however, the layout manager gains the option of performing glyph generation or layout for one portion of the document without having done so for previous sections. This can provide significant performance improvements for large documents.
 
-Noncontiguous layout is not turned on automatically because direct clients of `NSLayoutManager` typically have relied on the previous behavior—for example, by forcing layout for a specific glyph range, and then assuming that previous glyphs would therefore be laid out. Clients who use [`NSLayoutManager`](nslayoutmanager.md) only indirectly—for example, those who use [`NSTextView`](https://developer.apple.com/documentation/AppKit/NSTextView) without directly calling the underlying layout manager—can usually turn on noncontiguous layout without difficulty. Clients using [`NSLayoutManager`](nslayoutmanager.md) directly need to examine their usage before turning on noncontiguous layout.
+Noncontiguous layout is not turned on automatically because direct clients of `NSLayoutManager` typically have relied on the previous behavior—for example, by forcing layout for a specific glyph range, and then assuming that previous glyphs would therefore be laid out. Clients who use [`NSLayoutManager`](nslayoutmanager.md) only indirectly—for example, those who use [`NSTextView`](https://developer.apple.com/documentation/appkit/nstextview) without directly calling the underlying layout manager—can usually turn on noncontiguous layout without difficulty. Clients using [`NSLayoutManager`](nslayoutmanager.md) directly need to examine their usage before turning on noncontiguous layout.
 
 Enable noncontiguous layout using the [`allowsNonContiguousLayout`](nslayoutmanager/allowsnoncontiguouslayout.md) property. In addition, see the other methods in [`Causing glyph generation and layout`](nslayoutmanager#Causing-glyph-generation-and-layout.md), many of which enable you to ensure that glyph generation and layout are performed for specified portions of the text. The behavior of a number of other layout manager methods is affected by the state of noncontiguous layout, as noted in the discussion sections of those method descriptions.
 
@@ -55,7 +55,7 @@ Enable noncontiguous layout using the [`allowsNonContiguousLayout`](nslayoutmana
 ### Accessing the text storage
 - [var textStorage: NSTextStorage?](nslayoutmanager/textstorage.md)
   The text storage object that contains the content to lay out.
-- [func replaceTextStorage(NSTextStorage)](../AppKit/NSLayoutManager/replaceTextStorage(_:).md)
+- [func replaceTextStorage(NSTextStorage)](../appkit/nslayoutmanager/replacetextstorage(_:).md)
   Replaces the layout manager’s current text storage object with the specified object.
 ### Configuring the global layout manager options
 - [var allowsNonContiguousLayout: Bool](nslayoutmanager/allowsnoncontiguouslayout.md)
@@ -68,7 +68,7 @@ Enable noncontiguous layout using the [`allowsNonContiguousLayout`](nslayoutmana
   A Boolean value that indicates whether the layout manager substitutes visible glyphs for control characters in the layout.
 - [var usesFontLeading: Bool](nslayoutmanager/usesfontleading.md)
   A Boolean value that indicates whether the layout manager uses the leading of the font.
-- [var backgroundLayoutEnabled: Bool](../AppKit/NSLayoutManager/backgroundLayoutEnabled.md)
+- [var backgroundLayoutEnabled: Bool](../appkit/nslayoutmanager/backgroundlayoutenabled.md)
   A Boolean value that indicates whether the layout manager generates glyphs and lays them out when the app’s run loop is idle.
 - [var limitsLayoutForSuspiciousContents: Bool](nslayoutmanager/limitslayoutforsuspiciouscontents.md)
   A Boolean value that indicates whether the layout manager avoids laying out unusually long or suspicious input.
@@ -87,7 +87,7 @@ Enable noncontiguous layout using the [`allowsNonContiguousLayout`](nslayoutmana
   Associates a text container with the specified range of glyphs.
 - [func textContainerChangedGeometry(NSTextContainer)](nslayoutmanager/textcontainerchangedgeometry(_:).md)
   Invalidates the layout information, and possibly glyphs, for the specified text container and all subsequent text container objects.
-- [func textContainerChangedTextView(NSTextContainer)](../AppKit/NSLayoutManager/textContainerChangedTextView(_:).md)
+- [func textContainerChangedTextView(NSTextContainer)](../appkit/nslayoutmanager/textcontainerchangedtextview(_:).md)
   Updates the information necessary to manage text view objects for the specified text container.
 - [func textContainer(forGlyphAt: Int, effectiveRange: NSRangePointer?) -> NSTextContainer?](nslayoutmanager/textcontainer(forglyphat:effectiverange:).md)
   Returns the text container that manages the layout for the specified glyph, causing layout to happen as necessary.
@@ -119,7 +119,7 @@ Enable noncontiguous layout using the [`allowsNonContiguousLayout`](nslayoutmana
   Forces the layout manager to perform layout for the specified glyph range if it hasn’t already.
 - [func ensureLayout(for: NSTextContainer)](nslayoutmanager/ensurelayout(for:).md)
   Forces the layout manager to perform layout for the specified text container if it hasn’t already.
-- [var glyphGenerator: NSGlyphGenerator](../AppKit/NSLayoutManager/glyphGenerator.md)
+- [var glyphGenerator: NSGlyphGenerator](../appkit/nslayoutmanager/glyphgenerator.md)
   The glyph generator that the layout manager uses.
 ### Accessing glyphs
 - [func getGlyphs(in: NSRange, glyphs: UnsafeMutablePointer<CGGlyph>?, properties: UnsafeMutablePointer<NSLayoutManager.GlyphProperty>?, characterIndexes: UnsafeMutablePointer<Int>?, bidiLevels: UnsafeMutablePointer<UInt8>?) -> Int](nslayoutmanager/getglyphs(in:glyphs:properties:characterindexes:bidilevels:).md)
@@ -233,62 +233,62 @@ Enable noncontiguous layout using the [`allowsNonContiguousLayout`](nslayoutmana
 - [func underlineGlyphRange(NSRange, underlineType: NSUnderlineStyle, lineFragmentRect: CGRect, lineFragmentGlyphRange: NSRange, containerOrigin: CGPoint)](nslayoutmanager/underlineglyphrange(_:underlinetype:linefragmentrect:linefragmentglyphrange:containerorigin:).md)
   Calculates subranges to underline for the specified glyphs and draws the underlining as appropriate.
 ### Handling layout for text blocks
-- [func setLayoutRect(NSRect, for: NSTextBlock, glyphRange: NSRange)](../AppKit/NSLayoutManager/setLayoutRect(_:for:glyphRange:).md)
+- [func setLayoutRect(NSRect, for: NSTextBlock, glyphRange: NSRange)](../appkit/nslayoutmanager/setlayoutrect(_:for:glyphrange:).md)
   Sets the layout rectangle that encloses the specified text block and glyph range.
-- [func layoutRect(for: NSTextBlock, glyphRange: NSRange) -> NSRect](../AppKit/NSLayoutManager/layoutRect(for:glyphRange:).md)
+- [func layoutRect(for: NSTextBlock, glyphRange: NSRange) -> NSRect](../appkit/nslayoutmanager/layoutrect(for:glyphrange:).md)
   Returns the rectangle for the layout of the specified text block and glyph range.
-- [func setBoundsRect(NSRect, for: NSTextBlock, glyphRange: NSRange)](../AppKit/NSLayoutManager/setBoundsRect(_:for:glyphRange:).md)
+- [func setBoundsRect(NSRect, for: NSTextBlock, glyphRange: NSRange)](../appkit/nslayoutmanager/setboundsrect(_:for:glyphrange:).md)
   Sets the bounding rectangle that encloses the specified text block and glyph range.
-- [func boundsRect(for: NSTextBlock, glyphRange: NSRange) -> NSRect](../AppKit/NSLayoutManager/boundsRect(for:glyphRange:).md)
+- [func boundsRect(for: NSTextBlock, glyphRange: NSRange) -> NSRect](../appkit/nslayoutmanager/boundsrect(for:glyphrange:).md)
   Returns the bounding rectangle that encloses the specified text block and glyph range.
-- [func layoutRect(for: NSTextBlock, at: Int, effectiveRange: NSRangePointer?) -> NSRect](../AppKit/NSLayoutManager/layoutRect(for:at:effectiveRange:).md)
+- [func layoutRect(for: NSTextBlock, at: Int, effectiveRange: NSRangePointer?) -> NSRect](../appkit/nslayoutmanager/layoutrect(for:at:effectiverange:).md)
   Returns the rectangle for the layout of the specified text block and glyph.
-- [func boundsRect(for: NSTextBlock, at: Int, effectiveRange: NSRangePointer?) -> NSRect](../AppKit/NSLayoutManager/boundsRect(for:at:effectiveRange:).md)
+- [func boundsRect(for: NSTextBlock, at: Int, effectiveRange: NSRangePointer?) -> NSRect](../appkit/nslayoutmanager/boundsrect(for:at:effectiverange:).md)
   Returns the bounding rectangle for the specified text block and glyph.
 ### Managing attachments
-- [var defaultAttachmentScaling: NSImageScaling](../AppKit/NSLayoutManager/defaultAttachmentScaling.md)
+- [var defaultAttachmentScaling: NSImageScaling](../appkit/nslayoutmanager/defaultattachmentscaling.md)
   The default amount of scaling to apply when an attachment image is too large to fit in a text container.
-- [func showAttachmentCell(NSCell, in: NSRect, characterIndex: Int)](../AppKit/NSLayoutManager/showAttachmentCell(_:in:characterIndex:).md)
+- [func showAttachmentCell(NSCell, in: NSRect, characterIndex: Int)](../appkit/nslayoutmanager/showattachmentcell(_:in:characterindex:).md)
   Draws an attachment cell.
 ### Handling Rulers
-- [func rulerAccessoryView(for: NSTextView, paragraphStyle: NSParagraphStyle, ruler: NSRulerView, enabled: Bool) -> NSView?](../AppKit/NSLayoutManager/rulerAccessoryView(for:paragraphStyle:ruler:enabled:).md)
+- [func rulerAccessoryView(for: NSTextView, paragraphStyle: NSParagraphStyle, ruler: NSRulerView, enabled: Bool) -> NSView?](../appkit/nslayoutmanager/ruleraccessoryview(for:paragraphstyle:ruler:enabled:).md)
   Returns the accessory view that the text system uses for its ruler.
-- [func rulerMarkers(for: NSTextView, paragraphStyle: NSParagraphStyle, ruler: NSRulerView) -> [NSRulerMarker]](../AppKit/NSLayoutManager/rulerMarkers(for:paragraphStyle:ruler:).md)
+- [func rulerMarkers(for: NSTextView, paragraphStyle: NSParagraphStyle, ruler: NSRulerView) -> [NSRulerMarker]](../appkit/nslayoutmanager/rulermarkers(for:paragraphstyle:ruler:).md)
   Returns an array of text ruler objects for the current selection.
 ### Managing the responder chain
-- [func layoutManagerOwnsFirstResponder(in: NSWindow) -> Bool](../AppKit/NSLayoutManager/layoutManagerOwnsFirstResponder(in:).md)
+- [func layoutManagerOwnsFirstResponder(in: NSWindow) -> Bool](../appkit/nslayoutmanager/layoutmanagerownsfirstresponder(in:).md)
   Indicates whether the first responder in the specified window is a text view for the layout manager.
-- [var firstTextView: NSTextView?](../AppKit/NSLayoutManager/firstTextView.md)
+- [var firstTextView: NSTextView?](../appkit/nslayoutmanager/firsttextview.md)
   The first text view in the layout manager’s series of text views.
-- [var textViewForBeginningOfSelection: NSTextView?](../AppKit/NSLayoutManager/textViewForBeginningOfSelection.md)
+- [var textViewForBeginningOfSelection: NSTextView?](../appkit/nslayoutmanager/textviewforbeginningofselection.md)
   The text view that contains the first glyph in the selection.
 ### Managing the typesetter
-- [var typesetter: NSTypesetter](../AppKit/NSLayoutManager/typesetter.md)
+- [var typesetter: NSTypesetter](../appkit/nslayoutmanager/typesetter.md)
   The current typesetter.
-- [var typesetterBehavior: NSLayoutManager.TypesetterBehavior](../AppKit/NSLayoutManager/typesetterBehavior-swift.property.md)
+- [var typesetterBehavior: NSLayoutManager.TypesetterBehavior](../appkit/nslayoutmanager/typesetterbehavior-swift.property.md)
   The default typesetter behavior.
-- [NSLayoutManager.TypesetterBehavior](../AppKit/NSLayoutManager/TypesetterBehavior-swift.enum.md)
+- [NSLayoutManager.TypesetterBehavior](../appkit/nslayoutmanager/typesetterbehavior-swift.enum.md)
   Constants that determine the layout manager’s behavior during layout.
-- [func defaultLineHeight(for: NSFont) -> CGFloat](../AppKit/NSLayoutManager/defaultLineHeight(for:).md)
+- [func defaultLineHeight(for: NSFont) -> CGFloat](../appkit/nslayoutmanager/defaultlineheight(for:).md)
   Returns the default line height for a line of text that uses a specified font.
-- [func defaultBaselineOffset(for: NSFont) -> CGFloat](../AppKit/NSLayoutManager/defaultBaselineOffset(for:).md)
+- [func defaultBaselineOffset(for: NSFont) -> CGFloat](../appkit/nslayoutmanager/defaultbaselineoffset(for:).md)
   Returns the default baseline offset that the layout manager’s typesetter uses for the specified font.
 ### Managing temporary attribute support
-- [func addTemporaryAttributes([NSAttributedString.Key : Any], forCharacterRange: NSRange)](../AppKit/NSLayoutManager/addTemporaryAttributes(_:forCharacterRange:).md)
+- [func addTemporaryAttributes([NSAttributedString.Key : Any], forCharacterRange: NSRange)](../appkit/nslayoutmanager/addtemporaryattributes(_:forcharacterrange:).md)
   Appends one or more temporary attributes to the attributes dictionary of the specified character range.
-- [func addTemporaryAttribute(NSAttributedString.Key, value: Any, forCharacterRange: NSRange)](../AppKit/NSLayoutManager/addTemporaryAttribute(_:value:forCharacterRange:).md)
+- [func addTemporaryAttribute(NSAttributedString.Key, value: Any, forCharacterRange: NSRange)](../appkit/nslayoutmanager/addtemporaryattribute(_:value:forcharacterrange:).md)
   Adds a temporary attribute to the characters in the specified range.
-- [func setTemporaryAttributes([NSAttributedString.Key : Any], forCharacterRange: NSRange)](../AppKit/NSLayoutManager/setTemporaryAttributes(_:forCharacterRange:).md)
+- [func setTemporaryAttributes([NSAttributedString.Key : Any], forCharacterRange: NSRange)](../appkit/nslayoutmanager/settemporaryattributes(_:forcharacterrange:).md)
   Sets one or more temporary attributes for the specified character range.
-- [func removeTemporaryAttribute(NSAttributedString.Key, forCharacterRange: NSRange)](../AppKit/NSLayoutManager/removeTemporaryAttribute(_:forCharacterRange:).md)
+- [func removeTemporaryAttribute(NSAttributedString.Key, forCharacterRange: NSRange)](../appkit/nslayoutmanager/removetemporaryattribute(_:forcharacterrange:).md)
   Removes a temporary attribute from the list of attributes for the specified character range.
-- [func temporaryAttribute(NSAttributedString.Key, atCharacterIndex: Int, effectiveRange: NSRangePointer?) -> Any?](../AppKit/NSLayoutManager/temporaryAttribute(_:atCharacterIndex:effectiveRange:).md)
+- [func temporaryAttribute(NSAttributedString.Key, atCharacterIndex: Int, effectiveRange: NSRangePointer?) -> Any?](../appkit/nslayoutmanager/temporaryattribute(_:atcharacterindex:effectiverange:).md)
   Returns the value for the temporary attribute of a character, and the range it applies to.
-- [func temporaryAttribute(NSAttributedString.Key, atCharacterIndex: Int, longestEffectiveRange: NSRangePointer?, in: NSRange) -> Any?](../AppKit/NSLayoutManager/temporaryAttribute(_:atCharacterIndex:longestEffectiveRange:in:).md)
+- [func temporaryAttribute(NSAttributedString.Key, atCharacterIndex: Int, longestEffectiveRange: NSRangePointer?, in: NSRange) -> Any?](../appkit/nslayoutmanager/temporaryattribute(_:atcharacterindex:longesteffectiverange:in:).md)
   Returns the value for the temporary attribute of a character, and the maximum range it applies to.
-- [func temporaryAttributes(atCharacterIndex: Int, effectiveRange: NSRangePointer?) -> [NSAttributedString.Key : Any]](../AppKit/NSLayoutManager/temporaryAttributes(atCharacterIndex:effectiveRange:).md)
+- [func temporaryAttributes(atCharacterIndex: Int, effectiveRange: NSRangePointer?) -> [NSAttributedString.Key : Any]](../appkit/nslayoutmanager/temporaryattributes(atcharacterindex:effectiverange:).md)
   Returns the dictionary of temporary attributes for the specified character range.
-- [func temporaryAttributes(atCharacterIndex: Int, longestEffectiveRange: NSRangePointer?, in: NSRange) -> [NSAttributedString.Key : Any]](../AppKit/NSLayoutManager/temporaryAttributes(atCharacterIndex:longestEffectiveRange:in:).md)
+- [func temporaryAttributes(atCharacterIndex: Int, longestEffectiveRange: NSRangePointer?, in: NSRange) -> [NSAttributedString.Key : Any]](../appkit/nslayoutmanager/temporaryattributes(atcharacterindex:longesteffectiverange:in:).md)
   Returns the temporary attributes for a character, and the maximum range they apply to.
 ### Supporting types
 - [NSLayoutManager.TextLayoutOrientation](nslayoutmanager/textlayoutorientation.md)
@@ -300,16 +300,16 @@ Enable noncontiguous layout using the [`allowsNonContiguousLayout`](nslayoutmana
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCoding](../Foundation/NSCoding.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [NSSecureCoding](../Foundation/NSSecureCoding.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCoding](../foundation/nscoding.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSSecureCoding](../foundation/nssecurecoding.md)
 
 ## See Also
 

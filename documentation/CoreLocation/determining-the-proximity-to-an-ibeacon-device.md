@@ -60,7 +60,7 @@ If your app is not running when a beacon is detected, the system tries to launch
 
 After detecting an iBeacon, use ranging to determine the relative distance between the beacon and the user’s device. Ranging reports when the two devices are far apart, near to each other, or in the immediate vicinity of each other; it does not offer a precise distance, nor should you rely on the strength of a beacon’s signal to compute that information yourself. Use the relative values to determine an appropriate course of action. For example, an app for an art museum might wait until the user is in the immediate vicinity of an iBeacon before offering information about the corresponding artwork.
 
-![Beacons are at different relative distances to an iOS device.](https://docs-assets.developer.apple.com/published/2fdcf5f5039382d83a4b29308add1c76/media-2863870%402x.png)
+![Beacons are at different relative distances to an iOS device.](/images/com.apple.corelocation/media-2863870@2x.png)
 
 The most logical place to start ranging is in your location manager delegate’s [`locationManager(_:didEnterRegion:)`](cllocationmanagerdelegate/locationmanager(_:didenterregion:).md) method when a beacon is first detected. (The place to stop ranging is in your delegate’s [`locationManager(_:didExitRegion:)`](cllocationmanagerdelegate/locationmanager(_:didexitregion:).md) method.) To begin ranging, pass the same [`CLBeaconRegion`](clbeaconregion.md) object you used for region monitoring to your location manager’s [`startRangingBeacons(in:)`](cllocationmanager/startrangingbeacons(in:).md) method.
 

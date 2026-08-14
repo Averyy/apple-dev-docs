@@ -57,13 +57,13 @@ for i in 0...2 {
 }
 ```
 
-![Noise with smoothness values of 0.0, 0.5 and 1.0](https://docs-assets.developer.apple.com/published/edbe96563f517c9473d9ec314c8cfd95/media-2663444%402x.png)
+![Noise with smoothness values of 0.0, 0.5 and 1.0](/images/com.apple.spritekit/media-2663444@2x.png)
 
 ## Parameters
 
 - `smoothness`: A value that indicates how similar neighboring texels will be in the resulting texture. The value should be between `0.0` and `1.0`. A value of `1.0` generates a smooth surface.
 - `size`: The size of the new texture in points.
-- `grayscale`: If [`true`](https://developer.apple.com/documentation/Swift/true), all four components of each texel will have equal values. If [`false`](https://developer.apple.com/documentation/Swift/false), all four values are completely randomized.
+- `grayscale`: If [`true`](https://developer.apple.com/documentation/swift/true), all four components of each texel will have equal values. If [`false`](https://developer.apple.com/documentation/swift/false), all four values are completely randomized.
 
 ## See Also
 

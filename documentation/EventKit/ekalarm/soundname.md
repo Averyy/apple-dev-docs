@@ -20,7 +20,7 @@ var soundName: String? { get set }
 
 #### Discussion
 
-The value of this property is the name of a system sound that can be used with the [`init(named:)`](https://developer.apple.com/documentation/AppKit/NSSound/init(named:)) class method to create an `NSSound` object. Assigning this property a value will set the [`emailAddress`](ekalarm/emailaddress.md) and [`url`](ekalarm/url.md) properties to `nil`.
+The value of this property is the name of a system sound that can be used with the [`init(named:)`](https://developer.apple.com/documentation/appkit/nssound/init(named:)) class method to create an `NSSound` object. Assigning this property a value will set the [`emailAddress`](ekalarm/emailaddress.md) and [`url`](ekalarm/url.md) properties to `nil`.
 
 ## See Also
 

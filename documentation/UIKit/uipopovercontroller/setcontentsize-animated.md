@@ -24,7 +24,7 @@ When changing the size of the popover’s content, the width value you specify m
 ## Parameters
 
 - `size`: The new size to apply to the content view.
-- `animated`: Specify [`true`](https://developer.apple.com/documentation/Swift/true) if you want the change in size to be animated or [`false`](https://developer.apple.com/documentation/Swift/false) if you want the change to appear immediately.
+- `animated`: Specify [`true`](https://developer.apple.com/documentation/swift/true) if you want the change in size to be animated or [`false`](https://developer.apple.com/documentation/swift/false) if you want the change to appear immediately.
 
 ## See Also
 

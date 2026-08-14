@@ -52,7 +52,7 @@ You can create custom unit points with explicit values, like the example above, 
 
 When a person configures their device to use a left-to-right language like English, the system places the view’s origin in its top-left corner, with positive x toward the right and positive y toward the bottom of the view. In a right-to-left environment, the origin moves to the upper-right corner, and the positive x direction changes to be toward the left. You don’t typically need to do anything to handle this change, because SwiftUI applies the change to all aspects of the system. For example, see the discussion about layout direction in [`HorizontalAlignment`](horizontalalignment.md).
 
-It’s important to test your app for the different locales that you distribute your app in. For more information about the localization process, see [`Localization`](https://developer.apple.com/documentation/Xcode/localization).
+It’s important to test your app for the different locales that you distribute your app in. For more information about the localization process, see [`Localization`](https://developer.apple.com/documentation/xcode/localization).
 
 ## Topics
 
@@ -95,15 +95,15 @@ It’s important to test your app for the different locales that you distribute 
 
 ### Conforms To
 - [Animatable](animatable.md)
-- [BitwiseCopyable](../Swift/BitwiseCopyable.md)
-- [Copyable](../Swift/Copyable.md)
-- [Decodable](../Swift/Decodable.md)
-- [Encodable](../Swift/Encodable.md)
-- [Equatable](../Swift/Equatable.md)
-- [Escapable](../Swift/Escapable.md)
-- [Hashable](../Swift/Hashable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [BitwiseCopyable](../swift/bitwisecopyable.md)
+- [Copyable](../swift/copyable.md)
+- [Decodable](../swift/decodable.md)
+- [Encodable](../swift/encodable.md)
+- [Equatable](../swift/equatable.md)
+- [Escapable](../swift/escapable.md)
+- [Hashable](../swift/hashable.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

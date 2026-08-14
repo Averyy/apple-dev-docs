@@ -22,7 +22,7 @@ let kCGImagePropertyPNGCompressionFilter: CFString
 
 #### Discussion
 
-The value of this key is a [`CFNumber`](https://developer.apple.com/documentation/CoreFoundation/CFNumber). The number contains a bitwise-OR of one or more filter constants, such as [`IMAGEIO_PNG_FILTER_AVG`](imageio_png_filter_avg.md) or [`IMAGEIO_PNG_FILTER_SUB`](imageio_png_filter_sub.md). The value has no effect on formats other than PNG.
+The value of this key is a [`CFNumber`](https://developer.apple.com/documentation/corefoundation/cfnumber). The number contains a bitwise-OR of one or more filter constants, such as [`IMAGEIO_PNG_FILTER_AVG`](imageio_png_filter_avg.md) or [`IMAGEIO_PNG_FILTER_SUB`](imageio_png_filter_sub.md). The value has no effect on formats other than PNG.
 
 ## See Also
 

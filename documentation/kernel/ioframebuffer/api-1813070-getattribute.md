@@ -23,7 +23,7 @@ IOFramebuffer subclasses may implement this method to allow arbitrary attribute/
 
 ## Parameters
 
-- `attribute`: kIOHardwareCursorAttribute If the device supports a hardware cursor and implements the setCursorImage() and setCursorState() calls it should return true for this attribute.
+- `attribute`: Defines the attribute to be set. Some defined attributes are: kIOHardwareCursorAttribute If the device supports a hardware cursor and implements the setCursorImage() and setCursorState() calls it should return true for this attribute.
 - `value`: Returns the value for the attribute.
 
 ## See Also

@@ -25,7 +25,7 @@ To debug a problem using a crash report:
 3. Convert the hexadecimal addresses into symbol names for your app, as described in [`Adding identifiable symbol names to a crash report`](adding-identifiable-symbol-names-to-a-crash-report.md).
 4. Determine if the crash fits any of the patterns in [`Identifying the cause of common crashes`](identifying-the-cause-of-common-crashes.md). Consult [`Analyzing a crash report`](analyzing-a-crash-report.md) and [`Examining the fields in a crash report`](examining-the-fields-in-a-crash-report.md) for additional insight on the issue.
 5. Update your code to fix the issue.
-6. Add tests with the [`XCTest`](https://developer.apple.com/documentation/XCTest) framework to ensure the issue doesn’t reoccur in the future.
+6. Add tests with the [`XCTest`](https://developer.apple.com/documentation/xctest) framework to ensure the issue doesn’t reoccur in the future.
 
 ##### Uncover Memory Inefficiencies Using Jetsam Event Reports
 

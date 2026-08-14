@@ -15,7 +15,7 @@ void spawn_demo()
 
 #### Discussion
 
-> **Note**: ![Graph](https://docs-assets.developer.apple.com/published/14bd4f21aeb6dca0e1341e837c990173/spawn_demo.svg)
+> **Note**: ![Graph](/images/com.apple.computegraph/spawn_demo.svg)
 
 
 ---

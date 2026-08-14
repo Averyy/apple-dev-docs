@@ -29,10 +29,10 @@ Implement this protocol to create a custom capability that your extension suppor
 ## Relationships
 
 ### Inherits From
-- [AppExtensionPoint.Capability](../ExtensionFoundation/AppExtensionPoint/Capability.md)
-- [Identifiable](../Swift/Identifiable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [AppExtensionPoint.Capability](../extensionfoundation/appextensionpoint/capability.md)
+- [Identifiable](../swift/identifiable.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

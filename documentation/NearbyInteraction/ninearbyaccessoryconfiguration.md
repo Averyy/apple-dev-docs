@@ -29,7 +29,7 @@ For an example app that demonstrates this configuration with UWB accessories, se
 
 ##### Discover the Accessory and Create a Configuration
 
-To begin the interaction, your app discovers the nearby accessory using a technology you choose — like [`Core Bluetooth`](https://developer.apple.com/documentation/CoreBluetooth), the local network, or a secure internet connection — and establishes a two-way data link.
+To begin the interaction, your app discovers the nearby accessory using a technology you choose — like [`Core Bluetooth`](https://developer.apple.com/documentation/corebluetooth), the local network, or a secure internet connection — and establishes a two-way data link.
 
 For UWB accessories, over the data link, the accessory sends your app configuration data for the [`init(data:)`](ninearbyaccessoryconfiguration/init(data:).md) initializer. The accessory formats the data according to the [`Ultra Wideband (UWB) third-party device specification`](https://developer.apple.comhttps://developer.apple.com/nearby-interaction/specification).
 
@@ -42,7 +42,7 @@ In iOS 16, third-party UWB accessories paired to the device through Bluetooth ca
 To enable background interaction:
 
 - The accessory implements the Bluetooth requirements described in the [`Ultra Wideband (UWB) third-party device specification`](https://developer.apple.comhttps://developer.apple.com/nearby-interaction/specification).
-- The app connects and pairs to the accessory using [`Core Bluetooth`](https://developer.apple.com/documentation/CoreBluetooth).
+- The app connects and pairs to the accessory using [`Core Bluetooth`](https://developer.apple.com/documentation/corebluetooth).
 - The app calls the [`init(accessoryData:bluetoothPeerIdentifier:)`](ninearbyaccessoryconfiguration/init(accessorydata:bluetoothpeeridentifier:).md) initializer and passes in the accessory’s Bluetooth identifier.
 
 ##### Start a Session and Share Configuration Data
@@ -55,7 +55,7 @@ When the system gathers location updates for the accessory, Nearby Interaction c
 
 ##### Turn on Precision Finding for Stationary Objects
 
-In iOS 16, you can combine the visual-spatial power of ARKit with the radio sensitivity of the Ultra Wideband (UWB) chips to locate stationary nearby objects with considerable precision. To do that, set [`isCameraAssistanceEnabled`](ninearbyaccessoryconfiguration/iscameraassistanceenabled.md) to `true` and optionally provide the interaction session with an [`ARSession`](https://developer.apple.com/documentation/ARKit/ARSession) instance through [`setARSession(_:)`](nisession/setarsession(_:).md) before running the session. Together, the UWB chip and ARKit’s assistance enable Nearby Interaction to provide the same Precision Finding capabilities present in AirTag.
+In iOS 16, you can combine the visual-spatial power of ARKit with the radio sensitivity of the Ultra Wideband (UWB) chips to locate stationary nearby objects with considerable precision. To do that, set [`isCameraAssistanceEnabled`](ninearbyaccessoryconfiguration/iscameraassistanceenabled.md) to `true` and optionally provide the interaction session with an [`ARSession`](https://developer.apple.com/documentation/arkit/arsession) instance through [`setARSession(_:)`](nisession/setarsession(_:).md) before running the session. Together, the UWB chip and ARKit’s assistance enable Nearby Interaction to provide the same Precision Finding capabilities present in AirTag.
 
 ## Topics
 
@@ -79,15 +79,15 @@ In iOS 16, you can combine the visual-spatial power of ARKit with the radio sens
 ### Inherits From
 - [NIConfiguration](niconfiguration.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCoding](../Foundation/NSCoding.md)
-- [NSCopying](../Foundation/NSCopying.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [NSSecureCoding](../Foundation/NSSecureCoding.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCoding](../foundation/nscoding.md)
+- [NSCopying](../foundation/nscopying.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSSecureCoding](../foundation/nssecurecoding.md)
 
 ## See Also
 

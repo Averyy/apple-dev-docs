@@ -28,7 +28,7 @@ With StoreKit, you can create a file that allows you to prototype and test your 
 5. In the dialog, enter a name for the file, for example `LocalConfiguration.storekit`. Leave the configuration sync checkbox unchecked and click Next.
 6. Select a location for your file in your app’s project, then click Create to save the file.
 
-For more information about setting up a local configuration file, see [`Setting up StoreKit Testing in Xcode`](https://developer.apple.com/documentation/Xcode/setting-up-storekit-testing-in-xcode).
+For more information about setting up a local configuration file, see [`Setting up StoreKit Testing in Xcode`](https://developer.apple.com/documentation/xcode/setting-up-storekit-testing-in-xcode).
 
 This local configuration file allows you to experiment with product IDs and various purchase types offline. To use the product IDs in a published app, create the same product IDs in App Store Connect after you finish prototyping.
 
@@ -167,7 +167,7 @@ To create the local products, follow these steps:
 3. Edit the new product name, product ID string, price, and other properties.
 4. Repeat steps 2 and 3 with additional product ID strings, and product types as needed.
 
-![A screenshot of the StoreKitWorkflows app showing a view the StoreKit local configuration editor and some of the properties available to edit.](https://docs-assets.developer.apple.com/published/d6a1b7aa8552b9deb472a9dcf8795058/getting-started-with-in-app-purchases-using-storekit-views-LocalConfiguration-Editing%402x.png)
+![A screenshot of the StoreKitWorkflows app showing a view the StoreKit local configuration editor and some of the properties available to edit.](/images/com.apple.storekit/getting-started-with-in-app-purchases-using-storekit-views-LocalConfiguration-Editing@2x.png)
 
 #### Create Swiftui Views That Display Your Products
 
@@ -196,11 +196,11 @@ struct AllProductsView: View {
 
 Here, the `StoreView` view from StoreKit constructs a page and lays out a grid that contains each product, as shown in the following screenshot:
 
-![A screenshot of the StoreKitWorkflows app showing a view of all available products.](https://docs-assets.developer.apple.com/published/bf4b627b05753e5c65c90f82134a9a8e/getting-started-with-in-app-purchases-using-storekit-views-AllProducts%402x.png)
+![A screenshot of the StoreKitWorkflows app showing a view of all available products.](/images/com.apple.storekit/getting-started-with-in-app-purchases-using-storekit-views-AllProducts@2x.png)
 
 To show a specific subset of your available products, use the same view structure, but change the list of product IDs you provide to the `StoreView()`. So, change `store.allProductIDs` to another array of product IDs. For example, the `subscriptionProductIDs` array contains only subscription purchase types, so replace `store.allProductIDs` with the `subscriptionProductIDs` array to show subscriptions as shown here.
 
-![A screenshot of the StoreKitWorkflows app showing a view of only available subscriptions.](https://docs-assets.developer.apple.com/published/8e0ea2b369f56c98d33528f4d9918c4f/getting-started-with-in-app-purchases-using-storekit-views-SubsOnly%402x.png)
+![A screenshot of the StoreKitWorkflows app showing a view of only available subscriptions.](/images/com.apple.storekit/getting-started-with-in-app-purchases-using-storekit-views-SubsOnly@2x.png)
 
 For more information on StoreKit Testing in Xcode, see [`Setting up StoreKit Testing in Xcode`](https://developer.apple.comhttps://developer.apple.com/documentation/xcode/setting-up-storekit-testing-in-xcode/). For more information on the presentation of In-App purchase products, see Human Interface Guidelines > [`In-App Purchase`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/in-app-purchase). For more information on creating products in App Store Connect, see [`Configure In-App Purchase settings`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/configure-in-app-purchase-settings/overview-for-configuring-in-app-purchases).
 

@@ -17,15 +17,15 @@ Extend the reach of your app by creating widgets, watch complications, Live Acti
 
 Using WidgetKit, you can make your app’s content available in contexts outside the app and extend its reach by building an ecosystem of glanceable, up-to-date experiences.
 
-![A conceptual image that shows a small widget on iPhone, a rectangular widget on Apple Watch, and a small widget on the Mac desktop.](https://docs-assets.developer.apple.com/published/273bac77dde0ed1da3f887a44dd0a092/widgetkit-hero%402x.png)
+![A conceptual image that shows a small widget on iPhone, a rectangular widget on Apple Watch, and a small widget on the Mac desktop.](/images/com.apple.WidgetKit/widgetkit-hero@2x.png)
 
 The ecosystem that WidgetKit enables consists of:
 
 - ****Widgets****: Widgets elevate a small amount of timely, personally relevant information from your app, display it where people can see it at a glance, and offer specific app functionality without launching the app. On iPhone and iPad, people put widgets in Today View, on the Home Screen, and on the Lock Screen. On Mac, people put native Mac app widgets on the desktop and in Notification Center. Additionally, people place iPhone widgets in locations like a Mac desktop and Notification Center, or in CarPlay. On Apple Watch, widgets appear in the Smart Stack, and on Apple Vision Pro, widgets become three-dimensional objects that people pin to horizontal and vertical surfaces.
 - ****Smart Stacks****: On iPhone and iPad, people stack widgets on their Home Screen and create Smart Stacks that use Smart Rotate to show the most contextually relevant widget. On Apple Watch, the system intelligently displays widgets that are most relevant to someone’s personal context. Additionally, a person configures a widget to always appear in the Smart Stack or pins it to a fixed position.
 - ****Watch complications****: People place watch complications on the Apple Watch face to view timely, relevant information when they lift their wrist. Additionally, the Smart Stack on Apple Watch offers space for up to three complications.
-- ****Live Activities****: Live Activities display up-to-date content from your app such as event and task information on the Lock Screen or in the Dynamic Island. Live Activities use [`ActivityKit`](https://developer.apple.com/documentation/ActivityKit) for updates and optionally the Apple Push Notification service (APNs) to send ActivityKit push notifications. For more information, refer to [`ActivityKit`](https://developer.apple.com/documentation/ActivityKit).
-- ****Controls****: Controls act as a button or toggle that allows people to perform actions you describe with the [`App Intents`](https://developer.apple.com/documentation/AppIntents) framework in Control Center, on the Lock Screen, and from the Action button. A button control might initiate an action from your app, or open your app to a specific view, and a toggle might turn a light on and off or open and close a garage door. Controls appear in Control Center or as menu bar items and in Control Center on Apple Watch.
+- ****Live Activities****: Live Activities display up-to-date content from your app such as event and task information on the Lock Screen or in the Dynamic Island. Live Activities use [`ActivityKit`](https://developer.apple.com/documentation/activitykit) for updates and optionally the Apple Push Notification service (APNs) to send ActivityKit push notifications. For more information, refer to [`ActivityKit`](https://developer.apple.com/documentation/activitykit).
+- ****Controls****: Controls act as a button or toggle that allows people to perform actions you describe with the [`App Intents`](https://developer.apple.com/documentation/appintents) framework in Control Center, on the Lock Screen, and from the Action button. A button control might initiate an action from your app, or open your app to a specific view, and a toggle might turn a light on and off or open and close a garage door. Controls appear in Control Center or as menu bar items and in Control Center on Apple Watch.
 
 ##### Develop Glanceable Features Iteratively
 
@@ -53,7 +53,7 @@ In addition to offering relevant information and specific interactivity at a gla
 
 Widgets and watch complications use a special mechanism to update their content: You create a timeline of data updates and hand it to WidgetKit. WidgetKit then makes sure the widget or complication updates its content in an energy-efficient way. For more information on timelines, refer to [`Keeping a widget up to date`](keeping-a-widget-up-to-date.md). Additionally, widgets can receive updates by using the Apple Push Notification service (APNs) and remote push notifications.
 
-Live Activities don’t use timelines to update their content. Instead, they use [`ActivityKit`](https://developer.apple.com/documentation/ActivityKit) and ActivityKit push notifications you send with APNs. For more information, refer to [`ActivityKit`](https://developer.apple.com/documentation/ActivityKit).
+Live Activities don’t use timelines to update their content. Instead, they use [`ActivityKit`](https://developer.apple.com/documentation/activitykit) and ActivityKit push notifications you send with APNs. For more information, refer to [`ActivityKit`](https://developer.apple.com/documentation/activitykit).
 
 Controls don’t use timelines to update their content. Instead, your controls update their content when someone uses them, the app reloads them, or the system receives a remote push notification from APNs.
 
@@ -66,7 +66,7 @@ Widgets, watch complications, Live Activities, and controls are small and requir
 ### Essentials
 - [Developing a WidgetKit strategy](developing-a-widgetkit-strategy.md)
   Explore features, tasks, related frameworks, and constraints as you make a plan to implement widgets, controls, watch complications, and Live Activities.
-- [WidgetKit updates](../Updates/WidgetKit.md)
+- [WidgetKit updates](../updates/widgetkit.md)
   Learn about important changes in WidgetKit.
 - [Creating a widget extension](creating-a-widget-extension.md)
   Display your app’s content in a convenient, informative widget on various devices.
@@ -74,7 +74,7 @@ Widgets, watch complications, Live Activities, and controls are small and requir
   Create widgets to show your app’s content on the Home screen, with custom intents for user-customizable settings.
 - [Emoji Rangers: Supporting Live Activities, interactivity, and animations](emoji-rangers-supporting-live-activities-interactivity-and-animations.md)
   Offer Live Activities, controls, animate data updates, and add interactivity to widgets.
-- [protocol WidgetBundle](../SwiftUI/WidgetBundle.md)
+- [protocol WidgetBundle](../swiftui/widgetbundle.md)
   A container used to expose multiple widgets from a single widget extension.
 ### System experiences
 - [Widgets and watch complications](widgets-and-complications-collection.md)
@@ -96,7 +96,7 @@ Widgets, watch complications, Live Activities, and controls are small and requir
 - [Linking to specific app scenes from your widget or Live Activity](linking-to-specific-app-scenes-from-your-widget-or-live-activity.md)
   Add deep links to your widgets and Live Activities that enable people to open a specific scene in your app.
 ### Accessibility
-- [Adding accessible descriptions to widgets and Live Activities](../ActivityKit/adding-accessible-descriptions-to-widgets-and-live-activities.md)
+- [Adding accessible descriptions to widgets and Live Activities](../activitykit/adding-accessible-descriptions-to-widgets-and-live-activities.md)
   Describe the interface elements of your widgets and Live Activities to help people understand what they represent.
 ### Previews and debugging
 - [Previewing widgets and Live Activities in Xcode](previewing-widgets-and-live-activities-in-xcode.md)

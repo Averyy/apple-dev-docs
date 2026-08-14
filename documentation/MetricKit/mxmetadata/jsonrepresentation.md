@@ -20,7 +20,7 @@ func jsonRepresentation() -> Data
 
 #### Return Value
 
-A [`Data`](https://developer.apple.com/documentation/Foundation/Data) (Swift) or [`NSData`](https://developer.apple.com/documentation/Foundation/NSData) (Objective-C)  object containing the JSON representation of the contents of the metadata.
+A [`Data`](https://developer.apple.com/documentation/foundation/data) (Swift) or [`NSData`](https://developer.apple.com/documentation/foundation/nsdata) (Objective-C)  object containing the JSON representation of the contents of the metadata.
 
 ## See Also
 

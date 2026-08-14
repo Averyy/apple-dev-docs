@@ -1,4 +1,4 @@
 Completed scraping iOS & iPadOS Release Notes!
-Total pages scraped: 2
-Pages skipped (unchanged): 62
+Total pages scraped: 63
+Pages skipped (unchanged): 1
 Pages failed: 0

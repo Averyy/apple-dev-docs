@@ -24,7 +24,7 @@ func setAttributes(_ attrs: [NSAttributedString.Key : Any]?, range: NSRange)
 
 These new attributes replace any attributes previously associated with the characters in `range`. Raises an [`rangeException`](nsexceptionname/rangeexception.md) if any part of `range` lies beyond the end of the receiver’s characters.
 
-To set attributes for a zero-length `NSMutableAttributedString` displayed in a text view, use the `NSTextView` method [`typingAttributes`](https://developer.apple.com/documentation/AppKit/NSTextView/typingAttributes).
+To set attributes for a zero-length `NSMutableAttributedString` displayed in a text view, use the `NSTextView` method [`typingAttributes`](https://developer.apple.com/documentation/appkit/nstextview/typingattributes).
 
 ## Parameters
 

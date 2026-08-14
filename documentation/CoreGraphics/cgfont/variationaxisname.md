@@ -22,7 +22,7 @@ class let variationAxisName: CFString
 
 #### Description
 
-The value obtained with this key is a [`CFString`](https://developer.apple.com/documentation/CoreFoundation/CFString) that specifies the name of the variation axis.
+The value obtained with this key is a [`CFString`](https://developer.apple.com/documentation/corefoundation/cfstring) that specifies the name of the variation axis.
 
 ## See Also
 

@@ -20,7 +20,7 @@ static let disableGroundingShadows: ARView.RenderOptions
 
 Objects in the real world cast a grounding shadow onto adjacent surfaces due to ambient light. This provides viewers with a visual cue that the object is in close proximity to the surface. Objects without a grounding shadow appear disconnected from their environment. To create the same visual cue for virtual objects, RealityKit provides a grounding shadow effect.
 
-![A side-by-side comparison of a virtual object — a three](https://docs-assets.developer.apple.com/published/3253c594fd848e9a1b779665453f6514/ARView-RenderOptions-swift-struct-disableGroundingShadows-1%402x.png)
+![A side-by-side comparison of a virtual object — a three](/images/com.apple.RealityKit/ARView-RenderOptions-swift-struct-disableGroundingShadows-1@2x.png)
 
 Applying this effect involves a low, constant GPU cost. You can disable the effect by adding the [`disableGroundingShadows`](arview/renderoptions-swift.struct/disablegroundingshadows.md) option to the view’s [`renderOptions`](arview/renderoptions-swift.property.md) set, if needed. Disabling the effect is most useful for older devices, like those with an A9 processor or earlier.
 

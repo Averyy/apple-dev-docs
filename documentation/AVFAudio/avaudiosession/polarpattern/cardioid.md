@@ -24,7 +24,7 @@ static let cardioid: AVAudioSession.PolarPattern
 
 The cardioid pattern is heart-shaped and picks up most sound from the front side.
 
-![The cardioid pattern picks up sound from the direction of the data source. ](https://docs-assets.developer.apple.com/published/f888c0f9c3ee232680a47b771c6b6f81/media-3039129%402x.png)
+![The cardioid pattern picks up sound from the direction of the data source. ](/images/com.apple.avfaudio/media-3039129@2x.png)
 
 ## See Also
 

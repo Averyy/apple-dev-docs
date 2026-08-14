@@ -52,7 +52,7 @@ Assign your custom delegate object to the [`dragDelegate`](uicollectionview/drag
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

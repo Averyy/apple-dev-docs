@@ -67,7 +67,7 @@ $(SETTING:default=something)
 ###### New Features
 
 - Xcode 11.4 adds support to copy and paste breakpoints in the Breakpoint Navigator. (11723352)
-- The view debugger now presents layout guides ([`UILayoutGuide`](https://developer.apple.com/documentation/UIKit/UILayoutGuide), [`NSLayoutGuide`](https://developer.apple.com/documentation/AppKit/NSLayoutGuide)) and their referencing constraints. (20387325)
+- The view debugger now presents layout guides ([`UILayoutGuide`](https://developer.apple.com/documentation/uikit/uilayoutguide), [`NSLayoutGuide`](https://developer.apple.com/documentation/appkit/nslayoutguide)) and their referencing constraints. (20387325)
 - View debugging supports showing layers using the Show Layers menu item in the Editor menu. (15775898)
 - The exception reason now surfaces as an editor annotation. You can inspect the Exception object in Variables View and find the backtrace of the original uncaught exception, if any, in the Debug Navigator. (8045587)
 - You can now use the Terminal for standard I/O, instead of Xcode’s Console. Make this choice using the Scheme Editor’s Options tab. (33552211)
@@ -107,50 +107,50 @@ $(SETTING:default=something)
 
 ###### New Features
 
-- Added Pointer Button property to [`UITapGestureRecognizer`](https://developer.apple.com/documentation/UIKit/UITapGestureRecognizer) to control which mouse events trigger the gesture recognizer to succeed. (59330235)
-- Added new Pointer Interaction property on [`UIButton`](https://developer.apple.com/documentation/UIKit/UIButton). (59337826)
-- [`UIDatePicker`](https://developer.apple.com/documentation/UIKit/UIDatePicker) has a new Style property, and will use a new compact style by default in Mac Catalyst apps on macOS 10.15.4. (56384950)
+- Added Pointer Button property to [`UITapGestureRecognizer`](https://developer.apple.com/documentation/uikit/uitapgesturerecognizer) to control which mouse events trigger the gesture recognizer to succeed. (59330235)
+- Added new Pointer Interaction property on [`UIButton`](https://developer.apple.com/documentation/uikit/uibutton). (59337826)
+- [`UIDatePicker`](https://developer.apple.com/documentation/uikit/uidatepicker) has a new Style property, and will use a new compact style by default in Mac Catalyst apps on macOS 10.15.4. (56384950)
 - Added dynamic system gray colors to inspector color pickers. (55403376) (FB7281404)
 
 ###### Resolved Issues
 
 - Fixed an issue that prevented the color picker panel from having any effect when a text field in the inspector was focused. (56067005) (FB7358220)
-- Added Scroll Types property to [`UIPanGestureRecognizer`](https://developer.apple.com/documentation/UIKit/UIPanGestureRecognizer) to control which mouse events trigger the gesture recognizer to succeed. (59330150)
+- Added Scroll Types property to [`UIPanGestureRecognizer`](https://developer.apple.com/documentation/uikit/uipangesturerecognizer) to control which mouse events trigger the gesture recognizer to succeed. (59330150)
 - Resolved an issue where `NSSwitch` did not correctly update in the canvas when the control size was set to Small or Mini. (56520376)
-- Resolved an issue where Xcode could hang when working with [`UITableViewCell`](https://developer.apple.com/documentation/UIKit/UITableViewCell) in a tvOS storyboard. (56353682)
-- Resolved a crash that could occur when switching the style of a [`UITableViewCell`](https://developer.apple.com/documentation/UIKit/UITableViewCell) from basic to custom. (56079081)
+- Resolved an issue where Xcode could hang when working with [`UITableViewCell`](https://developer.apple.com/documentation/uikit/uitableviewcell) in a tvOS storyboard. (56353682)
+- Resolved a crash that could occur when switching the style of a [`UITableViewCell`](https://developer.apple.com/documentation/uikit/uitableviewcell) from basic to custom. (56079081)
 - Removed a large tooltip that obscured the list of constraints. (55938862) (FB7343268)
-- Fixed a bug where [`NSMenuItem`](https://developer.apple.com/documentation/AppKit/NSMenuItem) images no longer displayed on the canvas. (55838210) (FB7336326)
-- Resolved a crash when editing attributed string values of [`UILabel`](https://developer.apple.com/documentation/UIKit/UILabel) and [`UIButton`](https://developer.apple.com/documentation/UIKit/UIButton) controls. (55737956) (FB7326816)
-- Resolved a hang when using [`AVPlayerViewController`](https://developer.apple.com/documentation/AVKit/AVPlayerViewController) in tvOS storyboards. (55645930) (FB7318427)
+- Fixed a bug where [`NSMenuItem`](https://developer.apple.com/documentation/appkit/nsmenuitem) images no longer displayed on the canvas. (55838210) (FB7336326)
+- Resolved a crash when editing attributed string values of [`UILabel`](https://developer.apple.com/documentation/uikit/uilabel) and [`UIButton`](https://developer.apple.com/documentation/uikit/uibutton) controls. (55737956) (FB7326816)
+- Resolved a hang when using [`AVPlayerViewController`](https://developer.apple.com/documentation/avkit/avplayerviewcontroller) in tvOS storyboards. (55645930) (FB7318427)
 - Fixed a bug where using named colors in `IBInspectable` properties would use a fixed color at runtime, instead of the dynamic color from the asset catalog. (55248109) (FB7248211)
-- Resolved an Xcode crash that occurred when editing [`NSToolbar`](https://developer.apple.com/documentation/AppKit/NSToolbar) items in Mac documents. (55172989) (FB7212782)
+- Resolved an Xcode crash that occurred when editing [`NSToolbar`](https://developer.apple.com/documentation/appkit/nstoolbar) items in Mac documents. (55172989) (FB7212782)
 - Improved the rendering of images in iOS, macOS, tvOS and watchOS documents. PDF images render their vector representations. The scale factor is better preserved when image filenames end with a scale (`@2x`). Use a more pleasant placeholder when an image is missing. (53887572)
 - Improved performance working with Mac XIBs and storyboards containing a large number of controls. (52603889) (FB6472772)
 - Fixed duplicate keyboard shortcuts used for inspector categories. (52388396) (FB6366331)
 - Fixed an issue where Interface Builder canvas and previews did not always display the correct image content for the selected languages when localizing images in the asset catalog. (48353744)
-- Fixed a compilation bug with the label on an [`NSTabViewItem`](https://developer.apple.com/documentation/AppKit/NSTabViewItem) not getting localized. (46290566)
-- Removed [`WKWebView`](https://developer.apple.com/documentation/WebKit/WKWebView) from the Apple TV object library because it isn’t supported on the platform. (45957591)
+- Fixed a compilation bug with the label on an [`NSTabViewItem`](https://developer.apple.com/documentation/appkit/nstabviewitem) not getting localized. (46290566)
+- Removed [`WKWebView`](https://developer.apple.com/documentation/webkit/wkwebview) from the Apple TV object library because it isn’t supported on the platform. (45957591)
 - Resolved an issue where drag images of view controllers would sometimes render upside-down when both 1x and 2x displays were connected. (45464632) (FB5704168)
 - Fixed an issue where `NSResponder.h` would incorrectly show up in the Assistant Editor for XIB/Storyboard files. (37259359)
 - Fixed an issue where some Xcode editors, often Interface Builder, would be misaligned from the Xcode window that contains them. (39655724)
 - Objects are automatically labeled based on connections, sometimes resulting in view controllers called “Delegate”. This behavior has been changed to only apply from parents to children. Additionally, accessibility connections (“link” and “title”) no longer affect automatic labeling. (22972580) (FB5806917)
 - Resolved a crash when selecting a container view controller and opening the Preview editor. (23099319)
-- Fixed an issue where the inspector section for [`NumberFormatter`](https://developer.apple.com/documentation/Foundation/NumberFormatter) Symbols had a light background in dark mode. (57393302) (FB7459536)
-- Fixed an issue where several [`NSResponder`](https://developer.apple.com/documentation/AppKit/NSResponder) actions were missing from the Connections Inspector. (56546759) (FB7403346)
-- Fixed a crash that could occur when moving duplicate [`NSComboBox`](https://developer.apple.com/documentation/AppKit/NSComboBox) items in the Inspector. (55796760)
+- Fixed an issue where the inspector section for [`NumberFormatter`](https://developer.apple.com/documentation/foundation/numberformatter) Symbols had a light background in dark mode. (57393302) (FB7459536)
+- Fixed an issue where several [`NSResponder`](https://developer.apple.com/documentation/appkit/nsresponder) actions were missing from the Connections Inspector. (56546759) (FB7403346)
+- Fixed a crash that could occur when moving duplicate [`NSComboBox`](https://developer.apple.com/documentation/appkit/nscombobox) items in the Inspector. (55796760)
 - Fixed an issue where the Interface Style Simulated Metrics setting wouldn’t apply to objects being dragged. (55207867)
 - Fixed an issue where named Global Tint colors weren’t properly unarchived during Interface Builder document loading, resulting in incorrect Global Tint colors on subsequent document saves. (55158004) (FB7232333)
 - Fixed an issue where unrecognized system colors wouldn’t have their fallback colors preserved after loading and saving Interface Builder documents. (54623340)
 - Fixed a bug that prevented entering a `0` constant in the constraint popup editors. (54076090)
 - Fixed an issue where `XIB` template files didn’t have dynamic background colors. (53907727) (FB6918296)
-- Fixed a crash that occurred if an [`NSLevelIndicator`](https://developer.apple.com/documentation/AppKit/NSLevelIndicator) Minimum inspector value was higher than its Maximum. (53302326) (FB6740368)
-- Fixed an issue where Interface Builder documents that contain [`UINavigationBar`](https://developer.apple.com/documentation/UIKit/UINavigationBar) titles configured with named colors could be archived with duplicate-named color resources. (52162293) (FB6253352)
-- Fixed an issue where Apple TV [`UITableViewCell`](https://developer.apple.com/documentation/UIKit/UITableViewCell) safe area frames displayed incorrectly in `XIB` files. (51679086)
+- Fixed a crash that occurred if an [`NSLevelIndicator`](https://developer.apple.com/documentation/appkit/nslevelindicator) Minimum inspector value was higher than its Maximum. (53302326) (FB6740368)
+- Fixed an issue where Interface Builder documents that contain [`UINavigationBar`](https://developer.apple.com/documentation/uikit/uinavigationbar) titles configured with named colors could be archived with duplicate-named color resources. (52162293) (FB6253352)
+- Fixed an issue where Apple TV [`UITableViewCell`](https://developer.apple.com/documentation/uikit/uitableviewcell) safe area frames displayed incorrectly in `XIB` files. (51679086)
 - Fixed an issue where Xcode could crash after configuring text to be non-attributed. (46228389) (FB5673720)
 - Fixed an issue where creating a Swift outlet with drag-to-source could result in a class-not-found error. (57883610) (FB7491401)
-- [`UIDatePicker`](https://developer.apple.com/documentation/UIKit/UIDatePicker) compact style is available. (58963416)
-- Removed inspector support for configuring [`NSTableColumn`](https://developer.apple.com/documentation/AppKit/NSTableColumn) header cell fonts to match the API. You can configure header cell fonts by subclassing [`NSTableHeaderCell`](https://developer.apple.com/documentation/AppKit/NSTableHeaderCell) and overriding the `font` property in code. (23664679) (FB5630174)
+- [`UIDatePicker`](https://developer.apple.com/documentation/uikit/uidatepicker) compact style is available. (58963416)
+- Removed inspector support for configuring [`NSTableColumn`](https://developer.apple.com/documentation/appkit/nstablecolumn) header cell fonts to match the API. You can configure header cell fonts by subclassing [`NSTableHeaderCell`](https://developer.apple.com/documentation/appkit/nstableheadercell) and overriding the `font` property in code. (23664679) (FB5630174)
 
 ##### Metal
 
@@ -188,7 +188,7 @@ $(SETTING:default=something)
 
 - Xcode Previews now saves the zoom and pin state of the canvas. (49168788)
 - You can now turn off the device bezels in Xcode Previews using the Editor > Previews menu. (48676867)
-- Xcode Previews now shows UI for quickly adding a new [`PreviewProvider`](https://developer.apple.com/documentation/SwiftUI/PreviewProvider) when the open file contains no [`PreviewProvider`](https://developer.apple.com/documentation/SwiftUI/PreviewProvider). (45471721)
+- Xcode Previews now shows UI for quickly adding a new [`PreviewProvider`](https://developer.apple.com/documentation/swiftui/previewprovider) when the open file contains no [`PreviewProvider`](https://developer.apple.com/documentation/swiftui/previewprovider). (45471721)
 - You can now copy, cut, paste, duplicate, and delete views directly within the Xcode Previews canvas. (56134191)
 - Selecting a SwiftUI preview in code now highlights the corresponding preview in the canvas, and vice versa. (56412209)
 - Xcode Previews now supports previewing iPad applications brought to the Mac. (41416222)
@@ -197,7 +197,7 @@ $(SETTING:default=something)
 
 - On-device debugging of SwiftUI Previews may not work for Series 2 and Series 3 watches because the preview is built for the wrong architecture. (59909746) **Workaround**: Use the Build & Run action with the watch selected as the destination. The application will be built for the correct architecture.
 - Previews may fail for Mac Catalyst applications or sandboxed macOS applications when Xcode isn’t in the Applications folder. (57096274) **Workaround**: Move Xcode to the Applications folder
-- Using [`ForEach`](https://developer.apple.com/documentation/SwiftUI/ForEach) to set Preview properties may result in preview failure. (58985849) **Workaround**: Use [`Group`](https://developer.apple.com/documentation/SwiftUI/Group) to set Preview properties.
+- Using [`ForEach`](https://developer.apple.com/documentation/swiftui/foreach) to set Preview properties may result in preview failure. (58985849) **Workaround**: Use [`Group`](https://developer.apple.com/documentation/swiftui/group) to set Preview properties.
 
 ###### Resolved Issues
 
@@ -302,7 +302,7 @@ xcrun intentbuilderc help
 ###### Resolved Issues
 
 - iOS, tvOS, or watchOS apps with a Swift Package that builds a dynamic library can be submitted to the App Store. (55564324) (FB7303066)
-- You can now use Swift-only [`XCTest`](https://developer.apple.com/documentation/XCTest) APIs (such as [`XCTUnwrap(_:_:file:line:)`](https://developer.apple.com/documentation/XCTest/XCTUnwrap(_:_:file:line:))) when building a package using command-line SwiftPM. (51959291)
+- You can now use Swift-only [`XCTest`](https://developer.apple.com/documentation/xctest) APIs (such as [`XCTUnwrap(_:_:file:line:)`](https://developer.apple.com/documentation/xctest/xctunwrap(_:_:file:line:))) when building a package using command-line SwiftPM. (51959291)
 - You can import `libxml2`, `libxslt`, and `libexslt` modules in both Swift package targets and regular Xcode targets, without any additional search paths. (52043828)
 
 ##### Swift
@@ -327,7 +327,7 @@ func outer(x: Int) -> (Int, Int) {
     return (inner(), inner(y: 0))
 }
 ```
-- The compiler will now emit a warning when attempting to pass a temporary pointer argument produced from an array, string, or `inout` argument to a parameter which is known to escape it. This includes the various initializers for the [`UnsafePointer`](https://developer.apple.com/documentation/Swift/UnsafePointer)/[`UnsafeBufferPointer`](https://developer.apple.com/documentation/Swift/UnsafeBufferPointer) family of types, as well as memberwise initializers. For example, the compiler will emit warnings compiling the following code: ```swift
+- The compiler will now emit a warning when attempting to pass a temporary pointer argument produced from an array, string, or `inout` argument to a parameter which is known to escape it. This includes the various initializers for the [`UnsafePointer`](https://developer.apple.com/documentation/swift/unsafepointer)/[`UnsafeBufferPointer`](https://developer.apple.com/documentation/swift/unsafebufferpointer) family of types, as well as memberwise initializers. For example, the compiler will emit warnings compiling the following code: ```swift
 struct S {
     var ptr: UnsafePointer<Int8>
 }
@@ -456,34 +456,34 @@ func foo(x: Int) {}
 
 ###### New Features
 
-- To enable test timeout behavior from `xcodebuild`, or to override the corresponding setting in the test plan, pass the `-test-timeouts-enabled` option. To configure the default execution time allowance for an individual test when timeouts are enabled, pass the `-default-test-execution-time-allowance` option. To enforce an absolute cap on the amount of time a test can run (if it requests additional time via the [`executionTimeAllowance`](https://developer.apple.com/documentation/XCTest/XCTestCase/executionTimeAllowance) API), pass the `-maximum-test-execution-time-allowance` option. Refer to the `xcodebuild` man page (`man xcodebuild`) for more information. (58413928)
+- To enable test timeout behavior from `xcodebuild`, or to override the corresponding setting in the test plan, pass the `-test-timeouts-enabled` option. To configure the default execution time allowance for an individual test when timeouts are enabled, pass the `-default-test-execution-time-allowance` option. To enforce an absolute cap on the amount of time a test can run (if it requests additional time via the [`executionTimeAllowance`](https://developer.apple.com/documentation/xctest/xctestcase/executiontimeallowance) API), pass the `-maximum-test-execution-time-allowance` option. Refer to the `xcodebuild` man page (`man xcodebuild`) for more information. (58413928)
 - You can enable test timeouts through the “Test Timeouts” option in the test plan. You can override this value from the command-line through the `-test-timeouts-enabled` option to `xcodebuild`. (58125818)
-- The [`XCTAssertEqualWithAccuracy`](https://developer.apple.com/documentation/XCTest/XCTAssertEqualWithAccuracy) and [`XCTAssertNotEqualWithAccuracy`](https://developer.apple.com/documentation/XCTest/XCTAssertNotEqualWithAccuracy) APIs now support all FloatingPoint types. (57523034)
+- The [`XCTAssertEqualWithAccuracy`](https://developer.apple.com/documentation/xctest/xctassertequalwithaccuracy) and [`XCTAssertNotEqualWithAccuracy`](https://developer.apple.com/documentation/xctest/xctassertnotequalwithaccuracy) APIs now support all FloatingPoint types. (57523034)
 - When building a scheme which has been converted to use test plans and whose active test plan has code coverage enabled, Xcode now includes code coverage instrumentation when building for the ‘Run’ action, in addition to the ‘Test’ action. This matches the behavior of building schemes which don’t use test plans and have code coverage enabled, and avoids unnecessary rebuilds when alternating between running and testing actions. (57367856)
-- Resetting the authorization status of a protected resource (e.g. Contacts, Bluetooth or Location) is now supported in UI testing contexts. [`XCUIApplication`](https://developer.apple.com/documentation/XCTest/XCUIApplication) gains a new method, [`resetAuthorizationStatus(for:)`](https://developer.apple.com/documentation/XCTest/XCUIApplication/resetAuthorizationStatus(for:)), that accepts an [`XCUIProtectedResource`](https://developer.apple.com/documentation/XCTest/XCUIProtectedResource). This allows test authors to easily set the the authorization status of apps to their initial state, providing a convenient way to test first-launch and first-access flows of their resources. (56628656)
-- Xcode’s New File templates for [`XCTest`](https://developer.apple.com/documentation/XCTest) in Swift now include the `throws` keyword for all test methods. Errors thrown by test methods are recorded as test failures. (56619497)
+- Resetting the authorization status of a protected resource (e.g. Contacts, Bluetooth or Location) is now supported in UI testing contexts. [`XCUIApplication`](https://developer.apple.com/documentation/xcuiautomation/xcuiapplication) gains a new method, [`resetAuthorizationStatus(for:)`](https://developer.apple.com/documentation/xcuiautomation/xcuiapplication/resetauthorizationstatus(for:)), that accepts an [`XCUIProtectedResource`](https://developer.apple.com/documentation/xcuiautomation/xcuiprotectedresource). This allows test authors to easily set the the authorization status of apps to their initial state, providing a convenient way to test first-launch and first-access flows of their resources. (56628656)
+- Xcode’s New File templates for [`XCTest`](https://developer.apple.com/documentation/xctest) in Swift now include the `throws` keyword for all test methods. Errors thrown by test methods are recorded as test failures. (56619497)
 - If you enable parallel testing for a test target in the active scheme/test plan, and you pass the `-parallelize-tests-among-destinations` flag to `xcodebuild` along with multiple destination specifiers, Xcode distributes test classes within that target among the destinations to speed up test execution. (56585597)
 - UI testing and recording on macOS support the `Fn` key modifier. (56178883)
 - When you run `xcodebuild build-for-testing` for a scheme that uses test plans, its generated `.xctestrun` file now includes metadata about each test plan, including the name of the test plan and whether it’s the scheme’s default plan. (53997527)
-- Xcode introduced an “Enable Testing Search Paths” build setting to improve support for test support frameworks and libraries. This build setting is on by default for test bundle targets, as well as for targets which explicitly include `XCTest.framework` in their “Link Binary With Libraries” list. Source files in such targets can now import [`XCTest`](https://developer.apple.com/documentation/XCTest) without setting any custom search paths. (51117167)
-- [`XCTest`](https://developer.apple.com/documentation/XCTest) has improved error handling and logging for the case where a custom [`XCTestObservation`](https://developer.apple.com/documentation/XCTest/XCTestObservation) implementation throws an exception. (44291078)
+- Xcode introduced an “Enable Testing Search Paths” build setting to improve support for test support frameworks and libraries. This build setting is on by default for test bundle targets, as well as for targets which explicitly include `XCTest.framework` in their “Link Binary With Libraries” list. Source files in such targets can now import [`XCTest`](https://developer.apple.com/documentation/xctest) without setting any custom search paths. (51117167)
+- [`XCTest`](https://developer.apple.com/documentation/xctest) has improved error handling and logging for the case where a custom [`XCTestObservation`](https://developer.apple.com/documentation/xctest/xctestobservation) implementation throws an exception. (44291078)
 - `xcodebuild` now validates the deployment target and architecture of built products when running `xcodebuild test-without-building` with the `-xctestrun` flag. Targets that aren’t compatible with the requested run destination are skipped. (43107996)
-- [`XCTest`](https://developer.apple.com/documentation/XCTest) now includes throwing variants of the [`setUp()`](https://developer.apple.com/documentation/XCTest/XCTest/setUp()) and [`tearDown()`](https://developer.apple.com/documentation/XCTest/XCTest/tearDown()) instance methods, allowing tests to throw errors in Swift during set up or tear down. Override the [`setUpWithError()`](https://developer.apple.com/documentation/XCTest/XCTest/setUpWithError()) or [`tearDownWithError()`](https://developer.apple.com/documentation/XCTest/XCTest/tearDownWithError()) methods instead of [`setUp()`](https://developer.apple.com/documentation/XCTest/XCTest/setUp()) or [`tearDown()`](https://developer.apple.com/documentation/XCTest/XCTest/tearDown()), respectively. If an error is thrown by [`setUpWithError()`](https://developer.apple.com/documentation/XCTest/XCTest/setUpWithError()), the test method is not executed, and if the error was due to calling an `XCTSkip*` API, the test is marked as skipped instead of failed. (42069831)
+- [`XCTest`](https://developer.apple.com/documentation/xctest) now includes throwing variants of the [`setUp()`](https://developer.apple.com/documentation/xctest/xctest/setup()) and [`tearDown()`](https://developer.apple.com/documentation/xctest/xctest/teardown()) instance methods, allowing tests to throw errors in Swift during set up or tear down. Override the [`setUpWithError()`](https://developer.apple.com/documentation/xctest/xctest/setupwitherror()) or [`tearDownWithError()`](https://developer.apple.com/documentation/xctest/xctest/teardownwitherror()) methods instead of [`setUp()`](https://developer.apple.com/documentation/xctest/xctest/setup()) or [`tearDown()`](https://developer.apple.com/documentation/xctest/xctest/teardown()), respectively. If an error is thrown by [`setUpWithError()`](https://developer.apple.com/documentation/xctest/xctest/setupwitherror()), the test method is not executed, and if the error was due to calling an `XCTSkip*` API, the test is marked as skipped instead of failed. (42069831)
 - Xcode now validates the deployment target of test bundle targets, and skips running any tests that are incompatible with the selected run destination. Some targets may require a change to their minimum deployment target build setting to continue to run on older run destinations. (39775813)
 - Errors thrown by Swift test methods now record the source location where the error was thrown. Xcode highlights these lines in the source editor and allows jumping to those locations from the Issue Navigator. (26370684)
 - Xcode now opens files in the source editor after they are created by clicking the ‘+’ button in the Test Navigator. (17088680)
-- [`XCTest`](https://developer.apple.com/documentation/XCTest) now supports dynamically skipping tests based on runtime conditions, such as only executing some tests when running on certain device types or when a remote server is accessible. When a test is skipped, Xcode displays it differently in the Test Navigator and Test Report, and highlights the line of code where the skip occurred, along with an optional user description. Information about skipped tests is also included in the `.xcresult` for programmatic access. To skip a test, call one of the new `XCTSkip*` functions from within a test method or [`setUp()`](https://developer.apple.com/documentation/XCTest/XCTest/setUp()). For example: ```swift
+- [`XCTest`](https://developer.apple.com/documentation/xctest) now supports dynamically skipping tests based on runtime conditions, such as only executing some tests when running on certain device types or when a remote server is accessible. When a test is skipped, Xcode displays it differently in the Test Navigator and Test Report, and highlights the line of code where the skip occurred, along with an optional user description. Information about skipped tests is also included in the `.xcresult` for programmatic access. To skip a test, call one of the new `XCTSkip*` functions from within a test method or [`setUp()`](https://developer.apple.com/documentation/xctest/xctest/setup()). For example: ```swift
 func test_canAuthenticate() throws {
     try XCTSkipIf(AuthManager.canAccessServer == false, "Can't access server")
 
     // Perform test…
 }
-``` The [`XCTSkipUnless(_:_:file:line:)`](https://developer.apple.com/documentation/XCTest/XCTSkipUnless(_:_:file:line:)) API is similar to [`XCTSkipIf(_:_:file:line:)`](https://developer.apple.com/documentation/XCTest/XCTSkipIf(_:_:file:line:)) but skips if the provided expression is false instead of true, and the [`XCTSkip`](https://developer.apple.com/documentation/XCTest/XCTSkip-swift.struct) API can be used to skip unconditionally. (13696693)
-- [`XCTest`](https://developer.apple.com/documentation/XCTest) now allows individual tests to time out if they exceed a configurable duration of time. If timeouts are enabled, either via a test-plan option or via an `xcodebuild` command-line option, a test will be given a default allowance within which it must complete. Tests that exceed this length of time will fail, and a spindump of the test process will be attached to the test in the test report. If the test needs additional time to run, it can request that time via the [`executionTimeAllowance`](https://developer.apple.com/documentation/XCTest/XCTestCase/executionTimeAllowance) property on [`XCTestCase`](https://developer.apple.com/documentation/XCTest/XCTestCase). For more information, refer to the documentation in `XCTestCase.h`. (12584283)
+``` The [`XCTSkipUnless(_:_:file:line:)`](https://developer.apple.com/documentation/xctest/xctskipunless(_:_:file:line:)) API is similar to [`XCTSkipIf(_:_:file:line:)`](https://developer.apple.com/documentation/xctest/xctskipif(_:_:file:line:)) but skips if the provided expression is false instead of true, and the [`XCTSkip`](https://developer.apple.com/documentation/xctest/xctskip-swift.struct) API can be used to skip unconditionally. (13696693)
+- [`XCTest`](https://developer.apple.com/documentation/xctest) now allows individual tests to time out if they exceed a configurable duration of time. If timeouts are enabled, either via a test-plan option or via an `xcodebuild` command-line option, a test will be given a default allowance within which it must complete. Tests that exceed this length of time will fail, and a spindump of the test process will be attached to the test in the test report. If the test needs additional time to run, it can request that time via the [`executionTimeAllowance`](https://developer.apple.com/documentation/xctest/xctestcase/executiontimeallowance) property on [`XCTestCase`](https://developer.apple.com/documentation/xctest/xctestcase). For more information, refer to the documentation in `XCTestCase.h`. (12584283)
 
 ###### Resolved Issues
 
-- [`XCTest`](https://developer.apple.com/documentation/XCTest) now correctly handles large wait-timeout values passed to [`XCTWaiter`](https://developer.apple.com/documentation/XCTest/XCTWaiter) “wait” APIs, such as `DBL_MAX`. (56503613)
+- [`XCTest`](https://developer.apple.com/documentation/xctest) now correctly handles large wait-timeout values passed to [`XCTWaiter`](https://developer.apple.com/documentation/xctest/xctwaiter) “wait” APIs, such as `DBL_MAX`. (56503613)
 - Source editor test diamonds for tests in Swift packages now appear automatically upon opening the package in Xcode. (51105554)
 - Previously, when running UI tests, the target under test was reinstalled before each test started. Starting in Xcode 11.4, the target under test is installed once per test session and device, speeding up UI tests considerably. (24776269)
 - When hit testing a target, macOS hit testing accepts descendants with frames equivalent to the target as hit test matches. (59275386)

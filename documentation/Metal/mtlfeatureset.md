@@ -28,12 +28,12 @@ Metal feature sets define the feature availability, implementation limits, and p
 | GPU family | GPU hardware |
 | --- | --- |
 | iOS GPU family 1 | Apple A7 devices |
-| iOS GPU family 2 ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) tvOS GPU family 1 | Apple A8 devices |
-| iOS GPU family 3 ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) tvOS GPU family 2 | Apple A9 devices ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) Apple A10 devices |
+| iOS GPU family 2 ![None](/images/com.apple.metal/spacer.png) tvOS GPU family 1 | Apple A8 devices |
+| iOS GPU family 3 ![None](/images/com.apple.metal/spacer.png) tvOS GPU family 2 | Apple A9 devices ![None](/images/com.apple.metal/spacer.png) Apple A10 devices |
 | iOS GPU family 4 | Apple A11 devices |
 | iOS GPU family 5 | Apple A12 devices |
-| macOS GPU family 1 | iMac Pro models ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) iMac models from 2012 or later ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) MacBook models from 2015 or later ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) MacBook Pro models from 2012 or later ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) MacBook Air models from 2012 or later ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) Mac mini models from 2012 or later ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) Mac Pro models from late 2013 |
-| macOS GPU family 2 | iMac models from 2015 or later ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) MacBook Pro models from 2016 or later ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) MacBook models from 2016 or later ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) iMac Pro models from 2017 or later |
+| macOS GPU family 1 | iMac Pro models ![None](/images/com.apple.metal/spacer.png) iMac models from 2012 or later ![None](/images/com.apple.metal/spacer.png) MacBook models from 2015 or later ![None](/images/com.apple.metal/spacer.png) MacBook Pro models from 2012 or later ![None](/images/com.apple.metal/spacer.png) MacBook Air models from 2012 or later ![None](/images/com.apple.metal/spacer.png) Mac mini models from 2012 or later ![None](/images/com.apple.metal/spacer.png) Mac Pro models from late 2013 |
+| macOS GPU family 2 | iMac models from 2015 or later ![None](/images/com.apple.metal/spacer.png) MacBook Pro models from 2016 or later ![None](/images/com.apple.metal/spacer.png) MacBook models from 2016 or later ![None](/images/com.apple.metal/spacer.png) iMac Pro models from 2017 or later |
 
 For more information on Mac support for Metal, see [`Mac computers that support Metal`](https://developer.apple.comhttps://support.apple.com/en-us/HT205073).
 
@@ -118,12 +118,12 @@ For more information on Mac support for Metal, see [`Mac computers that support 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../Swift/BitwiseCopyable.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [RawRepresentable](../Swift/RawRepresentable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [BitwiseCopyable](../swift/bitwisecopyable.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [RawRepresentable](../swift/rawrepresentable.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

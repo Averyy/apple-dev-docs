@@ -27,7 +27,7 @@ Calls to the API only prompt when the application state is `UIApplicationStateA
 
 The completion handler will be called with the result of the user’s decision for granting or denying permission to use application tracking. The completion handler will be called immediately if access to request authorization is restricted.
 
-> ❗ **Important**: To use [`requestTrackingAuthorization(completionHandler:)`](attrackingmanager/requesttrackingauthorization(completionhandler:).md), the [`NSUserTrackingUsageDescription`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSUserTrackingUsageDescription) key must be in the [`Information Property List`](https://developer.apple.com/documentation/BundleResources/Information-Property-List).
+> ❗ **Important**: To use [`requestTrackingAuthorization(completionHandler:)`](attrackingmanager/requesttrackingauthorization(completionhandler:).md), the [`NSUserTrackingUsageDescription`](https://developer.apple.com/documentation/bundleresources/information-property-list/nsusertrackingusagedescription) key must be in the [`Information Property List`](https://developer.apple.com/documentation/bundleresources/information-property-list).
 
 
 ---

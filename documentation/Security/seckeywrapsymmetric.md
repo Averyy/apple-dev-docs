@@ -16,14 +16,14 @@ func SecKeyWrapSymmetric(_ keyToWrap: SecKey, _ wrappingKey: SecKey, _ parameter
 
 #### Return Value
 
-The wrapped key, or `NULL` on error. In Objective-C, call the [`CFRelease`](https://developer.apple.com/documentation/CoreFoundation/CFRelease) function to free the data’s memory when you are done with it.
+The wrapped key, or `NULL` on error. In Objective-C, call the [`CFRelease`](https://developer.apple.com/documentation/corefoundation/cfrelease) function to free the data’s memory when you are done with it.
 
 ## Parameters
 
 - `keyToWrap`: The key to wrap.
 - `wrappingKey`: The key to use when wrapping `keyToWrap`.
 - `parameters`: A parameter list for the unwrapping process. This is usually either an empty dictionary or a dictionary containing a value for [`kSecAttrSalt`](ksecattrsalt.md).
-- `error`: A pointer to a [`CFError`](https://developer.apple.com/documentation/CoreFoundation/CFError) variable where an error object is stored upon failure. If not `NULL`, the caller is responsible for checking this variable and releasing the resulting object if it exists.
+- `error`: A pointer to a [`CFError`](https://developer.apple.com/documentation/corefoundation/cferror) variable where an error object is stored upon failure. If not `NULL`, the caller is responsible for checking this variable and releasing the resulting object if it exists.
 
 
 ---

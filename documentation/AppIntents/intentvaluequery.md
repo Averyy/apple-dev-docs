@@ -40,8 +40,8 @@ protocol IntentValueQuery : PersistentlyIdentifiable, _SupportsAppDependencies, 
 
 ### Inherits From
 - [PersistentlyIdentifiable](persistentlyidentifiable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

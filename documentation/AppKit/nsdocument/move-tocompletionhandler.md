@@ -21,7 +21,7 @@ The default implementation of this method replaces any file that may currently e
 ## Parameters
 
 - `url`: The location where the file will ultimately end up, if the move is successful.
-- `completionHandler`: The completion handler block object passed in to be invoked at some point in the future, perhaps after the method invocation has returned. The completion handler must be invoked on the main thread. On output, a `nil` error is passed if the move is successful; otherwise an [`NSError`](https://developer.apple.com/documentation/Foundation/NSError) object is passed that encapsulates the reason for failure.
+- `completionHandler`: The completion handler block object passed in to be invoked at some point in the future, perhaps after the method invocation has returned. The completion handler must be invoked on the main thread. On output, a `nil` error is passed if the move is successful; otherwise an [`NSError`](https://developer.apple.com/documentation/foundation/nserror) object is passed that encapsulates the reason for failure.
 
 ## See Also
 

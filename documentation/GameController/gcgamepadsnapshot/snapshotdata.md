@@ -21,7 +21,7 @@ var snapshotData: Data { get set }
 
 #### Discussion
 
-You can assign another [`NSData`](https://developer.apple.com/documentation/Foundation/NSData) object containing snapshot data to this property. The elements of the snapshot are updated to the values stored in the flattened data. This triggers any value handlers attached to those elements.
+You can assign another [`NSData`](https://developer.apple.com/documentation/foundation/nsdata) object containing snapshot data to this property. The elements of the snapshot are updated to the values stored in the flattened data. This triggers any value handlers attached to those elements.
 
 ## See Also
 

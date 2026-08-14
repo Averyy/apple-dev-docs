@@ -31,7 +31,7 @@ This method raises an exception if `reminder` belongs to another event store.
 ## Parameters
 
 - `reminder`: The reminder to save.
-- `commit`: A Boolean value that indicates whether to save the reminder immediately or to batch the changes. Passing [`false`](https://developer.apple.com/documentation/Swift/false) won’t commit changes to the event store until the [`commit()`](ekeventstore/commit().md) method is invoked.
+- `commit`: A Boolean value that indicates whether to save the reminder immediately or to batch the changes. Passing [`false`](https://developer.apple.com/documentation/swift/false) won’t commit changes to the event store until the [`commit()`](ekeventstore/commit().md) method is invoked.
 
 ## See Also
 

@@ -53,7 +53,7 @@ lightEntity.components.set(redLightComponent)
 
 The point light illuminates entities based on its distance from them. Here is a visual example of how a red `PointLightComponent` illuminates elements based on distance:
 
-| ![A screenshot of a RealityKit scene with a dark gray floor, a light gray cube, and a small green sphere to the left of the cube above the floor. The green sphere is emitting a red light, which slightly illuminates the close side of the cube and the floor below.](https://docs-assets.developer.apple.com/published/05885759e11740e8fc7fcded21de4bb4/pointlight-cube-far.jpg) | ![A screenshot of a RealityKit scene with a dark gray floor, a light gray cube, and a small green sphere to the left of the cube above the floor. The green sphere is emitting a red light, which strongly illuminates the close side of the cube and the floor below.](https://docs-assets.developer.apple.com/published/c05085185d750c42c1b3551fc3fcc956/pointlight-cube-closer.jpg) | ![A screenshot of a RealityKit scene with a dark gray floor, a light gray cube, and a small green sphere to the left of the cube above the floor. The green sphere is emitting a red light, which intensely illuminates the close side of the cube and the floor below.](https://docs-assets.developer.apple.com/published/d05f7d56981d20de48633c78552d7215/pointlight-cube-closest.jpg) |
+| ![A screenshot of a RealityKit scene with a dark gray floor, a light gray cube, and a small green sphere to the left of the cube above the floor. The green sphere is emitting a red light, which slightly illuminates the close side of the cube and the floor below.](/images/com.apple.RealityKit/pointlight-cube-far.jpg) | ![A screenshot of a RealityKit scene with a dark gray floor, a light gray cube, and a small green sphere to the left of the cube above the floor. The green sphere is emitting a red light, which strongly illuminates the close side of the cube and the floor below.](/images/com.apple.RealityKit/pointlight-cube-closer.jpg) | ![A screenshot of a RealityKit scene with a dark gray floor, a light gray cube, and a small green sphere to the left of the cube above the floor. The green sphere is emitting a red light, which intensely illuminates the close side of the cube and the floor below.](/images/com.apple.RealityKit/pointlight-cube-closest.jpg) |
 | --- | --- | --- |
 
 > **Note**: The green dot in the above illustrations is only a visual representation of the light’s position.
@@ -102,9 +102,9 @@ Because this behavior varies by device, verify your scene’s lighting on the ol
 
 ### Conforms To
 - [Component](component.md)
-- [Copyable](../Swift/Copyable.md)
-- [Equatable](../Swift/Equatable.md)
-- [Escapable](../Swift/Escapable.md)
+- [Copyable](../swift/copyable.md)
+- [Equatable](../swift/equatable.md)
+- [Escapable](../swift/escapable.md)
 
 
 ---

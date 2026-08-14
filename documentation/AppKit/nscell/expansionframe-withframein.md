@@ -16,7 +16,7 @@ func expansionFrame(withFrame cellFrame: NSRect, in view: NSView) -> NSRect
 
 #### Return Value
 
-The expansion cell frame for the receiver. If the frame is not too small, return an empty rect ([`NSZeroRect`](https://developer.apple.com/documentation/Foundation/NSZeroRect)), and no expansion tool tip view will be shown.
+The expansion cell frame for the receiver. If the frame is not too small, return an empty rect ([`NSZeroRect`](https://developer.apple.com/documentation/foundation/nszerorect)), and no expansion tool tip view will be shown.
 
 #### Discussion
 

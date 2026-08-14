@@ -21,7 +21,7 @@ func pointsInImage(imageSize: CGSize) -> [CGPoint]
 
 #### Return Value
 
-An array containing a [`CGPoint`](https://developer.apple.com/documentation/CoreFoundation/CGPoint) for each landmark the system detects in the image, expressed in the coordinate space of the specified image size.
+An array containing a [`CGPoint`](https://developer.apple.com/documentation/corefoundation/cgpoint) for each landmark the system detects in the image, expressed in the coordinate space of the specified image size.
 
 ## Parameters
 

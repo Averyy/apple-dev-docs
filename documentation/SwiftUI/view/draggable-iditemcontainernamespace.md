@@ -33,7 +33,7 @@ To customize the default preview, apply a [`contentShape(_:_:eoFill:)`](view/con
 
 - `itemType`: A type of the dragged item.
 - `id`: An identifier of an item.
-- `item`: A closure that returns a single instance or a value conforming to [`Transferable`](https://developer.apple.com/documentation/CoreTransferable/Transferable) that represents the draggable data from this view.
+- `item`: A closure that returns a single instance or a value conforming to [`Transferable`](https://developer.apple.com/documentation/coretransferable/transferable) that represents the draggable data from this view.
 - `containerNamespace`: A namespace of the associated drag container.
 
 ## See Also

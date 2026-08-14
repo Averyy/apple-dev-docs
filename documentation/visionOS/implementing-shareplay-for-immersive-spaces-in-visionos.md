@@ -14,22 +14,22 @@ Immersive spaces in visionOS are unbounded 3D environments that allow you to pla
 
 This sample code project uses SharePlay to create a shared spatial experience for an immersive space in visionOS. Participants in a FaceTime call, or using nearby sharing (a peer-to-peer connection between nearby devices), can tap a 3D cube to change its color. All participants in the session see the color changes in real time.
 
-![A screenshot of an immersive space in an Apple Vision Pro showing a start button above a red cube.](https://docs-assets.developer.apple.com/published/ebee7c2518604f9c3a2e49f3e1f36baa/start%402x.png)
+![A screenshot of an immersive space in an Apple Vision Pro showing a start button above a red cube.](/images/com.apple.visionOS/start@2x.png)
 
 This sample code project provides a small-scale app that demonstrates:
 
-- Creating a custom [`GroupActivity`](https://developer.apple.com/documentation/GroupActivities/GroupActivity).
+- Creating a custom [`GroupActivity`](https://developer.apple.com/documentation/groupactivities/groupactivity).
 - Starting a SharePlay session of your activity type.
 - Monitoring for, configuring, and joining active sessions.
 - Synchronizing state changes.
 
-> **Note**: SharePlay requires the `Group Activities` capability. For instructions on adding a capability to your project in Xcode, see [`Adding capabilities to your app`](https://developer.apple.com/documentation/Xcode/adding-capabilities-to-your-app).
+> **Note**: SharePlay requires the `Group Activities` capability. For instructions on adding a capability to your project in Xcode, see [`Adding capabilities to your app`](https://developer.apple.com/documentation/xcode/adding-capabilities-to-your-app).
 
-For a more in-depth SharePlay sample code project, see [`Building a guessing game for visionOS`](https://developer.apple.com/documentation/GroupActivities/building-a-guessing-game-for-visionos).
+For a more in-depth SharePlay sample code project, see [`Building a guessing game for visionOS`](https://developer.apple.com/documentation/groupactivities/building-a-guessing-game-for-visionos).
 
 ##### Define a Custom Group Activity
 
-The sample creates a [`GroupActivity`](https://developer.apple.com/documentation/GroupActivities/GroupActivity) that defines the shared experience and allows you to start an activity-related SharePlay session. The activity provides metadata that appears in the system UI when people share an experience.
+The sample creates a [`GroupActivity`](https://developer.apple.com/documentation/groupactivities/groupactivity) that defines the shared experience and allows you to start an activity-related SharePlay session. The activity provides metadata that appears in the system UI when people share an experience.
 
 The sample defines `ChangeColorActivity` to represent the shareable color-changing experience. The title and subtitle appear in the SharePlay invitation and active session UI to help people understand what they’re sharing.
 
@@ -46,11 +46,11 @@ struct ChangeColorActivity: GroupActivity, Transferable {
 }
 ```
 
-See [`Defining your app’s SharePlay activities`](https://developer.apple.com/documentation/GroupActivities/defining-your-apps-shareplay-activities) for more information.
+See [`Defining your app’s SharePlay activities`](https://developer.apple.com/documentation/groupactivities/defining-your-apps-shareplay-activities) for more information.
 
 ##### Start a Shareplay Session
 
-The app displays a Start button when someone isn’t part of an active SharePlay session. When a person presses the Start button, the sample calls [`activate()`](https://developer.apple.com/documentation/GroupActivities/GroupActivity/activate()) to configure a session and invite other participants to join the activity.
+The app displays a Start button when someone isn’t part of an active SharePlay session. When a person presses the Start button, the sample calls [`activate()`](https://developer.apple.com/documentation/groupactivities/groupactivity/activate()) to configure a session and invite other participants to join the activity.
 
 ```swift
   var sharePlayButton: some View {
@@ -76,13 +76,13 @@ The app displays a Start button when someone isn’t part of an active SharePlay
 }
 ```
 
-In visionOS, if a person is on a FaceTime call or is nearby sharing with someone, calling `activate()` on the [`GroupActivity`](https://developer.apple.com/documentation/GroupActivities/GroupActivity) starts the activity. Otherwise, the system displays the sharing sheet to allow people to start a FaceTime call or a nearby sharing session.
+In visionOS, if a person is on a FaceTime call or is nearby sharing with someone, calling `activate()` on the [`GroupActivity`](https://developer.apple.com/documentation/groupactivities/groupactivity) starts the activity. Otherwise, the system displays the sharing sheet to allow people to start a FaceTime call or a nearby sharing session.
 
-> **Note**: In visionOS, windows and immersive spaces handle SharePlay sessions differently. This sample demonstrates using an immersive space. For information on starting a SharePlay session in a window, see [`Presenting SharePlay activities from your app’s UI`](https://developer.apple.com/documentation/GroupActivities/promoting-shareplay-activities-from-your-apps-ui).
+> **Note**: In visionOS, windows and immersive spaces handle SharePlay sessions differently. This sample demonstrates using an immersive space. For information on starting a SharePlay session in a window, see [`Presenting SharePlay activities from your app’s UI`](https://developer.apple.com/documentation/groupactivities/promoting-shareplay-activities-from-your-apps-ui).
 
 ##### Join and Manage the Activity
 
-When someone starts a SharePlay session, the system creates a [`GroupSession`](https://developer.apple.com/documentation/GroupActivities/GroupSession) for the custom activity to synchronize content between devices. To join a started activity, the sample continuously monitors for new `ChangeColorActivity` sessions. When one becomes available, the sample starts observing the session state and creates a `SessionController` to manage the session.
+When someone starts a SharePlay session, the system creates a [`GroupSession`](https://developer.apple.com/documentation/groupactivities/groupsession) for the custom activity to synchronize content between devices. To join a started activity, the sample continuously monitors for new `ChangeColorActivity` sessions. When one becomes available, the sample starts observing the session state and creates a `SessionController` to manage the session.
 
 ```swift
 private func observeGroupSessions() async {
@@ -113,7 +113,7 @@ private func observeGroupSessions() async {
 }
 ```
 
-The sample uses the `GroupSession` of the activity to create a `SessionController`, which handles session setup, participant management, joining the activity, and state synchronization. The session controller sets up the [`GroupSessionMessenger`](https://developer.apple.com/documentation/GroupActivities/GroupSessionMessenger) and [`SystemCoordinator`](https://developer.apple.com/documentation/GroupActivities/SystemCoordinator), and then starts observing messages and participant updates before adding the person to the session.
+The sample uses the `GroupSession` of the activity to create a `SessionController`, which handles session setup, participant management, joining the activity, and state synchronization. The session controller sets up the [`GroupSessionMessenger`](https://developer.apple.com/documentation/groupactivities/groupsessionmessenger) and [`SystemCoordinator`](https://developer.apple.com/documentation/groupactivities/systemcoordinator), and then starts observing messages and participant updates before adding the person to the session.
 
 ```swift
 init?(_ groupSession: GroupSession<ChangeColorActivity>, appModel: AppModel) async {
@@ -152,7 +152,7 @@ init?(_ groupSession: GroupSession<ChangeColorActivity>, appModel: AppModel) asy
 
 The `.sideBySide` spatial template ensures all participants share a consistent viewing perspective, which is essential for collaborative 3D experiences.
 
-> ❗ **Important**: Set [`supportsGroupImmersiveSpace`](https://developer.apple.com/documentation/GroupActivities/SystemCoordinator/Configuration-swift.struct/supportsGroupImmersiveSpace) to `true` to see personas in the immersive space. For information about personas in SharePlay, see [`Adding spatial Persona support to an activity`](https://developer.apple.com/documentation/GroupActivities/adding-spatial-persona-support-to-an-activity).
+> ❗ **Important**: Set [`supportsGroupImmersiveSpace`](https://developer.apple.com/documentation/groupactivities/systemcoordinator/configuration-swift.struct/supportsgroupimmersivespace) to `true` to see personas in the immersive space. For information about personas in SharePlay, see [`Adding spatial Persona support to an activity`](https://developer.apple.com/documentation/groupactivities/adding-spatial-persona-support-to-an-activity).
 
 The session controller handles observing when participants join or leave, and brings people up to date if they join late.
 
@@ -184,7 +184,7 @@ The session controller handles observing when participants join or leave, and br
 }
 ```
 
-For more information, see [`Joining and managing a shared activity`](https://developer.apple.com/documentation/GroupActivities/joining-and-managing-a-shared-activity).
+For more information, see [`Joining and managing a shared activity`](https://developer.apple.com/documentation/groupactivities/joining-and-managing-a-shared-activity).
 
 ##### Send and Receive Messages to Synchronize State
 
@@ -201,7 +201,7 @@ SpatialTapGesture()
     }
 ```
 
-When the color of the cube changes, the sample uses [`GroupSessionMessenger`](https://developer.apple.com/documentation/GroupActivities/GroupSessionMessenger) to send messages to the other participants, notifying them of the change.
+When the color of the cube changes, the sample uses [`GroupSessionMessenger`](https://developer.apple.com/documentation/groupactivities/groupsessionmessenger) to send messages to the other participants, notifying them of the change.
 
 The app model updates the local color and conditionally syncs the change using the session controller if `syncChanges` is `true` and an active SharePlay session exists. The method uses the `syncChanges` parameter to prevent infinite cycles of sending messages when the local state updates after receiving a message.
 
@@ -271,17 +271,17 @@ private func observeUpdateColorMessages() {
 }
 ```
 
-For more information on sending and receiving data, see [`Synchronizing data during a SharePlay activity`](https://developer.apple.com/documentation/GroupActivities/synchronizing-data-during-a-shareplay-activity).
+For more information on sending and receiving data, see [`Synchronizing data during a SharePlay activity`](https://developer.apple.com/documentation/groupactivities/synchronizing-data-during-a-shareplay-activity).
 
 ## See Also
 
-- [Building a guessing game for visionOS](../GroupActivities/building-a-guessing-game-for-visionos.md)
+- [Building a guessing game for visionOS](../groupactivities/building-a-guessing-game-for-visionos.md)
   Create a team-based guessing game for visionOS using Group Activities.
-- [Configure your visionOS app for sharing with people nearby](../GroupActivities/configure-your-app-for-sharing-with-people-nearby.md)
+- [Configure your visionOS app for sharing with people nearby](../groupactivities/configure-your-app-for-sharing-with-people-nearby.md)
   Create shared experiences for people wearing Vision Pro in the same room and those on FaceTime.
-- [Adding spatial Persona support to an activity](../GroupActivities/adding-spatial-persona-support-to-an-activity.md)
+- [Adding spatial Persona support to an activity](../groupactivities/adding-spatial-persona-support-to-an-activity.md)
   Update your SharePlay activities to support spatial Personas and the shared context when running in visionOS.
-- [Synchronizing group gameplay with TabletopKit](../TabletopKit/synchronizing-group-gameplay-with-tabletopkit.md)
+- [Synchronizing group gameplay with TabletopKit](../tabletopkit/synchronizing-group-gameplay-with-tabletopkit.md)
   Maintain game state across multiple players in a race to capture all the coins.
 
 

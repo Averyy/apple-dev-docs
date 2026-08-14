@@ -7,7 +7,6 @@ Initializes a notification action with the given identifier, title, and type.
 
 **Availability**:
 - iOS 26.5+
-- iPadOS 26.5+
 
 ## Declaration
 

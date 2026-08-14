@@ -8,7 +8,7 @@ Use Git branches and tags to streamline your collaboration and manage features a
 
 If you need to keep track of multiple feature and release timelines simultaneously, you can organize different versions of your code into branches and annotate your significant changes or milestones with tags.
 
-![Conceptual diagram that shows three rows of commits, each row representing a branch. Each commit in the topmost branch contains a tag that associates the commit with a release version number.](https://docs-assets.developer.apple.com/published/eb95fd8ad7944207eca4370f2ba73c51/organizing-your-code-changes-with-source-control-1%402x.png)
+![Conceptual diagram that shows three rows of commits, each row representing a branch. Each commit in the topmost branch contains a tag that associates the commit with a release version number.](/images/com.apple.Xcode/organizing-your-code-changes-with-source-control-1@2x.png)
 
 ##### Organize New Feature or Bug Fix Changes in a Branch
 
@@ -26,7 +26,7 @@ Continue making code changes, and periodically test, stage, commit, and push you
 
 When you have work in progress that you aren’t ready to commit and you need to switch to another branch, stash your changes to save them without committing them to the repository. Choose Integrate > Stash Changes, and optionally enter a description of your changes.
 
-![A screenshot of the Xcode Stash Changes dialog.](https://docs-assets.developer.apple.com/published/268f7fd730edab7d6d934f859aeaccc1/organizing-your-code-changes-with-source-control-2%402x.png)
+![A screenshot of the Xcode Stash Changes dialog.](/images/com.apple.Xcode/organizing-your-code-changes-with-source-control-2@2x.png)
 
 Xcode creates a stash entry with your changes and removes those changes from the current working project so that you can switch branches or start working on other changes.
 
@@ -42,7 +42,7 @@ Add tags to commits that represent a significant milestone, like a release or la
 
 To find a branch or commit to tag, click the Repositories tab in the Source Control navigator, expand your repository, and then expand the Branches folder. Control-click either a branch or a branch commit, and choose Tag “[*branch name*]” or Tag “[*commit-hash*]” from the pop-up menu.
 
-![A screenshot of the Xcode dialog for creating a new tag from a commit.](https://docs-assets.developer.apple.com/published/b14ab3219fda7831d8731900b5b4b5fb/organizing-your-code-changes-with-source-control-3%402x.png)
+![A screenshot of the Xcode dialog for creating a new tag from a commit.](/images/com.apple.Xcode/organizing-your-code-changes-with-source-control-3@2x.png)
 
 If you select the branch, Xcode applies the tag to the most recent commit in the branch. Enter a short string for the tag, and, optionally, a more detailed message. Click Create, and Xcode creates the tag and marks the commit with it.
 

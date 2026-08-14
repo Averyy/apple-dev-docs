@@ -23,7 +23,7 @@ protocol MLVisualizable : CustomPlaygroundDisplayConvertible
 ## Relationships
 
 ### Inherits From
-- [CustomPlaygroundDisplayConvertible](../Swift/CustomPlaygroundDisplayConvertible.md)
+- [CustomPlaygroundDisplayConvertible](../swift/customplaygrounddisplayconvertible.md)
 ### Inherited By
 - [MLStreamingVisualizable](mlstreamingvisualizable.md)
 

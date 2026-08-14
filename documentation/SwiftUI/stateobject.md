@@ -23,7 +23,7 @@ A property wrapper type that instantiates an observable object.
 
 #### Overview
 
-Use a state object as the single source of truth for a reference type that you store in a view hierarchy. Create a state object in an [`App`](app.md), [`Scene`](scene.md), or [`View`](view.md) by applying the `@StateObject` attribute to a property declaration and providing an initial value that conforms to the [`ObservableObject`](https://developer.apple.com/documentation/Combine/ObservableObject) protocol. Declare state objects as private to prevent setting them from a memberwise initializer, which can conflict with the storage management that SwiftUI provides:
+Use a state object as the single source of truth for a reference type that you store in a view hierarchy. Create a state object in an [`App`](app.md), [`Scene`](scene.md), or [`View`](view.md) by applying the `@StateObject` attribute to a property declaration and providing an initial value that conforms to the [`ObservableObject`](https://developer.apple.com/documentation/combine/observableobject) protocol. Declare state objects as private to prevent setting them from a memberwise initializer, which can conflict with the storage management that SwiftUI provides:
 
 ```swift
 class DataModel: ObservableObject {
@@ -44,7 +44,7 @@ struct MyView: View {
 
 SwiftUI creates a new instance of the model object only once during the lifetime of the container that declares the state object. For example, SwiftUI doesn’t create a new instance if a view’s inputs change, but does create a new instance if the identity of a view changes. When published properties of the observable object change, SwiftUI updates any view that depends on those properties, like the [`Text`](text.md) view in the above example.
 
-> **Note**: If you need to store a value type, like a structure, string, or integer, use the [`State`](state.md) property wrapper instead. Also use [`State`](state.md) if you need to store a reference type that conforms to the [`Observable()`](https://developer.apple.com/documentation/Observation/Observable()) protocol. To learn more about Observation in SwiftUI, see [`Managing model data in your app`](managing-model-data-in-your-app.md).
+> **Note**: If you need to store a value type, like a structure, string, or integer, use the [`State`](state.md) property wrapper instead. Also use [`State`](state.md) if you need to store a reference type that conforms to the [`Observable()`](https://developer.apple.com/documentation/observation/observable()) protocol. To learn more about Observation in SwiftUI, see [`Managing model data in your app`](managing-model-data-in-your-app.md).
 
 ##### Share State Objects with Subviews
 
@@ -113,7 +113,7 @@ MyInitializableView(name: name)
 
 > **Note**: If your view appears inside a [`ForEach`](foreach.md), it implicitly receives an [`id(_:)`](view/id(_:).md) modifier that uses the identifier of the corresponding data element.
 
-If you need the view to reinitialize state based on changes in more than one value, you can combine the values into a single identifier using a [`Hasher`](https://developer.apple.com/documentation/Swift/Hasher). For example, if you want to update the data model in `MyInitializableView` when the values of either `name` or `isEnabled` change, you can combine both variables into a single hash:
+If you need the view to reinitialize state based on changes in more than one value, you can combine the values into a single identifier using a [`Hasher`](https://developer.apple.com/documentation/swift/hasher). For example, if you want to update the data model in `MyInitializableView` when the values of either `name` or `isEnabled` change, you can combine both variables into a single hash:
 
 ```swift
 var hash: Int {
@@ -148,8 +148,8 @@ Be mindful of the performance cost of reinitializing the state object every time
 
 ### Conforms To
 - [DynamicProperty](dynamicproperty.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 
@@ -157,13 +157,13 @@ Be mindful of the performance cost of reinitializing the state object every time
   Create connections between your app’s data model and views.
 - [Migrating from the Observable Object protocol to the Observable macro](migrating-from-the-observable-object-protocol-to-the-observable-macro.md)
   Update your existing app to leverage the benefits of Observation in Swift.
-- [macro Observable()](../Observation/Observable().md)
+- [macro Observable()](../observation/observable().md)
   Defines and implements conformance of the Observable protocol.
 - [Monitoring data changes in your app](monitoring-model-data-changes-in-your-app.md)
   Show changes to data in your app’s user interface by using observable objects.
 - [struct ObservedObject](observedobject.md)
   A property wrapper type that subscribes to an observable object and invalidates a view whenever the observable object changes.
-- [protocol ObservableObject](../Combine/ObservableObject.md)
+- [protocol ObservableObject](../combine/observableobject.md)
   A type of object with a publisher that emits before the object has changed.
 
 

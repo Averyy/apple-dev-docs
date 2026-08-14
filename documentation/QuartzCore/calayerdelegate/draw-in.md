@@ -21,9 +21,9 @@ optional func draw(_ layer: CALayer, in ctx: CGContext)
 
 #### Discussion
 
-The [`draw(_:in:)`](calayerdelegate/draw(_:in:).md) method is called when the layer is marked for its content to be reloaded, typically with the [`setNeedsDisplay()`](calayer/setneedsdisplay().md) method. It is not called if the delegate implements the [`display(_:)`](calayerdelegate/display(_:).md) method. You can use the context to draw vectors, such as curves and lines, or images with the [`draw(_:in:byTiling:)`](https://developer.apple.com/documentation/CoreGraphics/CGContext/draw(_:in:byTiling:)) method.
+The [`draw(_:in:)`](calayerdelegate/draw(_:in:).md) method is called when the layer is marked for its content to be reloaded, typically with the [`setNeedsDisplay()`](calayer/setneedsdisplay().md) method. It is not called if the delegate implements the [`display(_:)`](calayerdelegate/display(_:).md) method. You can use the context to draw vectors, such as curves and lines, or images with the [`draw(_:in:byTiling:)`](https://developer.apple.com/documentation/coregraphics/cgcontext/draw(_:in:bytiling:)) method.
 
-The following code shows how you can create a class named `LayerDelegate` that implements [`CALayerDelegate`](calayerdelegate.md) and sets it as a layer’s (named `sublayer`) delegate. When [`setNeedsDisplay()`](calayer/setneedsdisplay().md) is called on `sublayer`, the delegate’s [`draw(_:in:)`](calayerdelegate/draw(_:in:).md) method draws an ellipse fitting the bounding box of the layer using the [`boundingBoxOfClipPath`](https://developer.apple.com/documentation/CoreGraphics/CGContext/boundingBoxOfClipPath) function.
+The following code shows how you can create a class named `LayerDelegate` that implements [`CALayerDelegate`](calayerdelegate.md) and sets it as a layer’s (named `sublayer`) delegate. When [`setNeedsDisplay()`](calayer/setneedsdisplay().md) is called on `sublayer`, the delegate’s [`draw(_:in:)`](calayerdelegate/draw(_:in:).md) method draws an ellipse fitting the bounding box of the layer using the [`boundingBoxOfClipPath`](https://developer.apple.com/documentation/coregraphics/cgcontext/boundingboxofclippath) function.
 
 ```swift
 let delegate = LayerDelegate()

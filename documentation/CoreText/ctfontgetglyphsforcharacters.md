@@ -26,7 +26,7 @@ func CTFontGetGlyphsForCharacters(_ font: CTFont, _ characters: UnsafePointer<Un
 
 #### Discussion
 
-Provides basic Unicode encoding for the given font, returning by reference an array of [`CGGlyph`](https://developer.apple.com/documentation/CoreGraphics/CGGlyph) values corresponding to a given array of Unicode characters for the given font.
+Provides basic Unicode encoding for the given font, returning by reference an array of [`CGGlyph`](https://developer.apple.com/documentation/coregraphics/cgglyph) values corresponding to a given array of Unicode characters for the given font.
 
 If a glyph could not be encoded, a value of `0` is passed back at the corresponding index in the `glyphs` array and the function returns `False`. It is the responsibility of the caller to handle the Unicode properties of the input characters.
 

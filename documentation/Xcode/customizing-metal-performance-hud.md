@@ -14,7 +14,7 @@ In macOS, you can export the HUD settings and apply them to your app at launch.
 
 When you enable the Metal Performance HUD in your app, the HUD adds a new Metal HUD menu to the menu bar.
 
-![A screenshot showing the Metal HUD menu.](https://docs-assets.developer.apple.com/published/aefb76ac0076bfe3f4ab7b686e9ffaa8/metal-hud-menu%402x.png)
+![A screenshot showing the Metal HUD menu.](/images/com.apple.Xcode/metal-hud-menu@2x.png)
 
 The Metal HUD menu provides a quick way to configure the HUD, create performance reports (see  [`Generating performance reports with the Metal Performance HUD`](generating-performance-reports-with-metal-performance-hud.md)), and access the configuration panel.
 
@@ -24,15 +24,15 @@ The configuration panel is where you can fully customize the HUD.
 
 You can enable or disable various features in the `HUD` panel, such as encoder GPU time tracking (see [`Monitoring your Metal app’s graphics performance`](monitoring-your-metal-apps-graphics-performance.md)), or adjust the overlay’s opacity, scale, and position.
 
-![A screenshot of the Metal HUD’s configuration panel.](https://docs-assets.developer.apple.com/published/ad3c03c0cad6e6f017d8473d7d081ec8/metal-hud-config-panel%402x.png)
+![A screenshot of the Metal HUD’s configuration panel.](/images/com.apple.Xcode/metal-hud-config-panel@2x.png)
 
 In the Metrics panel, you can see the list of available metrics in the overlay. To learn more about these metrics, see [`Understanding the Metal Performance HUD metrics`](understanding-metal-performance-hud-metrics.md).
 
-![A screenshot of the Metal HUD’s metrics configuration panel.](https://docs-assets.developer.apple.com/published/139a406f36beb0e99eaa893e693cc523/metal-hud-config-panel-metrics%402x.png)
+![A screenshot of the Metal HUD’s metrics configuration panel.](/images/com.apple.Xcode/metal-hud-config-panel-metrics@2x.png)
 
 In the Insights panel, enable the performance insights feature to help you find potential performance issues. This feature tracks the usage of the Metal API and highlights potential bottlenecks. To learn more, see [`Gaining performance insights with the Metal Performance HUD`](gaining-performance-insights-with-metal-performance-hud.md).
 
-![A screenshot of the Metal HUD’s insights configuration panel.](https://docs-assets.developer.apple.com/published/67130492a96d630cbb1c505541a03d6b/metal-hud-config-insights%402x.png)
+![A screenshot of the Metal HUD’s insights configuration panel.](/images/com.apple.Xcode/metal-hud-config-insights@2x.png)
 
 ##### Customize the Metal Performance Hud on a Device
 
@@ -44,7 +44,7 @@ You can customize the Metal Performance HUD and logging on an iOS or iPadOS devi
 
 The following screenshot shows the options in iOS:
 
-![A screenshot of the Developer settings in iOS that highlights the toggles to enable the Metal Performance HUD overlay and logging.](https://docs-assets.developer.apple.com/published/3b5dda94e18d8b289a8967c47620cba9/metal-hud-ios-config%402x.png)
+![A screenshot of the Developer settings in iOS that highlights the toggles to enable the Metal Performance HUD overlay and logging.](/images/com.apple.Xcode/metal-hud-ios-config@2x.png)
 
 > ❗ **Important**:  These settings apply to all apps that enable the Metal Performance HUD. You can use environment variables to override the settings when debugging from Xcode.
 
@@ -96,7 +96,7 @@ Additionally, you can add various effects by setting environment variables that 
 
 You can save your custom Metal Performance HUD configuration by clicking the Export HUD Configuration button in the configuration panel.
 
-![A screenshot of the Metal HUD menu that highlights the Export HUD Configuration option in the configuration panel.](https://docs-assets.developer.apple.com/published/20518018e71533e705311708a50cadd9/metal-hud-config-export%402x.png)
+![A screenshot of the Metal HUD menu that highlights the Export HUD Configuration option in the configuration panel.](/images/com.apple.Xcode/metal-hud-config-export@2x.png)
 
 The configuration file is a property list file containing key-value pairs of environment variables, and you can pass it into the HUD by setting the `MTL_HUD_CONFIG_FILE` environment variable.
 
@@ -106,7 +106,7 @@ export MTL_HUD_CONFIG_FILE=<path>
 
 Alternatively, you can use the Copy HUD Configuration option in the Metal HUD menu, which exports the current state of the HUD with a list of environment variables that you can pass to your app at launch.
 
-![A screenshot of the Metal HUD menu that highlights the Copy HUD Configuration option in the Metal HUD menu.](https://docs-assets.developer.apple.com/published/e3f3e9cee939be7048013b5b69945513/metal-hud-menu-config%402x.png)
+![A screenshot of the Metal HUD menu that highlights the Copy HUD Configuration option in the Metal HUD menu.](/images/com.apple.Xcode/metal-hud-menu-config@2x.png)
 
 ## See Also
 

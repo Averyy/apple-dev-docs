@@ -12,9 +12,9 @@ To access the devices in the user’s home automation network, you enable the Ho
 
 To ready your app to work with HomeKit, enable the HomeKit capability for your app in Xcode. Open your project, select the app target, and choose the Signing & Capabilities pane. Then click the + button. In the window that appears, choose HomeKit.
 
-![Screenshot showing how you enable the HomeKit capability in Xcode’s Signing and Capabilities pane.](https://docs-assets.developer.apple.com/published/c19faddf8332772f46ff4f6fee8768a5/media-3369803%402x.png)
+![Screenshot showing how you enable the HomeKit capability in Xcode’s Signing and Capabilities pane.](/images/com.apple.homekit/media-3369803@2x.png)
 
-When you enable the HomeKit capability, Xcode automatically adds the [`HomeKit Entitlement`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.homekit) to your entitlements file. It also adds the corresponding feature to your App ID and links the HomeKit framework.
+When you enable the HomeKit capability, Xcode automatically adds the [`HomeKit Entitlement`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.homekit) to your entitlements file. It also adds the corresponding feature to your App ID and links the HomeKit framework.
 
 > ❗ **Important**:  HomeKit supports independent Apple Watch apps in watchOS 7 and later.
 
@@ -22,13 +22,13 @@ When you enable the HomeKit capability, Xcode automatically adds the [`HomeKit E
 
 A user’s home automation network is a sensitive resource. Apps with access can collect sensor data and change the state of physical objects in the real world. To protect users, the first time your app uses the HomeKit framework—typically, when you create a [`HMHomeManager`](hmhomemanager.md) instance—the system prompts the user for permission.
 
-You provide a message for this prompt called a *purpose string* or a *usage description* by setting a string value for the [`NSHomeKitUsageDescription`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSHomeKitUsageDescription) that you add to your app’s [`Information Property List`](https://developer.apple.com/documentation/BundleResources/Information-Property-List) file. Find and select your project’s `Info.plist` file in Xcode’s project navigator. Modify the file using the property list editor built into Xcode:
+You provide a message for this prompt called a *purpose string* or a *usage description* by setting a string value for the [`NSHomeKitUsageDescription`](https://developer.apple.com/documentation/bundleresources/information-property-list/nshomekitusagedescription) that you add to your app’s [`Information Property List`](https://developer.apple.com/documentation/bundleresources/information-property-list) file. Find and select your project’s `Info.plist` file in Xcode’s project navigator. Modify the file using the property list editor built into Xcode:
 
-![Screenshot showing the HomeKit Usage Description key in the app’s Info.plist file.](https://docs-assets.developer.apple.com/published/c996e82ebce0724fd2a41595e2c469e6/media-3369804%402x.png)
+![Screenshot showing the HomeKit Usage Description key in the app’s Info.plist file.](/images/com.apple.homekit/media-3369804@2x.png)
 
 The system automatically generates the prompt’s title, which includes the name of your app. Your usage description—in this case, “Configure accessories from Kilgo Devices, Inc.”—indicates the reason that your app needs the access.
 
-![Screenshot of the prompt from which the user chooses to either accept or disallow access to home data for the app.](https://docs-assets.developer.apple.com/published/0e48748f524d23fd547cbe00ab5f9710/media-3369805%402x.png)
+![Screenshot of the prompt from which the user chooses to either accept or disallow access to home data for the app.](/images/com.apple.homekit/media-3369805@2x.png)
 
 Accurately and concisely explaining to the user why your app needs access to the home network, typically in one complete sentence, lets the user make an informed decision and improves the chances that they’ll grant access.
 
@@ -46,9 +46,9 @@ If your app can’t provide meaningful functionality without HomeKit access, you
 
 ## See Also
 
-- [HomeKit Entitlement](../BundleResources/Entitlements/com.apple.developer.homekit.md)
+- [HomeKit Entitlement](../bundleresources/entitlements/com.apple.developer.homekit.md)
   A Boolean value that indicates whether users of the app may manage HomeKit-compatible accessories.
-- [NSHomeKitUsageDescription](../BundleResources/Information-Property-List/NSHomeKitUsageDescription.md)
+- [NSHomeKitUsageDescription](../bundleresources/information-property-list/nshomekitusagedescription.md)
   A message that tells people why the app is requesting access to their HomeKit configuration data.
 
 

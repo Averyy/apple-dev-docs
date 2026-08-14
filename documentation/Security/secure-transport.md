@@ -10,7 +10,7 @@ The `Security.SecureTransport` API gives you access to Apple’s implementation 
 
 This API imposes no transport layer dependencies. You can use it with BSD Sockets and other protocols. To use this API, you provide callback functions to perform I/O on the underlying network connections. You are also responsible for setting up raw network connections. You pass in an opaque reference to the underlying (connected) entity at the start of an SSL session in the form of an [`SSLConnectionRef`](sslconnectionref.md) object.
 
-> ❗ **Important**:  This API is considered legacy. Use the [`Network`](https://developer.apple.com/documentation/Network) framework instead.
+> ❗ **Important**:  This API is considered legacy. Use the [`Network`](https://developer.apple.com/documentation/network) framework instead.
 
 ## Topics
 

@@ -8,9 +8,9 @@ Update your apps to use new features, and test your apps against API changes.
 
 Xcode 11.2 includes SDKs for iOS 13.2, macOS Catalina 10.15, watchOS 6.1, and tvOS 13.2. Xcode 11.2 supports on-device debugging for iOS 8 and later, tvOS 9 and later, and watchOS 2 and later. Xcode 11.2 requires a Mac running macOS Mojave 10.14.4 or later.
 
-> ❗ **Important**: Storyboards containing a [`UITextView`](https://developer.apple.com/documentation/UIKit/UITextView) will cause the app to crash on operating system versions earlier than iOS 13.2 and tvOS 13.2 if compiled with Xcode 11.2. (56808566)
+> ❗ **Important**: Storyboards containing a [`UITextView`](https://developer.apple.com/documentation/uikit/uitextview) will cause the app to crash on operating system versions earlier than iOS 13.2 and tvOS 13.2 if compiled with Xcode 11.2. (56808566)
 
-> ❗ **Important**: Storyboards containing a [`UITextView`](https://developer.apple.com/documentation/UIKit/UITextView) will cause the app to crash on macOS versions earlier than macOS 10.15.1 if compiled on a Mac running macOS 10.15.1. (56873523)
+> ❗ **Important**: Storyboards containing a [`UITextView`](https://developer.apple.com/documentation/uikit/uitextview) will cause the app to crash on macOS versions earlier than macOS 10.15.1 if compiled on a Mac running macOS 10.15.1. (56873523)
 
 ##### Devices
 
@@ -22,15 +22,15 @@ Xcode 11.2 includes SDKs for iOS 13.2, macOS Catalina 10.15, watchOS 6.1, and tv
 
 ###### New Features
 
-- Added support for configuring [`WKInterfaceAuthorizationAppleIDButton`](https://developer.apple.com/documentation/WatchKit/WKInterfaceAuthorizationAppleIDButton) styles. (53251536)
+- Added support for configuring [`WKInterfaceAuthorizationAppleIDButton`](https://developer.apple.com/documentation/watchkit/wkinterfaceauthorizationappleidbutton) styles. (53251536)
 
 ###### Known Issues
 
-- Setting the Selected Segment Tint Color of a segmented control in Interface Builder to a named color will cause a failure when the view is loaded on iOS 12 and earlier. (55254963) **Workaround**: Set the segmented control’s [`selectedSegmentTintColor`](https://developer.apple.com/documentation/UIKit/UISegmentedControl/selectedSegmentTintColor) in an [`awakeFromNib()`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class/awakeFromNib()) method.
+- Setting the Selected Segment Tint Color of a segmented control in Interface Builder to a named color will cause a failure when the view is loaded on iOS 12 and earlier. (55254963) **Workaround**: Set the segmented control’s [`selectedSegmentTintColor`](https://developer.apple.com/documentation/uikit/uisegmentedcontrol/selectedsegmenttintcolor) in an [`awakeFromNib()`](https://developer.apple.com/documentation/objectivec/nsobject-swift.class/awakefromnib()) method.
 
 ###### Resolved Issues
 
-- Fixed an issue with [`UITabBarController`](https://developer.apple.com/documentation/UIKit/UITabBarController) where decoding an instance from a storyboard would create extra views at the left end of the screen. If you worked around this issue on Xcode 11.0 or 11.1 by creating a subclass of [`UITabBarController`](https://developer.apple.com/documentation/UIKit/UITabBarController) and hiding extra views in the initializer you can remove the workaround. (55310448)
+- Fixed an issue with [`UITabBarController`](https://developer.apple.com/documentation/uikit/uitabbarcontroller) where decoding an instance from a storyboard would create extra views at the left end of the screen. If you worked around this issue on Xcode 11.0 or 11.1 by creating a subclass of [`UITabBarController`](https://developer.apple.com/documentation/uikit/uitabbarcontroller) and hiding extra views in the initializer you can remove the workaround. (55310448)
 - Fixed a crash that occurred in iOS/tvOS projects when reselecting the currently selected color in a user-defined runtime attribute. (55464140)
 - The host system’s appearance no longer affects which fallback color is archived for an adaptive asset catalog color. (55570108)
 
@@ -51,7 +51,7 @@ Xcode 11.2 includes SDKs for iOS 13.2, macOS Catalina 10.15, watchOS 6.1, and tv
 - Functions tagged with `@ViewBuilder` now preview correctly in Xcode Previews. (54433866)
 - Xcode Previews now correctly support structs, functions, and other types marked with `@available`. (54568910)
 - Fixed an issue where some SwiftUI tutorials failed to build or preview with Xcode Previews. (54732993)
-- Fixed a crash in the SwiftUI inspectors when inspecting some [`Color`](https://developer.apple.com/documentation/SwiftUI/Color) types. (55129285)
+- Fixed a crash in the SwiftUI inspectors when inspecting some [`Color`](https://developer.apple.com/documentation/swiftui/color) types. (55129285)
 
 ##### Simulator
 
@@ -59,7 +59,7 @@ Xcode 11.2 includes SDKs for iOS 13.2, macOS Catalina 10.15, watchOS 6.1, and tv
 
 - simctl video recording now produces smaller video files, supports HEIC compression, and takes advantage of hardware encoding support where available. In addition, the ability to record video on iOS 13, tvOS 13, and watchOS 6 devices has been restored. (50625716, 54409532, 55207068). > **Note**: The flags and arguments supported by simctl video recording have changed. See `xcrun simctl help io` for more information.
 - Simulator now has a menu item and keyboard shortcut to bring up the app switcher in iOS simulators. (54793361)
-- In [`AVAssetExportSession`](https://developer.apple.com/documentation/AVFoundation/AVAssetExportSession), the [`allExportPresets()`](https://developer.apple.com/documentation/AVFoundation/AVAssetExportSession/allExportPresets()) type method now returns presets in iPhone 11, iPhone 11 Pro, and iPhone 11 Pro Max simulators. (55659811)
+- In [`AVAssetExportSession`](https://developer.apple.com/documentation/avfoundation/avassetexportsession), the [`allExportPresets()`](https://developer.apple.com/documentation/avfoundation/avassetexportsession/allexportpresets()) type method now returns presets in iPhone 11, iPhone 11 Pro, and iPhone 11 Pro Max simulators. (55659811)
 - `xcrun simctl list --json` now includes more information about devices and runtimes, including the device type used by each device. (55671833)
 
 ###### Known Issues
@@ -87,7 +87,7 @@ Xcode 11.2 includes SDKs for iOS 13.2, macOS Catalina 10.15, watchOS 6.1, and tv
 
 ###### Resolved Issues
 
-- The enum `NEHotspotConfigurationError` in the [`Network Extension`](https://developer.apple.com/documentation/NetworkExtension) framework changed back to `NS_ENUM` (from `NS_ERROR_ENUM`), as it was before Xcode 11.0. (54134493)
+- The enum `NEHotspotConfigurationError` in the [`Network Extension`](https://developer.apple.com/documentation/networkextension) framework changed back to `NS_ENUM` (from `NS_ERROR_ENUM`), as it was before Xcode 11.0. (54134493)
 - Fixed a runtime crash that would occur when running watch apps statically linked with Swift libraries. (55082864)
 
 ##### Swift Packages

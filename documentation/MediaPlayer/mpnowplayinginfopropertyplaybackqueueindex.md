@@ -22,7 +22,7 @@ let MPNowPlayingInfoPropertyPlaybackQueueIndex: String
 
 #### Discussion
 
-Value is an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) object configured as an [`NSUInteger`](https://developer.apple.com/documentation/ObjectiveC/NSUInteger). The playback queue uses zero-based indexing. For example, to display first item in the queue as “item 1 of 10,” set the item’s index to `0`.
+Value is an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) object configured as an [`NSUInteger`](https://developer.apple.com/documentation/objectivec/nsuinteger). The playback queue uses zero-based indexing. For example, to display first item in the queue as “item 1 of 10,” set the item’s index to `0`.
 
 ## See Also
 

@@ -14,7 +14,7 @@ Instead of trying to account for all these variations yourself, use the formatte
 
 To convert a date or number into a localizable string, use the Foundation formatters and styles. These APIs take instances of your date and number objects, and convert them into localizable formatted strings according to the locale of the device your app is running on.
 
-For example, to create a localizable string from a date object, create an instance of the [`Date`](https://developer.apple.com/documentation/Foundation/Date) you want to format and then call the [`formatted()`](https://developer.apple.com/documentation/Foundation/Date/formatted()) function on the date.
+For example, to create a localizable string from a date object, create an instance of the [`Date`](https://developer.apple.com/documentation/foundation/date) you want to format and then call the [`formatted()`](https://developer.apple.com/documentation/foundation/date/formatted()) function on the date.
 
 ```swift
 // The current time and date. Example output is for en_US locale.en_US locale.
@@ -25,7 +25,7 @@ let defaultFormatted = date.formatted()
 // "8/25/2023, 12:03 PM"
 ```
 
-To vary the date components that display, or display only the time or the date, use the [`formatted(date:time:)`](https://developer.apple.com/documentation/Foundation/Date/formatted(date:time:)) method on the `Date` object passing in instances of [`Date.FormatStyle.DateStyle`](https://developer.apple.com/documentation/Foundation/Date/FormatStyle/DateStyle) and [`Date.FormatStyle.TimeStyle`](https://developer.apple.com/documentation/Foundation/Date/FormatStyle/TimeStyle).
+To vary the date components that display, or display only the time or the date, use the [`formatted(date:time:)`](https://developer.apple.com/documentation/foundation/date/formatted(date:time:)) method on the `Date` object passing in instances of [`Date.FormatStyle.DateStyle`](https://developer.apple.com/documentation/foundation/date/formatstyle/datestyle) and [`Date.FormatStyle.TimeStyle`](https://developer.apple.com/documentation/foundation/date/formatstyle/timestyle).
 
 ```swift
 // The date you want to format.
@@ -51,8 +51,8 @@ To format a date to a specific style, create your own custom date style includin
 For example, to create a date that includes only the month, day, and year:
 
 1. Create an instance of the `Date` object you want to format.
-2. Create a [`Date.FormatStyle`](https://developer.apple.com/documentation/Foundation/Date/FormatStyle) structure or use the [`dateTime`](https://developer.apple.com/documentation/Foundation/FormatStyle/dateTime) factory variable, and chain together the properties you want to display in successive function calls.
-3. Then pass that `Date.FormatStyle` structure as an input into the the [`formatted(_:)`](https://developer.apple.com/documentation/Foundation/Date/formatted(_:)) function on the date object.
+2. Create a [`Date.FormatStyle`](https://developer.apple.com/documentation/foundation/date/formatstyle) structure or use the [`dateTime`](https://developer.apple.com/documentation/foundation/formatstyle/datetime) factory variable, and chain together the properties you want to display in successive function calls.
+3. Then pass that `Date.FormatStyle` structure as an input into the the [`formatted(_:)`](https://developer.apple.com/documentation/foundation/date/formatted(_:)) function on the date object.
 
 ```swift
 // A date string with specific attributes.
@@ -79,7 +79,7 @@ Date.now.formatted(.dateTime.second().minute().hour().day().month().year())
 // "Sep 7, 2023 at 10:29:52 AM"
 ```
 
-Customize the date styles you want to display by chaining together instances of [`Date.FormatStyle.Symbol`](https://developer.apple.com/documentation/Foundation/Date/FormatStyle/Symbol) structures along with their respective formatting properties.
+Customize the date styles you want to display by chaining together instances of [`Date.FormatStyle.Symbol`](https://developer.apple.com/documentation/foundation/date/formatstyle/symbol) structures along with their respective formatting properties.
 
 ```swift
 // A date string for a wide month format.
@@ -101,9 +101,9 @@ let fileNameFormat = date.formatted(.iso8601.year().month().day().dateSeparator(
 
 ##### Format Percents and Scientific Numbers
 
-If you want to create a localizable string for a number (such as [`Int`](https://developer.apple.com/documentation/Swift/Int), [`Double`](https://developer.apple.com/documentation/Swift/Double), [`Decimal`](https://developer.apple.com/documentation/Foundation/Decimal), or [`Float`](https://developer.apple.com/documentation/Swift/Float)), call `formatted()` or `formatted(_:)` on the number instance, along with the format style to display.
+If you want to create a localizable string for a number (such as [`Int`](https://developer.apple.com/documentation/swift/int), [`Double`](https://developer.apple.com/documentation/swift/double), [`Decimal`](https://developer.apple.com/documentation/foundation/decimal), or [`Float`](https://developer.apple.com/documentation/swift/float)), call `formatted()` or `formatted(_:)` on the number instance, along with the format style to display.
 
-For example, to create a formatted version of an `Int`, call the [`formatted()`](https://developer.apple.com/documentation/Swift/BinaryInteger/formatted()) function on the number.
+For example, to create a formatted version of an `Int`, call the [`formatted()`](https://developer.apple.com/documentation/swift/binaryinteger/formatted()) function on the number.
 
 ```swift
 let value = 12345
@@ -112,7 +112,7 @@ var formatted = value.formatted()
 // "12,345"
 ```
 
-To format the number as a percent, call `formatted(_ format:)` on the number you want to display with the [`NumberFormatter.Style.percent`](https://developer.apple.com/documentation/Foundation/NumberFormatter/Style/percent) number format style. Integers convert directly into percentages using the whole number.
+To format the number as a percent, call `formatted(_ format:)` on the number you want to display with the [`NumberFormatter.Style.percent`](https://developer.apple.com/documentation/foundation/numberformatter/style/percent) number format style. Integers convert directly into percentages using the whole number.
 
 ```swift
 let number = 25
@@ -128,7 +128,7 @@ let fractionFormatted = fraction.formatted(.percent)
 // "25%"
 ```
 
-To display a number using scientific notation, call [`formatted(_:)`](https://developer.apple.com/documentation/Swift/Sequence/formatted(_:)) on the number to display using the [`scientific`](https://developer.apple.com/documentation/Foundation/NumberFormatStyleConfiguration/Notation/scientific), [`notation(_:)`](https://developer.apple.com/documentation/Foundation/FloatingPointFormatStyle/notation(_:)), and [`number`](https://developer.apple.com/documentation/Foundation/FormatStyle/number-3luf2) format styles.
+To display a number using scientific notation, call [`formatted(_:)`](https://developer.apple.com/documentation/swift/sequence/formatted(_:)) on the number to display using the [`scientific`](https://developer.apple.com/documentation/foundation/numberformatstyleconfiguration/notation/scientific), [`notation(_:)`](https://developer.apple.com/documentation/foundation/floatingpointformatstyle/notation(_:)), and [`number`](https://developer.apple.com/documentation/foundation/formatstyle/number-3luf2) format styles.
 
 ```swift
 let scientific = 42e9
@@ -141,8 +141,8 @@ let scientificFormatted = scientific.formatted(.number.notation(.scientific))
 To present a number as a localizable currency:
 
 1. Look up the [`code`](https://developer.apple.comhttps://en.wikipedia.org/wiki/ISO_4217) of the currency you want to display (such as `"CAD"` for Canada).
-2. Pass that code as a parameter to the [`Decimal.FormatStyle.Currency`](https://developer.apple.com/documentation/Foundation/Decimal/FormatStyle/Currency) format style initializer [`init(code:locale:)`](https://developer.apple.com/documentation/Foundation/Decimal/FormatStyle/Currency/init(code:locale:)).
-3. Then call [`formatted(_:)`](https://developer.apple.com/documentation/Foundation/Decimal/formatted(_:)) on the number passing in the currency format instance.
+2. Pass that code as a parameter to the [`Decimal.FormatStyle.Currency`](https://developer.apple.com/documentation/foundation/decimal/formatstyle/currency) format style initializer [`init(code:locale:)`](https://developer.apple.com/documentation/foundation/decimal/formatstyle/currency/init(code:locale:)).
+3. Then call [`formatted(_:)`](https://developer.apple.com/documentation/foundation/decimal/formatted(_:)) on the number passing in the currency format instance.
 
 ```swift
 // A number formatted in different currencies.
@@ -155,15 +155,15 @@ amount.formatted(.currency(code: "USD").grouping(.automatic))
 // "$12,345.67"
 ```
 
-> **Note**: To ensure accuracy, don’t use [`Float`](https://developer.apple.com/documentation/Swift/Float) or [`Double`](https://developer.apple.com/documentation/Swift/Double) to represent currency in your app. Use [`Decimal`](https://developer.apple.com/documentation/Foundation/Decimal) instead.
+> **Note**: To ensure accuracy, don’t use [`Float`](https://developer.apple.com/documentation/swift/float) or [`Double`](https://developer.apple.com/documentation/swift/double) to represent currency in your app. Use [`Decimal`](https://developer.apple.com/documentation/foundation/decimal) instead.
 
 ##### Format Times As Intervals or Durations
 
 To display an interval of time as a localizable string:
 
-1. Create two instances of the [`Date`](https://developer.apple.com/documentation/Foundation/Date) object — one representing the start of the time interval and the other the end.
-2. Using these two dates, create a [`Range`](https://developer.apple.com/documentation/Swift/Range) structure setting the upper and lower bounds of the interval.
-3. Then call one of the range formatters — such as [`formatted()`](https://developer.apple.com/documentation/Swift/Range/formatted()) or [`formatted(date:time:)`](https://developer.apple.com/documentation/Swift/Range/formatted(date:time:)) — passing in the time and date styles you want to display.
+1. Create two instances of the [`Date`](https://developer.apple.com/documentation/foundation/date) object — one representing the start of the time interval and the other the end.
+2. Using these two dates, create a [`Range`](https://developer.apple.com/documentation/swift/range) structure setting the upper and lower bounds of the interval.
+3. Then call one of the range formatters — such as [`formatted()`](https://developer.apple.com/documentation/swift/range/formatted()) or [`formatted(date:time:)`](https://developer.apple.com/documentation/swift/range/formatted(date:time:)) — passing in the time and date styles you want to display.
 
 ```swift
 // An example of a time interval.
@@ -199,12 +199,12 @@ let relative = later.formatted(.relative(presentation: .named, unitsStyle: .wide
 // "in 1 hour"
 ```
 
-You can also use factory methods like [`seconds(_:)`](https://developer.apple.com/documentation/Swift/Duration/seconds(_:)-5ifzr) on the [`Duration`](https://developer.apple.com/documentation/Swift/Duration) structure to produce localizable durations from a single number.
+You can also use factory methods like [`seconds(_:)`](https://developer.apple.com/documentation/swift/duration/seconds(_:)-5ifzr) on the [`Duration`](https://developer.apple.com/documentation/swift/duration) structure to produce localizable durations from a single number.
 
 For example, to display a given number of seconds as a duration of time:
 
-1. Pass in the number of seconds you want to display to the [`seconds(_:)`](https://developer.apple.com/documentation/Swift/Duration/seconds(_:)-5ifzr) function of the [`Duration`](https://developer.apple.com/documentation/Swift/Duration) structure.
-2. Then call [`formatted(_:)`](https://developer.apple.com/documentation/Swift/Duration/formatted(_:)), passing in instances of [`Duration.TimeFormatStyle`](https://developer.apple.com/documentation/Swift/Duration/TimeFormatStyle) or [`Duration.UnitsFormatStyle`](https://developer.apple.com/documentation/Swift/Duration/UnitsFormatStyle) to achieve the format and style you want.
+1. Pass in the number of seconds you want to display to the [`seconds(_:)`](https://developer.apple.com/documentation/swift/duration/seconds(_:)-5ifzr) function of the [`Duration`](https://developer.apple.com/documentation/swift/duration) structure.
+2. Then call [`formatted(_:)`](https://developer.apple.com/documentation/swift/duration/formatted(_:)), passing in instances of [`Duration.TimeFormatStyle`](https://developer.apple.com/documentation/swift/duration/timeformatstyle) or [`Duration.UnitsFormatStyle`](https://developer.apple.com/documentation/swift/duration/unitsformatstyle) to achieve the format and style you want.
 
 ```swift
 // Duration formatted from a single unit of time.
@@ -218,7 +218,7 @@ Duration.seconds(2000).formatted(.time(pattern: .minuteSecond))
 
 ##### Format Items As Lists
 
-To create a localizable string in the form of a list, use the [`ListFormatStyle`](https://developer.apple.com/documentation/Foundation/ListFormatStyle) structure along with either the [`formatted()`](https://developer.apple.com/documentation/Swift/Sequence/formatted()) or [`formatted(_:)`](https://developer.apple.com/documentation/Swift/Sequence/formatted(_:)) function to create a string representation of a [`Sequence`](https://developer.apple.com/documentation/Swift/Sequence) of items.
+To create a localizable string in the form of a list, use the [`ListFormatStyle`](https://developer.apple.com/documentation/foundation/listformatstyle) structure along with either the [`formatted()`](https://developer.apple.com/documentation/swift/sequence/formatted()) or [`formatted(_:)`](https://developer.apple.com/documentation/swift/sequence/formatted(_:)) function to create a string representation of a [`Sequence`](https://developer.apple.com/documentation/swift/sequence) of items.
 
 ```swift
 // An array of strings formatted into a list.
@@ -231,7 +231,7 @@ sizes.formatted(.list(type: .and, width: .short))
 // "small, medium, & large"
 ```
 
-You can also create lists using different formatting styles by calling the [`list(memberStyle:type:width:)`](https://developer.apple.com/documentation/Foundation/FormatStyle/list(memberStyle:type:width:)) function along with specific list format styles.
+You can also create lists using different formatting styles by calling the [`list(memberStyle:type:width:)`](https://developer.apple.com/documentation/foundation/formatstyle/list(memberstyle:type:width:)) function along with specific list format styles.
 
 ```swift
 // A list of numbers formatted as percentages.
@@ -245,8 +245,8 @@ Units of measure vary significantly depending on the locale the format style use
 
 To ensure your units of measure convert and display properly across different languages and regions:
 
-1. Use the [`Measurement`](https://developer.apple.com/documentation/Foundation/Measurement) structure to define a variable representing the unit of measure you want to display.
-2. Then call [`formatted(_:)`](https://developer.apple.com/documentation/Foundation/Measurement/formatted(_:)) or [`formatted(_:)`](https://developer.apple.com/documentation/Foundation/Measurement/formatted(_:)) on the variable to get the display style you want.
+1. Use the [`Measurement`](https://developer.apple.com/documentation/foundation/measurement) structure to define a variable representing the unit of measure you want to display.
+2. Then call [`formatted(_:)`](https://developer.apple.com/documentation/foundation/measurement/formatted(_:)) or [`formatted(_:)`](https://developer.apple.com/documentation/foundation/measurement/formatted(_:)) on the variable to get the display style you want.
 
 For example, say you want to convert and display the following measurements.
 
@@ -258,7 +258,7 @@ let surfBoardLength = Measurement(value: 8, unit: UnitLength.feet)
 let waterTemperature = Measurement(value: 61.2, unit: UnitTemperature.fahrenheit)
 ```
 
-To convert them using the default format, call [`formatted(_:)`](https://developer.apple.com/documentation/Foundation/Measurement/formatted(_:)) on the measurement object.
+To convert them using the default format, call [`formatted(_:)`](https://developer.apple.com/documentation/foundation/measurement/formatted(_:)) on the measurement object.
 
 ```swift
 // Example output is for en_US locale.
@@ -274,7 +274,7 @@ waterTemperature.formatted()
 // "61.2°F"
 ```
 
-To customize the output, call the [`formatted(_:)`](https://developer.apple.com/documentation/Foundation/Measurement/formatted(_:)) function on the measurement using the [`measurement(width:usage:hidesScaleName:numberFormatStyle:)`](https://developer.apple.com/documentation/Foundation/FormatStyle/measurement(width:usage:hidesScaleName:numberFormatStyle:)) factory method to create the format and style you want.
+To customize the output, call the [`formatted(_:)`](https://developer.apple.com/documentation/foundation/measurement/formatted(_:)) function on the measurement using the [`measurement(width:usage:hidesScaleName:numberFormatStyle:)`](https://developer.apple.com/documentation/foundation/formatstyle/measurement(width:usage:hidesscalename:numberformatstyle:)) factory method to create the format and style you want.
 
 ```swift
 // Custom display options for a unit of measure.
@@ -290,7 +290,7 @@ distanceToMoon.formatted(.measurement(width: .narrow))
 
 To format dates and numbers in SwiftUI, use the `format` initializers on SwiftUI view controls to customize how those strings display.
 
-For example, here is a SwiftUI view that displays three different localizable formats of `Date` using the [`init(_:format:)`](https://developer.apple.com/documentation/SwiftUI/Text/init(_:format:)) initializer from the [`Text`](https://developer.apple.com/documentation/SwiftUI/Text) view.
+For example, here is a SwiftUI view that displays three different localizable formats of `Date` using the [`init(_:format:)`](https://developer.apple.com/documentation/swiftui/text/init(_:format:)) initializer from the [`Text`](https://developer.apple.com/documentation/swiftui/text) view.
 
 ```swift
 @State private var myDate = Date.now
@@ -304,7 +304,7 @@ var body: some View {
 }
 ```
 
-This example uses the [`init(_:value:format:prompt:)`](https://developer.apple.com/documentation/SwiftUI/TextField/init(_:value:format:prompt:)-7flsn) initializer of the [`TextField`](https://developer.apple.com/documentation/SwiftUI/TextField) view to present a number as a percentage for a tip.
+This example uses the [`init(_:value:format:prompt:)`](https://developer.apple.com/documentation/swiftui/textfield/init(_:value:format:prompt:)-7flsn) initializer of the [`TextField`](https://developer.apple.com/documentation/swiftui/textfield) view to present a number as a percentage for a tip.
 
 ```swift
 @State private var tip = 0.15
@@ -320,7 +320,7 @@ var body: some View {
 
 #### Test the Formatters
 
-To test and see how your formatters display in different languages and regions, create an instance of a [`Locale`](https://developer.apple.com/documentation/Foundation/Locale) object, passing in the `identifier` of the region you want to test. Then set that locale on the output of your formatted string to see how that string displays in that language and region.
+To test and see how your formatters display in different languages and regions, create an instance of a [`Locale`](https://developer.apple.com/documentation/foundation/locale) object, passing in the `identifier` of the region you want to test. Then set that locale on the output of your formatted string to see how that string displays in that language and region.
 
 For example, you can see how your localizable strings display in French as follows.
 

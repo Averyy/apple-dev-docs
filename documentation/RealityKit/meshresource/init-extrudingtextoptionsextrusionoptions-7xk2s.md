@@ -26,7 +26,7 @@ You can use the method to make a 3D mesh of a string, control the text’s layou
 
 The generated text is scaled at a ratio of 72 points per meter.
 
-![A screenshot of a living room scene with 3D text in the center that reads “Hello, World!”, which is primarily a teal color with chamfered, gray edges around the text’s faces that face the camera.](https://docs-assets.developer.apple.com/published/d965f02496a66cf068f71bd65a5243f5/meshResource-generateText-extrusion.jpg)
+![A screenshot of a living room scene with 3D text in the center that reads “Hello, World!”, which is primarily a teal color with chamfered, gray edges around the text’s faces that face the camera.](/images/com.apple.RealityKit/meshResource-generateText-extrusion.jpg)
 
 ## Parameters
 

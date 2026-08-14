@@ -71,11 +71,11 @@ let _ = content.subscribe(to: CollisionEvents.Began.self) { event in
 
 You can add [`SceneUnderstandingComponent`](sceneunderstandingcomponent.md) to your custom entities to make them behave as virtual scene-understanding meshes. A virtual scene-understanding mesh participates in system rendering features, such as shadows and depth mitigation, just like real-world geometry.
 
-Custom virtual scene-understanding meshes only work in [`progressive`](https://developer.apple.com/documentation/SwiftUI/ImmersionStyle/progressive) or [`full`](https://developer.apple.com/documentation/SwiftUI/ImmersionStyle/full) immersive space. They don’t work in [`mixed`](https://developer.apple.com/documentation/SwiftUI/ImmersionStyle/mixed) space, or in a window or volume in the Shared Space.
+Custom virtual scene-understanding meshes only work in [`progressive`](https://developer.apple.com/documentation/swiftui/immersionstyle/progressive) or [`full`](https://developer.apple.com/documentation/swiftui/immersionstyle/full) immersive space. They don’t work in [`mixed`](https://developer.apple.com/documentation/swiftui/immersionstyle/mixed) space, or in a window or volume in the Shared Space.
 
 ##### Use Scene Reconstruction in Visionos
 
-To enable scene reconstruction for a visionOS app, use a [`SceneReconstructionProvider`](https://developer.apple.com/documentation/ARKit/SceneReconstructionProvider).
+To enable scene reconstruction for a visionOS app, use a [`SceneReconstructionProvider`](https://developer.apple.com/documentation/arkit/scenereconstructionprovider).
 
 ```swift
 let arSession = ARKitSession()
@@ -94,11 +94,11 @@ Task {
 
 - [Creating a game with scene understanding](creating-a-game-with-scene-understanding.md)
   Create AR games and experiences that interact with real-world objects on LiDAR-equipped iOS devices.
-- [Visualizing and interacting with a reconstructed scene](../ARKit/visualizing-and-interacting-with-a-reconstructed-scene.md)
+- [Visualizing and interacting with a reconstructed scene](../arkit/visualizing-and-interacting-with-a-reconstructed-scene.md)
   Estimate the shape of the physical environment using a polygonal mesh.
-- [var sceneReconstruction: ARConfiguration.SceneReconstruction](../ARKit/ARWorldTrackingConfiguration/sceneReconstruction.md)
+- [var sceneReconstruction: ARConfiguration.SceneReconstruction](../arkit/arworldtrackingconfiguration/scenereconstruction.md)
   A flag that enables scene reconstruction.
-- [class func supportsSceneReconstruction(ARConfiguration.SceneReconstruction) -> Bool](../ARKit/ARWorldTrackingConfiguration/supportsSceneReconstruction(_:).md)
+- [class func supportsSceneReconstruction(ARConfiguration.SceneReconstruction) -> Bool](../arkit/arworldtrackingconfiguration/supportsscenereconstruction(_:).md)
   Checks if the device supports scene reconstruction.
 - [struct SceneUnderstandingComponent](sceneunderstandingcomponent.md)
   A component that specifies an entity is participating in the system’s scene-understanding features.
@@ -108,9 +108,9 @@ Task {
   Available scene-understanding options.
 - [protocol HasSceneUnderstanding](hassceneunderstanding.md)
   A specification that detects and reacts to features of the physical environment.
-- [class SceneReconstructionProvider](../ARKit/SceneReconstructionProvider.md)
+- [class SceneReconstructionProvider](../arkit/scenereconstructionprovider.md)
   A source of live data about the shape of a person’s surroundings.
-- [class ARSession](../ARKit/ARSession.md)
+- [class ARSession](../arkit/arsession.md)
   The object that manages the major tasks associated with every AR experience, such as motion tracking, camera passthrough, and image analysis.
 
 

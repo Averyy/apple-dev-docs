@@ -31,7 +31,7 @@ protocol GCAxisElement : GCPhysicalInputElement
 
 ### Inherits From
 - [GCPhysicalInputElement](gcphysicalinputelement.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 ### Conforming Types
 - [GCSteeringWheelElement](gcsteeringwheelelement.md)
 

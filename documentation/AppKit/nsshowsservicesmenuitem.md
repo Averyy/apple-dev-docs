@@ -16,7 +16,7 @@ func NSShowsServicesMenuItem(_ itemName: String) -> Bool
 
 #### Discussion
 
-Deprecated. This function simply returns [`true`](https://developer.apple.com/documentation/Swift/true).
+Deprecated. This function simply returns [`true`](https://developer.apple.com/documentation/swift/true).
 
 ## See Also
 

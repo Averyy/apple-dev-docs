@@ -25,7 +25,7 @@ A new data column if the underlying type of the column is the same as `type`; ot
 
 #### Discussion
 
-Use this method to create a typed copy of the column. For example, to create a data column of integers from an untyped column of integers, use [`column(type:)`](mluntypedcolumn/column(type:).md) with [`Int`](https://developer.apple.com/documentation/Swift/Int)`.self` as the argument for the `type` parameter.
+Use this method to create a typed copy of the column. For example, to create a data column of integers from an untyped column of integers, use [`column(type:)`](mluntypedcolumn/column(type:).md) with [`Int`](https://developer.apple.com/documentation/swift/int)`.self` as the argument for the `type` parameter.
 
 ## Parameters
 

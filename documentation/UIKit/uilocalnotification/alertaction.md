@@ -19,7 +19,7 @@ var alertAction: String? { get set }
 
 #### Discussion
 
-Assign a string or, preferably, a localized-string key (using [`NSLocalizedString`](https://developer.apple.com/documentation/Foundation/NSLocalizedString)) as the value. The alert action is the title of the right button of the alert or the value of the unlock slider, where the value replaces “unlock” in “slide to unlock”. If you specify `nil`, and [`alertBody`](uilocalnotification/alertbody.md) is non-`nil`, “View” (localized to the preferred language) is used as the default value.
+Assign a string or, preferably, a localized-string key (using [`NSLocalizedString`](https://developer.apple.com/documentation/foundation/nslocalizedstring)) as the value. The alert action is the title of the right button of the alert or the value of the unlock slider, where the value replaces “unlock” in “slide to unlock”. If you specify `nil`, and [`alertBody`](uilocalnotification/alertbody.md) is non-`nil`, “View” (localized to the preferred language) is used as the default value.
 
 ## See Also
 

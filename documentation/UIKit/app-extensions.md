@@ -7,12 +7,12 @@ Extend your app’s basic functionality to other parts of the system.
 ## Topics
 
 ### Extension support
-- [protocol NSExtensionRequestHandling](../Foundation/NSExtensionRequestHandling.md)
+- [protocol NSExtensionRequestHandling](../foundation/nsextensionrequesthandling.md)
   The interface an app extension uses to respond to a request from a host app.
-- [class NSExtensionContext](../Foundation/NSExtensionContext.md)
+- [class NSExtensionContext](../foundation/nsextensioncontext.md)
   The host app context from which an app extension is invoked.
 ### Document provider
-- [class NSFileProviderExtension](../FileProvider/NSFileProviderExtension.md)
+- [class NSFileProviderExtension](../fileprovider/nsfileproviderextension.md)
   The principal class for the nonreplicated File Provider extension.
 - [class UIDocumentPickerExtensionViewController](uidocumentpickerextensionviewcontroller.md)
   The principal class for the Document Picker View Controller extension.

@@ -19,7 +19,7 @@ An entitlement that lets your app use Sign in with Apple.
 
 #### Discussion
 
-To add this entitlement to your app with the correct associated value, enable the Sign in with Apple capability in Xcode. For information about letting users log into your apps and services with their Apple ID, see [`ASAuthorizationAppleIDProvider`](https://developer.apple.com/documentation/AuthenticationServices/ASAuthorizationAppleIDProvider).
+To add this entitlement to your app with the correct associated value, enable the Sign in with Apple capability in Xcode. For information about letting users log into your apps and services with their Apple ID, see [`ASAuthorizationAppleIDProvider`](https://developer.apple.com/documentation/authenticationservices/asauthorizationappleidprovider).
 
 ## See Also
 

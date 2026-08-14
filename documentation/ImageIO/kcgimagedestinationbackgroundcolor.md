@@ -22,7 +22,7 @@ let kCGImageDestinationBackgroundColor: CFString
 
 #### Discussion
 
-If present, the value associated with this key must be a [`CGColor`](https://developer.apple.com/documentation/CoreGraphics/CGColor) data type without an alpha component of its own. If not present, and if a background color is needed, a white color is used.
+If present, the value associated with this key must be a [`CGColor`](https://developer.apple.com/documentation/coregraphics/cgcolor) data type without an alpha component of its own. If not present, and if a background color is needed, a white color is used.
 
 ## See Also
 

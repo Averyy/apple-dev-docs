@@ -40,7 +40,7 @@ Return instances from [`textViewportLayoutController(_:configureRenderingSurface
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

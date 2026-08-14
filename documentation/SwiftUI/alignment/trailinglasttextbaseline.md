@@ -25,7 +25,7 @@ static var trailingLastTextBaseline: Alignment { get }
 
 This alignment combines the [`trailing`](horizontalalignment/trailing.md) horizontal guide and the [`lastTextBaseline`](verticalalignment/lasttextbaseline.md) vertical guide:
 
-![A square that’s divided into four equal quadrants. The upper-](https://docs-assets.developer.apple.com/published/d709d026a90c8c6cdbc7786af2a49fd3/Alignment-trailingLastTextBaseline-1-iOS%402x.png)
+![A square that’s divided into four equal quadrants. The upper-](/images/com.apple.SwiftUI/Alignment-trailingLastTextBaseline-1-iOS@2x.png)
 
 ## See Also
 

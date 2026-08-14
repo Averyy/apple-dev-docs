@@ -32,8 +32,8 @@ struct UniqueAppEntityProvider<Entity> where Entity : UniqueAppEntity
 - [EntityQuery](entityquery.md)
 - [EnumerableEntityQuery](enumerableentityquery.md)
 - [PersistentlyIdentifiable](persistentlyidentifiable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 - [UniqueAppEntityQuery](uniqueappentityquery.md)
 
 ## See Also

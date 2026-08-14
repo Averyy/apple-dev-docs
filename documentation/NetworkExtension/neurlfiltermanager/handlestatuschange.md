@@ -19,7 +19,7 @@ func handleStatusChange() -> any AsyncSequence<NEURLFilterManager.Status, Never>
 
 #### Discussion
 
-The [`AsyncSequence`](https://developer.apple.com/documentation/Swift/AsyncSequence) created by this method produces a new status every time the filter posts the [`NEURLFilterStatusDidChange`](https://developer.apple.com/documentation/Foundation/NSNotification/Name-swift.struct/NEURLFilterStatusDidChange) notification.
+The [`AsyncSequence`](https://developer.apple.com/documentation/swift/asyncsequence) created by this method produces a new status every time the filter posts the [`NEURLFilterStatusDidChange`](https://developer.apple.com/documentation/foundation/nsnotification/name-swift.struct/neurlfilterstatusdidchange) notification.
 
 Use this method to watch for the status change notification and react to it.
 

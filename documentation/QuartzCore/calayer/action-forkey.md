@@ -32,13 +32,13 @@ This method searches for the layer’s associated actions in the following order
 1. If the layer has a delegate that implements the [`action(for:forKey:)`](calayerdelegate/action(for:forkey:).md) method, the layer calls that method. The delegate must do one of the following:
 
 - Return the action object for the given key.
-- Return the [`NSNull`](https://developer.apple.com/documentation/Foundation/NSNull) object if it does not handle the action.
+- Return the [`NSNull`](https://developer.apple.com/documentation/foundation/nsnull) object if it does not handle the action.
 
 1. The layer looks in the layer’s [`actions`](calayer/actions.md) dictionary for a matching key/action pair.
 2. The layer looks in the [`style`](calayer/style.md) dictionary for an [`actions`](calayer/actions.md) dictionary  for a matching key/action pair.
 3. The layer calls the [`defaultAction(forKey:)`](calayer/defaultaction(forkey:).md) class method to look for any class-defined actions.
 
-If any of the above steps returns an instance of [`NSNull`](https://developer.apple.com/documentation/Foundation/NSNull), it is converted to `nil` before continuing.
+If any of the above steps returns an instance of [`NSNull`](https://developer.apple.com/documentation/foundation/nsnull), it is converted to `nil` before continuing.
 
 When an action object is invoked it receives three parameters: the name of the event, the object on which the event happened (the layer), and a dictionary of named arguments specific to each event kind.
 

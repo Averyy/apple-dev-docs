@@ -36,7 +36,7 @@ For more information, see [`GameplayKit Programming Guide`](https://developer.ap
 - `position`: The lowest x- and y-coordinates to appear in the grid.
 - `width`: The number of possible x-coordinates in the grid.
 - `height`: The number of possible y-coordinates in the grid.
-- `diagonalsAllowed`: [`true`](https://developer.apple.com/documentation/Swift/true) to connect nodes in the grid to their diagonal neighbors; [`false`](https://developer.apple.com/documentation/Swift/false) to connect nodes only to their horizontal and vertical neighbors.
+- `diagonalsAllowed`: [`true`](https://developer.apple.com/documentation/swift/true) to connect nodes in the grid to their diagonal neighbors; [`false`](https://developer.apple.com/documentation/swift/false) to connect nodes only to their horizontal and vertical neighbors.
 - `nodeClass`: The [`GKGridGraphNode`](gkgridgraphnode.md) subclass to use for nodes in the graph.
 
 ## See Also

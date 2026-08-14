@@ -25,7 +25,7 @@ enum Orientation
 
 Many image formats such as JPEG include orientation metadata in the image data. In other cases, you can specify image orientation in code. Properly specifying orientation is often important both for displaying the image and for certain kinds of image processing.
 
-In SwiftUI, you provide an orientation value when initializing an [`Image`](image.md) from an existing [`CGImage`](https://developer.apple.com/documentation/CoreGraphics/CGImage).
+In SwiftUI, you provide an orientation value when initializing an [`Image`](image.md) from an existing [`CGImage`](https://developer.apple.com/documentation/coregraphics/cgimage).
 
 ## Topics
 
@@ -51,15 +51,15 @@ In SwiftUI, you provide an orientation value when initializing an [`Image`](imag
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../Swift/BitwiseCopyable.md)
-- [CaseIterable](../Swift/CaseIterable.md)
-- [Copyable](../Swift/Copyable.md)
-- [Equatable](../Swift/Equatable.md)
-- [Escapable](../Swift/Escapable.md)
-- [Hashable](../Swift/Hashable.md)
-- [RawRepresentable](../Swift/RawRepresentable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [BitwiseCopyable](../swift/bitwisecopyable.md)
+- [CaseIterable](../swift/caseiterable.md)
+- [Copyable](../swift/copyable.md)
+- [Equatable](../swift/equatable.md)
+- [Escapable](../swift/escapable.md)
+- [Hashable](../swift/hashable.md)
+- [RawRepresentable](../swift/rawrepresentable.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

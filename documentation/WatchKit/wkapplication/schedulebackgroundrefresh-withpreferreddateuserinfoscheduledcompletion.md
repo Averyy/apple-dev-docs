@@ -22,7 +22,7 @@ func scheduleBackgroundRefresh(withPreferredDate preferredFireDate: Date, userIn
 
 Call this method to update the contents of your app in the background. Background refresh tasks only trigger when the app is in the background. If the app is still running in the foreground at the scheduled time, the system ignores the task.
 
-When the system triggers the task, it wakes your app in the background and execute your background task handler. The system also calls your active interface controller’s [`willActivate()`](wkinterfacecontroller/willactivate().md) and [`didActivate()`](https://developer.apple.com/documentation/SecurityInterface/SFAuthorizationPluginView/didActivate()) methods. You can check your app’s [`applicationState`](wkapplication/applicationstate.md) during these methods to determine whether your app is running in the foreground or in the background.
+When the system triggers the task, it wakes your app in the background and execute your background task handler. The system also calls your active interface controller’s [`willActivate()`](wkinterfacecontroller/willactivate().md) and [`didActivate()`](https://developer.apple.com/documentation/securityinterface/sfauthorizationpluginview/didactivate()) methods. You can check your app’s [`applicationState`](wkapplication/applicationstate.md) during these methods to determine whether your app is running in the foreground or in the background.
 
 Use this task to update your application’s state. You can only schedule one background app refresh task at a time; scheduling a second task cancels the first. Additionally, the system budgets background app refresh tasks. For more information, see [`WKApplicationRefreshBackgroundTask`](wkapplicationrefreshbackgroundtask.md).
 

@@ -23,7 +23,7 @@ struct CGFloat
 
 #### Overview
 
-The size and precision of this type depend on the CPU architecture. When you build for a 64-bit CPU, the [`CGFloat`](https://developer.apple.comhttps://developer.apple.com/library/archive/releasenotes/Foundation/RN-FoundationOlderNotes/index.html#//apple_ref/doc/uid/TP40008080-TRANSLATED_CHAPTER_965-TRANSLATED_DEST_121) type is a 64-bit, IEEE double-precision floating point type, equivalent to the [`Double`](https://developer.apple.com/documentation/Swift/Double) type. When you build for a 32-bit CPU, the [`CGFloat`](https://developer.apple.comhttps://developer.apple.com/library/archive/releasenotes/Foundation/RN-FoundationOlderNotes/index.html#//apple_ref/doc/uid/TP40008080-TRANSLATED_CHAPTER_965-TRANSLATED_DEST_121) type is a 32-bit, IEEE single-precision floating point type, equivalent to the [`Float`](https://developer.apple.com/documentation/Swift/Float) type.
+The size and precision of this type depend on the CPU architecture. When you build for a 64-bit CPU, the [`CGFloat`](https://developer.apple.comhttps://developer.apple.com/library/archive/releasenotes/Foundation/RN-FoundationOlderNotes/index.html#//apple_ref/doc/uid/TP40008080-TRANSLATED_CHAPTER_965-TRANSLATED_DEST_121) type is a 64-bit, IEEE double-precision floating point type, equivalent to the [`Double`](https://developer.apple.com/documentation/swift/double) type. When you build for a 32-bit CPU, the [`CGFloat`](https://developer.apple.comhttps://developer.apple.com/library/archive/releasenotes/Foundation/RN-FoundationOlderNotes/index.html#//apple_ref/doc/uid/TP40008080-TRANSLATED_CHAPTER_965-TRANSLATED_DEST_121) type is a 32-bit, IEEE single-precision floating point type, equivalent to the [`Float`](https://developer.apple.com/documentation/swift/float) type.
 
 ## Topics
 
@@ -56,30 +56,30 @@ The size and precision of this type depend on the CPU architecture. When you bui
 ## Relationships
 
 ### Conforms To
-- [AdditiveArithmetic](../Swift/AdditiveArithmetic.md)
-- [Animatable](../SwiftUI/Animatable.md)
-- [BinaryFloatingPoint](../Swift/BinaryFloatingPoint.md)
-- [BitwiseCopyable](../Swift/BitwiseCopyable.md)
-- [CVAttachmentValueRepresentable](../CoreVideo/CVAttachmentValueRepresentable.md)
-- [CVarArg](../Swift/CVarArg.md)
-- [Comparable](../Swift/Comparable.md)
-- [Copyable](../Swift/Copyable.md)
-- [CustomReflectable](../Swift/CustomReflectable.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Decodable](../Swift/Decodable.md)
-- [Encodable](../Swift/Encodable.md)
-- [Equatable](../Swift/Equatable.md)
-- [Escapable](../Swift/Escapable.md)
-- [ExpressibleByFloatLiteral](../Swift/ExpressibleByFloatLiteral.md)
-- [ExpressibleByIntegerLiteral](../Swift/ExpressibleByIntegerLiteral.md)
-- [FloatingPoint](../Swift/FloatingPoint.md)
-- [Hashable](../Swift/Hashable.md)
-- [Numeric](../Swift/Numeric.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
-- [SignedNumeric](../Swift/SignedNumeric.md)
-- [Strideable](../Swift/Strideable.md)
-- [VectorArithmetic](../SwiftUI/VectorArithmetic.md)
+- [AdditiveArithmetic](../swift/additivearithmetic.md)
+- [Animatable](../swiftui/animatable.md)
+- [BinaryFloatingPoint](../swift/binaryfloatingpoint.md)
+- [BitwiseCopyable](../swift/bitwisecopyable.md)
+- [CVAttachmentValueRepresentable](../corevideo/cvattachmentvaluerepresentable.md)
+- [CVarArg](../swift/cvararg.md)
+- [Comparable](../swift/comparable.md)
+- [Copyable](../swift/copyable.md)
+- [CustomReflectable](../swift/customreflectable.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Decodable](../swift/decodable.md)
+- [Encodable](../swift/encodable.md)
+- [Equatable](../swift/equatable.md)
+- [Escapable](../swift/escapable.md)
+- [ExpressibleByFloatLiteral](../swift/expressiblebyfloatliteral.md)
+- [ExpressibleByIntegerLiteral](../swift/expressiblebyintegerliteral.md)
+- [FloatingPoint](../swift/floatingpoint.md)
+- [Hashable](../swift/hashable.md)
+- [Numeric](../swift/numeric.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
+- [SignedNumeric](../swift/signednumeric.md)
+- [Strideable](../swift/strideable.md)
+- [VectorArithmetic](../swiftui/vectorarithmetic.md)
 
 ## See Also
 

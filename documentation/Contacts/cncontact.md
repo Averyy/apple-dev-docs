@@ -23,7 +23,7 @@ class CNContact
 
 A `CNContact` object stores an immutable copy of a contact’s information, so you cannot change the information in this object directly. Contact objects are thread-safe, so you may access them from any thread of your app.
 
-To modify a contact’s information, call the [`mutableCopy()`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class/mutableCopy()) method to obtain a [`CNMutableContact`](cnmutablecontact.md) object with the same information. After modifying the mutable contact, save your changes back to the contacts database using the [`CNContactStore`](cncontactstore.md) object.
+To modify a contact’s information, call the [`mutableCopy()`](https://developer.apple.com/documentation/objectivec/nsobject-swift.class/mutablecopy()) method to obtain a [`CNMutableContact`](cnmutablecontact.md) object with the same information. After modifying the mutable contact, save your changes back to the contacts database using the [`CNContactStore`](cncontactstore.md) object.
 
 Every contact in the contacts database has a unique ID, which you access using the [`identifier`](cncontact/identifier.md) property. The mutable and immutable versions of the same contact have the same identifier.
 
@@ -141,25 +141,25 @@ Every contact in the contacts database has a unique ID, which you access using t
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Inherited By
 - [CNMutableContact](cnmutablecontact.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [Copyable](../Swift/Copyable.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Escapable](../Swift/Escapable.md)
-- [Hashable](../Swift/Hashable.md)
-- [Identifiable](../Swift/Identifiable.md)
-- [NSCoding](../Foundation/NSCoding.md)
-- [NSCopying](../Foundation/NSCopying.md)
-- [NSItemProviderReading](../Foundation/NSItemProviderReading.md)
-- [NSItemProviderWriting](../Foundation/NSItemProviderWriting.md)
-- [NSMutableCopying](../Foundation/NSMutableCopying.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [NSSecureCoding](../Foundation/NSSecureCoding.md)
+- [CVarArg](../swift/cvararg.md)
+- [Copyable](../swift/copyable.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Escapable](../swift/escapable.md)
+- [Hashable](../swift/hashable.md)
+- [Identifiable](../swift/identifiable.md)
+- [NSCoding](../foundation/nscoding.md)
+- [NSCopying](../foundation/nscopying.md)
+- [NSItemProviderReading](../foundation/nsitemproviderreading.md)
+- [NSItemProviderWriting](../foundation/nsitemproviderwriting.md)
+- [NSMutableCopying](../foundation/nsmutablecopying.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSSecureCoding](../foundation/nssecurecoding.md)
 
 ## See Also
 

@@ -23,7 +23,7 @@ Test your app with sanitizer tools enabled to catch otherwise difficult to catch
 
 Accessing memory improperly can introduce unexpected issues into your code, and even pose a security threat. The Address Sanitizer tool detects memory-access attempts that don’t belong to an allocated block. To enable this tool, select Address Sanitizer from the Diagnostics section of the appropriate scheme.
 
-![A screenshot of the Scheme Editor with the Address Sanitizer checkbox selected.](https://docs-assets.developer.apple.com/published/dc57cd0c87d0f51db4549a5b2b4ce9ac/diagnosing-memory-thread-and-crash-issues-early-1%402x.png)
+![A screenshot of the Scheme Editor with the Address Sanitizer checkbox selected.](/images/com.apple.Xcode/diagnosing-memory-thread-and-crash-issues-early-1@2x.png)
 
 To enable ASan from the command line, use the following flags:
 
@@ -43,7 +43,7 @@ Race conditions occur when multiple threads access the same memory without prope
 
 To detect race conditions and other thread-related issues, enable the Thread Sanitizer tool from the Diagnostics section of the appropriate build scheme.
 
-![A screenshot of the Scheme Editor with the Thread Sanitizer checkbox selected.](https://docs-assets.developer.apple.com/published/5f4e9baa5ed4045dd526e1ad00f7f4c7/diagnosing-memory-thread-and-crash-issues-early-2%402x.png)
+![A screenshot of the Scheme Editor with the Thread Sanitizer checkbox selected.](/images/com.apple.Xcode/diagnosing-memory-thread-and-crash-issues-early-2@2x.png)
 
 To enable TSan from the command line, use the following flags:
 
@@ -63,7 +63,7 @@ Some system frameworks contain APIs that you must only call from your app’s ma
 
 The Main Thread Checker tool ensures that all calls that must occur on the main thread do so. To enable this tool, select Main Thread Checker from the Diagnostics section of the appropriate scheme.
 
-![A screenshot of the Scheme Editor with the Main Thread Checker checkbox selected.](https://docs-assets.developer.apple.com/published/04880faceb0dc2a0aa2a6a3445a0013f/diagnosing-memory-thread-and-crash-issues-early-3%402x.png)
+![A screenshot of the Scheme Editor with the Main Thread Checker checkbox selected.](/images/com.apple.Xcode/diagnosing-memory-thread-and-crash-issues-early-3@2x.png)
 
 The Main Thread Checker tool dynamically replaces system methods that must execute on the main thread with variants that check the current thread. The tool replaces only system APIs with well-known thread requirements, and doesn’t replace all system APIs. Because the replacements occur in system frameworks, Main Thread Checker doesn’t require you to recompile your app.
 
@@ -97,7 +97,7 @@ Code that results in undefined behavior can lead to crashes or incorrect output.
 
 To enable this tool, select Undefined Behavior Sanitizer from the Diagnostics section of the appropriate scheme.
 
-![A screenshot of the Scheme Editor with the Undefined Behavior Sanitizer checkbox selected.](https://docs-assets.developer.apple.com/published/b962b1adca1dfcad379d29557171cd45/diagnosing-memory-thread-and-crash-issues-early-4%402x.png)
+![A screenshot of the Scheme Editor with the Undefined Behavior Sanitizer checkbox selected.](/images/com.apple.Xcode/diagnosing-memory-thread-and-crash-issues-early-4@2x.png)
 
 To enable UBSan from the command line, add the `-fsanitize=undefined` option in clang or the `enableUndefinedBehaviorSanitizer YES` option in xcodebuild. To enable individual sanitizer checks, use the following options:
 
@@ -193,7 +193,7 @@ The performance impact of Undefined Behavior Sanitizer is minimal. The tool adds
 
 - [Diagnosing issues in the appearance of a running app](diagnosing-issues-in-the-appearance-of-your-running-app.md)
   Inspect your running app to investigate issues in the appearance and placement of the content it displays.
-- [Analyzing HTTP traffic with Instruments](../Foundation/analyzing-http-traffic-with-instruments.md)
+- [Analyzing HTTP traffic with Instruments](../foundation/analyzing-http-traffic-with-instruments.md)
   Measure HTTP-based network performance and usage of your apps.
 - [Detecting when your app contacts domains that may be profiling users](detecting-when-your-app-contacts-domains-that-may-be-profiling-users.md)
   Use Instruments to assess whether your app or its third-party SDKs connect to domains that may profile users.

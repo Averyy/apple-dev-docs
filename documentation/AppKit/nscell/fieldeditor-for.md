@@ -16,7 +16,7 @@ func fieldEditor(for controlView: NSView) -> NSTextView?
 
 #### Return Value
 
-A custom field editor. The field editor must have [`isFieldEditor`](nstextview/isfieldeditor.md) set to [`true`](https://developer.apple.com/documentation/Swift/true).
+A custom field editor. The field editor must have [`isFieldEditor`](nstextview/isfieldeditor.md) set to [`true`](https://developer.apple.com/documentation/swift/true).
 
 #### Discussion
 

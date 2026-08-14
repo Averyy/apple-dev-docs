@@ -19,7 +19,7 @@ optional func navigationBarNSToolbarSection(_ navigationBar: UINavigationBar) ->
 
 #### Return Value
 
-An [`NSToolbar`](https://developer.apple.com/documentation/AppKit/NSToolbar) section that determines which section to place the navigation bar in, and how to present the navigation bar in that section. Return [`UINavigationBar.NSToolbarSection.none`](uinavigationbar/nstoolbarsection/none.md) to disable [`NSToolbar`](https://developer.apple.com/documentation/AppKit/NSToolbar) hosting, which is equivalent to setting [`preferredBehavioralStyle`](uinavigationbar/preferredbehavioralstyle.md) to [`UIBehavioralStyle.pad`](uibehavioralstyle/pad.md).
+An [`NSToolbar`](https://developer.apple.com/documentation/appkit/nstoolbar) section that determines which section to place the navigation bar in, and how to present the navigation bar in that section. Return [`UINavigationBar.NSToolbarSection.none`](uinavigationbar/nstoolbarsection/none.md) to disable [`NSToolbar`](https://developer.apple.com/documentation/appkit/nstoolbar) hosting, which is equivalent to setting [`preferredBehavioralStyle`](uinavigationbar/preferredbehavioralstyle.md) to [`UIBehavioralStyle.pad`](uibehavioralstyle/pad.md).
 
 #### Discussion
 
@@ -27,7 +27,7 @@ The system calls this method to determine how to render your [`UINavigationBar`]
 
 ## Parameters
 
-- `navigationBar`: The navigation bar to host in an [`NSToolbar`](https://developer.apple.com/documentation/AppKit/NSToolbar).
+- `navigationBar`: The navigation bar to host in an [`NSToolbar`](https://developer.apple.com/documentation/appkit/nstoolbar).
 
 
 ---

@@ -22,7 +22,7 @@ var attenuationDurationThresholds: [NSNumber] { get set }
 
 Signal attenuation and duration are measurable aspects of exposure risk. Set threshold values to configure the degree to which the signal loss between two devices for a specific duration signifies a potential exposure. Four categories are described in [`ENExposureConfiguration`](enexposureconfiguration.md): *immediate*, *near*, *medium*, and *other*.
 
-![Illustration showing the immediate attenuation threshold atop the immediate and near categories, the near attenuation threshold atop the near and medium categories, and the medium attenuation threshold atop the medium and other categories.](https://docs-assets.developer.apple.com/published/bb22dd39361dd13e579f70e52b2780b9/media-3699755%402x.png)
+![Illustration showing the immediate attenuation threshold atop the immediate and near categories, the near attenuation threshold atop the near and medium categories, and the medium attenuation threshold atop the medium and other categories.](/images/com.apple.exposurenotification/media-3699755@2x.png)
 
 The following entries in the `attenuationDurationThresholds` array correspond to three thresholds for the four categories:
 

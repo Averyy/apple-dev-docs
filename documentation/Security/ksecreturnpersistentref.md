@@ -22,7 +22,7 @@ let kSecReturnPersistentRef: CFString
 
 #### Discussion
 
-The corresponding value is of type [`CFBoolean`](https://developer.apple.com/documentation/CoreFoundation/CFBoolean). A value of [`kCFBooleanTrue`](https://developer.apple.com/documentation/CoreFoundation/kCFBooleanTrue) indicates that a persistent reference to an item should be returned as a [`CFData`](https://developer.apple.com/documentation/CoreFoundation/CFData) object. Unlike normal references, a persistent reference may be stored on disk or passed between processes.
+The corresponding value is of type [`CFBoolean`](https://developer.apple.com/documentation/corefoundation/cfboolean). A value of [`kCFBooleanTrue`](https://developer.apple.com/documentation/corefoundation/kcfbooleantrue) indicates that a persistent reference to an item should be returned as a [`CFData`](https://developer.apple.com/documentation/corefoundation/cfdata) object. Unlike normal references, a persistent reference may be stored on disk or passed between processes.
 
 
 ---

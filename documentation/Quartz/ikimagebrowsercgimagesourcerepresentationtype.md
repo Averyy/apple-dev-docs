@@ -16,7 +16,7 @@ let IKImageBrowserCGImageSourceRepresentationType: String
 
 #### Discussion
 
-A [`CGImageSource`](https://developer.apple.com/documentation/ImageIO/CGImageSource)  object.
+A [`CGImageSource`](https://developer.apple.com/documentation/imageio/cgimagesource)  object.
 
 ## See Also
 

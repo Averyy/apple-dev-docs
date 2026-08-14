@@ -10,9 +10,9 @@ The Critical Messaging API provides a way for apps to deliver critical messages 
 
 ##### Enable Your App to Use the Critical Messaging Api
 
-Add the `com.apple.developer.messages.critical-messaging` entitlement to your app’s entitlement file in Xcode. For instructions on how to add this entitlement, see [`Critical Messaging`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.messages.critical-messaging).
+Add the `com.apple.developer.messages.critical-messaging` entitlement to your app’s entitlement file in Xcode. For instructions on how to add this entitlement, see [`Critical Messaging`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.messages.critical-messaging).
 
-In addition, add the [`NSCriticalMessagingUsageDescription`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSCriticalMessagingUsageDescription) key
+In addition, add the [`NSCriticalMessagingUsageDescription`](https://developer.apple.com/documentation/bundleresources/information-property-list/nscriticalmessagingusagedescription) key
 to your app’s `Info.plist` file and provide a usage description for the operating system to display when the framework requests a person’s authorization to use this capability.
 
 > ❗ **Important**: Critical messages sent via this API may not transmit in scenarios where SMS service is unavailable.

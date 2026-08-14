@@ -22,7 +22,7 @@ func popDebugGroup()
 
 #### Discussion
 
-For more information, see [`Naming resources and commands`](https://developer.apple.com/documentation/Xcode/Naming-resources-and-commands).
+For more information, see [`Naming resources and commands`](https://developer.apple.com/documentation/xcode/naming-resources-and-commands).
 
 ## See Also
 

@@ -34,7 +34,7 @@ Metal supports multiple organizations for the textures you use for drawing. Use 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../Swift/BitwiseCopyable.md)
+- [BitwiseCopyable](../swift/bitwisecopyable.md)
 
 ## See Also
 

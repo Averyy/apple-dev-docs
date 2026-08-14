@@ -8,13 +8,13 @@ Use TelephonyMessagingKit to send and receive SMS, MMS, and RCS messages.
 
 When the person using a device chooses your app to be the default carrier messaging app, the system sends all SMS, MMS, and RCS messages received by the device to your app. You use this framework to send and receive messages with those services.
 
-This article describes how to set up your app to be the default app for carrier messaging. To see how to also make your app the default app for internet-based messaging, see [`Preparing your app to be the default messaging app`](https://developer.apple.com/documentation/Messages/Preparing-your-app-to-be-the-default-messaging-app).
+This article describes how to set up your app to be the default app for carrier messaging. To see how to also make your app the default app for internet-based messaging, see [`Preparing your app to be the default messaging app`](https://developer.apple.com/documentation/messages/preparing-your-app-to-be-the-default-messaging-app).
 
 > ❗ **Important**: You may develop and test `TelephonyMessagingKit` apps on devices in all regions by using an Apple-provided provisioning profile. People using your app must have an account registered in the European Union (EU), and their device must be located within the EU.
 
 ##### Configure Your App with the Required Entitlement
 
-To make your app eligible to become the default carrier messaging app, add the  [`Default Carrier Messaging App`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.carrier-messaging-app) entitlement, as described on the entitlement’s documentation page.
+To make your app eligible to become the default carrier messaging app, add the  [`Default Carrier Messaging App`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.carrier-messaging-app) entitlement, as described on the entitlement’s documentation page.
 
 When someone uses the device in an environment that supports the use of TelephonyMessagingKit, they can choose a default carrier messaging app from the Settings app. If they choose your app, the system sends all SMS, MMS, and RCS messages to your app. If they choose a different app, your app doesn’t receive and can’t send carrier messages.
 
@@ -42,7 +42,7 @@ The shared instance of [`TelephonyMessagingSession`](telephonymessagingsession.m
 
 Each service provides an asynchronous sequence called `incomingMessageNotifications` that you use to receive messages.  Iterate over this sequence with a `for`-`await`-`in` loop to collect any messages that TelephonyMessagingKit queued while your app wasn’t running, and to receive new messages as they arrive. Each notification includes a `message` property to represent the incoming message, along with other service-specific properties, such as group information when using an [`RCSService`](rcsservice.md).
 
-The following example shows a loop that processes incoming SMS messages by calling a hypothetical `storeSMSMessage(_:)` method to add them to a local data store, so they are available for a view elsewhere in the app to display. The loop also sends local notifications with the [`User Notifications`](https://developer.apple.com/documentation/UserNotifications) framework in case the app is running in the background, which can happen if messages arrive and the app isn’t running. If the app is running when messages arrive, sending the local notification does nothing.
+The following example shows a loop that processes incoming SMS messages by calling a hypothetical `storeSMSMessage(_:)` method to add them to a local data store, so they are available for a view elsewhere in the app to display. The loop also sends local notifications with the [`User Notifications`](https://developer.apple.com/documentation/usernotifications) framework in case the app is running in the background, which can happen if messages arrive and the app isn’t running. If the app is running when messages arrive, sending the local notification does nothing.
 
 ```swift
 guard TelephonyMessagingSession.shared.isConfiguredForCarrierMessaging else { return }
@@ -100,7 +100,7 @@ try await service.sendMessage(message)
 
 - [class TelephonyMessagingSession](telephonymessagingsession.md)
   An object that coordinates interaction with the TelephonyMessagingKit framework.
-- [Default Carrier Messaging App](../BundleResources/Entitlements/com.apple.developer.carrier-messaging-app.md)
+- [Default Carrier Messaging App](../bundleresources/entitlements/com.apple.developer.carrier-messaging-app.md)
   A Boolean value that indicates whether the app can use the TelephonyMessagingKit framework to serve as the default carrier messaging app.
 
 

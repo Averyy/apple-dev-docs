@@ -10,7 +10,7 @@ Swift packages are reusable components of Swift, Objective-C, Objective-C++, C, 
 
 With Xcode, you can create a new Swift package, add code, resource files, and binaries, build the Swift package, and run its unit tests.
 
-![Flowchart showing the development lifecycle for a Swift package.](https://docs-assets.developer.apple.com/published/ce439cc5d6ba4621ef3eb70fe9168526/creating-a-swift-package-with-xcode-1%402x.png)
+![Flowchart showing the development lifecycle for a Swift package.](/images/com.apple.Xcode/creating-a-swift-package-with-xcode-1@2x.png)
 
 ##### Create a Swift Package
 
@@ -18,10 +18,10 @@ To create a new Swift package, open Xcode and select File > New > Package. Choos
 
 - The `README.md` file resides at the root level of the package. It describes the functionality of your Swift package.
 - The `Package.swift` file, or *package manifest*, describes the configuration for the Swift package. You can double-click it in Finder to open the package in Xcode. The package manifest uses Swift and the PackageDescription framework to define the package’s name, products, targets, dependencies on other packages, and so on.
-- Source files reside in a folder named `Sources` and are scoped per [`Target`](https://developer.apple.com/documentation/PackageDescription/Target). A Swift package can contain several targets, and, as a convention, each target’s code resides in its own subfolder.
+- Source files reside in a folder named `Sources` and are scoped per [`Target`](https://developer.apple.com/documentation/packagedescription/target). A Swift package can contain several targets, and, as a convention, each target’s code resides in its own subfolder.
 - Unit test targets reside in a folder named `Tests`, and, following the same convention as standard targets, each test target’s code resides in its own subfolder.
 
-![Screenshot showing a newly created standalone Swift package named ExamplePackage. The Editor area shows the package’s manifest file while the Navigator area shows the package’s contents and the Utilities area displays the information about the package manifest.](https://docs-assets.developer.apple.com/published/4e21715f0e1aca7e69152ba05ec2a3d3/creating-a-swift-package-with-xcode-2%402x.png)
+![Screenshot showing a newly created standalone Swift package named ExamplePackage. The Editor area shows the package’s manifest file while the Navigator area shows the package’s contents and the Utilities area displays the information about the package manifest.](/images/com.apple.Xcode/creating-a-swift-package-with-xcode-2@2x.png)
 
 ##### Configure Your Swift Package
 
@@ -83,15 +83,15 @@ The Swift tools version declares:
 
 Each version of Swift can introduce updates to the PackageDescription framework, but the previous API version is available to packages that declare a prior Swift tools version. This behavior allows you take advantage of new releases of Swift, the Swift tools, and the PackageDescription framework, without having to update your package manifest and without losing access to existing packages.
 
-To learn more about the `PackageDescription` framework, see [`Package`](https://developer.apple.com/documentation/PackageDescription/Package).
+To learn more about the `PackageDescription` framework, see [`Package`](https://developer.apple.com/documentation/packagedescription/package).
 
 > **Note**: Xcode provides code completion when you edit the package manifest.
 
 ##### Add Your Code
 
-Per convention, source files reside in a subfolder of the package’s `Sources` directory that has the same name as the target they belong to. Note how the package manifest above declares the `MyLibrary` target. Its source files reside in `Sources/MyLibrary` while source files for tests reside in `Tests/MyLibraryTests`. You can use additional subfolders to structure them. Per default, Xcode includes all valid source files inside a target’s folder. If you prefer to declare included source files explicitly, pass them using the [`sources`](https://developer.apple.com/documentation/PackageDescription/Target/sources) parameter when you initialize the [`Target`](https://developer.apple.com/documentation/PackageDescription/Target). You can also pass paths to directories.
+Per convention, source files reside in a subfolder of the package’s `Sources` directory that has the same name as the target they belong to. Note how the package manifest above declares the `MyLibrary` target. Its source files reside in `Sources/MyLibrary` while source files for tests reside in `Tests/MyLibraryTests`. You can use additional subfolders to structure them. Per default, Xcode includes all valid source files inside a target’s folder. If you prefer to declare included source files explicitly, pass them using the [`sources`](https://developer.apple.com/documentation/packagedescription/target/sources) parameter when you initialize the [`Target`](https://developer.apple.com/documentation/packagedescription/target). You can also pass paths to directories.
 
-![Screenshot showing a standalone Swift package with two added source files and two unit test files.](https://docs-assets.developer.apple.com/published/84b9475b2001d600f4672ff32d716930/creating-a-swift-package-with-xcode-3%402x.png)
+![Screenshot showing a standalone Swift package with two added source files and two unit test files.](/images/com.apple.Xcode/creating-a-swift-package-with-xcode-3@2x.png)
 
 To add source files to a Swift package, use workflows that you already know. For example, you can add a source file to a package by dragging it into the Project navigator, or by using the File > Add Files to *[packageName]* menu. Targets can contain Swift, Objective-C/C++, or C/C++ code, but an individual target can’t mix Swift with C-family languages. For example, a Swift package can have two targets, one that contains Objective-C, Objective-C++, and C code, and a second one that contains Swift code.
 
@@ -106,7 +106,7 @@ dependencies: [
     .package(path: "path/to/a/local/package/", "1.0.0"..<"2.0.0")],
 ```
 
-See [`Package.Dependency`](https://developer.apple.com/documentation/PackageDescription/Package/Dependency) for all possible ways to declare a package dependency. When you add the dependency, you can use its vended product as a [`Target.Dependency`](https://developer.apple.com/documentation/PackageDescription/Target/Dependency) or make it a part of your package’s [`Product`](https://developer.apple.com/documentation/PackageDescription/Product).
+See [`Package.Dependency`](https://developer.apple.com/documentation/packagedescription/package/dependency) for all possible ways to declare a package dependency. When you add the dependency, you can use its vended product as a [`Target.Dependency`](https://developer.apple.com/documentation/packagedescription/target/dependency) or make it a part of your package’s [`Product`](https://developer.apple.com/documentation/packagedescription/product).
 
 ##### Distribute Binaries As a Swift Package
 
@@ -138,7 +138,7 @@ While Swift packages are platform-independent by nature and include, for example
 #endif
 ```
 
-In addition, you may need to define a minimum deployment target. Note how the package manifest below declares minimum deployment targets by passing them in as a value to the `platforms` parameter of the [`Package`](https://developer.apple.com/documentation/PackageDescription/Package) initializer. However, passing minimum deployment targets to the initializer doesn’t restrict the package to the listed platforms.
+In addition, you may need to define a minimum deployment target. Note how the package manifest below declares minimum deployment targets by passing them in as a value to the `platforms` parameter of the [`Package`](https://developer.apple.com/documentation/packagedescription/package) initializer. However, passing minimum deployment targets to the initializer doesn’t restrict the package to the listed platforms.
 
 ```swift
 // swift-tools-version:5.3
@@ -204,7 +204,7 @@ Xcode creates a scheme for each product in the package manifest. Select a scheme
   Add your published Swift package as a local package to your app’s project and develop the package and the app in tandem.
 - [Organizing your code with local packages](organizing-your-code-with-local-packages.md)
   Simplify maintenance, promote modularity, and encourage reuse by organizing your app’s code into local Swift packages.
-- [PackageDescription](../PackageDescription/PackageDescription.md)
+- [PackageDescription](../packagedescription/packagedescription.md)
   Create reusable code, organize it in a lightweight way, and share it across your projects and with other developers.
 
 

@@ -27,7 +27,7 @@ A view that fixes the center of this view at `position`.
 
 #### Discussion
 
-Use the `position(_:)` modifier to place the center of a view at a specific coordinate in the parent view using a [`CGPoint`](https://developer.apple.com/documentation/CoreFoundation/CGPoint) to specify the `x` and `y` offset.
+Use the `position(_:)` modifier to place the center of a view at a specific coordinate in the parent view using a [`CGPoint`](https://developer.apple.com/documentation/corefoundation/cgpoint) to specify the `x` and `y` offset.
 
 ```swift
 Text("Position by passing a CGPoint()")

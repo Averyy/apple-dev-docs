@@ -45,11 +45,11 @@ The `copy` method of `NSEntityDescription` returns an entity such that:
 [[entity copy] isEqual:entity] == NO
 ```
 
-Since [`NSDictionary`](https://developer.apple.com/documentation/Foundation/NSDictionary) copies its keys and requires that keys both conform to the [`NSCopying`](https://developer.apple.com/documentation/Foundation/NSCopying) protocol and have a property that `copy` returns an object for where the source and the copy are equal, don’t use entities as keys in a dictionary. Instead, use either the entity’s name as the key or use an [`NSMapTable`](https://developer.apple.com/documentation/Foundation/NSMapTable) with retain callbacks.
+Since [`NSDictionary`](https://developer.apple.com/documentation/foundation/nsdictionary) copies its keys and requires that keys both conform to the [`NSCopying`](https://developer.apple.com/documentation/foundation/nscopying) protocol and have a property that `copy` returns an object for where the source and the copy are equal, don’t use entities as keys in a dictionary. Instead, use either the entity’s name as the key or use an [`NSMapTable`](https://developer.apple.com/documentation/foundation/nsmaptable) with retain callbacks.
 
 ##### Fast Enumeration
 
-`NSEntityDescription` implements the [`NSFastEnumeration`](https://developer.apple.com/documentation/Foundation/NSFastEnumeration) protocol. Use this to enumerate over an entity’s properties, as the following example illustrates.
+`NSEntityDescription` implements the [`NSFastEnumeration`](https://developer.apple.com/documentation/foundation/nsfastenumeration) protocol. Use this to enumerate over an entity’s properties, as the following example illustrates.
 
 ```objc
 NSEntityDescription *anEntity = ...;
@@ -119,17 +119,17 @@ for (NSPropertyDescription *property in anEntity) {
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCoding](../Foundation/NSCoding.md)
-- [NSCopying](../Foundation/NSCopying.md)
-- [NSFastEnumeration](../Foundation/NSFastEnumeration.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCoding](../foundation/nscoding.md)
+- [NSCopying](../foundation/nscopying.md)
+- [NSFastEnumeration](../foundation/nsfastenumeration.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

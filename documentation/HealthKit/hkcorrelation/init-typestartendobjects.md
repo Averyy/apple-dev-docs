@@ -125,8 +125,8 @@ HKCorrelation *bloodPressure =
 ## Parameters
 
 - `correlationType`: The type for this correlation. For a complete list of correlation type identifiers, see [`HKCorrelationTypeIdentifier`](hkcorrelationtypeidentifier.md).
-- `startDate`: The start date for the sample. This date must be equal to or earlier than the end date; otherwise, this method throws an exception ([`invalidArgumentException`](https://developer.apple.com/documentation/Foundation/NSExceptionName/invalidArgumentException)).
-- `endDate`: The end date for the sample. This date must be equal to or later than the start date; otherwise, this method throws an exception ([`invalidArgumentException`](https://developer.apple.com/documentation/Foundation/NSExceptionName/invalidArgumentException)).
+- `startDate`: The start date for the sample. This date must be equal to or earlier than the end date; otherwise, this method throws an exception ([`invalidArgumentException`](https://developer.apple.com/documentation/foundation/nsexceptionname/invalidargumentexception)).
+- `endDate`: The end date for the sample. This date must be equal to or later than the start date; otherwise, this method throws an exception ([`invalidArgumentException`](https://developer.apple.com/documentation/foundation/nsexceptionname/invalidargumentexception)).
 - `objects`: A set of [`HKSample`](hksample.md) objects. Specifically, this set contains the quantity and category samples to be grouped into this correlation.
 
 ## See Also

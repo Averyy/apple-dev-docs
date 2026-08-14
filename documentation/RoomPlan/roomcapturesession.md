@@ -24,7 +24,7 @@ class RoomCaptureSession
 
 This class scans a room on the app’s behalf and provides the necessary callbacks for you to display your own UI.
 
-As an alternate approach to the UX of the framework-provided view ([`RoomCaptureView`](roomcaptureview.md)), this class is appropriate for apps that intend to display their own view and scanning experience. You can start your own AR experience by accessing this class’s [`arSession`](roomcapturesession/arsession.md), or by providing your own [`ARSession`](https://developer.apple.com/documentation/ARKit/ARSession) instance to the [`init(arSession:)`](roomcapturesession/init(arsession:).md) initializer.
+As an alternate approach to the UX of the framework-provided view ([`RoomCaptureView`](roomcaptureview.md)), this class is appropriate for apps that intend to display their own view and scanning experience. You can start your own AR experience by accessing this class’s [`arSession`](roomcapturesession/arsession.md), or by providing your own [`ARSession`](https://developer.apple.com/documentation/arkit/arsession) instance to the [`init(arSession:)`](roomcapturesession/init(arsession:).md) initializer.
 
 To produce a 3D asset of the user’s environment, this class:
 

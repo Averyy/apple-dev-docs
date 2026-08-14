@@ -24,7 +24,7 @@ final class FoveatedStreamingSession
 
 Use `FoveatedStreamingSession` to establish and manage streaming connections from Apple Vision Pro to local or remote endpoints. The session handles connection life cycle, monitors streaming status, and provides access to bidirectional message channels for custom data exchange.
 
-You create a `FoveatedStreamingSession` object directly, typically on app initialization. After creating your session object, use it to initialize the [`ImmersiveSpace`](https://developer.apple.com/documentation/SwiftUI/ImmersiveSpace) that displays the streamed content. To begin streaming spatial content, call the [`connect(endpoint:)`](foveatedstreamingsession/connect(endpoint:).md) function. The connection will fail if your app doesn’t have the [`Foveated Streaming Session`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.foveated-streaming-session) entitlement.
+You create a `FoveatedStreamingSession` object directly, typically on app initialization. After creating your session object, use it to initialize the [`ImmersiveSpace`](https://developer.apple.com/documentation/swiftui/immersivespace) that displays the streamed content. To begin streaming spatial content, call the [`connect(endpoint:)`](foveatedstreamingsession/connect(endpoint:).md) function. The connection will fail if your app doesn’t have the [`Foveated Streaming Session`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.foveated-streaming-session) entitlement.
 
 The following example shows how to connect to a stream and present its content in an immersive space:
 
@@ -107,11 +107,11 @@ struct FoveatedStreamingApp: App {
 ## Relationships
 
 ### Conforms To
-- [Copyable](../Swift/Copyable.md)
-- [Escapable](../Swift/Escapable.md)
-- [Observable](../Observation/Observable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Copyable](../swift/copyable.md)
+- [Escapable](../swift/escapable.md)
+- [Observable](../observation/observable.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

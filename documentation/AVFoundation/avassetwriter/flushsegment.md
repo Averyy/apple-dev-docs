@@ -21,7 +21,7 @@ func flushSegment()
 
 #### Discussion
 
-Call this method only when the [`preferredOutputSegmentInterval`](avassetwriter/preferredoutputsegmentinterval.md) property value is [`indefinite`](https://developer.apple.com/documentation/CoreMedia/CMTime/indefinite).
+Call this method only when the [`preferredOutputSegmentInterval`](avassetwriter/preferredoutputsegmentinterval.md) property value is [`indefinite`](https://developer.apple.com/documentation/coremedia/cmtime/indefinite).
 
 ## See Also
 

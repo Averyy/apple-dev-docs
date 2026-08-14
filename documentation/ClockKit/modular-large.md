@@ -8,7 +8,7 @@ Display multiple rows of content in the large, central complication on the Modul
 
 Modular large templates offer a large canvas for displaying up to three rows of content on the Modular watch face.
 
-![Examples of the modular small templates. From left to right they are columns, large body, table, and standard body.](https://docs-assets.developer.apple.com/published/5115f9857a68448743823feca7de8ddf/media-2878967%402x.png)
+![Examples of the modular small templates. From left to right they are columns, large body, table, and standard body.](/images/com.apple.clockkit/media-2878967@2x.png)
 
 ## Topics
 
@@ -45,7 +45,7 @@ Modular large templates offer a large canvas for displaying up to three rows of 
   An abstract class that defines the base behavior for all templates.
 - [enum CLKComplicationFamily](clkcomplicationfamily.md)
   Constants indicating the template groups.
-- [CLKComplicationSupportedFamilies](../BundleResources/Information-Property-List/CLKComplicationSupportedFamilies.md)
+- [CLKComplicationSupportedFamilies](../bundleresources/information-property-list/clkcomplicationsupportedfamilies.md)
   The complication families for which the app can provide data.
 
 

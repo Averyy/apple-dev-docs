@@ -36,9 +36,9 @@ For information about how to use file presenters with a file coordinator object,
 
 ##### File Presenters and Ios
 
-If your app enters the background with an active file presenter, any other processes that perform a coordinated read or write on the presented file can deadlock. To prevent this situation, call the coordinator’s [`removeFilePresenter(_:)`](nsfilecoordinator/removefilepresenter(_:).md) type method to remove the file presenter in the [`applicationDidEnterBackground(_:)`](https://developer.apple.com/documentation/UIKit/UIApplicationDelegate/applicationDidEnterBackground(_:)) method or in response to a [`didEnterBackgroundNotification`](https://developer.apple.com/documentation/UIKit/UIApplication/didEnterBackgroundNotification) notification. Call [`addFilePresenter(_:)`](nsfilecoordinator/addfilepresenter(_:).md) to add the file presenter again in the [`applicationWillEnterForeground(_:)`](https://developer.apple.com/documentation/UIKit/UIApplicationDelegate/applicationWillEnterForeground(_:)) method or in response to a [`willEnterForegroundNotification`](https://developer.apple.com/documentation/UIKit/UIApplication/willEnterForegroundNotification) notification.
+If your app enters the background with an active file presenter, any other processes that perform a coordinated read or write on the presented file can deadlock. To prevent this situation, call the coordinator’s [`removeFilePresenter(_:)`](nsfilecoordinator/removefilepresenter(_:).md) type method to remove the file presenter in the [`applicationDidEnterBackground(_:)`](https://developer.apple.com/documentation/uikit/uiapplicationdelegate/applicationdidenterbackground(_:)) method or in response to a [`didEnterBackgroundNotification`](https://developer.apple.com/documentation/uikit/uiapplication/didenterbackgroundnotification) notification. Call [`addFilePresenter(_:)`](nsfilecoordinator/addfilepresenter(_:).md) to add the file presenter again in the [`applicationWillEnterForeground(_:)`](https://developer.apple.com/documentation/uikit/uiapplicationdelegate/applicationwillenterforeground(_:)) method or in response to a [`willEnterForegroundNotification`](https://developer.apple.com/documentation/uikit/uiapplication/willenterforegroundnotification) notification.
 
-> **Note**:  The [`UIDocument`](https://developer.apple.com/documentation/UIKit/UIDocument) class automatically removes itself when your app goes to the background. It automatically adds itself again when your app returns to the foreground.
+> **Note**:  The [`UIDocument`](https://developer.apple.com/documentation/uikit/uidocument) class automatically removes itself when your app goes to the background. It automatically adds itself again when your app returns to the foreground.
 
 ## Topics
 
@@ -97,7 +97,7 @@ If your app enters the background with an active file presenter, any other proce
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

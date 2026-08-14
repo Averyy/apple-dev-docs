@@ -20,7 +20,7 @@ var name: String
 
 #### Discussion
 
-The Spotlight search tool implements this property as part of its conformance to the [`Tool`](https://developer.apple.com/documentation/FoundationModels/Tool) protocol.
+The Spotlight search tool implements this property as part of its conformance to the [`Tool`](https://developer.apple.com/documentation/foundationmodels/tool) protocol.
 
 
 ---

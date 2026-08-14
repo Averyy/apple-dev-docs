@@ -8,7 +8,7 @@ Create and modify Game Center leaderboards scores.
 
 This endpoint is different than most in App Store Connect API, with this you can create or modify a player’s leaderboard score in your app. Any and all data you send through this endpoint overwrites existing data for the player’s score.
 
-> 💡 **Tip**:  These endpoint requires information from GameKit, specifically [`gamePlayerID`](https://developer.apple.com/documentation/GameKit/GKPlayer/gamePlayerID).
+> 💡 **Tip**:  These endpoint requires information from GameKit, specifically [`gamePlayerID`](https://developer.apple.com/documentation/gamekit/gkplayer/gameplayerid).
 
 ## Topics
 

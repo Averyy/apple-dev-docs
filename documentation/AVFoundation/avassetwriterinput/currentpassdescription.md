@@ -23,7 +23,7 @@ var currentPassDescription: AVAssetWriterInputPassDescription? { get }
 
 If the value of this property is `nil`, call the asset writer input’s [`markAsFinished()`](avassetwriterinput/markasfinished().md) method because there are no more requests to fulfill.
 
-During the first pass, the request contains a single time range value, from zero to positive infinity, that indicates to append all media from the source. This condition is also true when [`canPerformMultiplePasses`](avassetwriterinput/canperformmultiplepasses.md) is [`false`](https://developer.apple.com/documentation/Swift/false), in which case the asset writer only performs a single pass.
+During the first pass, the request contains a single time range value, from zero to positive infinity, that indicates to append all media from the source. This condition is also true when [`canPerformMultiplePasses`](avassetwriterinput/canperformmultiplepasses.md) is [`false`](https://developer.apple.com/documentation/swift/false), in which case the asset writer only performs a single pass.
 
 The value of this property is `nil` before you call [`startWriting()`](avassetwriter/startwriting().md) on the containing asset writer. It transitions to an initial non-`nil` value during the call to [`startWriting()`](avassetwriter/startwriting().md), and changes only after a call to [`markCurrentPassAsFinished()`](avassetwriterinput/markcurrentpassasfinished().md). You can use the [`respondToEachPassDescription(on:using:)`](avassetwriterinput/respondtoeachpassdescription(on:using:).md) to have the system call you at the beginning of each pass.
 

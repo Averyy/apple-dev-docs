@@ -22,7 +22,7 @@ object MassExtendRenewalDateStatusResponse
 
 The App Store server sends this response when you call the [`Get Status of Subscription Renewal Date Extensions`](get-status-of-subscription-renewal-date-extensions.md) endpoint. Your request to [`Extend Subscription Renewal Dates for All Active Subscribers`](extend-subscription-renewal-dates-for-all-active-subscribers.md) is complete when the value of the `complete` field is `TRUE`. Otherwise, the request is still in progress.
 
-The App Store server also sends real-time notifications as it’s processing the subscription-renewal-date extension, including notifications with [`notificationType`](https://developer.apple.com/documentation/AppStoreServerNotifications/notificationType) values of `RENEWAL_EXTENSION` and `RENEWAL_EXTENDED`. For more information, see [`App Store Server Notifications`](https://developer.apple.com/documentation/AppStoreServerNotifications). For more information about extending subscription renewal dates, see [`Extending the renewal date for auto-renewable subscriptions`](extending-the-renewal-date-for-auto-renewable-subscriptions.md).
+The App Store server also sends real-time notifications as it’s processing the subscription-renewal-date extension, including notifications with [`notificationType`](https://developer.apple.com/documentation/appstoreservernotifications/notificationtype) values of `RENEWAL_EXTENSION` and `RENEWAL_EXTENDED`. For more information, see [`App Store Server Notifications`](https://developer.apple.com/documentation/appstoreservernotifications). For more information about extending subscription renewal dates, see [`Extending the renewal date for auto-renewable subscriptions`](extending-the-renewal-date-for-auto-renewable-subscriptions.md).
 
 ## Topics
 

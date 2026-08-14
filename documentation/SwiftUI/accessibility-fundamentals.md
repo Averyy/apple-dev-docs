@@ -8,13 +8,13 @@ Make your SwiftUI apps accessible to everyone, including people with disabilitie
 
 Like all Apple UI frameworks, SwiftUI comes with built-in accessibility support. The framework introspects common elements like navigation views, lists, text fields, sliders, buttons, and so on, and provides basic accessibility labels and values by default. You don’t have to do any extra work to enable these standard accessibility features.
 
-![None](https://docs-assets.developer.apple.com/published/3e38dd74355b2499d9edb9d09f567c62/accessibility-fundamentals-hero%402x.png)
+![None](/images/com.apple.SwiftUI/accessibility-fundamentals-hero@2x.png)
 
 SwiftUI also provides tools to help you enhance the accessibility of your app. To find out what enhancements you need, try using your app with accessibility features like VoiceOver, Voice Control, and Switch Control, or get feedback from users of your app that regularly use these features. Then use the accessibility view modifiers that SwiftUI provides to improve the experience. For example, you can explicitly add accessibility labels to elements in your UI using the [`accessibilityLabel(_:)`](view/accessibilitylabel(_:).md) or the [`accessibilityValue(_:)`](view/accessibilityvalue(_:).md) view modifier.
 
 Customize your use of accessibility modifiers for all the platforms that your app runs on. For example, you may need to adjust the accessibility elements for a companion Apple Watch app that shares a common code base with an iOS app. If you integrate AppKit or UIKit controls in SwiftUI, expose any accessibility labels and make them accessible from your [`NSViewRepresentable`](nsviewrepresentable.md) or [`UIViewRepresentable`](uiviewrepresentable.md) views, or provide custom accessibility information if the underlying accessibility labels aren’t available.
 
-For design guidance, see [`Accessibility`](https://developer.apple.com/design/Human-Interface-Guidelines/accessibility) in the Human Interface Guidelines.
+For design guidance, see [`Accessibility`](https://developer.apple.com/design/human-interface-guidelines/accessibility) in the Human Interface Guidelines.
 
 ## Topics
 

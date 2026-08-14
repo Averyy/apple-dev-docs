@@ -16,7 +16,7 @@ static let numberMode: NSSpeechSynthesizer.SpeechPropertyKey
 
 #### Discussion
 
-An [`NSString`](https://developer.apple.com/documentation/Foundation/NSString) object that specifies whether the synthesizer is currently in normal or literal number-processing mode. The supported values are listed in [`NSSpeechSynthesizer.SpeechPropertyKey.Mode`](nsspeechsynthesizer/speechpropertykey/mode.md).
+An [`NSString`](https://developer.apple.com/documentation/foundation/nsstring) object that specifies whether the synthesizer is currently in normal or literal number-processing mode. The supported values are listed in [`NSSpeechSynthesizer.SpeechPropertyKey.Mode`](nsspeechsynthesizer/speechpropertykey/mode.md).
 
 When the number-processing mode is [`normal`](nsspeechsynthesizer/speechpropertykey/mode/normal.md), the synthesizer assembles digits into numbers (so that “12” is spoken as “twelve”). When the mode is [`literal`](nsspeechsynthesizer/speechpropertykey/mode/literal.md), each digit is spoken literally (so that “12” is spoken as “one, two”).
 

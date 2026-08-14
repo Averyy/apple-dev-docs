@@ -19,9 +19,9 @@ func contents(forType typeName: String) throws -> Any
 
 #### Return Value
 
-The document data to be saved, or `nil` if you cannot return document data. The returned object is typically an instance of the [`NSData`](https://developer.apple.com/documentation/Foundation/NSData) class for flat files or the [`FileWrapper`](https://developer.apple.com/documentation/Foundation/FileWrapper) class for file packages. If you return `nil`, you should also return an error object in `outError`.
+The document data to be saved, or `nil` if you cannot return document data. The returned object is typically an instance of the [`NSData`](https://developer.apple.com/documentation/foundation/nsdata) class for flat files or the [`FileWrapper`](https://developer.apple.com/documentation/foundation/filewrapper) class for file packages. If you return `nil`, you should also return an error object in `outError`.
 
-If you return an object other than an [`NSData`](https://developer.apple.com/documentation/Foundation/NSData) or [`FileWrapper`](https://developer.apple.com/documentation/Foundation/FileWrapper) object, you must override the [`writeContents(_:andAttributes:safelyTo:for:)`](uidocument/writecontents(_:andattributes:safelyto:for:).md) or [`writeContents(_:to:for:originalContentsURL:)`](uidocument/writecontents(_:to:for:originalcontentsurl:).md) method to handle the writing of data.
+If you return an object other than an [`NSData`](https://developer.apple.com/documentation/foundation/nsdata) or [`FileWrapper`](https://developer.apple.com/documentation/foundation/filewrapper) object, you must override the [`writeContents(_:andAttributes:safelyTo:for:)`](uidocument/writecontents(_:andattributes:safelyto:for:).md) or [`writeContents(_:to:for:originalContentsURL:)`](uidocument/writecontents(_:to:for:originalcontentsurl:).md) method to handle the writing of data.
 
 #### Discussion
 

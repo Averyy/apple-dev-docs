@@ -11,7 +11,7 @@ A child atom of movie atoms or track atoms.
 
 #### Overview
 
-Profile atoms can be children of movie atoms or track atoms. For details on profile atoms, see [`Movie profile atom ('prfl')`](movie_profile_atom.md).
+Profile atoms can be children of movie atoms or track atoms. For details on profile atoms, see [`Movie profile atom`](movie_profile_atom.md).
 
 ## Topics
 

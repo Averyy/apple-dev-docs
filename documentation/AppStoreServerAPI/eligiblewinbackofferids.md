@@ -24,7 +24,7 @@ Use this list to select an eligible win-back offer for a customer. The array con
 
 The App Store sets the order of the eligible win-back offer IDs for each customer, with the best offer first. The order takes into account the available offers you configure in App Store Connect for the customer’s most recent subscription in the subscription group. Subscriptions in a Billing Grace Period or billing retry state aren’t eligible for win-back offers.
 
-Win-back offers have a direct link. App Store Connect generates and displays the direct link when you configure the win-back offer. Use the direct link to merchandise the win-back offer through your own channels. For more information, see [`Supporting win-back offers in your app`](https://developer.apple.com/documentation/StoreKit/supporting-win-back-offers-in-your-app).
+Win-back offers have a direct link. App Store Connect generates and displays the direct link when you configure the win-back offer. Use the direct link to merchandise the win-back offer through your own channels. For more information, see [`Supporting win-back offers in your app`](https://developer.apple.com/documentation/storekit/supporting-win-back-offers-in-your-app).
 
 This array appears in a [`JWSTransactionDecodedPayload`](jwstransactiondecodedpayload.md).
 

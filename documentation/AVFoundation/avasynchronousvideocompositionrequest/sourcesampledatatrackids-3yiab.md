@@ -22,7 +22,7 @@ var sourceSampleDataTrackIDs: [CMPersistentTrackID] { get }
 
 #### Discussion
 
-Sample data tracks have a media type of [`kCMMediaType_Metadata`](https://developer.apple.com/documentation/CoreMedia/kCMMediaType_Metadata).
+Sample data tracks have a media type of [`kCMMediaType_Metadata`](https://developer.apple.com/documentation/coremedia/kcmmediatype_metadata).
 
 ## See Also
 

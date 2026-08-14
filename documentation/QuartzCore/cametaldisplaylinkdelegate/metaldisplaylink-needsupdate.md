@@ -22,14 +22,14 @@ func metalDisplayLink(_ link: CAMetalDisplayLink, needsUpdate update: CAMetalDis
 
 #### Discussion
 
-In this method’s implementation, perform your app’s rendering on the [`layer`](cametaldrawable/layer.md) or [`texture`](cametaldrawable/texture.md) of the `update` instance’s [`drawable`](cametaldisplaylink/update/drawable.md) property. Before calling [`present()`](https://developer.apple.com/documentation/Metal/MTLDrawable/present()), encode all your Metal commands to the `link` parameter’s [`MTLDevice`](https://developer.apple.com/documentation/Metal/MTLDevice). The GPU has additional time to complete running your commands before the frame displays on screen, determined by the value of the `link` parameter’s [`preferredFrameLatency`](cametaldisplaylink/preferredframelatency.md) property.
+In this method’s implementation, perform your app’s rendering on the [`layer`](cametaldrawable/layer.md) or [`texture`](cametaldrawable/texture.md) of the `update` instance’s [`drawable`](cametaldisplaylink/update/drawable.md) property. Before calling [`present()`](https://developer.apple.com/documentation/metal/mtldrawable/present()), encode all your Metal commands to the `link` parameter’s [`MTLDevice`](https://developer.apple.com/documentation/metal/mtldevice). The GPU has additional time to complete running your commands before the frame displays on screen, determined by the value of the `link` parameter’s [`preferredFrameLatency`](cametaldisplaylink/preferredframelatency.md) property.
 
-> ⚠️ **Warning**:  Using alternative methods to [`present()`](https://developer.apple.com/documentation/Metal/MTLDrawable/present()) that target the presentation for a specific time cause an assert when used with a [`CAMetalDisplayLink`](cametaldisplaylink.md).
+> ⚠️ **Warning**:  Using alternative methods to [`present()`](https://developer.apple.com/documentation/metal/mtldrawable/present()) that target the presentation for a specific time cause an assert when used with a [`CAMetalDisplayLink`](cametaldisplaylink.md).
 
 ## Parameters
 
 - `link`: A Metal display link instance the system notifies.
-- `update`: An update instance that contains the time the system intends to update the display, a [`CAMetalDrawable`](cametaldrawable.md) instance, and a deadline to call its [`present()`](https://developer.apple.com/documentation/Metal/MTLDrawable/present()) method.
+- `update`: An update instance that contains the time the system intends to update the display, a [`CAMetalDrawable`](cametaldrawable.md) instance, and a deadline to call its [`present()`](https://developer.apple.com/documentation/metal/mtldrawable/present()) method.
 
 
 ---

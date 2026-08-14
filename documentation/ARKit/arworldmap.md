@@ -25,7 +25,7 @@ The session state in a world map includes ARKit’s awareness of the physical sp
 
 ##### Serialize and Deserialize a World Map
 
-When your app quits, you can save the current world map (acquired using [`getCurrentWorldMap(completionHandler:)`](arsession/getcurrentworldmap(completionhandler:).md)). Because [`ARWorldMap`](arworldmap.md) conforms to [`NSSecureCoding`](https://developer.apple.com/documentation/Foundation/NSSecureCoding), you serialize it using [`NSKeyedArchiver`](https://developer.apple.com/documentation/Foundation/NSKeyedArchiver).
+When your app quits, you can save the current world map (acquired using [`getCurrentWorldMap(completionHandler:)`](arsession/getcurrentworldmap(completionhandler:).md)). Because [`ARWorldMap`](arworldmap.md) conforms to [`NSSecureCoding`](https://developer.apple.com/documentation/foundation/nssecurecoding), you serialize it using [`NSKeyedArchiver`](https://developer.apple.com/documentation/foundation/nskeyedarchiver).
 
 ```swift
 func writeWorldMap(_ worldMap: ARWorldMap, to url: URL) throws {
@@ -34,7 +34,7 @@ func writeWorldMap(_ worldMap: ARWorldMap, to url: URL) throws {
 }
 ```
 
-To restore the world map the next time your app launches, use [`NSKeyedUnarchiver`](https://developer.apple.com/documentation/Foundation/NSKeyedUnarchiver).
+To restore the world map the next time your app launches, use [`NSKeyedUnarchiver`](https://developer.apple.com/documentation/foundation/nskeyedunarchiver).
 
 ```swift
 func loadWorldMap(from url: URL) throws -> ARWorldMap {
@@ -53,9 +53,9 @@ For more information, see [`Saving and loading world data`](saving-and-loading-w
 
 With two devices tracking the same world map, you can build a networked experience in which both users can see and interact with the same virtual content. To send an [`ARWorldMap`](arworldmap.md) to another device:
 
-1. On one device, use [`NSKeyedArchiver`](https://developer.apple.com/documentation/Foundation/NSKeyedArchiver) to convert the world map to a data object. You don’t need to write the data to a file to send it over the network.
-2. Use the networking technology of your choice to send the resulting data to another device. For example, in a [`Multipeer Connectivity`](https://developer.apple.com/documentation/MultipeerConnectivity) session, call [`send(_:toPeers:with:)`](https://developer.apple.com/documentation/MultipeerConnectivity/MCSession/send(_:toPeers:with:)) to send data, and implement [`MCSessionDelegate`](https://developer.apple.com/documentation/MultipeerConnectivity/MCSessionDelegate) methods on the other device to receive data.
-3. On the receiving device, use [`NSKeyedUnarchiver`](https://developer.apple.com/documentation/Foundation/NSKeyedUnarchiver) to instantiate an [`ARWorldMap`](arworldmap.md) from the data.
+1. On one device, use [`NSKeyedArchiver`](https://developer.apple.com/documentation/foundation/nskeyedarchiver) to convert the world map to a data object. You don’t need to write the data to a file to send it over the network.
+2. Use the networking technology of your choice to send the resulting data to another device. For example, in a [`Multipeer Connectivity`](https://developer.apple.com/documentation/multipeerconnectivity) session, call [`send(_:toPeers:with:)`](https://developer.apple.com/documentation/multipeerconnectivity/mcsession/send(_:topeers:with:)) to send data, and implement [`MCSessionDelegate`](https://developer.apple.com/documentation/multipeerconnectivity/mcsessiondelegate) methods on the other device to receive data.
+3. On the receiving device, use [`NSKeyedUnarchiver`](https://developer.apple.com/documentation/foundation/nskeyedunarchiver) to instantiate an [`ARWorldMap`](arworldmap.md) from the data.
 
 For more information, see [`Creating a multiuser AR experience`](creating-a-multiuser-ar-experience.md).
 
@@ -81,17 +81,17 @@ To begin a new session from an existing [`ARWorldMap`](arworldmap.md), set a wor
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCoding](../Foundation/NSCoding.md)
-- [NSCopying](../Foundation/NSCopying.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [NSSecureCoding](../Foundation/NSSecureCoding.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCoding](../foundation/nscoding.md)
+- [NSCopying](../foundation/nscopying.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSSecureCoding](../foundation/nssecurecoding.md)
 
 ## See Also
 

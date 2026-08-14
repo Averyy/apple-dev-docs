@@ -7,18 +7,18 @@ The `IKImageBrowserItem` informal protocol declares the methods that an instance
 ## Topics
 
 ### Providing Required Information for an Image
-- [func imageUID() -> String!](../ObjectiveC/NSObject-swift.class/imageUID.md)
+- [func imageUID() -> String!](../objectivec/nsobject-swift.class/imageuid.md)
   Returns a unique string that identifies the data source item.
-- [func imageRepresentationType() -> String!](../ObjectiveC/NSObject-swift.class/imageRepresentationType.md)
+- [func imageRepresentationType() -> String!](../objectivec/nsobject-swift.class/imagerepresentationtype.md)
   Returns the representation type of the image to display.
-- [func imageRepresentation() -> Any!](../ObjectiveC/NSObject-swift.class/imageRepresentation.md)
+- [func imageRepresentation() -> Any!](../objectivec/nsobject-swift.class/imagerepresentation.md)
   Returns the image to display.
 ### Providing Optional Information for an Image
-- [func imageVersion() -> Int](../ObjectiveC/NSObject-swift.class/imageVersion.md)
+- [func imageVersion() -> Int](../objectivec/nsobject-swift.class/imageversion.md)
   Returns the version of the item.
-- [func imageTitle() -> String!](../ObjectiveC/NSObject-swift.class/imageTitle.md)
+- [func imageTitle() -> String!](../objectivec/nsobject-swift.class/imagetitle.md)
   Returns the display title of the image.
-- [func imageSubtitle() -> String!](../ObjectiveC/NSObject-swift.class/imageSubtitle.md)
+- [func imageSubtitle() -> String!](../objectivec/nsobject-swift.class/imagesubtitle.md)
   Returns the display subtitle of the image.
 ### Constants
 - [Image Representation Types](image-representation-types.md)

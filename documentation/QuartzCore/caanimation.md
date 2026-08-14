@@ -33,7 +33,7 @@ You can animate the contents of your iOS or macOS app’s user interface by atta
 
 ##### Animating Scene Kit Content
 
-In Scene Kit, animation objects represent not only property-based animations, but also animations of geometry data created with external 3D authoring tools and loaded from a scene file. You use the properties of the [`CAAnimation`](caanimation.md) object representing a geometry animation to control its timing, monitor its progress, and attach actions for Scene Kit to trigger during the animation. You can attach animations to Scene Kit objects that adopt the [`SCNAnimatable`](https://developer.apple.com/documentation/SceneKit/SCNAnimatable) protocol, including nodes, geometries, and materials.
+In Scene Kit, animation objects represent not only property-based animations, but also animations of geometry data created with external 3D authoring tools and loaded from a scene file. You use the properties of the [`CAAnimation`](caanimation.md) object representing a geometry animation to control its timing, monitor its progress, and attach actions for Scene Kit to trigger during the animation. You can attach animations to Scene Kit objects that adopt the [`SCNAnimatable`](https://developer.apple.com/documentation/scenekit/scnanimatable) protocol, including nodes, geometries, and materials.
 
 In a Scene Kit app, [`CAAnimation`](caanimation.md) objects support additional methods and properties, listed under Controlling SceneKit Animation Timing, Fading between SceneKit Animations, and Attaching SceneKit Animation Events.
 
@@ -77,7 +77,7 @@ In a Scene Kit app, [`CAAnimation`](caanimation.md) objects support additional m
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Inherited By
 - [CAAnimationGroup](caanimationgroup.md)
 - [CAPropertyAnimation](capropertyanimation.md)
@@ -85,18 +85,18 @@ In a Scene Kit app, [`CAAnimation`](caanimation.md) objects support additional m
 ### Conforms To
 - [CAAction](caaction.md)
 - [CAMediaTiming](camediatiming.md)
-- [CVarArg](../Swift/CVarArg.md)
-- [Copyable](../Swift/Copyable.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Escapable](../Swift/Escapable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCoding](../Foundation/NSCoding.md)
-- [NSCopying](../Foundation/NSCopying.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [NSSecureCoding](../Foundation/NSSecureCoding.md)
-- [SCNAnimationProtocol](../SceneKit/SCNAnimationProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [Copyable](../swift/copyable.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Escapable](../swift/escapable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCoding](../foundation/nscoding.md)
+- [NSCopying](../foundation/nscopying.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [SCNAnimationProtocol](../scenekit/scnanimationprotocol.md)
 
 ## See Also
 

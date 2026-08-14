@@ -22,7 +22,7 @@ let MPMediaItemPropertyTitle: String
 
 #### Discussion
 
-This property is unrelated to the [`MPMediaItemPropertyAlbumTitle`](mpmediaitempropertyalbumtitle.md) property. Value is an [`NSString`](https://developer.apple.com/documentation/Foundation/NSString) object.
+This property is unrelated to the [`MPMediaItemPropertyAlbumTitle`](mpmediaitempropertyalbumtitle.md) property. Value is an [`NSString`](https://developer.apple.com/documentation/foundation/nsstring) object.
 
 Can be used to build a media property predicate as described in [`MPMediaPropertyPredicate`](mpmediapropertypredicate.md).
 

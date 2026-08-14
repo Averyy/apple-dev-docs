@@ -22,7 +22,7 @@ static let adaptiveImageGlyph: NSAttributedString.Key
 
 #### Discussion
 
-The value of this attribute is an [`NSAdaptiveImageGlyph`](https://developer.apple.com/documentation/AppKit/NSAdaptiveImageGlyph) object. The default value of this property is `nil`, which indicates there is no adaptive image glyph.
+The value of this attribute is an [`NSAdaptiveImageGlyph`](https://developer.apple.com/documentation/appkit/nsadaptiveimageglyph) object. The default value of this property is `nil`, which indicates there is no adaptive image glyph.
 
 ## See Also
 

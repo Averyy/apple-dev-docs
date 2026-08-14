@@ -24,7 +24,7 @@ func SparseMultiply(_ A: SparseMatrix_Double, _ x: DenseVector_Double, _ y: Dens
 
 Use this function to multiply a sparse matrix by a dense vector. The following equation is an example of a matrix-vector multiplication where the matrix is sparse:
 
-![A mathematical formula that describes the matrix multiplication, y equals A x. A four-by-four matrix multiplied by a four-element column matrix equals a four-element column matrix.](https://docs-assets.developer.apple.com/published/9406934bd806c7408071cd9ac63c240e/media-3703085%402x.png)
+![A mathematical formula that describes the matrix multiplication, y equals A x. A four-by-four matrix multiplied by a four-element column matrix equals a four-element column matrix.](/images/com.apple.accelerate/media-3703085@2x.png)
 
 Call [`SparseMultiply(_:_:_:)`](sparsemultiply(_:_:_:)-9d57s.md) to calculate the result.
 

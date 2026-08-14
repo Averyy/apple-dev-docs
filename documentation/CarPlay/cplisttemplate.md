@@ -37,12 +37,12 @@ To display the list, call your interface controller’s [`pushTemplate(_:animate
 
 For audio and communication apps, CarPlay provides an *assistant cell* to let users interact with your app using Siri_._
 
-![Screenshot that shows the assistant cell at the top of a list template.](https://docs-assets.developer.apple.com/published/ddb3b9bcc13948f8ba4c7ceeb86fdef5/media-3786976%402x.png)
+![Screenshot that shows the assistant cell at the top of a list template.](/images/com.apple.carplay/media-3786976@2x.png)
 
 To enable the assistant cell, your app must support specific Siri intents:
 
-- To play audio, audio apps must support [`INPlayMediaIntent`](https://developer.apple.com/documentation/Intents/INPlayMediaIntent).
-- To make phone calls, communication apps must support [`INStartCallIntent`](https://developer.apple.com/documentation/Intents/INStartCallIntent).
+- To play audio, audio apps must support [`INPlayMediaIntent`](https://developer.apple.com/documentation/intents/inplaymediaintent).
+- To make phone calls, communication apps must support [`INStartCallIntent`](https://developer.apple.com/documentation/intents/instartcallintent).
 
 To enable the assistant cell in your list template, use [`init(title:sections:assistantCellConfiguration:)`](cplisttemplate/init(title:sections:assistantcellconfiguration:).md) and provide the required configuration. For more information, see [`CPAssistantCellConfiguration`](cpassistantcellconfiguration.md). CarPlay automatically updates your app’s interface if you change the template’s [`assistantCellConfiguration`](cplisttemplate/assistantcellconfiguration.md) property.
 
@@ -112,16 +112,16 @@ To enable the assistant cell in your list template, use [`init(title:sections:as
 - [CPTemplate](cptemplate.md)
 ### Conforms To
 - [CPBarButtonProviding](cpbarbuttonproviding.md)
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCoding](../Foundation/NSCoding.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [NSSecureCoding](../Foundation/NSSecureCoding.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCoding](../foundation/nscoding.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

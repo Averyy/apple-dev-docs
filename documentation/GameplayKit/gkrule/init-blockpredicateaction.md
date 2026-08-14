@@ -25,7 +25,7 @@ A new rule object.
 
 #### Discussion
 
-Rules created using this method can run arbitrary code in their predicate and action, but do not encode their predicate or action when archiving with the [`NSKeyedArchiver`](https://developer.apple.com/documentation/Foundation/NSKeyedArchiver) class. For archivable rules, use the [`GKRule`](gkrule.md) methods listed in Creating Data-Driven Rules.
+Rules created using this method can run arbitrary code in their predicate and action, but do not encode their predicate or action when archiving with the [`NSKeyedArchiver`](https://developer.apple.com/documentation/foundation/nskeyedarchiver) class. For archivable rules, use the [`GKRule`](gkrule.md) methods listed in Creating Data-Driven Rules.
 
 ## Parameters
 

@@ -14,9 +14,9 @@ Core Transferable defines a set of transfer representations and modifiers that y
 
 Core Transferable defines three main transfer representations: [`DataRepresentation`](datarepresentation.md), [`FileRepresentation`](filerepresentation.md), and [`CodableRepresentation`](codablerepresentation.md). Use [`DataRepresentation`](datarepresentation.md) for model types where the entire model is stored in memory, and use [`FileRepresentation`](filerepresentation.md) for types stored on disk.
 
-You use [`CodableRepresentation`](codablerepresentation.md) as convenient way to create a transfer representation if your model is already `Codable` or you can easily make it `Codable`. For more information on making a type `Codable`, see [`Encoding and Decoding Custom Types`](https://developer.apple.com/documentation/Foundation/encoding-and-decoding-custom-types).
+You use [`CodableRepresentation`](codablerepresentation.md) as convenient way to create a transfer representation if your model is already `Codable` or you can easily make it `Codable`. For more information on making a type `Codable`, see [`Encoding and Decoding Custom Types`](https://developer.apple.com/documentation/foundation/encoding-and-decoding-custom-types).
 
-> ❗ **Important**: If you use a `CodableRepresentation`, you’re often defining a new data type as well. As a result, include corresponding entries in the app’s `Info.plist`. For more information, see [`Defining file and data types for your app`](https://developer.apple.com/documentation/UniformTypeIdentifiers/defining-file-and-data-types-for-your-app).
+> ❗ **Important**: If you use a `CodableRepresentation`, you’re often defining a new data type as well. As a result, include corresponding entries in the app’s `Info.plist`. For more information, see [`Defining file and data types for your app`](https://developer.apple.com/documentation/uniformtypeidentifiers/defining-file-and-data-types-for-your-app).
 
 Use the [`ProxyRepresentation`](proxyrepresentation.md) type to let another type that conforms to `Transferable` take on the responsibility of representing your type. Common types like strings, data, and images are already `Transferable`, and you can use them as proxy representations in some common contexts.
 

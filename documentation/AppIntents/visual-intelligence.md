@@ -11,9 +11,9 @@ People use visual intelligence to learn about the places and objects they see in
 ## Topics
 
 ### Visual intelligence integration
-- [Integrating your app with visual intelligence](../VisualIntelligence/integrating-your-app-with-visual-intelligence.md)
+- [Integrating your app with visual intelligence](../visualintelligence/integrating-your-app-with-visual-intelligence.md)
   Enable people to find app content that matches their surroundings or objects onscreen with visual intelligence.
-- [Visual Intelligence](../VisualIntelligence/VisualIntelligence.md)
+- [Visual Intelligence](../visualintelligence/visualintelligence.md)
   Include your app’s content in search results that visual intelligence provides.
 - [protocol IntentValueQuery](intentvaluequery.md)
   A query that provides entity values to the system; for example, for visual intelligence search.

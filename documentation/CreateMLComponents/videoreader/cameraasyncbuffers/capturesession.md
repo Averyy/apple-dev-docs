@@ -20,7 +20,7 @@ var captureSession: AVCaptureSession { get }
 
 #### Discussion
 
-You can use the capture session to create a preview with [`AVCaptureVideoPreviewLayer`](https://developer.apple.com/documentation/AVFoundation/AVCaptureVideoPreviewLayer) and to configure the input device, for example switching the input camera.
+You can use the capture session to create a preview with [`AVCaptureVideoPreviewLayer`](https://developer.apple.com/documentation/avfoundation/avcapturevideopreviewlayer) and to configure the input device, for example switching the input camera.
 
 ```None
 let sequence = try await VideoReader.readCamera(configuration: configuration)

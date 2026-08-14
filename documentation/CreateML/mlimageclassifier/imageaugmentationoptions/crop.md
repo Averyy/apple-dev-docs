@@ -22,7 +22,7 @@ static let crop: MLImageClassifier.ImageAugmentationOptions
 
 Use this option to tell the image classifier to augment your training data set by creating cropped versions of the original images.
 
-![Diagram showing how the original image results in four cropped variants.](https://docs-assets.developer.apple.com/published/529fb15d27869175679a6b8a5dfa79ef/MLImageClassifier-ImageAugmentationOptions-crop-1%402x.png)
+![Diagram showing how the original image results in four cropped variants.](/images/com.apple.createml/MLImageClassifier-ImageAugmentationOptions-crop-1@2x.png)
 
 The classifier creates four new images with random amounts of crop for each original.
 

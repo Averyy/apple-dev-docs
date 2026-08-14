@@ -30,14 +30,14 @@ When your application no longer needs the index, dispose of it by calling [`SKIn
 
 ##### 1680604
 
-You cannot use [`CFMakeCollectable`](https://developer.apple.com/documentation/corefoundation/1521163-cfmakecollectable) with [`SKIndex`](skindex.md) objects.
+You cannot use [`CFMakeCollectable`](https://developer.apple.com/documentation/corefoundation/cfmakecollectable) with [`SKIndex`](skindex.md) objects.
 
 ## Parameters
 
 - `inURL`: The location of the index.
-- `inIndexName`: The name of the index. If you call this function with   set to  , Search Kit assigns the index the default index name  . If you then attempt to create a second index in the same file without assigning a name, no second index is created and this function returns  . Search Kit does not currently support retrieving index names from an index.
-- `inIndexType`: The index type. See  .
-- `inAnalysisProperties`: The text analysis properties dictionary, which optionally sets the minimum term length, stopwords, term substitutions, maximum unique terms to index, and proximity support (for phrase-based searches) when creating the index. See  . To get the analysis properties of an index, use the   function. The   parameter can be  , in which case Search Kit applies the default dictionary, which is  .
+- `inIndexName`: The name of the index. If you call this function with `inIndexName` set to `NULL`, Search Kit assigns the index the default index name `IADefaultIndex`. If you then attempt to create a second index in the same file without assigning a name, no second index is created and this function returns `NULL`. Search Kit does not currently support retrieving index names from an index.
+- `inIndexType`: The index type. See [`SKIndexType`](skindextype.md).
+- `inAnalysisProperties`: The text analysis properties dictionary, which optionally sets the minimum term length, stopwords, term substitutions, maximum unique terms to index, and proximity support (for phrase-based searches) when creating the index. See [`Text Analysis Keys`](search_kit/text_analysis_keys.md). To get the analysis properties of an index, use the [`SKIndexGetAnalysisProperties(_:)`](1443461-skindexgetanalysisproperties.md) function. The `inAnalysisProperties` parameter can be `NULL`, in which case Search Kit applies the default dictionary, which is `NULL`.
 
 ## See Also
 

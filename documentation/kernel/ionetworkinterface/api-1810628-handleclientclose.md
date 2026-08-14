@@ -20,7 +20,7 @@ This method is called by `handleClose()` to allow a subclass to handle a client 
 ## Parameters
 
 - `client`: The client object requesting the close.
-- `options`: Options same options passed to  .
+- `options`: Options same options passed to `handleClose()`.
 
 ## See Also
 

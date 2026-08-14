@@ -21,7 +21,7 @@ case dedicated
 
 #### Discussion
 
-Each view receives its own dedicated texture, and the type of each texture is [`MTLTextureType.type2D`](https://developer.apple.com/documentation/Metal/MTLTextureType/type2D). Because each texture is separate, when there are multiple textures, you must perform a separate render pass for each texture.
+Each view receives its own dedicated texture, and the type of each texture is [`MTLTextureType.type2D`](https://developer.apple.com/documentation/metal/mtltexturetype/type2d). Because each texture is separate, when there are multiple textures, you must perform a separate render pass for each texture.
 
 ## See Also
 

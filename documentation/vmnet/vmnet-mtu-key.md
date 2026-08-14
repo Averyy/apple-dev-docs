@@ -17,7 +17,7 @@ let vmnet_mtu_key: UnsafePointer<CChar>
 
 #### Discussion
 
-The value for this key is of type [`XPC_TYPE_UINT64`](https://developer.apple.com/documentation/XPC/XPC_TYPE_UINT64-swift.var).
+The value for this key is of type [`XPC_TYPE_UINT64`](https://developer.apple.com/documentation/xpc/xpc_type_uint64-swift.var).
 
 ## See Also
 

@@ -37,7 +37,7 @@ Configure the menu dismissal behavior for a view hierarchy using the [`menuActio
 ## Relationships
 
 ### Conforms To
-- [Equatable](../Swift/Equatable.md)
+- [Equatable](../swift/equatable.md)
 
 ## See Also
 

@@ -27,7 +27,7 @@ The system posts a [`AVRouteDetectorMultipleRoutesDetectedDidChangeNotification`
 
 - [var isRouteDetectionEnabled: Bool](avroutedetector/isroutedetectionenabled.md)
   A Boolean value that indicates whether route detection is in an enabled state.
-- [static let AVRouteDetectorMultipleRoutesDetectedDidChange: NSNotification.Name](../Foundation/NSNotification/Name-swift.struct/AVRouteDetectorMultipleRoutesDetectedDidChange.md)
+- [static let AVRouteDetectorMultipleRoutesDetectedDidChange: NSNotification.Name](../foundation/nsnotification/name-swift.struct/avroutedetectormultipleroutesdetecteddidchange.md)
   A notification the system posts when changes occur to its detected routes.
 
 

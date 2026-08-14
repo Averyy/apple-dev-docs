@@ -19,7 +19,7 @@ var rendersCameraGrain: Bool { get set }
 
 Enabled by default. When set, SceneKit adds a camera grain effect to your app’s virtual content that matches the image noise characteristics ARKit observes in the camera feed.
 
-![Screenshot showing the before and after cases of applying image noise to an app’s virtual content.](https://docs-assets.developer.apple.com/published/91ac97857a79016f3be51942ca95e735/media-3281981%402x.png)
+![Screenshot showing the before and after cases of applying image noise to an app’s virtual content.](/images/com.apple.arkit/media-3281981@2x.png)
 
 ## See Also
 

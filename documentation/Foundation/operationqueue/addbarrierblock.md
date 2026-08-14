@@ -22,7 +22,7 @@ func addBarrierBlock(_ barrier: @escaping @Sendable () -> Void)
 
 #### Discussion
 
-This method is similar to [`dispatch_barrier_async`](https://developer.apple.com/documentation/Dispatch/dispatch_barrier_async).
+This method is similar to [`dispatch_barrier_async`](https://developer.apple.com/documentation/dispatch/dispatch_barrier_async).
 
 ## Parameters
 

@@ -17,7 +17,7 @@ class CARemoteLayerServer
 
 #### Overview
 
-`CARemoteLaterServer` is a legacy class for cross-process rendering. [`IOSurfaceCreateMachPort(_:)`](https://developer.apple.com/documentation/IOSurface/IOSurfaceCreateMachPort(_:)) and [`IOSurfaceCreateXPCObject(_:)`](https://developer.apple.com/documentation/IOSurface/IOSurfaceCreateXPCObject(_:)), available with [`IOSurface`](https://developer.apple.com/documentation/IOSurface/IOSurface), offer an improved way to perform cross-process rendering.
+`CARemoteLaterServer` is a legacy class for cross-process rendering. [`IOSurfaceCreateMachPort(_:)`](https://developer.apple.com/documentation/iosurface/iosurfacecreatemachport(_:)) and [`IOSurfaceCreateXPCObject(_:)`](https://developer.apple.com/documentation/iosurface/iosurfacecreatexpcobject(_:)), available with [`IOSurface`](https://developer.apple.com/documentation/iosurface/iosurface), offer an improved way to perform cross-process rendering.
 
 ## Topics
 
@@ -31,14 +31,14 @@ class CARemoteLayerServer
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

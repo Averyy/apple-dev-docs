@@ -25,7 +25,7 @@ The environment resource that loads from the specified bundle.
 
 #### Discussion
 
-If your image file is at the path `Foo.skybox/Bar.exr` in your Xcode project, use `Bar` for the name parameter. You need to call this function with the `async` keyword from an asynchronous context, such as from within a [`Task`](https://developer.apple.com/documentation/Swift/Task) closure.
+If your image file is at the path `Foo.skybox/Bar.exr` in your Xcode project, use `Bar` for the name parameter. You need to call this function with the `async` keyword from an asynchronous context, such as from within a [`Task`](https://developer.apple.com/documentation/swift/task) closure.
 
 To add an environment resource to your Xcode project, see [`EnvironmentResource`](environmentresource.md).
 

@@ -23,7 +23,7 @@ A result code; see [`Result Codes`](launch_services#1661359.md).
 
 Call [`LSCopyDefaultHandlerForURLScheme(_:)`](1441725-lscopydefaulthandlerforurlscheme.md) to get the current setting of the user’s preferred default handler for a specified content type.
 
-URL handling capability is determined according to the value of the `CFBundleURLTypes` key in an app’s `Info.plist`. For information on the `CFBundleURLTypes` key, see the section “CFBundleURLTypes” in .
+URL handling capability is determined according to the value of the `CFBundleURLTypes` key in an app’s `Info.plist`. For information on the `CFBundleURLTypes` key, see the section “CFBundleURLTypes” in *macOS Runtime Configuration Guidelines*.
 
 ##### 1818418
 
@@ -32,7 +32,7 @@ Thread-safe since OS X v10.4.
 ## Parameters
 
 - `inURLScheme`: The URL scheme for which the handler is to be set.
-- `inHandlerBundleID`: The bundle identifier that is to be set as the handler for the URL scheme specified by  .
+- `inHandlerBundleID`: The bundle identifier that is to be set as the handler for the URL scheme specified by `inURLScheme`.
 
 ## See Also
 

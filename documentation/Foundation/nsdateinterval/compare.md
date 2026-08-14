@@ -32,7 +32,7 @@ Returns an [`ComparisonResult`](comparisonresult.md) value that indicates the te
 
 The following figure illustrates four `NSDateInterval` objects plotted on an arbitrary time axis. Each date interval spans its [`duration`](nsdateinterval/duration.md) from left to right, from its [`startDate`](nsdateinterval/startdate.md) to its [`endDate`](nsdateinterval/enddate.md).
 
-![None](https://docs-assets.developer.apple.com/published/62f0900557039aff36d72008ce7f3ba3/media-2556955%402x.png)
+![None](/images/com.apple.foundation/media-2556955@2x.png)
 
 The result of comparing the date interval labeled **A** with the date interval labeled **B** is [`ComparisonResult.orderedAscending`](comparisonresult/orderedascending.md), because **A** has a [`startDate`](nsdateinterval/startdate.md) that occurs earlier than that of **B**.
 

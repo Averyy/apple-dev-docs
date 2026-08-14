@@ -22,7 +22,7 @@ var timeRangeValue: CMTimeRange { get }
 
 ## See Also
 
-- [struct CMTimeRange](../CoreMedia/CMTimeRange.md)
+- [struct CMTimeRange](../coremedia/cmtimerange.md)
   A structure that represents a time range.
 - [init(CMTime: CMTime)](nsvalue/init(cmtime:).md)
   Creates a new value object containing the specified CoreMedia time structure.

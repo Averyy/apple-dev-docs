@@ -25,7 +25,7 @@ A provider may deliver messages via the message method to its clients informing 
 
 ## Parameters
 
-- `messageType`: A type defined in   or defined by the provider family.
+- `messageType`: A type defined in `IOMessage.h` or defined by the provider family.
 - `client`: A client of the IOService to send the message.
 - `messageArgument`: An argument defined by the provider family, not used by IOService.
 - `argSize`: Specifies the size of messageArgument, in bytes. If argSize is non-zero, messageArgument is treated as a pointer to argSize bytes of data. If argSize is 0 (the default), messageArgument is treated as an ordinal and passed by value.

@@ -27,7 +27,7 @@ Use of this method is discouraged in iOS 4.0 and later. If you are using the blo
 
 ## Parameters
 
-- `selector`: The message to send to the animation delegate before animations start. The default value is `NULL`. This selector should be of the form: `- (void)animationDidStart:(NSString *)animationID context:(void *)context`. Your method must take the following arguments: - `animationID` An [`NSString`](https://developer.apple.com/documentation/Foundation/NSString) containing an optional application-supplied identifier. This is the identifier string that is passed to the [`beginAnimations(_:context:)`](uiview/beginanimations(_:context:).md) method. This argument can be `nil`. - `context` An optional application-supplied context. This is the context data passed to the [`beginAnimations(_:context:)`](uiview/beginanimations(_:context:).md) method. This argument can be `nil`.
+- `selector`: The message to send to the animation delegate before animations start. The default value is `NULL`. This selector should be of the form: `- (void)animationDidStart:(NSString *)animationID context:(void *)context`. Your method must take the following arguments: - `animationID` An [`NSString`](https://developer.apple.com/documentation/foundation/nsstring) containing an optional application-supplied identifier. This is the identifier string that is passed to the [`beginAnimations(_:context:)`](uiview/beginanimations(_:context:).md) method. This argument can be `nil`. - `context` An optional application-supplied context. This is the context data passed to the [`beginAnimations(_:context:)`](uiview/beginanimations(_:context:).md) method. This argument can be `nil`.
 
 ## See Also
 

@@ -183,7 +183,7 @@ It is important to consider the possible types of archiving that a coder support
 
 - [Encoding and Decoding Custom Types](encoding-and-decoding-custom-types.md)
   Make your data types encodable and decodable for compatibility with external representations such as JSON.
-- [typealias Codable](../Swift/Codable.md)
+- [typealias Codable](../swift/codable.md)
   A type that can convert itself into and out of an external representation.
 - [protocol NSSecureCoding](nssecurecoding.md)
   A protocol that enables encoding and decoding in a manner that is robust against object substitution attacks.

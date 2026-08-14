@@ -22,7 +22,7 @@ func NSCompareHashTables(_ table1: NSHashTable<AnyObject>, _ table2: NSHashTable
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/Swift/true) if the two hash tables are equal—that is, if each element of `table1` is in `table2` and the two tables are the same size, otherwise [`false`](https://developer.apple.com/documentation/Swift/false).
+[`true`](https://developer.apple.com/documentation/swift/true) if the two hash tables are equal—that is, if each element of `table1` is in `table2` and the two tables are the same size, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
 
 ## See Also
 

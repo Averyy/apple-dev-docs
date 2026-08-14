@@ -20,7 +20,7 @@ var informativeText: String? { get set }
 
 Use this property to display additional information about the contact. For example, their address or a short bio.
 
-The default value is [`nil`](https://developer.apple.com/documentation/ObjectiveC/nil-227m0).
+The default value is [`nil`](https://developer.apple.com/documentation/objectivec/nil-227m0).
 
 ## See Also
 

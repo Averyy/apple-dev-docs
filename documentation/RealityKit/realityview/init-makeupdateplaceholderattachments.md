@@ -35,7 +35,7 @@ RealityView { content, attachments in
 
 - `make`: An asynchronous closure that configures the initial content of the new `RealityView`. This closure is asynchronous to keep your app’s UI responsive while you load content to populate this view.
 - `update`: An optional closure that updates the `RealityView` instance’s content as the view’s state changes.
-- `placeholder`: A temporary view that the [`RealityView`](realityview.md) displays until your closure for the `make` parameter completes. For example, you can display a loading indicator with a [`ProgressView`](https://developer.apple.com/documentation/SwiftUI/ProgressView) instance as a placeholder.
+- `placeholder`: A temporary view that the [`RealityView`](realityview.md) displays until your closure for the `make` parameter completes. For example, you can display a loading indicator with a [`ProgressView`](https://developer.apple.com/documentation/swiftui/progressview) instance as a placeholder.
 - `attachments`: An attachment content builder that adds attachment views to the content of the `RealityView`.
 
 ## See Also

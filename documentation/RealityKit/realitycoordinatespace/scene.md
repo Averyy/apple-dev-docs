@@ -23,7 +23,7 @@ static var scene: SceneRealityCoordinateSpace { get }
 
 In a visionOS window or volume, or when using the [`virtual`](realityviewcamera/virtual.md) camera on any other platform, this space represents the center of the scene’s owning [`RealityView`](realityview.md).
 
-When in a visionOS Immersive Space, or using the `RealityViewCamera/worldTracking` camera in iOS, the `scene` coordinate space is the [`ARKit`](https://developer.apple.com/documentation/ARKit) world origin.
+When in a visionOS Immersive Space, or using the `RealityViewCamera/worldTracking` camera in iOS, the `scene` coordinate space is the [`ARKit`](https://developer.apple.com/documentation/arkit) world origin.
 
 > **Note**: This static type is equivalent to a [`SceneRealityCoordinateSpace`](scenerealitycoordinatespace.md) instance.
 

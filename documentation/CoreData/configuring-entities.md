@@ -15,7 +15,7 @@ After you create a Core Data model as described in [`Creating a Core Data model`
 1. Click Add Entity at the bottom of the editor area. A new entity with placeholder name `Entity` appears in the Entities list.
 2. In the Entities list, double-click the newly added entity and rename it. This step updates both the entity name and class name visible in the Data Model inspector.
 
-![A screenshot of Xcode’s Data Model editor, highlighting the Entities list on the left, the Data Model inspector on the right, and the Add Entity button in the toolbar at the bottom.](https://docs-assets.developer.apple.com/published/03b919c6f4246db81536152209fc34e2/media-3842665%402x.png)
+![A screenshot of Xcode’s Data Model editor, highlighting the Entities list on the left, the Data Model inspector on the right, and the Add Entity button in the toolbar at the bottom.](/images/com.apple.coredata/media-3842665@2x.png)
 
 In addition to the required name and class name fields, entities have a default setting for the required code generation field. If you need to add inheritance, unique constraints, versioning, or other optional information, configure your entity as described below. Otherwise, add the properties that compose your entity as described in [`Configuring Attributes`](configuring-attributes.md).
 
@@ -36,9 +36,9 @@ For information about the options for code generation, see [`Generating code`](g
 
 Unique constraints prevent duplicate records in the store. When saving a new record, the store checks whether any record already exists with the same value for the constrained attribute. In the case of a conflict, [`NSMergePolicyType.mergeByPropertyObjectTrumpMergePolicyType`](nsmergepolicytype/mergebypropertyobjecttrumpmergepolicytype.md) causes the new record to overwrite all fields in the existing record.
 
-- **Spotlight Display Name**: An [`NSExpression`](https://developer.apple.com/documentation/Foundation/NSExpression) that Core Spotlight uses to display an instance of this entity. This expression may include keypaths,  language functions like [`lowercased()`](https://developer.apple.com/documentation/Swift/String/lowercased()) and [`uppercased()`](https://developer.apple.com/documentation/Swift/String/uppercased()), and custom functions.
+- **Spotlight Display Name**: An [`NSExpression`](https://developer.apple.com/documentation/foundation/nsexpression) that Core Spotlight uses to display an instance of this entity. This expression may include keypaths,  language functions like [`lowercased()`](https://developer.apple.com/documentation/swift/string/lowercased()) and [`uppercased()`](https://developer.apple.com/documentation/swift/string/uppercased()), and custom functions.
 
-For more information, see [`Core Spotlight`](https://developer.apple.com/documentation/CoreSpotlight).
+For more information, see [`Core Spotlight`](https://developer.apple.com/documentation/corespotlight).
 
 - **User Info**: A dictionary in which you can optionally store any application-specific information related to the entity.
 - **Versioning Hash Modifier**: Provide a hash modifier when maintaining multiple model versions if the structure of an entity is the same, but the format or content of its data has changed.

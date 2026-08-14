@@ -22,7 +22,7 @@ typealias Element = Character
 
 #### Discussion
 
-[`AsyncCharacterSequence`](asynccharactersequence.md) produces elements of type [`Character`](https://developer.apple.com/documentation/Swift/Character).
+[`AsyncCharacterSequence`](asynccharactersequence.md) produces elements of type [`Character`](https://developer.apple.com/documentation/swift/character).
 
 
 ---

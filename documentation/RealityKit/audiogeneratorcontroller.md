@@ -80,8 +80,8 @@ Call [`stop()`](audiogeneratorcontroller/stop().md) to halt the audio, and [`pla
 ## Relationships
 
 ### Conforms To
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

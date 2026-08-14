@@ -16,7 +16,7 @@ Add auto layout constraints to your app to achieve localizable views.
 
 ## See Also
 
-- [Preparing views for localization](../SwiftUI/Preparing-views-for-localization.md)
+- [Preparing views for localization](../swiftui/preparing-views-for-localization.md)
   Specify hints and add strings to localize your SwiftUI views.
 - [Localization-friendly layouts in macOS](localization-friendly-layouts-in-macos.md)
   This project demonstrates localization-friendly auto layout constraints.

@@ -10,7 +10,7 @@ AudioAccessoryKit lets you provide information to the system to support audio sw
 
 #### Pair and Register Your Accessory
 
-Before configuring audio features, pair your accessory using [`AccessorySetupKit`](https://developer.apple.com/documentation/AccessorySetupKit). After pairing completes successfully, you receive an [`ASAccessory`](https://developer.apple.com/documentation/AccessorySetupKit/ASAccessory) object from the system that represents your paired device.  You use that object in your container app to register the device with AudioAccessoryKit.
+Before configuring audio features, pair your accessory using [`AccessorySetupKit`](https://developer.apple.com/documentation/accessorysetupkit). After pairing completes successfully, you receive an [`ASAccessory`](https://developer.apple.com/documentation/accessorysetupkit/asaccessory) object from the system that represents your paired device.  You use that object in your container app to register the device with AudioAccessoryKit.
 
 After pairing your accessory with the system, create an [`AccessoryControlDevice`](accessorycontroldevice.md) for your accessory and the capabilities it supports. For automatic audio switching, specify the [`audioSwitching`](accessorycontroldevice/capabilities/audioswitching.md) and [`placement`](accessorycontroldevice/capabilities/placement.md) capabilities, as demonstrated below:
 

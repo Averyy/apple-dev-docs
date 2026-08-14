@@ -37,7 +37,7 @@ function mySlideshow() {
 ## Parameters
 
 - `imageRequests`: An array of image request objects.
-- `options`: An optional set of options that modify the slideshow. If no options are specified, a default of   or  is used.
+- `options`: An optional set of options that modify the slideshow. If no options are specified, a default of `false` or `0`is used.
 - `exitCB`: An optional callback function that is called when the slideshow is dismissed. If this parameter is not specified, the page on top of the navigation stack is displayed.
 
 ## See Also

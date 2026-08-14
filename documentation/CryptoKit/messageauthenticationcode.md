@@ -37,13 +37,13 @@ protocol MessageAuthenticationCode : ContiguousBytes, CustomStringConvertible, H
 ## Relationships
 
 ### Inherits From
-- [ContiguousBytes](../Foundation/ContiguousBytes.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
-- [Sequence](../Swift/Sequence.md)
+- [ContiguousBytes](../foundation/contiguousbytes.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sequence](../swift/sequence.md)
 ### Conforming Types
 - [HashedAuthenticationCode](hashedauthenticationcode.md)
 

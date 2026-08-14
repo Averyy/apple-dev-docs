@@ -29,7 +29,7 @@ struct ViewAttachmentComponent
 
 ### Conforms To
 - [Component](component.md)
-- [Identifiable](../Swift/Identifiable.md)
+- [Identifiable](../swift/identifiable.md)
 - [TransientComponent](transientcomponent.md)
 
 ## See Also

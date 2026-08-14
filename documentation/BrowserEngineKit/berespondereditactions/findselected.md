@@ -19,7 +19,7 @@ optional func findSelected(_ sender: Any?)
 
 #### Discussion
 
-UIKit calls this method when someone selects Use Selection for Find from an editing menu. Present the UI for finding text in your view, and use the selected text for the search. To present the standard system UI for finding text, and support standard keyboard shortcuts, add a [`UIFindInteraction`](https://developer.apple.com/documentation/UIKit/UIFindInteraction) to your browser text view.
+UIKit calls this method when someone selects Use Selection for Find from an editing menu. Present the UI for finding text in your view, and use the selected text for the search. To present the standard system UI for finding text, and support standard keyboard shortcuts, add a [`UIFindInteraction`](https://developer.apple.com/documentation/uikit/uifindinteraction) to your browser text view.
 
 ## Parameters
 

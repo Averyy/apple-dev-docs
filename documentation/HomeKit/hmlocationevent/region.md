@@ -20,7 +20,7 @@ var region: CLRegion? { get }
 
 #### Discussion
 
-The event is triggered based on the values of the [`notifyOnEntry`](https://developer.apple.com/documentation/CoreLocation/CLRegion/notifyOnEntry) and [`notifyOnExit`](https://developer.apple.com/documentation/CoreLocation/CLRegion/notifyOnExit) properties.
+The event is triggered based on the values of the [`notifyOnEntry`](https://developer.apple.com/documentation/corelocation/clregion/notifyonentry) and [`notifyOnExit`](https://developer.apple.com/documentation/corelocation/clregion/notifyonexit) properties.
 
 This property is `nil` when an application is not authorized for location services.
 

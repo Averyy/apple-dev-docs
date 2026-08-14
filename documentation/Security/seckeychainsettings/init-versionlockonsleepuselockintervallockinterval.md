@@ -20,7 +20,7 @@ init(version: UInt32, lockOnSleep: DarwinBoolean, useLockInterval: DarwinBoolean
 - `version`: The keychain version. Use [`SEC_KEYCHAIN_SETTINGS_VERS1`](sec_keychain_settings_vers1.md).
 - `lockOnSleep`: A Boolean indicating whether the keychain locks when the system enters sleep mode.
 - `useLockInterval`: A Boolean indicating whether the keychain locks after an time period elapses, as given by [`lockInterval`](seckeychainsettings/lockinterval.md).
-- `lockInterval`: The number of seconds after which the keychain should lock if [`useLockInterval`](seckeychainsettings/uselockinterval.md) is [`true`](https://developer.apple.com/documentation/Swift/true).
+- `lockInterval`: The number of seconds after which the keychain should lock if [`useLockInterval`](seckeychainsettings/uselockinterval.md) is [`true`](https://developer.apple.com/documentation/swift/true).
 
 
 ---

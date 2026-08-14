@@ -18,7 +18,7 @@ class CLKComplicationTemplateModularLargeTallBody
 
 This template belongs to the [`CLKComplicationFamily.modularLarge`](clkcomplicationfamily/modularlarge.md) family.
 
-![A diagram showing the layout of the modular large tall body complication. The diagram shows  the header row above a single line of large body text.](https://docs-assets.developer.apple.com/published/df1c175b087cb3a4afbcd51590a6cb81/media-2933748%402x.png)
+![A diagram showing the layout of the modular large tall body complication. The diagram shows  the header row above a single line of large body text.](/images/com.apple.clockkit/media-2933748@2x.png)
 
 ## Topics
 
@@ -36,13 +36,13 @@ This template belongs to the [`CLKComplicationFamily.modularLarge`](clkcomplicat
 ### Inherits From
 - [CLKComplicationTemplate](clkcomplicationtemplate.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCopying](../Foundation/NSCopying.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCopying](../foundation/nscopying.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

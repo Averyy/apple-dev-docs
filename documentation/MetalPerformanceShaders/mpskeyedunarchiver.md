@@ -39,21 +39,21 @@ class MPSKeyedUnarchiver
 ## Relationships
 
 ### Inherits From
-- [NSKeyedUnarchiver](../Foundation/NSKeyedUnarchiver.md)
+- [NSKeyedUnarchiver](../foundation/nskeyedunarchiver.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
 - [MPSDeviceProvider](mpsdeviceprovider.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 
-- [class NSKeyedArchiver](../Foundation/NSKeyedArchiver.md)
+- [class NSKeyedArchiver](../foundation/nskeyedarchiver.md)
   An encoder that stores an object’s data to an archive referenced by keys.
 - [protocol MPSDeviceProvider](mpsdeviceprovider.md)
   An interface that enables the setting of a Metal device for unarchived objects.

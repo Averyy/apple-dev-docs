@@ -22,7 +22,7 @@ When the device is eligible to receive NFC-related events, this type indicates t
 
 You can receive this event in two scenarios:
 
-- When the system calls [`UISceneDelegate`](https://developer.apple.com/documentation/UIKit/UISceneDelegate) method [`scene(_:willConnectTo:options:)`](https://developer.apple.com/documentation/UIKit/UISceneDelegate/scene(_:willConnectTo:options:)), the system created a new scene in response to the event. In this case, check the `connectionOptions` parameter for the presence of the [`nfcEvent`](https://developer.apple.com/documentation/UIKit/UIScene/ConnectionOptions/nfcEvent) member, which is an instance of [`NFCWindowSceneEvent`](nfcwindowsceneevent.md).
+- When the system calls [`UISceneDelegate`](https://developer.apple.com/documentation/uikit/uiscenedelegate) method [`scene(_:willConnectTo:options:)`](https://developer.apple.com/documentation/uikit/uiscenedelegate/scene(_:willconnectto:options:)), the system created a new scene in response to the event. In this case, check the `connectionOptions` parameter for the presence of the [`nfcEvent`](https://developer.apple.com/documentation/uikit/uiscene/connectionoptions/nfcevent) member, which is an instance of [`NFCWindowSceneEvent`](nfcwindowsceneevent.md).
 - When the system calls the [`NFCWindowSceneDelegate`](nfcwindowscenedelegate.md) method [`windowScene(_:didReceiveNFCWindowSceneEvent:)`](nfcwindowscenedelegate/windowscene(_:didreceivenfcwindowsceneevent:).md), the system delivered the event to an existing scene.
 
 In either case, store the event and use it to update the UI for an NFC interaction. The following example shows a scene delegate that handles both scenarios, using a `ViewModel` class to store the event for use by an appropriate view:
@@ -70,11 +70,11 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate, NFCWindowSceneDelegate 
 ## Relationships
 
 ### Conforms To
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Decodable](../Swift/Decodable.md)
-- [Encodable](../Swift/Encodable.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Decodable](../swift/decodable.md)
+- [Encodable](../swift/encodable.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
 
 ## See Also
 

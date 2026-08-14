@@ -32,7 +32,7 @@ When removing an observer, remove it with the most specific detail possible. For
 
 > ❗ **Important**:  You shouldn’t use this method to remove all observers from a long-lived object because your code may not be the only code adding observers that involve the object.
 
-The following example illustrates how to unregister `someObserver` for all previously registered notifications. This is safe to do in the [`dealloc`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class/dealloc) method, but you shouldn’t use it otherwise (use [`removeObserver(_:name:object:)`](notificationcenter/removeobserver(_:name:object:).md) instead).
+The following example illustrates how to unregister `someObserver` for all previously registered notifications. This is safe to do in the [`dealloc`](https://developer.apple.com/documentation/objectivec/nsobject-swift.class/dealloc) method, but you shouldn’t use it otherwise (use [`removeObserver(_:name:object:)`](notificationcenter/removeobserver(_:name:object:).md) instead).
 
 **Swift**:
 

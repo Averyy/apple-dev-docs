@@ -20,7 +20,7 @@ A reference to the new dynamic store session. You must release the returned valu
 
 ## Parameters
 
-- `allocator`: The allocator that should be used to allocate memory for the local dynamic store object. This parameter may be `NULL` in which case the current default allocator is used. If this value is not a valid [`CFAllocator`](https://developer.apple.com/documentation/CoreFoundation/CFAllocator), the behavior is undefined.
+- `allocator`: The allocator that should be used to allocate memory for the local dynamic store object. This parameter may be `NULL` in which case the current default allocator is used. If this value is not a valid [`CFAllocator`](https://developer.apple.com/documentation/corefoundation/cfallocator), the behavior is undefined.
 - `name`: The name of the calling process or plug-in of the caller.
 - `storeOptions`: A dictionary of options for the dynamic store session (such as whether all keys added or set into the dynamic store should be per-session keys). Pass `NULL` if no options are desired. Currently, the available options are: | Key | Value |
 | --- | --- |

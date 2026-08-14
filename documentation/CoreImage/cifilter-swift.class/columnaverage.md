@@ -30,7 +30,7 @@ This method applies the column average filter to an image. This effect calculate
 The column average filter uses the following properties:
 
 - **`inputImage`**: An image with the type [`CIImage`](ciimage.md).
-- **`extent`**: A [`CGRect`](https://developer.apple.com/documentation/CoreFoundation/CGRect) that specifies the subregion of the image that you want to process.
+- **`extent`**: A [`CGRect`](https://developer.apple.com/documentation/corefoundation/cgrect) that specifies the subregion of the image that you want to process.
 
 The following code creates an image containing the average values in the columns from the middle of the image:
 
@@ -43,7 +43,7 @@ func columnAverage(inputImage: CIImage) -> CIImage {
 }
 ```
 
-![Two images arranged horizontally side by side. The left image contains a photograph of three hydrangeas with a background of leaves. The middle of the image is highlighted by an outlined rectangle. The right image contains the result of the column average filter applied to the highlighted region of the image. The right image has been stretched vertically to make it easier to see. It contains colors from the flowers and the leaves.](https://docs-assets.developer.apple.com/published/5ae5fd7ed89eabeb7baf446be91f6f22/media-4331782%402x.png)
+![Two images arranged horizontally side by side. The left image contains a photograph of three hydrangeas with a background of leaves. The middle of the image is highlighted by an outlined rectangle. The right image contains the result of the column average filter applied to the highlighted region of the image. The right image has been stretched vertically to make it easier to see. It contains colors from the flowers and the leaves.](/images/com.apple.coreimage/media-4331782@2x.png)
 
 ## See Also
 

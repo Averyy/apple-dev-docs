@@ -21,7 +21,7 @@ class var vividLight: CIBlendKernel { get }
 
 #### Discussion
 
-![The result of using the vivid light blend kernel (background image is top left, foreground image is bottom left)](https://docs-assets.developer.apple.com/published/8c62673d8ab81285bf31c6f7d365032b/media-2926888%402x.png)
+![The result of using the vivid light blend kernel (background image is top left, foreground image is bottom left)](/images/com.apple.coreimage/media-2926888@2x.png)
 
 ## See Also
 

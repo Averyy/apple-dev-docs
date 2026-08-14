@@ -25,7 +25,7 @@ mutating func appendInterpolation(_ attributedSubstring: AttributedSubstring)
 
 Don’t call this method directly; it’s used by the compiler when interpreting string interpolations.
 
-The following example shows how to use a string interpolation to format an [`AttributedSubstring`](https://developer.apple.com/documentation/Foundation/AttributedSubstring) and append it to static text. The resulting interpolation implicitly creates a [`LocalizedStringKey`](localizedstringkey.md), which a [`Text`](text.md) view uses to provide its content.
+The following example shows how to use a string interpolation to format an [`AttributedSubstring`](https://developer.apple.com/documentation/foundation/attributedsubstring) and append it to static text. The resulting interpolation implicitly creates a [`LocalizedStringKey`](localizedstringkey.md), which a [`Text`](text.md) view uses to provide its content.
 
 ```swift
 struct ContentView: View {

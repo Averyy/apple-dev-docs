@@ -39,7 +39,7 @@ TextField("TouchBar Demo", text: $placeholder)
     .touchBar(touchBarItems)
 ```
 
-![A Touch Bar that shows content you create using a Touch Bar content](https://docs-assets.developer.apple.com/published/b8b2d24bdd0bd4469d5947a800928ab4/SwiftUI-View-touchBar%402x.png)
+![A Touch Bar that shows content you create using a Touch Bar content](/images/com.apple.SwiftUI/SwiftUI-View-touchBar@2x.png)
 
 ## Parameters
 

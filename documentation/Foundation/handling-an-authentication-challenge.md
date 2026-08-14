@@ -25,7 +25,7 @@ As a simple example, consider what happens when you request an `http` URL protec
 
 [`Figure 1`](url_loading_system/handling_an_authentication_challenge#2948287.md) outlines a strategy for responding to the HTTP Basic challenge.
 
-![Decision tree showing states and choices for handling an authentication challenge. The first decision point is whether the received challenge’s authentication method is HTTP Basic; if not, use system default handling. If so, the user is challenged for username and password. The second decision point asks if the user did provide a username and password. If yes, create and use credential; if not, cancel the challenge.](https://docs-assets.developer.apple.com/published/a70a97e52f61df7e7837448151858330/media-2948287%402x.png)
+![Decision tree showing states and choices for handling an authentication challenge. The first decision point is whether the received challenge’s authentication method is HTTP Basic; if not, use system default handling. If so, the user is challenged for username and password. The second decision point asks if the user did provide a username and password. If yes, create and use credential; if not, cancel the challenge.](/images/com.apple.foundation/media-2948287@2x.png)
 
 The following sections implement this strategy.
 

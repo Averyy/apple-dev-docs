@@ -17,7 +17,7 @@ var requiredDeviceCapabilities: Set<String>?
 
 #### Discussion
 
-This set contains one or more [`UIRequiredDeviceCapabilities`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/UIRequiredDeviceCapabilities).
+This set contains one or more [`UIRequiredDeviceCapabilities`](https://developer.apple.com/documentation/bundleresources/information-property-list/uirequireddevicecapabilities).
 
 
 ---

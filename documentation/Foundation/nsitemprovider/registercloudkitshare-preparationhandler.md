@@ -16,9 +16,9 @@ func registerCloudKitShare(preparationHandler: @escaping (@escaping (CKShare?, C
 
 #### Discussion
 
-Use this method to share a hierarchy of CloudKit records with other iCloud users. When the service invokes the handler, create an instance of [`CKShare`](https://developer.apple.com/documentation/CloudKit/CKShare) with a root record. Save the share to the server using [`CKModifyRecordsOperation`](https://developer.apple.com/documentation/CloudKit/CKModifyRecordsOperation). The root record (and its hierarchy) must already exist on the server or be part of the same save operation. After the share saves, call `preparationCompletionHandler` with the saved share and its container. If the save fails, pass the error to the completion handler instead. Invoking the sharing service with a share you register using this method prompts the user to begin sharing.
+Use this method to share a hierarchy of CloudKit records with other iCloud users. When the service invokes the handler, create an instance of [`CKShare`](https://developer.apple.com/documentation/cloudkit/ckshare) with a root record. Save the share to the server using [`CKModifyRecordsOperation`](https://developer.apple.com/documentation/cloudkit/ckmodifyrecordsoperation). The root record (and its hierarchy) must already exist on the server or be part of the same save operation. After the share saves, call `preparationCompletionHandler` with the saved share and its container. If the save fails, pass the error to the completion handler instead. Invoking the sharing service with a share you register using this method prompts the user to begin sharing.
 
-Use the [`NSCloudSharingServiceDelegate`](https://developer.apple.com/documentation/AppKit/NSCloudSharingServiceDelegate) protocol to respond to any changes the sharing service makes.
+Use the [`NSCloudSharingServiceDelegate`](https://developer.apple.com/documentation/appkit/nscloudsharingservicedelegate) protocol to respond to any changes the sharing service makes.
 
 > **Note**:  To modify an existing share, use the [`registerCloudKitShare(_:container:)`](nsitemprovider/registercloudkitshare(_:container:).md) method instead.
 

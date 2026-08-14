@@ -8,14 +8,14 @@ Embed confidential information in items that you store in a keychain.
 
 When you want to store a secret such as a password or cryptographic key, you package it as a keychain item. Along with the data itself, you provide a set of publicly visible attributes both to control the item’s accessibility and to make it searchable. As shown in Figure 1, keychain services handles data encryption and storage (including data attributes) in a keychain, which is an encrypted database stored on disk. Later, authorized processes use keychain services to find the item and decrypt its data.
 
-![Diagram showing data being encrypted and then combined with attributes into a keychain item before being stored in a keychain.](https://docs-assets.developer.apple.com/published/192ae065b3c41c60bff42cbf95f0d33c/media-2891903%402x.png)
+![Diagram showing data being encrypted and then combined with attributes into a keychain item before being stored in a keychain.](/images/com.apple.security/media-2891903@2x.png)
 
 ## Topics
 
 ### Essentials
 - [Using the keychain to manage user secrets](using-the-keychain-to-manage-user-secrets.md)
   Relieve the user of remembering small secrets by storing them in the keychain.
-- [TN3137: On Mac keychain APIs and implementations](../Technotes/tn3137-on-mac-keychains.md)
+- [TN3137: On Mac keychain APIs and implementations](../technotes/tn3137-on-mac-keychains.md)
   Learn how the keychain on macOS differs from other Apple platforms.
 - [class SecKeychainItem](seckeychainitem.md)
   An opaque type that represents a keychain item.
@@ -49,7 +49,7 @@ When you want to store a secret such as a password or cryptographic key, you pac
 ### Keychain item access
 - [Sharing access to keychain items among a collection of apps](sharing-access-to-keychain-items-among-a-collection-of-apps.md)
   Enable apps to share keychain items with each other by adding the apps to an access group.
-- [Keychain Access Groups Entitlement](../BundleResources/Entitlements/keychain-access-groups.md)
+- [Keychain Access Groups Entitlement](../bundleresources/entitlements/keychain-access-groups.md)
   The identifiers for the keychain groups that the app may share items with.
 - [Restricting keychain item accessibility](restricting-keychain-item-accessibility.md)
   Set the conditions under which an app can access a keychain item such as a password.

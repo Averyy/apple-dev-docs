@@ -7,7 +7,7 @@ An atom that identifies the key frames in the media.
 
 #### Overview
 
-See [`Sync sample atom ('stss')`](sync_sample_atom.md).
+See [`Sync sample atom`](sync_sample_atom.md).
 
 ## See Also
 

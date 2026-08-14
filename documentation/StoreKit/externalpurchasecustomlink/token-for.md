@@ -46,7 +46,7 @@ The `IN_APP` and `LINK_OUT` token types for Japan are available starting in iOS 
 
 Decode the token to read its contents, including its expiration date. For more information, see [`Receiving and decoding external purchase tokens`](receiving-and-decoding-external-purchase-tokens.md). For a code example that shows requesting tokens, see [`ExternalPurchaseCustomLink`](externalpurchasecustomlink.md).
 
-Report tokens and all transactions associated with the tokens from your server, using the [`External Purchase Server API`](https://developer.apple.com/documentation/ExternalPurchaseServerAPI).
+Report tokens and all transactions associated with the tokens from your server, using the [`External Purchase Server API`](https://developer.apple.com/documentation/externalpurchaseserverapi).
 
 ## Parameters
 

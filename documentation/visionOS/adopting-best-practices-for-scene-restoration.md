@@ -24,7 +24,7 @@ Locking and persisting content in visionOS makes the user experience more natura
 
 Scene restoration is an important part of a seamless experience on visionOS. People expect content to persist where they’ve placed it, and they expect to be able to pick up where they left off. To ensure the system correctly restores windows and maintains a person’s desired layout, you’ll need to handle your app’s scene restoration.
 
-> **Note**: To learn more, download the sample code project in [`Restoring your app’s state with SwiftUI`](https://developer.apple.com/documentation/SwiftUI/restoring-your-app-s-state-with-swiftui).
+> **Note**: To learn more, download the sample code project in [`Restoring your app’s state with SwiftUI`](https://developer.apple.com/documentation/swiftui/restoring-your-app-s-state-with-swiftui).
 
 However, there are some cases in which you might not want to restore scenes, especially for those that serve a temporary or context-specific purpose, including:
 

@@ -16,12 +16,12 @@ Sign in with Apple at Work & School provides the same ease of use for users with
 
 > **Note**:  Administrators can configure Access Management controls for Sign in with Apple at Work & School within Apple Business Manager and Apple School Manager.
 
-To support Sign in with Apple for iOS, macOS, tvOS, and watchOS apps, see [`Implementing User Authentication with Sign in with Apple`](https://developer.apple.com/documentation/AuthenticationServices/implementing-user-authentication-with-sign-in-with-apple). For website support, see [`Sign in with Apple JS`](https://developer.apple.com/documentation/signinwithapplejs), and use the [`Sign in with Apple REST API`](https://developer.apple.com/documentation/signinwithapplerestapi) to communicate with Apple servers.
+To support Sign in with Apple for iOS, macOS, tvOS, and watchOS apps, see [`Implementing User Authentication with Sign in with Apple`](https://developer.apple.com/documentation/authenticationservices/implementing-user-authentication-with-sign-in-with-apple). For website support, see [`Sign in with Apple JS`](https://developer.apple.com/documentation/signinwithapplejs), and use the [`Sign in with Apple REST API`](https://developer.apple.com/documentation/signinwithapplerestapi) to communicate with Apple servers.
 
 ## Topics
 
 ### On-device support
-- [Implementing User Authentication with Sign in with Apple](../AuthenticationServices/implementing-user-authentication-with-sign-in-with-apple.md)
+- [Implementing User Authentication with Sign in with Apple](../authenticationservices/implementing-user-authentication-with-sign-in-with-apple.md)
   Provide a way for users of your app to set up an account and start using your services.
 - [Displaying Sign in with Apple buttons in your app](displaying-sign-in-with-apple-buttons-in-your-app.md)
   Configure the appearance of Sign in with Apple buttons programatically.

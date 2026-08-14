@@ -22,7 +22,7 @@ class AVSampleBufferGenerator
 
 #### Overview
 
-Each request for `CMSampleBuffer` creation is described in an `AVSampleBufferRequest` object. The [`CMSampleBuffer`](https://developer.apple.com/documentation/CoreMedia/CMSampleBuffer) opaque objects are returned synchronously. If requested, sample data may be loaded asynchronously (depending on file format support).
+Each request for `CMSampleBuffer` creation is described in an `AVSampleBufferRequest` object. The [`CMSampleBuffer`](https://developer.apple.com/documentation/coremedia/cmsamplebuffer) opaque objects are returned synchronously. If requested, sample data may be loaded asynchronously (depending on file format support).
 
 ## Topics
 
@@ -45,20 +45,20 @@ Each request for `CMSampleBuffer` creation is described in an `AVSampleBufferReq
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 
-- [Playing custom audio with your own player](../AVFAudio/playing-custom-audio-with-your-own-player.md)
+- [Playing custom audio with your own player](../avfaudio/playing-custom-audio-with-your-own-player.md)
   Construct an audio player to play your custom audio data, and optionally take advantage of the advanced features of AirPlay 2.
 - [class AVSampleBufferRequest](avsamplebufferrequest.md)
   An object that describes a sample buffer creation request.

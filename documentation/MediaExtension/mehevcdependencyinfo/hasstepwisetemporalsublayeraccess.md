@@ -16,7 +16,7 @@ var hasStepwiseTemporalSubLayerAccess: Bool { get set }
 
 #### Discussion
 
-This value maps to the [`kCMSampleAttachmentKey_HEVCStepwiseTemporalSubLayerAccess`](https://developer.apple.com/documentation/CoreMedia/kCMSampleAttachmentKey_HEVCStepwiseTemporalSubLayerAccess) sample buffer attachment.
+This value maps to the [`kCMSampleAttachmentKey_HEVCStepwiseTemporalSubLayerAccess`](https://developer.apple.com/documentation/coremedia/kcmsampleattachmentkey_hevcstepwisetemporalsublayeraccess) sample buffer attachment.
 
 ## See Also
 

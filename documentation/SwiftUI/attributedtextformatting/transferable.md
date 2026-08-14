@@ -61,8 +61,8 @@ To extract text the text after importing, use attributed string’s `Foundation/
 
 Supported content types include:
 
-- [`rtfd`](https://developer.apple.com/documentation/UniformTypeIdentifiers/UTType-swift.struct/rtfd)
-- [`rtf`](https://developer.apple.com/documentation/UniformTypeIdentifiers/UTType-swift.struct/rtf)
+- [`rtfd`](https://developer.apple.com/documentation/uniformtypeidentifiers/uttype-swift.struct/rtfd)
+- [`rtf`](https://developer.apple.com/documentation/uniformtypeidentifiers/uttype-swift.struct/rtf)
 
 ## Topics
 
@@ -73,9 +73,9 @@ Supported content types include:
 ## Relationships
 
 ### Conforms To
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
-- [Transferable](../CoreTransferable/Transferable.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
+- [Transferable](../coretransferable/transferable.md)
 
 
 ---

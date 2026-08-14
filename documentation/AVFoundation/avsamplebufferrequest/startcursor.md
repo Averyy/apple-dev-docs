@@ -22,7 +22,7 @@ var startCursor: AVSampleCursor { get }
 
 #### Discussion
 
-The [`CMSampleBuffer`](https://developer.apple.com/documentation/CoreMedia/CMSampleBuffer) created with the request must include the sample at this position.
+The [`CMSampleBuffer`](https://developer.apple.com/documentation/coremedia/cmsamplebuffer) created with the request must include the sample at this position.
 
 ## See Also
 

@@ -21,7 +21,7 @@ func application(_ application: UIApplication, didConnectCarInterfaceController 
 
 - `application`: Your singleton app object.
 - `interfaceController`: The interface controller provided by CarPlay. Your app should maintain a reference to this controller.
-- `window`: The CarPlay window. Your app should create its view controller and assign the controller to the [`rootViewController`](https://developer.apple.com/documentation/UIKit/UIWindow/rootViewController) property of this window.
+- `window`: The CarPlay window. Your app should create its view controller and assign the controller to the [`rootViewController`](https://developer.apple.com/documentation/uikit/uiwindow/rootviewcontroller) property of this window.
 
 ## See Also
 

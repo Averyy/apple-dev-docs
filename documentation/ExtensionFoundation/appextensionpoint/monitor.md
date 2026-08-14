@@ -50,7 +50,7 @@ Task {
 }
 ```
 
-To present a UI with the list of enabled and disabled app extensions, use the [`EXAppExtensionBrowserViewController`](https://developer.apple.com/documentation/ExtensionKit/EXAppExtensionBrowserViewController) type.
+To present a UI with the list of enabled and disabled app extensions, use the [`EXAppExtensionBrowserViewController`](https://developer.apple.com/documentation/extensionkit/exappextensionbrowserviewcontroller) type.
 
 ## Topics
 
@@ -76,11 +76,11 @@ To present a UI with the list of enabled and disabled app extensions, use the [`
 ## Relationships
 
 ### Conforms To
-- [Copyable](../Swift/Copyable.md)
-- [Escapable](../Swift/Escapable.md)
-- [Observable](../Observation/Observable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Copyable](../swift/copyable.md)
+- [Escapable](../swift/escapable.md)
+- [Observable](../observation/observable.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 
 ---

@@ -40,7 +40,7 @@ Send [`beginCustomizingItems(_:)`](uitabbar/begincustomizingitems(_:).md) to a [
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 ### Conforming Types
 - [UITabBarController](uitabbarcontroller.md)
 

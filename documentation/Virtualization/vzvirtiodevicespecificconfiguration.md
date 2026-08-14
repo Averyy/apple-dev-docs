@@ -20,7 +20,7 @@ This class represents a Virtio device’s device-specific configuration.
 
 For more details about device-specific configuration for different Virtio devices, see the [`Virtio specification`](https://developer.apple.comhttps://docs.oasis-open.org/virtio/virtio/v1.3/csd01/virtio-v1.3-csd01.html).
 
-Serialize any device-specific configuration structure into an [`NSData`](https://developer.apple.com/documentation/Foundation/NSData) object, and instantiate a [`VZVirtioDeviceSpecificConfiguration`](vzvirtiodevicespecificconfiguration.md) object with it, and set this object on the [`deviceSpecificConfiguration`](vzcustomvirtiodeviceconfiguration/devicespecificconfiguration.md) property.
+Serialize any device-specific configuration structure into an [`NSData`](https://developer.apple.com/documentation/foundation/nsdata) object, and instantiate a [`VZVirtioDeviceSpecificConfiguration`](vzvirtiodevicespecificconfiguration.md) object with it, and set this object on the [`deviceSpecificConfiguration`](vzcustomvirtiodeviceconfiguration/devicespecificconfiguration.md) property.
 
 ## Topics
 
@@ -34,15 +34,15 @@ Serialize any device-specific configuration structure into an [`NSData`](https:/
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCopying](../Foundation/NSCopying.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCopying](../foundation/nscopying.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

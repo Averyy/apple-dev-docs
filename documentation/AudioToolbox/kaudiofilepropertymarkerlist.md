@@ -21,9 +21,9 @@ var kAudioFilePropertyMarkerList: AudioFilePropertyID { get }
 
 #### Discussion
 
-A list of [`CFString`](https://developer.apple.com/documentation/CoreFoundation/CFString) objects representing audio file markers defined in the file.
+A list of [`CFString`](https://developer.apple.com/documentation/corefoundation/cfstring) objects representing audio file markers defined in the file.
 
-If you access this property, your app is responsible for releasing the [`CFString`](https://developer.apple.com/documentation/CoreFoundation/CFString) objects.
+If you access this property, your app is responsible for releasing the [`CFString`](https://developer.apple.com/documentation/corefoundation/cfstring) objects.
 
 Use the `NumBytesToNumAudioFileMarkers` and `NumAudioFileMarkersToNumBytes` functions to convert between audio file markers and the equivalent number of bytes.
 

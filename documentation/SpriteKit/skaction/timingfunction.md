@@ -42,7 +42,7 @@ horizontalAction.timingFunction = {
 
 If the above code is combined with a vertical linear move action, the path taken by a node running this action describes the curve illustrated below:
 
-![Smoothstep based motion path](https://docs-assets.developer.apple.com/published/abd62c141bd21009f0f394fcd2d3ea57/media-2759776%402x.png)
+![Smoothstep based motion path](/images/com.apple.spritekit/media-2759776@2x.png)
 
 ## See Also
 

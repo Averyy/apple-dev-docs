@@ -23,7 +23,7 @@ var supportAttributeStrides: Bool { get set }
 
 Set this value to true if you intend to provide dynamic attribute strides when binding vertex array buffers to the argument table by calling [`setAddress(_:attributeStride:index:)`](mtl4argumenttable/setaddress(_:attributestride:index:).md)
 
-The default value of this property is [`false`](https://developer.apple.com/documentation/Swift/false).
+The default value of this property is [`false`](https://developer.apple.com/documentation/swift/false).
 
 
 ---

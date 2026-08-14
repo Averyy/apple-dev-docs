@@ -26,8 +26,8 @@ This type is the base protocol for analysis result types. You receive a typed va
 ## Relationships
 
 ### Inherits From
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 ### Conforming Types
 - [HighlightAnalysisRequest.Result](highlightanalysisrequest/result.md)
 - [KeyFrameAnalysisRequest.Result](keyframeanalysisrequest/result.md)

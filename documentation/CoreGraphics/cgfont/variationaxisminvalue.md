@@ -22,7 +22,7 @@ class let variationAxisMinValue: CFString
 
 #### Description
 
-The value obtained with this key is a [`CFNumber`](https://developer.apple.com/documentation/CoreFoundation/CFNumber) that specifies the minimum value of the variation axis.
+The value obtained with this key is a [`CFNumber`](https://developer.apple.com/documentation/corefoundation/cfnumber) that specifies the minimum value of the variation axis.
 
 ## See Also
 

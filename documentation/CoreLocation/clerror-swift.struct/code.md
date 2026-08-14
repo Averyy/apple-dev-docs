@@ -22,7 +22,7 @@ enum Code
 
 #### Overview
 
-Instances of [`NSError`](https://developer.apple.com/documentation/Foundation/NSError) object delivered to the delegate use these error codes for the [`code`](https://developer.apple.com/documentation/Foundation/NSError/code) property of the error object.
+Instances of [`NSError`](https://developer.apple.com/documentation/foundation/nserror) object delivered to the delegate use these error codes for the [`code`](https://developer.apple.com/documentation/foundation/nserror/code) property of the error object.
 
 ## Topics
 
@@ -76,12 +76,12 @@ Instances of [`NSError`](https://developer.apple.com/documentation/Foundation/NS
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../Swift/BitwiseCopyable.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [RawRepresentable](../Swift/RawRepresentable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [BitwiseCopyable](../swift/bitwisecopyable.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [RawRepresentable](../swift/rawrepresentable.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

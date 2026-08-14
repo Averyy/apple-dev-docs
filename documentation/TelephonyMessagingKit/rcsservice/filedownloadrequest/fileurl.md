@@ -7,7 +7,6 @@ The URL of the file to download.
 
 **Availability**:
 - iOS 26.0+
-- iPadOS 26.0+
 
 ## Declaration
 

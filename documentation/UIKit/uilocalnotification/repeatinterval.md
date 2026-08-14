@@ -19,7 +19,7 @@ var repeatInterval: NSCalendar.Unit { get set }
 
 #### Discussion
 
-If you assign a calendar unit such as weekly ([`weekOfYear`](https://developer.apple.com/documentation/Foundation/NSCalendar/Unit/weekOfYear)) or yearly ([`year`](https://developer.apple.com/documentation/Foundation/NSCalendar/Unit/year)), the system reschedules the notification for delivery at the specified interval. Note that intervals of less than one minute are not supported. The default value is 0, which means that the system fires the notification once and then discards it.
+If you assign a calendar unit such as weekly ([`weekOfYear`](https://developer.apple.com/documentation/foundation/nscalendar/unit/weekofyear)) or yearly ([`year`](https://developer.apple.com/documentation/foundation/nscalendar/unit/year)), the system reschedules the notification for delivery at the specified interval. Note that intervals of less than one minute are not supported. The default value is 0, which means that the system fires the notification once and then discards it.
 
 ## See Also
 

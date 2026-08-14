@@ -16,7 +16,7 @@ var invalidatedDecorationIndexPaths: [NSCollectionView.DecorationElementKind : S
 
 #### Discussion
 
-The keys in this dictionary are the element kind strings of the decoration views. The value for each key is an [`NSSet`](https://developer.apple.com/documentation/Foundation/NSSet) object containing one or more [`NSIndexPath`](https://developer.apple.com/documentation/Foundation/NSIndexPath) objects, each of which identifies the section containing the decoration view.
+The keys in this dictionary are the element kind strings of the decoration views. The value for each key is an [`NSSet`](https://developer.apple.com/documentation/foundation/nsset) object containing one or more [`NSIndexPath`](https://developer.apple.com/documentation/foundation/nsindexpath) objects, each of which identifies the section containing the decoration view.
 
 ## See Also
 

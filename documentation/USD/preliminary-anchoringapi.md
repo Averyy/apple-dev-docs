@@ -8,7 +8,7 @@ A schema that defines the placement of a prim and its children at a real-world l
 
 Use this schema to attach prims to real-world areas in an AR experience, such as surfaces, images, or faces. In non-AR viewers like studio mode in AR Quick Look, the runtime displays a prim by applying its *transform* –– that is, its position, rotation, and scale –– relative to the center of the view.
 
-> **Note**:  Although ARKit features the ability to recognize predefined real-world objects (see [`ARReferenceObject`](https://developer.apple.com/documentation/ARKit/ARReferenceObject)), and location anchors (see [`ARGeoAnchor`](https://developer.apple.com/documentation/ARKit/ARGeoAnchor)), the [`Preliminary_AnchoringAPI`](preliminary-anchoringapi.md) schema doesn’t support object or location anchors.
+> **Note**:  Although ARKit features the ability to recognize predefined real-world objects (see [`ARReferenceObject`](https://developer.apple.com/documentation/arkit/arreferenceobject)), and location anchors (see [`ARGeoAnchor`](https://developer.apple.com/documentation/arkit/argeoanchor)), the [`Preliminary_AnchoringAPI`](preliminary-anchoringapi.md) schema doesn’t support object or location anchors.
 
 ##### Declaration
 

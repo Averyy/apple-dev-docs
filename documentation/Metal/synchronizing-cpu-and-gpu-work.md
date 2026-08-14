@@ -18,7 +18,7 @@ In this sample code project, you learn how to manage data dependencies and avoid
 
 The project continuously renders triangles along a sine wave. In each frame, the sample updates the position of each triangle’s vertices and then renders a new image. These dynamic data updates create an illusion of motion, where the triangles appear to move along the sine wave.
 
-![A screenshot of the sample code project, showing colored triangles rendered along a sine wave.](https://docs-assets.developer.apple.com/published/5e6872f93f029b321bb48ae20cc72ff5/cpu-gpu-synchronization-1-SampleScreenshot.png)
+![A screenshot of the sample code project, showing colored triangles rendered along a sine wave.](/images/com.apple.metal/cpu-gpu-synchronization-1-SampleScreenshot.png)
 
 The sample stores the triangle vertices in a buffer that’s shared between the CPU and the GPU. The CPU writes data to the buffer and the GPU reads it.
 
@@ -28,13 +28,13 @@ The sample stores the triangle vertices in a buffer that’s shared between the 
 
 Resource sharing creates a *data dependency* between the processors; the CPU needs to finish writing to the resource before the GPU reads it. If the GPU reads the resource before the CPU writes to it, the GPU reads undefined resource data. If the GPU reads the resource while the CPU is writing to it, the GPU reads incorrect resource data.
 
-![A diagram that shows the CPU and the GPU sequentially accessing a buffer in each frame.](https://docs-assets.developer.apple.com/published/5f15ee47f49c23cf653705709dac8e42/cpu-gpu-synchronization-2-AccessOrder.png)
+![A diagram that shows the CPU and the GPU sequentially accessing a buffer in each frame.](/images/com.apple.metal/cpu-gpu-synchronization-2-AccessOrder.png)
 
 These data dependencies create *processor stalls* between the CPU and the GPU; each processor needs to wait for the other to finish its work before beginning its own work.
 
 However, because the CPU and GPU are separate processors, you can make them work simultaneously by using multiple instances of a resource. Each frame, you need to provide the same arguments to your shaders, but this doesn’t mean you need to reference the same resource object. Instead, you create a pool of multiple instances of a resource and use a different one each time you render a frame. For example, as shown below, the CPU can write position data to a buffer used for frame `n+1`, at the same time that the GPU reads position data from a buffer used for frame `n`. By using multiple instances of a buffer, the CPU and the GPU can work continuously and avoid stalls as long as you keep rendering frames.
 
-![A diagram that shows the CPU and the GPU simultaneously accessing multiple copies of a buffer in each frame.](https://docs-assets.developer.apple.com/published/32b0e436b2811d2b0fe5d32545888bd9/cpu-gpu-synchronization-3-ContinuousWork.png)
+![A diagram that shows the CPU and the GPU simultaneously accessing multiple copies of a buffer in each frame.](/images/com.apple.metal/cpu-gpu-synchronization-3-ContinuousWork.png)
 
 ##### Initialize Data with the Cpu
 
@@ -113,7 +113,7 @@ Upon initialization, the contents of the buffer instances in the `_vertexBuffers
 
 ##### Update Data with the Cpu
 
-In each frame, at the start of the [`draw(in:)`](https://developer.apple.com/documentation/MetalKit/MTKViewDelegate/draw(in:)) render loop, use the CPU to update the contents of one buffer instance in the `updateState` method:
+In each frame, at the start of the [`draw(in:)`](https://developer.apple.com/documentation/metalkit/mtkviewdelegate/draw(in:)) render loop, use the CPU to update the contents of one buffer instance in the `updateState` method:
 
 ```objective-c
 // Vertex data for the current triangles.
@@ -206,7 +206,7 @@ _currentBuffer = (_currentBuffer + 1) % MaxFramesInFlight;
 [self updateState];
 ```
 
-> **Note**: Core Animation provides optimized displayable resources, commonly referred to as *drawables*, for you to render content and display it onscreen. Drawables are efficient yet expensive system resources, so Core Animation limits the number of drawables that you can use simultaneously in your app. The default limit is 3, but you can set it to 2 with the [`maximumDrawableCount`](https://developer.apple.com/documentation/QuartzCore/CAMetalLayer/maximumDrawableCount) property (2 and 3 are the only supported values). Because the maximum number of drawables is 3, this sample creates 3 buffer instances. You donʼt need to create more buffer instances than the maximum number of drawables available.
+> **Note**: Core Animation provides optimized displayable resources, commonly referred to as *drawables*, for you to render content and display it onscreen. Drawables are efficient yet expensive system resources, so Core Animation limits the number of drawables that you can use simultaneously in your app. The default limit is 3, but you can set it to 2 with the [`maximumDrawableCount`](https://developer.apple.com/documentation/quartzcore/cametallayer/maximumdrawablecount) property (2 and 3 are the only supported values). Because the maximum number of drawables is 3, this sample creates 3 buffer instances. You donʼt need to create more buffer instances than the maximum number of drawables available.
 
 ##### Manage the Rate of Cpu and Gpu Work
 

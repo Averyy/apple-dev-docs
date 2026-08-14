@@ -6,16 +6,16 @@ Learn about important changes to Swift Charts.
 
 #### Overview
 
-Browse notable changes in [`Swift Charts`](https://developer.apple.com/documentation/Charts).
+Browse notable changes in [`Swift Charts`](https://developer.apple.com/documentation/charts).
 
 #### June 2025
 
-- Visualize data in 3D with [`Chart3D`](https://developer.apple.com/documentation/Charts/Chart3D), and render bivariate functions using [`SurfacePlot`](https://developer.apple.com/documentation/Charts/SurfacePlot). Use plot types such as [`PointMark`](https://developer.apple.com/documentation/Charts/PointMark), [`RectangleMark`](https://developer.apple.com/documentation/Charts/RectangleMark), and [`RuleMark`](https://developer.apple.com/documentation/Charts/RuleMark) that now conform to [`Chart3DContent`](https://developer.apple.com/documentation/Charts/Chart3DContent).
+- Visualize data in 3D with [`Chart3D`](https://developer.apple.com/documentation/charts/chart3d), and render bivariate functions using [`SurfacePlot`](https://developer.apple.com/documentation/charts/surfaceplot). Use plot types such as [`PointMark`](https://developer.apple.com/documentation/charts/pointmark), [`RectangleMark`](https://developer.apple.com/documentation/charts/rectanglemark), and [`RuleMark`](https://developer.apple.com/documentation/charts/rulemark) that now conform to [`Chart3DContent`](https://developer.apple.com/documentation/charts/chart3dcontent).
 
 #### June 2024
 
-- Plot large collections of data with greater efficiency using new plot types such as [`LinePlot`](https://developer.apple.com/documentation/Charts/LinePlot), [`AreaPlot`](https://developer.apple.com/documentation/Charts/AreaPlot), [`BarPlot`](https://developer.apple.com/documentation/Charts/BarPlot), and others that conform to  [`VectorizedChartContent`](https://developer.apple.com/documentation/Charts/VectorizedChartContent).
-- Graph mathematical functions by passing an equation to a closure when you initialize a [`LinePlot`](https://developer.apple.com/documentation/Charts/LinePlot) or [`AreaPlot`](https://developer.apple.com/documentation/Charts/AreaPlot).
+- Plot large collections of data with greater efficiency using new plot types such as [`LinePlot`](https://developer.apple.com/documentation/charts/lineplot), [`AreaPlot`](https://developer.apple.com/documentation/charts/areaplot), [`BarPlot`](https://developer.apple.com/documentation/charts/barplot), and others that conform to  [`VectorizedChartContent`](https://developer.apple.com/documentation/charts/vectorizedchartcontent).
+- Graph mathematical functions by passing an equation to a closure when you initialize a [`LinePlot`](https://developer.apple.com/documentation/charts/lineplot) or [`AreaPlot`](https://developer.apple.com/documentation/charts/areaplot).
 
 ## See Also
 

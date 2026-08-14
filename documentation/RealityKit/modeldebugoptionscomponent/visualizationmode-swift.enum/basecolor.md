@@ -34,7 +34,7 @@ if let television = try? await ModelEntity(named: "tv_retro") {
 
 | [`ModelDebugOptionsComponent.VisualizationMode.none`](modeldebugoptionscomponent/visualizationmode-swift.enum/none.md) | `baseColor` |
 | --- | --- |
-| ![A screenshot of a virtual TV in a visionOS app. The TV is an old-fashioned television displaying a multicolored test pattern. It is drawn with shadows and highlights to appear as realistic as possible.](https://docs-assets.developer.apple.com/published/a57e508a6549f1c8cce08e79ea6b7ec5/ModelDebugOptionsComponent-VisualizationMode-enum-none.jpg) | ![A screenshot of a virtual TV in a visionOS app. The TV is using a base color visualization, appearing without shadows, reflections, transparency or other effects.](https://docs-assets.developer.apple.com/published/db79e041a44514bec2dc7fc1dfa4c4cf/ModelDebugOptionsComponent-VisualizationMode-enum-baseColor.jpg) |
+| ![A screenshot of a virtual TV in a visionOS app. The TV is an old-fashioned television displaying a multicolored test pattern. It is drawn with shadows and highlights to appear as realistic as possible.](/images/com.apple.RealityKit/ModelDebugOptionsComponent-VisualizationMode-enum-none.jpg) | ![A screenshot of a virtual TV in a visionOS app. The TV is using a base color visualization, appearing without shadows, reflections, transparency or other effects.](/images/com.apple.RealityKit/ModelDebugOptionsComponent-VisualizationMode-enum-baseColor.jpg) |
 
 ## See Also
 

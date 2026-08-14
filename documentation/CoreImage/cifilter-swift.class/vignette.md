@@ -30,8 +30,8 @@ This method applies the vignette filter to an image. This is a preconfigured eff
 The vignette filter uses the following properties:
 
 - **`inputImage`**: An image with the type [`CIImage`](ciimage.md).
-- **`intensity`**: A `float` representing the intensity of the vignette effect as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
-- **`radius`**: A `float` representing the radius of the effect as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+- **`intensity`**: A `float` representing the intensity of the vignette effect as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
+- **`radius`**: A `float` representing the radius of the effect as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
 
 The following code creates a filter that darkens the edges of the input image:
 
@@ -45,7 +45,7 @@ func vignette(inputImage: CIImage ) -> CIImage {
 }
 ```
 
-![Two pictures of a pink flower surrounded by foliage. The photo on the left shows a single flower photographed close-up, in focus, with good light and no effects. In the photo on the right, a vignette filter is applied, resulting in a gradual reduction of an image’s brightness and reduction of saturation in the periphery. ](https://docs-assets.developer.apple.com/published/4d8fc4e34d77f0640e1d618ee6f839d0/media-3545014%402x.png)
+![Two pictures of a pink flower surrounded by foliage. The photo on the left shows a single flower photographed close-up, in focus, with good light and no effects. In the photo on the right, a vignette filter is applied, resulting in a gradual reduction of an image’s brightness and reduction of saturation in the periphery. ](/images/com.apple.coreimage/media-3545014@2x.png)
 
 ## See Also
 

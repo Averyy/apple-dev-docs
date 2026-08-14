@@ -29,7 +29,7 @@ Label("Circle Fill", systemImage: "flag")
     .symbolVariant(.circle.fill)
 ```
 
-![A screenshot of a label that shows a flag in a filled circle](https://docs-assets.developer.apple.com/published/bfe960b3acc307e9c52f35cbe25c29c7/SymbolVariants-fill-2%402x.png)
+![A screenshot of a label that shows a flag in a filled circle](/images/com.apple.SwiftUI/SymbolVariants-fill-2@2x.png)
 
 ## See Also
 

@@ -27,8 +27,8 @@ Because entering or exiting Single App mode might take some time, this method ex
 
 ## Parameters
 
-- `enable`: Specify [`true`](https://developer.apple.com/documentation/Swift/true) to put the device into Single App mode for this app or [`false`](https://developer.apple.com/documentation/Swift/false) to exit Single App mode.
-- `completionHandler`: The block that notifies your app of the success or failure of the operation. This block takes the following parameter: - **didSucceed**: If [`true`](https://developer.apple.com/documentation/Swift/true), the app transitioned to or from Single App mode successfully. If [`false`](https://developer.apple.com/documentation/Swift/false), the app or device is not eligible for Single App mode or there was some other error.
+- `enable`: Specify [`true`](https://developer.apple.com/documentation/swift/true) to put the device into Single App mode for this app or [`false`](https://developer.apple.com/documentation/swift/false) to exit Single App mode.
+- `completionHandler`: The block that notifies your app of the success or failure of the operation. This block takes the following parameter: - **didSucceed**: If [`true`](https://developer.apple.com/documentation/swift/true), the app transitioned to or from Single App mode successfully. If [`false`](https://developer.apple.com/documentation/swift/false), the app or device is not eligible for Single App mode or there was some other error.
 
 ## See Also
 

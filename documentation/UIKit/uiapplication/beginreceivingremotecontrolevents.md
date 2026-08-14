@@ -20,7 +20,7 @@ func beginReceivingRemoteControlEvents()
 
 #### Discussion
 
-In iOS 7.1 and later, use the shared [`MPRemoteCommandCenter`](https://developer.apple.com/documentation/MediaPlayer/MPRemoteCommandCenter) object to register for remote control events. You do not need to call this method when using the shared command center object.
+In iOS 7.1 and later, use the shared [`MPRemoteCommandCenter`](https://developer.apple.com/documentation/mediaplayer/mpremotecommandcenter) object to register for remote control events. You do not need to call this method when using the shared command center object.
 
 This method starts the delivery of remote control events using the responder chain. Remote-control events originate as commands issued by headsets and external accessories that are intended to control multimedia presented by an app. To stop the reception of remote-control events, you must call [`endReceivingRemoteControlEvents()`](uiapplication/endreceivingremotecontrolevents().md).
 

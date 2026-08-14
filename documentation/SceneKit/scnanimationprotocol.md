@@ -21,7 +21,7 @@ protocol SCNAnimationProtocol : NSObjectProtocol
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 ### Conforming Types
 - [SCNAnimation](scnanimation-swift.class.md)
 

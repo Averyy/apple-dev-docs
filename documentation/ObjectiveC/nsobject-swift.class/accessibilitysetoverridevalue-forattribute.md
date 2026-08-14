@@ -37,7 +37,7 @@ This method works only on an object representing a single user interface element
 ## Parameters
 
 - `value`: The attribute value to be set.
-- `attribute`: The name of the attribute. See [`NSAccessibility`](https://developer.apple.com/documentation/AppKit/nsaccessibility) constants for lists of attribute names.
+- `attribute`: The name of the attribute. See [`NSAccessibility`](https://developer.apple.com/documentation/appkit/nsaccessibility) constants for lists of attribute names.
 
 ## See Also
 

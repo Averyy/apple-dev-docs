@@ -27,15 +27,15 @@ struct GroupActivityTransferRepresentation<Item> where Item : Transferable
 ## Relationships
 
 ### Conforms To
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
-- [TransferRepresentation](../CoreTransferable/TransferRepresentation.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
+- [TransferRepresentation](../coretransferable/transferrepresentation.md)
 
 ## See Also
 
 - [Defining your app’s SharePlay activities](defining-your-apps-shareplay-activities.md)
   Configure your app’s SharePlay support and define the activities that people can perform from your app.
-- [Supporting coordinated media playback](../AVFoundation/supporting-coordinated-media-playback.md)
+- [Supporting coordinated media playback](../avfoundation/supporting-coordinated-media-playback.md)
   Create synchronized media experiences that enable users to watch and listen across devices.
 - [protocol GroupActivity](groupactivity.md)
   A type that can advertise your app’s activities to other participants.

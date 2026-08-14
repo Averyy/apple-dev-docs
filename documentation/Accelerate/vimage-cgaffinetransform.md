@@ -28,9 +28,9 @@ typealias vImage_CGAffineTransform = vImage_AffineTransform_Double
 
 This structure represents the 3x2 matrix :
 
-![3 by 2 matrix](https://docs-assets.developer.apple.com/published/15175700351555931d77e36e3b8efd15/media-2557524.gif)
+![3 by 2 matrix](/images/com.apple.accelerate/media-2557524.gif)
 
-This structure changes size to be the same size as the Core Graphics [`CGAffineTransform`](https://developer.apple.com/documentation/CoreFoundation/CGAffineTransform) data structure. [`CGAffineTransform`](https://developer.apple.com/documentation/CoreGraphics/cgaffinetransform) describes functions for creating and manipulating matrixes of this form.
+This structure changes size to be the same size as the Core Graphics [`CGAffineTransform`](https://developer.apple.com/documentation/corefoundation/cgaffinetransform) data structure. [`CGAffineTransform`](https://developer.apple.com/documentation/coregraphics/cgaffinetransform) describes functions for creating and manipulating matrixes of this form.
 
 ## See Also
 

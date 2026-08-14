@@ -19,7 +19,7 @@ var deliversPreviewSizedOutputBuffers: Bool { get set }
 
 #### Discussion
 
-[`AVCaptureVideoDataOutput`](avcapturevideodataoutput.md) produces preview-sized buffers, which are approximately the size of the screen, when its [`automaticallyConfiguresOutputBufferDimensions`](avcapturevideodataoutput/automaticallyconfiguresoutputbufferdimensions.md) property is [`true`](https://developer.apple.com/documentation/Swift/true). If you wish to manually set this property, you must first set [`automaticallyConfiguresOutputBufferDimensions`](avcapturevideodataoutput/automaticallyconfiguresoutputbufferdimensions.md) to [`false`](https://developer.apple.com/documentation/Swift/false).
+[`AVCaptureVideoDataOutput`](avcapturevideodataoutput.md) produces preview-sized buffers, which are approximately the size of the screen, when its [`automaticallyConfiguresOutputBufferDimensions`](avcapturevideodataoutput/automaticallyconfiguresoutputbufferdimensions.md) property is [`true`](https://developer.apple.com/documentation/swift/true). If you wish to manually set this property, you must first set [`automaticallyConfiguresOutputBufferDimensions`](avcapturevideodataoutput/automaticallyconfiguresoutputbufferdimensions.md) to [`false`](https://developer.apple.com/documentation/swift/false).
 
 ## See Also
 

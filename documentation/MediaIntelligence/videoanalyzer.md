@@ -25,7 +25,7 @@ final class VideoAnalyzer
 
 #### Overview
 
-A video analyzer is the central object in the video analysis pipeline. Access it through the static [`shared`](videoanalyzer/shared.md) property and pass it a [`MediaIntelligenceVideoAsset`](mediaintelligencevideoasset.md) along with one or more request objects. The analyzer processes the video and returns a tuple containing one [`Result`](https://developer.apple.com/documentation/Swift/Result) per request, in the same order you provide them.
+A video analyzer is the central object in the video analysis pipeline. Access it through the static [`shared`](videoanalyzer/shared.md) property and pass it a [`MediaIntelligenceVideoAsset`](mediaintelligencevideoasset.md) along with one or more request objects. The analyzer processes the video and returns a tuple containing one [`Result`](https://developer.apple.com/documentation/swift/result) per request, in the same order you provide them.
 
 ## Topics
 
@@ -42,8 +42,8 @@ A video analyzer is the central object in the video analysis pipeline. Access it
 ## Relationships
 
 ### Conforms To
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

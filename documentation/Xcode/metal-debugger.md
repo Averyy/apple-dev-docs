@@ -14,7 +14,7 @@ In addition, the Metal debugger displays your Metal workload on a profiling time
 
 To investigate GPU traces from the command line, use `gpudebug`, an interactive terminal-based debugger. Because its interface is text-based and self-discoverable, AI agents can run it autonomously to navigate traces, inspect state, and fetch resources to diagnose rendering issues without human intervention. For more information, see [`Investigating GPU issues with AI agents`](investigating-gpu-issues-with-ai-agents.md).
 
-![A screenshot of the Metal debugger showing the bound resources and attachments for a draw command.](https://docs-assets.developer.apple.com/published/a7cba2f6c40a790c84564b5ed827fa13/gputools-metal-debugger-hero%402x.png)
+![A screenshot of the Metal debugger showing the bound resources and attachments for a draw command.](/images/com.apple.Xcode/gputools-metal-debugger-hero@2x.png)
 
 For additional information about the Metal debugger, see the following video sessions:
 

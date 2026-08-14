@@ -31,7 +31,7 @@ You must conform to this protocol in order to pass custom events.
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 ### Conforming Types
 - [TVPlaybackCustomEventUserInfo](tvplaybackcustomeventuserinfo.md)
 

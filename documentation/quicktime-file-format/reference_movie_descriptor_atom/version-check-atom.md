@@ -7,7 +7,7 @@ A reference movie atom may contain an optional version check atom.
 
 #### Overview
 
-Multiple version check atoms can be present. See [`Version check atom ('rmvc')`](version_check_atom.md) for more information.
+Multiple version check atoms can be present. See [`Version check atom`](version_check_atom.md) for more information.
 
 ## See Also
 

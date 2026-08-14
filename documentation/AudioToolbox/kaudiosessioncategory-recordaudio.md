@@ -20,7 +20,7 @@ var kAudioSessionCategory_RecordAudio: Int { get }
 
 #### Discussion
 
-This category is equivalent to the [`record`](https://developer.apple.com/documentation/AVFAudio/AVAudioSession/Category-swift.struct/record) category provided in the AVFoundation framework.
+This category is equivalent to the [`record`](https://developer.apple.com/documentation/avfaudio/avaudiosession/category-swift.struct/record) category provided in the AVFoundation framework.
 
 ## See Also
 

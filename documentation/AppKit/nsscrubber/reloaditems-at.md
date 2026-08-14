@@ -20,7 +20,7 @@ The scrubber makes requests for updated views from the data source and then anim
 
 ## Parameters
 
-- `indexes`: The indexes of the items to reload, provided in an index set ([`IndexSet`](https://developer.apple.com/documentation/Foundation/IndexSet)).
+- `indexes`: The indexes of the items to reload, provided in an index set ([`IndexSet`](https://developer.apple.com/documentation/foundation/indexset)).
 
 ## See Also
 

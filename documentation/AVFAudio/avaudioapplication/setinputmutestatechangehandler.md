@@ -24,7 +24,7 @@ Since the input mute handling logic should happen a single place, subsequent cal
 
 ## Parameters
 
-- `inputMuteHandler`: A callback that the system invokes when the input mute state changes. If the callback receives a [`true`](https://developer.apple.com/documentation/Swift/true) value, mute all input audio samples until the next time the system calls the handler. Return a value of [`true`](https://developer.apple.com/documentation/Swift/true) if you muted input successfully, or in exceptional cases, return [`false`](https://developer.apple.com/documentation/Swift/false) to indicate the mute action fails.
+- `inputMuteHandler`: A callback that the system invokes when the input mute state changes. If the callback receives a [`true`](https://developer.apple.com/documentation/swift/true) value, mute all input audio samples until the next time the system calls the handler. Return a value of [`true`](https://developer.apple.com/documentation/swift/true) if you muted input successfully, or in exceptional cases, return [`false`](https://developer.apple.com/documentation/swift/false) to indicate the mute action fails.
 
 ## See Also
 

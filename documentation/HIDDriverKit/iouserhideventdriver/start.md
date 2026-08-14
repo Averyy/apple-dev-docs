@@ -17,11 +17,11 @@ virtual kern_return_t Start(IOService *provider);
 
 #### Return Value
 
-[`kIOReturnSuccess`](https://developer.apple.com/documentation/DriverKit/kIOReturnSuccess) on success, or another value if an error occurs. See [`Error Codes`](https://developer.apple.com/documentation/DriverKit/error-codes).
+[`kIOReturnSuccess`](https://developer.apple.com/documentation/driverkit/kioreturnsuccess) on success, or another value if an error occurs. See [`Error Codes`](https://developer.apple.com/documentation/driverkit/error-codes).
 
 #### Discussion
 
-After successfully matching the specified provider to your event driver, the system instantiates your driver object and calls this method. Use this method to configure your custom data structures and any associated hardware. You might also store a reference to the provider object for later use. After you configure your event driver, call the [`RegisterService`](https://developer.apple.com/documentation/DriverKit/IOService/RegisterService) method to let the system know that your driver is running.
+After successfully matching the specified provider to your event driver, the system instantiates your driver object and calls this method. Use this method to configure your custom data structures and any associated hardware. You might also store a reference to the provider object for later use. After you configure your event driver, call the [`RegisterService`](https://developer.apple.com/documentation/driverkit/ioservice/registerservice) method to let the system know that your driver is running.
 
 Always call `super` early in your implementation of this method. This method creates and parses the elements from the device’s initial report, making it easier to process future reports and dispatch events.
 

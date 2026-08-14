@@ -29,7 +29,7 @@ Notes:
 2. Users may toggle Bluetooth power through Settings
 3. Only if Bluetooth is not toggled with Airplane Mode. Users may configure the Airplane Mode switch to not toggle Bluetooth. Also, see note 5.
 4. If the device requires a passcode to unlock, apps will not be relaunched until the device is unlocked for the first time after a restart.
-5. Starting in iOS 26 and iPadOS 26, only apps that use [`AccessorySetupKit`](https://developer.apple.com/documentation/AccessorySetupKit) to setup Bluetooth accessories will be relaunched.
+5. Starting in iOS 26 and iPadOS 26, only apps that use [`AccessorySetupKit`](https://developer.apple.com/documentation/accessorysetupkit) to setup Bluetooth accessories will be relaunched.
 
 Also, it’s important to keep in mind that your app will be relaunched and restored **if and only if** it’s waiting for a specific Bluetooth event or action (like scanning, connecting, or a subscribed notification characteristic, and for peripheral apps, actively advertising), and the corresponding Bluetooth event has occurred.
 

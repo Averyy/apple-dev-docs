@@ -39,7 +39,7 @@ For more information on how to create a new token, see [`Creating and using toke
 
 ##### Inspect the Error Event on Mapkit Js
 
-The MapKit JS API rejects an otherwise valid token when your Apple Developer team exceeds the number of requests allowed. You can detect when your team exceeds the number of allowed requests by listening to the `error` event on the [`mapkit`](https://developer.apple.com/documentation/MapKitJS/mapkit) object.
+The MapKit JS API rejects an otherwise valid token when your Apple Developer team exceeds the number of requests allowed. You can detect when your team exceeds the number of allowed requests by listening to the `error` event on the [`mapkit`](https://developer.apple.com/documentation/mapkitjs/mapkit) object.
 
 The following example adds an event listener to the `mapkit` object and inspects the `status` string to see if the emitted error lists too many requests.
 
@@ -54,7 +54,7 @@ mapkit.addEventListener("error", function(event) {
 });
 ```
 
-For more information about MapKit JS events, see [`Handling initialization events`](https://developer.apple.com/documentation/MapKitJS/handling-initialization-events).
+For more information about MapKit JS events, see [`Handling initialization events`](https://developer.apple.com/documentation/mapkitjs/handling-initialization-events).
 
 ## See Also
 

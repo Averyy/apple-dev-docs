@@ -17,7 +17,7 @@ A description of changes made to the default security for HTTP connections.
 
 #### Discussion
 
-On Apple platforms, a networking feature called App Transport Security (ATS) improves privacy and data integrity for all apps and app extensions. ATS requires that all HTTP connections made with the [`URL Loading System`](https://developer.apple.com/documentation/Foundation/url-loading-system)—typically using the [`URLSession`](https://developer.apple.com/documentation/Foundation/URLSession) class—use HTTPS. It further imposes extended security checks that supplement the default server trust evaluation prescribed by the Transport Layer Security (TLS) protocol. ATS blocks connections that fail to meet minimum security specifications. For additional details, see [`Preventing Insecure Network Connections`](https://developer.apple.com/documentation/Security/preventing-insecure-network-connections).
+On Apple platforms, a networking feature called App Transport Security (ATS) improves privacy and data integrity for all apps and app extensions. ATS requires that all HTTP connections made with the [`URL Loading System`](https://developer.apple.com/documentation/foundation/url-loading-system)—typically using the [`URLSession`](https://developer.apple.com/documentation/foundation/urlsession) class—use HTTPS. It further imposes extended security checks that supplement the default server trust evaluation prescribed by the Transport Layer Security (TLS) protocol. ATS blocks connections that fail to meet minimum security specifications. For additional details, see [`Preventing Insecure Network Connections`](https://developer.apple.com/documentation/security/preventing-insecure-network-connections).
 
 You can circumvent or augment these protections by adding the [`NSAppTransportSecurity`](information-property-list/nsapptransportsecurity.md) key to your app’s [`Information Property List`](information-property-list.md) file and providing an ATS configuration dictionary as the value. For example, you can:
 
@@ -65,7 +65,7 @@ This behavior enables you to manage differences between OS versions. You provide
 
 ## See Also
 
-- [Preventing Insecure Network Connections](../Security/preventing-insecure-network-connections.md)
+- [Preventing Insecure Network Connections](../security/preventing-insecure-network-connections.md)
   Enforce secure network links in your app by relying on App Transport Security.
 - [NSAdvertisingAttributionReportEndpoint](information-property-list/nsadvertisingattributionreportendpoint.md)
   The URL where Private Click Measurement and SKAdNetwork send attribution information.

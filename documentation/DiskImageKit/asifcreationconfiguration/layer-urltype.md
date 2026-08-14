@@ -26,7 +26,7 @@ For more information on ASIF layer creation for stacked images, see [`asifLayer(
 
 ## Parameters
 
-- `url`: The [`URL`](https://developer.apple.com/documentation/Foundation/URL) for a file that’s the backing store of the image.
+- `url`: The [`URL`](https://developer.apple.com/documentation/foundation/url) for a file that’s the backing store of the image.
 - `type`: The [`DiskImage.LayerType`](diskimage/layertype-swift.struct.md) of the layer to create (a cache or overlay layer with an optional block count).
 
 

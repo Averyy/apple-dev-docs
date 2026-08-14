@@ -25,7 +25,7 @@ func accept(_ metadatas: [CKShare.Metadata], completionHandler: @escaping @Senda
 
 The closure doesn’t return a value and takes the following parameters:
 
-- A dictionary of fetched shares. The dictionary uses the metadatas you specify in `metadatas` as its keys. The value of each key is a [`Result`](https://developer.apple.com/documentation/Swift/Result) that contains either the corresponding fetched share, or an error that describes why CloudKit can’t fetch that share.
+- A dictionary of fetched shares. The dictionary uses the metadatas you specify in `metadatas` as its keys. The value of each key is a [`Result`](https://developer.apple.com/documentation/swift/result) that contains either the corresponding fetched share, or an error that describes why CloudKit can’t fetch that share.
 
 This method accepts shares asynchronously and with a low priority. If you want the task to execute with a higher priority, create an instance of [`CKAcceptSharesOperation`](ckacceptsharesoperation.md) and configure it to use the necessary priority.
 

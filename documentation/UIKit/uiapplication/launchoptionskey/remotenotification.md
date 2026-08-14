@@ -19,7 +19,7 @@ static let remoteNotification: UIApplication.LaunchOptionsKey
 
 #### Discussion
 
-The value of this key is an [`NSDictionary`](https://developer.apple.com/documentation/Foundation/NSDictionary) containing the payload of the remote notification. See the description of [`application(_:didReceiveRemoteNotification:)`](uiapplicationdelegate/application(_:didreceiveremotenotification:).md) for further information about handling remote notifications.
+The value of this key is an [`NSDictionary`](https://developer.apple.com/documentation/foundation/nsdictionary) containing the payload of the remote notification. See the description of [`application(_:didReceiveRemoteNotification:)`](uiapplicationdelegate/application(_:didreceiveremotenotification:).md) for further information about handling remote notifications.
 
 This key is also used to access the same value in the `userInfo` dictionary of the notification named [`didFinishLaunchingNotification`](uiapplication/didfinishlaunchingnotification.md).
 

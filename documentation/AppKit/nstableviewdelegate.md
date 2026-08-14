@@ -98,7 +98,7 @@ Using a table view delegate allows you to customize a table view’s behavior wi
 
 ### Inherits From
 - [NSControlTextEditingDelegate](nscontroltexteditingdelegate.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

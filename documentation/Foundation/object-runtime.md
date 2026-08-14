@@ -7,11 +7,11 @@ Get low-level support for basic Objective-C features, Cocoa design patterns, and
 ## Topics
 
 ### Object Basics
-- [class NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [class NSObject](../objectivec/nsobject-swift.class.md)
   The root class of most Objective-C class hierarchies, from which subclasses inherit a basic interface to the runtime system and the ability to behave as Objective-C objects.
-- [protocol NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [protocol NSObjectProtocol](../objectivec/nsobjectprotocol.md)
   The group of methods that are fundamental to all Objective-C objects.
-- [NSKeyValueCoding](../ObjectiveC/nskeyvaluecoding.md)
+- [NSKeyValueCoding](../objectivec/nskeyvaluecoding.md)
   A mechanism by which you can access the properties of an object indirectly by name or key.
 ### Copying
 - [protocol NSCopying](nscopying.md)

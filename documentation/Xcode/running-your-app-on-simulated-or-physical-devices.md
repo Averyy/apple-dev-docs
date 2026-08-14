@@ -28,7 +28,7 @@ If the build is successful, Xcode runs the app and opens a debugging session in 
 
 If you choose a simulator as a run destination, Device Hub opens a compact window by default that shows your app on a device screen where you can interact with it using your Mac.
 
-![A screenshot of the Device Hub compact window for an Apple Vision Pro simulator running an app launched from Xcode.](https://docs-assets.developer.apple.com/published/8e9b9eda2e4e79296e703ddf0b9cfb09/device-hub-compact-view%402x.png)
+![A screenshot of the Device Hub compact window for an Apple Vision Pro simulator running an app launched from Xcode.](/images/com.apple.Xcode/device-hub-compact-view@2x.png)
 
 If you choose a physical device, Xcode runs the app on the device. To interact with your app using both the device and Device Hub, select the device in the sidebar and click View Screen in the canvas area.
 

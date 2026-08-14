@@ -19,7 +19,7 @@ Enabling the Siri capability adds a set of entitlements to your app. The App Sto
 3. Select the Capabilities tab.
 4. Enable the Siri capability.
 
-![A screenshot of Xcode with the Capabilities pane of the Project editor active, and the Siri capability enabled.](https://docs-assets.developer.apple.com/published/a948067b0756c8646909f0fede3b5230/media-2910037%402x.png)
+![A screenshot of Xcode with the Capabilities pane of the Project editor active, and the Siri capability enabled.](/images/com.apple.sirikit/media-2910037@2x.png)
 
 ##### Add an Intents App Extension to Your Project
 
@@ -35,7 +35,7 @@ Adding an Intents app extension target provides the initial files you need to bu
 
 > **Note**:  You may add more than one Intents extension to your app, but each extension must support different intents. Create multiple extensions only if doing so provides a performance advantage or reduces the memory footprint of each extension.
 
-![A screenshot of a project in Xcode with the template selection sheet open. Intents Extension is selected in the iOS pane.](https://docs-assets.developer.apple.com/published/e24ab8c6ba1c7f1ae54470037f178475/media-3172417%402x.png)
+![A screenshot of a project in Xcode with the template selection sheet open. Intents Extension is selected in the iOS pane.](/images/com.apple.sirikit/media-3172417@2x.png)
 
 ##### Specify the Intents Your Extension Supports
 
@@ -43,12 +43,12 @@ After adding your Intents extension target to your project, specify the intents 
 
 1. In Xcode’s Project editor, select the extension target  and expand the Supported Intents section in the General pane.
 2. Add the class name of each intent you support.
-3. If you support the [`INPlayMediaIntent`](https://developer.apple.com/documentation/intents/inplaymediaintent), also select each type of media your app plays in the Media Categories list. For more details about these categories, see [`SupportedMediaCategories`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSExtension/NSExtensionAttributes/SupportedMediaCategories).
+3. If you support the [`INPlayMediaIntent`](https://developer.apple.com/documentation/intents/inplaymediaintent), also select each type of media your app plays in the Media Categories list. For more details about these categories, see [`SupportedMediaCategories`](https://developer.apple.com/documentation/bundleresources/information-property-list/nsextension/nsextensionattributes/supportedmediacategories).
 4. For each intent you support, select the appropriate Authentication requirement.
 
 Choose Restricted While Locked to specify that the intent requires an unlocked device. Some intents, such as those involving financial transactions, always require the user’s device to be unlocked. For those intents, Siri automatically asks the user to unlock the device, even if you leave the Authentication set to None. In watchOS, all intents require the device to be unlocked.
 
-> ❗ **Important**:  Unless your watchOS app has [`WKRunsIndependentlyOfCompanionApp`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/WKRunsIndependentlyOfCompanionApp) enabled, your iOS app must support all of the intents your watchOS app supports, either directly in the app or in an app extension.
+> ❗ **Important**:  Unless your watchOS app has [`WKRunsIndependentlyOfCompanionApp`](https://developer.apple.com/documentation/bundleresources/information-property-list/wkrunsindependentlyofcompanionapp) enabled, your iOS app must support all of the intents your watchOS app supports, either directly in the app or in an app extension.
 
 When an ambiguous user utterance resolves to multiple intents, SiriKit uses the order of the intents in the Supported Intents table to determine which intent to send to your app. Organize your list of intents by putting the most relevant ones at the top of the table. Prioritizing your intents is especially important when your Intents extension supports multiple domains with similar semantics. For example, an app that supports calling and messaging intents might choose to prioritize sending a message over initiating a call.
 

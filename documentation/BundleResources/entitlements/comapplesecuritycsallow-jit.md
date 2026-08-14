@@ -16,7 +16,7 @@ A Boolean value that indicates whether the app may create writable and executabl
 
 You can create memory that’s both writable and executable by passing the `MAP_JIT` flag to the `mmap()` system function. The Hardened Runtime disallows this by default, because it creates a security risk. However, some apps and system frameworks rely on this functionality, typically for performance reasons. Examples include:
 
-- The fast-path of the [`JavaScriptCore`](https://developer.apple.com/documentation/JavaScriptCore) framework
+- The fast-path of the [`JavaScriptCore`](https://developer.apple.com/documentation/javascriptcore) framework
 - Certain Python frameworks
 - Perl-compatible regular expressions (PCRE)
 - An app that creates a dynamically-compiled, proprietary macro language

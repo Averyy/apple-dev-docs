@@ -21,9 +21,9 @@ static let textureStorageMode: MTKTextureLoader.Option
 
 #### Discussion
 
-The value for this key is an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) object containing a [`MTLStorageMode`](https://developer.apple.com/documentation/Metal/MTLStorageMode) value.
+The value for this key is an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) object containing a [`MTLStorageMode`](https://developer.apple.com/documentation/metal/mtlstoragemode) value.
 
-If this option is omitted, the texture is created with the default storage mode for Metal textures: [`MTLStorageMode.shared`](https://developer.apple.com/documentation/Metal/MTLStorageMode/shared) on iOS and tvOS, and [`MTLStorageMode.managed`](https://developer.apple.com/documentation/Metal/MTLStorageMode/managed) in macOS. Specifying the [`MTLStorageMode.private`](https://developer.apple.com/documentation/Metal/MTLStorageMode/private) option causes the [`MTKTextureLoader`](mtktextureloader.md) object to submit work to the GPU on your behalf.
+If this option is omitted, the texture is created with the default storage mode for Metal textures: [`MTLStorageMode.shared`](https://developer.apple.com/documentation/metal/mtlstoragemode/shared) on iOS and tvOS, and [`MTLStorageMode.managed`](https://developer.apple.com/documentation/metal/mtlstoragemode/managed) in macOS. Specifying the [`MTLStorageMode.private`](https://developer.apple.com/documentation/metal/mtlstoragemode/private) option causes the [`MTKTextureLoader`](mtktextureloader.md) object to submit work to the GPU on your behalf.
 
 ## See Also
 

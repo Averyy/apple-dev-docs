@@ -6,7 +6,7 @@ Measure the memory that your app’s features use, and detect increases by using
 
 #### Overview
 
-[`XCTest`](https://developer.apple.com/documentation/XCTest) can measure the amount of memory allocated by your app while it executes a test case. To measure memory use, create a performance test in your app’s unit test target, and pass an instance of [`XCTMemoryMetric`](https://developer.apple.com/documentation/XCTest/XCTMemoryMetric) to `measure(metrics:)`. Inside the block, call the code from your app that demonstrates the problematic memory use.
+[`XCTest`](https://developer.apple.com/documentation/xctest) can measure the amount of memory allocated by your app while it executes a test case. To measure memory use, create a performance test in your app’s unit test target, and pass an instance of [`XCTMemoryMetric`](https://developer.apple.com/documentation/xctest/xctmemorymetric) to `measure(metrics:)`. Inside the block, call the code from your app that demonstrates the problematic memory use.
 
 ```swift
 class MemoryTests: XCTestCase {

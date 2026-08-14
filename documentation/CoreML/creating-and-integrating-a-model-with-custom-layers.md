@@ -32,11 +32,11 @@ If the author of the model you plan to add to your Xcode project implemented the
 
 Otherwise, implement each custom layer by creating a Swift or Objective-C class for each layer. Inspect the names of the model’s custom layers by opening the model in Xcode:
 
-![Screenshot of a model view in Xcode that shows three custom layers in the Dependencies section: AAPLCustomAdd, AAPLCustomInnerProduct, and AAPLCustomConvolution.](https://docs-assets.developer.apple.com/published/07fa13d1f488c3a10fd68a42d3148e2b/media-3744502%402x.png)
+![Screenshot of a model view in Xcode that shows three custom layers in the Dependencies section: AAPLCustomAdd, AAPLCustomInnerProduct, and AAPLCustomConvolution.](/images/com.apple.coreml/media-3744502@2x.png)
 
 Create a class for each custom layer that the model has in its list of dependencies and name each class to match the custom layer it implements.
 
-> ❗ **Important**:  Swift classes must subclass [`NSObject`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class) and use the `@objc` attribute so that Core ML can access your custom layer’s implementation.
+> ❗ **Important**:  Swift classes must subclass [`NSObject`](https://developer.apple.com/documentation/objectivec/nsobject-swift.class) and use the `@objc` attribute so that Core ML can access your custom layer’s implementation.
 
 Adopt the [`MLCustomLayer`](mlcustomlayer.md) protocol by implementing the following:
 

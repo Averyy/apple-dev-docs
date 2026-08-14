@@ -14,7 +14,7 @@ An address in the virtual memory space of the process.
 ## Declaration
 
 ```swift
-typedef mach_vm_address_t IOVirtualAddress;
+typedef uint64_t IOVirtualAddress;
 ```
 
 ## See Also

@@ -23,9 +23,9 @@ The [`AccessoryDataProvider`](accessorydataprovider.md) protocol uses this confi
 ## Relationships
 
 ### Inherits From
-- [AppExtensionConfiguration](../ExtensionFoundation/AppExtensionConfiguration.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [AppExtensionConfiguration](../extensionfoundation/appextensionconfiguration.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 
@@ -37,7 +37,7 @@ The [`AccessoryDataProvider`](accessorydataprovider.md) protocol uses this confi
   A protocol for an extension that handles cryptographic key exchange with your accessory.
 - [protocol AccessoryTransportSecurityConfiguration](accessorytransportsecurityconfiguration.md)
   A protocol that configures and manages communication between your security extension and the system.
-- [Accessory Notifications](../AccessoryNotifications/AccessoryNotifications.md)
+- [Accessory Notifications](../accessorynotifications/accessorynotifications.md)
   Receive forwarded iOS system notifications on an accessory that you develop.
 
 

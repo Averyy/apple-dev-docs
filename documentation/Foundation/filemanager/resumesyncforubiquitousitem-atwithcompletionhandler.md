@@ -24,7 +24,7 @@ Always call this method when your app closes an item to allow the file provider 
 
 In most situations, the [`NSFileManagerResumeSyncBehavior.preserveLocalChanges`](nsfilemanagerresumesyncbehavior/preservelocalchanges.md) behavior is the best choice to avoid any risk of data loss.
 
-The resume call fails with [`featureUnsupported`](cocoaerror/featureunsupported.md) if `url` isn’t currently paused. If the device isn’t connected to the network, the call may fail with [`NSFileWriteUnknownError`](nsfilewriteunknownerror-c.enum.case.md), with the underlying error of [`serverUnreachable`](https://developer.apple.com/documentation/FileProvider/NSFileProviderError/serverUnreachable).
+The resume call fails with [`featureUnsupported`](cocoaerror/featureunsupported.md) if `url` isn’t currently paused. If the device isn’t connected to the network, the call may fail with [`NSFileWriteUnknownError`](nsfilewriteunknownerror-c.enum.case.md), with the underlying error of [`serverUnreachable`](https://developer.apple.com/documentation/fileprovider/nsfileprovidererror/serverunreachable).
 
 ## Parameters
 

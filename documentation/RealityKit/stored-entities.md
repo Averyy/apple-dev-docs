@@ -54,13 +54,13 @@ If you bundle 3D assets with your app, or download them from the network into lo
 
 ## See Also
 
-- [Generating procedural textures](../visionOS/generating-procedural-textures-in-visionos.md)
+- [Generating procedural textures](../visionos/generating-procedural-textures-in-visionos.md)
   Display a 3D model that generates procedural textures in a reality view.
 - [protocol Resource](resource.md)
   A shared resource you use to configure a component, like a material, mesh, or texture.
 - [Loading entities from a file](loading-entities-from-a-file.md)
   Retrieve an entity from storage on disk using a synchronous or an asynchronous load operation.
-- [Creating USD files for Apple devices](../USD/creating-usd-files-for-apple-devices.md)
+- [Creating USD files for Apple devices](../usd/creating-usd-files-for-apple-devices.md)
   Generate 3D assets that render as expected.
 - [convenience init(contentsOf: URL, withName: String?) async throws](entity/init(contentsof:withname:).md)
   Creates an entity by asynchronously loading it from a file URL.

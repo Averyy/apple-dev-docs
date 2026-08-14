@@ -51,7 +51,7 @@ private struct ContextMenuMenuItems: View {
 }
 ```
 
-![A screenshot of a context menu showing two menu items: Add to Favorites, and Show in Maps.](https://docs-assets.developer.apple.com/published/175048e4c43b6463112139fd1c3f69c8/View-contextMenu-1-iOS%402x.png)
+![A screenshot of a context menu showing two menu items: Add to Favorites, and Show in Maps.](/images/com.apple.SwiftUI/View-contextMenu-1-iOS@2x.png)
 
 ## Topics
 

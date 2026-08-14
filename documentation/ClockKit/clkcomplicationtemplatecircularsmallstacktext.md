@@ -18,7 +18,7 @@ class CLKComplicationTemplateCircularSmallStackText
 
 This template belongs to the [`CLKComplicationFamily.circularSmall`](clkcomplicationfamily/circularsmall.md) family.
 
-![A diagram showing the layout of the circular small stack text complication. The diagram has two examples, each showing two small rows of text.](https://docs-assets.developer.apple.com/published/c65d0106f8b763df0c4843c10f46047a/media-2933743%402x.png)
+![A diagram showing the layout of the circular small stack text complication. The diagram has two examples, each showing two small rows of text.](/images/com.apple.clockkit/media-2933743@2x.png)
 
 ## Topics
 
@@ -36,13 +36,13 @@ This template belongs to the [`CLKComplicationFamily.circularSmall`](clkcomplica
 ### Inherits From
 - [CLKComplicationTemplate](clkcomplicationtemplate.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCopying](../Foundation/NSCopying.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCopying](../foundation/nscopying.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

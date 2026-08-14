@@ -69,8 +69,8 @@ To adjust the transcriber’s algorithm, configure the transcriber with relevant
 
 ### Conforms To
 - [LocaleDependentSpeechModule](localedependentspeechmodule.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 - [SpeechModule](speechmodule.md)
 
 ## See Also

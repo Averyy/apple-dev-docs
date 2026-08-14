@@ -28,7 +28,7 @@ struct TimeRangeAttribute
 - [AttributedStringKey](attributedstringkey.md)
 - [DecodableAttributedStringKey](decodableattributedstringkey.md)
 - [EncodableAttributedStringKey](encodableattributedstringkey.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 
 ---

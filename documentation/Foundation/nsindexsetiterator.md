@@ -27,7 +27,7 @@ You typically obtain an index set iterator by calling the [`makeIterator()`](nsi
 ## Relationships
 
 ### Conforms To
-- [IteratorProtocol](../Swift/IteratorProtocol.md)
+- [IteratorProtocol](../swift/iteratorprotocol.md)
 
 ## See Also
 

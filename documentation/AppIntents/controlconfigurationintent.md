@@ -52,12 +52,12 @@ The example above provides a default value for the `focus` intent parameter. By 
 ### Inherits From
 - [AppIntent](appintent.md)
 - [PersistentlyIdentifiable](persistentlyidentifiable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 
-- [Controls](../WidgetKit/Controls-Collection.md)
+- [Controls](../widgetkit/controls-collection.md)
   Offer controls that people place in Control Center, on the Lock Screen, and on the Action button to quickly perform an action from your app.
 
 

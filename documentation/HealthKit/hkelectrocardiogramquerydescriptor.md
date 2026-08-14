@@ -39,7 +39,7 @@ for try await measurement in voltages {
 }
 ```
 
-While this method returns an [`AsyncSequence`](https://developer.apple.com/documentation/Swift/AsyncSequence), unlike the long-running queries, this sequence has a finite size. Iterating over the sequence asynchronously returns voltage measurements, automatically terminating after you receive all the measurements.
+While this method returns an [`AsyncSequence`](https://developer.apple.com/documentation/swift/asyncsequence), unlike the long-running queries, this sequence has a finite size. Iterating over the sequence asynchronously returns voltage measurements, automatically terminating after you receive all the measurements.
 
 ## Topics
 
@@ -60,8 +60,8 @@ While this method returns an [`AsyncSequence`](https://developer.apple.com/docum
 ## Relationships
 
 ### Conforms To
-- [Copyable](../Swift/Copyable.md)
-- [Escapable](../Swift/Escapable.md)
+- [Copyable](../swift/copyable.md)
+- [Escapable](../swift/escapable.md)
 - [HKAsyncSequenceQuery](hkasyncsequencequery.md)
 
 ## See Also

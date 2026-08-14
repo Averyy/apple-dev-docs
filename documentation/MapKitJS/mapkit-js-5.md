@@ -182,7 +182,7 @@ MapKit JS 5.45.0 introduces new APIs for overlay styling and animation and a new
 
 ###### Updates
 
-- Updated the [`addItems(items)`](map/additems.md) method to return the items passed.
+- Updated the [`addItems()`](map/additems.md) method to return the items passed.
 
 ##### 5440
 
@@ -212,7 +212,7 @@ MapKit JS 5.42.1 includes bug fixes for rotation events and map regions.
 ###### Updates
 
 - Ensured that `preventDefault()` can be used with `rotation-start`,  like other map events described in [`Handling map events`](handling-map-events.md).
-- Ensured that MapKit JS shows the same area if a developer uses the same [`CoordinateRegion`](coordinateregion.md) to set the viewable map area during initialization and to later change the viewable map area with [`setRegionAnimated(region, animated)`](map/setregionanimated.md). (Feedback ID: 7626496)
+- Ensured that MapKit JS shows the same area if a developer uses the same [`CoordinateRegion`](coordinateregion.md) to set the viewable map area during initialization and to later change the viewable map area with [`setRegionAnimated()`](map/setregionanimated.md). (Feedback ID: 7626496)
 
 ##### 5411
 
@@ -328,7 +328,7 @@ MapKit JS 5.29.0 improves accessibility, performance, and the appearance of cont
 
 ###### Updates
 
-- Improved the performance of [`importGeoJSON(data, callback)`](mapkit/importgeojson.md) by ensuring that the main thread is never blocked.
+- Improved the performance of [`importGeoJSON()`](mapkit/importgeojson.md) by ensuring that the main thread is never blocked.
 - Updated controls so that when someone clicks or taps a control that has focus, it retains focus.
 - Ensured controls that mirror for right-to-left languages also mirror the pressed state of the zoom buttons.
 
@@ -354,7 +354,7 @@ MapKit JS 5.25.0 includes various improvements for controls, GeoJSON import, and
 - Updated spacing on the Apple Maps logo.
 - Made various improvements to GeoJSON import, such as adding the ability to handle null geometries in Features, ensuring that an `ItemCollection` is returned even for single item imports, and improving error message reporting.
 - Improved clustering behavior when member annotations are on both sides of the antimeridian.
-- Ensured that [`annotationsInMapRect(mapRect)`](map/annotationsinmaprect.md) doesn’t return cluster annotations, to match the behavior of [`annotations`](map/annotations.md).
+- Ensured that [`annotationsInMapRect()`](map/annotationsinmaprect.md) doesn’t return cluster annotations, to match the behavior of [`annotations`](map/annotations.md).
 
 ##### 5240
 
@@ -364,7 +364,7 @@ MapKit JS 5.24.0 includes various improvements, including changes to how the App
 
 - Improved how marker annotations animate in and out of clusters.
 - Improved how annotation clusters are grouped, so that one annotation cluster never overlaps another.
-- The [`showItems(items, options)`](map/showitems.md) function now updates the map region in a way that encloses annotation callouts visible on selected annotations, so that any callouts showing aren’t’ cut off the edge of the map.
+- The [`showItems()`](map/showitems.md) function now updates the map region in a way that encloses annotation callouts visible on selected annotations, so that any callouts showing aren’t’ cut off the edge of the map.
 - The Legal link is now always shown, for all map dimensions.
 - The Apple Maps logo in the lower left corner is now displayed on maps with dimensions of 200 x 100 pixels and larger.
 - The time to detect a `long-press` map event has been increased to 500 ms. See [`Handling map events`](handling-map-events.md) for more information.
@@ -376,15 +376,15 @@ MapKit JS 5.23.1 includes new APIs for region and zoom limits, an updated Apple 
 
 ###### New Features
 
-- Added the [`cameraDistance`](map/cameradistance.md) property, which sets the altitude of the camera above the center of the map. A change to the map’s camera distance can be animated with [`setCameraDistanceAnimated(distance, animated)`](map/setcameradistanceanimated.md).
-- Added the [`cameraZoomRange`](map/camerazoomrange.md) property, which restricts zooming to a specified minimum and maximum camera distance. A change to the map’s camera zoom range can be animated with [`setCameraZoomRangeAnimated(cameraZoomRange, animated)`](map/setcamerazoomrangeanimated.md).
-- Added the [`cameraBoundary`](map/cameraboundary.md) property, which restricts panning to a specified coordinate region. A change to the map’s camera boundary can be animated with [`setCameraBoundaryAnimated(cameraBoundary, animated)`](map/setcameraboundaryanimated.md).
+- Added the [`cameraDistance`](map/cameradistance.md) property, which sets the altitude of the camera above the center of the map. A change to the map’s camera distance can be animated with [`setCameraDistanceAnimated()`](map/setcameradistanceanimated.md).
+- Added the [`cameraZoomRange`](map/camerazoomrange.md) property, which restricts zooming to a specified minimum and maximum camera distance. A change to the map’s camera zoom range can be animated with [`setCameraZoomRangeAnimated()`](map/setcamerazoomrangeanimated.md).
+- Added the [`cameraBoundary`](map/cameraboundary.md) property, which restricts panning to a specified coordinate region. A change to the map’s camera boundary can be animated with [`setCameraBoundaryAnimated()`](map/setcameraboundaryanimated.md).
 - Enabled Directions support for users in China.
 - Updated the logo in the lower left corner from the Apple icon to the icon beside the word “Maps”.
 
 ###### Updates
 
-- Fixed issue where [`importGeoJSON(data, callback)`](mapkit/importgeojson.md) would not import a `GeometryCollection` nested within a `Feature.`
+- Fixed issue where [`importGeoJSON()`](mapkit/importgeojson.md) would not import a `GeometryCollection` nested within a `Feature.`
 - Improved how the default marker annotation color is set depending on the map’s [`colorScheme`](map/colorscheme.md). Setting a marker annotation’s color property to `null` sets a default color that matches the current [`colorScheme`](map/colorscheme.md).
 - Updated the Legal link on the map to open a web page, instead of displaying a menu.
 

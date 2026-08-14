@@ -30,7 +30,7 @@ The system-provided UI frameworks, such as SwiftUI, UIKit, and AppKit, have the 
 Whenever possible, use the menus and labels the UI frameworks provide to implement your app’s UI, and configure them in the following way so they automatically adapt to the platforms:
 
 - Adopt the layout mechanism the UI frameworks provide to let the system position your menus and labels. Avoid using fixed-size UI elements. For more information, see [`Human Interface Guidelines > Layout`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/layout).
-- Adopt text styles when setting up your menus and labels. Avoid using fixed-size fonts. For more information, see [`Scaling fonts automatically`](https://developer.apple.com/documentation/UIKit/scaling-fonts-automatically).
+- Adopt text styles when setting up your menus and labels. Avoid using fixed-size fonts. For more information, see [`Scaling fonts automatically`](https://developer.apple.com/documentation/uikit/scaling-fonts-automatically).
 
 For apps that draw menus and labels with code or implement them using middleware, make the menus and labels adaptable by doing the following:
 
@@ -72,7 +72,7 @@ func sizeOfFontInDrawablePixels(with layer: CAMetalLayer, fontSizeInPoints: CGFl
 
 ##### Handle Multiple Interaction Methods
 
-Consider how your game handles interactions with different input methods, like mouse, keyboard, game controllers, touch, and spatial user interactions. Take advantage of the [`Game Controller`](https://developer.apple.com/documentation/GameController) framework to create a unified approach to handling these interactions for your players. To learn more about receiving controller input by either polling or callbacks, see [`Handling input events`](https://developer.apple.com/documentation/GameController/handling-input-events).
+Consider how your game handles interactions with different input methods, like mouse, keyboard, game controllers, touch, and spatial user interactions. Take advantage of the [`Game Controller`](https://developer.apple.com/documentation/gamecontroller) framework to create a unified approach to handling these interactions for your players. To learn more about receiving controller input by either polling or callbacks, see [`Handling input events`](https://developer.apple.com/documentation/gamecontroller/handling-input-events).
 
 Below are considerations for smaller devices:
 
@@ -85,10 +85,10 @@ Take advantage of built-in accessibility features like Multi-Touch, VoiceOver, S
 
 Use a physical device to test the behavior and user experience for your game’s menus on every supported device. Otherwise, use Simulator or an approximated environment on Mac, with proper display resolution, scale, and interaction methods. For more guidance on testing your game in Simulator, see the resources below:
 
-- [`Running your app on simulated or physical devices`](https://developer.apple.com/documentation/Xcode/running-your-app-on-simulated-or-physical-devices)
+- [`Running your app on simulated or physical devices`](https://developer.apple.com/documentation/xcode/running-your-app-on-simulated-or-physical-devices)
 - doc://com.apple.documentation/documentation/xcode/testing-in-simulator-versus-testing-on-hardware-devices
 - doc://com.apple.documentation/documentation/xcode/testing-complex-hardware-device-scenarios-in-simulator
-- [`Device Hub`](https://developer.apple.com/documentation/Xcode/device-hub)
+- [`Device Hub`](https://developer.apple.com/documentation/xcode/device-hub)
 
 If you use middleware in your games, follow their guidelines on testing multiple form factors.
 

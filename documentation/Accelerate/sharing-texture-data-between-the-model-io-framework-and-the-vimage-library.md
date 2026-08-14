@@ -10,17 +10,17 @@ Use Model I/O and vImage to composite a photograph over a computer-generated sky
 
 #### Overview
 
-The [`Model I/O`](https://developer.apple.com/documentation/ModelIO) framework provides the [`MDLTexture`](https://developer.apple.com/documentation/ModelIO/MDLTexture) class and its subclasses to generate procedural textures such as noise, normal maps, and realistic sky boxes.  This sample code project uses an [`MDLSkyCubeTexture`](https://developer.apple.com/documentation/ModelIO/MDLSkyCubeTexture) instance to generate a physically realistic simulation of a sunlit sky. The code uses the generated sky image as the background and a photograph of a building as the foreground.
+The [`Model I/O`](https://developer.apple.com/documentation/modelio) framework provides the [`MDLTexture`](https://developer.apple.com/documentation/modelio/mdltexture) class and its subclasses to generate procedural textures such as noise, normal maps, and realistic sky boxes.  This sample code project uses an [`MDLSkyCubeTexture`](https://developer.apple.com/documentation/modelio/mdlskycubetexture) instance to generate a physically realistic simulation of a sunlit sky. The code uses the generated sky image as the background and a photograph of a building as the foreground.
 
 The image below shows the final composition:
 
-![A photograph of a skyscraper composited over a computer-generated](https://docs-assets.developer.apple.com/published/fbdd4053ce12c328dd288776914fa149/img.png)
+![A photograph of a skyscraper composited over a computer-generated](/images/com.apple.accelerate/img.png)
 
 Using the UI, someone can define the parameters that control the sky simulation such as upper atmosphere scattering and sun elevation. Before exploring the code, try building and running the app to get familiar with the effect of the different parameters on the image.
 
 ##### Create the Sky Texture Generator
 
-The `ImageProvider` class declares constants for the source image’s dimensions and the [`MDLSkyCubeTexture`](https://developer.apple.com/documentation/ModelIO/MDLSkyCubeTexture) instance named `skyGenerator`:
+The `ImageProvider` class declares constants for the source image’s dimensions and the [`MDLSkyCubeTexture`](https://developer.apple.com/documentation/modelio/mdlskycubetexture) instance named `skyGenerator`:
 
 ```swift
 let width: Int
@@ -47,7 +47,7 @@ skyGenerator = MDLSkyCubeTexture(name: nil,
 
 ##### Update the Sky Texture Generator Parameters
 
-With each change to the SwiftUI [`Picker`](https://developer.apple.com/documentation/SwiftUI/Picker) controls that define the sky generator parameters, the app calls the `renderSky()` function. The function sets the sky generator parameters and calls [`update()`](https://developer.apple.com/documentation/ModelIO/MDLSkyCubeTexture/update()) to generate new texel data:
+With each change to the SwiftUI [`Picker`](https://developer.apple.com/documentation/swiftui/picker) controls that define the sky generator parameters, the app calls the `renderSky()` function. The function sets the sky generator parameters and calls [`update()`](https://developer.apple.com/documentation/modelio/mdlskycubetexture/update()) to generate new texel data:
 
 ```swift
 skyGenerator.turbidity = turbidity
@@ -60,15 +60,15 @@ skyGenerator.update()
 
 ##### Create the Composite Image
 
-The [`texelDataWithTopLeftOrigin()`](https://developer.apple.com/documentation/ModelIO/MDLTexture/texelDataWithTopLeftOrigin()) method returns the sky generator’s image data organized such that its first pixel represents the top-left corner of the image. This layout matches the [`vImage.PixelBuffer`](vimage/pixelbuffer.md) layout. The code passes the texel data to the [`withUnsafeBytes(_:)`](https://developer.apple.com/documentation/Foundation/Data/withUnsafeBytes(_:)) function to work with the underlying bytes of the data’s contiguous storage.
+The [`texelDataWithTopLeftOrigin()`](https://developer.apple.com/documentation/modelio/mdltexture/texeldatawithtopleftorigin()) method returns the sky generator’s image data organized such that its first pixel represents the top-left corner of the image. This layout matches the [`vImage.PixelBuffer`](vimage/pixelbuffer.md) layout. The code passes the texel data to the [`withUnsafeBytes(_:)`](https://developer.apple.com/documentation/foundation/data/withunsafebytes(_:)) function to work with the underlying bytes of the data’s contiguous storage.
 
 ```swift
 let img = skyGenerator.texelDataWithTopLeftOrigin()?.withUnsafeBytes { skyData in
 ```
 
-The [`MDLSkyCubeTexture`](https://developer.apple.com/documentation/ModelIO/MDLSkyCubeTexture) instance generates a cube texture that’s represented as six sides, vertically stacked.
+The [`MDLSkyCubeTexture`](https://developer.apple.com/documentation/modelio/mdlskycubetexture) instance generates a cube texture that’s represented as six sides, vertically stacked.
 
-![A vertically stacked series of six images that represent the six sides of the sky texture cube.](https://docs-assets.developer.apple.com/published/27bc615fbfad224159cfc5d2dd1115cc/cube.png)
+![A vertically stacked series of six images that represent the six sides of the sky texture cube.](/images/com.apple.accelerate/cube.png)
 
 The code below calculates the range texels that correspond to the selected side (one of `["+X", "-X", "+Y", "-Y", "+Z", "-Z"]`) and binds those to [`Pixel_8`](pixel_8.md) values:
 
@@ -91,7 +91,7 @@ let buffer = vImage.PixelBuffer(pixelValues: values,
 buffer.permuteChannels(to: (3, 0, 1, 2), destination: buffer)
 ```
 
-Finally, the sample code project composites the skyscraper image, represented by `foregroundBuffer`, over the sky image and returns a [`CGImage`](https://developer.apple.com/documentation/CoreGraphics/CGImage) instance that contains the result:
+Finally, the sample code project composites the skyscraper image, represented by `foregroundBuffer`, over the sky image and returns a [`CGImage`](https://developer.apple.com/documentation/coregraphics/cgimage) instance that contains the result:
 
 ```swift
     buffer.alphaComposite(.nonpremultiplied,

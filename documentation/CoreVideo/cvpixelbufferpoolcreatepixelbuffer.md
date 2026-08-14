@@ -30,7 +30,7 @@ This function creates a new pixel buffer using the pixel buffer attributes speci
 
 ## Parameters
 
-- `allocator`: The allocator to use for creating the pixel buffer. Pass [`kCFAllocatorDefault`](https://developer.apple.com/documentation/CoreFoundation/kCFAllocatorDefault) to use the default allocator. See [`Predefined Allocators`](https://developer.apple.com/documentation/CoreFoundation/predefined-allocators) for additional values you can use.
+- `allocator`: The allocator to use for creating the pixel buffer. Pass [`kCFAllocatorDefault`](https://developer.apple.com/documentation/corefoundation/kcfallocatordefault) to use the default allocator. See [`Predefined Allocators`](https://developer.apple.com/documentation/corefoundation/predefined-allocators) for additional values you can use.
 - `pixelBufferPool`: The pixel buffer pool for creating the new pixel buffer.
 - `pixelBufferOut`: On output, the newly created pixel buffer.
 

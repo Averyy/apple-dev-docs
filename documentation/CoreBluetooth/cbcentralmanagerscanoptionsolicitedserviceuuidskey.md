@@ -22,7 +22,7 @@ let CBCentralManagerScanOptionSolicitedServiceUUIDsKey: String
 
 #### Discussion
 
-The array is an instance of [`NSArray`](https://developer.apple.com/documentation/Foundation/NSArray), and uses [`CBUUID`](cbuuid.md) objects to represent the UUIDs to scan for.
+The array is an instance of [`NSArray`](https://developer.apple.com/documentation/foundation/nsarray), and uses [`CBUUID`](cbuuid.md) objects to represent the UUIDs to scan for.
 
 Specifying this scan option causes the central manager to also scan for peripherals soliciting any of the services contained in the array.
 

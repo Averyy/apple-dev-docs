@@ -26,7 +26,7 @@ A new audio source object.
 
 #### Discussion
 
-Calling this method is equivalent to using the [`Bundle`](https://developer.apple.com/documentation/Foundation/Bundle) class to locate an audio file in the application’s main bundle and then passing the resulting URL to the [`init(url:)`](scnaudiosource/init(url:)-3qyjs.md) method.
+Calling this method is equivalent to using the [`Bundle`](https://developer.apple.com/documentation/foundation/bundle) class to locate an audio file in the application’s main bundle and then passing the resulting URL to the [`init(url:)`](scnaudiosource/init(url:)-3qyjs.md) method.
 
 ## Parameters
 

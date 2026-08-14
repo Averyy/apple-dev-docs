@@ -25,7 +25,7 @@ If you set this property to an empty array, or to an array in which none of the 
 
 When capturing media, the value of this property determines the camera interface to display. When browsing saved media, this property determines the types of media presented in the interface.
 
-By default, the value of this property is the [`image`](https://developer.apple.com/documentation/UniformTypeIdentifiers/UTType-swift.struct/image) (Swift) or `kUTTypeImage` (Objective-C) identifier, which designates the still camera interface when capturing media, and specifies that only still images should be displayed in the media picker when browsing saved media. The following example shows how to designate the movie capture interface, or to indicate that only movies should be displayed when browsing saved media:
+By default, the value of this property is the [`image`](https://developer.apple.com/documentation/uniformtypeidentifiers/uttype-swift.struct/image) (Swift) or `kUTTypeImage` (Objective-C) identifier, which designates the still camera interface when capturing media, and specifies that only still images should be displayed in the media picker when browsing saved media. The following example shows how to designate the movie capture interface, or to indicate that only movies should be displayed when browsing saved media:
 
 **Swift**:
 
@@ -40,7 +40,7 @@ myImagePickerController.mediaTypes =
     [[NSArray alloc] initWithObjects: (NSString *) kUTTypeMovie, nil];
 ```
 
-> **Note**:  If you want to display a Live Photo rendered as a Loop or a Bounce, you must include the [`movie`](https://developer.apple.com/documentation/UniformTypeIdentifiers/UTType-swift.struct/movie) (Swift) or `kUTTypeMovie` (Objective-C) identifier.
+> **Note**:  If you want to display a Live Photo rendered as a Loop or a Bounce, you must include the [`movie`](https://developer.apple.com/documentation/uniformtypeidentifiers/uttype-swift.struct/movie) (Swift) or `kUTTypeMovie` (Objective-C) identifier.
 
 To designate all available media types for a source, use a statement like this:
 

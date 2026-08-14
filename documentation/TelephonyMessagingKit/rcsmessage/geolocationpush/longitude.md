@@ -7,7 +7,6 @@ The longitude of the location.
 
 **Availability**:
 - iOS 26.0+
-- iPadOS 26.0+
 
 ## Declaration
 

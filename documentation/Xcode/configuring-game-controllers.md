@@ -12,15 +12,15 @@ A game that supports game controllers enables one or more different *game-contro
 
 Before you can select the profiles your game supports, follow the steps in [`Add a capability`](adding-capabilities-to-your-app#Add-a-capability.md) to add the Game Controllers capability to your game’s target.
 
-![A screenshot of Xcode’s Capabilities library with a list of available capabilities on the left and an information pane on the right. The list shows a range of capabilities from Game Controllers to Keychain Sharing, and the Game Controllers capability is in a selected state. The text on the information pane explains that the Game Controllers capability adds supports for game controllers to your app.](https://docs-assets.developer.apple.com/published/45e1533715f8be6bb269bff3e898b86b/game-controllers%402x.png)
+![A screenshot of Xcode’s Capabilities library with a list of available capabilities on the left and an information pane on the right. The list shows a range of capabilities from Game Controllers to Keychain Sharing, and the Game Controllers capability is in a selected state. The text on the information pane explains that the Game Controllers capability adds supports for game controllers to your app.](/images/com.apple.Xcode/game-controllers@2x.png)
 
-After you add the Game Controllers capability to your game’s target, Xcode appends the [`GCSupportsControllerUserInteraction`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/GCSupportsControllerUserInteraction) key to its `Info.plist` file with a value of `true` to indicate to the system that your game supports game controllers.
+After you add the Game Controllers capability to your game’s target, Xcode appends the [`GCSupportsControllerUserInteraction`](https://developer.apple.com/documentation/bundleresources/information-property-list/gcsupportscontrolleruserinteraction) key to its `Info.plist` file with a value of `true` to indicate to the system that your game supports game controllers.
 
 > **Note**: The Game Controllers capability is only available to games that target iOS, iPadOS, tvOS, and visionOS.
 
 ##### Select the Supported Game Controller Profiles
 
-When you add support for game controllers to your app, you don’t integrate with specific hardware. Instead, you integrate one or more of the game-controller profiles that the [`Game Controller`](https://developer.apple.com/documentation/GameController) framework provides. Each profile maps to a control layout that Apple defines, and that profile describes a set of physical controls that the hardware manufacturer guarantees to be available on the controller.
+When you add support for game controllers to your app, you don’t integrate with specific hardware. Instead, you integrate one or more of the game-controller profiles that the [`Game Controller`](https://developer.apple.com/documentation/gamecontroller) framework provides. Each profile maps to a control layout that Apple defines, and that profile describes a set of physical controls that the hardware manufacturer guarantees to be available on the controller.
 
 To indicate to the system which game-controller profiles your game supports, perform the following steps:
 
@@ -30,13 +30,13 @@ To indicate to the system which game-controller profiles your game supports, per
 4. Find the Game Controllers capability.
 5. Select the appropriate game controller profiles by checking their checkboxes.
 
-![A screenshot of the Game Controllers capability after you add it to a target. The Extended Gamepad, Micro Gamepad, and Directional Gamepad profiles are in an enabled state.](https://docs-assets.developer.apple.com/published/ca459e7915dba4bfc87d56726c0e8b30/game-controller-types%402x.png)
+![A screenshot of the Game Controllers capability after you add it to a target. The Extended Gamepad, Micro Gamepad, and Directional Gamepad profiles are in an enabled state.](/images/com.apple.Xcode/game-controller-types@2x.png)
 
-Xcode adds the [`GCSupportedGameControllers`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/GCSupportedGameControllers) array to your game’s `Info.plist` file, if it’s not already present, and populates it with names of the selected game-controller profiles. For more information about each profile, see [`GCExtendedGamepad`](https://developer.apple.com/documentation/GameController/GCExtendedGamepad), [`GCMicroGamepad`](https://developer.apple.com/documentation/GameController/GCMicroGamepad), and [`GCDirectionalGamepad`](https://developer.apple.com/documentation/GameController/GCDirectionalGamepad).
+Xcode adds the [`GCSupportedGameControllers`](https://developer.apple.com/documentation/bundleresources/information-property-list/gcsupportedgamecontrollers) array to your game’s `Info.plist` file, if it’s not already present, and populates it with names of the selected game-controller profiles. For more information about each profile, see [`GCExtendedGamepad`](https://developer.apple.com/documentation/gamecontroller/gcextendedgamepad), [`GCMicroGamepad`](https://developer.apple.com/documentation/gamecontroller/gcmicrogamepad), and [`GCDirectionalGamepad`](https://developer.apple.com/documentation/gamecontroller/gcdirectionalgamepad).
 
 Hardware controllers can support multiple profiles; if you enable more than one game controller profile, drag the profiles and arrange them in your preferred order. For example, if your game supports both the Extended and Micro profiles, but optimizes gameplay for the Micro profile, place that profile at the top of the list.
 
-For more information, see the video [`Tap into virtual and physical game controllers`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2021/10081) and the sample code [`Supporting Game Controllers`](https://developer.apple.com/documentation/GameController/supporting-game-controllers).
+For more information, see the video [`Tap into virtual and physical game controllers`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2021/10081) and the sample code [`Supporting Game Controllers`](https://developer.apple.com/documentation/gamecontroller/supporting-game-controllers).
 
 ## See Also
 

@@ -64,7 +64,7 @@ In the *Operation* column, a subscript (for example, `a[i]`) indicates a vector,
 | `c[i] = a[i] * b[i]` | [`multiply(_:_:)`](vdsp/multiply(_:_:)-9zgw.md) |
 | `c[i] = a[i] / b` | [`divide(_:_:)`](vdsp/divide(_:_:)-1uqmz.md) |
 | `c[i] = a / b[i]` | [`divide(_:_:)`](vdsp/divide(_:_:)-70npt.md) |
-| `o0[i] = i1[i] + i0[i]` ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) `o1[i] = i1[i] - i0[i]` | [`addSubtract(_:_:addResult:subtractResult:)`](vdsp/addsubtract(_:_:addresult:subtractresult:)-avzd.md) |
+| `o0[i] = i1[i] + i0[i]` ![None](/images/com.apple.accelerate/spacer.png) `o1[i] = i1[i] - i0[i]` | [`addSubtract(_:_:addResult:subtractResult:)`](vdsp/addsubtract(_:_:addresult:subtractresult:)-avzd.md) |
 | `c[i] = a[i] / b[i]` | [`divide(_:_:)`](vdsp/divide(_:_:)-6nfsi.md) |
 | `d[i] = (a[i] + b[i]) * c` | [`multiply(addition:_:)`](vdsp/multiply(addition:_:)-4fnbx.md) |
 | `d[i] = (a[i] + b[i]) * c[i]` | [`multiply(addition:_:)`](vdsp/multiply(addition:_:)-7t59.md) |

@@ -11,7 +11,7 @@ framework: HIG
 
 When people wear Apple Vision Pro, they enter an infinite 3D space where they can engage with your app or game while staying connected to their surroundings.
 
-![A stylized representation of Apple Vision Pro shown on top of a grid. The image is overlaid with rectangular and circular grid lines and is tinted green to subtly reflect the green in the original six-color Apple logo.](https://docs-assets.developer.apple.com/published/8cebc8b041535a842360a1d8bcd2da6b/platforms-visionOS-intro~dark%402x.png)
+![A stylized representation of Apple Vision Pro shown on top of a grid. The image is overlaid with rectangular and circular grid lines and is tinted green to subtly reflect the green in the original six-color Apple logo.](/images/com.apple.HIG/platforms-visionOS-intro~dark@2x.png)
 As you begin designing your app or game for visionOS, start by understanding the fundamental device characteristics and patterns that distinguish the platform. Use these characteristics and patterns to inform your design decisions and help you create immersive and engaging experiences.
 **Space.** Apple Vision Pro offers a limitless canvas where people can view virtual content like [Windows](windows.md), [visionOS volumes](windows.md#visionOS-volumes), and 3D objects, and choose to enter deeply immersive experiences that can transport them to different places.
 **Immersion.** In a visionOS app, people can fluidly transition between different levels of [Immersive experiences](immersive-experiences.md). By default, an app launches in the *Shared Space* where multiple apps can run side-by-side and people can open, close, and relocate windows. People can also choose to transition an app to a *Full Space*, where it’s the only app running.  While in a Full Space app, people can view 3D content blended with their surroundings, open a portal to view another place, or enter a different world.
@@ -43,7 +43,7 @@ Great visionOS apps and games are approachable and familiar, while offering extr
 
 #### Developer documentation
 [visionOS Pathway](https://developer.apple.com/visionos/get-started/)
-[Creating your first visionOS app](../visionOS/creating-your-first-visionos-app.md)
+[Creating your first visionOS app](../visionos/creating-your-first-visionos-app.md)
 
 #### Videos
 - [Design interactive experiences for visionOS](https://developer.apple.com/videos/play/wwdc2024/10096) - Learn how you can design a compelling interactive narrative experience for Apple Vision Pro from the designers of Encounter Dinosaurs. Discover how these types of experiences differ from existing apps, media, and games, and explore how to design narratives that bring audiences into new worlds. Find out how you can create stories that adapt to any space and size, provide multiple levels of interaction to make them accessible to all, and use animation, spatial audio, and custom gestures to further immerse people in your experience.

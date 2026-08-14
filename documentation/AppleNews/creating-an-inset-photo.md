@@ -14,7 +14,7 @@ In [`Creating an Inset Pull Quote`](creating-an-inset-pull-quote.md), you placed
 - Use a `ComponentLayout` object to control horizontal placement in the column system.
 - Add an anchor to control vertical placement and make text wrap around the photo.
 
-![Screenshot of an Apple News article with an inset photo on iPad.](https://docs-assets.developer.apple.com/published/48fe5e55e2f466580a8aa774cf4cc857/media-3624923%402x.png)
+![Screenshot of an Apple News article with an inset photo on iPad.](/images/com.apple.applenews/media-3624923@2x.png)
 
 ##### Define Componentlayout Objects for an Inset Photo
 

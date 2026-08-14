@@ -16,7 +16,7 @@ var title: String? { get }
 
 #### Discussion
 
-You set a marker group’s title with the [`AVNavigationMarkersGroup`](avnavigationmarkersgroup.md) initializer. Each marker group in the [`navigationMarkerGroups`](https://developer.apple.com/documentation/AVFoundation/AVPlayerItem/navigationMarkerGroups) array of an [`AVPlayerItem`](https://developer.apple.com/documentation/AVFoundation/AVPlayerItem) object must have a unique title. To use the marker group as a chapter list, set its title to `nil`.
+You set a marker group’s title with the [`AVNavigationMarkersGroup`](avnavigationmarkersgroup.md) initializer. Each marker group in the [`navigationMarkerGroups`](https://developer.apple.com/documentation/avfoundation/avplayeritem/navigationmarkergroups) array of an [`AVPlayerItem`](https://developer.apple.com/documentation/avfoundation/avplayeritem) object must have a unique title. To use the marker group as a chapter list, set its title to `nil`.
 
 ## See Also
 

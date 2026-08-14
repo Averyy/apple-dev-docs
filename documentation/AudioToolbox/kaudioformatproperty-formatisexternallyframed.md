@@ -21,7 +21,7 @@ var kAudioFormatProperty_FormatIsExternallyFramed: AudioFormatPropertyID { get }
 
 #### Discussion
 
-Indicates whether or not a format requires external framing information in the form of [`AudioStreamPacketDescription`](https://developer.apple.com/documentation/CoreAudioTypes/AudioStreamPacketDescription) structures. The specifier is an [`AudioStreamBasicDescription`](https://developer.apple.com/documentation/CoreAudioTypes/AudioStreamBasicDescription) structure describing the format to ask about. The value is a `UInt32` where nonzero means the format is externally framed. Any format that has variable-byte-sized packets requires packet descriptions.
+Indicates whether or not a format requires external framing information in the form of [`AudioStreamPacketDescription`](https://developer.apple.com/documentation/coreaudiotypes/audiostreampacketdescription) structures. The specifier is an [`AudioStreamBasicDescription`](https://developer.apple.com/documentation/coreaudiotypes/audiostreambasicdescription) structure describing the format to ask about. The value is a `UInt32` where nonzero means the format is externally framed. Any format that has variable-byte-sized packets requires packet descriptions.
 
 ## See Also
 

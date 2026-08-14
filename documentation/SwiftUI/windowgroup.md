@@ -42,7 +42,7 @@ struct Mail: App {
 
 SwiftUI takes care of certain platform-specific behaviors. For example, on platforms that support it, like macOS and iPadOS, people can open more than one window from the group simultaneously. In macOS, people can gather open windows together in a tabbed interface. Also in macOS, window groups automatically provide commands for standard window management.
 
-> ❗ **Important**: To enable an iPadOS app to simultaneously display multiple windows, be sure to include the [`UIApplicationSupportsMultipleScenes`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/UIApplicationSceneManifest/UIApplicationSupportsMultipleScenes) key with a value of `true` in the [`UIApplicationSceneManifest`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/UIApplicationSceneManifest) dictionary of your app’s Information Property List.
+> ❗ **Important**: To enable an iPadOS app to simultaneously display multiple windows, be sure to include the [`UIApplicationSupportsMultipleScenes`](https://developer.apple.com/documentation/bundleresources/information-property-list/uiapplicationscenemanifest/uiapplicationsupportsmultiplescenes) key with a value of `true` in the [`UIApplicationSceneManifest`](https://developer.apple.com/documentation/bundleresources/information-property-list/uiapplicationscenemanifest) dictionary of your app’s Information Property List.
 
 Every window in the group maintains independent state. For example, the system allocates new storage for any [`State`](state.md) or [`StateObject`](stateobject.md) variables instantiated by the scene’s view hierarchy for each window that it creates.
 
@@ -109,7 +109,7 @@ struct NewMessageButton: View {
 }
 ```
 
-Be sure that the type you present conforms to both the [`Hashable`](https://developer.apple.com/documentation/Swift/Hashable) and [`Codable`](https://developer.apple.com/documentation/Swift/Codable) protocols. Also, prefer lightweight data for the presentation value. For model values that conform to the [`Identifiable`](https://developer.apple.com/documentation/Swift/Identifiable) protocol, the value’s identifier works well as a presentation type, as the above example demonstrates.
+Be sure that the type you present conforms to both the [`Hashable`](https://developer.apple.com/documentation/swift/hashable) and [`Codable`](https://developer.apple.com/documentation/swift/codable) protocols. Also, prefer lightweight data for the presentation value. For model values that conform to the [`Identifiable`](https://developer.apple.com/documentation/swift/identifiable) protocol, the value’s identifier works well as a presentation type, as the above example demonstrates.
 
 If a window with a binding to the same value that you pass to the `openWindow` action already appears in the user interface, the system brings the existing window to the front rather than opening a new window. If SwiftUI doesn’t have a value to provide — for example, when someone opens a window by choosing File > New Window from the macOS menu bar — SwiftUI passes a binding to a `nil` value instead. To avoid receiving a `nil` value, you can optionally specify a default value in your window group initializer. For example, for the message viewer, you can present a new empty message:
 
@@ -145,7 +145,7 @@ If you don’t provide a title for a window, the system refers to the window usi
 
 ##### Distinguish Windows That Present Like Data
 
-To programmatically distinguish between windows that present the same type of data, like when you use a [`UUID`](https://developer.apple.com/documentation/Foundation/UUID) as the identifier for more than one model type, add the `id` parameter to the group’s initializer to provide a unique string identifier:
+To programmatically distinguish between windows that present the same type of data, like when you use a [`UUID`](https://developer.apple.com/documentation/foundation/uuid) as the identifier for more than one model type, add the `id` parameter to the group’s initializer to provide a unique string identifier:
 
 ```swift
 WindowGroup("Message", id: "message", for: UUID.self) { $uuid in

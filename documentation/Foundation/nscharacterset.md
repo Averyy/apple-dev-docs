@@ -30,9 +30,9 @@ The objects you create using these classes are referred to as character set obje
 
 The `NSCharacterSet` class declares the programmatic interface for an object that manages a set of Unicode characters (see the [`NSString`](nsstring.md) class cluster specification for information on Unicode). `NSCharacterSet`’s principal primitive method, [`characterIsMember(_:)`](nscharacterset/characterismember(_:).md), provides the basis for all other instance methods in its interface. A subclass of `NSCharacterSet` needs only to implement this method, plus [`mutableCopy(with:)`](nsmutablecopying/mutablecopy(with:).md), for proper behavior. For optimal performance, a subclass should also override [`bitmapRepresentation`](nscharacterset/bitmaprepresentation.md), which otherwise works by invoking [`characterIsMember(_:)`](nscharacterset/characterismember(_:).md) for every possible Unicode value.
 
-`NSCharacterSet` is “toll-free bridged” with its Core Foundation counterpart, [`CFCharacterSet`](https://developer.apple.com/documentation/CoreFoundation/CFCharacterSet). See [`Toll-Free Bridging`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Conceptual/CocoaEncyclopedia/Toll-FreeBridgin/Toll-FreeBridgin.html#//apple_ref/doc/uid/TP40010810-CH2) for more information on toll-free bridging.
+`NSCharacterSet` is “toll-free bridged” with its Core Foundation counterpart, [`CFCharacterSet`](https://developer.apple.com/documentation/corefoundation/cfcharacterset). See [`Toll-Free Bridging`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Conceptual/CocoaEncyclopedia/Toll-FreeBridgin/Toll-FreeBridgin.html#//apple_ref/doc/uid/TP40010810-CH2) for more information on toll-free bridging.
 
-> ❗ **Important**:  The Swift overlay to the Foundation framework provides the [`CharacterSet`](characterset.md) structure, which bridges to the [`NSCharacterSet`](nscharacterset.md) class and its mutable subclass, [`NSMutableCharacterSet`](nsmutablecharacterset.md). For more information about value types, see [`Working with Foundation Types`](https://developer.apple.com/documentation/Swift/working-with-foundation-types).
+> ❗ **Important**:  The Swift overlay to the Foundation framework provides the [`CharacterSet`](characterset.md) structure, which bridges to the [`NSCharacterSet`](nscharacterset.md) class and its mutable subclass, [`NSMutableCharacterSet`](nsmutablecharacterset.md). For more information about value types, see [`Working with Foundation Types`](https://developer.apple.com/documentation/swift/working-with-foundation-types).
 
 ## Topics
 
@@ -113,21 +113,21 @@ The `NSCharacterSet` class declares the programmatic interface for an object tha
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Inherited By
 - [NSMutableCharacterSet](nsmutablecharacterset.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [Copyable](../Swift/Copyable.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Escapable](../Swift/Escapable.md)
-- [Hashable](../Swift/Hashable.md)
+- [CVarArg](../swift/cvararg.md)
+- [Copyable](../swift/copyable.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Escapable](../swift/escapable.md)
+- [Hashable](../swift/hashable.md)
 - [NSCoding](nscoding.md)
 - [NSCopying](nscopying.md)
 - [NSMutableCopying](nsmutablecopying.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 - [NSSecureCoding](nssecurecoding.md)
 
 

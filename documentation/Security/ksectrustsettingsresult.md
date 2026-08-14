@@ -17,7 +17,7 @@ var kSecTrustSettingsResult: String { get }
 
 #### Discussion
 
-The value is a [`CFNumber`](https://developer.apple.com/documentation/CoreFoundation/CFNumber) object containing an `SInt32` value.
+The value is a [`CFNumber`](https://developer.apple.com/documentation/corefoundation/cfnumber) object containing an `SInt32` value.
 
 
 ---

@@ -34,7 +34,7 @@ where `didRecover` is [`YES`](yes.md) if the error recovery attempt was successf
 
 ## Parameters
 
-- `error`: An [`NSError`](https://developer.apple.com/documentation/Foundation/NSError) object that describes the error, including error recovery options.
+- `error`: An [`NSError`](https://developer.apple.com/documentation/foundation/nserror) object that describes the error, including error recovery options.
 - `recoveryOptionIndex`: The index of the user selected recovery option in `error`’s localized recovery array.
 - `delegate`: An object that is the modal delegate.
 - `didRecoverSelector`: A selector identifying the method implemented by the modal delegate.

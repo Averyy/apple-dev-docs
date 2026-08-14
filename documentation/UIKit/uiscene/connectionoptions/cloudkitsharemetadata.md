@@ -20,7 +20,7 @@ var cloudKitShareMetadata: CKShareMetadata? { get }
 
 #### Discussion
 
-If an invitation to share CloudKit data is available at scene-connection time, this property contains the metadata you use to accept that invitation. Use the information in the object to create and schedule a [`CKAcceptSharesOperation`](https://developer.apple.com/documentation/CloudKit/CKAcceptSharesOperation) object. After your operation object finishes successfully, you can begin fetching records and incorporating the resulting data into your app.
+If an invitation to share CloudKit data is available at scene-connection time, this property contains the metadata you use to accept that invitation. Use the information in the object to create and schedule a [`CKAcceptSharesOperation`](https://developer.apple.com/documentation/cloudkit/ckacceptsharesoperation) object. After your operation object finishes successfully, you can begin fetching records and incorporating the resulting data into your app.
 
 
 ---

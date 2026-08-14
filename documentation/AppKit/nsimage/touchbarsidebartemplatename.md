@@ -19,7 +19,7 @@ class let touchBarSidebarTemplateName: String
 
 #### Discussion
 
-![Template image for sidebar](https://docs-assets.developer.apple.com/published/a10b6d5d4a219b48733aa331515f5a9a/media-2793533%402x.png)
+![Template image for sidebar](/images/com.apple.appkit/media-2793533@2x.png)
 
 Touch Bar template images are exclusively for use in [`NSTouchBarItem`](nstouchbaritem.md) objects and not in onscreen windows.
 

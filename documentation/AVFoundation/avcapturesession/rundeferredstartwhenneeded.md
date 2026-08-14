@@ -20,7 +20,7 @@ func runDeferredStartWhenNeeded()
 
 #### Discussion
 
-For best perceived startup performance, call this after displaying the first frame, so that deferred start processing doesn’t interfere with other initialization operations. For example, if using a [`CAMetalLayer`](https://developer.apple.com/documentation/QuartzCore/CAMetalLayer) to draw camera frames, add a `presentHandler` (using doc://com.apple.documentation/metal/mtldrawable/addpresentedhandler) to the first drawable and call [`runDeferredStartWhenNeeded()`](avcapturesession/rundeferredstartwhenneeded().md) from there.
+For best perceived startup performance, call this after displaying the first frame, so that deferred start processing doesn’t interfere with other initialization operations. For example, if using a [`CAMetalLayer`](https://developer.apple.com/documentation/quartzcore/cametallayer) to draw camera frames, add a `presentHandler` (using doc://com.apple.documentation/metal/mtldrawable/addpresentedhandler) to the first drawable and call [`runDeferredStartWhenNeeded()`](avcapturesession/rundeferredstartwhenneeded().md) from there.
 
 If one or more outputs need to start to perform a capture operation, and [`runDeferredStartWhenNeeded()`](avcapturesession/rundeferredstartwhenneeded().md) has not run yet, the session runs the deferred start on your app’s behalf. Only call this method once for each configuration commit - after the first call, subsequent calls to [`runDeferredStartWhenNeeded()`](avcapturesession/rundeferredstartwhenneeded().md) have no effect. The deferred start runs asynchronously, so this method returns immediately.
 

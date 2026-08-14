@@ -16,7 +16,7 @@ class IOUserUSBSerial;
 
 #### Overview
 
-Subclass `IOUserUSBSerial` to implement a driver that communicates with a USB device serially. After matching your driver to the appropriate device, the system starts your driver and calls its [`HwActivate`](iouserusbserial/hwactivate.md) method, which you use to open and configure the communications channel for your device. Configure other hardware-related settings by overriding the appropriate methods defined in the [`IOUserSerial`](https://developer.apple.com/documentation/SerialDriverKit/IOUserSerial) parent class.
+Subclass `IOUserUSBSerial` to implement a driver that communicates with a USB device serially. After matching your driver to the appropriate device, the system starts your driver and calls its [`HwActivate`](iouserusbserial/hwactivate.md) method, which you use to open and configure the communications channel for your device. Configure other hardware-related settings by overriding the appropriate methods defined in the [`IOUserSerial`](https://developer.apple.com/documentation/serialdriverkit/iouserserial) parent class.
 
 This class automatically manages the serial communications with the device, buffering data received from it. The class creates the buffers for holding data, and initiates asynchronous operations to the USB device to transmit and receive data. Use the methods of this class to modify the data, as needed.
 
@@ -55,7 +55,7 @@ This class automatically manages the serial communications with the device, buff
 
 ## See Also
 
-- [com.apple.developer.driverkit.family.serial](../BundleResources/Entitlements/com.apple.developer.driverkit.family.serial.md)
+- [com.apple.developer.driverkit.family.serial](../bundleresources/entitlements/com.apple.developer.driverkit.family.serial.md)
   A Boolean value that indicates whether to match the driver against devices with serial communication interfaces.
 
 

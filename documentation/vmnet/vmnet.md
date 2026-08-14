@@ -15,7 +15,7 @@ The vmnet framework is an API for virtual machines to read and write packets.
 
 The API allows a Guest OS interface to be in host mode or shared mode. Interfaces in host mode can communicate with the native host system and other interfaces running in host mode. In shared mode, the network interface can send and receive packets to the Internet, the native host, and other interfaces running in sharing mode.
 
-> **Note**: For more information about virtualization technologies, see the [`Hypervisor`](https://developer.apple.com/documentation/Hypervisor) framework.
+> **Note**: For more information about virtualization technologies, see the [`Hypervisor`](https://developer.apple.com/documentation/hypervisor) framework.
 
 ##### Requirements
 
@@ -23,11 +23,11 @@ The vmnet framework has the following requirements:
 
 ###### Entitlements
 
-A sandboxed user space process must have the [`com.apple.vm.networking`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.vm.networking) entitlement in order to use the vmnet API.
+A sandboxed user space process must have the [`com.apple.vm.networking`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.vm.networking) entitlement in order to use the vmnet API.
 
 ##### Architecture
 
-![None](https://docs-assets.developer.apple.com/published/f44bf3214239dd313122f60d6de7c4a8/media-2557515%402x.png)
+![None](/images/com.apple.vmnet/media-2557515@2x.png)
 
 The VM Network API provides support for an interface in the guest operating system. The API provides the MAC address and MTU that you need to be configure on the guest OS interface. The interface receives a private IPv4 address via DHCP. IPv4 traffic originating from the guest operating system must use the private IPv4 address. The system drops packets sent from a different IPv4 address.
 
@@ -36,7 +36,7 @@ You can create a maximum of 32 interfaces with a limit of 4 per guest operating 
 ## Topics
 
 ### Essentials
-- [com.apple.vm.networking](../BundleResources/Entitlements/com.apple.vm.networking.md)
+- [com.apple.vm.networking](../bundleresources/entitlements/com.apple.vm.networking.md)
   A Boolean that indicates whether the app manages virtual network interfaces without escalating privileges to the root user.
 ### Creating a network configuration
 - [func vmnet_network_create(vmnet_network_configuration_ref, UnsafeMutablePointer<vmnet_return_t>?) -> vmnet_network_ref?](vmnet_network_create(_:_:).md)

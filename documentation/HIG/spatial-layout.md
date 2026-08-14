@@ -13,11 +13,11 @@ framework: HIG
 
 Spatial layout techniques help you take advantage of the infinite canvas of Apple Vision Pro and present your content in engaging, comfortable ways.
 
-![A sketch of axes in the X, Y, and Z dimensions, suggesting three-dimensional layout. The image is overlaid with rectangular and circular grid lines and is tinted yellow to subtly reflect the yellow in the original six-color Apple logo.](https://docs-assets.developer.apple.com/published/e6d89e81bd49ff7c2d55e0b4e31bc203/foundations-spatial-layout-intro~dark%402x.png)
+![A sketch of axes in the X, Y, and Z dimensions, suggesting three-dimensional layout. The image is overlaid with rectangular and circular grid lines and is tinted yellow to subtly reflect the yellow in the original six-color Apple logo.](/images/com.apple.HIG/foundations-spatial-layout-intro~dark@2x.png)
 
 ## Field of view
 A person’s *field of view* is the space they can see without moving their head. The dimensions of an individual’s field of view while wearing Apple Vision Pro vary based on factors like the way people configure the Light Seal and the extent of their peripheral acuity.
-![A screenshot of a blank app window in visionOS. A series of concentric circles overlay the image, conveying 30-, 60-, and 90-degree fields of view.](https://docs-assets.developer.apple.com/published/88086621da558b375ed5ef8ea0002283/visionos-field-of-view-layout%402x.png)
+![A screenshot of a blank app window in visionOS. A series of concentric circles overlay the image, conveying 30-, 60-, and 90-degree fields of view.](/images/com.apple.HIG/visionos-field-of-view-layout@2x.png)
 
 > **Important:** The system doesn’t provide information about a person’s field of view.
 **Center important content within the field of view.** By default, visionOS launches an app directly in front of people, placing it within their field of view. In an immersive experience, you can help people keep their attention on important content by keeping it centered and not displaying distracting motion or bright, high-contrast objects in the periphery.
@@ -25,11 +25,11 @@ A person’s *field of view* is the space they can see without moving their head
 
 ## Depth
 People rely on visual cues like distance, occlusion, and shadow to perceive depth and make sense of their surroundings. On Apple Vision Pro, the system automatically uses visual effects like color temperature, reflections, and shadow to help people perceive the depth of virtual content. When people move a virtual object in space — or when they change their position relative to that object — the visual effects change the object’s apparent depth, making the experience feel more lifelike.
-Because people can view your content from any angle, incorporating small amounts of depth throughout your interface — even in standard windows — can help it look more natural. When you use SwiftUI, the system adds visual effects to views in a 2D window, making them appear to have depth. For developer guidance, see [Adding 3D content to your app](../visionOS/adding-3d-content-to-your-app.md).
-![A screenshot of a 2D Notes window in visionOS. A note titled Nature Walks is open on the trailing side of the view, with sketches of leaves accompanied by handwritten text descriptions.](https://docs-assets.developer.apple.com/published/2b07a7f22124deaea6c2ce31a93d8833/visionos-spatial-layout-2d-window%402x.png)
-If you need to present content with additional depth, you use RealityKit to create a 3D object (for developer guidance, see [RealityKit](../RealityKit.md)). You can display the 3D object anywhere, or you can use a *volume*, which is a component that displays 3D content. A volume is similar to a window, but without a visible frame. For guidance, see [visionOS volumes](windows.md#visionOS-volumes).
+Because people can view your content from any angle, incorporating small amounts of depth throughout your interface — even in standard windows — can help it look more natural. When you use SwiftUI, the system adds visual effects to views in a 2D window, making them appear to have depth. For developer guidance, see [Adding 3D content to your app](../visionos/adding-3d-content-to-your-app.md).
+![A screenshot of a 2D Notes window in visionOS. A note titled Nature Walks is open on the trailing side of the view, with sketches of leaves accompanied by handwritten text descriptions.](/images/com.apple.HIG/visionos-spatial-layout-2d-window@2x.png)
+If you need to present content with additional depth, you use RealityKit to create a 3D object (for developer guidance, see [RealityKit](../realitykit.md)). You can display the 3D object anywhere, or you can use a *volume*, which is a component that displays 3D content. A volume is similar to a window, but without a visible frame. For guidance, see [visionOS volumes](windows.md#visionOS-volumes).
 
-[Video: visionos-spatial-layout-3d-volume.mp4](https://docs-assets.developer.apple.com/published/c6c6e3dd307570a028b58381939e5a17/visionos-spatial-layout-3d-volume.mp4)
+[Video: visionos-spatial-layout-3d-volume.mp4](/videos/com.apple.HIG/visionos-spatial-layout-3d-volume.mp4)
 **Provide visual cues that accurately communicate the depth of your content.** If visual cues are missing or they conflict with a person’s real-world experience, people can experience visual discomfort.
 **Use depth to communicate hierarchy.** Depth helps an object appear to stand out from surrounding content, making it more noticeable. People also tend to notice changes in depth: for example, when a sheet appears over a window, the window recedes along the z-axis, allowing the sheet to come forward and become visually prominent.
 **In general, avoid adding depth to text.** Text that appears to hover above its background is difficult to read, which slows people down and can sometimes cause vision discomfort.
@@ -39,10 +39,10 @@ If you need to present content with additional depth, you use RealityKit to crea
 visionOS defines two types of scale to preserve the appearance of depth while optimizing usability.
 *Dynamic scale* helps content remain comfortably legible and interactive regardless of its proximity to people. Specifically, visionOS automatically increases a window’s scale as it moves away from the wearer and decreases it as the window moves closer, making the window appear to maintain the same size at all distances.
 
-[Video: visionos-dynamic-window-scaling.mp4](https://docs-assets.developer.apple.com/published/1b9bb85142513d40bf85b7cfa82e2598/visionos-dynamic-window-scaling.mp4)
+[Video: visionos-dynamic-window-scaling.mp4](/videos/com.apple.HIG/visionos-dynamic-window-scaling.mp4)
 *Fixed scale* means that an object maintains the same scale regardless of its proximity to people. A fixed-scale object appears smaller when it moves farther from the viewer along the z-axis, similar to the way an object in a person’s physical surroundings looks smaller when it’s far away than it does when it’s close up.
 
-[Video: visionos-fixed-window-scaling.mp4](https://docs-assets.developer.apple.com/published/68f26be4668b8b7648959836607fa611/visionos-fixed-window-scaling.mp4)
+[Video: visionos-fixed-window-scaling.mp4](/videos/com.apple.HIG/visionos-fixed-window-scaling.mp4)
 To support dynamic scaling and the appearance of depth, visionOS defines a point as an angle, in contrast to other platforms, which define a point as a number of pixels that can vary with the [Resolution](images.md#Resolution) of a 2D display.
 **Consider using fixed scale when you want a virtual object to look exactly like a physical object.** For example, you might want to maintain the life-size scale of a product you offer so it can look more realistic when people view it in their space. Because interactive content needs to scale to maintain usability as it gets closer or farther away, prefer applying fixed scale sparingly, reserving it for noninteractive objects that need it.
 
@@ -66,9 +66,9 @@ To learn more about windows and volumes in visionOS, see [visionOS](windows.md#v
 [Immersive experiences](immersive-experiences.md)
 
 #### Developer documentation
-[Presenting windows and spaces](../visionOS/presenting-windows-and-spaces.md) — visionOS
-[Positioning and sizing windows](../visionOS/positioning-and-sizing-windows.md) — visionOS
-[Adding 3D content to your app](../visionOS/adding-3d-content-to-your-app.md) — visionOS
+[Presenting windows and spaces](../visionos/presenting-windows-and-spaces.md) — visionOS
+[Positioning and sizing windows](../visionos/positioning-and-sizing-windows.md) — visionOS
+[Adding 3D content to your app](../visionos/adding-3d-content-to-your-app.md) — visionOS
 
 #### Videos
 - [Meet SwiftUI spatial layout](https://developer.apple.com/videos/play/wwdc2025/273) - Explore new tools for building spatial experiences using SwiftUI. Learn the basics of 3D SwiftUI views on visionOS, customize existing layouts with depth alignments, and use modifiers to rotate and position views in space. Discover how to use spatial containers to align views in the same 3D space, helping you create immersive and engaging apps.

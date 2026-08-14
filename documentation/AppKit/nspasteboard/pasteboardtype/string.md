@@ -20,7 +20,7 @@ static let string: NSPasteboard.PasteboardType
 
 #### Discussion
 
-Apps that adopt App Sandbox cannot access files identified using the [`string`](nspasteboard/pasteboardtype/string.md) pasteboard type. Instead, use an [`NSURL`](https://developer.apple.com/documentation/Foundation/NSURL) object, a bookmark, or a filename pasteboard type.
+Apps that adopt App Sandbox cannot access files identified using the [`string`](nspasteboard/pasteboardtype/string.md) pasteboard type. Instead, use an [`NSURL`](https://developer.apple.com/documentation/foundation/nsurl) object, a bookmark, or a filename pasteboard type.
 
 ## See Also
 

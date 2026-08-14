@@ -62,13 +62,13 @@ Calculating the distance between two points using the Pythagorean theorem is a c
 
 The length functions, for example, [`simd_length`](https://developer.apple.com/documentation/simd/simd_length-3ob5d), return the length of a vector. The following illustration shows how the length of a vector, *A*, is calculated as the square root of the sum of the squares of its two values.
 
-![Illustration showing how the length of vector A, at coordinates 4, 3, is calculated using the Pythagorean theorem.](https://docs-assets.developer.apple.com/published/c51a691216e52f62505599a4d4517f3f/media-2972222%402x.png)
+![Illustration showing how the length of vector A, at coordinates 4, 3, is calculated using the Pythagorean theorem.](/images/com.apple.accelerate/media-2972222@2x.png)
 
 ###### Calculate Distance
 
 The distance functions, for example, [`simd_distance`](https://developer.apple.com/documentation/simd/simd_distance-598wa), return the distance between two vectors:
 
-![Illustration showing how the distance between vector A, at coordinates 3, 2, and vector B, at 7, 5, is calculated using the Pythagorean theorem.](https://docs-assets.developer.apple.com/published/b6da2833b01021fb66a6febaa8122478/media-2970190%402x.png)
+![Illustration showing how the distance between vector A, at coordinates 3, 2, and vector B, at 7, 5, is calculated using the Pythagorean theorem.](/images/com.apple.accelerate/media-2970190@2x.png)
 
 The following code shows how the length function returns the same value as the distance function if one of the vectors contains all zeros:
 
@@ -106,7 +106,7 @@ The simd framework provides functions for calculating vectors that describe refl
 - The *reflected ray*, computed by simd, traveling away from the center of the image.
 - The *refracted ray*, computed by simd, traveling away from the center of the image.
 
-![Image showing incident, reflected, and refracted rays and a normal, and their relationship to an object surface.](https://docs-assets.developer.apple.com/published/dc9dd1c74b811f839f45b218927a9dfc/media-2969455%402x.png)
+![Image showing incident, reflected, and refracted rays and a normal, and their relationship to an object surface.](/images/com.apple.accelerate/media-2969455@2x.png)
 
 ###### Normalize Vectors
 
@@ -141,7 +141,7 @@ The normal of a triangle in 3D space is the vector perpendicular to its surface.
 
 In the image below, the triangle’s normal is shown as a red line that’s perpendicular to the surface of the triangle.
 
-![Illustration showing a triangle in 3D and its normal.](https://docs-assets.developer.apple.com/published/d2c76e9c13267ad8583a68f9bdef61ba/media-2969400%402x.png)
+![Illustration showing a triangle in 3D and its normal.](/images/com.apple.accelerate/media-2969400@2x.png)
 
 The following code defines the three vertices of the triangle:
 
@@ -166,11 +166,11 @@ let normal = simd_normalize(simd_cross(vector1, vector2))
 
 ##### Interpolate Between Values
 
-Interpolation adds new, intermediate data points between known values. The simd framework provides functions to linearly and smoothly interpolate between scalar and vector values. Smooth interpolation is commonly used in animation, and you can, for example, use the functions described below to define the [`timingFunction`](https://developer.apple.com/documentation/SpriteKit/SKAction/timingFunction) of a SpriteKit action.
+Interpolation adds new, intermediate data points between known values. The simd framework provides functions to linearly and smoothly interpolate between scalar and vector values. Smooth interpolation is commonly used in animation, and you can, for example, use the functions described below to define the [`timingFunction`](https://developer.apple.com/documentation/spritekit/skaction/timingfunction) of a SpriteKit action.
 
 The following illustration shows how linear interpolation creates a straight line between boundary values (the straight blue line), and how smooth interpolation eases in and out between boundary values (the curved pink line):
 
-![Illustration showing linear and smooth interpolation between scalar values.](https://docs-assets.developer.apple.com/published/7bd014cf0a5856ce164d0aab44279634/media-2969414%402x.png)
+![Illustration showing linear and smooth interpolation between scalar values.](/images/com.apple.accelerate/media-2969414@2x.png)
 
 ###### Linearly Interpolate
 

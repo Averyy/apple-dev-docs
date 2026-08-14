@@ -20,7 +20,7 @@ Accepting [`mouseEntered(with:)`](nscursor/mouseentered(with:).md) event message
 
 ## Parameters
 
-- `flag`: [`true`](https://developer.apple.com/documentation/Swift/true) if the receiver accepts future [`mouseEntered(with:)`](nscursor/mouseentered(with:).md) event messages; otherwise it ignores them.
+- `flag`: [`true`](https://developer.apple.com/documentation/swift/true) if the receiver accepts future [`mouseEntered(with:)`](nscursor/mouseentered(with:).md) event messages; otherwise it ignores them.
 
 ## See Also
 

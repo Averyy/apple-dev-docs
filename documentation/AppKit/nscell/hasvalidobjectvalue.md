@@ -16,7 +16,7 @@ var hasValidObjectValue: Bool { get }
 
 #### Discussion
 
-The value of this property is [`true`](https://developer.apple.com/documentation/Swift/true) if the cell has a valid object value or [`false`](https://developer.apple.com/documentation/Swift/false) if it does not. A valid object value is one that the cell’s formatter can “understand.” Objects are always assumed to be valid unless they are rejected by the formatter. Invalid objects can still be accepted by the delegate of the cell’s [`NSControl`](nscontrol.md) object (using the [`control(_:didFailToFormatString:errorDescription:)`](nscontroltexteditingdelegate/control(_:didfailtoformatstring:errordescription:).md) delegate method).
+The value of this property is [`true`](https://developer.apple.com/documentation/swift/true) if the cell has a valid object value or [`false`](https://developer.apple.com/documentation/swift/false) if it does not. A valid object value is one that the cell’s formatter can “understand.” Objects are always assumed to be valid unless they are rejected by the formatter. Invalid objects can still be accepted by the delegate of the cell’s [`NSControl`](nscontrol.md) object (using the [`control(_:didFailToFormatString:errorDescription:)`](nscontroltexteditingdelegate/control(_:didfailtoformatstring:errordescription:).md) delegate method).
 
 ## See Also
 

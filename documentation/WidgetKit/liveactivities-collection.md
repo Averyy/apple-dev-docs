@@ -6,7 +6,7 @@ Let people track updates from your app with Live Activities.
 
 #### Overview
 
-Live Activities display up-to-date content from your app, such as event and task information on the Lock Screen or in the Dynamic Island. Additionally, Live Activities appear in CarPlay and on a paired Apple Watch or Mac. To create Live Activities, you use WidgetKit together with [`ActivityKit`](https://developer.apple.com/documentation/ActivityKit).
+Live Activities display up-to-date content from your app, such as event and task information on the Lock Screen or in the Dynamic Island. Additionally, Live Activities appear in CarPlay and on a paired Apple Watch or Mac. To create Live Activities, you use WidgetKit together with [`ActivityKit`](https://developer.apple.com/documentation/activitykit).
 
 ## Topics
 
@@ -16,9 +16,9 @@ Live Activities display up-to-date content from your app, such as event and task
 - [Creating a widget extension](creating-a-widget-extension.md)
   Display your app’s content in a convenient, informative widget on various devices.
 ### Live Activity setup
-- [Displaying live data with Live Activities](../ActivityKit/displaying-live-data-with-live-activities.md)
+- [Displaying live data with Live Activities](../activitykit/displaying-live-data-with-live-activities.md)
   Display up-to-date data and offer quick interactions in the Dynamic Island, on the Lock Screen, in CarPlay, and on a paired Mac or Apple Watch.
-- [ActivityKit](../ActivityKit/ActivityKit.md)
+- [ActivityKit](../activitykit/activitykit.md)
   Share live updates from your app as Live Activities on iPhone, iPad, Apple Watch, and the Mac.
 - [Creating a widget extension](creating-a-widget-extension.md)
   Display your app’s content in a convenient, informative widget on various devices.

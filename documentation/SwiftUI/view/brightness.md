@@ -45,7 +45,7 @@ struct Brightness: View {
 }
 ```
 
-![Rendering showing the effects of brightness adjustments in 20%](https://docs-assets.developer.apple.com/published/7317985d6601ad7d7432ff37255c169e/SwiftUI-View-brightness%402x.png)
+![Rendering showing the effects of brightness adjustments in 20%](/images/com.apple.SwiftUI/SwiftUI-View-brightness@2x.png)
 
 ## Parameters
 

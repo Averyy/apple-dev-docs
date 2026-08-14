@@ -16,7 +16,7 @@ var documentClassNames: [String] { get }
 
 #### Discussion
 
-The items in the array are [`NSString`](https://developer.apple.com/documentation/Foundation/NSString) objects, each of which represents the name of a document subclasses supported by the app. The document class names are derived from the app’s `Info.plist`.  You can override this property and use it to return the names of document classes that are dynamically loaded from plugins.
+The items in the array are [`NSString`](https://developer.apple.com/documentation/foundation/nsstring) objects, each of which represents the name of a document subclasses supported by the app. The document class names are derived from the app’s `Info.plist`.  You can override this property and use it to return the names of document classes that are dynamically loaded from plugins.
 
 ## See Also
 

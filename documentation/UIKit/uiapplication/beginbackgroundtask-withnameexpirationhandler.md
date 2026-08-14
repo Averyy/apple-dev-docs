@@ -29,7 +29,7 @@ A unique identifier for the new background task. You must pass this value to the
 
 #### Discussion
 
-This method requests additional background execution time for your app. Call this method when leaving a task unfinished might be detrimental to your app’s user experience. For example, call this method before writing data to a file to prevent the system from suspending your app while the operation is in progress. For background tasks requiring more time, use [`Background Tasks`](https://developer.apple.com/documentation/BackgroundTasks).
+This method requests additional background execution time for your app. Call this method when leaving a task unfinished might be detrimental to your app’s user experience. For example, call this method before writing data to a file to prevent the system from suspending your app while the operation is in progress. For background tasks requiring more time, use [`Background Tasks`](https://developer.apple.com/documentation/backgroundtasks).
 
 Call this method as early as possible before starting your task, preferably before your app actually enters the background. The method requests the task assertion for your app asynchronously. If you call this method shortly before your app is due to be suspended, there’s a chance that the system might suspend your app before that task assertion is granted. For example, don’t call this method at the very end of your [`applicationDidEnterBackground(_:)`](uiapplicationdelegate/applicationdidenterbackground(_:).md) method and expect your app to continue running. If the system is unable to grant the task assertion, it calls your expiration handler.
 
@@ -37,7 +37,7 @@ Each call to this method must be balanced by a matching call to the [`endBackgro
 
 You can call this method at any point in your app’s execution. You may also call this method multiple times to mark the beginning of several background tasks that run in parallel. However, each task must be ended separately. You identify a given task using the value returned by this method.
 
-This method can be safely called on a non-main thread. To extend the execution time of an app extension, use the [`performExpiringActivity(withReason:using:)`](https://developer.apple.com/documentation/Foundation/ProcessInfo/performExpiringActivity(withReason:using:)) method of [`ProcessInfo`](https://developer.apple.com/documentation/Foundation/ProcessInfo) instead.
+This method can be safely called on a non-main thread. To extend the execution time of an app extension, use the [`performExpiringActivity(withReason:using:)`](https://developer.apple.com/documentation/foundation/processinfo/performexpiringactivity(withreason:using:)) method of [`ProcessInfo`](https://developer.apple.com/documentation/foundation/processinfo) instead.
 
 ## Parameters
 
@@ -46,7 +46,7 @@ This method can be safely called on a non-main thread. To extend the execution t
 
 ## See Also
 
-- [Background Tasks](../BackgroundTasks/BackgroundTasks.md)
+- [Background Tasks](../backgroundtasks/backgroundtasks.md)
   Support background processing in your app by wrapping your app’s most critical work in framework-provided tasks.
 - [var backgroundRefreshStatus: UIBackgroundRefreshStatus](uiapplication/backgroundrefreshstatus.md)
   Indicates whether the app can refresh content when running in the background.

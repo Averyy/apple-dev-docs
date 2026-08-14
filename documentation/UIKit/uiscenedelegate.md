@@ -73,7 +73,7 @@ Don’t create [`UISceneDelegate`](uiscenedelegate.md) objects directly. Instead
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 ### Inherited By
 - [UIWindowSceneDelegate](uiwindowscenedelegate.md)
 

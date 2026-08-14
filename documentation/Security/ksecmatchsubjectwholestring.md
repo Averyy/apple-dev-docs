@@ -16,7 +16,7 @@ let kSecMatchSubjectWholeString: CFString
 
 #### Discussion
 
-The corresponding value is of type [`CFString`](https://developer.apple.com/documentation/CoreFoundation/CFString). If provided, returned certificates or identities are limited to those whose subject is exactly equal to this string.
+The corresponding value is of type [`CFString`](https://developer.apple.com/documentation/corefoundation/cfstring). If provided, returned certificates or identities are limited to those whose subject is exactly equal to this string.
 
 
 ---

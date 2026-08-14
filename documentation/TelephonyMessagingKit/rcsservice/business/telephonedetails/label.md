@@ -7,7 +7,6 @@ The label for the phone number.
 
 **Availability**:
 - iOS 26.0+
-- iPadOS 26.0+
 
 ## Declaration
 

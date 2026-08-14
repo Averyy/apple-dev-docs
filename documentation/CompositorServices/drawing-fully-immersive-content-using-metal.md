@@ -12,7 +12,7 @@ If your app draws fully immersive content using Metal, Compositor Services provi
 
 When creating fully immersive content using Metal, you draw everything the person sees. The result of your drawing efforts is two images, one for each eye, to create a stereosopic effect when viewed on Apple Vision Pro. Use the timing information in the layer to render up to 90 frames a second using a custom rendering loop.
 
-For information about how to draw content with Metal, see [`Metal`](https://developer.apple.com/documentation/Metal).
+For information about how to draw content with Metal, see [`Metal`](https://developer.apple.com/documentation/metal).
 
 #### Add an Immersive Space for Your Content
 
@@ -56,11 +56,11 @@ struct MyApp: App {
 
 ```
 
-> **Note**:  `RendererTaskExecutor` shows an example of a [`TaskExecutor`](https://developer.apple.com/documentation/Swift/TaskExecutor) implementation suitable for use in a render loop.
+> **Note**:  `RendererTaskExecutor` shows an example of a [`TaskExecutor`](https://developer.apple.com/documentation/swift/taskexecutor) implementation suitable for use in a render loop.
 
 Don’t include any style modifiers on a space that contains a [`CompositorLayer`](compositorlayer.md) type. The system automatically configures a space with [`CompositorLayer`](compositorlayer.md) content as fully immersive, and ignores any style modifiers.
 
-Typically, apps don’t display an immersive space immediately at launch. Transitioning to a fully immersive experience can be jarring if someone isn’t ready for it, so it’s preferable to display a window first and let someone enter the space when they’re ready. However, if you need to display a space first, add the `UIApplicationPreferredDefaultSceneSessionRole` key to the [`UIApplicationSceneManifest`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/UIApplicationSceneManifest) in your app’s `Info.plist` file. Set the value of this key to `CPSceneSessionRoleImmersiveSpaceApplication`. When this key is present, the system displays the first space it finds in your app’s list of scenes.
+Typically, apps don’t display an immersive space immediately at launch. Transitioning to a fully immersive experience can be jarring if someone isn’t ready for it, so it’s preferable to display a window first and let someone enter the space when they’re ready. However, if you need to display a space first, add the `UIApplicationPreferredDefaultSceneSessionRole` key to the [`UIApplicationSceneManifest`](https://developer.apple.com/documentation/bundleresources/information-property-list/uiapplicationscenemanifest) in your app’s `Info.plist` file. Set the value of this key to `CPSceneSessionRoleImmersiveSpaceApplication`. When this key is present, the system displays the first space it finds in your app’s list of scenes.
 
 #### Customize the Configuration of Your Layer
 
@@ -165,7 +165,7 @@ The following sequence shows the steps to create a single frame of content. Perf
 6. Call [`endUpdate()`](layerrenderer/frame/endupdate().md) to mark the end of the update phase.
 7. Call [`wait(until:tolerance:)`](layerrenderer/clock/wait(until:tolerance:).md) (or [`cp_time_wait_until`](cp_time_wait_until.md)) to pause your render loop until the optimal rendering time.
 8. Call [`startSubmission()`](layerrenderer/frame/startsubmission().md) to mark the start of submission phase.
-9. Call [`queryDrawables()`](layerrenderer/frame/querydrawables().md) to query all the drawables from your frame, then perform the steps 10-13 for each drawable. This function usually returns one drawable, but can return multiple in some situations. For example, it returns two drawables if you’re performing a Reality Composer Pro capture (see [`Capturing screenshots and video from Apple Vision Pro for 2D viewing`](https://developer.apple.com/documentation/visionOS/capturing-screenshots-and-video-from-your-apple-vision-pro-for-2d-viewing)).
+9. Call [`queryDrawables()`](layerrenderer/frame/querydrawables().md) to query all the drawables from your frame, then perform the steps 10-13 for each drawable. This function usually returns one drawable, but can return multiple in some situations. For example, it returns two drawables if you’re performing a Reality Composer Pro capture (see [`Capturing screenshots and video from Apple Vision Pro for 2D viewing`](https://developer.apple.com/documentation/visionos/capturing-screenshots-and-video-from-your-apple-vision-pro-for-2d-viewing)).
 10. Fetch the predicted device anchor from ARKit using the [`frameTiming`](layerrenderer/drawable/frametiming.md) information, and apply that anchor to your drawables.
 11. Encode any drawing commands that depend on the device position or orientation.
 12. Call [`encodePresent(commandBuffer:)`](layerrenderer/drawable/encodepresent(commandbuffer:).md) to encode a presentation event into your command buffer.
@@ -219,13 +219,13 @@ void my_engine_render_new_frame(my_engine *engine) {
  }
 ```
 
-For information about how to set up Metal command buffers and command encoders, see [`Setting up a command structure`](https://developer.apple.com/documentation/Metal/setting-up-a-command-structure).
+For information about how to set up Metal command buffers and command encoders, see [`Setting up a command structure`](https://developer.apple.com/documentation/metal/setting-up-a-command-structure).
 
 #### Configure the Render Pass Descriptor for the Frame
 
 During drawing, add the textures from your frame’s [`LayerRenderer.Drawable`](layerrenderer/drawable.md) to your render pass descriptor. The render pass descriptor tells Metal where to deliver the output of your rendering commands. Because each frame of content relies on different textures, you must create and configure a render pass descriptor with the current frame’s textures each time through your render loop.
 
-The following example shows a function that creates a new render pass descriptor and configures its texture information. The [`LayerRenderer.Drawable`](layerrenderer/drawable.md) in the example uses the [`LayerRenderer.Layout.layered`](layerrenderer/layout/layered.md) layout, which uses a single texture of type [`MTLTextureType.type2DArray`](https://developer.apple.com/documentation/Metal/MTLTextureType/type2DArray). You could use similar code to set up the render pass descriptor for the [`LayerRenderer.Layout.shared`](layerrenderer/layout/shared.md) layout.
+The following example shows a function that creates a new render pass descriptor and configures its texture information. The [`LayerRenderer.Drawable`](layerrenderer/drawable.md) in the example uses the [`LayerRenderer.Layout.layered`](layerrenderer/layout/layered.md) layout, which uses a single texture of type [`MTLTextureType.type2DArray`](https://developer.apple.com/documentation/metal/mtltexturetype/type2darray). You could use similar code to set up the render pass descriptor for the [`LayerRenderer.Layout.shared`](layerrenderer/layout/shared.md) layout.
 
 ```objc
 MTLRenderPassDescriptor* my_renderer_create_render_descriptor(my_renderer *renderer,
@@ -253,7 +253,7 @@ For a [`LayerRenderer.Layout.dedicated`](layerrenderer/layout/dedicated.md) layo
 
 To prevent the person viewing your content from experiencing disorientation or physical discomfort, it’s essential to match the position of the camera in your scene to the location of the person’s head. Matching the person’s head movements results in that what they see doesn’t conflict with the input their body receives from the real world.
 
-Because you render your app’s content in advance, you also need to know the position and orientation of the device in advance. To retrieve this information, use ARKit to call [`ar_world_tracking_provider_query_device_anchor_at_timestamp`](https://developer.apple.com/documentation/ARKit/ar_world_tracking_provider_query_device_anchor_at_timestamp) during the encoding process for your frame. ARKit provides this function to deliver the expected device anchor at the time you specify. Use this information to configure any camera positions during rendering.
+Because you render your app’s content in advance, you also need to know the position and orientation of the device in advance. To retrieve this information, use ARKit to call [`ar_world_tracking_provider_query_device_anchor_at_timestamp`](https://developer.apple.com/documentation/arkit/ar_world_tracking_provider_query_device_anchor_at_timestamp) during the encoding process for your frame. ARKit provides this function to deliver the expected device anchor at the time you specify. Use this information to configure any camera positions during rendering.
 
 The following example shows how to retrieve the predicted device anchor using ARKit. Use the timing information from the [`LayerRenderer.Drawable`](layerrenderer/drawable.md) to get the most accurate presentation time for the frame. Return the device anchor upon success or return `nil` if an error occurs.
 
@@ -274,13 +274,13 @@ ar_device_anchor_t my_engine_get_ar_device_anchor(my_engine *engine, cp_frame_ti
 
 When it displays your frame, the system checks for a discrepancy between the predicted device anchor you provided for your frame and the actual device anchor the hardware reports. If there’s a difference, the system automatically adjusts the rendered frame to compensate for the movement. If you don’t want the system to make this adjustment, don’t specify a device anchor using the [`cp_drawable_set_device_anchor`](cp_drawable_set_device_anchor.md) function.
 
-For more information about how to track the device anchor, see [`ARKit`](https://developer.apple.com/documentation/ARKit).
+For more information about how to track the device anchor, see [`ARKit`](https://developer.apple.com/documentation/arkit).
 
 #### Render Each View with the Correct Perspective
 
 The goal of your Metal rendering engine is to produce 2D textures to display to the viewer. When your content is 3D, you need to map points in your scene to the 2D texture in a way that makes the content look realistically 3D to someone viewing it. This process requires you to create a projection matrix that maps points in your 3D content to points on the texture for each view. For stereoscopic rendering, you also have to account for the positional differences between the device anchor and the position of the person’s eyes.
 
-During rendering, the rendering engine calls the method in the following example once for each view in the frame. It uses the device anchor it assigned to the frame earlier to create a transform to compensate for any differences between the device position and the view’s position. It also creates a projection matrix using the view’s tangents information and the distances to the near and far projection planes. The `makeProjectiveTransformFromTangents` function assembles the actual matrix values in the same way as [`init(leftTangent:rightTangent:topTangent:bottomTangent:nearZ:farZ:reverseZ:)`](https://developer.apple.com/documentation/Spatial/ProjectiveTransform3D/init(leftTangent:rightTangent:topTangent:bottomTangent:nearZ:farZ:reverseZ:)).
+During rendering, the rendering engine calls the method in the following example once for each view in the frame. It uses the device anchor it assigned to the frame earlier to create a transform to compensate for any differences between the device position and the view’s position. It also creates a projection matrix using the view’s tangents information and the distances to the near and far projection planes. The `makeProjectiveTransformFromTangents` function assembles the actual matrix values in the same way as [`init(leftTangent:rightTangent:topTangent:bottomTangent:nearZ:farZ:reverseZ:)`](https://developer.apple.com/documentation/spatial/projectivetransform3d/init(lefttangent:righttangent:toptangent:bottomtangent:nearz:farz:reversez:)).
 
 ```objc
 typedef struct{
@@ -362,7 +362,7 @@ struct MyApp: App {
 
 > ❗ **Important**:  To prevent issues when reading or writing event data, use locks or another synchronization mechanism to access event data. The system delivers events on the app’s main thread, but your rendering loop handles those events on a different thread. Synchronization is therefore necessary to prevent errors, undefined behavior, or crashes.
 
-For information about ARKit hand tracking, see [`ARKit`](https://developer.apple.com/documentation/ARKit).
+For information about ARKit hand tracking, see [`ARKit`](https://developer.apple.com/documentation/arkit).
 
 ## See Also
 

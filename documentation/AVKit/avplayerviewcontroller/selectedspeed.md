@@ -20,7 +20,7 @@ var selectedSpeed: AVPlaybackSpeed? { get }
 
 #### Discussion
 
-This value reflects the associated player’s [`defaultRate`](https://developer.apple.com/documentation/AVFoundation/AVPlayer/defaultRate) property value. If you set the [`defaultRate`](https://developer.apple.com/documentation/AVFoundation/AVPlayer/defaultRate) to a value that doesn’t match a speed contained in the [`speeds`](avplayerviewcontroller/speeds.md) property, the system sets this value to `nil`.
+This value reflects the associated player’s [`defaultRate`](https://developer.apple.com/documentation/avfoundation/avplayer/defaultrate) property value. If you set the [`defaultRate`](https://developer.apple.com/documentation/avfoundation/avplayer/defaultrate) to a value that doesn’t match a speed contained in the [`speeds`](avplayerviewcontroller/speeds.md) property, the system sets this value to `nil`.
 
 ## See Also
 

@@ -22,7 +22,7 @@ struct Publisher
 
 #### Overview
 
-In contrast with the [`Just`](https://developer.apple.com/documentation/Combine/Just) publisher, which always produces a single value, this publisher might not send any values and instead finish normally, if [`output`](optional/publisher-swift.struct/output-swift.property.md) is `nil`.
+In contrast with the [`Just`](https://developer.apple.com/documentation/combine/just) publisher, which always produces a single value, this publisher might not send any values and instead finish normally, if [`output`](optional/publisher-swift.struct/output-swift.property.md) is `nil`.
 
 ## Topics
 
@@ -76,7 +76,7 @@ In contrast with the [`Just`](https://developer.apple.com/documentation/Combine/
 
 ### Conforms To
 - [Equatable](equatable.md)
-- [Publisher](../Combine/Publisher.md)
+- [Publisher](../combine/publisher.md)
 
 ## See Also
 

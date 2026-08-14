@@ -10,19 +10,19 @@ Extend the capabilities of your app by using entities, components, and systems t
 
 #### Overview
 
-Set up an interaction using [`ManipulationComponent`](https://developer.apple.com/documentation/RealityKit/ManipulationComponent),  [`ForceEffectComponent`](https://developer.apple.com/documentation/RealityKit/ForceEffectComponent), and custom components that maintain solid collisions while manipulating entities. This sample shows how to create a proxy [`Entity`](https://developer.apple.com/documentation/RealityKit/Entity) that follows the manipulated entity using forces. Because it is moved with forces, the proxy bumps into solid objects as person drags the entity with their hand.
+Set up an interaction using [`ManipulationComponent`](https://developer.apple.com/documentation/realitykit/manipulationcomponent),  [`ForceEffectComponent`](https://developer.apple.com/documentation/realitykit/forceeffectcomponent), and custom components that maintain solid collisions while manipulating entities. This sample shows how to create a proxy [`Entity`](https://developer.apple.com/documentation/realitykit/entity) that follows the manipulated entity using forces. Because it is moved with forces, the proxy bumps into solid objects as person drags the entity with their hand.
 
 #### Configure the Entity with a Custom Component
 
-After configuring an entity with [`ManipulationComponent`](https://developer.apple.com/documentation/RealityKit/ManipulationComponent), it passes through other colliders while using the gesture. The entity ignores other colliders because its motion is guided by the person’s hand. To create an interaction where an entity respects collisions and forces during a gesture, this sample moves the visual components from the “real” entity to a “proxy” entity for the duration of the gesture. With the real entity invisible and the proxy entity visible, [`ForceEffectComponent`](https://developer.apple.com/documentation/RealityKit/ForceEffectComponent) applies forces to the proxy entity that move it toward the real entity. This creates an interaction where you can manipulate the entity, but it no longer passes through solid colliders.
+After configuring an entity with [`ManipulationComponent`](https://developer.apple.com/documentation/realitykit/manipulationcomponent), it passes through other colliders while using the gesture. The entity ignores other colliders because its motion is guided by the person’s hand. To create an interaction where an entity respects collisions and forces during a gesture, this sample moves the visual components from the “real” entity to a “proxy” entity for the duration of the gesture. With the real entity invisible and the proxy entity visible, [`ForceEffectComponent`](https://developer.apple.com/documentation/realitykit/forceeffectcomponent) applies forces to the proxy entity that move it toward the real entity. This creates an interaction where you can manipulate the entity, but it no longer passes through solid colliders.
 
-An extension for the custom [`Component`](https://developer.apple.com/documentation/RealityKit/Component), `ManipulateWithSolidCollisionsComponent`, configures the entity for the interaction. This method first creates and places a proxy entity as a descendant of the real entity. Then it copies the real entity’s [`ModelComponent`](https://developer.apple.com/documentation/RealityKit/ModelComponent) and [`GroundingShadowComponent`](https://developer.apple.com/documentation/RealityKit/GroundingShadowComponent) onto the proxy.
+An extension for the custom [`Component`](https://developer.apple.com/documentation/realitykit/component), `ManipulateWithSolidCollisionsComponent`, configures the entity for the interaction. This method first creates and places a proxy entity as a descendant of the real entity. Then it copies the real entity’s [`ModelComponent`](https://developer.apple.com/documentation/realitykit/modelcomponent) and [`GroundingShadowComponent`](https://developer.apple.com/documentation/realitykit/groundingshadowcomponent) onto the proxy.
 
-For more information about the entity component system (ECS) in RealityKit, see [`Implementing systems for entities in a scene`](https://developer.apple.com/documentation/RealityKit/implementing-systems-for-entities-in-a-scene).
+For more information about the entity component system (ECS) in RealityKit, see [`Implementing systems for entities in a scene`](https://developer.apple.com/documentation/realitykit/implementing-systems-for-entities-in-a-scene).
 
 #### Modify Entities at Specific Moments During a Gesture
 
-To run code at specific moments during a manipulation gesture for a specific entity use [`ManipulationEvents.WillBegin`](https://developer.apple.com/documentation/RealityKit/ManipulationEvents/WillBegin) and [`ManipulationEvents.WillRelease`](https://developer.apple.com/documentation/RealityKit/ManipulationEvents/WillRelease). To subscribe to these events, the sample first subscribes to [`ComponentEvents.DidAdd`](https://developer.apple.com/documentation/RealityKit/ComponentEvents/DidAdd) inside the initializer for a custom system.
+To run code at specific moments during a manipulation gesture for a specific entity use [`ManipulationEvents.WillBegin`](https://developer.apple.com/documentation/realitykit/manipulationevents/willbegin) and [`ManipulationEvents.WillRelease`](https://developer.apple.com/documentation/realitykit/manipulationevents/willrelease). To subscribe to these events, the sample first subscribes to [`ComponentEvents.DidAdd`](https://developer.apple.com/documentation/realitykit/componentevents/didadd) inside the initializer for a custom system.
 
 ```swift
 // Subscribe to an event for when the component is added.
@@ -43,7 +43,7 @@ event.entity.scene?.subscribe(to: ManipulationEvents.WillRelease.self,
                               onManipulationWillRelease).store(in: &subscriptions)
 ```
 
-When the manipulation gesture begins, the app hides the real entity and reveals the proxy. To do this, the app copies [`PhysicsBodyComponent`](https://developer.apple.com/documentation/RealityKit/PhysicsBodyComponent), [`CollisionComponent`](https://developer.apple.com/documentation/RealityKit/CollisionComponent), and [`OpacityComponent`](https://developer.apple.com/documentation/RealityKit/OpacityComponent) from the real entity to the proxy:
+When the manipulation gesture begins, the app hides the real entity and reveals the proxy. To do this, the app copies [`PhysicsBodyComponent`](https://developer.apple.com/documentation/realitykit/physicsbodycomponent), [`CollisionComponent`](https://developer.apple.com/documentation/realitykit/collisioncomponent), and [`OpacityComponent`](https://developer.apple.com/documentation/realitykit/opacitycomponent) from the real entity to the proxy:
 
 ```swift
 // Copy physics components from the real entity to the proxy.
@@ -62,15 +62,15 @@ if let opacity = event.entity.components[OpacityComponent.self] {
 event.entity.components[OpacityComponent.self]?.opacity = 0
 ```
 
-> **Note**: Use a [`CollisionGroup`](https://developer.apple.com/documentation/RealityKit/CollisionGroup) to control how a collider interacts with other colliders and forces in your scene.
+> **Note**: Use a [`CollisionGroup`](https://developer.apple.com/documentation/realitykit/collisiongroup) to control how a collider interacts with other colliders and forces in your scene.
 
 The inverse operations occur when a person releases the entity and the app transfers the components back to the real entity.
 
 #### Use Forces to Move the Entity with Realistic Physics
 
-During the manipulation gesture, a custom [`System`](https://developer.apple.com/documentation/RealityKit/System) runs code each frame to apply a [`ForceEffectComponent`](https://developer.apple.com/documentation/RealityKit/ForceEffectComponent) to the real entity. [`ConstantRadialForceEffect`](https://developer.apple.com/documentation/RealityKit/ConstantRadialForceEffect) attracts physics bodies to its center. [`DragForceEffect`](https://developer.apple.com/documentation/RealityKit/DragForceEffect) applies a force opposite to an entity’s direction of motion. Together these forces move the proxy entity toward the real entity during the manipulation gesture.
+During the manipulation gesture, a custom [`System`](https://developer.apple.com/documentation/realitykit/system) runs code each frame to apply a [`ForceEffectComponent`](https://developer.apple.com/documentation/realitykit/forceeffectcomponent) to the real entity. [`ConstantRadialForceEffect`](https://developer.apple.com/documentation/realitykit/constantradialforceeffect) attracts physics bodies to its center. [`DragForceEffect`](https://developer.apple.com/documentation/realitykit/dragforceeffect) applies a force opposite to an entity’s direction of motion. Together these forces move the proxy entity toward the real entity during the manipulation gesture.
 
-Additionally, configure each [`ForceEffect`](https://developer.apple.com/documentation/RealityKit/ForceEffect) with a mask so that forces are only applied to entities that belong to a particular group.
+Additionally, configure each [`ForceEffect`](https://developer.apple.com/documentation/realitykit/forceeffect) with a mask so that forces are only applied to entities that belong to a particular group.
 
 ```swift
 // `ConstantRadialForce` will attract entities toward its center.
@@ -93,7 +93,7 @@ entity.components.set(ForceEffectComponent(effects: [
 
 ## See Also
 
-- [Reality Composer Pro](../RealityComposerPro/RealityComposerPro.md)
+- [Reality Composer Pro](../realitycomposerpro/realitycomposerpro.md)
   Build, design, and orchestrate 3D content for your RealityKit apps.
 - [Chaparral Village: Building an immersive visionOS adventure game](chaparral-village-building-an-immersive-visionos-adventure-game.md)
   Create an adventure game using SwiftUI, RealityKit, and Reality Composer Pro 3.
@@ -111,7 +111,7 @@ entity.components.set(ForceEffectComponent(effects: [
   Add a deeper level of immersion to media playback in your app with RealityKit and Reality Composer Pro.
 - [Enabling video reflections in an immersive environment](enabling-video-reflections-in-an-immersive-environment.md)
   Create a more immersive experience by adding video reflections in a custom environment.
-- [Combining 2D and 3D views in an immersive app](../RealityKit/combining-2d-and-3d-views-in-an-immersive-app.md)
+- [Combining 2D and 3D views in an immersive app](../realitykit/combining-2d-and-3d-views-in-an-immersive-app.md)
   Use attachments to place 2D content relative to 3D content in your visionOS app.
 - [Understanding the modular architecture of RealityKit](understanding-the-realitykit-modular-architecture.md)
   Learn how everything fits together in RealityKit.

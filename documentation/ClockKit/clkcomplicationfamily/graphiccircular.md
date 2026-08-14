@@ -18,7 +18,7 @@ case graphicCircular
 
 The following figure shows the size and location of the graphic circular complication.
 
-![Diagram showing the size and position of a graphic circular complication.](https://docs-assets.developer.apple.com/published/999065e318a4a1fcd929770041abe658/media-3030697%402x.png)
+![Diagram showing the size and position of a graphic circular complication.](/images/com.apple.clockkit/media-3030697@2x.png)
 
 ## See Also
 

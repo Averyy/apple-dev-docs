@@ -49,7 +49,7 @@ All the methods are required. HealthKit calls these methods on an anonymous seri
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

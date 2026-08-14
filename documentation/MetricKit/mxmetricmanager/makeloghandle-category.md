@@ -20,7 +20,7 @@ class func makeLogHandle(category: String) -> OSLog
 
 #### Return Value
 
-A customized [`OSLog`](https://developer.apple.com/documentation/os/OSLog) object used for writing custom metrics of the same category.
+A customized [`OSLog`](https://developer.apple.com/documentation/os/oslog) object used for writing custom metrics of the same category.
 
 #### Discussion
 

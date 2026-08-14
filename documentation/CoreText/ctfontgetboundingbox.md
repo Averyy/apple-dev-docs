@@ -22,7 +22,7 @@ func CTFontGetBoundingBox(_ font: CTFont) -> CGRect
 
 #### Return Value
 
-The design bounding box of the font, which is the rectangle defined by `xMin`, `yMin`, `xMax`, and `yMax` values for the font. Returns [`CGRectNull`](https://developer.apple.com/documentation/CoreGraphics/CGRectNull) on error.
+The design bounding box of the font, which is the rectangle defined by `xMin`, `yMin`, `xMax`, and `yMax` values for the font. Returns [`CGRectNull`](https://developer.apple.com/documentation/coregraphics/cgrectnull) on error.
 
 ## Parameters
 

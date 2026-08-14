@@ -27,7 +27,7 @@ func isEqual(_ object: Any?) -> Bool
 
 #### Discussion
 
-This method defines what it means for instances to be equal. For example, a container object might define two containers as equal if their corresponding objects all respond [`YES`](yes.md) to an [`isEqual(_:)`](nsobjectprotocol/isequal(_:).md) request. See the [`NSData`](https://developer.apple.com/documentation/Foundation/NSData), [`NSDictionary`](https://developer.apple.com/documentation/Foundation/NSDictionary), [`NSArray`](https://developer.apple.com/documentation/Foundation/NSArray), and [`NSString`](https://developer.apple.com/documentation/Foundation/NSString) class specifications for examples of the use of this method.
+This method defines what it means for instances to be equal. For example, a container object might define two containers as equal if their corresponding objects all respond [`YES`](yes.md) to an [`isEqual(_:)`](nsobjectprotocol/isequal(_:).md) request. See the [`NSData`](https://developer.apple.com/documentation/foundation/nsdata), [`NSDictionary`](https://developer.apple.com/documentation/foundation/nsdictionary), [`NSArray`](https://developer.apple.com/documentation/foundation/nsarray), and [`NSString`](https://developer.apple.com/documentation/foundation/nsstring) class specifications for examples of the use of this method.
 
 If two objects are equal, they must have the same hash value. This last point is particularly important if you define [`isEqual(_:)`](nsobjectprotocol/isequal(_:).md) in a subclass and intend to put instances of that subclass into a collection. Make sure you also define [`hash`](nsobjectprotocol/hash.md) in your subclass.
 

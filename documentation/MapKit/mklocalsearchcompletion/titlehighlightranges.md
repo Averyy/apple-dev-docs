@@ -22,7 +22,7 @@ var titleHighlightRanges: [NSValue] { get }
 
 #### Discussion
 
-This property contains an array of [`NSValue`](https://developer.apple.com/documentation/Foundation/NSValue) objects, each of which contains an [`NSRange`](https://developer.apple.com/documentation/Foundation/NSRange-c.struct) type defining a range of characters in the [`title`](mklocalsearchcompletion/title.md) string. Use this property to identify the ranges of characters in the title string that you want to highlight. Highlighting the matching text of a search completion is optional, but it’s a best practice for providing helpful information to the user.
+This property contains an array of [`NSValue`](https://developer.apple.com/documentation/foundation/nsvalue) objects, each of which contains an [`NSRange`](https://developer.apple.com/documentation/foundation/nsrange-c.struct) type defining a range of characters in the [`title`](mklocalsearchcompletion/title.md) string. Use this property to identify the ranges of characters in the title string that you want to highlight. Highlighting the matching text of a search completion is optional, but it’s a best practice for providing helpful information to the user.
 
 ## See Also
 

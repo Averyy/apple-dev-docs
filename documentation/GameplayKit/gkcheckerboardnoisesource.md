@@ -23,9 +23,9 @@ class GKCheckerboardNoiseSource
 
 Checkerboard noise can be useful as an input to [`GKNoise`](gknoise.md) methods that create noise by combining other noise objects through various operations.
 
-![None](https://docs-assets.developer.apple.com/published/c7287dfc2eb706d0a1b3323492787832/media-2556325%402x.png)
+![None](/images/com.apple.gameplaykit/media-2556325@2x.png)
 
-Like all [`GKNoiseSource`](gknoisesource.md) subclasses, a checkerboard noise source represents a noise generation algorithm and its parameters. To make use of a noise source, first create [`GKNoise`](gknoise.md) object from it (and optionally apply operations to that noise object or combine it with other noise objects). Then create a [`GKNoiseMap`](gknoisemap.md) object from your noise object, generating a concrete field of values that you can sample from directly or visualize using the [`SKTexture`](https://developer.apple.com/documentation/SpriteKit/SKTexture) or `SKTileMap` class.
+Like all [`GKNoiseSource`](gknoisesource.md) subclasses, a checkerboard noise source represents a noise generation algorithm and its parameters. To make use of a noise source, first create [`GKNoise`](gknoise.md) object from it (and optionally apply operations to that noise object or combine it with other noise objects). Then create a [`GKNoiseMap`](gknoisemap.md) object from your noise object, generating a concrete field of values that you can sample from directly or visualize using the [`SKTexture`](https://developer.apple.com/documentation/spritekit/sktexture) or `SKTileMap` class.
 
 ## Topics
 
@@ -43,12 +43,12 @@ Like all [`GKNoiseSource`](gknoisesource.md) subclasses, a checkerboard noise so
 ### Inherits From
 - [GKNoiseSource](gknoisesource.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

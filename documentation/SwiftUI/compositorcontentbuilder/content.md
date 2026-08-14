@@ -19,8 +19,8 @@ struct Content<C> where C : CompositorContent
 
 ### Conforms To
 - [CompositorContent](compositorcontent.md)
-- [Copyable](../Swift/Copyable.md)
-- [Escapable](../Swift/Escapable.md)
+- [Copyable](../swift/copyable.md)
+- [Escapable](../swift/escapable.md)
 - [ImmersiveSpaceContent](immersivespacecontent.md)
 
 

@@ -28,7 +28,7 @@ A publisher that emits elements representing the time interval between the eleme
 
 Use [`measureInterval(using:options:)`](publisher/measureinterval(using:options:).md) to measure the time between events delivered from an upstream publisher.
 
-In the example below, a 1-second [`Timer`](https://developer.apple.com/documentation/Foundation/Timer) is used as the data source for an event publisher; the [`measureInterval(using:options:)`](publisher/measureinterval(using:options:).md) operator reports the elapsed time between the reception of events on the main run loop:
+In the example below, a 1-second [`Timer`](https://developer.apple.com/documentation/foundation/timer) is used as the data source for an event publisher; the [`measureInterval(using:options:)`](publisher/measureinterval(using:options:).md) operator reports the elapsed time between the reception of events on the main run loop:
 
 ```swift
 cancellable = Timer.publish(every: 1, on: .main, in: .default)

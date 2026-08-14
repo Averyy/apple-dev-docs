@@ -21,7 +21,7 @@ case landscapeLeft
 
 #### Discussion
 
-![An image showing the stereo orientation for the front and back data source.](https://docs-assets.developer.apple.com/published/94f5744e6c36bff7890192d1d3f5f977/media-3627729%402x.png)
+![An image showing the stereo orientation for the front and back data source.](/images/com.apple.avfaudio/media-3627729@2x.png)
 
 ## See Also
 

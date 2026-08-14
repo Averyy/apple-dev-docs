@@ -16,7 +16,7 @@ You can present a Game Center interface that allows the local player to invite n
 
 The default interface allows the player to use automatic matches to fill any empty slots. The local player can see the status of players accepting or declining their invitations, as they invite additional players or remove players. Once the number of players that you specify accept their invitations, the local player can start gameplay. Optionally, your game can continue processing responses to invitations, and GameKit can continue automatching to fill empty slots until the maximum number of players that you specify join the game.
 
-![Screenshot of the matchmaker view controller showing the local player choosing other players and the Invite Friends and Start Game buttons they click to send invitations and begin gameplay.](https://docs-assets.developer.apple.com/published/d94624cb43cccd349d2fb15cfce11c59/media-3854543%402x.png)
+![Screenshot of the matchmaker view controller showing the local player choosing other players and the Invite Friends and Start Game buttons they click to send invitations and begin gameplay.](/images/com.apple.gamekit/media-3854543@2x.png)
 
 Alternatively, you can present your own custom interface to invite players, invite specific players, or let Game Center automatch players without presenting an interface.
 
@@ -40,7 +40,7 @@ If you use game-specific matchmaking rules to find players, set the [`queueName`
 
 The local player can choose opponents from the Game Center interface when you present a [`GKMatchmakerViewController`](gkmatchmakerviewcontroller.md) object and handle the resulting invitation events.
 
-Pass the [`GKMatchRequest`](gkmatchrequest.md) object to the [`GKMatchmakerViewController`](gkmatchmakerviewcontroller.md) initializer and set the view controller’s delegate to your game object before you present it. Use the [`present(_:animated:completion:)`](https://developer.apple.com/documentation/UIKit/UIViewController/present(_:animated:completion:)) or equivalent method to present the matchmaker view controller, in which the local player can choose players or automatch to fill empty slots.
+Pass the [`GKMatchRequest`](gkmatchrequest.md) object to the [`GKMatchmakerViewController`](gkmatchmakerviewcontroller.md) initializer and set the view controller’s delegate to your game object before you present it. Use the [`present(_:animated:completion:)`](https://developer.apple.com/documentation/uikit/uiviewcontroller/present(_:animated:completion:)) or equivalent method to present the matchmaker view controller, in which the local player can choose players or automatch to fill empty slots.
 
 ```swift
 // Present the interface where the player selects opponents and starts the game.
@@ -52,13 +52,13 @@ if let viewController = GKMatchmakerViewController(matchRequest: request) {
 
 Optionally, configure the view controller before you present it:
 
-- To show only nearby players for games where players need to be in the same room, as in augmented reality ([`ARKit`](https://developer.apple.com/documentation/ARKit)) games, set the [`matchmakingMode`](gkmatchmakerviewcontroller/matchmakingmode.md) property to [`GKMatchmakingMode.nearbyOnly`](gkmatchmakingmode/nearbyonly.md).
+- To show only nearby players for games where players need to be in the same room, as in augmented reality ([`ARKit`](https://developer.apple.com/documentation/arkit)) games, set the [`matchmakingMode`](gkmatchmakerviewcontroller/matchmakingmode.md) property to [`GKMatchmakingMode.nearbyOnly`](gkmatchmakingmode/nearbyonly.md).
 - To use automatch only to connect with other players, set the mode to [`GKMatchmakingMode.automatchOnly`](gkmatchmakingmode/automatchonly.md), or to invite players without using automatch, set the mode to [`GKMatchmakingMode.inviteOnly`](gkmatchmakingmode/inviteonly.md).
-- To allow the local player to start gameplay with a minimum number of players, while Game Center continues to fill empty slots in the background, set the [`canStartWithMinimumPlayers`](gkmatchmakerviewcontroller/canstartwithminimumplayers.md) property to [`true`](https://developer.apple.com/documentation/Swift/true). Then design your game to progressively add players as they accept their invitations.
+- To allow the local player to start gameplay with a minimum number of players, while Game Center continues to fill empty slots in the background, set the [`canStartWithMinimumPlayers`](gkmatchmakerviewcontroller/canstartwithminimumplayers.md) property to [`true`](https://developer.apple.com/documentation/swift/true). Then design your game to progressively add players as they accept their invitations.
 
 Players automatically have the ability to chat with other players using FaceTime. The view controller shows a SharePlay button, in addition to the Invite Players and Quick Match buttons. To implement a custom group activities experience, see [`startGroupActivity(playerHandler:)`](gkmatchmaker/startgroupactivity(playerhandler:).md). For macOS apps, add the Group Activities capability to your Xcode project to show the SharePlay button.
 
-![Screenshot of the matchmaker view controller showing the SharePlay, Invite Players, and Quick Match buttons that players click to start matching players.](https://docs-assets.developer.apple.com/published/8f23f3b92eb6a5a9288e1434fb33c7b0/media-4278455%402x.png)
+![Screenshot of the matchmaker view controller showing the SharePlay, Invite Players, and Quick Match buttons that players click to start matching players.](/images/com.apple.gamekit/media-4278455@2x.png)
 
 Then adopt the [`GKLocalPlayerListener`](gklocalplayerlistener.md) and [`GKMatchmakerViewControllerDelegate`](gkmatchmakerviewcontrollerdelegate.md) protocols to implement methods that keep track of the invitations GameKit sends and the invitations players accept. To receive the [`GKInviteEventListener`](gkinviteeventlistener.md) callbacks that the `GKLocalPlayerListener` protocol includes, register your game object with the local player object:
 
@@ -70,7 +70,7 @@ GKLocalPlayer.local.register(self)
 
 Game Center sends invitations to the players asynchronously. When a player accepts an invitation from another player, GameKit notifies Game Center and invokes the `GKInviteEventListener` [`player(_:didAccept:)`](gkinviteeventlistener/player(_:didaccept:).md) method.
 
-![Diagram showing the Game Center sending invitations to Player B and Player C, then the delegate method sent to the listener object when Player B accepts the invitation.](https://docs-assets.developer.apple.com/published/7d2b2edf9d2f18299ebb5f3c23eca829/media-3697898%402x.png)
+![Diagram showing the Game Center sending invitations to Player B and Player C, then the delegate method sent to the listener object when Player B accepts the invitation.](/images/com.apple.gamekit/media-3697898@2x.png)
 
 Implement the [`player(_:didAccept:)`](gkinviteeventlistener/player(_:didaccept:).md) method to present the matchmaker view controller in the invitation state so the recipient of the invitation can see the progress as other players accept their invitations. Create the matchmaker view controller by passing the invite to the initializer, and then present it.
 
@@ -88,7 +88,7 @@ func player(_ player: GKPlayer, didAccept invite: GKInvite) {
 
 The matchmaker view controller shows the players who received or accepted invitations. When all the players accept their invitations, GameKit invokes the `GKMatchmakerViewControllerDelegate` [`matchmakerViewController(_:didFind:)`](gkmatchmakerviewcontrollerdelegate/matchmakerviewcontroller(_:didfind:).md) method in the app instances for all players in the game, including the player who sent the invitations.
 
-![Diagram showing Player A inviting Player B and Player C, and then the matchmaker view controller delegate being notified when all the players accept their invitations.](https://docs-assets.developer.apple.com/published/f2f8c0a6ab6efd690457bd0ffd32534a/media-3697899%402x.png)
+![Diagram showing Player A inviting Player B and Player C, and then the matchmaker view controller delegate being notified when all the players accept their invitations.](/images/com.apple.gamekit/media-3697899@2x.png)
 
 Implement the [`matchmakerViewController(_:didFind:)`](gkmatchmakerviewcontrollerdelegate/matchmakerviewcontroller(_:didfind:).md) method to dismiss the view controller and start your game. If the player count is low or players accept invitations quickly, you can add a delay before you dismiss the view controller, so players see the outgoing invitations before you start the game.
 

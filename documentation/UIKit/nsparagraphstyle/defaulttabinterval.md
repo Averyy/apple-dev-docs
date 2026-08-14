@@ -27,7 +27,7 @@ This property represents the default tab interval in points. Tabs after the last
 
 - [var tabStops: [NSTextTab]](nsparagraphstyle/tabstops.md)
   The text tab objects that represent the paragraph’s tab stops.
-- [NSParagraphStyle.TextTabType](../AppKit/NSParagraphStyle/TextTabType.md)
+- [NSParagraphStyle.TextTabType](../appkit/nsparagraphstyle/texttabtype.md)
   Constants that specify the type of tab stop.
 
 

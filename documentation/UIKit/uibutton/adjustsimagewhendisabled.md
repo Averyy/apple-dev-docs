@@ -20,7 +20,7 @@ var adjustsImageWhenDisabled: Bool { get set }
 
 #### Discussion
 
-If [`true`](https://developer.apple.com/documentation/Swift/true), the image is drawn darker when the button is disabled. The default value is [`true`](https://developer.apple.com/documentation/Swift/true).
+If [`true`](https://developer.apple.com/documentation/swift/true), the image is drawn darker when the button is disabled. The default value is [`true`](https://developer.apple.com/documentation/swift/true).
 
 ## See Also
 

@@ -23,7 +23,7 @@ static var landscapeLeft: PreviewTrait<Preview.ViewTraits> { get }
 
 #### Discussion
 
-This is the same as [`landscapeLeft`](https://developer.apple.com/documentation/SwiftUI/InterfaceOrientation/landscapeLeft).
+This is the same as [`landscapeLeft`](https://developer.apple.com/documentation/swiftui/interfaceorientation/landscapeleft).
 
 ## See Also
 

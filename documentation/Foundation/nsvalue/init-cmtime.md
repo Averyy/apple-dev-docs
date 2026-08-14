@@ -30,7 +30,7 @@ A new value object that contains the media time information.
 
 ## See Also
 
-- [struct CMTime](../CoreMedia/CMTime.md)
+- [struct CMTime](../coremedia/cmtime.md)
   A structure that represents time.
 - [init(CMTimeRange: CMTimeRange)](nsvalue/init(cmtimerange:).md)
   Creates a new value object containing the specified CoreMedia time range structure.

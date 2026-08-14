@@ -29,7 +29,7 @@ This protocol consolidates all media source capabilities into a single interface
 - [AVPlaybackUserInterfacePlaybackControllable](avplaybackuserinterfaceplaybackcontrollable-9he54.md)
 - [AVPlaybackUserInterfaceTimeControllable](avplaybackuserinterfacetimecontrollable-50vcy.md)
 - [AVPlaybackUserInterfaceVolumeControllable](avplaybackuserinterfacevolumecontrollable-4vgi1.md)
-- [Observable](../Observation/Observable.md)
+- [Observable](../observation/observable.md)
 
 
 ---

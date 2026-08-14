@@ -13,7 +13,7 @@ framework: HIG
 
 Beautiful, fluid motions bring the interface to life, conveying status, providing feedback and instruction, and enriching the visual experience of your app or game.
 
-![A sketch of three overlapping diamonds, suggesting the movement of an element from left to right. The image is overlaid with rectangular and circular grid lines and is tinted yellow to subtly reflect the yellow in the original six-color Apple logo.](https://docs-assets.developer.apple.com/published/61e3396cb05556c3bf73fed9709ad38e/foundations-motion-intro~dark%402x.png)
+![A sketch of three overlapping diamonds, suggesting the movement of an element from left to right. The image is overlaid with rectangular and circular grid lines and is tinted yellow to subtly reflect the yellow in the original six-color Apple logo.](/images/com.apple.HIG/foundations-motion-intro~dark@2x.png)
 Many system components automatically include motion, letting you offer familiar and consistent experiences throughout your app or game. System components might also adjust their motion in response to factors like accessibility settings or different input methods. For example, the movement of [Liquid Glass](materials.md#Liquid-Glass) responds to direct touch interaction with greater emphasis to reinforce the feeling of a tactile experience, but produces a more subdued effect when a person interacts using a trackpad.
 If you design custom motion, follow the guidelines below.
 
@@ -47,7 +47,7 @@ In addition to subtly communicating context, drawing attention to information, a
 **Avoid showing objects that oscillate in a sustained way.** In particular, you want to avoid showing an oscillation that has a frequency of around 0.2 Hz because people can be very sensitive to this frequency. If you need to show objects oscillating, aim to keep the amplitude low and consider making the content translucent.
 
 ### watchOS
-SwiftUI provides a powerful and streamlined way to add motion to your app. If you need to use WatchKit to animate layout and appearance changes — or create animated image sequences — see [WKInterfaceImage](../WatchKit/WKInterfaceImage.md#1652345).
+SwiftUI provides a powerful and streamlined way to add motion to your app. If you need to use WatchKit to animate layout and appearance changes — or create animated image sequences — see [WKInterfaceImage](../watchkit/wkinterfaceimage.md).
 
 > **Note:** All layout- and appearance-based animations automatically include built-in easing that plays at the start and end of the animation. You can’t turn off or customize easing.
 
@@ -60,7 +60,7 @@ SwiftUI provides a powerful and streamlined way to add motion to your app. If yo
 [Immersive experiences](immersive-experiences.md)
 
 #### Developer documentation
-[Animating views and transitions](/tutorials/SwiftUI/animating-views-and-transitions) — SwiftUI
+[Animating views and transitions](/tutorials/swiftui/animating-views-and-transitions) — SwiftUI
 
 #### Videos
 - [Enhance your UI animations and transitions](https://developer.apple.com/videos/play/wwdc2024/10145) - Explore how to adopt the zoom transition in navigation and presentations to increase the sense of continuity in your app, and learn how to animate UIKit views with SwiftUI animations to make it easier to build animations that feel continuous.

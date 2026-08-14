@@ -39,7 +39,7 @@ The classes that implement bars have paired methods to set a background for a gi
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 ### Conforming Types
 - [UINavigationBar](uinavigationbar.md)
 - [UISearchBar](uisearchbar.md)

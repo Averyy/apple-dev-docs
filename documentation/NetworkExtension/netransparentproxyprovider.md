@@ -24,19 +24,19 @@ The [`NETransparentProxyProvider`](netransparentproxyprovider.md) class has the 
 
 - Returning `NO` from [`handleNewFlow(_:)`](neappproxyprovider/handlenewflow(_:).md) and [`handleNewUDPFlow(_:initialRemoteEndpoint:)`](neappproxyprovider/handlenewudpflow(_:initialremoteendpoint:).md) causes the flow to proceed to communicate directly with the flow’s ultimate destination, instead of closing the flow with a “Connection Refused” error.
 - This provider ignores [`NEDNSSettings`](nednssettings.md) and [`NEProxySettings`](neproxysettings.md) specified within [`NETransparentProxyNetworkSettings`](netransparentproxynetworksettings.md). Flows that match the [`includedNetworkRules`](netransparentproxynetworksettings/includednetworkrules.md) within [`NETransparentProxyNetworkSettings`](netransparentproxynetworksettings.md) use the same DNS and proxy settings that other flows on the system currently use.
-- Flows that are created using a “connect by name” API (such as [`Network`](https://developer.apple.com/documentation/Network) framework or [`URLSession`](https://developer.apple.com/documentation/Foundation/URLSession)) that match the [`includedNetworkRules`](netransparentproxynetworksettings/includednetworkrules.md) don’t bypass DNS resolution.
+- Flows that are created using a “connect by name” API (such as [`Network`](https://developer.apple.com/documentation/network) framework or [`URLSession`](https://developer.apple.com/documentation/foundation/urlsession)) that match the [`includedNetworkRules`](netransparentproxynetworksettings/includednetworkrules.md) don’t bypass DNS resolution.
 
 ## Relationships
 
 ### Inherits From
 - [NEAppProxyProvider](neappproxyprovider.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

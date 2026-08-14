@@ -8,7 +8,7 @@ Create a version of your macOS app that runs on both Apple silicon and Intel-bas
 
 Port your existing macOS app to Apple silicon by creating a universal binary and modifying your code to handle architectural differences. A universal binary looks no different than a regular app, but its executable file contains two versions of your compiled code. One version runs natively on Apple silicon, and the other runs natively on Intel-based Mac computers. At runtime, the system automatically chooses which version to run on the current platform.
 
-![ThAn illustration of an app, where the main executable file supports the arm64 and x86_64 architectures.](https://docs-assets.developer.apple.com/published/8576d4db4481980842af6b4189e0c79e/porting-your-macos-apps-to-apple-silicon-1%402x.png)
+![ThAn illustration of an app, where the main executable file supports the arm64 and x86_64 architectures.](/images/com.apple.Apple-Silicon/porting-your-macos-apps-to-apple-silicon-1@2x.png)
 
 To build a universal binary, you need Xcode 12 or a later version, which adds `arm64` to the standard list of build architectures for macOS binaries. When you open your project and do a clean build, Xcode creates a universal binary automatically if your project uses the standard architectures. If you use custom makefiles or build scripts, add the `arm64` architecture to your build system.
 
@@ -22,7 +22,7 @@ To learn how to build a universal binary, see [`Building a universal macOS binar
 
 Early in the porting process, identify the workflow you’ll use to build and test your code. Xcode runs on all Mac computers, so build your code on either an Apple silicon or Intel-based Mac computer and do your initial testing there. However, always test, tune, and validate your code on both computer types to uncover issues specific to that architecture.
 
-![An illustration of the process for building, debugging, and tuning your code on Apple silicon-based Mac computers and Intel-based Mac computers.](https://docs-assets.developer.apple.com/published/c3701ee00fbe41f996a5f0aae509daf6/porting-your-macos-apps-to-apple-silicon-2%402x.png)
+![An illustration of the process for building, debugging, and tuning your code on Apple silicon-based Mac computers and Intel-based Mac computers.](/images/com.apple.Apple-Silicon/porting-your-macos-apps-to-apple-silicon-2@2x.png)
 
 In addition to a workflow plan, identify potential areas to investigate during the porting process. The porting effort for `arm64` depends on how much you rely on hardware-specific features. If you rely mostly on Apple frameworks and technologies, your porting effort may be small. If you tuned your code specifically for the `x86_64` architecture and hardware capabilities, porting to `arm64` may require additional effort.
 
@@ -43,7 +43,7 @@ Always have a well-defined test plan, ideally with a set of automated test suite
 
 If your project depends on any third-party libraries, contact the original vendors and ask them to provide you with universal versions of those libraries. All code running in the same process must support the same architecture. You cannot produce a universal version of your binary without universal versions of all linked libraries. If one or more libraries is not universal, the linker reports errors.
 
-![TAn illustration that shows the linker creating a universal app from the app’s code and a universal library.](https://docs-assets.developer.apple.com/published/89e8c4c8fe530c1e7e34c783fac72822/porting-your-macos-apps-to-apple-silicon-3%402x.png)
+![TAn illustration that shows the linker creating a universal app from the app’s code and a universal library.](/images/com.apple.Apple-Silicon/porting-your-macos-apps-to-apple-silicon-3@2x.png)
 
 To learn how to create your own universal binaries, see [`Building a universal macOS binary`](building-a-universal-macos-binary.md).
 
@@ -53,11 +53,11 @@ A universal plug-in runs natively on any Mac computer. If your app supports a pl
 
 Universal plug-ins are essential if your app loads those plug-ins directly into its process space. Code running in the same process must support the same architecture. If your app attempts to load a plug-in with an incompatible architecture, the system reports an error at load time.
 
-![An illustration of an XPC service managing a plug-in for an app.](https://docs-assets.developer.apple.com/published/f3c16c0dcc7416b1f72398a74b7edb69/porting-your-macos-apps-to-apple-silicon-4%402x.png)
+![An illustration of an XPC service managing a plug-in for an app.](/images/com.apple.Apple-Silicon/porting-your-macos-apps-to-apple-silicon-4@2x.png)
 
 Plug-ins that run out-of-process using an XPC service may run using a different architecture than the app itself. To give your developers time to update their plug-ins, provide two non-universal XPC services—one to run `arm64` plug-ins and one to run `x86_64` plug-ins. A single XPC service can manage either native or translated plug-ins, but not both at the same time. When creating the services, give each one a unique bundle identifier so they may run simultaneously.
 
-For information about how to communicate with out-of-process plug-ins using XPC, see [`XPC`](https://developer.apple.com/documentation/Foundation/xpc).
+For information about how to communicate with out-of-process plug-ins using XPC, see [`XPC`](https://developer.apple.com/documentation/foundation/xpc).
 
 ##### Address Architectural Differences
 
@@ -101,17 +101,17 @@ When porting code to macOS 11, be aware of the following requirements for code t
 - Kernel extensions must support the native architecture. Kernel extensions run in the kernel, and the kernel always runs as a native process. You cannot run kernel extensions using Rosetta translation.
 - The installation and uninstallation of kernel extensions requires a reboot. When you install a kernel extension, the system doesn’t load your extension until after a reboot.
 
-For more information about kernel extension and driver changes, see [`Implementing drivers, system extensions, and kexts`](https://developer.apple.com/documentation/SystemExtensions/implementing-drivers-system-extensions-and-kexts).
+For more information about kernel extension and driver changes, see [`Implementing drivers, system extensions, and kexts`](https://developer.apple.com/documentation/systemextensions/implementing-drivers-system-extensions-and-kexts).
 
 ##### Migrate Away From Specific Technologies
 
 macOS includes a few technologies that are currently deprecated or discouraged for active development. If your app uses one of the following technologies, migrate to an appropriate replacement as soon as possible:
 
-- OpenGL—Use [`Metal`](https://developer.apple.com/documentation/Metal) instead.
-- OpenCL—Use [`Metal`](https://developer.apple.com/documentation/Metal) instead.
-- AddressBook—Use the [`Contacts`](https://developer.apple.com/documentation/Contacts) framework instead.
-- Carbon APIs—Migrate to [`AppKit`](https://developer.apple.com/documentation/AppKit), [`Foundation`](https://developer.apple.com/documentation/Foundation), and other modern APIs.
-- IOKit kernel extensions—Migrate to DriverKit where appropriate; see [`DriverKit`](https://developer.apple.com/documentation/DriverKit) framework.
+- OpenGL—Use [`Metal`](https://developer.apple.com/documentation/metal) instead.
+- OpenCL—Use [`Metal`](https://developer.apple.com/documentation/metal) instead.
+- AddressBook—Use the [`Contacts`](https://developer.apple.com/documentation/contacts) framework instead.
+- Carbon APIs—Migrate to [`AppKit`](https://developer.apple.com/documentation/appkit), [`Foundation`](https://developer.apple.com/documentation/foundation), and other modern APIs.
+- IOKit kernel extensions—Migrate to DriverKit where appropriate; see [`DriverKit`](https://developer.apple.com/documentation/driverkit) framework.
 
 Apple silicon still provides support for the preceding technologies, and you may continue to use them in macOS 11. However, this support may be removed in a future version of macOS, so migration to newer technologies is recommended.
 
@@ -119,7 +119,7 @@ Apple silicon still provides support for the preceding technologies, and you may
 
 Apple silicon supports all debugging and testing tools found on Intel-based Mac computers. Use the Xcode IDE to set and monitor breakpoints and monitor other aspects of your app’s behavior. Use `lldb` from the command line to perform similar tasks outside of the Xcode interface.
 
-For more information about how to debug and test your code, see [`Xcode`](https://developer.apple.com/documentation/Xcode).
+For more information about how to debug and test your code, see [`Xcode`](https://developer.apple.com/documentation/xcode).
 
 ##### Tune Your Apps Performance
 

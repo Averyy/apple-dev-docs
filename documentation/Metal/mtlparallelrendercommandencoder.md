@@ -52,7 +52,7 @@ You can assign each [`MTLRenderCommandEncoder`](mtlrendercommandencoder.md) to i
 
 ### Inherits From
 - [MTLCommandEncoder](mtlcommandencoder.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

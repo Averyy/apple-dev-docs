@@ -21,7 +21,7 @@ var dates: [CNLabeledValue<NSDateComponents>] { get set }
 
 #### Discussion
 
-This property is an array of [`CNLabeledValue`](cnlabeledvalue.md) objects, each of which has an [`NSString`](https://developer.apple.com/documentation/Foundation/NSString) label and [`NSDateComponents`](https://developer.apple.com/documentation/Foundation/NSDateComponents) value. You can use this property to store Gregorian dates such as anniversaries. Day and month are required and year is optional. Calendar is `nil` or Gregorian. All other date components are invalid.
+This property is an array of [`CNLabeledValue`](cnlabeledvalue.md) objects, each of which has an [`NSString`](https://developer.apple.com/documentation/foundation/nsstring) label and [`NSDateComponents`](https://developer.apple.com/documentation/foundation/nsdatecomponents) value. You can use this property to store Gregorian dates such as anniversaries. Day and month are required and year is optional. Calendar is `nil` or Gregorian. All other date components are invalid.
 
 ## See Also
 

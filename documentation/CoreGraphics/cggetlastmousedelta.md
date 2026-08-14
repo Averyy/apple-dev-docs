@@ -20,7 +20,7 @@ A tuple whose `x` and `y` members represent the horizontal and vertical change i
 
 #### Discussion
 
-This function is not recommended for general use. Instead, you should use the mouse-tracking functions provided by the [`NSEvent`](https://developer.apple.com/documentation/AppKit/NSEvent) class.
+This function is not recommended for general use. Instead, you should use the mouse-tracking functions provided by the [`NSEvent`](https://developer.apple.com/documentation/appkit/nsevent) class.
 
 ## See Also
 

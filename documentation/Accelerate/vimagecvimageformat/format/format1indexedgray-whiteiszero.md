@@ -22,7 +22,7 @@ case format1IndexedGray_WhiteIsZero
 
 #### Discussion
 
-This pixel format supports color spaces that are [`CGColorSpaceModel.indexed`](https://developer.apple.com/documentation/CoreGraphics/CGColorSpaceModel/indexed).
+This pixel format supports color spaces that are [`CGColorSpaceModel.indexed`](https://developer.apple.com/documentation/coregraphics/cgcolorspacemodel/indexed).
 
 ## See Also
 

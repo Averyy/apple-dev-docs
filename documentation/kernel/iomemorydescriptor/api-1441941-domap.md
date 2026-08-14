@@ -21,8 +21,8 @@ virtual IOReturn doMap(vm_map_t addressMap, IOVirtualAddress *atAddress, IOOptio
 - [- populateDevicePager](iomemorydescriptor/1442017-populatedevicepager.md)
 - [- CreateMapping](iomemorydescriptor/3174974-createmapping.md)
 - [- CreateMapping_Impl](iomemorydescriptor/3174975-createmapping_impl.md)
-- [- Map](../driverkit/iomemorydescriptor/map.md)
-  Maps memory internally.
+- [- Map](iomemorydescriptor/3180643-map.md)
+  Maps memory internally. 
 - [- addMapping](iomemorydescriptor/1442013-addmapping.md)
 - [- removeMapping](iomemorydescriptor/1441778-removemapping.md)
 - [- makeMapping](iomemorydescriptor/1441923-makemapping.md)

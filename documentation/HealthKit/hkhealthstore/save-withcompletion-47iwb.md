@@ -32,7 +32,7 @@ All samples retrieved by iOS 9.0 and later are given a valid [`sourceRevision`](
 ## Parameters
 
 - `objects`: An array containing concrete subclasses of the  [`HKObject`](hkobject.md) class (any of the [`HKCategorySample`](hkcategorysample.md), [`HKQuantitySample`](hkquantitysample.md), [`HKCorrelation`](hkcorrelation.md), or [`HKWorkout`](hkworkout.md) classes).
-- `completion`: A block that this method calls as soon as the save operation is complete. This block is passed the following parameters: - **success**: A Boolean value. This parameter contains [`true`](https://developer.apple.com/documentation/Swift/true) if the objects were successfully saved to the HealthKit store; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
+- `completion`: A block that this method calls as soon as the save operation is complete. This block is passed the following parameters: - **success**: A Boolean value. This parameter contains [`true`](https://developer.apple.com/documentation/swift/true) if the objects were successfully saved to the HealthKit store; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
 - **error**: An error object. If an error occurred, this object contains information about the error; otherwise, it is set to `nil`.
 
 ## See Also

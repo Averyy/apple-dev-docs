@@ -17,10 +17,10 @@ void vDSP_vsmfix24(const float vDSP_input1[], ptrdiff_t vDSP_stride1, const floa
 ## Parameters
 
 - `__A`: The single-precision floating-point input vector.
-- `__IA`: The stride for input vector  . 
+- `__IA`: The stride for input vector `A`. 
 - `__B`: A pointer to a floating-point scaling factor.
 - `__C`: The signed 24-bit integer output vector.
-- `__IC`: The stride for output vector  . 
+- `__IC`: The stride for output vector `C`. 
 - `__N`: The number of values to convert.
 
 ## See Also

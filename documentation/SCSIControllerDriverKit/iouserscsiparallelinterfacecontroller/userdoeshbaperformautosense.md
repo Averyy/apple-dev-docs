@@ -16,7 +16,7 @@ virtual kern_return_t UserDoesHBAPerformAutoSense(bool *result);
 
 #### Return Value
 
-A value that indicates the result of determining if the driver extension class performs autosense. [`kIOReturnSuccess`](https://developer.apple.com/documentation/DriverKit/kIOReturnSuccess) indicates success. For error definitions, see [`IOKit Constants`](https://developer.apple.com/documentation/iokit/iokit_constants).
+A value that indicates the result of determining if the driver extension class performs autosense. [`kIOReturnSuccess`](https://developer.apple.com/documentation/driverkit/kioreturnsuccess) indicates success. For error definitions, see [`IOKit Constants`](https://developer.apple.com/documentation/iokit/iokit_constants).
 
 #### Discussion
 

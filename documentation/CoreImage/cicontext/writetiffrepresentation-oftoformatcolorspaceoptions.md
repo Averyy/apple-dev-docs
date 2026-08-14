@@ -28,7 +28,7 @@ To render an image for export, the image’s contents must not be empty and its 
 - `image`: The image object to render.
 - `url`: The file URL at which to write the output TIFF file.
 - `format`: The pixel format for the output image.
-- `colorSpace`: The color space in which to render the output image. This color space must conform to either the [`CGColorSpaceModel.rgb`](https://developer.apple.com/documentation/CoreGraphics/CGColorSpaceModel/rgb) or [`CGColorSpaceModel.monochrome`](https://developer.apple.com/documentation/CoreGraphics/CGColorSpaceModel/monochrome) model and must be compatible with the specified pixel format.
+- `colorSpace`: The color space in which to render the output image. This color space must conform to either the [`CGColorSpaceModel.rgb`](https://developer.apple.com/documentation/coregraphics/cgcolorspacemodel/rgb) or [`CGColorSpaceModel.monochrome`](https://developer.apple.com/documentation/coregraphics/cgcolorspacemodel/monochrome) model and must be compatible with the specified pixel format.
 - `options`: A dictionary with additional options for export.
 
 ## See Also

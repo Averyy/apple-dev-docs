@@ -18,6 +18,12 @@ func AXUIElementCopyElementAtPosition(_ application: AXUIElement, _ x: Float, _ 
 
 If unsuccessful, `AXUIElementCopyElementAtPosition` may return one of the following error codes, among others:
 
+- **`kAXErrorNoValue`**: There is no accessibility object at the specified position.
+- **`kAXErrorIllegalArgument`**: One or more of the arguments is an illegal value.
+- **`kAXErrorInvalidUIElement`**: The AXUIElementRef is invalid.
+- **`kAXErrorCannotComplete`**: The function cannot complete because messaging has failed in some way.
+- **`kAXErrorNotImplemented`**: The process does not fully support the accessibility API.
+
 #### Discussion
 
 This function does hit-testing based on window z-order (that is, layering). If one window is on top of another window, the returned accessibility object comes from whichever window is topmost at the specified location. Note that if the system-wide accessibility object is passed in the `application` parameter, the position test is not restricted to a particular application.

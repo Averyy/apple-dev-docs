@@ -20,7 +20,7 @@ case invalidClientProcess
 
 #### Discussion
 
-Only call the [`reportNewIncomingVoIPPushPayload(_:completion:)`](cxprovider/reportnewincomingvoippushpayload(_:completion:).md) method from a [`UNNotificationServiceExtension`](https://developer.apple.com/documentation/UserNotifications/UNNotificationServiceExtension) object that is responding to an incoming notification request.
+Only call the [`reportNewIncomingVoIPPushPayload(_:completion:)`](cxprovider/reportnewincomingvoippushpayload(_:completion:).md) method from a [`UNNotificationServiceExtension`](https://developer.apple.com/documentation/usernotifications/unnotificationserviceextension) object that is responding to an incoming notification request.
 
 ## See Also
 

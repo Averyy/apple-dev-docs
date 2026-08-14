@@ -7,7 +7,6 @@ Target to use when opening URL.
 
 **Availability**:
 - iOS 26.0+
-- iPadOS 26.0+
 
 ## Declaration
 

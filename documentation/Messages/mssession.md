@@ -36,7 +36,7 @@ Use the following workflow to create a new, updatable message.
 - A new layout object that describes the initial message’s appearance. For more information, see the [`MSMessage`](msmessage.md) class’s [`layout`](msmessage/layout.md) property.
 - A string that describes the message’s current state. For more information, see the [`MSMessage`](msmessage.md) class’s [`summaryText`](msmessage/summarytext.md) property.
 
-1. Instantiate a new [`MSSession`](mssession.md) object by calling its [`init()`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class/init()) method.
+1. Instantiate a new [`MSSession`](mssession.md) object by calling its [`init()`](https://developer.apple.com/documentation/objectivec/nsobject-swift.class/init()) method.
 2. Instantiate a new [`MSMessage`](msmessage.md) object by calling its [`init(session:)`](msmessage/init(session:).md) method and passing the session object. Set the message’s [`url`](msmessage/url.md), [`layout`](msmessage/layout.md), and [`summaryText`](msmessage/summarytext.md) properties.
 3. Send the message by calling the conversation’s [`insert(_:completionHandler:)`](msconversation/insert(_:completionhandler:)-3g248.md) method. Pass `nil` for the change description.
 
@@ -66,16 +66,16 @@ The Messages app updates the message in the transcript as soon as the user taps 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCoding](../Foundation/NSCoding.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [NSSecureCoding](../Foundation/NSSecureCoding.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCoding](../foundation/nscoding.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSSecureCoding](../foundation/nssecurecoding.md)
 
 ## See Also
 

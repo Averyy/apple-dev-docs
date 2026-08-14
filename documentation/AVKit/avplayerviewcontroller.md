@@ -36,7 +36,7 @@ A player view controller makes it simple to add media playback capabilities to y
 
 ##### Support Airplay
 
-AirPlay lets users stream media to Apple TV, HomePod, and AirPlay 2-compatible speakers and smart TVs. A player view controller supports AirPlay automatically, but you need to configure your app to enable it. See [`Configuring your app for media playback`](https://developer.apple.com/documentation/AVFoundation/configuring-your-app-for-media-playback) for more information about configuring your app for background playback.
+AirPlay lets users stream media to Apple TV, HomePod, and AirPlay 2-compatible speakers and smart TVs. A player view controller supports AirPlay automatically, but you need to configure your app to enable it. See [`Configuring your app for media playback`](https://developer.apple.com/documentation/avfoundation/configuring-your-app-for-media-playback) for more information about configuring your app for background playback.
 
 ##### Adopt Picture in Picture Playback
 
@@ -48,19 +48,19 @@ AirPlay lets users stream media to Apple TV, HomePod, and AirPlay 2-compatible s
 
 [`AVPlayerViewController`](avplayerviewcontroller.md) in tvOS brings advanced Siri Remote control features to your app. This support lets users play and navigate your content, and access supporting features like subtitles and alternate audio tracks. This object also provides support for using Siri Remote voice commands, such as “Skip ahead 15 seconds” and “What did they say?”, to control playback of your content.
 
-AVKit for tvOS extends the features of [`AVPlayerViewController`](avplayerviewcontroller.md) and [`AVPlayerItem`](https://developer.apple.com/documentation/AVFoundation/AVPlayerItem) to provide additional ways to navigate and present content. Features unique to the tvOS player user interface include:
+AVKit for tvOS extends the features of [`AVPlayerViewController`](avplayerviewcontroller.md) and [`AVPlayerItem`](https://developer.apple.com/documentation/avfoundation/avplayeritem) to provide additional ways to navigate and present content. Features unique to the tvOS player user interface include:
 
 - Navigation Marker Groups. A group of navigation markers that allow a viewer to jump between significant events in the media timeline. The most common type of navigation marker group is a chapter list, but you can also create additional or alternative means of navigation — for example, to allow the user to quickly jump between key moments in a recorded sporting event. The player view controller lets the user choose between multiple marker groups for navigating through the media timeline.
 
-Use the [`AVNavigationMarkersGroup`](avnavigationmarkersgroup.md) class to create and describe navigation markers, then use the [`navigationMarkerGroups`](https://developer.apple.com/documentation/AVFoundation/AVPlayerItem/navigationMarkerGroups) property to associate marker groups with the current [`AVPlayerItem`](https://developer.apple.com/documentation/AVFoundation/AVPlayerItem) object.
+Use the [`AVNavigationMarkersGroup`](avnavigationmarkersgroup.md) class to create and describe navigation markers, then use the [`navigationMarkerGroups`](https://developer.apple.com/documentation/avfoundation/avplayeritem/navigationmarkergroups) property to associate marker groups with the current [`AVPlayerItem`](https://developer.apple.com/documentation/avfoundation/avplayeritem) object.
 
 - Interstitial Content. Some content might not relate to the main content that your app presents, or might have different presentation requirements. For example, you might not allow the user to skip over advertisements when scrubbing through the playback timeline, or to skip mandatory legal notices.
 
-Use the [`AVInterstitialTimeRange`](avinterstitialtimerange.md) class to describe interstitial content, and the [`interstitialTimeRanges`](https://developer.apple.com/documentation/AVFoundation/AVPlayerItem/interstitialTimeRanges) property to associate those time ranges with the current [`AVPlayerItem`](https://developer.apple.com/documentation/AVFoundation/AVPlayerItem) object.
+Use the [`AVInterstitialTimeRange`](avinterstitialtimerange.md) class to describe interstitial content, and the [`interstitialTimeRanges`](https://developer.apple.com/documentation/avfoundation/avplayeritem/interstitialtimeranges) property to associate those time ranges with the current [`AVPlayerItem`](https://developer.apple.com/documentation/avfoundation/avplayeritem) object.
 
 - Content Proposals. When presenting serialized content, like a TV show, you often want to propose additional content for the viewer to watch when the current episode ends. It’s straightforward to add this functionality to your app using content proposals.
 
-Use the [`AVContentProposal`](avcontentproposal.md) class to describe the proposed content, and set it as the [`nextContentProposal`](https://developer.apple.com/documentation/AVFoundation/AVPlayerItem/nextContentProposal) property of the current [`AVPlayerItem`](https://developer.apple.com/documentation/AVFoundation/AVPlayerItem) object. You can implement the methods of the player view controller’s [`delegate`](avplayerviewcontroller/delegate.md) object to prepare to present a content proposal, and perform actions in response to the viewer accepting, rejecting, or deferring the proposal.
+Use the [`AVContentProposal`](avcontentproposal.md) class to describe the proposed content, and set it as the [`nextContentProposal`](https://developer.apple.com/documentation/avfoundation/avplayeritem/nextcontentproposal) property of the current [`AVPlayerItem`](https://developer.apple.com/documentation/avfoundation/avplayeritem) object. You can implement the methods of the player view controller’s [`delegate`](avplayerviewcontroller/delegate.md) object to prepare to present a content proposal, and perform actions in response to the viewer accepting, rejecting, or deferring the proposal.
 
 ## Topics
 
@@ -197,29 +197,29 @@ Use the [`AVContentProposal`](avcontentproposal.md) class to describe the propos
 ## Relationships
 
 ### Inherits From
-- [UIViewController](../UIKit/UIViewController.md)
+- [UIViewController](../uikit/uiviewcontroller.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCoding](../Foundation/NSCoding.md)
-- [NSExtensionRequestHandling](../Foundation/NSExtensionRequestHandling.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [NSTouchBarProvider](../AppKit/NSTouchBarProvider.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
-- [UIActivityItemsConfigurationProviding](../UIKit/UIActivityItemsConfigurationProviding.md)
-- [UIAppearanceContainer](../UIKit/UIAppearanceContainer.md)
-- [UIContentContainer](../UIKit/UIContentContainer.md)
-- [UIFocusEnvironment](../UIKit/UIFocusEnvironment.md)
-- [UIPasteConfigurationSupporting](../UIKit/UIPasteConfigurationSupporting.md)
-- [UIResponderStandardEditActions](../UIKit/UIResponderStandardEditActions.md)
-- [UIStateRestoring](../UIKit/UIStateRestoring.md)
-- [UITraitChangeObservable](../UIKit/UITraitChangeObservable-67e94.md)
-- [UITraitEnvironment](../UIKit/UITraitEnvironment.md)
-- [UIUserActivityRestoring](../UIKit/UIUserActivityRestoring.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCoding](../foundation/nscoding.md)
+- [NSExtensionRequestHandling](../foundation/nsextensionrequesthandling.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSTouchBarProvider](../appkit/nstouchbarprovider.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
+- [UIActivityItemsConfigurationProviding](../uikit/uiactivityitemsconfigurationproviding.md)
+- [UIAppearanceContainer](../uikit/uiappearancecontainer.md)
+- [UIContentContainer](../uikit/uicontentcontainer.md)
+- [UIFocusEnvironment](../uikit/uifocusenvironment.md)
+- [UIPasteConfigurationSupporting](../uikit/uipasteconfigurationsupporting.md)
+- [UIResponderStandardEditActions](../uikit/uiresponderstandardeditactions.md)
+- [UIStateRestoring](../uikit/uistaterestoring.md)
+- [UITraitChangeObservable](../uikit/uitraitchangeobservable-67e94.md)
+- [UITraitEnvironment](../uikit/uitraitenvironment.md)
+- [UIUserActivityRestoring](../uikit/uiuseractivityrestoring.md)
 
 ## See Also
 

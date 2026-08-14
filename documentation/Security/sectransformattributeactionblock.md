@@ -16,7 +16,7 @@ typealias SecTransformAttributeActionBlock = (SecTransformAttribute, CFTypeRef) 
 
 #### Return Value
 
-The new value of the attribute if successful or a [`CFError`](https://developer.apple.com/documentation/CoreFoundation/CFError) object on failure. If a transform needs to have a [`CFError`](https://developer.apple.com/documentation/CoreFoundation/CFError) as the value of an attribute, then place the object in a container, such as a [`CFArray`](https://developer.apple.com/documentation/CoreFoundation/CFArray) or [`CFDictionary`](https://developer.apple.com/documentation/CoreFoundation/CFDictionary) object.
+The new value of the attribute if successful or a [`CFError`](https://developer.apple.com/documentation/corefoundation/cferror) object on failure. If a transform needs to have a [`CFError`](https://developer.apple.com/documentation/corefoundation/cferror) as the value of an attribute, then place the object in a container, such as a [`CFArray`](https://developer.apple.com/documentation/corefoundation/cfarray) or [`CFDictionary`](https://developer.apple.com/documentation/corefoundation/cfdictionary) object.
 
 ## Parameters
 

@@ -22,7 +22,7 @@ In the production environment, the App Store server retries sending the notficat
 
 In the sandbox environment, the App Store server attempts to send the notification one time.
 
-For more information about the timing of retry attempts, see [`Responding to App Store Server Notifications`](https://developer.apple.com/documentation/AppStoreServerNotifications/responding-to-app-store-server-notifications).
+For more information about the timing of retry attempts, see [`Responding to App Store Server Notifications`](https://developer.apple.com/documentation/appstoreservernotifications/responding-to-app-store-server-notifications).
 
 ## See Also
 

@@ -17,11 +17,11 @@ func setNeedsLayout(_ flag: Bool)
 
 #### Discussion
 
-A view conforming to this protocol should store the most recent value of this flag in an internal variable. Then, in its drawRect method, if the most recent value of this flag was [`true`](https://developer.apple.com/documentation/Swift/true), it should invoke [`layout()`](webdocumentview/layout().md) and reset the internal variable before updating the contents of the view.
+A view conforming to this protocol should store the most recent value of this flag in an internal variable. Then, in its drawRect method, if the most recent value of this flag was [`true`](https://developer.apple.com/documentation/swift/true), it should invoke [`layout()`](webdocumentview/layout().md) and reset the internal variable before updating the contents of the view.
 
 ## Parameters
 
-- `flag`: Sets whether the receiver needs to update its layout in the next call to its [`draw(_:)`](https://developer.apple.com/documentation/AppKit/NSView/draw(_:)) method.
+- `flag`: Sets whether the receiver needs to update its layout in the next call to its [`draw(_:)`](https://developer.apple.com/documentation/appkit/nsview/draw(_:)) method.
 
 ## See Also
 

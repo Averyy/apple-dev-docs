@@ -20,7 +20,7 @@ let kCGPDFXRegistryName: CFString
 
 #### Discussion
 
-A string identifying the registry in which the condition designated by [`kCGPDFXOutputConditionIdentifier`](kcgpdfxoutputconditionidentifier.md) is defined. This key is optional. If present, the value of this key must be a [`CFString`](https://developer.apple.com/documentation/CoreFoundation/CFString) object. For best results, the string should be lossless in ASCII encoding.
+A string identifying the registry in which the condition designated by [`kCGPDFXOutputConditionIdentifier`](kcgpdfxoutputconditionidentifier.md) is defined. This key is optional. If present, the value of this key must be a [`CFString`](https://developer.apple.com/documentation/corefoundation/cfstring) object. For best results, the string should be lossless in ASCII encoding.
 
 ## See Also
 

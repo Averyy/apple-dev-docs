@@ -10,7 +10,7 @@ To overlay content rendered with SpriteKit on top of another view, follow these 
 
 1. Set the scene’s [`backgroundColor`](skscene/backgroundcolor.md) to clear.
 2. Enable [`allowsTransparency`](skview/allowstransparency.md) on the view.
-3. Set the view’s [`backgroundColor`](https://developer.apple.com/documentation/UIKit/UIView/backgroundColor) to `clear`.
+3. Set the view’s [`backgroundColor`](https://developer.apple.com/documentation/uikit/uiview/backgroundcolor) to `clear`.
 
 ## See Also
 

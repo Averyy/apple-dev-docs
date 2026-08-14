@@ -61,7 +61,7 @@ The `getter` method of `publishMonthID` recalculates the value if `primitivePubl
 
 With these two methods, `publishMonthID` is associated with `publishDate` and always stays current.
 
-In the case where `publishMonthID` is [`Using Key-Value Observing in Swift`](https://developer.apple.com/documentation/Swift/using-key-value-observing-in-swift), the following code ensures that the observations are triggered when `publishDate` changes.
+In the case where `publishMonthID` is [`Using Key-Value Observing in Swift`](https://developer.apple.com/documentation/swift/using-key-value-observing-in-swift), the following code ensures that the observations are triggered when `publishDate` changes.
 
 ```swift
 class func keyPathsForValuesAffectingPublishMonthID() -> Set<String> {

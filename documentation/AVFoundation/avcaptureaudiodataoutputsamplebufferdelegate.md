@@ -33,7 +33,7 @@ The delegate of an [`AVCaptureAudioDataOutput`](avcaptureaudiodataoutput.md) obj
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

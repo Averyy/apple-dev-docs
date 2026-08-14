@@ -30,12 +30,12 @@ This method applies the Droste filter to an image. This effect creates a Droste 
 The Droste filter uses the following properties:
 
 - **`inputImage`**: An image with the type [`CIImage`](ciimage.md).
-- **`rotation`**: A `float` representing the angle of the rotation, in radians, as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
-- **`zoom`**: A `float` representing the zoom of the effect as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
-- **`periodicity`**: A float representing the amount of intervals as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
-- **`inputInsetPoint1`**: A [`CGPoint`](https://developer.apple.com/documentation/CoreFoundation/CGPoint) representing the x and y position that defines the first inset point.
-- **`inputInsetPoint0`**: A [`CGPoint`](https://developer.apple.com/documentation/CoreFoundation/CGPoint) representing the x and y position that defines the second inset point.
-- **`inputStrands`**: A float representing the amount of strands as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+- **`rotation`**: A `float` representing the angle of the rotation, in radians, as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
+- **`zoom`**: A `float` representing the zoom of the effect as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
+- **`periodicity`**: A float representing the amount of intervals as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
+- **`inputInsetPoint1`**: A [`CGPoint`](https://developer.apple.com/documentation/corefoundation/cgpoint) representing the x and y position that defines the first inset point.
+- **`inputInsetPoint0`**: A [`CGPoint`](https://developer.apple.com/documentation/corefoundation/cgpoint) representing the x and y position that defines the second inset point.
+- **`inputStrands`**: A float representing the amount of strands as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
 
 The following code creates a filter that results in the image becoming a repeated, scaled pattern:
 
@@ -59,7 +59,7 @@ func drosteFilter(inputImage: CIImage) -> CIImage {
 }
 ```
 
-![Two images arranged horizontally. The left image contains a photograph of a vineyard with a partially cloudy sky. The right image shows the result of applying a Droste filter. A portion of the image has been rotated and then repeatedly scaled.](https://docs-assets.developer.apple.com/published/5199556d6ce6d0dfbf643d23a2d24423/media-4407275%402x.png)
+![Two images arranged horizontally. The left image contains a photograph of a vineyard with a partially cloudy sky. The right image shows the result of applying a Droste filter. A portion of the image has been rotated and then repeatedly scaled.](/images/com.apple.coreimage/media-4407275@2x.png)
 
 ## See Also
 

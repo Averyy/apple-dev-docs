@@ -20,7 +20,7 @@ var externalMetadata: [AVMetadataItem] { get set }
 
 #### Discussion
 
-[`AVPlayerViewController`](https://developer.apple.com/documentation/AVKit/AVPlayerViewController) supports displaying the following metadata identifiers:
+[`AVPlayerViewController`](https://developer.apple.com/documentation/avkit/avplayerviewcontroller) supports displaying the following metadata identifiers:
 
 - [`commonKeyTitle`](avmetadatakey/commonkeytitle.md)
 - [`iTunesMetadataTrackSubTitle`](avmetadataidentifier/itunesmetadatatracksubtitle.md)

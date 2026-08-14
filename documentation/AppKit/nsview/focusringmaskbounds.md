@@ -16,7 +16,7 @@ var focusRingMaskBounds: NSRect { get }
 
 #### Discussion
 
-The rectangle in this property is specified relative to the view’s interior (bounds) coordinate space. The mask bounds allows the focus ring’s overall size and position to be determined before it is drawn. Override this property if your view requires the display of a focus ring. The default value of this property is [`NSZeroRect`](https://developer.apple.com/documentation/Foundation/NSZeroRect).
+The rectangle in this property is specified relative to the view’s interior (bounds) coordinate space. The mask bounds allows the focus ring’s overall size and position to be determined before it is drawn. Override this property if your view requires the display of a focus ring. The default value of this property is [`NSZeroRect`](https://developer.apple.com/documentation/foundation/nszerorect).
 
 > **Note**:  The information provided by this property enables Accessibility to identify selected subelements for zoom tracking, so it is important that this method provide a reasonably tight bounding box and that the [`noteFocusRingMaskChanged()`](nsview/notefocusringmaskchanged().md) method is called as described.
 

@@ -51,7 +51,7 @@ A process called `bootstrap_check_in()` to register a named service port with la
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../Swift/BitwiseCopyable.md)
+- [BitwiseCopyable](../swift/bitwisecopyable.md)
 
 
 ---

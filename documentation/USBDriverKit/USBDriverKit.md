@@ -12,17 +12,17 @@ Develop drivers for USB-based devices.
 
 Use the [`USBDriverKit`](USBDriverKit.md) framework to develop drivers for custom or non-class-compliant USB devices for use with macOS. The objects in this framework serve as providers for your driver. Use them as is to access the device configurations, interfaces, and endpoints of the USB device. Each object provides methods for fetching any needed descriptors from the USB device, and for initiating requests to perform your driver’s custom behaviors.
 
-Develop your driver by subclassing [`IOService`](https://developer.apple.com/documentation/DriverKit/IOService) in the [`DriverKit`](https://developer.apple.com/documentation/DriverKit) framework. On macOS, use the [`System Extensions`](https://developer.apple.com/documentation/SystemExtensions) framework to install and upgrade your driver. On iPadOS, the system automatically discovers and upgrades drivers along with their host apps.
+Develop your driver by subclassing [`IOService`](https://developer.apple.com/documentation/driverkit/ioservice) in the [`DriverKit`](https://developer.apple.com/documentation/driverkit) framework. On macOS, use the [`System Extensions`](https://developer.apple.com/documentation/systemextensions) framework to install and upgrade your driver. On iPadOS, the system automatically discovers and upgrades drivers along with their host apps.
 
 > **Note**:  USBDriverKit is available on macOS for Intel and Apple Silicon devices, and on iPadOS for devices with an M-series chip.
 
 ## Topics
 
 ### Essentials
-- [com.apple.developer.driverkit.transport.usb](../BundleResources/Entitlements/com.apple.developer.driverkit.transport.usb.md)
+- [com.apple.developer.driverkit.transport.usb](../bundleresources/entitlements/com.apple.developer.driverkit.transport.usb.md)
   An array of dictionaries that identify the USB devices the driver supports.
 ### Samples
-- [DriverKit sample code](../DriverKit/driverkit-sample-code.md)
+- [DriverKit sample code](../driverkit/driverkit-sample-code.md)
   Explore projects that demonstrate how to write macOS device drivers with the DriverKit family of frameworks.
 ### Providers
 - [IOUSBHostInterface](iousbhostinterface.md)

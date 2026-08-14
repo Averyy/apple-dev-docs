@@ -10,7 +10,7 @@ vDSP provides functions for decimating a signal. A decimated signal has a lower 
 
 In the following pair of images, the original signal on the left contains 1024 samples. After decimation by a factor of two, the result on the right contains 512 samples.
 
-![Diagram showing two signals. The original signal is on the left. The decimated signal, on the right, has the same shape, but is half the width.](https://docs-assets.developer.apple.com/published/88c6aff1a721e1dba492922b19e4077a/media-3123032%402x.png)
+![Diagram showing two signals. The original signal is on the left. The decimated signal, on the right, has the same shape, but is half the width.](/images/com.apple.accelerate/media-3123032@2x.png)
 
 ##### Create the Input Signal
 
@@ -26,7 +26,7 @@ let inputSignal = (0 ..< inputLength).map {
 
 The following image shows a visualization of the values in `inputSignal`:
 
-![A line graph showing the original signal as a composite sine wave.](https://docs-assets.developer.apple.com/published/5a9989cc916da8e5bffc0abf9783c63e/media-3122882%402x.png)
+![A line graph showing the original signal as a composite sine wave.](/images/com.apple.accelerate/media-3122882@2x.png)
 
 vDSP provides the single-precision function [`downsample(_:decimationFactor:filter:)`](vdsp/downsample(_:decimationfactor:filter:)-40d8o.md) and the double-precision function [`downsample(_:decimationFactor:filter:)`](vdsp/downsample(_:decimationfactor:filter:)-1o8it.md) to decimate the elements in an array. These function wrap [`vDSP_desamp`](vdsp_desamp.md) and [`vDSP_desampD`](vdsp_desampd.md), respectively.
 
@@ -53,15 +53,15 @@ let originalSignal: [Float] = [10, 15, 20, 25, 50, 25, 20, 15, 10,
 
 The following images visualize the original and decimated signals and illustrate the effects of different antialiasing filters. The graph below visualizes the signal.
 
-![A line graph showing eighteen points that are joined by lines. The lines form two peaks.](https://docs-assets.developer.apple.com/published/425307266170fc8ad1522c480a5419c7/media-3122893%402x.png)
+![A line graph showing eighteen points that are joined by lines. The lines form two peaks.](/images/com.apple.accelerate/media-3122893@2x.png)
 
 A filter that contains a single value `[1.0]` combined with a decimation factor of `2` will sample only the even values of the original signal. The decimation functions return a result that misses the second `50` at position `13`, as shown below.
 
-![Diagram showing nine points that are joined by lines. The lines form two peaks, but the peak on the right is truncated.](https://docs-assets.developer.apple.com/published/3ea2758cd04e40861c0ef9f16bff78df/media-3122895%402x.png)
+![Diagram showing nine points that are joined by lines. The lines form two peaks, but the peak on the right is truncated.](/images/com.apple.accelerate/media-3122895@2x.png)
 
 However, a filter with two values, `[0.5, 0.5]` considers all values in the original signal, as illustrated below.
 
-![Diagram showing nine points that are joined by lines. The lines form two fully-formed peaks.](https://docs-assets.developer.apple.com/published/3c0d9503f5944e2dcd47664e4f8ed157/media-3122894%402x.png)
+![Diagram showing nine points that are joined by lines. The lines form two fully-formed peaks.](/images/com.apple.accelerate/media-3122894@2x.png)
 
 ##### Perform the Decimation
 
@@ -77,7 +77,7 @@ let outputSignal = vDSP.downsample(inputSignal,
 
 On return, `outputSignal` contains the result.
 
-![Diagram showing the decimated signal as a composite sine wave that is half the width of the original signal.](https://docs-assets.developer.apple.com/published/45a2e86d0dfde9ed4a44839999f3be64/media-3122887%402x.png)
+![Diagram showing the decimated signal as a composite sine wave that is half the width of the original signal.](/images/com.apple.accelerate/media-3122887@2x.png)
 
 ## See Also
 

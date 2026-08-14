@@ -41,7 +41,7 @@ Use texture view pools to create lightweight texture view objects of [`MTLTextur
 
 ### Inherits From
 - [MTLResourceViewPool](mtlresourceviewpool.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

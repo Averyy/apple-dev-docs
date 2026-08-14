@@ -18,9 +18,9 @@ Uploading an app archive that contains the full app and the App Clip works just 
 2. Choose App Store Connect as the distribution method, then upload the app.
 3. To distribute the app that features an App Clip to testers with [`TestFlight`](https://developer.apple.comhttps://developer.apple.com/testflight/) or publish it on the App Store, visit [`App Store Connect`](https://developer.apple.comhttps://appstoreconnect.apple.com/login).
 
-![Screenshot showing the sheet for choosing the distribution method; App Store Connect is selected.](https://docs-assets.developer.apple.com/published/be6cf7baabaff8af99d82917df0ca91f/media-3678139%402x.png)
+![Screenshot showing the sheet for choosing the distribution method; App Store Connect is selected.](/images/com.apple.appclip/media-3678139@2x.png)
 
-For additional information, see [`Testing the launch experience of your App Clip`](testing-the-launch-experience-of-your-app-clip.md) and [`Distributing your app for beta testing and releases`](https://developer.apple.com/documentation/Xcode/distributing-your-app-for-beta-testing-and-releases).
+For additional information, see [`Testing the launch experience of your App Clip`](testing-the-launch-experience-of-your-app-clip.md) and [`Distributing your app for beta testing and releases`](https://developer.apple.com/documentation/xcode/distributing-your-app-for-beta-testing-and-releases).
 
 
 ---

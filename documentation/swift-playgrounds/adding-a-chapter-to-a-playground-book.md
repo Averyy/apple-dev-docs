@@ -16,7 +16,7 @@ In Xcode, create a property list file called `Manifest.plist` in the new chapter
 
 The following image shows the example chapter, “First Chapter,” which contains two pages.
 
-![Screenshot showing the Xcode property list editor, which is displaying the “Name” and “Pages” property list keys of a chapter manifest.](https://docs-assets.developer.apple.com/published/34e5faf902cb04340cbd6bba25d23be8/adding-a-chapter-to-a-playground-book-1%402x.png)
+![Screenshot showing the Xcode property list editor, which is displaying the “Name” and “Pages” property list keys of a chapter manifest.](/images/com.apple.Swift-Playgrounds/adding-a-chapter-to-a-playground-book-1@2x.png)
 
 ##### Name the Chapter
 

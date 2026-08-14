@@ -10,9 +10,9 @@ Browse notable changes in [`Symbols`](https://developer.apple.comhttps://develop
 
 #### June 2024
 
-- Make symbols even more expressive with new animations. Find new ways to respond to people’s input, convey status changes, and signal ongoing activity with [`WiggleSymbolEffect`](https://developer.apple.com/documentation/Symbols/WiggleSymbolEffect), [`RotateSymbolEffect`](https://developer.apple.com/documentation/Symbols/RotateSymbolEffect), and [`BreatheSymbolEffect`](https://developer.apple.com/documentation/Symbols/BreatheSymbolEffect).
-- Allow symbols to more intelligently transition between related variants with [`magic(fallback:)`](https://developer.apple.com/documentation/Symbols/ReplaceSymbolEffect/magic(fallback:)). Slashes can now draw on and off, and badges can appear and disappear, or be replaced independently of the base symbol.
-- Use [`repeat(_:)`](https://developer.apple.com/documentation/Symbols/SymbolEffectOptions/repeat(_:)-316cr) for new playback options for repeating animations. Apply a delay between repetitions, and use new, continuous repeat behavior with [`continuous`](https://developer.apple.com/documentation/Symbols/SymbolEffectOptions/RepeatBehavior/continuous) to produce smoother animations when repeating indefinitely.
+- Make symbols even more expressive with new animations. Find new ways to respond to people’s input, convey status changes, and signal ongoing activity with [`WiggleSymbolEffect`](https://developer.apple.com/documentation/symbols/wigglesymboleffect), [`RotateSymbolEffect`](https://developer.apple.com/documentation/symbols/rotatesymboleffect), and [`BreatheSymbolEffect`](https://developer.apple.com/documentation/symbols/breathesymboleffect).
+- Allow symbols to more intelligently transition between related variants with [`magic(fallback:)`](https://developer.apple.com/documentation/symbols/replacesymboleffect/magic(fallback:)). Slashes can now draw on and off, and badges can appear and disappear, or be replaced independently of the base symbol.
+- Use [`repeat(_:)`](https://developer.apple.com/documentation/symbols/symboleffectoptions/repeat(_:)-316cr) for new playback options for repeating animations. Apply a delay between repetitions, and use new, continuous repeat behavior with [`continuous`](https://developer.apple.com/documentation/symbols/symboleffectoptions/repeatbehavior/continuous) to produce smoother animations when repeating indefinitely.
 
 ## See Also
 

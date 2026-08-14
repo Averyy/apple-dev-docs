@@ -17,15 +17,15 @@ This sample app shows you how to use AU plug-ins in your iOS and macOS apps. You
 
 The sample app has targets for iOS and macOS. Both versions have three primary classes.
 
-![Sample App Architecture](https://docs-assets.developer.apple.com/published/6a43fb8e2ca660886a2d0941b0ae8ba7/architecture.png)
+![Sample App Architecture](/images/com.apple.audiotoolbox/architecture.png)
 
 - `HostViewController` and its associated Storyboard provide the user interface.
 - `AudioUnitManager` manages the interactions with the effect and instrument plug-ins.
-- `SimplePlayEngine` uses [`AVAudioEngine`](https://developer.apple.com/documentation/AVFAudio/AVAudioEngine) to play back audio samples and MIDI data.
+- `SimplePlayEngine` uses [`AVAudioEngine`](https://developer.apple.com/documentation/avfaudio/avaudioengine) to play back audio samples and MIDI data.
 
 ##### Find Audio Units
 
-You find Audio Units that are registered with the host system by creating an [`AudioComponentDescription`](audiocomponentdescription.md) defining your search criteria. The sample app searches for component types, either audio effects ([`kAudioUnitType_Effect`](kaudiounittype_effect.md)) or MIDI instruments ([`kAudioUnitType_MusicDevice`](kaudiounittype_musicdevice.md)). You can also pass values for the other fields of `AudioComponentDescription` or pass `0` as a wildcard matching all values. Get the shared instance of [`AVAudioUnitComponentManager`](https://developer.apple.com/documentation/AVFAudio/AVAudioUnitComponentManager) and call its [`components(matching:)`](https://developer.apple.com/documentation/AVFAudio/AVAudioUnitComponentManager/components(matching:)-9qt94) method to find the components matching your search criteria.
+You find Audio Units that are registered with the host system by creating an [`AudioComponentDescription`](audiocomponentdescription.md) defining your search criteria. The sample app searches for component types, either audio effects ([`kAudioUnitType_Effect`](kaudiounittype_effect.md)) or MIDI instruments ([`kAudioUnitType_MusicDevice`](kaudiounittype_musicdevice.md)). You can also pass values for the other fields of `AudioComponentDescription` or pass `0` as a wildcard matching all values. Get the shared instance of [`AVAudioUnitComponentManager`](https://developer.apple.com/documentation/avfaudio/avaudiounitcomponentmanager) and call its [`components(matching:)`](https://developer.apple.com/documentation/avfaudio/avaudiounitcomponentmanager/components(matching:)-9qt94) method to find the components matching your search criteria.
 
 ```swift
 // Make a component description matching any Audio Unit.
@@ -38,7 +38,7 @@ let description = AudioComponentDescription(componentType: 0,
 let components = AVAudioUnitComponentManager.shared().components(matching: description)
 ```
 
-This method returns an array of [`AVAudioUnitComponent`](https://developer.apple.com/documentation/AVFAudio/AVAudioUnitComponent) objects matching the component description, or an empty array if it found no matches. You can access a component’s properties to determine its capabilities and find identifying values, such as its name and manufacturer, for display in your user interface.
+This method returns an array of [`AVAudioUnitComponent`](https://developer.apple.com/documentation/avfaudio/avaudiounitcomponent) objects matching the component description, or an empty array if it found no matches. You can access a component’s properties to determine its capabilities and find identifying values, such as its name and manufacturer, for display in your user interface.
 
 ##### Instantiate Audio Units
 
@@ -46,7 +46,7 @@ When the user selects an Audio Unit in the user interface, your app needs to fin
 
 iOS supports third-party plug-ins built using the latest Audio Unit standard (AUv3), which is based on the [`App Extensions`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Conceptual/ExtensibilityPG) model. Like all App Extensions in iOS, AUv3 plug-ins run *out-of-process*, which means they run in a dedicated process outside your app, and communication with the extension is done over interprocess communication (IPC).
 
-You instantiate an AU by calling the [`instantiate(with:options:completionHandler:)`](https://developer.apple.com/documentation/AVFAudio/AVAudioUnit/instantiate(with:options:completionHandler:)) method, passing it the component description. This method asynchronously returns the instantiated `AVAudioUnit` or an `Error` if the process failed. You must avoid blocking your application’s main thread when instantiating an Audio Unit.
+You instantiate an AU by calling the [`instantiate(with:options:completionHandler:)`](https://developer.apple.com/documentation/avfaudio/avaudiounit/instantiate(with:options:completionhandler:)) method, passing it the component description. This method asynchronously returns the instantiated `AVAudioUnit` or an `Error` if the process failed. You must avoid blocking your application’s main thread when instantiating an Audio Unit.
 
 ```swift
 // Instantiate the Audio Unit
@@ -70,7 +70,7 @@ AVAudioUnit.instantiate(with: description, options: options) { avAudioUnit, erro
 
 ##### Present an Audio Units Custom View
 
-A plug-in can provide a custom user interface to control its parameters. You get the custom view by asking the plug-in for its view controller, which returns an instance of [`AUViewController`](https://developer.apple.com/documentation/CoreAudioKit/AUViewController), or `nil` if it doesn’t provide a custom view. You add the view controller’s view to your user interface using the appropriate approach for your platform.
+A plug-in can provide a custom user interface to control its parameters. You get the custom view by asking the plug-in for its view controller, which returns an instance of [`AUViewController`](https://developer.apple.com/documentation/coreaudiokit/auviewcontroller), or `nil` if it doesn’t provide a custom view. You add the view controller’s view to your user interface using the appropriate approach for your platform.
 
 ```swift
 func loadAudioUnitViewController(completion: @escaping (ViewController?) -> Void) {
@@ -86,7 +86,7 @@ func loadAudioUnitViewController(completion: @escaping (ViewController?) -> Void
 
 ##### Select Alternative View Configurations
 
-All AU plug-ins can provide a custom user interface, but AUv3 plug-ins may also provide alternative views. A host app can support multiple view configurations. For example, an iOS app may provide compact and expanded views and switch between them depending on the device size or orientation. You define one or more supported view configurations using the [`AUAudioUnitViewConfiguration`](https://developer.apple.com/documentation/CoreAudioKit/AUAudioUnitViewConfiguration) class.
+All AU plug-ins can provide a custom user interface, but AUv3 plug-ins may also provide alternative views. A host app can support multiple view configurations. For example, an iOS app may provide compact and expanded views and switch between them depending on the device size or orientation. You define one or more supported view configurations using the [`AUAudioUnitViewConfiguration`](https://developer.apple.com/documentation/coreaudiokit/auaudiounitviewconfiguration) class.
 
 ```swift
 private var currentViewConfigurationIndex = 1
@@ -99,7 +99,7 @@ private var viewConfigurations: [AUAudioUnitViewConfiguration] = {
 }()
 ```
 
-> **Note**: The view configuration object’s [`hostHasController`](https://developer.apple.com/documentation/CoreAudioKit/AUAudioUnitViewConfiguration/hostHasController) property indicates whether the host app should show its control surface for the view configuration. The host app should respect this setting and update its user interface accordingly.
+> **Note**: The view configuration object’s [`hostHasController`](https://developer.apple.com/documentation/coreaudiokit/auaudiounitviewconfiguration/hosthascontroller) property indicates whether the host app should show its control surface for the view configuration. The host app should respect this setting and update its user interface accordingly.
 
 The host can ask the plug-in which, if any, custom view configurations it supports.
 
@@ -197,9 +197,9 @@ public var currentPreset: Preset? {
 
 ## See Also
 
-- [Creating an audio unit extension](../AVFAudio/creating-an-audio-unit-extension.md)
+- [Creating an audio unit extension](../avfaudio/creating-an-audio-unit-extension.md)
   Build an extension by using an Xcode template.
-- [Creating custom audio effects](../AVFAudio/creating-custom-audio-effects.md)
+- [Creating custom audio effects](../avfaudio/creating-custom-audio-effects.md)
   Add custom audio-effect processing to apps like Logic Pro X and GarageBand by creating Audio Unit (AU) plug-ins.
 - [Debugging Out-of-Process Audio Units on Apple Silicon](debugging-out-of-process-audio-units-on-apple-silicon.md)
   Connect to out-of-process audio units using the Xcode debugger.

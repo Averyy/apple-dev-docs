@@ -6,7 +6,7 @@ Add chapter markers to enable users to quickly navigate your content.
 
 #### Overview
 
-Chapter markers enable users to quickly navigate your content. [`AVPlayerViewController`](https://developer.apple.com/documentation/AVKit/AVPlayerViewController) automatically presents a chapter-selection interface if it finds chapter markers in the currently played asset. You can also directly retrieve this data whenever you want to create your own custom chapter-selection interface.
+Chapter markers enable users to quickly navigate your content. [`AVPlayerViewController`](https://developer.apple.com/documentation/avkit/avplayerviewcontroller) automatically presents a chapter-selection interface if it finds chapter markers in the currently played asset. You can also directly retrieve this data whenever you want to create your own custom chapter-selection interface.
 
 ##### Retrieve the Timed Metadata
 
@@ -32,7 +32,7 @@ asset.loadValuesAsynchronously(forKeys: [chapterLocalesKey]) {
 
 ##### Convert Timed Metadata Into Chapter Data
 
-The value returned from the methods described above is an array of [`AVTimedMetadataGroup`](avtimedmetadatagroup.md) objects, each representing an individual chapter marker. An [`AVTimedMetadataGroup`](avtimedmetadatagroup.md) object contains a [`CMTimeRange`](https://developer.apple.com/documentation/CoreMedia/CMTimeRange), defining the time range to which its metadata applies, an array of [`AVMetadataItem`](avmetadataitem.md) objects representing the chapter’s title, and optionally, its thumbnail image. The following example shows how to convert the [`AVTimedMetadataGroup`](avtimedmetadatagroup.md) data into an array of custom model objects, called `Chapter`, to pass to the app’s view layer.
+The value returned from the methods described above is an array of [`AVTimedMetadataGroup`](avtimedmetadatagroup.md) objects, each representing an individual chapter marker. An [`AVTimedMetadataGroup`](avtimedmetadatagroup.md) object contains a [`CMTimeRange`](https://developer.apple.com/documentation/coremedia/cmtimerange), defining the time range to which its metadata applies, an array of [`AVMetadataItem`](avmetadataitem.md) objects representing the chapter’s title, and optionally, its thumbnail image. The following example shows how to convert the [`AVTimedMetadataGroup`](avtimedmetadatagroup.md) data into an array of custom model objects, called `Chapter`, to pass to the app’s view layer.
 
 ```swift
 func convertTimedMetadataGroupsToChapters(groups: [AVTimedMetadataGroup]) -> [Chapter] {

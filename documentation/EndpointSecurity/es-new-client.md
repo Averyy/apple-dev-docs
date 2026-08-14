@@ -35,7 +35,7 @@ When you no longer need to receive Endpoint Security messages, destroy the clien
 
 ## See Also
 
-- [com.apple.developer.endpoint-security.client](../BundleResources/Entitlements/com.apple.developer.endpoint-security.client.md)
+- [com.apple.developer.endpoint-security.client](../bundleresources/entitlements/com.apple.developer.endpoint-security.client.md)
   The entitlement required to monitor system events for potentially malicious activity.
 - [typealias es_handler_block_t](es_handler_block_t.md)
   A block that handles a message received from Endpoint Security.

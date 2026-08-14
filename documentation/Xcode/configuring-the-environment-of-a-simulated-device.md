@@ -30,7 +30,7 @@ To quickly verify that your interface adjusts for different device sizes, you ca
 
 To enter resize mode, run your app on the simulator and click the “Enter resize mode” button in the canvas toolbar. Then drag a handle on the top, bottom, or sides of the simulator to resize the screen. Alternatively, enter dimensions for the screen below the simulator. Device Hub snaps the screen size to the nearest valid size. When you are done, click “Exit resize mode.”
 
-![A screenshot of the Device Hub showing an app running in an iPhone simulator with the resize mode enabled and the handles appearing around the sides of the device.](https://docs-assets.developer.apple.com/published/f8196d8e075a578565940e4c1f64a548/resize-iphone-canvas%402x.png)
+![A screenshot of the Device Hub showing an app running in an iPhone simulator with the resize mode enabled and the handles appearing around the sides of the device.](/images/com.apple.Xcode/resize-iphone-canvas@2x.png)
 
 #### Set the Audio Input and Output
 

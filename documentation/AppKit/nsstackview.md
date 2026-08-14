@@ -24,7 +24,7 @@ A stack view supports vertical and horizontal layouts and interacts dynamically 
 
 Stack views are nestable: a stack view is a valid element in the [`views`](nsstackview/views.md) array of another stack view.
 
-> ❗ **Important**:  Do not add views or constraints to a stack view’s private views. A stack view’s private views might change in future versions of macOS and are not guaranteed to be encoded or decoded with the [`NSCoder`](https://developer.apple.com/documentation/Foundation/NSCoder) class.
+> ❗ **Important**:  Do not add views or constraints to a stack view’s private views. A stack view’s private views might change in future versions of macOS and are not guaranteed to be encoded or decoded with the [`NSCoder`](https://developer.apple.com/documentation/foundation/nscoder) class.
 
 For more information on [`NSStackView`](nsstackview.md), see [`Organize Your User Interface with a Stack View`](organize-your-user-interface-with-a-stack-view.md).
 
@@ -42,7 +42,7 @@ To allow views to detach, set the so-called *clipping resistance* for a stack vi
 
 You can influence which views detach first (and reattach last). Do this by setting the so-called *visibility priority* for each view whose detachment order you want to specify. A view with a lower visibility priority detaches before one with a higher priority, and reattaches after it. See the [`NSStackView.VisibilityPriority`](nsstackview/visibilitypriority.md) enumeration and the [`setVisibilityPriority(_:for:)`](nsstackview/setvisibilitypriority(_:for:).md) method.
 
-To explicitly detach a view from a stack view, call the [`setVisibilityPriority(_:for:)`](nsstackview/setvisibilitypriority(_:for:).md) method with a value of [`notVisible`](nsstackview/visibilitypriority/notvisible.md). To explicitly reattach a view to a stack view, call the same method with a value of [`mustHold`](nsstackview/visibilitypriority/musthold.md). If you hide a view that belongs to a stack view (by setting the view’s [`isHidden`](nsview/ishidden.md) property to [`true`](https://developer.apple.com/documentation/Swift/true)), the view detaches from the stack view by default. Use the [`detachesHiddenViews`](nsstackview/detacheshiddenviews.md) property to change the default behavior.
+To explicitly detach a view from a stack view, call the [`setVisibilityPriority(_:for:)`](nsstackview/setvisibilitypriority(_:for:).md) method with a value of [`notVisible`](nsstackview/visibilitypriority/notvisible.md). To explicitly reattach a view to a stack view, call the same method with a value of [`mustHold`](nsstackview/visibilitypriority/musthold.md). If you hide a view that belongs to a stack view (by setting the view’s [`isHidden`](nsview/ishidden.md) property to [`true`](https://developer.apple.com/documentation/swift/true)), the view detaches from the stack view by default. Use the [`detachesHiddenViews`](nsstackview/detacheshiddenviews.md) property to change the default behavior.
 
 The system calls a stack view delegate method when a view is about to be detached and when a view has been reattached, giving you the opportunity to run code at those times. See [`NSStackViewDelegate`](nsstackviewdelegate.md).
 
@@ -129,24 +129,24 @@ The system calls a stack view delegate method when a view is about to be detache
 ### Inherits From
 - [NSView](nsview.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
 - [NSAccessibilityElementProtocol](nsaccessibilityelementprotocol.md)
 - [NSAccessibilityProtocol](nsaccessibilityprotocol.md)
 - [NSAnimatablePropertyContainer](nsanimatablepropertycontainer.md)
 - [NSAppearanceCustomization](nsappearancecustomization.md)
-- [NSCoding](../Foundation/NSCoding.md)
+- [NSCoding](../foundation/nscoding.md)
 - [NSDraggingDestination](nsdraggingdestination.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 - [NSStandardKeyBindingResponding](nsstandardkeybindingresponding.md)
 - [NSTouchBarProvider](nstouchbarprovider.md)
 - [NSUserActivityRestoring](nsuseractivityrestoring.md)
 - [NSUserInterfaceItemIdentification](nsuserinterfaceitemidentification.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 
 ---

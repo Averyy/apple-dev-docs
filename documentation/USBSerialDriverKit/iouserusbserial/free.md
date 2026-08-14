@@ -16,7 +16,7 @@ virtual void free();
 
 #### Discussion
 
-Use this method to deallocate any memory associated with your service, or perform other cleanup tasks. The system calls this method at some point after it calls your service’s [`Stop`](https://developer.apple.com/documentation/SerialDriverKit/IOUserSerial/Stop) method.
+Use this method to deallocate any memory associated with your service, or perform other cleanup tasks. The system calls this method at some point after it calls your service’s [`Stop`](https://developer.apple.com/documentation/serialdriverkit/iouserserial/stop) method.
 
 Always call `super` at the end of your implementation of this method.
 

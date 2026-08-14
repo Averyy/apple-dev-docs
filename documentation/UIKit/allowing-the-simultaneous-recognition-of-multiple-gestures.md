@@ -8,7 +8,7 @@ Learn how to use a delegate object to allow detection of more than one gesture a
 
 There are times when it makes sense to allow the simultaneous recognition of multiple gestures. The following image shows an app that allows people to drag, scale, and rotate three views onscreen. Each view maintains its own unique set of pan, pinch, and rotate gesture recognizers, and it’s possible for all three of a view’s gesture recognizers to perform their actions simultaneously.
 
-![A screenshot of an app that demonstrates how a person can use rotation, pinch and pan gestures simultaneously to control the appearance of a pink square.](https://docs-assets.developer.apple.com/published/8559fcb4402d0499f4e131301b8d0e58/media-2880130%402x.png)
+![A screenshot of an app that demonstrates how a person can use rotation, pinch and pan gestures simultaneously to control the appearance of a pink square.](/images/com.apple.uikit/media-2880130@2x.png)
 
 To allow a gesture recognizer to operate simultaneously with other gestures, assign a delegate object that implements the [`gestureRecognizer(_:shouldRecognizeSimultaneouslyWith:)`](uigesturerecognizerdelegate/gesturerecognizer(_:shouldrecognizesimultaneouslywith:).md) method to it. UIKit calls this method for pairs of gesture recognizers attached to the same view. Returning `true` allows both gestures to process events simultaneously.
 

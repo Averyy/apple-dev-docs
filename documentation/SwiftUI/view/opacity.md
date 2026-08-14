@@ -48,7 +48,7 @@ struct Opacity: View {
 }
 ```
 
-![Two overlaid rectangles, where the topmost has its opacity set to 50%,](https://docs-assets.developer.apple.com/published/317e3ae0fc1ddef46cb3052cd7840ff2/SwiftUI-View-opacity%402x.png)
+![Two overlaid rectangles, where the topmost has its opacity set to 50%,](/images/com.apple.SwiftUI/SwiftUI-View-opacity@2x.png)
 
 ## Parameters
 

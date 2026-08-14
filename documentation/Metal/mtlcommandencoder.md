@@ -65,7 +65,7 @@ You can call the [`insertDebugSignpost(_:)`](mtlcommandencoder/insertdebugsignpo
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 ### Inherited By
 - [MTLAccelerationStructureCommandEncoder](mtlaccelerationstructurecommandencoder.md)
 - [MTLBlitCommandEncoder](mtlblitcommandencoder.md)

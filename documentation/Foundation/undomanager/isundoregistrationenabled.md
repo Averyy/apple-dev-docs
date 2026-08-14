@@ -22,9 +22,9 @@ var isUndoRegistrationEnabled: Bool { get }
 
 #### Discussion
 
-[`true`](https://developer.apple.com/documentation/Swift/true) if registration is enabled; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
+[`true`](https://developer.apple.com/documentation/swift/true) if registration is enabled; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
 
-The default is [`true`](https://developer.apple.com/documentation/Swift/true).
+The default is [`true`](https://developer.apple.com/documentation/swift/true).
 
 ## See Also
 

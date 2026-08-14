@@ -15,7 +15,7 @@
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObject](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

@@ -47,7 +47,7 @@ VStack(spacing: 20) {
 }
 ```
 
-![A VStack showing two child views: one VStack containing a default accented button, and a second VStack where the VStack has a purple accent color applied. The accent color modifies the enclosed button and slider, but not the color of a Text item used as a label for the slider.](https://docs-assets.developer.apple.com/published/1d27a7cdfdf68ea5c2890abcd08ebc34/View-accentColor-1%402x.png)
+![A VStack showing two child views: one VStack containing a default accented button, and a second VStack where the VStack has a purple accent color applied. The accent color modifies the enclosed button and slider, but not the color of a Text item used as a label for the slider.](/images/com.apple.SwiftUI/View-accentColor-1@2x.png)
 
 ## Parameters
 

@@ -6,13 +6,13 @@ Present additional content alongside your main media presentation using HTTP Liv
 
 #### Overview
 
-Media playback apps often present additional content such as legal text, content warnings, or advertisements alongside their main media content. One method is to use HTTP Live Streaming’s (HLS) support for serving stitched playlists. Stitched playlists let you combine multiple media playlists into a single, unified playlist that’s delivered to the client as a single stream. This stream provides a smooth playback experience to users, with no breaks or interruptions in the action when the player presents the interstitial content. For more information about including ad content in your HLS playlist, see [`Incorporating Ads into a Playlist`](https://developer.apple.com/documentation/HTTP-Live-Streaming/incorporating-ads-into-a-playlist).
+Media playback apps often present additional content such as legal text, content warnings, or advertisements alongside their main media content. One method is to use HTTP Live Streaming’s (HLS) support for serving stitched playlists. Stitched playlists let you combine multiple media playlists into a single, unified playlist that’s delivered to the client as a single stream. This stream provides a smooth playback experience to users, with no breaks or interruptions in the action when the player presents the interstitial content. For more information about including ad content in your HLS playlist, see [`Incorporating Ads into a Playlist`](https://developer.apple.com/documentation/http-live-streaming/incorporating-ads-into-a-playlist).
 
 ##### Define Interstitial Time Ranges
 
 AVKit in tvOS simplifies working with interstitial content delivered as part of a stitched playlist. You define the time ranges in your presentation that contain interstitial content. As the player encounters the time ranges during playback, you receive callbacks when they begin and end, giving you the opportunity to enforce business rules or capture analytics.
 
-[`AVPlayerItem`](https://developer.apple.com/documentation/AVFoundation/AVPlayerItem) in tvOS adds an [`interstitialTimeRanges`](https://developer.apple.com/documentation/AVFoundation/AVPlayerItem/interstitialTimeRanges) property that you set to an array of [`AVInterstitialTimeRange`](avinterstitialtimerange.md) objects that the system uses to annotate the timeline with break markers. Each object defines a [`CMTimeRange`](https://developer.apple.com/documentation/CoreMedia/CMTimeRange) marking the interstitial time range in your media’s timeline. The following code example shows how to create interstitial time ranges.
+[`AVPlayerItem`](https://developer.apple.com/documentation/avfoundation/avplayeritem) in tvOS adds an [`interstitialTimeRanges`](https://developer.apple.com/documentation/avfoundation/avplayeritem/interstitialtimeranges) property that you set to an array of [`AVInterstitialTimeRange`](avinterstitialtimerange.md) objects that the system uses to annotate the timeline with break markers. Each object defines a [`CMTimeRange`](https://developer.apple.com/documentation/coremedia/cmtimerange) marking the interstitial time range in your media’s timeline. The following code example shows how to create interstitial time ranges.
 
 ```swift
 func setupPlayback() {
@@ -40,7 +40,7 @@ private func makeInterstitialTimeRanges() -> [AVInterstitialTimeRange] {
 
 When you define interstitial time ranges, [`AVPlayerViewController`](avplayerviewcontroller.md) updates its user interface in two important ways, as shown below. First, the player represents any interstitial time ranges as small dots on the player’s timeline. This helps users understand where they are between interstitial breaks and helps orient them to where they are in the overall media timeline. Second, the player collapses interstitial time ranges from the time display. The current time and duration presented represent only your main content, providing a better sense of the primary media’s timeline.
 
-![An abstract representation of a video player with a timeline along the bottom and two interstitial time ranges highlighted.](https://docs-assets.developer.apple.com/published/40ac9c27ddd298f45c0dd2163fde476b/media-3921828%402x.png)
+![An abstract representation of a video player with a timeline along the bottom and two interstitial time ranges highlighted.](/images/com.apple.avkit/media-3921828@2x.png)
 
 > **Note**:  The player interface’s collapsing of time ranges is only visual. Any programmatic operations you perform, such as seeking, happen on the full asset timeline, inclusive of interstitial content.
 
@@ -95,9 +95,9 @@ For any forward seeks, the example code ensures that the user can’t skip past 
 
 tvOS 15 adds support for coordinating and observing playback of interstitial assets. Automatic handling of interstitial events allows the system to make smooth transitions between your main and interstitial content, and doesn’t require you to coordinate playback between the players.
 
-While an [`AVInterstitialTimeRange`](avinterstitialtimerange.md) can be any arbitrary time range in the media, an [`AVPlayerInterstitialEvent`](https://developer.apple.com/documentation/AVFoundation/AVPlayerInterstitialEvent) represents an HLS ad break or interstitial event. When you use [`AVPlayerInterstitialEvent`](https://developer.apple.com/documentation/AVFoundation/AVPlayerInterstitialEvent), AVKit internally enforces linear playback and other navigation restrictions based on the event type.
+While an [`AVInterstitialTimeRange`](avinterstitialtimerange.md) can be any arbitrary time range in the media, an [`AVPlayerInterstitialEvent`](https://developer.apple.com/documentation/avfoundation/avplayerinterstitialevent) represents an HLS ad break or interstitial event. When you use [`AVPlayerInterstitialEvent`](https://developer.apple.com/documentation/avfoundation/avplayerinterstitialevent), AVKit internally enforces linear playback and other navigation restrictions based on the event type.
 
-You use [`translatesPlayerInterstitialEvents`](https://developer.apple.com/documentation/AVFoundation/AVPlayerItem/translatesPlayerInterstitialEvents) to indicate whether AVKit should generate the value of [`interstitialTimeRanges`](https://developer.apple.com/documentation/AVFoundation/AVPlayerItem/interstitialTimeRanges) from [`AVPlayerInterstitialEvent`](https://developer.apple.com/documentation/AVFoundation/AVPlayerInterstitialEvent). When you play a stream that defines interstitial events, or when the client creates or modifies events using a [`AVPlayerInterstitialEventController`](https://developer.apple.com/documentation/AVFoundation/AVPlayerInterstitialEventController), the system populates interstitials. AVKit continues to update [`interstitialTimeRanges`](https://developer.apple.com/documentation/AVFoundation/AVPlayerItem/interstitialTimeRanges) when there are changes to the set of events.
+You use [`translatesPlayerInterstitialEvents`](https://developer.apple.com/documentation/avfoundation/avplayeritem/translatesplayerinterstitialevents) to indicate whether AVKit should generate the value of [`interstitialTimeRanges`](https://developer.apple.com/documentation/avfoundation/avplayeritem/interstitialtimeranges) from [`AVPlayerInterstitialEvent`](https://developer.apple.com/documentation/avfoundation/avplayerinterstitialevent). When you play a stream that defines interstitial events, or when the client creates or modifies events using a [`AVPlayerInterstitialEventController`](https://developer.apple.com/documentation/avfoundation/avplayerinterstitialeventcontroller), the system populates interstitials. AVKit continues to update [`interstitialTimeRanges`](https://developer.apple.com/documentation/avfoundation/avplayeritem/interstitialtimeranges) when there are changes to the set of events.
 
 On the server that distributes HLS content, use the `EXT-X-DATERANGE` tag to associate a date range with a set of attributes.
 
@@ -119,7 +119,7 @@ NotificationCenter.default.addObserver(
     }
 ```
 
-You can supplement interstitial events with custom attribute-value pairs. For example, imagine adding beacon positions and beacon URLs for advertisements delivered as an interstitial. Inspect [`userDefinedAttributes`](https://developer.apple.com/documentation/AVFoundation/AVPlayerInterstitialEvent/userDefinedAttributes) on your event to get the information.
+You can supplement interstitial events with custom attribute-value pairs. For example, imagine adding beacon positions and beacon URLs for advertisements delivered as an interstitial. Inspect [`userDefinedAttributes`](https://developer.apple.com/documentation/avfoundation/avplayerinterstitialevent/userdefinedattributes) on your event to get the information.
 
 ```swift
 if let currentEvent = observer.currentEvent {
@@ -133,7 +133,7 @@ if let currentEvent = observer.currentEvent {
 }
 ```
 
-If you don’t update to the latest SDK and begin using streams that contain [`AVPlayerInterstitialEventController`](https://developer.apple.com/documentation/AVFoundation/AVPlayerInterstitialEventController), you need to manage your own interstitials except for AirPlay.
+If you don’t update to the latest SDK and begin using streams that contain [`AVPlayerInterstitialEventController`](https://developer.apple.com/documentation/avfoundation/avplayerinterstitialeventcontroller), you need to manage your own interstitials except for AirPlay.
 
 ```swift
 let appInterstitials: [AVInterstitialTimeRange] = createMyInterstitials()

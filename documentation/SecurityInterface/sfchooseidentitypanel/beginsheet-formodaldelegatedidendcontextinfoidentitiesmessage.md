@@ -29,7 +29,7 @@ The delegate method has the following signature:
 The parameters for the delegate method are:
 
 - **`sheet`**: The window to which the sheet was attached.
-- **`returnCode`**: The result code indicating which button the user clicked: either [`NSFileHandlingPanelOKButton`](https://developer.apple.com/documentation/AppKit/NSFileHandlingPanelOKButton) or [`NSFileHandlingPanelCancelButton`](https://developer.apple.com/documentation/AppKit/NSFileHandlingPanelCancelButton).
+- **`returnCode`**: The result code indicating which button the user clicked: either [`NSFileHandlingPanelOKButton`](https://developer.apple.com/documentation/appkit/nsfilehandlingpanelokbutton) or [`NSFileHandlingPanelCancelButton`](https://developer.apple.com/documentation/appkit/nsfilehandlingpanelcancelbutton).
 - **`contextInfo`**: Client-defined contextual data that is passed in the `contextInfo` parameter of the `beginSheetForWindow:...` method.
 
 The sheet is dismissed on return from the `beginSheetForWindow:...` method.
@@ -40,7 +40,7 @@ The sheet is dismissed on return from the `beginSheetForWindow:...` method.
 - `delegate`: The delegate object in which the method specified in the `didEndSelector` parameter is implemented.
 - `didEndSelector`: A method selector for a delegate method called when the sheet has been dismissed. Implementation of this delegate method is optional.
 - `contextInfo`: A pointer to data that is passed to the delegate method. You can use this data pointer for any purpose you wish.
-- `identities`: An array of identity objects (objects of type [`SecIdentity`](https://developer.apple.com/documentation/Security/SecIdentity)). Use the [`SecIdentitySearchCopyNext`](https://developer.apple.com/documentation/Security/SecIdentitySearchCopyNext) function (in Security/SecIdentitySearch.h) to find identity objects.
+- `identities`: An array of identity objects (objects of type [`SecIdentity`](https://developer.apple.com/documentation/security/secidentity)). Use the [`SecIdentitySearchCopyNext`](https://developer.apple.com/documentation/security/secidentitysearchcopynext) function (in Security/SecIdentitySearch.h) to find identity objects.
 - `message`: A message string to display in the sheet.
 
 ## See Also

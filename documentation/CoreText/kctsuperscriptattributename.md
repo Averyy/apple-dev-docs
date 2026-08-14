@@ -22,7 +22,7 @@ let kCTSuperscriptAttributeName: CFString
 
 #### Discussion
 
-Value must be a [`CFNumber`](https://developer.apple.com/documentation/CoreFoundation/CFNumber) object. Default is integer value `0`. If supported by the specified font, a value of `1` enables superscripting and a value of `-1` enables subscripting.
+Value must be a [`CFNumber`](https://developer.apple.com/documentation/corefoundation/cfnumber) object. Default is integer value `0`. If supported by the specified font, a value of `1` enables superscripting and a value of `-1` enables subscripting.
 
 ## See Also
 

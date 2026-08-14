@@ -36,7 +36,7 @@ Your customers can review your app at any time on the App Store. To make it easi
 
 ## Parameters
 
-- `controller`: The [`NSViewController`](https://developer.apple.com/documentation/AppKit/NSViewController) that StoreKit uses to present the rating and review request interface.
+- `controller`: The [`NSViewController`](https://developer.apple.com/documentation/appkit/nsviewcontroller) that StoreKit uses to present the rating and review request interface.
 
 ## See Also
 

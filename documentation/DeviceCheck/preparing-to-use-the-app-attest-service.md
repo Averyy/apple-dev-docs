@@ -12,7 +12,7 @@ The App Attest service records device metrics that you can’t reset. To avoid a
 
 During development, you use a sandbox environment to test your adoption of App Attest. The App Attest service tracks the keys that you generate in this mode separately from the keys generated in production mode. This allows you to generate and attest any number of keys on a given device without polluting that device’s production key count.
 
-If instead you want to use the App Attest production servers during development, add the [`App Attest Environment`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.devicecheck.appattest-environment) entitlement to your app’s entitlements file, and set the associated value to `production`. Regardless of how you set the entitlement, your app always operates in production mode after distribution, whether through TestFlight, the App Store, or the Apple Developer Enterprise Program.
+If instead you want to use the App Attest production servers during development, add the [`App Attest Environment`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.devicecheck.appattest-environment) entitlement to your app’s entitlements file, and set the associated value to `production`. Regardless of how you set the entitlement, your app always operates in production mode after distribution, whether through TestFlight, the App Store, or the Apple Developer Enterprise Program.
 
 When sending a sandbox-generated attestation object to your server, the verification procedure changes slightly. Specifically, expect to find the value `appattestsandbox` in the authenticator data’s `aaguid` field. Also, when using a sandbox-generated receipt to make the server-to-server call that obtains the fraud metric, use `https://data-development.appattest.apple.com` as the base URL.
 
@@ -38,7 +38,7 @@ Instead, activate the feature for smaller groups of users over a period of time.
   Use this guide to validate your implementation of verifying the attestation object verification process.
 - [class DCAppAttestService](dcappattestservice.md)
   A service that you use to validate the instance of your app running on a device.
-- [App Attest Environment](../BundleResources/Entitlements/com.apple.developer.devicecheck.appattest-environment.md)
+- [App Attest Environment](../bundleresources/entitlements/com.apple.developer.devicecheck.appattest-environment.md)
   The environment for an app that uses the App Attest service to validate itself.
 
 

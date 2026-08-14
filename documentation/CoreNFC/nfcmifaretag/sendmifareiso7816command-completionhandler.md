@@ -24,10 +24,10 @@ Use this method to send commands to tags that have a [`mifareFamily`](nfcmifaret
 ## Parameters
 
 - `apdu`: An ISO 7816-4 command APDU object.
-- `completionHandler`: A handler that the reader session invokes after the operation completes. The session calls `completionHandler` on the dispatch queue that you provided when creating the [`NFCTagReaderSession`](nfctagreadersession.md) object. The handler has the following parameters: - **responseData**: An [`NSData`](https://developer.apple.com/documentation/Foundation/NSData) object containing the APDU response.
+- `completionHandler`: A handler that the reader session invokes after the operation completes. The session calls `completionHandler` on the dispatch queue that you provided when creating the [`NFCTagReaderSession`](nfctagreadersession.md) object. The handler has the following parameters: - **responseData**: An [`NSData`](https://developer.apple.com/documentation/foundation/nsdata) object containing the APDU response.
 - **sw1**: The SW1 command-processing status byte.
 - **sw2**: The SW2 command-processing status byte.
-- **error**: `nil` when the operation is successful; otherwise, an [`NSError`](https://developer.apple.com/documentation/Foundation/NSError) object indicating that a problem occurred while communicating with the tag, or that the tag doesn’t support ISO 7816-4 commands.
+- **error**: `nil` when the operation is successful; otherwise, an [`NSError`](https://developer.apple.com/documentation/foundation/nserror) object indicating that a problem occurred while communicating with the tag, or that the tag doesn’t support ISO 7816-4 commands.
 
 ## See Also
 

@@ -20,7 +20,7 @@ Because OSSymbol shares instances, the reference-counting functions must synchro
 ## Parameters
 
 - `tag`: Used for tracking collection references.
-- `freeWhen`: If decrementing the reference count makes it >=  , the object is immediately freed.
+- `freeWhen`: If decrementing the reference count makes it >= `freeWhen`, the object is immediately freed.
 
 ## See Also
 

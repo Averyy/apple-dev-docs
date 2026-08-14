@@ -20,13 +20,13 @@ An instance of OSData containing a copy of the specified data range from `inData
 
 #### Overview
 
-The new OSData object will grow as needed to accommodate more bytes (`CFMutableData`, for which a nonzero initial capacity is a hard limit).
+The new OSData object will grow as needed to accommodate more bytes (*unlike*[`CFMutableData`](https://developer.apple.com/documentation/corefoundation/cfmutabledata), for which a nonzero initial capacity is a hard limit).
 
 ## Parameters
 
 - `inData`: An OSData object that provides the initial data.
 - `start`: The starting index from which bytes will be copied.
-- `numBytes`: The number of bytes to be copied from  .
+- `numBytes`: The number of bytes to be copied from `start`.
 
 ## See Also
 

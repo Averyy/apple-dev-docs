@@ -30,7 +30,7 @@ Although the [`NSAccessibilityList`](nsaccessibilitylist.md) protocol doesn’t 
 - [NSAccessibilityElementProtocol](nsaccessibilityelementprotocol.md)
 - [NSAccessibilityGroup](nsaccessibilitygroup.md)
 - [NSAccessibilityTable](nsaccessibilitytable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

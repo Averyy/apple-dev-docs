@@ -19,7 +19,7 @@ Create complex materials and effects with Shader Graph, a node-based material ed
 
 With the control Shader Graph provides over materials, you can create effects that might otherwise require writing Metal shaders. The nodes represent either a value or operation, and have inputs and outputs you can connect to build a material. They serve the same purpose as a variable, constant, or function in Metal. Multiple versions of a node tweak the inputs and outputs it can receive, similar to overloads of a function.
 
-![None](https://docs-assets.developer.apple.com/published/9d613c8625c7195c13461b29b95ef35a/HomePageMaterial1.png)
+![None](/images/ShaderGraph-Docs/HomePageMaterial1.png)
 
 Build your material using the nodes that achieve your desired visual and geometric effects, and apply these materials to entities within your Reality Composer Pro scene.
 

@@ -21,7 +21,7 @@ class var screen: CIBlendKernel { get }
 
 #### Discussion
 
-![The result of using the screen blend kernel (background image is top left, foreground image is bottom left)](https://docs-assets.developer.apple.com/published/1ced143906c34dc8a459ae3c7f70dddd/media-2926881%402x.png)
+![The result of using the screen blend kernel (background image is top left, foreground image is bottom left)](/images/com.apple.coreimage/media-2926881@2x.png)
 
 ## See Also
 

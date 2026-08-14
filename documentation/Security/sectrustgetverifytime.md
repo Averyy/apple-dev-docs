@@ -28,9 +28,9 @@ The absolute time at which the certificates should be checked for validity.
 
 This function returns the absolute time returned by:
 
-1. the [`CFDateGetAbsoluteTime(_:)`](https://developer.apple.com/documentation/CoreFoundation/CFDateGetAbsoluteTime(_:)) function for the date passed in to the [`SecTrustSetVerifyDate(_:_:)`](sectrustsetverifydate(_:_:).md) function, if that was called, or
+1. the [`CFDateGetAbsoluteTime(_:)`](https://developer.apple.com/documentation/corefoundation/cfdategetabsolutetime(_:)) function for the date passed in to the [`SecTrustSetVerifyDate(_:_:)`](sectrustsetverifydate(_:_:).md) function, if that was called, or
 2. the last value returned by the [`SecTrustGetVerifyTime(_:)`](sectrustgetverifytime(_:).md) function, if it was called before, or
-3. the value returned by the [`CFAbsoluteTimeGetCurrent()`](https://developer.apple.com/documentation/CoreFoundation/CFAbsoluteTimeGetCurrent()) function if neither [`SecTrustSetVerifyDate(_:_:)`](sectrustsetverifydate(_:_:).md) nor [`SecTrustGetVerifyTime(_:)`](sectrustgetverifytime(_:).md) were ever called.
+3. the value returned by the [`CFAbsoluteTimeGetCurrent()`](https://developer.apple.com/documentation/corefoundation/cfabsolutetimegetcurrent()) function if neither [`SecTrustSetVerifyDate(_:_:)`](sectrustsetverifydate(_:_:).md) nor [`SecTrustGetVerifyTime(_:)`](sectrustgetverifytime(_:).md) were ever called.
 
 It is safe to call this function concurrently on two or more threads as long as it is not used to get a value from a trust management object that is simultaneously being changed by another function. For example, you can call this function on two threads at the same time, but not if you are simultaneously calling the [`SecTrustSetVerifyDate(_:_:)`](sectrustsetverifydate(_:_:).md) function for the same trust management object on another thread.
 

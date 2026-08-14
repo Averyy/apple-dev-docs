@@ -22,7 +22,7 @@ func requestBeginTransmitting(channelUUID: UUID)
 
 #### Discussion
 
-Your app can only begin a transmission when in the foreground, or following a [`Core Bluetooth`](https://developer.apple.com/documentation/CoreBluetooth) event, such as when a wireless accessory button triggers a [`Core Bluetooth`](https://developer.apple.com/documentation/CoreBluetooth) characteristic change. The user may also begin a transmission by using the Push to Talk system user interface.
+Your app can only begin a transmission when in the foreground, or following a [`Core Bluetooth`](https://developer.apple.com/documentation/corebluetooth) event, such as when a wireless accessory button triggers a [`Core Bluetooth`](https://developer.apple.com/documentation/corebluetooth) characteristic change. The user may also begin a transmission by using the Push to Talk system user interface.
 
 If successful, you receive a callback from [`channelManager(_:channelUUID:didBeginTransmittingFrom:)`](ptchannelmanagerdelegate/channelmanager(_:channeluuid:didbegintransmittingfrom:).md) with `PTChannelTransmitRequestSource.programmaticRequest`; otherwise, you receive a failure reason through [`channelManager(_:failedToBeginTransmittingInChannel:error:)`](ptchannelmanagerdelegate/channelmanager(_:failedtobegintransmittinginchannel:error:).md).
 

@@ -18,13 +18,13 @@ A session typically arranges its content into a token sequence with a specific o
 
 Appending new content at the end of the sequence — through calls to respond or stream methods — is a cache-friendly operation, because all preceding cached values remain valid. For example, the following table shows each turn reusing previously computed values from the cache:
 
-![A three-column diagram showing key-value cache reuse across Turn 1, Turn 2,](https://docs-assets.developer.apple.com/published/e92eae1d2e8e0917fe3e8a51c932966c/optimizing-key-value-caching-in-language-model-sessions-cached%402x.png)
+![A three-column diagram showing key-value cache reuse across Turn 1, Turn 2,](/images/com.apple.foundationmodels/optimizing-key-value-caching-in-language-model-sessions-cached@2x.png)
 
 Because the instructions and tool definitions form a stable prefix, the system caches them once and reuses them across every turn. A change to the instructions, for example, invalidates the cache for the tool definitions and the entire transcript. A change deep in the transcript, by contrast, only invalidates the values that follow it.
 
 The second turn in the following example, however, doesn’t benefit from reusing cached tokens when you modify the beginning of the transcript. Turn three recovers because the prefix is stable again.
 
-![A three-column diagram showing key-value cache invalidation. Pink blocks mark](https://docs-assets.developer.apple.com/published/3389b91a095997c0ebbf33557197fe38/optimizing-key-value-caching-in-language-model-sessions-compute%402x.png)
+![A three-column diagram showing key-value cache invalidation. Pink blocks mark](/images/com.apple.foundationmodels/optimizing-key-value-caching-in-language-model-sessions-compute@2x.png)
 
 An effective way to preserve cached context is to establish a stable prefix when creating the session. Use [`init(profile:history:)`](languagemodelsession/init(profile:history:).md) to define your instructions and tools up front, and don’t change them over the lifetime of the session. Place any content that varies between interactions toward the end of your instructions rather than at the beginning.
 

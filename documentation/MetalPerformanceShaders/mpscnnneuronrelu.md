@@ -23,7 +23,7 @@ class MPSCNNNeuronReLU
 
 For each pixel in an image, the filter applies the following function:
 
-![f(x) = x if x >= 0 | a * x if x < 0](https://docs-assets.developer.apple.com/published/3594c12f5cf297de5d13dd1755397c23/media-2903544%402x.png)
+![f(x) = x if x >= 0 | a * x if x < 0](/images/com.apple.metalperformanceshaders/media-2903544@2x.png)
 
 This filter is called *l__eaky ReLU* in CNN literature. Some CNN literature defines *classical* *ReLU* as `max(0, x)`. If you want this behavior, simply set the `a` property to `0`.
 
@@ -38,15 +38,15 @@ This filter is called *l__eaky ReLU* in CNN literature. Some CNN literature defi
 ### Inherits From
 - [MPSCNNNeuron](mpscnnneuron.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCoding](../Foundation/NSCoding.md)
-- [NSCopying](../Foundation/NSCopying.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [NSSecureCoding](../Foundation/NSSecureCoding.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCoding](../foundation/nscoding.md)
+- [NSCopying](../foundation/nscopying.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSSecureCoding](../foundation/nssecurecoding.md)
 
 ## See Also
 

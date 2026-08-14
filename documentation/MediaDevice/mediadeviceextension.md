@@ -65,7 +65,7 @@ The display name of the extension is sourced from the value of the `UTTypeDescri
 ## Relationships
 
 ### Inherits From
-- [AppExtension](../ExtensionFoundation/AppExtension.md)
+- [AppExtension](../extensionfoundation/appextension.md)
 ### Inherited By
 - [RealtimeSampleHandling](realtimesamplehandling.md)
 
@@ -73,7 +73,7 @@ The display name of the extension is sourced from the value of the `UTTypeDescri
 
 - [Creating a media device extension](creating-a-media-device-extension.md)
   Provide a way for people to find, connect to, and control your media device by adding a device extension in your iOS app.
-- [Routing media to third-party devices](../AVSystemRouting/routing-media-to-third-party-devices.md)
+- [Routing media to third-party devices](../avsystemrouting/routing-media-to-third-party-devices.md)
   Respond to routing events and control playback on a TV, speaker, or other media device.
 - [protocol MediaDeviceExtensionConfiguration](mediadeviceextensionconfiguration.md)
   Configuration for the app extension.

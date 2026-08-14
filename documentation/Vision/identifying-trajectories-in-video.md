@@ -8,7 +8,7 @@ Gain new insights into your video data by using Vision to detect trajectories.
 
 Starting in iOS 14, tvOS 14, and macOS 11, Vision provides the ability to detect the trajectories of objects in a video sequence. It detects multiple, simultaneous trajectories in a scene, following the path of objects, including those that are only a few pixels in size. This feature has wide-ranging uses, but can be of particular use in sports and fitness apps, where you commonly want to follow the trajectories of balls, pucks, and so on.
 
-![An image showing the trajectory of a soccer ball being kicked by a player.](https://docs-assets.developer.apple.com/published/ae9522150ec7075ac9d05b9cb60f10bd/media-3618313%402x.png)
+![An image showing the trajectory of a soccer ball being kicked by a player.](/images/Vision/media-3618313@2x.png)
 
 Vision’s trajectory-detection algorithm requires a stable scene, meaning the camera is mounted on a tripod, and the camera and background remain stationary. The algorithm looks at the frame differentials in the video to detect any objects traveling along a parabolic path. Any camera movement introduces noise and motion blur, which reduces the accuracy of the detection.
 
@@ -20,11 +20,11 @@ To detect trajectories in video, use an instance of [`VNDetectTrajectoriesReques
 
 When you create a [`VNDetectTrajectoriesRequest`](vndetecttrajectoriesrequest.md), you pass it the following arguments:
 
-- A frame analysis spacing, which lets you control the rate at which the request performs its analysis. You provide a [`CMTime`](https://developer.apple.com/documentation/CoreMedia/CMTime) value that defines a millisecond interval value to wait between analysis runs. Setting this argument to [`zero`](https://developer.apple.com/documentation/CoreMedia/CMTime/zero) processes all frames (if the device can keep up). Increasing the value reduces processor consumption, but may produce less accurate results.
+- A frame analysis spacing, which lets you control the rate at which the request performs its analysis. You provide a [`CMTime`](https://developer.apple.com/documentation/coremedia/cmtime) value that defines a millisecond interval value to wait between analysis runs. Setting this argument to [`zero`](https://developer.apple.com/documentation/coremedia/cmtime/zero) processes all frames (if the device can keep up). Increasing the value reduces processor consumption, but may produce less accurate results.
 - A trajectory length, which indicates the number of points you require to recognize a parabola. The minimum number is 5, but you can increase it to fit your needs. The value you set changes the number of points given in each observation. If you know you’re looking for a long throw, you could increase the length to filter out small, spurious movements.
 - A completion handler to process the results.
 
-The following example shows how to create and perform a request in an app thatʼs capturing live video from the camera. Note that [`VNDetectTrajectoriesRequest`](vndetecttrajectoriesrequest.md) requires using [`CMSampleBuffer`](https://developer.apple.com/documentation/CoreMedia/CMSampleBuffer) objects that contain timestamps so it can correctly calculate the trajectory observationʼs time range.
+The following example shows how to create and perform a request in an app thatʼs capturing live video from the camera. Note that [`VNDetectTrajectoriesRequest`](vndetecttrajectoriesrequest.md) requires using [`CMSampleBuffer`](https://developer.apple.com/documentation/coremedia/cmsamplebuffer) objects that contain timestamps so it can correctly calculate the trajectory observationʼs time range.
 
 ```swift
 // Lazily create a single instance of VNDetectTrajectoriesRequest.
@@ -81,11 +81,11 @@ func requestHandler(request: VNRequest, error: Error?) {
 
 Because the request builds evidence over time before it produces trajectory observations, the handler is called, but with no observations until the result has at least one trajectory with a high confidence score and a trajectory length matching the requested length.
 
-![An illustration showing that a request must build evidence over time before it produces trajectory observations.](https://docs-assets.developer.apple.com/published/6e36239fa3aa111b86502cf27d63be08/media-3625760%402x.png)
+![An illustration showing that a request must build evidence over time before it produces trajectory observations.](/images/Vision/media-3625760@2x.png)
 
 The key pieces of data that a [`VNTrajectoryObservation`](vntrajectoryobservation.md) provides are the *detected* and *projected* points the object travels on the parabolic path. The detected points follow the centroids of the object in motion, which may not follow the parabolic path exactly, whereas the projected points represent the path precisely. You can retrieve the equation coefficients for the quadratic equation, f(x) = ax2 + bx + c, from the observation, which it provides as a [`simd_float3`](https://developer.apple.com/documentation/simd/simd_float3) value.
 
-Each trajectory provides a [`uuid`](https://developer.apple.com/documentation/Foundation/UUID/uuid) value that you can use to track it over time, which is useful when performing ongoing calculations on the data or drawing visualizations of it. For an example of how you can visualize trajectory data, see the [`Building a feature-rich app for sports analysis`](building-a-feature-rich-app-for-sports-analysis.md) sample app.
+Each trajectory provides a [`uuid`](https://developer.apple.com/documentation/foundation/uuid/uuid) value that you can use to track it over time, which is useful when performing ongoing calculations on the data or drawing visualizations of it. For an example of how you can visualize trajectory data, see the [`Building a feature-rich app for sports analysis`](building-a-feature-rich-app-for-sports-analysis.md) sample app.
 
 ##### Apply Your Business Logic
 

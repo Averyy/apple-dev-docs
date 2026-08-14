@@ -8,27 +8,27 @@ Track live inference activity and timing during a debug session.
 
 Use the Core AI debug gauge to monitor your Core AI model’s inference activity and performance in real time during a debug session. As your app runs, the gauge tracks inference, load, and specialization events. This helps you spot unexpected behavior and investigate individual events. For example, if your app uses an image classifier and you notice a misclassification during testing, find the corresponding Inference event in the gauge and capture its input values for further analysis.
 
-![The Core AI gauge report page open in Xcode, with the Debug navigator on the left and, on the right, the Inference, Load, and Specialization metrics, three stacked activity graphs over a one-minute window, and the Activity table listing recorded events.](https://docs-assets.developer.apple.com/published/c4cef5aae7e7bede660a78eb2c935b77/debug-gauge-report%402x.png)
+![The Core AI gauge report page open in Xcode, with the Debug navigator on the left and, on the right, the Inference, Load, and Specialization metrics, three stacked activity graphs over a one-minute window, and the Activity table listing recorded events.](/images/com.apple.coreai/debug-gauge-report@2x.png)
 
 To use the debug gauge, you need an Xcode project that uses at least one Core AI model. For more information on setting up a Core AI project, see [`Integrating on-device AI models in your app with Core AI`](integrating-on-device-ai-models-in-your-app-with-core-ai.md).
 
-> **Note**: The gauge only appears in projects that link the [`Core AI`](CoreAI.md) framework. The gauge does not support the [`Core ML`](https://developer.apple.com/documentation/CoreML) framework.
+> **Note**: The gauge only appears in projects that link the [`Core AI`](CoreAI.md) framework. The gauge does not support the [`Core ML`](https://developer.apple.com/documentation/coreml) framework.
 
 #### Open the Debug Gauge in Xcode
 
 With your Xcode project open, build and run the project. In Debug navigator, you’ll see gauges such as CPU, Memory, Energy Impact, and the Core AI gauge.
 
-![The Debug navigator listing the Core AI gauge alongside the CPU, Memory, Energy Impact, Disk, and Network gauges, with the Core AI row showing 0 µs/event before any inference runs.](https://docs-assets.developer.apple.com/published/53d1cd7f84834d9ab0f9405359cde8ab/debug-navigator%402x.png)
+![The Debug navigator listing the Core AI gauge alongside the CPU, Memory, Energy Impact, Disk, and Network gauges, with the Core AI row showing 0 µs/event before any inference runs.](/images/com.apple.coreai/debug-navigator@2x.png)
 
 If you don’t see the gauge, verify that your project directly links the Core AI framework. To check, go to your project settings in the Xcode Navigator and scroll to Frameworks, Libraries, and Embedded Content in the General section. If you don’t see the Core AI framework, add it, then build and run your project again.
 
-![The General tab of an Xcode target’s settings, with the Frameworks, Libraries, and Embedded Content section showing CoreAI.framework set to Always Used.](https://docs-assets.developer.apple.com/published/a8f99a89a9081c1fd172ad34b14d0d16/xcode-project-settings-core-ai-framework%402x.png)
+![The General tab of an Xcode target’s settings, with the Frameworks, Libraries, and Embedded Content section showing CoreAI.framework set to Always Used.](/images/com.apple.coreai/xcode-project-settings-core-ai-framework@2x.png)
 
 #### Inspect Model Activity
 
 With your app running and the Core AI debug gauge open, you can monitor and inspect any activity coming from your Core AI models. Run your model in your app, then look at the Core AI tray in the Debug Navigator. Vertical bars appear in the graph, where each bar represents the combined Core AI events that occur within a one-second interval. The horizontal axis shows time and the vertical axis shows the total duration of each combined event. Next to the bars, a label summarizes the median duration across all events combined.
 
-![The Core AI row selected in the Debug navigator, showing a sparkline of recorded events and the label 10 ms per event next to a partial view of the report’s Inference panel.](https://docs-assets.developer.apple.com/published/16d37ed763133c7384f52c55a6404951/debug-gauge-tray%402x.png)
+![The Core AI row selected in the Debug navigator, showing a sparkline of recorded events and the label 10 ms per event next to a partial view of the report’s Inference panel.](/images/com.apple.coreai/debug-gauge-tray@2x.png)
 
 You can open the gauge’s report page by clicking the Core AI tray in the Debug Navigator. Here, you see live, detailed information about the Core AI activity from your app. At the top, three separate metrics show the median duration for each event type:
 
@@ -40,7 +40,7 @@ You can open the gauge’s report page by clicking the Core AI tray in the Debug
 
 As the debug gauge records Core AI activity from your app, you can watch the resulting Inference, Load, and Specialization events appear in each of the three graphs.
 
-![Three stacked activity graphs in the report page, one each for Inference in blue, Load in green, and Specialization in orange, plotted on a shared one-minute timeline, with High, Low, and Count statistics labeled to the left of each graph.](https://docs-assets.developer.apple.com/published/cd819b6a3ac14ca1be73426e73da7386/debug-gauge-chart%402x.png)
+![Three stacked activity graphs in the report page, one each for Inference in blue, Load in green, and Specialization in orange, plotted on a shared one-minute timeline, with High, Low, and Count statistics labeled to the left of each graph.](/images/com.apple.coreai/debug-gauge-chart@2x.png)
 
 Each graph displays data for a single event type. Each bar represents the maximum activity duration within a one-second interval. The horizontal axis shows time elapsed during the debug session. The vertical axis shows event duration.
 
@@ -52,7 +52,7 @@ Alongside each graph, you see metrics collected for each type of event. The metr
 
 You can also examine the individual events with additional information in the Activity table below the activity graph. The table shows events from oldest to newest. Scroll to the bottom to turn on automatic scrolling, which always shows the latest events. To examine a specific row, scroll up to turn off automatic scrolling.
 
-![The Activity table with Start, Duration, Model, and Event columns, listing a sequence of Load, Specialization, and Inference events recorded for the MobileNetV3ClassifierFP16 model.](https://docs-assets.developer.apple.com/published/cbcbf58ba881a3eff0a056da0fdc4753/debug-gauge-table%402x.png)
+![The Activity table with Start, Duration, Model, and Event columns, listing a sequence of Load, Specialization, and Inference events recorded for the MobileNetV3ClassifierFP16 model.](/images/com.apple.coreai/debug-gauge-table@2x.png)
 
 The activity graphs and the table are interactive. For example, if you notice a bar with an unexpected duration, click it, and the table selects the corresponding events. You can then see detailed information about those events in the table rows. You can also select events in the table, and the charts highlight the corresponding bars.
 
@@ -65,7 +65,7 @@ The table displays the following columns:
 
 When you notice incorrect output from your model in your app, use the gauge to investigate the specific Inference event that produced it. Find the row for the corresponding Inference event in the Activity table, then click the More button to the right of the row.
 
-![The More button context menu next to a row in the Activity table, showing two options: Open in DebugML… and Export to file….](https://docs-assets.developer.apple.com/published/d2a052529bd90b1820f2c9a69dc46713/debug-gauge-more-menu%402x.png)
+![The More button context menu next to a row in the Activity table, showing two options: Open in DebugML… and Export to file….](/images/com.apple.coreai/debug-gauge-more-menu@2x.png)
 
 The options available are:
 
@@ -80,7 +80,7 @@ The debug gauge provides a quick, high-level view of the activity coming from th
 
 Start profiling in Instruments by clicking the Profile in Instruments button in the top-right corner of the gauge’s report page.
 
-![The Profile in Instruments button in the top-right corner of the Core AI gauge report page header.](https://docs-assets.developer.apple.com/published/72b794ebc9491048e0a70b91f39e9b8f/debug-gauge-instruments-button%402x.png)
+![The Profile in Instruments button in the top-right corner of the Core AI gauge report page header.](/images/com.apple.coreai/debug-gauge-instruments-button@2x.png)
 
 Read [`Analyzing model runtime performance with Instruments`](analyzing-model-runtime-performance-with-instruments.md) for more details on the Core AI instrument.
 

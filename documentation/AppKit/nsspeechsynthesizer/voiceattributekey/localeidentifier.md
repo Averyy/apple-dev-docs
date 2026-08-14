@@ -16,7 +16,7 @@ static let localeIdentifier: NSSpeechSynthesizer.VoiceAttributeKey
 
 #### Discussion
 
-The canonical locale identifier string describing the voice’s locale. A locale is generally composed of three pieces of ordered information: a language code, a region code, and a variant code. For more information, see [`NSLocale`](https://developer.apple.com/documentation/Foundation/NSLocale).
+The canonical locale identifier string describing the voice’s locale. A locale is generally composed of three pieces of ordered information: a language code, a region code, and a variant code. For more information, see [`NSLocale`](https://developer.apple.com/documentation/foundation/nslocale).
 
 ## See Also
 

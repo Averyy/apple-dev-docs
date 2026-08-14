@@ -22,12 +22,12 @@ func SecCertificateCopySerialNumber(_ certificate: SecCertificate, _ error: Unsa
 
 #### Return Value
 
-A data instance containing a DER-encoded integer for the certificate’s serial number (without the tag and length fields) or `nil` if an error occurred. In Objective-C, free this object with a call to [`CFRelease`](https://developer.apple.com/documentation/CoreFoundation/CFRelease) when you are done with it.
+A data instance containing a DER-encoded integer for the certificate’s serial number (without the tag and length fields) or `nil` if an error occurred. In Objective-C, free this object with a call to [`CFRelease`](https://developer.apple.com/documentation/corefoundation/cfrelease) when you are done with it.
 
 ## Parameters
 
 - `certificate`: The certificate from which the serial number should be copied.
-- `error`: A pointer to a [`CFError`](https://developer.apple.com/documentation/CoreFoundation/CFError) variable where an error object is stored upon failure. If not `NULL`, the caller is responsible for checking this variable and releasing the resulting object if it exists.
+- `error`: A pointer to a [`CFError`](https://developer.apple.com/documentation/corefoundation/cferror) variable where an error object is stored upon failure. If not `NULL`, the caller is responsible for checking this variable and releasing the resulting object if it exists.
 
 
 ---

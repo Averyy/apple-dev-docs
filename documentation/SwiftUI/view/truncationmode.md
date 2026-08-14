@@ -37,7 +37,7 @@ Text("This is a block of text that will show up in a text element as multiple li
     .truncationMode(.tail)
 ```
 
-![A screenshot showing the effect of truncation mode on text in a](https://docs-assets.developer.apple.com/published/d15db793ff442f002c0fb57cbd7f14dc/SwiftUI-view-truncationMode%402x.png)
+![A screenshot showing the effect of truncation mode on text in a](/images/com.apple.SwiftUI/SwiftUI-view-truncationMode@2x.png)
 
 ## Parameters
 

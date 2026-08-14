@@ -30,10 +30,10 @@ This method applies the four-fold translated tile filter to an image. The effect
 The four-fold translated tile filter uses the following properties:
 
 - **`inputImage`**: An image with the type [`CIImage`](ciimage.md).
-- **`center`**: A set of coordinates marking the center of the image as a [`CGPoint`](https://developer.apple.com/documentation/CoreFoundation/CGPoint). This controls the source of the tile contents.
-- **`angle`**: A `float` representing the direction of the tiled patten, in radians as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
-- **`width`**: A `float` representing the set width of each tile as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
-- **`acuteAngle`**: A `float` representing the primary angle for the repeating translated tile as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+- **`center`**: A set of coordinates marking the center of the image as a [`CGPoint`](https://developer.apple.com/documentation/corefoundation/cgpoint). This controls the source of the tile contents.
+- **`angle`**: A `float` representing the direction of the tiled patten, in radians as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
+- **`width`**: A `float` representing the set width of each tile as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
+- **`acuteAngle`**: A `float` representing the primary angle for the repeating translated tile as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
 
 The following code creates a filter that performs a four-fold translated tile operation on the image:
 
@@ -49,7 +49,7 @@ func fourFoldTranslated(inputImage: CIImage) -> CIImage {
 }
 ```
 
-![Two photographs of a bouquet of multiple colorful flowers. The photo on the left is up close with good lighting and focus. In the photo on the right, a four-fold translate tile filter is applied, resulting in a rotated and tiled diamond pattern. The source for each tile is the center region of the left image.](https://docs-assets.developer.apple.com/published/abb14263a43b433b085745239ea1e141/media-4333629%402x.png)
+![Two photographs of a bouquet of multiple colorful flowers. The photo on the left is up close with good lighting and focus. In the photo on the right, a four-fold translate tile filter is applied, resulting in a rotated and tiled diamond pattern. The source for each tile is the center region of the left image.](/images/com.apple.coreimage/media-4333629@2x.png)
 
 ## See Also
 

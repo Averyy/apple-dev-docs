@@ -28,8 +28,8 @@ Thread-safe since Mac OS version 10.2.
 
 ## Parameters
 
-- `inFSRef`: A pointer to a file-system reference designating the item whose kind string is requested; see the   in the Carbon File Management Documentation for a description of the   data type.
-- `outKindString`: A pointer to a Core Foundation string object that, on return, will contain the item’s kind string; see the   in the Core Foundation Reference Documentation for a description of the   data type. You are responsible for releasing this object.
+- `inFSRef`: A pointer to a file-system reference designating the item whose kind string is requested; see the *File Manager Reference* in the Carbon File Management Documentation for a description of the `FSRef` data type.
+- `outKindString`: A pointer to a Core Foundation string object that, on return, will contain the item’s kind string; see the *CFString Reference* in the Core Foundation Reference Documentation for a description of the `CFStringRef` data type. You are responsible for releasing this object.
 
 ## See Also
 

@@ -23,7 +23,7 @@ The maximum number of elements allocated for this group
 
 Use this function to determine the fixed capacity of particles per group, which is useful for normalizing element indices or managing group resources.
 
-> **Note**: ![Graph](https://docs-assets.developer.apple.com/published/c9bc1370812c136937dc5e024170b108/group__elementMaximumInGroup.svg)
+> **Note**: ![Graph](/images/com.apple.computegraph/group__elementMaximumInGroup.svg)
 
 
 ---

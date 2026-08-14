@@ -60,7 +60,7 @@ The [`CXProviderDelegate`](cxproviderdelegate.md) protocol defines a set of meth
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 
@@ -74,7 +74,7 @@ The [`CXProviderDelegate`](cxproviderdelegate.md) protocol defines a set of meth
   Use the CallKit framework to integrate native VoIP calling.
 - [Preparing your app to be the default calling app](preparing-your-app-to-be-the-default-calling-app.md)
   Configure your CallKit or LiveCommunicationKit app so people can set it as the default calling app on their device.
-- [CallKit updates](../Updates/CallKit.md)
+- [CallKit updates](../updates/callkit.md)
   Learn about important changes to CallKit.
 
 

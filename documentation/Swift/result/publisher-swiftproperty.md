@@ -22,7 +22,7 @@ var publisher: Result<Success, Failure>.Publisher { get }
 
 #### Discussion
 
-In the following example, `goodResult` provides a successful result with the integer value `1`. A sink subscriber connected to the result’s publisher receives the output `1`, followed by a normal completion ([`Subscribers.Completion.finished`](https://developer.apple.com/documentation/Combine/Subscribers/Completion/finished)).
+In the following example, `goodResult` provides a successful result with the integer value `1`. A sink subscriber connected to the result’s publisher receives the output `1`, followed by a normal completion ([`Subscribers.Completion.finished`](https://developer.apple.com/documentation/combine/subscribers/completion/finished)).
 
 ```swift
  let goodResult: Result<Int, MyError> = .success(1)
@@ -34,7 +34,7 @@ In the following example, `goodResult` provides a successful result with the int
  // goodResult done: finished
 ```
 
-In contrast with the [`Just`](https://developer.apple.com/documentation/Combine/Just) publisher, which always publishes a single value, this publisher might not send any values and instead terminate with an error, if the result is `/Swift/Result/failure`. In the next example, `badResult` is a failure result that wraps a custom error. A sink subscriber connected to this result’s publisher immediately receives a termination ([`Subscribers.Completion.failure(_:)`](https://developer.apple.com/documentation/Combine/Subscribers/Completion/failure(_:))).
+In contrast with the [`Just`](https://developer.apple.com/documentation/combine/just) publisher, which always publishes a single value, this publisher might not send any values and instead terminate with an error, if the result is `/Swift/Result/failure`. In the next example, `badResult` is a failure result that wraps a custom error. A sink subscriber connected to this result’s publisher immediately receives a termination ([`Subscribers.Completion.failure(_:)`](https://developer.apple.com/documentation/combine/subscribers/completion/failure(_:))).
 
 ```swift
  struct MyError: Error, CustomDebugStringConvertible {

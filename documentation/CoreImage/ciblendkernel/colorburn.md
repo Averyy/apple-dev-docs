@@ -21,7 +21,7 @@ class var colorBurn: CIBlendKernel { get }
 
 #### Discussion
 
-![The result of using the color burn blend kernel (background image is top left, foreground image is bottom left)](https://docs-assets.developer.apple.com/published/35d3cf3428c2e2280c4a80e5df08c8c5/media-2926850%402x.png)
+![The result of using the color burn blend kernel (background image is top left, foreground image is bottom left)](/images/com.apple.coreimage/media-2926850@2x.png)
 
 ## See Also
 

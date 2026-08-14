@@ -23,9 +23,9 @@ A property wrapper type for an observable object that a parent or ancestor view 
 
 #### Overview
 
-An environment object invalidates the current view whenever the observable object that conforms to [`ObservableObject`](https://developer.apple.com/documentation/Combine/ObservableObject) changes. If you declare a property as an environment object, be sure to set a corresponding model object on an ancestor view by calling its [`environmentObject(_:)`](view/environmentobject(_:).md) modifier.
+An environment object invalidates the current view whenever the observable object that conforms to [`ObservableObject`](https://developer.apple.com/documentation/combine/observableobject) changes. If you declare a property as an environment object, be sure to set a corresponding model object on an ancestor view by calling its [`environmentObject(_:)`](view/environmentobject(_:).md) modifier.
 
-> **Note**: If your observable object conforms to the [`Observable`](https://developer.apple.com/documentation/Observation/Observable) protocol, use [`Environment`](environment.md) instead of `EnvironmentObject` and set the model object in an ancestor view by calling its [`environment(_:)`](view/environment(_:).md) or [`environment(_:_:)`](view/environment(_:_:).md) modifiers.
+> **Note**: If your observable object conforms to the [`Observable`](https://developer.apple.com/documentation/observation/observable) protocol, use [`Environment`](environment.md) instead of `EnvironmentObject` and set the model object in an ancestor view by calling its [`environment(_:)`](view/environment(_:).md) or [`environment(_:_:)`](view/environment(_:_:).md) modifiers.
 
 ## Topics
 
@@ -44,8 +44,8 @@ An environment object invalidates the current view whenever the observable objec
 
 ### Conforms To
 - [DynamicProperty](dynamicproperty.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

@@ -17,7 +17,7 @@ var excludedWindowIDs: Array<Int>
 
 #### Discussion
 
-> ❗ **Important**:  Using an invalid window ID can cause an error. Use window values returned from Core Graphics methods such as [`CGWindowListCopyWindowInfo(_:_:)`](https://developer.apple.com/documentation/CoreGraphics/CGWindowListCopyWindowInfo(_:_:)) to provide window IDs to exclude from the picker.
+> ❗ **Important**:  Using an invalid window ID can cause an error. Use window values returned from Core Graphics methods such as [`CGWindowListCopyWindowInfo(_:_:)`](https://developer.apple.com/documentation/coregraphics/cgwindowlistcopywindowinfo(_:_:)) to provide window IDs to exclude from the picker.
 
 ## See Also
 

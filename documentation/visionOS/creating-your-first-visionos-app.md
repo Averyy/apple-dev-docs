@@ -22,7 +22,7 @@ Create a new project in Xcode by choosing File > New > Project. Navigate to the 
 
 When creating a new visionOS app, you can configure your app’s initial scene types from the configuration dialog. To display primarily 2D content in your initial scene, choose a Window as your initial scene type. For primarily 3D content, choose a Volume. You can also add an immersive scene to place your content in the person’s surroundings.
 
-![A screenshot of Xcode’s new project panel where you can select the initial scene type and immersive space options.](https://docs-assets.developer.apple.com/published/f0264311b8746ae62bc82059b514367a/xcode-template-options%402x.png)
+![A screenshot of Xcode’s new project panel where you can select the initial scene type and immersive space options.](/images/com.apple.visionOS/xcode-template-options@2x.png)
 
 Include a Reality Composer Pro project file when you want to create 3D assets or scenes to display from your app. Use this project file to build content from primitive shapes and existing USDZ assets. You can also use it to build and test custom RealityKit animations and behaviors for your content.
 
@@ -62,7 +62,7 @@ Tap and drag the window bar below your app’s content to reposition the window 
 
 > **Note**: Apps don’t control the placement of windows in the space. The system places each window in its initial position, and updates that position based on further interactions with the app.
 
-For additional information about how to interact with your app in Simulator, see [`Device Hub`](https://developer.apple.com/documentation/Xcode/device-hub).
+For additional information about how to interact with your app in Simulator, see [`Device Hub`](https://developer.apple.com/documentation/xcode/device-hub).
 
 ## See Also
 

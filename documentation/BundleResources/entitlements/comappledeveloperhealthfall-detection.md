@@ -16,7 +16,7 @@ An entitlement that permits an app to receive fall-detection notifications from 
 
 #### Discussion
 
-Use the data you receive from [`CMFallDetectionManager`](https://developer.apple.com/documentation/CoreMotion/CMFallDetectionManager) to provide assistance, or initiate communication with emergency services, in the event that someone falls.
+Use the data you receive from [`CMFallDetectionManager`](https://developer.apple.com/documentation/coremotion/cmfalldetectionmanager) to provide assistance, or initiate communication with emergency services, in the event that someone falls.
 
 To request this entitlement for your app, [`fill out the request form`](https://developer.apple.comhttps://developer.apple.com/contact/request/fall-detection-api/).
 

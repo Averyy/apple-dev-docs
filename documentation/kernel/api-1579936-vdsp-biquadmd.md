@@ -28,11 +28,11 @@ The function updates the state contained in the `setup` object upon return.
 
 ## Parameters
 
-- `__setup`: The   object defining the filter to apply.
+- `__setup`: The `vDSP_biquadm_Setup` object defining the filter to apply.
 - `__X`: An array of pointers, each of which specifies an array of double-precision input data for a single channel.
-- `__IX`: Stride for   (see Discussion below).
+- `__IX`: Stride for `X` (see Discussion below).
 - `__Y`: An array of pointers, each of which specifies an array of double-precision input data for a single channel. 
-- `__IY`: Stride for   (see Discussion below).
+- `__IY`: Stride for `Y` (see Discussion below).
 - `__N`: The number of elements to filter.
 
 

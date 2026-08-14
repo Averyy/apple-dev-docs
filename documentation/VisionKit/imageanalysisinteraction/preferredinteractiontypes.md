@@ -26,7 +26,7 @@ final var preferredInteractionTypes: ImageAnalysisInteraction.InteractionTypes {
 
 You need to set this property to enable interactions with the image. If this property contains [`automatic`](imageanalysisinteraction/interactiontypes/automatic.md), the interaction ignores the other types in the set. The default value for this property is an empty array that disables any interactions.
 
-If you set this property to one or more types, the interaction sets the view’s [`isUserInteractionEnabled`](https://developer.apple.com/documentation/UIKit/UIView/isUserInteractionEnabled) property to `true` so that the interaction begins. For example, when you’re ready to start the Live Text interface, set this property to [`automatic`](imageanalysisinteraction/interactiontypes/automatic.md).
+If you set this property to one or more types, the interaction sets the view’s [`isUserInteractionEnabled`](https://developer.apple.com/documentation/uikit/uiview/isuserinteractionenabled) property to `true` so that the interaction begins. For example, when you’re ready to start the Live Text interface, set this property to [`automatic`](imageanalysisinteraction/interactiontypes/automatic.md).
 
 If you set this property to an empty array, the image analysis interaction doesn’t reset the view’s `isUserInteractionEnabled` property to `false`.
 

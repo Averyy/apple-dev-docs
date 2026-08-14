@@ -8,7 +8,7 @@ Present your content onscreen and handle user input and events.
 
 Views and controls are the building blocks of your app’s user interface.
 
-![A sample macOS app with the view broken down into label, text field, and button control elements.The window has the title New List. Beneath the title is a text field labeled name, with a text box containing the placeholder text Enter text here. Beneath that is a label titled color followed by seven selectable circles of color. In the bottom right hand corner is a enabled Cancel button followed by a disabled OK button side-by-side.](https://docs-assets.developer.apple.com/published/5493c5134f4713caea62664e3709803a/media-4098514%402x.png)
+![A sample macOS app with the view broken down into label, text field, and button control elements.The window has the title New List. Beneath the title is a text field labeled name, with a text box containing the placeholder text Enter text here. Beneath that is a label titled color followed by seven selectable circles of color. In the bottom right hand corner is a enabled Cancel button followed by a disabled OK button side-by-side.](/images/com.apple.appkit/media-4098514@2x.png)
 
 Views can host other views. Embedding one view inside another creates a containment relationship between the host view (known as the *superview*) and the embedded view (known as the *subview*). View hierarchies make it easier to manage views.
 
@@ -37,7 +37,7 @@ For additional information about how to use views and controls, see [`Human Inte
 - [class NSActionCell](nsactioncell.md)
   An active area inside a control.
 ### Container views
-- [Localization-friendly layouts in macOS](../Xcode/localization-friendly-layouts-in-macos.md)
+- [Localization-friendly layouts in macOS](../xcode/localization-friendly-layouts-in-macos.md)
   This project demonstrates localization-friendly auto layout constraints.
 - [Grid View](grid-view.md)
   Arrange views in a flexible grid, and handle the layout associated with those views.
@@ -66,7 +66,7 @@ For additional information about how to use views and controls, see [`Human Inte
 - [class NSTextView](nstextview.md)
   A view that draws text and handles user interactions with that text.
 ### Controls
-- [Responding to control-based events using target-action](../UIKit/responding-to-control-based-events-using-target-action.md)
+- [Responding to control-based events using target-action](../uikit/responding-to-control-based-events-using-target-action.md)
   Handle user input by connecting buttons, sliders, and other controls to your app’s code using the target-action design pattern.
 - [class NSButton](nsbutton.md)
   A control that defines an area on the screen that a user clicks to trigger an action.

@@ -22,7 +22,7 @@ protocol NSFileProviderCustomAction : NSObjectProtocol
 
 Adopt this protocol to add a custom action to the context menu (for example, when the user control-clicks an item in Finder).
 
-If you want to create an action that displays custom user interface elements, add actions using the [`File Provider UI`](https://developer.apple.com/documentation/FileProviderUI) framework instead. For more information, see `Adding Actions to the Context Menu`.
+If you want to create an action that displays custom user interface elements, add actions using the [`File Provider UI`](https://developer.apple.com/documentation/fileproviderui) framework instead. For more information, see `Adding Actions to the Context Menu`.
 
 ## Topics
 
@@ -33,7 +33,7 @@ If you want to create an action that displays custom user interface elements, ad
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

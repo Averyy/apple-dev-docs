@@ -25,7 +25,7 @@ Creates a new map with the bounds, interaction modes, scope, and content you pro
 
 - `bounds`: The [`MapCameraBounds`](mapcamerabounds.md) that define the camera’s view of the map.
 - `interactionModes`: The [`MapInteractionModes`](mapinteractionmodes.md) that describe ways a person can interact with the map.
-- `scope`: The map’s [`Namespace.ID`](https://developer.apple.com/documentation/SwiftUI/Namespace/ID).
+- `scope`: The map’s [`Namespace.ID`](https://developer.apple.com/documentation/swiftui/namespace/id).
 - `content`: A [`MapContent`](mapcontent.md) content builder that supplies the map’s content.
 
 ## See Also

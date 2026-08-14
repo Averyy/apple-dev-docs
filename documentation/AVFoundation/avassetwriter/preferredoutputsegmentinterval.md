@@ -21,7 +21,7 @@ var preferredOutputSegmentInterval: CMTime { get set }
 
 #### Discussion
 
-The default value is [`invalid`](https://developer.apple.com/documentation/CoreMedia/CMTime/invalid), which indicates that the asset writer chooses an appropriate default value. You may also set a positive numeric or [`indefinite`](https://developer.apple.com/documentation/CoreMedia/CMTime/indefinite) time. When the value is [`indefinite`](https://developer.apple.com/documentation/CoreMedia/CMTime/indefinite), each call you make to [`flushSegment()`](avassetwriter/flushsegment().md) outputs a segment data.
+The default value is [`invalid`](https://developer.apple.com/documentation/coremedia/cmtime/invalid), which indicates that the asset writer chooses an appropriate default value. You may also set a positive numeric or [`indefinite`](https://developer.apple.com/documentation/coremedia/cmtime/indefinite) time. When the value is [`indefinite`](https://developer.apple.com/documentation/coremedia/cmtime/indefinite), each call you make to [`flushSegment()`](avassetwriter/flushsegment().md) outputs a segment data.
 
 You can’t change this value after writing starts.
 

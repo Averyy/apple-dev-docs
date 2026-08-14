@@ -23,7 +23,7 @@ let HKMetadataKeyGlassesPrescriptionDescription: String
 
 If a glasses prescription was designed for a particular use, like reading or distance, use this metadata key to describe that use.
 
-This metadata key stores a [`String`](https://developer.apple.com/documentation/Swift/String) value.
+This metadata key stores a [`String`](https://developer.apple.com/documentation/swift/string) value.
 
 
 ---

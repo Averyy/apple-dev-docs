@@ -22,7 +22,7 @@ let AVFormatIDKey: String
 
 #### Discussion
 
-For information about the possible values for this key, see [`Audio Format Identifiers`](https://developer.apple.com/documentation/CoreAudioTypes/audio-format-identifiers).
+For information about the possible values for this key, see [`Audio Format Identifiers`](https://developer.apple.com/documentation/coreaudiotypes/audio-format-identifiers).
 
 ## See Also
 

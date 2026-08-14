@@ -22,7 +22,7 @@ Set this property to `true` (Swift) or `YES` (Obj-C) in your container app to us
 
 When you use this property in your containing app, the system runs the `NEAppPushProvider` if both of the following criteria are met:
 
-- The container app has both the Local Push Connectivity entitlement and the Mission Critical Service application category entitlements. For the former, use [`Network Extensions Entitlement`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.networking.networkextension) with a value of `app-push-provider`. For the latter, use [`5G Network Slicing App Category`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.networking.slicing.appcategory) with a value of `mc-9500`.
+- The container app has both the Local Push Connectivity entitlement and the Mission Critical Service application category entitlements. For the former, use [`Network Extensions Entitlement`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.networking.networkextension) with a value of `app-push-provider`. For the latter, use [`5G Network Slicing App Category`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.networking.slicing.appcategory) with a value of `mc-9500`.
 - The device has a cellular plan that supports Mission Critical Services.
 
 After the app push extension launches, the extension establishes a network connection to its backend server using the MCX network slice. The framework delivers incoming Push to Talk messages with the [`reportPushToTalkMessage(userInfo:)`](neapppushprovider/reportpushtotalkmessage(userinfo:).md) method.

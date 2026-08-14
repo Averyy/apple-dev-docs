@@ -34,7 +34,7 @@ When you save records, the value in the [`savePolicy`](ckmodifyrecordsoperation/
 
 The handlers you assign to monitor progress of the operation execute serially on an internal queue that the operation manages. You must provide handlers capable of executing on a background thread, so any tasks that require access to the main thread must redirect accordingly.
 
-If you assign a completion handler to the [`completionBlock`](https://developer.apple.com/documentation/Foundation/Operation/completionBlock) property of the operation, CloudKit calls it after the operation executes and returns the results. Use the completion handler to perform any housekeeping tasks for the operation, but don’t use it to process the results of the operation. The completion handler you provide should manage any failures of the operation, whether due to an error or an explicit cancellation.
+If you assign a completion handler to the [`completionBlock`](https://developer.apple.com/documentation/foundation/operation/completionblock) property of the operation, CloudKit calls it after the operation executes and returns the results. Use the completion handler to perform any housekeeping tasks for the operation, but don’t use it to process the results of the operation. The completion handler you provide should manage any failures of the operation, whether due to an error or an explicit cancellation.
 
 > ❗ **Important**: To ensure the speed of fetching and saving records, the server may reject large operations. When this occurs, a block reports the [`CKError.Code.limitExceeded`](ckerror/code/limitexceeded.md) error. Your app should handle this error, and refactor the operation into multiple smaller batches.
 
@@ -78,14 +78,14 @@ If you assign a completion handler to the [`completionBlock`](https://developer.
 ### Inherits From
 - [CKDatabaseOperation](ckdatabaseoperation.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

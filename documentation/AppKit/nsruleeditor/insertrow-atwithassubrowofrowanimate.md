@@ -23,7 +23,7 @@ func insertRow(at rowIndex: Int, with rowType: NSRuleEditor.RowType, asSubrowOfR
 - `rowIndex`: The index at which the new row should be inserted. `rowIndex` must be greater than `parentRow`, and much specify a row that does not fall amongst the children of some other parent.
 - `rowType`: The type of the new row.
 - `parentRow`: The index of the row of which the new row is a child. Pass `-1` to indicate that the new row should be a root row.
-- `shouldAnimate`: [`true`](https://developer.apple.com/documentation/Swift/true) if creation of the new row should be animated, otherwise [`false`](https://developer.apple.com/documentation/Swift/false).
+- `shouldAnimate`: [`true`](https://developer.apple.com/documentation/swift/true) if creation of the new row should be animated, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
 
 ## See Also
 

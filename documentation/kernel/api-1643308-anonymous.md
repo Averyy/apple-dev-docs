@@ -21,9 +21,9 @@ enum : unsigned int {
 - [kINQUIRY_PRODUCT_IDENTIFICATION_Length](1643308-anonymous/kinquiry_product_identification_length.md)
 - [kINQUIRY_PRODUCT_REVISION_LEVEL_Length](1643308-anonymous/kinquiry_product_revision_level_length.md)
 - [kINQUIRY_VENDOR_IDENTIFICATION_Length](1643308-anonymous/kinquiry_vendor_identification_length.md)
-- [kINQUIRY_PRODUCT_IDENTIFICATION_Length](../driverkit/1643308-anonymous/kinquiry_product_identification_length.md)
-- [kINQUIRY_PRODUCT_REVISION_LEVEL_Length](../driverkit/1643308-anonymous/kinquiry_product_revision_level_length.md)
-- [kINQUIRY_VENDOR_IDENTIFICATION_Length](../driverkit/1643308-anonymous/kinquiry_vendor_identification_length.md)
+- [kINQUIRY_PRODUCT_IDENTIFICATION_Length](../driverkit/kinquiry_product_identification_length.md)
+- [kINQUIRY_PRODUCT_REVISION_LEVEL_Length](../driverkit/kinquiry_product_revision_level_length.md)
+- [kINQUIRY_VENDOR_IDENTIFICATION_Length](../driverkit/kinquiry_vendor_identification_length.md)
 
 
 ---

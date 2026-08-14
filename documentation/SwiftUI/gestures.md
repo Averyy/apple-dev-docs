@@ -8,13 +8,13 @@ Define interactions from taps, clicks, and swipes to fine-grained gestures.
 
 Respond to gestures by adding gesture modifiers to your views. You can listen for taps, drags, pinches, and other standard gestures.
 
-![None](https://docs-assets.developer.apple.com/published/6a1478e9bc9c150def717738cb949d52/gestures-hero%402x.png)
+![None](/images/com.apple.SwiftUI/gestures-hero@2x.png)
 
 You can also compose custom gestures from individual gestures using the [`simultaneously(with:)`](gesture/simultaneously(with:).md), [`sequenced(before:)`](gesture/sequenced(before:).md), or [`exclusively(before:)`](gesture/exclusively(before:).md) modifiers, or combine gestures with keyboard modifiers using the [`modifiers(_:)`](gesture/modifiers(_:).md) modifier.
 
 > ❗ **Important**: When you need a button, use a [`Button`](button.md) instance rather than a tap gesture. You can use any view as the button’s label, and the button type automatically provides many of the standard behaviors that users expect from a button, like accessibility labels and hints.
 
-For design guidance, see [`Gestures`](https://developer.apple.com/design/Human-Interface-Guidelines/gestures) in the Human Interface Guidelines.
+For design guidance, see [`Gestures`](https://developer.apple.com/design/human-interface-guidelines/gestures) in the Human Interface Guidelines.
 
 ## Topics
 

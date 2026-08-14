@@ -24,7 +24,7 @@ Swift packages are a convenient and lightweight solution for creating a modular 
   Make binaries available to other developers by creating Swift packages that include one or more XCFrameworks.
 - [Organizing your code with local packages](organizing-your-code-with-local-packages.md)
   Simplify maintenance, promote modularity, and encourage reuse by organizing your app’s code into local Swift packages.
-- [PackageDescription](../PackageDescription/PackageDescription.md)
+- [PackageDescription](../packagedescription/packagedescription.md)
   Create reusable code, organize it in a lightweight way, and share it across your projects and with other developers.
 
 

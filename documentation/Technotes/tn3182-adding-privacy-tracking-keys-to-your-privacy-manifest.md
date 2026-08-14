@@ -11,7 +11,7 @@ When you build an app or third-party SDK that contacts domains engaged in tracki
 1. Add the `NSPrivacyTracking` key and set its value to `true`.
 2. Add the `NSPrivacyTrackingDomains` key and set its value to a list of tracking domains.
 
-For more information about these keys and the privacy manifest, see [`Privacy manifest files`](https://developer.apple.com/documentation/BundleResources/privacy-manifest-files).
+For more information about these keys and the privacy manifest, see [`Privacy manifest files`](https://developer.apple.com/documentation/bundleresources/privacy-manifest-files).
 
 This document describes how to add the `NSPrivacyTracking` and `NSPrivacyTrackingDomains` keys to your privacy manifest in Xcode. If you work outside of Xcode, review this document to learn about the expected structure of each key.
 
@@ -89,7 +89,7 @@ The following example declares one tracking domain for an app called `Sample`:
 
 **Property list**:
 
-![A privacy manifest that contains the NSPrivacyTracking and NSPrivacyTrackingDomains keys. NSPrivacyTrackingDomains contains one tracking domain.](https://docs-assets.developer.apple.com/published/d859f1620a60329db1c7493fa34c14f0/tn3182-privacy_tracking_single_domain%402x.png)
+![A privacy manifest that contains the NSPrivacyTracking and NSPrivacyTrackingDomains keys. NSPrivacyTrackingDomains contains one tracking domain.](/images/com.apple.technotes/tn3182-privacy_tracking_single_domain@2x.png)
 
 Repeat step 5 for each additional tracking domain your app or third-party SDK contacts. The example below declares an additional tracking domain for `Sample`:
 
@@ -111,7 +111,7 @@ Repeat step 5 for each additional tracking domain your app or third-party SDK co
 
 **Property list**:
 
-![A privacy manifest that contains the NSPrivacyTracking and NSPrivacyTrackingDomains keys. NSPrivacyTrackingDomains contains two tracking domains.](https://docs-assets.developer.apple.com/published/15f0c626a8a9071cb16459e2def9c04d/tn3182-privacy_tracking_multiple_domains%402x.png)
+![A privacy manifest that contains the NSPrivacyTracking and NSPrivacyTrackingDomains keys. NSPrivacyTrackingDomains contains two tracking domains.](/images/com.apple.technotes/tn3182-privacy_tracking_multiple_domains@2x.png)
 
 #### Revision History
 

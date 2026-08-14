@@ -12,7 +12,7 @@ Obtain historical, current, and predictive weather for your app or service.
 
 Use the WeatherKit REST API web service to provide weather data to your apps and services that offer both current and forecasted weather information to your users.
 
-To provide weather information to a web app or other platform, like Android, use the WeatherKit REST API. For native iOS, macOS, tvOS, and watchOS apps, use [`WeatherKit`](https://developer.apple.com/documentation/WeatherKit).
+To provide weather information to a web app or other platform, like Android, use the WeatherKit REST API. For native iOS, macOS, tvOS, and watchOS apps, use [`WeatherKit`](https://developer.apple.com/documentation/weatherkit).
 
 > ❗ **Important**:  Using this API requires attribution. See [`WeatherKit - Data Sources`](https://developer.apple.comhttps://developer.apple.com/weatherkit/data-source-attribution/) to learn more.
 

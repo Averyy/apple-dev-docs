@@ -6,12 +6,12 @@ Learn about important changes to Speech.
 
 #### Overview
 
-Browse notable changes in [`Speech`](https://developer.apple.com/documentation/Speech).
+Browse notable changes in [`Speech`](https://developer.apple.com/documentation/speech).
 
 #### June 2026
 
-- Access audio from a file, asset, or capture device, such as a microphone, by using [`AssetInputSequenceProvider`](https://developer.apple.com/documentation/Speech/AssetInputSequenceProvider) or [`CaptureInputSequenceProvider`](https://developer.apple.com/documentation/Speech/CaptureInputSequenceProvider).
-- Use [`AnalyzerInputConverter`](https://developer.apple.com/documentation/Speech/AnalyzerInputConverter) to convert [`AVAudioBuffer`](https://developer.apple.com/documentation/AVFAudio/AVAudioBuffer) data into formats that [`AnalyzerInput`](https://developer.apple.com/documentation/Speech/AnalyzerInput) supports.
+- Access audio from a file, asset, or capture device, such as a microphone, by using [`AssetInputSequenceProvider`](https://developer.apple.com/documentation/speech/assetinputsequenceprovider) or [`CaptureInputSequenceProvider`](https://developer.apple.com/documentation/speech/captureinputsequenceprovider).
+- Use [`AnalyzerInputConverter`](https://developer.apple.com/documentation/speech/analyzerinputconverter) to convert [`AVAudioBuffer`](https://developer.apple.com/documentation/avfaudio/avaudiobuffer) data into formats that [`AnalyzerInput`](https://developer.apple.com/documentation/speech/analyzerinput) supports.
 
 ## See Also
 

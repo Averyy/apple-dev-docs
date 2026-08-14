@@ -29,7 +29,7 @@ This function calculates the element-wise product of vector `A` and scalar value
     C[n] = A[n] * B;
 ```
 
-![A diagram showing the operation of this function. There are three rows. The top row represents the input vector A with three boxes, and the scalar value B with one box. The middle row represents the operation as three boxes with multiplication signs. The bottom row represents the output vector C as three boxes. The diagram has connecting lines from the input vectors to the operation, and from the operation to the output vector. ](https://docs-assets.developer.apple.com/published/4787aba10601f66e9f08edf2b66706cd/media-4337180%402x.png)
+![A diagram showing the operation of this function. There are three rows. The top row represents the input vector A with three boxes, and the scalar value B with one box. The middle row represents the operation as three boxes with multiplication signs. The bottom row represents the output vector C as three boxes. The diagram has connecting lines from the input vectors to the operation, and from the operation to the output vector. ](/images/com.apple.accelerate/media-4337180@2x.png)
 
 The following code shows an example of using this function:
 

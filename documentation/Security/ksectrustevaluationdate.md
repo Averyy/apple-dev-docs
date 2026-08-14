@@ -22,7 +22,7 @@ let kSecTrustEvaluationDate: CFString
 
 #### Discussion
 
-This key is present after the results become available from performing the trust evaluation. The value is a [`CFDate`](https://developer.apple.com/documentation/CoreFoundation/CFDate) object representing when the evaluation took place.
+This key is present after the results become available from performing the trust evaluation. The value is a [`CFDate`](https://developer.apple.com/documentation/corefoundation/cfdate) object representing when the evaluation took place.
 
 
 ---

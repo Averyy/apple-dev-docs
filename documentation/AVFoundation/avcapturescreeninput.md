@@ -16,11 +16,11 @@ class AVCaptureScreenInput
 
 #### Overview
 
-> ❗ **Important**:  Starting in macOS 12.3, use the [`ScreenCaptureKit`](https://developer.apple.com/documentation/ScreenCaptureKit) framework for screen recording instead.
+> ❗ **Important**:  Starting in macOS 12.3, use the [`ScreenCaptureKit`](https://developer.apple.com/documentation/screencapturekit) framework for screen recording instead.
 
 This class is a concrete capture input subclass that provides an interface to capture media from a screen or a portion of a screen.
 
-Use instances of this class as input sources for [`AVCaptureSession`](avcapturesession.md) objects that provide media data from one of the screens connected to the system, represented by [`CGDirectDisplayID`](https://developer.apple.com/documentation/CoreGraphics/CGDirectDisplayID).
+Use instances of this class as input sources for [`AVCaptureSession`](avcapturesession.md) objects that provide media data from one of the screens connected to the system, represented by [`CGDirectDisplayID`](https://developer.apple.com/documentation/coregraphics/cgdirectdisplayid).
 
 ## Topics
 
@@ -50,12 +50,12 @@ Use instances of this class as input sources for [`AVCaptureSession`](avcaptures
 ### Inherits From
 - [AVCaptureInput](avcaptureinput.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 
 ---

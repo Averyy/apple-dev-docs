@@ -54,11 +54,11 @@ Metal apps, particularly games, typically contain multiple render commands, each
 
 You encode individual commands into a render command encoder by calling [`MTLRenderCommandEncoder`](mtlrendercommandencoder.md) methods such as [`setVertexBuffer(_:offset:index:)`](mtlrendercommandencoder/setvertexbuffer(_:offset:index:).md) or [`drawPrimitives(type:vertexStart:vertexCount:instanceCount:baseInstance:)`](mtlrendercommandencoder/drawprimitives(type:vertexstart:vertexcount:instancecount:baseinstance:).md).
 
-![Layout diagram that shows render commands encoded individually.](https://docs-assets.developer.apple.com/published/5dc1c3a9c161dbf526c493cd27c255f9/icbs-with-cpu-encoding-1-IndividualCommands.png)
+![Layout diagram that shows render commands encoded individually.](/images/com.apple.metal/icbs-with-cpu-encoding-1-IndividualCommands.png)
 
 Recreating draws that were equivalent to ones you did in a previous queue can be tedious from a coding perspective and non-performant at runtime. Instead, move your repeated draws and their data buffers into an [`MTLIndirectCommandBuffer`](mtlindirectcommandbuffer.md) instance using an [`MTLIndirectRenderCommand`](mtlindirectrendercommand.md), thereby filling the ICB with commands. When you’re ready to use the ICB, encode individual executions of it by calling an `MTLRenderCommandEncoder` instance’s [`executeCommandsInBuffer:withRange:`](mtlrendercommandencoder/executecommandsinbuffer:withrange:.md) method.
 
-![Layout diagram that shows render commands encoded as grouped commands within an indirect command buffer, which is encoded as an individual command.](https://docs-assets.developer.apple.com/published/94b74ea8f716d9d364157fec02c459a1/icbs-with-cpu-encoding-2-IndirectCommandBuffers.png)
+![Layout diagram that shows render commands encoded as grouped commands within an indirect command buffer, which is encoded as an individual command.](/images/com.apple.metal/icbs-with-cpu-encoding-2-IndirectCommandBuffers.png)
 
 > **Note**: To access individual buffers referenced by an indirect command buffer, you need to call the `useResource:usage:` method for each buffer that you want to use. For more information, see the “Execute an Indirect Command Buffer” section.
 
@@ -144,7 +144,7 @@ for (int objIndex = 0; objIndex < AAPLNumObjects; objIndex++)
 
 The sample performs this encoding only once, before encoding any subsequent render commands. `_indirectCommandBuffer` contains a total of 16 draw calls, one for each shape to be rendered. Each draw call references the same transformation data, `_uniformBuffers`, but different vertex data, `_vertexBuffers[indx]`. Although the CPU encodes data only once, the sample issues 16 draw calls per frame.
 
-![Layout diagram that shows the commands encoded into an indirect command buffer with the CPU.](https://docs-assets.developer.apple.com/published/6fe3613067edf5429d368f7904d4ae20/icbs-with-cpu-encoding-3-IndirectCommandBufferCPUEncoding.png)
+![Layout diagram that shows the commands encoded into an indirect command buffer with the CPU.](/images/com.apple.metal/icbs-with-cpu-encoding-3-IndirectCommandBufferCPUEncoding.png)
 
 ##### Update the Data Used By an Icb
 

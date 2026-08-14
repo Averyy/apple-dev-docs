@@ -14,7 +14,7 @@ Often, your app subclasses [`SKScene`](skscene.md) to deliver gameplay. Your sub
 
 An alternative pattern is to assign a [`delegate`](skview/delegate.md) that handles [`SKScene`](skscene.md) instead. For example, if you make the view controller the delegate for your scene, it can use multiple scenes that share the same [`SKSceneDelegate`](skscenedelegate.md) implementations. The view controller participates in event handling and so it can respond to user input also.
 
-> ❗ **Important**:  On macOS, you need to set the window’s [`nextResponder`](https://developer.apple.com/documentation/AppKit/NSResponder/nextResponder) to your app’s view controller because by default, the view is the first responder to user input events.
+> ❗ **Important**:  On macOS, you need to set the window’s [`nextResponder`](https://developer.apple.com/documentation/appkit/nsresponder/nextresponder) to your app’s view controller because by default, the view is the first responder to user input events.
 
 ## See Also
 

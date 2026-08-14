@@ -61,7 +61,7 @@ NSPredicate *explicitMetadataOperator =
 
 - `key`: The metadata key for the value to be matched. For a list of preset keys, see [`Metadata Keys`](metadata-keys.md). You may also search using custom keys.
 - `operatorType`: Defines the relationship used to match the metadata’s value with the provided value.
-- `value`: The target value. These values must be [`NSString`](https://developer.apple.com/documentation/Foundation/NSString), [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber), or [`NSDate`](https://developer.apple.com/documentation/Foundation/NSDate) instances.
+- `value`: The target value. These values must be [`NSString`](https://developer.apple.com/documentation/foundation/nsstring), [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber), or [`NSDate`](https://developer.apple.com/documentation/foundation/nsdate) instances.
 
 ## See Also
 

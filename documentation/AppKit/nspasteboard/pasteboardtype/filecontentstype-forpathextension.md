@@ -16,7 +16,7 @@ static func fileContentsType(forPathExtension fileType: String) -> NSPasteboard.
 
 #### Discussion
 
-Returns an [`NSString`](https://developer.apple.com/documentation/Foundation/NSString) to a pasteboard type representing a file’s contents based on the supplied string `fileType`. `fileType` should generally be the extension part of a filename. The conversion from a named file type to a pasteboard type is simple; no mapping to standard pasteboard types is attempted.
+Returns an [`NSString`](https://developer.apple.com/documentation/foundation/nsstring) to a pasteboard type representing a file’s contents based on the supplied string `fileType`. `fileType` should generally be the extension part of a filename. The conversion from a named file type to a pasteboard type is simple; no mapping to standard pasteboard types is attempted.
 
 ## See Also
 

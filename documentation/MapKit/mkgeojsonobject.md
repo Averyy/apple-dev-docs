@@ -29,7 +29,7 @@ There’s no reason to create your own classes that conform to this protocol; on
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 ### Conforming Types
 - [MKGeoJSONFeature](mkgeojsonfeature.md)
 - [MKGeodesicPolyline](mkgeodesicpolyline.md)

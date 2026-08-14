@@ -41,8 +41,8 @@ Use the timestamp to seek a player to that position or to extract a thumbnail im
 ## Relationships
 
 ### Conforms To
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 - [VideoAnalyzer.Request](videoanalyzer/request.md)
 
 ## See Also

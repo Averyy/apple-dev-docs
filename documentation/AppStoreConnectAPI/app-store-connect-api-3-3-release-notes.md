@@ -10,7 +10,7 @@ App Store Connect API version 3.3 provides resources that enable you to automate
 
 ##### New Features
 
-- Developers who receive the entitlement can now configure and set up marketplace apps. For more information see: [`Creating an alternative app marketplace`](https://developer.apple.com/documentation/appdistribution/creating-an-alternative-app-marketplace) and [`Update on apps distributed in the European Union`](https://developer.apple.comhttps://developer.apple.com/support/dma-and-apps-in-the-eu/).
+- Developers who receive the entitlement can now configure and set up marketplace apps. For more information see: [`Creating an alternative app marketplace`](https://developer.apple.com/documentation/marketplacekit/creating-an-alternative-app-marketplace) and [`Update on apps distributed in the European Union`](https://developer.apple.comhttps://developer.apple.com/support/dma-and-apps-in-the-eu/).
 - You can now set the attribute `reviewType` when calling [`Modify an app store version`](patch-v1-appstoreversions-_id_.md) for iOS apps, to specify app destination.
 - You can now generate and read information about alternative distribution packages for distribution to EU users through an alternative marketplace. For more information see, [`Creating alternative distribution packages`](creating-alternative-distribution-packages.md).
 - You can now configure marketplace search [`Add a marketplace search detail url`](post-v1-marketplacesearchdetails.md).

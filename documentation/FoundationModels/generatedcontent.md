@@ -79,15 +79,15 @@ Generated content may contain a single value, an array, or key-value pairs with 
 ### Conforms To
 - [ConvertibleFromGeneratedContent](convertiblefromgeneratedcontent.md)
 - [ConvertibleToGeneratedContent](convertibletogeneratedcontent.md)
-- [Copyable](../Swift/Copyable.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Escapable](../Swift/Escapable.md)
+- [Copyable](../swift/copyable.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Escapable](../swift/escapable.md)
 - [Generable](generable.md)
 - [InstructionsRepresentable](instructionsrepresentable.md)
 - [PromptRepresentable](promptrepresentable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

@@ -20,7 +20,7 @@ class let keyboardFrameBeginUserInfoKey: String
 
 #### Discussion
 
-The value for this key is an [`NSValue`](https://developer.apple.com/documentation/Foundation/NSValue) object that contains a [`CGRect`](https://developer.apple.com/documentation/CoreFoundation/CGRect) for identifying the frame rectangle of the keyboard (in the screen’s coordinate space) before animating the keyboard. The frame rectangle reflects the current orientation of the device.
+The value for this key is an [`NSValue`](https://developer.apple.com/documentation/foundation/nsvalue) object that contains a [`CGRect`](https://developer.apple.com/documentation/corefoundation/cgrect) for identifying the frame rectangle of the keyboard (in the screen’s coordinate space) before animating the keyboard. The frame rectangle reflects the current orientation of the device.
 
 The keyboard’s frame uses the screen’s coordinate space, which is different than the coordinate space of your views. Although they might sometimes match, such as when your app is full screen, they might be different when your app isn’t full screen, such as in Split View, Slide Over, and Stage Manager. This means you need to account for this difference by converting the keyboard’s frame from the screen’s coordinate space to that of your views. For an example of how to handle this conversion, see [`keyboardFrameEndUserInfoKey`](uiresponder/keyboardframeenduserinfokey.md).
 

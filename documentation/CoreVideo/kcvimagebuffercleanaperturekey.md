@@ -22,7 +22,7 @@ let kCVImageBufferCleanApertureKey: CFString
 
 #### Discussion
 
-The dictionary is of type [`CFDictionary`](https://developer.apple.com/documentation/CoreFoundation/CFDictionary). See [`Image Buffer Clean Aperture Keys`](image-buffer-clean-aperture-keys.md) for more information.
+The dictionary is of type [`CFDictionary`](https://developer.apple.com/documentation/corefoundation/cfdictionary). See [`Image Buffer Clean Aperture Keys`](image-buffer-clean-aperture-keys.md) for more information.
 
 ## See Also
 

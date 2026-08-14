@@ -7,7 +7,6 @@ A class that asks a person for permission to forward notifications.
 
 **Availability**:
 - iOS 26.5+
-- iPadOS 26.5+
 
 ## Declaration
 

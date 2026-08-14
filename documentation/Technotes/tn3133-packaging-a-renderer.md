@@ -10,7 +10,7 @@ Several individual pieces make up a Metal renderer: The CPU-side app code, the G
 
 #### Configure the Package Manifest
 
-The package structure that enables you to package Swift, Metal, and shared C sources in a single Swift package requires two [`Target`](https://developer.apple.com/documentation/PackageDescription/Target) declarations, as shown in the following example package manifest:
+The package structure that enables you to package Swift, Metal, and shared C sources in a single Swift package requires two [`Target`](https://developer.apple.com/documentation/packagedescription/target) declarations, as shown in the following example package manifest:
 
 ```swift
 // swift-tools-version:5.5
@@ -38,7 +38,7 @@ let package = Package(
 
 The `MyRenderer` target contains the Swift source files, as well as the Metal source files.
 
-The `MySharedTypes` target contains the shared C structs within a header file. Store this header in the directory specified as the [`publicHeadersPath`](https://developer.apple.com/documentation/PackageDescription/Target/publicHeadersPath) for this target, so that the header is accessible from the `MyRenderer` target. It’s also important to have at least one Obj-C, C, or C++ implementation file in this target.
+The `MySharedTypes` target contains the shared C structs within a header file. Store this header in the directory specified as the [`publicHeadersPath`](https://developer.apple.com/documentation/packagedescription/target/publicheaderspath) for this target, so that the header is accessible from the `MyRenderer` target. It’s also important to have at least one Obj-C, C, or C++ implementation file in this target.
 
 > **Note**: A target cannot have source files from both Swift and C-family languages, but it’s OK to have Swift and Metal sources in the same target because SwiftPM treats Metal files as resource files.
 
@@ -63,7 +63,7 @@ Here is a visual representation of the file structure described in the example a
 
 #### Accessing the Shared C Structs in Swift
 
-Swift Package Manager creates a module that contains the C structs found in the [`publicHeadersPath`](https://developer.apple.com/documentation/PackageDescription/Target/publicHeadersPath), and because the Swift target is dependent on the C target, the C structs are directly accessible from Swift.
+Swift Package Manager creates a module that contains the C structs found in the [`publicHeadersPath`](https://developer.apple.com/documentation/packagedescription/target/publicheaderspath), and because the Swift target is dependent on the C target, the C structs are directly accessible from Swift.
 
 Continuing with the same naming from the example above, consider the following header located at `MyRenderer/Sources/MySharedTypes/include/SharedTypes.h`:
 
@@ -115,7 +115,7 @@ do {
 }
 ```
 
-For more information about the `Bundle.module` static property, see [`Bundling resources with a Swift package`](https://developer.apple.com/documentation/Xcode/bundling-resources-with-a-swift-package).
+For more information about the `Bundle.module` static property, see [`Bundling resources with a Swift package`](https://developer.apple.com/documentation/xcode/bundling-resources-with-a-swift-package).
 
 #### Introducing a Custom Metal Compilation Step
 

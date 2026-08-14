@@ -10,7 +10,7 @@ An image histogram is a representation of an image that describes its color tone
 
 The histogram of the following low-contrast image shows that almost all of its pixel values are clustered around the mid values. There are no pixels on the left side — corresponding to low values — indicating the image doesn’t contain any very dark colors. Similarly, there are no pixels on the right side — corresponding to high values — indicating the images doesn’t contain any very bright colors. The thin, gray line shows the cumulative histogram, that is, a running sum of pixel counts at each intensity.
 
-![Two side-by-side images showing a low-contrast photograph of a landscape and a chart that represents the photograph’s histogram. The vertical peaks in the chart are clustered around the horizontal center. The continous line that represents the cumulative histogram is flat at either side and sloped in the center.](https://docs-assets.developer.apple.com/published/026ed33c3a890553662e0f2c19e72dc2/media-3702117%402x.png)
+![Two side-by-side images showing a low-contrast photograph of a landscape and a chart that represents the photograph’s histogram. The vertical peaks in the chart are clustered around the horizontal center. The continous line that represents the cumulative histogram is flat at either side and sloped in the center.](/images/com.apple.accelerate/media-3702117@2x.png)
 
 vImage provides functions that can either equalize or stretch an image’s histogram to enhance the contrast of an image.
 
@@ -42,7 +42,7 @@ do {
 
 On return, `destinationBuffer` contains the transformed image. The picture below shows the low-contrast image after histogram equalization. The operation distributed the nonzero histogram bins across the entire range of values, and the result has a lot more contrast. The cumulative histogram is nearly a straight diagonal line, indicating an almost uniform distribution of values.
 
-![Two side-by-side images showing a very high-contrast photograph of a landscape and a chart that represents the photograph’s histogram. The vertical peaks in the chart are unevenly distributed across the length of the chart. The continous line that represents the cumulative histogram follows the diagonal line from the bottom left to the top right of the chart.](https://docs-assets.developer.apple.com/published/0c3cc43be6656d5a56b6f83810e34685/media-3702119%402x.png)
+![Two side-by-side images showing a very high-contrast photograph of a landscape and a chart that represents the photograph’s histogram. The vertical peaks in the chart are unevenly distributed across the length of the chart. The continous line that represents the cumulative histogram follows the diagonal line from the bottom left to the top right of the chart.](/images/com.apple.accelerate/media-3702119@2x.png)
 
 Note that the histogram bins aren’t evenly distributed throughout the resulting histogram. The amount of stretching correlates to the number of pixels in each bin.
 
@@ -74,7 +74,7 @@ do {
 
 On return, `destinationBuffer` contains the transformed image. The picture below shows the low-contrast image after histogram stretching. The result has a lot more contrast, and its histogram shows that values are evenly distributed throughout the entire range. The shape of the contrast stretched image’s cumulative histogram is very similar to the original image’s cumulative histogram.
 
-![Two side-by-side images show a high-contrast photograph of a landscape and a chart that represents the photograph’s histogram. The vertical peaks in the chart are evenly distributed across the length of the chart. The continous line that represents the cumulative histogram rises where the histogram values are high and is flat where the histogram values are low. ](https://docs-assets.developer.apple.com/published/6100f359911acdd9850bf018f7a3e2b3/media-3702118%402x.png)
+![Two side-by-side images show a high-contrast photograph of a landscape and a chart that represents the photograph’s histogram. The vertical peaks in the chart are evenly distributed across the length of the chart. The continous line that represents the cumulative histogram rises where the histogram values are high and is flat where the histogram values are low. ](/images/com.apple.accelerate/media-3702118@2x.png)
 
 ##### Apply Ends in Contrast Stretching to an Image
 
@@ -82,7 +82,7 @@ The vImage ends-in contrast stretching functions accept parameters that allow yo
 
 The following figure illustrates how ends-in contrast stretching discards elements from a histogram and stretches the remaining values. The operation maps the 25% low values and 25% high values to 0 and 255 (for an 8-bit image), respectively. The result contains the central 50% of the source histogram stretched to fill the remaining 254 bins.
 
-![Two stacked graphics representing histograms before and after applying ends-in contrast stretching. The original histogram that’s displayed in the top graphic is split 25% - 50% - 25%. The transformed original histogram that’s displayed in the bottom graphic contains the middle 50% of the original  but stretched to its full width.](https://docs-assets.developer.apple.com/published/5fcdfcdc0cf73c12cbc05b7c75d4a7bf/media-3723432%402x.png)
+![Two stacked graphics representing histograms before and after applying ends-in contrast stretching. The original histogram that’s displayed in the top graphic is split 25% - 50% - 25%. The transformed original histogram that’s displayed in the bottom graphic contains the middle 50% of the original  but stretched to its full width.](/images/com.apple.accelerate/media-3723432@2x.png)
 
 Note that this illustration isn’t to scale; the operation uses percentages based on the number of pixels for each intensity.
 
@@ -121,7 +121,7 @@ do {
 
 On return, `destinationBuffer` contains the transformed image. The picture below shows the low-contrast image after ends-in contrast stretching. This result is much darker overall with the histogram shifted to the left.
 
-![Two side-by-side images show a dark photograph of a landscape and a chart that represents the photograph’s histogram. The vertical peaks in the chart are clustered at the left side of the chart. The continous line that represents the cumulative histogram rises rapidly and flattens out where the histogram values are low.](https://docs-assets.developer.apple.com/published/4ddaf851a626d3fde67133153b8d16f3/media-3702115%402x.png)
+![Two side-by-side images show a dark photograph of a landscape and a chart that represents the photograph’s histogram. The vertical peaks in the chart are clustered at the left side of the chart. The continous line that represents the cumulative histogram rises rapidly and flattens out where the histogram values are low.](/images/com.apple.accelerate/media-3702115@2x.png)
 
 Set the `percent_high` parameter of the [`vImageEndsInContrastStretch_ARGB8888(_:_:_:_:_:)`](vimageendsincontraststretch_argb8888(_:_:_:_:_:).md) function to define the percentage of pixels that the operation maps to the high end of the transformed image’s histogram. The following code shows how to perform ends-in contrast stretching for [`vImage_Buffer`](vimage_buffer.md) and [`vImage.PixelBuffer`](vimage/pixelbuffer.md) structures with `percent_high` set to 25% for all channels:
 
@@ -157,7 +157,7 @@ do {
 
 On return, `destinationBuffer` contains the transformed image. The picture below shows the low-contrast image after ends-in contrast stretching. This result is much brighter overall with the histogram shifted to the right.
 
-![Two side-by-side images show a bright photograph of a landscape and a chart that represents the photograph’s histogram. The vertical peaks in the chart are clustered at the right side of the chart. The continous line that represents the cumulative histogram is mostly flat and rises where the histogram values are high.](https://docs-assets.developer.apple.com/published/a4740fd347ae650188fd01e1c0a56d16/media-3702116%402x.png)
+![Two side-by-side images show a bright photograph of a landscape and a chart that represents the photograph’s histogram. The vertical peaks in the chart are clustered at the right side of the chart. The continous line that represents the cumulative histogram is mostly flat and rises where the histogram values are high.](/images/com.apple.accelerate/media-3702116@2x.png)
 
 ## See Also
 

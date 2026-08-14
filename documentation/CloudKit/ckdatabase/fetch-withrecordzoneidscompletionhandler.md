@@ -25,7 +25,7 @@ func fetch(withRecordZoneIDs zoneIDs: [CKRecordZone.ID], completionHandler: @esc
 
 The completion handler takes the following parameters:
 
-- A [`Result`](https://developer.apple.com/documentation/Swift/Result) that contains either a dictionary of fetched record zones, or an error if the request fails, such as when the network is unavailable or the device doesn’t have an active iCloud account. When present, the dictionary uses the identifiers you specify in `zoneIDs` as its keys. The value of each key is a [`Result`](https://developer.apple.com/documentation/Swift/Result) that contains either the corresponding fetched record zone, or an error that describes why CloudKit can’t provide that record zone.
+- A [`Result`](https://developer.apple.com/documentation/swift/result) that contains either a dictionary of fetched record zones, or an error if the request fails, such as when the network is unavailable or the device doesn’t have an active iCloud account. When present, the dictionary uses the identifiers you specify in `zoneIDs` as its keys. The value of each key is a [`Result`](https://developer.apple.com/documentation/swift/result) that contains either the corresponding fetched record zone, or an error that describes why CloudKit can’t provide that record zone.
 
 For information on a more configurable way to fetch specific record zones, see [`CKFetchRecordZonesOperation`](ckfetchrecordzonesoperation.md).
 

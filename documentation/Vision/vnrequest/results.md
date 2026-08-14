@@ -26,7 +26,7 @@ var results: [VNObservation]? { get }
 
 #### Discussion
 
-If the request fails, this property is [`nil`](https://developer.apple.com/documentation/ObjectiveC/nil-227m0). Otherwise, it contains an array of [`VNObservation`](vnobservation.md) subclasses specific to the [`VNRequest`](vnrequest.md) subclass.
+If the request fails, this property is [`nil`](https://developer.apple.com/documentation/objectivec/nil-227m0). Otherwise, it contains an array of [`VNObservation`](vnobservation.md) subclasses specific to the [`VNRequest`](vnrequest.md) subclass.
 
 Don’t access this property until the request has finished processing.
 

@@ -25,7 +25,7 @@ An `OSStatus` result code.
 ## Parameters
 
 - `inPersistentOwnerID`: A unique identifier of the owning object, such as `com.mycompany.MyApp`. If you pass `NULL`, the client owns the connection and it’s automatically disposed with the client.
-- `inConnectionParams`: A [`MIDIThruConnectionParams`](midithruconnectionparams.md) object that’s contained in a [`CFData`](https://developer.apple.com/documentation/CoreFoundation/CFData).
+- `inConnectionParams`: A [`MIDIThruConnectionParams`](midithruconnectionparams.md) object that’s contained in a [`CFData`](https://developer.apple.com/documentation/corefoundation/cfdata).
 - `outConnection`: On successful return, a reference to the newly created connection.
 
 ## See Also

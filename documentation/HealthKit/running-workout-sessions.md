@@ -37,15 +37,15 @@ healthStore.requestAuthorization(toShare: typesToShare, read: typesToRead) { (su
 }
 ```
 
-> **Note**:  In watchOS 6 and later, users can authorize reading and sharing data on Apple Watch. As a result, you must add usage descriptions to your WatchKit App Extension. Use the [`NSHealthShareUsageDescription`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSHealthShareUsageDescription) key to describe why your app needs to read the requested data. Use [`NSHealthUpdateUsageDescription`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSHealthUpdateUsageDescription) for the data your app intends to write. For projects created using Xcode 13 or later, set these keys in the Target Properties list on the app’s Info tab. For projects created with Xcode 12 or earlier, set these keys in the apps `Info.plist` file. For more information, see [`Information Property List`](https://developer.apple.com/documentation/BundleResources/Information-Property-List).
+> **Note**:  In watchOS 6 and later, users can authorize reading and sharing data on Apple Watch. As a result, you must add usage descriptions to your WatchKit App Extension. Use the [`NSHealthShareUsageDescription`](https://developer.apple.com/documentation/bundleresources/information-property-list/nshealthshareusagedescription) key to describe why your app needs to read the requested data. Use [`NSHealthUpdateUsageDescription`](https://developer.apple.com/documentation/bundleresources/information-property-list/nshealthupdateusagedescription) for the data your app intends to write. For projects created using Xcode 13 or later, set these keys in the Target Properties list on the app’s Info tab. For projects created with Xcode 12 or earlier, set these keys in the apps `Info.plist` file. For more information, see [`Information Property List`](https://developer.apple.com/documentation/bundleresources/information-property-list).
 
 Apps with an active workout session can run in the background, so you need to add the background modes capability to your WatchKit App Extension.
 
 Workout sessions require the Workout processing background mode. If your app plays audio or provides haptic feedback during the workout session, you must also add the Audio background mode.
 
-![A screenshot showing the Audio and Workout processing background modes added to the WatchKit App Extension.](https://docs-assets.developer.apple.com/published/bc54a72b80a475ae4b05fff2aba3b88a/media-3384924%402x.png)
+![A screenshot showing the Audio and Workout processing background modes added to the WatchKit App Extension.](/images/com.apple.healthkit/media-3384924@2x.png)
 
-Use the [`AVAudioPlayer`](https://developer.apple.com/documentation/AVFAudio/AVAudioPlayer) class to play short audio clips. To play long form audio in the background, see [`Playing Background Audio`](https://developer.apple.com/documentation/WatchKit/playing-background-audio).
+Use the [`AVAudioPlayer`](https://developer.apple.com/documentation/avfaudio/avaudioplayer) class to play short audio clips. To play long form audio in the background, see [`Playing Background Audio`](https://developer.apple.com/documentation/watchkit/playing-background-audio).
 
 > **Note**:  Workout apps can use the AVFoundation framework to play short audio clips in the background, such as coaching or notifications. In order to play an audio clip, an active workout session must be running; any attempt to play background audio outside a workout session are invalid.
 
@@ -95,7 +95,7 @@ builder.delegate = self
 
 Your [`HKWorkoutSessionDelegate`](hkworkoutsessiondelegate.md) receives updates whenever the session’s state changes, an event occurs, or the session fails due to an error. Your [`HKLiveWorkoutBuilderDelegate`](hkliveworkoutbuilderdelegate.md) receives updates when either Apple Watch or your app adds a new sample or event to the builder.
 
-By default, the workout session automatically forwards all events to the builder, so both delegates should receive the same set of events. However, you can set the builder’s [`shouldCollectWorkoutEvents`](hkliveworkoutbuilder/shouldcollectworkoutevents.md) property to [`false`](https://developer.apple.com/documentation/Swift/false) if you want to control the events set to the builder.
+By default, the workout session automatically forwards all events to the builder, so both delegates should receive the same set of events. However, you can set the builder’s [`shouldCollectWorkoutEvents`](hkliveworkoutbuilder/shouldcollectworkoutevents.md) property to [`false`](https://developer.apple.com/documentation/swift/false) if you want to control the events set to the builder.
 
 Finally, start the session and the builder.
 
@@ -217,7 +217,7 @@ The [`endCollection(withEnd:completion:)`](hkworkoutbuilder/endcollection(withen
 
 ##### Recover From Crashes
 
-If your app crashes during a workout session, the system calls your extension delegate’s [`handleActiveWorkoutRecovery()`](https://developer.apple.com/documentation/WatchKit/WKExtensionDelegate/handleActiveWorkoutRecovery()) method when the app relaunches. In your implementation of this method, call the HealthKit store’s [`recoverActiveWorkoutSession(completion:)`](hkhealthstore/recoveractiveworkoutsession(completion:).md) method. HealthKit attempts to restore the previous workout session, returning either a new session object or an error to the completion block.
+If your app crashes during a workout session, the system calls your extension delegate’s [`handleActiveWorkoutRecovery()`](https://developer.apple.com/documentation/watchkit/wkextensiondelegate/handleactiveworkoutrecovery()) method when the app relaunches. In your implementation of this method, call the HealthKit store’s [`recoverActiveWorkoutSession(completion:)`](hkhealthstore/recoveractiveworkoutsession(completion:).md) method. HealthKit attempts to restore the previous workout session, returning either a new session object or an error to the completion block.
 
 As soon as you receive the session object, you must access its builder and set up your data source and delegates again.
 

@@ -8,7 +8,7 @@ Integrate web content into your SwiftUI apps with new standard views you connect
 
 Present web content in your SwiftUI app with WebKit for SwiftUI. Use WebKit features to observe content and customize the web browsing and display experience.
 
-Create a [`WebView`](webview-swift.struct.md) with a [`URL`](https://developer.apple.com/documentation/Foundation/URL) to display your web content. Apply view modifiers for various customizations, like displaying a find navigator, customizing scrolling behavior, configuring gesture behavior, and more.
+Create a [`WebView`](webview-swift.struct.md) with a [`URL`](https://developer.apple.com/documentation/foundation/url) to display your web content. Apply view modifiers for various customizations, like displaying a find navigator, customizing scrolling behavior, configuring gesture behavior, and more.
 
 Connect [`WebView`](webview-swift.struct.md) to a [`WebPage`](webpage.md) to interact with and react to changes in web content, such as observing navigation progress and calling JavaScript. You can use [`WebPage`](webpage.md) by itself when you don’t need to display the content directly.
 

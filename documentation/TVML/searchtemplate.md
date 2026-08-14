@@ -8,7 +8,7 @@ Searches for a media item based on user input.
 
 Use the `searchTemplate` element to display a text field that takes user input in order to search for a specific item; for example, looking for a specific movie to download. Developers can also display preselected results in a `shelf`, `list`, or `collectionList` element under the search field. The following figure shows the basic layout for a `searchTemplate` page. The theme for the search template defaults to the system preference.
 
-![Layout diagram showing a search field at the top, a keyboard area directly below, and a large area for search results at the bottom.](https://docs-assets.developer.apple.com/published/961a6394b691c143bea3c091f1f364fd/searchtemplate-1%402x.png)
+![Layout diagram showing a search field at the top, a keyboard area directly below, and a large area for search results at the bottom.](/images/com.apple.TVML/searchtemplate-1@2x.png)
 
 ##### Main Elements
 
@@ -77,7 +77,7 @@ The following listing shows the TVML for a `searchTemplate` example. The example
 
 The following listing shows the output for the above example:
 
-![Screenshot showing a search field at the top of the screen and three movies at the bottom.](https://docs-assets.developer.apple.com/published/b2d096819f273e48e28d379bf322dc60/searchtemplate-2%402x.png)
+![Screenshot showing a search field at the top of the screen and three movies at the bottom.](/images/com.apple.TVML/searchtemplate-2@2x.png)
 
 ## Topics
 

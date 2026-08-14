@@ -22,7 +22,7 @@ let kCVPixelBufferMetalCompatibilityKey: CFString
 
 #### Discussion
 
-The value for this key is of type [`CFBoolean`](https://developer.apple.com/documentation/CoreFoundation/CFBoolean). To use pixel buffers with the Metal framework, see [`CVMetalTextureCache`](cvmetaltexturecache-q3j.md).
+The value for this key is of type [`CFBoolean`](https://developer.apple.com/documentation/corefoundation/cfboolean). To use pixel buffers with the Metal framework, see [`CVMetalTextureCache`](cvmetaltexturecache-q3j.md).
 
 ## See Also
 

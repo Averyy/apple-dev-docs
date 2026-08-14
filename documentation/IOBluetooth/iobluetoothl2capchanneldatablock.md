@@ -24,7 +24,7 @@ struct IOBluetoothL2CAPChannelDataBlock
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../Swift/BitwiseCopyable.md)
+- [BitwiseCopyable](../swift/bitwisecopyable.md)
 
 ## See Also
 

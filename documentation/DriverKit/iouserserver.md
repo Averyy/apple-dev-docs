@@ -43,7 +43,7 @@ You do not create or use instances of this class directly. The system creates th
 
 - [IOUserClient](iouserclient.md)
   A connection to another service that the system manages.
-- [com.apple.developer.driverkit.userclient-access](../BundleResources/Entitlements/com.apple.developer.driverkit.userclient-access.md)
+- [com.apple.developer.driverkit.userclient-access](../bundleresources/entitlements/com.apple.developer.driverkit.userclient-access.md)
   An array of strings that represent macOS driver extensions that may communicate with other DriverKit services.
 - [Communicating between a DriverKit extension and a client app](communicating-between-a-driverkit-extension-and-a-client-app.md)
   Send and receive different kinds of data securely by validating inputs and asynchronously by storing and using a callback.

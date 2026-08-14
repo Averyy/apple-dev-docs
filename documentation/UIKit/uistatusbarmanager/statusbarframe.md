@@ -19,7 +19,7 @@ var statusBarFrame: CGRect { get }
 
 #### Discussion
 
-The frame rectangle is in the coordinate space of the associated [`UIWindowScene`](uiwindowscene.md) object. If the status bar is hidden, the value of this property is [`CGRectZero`](https://developer.apple.com/documentation/CoreGraphics/CGRectZero).
+The frame rectangle is in the coordinate space of the associated [`UIWindowScene`](uiwindowscene.md) object. If the status bar is hidden, the value of this property is [`CGRectZero`](https://developer.apple.com/documentation/coregraphics/cgrectzero).
 
 
 ---

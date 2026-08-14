@@ -12,7 +12,7 @@ Generate image masks for people automatically by using semantic person-segmentat
 
 #### Overview
 
-You can use image masks to make selective adjustments to particular areas of an image. For example, the illustration below shows how to use a mask to perform a blend operation to replace the background behind the subject. ![An illustration of an image-processing operation that blends an original and mask image of a person with a replacement background image. The operation produces a new image that replaces the original background with the background image.](https://docs-assets.developer.apple.com/published/2033bb7dc9b1db750f396ec3fe9cf2a7/image_mask.png)
+You can use image masks to make selective adjustments to particular areas of an image. For example, the illustration below shows how to use a mask to perform a blend operation to replace the background behind the subject. ![An illustration of an image-processing operation that blends an original and mask image of a person with a replacement background image. The operation produces a new image that replaces the original background with the background image.](/images/Vision/image_mask.png)
 
 In iOS and tvOS 15 and macOS 12, Vision makes it simple for you to generate image masks for people it finds in images and video by using the [`VNGeneratePersonSegmentationRequest`](https://developer.apple.comhttps://developer.apple.com/documentation/vision/vngeneratepersonsegmentationrequest) class. This new request type brings the semantic person-segmentation capabilities found in frameworks like ARKit and AVFoundation to the Vision framework.
 
@@ -36,7 +36,7 @@ facePoseRequest.revision = VNDetectFaceRectanglesRequestRevision3
 
 `VNGeneratePersonSegmentationRequest` generates an image mask for a person it detects in an image. The app can set the value for request’s [`qualityLevel`](https://developer.apple.comhttp://developer.apple.com/documentation/vision/vngeneratepersonsegmentationrequest/3750989-qualitylevel) property to `.fast`, `.balanced`, or `.accurate`; this value determines the quality of the generated mask as shown in the illustration below.
 
-![An image that shows the quality of the image masks that the request generates when it uses its .fast, .balanced, and .accurate quality level settings.](https://docs-assets.developer.apple.com/published/d492c4699132f6c8aebedddd742fc7ee/quality_levels.png)
+![An image that shows the quality of the image masks that the request generates when it uses its .fast, .balanced, and .accurate quality level settings.](/images/Vision/quality_levels.png)
 
 Because the sample processes live video, it chooses `.balanced`, which provides a mixture of accuracy and performance. It also sets the format of the mask image that the request generates to an 8-bit, one-component format where `0` represents black.
 
@@ -110,7 +110,7 @@ currentCIImage = blendFilter.outputImage?.oriented(.left)
 
 ## See Also
 
-- [Detecting human actions in a live video feed](../CreateML/detecting-human-actions-in-a-live-video-feed.md)
+- [Detecting human actions in a live video feed](../createml/detecting-human-actions-in-a-live-video-feed.md)
   Identify body movements by sending a person’s pose data from a series of video frames to an action-classification model.
 - [Segmenting and colorizing individuals from a surrounding scene](segmenting-and-colorizing-individuals-from-a-surrounding-scene.md)
   Use the Vision framework to isolate and apply colors to people in an image.

@@ -20,7 +20,7 @@ This sample demonstrates dynamic terrain generation on an outdoor landscape, usi
 - Grass
 - Sand
 
-![Screenshot of the sample app running to show the different habitats visually.](https://docs-assets.developer.apple.com/published/99d45f3f5b748f9b4ac9dfcc8e81e6ec/dynamic-terrain-with-argument-buffers-1-screenshot.png)
+![Screenshot of the sample app running to show the different habitats visually.](/images/com.apple.metal/dynamic-terrain-with-argument-buffers-1-screenshot.png)
 
 > **Note**: This sample reduces the overhead of encoding commands on the CPU by using argument buffers. For an introduction to argument buffers, see the samples listed in [`Buffers`](buffers.md).
 

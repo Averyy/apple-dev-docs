@@ -16,7 +16,7 @@ let IKSlideshowAudioFile: String
 
 #### Discussion
 
-The associated value is an [`NSURL`](https://developer.apple.com/documentation/Foundation/NSURL) object.
+The associated value is an [`NSURL`](https://developer.apple.com/documentation/foundation/nsurl) object.
 
 ## See Also
 

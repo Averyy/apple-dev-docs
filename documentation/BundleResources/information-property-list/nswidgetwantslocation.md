@@ -16,9 +16,9 @@ A Boolean value that indicates a widget uses the user’s location information.
 
 #### Discussion
 
-To access the user’s location information from a widget, set the value to [`true`](https://developer.apple.com/documentation/Swift/true) in the widget extension’s `Info.plist` file.
+To access the user’s location information from a widget, set the value to [`true`](https://developer.apple.com/documentation/swift/true) in the widget extension’s `Info.plist` file.
 
-Before a widget can access location information, the containing app must request authorization from the user. The containing app’s `Info.plist` file must also contain relevant purpose strings. For more information, see [`Requesting authorization to use location services`](https://developer.apple.com/documentation/CoreLocation/requesting-authorization-to-use-location-services).
+Before a widget can access location information, the containing app must request authorization from the user. The containing app’s `Info.plist` file must also contain relevant purpose strings. For more information, see [`Requesting authorization to use location services`](https://developer.apple.com/documentation/corelocation/requesting-authorization-to-use-location-services).
 
 ## See Also
 

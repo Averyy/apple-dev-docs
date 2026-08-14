@@ -24,7 +24,7 @@ CFMutableCharacterSet manages dynamic character sets. The basic interface for ma
 
 You create a mutable character set object using either the [`CFCharacterSetCreateMutable(_:)`](cfcharactersetcreatemutable(_:).md) or [`CFCharacterSetCreateMutableCopy(_:_:)`](cfcharactersetcreatemutablecopy(_:_:).md) function.
 
-CFMutableCharacterSet is “toll-free bridged” with its Cocoa Foundation counterpart, [`NSMutableCharacterSet`](https://developer.apple.com/documentation/Foundation/NSMutableCharacterSet). This means that the Core Foundation type is interchangeable in function or method calls with the bridged Foundation object. Therefore, in a method where you see an `NSMutableCharacterSet *` parameter, you can pass in a `CFMutableCharacterSetRef`, and in a function where you see a `CFMutableCharacterSetRef` parameter, you can pass in an NSMutableCharacterSet instance. This capability also applies to concrete subclasses of NSMutableCharacterSet. See [`Toll-Free Bridged Types`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFDesignConcepts/Articles/tollFreeBridgedTypes.html#//apple_ref/doc/uid/TP40010677) for more information on toll-free bridging.
+CFMutableCharacterSet is “toll-free bridged” with its Cocoa Foundation counterpart, [`NSMutableCharacterSet`](https://developer.apple.com/documentation/foundation/nsmutablecharacterset). This means that the Core Foundation type is interchangeable in function or method calls with the bridged Foundation object. Therefore, in a method where you see an `NSMutableCharacterSet *` parameter, you can pass in a `CFMutableCharacterSetRef`, and in a function where you see a `CFMutableCharacterSetRef` parameter, you can pass in an NSMutableCharacterSet instance. This capability also applies to concrete subclasses of NSMutableCharacterSet. See [`Toll-Free Bridged Types`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFDesignConcepts/Articles/tollFreeBridgedTypes.html#//apple_ref/doc/uid/TP40010677) for more information on toll-free bridging.
 
 ## Topics
 
@@ -56,8 +56,8 @@ CFMutableCharacterSet is “toll-free bridged” with its Cocoa Foundation count
 ### Inherits From
 - [CFCharacterSet](cfcharacterset.md)
 ### Conforms To
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
 
 ## See Also
 

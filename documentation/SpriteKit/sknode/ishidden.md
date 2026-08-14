@@ -27,7 +27,7 @@ var isHidden: Bool { get set }
 
 #### Discussion
 
-When hidden, a node and its descendants are not rendered. However, they still exist in the scene and continue to interact in other ways. For example, the node’s actions still run and the node can still be intersected with other nodes. The default value is [`false`](https://developer.apple.com/documentation/Swift/false).
+When hidden, a node and its descendants are not rendered. However, they still exist in the scene and continue to interact in other ways. For example, the node’s actions still run and the node can still be intersected with other nodes. The default value is [`false`](https://developer.apple.com/documentation/swift/false).
 
 ## See Also
 

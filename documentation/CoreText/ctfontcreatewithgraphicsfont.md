@@ -22,7 +22,7 @@ func CTFontCreateWithGraphicsFont(_ graphicsFont: CGFont, _ size: CGFloat, _ mat
 
 #### Return Value
 
-A new font reference for an existing [`CGFont`](https://developer.apple.com/documentation/CoreGraphics/CGFont) object with the specified size, matrix, and additional attributes.
+A new font reference for an existing [`CGFont`](https://developer.apple.com/documentation/coregraphics/cgfont) object with the specified size, matrix, and additional attributes.
 
 ## Parameters
 

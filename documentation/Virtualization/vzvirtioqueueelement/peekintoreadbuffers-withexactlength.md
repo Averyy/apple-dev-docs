@@ -16,7 +16,7 @@ func peekIntoReadBuffers(withExactLength exactLength: Int) throws -> Data
 
 #### Return Value
 
-An [`NSData`](https://developer.apple.com/documentation/Foundation/NSData) object filled with the memory that the framework copied, or `nil` if the peek failed.
+An [`NSData`](https://developer.apple.com/documentation/foundation/nsdata) object filled with the memory that the framework copied, or `nil` if the peek failed.
 
 #### Discussion
 

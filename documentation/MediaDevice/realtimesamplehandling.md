@@ -53,7 +53,7 @@ Use `AudioServerDriver` to receive system audio samples, then use `AudioToolbox`
 ## Relationships
 
 ### Inherits From
-- [AppExtension](../ExtensionFoundation/AppExtension.md)
+- [AppExtension](../extensionfoundation/appextension.md)
 - [MediaDeviceExtension](mediadeviceextension.md)
 
 ## See Also

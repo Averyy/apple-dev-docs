@@ -30,7 +30,7 @@ When you delete the data for multiple entities from your app’s data store, use
 
 ## Parameters
 
-- `identifiers`: An array of identifiers for your app’s entities. Typically, you find an entity’s identifier in its `id` property, which you add as part of your implementation of the [`Identifiable`](https://developer.apple.com/documentation/Swift/Identifiable) protocol.
+- `identifiers`: An array of identifiers for your app’s entities. Typically, you find an entity’s identifier in its `id` property, which you add as part of your implementation of the [`Identifiable`](https://developer.apple.com/documentation/swift/identifiable) protocol.
 
 
 ---

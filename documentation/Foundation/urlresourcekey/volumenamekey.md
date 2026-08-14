@@ -22,7 +22,7 @@ static let volumeNameKey: URLResourceKey
 
 #### Discussion
 
-Settable only if `NSURLVolumeSupportsRenamingKey` is [`true`](https://developer.apple.com/documentation/Swift/true).
+Settable only if `NSURLVolumeSupportsRenamingKey` is [`true`](https://developer.apple.com/documentation/swift/true).
 
 ## See Also
 

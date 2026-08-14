@@ -22,13 +22,13 @@ func fileExists(atPath path: String, isDirectory: UnsafeMutablePointer<ObjCBool>
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/Swift/true) if a file at the specified path exists, or [`false`](https://developer.apple.com/documentation/Swift/false) if the file’s does not exist or its existence could not be determined.
+[`true`](https://developer.apple.com/documentation/swift/true) if a file at the specified path exists, or [`false`](https://developer.apple.com/documentation/swift/false) if the file’s does not exist or its existence could not be determined.
 
 #### Discussion
 
-If the file at `path` is inaccessible to your app, perhaps because one or more parent directories are inaccessible, this method returns [`false`](https://developer.apple.com/documentation/Swift/false). If the final element in `path` specifies a symbolic link, this method traverses the link and returns [`true`](https://developer.apple.com/documentation/Swift/true) or [`false`](https://developer.apple.com/documentation/Swift/false) based on the existence of the file at the link destination.
+If the file at `path` is inaccessible to your app, perhaps because one or more parent directories are inaccessible, this method returns [`false`](https://developer.apple.com/documentation/swift/false). If the final element in `path` specifies a symbolic link, this method traverses the link and returns [`true`](https://developer.apple.com/documentation/swift/true) or [`false`](https://developer.apple.com/documentation/swift/false) based on the existence of the file at the link destination.
 
-If you need to further determine whether `path` is a package, use the [`isFilePackage(atPath:)`](https://developer.apple.com/documentation/AppKit/NSWorkspace/isFilePackage(atPath:)) method of [`NSWorkspace`](https://developer.apple.com/documentation/AppKit/NSWorkspace).
+If you need to further determine whether `path` is a package, use the [`isFilePackage(atPath:)`](https://developer.apple.com/documentation/appkit/nsworkspace/isfilepackage(atpath:)) method of [`NSWorkspace`](https://developer.apple.com/documentation/appkit/nsworkspace).
 
 The following example code gets an array that identifies the fonts in the user’s fonts directory:
 
@@ -53,8 +53,8 @@ if ([paths count] == 1) {
 
 ## Parameters
 
-- `path`: The path of a file or directory. If `path` begins with a tilde (`~`), it must first be expanded with [`expandingTildeInPath`](nsstring/expandingtildeinpath.md), or this method will return [`false`](https://developer.apple.com/documentation/Swift/false).
-- `isDirectory`: Upon return, contains [`true`](https://developer.apple.com/documentation/Swift/true) if `path` is a directory or if the final path element is a symbolic link that points to a directory; otherwise, contains [`false`](https://developer.apple.com/documentation/Swift/false). If `path` doesn’t exist, this value is undefined upon return. Pass `NULL` if you do not need this information.
+- `path`: The path of a file or directory. If `path` begins with a tilde (`~`), it must first be expanded with [`expandingTildeInPath`](nsstring/expandingtildeinpath.md), or this method will return [`false`](https://developer.apple.com/documentation/swift/false).
+- `isDirectory`: Upon return, contains [`true`](https://developer.apple.com/documentation/swift/true) if `path` is a directory or if the final path element is a symbolic link that points to a directory; otherwise, contains [`false`](https://developer.apple.com/documentation/swift/false). If `path` doesn’t exist, this value is undefined upon return. Pass `NULL` if you do not need this information.
 
 ## See Also
 

@@ -19,7 +19,7 @@ Even if you’re a solo developer, you might create several workflows. To help d
 - **Name**: Choose a name that’s easy to recognize. For example, name a workflow “Nightly Builds” if it distributes a new version of your app to your team every night.
 - **Description**: Provide additional context that explains the workflow’s purpose. For example, enter “A workflow that automatically archives both the iOS and the macOS app every night”.
 
-![A screenshot that shows a workflow in Xcode. The General section is visible and shows the name and description that the user provided.](https://docs-assets.developer.apple.com/published/f5090090ba3a21cc016c980e101019cd/Xcode-Cloud-Workflow-Reference-1%402x.png)
+![A screenshot that shows a workflow in Xcode. The General section is visible and shows the name and description that the user provided.](/images/com.apple.Xcode/Xcode-Cloud-Workflow-Reference-1@2x.png)
 
 ##### Environment
 
@@ -97,7 +97,7 @@ To address these use cases, you can create shell scripts, referred to as *custom
 
 ##### Automate Workflow Management
 
-Using either Xcode or App Store Connect, you can create custom workflows to verify the quality of your apps or frameworks. However, you may need to further automate Xcode Cloud usage and create and manage numerous workflows for multiple apps — especially in a corporate context. If this applies to you, use the App Store Connect API to manage workflows, start builds, and access Xcode Cloud data. For more information, see [`Xcode Cloud Workflows and Builds`](https://developer.apple.com/documentation/AppStoreConnectAPI/xcode-cloud-workflows-and-builds).
+Using either Xcode or App Store Connect, you can create custom workflows to verify the quality of your apps or frameworks. However, you may need to further automate Xcode Cloud usage and create and manage numerous workflows for multiple apps — especially in a corporate context. If this applies to you, use the App Store Connect API to manage workflows, start builds, and access Xcode Cloud data. For more information, see [`Xcode Cloud Workflows and Builds`](https://developer.apple.com/documentation/appstoreconnectapi/xcode-cloud-workflows-and-builds).
 
 ## Topics
 

@@ -22,7 +22,7 @@ A table view does not store its own data; it retrieves data values as needed fro
 
 To customize a table view’s behavior without subclassing `NSTableView`, use the methods defined by the `NSTableViewDelegate` protocol. For example, the delegate supports table column management, type-to-select functionality, row selection and editing, custom tracking, and custom views for individual columns and rows. To learn more about the table view delegate, see [`NSTableViewDelegate`](nstableviewdelegate.md).
 
-> ❗ **Important**:  It’s possible that your data source methods for populating the table view may be called before [`awakeFromNib()`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class/awakeFromNib()) is called if the data source is specified in Interface Builder. You should defend against this by having the data source’s [`numberOfRows(in:)`](nstableviewdatasource/numberofrows(in:).md) method return `0` for the number of rows when the data source has not yet been configured. In [`awakeFromNib()`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class/awakeFromNib()), when the data source is initialized you should always call `reloadData` on the table view.
+> ❗ **Important**:  It’s possible that your data source methods for populating the table view may be called before [`awakeFromNib()`](https://developer.apple.com/documentation/objectivec/nsobject-swift.class/awakefromnib()) is called if the data source is specified in Interface Builder. You should defend against this by having the data source’s [`numberOfRows(in:)`](nstableviewdatasource/numberofrows(in:).md) method return `0` for the number of rows when the data source has not yet been configured. In [`awakeFromNib()`](https://developer.apple.com/documentation/objectivec/nsobject-swift.class/awakefromnib()), when the data source is initialized you should always call `reloadData` on the table view.
 
 ##### Subclassing
 
@@ -333,21 +333,21 @@ Use the [`isEnabled`](nscontrol/isenabled.md) property to enable or disable the 
 ### Inherited By
 - [NSOutlineView](nsoutlineview.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
 - [NSAccessibilityElementProtocol](nsaccessibilityelementprotocol.md)
 - [NSAccessibilityGroup](nsaccessibilitygroup.md)
 - [NSAccessibilityProtocol](nsaccessibilityprotocol.md)
 - [NSAccessibilityTable](nsaccessibilitytable.md)
 - [NSAnimatablePropertyContainer](nsanimatablepropertycontainer.md)
 - [NSAppearanceCustomization](nsappearancecustomization.md)
-- [NSCoding](../Foundation/NSCoding.md)
+- [NSCoding](../foundation/nscoding.md)
 - [NSDraggingDestination](nsdraggingdestination.md)
 - [NSDraggingSource](nsdraggingsource.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 - [NSStandardKeyBindingResponding](nsstandardkeybindingresponding.md)
 - [NSTextDelegate](nstextdelegate.md)
 - [NSTextViewDelegate](nstextviewdelegate.md)
@@ -355,8 +355,8 @@ Use the [`isEnabled`](nscontrol/isenabled.md) property to enable or disable the 
 - [NSUserActivityRestoring](nsuseractivityrestoring.md)
 - [NSUserInterfaceItemIdentification](nsuserinterfaceitemidentification.md)
 - [NSUserInterfaceValidations](nsuserinterfacevalidations.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

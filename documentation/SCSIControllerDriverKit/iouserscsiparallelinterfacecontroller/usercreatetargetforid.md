@@ -16,7 +16,7 @@ virtual kern_return_t UserCreateTargetForID(SCSIDeviceIdentifier targetID, OSDic
 
 #### Return Value
 
-A value that indicates the result of target creation. [`kIOReturnSuccess`](https://developer.apple.com/documentation/DriverKit/kIOReturnSuccess) indicates success. For error definitions, see [`IOKit Constants`](https://developer.apple.com/documentation/iokit/iokit_constants).
+A value that indicates the result of target creation. [`kIOReturnSuccess`](https://developer.apple.com/documentation/driverkit/kioreturnsuccess) indicates success. For error definitions, see [`IOKit Constants`](https://developer.apple.com/documentation/iokit/iokit_constants).
 
 #### Discussion
 
@@ -67,7 +67,7 @@ This implementation ensures [`UserStartController`](iouserscsiparallelinterfacec
 ## Parameters
 
 - `targetID`: The ID of the target to create.
-- `targetDict`: An [`OSDictionary`](https://developer.apple.com/documentation/DriverKit/OSDictionary) containing all of the target properties.
+- `targetDict`: An [`OSDictionary`](https://developer.apple.com/documentation/driverkit/osdictionary) containing all of the target properties.
 
 ## See Also
 

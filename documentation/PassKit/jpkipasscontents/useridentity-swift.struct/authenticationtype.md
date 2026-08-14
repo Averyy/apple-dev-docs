@@ -17,7 +17,7 @@ enum AuthenticationType
 
 #### Overview
 
-Use of the systemBiometric authentication requires you to set the [`NSFaceIDUsageDescription`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSFaceIDUsageDescription) usage description.
+Use of the systemBiometric authentication requires you to set the [`NSFaceIDUsageDescription`](https://developer.apple.com/documentation/bundleresources/information-property-list/nsfaceidusagedescription) usage description.
 
 ## Topics
 

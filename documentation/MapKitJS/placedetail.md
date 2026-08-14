@@ -21,9 +21,9 @@ class PlaceDetail
 
 #### Overview
 
-![A screenshot showing the PlaceDetail view containing the details information of California Science Center.](https://docs-assets.developer.apple.com/published/56ce684a64c1e17e0e8a02fc4d3b1548/PlaceDetail-cl-01%402x.png)
+![A screenshot showing the PlaceDetail view containing the details information of California Science Center.](/images/com.apple.mapkitjs/PlaceDetail-cl-01@2x.png)
 
-For more information on places, see [`Identifying unique locations with Place IDs`](https://developer.apple.com/documentation/MapKit/identifying-unique-locations-with-place-ids).
+For more information on places, see [`Identifying unique locations with Place IDs`](https://developer.apple.com/documentation/mapkit/identifying-unique-locations-with-place-ids).
 
 ## Topics
 

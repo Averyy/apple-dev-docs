@@ -8,7 +8,7 @@ Create special rendering effects for your RealityKit scenes.
 
 In iOS 15 and later, and macOS 12 and later, you can apply postprocess effects to a RealityKit scene after RealityKit renders it, but before RealityKit displays it. If you register a postprocess callback function, RealityKit passes that function the complete, rendered frame so you can modify it before the viewer sees it. You can use any image processing or drawing APIs on the rendered frame but, as a practical matter, only APIs that execute on the GPU are fast enough to use every frame and maintain a good framerate.
 
-[`Core Image`](https://developer.apple.com/documentation/CoreImage), Metal kernal functions, [`Metal Performance Shaders`](https://developer.apple.com/documentation/MetalPerformanceShaders), and [`SpriteKit`](https://developer.apple.com/documentation/SpriteKit) all execute on the GPU and can be effectively used to implement postprocessing effects.
+[`Core Image`](https://developer.apple.com/documentation/coreimage), Metal kernal functions, [`Metal Performance Shaders`](https://developer.apple.com/documentation/metalperformanceshaders), and [`SpriteKit`](https://developer.apple.com/documentation/spritekit) all execute on the GPU and can be effectively used to implement postprocessing effects.
 
 ## Topics
 

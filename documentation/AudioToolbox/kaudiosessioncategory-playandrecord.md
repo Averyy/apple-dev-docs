@@ -26,7 +26,7 @@ This category is appropriate for simultaneous recording and playback, and also f
 
 This category normally prevents audio from other apps from mixing with your app’s audio. To allow mixing when using this category, use the [`kAudioSessionProperty_OverrideCategoryMixWithOthers`](kaudiosessionproperty_overridecategorymixwithothers.md) property.
 
-This category is equivalent to the [`playAndRecord`](https://developer.apple.com/documentation/AVFAudio/AVAudioSession/Category-swift.struct/playAndRecord) category provided in the AVFoundation framework.
+This category is equivalent to the [`playAndRecord`](https://developer.apple.com/documentation/avfaudio/avaudiosession/category-swift.struct/playandrecord) category provided in the AVFoundation framework.
 
 ## See Also
 

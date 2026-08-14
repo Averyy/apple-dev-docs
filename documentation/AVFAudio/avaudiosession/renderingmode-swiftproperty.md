@@ -22,7 +22,7 @@ var renderingMode: AVAudioSession.RenderingMode { get }
 The value of this property is [`AVAudioSession.RenderingMode.notApplicable`](avaudiosession/renderingmode-swift.enum/notapplicable.md) in the following cases:
 
 - The currently selected port isn’t of type [`carAudio`](avaudiosession/port/caraudio.md) or, in iOS 18 and later, [`airPlay`](avaudiosession/port/airplay.md).
-- Your app uses a playback API other than [`AVPlayer`](https://developer.apple.com/documentation/AVFoundation/AVPlayer) or [`AVSampleBufferAudioRenderer`](https://developer.apple.com/documentation/AVFoundation/AVSampleBufferAudioRenderer).
+- Your app uses a playback API other than [`AVPlayer`](https://developer.apple.com/documentation/avfoundation/avplayer) or [`AVSampleBufferAudioRenderer`](https://developer.apple.com/documentation/avfoundation/avsamplebufferaudiorenderer).
 - Playback isn’t currently active.
 - The audio session is inactive, muted, or not eligible for Now Playing.
 

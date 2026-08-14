@@ -21,7 +21,7 @@ static let traits: UIFontDescriptor.AttributeName
 
 #### Discussion
 
-The value is an [`NSDictionary`](https://developer.apple.com/documentation/Foundation/NSDictionary) instance that fully describes the font traits. The font supplies the default value.
+The value is an [`NSDictionary`](https://developer.apple.com/documentation/foundation/nsdictionary) instance that fully describes the font traits. The font supplies the default value.
 
 ## See Also
 

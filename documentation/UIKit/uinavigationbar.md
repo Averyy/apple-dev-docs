@@ -65,7 +65,7 @@ A navigation bar manages a stack of [`UINavigationItem`](uinavigationitem.md) ob
 
 In addition to pushing and popping items, you can also set the contents of the stack directly using either the [`items`](uinavigationbar/items.md) property or the [`setItems(_:animated:)`](uinavigationbar/setitems(_:animated:).md) method. You might use this method at launch time to restore your interface to its previous state or to push or pop more than one navigation item at a time. The following figure shows the part of the [`UINavigationBar`](uinavigationbar.md) API responsible for managing the stack of navigation items:
 
-![A flowchart diagram of the navigation bar and a stack of navigation items. A new navigation item enters the navigation bar from the left side of the diagram. In the center, the UINavigationBar contains properties that provide access to items in the stack, and methods that allow mutation by pushing on and popping off the stack, depicted on the right of the diagram.](https://docs-assets.developer.apple.com/published/22a4cdb2afd3e24633e4a5ec88b1c4ae/media-2759892%402x.png)
+![A flowchart diagram of the navigation bar and a stack of navigation items. A new navigation item enters the navigation bar from the left side of the diagram. In the center, the UINavigationBar contains properties that provide access to items in the stack, and methods that allow mutation by pushing on and popping off the stack, depicted on the right of the diagram.](/images/com.apple.uikit/media-2759892@2x.png)
 
 If you’re using a navigation bar as a standalone object, assign a custom delegate object to the [`delegate`](uinavigationbar/delegate.md) property and use that object to intercept messages coming from the navigation bar. Delegate objects must conform to the [`UINavigationBarDelegate`](uinavigationbardelegate.md) protocol. The delegate notifications let you track when navigation items are pushed or popped from the stack. You use these notifications to update the rest of your app’s user interface.
 
@@ -97,7 +97,7 @@ The following table lists the Interface Builder attributes that affect the appea
 
 To localize navigation bars, specify a localized string for each of the displayed string properties of the navigation item model objects.
 
-For more information about localizing your interface, see [`Localization`](https://developer.apple.com/documentation/Xcode/localization).
+For more information about localizing your interface, see [`Localization`](https://developer.apple.com/documentation/xcode/localization).
 
 ##### Make a Navigation Bar Accessible
 
@@ -157,19 +157,19 @@ For general information about making your interface accessible, see [`Accessibil
 ### Inherits From
 - [UIView](uiview.md)
 ### Conforms To
-- [CALayerDelegate](../QuartzCore/CALayerDelegate.md)
-- [CLBodyIdentifiable](../CoreLocation/CLBodyIdentifiable.md)
-- [CMBodyIdentifiable](../CoreMotion/CMBodyIdentifiable.md)
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCoding](../Foundation/NSCoding.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [NSTouchBarProvider](../AppKit/NSTouchBarProvider.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [CALayerDelegate](../quartzcore/calayerdelegate.md)
+- [CLBodyIdentifiable](../corelocation/clbodyidentifiable.md)
+- [CMBodyIdentifiable](../coremotion/cmbodyidentifiable.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCoding](../foundation/nscoding.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSTouchBarProvider](../appkit/nstouchbarprovider.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 - [UIAccessibilityIdentification](uiaccessibilityidentification.md)
 - [UIActivityItemsConfigurationProviding](uiactivityitemsconfigurationproviding.md)
 - [UIAppearance](uiappearance.md)

@@ -17,7 +17,7 @@ func widgetMaximumSize(for displayMode: NCWidgetDisplayMode) -> CGSize
 
 ## Parameters
 
-- `displayMode`: The active display mode of the widget. For possible values, see [`NCWidgetDisplayMode`](https://developer.apple.com/documentation/NotificationCenter/NCWidgetDisplayMode).
+- `displayMode`: The active display mode of the widget. For possible values, see [`NCWidgetDisplayMode`](https://developer.apple.com/documentation/notificationcenter/ncwidgetdisplaymode).
 
 ## See Also
 

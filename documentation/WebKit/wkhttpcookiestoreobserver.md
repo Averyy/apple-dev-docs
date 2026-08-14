@@ -32,7 +32,7 @@ Adopt the methods of the [`WKHTTPCookieStoreObserver`](wkhttpcookiestoreobserver
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

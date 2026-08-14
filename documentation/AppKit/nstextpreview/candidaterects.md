@@ -16,7 +16,7 @@ var candidateRects: [NSValue] { get }
 
 #### Discussion
 
-At initialization time, you set this property to an array of [`NSValue`](https://developer.apple.com/documentation/Foundation/NSValue) objects, each of which contains an [`NSRect`](https://developer.apple.com/documentation/Foundation/NSRect) in the coordinate space of the target view. Each rectangle contains a bounding rectangle for text that is part of the preview. When applying visual effects, the system adds highlights only to the text in the specified rectangles.
+At initialization time, you set this property to an array of [`NSValue`](https://developer.apple.com/documentation/foundation/nsvalue) objects, each of which contains an [`NSRect`](https://developer.apple.com/documentation/foundation/nsrect) in the coordinate space of the target view. Each rectangle contains a bounding rectangle for text that is part of the preview. When applying visual effects, the system adds highlights only to the text in the specified rectangles.
 
 ## See Also
 

@@ -22,7 +22,7 @@ let kCVImageBufferCleanApertureHeightKey: CFString
 
 #### Discussion
 
-The clean aperture height value is of type [`CFNumber`](https://developer.apple.com/documentation/CoreFoundation/CFNumber).
+The clean aperture height value is of type [`CFNumber`](https://developer.apple.com/documentation/corefoundation/cfnumber).
 
 ## See Also
 

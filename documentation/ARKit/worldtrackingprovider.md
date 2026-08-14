@@ -58,16 +58,16 @@ final class WorldTrackingProvider
 ## Relationships
 
 ### Conforms To
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
 - [DataProvider](dataprovider.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 
-- [Tracking specific points in world space](../visionOS/tracking-points-in-world-space.md)
+- [Tracking specific points in world space](../visionos/tracking-points-in-world-space.md)
   Retrieve the position and orientation of anchors your app stores in ARKit.
-- [Placing entities using head and device transform](../visionOS/placing-entities-using-head-and-device-transform.md)
+- [Placing entities using head and device transform](../visionos/placing-entities-using-head-and-device-transform.md)
   Query and react to changes in the position and rotation of Apple Vision Pro.
 - [struct WorldAnchor](worldanchor.md)
   A fixed location in a person’s surroundings.

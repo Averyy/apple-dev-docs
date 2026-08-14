@@ -17,7 +17,7 @@ A property wrapper type that you use to create a WatchKit extension delegate.
 
 #### Overview
 
-To handle extension delegate callbacks in an extension that uses the SwiftUI life cycle, define a type that conforms to the [`WKExtensionDelegate`](https://developer.apple.com/documentation/WatchKit/WKExtensionDelegate) protocol, and implement the delegate methods that you need. For example, you can implement the [`didRegisterForRemoteNotifications(withDeviceToken:)`](https://developer.apple.com/documentation/WatchKit/WKExtensionDelegate/didRegisterForRemoteNotifications(withDeviceToken:)) method to handle remote notification registration:
+To handle extension delegate callbacks in an extension that uses the SwiftUI life cycle, define a type that conforms to the [`WKExtensionDelegate`](https://developer.apple.com/documentation/watchkit/wkextensiondelegate) protocol, and implement the delegate methods that you need. For example, you can implement the [`didRegisterForRemoteNotifications(withDeviceToken:)`](https://developer.apple.com/documentation/watchkit/wkextensiondelegate/didregisterforremotenotifications(withdevicetoken:)) method to handle remote notification registration:
 
 ```swift
 class MyExtensionDelegate: NSObject, WKExtensionDelegate, ObservableObject {
@@ -40,7 +40,7 @@ struct MyApp: App {
 
 SwiftUI instantiates the delegate and calls the delegate’s methods in response to life cycle events. Define the delegate adaptor only in your [`App`](app.md) declaration, and only once for a given extension. If you declare it more than once, SwiftUI generates a runtime error.
 
-If your extension delegate conforms to the [`ObservableObject`](https://developer.apple.com/documentation/Combine/ObservableObject) protocol, as in the example above, then SwiftUI puts the delegate it creates into the [`Environment`](environment.md). You can access the delegate from any scene or view in your extension using the [`EnvironmentObject`](environmentobject.md) property wrapper:
+If your extension delegate conforms to the [`ObservableObject`](https://developer.apple.com/documentation/combine/observableobject) protocol, as in the example above, then SwiftUI puts the delegate it creates into the [`Environment`](environment.md). You can access the delegate from any scene or view in your extension using the [`EnvironmentObject`](environmentobject.md) property wrapper:
 
 ```swift
 @EnvironmentObject private var extensionDelegate: MyExtensionDelegate
@@ -48,7 +48,7 @@ If your extension delegate conforms to the [`ObservableObject`](https://develope
 
 This enables you to use the dollar sign (`$`) prefix to get a binding to published properties that you declare in the delegate. For more information, see [`projectedValue`](wkextensiondelegateadaptor/projectedvalue.md).
 
-> ❗ **Important**: Manage an externsion’s life cycle events without using a delegate whenever possible. For example, prefer to handle changes in [`ScenePhase`](scenephase.md) instead of relying on delegate callbacks, like [`applicationDidFinishLaunching()`](https://developer.apple.com/documentation/WatchKit/WKExtensionDelegate/applicationDidFinishLaunching()).
+> ❗ **Important**: Manage an externsion’s life cycle events without using a delegate whenever possible. For example, prefer to handle changes in [`ScenePhase`](scenephase.md) instead of relying on delegate callbacks, like [`applicationDidFinishLaunching()`](https://developer.apple.com/documentation/watchkit/wkextensiondelegate/applicationdidfinishlaunching()).
 
 ## Topics
 
@@ -65,8 +65,8 @@ This enables you to use the dollar sign (`$`) prefix to get a binding to publish
 
 ### Conforms To
 - [DynamicProperty](dynamicproperty.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

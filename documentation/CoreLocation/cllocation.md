@@ -29,7 +29,7 @@ class CLLocation
 
 A [`CLLocation`](cllocation.md) object contains the geographical location and altitude of a device, along with values indicating the accuracy of those measurements and when they were collected. In iOS, a location object also contains course information — that is, the speed and heading in which the device was moving.
 
-Typically, you don’t create location objects yourself. After you request location updates from your [`CLLocationManager`](cllocationmanager.md) object, the system uses onboard sensors to gather location data and report that data to your app. Some services also return previously collected location data, which you can use as context to improve your services. You can always retrieve the most recently collected location from the [`location`](CLLocationManager/location.md) property of your [`CLLocationManager`](cllocationmanager.md) object. You may create location objects yourself when you want to cache custom location data or calculate the distance between two geographical coordinates.
+Typically, you don’t create location objects yourself. After you request location updates from your [`CLLocationManager`](cllocationmanager.md) object, the system uses onboard sensors to gather location data and report that data to your app. Some services also return previously collected location data, which you can use as context to improve your services. You can always retrieve the most recently collected location from the [`location`](cllocationmanager/location.md) property of your [`CLLocationManager`](cllocationmanager.md) object. You may create location objects yourself when you want to cache custom location data or calculate the distance between two geographical coordinates.
 
 Use [`CLLocation`](cllocation.md) objects as-is, and don’t subclass them.
 
@@ -95,23 +95,23 @@ Use [`CLLocation`](cllocation.md) objects as-is, and don’t subclass them.
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CKRecordValue](../CloudKit/CKRecordValue-c.protocol.md)
-- [CKRecordValueProtocol](../CloudKit/CKRecordValueProtocol.md)
-- [CVarArg](../Swift/CVarArg.md)
-- [Copyable](../Swift/Copyable.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Escapable](../Swift/Escapable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCoding](../Foundation/NSCoding.md)
-- [NSCopying](../Foundation/NSCopying.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [NSSecureCoding](../Foundation/NSSecureCoding.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [CKRecordValue](../cloudkit/ckrecordvalue-c.protocol.md)
+- [CKRecordValueProtocol](../cloudkit/ckrecordvalueprotocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [Copyable](../swift/copyable.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Escapable](../swift/escapable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCoding](../foundation/nscoding.md)
+- [NSCopying](../foundation/nscopying.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

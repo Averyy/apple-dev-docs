@@ -54,7 +54,7 @@ In version 6, MapKit JS no longer turns off map rotation when tile overlays are 
 
 ##### Callback Parameters and Cancellation in Async Service Apis
 
-All asynchronous service methods now return `Promise` instead of `number` (request ID). You can use async/await syntax. Callbacks still work at runtime but the framework considers them deprecated. The framework also deprecates [`cancel(promise)`](service/cancel.md) method accepting a numeric request ID — use `AbortController`/`AbortSignal` instead.
+All asynchronous service methods now return `Promise` instead of `number` (request ID). You can use async/await syntax. Callbacks still work at runtime but the framework considers them deprecated. The framework also deprecates [`cancel()`](service/cancel.md) method accepting a numeric request ID — use `AbortController`/`AbortSignal` instead.
 
 ```javascript
 // Version 5
@@ -89,11 +89,11 @@ When you abort a request, the Promise rejects with a `DOMException` where `name 
 
 ##### Mapfeatureannotationfetchplace
 
-Use [`getPlace(id, options)`](placelookup/getplace.md) instead. It returns a Promise and supports AbortSignal cancellation.
+Use [`getPlace()`](placelookup/getplace.md) instead. It returns a Promise and supports AbortSignal cancellation.
 
 ##### Imagedelegategetimageurl
 
-Use [`getImage(ratio)`](imagedelegate/getimage.md) instead. It returns a Promise that resolves to an [`ImageSource`](imagesource.md) or URL string.
+Use [`getImage()`](imagedelegate/getimage.md) instead. It returns a Promise that resolves to an [`ImageSource`](imagesource.md) or URL string.
 
 ##### Coordinateregiontomaprect
 
@@ -129,7 +129,7 @@ The map now zooms and pans with wheel events without requiring you to hold the S
 
 ##### Mapkitload Returns Promise
 
-[`load(libraryNames)`](mapkit/load.md) now returns `Promise<MapKit>`:
+[`load()`](mapkit/load.md) now returns `Promise<MapKit>`:
 
 ```javascript
 // Version 5
@@ -174,7 +174,7 @@ Existing code using class instances continues to work because each class impleme
 
 ##### Placelookupgetplaceannotation Overload
 
-A new overload of [`getPlace(id, options)`](placelookup/getplace.md) accepts a [`MapFeatureAnnotation`](mapfeatureannotation.md) directly.
+A new overload of [`getPlace()`](placelookup/getplace.md) accepts a [`MapFeatureAnnotation`](mapfeatureannotation.md) directly.
 
 ## See Also
 

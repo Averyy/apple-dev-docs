@@ -26,7 +26,7 @@ mutating func appendInterpolation(_ argumentObject: @autoclosure @escaping () ->
 
 ## Parameters
 
-- `argumentObject`: The interpolated object, which the system automatically wraps in a closure. The object itself doesn’t appear in the log message. Instead, the system calls the object’s [`description`](https://developer.apple.com/documentation/ObjectiveC/NSObjectProtocol/description) method and incorporates the value it returns.
+- `argumentObject`: The interpolated object, which the system automatically wraps in a closure. The object itself doesn’t appear in the log message. Instead, the system calls the object’s [`description`](https://developer.apple.com/documentation/objectivec/nsobjectprotocol/description) method and incorporates the value it returns.
 - `privacy`: The privacy level of the interpolated value, which the system applies when it renders the value in a log message. For more information, see [`OSLogPrivacy`](oslogprivacy.md). The default value is [`auto`](oslogprivacy/auto.md).
 - `attributes`: Additional information about the interpolated value. Tools that process log messages interpret these attributes, which you typically provide as key-value pairs. For example, Instruments processes any e_ngineering types_ you embed in this value. For more information, see [`Instruments Developer Help`](https://developer.apple.comhttps://help.apple.com/instruments/developer/mac/current/#/devcd5016d31).
 

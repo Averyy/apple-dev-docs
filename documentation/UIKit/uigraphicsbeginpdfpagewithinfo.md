@@ -21,7 +21,7 @@ func UIGraphicsBeginPDFPageWithInfo(_ bounds: CGRect, _ pageInfo: [AnyHashable :
 
 #### Discussion
 
-This function ends any previous page before beginning a new one. It sets the media box of the new page to the value in the [`kCGPDFContextMediaBox`](https://developer.apple.com/documentation/CoreGraphics/kCGPDFContextMediaBox) key of the `pageInfo` dictionary, or to the value in the `bounds` parameter if the dictionary does not contain the key.
+This function ends any previous page before beginning a new one. It sets the media box of the new page to the value in the [`kCGPDFContextMediaBox`](https://developer.apple.com/documentation/coregraphics/kcgpdfcontextmediabox) key of the `pageInfo` dictionary, or to the value in the `bounds` parameter if the dictionary does not contain the key.
 
 If the current graphics context is not a PDF context, this function does nothing.
 
@@ -30,7 +30,7 @@ You must call this function or the [`UIGraphicsBeginPDFPageWithInfo(_:_:)`](uigr
 ## Parameters
 
 - `bounds`: A rectangle that specifies the size and location of the new PDF page. This rectangle corresponds to the media box rectangle for the page.
-- `pageInfo`: A dictionary that specifies additional page-related information, such as the boxes that define different parts of the page. For a list of keys you can include in this dictionary, see Box Keys in [`Auxiliary Dictionary Keys`](https://developer.apple.com/documentation/CoreGraphics/auxiliary-dictionary-keys). The dictionary is retained by the new page, so you may release it after this function returns. Specify `nil` if you do not want to associate any additional information with the page.
+- `pageInfo`: A dictionary that specifies additional page-related information, such as the boxes that define different parts of the page. For a list of keys you can include in this dictionary, see Box Keys in [`Auxiliary Dictionary Keys`](https://developer.apple.com/documentation/coregraphics/auxiliary-dictionary-keys). The dictionary is retained by the new page, so you may release it after this function returns. Specify `nil` if you do not want to associate any additional information with the page.
 
 ## See Also
 

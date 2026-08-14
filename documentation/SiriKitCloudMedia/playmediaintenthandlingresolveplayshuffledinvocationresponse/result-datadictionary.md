@@ -16,7 +16,7 @@ object PlayMediaIntentHandlingResolvePlayShuffledInvocationResponse.Result
 
 ## Properties
 
-- `resolutionResult` (BooleanResolutionResult) *(required)*: [`true`](https://developer.apple.com/documentation/Swift/true) to shuffle the playback queue, or [`false`](https://developer.apple.com/documentation/Swift/false) to preserve the default order.
+- `resolutionResult` (BooleanResolutionResult) *(required)*: [`true`](https://developer.apple.com/documentation/swift/true) to shuffle the playback queue, or [`false`](https://developer.apple.com/documentation/swift/false) to preserve the default order.
 
 
 ---

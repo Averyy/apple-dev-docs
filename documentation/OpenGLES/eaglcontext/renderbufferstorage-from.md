@@ -19,7 +19,7 @@ func renderbufferStorage(_ target: Int, from drawable: (any EAGLDrawable)?) -> B
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/Swift/true) if successful; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
+[`true`](https://developer.apple.com/documentation/swift/true) if successful; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
 
 #### Discussion
 
@@ -36,7 +36,7 @@ In iOS 6.0 and later, this method automatically flushes the OpenGL ES command bu
 ## Parameters
 
 - `target`: The OpenGL ES binding point for a currently bound renderbuffer. The value of this parameter must be `GL_RENDERBUFFER` (or `GL_RENDERBUFFER_OES` in an OpenGL ES 1.1 context).
-- `drawable`: An object managing the data store for the renderbuffer. In iOS, the value of this parameter must be a [`CAEAGLLayer`](https://developer.apple.com/documentation/QuartzCore/CAEAGLLayer) object.
+- `drawable`: An object managing the data store for the renderbuffer. In iOS, the value of this parameter must be a [`CAEAGLLayer`](https://developer.apple.com/documentation/quartzcore/caeagllayer) object.
 
 
 ---

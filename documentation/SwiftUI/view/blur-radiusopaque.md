@@ -40,7 +40,7 @@ struct Blur: View {
 }
 ```
 
-![A screenshot showing the effect of applying gaussian blur effect to](https://docs-assets.developer.apple.com/published/36388e69a86ea94ab540e377c3fae7b3/SwiftUI-View-blurRadius%402x.png)
+![A screenshot showing the effect of applying gaussian blur effect to](/images/com.apple.SwiftUI/SwiftUI-View-blurRadius@2x.png)
 
 ## Parameters
 

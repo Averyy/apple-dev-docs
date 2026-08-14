@@ -8,7 +8,7 @@ Implement per-frame app logic, such as the scene’s update function that’s ca
 
 When a scene is presented via [`presentScene(_:)`](skview/presentscene(_:).md), SpriteKit calls you every frame if you implement any of the functions shown in the following image:
 
-![Diagram showing the sequence of events that compose the scene update lifecycle](https://docs-assets.developer.apple.com/published/93eb4a2895a996eb9fc43048eb2c10a6/media-2975111%402x.png)
+![Diagram showing the sequence of events that compose the scene update lifecycle](/images/com.apple.spritekit/media-2975111@2x.png)
 
 If you don’t implement any of the frame-cycle functions, SpriteKit will only render the scene when something within it has changed, improving energy efficiency and allowing your game or app to perform other operations instead.
 

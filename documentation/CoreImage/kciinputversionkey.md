@@ -21,7 +21,7 @@ let kCIInputVersionKey: String
 
 #### Discussion
 
-A key for an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) object that specifies a version number.
+A key for an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) object that specifies a version number.
 
 ## See Also
 

@@ -7,11 +7,11 @@ Create and manage images, in bitmap, PDF, and other formats.
 ## Topics
 
 ### Images
-- [Providing images for different appearances](../UIKit/providing-images-for-different-appearances.md)
+- [Providing images for different appearances](../uikit/providing-images-for-different-appearances.md)
   Supply image resources appropriate for light and dark appearances and for high-contrast environments.
 - [Supporting Continuity Camera in Your Mac App](supporting-continuity-camera-in-your-mac-app.md)
   Incorporate scanned documents and pictures from a user’s iPhone, iPad, or iPod touch into your Mac app using Continuity Camera.
-- [Supporting HDR images in your app](../UIKit/supporting-hdr-images-in-your-app.md)
+- [Supporting HDR images in your app](../uikit/supporting-hdr-images-in-your-app.md)
   ​ Load, display, edit, and save HDR images using SwiftUI and Core Image. ​
 - [Applying Apple HDR effect to your photos](applying-apple-hdr-effect-to-your-photos.md)
   You can decode and apply Apple’s HDR gain map to your own images.

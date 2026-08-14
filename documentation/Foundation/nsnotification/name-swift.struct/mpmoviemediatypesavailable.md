@@ -19,7 +19,7 @@ static let MPMovieMediaTypesAvailable: NSNotification.Name
 
 #### Discussion
 
-To retrieve the available media types in a movie—audio, video, or both—access the movie player’s [`movieMediaTypes`](https://developer.apple.com/documentation/MediaPlayer/MPMoviePlayerController/movieMediaTypes) property. The movie player whose state has changed is available as the object associated with the notification.
+To retrieve the available media types in a movie—audio, video, or both—access the movie player’s [`movieMediaTypes`](https://developer.apple.com/documentation/mediaplayer/mpmovieplayercontroller/moviemediatypes) property. The movie player whose state has changed is available as the object associated with the notification.
 
 ## See Also
 

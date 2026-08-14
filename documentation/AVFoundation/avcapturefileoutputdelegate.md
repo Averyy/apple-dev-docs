@@ -29,7 +29,7 @@ The `AVCaptureFileOutputDelegate` protocol defines an interface for delegates of
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

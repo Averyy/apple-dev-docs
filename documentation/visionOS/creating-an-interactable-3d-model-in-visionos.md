@@ -10,7 +10,7 @@ Display an interactive car model using gestures in a reality view.
 
 #### Overview
 
-This sample demonstrates how to create and display a 3D car model that responds to gestures within visionOS. It uses the [`ModelEntity`](https://developer.apple.com/documentation/RealityKit/ModelEntity) initializer to asynchronously load a model by its filename, and it implements the [`DragGesture`](https://developer.apple.com/documentation/SwiftUI/DragGesture) protocol on the `ModelEntity`, to interact with the model.
+This sample demonstrates how to create and display a 3D car model that responds to gestures within visionOS. It uses the [`ModelEntity`](https://developer.apple.com/documentation/realitykit/modelentity) initializer to asynchronously load a model by its filename, and it implements the [`DragGesture`](https://developer.apple.com/documentation/swiftui/draggesture) protocol on the `ModelEntity`, to interact with the model.
 
 At launch, the app’s main view generates the following:
 
@@ -73,7 +73,7 @@ var translationGesture: some Gesture {
 
 The `initialPosition` variable resets back to `nil` when the gesture ends.
 
-> **Note**: You must use [`targetedToAnyEntity()`](https://developer.apple.com/documentation/SwiftUI/Gesture/targetedToAnyEntity()) or related methods to enable a gesture to target an entity.
+> **Note**: You must use [`targetedToAnyEntity()`](https://developer.apple.com/documentation/swiftui/gesture/targetedtoanyentity()) or related methods to enable a gesture to target an entity.
 
 The `scaleGesture` applies the scale rate by the magnification on the gesture, to smoothly scale the entity during a gesture movement:
 
@@ -107,7 +107,7 @@ The `initialScale` variable resets back to `nil` once the gesture ends.
 
 ##### Load the 3d Car Model
 
-The `CarView` loads in a USDZ file as a [`ModelEntity`](https://developer.apple.com/documentation/RealityKit/ModelEntity) instance and creates a `bounds` containing a bounding box of the outer dimensional size of the `car` entity:
+The `CarView` loads in a USDZ file as a [`ModelEntity`](https://developer.apple.com/documentation/realitykit/modelentity) instance and creates a `bounds` containing a bounding box of the outer dimensional size of the `car` entity:
 
 ```swift
 import SwiftUI
@@ -138,7 +138,7 @@ struct CarView: View {
 
 ##### Set the Collision Component
 
-The app uses the `bounds` property to generate a bounding box with [`ShapeResource`](https://developer.apple.com/documentation/RealityKit/ShapeResource), which serves as a collision bound for the [`CollisionComponent`](https://developer.apple.com/documentation/RealityKit/CollisionComponent). This enables the collision component to interact with the environment:
+The app uses the `bounds` property to generate a bounding box with [`ShapeResource`](https://developer.apple.com/documentation/realitykit/shaperesource), which serves as a collision bound for the [`CollisionComponent`](https://developer.apple.com/documentation/realitykit/collisioncomponent). This enables the collision component to interact with the environment:
 
 ```swift
 import SwiftUI
@@ -229,7 +229,7 @@ struct EntryPoint: App {
 }
 ```
 
-The sample’s main view uses the [`openImmersiveSpace`](https://developer.apple.com/documentation/SwiftUI/EnvironmentValues/openImmersiveSpace) instance property to call the `ImmersiveSpace` that the app’s `EntryPoint` defines:
+The sample’s main view uses the [`openImmersiveSpace`](https://developer.apple.com/documentation/swiftui/environmentvalues/openimmersivespace) instance property to call the `ImmersiveSpace` that the app’s `EntryPoint` defines:
 
 ```swift
 import SwiftUI

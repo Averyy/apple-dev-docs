@@ -12,7 +12,7 @@ Xcode 11.2.1 includes SDKs for iOS 13.2, macOS Catalina 10.15, watchOS 6.1, and 
 
 ###### Resolved Issues
 
-- Storyboards containing a [`UITextView`](https://developer.apple.com/documentation/UIKit/UITextView) will no longer cause the app to crash on operating system versions earlier than iOS 13.2, tvOS 13.2, or macOS 10.15.2. (56808566, 56873523)
+- Storyboards containing a [`UITextView`](https://developer.apple.com/documentation/uikit/uitextview) will no longer cause the app to crash on operating system versions earlier than iOS 13.2, tvOS 13.2, or macOS 10.15.2. (56808566, 56873523)
 
 ## See Also
 

@@ -34,9 +34,9 @@ var body: some View {
 
 You can set the `colorScheme` environment value directly, but that usually isn’t what you want. Doing so changes the color scheme of the given view and its child views but *not* the views above it in the view hierarchy. Instead, set a color scheme using the [`preferredColorScheme(_:)`](view/preferredcolorscheme(_:).md) modifier, which also propagates the value up through the view hierarchy to the enclosing presentation, like a sheet or a window.
 
-When adjusting your app’s user interface to match the color scheme, consider also checking the [`colorSchemeContrast`](environmentvalues/colorschemecontrast.md) property, which reflects a system-wide contrast setting that the user controls. For information, see [`Accessibility`](https://developer.apple.com/design/Human-Interface-Guidelines/accessibility#Color-and-effects) in the Human Interface Guidelines.
+When adjusting your app’s user interface to match the color scheme, consider also checking the [`colorSchemeContrast`](environmentvalues/colorschemecontrast.md) property, which reflects a system-wide contrast setting that the user controls. For information, see [`Accessibility`](https://developer.apple.com/design/human-interface-guidelines/accessibility) in the Human Interface Guidelines.
 
-> **Note**: If you only need to provide different colors or images for different color scheme and contrast settings, do that in your app’s Asset Catalog. See [`Asset management`](https://developer.apple.com/documentation/Xcode/asset-management).
+> **Note**: If you only need to provide different colors or images for different color scheme and contrast settings, do that in your app’s Asset Catalog. See [`Asset management`](https://developer.apple.com/documentation/xcode/asset-management).
 
 ## See Also
 

@@ -20,7 +20,7 @@ object summary
 
 #### Discussion
 
-The `summary` object appears in the [`responseBodyV2DecodedPayload`](responsebodyv2decodedpayload.md) when the [`notificationType`](notificationtype.md) is `RENEWAL_EXTENSION` and the [`subtype`](subtype.md) is `SUMMARY`. This notification occurs when the App Store completes your request to extend the subscription renewal date for eligible subscribers. For more information about this request, see [`Extend Subscription Renewal Dates for All Active Subscribers`](https://developer.apple.com/documentation/AppStoreServerAPI/Extend-Subscription-Renewal-Dates-for-All-Active-Subscribers) in the [`App Store Server API`](https://developer.apple.com/documentation/AppStoreServerAPI).
+The `summary` object appears in the [`responseBodyV2DecodedPayload`](responsebodyv2decodedpayload.md) when the [`notificationType`](notificationtype.md) is `RENEWAL_EXTENSION` and the [`subtype`](subtype.md) is `SUMMARY`. This notification occurs when the App Store completes your request to extend the subscription renewal date for eligible subscribers. For more information about this request, see [`Extend Subscription Renewal Dates for All Active Subscribers`](https://developer.apple.com/documentation/appstoreserverapi/extend-subscription-renewal-dates-for-all-active-subscribers) in the [`App Store Server API`](https://developer.apple.com/documentation/appstoreserverapi).
 
 ## Topics
 
@@ -46,7 +46,7 @@ The `summary` object appears in the [`responseBodyV2DecodedPayload`](responsebod
 
 ## Properties
 
-- `requestIdentifier` (requestIdentifier): The `UUID` that represents a specific request to extend a subscription renewal date. This value matches the value you initially specify in the `requestIdentifier` when you call [`Extend Subscription Renewal Dates for All Active Subscribers`](https://developer.apple.com/documentation/AppStoreServerAPI/Extend-Subscription-Renewal-Dates-for-All-Active-Subscribers) in the [`App Store Server API`](https://developer.apple.com/documentation/AppStoreServerAPI).
+- `requestIdentifier` (requestIdentifier): The `UUID` that represents a specific request to extend a subscription renewal date. This value matches the value you initially specify in the `requestIdentifier` when you call [`Extend Subscription Renewal Dates for All Active Subscribers`](https://developer.apple.com/documentation/appstoreserverapi/extend-subscription-renewal-dates-for-all-active-subscribers) in the [`App Store Server API`](https://developer.apple.com/documentation/appstoreserverapi).
 - `environment` (environment): The server environment that the notification applies to, either `sandbox` or `production`.
 - `appAppleId` (appAppleId): The unique identifier of the app that the notification applies to. This property is available for apps that users download from the App Store. It isn’t present in the sandbox environment.
 - `bundleId` (bundleId): The bundle identifier of the app.

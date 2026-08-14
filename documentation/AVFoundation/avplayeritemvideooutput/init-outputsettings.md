@@ -25,7 +25,7 @@ For uncompressed video output, start with `kCVPixelBuffer*` keys in `<CoreVideo/
 
 ## Parameters
 
-- `outputSettings`: The client requirements for output [`CVPixelBuffer`](https://developer.apple.com/documentation/CoreVideo/cvpixelbuffer-q2e) objects, expressed using the constants in `AVVideoSettings.h`.
+- `outputSettings`: The client requirements for output [`CVPixelBuffer`](https://developer.apple.com/documentation/corevideo/cvpixelbuffer-q2e) objects, expressed using the constants in `AVVideoSettings.h`.
 
 ## See Also
 

@@ -28,7 +28,7 @@ func SecKeyCopyPublicKey(_ key: SecKey) -> SecKey?
 
 #### Return Value
 
-The public key corresponding to the given private key. In Objective-C, call the [`CFRelease`](https://developer.apple.com/documentation/CoreFoundation/CFRelease) function to free this key’s memory when you are done with it.
+The public key corresponding to the given private key. In Objective-C, call the [`CFRelease`](https://developer.apple.com/documentation/corefoundation/cfrelease) function to free this key’s memory when you are done with it.
 
 #### Discussion
 

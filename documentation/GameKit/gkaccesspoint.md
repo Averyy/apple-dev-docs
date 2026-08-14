@@ -29,7 +29,7 @@ The access point displays a control in a corner of your game that opens a Game C
 
 Use the [`shared`](gkaccesspoint/shared.md) property to get the shared access point object. GameKit attaches the access point to the window you specify in the [`parentWindow`](gkaccesspoint/parentwindow.md) property, in the corner you specify using the [`location`](gkaccesspoint/location-swift.property.md) property. If you don’t specify a parent window, GameKit infers an appropriate location. For the location of the access point on visionOS, see [`Configure the access point on visionOS`](adding-an-access-point-to-your-game#Configure-the-access-point-on-visionOS.md).
 
-To display highlights, set the [`showHighlights`](gkaccesspoint/showhighlights.md) property to [`true`](https://developer.apple.com/documentation/Swift/true). Then set [`isActive`](gkaccesspoint/isactive.md) to [`true`](https://developer.apple.com/documentation/Swift/true) to display the access point control.
+To display highlights, set the [`showHighlights`](gkaccesspoint/showhighlights.md) property to [`true`](https://developer.apple.com/documentation/swift/true). Then set [`isActive`](gkaccesspoint/isactive.md) to [`true`](https://developer.apple.com/documentation/swift/true) to display the access point control.
 
 ## Topics
 
@@ -90,16 +90,16 @@ To display highlights, set the [`showHighlights`](gkaccesspoint/showhighlights.m
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

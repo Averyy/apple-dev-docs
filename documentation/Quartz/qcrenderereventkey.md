@@ -16,7 +16,7 @@ let QCRendererEventKey: String
 
 #### Discussion
 
-The associated value is an [`NSEvent`](https://developer.apple.com/documentation/AppKit/NSEvent) object.
+The associated value is an [`NSEvent`](https://developer.apple.com/documentation/appkit/nsevent) object.
 
 ## See Also
 

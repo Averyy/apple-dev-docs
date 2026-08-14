@@ -13,7 +13,7 @@ Classify text and other token-based content into developer-defined categories.
 
 The Latent Semantic Mapping framework classifies texts based on latent semantic information. The C-based functions of this API are designed to be language-independent and are Unicode-based.
 
-For other natural language processing functionality, see [`Natural Language`](https://developer.apple.com/documentation/NaturalLanguage).
+For other natural language processing functionality, see [`Natural Language`](https://developer.apple.com/documentation/naturallanguage).
 
 ## Topics
 

@@ -31,7 +31,7 @@ class UIButton
 
 When you tap a button, or select a button that has focus, the button performs any actions attached to it. You communicate the purpose of a button using a text label, an image, or both. The appearance of buttons is configurable, so you can tint buttons or format titles to match the design of your app. You can add buttons to your interface programmatically or using Interface Builder.
 
-![A screenshot showing three buttons. The first button shows the label “Button”. The second button shows an image of a plus sign in a circle. The third button shows an image of a lowercase “i” in a circle.](https://docs-assets.developer.apple.com/published/abe7c4c3472254b2d40bb7dc8bfb8d5b/media-2557338.png)
+![A screenshot showing three buttons. The first button shows the label “Button”. The second button shows an image of a plus sign in a circle. The third button shows an image of a lowercase “i” in a circle.](/images/com.apple.uikit/media-2557338.png)
 
 When adding a button to your interface, perform the following steps:
 
@@ -83,7 +83,7 @@ The content of a button consists of a title string or image that you specify. Th
 
 Normally, you configure a button using either a title or an image and size the button accordingly. Buttons can also have a background image, which is positioned behind the content you specify. It’s possible to specify both an image and a title for buttons, which results in the appearance shown in the following image. You can access the current content of a button using the indicated properties.
 
-![Providing a title and image for a button.](https://docs-assets.developer.apple.com/published/b18fd0e1e20cf9a7e61095bb304cda2c/media-3081016%402x.png)
+![Providing a title and image for a button.](/images/com.apple.uikit/media-3081016@2x.png)
 
 When setting the content of a button, you must specify the title, image, and appearance attributes for each state separately. If you don’t customize the content for a particular state, the button uses the values associated with the Default state and adds any appropriate customizations. For example, in the highlighted state, an image-based button draws a highlight on top of the default image if no custom image is provided.
 
@@ -114,8 +114,8 @@ The following table lists attributes that affect the button’s appearance.
 
 | Attribute | Description |
 | --- | --- |
-| Shadow Offset | The offsets and behavior of the button’s shadow. Shadows affect title strings only. Enable the Reverses on Highlight option to change the highlighting of the shadow when the button state changes to or from the highlighted state. ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) Configure the offsets programmatically using the [`shadowOffset`](uilabel/shadowoffset.md) property of the button’s [`titleLabel`](uibutton/titlelabel.md) object. Configure the highlighting behavior using the [`reversesTitleShadowWhenHighlighted`](uibutton/reversestitleshadowwhenhighlighted.md) property. |
-| Drawing | The drawing behavior of the button. ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) When the Shows Touch On Highlight ([`showsTouchWhenHighlighted`](uibutton/showstouchwhenhighlighted.md)) option is enabled, the button adds a white glow to the part of a button that the user touches. ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) When the Highlighted Adjusts Image ([`adjustsImageWhenHighlighted`](uibutton/adjustsimagewhenhighlighted.md)) option is enabled, button images get darker when it’s in the highlighted state. ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) When the Disabled Adjusts Image ([`adjustsImageWhenDisabled`](uibutton/adjustsimagewhendisabled.md)) option is enabled, the image is dimmed when the button is disabled. |
+| Shadow Offset | The offsets and behavior of the button’s shadow. Shadows affect title strings only. Enable the Reverses on Highlight option to change the highlighting of the shadow when the button state changes to or from the highlighted state. ![None](/images/com.apple.uikit/spacer.png) Configure the offsets programmatically using the [`shadowOffset`](uilabel/shadowoffset.md) property of the button’s [`titleLabel`](uibutton/titlelabel.md) object. Configure the highlighting behavior using the [`reversesTitleShadowWhenHighlighted`](uibutton/reversestitleshadowwhenhighlighted.md) property. |
+| Drawing | The drawing behavior of the button. ![None](/images/com.apple.uikit/spacer.png) When the Shows Touch On Highlight ([`showsTouchWhenHighlighted`](uibutton/showstouchwhenhighlighted.md)) option is enabled, the button adds a white glow to the part of a button that the user touches. ![None](/images/com.apple.uikit/spacer.png) When the Highlighted Adjusts Image ([`adjustsImageWhenHighlighted`](uibutton/adjustsimagewhenhighlighted.md)) option is enabled, button images get darker when it’s in the highlighted state. ![None](/images/com.apple.uikit/spacer.png) When the Disabled Adjusts Image ([`adjustsImageWhenDisabled`](uibutton/adjustsimagewhendisabled.md)) option is enabled, the image is dimmed when the button is disabled. |
 | Line Break | The line breaking options for the button’s text. Use this attribute to define how the button’s title is modified to fit the available space. |
 
 The following table lists the edge inset attributes for buttons. Use edge inset buttons to alter the rectangle for the button’s content.
@@ -276,21 +276,21 @@ For more information about making iOS controls accessible, see the accessibility
 ### Inherits From
 - [UIControl](uicontrol.md)
 ### Conforms To
-- [CALayerDelegate](../QuartzCore/CALayerDelegate.md)
-- [CLBodyIdentifiable](../CoreLocation/CLBodyIdentifiable.md)
-- [CMBodyIdentifiable](../CoreMotion/CMBodyIdentifiable.md)
-- [CVarArg](../Swift/CVarArg.md)
-- [Copyable](../Swift/Copyable.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Escapable](../Swift/Escapable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCoding](../Foundation/NSCoding.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [NSTouchBarProvider](../AppKit/NSTouchBarProvider.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [CALayerDelegate](../quartzcore/calayerdelegate.md)
+- [CLBodyIdentifiable](../corelocation/clbodyidentifiable.md)
+- [CMBodyIdentifiable](../coremotion/cmbodyidentifiable.md)
+- [CVarArg](../swift/cvararg.md)
+- [Copyable](../swift/copyable.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Escapable](../swift/escapable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCoding](../foundation/nscoding.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSTouchBarProvider](../appkit/nstouchbarprovider.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 - [UIAccessibilityContentSizeCategoryImageAdjusting](uiaccessibilitycontentsizecategoryimageadjusting.md)
 - [UIAccessibilityIdentification](uiaccessibilityidentification.md)
 - [UIActivityItemsConfigurationProviding](uiactivityitemsconfigurationproviding.md)

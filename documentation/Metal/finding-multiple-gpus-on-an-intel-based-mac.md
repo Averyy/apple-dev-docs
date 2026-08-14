@@ -73,9 +73,9 @@ Each GPU on a Mac computer’s system can be one of three types: integrated, dis
 
 | GPU Type | [`isLowPower`](mtldevice/islowpower.md) | [`isRemovable`](mtldevice/isremovable.md) |
 | --- | --- | --- |
-| Integrated | [`true`](https://developer.apple.com/documentation/Swift/true) | [`false`](https://developer.apple.com/documentation/Swift/false) |
-| Discrete | [`false`](https://developer.apple.com/documentation/Swift/false) | [`false`](https://developer.apple.com/documentation/Swift/false) |
-| External | [`false`](https://developer.apple.com/documentation/Swift/false) | [`true`](https://developer.apple.com/documentation/Swift/true) |
+| Integrated | [`true`](https://developer.apple.com/documentation/swift/true) | [`false`](https://developer.apple.com/documentation/swift/false) |
+| Discrete | [`false`](https://developer.apple.com/documentation/swift/false) | [`false`](https://developer.apple.com/documentation/swift/false) |
+| External | [`false`](https://developer.apple.com/documentation/swift/false) | [`true`](https://developer.apple.com/documentation/swift/true) |
 
 For example, you can use these properties to build a list of devices for each GPU type.
 
@@ -163,7 +163,7 @@ For more information about GPU memory bandwidth, see [`Adjusting for GPU memory 
   Returns an array of all the Metal GPU devices in the system and registers a notification handler that Metal calls when the device list changes.
 - [func MTLRemoveDeviceObserver(any NSObjectProtocol)](mtlremovedeviceobserver(_:).md)
   Removes a registered observer of device notifications.
-- [func CGDirectDisplayCopyCurrentMetalDevice(CGDirectDisplayID) -> (any MTLDevice)?](../CoreGraphics/CGDirectDisplayCopyCurrentMetalDevice(_:).md)
+- [func CGDirectDisplayCopyCurrentMetalDevice(CGDirectDisplayID) -> (any MTLDevice)?](../coregraphics/cgdirectdisplaycopycurrentmetaldevice(_:).md)
   Returns the GPU device instance that’s currently driving a display.
 - [typealias MTLDeviceNotificationHandler](mtldevicenotificationhandler.md)
   A Swift closure or an Objective-C block that Metal calls when the system adds or removes a GPU device.

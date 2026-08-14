@@ -20,7 +20,7 @@ Returns TRUE if the current process is a trusted accessibility client, FALSE if 
 
 ## Parameters
 
-- `options`: KEY: kAXTrustedCheckOptionPrompt VALUE: ACFBooleanRef indicating whether the user will be informed if the current process is untrusted. This could be used, for example, on application startup to always warn a user if accessibility is not enabled for the current process. Prompting occurs asynchronously and does not affect the return value.
+- `options`: A dictionary of options, or NULL to specify no options. The following options are available: KEY: kAXTrustedCheckOptionPrompt VALUE: ACFBooleanRef indicating whether the user will be informed if the current process is untrusted. This could be used, for example, on application startup to always warn a user if accessibility is not enabled for the current process. Prompting occurs asynchronously and does not affect the return value.
 
 ## See Also
 

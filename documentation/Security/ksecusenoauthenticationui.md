@@ -22,7 +22,7 @@ let kSecUseNoAuthenticationUI: CFString
 
 #### Discussion
 
-The corresponding value is of type [`CFBoolean`](https://developer.apple.com/documentation/CoreFoundation/CFBoolean). If provided with a value of [`kCFBooleanTrue`](https://developer.apple.com/documentation/CoreFoundation/kCFBooleanTrue), the error [`errSecInteractionNotAllowed`](errsecinteractionnotallowed.md) is returned when the item is attempting to authenticate with UI.
+The corresponding value is of type [`CFBoolean`](https://developer.apple.com/documentation/corefoundation/cfboolean). If provided with a value of [`kCFBooleanTrue`](https://developer.apple.com/documentation/corefoundation/kcfbooleantrue), the error [`errSecInteractionNotAllowed`](errsecinteractionnotallowed.md) is returned when the item is attempting to authenticate with UI.
 
 
 ---

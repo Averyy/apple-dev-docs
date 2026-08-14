@@ -19,7 +19,7 @@ class CPNowPlayingRepeatButton
 
 #### Overview
 
-`CPNowPlayingRepeatButton` is a concrete subclass of [`CPNowPlayingButton`](cpnowplayingbutton.md). Use the button’s handler to invoke your existing functionality for cycling through repeat modes, using the same [`MPChangeRepeatModeCommand`](https://developer.apple.com/documentation/MediaPlayer/MPChangeRepeatModeCommand) that you provide to [`MPRemoteCommandCenter`](https://developer.apple.com/documentation/MediaPlayer/MPRemoteCommandCenter).
+`CPNowPlayingRepeatButton` is a concrete subclass of [`CPNowPlayingButton`](cpnowplayingbutton.md). Use the button’s handler to invoke your existing functionality for cycling through repeat modes, using the same [`MPChangeRepeatModeCommand`](https://developer.apple.com/documentation/mediaplayer/mpchangerepeatmodecommand) that you provide to [`MPRemoteCommandCenter`](https://developer.apple.com/documentation/mediaplayer/mpremotecommandcenter).
 
 CarPlay uses `MPRemoteCommandCenter` to observe changes to the repeat mode and updates the button’s appearance accordingly.
 
@@ -28,16 +28,16 @@ CarPlay uses `MPRemoteCommandCenter` to observe changes to the repeat mode and u
 ### Inherits From
 - [CPNowPlayingButton](cpnowplayingbutton.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCoding](../Foundation/NSCoding.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [NSSecureCoding](../Foundation/NSSecureCoding.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCoding](../foundation/nscoding.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

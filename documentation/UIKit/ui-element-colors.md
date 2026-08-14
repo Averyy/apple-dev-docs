@@ -8,7 +8,7 @@ Choose colors for UI elements such as labels, text, backgrounds, and links.
 
 UIKit provides color objects for the foreground and background colors of your app’s UI elements. The names of these color objects reflect their intended use, rather than specific color values.
 
-Except where noted, the color objects adapt automatically to Dark Mode changes when you use the provided [`UIColor`](uicolor.md) object. If you retrieve the color values, either directly or using another type such as [`CGColor`](https://developer.apple.com/documentation/CoreGraphics/CGColor), you must handle Dark Mode changes yourself. For more information about supporting Dark Mode, see [`Supporting Dark Mode in your interface`](supporting-dark-mode-in-your-interface.md).
+Except where noted, the color objects adapt automatically to Dark Mode changes when you use the provided [`UIColor`](uicolor.md) object. If you retrieve the color values, either directly or using another type such as [`CGColor`](https://developer.apple.com/documentation/coregraphics/cgcolor), you must handle Dark Mode changes yourself. For more information about supporting Dark Mode, see [`Supporting Dark Mode in your interface`](supporting-dark-mode-in-your-interface.md).
 
 ## Topics
 

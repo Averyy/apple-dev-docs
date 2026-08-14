@@ -45,9 +45,9 @@ var body: some View {
 
 ```
 
-This environment value is most useful when defining the appearance for the [`WidgetFamily.accessoryCircular`](https://developer.apple.com/documentation/WidgetKit/WidgetFamily/accessoryCircular) widget family, because it’s value can change depending on where the widget appears. For example, if the widget is the top circular complication on the Infograph watch face, the value is `true`. Otherwise it is `false`. The environment variable is always `false` in iOS.
+This environment value is most useful when defining the appearance for the [`WidgetFamily.accessoryCircular`](https://developer.apple.com/documentation/widgetkit/widgetfamily/accessorycircular) widget family, because it’s value can change depending on where the widget appears. For example, if the widget is the top circular complication on the Infograph watch face, the value is `true`. Otherwise it is `false`. The environment variable is always `false` in iOS.
 
-Other families always have the same value, regardless of where the widget appears. For the [`WidgetFamily.accessoryCorner`](https://developer.apple.com/documentation/WidgetKit/WidgetFamily/accessoryCorner) widget family, the value is always `true`. For other families, it is `false`.
+Other families always have the same value, regardless of where the widget appears. For the [`WidgetFamily.accessoryCorner`](https://developer.apple.com/documentation/widgetkit/widgetfamily/accessorycorner) widget family, the value is always `true`. For other families, it is `false`.
 
 ## See Also
 

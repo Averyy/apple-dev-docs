@@ -27,7 +27,7 @@ The optional methods that delegates of content storage objects implement to hand
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 - [NSTextContentManagerDelegate](nstextcontentmanagerdelegate.md)
 
 ## See Also

@@ -21,7 +21,7 @@ var kAudioFormatProperty_PanningMatrix: AudioFormatPropertyID { get }
 
 #### Discussion
 
-The specifier is an [`AudioPanningInfo`](audiopanninginfo.md) structure containing a [`AudioPanningMode`](audiopanningmode.md) constant and an [`AudioChannelLayout`](https://developer.apple.com/documentation/CoreAudioTypes/AudioChannelLayout) structure that describes the destination channel layout. The source being panned should be mono. For example, for a quad channel layout, the array contains four `Float32` values.
+The specifier is an [`AudioPanningInfo`](audiopanninginfo.md) structure containing a [`AudioPanningMode`](audiopanningmode.md) constant and an [`AudioChannelLayout`](https://developer.apple.com/documentation/coreaudiotypes/audiochannellayout) structure that describes the destination channel layout. The source being panned should be mono. For example, for a quad channel layout, the array contains four `Float32` values.
 
 This property supports audio panning performed by simple level setting of each channel. More complex panning algorithms (such as HRTF or distance filtering) cannot use this property. You can apply the level values to a mixer or other processing code. Level values typically range from 0 to 1, where 0 represents silence and 1 represents unity gain. For stereo formats, vector based panning is equivalent to the equal-power panning mode.
 

@@ -18,7 +18,7 @@ case utilitarianSmallFlat
 
 The following figure shows the size and location of the utilitarian small flat complication.
 
-![Diagram showing the size and position of a utilitarian small flat complication.](https://docs-assets.developer.apple.com/published/da25b4557d5576df46ec343218a7ff64/media-2880717%402x.png)
+![Diagram showing the size and position of a utilitarian small flat complication.](/images/com.apple.clockkit/media-2880717@2x.png)
 
 The utilitarian small flat family can display only the [`CLKComplicationTemplateUtilitarianSmallFlat`](clkcomplicationtemplateutilitariansmallflat.md) template.
 

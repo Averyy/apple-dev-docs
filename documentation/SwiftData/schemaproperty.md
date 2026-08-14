@@ -36,10 +36,10 @@ protocol SchemaProperty : Decodable, Encodable, Hashable
 ## Relationships
 
 ### Inherits From
-- [Decodable](../Swift/Decodable.md)
-- [Encodable](../Swift/Encodable.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
+- [Decodable](../swift/decodable.md)
+- [Encodable](../swift/encodable.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
 ### Conforming Types
 - [Schema.Attribute](schema/attribute.md)
 - [Schema.CompositeAttribute](schema/compositeattribute.md)

@@ -24,7 +24,7 @@ You can directly draw your thumbnail data in the graphics-context object created
 
 With this function you can create two types of graphics contexts for drawing thumbnails: bitmap and single-page vector-based; you use the `isBitmap` flag to distinguish between the two. Quick Look handles bitmap thumbnail context differently than non-bitmap contexts; in the latter case, Quick Look might scale the drawing up or down if necessary, and it respects the scale factor (for HiDPI support).
 
-If you prefer to work in Objective-C code, you can convert the created [`CGContext`](https://developer.apple.com/documentation/CoreGraphics/CGContext) to a [`NSGraphicsContext`](https://developer.apple.com/documentation/AppKit/NSGraphicsContext) object using [`init(graphicsPort:flipped:)`](https://developer.apple.com/documentation/AppKit/NSGraphicsContext/init(graphicsPort:flipped:)).
+If you prefer to work in Objective-C code, you can convert the created [`CGContext`](https://developer.apple.com/documentation/coregraphics/cgcontext) to a [`NSGraphicsContext`](https://developer.apple.com/documentation/appkit/nsgraphicscontext) object using [`init(graphicsPort:flipped:)`](https://developer.apple.com/documentation/appkit/nsgraphicscontext/init(graphicsport:flipped:)).
 
 ##### Special Considerations
 

@@ -16,7 +16,7 @@ var naturalSize: CGSize { get set }
 
 #### Discussion
 
-This property is only valid for tracks with visual media types and is [`zero`](https://developer.apple.com/documentation/CoreFoundation/CGSize/zero) for other track types.
+This property is only valid for tracks with visual media types and is [`zero`](https://developer.apple.com/documentation/corefoundation/cgsize/zero) for other track types.
 
 ## See Also
 

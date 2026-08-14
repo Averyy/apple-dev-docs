@@ -32,7 +32,7 @@ The system provides URLs for matching content if:
 - Spotlight was able to find matching content with a URL you donated to the Spotlight index.
 - The system was able to provide URLs for matching audio content; for example, from onscreen context.
 
-Use the provided URL in your [`IntentValueQuery`](https://developer.apple.com/documentation/AppIntents/IntentValueQuery) implementation to find content and return app entities.
+Use the provided URL in your [`IntentValueQuery`](https://developer.apple.com/documentation/appintents/intentvaluequery) implementation to find content and return app entities.
 
 ## See Also
 

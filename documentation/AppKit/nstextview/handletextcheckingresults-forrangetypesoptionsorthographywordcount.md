@@ -22,9 +22,9 @@ This method usually would not be called directly, since `NSTextView` itself will
 
 ## Parameters
 
-- `results`: An array of [`NSTextCheckingResult`](https://developer.apple.com/documentation/Foundation/NSTextCheckingResult) objects.
+- `results`: An array of [`NSTextCheckingResult`](https://developer.apple.com/documentation/foundation/nstextcheckingresult) objects.
 - `range`: The range of text that was checked.
-- `checkingTypes`: The type of checking  performed. The possible constants are listed in [`NSTextCheckingTypes`](https://developer.apple.com/documentation/Foundation/NSTextCheckingTypes) and can be combined using the C bit-wise `OR` operator to perform multiple checks at the same time.
+- `checkingTypes`: The type of checking  performed. The possible constants are listed in [`NSTextCheckingTypes`](https://developer.apple.com/documentation/foundation/nstextcheckingtypes) and can be combined using the C bit-wise `OR` operator to perform multiple checks at the same time.
 - `options`: The dictionary of values used during the checking process to perform. See Spell Checking Option Dictionary Keys for the supported values.
 - `orthography`: The orthography of the checked text.
 - `wordCount`: The number of words.

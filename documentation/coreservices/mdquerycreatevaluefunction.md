@@ -28,7 +28,7 @@ The function may hold onto the given attribute name and/or value in some other d
 - `query`: The query instance.
 - `attrName`: The attribute name of the value.
 - `attrValue`: The default value of the value.
-- `context`: The user-defined context parameter provided in the   function.
+- `context`: The user-defined context parameter provided in the `MDQuerySetCreateValueFunction` function.
 
 ## See Also
 

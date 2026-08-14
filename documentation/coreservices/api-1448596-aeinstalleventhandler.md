@@ -41,11 +41,11 @@ Your application should not install a handler in a system dispatch table with th
 
 ## Parameters
 
-- `theAEEventClass`: The event class for the Apple event or events to dispatch to this event handler. The Discussion section describes interactions between this parameter and the   parameter. See  .
-- `theAEEventID`: The event ID for the Apple event or events to dispatch to this event handler. The Discussion section describes interactions between this parameter and the   parameter. See  .
-- `handler`: A universal procedure pointer to the Apple event handler function to install. See  .
+- `theAEEventClass`: The event class for the Apple event or events to dispatch to this event handler. The Discussion section describes interactions between this parameter and the `theAEEventID` parameter. See [`AEEventClass`](aeeventclass.md).
+- `theAEEventID`: The event ID for the Apple event or events to dispatch to this event handler. The Discussion section describes interactions between this parameter and the `theAEEventClass` parameter. See [`AEEventID`](aeeventid.md).
+- `handler`: A universal procedure pointer to the Apple event handler function to install. See [`AEEventHandlerUPP`](aeeventhandlerupp.md).
 - `handlerRefcon`: A reference constant. The Apple Event Manager passes this value to the handler each time it calls it. If your handler doesn’t require a reference constant, pass 0 for this parameter.
-- `isSysHandler`: Specifies the Apple event dispatch table to add the handler to. Pass   to add the handler to the system dispatch table or   to add the handler to your application’s dispatch table. See Version Notes for related information.
+- `isSysHandler`: Specifies the Apple event dispatch table to add the handler to. Pass `TRUE` to add the handler to the system dispatch table or `FALSE` to add the handler to your application’s dispatch table. See Version Notes for related information.
 
 ## See Also
 

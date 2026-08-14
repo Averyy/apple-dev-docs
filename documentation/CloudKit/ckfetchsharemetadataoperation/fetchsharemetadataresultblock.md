@@ -24,7 +24,7 @@ var fetchShareMetadataResultBlock: ((Result<Void, any Error>) -> Void)? { get se
 
 The closure returns no value and takes the following parameter:
 
-- A [`Result`](https://developer.apple.com/documentation/Swift/Result) that contains either: - A successful `Result`, or
+- A [`Result`](https://developer.apple.com/documentation/swift/result) that contains either: - A successful `Result`, or
 - An error that contains information about a problem encountered fetching the share metadatas.
 
 This closure executes only once. The closure executes serially with respect to the other closures of the operation.

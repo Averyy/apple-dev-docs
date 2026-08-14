@@ -26,7 +26,7 @@ To dismiss the popover, call the [`dismiss(_:)`](nsviewcontroller/dismiss(_:)-91
 
 - `viewController`: The other view controller to present as a popover.
 - `positioningRect`: The content size of the popover.
-- `positioningView`: The view relative to which the popover should be positioned. Must not be `nil`, or else the view controller raises an [`invalidArgumentException`](https://developer.apple.com/documentation/Foundation/NSExceptionName/invalidArgumentException) exception.
+- `positioningView`: The view relative to which the popover should be positioned. Must not be `nil`, or else the view controller raises an [`invalidArgumentException`](https://developer.apple.com/documentation/foundation/nsexceptionname/invalidargumentexception) exception.
 - `preferredEdge`: The edge of `positioningView` that the popover should prefer to be anchored to.
 - `behavior`: The popover’s closing behavior. See the [`NSPopover.Behavior`](nspopover/behavior-swift.enum.md) enumeration.
 

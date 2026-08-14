@@ -24,8 +24,8 @@ To associate an icon with a quick action, pass it to the quick action item’s i
 There are three types of quick action icon:
 
 - An icon from a system-provided library of common types, as described in the [`UIApplicationShortcutIcon.IconType`](uiapplicationshortcuticon/icontype.md) enumeration
-- An icon derived from a custom template image in your app’s bundle and preferably in an asset catalog (see [`Managing assets with asset catalogs`](https://developer.apple.com/documentation/Xcode/managing-assets-with-asset-catalogs))
-- An icon representing a contact in the user’s address book, which you access through the [`Contacts UI`](https://developer.apple.com/documentation/ContactsUI) framework
+- An icon derived from a custom template image in your app’s bundle and preferably in an asset catalog (see [`Managing assets with asset catalogs`](https://developer.apple.com/documentation/xcode/managing-assets-with-asset-catalogs))
+- An icon representing a contact in the user’s address book, which you access through the [`Contacts UI`](https://developer.apple.com/documentation/contactsui) framework
 
 ## Topics
 
@@ -45,15 +45,15 @@ There are three types of quick action icon:
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCopying](../Foundation/NSCopying.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCopying](../foundation/nscopying.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

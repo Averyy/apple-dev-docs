@@ -43,7 +43,7 @@ func labDeltaE(inputImage: CIImage, inputImage2: CIImage) -> CIImage {
 }
 ```
 
-![Two photographs of a star, pentagon, nonagon, and a rounded corner square arranged in the center of the image on a black background. In the photo on the right, a Lab ΔE filter is applied, so the image no longer has a black background, and all of the white shapes are now on a transparent layer.](https://docs-assets.developer.apple.com/published/025cbbfbe189fcf91dd95dfa28646c34/media-3546476%402x.png)
+![Two photographs of a star, pentagon, nonagon, and a rounded corner square arranged in the center of the image on a black background. In the photo on the right, a Lab ΔE filter is applied, so the image no longer has a black background, and all of the white shapes are now on a transparent layer.](/images/com.apple.coreimage/media-3546476@2x.png)
 
 ## See Also
 

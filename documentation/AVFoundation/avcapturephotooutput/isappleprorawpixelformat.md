@@ -23,7 +23,7 @@ class func isAppleProRAWPixelFormat(_ pixelFormat: OSType) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/Swift/true) if the pixel format is an Apple ProRAW format, otherwise [`false`](https://developer.apple.com/documentation/Swift/false).
+[`true`](https://developer.apple.com/documentation/swift/true) if the pixel format is an Apple ProRAW format, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
 
 ## Parameters
 

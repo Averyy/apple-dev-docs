@@ -42,7 +42,7 @@ For example, a [`SimpleMaterial`](simplematerial.md) on the left, and an `UnlitM
 
 | [`SimpleMaterial`](simplematerial.md) | `UnlitMaterial` |
 | --- | --- |
-| ![A screenshot of a red cube in a living room scene. The cube is rounded on the edges, and appears to be made of a reflective plastic material.](https://docs-assets.developer.apple.com/published/1c42115ca829aa1fde7b9c344fac4ebc/simplematerial-not-metallic.jpg) | ![A screenshot of a red cube in a living room scene. The shape is of a cube observed from an angle above and to the right of it, and has no discernible edges as it has no response to lighting.](https://docs-assets.developer.apple.com/published/6114f83b3a9a7c75c60bc409b961edcb/unlitmaterial-red.jpg) |
+| ![A screenshot of a red cube in a living room scene. The cube is rounded on the edges, and appears to be made of a reflective plastic material.](/images/com.apple.RealityKit/simplematerial-not-metallic.jpg) | ![A screenshot of a red cube in a living room scene. The shape is of a cube observed from an angle above and to the right of it, and has no discernible edges as it has no response to lighting.](/images/com.apple.RealityKit/unlitmaterial-red.jpg) |
 
 > **Note**: The blending mode of `UnlitMaterial` materials should be configured explicitly with the [`blending`](unlitmaterial/blending-swift.property.md) property for transparent or translucent surfaces.  The `opaque` mode is used when unset.
 

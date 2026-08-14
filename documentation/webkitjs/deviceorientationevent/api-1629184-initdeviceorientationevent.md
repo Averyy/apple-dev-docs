@@ -24,7 +24,7 @@ void initDeviceOrientationEvent(
 
 ## Parameters
 
-- `type`: The type of event. Pass  .
+- `type`: The type of event. Pass `deviceorientation`.
 - `bubbles`: A Boolean value that indicates whether this event is a bubbling event.
 - `cancelable`: A Boolean value that indicates whether this event can be canceled.
 - `alpha`: The rotation, in degrees, of the device frame around its z-axis.

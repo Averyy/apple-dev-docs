@@ -32,7 +32,7 @@ In macOS, your application can not make an object callback function available to
 
 ## Parameters
 
-- `theToken`: A pointer to the token to dispose of. On successful return, the pointer is set to the null descriptor. See  .
+- `theToken`: A pointer to the token to dispose of. On successful return, the pointer is set to the null descriptor. See [`AEDesc`](aedesc.md).
 
 
 ---

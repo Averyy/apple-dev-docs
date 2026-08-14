@@ -26,7 +26,7 @@ A good place to add image representation classes to the registry is in the `load
 
 ## See Also
 
-- [class func load()](../ObjectiveC/NSObject-swift.class/load.md)
+- [class func load()](../objectivec/nsobject-swift.class/load.md)
   Invoked whenever a class or category is added to the Objective-C runtime; implement this method to perform class-specific behavior upon loading.
 - [class func `class`(forType: String) -> AnyClass?](nsimagerep/class(fortype:).md)
   Returns the image representation subclass that handles image data for the specified UTI.

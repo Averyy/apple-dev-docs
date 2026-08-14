@@ -28,11 +28,11 @@ The key service registers encryption keys to unlock the Mac at the login window 
 
 ##### Enable Ticket Granting Ticket Tgt with the Kerberos Sso Extension
 
-Set the following values in the [`ExtensibleSingleSignOnKerberos.ExtensionData`](https://developer.apple.com/documentation/DeviceManagement/ExtensibleSingleSignOnKerberos/ExtensionData-data.dictionary) to enable use of the Platform SSO TGT with the Kerberos SSO extension:
+Set the following values in the [`ExtensibleSingleSignOnKerberos.ExtensionData`](https://developer.apple.com/documentation/devicemanagement/extensiblesinglesignonkerberos/extensiondata-data.dictionary) to enable use of the Platform SSO TGT with the Kerberos SSO extension:
 
-- **`usePlatformSSOTGT`**: If [`true`](https://developer.apple.com/documentation/Swift/true), the Kerberos SSO extension uses the TGT from Platform SSO with the same realm. The default is [`false`](https://developer.apple.com/documentation/Swift/false).
-- **`allowPlatformSSOAuthFallback`**: If [`true`](https://developer.apple.com/documentation/Swift/true), the user can continue to sign in to the Kerberos SSO extension when using the TGT from Platform SSO. The default is [`true`](https://developer.apple.com/documentation/Swift/true).
-- **`performKerberosOnly`**: If [`true`](https://developer.apple.com/documentation/Swift/true), the Kerberos SSO extension doesn’t perform password expiration checks, external password change checks, or retrieve the user’s home directory. The default is [`false`](https://developer.apple.com/documentation/Swift/false).
+- **`usePlatformSSOTGT`**: If [`true`](https://developer.apple.com/documentation/swift/true), the Kerberos SSO extension uses the TGT from Platform SSO with the same realm. The default is [`false`](https://developer.apple.com/documentation/swift/false).
+- **`allowPlatformSSOAuthFallback`**: If [`true`](https://developer.apple.com/documentation/swift/true), the user can continue to sign in to the Kerberos SSO extension when using the TGT from Platform SSO. The default is [`true`](https://developer.apple.com/documentation/swift/true).
+- **`performKerberosOnly`**: If [`true`](https://developer.apple.com/documentation/swift/true), the Kerberos SSO extension doesn’t perform password expiration checks, external password change checks, or retrieve the user’s home directory. The default is [`false`](https://developer.apple.com/documentation/swift/false).
 
 ##### Use Diagnostics to Iterate on the Configuration During Development
 

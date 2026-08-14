@@ -37,7 +37,7 @@ Text("Projection effects using transforms")
     .border(Color.gray)
 ```
 
-![A screenshot showing text rotated 30 degrees around the axis pointing](https://docs-assets.developer.apple.com/published/863f0f5bbed89319fc97d81796facb05/SwiftUI-View-projectionEffect%402x.png)
+![A screenshot showing text rotated 30 degrees around the axis pointing](/images/com.apple.SwiftUI/SwiftUI-View-projectionEffect@2x.png)
 
 ## Parameters
 

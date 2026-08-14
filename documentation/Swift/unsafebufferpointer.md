@@ -77,17 +77,17 @@ An `UnsafeBufferPointer` instance is a view into memory and does not own the mem
 ## Relationships
 
 ### Conforms To
-- [AccelerateBuffer](../Accelerate/AccelerateBuffer.md)
+- [AccelerateBuffer](../accelerate/acceleratebuffer.md)
 - [AtomicRepresentable](../synchronization/atomicrepresentable.md)
-- [BNNSGraph.Builder.OperationParameter](../Accelerate/BNNSGraph/Builder/OperationParameter.md)
+- [BNNSGraph.Builder.OperationParameter](../accelerate/bnnsgraph/builder/operationparameter.md)
 - [BidirectionalCollection](bidirectionalcollection.md)
 - [BitwiseCopyable](bitwisecopyable.md)
 - [Collection](collection.md)
-- [ContiguousBytes](../Foundation/ContiguousBytes.md)
+- [ContiguousBytes](../foundation/contiguousbytes.md)
 - [ConvertibleToBytes](convertibletobytes.md)
 - [Copyable](copyable.md)
 - [CustomDebugStringConvertible](customdebugstringconvertible.md)
-- [DataProtocol](../Foundation/DataProtocol.md)
+- [DataProtocol](../foundation/dataprotocol.md)
 - [Escapable](escapable.md)
 - [RandomAccessCollection](randomaccesscollection.md)
 - [Sequence](sequence.md)

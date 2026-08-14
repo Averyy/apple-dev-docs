@@ -6,7 +6,7 @@ Verify your In-App Purchases are approved and available for sale in the App Stor
 
 #### Overview
 
-When launching your app in the App Store, the app may not display your In-App Purchases. To offer In-App Purchases in your app, call [`products(for:)`](https://developer.apple.com/documentation/StoreKit/Product/products(for:)) with a list of [`product identifiers`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/reference/in-app-purchase-information) (`Product ID`) matching these products in App Store Connect. `Product.products(for:)` returns an array that includes an instance of [`Product`](https://developer.apple.com/documentation/StoreKit/Product) for each of the In-App Purchases. Update your app’s UI with these returned instances, which contain all In-App Purchase data configured in App Store Connect for your app.
+When launching your app in the App Store, the app may not display your In-App Purchases. To offer In-App Purchases in your app, call [`products(for:)`](https://developer.apple.com/documentation/storekit/product/products(for:)) with a list of [`product identifiers`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/reference/in-app-purchase-information) (`Product ID`) matching these products in App Store Connect. `Product.products(for:)` returns an array that includes an instance of [`Product`](https://developer.apple.com/documentation/storekit/product) for each of the In-App Purchases. Update your app’s UI with these returned instances, which contain all In-App Purchase data configured in App Store Connect for your app.
 
 If `Product.products(for:)` fails to return a `Product` instance for your In-App Purchases, it may be due to the following reasons:
 
@@ -19,7 +19,7 @@ If `Product.products(for:)` fails to return a `Product` instance for your In-App
 
 To verify your product identifier list, perform these steps:
 
-1. In your Xcode project, [`Preparing your app for distribution`](https://developer.apple.com/documentation/Xcode/preparing-your-app-for-distribution#Set-the-bundle-ID) your app’s [`CFBundleIdentifier`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/CFBundleIdentifier).
+1. In your Xcode project, [`Preparing your app for distribution`](https://developer.apple.com/documentation/xcode/preparing-your-app-for-distribution) your app’s [`CFBundleIdentifier`](https://developer.apple.com/documentation/bundleresources/information-property-list/cfbundleidentifier).
 2. In App Store Connect, find the app that matches your app’s bundle ID.
 3. Verify each product identifier in your list matches the product identifier (`Product ID`) of an In-App Purchase created for the app in App Store Connect.
 
@@ -36,7 +36,7 @@ After Apple completes review of your In-App Purchases, confirm that the status o
 
 #### Review the Availability of Your in App Purchases
 
-A customer’s [`Apple Account`](https://developer.apple.comhttps://developer.apple.com/help/glossary/apple-account) country or region determines the App Store country or region where they can purchase content. For example, an account set to Canada can only purchase In-App Purchases from the App Store in Canada. If your In-App Purchase is available in all countries or regions of the App Store except Canada, [`products(for:)`](https://developer.apple.com/documentation/StoreKit/Product/products(for:)) won’t return a `Product` instance for your In-App Purchase on a device with an Apple Account set to Canada. In App Store Connect, you can select or deselect the countries or regions where your In-App Purchases are available on the App Store. For more information, see [`Set availability for in-app purchases`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/manage-in-app-purchases/set-availability-for-in-app-purchases).
+A customer’s [`Apple Account`](https://developer.apple.comhttps://developer.apple.com/help/glossary/apple-account) country or region determines the App Store country or region where they can purchase content. For example, an account set to Canada can only purchase In-App Purchases from the App Store in Canada. If your In-App Purchase is available in all countries or regions of the App Store except Canada, [`products(for:)`](https://developer.apple.com/documentation/storekit/product/products(for:)) won’t return a `Product` instance for your In-App Purchase on a device with an Apple Account set to Canada. In App Store Connect, you can select or deselect the countries or regions where your In-App Purchases are available on the App Store. For more information, see [`Set availability for in-app purchases`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/manage-in-app-purchases/set-availability-for-in-app-purchases).
 
 After you confirm the status of your In-App Purchases is [`Ready to Submit`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/reference/in-app-purchase-statuses), review their availability in App Store Connect. Confirm you select all the countries or regions where you want to sell the In-App Purchases. For instance, select all the countries and regions supported by the App Store to make your In-App Purchases available for sale in every App Store.
 

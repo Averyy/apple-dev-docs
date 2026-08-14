@@ -18,7 +18,7 @@ Enable players to interact with friends, compare leaderboard ranks, earn achieve
 
 Use the GameKit framework to implement Game Center social-gaming network features. Game Center is an Apple service that provides a single account that identifies players across all their games and devices. After players sign in to Game Center on their device, they can access their friends and use Game Center features you implement.
 
-![Multiple iPhone screens showing these Game Center features: an access point, achievement dashboard, leaderboard dashboard, and inviting friends.](https://docs-assets.developer.apple.com/published/febd437ebe02ea5bbae565532b9fc83c/media-4091475%402x.png)
+![Multiple iPhone screens showing these Game Center features: an access point, achievement dashboard, leaderboard dashboard, and inviting friends.](/images/com.apple.gamekit/media-4091475@2x.png)
 
 Before you can use GameKit classes, you must enable Game Center in your project and initialize the local player in your code; otherwise, your game receives a [`GKError.Code.notAuthenticated`](gkerror/code/notauthenticated.md) error.
 
@@ -45,7 +45,7 @@ For designing Game Center features in your app, see [`Human Interface Guidelines
   Confirm player credentials and device capabilities and check for account restrictions.
 - [Improving the player experience for games with large downloads](improving-the-player-experience-for-games-with-large-downloads.md)
   Provide ample content in your base installation and then use on-demand resources and the Background Assets API to handle additional content.
-- [Game Center Entitlement](../BundleResources/Entitlements/com.apple.developer.game-center.md)
+- [Game Center Entitlement](../bundleresources/entitlements/com.apple.developer.game-center.md)
   A Boolean value that indicates whether users of the app may see and compare achievements on a leaderboard, invite friends, and start multiplayer games.
 ### Players
 - [Connecting players with their friends in your game](connecting-players-with-their-friends-in-your-game.md)
@@ -62,9 +62,9 @@ For designing Game Center features in your app, see [`Human Interface Guidelines
   A class that provides common data and methods for the different player objects.
 - [protocol GKLocalPlayerListener](gklocalplayerlistener.md)
   A protocol that handles events for Game Center players.
-- [static let GKPlayerAuthenticationDidChangeNotificationName: NSNotification.Name](../Foundation/NSNotification/Name-swift.struct/GKPlayerAuthenticationDidChangeNotificationName.md)
+- [static let GKPlayerAuthenticationDidChangeNotificationName: NSNotification.Name](../foundation/nsnotification/name-swift.struct/gkplayerauthenticationdidchangenotificationname.md)
   A notification that posts after GameKit authenticates the local player.
-- [static let GKPlayerDidChangeNotificationName: NSNotification.Name](../Foundation/NSNotification/Name-swift.struct/GKPlayerDidChangeNotificationName.md)
+- [static let GKPlayerDidChangeNotificationName: NSNotification.Name](../foundation/nsnotification/name-swift.struct/gkplayerdidchangenotificationname.md)
   A notification that posts when a player object’s data changes.
 ### Game Center interfaces
 - [Adding an access point to your game](adding-an-access-point-to-your-game.md)
@@ -104,7 +104,7 @@ For designing Game Center features in your app, see [`Human Interface Guidelines
   Understand what gameplay works well when configuring challenges in your game.
 - [class GKChallengeDefinition](gkchallengedefinition.md)
   An object that represents the static metadata you define for the challenge.
-- [GKShowChallengeBanners](../BundleResources/Information-Property-List/GKShowChallengeBanners.md)
+- [GKShowChallengeBanners](../bundleresources/information-property-list/gkshowchallengebanners.md)
   A Boolean value that indicates whether GameKit can display challenge banners in a game.
 ### Activities
 - [Creating activities for your game](creating-activities-for-your-game.md)
@@ -161,7 +161,7 @@ For designing Game Center features in your app, see [`Human Interface Guidelines
   Exchange request information that participants send in a turn-based match.
 - [class GKTurnBasedExchangeReply](gkturnbasedexchangereply.md)
   Details about a recipient’s response to an exchange request.
-- [GKGameCenterBadgingDisabled](../BundleResources/Information-Property-List/GKGameCenterBadgingDisabled.md)
+- [GKGameCenterBadgingDisabled](../bundleresources/information-property-list/gkgamecenterbadgingdisabled.md)
   A Boolean value indicating whether GameKit can add badges to a turn-based game icon.
 ### Errors
 - [struct GKError](gkerror.md)

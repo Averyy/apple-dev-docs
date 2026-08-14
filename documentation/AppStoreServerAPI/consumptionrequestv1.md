@@ -40,12 +40,12 @@ The [`ConsumptionRequestV1`](consumptionrequestv1.md) request body requires that
 
 If you receive a `CONSUMPTION_REQUEST` notification for a transaction, find its associated `appAccountToken` value as follows:
 
-- If you receive [`App Store Server Notifications V2`](https://developer.apple.com/documentation/AppStoreServerNotifications/App-Store-Server-Notifications-V2), the `appAccountToken` value is in [`JWSTransactionDecodedPayload`](https://developer.apple.com/documentation/AppStoreServerNotifications/JWSTransactionDecodedPayload).
-- If you receive [`App Store Server Notifications Version 1`](https://developer.apple.com/documentation/AppStoreServerNotifications/app-store-server-notifications-version-1), the `appAccountToken` value is in [`unified_receipt.Latest_receipt_info`](https://developer.apple.com/documentation/AppStoreServerNotifications/unified_receipt/Latest_receipt_info-data.dictionary).
+- If you receive [`App Store Server Notifications V2`](https://developer.apple.com/documentation/appstoreservernotifications/app-store-server-notifications-v2), the `appAccountToken` value is in [`JWSTransactionDecodedPayload`](https://developer.apple.com/documentation/appstoreservernotifications/jwstransactiondecodedpayload).
+- If you receive [`App Store Server Notifications Version 1`](https://developer.apple.com/documentation/appstoreservernotifications/app-store-server-notifications-version-1), the `appAccountToken` value is in [`unified_receipt.Latest_receipt_info`](https://developer.apple.com/documentation/appstoreservernotifications/unified_receipt/latest_receipt_info-data.dictionary).
 
 The `appAccountToken` value may be an empty string if your app doesn’t use app account tokens.
 
-For more information about App Store Server Notifications versions, see [`App Store Server Notifications changelog`](https://developer.apple.com/documentation/AppStoreServerNotifications/app-store-server-notifications-changelog).
+For more information about App Store Server Notifications versions, see [`App Store Server Notifications changelog`](https://developer.apple.com/documentation/appstoreservernotifications/app-store-server-notifications-changelog).
 
 ## Topics
 

@@ -22,7 +22,7 @@ let NSUndoManagerGroupIsDiscardableKey: String
 
 #### Discussion
 
-The key has a corresponding value of [`true`](https://developer.apple.com/documentation/Swift/true), wrapped as a Boolean [`NSNumber`](nsnumber.md) object, if the undo group as a whole is discardable.
+The key has a corresponding value of [`true`](https://developer.apple.com/documentation/swift/true), wrapped as a Boolean [`NSNumber`](nsnumber.md) object, if the undo group as a whole is discardable.
 
 ## See Also
 

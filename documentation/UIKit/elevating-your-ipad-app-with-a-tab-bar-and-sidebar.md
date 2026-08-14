@@ -8,9 +8,9 @@ Provide a compact, ergonomic tab bar for quick access to key parts of your app, 
 
 In iPadOS, the tab bar floats over your content at the top, giving you more space for your app’s content. Additionally, because the tab bar shares space with the navigation bar, it places your tabs closer to your app’s other controls.
 
-![An illustration of an iPad that shows the placement of the floating tab bar at the top of the screen.](https://docs-assets.developer.apple.com/published/5194751ad1507036389d31462de10afc/elevating-your-ipad-app-with-a-tab-bar-and-sidebar-1%402x.png)
+![An illustration of an iPad that shows the placement of the floating tab bar at the top of the screen.](/images/com.apple.uikit/elevating-your-ipad-app-with-a-tab-bar-and-sidebar-1@2x.png)
 
-> **Note**:  For information about adopting this tab bar appearance in SwiftUI, read [`Enhancing your app’s content with tab navigation`](https://developer.apple.com/documentation/SwiftUI/Enhancing-your-app-content-with-tab-navigation).
+> **Note**:  For information about adopting this tab bar appearance in SwiftUI, read [`Enhancing your app’s content with tab navigation`](https://developer.apple.com/documentation/swiftui/enhancing-your-app-content-with-tab-navigation).
 
 ##### Create a Tab Bar
 
@@ -61,7 +61,7 @@ UISearchTab { _ in
 
 In addition to configuring a tab with a system-provided symbol for search, `UISearchTab` also automatically separates the search tab from other tabs when the tab bar is compact.
 
-![An illustration of an iPad that shows the position of the first, second, and third tabs at the top of the screen.](https://docs-assets.developer.apple.com/published/d9f23673887e9524618cbe06e88a9690/elevating-your-ipad-app-with-a-tab-bar-and-sidebar-2%402x.png)
+![An illustration of an iPad that shows the position of the first, second, and third tabs at the top of the screen.](/images/com.apple.uikit/elevating-your-ipad-app-with-a-tab-bar-and-sidebar-2@2x.png)
 
 The iPad tab bar supports an unlimited number of items. If there isn’t enough room to display all the tabs, the system collapses any tabs that can’t fit onscreen, and lets people scroll through them. However, consider limiting your tabs to just those that fit in the tab bar. This ensures that people can access key parts of your app with one tap.
 
@@ -71,7 +71,7 @@ Although both tab bars and sidebars play a similar navigation role in iPadOS app
 
 If your app contains a rich hierarchy of views, you can create an array of tab items that the system displays as either a tab bar or a sidebar. This combination provides the best features of both navigation styles. When displaying as a tab bar, people have quick access to the most critical sections of your app. When displaying as a sidebar, they can see the full range and depth of your app.
 
-![An illustration of two iPads side by side. The first iPad shows the sidebar on the left of the screen in landscape orientation. The second iPad shows the tab bar at the top of the screen in portrait orientation.](https://docs-assets.developer.apple.com/published/7020d9af6aba086fd48540d3323c70b4/elevating-your-ipad-app-with-a-tab-bar-and-sidebar-3%402x.png)
+![An illustration of two iPads side by side. The first iPad shows the sidebar on the left of the screen in landscape orientation. The second iPad shows the tab bar at the top of the screen in portrait orientation.](/images/com.apple.uikit/elevating-your-ipad-app-with-a-tab-bar-and-sidebar-3@2x.png)
 
 Use [`UITab`](uitab.md) and [`UITabGroup`](uitabgroup.md) classes to create a hierarchy of tabs. If the tabs array contains at least one tab group, the system automatically displays the tabs as both a tab bar and a sidebar. Otherwise, it only displays the array as a tab bar. You can also explicitly define how the system displays your tabs by setting the [`UITabBarController`](uitabbarcontroller.md) object’s [`mode`](uitabbarcontroller/mode-swift.property.md) property.
 
@@ -130,7 +130,7 @@ let sectionOne = UITabGroup(
 
 The tab bar displays a tab group as a single tab item, and the sidebar displays it as a section that contains subitems. The sidebar displays top-level tab items first, followed by the sections.
 
-![An illustration of an iPad in landscape orientation that shows the sidebar displaying a hierarchy of tabs. The top-level tabs appear first, followed by the tab groups.](https://docs-assets.developer.apple.com/published/bb9b16265dd5e2772ccb94bd8f914a22/elevating-your-ipad-app-with-a-tab-bar-and-sidebar-4%402x.png)
+![An illustration of an iPad in landscape orientation that shows the sidebar displaying a hierarchy of tabs. The top-level tabs appear first, followed by the tab groups.](/images/com.apple.uikit/elevating-your-ipad-app-with-a-tab-bar-and-sidebar-4@2x.png)
 
 You can nest a [`UITabGroup`](uitabgroup.md) inside another [`UITabGroup`](uitabgroup.md) to create a deeper hierarchy in the sidebar; however, consider limiting your app to two, or at most three, layers. Also, you can dynamically change a tab group’s content at runtime by modifying its [`children`](uitabgroup/children.md) property.
 
@@ -168,7 +168,7 @@ People can customize the content in both the tab bar and sidebar using a system-
 
 The system automatically persists any customizations that someone makes to the bars. You can implement the [`tabBarController(_:displayOrderDidChangeFor:)`](uitabbarcontrollerdelegate/tabbarcontroller(_:displayorderdidchangefor:).md) and [`tabBarController(_:visibilityDidChangeFor:)`](uitabbarcontrollerdelegate/tabbarcontroller(_:visibilitydidchangefor:).md) delegate methods to receive notifications about the changes.
 
-![An illustration of an iPad in landscape orientation that shows the sidebar and tab bar in edit mode.](https://docs-assets.developer.apple.com/published/2c1d198113fa2823bf3b4767a2137ef6/elevating-your-ipad-app-with-a-tab-bar-and-sidebar-5%402x.png)
+![An illustration of an iPad in landscape orientation that shows the sidebar and tab bar in edit mode.](/images/com.apple.uikit/elevating-your-ipad-app-with-a-tab-bar-and-sidebar-5@2x.png)
 
 By default, only the top-level tabs appear in the tab bar. People can add or remove any tab in the sidebar, but can’t hide or reorder the items in it.
 
@@ -180,9 +180,9 @@ To control which items appear in the tab bar, and how people can customize them,
 
 When possible, make tabs customizable so that people can choose which ones to place in the tab bar. If you have any tabs that are central to your app, consider making them fixed tabs, so that people can’t remove or move them. Use pinned tabs for prominent items, like search. Also, because pinned tabs only display the tab icon, be sure to select an image that people recognize and can easily understand.
 
-![An illustration of an iPad in landscape orientation that shows the fixed, optional, pinned, and movable tabs in the tab bar and sidebar.](https://docs-assets.developer.apple.com/published/546084e124ca71f50de854b1ea664bc5/elevating-your-ipad-app-with-a-tab-bar-and-sidebar-6%402x.png)
+![An illustration of an iPad in landscape orientation that shows the fixed, optional, pinned, and movable tabs in the tab bar and sidebar.](/images/com.apple.uikit/elevating-your-ipad-app-with-a-tab-bar-and-sidebar-6@2x.png)
 
-To create an item that appears in the sidebar, but that people can’t add to the tab bar, set the [`preferredPlacement`](uitab/preferredplacement.md) property to [`UITab.Placement.sidebarOnly`](uitab/placement/sidebaronly.md). To create an item that people can add to or remove from the sidebar, set its [`allowsHiding`](uitab/allowshiding.md) property to [`true`](https://developer.apple.com/documentation/Swift/true). If someone removes an item from the sidebar, the system also removes it from the tab bar.
+To create an item that appears in the sidebar, but that people can’t add to the tab bar, set the [`preferredPlacement`](uitab/preferredplacement.md) property to [`UITab.Placement.sidebarOnly`](uitab/placement/sidebaronly.md). To create an item that people can add to or remove from the sidebar, set its [`allowsHiding`](uitab/allowshiding.md) property to [`true`](https://developer.apple.com/documentation/swift/true). If someone removes an item from the sidebar, the system also removes it from the tab bar.
 
 ```swift
 // Create the tab.
@@ -201,7 +201,7 @@ customizableItem.allowsHiding = true
 customizableItem.isHiddenByDefault = true
 ```
 
-To let people reorganize items within a tab group, set the group’s [`allowsReordering`](uitabgroup/allowsreordering.md) property to [`true`](https://developer.apple.com/documentation/Swift/true).
+To let people reorganize items within a tab group, set the group’s [`allowsReordering`](uitabgroup/allowsreordering.md) property to [`true`](https://developer.apple.com/documentation/swift/true).
 
 ```swift
 sectionOne.allowsReordering = true

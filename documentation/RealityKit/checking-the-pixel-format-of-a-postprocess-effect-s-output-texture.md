@@ -6,7 +6,7 @@ Make sure your postprocess effect works on all devices.
 
 #### Overview
 
-Some device GPUs require that the output texture for postprocess effects be in a specific format. If the current device doesn’t support [`MTLGPUFamily.apple2`](https://developer.apple.com/documentation/Metal/MTLGPUFamily/apple2), convert the output texture to [`MTLPixelFormat.bgra8Unorm`](https://developer.apple.com/documentation/Metal/MTLPixelFormat/bgra8Unorm) before encoding the processed framebuffer to it. An easy way to do that, is to add a derived property to [`ARView.PostProcessContext`](arview/postprocesscontext.md) using an extension:
+Some device GPUs require that the output texture for postprocess effects be in a specific format. If the current device doesn’t support [`MTLGPUFamily.apple2`](https://developer.apple.com/documentation/metal/mtlgpufamily/apple2), convert the output texture to [`MTLPixelFormat.bgra8Unorm`](https://developer.apple.com/documentation/metal/mtlpixelformat/bgra8unorm) before encoding the processed framebuffer to it. An easy way to do that, is to add a derived property to [`ARView.PostProcessContext`](arview/postprocesscontext.md) using an extension:
 
 ```swift
 extension RealityKit.ARView.PostProcessContext {

@@ -12,7 +12,7 @@ Before adding complications to the Apple Watch face, you must enable support for
 
 Check Include Complications to enable complications when creating a new watchOS app, as shown in the figure below.
 
-![The option sheet with the Include Complications option enabled.](https://docs-assets.developer.apple.com/published/dd914075d9bb5b7a4d7623b12e99224e/media-3570873%402x.png)
+![The option sheet with the Include Complications option enabled.](/images/com.apple.clockkit/media-3570873@2x.png)
 
 When you include complications, Xcode creates and configures a complication data source for your app. The data source includes stubs for many of the methods required to configure your complications, populate your timeline, and provide placeholders. Xcode also creates a group in your extension’s assets catalog for static placeholder images.
 
@@ -34,11 +34,11 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
 
 Next, add a Complication group to your extension’s assets catalog (if one doesn’t already exist). Open the `Assets.xcassets` file and select Editor > Add Assets > watchOS > New Watch Complication Placeholder, as in the figure below.
 
-![A screenshot of the Complication group in the extension’s assets catalog.](https://docs-assets.developer.apple.com/published/5961ba6f8d73bdf3abc4a67bf2ff9831/media-3570878%402x.png)
+![A screenshot of the Complication group in the extension’s assets catalog.](/images/com.apple.clockkit/media-3570878@2x.png)
 
 Finally, select your app in the Project navigator, and open the extension’s General tab. In the Complication Configuration set the Data Source Class and Complication Group to the class and asset catalog group you just created.
 
-![A screenshot that shows the complication configuration settings, with the data source and asset group specified.](https://docs-assets.developer.apple.com/published/915fc68d76d59d24bfa79eef6870cfa1/media-3570877%402x.png)
+![A screenshot that shows the complication configuration settings, with the data source and asset group specified.](/images/com.apple.clockkit/media-3570877@2x.png)
 
 ## See Also
 

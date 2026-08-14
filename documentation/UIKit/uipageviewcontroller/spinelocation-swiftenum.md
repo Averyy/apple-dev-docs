@@ -20,7 +20,7 @@ enum SpineLocation
 
 #### Overview
 
-To set the spine location, wrap one of these constants in an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) object and set it as the value for the [`spineLocation`](uipageviewcontroller/optionskey/spinelocation.md) key in the options dictionary passed to the [`init(transitionStyle:navigationOrientation:options:)`](uipageviewcontroller/init(transitionstyle:navigationorientation:options:).md) method.
+To set the spine location, wrap one of these constants in an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) object and set it as the value for the [`spineLocation`](uipageviewcontroller/optionskey/spinelocation.md) key in the options dictionary passed to the [`init(transitionStyle:navigationOrientation:options:)`](uipageviewcontroller/init(transitionstyle:navigationorientation:options:).md) method.
 
 ## Topics
 
@@ -39,12 +39,12 @@ To set the spine location, wrap one of these constants in an [`NSNumber`](https:
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../Swift/BitwiseCopyable.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [RawRepresentable](../Swift/RawRepresentable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [BitwiseCopyable](../swift/bitwisecopyable.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [RawRepresentable](../swift/rawrepresentable.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

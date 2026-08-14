@@ -12,7 +12,7 @@ You can securely commission a Matter device using certificates. Generate your ow
 
 ##### Obtain the Onboarding Payload
 
-The [`MatterSupport`](https://developer.apple.com/documentation/MatterSupport) framework provides an onboarding payload that you use to discover a device. Implement [`commissionDevice(in:onboardingPayload:commissioningID:)`](https://developer.apple.com/documentation/MatterSupport/MatterAddDeviceExtensionRequestHandler/commissionDevice(in:onboardingPayload:commissioningID:)) to obtain the onboarding payload, then securely commission a Matter device using [`MTRDeviceController`](mtrdevicecontroller.md). For more information, see [`Adding Matter support to your ecosystem`](https://developer.apple.com/documentation/MatterSupport/Adding-Matter-support-to-your-ecosystem).
+The [`MatterSupport`](https://developer.apple.com/documentation/mattersupport) framework provides an onboarding payload that you use to discover a device. Implement [`commissionDevice(in:onboardingPayload:commissioningID:)`](https://developer.apple.com/documentation/mattersupport/matteradddeviceextensionrequesthandler/commissiondevice(in:onboardingpayload:commissioningid:)) to obtain the onboarding payload, then securely commission a Matter device using [`MTRDeviceController`](mtrdevicecontroller.md). For more information, see [`Adding Matter support to your ecosystem`](https://developer.apple.com/documentation/mattersupport/adding-matter-support-to-your-ecosystem).
 
 ##### Provide Persistent Storage
 

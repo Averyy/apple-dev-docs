@@ -22,7 +22,7 @@ This method initializes the parameters that are common to all network interfaces
 
 ## Parameters
 
-- `params`: Pointer to an   allocated by the caller.
+- `params`: Pointer to an `ifnet_init_params` allocated by the caller.
 
 ## See Also
 

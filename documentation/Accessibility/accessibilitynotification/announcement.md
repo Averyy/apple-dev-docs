@@ -22,11 +22,11 @@ struct Announcement
 
 #### Overview
 
-Include an announcement value, such as [`String`](https://developer.apple.com/documentation/Swift/String) or [`AttributedString`](https://developer.apple.com/documentation/Foundation/AttributedString), for an assistive app to announce.
+Include an announcement value, such as [`String`](https://developer.apple.com/documentation/swift/string) or [`AttributedString`](https://developer.apple.com/documentation/foundation/attributedstring), for an assistive app to announce.
 
 Optionally, you can apply accessibility speech attributes to the announcement. For example, you can set a priority to specify the announcement’s importance relative to other announcements that are in the queue for an assistive app to speak. Announcement priorities give you more control over which announcements people need to hear, and which ones are acceptable to ignore or interrupt.
 
-You specify an announcement priority using the [`accessibilitySpeechAnnouncementPriority`](https://developer.apple.com/documentation/Foundation/AttributeScopes/AccessibilityAttributes/accessibilitySpeechAnnouncementPriority) property. The following code shows an example of how to post an announcement notification with a high priority, which interrupts other speech and isn’t interruptible after it starts:
+You specify an announcement priority using the [`accessibilitySpeechAnnouncementPriority`](https://developer.apple.com/documentation/foundation/attributescopes/accessibilityattributes/accessibilityspeechannouncementpriority) property. The following code shows an example of how to post an announcement notification with a high priority, which interrupts other speech and isn’t interruptible after it starts:
 
 ```swift
 import SwiftUI

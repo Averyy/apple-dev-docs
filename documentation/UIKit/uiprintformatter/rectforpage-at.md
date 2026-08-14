@@ -23,7 +23,7 @@ A rectangle enclosing the content area for page `pageIndex`.
 
 #### Discussion
 
-Returns [`CGRectZero`](https://developer.apple.com/documentation/CoreGraphics/CGRectZero) if the print formatter draws no content on the specified page.
+Returns [`CGRectZero`](https://developer.apple.com/documentation/coregraphics/cgrectzero) if the print formatter draws no content on the specified page.
 
 ## Parameters
 

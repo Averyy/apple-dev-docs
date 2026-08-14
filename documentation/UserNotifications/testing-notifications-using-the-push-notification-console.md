@@ -26,11 +26,11 @@ Use the payload editor to input raw JSON directly or construct the payload using
 
 The screenshot below is an example of using a test notification form to send a test notification to a device token in the Push Notification Console.
 
-![A screenshot of a form in the Push Notification console used as an example to send a test notification to a device token.](https://docs-assets.developer.apple.com/published/1f5b0e7b92c57a93ee4501db26af91c4/devicepush%402x.png)
+![A screenshot of a form in the Push Notification console used as an example to send a test notification to a device token.](/images/com.apple.usernotifications/devicepush@2x.png)
 
 The screenshot below is an example of a form used to send a test notification to a channel in the Push Notification Console.
 
-![A screenshot of a form in the Push Notification console used as an example to send a test notification to a channel.](https://docs-assets.developer.apple.com/published/922f07cd2d5f63c0419f4881ddc54fb2/broadcastpush%402x.png)
+![A screenshot of a form in the Push Notification console used as an example to send a test notification to a channel.](/images/com.apple.usernotifications/broadcastpush@2x.png)
 
 After entering the required information for a push notification request, you can generate the corresponding cURL command by clicking the Get cURL Command button. The generated cURL command includes the necessary headers, authentication information, and payload data for the request. Use this to send the same notification by connecting directly to APNs from the command line. For more information, refer to [`Sending push notifications using command-line tools`](sending-push-notifications-using-command-line-tools.md).
 
@@ -40,7 +40,7 @@ In the APNs production environment, only team members with the admin role can se
 
 Use the push notification console to manage your channels in the Channels tab. You can create new channels and delete existing channels that aren’t relevant. When you create a new channel, the console provides guidance on configuring parameters required for channel creation: environment and message storage policy. The parameters you specify can’t be changed later. For more information about message storage policy, refer to [`Sending channel management requests to APNs`](sending-channel-management-requests-to-apns.md). You can also search a specific channel you created using the channel ID returned by APNs. The screenshot below is an example of a channel created using the Push Notification Console. At the top right corner, you can create a new channel, and underneath that, you can search for a specific channel with the channel ID.
 
-![A screenshot of a channel created using the Push Notification Console. Starting from left is a Channel ID, the push type, message storage policy, and the date that the channel was created. ](https://docs-assets.developer.apple.com/published/51e9695cf7c721596dbc8aaf5db0fbd6/channel-list%402x.PNG)
+![A screenshot of a channel created using the Push Notification Console. Starting from left is a Channel ID, the push type, message storage policy, and the date that the channel was created. ](/images/com.apple.usernotifications/channel-list@2x.PNG)
 
 ##### Verify Delivery in the Development Environment
 
@@ -48,7 +48,7 @@ After APNs receives a push notification, it can undergo several state transition
 
 You can use the Delivery Log to monitor a notification’s delivery and give you insight into what happens to the notifications you send. To access this information, provide an “apns-unique-id”, an identifier that APNs returns in response to each notification request.
 
-![A screenshot of the details and metadata of a notification sent through the Push Notification Console.](https://docs-assets.developer.apple.com/published/1734fcfb5424fd54c3aebed784f18f8c/media-4251168%402x.png)
+![A screenshot of the details and metadata of a notification sent through the Push Notification Console.](/images/com.apple.usernotifications/media-4251168@2x.png)
 
 To view the delivery log for a particular push notification sent to APNs, you need to select the bundle ID that you used to send the notification from the dashboard. You can only query delivery logs of notifications sent for the selected bundle ID. Delivery logs are only available in the development environment. You can access the logs for up to seven days after you send the notification. Download and save the logs to retain them for future analysis or reference.
 
@@ -62,13 +62,13 @@ You can determine the validity of an authentication token by using the JWT Valid
 - Team ID
 - Expiration
 
-![A screenshot depicting an example of a valid JSON Web Token. ](https://docs-assets.developer.apple.com/published/9471d484d8ecb36f3b853891c276920d/media-4238566%402x.png)
+![A screenshot depicting an example of a valid JSON Web Token. ](/images/com.apple.usernotifications/media-4238566@2x.png)
 
 If the provided key is invalid, the tool gives the reason why it’s invalid. For debugging purposes, the validator parses and displays the key-value pairs that constitute the token’s header and payload. This helps identify any authentication problems you may face when using these credentials to initiate push notification requests. For more information on the token-based authentication that APNs uses, refer to [`Establishing a token-based connection to APNs`](establishing-a-token-based-connection-to-apns.md).
 
 You can use the Device Token Validator to determine the validity of the device token. To verify a device token associated with a bundle ID, you need to select the respective bundle ID in the dashboard. For more information on getting a device token, see [`Registering your app with APNs`](registering-your-app-with-apns.md).
 
-![A screenshot depicting an example of a valid Device Token.](https://docs-assets.developer.apple.com/published/8a574dbc8c345c5a4a52d9fa4c93272e/media-4210015%402x.png)
+![A screenshot depicting an example of a valid Device Token.](/images/com.apple.usernotifications/media-4210015@2x.png)
 
 ##### Generate an Authentication Token
 
@@ -76,7 +76,7 @@ You can generate an authentication token using the JWT generator by providing yo
 
 > **Note**:  The signing key isn’t uploaded anywhere, it’s only used in your browser.
 
-![A screenshot depicting an example of a valid Key ID used to generate a token.](https://docs-assets.developer.apple.com/published/fdb0dc6b51ba64112c807b531447f462/media-4251167%402x.png)
+![A screenshot depicting an example of a valid Key ID used to generate a token.](/images/com.apple.usernotifications/media-4251167@2x.png)
 
 ## See Also
 

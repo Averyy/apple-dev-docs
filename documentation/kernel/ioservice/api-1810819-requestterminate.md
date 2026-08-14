@@ -24,7 +24,7 @@ When an IOService is made inactive the default behavior is to also make any of i
 ## Parameters
 
 - `provider`: The terminated provider of this object.
-- `options`: Options originally passed to terminate, plus  .
+- `options`: Options originally passed to terminate, plus `kIOServiceRecursing`.
 
 ## See Also
 

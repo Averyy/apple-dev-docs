@@ -23,7 +23,7 @@ class VNDetectFaceCaptureQualityRequest
 
 This request produces or updates a [`VNFaceObservation`](vnfaceobservation.md) object’s property [`faceCaptureQuality`](vnfaceobservation/facecapturequality-bjg5.md) with a floating-point value. The value ranges from `0` to `1`. Faces with quality closer to `1` are better lit, sharper, and more centrally positioned than faces with quality closer to `0`.
 
-If you don’t execute the request, or the request fails, the property [`faceCaptureQuality`](vnfaceobservation/facecapturequality-bjg5.md) is [`nil`](https://developer.apple.com/documentation/ObjectiveC/nil-227m0).
+If you don’t execute the request, or the request fails, the property [`faceCaptureQuality`](vnfaceobservation/facecapturequality-bjg5.md) is [`nil`](https://developer.apple.com/documentation/objectivec/nil-227m0).
 
 ## Topics
 
@@ -43,13 +43,13 @@ If you don’t execute the request, or the request fails, the property [`faceCap
 ### Inherits From
 - [VNImageBasedRequest](vnimagebasedrequest.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCopying](../Foundation/NSCopying.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCopying](../foundation/nscopying.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 - [VNFaceObservationAccepting](vnfaceobservationaccepting.md)
 
 ## See Also

@@ -38,10 +38,10 @@ A playable audio resource
 - [AudioFileGroupResource](audiofilegroupresource.md)
 - [AudioFileResource](audiofileresource.md)
 ### Conforms To
-- [Equatable](../Swift/Equatable.md)
+- [Equatable](../swift/equatable.md)
 - [Resource](resource.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 
@@ -50,7 +50,7 @@ A playable audio resource
 - [class AudioFileGroupResource](audiofilegroupresource.md)
   An audio file group.
 - [class AudioBufferResource](audiobufferresource.md)
-  An audio resource that you load from an [`AVAudioBuffer`](https://developer.apple.com/documentation/AVFAudio/AVAudioBuffer).
+  An audio resource that you load from an [`AVAudioBuffer`](https://developer.apple.com/documentation/avfaudio/avaudiobuffer).
 - [struct AudioLibraryComponent](audiolibrarycomponent.md)
   A container for audio resources that you can look up by user-defined names.
 - [AudioResource.Calibration](audioresource/calibration.md)

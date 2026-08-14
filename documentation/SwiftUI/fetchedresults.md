@@ -30,7 +30,7 @@ Use a `FetchedResults` instance to show or edit Core Data managed objects in you
 private var quakes: FetchedResults<Quake>
 ```
 
-The results instance conforms to [`RandomAccessCollection`](https://developer.apple.com/documentation/Swift/RandomAccessCollection), so you access it like any other collection. For example, you can create a [`List`](list.md) that iterates over all the results:
+The results instance conforms to [`RandomAccessCollection`](https://developer.apple.com/documentation/swift/randomaccesscollection), so you access it like any other collection. For example, you can create a [`List`](list.md) that iterates over all the results:
 
 ```swift
 List(quakes) { quake in
@@ -42,7 +42,7 @@ List(quakes) { quake in
 
 When you need to dynamically change the request’s predicate or sort descriptors, set the result instance’s [`nsPredicate`](fetchedresults/nspredicate.md) and [`sortDescriptors`](fetchedresults/sortdescriptors.md) or [`nsSortDescriptors`](fetchedresults/nssortdescriptors.md) properties, respectively.
 
-The fetch request and its results use the managed object context stored in the environment, which you can access using the [`managedObjectContext`](environmentvalues/managedobjectcontext.md) environment value. To support user interface activity, you typically rely on the [`viewContext`](https://developer.apple.com/documentation/CoreData/NSPersistentContainer/viewContext) property of a shared [`NSPersistentContainer`](https://developer.apple.com/documentation/CoreData/NSPersistentContainer) instance. For example, you can set a context on your top level content view using a container that you define as part of your model:
+The fetch request and its results use the managed object context stored in the environment, which you can access using the [`managedObjectContext`](environmentvalues/managedobjectcontext.md) environment value. To support user interface activity, you typically rely on the [`viewContext`](https://developer.apple.com/documentation/coredata/nspersistentcontainer/viewcontext) property of a shared [`NSPersistentContainer`](https://developer.apple.com/documentation/coredata/nspersistentcontainer) instance. For example, you can set a context on your top level content view using a container that you define as part of your model:
 
 ```swift
 ContentView()
@@ -72,12 +72,12 @@ ContentView()
 ## Relationships
 
 ### Conforms To
-- [BidirectionalCollection](../Swift/BidirectionalCollection.md)
-- [Collection](../Swift/Collection.md)
-- [RandomAccessCollection](../Swift/RandomAccessCollection.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
-- [Sequence](../Swift/Sequence.md)
+- [BidirectionalCollection](../swift/bidirectionalcollection.md)
+- [Collection](../swift/collection.md)
+- [RandomAccessCollection](../swift/randomaccesscollection.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sequence](../swift/sequence.md)
 
 ## See Also
 

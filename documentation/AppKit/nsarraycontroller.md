@@ -16,7 +16,7 @@ class NSArrayController
 
 #### Overview
 
-Typically the collection that an [`NSArrayController`](nsarraycontroller.md) manages is an array, however, if the controller manages a relationship of a managed object (see [`NSManagedObject`](https://developer.apple.com/documentation/CoreData/NSManagedObject)) the collection may be a set. [`NSArrayController`](nsarraycontroller.md) provides selection management and sorting capabilities.
+Typically the collection that an [`NSArrayController`](nsarraycontroller.md) manages is an array, however, if the controller manages a relationship of a managed object (see [`NSManagedObject`](https://developer.apple.com/documentation/coredata/nsmanagedobject)) the collection may be a set. [`NSArrayController`](nsarraycontroller.md) provides selection management and sorting capabilities.
 
 ## Topics
 
@@ -115,17 +115,17 @@ Typically the collection that an [`NSArrayController`](nsarraycontroller.md) man
 ### Inherited By
 - [NSDictionaryController](nsdictionarycontroller.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCoding](../Foundation/NSCoding.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCoding](../foundation/nscoding.md)
 - [NSEditor](nseditor.md)
 - [NSEditorRegistration](nseditorregistration.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 
 ---

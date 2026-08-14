@@ -25,11 +25,11 @@ The only time you interact with layout attribute objects is when you implement a
 
 If you implement a custom layout object and your layout object requires additional attributes, you can subclass `NSCollectionViewLayoutAttributes` and add custom properties to your subclass. In your subclass, be sure to do the following:
 
-- Provide an [`init()`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class/init()) method with no parameters to initialize your subclass.
-- Implement support for the [`NSCopying`](https://developer.apple.com/documentation/Foundation/NSCopying) protocol. The collection view caches layout attribute objects for later use.
-- Override the inherited [`isEqual(_:)`](https://developer.apple.com/documentation/ObjectiveC/NSObjectProtocol/isEqual(_:)) method to perform any relevant equality checks.
+- Provide an [`init()`](https://developer.apple.com/documentation/objectivec/nsobject-swift.class/init()) method with no parameters to initialize your subclass.
+- Implement support for the [`NSCopying`](https://developer.apple.com/documentation/foundation/nscopying) protocol. The collection view caches layout attribute objects for later use.
+- Override the inherited [`isEqual(_:)`](https://developer.apple.com/documentation/objectivec/nsobjectprotocol/isequal(_:)) method to perform any relevant equality checks.
 
-Supporting equality checks is important because of how the collection view manages layout attributes. As an optimization, the collection view applies layout attributes only when they change. When the layout object returns a layout attributes object, the collection view checks to see if the new attributes are equal to any cached attributes. Therefore, if you want to include any new properties in the equality check, you must override the [`isEqual(_:)`](https://developer.apple.com/documentation/ObjectiveC/NSObjectProtocol/isEqual(_:)) method.
+Supporting equality checks is important because of how the collection view manages layout attributes. As an optimization, the collection view applies layout attributes only when they change. When the layout object returns a layout attributes object, the collection view checks to see if the new attributes are equal to any cached attributes. Therefore, if you want to include any new properties in the equality check, you must override the [`isEqual(_:)`](https://developer.apple.com/documentation/objectivec/nsobjectprotocol/isequal(_:)) method.
 
 In addition to defining your `NSCollectionViewLayoutAttributes` subclass, override the [`layoutAttributesClass`](nscollectionviewlayout/layoutattributesclass.md) method of your layout object. That method is a funnel point for creating new layout attribute objects. Returning your custom class from that method ensures that the correct class is instantiated.
 
@@ -83,20 +83,20 @@ In addition to defining your `NSCollectionViewLayoutAttributes` subclass, overri
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCopying](../Foundation/NSCopying.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [Sendable](../Swift/Sendable.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCopying](../foundation/nscopying.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [Sendable](../swift/sendable.md)
 
 ## See Also
 
-- [Implementing modern collection views](../UIKit/implementing-modern-collection-views.md)
+- [Implementing modern collection views](../uikit/implementing-modern-collection-views.md)
   Bring compositional layouts to your app and simplify updating your user interface with diffable data sources.
 - [class NSCollectionViewFlowLayout](nscollectionviewflowlayout.md)
   A layout that organizes items into a flexible and configurable arrangement.

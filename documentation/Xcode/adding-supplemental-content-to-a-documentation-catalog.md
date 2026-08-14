@@ -12,7 +12,7 @@ The process of crafting great documentation is an art. Your content is unique; y
 
 If your documentation catalog includes an article file with the name `GettingStarted.md`, Xcode displays this article in the documentation viewer with a document icon.
 
-![A screenshot of the Xcode documentation viewer that shows the Getting started with sloths article in a selected state in the Project navigator on the left. The pane on the right displays the article page with a document icon. ](https://docs-assets.developer.apple.com/published/109d7b40f073542e0f9b6202a798c46a/adding-supplemental-content-to-a-documentation-catalog-1%402x.png)
+![A screenshot of the Xcode documentation viewer that shows the Getting started with sloths article in a selected state in the Project navigator on the left. The pane on the right displays the article page with a document icon. ](/images/com.apple.Xcode/adding-supplemental-content-to-a-documentation-catalog-1@2x.png)
 
 The structure of an article is similar to symbol files or a top-level landing page, with the exception that the first level 1 header is regular content instead of a symbol reference. For example, the Getting Started with Sloths article contains the following title, single-sentence abstract or summary, and Overview section:
 
@@ -39,7 +39,7 @@ To add an article to your documentation catalog in Xcode, do the following:
 5. Modify the first line of the file to specify its title.
 6. Replace the summary and placeholders in the file with appropriate content.
 
-![A screenshot that shows the Xcode file template chooser with the Article File template in a selected state.](https://docs-assets.developer.apple.com/published/6f5277c5bdf3c4dcb28fcd1baf63d041/adding-supplemental-content-to-a-documentation-catalog-2%402x.png)
+![A screenshot that shows the Xcode file template chooser with the Article File template in a selected state.](/images/com.apple.Xcode/adding-supplemental-content-to-a-documentation-catalog-2@2x.png)
 
 ##### Add Extension Files to Append to or Override Source Documentation Comments
 
@@ -53,7 +53,7 @@ DocC supports supplementing or completely replacing source documentation comment
 
 In the extension file, replace the `Symbol` placeholder with the absolute path to the symbol. The absolute path is the target’s product module name followed by the symbol name.
 
-![A screenshot that shows the Xcode file template chooser with the Extension File template in a selected state.](https://docs-assets.developer.apple.com/published/67a08fbc893ce8a92ff05e6c6896ab4a/adding-supplemental-content-to-a-documentation-catalog-3%402x.png)
+![A screenshot that shows the Xcode file template chooser with the Extension File template in a selected state.](/images/com.apple.Xcode/adding-supplemental-content-to-a-documentation-catalog-3@2x.png)
 
 ## See Also
 

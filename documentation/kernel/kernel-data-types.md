@@ -464,7 +464,6 @@
 - [exclave_scresult_info](exclave_scresult_info.md)
 - [exclave_textlayout_flags](exclave_textlayout_flags.md)
 - [exclave_textlayout_info](exclave_textlayout_info.md)
-- [](exclave_textlayout_info_v1.md)
 - [exclave_textlayout_segment](exclave_textlayout_segment.md)
 - [exclave_textlayout_segment_v2](exclave_textlayout_segment_v2.md)
 - [exit_reason_snapshot](exit_reason_snapshot.md)
@@ -1523,8 +1522,7 @@
 - [vDSP_int24](vdsp_int24.md)
   A data structure that holds a 24-bit signed integer value.
 - [vDSP_uint24](vdsp_uint24.md)
-- [vDouble](../accelerate/vdouble.md)
-  A 128-bit vector packed with `` values.
+- [vDouble](vdouble.md)
 - [va_list](va_list.md)
 - [vector_int2](vector_int2.md)
 - [vector_int4](vector_int4.md)

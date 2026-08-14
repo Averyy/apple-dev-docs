@@ -32,7 +32,7 @@ if let model = try? await ModelEntity(named: "tv_retro") {
 
 | Without shadow | With shadow |
 | --- | --- |
-| ![A screenshot of a vintage-style TV near the floor of a kitchen scene, which doesn’t cast a shadow onto the floor.](https://docs-assets.developer.apple.com/published/a57f9bda1580e70d550ac8b4026fac5e/groundingshadowcomponent-tv-off.jpg) | ![A screenshot of a vintage-style TV near the floor of a kitchen scene, which casts a shadow onto the floor.](https://docs-assets.developer.apple.com/published/8f57b03abf162b5614b406e000856d69/groundingshadowcomponent-tv-on.jpg) |
+| ![A screenshot of a vintage-style TV near the floor of a kitchen scene, which doesn’t cast a shadow onto the floor.](/images/com.apple.RealityKit/groundingshadowcomponent-tv-off.jpg) | ![A screenshot of a vintage-style TV near the floor of a kitchen scene, which casts a shadow onto the floor.](/images/com.apple.RealityKit/groundingshadowcomponent-tv-on.jpg) |
 
 You need to add the grounding shadow component to each entity you want to apply the effect to, because the grounding shadow component doesn’t apply to hierarchies.
 
@@ -58,7 +58,7 @@ robot.components.set(robotShadow)
 
 | Receiving shadows | Not receiving shadows |
 | --- | --- |
-| ![A screenshot of a vintage toy robot on a vintage TV set in a RealityKit scene where the robot casts a shadow onto both the TV that it’s standing on, and onto own body.](https://docs-assets.developer.apple.com/published/8ce34c59e6850c3e45a336650441edec/groundingshadowcomponent-tv-robot-receive-on.jpg) | ![A screenshot of a vintage toy robot on a vintage TV set in a RealityKit scene where the robot doesn’t cast a shadow on any entity in the scene, including itself.](https://docs-assets.developer.apple.com/published/c3a53c8ed1306ca6859138782b48f635/groundingshadowcomponent-tv-robot-receive-off.jpg) |
+| ![A screenshot of a vintage toy robot on a vintage TV set in a RealityKit scene where the robot casts a shadow onto both the TV that it’s standing on, and onto own body.](/images/com.apple.RealityKit/groundingshadowcomponent-tv-robot-receive-on.jpg) | ![A screenshot of a vintage toy robot on a vintage TV set in a RealityKit scene where the robot doesn’t cast a shadow on any entity in the scene, including itself.](/images/com.apple.RealityKit/groundingshadowcomponent-tv-robot-receive-off.jpg) |
 
 RealityKit generates grounding shadows from the perspective of another entity that receives the first entity’s shadow. One-sided geometry only casts a shadow if its facets face the entity that receives the shadow, which typically means they face downward. Make each 2D object cast a grounding shadow by applying a material that disables face culling, or by replacing it with a watertight mesh.
 

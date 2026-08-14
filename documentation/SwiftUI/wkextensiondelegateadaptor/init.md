@@ -30,7 +30,7 @@ struct MyApp: App {
 
 SwiftUI initializes the delegate and manages its lifetime, calling it as needed to handle extension delegate callbacks.
 
-SwiftUI invokes this method when your app delegate conforms to the [`Observable`](https://developer.apple.com/documentation/Observation/Observable) protocol. In this case, SwiftUI automatically places the delegate in the [`Environment`](environment.md). You can access such a delegate from any scene or view in your app using the [`Environment`](environment.md) property wrapper:
+SwiftUI invokes this method when your app delegate conforms to the [`Observable`](https://developer.apple.com/documentation/observation/observable) protocol. In this case, SwiftUI automatically places the delegate in the [`Environment`](environment.md). You can access such a delegate from any scene or view in your app using the [`Environment`](environment.md) property wrapper:
 
 ```swift
 @Environment(MyAppDelegate.self) private var appDelegate
@@ -40,7 +40,7 @@ If your delegate isn’t observable, SwiftUI invokes the [`init(_:)`](wkextensio
 
 ## Parameters
 
-- `delegateType`: The type of extension delegate that you define in your app, which conforms to the [`WKExtensionDelegate`](https://developer.apple.com/documentation/WatchKit/WKExtensionDelegate) and [`Observable`](https://developer.apple.com/documentation/Observation/Observable) protocols.
+- `delegateType`: The type of extension delegate that you define in your app, which conforms to the [`WKExtensionDelegate`](https://developer.apple.com/documentation/watchkit/wkextensiondelegate) and [`Observable`](https://developer.apple.com/documentation/observation/observable) protocols.
 
 
 ---

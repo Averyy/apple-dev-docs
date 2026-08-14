@@ -16,7 +16,7 @@ static let copyOperation: NSWorkspace.FileOperationName
 
 #### Discussion
 
-Behaves the same as [`copyItem(at:to:)`](https://developer.apple.com/documentation/Foundation/FileManager/copyItem(at:to:)).
+Behaves the same as [`copyItem(at:to:)`](https://developer.apple.com/documentation/foundation/filemanager/copyitem(at:to:)).
 
 ## See Also
 

@@ -24,7 +24,7 @@ Use this property to ensure consistent horizontal alignment from both system and
 
 The reserved layout width only affects the amount of space for the accessory, and its positioning within that space. It doesn’t affect the size of the accessory.
 
-![Diagram of three cells, each of which contains one accessory on the leading side. The accessories vary in width, but use the same reserved layout width to achieve consistent alignment. Annotations running the height of the diagram illustrate the static width.](https://docs-assets.developer.apple.com/published/e3246a54d7c4b18fe3b2101d0a737694/media-3681824%402x.png)
+![Diagram of three cells, each of which contains one accessory on the leading side. The accessories vary in width, but use the same reserved layout width to achieve consistent alignment. Annotations running the height of the diagram illustrate the static width.](/images/com.apple.uikit/media-3681824@2x.png)
 
 ## See Also
 

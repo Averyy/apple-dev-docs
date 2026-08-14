@@ -12,50 +12,50 @@ Browse notable changes in [`AppKit`](https://developer.apple.comhttps://develope
 
 ##### General
 
-- Create events similar to `UIControl` events on [`NSControl`](https://developer.apple.com/documentation/AppKit/NSControl) with the new [`NSControl.Events`](https://developer.apple.com/documentation/AppKit/NSControl/Events) type.
+- Create events similar to `UIControl` events on [`NSControl`](https://developer.apple.com/documentation/appkit/nscontrol) with the new [`NSControl.Events`](https://developer.apple.com/documentation/appkit/nscontrol/events) type.
 
 ##### Gesture Recognizers
 
-- Initiate a drag operation from a gesture recognizer using the new [`beginDraggingSession(items:gesture:source:)`](https://developer.apple.com/documentation/AppKit/NSView/beginDraggingSession(items:gesture:source:)) method on [`NSView`](https://developer.apple.com/documentation/AppKit/NSView).
-- Adopt gesture recognizers to receive touch input from a Sidecar-connected iPad. For more information, see [`TN3212: Adopting gesture recognizers for Sidecar touch support`](https://developer.apple.com/documentation/Technotes/tn3212-adopting-gesture-recognizers-for-sidecar-touch-support).
+- Initiate a drag operation from a gesture recognizer using the new [`beginDraggingSession(items:gesture:source:)`](https://developer.apple.com/documentation/appkit/nsview/begindraggingsession(items:gesture:source:)) method on [`NSView`](https://developer.apple.com/documentation/appkit/nsview).
+- Adopt gesture recognizers to receive touch input from a Sidecar-connected iPad. For more information, see [`TN3212: Adopting gesture recognizers for Sidecar touch support`](https://developer.apple.com/documentation/technotes/tn3212-adopting-gesture-recognizers-for-sidecar-touch-support).
 
 ##### Scroll Views
 
-- Configure pull-to-refresh and touch scrolling with [`NSRefreshController`](https://developer.apple.com/documentation/AppKit/NSRefreshController) and updated [`NSScrollView`](https://developer.apple.com/documentation/AppKit/NSScrollView) properties.
+- Configure pull-to-refresh and touch scrolling with [`NSRefreshController`](https://developer.apple.com/documentation/appkit/nsrefreshcontroller) and updated [`NSScrollView`](https://developer.apple.com/documentation/appkit/nsscrollview) properties.
 
 ##### Swift and Swiftui
 
-- Update views automatically in response to [`Observable`](https://developer.apple.com/documentation/Observation/Observable) model changes using the guidance in [`Updating views automatically with observation tracking in AppKit`](https://developer.apple.com/documentation/AppKit/updating-views-automatically-with-observation-tracking-in-appkit).
-- Limit a SwiftUI gesture to specific types of input, such as touch or mouse, using [`GestureInputKinds`](https://developer.apple.com/documentation/SwiftUI/GestureInputKinds).
+- Update views automatically in response to [`Observable`](https://developer.apple.com/documentation/observation/observable) model changes using the guidance in [`Updating views automatically with observation tracking in AppKit`](https://developer.apple.com/documentation/appkit/updating-views-automatically-with-observation-tracking-in-appkit).
+- Limit a SwiftUI gesture to specific types of input, such as touch or mouse, using [`GestureInputKinds`](https://developer.apple.com/documentation/swiftui/gestureinputkinds).
 
 ##### Information Property List
 
-- Configure app-wide gesture recognizer exclusivity and touch emulation using the [`NSViewGestureRecognizerIsExclusive`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSViewGestureRecognizerIsExclusive) and [`NSIsTouchNative`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSIsTouchNative) keys.
-- Control whether gesture recognizers suppress menu keyboard shortcuts using [`NSGestureRecognizerSuppressesMainMenuActions`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSGestureRecognizerSuppressesMainMenuActions).
+- Configure app-wide gesture recognizer exclusivity and touch emulation using the [`NSViewGestureRecognizerIsExclusive`](https://developer.apple.com/documentation/bundleresources/information-property-list/nsviewgesturerecognizerisexclusive) and [`NSIsTouchNative`](https://developer.apple.com/documentation/bundleresources/information-property-list/nsistouchnative) keys.
+- Control whether gesture recognizers suppress menu keyboard shortcuts using [`NSGestureRecognizerSuppressesMainMenuActions`](https://developer.apple.com/documentation/bundleresources/information-property-list/nsgesturerecognizersuppressesmainmenuactions).
 
 #### June 2025
 
 ##### General
 
-- To use control metrics consistent with macOS 15 and earlier, use [`prefersCompactControlSizeMetrics`](https://developer.apple.com/documentation/AppKit/NSView/prefersCompactControlSizeMetrics).
-- [`NSControl.ControlSize`](https://developer.apple.com/documentation/AppKit/NSControl/ControlSize-swift.enum) includes a new extra large size, [`NSControl.ControlSize.extraLarge`](https://developer.apple.com/documentation/AppKit/NSControl/ControlSize-swift.enum/extraLarge).
-- Provide seamless immersive visuals by using [`NSBackgroundExtensionView`](https://developer.apple.com/documentation/AppKit/NSBackgroundExtensionView) to extend a view’s content under sidebars and inspectors.
-- Apply Liquid Glass effects to your custom views using [`NSGlassEffectView`](https://developer.apple.com/documentation/AppKit/NSGlassEffectView). Use [`NSGlassEffectContainerView`](https://developer.apple.com/documentation/AppKit/NSGlassEffectContainerView) to efficiently merge these views when they’re in proximity to one other.
-- Configure buttons for Liquid Glass by setting `NSButton.BezelStyle` to [`NSButton.BezelStyle.glass`](https://developer.apple.com/documentation/AppKit/NSButton/BezelStyle-swift.enum/glass).
+- To use control metrics consistent with macOS 15 and earlier, use [`prefersCompactControlSizeMetrics`](https://developer.apple.com/documentation/appkit/nsview/preferscompactcontrolsizemetrics).
+- [`NSControl.ControlSize`](https://developer.apple.com/documentation/appkit/nscontrol/controlsize-swift.enum) includes a new extra large size, [`NSControl.ControlSize.extraLarge`](https://developer.apple.com/documentation/appkit/nscontrol/controlsize-swift.enum/extralarge).
+- Provide seamless immersive visuals by using [`NSBackgroundExtensionView`](https://developer.apple.com/documentation/appkit/nsbackgroundextensionview) to extend a view’s content under sidebars and inspectors.
+- Apply Liquid Glass effects to your custom views using [`NSGlassEffectView`](https://developer.apple.com/documentation/appkit/nsglasseffectview). Use [`NSGlassEffectContainerView`](https://developer.apple.com/documentation/appkit/nsglasseffectcontainerview) to efficiently merge these views when they’re in proximity to one other.
+- Configure buttons for Liquid Glass by setting `NSButton.BezelStyle` to [`NSButton.BezelStyle.glass`](https://developer.apple.com/documentation/appkit/nsbutton/bezelstyle-swift.enum/glass).
 
 ##### Split Views
 
-- Add top and bottom accessory views in split views by adding one or more [`NSSplitViewItemAccessoryViewController`](https://developer.apple.com/documentation/AppKit/NSSplitViewItemAccessoryViewController) objects to the [`topAlignedAccessoryViewControllers`](https://developer.apple.com/documentation/AppKit/NSSplitViewItem/topAlignedAccessoryViewControllers) and [`bottomAlignedAccessoryViewControllers`](https://developer.apple.com/documentation/AppKit/NSSplitViewItem/bottomAlignedAccessoryViewControllers) properties.
+- Add top and bottom accessory views in split views by adding one or more [`NSSplitViewItemAccessoryViewController`](https://developer.apple.com/documentation/appkit/nssplitviewitemaccessoryviewcontroller) objects to the [`topAlignedAccessoryViewControllers`](https://developer.apple.com/documentation/appkit/nssplitviewitem/topalignedaccessoryviewcontrollers) and [`bottomAlignedAccessoryViewControllers`](https://developer.apple.com/documentation/appkit/nssplitviewitem/bottomalignedaccessoryviewcontrollers) properties.
 
 ##### Toolbars
 
-- Tint toolbar items to make them stand out and stand apart from other toolbar items by setting [`NSToolbarItem.Style`](https://developer.apple.com/documentation/AppKit/NSToolbarItem/Style-swift.enum) to [`NSToolbarItem.Style.prominent`](https://developer.apple.com/documentation/AppKit/NSToolbarItem/Style-swift.enum/prominent), and setting [`backgroundTintColor`](https://developer.apple.com/documentation/AppKit/NSToolbarItem/backgroundTintColor).
+- Tint toolbar items to make them stand out and stand apart from other toolbar items by setting [`NSToolbarItem.Style`](https://developer.apple.com/documentation/appkit/nstoolbaritem/style-swift.enum) to [`NSToolbarItem.Style.prominent`](https://developer.apple.com/documentation/appkit/nstoolbaritem/style-swift.enum/prominent), and setting [`backgroundTintColor`](https://developer.apple.com/documentation/appkit/nstoolbaritem/backgroundtintcolor).
 
 #### April 2025
 
 ##### Macos Pasteboard Privacy
 
-- Prepare your app for an upcoming feature in macOS that alerts a person using a device when your app programmatically reads the general pasteboard. The system shows the alert only if the pasteboard access wasn’t a result of someone’s input on a UI element that the system considers paste-related. This behavior is similar to how [`UIPasteboard`](https://developer.apple.com/documentation/UIKit/UIPasteboard) behaves in iOS. New `detect` methods in [`NSPasteboard`](https://developer.apple.com/documentation/AppKit/NSPasteboard) and [`NSPasteboardItem`](https://developer.apple.com/documentation/AppKit/NSPasteboardItem) make it possible for an app to examine the kinds of data on the pasteboard without actually reading them and showing the alert. [`NSPasteboard`](https://developer.apple.com/documentation/AppKit/NSPasteboard) also adds an [`accessBehavior`](https://developer.apple.com/documentation/AppKit/NSPasteboard/accessBehavior-86972) property to determine if programmatic pasteboard access is always allowed, never allowed, or if it prompts an alert requesting permission. You can adopt these APIs ahead of the change, and set a user default to test the new behavior on your Mac. To do so, launch Terminal and enter the command `defaults write <your_app_bundle_id> EnablePasteboardPrivacyDeveloperPreview -bool yes` to enable the behavior for your app.
+- Prepare your app for an upcoming feature in macOS that alerts a person using a device when your app programmatically reads the general pasteboard. The system shows the alert only if the pasteboard access wasn’t a result of someone’s input on a UI element that the system considers paste-related. This behavior is similar to how [`UIPasteboard`](https://developer.apple.com/documentation/uikit/uipasteboard) behaves in iOS. New `detect` methods in [`NSPasteboard`](https://developer.apple.com/documentation/appkit/nspasteboard) and [`NSPasteboardItem`](https://developer.apple.com/documentation/appkit/nspasteboarditem) make it possible for an app to examine the kinds of data on the pasteboard without actually reading them and showing the alert. [`NSPasteboard`](https://developer.apple.com/documentation/appkit/nspasteboard) also adds an [`accessBehavior`](https://developer.apple.com/documentation/appkit/nspasteboard/accessbehavior-86972) property to determine if programmatic pasteboard access is always allowed, never allowed, or if it prompts an alert requesting permission. You can adopt these APIs ahead of the change, and set a user default to test the new behavior on your Mac. To do so, launch Terminal and enter the command `defaults write <your_app_bundle_id> EnablePasteboardPrivacyDeveloperPreview -bool yes` to enable the behavior for your app.
 
 #### June 2024
 
@@ -65,17 +65,17 @@ Browse notable changes in [`AppKit`](https://developer.apple.comhttps://develope
 
 ##### Swift and Swiftui
 
-- Use SwiftUI menus in AppKit with the [`NSHostingMenu`](https://developer.apple.com/documentation/SwiftUI/NSHostingMenu).
-- Animate AppKit views using SwiftUI animations using [`animate(_:changes:completion:)`](https://developer.apple.com/documentation/AppKit/NSAnimationContext/animate(_:changes:completion:)).
+- Use SwiftUI menus in AppKit with the [`NSHostingMenu`](https://developer.apple.com/documentation/swiftui/nshostingmenu).
+- Animate AppKit views using SwiftUI animations using [`animate(_:changes:completion:)`](https://developer.apple.com/documentation/appkit/nsanimationcontext/animate(_:changes:completion:)).
 
 ##### Api Refinements
 
 - Use the keyboard to open context menus for UI elements on which you are focused currently.
 - Add repeat, wiggle, bounce, and rotate effects to [`SF Symbols`](https://developer.apple.comhttps://developer.apple.com/sf-symbols/).
 - Leverage predefined content types when saving files using the new format picker on `NSPanel`.
-- Resize frames and zoom in and out with new `NSCursor` APIs such as [`NSCursor.FrameResizeDirection`](https://developer.apple.com/documentation/AppKit/NSCursor/FrameResizeDirection) and [`NSCursor.FrameResizePosition`](https://developer.apple.com/documentation/AppKit/NSCursor/FrameResizePosition).
-- Control whether your toolbars display text as well as icons using the [`allowsDisplayModeCustomization`](https://developer.apple.com/documentation/AppKit/NSToolbar/allowsDisplayModeCustomization) property.
-- Offer customized type-ahead suggestions in NSTextField using the [`suggestionsDelegate`](https://developer.apple.com/documentation/AppKit/NSTextField/suggestionsDelegate).
+- Resize frames and zoom in and out with new `NSCursor` APIs such as [`NSCursor.FrameResizeDirection`](https://developer.apple.com/documentation/appkit/nscursor/frameresizedirection) and [`NSCursor.FrameResizePosition`](https://developer.apple.com/documentation/appkit/nscursor/frameresizeposition).
+- Control whether your toolbars display text as well as icons using the [`allowsDisplayModeCustomization`](https://developer.apple.com/documentation/appkit/nstoolbar/allowsdisplaymodecustomization) property.
+- Offer customized type-ahead suggestions in NSTextField using the [`suggestionsDelegate`](https://developer.apple.com/documentation/appkit/nstextfield/suggestionsdelegate).
 
 #### June 2023
 

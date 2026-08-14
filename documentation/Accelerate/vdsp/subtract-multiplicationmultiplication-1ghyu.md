@@ -37,7 +37,7 @@ This function calculates the differences of the first `N` elements of the produc
     E[n] = A[n]*B[n] - C[n]*D[n]; 
 ```
 
-![A diagram showing the operation of this function. There are four rows. The top row represents the input vectors, A, B, C, and D, with three boxes of each. The second row represents the operations that multiply vectors A and B, and multiply vectors C and D, with three boxes of each. The third row represents the subtraction operation as three boxes.  The bottom row represents the output vector E as three boxes. The diagram has connecting lines from the input vectors to the operations, and from the operations to the output vectors. ](https://docs-assets.developer.apple.com/published/39d89329286f14952e7b03fb1b3f22de/media-4337028%402x.png)
+![A diagram showing the operation of this function. There are four rows. The top row represents the input vectors, A, B, C, and D, with three boxes of each. The second row represents the operations that multiply vectors A and B, and multiply vectors C and D, with three boxes of each. The third row represents the subtraction operation as three boxes.  The bottom row represents the output vector E as three boxes. The diagram has connecting lines from the input vectors to the operations, and from the operations to the output vectors. ](/images/com.apple.accelerate/media-4337028@2x.png)
 
 The following code shows an example of using this function:
 

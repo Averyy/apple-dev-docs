@@ -24,7 +24,7 @@ Use this initializer to create an object to specify the amount of roughness usin
 
 The `roughness` property represents how much the surface of the entity scatters light that it reflects. A material with a high roughness has a matte appearance, and one with a low roughness has a shiny appearance.
 
-![An illustration showing three spheres with different amounts of](https://docs-assets.developer.apple.com/published/6bca90ebd0a4a4a329474aaf179c551a/CustomMaterial-Roughness-swift-struct-init%28scale%3Atexture%3A%29-1%402x.png)
+![An illustration showing three spheres with different amounts of](/images/com.apple.RealityKit/CustomMaterial-Roughness-swift-struct-init(scale:texture:)-1@2x.png)
 
 The following code demonstrates creating a roughness object using this initializer:
 

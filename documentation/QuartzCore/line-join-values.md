@@ -8,7 +8,7 @@ These constants specify the shape of the joints between connected segments of a 
 
 Used by [`lineJoin`](cashapelayer/linejoin.md). The following figure shows the appearance of the available line join styles.
 
-![None](https://docs-assets.developer.apple.com/published/25ebafb67a2746d8b0f96ee16a5390da/media-1965771.gif)
+![None](/images/com.apple.quartzcore/media-1965771.gif)
 
 ## Topics
 

@@ -14,22 +14,22 @@ Let people stream media from any iOS app to your playback hardware through the m
 
 Media Device lets you make your playback hardware available to the system. People can then stream to it from any iOS app, selecting your device from the media device picker. The picker is the same UI people use for AirPlay and Bluetooth output. You build a [`MediaDeviceExtension`](mediadeviceextension.md) that the system loads when someone opens the picker, and your extension handles discovery, connection, and playback on behalf of the system.
 
-> **Note**: Your extension and the container app require the [`com.apple.developer.media-device-extension`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.media-device-extension) entitlement.
+> **Note**: Your extension and the container app require the [`com.apple.developer.media-device-extension`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.media-device-extension) entitlement.
 
-![An illustration showing an external speaker on the left wirelessly connecting to an iPhone on the right. Here, the speaker is an external media device that someone can connect to their iPhone using a Media Device extension.](https://docs-assets.developer.apple.com/published/0e7e4ecd78584a4657d180e393fa956f/media-device-framework-hero%402x.png)
+![An illustration showing an external speaker on the left wirelessly connecting to an iPhone on the right. Here, the speaker is an external media device that someone can connect to their iPhone using a Media Device extension.](/images/com.apple.mediadevice/media-device-framework-hero@2x.png)
 
 The extension life cycle follows three phases: discovery, activation, and playback. During discovery, your extension reports available devices to the system through [`MediaDeviceRoutingManager`](mediadeviceroutingmanager.md). Your devices appear in the media device picker that media apps present to people. When someone selects one of your devices, the system creates a [`MediaOutputSession`](mediaoutputsession.md) and asks your extension to connect. After your extension connects and calls [`activatedDevice(_:session:)`](mediadeviceroutingmanager/activateddevice(_:session:).md), the system notifies supporting media apps about the selected device, and they can call playback APIs such as [`startSession(_:identifier:url:)`](mediadeviceextension/startsession(_:identifier:url:).md).
 
-Your extension may also register to receive real-time audio and video samples by conforming to [`RealtimeSampleHandling`](realtimesamplehandling.md). To capture those samples, follow [`Creating an Audio Server Driver Plug-in`](https://developer.apple.com/documentation/CoreAudio/creating-an-audio-server-driver-plug-in) for audio, and use [`ScreenCaptureKit`](https://developer.apple.com/documentation/ScreenCaptureKit) for video.
+Your extension may also register to receive real-time audio and video samples by conforming to [`RealtimeSampleHandling`](realtimesamplehandling.md). To capture those samples, follow [`Creating an Audio Server Driver Plug-in`](https://developer.apple.com/documentation/coreaudio/creating-an-audio-server-driver-plug-in) for audio, and use [`ScreenCaptureKit`](https://developer.apple.com/documentation/screencapturekit) for video.
 
-Media Device works with [`AVSystemRouting`](https://developer.apple.com/documentation/AVSystemRouting), which provides the API for media apps. Media apps use [`AVSystemRouteController`](https://developer.apple.com/documentation/AVSystemRouting/AVSystemRouteController-18ns8) to observe route changes, and [`AVSystemRoute`](https://developer.apple.com/documentation/AVSystemRouting/AVSystemRoute-5s2um) to control playback while your extension handles the protocol-specific communication with the hardware.
+Media Device works with [`AVSystemRouting`](https://developer.apple.com/documentation/avsystemrouting), which provides the API for media apps. Media apps use [`AVSystemRouteController`](https://developer.apple.com/documentation/avsystemrouting/avsystemroutecontroller-18ns8) to observe route changes, and [`AVSystemRoute`](https://developer.apple.com/documentation/avsystemrouting/avsystemroute-5s2um) to control playback while your extension handles the protocol-specific communication with the hardware.
 
 ## Topics
 
 ### Essentials
 - [Creating a media device extension](creating-a-media-device-extension.md)
   Provide a way for people to find, connect to, and control your media device by adding a device extension in your iOS app.
-- [Routing media to third-party devices](../AVSystemRouting/routing-media-to-third-party-devices.md)
+- [Routing media to third-party devices](../avsystemrouting/routing-media-to-third-party-devices.md)
   Respond to routing events and control playback on a TV, speaker, or other media device.
 - [protocol MediaDeviceExtension](mediadeviceextension.md)
   A protocol that defines the requirements of a media device extension that discovers, activates, and plays media on a remote device.

@@ -20,7 +20,7 @@ func maximumVolumeSliderImage(for state: UIControl.State) -> UIImage?
 
 #### Return Value
 
-The maximum volume image associated with the specified state, or [`nil`](https://developer.apple.com/documentation/ObjectiveC/nil-227m0) if an appropriate image could not be retrieved. This method might return [`nil`](https://developer.apple.com/documentation/ObjectiveC/nil-227m0) if you specify multiple control states in the `state` parameter.
+The maximum volume image associated with the specified state, or [`nil`](https://developer.apple.com/documentation/objectivec/nil-227m0) if an appropriate image could not be retrieved. This method might return [`nil`](https://developer.apple.com/documentation/objectivec/nil-227m0) if you specify multiple control states in the `state` parameter.
 
 #### Discussion
 

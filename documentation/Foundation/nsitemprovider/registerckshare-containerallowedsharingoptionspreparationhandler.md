@@ -20,17 +20,17 @@ func registerCKShare(container: CKContainer, allowedSharingOptions: CKAllowedSha
 
 #### Discussion
 
-Use this method to share a collection of [`CKRecord`](https://developer.apple.com/documentation/CloudKit/CKRecord) objects that don’t have an existing [`CKShare`](https://developer.apple.com/documentation/CloudKit/CKShare) assignment. When the system calls the `preparationHandler`, your app creates a new `CKShare` with the appropriate root `CKRecord` or [`CKRecordZone.ID`](https://developer.apple.com/documentation/CloudKit/CKRecordZone/ID).
+Use this method to share a collection of [`CKRecord`](https://developer.apple.com/documentation/cloudkit/ckrecord) objects that don’t have an existing [`CKShare`](https://developer.apple.com/documentation/cloudkit/ckshare) assignment. When the system calls the `preparationHandler`, your app creates a new `CKShare` with the appropriate root `CKRecord` or [`CKRecordZone.ID`](https://developer.apple.com/documentation/cloudkit/ckrecordzone/id).
 
-After the server successfully saves the share, invoke the [`CKSharePreparationCompletionHandler`](https://developer.apple.com/documentation/CloudKit/CKSharePreparationCompletionHandler) with either the resulting `CKShare`, or an `NSError` if the save fails.
+After the server successfully saves the share, invoke the [`CKSharePreparationCompletionHandler`](https://developer.apple.com/documentation/cloudkit/cksharepreparationcompletionhandler) with either the resulting `CKShare`, or an `NSError` if the save fails.
 
 When the system invokes the share sheet with a `CKShare` that you register with this method, it prompts the user to start sharing.
 
 ## Parameters
 
-- `container`: A [`CKContainer`](https://developer.apple.com/documentation/CloudKit/CKContainer) the system uses to coordinate all the interactions between your app and the server.
-- `allowedSharingOptions`: The [`CKAllowedSharingOptions`](https://developer.apple.com/documentation/CloudKit/CKAllowedSharingOptions). The standard option is the default.
-- `preparationHandler`: The handler the system calls in your app to create a new [`CKShare`](https://developer.apple.com/documentation/CloudKit/CKShare).
+- `container`: A [`CKContainer`](https://developer.apple.com/documentation/cloudkit/ckcontainer) the system uses to coordinate all the interactions between your app and the server.
+- `allowedSharingOptions`: The [`CKAllowedSharingOptions`](https://developer.apple.com/documentation/cloudkit/ckallowedsharingoptions). The standard option is the default.
+- `preparationHandler`: The handler the system calls in your app to create a new [`CKShare`](https://developer.apple.com/documentation/cloudkit/ckshare).
 
 ## See Also
 

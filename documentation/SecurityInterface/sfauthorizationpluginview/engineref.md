@@ -16,11 +16,11 @@ func engineRef() -> AuthorizationEngineRef!
 
 #### Return Value
 
-A handle of type [`AuthorizationEngineRef`](https://developer.apple.com/documentation/Security/AuthorizationEngineRef).
+A handle of type [`AuthorizationEngineRef`](https://developer.apple.com/documentation/security/authorizationengineref).
 
 #### Discussion
 
-Use the authorization engine handle when you call the functions in the [`AuthorizationCallbacks`](https://developer.apple.com/documentation/Security/AuthorizationCallbacks) structure to set a result or a context value.
+Use the authorization engine handle when you call the functions in the [`AuthorizationCallbacks`](https://developer.apple.com/documentation/security/authorizationcallbacks) structure to set a result or a context value.
 
 ## See Also
 

@@ -31,8 +31,8 @@ You can implement these methods to perform custom tasks in response to events in
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [NSWindowDelegate](../AppKit/NSWindowDelegate.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSWindowDelegate](../appkit/nswindowdelegate.md)
 
 ## See Also
 

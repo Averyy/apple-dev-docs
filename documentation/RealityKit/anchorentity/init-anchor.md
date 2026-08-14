@@ -19,7 +19,7 @@ Creates an anchor entity that uses an existing AR anchor.
 
 ## Parameters
 
-- `anchor`: An existing [`ARAnchor`](https://developer.apple.com/documentation/ARKit/ARAnchor) instance.
+- `anchor`: An existing [`ARAnchor`](https://developer.apple.com/documentation/arkit/aranchor) instance.
 
 ## See Also
 

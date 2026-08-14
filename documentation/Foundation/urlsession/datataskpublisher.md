@@ -43,9 +43,9 @@ struct DataTaskPublisher
 ## Relationships
 
 ### Conforms To
-- [Publisher](../Combine/Publisher.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Publisher](../combine/publisher.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

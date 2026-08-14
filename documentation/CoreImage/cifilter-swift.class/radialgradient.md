@@ -33,11 +33,11 @@ This method generates a radial-gradient image. The effect generates a color shif
 
 The radial-gradient filter uses the following properties:
 
-- **`center`**: A [`CGPoint`](https://developer.apple.com/documentation/CoreFoundation/CGPoint) representing the center of the effect as x and y coordinates.
+- **`center`**: A [`CGPoint`](https://developer.apple.com/documentation/corefoundation/cgpoint) representing the center of the effect as x and y coordinates.
 - **`color0`**: A [`CIColor`](cicolor.md) representing the first color to use in the gradient.
 - **`color1`**: A [`CIColor`](cicolor.md) representing the second color to use in the gradient.
-- **`radius0`**: A `float` representing the radius of the starting circle to use in the gradient as a [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
-- **`radius1`**: A `float` representing the radius of the ending circle to use in the gradient as a [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+- **`radius0`**: A `float` representing the radius of the starting circle to use in the gradient as a [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
+- **`radius1`**: A `float` representing the radius of the ending circle to use in the gradient as a [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
 
 The following code creates a filter that generates a gradient image:
 
@@ -53,7 +53,7 @@ func radial() -> CIImage {
 }
 ```
 
-![An image that gradually changes in color from pink in the center to purple in the periphery.](https://docs-assets.developer.apple.com/published/777f45cb51953b0afb3947f48465b672/media-3558800%402x.png)
+![An image that gradually changes in color from pink in the center to purple in the periphery.](/images/com.apple.coreimage/media-3558800@2x.png)
 
 ## See Also
 

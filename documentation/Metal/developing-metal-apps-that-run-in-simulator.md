@@ -86,7 +86,7 @@ Consider the following guiding principles to use Simulator effectively in your M
 
 **Decide whether to provide long-term support for Simulator.** Maintaining a separate Metal path for Simulator takes time and effort. A large game development team can have many game designers and engine developers. Supporting Simulator lets designers work in Simulator to perfect gameplay while engineers work with devices to design the game engine and tune its performance. On a smaller team, you might find that your time is better spent focusing on device support rather than devoting resources to keep your game running in Simulator.
 
-For more information about Simulator, see [`Device Hub`](https://developer.apple.com/documentation/Xcode/device-hub). For more information about the differences between testing on device and testing in Simulator, see doc://com.apple.documentation/documentation/xcode/testing-in-simulator-versus-testing-on-hardware-devices.
+For more information about Simulator, see [`Device Hub`](https://developer.apple.com/documentation/xcode/device-hub). For more information about the differences between testing on device and testing in Simulator, see doc://com.apple.documentation/documentation/xcode/testing-in-simulator-versus-testing-on-hardware-devices.
 
 ## See Also
 
@@ -98,9 +98,9 @@ For more information about Simulator, see [`Device Hub`](https://developer.apple
   Print debugging messages that a shader generates using shader logging.
 - [Improving your game’s graphics performance and settings](improving-your-games-graphics-performance-and-settings.md)
   Fix performance glitches and develop default settings for smooth experiences on Apple platforms using the powerful suite of Metal development tools.
-- [Metal debugger](../Xcode/Metal-debugger.md)
+- [Metal debugger](../xcode/metal-debugger.md)
   Debug and profile your Metal workload with a GPU trace.
-- [Metal developer workflows](../Xcode/Metal-developer-workflows.md)
+- [Metal developer workflows](../xcode/metal-developer-workflows.md)
   Locate and fix issues related to your app’s use of the Metal API and GPU functions.
 - [GPU counters and counter sample buffers](gpu-counters-and-counter-sample-buffers.md)
   Retrieve runtime data from a GPU device by sampling one or more of its counters.

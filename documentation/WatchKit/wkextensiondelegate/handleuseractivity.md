@@ -20,13 +20,13 @@ Use this method to respond to Handoff–related activity. WatchKit calls this me
 
 The default implementation of this method does nothing. When overriding this method, don’t call `super`.
 
-> **Note**:  If you are creating a SwiftUI app for watchOS 7 or later, use the [`onContinueUserActivity(_:perform:)`](https://developer.apple.com/documentation/SwiftUI/View/onContinueUserActivity(_:perform:)) modifier instead.
+> **Note**:  If you are creating a SwiftUI app for watchOS 7 or later, use the [`onContinueUserActivity(_:perform:)`](https://developer.apple.com/documentation/swiftui/view/oncontinueuseractivity(_:perform:)) modifier instead.
 
 ##### Handling Activities From Complications and Notifications
 
 WatchKit calls this method when your app launches from a complication or notification. Update your app’s user interface based on the `userInfo` parameter. Your app should seamlessly continue the interaction from the complication or notification.
 
-When your app launches because the user tapped on a complication, the `userInfo` dictionary contains the [`CLKLaunchedTimelineEntryDateKey`](https://developer.apple.com/documentation/ClockKit/CLKLaunchedTimelineEntryDateKey) key. The value is a Date object that indicates when the complication launched.
+When your app launches because the user tapped on a complication, the `userInfo` dictionary contains the [`CLKLaunchedTimelineEntryDateKey`](https://developer.apple.com/documentation/clockkit/clklaunchedtimelineentrydatekey) key. The value is a Date object that indicates when the complication launched.
 
 ## Parameters
 

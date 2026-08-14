@@ -22,7 +22,7 @@ var isMacCatalystApp: Bool { get }
 
 #### Discussion
 
-The value of this property is [`true`](https://developer.apple.com/documentation/Swift/true) when the process is:
+The value of this property is [`true`](https://developer.apple.com/documentation/swift/true) when the process is:
 
 - A Mac app built with Mac Catalyst, or an iOS app running on Apple silicon.
 - Running on a Mac.

@@ -50,12 +50,12 @@ This table shows the functionality available for each platform:
 
 Widgets, watch complications, controls, and Live Activities use a widget extension you add to your Xcode project. The role of WidgetKit is to provide the infrastructure and configuration for the features it enables. Based on features and platforms you support, use WidgetKit in combination with other frameworks as follows:
 
-- To create the user interface for each feature, use [`SwiftUI`](https://developer.apple.com/documentation/SwiftUI).
-- To add interactivity to widgets and Live Activities, use [`SwiftUI`](https://developer.apple.com/documentation/SwiftUI) and the [`App Intents`](https://developer.apple.com/documentation/AppIntents) framework.
+- To create the user interface for each feature, use [`SwiftUI`](https://developer.apple.com/documentation/swiftui).
+- To add interactivity to widgets and Live Activities, use [`SwiftUI`](https://developer.apple.com/documentation/swiftui) and the [`App Intents`](https://developer.apple.com/documentation/appintents) framework.
 - To offer watch complications and watchOS widgets, create a watchOS app.
-- To offer configurable widgets and watch complications, use [`App Intents`](https://developer.apple.com/documentation/AppIntents).
-- To provide the contextual clues that the system uses for Smart Stacks and to offer Widget Suggestions, use [`App Intents`](https://developer.apple.com/documentation/AppIntents) and [`RelevanceKit`](https://developer.apple.com/documentation/RelevanceKit).
-- To start, update, and end Live Activities, use [`ActivityKit`](https://developer.apple.com/documentation/ActivityKit).
+- To offer configurable widgets and watch complications, use [`App Intents`](https://developer.apple.com/documentation/appintents).
+- To provide the contextual clues that the system uses for Smart Stacks and to offer Widget Suggestions, use [`App Intents`](https://developer.apple.com/documentation/appintents) and [`RelevanceKit`](https://developer.apple.com/documentation/relevancekit).
+- To start, update, and end Live Activities, use [`ActivityKit`](https://developer.apple.com/documentation/activitykit).
 
 ##### Support Different Appearances
 
@@ -82,21 +82,21 @@ Widgets and Live Activities can use animations to draw a person’s attention to
 
 Widgets and watch complications use a different mechanism than your app to update their content. They use a timeline of data updates that you create in your app and hand to WidgetKit. You maintain this timeline as your app receives new data, but, to optimize battery life for a device, each app has a budget to update its widgets or complications. Additionally, the system batches and schedules updates to preserve power. For more information on how timelines work and how you can keep your widgets and watch complications up to date, refer to [`Keeping a widget up to date`](keeping-a-widget-up-to-date.md) and [`Making network requests in a widget extension`](making-network-requests-in-a-widget-extension.md). Additionally, widgets can update their data with the Apple Push Notification service (APNs) and WidgetKit push notifications.
 
-Live Activities don’t use timelines to update their content. Instead, they use [`ActivityKit`](https://developer.apple.com/documentation/ActivityKit) and ActivityKit push notifications you send with APNs. For more information, refer to [`ActivityKit`](https://developer.apple.com/documentation/ActivityKit).
+Live Activities don’t use timelines to update their content. Instead, they use [`ActivityKit`](https://developer.apple.com/documentation/activitykit) and ActivityKit push notifications you send with APNs. For more information, refer to [`ActivityKit`](https://developer.apple.com/documentation/activitykit).
 
 Controls also don’t use timelines to update their content. Instead, they update their content when someone uses them, the app reloads them, or the system receives a remote push notification from APNs. For more information, refer to [`Updating controls locally and remotely`](updating-controls-locally-and-remotely.md).
 
 ##### Add Specific App Functionality to Your Widgets and Live Activities
 
-By default, people tap a widget, watch complication, or Live Activity to launch its corresponding app. To make the experience more intuitive and require fewer interactions, you can use deep linking to launch the scene of your app that matches the widget’s visible content. Widgets that offer enough space, such as [`WidgetFamily.systemSmall`](widgetfamily/systemsmall.md) or larger —  and Live Activities in the extended or the Lock Screen appearance —  add SwiftUI’s [`Link`](https://developer.apple.com/documentation/SwiftUI/Link) to your views and allow people to open different screens in your app.
+By default, people tap a widget, watch complication, or Live Activity to launch its corresponding app. To make the experience more intuitive and require fewer interactions, you can use deep linking to launch the scene of your app that matches the widget’s visible content. Widgets that offer enough space, such as [`WidgetFamily.systemSmall`](widgetfamily/systemsmall.md) or larger —  and Live Activities in the extended or the Lock Screen appearance —  add SwiftUI’s [`Link`](https://developer.apple.com/documentation/swiftui/link) to your views and allow people to open different screens in your app.
 
-> **Note**: In iOS 16 and macOS 13 or earlier versions, only large and extra-large widgets can use [`Link`](https://developer.apple.com/documentation/SwiftUI/Link).
+> **Note**: In iOS 16 and macOS 13 or earlier versions, only large and extra-large widgets can use [`Link`](https://developer.apple.com/documentation/swiftui/link).
 
-Widgets offer direct interaction with your app using the [`App Intents`](https://developer.apple.com/documentation/AppIntents) framework and SwiftUI. Both [`Button`](https://developer.apple.com/documentation/SwiftUI/Button) and [`Toggle`](https://developer.apple.com/documentation/SwiftUI/Toggle) offer dedicated initializers for this purpose. For more information, refer to [`Adding interactivity to widgets and Live Activities`](adding-interactivity-to-widgets-and-live-activities.md).
+Widgets offer direct interaction with your app using the [`App Intents`](https://developer.apple.com/documentation/appintents) framework and SwiftUI. Both [`Button`](https://developer.apple.com/documentation/swiftui/button) and [`Toggle`](https://developer.apple.com/documentation/swiftui/toggle) offer dedicated initializers for this purpose. For more information, refer to [`Adding interactivity to widgets and Live Activities`](adding-interactivity-to-widgets-and-live-activities.md).
 
 ##### Offer Configurable Widgets and Watch Complications
 
-Make it possible for people to select the information they want to view in the widget or a watch complication by offering configurable widgets and complications that provide customizable properties. For example, people might choose to stay informed about a specific stock in a stock market widget, or enter a tracking number for a package delivery widget. Configurable widgets and complications use the [`App Intents`](https://developer.apple.com/documentation/AppIntents) framework and custom intents you define — the same mechanism you use to support system-level services like Siri and the Shortcuts app. For information about creating configurable widgets and complications, refer to [`Making a configurable widget`](making-a-configurable-widget.md).
+Make it possible for people to select the information they want to view in the widget or a watch complication by offering configurable widgets and complications that provide customizable properties. For example, people might choose to stay informed about a specific stock in a stock market widget, or enter a tracking number for a package delivery widget. Configurable widgets and complications use the [`App Intents`](https://developer.apple.com/documentation/appintents) framework and custom intents you define — the same mechanism you use to support system-level services like Siri and the Shortcuts app. For information about creating configurable widgets and complications, refer to [`Making a configurable widget`](making-a-configurable-widget.md).
 
 ##### Increase Visibility in Smart Stacks
 
@@ -112,7 +112,7 @@ The Lock Screen and watch faces are always visible, and people can configure wid
 
 To add widgets, watch complications, and Live Activities, you create a widget extension and add it to your app, and the extension target and your app are part of the same app group. As a result, you can store files and data in a shared container that’s accessible to the app and the widget extension. For example, your app can download data and store it in a database in the shared container, and then a widget can access the database.
 
-For additional information about app groups and accessing a shared container, refer to [`Configuring app groups`](https://developer.apple.com/documentation/Xcode/configuring-app-groups).
+For additional information about app groups and accessing a shared container, refer to [`Configuring app groups`](https://developer.apple.com/documentation/xcode/configuring-app-groups).
 
 ##### Respect Functional Constraints
 
@@ -127,7 +127,7 @@ For additional information, refer to [`Accessing location information in widgets
 
 ## See Also
 
-- [WidgetKit updates](../Updates/WidgetKit.md)
+- [WidgetKit updates](../updates/widgetkit.md)
   Learn about important changes in WidgetKit.
 - [Creating a widget extension](creating-a-widget-extension.md)
   Display your app’s content in a convenient, informative widget on various devices.
@@ -135,7 +135,7 @@ For additional information, refer to [`Accessing location information in widgets
   Create widgets to show your app’s content on the Home screen, with custom intents for user-customizable settings.
 - [Emoji Rangers: Supporting Live Activities, interactivity, and animations](emoji-rangers-supporting-live-activities-interactivity-and-animations.md)
   Offer Live Activities, controls, animate data updates, and add interactivity to widgets.
-- [protocol WidgetBundle](../SwiftUI/WidgetBundle.md)
+- [protocol WidgetBundle](../swiftui/widgetbundle.md)
   A container used to expose multiple widgets from a single widget extension.
 
 

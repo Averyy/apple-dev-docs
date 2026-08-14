@@ -22,7 +22,7 @@ func setNeedsDisplay(_ rect: CGRect)
 
 You can use this method or the [`setNeedsDisplay()`](uiview/setneedsdisplay().md) to notify the system that your view’s contents need to be redrawn. This method adds the specified rectangle into the view’s current list of invalid rectangles and returns immediately. The view is not actually redrawn until the next drawing cycle, at which point all invalidated views are updated.
 
-> **Note**:  If your view is backed by a [`CAEAGLLayer`](https://developer.apple.com/documentation/QuartzCore/CAEAGLLayer) object, this method has no effect. It is intended for use only with views that use native drawing technologies (such as UIKit and Core Graphics) to render their content.
+> **Note**:  If your view is backed by a [`CAEAGLLayer`](https://developer.apple.com/documentation/quartzcore/caeagllayer) object, this method has no effect. It is intended for use only with views that use native drawing technologies (such as UIKit and Core Graphics) to render their content.
 
 You should use this method to request that a view be redrawn only when the content or appearance of the view change. If you simply change the geometry of the view, the view is typically not redrawn. Instead, its existing content is adjusted based on the value in the view’s [`contentMode`](uiview/contentmode-swift.property.md) property. Redisplaying the existing content improves performance by avoiding the need to redraw content that has not changed.
 

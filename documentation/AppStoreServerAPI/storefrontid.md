@@ -20,7 +20,7 @@ string storefrontId
 
 #### Discussion
 
-This value is the same as the [`id`](https://developer.apple.com/documentation/storekit/storefront/id-n42) value in StoreKit.
+This value is the same as the doc://com.apple.documentation/documentation/storekit/storefront/id-n42 value in StoreKit.
 
 ## See Also
 

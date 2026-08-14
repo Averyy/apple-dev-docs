@@ -15,9 +15,9 @@ An entitlement that verifies age or identity.
 
 #### Discussion
 
-For more information on setting up this entitlement to use with the Verify with Wallet API, see [`Configuring your environment for the Verify with Wallet API`](https://developer.apple.com/documentation/PassKit/configuring-your-environment-for-the-verify-with-wallet-api).
+For more information on setting up this entitlement to use with the Verify with Wallet API, see [`Configuring your environment for the Verify with Wallet API`](https://developer.apple.com/documentation/passkit/configuring-your-environment-for-the-verify-with-wallet-api).
 
-For more information on testing the identity API, see [`Requesting identity data from a Wallet pass`](https://developer.apple.com/documentation/PassKit/requesting-identity-data-from-a-wallet-pass#Test-the-implementation).
+For more information on testing the identity API, see [`Requesting identity data from a Wallet pass`](https://developer.apple.com/documentation/passkit/requesting-identity-data-from-a-wallet-pass).
 
 ## Topics
 

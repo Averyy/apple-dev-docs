@@ -17,7 +17,7 @@ let kSecCodeInfoIdentifier: CFString
 
 #### Discussion
 
-The value is a [`CFString`](https://developer.apple.com/documentation/CoreFoundation/CFString) object. Absent for unsigned code.
+The value is a [`CFString`](https://developer.apple.com/documentation/corefoundation/cfstring) object. Absent for unsigned code.
 
 This is generic information returned regardless of which [`Code Signing Information Flags`](code-signing-information-flags.md) you pass to the [`SecCodeCopySigningInformation(_:_:_:)`](seccodecopysigninginformation(_:_:_:).md) function.
 

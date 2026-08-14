@@ -22,7 +22,7 @@ typealias Handler = (UIContextualAction, UIView, @escaping (Bool) -> Void) -> Vo
 
 - `action`: The object containing information about the selected action.
 - `sourceView`: The view in which the action was displayed.
-- `completionHandler`: The handler block for you to execute after you have performed the action. This block has no return value and takes the following parameter: - **actionPerformed**: A Boolean value indicating whether you performed the action. Specify [`true`](https://developer.apple.com/documentation/Swift/true) if you performed the action or [`false`](https://developer.apple.com/documentation/Swift/false) if you were unable to perform the action for some reason.
+- `completionHandler`: The handler block for you to execute after you have performed the action. This block has no return value and takes the following parameter: - **actionPerformed**: A Boolean value indicating whether you performed the action. Specify [`true`](https://developer.apple.com/documentation/swift/true) if you performed the action or [`false`](https://developer.apple.com/documentation/swift/false) if you were unable to perform the action for some reason.
 
 ## See Also
 

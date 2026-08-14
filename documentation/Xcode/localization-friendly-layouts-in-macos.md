@@ -18,7 +18,7 @@ The sample uses `NSGridView` as a container view to achieve localized layouts.
 
 ## See Also
 
-- [Preparing views for localization](../SwiftUI/Preparing-views-for-localization.md)
+- [Preparing views for localization](../swiftui/preparing-views-for-localization.md)
   Specify hints and add strings to localize your SwiftUI views.
 - [Autosizing views for localization in iOS](autosizing-views-for-localization-in-ios.md)
   Add auto layout constraints to your app to achieve localizable views.

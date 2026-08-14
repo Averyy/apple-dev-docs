@@ -8,7 +8,7 @@ Adjust your project’s build settings, and use technologies like asset catalogs
 
 After you’ve measured your app’s size, you can do some basic optimizations to make it smaller. If you’re starting a new app project, create a solid foundation for your app by adopting technologies like asset catalogs. By adopting these technologies early, you may reduce the possibility of needing costly optimizations later.
 
-![Flow chart that shows how to optimize the size of your app. First measure the app’s size, then do basic, and, optionally, advanced optimizations. Basic optimizations include checking your build settings, removing unused assets, adopting asset catalogs, and using file assets for data.](https://docs-assets.developer.apple.com/published/1076c8fcf1463c837b100bbb0c96219d/doing-basic-optimization-to-reduce-your-app-s-size-1%402x.png)
+![Flow chart that shows how to optimize the size of your app. First measure the app’s size, then do basic, and, optionally, advanced optimizations. Basic optimizations include checking your build settings, removing unused assets, adopting asset catalogs, and using file assets for data.](/images/com.apple.Xcode/doing-basic-optimization-to-reduce-your-app-s-size-1@2x.png)
 
 ##### Check Your Targets Build Settings for Release Builds
 

@@ -22,7 +22,7 @@ case decimalAttributeType
 
 #### Discussion
 
-Use instances of [`NSDecimalNumber`](https://developer.apple.com/documentation/Foundation/NSDecimalNumber) when reading and writing attributes of this type.
+Use instances of [`NSDecimalNumber`](https://developer.apple.com/documentation/foundation/nsdecimalnumber) when reading and writing attributes of this type.
 
 ## See Also
 

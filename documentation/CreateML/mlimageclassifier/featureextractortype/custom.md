@@ -20,7 +20,7 @@ case custom(MLImageClassifier.CustomFeatureExtractor)
 
 #### Discussion
 
-A custom feature extractor is a neural network model you provide to an [`MLImageClassifier`](mlimageclassifier.md). The feature extractor can be a layer within the model or the model itself. In either case, the neural network must take an image as input and output an [`MLMultiArray`](https://developer.apple.com/documentation/CoreML/MLMultiArray).
+A custom feature extractor is a neural network model you provide to an [`MLImageClassifier`](mlimageclassifier.md). The feature extractor can be a layer within the model or the model itself. In either case, the neural network must take an image as input and output an [`MLMultiArray`](https://developer.apple.com/documentation/coreml/mlmultiarray).
 
 ## Parameters
 

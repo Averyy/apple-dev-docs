@@ -21,7 +21,7 @@ static let fixedAdvance: UIFontDescriptor.AttributeName
 
 #### Discussion
 
-The value is an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) instance that contains a float value. This float value overrides the glyph advancement that the font specifies. The default value is `0.0`.
+The value is an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) instance that contains a float value. This float value overrides the glyph advancement that the font specifies. The default value is `0.0`.
 
 ## See Also
 

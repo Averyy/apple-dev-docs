@@ -23,7 +23,7 @@ init(request: URLRequest?, scale: CGFloat = 1, transaction: Transaction = Transa
 
 #### Discussion
 
-If you set the asynchronous image’s [`URLRequest`](https://developer.apple.com/documentation/Foundation/URLRequest) to `nil`, or after you set the request to a value but before the load operation completes, the phase is [`AsyncImagePhase.empty`](asyncimagephase/empty.md). After the operation completes, the phase becomes either [`AsyncImagePhase.failure(_:)`](asyncimagephase/failure(_:).md) or [`AsyncImagePhase.success(_:)`](asyncimagephase/success(_:).md). In the first case, the phase’s [`error`](asyncimagephase/error.md) value indicates the reason for failure. In the second case, the phase’s [`image`](asyncimagephase/image.md) property contains the loaded image. Use the phase to drive the output of the `content` closure, which defines the view’s appearance:
+If you set the asynchronous image’s [`URLRequest`](https://developer.apple.com/documentation/foundation/urlrequest) to `nil`, or after you set the request to a value but before the load operation completes, the phase is [`AsyncImagePhase.empty`](asyncimagephase/empty.md). After the operation completes, the phase becomes either [`AsyncImagePhase.failure(_:)`](asyncimagephase/failure(_:).md) or [`AsyncImagePhase.success(_:)`](asyncimagephase/success(_:).md). In the first case, the phase’s [`error`](asyncimagephase/error.md) value indicates the reason for failure. In the second case, the phase’s [`image`](asyncimagephase/image.md) property contains the loaded image. Use the phase to drive the output of the `content` closure, which defines the view’s appearance:
 
 ```swift
 AsyncImage(request: URLRequest(url: imageURL)) { phase in
@@ -37,13 +37,13 @@ AsyncImage(request: URLRequest(url: imageURL)) { phase in
 }
 ```
 
-To add transitions when you change the [`URLRequest`](https://developer.apple.com/documentation/Foundation/URLRequest), apply an identifier to the [`AsyncImage`](asyncimage.md).
+To add transitions when you change the [`URLRequest`](https://developer.apple.com/documentation/foundation/urlrequest), apply an identifier to the [`AsyncImage`](asyncimage.md).
 
 You can specify the cache policy and timeout interval via `request`.
 
 ## Parameters
 
-- `request`: The [`URLRequest`](https://developer.apple.com/documentation/Foundation/URLRequest) of the image to display.
+- `request`: The [`URLRequest`](https://developer.apple.com/documentation/foundation/urlrequest) of the image to display.
 - `scale`: The scale to use for the image. The default is `1`. Set a different value when loading images designed for higher resolution displays. For example, set a value of `2` for an image that you would name with the `@2x` suffix if stored in a file on disk.
 - `transaction`: The transaction to use when the phase changes.
 - `content`: A closure that takes the load phase as an input, and returns the view to display for the specified phase.

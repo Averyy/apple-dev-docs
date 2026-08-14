@@ -18,13 +18,13 @@ Create widgets to show your app’s content on the Home screen, with custom inte
 
 - [Developing a WidgetKit strategy](developing-a-widgetkit-strategy.md)
   Explore features, tasks, related frameworks, and constraints as you make a plan to implement widgets, controls, watch complications, and Live Activities.
-- [WidgetKit updates](../Updates/WidgetKit.md)
+- [WidgetKit updates](../updates/widgetkit.md)
   Learn about important changes in WidgetKit.
 - [Creating a widget extension](creating-a-widget-extension.md)
   Display your app’s content in a convenient, informative widget on various devices.
 - [Emoji Rangers: Supporting Live Activities, interactivity, and animations](emoji-rangers-supporting-live-activities-interactivity-and-animations.md)
   Offer Live Activities, controls, animate data updates, and add interactivity to widgets.
-- [protocol WidgetBundle](../SwiftUI/WidgetBundle.md)
+- [protocol WidgetBundle](../swiftui/widgetbundle.md)
   A container used to expose multiple widgets from a single widget extension.
 
 

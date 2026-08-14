@@ -27,7 +27,7 @@ The packet provided to this method may be added to an input queue managed by the
 
 - `mbuf_t`: The mbuf containing the received packet.
 - `length`: Specify the size of the received packet in the mbuf. The mbuf length fields are updated with this value. If zero, then the mbuf length fields are not updated.
-- `options`: Pass   to enqueue the input packet. Pass zero to bypass the input queue, and immediately submit the packet to the network stack.
+- `options`: Pass `kInputOptionQueuePacket` to enqueue the input packet. Pass zero to bypass the input queue, and immediately submit the packet to the network stack.
 - `param`: A parameter provided by the driver. Not used.
 
 ## See Also

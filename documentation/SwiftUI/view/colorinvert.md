@@ -65,7 +65,7 @@ struct ColorInvert: View {
 }
 ```
 
-![Two red squares with centered green circles with one showing the](https://docs-assets.developer.apple.com/published/091a4b24f901b1d02e956ed751784899/SwiftUI-View-colorInvert%402x.png)
+![Two red squares with centered green circles with one showing the](/images/com.apple.SwiftUI/SwiftUI-View-colorInvert@2x.png)
 
 ## See Also
 

@@ -19,7 +19,7 @@ class let touchBarNewMessageTemplateName: String
 
 #### Discussion
 
-![Template image for new message](https://docs-assets.developer.apple.com/published/ce45fa7279f695441544c09d06bcabd2/media-2793526%402x.png)
+![Template image for new message](/images/com.apple.appkit/media-2793526@2x.png)
 
 Touch Bar template images are exclusively for use in [`NSTouchBarItem`](nstouchbaritem.md) objects and not in onscreen windows.
 

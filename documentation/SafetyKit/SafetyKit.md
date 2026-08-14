@@ -20,17 +20,17 @@ SafetyKit supports three crash scenarios. In each scenario, Apple is the first p
 
 The first scenario has first-party Emergency SOS turned off and third-party sharing turned on. When the device detects a crash, a critical alert occurs and the third party receives the crash information.
 
-![A timeline titled “first-party Emergency SOS turned off with third-party sharing” shows a sequence of events. When the device detects a crash, a critical alert occurs, and the third party receives the crash information.](https://docs-assets.developer.apple.com/published/bd4ea82d870aa79637f8de08241677a7/media-4257130%402x.png)
+![A timeline titled “first-party Emergency SOS turned off with third-party sharing” shows a sequence of events. When the device detects a crash, a critical alert occurs, and the third party receives the crash information.](/images/com.apple.safetykit/media-4257130@2x.png)
 
 In the second scenario, first-party Emergency SOS and third-party sharing are turned on. When the device detects a crash, the first-party Emergency SOS runs automatically. After the first party completes its procedures, a critical alert occurs and the third party receives the crash information.
 
-![A timeline titled “first-party Emergency SOS turned on with third-party sharing” shows a sequence of events. When the device detects a crash, the first-party SOS runs automatically. A critical alert occurs and the third party receives the crash information.](https://docs-assets.developer.apple.com/published/b1972da934fc92001f8ce7b9172fc4b6/media-4257129%402x.png)
+![A timeline titled “first-party Emergency SOS turned on with third-party sharing” shows a sequence of events. When the device detects a crash, the first-party SOS runs automatically. A critical alert occurs and the third party receives the crash information.](/images/com.apple.safetykit/media-4257129@2x.png)
 
 In the third scenario, first-party Emergency SOS is turned on and there’s no third-party sharing. When the device detects a crash, the first-party Emergency SOS runs automatically.
 
-![A timeline titled “first-party Emergency SOS only” shows a sequence of events. A device detects a crash, then the first-party SOS runs automatically.](https://docs-assets.developer.apple.com/published/02e4364ac1bff4c8bcdb7e3f8a19ef22/media-4257131%402x.png)
+![A timeline titled “first-party Emergency SOS only” shows a sequence of events. A device detects a crash, then the first-party SOS runs automatically.](/images/com.apple.safetykit/media-4257131@2x.png)
 
-> ❗ **Important**:  Crash Detection requires the [`com.apple.developer.severe-vehicular-crash-event`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.severe-vehicular-crash-event) entitlement. To apply for this entitlement, see [`Request Access to the Vehicular Crash Event Entitlement`](https://developer.apple.comhttps://developer.apple.com/contact/request/vehicular-crash-events/).
+> ❗ **Important**:  Crash Detection requires the [`com.apple.developer.severe-vehicular-crash-event`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.severe-vehicular-crash-event) entitlement. To apply for this entitlement, see [`Request Access to the Vehicular Crash Event Entitlement`](https://developer.apple.comhttps://developer.apple.com/contact/request/vehicular-crash-events/).
 
 To support Crash Detection, use [`SACrashDetectionManager`](sacrashdetectionmanager.md) to determine whether it’s available and if so, ask permission to allow your app to receive crash events. Then set [`delegate`](sacrashdetectionmanager/delegate.md) to the object that receives the events. Only one app on the device can receive Crash Detection events.
 

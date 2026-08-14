@@ -32,7 +32,7 @@ The user explicitly grants access only to items they choose, so photo library ac
 
 ## See Also
 
-- [struct PhotosPicker](../PhotosUI/PhotosPicker.md)
+- [struct PhotosPicker](../photosui/photospicker.md)
   A view that displays a Photos picker for choosing assets from the photo library.
 - [func photosPicker(isPresented: Binding<Bool>, selection: Binding<PhotosPickerItem?>, matching: PHPickerFilter?, preferredItemEncoding: PhotosPickerItem.EncodingDisambiguationPolicy) -> some View](view/photospicker(ispresented:selection:matching:preferreditemencoding:).md)
   Presents a Photos picker that selects a `PhotosPickerItem`.

@@ -30,7 +30,7 @@ Note that the getter is on the superclass, [`NSCoder`](nscoder.md). See [`NSCode
 
 ## Parameters
 
-- `flag`: [`true`](https://developer.apple.com/documentation/Swift/true) if the receiver requires [`NSSecureCoding`](nssecurecoding.md); [`false`](https://developer.apple.com/documentation/Swift/false) if not.
+- `flag`: [`true`](https://developer.apple.com/documentation/swift/true) if the receiver requires [`NSSecureCoding`](nssecurecoding.md); [`false`](https://developer.apple.com/documentation/swift/false) if not.
 
 ## See Also
 

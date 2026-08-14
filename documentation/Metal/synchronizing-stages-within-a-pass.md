@@ -90,11 +90,11 @@ The example has at least one access conflict because the pass accesses two commo
 
 The copy command and the dispatch commands run during the blit and dispatch stages, respectively; both commands modify `bufferB`.
 
-![A diagram showing a single compute pass with copy and dispatch commands both accessing buffer B, where the copy command runs during the blit stage and stores to buffer B, and the dispatch command runs during the dispatch stage and modifies buffer B.](https://docs-assets.developer.apple.com/published/c561aebb95e82f882e2699eec5fa477c/synchronizing-stages-within-a-pass-1%402x.png)
+![A diagram showing a single compute pass with copy and dispatch commands both accessing buffer B, where the copy command runs during the blit stage and stores to buffer B, and the dispatch command runs during the dispatch stage and modifies buffer B.](/images/com.apple.metal/synchronizing-stages-within-a-pass-1@2x.png)
 
 Without a barrier, the GPU can run the commands at any time relative to each other, including at the same time, which can yield inconsistent results in resources with access conflicts.
 
-![A diagram showing the blit and dispatch stages running in parallel without synchronization, potentially causing inconsistent results when both access buffer B.](https://docs-assets.developer.apple.com/published/d51f338f01e9acac15e205d1ba45ebed/synchronizing-stages-within-a-pass-2%402x.png)
+![A diagram showing the blit and dispatch stages running in parallel without synchronization, potentially causing inconsistent results when both access buffer B.](/images/com.apple.metal/synchronizing-stages-within-a-pass-2@2x.png)
 
 ##### Resolve an Intrapass Conflict with a Barrier
 
@@ -144,7 +144,7 @@ The following code example modifies the previous one adding an intrapass barrier
 
 The code example adds a barrier between the blit and dispatch stages because they both access `bufferB` with load or store operations. The barrier forces the GPU to wait until the blit command completes before starting the dispatch stage.
 
-![A diagram showing the intrapass barrier synchronization where the GPU waits for the blit stage to complete before starting the dispatch stage.](https://docs-assets.developer.apple.com/published/5730800e64956f5a9090f6ea4451e8c8/synchronizing-stages-within-a-pass-3%402x.png)
+![A diagram showing the intrapass barrier synchronization where the GPU waits for the blit stage to complete before starting the dispatch stage.](/images/com.apple.metal/synchronizing-stages-within-a-pass-3@2x.png)
 
 The barrier makes it so that the store operations from the blit stage’s commands finish completely before the dispatch stage’s commands load from the same memory.
 

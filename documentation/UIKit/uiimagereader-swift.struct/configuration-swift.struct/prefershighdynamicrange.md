@@ -25,7 +25,7 @@ This property doesn’t affect images that only decode in either SDR or HDR. The
 
 ## See Also
 
-- [Applying Apple HDR effect to your photos](../AppKit/applying-apple-hdr-effect-to-your-photos.md)
+- [Applying Apple HDR effect to your photos](../appkit/applying-apple-hdr-effect-to-your-photos.md)
   You can decode and apply Apple’s HDR gain map to your own images.
 - [var preparesImagesForDisplay: Bool](uiimagereader-swift.struct/configuration-swift.struct/preparesimagesfordisplay.md)
   A Boolean value that indicates whether the image reader prepares the image for display.

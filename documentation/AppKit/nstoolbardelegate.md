@@ -47,7 +47,7 @@ Use the methods of [`NSToolbarDelegate`](nstoolbardelegate.md) to customize the 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 ### Conforming Types
 - [NSTabViewController](nstabviewcontroller.md)
 

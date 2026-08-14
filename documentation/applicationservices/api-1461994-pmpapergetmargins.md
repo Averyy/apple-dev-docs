@@ -21,7 +21,7 @@ A result code. See [`Result Codes`](core_printing#1670007.md).
 ## Parameters
 
 - `paper`: The paper whose margins you want to obtain.
-- `paperMargins`: A pointer to your   structure. On return, the structure contains the unprintable margins of the specified paper, in points. The four values in the structure specify the top, left, bottom, and right imageable area margins of the paper. 
+- `paperMargins`: A pointer to your [`PMPaperMargins`](pmpapermargins.md) structure. On return, the structure contains the unprintable margins of the specified paper, in points. The four values in the structure specify the top, left, bottom, and right imageable area margins of the paper. 
 
 ## See Also
 

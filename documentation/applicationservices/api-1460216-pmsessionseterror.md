@@ -27,7 +27,7 @@ You can use this function to terminate a printing session if your application en
 ## Parameters
 
 - `printSession`: The printing session whose result code you want to set.
-- `printError`: The result code you want to set. This result code is returned by the   function. 
+- `printError`: The result code you want to set. This result code is returned by the `PMSessionError` function. 
 
 ## See Also
 

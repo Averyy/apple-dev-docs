@@ -16,7 +16,7 @@ class NSMutableParagraphStyle
 
 #### Overview
 
-The [`NSMutableParagraphStyle`](nsmutableparagraphstyle.md) class adds methods to its superclass, [`NSParagraphStyle`](nsparagraphstyle.md), for changing the values of the subattributes in a paragraph style attribute. For more information, see [`NSParagraphStyle`](nsparagraphstyle.md) and [`NSAttributedString`](https://developer.apple.com/documentation/Foundation/NSAttributedString).
+The [`NSMutableParagraphStyle`](nsmutableparagraphstyle.md) class adds methods to its superclass, [`NSParagraphStyle`](nsparagraphstyle.md), for changing the values of the subattributes in a paragraph style attribute. For more information, see [`NSParagraphStyle`](nsparagraphstyle.md) and [`NSAttributedString`](https://developer.apple.com/documentation/foundation/nsattributedstring).
 
 > ❗ **Important**:  Don’t mutate a paragraph style object after adding it to an attributed string. Doing so can cause your app to crash.
 
@@ -82,18 +82,18 @@ The [`NSMutableParagraphStyle`](nsmutableparagraphstyle.md) class adds methods t
 ### Inherits From
 - [NSParagraphStyle](nsparagraphstyle.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCoding](../Foundation/NSCoding.md)
-- [NSCopying](../Foundation/NSCopying.md)
-- [NSMutableCopying](../Foundation/NSMutableCopying.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [NSSecureCoding](../Foundation/NSSecureCoding.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCoding](../foundation/nscoding.md)
+- [NSCopying](../foundation/nscopying.md)
+- [NSMutableCopying](../foundation/nsmutablecopying.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

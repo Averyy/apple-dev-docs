@@ -50,7 +50,7 @@ func attributedPrice(price: Decimal) -> AttributedString {
 
 User interface frameworks like SwiftUI can use these attributes when presenting the attributed string, as seen here:
 
-![The currency value $1,234.56, with the dollar sign and decimal separator in red, and the digits in bold.](https://docs-assets.developer.apple.com/published/7a4b9269c09c3f9fcab491116254bbc9/media-4099417%402x.png)
+![The currency value $1,234.56, with the dollar sign and decimal separator in red, and the digits in bold.](/images/com.apple.foundation/media-4099417@2x.png)
 
 ## Topics
 
@@ -64,15 +64,15 @@ User interface frameworks like SwiftUI can use these attributes when presenting 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../Swift/Copyable.md)
-- [Decodable](../Swift/Decodable.md)
-- [Encodable](../Swift/Encodable.md)
-- [Equatable](../Swift/Equatable.md)
-- [Escapable](../Swift/Escapable.md)
+- [Copyable](../swift/copyable.md)
+- [Decodable](../swift/decodable.md)
+- [Encodable](../swift/encodable.md)
+- [Equatable](../swift/equatable.md)
+- [Escapable](../swift/escapable.md)
 - [FormatStyle](formatstyle.md)
-- [Hashable](../Swift/Hashable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Hashable](../swift/hashable.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

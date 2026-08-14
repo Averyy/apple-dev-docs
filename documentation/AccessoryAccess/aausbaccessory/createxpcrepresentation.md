@@ -16,7 +16,7 @@ func createXPCRepresentation() -> xpc_object_t
 
 #### Discussion
 
-A USB accessory can be encoded to [`xpc_object_t`](https://developer.apple.com/documentation/XPC/xpc_object_t), and passed to an XPC service over an XPC connection.
+A USB accessory can be encoded to [`xpc_object_t`](https://developer.apple.com/documentation/xpc/xpc_object_t), and passed to an XPC service over an XPC connection.
 
 
 ---

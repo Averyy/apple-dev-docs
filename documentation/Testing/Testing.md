@@ -11,7 +11,7 @@ Create and run tests for your Swift packages and Xcode projects.
 
 #### Overview
 
-![The Swift logo on a blue gradient background that contains function, number, tag, and checkmark diamond symbols.](https://docs-assets.developer.apple.com/published/bb0ec39fe3198b15d431887aac09a527/swift-testing-hero%402x.png)
+![The Swift logo on a blue gradient background that contains function, number, tag, and checkmark diamond symbols.](/images/org.swift.testing/swift-testing-hero@2x.png)
 
 With Swift Testing you leverage powerful and expressive capabilities of the Swift programming language to develop tests with more confidence and less code. The library integrates seamlessly with Swift Package Manager testing workflow, supports flexible test organization, customizable metadata, and scalable test execution.
 

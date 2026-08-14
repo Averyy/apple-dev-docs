@@ -18,7 +18,7 @@ class WKInterfacePaymentButton
 
 Use a payment button to initiate an Apple Pay transaction on Apple Watch.
 
-![A screenshot of the Apple Pay Button.](https://docs-assets.developer.apple.com/published/7edb9f4e5d0ba2fc72a5b546d35494a5/media-2930172%402x.png)
+![A screenshot of the Apple Pay Button.](/images/com.apple.watchkit/media-2930172@2x.png)
 
 > **Note**:  The payment button (see [`Figure 1`](wkinterfacepaymentbutton#2930172.md)) does not create or process payments. It simply provides a button with the Apple Pay mark. You must connect this button to an action method that creates an Apple Pay payment request. For more information on using the Apple Pay mark, see [`Apple Pay Identity Guidelines`](https://developer.apple.comhttps://developer.apple.com/apple-pay/Apple-Pay-Identity-Guidelines.pdf).
 
@@ -52,7 +52,7 @@ To respond to taps in the payment button, declare a method of this form in the i
 - (IBAction)beginApplePayTransaction
 ```
 
-You can change the name of your action method to anything you like. In your Xcode storyboard, connect the button’s selector to the custom action method defined in your class. In the action method, create the payment request and present the payment sheet by calling a [`PKPaymentAuthorizationController`](https://developer.apple.com/documentation/PassKit/PKPaymentAuthorizationController) object’s [`present(completion:)`](https://developer.apple.com/documentation/PassKit/PKPaymentAuthorizationController/present(completion:)) method.
+You can change the name of your action method to anything you like. In your Xcode storyboard, connect the button’s selector to the custom action method defined in your class. In the action method, create the payment request and present the payment sheet by calling a [`PKPaymentAuthorizationController`](https://developer.apple.com/documentation/passkit/pkpaymentauthorizationcontroller) object’s [`present(completion:)`](https://developer.apple.com/documentation/passkit/pkpaymentauthorizationcontroller/present(completion:)) method.
 
 Payment buttons can be used only to initiate Apple Pay transactions.
 
@@ -67,12 +67,12 @@ Payment buttons can be used only to initiate Apple Pay transactions.
 ### Inherits From
 - [WKInterfaceObject](wkinterfaceobject.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

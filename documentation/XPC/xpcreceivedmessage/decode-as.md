@@ -26,7 +26,7 @@ A value of the specified type if the message data decodes successfully.
 
 #### Discussion
 
-If the message data doesn’t decode to the type, this method throws the appropriate [`DecodingError`](https://developer.apple.com/documentation/Swift/DecodingError).
+If the message data doesn’t decode to the type, this method throws the appropriate [`DecodingError`](https://developer.apple.com/documentation/swift/decodingerror).
 
 ## Parameters
 

@@ -32,7 +32,7 @@ let greenGroup = CollisionGroup(rawValue: 1 << 2)
 let yellowGroup = CollisionGroup(rawValue: 1 << 3)
 ```
 
-Because [`CollisionGroup`](collisiongroup.md) conforms to [`OptionSet`](https://developer.apple.com/documentation/Swift/OptionSet), this allows you to create aggregate groups that encompass multiple individual collision groups, like so:
+Because [`CollisionGroup`](collisiongroup.md) conforms to [`OptionSet`](https://developer.apple.com/documentation/swift/optionset), this allows you to create aggregate groups that encompass multiple individual collision groups, like so:
 
 ```swift
 let blueAndRedGroup = redGroup.union(blueGroup)
@@ -68,11 +68,11 @@ redTeamPlayer1.collision?.filter = allButRedFilter
 ## Relationships
 
 ### Conforms To
-- [Equatable](../Swift/Equatable.md)
-- [ExpressibleByArrayLiteral](../Swift/ExpressibleByArrayLiteral.md)
-- [OptionSet](../Swift/OptionSet.md)
-- [RawRepresentable](../Swift/RawRepresentable.md)
-- [SetAlgebra](../Swift/SetAlgebra.md)
+- [Equatable](../swift/equatable.md)
+- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
+- [OptionSet](../swift/optionset.md)
+- [RawRepresentable](../swift/rawrepresentable.md)
+- [SetAlgebra](../swift/setalgebra.md)
 
 ## See Also
 
@@ -80,7 +80,7 @@ redTeamPlayer1.collision?.filter = allButRedFilter
   Create entities that behave and react like physical objects in a RealityKit view.
 - [Configuring Collision in RealityKit](configuring-collision-in-realitykit.md)
   Use collision groups and collision filters to control which objects collide.
-- [Creating an interactive 3D model in visionOS](../visionOS/creating-an-interactable-3d-model-in-visionos.md)
+- [Creating an interactive 3D model in visionOS](../visionos/creating-an-interactable-3d-model-in-visionos.md)
   Display an interactive car model using gestures in a reality view.
 - [struct CollisionComponent](collisioncomponent.md)
   A component that gives an entity the ability to collide with other entities that also have collision components.

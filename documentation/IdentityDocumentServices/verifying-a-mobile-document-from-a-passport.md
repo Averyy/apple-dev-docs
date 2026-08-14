@@ -10,12 +10,12 @@ Beginning in iOS 26.1 and watchOS 26.1, people can add passports in the form of 
 
 A Digital ID is a way for people to securely create an ID in Wallet using information from their U.S. passport and present their ID with an iPhone or Apple Watch. You can verify the authenticity, integrity, and validity of a Digital ID response in following scenarios:
 
-- Your iOS app accepts mdocs using the Verify with Wallet API. For more information, see [`Requesting identity data from a Wallet pass`](https://developer.apple.com/documentation/PassKit/requesting-identity-data-from-a-wallet-pass).
+- Your iOS app accepts mdocs using the Verify with Wallet API. For more information, see [`Requesting identity data from a Wallet pass`](https://developer.apple.com/documentation/passkit/requesting-identity-data-from-a-wallet-pass).
 - Your website accepts Verify with Wallet on the Web. For more information, see [`Requesting a mobile document on the web`](requesting-a-mobile-document-on-the-web.md) and [`Implementing as an identity document provider`](implenting-as-an-identity-document-provider.md).
-- Your iOS app reads the mdoc’s response using [`ProximityReader`](https://developer.apple.com/documentation/ProximityReader)’s  [`MobilePhotoIDRawDataRequest`](https://developer.apple.com/documentation/ProximityReader/MobilePhotoIDRawDataRequest).
+- Your iOS app reads the mdoc’s response using [`ProximityReader`](https://developer.apple.com/documentation/proximityreader)’s  [`MobilePhotoIDRawDataRequest`](https://developer.apple.com/documentation/proximityreader/mobilephotoidrawdatarequest).
 - Your ISO 18013-5 capable terminal wants to accept mdoc responses.
 
-> **Note**: Using the [`MobileDocumentDisplayRequest`](https://developer.apple.com/documentation/ProximityReader/MobileDocumentDisplayRequest) or [`MobilePhotoIDDataRequest`](https://developer.apple.com/documentation/ProximityReader/MobilePhotoIDDataRequest) API in the [`ProximityReader`](https://developer.apple.com/documentation/ProximityReader) framework automatically verifies Digital IDs.
+> **Note**: Using the [`MobileDocumentDisplayRequest`](https://developer.apple.com/documentation/proximityreader/mobiledocumentdisplayrequest) or [`MobilePhotoIDDataRequest`](https://developer.apple.com/documentation/proximityreader/mobilephotoiddatarequest) API in the [`ProximityReader`](https://developer.apple.com/documentation/proximityreader) framework automatically verifies Digital IDs.
 
 #### Verify the Passport Mobile Document Response
 

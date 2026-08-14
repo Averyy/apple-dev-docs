@@ -26,7 +26,7 @@ A Core Graphics context configured to represent the attributes in the format obj
 
 Each time the graphics renderer needs to create a new Core Graphics context, it calls this method, providing the format object supplied at initialization time.
 
-You must override this method when you subclass `UIGraphicsRenderer`. Use the provided [`UIGraphicsRendererFormat`](uigraphicsrendererformat.md) to create and configure a [`CGContext`](https://developer.apple.com/documentation/CoreGraphics/CGContext) object that is used by the renderer in the drawing routines.
+You must override this method when you subclass `UIGraphicsRenderer`. Use the provided [`UIGraphicsRendererFormat`](uigraphicsrendererformat.md) to create and configure a [`CGContext`](https://developer.apple.com/documentation/coregraphics/cgcontext) object that is used by the renderer in the drawing routines.
 
 ## Parameters
 

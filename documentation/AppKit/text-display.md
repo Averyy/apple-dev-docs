@@ -16,7 +16,7 @@ For even more powerful and more creative text manipulation (such as displaying t
 
 ##### Spell Checking
 
-The [`NSSpellServer`](https://developer.apple.com/documentation/Foundation/NSSpellServer) class lets you define a spell-checking service and provide it as a service to other apps. To connect your app to a spell-checking service, use the [`NSSpellChecker`](nsspellchecker.md) class. The [`NSIgnoreMisspelledWords`](nsignoremisspelledwords.md) and [`NSChangeSpelling`](nschangespelling.md) protocols support the spell-checking mechanism.
+The [`NSSpellServer`](https://developer.apple.com/documentation/foundation/nsspellserver) class lets you define a spell-checking service and provide it as a service to other apps. To connect your app to a spell-checking service, use the [`NSSpellChecker`](nsspellchecker.md) class. The [`NSIgnoreMisspelledWords`](nsignoremisspelledwords.md) and [`NSChangeSpelling`](nschangespelling.md) protocols support the spell-checking mechanism.
 
 ## Topics
 

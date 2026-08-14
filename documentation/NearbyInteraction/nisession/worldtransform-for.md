@@ -22,12 +22,12 @@ A world transform in ARKit’s coordinate space.
 
 #### Discussion
 
-This [`ARKit`](https://developer.apple.com/documentation/ARKit) transform represents the given object’s position in the physical environment, if it’s available. Otherwise, this function returns `nil`.
+This [`ARKit`](https://developer.apple.com/documentation/arkit) transform represents the given object’s position in the physical environment, if it’s available. Otherwise, this function returns `nil`.
 
 With this transform, you can:
 
 - Overlay 3D virtual content onto a camera-feed visualization where the nearby object resides in the physical environment, such as done by an AR app’s renderer.
-- Play a 3D-spatial sound from the location of the nearby object, for example, by using [`PHASE`](https://developer.apple.com/documentation/PHASE).
+- Play a 3D-spatial sound from the location of the nearby object, for example, by using [`PHASE`](https://developer.apple.com/documentation/phase).
 
 ## Parameters
 

@@ -10,7 +10,7 @@ SceneKit implements content as a hierarchical tree structure of nodes, also know
 
 Before working with SceneKit, you should be familiar with basic graphics concepts such as coordinate systems and the mathematics of three-dimensional geometry. SceneKit uses a right-handed coordinate system where (by default) the direction of view is along the negative z-axis, as illustrated below.
 
-![Diagram of the SceneKit coordinate system: the positive x-axis points to the camera’s right, the positive y-axis points up, and the positive z-axis points toward and behind the camera.](https://docs-assets.developer.apple.com/published/987639a03a6a623b029b41f757b15aca/media-2929768%402x.png)
+![Diagram of the SceneKit coordinate system: the positive x-axis points to the camera’s right, the positive y-axis points up, and the positive z-axis points toward and behind the camera.](/images/com.apple.scenekit/media-2929768@2x.png)
 
 ## See Also
 

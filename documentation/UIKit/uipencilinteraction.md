@@ -22,7 +22,7 @@ class UIPencilInteraction
 
 People can interact with certain models of Apple Pencil with a double tap or squeeze. To detect the double tap or squeeze in your app, create a [`UIPencilInteraction`](uipencilinteraction.md) object with a corresponding [`delegate`](uipencilinteraction/delegate.md) object. Then, add the interaction to your app’s view. When a person double-taps or squeezes Apple Pencil, the interaction calls the delegate’s corresponding [`pencilInteraction(_:didReceiveTap:)`](uipencilinteractiondelegate/pencilinteraction(_:didreceivetap:).md) or [`pencilInteraction(_:didReceiveSqueeze:)`](uipencilinteractiondelegate/pencilinteraction(_:didreceivesqueeze:).md) method.
 
-For more information, read [`Handling double taps from Apple Pencil`](https://developer.apple.com/documentation/ApplePencil/handling-double-taps-from-apple-pencil) and [`Handling squeezes from Apple Pencil`](https://developer.apple.com/documentation/ApplePencil/handling-squeezes-from-apple-pencil).
+For more information, read [`Handling double taps from Apple Pencil`](https://developer.apple.com/documentation/applepencil/handling-double-taps-from-apple-pencil) and [`Handling squeezes from Apple Pencil`](https://developer.apple.com/documentation/applepencil/handling-squeezes-from-apple-pencil).
 
 ## Topics
 
@@ -59,15 +59,15 @@ For more information, read [`Handling double taps from Apple Pencil`](https://de
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [Sendable](../Swift/Sendable.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [Sendable](../swift/sendable.md)
 - [UIInteraction](uiinteraction.md)
 
 ## See Also

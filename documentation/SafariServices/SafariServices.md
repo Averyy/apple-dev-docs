@@ -23,7 +23,7 @@ You can:
 - Convert your existing Chrome, Firefox, or Edge extensions into a Safari web extension, or create a new Safari web extension that can work in other browsers. (iOS and macOS)
 - Determine from your app whether your content blocker extension is loaded, and if it is, tell it to refresh its contents. (iOS and macOS)
 - Implement Safari app extensions. Determine from your app whether a Safari app extension is loaded. (macOS)
-- Allow the user to share cookies and website data between an app and Safari for a single sign-on (SSO) experience with  [`ASWebAuthenticationSession`](https://developer.apple.com/documentation/AuthenticationServices/ASWebAuthenticationSession).
+- Allow the user to share cookies and website data between an app and Safari for a single sign-on (SSO) experience with  [`ASWebAuthenticationSession`](https://developer.apple.com/documentation/authenticationservices/aswebauthenticationsession).
 
 ## Topics
 
@@ -60,11 +60,11 @@ You can:
 - [class SFSafariSettings](sfsafarisettings.md)
   A class that provides your app access to several of Safari’s settings options.
 ### Associated domains
-- [Supporting associated domains](../Xcode/supporting-associated-domains.md)
+- [Supporting associated domains](../xcode/supporting-associated-domains.md)
   Connect your app and a website to provide both a native app and a browser experience.
 - [class SFUniversalLink](sfuniversallink.md)
   An object that provides browsers with the ability to discover associations between an app and a website.
-- [Associated Domains Entitlement](../BundleResources/Entitlements/com.apple.developer.associated-domains.md)
+- [Associated Domains Entitlement](../bundleresources/entitlements/com.apple.developer.associated-domains.md)
   The associated domains for specific services, such as shared web credentials, universal links, and App Clips.
 ### Availability
 - [func SFSafariServicesAvailable(SFSafariServicesVersion) -> Bool](sfsafariservicesavailable(_:).md)

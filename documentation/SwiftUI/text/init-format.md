@@ -22,9 +22,9 @@ init<F>(_ input: F.FormatInput, format: F) where F : FormatStyle, F.FormatInput 
 
 #### Discussion
 
-Use this initializer to create a text view backed by a nonstring value, using a [`FormatStyle`](https://developer.apple.com/documentation/Foundation/FormatStyle) to convert the type to an attributed string representation. Any changes to the value update the string displayed by the text view.
+Use this initializer to create a text view backed by a nonstring value, using a [`FormatStyle`](https://developer.apple.com/documentation/foundation/formatstyle) to convert the type to an attributed string representation. Any changes to the value update the string displayed by the text view.
 
-In the following example, three [`Text`](text.md) views present a date with different combinations of date and time fields, by using different [`Date.FormatStyle`](https://developer.apple.com/documentation/Foundation/Date/FormatStyle) options.
+In the following example, three [`Text`](text.md) views present a date with different combinations of date and time fields, by using different [`Date.FormatStyle`](https://developer.apple.com/documentation/foundation/date/formatstyle) options.
 
 ```swift
 @State private var myDate = Date()
@@ -37,7 +37,7 @@ var body: some View {
 }
 ```
 
-![Three vertically stacked text views showing the date with different](https://docs-assets.developer.apple.com/published/3cbfd7e712f6d26122350b67f0db9862/Text-init-format-1%402x.png)
+![Three vertically stacked text views showing the date with different](/images/com.apple.SwiftUI/Text-init-format-1@2x.png)
 
 ## Parameters
 

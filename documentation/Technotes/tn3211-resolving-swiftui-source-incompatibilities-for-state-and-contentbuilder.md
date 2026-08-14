@@ -8,8 +8,8 @@ Update existing code for two foundational changes in SwiftUI built with Xcode 27
 
 SwiftUI in Xcode 27 introduces two changes to the language-level shape of the framework:
 
-- **[`State`](https://developer.apple.com/documentation/SwiftUI/State) is a Swift macro rather than a property wrapper.** The macro enables lazy evaluation of a property’s initial value, and the compiler treats the property like any other stored property of the view.
-- **Result builders are unified under [`ContentBuilder`](https://developer.apple.com/documentation/SwiftUI/ContentBuilder).** In order to drastically improve typechecking performance, previously distinct builders such as [`ViewBuilder`](https://developer.apple.com/documentation/SwiftUI/ViewBuilder) are unified under `@ContentBuilder`, and builder blocks no longer carry specific protocol constraints on their contents, drastically improving typechecking performance.
+- **[`State`](https://developer.apple.com/documentation/swiftui/state) is a Swift macro rather than a property wrapper.** The macro enables lazy evaluation of a property’s initial value, and the compiler treats the property like any other stored property of the view.
+- **Result builders are unified under [`ContentBuilder`](https://developer.apple.com/documentation/swiftui/contentbuilder).** In order to drastically improve typechecking performance, previously distinct builders such as [`ViewBuilder`](https://developer.apple.com/documentation/swiftui/viewbuilder) are unified under `@ContentBuilder`, and builder blocks no longer carry specific protocol constraints on their contents, drastically improving typechecking performance.
 
 The vast majority of SwiftUI code in your app is unaffected and continues to compile and behave the same way without modification. A small number of patterns that depended on the previous implementations now produce build errors. The following sections describe each known source incompatibility, the recommended remediation, and the underlying cause.
 
@@ -29,7 +29,7 @@ By making `@State` a macro, SwiftUI can ensure that objects held in state are on
 
 ##### How Result Builders Changed to Be Unified Under Contentbuilder
 
-SwiftUI previously defined a separate result builder for each kind of content you compose. Every primitive those builders share, such as [`Group`](https://developer.apple.com/documentation/SwiftUI/Group), [`ForEach`](https://developer.apple.com/documentation/SwiftUI/ForEach), and [`Section`](https://developer.apple.com/documentation/SwiftUI/Section), provided a separate initializer for each builder. Because these initializers differ only in the type of content the builder produces, and that type doesn’t appear at the call site, the compiler infers which initializer to use.
+SwiftUI previously defined a separate result builder for each kind of content you compose. Every primitive those builders share, such as [`Group`](https://developer.apple.com/documentation/swiftui/group), [`ForEach`](https://developer.apple.com/documentation/swiftui/foreach), and [`Section`](https://developer.apple.com/documentation/swiftui/section), provided a separate initializer for each builder. Because these initializers differ only in the type of content the builder produces, and that type doesn’t appear at the call site, the compiler infers which initializer to use.
 
 Inferring the initializer requires typechecking the entire closure body. When that body contains more overloaded primitives, the compiler repeats this work for each candidate while keeping its choices consistent across the closure. The cost grows quickly as builders nest, and deeply nested uses of `Group`, `Section`, or `ForEach` can exceed the compiler’s limits, producing the error:
 
@@ -37,7 +37,7 @@ Inferring the initializer requires typechecking the entire closure body. When th
 the compiler is unable to type-check this expression in reasonable time
 ```
 
-[`ContentBuilder`](https://developer.apple.com/documentation/SwiftUI/ContentBuilder) replaces these builders with a single builder that imposes no constraints on its contents. It assembles arbitrary content, and that content conforms to the protocol its context requires only when its elements do. Each primitive provides one builder-based initializer, so the compiler no longer searches indistinguishable overloads or typechecks closure bodies to choose one. Your code keeps the same syntax and type safety, and typechecks substantially faster.
+[`ContentBuilder`](https://developer.apple.com/documentation/swiftui/contentbuilder) replaces these builders with a single builder that imposes no constraints on its contents. It assembles arbitrary content, and that content conforms to the protocol its context requires only when its elements do. Each primitive provides one builder-based initializer, so the compiler no longer searches indistinguishable overloads or typechecks closure bodies to choose one. Your code keeps the same syntax and type safety, and typechecks substantially faster.
 
 #### Migrating Code That Uses State
 
@@ -133,7 +133,7 @@ Many of SwiftUI’s result builders are unified under `@ContentBuilder`, improvi
 
 ##### Use the Closure Based Forms of Background and Overlay for Shapestyle Expressions
 
-**What happens:** A call to the deprecated, non-builder forms of [`background(alignment:content:)`](https://developer.apple.com/documentation/SwiftUI/View/background(alignment:content:)) or [`overlay(alignment:content:)`](https://developer.apple.com/documentation/SwiftUI/View/overlay(alignment:content:)) that passes a [`ShapeStyle`](https://developer.apple.com/documentation/SwiftUI/ShapeStyle) expression composed with modifiers such as [`opacity(_:)`](https://developer.apple.com/documentation/SwiftUI/ShapeStyle/opacity(_:)-swift.type.method) or [`blendMode(_:)`](https://developer.apple.com/documentation/SwiftUI/ShapeStyle/blendMode(_:)-swift.type.method) produces:
+**What happens:** A call to the deprecated, non-builder forms of [`background(alignment:content:)`](https://developer.apple.com/documentation/swiftui/view/background(alignment:content:)) or [`overlay(alignment:content:)`](https://developer.apple.com/documentation/swiftui/view/overlay(alignment:content:)) that passes a [`ShapeStyle`](https://developer.apple.com/documentation/swiftui/shapestyle) expression composed with modifiers such as [`opacity(_:)`](https://developer.apple.com/documentation/swiftui/shapestyle/opacity(_:)-swift.type.method) or [`blendMode(_:)`](https://developer.apple.com/documentation/swiftui/shapestyle/blendmode(_:)-swift.type.method) produces:
 
 ```None
 error: ambiguous use of 'opacity'
@@ -166,7 +166,7 @@ struct ContentView: View {
 }
 ```
 
-**Why this occurs:** Both `background` and `overlay` provide overloads that accept either a `View` or a `ShapeStyle`, and modifiers such as `opacity(_:)` on a `ShapeStyle` return either a `ShapeStyle` or a `View`. The `View` constraint that [`ViewBuilder`](https://developer.apple.com/documentation/SwiftUI/ViewBuilder) previously imposed allowed the compiler to select a single resolution for these expressions. Without that constraint, the competing overloads are equally viable and the expression becomes ambiguous. The closure-based form selects the builder overload directly and resolves the ambiguity.
+**Why this occurs:** Both `background` and `overlay` provide overloads that accept either a `View` or a `ShapeStyle`, and modifiers such as `opacity(_:)` on a `ShapeStyle` return either a `ShapeStyle` or a `View`. The `View` constraint that [`ViewBuilder`](https://developer.apple.com/documentation/swiftui/viewbuilder) previously imposed allowed the compiler to select a single resolution for these expressions. Without that constraint, the competing overloads are equally viable and the expression becomes ambiguous. The closure-based form selects the builder overload directly and resolves the ambiguity.
 
 ##### Disambiguate Types and Members That Collide Across Modules
 
@@ -214,7 +214,7 @@ struct ContentView: View {
 
 ##### Update Generic Constraints That Reference Tupleview
 
-**What happens:** Code that names [`TupleView`](https://developer.apple.com/documentation/SwiftUI/TupleView) as a nested generic type argument may produce one of the following diagnostics:
+**What happens:** Code that names [`TupleView`](https://developer.apple.com/documentation/swiftui/tupleview) as a nested generic type argument may produce one of the following diagnostics:
 
 ```None
 error: cannot convert value of type 'VStack<TupleContent<Text, Text>>' to expected argument type 'VStack<TupleView<(Text, Text)>>'
@@ -247,7 +247,7 @@ extension CardView where Content == VStack<TupleView<(Text, Text)>> {
 }
 ```
 
-**How to fix it:** Prefer opaque types such as `some View` rather than spelling the concrete builder return type. When a concrete spelling is required, replace `TupleView` with [`TupleContent`](https://developer.apple.com/documentation/SwiftUI/TupleContent) in the constraint:
+**How to fix it:** Prefer opaque types such as `some View` rather than spelling the concrete builder return type. When a concrete spelling is required, replace `TupleView` with [`TupleContent`](https://developer.apple.com/documentation/swiftui/tuplecontent) in the constraint:
 
 ```swift
 extension CardView where Content == VStack<TupleContent<Text, Text>> {
@@ -321,7 +321,7 @@ struct ContentView: View {
 }
 ```
 
-**How to fix it:** Supply an explicit [`EmptyContent`](https://developer.apple.com/documentation/SwiftUI/EmptyContent) (or [`EmptyView`](https://developer.apple.com/documentation/SwiftUI/EmptyView)) value:
+**How to fix it:** Supply an explicit [`EmptyContent`](https://developer.apple.com/documentation/swiftui/emptycontent) (or [`EmptyView`](https://developer.apple.com/documentation/swiftui/emptyview)) value:
 
 ```swift
 import SwiftUI
@@ -355,11 +355,11 @@ struct ContentView: View {
 }
 ```
 
-**Why this occurs:** Without the `View` constraint on the builder, an empty body is ambiguous when MapKit is also in scope: MapKit declares its own result builder that produces [`EmptyMapContent`](https://developer.apple.com/documentation/MapKit/EmptyMapContent), and the compiler has no basis to choose between the two. Supplying an explicit `EmptyContent()` (or `EmptyView()`) anchors the resolution to a concrete `View`-conforming expression.
+**Why this occurs:** Without the `View` constraint on the builder, an empty body is ambiguous when MapKit is also in scope: MapKit declares its own result builder that produces [`EmptyMapContent`](https://developer.apple.com/documentation/mapkit/emptymapcontent), and the compiler has no basis to choose between the two. Supplying an explicit `EmptyContent()` (or `EmptyView()`) anchors the resolution to a concrete `View`-conforming expression.
 
 ##### Extract Deeply Branching Content From Chart Closures When Back Deploying
 
-**What happens:** For projects whose minimum deployment target is earlier than iOS 27, iPadOS 27, macOS 27, or visionOS 27, a [`Chart`](https://developer.apple.com/documentation/Charts/Chart) that contains deeply branching `if` / `else if` or `switch` statements may produce:
+**What happens:** For projects whose minimum deployment target is earlier than iOS 27, iPadOS 27, macOS 27, or visionOS 27, a [`Chart`](https://developer.apple.com/documentation/charts/chart) that contains deeply branching `if` / `else if` or `switch` statements may produce:
 
 ```None
 error: the compiler is unable to type-check this expression in reasonable time
@@ -437,7 +437,7 @@ struct MetricChartView: View {
 }
 ```
 
-**How to fix it:** Extract the branching logic into a separate function annotated with [`ChartContentBuilder`](https://developer.apple.com/documentation/Charts/ChartContentBuilder):
+**How to fix it:** Extract the branching logic into a separate function annotated with [`ChartContentBuilder`](https://developer.apple.com/documentation/charts/chartcontentbuilder):
 
 ```swift
 import SwiftUI

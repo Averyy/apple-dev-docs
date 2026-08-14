@@ -33,8 +33,8 @@ A return value of [`CFURLEnumeratorResult.error`](cfurlenumeratorresult/error.md
 If this function returns [`CFURLEnumeratorResult.error`](cfurlenumeratorresult/error.md), the user info dictionary of `error` is populated with the following entries (when possible):
 
 - The [`kCFErrorUnderlyingErrorKey`](kcferrorunderlyingerrorkey.md) entry is populated with the underlying error if the underlying error is not in the [`kCFErrorDomainCocoa`](kcferrordomaincocoa.md) domain.
-- The [`NSURLErrorKey`](https://developer.apple.com/documentation/Foundation/NSURLErrorKey) entry is populated with the URL that caused the error, as a [`CFURL`](cfurl.md) object.
-- The [`NSFilePathErrorKey`](https://developer.apple.com/documentation/Foundation/NSFilePathErrorKey) entry is populated with the file path that caused the error, as a [`CFString`](cfstring.md) object.
+- The [`NSURLErrorKey`](https://developer.apple.com/documentation/foundation/nsurlerrorkey) entry is populated with the URL that caused the error, as a [`CFURL`](cfurl.md) object.
+- The [`NSFilePathErrorKey`](https://developer.apple.com/documentation/foundation/nsfilepatherrorkey) entry is populated with the file path that caused the error, as a [`CFString`](cfstring.md) object.
 
 ## Parameters
 

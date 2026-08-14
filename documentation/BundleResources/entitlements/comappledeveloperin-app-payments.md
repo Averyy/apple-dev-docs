@@ -19,7 +19,7 @@ A list of merchant IDs your app uses for Apple Pay support.
 
 The value for this key is an array of strings containing the merchant IDs—typically in reverse domain name notation, starting with the string ‘`merchant`’.
 
-To add this entitlement, enable the Apple Pay capability in Xcode and select the merchant IDs you want to use in your app. Alternatively, see [`Setting up Apple Pay`](https://developer.apple.com/documentation/PassKit/setting-up-apple-pay) for how to create merchant IDs in your developer account.
+To add this entitlement, enable the Apple Pay capability in Xcode and select the merchant IDs you want to use in your app. Alternatively, see [`Setting up Apple Pay`](https://developer.apple.com/documentation/passkit/setting-up-apple-pay) for how to create merchant IDs in your developer account.
 
 ## See Also
 

@@ -10,13 +10,13 @@ Enable players to voice chat with all, or groups of, players in a multiplayer ga
 
 Use the [`GKVoiceChat`](gkvoicechat.md) class to implement voice communication among players in a multiplayer game. Enable the player to communicate with all players in a group chat or a subset of players using separate audio channels. GameKit handles the low-level voice encoding and transmission for you; you add the controls to choose players, start and stop chats, mute players, and change the volume.
 
-To learn about audio channels, see the [`AVFAudio`](https://developer.apple.com/documentation/AVFAudio) framework.
+To learn about audio channels, see the [`AVFAudio`](https://developer.apple.com/documentation/avfaudio) framework.
 
 > **Note**:  A player can only participate in voice chat when their device has a microphone and it’s connected to a Wi-Fi network. But, your game can configure and start voice chat when the device isn’t currently capable of using voice chat. If conditions change to allow voice chat — for example, the device connects to Wi-Fi — the voice chat object automatically connects to the associated channel.
 
 ##### Configure Voice Chat
 
-To configure voice chat, add the [`NSMicrophoneUsageDescription`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSMicrophoneUsageDescription) key to the Information Property List in your project. Set it to a string that GameKit presents to the player when your game attempts to access the microphone. The string needs to state the reason your game needs access to the microphone. If the user doesn’t allow access, when you attempt to start voice chat, it fails with an error.
+To configure voice chat, add the [`NSMicrophoneUsageDescription`](https://developer.apple.com/documentation/bundleresources/information-property-list/nsmicrophoneusagedescription) key to the Information Property List in your project. Set it to a string that GameKit presents to the player when your game attempts to access the microphone. The string needs to state the reason your game needs access to the microphone. If the user doesn’t allow access, when you attempt to start voice chat, it fails with an error.
 
 Next, activate the system audio so that GameKit can use the default audio session for voice chat.
 
@@ -51,7 +51,7 @@ voiceChat?.volume = 0.5
 voiceChat?.start()
 ```
 
-The first time your game accesses the microphone on the player’s device, the system presents a dialog to the user that displays the reason your app wants permission to use the microphone. If you don’t provide a reason that the system presents to the player or the player doesn’t grant permission, GameKit won’t start the channel. To provide a reason, add the [`NSMicrophoneUsageDescription`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSMicrophoneUsageDescription) key to the Information Property List.
+The first time your game accesses the microphone on the player’s device, the system presents a dialog to the user that displays the reason your app wants permission to use the microphone. If you don’t provide a reason that the system presents to the player or the player doesn’t grant permission, GameKit won’t start the channel. To provide a reason, add the [`NSMicrophoneUsageDescription`](https://developer.apple.com/documentation/bundleresources/information-property-list/nsmicrophoneusagedescription) key to the Information Property List.
 
 If the player grants permission, the voice chat object connects to the channel and GameKit notifies other players connected to the channel that the player joined the chat. When the player is connected, GameKit automatically plays voice data from other players.
 

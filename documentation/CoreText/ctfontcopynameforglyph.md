@@ -22,7 +22,7 @@ func CTFontCopyNameForGlyph(_ font: CTFont, _ glyph: CGGlyph) -> CFString?
 
 #### Return Value
 
-The glyph name as a [`CFString`](https://developer.apple.com/documentation/CoreFoundation/CFString), or `NULL` if the glyph is invalid.
+The glyph name as a [`CFString`](https://developer.apple.com/documentation/corefoundation/cfstring), or `NULL` if the glyph is invalid.
 
 ## Parameters
 

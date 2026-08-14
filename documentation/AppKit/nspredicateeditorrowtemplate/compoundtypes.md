@@ -16,7 +16,7 @@ var compoundTypes: [NSNumber]? { get }
 
 #### Return Value
 
-An array of [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) objects specifying compound predicate types. See [`NSCompoundPredicate.LogicalType`](https://developer.apple.com/documentation/Foundation/NSCompoundPredicate/LogicalType) for possible values.
+An array of [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) objects specifying compound predicate types. See [`NSCompoundPredicate.LogicalType`](https://developer.apple.com/documentation/foundation/nscompoundpredicate/logicaltype) for possible values.
 
 ## See Also
 

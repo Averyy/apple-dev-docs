@@ -16,7 +16,7 @@ Classify various sounds by analyzing audio files or streams.
 
 #### Overview
 
-Identify specific sounds in your app, such as laughter or applause, by creating an [`SNClassifySoundRequest`](snclassifysoundrequest.md) to analyze an audio file or stream. Sound requests can identify over 300 sounds. Alternatively, you identify a custom set of sounds by providing the sound request with a custom Core ML model. You train a custom sound classification model by creating an [`MLSoundClassifier`](https://developer.apple.com/documentation/CreateML/MLSoundClassifier) with audio data in [`Create ML`](https://developer.apple.com/documentation/CreateML).
+Identify specific sounds in your app, such as laughter or applause, by creating an [`SNClassifySoundRequest`](snclassifysoundrequest.md) to analyze an audio file or stream. Sound requests can identify over 300 sounds. Alternatively, you identify a custom set of sounds by providing the sound request with a custom Core ML model. You train a custom sound classification model by creating an [`MLSoundClassifier`](https://developer.apple.com/documentation/createml/mlsoundclassifier) with audio data in [`Create ML`](https://developer.apple.com/documentation/createml).
 
 ## Topics
 

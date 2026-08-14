@@ -17,7 +17,7 @@ A string name of the alternative browser engine that your app embeds.
 
 If your app isn’t a browser app, but embeds an alternative browser engine, add this property to your app’s target in Xcode and set the value to the name of the alternative browser engine.
 
-For more information, see [`Creating browser extensions in Xcode`](https://developer.apple.com/documentation/BrowserEngineKit/creating-browser-extensions-in-xcode).
+For more information, see [`Creating browser extensions in Xcode`](https://developer.apple.com/documentation/browserenginekit/creating-browser-extensions-in-xcode).
 
 ## See Also
 

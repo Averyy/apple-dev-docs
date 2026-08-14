@@ -20,7 +20,7 @@ var cumulativeBackgroundTaskAssertionTimeoutExitCount: Int { get }
 
 #### Discussion
 
-This exit usually occurs when the app fails to call [`endBackgroundTask(_:)`](https://developer.apple.com/documentation/UIKit/UIApplication/endBackgroundTask(_:)) as soon as a background task is complete.
+This exit usually occurs when the app fails to call [`endBackgroundTask(_:)`](https://developer.apple.com/documentation/uikit/uiapplication/endbackgroundtask(_:)) as soon as a background task is complete.
 
 
 ---

@@ -21,7 +21,7 @@ If your code uses pointer arithmetic, mask out bits 56–59 of pointers, which c
 
 If your code stores data in those bits of pointers, store than data elsewhere to avoid interfering with the tag.
 
-For more information, see [`Enabling enhanced security for your app`](https://developer.apple.com/documentation/Xcode/enabling-enhanced-security-for-your-app).
+For more information, see [`Enabling enhanced security for your app`](https://developer.apple.com/documentation/xcode/enabling-enhanced-security-for-your-app).
 
 Hardware memory tagging and other memory-related features have dependencies on specific keys. If you are manually adding entitlements, be sure to add all necessary keys.
 

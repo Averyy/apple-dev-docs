@@ -26,7 +26,7 @@ A dictionary containing the last fetched or saved values of the receiver for the
 
 #### Discussion
 
-`nil` values are represented by an instance of [`NSNull`](https://developer.apple.com/documentation/Foundation/NSNull).
+`nil` values are represented by an instance of [`NSNull`](https://developer.apple.com/documentation/foundation/nsnull).
 
 This method only reports values of properties that are defined as persistent properties of the receiver, not values of transient properties or of custom instance variables.
 

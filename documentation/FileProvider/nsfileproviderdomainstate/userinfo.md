@@ -21,14 +21,14 @@ var userInfo: [AnyHashable : Any] { get }
 
 #### Discussion
 
-Use this dictionary to add state information to the domain. You can then access the [`userInfo`](nsfileproviderdomainstate/userinfo.md) dictionary in predicates for user interactions, file provider actions, and [`File Provider UI`](https://developer.apple.com/documentation/FileProviderUI) actions using the `domainUserInfo` context key.
+Use this dictionary to add state information to the domain. You can then access the [`userInfo`](nsfileproviderdomainstate/userinfo.md) dictionary in predicates for user interactions, file provider actions, and [`File Provider UI`](https://developer.apple.com/documentation/fileproviderui) actions using the `domainUserInfo` context key.
 
 This dictionary must only contain the following types for both its keys and values:
 
-- [`NSString`](https://developer.apple.com/documentation/Foundation/NSString)
-- [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber)
-- [`NSDate`](https://developer.apple.com/documentation/Foundation/NSDate)
-- [`NSPersonNameComponents`](https://developer.apple.com/documentation/Foundation/NSPersonNameComponents)
+- [`NSString`](https://developer.apple.com/documentation/foundation/nsstring)
+- [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber)
+- [`NSDate`](https://developer.apple.com/documentation/foundation/nsdate)
+- [`NSPersonNameComponents`](https://developer.apple.com/documentation/foundation/nspersonnamecomponents)
 
 The system expects you to update the `domainVersion` whenever the value of the [`userInfo`](nsfileproviderdomainstate/userinfo.md) dictionary changes.
 

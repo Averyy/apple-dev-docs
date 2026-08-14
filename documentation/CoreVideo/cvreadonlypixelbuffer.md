@@ -33,16 +33,16 @@ final class CVReadOnlyPixelBuffer
 ## Relationships
 
 ### Conforms To
-- [CMSampleBuffer.Content](../CoreMedia/CMSampleBuffer/Content.md)
-- [CMSampleBuffer.ContentWithFormatDescription](../CoreMedia/CMSampleBuffer/ContentWithFormatDescription.md)
+- [CMSampleBuffer.Content](../coremedia/cmsamplebuffer/content.md)
+- [CMSampleBuffer.ContentWithFormatDescription](../coremedia/cmsamplebuffer/contentwithformatdescription.md)
 - [CVBufferRepresentable](cvbufferrepresentable.md)
 - [CVImageBufferRepresentable](cvimagebufferrepresentable.md)
 - [CVPixelBufferRepresentable](cvpixelbufferrepresentable.md)
-- [Copyable](../Swift/Copyable.md)
-- [Escapable](../Swift/Escapable.md)
-- [InferenceValue.ViewRepresentable](../CoreAI/InferenceValue/ViewRepresentable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Copyable](../swift/copyable.md)
+- [Escapable](../swift/escapable.md)
+- [InferenceValue.ViewRepresentable](../coreai/inferencevalue/viewrepresentable.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

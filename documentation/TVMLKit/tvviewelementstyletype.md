@@ -18,19 +18,19 @@ enum TVViewElementStyleType
 
 ### Constants
 - [TVViewElementStyleType.integer](tvviewelementstyletype/integer.md)
-  An [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) value.
+  An [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) value.
 - [TVViewElementStyleType.double](tvviewelementstyletype/double.md)
-  An [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) value.
+  An [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) value.
 - [TVViewElementStyleType.point](tvviewelementstyletype/point.md)
-  A [`CGPoint`](https://developer.apple.com/documentation/CoreFoundation/CGPoint) value.
+  A [`CGPoint`](https://developer.apple.com/documentation/corefoundation/cgpoint) value.
 - [TVViewElementStyleType.string](tvviewelementstyletype/string.md)
-  A [`NSString`](https://developer.apple.com/documentation/Foundation/NSString) value.
+  A [`NSString`](https://developer.apple.com/documentation/foundation/nsstring) value.
 - [TVViewElementStyleType.color](tvviewelementstyletype/color.md)
   A [`TVColor`](tvcolor.md) value.
 - [TVViewElementStyleType.URL](tvviewelementstyletype/url.md)
-  A [`NSURL`](https://developer.apple.com/documentation/Foundation/NSURL) value.
+  A [`NSURL`](https://developer.apple.com/documentation/foundation/nsurl) value.
 - [TVViewElementStyleType.edgeInsets](tvviewelementstyletype/edgeinsets.md)
-  An [`UIEdgeInsets`](https://developer.apple.com/documentation/UIKit/UIEdgeInsets) value.
+  An [`UIEdgeInsets`](https://developer.apple.com/documentation/uikit/uiedgeinsets) value.
 ### Enumeration Cases
 - [TVViewElementStyleType.transform](tvviewelementstyletype/transform.md)
 ### Initializers
@@ -39,12 +39,12 @@ enum TVViewElementStyleType
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../Swift/BitwiseCopyable.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [RawRepresentable](../Swift/RawRepresentable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [BitwiseCopyable](../swift/bitwisecopyable.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [RawRepresentable](../swift/rawrepresentable.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

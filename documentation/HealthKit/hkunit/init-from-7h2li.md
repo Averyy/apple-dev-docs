@@ -25,7 +25,7 @@ A HealthKit unit object, or `nil` if the unit parameter is not a valid energy fo
 
 ## Parameters
 
-- `massFormatterUnit`: A valid mass formatter unit value. For a list of possible mass formatter unit values, see [`MassFormatter.Unit`](https://developer.apple.com/documentation/Foundation/MassFormatter/Unit).
+- `massFormatterUnit`: A valid mass formatter unit value. For a list of possible mass formatter unit values, see [`MassFormatter.Unit`](https://developer.apple.com/documentation/foundation/massformatter/unit).
 
 ## See Also
 

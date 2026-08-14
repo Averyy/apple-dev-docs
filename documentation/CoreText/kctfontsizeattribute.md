@@ -22,7 +22,7 @@ let kCTFontSizeAttribute: CFString
 
 #### Discussion
 
-Creating a font with this unspecified will default to a point size of 12.0. The value for this key is represented as a [`CFNumber`](https://developer.apple.com/documentation/CoreFoundation/CFNumber) object.
+Creating a font with this unspecified will default to a point size of 12.0. The value for this key is represented as a [`CFNumber`](https://developer.apple.com/documentation/corefoundation/cfnumber) object.
 
 ## See Also
 

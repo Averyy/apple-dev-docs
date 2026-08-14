@@ -7,7 +7,6 @@ Fingerprint that can be used to verify the integrity of the media referred to by
 
 **Availability**:
 - iOS 26.0+
-- iPadOS 26.0+
 
 ## Declaration
 

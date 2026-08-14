@@ -28,7 +28,7 @@ Alternatively, you can also [`pair with the device using Xcode`](https://develop
 
 #### Inspecting Javascript and Tvml in Apps
 
-[`JSContext`](https://developer.apple.com/documentation/JavaScriptCore/JSContext)s in apps can be made inspectable, allowing any user who enables **Web Inspector** on the device to inspect them. When content in an application is inspectable it will appear in a submenu for the connected device of the *Develop* menu of Safari on a connected Mac. webpages (and other content) is separated by app, making it easier to find the webpage you want to inspect.
+[`JSContext`](https://developer.apple.com/documentation/javascriptcore/jscontext)s in apps can be made inspectable, allowing any user who enables **Web Inspector** on the device to inspect them. When content in an application is inspectable it will appear in a submenu for the connected device of the *Develop* menu of Safari on a connected Mac. webpages (and other content) is separated by app, making it easier to find the webpage you want to inspect.
 
 Learn more about [`Enabling inspecting content in your apps`](enabling-inspecting-content-in-your-apps.md).
 

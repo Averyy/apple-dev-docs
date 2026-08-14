@@ -30,9 +30,9 @@ This filter produces a tiled image from a source image by applying a six-way ref
 The six-fold reflected tile filter uses the following properties:
 
 - **`inputImage`**: An image with the type [`CIImage`](ciimage.md).
-- **`center`**: A set of coordinates marking the center of the image as a [`CGPoint`](https://developer.apple.com/documentation/CoreFoundation/CGPoint).
-- **`angle`**: A `float` representing the direction of distortion , in radians as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
-- **`width`**: A `float` representing the set width of each tile as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+- **`center`**: A set of coordinates marking the center of the image as a [`CGPoint`](https://developer.apple.com/documentation/corefoundation/cgpoint).
+- **`angle`**: A `float` representing the direction of distortion , in radians as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
+- **`width`**: A `float` representing the set width of each tile as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
 
 The following code creates a filter that results in a six-fold pattern repeated and angled for distortion:
 
@@ -47,7 +47,7 @@ func sixFoldReflected(inputImage: CIImage) -> CIImage {
 }
 ```
 
-![Two photographs. The photo on the left is of a bouquet of colorful flowers up close with good lighting and focus. In the photo on the right, a six-fold reflected tile filter is applied, resulting in triangles, each with a portion of the image containing white and purple petals, tiled throughout the entire photo.](https://docs-assets.developer.apple.com/published/ba9b2b0b4658e526cc5879ec352c051a/media-3599882%402x.png)
+![Two photographs. The photo on the left is of a bouquet of colorful flowers up close with good lighting and focus. In the photo on the right, a six-fold reflected tile filter is applied, resulting in triangles, each with a portion of the image containing white and purple petals, tiled throughout the entire photo.](/images/com.apple.coreimage/media-3599882@2x.png)
 
 ## See Also
 

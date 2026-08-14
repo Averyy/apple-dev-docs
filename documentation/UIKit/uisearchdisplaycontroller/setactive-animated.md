@@ -22,8 +22,8 @@ When the user focus in the search field of a managed search bar, the search disp
 
 ## Parameters
 
-- `visible`: [`true`](https://developer.apple.com/documentation/Swift/true) to display the search interface if it is not already displayed; [`false`](https://developer.apple.com/documentation/Swift/false) to hide the search interface if it is currently displayed.
-- `animated`: [`true`](https://developer.apple.com/documentation/Swift/true) to use animation for a change in visible state, otherwise [`false`](https://developer.apple.com/documentation/Swift/false).
+- `visible`: [`true`](https://developer.apple.com/documentation/swift/true) to display the search interface if it is not already displayed; [`false`](https://developer.apple.com/documentation/swift/false) to hide the search interface if it is currently displayed.
+- `animated`: [`true`](https://developer.apple.com/documentation/swift/true) to use animation for a change in visible state, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
 
 ## See Also
 

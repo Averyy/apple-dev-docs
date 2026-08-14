@@ -11,7 +11,7 @@ framework: HIG
 
 The Siri Remote is the primary input method for Apple TV, helping people feel connected to onscreen content from across the room.
 
-![A sketch of an Apple TV remote, suggesting interaction with onscreen content. The image is overlaid with rectangular and circular grid lines and is tinted purple to subtly reflect the purple in the original six-color Apple logo.](https://docs-assets.developer.apple.com/published/41e71ca92f40b6d3a7915551838a1874/inputs-remotes-intro~dark%402x.png)
+![A sketch of an Apple TV remote, suggesting interaction with onscreen content. The image is overlaid with rectangular and circular grid lines and is tinted purple to subtly reflect the purple in the original six-color Apple logo.](/images/com.apple.HIG/inputs-remotes-intro~dark@2x.png)
 In addition to several specific buttons, the Siri Remote combines a clickpad and touch surface to support familiar gestures like swipe and press that people use to navigate tvOS apps, browse channels and content, play and pause media, and make selections.
 
 ## Best practices
@@ -40,7 +40,7 @@ Ensure that your app or game responds to specific presses in the following ways.
 
 
 ## Compatible remotes
-Some remotes that are compatible with Apple TV include buttons for browsing live TV or other channel-based content. For example, a remote might include a button people can use to open an electronic program guide (EPG) and other buttons they can use to browse the guide or change channels. For developer guidance, see [Providing Channel Navigation](../TVServices/providing-channel-navigation.md); for design guidance, see [EPG experience](live-viewing-apps.md#EPG-experience).
+Some remotes that are compatible with Apple TV include buttons for browsing live TV or other channel-based content. For example, a remote might include a button people can use to open an electronic program guide (EPG) and other buttons they can use to browse the guide or change channels. For developer guidance, see [Providing Channel Navigation](../tvservices/providing-channel-navigation.md); for design guidance, see [EPG experience](live-viewing-apps.md#EPG-experience).
 **If your live-viewing app provides an EPG, respond to a remote’s EPG-browsing buttons in ways people expect.** When people press a “guide” or “browse” button, they expect your EPG to open. While they’re viewing your EPG, people expect to navigate through it by pressing a “page up” or “page down” button. Avoid responding to these buttons in other ways while people are browsing the EPG. On the Siri Remote and compatible remotes, people can also tap on the upper or lower area of the Touch surface to browse the EPG. If your app doesn’t support an EPG experience, the system routes these button presses to the default guide app on the viewer’s device.
 **While your content plays, respond to a compatible remote’s “page up” or “page down” button by changing the channel.** People expect these buttons to behave differently when they switch between viewing content and browsing an EPG.
 

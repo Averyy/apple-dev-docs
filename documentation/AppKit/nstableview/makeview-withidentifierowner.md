@@ -24,7 +24,7 @@ Typically, `identifier` is associated with a cell view that’s contained in a t
 
 This method may also return a reused view with the same `identifier` that is no longer available on screen. If a view with the specified identifier can’t be instantiated from the nib file or found in the reuse queue, this method returns `nil`.
 
-This method is usually called by the delegate in [`tableView(_:viewFor:row:)`](nstableviewdelegate/tableview(_:viewfor:row:).md), but it can also be overridden to provide custom views for the `identifier`. Note that [`awakeFromNib()`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class/awakeFromNib()) is called each time this method is called, which means that `awakeFromNib` is also called on `owner`, even though the owner is already awake.
+This method is usually called by the delegate in [`tableView(_:viewFor:row:)`](nstableviewdelegate/tableview(_:viewfor:row:).md), but it can also be overridden to provide custom views for the `identifier`. Note that [`awakeFromNib()`](https://developer.apple.com/documentation/objectivec/nsobject-swift.class/awakefromnib()) is called each time this method is called, which means that `awakeFromNib` is also called on `owner`, even though the owner is already awake.
 
 ## Parameters
 

@@ -20,9 +20,9 @@ func associateAppEntity<Entity>(_ appEntity: Entity, priority: Int = 0) where En
 
 #### Discussion
 
-If your app has an [`AppEntity`](https://developer.apple.com/documentation/AppIntents/AppEntity) object that equates to the [`CSSearchableItem`](cssearchableitem.md) you’re creating, use this method to connect the two objects. When your searchable item appears in search results, Spotlight can use the provided entity to perform related actions. For example, it can ask your app to open the entity and display its content.
+If your app has an [`AppEntity`](https://developer.apple.com/documentation/appintents/appentity) object that equates to the [`CSSearchableItem`](cssearchableitem.md) you’re creating, use this method to connect the two objects. When your searchable item appears in search results, Spotlight can use the provided entity to perform related actions. For example, it can ask your app to open the entity and display its content.
 
-For additional information about the relationship between searchable items and entities, see [`Making app entities available in Spotlight`](https://developer.apple.com/documentation/AppIntents/making-app-entities-available-in-spotlight).
+For additional information about the relationship between searchable items and entities, see [`Making app entities available in Spotlight`](https://developer.apple.com/documentation/appintents/making-app-entities-available-in-spotlight).
 
 ## Parameters
 

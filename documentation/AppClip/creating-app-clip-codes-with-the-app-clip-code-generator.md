@@ -29,7 +29,7 @@ To download and install the App Clip Code Generator, visit [`App Clips Resources
 
 App Clip Codes use three different colors: a foreground color and a background color you choose, and a third color that the command-line tool generates for you based on the other two colors. To ensure that users can reliably scan the App Clip Code, the color combination must offer enough contrast. Apple offers default color templates to help you choose a color pair.
 
-![Illustration of an App Clip Code with callouts for background, foreground, and generated colors.](https://docs-assets.developer.apple.com/published/43bb6f81cb86f8b97a45af95fd284152/media-3706534%402x.png)
+![Illustration of an App Clip Code with callouts for background, foreground, and generated colors.](/images/com.apple.appclip/media-3706534@2x.png)
 
 To see the list of default color pairs, open the Terminal app and run the `templates` command:
 
@@ -162,7 +162,7 @@ Replace the placeholders with the actual file and directory names. If you used t
 
 Doing so generates four App Clip Codes using the data in the CSV file and saves them in the `GeneratedCodes` directory. 5. Review the generated App Clip Codes, then modify the `sample_list.csv` file as necessary to generate your App Clip Codes. Note that for the script to work, you can’t change the names of the CSV file’s fields.
 
-![Screenshot of a Finder window that shows the file structure of a directory named AppClipCodes. The folder contains files you copied from the Scripts folder. It also contains a new directory named GeneratedCodes that contains generated App Clip Codes.](https://docs-assets.developer.apple.com/published/c89a60427bde7627ab0382ce610a15fb/media-3706526%402x.png)
+![Screenshot of a Finder window that shows the file structure of a directory named AppClipCodes. The folder contains files you copied from the Scripts folder. It also contains a new directory named GeneratedCodes that contains generated App Clip Codes.](/images/com.apple.appclip/media-3706526@2x.png)
 
 ## See Also
 

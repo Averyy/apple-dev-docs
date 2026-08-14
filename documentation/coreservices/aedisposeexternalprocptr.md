@@ -39,8 +39,8 @@ After you are finished with your dispose callback function, you can dispose of t
 ## Parameters
 
 - `dataPtr`: A pointer to the data to be disposed of. The data must be immutable and must not be freed until this callback function is called.
-- `dataLength`: The length, in bytes, of the data in the   parameter.
-- `refcon`: A reference constant, supplied by your application in its original call to  . The Apple Event Manager passes this value to your dispose function each time it calls it. The reference constant may have a value of 0.
+- `dataLength`: The length, in bytes, of the data in the `dataPtr` parameter.
+- `refcon`: A reference constant, supplied by your application in its original call to [`AECreateDescFromExternalPtr(_:_:_:_:_:_:)`](1446239-aecreatedescfromexternalptr.md). The Apple Event Manager passes this value to your dispose function each time it calls it. The reference constant may have a value of 0.
 
 ## See Also
 

@@ -38,7 +38,7 @@ struct MKError
 - [MKError.Code](mkerror/code.md)
   Error constants for the MapKit framework.
 ### Accessing error properties
-- [var localizedDescription: String](../Swift/Error/localizedDescription.md)
+- [var localizedDescription: String](../swift/error/localizeddescription.md)
   Retrieve the localized description for this error.
 - [static var errorDomain: String](mkerror/errordomain.md)
   The error domain.
@@ -46,12 +46,12 @@ struct MKError
 ## Relationships
 
 ### Conforms To
-- [CustomNSError](../Foundation/CustomNSError.md)
-- [Equatable](../Swift/Equatable.md)
-- [Error](../Swift/Error.md)
-- [Hashable](../Swift/Hashable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [CustomNSError](../foundation/customnserror.md)
+- [Equatable](../swift/equatable.md)
+- [Error](../swift/error.md)
+- [Hashable](../swift/hashable.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

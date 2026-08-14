@@ -23,7 +23,7 @@ The tint shape style to apply to map content.
 
 #### Return Value
 
-Returns [`MapContent`](mapcontent.md) with overlays drawn with the [`ShapeStyle`](https://developer.apple.com/documentation/SwiftUI/ShapeStyle) you specified.
+Returns [`MapContent`](mapcontent.md) with overlays drawn with the [`ShapeStyle`](https://developer.apple.com/documentation/swiftui/shapestyle) you specified.
 
 ## Parameters
 

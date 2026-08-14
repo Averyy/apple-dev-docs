@@ -14,7 +14,7 @@ Monitor device activity with your app extension while maintaining privacy.
 
 Device Activity provides a privacy-preserving way for an application to monitor a person’s application and website activity. For instance, you can set up a bedtime schedule that monitors device activity while the person is supposed to be asleep. Your app extension can receive warnings before an activity’s schedule starts or ends, or when an activity is about to reach a predefined threshold. You can monitor the time spent on websites and apps to warn the person once they have reached their threshold.
 
-![A diagram depicting different kinds of device activity the framework can monitor. On the left are three icons in a vertical row, including an App store icon, a Settings icon, and a Safari icon. All three icons have arrows pointing to a clock.](https://docs-assets.developer.apple.com/published/c79b787bbcf2be82c54de00a0ec7610c/device-activity-overview%402x.png)
+![A diagram depicting different kinds of device activity the framework can monitor. On the left are three icons in a vertical row, including an App store icon, a Settings icon, and a Safari icon. All three icons have arrows pointing to a clock.](/images/com.apple.DeviceActivity/device-activity-overview@2x.png)
 
 ## Topics
 

@@ -18,7 +18,7 @@ optional func peoplePickerNavigationController(_ peoplePicker: ABPeoplePickerNav
 
 #### Discussion
 
-This method is called with an identifier. If you need an index, use the [`ABMultiValueGetIndexForIdentifier(_:_:)`](https://developer.apple.com/documentation/AddressBook/ABMultiValueGetIndexForIdentifier(_:_:)) function to get the corresponding index.
+This method is called with an identifier. If you need an index, use the [`ABMultiValueGetIndexForIdentifier(_:_:)`](https://developer.apple.com/documentation/addressbook/abmultivaluegetindexforidentifier(_:_:)) function to get the corresponding index.
 
 ## Parameters
 

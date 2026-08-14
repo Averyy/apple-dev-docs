@@ -16,7 +16,7 @@ let FSKitErrorDomain: String
 
 #### Discussion
 
-See [`NSError`](https://developer.apple.com/documentation/Foundation/NSError) for more information on error domains.
+See [`NSError`](https://developer.apple.com/documentation/foundation/nserror) for more information on error domains.
 
 ## See Also
 

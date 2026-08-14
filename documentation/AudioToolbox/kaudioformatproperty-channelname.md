@@ -21,7 +21,7 @@ var kAudioFormatProperty_ChannelName: AudioFormatPropertyID { get }
 
 #### Discussion
 
-The name for a particular channel. The specifier is an [`AudioChannelDescription`](https://developer.apple.com/documentation/CoreAudioTypes/AudioChannelDescription) structure that has its `mChannelLabel` field set. The value is a [`CFString`](https://developer.apple.com/documentation/CoreFoundation/CFString) opaque type. The caller is responsible for releasing the returned string.
+The name for a particular channel. The specifier is an [`AudioChannelDescription`](https://developer.apple.com/documentation/coreaudiotypes/audiochanneldescription) structure that has its `mChannelLabel` field set. The value is a [`CFString`](https://developer.apple.com/documentation/corefoundation/cfstring) opaque type. The caller is responsible for releasing the returned string.
 
 ## See Also
 

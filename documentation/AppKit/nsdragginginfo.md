@@ -72,7 +72,7 @@ You invoke the [`NSDraggingInfo`](nsdragginginfo.md) protocol methods from withi
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

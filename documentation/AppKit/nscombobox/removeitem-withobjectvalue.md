@@ -16,11 +16,11 @@ func removeItem(withObjectValue object: Any)
 
 #### Discussion
 
-This method logs a warning if the [`usesDataSource`](nscombobox/usesdatasource.md) property is [`true`](https://developer.apple.com/documentation/Swift/true).
+This method logs a warning if the [`usesDataSource`](nscombobox/usesdatasource.md) property is [`true`](https://developer.apple.com/documentation/swift/true).
 
 ## Parameters
 
-- `object`: The object to remove from the internal item list. Objects are considered equal if they have the same id or if `isEqual:` returns [`true`](https://developer.apple.com/documentation/Swift/true).
+- `object`: The object to remove from the internal item list. Objects are considered equal if they have the same id or if `isEqual:` returns [`true`](https://developer.apple.com/documentation/swift/true).
 
 ## See Also
 

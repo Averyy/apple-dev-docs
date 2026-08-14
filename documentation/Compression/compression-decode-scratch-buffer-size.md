@@ -34,7 +34,7 @@ This function returns the number of bytes to provide in an optional scratch buff
 
 ## See Also
 
-- [Compressing and decompressing data with buffer compression](../Accelerate/compressing-and-decompressing-data-with-buffer-compression.md)
+- [Compressing and decompressing data with buffer compression](../accelerate/compressing-and-decompressing-data-with-buffer-compression.md)
   Compress a string, write it to the file system, and decompress the same file using buffer compression.
 - [func compression_encode_scratch_buffer_size(compression_algorithm) -> Int](compression_encode_scratch_buffer_size(_:).md)
   Returns the required compression scratch buffer size for the selected algorithm.

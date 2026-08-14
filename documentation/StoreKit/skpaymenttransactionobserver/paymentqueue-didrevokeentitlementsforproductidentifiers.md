@@ -39,11 +39,11 @@ For products with Family Sharing enabled, the following conditions may trigger t
 
 By leaving a family group, or disabling sharing in any of the ways listed above, family members are no longer entitled to family-shared purchases. The `productIdentifiers` parameter contains the revoked product IDs. Your app needs to check the receipt on the device, which the system automatically updates prior to calling this method, and provide the correct level of access for the in-app purchases.
 
-If you receive [`App Store Server Notifications`](https://developer.apple.com/documentation/AppStoreServerNotifications), your server receives a [`notificationType`](https://developer.apple.com/documentation/AppStoreServerNotifications/notificationType) `REVOKE` for the family member when the conditions listed above occur.
+If you receive [`App Store Server Notifications`](https://developer.apple.com/documentation/appstoreservernotifications), your server receives a [`notificationType`](https://developer.apple.com/documentation/appstoreservernotifications/notificationtype) `REVOKE` for the family member when the conditions listed above occur.
 
 > ❗ **Important**:  Always check the receipt to determine the users’s correct level of access for the product. A user may lose access through Family Sharing, but may have purchased the product directly.
 
-StoreKit also calls this method in the purchaser’s app when the purchaser receives a refund for a non-consumable or an auto-renewable subscription, regardless if the product is shared with the family. If you receive [`App Store Server Notifications`](https://developer.apple.com/documentation/AppStoreServerNotifications), your server receives a [`notificationType`](https://developer.apple.com/documentation/AppStoreServerNotifications/notificationType) `REFUND` for the purchaser.
+StoreKit also calls this method in the purchaser’s app when the purchaser receives a refund for a non-consumable or an auto-renewable subscription, regardless if the product is shared with the family. If you receive [`App Store Server Notifications`](https://developer.apple.com/documentation/appstoreservernotifications), your server receives a [`notificationType`](https://developer.apple.com/documentation/appstoreservernotifications/notificationtype) `REFUND` for the purchaser.
 
 If you use server-side receipt validation with the App Store, call your server to reprocess the receipt and update your purchase records.
 

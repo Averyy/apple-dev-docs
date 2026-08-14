@@ -52,7 +52,7 @@ A lazy horizontal grid sets the width of each column based on the widest cell in
 
 However, a lazy horizontal grid doesn’t generally have access to all the views in a row, because it generates new cells as people scroll through information in your app. Instead, it relies on a grid item for information about each row. The example above indicates a different fixed height for each row, and sets a different amount of spacing to appear after each row:
 
-![A screenshot of a grid of rectangles arranged in four rows and a large](https://docs-assets.developer.apple.com/published/ff94e7d6f74fa48a46bcef0b7636b5f4/GridItem-1-iOS%402x.png)
+![A screenshot of a grid of rectangles arranged in four rows and a large](/images/com.apple.SwiftUI/GridItem-1-iOS@2x.png)
 
 ## Topics
 
@@ -72,9 +72,9 @@ However, a lazy horizontal grid doesn’t generally have access to all the views
 ## Relationships
 
 ### Conforms To
-- [Equatable](../Swift/Equatable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Equatable](../swift/equatable.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

@@ -25,7 +25,7 @@ By default, this method activates the session it creates and the session is read
 ## Parameters
 
 - `machService`: The name of the Mach service to connect to. The service name must exist in the Mach bootstrap accessible to the process and advertised in a `launchd.plist`.
-- `targetQueue`: The dispatch queue to use for session events. You can specify a concurrent dispatch queue. If you specify [`nil`](https://developer.apple.com/documentation/ObjectiveC/nil-227m0), the session uses `DISPATCH_TARGET_QUEUE_DEFAULT`.
+- `targetQueue`: The dispatch queue to use for session events. You can specify a concurrent dispatch queue. If you specify [`nil`](https://developer.apple.com/documentation/objectivec/nil-227m0), the session uses `DISPATCH_TARGET_QUEUE_DEFAULT`.
 - `options`: Attributes the session uses when establishing the connection.
 - `incomingMessageHandler`: A closure the system calls when a client initiates a connection to the server.
 - `cancellationHandler`: A closure the system calls when it cancels a session.

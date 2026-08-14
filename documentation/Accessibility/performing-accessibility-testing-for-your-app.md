@@ -8,7 +8,7 @@ Test your app with accessibility settings and assistive technologies to discover
 
 It’s always a good idea to experience your app from the perspective of the people using it. When you test your app from the user’s perspective, make sure you also test with different accessibility settings and assistive technologies like VoiceOver, Voice Control, and Switch Control so you can experience the app in the same way as people who rely on these features. Testing your app with accessibility settings reveals which tasks are possible to complete, which elements are accessible and which aren’t, and whether your navigation is clear and logical for every use case.
 
-![None](https://docs-assets.developer.apple.com/published/54a857292994cb77dc0abc95ea382205/performing-accessibility-testing%402x.png)
+![None](/images/com.apple.Accessibility/performing-accessibility-testing@2x.png)
 
 ##### Identify the Main Tasks in Your App
 
@@ -181,9 +181,9 @@ Address accessibility issues that you discover during testing so that you’re a
 
 ## See Also
 
-- [Accessibility updates](../Updates/Accessibility.md)
+- [Accessibility updates](../updates/accessibility.md)
   Learn about important changes to Accessibility.
-- [Accessibility](https://developer.apple.com/design/Human-Interface-Guidelines/accessibility)
+- [Accessibility](https://developer.apple.com/design/human-interface-guidelines/accessibility)
   Accessible user interfaces empower everyone to have a great experience with your app or game.
 
 

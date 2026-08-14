@@ -33,7 +33,7 @@ You typically use [`MapZoomStepper`](mapzoomstepper.md) with [`Map`](map.md) as 
     }
 ```
 
-You can also use a MapZoomStepper in conjunction with the [`mapControls(_:)`](https://developer.apple.com/documentation/SwiftUI/View/mapControls(_:)) modifier, as show in here:
+You can also use a MapZoomStepper in conjunction with the [`mapControls(_:)`](https://developer.apple.com/documentation/swiftui/view/mapcontrols(_:)) modifier, as show in here:
 
 ```swift
     Map()
@@ -49,24 +49,24 @@ You can also use a MapZoomStepper in conjunction with the [`mapControls(_:)`](ht
   Creates a new zoom stepper with the scope you specify.
 ### Managing map control sizing and visibility
 - [func mapControlVisibility(Visibility) -> some View
-](../SwiftUI/View/mapControlVisibility(_:).md)
+](../swiftui/view/mapcontrolvisibility(_:).md)
   Configures all Map controls in the environment to have the specified visibility
 - [func mapControls(() -> some View) -> some View
-](../SwiftUI/View/mapControls(_:).md)
+](../swiftui/view/mapcontrols(_:).md)
   Configures all `Map` views in the associated environment to have standard size and position controls
-- [func controlSize(_:)](../SwiftUI/View/controlSize(_:).md)
+- [func controlSize(_:)](../swiftui/view/controlsize(_:).md)
   Sets the size for controls within this view.
 ### Setting the namespace identifier
 - [func mapScope(Namespace.ID) -> some View
-](../SwiftUI/View/mapScope(_:).md)
+](../swiftui/view/mapscope(_:).md)
   Creates a mapScope that SwiftUI uses to connect map controls to an associated map.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
-- [View](../SwiftUI/View.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
+- [View](../swiftui/view.md)
 
 ## See Also
 

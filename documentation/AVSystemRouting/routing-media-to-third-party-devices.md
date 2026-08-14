@@ -84,7 +84,7 @@ func configurePlayback(for mediaSession: AVSystemRouteMediaSession) {
 }
 ```
 
-The `playbackControl` property supports [`Observation`](https://developer.apple.com/documentation/Observation) in Swift, allowing SwiftUI views to update automatically as the remote playback state changes.
+The `playbackControl` property supports [`Observation`](https://developer.apple.com/documentation/observation) in Swift, allowing SwiftUI views to update automatically as the remote playback state changes.
 
 Report your playback metadata to `MPNowPlayingInfoCenter` so the system displays accurate now-playing information across the person’s devices.
 

@@ -31,11 +31,11 @@ The `Subtractive Mix` node subtracts two inputs and uses the `Mix` input to dete
 
 Below is an example of a simple node graph that uses the subtractive mix node to blend two images into a single material:
 
-![None](https://docs-assets.developer.apple.com/published/0b2cb1c29296c2d895fde15bce065e41/SubtractiveMixGraph.png)
+![None](/images/ShaderGraph-Docs/SubtractiveMixGraph.png)
 
 Below are two images and the resulting blended texture applied to a cube:
 
-![None](https://docs-assets.developer.apple.com/published/fca33a7dff83ead7e54cef9ff64f0775/SubtractiveMixMaterial.png)
+![None](/images/ShaderGraph-Docs/SubtractiveMixMaterial.png)
 
 ## See Also
 

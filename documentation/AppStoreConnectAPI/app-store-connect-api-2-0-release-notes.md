@@ -20,7 +20,7 @@ App Store Connect API version 2.0 provides resources that enable you to automate
 
 ##### Removals
 
-- App Store Connect APIs for declaring IDFA usage are now removed. In your app, APIs that offer IDFA functionality are still available but require obtaining the user’s permission using [`App Tracking Transparency`](https://developer.apple.com/documentation/AppTrackingTransparency). You may also need to provide information about IDFA usage in your app’s privacy details on the App Store. For more information, see [`User Privacy and Data Use`](https://developer.apple.comhttps://developer.apple.com/app-store/user-privacy-and-data-use/) and [`App Privacy Details`](https://developer.apple.comhttps://developer.apple.com/app-store/app-privacy-details/).
+- App Store Connect APIs for declaring IDFA usage are now removed. In your app, APIs that offer IDFA functionality are still available but require obtaining the user’s permission using [`App Tracking Transparency`](https://developer.apple.com/documentation/apptrackingtransparency). You may also need to provide information about IDFA usage in your app’s privacy details on the App Store. For more information, see [`User Privacy and Data Use`](https://developer.apple.comhttps://developer.apple.com/app-store/user-privacy-and-data-use/) and [`App Privacy Details`](https://developer.apple.comhttps://developer.apple.com/app-store/app-privacy-details/).
 
 ## See Also
 

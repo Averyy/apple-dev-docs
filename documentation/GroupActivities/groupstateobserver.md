@@ -43,7 +43,7 @@ To get the current system state, create a `GroupStateObserver` object and check 
 ## Relationships
 
 ### Conforms To
-- [ObservableObject](../Combine/ObservableObject.md)
+- [ObservableObject](../combine/observableobject.md)
 
 
 ---

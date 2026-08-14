@@ -23,7 +23,7 @@ init(floatLiteral value: Float)
 
 In PBR rendering, the `metallic` property represents the reflectiveness of an entity. This initializer creates a new object from a single value to describe the reflectiveness of the entire material. A value of 0.0 creates a *dielectric* (or non-reflective) material. Values greater than 0.0 result in an increasingly *metallic* (or reflective) materials.
 
-![An illustration showing two spheres rendered in RealityKit. The](https://docs-assets.developer.apple.com/published/ae4a36e0823c65c0745717fb7067de18/PhysicallyBasedMaterial-Metallic-swift-struct-init%28floatLiteral%3A%29-1%402x.png)
+![An illustration showing two spheres rendered in RealityKit. The](/images/com.apple.RealityKit/PhysicallyBasedMaterial-Metallic-swift-struct-init(floatLiteral:)-1@2x.png)
 
 ## Parameters
 

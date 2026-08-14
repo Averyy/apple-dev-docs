@@ -12,14 +12,14 @@ Your app can also manage who can view or share your content using the [`SWAttrib
 
 ##### Adopt Universal Links
 
-Your app uses universal links to share content with other apps. When a user activates a universal link, the system launches your app and sends it an [`NSUserActivity`](https://developer.apple.com/documentation/Foundation/NSUserActivity) object. Query this object to take actions for your shared content.
+Your app uses universal links to share content with other apps. When a user activates a universal link, the system launches your app and sends it an [`NSUserActivity`](https://developer.apple.com/documentation/foundation/nsuseractivity) object. Query this object to take actions for your shared content.
 
 To support universal links in your app:
 
-1. Create a two-way association between your app and your website and specify the URLs that your app handles. See [`Supporting associated domains`](https://developer.apple.com/documentation/Xcode/supporting-associated-domains).
-2. Update your app delegate to respond when it receives an `NSUserActivity` object with the [`activityType`](https://developer.apple.com/documentation/Foundation/NSUserActivity/activityType) set to [`NSUserActivityTypeBrowsingWeb`](https://developer.apple.com/documentation/Foundation/NSUserActivityTypeBrowsingWeb).
+1. Create a two-way association between your app and your website and specify the URLs that your app handles. See [`Supporting associated domains`](https://developer.apple.com/documentation/xcode/supporting-associated-domains).
+2. Update your app delegate to respond when it receives an `NSUserActivity` object with the [`activityType`](https://developer.apple.com/documentation/foundation/nsuseractivity/activitytype) set to [`NSUserActivityTypeBrowsingWeb`](https://developer.apple.com/documentation/foundation/nsuseractivitytypebrowsingweb).
 
-For more information, see [`Supporting universal links in your app`](https://developer.apple.com/documentation/Xcode/supporting-universal-links-in-your-app).
+For more information, see [`Supporting universal links in your app`](https://developer.apple.com/documentation/xcode/supporting-universal-links-in-your-app).
 
 ##### Add Shared with You Capability
 
@@ -27,10 +27,10 @@ To add the Shared with You capability in Xcode, follow these steps:
 
 1. Select your project target.
 2. Select the Signing & Capabilities pane.
-3. Click + Capability to bring up the [`Capabilities`](https://developer.apple.com/documentation/Xcode/capabilities) library.
+3. Click + Capability to bring up the [`Capabilities`](https://developer.apple.com/documentation/xcode/capabilities) library.
 4. Choose the Shared with You capability.
 
-For more information, see [`Adding capabilities to your app`](https://developer.apple.com/documentation/Xcode/adding-capabilities-to-your-app).
+For more information, see [`Adding capabilities to your app`](https://developer.apple.com/documentation/xcode/adding-capabilities-to-your-app).
 
 ##### Add Shared with You Shelf
 

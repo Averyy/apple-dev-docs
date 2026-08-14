@@ -39,7 +39,7 @@ TextField("TouchBar Demo", text: $placeholder)
     }
 ```
 
-![A Touch Bar customization view showing labels assigned to the Touch](https://docs-assets.developer.apple.com/published/cdb67ec595f9e8587676a192396b6286/SwiftUI-touchBarCustomizationLabel%402x.png)
+![A Touch Bar customization view showing labels assigned to the Touch](/images/com.apple.SwiftUI/SwiftUI-touchBarCustomizationLabel@2x.png)
 
 ## Parameters
 

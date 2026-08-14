@@ -21,7 +21,7 @@ true if the bytes were appended successfully, or false if an error occurred.
 ## Parameters
 
 - `bytes`: A pointer to the bytes to add.
-- `withLength`: The number of bytes in the   parameter.
+- `withLength`: The number of bytes in the `bytes` parameter.
 
 
 ---

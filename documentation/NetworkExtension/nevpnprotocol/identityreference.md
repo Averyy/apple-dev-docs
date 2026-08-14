@@ -21,7 +21,7 @@ var identityReference: Data? { get set }
 
 #### Discussion
 
-The keychain item must have the [`kSecClassIdentity`](https://developer.apple.com/documentation/Security/kSecClassIdentity) class. In macOS, the system ignores this property for [`NEVPNProtocolIPSec`](nevpnprotocolipsec.md) objects. On iOS, the system ignores this property for [`NEVPNProtocolIPSec`](nevpnprotocolipsec.md) and [`NEVPNProtocolIKEv2`](nevpnprotocolikev2.md) objects. In these cases where the system ingores this property, set the identity using the [`identityData`](nevpnprotocol/identitydata.md) property.
+The keychain item must have the [`kSecClassIdentity`](https://developer.apple.com/documentation/security/ksecclassidentity) class. In macOS, the system ignores this property for [`NEVPNProtocolIPSec`](nevpnprotocolipsec.md) objects. On iOS, the system ignores this property for [`NEVPNProtocolIPSec`](nevpnprotocolipsec.md) and [`NEVPNProtocolIKEv2`](nevpnprotocolikev2.md) objects. In these cases where the system ingores this property, set the identity using the [`identityData`](nevpnprotocol/identitydata.md) property.
 
 ## See Also
 

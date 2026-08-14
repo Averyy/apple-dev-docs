@@ -16,7 +16,7 @@ language?: string;
 
 #### Discussion
 
-If you set a language ID, the search returns addresses in the selected language, if available, such as, `fr-CA` or `en-GB`. If you don’t provide a language ID, the search object uses the language ID the system provides to the [`init(options)`](mapkit/init.md) call.
+If you set a language ID, the search returns addresses in the selected language, if available, such as, `fr-CA` or `en-GB`. If you don’t provide a language ID, the search object uses the language ID the system provides to the [`init()`](mapkit/init.md) call.
 
 
 ---

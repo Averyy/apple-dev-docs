@@ -24,13 +24,13 @@ Returns an array of items added to the map.
 
 #### Discussion
 
-Use [`addItems(items)`](map/additems.md) to add elements to the map after importing them from [`importGeoJSON(data, callback)`](mapkit/importgeojson.md).
+Use [`addItems()`](map/additems.md) to add elements to the map after importing them from [`importGeoJSON()`](mapkit/importgeojson.md).
 
-This method doesn’t change the map’s visible region. Use [`showItems(items, options)`](map/showitems.md) with the list of items to change the map’s view.
+This method doesn’t change the map’s visible region. Use [`showItems()`](map/showitems.md) with the list of items to change the map’s view.
 
 ## Parameters
 
-- `items`: An array of annotations, overlays, or the data returned from [`importGeoJSON(data, callback)`](mapkit/importgeojson.md) to display on the map.
+- `items`: An array of annotations, overlays, or the data returned from [`importGeoJSON()`](mapkit/importgeojson.md) to display on the map.
 
 ## See Also
 

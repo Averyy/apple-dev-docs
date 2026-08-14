@@ -22,7 +22,7 @@ var stereoViewComponents: CMStereoViewComponents { get }
 
 #### Discussion
 
-In the case of 3D or stereoscopic content, the value contains [`leftEye`](https://developer.apple.com/documentation/CoreMedia/CMStereoViewComponents/leftEye) and [`rightEye`](https://developer.apple.com/documentation/CoreMedia/CMStereoViewComponents/rightEye) components. In the case of monoscopic content, this value is [`kCMStereoView_None`](https://developer.apple.com/documentation/CoreMedia/CMStereoViewComponents/kCMStereoView_None).
+In the case of 3D or stereoscopic content, the value contains [`leftEye`](https://developer.apple.com/documentation/coremedia/cmstereoviewcomponents/lefteye) and [`rightEye`](https://developer.apple.com/documentation/coremedia/cmstereoviewcomponents/righteye) components. In the case of monoscopic content, this value is [`kCMStereoView_None`](https://developer.apple.com/documentation/coremedia/cmstereoviewcomponents/kcmstereoview_none).
 
 ## See Also
 

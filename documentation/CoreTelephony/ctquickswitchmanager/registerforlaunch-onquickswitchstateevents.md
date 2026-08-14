@@ -18,7 +18,7 @@ class func registerForLaunchOnQuickSwitchStateEvents() async throws
 
 #### Discussion
 
-> ❗ **Important**: This only applies to apps that someone has set to be the default messaging or default calling app. For more information on becoming the default messaging app, see [`Preparing your app to be the default messaging app`](https://developer.apple.com/documentation/Messages/Preparing-your-app-to-be-the-default-messaging-app). For more info on becoming the default calling app, see [`Preparing your app to be the default calling app`](https://developer.apple.com/documentation/CallKit/Preparing-your-app-to-be-the-default-calling-app).
+> ❗ **Important**: This only applies to apps that someone has set to be the default messaging or default calling app. For more information on becoming the default messaging app, see [`Preparing your app to be the default messaging app`](https://developer.apple.com/documentation/messages/preparing-your-app-to-be-the-default-messaging-app). For more info on becoming the default calling app, see [`Preparing your app to be the default calling app`](https://developer.apple.com/documentation/callkit/preparing-your-app-to-be-the-default-calling-app).
 
 Call this method when you want to register the current device to receive quick switch event notifications when your app isn’t running.
 

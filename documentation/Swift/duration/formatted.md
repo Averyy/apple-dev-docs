@@ -41,7 +41,7 @@ let style = Duration.TimeFormatStyle(pattern: .hourMinuteSecond(padHourToLength:
 let formatted = duration.formatted(style) // "00:00:02".
 ```
 
-Instead of explicitly initializing styles, you can use `Swift/Duration/TimeFormatStyle/time(pattern:)` or `Swift/Duration/UnitsFormatStyle/units(allowed:width:maximumUnitCount:zeroValueUnits:valueLength:fractionalPart:)` in any call that expects a [`FormatStyle`](https://developer.apple.com/documentation/Foundation/FormatStyle) whose input type is [`Duration`](duration.md). This allows you to rewrite the above example as follows:
+Instead of explicitly initializing styles, you can use `Swift/Duration/TimeFormatStyle/time(pattern:)` or `Swift/Duration/UnitsFormatStyle/units(allowed:width:maximumUnitCount:zeroValueUnits:valueLength:fractionalPart:)` in any call that expects a [`FormatStyle`](https://developer.apple.com/documentation/foundation/formatstyle) whose input type is [`Duration`](duration.md). This allows you to rewrite the above example as follows:
 
 ```swift
 let duration = Duration.seconds(2)

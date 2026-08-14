@@ -20,7 +20,7 @@ Apps that use the `CMMovementDisorderManager` must:
 - Only report on symptoms diagnosed by a clinician or self-reported by the user.
 - Remind the user to wear Apple Watch on their most affected arm in order to collect the most useful data.
 
-> ❗ **Important**:  To use the Movement Disorder API, your app must adhere to the Movement Disorder Program Requirements. For more information, see [`Adhering to the movement disorder data collection requirements`](adhering-to-the-movement-disorder-data-collection-requirements.md). Additionally, your app must follow best practices for handling the user’s health data, as defined by the HealthKit guidelines. For more information, see [`Protecting user privacy`](https://developer.apple.com/documentation/HealthKit/protecting-user-privacy).
+> ❗ **Important**:  To use the Movement Disorder API, your app must adhere to the Movement Disorder Program Requirements. For more information, see [`Adhering to the movement disorder data collection requirements`](adhering-to-the-movement-disorder-data-collection-requirements.md). Additionally, your app must follow best practices for handling the user’s health data, as defined by the HealthKit guidelines. For more information, see [`Protecting user privacy`](https://developer.apple.com/documentation/healthkit/protecting-user-privacy).
 
 To retrieve Parkinson’s tremors or dyskinetic symptoms data from a watchOS app:
 

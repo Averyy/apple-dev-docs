@@ -19,7 +19,7 @@ func pushTemplate(_ templateToPush: CPTemplate, animated: Bool)
 ## Parameters
 
 - `templateToPush`: The template to push onto the navigation stack.
-- `animated`: Set to [`true`](https://developer.apple.com/documentation/Swift/true) to animate the presentation of the template.
+- `animated`: Set to [`true`](https://developer.apple.com/documentation/swift/true) to animate the presentation of the template.
 
 ## See Also
 

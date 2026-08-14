@@ -10,7 +10,7 @@ Provide configuration details for your media server’s endpoints to a HomePod s
 
 #### Discussion
 
-You must cryptographically sign your configuration endpoint response in JSON Web Signature (JWS) format when communicating with the SiriKit Cloud Media API via [`Media Setup`](https://developer.apple.com/documentation/MediaSetup). JWS is part of the JSON Object Signing and Encryption (JOSE) open standard ([`RFC 7515`](https://developer.apple.comhttps://tools.ietf.org/html/rfc7515)) that defines a way to cryptographically sign transmitted data.
+You must cryptographically sign your configuration endpoint response in JSON Web Signature (JWS) format when communicating with the SiriKit Cloud Media API via [`Media Setup`](https://developer.apple.com/documentation/mediasetup). JWS is part of the JSON Object Signing and Encryption (JOSE) open standard ([`RFC 7515`](https://developer.apple.comhttps://tools.ietf.org/html/rfc7515)) that defines a way to cryptographically sign transmitted data.
 
 To generate a signed JWS:
 

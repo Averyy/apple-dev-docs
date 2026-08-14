@@ -12,11 +12,11 @@ PencilKit uses a stroke format optimized for Apple Pencil input, represented by 
 
 #### Convert a B%c3%a9zier Path to a Stroke
 
-To convert a Bézier path, initialize a [`PKStrokePath`](pkstrokepath-swift.struct.md) from a [`CGPath`](https://developer.apple.com/documentation/CoreGraphics/CGPath) using [`init(bezierPath:creationDate:pointProvider:)`](pkstrokepath-swift.struct/init(bezierpath:creationdate:pointprovider:).md). Because a Bézier path describes only the shape of a curve and not the per-point properties PencilKit uses for rendering, such as pressure, opacity, and size, you supply those values through the `pointProvider` closure, which the system calls once for each point in the resulting path.
+To convert a Bézier path, initialize a [`PKStrokePath`](pkstrokepath-swift.struct.md) from a [`CGPath`](https://developer.apple.com/documentation/coregraphics/cgpath) using [`init(bezierPath:creationDate:pointProvider:)`](pkstrokepath-swift.struct/init(bezierpath:creationdate:pointprovider:).md). Because a Bézier path describes only the shape of a curve and not the per-point properties PencilKit uses for rendering, such as pressure, opacity, and size, you supply those values through the `pointProvider` closure, which the system calls once for each point in the resulting path.
 
-> ❗ **Important**: [`init(bezierPath:creationDate:pointProvider:)`](pkstrokepath-swift.struct/init(bezierpath:creationdate:pointprovider:).md) only converts the first subpath. Split each subpath into its own [`CGPath`](https://developer.apple.com/documentation/CoreGraphics/CGPath) before converting.
+> ❗ **Important**: [`init(bezierPath:creationDate:pointProvider:)`](pkstrokepath-swift.struct/init(bezierpath:creationdate:pointprovider:).md) only converts the first subpath. Split each subpath into its own [`CGPath`](https://developer.apple.com/documentation/coregraphics/cgpath) before converting.
 
-To call the initializer, you supply two values alongside the Bézier path: a `creationDate` for the stroke, and a `pointProvider` closure that returns rendering properties for each point. The `creationDate` is the start time of the stroke. Pass a timestamp from your source data if one exists, or use [`Date`](https://developer.apple.com/documentation/Foundation/Date)() for the current time.
+To call the initializer, you supply two values alongside the Bézier path: a `creationDate` for the stroke, and a `pointProvider` closure that returns rendering properties for each point. The `creationDate` is the start time of the stroke. Pass a timestamp from your source data if one exists, or use [`Date`](https://developer.apple.com/documentation/foundation/date)() for the current time.
 
 The number of points PencilKit derives from your Bézier path may differ from the number of control points in the original. Use `index` and `pointCount` to calculate values that vary along the stroke rather than mapping points one-to-one from your source data.
 
@@ -31,7 +31,7 @@ PencilKit sets `location` from the Bézier path geometry, but you define all oth
 - [`timeOffset`](pkstrokepoint-swift.struct/timeoffset.md): The time in seconds from the stroke’s `creationDate` to this derived control point. The example below distributes time evenly along the stroke based on index position, giving earlier points smaller offsets and later points larger ones. If your source data includes per-point or per-segment timestamps, use those elapsed times instead.
 - [`azimuth`](pkstrokepoint-swift.struct/azimuth.md) and [`altitude`](pkstrokepoint-swift.struct/altitude.md): These properties describe the orientation of an Apple Pencil. For imported data that doesn’t include pencil orientation, use reasonable values instead. For example, an altitude of `.pi / 4` matches how most people naturally hold a pencil. Because azimuth only affects rendering once the pencil is tilted, choose a value that fits your ink and app rather than relying on a single default.
 
-The following example shows a complete conversion from a [`CGPath`](https://developer.apple.com/documentation/CoreGraphics/CGPath) to a `PKStroke`, using `index` and `pointCount` to calculate `timeOffset` and applying uniform values for all other properties:
+The following example shows a complete conversion from a [`CGPath`](https://developer.apple.com/documentation/coregraphics/cgpath) to a `PKStroke`, using `index` and `pointCount` to calculate `timeOffset` and applying uniform values for all other properties:
 
 ```swift
 func makeStroke(from bezierPath: CGPath, ink: PKInk) -> PKStroke {
@@ -59,7 +59,7 @@ func makeStroke(from bezierPath: CGPath, ink: PKInk) -> PKStroke {
 
 #### Save and Load Pencilkit Strokes in a B%c3%a9zier File Format
 
-If you want to keep Bézier paths as your file format after adopting PencilKit, you can export strokes back to Bézier paths for saving and reload them with full fidelity. Use [`bezierRepresentation`](pkstrokepath-swift.struct/bezierrepresentation.md) to export a stroke path to a [`CGPath`](https://developer.apple.com/documentation/CoreGraphics/CGPath) for saving, then [`init(bezierPath:creationDate:pointProvider:)`](pkstrokepath-swift.struct/init(bezierpath:creationdate:pointprovider:).md) to load it back.
+If you want to keep Bézier paths as your file format after adopting PencilKit, you can export strokes back to Bézier paths for saving and reload them with full fidelity. Use [`bezierRepresentation`](pkstrokepath-swift.struct/bezierrepresentation.md) to export a stroke path to a [`CGPath`](https://developer.apple.com/documentation/coregraphics/cgpath) for saving, then [`init(bezierPath:creationDate:pointProvider:)`](pkstrokepath-swift.struct/init(bezierpath:creationdate:pointprovider:).md) to load it back.
 
 A Bézier path stores only the shape of the curve and doesn’t include properties like size, opacity, and force. When exporting a PencilKit stroke, save those properties separately for each point so you can reconstruct the full stroke when loading back.
 

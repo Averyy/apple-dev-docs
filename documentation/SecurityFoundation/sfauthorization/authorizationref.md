@@ -22,7 +22,7 @@ The authorization reference.
 
 You can use the authorization reference in calls to Authorization Services functions.
 
-For additional information see [`Authorization Services`](https://developer.apple.com/documentation/Security/authorization-services).
+For additional information see [`Authorization Services`](https://developer.apple.com/documentation/security/authorization-services).
 
 
 ---

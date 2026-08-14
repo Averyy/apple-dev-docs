@@ -18,9 +18,16 @@ func AXObserverRemoveNotification(_ observer: AXObserver, _ element: AXUIElement
 
 If unsuccessful, `AXObserverRemoveNotification` may return one of the following error codes, among others:
 
+- **`kAXErrorInvalidUIElementObserver`**: The observer is not a valid AXObserverRef type.
+- **`kAXErrorIllegalArgument`**: One or more of the arguments is an illegal value or the length of the notification name is greater than 1024.
+- **`kAXErrorNotificationUnsupported`**: The accessibility object does not support notifications (note that the system-wide accessibility object does not support notifications).
+- **`kAXErrorNotificationNotRegistered`**: This observer has not registered for any notifications.
+- **`kAXErrorCannotComplete`**: The function cannot complete because messaging has failed in some way.
+- **`kAXErrorFailure`**: There is some sort of system memory failure.
+
 ## Parameters
 
-- `observer`: The observer object created from a call to  .
+- `observer`: The observer object created from a call to [`AXObserverCreate(_:_:_:)`](1460133-axobservercreate.md).
 - `element`: The accessibility object for which this observer observes notifications.
 - `notification`: The name of the notification to remove from the list of observed notifications.
 

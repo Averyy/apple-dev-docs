@@ -19,7 +19,7 @@ An intent returns a result to tell the system when it completes its action, and 
   Create your first app intent that makes your app available in system experiences like Spotlight or the Shortcuts app.
 - [Accelerating app interactions with App Intents](acceleratingappinteractionswithappintents.md)
   Enable people to use your app’s features quickly through Siri, Spotlight, and Shortcuts.
-- [Soup Chef with App Intents: Migrating custom intents](../SiriKit/soup-chef-with-app-intents-migrating-custom-intents.md)
+- [Soup Chef with App Intents: Migrating custom intents](../sirikit/soup-chef-with-app-intents-migrating-custom-intents.md)
   Integrating App Intents to provide your appʼs actions to Siri and Shortcuts.
 - [protocol AppIntent](appintent.md)
   An interface you use to express app-specific actions and make them available to the rest of the system.

@@ -25,7 +25,7 @@ Before using this function, you must call the function [`PMSessionValidatePageFo
 ## Parameters
 
 - `pageFormat`: The page format object whose adjusted paper rectangle you want to obtain.
-- `paperRect`: A pointer to your   structure. On return, the structure describes the current paper size, in points, taking into account scaling, rotation, and application resolution settings. The coordinates of the upper-left corner of the paper rectangle are specified relative to the page rectangle. The coordinates of the upper-left corner of the page rectangle are always (0,0), which means the coordinates of the upper-left corner of the paper rectangle are always negative or (0,0). See Supporting Printing in Your Carbon Application for more information on page and paper rectangles.
+- `paperRect`: A pointer to your [`PMRect`](core_printing/pmrect.md) structure. On return, the structure describes the current paper size, in points, taking into account scaling, rotation, and application resolution settings. The coordinates of the upper-left corner of the paper rectangle are specified relative to the page rectangle. The coordinates of the upper-left corner of the page rectangle are always (0,0), which means the coordinates of the upper-left corner of the paper rectangle are always negative or (0,0). See Supporting Printing in Your Carbon Application for more information on page and paper rectangles.
 
 ## See Also
 

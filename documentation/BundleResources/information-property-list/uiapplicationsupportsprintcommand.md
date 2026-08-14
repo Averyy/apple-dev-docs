@@ -17,7 +17,7 @@ A Boolean value that indicates whether the app supports the Command-P keyboard s
 
 #### Discussion
 
-When the value for this key is `YES`, the system adds the Command-P keyboard shortcut to the app. When someone enters Command-P while using the app, the system calls the [`printContent(_:)`](https://developer.apple.com/documentation/UIKit/UIResponderStandardEditActions/printContent(_:)) method on the first responder that implements the method found in the responder chain.
+When the value for this key is `YES`, the system adds the Command-P keyboard shortcut to the app. When someone enters Command-P while using the app, the system calls the [`printContent(_:)`](https://developer.apple.com/documentation/uikit/uiresponderstandardeditactions/printcontent(_:)) method on the first responder that implements the method found in the responder chain.
 
 An iPad app running in iPadOS shows a Print command in the discoverability HUD when the value for the [`UIApplicationSupportsPrintCommand`](information-property-list/uiapplicationsupportsprintcommand.md) key is `YES`. When the same app runs on a Mac with Apple silicon, the system adds Print and Export to PDF menu commands to the File menu.
 

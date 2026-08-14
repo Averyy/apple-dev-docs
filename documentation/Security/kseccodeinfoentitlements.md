@@ -17,7 +17,7 @@ let kSecCodeInfoEntitlements: CFString
 
 #### Discussion
 
-The value is a [`CFData`](https://developer.apple.com/documentation/CoreFoundation/CFData) object.
+The value is a [`CFData`](https://developer.apple.com/documentation/corefoundation/cfdata) object.
 
 Specify the [`kSecCSRequirementInformation`](kseccsrequirementinformation.md) flag when calling the [`SecCodeCopySigningInformation(_:_:_:)`](seccodecopysigninginformation(_:_:_:).md) to get this information.
 

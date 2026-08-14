@@ -28,7 +28,7 @@ To optimize for size while compiling shaders at build time, set the Metal compil
 2. Click the Builds Settings tab, and filter for the Metal compiler.
 3. Under Metal Compiler - Build Options, set the Optimization Level to `Size [-Os]`.
 
-![A screenshot of an Xcode window that’s open to the macOS target’s build settings for the Hello Triangle sample app. The Optimization Level setting for the Metal compiler is set to ](https://docs-assets.developer.apple.com/published/f2c3feea8922259318e2f4e8b5650f04/minimizing-the-binary-size-of-a-shader-library-1%402x.png)
+![A screenshot of an Xcode window that’s open to the macOS target’s build settings for the Hello Triangle sample app. The Optimization Level setting for the Metal compiler is set to ](/images/com.apple.metal/minimizing-the-binary-size-of-a-shader-library-1@2x.png)
 
 Xcode passes this setting to the Metal compiler each time you build a target that includes shader code.
 

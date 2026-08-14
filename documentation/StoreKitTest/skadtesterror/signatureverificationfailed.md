@@ -20,12 +20,12 @@ static var signatureVerificationFailed: SKAdTestError.Code { get }
 
 The ad impression signature isn’t valid. Check the following:
 
-- You use the same cryptographic key-pair when you sign the ad impression and validate it in the testing environment. If you use different key pairs in these two steps, signature verification will fail. For more information about signing the ad, see [`Signing and providing ads`](https://developer.apple.com/documentation/StoreKit/signing-and-providing-ads). For more information about validating the ad impression in the testing environment, see [`validate(_:publicKey:)`](skadtestsession/validate(_:publickey:).md) and [`validateImpression(parameters:publicKey:)`](skadtestsession/validateimpression(parameters:publickey:).md).
-- You use the correct signature instructions for the SKAdNetwork version that your app uses. For more information about SKAdNetwork versions, see [`SKAdNetwork release notes`](https://developer.apple.com/documentation/StoreKit/skadnetwork-release-notes).
+- You use the same cryptographic key-pair when you sign the ad impression and validate it in the testing environment. If you use different key pairs in these two steps, signature verification will fail. For more information about signing the ad, see [`Signing and providing ads`](https://developer.apple.com/documentation/storekit/signing-and-providing-ads). For more information about validating the ad impression in the testing environment, see [`validate(_:publicKey:)`](skadtestsession/validate(_:publickey:).md) and [`validateImpression(parameters:publicKey:)`](skadtestsession/validateimpression(parameters:publickey:).md).
+- You use the correct signature instructions for the SKAdNetwork version that your app uses. For more information about SKAdNetwork versions, see [`SKAdNetwork release notes`](https://developer.apple.com/documentation/storekit/skadnetwork-release-notes).
 - Your signature contains all the parameters in the correct order for the version you’re using.
 - Your signature uses the correct separator character.
 
-For more information about signatures, see [`Signing and providing ads`](https://developer.apple.com/documentation/StoreKit/signing-and-providing-ads).
+For more information about signatures, see [`Signing and providing ads`](https://developer.apple.com/documentation/storekit/signing-and-providing-ads).
 
 ## See Also
 

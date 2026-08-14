@@ -6,7 +6,7 @@ Keys that describe the attachment types associated with image buffers.
 
 #### Overview
 
-An image buffer associates its attachment keys in a [`CFDictionary`](https://developer.apple.com/documentation/CoreFoundation/CFDictionary) instance. To read and write these image buffer attachments, use the [`CVBufferCopyAttachment(_:_:_:)`](cvbuffercopyattachment(_:_:_:).md) and [`CVBufferSetAttachment(_:_:_:_:)`](cvbuffersetattachment(_:_:_:_:).md) functions or other [`CVBuffer`](cvbuffer.md) functions. See the [`CVBuffer`](cvbuffer-nfm.md) topic group for additional information.
+An image buffer associates its attachment keys in a [`CFDictionary`](https://developer.apple.com/documentation/corefoundation/cfdictionary) instance. To read and write these image buffer attachments, use the [`CVBufferCopyAttachment(_:_:_:)`](cvbuffercopyattachment(_:_:_:).md) and [`CVBufferSetAttachment(_:_:_:_:)`](cvbuffersetattachment(_:_:_:_:).md) functions or other [`CVBuffer`](cvbuffer.md) functions. See the [`CVBuffer`](cvbuffer-nfm.md) topic group for additional information.
 
 ## Topics
 

@@ -23,7 +23,7 @@ enum SystemFieldKey
 
 #### Overview
 
-Use the values [`share`](ckrecord/systemfieldkey/share.md) and [`parent`](ckrecord/systemfieldkey/parent.md) when creating an [`NSPredicate`](https://developer.apple.com/documentation/Foundation/NSPredicate) for a [`CKQuery`](ckquery.md) to reference a record’s [`share`](ckrecord/share.md) or [`parent`](ckrecord/parent.md) property, respectively.
+Use the values [`share`](ckrecord/systemfieldkey/share.md) and [`parent`](ckrecord/systemfieldkey/parent.md) when creating an [`NSPredicate`](https://developer.apple.com/documentation/foundation/nspredicate) for a [`CKQuery`](ckquery.md) to reference a record’s [`share`](ckrecord/share.md) or [`parent`](ckrecord/parent.md) property, respectively.
 
 ## Topics
 

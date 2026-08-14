@@ -22,7 +22,7 @@ class Scanner
 
 #### Overview
 
-A [`Scanner`](scanner.md) object interprets and converts the characters of a [`String`](https://developer.apple.com/documentation/Swift/String) into number and string values. You assign the scanner’s string when you create the scanner, and the scanner progresses through the characters of that string from beginning to end as you request items.
+A [`Scanner`](scanner.md) object interprets and converts the characters of a [`String`](https://developer.apple.com/documentation/swift/string) into number and string values. You assign the scanner’s string when you create the scanner, and the scanner progresses through the characters of that string from beginning to end as you request items.
 
 Because of the nature of class clusters, a scanner object isn’t an actual instance of the [`Scanner`](scanner.md) class, but is one of its private subclasses. Although a scanner object’s class is private, its interface is public, as declared by this abstract superclass, [`Scanner`](scanner.md). The objects you create using this class are referred to as scanner objects (and when no confusion will result, merely as scanners).
 
@@ -105,15 +105,15 @@ To retrieve the unscanned remainder of the string, use `scanner.string.substring
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
 - [NSCopying](nscopying.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

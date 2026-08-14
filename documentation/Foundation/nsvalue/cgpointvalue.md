@@ -25,7 +25,7 @@ The CoreGraphics point structure representation of the value.
 
 ## See Also
 
-- [struct CGPoint](../CoreFoundation/CGPoint.md)
+- [struct CGPoint](../corefoundation/cgpoint.md)
 - [init(CGPoint: CGPoint)](nsvalue/init(cgpoint:).md)
   Creates a new value object containing the specified CoreGraphics point structure.
 - [init(CGVector: CGVector)](nsvalue/init(cgvector:).md)

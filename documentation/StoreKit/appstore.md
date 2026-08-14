@@ -59,7 +59,7 @@ Use these static functions and variables to perform tasks like showing the manag
 - [static func presentOfferCodeRedeemSheet(from: UIViewController, options: Set<RedeemOption>) async throws -> VerificationResult<Transaction>](appstore/presentoffercoderedeemsheet(from:options:)-89agc.md)
   Presents a sheet that enables users to redeem subscription offer codes that you configure in App Store Connect.
 - [func offerCodeRedemption(options: Set<RedeemOption>, isPresented: Binding<Bool>, onCompletion: (Result<VerificationResult<Transaction>, any Error>) -> Void) -> some View
-](../SwiftUI/View/offerCodeRedemption(options:isPresented:onCompletion:).md)
+](../swiftui/view/offercoderedemption(options:ispresented:oncompletion:).md)
   Presents a sheet that enables customers to redeem offer codes that you configure in App Store Connect.
 ### Restoring purchases
 - [static func sync() async throws](appstore/sync.md)
@@ -70,7 +70,7 @@ Use these static functions and variables to perform tasks like showing the manag
 - [static func presentOfferCodeRedeemSheet(in: UIWindowScene) async throws](appstore/presentoffercoderedeemsheet(in:).md)
   Displays a sheet in the window scene that enables customers to redeem an offer code that you configure in App Store Connect.
 - [func offerCodeRedemption(isPresented: Binding<Bool>, onCompletion: (Result<Void, any Error>) -> Void) -> some View
-](../SwiftUI/View/offerCodeRedemption(isPresented:onCompletion:).md)
+](../swiftui/view/offercoderedemption(ispresented:oncompletion:).md)
 - [static func presentOfferCodeRedeemSheet(from: NSViewController) async throws](appstore/presentoffercoderedeemsheet(from:).md)
   Displays a sheet in the view that enables customers to redeem an offer code that you configure in App Store Connect.
 ### Type Methods
@@ -84,8 +84,8 @@ Use these static functions and variables to perform tasks like showing the manag
 ## Relationships
 
 ### Conforms To
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

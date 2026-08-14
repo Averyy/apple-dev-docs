@@ -16,11 +16,11 @@ func setDisplayDetails(_ display: Bool)
 
 #### Discussion
 
-For behavioral compatibility with macOS 10.3, certificate details are displayed by default. To hide the details of a certificate, you must explicitly set the display value to [`false`](https://developer.apple.com/documentation/Swift/false).
+For behavioral compatibility with macOS 10.3, certificate details are displayed by default. To hide the details of a certificate, you must explicitly set the display value to [`false`](https://developer.apple.com/documentation/swift/false).
 
 ## Parameters
 
-- `display`: Pass [`true`](https://developer.apple.com/documentation/Swift/true) to display the certificate details, or [`false`](https://developer.apple.com/documentation/Swift/false) to hide them.
+- `display`: Pass [`true`](https://developer.apple.com/documentation/swift/true) to display the certificate details, or [`false`](https://developer.apple.com/documentation/swift/false) to hide them.
 
 ## See Also
 

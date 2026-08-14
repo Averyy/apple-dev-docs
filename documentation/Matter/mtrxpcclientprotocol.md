@@ -23,7 +23,7 @@ protocol MTRXPCClientProtocol : MTRXPCClientProtocol_MTRDevice, MTRXPCClientProt
 ### Inherits From
 - [MTRXPCClientProtocol_MTRDevice](mtrxpcclientprotocol_mtrdevice.md)
 - [MTRXPCClientProtocol_MTRDeviceController](mtrxpcclientprotocol_mtrdevicecontroller.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 
 ---

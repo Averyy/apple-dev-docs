@@ -6,7 +6,7 @@ Use semantic tags to provide up-to-date information for event passes.
 
 #### Overview
 
-In iOS 26 and later and watchOS 26 and later you can provide an engaging event ticket experience by creating a poster event tickets using semantic tags in Wallet. This experience builds on the existing [`PKPass`](https://developer.apple.com/documentation/PassKit/PKPass) bundle in Wallet and maintains backward compatibility. For more information on semantic tags, see [`Supporting semantic tags in Wallet passes`](supporting-semantic-tags-in-wallet-passes.md).
+In iOS 26 and later and watchOS 26 and later you can provide an engaging event ticket experience by creating a poster event tickets using semantic tags in Wallet. This experience builds on the existing [`PKPass`](https://developer.apple.com/documentation/passkit/pkpass) bundle in Wallet and maintains backward compatibility. For more information on semantic tags, see [`Supporting semantic tags in Wallet passes`](supporting-semantic-tags-in-wallet-passes.md).
 
 Adding semantic tags to your event pass provides structured data that Wallet uses to automatically display information like event dates.
 
@@ -52,11 +52,11 @@ The pass style controls how Wallet lays out the pass fields and which images it 
 
 **Sport event**:
 
-![An image of pass fields for a poster event.](https://docs-assets.developer.apple.com/published/63e2cbbb73058b6e0af7d3d8587613c2/pass-fields-layout-poster-event-ticket-sports%402x.png)
+![An image of pass fields for a poster event.](/images/com.apple.walletpasses/pass-fields-layout-poster-event-ticket-sports@2x.png)
 
 **Live performance event**:
 
-![An image showing possible semantic tags for a live performance event.](https://docs-assets.developer.apple.com/published/c4280738f511a6dc239a9798206ae0f0/pass-fields-layout-poster-event-ticket-live-music%402x.png)
+![An image showing possible semantic tags for a live performance event.](/images/com.apple.walletpasses/pass-fields-layout-poster-event-ticket-live-music@2x.png)
 
 The pass style determines the maximum number of pass fields that can appear on the front of a pass. An event pass can display logo, strip, background, or thumbnail images. You can also include an extra row of up to four auxiliary fields. The text length in each pass field determines how many fields appear on the front of the pass. If the text is too long, Wallet won’t display all of it.
 
@@ -299,7 +299,7 @@ The following examples show a `pass.json` file with the required semantic tags f
 
 Using recommended and optional semantic tags can enhance someone’s event pass experience in Wallet. The event guide provides access to information like the venue map and weather forecast, and to quick actions like checking a baggage policy and ordering food. You can display a minimum of one and up to four quick action buttons.
 
-![An illustration showing a poster event guide for a live performance. The event guide displays a map of the venue, the time the doors open, and entrance information.](https://docs-assets.developer.apple.com/published/2373cc358447143bdc95bb8b683793bb/poster-event-guide%402x.png)
+![An illustration showing a poster event guide for a live performance. The event guide displays a map of the venue, the time the doors open, and entrance information.](/images/com.apple.walletpasses/poster-event-guide@2x.png)
 
 For design guidance, see Human Interface Guidelines > Wallet > Passes > [`Event tickets`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/wallet#Event-tickets).
 
@@ -355,7 +355,7 @@ Use [`Pass.RelevantDates`](pass/relevantdates-data.dictionary.md) to provide a l
 
 To ensure your pass is backward compatible, continue to provide the [`PassFields.PrimaryFields`](passfields/primaryfields-data.dictionary.md), [`PassFields.SecondaryFields`](passfields/secondaryfields-data.dictionary.md), and [`PassFields.AuxiliaryFields`](passfields/auxiliaryfields-data.dictionary.md) so the system presents the legacy event pass style, if necessary. Poster event tickets add keys and assets to the existing `PKPass` bundle that legacy event passes use. By building on the legacy pass bundle, Wallet automatically generates the appropriate device experience for iOS and watchOS.
 
-| ![An image showing a non-poster event pass.](https://docs-assets.developer.apple.com/published/44db4b65a5f736938ca777e3530e6fba/pass-fields-layout-event-ticket%402x.png) | ![An image of pass fields for a poster event.](https://docs-assets.developer.apple.com/published/63e2cbbb73058b6e0af7d3d8587613c2/pass-fields-layout-poster-event-ticket-sports%402x.png) |
+| ![An image showing a non-poster event pass.](/images/com.apple.walletpasses/pass-fields-layout-event-ticket@2x.png) | ![An image of pass fields for a poster event.](/images/com.apple.walletpasses/pass-fields-layout-poster-event-ticket-sports@2x.png) |
 | --- | --- |
 | Pass fields for a legacy event pass. | Pass fields for a poster event pass. |
 
@@ -381,7 +381,7 @@ For design guidance about event passes, see Human Interface Guidelines > Wallet 
 
 If the pass doesn’t display and add to Wallet, check the logs for a description of what went wrong. If you’re using Simulator to debug, you can drag your `.pkpass` file into the Simulator, then use the Console app on your Mac to view the Simulator device logs.
 
-When testing on a device, errors are logged to the device’s console, which you can view from the Xcode organizer window. You can filter the logs by using your pass type ID or serial number to limit the device log output to a specific pass instance. See [`Acquiring crash reports and diagnostic logs`](https://developer.apple.com/documentation/Xcode/acquiring-crash-reports-and-diagnostic-logs#Access-device-console-logs) for information on accessing a device’s console log, as well as downloading and installing the Wallet profile.
+When testing on a device, errors are logged to the device’s console, which you can view from the Xcode organizer window. You can filter the logs by using your pass type ID or serial number to limit the device log output to a specific pass instance. See [`Acquiring crash reports and diagnostic logs`](https://developer.apple.com/documentation/xcode/acquiring-crash-reports-and-diagnostic-logs) for information on accessing a device’s console log, as well as downloading and installing the Wallet profile.
 
 Common errors include malformed JSON files, misspelled keys or values, pass type identifiers that don’t match your certificate, and signatures that omit the Apple Worldwide Developer Relations Intermediate Certificate. For more information on common issues with pass creation, see [`Common Problems`](building-a-pass#Common-Problems.md).
 

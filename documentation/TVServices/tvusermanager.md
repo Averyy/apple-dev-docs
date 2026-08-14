@@ -18,9 +18,9 @@ class TVUserManager
 
 Some apps rely on profiles to maintain separate information for each person who uses a shared device, such as a video content app that retains which shows they watch. To avoid interrupting people with a profile picker each time they launch your app, you can save and retrieve the current user’s selection on a shared device.
 
-> ❗ **Important**:  To create a [`TVUserManager`](tvusermanager.md) object, add the [`User Management Entitlement`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.user-management) capability to your app or app extension in Xcode, and select the Runs as Current User, Only When User-Independent Keychain is Available option. This enables the system to take care of separating each user’s data for your app.
+> ❗ **Important**:  To create a [`TVUserManager`](tvusermanager.md) object, add the [`User Management Entitlement`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.user-management) capability to your app or app extension in Xcode, and select the Runs as Current User, Only When User-Independent Keychain is Available option. This enables the system to take care of separating each user’s data for your app.
 
-To determine the current user’s profile, first check [`shouldStorePreferencesForCurrentUser`](tvusermanager/shouldstorepreferencesforcurrentuser.md). If that value is [`false`](https://developer.apple.com/documentation/Swift/false), display the profile picker to determine which profile to use for the current session, but don’t save the selected profile. If the value is [`true`](https://developer.apple.com/documentation/Swift/true), and there isn’t a saved profile in [`UserDefaults`](https://developer.apple.com/documentation/Foundation/UserDefaults), display the profile picker and save the selected profile for future use. If the value is [`true`](https://developer.apple.com/documentation/Swift/true) and there’s already a saved profile, skip the prompt and use the saved profile.
+To determine the current user’s profile, first check [`shouldStorePreferencesForCurrentUser`](tvusermanager/shouldstorepreferencesforcurrentuser.md). If that value is [`false`](https://developer.apple.com/documentation/swift/false), display the profile picker to determine which profile to use for the current session, but don’t save the selected profile. If the value is [`true`](https://developer.apple.com/documentation/swift/true), and there isn’t a saved profile in [`UserDefaults`](https://developer.apple.com/documentation/foundation/userdefaults), display the profile picker and save the selected profile for future use. If the value is [`true`](https://developer.apple.com/documentation/swift/true) and there’s already a saved profile, skip the prompt and use the saved profile.
 
 ## Topics
 
@@ -46,14 +46,14 @@ To determine the current user’s profile, first check [`shouldStorePreferencesF
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

@@ -14,7 +14,7 @@ Multipath TCP improves the performance of your app when a user is in a location 
 
 These steps are required:
 
-- Enable the [`Multipath Entitlement`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.networking.multipath) in the Xcode Capabilities pane for your app target.
+- Enable the [`Multipath Entitlement`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.networking.multipath) in the Xcode Capabilities pane for your app target.
 - Set the [`multipathServiceType`](urlsessionconfiguration/multipathservicetype-swift.property.md) property in [`URLSessionConfiguration`](urlsessionconfiguration.md) to a mode other than `none`. For most cases, the handover mode is the best option. This mode provides your users with a seamless transition between Wi-Fi and cellular, allowing uninterrupted usage of your app. (For information about other modes, see [`URLSessionConfiguration.MultipathServiceType`](urlsessionconfiguration/multipathservicetype-swift.enum.md).)
 
 While the user’s device is connected to a reliable Wi-Fi network, your app uses only Wi-Fi, and no cellular data is consumed. As the user leaves the range of the Wi-Fi network and the signal starts to deteriorate, Multipath TCP begins transitioning data usage to the cellular network to provide a seamless transition.
@@ -40,7 +40,7 @@ After the URL session task begins, Wi-Fi Assist doesn’t change from Wi-Fi to c
   A service type that specifies the Multipath TCP connection policy for transmitting data over Wi-Fi and cellular interfaces.
 - [URLSessionConfiguration.MultipathServiceType](urlsessionconfiguration/multipathservicetype-swift.enum.md)
   Constants that specify the type of service that Multipath TCP uses.
-- [Multipath Entitlement](../BundleResources/Entitlements/com.apple.developer.networking.multipath.md)
+- [Multipath Entitlement](../bundleresources/entitlements/com.apple.developer.networking.multipath.md)
   A Boolean value indicating whether your app may use Multipath protocols to seamlessly transition between Wi-Fi and cellular networks.
 
 

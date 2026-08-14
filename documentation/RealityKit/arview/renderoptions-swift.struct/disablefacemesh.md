@@ -18,7 +18,7 @@ static let disableFaceMesh: ARView.RenderOptions
 
 #### Discussion
 
-By default, [`ARKit`](https://developer.apple.com/documentation/ARKit) detects people and hides virtual objects behind their faces.
+By default, [`ARKit`](https://developer.apple.com/documentation/arkit) detects people and hides virtual objects behind their faces.
 
 ## See Also
 

@@ -16,7 +16,7 @@ func setIsOpen(_ isOpen: Bool)
 
 ## Parameters
 
-- `isOpen`: Pass [`true`](https://developer.apple.com/documentation/Swift/true) to set the pop-up menu to open; [`false`](https://developer.apple.com/documentation/Swift/false) otherwise.
+- `isOpen`: Pass [`true`](https://developer.apple.com/documentation/swift/true) to set the pop-up menu to open; [`false`](https://developer.apple.com/documentation/swift/false) otherwise.
 
 ## See Also
 

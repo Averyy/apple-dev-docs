@@ -18,7 +18,7 @@ protocol MEMessageActionHandler : NSObjectProtocol
 
 As MailKit downloads messages, it invokes the [`decideAction(for:completionHandler:)`](memessageactionhandler/decideaction(for:completionhandler:).md) method on your handler. You indicate the action to take for each message, such as marking it as read or unread, flagging it, or archiving it.
 
-To indicate that your extension contains a message action handler, add `MEMessageActionHandler` to the [`MEExtensionCapabilities`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSExtension/NSExtensionAttributes/MEExtensionCapabilities) array in the extension’s `Info.plist` file:
+To indicate that your extension contains a message action handler, add `MEMessageActionHandler` to the [`MEExtensionCapabilities`](https://developer.apple.com/documentation/bundleresources/information-property-list/nsextension/nsextensionattributes/meextensioncapabilities) array in the extension’s `Info.plist` file:
 
 ```plist
 <key>NSExtensionAttributes</key>
@@ -47,7 +47,7 @@ To indicate that your extension contains a message action handler, add `MEMessag
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 
 ---

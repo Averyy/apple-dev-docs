@@ -21,7 +21,7 @@ var depthStencilPixelFormat: MTLPixelFormat { get set }
 
 #### Discussion
 
-The default value is [`MTLPixelFormat.invalid`](https://developer.apple.com/documentation/Metal/MTLPixelFormat/invalid), which means that the view doesn’t create a depth and stencil texture. If you set it to a different format, the view automatically creates those textures for you and configures them as part of any render passes that the view creates.
+The default value is [`MTLPixelFormat.invalid`](https://developer.apple.com/documentation/metal/mtlpixelformat/invalid), which means that the view doesn’t create a depth and stencil texture. If you set it to a different format, the view automatically creates those textures for you and configures them as part of any render passes that the view creates.
 
 ## See Also
 

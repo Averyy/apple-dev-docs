@@ -23,7 +23,7 @@ let AXFeatureOverrideSessionErrorDomain: String
   Options indicating which Accessibility features will be turned on or off when an override session is held by your app.
 - [struct AXFeatureOverrideSessionError](axfeatureoverridesessionerror-swift.struct.md)
 - [AXFeatureOverrideSessionError.Code](axfeatureoverridesessionerror-swift.struct/code.md)
-- [com.apple.developer.accessibility.merchant-api-control](../BundleResources/Entitlements/com.apple.developer.accessibility.merchant-api-control.md)
+- [com.apple.developer.accessibility.merchant-api-control](../bundleresources/entitlements/com.apple.developer.accessibility.merchant-api-control.md)
 
 
 ---

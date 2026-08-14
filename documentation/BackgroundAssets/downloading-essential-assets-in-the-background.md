@@ -28,13 +28,13 @@ Before you run the sample code project in Xcode:
 
 - [Configuring an unmanaged Background Assets project](configuring-an-unmanaged-background-assets-project.md)
   Manage and download individual assets yourself by configuring your app and extension targets.
-- [BAManifestURL](../BundleResources/Information-Property-List/BAManifestURL.md)
+- [BAManifestURL](../bundleresources/information-property-list/bamanifesturl.md)
   The location URL of the app’s manifest file that contains the names and sizes of assets.
-- [BAInitialDownloadRestrictions](../BundleResources/Information-Property-List/BAInitialDownloadRestrictions.md)
+- [BAInitialDownloadRestrictions](../bundleresources/information-property-list/bainitialdownloadrestrictions.md)
   The restrictions that apply to the set of assets that download immediately after app installation.
-- [BAEssentialMaxInstallSize](../BundleResources/Information-Property-List/BAEssentialMaxInstallSize.md)
+- [BAEssentialMaxInstallSize](../bundleresources/information-property-list/baessentialmaxinstallsize.md)
   The combined, maximum size of the essential assets that the system downloads before it launches your app in bytes.
-- [BAMaxInstallSize](../BundleResources/Information-Property-List/BAMaxInstallSize.md)
+- [BAMaxInstallSize](../bundleresources/information-property-list/bamaxinstallsize.md)
   The combined, maximum size, in bytes, of the non-essential assets that download immediately after app installation.
 - [class BADownloadManager](badownloadmanager.md)
   An object that manages the queue of scheduled asset downloads.

@@ -38,8 +38,8 @@ This event should be treated as having a non-escapable lifetime. Some of its dat
 
 ### Conforms To
 - [Event](event.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 
 ---

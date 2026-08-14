@@ -20,12 +20,12 @@ func setSelected(_ selected: Bool, animated: Bool)
 
 #### Discussion
 
-The selection affects the appearance of labels, image, and background. When the selected state of a cell is [`true`](https://developer.apple.com/documentation/Swift/true), it draws the background for selected cells (Reusing cells) with its title in white.
+The selection affects the appearance of labels, image, and background. When the selected state of a cell is [`true`](https://developer.apple.com/documentation/swift/true), it draws the background for selected cells (Reusing cells) with its title in white.
 
 ## Parameters
 
-- `selected`: [`true`](https://developer.apple.com/documentation/Swift/true) to set the cell as selected, [`false`](https://developer.apple.com/documentation/Swift/false) to set it as unselected. The default is [`false`](https://developer.apple.com/documentation/Swift/false).
-- `animated`: [`true`](https://developer.apple.com/documentation/Swift/true) to animate the transition between selected states, [`false`](https://developer.apple.com/documentation/Swift/false) to make the transition immediate.
+- `selected`: [`true`](https://developer.apple.com/documentation/swift/true) to set the cell as selected, [`false`](https://developer.apple.com/documentation/swift/false) to set it as unselected. The default is [`false`](https://developer.apple.com/documentation/swift/false).
+- `animated`: [`true`](https://developer.apple.com/documentation/swift/true) to animate the transition between selected states, [`false`](https://developer.apple.com/documentation/swift/false) to make the transition immediate.
 
 ## See Also
 

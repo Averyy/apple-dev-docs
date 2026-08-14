@@ -22,7 +22,7 @@ var response: URLResponse? { get set }
 
 #### Discussion
 
-The value of this property is an instance of [`URLResponse`](https://developer.apple.com/documentation/Foundation/URLResponse), indicating a response to the loading request. If no response is needed, the value of this property is `nil`.
+The value of this property is an instance of [`URLResponse`](https://developer.apple.com/documentation/foundation/urlresponse), indicating a response to the loading request. If no response is needed, the value of this property is `nil`.
 
 ## See Also
 

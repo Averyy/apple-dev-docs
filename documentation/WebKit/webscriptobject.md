@@ -20,7 +20,7 @@ You can not create a `WebScriptObject` object directly. You get a window `WebScr
 
 You can use key-value coding methods—for example, `setValue:forKey:` and `valueForKey:`—to get and set properties of a `WebScriptObject` object. You can also access properties by index using the [`setWebScriptValueAt(_:value:)`](webscriptobject/setwebscriptvalueat(_:value:).md) and [`webScriptValue(at:)`](webscriptobject/webscriptvalue(at:).md) methods. Use the [`removeWebScriptKey(_:)`](webscriptobject/removewebscriptkey(_:).md) method to remove a scripting object property.
 
-Not all properties and methods of a class are exported. Use the [`setValue(_:forUndefinedKey:)`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class/setValue(_:forUndefinedKey:)) and [`value(forUndefinedKey:)`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class/value(forUndefinedKey:)) methods to intercept access to properties that are not exported. Similarly, use the [`invokeUndefinedMethod(fromWebScript:withArguments:)`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class/invokeUndefinedMethod(fromWebScript:withArguments:)) method to intercept method invocations that are not exported.
+Not all properties and methods of a class are exported. Use the [`setValue(_:forUndefinedKey:)`](https://developer.apple.com/documentation/objectivec/nsobject-swift.class/setvalue(_:forundefinedkey:)) and [`value(forUndefinedKey:)`](https://developer.apple.com/documentation/objectivec/nsobject-swift.class/value(forundefinedkey:)) methods to intercept access to properties that are not exported. Similarly, use the [`invokeUndefinedMethod(fromWebScript:withArguments:)`](https://developer.apple.com/documentation/objectivec/nsobject-swift.class/invokeundefinedmethod(fromwebscript:witharguments:)) method to intercept method invocations that are not exported.
 
 If you want access to properties and methods defined in your own classes, use the methods in the WebScripting informal protocol to specify the properties and methods the class should export to WebKit’s JavaScript environment.
 
@@ -56,22 +56,22 @@ Use the [`callWebScriptMethod(_:withArguments:)`](webscriptobject/callwebscriptm
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Inherited By
 - [DOMObject](domobject.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 
 - [WebKit DOM Programming Topics](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/AppleApplications/Conceptual/SafariJSProgTopics/index.html#//apple_ref/doc/uid/TP40001483)
 - [WebKit Objective-C Programming Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/DisplayWebContent/DisplayWebContent.html#//apple_ref/doc/uid/10000164i)
-- [WebScripting](../ObjectiveC/webscripting.md)
+- [WebScripting](../objectivec/webscripting.md)
   `WebScripting` is an informal protocol that defines methods that classes can implement to export their interfaces to a WebScript environment such as JavaScript.
 - [class WebUndefined](webundefined.md)
   `WebUndefined` objects are simply used to represent the JavaScript “undefined” value in methods when bridging between JavaScript and Objective-C. For example, if you invoke a JavaScript function that returns the JavaScript “undefined” value, then a `WebUndefined` object is returned to the Objective-C calling context.

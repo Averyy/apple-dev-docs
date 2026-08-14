@@ -24,7 +24,7 @@ var identifier: String { get }
 
 The identifier uniquely identifies its type, represented by a reverse-DNS string, such as `public.jpeg` or `com.adobe.pdf`.
 
-API that doesn’t use [`UTType`](uttype-swift.struct.md) uses a `String` or [`CFString`](https://developer.apple.com/documentation/CoreFoundation/CFString) to refer to a type by its identifier.
+API that doesn’t use [`UTType`](uttype-swift.struct.md) uses a `String` or [`CFString`](https://developer.apple.com/documentation/corefoundation/cfstring) to refer to a type by its identifier.
 
 ## See Also
 

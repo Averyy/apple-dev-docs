@@ -27,7 +27,7 @@ The delegate method has the following signature:
 The parameters for the delegate method are:
 
 - **`sheet`**: The window to which the sheet was attached.
-- **`returnCode`**: The result code indicating which button the user clicked: either [`NSFileHandlingPanelOKButton`](https://developer.apple.com/documentation/AppKit/NSFileHandlingPanelOKButton) or [`NSFileHandlingPanelCancelButton`](https://developer.apple.com/documentation/AppKit/NSFileHandlingPanelCancelButton).
+- **`returnCode`**: The result code indicating which button the user clicked: either [`NSFileHandlingPanelOKButton`](https://developer.apple.com/documentation/appkit/nsfilehandlingpanelokbutton) or [`NSFileHandlingPanelCancelButton`](https://developer.apple.com/documentation/appkit/nsfilehandlingpanelcancelbutton).
 - **`contextInfo`**: Client-defined contextual data that is passed in the `contextInfo` parameter of the `beginSheetForWindow:...` method.
 
 The delegate method may dismiss the keychain settings sheet itself; if it does not, the sheet is dismissed on return from the `beginSheetForWindow:...` method.
@@ -38,12 +38,12 @@ The delegate method may dismiss the keychain settings sheet itself; if it does n
 - `delegate`: The delegate object in which the method specified in the `didEndSelector` parameter is implemented.
 - `didEndSelector`: A method selector for a delegate method called when the sheet has been dismissed. Implementation of this delegate method is optional.
 - `contextInfo`: A pointer to data that is passed to the delegate method. You can use this data pointer for any purpose you wish.
-- `trust`: A trust management object. Use the [`SecTrustCreateWithCertificates(_:_:_:)`](https://developer.apple.com/documentation/Security/SecTrustCreateWithCertificates(_:_:_:)) function (in Security/SecTrust.h) to create the trust management object.
+- `trust`: A trust management object. Use the [`SecTrustCreateWithCertificates(_:_:_:)`](https://developer.apple.com/documentation/security/sectrustcreatewithcertificates(_:_:_:)) function (in Security/SecTrust.h) to create the trust management object.
 - `message`: A message string to display in the sheet.
 
 ## See Also
 
-- [func SecTrustCreateWithCertificates(CFTypeRef, CFTypeRef?, UnsafeMutablePointer<SecTrust?>) -> OSStatus](../Security/SecTrustCreateWithCertificates(_:_:_:).md)
+- [func SecTrustCreateWithCertificates(CFTypeRef, CFTypeRef?, UnsafeMutablePointer<SecTrust?>) -> OSStatus](../security/sectrustcreatewithcertificates(_:_:_:).md)
   Creates a trust management object based on certificates and policies.
 - [func runModal(for: SecTrust!, message: String!) -> Int](sfcertificatetrustpanel/runmodal(for:message:).md)
   Displays a modal panel that shows the results of a certificate trust evaluation and that allows the user to edit trust settings.

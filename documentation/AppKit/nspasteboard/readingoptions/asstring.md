@@ -16,7 +16,7 @@ static var asString: NSPasteboard.ReadingOptions { get }
 
 #### Discussion
 
-AppKit puts the data in an [`NSString`](https://developer.apple.com/documentation/Foundation/NSString) object.
+AppKit puts the data in an [`NSString`](https://developer.apple.com/documentation/foundation/nsstring) object.
 
 ## See Also
 

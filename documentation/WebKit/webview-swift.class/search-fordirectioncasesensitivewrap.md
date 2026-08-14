@@ -16,7 +16,7 @@ func search(for string: String!, direction forward: Bool, caseSensitive caseFlag
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/Swift/true) if the search is successful; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
+[`true`](https://developer.apple.com/documentation/swift/true) if the search is successful; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
 
 #### Discussion
 
@@ -25,9 +25,9 @@ The search for `string` begins from the current selection and continues in the d
 ## Parameters
 
 - `string`: The search string.
-- `forward`: If [`true`](https://developer.apple.com/documentation/Swift/true) the direction of the search is forward; if [`false`](https://developer.apple.com/documentation/Swift/false), the direction is backward.
-- `caseFlag`: If [`true`](https://developer.apple.com/documentation/Swift/true) if the search is case sensitive; otherwise, it is not.
-- `wrapFlag`: If [`true`](https://developer.apple.com/documentation/Swift/true) if the search wraps; otherwise, it does not.
+- `forward`: If [`true`](https://developer.apple.com/documentation/swift/true) the direction of the search is forward; if [`false`](https://developer.apple.com/documentation/swift/false), the direction is backward.
+- `caseFlag`: If [`true`](https://developer.apple.com/documentation/swift/true) if the search is case sensitive; otherwise, it is not.
+- `wrapFlag`: If [`true`](https://developer.apple.com/documentation/swift/true) if the search wraps; otherwise, it does not.
 
 ## See Also
 

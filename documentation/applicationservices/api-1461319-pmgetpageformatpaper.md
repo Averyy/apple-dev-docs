@@ -21,7 +21,7 @@ A result code. See [`Result Codes`](core_printing#1670007.md).
 ## Parameters
 
 - `pageFormat`: The page format object whose paper you want to obtain.
-- `paper`: A pointer to your   variable. On return, the variable refers to a paper object that represents the paper associated with the specified page format. You should not release the paper object without first retaining it.
+- `paper`: A pointer to your [`PMPaper`](pmpaper.md) variable. On return, the variable refers to a paper object that represents the paper associated with the specified page format. You should not release the paper object without first retaining it.
 
 ## See Also
 

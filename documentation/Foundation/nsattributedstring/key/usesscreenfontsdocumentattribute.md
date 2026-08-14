@@ -16,7 +16,7 @@ static let usesScreenFontsDocumentAttribute: NSAttributedString.Key
 
 #### Discussion
 
-The value of this attribute is an [`NSNumber`](nsnumber.md) object containing a Boolean; this attribute corresponds to the [`usesScreenFonts`](https://developer.apple.com/documentation/AppKit/NSLayoutManager/usesScreenFonts) method of [`NSLayoutManager`](https://developer.apple.com/documentation/AppKit/NSLayoutManager); if absent, follows the system default setting.
+The value of this attribute is an [`NSNumber`](nsnumber.md) object containing a Boolean; this attribute corresponds to the [`usesScreenFonts`](https://developer.apple.com/documentation/appkit/nslayoutmanager/usesscreenfonts) method of [`NSLayoutManager`](https://developer.apple.com/documentation/appkit/nslayoutmanager); if absent, follows the system default setting.
 
 ## See Also
 

@@ -21,7 +21,7 @@ var clearDepth: Double { get set }
 
 #### Discussion
 
-If you specified that you want a depth texture, the view configures any render passes to use the depth texture, with a load action of [`MTLLoadAction.clear`](https://developer.apple.com/documentation/Metal/MTLLoadAction/clear) and the value of this property as the value to clear it to. The default value is `1.0`.
+If you specified that you want a depth texture, the view configures any render passes to use the depth texture, with a load action of [`MTLLoadAction.clear`](https://developer.apple.com/documentation/metal/mtlloadaction/clear) and the value of this property as the value to clear it to. The default value is `1.0`.
 
 ## See Also
 

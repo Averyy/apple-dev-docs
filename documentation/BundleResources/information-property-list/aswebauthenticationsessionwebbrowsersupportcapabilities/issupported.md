@@ -14,7 +14,7 @@ A Boolean that indicates whether the app acts as a browser that supports authent
 
 #### Discussion
 
-Set the corresponding value to `YES` to indicate that your browser app can handle authentication requests that other apps generate with [`ASWebAuthenticationSession`](https://developer.apple.com/documentation/AuthenticationServices/ASWebAuthenticationSession). For details, see [`Supporting Single Sign-On in a Web Browser App`](https://developer.apple.com/documentation/AuthenticationServices/supporting-single-sign-on-in-a-web-browser-app).
+Set the corresponding value to `YES` to indicate that your browser app can handle authentication requests that other apps generate with [`ASWebAuthenticationSession`](https://developer.apple.com/documentation/authenticationservices/aswebauthenticationsession). For details, see [`Supporting Single Sign-On in a Web Browser App`](https://developer.apple.com/documentation/authenticationservices/supporting-single-sign-on-in-a-web-browser-app).
 
 ## See Also
 

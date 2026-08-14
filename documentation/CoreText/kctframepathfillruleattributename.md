@@ -22,7 +22,7 @@ let kCTFramePathFillRuleAttributeName: CFString
 
 #### Discussion
 
-The value must be a [`CFNumber`](https://developer.apple.com/documentation/CoreFoundation/CFNumber) object containing a [`CTFramePathFillRule`](ctframepathfillrule.md) constant. The default value is [`CTFramePathFillRule.evenOdd`](ctframepathfillrule/evenodd.md).
+The value must be a [`CFNumber`](https://developer.apple.com/documentation/corefoundation/cfnumber) object containing a [`CTFramePathFillRule`](ctframepathfillrule.md) constant. The default value is [`CTFramePathFillRule.evenOdd`](ctframepathfillrule/evenodd.md).
 
 ## See Also
 

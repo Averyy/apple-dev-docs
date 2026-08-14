@@ -17,7 +17,7 @@ Creates a suggestions picker with button text defined by the given localized str
 
 #### Discussion
 
-This initializer creates a text view similar to the results of calling [`init(_:tableName:bundle:comment:)`](https://developer.apple.com/documentation/SwiftUI/Text/init(_:tableName:bundle:comment:)). See [`Text`](https://developer.apple.com/documentation/SwiftUI/Text) for more information about localizing strings.
+This initializer creates a text view similar to the results of calling [`init(_:tableName:bundle:comment:)`](https://developer.apple.com/documentation/swiftui/text/init(_:tablename:bundle:comment:)). See [`Text`](https://developer.apple.com/documentation/swiftui/text) for more information about localizing strings.
 
 ## Parameters
 

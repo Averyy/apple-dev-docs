@@ -33,9 +33,9 @@ A cancellable instance, which you use when you end assignment of the received va
 
 #### Discussion
 
-Use [`sink(receiveValue:)`](publisher/sink(receivevalue:).md) to observe values received by the publisher and print them to the console. This operator can only be used when the stream doesn’t fail, that is, when the publisher’s [`Failure`](publisher/failure.md) type is [`Never`](https://developer.apple.com/documentation/Swift/Never).
+Use [`sink(receiveValue:)`](publisher/sink(receivevalue:).md) to observe values received by the publisher and print them to the console. This operator can only be used when the stream doesn’t fail, that is, when the publisher’s [`Failure`](publisher/failure.md) type is [`Never`](https://developer.apple.com/documentation/swift/never).
 
-In this example, a [`Range`](https://developer.apple.com/documentation/Swift/Range) publisher publishes integers to a [`sink(receiveValue:)`](publisher/sink(receivevalue:).md) operator’s `receiveValue` closure that prints them to the console:
+In this example, a [`Range`](https://developer.apple.com/documentation/swift/range) publisher publishes integers to a [`sink(receiveValue:)`](publisher/sink(receivevalue:).md) operator’s `receiveValue` closure that prints them to the console:
 
 ```swift
 let integers = (0...3)

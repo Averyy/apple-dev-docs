@@ -19,7 +19,7 @@ class let touchBarCommunicationVideoTemplateName: String
 
 #### Discussion
 
-![Template image for communication video](https://docs-assets.developer.apple.com/published/97cc82af6d25b686cea6db8dd0b95929/media-2825110%402x.png)
+![Template image for communication video](/images/com.apple.appkit/media-2825110@2x.png)
 
 Touch Bar template images are exclusively for use in [`NSTouchBarItem`](nstouchbaritem.md) objects and not in onscreen windows.
 

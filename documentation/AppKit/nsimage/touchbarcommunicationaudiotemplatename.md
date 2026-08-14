@@ -19,7 +19,7 @@ class let touchBarCommunicationAudioTemplateName: String
 
 #### Discussion
 
-![Template image for communication audio](https://docs-assets.developer.apple.com/published/09b5e7af5ea48bec26f2e7d931e31056/media-2825109%402x.png)
+![Template image for communication audio](/images/com.apple.appkit/media-2825109@2x.png)
 
 Touch Bar template images are exclusively for use in [`NSTouchBarItem`](nstouchbaritem.md) objects and not in onscreen windows.
 

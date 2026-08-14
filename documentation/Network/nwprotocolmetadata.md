@@ -35,8 +35,8 @@ You can use metadata when sending and receiving messages, as well as when inspec
 - [NWProtocolUDP.Metadata](nwprotocoludp/metadata.md)
 - [NWProtocolWebSocket.Metadata](nwprotocolwebsocket/metadata.md)
 ### Conforms To
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

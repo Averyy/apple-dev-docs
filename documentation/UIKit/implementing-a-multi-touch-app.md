@@ -8,11 +8,11 @@ Learn how to create a simple app that handles multitouch input.
 
 Consider the app shown in the following image, where a single main view draws a gray circle at each touch location. When a touch ends, the circle disappears. When the user’s fingers move, the underlying circles move with them.
 
-![A screenshot from an app that draws gray circles on the screen at multiple touch points simultaneously.](https://docs-assets.developer.apple.com/published/89a7d6067ec9aaf5fca8d5ed42735fa6/implementing-a-multi-touch-app-1%402x.png)
+![A screenshot from an app that draws gray circles on the screen at multiple touch points simultaneously.](/images/com.apple.uikit/implementing-a-multi-touch-app-1@2x.png)
 
 The creation of this app begins with the Single View app template in Xcode. This type of app has a single view controller whose view — in this case, a custom subclass of [`UIView`](uiview.md) called `TouchableView` — fills the screen. The view contains only a label initially, but the app programmatically adds subviews later. The following image shows the storyboard for the view controller.
 
-![A screenshot of a storyboard in Interface Builder showing a single view controller, whose view is of the custom type TouchableView.](https://docs-assets.developer.apple.com/published/b4c436d090bae28fe81887c93d048f43/implementing-a-multi-touch-app-2%402x.png)
+![A screenshot of a storyboard in Interface Builder showing a single view controller, whose view is of the custom type TouchableView.](/images/com.apple.uikit/implementing-a-multi-touch-app-2@2x.png)
 
 ##### Implement the Touchableview Class
 
@@ -101,7 +101,7 @@ func removeViewForTouch (touch : UITouch ) {
 
 ##### Implement the Touchspotview Class
 
-The `TouchSpotView` class (shown in the following code) represents the custom subviews that draw the gray circles onscreen. `TouchSpotView` maintains its circular shape by setting the [`cornerRadius`](https://developer.apple.com/documentation/QuartzCore/CALayer/cornerRadius) property of the layer each time its [`bounds`](uiview/bounds.md) property changes.
+The `TouchSpotView` class (shown in the following code) represents the custom subviews that draw the gray circles onscreen. `TouchSpotView` maintains its circular shape by setting the [`cornerRadius`](https://developer.apple.com/documentation/quartzcore/calayer/cornerradius) property of the layer each time its [`bounds`](uiview/bounds.md) property changes.
 
 ```swift
 class TouchSpotView : UIView {

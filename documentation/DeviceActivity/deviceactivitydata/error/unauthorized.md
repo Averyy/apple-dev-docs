@@ -17,7 +17,7 @@ case unauthorized
 
 #### Discussion
 
-See [`AuthorizationCenter`](https://developer.apple.com/documentation/FamilyControls/AuthorizationCenter) for more details.
+See [`AuthorizationCenter`](https://developer.apple.com/documentation/familycontrols/authorizationcenter) for more details.
 
 ## See Also
 

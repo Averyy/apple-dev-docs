@@ -23,8 +23,8 @@ case lzma
 
 For more information on the LZMA codec, see:
 
-- [`Algorithm.lzma`](https://developer.apple.com/documentation/Compression/Algorithm/lzma)
-- [`COMPRESSION_LZMA`](https://developer.apple.com/documentation/Compression/COMPRESSION_LZMA)
+- [`Algorithm.lzma`](https://developer.apple.com/documentation/compression/algorithm/lzma)
+- [`COMPRESSION_LZMA`](https://developer.apple.com/documentation/compression/compression_lzma)
 
 ## See Also
 

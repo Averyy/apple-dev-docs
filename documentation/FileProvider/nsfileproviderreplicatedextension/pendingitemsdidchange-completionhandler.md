@@ -22,7 +22,7 @@ optional func pendingItemsDidChange() async
 
 > ❗ **Important**:  You can implement this method as a synchronous method that takes a completion handler, as shown on this page, or as an asynchronous method that has the following declaration: ```swift
 optional func pendingItemsDidChange() async
-``` For information about concurrency and asynchronous code in Swift, see [`Calling Objective-C APIs Asynchronously`](https://developer.apple.com/documentation/Swift/calling-objective-c-apis-asynchronously).
+``` For information about concurrency and asynchronous code in Swift, see [`Calling Objective-C APIs Asynchronously`](https://developer.apple.com/documentation/swift/calling-objective-c-apis-asynchronously).
 
 The system calls this method whenever the set of pending items changes. It updates the pending set regularly, but only when there are meaningful changes, such as:
 

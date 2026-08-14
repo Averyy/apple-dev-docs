@@ -56,7 +56,7 @@ struct Merge7<A, B, C, D, E, F, G> where A : Publisher, B : Publisher, C : Publi
 ## Relationships
 
 ### Conforms To
-- [Equatable](../Swift/Equatable.md)
+- [Equatable](../swift/equatable.md)
 - [Publisher](publisher.md)
 
 ## See Also

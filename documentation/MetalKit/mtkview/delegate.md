@@ -21,7 +21,7 @@ weak var delegate: (any MTKViewDelegate)? { get set }
 
 #### Discussion
 
-A delegate is optional. If you provide one, the view calls the delegate when it needs to update its contents. You should either provide a delegate or subclass the view to override the [`draw(_:)`](https://developer.apple.com/documentation/UIKit/UIView/draw(_:)) method, but not both.
+A delegate is optional. If you provide one, the view calls the delegate when it needs to update its contents. You should either provide a delegate or subclass the view to override the [`draw(_:)`](https://developer.apple.com/documentation/uikit/uiview/draw(_:)) method, but not both.
 
 
 ---

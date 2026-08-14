@@ -22,7 +22,7 @@ init(locale: Locale = .autoupdatingCurrent)
 
 #### Discussion
 
-Create a [`FloatingPointFormatStyle`](floatingpointformatstyle.md) when you intend to apply a given style to multiple floating-point values. The following example creates a style that uses the `en_US` locale, which uses three-based grouping and comma separators. It then applies this style to all the [`Double`](https://developer.apple.com/documentation/Swift/Double) values in an array.
+Create a [`FloatingPointFormatStyle`](floatingpointformatstyle.md) when you intend to apply a given style to multiple floating-point values. The following example creates a style that uses the `en_US` locale, which uses three-based grouping and comma separators. It then applies this style to all the [`Double`](https://developer.apple.com/documentation/swift/double) values in an array.
 
 ```swift
 let enUSstyle = FloatingPointFormatStyle<Double>(locale: Locale(identifier: "en_US"))
@@ -31,7 +31,7 @@ let formattedNums = nums.map { enUSstyle.format($0) } // ["100.1", "1,000.2", "1
 
 ```
 
-To format a single integer, you can use the [`BinaryFloatingPoint`](https://developer.apple.com/documentation/Swift/BinaryFloatingPoint) instance method [`formatted(_:)`](https://developer.apple.com/documentation/Swift/BinaryFloatingPoint/formatted(_:)-83x4n), passing in an instance of [`FloatingPointFormatStyle`](floatingpointformatstyle.md).
+To format a single integer, you can use the [`BinaryFloatingPoint`](https://developer.apple.com/documentation/swift/binaryfloatingpoint) instance method [`formatted(_:)`](https://developer.apple.com/documentation/swift/binaryfloatingpoint/formatted(_:)-83x4n), passing in an instance of [`FloatingPointFormatStyle`](floatingpointformatstyle.md).
 
 ## Parameters
 

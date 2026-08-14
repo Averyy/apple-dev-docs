@@ -26,7 +26,7 @@ For more information, see [`NSLayoutConstraint`](nslayoutconstraint.md).
 
 - `format`: The format specification for the constraints.
 - `opts`: Options describing the attribute and the direction of layout for all objects in the visual format string.
-- `metrics`: A dictionary of constants that appear in the visual format string. The dictionary’s keys must be the string values used in the visual format string. Their values must be [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) objects.
+- `metrics`: A dictionary of constants that appear in the visual format string. The dictionary’s keys must be the string values used in the visual format string. Their values must be [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) objects.
 - `views`: A dictionary of views that appear in the visual format string. The keys must be the string values used in the visual format string, and the values must be the view objects.
 
 ## See Also

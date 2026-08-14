@@ -32,8 +32,8 @@ This method does not ensure that media data is loaded before the timebase starts
 ## Parameters
 
 - `rate`: The playback rate for the item.
-- `itemTime`: The precise time at which to match playback of the item. To use the current item’s current time, specify [`invalid`](https://developer.apple.com/documentation/CoreMedia/CMTime/invalid).
-- `hostClockTime`: The host time at which to synchronize playback. If you specify [`invalid`](https://developer.apple.com/documentation/CoreMedia/CMTime/invalid), the rate and time are set together without any external synchronization.
+- `itemTime`: The precise time at which to match playback of the item. To use the current item’s current time, specify [`invalid`](https://developer.apple.com/documentation/coremedia/cmtime/invalid).
+- `hostClockTime`: The host time at which to synchronize playback. If you specify [`invalid`](https://developer.apple.com/documentation/coremedia/cmtime/invalid), the rate and time are set together without any external synchronization.
 
 ## See Also
 

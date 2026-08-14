@@ -20,7 +20,7 @@ An invalid privacy manifest is:
 - A property list file that contains invalid keys or values.
 - An improperly formatted property list file.
 
-Review [`Privacy manifest files`](https://developer.apple.com/documentation/BundleResources/privacy-manifest-files) to learn about the keys you can include in a privacy manifest. This document lists possible reasons for invalid privacy tracking and accessed API values in your privacy manifest. Validate your privacy manifest to determine why your privacy manifest is malformed.
+Review [`Privacy manifest files`](https://developer.apple.com/documentation/bundleresources/privacy-manifest-files) to learn about the keys you can include in a privacy manifest. This document lists possible reasons for invalid privacy tracking and accessed API values in your privacy manifest. Validate your privacy manifest to determine why your privacy manifest is malformed.
 
 #### Configure a Tracking Domain
 
@@ -55,7 +55,7 @@ The following table lists reasons why a value for the `NSPrivacyAccessedAPIType`
 | Reason | Solution |
 | --- | --- |
 | The value is any other type than a string. | Change the type of the `NSPrivacyAccessedAPIType` key to `String` in your privacy manifest. |
-| The value is an empty string, or a string whose value doesn’t match a category of required reason APIs. | Set the value of the `NSPrivacyAccessedAPIType` key to a string that exactly matches a category of required reason APIs your app uses. For possible values, see [`Describing use of required reason API`](https://developer.apple.com/documentation/BundleResources/describing-use-of-required-reason-api). |
+| The value is an empty string, or a string whose value doesn’t match a category of required reason APIs. | Set the value of the `NSPrivacyAccessedAPIType` key to a string that exactly matches a category of required reason APIs your app uses. For possible values, see [`Describing use of required reason API`](https://developer.apple.com/documentation/bundleresources/describing-use-of-required-reason-api). |
 
 #### Possible Reasons for an Invalid Accessed Api Type Reasons Value
 
@@ -104,7 +104,7 @@ If the privacy manifest is malformed, an error message appears in Terminal:
 
 To fix the errors, open your privacy manifest in a text editor or Xcode to address them.
 
-> **Note**: If your privacy manifest is a valid plist, check its keys and values. Your privacy manifest could still be invalid if its keys and values don’t match the values App Store Connect expects. For more information about the keys and values App Store Connect expects, see [`Privacy manifest files`](https://developer.apple.com/documentation/BundleResources/privacy-manifest-files).
+> **Note**: If your privacy manifest is a valid plist, check its keys and values. Your privacy manifest could still be invalid if its keys and values don’t match the values App Store Connect expects. For more information about the keys and values App Store Connect expects, see [`Privacy manifest files`](https://developer.apple.com/documentation/bundleresources/privacy-manifest-files).
 
 #### Revision History
 

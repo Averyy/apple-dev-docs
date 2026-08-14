@@ -10,7 +10,7 @@ In the model-view-controller design paradigm, a view controller fits between the
 
 Most custom view controllers you create are *content view controllers* — that is, the view controller owns all of its views and manages interactions with those views. Use content view controllers to present your app’s custom content onscreen, and use your view controller object to manage the transfer of data to and from your custom views.
 
-![An illustration of the relationship between a view controller, its views, and the data objects from your app.](https://docs-assets.developer.apple.com/published/734a881eaebde585c9cbad47bd162a53/media-3375402%402x.png)
+![An illustration of the relationship between a view controller, its views, and the data objects from your app.](/images/com.apple.uikit/media-3375402@2x.png)
 
 > **Note**:  As opposed to a content view controller, a container view controller incorporates content from other view controllers into its view hierarchy. [`UINavigationController`](uinavigationcontroller.md) is an example of a container view controller. For information about how to implement a container view controller, see [`Creating a custom container view controller`](creating-a-custom-container-view-controller.md).
 
@@ -20,7 +20,7 @@ To define a content view controller, start by subclassing [`UIViewController`](u
 
 [`UIViewController`](uiviewcontroller.md) contains a content view, accessible from the [`view`](uiviewcontroller/view.md) property, which serves as the root view of its view hierarchy. To that root view, you add the custom views you need to present your interface. In storyboards, you add views by dragging them onto the view controller scene. For example, the following figure shows a view controller with an image view and button on an iPhone.
 
-![An image of a view controller interface that contains an image view and button.](https://docs-assets.developer.apple.com/published/05d0eff64845eb8e193d6f58f8c411c8/media-3375403%402x.png)
+![An image of a view controller interface that contains an image view and button.](/images/com.apple.uikit/media-3375403@2x.png)
 
 After adding views to a view controller, always add Auto Layout constraints to set the size and position of those views. Constraints are rules that specify how to size and position each view relative to its parent or sibling view, and they ensure that your views automatically adapt to different environments and devices. For more information, see [`View layout`](view-layout.md).
 
@@ -86,7 +86,7 @@ When you present a view controller onscreen, UIKit needs to first load and confi
 
 1. Creates each view using the view’s [`init(coder:)`](uiview/init(coder:).md) method
 2. Connects views to the corresponding actions and outlets in the view controller
-3. Calls the [`awakeFromNib()`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class/awakeFromNib()) method of each view and the view controller
+3. Calls the [`awakeFromNib()`](https://developer.apple.com/documentation/objectivec/nsobject-swift.class/awakefromnib()) method of each view and the view controller
 4. Assigns the view hierarchy to the view controller’s [`view`](uiviewcontroller/view.md) property
 5. Calls the view controller’s [`viewDidLoad()`](uiviewcontroller/viewdidload().md) method
 

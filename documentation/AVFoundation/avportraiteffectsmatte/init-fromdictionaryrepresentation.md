@@ -26,11 +26,11 @@ convenience init(fromDictionaryRepresentation imageSourceAuxDataInfoDictionary: 
 
 #### Discussion
 
-When using the [`Image I/O`](https://developer.apple.com/documentation/ImageIO) API to read from a HEIF or JPEG file containing a portrait effects matte, you can create an [`AVPortraitEffectsMatte`](avportraiteffectsmatte.md) object from the result of [`CGImageSourceCopyAuxiliaryDataInfoAtIndex(_:_:_:)`](https://developer.apple.com/documentation/ImageIO/CGImageSourceCopyAuxiliaryDataInfoAtIndex(_:_:_:)). This function returns a [`CFDictionary`](https://developer.apple.com/documentation/CoreFoundation/CFDictionary) of primitive map information.
+When using the [`Image I/O`](https://developer.apple.com/documentation/imageio) API to read from a HEIF or JPEG file containing a portrait effects matte, you can create an [`AVPortraitEffectsMatte`](avportraiteffectsmatte.md) object from the result of [`CGImageSourceCopyAuxiliaryDataInfoAtIndex(_:_:_:)`](https://developer.apple.com/documentation/imageio/cgimagesourcecopyauxiliarydatainfoatindex(_:_:_:)). This function returns a [`CFDictionary`](https://developer.apple.com/documentation/corefoundation/cfdictionary) of primitive map information.
 
 ## Parameters
 
-- `imageSourceAuxDataInfoDictionary`: A dictionary of information related to primitive portrait effects matte; obtained from [`CGImageSourceCopyAuxiliaryDataInfoAtIndex(_:_:_:)`](https://developer.apple.com/documentation/ImageIO/CGImageSourceCopyAuxiliaryDataInfoAtIndex(_:_:_:)).
+- `imageSourceAuxDataInfoDictionary`: A dictionary of information related to primitive portrait effects matte; obtained from [`CGImageSourceCopyAuxiliaryDataInfoAtIndex(_:_:_:)`](https://developer.apple.com/documentation/imageio/cgimagesourcecopyauxiliarydatainfoatindex(_:_:_:)).
 
 ## See Also
 

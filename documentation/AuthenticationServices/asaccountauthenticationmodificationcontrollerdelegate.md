@@ -32,7 +32,7 @@ protocol ASAccountAuthenticationModificationControllerDelegate : NSObjectProtoco
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

@@ -22,11 +22,11 @@ func CGImageSourceCreateWithDataProvider(_ provider: CGDataProvider, _ options: 
 
 #### Return Value
 
-An image source. You’re responsible for releasing this type using [`CFRelease`](https://developer.apple.com/documentation/CoreFoundation/CFRelease).
+An image source. You’re responsible for releasing this type using [`CFRelease`](https://developer.apple.com/documentation/corefoundation/cfrelease).
 
 ## Parameters
 
-- `provider`: The data provider to read from. For more information on data providers, see [`CGDataProvider`](https://developer.apple.com/documentation/CoreGraphics/CGDataProvider) and [`Quartz 2D Programming Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/GraphicsImaging/Conceptual/drawingwithquartz2d/Introduction/Introduction.html#//apple_ref/doc/uid/TP30001066).
+- `provider`: The data provider to read from. For more information on data providers, see [`CGDataProvider`](https://developer.apple.com/documentation/coregraphics/cgdataprovider) and [`Quartz 2D Programming Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/GraphicsImaging/Conceptual/drawingwithquartz2d/Introduction/Introduction.html#//apple_ref/doc/uid/TP30001066).
 - `options`: A dictionary that specifies additional creation options. For a list of possible values, see [`Specifying the Read Options`](cgimagesource#Specifying-the-Read-Options.md).
 
 ## See Also

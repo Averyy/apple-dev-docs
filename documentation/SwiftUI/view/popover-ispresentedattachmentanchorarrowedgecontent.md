@@ -39,7 +39,7 @@ struct PopoverExample: View {
 }
 ```
 
-![A screenshot showing a popover that says Popover Content hovering](https://docs-assets.developer.apple.com/published/da73aa0eaa1a824c8805379bb203d761/View-popover-1%402x.png)
+![A screenshot showing a popover that says Popover Content hovering](/images/com.apple.SwiftUI/View-popover-1@2x.png)
 
 > ❗ **Important**: Prior to iOS 18.1, the popover arrow edge was not respected. Apps that are re-compiled with the iOS 18.1 or later SDK or visionOS 2.1 or later SDK and run on iOS 18.1 or later or visionOS 2.1 or later have the arrow edge respected. On macOS, arrow edge has always been respected. Alternatively, to allow the system to choose the best orientation of the popover’s arrow, use the `View/popover(isPresented:attachmentAnchor:content:)` variant.
 

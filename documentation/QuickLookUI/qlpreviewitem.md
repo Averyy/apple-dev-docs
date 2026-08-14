@@ -16,9 +16,9 @@ protocol QLPreviewItem : NSObjectProtocol
 
 #### Overview
 
-Implement the properties in this protocol to make your application’s content visible in a Quick Look preview. Use  [`QLPreviewController`](https://developer.apple.com/documentation/QuickLook/QLPreviewController) to display a Quick Look preview on iOS, [`QLPreviewPanel`](qlpreviewpanel.md) and [`QLPreviewView`](qlpreviewview.md) on macOS.
+Implement the properties in this protocol to make your application’s content visible in a Quick Look preview. Use  [`QLPreviewController`](https://developer.apple.com/documentation/quicklook/qlpreviewcontroller) to display a Quick Look preview on iOS, [`QLPreviewPanel`](qlpreviewpanel.md) and [`QLPreviewView`](qlpreviewview.md) on macOS.
 
-The properties in the [`QLPreviewItem`](qlpreviewitem.md) protocol are also declared as a category on the `NSURL` class. As a result, you can use [`NSURL`](https://developer.apple.com/documentation/Foundation/NSURL) objects directly as preview items — provided that you want to use the default titles of those items. The default title for an NSURL object is the last path component of an item’s URL. To supply custom titles for preview objects, implement a class conforming to this protocol, supplying the title with the [`previewItemTitle`](qlpreviewitem/previewitemtitle.md) property.
+The properties in the [`QLPreviewItem`](qlpreviewitem.md) protocol are also declared as a category on the `NSURL` class. As a result, you can use [`NSURL`](https://developer.apple.com/documentation/foundation/nsurl) objects directly as preview items — provided that you want to use the default titles of those items. The default title for an NSURL object is the last path component of an item’s URL. To supply custom titles for preview objects, implement a class conforming to this protocol, supplying the title with the [`previewItemTitle`](qlpreviewitem/previewitemtitle.md) property.
 
 ## Topics
 
@@ -33,7 +33,7 @@ The properties in the [`QLPreviewItem`](qlpreviewitem.md) protocol are also decl
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

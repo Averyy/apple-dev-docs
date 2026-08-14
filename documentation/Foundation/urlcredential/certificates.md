@@ -22,7 +22,7 @@ var certificates: [Any] { get }
 
 #### Discussion
 
-The certificates are [`SecCertificate`](https://developer.apple.com/documentation/Security/SecCertificate) objects representing the intermediate certificates of the credential. This value is `nil` if this is not a client certificate credential or if the credential was created with no intermediate certificates.
+The certificates are [`SecCertificate`](https://developer.apple.com/documentation/security/seccertificate) objects representing the intermediate certificates of the credential. This value is `nil` if this is not a client certificate credential or if the credential was created with no intermediate certificates.
 
 ## See Also
 

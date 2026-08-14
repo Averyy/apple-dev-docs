@@ -45,7 +45,7 @@ For other localization tips, tools, and resources, see [`Expand your app to new 
 - [Preparing dates, currencies, and numbers for translation](preparing-dates-numbers-with-formatters.md)
   Ensure that dates, currencies, and numbers display correctly across multiple languages and locales by using formatters.
 ### Layouts and views
-- [Preparing views for localization](../SwiftUI/Preparing-views-for-localization.md)
+- [Preparing views for localization](../swiftui/preparing-views-for-localization.md)
   Specify hints and add strings to localize your SwiftUI views.
 - [Autosizing views for localization in iOS](autosizing-views-for-localization-in-ios.md)
   Add auto layout constraints to your app to achieve localizable views.
@@ -87,7 +87,7 @@ For other localization tips, tools, and resources, see [`Expand your app to new 
 
 - [Asset management](asset-management.md)
   Add app icons, images, strings, data files, machine learning models, and other resources to your projects, and manage how you load them at runtime.
-- [Accessibility Inspector](../Accessibility/accessibility-inspector.md)
+- [Accessibility Inspector](../accessibility/accessibility-inspector.md)
   Reveal how your app represents itself to people using accessibility features.
 
 

@@ -16,7 +16,7 @@ func buttonPressed(_ inButtonType: SFButtonType)
 
 #### Discussion
 
-By default, [`buttonPressed(_:)`](sfauthorizationpluginview/buttonpressed(_:).md) will set a result of Deny when the OK or Login buttons are pressed. An [`SFAuthorizationPluginView`](sfauthorizationpluginview.md) subclass needs to override this method to set the context values for the short name of the user so that user attributes can be looked up. To do this, use [`kAuthorizationEnvironmentUsername`](https://developer.apple.com/documentation/Security/kAuthorizationEnvironmentUsername) as the key. A subclass should also set any additional context values that are needed by the authorization plug-in to verify the user’s credentials. To do this, use the appropriate function pointers you receive from [`callbacks()`](sfauthorizationpluginview/callbacks().md).
+By default, [`buttonPressed(_:)`](sfauthorizationpluginview/buttonpressed(_:).md) will set a result of Deny when the OK or Login buttons are pressed. An [`SFAuthorizationPluginView`](sfauthorizationpluginview.md) subclass needs to override this method to set the context values for the short name of the user so that user attributes can be looked up. To do this, use [`kAuthorizationEnvironmentUsername`](https://developer.apple.com/documentation/security/kauthorizationenvironmentusername) as the key. A subclass should also set any additional context values that are needed by the authorization plug-in to verify the user’s credentials. To do this, use the appropriate function pointers you receive from [`callbacks()`](sfauthorizationpluginview/callbacks().md).
 
 When you override this method, do not call `[super buttonPressed]`.
 

@@ -30,7 +30,7 @@ You use the `CPTabBarTemplateDelegate` protocol to respond to a tab bar template
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

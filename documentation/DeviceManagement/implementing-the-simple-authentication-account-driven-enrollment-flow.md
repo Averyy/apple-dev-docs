@@ -8,7 +8,7 @@ Examine the steps between the user, client, device management service, and Apple
 
 To implement account-driven enrollment, you need to support a series of interactions between the user’s device and your device management service. The following diagrams illustrate the interactions, and the sections below detail each of the interaction steps.
 
-![A sequence diagram showing the first five interactions between the user, client, device management service, and Apple servers for simple authentication.](https://docs-assets.developer.apple.com/published/fa5cc1380a63b8e86b14bb2b74ee9ab2/implementing-the-simple-authentication-account-driven-enrollment-flow01%402x.png)
+![A sequence diagram showing the first five interactions between the user, client, device management service, and Apple servers for simple authentication.](/images/com.apple.devicemanagement/implementing-the-simple-authentication-account-driven-enrollment-flow01@2x.png)
 
 #### Sign in Step 1
 
@@ -119,9 +119,9 @@ You return an HTTP 401 response status to the client and include a `WWW-Authenti
 | `method` | String | (Required) The server’s method string. Needs to be `apple-as-web`. |
 | `url` | String | (Required) The URL where the authentication starts. |
 
-The `method` parameter indicates the type of authentication protocol (`apple-as-web`), which selects an [`ASWebAuthenticationSession`](https://developer.apple.com/documentation/AuthenticationServices/ASWebAuthenticationSession) simple authentication protocol flow.
+The `method` parameter indicates the type of authentication protocol (`apple-as-web`), which selects an [`ASWebAuthenticationSession`](https://developer.apple.com/documentation/authenticationservices/aswebauthenticationsession) simple authentication protocol flow.
 
-When the `method` is `apple-as-web`, the `url` parameter needs to be present, which indicates the URL of the initial [`ASWebAuthenticationSession`](https://developer.apple.com/documentation/AuthenticationServices/ASWebAuthenticationSession) HTTP request. The URL scheme needs to be either `http` or `https`, and `https` is recommended for improved security.
+When the `method` is `apple-as-web`, the `url` parameter needs to be present, which indicates the URL of the initial [`ASWebAuthenticationSession`](https://developer.apple.com/documentation/authenticationservices/aswebauthenticationsession) HTTP request. The URL scheme needs to be either `http` or `https`, and `https` is recommended for improved security.
 
 ```other
 WWW-Authenticate: Bearer method="apple-as-web",
@@ -132,15 +132,15 @@ If the client’s enrollment request is invalid, you return a standard HTTP erro
 
 #### Implement the Authentication Flow Steps 6 10
 
-The client adds a query item to the web-auth URL with the name `user-identifier`, and sets the value to the user account identifier that the person enters. The client creates an [`ASWebAuthenticationSession`](https://developer.apple.com/documentation/AuthenticationServices/ASWebAuthenticationSession) using the web-auth URL and a callback scheme that it sets to `apple-remotemanagement-user-login`, and then starts the session.
+The client adds a query item to the web-auth URL with the name `user-identifier`, and sets the value to the user account identifier that the person enters. The client creates an [`ASWebAuthenticationSession`](https://developer.apple.com/documentation/authenticationservices/aswebauthenticationsession) using the web-auth URL and a callback scheme that it sets to `apple-remotemanagement-user-login`, and then starts the session.
 
-![A sequence diagram showing interactions 6-11 between the user, client, device management service, and Apple servers for simple authentication.](https://docs-assets.developer.apple.com/published/2cbae61d89a077cac0cdb9199db8c767/implementing-the-simple-authentication-account-driven-enrollment-flow02%402x.png)
+![A sequence diagram showing interactions 6-11 between the user, client, device management service, and Apple servers for simple authentication.](/images/com.apple.devicemanagement/implementing-the-simple-authentication-account-driven-enrollment-flow02@2x.png)
 
-The [`ASWebAuthenticationSession`](https://developer.apple.com/documentation/AuthenticationServices/ASWebAuthenticationSession) performs an HTTPS `GET` request for the web-auth URL, and presents the resulting HTML data to the user in a web view. A simple HTML sign-in page might contain a form with a user ID and password entry, OK and Cancel buttons, optional terms and conditions, optional branding, and so on.
+The [`ASWebAuthenticationSession`](https://developer.apple.com/documentation/authenticationservices/aswebauthenticationsession) performs an HTTPS `GET` request for the web-auth URL, and presents the resulting HTML data to the user in a web view. A simple HTML sign-in page might contain a form with a user ID and password entry, OK and Cancel buttons, optional terms and conditions, optional branding, and so on.
 
 The service responding to the request can prepopulate any user ID form field by extracting the relevant items from the web-auth URL’s `user-identifier` query item. The service can also use that query item to customize the form based on the user name or domain portions of the user account identifier.
 
-Your device management service might use an internal identity provider (IdP), or a third-party IdP to authenticate users. If your device management service uses a third-party IdP, the web-auth URL request can redirect the client’s web view to the third-party IdP sign-in site to perform user authentication. [`ASWebAuthenticationSession`](https://developer.apple.com/documentation/AuthenticationServices/ASWebAuthenticationSession) supports most types of browser-based single sign-on, multifactor, or federated authentication. There can be several round trips between the client and the IdP before authentication is completed.
+Your device management service might use an internal identity provider (IdP), or a third-party IdP to authenticate users. If your device management service uses a third-party IdP, the web-auth URL request can redirect the client’s web view to the third-party IdP sign-in site to perform user authentication. [`ASWebAuthenticationSession`](https://developer.apple.com/documentation/authenticationservices/aswebauthenticationsession) supports most types of browser-based single sign-on, multifactor, or federated authentication. There can be several round trips between the client and the IdP before authentication is completed.
 
 The user has the option of canceling out of the web view at any time, which terminates the authentication flow and the enrollment.
 
@@ -162,7 +162,7 @@ Content-Length: 17643
 
 #### Return the Authentication Result Step 11
 
-The [`ASWebAuthenticationSession`](https://developer.apple.com/documentation/AuthenticationServices/ASWebAuthenticationSession) web flow completes when the service returns an HTTP 308 permanent redirect response to the client, with a `Location` header that it sets to a URL with a scheme of `apple-remotemanagement-user-login` (the authentication session callback URL scheme). The URL needs to have a network location component of `authentication-results`. The URL needs to include an `access-token` query item with a value that is the access token. The client securely stores the access token for use when authorizing subsequent requests to the service. The service can define the format of the access token — the client treats it as an opaque token. This may be a token that the service itself generates, or one that the IdP generates.
+The [`ASWebAuthenticationSession`](https://developer.apple.com/documentation/authenticationservices/aswebauthenticationsession) web flow completes when the service returns an HTTP 308 permanent redirect response to the client, with a `Location` header that it sets to a URL with a scheme of `apple-remotemanagement-user-login` (the authentication session callback URL scheme). The URL needs to have a network location component of `authentication-results`. The URL needs to include an `access-token` query item with a value that is the access token. The client securely stores the access token for use when authorizing subsequent requests to the service. The service can define the format of the access token — the client treats it as an opaque token. This may be a token that the service itself generates, or one that the IdP generates.
 
 ```other
 <<<<< Request
@@ -192,7 +192,7 @@ If authentication fails, the service returns an appropriate HTTP error response 
 
 The client repeats the HTTP `POST` request it made in the first enrollment attempt, using the same request body. However, this time it also includes an `Authorization HTTP` request header. This header uses the `Bearer` scheme and includes the access token that the client retrieved from the authentication session flow.
 
-![A sequence diagram showing interactions 12-20 between the user, client, device management service, and Apple servers for simple authentication.](https://docs-assets.developer.apple.com/published/026ef73dede367fd03e1fd87061241e6/implementing-the-simple-authentication-account-driven-enrollment-flow03%402x.png)
+![A sequence diagram showing interactions 12-20 between the user, client, device management service, and Apple servers for simple authentication.](/images/com.apple.devicemanagement/implementing-the-simple-authentication-account-driven-enrollment-flow03@2x.png)
 
 When the service processes the HTTP request, it authorizes the request by verifying the validity of the access token in the `Authorization HTTP` request header. If the access token is invalid, or the header isn’t present or has incorrect values, the service needs to reject the request with a suitable HTTP error response status. If the access token is valid, the service returns an `HTTP 200 OK` response with a response body containing the device management (MDM) enrollment profile that the client uses to enroll with the device management service.
 

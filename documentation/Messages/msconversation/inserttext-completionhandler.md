@@ -24,7 +24,7 @@ func insertText(_ text: String) async throws
 
 > ❗ **Important**:  You can call this method from synchronous code using a completion handler, as shown on this page, or you can call it as an asynchronous method that has the following declaration: ```swift
 func insertText(_ text: String) async throws
-``` For information about concurrency and asynchronous code in Swift, see [`Calling Objective-C APIs Asynchronously`](https://developer.apple.com/documentation/Swift/calling-objective-c-apis-asynchronously).
+``` For information about concurrency and asynchronous code in Swift, see [`Calling Objective-C APIs Asynchronously`](https://developer.apple.com/documentation/swift/calling-objective-c-apis-asynchronously).
 
 Use this method to insert text into the Message app’s input field. Users can then send the text by tapping Send. iMessage apps suport this method only in the [`MSMessagesAppPresentationContext.messages`](msmessagesapppresentationcontext/messages.md) context. If called in the [`MSMessagesAppPresentationContext.media`](msmessagesapppresentationcontext/media.md) context, the method fails with an [`MSMessageErrorCode.apiUnavailableInPresentationContext`](msmessageerrorcode/apiunavailableinpresentationcontext.md) error.
 

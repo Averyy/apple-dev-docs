@@ -8,7 +8,7 @@ Offer multiple playlist files to provide different encodings of the same content
 
 The Multivariant Playlist describes all of the available variants for your content. Each variant is a version of the stream at a particular bit rate and is contained in a separate playlist. The client switches to the most appropriate variant based on the measured network bit rate. The client’s player is tuned to minimize stalling of playback, to give the user the best possible streaming experience.
 
-![Flow diagram showing an index file splitting into multiple alternate files. Each alternate file creates the appropriate MP4 file.](https://docs-assets.developer.apple.com/published/67d4ae90b92b9dc32deb63ede697684d/creating-a-multivariant-playlist-1%402x.png)
+![Flow diagram showing an index file splitting into multiple alternate files. Each alternate file creates the appropriate MP4 file.](/images/com.apple.HTTP-Live-Streaming/creating-a-multivariant-playlist-1@2x.png)
 
 A Multivariant Playlist isn’t re-read. Once the client has read the playlist, it assumes the set of variations isn’t changing. The stream ends as soon as the client sees the `EXT-X-ENDLIST` tag on one of the individual variant playlists.
 

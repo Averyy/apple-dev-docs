@@ -22,9 +22,9 @@ var resumptionOffset: CMTime { get set }
 
 #### Discussion
 
-This property supports definite time values. Specify [`indefinite`](https://developer.apple.com/documentation/CoreMedia/CMTime/indefinite) to indicate that the effective resumption time offset should align with the clock time elapsed during interstitial playback; this value is typically suitable for live broadcasts.
+This property supports definite time values. Specify [`indefinite`](https://developer.apple.com/documentation/coremedia/cmtime/indefinite) to indicate that the effective resumption time offset should align with the clock time elapsed during interstitial playback; this value is typically suitable for live broadcasts.
 
-The default value is [`zero`](https://developer.apple.com/documentation/CoreMedia/CMTime/zero).
+The default value is [`zero`](https://developer.apple.com/documentation/coremedia/cmtime/zero).
 
 ## See Also
 

@@ -19,7 +19,7 @@ class let touchBarTextItalicTemplateName: String
 
 #### Discussion
 
-![Template image for italicize text](https://docs-assets.developer.apple.com/published/d3deb5b79303597a04aacd2c9fc3c3c2/media-2793518%402x.png)
+![Template image for italicize text](/images/com.apple.appkit/media-2793518@2x.png)
 
 Touch Bar template images are exclusively for use in [`NSTouchBarItem`](nstouchbaritem.md) objects and not in onscreen windows.
 

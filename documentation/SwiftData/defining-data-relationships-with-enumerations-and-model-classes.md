@@ -14,11 +14,11 @@ Create relationships for static and dynamic data stored in your app.
 
 #### Overview
 
-There are two ways to define data relationships in your app: using enumerations and using the [`Relationship(_:deleteRule:minimumModelCount:maximumModelCount:originalName:inverse:hashModifier:)`](relationship(_:deleterule:minimummodelcount:maximummodelcount:originalname:inverse:hashmodifier:).md) macro in a model class. Which one to use depends on the unique circumstances of your app. This article explains how to apply both approaches to the sample [`SwiftUI`](https://developer.apple.com/documentation/SwiftUI) app that persist data using SwiftData.
+There are two ways to define data relationships in your app: using enumerations and using the [`Relationship(_:deleteRule:minimumModelCount:maximumModelCount:originalName:inverse:hashModifier:)`](relationship(_:deleterule:minimummodelcount:maximummodelcount:originalname:inverse:hashmodifier:).md) macro in a model class. Which one to use depends on the unique circumstances of your app. This article explains how to apply both approaches to the sample [`SwiftUI`](https://developer.apple.com/documentation/swiftui) app that persist data using SwiftData.
 
 ##### Relate a Model Class to Static Data
 
-Enumerations are a convenient way to form relationships between a model class and static data — data that the app defines and doesn’t change. To define the static data, create an enumeration and ensure it conforms to the [`Codable`](https://developer.apple.com/documentation/Swift/Codable) protocol. SwiftData requires this conformance to persist any data that is of the enumeration type. The following code, for example, declares a `Codable` conforming enumeration that specify the animal type based on their diets:
+Enumerations are a convenient way to form relationships between a model class and static data — data that the app defines and doesn’t change. To define the static data, create an enumeration and ensure it conforms to the [`Codable`](https://developer.apple.com/documentation/swift/codable) protocol. SwiftData requires this conformance to persist any data that is of the enumeration type. The following code, for example, declares a `Codable` conforming enumeration that specify the animal type based on their diets:
 
 ```swift
 extension Animal {
@@ -46,7 +46,7 @@ final class Animal {
 }
 ```
 
-A person using the sample app can set the diet of an animal by choosing one of the available `Diet` cases from a [`Picker`](https://developer.apple.com/documentation/SwiftUI/Picker); for example:
+A person using the sample app can set the diet of an animal by choosing one of the available `Diet` cases from a [`Picker`](https://developer.apple.com/documentation/swiftui/picker); for example:
 
 ```swift
 Picker("Diet", selection: $selectedDiet) {
@@ -64,19 +64,19 @@ If the related data is dynamic and unknown to the app — data that comes from a
 
 **iOS**:
 
-![A screenshot of the sample app running in iOS, showing the list of animals that are in the mammal category.](https://docs-assets.developer.apple.com/published/00721de23536f75a264827367d964300/Defining-data-relationships-01%402x.png)
+![A screenshot of the sample app running in iOS, showing the list of animals that are in the mammal category.](/images/com.apple.SwiftData/Defining-data-relationships-01@2x.png)
 
 **iPadOS**:
 
-![A screenshot of the sample app running in iPadOS, showing a three-column user interface. The first column shows a list of categories with Mammal highlighted as the selected category. The second column shows the list of animals that are in the Mammal category. The third column shows an animal paw print icon. Under the icon is the text, Select an animal.](https://docs-assets.developer.apple.com/published/00ea836e9c12096a956d233e6e286955/Defining-data-relationships-02%402x.png)
+![A screenshot of the sample app running in iPadOS, showing a three-column user interface. The first column shows a list of categories with Mammal highlighted as the selected category. The second column shows the list of animals that are in the Mammal category. The third column shows an animal paw print icon. Under the icon is the text, Select an animal.](/images/com.apple.SwiftData/Defining-data-relationships-02@2x.png)
 
 **macOS**:
 
-![A screenshot of the sample app running in macOS, showing a three-column user interface. The first column shows a list of categories with Mammal highlighted as the selected category. The second column shows the list of animals that are in the Mammal category. The third column shows an animal paw print icon. Under the icon is the text, Select an animal.](https://docs-assets.developer.apple.com/published/5c30a1cc8c9622037d0630e2ca7cdbdd/Defining-data-relationships-04%402x.png)
+![A screenshot of the sample app running in macOS, showing a three-column user interface. The first column shows a list of categories with Mammal highlighted as the selected category. The second column shows the list of animals that are in the Mammal category. The third column shows an animal paw print icon. Under the icon is the text, Select an animal.](/images/com.apple.SwiftData/Defining-data-relationships-04@2x.png)
 
 **tvOS**:
 
-![A screenshot of the sample app running in tvOS, showing the list of animals that are in the Mammal category. The first animal, cat, is highlighted.](https://docs-assets.developer.apple.com/published/cde61e1833a6f4e3d189c2e597d8ddd1/Defining-data-relationships-03%402x.png)
+![A screenshot of the sample app running in tvOS, showing the list of animals that are in the Mammal category. The first animal, cat, is highlighted.](/images/com.apple.SwiftData/Defining-data-relationships-03@2x.png)
 
 To declare this relationship, the `AnimalCategory` class defines the property `animals`, which represents the animals contained in the category. The class also applies the [`Relationship(_:deleteRule:minimumModelCount:maximumModelCount:originalName:inverse:hashModifier:)`](relationship(_:deleterule:minimummodelcount:maximummodelcount:originalname:inverse:hashmodifier:).md) macro to the `animals` property. This macro defines the relationship between the `AnimalCategory` and `Animal` model classes.
 
@@ -117,7 +117,7 @@ For a complete list of delete rules, see [`Schema.Relationship.DeleteRule`](sche
 
 ##### Create a Model Container
 
-Whether your data model includes relationships, you must always create a model container for your app when using SwiftData. The sample app creates a model container using the [`modelContainer(for:inMemory:isAutosaveEnabled:isUndoEnabled:onSetup:)`](https://developer.apple.com/documentation/SwiftUI/View/modelContainer(for:inMemory:isAutosaveEnabled:isUndoEnabled:onSetup:)-18hhy) modifier, passing in the model type `AnimalCategory.self`:
+Whether your data model includes relationships, you must always create a model container for your app when using SwiftData. The sample app creates a model container using the [`modelContainer(for:inMemory:isAutosaveEnabled:isUndoEnabled:onSetup:)`](https://developer.apple.com/documentation/swiftui/view/modelcontainer(for:inmemory:isautosaveenabled:isundoenabled:onsetup:)-18hhy) modifier, passing in the model type `AnimalCategory.self`:
 
 ```swift
 @main
@@ -134,7 +134,7 @@ struct SwiftDataAnimalsApp: App {
 SwiftData uses the model type to construct the schema that determines the structure of the persistent storage area. The schema also includes all related types that form the object graph of the provided model type. For instance, `AnimalCategory` is a root model type of an object graph. `AnimalCategory` contains a relationship to the model type `Animal`, which means that the schema includes `Animal` along with `AnimalCategory`. If `Animal` had a relationship to another model type, the schema would also include that type.
 
 If your app defines multiple root model types, use the
-[`modelContainer(for:inMemory:isAutosaveEnabled:isUndoEnabled:onSetup:)`](https://developer.apple.com/documentation/SwiftUI/View/modelContainer(for:inMemory:isAutosaveEnabled:isUndoEnabled:onSetup:)-8oc48) modifier, passing in an array that contains each root model type used in your app.
+[`modelContainer(for:inMemory:isAutosaveEnabled:isUndoEnabled:onSetup:)`](https://developer.apple.com/documentation/swiftui/view/modelcontainer(for:inmemory:isautosaveenabled:isundoenabled:onsetup:)-8oc48) modifier, passing in an array that contains each root model type used in your app.
 
 ## See Also
 

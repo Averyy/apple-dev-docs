@@ -20,7 +20,7 @@ Returns an array of document URLs for text attachment content, if available.
 
 #### Discussion
 
-Each preview item must conform to the [`QLPreviewItem`](https://developer.apple.com/documentation/QuickLookUI/QLPreviewItem) protocol.
+Each preview item must conform to the [`QLPreviewItem`](https://developer.apple.com/documentation/quicklookui/qlpreviewitem) protocol.
 
 ## Parameters
 

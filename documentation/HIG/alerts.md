@@ -13,7 +13,7 @@ framework: HIG
 
 An alert gives people critical information they need right away.
 
-![A stylized representation of an alert mockup that includes a title, description, primary button, and secondary button. The image is tinted red to subtly reflect the red in the original six-color Apple logo.](https://docs-assets.developer.apple.com/published/e55308a1a7ca9f3545a538fde8f4fae2/components-alert-intro~dark%402x.png)
+![A stylized representation of an alert mockup that includes a title, description, primary button, and secondary button. The image is tinted red to subtly reflect the red in the original six-color Apple logo.](/images/com.apple.HIG/components-alert-intro~dark@2x.png)
 For example, an alert can tell people about a problem, warn them when their action might destroy data, and give them an opportunity to confirm a purchase or another important action they initiated.
 
 ## Best practices
@@ -60,17 +60,17 @@ In all platforms, alerts display a title, optional informative text, and up to t
 ### macOS
 macOS automatically displays your app icon in an alert, but you can supply an alternative icon or symbol. In addition, macOS lets you:
 - Configure repeating alerts to let people suppress subsequent occurrences of the same alert.
-- Append a custom view if it’s necessary to provide additional information (for developer guidance, see [accessoryView](../AppKit/NSAlert/accessoryView.md)).
+- Append a custom view if it’s necessary to provide additional information (for developer guidance, see [accessoryView](../appkit/nsalert/accessoryview.md)).
 - Include a Help button that opens your help documentation (see [Help buttons](buttons.md#Help-buttons)).
 **Use a caution symbol sparingly.** Using a caution symbol like `exclamationmark.triangle` too frequently in your alerts diminishes its significance. Use the symbol only when extra attention is really needed, as when confirming an action that might result in unexpected loss of data. Don’t use the symbol for tasks whose only purpose is to overwrite or remove data, such as a save or empty trash.
 
 ### visionOS
 When your app is running in the Shared Space, visionOS displays an alert in front of the app’s window, slightly forward along the z-axis.
 
-[Video: alerts-freeform-delete-warning.mp4](https://docs-assets.developer.apple.com/published/209fa2d4200ef1ec6811fa7695206bd5/alerts-freeform-delete-warning.mp4)
+[Video: alerts-freeform-delete-warning.mp4](/videos/com.apple.HIG/alerts-freeform-delete-warning.mp4)
 If someone moves a window without dismissing its alert, the alert remains anchored to the window. If your app is running in a Full Space, the system displays the alert centered in the wearer’s [Field of view](spatial-layout.md#Field-of-view).
 
-[Video: alerts-shared-space-pinning-to-window.mp4](https://docs-assets.developer.apple.com/published/7e968eebda99e9816a585de03ae0faf9/alerts-shared-space-pinning-to-window.mp4)
+[Video: alerts-shared-space-pinning-to-window.mp4](/videos/com.apple.HIG/alerts-shared-space-pinning-to-window.mp4)
 If you need to display an accessory view in a visionOS alert, create a view that has a maximum height of 154 pt and a 16-pt corner radius.
 
 ## Resources
@@ -81,9 +81,9 @@ If you need to display an accessory view in a visionOS alert, create a view that
 [Sheets](sheets.md)
 
 #### Developer documentation
-[alert(_:isPresented:actions:)](../SwiftUI/View/alert(_:isPresented:actions:)-1bkka.md) — SwiftUI
-[UIAlertController](../UIKit/UIAlertController.md) — UIKit
-[NSAlert](../AppKit/NSAlert.md) — AppKit
+[alert(_:isPresented:actions:)](../swiftui/view/alert(_:ispresented:actions:)-1bkka.md) — SwiftUI
+[UIAlertController](../uikit/uialertcontroller.md) — UIKit
+[NSAlert](../appkit/nsalert.md) — AppKit
 
 ## Change log
 | Date | Changes |

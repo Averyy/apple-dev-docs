@@ -21,7 +21,7 @@ convenience init(from string: String)
 
 #### Return Value
 
-The unit object described by the string. If the string does not represent a valid unit, this method throws an exception ([`invalidArgumentException`](https://developer.apple.com/documentation/Foundation/NSExceptionName/invalidArgumentException)).
+The unit object described by the string. If the string does not represent a valid unit, this method throws an exception ([`invalidArgumentException`](https://developer.apple.com/documentation/foundation/nsexceptionname/invalidargumentexception)).
 
 #### Discussion
 

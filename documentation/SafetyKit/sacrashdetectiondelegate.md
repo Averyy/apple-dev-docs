@@ -31,7 +31,7 @@ Upon app launch, immediately set the delegate so it receives Crash Detection eve
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

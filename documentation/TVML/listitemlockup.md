@@ -8,7 +8,7 @@ Contains a new list item.
 
 The `listItemLockup` subelements are arranged using the `tv-align` and `tv-position` styles. Containing elements are centered by default.
 
-![Layout diagram showing the positions other elements can be placed in.](https://docs-assets.developer.apple.com/published/8ab94a6903cb538652ca1484db33c75a/listitemlockup-1%402x.png)
+![Layout diagram showing the positions other elements can be placed in.](/images/com.apple.TVML/listitemlockup-1@2x.png)
 
 Elements contained in the same position are arranged from the top of the cell to the bottom, in the same order in which they are specified in the `listItemLockup` element. You can specify a `<background><img /></background>` that displays a background image inside of the `listItemLockup`. The background image is top-aligned and is fitted to the size of the `listItemLockup` while keeping the image’s original aspect ratio. Text wrapping inside of the `listItemLockup` only occurs in the `header`, `center`, and `footer` positions. Here is an example of a two `listItemLockup` elements inside a `section` element.
 

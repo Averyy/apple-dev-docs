@@ -22,7 +22,7 @@ let kCMTextFormatDescriptionExtension_BackgroundColor: CFString
 
 #### Discussion
 
-The value needs to be a [`CFDictionary`](https://developer.apple.com/documentation/CoreFoundation/CFDictionary).
+The value needs to be a [`CFDictionary`](https://developer.apple.com/documentation/corefoundation/cfdictionary).
 
 ## See Also
 

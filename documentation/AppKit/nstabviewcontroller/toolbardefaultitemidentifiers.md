@@ -17,7 +17,7 @@ func toolbarDefaultItemIdentifiers(_ toolbar: NSToolbar) -> [NSToolbarItem.Ident
 
 #### Return Value
 
-An array of [`NSString`](https://developer.apple.com/documentation/Foundation/NSString) objects, each of which contains an identifier for a toolbar item that is part of the default configuration. The order of items in the array is used to set the order of items in the toolbar.
+An array of [`NSString`](https://developer.apple.com/documentation/foundation/nsstring) objects, each of which contains an identifier for a toolbar item that is part of the default configuration. The order of items in the array is used to set the order of items in the toolbar.
 
 #### Discussion
 

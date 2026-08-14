@@ -28,8 +28,8 @@ A new SceneKit object (of the specified class) containing the requested scene so
 
 SceneKit recognizes objects of the following classes in scene files:
 
-- [`CAAnimation`](https://developer.apple.com/documentation/QuartzCore/CAAnimation)
-- [`NSImage`](https://developer.apple.com/documentation/AppKit/NSImage) (macOS) or [`UIImage`](https://developer.apple.com/documentation/UIKit/UIImage) (iOS/watchOS/tvOS)
+- [`CAAnimation`](https://developer.apple.com/documentation/quartzcore/caanimation)
+- [`NSImage`](https://developer.apple.com/documentation/appkit/nsimage) (macOS) or [`UIImage`](https://developer.apple.com/documentation/uikit/uiimage) (iOS/watchOS/tvOS)
 - [`SCNCamera`](scncamera.md)
 - [`SCNGeometry`](scngeometry.md)
 - [`SCNLight`](scnlight.md)

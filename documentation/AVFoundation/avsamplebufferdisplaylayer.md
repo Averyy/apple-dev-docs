@@ -45,7 +45,7 @@ class AVSampleBufferDisplayLayer
 - [var preventsAutomaticBackgroundingDuringVideoPlayback: Bool](avsamplebufferdisplaylayer/preventsautomaticbackgroundingduringvideoplayback.md)
   A Boolean value that indicates whether video playback prevents the system from automatically backgrounding an app.
 ### Handling errors
-- [static let AVSampleBufferDisplayLayerFailedToDecode: NSNotification.Name](../Foundation/NSNotification/Name-swift.struct/AVSampleBufferDisplayLayerFailedToDecode.md)
+- [static let AVSampleBufferDisplayLayerFailedToDecode: NSNotification.Name](../foundation/nsnotification/name-swift.struct/avsamplebufferdisplaylayerfailedtodecode.md)
   A notification the system posts when a sample buffer display layer fails to decode.
 - [let AVSampleBufferDisplayLayerFailedToDecodeNotificationErrorKey: String](avsamplebufferdisplaylayerfailedtodecodenotificationerrorkey.md)
   The key for the corresponding error.
@@ -56,22 +56,22 @@ class AVSampleBufferDisplayLayer
 ## Relationships
 
 ### Inherits From
-- [CALayer](../QuartzCore/CALayer.md)
+- [CALayer](../quartzcore/calayer.md)
 ### Conforms To
 - [AVQueuedSampleBufferRendering](avqueuedsamplebufferrendering.md)
-- [CAMediaTiming](../QuartzCore/CAMediaTiming.md)
-- [CVarArg](../Swift/CVarArg.md)
-- [Copyable](../Swift/Copyable.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Escapable](../Swift/Escapable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCoding](../Foundation/NSCoding.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [NSSecureCoding](../Foundation/NSSecureCoding.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [CAMediaTiming](../quartzcore/camediatiming.md)
+- [CVarArg](../swift/cvararg.md)
+- [Copyable](../swift/copyable.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Escapable](../swift/escapable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCoding](../foundation/nscoding.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

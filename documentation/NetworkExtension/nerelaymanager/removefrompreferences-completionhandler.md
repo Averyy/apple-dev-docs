@@ -25,7 +25,7 @@ After you remove your configuration, the [`NERelayManager`](nerelaymanager.md) o
 
 ## Parameters
 
-- `completionHandler`: An optional block that takes an [`NSError`](https://developer.apple.com/documentation/Foundation/NSError) object. If specified, this block runs on your application’s main thread after your configuration is removed. If an error occurs while removing the configuration, the block returns an `NSError` object.
+- `completionHandler`: An optional block that takes an [`NSError`](https://developer.apple.com/documentation/foundation/nserror) object. If specified, this block runs on your application’s main thread after your configuration is removed. If an error occurs while removing the configuration, the block returns an `NSError` object.
 
 ## See Also
 

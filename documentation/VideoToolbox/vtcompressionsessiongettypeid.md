@@ -21,7 +21,7 @@ func VTCompressionSessionGetTypeID() -> CFTypeID
 
 #### Return Value
 
-The [`CFTypeID`](https://developer.apple.com/documentation/CoreFoundation/CFTypeID) of the compression session object.
+The [`CFTypeID`](https://developer.apple.com/documentation/corefoundation/cftypeid) of the compression session object.
 
 
 ---

@@ -55,9 +55,9 @@ backgroundTask.resume()
 
 ##### Handle App Suspension
 
-Different app states affect how your app interacts with the background download. In iOS, your app could be in the foreground, suspended, or even terminated by the system. See [`Managing your app’s life cycle`](https://developer.apple.com/documentation/UIKit/managing-your-app-s-life-cycle) for more information about these states.
+Different app states affect how your app interacts with the background download. In iOS, your app could be in the foreground, suspended, or even terminated by the system. See [`Managing your app’s life cycle`](https://developer.apple.com/documentation/uikit/managing-your-app-s-life-cycle) for more information about these states.
 
-If your app is in the background, the system may suspend your app while the download is performed in another process. In this case, when the download finishes, the system resumes the app and calls the [`UIApplicationDelegate`](https://developer.apple.com/documentation/UIKit/UIApplicationDelegate) method [`application(_:handleEventsForBackgroundURLSession:completionHandler:)`](https://developer.apple.com/documentation/UIKit/UIApplicationDelegate/application(_:handleEventsForBackgroundURLSession:completionHandler:)). This method receives the session identifier you created in `Creating a background URL session` as its second parameter.
+If your app is in the background, the system may suspend your app while the download is performed in another process. In this case, when the download finishes, the system resumes the app and calls the [`UIApplicationDelegate`](https://developer.apple.com/documentation/uikit/uiapplicationdelegate) method [`application(_:handleEventsForBackgroundURLSession:completionHandler:)`](https://developer.apple.com/documentation/uikit/uiapplicationdelegate/application(_:handleeventsforbackgroundurlsession:completionhandler:)). This method receives the session identifier you created in `Creating a background URL session` as its second parameter.
 
 This delegate method also receives a completion handler as its final parameter. Immediately store this handler wherever it makes sense for your app, perhaps as a property of your app delegate, or of your class that implements [`URLSessionDownloadDelegate`](urlsessiondownloaddelegate.md). In the following example, this completion handler is stored in an app delegate property called `backgroundCompletionHandler`.
 
@@ -98,7 +98,7 @@ Once your resumed app calls the completion handler, the download task finishes i
 
 If the system terminated the app while it was suspended, the system relaunches the app in the background. As part of your launch time setup, recreate the background session (see `Creating a background URL session`), using the same session identifier as before, to allow the system to reassociate the background download task with your session. You do this so your background session is ready to go whether the app was launched by the user or by the system. Once the app relaunches, the series of events is the same as if the app had been suspended and resumed, as discussed earlier in [`Handle app suspension`](downloading-files-in-the-background#Handle-app-suspension.md).
 
-> **Note**:  In cases where the transfer is initiated while the app is in the background, the session configuration’s [`isDiscretionary`](urlsessionconfiguration/isdiscretionary.md) property is treated as being [`true`](https://developer.apple.com/documentation/Swift/true).
+> **Note**:  In cases where the transfer is initiated while the app is in the background, the session configuration’s [`isDiscretionary`](urlsessionconfiguration/isdiscretionary.md) property is treated as being [`true`](https://developer.apple.com/documentation/swift/true).
 
 ##### Comply with Background Transfer Limitations
 

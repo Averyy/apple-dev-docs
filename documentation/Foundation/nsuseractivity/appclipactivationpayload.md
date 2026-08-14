@@ -18,7 +18,7 @@ var appClipActivationPayload: APActivationPayload? { get }
 
 #### Discussion
 
-When your App Clip launches, use the activation payload to verify a user’s location. For more information, see [`Responding to invocations`](https://developer.apple.com/documentation/AppClip/responding-to-invocations).
+When your App Clip launches, use the activation payload to verify a user’s location. For more information, see [`Responding to invocations`](https://developer.apple.com/documentation/appclip/responding-to-invocations).
 
 ## See Also
 

@@ -31,7 +31,7 @@ An initialized video node.
 ## See Also
 
 - [init(avPlayer: AVPlayer)](skvideonode/init(avplayer:)-9ydbu.md)
-  Initializes a video node using an existing [`AVPlayer`](https://developer.apple.com/documentation/AVFoundation/AVPlayer) object.
+  Initializes a video node using an existing [`AVPlayer`](https://developer.apple.com/documentation/avfoundation/avplayer) object.
 - [init(url: URL)](skvideonode/init(url:)-2im38.md)
   Initializes a video node using a URL.
 - [init?(coder: NSCoder)](skvideonode/init(coder:).md)

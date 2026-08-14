@@ -22,7 +22,7 @@ This property can take on a float value between `0` and `1.0`. A value of `0` in
 
 The default value of this property is `1.0`.
 
-![Diagrams showing a fully masked cell with a maskAmount value of 1.0, and an unmasked cell with a maskAmount value of 0.0.](https://docs-assets.developer.apple.com/published/9069e9947fbc020eab7ea505c4e1e73a/media-4142366%402x.png)
+![Diagrams showing a fully masked cell with a maskAmount value of 1.0, and an unmasked cell with a maskAmount value of 0.0.](/images/com.apple.tvuikit/media-4142366@2x.png)
 
 ## See Also
 

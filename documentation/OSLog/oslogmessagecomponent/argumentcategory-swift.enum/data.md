@@ -3,7 +3,7 @@
 **Framework**: OSLog  
 **Kind**: case
 
-The argument is an [`NSData`](https://developer.apple.com/documentation/Foundation/NSData) object.
+The argument is an [`NSData`](https://developer.apple.com/documentation/foundation/nsdata) object.
 
 **Availability**:
 - iOS 15.0+

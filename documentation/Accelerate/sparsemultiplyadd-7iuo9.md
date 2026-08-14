@@ -24,7 +24,7 @@ func SparseMultiplyAdd(_ A: SparseMatrix_Double, _ x: DenseVector_Double, _ y: D
 
 Use this function to multiply a sparse matrix by a dense vector and accumulate the result. The following equation is an example of a matrix-vector multiplication where the matrix is sparse:
 
-![A mathematical formula that describes the matrix multiplication, y plus-equals A x. A four-element column matrix added to a four-by-four matrix multiplied by a four-element column matrix equals a four-element column matrix.](https://docs-assets.developer.apple.com/published/ebf231a9b2cd23d96da896c4cb42429b/media-3703081%402x.png)
+![A mathematical formula that describes the matrix multiplication, y plus-equals A x. A four-element column matrix added to a four-by-four matrix multiplied by a four-element column matrix equals a four-element column matrix.](/images/com.apple.accelerate/media-3703081@2x.png)
 
 Call [`SparseMultiplyAdd(_:_:_:)`](sparsemultiplyadd(_:_:_:)-7iuo9.md) to calculate the result.
 

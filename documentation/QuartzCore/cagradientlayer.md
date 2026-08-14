@@ -23,7 +23,7 @@ class CAGradientLayer
 
 You use a gradient layer to create a color gradient containing an arbitrary number of colors. By default, the colors are spread uniformly across the layer, but you can optionally specify locations for control over the color positions through the gradient.
 
-The following code shows how to create a gradient layer containing four colors that are evenly distributed through the gradient. Rotating the layer by 90° ([`pi`](https://developer.apple.com/documentation/Swift/FloatingPoint/pi) ⁄ `2` radians) gives a horizontal gradient.
+The following code shows how to create a gradient layer containing four colors that are evenly distributed through the gradient. Rotating the layer by 90° ([`pi`](https://developer.apple.com/documentation/swift/floatingpoint/pi) ⁄ `2` radians) gives a horizontal gradient.
 
 ```objc
 gradientLayer.colors = [UIColor.red.cgColor,
@@ -36,7 +36,7 @@ gradientLayer.transform = CATransform3DMakeRotation(CGFloat.pi / 2, 0, 0, 1)
 
 The following figure shows the appearance of the gradient layer.
 
-![Color gradient layer](https://docs-assets.developer.apple.com/published/44142ddb755d778cdadae1874f04dc62/media-2825193%402x.png)
+![Color gradient layer](/images/com.apple.quartzcore/media-2825193@2x.png)
 
 ## Topics
 
@@ -61,16 +61,16 @@ The following figure shows the appearance of the gradient layer.
 - [CALayer](calayer.md)
 ### Conforms To
 - [CAMediaTiming](camediatiming.md)
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCoding](../Foundation/NSCoding.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [NSSecureCoding](../Foundation/NSSecureCoding.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCoding](../foundation/nscoding.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

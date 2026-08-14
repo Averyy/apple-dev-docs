@@ -21,7 +21,7 @@ static let imageOrientation: CIRAWFilterOption
 
 #### Discussion
 
-The associated value is an integer value packaged as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) object. Valid values are in range `1...8` and follow the EXIF specification. The value is disregarded when the `kCIIgnoreImageOrientationKey` flag is set. You can change the orientation of the image by overriding this value. By changing this value you can rotate an image in 90-degree increments.
+The associated value is an integer value packaged as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) object. Valid values are in range `1...8` and follow the EXIF specification. The value is disregarded when the `kCIIgnoreImageOrientationKey` flag is set. You can change the orientation of the image by overriding this value. By changing this value you can rotate an image in 90-degree increments.
 
 ## See Also
 

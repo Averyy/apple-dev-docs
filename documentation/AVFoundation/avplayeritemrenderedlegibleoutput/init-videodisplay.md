@@ -21,7 +21,7 @@ init(videoDisplay videoDisplaySize: CGSize)
 
 You can also choose to reset the [`videoDisplaySize`](avplayeritemrenderedlegibleoutput/videodisplaysize.md) value after initialization or during playback.
 
-> ❗ **Important**:  Attempting to set a video display size of [`zero`](https://developer.apple.com/documentation/CoreFoundation/CGSize/zero) results in the system throwing an exception.
+> ❗ **Important**:  Attempting to set a video display size of [`zero`](https://developer.apple.com/documentation/corefoundation/cgsize/zero) results in the system throwing an exception.
 
 ## Parameters
 

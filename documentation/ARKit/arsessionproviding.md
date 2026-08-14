@@ -29,7 +29,7 @@ As an example usage, [`ARCoachingOverlayView`](arcoachingoverlayview.md) exposes
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 ### Conforming Types
 - [ARSCNView](arscnview.md)
 - [ARSKView](arskview.md)

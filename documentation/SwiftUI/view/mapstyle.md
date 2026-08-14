@@ -22,9 +22,9 @@ Specifies the map style to be used.
 
 ## See Also
 
-- [struct LocationButton](../CoreLocationUI/LocationButton.md)
+- [struct LocationButton](../corelocationui/locationbutton.md)
   A SwiftUI button that grants one-time location authorization.
-- [struct Map](../MapKit/Map.md)
+- [struct Map](../mapkit/map.md)
   A view that displays an embedded map interface.
 - [func mapScope(Namespace.ID) -> some View](view/mapscope(_:).md)
   Creates a mapScope that SwiftUI uses to connect map controls to an associated map.

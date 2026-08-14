@@ -31,9 +31,9 @@ In macOS 10.2 and later, Apple recommends using the function [`PMServerCreatePri
 ## Parameters
 
 - `printSession`: The printing session whose printer list you want to obtain.
-- `printerList`: A pointer to your   variable. On return, the variable refers to a Core Foundation array containing a list of printers available in the specified printing session. Each element in the array is a Core Foundation string that contains a printer’s name as shown in the user interface. You are responsible for releasing the array.
-- `currentIndex`: A pointer to your   variable. On return, the variable contains a value specifying where the current printer is in the printer list.
-- `currentPrinter`: A pointer to your   variable. On return, the variable refers to a printer object that represents the current printer. You should not release the printer object without first retaining it. If the printer is the generic printer, the variable is set to  .
+- `printerList`: A pointer to your [`CFArray`](https://developer.apple.com/documentation/corefoundation/cfarray) variable. On return, the variable refers to a Core Foundation array containing a list of printers available in the specified printing session. Each element in the array is a Core Foundation string that contains a printer’s name as shown in the user interface. You are responsible for releasing the array.
+- `currentIndex`: A pointer to your [`CFIndex`](https://developer.apple.com/documentation/corefoundation/cfindex) variable. On return, the variable contains a value specifying where the current printer is in the printer list.
+- `currentPrinter`: A pointer to your [`PMPrinter`](pmprinter.md) variable. On return, the variable refers to a printer object that represents the current printer. You should not release the printer object without first retaining it. If the printer is the generic printer, the variable is set to `NULL`.
 
 ## See Also
 

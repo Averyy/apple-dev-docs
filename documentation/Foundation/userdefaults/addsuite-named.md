@@ -26,7 +26,7 @@ This method inserts the domain for your custom suite of settings after the app d
 
 This method doesn’t affect the destination for write operations. If you want to write settings to a custom suite, use the [`init(suiteName:)`](userdefaults/init(suitename:).md) initializer to construct a `UserDefaults` object specifically for that suite.
 
-> ❗ **Important**: An app that accesses settings in a suite must also have the [`App Groups Entitlement`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.security.application-groups).
+> ❗ **Important**: An app that accesses settings in a suite must also have the [`App Groups Entitlement`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.security.application-groups).
 
 ## Parameters
 

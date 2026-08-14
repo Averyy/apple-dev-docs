@@ -16,7 +16,7 @@ static let detailedErrorReporting: NSPrintInfo.AttributeKey
 
 #### Discussion
 
-If [`true`](https://developer.apple.com/documentation/Swift/true), produce detailed reports when an error occurs.
+If [`true`](https://developer.apple.com/documentation/swift/true), produce detailed reports when an error occurs.
 
 ## See Also
 

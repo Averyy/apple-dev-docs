@@ -20,7 +20,7 @@ var region: CLRegion { get }
 
 #### Discussion
 
-Use the [`notifyOnEntry`](https://developer.apple.com/documentation/CoreLocation/CLRegion/notifyOnEntry) and [`notifyOnExit`](https://developer.apple.com/documentation/CoreLocation/CLRegion/notifyOnExit) properties of this region to specify whether the system sends notifications when the user enters or exits the specified geographic area.
+Use the [`notifyOnEntry`](https://developer.apple.com/documentation/corelocation/clregion/notifyonentry) and [`notifyOnExit`](https://developer.apple.com/documentation/corelocation/clregion/notifyonexit) properties of this region to specify whether the system sends notifications when the user enters or exits the specified geographic area.
 
 
 ---

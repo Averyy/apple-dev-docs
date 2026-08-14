@@ -20,7 +20,7 @@ object InvalidTransactionTypeNotSupportedError
 
 #### Discussion
 
-The [`Send Consumption Information V1`](send-consumption-information-v1.md) endpoint returns this error if the `transactionId` doesn’t represent a supported in-app purchase. Be sure to provide the same `transactionId` that you receive to your [`App Store Server Notifications V2`](https://developer.apple.com/documentation/AppStoreServerNotifications/App-Store-Server-Notifications-V2) endpoint in a notification with a `CONSUMPTION_REQUEST` [`notificationType`](https://developer.apple.com/documentation/AppStoreServerNotifications/notificationType).
+The [`Send Consumption Information V1`](send-consumption-information-v1.md) endpoint returns this error if the `transactionId` doesn’t represent a supported in-app purchase. Be sure to provide the same `transactionId` that you receive to your [`App Store Server Notifications V2`](https://developer.apple.com/documentation/appstoreservernotifications/app-store-server-notifications-v2) endpoint in a notification with a `CONSUMPTION_REQUEST` [`notificationType`](https://developer.apple.com/documentation/appstoreservernotifications/notificationtype).
 
 ## Properties
 

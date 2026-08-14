@@ -22,7 +22,7 @@ var inputGain: Float { get }
 
 This property returns a floating point value ranging from `0.0` to `1.0`, where `0.0` represents the lowest gain setting, and `1.0` represents the highest gain setting.
 
-You can observe changes to the value of this property by using key-value observing. For more information, see [`Using Key-Value Observing in Swift`](https://developer.apple.com/documentation/Swift/using-key-value-observing-in-swift).
+You can observe changes to the value of this property by using key-value observing. For more information, see [`Using Key-Value Observing in Swift`](https://developer.apple.com/documentation/swift/using-key-value-observing-in-swift).
 
 ## See Also
 

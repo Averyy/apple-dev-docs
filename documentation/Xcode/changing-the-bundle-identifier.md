@@ -10,7 +10,7 @@ If you want to change your app’s bundle ID before you upload a build to App St
 
 The *bundle ID* is an information property list key that uniquely identifies your app throughout the system. Some capabilities use information property list or entitlement keys in your project that contain the main bundle ID.
 
-If you refer to a bundle ID in your code, replace it with the [`bundle()`](https://developer.apple.com/documentation/Foundation/bundle()) macro that returns the bundle for the calling code.
+If you refer to a bundle ID in your code, replace it with the [`bundle()`](https://developer.apple.com/documentation/foundation/bundle()) macro that returns the bundle for the calling code.
 
 > **Note**: If you use [`Xcode Cloud`](xcode-cloud.md), commit your project changes to your remote repository before creating a workflow.
 
@@ -23,9 +23,9 @@ First, change the bundle ID in your Xcode project:
 3. Click the Signing & Capabilities tab and if necessary, expand Signing.
 4. In the Bundle Identifier text field, enter your new bundle ID and press Return.
 
-![An Xcode screenshot of the project editor showing the Signing & Capabilities tab selected with the Signing settings revealed and the cursor in the Bundle Identifier text field. ](https://docs-assets.developer.apple.com/published/2756129698d148f3db5d030a998f2fd1/changing-the-bundle-identifier%402x.png)
+![An Xcode screenshot of the project editor showing the Signing & Capabilities tab selected with the Signing settings revealed and the cursor in the Bundle Identifier text field. ](/images/com.apple.Xcode/changing-the-bundle-identifier@2x.png)
 
-Xcode changes the underlying [`CFBundleIdentifier`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/CFBundleIdentifier) information property list key that appears in the app bundle.
+Xcode changes the underlying [`CFBundleIdentifier`](https://developer.apple.com/documentation/bundleresources/information-property-list/cfbundleidentifier) information property list key that appears in the app bundle.
 
 #### Update Companion Target Bundle Ids
 
@@ -33,13 +33,13 @@ Change any target bundle IDs that are derived from the main bundle ID, such as, 
 
 In the project editor, select each target in the sidebar and update its bundle ID in the Bundle Identifier field on the Signing & Capabilities pane on the right.
 
-For watchOS targets, Xcode updates the underlying [`WKCompanionAppBundleIdentifier`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/WKCompanionAppBundleIdentifier) and [`WKAppBundleIdentifier`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/WKAppBundleIdentifier) information property list keys.
+For watchOS targets, Xcode updates the underlying [`WKCompanionAppBundleIdentifier`](https://developer.apple.com/documentation/bundleresources/information-property-list/wkcompanionappbundleidentifier) and [`WKAppBundleIdentifier`](https://developer.apple.com/documentation/bundleresources/information-property-list/wkappbundleidentifier) information property list keys.
 
 #### Change Keys That Depend on the Main Bundle Id
 
 Update any other information property list and entitlement keys that contain the main bundle ID.
 
-For example, if you use App Clips, change the associated [`com.apple.developer.associated-appclip-app-identifiers`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.associated-appclip-app-identifiers) and [`Parent Application Identifiers Entitlement`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.parent-application-identifiers) keys. If you have an app extension, be sure to change the [`com.apple.developer.app-migration.data-container-access`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.app-migration.data-container-access) key too.
+For example, if you use App Clips, change the associated [`com.apple.developer.associated-appclip-app-identifiers`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.associated-appclip-app-identifiers) and [`Parent Application Identifiers Entitlement`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.parent-application-identifiers) keys. If you have an app extension, be sure to change the [`com.apple.developer.app-migration.data-container-access`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.app-migration.data-container-access) key too.
 
 #### Update the Bundle Id in App Store Connect
 

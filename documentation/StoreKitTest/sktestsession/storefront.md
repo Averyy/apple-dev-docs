@@ -24,7 +24,7 @@ var storefront: String { get set }
 
 This property uses the ISO 3166-1 alpha-3 region code representation. The default value is `USA`.
 
-In the testing environment, this variable determines the value of the [`storefront`](https://developer.apple.com/documentation/StoreKit/SKPaymentQueue/storefront) variable on your app’s payment queue, and affects the currency type displayed in the payment sheet.
+In the testing environment, this variable determines the value of the [`storefront`](https://developer.apple.com/documentation/storekit/skpaymentqueue/storefront) variable on your app’s payment queue, and affects the currency type displayed in the payment sheet.
 
 Changing this property overrides its setting in the StoreKit configuration file for this test session. Call [`resetToDefaultState()`](sktestsession/resettodefaultstate().md) to revert all settings to those in the configuration file.
 

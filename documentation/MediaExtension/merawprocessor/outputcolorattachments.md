@@ -16,7 +16,7 @@ optional var outputColorAttachments: [String : Any] { get }
 
 #### Discussion
 
-This is an optional property. Only color-related keys from [`Image Buffer Attachment Keys`](https://developer.apple.com/documentation/CoreVideo/image-buffer-attachment-keys) are permitted in the returned dictionary.
+This is an optional property. Only color-related keys from [`Image Buffer Attachment Keys`](https://developer.apple.com/documentation/corevideo/image-buffer-attachment-keys) are permitted in the returned dictionary.
 
 ## See Also
 

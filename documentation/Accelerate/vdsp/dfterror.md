@@ -29,9 +29,9 @@ enum DFTError
 ## Relationships
 
 ### Conforms To
-- [Error](../Swift/Error.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Error](../swift/error.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

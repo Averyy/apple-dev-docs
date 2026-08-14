@@ -19,7 +19,7 @@ case contact
 
 #### Discussion
 
-![None](https://docs-assets.developer.apple.com/published/9653c596851805b5c8e89a25b8412208/media-2934517%402x.png)
+![None](/images/com.apple.uikit/media-2934517@2x.png)
 
 ## See Also
 

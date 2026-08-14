@@ -57,7 +57,7 @@ For more about using a text document proxy, see [`UIInputViewController`](uiinpu
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 - [UIKeyInput](uikeyinput.md)
 - [UITextInputTraits](uitextinputtraits.md)
 

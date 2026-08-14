@@ -21,7 +21,7 @@ nonisolated init(_ data: Data) where ID == Data.Element.ID, Content == TableRow<
 
 #### Discussion
 
-The following example creates a `Person` type that conforms to [`Identifiable`](https://developer.apple.com/documentation/Swift/Identifiable), and an array of this type called `people`. A `ForEach` instance iterates over the array, producing new [`TableRow`](tablerow.md) instances implicitly.
+The following example creates a `Person` type that conforms to [`Identifiable`](https://developer.apple.com/documentation/swift/identifiable), and an array of this type called `people`. A `ForEach` instance iterates over the array, producing new [`TableRow`](tablerow.md) instances implicitly.
 
 ```swift
 private struct Person: Identifiable {

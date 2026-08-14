@@ -16,9 +16,9 @@ Communicate with and control smart home devices from a variety of manufacturers.
 
 #### Overview
 
-The [`Matter`](https://developer.apple.comhttps://csa-iot.org/all-solutions/matter/) smart home connectivity standard enables interoperability between various smart home devices and ecosystems. Use  [`MatterSupport`](https://developer.apple.com/documentation/MatterSupport)  to bring accessories onto a local network, then commission and control those accessories using Matter.
+The [`Matter`](https://developer.apple.comhttps://csa-iot.org/all-solutions/matter/) smart home connectivity standard enables interoperability between various smart home devices and ecosystems. Use  [`MatterSupport`](https://developer.apple.com/documentation/mattersupport)  to bring accessories onto a local network, then commission and control those accessories using Matter.
 
-![A diagram showing communication between Matter and non-Matter devices within a home. At the center is a Matter-enabled iOS device that connects to a Matter garage door controller on the left and a Matter light switch on the right. The Matter light switch connects to a Matter lamp controller. There are also non-Matter devices in the diagram: an outlet switch, a HomePod, and an Apple TV.](https://docs-assets.developer.apple.com/published/4b3deaf9106818123cf2758f2c2e4511/media-4199669%402x.png)
+![A diagram showing communication between Matter and non-Matter devices within a home. At the center is a Matter-enabled iOS device that connects to a Matter garage door controller on the left and a Matter light switch on the right. The Matter light switch connects to a Matter lamp controller. There are also non-Matter devices in the diagram: an outlet switch, a HomePod, and an Apple TV.](/images/com.apple.matter/media-4199669@2x.png)
 
 To access a Matter accessory on a network, you must commission it. Commissioning provides credentials to enable secure communication and performs initial accessory configuration. Once you commission an accessory, it exposes areas of functionality called clusters that you use to control it. For example, a light exposes the On/Off cluster to control whether it’s on or off. A dimmable light also exposes the Level Control cluster to control its brightness.
 

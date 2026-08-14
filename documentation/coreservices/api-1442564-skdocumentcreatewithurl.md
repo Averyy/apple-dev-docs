@@ -20,11 +20,11 @@ The new document URL object, or `NULL` if the document URL object could not be c
 
 #### Discussion
 
-Use `SKDocumentCreateWithURL` to create a unique reference to a file or to another, arbitrary URL that your application will use as a document URL object (of type [`SKDocument`](skdocument.md)). When your application no longer needs the document URL object, dispose of it by calling [`CFRelease`](https://developer.apple.com/documentation/corefoundation/1521153-cfrelease).
+Use `SKDocumentCreateWithURL` to create a unique reference to a file or to another, arbitrary URL that your application will use as a document URL object (of type [`SKDocument`](skdocument.md)). When your application no longer needs the document URL object, dispose of it by calling [`CFRelease`](https://developer.apple.com/documentation/corefoundation/cfrelease).
 
 ## Parameters
 
-- `inURL`: The URL for the document URL object (of type  ) you are creating. The scheme of the document URL object gets set to the scheme of the URL used. Only URLs with a scheme of “ ” can be used with the   function, but the URL scheme may be anything you like if you use the   function. For more information on schemes, see  .
+- `inURL`: The URL for the document URL object (of type [`SKDocument`](skdocument.md)) you are creating. The scheme of the document URL object gets set to the scheme of the URL used. Only URLs with a scheme of “`file`” can be used with the [`SKIndexAddDocument(_:_:_:_:)`](1444897-skindexadddocument.md) function, but the URL scheme may be anything you like if you use the [`SKIndexAddDocumentWithText(_:_:_:_:)`](1444518-skindexadddocumentwithtext.md) function. For more information on schemes, see [`http://www.iana.org/assignments/uri-schemes.html`](https://developer.apple.comhttp://www.iana.org/assignments/uri-schemes.html).
 
 ## See Also
 

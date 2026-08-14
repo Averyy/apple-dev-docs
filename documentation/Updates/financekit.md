@@ -6,13 +6,13 @@ Learn more about changes to FinanceKit.
 
 #### Overview
 
-Browse notable changes in [`FinanceKit`](https://developer.apple.com/documentation/FinanceKit).
+Browse notable changes in [`FinanceKit`](https://developer.apple.com/documentation/financekit).
 
 #### June 2024
 
 - Use the FinanceKit API to get access to on device financial data.
-- Call `TransactionPicker()` with [`FinanceKitUI`](https://developer.apple.com/documentation/FinanceKitUI) to display an interface with searchable user transactions.
-- Query individual account balances and transactions with [`AccountQuery`](https://developer.apple.com/documentation/FinanceKit/AccountQuery) or track them overtime with `accountHistory()`.
+- Call `TransactionPicker()` with [`FinanceKitUI`](https://developer.apple.com/documentation/financekitui) to display an interface with searchable user transactions.
+- Query individual account balances and transactions with [`AccountQuery`](https://developer.apple.com/documentation/financekit/accountquery) or track them overtime with `accountHistory()`.
 
 ## See Also
 

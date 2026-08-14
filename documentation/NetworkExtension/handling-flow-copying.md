@@ -27,17 +27,17 @@ When implementing a [`NEAppProxyProvider`](neappproxyprovider.md) or [`NEDNSProx
 
 ##### Open the Connection
 
-Once you’ve decided how you want to handle the flow, the next step is to set up the remote side of the connection. You can decide how the provider handles the remote side of the connection, but this article assumes usage of an API such as [`NWConnection`](https://developer.apple.com/documentation/Network/NWConnection) or [`nw_connection_t`](https://developer.apple.com/documentation/Network/nw_connection_t). The steps to open the connection are:
+Once you’ve decided how you want to handle the flow, the next step is to set up the remote side of the connection. You can decide how the provider handles the remote side of the connection, but this article assumes usage of an API such as [`NWConnection`](https://developer.apple.com/documentation/network/nwconnection) or [`nw_connection_t`](https://developer.apple.com/documentation/network/nw_connection_t). The steps to open the connection are:
 
 1. Cast the original [`NEAppProxyFlow`](neappproxyflow.md) object provided from `handleNewFlow` into the transport protocol object that represents the flow the provider is going to copy. For example, if the provider flow copies TCP, use [`NEAppProxyTCPFlow`](neappproxytcpflow.md), and for UDP, use [`NEAppProxyUDPFlow`](neappproxyudpflow.md). The new `NEAppProxyTCPFlow` provides the `remoteEndpoint` object with which you set up the remote connection.
-2. Open the remote connection and wait until it transitions to the [`NWConnection.State.ready`](https://developer.apple.com/documentation/Network/NWConnection/State-swift.enum/ready).
+2. Open the remote connection and wait until it transitions to the [`NWConnection.State.ready`](https://developer.apple.com/documentation/network/nwconnection/state-swift.enum/ready).
 3. After the remote connection is ready, open the local flow using the `NWHostEndpoint` object to represent a local Endpoint.
 
 ##### Handle Inbound Data
 
-When both sides of the connection move into the [`NWConnection.State.ready`](https://developer.apple.com/documentation/Network/NWConnection/State-swift.enum/ready), your next step is to define flow copying methods to read and write inbound data to both sides of the connection. Using `NWConnection` and `NEAppProxyTCPFlow` as an example, you use the following APIs, as shown in the code below:
+When both sides of the connection move into the [`NWConnection.State.ready`](https://developer.apple.com/documentation/network/nwconnection/state-swift.enum/ready), your next step is to define flow copying methods to read and write inbound data to both sides of the connection. Using `NWConnection` and `NEAppProxyTCPFlow` as an example, you use the following APIs, as shown in the code below:
 
-- (Remote side) [`receive(minimumIncompleteLength:maximumLength:completion:)`](https://developer.apple.com/documentation/Network/NWConnection/receive(minimumIncompleteLength:maximumLength:completion:))
+- (Remote side) [`receive(minimumIncompleteLength:maximumLength:completion:)`](https://developer.apple.com/documentation/network/nwconnection/receive(minimumincompletelength:maximumlength:completion:))
 - (Flow side) [`write(_:withCompletionHandler:)`](neappproxytcpflow/write(_:withcompletionhandler:).md)
 
 ```swift
@@ -106,13 +106,13 @@ func outboundCopier() {
 
 ##### Implement Flow Control
 
-Flow control is important because it keeps the Network Extension from allocating unbounded amounts of memory that can lead to slow performance or even a *jetsam event*, where the system frees memory by terminating applications. Such conditions can occur when a device experiences poor network conditions or large volumes of data pass through the provider. For more on a *jetsam event*, see [`Identifying high-memory use with jetsam event reports`](https://developer.apple.com/documentation/Xcode/identifying-high-memory-use-with-jetsam-event-reports).
+Flow control is important because it keeps the Network Extension from allocating unbounded amounts of memory that can lead to slow performance or even a *jetsam event*, where the system frees memory by terminating applications. Such conditions can occur when a device experiences poor network conditions or large volumes of data pass through the provider. For more on a *jetsam event*, see [`Identifying high-memory use with jetsam event reports`](https://developer.apple.com/documentation/xcode/identifying-high-memory-use-with-jetsam-event-reports).
 
 You can implement flow control by using an implicit technique, where all data is written before any more is read.  This prevents buffering too much data at any one time.  Buffering larger amounts of data can lead to memory problems. If the provider must buffer data, set an upper bound on the buffer and don’t read until the buffer has space to hold more data.
 
 ##### Close the Connections
 
-When the system marks the connection as complete, the flow copying process is finished. Once finished, the flow copying process calls [`cancel()`](https://developer.apple.com/documentation/Network/NWConnection/cancel()) on the remote side of the connection, and calls [`closeReadWithError(_:)`](neappproxyflow/closereadwitherror(_:).md) and [`closeWriteWithError(_:)`](neappproxyflow/closewritewitherror(_:).md)  on the flow. Note that you need to apply the same cancellation and close process when an error takes place on either side of the connection.
+When the system marks the connection as complete, the flow copying process is finished. Once finished, the flow copying process calls [`cancel()`](https://developer.apple.com/documentation/network/nwconnection/cancel()) on the remote side of the connection, and calls [`closeReadWithError(_:)`](neappproxyflow/closereadwitherror(_:).md) and [`closeWriteWithError(_:)`](neappproxyflow/closewritewitherror(_:).md)  on the flow. Note that you need to apply the same cancellation and close process when an error takes place on either side of the connection.
 
 ## See Also
 

@@ -23,7 +23,7 @@ func draw(in rect: CGRect)
 
 This method draws the entire image in the current graphics context, respecting the image’s orientation setting. In the default coordinate system, images are situated down and to the right of the origin of the specified rectangle. This method respects any transforms applied to the current graphics context, however.
 
-This method draws the image at full opacity using the [`CGBlendMode.normal`](https://developer.apple.com/documentation/CoreGraphics/CGBlendMode/normal) blend mode.
+This method draws the image at full opacity using the [`CGBlendMode.normal`](https://developer.apple.com/documentation/coregraphics/cgblendmode/normal) blend mode.
 
 ## Parameters
 

@@ -13,7 +13,7 @@ Here are some of the tools you can use to read log data:
 - The Console app provides a graphical user interface for reading and sorting through log data.
 - Use the `log` tool to retrieve log messages from a command-line.
 - When you run your app in Xcode with the debugger attached, Xcode automatically displays logged messages. Similarly, you can use launch Instruments from inside Xcode to record and analyze signposts created by your app.
-- Use the [`OSLog`](https://developer.apple.com/documentation/OSLog) framework to access logged messages programmatically.
+- Use the [`OSLog`](https://developer.apple.com/documentation/oslog) framework to access logged messages programmatically.
 
 ## See Also
 

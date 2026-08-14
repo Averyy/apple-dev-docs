@@ -26,11 +26,11 @@ A new semantic segmentation matte instance.
 
 #### Discussion
 
-This method throws an [`invalidArgumentException`](https://developer.apple.com/documentation/Foundation/NSExceptionName/invalidArgumentException) if you pass an unrecognized `exifOrientation`.
+This method throws an [`invalidArgumentException`](https://developer.apple.com/documentation/foundation/nsexceptionname/invalidargumentexception) if you pass an unrecognized `exifOrientation`.
 
 ## Parameters
 
-- `exifOrientation`: A [`CGImagePropertyOrientation`](https://developer.apple.com/documentation/ImageIO/CGImagePropertyOrientation) value expressing how the matte should be rotated or mirrored.
+- `exifOrientation`: A [`CGImagePropertyOrientation`](https://developer.apple.com/documentation/imageio/cgimagepropertyorientation) value expressing how the matte should be rotated or mirrored.
 
 ## See Also
 

@@ -30,8 +30,8 @@ This method applies the bloom filter to an image. The effect softens edges and a
 The bloom filter uses the following properties:
 
 - **`inputImage`**: An image with the type [`CIImage`](ciimage.md).
-- **`radius`**: A `float` representing the area of effect as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
-- **`intensity`**: A `float` representing the desired strength of the effect as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+- **`radius`**: A `float` representing the area of effect as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
+- **`intensity`**: A `float` representing the desired strength of the effect as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
 
 The following code creates a filter that results in a hazy effect on the image:
 
@@ -45,7 +45,7 @@ func bloom(inputImage: CIImage) -> CIImage {
 }
 ```
 
-![Two photographs of multiple sets of small purple flowers surrounded by other flowers and a blue sky. The photo on the left is clear and crisp. In the photo on the right, a bloom filter is applied and the image is brighter and looks slightly fuzzy or hazy.](https://docs-assets.developer.apple.com/published/bed79e81180210637a412e2b9f295592/media-3599995%402x.png)
+![Two photographs of multiple sets of small purple flowers surrounded by other flowers and a blue sky. The photo on the left is clear and crisp. In the photo on the right, a bloom filter is applied and the image is brighter and looks slightly fuzzy or hazy.](/images/com.apple.coreimage/media-3599995@2x.png)
 
 ## See Also
 

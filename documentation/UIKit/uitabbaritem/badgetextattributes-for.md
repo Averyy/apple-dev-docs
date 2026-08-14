@@ -20,7 +20,7 @@ func badgeTextAttributes(for state: UIControl.State) -> [NSAttributedString.Key 
 
 #### Discussion
 
-Use this method to retrieve the attributes the item applies to its badge’s value for the specified state. For a list of attributes, see [`NSAttributedString.Key`](https://developer.apple.com/documentation/Foundation/NSAttributedString/Key).
+Use this method to retrieve the attributes the item applies to its badge’s value for the specified state. For a list of attributes, see [`NSAttributedString.Key`](https://developer.apple.com/documentation/foundation/nsattributedstring/key).
 
 ## Parameters
 

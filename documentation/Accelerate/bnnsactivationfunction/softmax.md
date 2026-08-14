@@ -24,7 +24,7 @@ static var softmax: BNNSActivationFunction { get }
 
 This constant defines an activation function that returns values using the following formula:
 
-![General formula that describes mathematically the softmax activation function. s open bracket x sub i close bracket equals  the exponential of x sub i over summation from j equals one to n times the exponential of x sub j.](https://docs-assets.developer.apple.com/published/ce7621b84d5ab53d3174d8b6b257582c/media-3402491%402x.png)
+![General formula that describes mathematically the softmax activation function. s open bracket x sub i close bracket equals  the exponential of x sub i over summation from j equals one to n times the exponential of x sub j.](/images/com.apple.accelerate/media-3402491@2x.png)
 
 The softmax function transforms a vector of real numbers into a vector of probabilities. Each probability in the result is in the range 0…1, and the sum of the probabilities is 1.
 

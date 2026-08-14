@@ -22,7 +22,7 @@ func location(atPointIndex index: Int) -> CGFloat
 
 #### Return Value
 
-A [`CGFloat`](https://developer.apple.com/documentation/CoreFoundation/CGFloat-swift.struct) value that indicates the unit distance along the shape.
+A [`CGFloat`](https://developer.apple.com/documentation/corefoundation/cgfloat-swift.struct) value that indicates the unit distance along the shape.
 
 ## Parameters
 

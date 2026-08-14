@@ -22,8 +22,8 @@ The [`ElectricityInsightRecord`](electricityinsightrecord.md) structure’s [`da
 
 The type of electricity usage that this structure stores depends on the generic type parameter of a given [`ElectricityInsightMeasure`](electricityinsightmeasure.md) instance. If the generic type is:
 
-- **[`Measurement`](https://developer.apple.com/documentation/Foundation/Measurement)<[`UnitEnergy`](https://developer.apple.com/documentation/Foundation/UnitEnergy)>**: The electricity usage refers to energy consumption or generation.
-- **[`Duration`](https://developer.apple.com/documentation/Swift/Duration)**: The electricity usage refers to an amount of time that an electrical device is operational and consuming energy.
+- **[`Measurement`](https://developer.apple.com/documentation/foundation/measurement)<[`UnitEnergy`](https://developer.apple.com/documentation/foundation/unitenergy)>**: The electricity usage refers to energy consumption or generation.
+- **[`Duration`](https://developer.apple.com/documentation/swift/duration)**: The electricity usage refers to an amount of time that an electrical device is operational and consuming energy.
 
 ## Topics
 

@@ -25,7 +25,7 @@ class AVRouteDetector
 
 #### Overview
 
-If you enable route detection, the object reports whether it detects multiple playback routes. If it does, use [`AVRoutePickerView`](https://developer.apple.com/documentation/AVKit/AVRoutePickerView) to present the UI for the user to select an appropriate route.
+If you enable route detection, the object reports whether it detects multiple playback routes. If it does, use [`AVRoutePickerView`](https://developer.apple.com/documentation/avkit/avroutepickerview) to present the UI for the user to select an appropriate route.
 
 ## Topics
 
@@ -34,7 +34,7 @@ If you enable route detection, the object reports whether it detects multiple pl
   A Boolean value that indicates whether route detection is in an enabled state.
 - [var multipleRoutesDetected: Bool](avroutedetector/multipleroutesdetected.md)
   A Boolean value that indicates whether the object detects more than one playback route.
-- [static let AVRouteDetectorMultipleRoutesDetectedDidChange: NSNotification.Name](../Foundation/NSNotification/Name-swift.struct/AVRouteDetectorMultipleRoutesDetectedDidChange.md)
+- [static let AVRouteDetectorMultipleRoutesDetectedDidChange: NSNotification.Name](../foundation/nsnotification/name-swift.struct/avroutedetectormultipleroutesdetecteddidchange.md)
   A notification the system posts when changes occur to its detected routes.
 ### Deprecated
 - [var detectsCustomRoutes: Bool](avroutedetector/detectscustomroutes.md)
@@ -43,16 +43,16 @@ If you enable route detection, the object reports whether it detects multiple pl
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 
 ---

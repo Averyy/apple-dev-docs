@@ -20,7 +20,7 @@ var caseSensitive: Bool { get set }
 
 #### Discussion
 
-When the value of this property is [`true`](https://developer.apple.com/documentation/Swift/true), the web view takes case into account when matching the search string. The default value of this property is [`false`](https://developer.apple.com/documentation/Swift/false).
+When the value of this property is [`true`](https://developer.apple.com/documentation/swift/true), the web view takes case into account when matching the search string. The default value of this property is [`false`](https://developer.apple.com/documentation/swift/false).
 
 ## See Also
 

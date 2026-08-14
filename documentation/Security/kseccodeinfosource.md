@@ -17,7 +17,7 @@ let kSecCodeInfoSource: CFString
 
 #### Discussion
 
-The value is a [`CFString`](https://developer.apple.com/documentation/CoreFoundation/CFString) object. This string is for display purposes only. Don’t rely on the precise value returned.
+The value is a [`CFString`](https://developer.apple.com/documentation/corefoundation/cfstring) object. This string is for display purposes only. Don’t rely on the precise value returned.
 
 This is generic information returned regardless of which [`Code Signing Information Flags`](code-signing-information-flags.md) you pass to the [`SecCodeCopySigningInformation(_:_:_:)`](seccodecopysigninginformation(_:_:_:).md) function.
 

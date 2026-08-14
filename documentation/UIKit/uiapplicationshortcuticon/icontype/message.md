@@ -19,7 +19,7 @@ case message
 
 #### Discussion
 
-![None](https://docs-assets.developer.apple.com/published/1f467aabd52fd18981bbcf707a29fcc1/media-2934526%402x.png)
+![None](/images/com.apple.uikit/media-2934526@2x.png)
 
 ## See Also
 

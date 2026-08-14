@@ -16,8 +16,8 @@ typedef void (*IOUSBCompletionActionWithTimeStamp)(void *target, void *parameter
 
 ## Parameters
 
-- `target`: The target that the   structure specifies.
-- `parameter`: The parameter that the   structure specifies.
+- `target`: The target that the `IOUSBCompletion` structure specifies.
+- `parameter`: The parameter that the `IOUSBCompletion` structure specifies.
 - `status`: The completion status.
 - `bufferSizeRemaining`: The bytes remaining to transfer.
 - `timeStamp`: The time that the system processed the transaction.

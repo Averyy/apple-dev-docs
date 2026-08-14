@@ -17,7 +17,7 @@ enum Code
 
 #### Overview
 
-These constants are [`NSError`](https://developer.apple.com/documentation/Foundation/NSError) code numbers in the Automator error domain ([`AMAutomatorErrorDomain`](amautomatorerrordomain.md)). You’ll obtain these error codes from the instances of [`NSError`](https://developer.apple.com/documentation/Foundation/NSError) returned, for example, by certain methods of [`AMWorkflow`](amworkflow.md) and [`AMWorkflowController`](amworkflowcontroller.md). For related information, see [`AMActionErrorKey`](amactionerrorkey.md).
+These constants are [`NSError`](https://developer.apple.com/documentation/foundation/nserror) code numbers in the Automator error domain ([`AMAutomatorErrorDomain`](amautomatorerrordomain.md)). You’ll obtain these error codes from the instances of [`NSError`](https://developer.apple.com/documentation/foundation/nserror) returned, for example, by certain methods of [`AMWorkflow`](amworkflow.md) and [`AMWorkflowController`](amworkflowcontroller.md). For related information, see [`AMActionErrorKey`](amactionerrorkey.md).
 
 ## Topics
 
@@ -99,12 +99,12 @@ These constants are [`NSError`](https://developer.apple.com/documentation/Founda
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../Swift/BitwiseCopyable.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [RawRepresentable](../Swift/RawRepresentable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [BitwiseCopyable](../swift/bitwisecopyable.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [RawRepresentable](../swift/rawrepresentable.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

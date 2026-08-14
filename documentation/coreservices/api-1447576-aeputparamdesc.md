@@ -24,9 +24,9 @@ Thread safe starting in OS X v10.2.
 
 ## Parameters
 
-- `theAppleEvent`: A pointer to the Apple event to add a parameter to. See the   data type.
-- `theAEKeyword`: See  .
-- `theAEDesc`: A pointer to the descriptor for the parameter to add. See  .
+- `theAppleEvent`: A pointer to the Apple event to add a parameter to. See the [`AppleEvent`](appleevent.md) data type.
+- `theAEKeyword`: The keyword specifying the parameter to add. If the Apple event already has a parameter with this keyword, the parameter is replaced. Some keyword constants are described in [`Keyword Parameter Constants`](apple_events/1527206-keyword_parameter_constants.md). See [`AEKeyword`](aekeyword.md).
+- `theAEDesc`: A pointer to the descriptor for the parameter to add. See [`AEDesc`](aedesc.md).
 
 ## See Also
 

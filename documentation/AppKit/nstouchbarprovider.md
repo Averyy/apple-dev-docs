@@ -26,7 +26,7 @@ protocol NSTouchBarProvider : NSObjectProtocol
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 ### Conforming Types
 - [NSApplication](nsapplication.md)
 - [NSBackgroundExtensionView](nsbackgroundextensionview.md)

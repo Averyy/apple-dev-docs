@@ -99,7 +99,7 @@ entity.playAudio(audioResource)
 
 ### Conforms To
 - [Component](component.md)
-- [ExpressibleByDictionaryLiteral](../Swift/ExpressibleByDictionaryLiteral.md)
+- [ExpressibleByDictionaryLiteral](../swift/expressiblebydictionaryliteral.md)
 
 ## See Also
 
@@ -108,7 +108,7 @@ entity.playAudio(audioResource)
 - [class AudioFileGroupResource](audiofilegroupresource.md)
   An audio file group.
 - [class AudioBufferResource](audiobufferresource.md)
-  An audio resource that you load from an [`AVAudioBuffer`](https://developer.apple.com/documentation/AVFAudio/AVAudioBuffer).
+  An audio resource that you load from an [`AVAudioBuffer`](https://developer.apple.com/documentation/avfaudio/avaudiobuffer).
 - [class AudioResource](audioresource.md)
   A playable audio resource
 - [AudioResource.Calibration](audioresource/calibration.md)

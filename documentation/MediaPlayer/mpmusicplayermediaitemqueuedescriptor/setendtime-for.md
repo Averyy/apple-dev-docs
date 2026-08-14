@@ -19,7 +19,7 @@ func setEndTime(_ endTime: TimeInterval, for mediaItem: MPMediaItem)
 
 ## Parameters
 
-- `endTime`: The [`TimeInterval`](https://developer.apple.com/documentation/Foundation/TimeInterval) describing when the media item stops playing.
+- `endTime`: The [`TimeInterval`](https://developer.apple.com/documentation/foundation/timeinterval) describing when the media item stops playing.
 - `mediaItem`: The media item in the queue that has a changed end time.
 
 ## See Also

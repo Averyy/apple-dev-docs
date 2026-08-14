@@ -7,7 +7,6 @@ An array of suggestions associated with the message.
 
 **Availability**:
 - iOS 26.0+
-- iPadOS 26.0+
 
 ## Declaration
 

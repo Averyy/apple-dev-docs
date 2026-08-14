@@ -52,7 +52,7 @@ See the [`Memory Management Programming Guide for Core Foundation`](https://deve
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../Swift/BitwiseCopyable.md)
+- [BitwiseCopyable](../swift/bitwisecopyable.md)
 
 
 ---

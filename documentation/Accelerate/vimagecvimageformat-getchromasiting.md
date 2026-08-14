@@ -22,7 +22,7 @@ func vImageCVImageFormat_GetChromaSiting(_ format: vImageConstCVImageFormat) -> 
 
 #### Return Value
 
-A [`CFString`](https://developer.apple.com/documentation/CoreFoundation/CFString) that describes the positioning of the chrominance samples.
+A [`CFString`](https://developer.apple.com/documentation/corefoundation/cfstring) that describes the positioning of the chrominance samples.
 
 #### Discussion
 

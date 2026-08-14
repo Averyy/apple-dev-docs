@@ -20,7 +20,7 @@ You can use this property within a grid layout to apply even spacing around each
 
 The following diagram shows the result of applying 2 points of content insets to each edge of each item in a group.
 
-![Two diagrams that show the result of content insets applied to a group of items. The first diagram shows a group of three square items in a row, each item measuring 20 by 20 points. The second diagram shows content insets of 2 applied to each edge of each item, resulting in each item becoming 16 by 16 points. The group remains the same size.](https://docs-assets.developer.apple.com/published/ddf6c44ab63613a629b4dba170e46eee/media-3570427%402x.png)
+![Two diagrams that show the result of content insets applied to a group of items. The first diagram shows a group of three square items in a row, each item measuring 20 by 20 points. The second diagram shows content insets of 2 applied to each edge of each item, resulting in each item becoming 16 by 16 points. The group remains the same size.](/images/com.apple.appkit/media-3570427@2x.png)
 
 > **Note**:  The value of this property is ignored for any axis that uses an estimated value for its dimension. For more information, see [`estimated(_:)`](nscollectionlayoutdimension/estimated(_:).md).
 

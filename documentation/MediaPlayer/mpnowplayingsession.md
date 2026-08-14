@@ -20,7 +20,7 @@ class MPNowPlayingSession
 
 #### Overview
 
-An [`AVPlayer`](https://developer.apple.com/documentation/AVFoundation/AVPlayer) object can have only one Now Playing session. An [`AVPlayerViewController`](https://developer.apple.com/documentation/AVKit/AVPlayerViewController) manages its own player and Now Playing session, so you can’t add your own Now Playing session.
+An [`AVPlayer`](https://developer.apple.com/documentation/avfoundation/avplayer) object can have only one Now Playing session. An [`AVPlayerViewController`](https://developer.apple.com/documentation/avkit/avplayerviewcontroller) manages its own player and Now Playing session, so you can’t add your own Now Playing session.
 
 > ❗ **Important**:  If you create an `MPNowPlayingSession` object, don’t attempt to use it with the `AVPlayer` that an `AVPlayerViewController` presents. Create your own `AVPlayer` instance with custom playback controls to use with your Now Playing session.
 
@@ -60,14 +60,14 @@ An [`AVPlayer`](https://developer.apple.com/documentation/AVFoundation/AVPlayer)
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

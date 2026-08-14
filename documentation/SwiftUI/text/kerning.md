@@ -39,15 +39,15 @@ VStack(alignment: .leading) {
 
 The last character in the first case, which uses negative kerning, experiences cropping because the kerning affects the trailing edge of the text view as well.
 
-![Three text views showing character groups, with progressively](https://docs-assets.developer.apple.com/published/8a1af1e199d6c4f2dabecc906d0b2b5b/SwiftUI-Text-kerning-1%402x.png)
+![Three text views showing character groups, with progressively](/images/com.apple.SwiftUI/SwiftUI-Text-kerning-1@2x.png)
 
 Kerning attempts to maintain ligatures. For example, the Hoefler Text font uses a ligature for the letter combination *ffl*, as in the word *raffle*, shown here with a small negative and a small positive kerning:
 
-![Two text views showing the word raffle in the Hoefler Text font, the](https://docs-assets.developer.apple.com/published/e150d2faa87f2502f78816d52bf23e9c/SwiftUI-Text-kerning-2%402x.png)
+![Two text views showing the word raffle in the Hoefler Text font, the](/images/com.apple.SwiftUI/SwiftUI-Text-kerning-2@2x.png)
 
 The *ffl* letter combination keeps a constant shape as the other letters move together or apart. Beyond a certain point in either direction, however, kerning does disable nonessential ligatures.
 
-![Two text views showing the word raffle in the Hoefler Text font, the](https://docs-assets.developer.apple.com/published/12c156ffa170a7b5e73e033db44cf721/SwiftUI-Text-kerning-3%402x.png)
+![Two text views showing the word raffle in the Hoefler Text font, the](/images/com.apple.SwiftUI/SwiftUI-Text-kerning-3@2x.png)
 
 > ❗ **Important**: If you add both the [`tracking(_:)`](text/tracking(_:).md) and [`kerning(_:)`](text/kerning(_:).md) modifiers to a view, the view applies the tracking and ignores the kerning.
 

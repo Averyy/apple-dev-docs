@@ -7,7 +7,6 @@ Group handle indicating the group to which to add participants.
 
 **Availability**:
 - iOS 26.0+
-- iPadOS 26.0+
 
 ## Declaration
 

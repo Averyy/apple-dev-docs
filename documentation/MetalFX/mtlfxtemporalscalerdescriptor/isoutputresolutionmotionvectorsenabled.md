@@ -20,11 +20,11 @@ var isOutputResolutionMotionVectorsEnabled: Bool { get set }
 
 #### Discussion
 
-Set this property to [`true`](https://developer.apple.com/documentation/Swift/true) when your app provides motion vectors at the output resolution rather than the input resolution.
+Set this property to [`true`](https://developer.apple.com/documentation/swift/true) when your app provides motion vectors at the output resolution rather than the input resolution.
 
 When you enable this property, the scaler interprets the [`motionTexture`](mtlfxtemporalscalerbase/motiontexture.md) dimensions to match [`outputWidth`](mtlfxtemporalscalerdescriptor/outputwidth.md) and [`outputHeight`](mtlfxtemporalscalerdescriptor/outputheight.md) instead of [`inputWidth`](mtlfxtemporalscalerdescriptor/inputwidth.md) and [`inputHeight`](mtlfxtemporalscalerdescriptor/inputheight.md).
 
-This property’s default value is [`false`](https://developer.apple.com/documentation/Swift/false).
+This property’s default value is [`false`](https://developer.apple.com/documentation/swift/false).
 
 
 ---

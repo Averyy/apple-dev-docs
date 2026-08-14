@@ -30,7 +30,7 @@ Is readable when the event is of type kOBEXSessionEventTypeAbortCommandReceived 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../Swift/BitwiseCopyable.md)
+- [BitwiseCopyable](../swift/bitwisecopyable.md)
 
 ## See Also
 

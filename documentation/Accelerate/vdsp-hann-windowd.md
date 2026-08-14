@@ -55,7 +55,7 @@ vDSP_hann_windowD(&c,
 
 The following illustrates the values of the output vector, `c`:
 
-![Visualization of a Hann window.](https://docs-assets.developer.apple.com/published/e79c7c67e6b7c717006b927e62cd2c88/media-3368167%402x.png)
+![Visualization of a Hann window.](/images/com.apple.accelerate/media-3368167@2x.png)
 
 ## Parameters
 

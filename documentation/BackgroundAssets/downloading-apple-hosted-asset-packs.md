@@ -20,9 +20,9 @@ Your app and your downloader extension target need to share an app group, which 
 
 In the project editor, select the app target and click the Info tab. Then, add the following keys to the information property list file:
 
-- **[`BAAppGroupID`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/BAAppGroupID)**: The string ID of the app group that your app and downloader extension targets share.
-- **[`BAHasManagedAssetPacks`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/BAHasManagedAssetPacks)**: For apps that use Managed Background Assets (including Apple-Hosted Background Assets), you must set this key to `YES`.
-- **[`BAUsesAppleHosting`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/BAUsesAppleHosting)**: For apps that use Apple-Hosted Background Assets, you must set this key to `YES`.
+- **[`BAAppGroupID`](https://developer.apple.com/documentation/bundleresources/information-property-list/baappgroupid)**: The string ID of the app group that your app and downloader extension targets share.
+- **[`BAHasManagedAssetPacks`](https://developer.apple.com/documentation/bundleresources/information-property-list/bahasmanagedassetpacks)**: For apps that use Managed Background Assets (including Apple-Hosted Background Assets), you must set this key to `YES`.
+- **[`BAUsesAppleHosting`](https://developer.apple.com/documentation/bundleresources/information-property-list/bausesapplehosting)**: For apps that use Apple-Hosted Background Assets, you must set this key to `YES`.
 
 For apps that use Apple-Hosted Background Assets, omit all other Background Assets information property list keys from your project.
 
@@ -30,7 +30,7 @@ For apps that use Apple-Hosted Background Assets, omit all other Background Asse
 
 The default system implementation supports automatic downloads, background updates, compression, and more that you can customize. The system calls the [`shouldDownload(_:)`](manageddownloaderextension/shoulddownload(_:).md) method each time it downloads a new asset pack based on its download policy. Optionally, use this method to filter downloads at runtime.
 
-![A screenshot of the project editor showing the download extension code created from the template. The source editor shows the default ](https://docs-assets.developer.apple.com/published/8a8fbc3013759ff2f111baa729d95af3/downloading-asset-packs-downloader-extension%402x.png)
+![A screenshot of the project editor showing the download extension code created from the template. The source editor shows the default ](/images/com.apple.backgroundassets/downloading-asset-packs-downloader-extension@2x.png)
 
 If you don’t need to customize the download behavior for your asset packs beyond the download policies that you configure in the manifest files, remove the [`shouldDownload(_:)`](manageddownloaderextension/shoulddownload(_:).md) method implementation from your downloader-extension structure. Otherwise, if your asset packs have specific compatibility requirements, provide a custom implementation for the [`shouldDownload(_:)`](manageddownloaderextension/shoulddownload(_:).md) method.
 
@@ -100,7 +100,7 @@ ManagedAssetPackDownloadDelegate* delegate = [[ManagedAssetPackDownloadDelegate 
 [[BAAssetPackManager sharedManager] setDelegate:delegate];
 ```
 
-To cancel a download, call the [`cancel()`](https://developer.apple.com/documentation/Foundation/Progress/cancel()) method on any of the [`Progress`](https://developer.apple.com/documentation/Foundation/Progress) objects that you receive in the download status updates:
+To cancel a download, call the [`cancel()`](https://developer.apple.com/documentation/foundation/progress/cancel()) method on any of the [`Progress`](https://developer.apple.com/documentation/foundation/progress) objects that you receive in the download status updates:
 
 ```swift
 switch statusUpdate {
@@ -120,7 +120,7 @@ let videoData = try AssetPackManager.shared.contents(at: "Videos/Introduction.m4
 
 The system automatically merges all of your asset packs into a shared namespace, effectively reconstructing your asset root folder as if it were pasted on a person’s device. This way, you can access individual files without needing to know which asset pack they reside in.
 
-By default, the [`contents(at:searchingInAssetPackWithID:options:)`](assetpackmanager/contents(at:searchinginassetpackwithid:options:).md) method returns a memory-mapped [`Data`](https://developer.apple.com/documentation/Foundation/Data) instance, which is suitable even for large asset files that take up a lot of space in memory. If you need low-level access to the file descriptor — for example, to read a file into memory procedurally — then you can use the [`descriptor(for:searchingInAssetPackWithID:)`](assetpackmanager/descriptor(for:searchinginassetpackwithid:).md) method instead:
+By default, the [`contents(at:searchingInAssetPackWithID:options:)`](assetpackmanager/contents(at:searchinginassetpackwithid:options:).md) method returns a memory-mapped [`Data`](https://developer.apple.com/documentation/foundation/data) instance, which is suitable even for large asset files that take up a lot of space in memory. If you need low-level access to the file descriptor — for example, to read a file into memory procedurally — then you can use the [`descriptor(for:searchingInAssetPackWithID:)`](assetpackmanager/descriptor(for:searchinginassetpackwithid:).md) method instead:
 
 ```swift
 let videoDescriptor = try AssetPackManager.shared.descriptor(for: "Videos/Introduction.m4v")

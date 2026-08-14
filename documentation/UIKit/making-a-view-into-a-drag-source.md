@@ -48,20 +48,20 @@ func dragInteraction(_ interaction: UIDragInteraction, itemsForBeginning session
 }
 ```
 
-> **Note**:  The cast from the Swift [`String`](https://developer.apple.com/documentation/Swift/String) type to the Foundation [`NSString`](https://developer.apple.com/documentation/Foundation/NSString) class, in the code snippet above, is required because model objects for drag and drop must support the [`NSItemProviderWriting`](https://developer.apple.com/documentation/Foundation/NSItemProviderWriting) protocol.
+> **Note**:  The cast from the Swift [`String`](https://developer.apple.com/documentation/swift/string) type to the Foundation [`NSString`](https://developer.apple.com/documentation/foundation/nsstring) class, in the code snippet above, is required because model objects for drag and drop must support the [`NSItemProviderWriting`](https://developer.apple.com/documentation/foundation/nsitemproviderwriting) protocol.
 
-This implementation uses the [`init(object:)`](https://developer.apple.com/documentation/Foundation/NSItemProvider/init(object:)) convenience initializer. When you instantiate a drag item, pass an object in your app’s native representation, or in the highest-fidelity representation you support. In general, ensure that the first element in the item provider’s [`registeredTypeIdentifiers`](https://developer.apple.com/documentation/Foundation/NSItemProvider/registeredTypeIdentifiers) array represents the highest-fidelity data your drag interaction delegate can deliver.
+This implementation uses the [`init(object:)`](https://developer.apple.com/documentation/foundation/nsitemprovider/init(object:)) convenience initializer. When you instantiate a drag item, pass an object in your app’s native representation, or in the highest-fidelity representation you support. In general, ensure that the first element in the item provider’s [`registeredTypeIdentifiers`](https://developer.apple.com/documentation/foundation/nsitemprovider/registeredtypeidentifiers) array represents the highest-fidelity data your drag interaction delegate can deliver.
 
 To add more data representations to a drag item, as you typically would in your app, add them in fidelity order, from highest to lowest. When adding representations, you have choices:
 
-- The best option for adding multiple data representations to a drag item, in many cases, is to adopt the [`NSItemProviderWriting`](https://developer.apple.com/documentation/Foundation/NSItemProviderWriting) protocol in your model class. Using this protocol, you place the code for providing multiple data representations within the model class.
-- You can use the [`registerObject(_:visibility:)`](https://developer.apple.com/documentation/Foundation/NSItemProvider/registerObject(_:visibility:)) method, or related methods, from the [`NSItemProvider`](https://developer.apple.com/documentation/Foundation/NSItemProvider) class, to explicitly register data representations.
+- The best option for adding multiple data representations to a drag item, in many cases, is to adopt the [`NSItemProviderWriting`](https://developer.apple.com/documentation/foundation/nsitemproviderwriting) protocol in your model class. Using this protocol, you place the code for providing multiple data representations within the model class.
+- You can use the [`registerObject(_:visibility:)`](https://developer.apple.com/documentation/foundation/nsitemprovider/registerobject(_:visibility:)) method, or related methods, from the [`NSItemProvider`](https://developer.apple.com/documentation/foundation/nsitemprovider) class, to explicitly register data representations.
 
 ##### Understand a Drag Source in Context
 
 In the [`dragInteraction(_:itemsForBeginning:)`](uidraginteractiondelegate/draginteraction(_:itemsforbeginning:).md) protocol method, your source app responds to a request from the system. This request is itself triggered by the user starting to drag an item in your app’s UI. The conversation between your app and the system proceeds as shown here:
 
-![APIs for providing drag items from a drag source](https://docs-assets.developer.apple.com/published/ef04a983c2d83148c7e1929bce5ea101/media-2903752%402x.png)
+![APIs for providing drag items from a drag source](/images/com.apple.uikit/media-2903752@2x.png)
 
 The figure above depicts the steps for constructing a drag item, in context:
 

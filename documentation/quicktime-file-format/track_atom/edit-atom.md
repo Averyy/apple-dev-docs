@@ -7,7 +7,7 @@ An atom that defines the portions of the media that are to be used to build up a
 
 #### Overview
 
-See [`Edit atom ('edts')`](edit_atom.md).
+See [`Edit atom`](edit_atom.md).
 
 ## See Also
 

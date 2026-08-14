@@ -23,7 +23,7 @@ enum Output
 
 #### Overview
 
-RealityKit’s Object Capture is a long-running background task. The session publishes messages status and error messages to [`outputs`](photogrammetrysession/outputs-swift.property.md), a Swift [`AsyncSequence`](https://developer.apple.com/documentation/Swift/AsyncSequence).
+RealityKit’s Object Capture is a long-running background task. The session publishes messages status and error messages to [`outputs`](photogrammetrysession/outputs-swift.property.md), a Swift [`AsyncSequence`](https://developer.apple.com/documentation/swift/asyncsequence).
 
 Your app can respond to these updates using a `for`-`await`-`in` loop inside of a `Task`, as this example demonstrates.
 
@@ -108,8 +108,8 @@ let waiter = Task {
 ## Relationships
 
 ### Conforms To
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

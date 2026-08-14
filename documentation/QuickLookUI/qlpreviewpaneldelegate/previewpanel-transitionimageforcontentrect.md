@@ -20,7 +20,7 @@ The image to use for the transition zoom effect for the `item`.
 
 #### Discussion
 
-The system invokes this optional method when the preview panel opens or closes to provide a smooth transition when zooming. The return type of the function should be an instance of [`NSImage`](https://developer.apple.com/documentation/AppKit/NSImage).
+The system invokes this optional method when the preview panel opens or closes to provide a smooth transition when zooming. The return type of the function should be an instance of [`NSImage`](https://developer.apple.com/documentation/appkit/nsimage).
 
 ## Parameters
 

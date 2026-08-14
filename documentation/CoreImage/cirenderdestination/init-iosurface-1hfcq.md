@@ -25,7 +25,7 @@ A [`CIRenderDestination`](cirenderdestination.md) object for rendering to an `IO
 
 #### Discussion
 
-The destination’s [`colorSpace`](cirenderdestination/colorspace.md) property will default to a [`CGColorSpace`](https://developer.apple.com/documentation/CoreGraphics/CGColorSpace) created by querying the `IOSurface` object’s attributes.
+The destination’s [`colorSpace`](cirenderdestination/colorspace.md) property will default to a [`CGColorSpace`](https://developer.apple.com/documentation/coregraphics/cgcolorspace) created by querying the `IOSurface` object’s attributes.
 
 ## Parameters
 

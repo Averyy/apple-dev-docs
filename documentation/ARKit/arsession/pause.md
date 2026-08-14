@@ -17,7 +17,7 @@ func pause()
 
 #### Discussion
 
-While paused, the session doesn’t track device motion or capture scene imagery, nor does it coordinate with its [`delegate`](arsession/delegate.md) object or update any associated [`RealityView`](https://developer.apple.com/documentation/RealityKit/RealityView) or [`ARView`](https://developer.apple.com/documentation/RealityKit/ARView) object.
+While paused, the session doesn’t track device motion or capture scene imagery, nor does it coordinate with its [`delegate`](arsession/delegate.md) object or update any associated [`RealityView`](https://developer.apple.com/documentation/realitykit/realityview) or [`ARView`](https://developer.apple.com/documentation/realitykit/arview) object.
 
 ## See Also
 

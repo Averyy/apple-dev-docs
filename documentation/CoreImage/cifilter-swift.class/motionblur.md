@@ -29,8 +29,8 @@ This method applies the motion blur filter to an image. The filter uses the angl
 
 The motion blur filter uses the following properties:
 
-- **`radius`**: A `float` representing the area of effect as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
-- **`angle`**: A `float` representing the angle of the motion, in radians, that determines which direction the blur smears as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+- **`radius`**: A `float` representing the area of effect as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
+- **`angle`**: A `float` representing the angle of the motion, in radians, that determines which direction the blur smears as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
 - **`inputImage`**: A [`CIImage`](ciimage.md) representing the input image to apply the filter to.
 
 The following code creates a filter that adds a motion blur to the input image:
@@ -46,7 +46,7 @@ The following code creates a filter that adds a motion blur to the input image:
     }
 ```
 
-![Two photographs of a beach at sunset with multiple palm trees. The photo on the left is clear and crisp. In the photo on the right, a motion blur filter has been applied, causing a hazy and streaky effect and making the trees in the foreground look very blurry and distorted.](https://docs-assets.developer.apple.com/published/e3e217e5442822ecbf0db71a3fa0686c/media-3544965%402x.png)
+![Two photographs of a beach at sunset with multiple palm trees. The photo on the left is clear and crisp. In the photo on the right, a motion blur filter has been applied, causing a hazy and streaky effect and making the trees in the foreground look very blurry and distorted.](/images/com.apple.coreimage/media-3544965@2x.png)
 
 ## See Also
 

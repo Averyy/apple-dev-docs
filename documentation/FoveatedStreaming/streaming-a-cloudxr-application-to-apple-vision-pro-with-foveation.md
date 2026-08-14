@@ -8,7 +8,7 @@ Integrate NVIDIA CloudXR™ and the session management connection protocol into 
 
 If you have an existing virtual reality game, experience, or application built for desktop computers or a cloud server, you can stream it to Apple Vision Pro with the Foveated Streaming framework.
 
-Foveated Streaming allows your endpoint to stream high quality content only where necessary based on information about the approximate region where the person is looking, ensuring performance. On Apple Vision Pro, you can also layer native spatial content over the streamed content. For example, a racing game can render the gauges in the interior of the car with [`RealityKit`](https://developer.apple.com/documentation/RealityKit), and stream the processor-intensive outdoor environment from a remote computer to the device.
+Foveated Streaming allows your endpoint to stream high quality content only where necessary based on information about the approximate region where the person is looking, ensuring performance. On Apple Vision Pro, you can also layer native spatial content over the streamed content. For example, a racing game can render the gauges in the interior of the car with [`RealityKit`](https://developer.apple.com/documentation/realitykit), and stream the processor-intensive outdoor environment from a remote computer to the device.
 
 To enable streaming, integrate the following three components:
 
@@ -50,12 +50,12 @@ Display streamed content by building a visionOS app with the Foveated Streaming 
 
 - Initializes a [`FoveatedStreamingSession`](foveatedstreamingsession.md).
 - Connects to a [`FoveatedStreamingSession.Endpoint`](foveatedstreamingsession/endpoint.md).
-- Presents the streamed content in an [`ImmersiveSpace`](https://developer.apple.com/documentation/SwiftUI/ImmersiveSpace).
+- Presents the streamed content in an [`ImmersiveSpace`](https://developer.apple.com/documentation/swiftui/immersivespace).
 - Manages the connection life cycle and handles errors.
 
 You can use the Foveated Streaming App template in Xcode to get started quickly. To do so, create a new project in Xcode by choosing File > New > Project. Navigate to the Multiplatform section of the template chooser, and select the Foveated Streaming App template:
 
-![A screenshot of Xcode showing a list of Multiplatform templates to choose from. The Foveated Streaming App template is selected.](https://docs-assets.developer.apple.com/published/4bbc0f86d945016808048680509fb54f/foveated-streaming-app-template%402x.png)
+![A screenshot of Xcode showing a list of Multiplatform templates to choose from. The Foveated Streaming App template is selected.](/images/com.apple.FoveatedStreaming/foveated-streaming-app-template@2x.png)
 
 When prompted, specify a name for your project along with other options.
 

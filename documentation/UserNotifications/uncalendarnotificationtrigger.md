@@ -22,7 +22,7 @@ class UNCalendarNotificationTrigger
 
 #### Overview
 
-Create a [`UNCalendarNotificationTrigger`](uncalendarnotificationtrigger.md) object when you want to schedule the delivery of a local notification at the date and time you specify. You use an [`NSDateComponents`](https://developer.apple.com/documentation/Foundation/NSDateComponents) object to specify only the time values that you want the system to use to determine the matching date and time.
+Create a [`UNCalendarNotificationTrigger`](uncalendarnotificationtrigger.md) object when you want to schedule the delivery of a local notification at the date and time you specify. You use an [`NSDateComponents`](https://developer.apple.com/documentation/foundation/nsdatecomponents) object to specify only the time values that you want the system to use to determine the matching date and time.
 
 Listing 1 creates a trigger that delivers its notification every morning at 8:30. The repeating behavior is achieved by specifying `true` for the `repeats` parameter when creating the trigger.
 
@@ -65,15 +65,15 @@ UNCalendarNotificationTrigger* trigger = [UNCalendarNotificationTrigger
 ### Inherits From
 - [UNNotificationTrigger](unnotificationtrigger.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCoding](../Foundation/NSCoding.md)
-- [NSCopying](../Foundation/NSCopying.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [NSSecureCoding](../Foundation/NSSecureCoding.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCoding](../foundation/nscoding.md)
+- [NSCopying](../foundation/nscopying.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSSecureCoding](../foundation/nssecurecoding.md)
 
 ## See Also
 

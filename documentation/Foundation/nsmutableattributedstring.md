@@ -26,13 +26,13 @@ The `NSMutableAttributedString` class declares additional methods for mutating t
 
 `NSMutableAttributedString` adds two primitive methods to those of `NSAttributedString`. These primitive methods provide the basis for all the other methods in its class. The primitive [`replaceCharacters(in:with:)`](nsmutableattributedstring/replacecharacters(in:with:)-6oq9r.md) method replaces a range of characters with those from a string, leaving all attribute information outside that range intact. The primitive [`setAttributes(_:range:)`](nsmutableattributedstring/setattributes(_:range:).md) method sets attributes and values for a given range of characters, replacing any previous attributes and values for that range.
 
-In macOS, AppKit also uses [`NSParagraphStyle`](https://developer.apple.com/documentation/AppKit/NSParagraphStyle) and its subclass [`NSMutableParagraphStyle`](https://developer.apple.com/documentation/AppKit/NSMutableParagraphStyle) to encapsulate the paragraph or ruler attributes used by the `NSAttributedString` classes.
+In macOS, AppKit also uses [`NSParagraphStyle`](https://developer.apple.com/documentation/appkit/nsparagraphstyle) and its subclass [`NSMutableParagraphStyle`](https://developer.apple.com/documentation/appkit/nsmutableparagraphstyle) to encapsulate the paragraph or ruler attributes used by the `NSAttributedString` classes.
 
 Note that the default font for `NSAttributedString` objects is Helvetica 12-point, which may differ from the macOS system font, so you may wish to create the string with non-default attributes suitable for your application using, for example, [`init(string:attributes:)`](nsattributedstring/init(string:attributes:).md).
 
 > **Note**:  In iOS, this class is used primarily in conjunction with the Core Text framework.
 
-`NSMutableAttributedString` is “toll-free bridged” with its Core Foundation counterpart, [`CFMutableAttributedString`](https://developer.apple.com/documentation/CoreFoundation/CFMutableAttributedString). See [`Toll-Free Bridging`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Conceptual/CocoaEncyclopedia/Toll-FreeBridgin/Toll-FreeBridgin.html#//apple_ref/doc/uid/TP40010810-CH2) for more information.
+`NSMutableAttributedString` is “toll-free bridged” with its Core Foundation counterpart, [`CFMutableAttributedString`](https://developer.apple.com/documentation/corefoundation/cfmutableattributedstring). See [`Toll-Free Bridging`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Conceptual/CocoaEncyclopedia/Toll-FreeBridgin/Toll-FreeBridgin.html#//apple_ref/doc/uid/TP40010810-CH2) for more information.
 
 ## Topics
 
@@ -109,18 +109,18 @@ Note that the default font for `NSAttributedString` objects is Helvetica 12-poin
 ### Inherits From
 - [NSAttributedString](nsattributedstring.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
 - [NSCoding](nscoding.md)
 - [NSCopying](nscopying.md)
 - [NSMutableCopying](nsmutablecopying.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 - [NSSecureCoding](nssecurecoding.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

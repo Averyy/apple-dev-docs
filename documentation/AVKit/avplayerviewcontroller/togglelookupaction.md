@@ -18,7 +18,7 @@ var toggleLookupAction: UIAction { get }
 
 #### Discussion
 
-When a user toggles the lookup UI, the state property is [`UIMenuElement.State.on`](https://developer.apple.com/documentation/UIKit/UIMenuElement/State/on), and is [`UIMenuElement.State.off`](https://developer.apple.com/documentation/UIKit/UIMenuElement/State/off) otherwise. The system disables the action’s attributes when there isn’t visual lookup data available or when the media is playing.
+When a user toggles the lookup UI, the state property is [`UIMenuElement.State.on`](https://developer.apple.com/documentation/uikit/uimenuelement/state/on), and is [`UIMenuElement.State.off`](https://developer.apple.com/documentation/uikit/uimenuelement/state/off) otherwise. The system disables the action’s attributes when there isn’t visual lookup data available or when the media is playing.
 
 ## See Also
 

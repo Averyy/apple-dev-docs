@@ -19,7 +19,7 @@ class let touchBarListViewTemplateName: String
 
 #### Discussion
 
-![Template image for list view](https://docs-assets.developer.apple.com/published/38df2efd1e49397e401142827377af28/media-2793525%402x.png)
+![Template image for list view](/images/com.apple.appkit/media-2793525@2x.png)
 
 Touch Bar template images are exclusively for use in [`NSTouchBarItem`](nstouchbaritem.md) objects and not in onscreen windows.
 

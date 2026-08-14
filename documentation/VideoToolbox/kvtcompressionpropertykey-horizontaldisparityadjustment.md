@@ -20,7 +20,7 @@ let kVTCompressionPropertyKey_HorizontalDisparityAdjustment: CFString
 
 #### Discussion
 
-This property sets a value for the [`kCMFormatDescriptionExtension_HorizontalDisparityAdjustment`](https://developer.apple.com/documentation/CoreMedia/kCMFormatDescriptionExtension_HorizontalDisparityAdjustment) format description on the output samples. The value is a 32-bit integer, measured over the range of `-10000` to `10000`, that maps to a uniform range of `-1.0` to `1.0`.
+This property sets a value for the [`kCMFormatDescriptionExtension_HorizontalDisparityAdjustment`](https://developer.apple.com/documentation/coremedia/kcmformatdescriptionextension_horizontaldisparityadjustment) format description on the output samples. The value is a 32-bit integer, measured over the range of `-10000` to `10000`, that maps to a uniform range of `-1.0` to `1.0`.
 
 This property is optional. Only specify a disparity adjustment, including 0, when you know the specific value.
 

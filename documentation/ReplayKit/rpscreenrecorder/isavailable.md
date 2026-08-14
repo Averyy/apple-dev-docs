@@ -21,7 +21,7 @@ var isAvailable: Bool { get }
 
 #### Discussion
 
-When set to [`true`](https://developer.apple.com/documentation/Swift/true), the screen recorder is available for recording. Screen recording can be unavailable due to unsupported hardware, the user’s device displaying information over Airplay or through a TVOut session, or another app using the recorder.
+When set to [`true`](https://developer.apple.com/documentation/swift/true), the screen recorder is available for recording. Screen recording can be unavailable due to unsupported hardware, the user’s device displaying information over Airplay or through a TVOut session, or another app using the recorder.
 
 ## See Also
 

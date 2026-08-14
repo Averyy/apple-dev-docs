@@ -27,7 +27,7 @@ protocol MPSNNTrainableNode : NSObjectProtocol
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 ### Conforming Types
 - [MPSCNNBatchNormalizationGradientNode](mpscnnbatchnormalizationgradientnode.md)
 - [MPSCNNBatchNormalizationNode](mpscnnbatchnormalizationnode.md)

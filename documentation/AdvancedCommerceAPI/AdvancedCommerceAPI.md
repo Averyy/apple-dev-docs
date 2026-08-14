@@ -12,9 +12,9 @@ Support In-App Purchases through the App Store for exceptionally large catalogs 
 
 Use this framework to offer an exceptionally large catalog of one-time purchases, subscriptions, and subscriptions with optional add-ons while using the App Store commerce system. Apps that use this API host and manage their own catalog of In-App Purchases, or SKUs. The App Store commerce system handles the end-to-end payment processing, global distribution, tax support, and customer service.
 
-You can use the Advanced Commerce API and the StoreKit [`In-App Purchase`](https://developer.apple.com/documentation/StoreKit/in-app-purchase) API in the same app. Both APIs use the App Store commerce system, including the same signed JWS transactions and JWS renewal info. For products that you offer using the In-App Purchase API, you set up product identifiers in App Store Connect. For products that you offer using the Advanced Commerce API, you host and manage your own catalog of SKUs and add product details dynamically at runtime. For complete setup information, see [`Setting up your project for Advanced Commerce API`](setting-up-your-project-for-advanced-commerce.md).
+You can use the Advanced Commerce API and the StoreKit [`In-App Purchase`](https://developer.apple.com/documentation/storekit/in-app-purchase) API in the same app. Both APIs use the App Store commerce system, including the same signed JWS transactions and JWS renewal info. For products that you offer using the In-App Purchase API, you set up product identifiers in App Store Connect. For products that you offer using the Advanced Commerce API, you host and manage your own catalog of SKUs and add product details dynamically at runtime. For complete setup information, see [`Setting up your project for Advanced Commerce API`](setting-up-your-project-for-advanced-commerce.md).
 
-Advanced Commerce API features are available through requests you make using StoreKit in your app and endpoint requests from your server. To authorize these requests, you generate JSON Web Tokens (JWTs). The App Store Server Library provides a client that makes it easier to create JWTs to authorize calls. For more information about the library, see [`Simplifying your implementation by using the App Store Server Library`](https://developer.apple.com/documentation/AppStoreServerAPI/simplifying-your-implementation-by-using-the-app-store-server-library). For more information about authorizing calls, see  [`Authorizing API requests from your server`](authorizing-server-calls.md).
+Advanced Commerce API features are available through requests you make using StoreKit in your app and endpoint requests from your server. To authorize these requests, you generate JSON Web Tokens (JWTs). The App Store Server Library provides a client that makes it easier to create JWTs to authorize calls. For more information about the library, see [`Simplifying your implementation by using the App Store Server Library`](https://developer.apple.com/documentation/appstoreserverapi/simplifying-your-implementation-by-using-the-app-store-server-library). For more information about authorizing calls, see  [`Authorizing API requests from your server`](authorizing-server-calls.md).
 
 Your server must support the Transport Layer Security (TLS) protocol 1.2 or later to call the Advanced Commerce API.
 
@@ -49,9 +49,9 @@ Your server must support the Transport Layer Security (TLS) protocol 1.2 or late
 - [Handling subscription price changes](handling-subscription-price-changes.md)
   Initiate a price change and manage communications with your subscribers through the App Store.
 ### In-app API requests
-- [Sending Advanced Commerce API requests from your app](../StoreKit/sending-advanced-commerce-api-requests-from-your-app.md)
+- [Sending Advanced Commerce API requests from your app](../storekit/sending-advanced-commerce-api-requests-from-your-app.md)
   Send Advanced Commerce API requests from your app that you authorize with a JSON Web Signature (JWS) you generate on your server.
-- [Generating JWS to sign App Store requests](../StoreKit/generating-jws-to-sign-app-store-requests.md)
+- [Generating JWS to sign App Store requests](../storekit/generating-jws-to-sign-app-store-requests.md)
   Create signed JSON Web Signature (JWS) strings on your server to authorize your API requests in your app.
 ### One-time charge creation in the app
 - [object OneTimeChargeCreateRequest](onetimechargecreaterequest.md)

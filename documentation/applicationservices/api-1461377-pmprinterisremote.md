@@ -29,7 +29,7 @@ Whether a printer is remote is derived from the CUPS printer-type attribute for 
 ## Parameters
 
 - `printer`: The printer you’re querying to determine whether it is hosted by a remote print server.
-- `isRemoteP`: A pointer to your Boolean variable. On return,   indicates that the printer is hosted by a remote print server; otherwise,  .
+- `isRemoteP`: A pointer to your Boolean variable. On return, `true` indicates that the printer is hosted by a remote print server; otherwise, `false`.
 
 ## See Also
 

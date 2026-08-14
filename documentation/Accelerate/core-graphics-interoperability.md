@@ -6,11 +6,11 @@ Pass image data between the Core Graphics framework and the vImage library.
 
 #### Overview
 
-The vImage library uses the [`CGImage`](https://developer.apple.com/documentation/CoreGraphics/CGImage) class as the main type to consume and produce still images. A [`CGImage`](https://developer.apple.com/documentation/CoreGraphics/CGImage) instance may originate from [`NSImage`](https://developer.apple.com/documentation/AppKit/NSImage) or [`UIImage`](https://developer.apple.com/documentation/UIKit/UIImage) images, or from a [`CGContext`](https://developer.apple.com/documentation/CoreGraphics/CGContext) drawing destination.
+The vImage library uses the [`CGImage`](https://developer.apple.com/documentation/coregraphics/cgimage) class as the main type to consume and produce still images. A [`CGImage`](https://developer.apple.com/documentation/coregraphics/cgimage) instance may originate from [`NSImage`](https://developer.apple.com/documentation/appkit/nsimage) or [`UIImage`](https://developer.apple.com/documentation/uikit/uiimage) images, or from a [`CGContext`](https://developer.apple.com/documentation/coregraphics/cgcontext) drawing destination.
 
 A typical Core Graphics-based vImage workflow consists of:
 
-1. Selecting a source image, such as a Core Graphics-backed [`UIImage`](https://developer.apple.com/documentation/UIKit/UIImage) instance.
+1. Selecting a source image, such as a Core Graphics-backed [`UIImage`](https://developer.apple.com/documentation/uikit/uiimage) instance.
 2. Initializing a vImage buffer from the image’s bitmap data.
 3. Performing an operation on the vImage buffer, such as scaling or adjusting gamma.
 4. Creating a destination image from the operation result with the same image format as the source image.
@@ -20,7 +20,7 @@ vImage provides the following functions that simplify interoperation with Core G
 - [`vImageBuffer_InitWithCGImage(_:_:_:_:_:)`](vimagebuffer_initwithcgimage(_:_:_:_:_:).md) initializes a vImage buffer with the contents of a Core Graphics image.
 - [`vImageCreateCGImageFromBuffer(_:_:_:_:_:_:)`](vimagecreatecgimagefrombuffer(_:_:_:_:_:_:).md) creates a Core Graphics image from a vImage buffer.
 
-The following code shows a passthrough function that accepts a [`CGImage`](https://developer.apple.com/documentation/CoreGraphics/CGImage) image, populates a vImage buffer from the image, and generates a [`CGImage`](https://developer.apple.com/documentation/CoreGraphics/CGImage) image from the buffer.
+The following code shows a passthrough function that accepts a [`CGImage`](https://developer.apple.com/documentation/coregraphics/cgimage) image, populates a vImage buffer from the image, and generates a [`CGImage`](https://developer.apple.com/documentation/coregraphics/cgimage) image from the buffer.
 
 In this example, the call to [`vImageBuffer_InitWithCGImage(_:_:_:_:_:)`](vimagebuffer_initwithcgimage(_:_:_:_:_:).md) populates the [`vImage_CGImageFormat`](vimage_cgimageformat.md) and the [`vImage_Buffer`](vimage_buffer.md) variables with the properties of the source image:
 
@@ -55,7 +55,7 @@ static func passThrough(sourceImage: CGImage) -> CGImage? {
 }
 ```
 
-Pass a fully initialized [`vImage_CGImageFormat`](vimage_cgimageformat.md) to specify that [`vImageBuffer_InitWithCGImage(_:_:_:_:_:)`](vimagebuffer_initwithcgimage(_:_:_:_:_:).md) converts the source [`CGImage`](https://developer.apple.com/documentation/CoreGraphics/CGImage) image to the format that `format` describes. The following example converts the source image to a three-channel, 8-bit-per-channel RGB image:
+Pass a fully initialized [`vImage_CGImageFormat`](vimage_cgimageformat.md) to specify that [`vImageBuffer_InitWithCGImage(_:_:_:_:_:)`](vimagebuffer_initwithcgimage(_:_:_:_:_:).md) converts the source [`CGImage`](https://developer.apple.com/documentation/coregraphics/cgimage) image to the format that `format` describes. The following example converts the source image to a three-channel, 8-bit-per-channel RGB image:
 
 ```swift
 static func passThrough(sourceImage: CGImage) -> CGImage? {

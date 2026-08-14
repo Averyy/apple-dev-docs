@@ -21,9 +21,9 @@ struct SampledAnimation<Value> where Value : AnimatableData
 
 #### Overview
 
-To specify the data that the animation samples, set one of the `frames` properties that matches the animated property’s type. For example, set the [`frames`](sampledanimation/frames-2j4nj.md) property to interpolate [`Float`](https://developer.apple.com/documentation/Swift/Float) values.
+To specify the data that the animation samples, set one of the `frames` properties that matches the animated property’s type. For example, set the [`frames`](sampledanimation/frames-2j4nj.md) property to interpolate [`Float`](https://developer.apple.com/documentation/swift/float) values.
 
-The following code designates a [`SampledAnimation`](sampledanimation.md) to animate a propery of type [`Float`](https://developer.apple.com/documentation/Swift/Float) by specifying the generic typed syntax. The code queues an array of values: `1.0`, `2.0`, and `3.0`.
+The following code designates a [`SampledAnimation`](sampledanimation.md) to animate a propery of type [`Float`](https://developer.apple.com/documentation/swift/float) by specifying the generic typed syntax. The code queues an array of values: `1.0`, `2.0`, and `3.0`.
 
 ```swift
 // Define the animation type.

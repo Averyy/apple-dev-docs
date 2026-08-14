@@ -25,7 +25,7 @@ Check this property before using Bluetooth Channel Sounding ranging to ensure th
 
 To use Bluetooth Channel Sounding,
 
-- Pair your accessory with [`AccessorySetupKit`](https://developer.apple.com/documentation/AccessorySetupKit); the Nearby Interaction framework only supports Bluetooth Channel Sounding with accessories paired through [`AccessorySetupKit`](https://developer.apple.com/documentation/AccessorySetupKit).
+- Pair your accessory with [`AccessorySetupKit`](https://developer.apple.com/documentation/accessorysetupkit); the Nearby Interaction framework only supports Bluetooth Channel Sounding with accessories paired through [`AccessorySetupKit`](https://developer.apple.com/documentation/accessorysetupkit).
 - Instantiate an [`NINearbyAccessoryConfiguration`](ninearbyaccessoryconfiguration.md) using the [`init(bluetoothChannelSoundingIdentifier:previousBluetoothIdentifier:)`](ninearbyaccessoryconfiguration/init(bluetoothchannelsoundingidentifier:previousbluetoothidentifier:).md) initializer:
 
 ```swift

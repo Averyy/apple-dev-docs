@@ -22,7 +22,7 @@ let kCTFontBaselineAdjustAttribute: CFString
 
 #### Discussion
 
-This is primarily used when defining font descriptors for a cascade list to keep the baseline of all fonts even. The value associated with this is a float represented as a [`CFNumber`](https://developer.apple.com/documentation/CoreFoundation/CFNumber) object.
+This is primarily used when defining font descriptors for a cascade list to keep the baseline of all fonts even. The value associated with this is a float represented as a [`CFNumber`](https://developer.apple.com/documentation/corefoundation/cfnumber) object.
 
 ## See Also
 

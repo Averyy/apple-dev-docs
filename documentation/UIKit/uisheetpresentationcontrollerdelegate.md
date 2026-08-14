@@ -27,7 +27,7 @@ protocol UISheetPresentationControllerDelegate : UIAdaptivePresentationControlle
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 - [UIAdaptivePresentationControllerDelegate](uiadaptivepresentationcontrollerdelegate.md)
 
 ## See Also

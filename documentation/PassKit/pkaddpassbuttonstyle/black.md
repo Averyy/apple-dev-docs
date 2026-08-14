@@ -19,7 +19,7 @@ case black
 
 #### Discussion
 
-Use this style when displaying a button against a light background. ![None](https://docs-assets.developer.apple.com/published/2992179e908aafe96b213d5e85ce3b41/media-2557098%402x.png)
+Use this style when displaying a button against a light background. ![None](/images/com.apple.passkit/media-2557098@2x.png)
 
 ## See Also
 

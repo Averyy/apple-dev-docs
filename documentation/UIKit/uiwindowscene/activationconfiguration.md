@@ -19,7 +19,7 @@ class ActivationConfiguration
 
 #### Overview
 
-Use a [`UIWindowScene.ActivationConfiguration`](uiwindowscene/activationconfiguration.md) object to request a new window scene from the system. An activation configuration requires a [`NSUserActivity`](https://developer.apple.com/documentation/Foundation/NSUserActivity) object that represents the scene’s content. You can specify a preferred presentation style for the new scene by including an optional [`UIWindowScene.ActivationRequestOptions`](uiwindowscene/activationrequestoptions.md) object. The system automatically animates the transition to the new scene, but you can customize the transition by providing an optional targeted preview.
+Use a [`UIWindowScene.ActivationConfiguration`](uiwindowscene/activationconfiguration.md) object to request a new window scene from the system. An activation configuration requires a [`NSUserActivity`](https://developer.apple.com/documentation/foundation/nsuseractivity) object that represents the scene’s content. You can specify a preferred presentation style for the new scene by including an optional [`UIWindowScene.ActivationRequestOptions`](uiwindowscene/activationrequestoptions.md) object. The system automatically animates the transition to the new scene, but you can customize the transition by providing an optional targeted preview.
 
 To request scene activation from a view interaction, use an instance of this class with [`UIWindowScene.ActivationInteraction`](uiwindowscene/activationinteraction.md). To request scene activation from a context menu, use an instance of this class with [`UIWindowScene.ActivationAction`](uiwindowscene/activationaction.md).
 
@@ -41,14 +41,14 @@ To request scene activation from a view interaction, use an instance of this cla
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

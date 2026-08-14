@@ -21,7 +21,7 @@ var usesCPUOnly: Bool { get set }
 
 #### Discussion
 
-This value defaults to [`false`](https://developer.apple.com/documentation/Swift/false) to signify that the Vision request is free to leverage the GPU to accelerate its processing.
+This value defaults to [`false`](https://developer.apple.com/documentation/swift/false) to signify that the Vision request is free to leverage the GPU to accelerate its processing.
 
 ## See Also
 

@@ -14,7 +14,7 @@ Use this endpoint to create an [`Ad`](ad.md) object using your `creativeId` in t
 
 In API version 5.2, this endpoint supports default product page ads. For more information, see [`Apple Ads Campaign Management API 5`](apple-search-ads-campaign-management-api-5.md).
 
-The `Id` in the response is your `adId`, representing the assignment of a creative to an [`AdGroup`](adgroup.md). Use your `adId` in the resource path with [`Get an Ad`](get-an-ad.md), [`Update an Ad`](update-an-ad.md), [`Delete an Ad`](delete-an-ad.md), and in [`Get Ad-Level Reports`](get-ad-level-reports.md). Your `adId` is also output in the [`AdServices`](https://developer.apple.com/documentation/AdServices) attribution framework.
+The `Id` in the response is your `adId`, representing the assignment of a creative to an [`AdGroup`](adgroup.md). Use your `adId` in the resource path with [`Get an Ad`](get-an-ad.md), [`Update an Ad`](update-an-ad.md), [`Delete an Ad`](delete-an-ad.md), and in [`Get Ad-Level Reports`](get-ad-level-reports.md). Your `adId` is also output in the [`AdServices`](https://developer.apple.com/documentation/adservices) attribution framework.
 
 ##### Payload Example Create an Ad
 

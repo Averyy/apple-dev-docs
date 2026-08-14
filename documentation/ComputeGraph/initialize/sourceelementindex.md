@@ -17,7 +17,7 @@ uint initialize::sourceElementIndex()
 
 #### Discussion
 
-> **Note**: ![Graph](https://docs-assets.developer.apple.com/published/c8be0814528a98514e5471b08b0e3b52/initialize__sourceElementIndex.svg)
+> **Note**: ![Graph](/images/com.apple.computegraph/initialize__sourceElementIndex.svg)
 
 
 ---

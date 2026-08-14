@@ -17,7 +17,7 @@ A message that tells people why the app is trying to install a system extension 
 
 #### Discussion
 
-This key is required for all system extensions except [`DriverKit`](https://developer.apple.com/documentation/DriverKit) extensions. Failure to include this key results in an error at activation time. For DriverKit extensions, use [`OSBundleUsageDescription`](information-property-list/osbundleusagedescription.md) instead.
+This key is required for all system extensions except [`DriverKit`](https://developer.apple.com/documentation/driverkit) extensions. Failure to include this key results in an error at activation time. For DriverKit extensions, use [`OSBundleUsageDescription`](information-property-list/osbundleusagedescription.md) instead.
 
 ## See Also
 

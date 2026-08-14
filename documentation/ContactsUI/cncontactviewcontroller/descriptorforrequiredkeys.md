@@ -25,7 +25,7 @@ Descriptor for all the keys that must be fetched.
 
 #### Discussion
 
-Pass this descriptor to the `keysToFetch` of the [`CNContactFetchRequest`](https://developer.apple.com/documentation/Contacts/CNContactFetchRequest) if you want to display the contact in a [`CNContactViewController`](cncontactviewcontroller.md).
+Pass this descriptor to the `keysToFetch` of the [`CNContactFetchRequest`](https://developer.apple.com/documentation/contacts/cncontactfetchrequest) if you want to display the contact in a [`CNContactViewController`](cncontactviewcontroller.md).
 
 
 ---

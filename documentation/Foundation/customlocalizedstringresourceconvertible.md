@@ -22,7 +22,7 @@ protocol CustomLocalizedStringResourceConvertible
 
 #### Overview
 
-Similar to [`CustomStringConvertible`](https://developer.apple.com/documentation/Swift/CustomStringConvertible), types that conform to [`CustomLocalizedStringResourceConvertible`](customlocalizedstringresourceconvertible.md) provide their own representation when converting to a string instance. Whereas [`CustomStringConvertible`](https://developer.apple.com/documentation/Swift/CustomStringConvertible) provides a [`description`](https://developer.apple.com/documentation/Swift/CustomStringConvertible/description) string, this type offers a [`LocalizedStringResource`](localizedstringresource.md). This allows out-of-process callers to create a localized description from the resource, possibly in a different locale than the current process uses.
+Similar to [`CustomStringConvertible`](https://developer.apple.com/documentation/swift/customstringconvertible), types that conform to [`CustomLocalizedStringResourceConvertible`](customlocalizedstringresourceconvertible.md) provide their own representation when converting to a string instance. Whereas [`CustomStringConvertible`](https://developer.apple.com/documentation/swift/customstringconvertible) provides a [`description`](https://developer.apple.com/documentation/swift/customstringconvertible/description) string, this type offers a [`LocalizedStringResource`](localizedstringresource.md). This allows out-of-process callers to create a localized description from the resource, possibly in a different locale than the current process uses.
 
 ## Topics
 

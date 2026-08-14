@@ -29,7 +29,7 @@ You create a product view by providing a product identifier to load from the App
 
 You can customize the view by providing a view to use as an icon, or image, for the in-app purchase product. If you provide a product identifier, you can optionally provide a placeholder icon for the system to use instead of the automatic placeholder icon. If you set up promoted images for your products in App Store Connect, you can choose to use those images as the icon.
 
-You can customize the product view’s appearance using the standard styles, including the [`CompactProductViewStyle`](compactproductviewstyle.md), [`RegularProductViewStyle`](regularproductviewstyle.md), and [`LargeProductViewStyle`](largeproductviewstyle.md) styles. Apply the style using the [`productViewStyle(_:)`](https://developer.apple.com/documentation/SwiftUI/View/productViewStyle(_:)) view modifier.
+You can customize the product view’s appearance using the standard styles, including the [`CompactProductViewStyle`](compactproductviewstyle.md), [`RegularProductViewStyle`](regularproductviewstyle.md), and [`LargeProductViewStyle`](largeproductviewstyle.md) styles. Apply the style using the [`productViewStyle(_:)`](https://developer.apple.com/documentation/swiftui/view/productviewstyle(_:)) view modifier.
 
 You can also create your own custom styles by creating styles that conform to the [`ProductViewStyle`](productviewstyle.md) protocol.
 
@@ -64,9 +64,9 @@ You can also create your own custom styles by creating styles that conform to th
 ## Relationships
 
 ### Conforms To
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
-- [View](../SwiftUI/View.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
+- [View](../swiftui/view.md)
 
 ## See Also
 
@@ -75,7 +75,7 @@ You can also create your own custom styles by creating styles that conform to th
 - [struct SubscriptionStoreView](subscriptionstoreview.md)
   A view that merchandises a collection of auto-renewable subscription options that belong to the same subscription group.
 - [struct SubscriptionOfferView](subscriptionofferview.md)
-- [Backyard Birds: Building an app with SwiftData and widgets](../SwiftUI/Backyard-birds-sample.md)
+- [Backyard Birds: Building an app with SwiftData and widgets](../swiftui/backyard-birds-sample.md)
   Create an app with persistent data, interactive widgets, and an all new in-app purchase experience.
 
 

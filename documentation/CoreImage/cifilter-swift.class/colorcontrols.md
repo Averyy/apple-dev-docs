@@ -29,9 +29,9 @@ This method applies the color controls filter to an image. The effect calculates
 
 The color controls filter uses the following properties:
 
-- **`brightness`**: A `float` representing the amount of brightness applied as a [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
-- **`contrast`**: A `float` `r`epresenting the amount of contrast applied as a [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
-- **`saturation`**: A float representing the amount of saturation applied as a [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+- **`brightness`**: A `float` representing the amount of brightness applied as a [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
+- **`contrast`**: A `float` `r`epresenting the amount of contrast applied as a [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
+- **`saturation`**: A float representing the amount of saturation applied as a [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
 - **`inputImage`**: An image with the type [`CIImage`](ciimage.md).
 
 The following code creates a filter that results in a darker image:
@@ -47,7 +47,7 @@ func colorControls(inputImage: CIImage) -> CIImage {
 }
 ```
 
-![Two versions of a photograph side by side. The photo on the left shows a small bunch of flowers photographed close up, in focus, with good light and no effects. In the photo on the right, a color controls filter is applied, resulting in the image having darker colors and decreased brightness.](https://docs-assets.developer.apple.com/published/2ab7b18d8c8869136e4bafa8ca20d00a/media-3545002%402x.png)
+![Two versions of a photograph side by side. The photo on the left shows a small bunch of flowers photographed close up, in focus, with good light and no effects. In the photo on the right, a color controls filter is applied, resulting in the image having darker colors and decreased brightness.](/images/com.apple.coreimage/media-3545002@2x.png)
 
 ## See Also
 

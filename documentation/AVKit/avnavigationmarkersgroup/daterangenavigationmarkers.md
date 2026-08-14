@@ -16,7 +16,7 @@ var dateRangeNavigationMarkers: [AVDateRangeMetadataGroup]? { get }
 
 #### Discussion
 
-Returns the array of [`AVDateRangeMetadataGroup`](https://developer.apple.com/documentation/AVFoundation/AVDateRangeMetadataGroup) objects managed by this group. This value may be `nil`.
+Returns the array of [`AVDateRangeMetadataGroup`](https://developer.apple.com/documentation/avfoundation/avdaterangemetadatagroup) objects managed by this group. This value may be `nil`.
 
 ## See Also
 

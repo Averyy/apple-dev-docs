@@ -7,7 +7,6 @@ The framework isn’t ready to send MMS messages.
 
 **Availability**:
 - iOS 26.0+
-- iPadOS 26.0+
 
 ## Declaration
 

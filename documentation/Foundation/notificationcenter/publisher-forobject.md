@@ -22,7 +22,7 @@ func publisher(for name: Notification.Name, object: AnyObject? = nil) -> Notific
 
 #### Return Value
 
-A [`Publisher`](https://developer.apple.com/documentation/Combine/Publisher) that emits events when broadcasting notifications.
+A [`Publisher`](https://developer.apple.com/documentation/combine/publisher) that emits events when broadcasting notifications.
 
 ## Parameters
 

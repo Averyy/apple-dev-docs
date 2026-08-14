@@ -16,7 +16,7 @@ static let glyphInfo: NSAttributedString.Key
 
 #### Discussion
 
-The [`NSLayoutManager`](https://developer.apple.com/documentation/AppKit/NSLayoutManager) object assigns the glyph specified by this [`NSGlyphInfo`](https://developer.apple.com/documentation/AppKit/NSGlyphInfo) object to the entire attribute range, provided that its contents match the specified base string, and that the specified glyph is available in the font specified by `NSFontAttributeName`.
+The [`NSLayoutManager`](https://developer.apple.com/documentation/appkit/nslayoutmanager) object assigns the glyph specified by this [`NSGlyphInfo`](https://developer.apple.com/documentation/appkit/nsglyphinfo) object to the entire attribute range, provided that its contents match the specified base string, and that the specified glyph is available in the font specified by `NSFontAttributeName`.
 
 ## See Also
 

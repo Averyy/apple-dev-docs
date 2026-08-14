@@ -19,7 +19,7 @@ final let targetLanguage: Locale.Language?
 
 #### Discussion
 
-If this value is set to `nil`, the session chooses an optimal language to translate into based on the `sourceLanguage` and the person’s [`preferredLanguages`](https://developer.apple.com/documentation/Foundation/Locale/preferredLanguages).
+If this value is set to `nil`, the session chooses an optimal language to translate into based on the `sourceLanguage` and the person’s [`preferredLanguages`](https://developer.apple.com/documentation/foundation/locale/preferredlanguages).
 
 > **Note**: This value doesn’t update after translation. To see what target language the session uses for a particular translation, check the response [`targetLanguage`](translationsession/response/targetlanguage.md).
 

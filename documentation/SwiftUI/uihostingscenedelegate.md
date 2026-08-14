@@ -83,12 +83,12 @@ class AppDelegate: UIApplicationDelegate {
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [UISceneDelegate](../UIKit/UISceneDelegate.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [UISceneDelegate](../uikit/uiscenedelegate.md)
 
 ## See Also
 
-- [Using SwiftUI with UIKit](../UIKit/using-swiftui-with-uikit.md)
+- [Using SwiftUI with UIKit](../uikit/using-swiftui-with-uikit.md)
   Learn how to incorporate SwiftUI views into a UIKit app.
 - [Unifying your app’s animations](unifying-your-app-s-animations.md)
   Create a consistent UI animation experience across SwiftUI, UIKit, and AppKit.

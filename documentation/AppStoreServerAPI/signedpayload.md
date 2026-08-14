@@ -18,7 +18,7 @@ string signedPayload
 
 The `signedpayload` is a string of three Base64 URL-encoded components, separated by a period.
 
-For more information, see [`signedPayload`](https://developer.apple.com/documentation/AppStoreServerNotifications/signedPayload) in [`App Store Server Notifications`](https://developer.apple.com/documentation/AppStoreServerNotifications).
+For more information, see [`signedPayload`](https://developer.apple.com/documentation/appstoreservernotifications/signedpayload) in [`App Store Server Notifications`](https://developer.apple.com/documentation/appstoreservernotifications).
 
 ## See Also
 

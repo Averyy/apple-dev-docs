@@ -33,7 +33,7 @@ The renderer encodes one frame at a time, and has three frames of content in fli
 
 The renderer manages the frames as each progresses through its three lifetime phases. The diagram below illustrates how the first frames move through time, where each column represents a snapshot of the app’s current frames and their states:
 
-![A timeline diagram that shows how frames progress through their lifetime phases by dividing time into vertical columns, each of which represents a snapshot in time as they flow from left to right. The first column has one box with the label “encode frame 1”. The second column has two boxes with the labels “encode frame 2” and “execute frame 1”. The third column has three boxes with the labels “encode frame 3”, “execute frame 2” and “display frame 1”. The next two columns continue the pattern with three boxes each, where column five has the labels “encode frame 5”, “execute frame 4”, and “display frame 3”. The final, right-most column has three boxes, each with an ellipsis that indicates the pattern continues indefinitely.](https://docs-assets.developer.apple.com/published/7d4026996b180f5d08fabfd934f6c536/drawing-a-triangle-with-metal-4-1%402x.png)
+![A timeline diagram that shows how frames progress through their lifetime phases by dividing time into vertical columns, each of which represents a snapshot in time as they flow from left to right. The first column has one box with the label “encode frame 1”. The second column has two boxes with the labels “encode frame 2” and “execute frame 1”. The third column has three boxes with the labels “encode frame 3”, “execute frame 2” and “display frame 1”. The next two columns continue the pattern with three boxes each, where column five has the labels “encode frame 5”, “execute frame 4”, and “display frame 3”. The final, right-most column has three boxes, each with an ellipsis that indicates the pattern continues indefinitely.](/images/com.apple.metal/drawing-a-triangle-with-metal-4-1@2x.png)
 
 ##### Create a Renderer
 
@@ -322,9 +322,9 @@ Similarly, the `makeFragmentShaderConfiguration` helper method creates another f
 
 ##### Draw a Frame By Encoding a Render Pass
 
-The app is ready to render frames after its renderer creates and sets up all its resources at launch, including data buffers and a render pipeline state. Each time the system calls the app’s [`draw(in:)`](https://developer.apple.com/documentation/MetalKit/MTKViewDelegate/draw(in:)) method, its [`MTKViewDelegate`](https://developer.apple.com/documentation/MetalKit/MTKViewDelegate) implementation calls the renderer’s `renderFrameToView:` method, which encodes and runs the commands that render the frame with the following steps:
+The app is ready to render frames after its renderer creates and sets up all its resources at launch, including data buffers and a render pipeline state. Each time the system calls the app’s [`draw(in:)`](https://developer.apple.com/documentation/metalkit/mtkviewdelegate/draw(in:)) method, its [`MTKViewDelegate`](https://developer.apple.com/documentation/metalkit/mtkviewdelegate) implementation calls the renderer’s `renderFrameToView:` method, which encodes and runs the commands that render the frame with the following steps:
 
-1. Check that the [`MTKView`](https://developer.apple.com/documentation/MetalKit/MTKView) parameter has valid [`currentDrawable`](https://developer.apple.com/documentation/MetalKit/MTKView/currentDrawable) and [`currentMTL4RenderPassDescriptor`](https://developer.apple.com/documentation/MetalKit/MTKView/currentMTL4RenderPassDescriptor) properties.
+1. Check that the [`MTKView`](https://developer.apple.com/documentation/metalkit/mtkview) parameter has valid [`currentDrawable`](https://developer.apple.com/documentation/metalkit/mtkview/currentdrawable) and [`currentMTL4RenderPassDescriptor`](https://developer.apple.com/documentation/metalkit/mtkview/currentmtl4renderpassdescriptor) properties.
 2. Increment the frame number, which tracks the resources it can reuse from previous frames that don’t need them any longer.
 3. Prepare a command buffer.
 4. Create and configure a render pass encoder.
@@ -399,7 +399,7 @@ The command queue updates the shared event after the Metal device finishes rende
 
 ##### Create an Encoder for a Render Pass
 
-The `renderFrameToView:` method creates a render command encoder by retrieving an [`MTL4RenderPassDescriptor`](mtl4renderpassdescriptor.md) instance from the view’s [`currentMTL4RenderPassDescriptor`](https://developer.apple.com/documentation/MetalKit/MTKView/currentMTL4RenderPassDescriptor) property and passing it to the command buffer’s [`makeRenderCommandEncoder(descriptor:options:)`](mtl4commandbuffer/makerendercommandencoder(descriptor:options:).md) method. The view’s property represents a valid configuration for a render pass to render a frame in a format that’s compatible with that view.
+The `renderFrameToView:` method creates a render command encoder by retrieving an [`MTL4RenderPassDescriptor`](mtl4renderpassdescriptor.md) instance from the view’s [`currentMTL4RenderPassDescriptor`](https://developer.apple.com/documentation/metalkit/mtkview/currentmtl4renderpassdescriptor) property and passing it to the command buffer’s [`makeRenderCommandEncoder(descriptor:options:)`](mtl4commandbuffer/makerendercommandencoder(descriptor:options:).md) method. The view’s property represents a valid configuration for a render pass to render a frame in a format that’s compatible with that view.
 
 ```objective-c
 // Create a render pass encoder from the command buffer with the view's configuration.
@@ -413,8 +413,8 @@ The command buffer’s factory method returns an [`MTL4RenderCommandEncoder`](mt
 
 The method also gives the render encoder a unique name that can help you identify its render pass from other passes in Metal debugger. For more information about Metal debugger and inspecting passes, see:
 
-- [`Metal debugger`](https://developer.apple.com/documentation/Xcode/Metal-debugger)
-- [`Analyzing your Metal workload`](https://developer.apple.com/documentation/Xcode/Analyzing-your-Metal-workload)
+- [`Metal debugger`](https://developer.apple.com/documentation/xcode/metal-debugger)
+- [`Analyzing your Metal workload`](https://developer.apple.com/documentation/xcode/analyzing-your-metal-workload)
 
 ##### Configure the Viewport for the Render Pass
 
@@ -539,9 +539,9 @@ It then marks the end of the command buffer by calling its [`endCommandBuffer()`
 
 ##### Run the Render Pass By Submitting the Command Buffer
 
-The renderer sends the command buffer to run on the GPU in its `submitCommandBufferForView:` method. The method starts by retrieving the [`CAMetalDrawable`](https://developer.apple.com/documentation/QuartzCore/CAMetalDrawable) instance the view stores in its [`currentDrawable`](https://developer.apple.com/documentation/MetalKit/MTKView/currentDrawable) property.
+The renderer sends the command buffer to run on the GPU in its `submitCommandBufferForView:` method. The method starts by retrieving the [`CAMetalDrawable`](https://developer.apple.com/documentation/quartzcore/cametaldrawable) instance the view stores in its [`currentDrawable`](https://developer.apple.com/documentation/metalkit/mtkview/currentdrawable) property.
 
-> **Note**: The view’s current drawable is the same instance as the one in the view’s [`currentMTL4RenderPassDescriptor`](https://developer.apple.com/documentation/MetalKit/MTKView/currentMTL4RenderPassDescriptor) convenience property, specifically the first entry in the descriptor’s [`colorAttachments`](mtl4renderpassdescriptor/colorattachments.md) property, which the renderer uses to create each render pass encoder.
+> **Note**: The view’s current drawable is the same instance as the one in the view’s [`currentMTL4RenderPassDescriptor`](https://developer.apple.com/documentation/metalkit/mtkview/currentmtl4renderpassdescriptor) convenience property, specifically the first entry in the descriptor’s [`colorAttachments`](mtl4renderpassdescriptor/colorattachments.md) property, which the renderer uses to create each render pass encoder.
 
 The method adds the following actions to the renderer’s [`MTL4CommandQueue`](mtl4commandqueue.md) instance, which run on the GPU timeline:
 
@@ -583,7 +583,7 @@ The Metal device needs to wait until the view’s drawable is available because 
 
 > **Note**: Your app can submit one or more Metal 4 command buffers to any command queue, if and only if the command buffers and command queues come from the same Metal device.
 
-The method concludes by calling the drawable’s [`present()`](mtldrawable/present().md) method, which instructs the drawable to show its content on the device’s display shortly after it gets the notification from the command queue. The [`MTLDrawable`](mtldrawable.md) protocol defines this method, which the [`CAMetalDrawable`](https://developer.apple.com/documentation/QuartzCore/CAMetalDrawable) protocol inherits.
+The method concludes by calling the drawable’s [`present()`](mtldrawable/present().md) method, which instructs the drawable to show its content on the device’s display shortly after it gets the notification from the command queue. The [`MTLDrawable`](mtldrawable.md) protocol defines this method, which the [`CAMetalDrawable`](https://developer.apple.com/documentation/quartzcore/cametaldrawable) protocol inherits.
 
 ##### Notify the Renderer When a Frames Resources Are Ready for Reuse
 

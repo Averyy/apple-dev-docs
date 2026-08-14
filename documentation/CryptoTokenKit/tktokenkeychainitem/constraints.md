@@ -3,7 +3,7 @@
 **Framework**: CryptoTokenKit  
 **Kind**: property
 
-Access constraints for the keychain item, keyed by [`TKTokenOperation`](tktokenoperation.md) values wrapped in [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) objects.
+Access constraints for the keychain item, keyed by [`TKTokenOperation`](tktokenoperation.md) values wrapped in [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) objects.
 
 **Availability**:
 - iOS 10.0+

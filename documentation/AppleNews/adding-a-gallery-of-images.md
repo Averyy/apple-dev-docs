@@ -8,7 +8,7 @@ Display three images as a sequential gallery.
 
 **On this page, you’ll learn how to use a gallery to display a sequence of images as a horizontal strip that the user can swipe through.**
 
-![Screenshot of an Apple News article with a gallery on iPad.](https://docs-assets.developer.apple.com/published/021ce7a4f8e709bbb71ad8fc9e35e467/media-3624436%402x.png)
+![Screenshot of an Apple News article with a gallery on iPad.](/images/com.apple.applenews/media-3624436@2x.png)
 
 ##### Add a Gallery in Your Article
 

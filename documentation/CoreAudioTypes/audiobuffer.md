@@ -50,7 +50,7 @@ An audio buffer holds a single buffer of audio data in its [`mData`](audiobuffer
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../Swift/BitwiseCopyable.md)
+- [BitwiseCopyable](../swift/bitwisecopyable.md)
 
 ## See Also
 

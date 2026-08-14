@@ -12,7 +12,7 @@ When debugging problems in your app, it’s helpful to record the exact sequence
 - When the problem is intermittent, and is difficult to catch in the debugger.
 - When you want to get a general sense of your app’s behavior—for example, you want to know when certain tasks start and end.
 
-The unified logging system provides a comprehensive and performant API to capture telemetry across all levels of the system. This system centralizes the storage of log data in memory and on disk, rather than writing that data to a text-based log file. You view log messages using the Console app, `log` command-line tool, or Xcode debug console. You can also access log messages programmatically using the [`OSLog`](https://developer.apple.com/documentation/OSLog) framework.
+The unified logging system provides a comprehensive and performant API to capture telemetry across all levels of the system. This system centralizes the storage of log data in memory and on disk, rather than writing that data to a text-based log file. You view log messages using the Console app, `log` command-line tool, or Xcode debug console. You can also access log messages programmatically using the [`OSLog`](https://developer.apple.com/documentation/oslog) framework.
 
 > ❗ **Important**:  The unified logging system is available in iOS 10.0 and later, macOS 10.12 and later, tvOS 10.0 and later, and watchOS 3.0 and later. This system supersedes the Apple System Logger (ASL) and Syslog APIs.
 

@@ -18,7 +18,7 @@ static let externalUnknown: AVCaptureDevice.DeviceType
 
 In macOS, use this type to specify external devices, such as an iPhone camera.
 
-> ❗ **Important**:  In [`Mac Catalyst`](https://developer.apple.com/documentation/UIKit/mac-catalyst) apps, use [`builtInWideAngleCamera`](avcapturedevice/devicetype-swift.struct/builtinwideanglecamera.md) instead.
+> ❗ **Important**:  In [`Mac Catalyst`](https://developer.apple.com/documentation/uikit/mac-catalyst) apps, use [`builtInWideAngleCamera`](avcapturedevice/devicetype-swift.struct/builtinwideanglecamera.md) instead.
 
 ## See Also
 

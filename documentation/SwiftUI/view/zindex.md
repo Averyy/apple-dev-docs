@@ -43,7 +43,7 @@ VStack {
 }
 ```
 
-![A screenshot showing two overlapping rectangles. The frontmost view is](https://docs-assets.developer.apple.com/published/fbd8a158f49936112e5018ce4e2cc94e/SwiftUI-View-zIndex%402x.png)
+![A screenshot showing two overlapping rectangles. The frontmost view is](/images/com.apple.SwiftUI/SwiftUI-View-zIndex@2x.png)
 
 ## Parameters
 

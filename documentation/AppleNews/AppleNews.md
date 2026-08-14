@@ -12,7 +12,7 @@ Design, create, and publish signature content for Apple News.
 
 Apple News is an iOS, iPadOS, macOS, and visionOS app that delivers articles from newspapers, magazines, websites, and other sources. News automatically optimizes your content for iPhone, iPad, Mac, and Apple Vision Pro to give your readers the best experience for their device.
 
-![Screenshot of Apple News on Mac, iPad, and iPhone.](https://docs-assets.developer.apple.com/published/a96231c1b2ad014607890cb2406a8c0b/media-4037849%402x.png)
+![Screenshot of Apple News on Mac, iPad, and iPhone.](/images/com.apple.applenews/media-4037849@2x.png)
 
 As an Apple News publisher, you can use the in-depth design capabilities of Apple News Format to create unique articles with beautiful typography, compelling animations, and rich photo galleries and videos. You can then use the Apple News API to publish your content to News and manage your published articles.
 

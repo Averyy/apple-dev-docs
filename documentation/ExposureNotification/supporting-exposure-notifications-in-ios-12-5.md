@@ -20,11 +20,11 @@ If you have an app that uses version 1 risk scoring and want to support iOS 12.5
 
 Exposure Notifications for iOS 12.5 requires Xcode 12.3 or later. In your Xcode project’s Build Settings tab, set the iOS deployment target. From the menu, select Other and type “12.5.”
 
-![Image that shows iOS Deployment Target set to iOS 12.5.](https://docs-assets.developer.apple.com/published/4578d6ca8c268ce64a49ee239ed6a876/media-3705948%402x.png)
+![Image that shows iOS Deployment Target set to iOS 12.5.](/images/com.apple.exposurenotification/media-3705948@2x.png)
 
 Select the Exposure Notification framework explicitly in the Link Binary With Libraries section under Build Phases. Set the status of the framework to Optional.
 
-![Image that shows how to add the Exposure Notification framework to your Xcode project.](https://docs-assets.developer.apple.com/published/8ee1e8d23b2ff7db3f331d27f2f006d2/media-3705004%402x.png)
+![Image that shows how to add the Exposure Notification framework to your Xcode project.](/images/com.apple.exposurenotification/media-3705004@2x.png)
 
 ##### Perform Api and Ios Version Checks
 
@@ -82,7 +82,7 @@ Although iOS 13.0 to 13.4 doesn’t support Exposure Notifications, your app mig
 
 ##### Set Background Task Interval and Request Runtime
 
-Apps that support Exposure Notifications periodically need time in the background to download and evaluate temporary exposure keys. Because [`BGTaskScheduler`](https://developer.apple.com/documentation/BackgroundTasks/BGTaskScheduler) isn’t available in iOS 12.5, Bluetooth explicitly grants apps with the Exposure Notifications entitlement 3.5 minutes at least once a day.
+Apps that support Exposure Notifications periodically need time in the background to download and evaluate temporary exposure keys. Because [`BGTaskScheduler`](https://developer.apple.com/documentation/backgroundtasks/bgtaskscheduler) isn’t available in iOS 12.5, Bluetooth explicitly grants apps with the Exposure Notifications entitlement 3.5 minutes at least once a day.
 
 Add the following code to your app to prepare it to receive background processing time at the defined interval.
 
@@ -185,9 +185,9 @@ ENManager *manager = [[ENManager alloc] init];
   Ensure that your server meets the requirements for supporting Exposure Notifications.
 - [class ENManager](enmanager.md)
   A class that manages exposure notifications.
-- [ENDeveloperRegion](../BundleResources/Information-Property-List/ENDeveloperRegion.md)
+- [ENDeveloperRegion](../bundleresources/information-property-list/endeveloperregion.md)
   A string that specifies the region that the app supports.
-- [ENAPIVersion](../BundleResources/Information-Property-List/ENAPIVersion.md)
+- [ENAPIVersion](../bundleresources/information-property-list/enapiversion.md)
   A number that specifies the version of the API to use.
 - [Changing Configuration Values Using the Server‑to‑Server API](changing-configuration-values-using-the-server-to-server-api.md)
   Update Exposure Notifications configuration values from a Public Health Authority’s server.

@@ -17,7 +17,7 @@ class ARSCNPlaneGeometry
 
 #### Overview
 
-[`ARSCNPlaneGeometry`](arscnplanegeometry.md) is a subclass of [`SCNGeometry`](https://developer.apple.com/documentation/SceneKit/SCNGeometry) that wraps the mesh data provided by the [`ARPlaneGeometry`](arplanegeometry.md) class. You can use [`ARSCNPlaneGeometry`](arscnplanegeometry.md) to visualize the plane shape estimates provided by ARKit in a SceneKit view.
+[`ARSCNPlaneGeometry`](arscnplanegeometry.md) is a subclass of [`SCNGeometry`](https://developer.apple.com/documentation/scenekit/scngeometry) that wraps the mesh data provided by the [`ARPlaneGeometry`](arplanegeometry.md) class. You can use [`ARSCNPlaneGeometry`](arscnplanegeometry.md) to visualize the plane shape estimates provided by ARKit in a SceneKit view.
 
 > ❗ **Important**:  [`ARSCNPlaneGeometry`](arscnplanegeometry.md) is available only in SceneKit views or renderers that use Metal. This class is not supported for OpenGL-based SceneKit rendering.
 
@@ -35,20 +35,20 @@ As your AR session continues to run, ARKit provides refined estimates of a detec
 ## Relationships
 
 ### Inherits From
-- [SCNGeometry](../SceneKit/SCNGeometry.md)
+- [SCNGeometry](../scenekit/scngeometry.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCoding](../Foundation/NSCoding.md)
-- [NSCopying](../Foundation/NSCopying.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [NSSecureCoding](../Foundation/NSSecureCoding.md)
-- [SCNAnimatable](../SceneKit/SCNAnimatable.md)
-- [SCNBoundingVolume](../SceneKit/SCNBoundingVolume.md)
-- [SCNShadable](../SceneKit/SCNShadable.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCoding](../foundation/nscoding.md)
+- [NSCopying](../foundation/nscopying.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [SCNAnimatable](../scenekit/scnanimatable.md)
+- [SCNBoundingVolume](../scenekit/scnboundingvolume.md)
+- [SCNShadable](../scenekit/scnshadable.md)
 
 ## See Also
 

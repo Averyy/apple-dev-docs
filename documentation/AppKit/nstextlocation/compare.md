@@ -17,7 +17,7 @@ func compare(_ location: any NSTextLocation) -> ComparisonResult
 
 #### Return Value
 
-A [`ComparisonResult`](https://developer.apple.com/documentation/Foundation/ComparisonResult).
+A [`ComparisonResult`](https://developer.apple.com/documentation/foundation/comparisonresult).
 
 ## Parameters
 

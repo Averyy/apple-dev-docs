@@ -34,7 +34,7 @@ Your app can take action appropriate to its use of cellular data; for example:
 ### Essentials
 - [class ServicePredictionProvider](servicepredictionprovider.md)
   A class that provices cellular service predictions about upcoming events and anomalies.
-- [Wireless Insights Service Predictions](../BundleResources/Entitlements/com.apple.developer.wireless-insights.service-predictions.md)
+- [Wireless Insights Service Predictions](../bundleresources/entitlements/com.apple.developer.wireless-insights.service-predictions.md)
   A Boolean value that indicates whether the app can use the WirelessInsights framework to obtain wireless service predictions.
 
 

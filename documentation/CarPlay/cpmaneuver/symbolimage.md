@@ -18,7 +18,7 @@ var symbolImage: UIImage? { get set }
 
 #### Discussion
 
-You use a named image asset to supply variants for both dark and light interface styles, and initialize the image using [`init(named:)`](https://developer.apple.com/documentation/UIKit/UIImage/init(named:)). CarPlay then selects the correct image for the current interface style.
+You use a named image asset to supply variants for both dark and light interface styles, and initialize the image using [`init(named:)`](https://developer.apple.com/documentation/uikit/uiimage/init(named:)). CarPlay then selects the correct image for the current interface style.
 
 ## See Also
 

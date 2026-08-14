@@ -45,7 +45,7 @@ Text("Hamlet")
     .font(.title)
 ```
 
-![A text view showing the name “Hamlet” in a title](https://docs-assets.developer.apple.com/published/43b5a30d2c1d2176fe1cc88aa2c567ac/SwiftUI-Text-title%402x.png)
+![A text view showing the name “Hamlet” in a title](/images/com.apple.SwiftUI/SwiftUI-Text-title@2x.png)
 
 If you need finer control over the styling of the text, you can use the same modifier to configure a system font or choose a custom font. You can also apply view modifiers like [`bold()`](text/bold().md) or [`italic()`](text/italic().md) to further adjust the formatting.
 
@@ -55,9 +55,9 @@ Text("by William Shakespeare")
     .italic()
 ```
 
-![A text view showing by William Shakespeare in a 12 point, light, italic,](https://docs-assets.developer.apple.com/published/c6398423bafcaae5f2c2daccf3057e5e/SwiftUI-Text-font%402x.png)
+![A text view showing by William Shakespeare in a 12 point, light, italic,](/images/com.apple.SwiftUI/SwiftUI-Text-font@2x.png)
 
-To apply styling within specific portions of the text, you can create the text view from an [`AttributedString`](https://developer.apple.com/documentation/Foundation/AttributedString), which in turn allows you to use Markdown to style runs of text. You can mix string attributes and SwiftUI modifiers, with the string attributes taking priority.
+To apply styling within specific portions of the text, you can create the text view from an [`AttributedString`](https://developer.apple.com/documentation/foundation/attributedstring), which in turn allows you to use Markdown to style runs of text. You can mix string attributes and SwiftUI modifiers, with the string attributes taking priority.
 
 ```swift
 let attributedString = try! AttributedString(
@@ -69,7 +69,7 @@ var body: some View {
 }
 ```
 
-![A text view showing Hamlet by William Shakespeare in a 12 point, light,](https://docs-assets.developer.apple.com/published/ddb3ef16d3bec75a55f66268a153531b/SwiftUI-Text-attributed%402x.png)
+![A text view showing Hamlet by William Shakespeare in a 12 point, light,](/images/com.apple.SwiftUI/SwiftUI-Text-attributed@2x.png)
 
 A text view always uses exactly the amount of space it needs to display its rendered contents, but you can affect the view’s layout. For example, you can use the [`frame(width:height:alignment:)`](view/frame(width:height:alignment:).md) modifier to propose specific dimensions to the view. If the view accepts the proposal but the text doesn’t fit into the available space, the view uses a combination of wrapping, tightening, scaling, and truncation to make it fit. With a width of `100` points but no constraint on the height, a text view might wrap a long string:
 
@@ -78,7 +78,7 @@ Text("To be, or not to be, that is the question:")
     .frame(width: 100)
 ```
 
-![A text view showing a quote from Hamlet split over three](https://docs-assets.developer.apple.com/published/122fc95483e6058c08280430279ba688/SwiftUI-Text-split%402x.png)
+![A text view showing a quote from Hamlet split over three](/images/com.apple.SwiftUI/SwiftUI-Text-split@2x.png)
 
 Use modifiers like [`lineLimit(_:)`](view/linelimit(_:).md), [`allowsTightening(_:)`](view/allowstightening(_:).md), [`minimumScaleFactor(_:)`](view/minimumscalefactor(_:).md), and [`truncationMode(_:)`](view/truncationmode(_:).md) to configure how the view handles space constraints. For example, combining a fixed width and a line limit of `1` results in truncation for text that doesn’t fit in that space:
 
@@ -88,7 +88,7 @@ Text("Brevity is the soul of wit.")
     .lineLimit(1)
 ```
 
-![A text view showing a truncated quote from Hamlet starting Brevity is t](https://docs-assets.developer.apple.com/published/d0f08188d0c13dc6fba6acb532579cf8/SwiftUI-Text-truncated%402x.png)
+![A text view showing a truncated quote from Hamlet starting Brevity is t](/images/com.apple.SwiftUI/SwiftUI-Text-truncated@2x.png)
 
 ##### Localizing Strings
 
@@ -129,7 +129,7 @@ This would look up the `"Hello, %@"` localization key in the localized string fi
 
 Using string interpolation ensures that the text in your app can be localized correctly in all locales, especially in right-to-left languages.
 
-If you desire to style only parts of interpolated text while ensuring that the content can still be localized correctly, interpolate `Text` or [`AttributedString`](https://developer.apple.com/documentation/Foundation/AttributedString):
+If you desire to style only parts of interpolated text while ensuring that the content can still be localized correctly, interpolate `Text` or [`AttributedString`](https://developer.apple.com/documentation/foundation/attributedstring):
 
 ```swift
 let name = Text(person.name).bold()
@@ -251,11 +251,11 @@ Using [`appendInterpolation(_:)`](localizedstringkey/stringinterpolation/appendi
 ## Relationships
 
 ### Conforms To
-- [Copyable](../Swift/Copyable.md)
-- [Equatable](../Swift/Equatable.md)
-- [Escapable](../Swift/Escapable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Copyable](../swift/copyable.md)
+- [Equatable](../swift/equatable.md)
+- [Escapable](../swift/escapable.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 - [View](view.md)
 
 ## See Also

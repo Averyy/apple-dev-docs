@@ -22,7 +22,7 @@ let kCTUnderlineStyleAttributeName: CFString
 
 #### Discussion
 
-Value must be a [`CFNumber`](https://developer.apple.com/documentation/CoreFoundation/CFNumber) object. Default is [`kCTUnderlineStyleNone`](ctunderlinestyle/kctunderlinestylenone.md). Set a value of something other than [`kCTUnderlineStyleNone`](ctunderlinestyle/kctunderlinestylenone.md) to draw an underline. In addition, the constants listed in  [`CTUnderlineStyleModifiers`](ctunderlinestylemodifiers.md) can be used to modify the look of the underline. The underline color is determined by the text’s foreground color.
+Value must be a [`CFNumber`](https://developer.apple.com/documentation/corefoundation/cfnumber) object. Default is [`kCTUnderlineStyleNone`](ctunderlinestyle/kctunderlinestylenone.md). Set a value of something other than [`kCTUnderlineStyleNone`](ctunderlinestyle/kctunderlinestylenone.md) to draw an underline. In addition, the constants listed in  [`CTUnderlineStyleModifiers`](ctunderlinestylemodifiers.md) can be used to modify the look of the underline. The underline color is determined by the text’s foreground color.
 
 ## See Also
 

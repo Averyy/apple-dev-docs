@@ -39,7 +39,7 @@ let c = vDSP.window(ofType: Float.self,
 
 The following figure illustrates the values of the output vector, `c`:
 
-![Visualization of a Blackman window.](https://docs-assets.developer.apple.com/published/60bd6fe48f68c85247dc2dc8de350818/media-3362247%402x.png)
+![Visualization of a Blackman window.](/images/com.apple.accelerate/media-3362247@2x.png)
 
 ## Parameters
 

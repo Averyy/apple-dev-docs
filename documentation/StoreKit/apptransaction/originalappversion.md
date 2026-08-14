@@ -28,7 +28,7 @@ let originalAppVersion: String
 
 Use this value to determine which app version the customer first purchased or downloaded. This value is comparable to the [`appVersion`](apptransaction/appversion.md) value.
 
-The [`originalAppVersion`](apptransaction/originalappversion.md) remains constant and doesn’t change when the customer upgrades the app. The string value contains the original value of the [`CFBundleShortVersionString`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/CFBundleShortVersionString) for apps running in macOS, and the original value of the [`CFBundleVersion`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/CFBundleVersion) for apps running on all other platforms.
+The [`originalAppVersion`](apptransaction/originalappversion.md) remains constant and doesn’t change when the customer upgrades the app. The string value contains the original value of the [`CFBundleShortVersionString`](https://developer.apple.com/documentation/bundleresources/information-property-list/cfbundleshortversionstring) for apps running in macOS, and the original value of the [`CFBundleVersion`](https://developer.apple.com/documentation/bundleresources/information-property-list/cfbundleversion) for apps running on all other platforms.
 
 In the sandbox testing environment, the [`originalAppVersion`](apptransaction/originalappversion.md) value is always `1.0`.
 

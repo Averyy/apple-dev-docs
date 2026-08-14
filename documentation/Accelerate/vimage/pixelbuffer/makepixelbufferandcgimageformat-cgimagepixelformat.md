@@ -26,7 +26,7 @@ A new pixel buffer of type [`vImage.DynamicPixelFormat`](vimage/dynamicpixelform
 
 #### Discussion
 
-Use this function where you know the bits per component and bits per pixel of the [`CGImage`](https://developer.apple.com/documentation/CoreGraphics/CGImage) instance. These must match those of the buffer’s `pixelFormat`, otherwise this function returns `nil`.
+Use this function where you know the bits per component and bits per pixel of the [`CGImage`](https://developer.apple.com/documentation/coregraphics/cgimage) instance. These must match those of the buffer’s `pixelFormat`, otherwise this function returns `nil`.
 
 ## Parameters
 

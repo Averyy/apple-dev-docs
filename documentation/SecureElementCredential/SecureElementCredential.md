@@ -33,9 +33,9 @@ SecureElementCredential supports transactions for in-store payments, car keys, c
 - [Accessing and using secure element credentials](accessing-and-using-secure-element-credentials.md)
   Manage and use payment cards and other credentials.
 ### Entitlements
-- [com.apple.developer.secure-element-credential](../BundleResources/Entitlements/com.apple.developer.secure-element-credential.md)
+- [com.apple.developer.secure-element-credential](../bundleresources/entitlements/com.apple.developer.secure-element-credential.md)
   A Boolean value that indicates whether your app can use the SecureElementCredential framework.
-- [com.apple.developer.secure-element-credential.default-contactless-app](../BundleResources/Entitlements/com.apple.developer.secure-element-credential.default-contactless-app.md)
+- [com.apple.developer.secure-element-credential.default-contactless-app](../bundleresources/entitlements/com.apple.developer.secure-element-credential.default-contactless-app.md)
   A Boolean value that indicates whether your app that uses the SecureElementCredential framework can become the default contactless app.
 ### Credentials
 - [actor CredentialSession](credentialsession.md)

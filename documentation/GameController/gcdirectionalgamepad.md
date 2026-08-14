@@ -21,13 +21,13 @@ class GCDirectionalGamepad
 
 #### Overview
 
-The directional gamepad profile is similar to a micro gamepad profile except it doesn’t support motion or rotation. The controller’s [`motion`](gccontroller/motion.md) property is `nil` and the inherited [`allowsRotation`](gcmicrogamepad/allowsrotation.md) property is [`false`](https://developer.apple.com/documentation/Swift/false).
+The directional gamepad profile is similar to a micro gamepad profile except it doesn’t support motion or rotation. The controller’s [`motion`](gccontroller/motion.md) property is `nil` and the inherited [`allowsRotation`](gcmicrogamepad/allowsrotation.md) property is [`false`](https://developer.apple.com/documentation/swift/false).
 
-If you select Micro Gamepad when you add the Game Controllers capability ([`GCSupportedGameControllers`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/GCSupportedGameControllers) ) to your project, and you also support the GCDirectionalGamepad profile, select Directional Gamepad as well.
+If you select Micro Gamepad when you add the Game Controllers capability ([`GCSupportedGameControllers`](https://developer.apple.com/documentation/bundleresources/information-property-list/gcsupportedgamecontrollers) ) to your project, and you also support the GCDirectionalGamepad profile, select Directional Gamepad as well.
 
-If you support the second-generation Siri Remote and later, set the [`GCSupportsMultipleMicroGamepads`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/GCSupportsMultipleMicroGamepads) key to `YES` in the information property list in your project.
+If you support the second-generation Siri Remote and later, set the [`GCSupportsMultipleMicroGamepads`](https://developer.apple.com/documentation/bundleresources/information-property-list/gcsupportsmultiplemicrogamepads) key to `YES` in the information property list in your project.
 
-In addition, the directional pad element may report digital or analog values. If the directional pad’s [`isAnalog`](gccontrollerelement/isanalog.md) property is [`false`](https://developer.apple.com/documentation/Swift/false), it reports absolute directional pad values (the [`reportsAbsoluteDpadValues`](gcmicrogamepad/reportsabsolutedpadvalues.md) property is [`true`](https://developer.apple.com/documentation/Swift/true)).
+In addition, the directional pad element may report digital or analog values. If the directional pad’s [`isAnalog`](gccontrollerelement/isanalog.md) property is [`false`](https://developer.apple.com/documentation/swift/false), it reports absolute directional pad values (the [`reportsAbsoluteDpadValues`](gcmicrogamepad/reportsabsolutedpadvalues.md) property is [`true`](https://developer.apple.com/documentation/swift/true)).
 
 ## Topics
 
@@ -40,12 +40,12 @@ In addition, the directional pad element may report digital or analog values. If
 ### Inherits From
 - [GCMicroGamepad](gcmicrogamepad.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

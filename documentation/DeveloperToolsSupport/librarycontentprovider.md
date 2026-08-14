@@ -42,7 +42,7 @@ struct LibraryModifierContent: LibraryContentProvider {
 }
 ```
 
-For modifiers that you define in an extension to [`View`](https://developer.apple.com/documentation/SwiftUI/View), you can provide any view conformer as the `base`. For modifiers that you define on a particular view type, provide that type as the `base`.
+For modifiers that you define in an extension to [`View`](https://developer.apple.com/documentation/swiftui/view), you can provide any view conformer as the `base`. For modifiers that you define on a particular view type, provide that type as the `base`.
 
 ## Topics
 

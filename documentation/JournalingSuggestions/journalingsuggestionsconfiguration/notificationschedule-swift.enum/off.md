@@ -25,7 +25,7 @@ This value can mean one or more possible causes:
 - Journaling Suggestions aren’t enabled in Settings.
 - Your app isn’t a preferred journal app in Settings.
 - Journaling Suggestions are on but notifications are off in Settings.
-- Your app has incomplete notification setup (for example, it’s missing the [`JSNotificationURLFormat`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/JSNotificationURLFormat) target property).
+- Your app has incomplete notification setup (for example, it’s missing the [`JSNotificationURLFormat`](https://developer.apple.com/documentation/bundleresources/information-property-list/jsnotificationurlformat) target property).
 
 ## See Also
 

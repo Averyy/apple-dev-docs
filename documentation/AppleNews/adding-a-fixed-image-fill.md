@@ -10,7 +10,7 @@ The fixed image fill is one of the most captivating effects in Apple News Format
 
 **On this page, you’ll learn how to use the fixed image fill.**
 
-![Screenshot of an Apple News article with a fixed image fill on iPad.](https://docs-assets.developer.apple.com/published/a9c06288356c7a5ed7d63b9bdd6e2ac3/media-3624928%402x.png)
+![Screenshot of an Apple News article with a fixed image fill on iPad.](/images/com.apple.applenews/media-3624928@2x.png)
 
 ##### Create a Componentlayout Object for the Fixed Image
 

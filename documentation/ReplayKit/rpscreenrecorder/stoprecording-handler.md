@@ -21,7 +21,7 @@ func stopRecording(handler: ((RPPreviewViewController?, (any Error)?) -> Void)? 
 
 #### Discussion
 
-When recording stops with no associated error, present the resulting preview view controller using [`present(_:animated:completion:)`](https://developer.apple.com/documentation/UIKit/UIViewController/present(_:animated:completion:)). The user will see the built-in preview view controller with options to trim, cut, and share the recording. On iPad, you must present the preview view controller as a popover.
+When recording stops with no associated error, present the resulting preview view controller using [`present(_:animated:completion:)`](https://developer.apple.com/documentation/uikit/uiviewcontroller/present(_:animated:completion:)). The user will see the built-in preview view controller with options to trim, cut, and share the recording. On iPad, you must present the preview view controller as a popover.
 
 Listing 1. Presenting the preview view controller on iPad
 

@@ -6,11 +6,11 @@ Build interprocess communication between your host app and extensions.
 
 #### Overview
 
-When the framework launches your extension processes, it provides the host app with a simple way to initiate an [`XPC`](https://developer.apple.com/documentation/XPC) connection with the extensions. Use this connection to communicate with the extensions, and to set up anonymous connections that the extensions use to communicate directly with each other.
+When the framework launches your extension processes, it provides the host app with a simple way to initiate an [`XPC`](https://developer.apple.com/documentation/xpc) connection with the extensions. Use this connection to communicate with the extensions, and to set up anonymous connections that the extensions use to communicate directly with each other.
 
 #### Create a Connection in the Browser App
 
-When your browser app has launched an extension, call the extension’s `makeLibXPCConnection()` method to create and initialize an [`xpc_connection_t`](https://developer.apple.com/documentation/XPC/xpc_connection_t) that represents an XPC connection between the browser app and the extension.
+When your browser app has launched an extension, call the extension’s `makeLibXPCConnection()` method to create and initialize an [`xpc_connection_t`](https://developer.apple.com/documentation/xpc/xpc_connection_t) that represents an XPC connection between the browser app and the extension.
 
 For example, to get an `xpc_connection_t` that represents a `libxpc` connection for IPC between your host app and its networking extension:
 
@@ -23,7 +23,7 @@ do {
 }
 ```
 
-Use the [`XPC`](https://developer.apple.com/documentation/XPC) framework to create objects that represent messages you send over the connection. You send all messages as dictionary objects. For example, to send a URL to the network extension:
+Use the [`XPC`](https://developer.apple.com/documentation/xpc) framework to create objects that represent messages you send over the connection. You send all messages as dictionary objects. For example, to send a URL to the network extension:
 
 ```swift
 extension URL {
@@ -42,7 +42,7 @@ func fetchData(from url: URL, over connection: xpc_connection_t) throws {
 }
 ```
 
-The [`xpc_connection_t`](https://developer.apple.com/documentation/XPC/xpc_connection_t) data type and functions that act on it are described in [`XPC connections`](https://developer.apple.com/documentation/XPC/xpc-connections). It is recommended that you use this API for browser apps and their extensions.
+The [`xpc_connection_t`](https://developer.apple.com/documentation/xpc/xpc_connection_t) data type and functions that act on it are described in [`XPC connections`](https://developer.apple.com/documentation/xpc/xpc-connections). It is recommended that you use this API for browser apps and their extensions.
 
 #### Handle Xpc Events in the Extension
 
@@ -61,11 +61,11 @@ class MyNetworkExtension: NetworkingExtension {
 }
 ```
 
-> ❗ **Important**:  Don’t call [`xpc_main(_:)`](https://developer.apple.com/documentation/XPC/xpc_main(_:)) from a browser extension. This function sets up the event loop for an XPC service, which causes problems if you call it in a process that isn’t an XPC service, for example a browser extension.
+> ❗ **Important**:  Don’t call [`xpc_main(_:)`](https://developer.apple.com/documentation/xpc/xpc_main(_:)) from a browser extension. This function sets up the event loop for an XPC service, which causes problems if you call it in a process that isn’t an XPC service, for example a browser extension.
 
 #### Pass Anonymous Connection Endpoints Between Extensions
 
-When two extensions that are part of the same browser app need to communicate directly, send an XPC message requesting an anonymous endpoint from the browser app to the first extension. In the first extension’s connection handler, configure and activate the connection. Wrap the connection you created in an [`xpc_endpoint_t`](https://developer.apple.com/documentation/XPC/xpc_endpoint_t) and send it in a reply to the host app:
+When two extensions that are part of the same browser app need to communicate directly, send an XPC message requesting an anonymous endpoint from the browser app to the first extension. In the first extension’s connection handler, configure and activate the connection. Wrap the connection you created in an [`xpc_endpoint_t`](https://developer.apple.com/documentation/xpc/xpc_endpoint_t) and send it in a reply to the host app:
 
 ```swift
 /* In the connection event handler for the connection to the browser app,
@@ -104,7 +104,7 @@ let endpointRequestReplyHandler = { replyWithEndpoint in
 }
 ```
 
-Finally, in the extension that receives the `xpc_endpoint_t`, call [`xpc_connection_create_from_endpoint(_:)`](https://developer.apple.com/documentation/XPC/xpc_connection_create_from_endpoint(_:)) to get an `xpc_connection_t` that the receiving extension uses to message the creating extension.
+Finally, in the extension that receives the `xpc_endpoint_t`, call [`xpc_connection_create_from_endpoint(_:)`](https://developer.apple.com/documentation/xpc/xpc_connection_create_from_endpoint(_:)) to get an `xpc_connection_t` that the receiving extension uses to message the creating extension.
 
 ```swift
 /* The connection event handler for the receiving extension. */
@@ -127,21 +127,21 @@ let otherExtensionConnection = xpc_connection_create_from_endpoint(endpoint)
 
 To be confident that your browser app or extension is communicating with the correct component, set a lightweight code requirement on the XPC connection. The system tests that the executable for the process at the remote end of the connection satisfies the requirement each time the process sends a message.
 
-> **Note**:  It’s possible for the process sending messages to your XPC connection to change at runtime, for example, if the listener creates an [`xpc_endpoint_t`](https://developer.apple.com/documentation/XPC/xpc_endpoint_t) and forwards it to a different process.
+> **Note**:  It’s possible for the process sending messages to your XPC connection to change at runtime, for example, if the listener creates an [`xpc_endpoint_t`](https://developer.apple.com/documentation/xpc/xpc_endpoint_t) and forwards it to a different process.
 
 In the sending process, if you send a message over an XPC connection and the receiving process doesn’t satisfy the lightweight code requirement you set, the message isn’t delivered. If you request a reply, XPC delivers the `XPC_ERROR_PEER_CODE_SIGNING_REQUIREMENT` error.
 
 In the receiving process, if a process that doesn’t satisfy the lightweight code requirement you set sends a message to your connection, the system drops the message and your event handler isn’t called.
 
-The sending and receiving process can each set a single lightweight code requirement on an XPC connection. For information on creating complex requirements that test multiple properties of the communicating process’s executable, see [`Defining launch environment and library constraints`](https://developer.apple.com/documentation/Security/defining-launch-environment-and-library-constraints).
+The sending and receiving process can each set a single lightweight code requirement on an XPC connection. For information on creating complex requirements that test multiple properties of the communicating process’s executable, see [`Defining launch environment and library constraints`](https://developer.apple.com/documentation/security/defining-launch-environment-and-library-constraints).
 
 For each XPC connection on which you set a lightweight code requirement, call one of the functions below to define the lightweight code requirement and attach it to the connection. Each function returns `0` if it sets the lightweight code requirement, or another value if it encounters an error.
 
-- **[`xpc_connection_set_peer_entitlement_exists_requirement(_:_:)`](https://developer.apple.com/documentation/XPC/xpc_connection_set_peer_entitlement_exists_requirement(_:_:))**: A specific entitlement needs to exist in the executable’s code signature.
-- **[`xpc_connection_set_peer_entitlement_matches_value_requirement(_:_:_:)`](https://developer.apple.com/documentation/XPC/xpc_connection_set_peer_entitlement_matches_value_requirement(_:_:_:))**: A specific entitlement needs to exist in the executable’s code signature, and have the given value.
-- **[`xpc_connection_set_peer_team_identity_requirement(_:_:)`](https://developer.apple.com/documentation/XPC/xpc_connection_set_peer_team_identity_requirement(_:_:))**: The executable needs to be signed with a developer code-signing identity issued by Apple, an enterprise code-signing identity, or an identity suitable for Developer ID, Testflight, or App Store distribution, by the identified developer team. The signing identifier needs to have the specified value. The signing identifier is usually an app’s Bundle ID, or a similar string for non-app executables; pass `nil` if any executable by the developer team is appropriate.
-- **[`xpc_connection_set_peer_platform_identity_requirement(_:_:)`](https://developer.apple.com/documentation/XPC/xpc_connection_set_peer_platform_identity_requirement(_:_:))**: The executable needs to be signed by Apple, with the given signing identifier.
-- **[`xpc_connection_set_peer_code_signing_requirement(_:_:)`](https://developer.apple.com/documentation/XPC/xpc_connection_set_peer_code_signing_requirement(_:_:))**: The executable needs to satisfy the lightweight code requirement you supply as a dictionary in the `lwcr` parameter.
+- **[`xpc_connection_set_peer_entitlement_exists_requirement(_:_:)`](https://developer.apple.com/documentation/xpc/xpc_connection_set_peer_entitlement_exists_requirement(_:_:))**: A specific entitlement needs to exist in the executable’s code signature.
+- **[`xpc_connection_set_peer_entitlement_matches_value_requirement(_:_:_:)`](https://developer.apple.com/documentation/xpc/xpc_connection_set_peer_entitlement_matches_value_requirement(_:_:_:))**: A specific entitlement needs to exist in the executable’s code signature, and have the given value.
+- **[`xpc_connection_set_peer_team_identity_requirement(_:_:)`](https://developer.apple.com/documentation/xpc/xpc_connection_set_peer_team_identity_requirement(_:_:))**: The executable needs to be signed with a developer code-signing identity issued by Apple, an enterprise code-signing identity, or an identity suitable for Developer ID, Testflight, or App Store distribution, by the identified developer team. The signing identifier needs to have the specified value. The signing identifier is usually an app’s Bundle ID, or a similar string for non-app executables; pass `nil` if any executable by the developer team is appropriate.
+- **[`xpc_connection_set_peer_platform_identity_requirement(_:_:)`](https://developer.apple.com/documentation/xpc/xpc_connection_set_peer_platform_identity_requirement(_:_:))**: The executable needs to be signed by Apple, with the given signing identifier.
+- **[`xpc_connection_set_peer_code_signing_requirement(_:_:)`](https://developer.apple.com/documentation/xpc/xpc_connection_set_peer_code_signing_requirement(_:_:))**: The executable needs to satisfy the lightweight code requirement you supply as a dictionary in the `lwcr` parameter.
 
 It’s an error to call multiple functions that set lightweight code requirements on the same XPC connection, or the same function more than once. If you do, the system ends your process.
 

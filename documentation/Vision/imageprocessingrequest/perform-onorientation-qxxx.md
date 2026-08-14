@@ -27,7 +27,7 @@ The observation — or list of observations — the request produces.
 
 ## Parameters
 
-- `image`: The input [`CGImage`](https://developer.apple.com/documentation/CoreGraphics/CGImage) on which to perform the request.
+- `image`: The input [`CGImage`](https://developer.apple.com/documentation/coregraphics/cgimage) on which to perform the request.
 - `orientation`: The orientation of the input image. Default is `nil`.
 
 ## See Also

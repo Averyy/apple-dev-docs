@@ -31,7 +31,7 @@ Use the methods of this protocol to manage the following features:
 - Respond to swipes and other actions in table rows.
 - Support editing the table’s content.
 
-The table view specifies rows and sections using [`IndexPath`](https://developer.apple.com/documentation/Foundation/IndexPath). For information about how to interpret row and section indexes, see [`Specify the location of rows and sections`](uitableviewdatasource#Specify-the-location-of-rows-and-sections.md).
+The table view specifies rows and sections using [`IndexPath`](https://developer.apple.com/documentation/foundation/indexpath). For information about how to interpret row and section indexes, see [`Specify the location of rows and sections`](uitableviewdatasource#Specify-the-location-of-rows-and-sections.md).
 
 ## Topics
 
@@ -165,7 +165,7 @@ The table view specifies rows and sections using [`IndexPath`](https://developer
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 - [UIScrollViewDelegate](uiscrollviewdelegate.md)
 ### Conforming Types
 - [UITableViewController](uitableviewcontroller.md)

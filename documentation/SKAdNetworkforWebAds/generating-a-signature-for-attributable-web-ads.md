@@ -8,7 +8,7 @@ Initiate install-validation by providing the signed parameters for an attributab
 
 A user’s device calls the [`Get a Signed Web Ad Impression Payload`](get-a-signed-skadnetwork-ad-payload-for-a-web-ad..md) endpoint on your server when a user taps the web ad that you create using the instructions in [`Creating an attributable ad link`](creating-an-attributable-ad-link.md). To respond to the request, you need to provide the values in the [`AdImpressionResponse`](adimpressionresponse.md), which includes a cryptographic signature.
 
-To generate the signature, combine the required values from the [`signature`](signature.md) object and cryptographically sign the resulting string. Use the ad network ID and PKCS#8 private key that you establish when registering to use the API. For more information, see [`Registering an ad network`](https://developer.apple.com/documentation/StoreKit/registering-an-ad-network).
+To generate the signature, combine the required values from the [`signature`](signature.md) object and cryptographically sign the resulting string. Use the ad network ID and PKCS#8 private key that you establish when registering to use the API. For more information, see [`Registering an ad network`](https://developer.apple.com/documentation/storekit/registering-an-ad-network).
 
 ##### Combine the Parameters
 
@@ -39,11 +39,11 @@ Encode the binary signature you generate into a Base64 string. The result is you
 MEQCIEQlmZRNfYzKBSE8QnhLTIHZZZWCFgZpRqRxHss65KoFAiAJgJKjdrWdkLUOCCjuEx2RmFS7daRzSVZRVZ8RyMyUXg==
 ```
 
-For more information about Base64 encoding, see [`base64EncodedString(options:)`](https://developer.apple.com/documentation/Foundation/Data/base64EncodedString(options:)).
+For more information about Base64 encoding, see [`base64EncodedString(options:)`](https://developer.apple.com/documentation/foundation/data/base64encodedstring(options:)).
 
 ##### Use the Generated Signature String
 
-After you generate the signature, use this value in the `signature` parameter of the [`AdImpressionResponse`](adimpressionresponse.md). If the user installs and launches the advertised app, the attribution-winning ad network receives an install-validation postback. For more information about postbacks, see [`Verifying an install-validation postback`](https://developer.apple.com/documentation/StoreKit/verifying-an-install-validation-postback).
+After you generate the signature, use this value in the `signature` parameter of the [`AdImpressionResponse`](adimpressionresponse.md). If the user installs and launches the advertised app, the attribution-winning ad network receives an install-validation postback. For more information about postbacks, see [`Verifying an install-validation postback`](https://developer.apple.com/documentation/storekit/verifying-an-install-validation-postback).
 
 ## See Also
 

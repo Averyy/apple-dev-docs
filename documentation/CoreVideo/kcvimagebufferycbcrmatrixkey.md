@@ -22,7 +22,7 @@ let kCVImageBufferYCbCrMatrixKey: CFString
 
 #### Discussion
 
-The color matrix value is of type [`CFString`](https://developer.apple.com/documentation/CoreFoundation/CFString). It indicates the type of conversion matrix Core Video uses when it converts image buffer data from the YCbCr color space to the RGB color space. See [`Image Buffer YCbCr Matrix Constants`](image-buffer-ycbcr-matrix-constants.md) for more information.
+The color matrix value is of type [`CFString`](https://developer.apple.com/documentation/corefoundation/cfstring). It indicates the type of conversion matrix Core Video uses when it converts image buffer data from the YCbCr color space to the RGB color space. See [`Image Buffer YCbCr Matrix Constants`](image-buffer-ycbcr-matrix-constants.md) for more information.
 
 ## See Also
 

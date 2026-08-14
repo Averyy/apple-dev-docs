@@ -16,7 +16,7 @@ virtual kern_return_t Stop(IOService *provider);
 
 #### Return Value
 
-[`kIOReturnSuccess`](https://developer.apple.com/documentation/DriverKit/kIOReturnSuccess) on success, or another value if an error occurs. See [`Error Codes`](https://developer.apple.com/documentation/DriverKit/error-codes).
+[`kIOReturnSuccess`](https://developer.apple.com/documentation/driverkit/kioreturnsuccess) on success, or another value if an error occurs. See [`Error Codes`](https://developer.apple.com/documentation/driverkit/error-codes).
 
 #### Discussion
 
@@ -24,7 +24,7 @@ Before terminating a provider, the system calls this method to stop the service 
 
 ## Parameters
 
-- `provider`: The provider associated with the current service. This object is the same one that the system previously passed to your service’s [`Start`](https://developer.apple.com/documentation/SerialDriverKit/IOUserSerial/Start) method.
+- `provider`: The provider associated with the current service. This object is the same one that the system previously passed to your service’s [`Start`](https://developer.apple.com/documentation/serialdriverkit/iouserserial/start) method.
 
 ## See Also
 

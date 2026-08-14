@@ -102,11 +102,11 @@ xB = discreteInput(before: y)       y      xA = discreteInput(after: y)
 ## Relationships
 
 ### Inherits From
-- [Decodable](../Swift/Decodable.md)
-- [Encodable](../Swift/Encodable.md)
-- [Equatable](../Swift/Equatable.md)
+- [Decodable](../swift/decodable.md)
+- [Encodable](../swift/encodable.md)
+- [Equatable](../swift/equatable.md)
 - [FormatStyle](formatstyle.md)
-- [Hashable](../Swift/Hashable.md)
+- [Hashable](../swift/hashable.md)
 ### Conforming Types
 - [Date.AnchoredRelativeFormatStyle](date/anchoredrelativeformatstyle.md)
 - [Date.ComponentsFormatStyle](date/componentsformatstyle.md)

@@ -25,7 +25,7 @@ You can assign a single print formatter for a print job using the [`printFormatt
 
 [`UIPrintFormatter`](uiprintformatter.md) publishes an interface that allows you to specify the starting page for a print job and the margins around the printed content; given that information plus the content, a print formatter computes the number of pages for the print job. The following image depicts the print-formatter properties, along with certain [`UIPrintPaper`](uiprintpaper.md) and [`UIPrintPageRenderer`](uiprintpagerenderer.md) properties, that define the layout of a multipage print job.
 
-![Diagram that shows the layout of printed content.](https://docs-assets.developer.apple.com/published/5af87d7015f12142813615b85252c418/media-1965769.jpg)
+![Diagram that shows the layout of printed content.](/images/com.apple.uikit/media-1965769.jpg)
 
 Third-party subclasses of [`UIPrintFormatter`](uiprintformatter.md) aren’t recommended. If you have custom content to print, use a custom [`UIPrintPageRenderer`](uiprintpagerenderer.md) object.
 
@@ -62,19 +62,19 @@ Third-party subclasses of [`UIPrintFormatter`](uiprintformatter.md) aren’t rec
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Inherited By
 - [UIMarkupTextPrintFormatter](uimarkuptextprintformatter.md)
 - [UISimpleTextPrintFormatter](uisimpletextprintformatter.md)
 - [UIViewPrintFormatter](uiviewprintformatter.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCopying](../Foundation/NSCopying.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCopying](../foundation/nscopying.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

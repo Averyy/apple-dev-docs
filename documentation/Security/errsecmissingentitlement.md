@@ -37,7 +37,7 @@ let attributes = [kSecClass: kSecClassGenericPassword,
 let addStatus = SecItemAdd(attributes as CFDictionary, nil)
 ```
 
-To avoid the error, either use your app’s default access group by omitting the [`kSecAttrAccessGroup`](ksecattraccessgroup.md) key in the add attributes, or make sure that the value associated with the key matches one of your app’s access groups. These access groups come from your app’s [`Keychain Access Groups Entitlement`](https://developer.apple.com/documentation/BundleResources/Entitlements/keychain-access-groups), its app identifier, and its [`App Groups Entitlement`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.security.application-groups), in that order, as described in [`Sharing access to keychain items among a collection of apps`](sharing-access-to-keychain-items-among-a-collection-of-apps.md).
+To avoid the error, either use your app’s default access group by omitting the [`kSecAttrAccessGroup`](ksecattraccessgroup.md) key in the add attributes, or make sure that the value associated with the key matches one of your app’s access groups. These access groups come from your app’s [`Keychain Access Groups Entitlement`](https://developer.apple.com/documentation/bundleresources/entitlements/keychain-access-groups), its app identifier, and its [`App Groups Entitlement`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.security.application-groups), in that order, as described in [`Sharing access to keychain items among a collection of apps`](sharing-access-to-keychain-items-among-a-collection-of-apps.md).
 
 You can check the access group string by setting a breakpoint on the [`SecItemAdd(_:_:)`](secitemadd(_:_:).md) call and using the debugger to print the query dictionary. Look for the `agrp` item:
 
@@ -55,7 +55,7 @@ You can check the access group string by setting a breakpoint on the [`SecItemAd
 
 If after setting the access group key correctly you still receive the `errSecMissingEntitlement` error, check to make sure the entitlements in your built app match your expectations. Build your app for a hardware target—not the Simulator app—and use Xcode to locate the app bundle on disk:
 
-![Screenshot of Xcode showing how to find the full path to a built app bundle.](https://docs-assets.developer.apple.com/published/3e2ed90d0f429cda500e6d525afe04af/media-3370373%402x.png)
+![Screenshot of Xcode showing how to find the full path to a built app bundle.](/images/com.apple.security/media-3370373@2x.png)
 
 Then get a list of the app’s entitlements. Run the codesign command-line utility shown in the following example, substituting the Xcode-provided path to your app, like the one highlighted in the preceding illustration.
 

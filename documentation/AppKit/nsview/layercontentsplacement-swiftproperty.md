@@ -16,7 +16,7 @@ var layerContentsPlacement: NSView.LayerContentsPlacement { get set }
 
 #### Discussion
 
-The content placement determines how the backing layer’s existing cached content image will be mapped into the layer as the layer is resized. It is analogous to, and underpinned by, the [`contentsGravity`](https://developer.apple.com/documentation/QuartzCore/CALayer/contentsGravity) property of the [`CALayer`](https://developer.apple.com/documentation/QuartzCore/CALayer) class. The default value of this property is [`NSView.LayerContentsPlacement.scaleAxesIndependently`](nsview/layercontentsplacement-swift.enum/scaleaxesindependently.md). For a list of supported values, see [`NSView.LayerContentsPlacement`](nsview/layercontentsplacement-swift.enum.md).
+The content placement determines how the backing layer’s existing cached content image will be mapped into the layer as the layer is resized. It is analogous to, and underpinned by, the [`contentsGravity`](https://developer.apple.com/documentation/quartzcore/calayer/contentsgravity) property of the [`CALayer`](https://developer.apple.com/documentation/quartzcore/calayer) class. The default value of this property is [`NSView.LayerContentsPlacement.scaleAxesIndependently`](nsview/layercontentsplacement-swift.enum/scaleaxesindependently.md). For a list of supported values, see [`NSView.LayerContentsPlacement`](nsview/layercontentsplacement-swift.enum.md).
 
 For additional information about the performance impacts of this property, see the [`layerContentsRedrawPolicy`](nsview/layercontentsredrawpolicy-swift.property.md) property.
 

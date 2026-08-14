@@ -22,7 +22,7 @@ let kCTFontWidthTrait: CFString
 
 #### Discussion
 
-This value corresponds to the relative interglyph spacing for a given font. The value returned is a [`CFNumber`](https://developer.apple.com/documentation/CoreFoundation/CFNumber) object representing a float between `-1.0` and `1.0`. The value of `0.0` corresponds to regular glyph spacing, and negative values represent condensed glyph spacing.
+This value corresponds to the relative interglyph spacing for a given font. The value returned is a [`CFNumber`](https://developer.apple.com/documentation/corefoundation/cfnumber) object representing a float between `-1.0` and `1.0`. The value of `0.0` corresponds to regular glyph spacing, and negative values represent condensed glyph spacing.
 
 ## See Also
 

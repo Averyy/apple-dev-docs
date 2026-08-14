@@ -21,7 +21,7 @@ object applinks.Details.Components.Query
 
 #### Discussion
 
-The keys in this dictionary are [`NSURLQueryItem`](https://developer.apple.com/documentation/Foundation/NSURLQueryItem) names and the values are patterns to match with the specified key’s value. This example code shows how to use a dictionary object for pattern matching with a URL query component:
+The keys in this dictionary are [`NSURLQueryItem`](https://developer.apple.com/documentation/foundation/nsurlqueryitem) names and the values are patterns to match with the specified key’s value. This example code shows how to use a dictionary object for pattern matching with a URL query component:
 
 ```javascript
 "?": { "productID": "12345" }

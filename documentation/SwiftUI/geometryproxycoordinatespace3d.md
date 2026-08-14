@@ -23,7 +23,7 @@ struct GeometryProxyCoordinateSpace3D
 ## Relationships
 
 ### Conforms To
-- [CoordinateSpace3D](../Spatial/CoordinateSpace3D.md)
+- [CoordinateSpace3D](../spatial/coordinatespace3d.md)
 
 ## See Also
 

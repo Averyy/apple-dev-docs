@@ -23,7 +23,7 @@ var canStepBackward: Bool { get }
 
 #### Discussion
 
-Once the item becomes ready to play, the value of this property does not change. This behavior applies even when boundary conditions, such as when the item’s current time is [`zero`](https://developer.apple.com/documentation/CoreMedia/CMTime/zero), have been reached.
+Once the item becomes ready to play, the value of this property does not change. This behavior applies even when boundary conditions, such as when the item’s current time is [`zero`](https://developer.apple.com/documentation/coremedia/cmtime/zero), have been reached.
 
 ## See Also
 

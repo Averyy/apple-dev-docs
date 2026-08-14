@@ -23,7 +23,7 @@ var leftCalloutAccessoryView: NSView? { get set }
 
 The default value of this property is `nil`. Typically, you use the left callout view to display information about the annotation or to link to custom information that your app provides.
 
-In an iOS app, if the view you specify is also a descendant of the [`UIControl`](https://developer.apple.com/documentation/UIKit/UIControl) class, you can use the map view’s delegate to receive notifications when the user taps your control. If it doesn’t descend from [`UIControl`](https://developer.apple.com/documentation/UIKit/UIControl), your view is responsible for handling any touch events within its bounds.
+In an iOS app, if the view you specify is also a descendant of the [`UIControl`](https://developer.apple.com/documentation/uikit/uicontrol) class, you can use the map view’s delegate to receive notifications when the user taps your control. If it doesn’t descend from [`UIControl`](https://developer.apple.com/documentation/uikit/uicontrol), your view is responsible for handling any touch events within its bounds.
 
 In a macOS app, the callout view’s view controller can implement an action method that responds when the user clicks the control in a callout view.
 

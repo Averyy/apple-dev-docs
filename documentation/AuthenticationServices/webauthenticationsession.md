@@ -23,11 +23,11 @@ struct WebAuthenticationSession
 
 #### Overview
 
-You access an instance of this type by using the SwiftUI [`Environment`](https://developer.apple.com/documentation/SwiftUI/Environment) property wrapper and specifying [`webAuthenticationSession`](https://developer.apple.com/documentation/SwiftUI/EnvironmentValues/webAuthenticationSession) as the environment value.
+You access an instance of this type by using the SwiftUI [`Environment`](https://developer.apple.com/documentation/swiftui/environment) property wrapper and specifying [`webAuthenticationSession`](https://developer.apple.com/documentation/swiftui/environmentvalues/webauthenticationsession) as the environment value.
 
 To begin an authentication session and display the browser, call [`authenticate(using:callbackURLScheme:preferredBrowserSession:)`](webauthenticationsession/authenticate(using:callbackurlscheme:preferredbrowsersession:).md). For example, when someone taps a button, the web service authenticates that person and then the authentication provider redirects the browser to a URL it constructs using the app’s custom callback scheme. The browser detects that redirect, dismisses itself, and returns the complete URL to the awaiting caller.
 
-The following example shows how to use a SwiftUI [`Button`](https://developer.apple.com/documentation/SwiftUI/Button) to invoke a session:
+The following example shows how to use a SwiftUI [`Button`](https://developer.apple.com/documentation/swiftui/button) to invoke a session:
 
 ```swift
 struct WebAuthenticationSessionExample: View {
@@ -81,8 +81,8 @@ let token = queryItems?.filter({ $0.name == "token" }).first?.value
 ## Relationships
 
 ### Conforms To
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 
@@ -96,7 +96,7 @@ let token = queryItems?.filter({ $0.name == "token" }).first?.value
   Extend your web browser app to handle web authentication requests from other apps.
 - [class ASWebAuthenticationSessionWebBrowserSessionManager](aswebauthenticationsessionwebbrowsersessionmanager.md)
   A session manager that mediates sharing data between an app and a web browser.
-- [ASWebAuthenticationSessionWebBrowserSupportCapabilities](../BundleResources/Information-Property-List/ASWebAuthenticationSessionWebBrowserSupportCapabilities.md)
+- [ASWebAuthenticationSessionWebBrowserSupportCapabilities](../bundleresources/information-property-list/aswebauthenticationsessionwebbrowsersupportcapabilities.md)
   A collection of keys that a browser app uses to declare its ability to handle authentication requests from other apps.
 
 

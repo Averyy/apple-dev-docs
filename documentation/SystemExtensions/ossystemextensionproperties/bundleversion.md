@@ -19,7 +19,7 @@ var bundleVersion: String { get }
 
 #### Discussion
 
-This is the [`CFBundleVersion`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/CFBundleVersion) of the extension bundle.
+This is the [`CFBundleVersion`](https://developer.apple.com/documentation/bundleresources/information-property-list/cfbundleversion) of the extension bundle.
 
 ## See Also
 

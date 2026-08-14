@@ -6,40 +6,40 @@ Learn about important changes to HealthKit.
 
 #### Overview
 
-Browse notable changes in [`HealthKit`](https://developer.apple.com/documentation/HealthKit).
+Browse notable changes in [`HealthKit`](https://developer.apple.com/documentation/healthkit).
 
 #### June 2026
 
 ##### Workout Zones
 
-- Access workout zone data for heart rate and cycling power. Read zone configurations and time-in-zone information from workouts using [`HKWorkoutZoneGroup`](https://developer.apple.com/documentation/HealthKit/HKWorkoutZoneGroup).
-- Retrieve a person’s preferred zones from Health Settings with [`preferredWorkoutZoneConfiguration(for:)`](https://developer.apple.com/documentation/HealthKit/HKHealthStore/preferredWorkoutZoneConfiguration(for:)).
-- Provide custom zones for specific workouts using [`HKWorkoutZoneConfiguration`](https://developer.apple.com/documentation/HealthKit/HKWorkoutZoneConfiguration).
-- Receive real-time zone updates during active workout sessions through [`HKLiveWorkoutBuilderDelegate`](https://developer.apple.com/documentation/HealthKit/HKLiveWorkoutBuilderDelegate).
+- Access workout zone data for heart rate and cycling power. Read zone configurations and time-in-zone information from workouts using [`HKWorkoutZoneGroup`](https://developer.apple.com/documentation/healthkit/hkworkoutzonegroup).
+- Retrieve a person’s preferred zones from Health Settings with [`preferredWorkoutZoneConfiguration(for:)`](https://developer.apple.com/documentation/healthkit/hkhealthstore/preferredworkoutzoneconfiguration(for:)).
+- Provide custom zones for specific workouts using [`HKWorkoutZoneConfiguration`](https://developer.apple.com/documentation/healthkit/hkworkoutzoneconfiguration).
+- Receive real-time zone updates during active workout sessions through [`HKLiveWorkoutBuilderDelegate`](https://developer.apple.com/documentation/healthkit/hkliveworkoutbuilderdelegate).
 
 ##### Menopause Api
 
-- Record and query menopausal state information using point-in-time samples. Track perimenopause, menopause, or confirmed absence of menopausal state with [`menopausalState`](https://developer.apple.com/documentation/HealthKit/HKCategoryTypeIdentifier/menopausalState) and [`HKCategoryValueMenopausalState`](https://developer.apple.com/documentation/HealthKit/HKCategoryValueMenopausalState). See [`Recording and querying menopausal state`](https://developer.apple.com/documentation/HealthKit/recording-and-querying-menopausal-state).
-- Track bleeding that occurs after menopause using [`bleedingAfterMenopause`](https://developer.apple.com/documentation/HealthKit/HKCategoryTypeIdentifier/bleedingAfterMenopause). This category type uses [`HKCategoryValueVaginalBleeding`](https://developer.apple.com/documentation/HealthKit/HKCategoryValueVaginalBleeding) to record bleeding intensity.
+- Record and query menopausal state information using point-in-time samples. Track perimenopause, menopause, or confirmed absence of menopausal state with [`menopausalState`](https://developer.apple.com/documentation/healthkit/hkcategorytypeidentifier/menopausalstate) and [`HKCategoryValueMenopausalState`](https://developer.apple.com/documentation/healthkit/hkcategoryvaluemenopausalstate). See [`Recording and querying menopausal state`](https://developer.apple.com/documentation/healthkit/recording-and-querying-menopausal-state).
+- Track bleeding that occurs after menopause using [`bleedingAfterMenopause`](https://developer.apple.com/documentation/healthkit/hkcategorytypeidentifier/bleedingaftermenopause). This category type uses [`HKCategoryValueVaginalBleeding`](https://developer.apple.com/documentation/healthkit/hkcategoryvaluevaginalbleeding) to record bleeding intensity.
 
 #### June 2025
 
-- Start workout sessions on iOS using [`HKLiveWorkoutBuilder`](https://developer.apple.com/documentation/HealthKit/HKLiveWorkoutBuilder).
-- Query medications that a person has added to the Health app, using [`HKUserAnnotatedMedicationQueryDescriptor`](https://developer.apple.com/documentation/HealthKit/HKUserAnnotatedMedicationQueryDescriptor) and the times they’ve logged that medication using [`HKMedicationDoseEventType`](https://developer.apple.com/documentation/HealthKit/HKMedicationDoseEventType).
+- Start workout sessions on iOS using [`HKLiveWorkoutBuilder`](https://developer.apple.com/documentation/healthkit/hkliveworkoutbuilder).
+- Query medications that a person has added to the Health app, using [`HKUserAnnotatedMedicationQueryDescriptor`](https://developer.apple.com/documentation/healthkit/hkuserannotatedmedicationquerydescriptor) and the times they’ve logged that medication using [`HKMedicationDoseEventType`](https://developer.apple.com/documentation/healthkit/hkmedicationdoseeventtype).
 
 #### September 2024
 
-- Apple Watch Series 10 supports the Shallow Depth and Pressure capability. Use [`underwaterDepth`](https://developer.apple.com/documentation/HealthKit/HKQuantityTypeIdentifier/underwaterDepth) and [`waterTemperature`](https://developer.apple.com/documentation/HealthKit/HKQuantityTypeIdentifier/waterTemperature) to read depth and temperature data from shallow dives.
+- Apple Watch Series 10 supports the Shallow Depth and Pressure capability. Use [`underwaterDepth`](https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier/underwaterdepth) and [`waterTemperature`](https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier/watertemperature) to read depth and temperature data from shallow dives.
 
 #### June 2024
 
 ##### General
 
 - Create HealthKit apps for VisionOS.
-- Associate perceived and estimated exertion values with workouts. Use [`workoutEffortScore`](https://developer.apple.com/documentation/HealthKit/HKQuantityTypeIdentifier/workoutEffortScore) and [`estimatedWorkoutEffortScore`](https://developer.apple.com/documentation/HealthKit/HKQuantityTypeIdentifier/estimatedWorkoutEffortScore) to read and write exertion data. Use [`relateWorkoutEffortSample(_:with:activity:completion:)`](https://developer.apple.com/documentation/HealthKit/HKHealthStore/relateWorkoutEffortSample(_:with:activity:completion:)) to associate exertion data with a workout, and [`HKWorkoutEffortRelationshipQuery`](https://developer.apple.com/documentation/HealthKit/HKWorkoutEffortRelationshipQuery) to query for associated exertion data.
-- Access water temperature data from swimming workouts. Any Apple Watch Ultra records [`waterTemperature`](https://developer.apple.com/documentation/HealthKit/HKQuantityTypeIdentifier/waterTemperature) samples during swimming workouts.
-- Read and write mental well-being samples using the [`HKStateOfMind`](https://developer.apple.com/documentation/HealthKit/HKStateOfMind), [`HKPHQ9Assessment`](https://developer.apple.com/documentation/HealthKit/HKPHQ9Assessment), and [`HKGAD7Assessment`](https://developer.apple.com/documentation/HealthKit/HKGAD7Assessment) data types.
-- Track menstrual flow and intermenstrual bleeding during pregnancy using the [`bleedingDuringPregnancy`](https://developer.apple.com/documentation/HealthKit/HKCategoryTypeIdentifier/bleedingDuringPregnancy) and [`bleedingAfterPregnancy`](https://developer.apple.com/documentation/HealthKit/HKCategoryTypeIdentifier/bleedingAfterPregnancy) data types.
+- Associate perceived and estimated exertion values with workouts. Use [`workoutEffortScore`](https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier/workouteffortscore) and [`estimatedWorkoutEffortScore`](https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier/estimatedworkouteffortscore) to read and write exertion data. Use [`relateWorkoutEffortSample(_:with:activity:completion:)`](https://developer.apple.com/documentation/healthkit/hkhealthstore/relateworkouteffortsample(_:with:activity:completion:)) to associate exertion data with a workout, and [`HKWorkoutEffortRelationshipQuery`](https://developer.apple.com/documentation/healthkit/hkworkouteffortrelationshipquery) to query for associated exertion data.
+- Access water temperature data from swimming workouts. Any Apple Watch Ultra records [`waterTemperature`](https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier/watertemperature) samples during swimming workouts.
+- Read and write mental well-being samples using the [`HKStateOfMind`](https://developer.apple.com/documentation/healthkit/hkstateofmind), [`HKPHQ9Assessment`](https://developer.apple.com/documentation/healthkit/hkphq9assessment), and [`HKGAD7Assessment`](https://developer.apple.com/documentation/healthkit/hkgad7assessment) data types.
+- Track menstrual flow and intermenstrual bleeding during pregnancy using the [`bleedingDuringPregnancy`](https://developer.apple.com/documentation/healthkit/hkcategorytypeidentifier/bleedingduringpregnancy) and [`bleedingAfterPregnancy`](https://developer.apple.com/documentation/healthkit/hkcategorytypeidentifier/bleedingafterpregnancy) data types.
 
 #### June 2023
 

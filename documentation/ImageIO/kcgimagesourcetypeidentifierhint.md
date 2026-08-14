@@ -22,7 +22,7 @@ let kCGImageSourceTypeIdentifierHint: CFString
 
 #### Discussion
 
-The value of this key is a [`CFString`](https://developer.apple.com/documentation/CoreFoundation/CFString) object. Add this key to the options dictionary when you create a [`CGImageSource`](cgimagesource.md) object.
+The value of this key is a [`CFString`](https://developer.apple.com/documentation/corefoundation/cfstring) object. Add this key to the options dictionary when you create a [`CGImageSource`](cgimagesource.md) object.
 
 ## See Also
 

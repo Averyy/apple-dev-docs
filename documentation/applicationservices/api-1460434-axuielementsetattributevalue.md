@@ -18,6 +18,12 @@ func AXUIElementSetAttributeValue(_ element: AXUIElement, _ attribute: CFString,
 
 If unsuccessful, `AXUIElementSetAttributeValue` may return one of the following error codes, among others:
 
+- **`kAXErrorIllegalArgument`**: The value is not recognized by the accessible application or one of the other arguments is an illegal value.
+- **`kAXErrorAttributeUnsupported`**: The specified AXUIElementRef does not support the specified attribute.
+- **`kAXErrorInvalidUIElement`**: The AXUIElementRef is invalid.
+- **`kAXErrorCannotComplete`**: The function cannot complete because messaging has failed in some way.
+- **`kAXErrorNotImplemented`**: The process does not fully support the accessibility API.
+
 #### Discussion
 
 You can send and receive many different CFTypeRefs using the accessibility API. These include all CFPropertyListRef types, AXUIElementRef, AXValueRef, AXTextMarkerRef, AXTextMarkerRangeRef, CFNullRef, CFAttributedStringRef, and CRURLRef.

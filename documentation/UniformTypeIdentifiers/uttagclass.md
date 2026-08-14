@@ -26,7 +26,7 @@ A tag class is a label that represents the mapping of a [`UTType`](uttype-swift.
 
 A tag is a specific instance of a tag class. For example, the tag `txt` is an instance of the tag class [`UTTagClassFilenameExtension`](uttagclassfilenameextension.md) and represents the type [`UTTypePlainText`](uttypeplaintext.md).
 
-[`UTTagClass`](uttagclass.md) uses an untyped `String` or [`CFString`](https://developer.apple.com/documentation/CoreFoundation/CFString) to refer to a tag class as a string. To get the string representation of a tag class, use its `rawValue-swift.property` property.
+[`UTTagClass`](uttagclass.md) uses an untyped `String` or [`CFString`](https://developer.apple.com/documentation/corefoundation/cfstring) to refer to a tag class as a string. To get the string representation of a tag class, use its `rawValue-swift.property` property.
 
 ## Topics
 
@@ -39,15 +39,15 @@ A tag is a specific instance of a tag class. For example, the tag `txt` is an in
 ## Relationships
 
 ### Conforms To
-- [Copyable](../Swift/Copyable.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Decodable](../Swift/Decodable.md)
-- [Encodable](../Swift/Encodable.md)
-- [Equatable](../Swift/Equatable.md)
-- [Escapable](../Swift/Escapable.md)
-- [Hashable](../Swift/Hashable.md)
-- [RawRepresentable](../Swift/RawRepresentable.md)
+- [Copyable](../swift/copyable.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Decodable](../swift/decodable.md)
+- [Encodable](../swift/encodable.md)
+- [Equatable](../swift/equatable.md)
+- [Escapable](../swift/escapable.md)
+- [Hashable](../swift/hashable.md)
+- [RawRepresentable](../swift/rawrepresentable.md)
 
 ## See Also
 

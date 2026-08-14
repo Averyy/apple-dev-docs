@@ -32,8 +32,8 @@ You do not use this type directly. Instead, SwiftUI creates this shape on your b
 
 ### Conforms To
 - [Animatable](animatable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 - [Shape](shape.md)
 - [View](view.md)
 

@@ -37,7 +37,7 @@ pixelBuffer.floodFill(from: CGPoint(x: pixelBuffer.width / 2,
 
 The image below shows the original line-art image on the left, and the flood-filled image on the right:
 
-![Two versions of a line drawing of a star. On the left is the original outline drawing of a star, and on the right is the same star but flood-filled with a solid color.](https://docs-assets.developer.apple.com/published/6d073826e3dc529b753acd82e582c49a/media-4165185%402x.png)
+![Two versions of a line drawing of a star. On the left is the original outline drawing of a star, and on the right is the same star but flood-filled with a solid color.](/images/com.apple.accelerate/media-4165185@2x.png)
 
 ## Parameters
 

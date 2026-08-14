@@ -17,7 +17,7 @@ void texture::setPixel(float4 value)
 
 #### Discussion
 
-> **Note**: ![Graph](https://docs-assets.developer.apple.com/published/48bc6d353e315d9f47e70ece92081421/texture__setPixel.svg)
+> **Note**: ![Graph](/images/com.apple.computegraph/texture__setPixel.svg)
 
 ## Parameters
 

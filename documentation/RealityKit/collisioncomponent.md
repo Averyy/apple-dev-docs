@@ -33,7 +33,7 @@ Turn an entity into a trigger by adding a [`CollisionComponent`](collisioncompon
 
 Turn an entity into a *rigid body* by adding a  [`PhysicsBodyComponent`](physicsbodycomponent.md) to the entity in addition to a [`CollisionComponent`](collisioncomponent.md).  The [`PhysicsBodyComponent`](physicsbodycomponent.md) defines the physical properties of the entity, such as its mass and collision shape.
 
-The `filter` property defines the entity’s collision filter, which determines which other objects the entity collides with. For more information, see [`Controlling Entity Collisions in RealityKit`](controlling_entity_collisions_in_realitykit.md).
+The `filter` property defines the entity’s collision filter, which determines which other objects the entity collides with. For more information, see doc://com.apple.documentation/documentation/realitykit/controlling_entity_collisions_in_realitykit.
 
 > **Note**: If an entity has a [`PhysicsBodyComponent`](physicsbodycomponent.md), the  collision component’s mode is ignored. An entity can be a rigid body, or a trigger, but not both at the same time.
 
@@ -70,7 +70,7 @@ The `filter` property defines the entity’s collision filter, which determines 
 
 ### Conforms To
 - [Component](component.md)
-- [Equatable](../Swift/Equatable.md)
+- [Equatable](../swift/equatable.md)
 
 ## See Also
 
@@ -78,7 +78,7 @@ The `filter` property defines the entity’s collision filter, which determines 
   Create entities that behave and react like physical objects in a RealityKit view.
 - [Configuring Collision in RealityKit](configuring-collision-in-realitykit.md)
   Use collision groups and collision filters to control which objects collide.
-- [Creating an interactive 3D model in visionOS](../visionOS/creating-an-interactable-3d-model-in-visionos.md)
+- [Creating an interactive 3D model in visionOS](../visionos/creating-an-interactable-3d-model-in-visionos.md)
   Display an interactive car model using gestures in a reality view.
 - [CollisionComponent.Mode](collisioncomponent/mode-swift.enum.md)
   A mode that dictates how much collision data is collected for a given entity.

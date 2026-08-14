@@ -26,9 +26,9 @@ Automatic animated expansion of partially hidden `NSPathComponentCell` objects h
 
 `NSPathCell` supports several path display styles. [`NSPathControl.Style.standard`](nspathcontrol/style/standard.md) has a light blue background with arrows indicating the path. [`NSPathStyleNavigationBar`](nspathstyle/nspathstylenavigationbar.md) has more defined arrows (chevrons) and looks a little like a segmented button. [`NSPathControl.Style.popUp`](nspathcontrol/style/popup.md) looks and works like an [`NSPopUpButton`](nspopupbutton.md) object to display the full path, or, if the cell is editable, select a new path.
 
-If the cell’s [`isEditable`](nscell/iseditable.md) method returns [`true`](https://developer.apple.com/documentation/Swift/true) (the default), you can drag and drop into the cell to change the value. You can constrain what can be dropped using UTIs (Uniform Type Identifiers) with [`allowedTypes`](nspathcell/allowedtypes.md) or the appropriate delegate methods on `NSPathControl`.
+If the cell’s [`isEditable`](nscell/iseditable.md) method returns [`true`](https://developer.apple.com/documentation/swift/true) (the default), you can drag and drop into the cell to change the value. You can constrain what can be dropped using UTIs (Uniform Type Identifiers) with [`allowedTypes`](nspathcell/allowedtypes.md) or the appropriate delegate methods on `NSPathControl`.
 
-If the cell’s [`isSelectable`](nscell/isselectable.md) method returns [`true`](https://developer.apple.com/documentation/Swift/true) (the default), the cell’s contents can automatically be dragged out. The proper UTI, filename, and URL are placed on the pasteboard. You can further control or limit this by using the appropriate delegate methods on `NSPathControl`.
+If the cell’s [`isSelectable`](nscell/isselectable.md) method returns [`true`](https://developer.apple.com/documentation/swift/true) (the default), the cell’s contents can automatically be dragged out. The proper UTI, filename, and URL are placed on the pasteboard. You can further control or limit this by using the appropriate delegate methods on `NSPathControl`.
 
 If the cell is editable and has the path style set to [`NSPathControl.Style.popUp`](nspathcontrol/style/popup.md), an additional item in the pop-up menu allows selecting another location. By default, an `NSOpenPanel` object is configured based on the allowed types. The `NSOpenPanel` object can be customized with a delegate method.
 
@@ -90,21 +90,21 @@ When setting the [`controlSize`](nscell/controlsize.md) property, `NSPathCell` p
 ### Inherits From
 - [NSActionCell](nsactioncell.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
 - [NSAccessibilityElementProtocol](nsaccessibilityelementprotocol.md)
 - [NSAccessibilityProtocol](nsaccessibilityprotocol.md)
-- [NSCoding](../Foundation/NSCoding.md)
-- [NSCopying](../Foundation/NSCopying.md)
+- [NSCoding](../foundation/nscoding.md)
+- [NSCopying](../foundation/nscopying.md)
 - [NSMenuItemValidation](nsmenuitemvalidation.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 - [NSOpenSavePanelDelegate](nsopensavepaneldelegate.md)
 - [NSUserInterfaceItemIdentification](nsuserinterfaceitemidentification.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

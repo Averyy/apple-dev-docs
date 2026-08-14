@@ -10,7 +10,7 @@ A kernel extension (or kext) is a bundle that performs low-level tasks. Kexts ru
 
 Always consider alternatives before creating a kext. The system provides numerous APIs to minimize the need for kexts. For example, you can use the DriverKit SDK to implement drivers for most types of hardware. In addition, the kernel runtime environment has more stringent code-level requirements, which makes the creation of kexts more challenging, and the consequences more severe if you do it incorrectly.
 
-For information about alternatives to kexts, see [`Implementing drivers, system extensions, and kexts`](https://developer.apple.com/documentation/SystemExtensions/implementing-drivers-system-extensions-and-kexts).
+For information about alternatives to kexts, see [`Implementing drivers, system extensions, and kexts`](https://developer.apple.com/documentation/systemextensions/implementing-drivers-system-extensions-and-kexts).
 
 ##### Load Kexts As the Final Step in Your Installer Package
 

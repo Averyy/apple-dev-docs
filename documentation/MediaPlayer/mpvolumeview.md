@@ -26,7 +26,7 @@ If there’s an Apple TV or other AirPlay-enabled device in range, the route but
 
 > ❗ **Important**:  You can’t change the volume or choose a route with this class while testing in the Simulator. These abilities only work on a device.
 
-Use this class by embedding an instance of it in your view hierarchy. The following code snippet assumes you’ve placed an instance of the [`UIView`](https://developer.apple.com/documentation/UIKit/UIView) class on a view using Interface Builder, sizing and positioning it as desired to contain the volume view. Point to the [`UIView`](https://developer.apple.com/documentation/UIKit/UIView) instance with an outlet variable—named, in the case of this example, `mpVolumeViewParentView`. You’d typically place code like that shown in the following code in your `viewDidLoad` method.
+Use this class by embedding an instance of it in your view hierarchy. The following code snippet assumes you’ve placed an instance of the [`UIView`](https://developer.apple.com/documentation/uikit/uiview) class on a view using Interface Builder, sizing and positioning it as desired to contain the volume view. Point to the [`UIView`](https://developer.apple.com/documentation/uikit/uiview) instance with an outlet variable—named, in the case of this example, `mpVolumeViewParentView`. You’d typically place code like that shown in the following code in your `viewDidLoad` method.
 
 Listing 1. Adding a volume view to your view hierarchy
 
@@ -44,7 +44,7 @@ To instead display a volume slider as an alert, use the functions described in [
 
 ##### Customizing the Volume Sliders Appearance
 
-The volume slider is a [`UISlider`](https://developer.apple.com/documentation/UIKit/UISlider) object. Sliders are always displayed as horizontal bars and an indicator, or **thumb**, notes the current value of the slider, which the user can move to change the setting.
+The volume slider is a [`UISlider`](https://developer.apple.com/documentation/uikit/uislider) object. Sliders are always displayed as horizontal bars and an indicator, or **thumb**, notes the current value of the slider, which the user can move to change the setting.
 
 Slider controls draw the volume slider track using two distinct images, which are customizable. The system draws the region between the thumb and the end of the track associated with the slider’s minimum value using the **minimum volume slider image**. The system region between the thumb and the end of the track associated with the slider’s maximum value using the **maximum volume slider image**. You can assign different images to customize the appearance of the slider for its various states, such as enabled, disabled, and highlighted.
 
@@ -93,37 +93,37 @@ You can also customize the volume thumb image for the slider.
 ## Relationships
 
 ### Inherits From
-- [UIView](../UIKit/UIView.md)
+- [UIView](../uikit/uiview.md)
 ### Conforms To
-- [CALayerDelegate](../QuartzCore/CALayerDelegate.md)
-- [CLBodyIdentifiable](../CoreLocation/CLBodyIdentifiable.md)
-- [CMBodyIdentifiable](../CoreMotion/CMBodyIdentifiable.md)
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCoding](../Foundation/NSCoding.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [NSTouchBarProvider](../AppKit/NSTouchBarProvider.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
-- [UIAccessibilityIdentification](../UIKit/UIAccessibilityIdentification.md)
-- [UIActivityItemsConfigurationProviding](../UIKit/UIActivityItemsConfigurationProviding.md)
-- [UIAppearance](../UIKit/UIAppearance.md)
-- [UIAppearanceContainer](../UIKit/UIAppearanceContainer.md)
-- [UICoordinateSpace](../UIKit/UICoordinateSpace.md)
-- [UIDynamicItem](../UIKit/UIDynamicItem.md)
-- [UIFocusEnvironment](../UIKit/UIFocusEnvironment.md)
-- [UIFocusItem](../UIKit/UIFocusItem.md)
-- [UIFocusItemContainer](../UIKit/UIFocusItemContainer.md)
-- [UILargeContentViewerItem](../UIKit/UILargeContentViewerItem.md)
-- [UIPasteConfigurationSupporting](../UIKit/UIPasteConfigurationSupporting.md)
-- [UIPopoverPresentationControllerSourceItem](../UIKit/UIPopoverPresentationControllerSourceItem.md)
-- [UIResponderStandardEditActions](../UIKit/UIResponderStandardEditActions.md)
-- [UITraitChangeObservable](../UIKit/UITraitChangeObservable-67e94.md)
-- [UITraitEnvironment](../UIKit/UITraitEnvironment.md)
-- [UIUserActivityRestoring](../UIKit/UIUserActivityRestoring.md)
+- [CALayerDelegate](../quartzcore/calayerdelegate.md)
+- [CLBodyIdentifiable](../corelocation/clbodyidentifiable.md)
+- [CMBodyIdentifiable](../coremotion/cmbodyidentifiable.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCoding](../foundation/nscoding.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSTouchBarProvider](../appkit/nstouchbarprovider.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
+- [UIAccessibilityIdentification](../uikit/uiaccessibilityidentification.md)
+- [UIActivityItemsConfigurationProviding](../uikit/uiactivityitemsconfigurationproviding.md)
+- [UIAppearance](../uikit/uiappearance.md)
+- [UIAppearanceContainer](../uikit/uiappearancecontainer.md)
+- [UICoordinateSpace](../uikit/uicoordinatespace.md)
+- [UIDynamicItem](../uikit/uidynamicitem.md)
+- [UIFocusEnvironment](../uikit/uifocusenvironment.md)
+- [UIFocusItem](../uikit/uifocusitem.md)
+- [UIFocusItemContainer](../uikit/uifocusitemcontainer.md)
+- [UILargeContentViewerItem](../uikit/uilargecontentvieweritem.md)
+- [UIPasteConfigurationSupporting](../uikit/uipasteconfigurationsupporting.md)
+- [UIPopoverPresentationControllerSourceItem](../uikit/uipopoverpresentationcontrollersourceitem.md)
+- [UIResponderStandardEditActions](../uikit/uiresponderstandardeditactions.md)
+- [UITraitChangeObservable](../uikit/uitraitchangeobservable-67e94.md)
+- [UITraitEnvironment](../uikit/uitraitenvironment.md)
+- [UIUserActivityRestoring](../uikit/uiuseractivityrestoring.md)
 
 ## See Also
 

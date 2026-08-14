@@ -16,7 +16,7 @@ func activate(ignoringOtherApps ignoreOtherApps: Bool)
 
 #### Discussion
 
-The `flag` parameter is normally set to [`false`](https://developer.apple.com/documentation/Swift/false). When the Finder launches an app, using a value of [`false`](https://developer.apple.com/documentation/Swift/false) for `flag` allows the app to become active if the user waits for it to launch, but the app remains unobtrusive if the user activates another app. Regardless of the setting of `flag`, there may be a time lag before the app activates—you shouldn’t assume the app will be active immediately after sending this message.
+The `flag` parameter is normally set to [`false`](https://developer.apple.com/documentation/swift/false). When the Finder launches an app, using a value of [`false`](https://developer.apple.com/documentation/swift/false) for `flag` allows the app to become active if the user waits for it to launch, but the app remains unobtrusive if the user activates another app. Regardless of the setting of `flag`, there may be a time lag before the app activates—you shouldn’t assume the app will be active immediately after sending this message.
 
 You rarely need to invoke this method. Under most circumstances, AppKit takes care of proper activation. However, you might find this method useful if you implement your own methods for inter-app communication.
 
@@ -24,7 +24,7 @@ You don’t need to send this message to make one of the app’s `NSWindows` key
 
 ## Parameters
 
-- `ignoreOtherApps`: If [`false`](https://developer.apple.com/documentation/Swift/false), the app activates only if no other app is currently active. If [`true`](https://developer.apple.com/documentation/Swift/true), the app activates regardless.
+- `ignoreOtherApps`: If [`false`](https://developer.apple.com/documentation/swift/false), the app activates only if no other app is currently active. If [`true`](https://developer.apple.com/documentation/swift/true), the app activates regardless.
 
 ## See Also
 

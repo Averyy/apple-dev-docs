@@ -21,7 +21,7 @@ let kCIAttributeFilterAvailable_Mac: String
 
 #### Discussion
 
-The macOS version in which the filter first became available, specified as an [`NSString`](https://developer.apple.com/documentation/Foundation/NSString) object.
+The macOS version in which the filter first became available, specified as an [`NSString`](https://developer.apple.com/documentation/foundation/nsstring) object.
 
 ## See Also
 

@@ -41,7 +41,7 @@ func comicEffect(inputImage: CIImage) -> CIImage {
 }
 ```
 
-![Two photographs of a beach at sunset with multiple palm trees. The photo on the left is clear and crisp. In the photo on the right, a comic effect filter is applied, and the image is brighter with a series of colorful dots creating the detail of the image.](https://docs-assets.developer.apple.com/published/fd6745ae31fa976911d914cf673432d8/media-3601088%402x.png)
+![Two photographs of a beach at sunset with multiple palm trees. The photo on the left is clear and crisp. In the photo on the right, a comic effect filter is applied, and the image is brighter with a series of colorful dots creating the detail of the image.](/images/com.apple.coreimage/media-3601088@2x.png)
 
 ## See Also
 

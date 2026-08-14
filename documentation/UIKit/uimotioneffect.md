@@ -25,7 +25,7 @@ Subclasses of [`UIMotionEffect`](uimotioneffect.md) are responsible for defining
 
 ##### Subclassing Notes
 
-This class is abstract and can’t be instantiated directly. You can use the [`UIInterpolatingMotionEffect`](uiinterpolatingmotioneffect.md) class to implement effects or you can subclass and implement your own effects. If you subclass, your subclass must conform to the [`NSCopying`](https://developer.apple.com/documentation/Foundation/NSCopying) and [`NSCoding`](https://developer.apple.com/documentation/Foundation/NSCoding) protocols and must implement the [`keyPathsAndRelativeValues(forViewerOffset:)`](uimotioneffect/keypathsandrelativevalues(forvieweroffset:).md) method.
+This class is abstract and can’t be instantiated directly. You can use the [`UIInterpolatingMotionEffect`](uiinterpolatingmotioneffect.md) class to implement effects or you can subclass and implement your own effects. If you subclass, your subclass must conform to the [`NSCopying`](https://developer.apple.com/documentation/foundation/nscopying) and [`NSCoding`](https://developer.apple.com/documentation/foundation/nscoding) protocols and must implement the [`keyPathsAndRelativeValues(forViewerOffset:)`](uimotioneffect/keypathsandrelativevalues(forvieweroffset:).md) method.
 
 ## Topics
 
@@ -41,20 +41,20 @@ This class is abstract and can’t be instantiated directly. You can use the [`U
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Inherited By
 - [UIInterpolatingMotionEffect](uiinterpolatingmotioneffect.md)
 - [UIMotionEffectGroup](uimotioneffectgroup.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCoding](../Foundation/NSCoding.md)
-- [NSCopying](../Foundation/NSCopying.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [Sendable](../Swift/Sendable.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCoding](../foundation/nscoding.md)
+- [NSCopying](../foundation/nscopying.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [Sendable](../swift/sendable.md)
 
 
 ---

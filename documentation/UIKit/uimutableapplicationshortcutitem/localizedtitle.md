@@ -23,7 +23,7 @@ Every Home Screen mutable quick action must have a user-visible title.
 
 If the title fits on one line, the system displays it as a single line quick action. If the title is too long for one line and you have not specified a [`localizedSubtitle`](uimutableapplicationshortcutitem/localizedsubtitle.md) string, the system displays the title on two lines.
 
-To internationalize the title for a Home Screen dynamic quick action, employ the [`NSLocalizedString`](https://developer.apple.com/documentation/Foundation/NSLocalizedString) Foundation function, described in [`Foundation Functions`](https://developer.apple.com/documentation/Foundation/foundation-functions), along with a `Localizable.strings` file in your Xcode project.
+To internationalize the title for a Home Screen dynamic quick action, employ the [`NSLocalizedString`](https://developer.apple.com/documentation/foundation/nslocalizedstring) Foundation function, described in [`Foundation Functions`](https://developer.apple.com/documentation/foundation/foundation-functions), along with a `Localizable.strings` file in your Xcode project.
 
 ## See Also
 

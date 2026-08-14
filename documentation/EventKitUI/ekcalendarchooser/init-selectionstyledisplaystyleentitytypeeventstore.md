@@ -25,7 +25,7 @@ The initialized calendar chooser.
 
 - `style`: Determines whether to allow selection of multiple calendars. Possible values are described in [`EKCalendarChooserSelectionStyle`](ekcalendarchooserselectionstyle.md).
 - `displayStyle`: Determines which calendars to display. Possible values are described in [`EKCalendarChooserDisplayStyle`](ekcalendarchooserdisplaystyle.md).
-- `entityType`: The entity type of the calendar. Possible values are [`EKEntityType.event`](https://developer.apple.com/documentation/EventKit/EKEntityType/event) and [`EKEntityType.reminder`](https://developer.apple.com/documentation/EventKit/EKEntityType/reminder).
+- `entityType`: The entity type of the calendar. Possible values are [`EKEntityType.event`](https://developer.apple.com/documentation/eventkit/ekentitytype/event) and [`EKEntityType.reminder`](https://developer.apple.com/documentation/eventkit/ekentitytype/reminder).
 - `eventStore`: The event store to which the calendars belong.
 
 ## See Also

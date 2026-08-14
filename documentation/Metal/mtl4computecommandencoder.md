@@ -60,7 +60,7 @@ Most compute commands apply to one stage within a pass. The following table show
 | [`copyAndCompact(sourceAccelerationStructure:destinationAccelerationStructure:)`](mtl4computecommandencoder/copyandcompact(sourceaccelerationstructure:destinationaccelerationstructure:).md) | [`accelerationStructure`](mtlstages/accelerationstructure.md) |
 | [`refit(sourceAccelerationStructure:descriptor:destinationAccelerationStructure:scratchBuffer:options:)`](mtl4computecommandencoder/refit(sourceaccelerationstructure:descriptor:destinationaccelerationstructure:scratchbuffer:options:).md) | [`accelerationStructure`](mtlstages/accelerationstructure.md) |
 | [`writeCompactedSize(sourceAccelerationStructure:destinationBuffer:)`](mtl4computecommandencoder/writecompactedsize(sourceaccelerationstructure:destinationbuffer:).md) | [`accelerationStructure`](mtlstages/accelerationstructure.md) |
-| [`executeCommands(buffer:range:)`](mtl4computecommandencoder/executecommands(buffer:range:).md)![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png)[`executeCommandsInBuffer:withRange:`](mtl4computecommandencoder/executecommandsinbuffer:withrange:.md) | None |
+| [`executeCommands(buffer:range:)`](mtl4computecommandencoder/executecommands(buffer:range:).md)![None](/images/com.apple.metal/spacer.png)[`executeCommandsInBuffer:withRange:`](mtl4computecommandencoder/executecommandsinbuffer:withrange:.md) | None |
 | [`executeCommands(buffer:indirectBuffer:)`](mtl4computecommandencoder/executecommands(buffer:indirectbuffer:).md) | None |
 | [`writeTimestamp(granularity:counterHeap:index:)`](mtl4computecommandencoder/writetimestamp(granularity:counterheap:index:).md) | None |
 
@@ -161,7 +161,7 @@ For more information about stages and synchronization, see [`MTLStages`](mtlstag
 
 ### Inherits From
 - [MTL4CommandEncoder](mtl4commandencoder.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

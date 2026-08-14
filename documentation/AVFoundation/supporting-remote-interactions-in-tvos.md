@@ -12,7 +12,7 @@ Set up your app to support remote commands and events in a variety of scenarios 
 
 This sample code project demonstrates how to implement support for the wide variety of commands that remotes and system controls send to Apple TV.
 
-There are four sections in this project. The first section demonstrates how to add native media playback capabilities to your app using the system player that [`AVPlayerViewController`](https://developer.apple.com/documentation/AVKit/AVPlayerViewController) provides. It also shows how to use [`MPRemoteCommandCenter`](https://developer.apple.com/documentation/MediaPlayer/MPRemoteCommandCenter) to support additional commands in a system player, and use [`AVPlayerViewControllerDelegate`](https://developer.apple.com/documentation/AVKit/AVPlayerViewControllerDelegate) to customize the behavior of commands the player receives.
+There are four sections in this project. The first section demonstrates how to add native media playback capabilities to your app using the system player that [`AVPlayerViewController`](https://developer.apple.com/documentation/avkit/avplayerviewcontroller) provides. It also shows how to use [`MPRemoteCommandCenter`](https://developer.apple.com/documentation/mediaplayer/mpremotecommandcenter) to support additional commands in a system player, and use [`AVPlayerViewControllerDelegate`](https://developer.apple.com/documentation/avkit/avplayerviewcontrollerdelegate) to customize the behavior of commands the player receives.
 
 Using the system player is a great choice in most cases. However, if you need to implement a player with a custom UI, you also need to implement support for all the commands the system player supports. The second section shows you how, by using `MPRemoteCommandCenter` and gesture recognizers. It also demonstrates how to handle receiving remote events and update the Now Playing info display.
 
@@ -83,7 +83,7 @@ for supportedCommand in supportedRemoteCommands {
 }
 ```
 
-Additionally, this section demonstrates using the default [`MPNowPlayingInfoCenter`](https://developer.apple.com/documentation/MediaPlayer/MPNowPlayingInfoCenter) object to update the Now Playing info:
+Additionally, this section demonstrates using the default [`MPNowPlayingInfoCenter`](https://developer.apple.com/documentation/mediaplayer/mpnowplayinginfocenter) object to update the Now Playing info:
 
 ```swift
 var nowPlayingInfo = [String: Any]()

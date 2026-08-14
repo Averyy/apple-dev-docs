@@ -14,7 +14,7 @@ A memory-cache mode.
 ## Declaration
 
 ```swift
-typedef UInt32 IOCacheMode;
+typedef uint32_t IOCacheMode;
 ```
 
 ## See Also

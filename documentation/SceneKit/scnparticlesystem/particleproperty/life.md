@@ -22,7 +22,7 @@ static let life: SCNParticleSystem.ParticleProperty
 
 #### Discussion
 
-This property’s value is a floating-point scalar (an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) object for particle property controllers, or a single `float` value for particle event or modifier blocks).
+This property’s value is a floating-point scalar (an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) object for particle property controllers, or a single `float` value for particle event or modifier blocks).
 
 SceneKit initializes this value using the particle system’s [`particleLifeSpan`](scnparticlesystem/particlelifespan.md) and [`particleLifeSpanVariation`](scnparticlesystem/particlelifespanvariation.md) properties, then decreases the value when rendering each frame. When the life value reaches `0.0`, the particle dies (that is, SceneKit no longer simulates or renders it). Particle property controllers can use this property’s value as an input, but not change it.
 

@@ -30,7 +30,7 @@ Create authorization requests for the credential types your app supports, such a
 
 Call [`performAutoFillAssistedRequests()`](asauthorizationcontroller/performautofillassistedrequests().md) to present inline UI to request credentials, or [`performRequests()`](asauthorizationcontroller/performrequests().md) or [`performRequests(options:)`](asauthorizationcontroller/performrequests(options:).md) to request credentials using modal UI. [`ASAuthorizationController`](asauthorizationcontroller.md) calls your delegate’s methods when the request completes.
 
-Set the content type of text fields in your app’s login UI so that [`ASAuthorizationController`](asauthorizationcontroller.md) can detect when to offer AutoFill suggestions. Use [`username`](https://developer.apple.com/documentation/UIKit/UITextContentType/username) as the content type for user name text fields, and [`password`](https://developer.apple.com/documentation/UIKit/UITextContentType/password) for password fields.
+Set the content type of text fields in your app’s login UI so that [`ASAuthorizationController`](asauthorizationcontroller.md) can detect when to offer AutoFill suggestions. Use [`username`](https://developer.apple.com/documentation/uikit/uitextcontenttype/username) as the content type for user name text fields, and [`password`](https://developer.apple.com/documentation/uikit/uitextcontenttype/password) for password fields.
 
 ## Topics
 
@@ -71,14 +71,14 @@ Set the content type of text fields in your app’s login UI so that [`ASAuthori
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

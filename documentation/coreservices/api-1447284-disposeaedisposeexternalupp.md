@@ -20,7 +20,7 @@ See the [`AECreateDescFromExternalPtr(_:_:_:_:_:_:)`](1446239-aecreatedescfromex
 
 ## Parameters
 
-- `userUPP`: The universal procedure pointer to be disposed of. See  .
+- `userUPP`: The universal procedure pointer to be disposed of. See [`AEDisposeExternalUPP`](aedisposeexternalupp.md).
 
 ## See Also
 

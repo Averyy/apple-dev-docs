@@ -21,7 +21,7 @@ init(dictionaryLiteral elements: (String, AnimationResource)...)
 
 #### Discussion
 
-Use the [`ExpressibleByDictionaryLiteral`](https://developer.apple.com/documentation/Swift/ExpressibleByDictionaryLiteral) initializer by directly assigning the library to a dictionary literal.
+Use the [`ExpressibleByDictionaryLiteral`](https://developer.apple.com/documentation/swift/expressiblebydictionaryliteral) initializer by directly assigning the library to a dictionary literal.
 
 ```swift
 let animationLibrary: AnimationLibraryComponent = [

@@ -21,14 +21,14 @@ protocol GKSceneRootNodeType : NSObjectProtocol
 
 #### Overview
 
-You do not define classes that adopt this protocol. GameplayKit adds this protocol declaration to classes (such as [`SKScene`](https://developer.apple.com/documentation/SpriteKit/SKScene)) for which the [`GKScene`](gkscene.md) class supports archiving and loading embedded GameplayKit information.
+You do not define classes that adopt this protocol. GameplayKit adds this protocol declaration to classes (such as [`SKScene`](https://developer.apple.com/documentation/spritekit/skscene)) for which the [`GKScene`](gkscene.md) class supports archiving and loading embedded GameplayKit information.
 
 For more information, see [`GameplayKit Programming Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Conceptual/GameplayKit_Guide/index.html#//apple_ref/doc/uid/TP40015172).
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

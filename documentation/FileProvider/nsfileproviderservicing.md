@@ -20,7 +20,7 @@ protocol NSFileProviderServicing : NSObjectProtocol
 
 #### Overview
 
-Adopt this protocol if your File Provider extension supports custom services. For more information on custom services, see [`NSFileProviderService`](https://developer.apple.com/documentation/Foundation/NSFileProviderService).
+Adopt this protocol if your File Provider extension supports custom services. For more information on custom services, see [`NSFileProviderService`](https://developer.apple.com/documentation/foundation/nsfileproviderservice).
 
 ## Topics
 
@@ -31,7 +31,7 @@ Adopt this protocol if your File Provider extension supports custom services. Fo
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

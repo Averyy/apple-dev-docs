@@ -13,7 +13,7 @@ Use ARKit to generate environment probe textures from camera imagery and render 
 
 This app provides a simple AR experience demonstrating the environment texturing features in ARKit 2 and SceneKit. After you build and run the app, explore your surroundings in the camera view. Then, tap a nearby horizontal surface to place a virtual object: a mirror-finish sphere. After you place the object, you can drag it around or tap to move it to another location. You can also pinch to make the object bigger or smaller.
 
-![Screenshots of the sample app, showing UI prompts for placing a virtual object, the shiny virtual sphere, and the virtual sphere showing the reflection of a real object.](https://docs-assets.developer.apple.com/published/c91fbc006b62c26b4e97784ab5dddfc0/Screenshots.png)
+![Screenshots of the sample app, showing UI prompts for placing a virtual object, the shiny virtual sphere, and the virtual sphere showing the reflection of a real object.](/images/com.apple.arkit/Screenshots.png)
 
 Notice the surface of the virtual sphere shows a generally realistic (if not perfectly accurate) reflection of its real-world surroundings. To create reflective virtual surfaces, a renderer (such as SceneKit) needs an  *environment texture*—an image that captures the view in all directions from a certain point in the scene (called an *environment probe*). Realistically rendering reflections for multiple objects, or moving objects, may require multiple environment textures, each capturing the scene from a different point of view.
 
@@ -42,11 +42,11 @@ With [`ARWorldTrackingConfiguration.EnvironmentTexturing.automatic`](arworldtrac
 
 #### Render Virtual Objects with Reflection
 
-Because this app also uses [`ARSCNView`](arscnview.md) to display AR content, SceneKit automatically uses the appropriate environment texture to render each virtual object in the scene. In SceneKit, any asset using [`SCNMaterial.LightingModel`](https://developer.apple.com/documentation/SceneKit/SCNMaterial/LightingModel-swift.struct) materials automatically uses *environmental lighting*. With environmental lighting, the shading for each point on a surface depends on nearby light probe textures or the global lighting environment in the direction that point faces.
+Because this app also uses [`ARSCNView`](arscnview.md) to display AR content, SceneKit automatically uses the appropriate environment texture to render each virtual object in the scene. In SceneKit, any asset using [`SCNMaterial.LightingModel`](https://developer.apple.com/documentation/scenekit/scnmaterial/lightingmodel-swift.struct) materials automatically uses *environmental lighting*. With environmental lighting, the shading for each point on a surface depends on nearby light probe textures or the global lighting environment in the direction that point faces.
 
-The visual effect of environment texturing depends on how you configure the properties of a physically based material. For example, materials with a high [`roughness`](https://developer.apple.com/documentation/SceneKit/SCNMaterial/roughness) pick up some diffuse color from the texture, and materials with low [`roughness`](https://developer.apple.com/documentation/SceneKit/SCNMaterial/roughness) and high [`metalness`](https://developer.apple.com/documentation/SceneKit/SCNMaterial/metalness) reflect their surroundings with a mirror-like finish.
+The visual effect of environment texturing depends on how you configure the properties of a physically based material. For example, materials with a high [`roughness`](https://developer.apple.com/documentation/scenekit/scnmaterial/roughness) pick up some diffuse color from the texture, and materials with low [`roughness`](https://developer.apple.com/documentation/scenekit/scnmaterial/roughness) and high [`metalness`](https://developer.apple.com/documentation/scenekit/scnmaterial/metalness) reflect their surroundings with a mirror-like finish.
 
-![Detail screenshots showing the effect of three different environment textures on both smooth and rough virtual spheres.](https://docs-assets.developer.apple.com/published/e00c718b92ef4a1fcb9c7c53292d313f/Roughness.png)
+![Detail screenshots showing the effect of three different environment textures on both smooth and rough virtual spheres.](/images/com.apple.arkit/Roughness.png)
 
 > **Note**: If your AR experience uses a rendering technology other than SceneKit, you’ll need to retrieve the generated textures yourself and determine how to use them appropriately in your shading engine. First, implement the [`session(_:didUpdate:)`](arsessiondelegate/session(_:didupdate:)-9v2kw.md) delegate method to be notified when ARKit generates environment probe textures. In that method, use the [`environmentTexture`](arenvironmentprobeanchor/environmenttexture.md) property of each [`AREnvironmentProbeAnchor`](arenvironmentprobeanchor.md) object to get the texture.
 
@@ -78,7 +78,7 @@ This code applies the rules below to optimally capture the area around each virt
 - The probe’s position should be at the top center of the virtual object, and the `y` component of its extent should be twice the height of the object. This ensures that the bottom of the probe extent aligns with the bottom of the virtual object, accurately capturing the real surface the object sits on.
 - The `x` and `z` components of the probe’s extent should be three times the width and depth of the object, ensuring that the probe captures the area beneath and around the object.
 
-![Diagram indicating the recommended extent for an environment probe anchor around a virtual object: double the object's height and three times its width and depth, centered at the top of the object.](https://docs-assets.developer.apple.com/published/d993b9291118ec512ef9d4c4f322a542/ProbeExtent.png)
+![Diagram indicating the recommended extent for an environment probe anchor around a virtual object: double the object's height and three times its width and depth, centered at the top of the object.](/images/com.apple.arkit/ProbeExtent.png)
 
 #### Use Environment Texturing Wisely
 

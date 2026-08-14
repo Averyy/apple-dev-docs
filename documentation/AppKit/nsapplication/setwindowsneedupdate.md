@@ -20,7 +20,7 @@ This method is especially useful for making sure menus are updated to reflect ch
 
 ## Parameters
 
-- `needUpdate`: If [`true`](https://developer.apple.com/documentation/Swift/true), the receiver’s windows are updated after an event is processed.
+- `needUpdate`: If [`true`](https://developer.apple.com/documentation/swift/true), the receiver’s windows are updated after an event is processed.
 
 ## See Also
 

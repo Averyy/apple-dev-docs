@@ -29,7 +29,7 @@ Your app initializes a new display link by providing a target object and a selec
 
 Once you associate the display link with a run loop, the system calls the selector on the target when the screen’s contents need to update. The target can read the display link’s [`timestamp`](cadisplaylink/timestamp.md) property to retrieve the time the system displayed the previous frame. For example, an app that displays movies might use `timestamp` to calculate which video frame to display next. An app that performs its own animations might use `timestamp` to determine where and how visible objects appear in the upcoming frame.
 
-The [`duration`](cadisplaylink/duration.md) property provides the amount of time between frames at the [`maximumFramesPerSecond`](https://developer.apple.com/documentation/UIKit/UIScreen/maximumFramesPerSecond). To calculate the actual frame duration, use [`targetTimestamp`](cadisplaylink/targettimestamp.md) - [`timestamp`](cadisplaylink/timestamp.md). You can use this value in your app to calculate the frame rate of the display, the approximate time the system displays the next frame, and to adjust the drawing behavior so that the next frame is ready in time to display.
+The [`duration`](cadisplaylink/duration.md) property provides the amount of time between frames at the [`maximumFramesPerSecond`](https://developer.apple.com/documentation/uikit/uiscreen/maximumframespersecond). To calculate the actual frame duration, use [`targetTimestamp`](cadisplaylink/targettimestamp.md) - [`timestamp`](cadisplaylink/timestamp.md). You can use this value in your app to calculate the frame rate of the display, the approximate time the system displays the next frame, and to adjust the drawing behavior so that the next frame is ready in time to display.
 
 Your app can disable notifications by setting [`isPaused`](cadisplaylink/ispaused.md) to `true`. Also, if your app can’t provide frames in the time the system provides, you may want to choose a slower frame rate. An app with a slower but consistent frame rate appears smoother to the user than an app that skips frames. You can define the number of frames per second by setting [`preferredFramesPerSecond`](cadisplaylink/preferredframespersecond.md).
 
@@ -72,7 +72,7 @@ You shouldn’t subclass [`CADisplayLink`](cadisplaylink.md).
 
 ##### Preferred and Actual Frame Rates
 
-You control a display link’s frame rate (the number of times the system calls the selector of its target, per second) by setting [`preferredFramesPerSecond`](cadisplaylink/preferredframespersecond.md). However, the actual frames per second may differ from the preferred value you set; actual frame rates are always a factor of the maximum refresh rate of the device. For example, if your device’s maximum refresh rate is 60 frames per second (defined by [`maximumFramesPerSecond`](https://developer.apple.com/documentation/UIKit/UIScreen/maximumFramesPerSecond)), actual frame rates include 15, 20, 30, and 60 frames per second. If you set a display link’s preferred frame rate to a value higher than the maximum, the actual frame rate is the maximum.
+You control a display link’s frame rate (the number of times the system calls the selector of its target, per second) by setting [`preferredFramesPerSecond`](cadisplaylink/preferredframespersecond.md). However, the actual frames per second may differ from the preferred value you set; actual frame rates are always a factor of the maximum refresh rate of the device. For example, if your device’s maximum refresh rate is 60 frames per second (defined by [`maximumFramesPerSecond`](https://developer.apple.com/documentation/uikit/uiscreen/maximumframespersecond)), actual frame rates include 15, 20, 30, and 60 frames per second. If you set a display link’s preferred frame rate to a value higher than the maximum, the actual frame rate is the maximum.
 
 In iOS 15, frame rate availability can change due to the system factoring in the system policy and user preference — including Low Power Mode, critical thermal state, and accessibility settings.
 
@@ -127,18 +127,18 @@ double actualFramesPerSecond = 1 / (displaylink.targetTimestamp - displaylink.ti
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 
-- [Presenting content on a connected display](../UIKit/presenting-content-on-a-connected-display.md)
+- [Presenting content on a connected display](../uikit/presenting-content-on-a-connected-display.md)
   Fill connected displays with additional content from your app.
 - [func CACurrentMediaTime() -> CFTimeInterval](cacurrentmediatime().md)
   Returns the current absolute time, in seconds.

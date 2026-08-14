@@ -29,7 +29,7 @@ Working with procedural noise involves three main steps, one of each of the thre
 
 You can apply noise maps in many different ways. Some examples include :
 
-- Creating texture images resembling natural phenomena such as clouds, stone surfaces, and wood grain. You can also use noise textures as normal maps to make surfaces appear more natural under lighting. (See the [`SKTexture`](https://developer.apple.com/documentation/SpriteKit/SKTexture) [`init(noiseMap:)`](https://developer.apple.com/documentation/SpriteKit/SKTexture/init(noiseMap:)) method.)
+- Creating texture images resembling natural phenomena such as clouds, stone surfaces, and wood grain. You can also use noise textures as normal maps to make surfaces appear more natural under lighting. (See the [`SKTexture`](https://developer.apple.com/documentation/spritekit/sktexture) [`init(noiseMap:)`](https://developer.apple.com/documentation/spritekit/sktexture/init(noisemap:)) method.)
 - Generating procedural game-world maps resembling natural terrain. You can create game world of infinite size by using procedural noise as its underlying representation, and manage storage and memory efficiently by creating noise maps (and their visual representations) only for the area around a player’s current position. (See the `SKTileMap` class.)
 - Adding a degree of randomness to otherwise smooth movements. For example, you can make game characters move in a jittery manner, or apply a hand-held motion effect to a game camera.
 
@@ -40,7 +40,7 @@ A noise map is finite and two-dimensional, but the the noise you sample to creat
 - By using a cylindrical noise source and applying the [`rotate(by:)`](gknoise/rotate(by:).md) method, you can sample a slice through the cylinders that creates a wood-grain effect.
 - By using a Perlin noise source and applying the [`move(by:)`](gknoise/move(by:).md) method between multiple samples, you can animate a noise map that simulates the way clouds form, billow, and dissipate over time.
 
-![None](https://docs-assets.developer.apple.com/published/bc1d6801d94be741b1d2e819b553f765/media-2133131%402x.png)
+![None](/images/com.apple.gameplaykit/media-2133131@2x.png)
 
 ## Topics
 
@@ -74,14 +74,14 @@ A noise map is finite and two-dimensional, but the the noise you sample to creat
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

@@ -20,7 +20,7 @@ You can build and design sequences in the Sequence Editor, where you can add and
 
 **Method 2** In the Project Browser, browse to an animation sequence and double-click it to open it. The animation sequence and its associated entity open automatically.
 
-![A screenshot of Reality Composer Pro showing an animation sequence in the Project Browser.](https://docs-assets.developer.apple.com/published/cd52db86e9bb5084c24fb6fc8318fb9c/AnimationProjectBrowser%402x.png)
+![A screenshot of Reality Composer Pro showing an animation sequence in the Project Browser.](/images/RealityComposerPro/AnimationProjectBrowser@2x.png)
 
 #### Browse the Animation Clips Panel
 
@@ -28,7 +28,7 @@ The Animation Clips panel shows a list of compatible animations for the currentl
 
 > 💡 **Tip**: Click the **Hierarchy** tab in the Animation Clips panel to view the entity hierarchy for the currently opened animation sequence. This is useful when your sequence has deeply nested entities and you need to find a specific child entity.
 
-![A screenshot of Reality Composer Pro showing the Animation Clips panel with compatible animations listed for an open animation sequence.](https://docs-assets.developer.apple.com/published/1273b94797181722f140cc2c2f84128e/OpenExistingAnimation%402x.png)
+![A screenshot of Reality Composer Pro showing the Animation Clips panel with compatible animations listed for an open animation sequence.](/images/RealityComposerPro/OpenExistingAnimation@2x.png)
 
 #### Change Animation Sequence Playback
 
@@ -53,12 +53,12 @@ Actions are predefined, modular parts you can add to a sequence track to perform
 
 The following actions are available:
 
-- **Play Audio** — Plays an audio file or sound effect synchronized with the animation timeline. Add audio files to an Audio Library Component on the target entity before they appear in the Sequence Editor for selection. See [`PlayAudioAction`](https://developer.apple.com/documentation/RealityKit/PlayAudioAction).
-- **Enable/Disable Entity** — Controls the visibility and active state of a target entity and its descendants in the scene, turning them on or off at specific timeline points. See [`SetEntityEnabledAction`](https://developer.apple.com/documentation/RealityKit/SetEntityEnabledAction).
+- **Play Audio** — Plays an audio file or sound effect synchronized with the animation timeline. Add audio files to an Audio Library Component on the target entity before they appear in the Sequence Editor for selection. See [`PlayAudioAction`](https://developer.apple.com/documentation/realitykit/playaudioaction).
+- **Enable/Disable Entity** — Controls the visibility and active state of a target entity and its descendants in the scene, turning them on or off at specific timeline points. See [`SetEntityEnabledAction`](https://developer.apple.com/documentation/realitykit/setentityenabledaction).
 - **Motion Path** — Defines spatial control points for path-based orbit, spin, or custom movement animation along predefined trajectories.
-- **Billboard Blend In/Out** — Animates the blend factor of the target entity’s Billboard component, controlling how strongly the entity orients itself toward the active camera over time. See [`BillboardAction`](https://developer.apple.com/documentation/RealityKit/BillboardAction).
+- **Billboard Blend In/Out** — Animates the blend factor of the target entity’s Billboard component, controlling how strongly the entity orients itself toward the active camera over time. See [`BillboardAction`](https://developer.apple.com/documentation/realitykit/billboardaction).
 
-![A screenshot of Reality Composer Pro Animation Sequence Editor showing a Track with an Animation Motion Path.](https://docs-assets.developer.apple.com/published/b23265fb86b5d7b49b2e1d02a2328f53/AnimationMotionPath2%402x.png)
+![A screenshot of Reality Composer Pro Animation Sequence Editor showing a Track with an Animation Motion Path.](/images/RealityComposerPro/AnimationMotionPath2@2x.png)
 
 #### Configure Sequence Properties
 

@@ -19,7 +19,7 @@ static let browInnerUp: ARFaceAnchor.BlendShapeLocation
 
 The figure below shows a face geometry (see [`ARSCNFaceGeometry`](arscnfacegeometry.md)) in two states, demonstrating values of `0.0` and `1.0` for this coefficient. In both states, the values for all other [`ARFaceAnchor.BlendShapeLocation`](arfaceanchor/blendshapelocation.md) coefficients are set to `0.0`.
 
-![None](https://docs-assets.developer.apple.com/published/d124c94a357c86c3e74a4f018ad2ada0/media-2929223%402x.png)
+![None](/images/com.apple.arkit/media-2929223@2x.png)
 
 ## See Also
 

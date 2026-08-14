@@ -19,7 +19,7 @@ var documentStorageURL: URL? { get }
 
 #### Discussion
 
-This property returns a subdirectory of the app group container shared by the Document Picker extension and its corresponding File Provider extension. By default, this property holds the value returned by calling the File Provider extension’s [`documentStorageURL`](https://developer.apple.com/documentation/FileProvider/NSFileProviderExtension/documentStorageURL) method.
+This property returns a subdirectory of the app group container shared by the Document Picker extension and its corresponding File Provider extension. By default, this property holds the value returned by calling the File Provider extension’s [`documentStorageURL`](https://developer.apple.com/documentation/fileprovider/nsfileproviderextension/documentstorageurl) method.
 
 ## See Also
 

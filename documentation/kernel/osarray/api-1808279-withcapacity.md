@@ -18,7 +18,7 @@ An empty instance of OSArray with a retain count of 1; `NULL` on failure.
 
 #### Overview
 
-`capacity` must be nonzero. The new array will grow as needed to accommodate more objects (`CFMutableArray`, for which the initial capacity is a hard limit).
+`capacity` must be nonzero. The new array will grow as needed to accommodate more objects (*unlike*[`CFMutableArray`](https://developer.apple.com/documentation/corefoundation/cfmutablearray), for which the initial capacity is a hard limit).
 
 ## Parameters
 

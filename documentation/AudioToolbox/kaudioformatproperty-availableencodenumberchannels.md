@@ -21,7 +21,7 @@ var kAudioFormatProperty_AvailableEncodeNumberChannels: AudioFormatPropertyID { 
 
 #### Discussion
 
-An array of `UInt32` values indicating the number of channels that can be encoded. A value of `0xFFFFFFFF` indicates that any number of channels may be encoded. The specifier is an [`AudioStreamBasicDescription`](https://developer.apple.com/documentation/CoreAudioTypes/AudioStreamBasicDescription) structure with at least the `mFormatID` field set.
+An array of `UInt32` values indicating the number of channels that can be encoded. A value of `0xFFFFFFFF` indicates that any number of channels may be encoded. The specifier is an [`AudioStreamBasicDescription`](https://developer.apple.com/documentation/coreaudiotypes/audiostreambasicdescription) structure with at least the `mFormatID` field set.
 
 ## See Also
 

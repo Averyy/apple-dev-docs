@@ -28,7 +28,7 @@ If the header value is `Set-Cookie` or `Set-Cookie2`, the value inside the heade
 
 ## Parameters
 
-- `header`: The header field name. An exception is raised if this value is not   or  .
+- `header`: The header field name. An exception is raised if this value is not `null` or `String`.
 
 ## See Also
 

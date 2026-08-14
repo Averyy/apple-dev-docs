@@ -21,7 +21,7 @@ static func predicateForSamples(_ operatorType: NSComparisonPredicate.Operator, 
 
 ## Parameters
 
-- `operatorType`: The type of operation to perform when matching the category sample’s value against the target value. For a list of possible operators, see [`NSComparisonPredicate.Operator.contains`](https://developer.apple.com/documentation/Foundation/NSComparisonPredicate/Operator/contains).
+- `operatorType`: The type of operation to perform when matching the category sample’s value against the target value. For a list of possible operators, see [`NSComparisonPredicate.Operator.contains`](https://developer.apple.com/documentation/foundation/nscomparisonpredicate/operator/contains).
 - `value`: The category sample’s target value. Use an enumeration value appropriate for the type of category samples you’re working with. For example, a predicate for sleep analysis samples use values from the [`HKCategoryValueSleepAnalysis`](hkcategoryvaluesleepanalysis.md) enumeration.
 
 ## See Also

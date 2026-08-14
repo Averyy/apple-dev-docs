@@ -39,7 +39,7 @@ This data structure is used as a value for the [`kAudioUnitProperty_ParameterClu
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../Swift/BitwiseCopyable.md)
+- [BitwiseCopyable](../swift/bitwisecopyable.md)
 
 ## See Also
 

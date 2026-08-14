@@ -17,7 +17,7 @@ func createSymbolicLink(named name: FSFileName, in directory: FSItem, attributes
 
 #### Discussion
 
-If an item named `name` already exists in the directory indicated by `directory`, complete the request with an error with a domain of [`NSPOSIXErrorDomain`](https://developer.apple.com/documentation/Foundation/NSPOSIXErrorDomain) and a code of `EEXIST`.
+If an item named `name` already exists in the directory indicated by `directory`, complete the request with an error with a domain of [`NSPOSIXErrorDomain`](https://developer.apple.com/documentation/foundation/nsposixerrordomain) and a code of `EEXIST`.
 
 ## Parameters
 

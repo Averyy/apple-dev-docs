@@ -90,7 +90,7 @@ For a custom text object to support keyboard input, it must adopt this protocol 
 - [var conversationContext: UIConversationContext?](uitextinputtraits/conversationcontext.md)
   A reference to a conversation, such as a mail or messaging thread.
 ### Configuring Password AutoFill
-- [Password AutoFill](../Security/password-autofill.md)
+- [Password AutoFill](../security/password-autofill.md)
   Streamline your app’s login and onboarding procedures.
 - [class UITextInputPasswordRules](uitextinputpasswordrules.md)
   A class that represents password rules for a text input field.
@@ -106,7 +106,7 @@ For a custom text object to support keyboard input, it must adopt this protocol 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 ### Inherited By
 - [UIKeyInput](uikeyinput.md)
 - [UITextDocumentProxy](uitextdocumentproxy.md)

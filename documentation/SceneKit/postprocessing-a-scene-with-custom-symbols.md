@@ -14,7 +14,7 @@ Create visual effects in a scene by defining a rendering technique with custom s
 
 Games and 3D apps are often distinguishable because of unique visual effects.  Many games offer settings where users can select filters which change the visual aesthetic of a game.  For example, a user might select a grayscale filter to achieve a grittier feeling, or a pixelation filter make the game retro.
 
-This sample app uses an [`SCNTechnique`](SCNTechnique.md) with custom symbols to create a user-adjustable color filter for the scene. The sample app binds values for each custom symbol to the Metal shader used by the [`SCNTechnique`](SCNTechnique.md). The Metal shader accesses the bound values to produce the color filter effect in the scene.  See the “Defining a Technique” section of the [`SCNTechnique`](SCNTechnique.md) documentation for detailed information about the steps required to define a technique.
+This sample app uses an [`SCNTechnique`](scntechnique.md) with custom symbols to create a user-adjustable color filter for the scene. The sample app binds values for each custom symbol to the Metal shader used by the [`SCNTechnique`](scntechnique.md). The Metal shader accesses the bound values to produce the color filter effect in the scene.  See the “Defining a Technique” section of the [`SCNTechnique`](scntechnique.md) documentation for detailed information about the steps required to define a technique.
 
 ##### Configure the Sample Code Project
 
@@ -55,9 +55,9 @@ In the key-value pair above, the key, on the left, is the name of the symbol as 
 
 ##### Bind a Value to Each Custom Symbol
 
-To bind values to the custom symbols, the sample project uses the [`setValue(_:forKey:)`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class/setValue(_:forKey:)) method of [`SCNTechnique`](SCNTechnique.md).  Once bound, the values are available in the Metal shading program.
+To bind values to the custom symbols, the sample project uses the [`setValue(_:forKey:)`](https://developer.apple.com/documentation/objectivec/nsobject-swift.class/setvalue(_:forkey:)) method of [`SCNTechnique`](scntechnique.md).  Once bound, the values are available in the Metal shading program.
 
-Value bindings use the logical type that corresponds with the Metal type. For example, custom symbols defined in the technique with a type of `vec3`, with a type of `float3` in the shader, use a `SCNVector3` value when bound. Reference the table on the [`SCNShadable`](SCNShadable.md) page of the documentation to identify corresponding types between GLSL, Metal, and Swift.
+Value bindings use the logical type that corresponds with the Metal type. For example, custom symbols defined in the technique with a type of `vec3`, with a type of `float3` in the shader, use a `SCNVector3` value when bound. Reference the table on the [`SCNShadable`](scnshadable.md) page of the documentation to identify corresponding types between GLSL, Metal, and Swift.
 
 ##### Access Your Custom Symbols in Metal
 

@@ -23,7 +23,7 @@ func beginRequest(with context: NSExtensionContext)
 
 #### Discussion
 
-An extension prepares for a host app’s request by getting the context passed in this method and requesting related data items, if appropriate. This method is received after the extension is initialized, but before the principal object is asked to do anything with the context. For example, if the principal object is a view controller, it receives this message before [`loadView()`](https://developer.apple.com/documentation/UIKit/UIViewController/loadView()) is called. After an extension receives this message, the [`extensionContext`](https://developer.apple.com/documentation/UIKit/UIViewController/extensionContext) property of the view controller returns a non`nil` value.
+An extension prepares for a host app’s request by getting the context passed in this method and requesting related data items, if appropriate. This method is received after the extension is initialized, but before the principal object is asked to do anything with the context. For example, if the principal object is a view controller, it receives this message before [`loadView()`](https://developer.apple.com/documentation/uikit/uiviewcontroller/loadview()) is called. After an extension receives this message, the [`extensionContext`](https://developer.apple.com/documentation/uikit/uiviewcontroller/extensioncontext) property of the view controller returns a non`nil` value.
 
 If your subclass conforms to this protocol and overrides `beginRequestWithExtensionContext:`, the subclass is expected to call `[super beginRequestWithExtensionContext:]`.
 

@@ -16,7 +16,7 @@ static let headerAndFooter: NSPrintInfo.AttributeKey
 
 #### Discussion
 
-If [`true`](https://developer.apple.com/documentation/Swift/true), a standard header and footer are added outside the margins of each page.
+If [`true`](https://developer.apple.com/documentation/swift/true), a standard header and footer are added outside the margins of each page.
 
 ## See Also
 

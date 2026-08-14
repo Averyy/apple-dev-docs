@@ -23,7 +23,7 @@ With these meshes, you can:
 
 This sample app presents an AR experience using RealityKit. The figure below illustrates how RealityKit leverages real-world information from ARKit, and creates a debug visualization when you run this app and point the device at a chair in the real world.
 
-![Screenshot of a chair visible in the camera feed with a mesh overlay visualized by RealityKit.](https://docs-assets.developer.apple.com/published/c10c2f87039acb45fadd7b33c6975a63/meshing3-annotated%402x.png)
+![Screenshot of a chair visible in the camera feed with a mesh overlay visualized by RealityKit.](/images/com.apple.arkit/meshing3-annotated@2x.png)
 
 #### Visualize the Shape of the Physical Environment
 
@@ -35,7 +35,7 @@ let configuration = ARWorldTrackingConfiguration()
 configuration.sceneReconstruction = .meshWithClassification
 ```
 
-The sample uses RealityKit’s [`ARView`](https://developer.apple.com/documentation/RealityKit/ARView) to render its graphics. To visualize meshes at runtime, [`ARView`](https://developer.apple.com/documentation/RealityKit/ARView) offers the [`sceneUnderstanding`](https://developer.apple.com/documentation/RealityKit/ARView/Environment-swift.struct/sceneUnderstanding-swift.property) debugging option.
+The sample uses RealityKit’s [`ARView`](https://developer.apple.com/documentation/realitykit/arview) to render its graphics. To visualize meshes at runtime, [`ARView`](https://developer.apple.com/documentation/realitykit/arview) offers the [`sceneUnderstanding`](https://developer.apple.com/documentation/realitykit/arview/environment-swift.struct/sceneunderstanding-swift.property) debugging option.
 
 ```swift
 arView.debugOptions.insert(.showSceneUnderstanding)
@@ -82,7 +82,7 @@ if let result = arView.raycast(from: tapLocation, allowing: .estimatedPlane, ali
     // ...
 ```
 
-![Figure of a meshed, real-world chair with a ray intersecting its surface.](https://docs-assets.developer.apple.com/published/aa18949bf8ae46830224595cf0fce152/armchair-annotated%402x.png)
+![Figure of a meshed, real-world chair with a ray intersecting its surface.](/images/com.apple.arkit/armchair-annotated@2x.png)
 
 When the user’s raycast returns a result, this app gives visual feedback by placing a small sphere at the intersection point.
 
@@ -92,7 +92,7 @@ resultAnchor.addChild(sphere(radius: 0.01, color: .lightGray))
 arView.scene.addAnchor(resultAnchor, removeAfter: 3)
 ```
 
-![Screenshot of a virtual sphere placed on the surface of a mesh that intersected the user's raycast.](https://docs-assets.developer.apple.com/published/7f0bd07b6b5a7950279f6ff321cd5c72/insersection-sphere-annotated%402x.png)
+![Screenshot of a virtual sphere placed on the surface of a mesh that intersected the user's raycast.](/images/com.apple.arkit/insersection-sphere-annotated@2x.png)
 
 #### Classify Real World Objects
 
@@ -100,9 +100,9 @@ ARKit has a classification feature that analyzes its meshed model of the world t
 
 If the user taps the screen and the raycast intersects with a meshed, real-world object, this app displays text of the mesh’s classification.
 
-![Figure of a meshed, real-world chair with a label that displays its classification.](https://docs-assets.developer.apple.com/published/3c7f59c876ad10dd6096ed1f0053e0d9/classified-sized%402x.png)
+![Figure of a meshed, real-world chair with a label that displays its classification.](/images/com.apple.arkit/classified-sized@2x.png)
 
-When the [`automaticallyConfigureSession`](https://developer.apple.com/documentation/RealityKit/ARView/automaticallyConfigureSession) property of [`ARView`](https://developer.apple.com/documentation/RealityKit/ARView) is `true`, RealityKit disables classification by default because it isn’t required for occlusion and physics. To enable mesh classification, the sample overrides the default by setting the [`sceneReconstruction`](arworldtrackingconfiguration/scenereconstruction.md) property to [`meshWithClassification`](arconfiguration/scenereconstruction/meshwithclassification.md).
+When the [`automaticallyConfigureSession`](https://developer.apple.com/documentation/realitykit/arview/automaticallyconfiguresession) property of [`ARView`](https://developer.apple.com/documentation/realitykit/arview) is `true`, RealityKit disables classification by default because it isn’t required for occlusion and physics. To enable mesh classification, the sample overrides the default by setting the [`sceneReconstruction`](arworldtrackingconfiguration/scenereconstruction.md) property to [`meshWithClassification`](arconfiguration/scenereconstruction/meshwithclassification.md).
 
 ```swift
 arView.automaticallyConfigureSession = false
@@ -184,11 +184,11 @@ if let centerOfFace = centerOfFace {
 }
 ```
 
-![Screenshot of a virtual sphere that identifies the origin of a classified mesh.](https://docs-assets.developer.apple.com/published/d68eaeb34c4cfd4e3d524d23e939ab17/classified-text-annotated%402x.png)
+![Screenshot of a virtual sphere that identifies the origin of a classified mesh.](/images/com.apple.arkit/classified-text-annotated@2x.png)
 
 ##### Occlude Virtual Content with a Mesh
 
-*Occlusion* is a feature where parts of the real world cover an app’s virtual content, from the camera’s perspective. To achieve this illusion, RealityKit checks for any meshes in front of virtual content, viewed by the user, and omits drawing any part of the virtual content obscured by those meshes. The sample enables occlusion by adding the [`ARView.Environment.SceneUnderstanding.Options`](https://developer.apple.com/documentation/RealityKit/ARView/Environment-swift.struct/SceneUnderstanding-swift.struct/Options-swift.struct) option to the environment’s [`sceneUnderstanding`](https://developer.apple.com/documentation/RealityKit/ARView/Environment-swift.struct/sceneUnderstanding-swift.property) property.
+*Occlusion* is a feature where parts of the real world cover an app’s virtual content, from the camera’s perspective. To achieve this illusion, RealityKit checks for any meshes in front of virtual content, viewed by the user, and omits drawing any part of the virtual content obscured by those meshes. The sample enables occlusion by adding the [`ARView.Environment.SceneUnderstanding.Options`](https://developer.apple.com/documentation/realitykit/arview/environment-swift.struct/sceneunderstanding-swift.struct/options-swift.struct) option to the environment’s [`sceneUnderstanding`](https://developer.apple.com/documentation/realitykit/arview/environment-swift.struct/sceneunderstanding-swift.property) property.
 
 ```swift
 arView.environment.sceneUnderstanding.options.insert(.occlusion)
@@ -196,17 +196,17 @@ arView.environment.sceneUnderstanding.options.insert(.occlusion)
 
 At runtime, this app omits drawing portions of the virtual text that are behind any part of the meshed, real world.
 
-![Screenshot of a real-world table that occludes a virtual object placed by the app.](https://docs-assets.developer.apple.com/published/e31f1ad134fb6a739a9f04b3fbdae3c0/table-floor-annotated%402x.png)
+![Screenshot of a real-world table that occludes a virtual object placed by the app.](/images/com.apple.arkit/table-floor-annotated@2x.png)
 
 ##### Interact with Real World Objects Using Physics
 
-With scene meshes, virtual content can interact with the physical environment realistically because the meshes give RealityKit’s physics engine an accurate model of the world. The sample enables physics by adding the [`physics`](https://developer.apple.com/documentation/RealityKit/ARView/Environment-swift.struct/SceneUnderstanding-swift.struct/Options-swift.struct/physics) option to the environment’s [`sceneUnderstanding`](https://developer.apple.com/documentation/RealityKit/ARView/Environment-swift.struct/sceneUnderstanding-swift.property) property.
+With scene meshes, virtual content can interact with the physical environment realistically because the meshes give RealityKit’s physics engine an accurate model of the world. The sample enables physics by adding the [`physics`](https://developer.apple.com/documentation/realitykit/arview/environment-swift.struct/sceneunderstanding-swift.struct/options-swift.struct/physics) option to the environment’s [`sceneUnderstanding`](https://developer.apple.com/documentation/realitykit/arview/environment-swift.struct/sceneunderstanding-swift.property) property.
 
 ```swift
 arView.environment.sceneUnderstanding.options.insert(.physics)
 ```
 
-To detect when virtual content comes in contact with a meshed, real-world object, the sample defines the text’s proportions using a collision shape in the `addAnchor(_:,removeAfter:)` [`Scene`](https://developer.apple.com/documentation/RealityKit/Scene) extension.
+To detect when virtual content comes in contact with a meshed, real-world object, the sample defines the text’s proportions using a collision shape in the `addAnchor(_:,removeAfter:)` [`Scene`](https://developer.apple.com/documentation/realitykit/scene) extension.
 
 ```swift
 if model.collision == nil {
@@ -215,7 +215,7 @@ if model.collision == nil {
 }
 ```
 
-When this app classifies an object and displays some text, it waits three seconds before dropping the virtual text. When the sample sets the text’s [`physicsBody`](https://developer.apple.com/documentation/RealityKit/HasPhysicsBody/physicsBody)’s [`mode`](https://developer.apple.com/documentation/RealityKit/PhysicsBodyComponent/mode) to [`PhysicsBodyMode.dynamic`](https://developer.apple.com/documentation/RealityKit/PhysicsBodyMode/dynamic), the text reacts to gravity by falling.
+When this app classifies an object and displays some text, it waits three seconds before dropping the virtual text. When the sample sets the text’s [`physicsBody`](https://developer.apple.com/documentation/realitykit/hasphysicsbody/physicsbody)’s [`mode`](https://developer.apple.com/documentation/realitykit/physicsbodycomponent/mode) to [`PhysicsBodyMode.dynamic`](https://developer.apple.com/documentation/realitykit/physicsbodymode/dynamic), the text reacts to gravity by falling.
 
 ```swift
 Timer.scheduledTimer(withTimeInterval: seconds, repeats: false) { (timer) in
@@ -225,7 +225,7 @@ Timer.scheduledTimer(withTimeInterval: seconds, repeats: false) { (timer) in
 
 As the text falls, it reacts when colliding with a meshed, real-world object, such as landing on the floor.
 
-![Screenshot of a real-world window with the virtual text window falling down to the floor.](https://docs-assets.developer.apple.com/published/97a3080a388ec8164d8ef1e75e82a7ef/windows-annotated%402x.png)
+![Screenshot of a real-world window with the virtual text window falling down to the floor.](/images/com.apple.arkit/windows-annotated@2x.png)
 
 ## See Also
 

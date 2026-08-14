@@ -30,10 +30,10 @@ This method applies the vignette effect filter to an image. This effect reduces 
 The vignette effect filter uses the following properties:
 
 - **`inputImage`**: An image with the type [`CIImage`](ciimage.md).
-- **`intensity`**: A `float` representing the intensity of the vignette effect as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
-- **`radius`**: A `float` representing the radius of the effect as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
-- **`falloff`**: A `float` representing the fall off of brightness toward the edge of the image as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
-- **`center`**: A [`CGPoint`](https://developer.apple.com/documentation/CoreFoundation/CGPoint) representing the center of the image.
+- **`intensity`**: A `float` representing the intensity of the vignette effect as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
+- **`radius`**: A `float` representing the radius of the effect as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
+- **`falloff`**: A `float` representing the fall off of brightness toward the edge of the image as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
+- **`center`**: A [`CGPoint`](https://developer.apple.com/documentation/corefoundation/cgpoint) representing the center of the image.
 
 The following code creates a filter that darkens the edges of an area on the input image:
 
@@ -49,7 +49,7 @@ func vignetteEffect(inputImage: CIImage ) -> CIImage {
 }
 ```
 
-![Two pictures of a pink flower surrounded by foliage. The photo on the left shows a single flower photographed close-up, in focus, with good light and no effects. In the photo on the right, a vignette effect filter is applied, resulting in a gradual reduction of an image brightness and reduction of saturation in the periphery. ](https://docs-assets.developer.apple.com/published/b13a1be336ff028b192ded16dd1ffecb/media-3600013%402x.png)
+![Two pictures of a pink flower surrounded by foliage. The photo on the left shows a single flower photographed close-up, in focus, with good light and no effects. In the photo on the right, a vignette effect filter is applied, resulting in a gradual reduction of an image brightness and reduction of saturation in the periphery. ](/images/com.apple.coreimage/media-3600013@2x.png)
 
 ## See Also
 

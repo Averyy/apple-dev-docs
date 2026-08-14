@@ -16,7 +16,7 @@ class QCRenderer
 
 #### Overview
 
-A `QCRenderer` class is designed for low-level rendering of Quartz Composer compositions. This is the class to use if you want to be in charge of rendering a composition to a specific OpenGL context—either using the [`NSOpenGLContext`](https://developer.apple.com/documentation/AppKit/NSOpenGLContext) class or a `CGLContextObj` object. `QCRenderer` also allows you to load, play, and control a composition.
+A `QCRenderer` class is designed for low-level rendering of Quartz Composer compositions. This is the class to use if you want to be in charge of rendering a composition to a specific OpenGL context—either using the [`NSOpenGLContext`](https://developer.apple.com/documentation/appkit/nsopenglcontext) class or a `CGLContextObj` object. `QCRenderer` also allows you to load, play, and control a composition.
 
 To render a composition to a specific OpenGL context:
 
@@ -80,14 +80,14 @@ for(double t = 0.0; t <= 10.0; t += 1.0/25.0)
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 - [QCCompositionRenderer](qccompositionrenderer.md)
 
 ## See Also

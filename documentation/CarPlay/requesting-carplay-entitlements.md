@@ -25,7 +25,7 @@ Update the App ID of your CarPlay-enabled app to include the necessary CarPlay c
 7. Click the Save button.
 8. Create a new provisioning profile for the updated App ID. For more information, see [`Create a development provisioning profile`](https://developer.apple.comhttps://help.apple.com/developer-account/#/devf2eb157f8).
 
-![A screenshot showing the Edit your App ID Configuration page in the developer portal. The Additional Capabilities tab is in a selected state and lists the available CarPlay capabilities. The CarPlay Audio App (CarPlay framework) capability is in an enabled state.](https://docs-assets.developer.apple.com/published/f69f20ddd7365e388da3ab9d6c088973/media-3703055%402x.png)
+![A screenshot showing the Edit your App ID Configuration page in the developer portal. The Additional Capabilities tab is in a selected state and lists the available CarPlay capabilities. The CarPlay Audio App (CarPlay framework) capability is in an enabled state.](/images/com.apple.carplay/media-3703055@2x.png)
 
 ##### Import the Carplay Provisioning Profile
 

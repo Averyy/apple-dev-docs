@@ -21,7 +21,7 @@ init()
 
 #### Discussion
 
-If you didn’t start any extended launch tasks using [`extendLaunchMeasurement(forTaskID:)`](https://developer.apple.com/documentation/MetricKit/MXMetricManager/extendLaunchMeasurement(forTaskID:)), this metric measures only the time for your app to display its first frame to screen.
+If you didn’t start any extended launch tasks using [`extendLaunchMeasurement(forTaskID:)`](https://developer.apple.com/documentation/metrickit/mxmetricmanager/extendlaunchmeasurement(fortaskid:)), this metric measures only the time for your app to display its first frame to screen.
 
 ## See Also
 

@@ -23,7 +23,7 @@ class MPSCNNNeuronPReLU
 
 For each pixel in an image, the filter applies the following function:
 
-![f(x_i) = x_i, if x_i >= 0 | a_i * x_i if x_i < 0](https://docs-assets.developer.apple.com/published/95c19cdea26a32c5047215a3d05cd831/media-2923194%402x.png)
+![f(x_i) = x_i, if x_i >= 0 | a_i * x_i if x_i < 0](/images/com.apple.metalperformanceshaders/media-2923194@2x.png)
 
 Where `i` in `[0 ... channels - 1]`. That is, parameters `a``ᵢ` are learned and applied to each channel separately. Compare this to [`MPSCNNNeuronReLU`](mpscnnneuronrelu.md) where parameter `a` is shared across all channels.
 
@@ -37,15 +37,15 @@ Where `i` in `[0 ... channels - 1]`. That is, parameters `a``ᵢ` are learned an
 ### Inherits From
 - [MPSCNNNeuron](mpscnnneuron.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCoding](../Foundation/NSCoding.md)
-- [NSCopying](../Foundation/NSCopying.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [NSSecureCoding](../Foundation/NSSecureCoding.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCoding](../foundation/nscoding.md)
+- [NSCopying](../foundation/nscopying.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSSecureCoding](../foundation/nssecurecoding.md)
 
 ## See Also
 

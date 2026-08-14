@@ -21,7 +21,7 @@ var kAudioQueueProperty_CurrentDevice: AudioQueuePropertyID { get }
 
 #### Discussion
 
-Value is a read-write [`CFString`](https://developer.apple.com/documentation/CoreFoundation/CFString) object representing the unique identifier (UID) of the audio hardware device associated with an audio queue.
+Value is a read-write [`CFString`](https://developer.apple.com/documentation/corefoundation/cfstring) object representing the unique identifier (UID) of the audio hardware device associated with an audio queue.
 
 ## See Also
 

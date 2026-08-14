@@ -10,19 +10,19 @@ Develop drivers for serial I/O devices connected to your Mac.
 
 #### Overview
 
-The SerialDriverKit framework supports the development of drivers for devices that communicate using a serial interface. The framework lets you build drivers to support modem hardware or a universal asynchronous receiver/transmitter (UART). To create a driver that communicates serially with a USB device, use the [`USBSerialDriverKit`](https://developer.apple.com/documentation/USBSerialDriverKit) framework instead.
+The SerialDriverKit framework supports the development of drivers for devices that communicate using a serial interface. The framework lets you build drivers to support modem hardware or a universal asynchronous receiver/transmitter (UART). To create a driver that communicates serially with a USB device, use the [`USBSerialDriverKit`](https://developer.apple.com/documentation/usbserialdriverkit) framework instead.
 
-Package your driver in an app that uses the [`System Extensions`](https://developer.apple.com/documentation/SystemExtensions) framework to install and upgrade the driver on the user’s Mac.
+Package your driver in an app that uses the [`System Extensions`](https://developer.apple.com/documentation/systemextensions) framework to install and upgrade the driver on the user’s Mac.
 
 > **Note**:  SerialDriverKit is available on macOS.
 
 ## Topics
 
 ### Samples
-- [DriverKit sample code](../DriverKit/driverkit-sample-code.md)
+- [DriverKit sample code](../driverkit/driverkit-sample-code.md)
   Explore projects that demonstrate how to write macOS device drivers with the DriverKit family of frameworks.
 ### Serial Interface
-- [com.apple.developer.driverkit.family.serial](../BundleResources/Entitlements/com.apple.developer.driverkit.family.serial.md)
+- [com.apple.developer.driverkit.family.serial](../bundleresources/entitlements/com.apple.developer.driverkit.family.serial.md)
   A Boolean value that indicates whether to match the driver against devices with serial communication interfaces.
 - [IOUserSerial](iouserserial.md)
   The class for building a service that communicates using a serial connection.

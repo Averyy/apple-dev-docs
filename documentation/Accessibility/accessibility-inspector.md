@@ -10,7 +10,7 @@ Use Accessibility Inspector to display, query, and test accessibility informatio
 
 To use Accessibility Inspector, open Xcode and choose Xcode > Open Developer Tool > Accessibility Inspector.
 
-![None](https://docs-assets.developer.apple.com/published/be82179a1110c56d69ee735ea919bae7/accessibility-inspector-overview%402x.png)
+![None](/images/com.apple.Accessibility/accessibility-inspector-overview@2x.png)
 
 ## Topics
 

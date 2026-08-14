@@ -17,7 +17,7 @@ protocol MEExtension : NSObjectProtocol
 
 #### Overview
 
-To implement an app extension, you provide an object that conforms to the [`MEExtension`](meextension.md) protocol. The [`MEExtensionCapabilities`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSExtension/NSExtensionAttributes/MEExtensionCapabilities) key of your extension’s `Info.plist` defines the capabilities that you support, as follows:
+To implement an app extension, you provide an object that conforms to the [`MEExtension`](meextension.md) protocol. The [`MEExtensionCapabilities`](https://developer.apple.com/documentation/bundleresources/information-property-list/nsextension/nsextensionattributes/meextensioncapabilities) key of your extension’s `Info.plist` defines the capabilities that you support, as follows:
 
 ```plist
 <key>NSExtensionAttributes</key>
@@ -59,7 +59,7 @@ For each capability that your extension defines, you provide an object that impl
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

@@ -27,9 +27,9 @@ The value of the `previousViewControllers` parameter is the same as what the [`v
 ## Parameters
 
 - `pageViewController`: The page view controller.
-- `finished`: [`true`](https://developer.apple.com/documentation/Swift/true) if the animation finished; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
+- `finished`: [`true`](https://developer.apple.com/documentation/swift/true) if the animation finished; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
 - `previousViewControllers`: The view controllers prior to the transition.
-- `completed`: [`true`](https://developer.apple.com/documentation/Swift/true) if the user completed the page-turn gesture; otherwise, [`false`](https://developer.apple.com/documentation/Swift/false).
+- `completed`: [`true`](https://developer.apple.com/documentation/swift/true) if the user completed the page-turn gesture; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
 
 ## See Also
 

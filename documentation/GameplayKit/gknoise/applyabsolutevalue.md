@@ -23,7 +23,7 @@ func applyAbsoluteValue()
 
 For example, a value of `-0.75` becomes `0.75`, but positive values such as `0.5` remain unchanged.
 
-![None](https://docs-assets.developer.apple.com/published/2b77295592e93174ea3b5844840b6227/media-2556374%402x.png)
+![None](/images/com.apple.gameplaykit/media-2556374@2x.png)
 
 ## See Also
 

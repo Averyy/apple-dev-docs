@@ -14,7 +14,7 @@ A dictionary that specifies the minimum size of the floating window in which Fin
 
 #### Discussion
 
-See [`Designing Workflow Extensions`](https://developer.apple.com/documentation/Professional-Video-Applications/designing-workflow-extensions).
+See [`Designing Workflow Extensions`](https://developer.apple.com/documentation/professional-video-applications/designing-workflow-extensions).
 
 ## Topics
 

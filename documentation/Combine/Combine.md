@@ -21,7 +21,7 @@ The Combine framework provides a declarative Swift API for processing values ove
 - The [`Publisher`](publisher.md) protocol declares a type that can deliver a sequence of values over time. Publishers have *operators* to act on the values received from upstream publishers and republish them.
 - At the end of a chain of publishers, a [`Subscriber`](subscriber.md) acts on elements as it receives them. Publishers only emit values when explicitly requested to do so by subscribers. This puts your subscriber code in control of how fast it receives events from the publishers it’s connected to.
 
-Several Foundation types expose their functionality through publishers, including [`Timer`](https://developer.apple.com/documentation/Foundation/Timer), [`NotificationCenter`](https://developer.apple.com/documentation/Foundation/NotificationCenter), and [`URLSession`](https://developer.apple.com/documentation/Foundation/URLSession). Combine also provides a built-in publisher for any property that’s compliant with Key-Value Observing.
+Several Foundation types expose their functionality through publishers, including [`Timer`](https://developer.apple.com/documentation/foundation/timer), [`NotificationCenter`](https://developer.apple.com/documentation/foundation/notificationcenter), and [`URLSession`](https://developer.apple.com/documentation/foundation/urlsession). Combine also provides a built-in publisher for any property that’s compliant with Key-Value Observing.
 
 You can combine the output of multiple publishers and coordinate their interaction. For example, you can subscribe to updates from a text field’s publisher, and use the text to perform URL requests. You can then use another publisher to process the responses and use them to update your app.
 

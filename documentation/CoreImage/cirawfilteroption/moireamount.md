@@ -21,7 +21,7 @@ static let moireAmount: CIRAWFilterOption
 
 #### Discussion
 
-A key for an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) object containing a double that expresses the amount of moiré reduction applied to an image.
+A key for an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) object containing a double that expresses the amount of moiré reduction applied to an image.
 
 #### Discussion
 

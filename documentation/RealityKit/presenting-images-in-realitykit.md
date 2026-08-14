@@ -14,7 +14,7 @@ RealityKit apps can easily display images in 3D space using [`ImagePresentationC
 
 Spatial scenes are different from *spatial photos*. A *spatial photo* presents two separate 2D images, one to each eye, to create the illusion of a three dimensional view. *Spatial scenes*, on the other hand, generate textured 3D geometry from either a *spatial photo* or a regular 2D image.
 
-![A screenshot of a visionOS window displaying a photograph of a windmill in the background and tulip flowers in the foreground. Below the window, there is an ornament view with left and right arrows and a button labeled Convert to 3D.](https://docs-assets.developer.apple.com/published/eb6f50add22c250ac49c9cdf9c276251/mono-image%402x.jpg)
+![A screenshot of a visionOS window displaying a photograph of a windmill in the background and tulip flowers in the foreground. Below the window, there is an ornament view with left and right arrows and a button labeled Convert to 3D.](/images/com.apple.RealityKit/mono-image@2x.jpg)
 
 This sample app demonstrates how to use [`ImagePresentationComponent`](imagepresentationcomponent.md) and [`ImagePresentationComponent.Spatial3DImage`](imagepresentationcomponent/spatial3dimage.md) to convert an existing 2D image to a 3D spatial scene, and how to present the 2D and 3D versions of the image using [`RealityView`](realityview.md) in a SwiftUI app.
 
@@ -75,7 +75,7 @@ func createImagePresentationComponent() async {
 
 The `createImagePresentationComponent` method stores the [`aspectRatio(for:)`](imagepresentationcomponent/aspectratio(for:).md) of the newly created ImagePresentationComponent in the `AppModel`.
 
-The app implements an [`onChange(of:perform:)`](https://developer.apple.com/documentation/SwiftUI/View/onChange(of:perform:))  modifier for `aspectRatio` in the `AppModel` to ensure that the [`UIWindowScene`](https://developer.apple.com/documentation/UIKit/UIWindowScene) size matches the image.
+The app implements an [`onChange(of:perform:)`](https://developer.apple.com/documentation/swiftui/view/onchange(of:perform:))  modifier for `aspectRatio` in the `AppModel` to ensure that the [`UIWindowScene`](https://developer.apple.com/documentation/uikit/uiwindowscene) size matches the image.
 
 ```swift
 .onChange(of: appModel.imageAspectRatio) { _, newAspectRatio in
@@ -122,7 +122,7 @@ let originalPosition = appModel.contentEntity.position(relativeTo: nil)
 appModel.contentEntity.setPosition(SIMD3<Float>(originalPosition.x, originalPosition.y, 0.0), relativeTo: nil)
 ```
 
-To display the image at an appropriate size, the app wraps a [`RealityView`](realityview.md) inside a [`GeometryReader3D`](https://developer.apple.com/documentation/SwiftUI/GeometryReader3D):
+To display the image at an appropriate size, the app wraps a [`RealityView`](realityview.md) inside a [`GeometryReader3D`](https://developer.apple.com/documentation/swiftui/geometryreader3d):
 
 ```swift
 GeometryReader3D { geometry in

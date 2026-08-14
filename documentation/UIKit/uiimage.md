@@ -60,15 +60,15 @@ A stretchable image is one that defines regions where you can duplicate the unde
 
 Define a stretchable image by adding insets to an existing image using the [`resizableImage(withCapInsets:)`](uiimage/resizableimage(withcapinsets:).md) or [`resizableImage(withCapInsets:resizingMode:)`](uiimage/resizableimage(withcapinsets:resizingmode:).md) method. The insets subdivide the image into two or more parts. Specifying nonzero values for each inset yields an image divided into nine parts, as shown in the following image:
 
-![An image that depicts how to use insets to define stretchable regions. The image on the left is stretched and shows Left, Right, Top, and Bottom insets. The image on the right is condensed and also shows Left, Right, Top, and Bottom insets.](https://docs-assets.developer.apple.com/published/a24122a4b3a9289007f9bcad22d8667d/media-1965929%402x.png)
+![An image that depicts how to use insets to define stretchable regions. The image on the left is stretched and shows Left, Right, Top, and Bottom insets. The image on the right is condensed and also shows Left, Right, Top, and Bottom insets.](/images/com.apple.uikit/media-1965929@2x.png)
 
 Each inset defines the portion of the image that doesn’t stretch in the given dimension. The regions inside an image’s top and bottom insets maintain a fixed height, and the areas inside the left and right insets maintain a fixed width. The following image shows how each part of a nine-part image stretches as the image itself is stretched to fill the available space. The corners of the image don’t change size because they’re inside both a horizontal and vertical inset:
 
-![An image that depicts the stretchable portions of a nine-part image. The image on the left is stretched. The image on the right is condensed. The corners of both images remain the same size.](https://docs-assets.developer.apple.com/published/dcf9ad7415ffdb2dd9a753a3be251cce/media-1965930%402x.png)
+![An image that depicts the stretchable portions of a nine-part image. The image on the left is stretched. The image on the right is condensed. The corners of both images remain the same size.](/images/com.apple.uikit/media-1965930@2x.png)
 
 ##### Compare Images
 
-The [`isEqual(_:)`](https://developer.apple.com/documentation/ObjectiveC/NSObjectProtocol/isEqual(_:)) method is the only reliable way to determine whether two image objects contain the same image data. The following code illustrates the correct and incorrect ways to compare images.
+The [`isEqual(_:)`](https://developer.apple.com/documentation/objectivec/nsobjectprotocol/isequal(_:)) method is the only reliable way to determine whether two image objects contain the same image data. The following code illustrates the correct and incorrect ways to compare images.
 
 **Swift**:
 
@@ -105,7 +105,7 @@ if (image1 == image2) {
 
 ##### Access the Image Data
 
-Image objects don’t provide direct access to their underlying image data. However, you can retrieve the image data in other formats for use in your app. Specifically, you can use the [`cgImage`](uiimage/cgimage.md) and [`ciImage`](uiimage/ciimage.md) properties to retrieve versions of the image that are compatible with Core Graphics and Core Image, respectively. You can also use the [`pngData()`](uiimage/pngdata().md) and [`jpegData(compressionQuality:)`](uiimage/jpegdata(compressionquality:).md) functions to generate an [`NSData`](https://developer.apple.com/documentation/Foundation/NSData) object containing the image data in either the PNG or JPEG format.
+Image objects don’t provide direct access to their underlying image data. However, you can retrieve the image data in other formats for use in your app. Specifically, you can use the [`cgImage`](uiimage/cgimage.md) and [`ciImage`](uiimage/ciimage.md) properties to retrieve versions of the image that are compatible with Core Graphics and Core Image, respectively. You can also use the [`pngData()`](uiimage/pngdata().md) and [`jpegData(compressionQuality:)`](uiimage/jpegdata(compressionquality:).md) functions to generate an [`NSData`](https://developer.apple.com/documentation/foundation/nsdata) object containing the image data in either the PNG or JPEG format.
 
 ## Topics
 
@@ -309,24 +309,24 @@ Image objects don’t provide direct access to their underlying image data. Howe
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [AttachableAsImage](../Testing/AttachableAsImage.md)
-- [CVarArg](../Swift/CVarArg.md)
-- [Copyable](../Swift/Copyable.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Escapable](../Swift/Escapable.md)
-- [Hashable](../Swift/Hashable.md)
-- [JournalingSuggestionAsset](../JournalingSuggestions/JournalingSuggestionAsset.md)
-- [NSCoding](../Foundation/NSCoding.md)
-- [NSItemProviderReading](../Foundation/NSItemProviderReading.md)
-- [NSItemProviderWriting](../Foundation/NSItemProviderWriting.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [NSSecureCoding](../Foundation/NSSecureCoding.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [AttachableAsImage](../testing/attachableasimage.md)
+- [CVarArg](../swift/cvararg.md)
+- [Copyable](../swift/copyable.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Escapable](../swift/escapable.md)
+- [Hashable](../swift/hashable.md)
+- [JournalingSuggestionAsset](../journalingsuggestions/journalingsuggestionasset.md)
+- [NSCoding](../foundation/nscoding.md)
+- [NSItemProviderReading](../foundation/nsitemproviderreading.md)
+- [NSItemProviderWriting](../foundation/nsitemproviderwriting.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 - [UIAccessibilityIdentification](uiaccessibilityidentification.md)
 - [UIItemProviderPresentationSizeProviding](uiitemproviderpresentationsizeproviding.md)
 

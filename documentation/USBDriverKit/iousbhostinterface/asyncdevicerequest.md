@@ -16,7 +16,7 @@ virtual kern_return_t AsyncDeviceRequest(uint8_t bmRequestType, uint8_t bRequest
 
 #### Return Value
 
-[`kIOReturnSuccess`](https://developer.apple.com/documentation/DriverKit/kIOReturnSuccess) if the request was enqueued successfully, or another value if an error occurs. See [`Error Codes`](https://developer.apple.com/documentation/DriverKit/error-codes).
+[`kIOReturnSuccess`](https://developer.apple.com/documentation/driverkit/kioreturnsuccess) if the request was enqueued successfully, or another value if an error occurs. See [`Error Codes`](https://developer.apple.com/documentation/driverkit/error-codes).
 
 #### Discussion
 
@@ -30,7 +30,7 @@ This method performs a USB device request (USB 2.0, section 9.3) asynchronously 
 - `wIndex`: Request-specific data.
 - `wLength`: The number of bytes to transfer, if there’s a data stage.
 - `dataBuffer`: The memory descriptor to use for the request’s data phase, if any.
-- `completion`: An [`OSAction`](https://developer.apple.com/documentation/DriverKit/OSAction) object that contains the method to call when the request finishes.
+- `completion`: An [`OSAction`](https://developer.apple.com/documentation/driverkit/osaction) object that contains the method to call when the request finishes.
 - `completionTimeoutMs`: The timeout duration in milliseconds. If you specify `0`, the request never times out.
 
 ## See Also

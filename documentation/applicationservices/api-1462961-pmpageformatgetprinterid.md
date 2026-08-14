@@ -25,7 +25,7 @@ Page format objects can be created a number of different ways and some of them d
 ## Parameters
 
 - `pageFormat`: The page format object whose printer identifier you want to obtain.
-- `printerID`: A pointer to your   variable. On return, the variable refers to a Core Foundation string that contains the identifier of the formatting printer for the specified page format object. If the page format object does not have that information, the variable is set to  . You should not release the string without first retaining it.
+- `printerID`: A pointer to your [`CFString`](https://developer.apple.com/documentation/corefoundation/cfstring) variable. On return, the variable refers to a Core Foundation string that contains the identifier of the formatting printer for the specified page format object. If the page format object does not have that information, the variable is set to `NULL`. You should not release the string without first retaining it.
 
 ## See Also
 

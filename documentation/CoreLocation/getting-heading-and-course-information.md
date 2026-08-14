@@ -8,7 +8,7 @@ Use a device’s orientation and course information for navigation.
 
 Heading and course information are commonly used by navigation apps to help guide the user to a destination. The heading of a user’s device is its current orientation relative to magnetic or true north. Devices with GPS can report course information, which represents the direction in which the device is moving. The Compass app in iOS uses heading information to implement a magnetic compass interface, as shown in [`Figure 1`](getting_heading_and_course_information#2904075.md). Augmented reality apps might use this information to determine which direction the user is facing.
 
-![The Compass app showing a heading of Northwest](https://docs-assets.developer.apple.com/published/0f4aef8427a7c15588ab8315f7a27a0b/media-2904075%402x.png)
+![The Compass app showing a heading of Northwest](/images/com.apple.corelocation/media-2904075@2x.png)
 
 ##### Get the Current Heading
 

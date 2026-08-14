@@ -29,7 +29,7 @@ Creates a configuration for a widget by using a custom intent to provide user-co
 
 ## See Also
 
-- [var body: Self.Body](../SwiftUI/WidgetConfiguration/body-swift.property.md)
+- [var body: Self.Body](../swiftui/widgetconfiguration/body-swift.property.md)
   The content and behavior of this widget.
 
 

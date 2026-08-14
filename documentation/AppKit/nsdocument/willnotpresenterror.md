@@ -16,11 +16,11 @@ func willNotPresentError(_ error: any Error)
 
 #### Discussion
 
-Some `NSDocument` methods, like those involved in writing, may not immediately delete temporary files if there is a chance that the error can be recovered from and the operation can continue. To make sure that cleanup is always done, you should invoke this method with `NSDocument` errors that are not going to be passed to one of the `presentError:...` methods. For example, the `NSDocument` implementation of the `NSFilePresenter` method [`savePresentedItemChanges(completionHandler:)`](https://developer.apple.com/documentation/Foundation/NSFilePresenter/savePresentedItemChanges(completionHandler:)) invokes this method when it invokes [`autosave(withImplicitCancellability:completionHandler:)`](nsdocument/autosave(withimplicitcancellability:completionhandler:).md) and the completion handler is passed an `NSError` object, because it does not present the error to the user.
+Some `NSDocument` methods, like those involved in writing, may not immediately delete temporary files if there is a chance that the error can be recovered from and the operation can continue. To make sure that cleanup is always done, you should invoke this method with `NSDocument` errors that are not going to be passed to one of the `presentError:...` methods. For example, the `NSDocument` implementation of the `NSFilePresenter` method [`savePresentedItemChanges(completionHandler:)`](https://developer.apple.com/documentation/foundation/nsfilepresenter/savepresenteditemchanges(completionhandler:)) invokes this method when it invokes [`autosave(withImplicitCancellability:completionHandler:)`](nsdocument/autosave(withimplicitcancellability:completionhandler:).md) and the completion handler is passed an `NSError` object, because it does not present the error to the user.
 
 ## Parameters
 
-- `error`: An [`NSError`](https://developer.apple.com/documentation/Foundation/NSError) object returned by another `NSDocument` method.
+- `error`: An [`NSError`](https://developer.apple.com/documentation/foundation/nserror) object returned by another `NSDocument` method.
 
 ## See Also
 

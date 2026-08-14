@@ -128,7 +128,7 @@ When configuring the collection view object, assign your delegate object to its 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 - [UIScrollViewDelegate](uiscrollviewdelegate.md)
 ### Inherited By
 - [UICollectionViewDelegateFlowLayout](uicollectionviewdelegateflowlayout.md)

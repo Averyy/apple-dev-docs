@@ -26,9 +26,9 @@ A valid CDA document sample with the provided metadata.
 
 To create a CDA document sample:
 
-1. Create [`NSDate`](https://developer.apple.com/documentation/Foundation/NSDate) objects to represent fallback start and end dates for the sample. Where possible, the system uses the effective date from the document’s XML data to set the sample’s start and end dates. The start and end date parameters are only used when the effective date is not available. Use the current date and time.
-2. Create an [`NSData`](https://developer.apple.com/documentation/Foundation/NSData) object that contains the CDA’s XML data.
-3. (optionally) Create an [`NSDictionary`](https://developer.apple.com/documentation/Foundation/NSDictionary) object containing any additional metadata for this sample.
+1. Create [`NSDate`](https://developer.apple.com/documentation/foundation/nsdate) objects to represent fallback start and end dates for the sample. Where possible, the system uses the effective date from the document’s XML data to set the sample’s start and end dates. The start and end date parameters are only used when the effective date is not available. Use the current date and time.
+2. Create an [`NSData`](https://developer.apple.com/documentation/foundation/nsdata) object that contains the CDA’s XML data.
+3. (optionally) Create an [`NSDictionary`](https://developer.apple.com/documentation/foundation/nsdictionary) object containing any additional metadata for this sample.
 4. Call the `HKCDADocumentSample` class’s [`init(data:start:end:metadata:)`](hkcdadocumentsample/init(data:start:end:metadata:).md) method. Handle any errors that occur during XML validation.
 5. Save the sample to the HealthKit store. Handle any errors that occur while saving.
 
@@ -50,9 +50,9 @@ do {
 ## Parameters
 
 - `documentData`: The CDA document in an XML format that meets the CDA standard. For more information on the CDA document format, see the [`Clinical Document Architecture, R2`](https://developer.apple.comhttp://www.hl7.org/implement/standards/product_brief.cfm?product_id=7) standard.
-- `startDate`: A fallback start date for the sample. This date is only used when the XML document does not include the document’s effective date. This date must be equal to or earlier than the end date; otherwise, this method throws an exception ([`invalidArgumentException`](https://developer.apple.com/documentation/Foundation/NSExceptionName/invalidArgumentException)).
-- `endDate`: A fallback end date for the sample. This date is only used when the XML document does not include the document’s effective date. This date must be equal to or later than the start date; otherwise, this method throws an exception ([`invalidArgumentException`](https://developer.apple.com/documentation/Foundation/NSExceptionName/invalidArgumentException)).
-- `metadata`: The metadata dictionary contains extra information describing this sample. The dictionary’s keys are all [`NSString`](https://developer.apple.com/documentation/Foundation/NSString) objects. The values may be [`NSString`](https://developer.apple.com/documentation/Foundation/NSString) objects, [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) objects, or [`NSDate`](https://developer.apple.com/documentation/Foundation/NSDate) objects. For a complete list of predefined metadata keys, see Metadata Keys in [`HealthKit Constants`](healthkit-constants.md). Using predefined keys helps facilitate sharing data between apps; however, you are also encouraged to create your own, custom keys as needed to extend the sample’s capabilities.
+- `startDate`: A fallback start date for the sample. This date is only used when the XML document does not include the document’s effective date. This date must be equal to or earlier than the end date; otherwise, this method throws an exception ([`invalidArgumentException`](https://developer.apple.com/documentation/foundation/nsexceptionname/invalidargumentexception)).
+- `endDate`: A fallback end date for the sample. This date is only used when the XML document does not include the document’s effective date. This date must be equal to or later than the start date; otherwise, this method throws an exception ([`invalidArgumentException`](https://developer.apple.com/documentation/foundation/nsexceptionname/invalidargumentexception)).
+- `metadata`: The metadata dictionary contains extra information describing this sample. The dictionary’s keys are all [`NSString`](https://developer.apple.com/documentation/foundation/nsstring) objects. The values may be [`NSString`](https://developer.apple.com/documentation/foundation/nsstring) objects, [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) objects, or [`NSDate`](https://developer.apple.com/documentation/foundation/nsdate) objects. For a complete list of predefined metadata keys, see Metadata Keys in [`HealthKit Constants`](healthkit-constants.md). Using predefined keys helps facilitate sharing data between apps; however, you are also encouraged to create your own, custom keys as needed to extend the sample’s capabilities.
 
 ## See Also
 

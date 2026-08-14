@@ -21,7 +21,9 @@ A result code. See [`Result Codes`](core_printing#1670007.md).
 ## Parameters
 
 - `printer`: The printer whose queue state you want to obtain.
-- `state`: See   for a complete description of these constants.
+- `state`: A pointer to your `PMPrinterState` variable. On return, the variable contains a constant that indicates the current state of the print queue for the specified printer. Supported values are: - `kPMPrinterIdle` (queue is idle)
+- `kPMPrinterProcessing` (queue is processing a job)
+- `kPMPrinterStopped` (queue is stopped) See [`PMPrinterState`](pmprinterstate.md) for a complete description of these constants.
 
 ## See Also
 

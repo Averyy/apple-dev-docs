@@ -36,7 +36,7 @@ When a person selects an event in the [`JournalingSuggestionsPicker`](journaling
 ## Relationships
 
 ### Conforms To
-- [Identifiable](../Swift/Identifiable.md)
+- [Identifiable](../swift/identifiable.md)
 
 ## See Also
 

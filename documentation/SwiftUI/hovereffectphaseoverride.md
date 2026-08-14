@@ -38,7 +38,7 @@ By default hover effects transition between the active and inactive phases in re
 ## Relationships
 
 ### Conforms To
-- [Equatable](../Swift/Equatable.md)
+- [Equatable](../swift/equatable.md)
 
 ## See Also
 

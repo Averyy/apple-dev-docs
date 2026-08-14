@@ -29,7 +29,7 @@ This method applies the convolution 7 x 7 filter to an image. The effect uses a 
 
 The convolution 7 x 7 filter uses the following properties:
 
-- **`bias`**: A `float` representing the value that’s added to each output pixel as a [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+- **`bias`**: A `float` representing the value that’s added to each output pixel as a [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
 - **`weights`**: A [`CIVector`](civector.md) representing the convolution kernel.
 - **`inputImage`**: An image with the type [`CIImage`](ciimage.md).
 
@@ -57,7 +57,7 @@ func convolution7X7(inputImage: CIImage) -> CIImage? {
 }
 ```
 
-![Two images arranged horizontally. The left image contains a photo of the Golden Gate Bridge with a clear sky as the background. The right image shows the result of applying a 7 x 7 convolution kernel that highlights edges. Fine detail and noise in the image are highlighted. ](https://docs-assets.developer.apple.com/published/e13d156f8eeffbdeaa74cb99335d304f/media-4334871%402x.png)
+![Two images arranged horizontally. The left image contains a photo of the Golden Gate Bridge with a clear sky as the background. The right image shows the result of applying a 7 x 7 convolution kernel that highlights edges. Fine detail and noise in the image are highlighted. ](/images/com.apple.coreimage/media-4334871@2x.png)
 
 ## See Also
 

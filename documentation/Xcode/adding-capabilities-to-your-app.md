@@ -6,7 +6,7 @@ Configure your target to include and customize capabilities that provide access 
 
 #### Overview
 
-A *capability* grants your app access to an *app service* that Apple provides, such as CloudKit, Game Center, or In-App Purchase. To use some app services, you need to add a capability to your target in Xcode to configure the app service correctly. Xcode may edit the [`Entitlements`](https://developer.apple.com/documentation/BundleResources/Entitlements) and [`Information Property List`](https://developer.apple.com/documentation/BundleResources/Information-Property-List) files, add related frameworks, and configure your signing assets.
+A *capability* grants your app access to an *app service* that Apple provides, such as CloudKit, Game Center, or In-App Purchase. To use some app services, you need to add a capability to your target in Xcode to configure the app service correctly. Xcode may edit the [`Entitlements`](https://developer.apple.com/documentation/bundleresources/entitlements) and [`Information Property List`](https://developer.apple.com/documentation/bundleresources/information-property-list) files, add related frameworks, and configure your signing assets.
 
 Some app services — such as Game Center and In-App Purchase — require additional configuration in App Store Connect and your developer account. For example, to provide directions for other apps using the Maps cabability, you [`upload a geographic coverage file`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/manage-submissions-to-app-review/upload-a-geographic-coverage-file/) in App Store Connect.
 
@@ -22,19 +22,19 @@ You add capabilities to your app using the Signing & Capabilities pane of the pr
 
 In the Project navigator, select the project — the root group with the same name as your app — and in the project editor that appears on the right, select the appropriate target in the sidebar and then click the Signing & Capabilities tab.
 
-![A screenshot of Xcode showing the project editor with the Signing & Capabilities tab open. The project is selected in the Project navigator, a target is selected in the project editor sidebar, and the Signing & Capabilities tab is selected in the toolbar showing a Location capability added below.](https://docs-assets.developer.apple.com/published/f2f9ef9085e3de4f81e1c911595acd32/signing-capabilities%402x.png)
+![A screenshot of Xcode showing the project editor with the Signing & Capabilities tab open. The project is selected in the Project navigator, a target is selected in the project editor sidebar, and the Signing & Capabilities tab is selected in the toolbar showing a Location capability added below.](/images/com.apple.Xcode/signing-capabilities@2x.png)
 
 Optionally, select a build configuration (All, Debug, or Release). For example, if you want to add the capability to the Debug configuration only, select Debug; otherwise, select All.
 
 In the Signing & Capabilities toolbar, click the Capability button (+) to open the Capabilities library (or choose Editor > Add Capability). The Capabilities library displays only the capabilities available to the target platform and your program membership. Select a capability in the list to view its description on the right. Use the filter field in the toolbar to find a capability quickly.
 
-![A screenshot of the Capabilities library with the Apple Pay capability selected in the sidebar on the left and information about Apple Pay displayed in the detail area on the right.](https://docs-assets.developer.apple.com/published/550ae56dcf9df5bbcbeaa2dd9274ac3a/capabilities-library%402x.png)
+![A screenshot of the Capabilities library with the Apple Pay capability selected in the sidebar on the left and information about Apple Pay displayed in the detail area on the right.](/images/com.apple.Xcode/capabilities-library@2x.png)
 
 To add a capability to the target, double-click the capability in the sidebar or drag the capability from the library to the Signing & Capabilities pane. The capability appears below the Signing section. If there are more configuration steps, the capability expands to show additional controls (see [`Perform additional configuration steps`](adding-capabilities-to-your-app#Perform-additional-configuration-steps.md) below). To remove a capability, click the trash icon in the upper-right corner of the capability in the Signing & Capabilities pane.
 
-![A screenshot of Xcode showing the project editor with the Signing & Capabilities tab open and additional configuration options for the Associated Domains capability below.](https://docs-assets.developer.apple.com/published/0be10bf17ef932245f455cc0b9540e9e/additional-configuration%402x.png)
+![A screenshot of Xcode showing the project editor with the Signing & Capabilities tab open and additional configuration options for the Associated Domains capability below.](/images/com.apple.Xcode/additional-configuration@2x.png)
 
-If errors appear in the Signing section, read the message and correct the problem. For example, the bundle ID ([`CFBundleIdentifier`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/CFBundleIdentifier)) that appears in the Bundle Identifier field under Signing needs to be unique. The default value for the bundle ID is the organization identifier concatenated with the app name that you enter when creating a project.
+If errors appear in the Signing section, read the message and correct the problem. For example, the bundle ID ([`CFBundleIdentifier`](https://developer.apple.com/documentation/bundleresources/information-property-list/cfbundleidentifier)) that appears in the Bundle Identifier field under Signing needs to be unique. The default value for the bundle ID is the organization identifier concatenated with the app name that you enter when creating a project.
 
 ##### Perform Additional Configuration Steps
 
@@ -49,7 +49,7 @@ For more guidance on specific capabilities, see the table below:
 | Apple Pay | [`Configuring Apple Pay support`](configuring-apple-pay-support.md) |
 | Associated Domains | [`Configuring an associated domain`](configuring-an-associated-domain.md) |
 | Background Modes | [`Configuring background execution modes`](configuring-background-execution-modes.md) |
-| ClassKit | [`Enabling ClassKit in your app`](https://developer.apple.com/documentation/ClassKit/enabling-classkit-in-your-app) |
+| ClassKit | [`Enabling ClassKit in your app`](https://developer.apple.com/documentation/classkit/enabling-classkit-in-your-app) |
 | Family Controls | [`Configuring Family Controls`](configuring-family-controls.md) |
 | Fonts | [`Configuring custom fonts`](configuring-custom-fonts.md) |
 | Game Controllers | [`Configuring game controllers`](configuring-game-controllers.md) |
@@ -63,8 +63,8 @@ For more guidance on specific capabilities, see the table below:
 | Maps | [`Configuring Maps support`](configuring-maps-support.md) |
 | Media Device Discovery | [`Configuring media device discovery`](configuring-media-device-discovery.md) |
 | Network Extensions | [`Configuring network extensions`](configuring-network-extensions.md) |
-| On-Demand Install Capable | [`Creating an App Clip with Xcode`](https://developer.apple.com/documentation/AppClip/creating-an-app-clip-with-xcode) |
-| Push Notifications | [`Registering your app with APNs`](https://developer.apple.com/documentation/UserNotifications/registering-your-app-with-apns) |
+| On-Demand Install Capable | [`Creating an App Clip with Xcode`](https://developer.apple.com/documentation/appclip/creating-an-app-clip-with-xcode) |
+| Push Notifications | [`Registering your app with APNs`](https://developer.apple.com/documentation/usernotifications/registering-your-app-with-apns) |
 | Sign in with Apple | [`Configuring Sign in with Apple support`](configuring-sign-in-with-apple.md) |
 | Siri | [`Configuring Siri support`](configuring-siri-support.md) |
 | Wallet | [`Configuring Wallet support`](configuring-wallet-support.md) |

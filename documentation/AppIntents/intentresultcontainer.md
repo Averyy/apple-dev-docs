@@ -34,14 +34,14 @@ Use the `IntentResult.result()` family of functions to create instances
 ## Relationships
 
 ### Conforms To
-- [Copyable](../Swift/Copyable.md)
-- [Escapable](../Swift/Escapable.md)
+- [Copyable](../swift/copyable.md)
+- [Escapable](../swift/escapable.md)
 - [IntentResult](intentresult.md)
 - [OpensIntent](opensintent.md)
 - [ProvidesDialog](providesdialog.md)
 - [ReturnsValue](returnsvalue.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 - [ShowsSnippetIntent](showssnippetintent.md)
 - [ShowsSnippetView](showssnippetview.md)
 

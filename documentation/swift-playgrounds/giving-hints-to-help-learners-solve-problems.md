@@ -10,7 +10,7 @@ Learners sometimes become stuck when working through a challenge or learning ass
 
 Hints are disclosed after the learner taps the Hint button in a page’s live view.
 
-![A screenshot highlighting the Hint button in the bottom-right corner of a playground page’s live view.](https://docs-assets.developer.apple.com/published/ea261f418891119731edd16743d7e990/giving-hints-to-help-learners-solve-problems-1%402x.png)
+![A screenshot highlighting the Hint button in the bottom-right corner of a playground page’s live view.](/images/com.apple.Swift-Playgrounds/giving-hints-to-help-learners-solve-problems-1@2x.png)
 
 ##### Add Hints By Using a Property List
 
@@ -70,7 +70,7 @@ Create hints, spoilers, and solutions to suit the needs of each of your playgrou
 
 Here’s how the hints property list looks when displayed as a popover in the playground page’s live view:
 
-![A screenshot showing three hints. The top hint uses the “Content” key, the middle hint uses a spoiler sheet to hide the hint initially, and the bottom hint uses text from a file.](https://docs-assets.developer.apple.com/published/fea67cbe8a6a18414895a56be83b4c98/giving-hints-to-help-learners-solve-problems-2%402x.png)
+![A screenshot showing three hints. The top hint uses the “Content” key, the middle hint uses a spoiler sheet to hide the hint initially, and the bottom hint uses text from a file.](/images/com.apple.Swift-Playgrounds/giving-hints-to-help-learners-solve-problems-2@2x.png)
 
 
 ---

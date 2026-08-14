@@ -16,7 +16,7 @@ class var restorableStateKeyPaths: [String] { get }
 
 #### Return Value
 
-An array of [`NSString`](https://developer.apple.com/documentation/Foundation/NSString) objects, each of which contains a key path to one of the responder’s attributes.
+An array of [`NSString`](https://developer.apple.com/documentation/foundation/nsstring) objects, each of which contains a key path to one of the responder’s attributes.
 
 #### Discussion
 

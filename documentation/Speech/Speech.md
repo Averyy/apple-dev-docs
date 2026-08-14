@@ -23,7 +23,7 @@ For a general understanding of how you use these classes together, see [`SpeechA
 ## Topics
 
 ### Essentials
-- [Speech updates](../Updates/Speech.md)
+- [Speech updates](../updates/speech.md)
   Learn about important changes to Speech.
 - [Recognizing speech in live audio](recognizing-speech-in-live-audio.md)
   Perform speech recognition and transcription on audio captured from the microphone of an iOS device.

@@ -20,11 +20,11 @@ func pngData(actions: (UIGraphicsImageRendererContext) -> Void) -> Data
 
 #### Return Value
 
-A [`Data`](https://developer.apple.com/documentation/Foundation/Data) object representing a PNG-encoded representation of the image created by the supplied drawing actions.
+A [`Data`](https://developer.apple.com/documentation/foundation/data) object representing a PNG-encoded representation of the image created by the supplied drawing actions.
 
 #### Discussion
 
-You provide a set of drawing instructions as the block argument to this method, and the method returns the resulting image as a PNG-encoded [`Data`](https://developer.apple.com/documentation/Foundation/Data) object.
+You provide a set of drawing instructions as the block argument to this method, and the method returns the resulting image as a PNG-encoded [`Data`](https://developer.apple.com/documentation/foundation/data) object.
 
 You can call this method repeatedly to create multiple images, each of which has identical dimensions and format.
 

@@ -36,7 +36,7 @@ class IOInterruptDispatchSource : IODispatchSource, IOInterruptDispatchSourceInt
 - [+ Create_Call](iointerruptdispatchsource/3223316-create_call.md)
 - [+ Create_Impl](iointerruptdispatchsource/3223317-create_impl.md)
 - [+ Create_Invoke](iointerruptdispatchsource/3223318-create_invoke.md)
-- [+ GetInterruptType](../driverkit/iointerruptdispatchsource/getinterrupttype.md)
+- [+ GetInterruptType](iointerruptdispatchsource/3645740-getinterrupttype.md)
 - [+ GetInterruptType_Impl](iointerruptdispatchsource/3645741-getinterrupttype_impl.md)
 - [+ GetInterruptType_Invoke](iointerruptdispatchsource/3645742-getinterrupttype_invoke.md)
 - [+ GetLastInterrupt_Invoke](iointerruptdispatchsource/3943325-getlastinterrupt_invoke.md)

@@ -13,13 +13,13 @@ Display app-specific data on the clock face.
 
 #### Overview
 
-> ❗ **Important**:  ClockKit-based complications are deprecated in watchOS 10 and later. Use [`WidgetKit`](https://developer.apple.com/documentation/WidgetKit) to create complications. For more information, see [`Migrating to WidgetKit`](clkcomplicationdatasource#Migrating-to-WidgetKit.md).
+> ❗ **Important**:  ClockKit-based complications are deprecated in watchOS 10 and later. Use [`WidgetKit`](https://developer.apple.com/documentation/widgetkit) to create complications. For more information, see [`Migrating to WidgetKit`](clkcomplicationdatasource#Migrating-to-WidgetKit.md).
 
 Use the ClockKit framework to implement complications for your app. *Complications* are small interface elements that appear on a watch face and provide quick access to data that people frequently use. Your app defines complications using timeline entries that provide a template for the complication’s appearance and the date ClockKit displays it. The system updates the appearance of your complication based on the timeline.
 
 ClockKit defines the size and placement of the complications on each watch face. The following image depicts the layout of the Modular watch face, which has space for five different complications: one large and four small.
 
-![An illustration showing the space for one large and four small complications on the Modular watch face.](https://docs-assets.developer.apple.com/published/b9baf9ed5945a94fd8aec91e7c443ba2/media-3571054%402x.png)
+![An illustration showing the space for one large and four small complications on the Modular watch face.](/images/com.apple.clockkit/media-3571054@2x.png)
 
 ClockKit organizes complications into families based on their size and style, and provides a variety of templates for each family. Use the templates to display text, images, and graphical gauges.
 
@@ -38,7 +38,7 @@ The system also gives apps with active complications more opportunities for back
 ## Topics
 
 ### Migration Support
-- [Migrating ClockKit complications to WidgetKit](../WidgetKit/Converting-A-ClockKit-App.md)
+- [Migrating ClockKit complications to WidgetKit](../widgetkit/converting-a-clockkit-app.md)
   Leverage WidgetKit’s API to create watchOS complications using SwiftUI.
 - [protocol CLKComplicationDataSource](clkcomplicationdatasource.md)
   A protocol that provides ClockKit with information about your complication.

@@ -22,7 +22,7 @@ case lineHeightMultiple
 
 #### Discussion
 
-The natural line height of the receiver is multiplied by this factor (if positive) before being constrained by minimum and maximum line height. Type: [`CGFloat`](https://developer.apple.com/documentation/CoreFoundation/CGFloat-swift.struct). Default value: `0.0`. Affects: [`CTFramesetter`](ctframesetter.md).
+The natural line height of the receiver is multiplied by this factor (if positive) before being constrained by minimum and maximum line height. Type: [`CGFloat`](https://developer.apple.com/documentation/corefoundation/cgfloat-swift.struct). Default value: `0.0`. Affects: [`CTFramesetter`](ctframesetter.md).
 
 ## See Also
 

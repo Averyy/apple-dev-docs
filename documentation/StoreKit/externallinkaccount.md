@@ -19,7 +19,7 @@ enum ExternalLinkAccount
 
 #### Overview
 
-This functionality is only available to apps with the [`com.apple.developer.storekit.external-link.account`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.storekit.external-link.account) entitlement. For more information, see [`Distributing “reader” apps with a link to your website`](https://developer.apple.comhttps://developer.apple.com/support/reader-apps/).
+This functionality is only available to apps with the [`com.apple.developer.storekit.external-link.account`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.storekit.external-link.account) entitlement. For more information, see [`Distributing “reader” apps with a link to your website`](https://developer.apple.comhttps://developer.apple.com/support/reader-apps/).
 
 ## Topics
 
@@ -32,14 +32,14 @@ This functionality is only available to apps with the [`com.apple.developer.stor
 ## Relationships
 
 ### Conforms To
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 
-- [com.apple.developer.storekit.external-link.account](../BundleResources/Entitlements/com.apple.developer.storekit.external-link.account.md)
+- [com.apple.developer.storekit.external-link.account](../bundleresources/entitlements/com.apple.developer.storekit.external-link.account.md)
   A Boolean value that indicates whether your app can link to an external website for account creation or management.
-- [SKExternalLinkAccount](../BundleResources/Information-Property-List/SKExternalLinkAccount.md)
+- [SKExternalLinkAccount](../bundleresources/information-property-list/skexternallinkaccount.md)
   A dictionary that contains localized URLs to an external website for account creation or management.
 
 

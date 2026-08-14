@@ -37,9 +37,9 @@ protocol MergeableDocument : MergeablePartsContainer, Identifiable
 ## Relationships
 
 ### Inherits From
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [Identifiable](../Swift/Identifiable.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [Identifiable](../swift/identifiable.md)
 - [MergeablePartsContainer](mergeablepartscontainer.md)
 ### Conforming Types
 - [AssignableDocument](assignabledocument.md)

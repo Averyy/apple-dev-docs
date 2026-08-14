@@ -7,7 +7,6 @@ The raw data used for the MMS content part.
 
 **Availability**:
 - iOS 26.0+
-- iPadOS 26.0+
 
 ## Declaration
 
@@ -19,7 +18,7 @@ var data: Data
 
 Interpreting this value depends on the part’s [`contentType`](mmspartcontent/contenttype.md). For example, the data for a file attachment can be the file’s contents in binary. For file attachments, this can be the file contents in binary.
 
-> 💡 **Tip**: When sending an MMS message that includes text, convert the text string to a [`Data`](https://developer.apple.com/documentation/Foundation/Data) instance; for example, `let textData = myString.data(using: .utf8)`.
+> 💡 **Tip**: When sending an MMS message that includes text, convert the text string to a [`Data`](https://developer.apple.com/documentation/foundation/data) instance; for example, `let textData = myString.data(using: .utf8)`.
 
 ## See Also
 
@@ -33,7 +32,7 @@ Interpreting this value depends on the part’s [`contentType`](mmspartcontent/c
   A unique identifier for the part.
 - [var contentType: UTType?](mmspartcontent/contenttype.md)
   The content type of the part, as a Uniform Type Identifier.
-- [struct UTType](../UniformTypeIdentifiers/UTType-swift.struct.md)
+- [struct UTType](../uniformtypeidentifiers/uttype-swift.struct.md)
   A structure that represents a type of data to load, send, or receive.
 
 

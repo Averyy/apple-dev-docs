@@ -10,18 +10,18 @@ Check whether your app can use ARKit and respect people’s privacy.
 
 People need to know why your app wants to access data from ARKit. Add the following keys to your app’s information property list to provide a user-facing usage description that explains how your app uses the data:
 
-- **[`NSHandsTrackingUsageDescription`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSHandsTrackingUsageDescription)**: Use this key if your app uses hand tracking.
-- **[`NSWorldSensingUsageDescription`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSWorldSensingUsageDescription)**: Use this key if your app uses image tracking, plane detection, or scene reconstruction.
+- **[`NSHandsTrackingUsageDescription`](https://developer.apple.com/documentation/bundleresources/information-property-list/nshandstrackingusagedescription)**: Use this key if your app uses hand tracking.
+- **[`NSWorldSensingUsageDescription`](https://developer.apple.com/documentation/bundleresources/information-property-list/nsworldsensingusagedescription)**: Use this key if your app uses image tracking, plane detection, or scene reconstruction.
 
 > **Note**: World *tracking* — unlike world *sensing* — doesn’t require authorization. For more information, see [`Tracking specific points in world space`](tracking-points-in-world-space.md).
 
 ##### Choose Between Up Front or As Needed Authorization
 
-You can choose when someone sees an authorization request to use ARKit data. If you need precise control over when the request appears, call the [`requestAuthorization(for:)`](https://developer.apple.com/documentation/ARKit/ARKitSession/requestAuthorization(for:)) method on [`ARKitSession`](https://developer.apple.com/documentation/ARKit/ARKitSession) to explicitly authorize access at the time you call it. Otherwise, people see an authorization request when you call the [`run(_:)`](https://developer.apple.com/documentation/ARKit/ARKitSession/run(_:)) method. This is an implicit authorization because the timing of the request depends entirely on when you start the session.
+You can choose when someone sees an authorization request to use ARKit data. If you need precise control over when the request appears, call the [`requestAuthorization(for:)`](https://developer.apple.com/documentation/arkit/arkitsession/requestauthorization(for:)) method on [`ARKitSession`](https://developer.apple.com/documentation/arkit/arkitsession) to explicitly authorize access at the time you call it. Otherwise, people see an authorization request when you call the [`run(_:)`](https://developer.apple.com/documentation/arkit/arkitsession/run(_:)) method. This is an implicit authorization because the timing of the request depends entirely on when you start the session.
 
 ##### Open a Space and Run a Session
 
-To help protect people’s privacy, ARKit data is available only when your app presents a Full Space and other apps are hidden. Present one of these space styles before calling the [`run(_:)`](https://developer.apple.com/documentation/ARKit/ARKitSession/run(_:)) method.
+To help protect people’s privacy, ARKit data is available only when your app presents a Full Space and other apps are hidden. Present one of these space styles before calling the [`run(_:)`](https://developer.apple.com/documentation/arkit/arkitsession/run(_:)) method.
 
 The following shows an app structure that’s set up to use a space with ARKit:
 
@@ -56,7 +56,7 @@ struct MyApp: App {
 }
 ```
 
-Call [`openImmersiveSpace`](https://developer.apple.com/documentation/SwiftUI/EnvironmentValues/openImmersiveSpace) from your app’s user interface to create a space, start running an ARKit session, and kick off an immersive experience. The following shows a simple view with a button that opens the space:
+Call [`openImmersiveSpace`](https://developer.apple.com/documentation/swiftui/environmentvalues/openimmersivespace) from your app’s user interface to create a space, start running an ARKit session, and kick off an immersive experience. The following shows a simple view with a button that opens the space:
 
 ```swift
 struct ContentView: View {
@@ -100,7 +100,7 @@ Providing alternatives is especially important if you’re using ARKit for user 
   Query and react to changes in the position and rotation of Apple Vision Pro.
 - [Drawing in the air and on surfaces with a spatial stylus](drawing-in-the-air-and-on-surfaces-with-a-spatial-stylus.md)
   Create a spatial stylus drawing experience that balances latency and accuracy for both in-air and on-surface drawing.
-- [Preparing spatial accessories for tracking in your visionOS app](../ARKit/preparing-spatial-accessories-for-tracking-in-your-visionos-app.md)
+- [Preparing spatial accessories for tracking in your visionOS app](../arkit/preparing-spatial-accessories-for-tracking-in-your-visionos-app.md)
   Prepare a spatial accessory for tracking by training a reference accessory file and integrating it into your visionOS app.
 - [Working with generic spatial accessories](working-with-generic-spatial-accessories.md)
   Let people place digital replicas of a generic spatial accessory by tracking the accessory with ARKit.

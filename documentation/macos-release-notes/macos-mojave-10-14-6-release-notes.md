@@ -6,7 +6,7 @@ Update your apps to use new features, and test your apps against API changes.
 
 #### Overview
 
-The macOS 10.14.6 SDK provides support for developing apps for Macs running macOS Mojave 10.14.6. The SDK comes bundled with Xcode 10.3 available from the Mac App Store. For information on the compatibility requirements for Xcode 10.3, see [`Xcode 10.3 Release Notes`](https://developer.apple.com/documentation/Xcode-Release-Notes/xcode-10_3-release-notes).
+The macOS 10.14.6 SDK provides support for developing apps for Macs running macOS Mojave 10.14.6. The SDK comes bundled with Xcode 10.3 available from the Mac App Store. For information on the compatibility requirements for Xcode 10.3, see [`Xcode 10.3 Release Notes`](https://developer.apple.com/documentation/xcode-release-notes/xcode-10_3-release-notes).
 
 ##### Security
 

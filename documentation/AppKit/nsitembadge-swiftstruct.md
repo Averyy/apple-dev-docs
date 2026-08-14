@@ -36,7 +36,7 @@ This badge provides a way to display small visual indicators, such as counts and
 ## Relationships
 
 ### Conforms To
-- [Equatable](../Swift/Equatable.md)
+- [Equatable](../swift/equatable.md)
 
 ## See Also
 

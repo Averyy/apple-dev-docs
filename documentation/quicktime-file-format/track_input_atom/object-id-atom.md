@@ -7,7 +7,7 @@ An atom that identifies an object, such as a sprite within a sprite track, in a 
 
 #### Overview
 
-For more information, see [`Object ID atom ('obid')`](object_id_atom.md).
+For more information, see [`Object ID atom`](object_id_atom.md).
 
 ## See Also
 

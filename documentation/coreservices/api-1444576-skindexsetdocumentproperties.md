@@ -22,7 +22,7 @@ Use `SKIndexSetDocumentProperties` to persistently set application-defined prope
 
 ##### 1681176
 
-You must set any desired properties on a document URL object  adding the document URL object to an index. Adding a document URL object to an index clears the object’s preexisting properties.
+You must set any desired properties on a document URL object *after* adding the document URL object to an index. Adding a document URL object to an index clears the object’s preexisting properties.
 
 ## Parameters
 

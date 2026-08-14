@@ -26,7 +26,7 @@ You can also use WorkoutKit to create and maintain a workout schedule and, with 
 
 Before you can schedule a workout, you must ask for permission. Get the shared [`WorkoutScheduler`](workoutscheduler.md) instance, and call its [`requestAuthorization()`](workoutscheduler/requestauthorization().md) method. Then call the [`schedule(_:at:)`](workoutscheduler/schedule(_:at:).md) method to schedule workouts.
 
-To access health data for the workout, see the [`HealthKit`](https://developer.apple.com/documentation/HealthKit) framework.
+To access health data for the workout, see the [`HealthKit`](https://developer.apple.com/documentation/healthkit) framework.
 
 ## Topics
 

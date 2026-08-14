@@ -25,7 +25,7 @@ This class is a mutable subclass of [`AVMovie`](avmovie.md) that provides method
 
 You use movie objects only when operating on format-specific features of a QuickTime or ISO base media file. You typically don’t use these classes to open and play QuickTime movie files or ISO base media files. Instead, you use [`AVURLAsset`](avurlasset.md) and [`AVPlayerItem`](avplayeritem.md).
 
-When performing media insertions, a movie interleaves media data from tracks in the source asset to optimize the movie file for playback. However, performing a series of media insertions may result in a movie file that’s not optimally interleaved. You can optimize a movie file for playback by exporting it with an [`AVAssetExportSession`](avassetexportsession.md) object using the export preset [`AVAssetExportPresetPassthrough`](avassetexportpresetpassthrough.md), and setting the [`shouldOptimizeForNetworkUse`](avassetexportsession/shouldoptimizefornetworkuse.md) property value to [`true`](https://developer.apple.com/documentation/Swift/true).
+When performing media insertions, a movie interleaves media data from tracks in the source asset to optimize the movie file for playback. However, performing a series of media insertions may result in a movie file that’s not optimally interleaved. You can optimize a movie file for playback by exporting it with an [`AVAssetExportSession`](avassetexportsession.md) object using the export preset [`AVAssetExportPresetPassthrough`](avassetexportpresetpassthrough.md), and setting the [`shouldOptimizeForNetworkUse`](avassetexportsession/shouldoptimizefornetworkuse.md) property value to [`true`](https://developer.apple.com/documentation/swift/true).
 
 ## Topics
 
@@ -165,14 +165,14 @@ When performing media insertions, a movie interleaves media data from tracks in 
 - [AVMovie](avmovie.md)
 ### Conforms To
 - [AVAsynchronousKeyValueLoading](avasynchronouskeyvalueloading.md)
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCopying](../Foundation/NSCopying.md)
-- [NSMutableCopying](../Foundation/NSMutableCopying.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCopying](../foundation/nscopying.md)
+- [NSMutableCopying](../foundation/nsmutablecopying.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

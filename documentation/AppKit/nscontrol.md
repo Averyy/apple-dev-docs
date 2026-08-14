@@ -20,7 +20,7 @@ The [`NSControl`](nscontrol.md) class is abstract and must be subclassed to be u
 
 ##### About Delegate Methods
 
-The `NSControl` class provides several delegate methods for its subclasses that allow text editing, such as `NSTextField` and `NSMatrix`. These include: [`controlTextDidBeginEditing:`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class/controlTextDidBeginEditing:), [`controlTextDidChange:`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class/controlTextDidChange:), and [`controlTextDidEndEditing:`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class/controlTextDidEndEditing:).
+The `NSControl` class provides several delegate methods for its subclasses that allow text editing, such as `NSTextField` and `NSMatrix`. These include: [`controlTextDidBeginEditing:`](https://developer.apple.com/documentation/objectivec/nsobject-swift.class/controltextdidbeginediting:), [`controlTextDidChange:`](https://developer.apple.com/documentation/objectivec/nsobject-swift.class/controltextdidchange:), and [`controlTextDidEndEditing:`](https://developer.apple.com/documentation/objectivec/nsobject-swift.class/controltextdidendediting:).
 
 Note that although `NSControl` defines delegate methods, it doesn’t itself have a delegate. Any subclass that uses these methods must have a delegate and the methods to get and set it. In addition, a formal delegate protocol [`NSControlTextEditingDelegate`](nscontroltexteditingdelegate.md) also defines delegate methods used by control delegates.
 
@@ -187,24 +187,24 @@ When the mouse button is pressed while the cursor is within the bounds of the re
 - [NSTableView](nstableview.md)
 - [NSTextField](nstextfield.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
 - [NSAccessibilityElementProtocol](nsaccessibilityelementprotocol.md)
 - [NSAccessibilityProtocol](nsaccessibilityprotocol.md)
 - [NSAnimatablePropertyContainer](nsanimatablepropertycontainer.md)
 - [NSAppearanceCustomization](nsappearancecustomization.md)
-- [NSCoding](../Foundation/NSCoding.md)
+- [NSCoding](../foundation/nscoding.md)
 - [NSDraggingDestination](nsdraggingdestination.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 - [NSStandardKeyBindingResponding](nsstandardkeybindingresponding.md)
 - [NSTouchBarProvider](nstouchbarprovider.md)
 - [NSUserActivityRestoring](nsuseractivityrestoring.md)
 - [NSUserInterfaceItemIdentification](nsuserinterfaceitemidentification.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

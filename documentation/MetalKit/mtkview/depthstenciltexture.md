@@ -23,7 +23,7 @@ var depthStencilTexture: (any MTLTexture)? { get }
 
 The value of [`depthStencilPixelFormat`](mtkview/depthstencilpixelformat.md) determines the format of this texture.
 
-The default value is `nil`. This value is also `nil` if the specified pixel format is [`MTLPixelFormat.invalid`](https://developer.apple.com/documentation/Metal/MTLPixelFormat/invalid).
+The default value is `nil`. This value is also `nil` if the specified pixel format is [`MTLPixelFormat.invalid`](https://developer.apple.com/documentation/metal/mtlpixelformat/invalid).
 
 ## See Also
 

@@ -22,7 +22,7 @@ func scrollToItem(at indexPath: IndexPath, at scrollPosition: UICollectionView.S
 
 - `indexPath`: The index path of the item to scroll into view.
 - `scrollPosition`: An option that specifies where the item should be positioned when scrolling finishes. For a list of possible values, see [`UICollectionView.ScrollPosition`](uicollectionview/scrollposition.md).
-- `animated`: Specify [`true`](https://developer.apple.com/documentation/Swift/true) to animate the scrolling behavior or [`false`](https://developer.apple.com/documentation/Swift/false) to adjust the scroll view’s visible content immediately.
+- `animated`: Specify [`true`](https://developer.apple.com/documentation/swift/true) to animate the scrolling behavior or [`false`](https://developer.apple.com/documentation/swift/false) to adjust the scroll view’s visible content immediately.
 
 ## See Also
 

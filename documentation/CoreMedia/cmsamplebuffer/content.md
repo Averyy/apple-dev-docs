@@ -27,8 +27,8 @@ Note: This protocol is a marker protocol sealed to CoreMedia framework. Any type
 ## Relationships
 
 ### Inherits From
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 ### Inherited By
 - [CMSampleBuffer.ContentWithFormatDescription](cmsamplebuffer/contentwithformatdescription.md)
 - [CMSampleBuffer.MultiSampleContent](cmsamplebuffer/multisamplecontent.md)

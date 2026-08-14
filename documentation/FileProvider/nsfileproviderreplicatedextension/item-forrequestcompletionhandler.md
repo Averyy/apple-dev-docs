@@ -21,7 +21,7 @@ func item(for identifier: NSFileProviderItemIdentifier, request: NSFileProviderR
 
 #### Return Value
 
-An item that tracks your extension’s progress. The system automatically calls [`cancel()`](https://developer.apple.com/documentation/Foundation/Progress/cancel())  on the progress object when an error occurs.
+An item that tracks your extension’s progress. The system automatically calls [`cancel()`](https://developer.apple.com/documentation/foundation/progress/cancel())  on the progress object when an error occurs.
 
 #### Discussion
 

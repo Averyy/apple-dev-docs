@@ -28,7 +28,7 @@ This data type defines an item-information record used bythe `LSCopyItemInfoForR
 - [var creator: OSType](lsiteminforecord/1441870-creator.md)
   The item’s creator signature.
 - [var `extension`: Unmanaged<CFString>!](lsiteminforecord/1442123-extension.md)
-  A Core Foundation string object specifying theitem’s filename extension; see the  inthe Core Foundation Reference Documentation for a description ofthe `CFStringRef` datatype.
+  A Core Foundation string object specifying theitem’s filename extension; see the *CFString Reference* inthe Core Foundation Reference Documentation for a description ofthe `CFStringRef` datatype.
 - [var filetype: OSType](lsiteminforecord/1447384-filetype.md)
   The item’s file type.
 - [var flags: LSItemInfoFlags](lsiteminforecord/1446281-flags.md)

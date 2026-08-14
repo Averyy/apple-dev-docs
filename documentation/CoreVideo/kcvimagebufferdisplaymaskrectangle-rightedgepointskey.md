@@ -22,7 +22,7 @@ let kCVImageBufferDisplayMaskRectangle_RightEdgePointsKey: CFString
 
 #### Discussion
 
-The points are [`CFArray`](https://developer.apple.com/documentation/CoreFoundation/CFArray) of unsigned 16-bit integer [`CFNumber`](https://developer.apple.com/documentation/CoreFoundation/CFNumber) pairs alternating between inset X and inset Y. Inset X is an unsigned offset from the right edge (`0`) towards the left edge (width). Inset Y is an unsigned offset from the top edge (`0`) towards the bottom edge (height).
+The points are [`CFArray`](https://developer.apple.com/documentation/corefoundation/cfarray) of unsigned 16-bit integer [`CFNumber`](https://developer.apple.com/documentation/corefoundation/cfnumber) pairs alternating between inset X and inset Y. Inset X is an unsigned offset from the right edge (`0`) towards the left edge (width). Inset Y is an unsigned offset from the top edge (`0`) towards the bottom edge (height).
 
 ## See Also
 

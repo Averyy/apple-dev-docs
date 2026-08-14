@@ -28,7 +28,7 @@ HStack {
 
 The orange reference line in the following figure shows the default alignment position of the views within the stack. The line functions as a visual reference for the purposes of this article.
 
-![A blue rectangle defines the padded boundary of an HStack, in which a microphone image against the left side, followed the word Connecting styled as a caption, then the name Bryan styled as a title. The child views are spaced evenly across the stack and centered vertically. An orange line runs underneath the view, displaying the location of the default center alignment guide.](https://docs-assets.developer.apple.com/published/e786deee8ebd48ac2caf3af21850ba96/Aligning-Views-Within-a-Stack-1%402x.png)
+![A blue rectangle defines the padded boundary of an HStack, in which a microphone image against the left side, followed the word Connecting styled as a caption, then the name Bryan styled as a title. The child views are spaced evenly across the stack and centered vertically. An orange line runs underneath the view, displaying the location of the default center alignment guide.](/images/com.apple.SwiftUI/Aligning-Views-Within-a-Stack-1@2x.png)
 
 ##### Customize Stack Alignment
 
@@ -52,7 +52,7 @@ HStack(alignment: .firstTextBaseline) {
 .border(Color.blue, width: 1)
 ```
 
-![A blue rectangle defines the padded boundary of an HStack, in which a microphone image against the left side, followed the word Connecting styled as a caption, then the name Bryan styled as a title. The child views are spaced evenly across the stack and aligned with the text baselines matching the bottom of the microphone image. An orange line runs underneath the view, displaying the location of the baseline alignment guide.](https://docs-assets.developer.apple.com/published/82076de6ecf9276279d7c9cb905024f2/Aligning-Views-Within-a-Stack-2%402x.png)
+![A blue rectangle defines the padded boundary of an HStack, in which a microphone image against the left side, followed the word Connecting styled as a caption, then the name Bryan styled as a title. The child views are spaced evenly across the stack and aligned with the text baselines matching the bottom of the microphone image. An orange line runs underneath the view, displaying the location of the baseline alignment guide.](/images/com.apple.SwiftUI/Aligning-Views-Within-a-Stack-2@2x.png)
 
 ##### Adjust the Alignment of Individual Views Within a Stack
 
@@ -75,11 +75,11 @@ HStack(alignment: .firstTextBaseline) {
 
 When you use an alignment guide modifier, make sure to specify an active alignment of the stack. Otherwise, SwiftUI doesn’t invoke the closure to offset the view. In the example above, the [`firstTextBaseline`](verticalalignment/firsttextbaseline.md) input to the alignment guide matches the stack’s alignment, so the adjustment affects the placement of the image:
 
-![A blue rectangle defines the padded boundary of an HStack, in which a microphone image against the left side, followed the word Connecting styled as a caption, then the name Bryan styled as a title. The child views are spaced evenly across the stack and aligned with the text baselines. The microphone image is slightly offset to that the bottom of the microphone aligns with the baseline. An orange line runs underneath the view, displaying the location of the baseline alignment guide.](https://docs-assets.developer.apple.com/published/f51a0a520176a8502cc8628c0fa3f3f9/Aligning-Views-Within-a-Stack-3%402x.png)
+![A blue rectangle defines the padded boundary of an HStack, in which a microphone image against the left side, followed the word Connecting styled as a caption, then the name Bryan styled as a title. The child views are spaced evenly across the stack and aligned with the text baselines. The microphone image is slightly offset to that the bottom of the microphone aligns with the baseline. An orange line runs underneath the view, displaying the location of the baseline alignment guide.](/images/com.apple.SwiftUI/Aligning-Views-Within-a-Stack-3@2x.png)
 
 ##### Use Sf Symbols to Simplify Views When Aligning with Text
 
-You can replace the microphone image with a similar icon from [`SF Symbols`](https://developer.apple.com/design/Human-Interface-Guidelines/sf-symbols) to simplify the view. The icons from SF Symbols use text baseline guides, which means they support whatever font styling you apply to the view.
+You can replace the microphone image with a similar icon from [`SF Symbols`](https://developer.apple.com/design/human-interface-guidelines/sf-symbols) to simplify the view. The icons from SF Symbols use text baseline guides, which means they support whatever font styling you apply to the view.
 
 ```swift
 HStack(alignment: .firstTextBaseline) {
@@ -94,7 +94,7 @@ HStack(alignment: .firstTextBaseline) {
 .border(Color.blue, width: 1)
 ```
 
-![A blue rectangle defines the padded boundary of an HStack, in which a microphone symbol in a circle aligns against the left side, followed the word Connecting styled as a caption, then the name Bryan styled as a title. The child views are spaced evenly across the stack and aligned with the baseline of the name matching the bottom of the microphone within the circle. An orange line runs underneath the view, displaying the location of the baseline alignment guide.](https://docs-assets.developer.apple.com/published/2d597d3b57da46c1172946ac2d5a3c46/Aligning-Views-Within-a-Stack-4%402x.png)
+![A blue rectangle defines the padded boundary of an HStack, in which a microphone symbol in a circle aligns against the left side, followed the word Connecting styled as a caption, then the name Bryan styled as a title. The child views are spaced evenly across the stack and aligned with the baseline of the name matching the bottom of the microphone within the circle. An orange line runs underneath the view, displaying the location of the baseline alignment guide.](/images/com.apple.SwiftUI/Aligning-Views-Within-a-Stack-4@2x.png)
 
 ## See Also
 

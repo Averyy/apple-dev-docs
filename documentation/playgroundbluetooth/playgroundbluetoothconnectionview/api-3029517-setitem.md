@@ -17,8 +17,8 @@ func setItem(_ item: PlaygroundBluetoothConnectionView.Item, forPeripheral perip
 
 ## Parameters
 
-- `item`: A   that holds information about the specified peripheral.
-- `peripheral`: The peripheral corresponding to the   being displayed.
+- `item`: A [`PlaygroundBluetoothConnectionView.Item`](playgroundbluetoothconnectionview/item.md) that holds information about the specified peripheral.
+- `peripheral`: The peripheral corresponding to the [`PlaygroundBluetoothConnectionView.Item`](playgroundbluetoothconnectionview/item.md) being displayed.
 
 ## See Also
 

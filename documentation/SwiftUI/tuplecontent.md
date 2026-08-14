@@ -40,14 +40,14 @@ This type should be conformed to builder DSL protocols to represent tuple conten
 
 ### Conforms To
 - [AccessibilityRotorContent](accessibilityrotorcontent.md)
-- [ChartContent](../Charts/ChartContent.md)
+- [ChartContent](../charts/chartcontent.md)
 - [Commands](commands.md)
-- [Copyable](../Swift/Copyable.md)
+- [Copyable](../swift/copyable.md)
 - [CustomizableToolbarContent](customizabletoolbarcontent.md)
-- [Escapable](../Swift/Escapable.md)
+- [Escapable](../swift/escapable.md)
 - [SceneAccessoryContent](sceneaccessorycontent.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 - [ToolbarContent](toolbarcontent.md)
 - [View](view.md)
 

@@ -21,7 +21,7 @@ var lineCapStyle: CGLineCap { get set }
 
 #### Discussion
 
-The line cap style is applied to the start and end points of any open subpaths. This property does not affect closed subpaths. The default line cap style is [`CGLineCap.butt`](https://developer.apple.com/documentation/CoreGraphics/CGLineCap/butt).
+The line cap style is applied to the start and end points of any open subpaths. This property does not affect closed subpaths. The default line cap style is [`CGLineCap.butt`](https://developer.apple.com/documentation/coregraphics/cglinecap/butt).
 
 ## See Also
 

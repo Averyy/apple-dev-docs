@@ -22,11 +22,11 @@ let kCGImageSourceAllowableTypes: CFString
 
 #### Discussion
 
-The value is a [`CFArray`](https://developer.apple.com/documentation/CoreFoundation/CFArray) containing [`CFString`](https://developer.apple.com/documentation/CoreFoundation/CFString) Uniform Type Identifiers (UTIs) of allowed image formats. When specified, ImageIO will only decode images whose format matches one of the entries in the allow list. If no matching reader is found, decoding fails.
+The value is a [`CFArray`](https://developer.apple.com/documentation/corefoundation/cfarray) containing [`CFString`](https://developer.apple.com/documentation/corefoundation/cfstring) Uniform Type Identifiers (UTIs) of allowed image formats. When specified, ImageIO will only decode images whose format matches one of the entries in the allow list. If no matching reader is found, decoding fails.
 
 Unknown format identifiers are ignored. If not specified, all supported ImageIO formats are allowed (default behavior). If process-wide format restrictions were set via [`CGImageSourceSetAllowableTypes(_:)`](cgimagesourcesetallowabletypes(_:).md), only formats allowed by both mechanisms are permitted.
 
-See also [`System-declared uniform type identifiers`](https://developer.apple.com/documentation/UniformTypeIdentifiers/system-declared-uniform-type-identifiers).
+See also [`System-declared uniform type identifiers`](https://developer.apple.com/documentation/uniformtypeidentifiers/system-declared-uniform-type-identifiers).
 
 #### Example
 

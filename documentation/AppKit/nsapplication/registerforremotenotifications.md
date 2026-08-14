@@ -18,7 +18,7 @@ func registerForRemoteNotifications()
 
 Call this method to register your app with APNs. When a valid connection is established, APNs sends a device token to your app delegate. Forward that token to your company’s provider server.
 
-For more information about how to register with APNs, see [`Registering your app with APNs`](https://developer.apple.com/documentation/UserNotifications/registering-your-app-with-apns).
+For more information about how to register with APNs, see [`Registering your app with APNs`](https://developer.apple.com/documentation/usernotifications/registering-your-app-with-apns).
 
 ## See Also
 

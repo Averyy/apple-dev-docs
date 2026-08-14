@@ -21,7 +21,7 @@ func peers(with state: GKPeerConnectionState) -> [Any]!
 
 #### Return Value
 
-An array of [`NSString`](https://developer.apple.com/documentation/Foundation/NSString) objects with a [`peerID`](gksession/peerid.md) string for each peer visible to the session that is currently in the specified connection state. If there are no peers in the specified connection state, this method returns `nil`.
+An array of [`NSString`](https://developer.apple.com/documentation/foundation/nsstring) objects with a [`peerID`](gksession/peerid.md) string for each peer visible to the session that is currently in the specified connection state. If there are no peers in the specified connection state, this method returns `nil`.
 
 ## Parameters
 

@@ -30,7 +30,7 @@ The `CNContactStore` object represents the user’s contacts store database, and
 - Fetch only the properties that you need for contacts.
 - When fetching all contacts and caching the results, first fetch all contacts identifiers, then fetch batches of detailed contacts by identifiers as required.
 - To aggregate several contacts fetches, first collect a set of unique identifiers from the fetches. Then fetch batches of detailed contacts by those unique identifiers.
-- If you cache the fetched contacts, groups, or containers, you need to refetch these objects (and release the old cached objects) when [`CNContactStoreDidChange`](https://developer.apple.com/documentation/Foundation/NSNotification/Name-swift.struct/CNContactStoreDidChange) is posted.
+- If you cache the fetched contacts, groups, or containers, you need to refetch these objects (and release the old cached objects) when [`CNContactStoreDidChange`](https://developer.apple.com/documentation/foundation/nsnotification/name-swift.struct/cncontactstoredidchange) is posted.
 
 Because `CNContactStore` fetch methods perform I/O, it’s recommended that you avoid using the main thread to execute fetches.
 
@@ -68,20 +68,20 @@ Because `CNContactStore` fetch methods perform I/O, it’s recommended that you 
 - [func execute(CNSaveRequest) throws](cncontactstore/execute(_:).md)
   Executes a save request and returns success or failure.
 ### Responding to contact store changes
-- [static let CNContactStoreDidChange: NSNotification.Name](../Foundation/NSNotification/Name-swift.struct/CNContactStoreDidChange.md)
+- [static let CNContactStoreDidChange: NSNotification.Name](../foundation/nsnotification/name-swift.struct/cncontactstoredidchange.md)
   Posted when changes occur to the contact store.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 
@@ -89,9 +89,9 @@ Because `CNContactStore` fetch methods perform I/O, it’s recommended that you 
   Request permission from the person to read and write their contact data.
 - [Accessing a person’s contact data using Contacts and ContactsUI](accessing-a-person-s-contact-data-using-contacts-and-contactsui.md)
   Allow people to grant your app access to contact data by adding the Contact access button and Contact access picker to your app.
-- [NSContactsUsageDescription](../BundleResources/Information-Property-List/NSContactsUsageDescription.md)
+- [NSContactsUsageDescription](../bundleresources/information-property-list/nscontactsusagedescription.md)
   A message that tells people why the app is requesting access to their contacts.
-- [com.apple.developer.contacts.notes](../BundleResources/Entitlements/com.apple.developer.contacts.notes.md)
+- [com.apple.developer.contacts.notes](../bundleresources/entitlements/com.apple.developer.contacts.notes.md)
   A Boolean value that indicates whether the app may access the notes in contact entries.
 
 

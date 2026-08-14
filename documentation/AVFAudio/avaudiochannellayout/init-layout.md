@@ -26,7 +26,7 @@ A new `AVAudioChannelLayout` object.
 
 #### Discussion
 
-If the audio channel layout object’s tag is [`kAudioChannelLayoutTag_UseChannelDescriptions`](https://developer.apple.com/documentation/CoreAudioTypes/kAudioChannelLayoutTag_UseChannelDescriptions), this initializer attempts to convert it to a more specific tag.
+If the audio channel layout object’s tag is [`kAudioChannelLayoutTag_UseChannelDescriptions`](https://developer.apple.com/documentation/coreaudiotypes/kaudiochannellayouttag_usechanneldescriptions), this initializer attempts to convert it to a more specific tag.
 
 ## Parameters
 

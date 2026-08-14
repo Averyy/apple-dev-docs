@@ -18,7 +18,7 @@ case helpButton
 
 A help button appears within a view and opens app-specific help documentation.
 
-![A screenshot displaying a voice over dialog. The main content of the dialog explains what voice over is. In the lower right corner of the dialog there is a help button.](https://docs-assets.developer.apple.com/published/9a92b8ea6d213e3336ff2b162b87043e/media-4306763%402x.png)
+![A screenshot displaying a voice over dialog. The main content of the dialog explains what voice over is. In the lower right corner of the dialog there is a help button.](/images/com.apple.appkit/media-4306763@2x.png)
 
 These are circular, consistently sized buttons that contain a question mark.
 

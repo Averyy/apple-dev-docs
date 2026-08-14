@@ -22,7 +22,7 @@ class UIEventAttributionView
 
 Web AdAttributionKit (formerly known as Private Click Measurement, or PCM) is a proposed web standard that allows external websites to measure when external links, such as ads, result in a *conversion*. The external website decides what constitutes a conversion, but it’s often the result of the user making a purchase or signing up for a service. Web AdAttributionKit doesn’t send any user-identifiable information to the remote server, so it protects user privacy, while providing websites the ability to measure the effectiveness of their ad campaigns.
 
-Apps running in iOS 17.4 or later can use [`AdAttributionKit`](https://developer.apple.com/documentation/AdAttributionKit) to record click-through impressions on custom rendered ad content using a `UIEventAttributionView`. For more information about click-through in AdAttributionKit, see [`Presenting ads in your app`](https://developer.apple.com/documentation/AdAttributionKit/presenting-ads-in-your-app).
+Apps running in iOS 17.4 or later can use [`AdAttributionKit`](https://developer.apple.com/documentation/adattributionkit) to record click-through impressions on custom rendered ad content using a `UIEventAttributionView`. For more information about click-through in AdAttributionKit, see [`Presenting ads in your app`](https://developer.apple.com/documentation/adattributionkit/presenting-ads-in-your-app).
 
 Apps running in iOS 14.5 or later can take advantage of Web AdAttributionKit by sending event attribution data to the browser when opening an external link. If the linked website reports a conversion within 7 days, the browser forwards your appʼs Web AdAttributionKit data to a specified remote server sometime between 24 and 48 hours after the reported conversion.
 
@@ -85,19 +85,19 @@ For more information on sending Web AdAttributionKit event attribution data to t
 ### Inherits From
 - [UIView](uiview.md)
 ### Conforms To
-- [CALayerDelegate](../QuartzCore/CALayerDelegate.md)
-- [CLBodyIdentifiable](../CoreLocation/CLBodyIdentifiable.md)
-- [CMBodyIdentifiable](../CoreMotion/CMBodyIdentifiable.md)
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCoding](../Foundation/NSCoding.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [NSTouchBarProvider](../AppKit/NSTouchBarProvider.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [CALayerDelegate](../quartzcore/calayerdelegate.md)
+- [CLBodyIdentifiable](../corelocation/clbodyidentifiable.md)
+- [CMBodyIdentifiable](../coremotion/cmbodyidentifiable.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCoding](../foundation/nscoding.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSTouchBarProvider](../appkit/nstouchbarprovider.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 - [UIAccessibilityIdentification](uiaccessibilityidentification.md)
 - [UIActivityItemsConfigurationProviding](uiactivityitemsconfigurationproviding.md)
 - [UIAppearance](uiappearance.md)
@@ -119,7 +119,7 @@ For more information on sending Web AdAttributionKit event attribution data to t
 
 - [class UIEventAttribution](uieventattribution.md)
   An object that contains event attribution information for Web AdAttributionKit.
-- [NSAdvertisingAttributionReportEndpoint](../BundleResources/Information-Property-List/NSAdvertisingAttributionReportEndpoint.md)
+- [NSAdvertisingAttributionReportEndpoint](../bundleresources/information-property-list/nsadvertisingattributionreportendpoint.md)
   The URL where Private Click Measurement and SKAdNetwork send attribution information.
 
 

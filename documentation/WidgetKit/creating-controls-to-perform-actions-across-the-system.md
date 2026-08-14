@@ -10,7 +10,7 @@ A control allows your app to execute an action, launch your app to a specific vi
 
 Controls can be buttons or toggles: buttons perform an action, and toggles perform an action and switch between two states. Configure a control using SwiftUI views and modifiers that define strings and icons that the system uses to display the control. Anticipate people using controls from different places throughout the system, and provide appropriate configuration details for the best experience. For added privacy, require device authentication before a control performs its action, as well as redact the text in a control when the device is locked.
 
-Create your control’s icon using a symbol image, such as one from [`SF Symbols`](https://developer.apple.com/design/Human-Interface-Guidelines/sf-symbols). Using symbols allows the system to dynamically apply tint color, weight, scale, and other stylistic traits. While Apple platforms include thousands of symbols, you can also build custom symbols. To learn more, read [`Creating custom symbol images for your app`](https://developer.apple.com/documentation/UIKit/creating-custom-symbol-images-for-your-app).
+Create your control’s icon using a symbol image, such as one from [`SF Symbols`](https://developer.apple.com/design/human-interface-guidelines/sf-symbols). Using symbols allows the system to dynamically apply tint color, weight, scale, and other stylistic traits. While Apple platforms include thousands of symbols, you can also build custom symbols. To learn more, read [`Creating custom symbol images for your app`](https://developer.apple.com/documentation/uikit/creating-custom-symbol-images-for-your-app).
 
 Make controls configurable to allow someone to choose what it does. This ability is helpful in cases where a control can be configured with a list of options, such as which light to turn on or off.
 
@@ -20,9 +20,9 @@ The system loads a control when someone adds it to a system space from the contr
 
 Controls provide their values to the system using a [`ControlValueProvider`](controlvalueprovider.md) or an [`AppIntentControlValueProvider`](appintentcontrolvalueprovider.md). Providers require two functions: [`previewValue`](controlvalueprovider/previewvalue.md) and [`currentValue()`](controlvalueprovider/currentvalue().md). `previewValue` prepares a canned synchronous value to show people when the control displays in the controls gallery. The controls gallery displays controls using their preview value and in their inactive state. The system fetches the `currentValue()` when the control renders. The system fetches this value asynchronously, and gives you the opportunity to fetch the value from a shared data source or a server. Use a custom intent with `AppIntentControlValueProvider` to provide options for a configurable control.
 
-When someone interacts with a control, it performs its action using an app intent you specify. Use [`AppIntent`](https://developer.apple.com/documentation/AppIntents/AppIntent) or [`OpenIntent`](https://developer.apple.com/documentation/AppIntents/OpenIntent) for control buttons and [`SetValueIntent`](https://developer.apple.com/documentation/AppIntents/SetValueIntent) for control toggles. The app intent requires a [`perform()`](https://developer.apple.com/documentation/AppIntents/AppIntent/perform()) function  in which you carry out actions. The system queries for the state of a control when `perform()` returns; finish all actions and save all state data before it returns.
+When someone interacts with a control, it performs its action using an app intent you specify. Use [`AppIntent`](https://developer.apple.com/documentation/appintents/appintent) or [`OpenIntent`](https://developer.apple.com/documentation/appintents/openintent) for control buttons and [`SetValueIntent`](https://developer.apple.com/documentation/appintents/setvalueintent) for control toggles. The app intent requires a [`perform()`](https://developer.apple.com/documentation/appintents/appintent/perform()) function  in which you carry out actions. The system queries for the state of a control when `perform()` returns; finish all actions and save all state data before it returns.
 
-You may pass additional data into the app intent to ensure it successfully performs its action. The system preserves the data and makes it available in the `perform()` function inside the app intent. Annotate additional data you pass in with `@Parameter`. For more information on `AppIntent`, refer to [`AppIntent`](https://developer.apple.com/documentation/AppIntents/AppIntent).
+You may pass additional data into the app intent to ensure it successfully performs its action. The system preserves the data and makes it available in the `perform()` function inside the app intent. Annotate additional data you pass in with `@Parameter`. For more information on `AppIntent`, refer to [`AppIntent`](https://developer.apple.com/documentation/appintents/appintent).
 
 The system populates the value parameter of a `SetValueIntent` with the value that reflects the new state of the control toggle. Don’t set or manage the value parameter. Update the internal state or model data to this value to remain consistent with the appearance of the control.
 
@@ -36,9 +36,9 @@ The Widget Extension template provides all you need to start building your contr
 4. Select the Include Control checkbox.
 5. Click Finish.
 
-> **Note**: Live Activities use WidgetKit and share many aspects of their design and implementation with the widgets in your app. If your app would benefit from Live Activities, consider implementing them at the same time you add controls or widgets. For more information about Live Activities, read [`Displaying live data with Live Activities`](https://developer.apple.com/documentation/ActivityKit/displaying-live-data-with-live-activities).
+> **Note**: Live Activities use WidgetKit and share many aspects of their design and implementation with the widgets in your app. If your app would benefit from Live Activities, consider implementing them at the same time you add controls or widgets. For more information about Live Activities, read [`Displaying live data with Live Activities`](https://developer.apple.com/documentation/activitykit/displaying-live-data-with-live-activities).
 
-The widget extension template provides an initial implementation of a `ControlWidgetToggle`, a [`ControlWidgetTemplate`](https://developer.apple.com/documentation/SwiftUI/ControlWidgetTemplate) type that starts and stops a timer. The body property determines if a control is static or configurable. Controls use a [`StaticControlConfiguration`](staticcontrolconfiguration.md) for the body property by default. Provide people with the ability to configure a control by using [`AppIntentControlConfiguration`](appintentcontrolconfiguration.md).
+The widget extension template provides an initial implementation of a `ControlWidgetToggle`, a [`ControlWidgetTemplate`](https://developer.apple.com/documentation/swiftui/controlwidgettemplate) type that starts and stops a timer. The body property determines if a control is static or configurable. Controls use a [`StaticControlConfiguration`](staticcontrolconfiguration.md) for the body property by default. Provide people with the ability to configure a control by using [`AppIntentControlConfiguration`](appintentcontrolconfiguration.md).
 
 The following code creates a nonconfigurable control toggle that starts and stops a timer. The `kind` is the control’s unique identifier and the action of the `ControlWidgetToggle` executes the app intent specified:
 
@@ -124,7 +124,7 @@ struct PerformAction: AppIntent {
 
 ##### Open Your App with a Control
 
-Set your control’s action to an app intent that conforms to [`OpenIntent`](https://developer.apple.com/documentation/AppIntents/OpenIntent) to open your app when someone uses a control. Using `OpenIntent` allows you to take someone to a specific area of your app when a control performs its action.
+Set your control’s action to an app intent that conforms to [`OpenIntent`](https://developer.apple.com/documentation/appintents/openintent) to open your app when someone uses a control. Using `OpenIntent` allows you to take someone to a specific area of your app when a control performs its action.
 
 The system requires the Target Membership of the app intent to be set to both the app and the widget extension to open the app.
 
@@ -151,11 +151,11 @@ enum LaunchAppEnum: String, AppEnum {
 }
 ```
 
-> **Note**: Use a control button to launch a locked camera capture extension. For more information about creating a locked camera capture extension, refer to [`Creating a camera experience for the Lock Screen`](https://developer.apple.com/documentation/LockedCameraCapture/Creating-a-camera-experience-for-the-Lock-Screen).
+> **Note**: Use a control button to launch a locked camera capture extension. For more information about creating a locked camera capture extension, refer to [`Creating a camera experience for the Lock Screen`](https://developer.apple.com/documentation/lockedcameracapture/creating-a-camera-experience-for-the-lock-screen).
 
 ##### Add Controls to Your Widget Bundle
 
-The [`WidgetBundle`](https://developer.apple.com/documentation/SwiftUI/WidgetBundle) in the Widget extension provides controls and widgets to the system from your app. List all controls and widgets inside the `WidgetBundle`. The order of controls and widgets in the `WidgetBundle` defines their order in the controls gallery and the widgets gallery.
+The [`WidgetBundle`](https://developer.apple.com/documentation/swiftui/widgetbundle) in the Widget extension provides controls and widgets to the system from your app. List all controls and widgets inside the `WidgetBundle`. The order of controls and widgets in the `WidgetBundle` defines their order in the controls gallery and the widgets gallery.
 
 ```swift
 @main

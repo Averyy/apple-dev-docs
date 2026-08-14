@@ -25,7 +25,7 @@ static var trailingFirstTextBaseline: Alignment { get }
 
 This alignment combines the [`trailing`](horizontalalignment/trailing.md) horizontal guide and the [`firstTextBaseline`](verticalalignment/firsttextbaseline.md) vertical guide:
 
-![A square that’s divided into four equal quadrants. The upper-](https://docs-assets.developer.apple.com/published/ccfc71c24422a0e90fe176b50e73bae0/Alignment-trailingFirstTextBaseline-1-iOS%402x.png)
+![A square that’s divided into four equal quadrants. The upper-](/images/com.apple.SwiftUI/Alignment-trailingFirstTextBaseline-1-iOS@2x.png)
 
 ## See Also
 

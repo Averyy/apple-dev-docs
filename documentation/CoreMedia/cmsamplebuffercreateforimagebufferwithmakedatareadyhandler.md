@@ -22,7 +22,7 @@ func CMSampleBufferCreateForImageBufferWithMakeDataReadyHandler(_ allocator: CFA
 
 ## Parameters
 
-- `allocator`: The allocator to use to create a sample buffer object. Pass [`kCFAllocatorDefault`](https://developer.apple.com/documentation/CoreFoundation/kCFAllocatorDefault) to use the default allocator.
+- `allocator`: The allocator to use to create a sample buffer object. Pass [`kCFAllocatorDefault`](https://developer.apple.com/documentation/corefoundation/kcfallocatordefault) to use the default allocator.
 - `imageBuffer`: An image buffer that contains the media data. Must not be `NULL`.
 - `dataReady`: A Boolean value that indicates whether the buffer already contains the data.
 - `formatDescription`: A description of the media data’s format. Must not be `NULL`.

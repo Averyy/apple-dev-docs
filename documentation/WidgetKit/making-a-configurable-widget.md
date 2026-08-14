@@ -10,11 +10,11 @@ To make the most relevant information easily accessible to people, widgets can p
 
 To add configurable properties to your widget:
 
-1. Add custom app intent types that conform to [`WidgetConfigurationIntent`](https://developer.apple.com/documentation/AppIntents/WidgetConfigurationIntent) to define the configurable properties to your Xcode project.
+1. Add custom app intent types that conform to [`WidgetConfigurationIntent`](https://developer.apple.com/documentation/appintents/widgetconfigurationintent) to define the configurable properties to your Xcode project.
 2. Specify an [`AppIntentTimelineProvider`](appintenttimelineprovider.md) as your widget’s timeline provider to incorporate the person’s choices into your timeline entries.
 3. Add code to your custom app intent types to provide the data if their properties rely on dynamic data.
 
-If your app already supports Siri Suggestions or Siri Shortcuts and you have a custom app intent, you’ve probably done most of the work already. Otherwise, consider leveraging the work you do for your widget to add support for Siri Suggestions or Siri Shortcuts. For more information on how to get the most from app intents, see [`App Intents`](https://developer.apple.com/documentation/AppIntents).
+If your app already supports Siri Suggestions or Siri Shortcuts and you have a custom app intent, you’ve probably done most of the work already. Otherwise, consider leveraging the work you do for your widget to add support for Siri Suggestions or Siri Shortcuts. For more information on how to get the most from app intents, see [`App Intents`](https://developer.apple.com/documentation/appintents).
 
 > **Note**: Prior to iOS 17, iPadOS 17, and macOS 14, configurable widgets used SiriKit Intents. For information on migrating your configurable widgets from the SiriKit Intents to the App Intents framework, see [`Migrating widgets from SiriKit Intents to App Intents`](migrating-from-sirikit-intents-to-app-intents.md).
 
@@ -41,11 +41,11 @@ struct SelectCharacterIntent: WidgetConfigurationIntent {
 
 The static `title` property describes the action the intent enables the person to take. Use a title case string that combines a verb with a noun. Set the static `description` to a human-readable string that describes the intent.
 
-To add parameters to the intent, add one or more `@Parameter` property wrappers. WidgetKit uses the parameter type information to automatically create the user interface for editing the widget. For example, if the type is [`String`](https://developer.apple.com/documentation/Swift/String), the person enters a string value. If the type is an [`Int`](https://developer.apple.com/documentation/Swift/Int), they use a number pad. For a parameter that is a predefined, static, list of values, define a custom type that conforms to [`AppEnum`](https://developer.apple.com/documentation/AppIntents/AppEnum).
+To add parameters to the intent, add one or more `@Parameter` property wrappers. WidgetKit uses the parameter type information to automatically create the user interface for editing the widget. For example, if the type is [`String`](https://developer.apple.com/documentation/swift/string), the person enters a string value. If the type is an [`Int`](https://developer.apple.com/documentation/swift/int), they use a number pad. For a parameter that is a predefined, static, list of values, define a custom type that conforms to [`AppEnum`](https://developer.apple.com/documentation/appintents/appenum).
 
 > **Note**: The order of the parameters in the intent determines the order in which they appear when a person edits your widget.
 
-In the example above, the parameter uses a custom `CharacterDetail` type the app defines to represent a character in the game. To use a custom type as an app intent parameter, it must conform to [`AppEntity`](https://developer.apple.com/documentation/AppIntents/AppEntity). To implement the `CharacterDetail` parameter type, the game-status widget uses a structure that exists in the game’s project. This structure defines a list of available characters and their details, as follows:
+In the example above, the parameter uses a custom `CharacterDetail` type the app defines to represent a character in the game. To use a custom type as an app intent parameter, it must conform to [`AppEntity`](https://developer.apple.com/documentation/appintents/appentity). To implement the `CharacterDetail` parameter type, the game-status widget uses a structure that exists in the game’s project. This structure defines a list of available characters and their details, as follows:
 
 ```swift
 struct CharacterDetail: AppEntity {
@@ -85,13 +85,13 @@ For custom intents with parameters that conform to `AppEntity`, implement initia
 
 ##### Implement a Query to Provide Dynamic Values
 
-Some of the tasks that an [`EntityQuery`](https://developer.apple.com/documentation/AppIntents/EntityQuery) performs include:
+Some of the tasks that an [`EntityQuery`](https://developer.apple.com/documentation/appintents/entityquery) performs include:
 
 - Mapping `AppEntity` identifiers to the corresponding entity instances.
 - Providing a list of suggested values when a person edits a widget.
 - Specifying a default value for a parameter.
 
-When a person edits a widget with a custom intent that provides dynamic values, the system invokes the query object’s [`suggestedEntities()`](https://developer.apple.com/documentation/AppIntents/EntityQuery/suggestedEntities()) method to get the list of possible choices.
+When a person edits a widget with a custom intent that provides dynamic values, the system invokes the query object’s [`suggestedEntities()`](https://developer.apple.com/documentation/appintents/entityquery/suggestedentities()) method to get the list of possible choices.
 
 In the entity query, the result is an array of all the `CharacterDetail` types available.
 
@@ -156,7 +156,7 @@ When you include the customized values in the timeline entry, your widget’s vi
 
 ##### Access Customized Values in Your App
 
-When a person taps on a widget to open your app, WidgetKit passes the customized intent to your app in an [`NSUserActivity`](https://developer.apple.com/documentation/Foundation/NSUserActivity). In your app’s code that handles the user activity, such as [`onContinueUserActivity(_:perform:)`](https://developer.apple.com/documentation/SwiftUI/View/onContinueUserActivity(_:perform:)) for a SwiftUI app or [`scene(_:continue:)`](https://developer.apple.com/documentation/UIKit/UISceneDelegate/scene(_:continue:)) for a UIKit app, use the [`widgetConfigurationIntent(of:)`](https://developer.apple.com/documentation/Foundation/NSUserActivity/widgetConfigurationIntent(of:)) method to access the widget’s intent.
+When a person taps on a widget to open your app, WidgetKit passes the customized intent to your app in an [`NSUserActivity`](https://developer.apple.com/documentation/foundation/nsuseractivity). In your app’s code that handles the user activity, such as [`onContinueUserActivity(_:perform:)`](https://developer.apple.com/documentation/swiftui/view/oncontinueuseractivity(_:perform:)) for a SwiftUI app or [`scene(_:continue:)`](https://developer.apple.com/documentation/uikit/uiscenedelegate/scene(_:continue:)) for a UIKit app, use the [`widgetConfigurationIntent(of:)`](https://developer.apple.com/documentation/foundation/nsuseractivity/widgetconfigurationintent(of:)) method to access the widget’s intent.
 
 To access the intent of any widget that the user has installed, use [`getCurrentConfigurations(_:)`](widgetcenter/getcurrentconfigurations(_:).md) to fetch the [`WidgetInfo`](widgetinfo.md) objects. Iterate over the `WidgetInfo` objects and call [`widgetConfigurationIntent(of:)`](widgetinfo/widgetconfigurationintent(of:).md).
 

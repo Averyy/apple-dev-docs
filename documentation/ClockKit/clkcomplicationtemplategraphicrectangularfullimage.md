@@ -18,9 +18,9 @@ class CLKComplicationTemplateGraphicRectangularFullImage
 
 This template belongs to the [`CLKComplicationFamily.graphicRectangular`](clkcomplicationfamily/graphicrectangular.md) family.
 
-![A diagram of a graphic rectangular full complication. The diagram shows an image of the moon filling the complication.](https://docs-assets.developer.apple.com/published/b75dd3557d6469f77b521a44992cf30f/media-3905732%402x.png)
+![A diagram of a graphic rectangular full complication. The diagram shows an image of the moon filling the complication.](/images/com.apple.clockkit/media-3905732@2x.png)
 
-The table below lists the dimensions of the image you use in this template. Use images with a [`scale`](https://developer.apple.com/documentation/UIKit/UIImage/scale) of `2.0` for display on Apple Watch so the point-based dimensions are half the listed size.
+The table below lists the dimensions of the image you use in this template. Use images with a [`scale`](https://developer.apple.com/documentation/uikit/uiimage/scale) of `2.0` for display on Apple Watch so the point-based dimensions are half the listed size.
 
 | Apple Watch Size | Width | Height |
 | --- | --- | --- |
@@ -47,13 +47,13 @@ Instead of providing multiple images with different resolutions, you can provide
 ### Inherits From
 - [CLKComplicationTemplate](clkcomplicationtemplate.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCopying](../Foundation/NSCopying.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCopying](../foundation/nscopying.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

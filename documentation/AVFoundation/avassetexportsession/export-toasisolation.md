@@ -26,11 +26,11 @@ This method throws an error if you cancel the export or you specify a file type 
 
 You can monitor the status of an export by calling the [`states(updateInterval:)`](avassetexportsession/states(updateinterval:).md) method.
 
-> **Note**:  You can cancel an in-progress export by calling [`cancel()`](https://developer.apple.com/documentation/Swift/Task/cancel()) on the [`Task`](https://developer.apple.com/documentation/Swift/Task) or parent task that initiated the operation.
+> **Note**:  You can cancel an in-progress export by calling [`cancel()`](https://developer.apple.com/documentation/swift/task/cancel()) on the [`Task`](https://developer.apple.com/documentation/swift/task) or parent task that initiated the operation.
 
 ## Parameters
 
-- `url`: An output location to write the exported media. You can use the [`preferredFilenameExtension`](https://developer.apple.com/documentation/UniformTypeIdentifiers/UTType-swift.struct/preferredFilenameExtension) property of [`UTType`](https://developer.apple.com/documentation/UniformTypeIdentifiers/UTType-swift.struct) to determine an appropriate file extension for the specified file type.
+- `url`: An output location to write the exported media. You can use the [`preferredFilenameExtension`](https://developer.apple.com/documentation/uniformtypeidentifiers/uttype-swift.struct/preferredfilenameextension) property of [`UTType`](https://developer.apple.com/documentation/uniformtypeidentifiers/uttype-swift.struct) to determine an appropriate file extension for the specified file type.
 - `fileType`: The type of file for the session to write.
 - `isolation`: The isolation context.
 

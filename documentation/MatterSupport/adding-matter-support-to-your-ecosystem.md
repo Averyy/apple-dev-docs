@@ -10,7 +10,7 @@ With the MatterSupport framework, you can administer, add, and configure Matter 
 
 ##### Configure Discovery
 
-Add the following to your app’s `Info.plist` so it can discover Matter-related services. See [`NSBonjourServices`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSBonjourServices) for more information.
+Add the following to your app’s `Info.plist` so it can discover Matter-related services. See [`NSBonjourServices`](https://developer.apple.com/documentation/bundleresources/information-property-list/nsbonjourservices) for more information.
 
 ```None
 <key>NSBonjourServices</key>
@@ -39,7 +39,7 @@ Use the newly created topology object to create a request to add a device.
 let request = MatterAddDeviceRequest(topology: topology)
 ```
 
-You can optionally provide the Matter setup code programmatically while setting up a Matter device in an ecosystem. To do this, pass a string containing the payload information from the device’s packaging, such as a QR code. For more information on when this is appropriate, see [`Matter Allow Setup Payload`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.matter.allow-setup-payload).
+You can optionally provide the Matter setup code programmatically while setting up a Matter device in an ecosystem. To do this, pass a string containing the payload information from the device’s packaging, such as a QR code. For more information on when this is appropriate, see [`Matter Allow Setup Payload`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.matter.allow-setup-payload).
 
 ```swift
 // Provide the Matter setup code programmatically.
@@ -195,7 +195,7 @@ class MyMatterAddDeviceExtensionRequestHandler: MatterAddDeviceExtensionRequestH
 
 ##### Set the Principal Class
 
-Register the subclass you created above in the app’s `Info.plist` as the [`NSPrincipalClass`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSPrincipalClass) for the `com.apple.matter.support.extension.device-setup` extension point identifier.
+Register the subclass you created above in the app’s `Info.plist` as the [`NSPrincipalClass`](https://developer.apple.com/documentation/bundleresources/information-property-list/nsprincipalclass) for the `com.apple.matter.support.extension.device-setup` extension point identifier.
 
 ```None
 <key>NSExtension</key>

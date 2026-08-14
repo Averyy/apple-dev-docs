@@ -22,7 +22,7 @@ func dispatchMain() -> Never
 
 #### Discussion
 
-This function “parks” the main thread and waits for blocks to be submitted to the main queue. Applications that call [`UIApplicationMain(_:_:_:_:)`](https://developer.apple.com/documentation/UIKit/UIApplicationMain(_:_:_:_:)-1yub7) (iOS), [`NSApplicationMain(_:_:)`](https://developer.apple.com/documentation/AppKit/NSApplicationMain(_:_:)) (macOS), or [`CFRunLoopRun()`](https://developer.apple.com/documentation/CoreFoundation/CFRunLoopRun()) on the main thread must not call [`dispatchMain()`](dispatchmain().md).
+This function “parks” the main thread and waits for blocks to be submitted to the main queue. Applications that call [`UIApplicationMain(_:_:_:_:)`](https://developer.apple.com/documentation/uikit/uiapplicationmain(_:_:_:_:)-1yub7) (iOS), [`NSApplicationMain(_:_:)`](https://developer.apple.com/documentation/appkit/nsapplicationmain(_:_:)) (macOS), or [`CFRunLoopRun()`](https://developer.apple.com/documentation/corefoundation/cfrunlooprun()) on the main thread must not call [`dispatchMain()`](dispatchmain().md).
 
 This function never returns.
 

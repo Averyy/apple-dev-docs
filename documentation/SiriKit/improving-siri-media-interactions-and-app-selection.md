@@ -22,7 +22,7 @@ Use [`INPlayMediaIntent`](https://developer.apple.com/documentation/intents/inpl
 
 Tell the system what types of media your app supports in Xcode’s Project editor. In the Supported Intents section of the Project editor, select each Media Category that describes your app’s content. Select `General` if your app plays media that doesn’t fit any of the other categories, like spooky sound effects or white noise. To opt in to Siri media control, you must choose at least one category for your app. With the settings shown here, users can say “Play some music in ControlAudio” to play music in the ControlAudio app. When App Selection is available, they can simply say “Play some music” and Siri intelligently picks the user’s preferred music app with App Selection.
 
-![A screenshot of Xcode’s Project editor with the General pane active and the Supported Intents section expanded. The table of supported intents lists INPlayMediaIntent and INAddMediaIntent. In the Media Categories list, the checkbox for Music is selected.](https://docs-assets.developer.apple.com/published/61965f0c6d6005f3713a3045d16ab5c1/media-3670928%402x.png)
+![A screenshot of Xcode’s Project editor with the General pane active and the Supported Intents section expanded. The table of supported intents lists INPlayMediaIntent and INAddMediaIntent. In the Media Categories list, the checkbox for Music is selected.](/images/com.apple.sirikit/media-3670928@2x.png)
 
 When a user searches for a musician or band on iOS 15 or later, Spotlight may include a suggestion to start listening to content from that artist. To include your app in the list of apps available to listen on, support [`INSearchForMediaIntent`](https://developer.apple.com/documentation/intents/insearchformediaintent). If the user chooses your app from the list, or if your app is the user’s preferred music app, the system sends your app an intent so you can display content by that artist.
 
@@ -34,7 +34,7 @@ The system can also use your app’s [`INPlayMediaIntent`](https://developer.app
 
 Once you have the PlayMedia system intent in a SiriKit Intent Definition file, make sure that its list of Supported Combinations includes the entry with “mediaContainer” as the only parameter.
 
-![The Suggestions section of Xcode’s intent definition editor. In the Supported Combinations list, the item “mediaContainer” is selected.](https://docs-assets.developer.apple.com/published/68807656b0f6a3c420711706f00b6dcb/media-3686892%402x.png)
+![The Suggestions section of Xcode’s intent definition editor. In the Supported Combinations list, the item “mediaContainer” is selected.](/images/com.apple.sirikit/media-3686892@2x.png)
 
 > **Note**:  The system offers the user audio suggestions based on donations the system can play in an audio-only situation. The system excludes the following media types when generating audio suggestions: [`INMediaItemType.news`](https://developer.apple.com/documentation/intents/inmediaitemtype/news), [`INMediaItemType.musicVideo`](https://developer.apple.com/documentation/intents/inmediaitemtype/musicvideo), [`INMediaItemType.movie`](https://developer.apple.com/documentation/intents/inmediaitemtype/movie), [`INMediaItemType.tvShow`](https://developer.apple.com/documentation/intents/inmediaitemtype/tvshow), [`INMediaItemType.tvShowEpisode`](https://developer.apple.com/documentation/intents/inmediaitemtype/tvshowepisode), and [`INMediaItemType.unknown`](https://developer.apple.com/documentation/intents/inmediaitemtype/unknown).
 
@@ -59,7 +59,7 @@ context.becomeCurrent()
 
 Add metadata about playlists and individual media items from the user’s local library to the Core Spotlight database. When the user searches for the item, the system can offer to play the media in your app alongside any other search results.
 
-For Swift, choose the [`completeUntilFirstUserAuthentication`](https://developer.apple.com/documentation/Foundation/FileProtectionType/completeUntilFirstUserAuthentication) level of protection for your Spotlight database so the system can access this information even when your app isn’t running. In Objective-C, choose the [`completeUntilFirstUserAuthentication`](https://developer.apple.com/documentation/Foundation/FileProtectionType/completeUntilFirstUserAuthentication) level of protection for your Spotlight database so the system can access this information even when your app isn’t running.
+For Swift, choose the [`completeUntilFirstUserAuthentication`](https://developer.apple.com/documentation/foundation/fileprotectiontype/completeuntilfirstuserauthentication) level of protection for your Spotlight database so the system can access this information even when your app isn’t running. In Objective-C, choose the [`completeUntilFirstUserAuthentication`](https://developer.apple.com/documentation/foundation/fileprotectiontype/completeuntilfirstuserauthentication) level of protection for your Spotlight database so the system can access this information even when your app isn’t running.
 
 ```swift
 let attributes = CSSearchableItemAttributeSet(contentType: .audio)
@@ -76,7 +76,7 @@ CSSearchableIndex.default().indexSearchableItems([item]) { ... }
 
 ```
 
-> ⚠️ **Warning**:  If you need to delete items from the index, use [`deleteSearchableItems(withDomainIdentifiers:completionHandler:)`](https://developer.apple.com/documentation/CoreSpotlight/CSSearchableIndex/deleteSearchableItems(withDomainIdentifiers:completionHandler:)). Calling [`deleteAllSearchableItems(completionHandler:)`](https://developer.apple.com/documentation/CoreSpotlight/CSSearchableIndex/deleteAllSearchableItems(completionHandler:)) deletes not only the searchable items you’ve added directly to the searchable index, but also every [`INInteraction`](https://developer.apple.com/documentation/intents/ininteraction) your app has donated or Siri has donated on behalf of your app.
+> ⚠️ **Warning**:  If you need to delete items from the index, use [`deleteSearchableItems(withDomainIdentifiers:completionHandler:)`](https://developer.apple.com/documentation/corespotlight/cssearchableindex/deletesearchableitems(withdomainidentifiers:completionhandler:)). Calling [`deleteAllSearchableItems(completionHandler:)`](https://developer.apple.com/documentation/corespotlight/cssearchableindex/deleteallsearchableitems(completionhandler:)) deletes not only the searchable items you’ve added directly to the searchable index, but also every [`INInteraction`](https://developer.apple.com/documentation/intents/ininteraction) your app has donated or Siri has donated on behalf of your app.
 
 ##### Define Relevant Vocabulary
 

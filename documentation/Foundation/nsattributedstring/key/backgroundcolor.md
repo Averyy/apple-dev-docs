@@ -22,7 +22,7 @@ static let backgroundColor: NSAttributedString.Key
 
 #### Discussion
 
-The value of this attribute is a [`UIColor`](https://developer.apple.com/documentation/UIKit/UIColor) object. Use this attribute to specify the color of the background area behind the text. If you do not specify this attribute, no background color is drawn.
+The value of this attribute is a [`UIColor`](https://developer.apple.com/documentation/uikit/uicolor) object. Use this attribute to specify the color of the background area behind the text. If you do not specify this attribute, no background color is drawn.
 
 ## See Also
 

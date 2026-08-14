@@ -22,7 +22,7 @@ var label: String? { get set }
 
 #### Discussion
 
-Setting a capture scope’s label makes it easier to find in Xcode. See [`Creating and using custom capture scopes`](https://developer.apple.com/documentation/Xcode/Creating-and-using-custom-capture-scopes) for more information.
+Setting a capture scope’s label makes it easier to find in Xcode. See [`Creating and using custom capture scopes`](https://developer.apple.com/documentation/xcode/creating-and-using-custom-capture-scopes) for more information.
 
 ## See Also
 

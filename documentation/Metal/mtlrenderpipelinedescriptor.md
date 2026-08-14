@@ -41,10 +41,10 @@ If the vertex shader has an argument with per-vertex input attributes, set the [
 If a color attachment supports multisampling (essentially, the attachment is an [`MTLTextureType.type2DMultisample`](mtltexturetype/type2dmultisample.md) type color texture), you can create multiple samples per fragment, and the following rendering pipeline descriptor properties determine coverage:
 
 - [`rasterSampleCount`](mtlrenderpipelinedescriptor/rastersamplecount.md) is the number of samples for each pixel.
-- If [`isAlphaToCoverageEnabled`](mtlrenderpipelinedescriptor/isalphatocoverageenabled.md) is [`true`](https://developer.apple.com/documentation/Swift/true), the GPU uses the alpha channel fragment output for [`colorAttachments`](mtlrenderpipelinedescriptor/colorattachments.md) to compute a coverage mask that affects the values the GPU writes to all attachments (color, depth, and stencil).
-- If [`isAlphaToOneEnabled`](mtlrenderpipelinedescriptor/isalphatooneenabled.md) is [`true`](https://developer.apple.com/documentation/Swift/true), the GPU changes alpha channel fragment values for [`colorAttachments`](mtlrenderpipelinedescriptor/colorattachments.md) to `1.0`, which is the largest representable value.
+- If [`isAlphaToCoverageEnabled`](mtlrenderpipelinedescriptor/isalphatocoverageenabled.md) is [`true`](https://developer.apple.com/documentation/swift/true), the GPU uses the alpha channel fragment output for [`colorAttachments`](mtlrenderpipelinedescriptor/colorattachments.md) to compute a coverage mask that affects the values the GPU writes to all attachments (color, depth, and stencil).
+- If [`isAlphaToOneEnabled`](mtlrenderpipelinedescriptor/isalphatooneenabled.md) is [`true`](https://developer.apple.com/documentation/swift/true), the GPU changes alpha channel fragment values for [`colorAttachments`](mtlrenderpipelinedescriptor/colorattachments.md) to `1.0`, which is the largest representable value.
 
-If [`isAlphaToCoverageEnabled`](mtlrenderpipelinedescriptor/isalphatocoverageenabled.md) is [`true`](https://developer.apple.com/documentation/Swift/true), an implementation-defined `coverageToMask` function uses the alpha channel fragment output from [`colorAttachments`](mtlrenderpipelinedescriptor/colorattachments.md) to create an intermediate coverage mask, which sets a number of bits in its output proportionally to the value of the floating-point input. For example, if the input is `0.0f`, the function sets the output to `0x0`. If the input is `1.0f`, the function sets all output bits (in effect, `~0x0`). If the input is `0.5f`, the function sets half of the bits, according to the implementation, which often uses dither patterns.
+If [`isAlphaToCoverageEnabled`](mtlrenderpipelinedescriptor/isalphatocoverageenabled.md) is [`true`](https://developer.apple.com/documentation/swift/true), an implementation-defined `coverageToMask` function uses the alpha channel fragment output from [`colorAttachments`](mtlrenderpipelinedescriptor/colorattachments.md) to create an intermediate coverage mask, which sets a number of bits in its output proportionally to the value of the floating-point input. For example, if the input is `0.0f`, the function sets the output to `0x0`. If the input is `1.0f`, the function sets all output bits (in effect, `~0x0`). If the input is `0.5f`, the function sets half of the bits, according to the implementation, which often uses dither patterns.
 
 To determine a final coverage mask, the function performs a logical `AND` on the resulting coverage mask `alphaCoverageMask` with the masks from the rasterizer and fragment shader, as the following code shows:
 
@@ -154,15 +154,15 @@ finalCoverageMask = originalRasterizerCoverageMask
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCopying](../Foundation/NSCopying.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCopying](../foundation/nscopying.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

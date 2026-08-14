@@ -11,7 +11,7 @@ macOS implements the BSD Packet Filter mechanism. This has two expected use case
 - As an implementation detail of various system services built-in to macOS
 - As an advanced feature for users, site admins, and so on
 
-It is not considered API.  Do not use Packet Filter in a software product that you distribute to a wide audience.  If you’re currently shipping software that relies on Packet Filter, plan to migrate to [`Network Extension`](https://developer.apple.com/documentation/NetworkExtension).
+It is not considered API.  Do not use Packet Filter in a software product that you distribute to a wide audience.  If you’re currently shipping software that relies on Packet Filter, plan to migrate to [`Network Extension`](https://developer.apple.com/documentation/networkextension).
 
 #### Packet Filter Fundamentals
 
@@ -30,13 +30,13 @@ PF implements rule-based filtering.  These rules are manipulated by various syst
 
 #### Moving Off Packet Filter
 
-If you’re currently shipping a product based on PF, plan to migrate it to a supported API.  In most cases that means creating a [`Network Extension`](https://developer.apple.com/documentation/NetworkExtension) provider:
+If you’re currently shipping a product based on PF, plan to migrate it to a supported API.  In most cases that means creating a [`Network Extension`](https://developer.apple.com/documentation/networkextension) provider:
 
-- If your product is a VPN, create either a [`Packet tunnel provider`](https://developer.apple.com/documentation/NetworkExtension/packet-tunnel-provider) or [`App proxy provider`](https://developer.apple.com/documentation/NetworkExtension/app-proxy-provider) provider.
-- If your product looks at, and potentially blocks, TCP connections or UDP flows, create a [`Content filter providers`](https://developer.apple.com/documentation/NetworkExtension/content-filter-providers).
-- If your product looks at, and potentially blocks, network packets, create a [`Content filter providers`](https://developer.apple.com/documentation/NetworkExtension/content-filter-providers).
-- If your product wants to intercept DNS queries, create a [`DNS proxy provider`](https://developer.apple.com/documentation/NetworkExtension/dns-proxy-provider).
-- If none of these providers meet your specific needs, create a [`NETransparentProxyProvider`](https://developer.apple.com/documentation/NetworkExtension/NETransparentProxyProvider).
+- If your product is a VPN, create either a [`Packet tunnel provider`](https://developer.apple.com/documentation/networkextension/packet-tunnel-provider) or [`App proxy provider`](https://developer.apple.com/documentation/networkextension/app-proxy-provider) provider.
+- If your product looks at, and potentially blocks, TCP connections or UDP flows, create a [`Content filter providers`](https://developer.apple.com/documentation/networkextension/content-filter-providers).
+- If your product looks at, and potentially blocks, network packets, create a [`Content filter providers`](https://developer.apple.com/documentation/networkextension/content-filter-providers).
+- If your product wants to intercept DNS queries, create a [`DNS proxy provider`](https://developer.apple.com/documentation/networkextension/dns-proxy-provider).
+- If none of these providers meet your specific needs, create a [`NETransparentProxyProvider`](https://developer.apple.com/documentation/networkextension/netransparentproxyprovider).
 
 For information about packaging and OS version constraints, see [`TN3134: Network Extension provider deployment`](tn3134-network-extension-provider-deployment.md).
 

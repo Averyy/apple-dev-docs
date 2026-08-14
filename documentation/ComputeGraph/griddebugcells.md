@@ -15,7 +15,7 @@ void gridDebugCells(pointer<uniform_grid_t> grid)
 
 #### Discussion
 
-> **Note**: ![Graph](https://docs-assets.developer.apple.com/published/88c6fba1dd6c4e706e23ee8ec01fe719/gridDebugCells.svg)
+> **Note**: ![Graph](/images/com.apple.computegraph/gridDebugCells.svg)
 
 
 ---

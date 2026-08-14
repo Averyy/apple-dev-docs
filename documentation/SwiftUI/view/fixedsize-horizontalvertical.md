@@ -38,7 +38,7 @@ Text("A single line of text, too long to fit in a box.")
 
 This can result in the view exceeding the parent’s bounds, which may or may not be the effect you want.
 
-![A screenshot showing a text view exceeding the bounds of its](https://docs-assets.developer.apple.com/published/39fd04b5cd61b452f33e4b492d96759c/SwiftUI-View-fixedSize-3%402x.png)
+![A screenshot showing a text view exceeding the bounds of its](/images/com.apple.SwiftUI/SwiftUI-View-fixedSize-3@2x.png)
 
 ## Parameters
 

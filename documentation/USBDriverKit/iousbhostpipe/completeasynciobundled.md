@@ -16,13 +16,13 @@ virtual void CompleteAsyncIOBundled(OSAction *action, uint32_t ioCompletionIndex
 
 #### Discussion
 
-Implement a custom version of this method and use the [`TYPE`](https://developer.apple.com/documentation/DriverKit/TYPE) macro to let the system know that your method conforms to this prototype.
+Implement a custom version of this method and use the [`TYPE`](https://developer.apple.com/documentation/driverkit/type) macro to let the system know that your method conforms to this prototype.
 
 When a call to [`AsyncIOBundled`](iousbhostpipe/asynciobundled.md) finishes, the system calls your completion method to report the number of successful transfers. The `ioCompletionCount` parameter contains the number of successful transfers, starting at position `ioCompletionIndex` in the pipe’s memory descriptor ring.  The completion count is at least 1, and no more than the value of [`kIOUSBHostPipeBundlingMax`](kiousbhostpipebundlingmax.md). The `actualByteCountArray` and `statusArray` parameters contain the length of each buffer and the status of each request.
 
 ## Parameters
 
-- `action`: A pointer to the [`OSAction`](https://developer.apple.com/documentation/DriverKit/OSAction) object of the request.
+- `action`: A pointer to the [`OSAction`](https://developer.apple.com/documentation/driverkit/osaction) object of the request.
 - `ioCompletionIndex`: The index of the first ring element that the system transferred.
 - `ioCompletionCount`: The number of successfully transferred elements.
 - `actualByteCountArray`: An array of integers, each of which contains the amount of data that the method transferred for an element. The first integer in the array contains the length of the buffer for the element at the index `ioCompletionIndex`. The next integer contains the length of the buffer for the next element in the ring, and so on.
@@ -32,8 +32,8 @@ When a call to [`AsyncIOBundled`](iousbhostpipe/asynciobundled.md) finishes, the
 
 ## See Also
 
-- [CreateMemoryDescriptorRing](IOUSBHostPipe/CreateMemoryDescriptorRing.md)
-- [SetMemoryDescriptor](IOUSBHostPipe/SetMemoryDescriptor.md)
+- [CreateMemoryDescriptorRing](iousbhostpipe/creatememorydescriptorring.md)
+- [SetMemoryDescriptor](iousbhostpipe/setmemorydescriptor.md)
 - [AsyncIOBundled](iousbhostpipe/asynciobundled.md)
   Enqueues a contiguous group of requests from the descriptor ring.
 - [Bundling Constants](bundling_constants-enum.md)

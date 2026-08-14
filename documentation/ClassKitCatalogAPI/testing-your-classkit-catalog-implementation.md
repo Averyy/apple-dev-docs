@@ -30,11 +30,11 @@ You can read and write the development environment just like the production envi
 
 After uploading content to the development environment, you can inspect the changes. On an iOS device that you use for development, with the Schoolwork app installed, go to Settings > Developer, and choose ClassKit API.
 
-![Screenshot of the Developer settings on an iPad with ClassKit API shown at the top.](https://docs-assets.developer.apple.com/published/6b5720ec71157b78655e1e00ce1af7ee/media-3671033%402x.png)
+![Screenshot of the Developer settings on an iPad with ClassKit API shown at the top.](/images/com.apple.classkitcatalogapi/media-3671033@2x.png)
 
 Then use the ClassKit Catalog Environment section to choose either the Production or Development environment.
 
-![Screenshot of the ClassKit API developer settings on an iPad.](https://docs-assets.developer.apple.com/published/0090a16cfca0e9ec6e6ca8355fd80530/media-3671032%402x.png)
+![Screenshot of the ClassKit API developer settings on an iPad.](/images/com.apple.classkitcatalogapi/media-3671032@2x.png)
 
 When you choose Development, the Schoolwork app on that device shows you data you uploaded to the development environment instead of the production environment data.
 

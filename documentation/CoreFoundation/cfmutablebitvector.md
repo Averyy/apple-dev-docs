@@ -50,8 +50,8 @@ You create a mutable bit vector object using either the [`CFBitVectorCreateMutab
 ### Inherits From
 - [CFBitVector](cfbitvector.md)
 ### Conforms To
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
 
 ## See Also
 

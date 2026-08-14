@@ -17,7 +17,7 @@ func postEvent(_ event: NSEvent, atStart flag: Bool)
 ## Parameters
 
 - `event`: The event to add to the window’s event queue.
-- `flag`: [`true`](https://developer.apple.com/documentation/Swift/true) to place the event in the front of the queue; [`false`](https://developer.apple.com/documentation/Swift/false) to place it in the back.
+- `flag`: [`true`](https://developer.apple.com/documentation/swift/true) to place the event in the front of the queue; [`false`](https://developer.apple.com/documentation/swift/false) to place it in the back.
 
 ## See Also
 

@@ -42,6 +42,7 @@ Retrieve the status of an asynchronous event.
 
 ### Response
 - [object StatusResponse](statusresponse.md)
+  The status of an asynchronous event.
 - [object ErrorResponse](errorresponse.md)
   The response that contains the error that occurs.
 

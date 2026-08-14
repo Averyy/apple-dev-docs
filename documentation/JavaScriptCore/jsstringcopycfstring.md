@@ -21,12 +21,12 @@ func JSStringCopyCFString(_ alloc: CFAllocator!, _ string: JSStringRef!) -> CFSt
 
 #### Return Value
 
-A [`CFString`](https://developer.apple.com/documentation/CoreFoundation/CFString) that contains `string`. Ownership follows [`The Create Rule`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
+A [`CFString`](https://developer.apple.com/documentation/corefoundation/cfstring) that contains `string`. Ownership follows [`The Create Rule`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 
 ## Parameters
 
 - `alloc`: The `alloc` parameter to pass to `CFStringCreate`.
-- `string`: The [`JSStringRef`](jsstringref.md) to copy into the new [`CFString`](https://developer.apple.com/documentation/CoreFoundation/CFString).
+- `string`: The [`JSStringRef`](jsstringref.md) to copy into the new [`CFString`](https://developer.apple.com/documentation/corefoundation/cfstring).
 
 ## See Also
 

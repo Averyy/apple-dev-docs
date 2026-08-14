@@ -51,7 +51,7 @@ After implementing an object that conforms to this protocol, assign that object 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 ### Inherited By
 - [UIPopoverPresentationControllerDelegate](uipopoverpresentationcontrollerdelegate.md)
 - [UISheetPresentationControllerDelegate](uisheetpresentationcontrollerdelegate.md)

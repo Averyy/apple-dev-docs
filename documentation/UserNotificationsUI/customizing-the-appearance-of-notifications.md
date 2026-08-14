@@ -8,7 +8,7 @@ Customize the appearance of your iOS app’s notification alerts with a notifica
 
 When an iOS device receives a notification containing an alert, the system displays the contents of the alert in two stages. Initially, it displays an abbreviated banner with the title, subtitle, and two to four lines of body text from the notification. If the user presses the abbreviated banner, iOS displays the full notification interface, including any notification-related actions. The system provides the interface for the abbreviated banner, but you can customize the full interface using a notification content app extension.
 
-![Screenshots showing the abbreviated banner and the full notification.](https://docs-assets.developer.apple.com/published/c8698879eaa065aeed4020fab5318b42/customizing_the_appearance_of_notifications-1%402x.png)
+![Screenshots showing the abbreviated banner and the full notification.](/images/com.apple.User-Notifications-UI/customizing_the_appearance_of_notifications-1@2x.png)
 
 The notification content app extension manages a view controller that displays your custom notification interface. This view controller can supplement or replace the default system interface for your notifications. You can use your view controller to:
 
@@ -43,7 +43,7 @@ You can add interactive controls (for example, buttons or switches) in iOS 12 an
 
 ##### Configure Your View Controller
 
-Use the [`didReceive(_:)`](unnotificationcontentextension/didreceive(_:).md) method of your view controller to update its labels and other views. The notification payload contains the data to use when configuring your view controller. You can also use data from the other files of your app extension. The code listing below shows a version of this method that retrieves the title and body text from the notification payload and assigns the strings to two [`UILabel`](https://developer.apple.com/documentation/UIKit/UILabel) controls, which are stored as outlets on the view controller.
+Use the [`didReceive(_:)`](unnotificationcontentextension/didreceive(_:).md) method of your view controller to update its labels and other views. The notification payload contains the data to use when configuring your view controller. You can also use data from the other files of your app extension. The code listing below shows a version of this method that retrieves the title and body text from the notification payload and assigns the strings to two [`UILabel`](https://developer.apple.com/documentation/uikit/uilabel) controls, which are stored as outlets on the view controller.
 
 ```swift
 func didReceive(_ notification: UNNotification) {
@@ -58,15 +58,15 @@ If a second notification arrives when your view controller is already visible, t
 
 Specify the types of notifications for which your notification content app extension provides an interface. When it receives a notification, the system matches the notification’s category value—its type—with the declared categories of any notification content app extensions in your app. If it finds a match, the system loads the corresponding app extension.
 
-In the `Info.plist` file of your notification content app extension, configure the `UNNotificationExtensionCategory` key with the category strings of the notifications that your extension supports. Category strings are identifiers contained in the [`UNNotificationCategory`](https://developer.apple.com/documentation/UserNotifications/UNNotificationCategory) objects that you register from your iOS app. You use these strings to differentiate the types of notifications that your app can receive. For example, you might include the string `MEETING_INVITE` in any notifications that indicate the arrival of a new meeting invitation. Identifier strings are case sensitive.
+In the `Info.plist` file of your notification content app extension, configure the `UNNotificationExtensionCategory` key with the category strings of the notifications that your extension supports. Category strings are identifiers contained in the [`UNNotificationCategory`](https://developer.apple.com/documentation/usernotifications/unnotificationcategory) objects that you register from your iOS app. You use these strings to differentiate the types of notifications that your app can receive. For example, you might include the string `MEETING_INVITE` in any notifications that indicate the arrival of a new meeting invitation. Identifier strings are case sensitive.
 
 The following figure shows the `Info.plist` file of a notification content app extension that supports two different notification types. Because it supports two types, the value for the `UNNotificationExtensionCategory` key consists of an array with the strings `GENERAL` and `PLANE_AVAILABLE`. If a notification with either of those types arrives, the system displays the interface from this notification content app extension.
 
-![A screenshot of the plist editor, showing the UNNotificationExtensionCategory for two notification types.](https://docs-assets.developer.apple.com/published/152e34869924e4cd1a285365566a5a97/customizing_the_appearance_of_notifications-2%402x.png)
+![A screenshot of the plist editor, showing the UNNotificationExtensionCategory for two notification types.](/images/com.apple.User-Notifications-UI/customizing_the_appearance_of_notifications-2@2x.png)
 
 > **Note**: Initially, the value of the `UNNotificationExtensionCategory` key is a string, which lets your notification content app extension support only one notification type. To support multiple types, change the type to an array of strings.
 
-For a local notification, put its category string into the [`categoryIdentifier`](https://developer.apple.com/documentation/UserNotifications/UNMutableNotificationContent/categoryIdentifier) property of your [`UNMutableNotificationContent`](https://developer.apple.com/documentation/UserNotifications/UNMutableNotificationContent) object. For a remote notification, put the string into the `category` key of your JSON payload. For information about declaring your app’s notification types, see [`Declaring your actionable notification types`](https://developer.apple.com/documentation/UserNotifications/declaring-your-actionable-notification-types).
+For a local notification, put its category string into the [`categoryIdentifier`](https://developer.apple.com/documentation/usernotifications/unmutablenotificationcontent/categoryidentifier) property of your [`UNMutableNotificationContent`](https://developer.apple.com/documentation/usernotifications/unmutablenotificationcontent) object. For a remote notification, put the string into the `category` key of your JSON payload. For information about declaring your app’s notification types, see [`Declaring your actionable notification types`](https://developer.apple.com/documentation/usernotifications/declaring-your-actionable-notification-types).
 
 For more information about the keys in your `Info.plist` file, see [`UNNotificationContentExtension`](unnotificationcontentextension.md).
 
@@ -76,7 +76,7 @@ The system displays some default information with every notification, including 
 
 For example, you might hide the default notification interface if your custom interface displays the same information. The following figure illustrates the layout of the notification interface with and without the default content.
 
-![The default interface displays a header, followed by your custom content, followed by the default system content. If you hide the default system content, only the header and your custom interface are displayed.](https://docs-assets.developer.apple.com/published/a62382090758a2f43ea487b72c5298d5/customizing_the_appearance_of_notifications-3%402x.png)
+![The default interface displays a header, followed by your custom content, followed by the default system content. If you hide the default system content, only the header and your custom interface are displayed.](/images/com.apple.User-Notifications-UI/customizing_the_appearance_of_notifications-3@2x.png)
 
 To remove the default system content, add the `UNNotificationExtensionDefaultContentHidden` key to your extension’s `Info.plist` file and set the value of the key to `true`. For more information about this key, see [`UNNotificationContentExtension`](unnotificationcontentextension.md).
 
@@ -91,7 +91,7 @@ To support the playback of audio or video from your custom notifications interfa
 
 The system draws a media button for you, handling all user interactions. When the buttons are pressed, it calls the [`mediaPlay()`](unnotificationcontentextension/mediaplay().md) and [`mediaPause()`](unnotificationcontentextension/mediapause().md) methods so that you can start and stop playback.
 
-To programmatically start or stop playback of your media file, call the current [`NSExtensionContext`](https://developer.apple.com/documentation/Foundation/NSExtensionContext) object’s [`mediaPlayingStarted()`](https://developer.apple.com/documentation/Foundation/NSExtensionContext/mediaPlayingStarted()) and [`mediaPlayingPaused()`](https://developer.apple.com/documentation/Foundation/NSExtensionContext/mediaPlayingPaused()) methods. Use your view controller’s [`extensionContext`](https://developer.apple.com/documentation/UIKit/UIViewController/extensionContext) property to access the extension context.
+To programmatically start or stop playback of your media file, call the current [`NSExtensionContext`](https://developer.apple.com/documentation/foundation/nsextensioncontext) object’s [`mediaPlayingStarted()`](https://developer.apple.com/documentation/foundation/nsextensioncontext/mediaplayingstarted()) and [`mediaPlayingPaused()`](https://developer.apple.com/documentation/foundation/nsextensioncontext/mediaplayingpaused()) methods. Use your view controller’s [`extensionContext`](https://developer.apple.com/documentation/uikit/uiviewcontroller/extensioncontext) property to access the extension context.
 
 ##### Support Interactive Controls
 
@@ -104,7 +104,7 @@ To enable user interactions:
 
 The following figure shows the `Info.plist` file, with notifications enabled.
 
-![A screenshot of the plist editor, showing the UNNotificationExtensionUserInteractionEnabled key added to the NSExtensionAttributes dictionary.](https://docs-assets.developer.apple.com/published/56e764232f71daec129a208c72a7d564/customizing_the_appearance_of_notifications-4%402x.png)
+![A screenshot of the plist editor, showing the UNNotificationExtensionUserInteractionEnabled key added to the NSExtensionAttributes dictionary.](/images/com.apple.User-Notifications-UI/customizing_the_appearance_of_notifications-4@2x.png)
 
 ## See Also
 

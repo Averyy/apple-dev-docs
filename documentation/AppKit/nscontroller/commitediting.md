@@ -17,11 +17,11 @@ func commitEditing() -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/Swift/true) if successful or no edits were pending.
+[`true`](https://developer.apple.com/documentation/swift/true) if successful or no edits were pending.
 
 #### Discussion
 
-The receiver invokes [`commitEditing`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class/commitEditing) on any current editors, returning their response. A commit is denied if the receiver fails to apply the changes to the model object, perhaps due to a validation error.
+The receiver invokes [`commitEditing`](https://developer.apple.com/documentation/objectivec/nsobject-swift.class/commitediting) on any current editors, returning their response. A commit is denied if the receiver fails to apply the changes to the model object, perhaps due to a validation error.
 
 ## See Also
 

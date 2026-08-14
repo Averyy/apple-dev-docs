@@ -18,7 +18,7 @@ First, you need to layer title and heading information in front of the header’
 
 This image shows the heading and title before they have been lightened for legibility; you’ll lighten this text in [`Define a Light Text Style for Heading Text`](creating-a-complex-layered-header#Define-a-Light-Text-Style-for-Heading-Text.md).
 
-![Labeled screenshot of an Apple News article on iPhone. The article includes a title and heading layered in front of a header image.](https://docs-assets.developer.apple.com/published/9d7496774f34ed5762b8b96c0fd1c58d/media-3627616%402x.png)
+![Labeled screenshot of an Apple News article on iPhone. The article includes a title and heading layered in front of a header image.](/images/com.apple.applenews/media-3627616@2x.png)
 
 1. Open the `article.json` file that you completed in [`Adding Parallax Behavior`](adding-parallax-behavior.md), or open `Desktop/News_Design_Tutorial/News_Design_Tutorial_Advanced_Article_1/article.json`.
 2. In the `article.json` file (not the example code below), cut the first three components inside the second section to your clipboard. The code you are cutting begins with the opening bracket (`{`) before `"role": "heading1",` and ends with the closing bracket and comma  (`},`) that end the `title` component.
@@ -152,7 +152,7 @@ Ellipses (`...`) indicate lines of code that have been omitted from this example
 
 If you anchor multiple child components to the same side of the parent, the children will stack as in the following figure. This image shows the heading and title before they have been lightened for legibility; you’ll lighten this text in [`Use the Dark Background and Light Text`](creating-a-complex-layered-header#Use-the-Dark-Background-and-Light-Text.md).
 
-![Labeled screenshot of an Apple News article on iPhone. The article includes a title and heading within a container that is layered in front of a header image and anchored to the bottom of the header.](https://docs-assets.developer.apple.com/published/51d2ea8846887297dd5d44fb57995ed1/media-3627615%402x.png)
+![Labeled screenshot of an Apple News article on iPhone. The article includes a title and heading within a container that is layered in front of a header image and anchored to the bottom of the header.](/images/com.apple.applenews/media-3627615@2x.png)
 
 1. In your working `article.json` file, delete the contents of the `components` array inside your `header` component.
 2. Copy the example code [`Header Contents: Copy This Code`](creating-a-complex-layered-header#Header-Contents-Copy-This-Code.md).
@@ -298,7 +298,7 @@ Ellipses (`...`) indicate lines of code that have been omitted from this example
 
 To add contrast to your title and heading text, you can adjust the text color and the background of the text’s parent container. You’ll set the title container background to a gradient that fades from transparent at the top to black at the bottom.
 
-![Labeled screenshot of an Apple News article on iPhone. The article includes a title and heading within a container with a contrasting background color. The container is layered in front of a header image and anchored to the bottom of the header.](https://docs-assets.developer.apple.com/published/f1adea1dac5ef77a9e4c17c361f42377/media-3627614%402x.png)
+![Labeled screenshot of an Apple News article on iPhone. The article includes a title and heading within a container with a contrasting background color. The container is layered in front of a header image and anchored to the bottom of the header.](/images/com.apple.applenews/media-3627614@2x.png)
 
 1. Copy the example code [`scrimBackgroundStyle: Copy This Code`](creating-a-complex-layered-header#scrimBackgroundStyle-Copy-This-Code.md).
 2. Paste the code between the closing brace (`}`) of the last `ComponentStyle` object and the closing brace for the whole `componentStyles` property.

@@ -18,7 +18,7 @@ This sample app demonstrates how to set up and perform the classification reques
 
 First, the app creates the `ClassifyImageRequest` and performs it on an image. The request returns the entire taxonomy as `ClassificationObservation` objects, and stores the objects in an array. For each observation, the request assigns a label in the form of an identifier, along with a floating-point confidence value in the range of `0.0` to `1.0`. A value of `0.0` indicates that the observation is not likely in the image, while a value of `1.0` indicates that the observation is certain to be in the image.
 
-When the request returns the results, the app performs a high-recall [`filter(_:)`](https://developer.apple.com/documentation/Swift/String/filter(_:)-66nw7), and only retains the observations that meet a confidence threshold. This threshold is set by the app with the [`hasMinimumPrecision(_:forRecall:)`](classificationobservation/hasminimumprecision(_:forrecall:).md) method from `Vision`. A high-recall filter provides a much broader range of observations, but can result in more false positive results. For example, with this filter, an ambiguous image of a bear may result in an observation with the label *dog*.
+When the request returns the results, the app performs a high-recall [`filter(_:)`](https://developer.apple.com/documentation/swift/string/filter(_:)-66nw7), and only retains the observations that meet a confidence threshold. This threshold is set by the app with the [`hasMinimumPrecision(_:forRecall:)`](classificationobservation/hasminimumprecision(_:forrecall:).md) method from `Vision`. A high-recall filter provides a much broader range of observations, but can result in more false positive results. For example, with this filter, an ambiguous image of a bear may result in an observation with the label *dog*.
 
 If an app can’t tolerate false positive results, the [`hasMinimumRecall(_:forPrecision:)`](classificationobservation/hasminimumrecall(_:forprecision:).md) method allows for a high-precision filter. A high-precision filter retains a smaller number of observations, but less chance to contain false positives. Increasing precision decreases recall, and increasing recall decreases precision. Testing can help determine the balance point that returns the best results for a specific use case.
 
@@ -48,7 +48,7 @@ func classifyImage(url: URL) async throws -> ImageFile {
 }
 ```
 
-Processing a large collection of images can take time, so the app uses Swift concurrency to help with speed and efficiency. Using [`TaskGroup`](https://developer.apple.com/documentation/Swift/TaskGroup), the app processes the images in parallel instead of sequentially in a loop. When the request returns results, the app adds each image’s observations to an array. For more information on using Swift concurrency, see [`Concurrency`](https://developer.apple.comhttps://docs.swift.org/swift-book/documentation/the-swift-programming-language/concurrency/).
+Processing a large collection of images can take time, so the app uses Swift concurrency to help with speed and efficiency. Using [`TaskGroup`](https://developer.apple.com/documentation/swift/taskgroup), the app processes the images in parallel instead of sequentially in a loop. When the request returns results, the app adds each image’s observations to an array. For more information on using Swift concurrency, see [`Concurrency`](https://developer.apple.comhttps://docs.swift.org/swift-book/documentation/the-swift-programming-language/concurrency/).
 
 ```swift
 func classifyAllImages(urls: [URL]) async throws -> [ImageFile] {
@@ -86,7 +86,7 @@ var searchResults: [ImageFile] {
 }
 ```
 
-Clicking an image navigates to the results view and displays the results of the image analysis. Using a `ForEach` loop, the app iterates through the observations. The [`sorted(by:)`](https://developer.apple.com/documentation/Swift/Array/sorted(by:)) method sorts the observations in descending order of their confidence levels. The `ForEach` loop accesses the values of the observation with the dictionary’s key and value keywords. Note that any confidence values of `0.0` are greater than zero due to rounding.
+Clicking an image navigates to the results view and displays the results of the image analysis. Using a `ForEach` loop, the app iterates through the observations. The [`sorted(by:)`](https://developer.apple.com/documentation/swift/array/sorted(by:)) method sorts the observations in descending order of their confidence levels. The `ForEach` loop accesses the values of the observation with the dictionary’s key and value keywords. Note that any confidence values of `0.0` are greater than zero due to rounding.
 
 ```swift
 List {

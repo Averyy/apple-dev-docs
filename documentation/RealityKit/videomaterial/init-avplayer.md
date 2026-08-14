@@ -22,7 +22,7 @@ Creates a new video material.
 
 #### Discussion
 
-To create a video material, first create an [`AVPlayer`](https://developer.apple.com/documentation/AVFoundation/AVPlayer) instance initialized with a URL that points to the movie file you want the video material to play, then pass that to this initializer. The following code demonstrates this process.
+To create a video material, first create an [`AVPlayer`](https://developer.apple.com/documentation/avfoundation/avplayer) instance initialized with a URL that points to the movie file you want the video material to play, then pass that to this initializer. The following code demonstrates this process.
 
 ```swift
 // Create a URL that points to the movie file.
@@ -48,7 +48,7 @@ if let url = Bundle.main.url(forResource: "MyMovie", withExtension: "mp4") {
 
 ## Parameters
 
-- `avPlayer`: An [`AVPlayer`](https://developer.apple.com/documentation/AVFoundation/AVPlayer) instance.
+- `avPlayer`: An [`AVPlayer`](https://developer.apple.com/documentation/avfoundation/avplayer) instance.
 
 
 ---

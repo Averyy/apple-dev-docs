@@ -15,7 +15,7 @@ The Media Library framework provides a read-only Objective-C data model represen
 
 At the highest level, all content within a media library instance is categorized by media source. Conceptually, a media source respresents a single app, such as iTunes or Aperture. Each source contains a hierarchy of media groups that originates from a root group. These groups consist of media objects—individual files containing a piece of media such as a photo, song, or movie. Only one copy of each object exists within a media library instance, but an object can be referenced by multiple groups from a single source. The structure of the group hierarchy is specific to each media source.
 
-![None](https://docs-assets.developer.apple.com/published/507ce3b1bd48fc99b5188777563bb105/media-1965615%402x.png)
+![None](/images/com.apple.medialibrary/media-1965615@2x.png)
 
 ## Topics
 

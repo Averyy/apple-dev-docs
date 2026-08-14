@@ -14,7 +14,7 @@ Flat surfaces are an ideal place to position content in an app that uses a Full 
 
 ##### Use Realitykit Anchor Entities for Basic Plane Anchoring
 
-If you don’t need a specific plane in your app and you’re rendering your app’s 3D content in RealityKit, you can use an [`AnchorEntity`](https://developer.apple.com/documentation/RealityKit/AnchorEntity) instead. This approach lets you attach 3D content to a plane without prompting the person for world-sensing permission and without any particular knowledge of where that plane is relative to the person.
+If you don’t need a specific plane in your app and you’re rendering your app’s 3D content in RealityKit, you can use an [`AnchorEntity`](https://developer.apple.com/documentation/realitykit/anchorentity) instead. This approach lets you attach 3D content to a plane without prompting the person for world-sensing permission and without any particular knowledge of where that plane is relative to the person.
 
 The following shows an anchor that you can use to attach entities to a table:
 
@@ -26,7 +26,7 @@ Anchor entities don’t let you choose a specific plane in a person’s surround
 
 ##### Configure an Arkit Session for Plane Detection
 
-Plane-detection information comes from an [`ARKitSession`](https://developer.apple.com/documentation/ARKit/ARKitSession) that’s configured to use a [`PlaneDetectionProvider`](https://developer.apple.com/documentation/ARKit/PlaneDetectionProvider). You can choose to detect horizontal planes, vertical planes, or both. Each plane that ARKit detects comes with a classification, like [`PlaneAnchor.Classification.table`](https://developer.apple.com/documentation/ARKit/PlaneAnchor/Classification-swift.enum/table) or [`PlaneAnchor.Classification.floor`](https://developer.apple.com/documentation/ARKit/PlaneAnchor/Classification-swift.enum/floor). You can use these classifications to further refine which kinds of planes your app uses to present content. Plane detection requires [`ARKitSession.AuthorizationType.worldSensing`](https://developer.apple.com/documentation/ARKit/ARKitSession/AuthorizationType/worldSensing) authorization.
+Plane-detection information comes from an [`ARKitSession`](https://developer.apple.com/documentation/arkit/arkitsession) that’s configured to use a [`PlaneDetectionProvider`](https://developer.apple.com/documentation/arkit/planedetectionprovider). You can choose to detect horizontal planes, vertical planes, or both. Each plane that ARKit detects comes with a classification, like [`PlaneAnchor.Classification.table`](https://developer.apple.com/documentation/arkit/planeanchor/classification-swift.enum/table) or [`PlaneAnchor.Classification.floor`](https://developer.apple.com/documentation/arkit/planeanchor/classification-swift.enum/floor). You can use these classifications to further refine which kinds of planes your app uses to present content. Plane detection requires [`ARKitSession.AuthorizationType.worldSensing`](https://developer.apple.com/documentation/arkit/arkitsession/authorizationtype/worldsensing) authorization.
 
 The following starts a session that detects both horizontal and vertical planes, but filters out planes classified as windows:
 
@@ -105,7 +105,7 @@ func removePlane(_ anchor: PlaneAnchor) {
   Query and react to changes in the position and rotation of Apple Vision Pro.
 - [Drawing in the air and on surfaces with a spatial stylus](drawing-in-the-air-and-on-surfaces-with-a-spatial-stylus.md)
   Create a spatial stylus drawing experience that balances latency and accuracy for both in-air and on-surface drawing.
-- [Preparing spatial accessories for tracking in your visionOS app](../ARKit/preparing-spatial-accessories-for-tracking-in-your-visionos-app.md)
+- [Preparing spatial accessories for tracking in your visionOS app](../arkit/preparing-spatial-accessories-for-tracking-in-your-visionos-app.md)
   Prepare a spatial accessory for tracking by training a reference accessory file and integrating it into your visionOS app.
 - [Working with generic spatial accessories](working-with-generic-spatial-accessories.md)
   Let people place digital replicas of a generic spatial accessory by tracking the accessory with ARKit.

@@ -22,7 +22,7 @@ An initialized instance representing the location event.
 
 ## Parameters
 
-- `region`: Region on which the event is triggered. The region object must have at least one of [`notifyOnEntry`](https://developer.apple.com/documentation/CoreLocation/CLRegion/notifyOnEntry) or [`notifyOnExit`](https://developer.apple.com/documentation/CoreLocation/CLRegion/notifyOnExit) set to [`true`](https://developer.apple.com/documentation/Swift/true).
+- `region`: Region on which the event is triggered. The region object must have at least one of [`notifyOnEntry`](https://developer.apple.com/documentation/corelocation/clregion/notifyonentry) or [`notifyOnExit`](https://developer.apple.com/documentation/corelocation/clregion/notifyonexit) set to [`true`](https://developer.apple.com/documentation/swift/true).
 
 
 ---

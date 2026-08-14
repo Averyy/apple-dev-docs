@@ -16,7 +16,7 @@ static var asData: NSPasteboard.ReadingOptions { get }
 
 #### Discussion
 
-This is the default value. AppKit returns the data in an [`NSData`](https://developer.apple.com/documentation/Foundation/NSData) object.
+This is the default value. AppKit returns the data in an [`NSData`](https://developer.apple.com/documentation/foundation/nsdata) object.
 
 ## See Also
 

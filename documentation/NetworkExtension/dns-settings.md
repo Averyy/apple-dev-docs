@@ -11,7 +11,7 @@ With the DNS Settings feature in macOS and iOS, your app can create and manage a
 ## Topics
 
 ### Essentials
-- [Network Extensions Entitlement](../BundleResources/Entitlements/com.apple.developer.networking.networkextension.md)
+- [Network Extensions Entitlement](../bundleresources/entitlements/com.apple.developer.networking.networkextension.md)
   The APIs an app can use to customize networking features.
 ### DNS configuration
 - [class NEDNSSettingsManager](nednssettingsmanager.md)

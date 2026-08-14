@@ -23,15 +23,15 @@ class MTLCaptureManager
 
 A capture manager works with the frame capture feature to:
 
-- Capture data about Metal commands programmatically. See [`Capturing a Metal workload programmatically`](https://developer.apple.com/documentation/Xcode/Capturing-a-Metal-workload-programmatically).
+- Capture data about Metal commands programmatically. See [`Capturing a Metal workload programmatically`](https://developer.apple.com/documentation/xcode/capturing-a-metal-workload-programmatically).
 - Only capture commands that apply to a specific [`MTLDevice`](mtldevice.md), command queue, or [`MTLCaptureScope`](mtlcapturescope.md) instance.
 - Assign a default [`MTLCaptureScope`](mtlcapturescope.md) instance for captures you create in Xcode by clicking the Capture GPU workload button in the debug bar, which has an icon with the Metal logo.
 
-The Metal debugger requires you to enable GPU Frame Capture in your project settings; see [`Capturing a Metal workload in Xcode`](https://developer.apple.com/documentation/Xcode/Capturing-a-Metal-workload-in-Xcode).
+The Metal debugger requires you to enable GPU Frame Capture in your project settings; see [`Capturing a Metal workload in Xcode`](https://developer.apple.com/documentation/xcode/capturing-a-metal-workload-in-xcode).
 
 > ❗ **Important**:  The capture manager records commands within the [`MTLCommandBuffer`](mtlcommandbuffer.md) instance that you create and commit while the capture session is active.
 
-For more information about Metal frame capture, see [`Metal debugger`](https://developer.apple.com/documentation/Xcode/Metal-debugger).
+For more information about Metal frame capture, see [`Metal debugger`](https://developer.apple.com/documentation/xcode/metal-debugger).
 
 ## Topics
 
@@ -69,14 +69,14 @@ For more information about Metal frame capture, see [`Metal debugger`](https://d
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

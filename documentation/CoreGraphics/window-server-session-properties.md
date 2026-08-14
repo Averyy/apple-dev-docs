@@ -6,7 +6,7 @@ The keys for the standard properties in a window server session dictionary.
 
 #### Overview
 
-To learn how to use these keys to access the values in a session dictionary, see [`CFDictionary`](https://developer.apple.com/documentation/CoreFoundation/CFDictionary).
+To learn how to use these keys to access the values in a session dictionary, see [`CFDictionary`](https://developer.apple.com/documentation/corefoundation/cfdictionary).
 
 ## Topics
 

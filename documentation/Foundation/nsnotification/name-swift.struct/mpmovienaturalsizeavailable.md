@@ -19,7 +19,7 @@ static let MPMovieNaturalSizeAvailable: NSNotification.Name
 
 #### Discussion
 
-To retrieve the natural frame size for a movie, access the movie player’s [`naturalSize`](https://developer.apple.com/documentation/MediaPlayer/MPMoviePlayerController/naturalSize) property. The movie player whose state has changed is available as the object associated with the notification.
+To retrieve the natural frame size for a movie, access the movie player’s [`naturalSize`](https://developer.apple.com/documentation/mediaplayer/mpmovieplayercontroller/naturalsize) property. The movie player whose state has changed is available as the object associated with the notification.
 
 ## See Also
 

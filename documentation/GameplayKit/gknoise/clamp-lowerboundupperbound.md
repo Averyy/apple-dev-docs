@@ -23,7 +23,7 @@ func clamp(lowerBound: Double, upperBound: Double)
 
 For example, if you specify lower and upper bounds of `-0.5` and `0.5`, this operation replaces values less than `-0.5` with `-0.5` and values greater than `0.5` with `0.5`.
 
-![None](https://docs-assets.developer.apple.com/published/9f9145f7e60b452d961a7ab64f6a4aab/media-2556384%402x.png)
+![None](/images/com.apple.gameplaykit/media-2556384@2x.png)
 
 ## Parameters
 

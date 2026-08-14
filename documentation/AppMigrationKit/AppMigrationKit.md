@@ -24,7 +24,7 @@ If your app also stores data in the cloud, have the app on the other platform re
 ### App extensions
 - [protocol AppMigrationExtension](appmigrationextension.md)
   An app extension you extend to participate in data export and import.
-- [com.apple.developer.app-migration.data-container-access](../BundleResources/Entitlements/com.apple.developer.app-migration.data-container-access.md)
+- [com.apple.developer.app-migration.data-container-access](../bundleresources/entitlements/com.apple.developer.app-migration.data-container-access.md)
   An entitlement required for app extensions to perform a one-time transfer of on-device data to or from another platform.
 ### Export operations
 - [protocol ResourcesExportingWithOptions](resourcesexportingwithoptions.md)

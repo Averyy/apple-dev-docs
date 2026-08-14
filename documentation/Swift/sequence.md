@@ -189,7 +189,7 @@ A sequence should provide its iterator in O(1). The `Sequence` protocol makes no
 ### Formatting a Sequence
 - [func formatted() -> String](sequence/formatted.md)
 - [func formatted<S>(S) -> S.FormatOutput](sequence/formatted(_:).md)
-- [struct ListFormatStyle](../Foundation/ListFormatStyle.md)
+- [struct ListFormatStyle](../foundation/listformatstyle.md)
   A type that formats lists of items with a separator and conjunction appropriate for a given locale.
 ### Splitting and Joining Elements
 - [func split(maxSplits: Int, omittingEmptySubsequences: Bool, whereSeparator: (Self.Element) throws -> Bool) rethrows -> [ArraySlice<Self.Element>]](sequence/split(maxsplits:omittingemptysubsequences:whereseparator:).md)

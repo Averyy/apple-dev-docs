@@ -6,17 +6,17 @@ Learn about important changes to LightweightCodeRequirements.
 
 #### Overview
 
-Browse notable changes in [`LightweightCodeRequirements`](https://developer.apple.com/documentation/LightweightCodeRequirements).
+Browse notable changes in [`LightweightCodeRequirements`](https://developer.apple.com/documentation/lightweightcoderequirements).
 
 #### June 2024
 
 ##### General
 
-- Use fields on [`ValidationResult`](https://developer.apple.com/documentation/LightweightCodeRequirements/ValidationResult) to find out whether a code file has a valid signature, and whether the signature satisfies your lightweight code requirement.
-- Combine multiple [`EntitlementsQuery`](https://developer.apple.com/documentation/LightweightCodeRequirements/EntitlementsQuery) constraints using the `anyOf` and `allOf` operators.
-- Use the [`Equatable`](https://developer.apple.com/documentation/Swift/Equatable) protocol to compare instances of [`LaunchCodeRequirement`](https://developer.apple.com/documentation/LightweightCodeRequirements/LaunchCodeRequirement), [`ProcessCodeRequirement`](https://developer.apple.com/documentation/LightweightCodeRequirements/ProcessCodeRequirement), and [`OnDiskCodeRequirement`](https://developer.apple.com/documentation/LightweightCodeRequirements/OnDiskCodeRequirement).
-- Use [`SecCodeCheckValidityWithOnDiskRequirement(code:flags:requirement:)`](https://developer.apple.com/documentation/LightweightCodeRequirements/SecCodeCheckValidityWithOnDiskRequirement(code:flags:requirement:)) to test a [`SecCode`](https://developer.apple.com/documentation/Security/SecCode) instance using an on-disk code requirement.
-- Use [`SecCodeCheckValidityWithProcessRequirement(code:flags:requirement:)`](https://developer.apple.com/documentation/LightweightCodeRequirements/SecCodeCheckValidityWithProcessRequirement(code:flags:requirement:)) to test a [`SecCode`](https://developer.apple.com/documentation/Security/SecCode) instance using a process code requirement.
+- Use fields on [`ValidationResult`](https://developer.apple.com/documentation/lightweightcoderequirements/validationresult) to find out whether a code file has a valid signature, and whether the signature satisfies your lightweight code requirement.
+- Combine multiple [`EntitlementsQuery`](https://developer.apple.com/documentation/lightweightcoderequirements/entitlementsquery) constraints using the `anyOf` and `allOf` operators.
+- Use the [`Equatable`](https://developer.apple.com/documentation/swift/equatable) protocol to compare instances of [`LaunchCodeRequirement`](https://developer.apple.com/documentation/lightweightcoderequirements/launchcoderequirement), [`ProcessCodeRequirement`](https://developer.apple.com/documentation/lightweightcoderequirements/processcoderequirement), and [`OnDiskCodeRequirement`](https://developer.apple.com/documentation/lightweightcoderequirements/ondiskcoderequirement).
+- Use [`SecCodeCheckValidityWithOnDiskRequirement(code:flags:requirement:)`](https://developer.apple.com/documentation/lightweightcoderequirements/seccodecheckvaliditywithondiskrequirement(code:flags:requirement:)) to test a [`SecCode`](https://developer.apple.com/documentation/security/seccode) instance using an on-disk code requirement.
+- Use [`SecCodeCheckValidityWithProcessRequirement(code:flags:requirement:)`](https://developer.apple.com/documentation/lightweightcoderequirements/seccodecheckvaliditywithprocessrequirement(code:flags:requirement:)) to test a [`SecCode`](https://developer.apple.com/documentation/security/seccode) instance using a process code requirement.
 
 ## See Also
 

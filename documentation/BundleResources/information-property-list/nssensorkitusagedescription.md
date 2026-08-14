@@ -17,7 +17,7 @@ A short description of the purpose of your app’s research study.
 
 When your app attempts to read sensor information for the first time on a user’s device, the system presents this string to explain your app’s study. Users approve or deny your app’s ability to read private sensor information based on the description you provide for this property.
 
-For more information, see [`Configuring your project for sensor reading`](https://developer.apple.com/documentation/SensorKit/configuring-your-project-for-sensor-reading).
+For more information, see [`Configuring your project for sensor reading`](https://developer.apple.com/documentation/sensorkit/configuring-your-project-for-sensor-reading).
 
 ## See Also
 

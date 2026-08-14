@@ -22,7 +22,7 @@ var codable: NavigationPath.CodableRepresentation? { get }
 
 #### Discussion
 
-This value is `nil` if any of the type-erased elements of the path don’t conform to the [`Codable`](https://developer.apple.com/documentation/Swift/Codable) protocol.
+This value is `nil` if any of the type-erased elements of the path don’t conform to the [`Codable`](https://developer.apple.com/documentation/swift/codable) protocol.
 
 ## See Also
 

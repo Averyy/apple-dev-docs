@@ -20,7 +20,7 @@ This sample app shows how to implement and use Local Push Connectivity within a 
 
 The `SimplePush` app maintains two connections to the server:
 
-- Notification Channel — A TCP connection the [`NEAppPushProvider`](NEAppPushProvider.md) maintains that provides functionality similar to Apple Push Notification service (APNs) when on a local Wi-Fi or private LTE network.
+- Notification Channel — A TCP connection the [`NEAppPushProvider`](neapppushprovider.md) maintains that provides functionality similar to Apple Push Notification service (APNs) when on a local Wi-Fi or private LTE network.
 - Control Channel — A TCP connection the iOS app maintains and uses to send app control data to the server.
 
 To run the sample, you need a Mac to operate as the server, and two iOS devices (such as an iPhone and an iPad, or an iPod touch and an iPhone) that can connect to the server to communicate with each other.

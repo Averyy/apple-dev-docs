@@ -379,7 +379,7 @@ At some point, you might want to change the price of your in-app purchase. Use o
 
 To perform either type of price change, you use a process similar to setting the initial price. First, look up your current price point using `GET /v1/inAppPurchasePriceSchedules/{id}/manualPrices` ([`Read Price Information for an In-App Purchase Price Schedule`](get-v1-inapppurchasepriceschedules-_id_-manualprices.md)) — where `id` is the in-app purchase ID — to determine the desired price point. The following screenshot shows what the current pricing looks like in App Store Connect for the in-app purchase.
 
-![Screenshot of a price schedule from appstoreconnect.apple.com.](https://docs-assets.developer.apple.com/published/b6a27ee1110af1eae7eba4fbc79faf6b/media-4054484%402x.png)
+![Screenshot of a price schedule from appstoreconnect.apple.com.](/images/com.apple.appstoreconnectapi/media-4054484@2x.png)
 
 The following example request includes several additional fields and filters:
 

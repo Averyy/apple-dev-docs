@@ -19,7 +19,7 @@ The entitlement required for an executable to opt in to enhanced security protec
 
 #### Discussion
 
-Set this entitlement’s value to `2` to adopt the current version of enhanced security protections in your app or extension. Setting this value to `2` or greater turns on guard objects automatically. To turn off guard objects, add the [`com.apple.security.hardened-process.no-guard-objects`](entitlements/com.apple.security.hardened-process.no-guard-objects.md) entitlement. For more information, see [`Enabling enhanced security for your app`](https://developer.apple.com/documentation/Xcode/enabling-enhanced-security-for-your-app).
+Set this entitlement’s value to `2` to adopt the current version of enhanced security protections in your app or extension. Setting this value to `2` or greater turns on guard objects automatically. To turn off guard objects, add the [`com.apple.security.hardened-process.no-guard-objects`](entitlements/com.apple.security.hardened-process.no-guard-objects.md) entitlement. For more information, see [`Enabling enhanced security for your app`](https://developer.apple.com/documentation/xcode/enabling-enhanced-security-for-your-app).
 
 > **Note**: This entitlement requires the following entitlements: - [`com.apple.security.hardened-process`](entitlements/com.apple.security.hardened-process.md)
 

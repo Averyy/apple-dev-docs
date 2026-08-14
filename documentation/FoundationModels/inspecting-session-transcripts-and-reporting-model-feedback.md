@@ -57,7 +57,7 @@ For more information about context management, see [`Managing the context window
 
 A feature powered by a language model can behave differently over time as the underlying model updates or as people change how they interact with it. To keep track of that behavior, record the [`Transcript`](transcript.md) from a session so you can compare how the same input performs across model versions and spot changes you didn’t expect.
 
-Because everything you send and receive is already captured in [`transcript`](languagemodelsession/transcript.md), and a [`Transcript`](transcript.md) conforms to [`Codable`](https://developer.apple.com/documentation/Swift/Codable), serialize it to JSON and store it alongside a version identifier, like this:
+Because everything you send and receive is already captured in [`transcript`](languagemodelsession/transcript.md), and a [`Transcript`](transcript.md) conforms to [`Codable`](https://developer.apple.com/documentation/swift/codable), serialize it to JSON and store it alongside a version identifier, like this:
 
 ```swift
 let session = LanguageModelSession()
@@ -73,7 +73,7 @@ For more information about handling new model versions, see [`Updating prompts f
 
 #### Report a Response to Improve the Model
 
-When a language model returns a response that’s factually incorrect or shows problematic guardrail behavior, capture the response for a bug report. Call [`logFeedbackAttachment(sentiment:issues:desiredOutput:)`](languagemodelsession/logfeedbackattachment(sentiment:issues:desiredoutput:).md) on the session to serialize the current transcript, together with your assessment, into JSON and return it as [`Data`](https://developer.apple.com/documentation/Foundation/Data).
+When a language model returns a response that’s factually incorrect or shows problematic guardrail behavior, capture the response for a bug report. Call [`logFeedbackAttachment(sentiment:issues:desiredOutput:)`](languagemodelsession/logfeedbackattachment(sentiment:issues:desiredoutput:).md) on the session to serialize the current transcript, together with your assessment, into JSON and return it as [`Data`](https://developer.apple.com/documentation/foundation/data).
 
 Describe your assessment with two specifics:
 

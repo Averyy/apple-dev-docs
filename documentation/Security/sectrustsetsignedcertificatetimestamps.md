@@ -31,7 +31,7 @@ Use this function to provide secure certificate timestamps, which might be obtai
 ## Parameters
 
 - `trust`: The trust object to which the timestamp data should be attached.
-- `sctArray`: An array of [`CFData`](https://developer.apple.com/documentation/CoreFoundation/CFData) instances, each of which contains a signed certificate timestamp.
+- `sctArray`: An array of [`CFData`](https://developer.apple.com/documentation/corefoundation/cfdata) instances, each of which contains a signed certificate timestamp.
 
 
 ---

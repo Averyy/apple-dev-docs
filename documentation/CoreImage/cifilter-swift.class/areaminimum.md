@@ -30,7 +30,7 @@ This filter returns the minimum color components in the region defined by `exten
 The area minimum filter uses the following properties:
 
 - **`inputImage`**: An image with the type [`CIImage`](ciimage.md).
-- **`extent`**: A [`CGRect`](https://developer.apple.com/documentation/CoreFoundation/CGRect) that specifies the subregion of the image that you want to process.
+- **`extent`**: A [`CGRect`](https://developer.apple.com/documentation/corefoundation/cgrect) that specifies the subregion of the image that you want to process.
 
 The following code creates a filter that calculates the minimum color components of a 500 x 500 set of pixels from the center of the image:
 
@@ -47,7 +47,7 @@ func areaMinimum(inputImage: CIImage) -> CIImage {
 }
 ```
 
-![Two images arranged horizontally. The left image contains a photograph of three hydrangea flowers with leaves in the background. A 500 x 500 pixel square in the center of the image is highlighted using an outlined box. The image on the right shows the result of applying the area minimum filter to the 500 x 500 pixel square. The result is a 1 x 1 pixel image containing a color made up of the minimum color components from the square.](https://docs-assets.developer.apple.com/published/b682127ea75207a119a0f6bf6d9e0cd4/media-4331785%402x.png)
+![Two images arranged horizontally. The left image contains a photograph of three hydrangea flowers with leaves in the background. A 500 x 500 pixel square in the center of the image is highlighted using an outlined box. The image on the right shows the result of applying the area minimum filter to the 500 x 500 pixel square. The result is a 1 x 1 pixel image containing a color made up of the minimum color components from the square.](/images/com.apple.coreimage/media-4331785@2x.png)
 
 ## See Also
 

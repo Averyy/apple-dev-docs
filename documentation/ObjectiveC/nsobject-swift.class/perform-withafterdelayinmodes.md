@@ -28,7 +28,7 @@ If you want the message to be dequeued when the run loop is in a mode other than
 
 ##### Special Considerations
 
-This method registers with the runloop of its current context, and depends on that runloop being run on a regular basis to perform correctly. One common context where you might call this method and end up registering with a runloop that is not automatically run on a regular basis is when being invoked by a dispatch queue. If you need this type of functionality when running on a dispatch queue, you should use [`dispatch_after`](https://developer.apple.com/documentation/Dispatch/dispatch_after) and related methods to get the behavior you want.
+This method registers with the runloop of its current context, and depends on that runloop being run on a regular basis to perform correctly. One common context where you might call this method and end up registering with a runloop that is not automatically run on a regular basis is when being invoked by a dispatch queue. If you need this type of functionality when running on a dispatch queue, you should use [`dispatch_after`](https://developer.apple.com/documentation/dispatch/dispatch_after) and related methods to get the behavior you want.
 
 ## Parameters
 
@@ -39,9 +39,9 @@ This method registers with the runloop of its current context, and depends on th
 
 ## See Also
 
-- [func invalidate()](../Foundation/Timer/invalidate.md)
+- [func invalidate()](../foundation/timer/invalidate.md)
   Stops the timer from ever firing again and requests its removal from its run loop.
-- [func add(Timer, forMode: RunLoop.Mode)](../Foundation/RunLoop/add(_:forMode:)-392ag.md)
+- [func add(Timer, forMode: RunLoop.Mode)](../foundation/runloop/add(_:formode:)-392ag.md)
   Registers a given timer with a given input mode.
 - [func perform(Selector, with: Any?, afterDelay: TimeInterval)](nsobject-swift.class/perform(_:with:afterdelay:).md)
   Invokes a method of the receiver on the current thread using the default mode after a delay.

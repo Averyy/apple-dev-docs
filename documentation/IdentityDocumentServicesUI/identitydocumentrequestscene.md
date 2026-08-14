@@ -24,7 +24,7 @@ The framework provides concrete types for this protocol.
 ## Relationships
 
 ### Inherits From
-- [AppExtensionScene](../ExtensionKit/AppExtensionScene.md)
+- [AppExtensionScene](../extensionkit/appextensionscene.md)
 ### Conforming Types
 - [ISO18013MobileDocumentRequestScene](iso18013mobiledocumentrequestscene.md)
 

@@ -21,8 +21,8 @@ A [`SecKeychainItem`](seckeychainitem.md) object for a certificate that is store
 ## Relationships
 
 ### Conforms To
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
 
 
 ---

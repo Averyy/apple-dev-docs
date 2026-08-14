@@ -13,9 +13,9 @@ The `ciWorkflows` resource represents an Xcode Cloud workflow. Use it to:
 - Update an existing workflow.
 - Delete a workflow you no longer need.
 
-To learn more about workflows, see [`Xcode Cloud workflow reference`](https://developer.apple.com/documentation/Xcode/Xcode-Cloud-Workflow-Reference).
+To learn more about workflows, see [`Xcode Cloud workflow reference`](https://developer.apple.com/documentation/xcode/xcode-cloud-workflow-reference).
 
-> ❗ **Important**:  Deleting a workflow also deletes associated build information and artifacts. Instead of deleting a workflow, consider deactivating it in Xcode or App Store Connect. To learn more about deactivating a workflow, see [`Developing a workflow strategy for Xcode Cloud`](https://developer.apple.com/documentation/Xcode/Developing-a-Workflow-Strategy-for-Xcode-Cloud).
+> ❗ **Important**:  Deleting a workflow also deletes associated build information and artifacts. Instead of deleting a workflow, consider deactivating it in Xcode or App Store Connect. To learn more about deactivating a workflow, see [`Developing a workflow strategy for Xcode Cloud`](https://developer.apple.com/documentation/xcode/developing-a-workflow-strategy-for-xcode-cloud).
 
 This resource supports JSON web tokens with a lifetime of up to six months. For more information, see [`Determine the Appropriate Token Lifetime`](generating-tokens-for-api-requests#Determine-the-Appropriate-Token-Lifetime.md).
 

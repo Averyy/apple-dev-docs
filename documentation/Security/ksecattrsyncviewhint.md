@@ -22,7 +22,7 @@ let kSecAttrSyncViewHint: CFString
 
 #### Discussion
 
-The corresponding value is of type [`CFString`](https://developer.apple.com/documentation/CoreFoundation/CFString), and is included as part of the primary key of an item. It can be used to help distinguish Sync Views when defining their queries.
+The corresponding value is of type [`CFString`](https://developer.apple.com/documentation/corefoundation/cfstring), and is included as part of the primary key of an item. It can be used to help distinguish Sync Views when defining their queries.
 
 
 ---

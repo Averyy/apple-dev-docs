@@ -22,11 +22,11 @@ func dictionaryRepresentation(forAuxiliaryDataType outAuxDataType: Autoreleasing
 
 #### Return Value
 
-A dictionary of primitive map information for [`CGImageDestinationAddAuxiliaryDataInfo(_:_:_:)`](https://developer.apple.com/documentation/ImageIO/CGImageDestinationAddAuxiliaryDataInfo(_:_:_:)).
+A dictionary of primitive map information for [`CGImageDestinationAddAuxiliaryDataInfo(_:_:_:)`](https://developer.apple.com/documentation/imageio/cgimagedestinationaddauxiliarydatainfo(_:_:_:)).
 
 ## Parameters
 
-- `outAuxDataType`: Must be [`kCGImageAuxiliaryDataTypePortraitEffectsMatte`](https://developer.apple.com/documentation/ImageIO/kCGImageAuxiliaryDataTypePortraitEffectsMatte).
+- `outAuxDataType`: Must be [`kCGImageAuxiliaryDataTypePortraitEffectsMatte`](https://developer.apple.com/documentation/imageio/kcgimageauxiliarydatatypeportraiteffectsmatte).
 
 ## See Also
 

@@ -23,7 +23,7 @@ func insertMaterial(_ material: SCNMaterial, at index: Int)
 ## Parameters
 
 - `material`: The material to attach.
-- `index`: The location in the geometry’s [`materials`](scngeometry/materials.md) array at which to add the new material. > ❗ **Important**:  Raises an exception ([`rangeException`](https://developer.apple.com/documentation/Foundation/NSExceptionName/rangeException)) if `index` is greater than the number of elements in the [`materials`](scngeometry/materials.md) array.
+- `index`: The location in the geometry’s [`materials`](scngeometry/materials.md) array at which to add the new material. > ❗ **Important**:  Raises an exception ([`rangeException`](https://developer.apple.com/documentation/foundation/nsexceptionname/rangeexception)) if `index` is greater than the number of elements in the [`materials`](scngeometry/materials.md) array.
 
 ## See Also
 

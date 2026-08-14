@@ -33,9 +33,9 @@ If you override this method, you need to call `super` at some point in your impl
 
 ##### Choosing the Appropriate Callback
 
-Although the system calls this method after [`viewWillAppear(_:)`](uiviewcontroller/viewwillappear(_:).md), both callbacks occur within the same [`CATransaction`](https://developer.apple.com/documentation/QuartzCore/CATransaction). This means that changes you make in either method become visible to the user at the same time.
+Although the system calls this method after [`viewWillAppear(_:)`](uiviewcontroller/viewwillappear(_:).md), both callbacks occur within the same [`CATransaction`](https://developer.apple.com/documentation/quartzcore/catransaction). This means that changes you make in either method become visible to the user at the same time.
 
-![A diagram titled View controller appearance that consists of seven stacked horizontal bars in three distinct sections. An arrow on the right labeled Time descends from the top to the bottom. The top section is labeled Transaction and contains two horizontal bars labeled viewWillAppear and View added to hierarchy. The second section is labeled Layout and contains four horizontal bars labeled View laid out by superview; traits updated; viewIsAppearing; viewWillLayoutSubviews; and viewDidLayoutSubviews. There is a gap between the second and third sections that contains the text: Transition animates. The third section is labeled Transaction and contains one horizontal bar labeled viewDidAppear.](https://docs-assets.developer.apple.com/published/9f4992bcbe7b9858109d61db6c864256/media-4250012%402x.png)
+![A diagram titled View controller appearance that consists of seven stacked horizontal bars in three distinct sections. An arrow on the right labeled Time descends from the top to the bottom. The top section is labeled Transaction and contains two horizontal bars labeled viewWillAppear and View added to hierarchy. The second section is labeled Layout and contains four horizontal bars labeled View laid out by superview; traits updated; viewIsAppearing; viewWillLayoutSubviews; and viewDidLayoutSubviews. There is a gap between the second and third sections that contains the text: Transition animates. The third section is labeled Transaction and contains one horizontal bar labeled viewDidAppear.](/images/com.apple.uikit/media-4250012@2x.png)
 
 The traits and geometry aren’t up to date when the system calls [`viewWillAppear(_:)`](uiviewcontroller/viewwillappear(_:).md), but they are when the system calls `viewIsAppearing(_:)`, so use `viewIsAppearing(_:)` to update your views.
 
@@ -59,7 +59,7 @@ For more information about how a view controller adds views to view hierarchies,
 
 ## Parameters
 
-- `animated`: If [`true`](https://developer.apple.com/documentation/Swift/true), the system is adding the view to the window using an animation.
+- `animated`: If [`true`](https://developer.apple.com/documentation/swift/true), the system is adding the view to the window using an animation.
 
 ## See Also
 

@@ -24,7 +24,7 @@ Use this method to get the set of cookies currently associated with your web vie
 
 ## Parameters
 
-- `completionHandler`: A completion handler block to execute asynchronously with the results. This block has no return value and takes the following parameter: - **cookieArray**: An array of [`HTTPCookie`](https://developer.apple.com/documentation/Foundation/HTTPCookie) objects. If the store contains no cookies, this parameter contains an empty array.
+- `completionHandler`: A completion handler block to execute asynchronously with the results. This block has no return value and takes the following parameter: - **cookieArray**: An array of [`HTTPCookie`](https://developer.apple.com/documentation/foundation/httpcookie) objects. If the store contains no cookies, this parameter contains an empty array.
 
 ## See Also
 

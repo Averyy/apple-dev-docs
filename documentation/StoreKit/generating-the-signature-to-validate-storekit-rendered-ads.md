@@ -24,9 +24,9 @@ The following table lists the required signature parameters for version 4 and la
 | `ad-network-id` | [`SKStoreProductParameterAdNetworkIdentifier`](skstoreproductparameteradnetworkidentifier.md) |
 | `source-identifier` | [`SKStoreProductParameterAdNetworkSourceIdentifier`](skstoreproductparameteradnetworksourceidentifier.md)  This value replaces [`SKStoreProductParameterAdNetworkCampaignIdentifier`](skstoreproductparameteradnetworkcampaignidentifier.md) from previous versions. |
 | `itunes-item-id` | [`SKStoreProductParameterITunesItemIdentifier`](skstoreproductparameteritunesitemidentifier.md) |
-| `nonce` | [`SKStoreProductParameterAdNetworkNonce`](skstoreproductparameteradnetworknonce.md) ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) Lowercase the string representation of the nonce value in the signature. |
-| `source-app-id` | [`SKStoreProductParameterAdNetworkSourceAppStoreIdentifier`](skstoreproductparameteradnetworksourceappstoreidentifier.md) ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) During testing, use an ID of `0` if you’re using a development-signed build and not an app from the App Store. |
-| `fidelity-type` | Version 2.2 and later signatures require this parameter. ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) Set `fidelity-type` to `1` for StoreKit-rendered ads. |
+| `nonce` | [`SKStoreProductParameterAdNetworkNonce`](skstoreproductparameteradnetworknonce.md) ![None](/images/com.apple.storekit/spacer.png) Lowercase the string representation of the nonce value in the signature. |
+| `source-app-id` | [`SKStoreProductParameterAdNetworkSourceAppStoreIdentifier`](skstoreproductparameteradnetworksourceappstoreidentifier.md) ![None](/images/com.apple.storekit/spacer.png) During testing, use an ID of `0` if you’re using a development-signed build and not an app from the App Store. |
+| `fidelity-type` | Version 2.2 and later signatures require this parameter. ![None](/images/com.apple.storekit/spacer.png) Set `fidelity-type` to `1` for StoreKit-rendered ads. |
 | `timestamp` | [`SKStoreProductParameterAdNetworkTimestamp`](skstoreproductparameteradnetworktimestamp.md) |
 
 To create signatures for previous SKAdNetwork versions, see:
@@ -66,7 +66,7 @@ Encode the binary signature you generate into a Base64 string. The result is you
 MEQCIEQlmZRNfYzKBSE8QnhLTIHZZZWCFgZpRqRxHss65KoFAiAJgJKjdrWdkLUOCCjuEx2RmFS7daRzSVZRVZ8RyMyUXg==
 ```
 
-For more information about Base64 encoding, see [`base64EncodedString(options:)`](https://developer.apple.com/documentation/Foundation/Data/base64EncodedString(options:)).
+For more information about Base64 encoding, see [`base64EncodedString(options:)`](https://developer.apple.com/documentation/foundation/data/base64encodedstring(options:)).
 
 ##### Use the Generated Signature String
 

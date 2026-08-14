@@ -22,7 +22,7 @@ func continuationStreams() async throws -> (InputStream, OutputStream)
 
 #### Discussion
 
-When an app is launched for a continuation event, it can request streams back to the originating app. Streams can be successfully retrieved only from the [`NSUserActivity`](nsuseractivity.md) object in the [`NSApplication`](https://developer.apple.com/documentation/AppKit/NSApplication) or [`UIApplication`](https://developer.apple.com/documentation/UIKit/UIApplication) delegate that is called for a continuation event. The streams are provided by the completion handler in an unopened state, and the delegate should open them immediately to start communicating with the continuing side.
+When an app is launched for a continuation event, it can request streams back to the originating app. Streams can be successfully retrieved only from the [`NSUserActivity`](nsuseractivity.md) object in the [`NSApplication`](https://developer.apple.com/documentation/appkit/nsapplication) or [`UIApplication`](https://developer.apple.com/documentation/uikit/uiapplication) delegate that is called for a continuation event. The streams are provided by the completion handler in an unopened state, and the delegate should open them immediately to start communicating with the continuing side.
 
 Continuation streams are an optional feature of Handoff, and most user activities do not need them for successful continuation. When streams are needed, a simple request from the continuing app accompanied by a response from the originating app is enough for most continuation events.
 

@@ -19,7 +19,7 @@ class let touchBarVolumeUpTemplateName: String
 
 #### Discussion
 
-![Template image for volume up](https://docs-assets.developer.apple.com/published/31dcfd8a415f5aaa68b6faf8f00aa03e/media-2793479%402x.png)
+![Template image for volume up](/images/com.apple.appkit/media-2793479@2x.png)
 
 Touch Bar template images are exclusively for use in [`NSTouchBarItem`](nstouchbaritem.md) objects and not in onscreen windows.
 

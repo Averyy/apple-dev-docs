@@ -17,7 +17,7 @@ void force::noise(NoiseParams params)
 
 #### Discussion
 
-> **Note**: ![Graph](https://docs-assets.developer.apple.com/published/f7a0316052ec98333d302120d46100b2/force__noise.svg)
+> **Note**: ![Graph](/images/com.apple.computegraph/force__noise.svg)
 
 ## Parameters
 

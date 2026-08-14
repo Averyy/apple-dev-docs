@@ -12,7 +12,7 @@ Camera extensions are a new type of system extension available in macOS 12.3 and
 
 The following illustration shows a high-level view of a camera extension.
 
-![An illustration that shows a box with the title Camera extension aligned to its top edge. The box contains three smaller boxes arranged horizontally. From left-to-right they are labeled Provider, Device, and Stream respectively. Each box itself contains three smaller boxes arranged vertically. Each box shows the provider, source, and properties object for each component.](https://docs-assets.developer.apple.com/published/6d550d01dc82fc867b3d1851c3383403/media-4033023%402x.png)
+![An illustration that shows a box with the title Camera extension aligned to its top edge. The box contains three smaller boxes arranged horizontally. From left-to-right they are labeled Provider, Device, and Stream respectively. Each box itself contains three smaller boxes arranged vertically. Each box shows the provider, source, and properties object for each component.](/images/com.apple.coremediaio/media-4033023@2x.png)
 
 A camera extension consists of three primary components:
 
@@ -22,7 +22,7 @@ A camera extension consists of three primary components:
 
 To simplify creating your own extensions, Xcode provides a Camera Extension template that provides a fully functional extension implementation. It creates a virtual camera device that renders a horizontal white line that moves up and down the display. This article shows how to configure the template’s output to build your own camera extension.
 
-> **Note**:  See the [`System Extensions`](https://developer.apple.com/documentation/SystemExtensions) framework for additional information on building, installing, and debugging system extensions.
+> **Note**:  See the [`System Extensions`](https://developer.apple.com/documentation/systemextensions) framework for additional information on building, installing, and debugging system extensions.
 
 ##### Add Entitlements to Your Host App
 
@@ -52,7 +52,7 @@ Adding the capabilities to the target writes the values to an entitlements file.
 
 Add a new target to your app using the Camera Extension template. In Xcode, go to the File menu and choose File > New and select the Target menu item. In the dialog that appears, select the macOS pane and find the Camera Extension template as shown below.
 
-![An Xcode New Target dialog. At the top-left of the dialog is a label with the value Choose a template for your new target. Below the label shows a row of tabs, with the macOS tab selected. To the right of the tab bar is a search field that displays the word, Camera. Below that shows the Camera Extension template selected. Along the bottom of the dialog are three buttons. The left-most button has the title Cancel. The two right-most buttons have the titles Previous and Next, respectively. The Previous button is in a disabled state, and the Next button is in a highlighted state.](https://docs-assets.developer.apple.com/published/728afc0caf9589a934ba62c43edc561e/media-4029968%402x.png)
+![An Xcode New Target dialog. At the top-left of the dialog is a label with the value Choose a template for your new target. Below the label shows a row of tabs, with the macOS tab selected. To the right of the tab bar is a search field that displays the word, Camera. Below that shows the Camera Extension template selected. Along the bottom of the dialog are three buttons. The left-most button has the title Cancel. The two right-most buttons have the titles Previous and Next, respectively. The Previous button is in a disabled state, and the Next button is in a highlighted state.](/images/com.apple.coremediaio/media-4029968@2x.png)
 
 Click the Next button. On the screen that follows, give the extension an appropriate name and leave the other values set to their defaults, and then click the Finish button.
 
@@ -60,7 +60,7 @@ The template creates a new target and folder with the name you specified. The fo
 
 - A `[CameraExtensionName]Provider.swift` file that provides the complete extension implementation.
 - A `main.swift` file that provides the minimal code for the system to initialize the extension.
-- An `Info.plist` that defines the `CMIOExtensionMachServiceName` for the extension and a [`NSSystemExtensionUsageDescriptionKey`](https://developer.apple.com/documentation/SystemExtensions/NSSystemExtensionUsageDescriptionKey) that describes the extension’s purpose to the user.
+- An `Info.plist` that defines the `CMIOExtensionMachServiceName` for the extension and a [`NSSystemExtensionUsageDescriptionKey`](https://developer.apple.com/documentation/systemextensions/nssystemextensionusagedescriptionkey) that describes the extension’s purpose to the user.
 - A `[CameraExtensionName].entitlements` file that defines a default app group.
 
 ##### Configure the Extension
@@ -100,17 +100,17 @@ OSSystemExtensionManager.shared.submitRequest(activationRequest)
 
 Only apps that reside in the `/Applications` directory can activate an extension. To test your extension, move your app from Xcode’s build results to the `/Applications` folder. Launch your app from its new location to test its activation request. When it attempts to activate the extension, the system prompts the user with a dialog like shown below.
 
-![A dialog requesting user approval to activate a Camera Extension. The dialog title is System Extension Blocked. Its message indicates the app attempted to load a new system extension, and it includes directions to open the Security & Privacy System Preferences. The dialog has an OK button to dismiss the notice and an Open Security Preferences button below it. Pressing Open Security Preferences opens System Settings to the appropriate location.](https://docs-assets.developer.apple.com/published/b7b1c7751cbeecea8846fdee75240738/media-4029976%402x.png)
+![A dialog requesting user approval to activate a Camera Extension. The dialog title is System Extension Blocked. Its message indicates the app attempted to load a new system extension, and it includes directions to open the Security & Privacy System Preferences. The dialog has an OK button to dismiss the notice and an Open Security Preferences button below it. Pressing Open Security Preferences opens System Settings to the appropriate location.](/images/com.apple.coremediaio/media-4029976@2x.png)
 
 Before the extension is available to the system, a person with Admin privileges for the Mac must explicitly allow access to it in the Systems & Privacy screen of System Settings.
 
-![An image that shows a label on the left, with the value System software from application CustomCamera was blocked from loading. On the right side of the image is a button with the label, Allow.](https://docs-assets.developer.apple.com/published/3d5c9efded2fa2afe74385c0628ccddb/media-4030026%402x.png)
+![An image that shows a label on the left, with the value System software from application CustomCamera was blocked from loading. On the right side of the image is a button with the label, Allow.](/images/com.apple.coremediaio/media-4030026@2x.png)
 
-> 💡 **Tip**:  During development of your extension, it’s often useful to temporarily disable some security restrictions imposed by the system. See [`Debugging and testing system extensions`](https://developer.apple.com/documentation/DriverKit/debugging-and-testing-system-extensions) for more information.
+> 💡 **Tip**:  During development of your extension, it’s often useful to temporarily disable some security restrictions imposed by the system. See [`Debugging and testing system extensions`](https://developer.apple.com/documentation/driverkit/debugging-and-testing-system-extensions) for more information.
 
 ##### Access the Custom Camera
 
-After you’ve allowed the system to use your custom extension, it’s automatically available as a selectable camera in system apps like FaceTime and PhotoBooth. Camera extensions are also fully compatible with [`AVFoundation`](https://developer.apple.com/documentation/AVFoundation) capture APIs, which means you can access your extension as an [`AVCaptureDevice`](https://developer.apple.com/documentation/AVFoundation/AVCaptureDevice) object and use it like any other device. For example, to retrieve your custom camera extension (as well as any others on the system), retrieve it as an [`externalUnknown`](https://developer.apple.com/documentation/AVFoundation/AVCaptureDevice/DeviceType-swift.struct/externalUnknown) device type as shown below.
+After you’ve allowed the system to use your custom extension, it’s automatically available as a selectable camera in system apps like FaceTime and PhotoBooth. Camera extensions are also fully compatible with [`AVFoundation`](https://developer.apple.com/documentation/avfoundation) capture APIs, which means you can access your extension as an [`AVCaptureDevice`](https://developer.apple.com/documentation/avfoundation/avcapturedevice) object and use it like any other device. For example, to retrieve your custom camera extension (as well as any others on the system), retrieve it as an [`externalUnknown`](https://developer.apple.com/documentation/avfoundation/avcapturedevice/devicetype-swift.struct/externalunknown) device type as shown below.
 
 ```swift
 // Discover devices with a device type of `externalUnknown`.

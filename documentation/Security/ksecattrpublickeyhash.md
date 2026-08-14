@@ -22,7 +22,7 @@ let kSecAttrPublicKeyHash: CFString
 
 #### Discussion
 
-The corresponding value is of type [`CFData`](https://developer.apple.com/documentation/CoreFoundation/CFData) and contains the hash of a certificate’s public key. Items of class [`kSecClassCertificate`](ksecclasscertificate.md) have this attribute. Read only.
+The corresponding value is of type [`CFData`](https://developer.apple.com/documentation/corefoundation/cfdata) and contains the hash of a certificate’s public key. Items of class [`kSecClassCertificate`](ksecclasscertificate.md) have this attribute. Read only.
 
 
 ---

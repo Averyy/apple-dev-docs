@@ -23,7 +23,7 @@ var diffieHellmanGroup: NEVPNIKEv2DiffieHellmanGroup { get set }
 
 The default value of this property is [`NEVPNIKEv2DiffieHellmanGroup.group14`](nevpnikev2diffiehellmangroup/group14.md).
 
-The value of this property on [`childSecurityAssociationParameters`](nevpnprotocolikev2/childsecurityassociationparameters.md) of [`NEVPNProtocolIKEv2`](nevpnprotocolikev2.md) only takes effect if the [`enablePFS`](nevpnprotocolikev2/enablepfs.md) of [`NEVPNProtocolIKEv2`](nevpnprotocolikev2.md) is [`true`](https://developer.apple.com/documentation/Swift/true) (its default value is [`false`](https://developer.apple.com/documentation/Swift/false)).
+The value of this property on [`childSecurityAssociationParameters`](nevpnprotocolikev2/childsecurityassociationparameters.md) of [`NEVPNProtocolIKEv2`](nevpnprotocolikev2.md) only takes effect if the [`enablePFS`](nevpnprotocolikev2/enablepfs.md) of [`NEVPNProtocolIKEv2`](nevpnprotocolikev2.md) is [`true`](https://developer.apple.com/documentation/swift/true) (its default value is [`false`](https://developer.apple.com/documentation/swift/false)).
 
 ## See Also
 

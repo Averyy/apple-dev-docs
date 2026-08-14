@@ -23,7 +23,7 @@ struct AVMergedMetrics<MetricEvent1, MetricEvent2, each MetricEventPack> where M
 ## Relationships
 
 ### Conforms To
-- [AsyncSequence](../Swift/AsyncSequence.md)
+- [AsyncSequence](../swift/asyncsequence.md)
 
 ## See Also
 

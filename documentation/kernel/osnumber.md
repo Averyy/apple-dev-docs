@@ -18,7 +18,9 @@ class OSNumber : OSObject
 
 OSNumber represents an integer of 8, 16, 32, or 64 bits as a Libkern C++ object. OSNumber objects are mutable: you can add to or set their values.
 
-With very few exceptions in the I/O Kit, all Libkern-based C++ classes, functions, and macros are  to use in a primary interrupt context. Consult the I/O Kit documentation related to primary interrupts for more information.
+**Use Restrictions**
+
+With very few exceptions in the I/O Kit, all Libkern-based C++ classes, functions, and macros are **unsafe** to use in a primary interrupt context. Consult the I/O Kit documentation related to primary interrupts for more information.
 
 OSNumber provides no concurrency protection; it's up to the usage context to provide any protection necessary. Some portions of the I/O Kit, such as IORegistryEntry, handle synchronization via defined member functions for setting properties.
 
@@ -59,26 +61,26 @@ OSNumber provides no concurrency protection; it's up to the usage context to pro
   Creates and initializes an instance of OSNumber with an integer value.
 ### Instance Methods
 - [- addValue](osnumber/1536683-addvalue.md)
-- [- free](../driverkit/osnumber/free.md)
+- [- free](osnumber/3180921-free.md)
 - [- getMetaClass](osnumber/1536671-getmetaclass.md)
 - [- init](osnumber/1536668-init.md)
 - [- init](osnumber/3516837-init.md)
-- [- isEqualTo](../driverkit/osnumber/isequalto-58rb9.md)
+- [- isEqualTo](osnumber/3180922-isequalto.md)
   Compares the number with an OSNumber.
-- [- isEqualTo](../driverkit/osnumber/isequalto-333kh.md)
+- [- isEqualTo](osnumber/3434345-isequalto.md)
   Compares the string with an OSObject
-- [- numberOfBits](../driverkit/osnumber/numberofbits.md)
+- [- numberOfBits](osnumber/3180923-numberofbits.md)
   Returns the number of bits the OSNumber was created with.
 - [- numberOfBytes](osnumber/1536680-numberofbytes.md)
 - [- serialize](osnumber/1536674-serialize.md)
 - [- setValue](osnumber/1536666-setvalue.md)
-- [- unsigned16BitValue](../driverkit/osnumber/unsigned16bitvalue.md)
+- [- unsigned16BitValue](osnumber/3180924-unsigned16bitvalue.md)
   Returns the value of the OSNumber as a uint16_t value.
-- [- unsigned32BitValue](../driverkit/osnumber/unsigned32bitvalue.md)
+- [- unsigned32BitValue](osnumber/3180925-unsigned32bitvalue.md)
   Returns the value of the OSNumber as a uint32_t value.
-- [- unsigned64BitValue](../driverkit/osnumber/unsigned64bitvalue.md)
+- [- unsigned64BitValue](osnumber/3180926-unsigned64bitvalue.md)
   Returns the value of the OSNumber as a uint64_t value.
-- [- unsigned8BitValue](../driverkit/osnumber/unsigned8bitvalue.md)
+- [- unsigned8BitValue](osnumber/3180927-unsigned8bitvalue.md)
   Returns the value of the OSNumber as a uint8_t value.
 ### Type Methods
 - [+ withNumber](osnumber/1536669-withnumber.md)

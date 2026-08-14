@@ -79,8 +79,8 @@ You can add a trait that conforms to both [`TestTrait`](testtrait.md) and [`Suit
 ## Relationships
 
 ### Inherits From
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 ### Inherited By
 - [SuiteTrait](suitetrait.md)
 - [TestTrait](testtrait.md)

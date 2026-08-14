@@ -21,7 +21,7 @@ let AVVideoCompressionPropertiesKey: String
 
 #### Discussion
 
-The value for this key is an instance of [`NSDictionary`](https://developer.apple.com/documentation/Foundation/NSDictionary). Add entries to this dictionary to manually change bit rate, B-frame delivery, I-frame interval, and codec quality. Querying the [`supportedOutputSettingsKeys(for:)`](avcapturemoviefileoutput/supportedoutputsettingskeys(for:).md) method reveals the keys supported for the current release and configuration.
+The value for this key is an instance of [`NSDictionary`](https://developer.apple.com/documentation/foundation/nsdictionary). Add entries to this dictionary to manually change bit rate, B-frame delivery, I-frame interval, and codec quality. Querying the [`supportedOutputSettingsKeys(for:)`](avcapturemoviefileoutput/supportedoutputsettingskeys(for:).md) method reveals the keys supported for the current release and configuration.
 
 ## See Also
 

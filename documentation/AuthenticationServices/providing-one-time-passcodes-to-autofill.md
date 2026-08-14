@@ -12,7 +12,7 @@ Your credential provider extension can supply OTPs to AutoFill so that people ca
 
 ##### Indicate That Your Extension Provides Otps
 
-Open your credential provider extension’s information property list file in Xcode and add a key to the [`ASCredentialProviderExtensionCapabilities`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSExtension/NSExtensionAttributes/ASCredentialProviderExtensionCapabilities) dictionary. Set the key’s name to `ProvidesOneTimeCodes`, and its value to the Boolean `true`.
+Open your credential provider extension’s information property list file in Xcode and add a key to the [`ASCredentialProviderExtensionCapabilities`](https://developer.apple.com/documentation/bundleresources/information-property-list/nsextension/nsextensionattributes/ascredentialproviderextensioncapabilities) dictionary. Set the key’s name to `ProvidesOneTimeCodes`, and its value to the Boolean `true`.
 
 ##### Respond to System Requests for Otp Autofill
 
@@ -26,7 +26,7 @@ When someone uses a text field to complete an OTP using AutoFill, they can tap a
 
 ## See Also
 
-- [AutoFill Credential Provider Entitlement](../BundleResources/Entitlements/com.apple.developer.authentication-services.autofill-credential-provider.md)
+- [AutoFill Credential Provider Entitlement](../bundleresources/entitlements/com.apple.developer.authentication-services.autofill-credential-provider.md)
   A Boolean value that indicates whether the app may, with user permission, provide user names and passwords for AutoFill in Safari and other apps.
 - [class ASCredentialProviderViewController](ascredentialproviderviewcontroller.md)
   A view controller that a credential manager app uses to extend AutoFill.

@@ -25,7 +25,7 @@ let levels: [(timeRange: CMTimeRange, level: Float)]
 
 #### Discussion
 
-Each element pairs a [`CMTimeRange`](https://developer.apple.com/documentation/CoreMedia/CMTimeRange) with a floating-point level value from `0` (least engaging) to `9` (most engaging). The array covers every segment in the video, not just the highlights.
+Each element pairs a [`CMTimeRange`](https://developer.apple.com/documentation/coremedia/cmtimerange) with a floating-point level value from `0` (least engaging) to `9` (most engaging). The array covers every segment in the video, not just the highlights.
 
 ## See Also
 

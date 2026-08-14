@@ -21,7 +21,7 @@ func AudioComponentFindNext(_ inComponent: AudioComponent?, _ inDesc: UnsafePoin
 
 #### Return Value
 
-An audio component, or [`nil`](https://developer.apple.com/documentation/ObjectiveC/nil-227m0) if not found.
+An audio component, or [`nil`](https://developer.apple.com/documentation/objectivec/nil-227m0) if not found.
 
 ## Parameters
 

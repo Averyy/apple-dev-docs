@@ -23,7 +23,7 @@ case double
 ## See Also
 
 - [OSLogMessageComponent.ArgumentCategory.data](oslogmessagecomponent/argumentcategory-swift.enum/data.md)
-  The argument is an [`NSData`](https://developer.apple.com/documentation/Foundation/NSData) object.
+  The argument is an [`NSData`](https://developer.apple.com/documentation/foundation/nsdata) object.
 - [OSLogMessageComponent.ArgumentCategory.int64](oslogmessagecomponent/argumentcategory-swift.enum/int64.md)
   The argument is a 64-bit signed integer.
 - [OSLogMessageComponent.ArgumentCategory.string](oslogmessagecomponent/argumentcategory-swift.enum/string.md)

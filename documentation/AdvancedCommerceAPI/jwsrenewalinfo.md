@@ -16,7 +16,7 @@ string JWSRenewalInfo
 
 ##### Description
 
-This `JWSRenewalInfo` object is identical to the one used in the App Store Server API and by App Store Server Notifications. For details, see [`JWSRenewalInfo`](https://developer.apple.com/documentation/AppStoreServerAPI/JWSRenewalInfo).
+This `JWSRenewalInfo` object is identical to the one used in the App Store Server API and by App Store Server Notifications. For details, see [`JWSRenewalInfo`](https://developer.apple.com/documentation/appstoreserverapi/jwsrenewalinfo).
 
 ## See Also
 

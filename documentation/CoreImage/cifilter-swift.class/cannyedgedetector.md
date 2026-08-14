@@ -51,7 +51,7 @@ func cannyEdgeDetector(inputImage: CIImage) -> CIImage {
 }
 ```
 
-![Two images arranged horizontally. The left image contains a palm tree against a clear sky. The right image contains the result of running the Canny edge-detection filter. The result image contains the outline of the palm tree.](https://docs-assets.developer.apple.com/published/167f41db69e548d6940d775342c2072c/media-4407284%402x.png)
+![Two images arranged horizontally. The left image contains a palm tree against a clear sky. The right image contains the result of running the Canny edge-detection filter. The result image contains the outline of the palm tree.](/images/com.apple.coreimage/media-4407284@2x.png)
 
 ## See Also
 

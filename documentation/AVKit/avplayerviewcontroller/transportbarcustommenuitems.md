@@ -20,7 +20,7 @@ var transportBarCustomMenuItems: [UIMenuElement] { get set }
 
 #### Discussion
 
-Use this property to display custom pop-up menus in transport bar. This property only supports menu elements of type [`UIAction`](https://developer.apple.com/documentation/UIKit/UIAction) and [`UIMenu`](https://developer.apple.com/documentation/UIKit/UIMenu), and supports displaying inline one level of submenus.
+Use this property to display custom pop-up menus in transport bar. This property only supports menu elements of type [`UIAction`](https://developer.apple.com/documentation/uikit/uiaction) and [`UIMenu`](https://developer.apple.com/documentation/uikit/uimenu), and supports displaying inline one level of submenus.
 
 ## See Also
 

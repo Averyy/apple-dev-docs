@@ -20,7 +20,7 @@ let kMIDIPropertyConnectionUniqueID: CFString
 
 #### Discussion
 
-The value provided may be an integer. To indicate that a driver connects to multiple external objects, pass the array of big-endian `SInt32` values as a [`CFData`](https://developer.apple.com/documentation/CoreFoundation/CFData) object.
+The value provided may be an integer. To indicate that a driver connects to multiple external objects, pass the array of big-endian `SInt32` values as a [`CFData`](https://developer.apple.com/documentation/corefoundation/cfdata) object.
 
 The property is nonexistent or 0 if there’s no connection.
 

@@ -30,7 +30,7 @@ To find out if an undo group contains only discardable actions, look for the `NS
 
 ## Parameters
 
-- `discardable`: Specifies if the action is discardable. [`true`](https://developer.apple.com/documentation/Swift/true) if the next undo or redo action can be discarded; [`false`](https://developer.apple.com/documentation/Swift/false) otherwise.
+- `discardable`: Specifies if the action is discardable. [`true`](https://developer.apple.com/documentation/swift/true) if the next undo or redo action can be discarded; [`false`](https://developer.apple.com/documentation/swift/false) otherwise.
 
 ## See Also
 

@@ -22,7 +22,7 @@ let kSecMatchTrustedOnly: CFString
 
 #### Discussion
 
-The corresponding value is of type [`CFBoolean`](https://developer.apple.com/documentation/CoreFoundation/CFBoolean). If this attribute is provided with a value of [`kCFBooleanTrue`](https://developer.apple.com/documentation/CoreFoundation/kCFBooleanTrue), only certificates that can be verified back to a trusted anchor are returned. If this value is [`kCFBooleanFalse`](https://developer.apple.com/documentation/CoreFoundation/kCFBooleanFalse) or the attribute is not provided, then both trusted and untrusted certificates may be returned.
+The corresponding value is of type [`CFBoolean`](https://developer.apple.com/documentation/corefoundation/cfboolean). If this attribute is provided with a value of [`kCFBooleanTrue`](https://developer.apple.com/documentation/corefoundation/kcfbooleantrue), only certificates that can be verified back to a trusted anchor are returned. If this value is [`kCFBooleanFalse`](https://developer.apple.com/documentation/corefoundation/kcfbooleanfalse) or the attribute is not provided, then both trusted and untrusted certificates may be returned.
 
 
 ---

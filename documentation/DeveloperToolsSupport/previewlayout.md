@@ -22,7 +22,7 @@ enum PreviewLayout
 
 #### Overview
 
-Customize the layout of a preview that you define using the [`PreviewProvider`](https://developer.apple.com/documentation/SwiftUI/PreviewProvider) protocol by providing one of the preview layout values to the [`previewLayout(_:)`](https://developer.apple.com/documentation/SwiftUI/View/previewLayout(_:)) view modifier. For example, you can tell the preview to take up only the amount of space that the view requires with [`PreviewLayout.sizeThatFits`](previewlayout/sizethatfits.md):
+Customize the layout of a preview that you define using the [`PreviewProvider`](https://developer.apple.com/documentation/swiftui/previewprovider) protocol by providing one of the preview layout values to the [`previewLayout(_:)`](https://developer.apple.com/documentation/swiftui/view/previewlayout(_:)) view modifier. For example, you can tell the preview to take up only the amount of space that the view requires with [`PreviewLayout.sizeThatFits`](previewlayout/sizethatfits.md):
 
 ```swift
 struct CircleImage_Previews: PreviewProvider {
@@ -33,7 +33,7 @@ struct CircleImage_Previews: PreviewProvider {
 }
 ```
 
-> **Note**: When you migrate away from preview providers and to preview macros, you specify layout using one of the [`PreviewTrait`](previewtrait.md) layout values with a macro that takes traits, like [`Preview(_:traits:_:body:)`](https://developer.apple.com/documentation/SwiftUI/Preview(_:traits:_:body:)).
+> **Note**: When you migrate away from preview providers and to preview macros, you specify layout using one of the [`PreviewTrait`](previewtrait.md) layout values with a macro that takes traits, like [`Preview(_:traits:_:body:)`](https://developer.apple.com/documentation/swiftui/preview(_:traits:_:body:)).
 
 ## Topics
 
@@ -50,8 +50,8 @@ struct CircleImage_Previews: PreviewProvider {
 ## Relationships
 
 ### Conforms To
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

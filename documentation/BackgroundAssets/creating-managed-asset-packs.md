@@ -77,9 +77,9 @@ xcrun ba-package Manifest.json -o Tutorial.aar
 
 ##### Manage Asset Packs in App Store Connect
 
-For Apple-hosted asset packs, upload your asset packs — independent of your app builds — to App Store Connect using the  [`Transporter`](https://developer.apple.comhttps://apps.apple.com/us/app/transporter/id1450874784) app, the `altool` command-line tool, iTMSTransporter, or the [`App Store Connect API`](https://developer.apple.com/documentation/AppStoreConnectAPI). Later, when you want to test your app using TestFlight with external testers or to distribute it on the App Store, you can submit your asset packs for review.
+For Apple-hosted asset packs, upload your asset packs — independent of your app builds — to App Store Connect using the  [`Transporter`](https://developer.apple.comhttps://apps.apple.com/us/app/transporter/id1450874784) app, the `altool` command-line tool, iTMSTransporter, or the [`App Store Connect API`](https://developer.apple.com/documentation/appstoreconnectapi). Later, when you want to test your app using TestFlight with external testers or to distribute it on the App Store, you can submit your asset packs for review.
 
-For more information about managing your asset packs in App Store Connect, see [`Overview of Apple-hosted asset packs`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/manage-asset-packs/overview-of-apple-hosted-asset-packs) in App Store Connect Help. To use web services, see [`Uploading and versioning Apple hosted background assets`](https://developer.apple.com/documentation/AppStoreConnectAPI/managing-apple-hosted-background-assets).
+For more information about managing your asset packs in App Store Connect, see [`Overview of Apple-hosted asset packs`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/manage-asset-packs/overview-of-apple-hosted-asset-packs) in App Store Connect Help. To use web services, see [`Uploading and versioning Apple hosted background assets`](https://developer.apple.com/documentation/appstoreconnectapi/managing-apple-hosted-background-assets).
 
 ## See Also
 

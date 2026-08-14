@@ -40,7 +40,7 @@ protocol SubscriptionOptionGroupStyle
 ## See Also
 
 - [func subscriptionStoreOptionGroupStyle(some SubscriptionOptionGroupStyle) -> some View
-](../SwiftUI/View/subscriptionStoreOptionGroupStyle(_:).md)
+](../swiftui/view/subscriptionstoreoptiongroupstyle(_:).md)
   Sets the style subscription store views within this view use to display groups of subscription options.
 - [func subscriptionStoreOptionGroupStyle(some SubscriptionOptionGroupStyle) -> some StoreContent](storecontent/subscriptionstoreoptiongroupstyle(_:).md)
 

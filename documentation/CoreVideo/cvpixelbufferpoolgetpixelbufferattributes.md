@@ -22,7 +22,7 @@ func CVPixelBufferPoolGetPixelBufferAttributes(_ pool: CVPixelBufferPool) -> CFD
 
 #### Return Value
 
-A Core Foundation dictionary containing the pool attributes, or [`nil`](https://developer.apple.com/documentation/ObjectiveC/nil-227m0) if the function fails.
+A Core Foundation dictionary containing the pool attributes, or [`nil`](https://developer.apple.com/documentation/objectivec/nil-227m0) if the function fails.
 
 #### Discussion
 

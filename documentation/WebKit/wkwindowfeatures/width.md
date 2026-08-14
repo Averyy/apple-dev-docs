@@ -20,7 +20,7 @@ var width: NSNumber? { get }
 
 #### Discussion
 
-The object in this property contains a [`CGFloat`](https://developer.apple.com/documentation/CoreFoundation/CGFloat-swift.struct) value. If the webpage didn’t request a specific window width, this property is `nil`.
+The object in this property contains a [`CGFloat`](https://developer.apple.com/documentation/corefoundation/cgfloat-swift.struct) value. If the webpage didn’t request a specific window width, this property is `nil`.
 
 ## See Also
 

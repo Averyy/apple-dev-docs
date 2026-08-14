@@ -6,7 +6,7 @@ Analyze your app’s performance by invoking Metal’s frame capture.
 
 #### Overview
 
-Use the [`MTLCaptureManager`](https://developer.apple.com/documentation/Metal/MTLCaptureManager) to programmatically capture information about commands you send to a specific device object. For example, you can capture a specific frame or part of a frame, depending on your needs, by implementing a custom UI that triggers a capture, or by programmatically triggering a capture at runtime from within your app.
+Use the [`MTLCaptureManager`](https://developer.apple.com/documentation/metal/mtlcapturemanager) to programmatically capture information about commands you send to a specific device object. For example, you can capture a specific frame or part of a frame, depending on your needs, by implementing a custom UI that triggers a capture, or by programmatically triggering a capture at runtime from within your app.
 
 ##### Enable Capturing Programmatically
 
@@ -18,7 +18,7 @@ Alternatively, in macOS 14 and later, you can set the environment variable on yo
 
 ##### Capture a Device or Command Queue
 
-Create an [`MTLCaptureDescriptor`](https://developer.apple.com/documentation/Metal/MTLCaptureDescriptor) object that defines which commands you want to record and what needs to happen after the capture is complete. To capture commands for a specific [`MTLDevice`](https://developer.apple.com/documentation/Metal/MTLDevice) or [`MTLCommandQueue`](https://developer.apple.com/documentation/Metal/MTLCommandQueue), set the capture descriptor’s [`captureObject`](https://developer.apple.com/documentation/Metal/MTLCaptureDescriptor/captureObject) property to point at the specific object to track, and call the [`startCapture(with:)`](https://developer.apple.com/documentation/Metal/MTLCaptureManager/startCapture(with:)) method. To stop capturing commands, call the [`stopCapture()`](https://developer.apple.com/documentation/Metal/MTLCaptureManager/stopCapture()) method.
+Create an [`MTLCaptureDescriptor`](https://developer.apple.com/documentation/metal/mtlcapturedescriptor) object that defines which commands you want to record and what needs to happen after the capture is complete. To capture commands for a specific [`MTLDevice`](https://developer.apple.com/documentation/metal/mtldevice) or [`MTLCommandQueue`](https://developer.apple.com/documentation/metal/mtlcommandqueue), set the capture descriptor’s [`captureObject`](https://developer.apple.com/documentation/metal/mtlcapturedescriptor/captureobject) property to point at the specific object to track, and call the [`startCapture(with:)`](https://developer.apple.com/documentation/metal/mtlcapturemanager/startcapture(with:)) method. To stop capturing commands, call the [`stopCapture()`](https://developer.apple.com/documentation/metal/mtlcapturemanager/stopcapture()) method.
 
 ```swift
 func triggerProgrammaticCapture(device: MTLDevice) {
@@ -41,13 +41,13 @@ func runMetalCommands(commandQueue: MTLCommandQueue) {
 }
 ```
 
-The capture manager captures commands only within [`MTLCommandBuffer`](https://developer.apple.com/documentation/Metal/MTLCommandBuffer) objects that you create after the capture starts and commit before the capture stops.
+The capture manager captures commands only within [`MTLCommandBuffer`](https://developer.apple.com/documentation/metal/mtlcommandbuffer) objects that you create after the capture starts and commit before the capture stops.
 
 > 💡 **Tip**: When you capture a frame programmatically, you can capture Metal commands that span multiple frames. For example, by calling `startCapture` at the start of frame 1 and `stopCapture` after frame 3, the traces contain command data from all the buffers that the system commits in the three frames.
 
 ##### Capture Specific Commands with a Capture Scope
 
-To learn how to add custom scopes to your app, see [`Creating and using custom capture scopes`](creating-and-using-custom-capture-scopes.md). To capture commands using a custom scope, create an [`MTLCaptureScope`](https://developer.apple.com/documentation/Metal/MTLCaptureScope) object and set the capture descriptor’s [`captureObject`](https://developer.apple.com/documentation/Metal/MTLCaptureDescriptor/captureObject) property to point to it.
+To learn how to add custom scopes to your app, see [`Creating and using custom capture scopes`](creating-and-using-custom-capture-scopes.md). To capture commands using a custom scope, create an [`MTLCaptureScope`](https://developer.apple.com/documentation/metal/mtlcapturescope) object and set the capture descriptor’s [`captureObject`](https://developer.apple.com/documentation/metal/mtlcapturedescriptor/captureobject) property to point to it.
 
 > ❗ **Important**: Set the file extension of the `outputURL` to `.gputrace` to ensure that you can replay it later in the Metal debugger. For more information on replaying GPU trace files, see [`Replaying a GPU trace file`](replaying-a-gpu-trace-file.md).
 
@@ -70,7 +70,7 @@ func triggerProgrammaticCaptureScope() {
 }
 ```
 
-To define boundaries for the scoped capture, call the [`MTLCaptureScope`](https://developer.apple.com/documentation/Metal/MTLCaptureScope) object’s [`begin()`](https://developer.apple.com/documentation/Metal/MTLCaptureScope/begin()) and [`end()`](https://developer.apple.com/documentation/Metal/MTLCaptureScope/end()) methods just before and after the commands that you want to capture. Xcode automatically stops capturing when your app reaches the corresponding `end()` method of the capture scope.
+To define boundaries for the scoped capture, call the [`MTLCaptureScope`](https://developer.apple.com/documentation/metal/mtlcapturescope) object’s [`begin()`](https://developer.apple.com/documentation/metal/mtlcapturescope/begin()) and [`end()`](https://developer.apple.com/documentation/metal/mtlcapturescope/end()) methods just before and after the commands that you want to capture. Xcode automatically stops capturing when your app reaches the corresponding `end()` method of the capture scope.
 
 ```swift
 func runMetalCommands(commandQueue: MTLCommandQueue) {
@@ -82,11 +82,11 @@ func runMetalCommands(commandQueue: MTLCommandQueue) {
 }
 ```
 
-> ❗ **Important**: The capture scope captures commands only within [`MTLCommandBuffer`](https://developer.apple.com/documentation/Metal/MTLCommandBuffer) objects that you create after the scope begins and commit before the scope ends.
+> ❗ **Important**: The capture scope captures commands only within [`MTLCommandBuffer`](https://developer.apple.com/documentation/metal/mtlcommandbuffer) objects that you create after the scope begins and commit before the scope ends.
 
 ##### Save the Capture to Your Computer
 
-If you want to analyze the capture later, you can skip launching the Metal debugger and save the GPU command information to a GPU trace file. Call [`supportsDestination(_:)`](https://developer.apple.com/documentation/Metal/MTLCaptureManager/supportsDestination(_:)) on the capture manager to make sure the feature is available before attempting to record a trace file.
+If you want to analyze the capture later, you can skip launching the Metal debugger and save the GPU command information to a GPU trace file. Call [`supportsDestination(_:)`](https://developer.apple.com/documentation/metal/mtlcapturemanager/supportsdestination(_:)) on the capture manager to make sure the feature is available before attempting to record a trace file.
 
 ```swift
 let captureManager = MTLCaptureManager.shared()

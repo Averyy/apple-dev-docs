@@ -14,9 +14,9 @@ Access financial data and interact with Apple Card, Apple Cash, and orders in Wa
 
 Use FinanceKit to access on-device financial data, Apple Cash, and interact with orders in Apple Wallet.
 
-You interact with FinanceKit through [`FinanceStore`](financestore.md) and [`FinanceKitUI`](https://developer.apple.com/documentation/FinanceKitUI), which presents a standardized UI that people access.
+You interact with FinanceKit through [`FinanceStore`](financestore.md) and [`FinanceKitUI`](https://developer.apple.com/documentation/financekitui), which presents a standardized UI that people access.
 
-![Image of FinanceKit hero logo.](https://docs-assets.developer.apple.com/published/7c9c9fc964649ae4b55466327fde7c07/financekit-hero-img.png)
+![Image of FinanceKit hero logo.](/images/com.apple.financekit/financekit-hero-img.png)
 
 Using the FinanceKit framework, you can:
 
@@ -31,7 +31,7 @@ Using the FinanceKit framework, you can:
 ### Essentials
 - [Implementing a background delivery extension](implementing-a-background-delivery-extension.md)
   Receive up-to-date financial data in your app and its extensions by adding a background delivery extension.
-- [FinanceKit updates](../Updates/FinanceKit.md)
+- [FinanceKit updates](../updates/financekit.md)
   Learn more about changes to FinanceKit.
 ### Data storage
 - [class FinanceStore](financestore.md)

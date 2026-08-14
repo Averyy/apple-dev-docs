@@ -47,7 +47,7 @@ Pick only the interfaces you need to optimize your app load time. MapKit JS divi
 
 You can set the libraries to load statically by defining them in the `libraries` options array on the MapKit JS Loader `load()` function, within a script tag in the `data-libraries` attribute.
 
-You can load additional libraries using the [`load(libraryNames)`](mapkit/load.md) method after MapKit JS initialization; the method returns a promise that resolves when the libraries finish loading. The [`init(options)`](mapkit/init.md) method also offers a `libraries` property in [`MapKitInitializationOptions`](mapkitinitializationoptions.md).
+You can load additional libraries using the [`load()`](mapkit/load.md) method after MapKit JS initialization; the method returns a promise that resolves when the libraries finish loading. The [`init()`](mapkit/init.md) method also offers a `libraries` property in [`MapKitInitializationOptions`](mapkitinitializationoptions.md).
 
 #### Load with a Script Tag
 
@@ -89,7 +89,7 @@ The data attributes you can set on the `script` element are:
 - **`data-callback`**: Required; this is the callback the browser calls when MapKit JS finishes loading or when library loading fails, allowing your application to handle errors.
 - **`data-language`**: The language to set for MapKit JS. A language ID is a language designator followed by an optional region or script designator. Examples of language IDs include: `de` (German), `es-MX`, (Mexican Spanish), and `zh-Hans` (simplified Chinese).
 - **`data-libraries`**: Required; this is a comma-separated list of libraries to load at initialization. See the list of available libraries and the services they provide below.
-- **`data-token`**: Required unless you intend to call [`init(options)`](mapkit/init.md) later. See [`Creating a Maps token`](creating-a-maps-token.md) to obtain a Maps token.
+- **`data-token`**: Required unless you intend to call [`init()`](mapkit/init.md) later. See [`Creating a Maps token`](creating-a-maps-token.md) to obtain a Maps token.
 
 #### Choose Specific Releases Using Semantic Versioning
 

@@ -33,7 +33,7 @@ The default `NSCell` implementation of [`trackMouse(with:in:of:untilMouseUp:)`](
 - `lastPoint`: Contains the previous position of the cursor.
 - `stopPoint`: The current location of the cursor.
 - `controlView`: The `NSControl` object managing the receiver.
-- `flag`: If [`true`](https://developer.apple.com/documentation/Swift/true), this method was invoked because the user released the mouse button; otherwise, if [`false`](https://developer.apple.com/documentation/Swift/false), the cursor left the designated tracking rectangle.
+- `flag`: If [`true`](https://developer.apple.com/documentation/swift/true), this method was invoked because the user released the mouse button; otherwise, if [`false`](https://developer.apple.com/documentation/swift/false), the cursor left the designated tracking rectangle.
 
 ## See Also
 

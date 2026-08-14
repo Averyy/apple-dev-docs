@@ -22,7 +22,7 @@ var kAudioSessionMode_Default: Int { get }
 
 When this mode is in use, audio session behavior matches that of iOS versions prior to iOS 5.0. You can use this mode with every audio session category. On devices with more than one built-in microphone, the primary microphone is used.
 
-This mode is equivalent to the [`default`](https://developer.apple.com/documentation/AVFAudio/AVAudioSession/Mode-swift.struct/default) mode provided in the AVFoundation framework.
+This mode is equivalent to the [`default`](https://developer.apple.com/documentation/avfaudio/avaudiosession/mode-swift.struct/default) mode provided in the AVFoundation framework.
 
 ## See Also
 

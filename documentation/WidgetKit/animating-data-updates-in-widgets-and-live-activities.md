@@ -16,15 +16,15 @@ For example, text views animate content changes with blurred content transitions
 
 To replace default animations and transitions:
 
-- Configure built-in transitions like [`opacity`](https://developer.apple.com/documentation/SwiftUI/AnyTransition/opacity), [`move(edge:)`](https://developer.apple.com/documentation/SwiftUI/AnyTransition/move(edge:)), [`slide`](https://developer.apple.com/documentation/SwiftUI/AnyTransition/slide), [`push(from:)`](https://developer.apple.com/documentation/SwiftUI/AnyTransition/push(from:)), or combinations of them.
-- Add [`transition(_:)`](https://developer.apple.com/documentation/SwiftUI/View/transition(_:)-2vjb8), [`contentTransition(_:)`](https://developer.apple.com/documentation/SwiftUI/View/contentTransition(_:)), or [`animation(_:value:)`](https://developer.apple.com/documentation/SwiftUI/View/animation(_:value:)) to views.
-- Request animations for timer text with [`numericText(countsDown:)`](https://developer.apple.com/documentation/SwiftUI/ContentTransition/numericText(countsDown:)).
+- Configure built-in transitions like [`opacity`](https://developer.apple.com/documentation/swiftui/anytransition/opacity), [`move(edge:)`](https://developer.apple.com/documentation/swiftui/anytransition/move(edge:)), [`slide`](https://developer.apple.com/documentation/swiftui/anytransition/slide), [`push(from:)`](https://developer.apple.com/documentation/swiftui/anytransition/push(from:)), or combinations of them.
+- Add [`transition(_:)`](https://developer.apple.com/documentation/swiftui/view/transition(_:)-2vjb8), [`contentTransition(_:)`](https://developer.apple.com/documentation/swiftui/view/contenttransition(_:)), or [`animation(_:value:)`](https://developer.apple.com/documentation/swiftui/view/animation(_:value:)) to views.
+- Request animations for timer text with [`numericText(countsDown:)`](https://developer.apple.com/documentation/swiftui/contenttransition/numerictext(countsdown:)).
 
-> ❗ **Important**: On devices that include an Always-On display, the system doesn’t perform animations to preserve battery life in Always On. Check the [`isLuminanceReduced`](https://developer.apple.com/documentation/SwiftUI/EnvironmentValues/isLuminanceReduced) environment value to detect reduced luminance before animating content changes.
+> ❗ **Important**: On devices that include an Always-On display, the system doesn’t perform animations to preserve battery life in Always On. Check the [`isLuminanceReduced`](https://developer.apple.com/documentation/swiftui/environmentvalues/isluminancereduced) environment value to detect reduced luminance before animating content changes.
 
-For Live Activities that appear on devices that run iOS 16 or earlier, the system ignores any animation modifiers — for example, [`withAnimation(_:_:)`](https://developer.apple.com/documentation/SwiftUI/withAnimation(_:_:)) and [`animation(_:value:)`](https://developer.apple.com/documentation/SwiftUI/View/animation(_:value:)) — and uses the system’s animation timing instead. However, you can use built-in transitions like [`opacity`](https://developer.apple.com/documentation/SwiftUI/AnyTransition/opacity), [`move(edge:)`](https://developer.apple.com/documentation/SwiftUI/AnyTransition/move(edge:)), [`slide`](https://developer.apple.com/documentation/SwiftUI/AnyTransition/slide), [`push(from:)`](https://developer.apple.com/documentation/SwiftUI/AnyTransition/push(from:)), or combinations of them.
+For Live Activities that appear on devices that run iOS 16 or earlier, the system ignores any animation modifiers — for example, [`withAnimation(_:_:)`](https://developer.apple.com/documentation/swiftui/withanimation(_:_:)) and [`animation(_:value:)`](https://developer.apple.com/documentation/swiftui/view/animation(_:value:)) — and uses the system’s animation timing instead. However, you can use built-in transitions like [`opacity`](https://developer.apple.com/documentation/swiftui/anytransition/opacity), [`move(edge:)`](https://developer.apple.com/documentation/swiftui/anytransition/move(edge:)), [`slide`](https://developer.apple.com/documentation/swiftui/anytransition/slide), [`push(from:)`](https://developer.apple.com/documentation/swiftui/anytransition/push(from:)), or combinations of them.
 
-For more information about SwiftUI animations, refer to [`Animations`](https://developer.apple.com/documentation/SwiftUI/Animations).
+For more information about SwiftUI animations, refer to [`Animations`](https://developer.apple.com/documentation/swiftui/animations).
 
 ##### Add Transitions and Animations to Views That Update Their Data
 
@@ -47,7 +47,7 @@ Text (totalCaffeine.formatCaffeine())
     .animation(.spring(duration: 0.2), value: totalCaffeine)
 ```
 
-To use custom text animations, use [`contentTransition(_:)`](https://developer.apple.com/documentation/SwiftUI/View/contentTransition(_:)) as shown in the example above. To use the default text animation, use [`transition(_:)`](https://developer.apple.com/documentation/SwiftUI/View/transition(_:)-2vjb8), and customize its speed and delay as shown in the following example:
+To use custom text animations, use [`contentTransition(_:)`](https://developer.apple.com/documentation/swiftui/view/contenttransition(_:)) as shown in the example above. To use the default text animation, use [`transition(_:)`](https://developer.apple.com/documentation/swiftui/view/transition(_:)-2vjb8), and customize its speed and delay as shown in the following example:
 
 ```swift
 Text("Some text with \(entry.value) that changes.")
@@ -56,7 +56,7 @@ Text("Some text with \(entry.value) that changes.")
 
 ##### Add Transitions and Animations to Additional Views
 
-In addition to adding transitions or animations to a view that changes its data, you can animate a view when other widget information changes. To animate a view when a certain value changes, first associate the view you want to animate with that value’s data model object. This is easiest when your data model conforms to the [`Hashable`](https://developer.apple.com/documentation/Swift/Hashable) protocol. If your data model doesn’t conform to `Hashable`, change its code accordingly. Then, associate the view with the data model using the [`id(_:)`](https://developer.apple.com/documentation/SwiftUI/View/id(_:)) view modifier. Finally, add a transition or animation.
+In addition to adding transitions or animations to a view that changes its data, you can animate a view when other widget information changes. To animate a view when a certain value changes, first associate the view you want to animate with that value’s data model object. This is easiest when your data model conforms to the [`Hashable`](https://developer.apple.com/documentation/swift/hashable) protocol. If your data model doesn’t conform to `Hashable`, change its code accordingly. Then, associate the view with the data model using the [`id(_:)`](https://developer.apple.com/documentation/swiftui/view/id(_:)) view modifier. Finally, add a transition or animation.
 
 The following example shows how the `LastDrinkView` adds a push transition when the associated `log` changes.
 
@@ -82,9 +82,9 @@ struct LastDrinkView: View {
 
 ##### Disable Animations
 
-If a content update changes many views in your widget or Live Activity, consider disabling transitions and animations for some views to direct a person’s attention to the most important updates. To disable animations for a view, including default animations, pass [`identity`](https://developer.apple.com/documentation/SwiftUI/ContentTransition/identity) to [`transition(_:)`](https://developer.apple.com/documentation/SwiftUI/View/transition(_:)-5h5h0) or `nil` to the `animation` parameter of [`withAnimation(_:_:)`](https://developer.apple.com/documentation/SwiftUI/withAnimation(_:_:)) and [`animation(_:value:)`](https://developer.apple.com/documentation/SwiftUI/View/animation(_:value:)).
+If a content update changes many views in your widget or Live Activity, consider disabling transitions and animations for some views to direct a person’s attention to the most important updates. To disable animations for a view, including default animations, pass [`identity`](https://developer.apple.com/documentation/swiftui/contenttransition/identity) to [`transition(_:)`](https://developer.apple.com/documentation/swiftui/view/transition(_:)-5h5h0) or `nil` to the `animation` parameter of [`withAnimation(_:_:)`](https://developer.apple.com/documentation/swiftui/withanimation(_:_:)) and [`animation(_:value:)`](https://developer.apple.com/documentation/swiftui/view/animation(_:value:)).
 
-> **Note**: [`Transaction`](https://developer.apple.com/documentation/SwiftUI/Transaction) isn’t available to widgets and Live Activities, so you can’t cancel or deactivate an animation by setting the transaction’s [`animation`](https://developer.apple.com/documentation/SwiftUI/Transaction/animation) property to `nil`.
+> **Note**: [`Transaction`](https://developer.apple.com/documentation/swiftui/transaction) isn’t available to widgets and Live Activities, so you can’t cancel or deactivate an animation by setting the transaction’s [`animation`](https://developer.apple.com/documentation/swiftui/transaction/animation) property to `nil`.
 
 ## See Also
 

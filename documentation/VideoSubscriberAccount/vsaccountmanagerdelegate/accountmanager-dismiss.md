@@ -21,7 +21,7 @@ func accountManager(_ accountManager: VSAccountManager, dismiss viewController: 
 
 #### Discussion
 
-The system calls this method when the `VideoSubscriberAccount` framework requires your app to dismiss an authentication view controller. You must use [`dismiss(animated:completion:)`](https://developer.apple.com/documentation/UIKit/UIViewController/dismiss(animated:completion:)) to dismiss the view controller before returning from this method.
+The system calls this method when the `VideoSubscriberAccount` framework requires your app to dismiss an authentication view controller. You must use [`dismiss(animated:completion:)`](https://developer.apple.com/documentation/uikit/uiviewcontroller/dismiss(animated:completion:)) to dismiss the view controller before returning from this method.
 
 ## Parameters
 

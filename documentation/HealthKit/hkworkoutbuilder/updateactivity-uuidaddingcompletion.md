@@ -21,14 +21,14 @@ func updateActivity(uuid UUID: UUID, adding metadata: [String : Any]) async thro
 
 #### Discussion
 
-You can call this method multiple times to incrementally add metadata to the workout activity. The system merges the new metadata with any existing metadata using [`addEntries(from:)`](https://developer.apple.com/documentation/Foundation/NSMutableDictionary/addEntries(from:)). Calling this method after calling [`finishWorkout(completion:)`](hkworkoutbuilder/finishworkout(completion:).md) fails with an error.
+You can call this method multiple times to incrementally add metadata to the workout activity. The system merges the new metadata with any existing metadata using [`addEntries(from:)`](https://developer.apple.com/documentation/foundation/nsmutabledictionary/addentries(from:)). Calling this method after calling [`finishWorkout(completion:)`](hkworkoutbuilder/finishworkout(completion:).md) fails with an error.
 
 ## Parameters
 
 - `UUID`: The workout activity’s universally unique identifier (UUID).
 - `metadata`: A dictionary containing the metadata keys and values to add to the workout activity.
-- `completion`: A callback handler that the system calls after updating the workout activity. The system calls the callback handler on an anonymous background queue. The callback handler takes the following parameters: - **success**: Contains [`true`](https://developer.apple.com/documentation/Swift/true) if the builder successfully updates the activity.
-- **error**: If the `success` parameter is [`false`](https://developer.apple.com/documentation/Swift/false), this parameter contains information about the error; otherwise, it’s `nil`.
+- `completion`: A callback handler that the system calls after updating the workout activity. The system calls the callback handler on an anonymous background queue. The callback handler takes the following parameters: - **success**: Contains [`true`](https://developer.apple.com/documentation/swift/true) if the builder successfully updates the activity.
+- **error**: If the `success` parameter is [`false`](https://developer.apple.com/documentation/swift/false), this parameter contains information about the error; otherwise, it’s `nil`.
 
 ## See Also
 

@@ -22,11 +22,11 @@ func copy(from sourceTexture: any MTLTexture, sourceSlice: Int, sourceLevel: Int
 
 #### Discussion
 
-Passing an empty [`OptionSet`](https://developer.apple.com/documentation/Swift/OptionSet) to the `options` parameter is the equivalent of calling [`copy(from:sourceSlice:sourceLevel:sourceOrigin:sourceSize:to:destinationOffset:destinationBytesPerRow:destinationBytesPerImage:)`](mtlblitcommandencoder/copy(from:sourceslice:sourcelevel:sourceorigin:sourcesize:to:destinationoffset:destinationbytesperrow:destinationbytesperimage:).md). In Swift, pass `[]` to represent an empty option set, and in Objective-C, pass [`MTLBlitOptionNone`](mtlblitoption/mtlblitoptionnone.md).
+Passing an empty [`OptionSet`](https://developer.apple.com/documentation/swift/optionset) to the `options` parameter is the equivalent of calling [`copy(from:sourceSlice:sourceLevel:sourceOrigin:sourceSize:to:destinationOffset:destinationBytesPerRow:destinationBytesPerImage:)`](mtlblitcommandencoder/copy(from:sourceslice:sourcelevel:sourceorigin:sourcesize:to:destinationoffset:destinationbytesperrow:destinationbytesperimage:).md). In Swift, pass `[]` to represent an empty option set, and in Objective-C, pass [`MTLBlitOptionNone`](mtlblitoption/mtlblitoptionnone.md).
 
 ## Parameters
 
-- `sourceTexture`: A texture with an [`isFramebufferOnly`](mtltexture/isframebufferonly.md) property value of [`false`](https://developer.apple.com/documentation/Swift/false) that the command copies data from.
+- `sourceTexture`: A texture with an [`isFramebufferOnly`](mtltexture/isframebufferonly.md) property value of [`false`](https://developer.apple.com/documentation/swift/false) that the command copies data from.
 - `sourceSlice`: A slice within `sourceTexture`. For textures that use a combined depth/stencil pixel format, configure the `options` parameter appropriately.
 - `sourceLevel`: A mipmap level within `sourceTexture`.
 - `sourceOrigin`: A location within `sourceTexture` that the command begins copying data from. Assign `0` to each dimension that’s not relevant to `sourceTexture`. For example: - If the source texture is a 2D texture, set the origin’s [`z`](mtlorigin/z.md) property to `0`.

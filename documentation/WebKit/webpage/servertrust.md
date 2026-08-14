@@ -21,7 +21,7 @@ final var serverTrust: SecTrust? { get }
 
 #### Discussion
 
-Use the object in this property to validate the webpage’s certificate and associated credentials. See [`Evaluating a Trust and Parsing the Result`](https://developer.apple.com/documentation/Security/evaluating-a-trust-and-parsing-the-result) for more details on how to use the trust.
+Use the object in this property to validate the webpage’s certificate and associated credentials. See [`Evaluating a Trust and Parsing the Result`](https://developer.apple.com/documentation/security/evaluating-a-trust-and-parsing-the-result) for more details on how to use the trust.
 
 ## See Also
 

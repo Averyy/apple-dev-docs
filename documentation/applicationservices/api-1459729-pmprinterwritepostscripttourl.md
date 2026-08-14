@@ -27,7 +27,7 @@ This function is synchronous; the conversion of the input file to PostScript is 
 - `printer`: The destination printer for which printer-ready PostScript will be generated.
 - `settings`: The print settings for the print job.
 - `format`: The page format specifying the physical page size and orientation on which the document should be printed.
-- `mimeType`: The MIME type of the file to be printed. If you pass  , the file is typed automatically. You can obtain a list of the MIME types supported by a given printer using the function  .
+- `mimeType`: The MIME type of the file to be printed. If you pass `NULL`, the file is typed automatically. You can obtain a list of the MIME types supported by a given printer using the function [`PMPrinterGetMimeTypes(_:_:_:)`](1460125-pmprintergetmimetypes.md).
 - `sourceFileURL`: A URL specifying the input file to be converted to printer-ready PostScript data. Only file-based URLs are supported.
 - `destinationFileURL`: A URL specifying the destination file to be created. If the file already exists, it will be overwritten. Only file-based URLs are supported.
 

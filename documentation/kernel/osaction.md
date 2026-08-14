@@ -20,13 +20,13 @@ class OSAction : OSObject, OSActionInterface
 - [- Cancel](osaction/3438205-cancel.md)
   Cancels the execution of the action's callbacks. 
 - [- Dispatch](osaction/3223366-dispatch.md)
-- [- EndWait](../driverkit/osaction/endwait.md)
+- [- EndWait](osaction/3538555-endwait.md)
 - [- GetReference](osaction/3438207-getreference.md)
   Returns a pointer to any additional memory allocated by the action object on your behalf.
 - [- SetAbortedHandler](osaction/3438208-setabortedhandler.md)
   Install a handler for the system to call when no other processes reference the action object.
-- [- Wait](../driverkit/osaction/wait.md)
-- [- WillWait](../driverkit/osaction/willwait.md)
+- [- Wait](osaction/3538556-wait.md)
+- [- WillWait](osaction/3538557-willwait.md)
 - [- free](osaction/3438209-free.md)
   Performs any final cleanup for the action object.
 - [- getMetaClass](osaction/3223369-getmetaclass.md)

@@ -37,7 +37,7 @@ Adds unique identifier for each solver instance as the rig can be reused.
 ## Relationships
 
 ### Conforms To
-- [Identifiable](../Swift/Identifiable.md)
+- [Identifiable](../swift/identifiable.md)
 
 ## See Also
 

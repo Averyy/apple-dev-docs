@@ -44,7 +44,7 @@ struct LabeledGauge: View {
 }
 ```
 
-![A screenshot of a gauge, labeled BPM, that’s represented by a](https://docs-assets.developer.apple.com/published/f36677c0da94cb4224de1633c1367dd7/SwiftUI-Gauge-LabeledCircular%402x.png)
+![A screenshot of a gauge, labeled BPM, that’s represented by a](/images/com.apple.SwiftUI/SwiftUI-Gauge-LabeledCircular@2x.png)
 
 ## Parameters
 

@@ -16,7 +16,7 @@ var constraintIndicatorFlags: Data? { get set }
 
 #### Discussion
 
-This value maps to the [`kCMHEVCTemporalLevelInfoKey_ConstraintIndicatorFlags`](https://developer.apple.com/documentation/CoreMedia/kCMHEVCTemporalLevelInfoKey_ConstraintIndicatorFlags) sample buffer attachment, and is `nil` if this information isn’t available.
+This value maps to the [`kCMHEVCTemporalLevelInfoKey_ConstraintIndicatorFlags`](https://developer.apple.com/documentation/coremedia/kcmhevctemporallevelinfokey_constraintindicatorflags) sample buffer attachment, and is `nil` if this information isn’t available.
 
 ## See Also
 

@@ -23,7 +23,7 @@ To support Exposure Notifications Express, a PHA must deploy two different types
 
 Exposure Notifications Express works by communicating with the test verification server and the key server at specific times in a defined process, as depicted in the figure below.
 
-![Diagram of the Exposure Notifications Express process with the actors in the steps listed in chronological order from left to right, including a PHA, a user, a test verification server, the user’s iPhone, and a key server. Underneath the icons depicting the actors is a chart of the steps the actors take with arrows indicating what direction information moves through the Exposure Notifications Express timeline.](https://docs-assets.developer.apple.com/published/8dbab23b2c12fe6941a934ff7f531fd3/media-3680724%402x.png)
+![Diagram of the Exposure Notifications Express process with the actors in the steps listed in chronological order from left to right, including a PHA, a user, a test verification server, the user’s iPhone, and a key server. Underneath the icons depicting the actors is a chart of the steps the actors take with arrows indicating what direction information moves through the Exposure Notifications Express timeline.](/images/com.apple.exposurenotification/media-3680724@2x.png)
 
 Here are the steps involved with verifying and submitting a positive diagnosis with Exposure Notifications Express.
 
@@ -58,9 +58,9 @@ The validated and uploaded keys are available for download by other devices to b
   Ensure that your server meets the requirements for supporting Exposure Notifications.
 - [class ENManager](enmanager.md)
   A class that manages exposure notifications.
-- [ENDeveloperRegion](../BundleResources/Information-Property-List/ENDeveloperRegion.md)
+- [ENDeveloperRegion](../bundleresources/information-property-list/endeveloperregion.md)
   A string that specifies the region that the app supports.
-- [ENAPIVersion](../BundleResources/Information-Property-List/ENAPIVersion.md)
+- [ENAPIVersion](../bundleresources/information-property-list/enapiversion.md)
   A number that specifies the version of the API to use.
 - [Changing Configuration Values Using the Server‑to‑Server API](changing-configuration-values-using-the-server-to-server-api.md)
   Update Exposure Notifications configuration values from a Public Health Authority’s server.

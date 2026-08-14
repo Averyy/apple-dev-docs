@@ -17,7 +17,7 @@ This sample code project demonstrates how to programmatically search for map-bas
 
 ##### Request Search Completions
 
-[`MKLocalSearchCompleter`](mklocalsearchcompleter.md) retrieves autocomplete suggestions for a partial search query within a map region. A person can type “cof”, and a search completion suggests “coffee” as the query string. As the person types a query into a search bar, the sample app updates the query. In SwiftUI, the sample creates the search field using the [`searchable(text:placement:prompt:)`](https://developer.apple.com/documentation/SwiftUI/View/searchable(text:placement:prompt:)) modifier.
+[`MKLocalSearchCompleter`](mklocalsearchcompleter.md) retrieves autocomplete suggestions for a partial search query within a map region. A person can type “cof”, and a search completion suggests “coffee” as the query string. As the person types a query into a search bar, the sample app updates the query. In SwiftUI, the sample creates the search field using the [`searchable(text:placement:prompt:)`](https://developer.apple.com/documentation/swiftui/view/searchable(text:placement:prompt:)) modifier.
 
 ```swift
 .searchable(text: $searchQuery, placement: .navigationBarDrawer(displayMode: .always), prompt: searchPrompt)
@@ -62,7 +62,7 @@ nonisolated func completerDidUpdateResults(_ completer: MKLocalSearchCompleter) 
 }
 ```
 
-The app uses an [`AsyncStream`](https://developer.apple.com/documentation/Swift/AsyncStream) to deliver the completion results to the UI, which the `SidebarView`  stores in its `searchCompletions` property. The app displays the search suggestions with the [`searchSuggestions(_:)`](https://developer.apple.com/documentation/SwiftUI/View/searchSuggestions(_:)) modifier, which takes a binding to the `searchCompletions` property.
+The app uses an [`AsyncStream`](https://developer.apple.com/documentation/swift/asyncstream) to deliver the completion results to the UI, which the `SidebarView`  stores in its `searchCompletions` property. The app displays the search suggestions with the [`searchSuggestions(_:)`](https://developer.apple.com/documentation/swiftui/view/searchsuggestions(_:)) modifier, which takes a binding to the `searchCompletions` property.
 
 ```swift
 .searchSuggestions {
@@ -80,7 +80,7 @@ The app uses an [`AsyncStream`](https://developer.apple.com/documentation/Swift/
 
 ##### Highlight the Relationship of a Query Fragment to the Suggestion
 
-Within the UI elements that represent each query result, the sample code uses the [`titleHighlightRanges`](mklocalsearchcompletion/titlehighlightranges.md) on an `MKLocalSearchCompletion` to show how the query someone enters relates to the suggested result. For example, the following code applies a highlight with [`NSAttributedString`](https://developer.apple.com/documentation/Foundation/NSAttributedString):
+Within the UI elements that represent each query result, the sample code uses the [`titleHighlightRanges`](mklocalsearchcompletion/titlehighlightranges.md) on an `MKLocalSearchCompletion` to show how the query someone enters relates to the suggested result. For example, the following code applies a highlight with [`NSAttributedString`](https://developer.apple.com/documentation/foundation/nsattributedstring):
 
 ```swift
 private func createHighlightedString(text: String, rangeValues: [NSValue]) -> NSAttributedString {
@@ -144,7 +144,7 @@ If a person is exploring the map, they can get information for a point of intere
 .mapFeatureSelectionAccessory(.automatic)
 ```
 
-When someone taps a point of interest, the system presents the map item’s details, including information like a phone number, business hours, and buttons to start navigation to the location using Apple Maps. The system presents the information using the style that the [`mapFeatureSelectionAccessory(_:)`](https://developer.apple.com/documentation/SwiftUI/View/mapFeatureSelectionAccessory(_:)) modifier configures. The sample app uses the [`automatic`](mapitemdetailselectionaccessorystyle/automatic.md) style, but the [`MapItemDetailSelectionAccessoryStyle`](mapitemdetailselectionaccessorystyle.md) structure offers several other options.
+When someone taps a point of interest, the system presents the map item’s details, including information like a phone number, business hours, and buttons to start navigation to the location using Apple Maps. The system presents the information using the style that the [`mapFeatureSelectionAccessory(_:)`](https://developer.apple.com/documentation/swiftui/view/mapfeatureselectionaccessory(_:)) modifier configures. The sample app uses the [`automatic`](mapitemdetailselectionaccessorystyle/automatic.md) style, but the [`MapItemDetailSelectionAccessoryStyle`](mapitemdetailselectionaccessorystyle.md) structure offers several other options.
 
 ##### Persist and Retrieve Map Items
 

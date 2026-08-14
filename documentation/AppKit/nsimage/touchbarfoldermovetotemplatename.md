@@ -19,7 +19,7 @@ class let touchBarFolderMoveToTemplateName: String
 
 #### Discussion
 
-![Template image for move to folder](https://docs-assets.developer.apple.com/published/76b88ffde7b73fecc8c91b3cbd272d5e/media-2825115%402x.png)
+![Template image for move to folder](/images/com.apple.appkit/media-2825115@2x.png)
 
 Touch Bar template images are exclusively for use in [`NSTouchBarItem`](nstouchbaritem.md) objects and not in onscreen windows.
 

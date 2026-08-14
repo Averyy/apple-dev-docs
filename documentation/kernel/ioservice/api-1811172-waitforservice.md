@@ -23,7 +23,7 @@ Provides a method of waiting for an IOService object matching the supplied match
 
 ## Parameters
 
-- `matching`: The matching dictionary describing the desired IOService object.   consumes one reference of the matching dictionary.
+- `matching`: The matching dictionary describing the desired IOService object. `waitForService` consumes one reference of the matching dictionary.
 - `timeout`: The maximum time to wait.
 
 ## See Also

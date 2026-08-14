@@ -21,7 +21,7 @@ var dependentParameters: [NSNumber]? { get }
 
 #### Discussion
 
-The array contains [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) objects representing [`AUParameterAddress`](auparameteraddress.md) values.
+The array contains [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) objects representing [`AUParameterAddress`](auparameteraddress.md) values.
 
 ## See Also
 

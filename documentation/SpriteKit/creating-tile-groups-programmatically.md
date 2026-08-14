@@ -47,7 +47,7 @@ When a tile map node is supplied with a tile set using this group and its tiles 
 
 To create a tile group that uses adjacency, you need to create a set of rules for each of the adjacency values. For a grid-based layout, you need 13 rules, as shown in the following illustration:
 
-![Adjacency Rules](https://docs-assets.developer.apple.com/published/74ac970c89a162f860cb142245f91faf/media-3111454%402x.png)
+![Adjacency Rules](/images/com.apple.spritekit/media-3111454@2x.png)
 
 To create the tile group programmatically, create definitions and rules for each adjacency:
 

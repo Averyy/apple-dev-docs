@@ -16,7 +16,7 @@ func write(_ data: Data) throws
 
 ## Parameters
 
-- `data`: The [`NSData`](https://developer.apple.com/documentation/Foundation/NSData) object that represents the memory the framework uses to the write buffers.
+- `data`: The [`NSData`](https://developer.apple.com/documentation/foundation/nsdata) object that represents the memory the framework uses to the write buffers.
 
 
 ---

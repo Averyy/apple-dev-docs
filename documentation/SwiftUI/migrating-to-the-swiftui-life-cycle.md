@@ -12,7 +12,7 @@ Moving to the SwiftUI life cycle requires several steps, including changing your
 
 ##### Change Your Apps Entry Point
 
-The [`UIKit`](https://developer.apple.com/documentation/UIKit) framework defines the `AppDelegate` file as the entry point of your app with the annotation `@main`. For more information on `@main`, see the [`Attributes`](https://developer.apple.comhttps://docs.swift.org/swift-book/documentation/the-swift-programming-language/attributes/#main) section in The Swift Programming Language. To indicate the entry of a SwiftUI app, you’ll need to create a new file that defines your app’s structure.
+The [`UIKit`](https://developer.apple.com/documentation/uikit) framework defines the `AppDelegate` file as the entry point of your app with the annotation `@main`. For more information on `@main`, see the [`Attributes`](https://developer.apple.comhttps://docs.swift.org/swift-book/documentation/the-swift-programming-language/attributes/#main) section in The Swift Programming Language. To indicate the entry of a SwiftUI app, you’ll need to create a new file that defines your app’s structure.
 
 1. Open your project in Xcode.
 2. Choose File > New > File > Swift file.
@@ -39,7 +39,7 @@ struct MyExampleApp: App {
 
 ##### Support App Delegate Methods
 
-To continue using methods in your app delegate, use the [`UIApplicationDelegateAdaptor`](uiapplicationdelegateadaptor.md) property wrapper. To tell SwiftUI about a delegate that conforms to the [`UIApplicationDelegate`](https://developer.apple.com/documentation/UIKit/UIApplicationDelegate) protocol, place this property wrapper inside your [`App`](app.md) declaration:
+To continue using methods in your app delegate, use the [`UIApplicationDelegateAdaptor`](uiapplicationdelegateadaptor.md) property wrapper. To tell SwiftUI about a delegate that conforms to the [`UIApplicationDelegate`](https://developer.apple.com/documentation/uikit/uiapplicationdelegate) protocol, place this property wrapper inside your [`App`](app.md) declaration:
 
 ```swift
 @main
@@ -61,16 +61,16 @@ If you’re migrating an app that contains storyboards to SwiftUI, make sure to 
 2. Remove `Main.storyboard` from the project navigator.
 3. Choose your app’s target.
 4. Open the `Info.plist` file.
-5. Remove the [`UIMainStoryboardFile`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/UIMainStoryboardFile) key.
-6. Remove the [`UISceneStoryboardFile`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/UIApplicationSceneManifest/UISceneConfigurations/UIWindowSceneSessionRoleApplication/UISceneStoryboardFile) key in the [`UIApplicationSceneManifest`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/UIApplicationSceneManifest) > [`UISceneConfigurations`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/UIApplicationSceneManifest/UISceneConfigurations) > [`UIWindowSceneSessionRoleApplication`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/UIApplicationSceneManifest/UISceneConfigurations/UIWindowSceneSessionRoleApplication) > `Item 0 (Default Configuration)` dictionary.
+5. Remove the [`UIMainStoryboardFile`](https://developer.apple.com/documentation/bundleresources/information-property-list/uimainstoryboardfile) key.
+6. Remove the [`UISceneStoryboardFile`](https://developer.apple.com/documentation/bundleresources/information-property-list/uiapplicationscenemanifest/uisceneconfigurations/uiwindowscenesessionroleapplication/uiscenestoryboardfile) key in the [`UIApplicationSceneManifest`](https://developer.apple.com/documentation/bundleresources/information-property-list/uiapplicationscenemanifest) > [`UISceneConfigurations`](https://developer.apple.com/documentation/bundleresources/information-property-list/uiapplicationscenemanifest/uisceneconfigurations) > [`UIWindowSceneSessionRoleApplication`](https://developer.apple.com/documentation/bundleresources/information-property-list/uiapplicationscenemanifest/uisceneconfigurations/uiwindowscenesessionroleapplication) > `Item 0 (Default Configuration)` dictionary.
 
 This figure shows the structure of the `Info.plist` file before removing these keys.
 
-![A screenshot of the Info.plist file in Xcode, with all of the keys expanded.](https://docs-assets.developer.apple.com/published/4e9649de38316b3d418b3be2dcf02132/Migrating-to-the-SwiftUI-life-cycle-info_plist%402x.png)
+![A screenshot of the Info.plist file in Xcode, with all of the keys expanded.](/images/com.apple.SwiftUI/Migrating-to-the-SwiftUI-life-cycle-info_plist@2x.png)
 
-The scene delegate continues to be called after removing the keys from the `Info.plist` file, so you can still handle other scene-based life cycle changes in this file. If you were previously launching your app in your scene delegate, remove the [`scene(_:willConnectTo:options:)`](https://developer.apple.com/documentation/UIKit/UISceneDelegate/scene(_:willConnectTo:options:)) method from your scene delegate.
+The scene delegate continues to be called after removing the keys from the `Info.plist` file, so you can still handle other scene-based life cycle changes in this file. If you were previously launching your app in your scene delegate, remove the [`scene(_:willConnectTo:options:)`](https://developer.apple.com/documentation/uikit/uiscenedelegate/scene(_:willconnectto:options:)) method from your scene delegate.
 
-If you didn’t previously support scenes in your app and rely on your app delegate to respond to the launch of your app, ensure you’re no longer setting a root view controller in [`application(_:didFinishLaunchingWithOptions:)`](https://developer.apple.com/documentation/UIKit/UIApplicationDelegate/application(_:didFinishLaunchingWithOptions:)). Instead, return `true`.
+If you didn’t previously support scenes in your app and rely on your app delegate to respond to the launch of your app, ensure you’re no longer setting a root view controller in [`application(_:didFinishLaunchingWithOptions:)`](https://developer.apple.com/documentation/uikit/uiapplicationdelegate/application(_:didfinishlaunchingwithoptions:)). Instead, return `true`.
 
 ##### Monitor Life Cycle Changes
 
@@ -84,19 +84,19 @@ Interpret the value differently based on where you read it from. If you read the
 
 To handle scene-based events with a scene delegate, provide your scene delegate to your SwiftUI app inside your app delegate. For more information, see the “Scene delegates” section of [`UIApplicationDelegateAdaptor`](uiapplicationdelegateadaptor.md).
 
-For more information on handling scene-based life cycle events, see [`Managing your app’s life cycle`](https://developer.apple.com/documentation/UIKit/managing-your-app-s-life-cycle).
+For more information on handling scene-based life cycle events, see [`Managing your app’s life cycle`](https://developer.apple.com/documentation/uikit/managing-your-app-s-life-cycle).
 
 ## See Also
 
-- [Destination Video](../visionOS/destination-video.md)
+- [Destination Video](../visionos/destination-video.md)
   Leverage SwiftUI to build an immersive media experience in a multiplatform app.
-- [Hello World](../visionOS/World.md)
+- [Hello World](../visionos/world.md)
   Use windows, volumes, and immersive spaces to teach people about the Earth.
 - [Backyard Birds: Building an app with SwiftData and widgets](backyard-birds-sample.md)
   Create an app with persistent data, interactive widgets, and an all new in-app purchase experience.
 - [Food Truck: Building a SwiftUI multiplatform app](food-truck-building-a-swiftui-multiplatform-app.md)
   Create a single codebase and app target for Mac, iPad, and iPhone.
-- [Fruta: Building a feature-rich app with SwiftUI](../AppClip/fruta-building-a-feature-rich-app-with-swiftui.md)
+- [Fruta: Building a feature-rich app with SwiftUI](../appclip/fruta-building-a-feature-rich-app-with-swiftui.md)
   Create a shared codebase to build a multiplatform app that offers widgets and an App Clip.
 - [protocol App](app.md)
   A type that represents the structure and behavior of an app.

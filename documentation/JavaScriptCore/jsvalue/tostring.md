@@ -25,7 +25,7 @@ The string representation of the value.
 
 #### Discussion
 
-This method uses JavaScript type coercion rules to convert the value to a JavaScript string, then creates a native string from the result. Thus, this method can return a string even when the [`isString`](jsvalue/isstring.md) property is [`false`](https://developer.apple.com/documentation/Swift/false); for example, an empty object becomes the string `"[object Object]"`.
+This method uses JavaScript type coercion rules to convert the value to a JavaScript string, then creates a native string from the result. Thus, this method can return a string even when the [`isString`](jsvalue/isstring.md) property is [`false`](https://developer.apple.com/documentation/swift/false); for example, an empty object becomes the string `"[object Object]"`.
 
 ## See Also
 
@@ -42,7 +42,7 @@ This method uses JavaScript type coercion rules to convert the value to a JavaSc
 - [func toUInt32() -> UInt32](jsvalue/touint32.md)
   Converts the JavaScript value to a native unsigned integer value.
 - [func toNumber() -> NSNumber!](jsvalue/tonumber.md)
-  Converts the JavaScript value to a [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) object.
+  Converts the JavaScript value to a [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) object.
 - [func toDate() -> Date!](jsvalue/todate.md)
   Converts the JavaScript value to a date object.
 - [func toArray() -> [Any]!](jsvalue/toarray.md)

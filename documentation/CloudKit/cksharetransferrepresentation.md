@@ -32,15 +32,15 @@ struct CKShareTransferRepresentation<Item> where Item : Transferable
 ## Relationships
 
 ### Conforms To
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
-- [TransferRepresentation](../CoreTransferable/TransferRepresentation.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
+- [TransferRepresentation](../coretransferable/transferrepresentation.md)
 
 ## See Also
 
 - [Sharing CloudKit Data with Other iCloud Users](sharing-cloudkit-data-with-other-icloud-users.md)
   Create and share private CloudKit data with other users by implementing the sharing UI.
-- [Sharing Core Data objects between iCloud users](../CoreData/sharing-core-data-objects-between-icloud-users.md)
+- [Sharing Core Data objects between iCloud users](../coredata/sharing-core-data-objects-between-icloud-users.md)
   Use Core Data and CloudKit to synchronize data between devices of an iCloud user and share data between different iCloud users.
 - [class CKShare](ckshare.md)
   A specialized record type that manages a collection of shared records.
@@ -48,9 +48,9 @@ struct CKShareTransferRepresentation<Item> where Item : Transferable
   An object that controls participant access and permission options.
 - [class CKSystemSharingUIObserver](cksystemsharinguiobserver.md)
   An object the system uses to monitor changes in sharing.
-- [class UICloudSharingController](../UIKit/UICloudSharingController.md)
+- [class UICloudSharingController](../uikit/uicloudsharingcontroller.md)
   A view controller that presents standard screens for adding and removing people from a CloudKit share record.
-- [CKSharingSupported](../BundleResources/Information-Property-List/CKSharingSupported.md)
+- [CKSharingSupported](../bundleresources/information-property-list/cksharingsupported.md)
   A Boolean value that indicates your app supports CloudKit Sharing.
 
 

@@ -6,7 +6,7 @@ Communicate messages across process boundaries that can be performed and respond
 
 #### Overview
 
-When a script that targets an application is executed, commands are sent to the application in the form of , a kind of interprocess message. Cocoa scripting helps you create scriptable applications by doing much of the work of receiving these Apple events, extracting information from them, and invoking methods in your scriptable classes.
+When a script that targets an application is executed, commands are sent to the application in the form of *Apple events*, a kind of interprocess message. Cocoa scripting helps you create scriptable applications by doing much of the work of receiving these Apple events, extracting information from them, and invoking methods in your scriptable classes.
 
 ## Topics
 

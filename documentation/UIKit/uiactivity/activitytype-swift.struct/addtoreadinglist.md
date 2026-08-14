@@ -19,7 +19,7 @@ static let addToReadingList: UIActivity.ActivityType
 
 #### Discussion
 
-When using this service, you can provide an [`NSURL`](https://developer.apple.com/documentation/Foundation/NSURL) object whose contents uses the `http` or `https` scheme that points to the page to add.
+When using this service, you can provide an [`NSURL`](https://developer.apple.com/documentation/foundation/nsurl) object whose contents uses the `http` or `https` scheme that points to the page to add.
 
 ## See Also
 

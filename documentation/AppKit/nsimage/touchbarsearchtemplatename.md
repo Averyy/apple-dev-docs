@@ -19,7 +19,7 @@ class let touchBarSearchTemplateName: String
 
 #### Discussion
 
-![Template image for search](https://docs-assets.developer.apple.com/published/75a12d91bfdc2b7d9029f2550d537248/media-2793472%402x.png)
+![Template image for search](/images/com.apple.appkit/media-2793472@2x.png)
 
 Touch Bar template images are exclusively for use in [`NSTouchBarItem`](nstouchbaritem.md) objects and not in onscreen windows.
 

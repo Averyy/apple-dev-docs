@@ -24,7 +24,7 @@ When using this category, your app audio continues with the Silent switch set to
 
 This category normally prevents audio from other apps from mixing with your app’s audio. To allow mixing for this category, use the [`kAudioSessionProperty_OverrideCategoryMixWithOthers`](kaudiosessionproperty_overridecategorymixwithothers.md) property.
 
-This category is equivalent to the [`playback`](https://developer.apple.com/documentation/AVFAudio/AVAudioSession/Category-swift.struct/playback) category provided in the AVFoundation framework.
+This category is equivalent to the [`playback`](https://developer.apple.com/documentation/avfaudio/avaudiosession/category-swift.struct/playback) category provided in the AVFoundation framework.
 
 ## See Also
 

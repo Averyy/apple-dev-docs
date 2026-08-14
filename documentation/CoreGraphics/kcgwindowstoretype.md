@@ -15,7 +15,7 @@ let kCGWindowStoreType: CFString
 
 #### Discussion
 
-The value for this key is a [`CFNumber`](https://developer.apple.com/documentation/CoreFoundation/CFNumber) type (encoded as [`CFNumberType.intType`](https://developer.apple.com/documentation/CoreFoundation/CFNumberType/intType)) that contains one of the constants defined in [`Backing Store Types`](backing-store-types.md).
+The value for this key is a [`CFNumber`](https://developer.apple.com/documentation/corefoundation/cfnumber) type (encoded as [`CFNumberType.intType`](https://developer.apple.com/documentation/corefoundation/cfnumbertype/inttype)) that contains one of the constants defined in [`Backing Store Types`](backing-store-types.md).
 
 ## See Also
 

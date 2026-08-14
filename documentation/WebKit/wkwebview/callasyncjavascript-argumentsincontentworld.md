@@ -21,7 +21,7 @@ Executes the specified string as an asynchronous JavaScript function.
 
 #### Return Value
 
-The result of the script evaluation, or an error object that contains information about the problem that occurred. If your function body doesn’t return an explicit value, WebKit returns `nil` on success. If your function explicitly returns `null`, WebKit returns that value as an [`NSNull`](https://developer.apple.com/documentation/Foundation/NSNull) object.
+The result of the script evaluation, or an error object that contains information about the problem that occurred. If your function body doesn’t return an explicit value, WebKit returns `nil` on success. If your function explicitly returns `null`, WebKit returns that value as an [`NSNull`](https://developer.apple.com/documentation/foundation/nsnull) object.
 
 #### Discussion
 
@@ -46,7 +46,7 @@ return p;
 ## Parameters
 
 - `functionBody`: The JavaScript string to use as the function body. This method treats the string as an anonymous JavaScript function body and calls it with the named arguments in the `arguments` parameter.
-- `arguments`: A dictionary of the arguments to pass to the function call. Each key in the dictionary corresponds to the name of an argument in the `functionBody` string, and the value of that key is the value to use during the evaluation of the code. Supported value types are [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber), [`NSString`](https://developer.apple.com/documentation/Foundation/NSString), [`NSDate`](https://developer.apple.com/documentation/Foundation/NSDate), [`NSArray`](https://developer.apple.com/documentation/Foundation/NSArray), [`NSDictionary`](https://developer.apple.com/documentation/Foundation/NSDictionary), or [`NSNull`](https://developer.apple.com/documentation/Foundation/NSNull). All items in an array or dictionary must also be one of the supported types.
+- `arguments`: A dictionary of the arguments to pass to the function call. Each key in the dictionary corresponds to the name of an argument in the `functionBody` string, and the value of that key is the value to use during the evaluation of the code. Supported value types are [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber), [`NSString`](https://developer.apple.com/documentation/foundation/nsstring), [`NSDate`](https://developer.apple.com/documentation/foundation/nsdate), [`NSArray`](https://developer.apple.com/documentation/foundation/nsarray), [`NSDictionary`](https://developer.apple.com/documentation/foundation/nsdictionary), or [`NSNull`](https://developer.apple.com/documentation/foundation/nsnull). All items in an array or dictionary must also be one of the supported types.
 - `frame`: The frame in which to evaluate the JavaScript code. Specify `nil` to target the main frame. If this frame is no longer valid when script evaluation begins, this method returns a [`WKError.Code.javaScriptInvalidFrameTarget`](wkerror/code/javascriptinvalidframetarget.md) error.
 - `contentWorld`: The namespace in which to evaluate the JavaScript code. This parameter doesn’t apply to changes you make to the underlying web content, such as the document’s DOM structure. Those changes remain visible to all scripts, regardless of which content world you specify. For more information about content worlds, see [`WKContentWorld`](wkcontentworld.md).
 

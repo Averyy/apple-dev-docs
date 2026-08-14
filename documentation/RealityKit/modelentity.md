@@ -29,7 +29,7 @@ A representation of a physical object that RealityKit renders and optionally sim
 
 Use one or more model entities to place physical objects in a scene. In addition to the components they inherit from the [`Entity`](entity.md) class, model entities have geometry, described by their [`ModelComponent`](modelcomponent.md). Model entities acquire the model component by conforming to the [`HasModel`](hasmodel.md) protocol. You specify meshes and materials to control how a model entity appears.
 
-![Diagram showing the components present in the model](https://docs-assets.developer.apple.com/published/4fd5262b43f0c873c7625b95738c59a5/ModelEntity-1%402x.png)
+![Diagram showing the components present in the model](/images/com.apple.RealityKit/ModelEntity-1@2x.png)
 
 Models respond to physics simulations because they conform to the [`HasPhysics`](hasphysics.md) protocol. You give them mass and other physical properties with a [`PhysicsBodyComponent`](physicsbodycomponent.md) instance, and then apply forces or impulses. The simulator uses a [`PhysicsMotionComponent`](physicsmotioncomponent.md) to manage the linear and angular velocity of the object. Alternatively, you can selectively circumvent the simulation to control position and velocity yourself. Do this for a given model by setting its physics body [`mode`](physicsbodycomponent/mode.md) to [`PhysicsBodyMode.kinematic`](physicsbodymode/kinematic.md).
 
@@ -52,10 +52,10 @@ Models can also collide with one another, and with other entities that conform t
 ### Inherits From
 - [Entity](entity.md)
 ### Conforms To
-- [CoordinateSpace3D](../Spatial/CoordinateSpace3D.md)
-- [CoordinateSpace3DFloat](../Spatial/CoordinateSpace3DFloat.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
+- [CoordinateSpace3D](../spatial/coordinatespace3d.md)
+- [CoordinateSpace3DFloat](../spatial/coordinatespace3dfloat.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [Equatable](../swift/equatable.md)
 - [EventSource](eventsource.md)
 - [HasCollision](hascollision.md)
 - [HasHierarchy](hashierarchy.md)
@@ -65,26 +65,26 @@ Models can also collide with one another, and with other entities that conform t
 - [HasPhysicsMotion](hasphysicsmotion.md)
 - [HasSynchronization](hassynchronization.md)
 - [HasTransform](hastransform.md)
-- [Hashable](../Swift/Hashable.md)
-- [Identifiable](../Swift/Identifiable.md)
-- [Observable](../Observation/Observable.md)
+- [Hashable](../swift/hashable.md)
+- [Identifiable](../swift/identifiable.md)
+- [Observable](../observation/observable.md)
 - [RealityCoordinateSpace](realitycoordinatespace.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 
-- [Creating 3D entities with RealityKit](../visionOS/creating-3d-entities-with-realitykit.md)
+- [Creating 3D entities with RealityKit](../visionos/creating-3d-entities-with-realitykit.md)
   Display a horizontal row of three-dimensional shapes in your visionOS app, using predefined mesh and white material.
-- [Creating 3D models as movable windows](../visionOS/creating-a-volumetric-window-in-visionos.md)
+- [Creating 3D models as movable windows](../visionos/creating-a-volumetric-window-in-visionos.md)
   Display 3D content with a volumetric window that people can move.
-- [Creating a 3D painting space](../visionOS/creating-a-painting-space-in-visionos.md)
+- [Creating a 3D painting space](../visionos/creating-a-painting-space-in-visionos.md)
   Implement a painting canvas entity, and update its mesh to represent a stroke.
-- [Tracking and visualizing hand movement](../visionOS/tracking-and-visualizing-hand-movement.md)
+- [Tracking and visualizing hand movement](../visionos/tracking-and-visualizing-hand-movement.md)
   Use hand-tracking anchors to display a visual representation of hand transforms in visionOS.
-- [Applying mesh to real-world surroundings](../visionOS/applying-mesh-to-real-world-surroundings.md)
+- [Applying mesh to real-world surroundings](../visionos/applying-mesh-to-real-world-surroundings.md)
   Add a layer of mesh to objects in the real world, using scene reconstruction in ARKit.
-- [Obscuring virtual items in a scene behind real-world items](../visionOS/obscuring-virtual-items-in-a-scene-behind-real-world-items.md)
+- [Obscuring virtual items in a scene behind real-world items](../visionos/obscuring-virtual-items-in-a-scene-behind-real-world-items.md)
   Increase the realism of an immersive experience by adding entities with invisible materials  real-world objects.
 - [Manipulating models with RealityKit](manipulating-models-with-realitykit.md)
   Interact with detailed 3D models using manipulation and clipping controls.

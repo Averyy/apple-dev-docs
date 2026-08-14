@@ -16,8 +16,8 @@ typedef void (*IOUSBIsocCompletionAction)(void *target, void *parameter, IORetur
 
 ## Parameters
 
-- `target`: The target that the   structure specifies.
-- `parameter`: The parameter that the   structure specifies.
+- `target`: The target that the `IOUSBIsocCompletion` structure specifies.
+- `parameter`: The parameter that the `IOUSBIsocCompletion` structure specifies.
 - `status`: The completion status.
 - `pFrames`: A pointer to the frame list containing the status for each frame that transfers.
 

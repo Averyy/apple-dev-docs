@@ -28,7 +28,7 @@ The minimum value of the vector.
 
 This function calculates the minimum value of the first `N` elements of input vector `A`, and writes the result to output scalar `C`.
 
-![A diagram showing the operation of this function. There are three rows. The top row represents the input vector, A, with three boxes. The middle row represents the operation a box that contains the minimum function. The bottom row represents the output scalar value C as a  box. The diagram has connecting lines from the input vector to the operation, and from the operation to the output scalar value.](https://docs-assets.developer.apple.com/published/350e3d97cfe57f710e8f68eb6505edf4/media-4465974%402x.png)
+![A diagram showing the operation of this function. There are three rows. The top row represents the input vector, A, with three boxes. The middle row represents the operation a box that contains the minimum function. The bottom row represents the output scalar value C as a  box. The diagram has connecting lines from the input vector to the operation, and from the operation to the output scalar value.](/images/com.apple.accelerate/media-4465974@2x.png)
 
 The following code shows an example of using this function:
 

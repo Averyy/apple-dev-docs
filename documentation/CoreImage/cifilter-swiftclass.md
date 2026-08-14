@@ -60,7 +60,7 @@ The type-safe approach returns a non-optional filter. Because the returned filte
 
 The false color filter maps luminance to a color ramp of two colors:
 
-![Two photographs showing a flower. The image on the left shows the original version of the flower. The image on the right shows the false color version of the flower.](https://docs-assets.developer.apple.com/published/31bc2cc68e11100dbfd10afe19552daa/media-4336877%402x.png)
+![Two photographs showing a flower. The image on the left shows the original version of the flower. The image on the right shows the false color version of the flower.](/images/com.apple.coreimage/media-4336877@2x.png)
 
 ##### Subclassing Notes
 
@@ -83,7 +83,7 @@ Don’t use auto-synthesized instance variables, because their names are automat
 
 `@synthesize inputMyParameter;`
 
-- If using manual reference counting, don’t release input parameter instance variables in your [`dealloc`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class/dealloc) method implementation. The [`dealloc`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class/dealloc) implementation in the `CIFilter` class uses [`Key-value coding`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Conceptual/DevPedia-CocoaCore/KeyValueCoding.html#//apple_ref/doc/uid/TP40008195-CH25) to automatically set the values of all input parameters to `nil`.
+- If using manual reference counting, don’t release input parameter instance variables in your [`dealloc`](https://developer.apple.com/documentation/objectivec/nsobject-swift.class/dealloc) method implementation. The [`dealloc`](https://developer.apple.com/documentation/objectivec/nsobject-swift.class/dealloc) implementation in the `CIFilter` class uses [`Key-value coding`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Conceptual/DevPedia-CocoaCore/KeyValueCoding.html#//apple_ref/doc/uid/TP40008195-CH25) to automatically set the values of all input parameters to `nil`.
 
 ## Topics
 
@@ -227,19 +227,19 @@ Don’t use auto-synthesized instance variables, because their names are automat
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Inherited By
 - [CIRAWFilter](cirawfilter.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCoding](../Foundation/NSCoding.md)
-- [NSCopying](../Foundation/NSCopying.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [NSSecureCoding](../Foundation/NSSecureCoding.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCoding](../foundation/nscoding.md)
+- [NSCopying](../foundation/nscopying.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSSecureCoding](../foundation/nssecurecoding.md)
 
 ## See Also
 

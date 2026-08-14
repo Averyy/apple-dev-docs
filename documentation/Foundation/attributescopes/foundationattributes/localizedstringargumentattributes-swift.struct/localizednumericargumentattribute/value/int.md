@@ -22,7 +22,7 @@ case int(Int64)
 
 ## Parameters
 
-- `int`: The attribute value, as an [`Int64`](https://developer.apple.com/documentation/Swift/Int64).
+- `int`: The attribute value, as an [`Int64`](https://developer.apple.com/documentation/swift/int64).
 
 ## See Also
 

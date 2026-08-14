@@ -22,9 +22,9 @@ protocol EntityIdentifierConvertible
 
 #### Overview
 
-Every entity provides a stable, unique identifier that the framework uses as a concrete reference to the entity while mediating between your app and other parts of the system. To enforce this requirement, the [`AppEntity`](appentity.md) protocol inherits the [`Identifiable`](https://developer.apple.com/documentation/Swift/Identifiable) protocol.
+Every entity provides a stable, unique identifier that the framework uses as a concrete reference to the entity while mediating between your app and other parts of the system. To enforce this requirement, the [`AppEntity`](appentity.md) protocol inherits the [`Identifiable`](https://developer.apple.com/documentation/swift/identifiable) protocol.
 
-Wherever possible, use [`String`](https://developer.apple.com/documentation/Swift/String), [`Int`](https://developer.apple.com/documentation/Swift/Int), or [`UUID`](https://developer.apple.com/documentation/Foundation/UUID) for an identifier’s type. If you must use a different data type, use this protocol to extend that type and implement the required support. For example, an app that integrates with the [`MusicKit`](https://developer.apple.com/documentation/MusicKit) framework might use [`MusicItemID`](https://developer.apple.com/documentation/MusicKit/MusicItemID) as the type for an entity’s identifier.
+Wherever possible, use [`String`](https://developer.apple.com/documentation/swift/string), [`Int`](https://developer.apple.com/documentation/swift/int), or [`UUID`](https://developer.apple.com/documentation/foundation/uuid) for an identifier’s type. If you must use a different data type, use this protocol to extend that type and implement the required support. For example, an app that integrates with the [`MusicKit`](https://developer.apple.com/documentation/musickit) framework might use [`MusicItemID`](https://developer.apple.com/documentation/musickit/musicitemid) as the type for an entity’s identifier.
 
 ```swift
 extension MusicItemID: EntityIdentifierConvertible {

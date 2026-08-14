@@ -25,7 +25,7 @@ var characters: AttributedString.CharacterView { get }
 
 Use the [`characters`](attributedstringprotocol/characters.md) view when you want to look for specific string content. You can then use the resulting ranges to set attributes for specific parts of the [`AttributedString`](attributedstring.md) or [`AttributedSubstring`](attributedsubstring.md).
 
-You can also use this property to mutate the attributed string, using [`RangeReplaceableCollection`](https://developer.apple.com/documentation/Swift/RangeReplaceableCollection) methods, such as `insert(_:at:)` and [`append(_:)`](https://developer.apple.com/documentation/Swift/RangeReplaceableCollection/append(_:)). Inserted characters inherit any attributes present at the insertion point.
+You can also use this property to mutate the attributed string, using [`RangeReplaceableCollection`](https://developer.apple.com/documentation/swift/rangereplaceablecollection) methods, such as `insert(_:at:)` and [`append(_:)`](https://developer.apple.com/documentation/swift/rangereplaceablecollection/append(_:)). Inserted characters inherit any attributes present at the insertion point.
 
 ## See Also
 

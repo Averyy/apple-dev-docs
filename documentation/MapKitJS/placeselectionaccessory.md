@@ -20,7 +20,7 @@ class PlaceSelectionAccessory
 
 #### Overview
 
-For more information on places, see [`Identifying unique locations with Place IDs`](https://developer.apple.com/documentation/MapKit/identifying-unique-locations-with-place-ids).
+For more information on places, see [`Identifying unique locations with Place IDs`](https://developer.apple.com/documentation/mapkit/identifying-unique-locations-with-place-ids).
 
 ## Topics
 

@@ -23,7 +23,7 @@ class MDLNormalMapTexture
 
 This class examines the shapes of contrasting areas in an input texture to generate a normal map that produces an embossed appearance when rendered with lighting. The figure below shows the normal map generated from an example texture and the effect of using this normal map with lighting in a typical renderer.
 
-![None](https://docs-assets.developer.apple.com/published/22a2beff91f68ff49c4351d0d667f98d/media-1965618%402x.png)
+![None](/images/com.apple.modelio/media-1965618@2x.png)
 
 Like other procedural [`MDLTexture`](mdltexture.md) subclasses, the [`MDLNormalMapTexture`](mdlnormalmaptexture.md) class generates texel data only when that data is first referenced, and caches it for future use.
 
@@ -40,13 +40,13 @@ Like other procedural [`MDLTexture`](mdltexture.md) subclasses, the [`MDLNormalM
 ### Inherits From
 - [MDLTexture](mdltexture.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
 - [MDLNamed](mdlnamed.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

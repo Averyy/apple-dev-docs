@@ -56,12 +56,12 @@ Attach a `USDStageComponent` to an entity to render USD content as child entitie
 ## Relationships
 
 ### Conforms To
-- [Component](../RealityKit/Component.md)
-- [Copyable](../Swift/Copyable.md)
-- [Decodable](../Swift/Decodable.md)
-- [Encodable](../Swift/Encodable.md)
-- [Equatable](../Swift/Equatable.md)
-- [Escapable](../Swift/Escapable.md)
+- [Component](../realitykit/component.md)
+- [Copyable](../swift/copyable.md)
+- [Decodable](../swift/decodable.md)
+- [Encodable](../swift/encodable.md)
+- [Equatable](../swift/equatable.md)
+- [Escapable](../swift/escapable.md)
 
 ## See Also
 

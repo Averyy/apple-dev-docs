@@ -30,9 +30,9 @@ This method applies the circular wrap filter to an image. This effect wraps an i
 The circular wrap filter uses the following properties:
 
 - **`inputImage`**: An image with the type [`CIImage`](ciimage.md).
-- **`angle`**: A `float` representing the angle of the wrap, in radians, as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
-- **`radius`**: A `float` representing the amount of pixels the filter uses to create the distortion as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
-- **`center`**: A set of coordinates marking the center of the image as a [`CGPoint`](https://developer.apple.com/documentation/CoreFoundation/CGPoint).
+- **`angle`**: A `float` representing the angle of the wrap, in radians, as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
+- **`radius`**: A `float` representing the amount of pixels the filter uses to create the distortion as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
+- **`center`**: A set of coordinates marking the center of the image as a [`CGPoint`](https://developer.apple.com/documentation/corefoundation/cgpoint).
 
 The following code creates a filter that results in a circular image generated from the input image:
 
@@ -56,7 +56,7 @@ text.outputImage!
 circularWrap(inputImage: text.outputImage!)
 ```
 
-![On the left, an image with the text “Core Image”. On the right, the same image with the text wrapped around a circle.](https://docs-assets.developer.apple.com/published/1590b7fb5464079a10e3013940d79366/media-4407319%402x.png)
+![On the left, an image with the text “Core Image”. On the right, the same image with the text wrapped around a circle.](/images/com.apple.coreimage/media-4407319@2x.png)
 
 ## See Also
 

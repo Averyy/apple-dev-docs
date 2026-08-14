@@ -8,13 +8,13 @@ Manage the data that your app uses to drive its interface.
 
 SwiftUI offers a declarative approach to user interface design. As you compose a hierarchy of views, you also indicate data dependencies for the views. When the data changes, either due to an external event or because of an action that the user performs, SwiftUI automatically updates the affected parts of the interface. As a result, the framework automatically performs most of the work that view controllers traditionally do.
 
-![None](https://docs-assets.developer.apple.com/published/7a8488351b0c9f662b694bc1153162a5/model-data-hero%402x.png)
+![None](/images/com.apple.SwiftUI/model-data-hero@2x.png)
 
 The framework provides tools, like state variables and bindings, for connecting your app’s data to the user interface. These tools help you maintain a single source of truth for every piece of data in your app, in part by reducing the amount of glue logic you write. Select the tool that best suits the task you need to perform:
 
 - Manage transient UI state locally within a view by wrapping value types as [`State()`](state().md) properties.
 - Share a reference to a source of truth, like local state, using the [`Binding`](binding.md) property wrapper.
-- Connect to and observe reference model data in views by applying the [`Observable()`](https://developer.apple.com/documentation/Observation/Observable()) macro to the model data type. Instantiate an observable model data type directly in a view with a [`State()`](state().md) property. Share the observable model data with other views in the hierarchy without passing a reference using the [`Environment`](environment.md) property wrapper.
+- Connect to and observe reference model data in views by applying the [`Observable()`](https://developer.apple.com/documentation/observation/observable()) macro to the model data type. Instantiate an observable model data type directly in a view with a [`State()`](state().md) property. Share the observable model data with other views in the hierarchy without passing a reference using the [`Environment`](environment.md) property wrapper.
 
 ## Topics
 
@@ -38,7 +38,7 @@ The framework provides tools, like state variables and bindings, for connecting 
   Create connections between your app’s data model and views.
 - [Migrating from the Observable Object protocol to the Observable macro](migrating-from-the-observable-object-protocol-to-the-observable-macro.md)
   Update your existing app to leverage the benefits of Observation in Swift.
-- [macro Observable()](../Observation/Observable().md)
+- [macro Observable()](../observation/observable().md)
   Defines and implements conformance of the Observable protocol.
 - [Monitoring data changes in your app](monitoring-model-data-changes-in-your-app.md)
   Show changes to data in your app’s user interface by using observable objects.
@@ -46,7 +46,7 @@ The framework provides tools, like state variables and bindings, for connecting 
   A property wrapper type that instantiates an observable object.
 - [struct ObservedObject](observedobject.md)
   A property wrapper type that subscribes to an observable object and invalidates a view whenever the observable object changes.
-- [protocol ObservableObject](../Combine/ObservableObject.md)
+- [protocol ObservableObject](../combine/observableobject.md)
   A type of object with a publisher that emits before the object has changed.
 ### Responding to data changes
 - [func onChange(of:initial:_:)](view/onchange(of:initial:_:).md)

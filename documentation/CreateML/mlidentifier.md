@@ -16,7 +16,7 @@ protocol MLIdentifier
 
 #### Overview
 
-You can use any type that conforms to the [`MLIdentifier`](mlidentifier.md) protocol, typically [`Int`](https://developer.apple.com/documentation/Swift/Int) or [`String`](https://developer.apple.com/documentation/Swift/String), to uniquely identify users and items in these [`MLRecommender`](mlrecommender.md) methods:
+You can use any type that conforms to the [`MLIdentifier`](mlidentifier.md) protocol, typically [`Int`](https://developer.apple.com/documentation/swift/int) or [`String`](https://developer.apple.com/documentation/swift/string), to uniquely identify users and items in these [`MLRecommender`](mlrecommender.md) methods:
 
 [`recommendations(fromUsers:maxCount:restrictingToItems:excluding:excludingObserved:)`](mlrecommender/recommendations(fromusers:maxcount:restrictingtoitems:excluding:excludingobserved:)-7an46.md)
 

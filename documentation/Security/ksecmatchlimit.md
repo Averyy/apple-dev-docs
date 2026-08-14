@@ -27,7 +27,7 @@ let kSecMatchLimit: CFString
 
 #### Discussion
 
-The corresponding value is of type [`CFNumber`](https://developer.apple.com/documentation/CoreFoundation/CFNumber). If provided, this value specifies the maximum number of results to return or otherwise act upon. For a single item, specify [`kSecMatchLimitOne`](ksecmatchlimitone.md). To specify all matching items, specify [`kSecMatchLimitAll`](ksecmatchlimitall.md). The default behavior is function-dependent.
+The corresponding value is of type [`CFNumber`](https://developer.apple.com/documentation/corefoundation/cfnumber). If provided, this value specifies the maximum number of results to return or otherwise act upon. For a single item, specify [`kSecMatchLimitOne`](ksecmatchlimitone.md). To specify all matching items, specify [`kSecMatchLimitAll`](ksecmatchlimitall.md). The default behavior is function-dependent.
 
 
 ---

@@ -27,7 +27,7 @@ Attempting to calculate the area for a contour containing random points, or with
 
 - `area`: The output parameter to populate with the calculated contour area.
 - `contour`: The contour object for which to calculate the area.
-- `orientedArea`: A Boolean value that indicates whether to calculate the signed area (positive for counterclockwise-oriented contours and negative for clockwise-oriented contours). If you specify [`false`](https://developer.apple.com/documentation/Swift/false), the returned area is always positive.
+- `orientedArea`: A Boolean value that indicates whether to calculate the signed area (positive for counterclockwise-oriented contours and negative for clockwise-oriented contours). If you specify [`false`](https://developer.apple.com/documentation/swift/false), the returned area is always positive.
 
 ## See Also
 

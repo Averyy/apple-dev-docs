@@ -6,9 +6,9 @@ Create custom app extensions that manage iOS system notifications for your acces
 
 #### Overview
 
-When someone opts into notification forwarding for your accessory from their iPhone, the system identifies your accessory with the reference your companion app receives from [`AccessorySetupKit`](https://developer.apple.com/documentation/AccessorySetupKit). The system prompts the person for permission to forward notifications to the accessory from the apps that they choose in the prompt.
+When someone opts into notification forwarding for your accessory from their iPhone, the system identifies your accessory with the reference your companion app receives from [`AccessorySetupKit`](https://developer.apple.com/documentation/accessorysetupkit). The system prompts the person for permission to forward notifications to the accessory from the apps that they choose in the prompt.
 
-Implement three extensions using the [`Accessory Notifications`](https://developer.apple.com/documentation/AccessoryNotifications) framework to forward notifications securely:
+Implement three extensions using the [`Accessory Notifications`](https://developer.apple.com/documentation/accessorynotifications) framework to forward notifications securely:
 
 - **[`AccessoryDataProvider`](accessorydataprovider.md)**: Receives notification content and prepares it for transmission.
 - **[`AccessoryTransportSecurity`](accessorytransportsecurity.md)**: Manages cryptographic key exchange with your accessory.
@@ -22,7 +22,7 @@ Alert for the notification on your accessory by presenting it on screen, playing
 
 #### Register for Notification Forwarding
 
-To register your accessory’s companion app for notification forwarding, call the [`AccessoryNotificationCenter`](https://developer.apple.com/documentation/AccessoryNotifications/AccessoryNotificationCenter) class’s [`requestForwarding(for:)`](https://developer.apple.com/documentation/AccessoryNotifications/AccessoryNotificationCenter/requestForwarding(for:)) method:
+To register your accessory’s companion app for notification forwarding, call the [`AccessoryNotificationCenter`](https://developer.apple.com/documentation/accessorynotifications/accessorynotificationcenter) class’s [`requestForwarding(for:)`](https://developer.apple.com/documentation/accessorynotifications/accessorynotificationcenter/requestforwarding(for:)) method:
 
 ```swift
 import AccessoryNotifications
@@ -36,7 +36,7 @@ let center = AccessoryNotificationCenter()
 let result = try await center.requestForwarding(for: accessory)
 ```
 
-The system prompts the person for permission to forward notifications and allows them to select the apps on their device that can provide notifications. When the person finishes interacting with the UI and dismisses the prompt, the [`requestForwarding(for:)`](https://developer.apple.com/documentation/AccessoryNotifications/AccessoryNotificationCenter/requestForwarding(for:)) method returns the person’s choice in the [`ForwardingDecision`](https://developer.apple.com/documentation/AccessoryNotifications/ForwardingDecision) result. The [`ForwardingDecision.allow`](https://developer.apple.com/documentation/AccessoryNotifications/ForwardingDecision/allow) value indicates that the person allows your accessory to receive notifications from all applicable apps. If the result is [`ForwardingDecision.limited`](https://developer.apple.com/documentation/AccessoryNotifications/ForwardingDecision/limited), your accessory can receive notifications from a subset of apps. The other decision types indicate the person doesn’t opt into notification forwarding.
+The system prompts the person for permission to forward notifications and allows them to select the apps on their device that can provide notifications. When the person finishes interacting with the UI and dismisses the prompt, the [`requestForwarding(for:)`](https://developer.apple.com/documentation/accessorynotifications/accessorynotificationcenter/requestforwarding(for:)) method returns the person’s choice in the [`ForwardingDecision`](https://developer.apple.com/documentation/accessorynotifications/forwardingdecision) result. The [`ForwardingDecision.allow`](https://developer.apple.com/documentation/accessorynotifications/forwardingdecision/allow) value indicates that the person allows your accessory to receive notifications from all applicable apps. If the result is [`ForwardingDecision.limited`](https://developer.apple.com/documentation/accessorynotifications/forwardingdecision/limited), your accessory can receive notifications from a subset of apps. The other decision types indicate the person doesn’t opt into notification forwarding.
 
 #### Create an Extension to Receive Notifications
 
@@ -58,7 +58,7 @@ To receive notification content, create an [`AccessoryDataProvider`](accessoryda
 </plist>
 ```
 
-In your extension’s code, implement the [`AccessoryDataProvider`](accessorydataprovider.md) protocol and provide a handler that conforms to [`NotificationsForwarding.AccessoryNotificationsHandler`](https://developer.apple.com/documentation/AccessoryNotifications/NotificationsForwarding/AccessoryNotificationsHandler):
+In your extension’s code, implement the [`AccessoryDataProvider`](accessorydataprovider.md) protocol and provide a handler that conforms to [`NotificationsForwarding.AccessoryNotificationsHandler`](https://developer.apple.com/documentation/accessorynotifications/notificationsforwarding/accessorynotificationshandler):
 
 ```swift
 import AccessoryNotifications
@@ -111,19 +111,19 @@ class NotificationHandler: AccessoryNotificationsHandler {
 }
 ```
 
-The system requires your app extension to have the [`com.apple.developer.accessory-data-provider`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.accessory-data-provider) entitlement to use the [`AccessoryDataProvider`](accessorydataprovider.md) protocol.
+The system requires your app extension to have the [`com.apple.developer.accessory-data-provider`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.accessory-data-provider) entitlement to use the [`AccessoryDataProvider`](accessorydataprovider.md) protocol.
 
 #### Receive and Process Notifications
 
-When a notification occurs on the iPhone, the system invokes your extension by calling [`didActivate(for:)`](https://developer.apple.com/documentation/AccessoryNotifications/NotificationsForwarding/AccessoryNotificationsHandler/didActivate(for:)), passing in a session object. Save a reference to the session for use across multiple notifications.
+When a notification occurs on the iPhone, the system invokes your extension by calling [`didActivate(for:)`](https://developer.apple.com/documentation/accessorynotifications/notificationsforwarding/accessorynotificationshandler/didactivate(for:)), passing in a session object. Save a reference to the session for use across multiple notifications.
 
-The system then calls [`addNotification(_:alertingContext:)`](https://developer.apple.com/documentation/AccessoryNotifications/NotificationsForwarding/AccessoryNotificationsHandler/addNotification(_:alertingContext:)) on your extension, passing in the notification’s details. Parse the [`AccessoryNotification`](https://developer.apple.com/documentation/AccessoryNotifications/AccessoryNotification) structure, selecting just the information your accessory needs. Notification details include:
+The system then calls [`addNotification(_:alertingContext:)`](https://developer.apple.com/documentation/accessorynotifications/notificationsforwarding/accessorynotificationshandler/addnotification(_:alertingcontext:)) on your extension, passing in the notification’s details. Parse the [`AccessoryNotification`](https://developer.apple.com/documentation/accessorynotifications/accessorynotification) structure, selecting just the information your accessory needs. Notification details include:
 
-- **Display content**: [`title`](https://developer.apple.com/documentation/AccessoryNotifications/AccessoryNotification/title), [`subtitle`](https://developer.apple.com/documentation/AccessoryNotifications/AccessoryNotification/subtitle), and [`summary`](https://developer.apple.com/documentation/AccessoryNotifications/AccessoryNotification/summary) (for Apple Intelligence summaries)
-- **Rich elements**: [`sourceIcon`](https://developer.apple.com/documentation/AccessoryNotifications/AccessoryNotification/sourceIcon), [`contextIcon`](https://developer.apple.com/documentation/AccessoryNotifications/AccessoryNotification/contextIcon), [`attachments`](https://developer.apple.com/documentation/AccessoryNotifications/AccessoryNotification/attachments), and [`body`](https://developer.apple.com/documentation/AccessoryNotifications/AccessoryNotification/body), which can contain a genmoji through the [`NSAdaptiveImageGlyph`](https://developer.apple.comhttps://developer.apple.com/documentation/uikit/nsadaptiveimageglyph) class
-- **Interactive components**: [`actions`](https://developer.apple.com/documentation/AccessoryNotifications/AccessoryNotification/actions) array
-- **Metadata**: [`identifier`](https://developer.apple.com/documentation/AccessoryNotifications/AccessoryNotification/identifier-swift.property), [`sourceName`](https://developer.apple.com/documentation/AccessoryNotifications/AccessoryNotification/sourceName), [`threadIdentifier`](https://developer.apple.com/documentation/AccessoryNotifications/AccessoryNotification/threadIdentifier), [`deliveryDate`](https://developer.apple.com/documentation/AccessoryNotifications/AccessoryNotification/deliveryDate), and [`displayDate`](https://developer.apple.com/documentation/AccessoryNotifications/AccessoryNotification/displayDate-swift.property)
-- **Priority attributes**: [`attributes`](https://developer.apple.com/documentation/AccessoryNotifications/AccessoryNotification/attributes-swift.property) for critical, time-sensitive, or priority notifications
+- **Display content**: [`title`](https://developer.apple.com/documentation/accessorynotifications/accessorynotification/title), [`subtitle`](https://developer.apple.com/documentation/accessorynotifications/accessorynotification/subtitle), and [`summary`](https://developer.apple.com/documentation/accessorynotifications/accessorynotification/summary) (for Apple Intelligence summaries)
+- **Rich elements**: [`sourceIcon`](https://developer.apple.com/documentation/accessorynotifications/accessorynotification/sourceicon), [`contextIcon`](https://developer.apple.com/documentation/accessorynotifications/accessorynotification/contexticon), [`attachments`](https://developer.apple.com/documentation/accessorynotifications/accessorynotification/attachments), and [`body`](https://developer.apple.com/documentation/accessorynotifications/accessorynotification/body), which can contain a genmoji through the [`NSAdaptiveImageGlyph`](https://developer.apple.comhttps://developer.apple.com/documentation/uikit/nsadaptiveimageglyph) class
+- **Interactive components**: [`actions`](https://developer.apple.com/documentation/accessorynotifications/accessorynotification/actions) array
+- **Metadata**: [`identifier`](https://developer.apple.com/documentation/accessorynotifications/accessorynotification/identifier-swift.property), [`sourceName`](https://developer.apple.com/documentation/accessorynotifications/accessorynotification/sourcename), [`threadIdentifier`](https://developer.apple.com/documentation/accessorynotifications/accessorynotification/threadidentifier), [`deliveryDate`](https://developer.apple.com/documentation/accessorynotifications/accessorynotification/deliverydate), and [`displayDate`](https://developer.apple.com/documentation/accessorynotifications/accessorynotification/displaydate-swift.property)
+- **Priority attributes**: [`attributes`](https://developer.apple.com/documentation/accessorynotifications/accessorynotification/attributes-swift.property) for critical, time-sensitive, or priority notifications
 
 Serialize the notification details you select and create an [`AccessoryMessage`](accessorymessage.md) to send the curated data to your accessory:
 
@@ -199,7 +199,7 @@ struct TransportSecurity: AccessoryTransportSecurity {
 }
 ```
 
-The system requires your app extension to have the [`com.apple.developer.accessory-transport-security`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.accessory-transport-security) entitlement to use the [`AccessoryTransportSecurity`](accessorytransportsecurity.md) protocol.
+The system requires your app extension to have the [`com.apple.developer.accessory-transport-security`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.accessory-transport-security) entitlement to use the [`AccessoryTransportSecurity`](accessorytransportsecurity.md) protocol.
 
 #### Provide a Security Event Handler
 
@@ -339,7 +339,7 @@ The system encrypts notification data using keys exchanged through your [`Access
 
 Call the completion handler with `.success` if the message transmits successfully, `.failure(.transportFailed)` if the transport fails but may recover, or `.failure(.transportUnavailable)` if the transport is unavailable. The system retries failed messages or attempts delivery on a different transport.
 
-Add the [`com.apple.developer.accessory-transport-extension`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.accessory-transport-extension) entitlement to your extension’s code signature to use the [`AccessoryTransportAppExtension`](accessorytransportappextension.md) protocol.
+Add the [`com.apple.developer.accessory-transport-extension`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.accessory-transport-extension) entitlement to your extension’s code signature to use the [`AccessoryTransportAppExtension`](accessorytransportappextension.md) protocol.
 
 #### Decrypt Notification Data on Your Accessory
 
@@ -415,19 +415,19 @@ If decryption fails, close the connection, reset the encryption state, and resyn
 
 To alert for a notification, present it on screen, play a sound, or trigger a haptic effect that uses touch to give users feedback on your accessory device.
 
-Use the [`AlertingContext`](https://developer.apple.com/documentation/AccessoryNotifications/AlertingContext) to determine whether a notification requires an alert. The system provides the [`shouldAlert`](https://developer.apple.com/documentation/AccessoryNotifications/AlertingContext/shouldAlert) property, which represents the person’s preferred notification behavior using notification settings and the iOS device’s current Focus state.
+Use the [`AlertingContext`](https://developer.apple.com/documentation/accessorynotifications/alertingcontext) to determine whether a notification requires an alert. The system provides the [`shouldAlert`](https://developer.apple.com/documentation/accessorynotifications/alertingcontext/shouldalert) property, which represents the person’s preferred notification behavior using notification settings and the iOS device’s current Focus state.
 
-The [`notificationCanAlert`](https://developer.apple.com/documentation/AccessoryNotifications/AlertingContext/notificationCanAlert) property indicates whether the notification has sound and alert permissions. The system might set [`notificationCanAlert`](https://developer.apple.com/documentation/AccessoryNotifications/AlertingContext/notificationCanAlert) to `false` when the notification already alerts on another device or if device settings disable alerting for the notification.
+The [`notificationCanAlert`](https://developer.apple.com/documentation/accessorynotifications/alertingcontext/notificationcanalert) property indicates whether the notification has sound and alert permissions. The system might set [`notificationCanAlert`](https://developer.apple.com/documentation/accessorynotifications/alertingcontext/notificationcanalert) to `false` when the notification already alerts on another device or if device settings disable alerting for the notification.
 
-The [`isSuppressedByFocus`](https://developer.apple.com/documentation/AccessoryNotifications/AlertingContext/isSuppressedByFocus) property indicates whether the device’s Focus state suppresses notification alerts.
+The [`isSuppressedByFocus`](https://developer.apple.com/documentation/accessorynotifications/alertingcontext/issuppressedbyfocus) property indicates whether the device’s Focus state suppresses notification alerts.
 
-For specialized notification types, check [`kind`](https://developer.apple.com/documentation/AccessoryNotifications/AlertingContext/kind-swift.property) to apply appropriate handling. For example, use the [`AlertingContext.Kind.incomingCall`](https://developer.apple.com/documentation/AccessoryNotifications/AlertingContext/Kind-swift.enum/incomingCall) case for full-screen displays or priority alerts. Use [`sound`](https://developer.apple.com/documentation/AccessoryNotifications/AlertingContext/sound-swift.property) to determine sound characteristics, including whether the notification ignores silent mode with [`shouldIgnoreSilentMode`](https://developer.apple.com/documentation/AccessoryNotifications/AlertingContext/Sound-swift.struct/shouldIgnoreSilentMode).
+For specialized notification types, check [`kind`](https://developer.apple.com/documentation/accessorynotifications/alertingcontext/kind-swift.property) to apply appropriate handling. For example, use the [`AlertingContext.Kind.incomingCall`](https://developer.apple.com/documentation/accessorynotifications/alertingcontext/kind-swift.enum/incomingcall) case for full-screen displays or priority alerts. Use [`sound`](https://developer.apple.com/documentation/accessorynotifications/alertingcontext/sound-swift.property) to determine sound characteristics, including whether the notification ignores silent mode with [`shouldIgnoreSilentMode`](https://developer.apple.com/documentation/accessorynotifications/alertingcontext/sound-swift.struct/shouldignoresilentmode).
 
 #### Handle Notification Updates and Removals
 
 The forwarding life cycle includes requests to update a notification after your accessory receives it, or to remove one or more existing notifications.
 
-When a notification’s content changes, the system notifies your extension by calling [`updateNotification(_:)`](https://developer.apple.com/documentation/AccessoryNotifications/NotificationsForwarding/AccessoryNotificationsHandler/updateNotification(_:)). Update the notification on your accessory without alerting again:
+When a notification’s content changes, the system notifies your extension by calling [`updateNotification(_:)`](https://developer.apple.com/documentation/accessorynotifications/notificationsforwarding/accessorynotificationshandler/updatenotification(_:)). Update the notification on your accessory without alerting again:
 
 ```swift
 func updateNotification(_ notification: AccessoryNotification) {
@@ -441,7 +441,7 @@ func updateNotification(_ notification: AccessoryNotification) {
 }
 ```
 
-If someone dismisses a notification on another device after your accessory receives the notification, the system follows up with a removal request by calling [`removeNotification(identifier:)`](https://developer.apple.com/documentation/AccessoryNotifications/NotificationsForwarding/AccessoryNotificationsHandler/removeNotification(identifier:)):
+If someone dismisses a notification on another device after your accessory receives the notification, the system follows up with a removal request by calling [`removeNotification(identifier:)`](https://developer.apple.com/documentation/accessorynotifications/notificationsforwarding/accessorynotificationshandler/removenotification(identifier:)):
 
 ```swift
 // Requests the removal of a notification from the accessory.
@@ -456,7 +456,7 @@ func removeNotification(identifier: AccessoryNotification.Identifier) {
 }
 ```
 
-The system calls [`removeAllNotifications()`](https://developer.apple.com/documentation/AccessoryNotifications/NotificationsForwarding/AccessoryNotificationsHandler/removeAllNotifications()) when your accessory needs to remove all notifications, such as when the person deletes the app that sent the notifications:
+The system calls [`removeAllNotifications()`](https://developer.apple.com/documentation/accessorynotifications/notificationsforwarding/accessorynotificationshandler/removeallnotifications()) when your accessory needs to remove all notifications, such as when the person deletes the app that sent the notifications:
 
 ```swift
 // Requests the removal of all notifications from the accessory.
@@ -481,7 +481,7 @@ func removeAllNotifications() {
   A protocol for an extension that handles cryptographic key exchange with your accessory.
 - [protocol AccessoryTransportSecurityConfiguration](accessorytransportsecurityconfiguration.md)
   A protocol that configures and manages communication between your security extension and the system.
-- [Accessory Notifications](../AccessoryNotifications/AccessoryNotifications.md)
+- [Accessory Notifications](../accessorynotifications/accessorynotifications.md)
   Receive forwarded iOS system notifications on an accessory that you develop.
 
 

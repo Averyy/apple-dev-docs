@@ -23,7 +23,7 @@ init<IntentType>(_ intent: IntentType, widgetKind: String, relevance: RelevantCo
 
 - `intent`: The app intent you want to suggest. Currently, the intent must be a [`WidgetConfigurationIntent`](widgetconfigurationintent.md) type.
 - `widgetKind`: A string you use to describe the intent.
-- `relevance`: Contextual clues to help the system decide where to use the widget. For more information, see the documentation for this type in the [`RelevanceKit`](https://developer.apple.com/documentation/RelevanceKit) framework.
+- `relevance`: Contextual clues to help the system decide where to use the widget. For more information, see the documentation for this type in the [`RelevanceKit`](https://developer.apple.com/documentation/relevancekit) framework.
 
 
 ---

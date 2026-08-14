@@ -21,7 +21,7 @@ var redirect: URLRequest? { get set }
 
 #### Discussion
 
-Set this property to an instance of [`NSURLRequest`](https://developer.apple.com/documentation/Foundation/NSURLRequest) indicating a redirection of the loading request to another URL.
+Set this property to an instance of [`NSURLRequest`](https://developer.apple.com/documentation/foundation/nsurlrequest) indicating a redirection of the loading request to another URL.
 
 If no redirection is needed, the value of this property must be `nil`, which is the default.
 

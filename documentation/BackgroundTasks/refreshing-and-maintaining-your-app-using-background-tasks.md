@@ -18,7 +18,7 @@ This sample code project must be run on a physical device.
 
 ## See Also
 
-- [Using background tasks to update your app](../UIKit/using-background-tasks-to-update-your-app.md)
+- [Using background tasks to update your app](../uikit/using-background-tasks-to-update-your-app.md)
   Configure your app to perform tasks in the background to make efficient use of processing time and power.
 - [Choosing Background Strategies for Your App](choosing-background-strategies-for-your-app.md)
   Select the best method of scheduling background runtime for your app.

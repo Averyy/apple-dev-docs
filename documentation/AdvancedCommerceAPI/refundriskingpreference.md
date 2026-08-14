@@ -16,7 +16,7 @@ boolean refundRiskingPreference
 
 #### Discussion
 
-The App Store uses a variety of factors to determine if a refund request is approved or denied. Set this value to `true` to enable the App Store to ask for consumption information about the product with the refund request. When this value is `true`, you receive a `CONSUMPTION_REQUEST` [`notificationType`](https://developer.apple.com/documentation/AppStoreServerNotifications/notificationType) on your your [`App Store Server Notifications V2`](https://developer.apple.com/documentation/AppStoreServerNotifications/App-Store-Server-Notifications-V2) endpoint. Respond to the consumption request using the [`Send Consumption Information`](https://developer.apple.com/documentation/AppStoreServerAPI/Send-Consumption-Information) to provide additional information that informs and improves the refund process.
+The App Store uses a variety of factors to determine if a refund request is approved or denied. Set this value to `true` to enable the App Store to ask for consumption information about the product with the refund request. When this value is `true`, you receive a `CONSUMPTION_REQUEST` [`notificationType`](https://developer.apple.com/documentation/appstoreservernotifications/notificationtype) on your your [`App Store Server Notifications V2`](https://developer.apple.com/documentation/appstoreservernotifications/app-store-server-notifications-v2) endpoint. Respond to the consumption request using the [`Send Consumption Information`](https://developer.apple.com/documentation/appstoreserverapi/send-consumption-information) to provide additional information that informs and improves the refund process.
 
 Set this value to `false` otherwise. You won’t receive a `CONSUMPTION_REQUEST` notification.
 

@@ -62,7 +62,7 @@ If you opt-in to notifications, and the associated marketplace has set up webhoo
 
 If you manage an alternative marketplace, you can get the alternative distribution package ID either from a notification from the webhooks API or manually from the app developer. A marketplace can’t generate alternative distribution packages on behalf of the app developer. The marketplace developer uses the App Store Connect API key associated with the marketplace provider’s account to download ADPs.
 
-To learn more about server-side processing of marketplace webhooks, see [`Processing alternative app marketplace notifications`](https://developer.apple.com/documentation/appdistribution/processing-alternative-marketplace-notifications).
+To learn more about server-side processing of marketplace webhooks, see [`Processing alternative app marketplace notifications`](https://developer.apple.com/documentation/marketplacekit/processing-alternative-marketplace-notifications).
 
 ##### Create and Manage Alternative Distribution Packages for Web Distribution Apps
 
@@ -95,7 +95,7 @@ You can also find the app Apple ID by going to App Store Connect > My Apps > Sel
 }
 ```
 
-To learn more about next steps for your web distribution app, see [`Installing your app from your website`](https://developer.apple.com/documentation/appdistribution/installing-your-app-from-your-website).
+To learn more about next steps for your web distribution app, see [`Installing your app from your website`](https://developer.apple.com/documentation/marketplacekit/installing-your-app-from-your-website).
 
 ##### Select the Most Recent Distribution Package
 

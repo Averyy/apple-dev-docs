@@ -18,11 +18,17 @@ class OSString : OSObject
 
 OSString is a container class for managing arrays of characters. An OSString normally maintains its own character buffer and allows changes, but you can create an "immutable" OSString that references an external C string buffer using the "NoCopy" creator functions. Functions called to change the contents of an immutable OSString will fail.
 
+**Encodings**
+
 OSString makes no provisions for different character encodings and assumes that a string is a nul-terminated sequence of single-byte characters. User-space code must either assume an encoding (typically ASCII or UTF-8) or determine it in some other way (such as an IORegistryEntry property).
+
+**Altering Strings**
 
 OSString's intended use is as a reference-counted object container for a C string and little more. While OSString provides full access to the underlying C string, it provides little in the way of string object manipulation; there are no append or insert functions, only a set-character function. If you need to manipulate OSStrings, it's generally best to get the C strings, alter them as necessary, and create a new OSString object from the resulting C string.
 
-With very few exceptions in the I/O Kit, all Libkern-based C++ classes, functions, and macros are  to use in a primary interrupt context. Consult the I/O Kit documentation related to primary interrupts for more information.
+**Use Restrictions**
+
+With very few exceptions in the I/O Kit, all Libkern-based C++ classes, functions, and macros are **unsafe** to use in a primary interrupt context. Consult the I/O Kit documentation related to primary interrupts for more information.
 
 OSString provides no concurrency protection; it's up to the usage context to provide any protection necessary. Some portions of the I/O Kit, such as IORegistryEntry, handle synchronization via defined member functions for setting properties.
 
@@ -62,34 +68,34 @@ OSString provides no concurrency protection; it's up to the usage context to pro
 - [withString](osstring/1808306-withstring.md)
   Creates and initializes an OSString from another OSString.
 ### Instance Methods
-- [- free](../driverkit/osstring/free.md)
-- [- getCStringNoCopy](../driverkit/osstring/getcstringnocopy.md)
-  Returns a pointer to the OSString object’s internal data buffer.
+- [- free](osstring/3180973-free.md)
+- [- getCStringNoCopy](osstring/3180974-getcstringnocopy.md)
+  Returns a pointer to the OSString object's internal data buffer.
 - [- getChar](osstring/1490409-getchar.md)
-- [- getLength](../driverkit/osstring/getlength.md)
+- [- getLength](osstring/3180975-getlength.md)
   Returns length of string not including null terminator.
 - [- getMetaClass](osstring/1490433-getmetaclass.md)
 - [- initWithCString](osstring/1490404-initwithcstring.md)
 - [- initWithCStringNoCopy](osstring/1490434-initwithcstringnocopy.md)
 - [- initWithString](osstring/1490425-initwithstring.md)
-- [- isEqualTo](../driverkit/osstring/isequalto-5paj5.md)
+- [- isEqualTo](osstring/3180976-isequalto.md)
   Compares the string with an OSString.
-- [- isEqualTo](../driverkit/osstring/isequalto-1uq1f.md)
+- [- isEqualTo](osstring/3433852-isequalto.md)
   Compares the string with an OSData.
-- [- isEqualTo](../driverkit/osstring/isequalto-2rg80.md)
+- [- isEqualTo](osstring/3433853-isequalto.md)
   Compares the string with a c-string.
-- [- isEqualTo](../driverkit/osstring/isequalto-712xj.md)
+- [- isEqualTo](osstring/3434577-isequalto.md)
   Compares the string with an OSObject
 - [- serialize](osstring/1490429-serialize.md)
 - [- setChar](osstring/1490414-setchar.md)
 ### Type Methods
-- [+ withCString](../driverkit/osstring/withcstring-4wsql.md)
+- [+ withCString](osstring/3180977-withcstring.md)
   Allocates an OSString object with a copy of a c-string.
-- [+ withCString](../driverkit/osstring/withcstring-721oh.md)
+- [+ withCString](osstring/3433854-withcstring.md)
   Allocates an OSString object with a copy of a c-string, up to a given length.
-- [+ withCStringNoCopy](../driverkit/osstring/withcstringnocopy.md)
+- [+ withCStringNoCopy](osstring/3180978-withcstringnocopy.md)
   Allocates an OSString object with a copy of a c-string.
-- [+ withString](../driverkit/osstring/withstring.md)
+- [+ withString](osstring/3180979-withstring.md)
   Allocates an OSString object with a copy of an OString object.
 
 ## Relationships

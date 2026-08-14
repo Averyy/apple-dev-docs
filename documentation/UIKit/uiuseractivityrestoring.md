@@ -28,7 +28,7 @@ protocol UIUserActivityRestoring : NSObjectProtocol
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 ### Conforming Types
 - [UIAccessibilityElement](uiaccessibilityelement.md)
 - [UIActionSheet](uiactionsheet.md)
@@ -110,7 +110,7 @@ protocol UIUserActivityRestoring : NSObjectProtocol
 
 ## See Also
 
-- [class NSUserActivity](../Foundation/NSUserActivity.md)
+- [class NSUserActivity](../foundation/nsuseractivity.md)
   A representation of the state of your app at a moment in time.
 
 

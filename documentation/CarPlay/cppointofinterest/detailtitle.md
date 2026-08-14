@@ -18,7 +18,7 @@ var detailTitle: String? { get set }
 
 #### Discussion
 
-The template only displays the detail card when a user selects a point of interest. If this property is [`nil`](https://developer.apple.com/documentation/ObjectiveC/nil-227m0), the card displays the point of interest’s [`title`](cppointofinterest/title.md) instead.
+The template only displays the detail card when a user selects a point of interest. If this property is [`nil`](https://developer.apple.com/documentation/objectivec/nil-227m0), the card displays the point of interest’s [`title`](cppointofinterest/title.md) instead.
 
 ## See Also
 

@@ -30,7 +30,7 @@ HardSwish(x) = x * (ReLU6(x + 3.0) * 1.0/6.0)
 
 The following illustrates the output that the activation function generates from inputs in the range `-10...10`:
 
-![Graph that shows input values for the activation function on horizontal axis and its output values on vertical axis. ](https://docs-assets.developer.apple.com/published/be309d29bd81c0f09389f408ab11e397/media-3760902%402x.png)
+![Graph that shows input values for the activation function on horizontal axis and its output values on vertical axis. ](/images/com.apple.accelerate/media-3760902@2x.png)
 
 ## See Also
 

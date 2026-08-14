@@ -16,7 +16,7 @@ func removeSelectedObjects(_ objects: [Any]) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/Swift/true) if the selection was changed.
+[`true`](https://developer.apple.com/documentation/swift/true) if the selection was changed.
 
 #### Discussion
 

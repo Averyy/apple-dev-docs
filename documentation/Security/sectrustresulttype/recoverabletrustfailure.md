@@ -30,7 +30,7 @@ This value indicates that you should not trust the chain as is, but that the cha
 
 The way you handle this depends on the situation. For example, if you are performing signature validation and you know when the message was originally received, you should check again using that date to see if the message was valid when you originally received it.
 
-You can also call the [`SecTrustCopyResult(_:)`](sectrustcopyresult(_:).md) method to get more information about the results of the trust evaluation. If applicable, you can call one or more of the methods that start with `SecTrustSet` to correct or bypass the problem. Alternatively, in macOS, you can inform the user of the problem and call the [`SFCertificateTrustPanel`](https://developer.apple.com/documentation/SecurityInterface/SFCertificateTrustPanel) class to let the user change the trust setting for the certificate.
+You can also call the [`SecTrustCopyResult(_:)`](sectrustcopyresult(_:).md) method to get more information about the results of the trust evaluation. If applicable, you can call one or more of the methods that start with `SecTrustSet` to correct or bypass the problem. Alternatively, in macOS, you can inform the user of the problem and call the [`SFCertificateTrustPanel`](https://developer.apple.com/documentation/securityinterface/sfcertificatetrustpanel) class to let the user change the trust setting for the certificate.
 
 After correcting the problem, reevaluate the trust. Each time you call [`SecTrustEvaluateWithError(_:_:)`](sectrustevaluatewitherror(_:_:).md) or [`SecTrustEvaluateAsyncWithError(_:_:_:)`](sectrustevaluateasyncwitherror(_:_:_:).md), the method discards the results of any previous evaluation and replaces them with the new results.
 

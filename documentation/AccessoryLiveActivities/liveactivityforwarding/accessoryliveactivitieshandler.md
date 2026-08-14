@@ -21,7 +21,7 @@ protocol AccessoryLiveActivitiesHandler : Sendable
 
 #### Overview
 
-Implement this protocol to receive forwarded Live Activity content and life cycle updates in your [`AccessoryDataProvider`](https://developer.apple.com/documentation/AccessoryTransportExtension/AccessoryDataProvider) extension.
+Implement this protocol to receive forwarded Live Activity content and life cycle updates in your [`AccessoryDataProvider`](https://developer.apple.com/documentation/accessorytransportextension/accessorydataprovider) extension.
 
 Each `AccessoryLiveActivitiesHandler` object has one corresponding [`LiveActivityForwarding.Session`](liveactivityforwarding/session.md).
 
@@ -44,8 +44,8 @@ Each `AccessoryLiveActivitiesHandler` object has one corresponding [`LiveActivit
 ## Relationships
 
 ### Inherits From
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

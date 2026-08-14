@@ -55,9 +55,9 @@ If an error occurs and the original item is not in the original location or a te
   Creates a symbolic link identified by a given path that refers to a given location.
 - [func pathContentOfSymbolicLink(atPath: String) -> String?](filemanager/pathcontentofsymboliclink(atpath:).md)
   Returns the path of the directory or file that a symbolic link at a given path refers to.
-- [func fileManager(FileManager, shouldProceedAfterError: [AnyHashable : Any]) -> Bool](../ObjectiveC/NSObject-swift.class/fileManager(_:shouldProceedAfterError:).md)
+- [func fileManager(FileManager, shouldProceedAfterError: [AnyHashable : Any]) -> Bool](../objectivec/nsobject-swift.class/filemanager(_:shouldproceedaftererror:).md)
   An `NSFileManager` object sends this message to its handler for each error it encounters when copying, moving, removing, or linking files or directories.
-- [func fileManager(FileManager, willProcessPath: String)](../ObjectiveC/NSObject-swift.class/fileManager(_:willProcessPath:).md)
+- [func fileManager(FileManager, willProcessPath: String)](../objectivec/nsobject-swift.class/filemanager(_:willprocesspath:).md)
   An `NSFileManager` object sends this message to a handler immediately before attempting to move, copy, rename, or delete, or before attempting to link to a given path.
 
 

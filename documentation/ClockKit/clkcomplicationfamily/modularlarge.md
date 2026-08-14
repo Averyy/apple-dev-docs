@@ -18,7 +18,7 @@ case modularLarge
 
 The following figure shows the size and location of the modular large complication.
 
-![Diagram showing the size and position of a modular large complication.](https://docs-assets.developer.apple.com/published/e5b426fe727613ab0191b7ee6796dda6/media-2933731%402x.png)
+![Diagram showing the size and position of a modular large complication.](/images/com.apple.clockkit/media-2933731@2x.png)
 
 ## See Also
 

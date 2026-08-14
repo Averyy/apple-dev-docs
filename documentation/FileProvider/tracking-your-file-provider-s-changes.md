@@ -10,7 +10,7 @@ While an enumerator is active, it also tracks any changes to its contents. The s
 
 > **Note**:  The system always tracks changes to the working set. If it doesn’t have an active enumerator for the working set, it creates a new one.
 
-![The flow of information between your File Provider and the system. ](https://docs-assets.developer.apple.com/published/26264611abbe399f064377c5121697ec/media-2910269%402x.png)
+![The flow of information between your File Provider and the system. ](/images/com.apple.fileprovider/media-2910269@2x.png)
 
 When your file provider app or extension identifies a change to its content:
 

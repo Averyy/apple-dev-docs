@@ -8,7 +8,7 @@ A schema that defines the properties of an image in the physical environment.
 
 This schema defines the criteria that the runtime uses to recognize an image in the physical environment, including pixel data and width.
 
-When RealityKit opens a USDZ file that defines a reference image, it instantiates an [`AnchorEntity`](https://developer.apple.com/documentation/RealityKit/AnchorEntity) with a component type  [`AnchoringComponent.Target.image(group:name:)`](https://developer.apple.com/documentation/RealityKit/AnchoringComponent/Target-swift.enum/image(group:name:)).
+When RealityKit opens a USDZ file that defines a reference image, it instantiates an [`AnchorEntity`](https://developer.apple.com/documentation/realitykit/anchorentity) with a component type  [`AnchoringComponent.Target.image(group:name:)`](https://developer.apple.com/documentation/realitykit/anchoringcomponent/target-swift.enum/image(group:name:)).
 
 ##### Declaration
 

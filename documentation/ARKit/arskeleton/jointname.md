@@ -30,7 +30,7 @@ When you’re tracking a body in 3D space, you get a named joint’s position in
   Creates a new joint name.
 - [init?(VNRecognizedPointKey)](arskeleton/jointname/init(_:).md)
   Returns a joint name that corresponds to a key point defined in a human body pose.
-- [struct VNRecognizedPointKey](../Vision/VNRecognizedPointKey.md)
+- [struct VNRecognizedPointKey](../vision/vnrecognizedpointkey.md)
   The data type for all recognized point keys.
 ### Identifying Joints
 - [static let root: ARSkeleton.JointName](arskeleton/jointname/root.md)
@@ -53,11 +53,11 @@ When you’re tracking a body in 3D space, you get a named joint’s position in
 ## Relationships
 
 ### Conforms To
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [RawRepresentable](../Swift/RawRepresentable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [RawRepresentable](../swift/rawrepresentable.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

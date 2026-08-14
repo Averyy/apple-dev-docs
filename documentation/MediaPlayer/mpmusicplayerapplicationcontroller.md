@@ -23,7 +23,7 @@ class MPMusicPlayerApplicationController
 ### Changing the queue contents
 - [func perform(queueTransaction: (MPMusicPlayerControllerMutableQueue) -> Void, completionHandler: (MPMusicPlayerControllerQueue, (any Error)?) -> Void)](mpmusicplayerapplicationcontroller/perform(queuetransaction:completionhandler:).md)
   Changes the contents of the media items in the queue.
-- [static let MPMusicPlayerControllerQueueDidChange: NSNotification.Name](../Foundation/NSNotification/Name-swift.struct/MPMusicPlayerControllerQueueDidChange.md)
+- [static let MPMusicPlayerControllerQueueDidChange: NSNotification.Name](../foundation/nsnotification/name-swift.struct/mpmusicplayercontrollerqueuedidchange.md)
   Indicates the music player’s queue changed.
 
 ## Relationships
@@ -31,13 +31,13 @@ class MPMusicPlayerApplicationController
 ### Inherits From
 - [MPMusicPlayerController](mpmusicplayercontroller.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
 - [MPMediaPlayback](mpmediaplayback.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

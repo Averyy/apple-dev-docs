@@ -46,7 +46,7 @@ The `NS_ENUM` macro is the only enumeration macro that results in an actual enum
 
 ##### Declare Closed Enumerations
 
-Use the `NS_CLOSED_ENUM` macro for a simple group of constants that you can never add new cases to. Closed enumerations are useful for representing a finite set of states that you expect people to switch over using a switch statement. The three cases of [`ComparisonResult`](https://developer.apple.com/documentation/Foundation/ComparisonResult)—[`ComparisonResult.orderedAscending`](https://developer.apple.com/documentation/Foundation/ComparisonResult/orderedAscending), [`ComparisonResult.orderedSame`](https://developer.apple.com/documentation/Foundation/ComparisonResult/orderedSame), and [`ComparisonResult.orderedDescending`](https://developer.apple.com/documentation/Foundation/ComparisonResult/orderedDescending)—are an example of a finite set. They’re the only logical cases for performing an ordered comparison during tasks like sorting.
+Use the `NS_CLOSED_ENUM` macro for a simple group of constants that you can never add new cases to. Closed enumerations are useful for representing a finite set of states that you expect people to switch over using a switch statement. The three cases of [`ComparisonResult`](https://developer.apple.com/documentation/foundation/comparisonresult)—[`ComparisonResult.orderedAscending`](https://developer.apple.com/documentation/foundation/comparisonresult/orderedascending), [`ComparisonResult.orderedSame`](https://developer.apple.com/documentation/foundation/comparisonresult/orderedsame), and [`ComparisonResult.orderedDescending`](https://developer.apple.com/documentation/foundation/comparisonresult/ordereddescending)—are an example of a finite set. They’re the only logical cases for performing an ordered comparison during tasks like sorting.
 
 Don’t use the `NS_CLOSED_ENUM` macro if:
 
@@ -58,7 +58,7 @@ In these scenarios, use the `NS_ENUM` macro instead.
 
 ##### Declare Option Sets
 
-You use the `NS_OPTIONS` macro when two or more constants in a grouping of constants can be combined. For example, the output formatting for a [`JSONEncoder`](https://developer.apple.com/documentation/Foundation/JSONEncoder) instance can be sorted and can use ample white space at the same time, so it’s valid to specify both options in an option set: `[.sorted, .prettyPrinted]`.
+You use the `NS_OPTIONS` macro when two or more constants in a grouping of constants can be combined. For example, the output formatting for a [`JSONEncoder`](https://developer.apple.com/documentation/foundation/jsonencoder) instance can be sorted and can use ample white space at the same time, so it’s valid to specify both options in an option set: `[.sorted, .prettyPrinted]`.
 
 The example below shows how to apply the `NS_OPTIONS` macro and assign raw values that are mutually exclusive:
 

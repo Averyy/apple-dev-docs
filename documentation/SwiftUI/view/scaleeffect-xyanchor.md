@@ -34,7 +34,7 @@ Image(systemName: "envelope.badge.fill")
     .border(Color.gray)
 ```
 
-![A screenshot showing a 100x100 pixel red envelope scaled down 50% in](https://docs-assets.developer.apple.com/published/a36007cdcb6c9a2f3c04af32c57e260f/SwiftUI-View-scaleEffect-xy%402x.png)
+![A screenshot showing a 100x100 pixel red envelope scaled down 50% in](/images/com.apple.SwiftUI/SwiftUI-View-scaleEffect-xy@2x.png)
 
 ## Parameters
 

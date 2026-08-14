@@ -113,7 +113,7 @@ Your application can enable this capability on a global basis and then manually 
 
 Alternatively, your application can manually enable and disable this functionality. Creating a process assigns a counter that indicates if the process is safe to terminate. You decrement and increment the counter using the methods [`enableSuddenTermination()`](processinfo/enablesuddentermination().md) and [`disableSuddenTermination()`](processinfo/disablesuddentermination().md). A value of `0` enables the system to terminate the process without first sending a notification or event.
 
-Your application can support sudden termination upon launch by adding a key to the application’s `Info.plist` file. If the [`NSSupportsSuddenTermination`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSSupportsSuddenTermination) key exists in the `Info.plist` file and has a value of [`true`](https://developer.apple.com/documentation/Swift/true), it’s the equivalent of calling [`enableSuddenTermination()`](processinfo/enablesuddentermination().md) during your application launch. This allows the system to terminate the process immediately. You can still override this behavior by invoking [`disableSuddenTermination()`](processinfo/disablesuddentermination().md).
+Your application can support sudden termination upon launch by adding a key to the application’s `Info.plist` file. If the [`NSSupportsSuddenTermination`](https://developer.apple.com/documentation/bundleresources/information-property-list/nssupportssuddentermination) key exists in the `Info.plist` file and has a value of [`true`](https://developer.apple.com/documentation/swift/true), it’s the equivalent of calling [`enableSuddenTermination()`](processinfo/enablesuddentermination().md) during your application launch. This allows the system to terminate the process immediately. You can still override this behavior by invoking [`disableSuddenTermination()`](processinfo/disablesuddentermination().md).
 
 Typically, you disable sudden termination whenever your app defers work that the app must complete before it terminates. If, for example, your app defers writing data to disk and enables sudden termination, you should bracket the sensitive operations with a call to [`disableSuddenTermination()`](processinfo/disablesuddentermination().md), perform the necessary operations, and then send a balancing [`enableSuddenTermination()`](processinfo/enablesuddentermination().md) message.
 
@@ -122,7 +122,7 @@ In agents or daemon executables that don’t depend on AppKit, you can manually 
 Some AppKit functionality automatically disables sudden termination on a temporary basis to ensure data integrity.
 
 - [`UserDefaults`](userdefaults.md) temporarily disables sudden termination to prevent the process from terminating between the time at which it sets the default and the time at which it writes the preferences file — including that default — to disk.
-- [`NSDocument`](https://developer.apple.com/documentation/AppKit/NSDocument) temporarily disables sudden termination to prevent the process from terminating between the time at which the user has made a change to a document and the time at which [`NSDocument`](https://developer.apple.com/documentation/AppKit/NSDocument) writes the user’s change to disk.
+- [`NSDocument`](https://developer.apple.com/documentation/appkit/nsdocument) temporarily disables sudden termination to prevent the process from terminating between the time at which the user has made a change to a document and the time at which [`NSDocument`](https://developer.apple.com/documentation/appkit/nsdocument) writes the user’s change to disk.
 
 > 💡 **Tip**:  You can determine the value of the sudden termination using the following LLDB command. ```objc
 print (long)[[NSClassFromString(@"NSProcessInfo") processInfo] _suddenTerminationDisablingCount]
@@ -234,16 +234,16 @@ print (long)[[NSClassFromString(@"NSProcessInfo") processInfo] _suddenTerminatio
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 
 ---

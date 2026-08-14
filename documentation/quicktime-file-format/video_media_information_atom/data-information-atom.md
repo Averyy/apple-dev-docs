@@ -7,7 +7,7 @@ An atom that specifies the data handler component that provides access to the me
 
 #### Overview
 
-See [`Data information atom ('dinf')`](data_information_atom.md).
+See [`Data information atom`](data_information_atom.md).
 
 ## See Also
 

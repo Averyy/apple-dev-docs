@@ -8,7 +8,7 @@ Inspect and modify a video augmentation option set with the properties and metho
 
 You don’t typically use these properties and methods directly.
 
-[`MLHandActionClassifier.VideoAugmentationOptions`](mlhandactionclassifier/videoaugmentationoptions.md) inherits these symbols from [`OptionSet`](https://developer.apple.com/documentation/Swift/OptionSet) and [`Codable`](https://developer.apple.com/documentation/Swift/Codable). Create a set of video augmentations by creating an array literal with any combination of these type properties:
+[`MLHandActionClassifier.VideoAugmentationOptions`](mlhandactionclassifier/videoaugmentationoptions.md) inherits these symbols from [`OptionSet`](https://developer.apple.com/documentation/swift/optionset) and [`Codable`](https://developer.apple.com/documentation/swift/codable). Create a set of video augmentations by creating an array literal with any combination of these type properties:
 
 - `horizontalFlip`
 - `randomMove`

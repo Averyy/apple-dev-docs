@@ -22,7 +22,7 @@ static let preferredDevice: SCNView.Option
 
 #### Discussion
 
-The value for this key is a [`MTLDevice`](https://developer.apple.com/documentation/Metal/MTLDevice) object.
+The value for this key is a [`MTLDevice`](https://developer.apple.com/documentation/metal/mtldevice) object.
 
 Use this key to choose a specific device for rendering (for example, on a macOS system with multiple GPUs), or leave it unspecified to allow SceneKit to automatically choose a device.
 

@@ -21,7 +21,7 @@ func reindexAllEntities(indexDescription: CSSearchableIndexDescription) async th
 
 #### Discussion
 
-- Parameter: - indexDescription: An object that describes the characteristics of the searchable index. Use the information in this type to determine which of your app’s [`CSSearchableIndex`](https://developer.apple.com/documentation/CoreSpotlight/CSSearchableIndex) instances to update.
+- Parameter: - indexDescription: An object that describes the characteristics of the searchable index. Use the information in this type to determine which of your app’s [`CSSearchableIndex`](https://developer.apple.com/documentation/corespotlight/cssearchableindex) instances to update.
 
 The system calls this method when it needs you to reindex all app entities in one of your app’s searchable indexes. In your implementation of this method, fetch all entities and donate them again to your index.
 

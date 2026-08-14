@@ -8,13 +8,13 @@ Import assets to design Reality Composer Pro scenes for your app.
 
 In Reality Composer Pro, you build scenes from entities and the assets you import. For background on entities, scenes, and the workspace, see [`Navigating the Reality Composer Pro workspace`](realitycomposerpro-essentials-workspaceoverview.md).
 
-![A screenshot of a new, empty Reality Composer Pro project.](https://docs-assets.developer.apple.com/published/c4ba14b717f1f2b8a70e71064f9a0283/EmptyProject%402x.png)
+![A screenshot of a new, empty Reality Composer Pro project.](/images/RealityComposerPro/EmptyProject@2x.png)
 
 ##### Add Entity Assets to Your Project
 
 To create an entity, in the Project Browser, click **+** and then select **Entity** from the menu. Repeat as needed. Alternatively, create non-asset entities directly in the Scene Hierarchy by Control-clicking an entity and then selecting **Add Child Entity**. If you close a scene’s tab and need to reopen it, double-click the entity file in the Project Browser. To remove a scene, delete the scene’s file in the Project Browser.
 
-![A screenshot of the Reality Composer Pro Project Browser with the + (Add) menu open, showing the Entity option.](https://docs-assets.developer.apple.com/published/a0a7fd02056482d0e39fc2a306739740/ProjectBrowserMenuBar%402x.png)
+![A screenshot of the Reality Composer Pro Project Browser with the + (Add) menu open, showing the Entity option.](/images/RealityComposerPro/ProjectBrowserMenuBar@2x.png)
 
 #### Import Assets to Your Project
 
@@ -24,7 +24,7 @@ In Reality Composer Pro, you design scenes by adding or importing **assets** int
 
 From the Reality Composer Pro main menu, click **File** and then click **Import File**. This imports one or more files into your project, such as a PNG file to use for a texture, an audio file, or a USD file. Tip: You can also drag and drop asset files into Project Browser to import them.
 
-![A screenshot of the Reality Composer Pro main File menu showing the Import File option.](https://docs-assets.developer.apple.com/published/af654a83e49fb0ed3d038aa0f5beda72/ImportMenu%402x.png)
+![A screenshot of the Reality Composer Pro main File menu showing the Import File option.](/images/RealityComposerPro/ImportMenu@2x.png)
 
 > ❗ **Important**: When you import a legacy project, Reality Composer Pro does not use .usd as its project file type. Reality Composer Pro saves any changes you make to the Reality Composer Pro project file, not the original .usd file.
 
@@ -36,7 +36,7 @@ From the Project Browser, Control-click the top-level project folder and then cl
 
 Alternatively, in the Project Browser, click the **Import** icon to import assets.
 
-![A screenshot of the Reality Composer Pro Project Browser highlighting the Import icon.](https://docs-assets.developer.apple.com/published/ce4ee4911fe2b177bc2f23c8095e6f32/ProjectBrowserImport%402x.png)
+![A screenshot of the Reality Composer Pro Project Browser highlighting the Import icon.](/images/RealityComposerPro/ProjectBrowserImport@2x.png)
 
 Reality Composer Pro can represent many assets as entities within a scene. However, not all assets can become entities. For example, image files don’t become entities when you add them to a scene. Reality Composer Pro only uses image assets indirectly — for example, as a source texture for materials built in Shader Graph. If you drag an image asset into the scene, nothing happens.
 
@@ -62,7 +62,7 @@ You can manipulate an entity in the following ways:
 - **Rotating entities** — To rotate the selected entity, click on the manipulator’s rotation control, shown as a circle, and drag in a circular motion. The viewport’s manipulator shows one rotation control at a time. To rotate an entity on one of the other axes, click on the corresponding ring for the axis you want to rotate.
 - **Scaling entities** — To scale the selected entity uniformly, drag the manipulator handles away from the entity’s origin to scale it up, or drag toward the entity’s origin to scale it down.
 
-![A picture of the Reality Composer Pro Move interaction object shown in the Viewport.](https://docs-assets.developer.apple.com/published/e389046122756a15e695de79b122c223/Gizmo%402x.png)
+![A picture of the Reality Composer Pro Move interaction object shown in the Viewport.](/images/RealityComposerPro/Gizmo@2x.png)
 
 #### Change Entities Through the Inspector
 
@@ -112,7 +112,7 @@ For more information, see [`Linking an Xcode project`](realitycomposerpro-essent
 
 As you continue to build in Reality Composer Pro, scenes can get very complex and may contain overlapping entities. To help simplify a scene, you can deactivate entities to remove them from the viewport and your scene without removing them from the current project.
 
-![A screenshot of the Scene Hierarchy context menu in Reality Composer Pro showing the Deactivate option on a selected entity.](https://docs-assets.developer.apple.com/published/9d5cefe47681a069a8dd491546cea384/SceneHierarchyInstancedEntityContextMenu%402x.png)
+![A screenshot of the Scene Hierarchy context menu in Reality Composer Pro showing the Deactivate option on a selected entity.](/images/RealityComposerPro/SceneHierarchyInstancedEntityContextMenu@2x.png)
 
 ##### Deactivate an Entity
 

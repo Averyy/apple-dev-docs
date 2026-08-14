@@ -21,8 +21,8 @@ Your callback routine should not return a value.
 
 ## Parameters
 
-- `ref`: A reference of type   you can query to obtain the remote process information. Acquired from a previous call to  .
-- `info`: An untyped pointer your application can use to pass information it needs when resolving remote processes. The application originally supplies this pointer in the   structure in the   parameter) when it calls the   function.
+- `ref`: A reference of type [`AERemoteProcessResolverRef`](aeremoteprocessresolverref.md) you can query to obtain the remote process information. Acquired from a previous call to [`AECreateRemoteProcessResolver(_:_:)`](1445692-aecreateremoteprocessresolver.md).
+- `info`: An untyped pointer your application can use to pass information it needs when resolving remote processes. The application originally supplies this pointer in the [`AERemoteProcessResolverContext`](aeremoteprocessresolvercontext.md) structure in the `ctx` parameter) when it calls the `AERemoteProcessResolverScheduleWithRunLoop` function.
 
 ## See Also
 

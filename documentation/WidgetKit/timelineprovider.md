@@ -30,7 +30,7 @@ At various times, WidgetKit requests a *timeline* from the provider. A timeline 
 
 For example, consider a widget that displays the health level of a game character. In the game, when the character’s health level is below 100 percent, it recovers at a rate of 25 percent per hour. If the character’s health level is 25 percent, the provider creates a timeline consisting of the following entries:
 
-![A diagram showing a timeline with four entries, starting with the current time at 25 percent health, and hourly entries for the next three hours at 50, 75, and 100 percent health](https://docs-assets.developer.apple.com/published/29bc360745daea7649534c8cb207cc46/TimelineProvider-TimelineEntries%402x.png)
+![A diagram showing a timeline with four entries, starting with the current time at 25 percent health, and hourly entries for the next three hours at 50, 75, and 100 percent health](/images/com.apple.WidgetKit/TimelineProvider-TimelineEntries@2x.png)
 
 The following code shows the structure encapsulating this information.
 
@@ -116,11 +116,11 @@ Each configured widget receives a limited number of refreshes every day. Several
 Use the following approaches to optimize your widget refreshes:
 
 - Have the containing app prepare data for the widget in advance of when the widget needs it. Use a shared group container to store the data.
-- Use background processing time in your app to keep shared data up to date. For more information, see [`Using background tasks to update your app`](https://developer.apple.com/documentation/UIKit/using-background-tasks-to-update-your-app).
+- Use background processing time in your app to keep shared data up to date. For more information, see [`Using background tasks to update your app`](https://developer.apple.com/documentation/uikit/using-background-tasks-to-update-your-app).
 - Choose the most appropriate refresh policy for the information being shown, as described in the preceding section.
 - Call [`reloadTimelines(ofKind:)`](widgetcenter/reloadtimelines(ofkind:).md) only when information the widget is currently displaying changes.
 
-When your app is in the foreground, has an active media session, or is using the standard location service, refreshes don’t count against the widget’s daily limit. For more information about media sessions and location services, see [`AVAudioSession`](https://developer.apple.com/documentation/AVFAudio/AVAudioSession) and [`Configuring your app to use location services`](https://developer.apple.com/documentation/CoreLocation/configuring-your-app-to-use-location-services).
+When your app is in the foreground, has an active media session, or is using the standard location service, refreshes don’t count against the widget’s daily limit. For more information about media sessions and location services, see [`AVAudioSession`](https://developer.apple.com/documentation/avfaudio/avaudiosession) and [`Configuring your app to use location services`](https://developer.apple.com/documentation/corelocation/configuring-your-app-to-use-location-services).
 
 ## Topics
 

@@ -22,7 +22,7 @@ var mutableAudioBufferList: UnsafeMutablePointer<AudioBufferList> { get }
 
 #### Discussion
 
-You use this with some lower-level Core Audio and Audio Toolbox APIs that require a mutable [`AudioBufferList`](https://developer.apple.com/documentation/CoreAudioTypes/AudioBufferList) (for example, the [`AudioConverterConvertComplexBuffer(_:_:_:_:)`](https://developer.apple.com/documentation/AudioToolbox/AudioConverterConvertComplexBuffer(_:_:_:_:)) function).
+You use this with some lower-level Core Audio and Audio Toolbox APIs that require a mutable [`AudioBufferList`](https://developer.apple.com/documentation/coreaudiotypes/audiobufferlist) (for example, the [`AudioConverterConvertComplexBuffer(_:_:_:_:)`](https://developer.apple.com/documentation/audiotoolbox/audioconverterconvertcomplexbuffer(_:_:_:_:)) function).
 
 The `mDataByteSize` fields of this audio buffer list express the buffer’s current [`frameCapacity`](avaudiopcmbuffer/framecapacity.md). If you alter the capacity, modify the buffer’s `frameLength` to match.
 

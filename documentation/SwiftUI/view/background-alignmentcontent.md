@@ -55,7 +55,7 @@ struct Star: View {
 
 By setting different `alignment` values for each modifier, you make the stars appear in different places behind the text:
 
-![A screenshot of the letters A, B, C, D, E, and F written in front of](https://docs-assets.developer.apple.com/published/301a90b5111a107b80cf175a2a867a4a/View-background-2%402x.png)
+![A screenshot of the letters A, B, C, D, E, and F written in front of](/images/com.apple.SwiftUI/View-background-2@2x.png)
 
 If you specify more than one view in the `content` closure, the modifier collects all of the views in the closure into an implicit [`ZStack`](zstack.md), taking them in order from back to front. For example, you can layer a vertical bar behind a circle, with both of those behind a horizontal bar:
 
@@ -72,7 +72,7 @@ Color.blue
 
 Both the background modifier and the implicit [`ZStack`](zstack.md) composed from the background content — the circle and the vertical bar — use a default [`center`](alignment/center.md) alignment. The vertical bar appears centered behind the circle, and both appear as a composite view centered behind the horizontal bar:
 
-![A screenshot of a circle with a horizontal blue bar layered on top](https://docs-assets.developer.apple.com/published/6e671ae0d8386497562685d261b7f44d/View-background-3%402x.png)
+![A screenshot of a circle with a horizontal blue bar layered on top](/images/com.apple.SwiftUI/View-background-3@2x.png)
 
 If you specify an alignment for the background, it applies to the implicit stack rather than to the individual views in the closure. You can see this if you add the [`leading`](alignment/leading.md) alignment:
 
@@ -89,7 +89,7 @@ Color.blue
 
 The vertical bar and the circle move as a unit to align the stack with the leading edge of the horizontal bar, while the vertical bar remains centered on the circle:
 
-![A screenshot of a horizontal blue bar in front of a circle, which](https://docs-assets.developer.apple.com/published/53abc674b550ce27c3b30be982117a10/View-background-3a%402x.png)
+![A screenshot of a horizontal blue bar in front of a circle, which](/images/com.apple.SwiftUI/View-background-3a@2x.png)
 
 To control the placement of individual items inside the `content` closure, either use a different background modifier for each item, as the earlier example of stars under text demonstrates, or add an explicit [`ZStack`](zstack.md) inside the content closure with its own alignment:
 
@@ -108,7 +108,7 @@ Color.blue
 
 The stack alignment ensures that the circle’s leading edge aligns with the vertical bar’s, while the background modifier aligns the composite view with the horizontal bar:
 
-![A screenshot of a horizontal blue bar in front of a circle, which](https://docs-assets.developer.apple.com/published/4f44c3882d3f69c1330a7ce92f62b200/View-background-4%402x.png)
+![A screenshot of a horizontal blue bar in front of a circle, which](/images/com.apple.SwiftUI/View-background-4@2x.png)
 
 You can achieve layering without a background modifier by putting both the modified view and the background content into a [`ZStack`](zstack.md). This produces a simpler view hierarchy, but it changes the layout priority that SwiftUI applies to the views. Use the background modifier when you want the modified view to dominate the layout.
 

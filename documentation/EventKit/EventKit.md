@@ -15,7 +15,7 @@ Create, view, and edit calendar and reminder events.
 
 #### Overview
 
-The EventKit framework provides access to calendar and reminders data so people can create, retrieve, and edit calendar items in your app. In iOS, [`EventKit UI`](https://developer.apple.com/documentation/EventKitUI) provides user interfaces you can implement in your app so people can create and edit calendar items.
+The EventKit framework provides access to calendar and reminders data so people can create, retrieve, and edit calendar items in your app. In iOS, [`EventKit UI`](https://developer.apple.com/documentation/eventkitui) provides user interfaces you can implement in your app so people can create and edit calendar items.
 
 You can use EventKit to set up alarms and create recurring events. And if a change to the Calendar database occurs from outside your app, EventKit detects the change and sends a notification, allowing your app to stay up to date.
 

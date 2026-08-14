@@ -98,7 +98,7 @@ public struct LandmarkEntity: IndexedEntity {
 }
 ```
 
-For more information about describing actions as app intents and app entities, refer to [`Getting started with the App Intents framework`](getting-started-with-the-app-intents-framework.md) and [`Creating your first app intent`](Creating-your-first-app-intent.md).
+For more information about describing actions as app intents and app entities, refer to [`Getting started with the App Intents framework`](getting-started-with-the-app-intents-framework.md) and [`Creating your first app intent`](creating-your-first-app-intent.md).
 
 #### Organize Intents Using a Shared Swift Package
 
@@ -112,7 +112,7 @@ Both the main app and the widget extension import the shared `TravelTrackingShar
 
 #### Make Your App Entities Transferable
 
-To enable Apple Intelligence to provide the app’s content to other intents, `LandmarkEntity` implements the [`Transferable`](https://developer.apple.com/documentation/CoreTransferable/Transferable) protocol and provides plain-text, image, PDF, and `ValueRepresentation` representations that Siri understands. While the [`FileRepresentation`](https://developer.apple.com/documentation/CoreTransferable/FileRepresentation) and [`DataRepresentation`](https://developer.apple.com/documentation/CoreTransferable/DataRepresentation) types work great for known formats like PDFs or images, [`IntentValueRepresentation`](IntentValueRepresentation.md) handles structured types, such as `PlaceDescriptor` for locations, that don’t have an associated file format:
+To enable Apple Intelligence to provide the app’s content to other intents, `LandmarkEntity` implements the [`Transferable`](https://developer.apple.com/documentation/coretransferable/transferable) protocol and provides plain-text, image, PDF, and `ValueRepresentation` representations that Siri understands. While the [`FileRepresentation`](https://developer.apple.com/documentation/coretransferable/filerepresentation) and [`DataRepresentation`](https://developer.apple.com/documentation/coretransferable/datarepresentation) types work great for known formats like PDFs or images, [`IntentValueRepresentation`](intentvaluerepresentation.md) handles structured types, such as `PlaceDescriptor` for locations, that don’t have an associated file format:
 
 ```swift
 extension LandmarkEntity: Transferable {
@@ -200,7 +200,7 @@ For more information about making onscreen content available to Siri and Apple I
 
 When an intent receives entities as parameters, the system resolves each one by calling the entity query and populating all properties. For intents that only need entity identifiers, for example, tagging or deleting, this resolution is unnecessary overhead.
 
-[`EntityCollection`](EntityCollection.md) stores an array of entity identifiers instead of fully resolved entities. The system passes the identifiers directly to the intent’s `perform()` method without loading the full entity contents:
+[`EntityCollection`](entitycollection.md) stores an array of entity identifiers instead of fully resolved entities. The system passes the identifiers directly to the intent’s `perform()` method without loading the full entity contents:
 
 ```swift
 public struct TagPhotosIntent: AppIntent {
@@ -239,7 +239,7 @@ public struct TagPhotosIntent: AppIntent {
 
 When Siri continues a conversation across devices, the system carries entity references alongside the conversation. If an entity uses locally generated IDs, the same entity can have a different ID on each device, and Siri can’t find it.
 
-[`SyncableEntity`](SyncableEntity.md) declares to the system that an entity’s ID is stable across devices, so Siri can find it. The sample app’s `PhotoEntity` conforms to the `SyncableEntity` protocol:
+[`SyncableEntity`](syncableentity.md) declares to the system that an entity’s ID is stable across devices, so Siri can find it. The sample app’s `PhotoEntity` conforms to the `SyncableEntity` protocol:
 
 ```swift
 @AppEntity(schema: .photos.asset)
@@ -430,7 +430,7 @@ struct UpdateFavoriteIntent: AppIntent {
 
 #### Offer Interactive Snippets
 
-The app’s “Find Closest” App Shortcut runs an app intent that finds the nearest landmark without opening the app and lets people find tickets to visit it. Instead of taking them to the app, the intent presents an interactive snippet that appears as an overlay at the top of the screen. To display the interactive snippet, the app’s `ClosestLandmarkIntent` returns a [`SnippetIntent`](SnippetIntent.md) that presents the interactive snippet in its `perform()` method:
+The app’s “Find Closest” App Shortcut runs an app intent that finds the nearest landmark without opening the app and lets people find tickets to visit it. Instead of taking them to the app, the intent presents an interactive snippet that appears as an overlay at the top of the screen. To display the interactive snippet, the app’s `ClosestLandmarkIntent` returns a [`SnippetIntent`](snippetintent.md) that presents the interactive snippet in its `perform()` method:
 
 ```swift
 public struct ClosestLandmarkIntent: AppIntent {
@@ -458,7 +458,7 @@ For more information about displaying interactive snippets, refer to [`Displayin
 
 #### Add Entities to the Spotlight Index
 
-The app describes its data as app entities so the system can use that data when running app intents. The app also donates the entities to the semantic search index so people can find them in Spotlight. The following example shows how the app’s `LandmarkEntity` conforms to [`IndexedEntity`](IndexedEntity.md) and uses Swift macros to add the indexing keys that Spotlight needs.
+The app describes its data as app entities so the system can use that data when running app intents. The app also donates the entities to the semantic search index so people can find them in Spotlight. The following example shows how the app’s `LandmarkEntity` conforms to [`IndexedEntity`](indexedentity.md) and uses Swift macros to add the indexing keys that Spotlight needs.
 
 ```swift
 struct LandmarkEntity: IndexedEntity {
@@ -500,7 +500,7 @@ For more information, refer to [`Making app entities available in Spotlight`](ma
 
 #### Integrate Search Results with Visual Intelligence
 
-With visual intelligence, people circle items onscreen or in the visual intelligence camera to search for matching results across apps that support visual intelligence. To support visual intelligence search, the sample app implements an [`IntentValueQuery`](IntentValueQuery.md) to find matching landmarks:
+With visual intelligence, people circle items onscreen or in the visual intelligence camera to search for matching results across apps that support visual intelligence. To support visual intelligence search, the sample app implements an [`IntentValueQuery`](intentvaluequery.md) to find matching landmarks:
 
 ```swift
 @UnionValue
@@ -527,7 +527,7 @@ struct LandmarkIntentValueQuery: IntentValueQuery {
 }
 ```
 
-For more information about integrating your app with visual intelligence, refer to [`Visual Intelligence`](https://developer.apple.com/documentation/VisualIntelligence).
+For more information about integrating your app with visual intelligence, refer to [`Visual Intelligence`](https://developer.apple.com/documentation/visualintelligence).
 
 ## See Also
 

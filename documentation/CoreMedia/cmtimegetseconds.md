@@ -26,7 +26,7 @@ The time in seconds.
 
 #### Discussion
 
-If the time is [`invalid`](cmtime/invalid.md) or [`indefinite`](cmtime/indefinite.md), the result is [`nan`](https://developer.apple.com/documentation/Swift/Double/nan).
+If the time is [`invalid`](cmtime/invalid.md) or [`indefinite`](cmtime/indefinite.md), the result is [`nan`](https://developer.apple.com/documentation/swift/double/nan).
 
 If the time is infinite, the result is positive or negative infinity.
 

@@ -10,7 +10,7 @@ Training a good image model requires a variety of training images with different
 
 To maximize the potential impact of your data you can use image augmentations. Augmenting images is the process of applying transformations such as flipping, cropping, resizing, adjusting brightness, adding noise, and so on. Image augmentations are not a replacement for a good image data set, but they help maximize the data set’s effectiveness. Each augmentation has the potential to multiply the size of your training data which is helpful when your training sample size is small.
 
-![Diagram that shows an image with arrows pointing to variations of it. Variations include a cropped image, a resized image, a faded image, and an image with added noise.](https://docs-assets.developer.apple.com/published/8a1b64ac2d8e78eb0405e12ac466c976/image_augmentation%402x.png)
+![Diagram that shows an image with arrows pointing to variations of it. Variations include a cropped image, a resized image, a faded image, and an image with added noise.](/images/com.apple.createmlcomponents/image_augmentation@2x.png)
 
 Keep in mind that performing augmentations has some drawbacks. You can’t reuse extracted features across training iterations because each iteration produces a new set of augmented images. This increase in training time can be significant. Augmentations have the most impact when your dataset is small relative to the number of parameters in your model.
 

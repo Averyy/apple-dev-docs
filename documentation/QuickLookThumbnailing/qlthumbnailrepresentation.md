@@ -20,7 +20,7 @@ class QLThumbnailRepresentation
 
 #### Overview
 
-QuickLook Thumbnailing is a non-UI framework, so your app doesn’t have to link to either [`UIKit`](https://developer.apple.com/documentation/UIKit) or [`AppKit`](https://developer.apple.com/documentation/AppKit). Quicklook Thumbnailing generates a thumbnail as a Core Graphics image object and makes the thumbnail available as the [`cgImage`](qlthumbnailrepresentation/cgimage.md) property. If an app links to AppKit or UIKit, the thumbnail is available through the [`nsImage`](qlthumbnailrepresentation/nsimage.md) or [`uiImage`](qlthumbnailrepresentation/uiimage.md) properties.
+QuickLook Thumbnailing is a non-UI framework, so your app doesn’t have to link to either [`UIKit`](https://developer.apple.com/documentation/uikit) or [`AppKit`](https://developer.apple.com/documentation/appkit). Quicklook Thumbnailing generates a thumbnail as a Core Graphics image object and makes the thumbnail available as the [`cgImage`](qlthumbnailrepresentation/cgimage.md) property. If an app links to AppKit or UIKit, the thumbnail is available through the [`nsImage`](qlthumbnailrepresentation/nsimage.md) or [`uiImage`](qlthumbnailrepresentation/uiimage.md) properties.
 
 For more information on the different types of thumbnails that [`QLThumbnailGenerator`](qlthumbnailgenerator.md) can create, see [`QLThumbnailGenerator.Request.RepresentationTypes`](qlthumbnailgenerator/request/representationtypes-swift.struct.md).
 
@@ -43,14 +43,14 @@ For more information on the different types of thumbnails that [`QLThumbnailGene
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

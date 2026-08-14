@@ -31,8 +31,8 @@ The HTML5 specification currently requires `toDataURL()` to support the `.png` f
 
 ## Parameters
 
-- `type`: A string containing the MIME type of the data, such as  . This parameter is optional. If omitted, the data URL is formatted as a   file.
-- `quality`: A floating point number containing the quality of the JPEG image. This parameter is valid only if the   parameter is set to  . This parameter must be in the range of 0 to 1, inclusive. This parameter is optional. If omitted, the default quality of 1 is used (highest quality).
+- `type`: A string containing the MIME type of the data, such as `"image/png"`. This parameter is optional. If omitted, the data URL is formatted as a `.png` file.
+- `quality`: A floating point number containing the quality of the JPEG image. This parameter is valid only if the `type` parameter is set to `"image/jpeg"`. This parameter must be in the range of 0 to 1, inclusive. This parameter is optional. If omitted, the default quality of 1 is used (highest quality).
 
 
 ---

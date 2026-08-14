@@ -44,7 +44,7 @@ You create and use custom shader programs with the  [`SCNProgram`](scnprogram.md
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

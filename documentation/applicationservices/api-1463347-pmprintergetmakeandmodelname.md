@@ -21,7 +21,7 @@ A result code. See [`Result Codes`](core_printing#1670007.md).
 ## Parameters
 
 - `printer`: The printer whose manufacturer and model name you want to obtain.
-- `makeAndModel`: A pointer to your   variable. On return, the variable refers to a Core Foundation string containing the manufacturer and model name of the specified printer. You should not release the string without first retaining it. If an error occurs, the variable is set to  .
+- `makeAndModel`: A pointer to your [`CFString`](https://developer.apple.com/documentation/corefoundation/cfstring) variable. On return, the variable refers to a Core Foundation string containing the manufacturer and model name of the specified printer. You should not release the string without first retaining it. If an error occurs, the variable is set to `NULL`.
 
 ## See Also
 

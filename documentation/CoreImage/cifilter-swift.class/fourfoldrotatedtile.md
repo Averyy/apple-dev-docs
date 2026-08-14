@@ -30,9 +30,9 @@ This method applies the four-fold rotated tile filter to an image. The effect pr
 The four-fold rotated tile filter uses the following properties:
 
 - **`inputImage`**: An image with the type [`CIImage`](ciimage.md).
-- **`center`**: A set of coordinates marking the center of the image as a [`CGPoint`](https://developer.apple.com/documentation/CoreFoundation/CGPoint).
-- **`angle`**: A `float` representing the direction of distortion, in radians as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
-- **`width`**: A `float` representing the set width of each tile as an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber).
+- **`center`**: A set of coordinates marking the center of the image as a [`CGPoint`](https://developer.apple.com/documentation/corefoundation/cgpoint).
+- **`angle`**: A `float` representing the direction of distortion, in radians as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
+- **`width`**: A `float` representing the set width of each tile as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
 
 The following code creates a filter that results in the flowers in the input image becoming rotated by 90 degrees and tiled:
 
@@ -47,7 +47,7 @@ func fourFoldRotated(inputImage: CIImage) -> CIImage {
 }
 ```
 
-![Two photographs. The photo on the left is of a bouquet of colorful flowers up close with good lighting and focus. In the photo on the right, a four-fold rotated tile filter is applied, resulting in the green petals and red center of a flower becoming a pattern that is rotated and repeated throughout the image.](https://docs-assets.developer.apple.com/published/890fd9a93dea7a610196251acc1951af/media-3599888%402x.png)
+![Two photographs. The photo on the left is of a bouquet of colorful flowers up close with good lighting and focus. In the photo on the right, a four-fold rotated tile filter is applied, resulting in the green petals and red center of a flower becoming a pattern that is rotated and repeated throughout the image.](/images/com.apple.coreimage/media-3599888@2x.png)
 
 ## See Also
 

@@ -33,7 +33,7 @@ For data-based previews, subclass QLPreviewProvider which conforms to this proto
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

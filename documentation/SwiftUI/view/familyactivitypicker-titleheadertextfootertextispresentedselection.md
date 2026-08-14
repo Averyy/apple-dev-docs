@@ -54,7 +54,7 @@ struct ContentView: View {
 
 ## See Also
 
-- [struct FamilyActivityPicker](../FamilyControls/FamilyActivityPicker.md)
+- [struct FamilyActivityPicker](../familycontrols/familyactivitypicker.md)
   A view in which users specify applications, web domains, and categories without revealing their choices to the app.
 - [func familyActivityPicker(isPresented: Binding<Bool>, selection: Binding<FamilyActivitySelection>) -> some View](view/familyactivitypicker(ispresented:selection:).md)
   Presents an activity picker view as a sheet.

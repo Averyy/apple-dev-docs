@@ -23,12 +23,12 @@ init(_ name: String? = nil, traits: PreviewTrait<Preview.ViewTraits>..., body: @
 
 #### Discussion
 
-Preview macros expand into a declaration that calls this initializer. Don’t use this initializer directly. Instead use one of the macros, like [`Preview(_:body:)`](https://developer.apple.com/documentation/SwiftUI/Preview(_:body:)).
+Preview macros expand into a declaration that calls this initializer. Don’t use this initializer directly. Instead use one of the macros, like [`Preview(_:body:)`](https://developer.apple.com/documentation/swiftui/preview(_:body:)).
 
 ## Parameters
 
 - `name`: An optional display name for the preview.
-- `traits`: An optional list of [`PreviewTrait`](PreviewTrait.md) instances that customize the appearance of the preview.
+- `traits`: An optional list of [`PreviewTrait`](previewtrait.md) instances that customize the appearance of the preview.
 - `body`: A content builder that produces a SwiftUI view to preview.
 
 ## See Also

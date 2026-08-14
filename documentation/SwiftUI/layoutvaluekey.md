@@ -32,7 +32,7 @@ private struct Flexibility: LayoutValueKey {
 }
 ```
 
-The Swift compiler infers this particular key’s associated type as an optional [`CGFloat`](https://developer.apple.com/documentation/CoreFoundation/CGFloat-swift.struct) from this definition.
+The Swift compiler infers this particular key’s associated type as an optional [`CGFloat`](https://developer.apple.com/documentation/corefoundation/cgfloat-swift.struct) from this definition.
 
 ##### Set a Value on a View
 

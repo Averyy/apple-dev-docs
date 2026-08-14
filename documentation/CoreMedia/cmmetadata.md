@@ -8,7 +8,7 @@ The APIs for working with the framework’s Metadata Identifier Services and Met
 
 The Core Media framework provides two services: Metadata Identifier Services and the Metadata Data Type Registry.
 
-Metadata Identifier Services provide a means of encoding the metadata identifying tuple (four-byte key namespace and N-byte key value) into [`CFString`](https://developer.apple.com/documentation/CoreFoundation/CFString), and back again.
+Metadata Identifier Services provide a means of encoding the metadata identifying tuple (four-byte key namespace and N-byte key value) into [`CFString`](https://developer.apple.com/documentation/corefoundation/cfstring), and back again.
 
 The Metadata Data Type Registry allows a process to register metadata data types that conform to a base data type and (optionally) other registered data types. The registry simplifies the process of creating format descriptions for nontrivial metadata values and allowing clients to indicate how to interpret metadata.
 

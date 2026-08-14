@@ -30,8 +30,8 @@ struct ISO18013MobileDocumentResponse
 
 ### Conforms To
 - [IdentityDocumentWebPresentmentResponse](identitydocumentwebpresentmentresponse.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

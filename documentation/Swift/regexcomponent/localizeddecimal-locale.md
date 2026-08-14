@@ -22,7 +22,7 @@ static func localizedDecimal(locale: Locale) -> Self
 
 #### Return Value
 
-A `RegexComponent` that matches localized decimal substrings as Foundation [`Decimal`](https://developer.apple.com/documentation/Foundation/Decimal) instances.
+A `RegexComponent` that matches localized decimal substrings as Foundation [`Decimal`](https://developer.apple.com/documentation/foundation/decimal) instances.
 
 #### Discussion
 

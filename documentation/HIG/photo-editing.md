@@ -11,7 +11,7 @@ framework: HIG
 
 Photo-editing extensions let people modify photos and videos within the Photos app by applying filters or making other changes.
 
-![A sketch of crop marks surrounded by two arrows, suggesting photo editing. The image is overlaid with rectangular and circular grid lines and is tinted blue to subtly reflect the blue in the original six-color Apple logo.](https://docs-assets.developer.apple.com/published/77af5c44937ad338f3525de618498b97/technologies-photo-editing-intro~dark%402x.png)
+![A sketch of crop marks surrounded by two arrows, suggesting photo editing. The image is overlaid with rectangular and circular grid lines and is tinted blue to subtly reflect the blue in the original six-color Apple logo.](/images/com.apple.HIG/technologies-photo-editing-intro~dark@2x.png)
 Edits are always saved in the Photos app as new files, safely preserving the original versions.
 To access a photo editing extension, a photo must be in edit mode. While in edit mode, tapping the extension icon in the toolbar displays an action menu of available editing extensions. Selecting one displays the extension’s interface in a modal view containing a top toolbar. Dismissing this view confirms and saves the edit, or cancels it and returns to the Photos app.
 
@@ -28,7 +28,7 @@ To access a photo editing extension, a photo must be in edit mode. While in edit
 
 #### Developer documentation
 [App extensions](https://developer.apple.com/app-extensions/)
-[PhotoKit](../PhotoKit.md)
+[PhotoKit](../photokit.md)
 
 #### Videos
 - [Introducing Photo Segmentation Mattes](https://developer.apple.com/videos/play/wwdc2019/260) - Photos captured in Portrait Mode on iOS 12 contain an embedded person segmentation matte that made it easy to create creative visual effects like background replacement. iOS 13 leverages on-device machine learning to provide new segmentation mattes for any captured photo. Learn about the new semantic segmentation mattes available to you from both AVCapture and Core Image to isolate a person's hair, skin, and teeth. Using any of these individual mattes or combining all of them, your app can now offer a tremendous amount of photo editing control.

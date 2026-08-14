@@ -40,7 +40,7 @@ An object that adopts this protocol needs to implement the [`coordinate`](mkanno
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 ### Inherited By
 - [MKOverlay](mkoverlay.md)
 ### Conforming Types

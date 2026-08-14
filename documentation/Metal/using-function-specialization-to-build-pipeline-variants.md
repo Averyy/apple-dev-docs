@@ -16,13 +16,13 @@ Create pipelines for different levels of detail from a common shader source.
 
 A high-quality gaming experience has to manage trade-offs between great graphics and great performance. High-quality models look great, but their complexity requires a significant amount of processing power. By increasing or decreasing the level of detail (LOD) of a model, games can selectively manage both graphics and performance.
 
-![LOD with Function Specialization](https://docs-assets.developer.apple.com/published/bb6ef3f8d62dddb3c52f3f6e0241987b/lod-with-function-constants-1-LODWithFunctionSpecialization%402x.png)
+![LOD with Function Specialization](/images/com.apple.metal/lod-with-function-constants-1-LODWithFunctionSpecialization@2x.png)
 
 Instead of selecting a fixed LOD at build time, games can dynamically select between a range of LODs at runtime based on certain model-view conditions. For example, a focal-point foreground model could have a high LOD, whereas a fast-moving background model could have a low LOD.
 
 This sample demonstrates dynamic LOD selection for a fire truck model, based on its distance from the scene’s camera. When the model is closer to the camera, the renderer uses a higher LOD; when the model is further from the camera, the renderer uses a lower LOD.
 
-![Levels of Detail](https://docs-assets.developer.apple.com/published/3cb45549fabb172c758319ac9d4dd546/lod-with-function-constants-2-LevelsOfDetail%402x.png)
+![Levels of Detail](/images/com.apple.metal/lod-with-function-constants-2-LevelsOfDetail@2x.png)
 
 ##### Getting Started
 

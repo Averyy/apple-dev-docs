@@ -26,7 +26,7 @@ A compiled graph context object. If the operation fails, the graph object’s [`
 
 #### Discussion
 
-In addition to the work that [`BNNSGraphContextMake(_:)`](bnnsgraphcontextmake(_:).md) performs, this call allocates ring-buffer backed memory for all [`Core ML`](https://developer.apple.com/documentation/CoreML) state arguments of the given function.
+In addition to the work that [`BNNSGraphContextMake(_:)`](bnnsgraphcontextmake(_:).md) performs, this call allocates ring-buffer backed memory for all [`Core ML`](https://developer.apple.com/documentation/coreml) state arguments of the given function.
 
 If your model runs on a stream of data, such as processing audio data, it may benefit from working on one frame at a time. You can express this functionality through a model that uses Core ML’s concept of states. In this case, BNNS stores information that the model needs from a previous frame in the state that dilations on convolution layers may require.
 

@@ -43,7 +43,7 @@ Arrays of these structs can be returned, the addition of new members to the node
 ## Relationships
 
 ### Conforms To
-- [Sendable](../Swift/Sendable.md)
+- [Sendable](../swift/sendable.md)
 
 ## See Also
 

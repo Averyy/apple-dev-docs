@@ -27,7 +27,7 @@ Zero-centered 3D fractal noise created by summing several octaves of 3D Perlin n
 
 The Fractal Noise node produces its output by summing up multiple layers or octaves of 3D Perlin noise. The more octaves in the fractal noise, the finer the detail of the noise. Each successive octave differs from the previous; the `Lacunarity` and `Diminish` parameters determine the difference. *Lacunarity* refers to the difference in frequency between each octavex. As this value increases, the resulting fractal noise becomes more uneven and less smooth. *Diminish* refers to how the amplitude changes between octaves. A value of `1` indicates no change to the  amplitude. As the value decreases, the amplitude from octave to octave decreases more quickly. Below is an example of a simple node graph that uses the Fractal Noise 3D node to generate a black and white pattern procedurally:
 
-![None](https://docs-assets.developer.apple.com/published/1623056b5ba6202fb824330ce949c39e/FractalNoise3DGraph.png)
+![None](/images/ShaderGraph-Docs/FractalNoise3DGraph.png)
 
 Multiply the incoming position with a constant float. The float changes the frequency of the generated noise to a higher number that corresponds with the pattern repeating more often. Below, the resulting texture applies to a cube with various values for each parameter. All values are the default, unless specified under the image.
 

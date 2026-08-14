@@ -18,7 +18,7 @@ struct ViewLoading<Value>
 
 #### Overview
 
-Use this property wrapper on view controller properties that can be `nil` before the view controller’s view loads. Wrapping view controller properties this way eliminates crashes that can occur from implicitly defining properties as [`Optional`](https://developer.apple.com/documentation/Swift/Optional), and then referencing them before the view controller finishes loading.
+Use this property wrapper on view controller properties that can be `nil` before the view controller’s view loads. Wrapping view controller properties this way eliminates crashes that can occur from implicitly defining properties as [`Optional`](https://developer.apple.com/documentation/swift/optional), and then referencing them before the view controller finishes loading.
 
 The following example uses the `NSViewController.ViewLoading` wrapper to ensure that `dateLabel` [`NSTextField`](nstextfield.md) loads before referencing it in the `didSet` of the `date` property observer:
 

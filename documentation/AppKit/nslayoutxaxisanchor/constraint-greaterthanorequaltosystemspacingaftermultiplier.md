@@ -35,7 +35,7 @@ The minimum distance between the two anchors is determined by multiplying the sy
   Returns a constraint that defines by how much the current anchor trails the specified anchor.
 - [func constraint(lessThanOrEqualToSystemSpacingAfter: NSLayoutXAxisAnchor, multiplier: CGFloat) -> NSLayoutConstraint](nslayoutxaxisanchor/constraint(lessthanorequaltosystemspacingafter:multiplier:).md)
   Returns a constraint that defines the maximum amount by which the current anchor trails the specified anchor.
-- [Creating self-sizing table view cells](../UIKit/creating-self-sizing-table-view-cells.md)
+- [Creating self-sizing table view cells](../uikit/creating-self-sizing-table-view-cells.md)
   Create table view cells that support Dynamic Type and use system spacing constraints to adjust the spacing surrounding text labels.
 
 

@@ -22,7 +22,7 @@ final func importBrowserData(token: UUID) -> AsyncThrowingStream<BEBrowserData, 
 
 #### Return Value
 
-An [`AsyncStream`](https://developer.apple.com/documentation/Swift/AsyncStream), in which you import the individual data types.
+An [`AsyncStream`](https://developer.apple.com/documentation/swift/asyncstream), in which you import the individual data types.
 
 #### Discussion
 

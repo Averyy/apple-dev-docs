@@ -16,7 +16,7 @@ App Store Connect API version 3.0 provides resources that enable you to automate
 
 ##### Deprecations
 
-- The `V1` enum for type [`SubscriptionStatusUrlVersion`](subscriptionstatusurlversion.md) is now deprecated and replaced with `V2`. For more information see [`App Store Server Notifications V2`](https://developer.apple.com/documentation/AppStoreServerNotifications/App-Store-Server-Notifications-V2).
+- The `V1` enum for type [`SubscriptionStatusUrlVersion`](subscriptionstatusurlversion.md) is now deprecated and replaced with `V2`. For more information see [`App Store Server Notifications V2`](https://developer.apple.com/documentation/appstoreservernotifications/app-store-server-notifications-v2).
 
 ## See Also
 

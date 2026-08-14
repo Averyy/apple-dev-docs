@@ -28,8 +28,8 @@ To use Dynamic WS-Trust, set [`federationType`](asauthorizationproviderextension
 
 - **[`federationRequestURN`](asauthorizationproviderextensionloginconfiguration/federationrequesturn.md)**: The URN for the WS-Trust login request.
 - **[`federationUserPreauthenticationURL`](asauthorizationproviderextensionloginconfiguration/federationuserpreauthenticationurl.md)**: The URL for the pre-authentication request.
-- **[`federationPredicate`](asauthorizationproviderextensionloginconfiguration/federationpredicate.md)**: The predicate to evaluate the pre-authentication response. If it evaluates to [`true`](https://developer.apple.com/documentation/Swift/true), then the authentication proceeds with WS-Trust. If [`false`](https://developer.apple.com/documentation/Swift/false), the system uses normal password authentication.
-- **[`federationMEXURLKeypath`](asauthorizationproviderextensionloginconfiguration/federationmexurlkeypath.md)**: The key path in the pre-authentication response for the MEX URL, for use only if the `federationPredicate` evaluates to [`true`](https://developer.apple.com/documentation/Swift/true).
+- **[`federationPredicate`](asauthorizationproviderextensionloginconfiguration/federationpredicate.md)**: The predicate to evaluate the pre-authentication response. If it evaluates to [`true`](https://developer.apple.com/documentation/swift/true), then the authentication proceeds with WS-Trust. If [`false`](https://developer.apple.com/documentation/swift/false), the system uses normal password authentication.
+- **[`federationMEXURLKeypath`](asauthorizationproviderextensionloginconfiguration/federationmexurlkeypath.md)**: The key path in the pre-authentication response for the MEX URL, for use only if the `federationPredicate` evaluates to [`true`](https://developer.apple.com/documentation/swift/true).
 
 ##### Use the Login Manager to Interface with Platform Sso
 

@@ -47,7 +47,7 @@ The publisher can’t actually fail with the specified type and finishes normall
 ## Relationships
 
 ### Conforms To
-- [Equatable](../Swift/Equatable.md)
+- [Equatable](../swift/equatable.md)
 - [Publisher](publisher.md)
 
 ## See Also

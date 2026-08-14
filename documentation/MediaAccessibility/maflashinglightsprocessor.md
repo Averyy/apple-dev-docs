@@ -21,9 +21,9 @@ class MAFlashingLightsProcessor
 
 #### Overview
 
-A device with the Dim Flashing Lights setting on automatically dims the brightness of flashing effect sequences when it detects them in video content. If your app performs custom video drawing instead of using [`AVFoundation`](https://developer.apple.com/documentation/AVFoundation) APIs, you can use the [`MAFlashingLightsProcessor`](maflashinglightsprocessor.md) class to detect and mitigate sequences of flashing effects in your video content.
+A device with the Dim Flashing Lights setting on automatically dims the brightness of flashing effect sequences when it detects them in video content. If your app performs custom video drawing instead of using [`AVFoundation`](https://developer.apple.com/documentation/avfoundation) APIs, you can use the [`MAFlashingLightsProcessor`](maflashinglightsprocessor.md) class to detect and mitigate sequences of flashing effects in your video content.
 
-The following example shows how you might incorporate [`MAFlashingLightsProcessor`](maflashinglightsprocessor.md) into code that uses [`Core Video`](https://developer.apple.com/documentation/CoreVideo) APIs.
+The following example shows how you might incorporate [`MAFlashingLightsProcessor`](maflashinglightsprocessor.md) into code that uses [`Core Video`](https://developer.apple.com/documentation/corevideo) APIs.
 
 ```swift
 import MediaAccessibility
@@ -102,14 +102,14 @@ For more information, see [`Flashing lights`](flashing-lights.md).
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

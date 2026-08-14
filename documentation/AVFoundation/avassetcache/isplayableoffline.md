@@ -24,7 +24,7 @@ var isPlayableOffline: Bool { get }
 
 Check the value of this property to determine the asset’s suitability for playback before presenting or attempting to play it.
 
-> **Note**:  A property value of [`true`](https://developer.apple.com/documentation/Swift/true) doesn’t indicate that all of the asset’s associated media selection options are available for offline playback. Instead, call [`mediaSelectionOptions(in:)`](avassetcache/mediaselectionoptions(in:).md) to determine which media selections are available.
+> **Note**:  A property value of [`true`](https://developer.apple.com/documentation/swift/true) doesn’t indicate that all of the asset’s associated media selection options are available for offline playback. Instead, call [`mediaSelectionOptions(in:)`](avassetcache/mediaselectionoptions(in:).md) to determine which media selections are available.
 
 ## See Also
 

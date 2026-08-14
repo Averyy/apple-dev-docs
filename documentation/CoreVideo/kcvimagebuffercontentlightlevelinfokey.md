@@ -22,7 +22,7 @@ let kCVImageBufferContentLightLevelInfoKey: CFString
 
 #### Discussion
 
-The value for this key is 4 bytes, of type [`CFData`](https://developer.apple.com/documentation/CoreFoundation/CFData). It contains big-endian data to match the payload of the content light level information in the supplemental enhancement information (SEI) message.
+The value for this key is 4 bytes, of type [`CFData`](https://developer.apple.com/documentation/corefoundation/cfdata). It contains big-endian data to match the payload of the content light level information in the supplemental enhancement information (SEI) message.
 
 ## See Also
 

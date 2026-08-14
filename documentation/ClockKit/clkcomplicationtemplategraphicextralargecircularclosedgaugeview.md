@@ -18,7 +18,7 @@ final class CLKComplicationTemplateGraphicExtraLargeCircularClosedGaugeView<Labe
 
 This template belongs to the [`CLKComplicationFamily.graphicExtraLarge`](clkcomplicationfamily/graphicextralarge.md) family. [`Figure 1`](clkcomplicationtemplategraphicextralargecircularclosedgaugeview#3667262.md) shows the layout of the complication and where it appears on the clock face.
 
-![A diagram showing the layout of the complication that calls out the content produced by the gauge and label.](https://docs-assets.developer.apple.com/published/baef3ceebed0c74015e109cf86775fbf/media-3667262%402x.png)
+![A diagram showing the layout of the complication that calls out the content produced by the gauge and label.](/images/com.apple.clockkit/media-3667262@2x.png)
 
 The table below lists the dimensions of the view displayed by the template. The image provider automatically masks the image to a circle.
 
@@ -45,13 +45,13 @@ The table below lists the dimensions of the view displayed by the template. The 
 ### Inherits From
 - [CLKComplicationTemplateGraphicExtraLargeCircular](clkcomplicationtemplategraphicextralargecircular.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSCopying](../Foundation/NSCopying.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSCopying](../foundation/nscopying.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 
 ## See Also
 

@@ -47,7 +47,7 @@ Buttons don’t have state; use them for fire-and-forget actions such as playing
 ## Relationships
 
 ### Conforms To
-- [ControlWidgetTemplate](../SwiftUI/ControlWidgetTemplate.md)
+- [ControlWidgetTemplate](../swiftui/controlwidgettemplate.md)
 
 ## See Also
 

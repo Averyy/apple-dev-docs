@@ -36,7 +36,7 @@ Endpoint Security doesn’t generate this event if a process sends a signal to i
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../Swift/BitwiseCopyable.md)
+- [BitwiseCopyable](../swift/bitwisecopyable.md)
 
 ## See Also
 

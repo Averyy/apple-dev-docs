@@ -6,7 +6,7 @@ Learn about important changes to Core MIDI.
 
 #### Overview
 
-Browse notable changes in [`Core MIDI`](https://developer.apple.com/documentation/CoreMIDI).
+Browse notable changes in [`Core MIDI`](https://developer.apple.com/documentation/coremidi).
 
 #### June 2024
 
@@ -17,7 +17,7 @@ Browse notable changes in [`Core MIDI`](https://developer.apple.com/documentatio
 
 ##### Mididriverkit
 
-- Add support for DriverKit-based MIDI device drivers using the new [`MIDIDriverKit`](https://developer.apple.com/documentation/MIDIDriverKit) framework.
+- Add support for DriverKit-based MIDI device drivers using the new [`MIDIDriverKit`](https://developer.apple.com/documentation/mididriverkit) framework.
 
 ## See Also
 

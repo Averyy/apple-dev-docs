@@ -16,7 +16,7 @@ var attributedString: NSAttributedString? { get }
 
 #### Discussion
 
-The text for an element is an [`NSAttributedString`](https://developer.apple.com/documentation/Foundation/NSAttributedString) object.
+The text for an element is an [`NSAttributedString`](https://developer.apple.com/documentation/foundation/nsattributedstring) object.
 
 ## See Also
 

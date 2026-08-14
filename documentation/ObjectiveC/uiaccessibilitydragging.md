@@ -31,9 +31,9 @@ For each location descriptor, the associated view should be the `UIView` with th
 ## See Also
 
 - [Accessibility Programming Guide for iOS](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/UserExperience/Conceptual/iPhoneAccessibility/Introduction/Introduction.html#//apple_ref/doc/uid/TP40008785)
-- [UIAccessibility](../UIKit/uiaccessibility-protocol.md)
+- [UIAccessibility](../uikit/uiaccessibility-protocol.md)
   A set of methods that provides accessibility information about views and controls in an app’s user interface.
-- [UIAccessibilityContainer](../UIKit/uiaccessibilitycontainer.md)
+- [UIAccessibilityContainer](../uikit/uiaccessibilitycontainer.md)
   Provide a set of methods that view subclasses use to make subcomponents accessible as separate elements.
 - [UIAccessibilityAction](uiaccessibilityaction.md)
   A set of methods that accessibility elements can use to support specific actions.

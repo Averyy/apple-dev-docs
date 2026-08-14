@@ -25,7 +25,7 @@ class LayerHierarchy
 
 This class holds another process’s view to synchronize UI updates across multiple processes in your browser app.
 
-To use this class, create an instance in your browser app’s rendering extension and set its [`layer`](layerhierarchy/layer.md) to a [`CALayer`](https://developer.apple.com/documentation/QuartzCore/CALayer) that renders content. You render the content in your rendering extension then access it in the browser app’s process for display.
+To use this class, create an instance in your browser app’s rendering extension and set its [`layer`](layerhierarchy/layer.md) to a [`CALayer`](https://developer.apple.com/documentation/quartzcore/calayer) that renders content. You render the content in your rendering extension then access it in the browser app’s process for display.
 
 Access the layer hierarchy’s [`handle`](layerhierarchy/handle.md), send it to the browser app, and add the handle to a [`LayerHierarchyHostingView`](layerhierarchyhostingview.md). Then, use the [`LayerHierarchyHostingTransactionCoordinator`](layerhierarchyhostingtransactioncoordinator.md) class to synchronize updates in the view and the layer.
 
@@ -48,15 +48,15 @@ For more information, see [`Hosting browser view layers in the rendering extensi
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [Sendable](../Swift/Sendable.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [Sendable](../swift/sendable.md)
 
 ## See Also
 

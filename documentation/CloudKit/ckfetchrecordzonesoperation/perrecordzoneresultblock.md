@@ -25,7 +25,7 @@ var perRecordZoneResultBlock: ((CKRecordZone.ID, Result<CKRecordZone, any Error>
 This property is a closure that returns no value and has the following parameters:
 
 - The ID of the record zone.
-- A [`Result`](https://developer.apple.com/documentation/Swift/Result) that contains either a retrieved record zone, or an error that describes why CloudKit can’t retrieve the record zone.
+- A [`Result`](https://developer.apple.com/documentation/swift/result) that contains either a retrieved record zone, or an error that describes why CloudKit can’t retrieve the record zone.
 
 The fetch operation executes this closure once for each record zone ID in the [`recordZoneIDs`](ckfetchrecordzonesoperation/recordzoneids.md) property. Each time the closure executes, it executes serially with respect to the other closures of the operation.
 

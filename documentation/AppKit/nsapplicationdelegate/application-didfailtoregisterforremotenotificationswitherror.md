@@ -19,7 +19,7 @@ optional func application(_ application: NSApplication, didFailToRegisterForRemo
 
 The delegate receives this message after the [`registerForRemoteNotifications(matching:)`](nsapplication/registerforremotenotifications(matching:).md) method of [`NSApplication`](nsapplication.md) is invoked and there is an error in the registration process.
 
-For more information about how to register with APNs, see [`Registering your app with APNs`](https://developer.apple.com/documentation/UserNotifications/registering-your-app-with-apns).
+For more information about how to register with APNs, see [`Registering your app with APNs`](https://developer.apple.com/documentation/usernotifications/registering-your-app-with-apns).
 
 ## Parameters
 

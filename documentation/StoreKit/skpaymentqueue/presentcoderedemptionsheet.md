@@ -28,7 +28,7 @@ func presentCodeRedemptionSheet()
 
 The [`presentCodeRedemptionSheet()`](skpaymentqueue/presentcoderedemptionsheet().md) function displays a system sheet where customers can enter and redeem offer codes. If you generate offer codes in App Store Connect, call this function to enable customers to redeem the offer. For information on implementing offer codes, see [`Implementing offer codes in your app`](implementing-offer-codes-in-your-app.md).
 
-> **Note**:  For apps with more than one scene, and on iOS 16 or later and iPadOS 16 or later, use [`offerCodeRedemption(isPresented:onCompletion:)`](https://developer.apple.com/documentation/SwiftUI/View/offerCodeRedemption(isPresented:onCompletion:)) or [`presentOfferCodeRedeemSheet(in:)`](appstore/presentoffercoderedeemsheet(in:).md) instead.
+> **Note**:  For apps with more than one scene, and on iOS 16 or later and iPadOS 16 or later, use [`offerCodeRedemption(isPresented:onCompletion:)`](https://developer.apple.com/documentation/swiftui/view/offercoderedemption(ispresented:oncompletion:)) or [`presentOfferCodeRedeemSheet(in:)`](appstore/presentoffercoderedeemsheet(in:).md) instead.
 
 When your app calls [`presentCodeRedemptionSheet()`](skpaymentqueue/presentcoderedemptionsheet().md), the system determines where to display the screen. Use [`presentCodeRedemptionSheet()`](skpaymentqueue/presentcoderedemptionsheet().md) to support devices running iOS 14 through iOS 15, and iPadOS 14 through iPadOS 15.
 

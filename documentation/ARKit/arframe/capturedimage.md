@@ -21,7 +21,7 @@ var capturedImage: CVPixelBuffer { get }
 
 #### Discussion
 
-ARKit captures pixel buffers in a full-range planar YCbCr format (also known as YUV) format according to the ITU R. 601-4 standard. (You can verify this by checking the [`kCVImageBufferYCbCrMatrixKey`](https://developer.apple.com/documentation/CoreVideo/kCVImageBufferYCbCrMatrixKey) pixel buffer attachment.)
+ARKit captures pixel buffers in a full-range planar YCbCr format (also known as YUV) format according to the ITU R. 601-4 standard. (You can verify this by checking the [`kCVImageBufferYCbCrMatrixKey`](https://developer.apple.com/documentation/corevideo/kcvimagebufferycbcrmatrixkey) pixel buffer attachment.)
 
 Unlike some uses of that standard, ARKit captures full-range color space values, not video-range values. To correctly render these images on a device display, you’ll need to access the luma and chroma planes of the pixel buffer and convert full-range YCbCr values to an sRGB (or ITU R. 709) format according to the ITU-T T.871 specification.
 

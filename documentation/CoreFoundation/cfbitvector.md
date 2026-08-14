@@ -56,8 +56,8 @@ CFBitVector and its derived mutable type, [`CFMutableBitVector`](cfmutablebitvec
 ### Inherited By
 - [CFMutableBitVector](cfmutablebitvector.md)
 ### Conforms To
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
 
 ## See Also
 

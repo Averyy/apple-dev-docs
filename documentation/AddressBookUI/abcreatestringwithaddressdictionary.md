@@ -22,12 +22,12 @@ The formatted address (may include line endings).
 
 #### Discussion
 
-The address is formatted based on the address’s country code ([`kABPersonAddressCountryCodeKey`](https://developer.apple.com/documentation/AddressBook/kABPersonAddressCountryCodeKey)).  In general, the country code should be set to correspond with the country or region name ([`kABPersonAddressCountryKey`](https://developer.apple.com/documentation/AddressBook/kABPersonAddressCountryKey)).
+The address is formatted based on the address’s country code ([`kABPersonAddressCountryCodeKey`](https://developer.apple.com/documentation/addressbook/kabpersonaddresscountrycodekey)).  In general, the country code should be set to correspond with the country or region name ([`kABPersonAddressCountryKey`](https://developer.apple.com/documentation/addressbook/kabpersonaddresscountrykey)).
 
 ## Parameters
 
 - `address`: A dictionary representing the address property to format.
-- `addCountryName`: Specifies whether to include the name of the country or region in the returned formatted address. When [`false`](https://developer.apple.com/documentation/Swift/false) and address includes a country or region name, that country or region name is still included in the return value. When [`true`](https://developer.apple.com/documentation/Swift/true) and `address` doesn’t include a country or region name, the country or region name is added to the return value. (The country or region name is generated from the country code entry in `address`; see `Address Property`.)
+- `addCountryName`: Specifies whether to include the name of the country or region in the returned formatted address. When [`false`](https://developer.apple.com/documentation/swift/false) and address includes a country or region name, that country or region name is still included in the return value. When [`true`](https://developer.apple.com/documentation/swift/true) and `address` doesn’t include a country or region name, the country or region name is added to the return value. (The country or region name is generated from the country code entry in `address`; see `Address Property`.)
 
 ## See Also
 

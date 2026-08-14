@@ -23,7 +23,7 @@ Both iOS and macOS also support managed VPN, meaning VPN configurations installe
 ## Topics
 
 ### Essentials
-- [Personal VPN Entitlement](../BundleResources/Entitlements/com.apple.developer.networking.vpn.api.md)
+- [Personal VPN Entitlement](../bundleresources/entitlements/com.apple.developer.networking.vpn.api.md)
   The API an app can use to create and control a custom system VPN configuration.
 ### VPN configuration
 - [class NEVPNManager](nevpnmanager.md)

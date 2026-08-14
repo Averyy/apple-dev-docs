@@ -17,11 +17,11 @@ virtual OSData * newReportDescriptor();
 
 #### Return Value
 
-An [`OSData`](https://developer.apple.com/documentation/DriverKit/OSData) object containing the report descriptor for the device.
+An [`OSData`](https://developer.apple.com/documentation/driverkit/osdata) object containing the report descriptor for the device.
 
 #### Discussion
 
-Override this method and use it to fetch the report descriptor from the device. Return the raw bytes for that report in an [`OSData`](https://developer.apple.com/documentation/DriverKit/OSData) object.
+Override this method and use it to fetch the report descriptor from the device. Return the raw bytes for that report in an [`OSData`](https://developer.apple.com/documentation/driverkit/osdata) object.
 
 
 ---

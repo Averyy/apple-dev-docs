@@ -68,7 +68,7 @@ When Metal performs this calculation, it can generate smaller threadgroups along
 
 To determine if a device supports nonuniform threadgroups, see [`Metal Feature Set Tables.`](https://developer.apple.comhttps://developer.apple.com/metal/Metal-Feature-Set-Tables.pdf)
 
-![An illustration that shows a grid of squares, which represent threads, divided into 6 threadgroups of varying size that utilize every thread in the grid. The grid is 11 by 7 threads in size. The threadgroups in the grid are 4 by 4, 4 by 3, 3 by 4, and 3 by 3 threads in size.](https://docs-assets.developer.apple.com/published/1e19b46f584fc9c2db782ea170046b0d/calculating-threadgroup-and-grid-sizes-1%402x.png)
+![An illustration that shows a grid of squares, which represent threads, divided into 6 threadgroups of varying size that utilize every thread in the grid. The grid is 11 by 7 threads in size. The threadgroups in the grid are 4 by 4, 4 by 3, 3 by 4, and 3 by 3 threads in size.](/images/com.apple.metal/calculating-threadgroup-and-grid-sizes-1@2x.png)
 
 ##### Calculate Threadgroups Per Grid
 
@@ -94,7 +94,7 @@ For a texture that’s 1024 by 768 pixels in size, the code above returns an [`M
 
 However, the code may round up to ensure there are sufficient threads to process the entire image, such as for an image of 1920 by 1080 pixels in size. This approach can result in the threadgroups generating a grid that’s larger than your data.
 
-![An illustration thats  shows how a set of 6 threadgroups, each 4 by 4 threads in size, extend past the bounds of a grid thats 11 by 7 threads in size. The threads outside the grid are highlighted to indicate the code allocates these threads but the kernel can’t utilize them.](https://docs-assets.developer.apple.com/published/a46155bfc0894f2f9ccff0171e903232/calculating-threadgroup-and-grid-sizes-2%402x.png)
+![An illustration thats  shows how a set of 6 threadgroups, each 4 by 4 threads in size, extend past the bounds of a grid thats 11 by 7 threads in size. The threads outside the grid are highlighted to indicate the code allocates these threads but the kernel can’t utilize them.](/images/com.apple.metal/calculating-threadgroup-and-grid-sizes-2@2x.png)
 
 To compensate for the extra threads, you can make your code exit early if the thread position in the grid is outside the bounds of the data.
 

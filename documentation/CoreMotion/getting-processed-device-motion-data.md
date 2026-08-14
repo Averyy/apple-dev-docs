@@ -16,13 +16,13 @@ To make it easier to get the data you want, the device-motion service processes 
 - The device-specific acceleration (without gravity)
 - The current magnetic field vector
 
-The device-motion service combines information from multiple sensors to provide the listed results. Device-motion services are available from [`CMMotionManager`](cmmotionmanager.md), [`CMHeadphoneMotionManager`](cmheadphonemotionmanager.md), and [`CMBatchedSensorManager`](cmbatchedsensormanager.md). If your app can’t function without accelerometer or gyroscope data, update your app’s list of required device capabilities to include that hardware. For more information about specifying required device capabilities, see [`UIRequiredDeviceCapabilities`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/UIRequiredDeviceCapabilities).
+The device-motion service combines information from multiple sensors to provide the listed results. Device-motion services are available from [`CMMotionManager`](cmmotionmanager.md), [`CMHeadphoneMotionManager`](cmheadphonemotionmanager.md), and [`CMBatchedSensorManager`](cmbatchedsensormanager.md). If your app can’t function without accelerometer or gyroscope data, update your app’s list of required device capabilities to include that hardware. For more information about specifying required device capabilities, see [`UIRequiredDeviceCapabilities`](https://developer.apple.com/documentation/bundleresources/information-property-list/uirequireddevicecapabilities).
 
 ##### Check for the Availability of Motion Data
 
 Device-motion data might be unavailable for a variety of reasons, so verify that the service is available before you try to start it. Check the value of the [`isDeviceMotionAvailable`](cmmotionmanager/isdevicemotionavailable.md) property of `CMMotionManager` and make sure it’s `true`. If it’s `false`, starting the service doesn’t deliver any data to your app.
 
-> ❗ **Important**:  In visionOS, device-motion data is available only when your app has an open immersive space. For more information, see [`ImmersiveSpace`](https://developer.apple.com/documentation/SwiftUI/ImmersiveSpace).
+> ❗ **Important**:  In visionOS, device-motion data is available only when your app has an open immersive space. For more information, see [`ImmersiveSpace`](https://developer.apple.com/documentation/swiftui/immersivespace).
 
 ##### Choose a Frame of Reference for Interpreting Attitude Data
 
@@ -34,7 +34,7 @@ Specify the reference frame you want when you start the device-motion service. T
 
 When a device’s orientation matches the frame of reference’s orientation, the [`roll`](cmattitude/roll.md), [`pitch`](cmattitude/pitch.md), and [`yaw`](cmattitude/yaw.md) rotation values of a reported `CMAttitude` contain the value `0`. As a person rotates the device, the roll, pitch, and yaw values reflect the amount of rotation (in radians) relative to the frame of reference. The following figure shows how to interpret these values around each axis. Rotation values are in the range -π to π.
 
-![Gyroscopes measure the rotation rate around the x, y, and z axes](https://docs-assets.developer.apple.com/published/64b92fc751671c47e15435b373ffc1bf/media-4251993%402x.png)
+![Gyroscopes measure the rotation rate around the x, y, and z axes](/images/com.apple.coremotion/media-4251993@2x.png)
 
 For information about the coordinate axes of different device types, see [`CMMotionManager`](cmmotionmanager.md) or [`CMHeadphoneMotionManager`](cmheadphonemotionmanager.md).
 
@@ -75,7 +75,7 @@ func startDeviceMotion() {
 }
 ```
 
-To process a steady stream of events, start the device-motion services using an [`OperationQueue`](https://developer.apple.com/documentation/Foundation/OperationQueue) object and a closure of type [`CMDeviceMotionHandler`](cmdevicemotionhandler.md). Each time Core Motion receives a new data value, it runs your closure on the operation queue. Each new data value comes with a [`timestamp`](cmlogitem/timestamp.md) value, which you can use to verify the timeliness of the data and discard data that’s older than a certain threshold. The following example uses an operation queue to process 60 updates per second:
+To process a steady stream of events, start the device-motion services using an [`OperationQueue`](https://developer.apple.com/documentation/foundation/operationqueue) object and a closure of type [`CMDeviceMotionHandler`](cmdevicemotionhandler.md). Each time Core Motion receives a new data value, it runs your closure on the operation queue. Each new data value comes with a [`timestamp`](cmlogitem/timestamp.md) value, which you can use to verify the timeliness of the data and discard data that’s older than a certain threshold. The following example uses an operation queue to process 60 updates per second:
 
 ```swift
 func startQueuedUpdates() {

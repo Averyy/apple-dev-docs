@@ -28,7 +28,7 @@ If you specify `true` for the `repeats` parameter, you must explicitly remove th
 ## Parameters
 
 - `region`: The geographic region that must be entered or exited. Use the region object to specify whether to deliver notifications on entry, on exit, or both.
-- `repeats`: Specify [`false`](https://developer.apple.com/documentation/Swift/false) to deliver the notification one time. Specify [`true`](https://developer.apple.com/documentation/Swift/true) to reschedule the notification request each time the system delivers the notification.
+- `repeats`: Specify [`false`](https://developer.apple.com/documentation/swift/false) to deliver the notification one time. Specify [`true`](https://developer.apple.com/documentation/swift/true) to reschedule the notification request each time the system delivers the notification.
 
 
 ---

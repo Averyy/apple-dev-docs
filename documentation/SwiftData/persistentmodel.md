@@ -68,11 +68,11 @@ protocol PersistentModel : AnyObject, Observable, Hashable, Identifiable, Sendab
 ## Relationships
 
 ### Inherits From
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [Identifiable](../Swift/Identifiable.md)
-- [Observable](../Observation/Observable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [Identifiable](../swift/identifiable.md)
+- [Observable](../observation/observable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

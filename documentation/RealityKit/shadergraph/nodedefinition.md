@@ -50,7 +50,7 @@ Obtain definitions from a [`ShaderGraph.NodeLibrary`](shadergraph/nodelibrary.md
 ## Relationships
 
 ### Conforms To
-- [Equatable](../Swift/Equatable.md)
+- [Equatable](../swift/equatable.md)
 
 
 ---

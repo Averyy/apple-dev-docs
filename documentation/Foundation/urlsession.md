@@ -81,7 +81,7 @@ Each task you create with the session calls back to the session’s delegate, us
 
 Like most networking APIs, the [`URLSession`](urlsession.md) API is highly asynchronous. It returns data to your app in one of three ways, depending on the methods you call:
 
-- If you’re using Swift, you can use the methods marked with the `async` keyword to perform common tasks. For example, [`data(from:delegate:)`](urlsession/data(from:delegate:).md) fetches data, while [`download(from:delegate:)`](urlsession/download(from:delegate:).md) downloads files. Your call point uses the `await` keyword to suspend running until the transfer completes. You can also use the [`bytes(from:delegate:)`](urlsession/bytes(from:delegate:).md) method to receive data as an [`AsyncSequence`](https://developer.apple.com/documentation/Swift/AsyncSequence). With this approach, you use the `for`-`await`-`in` syntax to iterate over the data as your app receives it. The [`URL`](url.md) type also offers covenience methods to fetch bytes or lines from the shared URL session.
+- If you’re using Swift, you can use the methods marked with the `async` keyword to perform common tasks. For example, [`data(from:delegate:)`](urlsession/data(from:delegate:).md) fetches data, while [`download(from:delegate:)`](urlsession/download(from:delegate:).md) downloads files. Your call point uses the `await` keyword to suspend running until the transfer completes. You can also use the [`bytes(from:delegate:)`](urlsession/bytes(from:delegate:).md) method to receive data as an [`AsyncSequence`](https://developer.apple.com/documentation/swift/asyncsequence). With this approach, you use the `for`-`await`-`in` syntax to iterate over the data as your app receives it. The [`URL`](url.md) type also offers covenience methods to fetch bytes or lines from the shared URL session.
 - In Swift or Objective-C, you can provide a completion handler block, which runs when the transfer completes.
 - In Swift or Objective-C, you can receive callbacks to a delegate method as the transfer progresses and immediately after it completes.
 
@@ -99,7 +99,7 @@ You can also add support for your own custom networking protocols and URL scheme
 
 iOS 9.0 and macOS 10.11 and later use App Transport Security (ATS) for all HTTP connections made with [`URLSession`](urlsession.md). ATS requires that HTTP connections use HTTPS ([`RFC 2818`](https://developer.apple.comhttps://tools.ietf.org/html/rfc2818)).
 
-For more information, see [`NSAppTransportSecurity`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSAppTransportSecurity).
+For more information, see [`NSAppTransportSecurity`](https://developer.apple.com/documentation/bundleresources/information-property-list/nsapptransportsecurity).
 
 ##### Foundation Copying Behavior
 
@@ -273,16 +273,16 @@ The URL session API is thread-safe. You can freely create sessions and tasks in 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+- [NSObject](../objectivec/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [CVarArg](../swift/cvararg.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

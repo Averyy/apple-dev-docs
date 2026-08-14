@@ -8,11 +8,11 @@ Create a version of your iPad app that users can run on a Mac device.
 
 With Mac Catalyst, you can make a Mac version of your iPad app. Click the Mac checkbox in your iPad app’s project settings to configure the project to build both Mac and iPad versions of your app. The two apps share the same project and source code, making it easy to change your code in one place.
 
-![A photograph of an iPad and a Mac laptop, with an arrow pointing from the iPad to the Mac. The screen of the iPad shows a sample recipes app and the laptop displays a Mac version of the sample app.](https://docs-assets.developer.apple.com/published/ae997037358535ee5dfefb04afb63409/mac-catalyst%402x.png)
+![A photograph of an iPad and a Mac laptop, with an arrow pointing from the iPad to the Mac. The screen of the iPad shows a sample recipes app and the laptop displays a Mac version of the sample app.](/images/com.apple.uikit/mac-catalyst@2x.png)
 
 For information about designing a Mac version of your iPad app, see [`Mac Catalyst`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/ios/overview/mac-catalyst/) in the Human Interface Guidelines.
 
-> ❗ **Important**:  Mac apps built with Mac Catalyst can only use [`AppKit`](https://developer.apple.com/documentation/AppKit) APIs marked as available in Mac Catalyst, such as [`NSToolbar`](https://developer.apple.com/documentation/AppKit/NSToolbar) and [`NSTouchBar`](https://developer.apple.com/documentation/AppKit/NSTouchBar). Mac Catalyst doesn’t support accessing unavailable AppKit APIs.
+> ❗ **Important**:  Mac apps built with Mac Catalyst can only use [`AppKit`](https://developer.apple.com/documentation/appkit) APIs marked as available in Mac Catalyst, such as [`NSToolbar`](https://developer.apple.com/documentation/appkit/nstoolbar) and [`NSTouchBar`](https://developer.apple.com/documentation/appkit/nstouchbar). Mac Catalyst doesn’t support accessing unavailable AppKit APIs.
 
 ## Topics
 
@@ -20,15 +20,15 @@ For information about designing a Mac version of your iPad app, see [`Mac Cataly
 - [Creating a Mac version of your iPad app](creating-a-mac-version-of-your-ipad-app.md)
   Bring your iPad app to macOS with Mac Catalyst.
 ### App support
-- [Bring an iPad App to the Mac with Mac Catalyst](https://developer.apple.com/tutorials/Mac-Catalyst)
+- [Bring an iPad App to the Mac with Mac Catalyst](https://developer.apple.com/tutorials/mac-catalyst)
   Build a native Mac app from the same codebase as your iPad app.
 - [Choosing a user interface idiom for your Mac app](choosing-a-user-interface-idiom-for-your-mac-app.md)
   Select the iPad or the Mac user interface idiom in your Mac app built with Mac Catalyst.
 - [Optimizing your iPad app for Mac](optimizing-your-ipad-app-for-mac.md)
   Make your iPad app more like a Mac app by taking advantage of system features in macOS.
-- [LSMinimumSystemVersion](../BundleResources/Information-Property-List/LSMinimumSystemVersion.md)
+- [LSMinimumSystemVersion](../bundleresources/information-property-list/lsminimumsystemversion.md)
   The minimum version of the operating system required for the app to run in macOS.
-- [UIApplicationSupportsTabbedSceneCollection](../BundleResources/Information-Property-List/UIApplicationSceneManifest/UIApplicationSupportsTabbedSceneCollection.md)
+- [UIApplicationSupportsTabbedSceneCollection](../bundleresources/information-property-list/uiapplicationscenemanifest/uiapplicationsupportstabbedscenecollection.md)
   A Boolean value indicating whether an app built with Mac Catalyst supports automatic tabbing mode.
 ### User interface
 - [UIKit Catalog: Creating and customizing views and controls](uikit-catalog-creating-and-customizing-views-and-controls.md)
@@ -41,7 +41,7 @@ For information about designing a Mac version of your iPad app, see [`Mac Cataly
   Display content that fills the entire height of a window by removing the title bar.
 - [Toolbar](toolbar.md)
   Provide a space for controls under a window’s title bar and above your custom content.
-- [Touch Bar](../AppKit/touch-bar.md)
+- [Touch Bar](../appkit/touch-bar.md)
   Display interactive content and controls in the Touch Bar.
 ### User interactions
 - [Navigating an app’s user interface using a keyboard](navigating-an-app-s-user-interface-using-a-keyboard.md)

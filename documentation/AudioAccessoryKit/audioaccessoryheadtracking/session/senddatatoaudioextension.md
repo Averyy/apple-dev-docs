@@ -7,7 +7,6 @@ Forward a frame of IMU sensor data from the accessory to the Spatial Audio rende
 
 **Availability**:
 - iOS 27.0+ (Beta)
-- iPadOS 27.0+ (Beta)
 
 ## Declaration
 

@@ -17,7 +17,7 @@ var environmentTexture: (any MTLTexture)? { get }
 
 #### Discussion
 
-This texture is in the format [`MTLPixelFormat.bgra8Unorm_srgb`](https://developer.apple.com/documentation/Metal/MTLPixelFormat/bgra8Unorm_srgb).
+This texture is in the format [`MTLPixelFormat.bgra8Unorm_srgb`](https://developer.apple.com/documentation/metal/mtlpixelformat/bgra8unorm_srgb).
 
 
 ---

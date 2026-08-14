@@ -28,7 +28,7 @@ Thread safe starting in OS X v10.2.
 
 ## Parameters
 
-- `theAEDescList`: A pointer to the descriptor list to count. See  .
+- `theAEDescList`: A pointer to the descriptor list to count. See [`AEDescList`](aedesclist.md).
 - `theCount`: A pointer to a count variable. On return, the number of descriptors in the specified descriptor list, which can be 0, if the list is empty.
 
 

@@ -43,7 +43,7 @@ func softLightBlendMode(inputImage: CIImage, backgroundImage: CIImage) -> CIImag
 }
 ```
 
-![The image on the top left shows a beach with multiple palm trees and a rainbow arching across the blue sky.  The image below is a gradient image displaying a gradual color shift from purple to a dark orange. The image on the right shows the output from applying a soft-light blend mode filter. The result displays more of the gradient photo’s colors overlaid on the rainbow beach image, resulting in a darker image. ](https://docs-assets.developer.apple.com/published/463156a516dd903c1f014180b13fccb6/media-3546420%402x.png)
+![The image on the top left shows a beach with multiple palm trees and a rainbow arching across the blue sky.  The image below is a gradient image displaying a gradual color shift from purple to a dark orange. The image on the right shows the output from applying a soft-light blend mode filter. The result displays more of the gradient photo’s colors overlaid on the rainbow beach image, resulting in a darker image. ](/images/com.apple.coreimage/media-3546420@2x.png)
 
 ## See Also
 

@@ -8,13 +8,13 @@ Update colors, images, and behaviors so that your app adapts automatically when 
 
 In macOS and iOS, users can choose to adopt a system-wide light or dark appearance. The dark appearance, known as Dark Mode, implements an interface style that many apps already adopt. Users choose the aesthetic they prefer, and can also choose to toggle their interface based on ambient lighting conditions or a specific schedule.
 
-![A screenshot of a system displaying the Calendar app.](https://docs-assets.developer.apple.com/published/f3f39d53844d68edffe765b4cee35d1a/supporting-dark-mode-in-your-interface-1%402x.png)
+![A screenshot of a system displaying the Calendar app.](/images/com.apple.uikit/supporting-dark-mode-in-your-interface-1@2x.png)
 
 All apps should support both light and dark interface styles, but might perform better with a specific appearance in some places. For example, you might always adopt a light appearance for printed content.
 
 Before you change your code, turn on Dark Mode and see how your app responds. The system does a lot of the work for you, and if your app uses standard views and controls, you might not need to make many changes. Standard views and controls automatically update their appearance to match the current interface style. If you already use color and image assets, you can add dark variants without changing your code.
 
-![A screenshot of the Appearance pane of the System Settings app in macOS, which is where people enable Dark Mode.](https://docs-assets.developer.apple.com/published/340c20771b2221268fb5f3b2cc0130a9/supporting-dark-mode-in-your-interface-2%402x.png)
+![A screenshot of the Appearance pane of the System Settings app in macOS, which is where people enable Dark Mode.](/images/com.apple.uikit/supporting-dark-mode-in-your-interface-2@2x.png)
 
 ##### Choose Adaptive Colors for Your Ui
 
@@ -22,12 +22,12 @@ Choose colors that adapt automatically to the underlying interface style. Light 
 
 There are two ways to create adaptive color objects:
 
-- Choose semantic colors instead of fixed color values. When configuring UI elements, choose colors with names like [`labelColor`](https://developer.apple.com/documentation/AppKit/NSColor/labelColor). These semantic colors convey the intended use of the color, rather than specific color values. When you use them for their intended purpose, they render with color values appropriate for the current settings. For a complete list of semantic color names, see [`NSColor`](https://developer.apple.com/documentation/AppKit/NSColor) and [`UIColor`](uicolor.md).
+- Choose semantic colors instead of fixed color values. When configuring UI elements, choose colors with names like [`labelColor`](https://developer.apple.com/documentation/appkit/nscolor/labelcolor). These semantic colors convey the intended use of the color, rather than specific color values. When you use them for their intended purpose, they render with color values appropriate for the current settings. For a complete list of semantic color names, see [`NSColor`](https://developer.apple.com/documentation/appkit/nscolor) and [`UIColor`](uicolor.md).
 - Define custom colors in your asset catalog. When you need a specific color, create it as a color asset. In your asset, specify different color values for both light and dark appearances. You can also specify high-contrast versions of your colors.
 
 You configure custom color assets using Xcode’s asset editor. Add a Color Set asset to your project and configure the appearance variants you want to modify. Use the Any Appearance variant to specify the color value to use on older systems that do not support Dark Mode.
 
-![An image showing the options for adding color variants for any appearance and dark appearance.](https://docs-assets.developer.apple.com/published/fac77918bc91df73c653cd961ab7a70a/supporting-dark-mode-in-your-interface-3%402x.png)
+![An image showing the options for adding color variants for any appearance and dark appearance.](/images/com.apple.uikit/supporting-dark-mode-in-your-interface-3@2x.png)
 
 To load a color value from an asset catalog, load the color by name:
 
@@ -39,7 +39,7 @@ let aColor = NSColor(named: NSColor.Name("customControlColor"))
 let aColor = UIColor(named: "customControlColor")
 ```
 
-When you create a color object from a color asset, you do not have to recreate that object when the current appearance changes. Each time you set the fill or stroke color for drawing, the color object loads the color variant that matches the current environment settings. The same is true for semantic colors such as [`labelColor`](https://developer.apple.com/documentation/AppKit/NSColor/labelColor), which adapt automatically to the current environment. By contrast, color objects you create using fixed component values do not adapt; you must create a new color object instead.
+When you create a color object from a color asset, you do not have to recreate that object when the current appearance changes. Each time you set the fill or stroke color for drawing, the color object loads the color variant that matches the current environment settings. The same is true for semantic colors such as [`labelColor`](https://developer.apple.com/documentation/appkit/nscolor/labelcolor), which adapt automatically to the current environment. By contrast, color objects you create using fixed component values do not adapt; you must create a new color object instead.
 
 > **Note**:  For the user’s content, always preserve colors that the user explicitly chooses. For example, a painting app should not try to change colors that the user applies to their canvas. Use adaptable colors primarily in the views and controls for your app’s chrome.
 
@@ -55,12 +55,12 @@ When the user changes the system appearance, the system automatically asks each 
 
 | Class | Appropriate methods |
 | --- | --- |
-| [`NSView`](https://developer.apple.com/documentation/AppKit/NSView) | [`updateLayer()`](https://developer.apple.com/documentation/AppKit/NSView/updateLayer()) ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) [`draw(_:)`](https://developer.apple.com/documentation/AppKit/NSView/draw(_:)) ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) [`layout()`](https://developer.apple.com/documentation/AppKit/NSView/layout()) ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) [`updateConstraints()`](https://developer.apple.com/documentation/AppKit/NSView/updateConstraints()) |
-| [`UIView`](uiview.md) | [`traitCollectionDidChange(_:)`](uitraitenvironment/traitcollectiondidchange(_:).md) ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) [`layoutSubviews()`](uiview/layoutsubviews().md) ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) [`draw(_:)`](uiview/draw(_:).md) ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) [`updateConstraints()`](uiview/updateconstraints().md) ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) [`tintColorDidChange()`](uiview/tintcolordidchange().md) |
-| [`UIViewController`](uiviewcontroller.md) | [`traitCollectionDidChange(_:)`](uitraitenvironment/traitcollectiondidchange(_:).md) ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) [`updateViewConstraints()`](uiviewcontroller/updateviewconstraints().md) ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) [`viewWillLayoutSubviews()`](uiviewcontroller/viewwilllayoutsubviews().md) ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) [`viewDidLayoutSubviews()`](uiviewcontroller/viewdidlayoutsubviews().md) |
-| [`UIPresentationController`](uipresentationcontroller.md) | [`traitCollectionDidChange(_:)`](uitraitenvironment/traitcollectiondidchange(_:).md) ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) [`containerViewWillLayoutSubviews()`](uipresentationcontroller/containerviewwilllayoutsubviews().md) ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) [`containerViewDidLayoutSubviews()`](uipresentationcontroller/containerviewdidlayoutsubviews().md) |
+| [`NSView`](https://developer.apple.com/documentation/appkit/nsview) | [`updateLayer()`](https://developer.apple.com/documentation/appkit/nsview/updatelayer()) ![None](/images/com.apple.uikit/spacer.png) [`draw(_:)`](https://developer.apple.com/documentation/appkit/nsview/draw(_:)) ![None](/images/com.apple.uikit/spacer.png) [`layout()`](https://developer.apple.com/documentation/appkit/nsview/layout()) ![None](/images/com.apple.uikit/spacer.png) [`updateConstraints()`](https://developer.apple.com/documentation/appkit/nsview/updateconstraints()) |
+| [`UIView`](uiview.md) | [`traitCollectionDidChange(_:)`](uitraitenvironment/traitcollectiondidchange(_:).md) ![None](/images/com.apple.uikit/spacer.png) [`layoutSubviews()`](uiview/layoutsubviews().md) ![None](/images/com.apple.uikit/spacer.png) [`draw(_:)`](uiview/draw(_:).md) ![None](/images/com.apple.uikit/spacer.png) [`updateConstraints()`](uiview/updateconstraints().md) ![None](/images/com.apple.uikit/spacer.png) [`tintColorDidChange()`](uiview/tintcolordidchange().md) |
+| [`UIViewController`](uiviewcontroller.md) | [`traitCollectionDidChange(_:)`](uitraitenvironment/traitcollectiondidchange(_:).md) ![None](/images/com.apple.uikit/spacer.png) [`updateViewConstraints()`](uiviewcontroller/updateviewconstraints().md) ![None](/images/com.apple.uikit/spacer.png) [`viewWillLayoutSubviews()`](uiviewcontroller/viewwilllayoutsubviews().md) ![None](/images/com.apple.uikit/spacer.png) [`viewDidLayoutSubviews()`](uiviewcontroller/viewdidlayoutsubviews().md) |
+| [`UIPresentationController`](uipresentationcontroller.md) | [`traitCollectionDidChange(_:)`](uitraitenvironment/traitcollectiondidchange(_:).md) ![None](/images/com.apple.uikit/spacer.png) [`containerViewWillLayoutSubviews()`](uipresentationcontroller/containerviewwilllayoutsubviews().md) ![None](/images/com.apple.uikit/spacer.png) [`containerViewDidLayoutSubviews()`](uipresentationcontroller/containerviewdidlayoutsubviews().md) |
 
-If you make appearance-sensitive changes outside of these methods, your app may not draw its content correctly for the current environment. The solution is to move your code into these methods. For example, instead of setting the background color of an [`NSView`](https://developer.apple.com/documentation/AppKit/NSView) object’s layer at creation time, move that code to your view’s [`updateLayer()`](https://developer.apple.com/documentation/AppKit/NSView/updateLayer()) method instead, as shown in the code example below. Setting the background color at creation time might seem appropriate, but because [`CGColor`](https://developer.apple.com/documentation/CoreGraphics/CGColor) objects don’t adapt, setting it at creation time leaves the view with a fixed background color that never changes. Moving your code to [`updateLayer()`](https://developer.apple.com/documentation/AppKit/NSView/updateLayer()) refreshes that background color whenever the environment changes.
+If you make appearance-sensitive changes outside of these methods, your app may not draw its content correctly for the current environment. The solution is to move your code into these methods. For example, instead of setting the background color of an [`NSView`](https://developer.apple.com/documentation/appkit/nsview) object’s layer at creation time, move that code to your view’s [`updateLayer()`](https://developer.apple.com/documentation/appkit/nsview/updatelayer()) method instead, as shown in the code example below. Setting the background color at creation time might seem appropriate, but because [`CGColor`](https://developer.apple.com/documentation/coregraphics/cgcolor) objects don’t adapt, setting it at creation time leaves the view with a fixed background color that never changes. Moving your code to [`updateLayer()`](https://developer.apple.com/documentation/appkit/nsview/updatelayer()) refreshes that background color whenever the environment changes.
 
 ```swift
 override func updateLayer() {
@@ -70,7 +70,7 @@ override func updateLayer() {
 }
 ```
 
-If your app has code that’s not part of an [`NSView`](https://developer.apple.com/documentation/AppKit/NSView) and can’t use the preferred methods listed above, it can observe the app’s [`effectiveAppearance`](https://developer.apple.com/documentation/AppKit/NSApplication/effectiveAppearance) property and update [`current`](https://developer.apple.com/documentation/AppKit/NSAppearance/current) manually.
+If your app has code that’s not part of an [`NSView`](https://developer.apple.com/documentation/appkit/nsview) and can’t use the preferred methods listed above, it can observe the app’s [`effectiveAppearance`](https://developer.apple.com/documentation/appkit/nsapplication/effectiveappearance) property and update [`current`](https://developer.apple.com/documentation/appkit/nsappearance/current) manually.
 
 ```swift
 // Use a property to keep a reference to the key-value observation object.
@@ -93,10 +93,10 @@ Visual-effect views add transparency to your background views, which gives your 
 
 Use visual-effect views in your interface as container views, and add subviews to them to represent your foreground content. Configure each visual-effect view with the material or effects that are appropriate for the appearance you want:
 
-- In macOS, configure an [`NSVisualEffectView`](https://developer.apple.com/documentation/AppKit/NSVisualEffectView) with the appropriate material based on how you use that view in your interface. For example, when using a visual-effect view as the background for a sidebar interface, configure it with the [`NSVisualEffectView.Material.sidebar`](https://developer.apple.com/documentation/AppKit/NSVisualEffectView/Material-swift.enum/sidebar) material.
+- In macOS, configure an [`NSVisualEffectView`](https://developer.apple.com/documentation/appkit/nsvisualeffectview) with the appropriate material based on how you use that view in your interface. For example, when using a visual-effect view as the background for a sidebar interface, configure it with the [`NSVisualEffectView.Material.sidebar`](https://developer.apple.com/documentation/appkit/nsvisualeffectview/material-swift.enum/sidebar) material.
 - In iOS, configure a [`UIVisualEffectView`](uivisualeffectview.md) with specific vibrancy and blur effects to create the appearance you want. Blur effects define the apparent thickness of the background view, and vibrancy effects adjust the appearance for specific types of content to ensure that they remain visible. For example, when your view contains labels, choose the [`UIVibrancyEffectStyle.label`](uivibrancyeffectstyle/label.md) style or one of the other label-related vibrancy options.
 
-> ❗ **Important**:  Do not use deprecated materials, such as [`NSVisualEffectView.Material.light`](https://developer.apple.com/documentation/AppKit/NSVisualEffectView/Material-swift.enum/light), in macOS 10.14 and later because those materials do not adapt to Dark Mode. Instead, choose newer materials that adapt correctly to the environment.
+> ❗ **Important**:  Do not use deprecated materials, such as [`NSVisualEffectView.Material.light`](https://developer.apple.com/documentation/appkit/nsvisualeffectview/material-swift.enum/light), in macOS 10.14 and later because those materials do not adapt to Dark Mode. Instead, choose newer materials that adapt correctly to the environment.
 
 ##### Opt Out Only As Needed
 
@@ -104,7 +104,7 @@ Make every effort to adopt both light and dark appearances in your apps. If supp
 
 You can configure all or part of your interface to opt out of a specific appearance. You can also adopt a specific appearance for your entire app. For more information, see the following:
 
-- [`Choosing a Specific Appearance for Your macOS App`](https://developer.apple.com/documentation/AppKit/choosing-a-specific-appearance-for-your-macos-app)
+- [`Choosing a Specific Appearance for Your macOS App`](https://developer.apple.com/documentation/appkit/choosing-a-specific-appearance-for-your-macos-app)
 - [`Choosing a specific interface style for your iOS app`](choosing-a-specific-interface-style-for-your-ios-app.md)
 
 ##### Avoid Expensive Tasks During Appearance Transitions
@@ -114,7 +114,7 @@ When the user toggles between light and dark interfaces, the system asks your ap
 ## Topics
 
 ### Appearance support
-- [Choosing a Specific Appearance for Your macOS App](../AppKit/choosing-a-specific-appearance-for-your-macos-app.md)
+- [Choosing a Specific Appearance for Your macOS App](../appkit/choosing-a-specific-appearance-for-your-macos-app.md)
   Adopt a specific appearance for your windows, views, or app when it is inappropriate to support both light and dark variants.
 - [Choosing a specific interface style for your iOS app](choosing-a-specific-interface-style-for-your-ios-app.md)
   Adopt a specific interface style for your views, view controllers, or app when it is inappropriate to support both light and dark variants.

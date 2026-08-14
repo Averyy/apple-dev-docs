@@ -137,7 +137,7 @@ atos -arch arm64 -o Example.app/Contents/MacOS/Example 0x00fdae30
 
 ###### Deprecations
 
-- The `symbolicatecrash` script is deprecated. Instead, use the `atos` command-line tool. For more information about this tool, see [`Adding identifiable symbol names to a crash report`](https://developer.apple.com/documentation/Xcode/adding-identifiable-symbol-names-to-a-crash-report). (82929755)
+- The `symbolicatecrash` script is deprecated. Instead, use the `atos` command-line tool. For more information about this tool, see [`Adding identifiable symbol names to a crash report`](https://developer.apple.com/documentation/xcode/adding-identifiable-symbol-names-to-a-crash-report). (82929755)
 
 ##### Playgrounds
 
@@ -222,7 +222,7 @@ atos -arch arm64 -o Example.app/Contents/MacOS/Example 0x00fdae30
 - Within StoreKit configuration files, you can now copy, paste, and duplicate products, subscription groups, subscription offers, and localizations. (63724339)
 - You can now configure offers for codes in StoreKit configuration files when using StoreKit Testing in Xcode. You can redeem these offers when testing on devices running iOS 15.4 or later. (82929135)
 - You can now toggle a new mode in StoreKit configuration files called Billing Retry on Renewal. This mode causes subscriptions to enter a simulated Billing Retry period when a subscription is set to renew. This mode works on devices and simulators running iOS 15.4, macOS Monterey 12.3, watchOS 8.5, or tvOS 15.4. (83938223)
-- You can now test subscription price increases on devices or simulators running iOS 15.4, macOS Monterey 12.3, watchOS 8.5, and tvOS 15.4. You can test requesting and responding to price increase consent on a subscription transaction using the transaction manager. When testing subscription price increases on a device running iOS 15.4 or later, each request for price increase consent simulates calling the payment queue delegate method  [`paymentQueueShouldShowPriceConsent(_:)`](https://developer.apple.com/documentation/StoreKit/SKPaymentQueueDelegate/paymentQueueShouldShowPriceConsent(_:)). (84318402)
+- You can now test subscription price increases on devices or simulators running iOS 15.4, macOS Monterey 12.3, watchOS 8.5, and tvOS 15.4. You can test requesting and responding to price increase consent on a subscription transaction using the transaction manager. When testing subscription price increases on a device running iOS 15.4 or later, each request for price increase consent simulates calling the payment queue delegate method  [`paymentQueueShouldShowPriceConsent(_:)`](https://developer.apple.com/documentation/storekit/skpaymentqueuedelegate/paymentqueueshouldshowpriceconsent(_:)). (84318402)
 
 ###### Resolved Issues
 
@@ -313,7 +313,7 @@ func centerView(at location: Point) {
 }
 ``` ([`SE-0337`](https://developer.apple.comhttps://github.com/apple/swift-evolution/blob/main/proposals/0337-support-incremental-migration-to-concurrency-checking.md), 88597842)
 - The conformance of the unsafe pointer types (e.g., `UnsafePointer`, `UnsafeMutableBufferPointer`) to the `Sendable` protocols has been removed, because Swift can’t safely transfer pointers across task or actor boundaries. ([`SE-0331`](https://developer.apple.comhttps://github.com/apple/swift-evolution/blob/main/proposals/0331-remove-sendable-from-unsafepointer.md), 88598449)
-- The standard library now provides the [`withUnsafeTemporaryAllocation(of:capacity:_:)`](https://developer.apple.com/documentation/Swift/withUnsafeTemporaryAllocation(of:capacity:_:)) and [`withUnsafeTemporaryAllocation(byteCount:alignment:_:)`](https://developer.apple.com/documentation/Swift/withUnsafeTemporaryAllocation(byteCount:alignment:_:)) functions. You can use these functions to cheaply allocate raw storage for a brief duration. The system allocates storage on the stack if possible. ([`SE-0322`](https://developer.apple.comhttps://github.com/apple/swift-evolution/blob/main/proposals/0322-temporary-buffers.md), 88598790)
+- The standard library now provides the [`withUnsafeTemporaryAllocation(of:capacity:_:)`](https://developer.apple.com/documentation/swift/withunsafetemporaryallocation(of:capacity:_:)) and [`withUnsafeTemporaryAllocation(byteCount:alignment:_:)`](https://developer.apple.com/documentation/swift/withunsafetemporaryallocation(bytecount:alignment:_:)) functions. You can use these functions to cheaply allocate raw storage for a brief duration. The system allocates storage on the stack if possible. ([`SE-0322`](https://developer.apple.comhttps://github.com/apple/swift-evolution/blob/main/proposals/0322-temporary-buffers.md), 88598790)
 
 ###### Resolved Issues
 

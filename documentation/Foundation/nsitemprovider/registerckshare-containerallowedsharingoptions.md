@@ -20,13 +20,13 @@ func registerCKShare(_ share: CKShare, container: CKContainer, allowedSharingOpt
 
 #### Discussion
 
-Use this method when a [`CKShare`](https://developer.apple.com/documentation/CloudKit/CKShare) currently exists on the server. When the system invokes the share sheet with a `CKShare` that you register with this method, it allows the owner to make modifications to the share settings, and allows a participant to view the share settings.
+Use this method when a [`CKShare`](https://developer.apple.com/documentation/cloudkit/ckshare) currently exists on the server. When the system invokes the share sheet with a `CKShare` that you register with this method, it allows the owner to make modifications to the share settings, and allows a participant to view the share settings.
 
 ## Parameters
 
-- `share`: An existing [`CKShare`](https://developer.apple.com/documentation/CloudKit/CKShare) on the server.
-- `container`: A [`CKContainer`](https://developer.apple.com/documentation/CloudKit/CKContainer) the system uses to coordinate all the interactions between your app and the server.
-- `allowedSharingOptions`: The [`CKAllowedSharingOptions`](https://developer.apple.com/documentation/CloudKit/CKAllowedSharingOptions). The standard option is the default.
+- `share`: An existing [`CKShare`](https://developer.apple.com/documentation/cloudkit/ckshare) on the server.
+- `container`: A [`CKContainer`](https://developer.apple.com/documentation/cloudkit/ckcontainer) the system uses to coordinate all the interactions between your app and the server.
+- `allowedSharingOptions`: The [`CKAllowedSharingOptions`](https://developer.apple.com/documentation/cloudkit/ckallowedsharingoptions). The standard option is the default.
 
 ## See Also
 

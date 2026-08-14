@@ -29,7 +29,7 @@ If you call this function after initiating a print job, the change is ignored fo
 ## Parameters
 
 - `printSettings`: The print settings object whose last page number you want to set.
-- `last`: The page number of the last page to print. This value appears in the To field of the Print dialog. Pass the constant   to print the entire document. 
+- `last`: The page number of the last page to print. This value appears in the To field of the Print dialog. Pass the constant `kPMPrintAllPages` to print the entire document. 
 - `lock`: The lock state of the setting. Locking is not supported at this time. 
 
 ## See Also

@@ -21,13 +21,13 @@ People don’t search the App Store for an App Clip. They discover it when and w
 - Scanning an App Clip Code, NFC tag, or QR code at a physical location
 - Tapping a location-based suggestion from Siri Suggestions
 - Tapping a link in the Maps app
-- Tapping a Smart App Banner on a website in Safari or an app that uses [`SFSafariViewController`](https://developer.apple.com/documentation/SafariServices/SFSafariViewController)
-- Tapping the action button of an App Clip card that appears in Safari or an [`SFSafariViewController`](https://developer.apple.com/documentation/SafariServices/SFSafariViewController) (requires iOS 15 or later)
+- Tapping a Smart App Banner on a website in Safari or an app that uses [`SFSafariViewController`](https://developer.apple.com/documentation/safariservices/sfsafariviewcontroller)
+- Tapping the action button of an App Clip card that appears in Safari or an [`SFSafariViewController`](https://developer.apple.com/documentation/safariservices/sfsafariviewcontroller) (requires iOS 15 or later)
 - Tapping a link that someone shares in the Messages app (as a text message only)
 - Tapping an App Clip preview or link to an App Clip in another app (requires iOS 17 or later)
 - Tapping a link to an App Clip in an email or on a website
 
-![A flowchart illustrating the launch experience of an App Clip from left to right. The first element list the possible invocations: App Clip Code, NFC tag, QR code, Safari, Messages, Maps, Location, and other app. An arrow labeled with Invocation points to a box that reads App Clip card. The next arrow carries the Invocation URL label and points to the next box that reads App Clip. The last arrow in the flow chart points to a box with the label Completed task. ](https://docs-assets.developer.apple.com/published/437831f3bacaddb85c6b98b8475a4da1/media-3707076%402x.png)
+![A flowchart illustrating the launch experience of an App Clip from left to right. The first element list the possible invocations: App Clip Code, NFC tag, QR code, Safari, Messages, Maps, Location, and other app. An arrow labeled with Invocation points to a box that reads App Clip card. The next arrow carries the Invocation URL label and points to the next box that reads App Clip. The last arrow in the flow chart points to a box with the label Completed task. ](/images/com.apple.appclip/media-3707076@2x.png)
 
 With each invocation, the system verifies whether the invocation URL matches the invocation URL in App Store Connect. After it verifies the invocation, the system uses the invocation URL to determine which App Clip experience to use for launching your App Clip. It then uses the App Clip experience’s metadata to populate the App Clip card and passes the invocation URL to the App Clip.
 
@@ -50,8 +50,8 @@ The following table shows the invocations each experience and link type supports
 | App Clip Codes | No | No | Yes, if you use the short version of the demo link. | Yes |
 | Maps | No | No | No | Yes |
 | Spotlight search | Yes, excluding location-based Spotlight suggestions. | Yes, excluding location-based Spotlight suggestions. | Yes, excluding location-based Spotlight suggestions. | Yes |
-| Another app that uses [`Link Presentation`](https://developer.apple.com/documentation/LinkPresentation) | Yes | Yes | Yes | Yes |
-| Another app that uses [`Link`](https://developer.apple.com/documentation/SwiftUI/Link) or [`open(_:options:completionHandler:)`](https://developer.apple.com/documentation/UIKit/UIApplication/open(_:options:completionHandler:)) | Yes | Yes | Yes | No |
+| Another app that uses [`Link Presentation`](https://developer.apple.com/documentation/linkpresentation) | Yes | Yes | Yes | Yes |
+| Another app that uses [`Link`](https://developer.apple.com/documentation/swiftui/link) or [`open(_:options:completionHandler:)`](https://developer.apple.com/documentation/uikit/uiapplication/open(_:options:completionhandler:)) | Yes | Yes | Yes | No |
 | Supports URL parameters | Yes | Yes | No | Yes |
 
 If you don’t have a website for your app or don’t want to support invocations that require an associated website, configure the default experience and use the default link for your invocations. If you support iOS 16.3 and earlier or want to support additional invocations, including showing an App Clip card on your website, associate your website with your App Clip.
@@ -150,19 +150,19 @@ In some cases — for example, if you already use shortened URLs to deep link in
 
 You may create both short and long URLs, as well as make URL redirects to launch App Clips. However, you need to set up both the short URL and the long URL to invoke your App Clip. For example, you may want to use `https://some.subdomain.example.com/path/to/thing?query=1234` as the invocation URL for your App Clip and a shorter URL — for example, `https://appclip.example.com?id=1` — that redirects to the long URL. For the URL forwarding to work, add both `https://some.subdomain.example.com` and `https://appclip.example.com` to your list of associated domains. Make sure to place an AASA file into the corresponding `.well-known` directory for each subdomain. Then, create App Clip experiences for both URLs.
 
-For additional information, refer to  [`Associating your App Clip with your website`](associating-your-app-clip-with-your-website.md) and [`Supporting associated domains`](https://developer.apple.com/documentation/Xcode/supporting-associated-domains).
+For additional information, refer to  [`Associating your App Clip with your website`](associating-your-app-clip-with-your-website.md) and [`Supporting associated domains`](https://developer.apple.com/documentation/xcode/supporting-associated-domains).
 
 ##### Creating App Clip Experiences Using the App Store Connect Api
 
 The App Store Connect website offers a convenient way to create and manage your default and advanced App Clip experiences. However, if you need to manage a large number of App Clip experiences, using the website may be too cumbersome. For example, say your App Clip allows people to order food at a chain restaurant with dozens, hundreds, or even thousands of locations. For each location, you likely want to display imagery on the App Clip card for that specific restaurant. As a result, you need to create an advanced App Clip experience for each location.
 
-To help you create and manage a large number of App Clip experiences, use the App Store Connect API to automate these tasks. For more information, refer to  [`App Clips and App Clip Experiences`](https://developer.apple.com/documentation/AppStoreConnectAPI/app-clips-and-app-clip-experiences).
+To help you create and manage a large number of App Clip experiences, use the App Store Connect API to automate these tasks. For more information, refer to  [`App Clips and App Clip Experiences`](https://developer.apple.com/documentation/appstoreconnectapi/app-clips-and-app-clip-experiences).
 
 ## See Also
 
 - [Choosing the right functionality for your App Clip](choosing-the-right-functionality-for-your-app-clip.md)
   Review frameworks available to App Clips and identify functionality that makes a great App Clip.
-- [App Clips updates](../Updates/AppClips.md)
+- [App Clips updates](../updates/appclips.md)
   Learn about important changes in App Clips.
 
 

@@ -13,10 +13,10 @@ framework: HIG
 
 The Digital Crown is an important hardware input for Apple Vision Pro and Apple Watch.
 
-![A sketch of a curved arrow beside a Digital Crown, that suggests turning the Digital Crown. The image is overlaid with rectangular and circular grid lines and is tinted purple to subtly reflect the purple in the original six-color Apple logo.](https://docs-assets.developer.apple.com/published/b27ff9da695212f93bad29301b5ecfe6/inputs-digital-crown-intro~dark%402x.png)
+![A sketch of a curved arrow beside a Digital Crown, that suggests turning the Digital Crown. The image is overlaid with rectangular and circular grid lines and is tinted purple to subtly reflect the purple in the original six-color Apple logo.](/images/com.apple.HIG/inputs-digital-crown-intro~dark@2x.png)
 On both Apple Vision Pro and Apple Watch, people can use the Digital Crown to interact with the system; on Apple Watch, people can also use the Digital Crown to interact with apps.
-![A close-up photograph of a person's head wearing Apple Vision Pro, with their index finger pointing at the Digital Crown.](https://docs-assets.developer.apple.com/published/b421afd55a6401eeacedaa088b02d909/digital-crown-apple-vision-pro%402x.png)
-![A close-up photograph of Apple Watch, shown at an angle, with the Digital Crown prominently featured at the center of the image.](https://docs-assets.developer.apple.com/published/b557ec51bcbcaac70485ca87eda59c40/digital-crown-apple-watch%402x.png)
+![A close-up photograph of a person's head wearing Apple Vision Pro, with their index finger pointing at the Digital Crown.](/images/com.apple.HIG/digital-crown-apple-vision-pro@2x.png)
+![A close-up photograph of Apple Watch, shown at an angle, with the Digital Crown prominently featured at the center of the image.](/images/com.apple.HIG/digital-crown-apple-watch@2x.png)
 
 ## Apple Vision Pro
 On Apple Vision Pro, people use the Digital Crown to:
@@ -50,7 +50,7 @@ Most Apple Watch models provide haptic feedback for the Digital Crown, which giv
 [Immersive experiences](immersive-experiences.md)
 
 #### Developer documentation
-[WKCrownDelegate](../WatchKit/WKCrownDelegate.md) — WatchKit
+[WKCrownDelegate](../watchkit/wkcrowndelegate.md) — WatchKit
 
 ## Change log
 | Date | Changes |

@@ -21,7 +21,7 @@ func fetchLastDisconnectError() async throws
 
 #### Discussion
 
-If VPN system (including the IPsec client) generated the error, then the error uses the [`NEVPNConnectionErrorDomain`](nevpnconnectionerrordomain.md) error domain. If the error came from a tunnel provider app extension instead, then the error is the [`NSError`](https://developer.apple.com/documentation/Foundation/NSError) that the provider passed when disconnecting the tunnel.
+If VPN system (including the IPsec client) generated the error, then the error uses the [`NEVPNConnectionErrorDomain`](nevpnconnectionerrordomain.md) error domain. If the error came from a tunnel provider app extension instead, then the error is the [`NSError`](https://developer.apple.com/documentation/foundation/nserror) that the provider passed when disconnecting the tunnel.
 
 ## Parameters
 

@@ -16,7 +16,7 @@ final class SharedCoordinateSpaceProvider
 
 #### Overview
 
-You may access the shared coordinate space outside the context of a FaceTime call with the  [`Shared Coordinate Space access`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.arkit.shared-coordinate-space.allow) entitlement.
+You may access the shared coordinate space outside the context of a FaceTime call with the  [`Shared Coordinate Space access`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.arkit.shared-coordinate-space.allow) entitlement.
 
 ## Topics
 
@@ -54,10 +54,10 @@ You may access the shared coordinate space outside the context of a FaceTime cal
 ## Relationships
 
 ### Conforms To
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [CustomStringConvertible](../swift/customstringconvertible.md)
 - [DataProvider](dataprovider.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 
 ---

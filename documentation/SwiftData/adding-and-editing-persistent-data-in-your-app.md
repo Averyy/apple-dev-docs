@@ -68,19 +68,19 @@ When deciding how people add and edit data in your app, consider the user experi
 
 **iOS**:
 
-![A screenshot of the sample app running in iOS, showing the animal editor. The editor displays horizontally a cancel button, followed by the title Add Animal, followed by a save button that appears along the top of the editor. Below that is a name field with the placeholder text Name. Below the name field is the category field the label Category, followed by a picker with the label Select a category. Below the Category field is the Diet field with the label Diet and a picker with the label Herbivore.](https://docs-assets.developer.apple.com/published/b97dd17997855b113fae297bf8590dba/Adding-and-editing-persistent-data-02%402x.png)
+![A screenshot of the sample app running in iOS, showing the animal editor. The editor displays horizontally a cancel button, followed by the title Add Animal, followed by a save button that appears along the top of the editor. Below that is a name field with the placeholder text Name. Below the name field is the category field the label Category, followed by a picker with the label Select a category. Below the Category field is the Diet field with the label Diet and a picker with the label Herbivore.](/images/com.apple.SwiftData/Adding-and-editing-persistent-data-02@2x.png)
 
 **iPadOS**:
 
-![A screenshot of the sample app running in iPadOS, showing the animal editor with sample app in the background. The editor displays horizontally a cancel button, followed by the title Add Animal, followed by a save button that appears along the top of the editor. Below that is a name field with the placeholder text Name. Below the name field is the category field the label Category, followed by a picker with the label Select a category. Below the Category field is the Diet field with the label Diet and a picker with the label Herbivore.](https://docs-assets.developer.apple.com/published/e77d365b30cfd7680e4db84f7581a61a/Adding-and-editing-persistent-data-03%402x.png)
+![A screenshot of the sample app running in iPadOS, showing the animal editor with sample app in the background. The editor displays horizontally a cancel button, followed by the title Add Animal, followed by a save button that appears along the top of the editor. Below that is a name field with the placeholder text Name. Below the name field is the category field the label Category, followed by a picker with the label Select a category. Below the Category field is the Diet field with the label Diet and a picker with the label Herbivore.](/images/com.apple.SwiftData/Adding-and-editing-persistent-data-03@2x.png)
 
 **macOS**:
 
-![A screenshot of the sample app running in macOS, showing the animal editor with the main window of the sample app in the background. The editor displays the label name next to a text field that shows the text Red kangaroo. Below the name label is a label with the text category, followed by a picker showing mammal as the selected item. Below the category label is a label with the text Diet, followed by a picker showing Herbivore as the selected item. Below these fields is a horizontal line, and below the line are two buttons displayed horizontally, cancel and save.](https://docs-assets.developer.apple.com/published/087aefc5f44275e4587b8f53765b12af/Adding-and-editing-persistent-data-01%402x.png)
+![A screenshot of the sample app running in macOS, showing the animal editor with the main window of the sample app in the background. The editor displays the label name next to a text field that shows the text Red kangaroo. Below the name label is a label with the text category, followed by a picker showing mammal as the selected item. Below the category label is a label with the text Diet, followed by a picker showing Herbivore as the selected item. Below these fields is a horizontal line, and below the line are two buttons displayed horizontally, cancel and save.](/images/com.apple.SwiftData/Adding-and-editing-persistent-data-01@2x.png)
 
 **tvOS**:
 
-![A screenshot of the sample app running in tvOS, showing the animal editor. The editor displays horizontally a cancel button, followed by the title Edit Animal, followed by a save button that appears along the top of the editor. Below that is a highlighted text field that displays the text Red kangaroo. Below the text field is a picker with the label Category and Mammal as the selected item. Below the category picker is another picker with the label Diet and Herbivore as the selected item.](https://docs-assets.developer.apple.com/published/3676490a2b097d25d0dfcd9b92fbd346/Adding-and-editing-persistent-data-04%402x.png)
+![A screenshot of the sample app running in tvOS, showing the animal editor. The editor displays horizontally a cancel button, followed by the title Edit Animal, followed by a save button that appears along the top of the editor. Below that is a highlighted text field that displays the text Red kangaroo. Below the text field is a picker with the label Category and Mammal as the selected item. Below the category picker is another picker with the label Diet and Herbivore as the selected item.](/images/com.apple.SwiftData/Adding-and-editing-persistent-data-04@2x.png)
 
 The design of `AnimalEditor` allows the app to use the same view for both adding new animals and editing existing ones. To provide this behavior, the editor declares the `animal` property as an optional `Animal` type. If `animal` is `nil`, a person using the editor is adding an animal; otherwise, the person is editing an existing animal. The editor makes the intention obvious by determining the title of the editor based on the value of `animal` in a computed property.
 
@@ -126,7 +126,7 @@ var body: some View {
 
 The sample app takes this approach because it uses the autosave feature from SwiftData. The autosave feature automatically saves data changes made to model class instances, such as `animal`, instead of relying on the app to make explicit calls to the model context [`save()`](modelcontext/save().md) method. For more information about autosave, see [`autosaveEnabled`](modelcontext/autosaveenabled.md).
 
-Finally, to make the purpose of the editor clear to the person using it, `AnimalEditor` uses the `editorTitle` computed property to displays the title in the [`principal`](https://developer.apple.com/documentation/SwiftUI/ToolbarItemPlacement/principal) item section of the toolbar:
+Finally, to make the purpose of the editor clear to the person using it, `AnimalEditor` uses the `editorTitle` computed property to displays the title in the [`principal`](https://developer.apple.com/documentation/swiftui/toolbaritemplacement/principal) item section of the toolbar:
 
 ```swift
 .toolbar {
@@ -140,7 +140,7 @@ Finally, to make the purpose of the editor clear to the person using it, `Animal
 
 The `AnimalEditor` view declares its state variables with default values for a new animal, setting `name` to an empty string, `selectedDiet` to `herbivorous`, and leaving `selectedCategory` as `nil`. But the editor also supports editing an existing animal.
 
-If someone edits an animal, the editor needs to show the values of the animal to edit, not the default values for the new animal. The view stores the animal to edit in the `animal` property. To show the current values of that animal, the editor applies the [`onAppear(perform:)`](https://developer.apple.com/documentation/SwiftUI/View/onAppear(perform:)) modifier and copies the editable values from `animal` to the state variables:
+If someone edits an animal, the editor needs to show the values of the animal to edit, not the default values for the new animal. The view stores the animal to edit in the `animal` property. To show the current values of that animal, the editor applies the [`onAppear(perform:)`](https://developer.apple.com/documentation/swiftui/view/onappear(perform:)) modifier and copies the editable values from `animal` to the state variables:
 
 ```swift
 .onAppear {
@@ -200,9 +200,9 @@ private func save() {
 }
 ```
 
-After saving the data, the Save button’s action closes the editor by calling [`dismiss`](https://developer.apple.com/documentation/SwiftUI/EnvironmentValues/dismiss).
+After saving the data, the Save button’s action closes the editor by calling [`dismiss`](https://developer.apple.com/documentation/swiftui/environmentvalues/dismiss).
 
-> **Note**: The `AnimalEditor` view retrieves the model context from the view’s environment by creating a reference to the context with `@Environment(\.modelContext) private var modelContext`. For more information, see [`modelContext`](https://developer.apple.com/documentation/SwiftUI/EnvironmentValues/modelContext).
+> **Note**: The `AnimalEditor` view retrieves the model context from the view’s environment by creating a reference to the context with `@Environment(\.modelContext) private var modelContext`. For more information, see [`modelContext`](https://developer.apple.com/documentation/swiftui/environmentvalues/modelcontext).
 
 ##### Discard the Data Changes
 
@@ -216,15 +216,15 @@ ToolbarItem(placement: .cancellationAction) {
 }
 ```
 
-When a person clicks the Cancel button, the editor discards any changes made to the data by calling [`dismiss`](https://developer.apple.com/documentation/SwiftUI/EnvironmentValues/dismiss) in the button’s action. This closes the editor without saving the changes.
+When a person clicks the Cancel button, the editor discards any changes made to the data by calling [`dismiss`](https://developer.apple.com/documentation/swiftui/environmentvalues/dismiss) in the button’s action. This closes the editor without saving the changes.
 
 ## See Also
 
 - [Preserving your app’s model data across launches](preserving-your-apps-model-data-across-launches.md)
   Describe your model classes to SwiftData using the framework’s macros, and store instances of those models so they exist beyond the app’s runtime.
-- [Adopting SwiftData for a Core Data app](../CoreData/adopting-swiftdata-for-a-core-data-app.md)
+- [Adopting SwiftData for a Core Data app](../coredata/adopting-swiftdata-for-a-core-data-app.md)
   Persist data in your app intuitively with the Swift native persistence framework.
-- [SwiftData updates](../Updates/SwiftData.md)
+- [SwiftData updates](../updates/swiftdata.md)
   Learn about important changes to SwiftData.
 - [Adopting inheritance in SwiftData](adopting-inheritance-in-swiftdata.md)
   Add flexibility to your models using class inheritance.

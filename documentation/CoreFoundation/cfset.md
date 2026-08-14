@@ -28,7 +28,7 @@ You create a static set object using either the [`CFSetCreate(_:_:_:_:)`](cfsetc
 
 CFSet provides functions for querying the values of a set. The [`CFSetGetCount(_:)`](cfsetgetcount(_:).md) returns the number of values in a set, the [`CFSetContainsValue(_:_:)`](cfsetcontainsvalue(_:_:).md) function checks if a value is in a set, and [`CFSetGetValues(_:_:)`](cfsetgetvalues(_:_:).md) returns a C array containing all the values in a set.
 
-CFSet is “toll-free bridged” with its Cocoa Foundation counterpart, [`NSSet`](https://developer.apple.com/documentation/Foundation/NSSet). This means that the Core Foundation type is interchangeable in function or method calls with the bridged Foundation object. Therefore, in a method where you see an `NSSet *` parameter, you can pass in a `CFSetRef`, and in a function where you see a `CFSetRef` parameter, you can pass in an NSSet instance. This also applies to concrete subclasses of NSSet. See [`Toll-Free Bridged Types`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFDesignConcepts/Articles/tollFreeBridgedTypes.html#//apple_ref/doc/uid/TP40010677) for more information on toll-free bridging.
+CFSet is “toll-free bridged” with its Cocoa Foundation counterpart, [`NSSet`](https://developer.apple.com/documentation/foundation/nsset). This means that the Core Foundation type is interchangeable in function or method calls with the bridged Foundation object. Therefore, in a method where you see an `NSSet *` parameter, you can pass in a `CFSetRef`, and in a function where you see a `CFSetRef` parameter, you can pass in an NSSet instance. This also applies to concrete subclasses of NSSet. See [`Toll-Free Bridged Types`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFDesignConcepts/Articles/tollFreeBridgedTypes.html#//apple_ref/doc/uid/TP40010677) for more information on toll-free bridging.
 
 ## Topics
 
@@ -81,8 +81,8 @@ CFSet is “toll-free bridged” with its Cocoa Foundation counterpart, [`NSSet`
 ### Inherited By
 - [CFMutableSet](cfmutableset.md)
 ### Conforms To
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
+- [Equatable](../swift/equatable.md)
+- [Hashable](../swift/hashable.md)
 
 ## See Also
 

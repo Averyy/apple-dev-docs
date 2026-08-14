@@ -17,7 +17,7 @@ let kSecCodeInfoStatus: CFString
 
 #### Discussion
 
-The value is a [`CFNumber`](https://developer.apple.com/documentation/CoreFoundation/CFNumber) object. This is a snapshot taken at the time the function is executed and may be out of date by the time you examine it. Note, however, that some flag values cannot be changed and are therefore permanently reliable. See [`SecCodeStatus`](seccodestatus.md) for a list of possible values.
+The value is a [`CFNumber`](https://developer.apple.com/documentation/corefoundation/cfnumber) object. This is a snapshot taken at the time the function is executed and may be out of date by the time you examine it. Note, however, that some flag values cannot be changed and are therefore permanently reliable. See [`SecCodeStatus`](seccodestatus.md) for a list of possible values.
 
 Specify the [`kSecCSDynamicInformation`](kseccsdynamicinformation.md) flag when calling the [`SecCodeCopySigningInformation(_:_:_:)`](seccodecopysigninginformation(_:_:_:).md) function to get this information.
 

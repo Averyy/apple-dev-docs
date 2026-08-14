@@ -8,7 +8,7 @@ Equip the system so that Siri can work with your app by adding specific schemas 
 
 A big part of people’s personal context is the apps they use every day. To help Apple Intelligence work with your app, the system needs to understand what your app can do and what content it manages. A *schema* is a special app intent, entity, or enumeration that the framework defines for a specific purpose.
 
-![An illustration that shows app schema domains next to the Apple Intelligence icon.](https://docs-assets.developer.apple.com/published/5f3dbd07e292e965af51721a6bfc60b7/making-actions-and-content-available-to-apple-intelligence%402x.png)
+![An illustration that shows app schema domains next to the Apple Intelligence icon.](/images/com.apple.AppIntents/making-actions-and-content-available-to-apple-intelligence@2x.png)
 
 Each schema’s properties give Apple Intelligence the information it needs to work with your app. When you adopt schemas, you make your app’s actions and content available to the app toolbox, which Apple Intelligence draws on to service requests. You can add schemas to your app by conforming its existing types to a schema, or by creating new types with framework macros.
 

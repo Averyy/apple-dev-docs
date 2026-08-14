@@ -44,7 +44,7 @@ This collection of documents provides the API reference for the Application Serv
 ### Classes
 - [class ColorSyncCMM](../colorsync/colorsynccmm.md)
 - [class ColorSyncMutableProfile](../colorsync/colorsyncmutableprofile.md)
-- [class ColorSyncProfile](../coregraphics/colorsyncprofile.md)
+- [class ColorSyncProfile](../colorsync/colorsyncprofile.md)
 - [class ColorSyncTransform](../colorsync/colorsynctransform.md)
 - [class HIMutableShape](himutableshape.md)
 - [class HIShape](hishape.md)

@@ -22,7 +22,7 @@ The cloud-sharing service invokes this method when the user finishes sharing or 
 
 - `sharingService`: The cloud-sharing service that invokes this delegate method.
 - `items`: The items the service is sharing.
-- `error`: If the service can’t share the items, an error that provides information about the failure; otherwise, [`nil`](https://developer.apple.com/documentation/ObjectiveC/nil-227m0).
+- `error`: If the service can’t share the items, an error that provides information about the failure; otherwise, [`nil`](https://developer.apple.com/documentation/objectivec/nil-227m0).
 
 ## See Also
 

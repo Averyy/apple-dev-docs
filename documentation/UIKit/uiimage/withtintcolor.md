@@ -25,7 +25,7 @@ A new version of the image that incorporates the specified tint color.
 
 #### Discussion
 
-For bitmap images, this method draws the background tint color followed by the image contents using the [`CGBlendMode.destinationIn`](https://developer.apple.com/documentation/CoreGraphics/CGBlendMode/destinationIn) mode. For symbol images, this method returns an image that always uses the specified tint color.
+For bitmap images, this method draws the background tint color followed by the image contents using the [`CGBlendMode.destinationIn`](https://developer.apple.com/documentation/coregraphics/cgblendmode/destinationin) mode. For symbol images, this method returns an image that always uses the specified tint color.
 
 The new image uses the same rendering mode as the original image.
 

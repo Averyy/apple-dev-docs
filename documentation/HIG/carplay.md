@@ -13,7 +13,7 @@ framework: HIG
 
 CarPlay lets people get directions, make calls, send and receive messages, listen to music, and more from their car’s built-in display, all while staying focused on the road.
 
-![A sketch of the CarPlay icon. The image is overlaid with rectangular and circular grid lines and is tinted blue to subtly reflect the blue in the original six-color Apple logo.](https://docs-assets.developer.apple.com/published/ab237ca705f11f7bfdfed3c6c2dbf84a/technologies-CarPlay-intro~dark%402x.png)
+![A sketch of the CarPlay icon. The image is overlaid with rectangular and circular grid lines and is tinted blue to subtly reflect the blue in the original six-color Apple logo.](/images/com.apple.HIG/technologies-CarPlay-intro~dark@2x.png)
 People download CarPlay apps from the App Store and install them on iPhone like any other app. When people connect their iPhone with their vehicle, app icons for installed CarPlay apps appear on the CarPlay Home screen.
 CarPlay is designed for drivers to use while they’re driving. Keep this context in mind as you design your CarPlay app, providing features that help people perform tasks quickly and with minimal interaction.
 To create the interface of your CarPlay app, you use the system-defined templates that are appropriate for the type of app you’re developing, such as audio, communication, navigation, or fueling. For each template, your app provides the content and iOS renders it in CarPlay. Because the system displays UI components and handles the interface with the vehicle, you don’t need to adjust your layout for different screen resolutions, or manage input from different types of hardware like touchscreens, knobs, or touch pads.

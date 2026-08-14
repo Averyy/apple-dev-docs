@@ -62,7 +62,7 @@ After you extend [`AttributeScope`](attributescope.md) like this, extend [`Attri
 ## Relationships
 
 ### Inherits From
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 ### Inherited By
 - [DecodableAttributedStringKey](decodableattributedstringkey.md)
 - [EncodableAttributedStringKey](encodableattributedstringkey.md)

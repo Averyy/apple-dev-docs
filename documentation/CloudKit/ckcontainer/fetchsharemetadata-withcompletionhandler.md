@@ -36,7 +36,7 @@ The closure doesn’t return a value and takes the following parameters:
 
 - [func accept(CKShare.Metadata, completionHandler: (CKShare?, (any Error)?) -> Void)](ckcontainer/accept(_:completionhandler:)-949ea.md)
   Accepts the specified share metadata.
-- [static let CKAccountChanged: NSNotification.Name](../Foundation/NSNotification/Name-swift.struct/CKAccountChanged.md)
+- [static let CKAccountChanged: NSNotification.Name](../foundation/nsnotification/name-swift.struct/ckaccountchanged.md)
   A notification that a container posts when the status of an iCloud account changes.
 
 

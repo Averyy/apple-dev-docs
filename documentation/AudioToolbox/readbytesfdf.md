@@ -16,7 +16,7 @@ typealias ReadBytesFDF = (UnsafeMutableRawPointer, DarwinBoolean, Int64, UnsafeM
 ## See Also
 
 - [struct ExtendedControlEvent](extendedcontrolevent.md)
-- [typealias MIDIEndpointRef](../CoreMIDI/MIDIEndpointRef.md)
+- [typealias MIDIEndpointRef](../coremidi/midiendpointref.md)
   A MIDI source or destination an entity owns.
 - [typealias MagicCookieInfo](magiccookieinfo.md)
   A structure holding magic cookie information.

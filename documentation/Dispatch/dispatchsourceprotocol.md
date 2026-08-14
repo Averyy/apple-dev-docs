@@ -61,7 +61,7 @@ You do not adopt this protocol in your objects. Instead, use the [`makeSignalSou
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
 ### Inherited By
 - [DispatchSourceFileSystemObject](dispatchsourcefilesystemobject.md)
 - [DispatchSourceMachReceive](dispatchsourcemachreceive.md)

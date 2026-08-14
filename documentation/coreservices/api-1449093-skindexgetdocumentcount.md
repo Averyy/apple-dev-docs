@@ -30,7 +30,7 @@ In the current implementation of Search Kit, `SKIndexGetDocumentCount` returns t
 
 ## Parameters
 
-- `inIndex`: The index whose document URL objects (of type  )  you want to count.
+- `inIndex`: The index whose document URL objects (of type [`SKDocument`](skdocument.md))  you want to count.
 
 ## See Also
 

@@ -8,16 +8,16 @@ A person may have a speech disability or prefer to connect without using their v
 
 People who are unable to speak, have a speech disability, or prefer to communicate through text can use Apple’s speech accessibility features to communicate through their Apple devices. Design and develop your app to support speech accessibility features and provide a great experience for people who rely on these features.
 
-![An illustration that shows two people. On the left, a person is sitting at a desk and communicating using speech synthesis features on a Mac. On the right, a person is sitting at a desk and communicating through a text message exchange on an iPad.](https://docs-assets.developer.apple.com/published/80ef01897ccf3ede233c7e2c4d2ec5f2/accessibility-scene-speech%402x.png)
+![An illustration that shows two people. On the left, a person is sitting at a desk and communicating using speech synthesis features on a Mac. On the right, a person is sitting at a desk and communicating through a text message exchange on an iPad.](/images/com.apple.Accessibility/accessibility-scene-speech@2x.png)
 
 ##### Related Videos
 
 ## Topics
 
 ### Supporting speech accessibility features
-- [Speech synthesis](../AVFoundation/speech-synthesis.md)
+- [Speech synthesis](../avfoundation/speech-synthesis.md)
   Configure voices to speak strings of text.
-- [class AVSpeechSynthesizer](../AVFAudio/AVSpeechSynthesizer.md)
+- [class AVSpeechSynthesizer](../avfaudio/avspeechsynthesizer.md)
   An object that produces synthesized speech from text utterances and enables monitoring or controlling of ongoing speech.
 - [WWDC21 Challenge: Speech Synthesizer Simulator](wwdc21_challenge_speech_synthesizer_simulator.md)
   Simulate a conversation using speech synthesis.

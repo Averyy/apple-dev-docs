@@ -8,7 +8,7 @@ Specify hints and add strings to localize your SwiftUI views.
 
 Localize SwiftUI views so users experience your app in their own native language, region, and culture. Xcode parses SwiftUI views for strings to localize when exporting a localization catalog. You can add hints so that Xcode generates correct, hinted strings to localize for your app.
 
-For information about string catalogs, see [`Localizing and varying text with a string catalog`](https://developer.apple.com/documentation/Xcode/localizing-and-varying-text-with-a-string-catalog).
+For information about string catalogs, see [`Localizing and varying text with a string catalog`](https://developer.apple.com/documentation/xcode/localizing-and-varying-text-with-a-string-catalog).
 
 ##### Add Comments to Text Views
 
@@ -21,7 +21,7 @@ Text("Explore",
 
 Xcode creates the following entry in your string catalog file for this view:
 
-![A screenshot that shows a string catalog in Xcode for a simple app. The catalog has a single key called Explore with an English value for the key that is also the word Explore. The key also has a comment that says The title of the tab bar item that navigates to the Explore screen.](https://docs-assets.developer.apple.com/published/1ab5da57c6a8ebb0c1f93e1eb4a1cd3a/Preparing-views-for-localization-1%402x.png)
+![A screenshot that shows a string catalog in Xcode for a simple app. The catalog has a single key called Explore with an English value for the key that is also the word Explore. The key also has a comment that says The title of the tab bar item that navigates to the Explore screen.](/images/com.apple.SwiftUI/Preparing-views-for-localization-1@2x.png)
 
 ##### Provide Additional Information with Text Views
 
@@ -42,7 +42,7 @@ Label {
 }
 ```
 
-Many SwiftUI controls have content builder initializers that enable you to follow this pattern. For more information on how to make your app’s text translatable, see [`Preparing your app’s text for translation`](https://developer.apple.com/documentation/Xcode/preparing-your-apps-text-for-translation).
+Many SwiftUI controls have content builder initializers that enable you to follow this pattern. For more information on how to make your app’s text translatable, see [`Preparing your app’s text for translation`](https://developer.apple.com/documentation/xcode/preparing-your-apps-text-for-translation).
 
 ## See Also
 

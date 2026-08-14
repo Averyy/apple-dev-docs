@@ -19,7 +19,7 @@ var isWirelessRouteActive: Bool { get }
 
 #### Discussion
 
-When set to [`true`](https://developer.apple.com/documentation/Swift/true), the wireless route is active.
+When set to [`true`](https://developer.apple.com/documentation/swift/true), the wireless route is active.
 
 ## See Also
 

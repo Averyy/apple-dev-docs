@@ -53,7 +53,7 @@ For the complete list of environment values SwiftUI provides, see the properties
 
 ##### Get an Observable Object
 
-You can also use `Environment` to get an observable object from a view’s environment. The observable object must conform to the [`Observable`](https://developer.apple.com/documentation/Observation/Observable) protocol, and your app must set the object in the environment using the object itself or a key path.
+You can also use `Environment` to get an observable object from a view’s environment. The observable object must conform to the [`Observable`](https://developer.apple.com/documentation/observation/observable) protocol, and your app must set the object in the environment using the object itself or a key path.
 
 To set the object in the environment using the object itself, use the [`environment(_:)`](view/environment(_:).md) modifier:
 
@@ -152,8 +152,8 @@ struct LibraryView: View {
 
 ### Conforms To
 - [DynamicProperty](dynamicproperty.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

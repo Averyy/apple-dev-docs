@@ -25,15 +25,15 @@ A new write stream, or `NULL` if the call failed. Ownership follows the [`The Cr
 
 #### Discussion
 
-This function creates an FTP write stream for uploading data to an FTP URL. If the `ftpURL` parameter is created with the user name and password as part of the URL (such as `ftp://username:password@ftp.example.com`) then the user name and password will automatically be set in the `CFWriteStream`. Call [`CFWriteStreamSetProperty(_:_:_:)`](https://developer.apple.com/documentation/CoreFoundation/CFWriteStreamSetProperty(_:_:_:)) to set the steam’s properties, such as `kCFStreamPropertyFTPUserName` and `kCFStreamPropertyFTPPassword` to associate a user name and password with the stream that are used to log in when the stream is opened. See `Constants` for a description of all FTP stream properties.
+This function creates an FTP write stream for uploading data to an FTP URL. If the `ftpURL` parameter is created with the user name and password as part of the URL (such as `ftp://username:password@ftp.example.com`) then the user name and password will automatically be set in the `CFWriteStream`. Call [`CFWriteStreamSetProperty(_:_:_:)`](https://developer.apple.com/documentation/corefoundation/cfwritestreamsetproperty(_:_:_:)) to set the steam’s properties, such as `kCFStreamPropertyFTPUserName` and `kCFStreamPropertyFTPPassword` to associate a user name and password with the stream that are used to log in when the stream is opened. See `Constants` for a description of all FTP stream properties.
 
-After creating the write stream, you can call [`CFWriteStreamGetStatus(_:)`](https://developer.apple.com/documentation/CoreFoundation/CFWriteStreamGetStatus(_:)) at any time to check the status of the stream.
+After creating the write stream, you can call [`CFWriteStreamGetStatus(_:)`](https://developer.apple.com/documentation/corefoundation/cfwritestreamgetstatus(_:)) at any time to check the status of the stream.
 
-To initiate a connection with the FTP server, call [`CFWriteStreamOpen(_:)`](https://developer.apple.com/documentation/CoreFoundation/CFWriteStreamOpen(_:)). If the URL specifies a directory, the open is immediately followed by the event `kCFStreamEventEndEncountered` (and the stream passes to the state `kCFStreamStatusAtEnd`). Once the stream reaches this state, the directory has been created. Intermediary directories are not created.
+To initiate a connection with the FTP server, call [`CFWriteStreamOpen(_:)`](https://developer.apple.com/documentation/corefoundation/cfwritestreamopen(_:)). If the URL specifies a directory, the open is immediately followed by the event `kCFStreamEventEndEncountered` (and the stream passes to the state `kCFStreamStatusAtEnd`). Once the stream reaches this state, the directory has been created. Intermediary directories are not created.
 
-To write to the FTP stream, call [`CFWriteStreamWrite(_:_:_:)`](https://developer.apple.com/documentation/CoreFoundation/CFWriteStreamWrite(_:_:_:)).
+To write to the FTP stream, call [`CFWriteStreamWrite(_:_:_:)`](https://developer.apple.com/documentation/corefoundation/cfwritestreamwrite(_:_:_:)).
 
-To close a connection with the FTP server, call [`CFWriteStreamClose(_:)`](https://developer.apple.com/documentation/CoreFoundation/CFWriteStreamClose(_:)).
+To close a connection with the FTP server, call [`CFWriteStreamClose(_:)`](https://developer.apple.com/documentation/corefoundation/cfwritestreamclose(_:)).
 
 ## Parameters
 
@@ -56,7 +56,7 @@ To close a connection with the FTP server, call [`CFWriteStreamClose(_:)`](https
 - [let kCFStreamPropertyHTTPProxyPort: CFString](kcfstreampropertyhttpproxyport.md)
 - [let kCFStreamPropertyHTTPRequestBytesWrittenCount: CFString](kcfstreampropertyhttprequestbyteswrittencount.md)
 - [let kCFStreamPropertyHTTPResponseHeader: CFString](kcfstreampropertyhttpresponseheader.md)
-  HTTP Response Header property. When copied by [`CFReadStreamCopyProperty(_:_:)`](https://developer.apple.com/documentation/CoreFoundation/CFReadStreamCopyProperty(_:_:)), the header of an HTTP response message is returned.
+  HTTP Response Header property. When copied by [`CFReadStreamCopyProperty(_:_:)`](https://developer.apple.com/documentation/corefoundation/cfreadstreamcopyproperty(_:_:)), the header of an HTTP response message is returned.
 - [let kCFStreamPropertyHTTPSProxyHost: CFString](kcfstreampropertyhttpsproxyhost.md)
 - [let kCFStreamPropertyHTTPSProxyPort: CFString](kcfstreampropertyhttpsproxyport.md)
 - [let kCFStreamPropertyHTTPShouldAutoredirect: CFString](kcfstreampropertyhttpshouldautoredirect.md)

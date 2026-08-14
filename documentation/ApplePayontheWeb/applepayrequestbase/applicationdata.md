@@ -19,7 +19,7 @@ DOMString applicationData;
 
 Use this property for additional data as may be appropriate for your app—for example, a shopping cart identifier or an order number.
 
-The signed payment data (the [`paymentData`](https://developer.apple.com/documentation/PassKit/PKPaymentToken/paymentData) property of [`PKPaymentToken`](https://developer.apple.com/documentation/PassKit/PKPaymentToken)) includes a hash of this data. You’re responsible for sending the full application data to your server, if needed.
+The signed payment data (the [`paymentData`](https://developer.apple.com/documentation/passkit/pkpaymenttoken/paymentdata) property of [`PKPaymentToken`](https://developer.apple.com/documentation/passkit/pkpaymenttoken)) includes a hash of this data. You’re responsible for sending the full application data to your server, if needed.
 
 
 ---

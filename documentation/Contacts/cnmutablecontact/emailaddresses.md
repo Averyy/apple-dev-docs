@@ -21,7 +21,7 @@ var emailAddresses: [CNLabeledValue<NSString>] { get set }
 
 #### Discussion
 
-This property is an array of [`CNLabeledValue`](cnlabeledvalue.md) objects, each of which has a label and a [`NSString`](https://developer.apple.com/documentation/Foundation/NSString) value.
+This property is an array of [`CNLabeledValue`](cnlabeledvalue.md) objects, each of which has a label and a [`NSString`](https://developer.apple.com/documentation/foundation/nsstring) value.
 
 ## See Also
 

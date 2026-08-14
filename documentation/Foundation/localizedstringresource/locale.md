@@ -22,7 +22,7 @@ var locale: Locale
 
 #### Discussion
 
-To perform localization in a different locale, change this value before passing it to a [`String`](https://developer.apple.com/documentation/Swift/String) or [`AttributedString`](attributedstring.md) initializer that takes a [`LocalizedStringResource`](localizedstringresource.md).
+To perform localization in a different locale, change this value before passing it to a [`String`](https://developer.apple.com/documentation/swift/string) or [`AttributedString`](attributedstring.md) initializer that takes a [`LocalizedStringResource`](localizedstringresource.md).
 
 ## See Also
 

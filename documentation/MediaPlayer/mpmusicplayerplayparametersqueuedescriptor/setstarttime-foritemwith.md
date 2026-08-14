@@ -20,7 +20,7 @@ func setStartTime(_ startTime: TimeInterval, forItemWith playParameters: MPMusic
 
 ## Parameters
 
-- `startTime`: The [`TimeInterval`](https://developer.apple.com/documentation/Foundation/TimeInterval) describing when the item with designated play parameters starts playing.
+- `startTime`: The [`TimeInterval`](https://developer.apple.com/documentation/foundation/timeinterval) describing when the item with designated play parameters starts playing.
 - `playParameters`: The play parameters associated with the item in the queue that has a changed start time.
 
 ## See Also

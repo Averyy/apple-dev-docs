@@ -10,9 +10,9 @@ Create an illusion of multiple flat layers by causing the article body to overla
 
 You’ll first divide the article’s components into two sections. This requires moving a large amount of code. Then, you’ll simply add a `behavior` property on the upper section and complete the effect by giving the lower section an opaque background color.
 
-![Labeled screenshot of an Apple News article with two sections on iPad.](https://docs-assets.developer.apple.com/published/b5bb58096aa72b0f4afa853d04e33f36/media-3624566%402x.png)
+![Labeled screenshot of an Apple News article with two sections on iPad.](/images/com.apple.applenews/media-3624566@2x.png)
 
-![Side-by-side screenshots of an Apple News article on iPhone. The left image shows the article before scrolling, and the right image shows the effect of scrolling with parallax behavior.](https://docs-assets.developer.apple.com/published/4472e10eba3a1d70a13dc32668dc5f0e/media-3624570%402x.png)
+![Side-by-side screenshots of an Apple News article on iPhone. The left image shows the article before scrolling, and the right image shows the effect of scrolling with parallax behavior.](/images/com.apple.applenews/media-3624570@2x.png)
 
 ##### Divide the Article Content Into Sections
 

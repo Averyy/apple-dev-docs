@@ -10,24 +10,24 @@ Error codes in the `kCFStreamErrorDomainSOCKS` domain can come from multiple par
 
 To avoid confusion from conflicting error numbers, error codes in the `kCFStreamErrorDomainSOCKS` domain contain two parts: a subdomain, which tells which part of the protocol stack generated the error, and the error code itself.
 
-Calling [`CFSocketStreamSOCKSGetErrorSubdomain(_:)`](https://developer.apple.com/documentation/CFNetwork/CFSocketStreamSOCKSGetErrorSubdomain(_:)) returns an identifier that tells which layer of the protocol stack produced the error. This list of constants contains the possible values that this function will return.
+Calling [`CFSocketStreamSOCKSGetErrorSubdomain(_:)`](https://developer.apple.com/documentation/cfnetwork/cfsocketstreamsocksgeterrorsubdomain(_:)) returns an identifier that tells which layer of the protocol stack produced the error. This list of constants contains the possible values that this function will return.
 
-Calling [`CFSocketStreamSOCKSGetError(_:)`](https://developer.apple.com/documentation/CFNetwork/CFSocketStreamSOCKSGetError(_:)) returns the actual error code that the subdomain describes.
+Calling [`CFSocketStreamSOCKSGetError(_:)`](https://developer.apple.com/documentation/cfnetwork/cfsocketstreamsocksgeterror(_:)) returns the actual error code that the subdomain describes.
 
 ## Topics
 
 ### Constants
-- [var kCFStreamErrorSOCKSSubDomainNone: Int](../CFNetwork/kCFStreamErrorSOCKSSubDomainNone.md)
+- [var kCFStreamErrorSOCKSSubDomainNone: Int](../cfnetwork/kcfstreamerrorsockssubdomainnone.md)
   A general SOCKS error.
-- [var kCFStreamErrorSOCKSSubDomainVersionCode: Int](../CFNetwork/kCFStreamErrorSOCKSSubDomainVersionCode.md)
+- [var kCFStreamErrorSOCKSSubDomainVersionCode: Int](../cfnetwork/kcfstreamerrorsockssubdomainversioncode.md)
   The version of SOCKS that the server wants to use.
-- [var kCFStreamErrorSOCKS4SubDomainResponse: Int](../CFNetwork/kCFStreamErrorSOCKS4SubDomainResponse.md)
+- [var kCFStreamErrorSOCKS4SubDomainResponse: Int](../cfnetwork/kcfstreamerrorsocks4subdomainresponse.md)
   The SOCKS4 status code returned by the server.
-- [var kCFStreamErrorSOCKS5SubDomainUserPass: Int](../CFNetwork/kCFStreamErrorSOCKS5SubDomainUserPass.md)
+- [var kCFStreamErrorSOCKS5SubDomainUserPass: Int](../cfnetwork/kcfstreamerrorsocks5subdomainuserpass.md)
   The status code that the server returned during authentication.
-- [var kCFStreamErrorSOCKS5SubDomainMethod: Int](../CFNetwork/kCFStreamErrorSOCKS5SubDomainMethod.md)
+- [var kCFStreamErrorSOCKS5SubDomainMethod: Int](../cfnetwork/kcfstreamerrorsocks5subdomainmethod.md)
   The server’s desired negotiation method.
-- [var kCFStreamErrorSOCKS5SubDomainResponse: Int](../CFNetwork/kCFStreamErrorSOCKS5SubDomainResponse.md)
+- [var kCFStreamErrorSOCKS5SubDomainResponse: Int](../cfnetwork/kcfstreamerrorsocks5subdomainresponse.md)
   The response code that the server returned in reply to the connection request.
 
 ## See Also
@@ -38,7 +38,7 @@ Calling [`CFSocketStreamSOCKSGetError(_:)`](https://developer.apple.com/document
   Defines constants for values returned in the domain field of the `CFStreamError` structure.
 - [CFStream Error Domain Constants (CFHost)](cfstream-error-domain-constants-cfhost.md)
   Defines constants for values returned in the domain field of the `CFStreamError` structure.
-- [Secure Sockets (SOCKS) Errors](../CFNetwork/1518266-secure-sockets-socks-errors.md)
+- [Secure Sockets (SOCKS) Errors](../cfnetwork/1518266-secure-sockets-socks-errors.md)
   Error codes returned by the `kCFStreamErrorDomainSOCKS` error domain.
 - [struct CFStreamEventType](cfstreameventtype.md)
   Defines constants for stream-related events.

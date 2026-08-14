@@ -10,7 +10,7 @@ Make your app more accessible to users with disabilities by adding accessibility
 
 #### Overview
 
-By adding accessibility features to your app, you make it available to a wider range of users. This sample code project shows how to implement accessibility for several common UI controls. The examples make the controls accessible by using accessibility properties, accessibility protocols, and the [`NSAccessibilityElement`](https://developer.apple.com/documentation/AppKit/NSAccessibilityElement-swift.class) class.
+By adding accessibility features to your app, you make it available to a wider range of users. This sample code project shows how to implement accessibility for several common UI controls. The examples make the controls accessible by using accessibility properties, accessibility protocols, and the [`NSAccessibilityElement`](https://developer.apple.com/documentation/appkit/nsaccessibilityelement-swift.class) class.
 
 In macOS 10.10, the Accessibility API moved to a protocol-based approach, in contrast to the key-based API from macOS 10.9 and earlier. With the protocol-based API, you can:
 
@@ -45,13 +45,13 @@ override func accessibilityLabel() -> String? {
 }
 ```
 
-[`NSAccessibilityProtocol`](https://developer.apple.com/documentation/AppKit/NSAccessibilityProtocol) contains the full list of accessibility properties.
+[`NSAccessibilityProtocol`](https://developer.apple.com/documentation/appkit/nsaccessibilityprotocol) contains the full list of accessibility properties.
 
 ##### Add Accessibility Protocols to Custom Controls
 
-The Accessibility API protocols define the required accessibility functions for many common accessibility elements. Conformance to an accessibility protocol isn’t required to use the API, but it’s recommended when making custom controls accessible. Conforming to an accessibility protocol results in a warning for each unimplemented required function and allows the system to automatically infer the  [`accessibilityRole`](https://developer.apple.com/documentation/AppKit/NSAccessibility-c.protocol/accessibilityRole) and [`isAccessibilityElement()`](https://developer.apple.com/documentation/AppKit/NSAccessibilityProtocol/isAccessibilityElement()) properties.
+The Accessibility API protocols define the required accessibility functions for many common accessibility elements. Conformance to an accessibility protocol isn’t required to use the API, but it’s recommended when making custom controls accessible. Conforming to an accessibility protocol results in a warning for each unimplemented required function and allows the system to automatically infer the  [`accessibilityRole`](https://developer.apple.com/documentation/appkit/nsaccessibility-c.protocol/accessibilityrole) and [`isAccessibilityElement()`](https://developer.apple.com/documentation/appkit/nsaccessibilityprotocol/isaccessibilityelement()) properties.
 
-Standard AppKit controls conform to the related accessibility protocol (for example, [`NSButton`](https://developer.apple.com/documentation/AppKit/NSButton) conforms to the [`NSAccessibilityButton`](https://developer.apple.com/documentation/AppKit/NSAccessibilityButton) protocol, and [`NSSlider`](https://developer.apple.com/documentation/AppKit/NSSlider) conforms to the [`NSAccessibilitySlider`](https://developer.apple.com/documentation/AppKit/NSAccessibilitySlider) protocol). Whenever possible, subclass from the appropriate AppKit control to leverage the built-in accessibility.
+Standard AppKit controls conform to the related accessibility protocol (for example, [`NSButton`](https://developer.apple.com/documentation/appkit/nsbutton) conforms to the [`NSAccessibilityButton`](https://developer.apple.com/documentation/appkit/nsaccessibilitybutton) protocol, and [`NSSlider`](https://developer.apple.com/documentation/appkit/nsslider) conforms to the [`NSAccessibilitySlider`](https://developer.apple.com/documentation/appkit/nsaccessibilityslider) protocol). Whenever possible, subclass from the appropriate AppKit control to leverage the built-in accessibility.
 
 To add accessibility to a custom control:
 
@@ -65,7 +65,7 @@ For example, the following code sample creates a custom control that subclasses 
 class CustomButtonView: NSView {
 ```
 
-If a custom control doesn’t conform to an accessibility protocol, you need to implement the [`accessibilityRole`](https://developer.apple.com/documentation/AppKit/NSAccessibility-c.protocol/accessibilityRole) and [`isAccessibilityElement()`](https://developer.apple.com/documentation/AppKit/NSAccessibilityProtocol/isAccessibilityElement()) functions.
+If a custom control doesn’t conform to an accessibility protocol, you need to implement the [`accessibilityRole`](https://developer.apple.com/documentation/appkit/nsaccessibility-c.protocol/accessibilityrole) and [`isAccessibilityElement()`](https://developer.apple.com/documentation/appkit/nsaccessibilityprotocol/isaccessibilityelement()) functions.
 
 ```swift
 override func accessibilityRole() -> NSAccessibility.Role? {
@@ -85,13 +85,13 @@ For objects that don’t have a backing view — for example, a single view that
 
 `NSAccessibilityElement` has two convenience methods that simplify its use:
 
-- [`accessibilityAddChildElement(_:)`](https://developer.apple.com/documentation/AppKit/NSAccessibilityElement-swift.class/accessibilityAddChildElement(_:)) — This function sets the specified element as a subelement of the receiver’s [`accessibilityChildren`](https://developer.apple.com/documentation/AppKit/NSAccessibility-c.protocol/accessibilityChildren) and the receiver as the container to the specified element. This behavior is useful when you create hierarchies of accessibility elements.
-- [`accessibilityFrameInParentSpace()`](https://developer.apple.com/documentation/AppKit/NSAccessibilityElement-swift.class/accessibilityFrameInParentSpace()) — This property allows the accessibility element to specify its frame relative to its accessibility container, so that the system can automatically recalculate the  [`accessibilityFrame()`](https://developer.apple.com/documentation/AppKit/NSAccessibilityElementProtocol/accessibilityFrame()) property value (given in screen coordinates) whenever the element or any of its containing views changes location.
+- [`accessibilityAddChildElement(_:)`](https://developer.apple.com/documentation/appkit/nsaccessibilityelement-swift.class/accessibilityaddchildelement(_:)) — This function sets the specified element as a subelement of the receiver’s [`accessibilityChildren`](https://developer.apple.com/documentation/appkit/nsaccessibility-c.protocol/accessibilitychildren) and the receiver as the container to the specified element. This behavior is useful when you create hierarchies of accessibility elements.
+- [`accessibilityFrameInParentSpace()`](https://developer.apple.com/documentation/appkit/nsaccessibilityelement-swift.class/accessibilityframeinparentspace()) — This property allows the accessibility element to specify its frame relative to its accessibility container, so that the system can automatically recalculate the  [`accessibilityFrame()`](https://developer.apple.com/documentation/appkit/nsaccessibilityelementprotocol/accessibilityframe()) property value (given in screen coordinates) whenever the element or any of its containing views changes location.
 
 The Accessibility API includes two convenience methods in `AppKit/NSAccessibility.h` to simplify common accessibility tasks:
 
-- [`screenRect(fromView:rect:)`](https://developer.apple.com/documentation/AppKit/NSAccessibility-swift.struct/screenRect(fromView:rect:)) — This convenience method converts `frame` from the `parentView` coordinate space to the screen coordinate space. This is useful when you calculate an object’s [`accessibilityFrame()`](https://developer.apple.com/documentation/AppKit/NSAccessibilityProtocol/accessibilityFrame()).
-- [`screenPoint(fromView:point:)`](https://developer.apple.com/documentation/AppKit/NSAccessibility-swift.struct/screenPoint(fromView:point:)) — This convenience method converts `point` from the `parentView` coordinate space to the screen coordinate space. This is useful when you calculate an object’s [`accessibilityActivationPoint()`](https://developer.apple.com/documentation/AppKit/NSAccessibilityProtocol/accessibilityActivationPoint()) coordinates.
+- [`screenRect(fromView:rect:)`](https://developer.apple.com/documentation/appkit/nsaccessibility-swift.struct/screenrect(fromview:rect:)) — This convenience method converts `frame` from the `parentView` coordinate space to the screen coordinate space. This is useful when you calculate an object’s [`accessibilityFrame()`](https://developer.apple.com/documentation/appkit/nsaccessibilityprotocol/accessibilityframe()).
+- [`screenPoint(fromView:point:)`](https://developer.apple.com/documentation/appkit/nsaccessibility-swift.struct/screenpoint(fromview:point:)) — This convenience method converts `point` from the `parentView` coordinate space to the screen coordinate space. This is useful when you calculate an object’s [`accessibilityActivationPoint()`](https://developer.apple.com/documentation/appkit/nsaccessibilityprotocol/accessibilityactivationpoint()) coordinates.
 
 ##### Test the Accessibility Features on Your App
 
@@ -103,7 +103,7 @@ To test VoiceOver, choose System Settings > Accessibility > VoiceOver and click 
 
 - [Enhancing the accessibility of your SwiftUI app](enhancing-the-accessibility-of-your-swiftui-app.md)
   Support advancements in SwiftUI accessibility to make your app accessible to everyone.
-- [Creating accessible views](../SwiftUI/creating-accessible-views.md)
+- [Creating accessible views](../swiftui/creating-accessible-views.md)
   Make your app accessible to everyone by applying accessibility modifiers to your SwiftUI views.
 - [Delivering an exceptional accessibility experience](delivering_an_exceptional_accessibility_experience.md)
   Make improvements to your app’s interaction model to support assistive technologies such as VoiceOver.

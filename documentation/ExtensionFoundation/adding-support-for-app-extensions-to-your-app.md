@@ -14,7 +14,7 @@ The host app determines when to run an app extension, and defines the API that b
 
 Communication between an app and its app extensions occurs through well-defined interfaces that the app’s creator defines. When adding support for app extensions to your app, consider what features you want those extensions to support. Build APIs around specific features and launch app extensions that implement those APIs. For example, an image-editing app might define an API to manipulate the contents of an image. Typically, you define your API using protocols, but you can define other types too.
 
-The APIs you define must be interoperable with the XPC technology that the app and app extension use to communicate. The [`ExtensionFoundation`](ExtensionFoundation.md) framework lets you create an XPC connection using [`XPC`](https://developer.apple.com/documentation/Foundation/xpc) or types from the lighter-weight [`XPC`](https://developer.apple.com/documentation/XPC) framework. Both technologies offer similar features, but the XPC framework is a better option for exchanging data with an app extension running in a hardened sandbox. For additional information about how to build your custom APIs to support XPC, see the documentation for those technologies.
+The APIs you define must be interoperable with the XPC technology that the app and app extension use to communicate. The [`ExtensionFoundation`](ExtensionFoundation.md) framework lets you create an XPC connection using [`XPC`](https://developer.apple.com/documentation/foundation/xpc) or types from the lighter-weight [`XPC`](https://developer.apple.com/documentation/xpc) framework. Both technologies offer similar features, but the XPC framework is a better option for exchanging data with an app extension running in a hardened sandbox. For additional information about how to build your custom APIs to support XPC, see the documentation for those technologies.
 
 ##### Define Your Apps Extension Points in Code
 
@@ -22,7 +22,7 @@ Apps define extension points to ensure that the app extensions they launch are c
 
 An app may define multiple extension points, but each app extension supports only one extension point. An app might use different extension points to support different features. For example, a video editing app might use one extension point for video filters and a different extension point for file exporters. When defining each extension point, consider the interaction model between your app and the app extensions and add any attributes that apply:
 
-- **User interface support.** App extensions can do work with or without providing a custom UI. If an extension point requires a UI, the app and app extensions must also adopt the [`ExtensionKit`](https://developer.apple.com/documentation/ExtensionKit) framework, and use that framework to present the UI.
+- **User interface support.** App extensions can do work with or without providing a custom UI. If an extension point requires a UI, the app and app extensions must also adopt the [`ExtensionKit`](https://developer.apple.com/documentation/extensionkit) framework, and use that framework to present the UI.
 - **Enhanced security.** If an app extension processes unknown data or handles external input, you can choose to run it in a restrictive sandbox to minimize any potential damage from malicious code. The system requires app extensions to have specific sandbox-related entitlements.
 - **Scope.** You might choose to run app extensions that reside anywhere in the system, or that reside only inside your app’s bundle. Extension points adopt the bundle-only approach by default, but you can use this attribute to allow external developers to contribute app extensions.
 
@@ -75,7 +75,7 @@ proxyObj = xpcConnection.remoteObjectProxyWithErrorHandler { error in
 
 Use the proxy object from your XPC connection to send data to the app extension and receive responses. The proxy object is local to your app, but doesn’t do the actual work associated with its interface. Instead, proxy objects forward requests to the app extension’s process for fulfillment.
 
-For information about how to find the app extensions available for you to run, see [`Discovering app extensions from your app`](discovering-app-extensions-from-your-app.md). For information about how to accept an XPC connection in your app extension code, see [`Building an app extension to support a host app`](building-an-app-extension-to-support-a-host-app.md). For information about how to connect to an app extension with custom UI, see [`Including extension-based UI in your interface`](https://developer.apple.com/documentation/ExtensionKit/including-extension-based-ui-in-your-interface).
+For information about how to find the app extensions available for you to run, see [`Discovering app extensions from your app`](discovering-app-extensions-from-your-app.md). For information about how to accept an XPC connection in your app extension code, see [`Building an app extension to support a host app`](building-an-app-extension-to-support-a-host-app.md). For information about how to connect to an app extension with custom UI, see [`Including extension-based UI in your interface`](https://developer.apple.com/documentation/extensionkit/including-extension-based-ui-in-your-interface).
 
 ##### Unload App Extensions When You Finish with Them
 

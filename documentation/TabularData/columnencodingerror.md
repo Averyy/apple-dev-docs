@@ -22,7 +22,7 @@ struct ColumnEncodingError
 
 #### Overview
 
-An error bundles an [`EncodingError`](https://developer.apple.com/documentation/Swift/EncodingError) with the row and column that produces the error.
+An error bundles an [`EncodingError`](https://developer.apple.com/documentation/swift/encodingerror) with the row and column that produces the error.
 
 ## Topics
 
@@ -42,11 +42,11 @@ An error bundles an [`EncodingError`](https://developer.apple.com/documentation/
 ## Relationships
 
 ### Conforms To
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [Error](../Swift/Error.md)
-- [LocalizedError](../Foundation/LocalizedError.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
+- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
+- [Error](../swift/error.md)
+- [LocalizedError](../foundation/localizederror.md)
+- [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

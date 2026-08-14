@@ -10,13 +10,13 @@ You can diagnose problems with your matchmaking rules using the metrics endpoint
 
 ##### View Match Requests on the Queue
 
-First, confirm that your game submits requests to the correct queue using the [`Get Match Request Time in Queue`](https://developer.apple.com/documentation/AppStoreConnectAPI/GET-v1-gameCenterMatchmakingQueues-_id_-metrics-matchmakingRequests) endpoint. In the query parameters, pass the Game Center details `id` and pass a value for the `granularity` parameter that returns the level of information you want. To get the Game Center detail `id`, use the [`Enable game center for an app`](https://developer.apple.com/documentation/AppStoreConnectAPI/POST-v1-gameCenterDetails) or [`List apps`](https://developer.apple.com/documentation/AppStoreConnectAPI/GET-v1-apps) endpoint.
+First, confirm that your game submits requests to the correct queue using the [`Get Match Request Time in Queue`](https://developer.apple.com/documentation/appstoreconnectapi/get-v1-gamecentermatchmakingqueues-_id_-metrics-matchmakingrequests) endpoint. In the query parameters, pass the Game Center details `id` and pass a value for the `granularity` parameter that returns the level of information you want. To get the Game Center detail `id`, use the [`Enable game center for an app`](https://developer.apple.com/documentation/appstoreconnectapi/post-v1-gamecenterdetails) or [`List apps`](https://developer.apple.com/documentation/appstoreconnectapi/get-v1-apps) endpoint.
 
 ```other
 GET /v1/gameCenterMatchmakingQueues/8fb73d41-1ca1-1cbf-2538-9df424beb10b/metrics/matchmakingRequests?granularity=PT15M
 ```
 
-Parse the match request data in the response. If the `count` field in the [`GameCenterMatchmakingAppRequestsV1MetricResponse.Data.DataPoints.Values`](https://developer.apple.com/documentation/AppStoreConnectAPI/GameCenterMatchmakingAppRequestsV1MetricResponse/Data-data.dictionary/DataPoints-data.dictionary/Values-data.dictionary) object isn’t the value you expect, verify that the game submits a [`GKMatchRequest`](gkmatchrequest.md) object with the correct value for the [`queueName`](gkmatchrequest/queuename.md) property. Also, check device logs for any errors that may occur when submitting match requests.
+Parse the match request data in the response. If the `count` field in the [`GameCenterMatchmakingAppRequestsV1MetricResponse.Data.DataPoints.Values`](https://developer.apple.com/documentation/appstoreconnectapi/gamecentermatchmakingapprequestsv1metricresponse/data-data.dictionary/datapoints-data.dictionary/values-data.dictionary) object isn’t the value you expect, verify that the game submits a [`GKMatchRequest`](gkmatchrequest.md) object with the correct value for the [`queueName`](gkmatchrequest/queuename.md) property. Also, check device logs for any errors that may occur when submitting match requests.
 
 ```json
 {    
@@ -47,7 +47,7 @@ GET /v1/gameCenterMatchmakingQueues/8fb73d41-1ca1-1cbf-2538-9df424beb10b/metrics
 
 ##### View Match Request Errors
 
-Runtime errors can occur when your game submits a match request. If an error occurs while Game Center evaluates a match request, it may reject it and log an error. To view these types of errors, pass the matchmaking rule `id` and pass a `granularity` query parameter to the [`Get Matchmaking Rule Errors`](https://developer.apple.com/documentation/AppStoreConnectAPI/GET-v1-gameCenterMatchmakingRules-_id_-metrics-matchmakingRuleErrors) endpoint.
+Runtime errors can occur when your game submits a match request. If an error occurs while Game Center evaluates a match request, it may reject it and log an error. To view these types of errors, pass the matchmaking rule `id` and pass a `granularity` query parameter to the [`Get Matchmaking Rule Errors`](https://developer.apple.com/documentation/appstoreconnectapi/get-v1-gamecentermatchmakingrules-_id_-metrics-matchmakingruleerrors) endpoint.
 
 ```other
 GET /v1/gameCenterMatchmakingRules/2b4835c6-d06b-479d-8b0f-dab9d7eb3d11/metrics/matchmakingRuleErrors?granularity=PT15M
@@ -57,21 +57,21 @@ If errors occur, use the testing` `APIs to reproduce the error. For more informa
 
 For example, you can verify that the game passes the correct key for game-specific data that your matchmaking rules use in the `GKMatchRequest` [`properties`](gkmatchrequest/properties.md) and [`recipientProperties`](gkmatchrequest/recipientproperties.md) properties.
 
-To get the matchmaking rule `id`, use the [`Create a Rule`](https://developer.apple.com/documentation/AppStoreConnectAPI/POST-v1-gameCenterMatchmakingRules) endpoint.
+To get the matchmaking rule `id`, use the [`Create a Rule`](https://developer.apple.com/documentation/appstoreconnectapi/post-v1-gamecentermatchmakingrules) endpoint.
 
 ##### Check If Your Rules Are Too Restrictive
 
-Your matchmaking rules should strike a balance between finding the best players and reducing wait times. Check whether your rules are too restrictive by getting the frequency that your rules reject candidate matches using the [`Get boolean rule results`](https://developer.apple.com/documentation/AppStoreConnectAPI/GET-v1-gameCenterMatchmakingRules-_id_-metrics-matchmakingBooleanRuleResults) and [`Get Numeric Rule Results`](https://developer.apple.com/documentation/AppStoreConnectAPI/GET-v1-gameCenterMatchmakingRules-_id_-metrics-matchmakingNumberRuleResults) endpoints. Pass the matchmaking rule `id,` pass a `granularity` query parameter, and to organize the results by type, set the `groupBy` query parameter to `result`.
+Your matchmaking rules should strike a balance between finding the best players and reducing wait times. Check whether your rules are too restrictive by getting the frequency that your rules reject candidate matches using the [`Get boolean rule results`](https://developer.apple.com/documentation/appstoreconnectapi/get-v1-gamecentermatchmakingrules-_id_-metrics-matchmakingbooleanruleresults) and [`Get Numeric Rule Results`](https://developer.apple.com/documentation/appstoreconnectapi/get-v1-gamecentermatchmakingrules-_id_-metrics-matchmakingnumberruleresults) endpoints. Pass the matchmaking rule `id,` pass a `granularity` query parameter, and to organize the results by type, set the `groupBy` query parameter to `result`.
 
 ```other
 GET /v1/gameCenterMatchmakingRules/0f0fcbf9-43b6-429d-8c08-fcaf66a52872/metrics/matchmakingBooleanRuleResults?granularity=PT15M&groupBy=result
 ```
 
-If your rules are too restrictive, consider relaxing the criteria over time using a match rule with an age function. For more information, see [`Finding players with similar skill levels`](finding-players-with-similar-skill-levels.md) and [`Expressions`](https://developer.apple.com/documentation/AppStoreConnectAPI/expressions) in App Store Connect API.
+If your rules are too restrictive, consider relaxing the criteria over time using a match rule with an age function. For more information, see [`Finding players with similar skill levels`](finding-players-with-similar-skill-levels.md) and [`Expressions`](https://developer.apple.com/documentation/appstoreconnectapi/expressions) in App Store Connect API.
 
 ##### Keep the Queues Short and Responsive
 
-If you submit too many match requests to one queue, the matchmaking algorithm may struggle to keep up with the requests and fail to find candidate matches, even when they exist in the queue. To avoid this problem, monitor the size of your queue using the [`Get Queue Size`](https://developer.apple.com/documentation/AppStoreConnectAPI/GET-v1-gameCenterMatchmakingQueues-_id_-metrics-matchmakingQueueSizes) endpoint. Pass the queue `id` and pass a `granularity` query parameter.
+If you submit too many match requests to one queue, the matchmaking algorithm may struggle to keep up with the requests and fail to find candidate matches, even when they exist in the queue. To avoid this problem, monitor the size of your queue using the [`Get Queue Size`](https://developer.apple.com/documentation/appstoreconnectapi/get-v1-gamecentermatchmakingqueues-_id_-metrics-matchmakingqueuesizes) endpoint. Pass the queue `id` and pass a `granularity` query parameter.
 
 ```other
 GET /v1/gameCenterMatchmakingQueues/532ad9c0-1a28-4536-ad57-33213bcc0a29/metrics/matchmakingQueueSizes?granularity=PT15M
@@ -79,7 +79,7 @@ GET /v1/gameCenterMatchmakingQueues/532ad9c0-1a28-4536-ad57-33213bcc0a29/metrics
 
 If the algorithm fails to find players as the queue size increases, try adding one or more queues and splitting match requests between them. For best results, keep the number of requests in each queue under 100. For more information, see [`The matchmaking rules algorithm`](matchmaking-rules#The-matchmaking-rules-algorithm.md).
 
-To get the queue `id`, use the [`Create a Queue`](https://developer.apple.com/documentation/AppStoreConnectAPI/POST-v1-gameCenterMatchmakingQueues) endpoint.
+To get the queue `id`, use the [`Create a Queue`](https://developer.apple.com/documentation/appstoreconnectapi/post-v1-gamecentermatchmakingqueues) endpoint.
 
 ## See Also
 

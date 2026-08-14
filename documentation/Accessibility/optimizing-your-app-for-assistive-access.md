@@ -15,9 +15,9 @@ Additionally, you can remove workflows or UI elements that aren’t appropriate 
 
 ##### Create a Streamlined Ui for Assistive Access
 
-Adding the [`UISupportsAssistiveAccess`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/UISupportsAssistiveAccess) key to your project’s Info pane with a value of `YES` indicates your app supports a streamlined experience designed for Assistive Access. It allows your app’s UI to match the prominent style of Assistive Access controls. It also lists your app as Optimized for Assistive Access in Settings, so that a trusted supporter configuring Assistive Access on someone’s behalf knows that your app is optimized for this feature.
+Adding the [`UISupportsAssistiveAccess`](https://developer.apple.com/documentation/bundleresources/information-property-list/uisupportsassistiveaccess) key to your project’s Info pane with a value of `YES` indicates your app supports a streamlined experience designed for Assistive Access. It allows your app’s UI to match the prominent style of Assistive Access controls. It also lists your app as Optimized for Assistive Access in Settings, so that a trusted supporter configuring Assistive Access on someone’s behalf knows that your app is optimized for this feature.
 
-If you add this key to your project’s Info pane, adopt the [`AssistiveAccess`](https://developer.apple.com/documentation/SwiftUI/AssistiveAccess) scene type to provide a streamlined UI for your app when Assistive Access is on. For example, you can define a custom view hierarchy with fewer onscreen elements.
+If you add this key to your project’s Info pane, adopt the [`AssistiveAccess`](https://developer.apple.com/documentation/swiftui/assistiveaccess) scene type to provide a streamlined UI for your app when Assistive Access is on. For example, you can define a custom view hierarchy with fewer onscreen elements.
 
 ```swift
 import SwiftUI
@@ -40,9 +40,9 @@ struct ExampleApp: App {
 
 ##### Opt in to Full Screen Mode for Your Existing Ui
 
-Adding the [`UISupportsFullScreenInAssistiveAccess`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/UISupportsFullScreenInAssistiveAccess) key to your project’s Info pane with a value of `YES` allows your app’s standard UI to expand into all the available space above the Back button in Assistive Access. It also lists your app as Optimized for Assistive Access in Settings, so that a trusted supporter configuring Assistive Access on someone’s behalf knows that your app’s UI is optimized for this feature.
+Adding the [`UISupportsFullScreenInAssistiveAccess`](https://developer.apple.com/documentation/bundleresources/information-property-list/uisupportsfullscreeninassistiveaccess) key to your project’s Info pane with a value of `YES` allows your app’s standard UI to expand into all the available space above the Back button in Assistive Access. It also lists your app as Optimized for Assistive Access in Settings, so that a trusted supporter configuring Assistive Access on someone’s behalf knows that your app’s UI is optimized for this feature.
 
-If you add this key to your project’s Info pane, ensure your UI is adaptive so that it works with flexible screen dimensions. Don’t rely on fixed screen sizes in your app design or logic. Use safe areas and layout guides to avoid overlapping your app’s UI with system UI or hardware elements. For more information, see [`safeAreaInsets`](https://developer.apple.com/documentation/UIKit/UIView/safeAreaInsets) and [`safeAreaLayoutGuide`](https://developer.apple.com/documentation/UIKit/UIView/safeAreaLayoutGuide).
+If you add this key to your project’s Info pane, ensure your UI is adaptive so that it works with flexible screen dimensions. Don’t rely on fixed screen sizes in your app design or logic. Use safe areas and layout guides to avoid overlapping your app’s UI with system UI or hardware elements. For more information, see [`safeAreaInsets`](https://developer.apple.com/documentation/uikit/uiview/safeareainsets) and [`safeAreaLayoutGuide`](https://developer.apple.com/documentation/uikit/uiview/safearealayoutguide).
 
 If you don’t add this key to your project’s Info pane, a trusted supporter can still choose to make your app available in Assistive Access. By default, the system draws apps in a reduced frame to fit them onscreen with the prominent Back button in Assistive Access. This frame matches the dimensions of a smaller iPhone or iPad screen, so you don’t need to make changes to your existing UI for your app to work in Assistive Access.
 
@@ -74,7 +74,7 @@ if AccessibilitySettings.isAssistiveAccessEnabled {
 } 
 ```
 
-For Assistive Access design guidance, read Human Interface Guidelines > [`Accessibility`](https://developer.apple.com/design/Human-Interface-Guidelines/accessibility).
+For Assistive Access design guidance, read Human Interface Guidelines > [`Accessibility`](https://developer.apple.com/design/human-interface-guidelines/accessibility).
 
 ###### Related Reference
 

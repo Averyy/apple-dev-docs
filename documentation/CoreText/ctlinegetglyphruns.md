@@ -22,7 +22,7 @@ func CTLineGetGlyphRuns(_ line: CTLine) -> CFArray
 
 #### Return Value
 
-A [`CFArray`](https://developer.apple.com/documentation/CoreFoundation/CFArray) containing the CTRun objects that make up the line.
+A [`CFArray`](https://developer.apple.com/documentation/corefoundation/cfarray) containing the CTRun objects that make up the line.
 
 ## Parameters
 

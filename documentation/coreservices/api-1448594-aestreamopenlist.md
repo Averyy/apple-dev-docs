@@ -24,7 +24,7 @@ This routine marks the beginning of a sequence of zero or more descriptor defini
 
 ## Parameters
 
-- `ref`: An   containing the stream data.
+- `ref`: An [`AEStreamRef`](aestreamref.md) containing the stream data.
 
 ## See Also
 

@@ -21,11 +21,11 @@ var strings: MLDataColumn<String>? { get }
 
 #### Return Value
 
-A new data column if the underlying type of the column is [`String`](https://developer.apple.com/documentation/Swift/String); otherwise `nil`.
+A new data column if the underlying type of the column is [`String`](https://developer.apple.com/documentation/swift/string); otherwise `nil`.
 
 #### Discussion
 
-This property is functionally equivalent to passing [`String`](https://developer.apple.com/documentation/Swift/String)`.self` to [`column(type:)`](mluntypedcolumn/column(type:).md). Typically you ensure [`type`](mluntypedcolumn/type.md) is equal to [`MLDataValue.ValueType.string`](mldatavalue/valuetype/string.md) before getting this property.
+This property is functionally equivalent to passing [`String`](https://developer.apple.com/documentation/swift/string)`.self` to [`column(type:)`](mluntypedcolumn/column(type:).md). Typically you ensure [`type`](mluntypedcolumn/type.md) is equal to [`MLDataValue.ValueType.string`](mldatavalue/valuetype/string.md) before getting this property.
 
 ## See Also
 

@@ -19,7 +19,7 @@ var repeatCalendar: Calendar? { get set }
 
 #### Discussion
 
-The default value is `nil`, which indicates that the current user calendar is used. (The current user calendar is returned by the [`current`](https://developer.apple.com/documentation/Foundation/NSCalendar/current) class method of `NSCalendar`.)
+The default value is `nil`, which indicates that the current user calendar is used. (The current user calendar is returned by the [`current`](https://developer.apple.com/documentation/foundation/nscalendar/current) class method of `NSCalendar`.)
 
 ## See Also
 

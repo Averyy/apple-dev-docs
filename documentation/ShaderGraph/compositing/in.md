@@ -25,11 +25,11 @@ Outputs areas of foreground that overlap with the alpha of background.
 
 The in node determines its output using the alpha channels of the foreground and background inputs. The RGB component of the output is `F*b` and the alpha component of the output is `f*b`. Visually this means that within the output, the foreground values that overlap with the background alpha are preserved. Below is a simple node graph that uses the In node to blend a tile and rock texture.
 
-![None](https://docs-assets.developer.apple.com/published/339bc485ee3fd52253f3d2f18f3372dd/InGraph.png)
+![None](/images/ShaderGraph-Docs/InGraph.png)
 
 Below are the two original images, the image representation of the alpha of the background, and the resulting blended texture applied to a cube.
 
-![None](https://docs-assets.developer.apple.com/published/a5f6c8440c7e605eff2c54d690b10383/InMaterial.png)
+![None](/images/ShaderGraph-Docs/InMaterial.png)
 
 ## See Also
 

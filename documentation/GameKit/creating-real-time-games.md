@@ -150,7 +150,7 @@ voiceChat.isActive = true
 
 After both players tap the telephone bubble, the state changes to `GKVoiceChat.PlayerState.connected` and they can begin speaking.
 
-The first time the sample starts voice chat, the system displays a dialog asking the player whether the sample may use the microphone. This dialog displays the value of the [`NSMicrophoneUsageDescription`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSMicrophoneUsageDescription) information property list key as the reason for requesting access permission.
+The first time the sample starts voice chat, the system displays a dialog asking the player whether the sample may use the microphone. This dialog displays the value of the [`NSMicrophoneUsageDescription`](https://developer.apple.com/documentation/bundleresources/information-property-list/nsmicrophoneusagedescription) information property list key as the reason for requesting access permission.
 
 When the player taps the telephone bubble again, the `stopVoiceChat()` method stops the voice chat and deactivates the shared audio session.
 
@@ -203,7 +203,7 @@ If the status is `GKFriendsAuthorizationStatus.notDetermined` or `GKFriendsAutho
 let players = try await GKLocalPlayer.local.loadFriends()
 ```
 
-The first time the sample loads the player’s friends, the system displays a dialog asking the player whether the sample may access their friends. This dialog displays the value of the [`NSGKFriendListUsageDescription`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSGKFriendListUsageDescription) information property list key as the reason for requesting access permission.
+The first time the sample loads the player’s friends, the system displays a dialog asking the player whether the sample may access their friends. This dialog displays the value of the [`NSGKFriendListUsageDescription`](https://developer.apple.com/documentation/bundleresources/information-property-list/nsgkfriendlistusagedescription) information property list key as the reason for requesting access permission.
 
 An error occurs if the sample calls [`loadFriends(_:)`](gklocalplayer/loadfriends(_:).md) without permission or without providing a reason using the `NSGKFriendListUsageDescription` key.
 

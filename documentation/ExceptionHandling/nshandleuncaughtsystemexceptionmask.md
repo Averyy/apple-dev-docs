@@ -3,7 +3,7 @@
 **Framework**: Exception Handling  
 **Kind**: var
 
-The exception handler handles uncaught system exceptions by converting them to [`NSException`](https://developer.apple.com/documentation/Foundation/NSException) objects containing a stack trace.
+The exception handler handles uncaught system exceptions by converting them to [`NSException`](https://developer.apple.com/documentation/foundation/nsexception) objects containing a stack trace.
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -26,15 +26,15 @@ var NSHandleUncaughtSystemExceptionMask: Int { get }
 - [var NSLogUncaughtRuntimeErrorMask: Int](nsloguncaughtruntimeerrormask.md)
   The exception handler logs uncaught runtime errors.
 - [var NSHandleUncaughtRuntimeErrorMask: Int](nshandleuncaughtruntimeerrormask.md)
-  The exception handler handles uncaught runtime errors by converting them to [`NSException`](https://developer.apple.com/documentation/Foundation/NSException) objects containing a stack trace.
+  The exception handler handles uncaught runtime errors by converting them to [`NSException`](https://developer.apple.com/documentation/foundation/nsexception) objects containing a stack trace.
 - [var NSLogTopLevelExceptionMask: Int](nslogtoplevelexceptionmask.md)
   The exception handler logs exceptions that would be caught by the top-level handler.
 - [var NSHandleTopLevelExceptionMask: Int](nshandletoplevelexceptionmask.md)
-  The exception handler handles exceptions caught by the top-level handler by converting them to [`NSException`](https://developer.apple.com/documentation/Foundation/NSException) objects containing a stack trace.
+  The exception handler handles exceptions caught by the top-level handler by converting them to [`NSException`](https://developer.apple.com/documentation/foundation/nsexception) objects containing a stack trace.
 - [var NSLogOtherExceptionMask: Int](nslogotherexceptionmask.md)
   The exception handler logs exceptions caught by handlers lower than the top-level handler.
 - [var NSHandleOtherExceptionMask: Int](nshandleotherexceptionmask.md)
-  The exception handler handles exceptions caught by handlers lower than the top-level handler by converting them to [`NSException`](https://developer.apple.com/documentation/Foundation/NSException) objects containing a stack trace.
+  The exception handler handles exceptions caught by handlers lower than the top-level handler by converting them to [`NSException`](https://developer.apple.com/documentation/foundation/nsexception) objects containing a stack trace.
 
 
 ---

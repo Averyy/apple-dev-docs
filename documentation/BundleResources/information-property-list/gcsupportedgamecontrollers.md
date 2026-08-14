@@ -20,10 +20,10 @@ The types of game controller profiles that the app supports or requires.
 
 The dictionary keys are `ProfileName` and the possible game controller values are:
 
-- **`ExtendedGamepad`**: The extended set of gamepad controls. See [`GCExtendedGamepad`](https://developer.apple.com/documentation/GameController/GCExtendedGamepad).
+- **`ExtendedGamepad`**: The extended set of gamepad controls. See [`GCExtendedGamepad`](https://developer.apple.com/documentation/gamecontroller/gcextendedgamepad).
 - **`SpatialGamepad`**: The set of spatial gamepad controls.
-- **`MicroGamepad`**: The 1st Generation Siri Remote. See [`GCMicroGamepad`](https://developer.apple.com/documentation/GameController/GCMicroGamepad).
-- **`DirectionalGamepad`**: The 2nd Generation Siri Remote. A directional pad without motion or rotation. See [`GCDirectionalGamepad`](https://developer.apple.com/documentation/GameController/GCDirectionalGamepad). Available in iOS 14.3+, macOS 11.1+, Mac Catalyst 14.3+, and tvOS 14.3+.
+- **`MicroGamepad`**: The 1st Generation Siri Remote. See [`GCMicroGamepad`](https://developer.apple.com/documentation/gamecontroller/gcmicrogamepad).
+- **`DirectionalGamepad`**: The 2nd Generation Siri Remote. A directional pad without motion or rotation. See [`GCDirectionalGamepad`](https://developer.apple.com/documentation/gamecontroller/gcdirectionalgamepad). Available in iOS 14.3+, macOS 11.1+, Mac Catalyst 14.3+, and tvOS 14.3+.
 
 ## Properties
 

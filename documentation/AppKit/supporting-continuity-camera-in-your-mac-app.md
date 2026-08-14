@@ -12,7 +12,7 @@ If your app works with images, this feature can be a convenient way to get image
 
 Apps using `NSTextView` get Continuity Camera support automatically. When the user Control-clicks in an app’s text view, a Continuity Camera menu item appears. The user can then capture a photo or scan a document on their iPhone or iPad, and it automatically appears in the text view. The image is then accessible as an attachment in the `NSTextView` text storage object.
 
-![A screenshot showing a text view where the user Control-clicks to display the Continuity Camera dialog for taking a photo with an iOS device. The dialog shows the name of the iOS device and a Cancel button to allow the user to dismiss the dialog without taking a photo.](https://docs-assets.developer.apple.com/published/59306d29d65bae59ff9f0bc4871cc13c/media-3993602%402x.png)
+![A screenshot showing a text view where the user Control-clicks to display the Continuity Camera dialog for taking a photo with an iOS device. The dialog shows the name of the iOS device and a Cancel button to allow the user to dismiss the dialog without taking a photo.](/images/com.apple.appkit/media-3993602@2x.png)
 
 If you’re not using `NSTextView`, you need to add support to your macOS interface to enable Continuity Camera, and to merge photos taken from the user’s iOS device.
 
@@ -69,7 +69,7 @@ To add a Continuity Camera menu item to one of your app’s menu bar menus, loca
 
 Here’s how it looks:
 
-![A screenshot of a storyboard for an app’s menus, showing the settings that the preceding steps describe.](https://docs-assets.developer.apple.com/published/9d530057f1aab0d4fa901cec894c403b/media-3150811%402x.png)
+![A screenshot of a storyboard for an app’s menus, showing the settings that the preceding steps describe.](/images/com.apple.appkit/media-3150811@2x.png)
 
 If your app doesn’t use a storyboard, you can programmatically add the menu item by following these steps:
 

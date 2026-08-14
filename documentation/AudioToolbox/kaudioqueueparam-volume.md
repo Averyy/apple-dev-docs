@@ -23,7 +23,7 @@ var kAudioQueueParam_Volume: AudioQueueParameterID { get }
 
 Use this property to control an audio queue’s volume relative to other audio output.
 
-To provide UI in iOS for adjusting system audio playback volume, use the [`MPVolumeView`](https://developer.apple.com/documentation/MediaPlayer/MPVolumeView) class, which provides media playback controls that iOS users expect and whose appearance you can customize.
+To provide UI in iOS for adjusting system audio playback volume, use the [`MPVolumeView`](https://developer.apple.com/documentation/mediaplayer/mpvolumeview) class, which provides media playback controls that iOS users expect and whose appearance you can customize.
 
 ## See Also
 

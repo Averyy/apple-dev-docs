@@ -23,7 +23,7 @@ var format: MTLVertexFormat
 
 When reading from a geometry modifier or surface shader, the value converts to its runtime representation using Metal’s standard rules.
 
-For details about Metal’s standard rules, see [`format`](https://developer.apple.com/documentation/Metal/MTLVertexAttributeDescriptor/format).
+For details about Metal’s standard rules, see [`format`](https://developer.apple.com/documentation/metal/mtlvertexattributedescriptor/format).
 
 ## See Also
 

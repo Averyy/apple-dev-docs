@@ -30,9 +30,9 @@ The system picks the appropriate typeface for the current context so your text l
 
 Each app-builder framework defines how you apply the system font to your text:
 
-- In SwiftUI, retrieve the system font from the [`Font`](https://developer.apple.com/documentation/SwiftUI/Font) type.
-- In UIKit, retrieve the system font using the methods of the [`UIFont`](https://developer.apple.com/documentation/UIKit/UIFont) type, or build it from a [`UIFontDescriptor`](https://developer.apple.com/documentation/UIKit/UIFontDescriptor).
-- In AppKit, retrieve the system font using the methods of the [`NSFont`](https://developer.apple.com/documentation/AppKit/NSFont) type, or build it from an [`NSFontDescriptor`](https://developer.apple.com/documentation/AppKit/NSFontDescriptor).
+- In SwiftUI, retrieve the system font from the [`Font`](https://developer.apple.com/documentation/swiftui/font) type.
+- In UIKit, retrieve the system font using the methods of the [`UIFont`](https://developer.apple.com/documentation/uikit/uifont) type, or build it from a [`UIFontDescriptor`](https://developer.apple.com/documentation/uikit/uifontdescriptor).
+- In AppKit, retrieve the system font using the methods of the [`NSFont`](https://developer.apple.com/documentation/appkit/nsfont) type, or build it from an [`NSFontDescriptor`](https://developer.apple.com/documentation/appkit/nsfontdescriptor).
 - In WebKit, set the CSS `font-family` to one of the generic system identifiers: `system-ui`, `ui-sans-serif`, `ui-serif`, `ui-monospace`, or `ui-rounded`.
 
 The following example applies system fonts to text using a text style and a fixed size:
@@ -73,14 +73,14 @@ textField.font = NSFont(descriptor: descriptor, size: 0)
 textField.font = NSFont.systemFont(ofSize: 13, weight: .semibold)
 ```
 
-The [`Font.Design`](https://developer.apple.com/documentation/SwiftUI/Font/Design) type has four cases that each select a different family of typefaces:
+The [`Font.Design`](https://developer.apple.com/documentation/swiftui/font/design) type has four cases that each select a different family of typefaces:
 
 | Case | Typeface family |
 | --- | --- |
-| [`Font.Design.default`](https://developer.apple.com/documentation/SwiftUI/Font/Design/default) | SF Pro (Display and Text); SF Compact in watchOS; and the language-specific designs for matching scripts |
-| [`Font.Design.monospaced`](https://developer.apple.com/documentation/SwiftUI/Font/Design/monospaced) | SF Mono |
-| [`Font.Design.rounded`](https://developer.apple.com/documentation/SwiftUI/Font/Design/rounded) | SF Pro Rounded; SF Compact Rounded in watchOS |
-| [`Font.Design.serif`](https://developer.apple.com/documentation/SwiftUI/Font/Design/serif) | New York |
+| [`Font.Design.default`](https://developer.apple.com/documentation/swiftui/font/design/default) | SF Pro (Display and Text); SF Compact in watchOS; and the language-specific designs for matching scripts |
+| [`Font.Design.monospaced`](https://developer.apple.com/documentation/swiftui/font/design/monospaced) | SF Mono |
+| [`Font.Design.rounded`](https://developer.apple.com/documentation/swiftui/font/design/rounded) | SF Pro Rounded; SF Compact Rounded in watchOS |
+| [`Font.Design.serif`](https://developer.apple.com/documentation/swiftui/font/design/serif) | New York |
 
 The system provides dedicated APIs for retrieving system fonts, and those APIs ensure you receive a font that adapts correctly to different situations. If you retrieve system fonts by name, you receive a font with the same appearance but lose many of the dynamic properties that make system fonts so useful. For example, the font might not display correctly in all languages, or have different spacing or hyphenation.
 
@@ -90,15 +90,15 @@ The system provides dedicated APIs for retrieving system fonts, and those APIs e
 
 Apple platforms ship with a large collection of document fonts — typefaces people choose for their own content, such as documents, messages, and layouts. Retrieve a document font by its PostScript name using the same font APIs your app uses for the system font:
 
-- In UIKit and AppKit, use [`init(name:size:)`](https://developer.apple.com/documentation/UIKit/UIFont/init(name:size:)) or [`init(name:size:)`](https://developer.apple.com/documentation/AppKit/NSFont/init(name:size:)) to create a font from a name and size. For finer control over font traits and selection, use [`UIFontDescriptor`](https://developer.apple.com/documentation/UIKit/UIFontDescriptor) or [`NSFontDescriptor`](https://developer.apple.com/documentation/AppKit/NSFontDescriptor).
-- In SwiftUI, use [`custom(_:fixedSize:)`](https://developer.apple.com/documentation/SwiftUI/Font/custom(_:fixedSize:)) or one of the related custom font initializers.
+- In UIKit and AppKit, use [`init(name:size:)`](https://developer.apple.com/documentation/uikit/uifont/init(name:size:)) or [`init(name:size:)`](https://developer.apple.com/documentation/appkit/nsfont/init(name:size:)) to create a font from a name and size. For finer control over font traits and selection, use [`UIFontDescriptor`](https://developer.apple.com/documentation/uikit/uifontdescriptor) or [`NSFontDescriptor`](https://developer.apple.com/documentation/appkit/nsfontdescriptor).
+- In SwiftUI, use [`custom(_:fixedSize:)`](https://developer.apple.com/documentation/swiftui/font/custom(_:fixedsize:)) or one of the related custom font initializers.
 - In WebKit, include the desired font name as the first entry in the CSS `font-family` list.
 
 The set of pre-installed document fonts varies by platform: macOS ships the full collection, while iOS, iPadOS, and visionOS pre-install a smaller set. The complete list is available at [`System Fonts`](https://developer.apple.comhttps://developer.apple.com/fonts/system-fonts/), and people can install the rest through Font Book in macOS or the Fonts settings in iOS.
 
 #### Download Additional Fonts on Demand
 
-Some fonts in Apple’s document font library don’t come installed by default, but you can download them on demand. These are the same Apple-provided fonts listed at [`System Fonts`](https://developer.apple.comhttps://developer.apple.com/fonts/system-fonts/) — you identify them by PostScript name. To make one available to your app, create a font descriptor for it and pass it to the font matching APIs in [`Core Text`](https://developer.apple.com/documentation/CoreText). After the download completes, the font behaves like any other installed font, and you can retrieve it by name. Downloadable fonts aren’t supported in watchOS or tvOS.
+Some fonts in Apple’s document font library don’t come installed by default, but you can download them on demand. These are the same Apple-provided fonts listed at [`System Fonts`](https://developer.apple.comhttps://developer.apple.com/fonts/system-fonts/) — you identify them by PostScript name. To make one available to your app, create a font descriptor for it and pass it to the font matching APIs in [`Core Text`](https://developer.apple.com/documentation/coretext). After the download completes, the font behaves like any other installed font, and you can retrieve it by name. Downloadable fonts aren’t supported in watchOS or tvOS.
 
 > ❗ **Important**: To use or enumerate downloaded fonts in iOS, your app must add the Fonts capability with the Use Installed Fonts option enabled. See [`Add the Fonts capability for iOS`](https://developer.apple.com#Add-the-Fonts-capability-for-iOS) for details.
 
@@ -117,13 +117,13 @@ CTFontDescriptorMatchFontDescriptorsWithProgressHandler([descriptor] as CFArray,
 }
 ```
 
-Don’t call [`CTFontManagerRegisterFontURLs(_:_:_:_:)`](https://developer.apple.com/documentation/CoreText/CTFontManagerRegisterFontURLs(_:_:_:_:)) on fonts you download using [`CTFontDescriptorMatchFontDescriptorsWithProgressHandler(_:_:_:)`](https://developer.apple.com/documentation/CoreText/CTFontDescriptorMatchFontDescriptorsWithProgressHandler(_:_:_:)). Apple document fonts are system-managed, and after the download completes they’re available by PostScript name automatically. Use [`CTFontManagerRegisterFontURLs(_:_:_:_:)`](https://developer.apple.com/documentation/CoreText/CTFontManagerRegisterFontURLs(_:_:_:_:)) only for fonts you own and bundle with your app.
+Don’t call [`CTFontManagerRegisterFontURLs(_:_:_:_:)`](https://developer.apple.com/documentation/coretext/ctfontmanagerregisterfonturls(_:_:_:_:)) on fonts you download using [`CTFontDescriptorMatchFontDescriptorsWithProgressHandler(_:_:_:)`](https://developer.apple.com/documentation/coretext/ctfontdescriptormatchfontdescriptorswithprogresshandler(_:_:_:)). Apple document fonts are system-managed, and after the download completes they’re available by PostScript name automatically. Use [`CTFontManagerRegisterFontURLs(_:_:_:_:)`](https://developer.apple.com/documentation/coretext/ctfontmanagerregisterfonturls(_:_:_:_:)) only for fonts you own and bundle with your app.
 
 #### Bundle a Custom Font with Your App
 
 When the system and document fonts don’t include the typeface your design calls for, such as a brand-specific font your team licensed, bundle the font with your app. Bundled fonts live alongside your app’s other resources and are available only within the process that registers them. Other apps can’t see or use them.
 
-Place your font files in your app’s bundle, an asset catalog, or an Apple-hosted asset pack, and register them at launch as described in [`Applying custom fonts to text`](https://developer.apple.com/documentation/SwiftUI/Applying-Custom-Fonts-to-Text) for SwiftUI or [`Adding a custom font to your app`](https://developer.apple.com/documentation/UIKit/adding-a-custom-font-to-your-app) for UIKit. After registration, you retrieve a bundled font by its PostScript name using the standard font APIs, and the font appears in system-provided pickers like the macOS Font Panel and [`UIFontPickerViewController`](https://developer.apple.com/documentation/UIKit/UIFontPickerViewController) in iOS.
+Place your font files in your app’s bundle, an asset catalog, or an Apple-hosted asset pack, and register them at launch as described in [`Applying custom fonts to text`](https://developer.apple.com/documentation/swiftui/applying-custom-fonts-to-text) for SwiftUI or [`Adding a custom font to your app`](https://developer.apple.com/documentation/uikit/adding-a-custom-font-to-your-app) for UIKit. After registration, you retrieve a bundled font by its PostScript name using the standard font APIs, and the font appears in system-provided pickers like the macOS Font Panel and [`UIFontPickerViewController`](https://developer.apple.com/documentation/uikit/uifontpickerviewcontroller) in iOS.
 
 To register a bundled font manually, use the font manager in Core Text at launch time, and pass the font file URL with `.process` scope. If your app downloads fonts itself, register them as soon as the download finishes. In macOS, you can also install a font your app downloads itself at the system level, as described in [`Install fonts for systemwide use`](https://developer.apple.com#Install-fonts-for-systemwide-use); that option isn’t available in iOS or visionOS.
 
@@ -136,7 +136,7 @@ if let fontURL = Bundle.main.url(forResource: "MyFont-Regular", withExtension: "
 }
 ```
 
-Registration makes your bundled fonts visible in system font managers and pickers like the macOS Font Panel and [`UIFontPickerViewController`](https://developer.apple.com/documentation/UIKit/UIFontPickerViewController). If you want a font available to your app but not visible in those interfaces — for example, a font used internally for rendering — create a font descriptor directly from the file without registering it:
+Registration makes your bundled fonts visible in system font managers and pickers like the macOS Font Panel and [`UIFontPickerViewController`](https://developer.apple.com/documentation/uikit/uifontpickerviewcontroller). If you want a font available to your app but not visible in those interfaces — for example, a font used internally for rendering — create a font descriptor directly from the file without registering it:
 
 ```swift
 // From a file URL:
@@ -155,7 +155,7 @@ if let fontData = NSDataAsset(name: "MyFont")?.data {
 }
 ```
 
-Both functions return an array of [`CTFontDescriptor`](https://developer.apple.com/documentation/CoreText/CTFontDescriptor) objects you can use to construct fonts.
+Both functions return an array of [`CTFontDescriptor`](https://developer.apple.com/documentation/coretext/ctfontdescriptor) objects you can use to construct fonts.
 
 #### Share a Bundled Font with Your Widget Extension
 
@@ -195,7 +195,7 @@ You can install a custom font at the system level to make it available to other,
 
 > 💡 **Tip**: To share a bundled font with your own widget extension, you don’t need to install it systemwide. See [`Share a bundled font with your widget extension`](https://developer.apple.com#Share-a-bundled-font-with-your-widget-extension) instead.
 
-Use the same Core Text registration API your app uses for bundled fonts, but change the scope from [`CTFontManagerScope.process`](https://developer.apple.com/documentation/CoreText/CTFontManagerScope/process) to [`CTFontManagerScope.persistent`](https://developer.apple.com/documentation/CoreText/CTFontManagerScope/persistent):
+Use the same Core Text registration API your app uses for bundled fonts, but change the scope from [`CTFontManagerScope.process`](https://developer.apple.com/documentation/coretext/ctfontmanagerscope/process) to [`CTFontManagerScope.persistent`](https://developer.apple.com/documentation/coretext/ctfontmanagerscope/persistent):
 
 ```swift
 public func CTFontManagerRegisterFontURLs(
@@ -209,11 +209,11 @@ Call this from your app at an appropriate time, such as when a person enables a 
 
 #### Add the Fonts Capability for Ios
 
-To add this capability to your app, follow the steps in [`Configuring custom fonts`](https://developer.apple.com/documentation/Xcode/configuring-custom-fonts). Declaring it lets the system mediate your app’s access to installed fonts.
+To add this capability to your app, follow the steps in [`Configuring custom fonts`](https://developer.apple.com/documentation/xcode/configuring-custom-fonts). Declaring it lets the system mediate your app’s access to installed fonts.
 
-To let someone select an installed font, present a [`UIFontPickerViewController`](https://developer.apple.com/documentation/UIKit/UIFontPickerViewController) in iOS. The picker displays a system-provided interface, so your app never sees the complete list of fonts installed on the device, only the font the person selects. This protects the person’s privacy by keeping your app from using the full list of installed fonts to fingerprint their device.
+To let someone select an installed font, present a [`UIFontPickerViewController`](https://developer.apple.com/documentation/uikit/uifontpickerviewcontroller) in iOS. The picker displays a system-provided interface, so your app never sees the complete list of fonts installed on the device, only the font the person selects. This protects the person’s privacy by keeping your app from using the full list of installed fonts to fingerprint their device.
 
-If [`UIFontPickerViewController`](https://developer.apple.com/documentation/UIKit/UIFontPickerViewController) doesn’t fit your app’s needs, you can request the [`Font Enumeration entitlement`](https://developer.apple.comhttps://developer.apple.com/contact/request/font-enumeration/) from Apple. The request requires a justification describing why the picker is insufficient and how your app avoids using the broader access — the ability to enumerate every installed font — to fingerprint or track the person, and limits it to the font-selection features your app actually needs.
+If [`UIFontPickerViewController`](https://developer.apple.com/documentation/uikit/uifontpickerviewcontroller) doesn’t fit your app’s needs, you can request the [`Font Enumeration entitlement`](https://developer.apple.comhttps://developer.apple.com/contact/request/font-enumeration/) from Apple. The request requires a justification describing why the picker is insufficient and how your app avoids using the broader access — the ability to enumerate every installed font — to fingerprint or track the person, and limits it to the font-selection features your app actually needs.
 
 #### Access Fonts From Third Party and Low Level Frameworks
 

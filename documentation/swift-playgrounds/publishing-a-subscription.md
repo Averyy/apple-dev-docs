@@ -20,7 +20,7 @@ You store a subscription’s playgrounds (zipped `.playgroundbook` files) as wel
 
 Some web hosts have a file upload facility that lets you drag and drop a hierarchy of directories and files from your local filesystem. When writing the JSON for a feed, it can be helpful to compare the structure of your feed’s files with the structure of the URLs in the feed.
 
-![A diagram that shows a directory layout of all of the resources—such as images and zipped books—used by the example feed JSON.](https://docs-assets.developer.apple.com/published/fcd45ad03e3672c55e2a3e1b982d2445/publishing-subscriptions-1%402x.png)
+![A diagram that shows a directory layout of all of the resources—such as images and zipped books—used by the example feed JSON.](/images/com.apple.Swift-Playgrounds/publishing-subscriptions-1@2x.png)
 
 ##### Publish Your Subscription on the Web
 

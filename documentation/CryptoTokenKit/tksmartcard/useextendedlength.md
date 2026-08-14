@@ -22,7 +22,7 @@ var useExtendedLength: Bool { get set }
 
 #### Discussion
 
-By default, this property is set to [`true`](https://developer.apple.com/documentation/Swift/true) when the Smart Card slot supports transmitting extended length commands, and the ATR announces that extended length APDU is supported.
+By default, this property is set to [`true`](https://developer.apple.com/documentation/swift/true) when the Smart Card slot supports transmitting extended length commands, and the ATR announces that extended length APDU is supported.
 
 ## See Also
 

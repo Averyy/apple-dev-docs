@@ -34,7 +34,7 @@ Chart(data) {
 }
 ```
 
-![Horizontal bar chart with x-axis showing start and end time. It has 5 bars, Task 1 range 0 to 5, range 10 to 20, range 25 to 40, range 45 to 65, and range 70-95.](https://docs-assets.developer.apple.com/published/bd883356139b55d3a3236e5a3cfa659b/BarMarkSwift.BarMarkHorizontal1DIntervalBarChart%402x.png)
+![Horizontal bar chart with x-axis showing start and end time. It has 5 bars, Task 1 range 0 to 5, range 10 to 20, range 25 to 40, range 45 to 65, and range 70-95.](/images/com.apple.Charts/BarMarkSwift.BarMarkHorizontal1DIntervalBarChart@2x.png)
 
 ## Parameters
 

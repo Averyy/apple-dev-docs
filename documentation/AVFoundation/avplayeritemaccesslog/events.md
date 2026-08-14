@@ -24,7 +24,7 @@ var events: [AVPlayerItemAccessLogEvent] { get }
 
 The array contains [`AVPlayerItemAccessLogEvent`](avplayeritemaccesslogevent.md) objects that represent the chronological sequence of events contained in the access log.
 
-This property isn’t observable. For more information about key-value observing, see [`Using Key-Value Observing in Swift`](https://developer.apple.com/documentation/Swift/using-key-value-observing-in-swift).
+This property isn’t observable. For more information about key-value observing, see [`Using Key-Value Observing in Swift`](https://developer.apple.com/documentation/swift/using-key-value-observing-in-swift).
 
 ## See Also
 

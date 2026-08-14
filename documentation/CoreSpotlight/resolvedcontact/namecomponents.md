@@ -20,7 +20,7 @@ var nameComponents: [PersonNameComponents]
 
 #### Discussion
 
-Specify each distinct name as a separate [`PersonNameComponents`](https://developer.apple.com/documentation/Foundation/PersonNameComponents) type in the array.
+Specify each distinct name as a separate [`PersonNameComponents`](https://developer.apple.com/documentation/foundation/personnamecomponents) type in the array.
 
 ## See Also
 

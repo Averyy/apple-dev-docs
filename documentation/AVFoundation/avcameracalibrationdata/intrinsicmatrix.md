@@ -23,7 +23,7 @@ var intrinsicMatrix: matrix_float3x3 { get }
 
 The intrinsic matrix allows you to transform 3D coordinates to 2D coordinates on an image plane using the pinhole camera model. Equations like the following commonly represent the intrinsic matrix as `K:`
 
-![A mathematical equation for the intrinsic matrix. K equals a three-by-three matrix that corresponds to specific pixel values.](https://docs-assets.developer.apple.com/published/7adeafef37b5dd42a6844f0cb5194be2/media-2902623%402x.png)
+![A mathematical equation for the intrinsic matrix. K equals a three-by-three matrix that corresponds to specific pixel values.](/images/com.apple.avfoundation/media-2902623@2x.png)
 
 The equation expresses all values in pixels. The values `fx` and `fy` are the pixel focal length, and are identical for square pixels. The `ox` and `oy` values are the offsets of the principal point, from the top-left corner of the image frame. The principal point is relative to the top-left corner of the top-left pixel. Each pixel value represents a sampled value from the center of that pixel.
 

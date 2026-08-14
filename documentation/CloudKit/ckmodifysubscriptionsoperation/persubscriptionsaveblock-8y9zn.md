@@ -25,7 +25,7 @@ var perSubscriptionSaveBlock: ((CKSubscription.ID, Result<CKSubscription, any Er
 This property is a closure that returns no value and has the following parameters:
 
 - The ID of the subscription that CloudKit saves.
-- A [`Result`](https://developer.apple.com/documentation/Swift/Result) that contains either - The subscription that CloudKit saves
+- A [`Result`](https://developer.apple.com/documentation/swift/result) that contains either - The subscription that CloudKit saves
 - An error that provides information about a failure saving the subscription.
 
 The closure executes once for each subscription in the [`subscriptionsToSave`](ckmodifysubscriptionsoperation/subscriptionstosave.md) property. Each time the closure executes, it executes serially with respect to the other subscription completion blocks of the operation.

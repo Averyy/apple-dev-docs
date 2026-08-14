@@ -17,7 +17,7 @@ func setSelectionIndexes(_ indexes: IndexSet!, byExtendingSelection extendSelect
 ## Parameters
 
 - `indexes`: The indexes of the cells you want to select.
-- `extendSelection`: A `BOOL` value that specifies whether to extend the current selection. Pass [`true`](https://developer.apple.com/documentation/Swift/true) to extends the selection; [`false`](https://developer.apple.com/documentation/Swift/false) replaces the current selection.
+- `extendSelection`: A `BOOL` value that specifies whether to extend the current selection. Pass [`true`](https://developer.apple.com/documentation/swift/true) to extends the selection; [`false`](https://developer.apple.com/documentation/swift/false) replaces the current selection.
 
 ## See Also
 

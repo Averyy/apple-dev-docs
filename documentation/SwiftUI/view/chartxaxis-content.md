@@ -84,7 +84,7 @@ Chart(BatteryData.data, id: \.date) {
 
 The above example above customizes the x-axis using two `AxisMarks` declarations. The first creates a grid line for every hour in the day. The second adds a tick and label for every six hours in the day, with a second line showing the date for the very beginning of the axis.
 
-> **Note**: To add an axis label, use one of the label modifiers, like [`chartXAxisLabel(position:alignment:spacing:content:)`](View/chartXAxisLabel(position:alignment:spacing:content:).md).
+> **Note**: To add an axis label, use one of the label modifiers, like [`chartXAxisLabel(position:alignment:spacing:content:)`](view/chartxaxislabel(position:alignment:spacing:content:).md).
 
 ## Parameters
 

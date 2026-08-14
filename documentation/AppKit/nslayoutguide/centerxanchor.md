@@ -16,7 +16,7 @@ var centerXAnchor: NSLayoutXAxisAnchor { get }
 
 #### Discussion
 
-Use this anchor to create constraints with the layout guide’s horizontal center. You can combine this anchor only with other [`NSLayoutXAxisAnchor`](https://developer.apple.com/documentation/UIKit/NSLayoutXAxisAnchor) anchors. For more information, see [`NSLayoutAnchor`](https://developer.apple.com/documentation/UIKit/NSLayoutAnchor).
+Use this anchor to create constraints with the layout guide’s horizontal center. You can combine this anchor only with other [`NSLayoutXAxisAnchor`](https://developer.apple.com/documentation/uikit/nslayoutxaxisanchor) anchors. For more information, see [`NSLayoutAnchor`](https://developer.apple.com/documentation/uikit/nslayoutanchor).
 
 ## See Also
 

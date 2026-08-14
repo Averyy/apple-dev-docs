@@ -36,7 +36,7 @@ SpriteKit is supported in iOS, macOS, tvOS, and watchOS, and it integrates well 
   A view subclass that renders a SpriteKit scene.
 - [class SKRenderer](skrenderer.md)
   An object that renders a scene into a custom Metal rendering pipeline and drives the scene update cycle.
-- [class WKInterfaceSKScene](../WatchKit/WKInterfaceSKScene.md)
+- [class WKInterfaceSKScene](../watchkit/wkinterfaceskscene.md)
   A visual WatchKit element that displays a SpriteKit scene.
 ### Textures
 - [Maximizing Texture Performance](maximizing-texture-performance.md)

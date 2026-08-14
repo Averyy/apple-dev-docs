@@ -26,7 +26,7 @@ This is both an override point and a useful method to call. In a custom segment 
 
 ## Parameters
 
-- `segment`: The index of the segment whose background style you want to get. This method raises an exception ([`rangeException`](https://developer.apple.com/documentation/Foundation/NSExceptionName/rangeException)) if the index is out of bounds..
+- `segment`: The index of the segment whose background style you want to get. This method raises an exception ([`rangeException`](https://developer.apple.com/documentation/foundation/nsexceptionname/rangeexception)) if the index is out of bounds..
 
 ## See Also
 

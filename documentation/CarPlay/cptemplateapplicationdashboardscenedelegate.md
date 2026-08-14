@@ -20,7 +20,7 @@ protocol CPTemplateApplicationDashboardSceneDelegate : UISceneDelegate
 
 This protocol defines methods that CarPlay calls when the scene connects and disconnects, and your implementation provides the appropriate behavior when these events occur. For example, setting the window’s root view controller when CarPlay connects your navigation app’s dashboard scene.
 
-You don’t create instances of your dashboard scene delegate directly. Instead, you specify the name of the class as part of the CarPlay scene configuration you add to your `Info.plist` file—see the example below—or that you return from your app delegate’s [`application(_:configurationForConnecting:options:)`](https://developer.apple.com/documentation/UIKit/UIApplicationDelegate/application(_:configurationForConnecting:options:)) method.
+You don’t create instances of your dashboard scene delegate directly. Instead, you specify the name of the class as part of the CarPlay scene configuration you add to your `Info.plist` file—see the example below—or that you return from your app delegate’s [`application(_:configurationForConnecting:options:)`](https://developer.apple.com/documentation/uikit/uiapplicationdelegate/application(_:configurationforconnecting:options:)) method.
 
 ```plist
 <key>CPTemplateApplicationDashboardSceneSessionRoleApplication</key>
@@ -48,8 +48,8 @@ You don’t create instances of your dashboard scene delegate directly. Instead,
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [UISceneDelegate](../UIKit/UISceneDelegate.md)
+- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [UISceneDelegate](../uikit/uiscenedelegate.md)
 
 ## See Also
 

@@ -33,9 +33,9 @@ There’s no need to invoke `super`’s implementation.
 
 ##### Special Considerations
 
-A return value of `nil` indicates an error condition. To avoid generating an exception, you must return a value from this method. If it isn’t always the case that there will be additional content, you should return a sentinel value (for example, an [`NSNull`](https://developer.apple.com/documentation/Foundation/NSNull) instance) that you check for in [`writeAdditionalContent(_:to:originalContentsURL:)`](uimanageddocument/writeadditionalcontent(_:to:originalcontentsurl:).md).
+A return value of `nil` indicates an error condition. To avoid generating an exception, you must return a value from this method. If it isn’t always the case that there will be additional content, you should return a sentinel value (for example, an [`NSNull`](https://developer.apple.com/documentation/foundation/nsnull) instance) that you check for in [`writeAdditionalContent(_:to:originalContentsURL:)`](uimanageddocument/writeadditionalcontent(_:to:originalcontentsurl:).md).
 
-The object returned from this method is passed to [`writeAdditionalContent(_:to:originalContentsURL:)`](uimanageddocument/writeadditionalcontent(_:to:originalcontentsurl:).md). Because [`writeAdditionalContent(_:to:originalContentsURL:)`](uimanageddocument/writeadditionalcontent(_:to:originalcontentsurl:).md) is executed on a different thread, you must ensure that the object you return is thread-safe. For example, you might return an [`NSData`](https://developer.apple.com/documentation/Foundation/NSData) object containing an archive of the state you want to capture.
+The object returned from this method is passed to [`writeAdditionalContent(_:to:originalContentsURL:)`](uimanageddocument/writeadditionalcontent(_:to:originalcontentsurl:).md). Because [`writeAdditionalContent(_:to:originalContentsURL:)`](uimanageddocument/writeadditionalcontent(_:to:originalcontentsurl:).md) is executed on a different thread, you must ensure that the object you return is thread-safe. For example, you might return an [`NSData`](https://developer.apple.com/documentation/foundation/nsdata) object containing an archive of the state you want to capture.
 
 Additional content isn’t supported on iCloud.
 

@@ -26,8 +26,8 @@ After calling this function, you should call the function [`PMSessionValidatePri
 
 ## Parameters
 
-- `data`: The data representation of a print settings object. The data representation must have been previously created with the function  .
-- `printSettings`: A pointer to your   variable. On return, the variable refers to a new print settings object that contains the printing information stored in the specified data object. You are responsible for releasing the print settings object with the function  .
+- `data`: The data representation of a print settings object. The data representation must have been previously created with the function [`PMPrintSettingsCreateDataRepresentation(_:_:_:)`](1464570-pmprintsettingscreatedatareprese.md).
+- `printSettings`: A pointer to your [`PMPrintSettings`](pmprintsettings.md) variable. On return, the variable refers to a new print settings object that contains the printing information stored in the specified data object. You are responsible for releasing the print settings object with the function [`PMRelease(_:)`](1461402-pmrelease.md).
 
 ## See Also
 

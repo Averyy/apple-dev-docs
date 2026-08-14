@@ -24,7 +24,7 @@ Because this method searches for duplicate items, it should not be used if you a
 
 ## Parameters
 
-- `itemTitles`: An array of [`NSString`](https://developer.apple.com/documentation/Foundation/NSString) objects containing the titles of the items you want to add. Each string in the array should be unique. If an item with the same title already exists in the menu, the existing item is removed and the new one is added.
+- `itemTitles`: An array of [`NSString`](https://developer.apple.com/documentation/foundation/nsstring) objects containing the titles of the items you want to add. Each string in the array should be unique. If an item with the same title already exists in the menu, the existing item is removed and the new one is added.
 
 ## See Also
 

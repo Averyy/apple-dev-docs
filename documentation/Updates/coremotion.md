@@ -6,23 +6,23 @@ Learn about important changes to Core Motion.
 
 #### Overview
 
-Browse notable changes in [`Core Motion`](https://developer.apple.com/documentation/CoreMotion).
+Browse notable changes in [`Core Motion`](https://developer.apple.com/documentation/coremotion).
 
 #### September 2024
 
-- Apple Watch Series 10 supports the Shallow Depth and Pressure capability. Use [`CMWaterSubmersionManager`](https://developer.apple.com/documentation/CoreMotion/CMWaterSubmersionManager) to start a shallow dive session.
+- Apple Watch Series 10 supports the Shallow Depth and Pressure capability. Use [`CMWaterSubmersionManager`](https://developer.apple.com/documentation/coremotion/cmwatersubmersionmanager) to start a shallow dive session.
 
 #### June 2024
 
-- Use the [`CMHeadphoneActivityManager`](https://developer.apple.com/documentation/CoreMotion/CMHeadphoneActivityManager) class to access motion activity from connected headphones.
-- Enable connect or disconnect monitoring outside of a motion session with the [`CMHeadphoneMotionManager`](https://developer.apple.com/documentation/CoreMotion/CMHeadphoneMotionManager) class. You can also use `CMHeadphoneMotionManager` to support AirPods device motion data on watchOS.
+- Use the [`CMHeadphoneActivityManager`](https://developer.apple.com/documentation/coremotion/cmheadphoneactivitymanager) class to access motion activity from connected headphones.
+- Enable connect or disconnect monitoring outside of a motion session with the [`CMHeadphoneMotionManager`](https://developer.apple.com/documentation/coremotion/cmheadphonemotionmanager) class. You can also use `CMHeadphoneMotionManager` to support AirPods device motion data on watchOS.
 
 #### June 2023
 
-- Use the  [`CMHighFrequencyHeartRateData`](https://developer.apple.com/documentation/CoreMotion/CMHighFrequencyHeartRateData) class to get heart rate data, including the confidence level.
-- Use the [`CMOdometerData`](https://developer.apple.com/documentation/CoreMotion/CMOdometerData)  class to get odometer data from workouts, such as speed, slope, distances, and altitude.
-- Use the [`CMBatchedSensorManager`](https://developer.apple.com/documentation/CoreMotion/CMBatchedSensorManager) class to access batches of high-frequency accelerometer and device motion data during workouts, such as a golf swing or a baseball bat swing.
-- Use the [`CMWaterSubmersionManager`](https://developer.apple.com/documentation/CoreMotion/CMWaterSubmersionManager) class to monitor shallow dives on Apple Watch Ultra.
+- Use the  [`CMHighFrequencyHeartRateData`](https://developer.apple.com/documentation/coremotion/cmhighfrequencyheartratedata) class to get heart rate data, including the confidence level.
+- Use the [`CMOdometerData`](https://developer.apple.com/documentation/coremotion/cmodometerdata)  class to get odometer data from workouts, such as speed, slope, distances, and altitude.
+- Use the [`CMBatchedSensorManager`](https://developer.apple.com/documentation/coremotion/cmbatchedsensormanager) class to access batches of high-frequency accelerometer and device motion data during workouts, such as a golf swing or a baseball bat swing.
+- Use the [`CMWaterSubmersionManager`](https://developer.apple.com/documentation/coremotion/cmwatersubmersionmanager) class to monitor shallow dives on Apple Watch Ultra.
 
 ## See Also
 

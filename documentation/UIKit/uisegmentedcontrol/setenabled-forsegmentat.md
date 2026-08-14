@@ -20,7 +20,7 @@ func setEnabled(_ enabled: Bool, forSegmentAt segment: Int)
 
 ## Parameters
 
-- `enabled`: [`true`](https://developer.apple.com/documentation/Swift/true) to enable the segment you specify or [`false`](https://developer.apple.com/documentation/Swift/false) to disable the segment. [`true`](https://developer.apple.com/documentation/Swift/true) by default.
+- `enabled`: [`true`](https://developer.apple.com/documentation/swift/true) to enable the segment you specify or [`false`](https://developer.apple.com/documentation/swift/false) to disable the segment. [`true`](https://developer.apple.com/documentation/swift/true) by default.
 - `segment`: An index number identifying a segment in the control. It must be a number between 0 and the number of segments ([`numberOfSegments`](uisegmentedcontrol/numberofsegments.md)) minus 1; the segmented control pins values exceeding this upper range to the last segment.
 
 ## See Also

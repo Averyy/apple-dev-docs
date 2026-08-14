@@ -16,7 +16,7 @@ static let cascadeList: NSFontDescriptor.AttributeName
 
 #### Discussion
 
-The value of this attribute is an [`NSArray`](https://developer.apple.com/documentation/Foundation/NSArray) object. The default value is the system default cascading list for user’s locale.
+The value of this attribute is an [`NSArray`](https://developer.apple.com/documentation/foundation/nsarray) object. The default value is the system default cascading list for user’s locale.
 
 ## See Also
 
